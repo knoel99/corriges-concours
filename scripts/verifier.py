@@ -6,7 +6,9 @@
 
 Ne juge pas le fond. Vérifie : titre et avertissement en tête, $$ appariés, constructions que
 KaTeX ne rend pas, figures (fichier existant, chemin relatif figures/<nom>.svg, déclarées dans
-meta.json, SVG sans script ni lien externe). Code de sortie 1 en cas d'erreur.
+meta.json, SVG sans script ni lien externe), et qu'aucun fichier revue*, rapport* ou sujet*
+n'est présent dans le dépôt (ni revues, ni rapports de jury, ni sujets). Code de sortie 1 en
+cas d'erreur.
 """
 
 from __future__ import annotations
@@ -31,8 +33,23 @@ SVG_INTERDITS = [
     (re.compile(r"<[^>]*\son[a-z]+\s*=", re.I), "gestionnaire on…="),
     (re.compile(r"<\s*foreignObject\b", re.I), "<foreignObject>"),
     (re.compile(r"javascript:", re.I), "URL javascript:"),
-    (re.compile(r"""(?:\b(?:xlink:)?href|\bsrc)\s*=\s*["'](?!\s*(?:#|data:))""", re.I), "lien externe"),
+    (
+        re.compile(r"""(?:\b(?:xlink:)?href|\bsrc)\s*=\s*["'](?!\s*(?:#|data:))""", re.I),
+        "lien externe",
+    ),
 ]
+
+PREFIXES_INTERDITS = ("revue", "rapport", "sujet")
+
+
+def fichiers_interdits(racine: Path) -> list[str]:
+    """Signale tout fichier dont le nom commence par revue, rapport ou sujet (hors .git)."""
+    return [
+        f"fichier interdit (ni revues, ni rapports de jury, ni sujets) : {p.relative_to(racine)}"
+        for p in sorted(racine.rglob("*"))
+        if p.is_file() and ".git" not in p.relative_to(racine).parts
+        and p.name.lower().startswith(PREFIXES_INTERDITS)
+    ]
 
 
 def verifier(dossier: Path) -> list[str]:
@@ -70,7 +87,8 @@ def verifier(dossier: Path) -> list[str]:
         err.append(f"{dossier.name} : figure citée mais absente de meta.json : {f}")
     for svg in sorted((dossier / "figures").glob("*.svg")):
         contenu = svg.read_text(encoding="utf-8", errors="replace")
-        err += [f"{dossier.name}/figures/{svg.name} : {lib}" for motif, lib in SVG_INTERDITS if motif.search(contenu)]
+        nom = f"{dossier.name}/figures/{svg.name}"
+        err += [f"{nom} : {lib}" for motif, lib in SVG_INTERDITS if motif.search(contenu)]
     return err
 
 
@@ -81,7 +99,7 @@ def main(argv: list[str]) -> int:
         if not dossiers:
             print("aucune épreuve trouvée pour :", " ".join(argv))
             return 1
-    erreurs = [e for d in dossiers for e in verifier(d)]
+    erreurs = fichiers_interdits(RACINE) + [e for d in dossiers for e in verifier(d)]
     for e in erreurs:
         print("ERREUR", e)
     print(f"{len(dossiers)} épreuve(s), {len(erreurs)} erreur(s)")
