@@ -1,0 +1,38 @@
+{
+  "slug": "ccinp_mp_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MP",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 46,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q21-schema-bloc-moteur.svg",
+      "question": "Q21",
+      "legende": "schéma-bloc du moteur à courant continu, avec la boucle de force contre-électromotrice et l'entrée de perturbation C_r"
+    },
+    {
+      "fichier": "figures/q31-bode-correcteur.svg",
+      "question": "Q31",
+      "legende": "diagrammes de Bode du correcteur à avance de phase pour Kp = 1, asymptotes en tirets et courbes réelles"
+    },
+    {
+      "fichier": "figures/q35-q36-coins-c-et-d.svg",
+      "question": "Q35-Q36",
+      "legende": "placement de P_B sur le coin (c) et de P_A sur le coin (d), avec le nombre de couches de peinture"
+    },
+    {
+      "fichier": "figures/q36-diagramme-etats-coin-d.svg",
+      "question": "Q36",
+      "legende": "diagramme d'états du coin (d), l'état ajouté à la figure 16 en bleu"
+    },
+    {
+      "fichier": "figures/q46-parcours-carre.svg",
+      "question": "Q46",
+      "legende": "parcours de trajet((0,0), traces) sur le carré : ordre de tracé, sens et trajets sans peinture"
+    }
+  ]
+}

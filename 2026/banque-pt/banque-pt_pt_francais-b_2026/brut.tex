@@ -1,0 +1,262 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Banque PT PT — Français B 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Banque PT PT}
+\fancyhead[R]{\small Français B 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Banque PT PT — Français B 2026\par}\medskip
+  {\large Banque PT · PT · Français B · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve de 4 h, sans document, sans appareil électronique ni dictionnaire. Texte : François Dagognet, \emph{Considérations sur l'idée de nature}, Vrin, « Pour demain », 2000. Œuvres au programme : Georges Canguilhem, \emph{La Connaissance de la vie} (Introduction « La pensée et le vivant », « I. Méthode », « III. Philosophie », chapitres II à V) ; Jules Verne, \emph{Vingt mille lieues sous les mers} ; Marlen Haushofer, \emph{Le Mur invisible}.
+
+\hypertarget{ruxe9sumuxe9-8-points}{%
+\section{Résumé (8 points)}\label{ruxe9sumuxe9-8-points}}
+
+\textbf{Problématique du texte} : faut-il, pour remédier aux dégâts de l'industrie, revenir à une nature intacte, ou dissiper l'illusion « naturaliste » qui fait préférer le donné au transformé ?
+
+Convention de décompte : est compté pour un mot tout ensemble de lettres séparé du suivant par une espace ou une apostrophe ; un mot composé à trait d'union compte pour un mot. Une barre oblique marque chaque vingtième mot ; le total cumulé suit entre parenthèses.
+
+\begin{quote}
+
+Nul ne conteste les ravages d'une industrialisation débridée, mais deux remèdes s'opposent : abolir leur cause, par la décroissance / (20) ou les énergies douces, ou corriger leurs effets par une industrie réparatrice. Nous retenons la seconde voie, quoique la première / (40) séduise davantage.
+
+La question est philosophique : tout dépend de notre idée de la nature. La publicité l'atteste, qui vante / (60) comme naturels des aliments issus d'engrais et d'élevages forcés, ou le ski de fond, tout mécanique et chimique. / (80)
+
+Pourquoi cet engouement ? D'abord, on rejette l'imitation, toujours décevante, en oubliant que tout est déjà transformé. Kant lui-même, / (100) devant un faux rossignol, dénonçait un mensonge : imiter mécanise la nature et la mutile, d'où une déception ontologique et / (120) morale.
+
+Ensuite, flatté par un lexique mythique, l'acheteur obéit moins au souci de sa santé qu'à une dévotion / (140) crédule envers l'originel, reçu du ciel. Enfin, il soupçonne l'usine de briser l'unité du donné et de / (160) bâcler ce que la terre mûrit lentement.
+
+Or la nature n'est ni pure ni sûre : l'eau de source / (180) doit être assainie, l'eau minérale exige machines et commerce, la terre laissée à elle-même s'épuise. Il faut partout / (200) intervenir : renonçons au mythe d'un âge d'or.
+
+\textbf{209 mots}
+
+\end{quote}
+
+\hypertarget{dissertation-12-points}{%
+\section{Dissertation (12 points)}\label{dissertation-12-points}}
+
+\textbf{Problématique} : la préférence pour l'incréé, le premier et le sauvage est-elle le trait qui définit notre rapport à la nature, ou le symptôme confus d'une exigence de valeur qu'un rapport purement opératoire ne sait pas formuler ?
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Lorsque la narratrice du \emph{Mur invisible} arrive au pavillon de chasse de ses cousins, elle vient goûter, le temps d'un week-end, une montagne qu'on aime parce qu'elle est intacte. Quelques heures plus tard, une paroi transparente la sépare du reste des hommes, et cette nature de villégiature devient l'unique monde où elle devra survivre. Le roman de Marlen Haushofer commence ainsi là où se termine une certaine idée de la nature : celle d'un sanctuaire que l'on visite et auquel on prête une pureté que rien de fabriqué n'égalerait.
+
+C'est cette idée que François Dagognet, dans ses \emph{Considérations sur l'idée de nature}, attaque de front. Le consommateur qui recherche le « naturel » obéirait, selon lui, à « une religiosité naïve » qui « préfère aux combinaisons humaines douteuses l'incréé, le premier et le sauvage ». La \emph{religiosité} n'est pas une religion : c'est une dévotion diffuse, sans dogme ni examen, qui entoure un objet d'une aura sacrée ; elle est dite \emph{naïve} parce qu'elle ignore ses propres conditions. Son objet se décline en trois termes : l'\emph{incréé}, qui ne doit rien à aucun auteur ; le \emph{premier}, qui précède toute intervention ; le \emph{sauvage}, qui pousse, selon l'étymologie rappelée par l'auteur, hors de la forêt cultivée. Face à lui, les « combinaisons humaines » --- le composé, le mélangé, le fabriqué --- sont tenues pour « douteuses », suspectes à la fois de fausseté et de faute. Le sujet, au conditionnel, demande si ce trait \emph{caractérise} le rapport de l'homme à la nature, c'est-à-dire s'il en est le propre.
+
+La question est difficile parce que les deux réponses immédiates échouent. Souscrire à la thèse, c'est réduire tout attachement à la nature à une superstition, ce que dément l'expérience : on ne s'attache pas à un paysage comme on adore une idole. La rejeter sans plus, c'est réhabiliter l'« âge d'or » que Dagognet réfute avec de bons arguments. D'où notre problème : la préférence pour l'originel est-elle le trait qui définit notre rapport à la nature, ou le symptôme confus d'une exigence de valeur qu'un rapport purement opératoire ne sait pas formuler ?
+
+Trois œuvres permettent d'en juger. Dans \emph{La Connaissance de la vie} (1952, édition revue et augmentée en 1965), Georges Canguilhem, philosophe et médecin, réunit des études d'histoire et de philosophie de la biologie qui se demandent comment la pensée connaît le vivant dont elle procède. \emph{Vingt mille lieues sous les mers} (1869-1870), roman d'aventures scientifiques de la série des « Voyages extraordinaires », fait du \emph{Nautilus} le lieu d'une rencontre entre la machine et l'océan, au siècle qui croit au progrès. \emph{Le Mur invisible} (1963), récit à la première personne écrit par Marlen Haushofer dans l'Autriche de la guerre froide, enferme une femme dans une nature de montagne après une catastrophe inexpliquée.
+
+Nous accorderons d'abord à Dagognet que cette sacralisation de l'originel existe et qu'elle est aveugle. Nous montrerons ensuite qu'elle ne caractérise pourtant pas notre rapport à la nature, qui est d'abord connaissance et transformation, au point que l'opposition même de l'incréé et du fabriqué se défait. Nous soutiendrons enfin que la vraie question n'est pas celle de l'origine, mais celle des normes de vie que nos interventions instituent.
+
+\hypertarget{i.-une-religiosituxe9-de-loriginel-travaille-bien-notre-rapport-uxe0-la-nature-et-elle-est-nauxefve}{%
+\subsection{I. Une religiosité de l'originel travaille bien notre rapport à la nature, et elle est naïve}\label{i.-une-religiosituxe9-de-loriginel-travaille-bien-notre-rapport-uxe0-la-nature-et-elle-est-nauxefve}}
+
+\textbf{A. Le prestige de l'intact.} Que la nature soit spontanément investie d'une aura sacrée, le capitaine Nemo en donne le témoignage le plus éclatant. « La mer est tout », déclare-t-il à Aronnax : elle est l'immense désert où l'homme n'est jamais seul, le souffle pur qui porte la vie, et surtout le seul espace que les despotes ne possèdent pas. Nemo, qui a rompu avec la société tout entière, ne cherche pas dans la mer des ressources mais un salut, et c'est dans l'élément non humain qu'il place la garantie de sa liberté. La virginité des lieux fonctionne comme une valeur en soi : la conquête du pôle Sud, où Nemo plante son pavillon noir, vaut parce que personne n'y est venu. Le début du \emph{Mur invisible} en offre la version profane : la montagne du week-end est un décor choisi pour ce qu'elle a d'intact, et c'est cette intégrité supposée qui la rend désirable. Canguilhem permet de nommer le fond de ce sentiment. Dans « La monstruosité et le monstrueux », il rappelle que le monstre a longtemps été reçu comme un scandale, signe d'une faute ou d'une colère divine : on ne s'indigne d'une infraction que devant une loi tenue pour sacrée. L'horreur du monstrueux atteste donc qu'un ordre naturel est investi d'une autorité quasi religieuse.
+
+\textbf{B. L'oubli des médiations.} Ce qui rend cette dévotion naïve, c'est qu'elle prend pour originel ce qui est déjà travaillé. Nemo prétend fuir les « combinaisons humaines » ; il n'atteint pourtant la mer libre qu'à bord de la machine la plus perfectionnée de son siècle. Le \emph{Nautilus} est un artefact intégral : double coque d'acier, électricité tirée du sodium extrait de l'eau de mer, réservoirs d'air, cuisine et éclairage électriques ; Nemo s'habille d'étoffes de byssus et fume des cigares d'algues ; son salon abrite une bibliothèque de douze mille volumes, des tableaux de maîtres et un orgue. Sa devise, \emph{Mobilis in mobili}, dit qu'on n'habite le mobile qu'en s'en rendant maître. Le Nemo qui célèbre la mer est à l'océan ce que le buveur d'eau « naturelle » est à la source chez Dagognet : un homme qui doit à l'industrie l'accès à ce qu'il croit recevoir de la nature. \emph{Le Mur invisible} aboutit au même constat par la voie inverse. Jetée dans une nature enfin « première », la narratrice ne survit que grâce aux réserves du monde disparu, qu'elle inventorie avec lucidité : allumettes et cartouches comptées, semences de pommes de terre et de haricots, faux, outils, crayons et papier sur lesquels elle rédige son récit. Bella est une vache d'élevage ; le foin se fauche sur des prairies que des générations de paysans ont gagnées sur la forêt. Canguilhem donne à cette naïveté sa forme théorique : dans « Le vivant et son milieu », il retrace l'histoire de la notion de milieu, venue de la mécanique newtonienne, passée à la biologie avec Lamarck, reprise par Comte puis par Darwin. Ce que l'on croit être un donné brut est déjà un concept, avec une histoire ; croire à un pur donné, c'est oublier les médiations par lesquelles on le pense.
+
+\textbf{C. Une nature sans bienveillance.} La religiosité naïve ne croit pas seulement l'originel pur, elle le croit bon. Les œuvres la démentent plus durement encore que Dagognet. La vallée de Haushofer n'a rien d'une mère : le froid, la faim de chaque hiver, l'épuisement, la mort des petits de la chatte, la corneille blanche que sa bande rejette, le gibier qu'il faut tuer pour manger composent une nature indifférente, ce qui est pire, pour qui attendait une consolation, qu'une nature cruelle. Le roman de Verne, sous ses dehors d'émerveillement, dit la même chose : la mer enferme le \emph{Nautilus} sous la banquise jusqu'à l'asphyxie, lance un requin sur le pêcheur de perles de Ceylan, que Nemo affronte au poignard avant que le harpon de Ned Land n'achève la bête, livre un homme d'équipage aux tentacules des poulpes géants, et engloutit le récit dans le Maelström. Canguilhem, enfin, retire à la nature son infaillibilité : la monstruosité atteste que la forme vivante peut manquer son accomplissement, et il ajoute que « la vie est pauvre en monstres », tandis que le fantastique est un monde. Ce que nous redoutons dans la nature est en grande partie notre propre production imaginaire. Cette crainte n'est d'ailleurs pas le contraire de la religiosité, mais son autre face : le sacré fascine et terrifie à la fois, et la mer de Nemo est adorée et redoutée d'un même mouvement. La sacralisation de l'originel repose ainsi sur une double erreur : elle prête au donné une pureté qu'il n'a pas et une bonté qu'il n'a jamais eue.
+
+Dagognet a donc raison de dénoncer une illusion. Mais une illusion suffit-elle à \emph{caractériser} un rapport ?
+
+\hypertarget{ii.-ce-nest-pourtant-pas-le-trait-qui-duxe9finit-notre-rapport-uxe0-la-nature-celui-ci-est-dabord-opuxe9ratoire}{%
+\subsection{II. Ce n'est pourtant pas le trait qui définit notre rapport à la nature : celui-ci est d'abord opératoire}\label{ii.-ce-nest-pourtant-pas-le-trait-qui-duxe9finit-notre-rapport-uxe0-la-nature-celui-ci-est-dabord-opuxe9ratoire}}
+
+\textbf{A. Connaître : la nature comme objet d'analyse.} Avant d'adorer, l'homme classe. \emph{Vingt mille lieues sous les mers} est un roman de savant : Aronnax, professeur au Muséum, auteur des \emph{Mystères des grands fonds sous-marins}, répond à l'inconnu par une hypothèse --- un narval géant --- et non par l'extase ; Conseil récite embranchements, classes et ordres devant chaque poisson qui passe derrière la vitre du salon, tandis que Ned Land n'y voit que du gibier. Le comique de la nomenclature dit une vérité : l'océan devient monde pour Aronnax dans la mesure où il devient catalogue, et le \emph{Nautilus} est autant un musée et un laboratoire qu'un navire. Canguilhem théorise ce geste dans « La pensée et le vivant » : la connaissance cherche la sécurité en réduisant l'inconnu au connu, elle analyse, elle décompose. Mais il en marque aussitôt la limite : la vie est « formation de formes », tandis que la connaissance est analyse des matières informées. « L'expérimentation en biologie animale » en tire les conséquences : l'individualité de l'organisme résiste, le laboratoire est lui-même un milieu qui modifie ce qu'il observe, et l'on ne conclut pas sans précaution d'une espèce à l'autre. Le rapport cognitif est donc premier, mais il ne se referme jamais sur son objet ; ce reste du vivant qui excède l'analyse est peut-être ce que la religiosité naïve traduit maladroitement en langage sacré.
+
+\textbf{B. Transformer : la technique n'est pas le contraire de la nature.} Dagognet a raison : aucun rapport humain à la nature ne se passe de l'outil. Mais il garde l'opposition du donné et du fabriqué, dont il se contente d'inverser les valeurs, louant l'intervention là où ses adversaires louent l'intact. Canguilhem va plus loin dans « Machine et organisme ». Au lieu d'expliquer l'organisme par la machine, à la manière cartésienne, il comprend la machine à partir de l'organisme : la machine est rigide, construite pour une fin extérieure, incapable de se réparer, alors que l'organisme admet suppléances, régulations et usages déviants. Surtout, la technique doit être pensée comme un « phénomène biologique universel », le prolongement de l'activité par laquelle tout vivant organise ce qui l'entoure. Si la technique est un fait de vie, la « combinaison humaine » n'est pas une infraction commise contre la nature, elle en est une production : la ligne de partage sur laquelle repose la religiosité naïve s'efface, mais celle qui permettait à Dagognet d'opposer l'intervention salvatrice à l'âge d'or s'efface avec elle, puisqu'il n'y a jamais eu que des degrés d'intervention. Les deux romans le montrent. Le \emph{Nautilus} vit de l'océan : son électricité vient du sodium marin, son combustible des houillères sous-marines, sa nourriture des bancs de poissons et des algues, sa richesse des trésors engloutis ; il est, au sens de Canguilhem, un organe prolongé greffé sur un milieu. La narratrice de Haushofer redevient paysanne, et le roman consacre de longues pages à la fenaison, à la traite, à la coupe du bois, au potager défendu contre le gibier. Ce travail ne la sépare pas de la nature : c'est lui qui la maintient en vie, physiquement et moralement, car les tâches réglées par les bêtes et les saisons la protègent du désespoir. Là où la religiosité naïve croit qu'il suffit de laisser être, les œuvres montrent qu'il faut faire.
+
+\textbf{C. Habiter : le vivant se fait un milieu.} Reste à comprendre pourquoi cette activité n'est pas une simple domination. « Le vivant et son milieu » distingue, à la suite de von Uexküll, l'environnement géographique (\emph{Umgebung}), le milieu de comportement propre à une espèce (\emph{Umwelt}), fait des seuls signaux qui ont pour elle une valeur, et l'univers de la science (\emph{Welt}). La tique et l'homme, placés dans le même environnement, n'habitent pas le même monde. Le propre du vivant est de centrer son milieu sur lui, d'y introduire des valeurs ; et le milieu du savant, souligne Canguilhem, n'a pas de privilège absolu : il est celui d'un vivant qui a fait de la vérité une de ses valeurs. Les deux fictions le figurent. Le \emph{Nautilus} est un \emph{Umwelt} creusé dans un océan qui, pour l'homme, est d'abord une masse mortelle : derrière la vitre du salon, l'abîme devient spectacle, et cette vitre est l'image même de la culture qui s'interpose entre l'homme et l'élément. \emph{Le Mur invisible} rend la démonstration presque expérimentale : la paroi découpe arbitrairement une vallée, une forêt, un alpage, et l'on voit une femme convertir cet environnement en monde vécu --- chemins tracés, saisons partagées entre le pavillon et l'alpage, calendrier tenu, bêtes nommées. Le mur est un fait ; le domaine est une œuvre. Ni sanctuaire ni matériau, la nature est d'abord, pour le vivant humain, un milieu qu'il habite en le transformant.
+
+Mais si le rapport à la nature est tout entier opératoire, comment distinguer l'intervention qui fait vivre de celle qui détruit ? La conclusion de Dagognet, « Partout, il faut intervenir », ne le dit pas : il manque un critère.
+
+\hypertarget{iii.-le-vrai-partage-nest-pas-entre-le-donnuxe9-et-le-fabriquuxe9-mais-entre-des-normes-de-vie}{%
+\subsection{III. Le vrai partage n'est pas entre le donné et le fabriqué, mais entre des normes de vie}\label{iii.-le-vrai-partage-nest-pas-entre-le-donnuxe9-et-le-fabriquuxe9-mais-entre-des-normes-de-vie}}
+
+\textbf{A. Ce que la préférence pour le donné vise sans savoir le dire.} Une croyance aussi tenace mérite mieux qu'un diagnostic d'ignorance. Dagognet le concède à demi lorsqu'il reconnaît que la solution qu'il rejette « exerce le plus d'attrait » et que Kant « lui-même » a cédé à ce prestige. Or l'exemple kantien dit pourquoi. Ce qui déçoit dans le siffleur caché n'est pas que le chant soit moins beau --- il est identique --- mais qu'il n'engage plus rien : ce n'est plus un vivant qui chante, c'est un garçon qui s'amuse. La préférence pour le naturel n'est donc pas, au fond, une préférence pour l'ancienneté, mais l'exigence que ce que nous admirons existe pour soi et non pour nous. Les romans confirment ce déplacement. Ce qui attache Nemo à la mer n'est pas qu'elle soit vierge, c'est qu'elle soit libre : son culte de l'océan est une politique, celle d'un proscrit qui a tout perdu sous l'oppression. Ce qui lie la narratrice à Lynx, à Bella, à la chatte n'est ni la pureté ni l'antériorité, mais le fait qu'ils sont des existences irremplaçables dont elle a la charge : elle ne les possède pas, elle leur répond. Ce que la religiosité traduit en langage de sacrilège est la conscience d'une fragilité partagée, celle que Canguilhem découvre dans l'angoisse devant le monstre : nous savons obscurément que la vie, en nous aussi, peut échouer.
+
+\textbf{B. Du naturel à la norme.} « Le normal et le pathologique » fournit le critère qui manquait. Le normal n'y est pas la moyenne : la fréquence ne fonde aucune valeur, et l'anomalie n'est pas la maladie. La santé est une marge de tolérance aux infidélités du milieu, la capacité d'instituer de nouvelles normes quand les conditions changent ; la maladie est une vie réduite à une seule norme, rétrécie. La vie est activité normative, et il n'y a « pas de fait normal ou pathologique en soi ». Transposé à notre sujet, ce critère change la question : à « est-ce naturel ? », question d'origine, se substitue « quelles normes de vie cela institue-t-il ? ». Un barrage, une variété sélectionnée, une station d'épuration ne sont ni bons ni mauvais parce qu'ils sont artificiels ; ils le sont selon qu'ils élargissent ou rétrécissent le pouvoir des vivants d'habiter un milieu changeant. Inversement, le retour au sauvage n'est pas bon parce qu'il est premier : la narratrice vit dans une nature intacte, mais sa marge est infime --- une blessure, un hiver plus rude, la dernière allumette, et tout s'effondre. Quant à l'« éco-industrie » de Dagognet, elle ne se justifie pas parce qu'elle est industrielle, mais dans la mesure où elle restitue aux vivants des normes praticables. Verne fournit le contre-exemple qui manque au texte. Nemo intervient partout, avec une puissance sans égale, et rien ne distingue chez lui l'usage du saccage, sinon son bon plaisir : il refuse que Ned Land chasse les baleines, qu'il juge inoffensives, puis fait massacrer un troupeau de cachalots qu'il tient pour cruels. Le partage entre destruction légitime et destruction coupable n'y repose sur aucune norme, mais sur un décret souverain : voilà ce que produit un rapport qui a renoncé à la sacralité du donné sans lui substituer de critère.
+
+\textbf{C. Le désastre ne vient pas de la technique, mais de la violence.} La fin du \emph{Mur invisible} tranche par un fait. Après des années où la forêt n'a jamais fait à la narratrice que ce qu'une forêt fait, un homme surgit sur l'alpage et tue à la hache le jeune taureau et Lynx, sans raison ni profit ; elle l'abat d'un coup de fusil. Ce n'est pas la nature qui détruit le monde qu'elle a construit, c'est le dernier homme. La naïveté n'est pas seulement de croire la nature bonne ; elle est aussi de croire l'homme innocent dès lors qu'il cesse de la sacraliser. Verne conclut de même : le voyage s'achève lorsque Nemo, cessant d'être savant pour redevenir vengeur, éperonne un navire de guerre et le regarde sombrer, avant de s'agenouiller en pleurs devant le portrait d'une femme et de deux enfants ; Aronnax, jusque-là fasciné, prend la fuite. Le \emph{Nautilus} n'est pas condamné par sa technique, mais par la haine qu'il sert. La défiance envers la technique n'est donc pas toujours naïve : la narratrice soupçonne que le mur lui-même est l'effet d'une arme nouvelle, qui a figé les vivants de l'autre côté, et l'éperon du \emph{Nautilus} montre qu'une machine faite pour connaître peut servir à tuer. Mais ce que l'on redoute alors n'est pas l'artifice comme tel : c'est une puissance qui s'affranchit de toute norme de vie. Canguilhem, enfin, rappelle dès son introduction que la pensée du vivant doit tenir du vivant l'idée du vivant : le savoir ne s'exerce pas d'un point de vue extérieur au monde qu'il transforme, et c'est pourquoi il engage une responsabilité.
+
+\hypertarget{conclusion}{%
+\subsection{Conclusion}\label{conclusion}}
+
+Il fallait accorder à Dagognet ce qu'il a de solide : une dévotion à l'originel travaille bien notre rapport à la nature, et elle est naïve, puisqu'elle prend pour donné ce qui est déjà cultivé, fauché, sélectionné, et qu'elle prête à la nature une bienveillance que la vallée de Haushofer et la mer de Verne démentent. Mais on ne caractérise pas un rapport par son illusion. Notre rapport premier à la nature est opératoire : il connaît en analysant, il transforme en travaillant, et cette transformation, phénomène vital selon Canguilhem, n'est pas une infraction contre la vie. L'opposition de l'incréé et des « combinaisons humaines » ne résiste donc pas ; seulement, en la retournant au lieu de la quitter, Dagognet laisse son injonction finale sans mesure. Cette mesure, la normativité vitale la fournit : ce qui importe n'est pas l'origine de ce que nous faisons, mais les normes de vie que nous instituons et la marge que nous laissons aux vivants, nous compris. \textbf{La religiosité naïve ne caractérise pas le rapport de l'homme à la nature : elle en est le symptôme, la forme confuse d'une exigence de valeur privée de critère.} Reste à savoir si cette mesure peut se déduire d'un savoir. La narratrice du \emph{Mur invisible}, qui continue d'écrire et de soigner ses bêtes après le meurtre, suggère qu'elle s'apprend plutôt dans la charge que l'on accepte d'un autre vivant.
+
+\end{document}

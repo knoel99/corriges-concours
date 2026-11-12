@@ -1,0 +1,33 @@
+{
+  "slug": "ccinp_tsi_maths_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TSI",
+    "matiere": "Maths",
+    "annee": 2026
+  },
+  "questions": 40,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q5-racines-disque-unite.svg",
+      "question": "Q5",
+      "legende": "Racines de z² − 4z + 1 (a = 2) : α = 2 − √3 dans le disque unité, β = 2 + √3 dehors, a milieu des deux"
+    },
+    {
+      "fichier": "figures/q24-projection-orthogonale.svg",
+      "question": "Q24",
+      "legende": "M est le projeté orthogonal de A sur 𝒮₂(ℝ) : pour toute B symétrique, le triangle AMB est rectangle en M, donc d(A, 𝒮₂(ℝ)) = ‖N‖"
+    },
+    {
+      "fichier": "figures/q31-loi-t2-tchebychev.svg",
+      "question": "Q31",
+      "legende": "Loi de T₂ pour p = 1/2 : l'intervalle |T₂ − 2√2| < 4 contient k = 1 à 4, de probabilité 15/16 au lieu du 3/4 garanti"
+    },
+    {
+      "fichier": "figures/q39-graphe-g-valeurs-intermediaires.svg",
+      "question": "Q39",
+      "legende": "Graphe de g : g(0) = 0 et g(1) ≥ 1 − e⁻¹ > 1/2, donc g prend la valeur 1/2 en un μ compris entre 0 et 1"
+    }
+  ]
+}

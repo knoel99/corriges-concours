@@ -1,0 +1,38 @@
+{
+  "slug": "ccinp_psi_physique-chimie_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PSI",
+    "matiere": "Physique-chimie",
+    "annee": 2026
+  },
+  "questions": 36,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q02-bilan-tranche.svg",
+      "question": "Q2",
+      "legende": "Bilan sur la tranche fixe de substrat entre x et x + dx, de section S : flux j(x, t) entrant, j(x + dx, t) sortant"
+    },
+    {
+      "fichier": "figures/q18-hacheur-deux-phases.svg",
+      "question": "Q18",
+      "legende": "Hacheur parallèle : schémas équivalents avec K1 fermé (a) puis K1 ouvert (b), chemins de courant surlignés"
+    },
+    {
+      "fichier": "figures/q20-courant-i1.svg",
+      "question": "Q20",
+      "legende": "Allure triangulaire de i1(t) : pente U/L pendant αT, pente (U − E)/L jusqu'à T, ondulation ΔI1 dilatée"
+    },
+    {
+      "fichier": "figures/q23-tension-sortie.svg",
+      "question": "Q23",
+      "legende": "Allure de e(t) = uc(t) : décharge de C dans R depuis Emax quand la diode est bloquée, recharge quand elle conduit"
+    },
+    {
+      "fichier": "figures/q31-effet-peau.svg",
+      "question": "Q31",
+      "legende": "Effet de peau : champ Ex(z) à deux instants sous l'enveloppe ±E0 exp(−z/δ)"
+    }
+  ]
+}

@@ -1,0 +1,782 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP MPI — Mathématiques 1 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · CCINP MPI}
+\fancyhead[R]{\small Maths 1 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries CCINP MPI — Mathématiques 1 2026\par}\medskip
+  {\large CCINP · MPI · Maths 1 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve spécifique MPI (MPI1M1), durée 4 heures, calculatrices interdites. Deux exercices et un problème, 22 questions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exercice-i}{%
+\section{Exercice I}\label{exercice-i}}
+
+La clé étrangère \texttt{PAIEMENTS.id\_eleve} référence la clé primaire \texttt{ELEVES.id}. Un élève a donc zéro, un ou plusieurs paiements, et chaque paiement concerne un seul élève.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ex1-schema-relationnel.pdf}
+\caption*{Figure 1 --- Schéma des deux tables : la clé étrangère
+PAIEMENTS.id\_eleve référence la clé primaire ELEVES.id (clés primaires
+soulignées) ; un élève a zéro, un ou plusieurs paiements.}
+\end{figure}
+
+\hypertarget{q1}{%
+\subsection{Q1}\label{q1}}
+
+On sélectionne sur \texttt{promo} avec l'opérateur de différence \texttt{\textless{}\textgreater{}}, on projette sur \texttt{email}, et \texttt{DISTINCT} supprime les doublons :
+
+\begin{lstlisting}[language=SQL]
+SELECT DISTINCT email
+FROM ELEVES
+WHERE promo <> 2025;
+\end{lstlisting}
+
+\texttt{DISTINCT} porte sur la ligne projetée, réduite ici à \texttt{email} : chaque adresse n'apparaît qu'une fois.
+
+\hypertarget{q2}{%
+\subsection{Q2}\label{q2}}
+
+Les noms sont dans \texttt{ELEVES} et les montants dans \texttt{PAIEMENTS} : il faut une jointure, puis une agrégation \texttt{SUM} par élève avec \texttt{GROUP\ BY}. On regroupe sur la clé primaire \texttt{e.id}, ce qui évite de fusionner deux homonymes. La jointure externe à gauche conserve les élèves sans paiement :
+
+\begin{lstlisting}[language=SQL]
+SELECT e.nom, e.prenom, SUM(p.montant) AS total
+FROM ELEVES AS e
+LEFT JOIN PAIEMENTS AS p ON p.id_eleve = e.id
+GROUP BY e.id, e.nom, e.prenom
+ORDER BY e.nom, e.prenom;
+\end{lstlisting}
+
+Un élève sans paiement figure dans le résultat avec un total \texttt{NULL}, puisque \texttt{SUM} porte alors sur un ensemble vide.
+
+Pour afficher 0 avec les seules constructions au programme, on peut réunir deux requêtes. La première traite les élèves ayant payé, par une jointure interne. La seconde traite les élèves sans paiement, obtenus par \texttt{EXCEPT}. On garde \texttt{id} dans la sous-requête pour que \texttt{UNION} ne fusionne pas deux homonymes :
+
+\begin{lstlisting}[language=SQL]
+SELECT nom, prenom, total
+FROM (SELECT e.id AS id, e.nom AS nom, e.prenom AS prenom, SUM(p.montant) AS total
+      FROM ELEVES AS e JOIN PAIEMENTS AS p ON p.id_eleve = e.id
+      GROUP BY e.id, e.nom, e.prenom
+      UNION
+      SELECT e.id, e.nom, e.prenom, 0
+      FROM ELEVES AS e
+      JOIN (SELECT id FROM ELEVES EXCEPT SELECT id_eleve FROM PAIEMENTS) AS s
+        ON s.id = e.id) AS r
+ORDER BY nom, prenom;
+\end{lstlisting}
+
+\hypertarget{q3}{%
+\subsection{Q3}\label{q3}}
+
+Une ligne est en double s'il existe une autre ligne, d'identifiant différent, qui coïncide avec elle sur \texttt{nom}, \texttt{prenom}, \texttt{email} et \texttt{promo}. On fait une autojointure :
+
+\begin{lstlisting}[language=SQL]
+SELECT DISTINCT e1.id, e1.email
+FROM ELEVES AS e1
+JOIN ELEVES AS e2
+  ON  e1.id <> e2.id
+  AND e1.nom = e2.nom AND e1.prenom = e2.prenom
+  AND e1.email = e2.email AND e1.promo = e2.promo;
+\end{lstlisting}
+
+La condition \texttt{e1.id\ \textless{}\textgreater{}\ e2.id} empêche une ligne de s'apparier avec elle-même. Une ligne présente \(k\) fois, avec \(k\ge3\), s'apparie avec \(k-1\) autres lignes : \texttt{DISTINCT} évite qu'elle sorte \(k-1\) fois.
+
+Variante par agrégation :
+
+\begin{lstlisting}[language=SQL]
+SELECT e.id, e.email
+FROM ELEVES AS e
+JOIN (SELECT nom, prenom, email, promo
+      FROM ELEVES
+      GROUP BY nom, prenom, email, promo
+      HAVING COUNT(*) >= 2) AS d
+  ON  e.nom = d.nom AND e.prenom = d.prenom
+  AND e.email = d.email AND e.promo = d.promo;
+\end{lstlisting}
+
+\hypertarget{q4}{%
+\subsection{Q4}\label{q4}}
+
+Ne pas avoir de paiement, c'est n'avoir aucune ligne dans \texttt{PAIEMENTS}, et non avoir un paiement de montant 0. Première solution, par jointure externe à gauche. On ne garde que les élèves qui n'ont été appariés à aucun paiement :
+
+\begin{lstlisting}[language=SQL]
+SELECT e.id
+FROM ELEVES AS e
+LEFT JOIN PAIEMENTS AS p ON p.id_eleve = e.id
+WHERE p.id IS NULL;
+\end{lstlisting}
+
+Le test porte sur \texttt{p.id}, clé primaire de \texttt{PAIEMENTS}. Cette colonne ne vaut jamais \texttt{NULL} pour une ligne réellement appariée.
+
+Seconde solution, par différence ensembliste :
+
+\begin{lstlisting}[language=SQL]
+SELECT id FROM ELEVES
+EXCEPT
+SELECT id_eleve FROM PAIEMENTS;
+\end{lstlisting}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exercice-ii}{%
+\section{Exercice II}\label{exercice-ii}}
+
+Pour \(n\in\mathbb{N}\), on note \(p_n=P(X=n)\).
+
+\hypertarget{q5}{%
+\subsection{Q5}\label{q5}}
+
+La famille \(\big((X=n)\big)_{n\in\mathbb{N}}\) est un système complet d'événements, car \(X\) est à valeurs dans \(\mathbb{N}\). Donc \(p_n\ge0\) pour tout \(n\), et la série \(\sum p_n\) converge, de somme 1.
+
+Soit \(t\in[-1,1]\). Comme \(|t|\le1\), on a pour tout \(n\in\mathbb{N}\)
+
+\equationajustee{|p_nt^n|=p_n|t|^n\le p_n.}
+
+Par comparaison de séries à termes positifs, \(\sum p_nt^n\) converge absolument, donc converge.
+
+\textbf{\(G_X\) est définie sur \([-1,1]\)}. Le rayon de convergence de la série entière \(\sum p_nt^n\) est donc au moins égal à 1, et \(G_X(1)=1\).
+
+\hypertarget{q6}{%
+\subsection{Q6}\label{q6}}
+
+Si \(X\sim\mathcal{P}(\lambda)\), alors pour tout \(n\in\mathbb{N}\)
+
+\equationajustee{P(X=n)={\mathrm{e}}^{-\lambda}\frac{\lambda^n}{n!}.}
+
+Pour tout \(t\in\mathbb{R}\), on utilise le développement en série entière de l'exponentielle, valable sur \(\mathbb{R}\) :
+
+\equationajustee{\begin{aligned}
+G_X(t)&=\sum_{n=0}^{+\infty}{\mathrm{e}}^{-\lambda}\frac{(\lambda t)^n}{n!}\\
+&={\mathrm{e}}^{-\lambda}{\mathrm{e}}^{\lambda t}.
+\end{aligned}}
+
+\equationajustee{\boxed{\forall t\in\mathbb{R},\ G_X(t)={\mathrm{e}}^{\lambda(t-1)}}}
+
+\hypertarget{q7}{%
+\subsection{Q7}\label{q7}}
+
+On pose \(a_n=P(X=n)\) et \(b_n=P(Y=n)\). D'après Q5, les séries entières \(\sum a_nt^n\) et \(\sum b_nt^n\) ont un rayon au moins égal à 1. Pour \(t\in\,]-1,1[\), le théorème du produit de Cauchy de deux séries entières donne
+
+\equationajustee{G_X(t)\,G_Y(t)=\sum_{n=0}^{+\infty}c_nt^n,}
+
+où l'on a posé, pour tout \(n\in\mathbb{N}\),
+
+\equationajustee{c_n=\sum_{k=0}^{n}a_kb_{n-k}.}
+
+Soit \(n\in\mathbb{N}\). Les deux variables étant à valeurs dans \(\mathbb{N}\), l'événement \((X+Y=n)\) est la réunion disjointe des événements \((X=k)\cap(Y=n-k)\), pour \(k\) entier entre 0 et \(n\).
+
+Par additivité, puis par indépendance de \(X\) et \(Y\) :
+
+\equationajustee{\begin{aligned}
+P(X+Y=n)&=\sum_{k=0}^{n}P\big((X=k)\cap(Y=n-k)\big)\\
+&=\sum_{k=0}^{n}P(X=k)\,P(Y=n-k)\\
+&=c_n.
+\end{aligned}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q7-antidiagonale-cauchy.pdf}
+\caption*{Figure 2 --- Les couples (k, j) tels que k + j = n forment une
+antidiagonale : c\_n = P(X + Y = n) somme les produits a\_k b\_(n−k)
+portés par ces couples (ici n = 4).}
+\end{figure}
+
+La variable \(X+Y\) est à valeurs dans \(\mathbb{N}\). Pour tout \(t\in\,]-1,1[\), on a donc
+
+\equationajustee{\begin{aligned}
+G_{X+Y}(t)&=\sum_{n=0}^{+\infty}P(X+Y=n)\,t^n\\
+&=\sum_{n=0}^{+\infty}c_nt^n.
+\end{aligned}}
+
+\equationajustee{\boxed{\forall t\in\,]-1,1[,\ G_{X+Y}(t)=G_X(t)\,G_Y(t)}}
+
+L'égalité vaut d'ailleurs sur \([-1,1]\). En \(t=\pm1\), les deux séries convergent absolument, et le produit de Cauchy de deux séries absolument convergentes s'applique.
+
+\hypertarget{q8}{%
+\subsection{Q8}\label{q8}}
+
+\(Z=X+Y\) est à valeurs dans \(\mathbb{N}\). Pour tout \(t\in\,]-1,1[\), Q7 (avec l'indépendance de \(X\) et \(Y\)) puis Q6 donnent
+
+\equationajustee{\begin{aligned}
+G_Z(t)&={\mathrm{e}}^{\lambda(t-1)}{\mathrm{e}}^{\mu(t-1)}\\
+&={\mathrm{e}}^{(\lambda+\mu)(t-1)}\\
+&=\sum_{n=0}^{+\infty}{\mathrm{e}}^{-(\lambda+\mu)}\frac{(\lambda+\mu)^n}{n!}t^n.
+\end{aligned}}
+
+La dernière égalité est Q6 appliquée au paramètre \(\lambda+\mu>0\). Les séries entières \(\sum P(Z=n)t^n\) et \(\sum {\mathrm{e}}^{-(\lambda+\mu)}\frac{(\lambda+\mu)^n}{n!}t^n\) ont des rayons au moins égaux à 1 et la même somme sur \(]-1,1[\). Par unicité du développement en série entière, leurs coefficients coïncident. Pour tout \(n\in\mathbb{N}\) :
+
+\equationajustee{P(Z=n)={\mathrm{e}}^{-(\lambda+\mu)}\frac{(\lambda+\mu)^n}{n!}.}
+
+\textbf{\(Z=X+Y\) suit la loi de Poisson de paramètre \(\lambda+\mu\).}
+
+On obtient le même résultat par le calcul direct de \(P(Z=n)\) comme en Q7, puis la formule du binôme :
+
+\equationajustee{\begin{aligned}
+P(Z=n)&=\frac{{\mathrm{e}}^{-(\lambda+\mu)}}{n!}\sum_{k=0}^{n}\binom{n}{k}\lambda^k\mu^{n-k}\\
+&={\mathrm{e}}^{-(\lambda+\mu)}\frac{(\lambda+\mu)^n}{n!}.
+\end{aligned}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{probluxe8me}{%
+\section{Problème}\label{probluxe8me}}
+
+\hypertarget{partie-i-calcul-dune-intuxe9grale}{%
+\subsection{Partie I --- Calcul d'une intégrale}\label{partie-i-calcul-dune-intuxe9grale}}
+
+\hypertarget{q9}{%
+\subsection{Q9}\label{q9}}
+
+Soit \(x>0\), et soit \(\varphi_x(t)=\dfrac{x}{x^2+t^2}{\mathrm{e}}^{\mathrm{i}t}\). Comme \(x>0\), on a \(x^2+t^2\ge x^2>0\) : la fonction \(\varphi_x\) est continue sur \(\mathbb{R}\). Son module vérifie
+
+\equationajustee{|\varphi_x(t)|=\frac{x}{x^2+t^2}\underset{|t|\to+\infty}{\sim}\frac{x}{t^2}.}
+
+La fonction \(t\mapsto1/t^2\) est intégrable au voisinage de \(\pm\infty\) (Riemann, exposant \(2>1\)). Par comparaison de fonctions positives, \(|\varphi_x|\) est intégrable sur \([1,+\infty[\) et sur \(]-\infty,-1]\).
+
+Elle est continue sur le segment \([-1,1]\). Donc \(\varphi_x\) est intégrable sur \(\mathbb{R}\).
+
+\textbf{\(g\) est bien définie sur \(]0,+\infty[\).}
+
+\hypertarget{q10}{%
+\subsection{Q10}\label{q10}}
+
+Soit \(x>0\). L'application \(u\mapsto xu\) est une bijection \({\mathcal{C}}^1\) strictement croissante de \(\mathbb{R}\) sur \(\mathbb{R}\), et l'intégrale converge absolument. Le changement de variable \(t=xu\) donne
+
+\equationajustee{\begin{aligned}
+g(x)&=\int_{-\infty}^{+\infty}\frac{x}{x^2+x^2u^2}{\mathrm{e}}^{\mathrm{i}xu}\,x\,\mathrm{d}u\\
+&=\int_{-\infty}^{+\infty}\frac{{\mathrm{e}}^{\mathrm{i}xu}}{1+u^2}\,\mathrm{d}u.
+\end{aligned}}
+
+\equationajustee{\boxed{g(x)=\int_{-\infty}^{+\infty}\frac{{\mathrm{e}}^{\mathrm{i}xu}}{1+u^2}\,\mathrm{d}u}}
+
+Comme \(|{\mathrm{e}}^{\mathrm{i}xu}|=1\), on en déduit, pour tout \(x>0\),
+
+\equationajustee{\begin{aligned}
+|g(x)|&\le\int_{-\infty}^{+\infty}\frac{\mathrm{d}u}{1+u^2}\\
+&=\lim_{A\to+\infty}\big[\arctan u\big]_{-A}^{A}\\
+&=\pi.
+\end{aligned}}
+
+\textbf{\(g\) est bornée sur \(]0,+\infty[\), par \(\pi\).}
+
+\hypertarget{q11}{%
+\subsection{Q11}\label{q11}}
+
+On pose \(h(x,u)=\dfrac{{\mathrm{e}}^{\mathrm{i}xu}}{1+u^2}\) sur \([0,+\infty[\times\mathbb{R}\) et \(\Gamma(x)=\int_{\mathbb{R}}h(x,u)\,\mathrm{d}u\). On vérifie les hypothèses du théorème de continuité des intégrales à paramètre :
+
+\begin{itemize}
+\tightlist
+\item
+  pour tout \(x\ge0\), \(u\mapsto h(x,u)\) est continue sur \(\mathbb{R}\) ;
+\item
+  pour tout \(u\in\mathbb{R}\), \(x\mapsto h(x,u)\) est continue sur \([0,+\infty[\) ;
+\item
+  pour tout \((x,u)\), \(|h(x,u)|=\dfrac{1}{1+u^2}\), fonction intégrable sur \(\mathbb{R}\) et indépendante de \(x\).
+\end{itemize}
+
+\(\Gamma\) est donc continue sur \([0,+\infty[\). D'après Q10, \(\Gamma=g\) sur \(]0,+\infty[\). De plus \(\Gamma(0)=\int_{\mathbb{R}}\frac{\mathrm{d}u}{1+u^2}=\pi\). On en déduit
+
+\equationajustee{\boxed{\lim_{x\to0^+}g(x)=\Gamma(0)=\pi}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q11-concentration-integrande.pdf}
+\caption*{Figure 3 --- Module de l'intégrande initiale, t ↦ x/(x² + t²), pour x =
+1, 1/2 et 1/4 : quand x → 0⁺, la masse se concentre en t = 0 à aire π
+constante, alors que la limite simple est nulle pour t ≠ 0.}
+\end{figure}
+
+\hypertarget{q12}{%
+\subsection{Q12}\label{q12}}
+
+On revient à la forme initiale. Avec la forme de Q10, dériver ferait apparaître \(u/(1+u^2)\) puis \(u^2/(1+u^2)\), qui ne sont pas intégrables.
+
+On pose \(\varphi(x,t)=\dfrac{x}{x^2+t^2}{\mathrm{e}}^{\mathrm{i}t}\) sur \(]0,+\infty[\times\mathbb{R}\). Pour \(t\) fixé, \(x\mapsto\varphi(x,t)\) est de classe \({\mathcal{C}}^2\) (fraction rationnelle sans pôle sur \(]0,+\infty[\)). Par dérivation d'un quotient :
+
+\equationajustee{\frac{\partial\varphi}{\partial x}(x,t)=\frac{t^2-x^2}{(x^2+t^2)^2}{\mathrm{e}}^{\mathrm{i}t},}
+
+\equationajustee{\frac{\partial^2\varphi}{\partial x^2}(x,t)=\frac{2x(x^2-3t^2)}{(x^2+t^2)^3}{\mathrm{e}}^{\mathrm{i}t}.}
+
+Soit \(0<a<b\). Pour \(x\in[a,b]\) et \(t\in\mathbb{R}\), on utilise \(|t^2-x^2|\le t^2+x^2\) et \(x^2+3t^2\le3(x^2+t^2)\). On obtient les dominations suivantes :
+
+\equationajustee{|\varphi(x,t)|\le\frac{b}{a^2+t^2},}
+
+\equationajustee{\begin{aligned}
+\left|\frac{\partial\varphi}{\partial x}(x,t)\right|&\le\frac{1}{x^2+t^2}\\
+&\le\frac{1}{a^2+t^2},
+\end{aligned}}
+
+\equationajustee{\begin{aligned}
+\left|\frac{\partial^2\varphi}{\partial x^2}(x,t)\right|&\le\frac{2b\,(x^2+3t^2)}{(x^2+t^2)^3}\\
+&\le\frac{6b}{(x^2+t^2)^2}\\
+&\le\frac{6b}{(a^2+t^2)^2}.
+\end{aligned}}
+
+Les trois majorants sont continus et intégrables sur \(\mathbb{R}\) : ils sont en \(O(1/t^2)\) en \(\pm\infty\). On vérifie les hypothèses du théorème de régularité \({\mathcal{C}}^2\) des intégrales à paramètre, sur le segment \([a,b]\) :
+
+\begin{itemize}
+\tightlist
+\item
+  pour tout \(t\), \(x\mapsto\varphi(x,t)\) est \({\mathcal{C}}^2\) sur \([a,b]\) ;
+\item
+  pour tout \(x\), \(t\mapsto\varphi(x,t)\) et \(t\mapsto\partial_x\varphi(x,t)\) sont continues et intégrables sur \(\mathbb{R}\), et \(t\mapsto\partial_x^2\varphi(x,t)\) est continue ;
+\item
+  la dérivée seconde est dominée sur \([a,b]\times\mathbb{R}\) par une fonction intégrable indépendante de \(x\).
+\end{itemize}
+
+Donc \(g\) est \({\mathcal{C}}^2\) sur \([a,b]\). Tout point de \(]0,+\infty[\) appartient à un tel segment.
+
+Donc \(g\) est \({\mathcal{C}}^2\) sur \(]0,+\infty[\), et pour tout \(x>0\) :
+
+\equationajustee{\boxed{g''(x)=\int_{-\infty}^{+\infty}\frac{2x(x^2-3t^2)}{(x^2+t^2)^3}{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t}}
+
+\hypertarget{q13}{%
+\subsection{Q13}\label{q13}}
+
+Soit \(\psi(x,t)=\dfrac{x}{x^2+t^2}\). On calcule d'abord les dérivées par rapport à \(x\) :
+
+\equationajustee{\frac{\partial\psi}{\partial x}=\frac{t^2-x^2}{(x^2+t^2)^2},}
+
+\equationajustee{\begin{aligned}
+\frac{\partial^2\psi}{\partial x^2}&=\frac{-2x(x^2+t^2)-4x(t^2-x^2)}{(x^2+t^2)^3}\\
+&=\frac{2x(x^2-3t^2)}{(x^2+t^2)^3}.
+\end{aligned}}
+
+Puis les dérivées par rapport à \(t\) :
+
+\equationajustee{\frac{\partial\psi}{\partial t}=\frac{-2xt}{(x^2+t^2)^2},}
+
+\equationajustee{\begin{aligned}
+\frac{\partial^2\psi}{\partial t^2}&=\frac{-2x(x^2+t^2)+8xt^2}{(x^2+t^2)^3}\\
+&=\frac{-2x(x^2-3t^2)}{(x^2+t^2)^3}.
+\end{aligned}}
+
+En sommant :
+
+\equationajustee{\boxed{\frac{\partial^2}{\partial x^2}\left(\frac{x}{x^2+t^2}\right)+\frac{\partial^2}{\partial t^2}\left(\frac{x}{x^2+t^2}\right)=0}}
+
+pour tout \((x,t)\in\,]0,+\infty[\times\mathbb{R}\).
+
+\textbf{Équation différentielle.} Fixons \(x>0\) et notons \(\psi_x=\psi(x,\cdot)\). Par Q12 et l'identité précédente,
+
+\equationajustee{g''(x)=-\int_{-\infty}^{+\infty}\psi_x''(t)\,{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t.}
+
+Quand \(|t|\to+\infty\), on a les estimations suivantes :
+
+\equationajustee{\psi_x(t)=O\Big(\frac{1}{t^2}\Big),}
+
+\equationajustee{\psi_x'(t)=O\Big(\frac{1}{|t|^3}\Big),}
+
+\equationajustee{\psi_x''(t)=O\Big(\frac{1}{t^4}\Big).}
+
+Ces trois fonctions continues sont donc intégrables sur \(\mathbb{R}\). De plus, \(\psi_x\) et \(\psi_x'\) tendent vers 0 en \(\pm\infty\).
+
+Pour \(A>0\), deux intégrations par parties sur \([-A,A]\) donnent
+
+\equationajustee{\int_{-A}^{A}\psi_x''{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t=\Big[\psi_x'{\mathrm{e}}^{\mathrm{i}t}\Big]_{-A}^{A}-\mathrm{i}\int_{-A}^{A}\psi_x'{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t,}
+
+\equationajustee{\int_{-A}^{A}\psi_x'{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t=\Big[\psi_x{\mathrm{e}}^{\mathrm{i}t}\Big]_{-A}^{A}-\mathrm{i}\int_{-A}^{A}\psi_x{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t.}
+
+Quand \(A\to+\infty\), les crochets tendent vers 0, car \(|{\mathrm{e}}^{\mathrm{i}t}|=1\) et \(\psi_x,\psi_x'\to0\). Les intégrales convergent, d'où
+
+\equationajustee{\int_{\mathbb{R}}\psi_x'{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t=-\mathrm{i}\,g(x),}
+
+\equationajustee{\begin{aligned}
+\int_{\mathbb{R}}\psi_x''{\mathrm{e}}^{\mathrm{i}t}\,\mathrm{d}t&=(-\mathrm{i})^2g(x)\\
+&=-g(x).
+\end{aligned}}
+
+Donc \(g''(x)=g(x)\) pour tout \(x>0\) :
+
+\textbf{\(g\) est solution de \(y''-y=0\) sur \(]0,+\infty[\).}
+
+\hypertarget{q14}{%
+\subsection{Q14}\label{q14}}
+
+L'équation caractéristique \(r^2-1=0\) a pour racines \(\pm1\). Les solutions complexes de \(y''-y=0\) sur \(]0,+\infty[\) sont les fonctions \(x\mapsto A{\mathrm{e}}^{x}+B{\mathrm{e}}^{-x}\), avec \((A,B)\in{\mathbb{C}}^2\).
+
+Il existe donc \((A,B)\in{\mathbb{C}}^2\) tel que, pour tout \(x>0\),
+
+\equationajustee{g(x)=A{\mathrm{e}}^x+B{\mathrm{e}}^{-x}.}
+
+\begin{itemize}
+\tightlist
+\item
+  On a \({\mathrm{e}}^{-x}g(x)=A+B{\mathrm{e}}^{-2x}\to A\) quand \(x\to+\infty\). Si \(A\neq0\), alors \(|g(x)|\sim|A|{\mathrm{e}}^x\to+\infty\), ce qui contredit Q10. Donc \(A=0\).
+\item
+  On a \(g(x)=B{\mathrm{e}}^{-x}\to B\) quand \(x\to0^+\). D'après Q11, \(B=\pi\).
+\end{itemize}
+
+Pour tout \(x>0\) :
+
+\equationajustee{\boxed{g(x)=\int_{-\infty}^{+\infty}\frac{{\mathrm{e}}^{\mathrm{i}xu}}{1+u^2}\,\mathrm{d}u=\pi\,{\mathrm{e}}^{-x}}}
+
+\hypertarget{partie-ii-formule-sommatoire-de-poisson}{%
+\subsection{Partie II --- Formule sommatoire de Poisson}\label{partie-ii-formule-sommatoire-de-poisson}}
+
+\hypertarget{q15}{%
+\subsection{Q15}\label{q15}}
+
+Soit \(x\in\mathbb{R}\) fixé ; l'indice de sommation est \(n\). Les termes \(f(x+n)\) et \(f(x-n)\) sont strictement positifs. De plus, quand \(n\to+\infty\),
+
+\equationajustee{n^2f(x\pm n)=\frac{n^2}{1+(x\pm n)^2}\longrightarrow1,}
+
+donc \(f(x\pm n)\sim1/n^2\). Par comparaison de séries à termes positifs avec une série de Riemann convergente, les deux séries convergent, et \(F(x)\) est bien défini.
+
+Pour la périodicité, on décale les indices (\(m=n+1\) dans la première série, \(p=n-1\) dans la seconde) :
+
+\equationajustee{\begin{aligned}
+F(x+1)&=\sum_{m=1}^{+\infty}f(x+m)+\sum_{p=0}^{+\infty}f(x-p)\\
+&=\Big(f(x)+\sum_{m=1}^{+\infty}f(x+m)\Big)+\sum_{p=1}^{+\infty}f(x-p)\\
+&=F(x).
+\end{aligned}}
+
+\textbf{\(F\) est définie sur \(\mathbb{R}\) et 1-périodique.}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q15-periodisation-f.pdf}
+\caption*{Figure 4 --- Périodisation de f : (a) les translatées x ↦ f(x + n), en
+gris, ont pour somme F, en bleu, 1-périodique ; (b) agrandie, F oscille
+entre π th π et π coth π autour de sa moyenne π (Q22).}
+\end{figure}
+
+\hypertarget{q16}{%
+\subsection{Q16}\label{q16}}
+
+Pour \(n\in\mathbb{N}\), on pose \(u_n(x)=f(x+n)\), et pour \(n\ge1\), \(v_n(x)=f(x-n)\). Ces fonctions sont continues sur \(\mathbb{R}\). Pour \(x\in[0,1]\) :
+
+\begin{itemize}
+\tightlist
+\item
+  si \(n\ge1\), alors \(x+n\ge n\), donc \(0\le u_n(x)\le\dfrac{1}{1+n^2}\le\dfrac{1}{n^2}\) ;
+\item
+  si \(n\ge2\), alors \(|x-n|=n-x\ge n-1\ge1\), donc \(0\le v_n(x)\le\dfrac{1}{(n-1)^2}\).
+\end{itemize}
+
+Ainsi, pour \(n\ge2\) :
+
+\equationajustee{\|u_n\|_{\infty,[0,1]}\le\frac{1}{n^2},}
+
+\equationajustee{\|v_n\|_{\infty,[0,1]}\le\frac{1}{(n-1)^2}.}
+
+Ce sont les termes généraux de séries convergentes. Les séries \(\sum_{n\ge1}u_n\) et \(\sum_{n\ge2}v_n\) convergent donc normalement, donc uniformément, sur \([0,1]\).
+
+Leurs termes sont continus : leurs sommes sont continues sur \([0,1]\). En ajoutant les termes continus \(u_0\) et \(v_1\), on obtient que \textbf{\(F\) est continue sur \([0,1]\)}.
+
+Par Q15, \(F(y+k)=F(y)\) pour tous \(y\in\mathbb{R}\) et \(k\in\mathbb{Z}\). Pour \(x\in[k,k+1]\), on a \(F(x)=F(x-k)\) avec \(x-k\in[0,1]\).
+
+\(F\) est donc continue sur chaque \([k,k+1]\), comme composée de fonctions continues.
+
+Soit \(x_0\in\mathbb{R}\) et \(k=\lfloor x_0\rfloor\). Les restrictions de \(F\) à \([k-1,k]\) et à \([k,k+1]\) sont continues et prennent la même valeur en \(k\).
+
+\(F\) est donc continue sur \([k-1,k+1]\), qui est un voisinage de \(x_0\). \textbf{\(F\) est continue sur \(\mathbb{R}\).}
+
+\hypertarget{q17}{%
+\subsection{Q17}\label{q17}}
+
+Soit \(k\in\mathbb{Z}\). Comme \(|{\mathrm{e}}^{-2\mathrm{i}\pi kt}|=1\), les séries \(\sum u_n(t){\mathrm{e}}^{-2\mathrm{i}\pi kt}\) et \(\sum v_n(t){\mathrm{e}}^{-2\mathrm{i}\pi kt}\) convergent normalement sur \([0,1]\) (Q16), et leurs termes sont continus. Le théorème d'intégration terme à terme d'une série de fonctions uniformément convergente sur un segment donne
+
+\equationajustee{\begin{aligned}
+c_k(F)={}&\sum_{n=0}^{+\infty}\int_0^1f(t+n){\mathrm{e}}^{-2\mathrm{i}\pi kt}\,\mathrm{d}t\\
+&+\sum_{n=1}^{+\infty}\int_0^1f(t-n){\mathrm{e}}^{-2\mathrm{i}\pi kt}\,\mathrm{d}t.
+\end{aligned}}
+
+On pose \(\Phi(s)=f(s){\mathrm{e}}^{-2\mathrm{i}\pi ks}\). On effectue les changements de variable \(s=t+n\) et \(s=t-n\). Comme \(kn\in\mathbb{Z}\), on a \({\mathrm{e}}^{\pm2\mathrm{i}\pi kn}=1\), d'où
+
+\equationajustee{\int_0^1f(t+n){\mathrm{e}}^{-2\mathrm{i}\pi kt}\,\mathrm{d}t=\int_n^{n+1}\Phi(s)\,\mathrm{d}s,}
+
+\equationajustee{\int_0^1f(t-n){\mathrm{e}}^{-2\mathrm{i}\pi kt}\,\mathrm{d}t=\int_{-n}^{-n+1}\Phi(s)\,\mathrm{d}s.}
+
+On a \(|\Phi|=f\), intégrable sur \(\mathbb{R}\), donc \(\Phi\) est intégrable. Par la relation de Chasles, les sommes partielles valent
+
+\equationajustee{\sum_{n=0}^{N}\int_n^{n+1}\Phi=\int_0^{N+1}\Phi\xrightarrow[N\to+\infty]{}\int_0^{+\infty}\Phi,}
+
+\equationajustee{\sum_{n=1}^{N}\int_{-n}^{-n+1}\Phi=\int_{-N}^{0}\Phi\xrightarrow[N\to+\infty]{}\int_{-\infty}^{0}\Phi.}
+
+D'où, pour tout \(k\in\mathbb{Z}\) :
+
+\equationajustee{\boxed{c_k(F)=\int_{-\infty}^{+\infty}f(t)\,{\mathrm{e}}^{-2\mathrm{i}\pi kt}\,\mathrm{d}t}}
+
+\hypertarget{q18}{%
+\subsection{Q18}\label{q18}}
+
+On pose \(m=n+k\in\mathbb{Z}\). Si \(m=0\), l'intégrande vaut 1 et l'intégrale vaut 1.
+
+Si \(m\neq0\), une primitive de \(t\mapsto{\mathrm{e}}^{-2\mathrm{i}\pi mt}\) est \(t\mapsto\frac{{\mathrm{e}}^{-2\mathrm{i}\pi mt}}{-2\mathrm{i}\pi m}\). De plus, \({\mathrm{e}}^{-2\mathrm{i}\pi m}=1\) car \(m\) est entier :
+
+\equationajustee{\begin{aligned}
+\int_0^1{\mathrm{e}}^{-2\mathrm{i}\pi mt}\,\mathrm{d}t&=\frac{{\mathrm{e}}^{-2\mathrm{i}\pi m}-1}{-2\mathrm{i}\pi m}\\
+&=0.
+\end{aligned}}
+
+\equationajustee{\boxed{\int_0^1{\mathrm{e}}^{-2\mathrm{i}\pi(n+k)t}\,\mathrm{d}t=\begin{cases}1&\text{si }n+k=0,\\0&\text{si }n+k\neq0.\end{cases}}}
+
+\hypertarget{partie-iii-applications}{%
+\subsection{Partie III --- Applications}\label{partie-iii-applications}}
+
+\hypertarget{q19}{%
+\subsection{Q19}\label{q19}}
+
+D'après Q17 avec \(k=0\) :
+
+\equationajustee{c_0(F)=\int_{\mathbb{R}}\frac{\mathrm{d}t}{1+t^2}=\pi.}
+
+Soit \(k\ge1\). D'après Q17, \(c_k(F)=\int_{\mathbb{R}}\frac{{\mathrm{e}}^{-2\mathrm{i}\pi kt}}{1+t^2}\,\mathrm{d}t\). L'intégrale converge absolument. Le changement de variable \(t=-u\) (bijection \({\mathcal{C}}^1\) strictement décroissante de \(\mathbb{R}\) sur \(\mathbb{R}\)) donne
+
+\equationajustee{c_k(F)=\int_{-\infty}^{+\infty}\frac{{\mathrm{e}}^{2\mathrm{i}\pi ku}}{1+u^2}\,\mathrm{d}u.}
+
+C'est la forme de \(g\) obtenue en Q10, au point \(2\pi k>0\). Par Q14 :
+
+\equationajustee{\begin{aligned}
+c_k(F)&=g(2\pi k)\\
+&=\pi\,{\mathrm{e}}^{-2\pi k}.
+\end{aligned}}
+
+\equationajustee{\boxed{c_0(F)=\pi,\ \text{ et }\ \forall k\in{\mathbb{N}}^*,\ c_k(F)=\pi\,{\mathrm{e}}^{-2\pi k}}}
+
+La formule vaut aussi pour \(k=0\). Avec la relation admise, \(c_k(F)=\pi{\mathrm{e}}^{-2\pi|k|}\) pour tout \(k\in\mathbb{Z}\).
+
+\hypertarget{q20}{%
+\subsection{Q20}\label{q20}}
+
+On pose \(q={\mathrm{e}}^{-2\pi}\in\,]0,1[\). Par Q19 et la relation admise, pour \(n\ge0\),
+
+\equationajustee{c_n(F)=c_{-n}(F)=\pi q^n.}
+
+Les fonctions \(x\mapsto c_n(F){\mathrm{e}}^{2\mathrm{i}\pi nx}\) et \(x\mapsto c_{-n}(F){\mathrm{e}}^{-2\mathrm{i}\pi nx}\) sont continues sur \(\mathbb{R}\) et de norme infinie \(\pi q^n\).
+
+C'est le terme général d'une série géométrique convergente. Les deux séries convergent donc normalement, donc uniformément, sur \(\mathbb{R}\). Ainsi \(G\) est bien définie, et \textbf{\(G\) est continue sur \(\mathbb{R}\)}, comme somme d'une série uniformément convergente de fonctions continues.
+
+Pour \(n\in\mathbb{N}\), on a \({\mathrm{e}}^{\pm2\mathrm{i}\pi n(x+1)}={\mathrm{e}}^{\pm2\mathrm{i}\pi nx}\). Chaque terme est donc 1-périodique et, en sommant, \(G(x+1)=G(x)\) : \textbf{\(G\) est 1-périodique}.
+
+\hypertarget{q21}{%
+\subsection{Q21}\label{q21}}
+
+\(F\) et \(G\) sont continues et 1-périodiques (Q15, Q16, Q20). D'après le résultat admis, il suffit d'établir \(c_k(G)=c_k(F)\) pour tout \(k\in\mathbb{Z}\).
+
+Soit \(k\in\mathbb{Z}\). Après multiplication par \({\mathrm{e}}^{-2\mathrm{i}\pi kt}\), de module 1, les séries de Q20 convergent encore normalement sur \([0,1]\). On intègre terme à terme sur le segment \([0,1]\) :
+
+\equationajustee{\begin{aligned}
+c_k(G)={}&\sum_{n=0}^{+\infty}c_n(F)\int_0^1{\mathrm{e}}^{-2\mathrm{i}\pi(-n+k)t}\,\mathrm{d}t\\
+&+\sum_{n=1}^{+\infty}c_{-n}(F)\int_0^1{\mathrm{e}}^{-2\mathrm{i}\pi(n+k)t}\,\mathrm{d}t.
+\end{aligned}}
+
+Par Q18, la première intégrale vaut 1 si \(n=k\) et 0 sinon ; la seconde vaut 1 si \(n=-k\) et 0 sinon.
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(k\ge0\), seul le terme \(n=k\) de la première somme subsiste : la seconde somme est nulle, puisque \(n\ge1>-k\). On obtient \(c_k(G)=c_k(F)\).
+\item
+  Si \(k<0\), la première somme est nulle, puisque \(n\ge0>k\). Seul le terme \(n=-k\ge1\) de la seconde subsiste et vaut \(c_{-(-k)}(F)=c_k(F)\).
+\end{itemize}
+
+Dans les deux cas, \(c_k(G)=c_k(F)\). Le résultat admis donne
+
+\equationajustee{\boxed{F=G}}
+
+\hypertarget{q22}{%
+\subsection{Q22}\label{q22}}
+
+On pose \(q={\mathrm{e}}^{-2\pi}\) et \(z={\mathrm{e}}^{2\mathrm{i}\pi x}\), de sorte que \(|z|=1\), \(\bar z=z^{-1}\) et \(z+\bar z=2\cos(2\pi x)\). Par Q19 et Q21, et puisque \(|qz|=|q\bar z|=q<1\), on somme deux séries géométriques :
+
+\equationajustee{\begin{aligned}
+F(x)&=\pi\sum_{n=0}^{+\infty}(qz)^n+\pi\sum_{n=1}^{+\infty}(q\bar z)^n\\
+&=\pi\left(\frac{1}{1-qz}+\frac{q\bar z}{1-q\bar z}\right)\\
+&=\pi\,\frac{1-q^2}{(1-qz)(1-q\bar z)}.
+\end{aligned}}
+
+En effet, le numérateur vaut \(1-q\bar z+q\bar z-q^2z\bar z=1-q^2\). Le dénominateur vaut \(1-2q\cos(2\pi x)+q^2\). Il est supérieur ou égal à \((1-q)^2>0\), donc ne s'annule pas. On multiplie le numérateur et le dénominateur par \({\mathrm{e}}^{2\pi}\) :
+
+\equationajustee{\begin{aligned}
+F(x)&=\frac{\pi(1-q^2)}{1-2q\cos(2\pi x)+q^2}\\
+&=\frac{\pi({\mathrm{e}}^{2\pi}-{\mathrm{e}}^{-2\pi})}{{\mathrm{e}}^{2\pi}+{\mathrm{e}}^{-2\pi}-2\cos(2\pi x)}.
+\end{aligned}}
+
+Pour tout \(x\in\mathbb{R}\) :
+
+\equationajustee{\boxed{F(x)=\frac{\pi\operatorname{sh}(2\pi)}{\operatorname{ch}(2\pi)-\cos(2\pi x)}}}
+
+Autrement dit, pour tout réel \(x\), la somme \(\sum_{n\in\mathbb{Z}}\frac{1}{1+(x+n)^2}\) vaut \(\frac{\pi\operatorname{sh}(2\pi)}{\operatorname{ch}(2\pi)-\cos(2\pi x)}\).
+
+On peut contrôler ce résultat en deux points. En \(x=0\), on retrouve \(\sum_{n\in\mathbb{Z}}\frac{1}{1+n^2}=\pi\coth\pi\approx3{,}1533\). En \(x=\frac12\), on obtient \(F(\tfrac12)=\pi\operatorname{th}\pi\approx3{,}1299\). \(F\) oscille donc faiblement autour de sa valeur moyenne \(c_0(F)=\pi\).
+
+FIN
+
+\end{document}

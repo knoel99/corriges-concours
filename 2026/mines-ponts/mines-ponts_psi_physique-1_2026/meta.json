@@ -1,0 +1,38 @@
+{
+  "slug": "mines-ponts_psi_physique-1_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PSI",
+    "matiere": "Physique 1",
+    "annee": 2026
+  },
+  "questions": 22,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q04-bilan-tuyau.svg",
+      "question": "Q4",
+      "legende": "bilan sur la portion de tuyau entre M₁ et M₂ : les tensions tirent vers l'extérieur, les surpressions poussent vers l'intérieur"
+    },
+    {
+      "fichier": "figures/q05-q06-bilan-lance.svg",
+      "question": "Q5-Q6",
+      "legende": "bilans sur la lance, (a) lance et eau contenue (Q5), (b) lance seule (Q6) ; longueurs indicatives, avec F + F_eau = T"
+    },
+    {
+      "fichier": "figures/q17-pression-ventres-cols.svg",
+      "question": "Q17",
+      "legende": "lecture en pression du critère : « + » marque la surpression la plus forte, les flèches le sens où le fluide est chassé"
+    },
+    {
+      "fichier": "figures/q19-q20-tranche-col-ventre.svg",
+      "question": "Q19-Q20",
+      "legende": "tranche de Q19-Q20 dans le cas instable : la surpression plus forte au col pousse la tranche vers le ventre"
+    },
+    {
+      "fichier": "figures/q20-taux-de-croissance.svg",
+      "question": "Q20",
+      "legende": "taux de croissance τ_h/τ_k = ξ√(1−ξ²)/√2 : nul au-delà de ξ = 1, maximal en ξ_c = 1/√2"
+    }
+  ]
+}

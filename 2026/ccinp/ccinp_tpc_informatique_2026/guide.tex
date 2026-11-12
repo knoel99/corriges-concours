@@ -1,0 +1,1378 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP TPC — Informatique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP TPC}
+\fancyhead[R]{\small Informatique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP TPC — Informatique 2026\par}\medskip
+  {\large CCINP · TPC · Informatique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} « Autour de jeux ». Épreuve TPC5IN, \textbf{3 heures, calculatrice interdite}, Python et SQL. Les réponses se rédigent sur un Document Réponse (DR) de 11 pages. Pour six questions (Q2, Q5, Q12, Q16, Q22, Q23), le DR fournit un cadre structuré ou un code à trous qu'il faut compléter tel quel. Ce sujet TPC est différent de ceux de PC et de PSI.
+
+\textbf{Deux parties indépendantes, 27 questions.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I (Q1--Q23) --- Le problème des \(n\) reines.} On cherche à placer \(n\) reines sur une grille \(n \times n\) sans que deux d'entre elles partagent une ligne, une colonne ou une diagonale. Une configuration est codée par une liste \texttt{L}, où \texttt{L{[}i{]}} est la colonne de la reine de la ligne \texttt{i}. Le sujet progresse en sept sous-parties :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    I.1 (Q1--Q2) lecture de figures et codage ;
+  \item
+    I.2 (Q3--Q6) fonctions de base sur les listes et affichage d'une grille ;
+  \item
+    I.3 (Q7--Q11) test de validité : interprétation des conditions, détection de doublons par dictionnaire, correction d'un code fautif, complexités ;
+  \item
+    I.4 (Q12--Q13) importation de \texttt{sample} et recherche aléatoire ;
+  \item
+    I.5 (Q14--Q17) génération de toutes les permutations par insertions successives, puis filtrage ;
+  \item
+    I.6 (Q18--Q21) symétrie et rotation d'une configuration, lecture d'une fonction de classement ;
+  \item
+    I.7 (Q22--Q23) parcours en profondeur récursif avec retour sur trace (backtracking), pour trouver une solution puis pour les compter.
+  \end{itemize}
+\item
+  \textbf{Partie II (Q24--Q27) --- Base de données d'un site de jeux.} Quatre requêtes SQL sur quatre tables (\texttt{Clients}, \texttt{Jeux}, \texttt{Factures}, \texttt{Records}) : sélection simple, jointure, agrégats \texttt{SUM} et \texttt{MAX} avec \texttt{GROUP\ BY}.
+\end{itemize}
+
+\textbf{Notions du programme mobilisées.} Listes (création, \texttt{append}, accès par indice, copie, caractère mutable), dictionnaires utilisés comme ensembles, importation de modules, complexité dans le pire des cas, invariant de boucle, récursivité et terminaison, parcours en profondeur d'un graphe implicite, SQL (projection, sélection, jointure interne, agrégation).
+
+\textbf{Difficulté et longueur.} Sujet de difficulté modérée et très guidé, avec beaucoup de questions courtes. Les points se perdent sur des détails : un sens de lecture inversé (Q2), des listes non distinctes (Q4), une erreur oubliée dans le code fautif (Q9), un échange entre sommes et différences (Q7, Q10), l'ordre exact demandé (Q15), le sens de la symétrie « horizontale » (Q18), la confusion entre lignes de départ et d'arrivée (Q20).
+
+\textbf{Questions à ne pas laisser passer.} Q1--Q4, Q6, Q8, Q11, Q12, Q14, Q17, Q19, et toute la partie II (Q24--Q27), courte et indépendante.
+
+\textbf{Gestion du temps.} Compter environ 20 min pour I.1--I.2, 35 min pour I.3, 15 min pour I.4, 35 min pour I.5, 30 min pour I.6, 25 min pour I.7 et 20 min pour la partie II. L'énoncé autorise à utiliser les fonctions des questions précédentes même non écrites : une question bloquante ne doit pas arrêter la suite.
+
+Notation : la case de la ligne \(i\) et de la colonne \(j\) est notée \((i, j)\). Lignes et colonnes sont numérotées à partir de \(0\), les lignes de haut en bas, les colonnes de gauche à droite.
+
+\hypertarget{partie-i-des-algorithmes-pour-ruxe9soudre-le-probluxe8me-des-n-reines}{%
+\section{Partie I --- Des algorithmes pour résoudre le problème des n reines}\label{partie-i-des-algorithmes-pour-ruxe9soudre-le-probluxe8me-des-n-reines}}
+
+On construit pas à pas les outils (affichage, test de validité), puis trois méthodes de résolution de coût très différent : tirage aléatoire, énumération exhaustive des permutations, parcours de graphe avec élagage.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Relever les quatre cases occupées. Lignes et colonnes se vérifient d'un coup d'œil : où chercher le conflit ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux cases sont sur une même diagonale quand l'écart de lignes égale l'écart de colonnes, en valeur absolue.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Dans la configuration perdante, les reines occupent \((0,0),\ (1,2),\ (2,3),\ (3,1)\).
+
+Il y a une reine par ligne, et les colonnes \(0, 2, 3, 1\) sont distinctes.
+
+En revanche, les reines \((1,2)\) et \((2,3)\) ont le même écart de lignes et de colonnes :
+
+\equationajustee{\begin{aligned}
+2 - 1 &= 1 \quad \text{(lignes)} \\
+3 - 2 &= 1 \quad \text{(colonnes)}
+\end{aligned}}
+
+Elles sont donc sur la même \textbf{diagonale descendante}, et même adjacentes. \textbf{La reine de la ligne 1 contrôle celle de la ligne 2 : la configuration ne respecte pas la consigne.}
+
+\begin{jury}
+
+Une justification doit être précise : nommer les deux reines en conflit et dire sur quelle diagonale elles se trouvent. Un seul conflit suffit à conclure.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Contrôler son sens de lecture sur l'exemple de la figure 5, codé \texttt{{[}2,\ 4,\ 1,\ 3,\ 0{]}} : \texttt{L{[}i{]}} est la colonne de la reine de la ligne \texttt{i}.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\equationajustee{\boxed{\begin{aligned}{}&\text{gagnante : } L = [2, 0, 3, 1] \\
+&\text{perdante : } L = [0, 2, 3, 1]
+\end{aligned}}}
+
+Contrôle : pour la perdante, les \(L[i] - i\) valent \(0, 1, 1, -2\). La valeur \(1\) répétée retrouve le conflit de Q1.
+
+\begin{piege}
+
+Inverser lignes et colonnes, ou numéroter à partir de \(1\) : \texttt{{[}3,\ 1,\ 4,\ 2{]}} trahit un décalage d'indice.
+
+\end{piege}
+
+\hypertarget{partie-i.2-mise-en-place-dun-affichage}{%
+\section{Partie I.2 --- Mise en place d'un affichage}\label{partie-i.2-mise-en-place-dun-affichage}}
+
+Trois fonctions courtes. Le point technique est le caractère mutable des listes : une grille doit être faite de listes distinctes.
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Le programme permet de créer une liste par répétition d'une liste à un élément, ou par ajouts successifs.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\begin{lstlisting}[language=Python]
+def ligne(n):
+    """Renvoie une liste de n zéros."""
+    return [0] * n
+\end{lstlisting}
+
+Variante par ajouts successifs : partir de \texttt{L\ =\ {[}{]}} et faire \texttt{n} fois \texttt{L.append(0)}. \texttt{ligne(5)} renvoie \texttt{{[}0,\ 0,\ 0,\ 0,\ 0{]}}.
+
+\begin{piege}
+
+\texttt{{[}0\ *\ n{]}} vaut \texttt{{[}0{]}} : la répétition porte sur la liste, pas sur son contenu.
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Pourquoi l'énoncé insiste-t-il sur « listes distinctes » ? Que se passe-t-il si plusieurs cases de \texttt{G} désignent le même objet liste ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Il faut créer une nouvelle liste à chaque tour de boucle.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\begin{lstlisting}[language=Python]
+def grille(n):
+    """Renvoie n listes distinctes contenant chacune n zéros."""
+    G = []
+    for i in range(n):
+        G.append(ligne(n))   # nouvelle liste à chaque appel
+    return G
+\end{lstlisting}
+
+Chaque appel à \texttt{ligne(n)} crée une liste neuve : les \(n\) sous-listes sont distinctes en mémoire. \texttt{grille(3)} renvoie \texttt{{[}{[}0,\allowbreak{}\ 0,\allowbreak{}\ 0{]}\allowbreak{},\allowbreak{}\ {[}0,\allowbreak{}\ 0,\allowbreak{}\ 0{]}\allowbreak{},\allowbreak{}\ {[}0,\allowbreak{}\ 0,\allowbreak{}\ 0{]}\allowbreak{}{]}\allowbreak{}}.
+
+\begin{piege}
+
+\texttt{{[}{[}0{]}\ *\ n{]}\ *\ n} s'affiche pareil mais répète \(n\) fois \textbf{la même} liste : \texttt{G{[}0{]}{[}0{]}\ =\ 1} mettrait un \(1\) en tête de toutes les lignes. La question Q5 écrit justement dans \texttt{G{[}i{]}{[}j{]}}.
+
+\end{piege}
+
+\begin{methode}
+
+Pour une liste de listes, créer chaque sous-liste dans une boucle (ou par compréhension \texttt{{[}ligne(\allowbreak{}n)\allowbreak{}\ for\ i\ in\ range(\allowbreak{}n)\allowbreak{}{]}\allowbreak{}}), jamais par répétition \texttt{*} d'une liste.
+
+\end{methode}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Le DR impose le squelette : taille, création de la grille, boucle sur \texttt{i}, renvoi. Que faut-il écrire dans la boucle ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour être linéaire, ne pas parcourir toutes les colonnes : on connaît directement la colonne de la reine de la ligne \texttt{i}.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\begin{lstlisting}[language=Python]
+def remplir(L):
+    # On récupère la taille de L
+    n = len(L)
+    # On crée la liste de listes G
+    G = grille(n)
+    # On remplit G à l'aide de L
+    for i in range(n):
+        G[i][L[i]] = 1      # reine de la ligne i en colonne L[i]
+    return G
+\end{lstlisting}
+
+La boucle fait \texttt{len(L)} tours de coût constant : le remplissage est en \(O(\texttt{len(L)})\), au lieu de \(O(n^2)\) pour une double boucle testant \texttt{L{[}i{]}\ ==\ j}.
+
+La création de la grille reste en \(O(n^2)\), puisqu'il faut bien créer \(n^2\) cases.
+
+\texttt{remplir(\allowbreak{}{[}1,\allowbreak{}\ 3,\allowbreak{}\ 0,\allowbreak{}\ 2{]}\allowbreak{})\allowbreak{}} renvoie \texttt{{[}{[}0,\allowbreak{}\ 1,\allowbreak{}\ 0,\allowbreak{}\ 0{]}\allowbreak{},\allowbreak{}\ {[}0,\allowbreak{}\ 0,\allowbreak{}\ 0,\allowbreak{}\ 1{]}\allowbreak{},\allowbreak{}\ {[}1,\allowbreak{}\ 0,\allowbreak{}\ 0,\allowbreak{}\ 0{]}\allowbreak{},\allowbreak{}\ {[}0,\allowbreak{}\ 0,\allowbreak{}\ 1,\allowbreak{}\ 0{]}\allowbreak{}{]}\allowbreak{}}.
+
+\begin{methode}
+
+Pour annoncer une complexité, dire précisément ce que l'on compte : ici, le remplissage est linéaire, mais pas la création de la grille.
+
+\end{methode}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+« Ne renvoie rien mais affiche » : une boucle de \texttt{print}, sans \texttt{return}.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\begin{lstlisting}[language=Python]
+def affiche(G):
+    """Affiche la grille G ligne par ligne ; ne renvoie rien."""
+    for rangee in G:
+        print(rangee)
+\end{lstlisting}
+
+Sur \texttt{remplir(\allowbreak{}{[}1,\allowbreak{}\ 3,\allowbreak{}\ 0,\allowbreak{}\ 2{]}\allowbreak{})\allowbreak{}}, on obtient les lignes \texttt{{[}0,\ 1,\ 0,\ 0{]}}, \texttt{{[}0,\ 0,\ 0,\ 1{]}}, \texttt{{[}1,\ 0,\ 0,\ 0{]}}, \texttt{{[}0,\ 0,\ 1,\ 0{]}}, comme dans l'énoncé.
+
+\begin{piege}
+
+Appeler la variable de boucle \texttt{ligne} masquerait la fonction \texttt{ligne} de Q3 dans le corps de la fonction. C'est sans conséquence ici, mais c'est une mauvaise habitude.
+
+\end{piege}
+
+\hypertarget{partie-i.3-tester-si-une-configuration-est-valide}{%
+\section{Partie I.3 --- Tester si une configuration est valide}\label{partie-i.3-tester-si-une-configuration-est-valide}}
+
+On traduit les contraintes géométriques en tests d'unicité, puis on programme ces tests efficacement grâce à un dictionnaire.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Quelle contrainte le codage par liste rend-il automatique ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sur une diagonale, quand on descend d'une ligne, de combien varie la colonne ? En déduire une quantité constante le long de chaque famille de diagonales.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+La reine de la ligne \(i\) occupe la case \((i, L[i])\) : le codage impose d'office une seule reine par ligne.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{(a)} Les \(L[i]\) sont les colonnes occupées. \textbf{(a) traduit qu'il y a au plus une reine par colonne.}
+\item
+  \textbf{(b) et (c)} Sur une diagonale montante, descendre d'une ligne fait reculer d'une colonne : \(i + j\) y est constant. Sur une diagonale descendante, descendre d'une ligne fait avancer d'une colonne : \(j - i\) y est constant. \textbf{(b) traduit qu'il y a au plus une reine par diagonale montante, (c) au plus une par diagonale descendante.}
+\end{itemize}
+
+Exemple : \((0,3)\) et \((1,2)\) sont sur une même diagonale montante, et \(0 + 3 = 1 + 2\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q07-invariants-diagonales.pdf}
+\caption*{Figure 1 --- Valeurs de i + j et de j − i sur la grille 4 × 4 :
+constantes le long d'une diagonale montante et d'une diagonale
+descendante}
+\end{figure}
+
+\begin{piege}
+
+Échanger (b) et (c). Avec des lignes numérotées de haut en bas, c'est la \textbf{somme} qui est constante sur une diagonale montante. Le vérifier sur deux cases de la figure 1.
+
+\end{piege}
+
+\begin{jury}
+
+Une explication doit relier chaque condition arithmétique à la contrainte qu'elle traduit sur la grille. Paraphraser la condition sans la traduire ne répond pas à la question.
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+L'algorithme est imposé : seule compte la présence de la clé, la valeur associée n'a pas d'importance.
+
+\end{indication}
+
+\begin{indication}{2}
+
+On quitte la fonction dès qu'on trouve un doublon : \texttt{return} dans la boucle.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\begin{lstlisting}[language=Python]
+def tous_distincts(L):
+    """True si les éléments de L sont deux à deux distincts, False sinon."""
+    presents = dict()
+    for x in L:
+        if x in presents:       # x déjà rencontré : doublon
+            return False
+        presents[x] = True
+    return True                 # parcours complet sans doublon
+\end{lstlisting}
+
+\textbf{Invariant :} au début de chaque tour, les clés de \texttt{presents} sont exactement les éléments déjà parcourus, et ceux-ci sont deux à deux distincts. Si \texttt{x} est déjà une clé, il y a un doublon. Sinon, l'ajout de \texttt{x} rétablit l'invariant. En fin de boucle, la liste ne contient donc pas de doublon. Chaque tour coûte \(O(1)\) (annexe 2), soit \(O(n)\) au total.
+
+\begin{piege}
+
+Utiliser une liste \texttt{presents} : le test \texttt{x\ in\ presents} coûte alors \(O(\texttt{len})\) et la fonction devient quadratique.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Dérouler le code de l'étudiant sur une petite liste sans doublon, par exemple \texttt{{[}1,\ 2{]}}. Que renvoie-t-il ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Il y a une erreur dans les bornes de la boucle interne et deux erreurs dans les valeurs renvoyées.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour la complexité, se placer dans le cas où aucun \texttt{return} anticipé n'a lieu, et compter les comparaisons.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+Erreurs :
+
+\begin{itemize}
+\tightlist
+\item
+  ligne 3 : \texttt{range(i,\ n)} autorise \(j = i\), et \texttt{L{[}i{]}\ ==\ L{[}i{]}} est toujours vrai ; il faut \texttt{range(i+1,\ n)} ;
+\item
+  ligne 5 : deux éléments égaux signifient « pas tous distincts » : \texttt{return\ False} ;
+\item
+  ligne 6 : aucune égalité trouvée : \texttt{return\ True}.
+\end{itemize}
+
+Tel quel, le code renvoie \texttt{True} pour toute liste non vide et \texttt{False} pour la liste vide.
+
+\begin{lstlisting}[language=Python]
+def tous_distincts2(L):
+    n = len(L)
+    for i in range(n):
+        for j in range(i+1, n):
+            if L[i] == L[j]:
+                return False
+    return True
+\end{lstlisting}
+
+\textbf{Pire des cas} : une liste sans doublon (aucune sortie anticipée).
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{tous\_distincts} : \(n\) tours, chacun formé d'un test d'appartenance et d'une insertion dans un dictionnaire, en \(O(1)\) d'après l'annexe 2, soit \(O(n)\).
+\item
+  \texttt{tous\_distincts2} : \(\displaystyle\sum_{i=0}^{n-1}(n-1-i) = \frac{n(n-1)}{2}\) comparaisons en \(O(1)\), soit \(O(n^2)\).
+\end{itemize}
+
+\equationajustee{\boxed{\begin{aligned}{}&\texttt{tous\_distincts} : O(n) \\
+&\texttt{tous\_distincts2} : O(n^2)
+\end{aligned}}}
+
+\begin{piege}
+
+Corriger seulement l'inversion des booléens : avec \texttt{range(i,\ n)}, la fonction renverrait \texttt{False} pour toute liste non vide. L'énoncé annonce « plusieurs erreurs ».
+
+\end{piege}
+
+\begin{methode}
+
+Une complexité « dans le pire des cas » commence par dire quel est ce pire cas. Ici, c'est l'absence de doublon.
+
+\end{methode}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Les trois conditions sont trois tests d'unicité : sur quelles listes ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Construire en un seul parcours la liste des sommes et celle des différences.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\begin{lstlisting}[language=Python]
+def est_possible(L):
+    """True si L vérifie les conditions (a), (b) et (c)."""
+    sommes = []
+    differences = []
+    for i in range(len(L)):
+        sommes.append(L[i] + i)
+        differences.append(L[i] - i)
+    return (tous_distincts(L) and tous_distincts(sommes)
+            and tous_distincts(differences))
+\end{lstlisting}
+
+Coût \(O(n)\). La fonction ne suppose rien sur la longueur de \texttt{L} : elle servira en I.7 pour des configurations partielles.
+
+Sur \texttt{{[}3,\allowbreak{}\ 4,\allowbreak{}\ 1,\allowbreak{}\ 7,\allowbreak{}\ 0,\allowbreak{}\ 6,\allowbreak{}\ 2,\allowbreak{}\ 5{]}\allowbreak{}}, les sommes \(3, 5, 3, 10, 4, 11, 8, 12\) contiennent deux fois \(3\). Les reines \((0,3)\) et \((2,1)\) sont donc sur une même diagonale montante, et la fonction renvoie \texttt{False}. Le premier exemple renvoie \texttt{True}.
+
+\begin{piege}
+
+Prendre la valeur absolue \texttt{abs(L{[}i{]}\ -\ i)} : on confondrait des diagonales descendantes différentes, et des configurations valides seraient rejetées.
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Il ne reste qu'à ajouter la condition (d) à la question précédente.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\begin{lstlisting}[language=Python]
+def est_solution(L, n):
+    """True si L vérifie (a), (b), (c) et (d)."""
+    return len(L) == n and est_possible(L)
+\end{lstlisting}
+
+\texttt{est\_solution(\allowbreak{}{[}2,\allowbreak{}\ 0,\allowbreak{}\ 3,\allowbreak{}\ 1{]}\allowbreak{},\allowbreak{}\ 4)\allowbreak{}} renvoie \texttt{True} et \texttt{est\_solution(\allowbreak{}{[}0,\allowbreak{}\ 2,\allowbreak{}\ 3,\allowbreak{}\ 1{]}\allowbreak{},\allowbreak{}\ 4)\allowbreak{}} renvoie \texttt{False}.
+
+\begin{methode}
+
+Séparer validité partielle (\texttt{est\_possible}, aucune paire de reines en prise) et validité complète (\texttt{est\_solution}, en plus \(n\) reines posées). La sous-partie I.7 repose sur cette distinction.
+
+\end{methode}
+
+\hypertarget{partie-i.4-une-premiuxe8re-approche-par-recherche-aluxe9atoire}{%
+\section{Partie I.4 --- Une première approche par recherche aléatoire}\label{partie-i.4-une-premiuxe8re-approche-par-recherche-aluxe9atoire}}
+
+Importation d'une fonction de bibliothèque, puis un algorithme de type « tirer jusqu'à trouver ».
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Le DR donne l'appel attendu dans chaque cadre : il faut écrire l'importation compatible avec cet appel.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le programme connaît trois formes : \texttt{import\ module}, \texttt{import\ module\ as\ alias}, \texttt{from\ module\ import\ f}.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\begin{lstlisting}[language=Python]
+# Méthode 1
+import random as rd
+rd.sample(L, len(L))
+
+# Méthode 2
+from random import sample
+sample(L, len(L))
+
+# Méthode 3
+import random
+random.sample(L, len(L))
+\end{lstlisting}
+
+La suite utilise la méthode 2, d'où l'appel sans préfixe \texttt{sample(\allowbreak{}L,\allowbreak{}\ len(\allowbreak{}L)\allowbreak{})\allowbreak{}}.
+
+\begin{piege}
+
+Mélanger les formes : avec \texttt{import\ random}, l'appel \texttt{sample(...)} lève une \texttt{NameError}, et avec \texttt{from\ random\ import\ sample}, \texttt{random.sample(\allowbreak{}...)\allowbreak{}} aussi.
+
+\end{piege}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Une boucle d'au plus \texttt{N} tours, avec sortie anticipée dès qu'un tirage convient.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que doit-on renvoyer en cas d'échec ? Lire l'énoncé, ce n'est pas la même convention qu'en I.7.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\begin{lstlisting}[language=Python]
+from random import sample
+
+def recherche_aleatoire(n, N):
+    """Au plus N tirages de permutations de [0, ..., n-1] ;
+    renvoie la première solution trouvée, ou [] en cas d'échec."""
+    L = [i for i in range(n)]
+    for essai in range(N):
+        P = sample(L, len(L))       # permutation aléatoire de L
+        if est_solution(P, n):
+            return P                # arrêt dès qu'une solution est trouvée
+    return []
+\end{lstlisting}
+
+Une permutation vérifie d'office (a) et (d) : seules les diagonales sont vraiment testées. Coût dans le pire des cas : \(O(nN)\). Les tirages sont indépendants, donc une même permutation peut sortir plusieurs fois : un échec ne prouve pas l'absence de solution.
+
+\hypertarget{partie-i.5-duxe9terminer-toutes-les-permutations-de-l-0-1-n-1}{%
+\section{Partie I.5 --- Déterminer toutes les permutations de L = {[}0, 1, \ldots, n-1{]}}\label{partie-i.5-duxe9terminer-toutes-les-permutations-de-l-0-1-n-1}}
+
+On construit les permutations de \(\{0, \dots, v\}\) à partir de celles de \(\{0, \dots, v-1\}\) en insérant \(v\) à toutes les positions.
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Construire une nouvelle liste par \texttt{append} successifs, en suivant les trois étapes de l'énoncé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Tester le cas limite \texttt{i\ =\ len(L)}, le second exemple de l'énoncé.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\begin{lstlisting}[language=Python]
+def insertion(x, L, i):
+    """Nouvelle liste : L avec x inséré à l'indice i (0 <= i <= len(L))."""
+    M = []
+    for k in range(i):              # termes d'indices 0 à i-1
+        M.append(L[k])
+    M.append(x)                     # x à la position i
+    for k in range(i, len(L)):      # termes d'indices i à len(L)-1
+        M.append(L[k])
+    return M
+\end{lstlisting}
+
+\texttt{L} n'est pas modifiée. On obtient \texttt{{[}2,\ 5,\ 3,\ 6,\ 4{]}} et \texttt{{[}2,\ 3,\ 6,\ 4,\ 5{]}} sur les exemples. Pour \texttt{i\ =\ len(L)}, la seconde boucle ne fait aucun tour et \texttt{x} est placé en fin de liste.
+
+\begin{piege}
+
+\texttt{L.insert(i,\ x)} est interdit, et modifierait de plus \texttt{L} en place. Or, en Q16, chaque liste source sert pour plusieurs insertions.
+
+\end{piege}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Dérouler les deux boucles à la main en respectant l'ordre des \texttt{append}.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour « ce que fait le code », dire comment les listes sont construites et pourquoi on obtient exactement les bonnes listes.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+Après le premier passage (\texttt{l1\ =\ {[}0,\ 1{]}}), \(2\) a été inséré aux positions \(0, 1, 2\) :
+
+\equationajustee{\boxed{P = [[2, 0, 1], [0, 2, 1], [0, 1, 2]]}}
+
+Après le second passage (\texttt{l1\ =\ {[}1,\ 0{]}}) :
+
+\equationajustee{\boxed{P = [[2, 0, 1], [0, 2, 1], [0, 1, 2], [2, 1, 0], [1, 2, 0], [1, 0, 2]]}}
+
+\textbf{Le code part des deux permutations de \(\{0, 1\}\) et insère la valeur \(v = 2\) à chacune des \(3\) positions possibles. Il obtient ainsi toutes les permutations de \(\{0, 1, 2\}\), chacune une seule fois.} Elles sont au nombre de
+
+\equationajustee{\begin{aligned}
+2 \times 3 &= 6 \\
+&= 3!
+\end{aligned}}
+
+En effet, une permutation de \(\{0, 1, 2\}\) est déterminée par la position où figure \(2\), et par ce qui reste quand on le retire.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q15-arbre-insertions.pdf}
+\caption*{Figure 2 --- Code de Q15 : chaque permutation de \{0, 1\} donne trois
+permutations de \{0, 1, 2\} par insertion de 2 à la position i,
+numérotées dans l'ordre des append}
+\end{figure}
+
+\begin{piege}
+
+Donner les six permutations dans l'ordre lexicographique : l'énoncé demande l'ordre des \texttt{append}.
+
+\end{piege}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Itérer le mécanisme de Q15 : à chaque tour de la boucle sur \texttt{v}, \texttt{L} contient les permutations de \(\{0, \dots, v-1\}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+La nouvelle génération se construit dans \texttt{P}, séparément de \texttt{L}, qu'on est en train de parcourir.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{lstlisting}[language=Python]
+def permutations(n) :
+    L = [[0]]
+    for v in range(1, n) :
+        P = []
+        for l1 in L :
+            for i in range(v+1) :
+                P.append(insertion(v, l1, i))
+        L = P
+    return L
+\end{lstlisting}
+
+\textbf{Invariant :} au début du tour d'indice \(v\), \texttt{L} contient exactement une fois chaque permutation de \(\{0, \dots, v-1\}\). C'est vrai pour \(v = 1\) (\texttt{{[}{[}0{]}{]}}).
+
+Toute permutation \(\sigma\) de \(\{0, \dots, v\}\) s'écrit de façon unique \texttt{insertion(\allowbreak{}v,\allowbreak{}\ s,\allowbreak{}\ i)\allowbreak{}}.
+
+Ici, \(i\) est la position de \(v\) dans \(\sigma\).
+
+La liste \texttt{s} est obtenue en retirant \(v\) : c'est une permutation de \(\{0, \dots, v-1\}\), donc elle est présente dans \texttt{L}.
+
+Ainsi \texttt{P} contient chaque permutation de \(\{0, \dots, v\}\) exactement une fois, et \texttt{L\ =\ P} rétablit l'invariant.
+
+À la fin, \texttt{L} contient les \(n!\) permutations de \(\{0, \dots, n-1\}\).
+
+\texttt{permutations(3)} renvoie \texttt{{[}{[}2,\allowbreak{}\ 1,\allowbreak{}\ 0{]}\allowbreak{},\allowbreak{}\ {[}1,\allowbreak{}\ 2,\allowbreak{}\ 0{]}\allowbreak{},\allowbreak{}\ {[}1,\allowbreak{}\ 0,\allowbreak{}\ 2{]}\allowbreak{},\allowbreak{}\ {[}2,\allowbreak{}\ 0,\allowbreak{}\ 1{]}\allowbreak{},\allowbreak{}\ {[}0,\allowbreak{}\ 2,\allowbreak{}\ 1{]}\allowbreak{},\allowbreak{}\ {[}0,\allowbreak{}\ 1,\allowbreak{}\ 2{]}\allowbreak{}{]}\allowbreak{}}, ordre accepté par l'énoncé.
+
+\begin{piege}
+
+Faire \texttt{L.append(...)} pendant le parcours \texttt{for\ l1\ in\ L} : la liste grandit pendant qu'on la parcourt, et la boucle ne termine plus.
+
+\end{piege}
+
+\begin{methode}
+
+Le compte \(v! \times (v+1) = (v+1)!\) ne suffit pas à prouver la correction. Il faut une bijection : chaque permutation est obtenue, et une seule fois.
+
+\end{methode}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+« En déduire » : réutiliser \texttt{permutations} et \texttt{est\_solution}.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pourquoi ne perd-on aucune solution en se limitant aux permutations ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\begin{lstlisting}[language=Python]
+def configurations(n):
+    """Liste de toutes les solutions du problème des n reines."""
+    C = []
+    for p in permutations(n):
+        if est_solution(p, n):
+            C.append(p)
+    return C
+\end{lstlisting}
+
+Toute solution est une permutation de \(\{0, \dots, n-1\}\) (conditions (a) et (d)) : le filtrage n'en perd aucune. On retrouve 10 solutions pour \(n = 5\) et 92 pour \(n = 8\).
+
+Le coût est de \(n!\) tests en \(O(n)\), soit \(O(n \cdot n!)\), et les \(n!\) listes sont gardées en mémoire : la méthode devient impraticable au-delà de \(n = 10\) environ, comme l'annonce l'énoncé.
+
+\hypertarget{partie-i.6-classer-les-configurations-similaires}{%
+\section{Partie I.6 --- Classer les configurations similaires}\label{partie-i.6-classer-les-configurations-similaires}}
+
+Transformations géométriques de la grille traduites sur la liste \texttt{L}, puis lecture d'un algorithme de classement.
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Lire les grilles transformées de la figure 6 ligne par ligne, comme en Q2.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une symétrie d'axe horizontal échange le haut et le bas. Que deviennent la ligne et la colonne d'une reine ?
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+À partir de \(L = [2, 4, 1, 3, 0]\), la figure 6 donne :
+
+\equationajustee{\boxed{\begin{aligned}
+L1 &= [0, 3, 1, 4, 2] \\
+L2 &= [0, 2, 4, 1, 3]
+\end{aligned}}}
+
+La symétrie d'axe horizontal échange les lignes \(i\) et \(n - 1 - i\) et conserve les colonnes. La reine \((i, L[i])\) va donc en \((n-1-i, L[i])\), et l'on a
+
+\equationajustee{\boxed{L1[i] = L[n-1-i] \text{ pour tout } i}}
+
+\textbf{La liste de la symétrie horizontale est la liste \(L\) lue à l'envers.} Contrôle sur l'exemple de Q19 : \texttt{{[}1,\ 0,\ 2{]}} donne \texttt{{[}2,\ 0,\ 1{]}}.
+
+\begin{piege}
+
+Confondre avec la symétrie d'axe vertical, \(L1[i] = n - 1 - L[i]\), qui donnerait \texttt{{[}1,\ 2,\ 0{]}} pour \texttt{{[}1,\ 0,\ 2{]}}. La figure et l'exemple de Q19 tranchent.
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Programmer la formule de Q18 avec \texttt{range(n)} et \texttt{append}, sans outil de renversement tout fait.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\begin{lstlisting}[language=Python]
+def symetrie(L):
+    """Configuration obtenue par symétrie d'axe horizontal."""
+    n = len(L)
+    M = []
+    for i in range(n):
+        M.append(L[n-1-i])      # indices n-1, n-2, ..., 0
+    return M
+\end{lstlisting}
+
+\texttt{symetrie(\allowbreak{}{[}1,\allowbreak{}\ 0,\allowbreak{}\ 2{]}\allowbreak{})\allowbreak{}} renvoie \texttt{{[}2,\ 0,\ 1{]}}, en \(O(n)\).
+
+\begin{piege}
+
+\texttt{L{[}n-i{]}} sort de la liste au premier tour (\(i = 0\)). Les indices utilisés doivent rester dans \(\{0, \dots, n-1\}\).
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+La reine de la ligne \texttt{i} arrive en ligne \texttt{L{[}i{]}}. Quelle case de la liste image faut-il donc écrire ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les lignes d'arrivée ne sont pas obtenues dans l'ordre croissant : créer d'abord une liste de bonne taille.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+La reine \((i, L[i])\) arrive en \((L[i], n - 1 - i)\) : la liste image vérifie \(M[L[i]] = n - 1 - i\).
+
+\begin{lstlisting}[language=Python]
+def rotation(L):
+    """Configuration obtenue par rotation d'un quart de tour vers la droite."""
+    n = len(L)
+    M = ligne(n)                # liste de n zéros
+    for i in range(n):
+        M[L[i]] = n - 1 - i
+    return M
+\end{lstlisting}
+
+\texttt{L} étant une permutation de \(\{0, \dots, n-1\}\), chaque case de \texttt{M} est écrite exactement une fois.
+
+\texttt{rotation(\allowbreak{}{[}2,\allowbreak{}\ 5,\allowbreak{}\ 3,\allowbreak{}\ 1,\allowbreak{}\ 7,\allowbreak{}\ 4,\allowbreak{}\ 6,\allowbreak{}\ 0{]}\allowbreak{})\allowbreak{}} renvoie \texttt{{[}0,\allowbreak{}\ 4,\allowbreak{}\ 7,\allowbreak{}\ 5,\allowbreak{}\ 2,\allowbreak{}\ 6,\allowbreak{}\ 1,\allowbreak{}\ 3{]}\allowbreak{}}. Par exemple :
+
+\begin{itemize}
+\tightlist
+\item
+  \(L[7] = 0\) donne \(M[0] = 8 - 1 - 7\), soit \(M[0] = 0\) ;
+\item
+  \(L[3] = 1\) donne \(M[1] = 8 - 1 - 3\), soit \(M[1] = 4\).
+\end{itemize}
+
+\begin{piege}
+
+Écrire \texttt{M{[}i{]}\allowbreak{}\ =\allowbreak{}\ n\ -\ 1\ -\ L{[}i{]}\allowbreak{}} : c'est la symétrie d'axe vertical, pas une rotation. Sur l'exemple, on aurait \(M[0] = 5\) au lieu de \(0\).
+
+\end{piege}
+
+\begin{methode}
+
+Quand une transformation donne l'image de chaque élément à une position calculée, on initialise la liste résultat à la bonne taille puis on affecte par indice, au lieu de faire des \texttt{append}.
+
+\end{methode}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Trois demandes distinctes : le rôle de la ligne 1, le type et la structure du résultat, le fonctionnement. Répondre à chacune.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Descendre tous les niveaux d'imbrication : que contient \texttt{P}, que contient chaque \texttt{elt}, que contient \texttt{elt{[}0{]}} ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Quand la ligne 9 est-elle exécutée : à chaque comparaison ou après le parcours de toutes les classes ?
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\textbf{Ligne 1.} \texttt{C\ =\allowbreak{}\ configurations(\allowbreak{}n)\allowbreak{}} calcule (Q17) la liste de toutes les solutions pour une grille \(n \times n\).
+
+\textbf{Type.} \texttt{partition(n)} renvoie une \textbf{liste}.
+
+\textbf{Structure.} C'est une liste de listes de listes d'entiers :
+
+\begin{itemize}
+\tightlist
+\item
+  chaque élément \texttt{elt} de \texttt{P} est une \textbf{classe}, c'est-à-dire une liste non vide de configurations deux à deux similaires ;
+\item
+  chaque configuration est une liste de \(n\) entiers de \(\{0, \dots, n-1\}\) ;
+\item
+  \texttt{elt{[}0{]}}, la première configuration rencontrée de la classe, en est le représentant ;
+\item
+  les classes sont disjointes et leur réunion est l'ensemble des solutions : \texttt{P} est une partition de \texttt{C}.
+\end{itemize}
+
+\textbf{Fonctionnement.} La fonction parcourt les solutions une à une. Chaque solution \texttt{c} est comparée au représentant de chaque classe existante. Si elle est similaire à l'un d'eux, elle rejoint cette classe et \texttt{test} passe à \texttt{True}. Si, après examen de toutes les classes, \texttt{test} vaut encore \texttt{False}, \texttt{c} n'est similaire à aucune et fonde une nouvelle classe \texttt{{[}c{]}}. La similarité est une relation d'équivalence : comparer au seul représentant suffit, et \texttt{c} ne peut être similaire qu'au représentant d'une seule classe. Pour \(n = 5\), on obtient deux classes, de 8 et 2 configurations.
+
+\begin{jury}
+
+Une description complète d'une structure imbriquée donne chaque niveau d'imbrication et le sens de chacun. Le seul type extérieur ne suffit pas.
+
+\end{jury}
+
+\hypertarget{partie-i.7-des-graphes-pour-aller-plus-vite-et-plus-loin}{%
+\section{Partie I.7 --- Des graphes pour aller plus vite et plus loin}\label{partie-i.7-des-graphes-pour-aller-plus-vite-et-plus-loin}}
+
+Le graphe des configurations partielles est parcouru en profondeur, récursivement. Une configuration invalide n'est jamais prolongée : c'est l'élagage. Le DR fournit les deux fonctions à trous.
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Un sommet est une configuration partielle \texttt{L} (reines des lignes \texttt{0} à \texttt{len(L)\ -\ 1}), ses fils sont les \texttt{L\ +\ {[}i{]}}. Les trous correspondent aux trois situations listées par l'énoncé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que renvoyer quand la grille est invalide ? Quand la liste est complète ? Quand aucun fils n'a abouti ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pourquoi le test de validité est-il placé avant le test de longueur ?
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\begin{lstlisting}[language=Python]
+def explore(L, n):
+    if not est_possible(L):
+        return -1                  # grille invalide : on revient en arrière
+    if len(L) == n:                # si fin de recherche victorieuse
+        return L
+    for i in range(n):
+        res = explore(L + [i], n)
+        if res != -1:              # si une solution a été trouvée
+            return res
+    return -1                      # aucun fils ne mène à une solution
+
+def resout_graphe(n):
+    rep = explore([], n)
+    return rep
+\end{lstlisting}
+
+Trous : \texttt{return\ -1}, \texttt{len(L)\ ==\ n}, \texttt{return\ -1}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Correction.} La liste n'est renvoyée à la deuxième ligne que si elle a passé le test de validité et qu'elle est de longueur \(n\) : elle vérifie (a), (b), (c) et (d), c'est une solution. Une configuration invalide ne peut être prolongée en solution : l'abandonner (\texttt{return\ -1}) ne perd rien. Le \texttt{return\ res} fait remonter la première solution trouvée et arrête le parcours. Le dernier \texttt{return\ -1} signale l'échec à l'appelant, qui essaie alors la colonne suivante : c'est le retour sur trace.
+\item
+  \textbf{Terminaison.} \(n - \texttt{len(L)}\) est un entier naturel qui diminue de \(1\) à chaque appel récursif, et chaque appel ne fait qu'une boucle finie.
+\end{itemize}
+
+On obtient \texttt{resout\_graphe(\allowbreak{}4)\allowbreak{}\ =\allowbreak{}=\allowbreak{}\ {[}1,\allowbreak{}\ 3,\allowbreak{}\ 0,\allowbreak{}\ 2{]}\allowbreak{}} et \texttt{resout\_graphe(\allowbreak{}8)\allowbreak{}\ =\allowbreak{}=\allowbreak{}\ {[}0,\allowbreak{}\ 4,\allowbreak{}\ 7,\allowbreak{}\ 5,\allowbreak{}\ 2,\allowbreak{}\ 6,\allowbreak{}\ 1,\allowbreak{}\ 3{]}\allowbreak{}}.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q22-arbre-retour-sur-trace.pdf}
+\caption*{Figure 3 --- Sommets visités par resout\_graphe(4) : une configuration
+rejetée par est\_possible n'est pas prolongée, et le parcours s'arrête à
+la première solution}
+\end{figure}
+
+\begin{piege}
+
+Écrire \texttt{return\ explore(\allowbreak{}L\ +\ {[}i{]}\allowbreak{},\allowbreak{}\ n)\allowbreak{}} dans la boucle : le premier échec remonterait comme résultat et la recherche s'arrêterait à la première impasse.
+
+\end{piege}
+
+\begin{methode}
+
+Schéma du retour sur trace : cas d'échec (élagage), cas de succès, puis essai de chaque choix avec propagation immédiate d'un succès, et échec si aucun choix n'aboutit.
+
+\end{methode}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Même squelette, mais chaque appel renvoie maintenant un nombre : combien de solutions prolongent \texttt{L} ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que vaut ce nombre pour une configuration invalide ? Pour une solution complète ? Pour un sommet intermédiaire, en fonction de ses fils ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\begin{lstlisting}[language=Python]
+def explore2(L, n):
+    if not est_possible(L):
+        return 0                    # aucune solution ne prolonge L
+    if len(L) == n:
+        return 1                    # L est une solution
+    nb_sol = 0
+    for i in range(n):
+        nb_sol = nb_sol + explore2(L + [i], n)
+    return nb_sol
+
+def compte(n):
+    rep = explore2([], n)
+    return rep
+\end{lstlisting}
+
+Trous : \texttt{0}, \texttt{len(L)\ ==\ n}, \texttt{explore2(\allowbreak{}L\ +\ {[}i{]}\allowbreak{},\allowbreak{}\ n)\allowbreak{}}, \texttt{nb\_sol}.
+
+Les solutions qui prolongent une configuration partielle valide \texttt{L}, de longueur \(< n\), se répartissent sans recouvrement selon la colonne \texttt{i} de la reine suivante. Leur nombre est donc la somme des nombres de solutions prolongeant les \texttt{L\ +\ {[}i{]}}. Par récurrence sur \(n - \texttt{len(L)}\), \texttt{explore2(L,\ n)} renvoie bien ce nombre. On retrouve \texttt{compte(5)\ ==\ 10} et \texttt{compte(8)\ ==\ 92}, ainsi que \texttt{compte(4)\ ==\ 2} et \texttt{compte(6)\ ==\ 4}.
+
+\begin{piege}
+
+Garder un \texttt{return} anticipé dans la boucle, ou oublier d'ajouter l'appel récursif à \texttt{nb\_sol} : on ne compterait qu'une solution, ou aucune.
+
+\end{piege}
+
+\begin{methode}
+
+Pour passer de « trouver une solution » à « compter les solutions », remplacer « renvoyer dès qu'on réussit » par « additionner les résultats des fils ». Le succès vaut \(1\), l'échec vaut \(0\). Les valeurs de référence de l'énoncé (10 et 92) servent de test.
+
+\end{methode}
+
+\hypertarget{partie-ii-base-de-donnuxe9es-dun-serveur-de-jeu-en-ligne}{%
+\section{Partie II --- Base de données d'un serveur de jeu en ligne}\label{partie-ii-base-de-donnuxe9es-dun-serveur-de-jeu-en-ligne}}
+
+Quatre requêtes de difficulté croissante : une sélection sur une table, une jointure, puis deux agrégations avec regroupement.
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Une seule table suffit. Quel est le format de l'attribut \texttt{anniversaire} ?
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+L'attribut \texttt{anniversaire} est au format \texttt{\textquotesingle{}JJ-MM\textquotesingle{}}, donc le 3 juillet s'écrit \texttt{\textquotesingle{}03-07\textquotesingle{}}.
+
+\begin{lstlisting}[language=SQL]
+SELECT nom, prenom, email
+FROM Clients
+WHERE anniversaire = '03-07';
+\end{lstlisting}
+
+\begin{piege}
+
+\texttt{\textquotesingle{}07-03\textquotesingle{}} sélectionne le 7 mars, \texttt{\textquotesingle{}03-07-2026\textquotesingle{}} ne sélectionne rien.
+
+\end{piege}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Les informations demandées sont dans deux tables : par quel attribut les relier ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q25-schema-relationnel.pdf}
+\caption*{Figure 4 --- Schéma de la base : clés primaires soulignées, clés
+étrangères de Factures et Records vers Clients et Jeux}
+\end{figure}
+
+\begin{lstlisting}[language=SQL]
+SELECT Clients.nom, Clients.prenom, Factures.date_achat
+FROM Clients
+JOIN Factures ON Clients.id_client = Factures.id_client
+WHERE Clients.email = 'myriam.sarr@ccinp.edu';
+\end{lstlisting}
+
+On obtient une ligne par achat de ce client.
+
+\begin{piege}
+
+Faire la jointure sur le nom plutôt que sur l'identifiant, ou ne pas préfixer \texttt{id\_client}, qui existe dans les deux tables.
+
+\end{piege}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+« Pour chaque client » appelle un regroupement, « montant total » une fonction d'agrégation.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sur quel attribut regrouper pour ne pas fusionner deux clients homonymes ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\begin{lstlisting}[language=SQL]
+SELECT Clients.nom, Clients.email, SUM(Factures.montant) AS total
+FROM Clients
+JOIN Factures ON Clients.id_client = Factures.id_client
+GROUP BY Clients.id_client, Clients.nom, Clients.email;
+\end{lstlisting}
+
+Le regroupement se fait sur la clé primaire \texttt{id\_client}. Les autres attributs projetés et non agrégés figurent aussi dans le \texttt{GROUP\ BY}. Avec cette jointure interne, un client sans achat n'apparaît pas (son total serait nul). On peut ajouter \texttt{ORDER\ BY\ total\ DESC} pour classer les meilleurs clients en tête.
+
+\begin{methode}
+
+Pour une agrégation : jointure, puis \texttt{GROUP\ BY} sur l'identifiant de ce qu'on compte, puis fonction d'agrégation dans le \texttt{SELECT}.
+
+\end{methode}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Même démarche que Q26 sur la paire de tables \texttt{Jeux} et \texttt{Records}, avec une autre fonction d'agrégation.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\begin{lstlisting}[language=SQL]
+SELECT Jeux.nom_jeu, MAX(Records.score) AS meilleur_score
+FROM Jeux
+JOIN Records ON Jeux.id_jeu = Records.id_jeu
+GROUP BY Jeux.id_jeu, Jeux.nom_jeu;
+\end{lstlisting}
+
+On obtient une ligne par jeu ayant au moins un record, avec son meilleur score.
+
+\begin{piege}
+
+\texttt{ORDER\ BY\ score\ DESC\ LIMIT\ 1} donne le meilleur score tous jeux confondus, pas celui de chaque jeu. Ajouter \texttt{Records.id\_client} dans le \texttt{SELECT} sans le regrouper est refusé par la norme SQL : selon le logiciel, la requête échoue ou renvoie une valeur dont rien ne garantit qu'elle soit celle du maximum.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Choisir une représentation qui rend des contraintes automatiques : avec \texttt{L{[}i{]}} = colonne, il n'y a jamais deux reines sur une même ligne.
+\item
+  Diagonales d'une grille : \(i + j\) est constant sur une diagonale montante, \(j - i\) sur une descendante.
+\item
+  Tester l'absence de doublons en \(O(n)\) avec un dictionnaire, contre \(O(n^2)\) par double boucle.
+\item
+  Construire les permutations par insertions successives, et prouver la construction par une bijection.
+\item
+  Retour sur trace : élaguer dès qu'une configuration partielle est invalide, propager le premier succès ; pour compter, additionner les résultats des fils.
+\item
+  SQL : jointure sur les clés, \texttt{GROUP\ BY} sur l'identifiant, puis \texttt{SUM}, \texttt{MAX}, etc.
+\end{itemize}
+
+\textbf{Prérequis à revoir.} Caractère mutable des listes et piège de \texttt{{[}{[}0{]}\ *\ n{]}\ *\ n} ; trois formes d'\texttt{import} ; complexité dans le pire des cas avec la somme \(\sum (n-1-i)\) ; récursivité (cas de base, terminaison) ; formats de chaînes dans une base de données.
+
+\textbf{Questions classiques transposables.} Corriger un code fautif et comparer deux complexités (Q9) ; affecter par indice quand l'ordre d'arrivée n'est pas celui du parcours (Q20) ; lire et décrire une structure de données imbriquée (Q21) ; passer d'une recherche à un dénombrement dans un parcours récursif (Q22 → Q23), schéma qu'on retrouve pour le sudoku, le cavalier ou la somme de sous-ensembles.
+
+\end{document}

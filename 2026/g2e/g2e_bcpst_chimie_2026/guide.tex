@@ -1,0 +1,1493 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={G2E BCPST — Chimie 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · G2E BCPST}
+\fancyhead[R]{\small Chimie 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries G2E BCPST — Chimie 2026\par}\medskip
+  {\large G2E · BCPST · Chimie · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format} : 3 heures, calculatrice autorisée, aucun document. Le sujet fait 9 pages et compte \textbf{33 questions} numérotées de 1 à 33 sans interruption. Il est formé de deux problèmes indépendants. Les données sont regroupées en page 1 : masses molaires, constantes \(R\) et \(\mathcal F\), produit ionique de l'eau, et \(\log\beta=34\) pour l'ion aluminate. La page 2 donne les abréviations organiques et une petite banque de réactions : benzylation et débenzylation, silylation et désilylation des alcools.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2192}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1003}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3708}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2797}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Bloc
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notions mobilisées
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1.1 Propriétés électroniques & Q1--Q4 & Isotopes, configuration, position dans le tableau, ion \(\mathrm{Al^{3+}}\), Lewis et VSEPR de \(\mathrm{AlCl_3}\) & Atomistique, règle de l'octet, lacune, VSEPR \\
+1.2 Procédé Bayer & Q5--Q10 & Lecture des diagrammes \(E\)-pH superposés du fer et de l'aluminium, \(K_s\), amphotérie, constante d'une réaction de précipitation & Diagrammes \(E\)-pH, solubilité, combinaison de réactions \\
+1.3 Pile aluminium/air & Q11--Q14 & Schéma, équation de fonctionnement, \(\Delta_rG^\circ\) et \(K^\circ\) à 60 °C, capacité & Électrochimie, lien \(\Delta_rG^\circ\) / f.é.m., loi de Faraday \\
+1.4 Titrage pH-métrique de \(\mathrm{Al^{3+}}\) & Q15--Q21 & Verrerie, montage, interprétation d'une courbe à trois réactions successives, concentrations, masse, retour sur \(\beta\) & Titrages, précipitation, complexation, bilans de matière \\
+2.1 D-mannose & Q22--Q24 & Stéréogénie, dénombrement, CIP, hémiacétalisation, anomères & Stéréochimie, Fischer, chaise, catalyse acide \\
+2.2 Synthèse du synthon 4 & Q25--Q33 & Protection sélective, acétonide, hydrolyse d'acétal, Williamson, oxydation, organomagnésien, désilylation & Groupes protecteurs, mécanismes au programme, n.o. en chimie organique \\
+\end{longtable}
+
+\textbf{Difficulté.} Le sujet est long, mais il s'appuie presque partout sur le cours. Les vraies difficultés sont la lecture de la figure 2 (Q17--Q19 et Q21), la justification de l'anomère le plus stable (Q24) et le descripteur CIP du produit H (Q30). Il comporte six mécanismes ou schémas à dessiner (Q11, Q16, Q24, Q27, Q28, Q31), qui demandent du temps.
+
+\textbf{Questions à ne pas laisser passer} : Q1--Q4, Q6, Q7, Q12, Q14, Q19, Q20, Q22, Q25, Q29, Q32 et Q33. Elles sont rapides et entièrement guidées par le cours ou par l'énoncé.
+
+\textbf{Gestion du temps} : prévoir environ 1 h 45 pour le problème 1, qui compte 21 questions, et 1 h 15 pour le problème 2. La question 21 est la plus délicate du problème 1, mieux vaut la garder pour la fin.
+
+\textbf{Mode d'emploi} : chercher seul. En cas de blocage, lire la première indication puis réessayer, et ne lire la solution qu'ensuite.
+
+\hypertarget{partie-1.1-propriuxe9tuxe9s-uxe9lectroniques-de-laluminium}{%
+\section{Partie 1.1 --- Propriétés électroniques de l'aluminium}\label{partie-1.1-propriuxe9tuxe9s-uxe9lectroniques-de-laluminium}}
+
+Quatre questions de cours d'atomistique. Il faut justifier chaque affirmation (colonne, stabilité de l'ion, lacune) plutôt que la réciter.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+La définition porte sur le noyau : quel nombre est commun à deux isotopes, lequel diffère ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans l'écriture \(^{A}_{Z}\mathrm{X}\), le nombre de neutrons s'obtient à partir de \(A\) et \(Z\).
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Deux nucléides sont \textbf{isotopes} quand ils ont le même numéro atomique \(Z\) (même nombre de protons, donc même élément chimique) et des nombres de masse \(A\) différents. Ils diffèrent donc par leur nombre de neutrons \(N=A-Z\). Comme ils ont le même cortège électronique, leurs propriétés chimiques sont quasi identiques.
+
+Pour \(^{27}_{13}\mathrm{Al}\), on lit \(Z=13\) et \(A=27\). Le noyau compte donc \(N=14\) neutrons.
+
+\equationajustee{\boxed{\text{noyau de } {}^{27}_{13}\mathrm{Al} : 13 \text{ protons et } 14 \text{ neutrons}}}
+
+\begin{piege}
+
+On ne confond pas « même nombre de protons » avec « même nombre de nucléons ». La composition du \textbf{noyau} ne comporte pas d'électrons. On peut ajouter que l'atome neutre en porte 13, mais à part.
+
+\end{piege}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Remplir les sous-couches par énergie croissante (règle de Klechkowski) jusqu'à 13 électrons.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La période se lit sur le plus grand \(n\). Pour la colonne, compter les colonnes des blocs s et d qui précèdent, puis les électrons de la sous-couche \(p\).
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\equationajustee{\boxed{\mathrm{Al} : 1s^2\,2s^2\,2p^6\,3s^2\,3p^1=[\mathrm{Ne}]\,3s^2\,3p^1}}
+
+Le cœur est formé de \(1s^2\,2s^2\,2p^6\) (10 électrons, configuration du néon). La valence est formée de \(3s^2\,3p^1\) (3 électrons, couche \(n=3\)).
+
+On a \(n_{\max}=3\), d'où la \textbf{3e période}. La sous-couche en cours de remplissage est une \(3p\), d'où le bloc p.~Pour la colonne, on compte 2 colonnes pour le bloc s, 10 pour le bloc d, puis 1 pour l'unique électron p :
+
+\equationajustee{\boxed{\text{\text{période} }3,\ \text{colonne }13}}
+
+\begin{methode}
+
+Pour tout élément du bloc p, la colonne vaut \(12+\) (nombre d'électrons \(np\)), car les dix colonnes du bloc d sont comptées même aux périodes 2 et 3, où ce bloc n'existe pas encore.
+
+\end{methode}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Écrire la configuration de l'ion obtenu après la perte de trois électrons et la comparer à celle d'un gaz noble.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Expliquer aussi pourquoi l'aluminium perd des électrons plutôt qu'il n'en gagne, et pourquoi il s'arrête à trois.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\(\mathrm{Al}\to\mathrm{Al^{3+}}+3\,e^-\) : l'ion a la configuration \(1s^2\,2s^2\,2p^6\), celle du \textbf{néon}. Sa couche externe est saturée, ce qui le rend stable. L'aluminium est un métal peu électronégatif : ses trois électrons de valence, faiblement liés, sont facilement cédés. Gagner cinq électrons serait très défavorable. Une quatrième ionisation arracherait un électron \(2p\) du cœur, et l'énergie à fournir serait beaucoup plus grande. \textbf{L'ion stable est donc \(\mathrm{Al^{3+}}\), isoélectronique du néon.}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Compter les électrons de valence de la molécule, puis les répartir en doublets liants et non liants.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Combien d'électrons entourent l'aluminium ? Qu'est-ce que cela impose de dessiner ? Pour la géométrie, déterminer le type \({\mathrm{AX}}_n{\mathrm{E}}_p\).
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Il y a \(3+3\times7=24\) électrons de valence, soit 12 doublets : 3 doublets liants Al--Cl et 3 doublets non liants sur chaque Cl. Al n'est entouré que de 6 électrons, ce qu'on représente par une \textbf{lacune électronique} (rectangle vide) sur Al. Toutes les charges formelles sont nulles.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q04-lewis-alcl3.pdf}
+\caption*{Figure 1 --- Schéma de Lewis de AlCl3 : trois liaisons simples Al--Cl,
+trois doublets non liants par chlore et une lacune électronique sur Al ;
+molécule triangulaire plane, angles de 120°}
+\end{figure}
+
+Autour de Al on trouve 3 doublets liants et aucun non liant, d'où le type \(\mathrm{AX_3E_0}\) :
+
+\equationajustee{\boxed{\text{\text{géométrie} triangulaire plane, angles }120^\circ}}
+
+\begin{methode}
+
+Une lacune électronique indique un acide de Lewis. Ici, elle explique le dimère \(\mathrm{Al_2Cl_6}\) cité par l'énoncé : un Cl pontant cède un doublet au Al voisin, et chaque Al devient tétraédrique, de type \(\mathrm{AX_4}\).
+
+\end{methode}
+
+\begin{piege}
+
+N'ajoutez pas de double liaison Al=Cl pour « compléter l'octet » : elle placerait une charge formelle négative sur Al et une positive sur Cl, ce qui contredit les électronégativités.
+
+\end{piege}
+
+\hypertarget{partie-1.2-obtention-de-lalumine-par-le-procuxe9duxe9-bayer}{%
+\section{Partie 1.2 --- Obtention de l'alumine par le procédé Bayer}\label{partie-1.2-obtention-de-lalumine-par-le-procuxe9duxe9-bayer}}
+
+La figure 1 superpose deux diagrammes \(E\)-pH. Tout le procédé Bayer se lit sur l'amphotérie de \(\mathrm{Al(OH)_3}\) : l'hydroxyde se dissout en milieu très basique, alors que \(\mathrm{Fe(OH)_3}\) reste solide.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Commencer par classer les espèces de chaque élément par nombre d'oxydation : le n.o. croît vers le haut du diagramme.
+
+\end{indication}
+
+\begin{indication}{2}
+
+À n.o. égal, les espèces se rangent de gauche à droite du cation libre vers l'hydroxyde, puis vers l'hydroxo-complexe. Repérer combien de frontières verticales coupent chaque étage.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fer} : n.o. +III pour \(\mathrm{Fe^{3+}}\) et \(\mathrm{Fe(OH)_3}\) ; n.o. +II pour \(\mathrm{Fe^{2+}}\) et \(\mathrm{Fe(OH)_2}\) ; n.o. 0 pour Fe. L'étage +III est coupé par la verticale pH = 2 (A à gauche, B à droite). L'étage +II est coupé à pH ≈ 7,5 (C à gauche, D à droite). La bande étroite D est comprise entre les deux droites obliques au-delà de pH 7,5, et E est en bas.
+\item
+  \textbf{Aluminium} : n.o. +III pour \(\mathrm{Al^{3+}}\), \(\mathrm{Al(OH)_3}\) et \([\mathrm{Al(OH)_4}]^-\), séparés par deux verticales (pH 4 et pH 10), et n.o. 0 pour Al, en bas.
+\end{itemize}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Domaine & Espèce & Nature \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A & \(\mathrm{Fe^{3+}}\) & prédominance \\
+B & \(\mathrm{Fe(OH)_{3(s)}}\) & existence \\
+C & \(\mathrm{Fe^{2+}}\) & prédominance \\
+D & \(\mathrm{Fe(OH)_{2(s)}}\) & existence \\
+E & \(\mathrm{Fe_{(s)}}\) & existence \\
+1 & \(\mathrm{Al^{3+}}\) & prédominance \\
+2 & \(\mathrm{Al(OH)_{3(s)}}\) & existence \\
+3 & \([\mathrm{Al(OH)_4}]^-\) & prédominance \\
+4 & \(\mathrm{Al_{(s)}}\) & existence \\
+\end{longtable}
+
+\begin{piege}
+
+Un solide n'a pas de domaine de « prédominance » : il existe ou il n'existe pas. On réserve le mot « prédominance » aux espèces dissoutes.
+
+\end{piege}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Sur quelle frontière le produit de solubilité intervient-il ? Quelle est alors la concentration de l'ion dissous ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Passer du pH à \([\mathrm{HO^-}]\) avec \(K_e\), sans oublier l'exposant de l'équation de dissolution.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\(\mathrm{Al(OH)_{3(s)}}=\mathrm{Al^{3+}}+3\,\mathrm{HO^-}\), avec \(K_{s,1}=[\mathrm{Al^{3+}}][\mathrm{HO^-}]^3\).
+
+Sur la frontière 1/2 (pH 4,0), le solide apparaît alors que tout l'aluminium dissous est sous forme \(\mathrm{Al^{3+}}\). On y a donc :
+
+\equationajustee{\begin{aligned}
+[\mathrm{Al^{3+}}] &= C_T = 10^{-2}\\
+[\mathrm{HO^-}] &= 10^{-10}
+\end{aligned}}
+
+\equationajustee{\begin{aligned}
+K_{s,1} &= 10^{-2}\times(10^{-10})^3\\
+&= \boxed{1{,}0\cdot10^{-32}}
+\end{aligned}}
+
+\begin{methode}
+
+Sur la frontière entre une espèce dissoute et un solide, la concentration de l'espèce dissoute vaut la concentration de tracé \(C_T\), sans partage par moitié. Le partage \(C_T/2\) ne concerne que deux espèces dissoutes.
+
+\end{methode}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Le réactif apporte des ions \(\mathrm{HO^-}\) et le produit est l'ion aluminate de l'énoncé.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\equationajustee{\boxed{\mathrm{Al(OH)_{3(s)}}+\mathrm{HO^-_{(aq)}}=[\mathrm{Al(OH)_4}]^-_{(aq)}}}
+
+L'équation est équilibrée en Al, O, H et en charge. Sa constante vaut \(K_3=K_{s,1}\beta=10^{2}\).
+
+C'est cohérent avec la frontière pH = 10, où le rapport \([\mathrm{Al(OH)_4^-}]/[\mathrm{HO^-}]\) vaut \(10^{-2}/10^{-4}\), soit \(10^2\).
+
+\begin{piege}
+
+Respectez la notation \([\mathrm{Al(OH)_4}]^-\) imposée par l'énoncé (pas \(\mathrm{AlO_2^-}\)). Le solide n'apparaît pas dans l'expression de la constante.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Ajouter de l'acide fait baisser le pH : sur la figure 1, dans quel sens se déplace-t-on et quelle frontière franchit-on ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le domaine du solide est borné des deux côtés. Que se passe-t-il si l'on va trop loin ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+On part du domaine 3 (aluminate) et l'on entre dans le domaine 2 en franchissant la verticale :
+
+\equationajustee{\boxed{{\mathrm{pH}}_{\text{\text{précipitation}}}\approx10}}
+
+Si l'ajout d'acide amène le pH sous 4, on entre dans le domaine 1 : l'hydroxyde se redissout en \(\mathrm{Al^{3+}}\) et l'aluminium repart en solution. \textbf{Il faut rester dans la fenêtre \(4<\mathrm{pH}<10\)}, d'où un ajout goutte à goutte sous contrôle du pH.
+
+\begin{methode}
+
+Un hydroxyde amphotère n'existe que dans une fenêtre de pH. Toute précipitation sélective impose de connaître ses deux bornes.
+
+\end{methode}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Écrire la réaction entre l'ion aluminate et l'acide qui redonne le précipité.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'obtenir comme combinaison de réactions de constantes connues : dissolution, complexation, autoprotolyse de l'eau.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\equationajustee{[\mathrm{Al(OH)_4}]^-+\mathrm{H_3O^+}=\mathrm{Al(OH)_{3(s)}}+2\,\mathrm{H_2O}}
+
+Cette réaction est la somme de deux réactions :
+
+\begin{itemize}
+\tightlist
+\item
+  \([\mathrm{Al(OH)_4}]^-=\mathrm{Al(OH)_3}+\mathrm{HO^-}\), de constante \(1/(K_{s,1}\beta)=10^{-2}\) ;
+\item
+  \(\mathrm{H_3O^+}+\mathrm{HO^-}=2\,\mathrm{H_2O}\), de constante \(1/K_e=10^{14}\).
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+K^\circ_1 &= \frac{1}{K_{s,1}\,\beta\,K_e}\\
+&= \boxed{10^{12}}
+\end{aligned}}
+
+On obtient la même valeur en écrivant \(\mathrm{H^+}\) au lieu de \(\mathrm{H_3O^+}\). Comme \(K^\circ_1\gg10^4\), la réaction est \textbf{quantitative} : chaque goutte d'acide précipite de l'hydroxyde, et un excès local d'acide redissout le solide (Q8).
+
+\begin{methode}
+
+Pour la constante d'une réaction « composée », on écrit l'équation cherchée comme somme d'équations connues. Les constantes se multiplient, et une équation inversée fait intervenir l'inverse de sa constante.
+
+\end{methode}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Dans le document 2, quelle opération sépare le fer de l'aluminium ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+On demande une propriété \textbf{physique} : qu'est-ce qui distingue les deux hydroxydes dans la soude concentrée ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+La séparation se fait par \textbf{filtration}. Dans la soude concentrée, \(\mathrm{Fe(OH)_3}\) reste solide (le domaine B s'étend jusqu'à pH 14) et il est retenu par le filtre. L'aluminium est passé en solution sous forme d'aluminate et traverse le filtre. La propriété physique en jeu est la \textbf{différence de solubilité} des deux hydroxydes en milieu basique. Son origine chimique est l'amphotérie de \(\mathrm{Al(OH)_3}\).
+
+\begin{piege}
+
+« Amphotérie » est une propriété chimique. Elle explique la différence de solubilité, mais ne répond pas seule à la question.
+
+\end{piege}
+
+\hypertarget{partie-1.3-uxe9tude-dune-pile-aluminiumair}{%
+\section{Partie 1.3 --- Étude d'une pile aluminium/air}\label{partie-1.3-uxe9tude-dune-pile-aluminiumair}}
+
+Cette partie demande un schéma, une équation-bilan, puis la thermodynamique (lien entre \(\Delta_rG^\circ\) et f.é.m.) et la loi de Faraday. Attention à la température de 60 °C.
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Le pôle positif est l'électrode du couple de plus haut potentiel.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Anode et cathode se définissent par la réaction qui s'y produit, pas par le signe du pôle.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q11-pile-aluminium-air.pdf}
+\caption*{Figure 2 --- Pile aluminium/air en générateur : Al(s), pôle −, est
+l'anode (oxydation) ; l'électrode poreuse à air, pôle +, est la cathode
+(réduction de O2) ; électrons de Al vers l'électrode à air, courant I en
+sens inverse}
+\end{figure}
+
+Comme \(E^\circ_2=0{,}39\ \mathrm V>E^\circ_1=-2{,}30\) V, l'électrode à dioxygène est le pôle +. En générateur, l'aluminium s'oxyde, c'est l'\textbf{anode} (pôle −). Le dioxygène se réduit, c'est la \textbf{cathode} (pôle +).
+
+\textbf{Anode : l'aluminium (pôle −). Cathode : l'électrode à dioxygène (pôle +).}
+
+\begin{piege}
+
+« Anode = pôle + » n'est vrai que pour un électrolyseur. Pour une pile, la règle sûre reste : anode = oxydation, cathode = réduction.
+
+\end{piege}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Écrire chaque demi-équation avec \(\mathrm{H_2O}\) et \(\mathrm{HO^-}\) uniquement, puis égaliser les électrons.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\begin{itemize}
+\tightlist
+\item
+  anode : \(\mathrm{Al}+3\,\mathrm{HO^-}=\mathrm{Al(OH)_3}+3\,e^-\) (×4) ;
+\item
+  cathode : \(\mathrm{O_2}+2\,\mathrm{H_2O}+4\,e^-=4\,\mathrm{HO^-}\) (×3).
+\end{itemize}
+
+\equationajustee{\boxed{4\,\mathrm{Al_{(s)}}+3\,\mathrm{O_{2(g)}}+6\,\mathrm{H_2O_{(\ell)}}=4\,\mathrm{Al(OH)_{3(s)}}}}
+
+Cette équation met en jeu \(n=12\) électrons échangés.
+
+\begin{methode}
+
+En milieu basique, on équilibre d'abord comme en milieu acide, avec \(\mathrm{H^+}\), puis on ajoute autant de \(\mathrm{HO^-}\) de chaque côté et l'on simplifie l'eau. On note le nombre d'électrons échangés : la question suivante en a besoin.
+
+\end{methode}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Quelle relation relie \(\Delta_rG^\circ\) aux potentiels standard des deux couples ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(K^\circ\), prendre la température de fonctionnement (en kelvins), et ne pas confondre \(\ln\) et \(\log\).
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Pour l'équation de Q12 (\(n=12\)) :
+
+\equationajustee{\begin{aligned}
+\Delta_rG^\circ &= -n\mathcal F(E^\circ_2-E^\circ_1)\\
+&= -12\times96500\times2{,}69\\
+&= -3{,}12\cdot10^{6}\ \mathrm{J\cdot mol^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{\Delta_rG^\circ\approx-3{,}1\cdot10^{3}\ \mathrm{kJ\cdot mol^{-1}}}}
+
+Avec \(T=333\) K et \(\Delta_rG^\circ=-RT\ln K^\circ_{(C)}\) :
+
+\equationajustee{\begin{aligned}
+\ln K^\circ_{(C)} &= \frac{3{,}115\cdot10^6}{8{,}31\times333}\\
+&= 1{,}13\cdot10^3\\
+\log K^\circ_{(C)} &= \frac{1{,}13\cdot10^3}{2{,}303}\\
+&= 489
+\end{aligned}}
+
+\equationajustee{\boxed{K^\circ_{(C)}\approx10^{489}}}
+
+La réaction est totale. La pile cesse de fonctionner quand l'aluminium est épuisé, pas quand un équilibre est atteint.
+
+\begin{piege}
+
+Trois erreurs sont à éviter : oublier \(n\) (on trouve alors −260 kJ/mol), calculer à 298 K, et diviser par \(RT\) en oubliant le facteur \(\ln10\) pour passer au logarithme décimal. Un exposant de 489 n'est pas une erreur de calcul.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+La capacité d'une pile est une charge électrique. Pour la masse, passer par la quantité d'électrons, puis par la stœchiométrie de la demi-équation anodique.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\equationajustee{\begin{aligned}
+Q &= I\Delta t\\
+&= 6{,}0\times4{,}3\cdot10^4\\
+&= 2{,}58\cdot10^5\ \mathrm C
+\end{aligned}}
+
+\equationajustee{\boxed{Q\approx2{,}6\cdot10^5\ \mathrm C\ \ (\approx72\ \mathrm{A\cdot h})}}
+
+\equationajustee{\begin{aligned}
+m_{\mathrm{Al}} &= \frac{Q}{3\mathcal F}M(\mathrm{Al})\\
+&= \frac{2{,}58\cdot10^5}{3\times96500}\times27
+\end{aligned}}
+
+\equationajustee{\boxed{m_{\mathrm{Al}}\approx24\ \mathrm g}}
+
+\begin{piege}
+
+Le facteur 3 vient de la demi-équation \(\mathrm{Al}\to\mathrm{Al(III)}+3e^-\). Une capacité de pile s'exprime en C ou en A·h, jamais en farads.
+
+\end{piege}
+
+\hypertarget{partie-1.4-titrage-ph-muxe9trique-des-ions-aluminium}{%
+\section{Partie 1.4 --- Titrage pH-métrique des ions aluminium}\label{partie-1.4-titrage-ph-muxe9trique-des-ions-aluminium}}
+
+On titre un mélange d'acide fort et d'ions \(\mathrm{Al^{3+}}\) par la soude. Trois réactions se succèdent : neutralisation, précipitation, redissolution. Les courbes de pourcentage ② et ③ aident à placer les volumes caractéristiques.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+C'est une préparation par dissolution d'un solide. Quelle verrerie fixe précisément le volume final ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Avec quel liquide complète-t-on jusqu'au trait de jauge ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+On utilise une balance de précision, une coupelle et une spatule pour peser \(m_0\). On introduit le solide avec un entonnoir dans une \textbf{fiole jaugée de 100,0 mL}. On le dissout dans de l'acide chlorhydrique de concentration \(C_1\), puis on complète \textbf{avec cette même solution d'acide} jusqu'au trait de jauge. On bouche et on homogénéise.
+
+\begin{piege}
+
+Compléter avec de l'eau distillée diluerait l'acide et fausserait \(C_1\). Une éprouvette graduée n'est pas assez précise pour fixer \(V_0\).
+
+\end{piege}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Lister ce qui contient la solution titrante, ce qui contient la prise d'essai, comment on agite et comment on mesure le pH.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q16-montage-titrage-ph.pdf}
+\caption*{Figure 3 --- Montage du titrage pH-métrique : burette de soude, bécher
+agité contenant V1 = 10,0 mL de S0, électrode combinée reliée au
+pH-mètre étalonné}
+\end{figure}
+
+On étalonne le pH-mètre avec deux tampons. L'électrode trempe sans toucher le barreau, et on resserre les mesures près des sauts de pH.
+
+\begin{methode}
+
+Un schéma de titrage pH-métrique comporte cinq légendes : la burette et son contenu avec sa concentration, le bécher avec le volume prélevé et la pipette jaugée, l'agitation, l'électrode (de verre et de référence, ou combinée) et le pH-mètre étalonné.
+
+\end{methode}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Deux espèces consomment \(\mathrm{HO^-}\) : l'acide fort en excès et l'ion \(\mathrm{Al^{3+}}\). Dans quel ordre ? Que devient ensuite le précipité ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un pH qui reste presque constant pendant un ajout de soude signale un équilibre hétérogène qui « tamponne » la solution.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour ② et ③, regarder où chaque courbe commence et où elle s'annule, et relier ces volumes aux réactions.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{a} (0--2 mL, pH 1,7 → 3,7) : la soude titre l'acide fort (\(\mathrm{H_3O^+}+\mathrm{HO^-}\to2\,\mathrm{H_2O}\)). La solution reste limpide.
+\item
+  \textbf{b} (2,0 mL, pH ≈ 3,7) : l'acide fort est consommé et le pH atteint le seuil de précipitation de \(\mathrm{Al(OH)_3}\). Le \textbf{précipité blanc apparaît}, et le saut attendu pour l'acide fort est écrêté.
+\item
+  \textbf{Palier 2--11 mL} (pH ≈ 3,7--4,3) : précipitation, \(\mathrm{Al^{3+}}+3\,\mathrm{HO^-}\to\mathrm{Al(OH)_3}\). Tant que le solide coexiste avec \(\mathrm{Al^{3+}}\), \([\mathrm{HO^-}]^3=K_{s,1}/[\mathrm{Al^{3+}}]\) et le pH varie très peu.
+\item
+  \textbf{c} (à partir de 11 mL) : le dernier ion \(\mathrm{Al^{3+}}\) disparaît, ce qui donne le grand saut de pH. Ensuite, le précipité se \textbf{redissout}, \(\mathrm{Al(OH)_3}+\mathrm{HO^-}\to[\mathrm{Al(OH)_4}]^-\), sur un second palier (pH ≈ 10,3 à 11). Le trouble diminue.
+\item
+  \textbf{d} (14 mL et au-delà) : le dernier grain de solide disparaît et la solution redevient limpide (point anguleux). Ensuite, la soude est en excès et le pH croît lentement.
+\end{itemize}
+
+\textbf{② = \(\mathrm{Al^{3+}}\)} (100 \% à 2 mL, 0 \% à 11 mL) ; \textbf{③ = \([\mathrm{Al(OH)_4}]^-\)} (apparaît à 11 mL et croît pendant la redissolution).
+
+\begin{methode}
+
+Pour interpréter une courbe de titrage à plusieurs réactions, on range les réactions par constante décroissante. La plus favorable se fait d'abord. Chaque rupture de pente marque la fin d'une réaction, et chaque palier un système « tamponné ».
+
+\end{methode}
+
+\begin{piege}
+
+Les étiquettes de la figure n'ont pas de bornes explicites. Décrivez \textbf{tous} les segments, palier 2--11 mL compris, pour que la réponse soit juste quelle que soit la lecture des lettres.
+
+\end{piege}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Écrire une réaction par segment de la courbe et vérifier que chacune est favorable.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les volumes équivalents se lisent aux ruptures de la courbe ① et se confirment avec les extrémités de la courbe ②.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\equationajustee{\begin{aligned}{}&(\mathrm R_1)\quad \mathrm{H_3O^+}+\mathrm{HO^-}=2\,\mathrm{H_2O} && 1/K_e=10^{14}\\
+&(\mathrm R_2)\quad \mathrm{Al^{3+}}+3\,\mathrm{HO^-}=\mathrm{Al(OH)_{3(s)}} && 1/K_{s,1}=10^{32}\\
+&(\mathrm R_3)\quad \mathrm{Al(OH)_{3(s)}}+\mathrm{HO^-}=[\mathrm{Al(OH)_4}]^- && K_{s,1}\beta=10^{2}
+\end{aligned}}
+
+\equationajustee{\boxed{V_{\text{\text{éq}},1}=2{,}0\ \mathrm{mL}\ \ (\text{fin de }\mathrm R_1)}}
+
+\equationajustee{\boxed{V_{\text{\text{éq}},2}=11{,}0\ \mathrm{mL}\ \ (\text{fin de }\mathrm R_2)}}
+
+La fin de \(\mathrm R_3\) correspond au point d, \(V_3\approx14{,}0\) mL.
+
+\begin{piege}
+
+N'oubliez pas le coefficient 3 de \(\mathrm{HO^-}\) dans \(\mathrm R_2\) : toute la question 19 en dépend.
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Faire un bilan de matière à chaque équivalence, en tenant compte des réactions qui ont déjà eu lieu.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le volume de soude qui sert à la précipitation est la différence des deux volumes équivalents.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+À la première équivalence, \(C_1V_1=C_2V_{\text{\text{éq}},1}\) :
+
+\equationajustee{\begin{aligned}
+C_1 &= \frac{0{,}100\times2{,}0}{10{,}0}\\
+&= \boxed{2{,}0\cdot10^{-2}\ \mathrm{mol\cdot L^{-1}}}
+\end{aligned}}
+
+Le pH initial vaut bien \(-\log(0{,}020)=1{,}7\).
+
+Entre les deux équivalences, \(3\,C_0V_1=C_2(V_{\text{\text{éq}},2}-V_{\text{\text{éq}},1})\) :
+
+\equationajustee{\begin{aligned}
+C_0 &= \frac{0{,}100\times9{,}0}{3\times10{,}0}\\
+&= \boxed{3{,}0\cdot10^{-2}\ \mathrm{mol\cdot L^{-1}}}
+\end{aligned}}
+
+Contrôle : la redissolution consomme \(C_0V_1/C_2=3{,}0\) mL de soude et doit donc finir à 14,0 mL. C'est bien le point anguleux d.~La courbe ③ du document atteint 100 \% un peu plus loin, vers 14,5 mL : c'est une imprécision du tracé.
+
+\begin{methode}
+
+Un contrôle de cohérence (pH initial, troisième volume prévu par la stœchiométrie) coûte deux lignes et sécurise les questions suivantes.
+
+\end{methode}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Passer de la concentration à la quantité de matière dans \textbf{tout} le volume \(V_0\), puis utiliser la masse molaire du solide \textbf{hydraté}.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\equationajustee{M(\mathrm{AlCl_3,6H_2O})=27+3\times35{,}5+6\times18=241{,}5\ \mathrm{g\cdot mol^{-1}}}
+
+\equationajustee{\begin{aligned}
+m_0 &= C_0V_0M\\
+&= 3{,}0\cdot10^{-2}\times0{,}100\times241{,}5
+\end{aligned}}
+
+\equationajustee{\boxed{m_0\approx0{,}72\ \mathrm g}}
+
+\begin{piege}
+
+Oublier les six molécules d'eau donne 0,40 g. Utiliser \(V_1\) au lieu de \(V_0\) donne une masse dix fois trop faible.
+
+\end{piege}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Choisir un point de la courbe où le solide coexiste avec l'aluminate : quel équilibre relie alors \([\mathrm{Al^{3+}}]\) à \([\mathrm{HO^-}]\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Éliminer \([\mathrm{Al^{3+}}]\) dans l'expression de \(\beta\). Il reste trois grandeurs. La concentration en aluminate s'obtient par un bilan de matière (attention à la dilution). La concentration en ions hydroxyde se lit sur la courbe. Reste enfin \(K_{s,1}\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour être cohérent, on peut aussi tirer \(K_{s,1}\) de la même courbe, au point où le précipité apparaît.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Tant que le solide est présent, \([\mathrm{Al^{3+}}]=K_{s,1}/[\mathrm{HO^-}]^3\), donc
+
+\equationajustee{\begin{aligned}
+\beta &= \frac{[\mathrm{Al(OH)_4^-}]}{[\mathrm{Al^{3+}}][\mathrm{HO^-}]^4}\\
+&= \frac{1}{K_{s,1}}\,\frac{[\mathrm{Al(OH)_4^-}]}{[\mathrm{HO^-}]}
+\end{aligned}}
+
+\textbf{\(K_{s,1}\) au point b} (\(V=2{,}0\) mL, pH ≈ 3,7) :
+
+\equationajustee{\begin{aligned}
+[\mathrm{Al^{3+}}] &= \frac{3{,}0\cdot10^{-4}}{12\cdot10^{-3}}\\
+&= 2{,}5\cdot10^{-2}\\
+K_{s,1} &= 2{,}5\cdot10^{-2}\times(10^{-10{,}3})^3\\
+&\approx 10^{-32{,}5}
+\end{aligned}}
+
+\textbf{Au point d} (\(V=14{,}0\) mL, pH ≈ 11,0), il ne reste qu'un dernier grain de solide. On y lit \([\mathrm{HO^-}]=10^{-3}\), et le bilan de matière donne :
+
+\equationajustee{\begin{aligned}
+[\mathrm{Al(OH)_4^-}] &= \frac{3{,}0\cdot10^{-4}}{24\cdot10^{-3}}\\
+&= 1{,}25\cdot10^{-2}\\
+\frac{[\mathrm{Al(OH)_4^-}]}{[\mathrm{HO^-}]} &\approx 12
+\end{aligned}}
+
+On en déduit :
+
+\equationajustee{\log\beta\approx\log12+32{,}5}
+
+\equationajustee{\boxed{\log\beta\approx33{,}5\ \ (\text{compatible avec }34)}}
+
+Au milieu de la redissolution (\(V=12{,}5\) mL, pH ≈ 10,9), on trouve la même chose à 0,2 près. Avec \(K_{s,1}=10^{-32}\) (Q6), on obtient \(\log\beta\approx33\).
+
+Une erreur d'une unité sur le pH lu change \(\log\beta\) d'une unité : la lecture graphique ne fixe donc \(\log\beta\) qu'à ±0,5 environ.
+
+\begin{piege}
+
+Ce n'est pas un titrage d'acide faible : la relation « pH = p\(K_a\) à la demi-équivalence » ne s'applique pas, car un solide d'activité 1 intervient. N'oubliez pas non plus la dilution : le volume total vaut \(V_1+V\).
+
+\end{piege}
+
+\begin{jury}
+
+Si votre résultat s'écarte de la valeur fournie, dites-le, chiffrez la sensibilité à la grandeur lue et concluez sur l'ordre de grandeur. N'ajustez pas le calcul pour retomber sur la valeur attendue : une démarche honnête et commentée vaut mieux qu'un accord forcé.
+
+\end{jury}
+
+\hypertarget{partie-2.1-uxe9tude-structurale-du-d-mannose}{%
+\section{Partie 2.1 --- Étude structurale du D-mannose}\label{partie-2.1-uxe9tude-structurale-du-d-mannose}}
+
+Cette partie est de la stéréochimie de base sur un aldohexose : centres stéréogènes, projection de Fischer, règles CIP, puis cyclisation en hémiacétal et comparaison des anomères.
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Un carbone stéréogène porte quatre substituants différents. Examiner les carbones un par un, y compris les deux extrémités.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La formule \(2^n\) ne vaut que s'il n'existe aucun composé méso. Pour les dessins, préférer la projection de Fischer, où l'inversion d'un centre consiste à échanger H et OH.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+C2, C3, C4 et C5 sont stéréogènes. C1 (\(sp^2\)) et C6 (\(\mathrm{CH_2}\)) ne le sont pas. Les deux extrémités de la chaîne sont différentes, donc il n'y a pas de composé méso :
+
+\equationajustee{\boxed{4\text{ centres \text{stéréogènes}}\Rightarrow2^4=16\text{ \text{stéréoisomères}}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q22-fischer-mannose.pdf}
+\caption*{Figure 4 --- Projections de Fischer du D-mannose, de son énantiomère
+(L-mannose, quatre centres inversés) et d'un diastéréoisomère
+(D-glucose, C2 seul inversé) ; les OH déplacés sont en couleur}
+\end{figure}
+
+\begin{piege}
+
+Un « énantiomère » où un seul OH a changé de côté est en réalité un diastéréoisomère. L'énantiomère demande d'inverser tous les centres.
+
+\end{piege}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Classer les substituants par numéro atomique, en dupliquant la double liaison C=O de l'aldéhyde.
+
+\end{indication}
+
+\begin{indication}{2}
+
+En projection de Fischer, l'atome H est sur une liaison horizontale, donc dirigé vers l'observateur. Que faut-il faire du sens de rotation lu ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{C2} : OH \textgreater{} C1 \((\mathrm{O,O,H})\) \textgreater{} C3 \((\mathrm{O,C,H})\) \textgreater{} H. Le sens OH (à gauche) → C1 (en haut) → C3 (en bas) est horaire, et H pointe vers l'avant : on inverse, \textbf{(S)}.
+\item
+  \textbf{C5} : OH \textgreater{} C4 \((\mathrm{O,C,H})\) \textgreater{} C6 \((\mathrm{O,H,H})\) \textgreater{} H. Le sens OH (à droite) → C4 → C6 est antihoraire, et l'on inverse : \textbf{(R)}.
+\end{itemize}
+
+\equationajustee{\boxed{\mathrm{C2}:(S),\quad\mathrm{C5}:(R)}\qquad\text{D-mannose}=(2S,3S,4R,5R)}
+
+\begin{methode}
+
+Si le groupe de priorité 4 est vers l'avant, on lit le sens de rotation puis on prend le descripteur opposé. En Fischer, c'est le cas à chaque centre d'un ose.
+
+\end{methode}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+La cyclisation est une addition nucléophile d'un hydroxyle sur le carbonyle. Quel hydroxyle donne un cycle à six atomes ? Quel rôle joue l'acide ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le mécanisme comporte trois étapes : activation du carbonyle, addition, transfert de proton. Pour la stabilité, passer de la représentation de Haworth à la chaise et regarder la position de l'OH anomérique.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour le mannose, un effet électronique s'ajoute à l'argument stérique et favorise la position axiale en C1. Regarder aussi la position de l'OH en C2.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\emph{Mécanisme.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\mathrm{H^+}\) protone l'oxygène du carbonyle C1, qui devient très électrophile.
+\item
+  Un doublet de l'oxygène O5 (hydroxyle de C5) attaque C1, et le doublet π bascule sur l'oxygène. On obtient un cycle à 6 atomes (oxonium sur O5).
+\item
+  O5 est déprotoné et le catalyseur est régénéré. On obtient l'hémiacétal cyclique.
+\end{enumerate}
+
+C1 est plan, donc attaqué par ses deux faces : les deux anomères se forment. α est celui dont l'OH anomérique est en bas en projection de Haworth.
+
+\emph{Stabilité.} En chaise \({}^4C_1\), l'OH anomérique est axial pour α et équatorial pour β. L'argument stérique seul désignerait β. Mais l'\textbf{effet anomère} stabilise un substituant électronégatif axial en C1, et l'OH axial de C2 du mannose défavorise β : dans β, les deux liaisons C1--O et C2--O, voisines, pointent du même côté. On trouve expérimentalement environ 67 \% de α à l'équilibre :
+
+\equationajustee{\boxed{\alpha\text{-D-mannopyranose plus stable}}}
+
+Le D-glucose se comporte à l'inverse : β y domine, car tous ses substituants peuvent être équatoriaux.
+
+\begin{piege}
+
+« β, car équatorial » est le raisonnement qui vaut pour le glucose. Pour le mannose, il conduit à la mauvaise conclusion. Si vous ne connaissez pas l'effet anomère, donnez au moins l'argument stérique en précisant qu'il est incomplet. Un coin hachuré sur un cycle plan veut dire « sous le plan », pas « axial ».
+
+\end{piege}
+
+\begin{jury}
+
+Un mécanisme de catalyse acide doit montrer l'activation, l'addition et la régénération du catalyseur. Chaque flèche part d'un doublet et arrive sur un atome ou une liaison.
+
+\end{jury}
+
+\hypertarget{partie-2.2-uxe9tude-de-la-synthuxe8se-du-synthon-4}{%
+\section{Partie 2.2 --- Étude de la synthèse du synthon 4}\label{partie-2.2-uxe9tude-de-la-synthuxe8se-du-synthon-4}}
+
+\textbf{Numérotation} (celle du sucre, à annoncer sur la copie) : C1 porte l'allyle, C2, C3 et C4 les hydroxyles de A, C5 porte \(\mathrm{C6H_2O}\)--, et l'oxygène du cycle est l'ancien O5. Sur la figure 5, l'oxygène du cycle est en bas, C1 en bas à gauche, C2 en haut à gauche, C3 en haut, C4 en haut à droite et C5 en bas à droite. Dans A, les OH de C2 et C3 et \(\mathrm{CH_2OH}\) sont en coin plein, l'OH de C4 et l'allyle en coin hachuré.
+
+La séquence est une leçon sur les groupes protecteurs. Il faut repérer à chaque étape ce qui change entre deux structures données, puis choisir les réactifs en ménageant l'éther silylé.
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Combien d'équivalents de réactif ? Parmi les quatre hydroxyles de A, lequel se distingue des autres par sa classe ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pensez à la taille des groupes portés par le silicium.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\textbf{B} = A dont seul l'alcool primaire est silylé : \(\mathrm{CH_2OTBDPS}\) en C5, les OH secondaires de C2, C3 et C4 restant libres, sans changement de configuration.
+
+Le silicium porte un tert-butyle et deux phényles, il est très encombré. La silylation est donc très sensible à l'encombrement de l'alcool, et l'alcool primaire, beaucoup plus accessible, réagit sélectivement avec le seul équivalent introduit. L'imidazole sert de base (il capte HCl) et de catalyseur nucléophile.
+
+\begin{piege}
+
+La sélectivité ne vient pas d'une acidité plus forte de l'alcool primaire : c'est un argument \textbf{stérique}.
+
+\end{piege}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Identifier le nouveau motif de C : deux oxygènes reliés à un carbone qui porte deux méthyles. De quelle fonction s'agit-il, et de quel composé carbonylé provient-il ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La réaction est équilibrée : comment la déplacer ? Pourquoi est-ce ce diol-là qui réagit ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+C'est la formation d'un \textbf{acétonide} (acétal cyclique de la propanone) sur le diol \textbf{cis} C2/C3 :
+
+\equationajustee{\boxed{\text{propanone en \text{excès} ou 2,2-\text{diméthoxypropane}, APTS catalytique, anhydre, \text{élimination} de }\mathrm{H_2O}\text{ (ou MeOH)}}}
+
+On élimine l'eau avec un tamis moléculaire ou un Dean-Stark. Avec le 2,2-diméthoxypropane, c'est du méthanol qui se forme, et l'équilibre est déplacé sans chauffer fort. Seuls les OH de C2 et C3 sont du même côté du cycle, ce qui permet un dioxolane fusionné sans tension. L'OH de C4 est trans par rapport à celui de C3.
+
+\begin{methode}
+
+Pour protéger un diol 1,2-cis, on forme un acétonide. On le retire ensuite par hydrolyse acide aqueuse (Q27).
+
+\end{methode}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Comparer D et E : quel groupe a disparu ? C'est la réaction inverse de Q26, il faut donc des conditions inverses.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le mécanisme passe deux fois par un ion oxocarbénium stabilisé par mésomérie.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\emph{Conditions} : \textbf{hydrolyse acide de l'acétonide}, avec de l'eau en excès et un acide doux (AcOH/\(\mathrm{H_2O}\) en chauffant modérément, ou APTS catalytique dans MeOH/\(\mathrm{H_2O}\)). On évite l'acide fort concentré à chaud, qui couperait l'éther silylé.
+
+\emph{Mécanisme} (O2 et O3 sont les oxygènes de l'acétal, \(\mathrm{C^*}\) son carbone central) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Protonation de O3.
+\item
+  Rupture de la liaison \(\mathrm{C^*}\)--O3, qui libère l'OH de C3 et forme l'oxocarbénium \(\mathrm{C2{-}O^+{=}C(CH_3)_2}\), stabilisé par mésomérie.
+\item
+  Addition de \(\mathrm{H_2O}\) sur \(\mathrm{C^*}\), puis déprotonation : on obtient un hémiacétal.
+\item
+  Protonation de O2, puis rupture assistée par le doublet de l'OH : l'OH de C2 est libéré et on obtient la propanone protonée.
+\item
+  Déprotonation : propanone et \(\mathrm{H^+}\) régénéré.
+\end{enumerate}
+
+\textbf{E} est le diol cis C2/C3. Les configurations de C2 et C3 sont conservées, car aucune de leurs liaisons n'est rompue.
+
+\begin{piege}
+
+Ne vous arrêtez pas à l'hémiacétal, et ne faites pas attaquer l'eau avant la protonation.
+
+\end{piege}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+La banque de réactions donne la séquence base forte puis BnBr. Pour savoir quel OH est benzylé, regarder G.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le mécanisme se fait en deux temps : réaction acide-base, puis substitution nucléophile sur un carbone primaire benzylique.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+G porte la cétone en C2 et le groupe OBn en C3, donc :
+
+\equationajustee{\boxed{\mathbf F:\ \text{OBn en C3, OH libre en C2 (coins pleins), } \mathrm{CH_2}\text{ en C4, allyle en C1, }\mathrm{CH_2OTBDPS}}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Acide-base} : LDA, base très forte (\(\mathrm{p}K_a\approx36\)) et peu nucléophile car encombrée, déprotone l'OH de C3 de façon quantitative. On obtient l'alcoolate de lithium.
+\item
+  \textbf{\(\mathrm{S_N2}\)} : l'alcoolate attaque le \(\mathrm{CH_2}\) benzylique de BnBr par l'arrière de la liaison C--Br, et \(\mathrm{Br^-}\) part en même temps.
+\end{enumerate}
+
+Le choix de C3 est cohérent : son OH n'est voisin que du \(\mathrm{CH_2}\) de C4, il est moins encombré que celui de C2, voisin de C1 qui porte l'allyle.
+
+\begin{piege}
+
+Un alcool neutre est un mauvais nucléophile, et la déprotonation préalable est indispensable. Écrire directement ROH + BnBr → ROBn est faux.
+
+\end{piege}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Calculer le nombre d'oxydation du carbone fonctionnel avant et après l'étape.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+On attribue les électrons de chaque liaison à l'atome le plus électronégatif. Dans F, C2 porte une liaison C--O (+1), une liaison C--H (−1) et deux liaisons C--C (0) : son n.o. vaut 0. Dans G, C2 porte une liaison C=O (+2) et deux liaisons C--C : son n.o. vaut +II.
+
+\equationajustee{\boxed{\Delta\text{n.o.}=+2 : \text{oxydation}}}
+
+La demi-équation s'écrit \(\mathrm{R_2CHOH}=\mathrm{R_2CO}+2\mathrm{H^+}+2e^-\). Le réactif de Collins (\(\mathrm{CrO_3}\), pyridine) est réduit de Cr(+VI) en Cr(+III), en milieu non acide.
+
+\begin{piege}
+
+La liaison double C=O compte pour +2. « Alcool → cétone donc oxydation » n'est pas une justification.
+
+\end{piege}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+L'organomagnésien ajoute un méthyle sur le carbone du carbonyle : quelle classe d'alcool obtient-on ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour placer OH et \(\mathrm{CH_3}\), classer les quatre substituants de C2. Les deux carbones du cycle se départagent à une sphère lointaine : suivre les branches oxygénées jusqu'au bout.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+H est l'alcool tertiaire en C2, qui porte OH et \(\mathrm{CH_3}\). Le reste de la molécule ne change pas.
+
+Classement CIP en C2 : OH \textgreater{} C1 \textgreater{} C3 \textgreater{} \(\mathrm{CH_3}\). C1 et C3 sont tous deux \((\mathrm{O,C,H})\), et leurs oxygènes portent chacun un C. À la sphère suivante, par l'oxygène du cycle, C1 mène à C5, qui est \((\mathrm{C,C,H})\). Par l'oxygène benzylique, C3 mène à \(\mathrm{CH_2Ph}\), qui est \((\mathrm{C,H,H})\). Donc C1 \textgreater{} C3.
+
+Dans l'orientation de la figure 5, avec \(\mathrm{CH_3}\) en coin hachuré et OH en coin plein, le sens OH → C1 → C3 est antihoraire, ce qui donne (S).
+
+\equationajustee{\boxed{\mathbf H:\ \text{OH en coin plein en C2 (\text{même} \text{côté} que OBn), }\mathrm{CH_3}\text{ en coin \text{hachuré}}}}
+
+\begin{methode}
+
+Pour départager deux branches, on compare les ensembles d'atomes sphère par sphère, en explorant d'abord la sous-branche de plus haut rang. Ici, ce sont les branches oxygénées.
+
+\end{methode}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Quelle est la polarité de la liaison C--Mg ? Où se trouve le site électrophile de la cétone ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les précautions découlent toutes du caractère très basique de l'organomagnésien, du caractère exothermique de l'addition et de la fragilité du produit en milieu acide.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\emph{Mécanisme} :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Le carbone \(\mathrm{C^{\delta-}}\) de \(\mathrm{CH_3{-}MgBr}\) (Mg est moins électronégatif que C) attaque le carbone du carbonyle, et le doublet π bascule sur l'oxygène, que Mg coordonne. On obtient un alcoolate de bromomagnésium.
+\item
+  L'hydrolyse acide protone l'alcoolate. On obtient l'alcool tertiaire, et les sels de magnésium se dissolvent.
+\end{enumerate}
+
+\emph{Précautions} :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{anhydre} : verrerie séchée, éther anhydre, atmosphère inerte ou garde à \(\mathrm{CaCl_2}\), car \(\mathrm{CH_3MgBr}+\mathrm{H_2O}\to\mathrm{CH_4}+\mathrm{Mg(OH)Br}\) ;
+\item
+  \textbf{ajout lent, à froid, sous agitation}, car l'addition est exothermique. L'éther est volatil et inflammable : pas de flamme ;
+\item
+  \textbf{hydrolyse à froid avec un acide dilué}, car un alcool tertiaire se déshydrate facilement en milieu acide et l'éther silylé craint l'acide.
+\end{itemize}
+
+\begin{piege}
+
+L'intermédiaire est un alcoolate, et l'alcool n'apparaît qu'après l'hydrolyse. La flèche part de la liaison C--Mg, pas du magnésium.
+
+\end{piege}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Consulter la banque de réactions : que fait l'ion fluorure sur un éther silylé ?
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+L'ion \(\mathrm{F^-}\) coupe la liaison O--Si (la liaison Si--F est très forte) et libère l'alcool primaire. L'éther benzylique, l'alcool tertiaire et l'alcène ne sont pas touchés.
+
+\equationajustee{\boxed{\mathbf I:\ \text{H avec }\mathrm{CH_2OTBDPS}\to\mathrm{CH_2OH}}}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Reprendre chaque étape suivante et se demander ce que serait devenu l'alcool primaire s'il était resté libre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer aussi les conditions de retrait des trois groupes protecteurs de la séquence.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+A → B est une \textbf{protection sélective et temporaire de l'alcool primaire}, le plus réactif. Sans elle :
+
+\begin{itemize}
+\tightlist
+\item
+  en B → C, il aurait pu former un acétal avec l'OH de C4 ;
+\item
+  en E → F, il aurait été benzylé en priorité ;
+\item
+  en F → G, il aurait été oxydé ;
+\item
+  en G → H, il aurait détruit l'organomagnésien par réaction acide-base.
+\end{itemize}
+
+Le TBDPS se retire par \(\mathrm{F^-}\), l'acétonide en milieu acide aqueux et l'éther benzylique par \(\mathrm{H_2}\), Pd/C : ces protections sont \textbf{orthogonales}, et l'on peut libérer chaque fonction au moment voulu. L'alcool primaire est rendu en I pour la suite de la synthèse du synthon 4.
+
+\begin{methode}
+
+Pour juger le rôle d'une étape de protection, on parcourt la séquence et l'on cite les réactions auxquelles la fonction libre n'aurait pas survécu.
+
+\end{methode}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Méthodes à retenir} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    lire un diagramme \(E\)-pH (n.o. vers le haut, hydroxylation vers la droite, \(C_T\) sur une frontière solide/dissous) ;
+  \item
+    calculer une constante par combinaison de réactions ;
+  \item
+    utiliser \(\Delta_rG^\circ=-n\mathcal F\Delta E^\circ\) puis \(-RT\ln K^\circ\) à la bonne température ;
+  \item
+    appliquer la loi de Faraday ;
+  \item
+    interpréter un titrage à réactions successives (palier = équilibre hétérogène, rupture = fin d'une réaction) et faire les bilans de matière avec dilution.
+  \end{itemize}
+\item
+  \textbf{En chimie organique} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    CIP en Fischer (inversion si H est vers l'avant) et départage à une sphère lointaine ;
+  \item
+    hémiacétalisation et hydrolyse d'acétal en catalyse acide ;
+  \item
+    Williamson (base puis \(\mathrm{S_N2}\)) ;
+  \item
+    n.o. d'un carbone ;
+  \item
+    addition d'un organomagnésien et ses précautions ;
+  \item
+    logique des groupes protecteurs orthogonaux (silyle / acétonide / benzyle).
+  \end{itemize}
+\item
+  \textbf{Prérequis à revoir} : VSEPR et lacunes électroniques, amphotérie, verrerie de précision, conformations du cyclohexane et anomères.
+\item
+  \textbf{Questions transposables} : le \(K_s\) lu sur une frontière, le procédé Bayer, la capacité d'une pile, le dosage d'un mélange acide fort + cation métallique précipitable, et la stéréochimie des oses, sont des classiques que l'on retrouve d'un concours à l'autre.
+\end{itemize}
+
+\end{document}

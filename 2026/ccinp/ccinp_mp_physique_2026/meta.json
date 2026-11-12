@@ -1,0 +1,38 @@
+{
+  "slug": "ccinp_mp_physique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 51,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q16d-onde-amortie.svg",
+      "question": "Q16",
+      "legende": "Allure de s(z, t) à t fixé : courbe pseudo-périodique, de pseudo-période spatiale 2π/a, entre les enveloppes ±S_o e^(−z/b), qui valent S_o/e en z = b"
+    },
+    {
+      "fichier": "figures/q21-bode-asymptotes.svg",
+      "question": "Q21",
+      "legende": "Gain du sismomètre recalculé avec f_0 = 10 Hz et Q = 100 : asymptotes +40 dB/décade et 0 dB sécantes en (f_0, 0 dB), pic à 20 log Q = 40 dB"
+    },
+    {
+      "fichier": "figures/q47-niveaux-homo-lumo.svg",
+      "question": "Q47",
+      "legende": "Puits infini de largeur a = 3 d_cc pour le but-1,3-diène : niveaux n = 1 et 2 occupés, transition HOMO (n = 2) vers LUMO (n = 3), ΔE = 5E_1"
+    },
+    {
+      "fichier": "figures/q49-difference-de-marche.svg",
+      "question": "Q49",
+      "legende": "Différence de marche en M : rayons parallèles d'inclinaison θ, plan d'onde passant par S_2 et supplément de chemin a sin θ du rayon issu de S_1"
+    },
+    {
+      "fichier": "figures/q51-defilement-franges.svg",
+      "question": "Q51",
+      "legende": "Franges avant et après la vidange de C_2 : même interfrange, ordre 0 translaté de x = 0 à x_0 côté C_1, ordre N au capteur"
+    }
+  ]
+}

@@ -1,0 +1,1853 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Centrale-Supélec TSI — Physique-chimie 1 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Centrale-Supélec TSI}
+\fancyhead[R]{\small Physique-chimie 1 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Centrale-Supélec TSI — Physique-chimie 1 2026\par}\medskip
+  {\large Centrale-Supélec · TSI · Physique-chimie 1 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} « Construction d'un bâtiment » : le sujet suit un édifice depuis l'étude du sol jusqu'au confort thermique des pièces. Il compte 52 questions en quatre parties \textbf{indépendantes}, avec des données propres à chaque partie. Durée 4 heures, calculatrice autorisée.
+
+\textbf{Découpage.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie A --- Pénétrométrie dynamique (Q1--Q10).} Mécanique du point et des systèmes : chute libre, choc mou (conservation de la quantité de mouvement), théorème de l'énergie cinétique pendant l'enfoncement. On établit la « formule des Hollandais » donnant la résistance du sol \(q_d\), puis on l'exploite sur un relevé de terrain pour choisir la profondeur des fondations. La Q8, soulignée, est la seule question à prise d'initiative du sujet.
+\item
+  \textbf{Partie B --- La chimie du béton (Q11--Q26).} Deux blocs indépendants. D'abord la thermochimie de la clinkérisation : \(\Delta_rH^\circ\), \(\Delta_rS^\circ\) et \(K^\circ\), bilan de matière en dioxyde de carbone, puis un bilan enthalpique sur une chambre de combustion au méthane (avec l'échauffement des fumées, diazote compris). Ensuite la lecture du diagramme potentiel-pH du fer : attribution des domaines, potentiels standard, passivation des armatures et risque lié à la carbonatation.
+\item
+  \textbf{Partie C --- Jauge à corde vibrante (Q27--Q38).} Symétries du champ magnétique et force de Laplace, ondes stationnaires sur une corde fixée à ses deux extrémités, loi de Hooke et petites déformations, sensibilité et limites d'un capteur, dilatation thermique.
+\item
+  \textbf{Partie D --- Un mur dans tous ses états (Q39--Q52).} Équation de la diffusion thermique, temps caractéristique, résistance thermique et association série. Puis un mur contenant un matériau à changement de phase (MCP) : modèle quasi stationnaire du front de fusion (\(x_0 \propto \sqrt t\)), puissances entrante et sortante, position limite du front, et une ligne de Python sur un tableau numpy.
+\end{itemize}
+
+\textbf{Notions du programme TSI mobilisées.} Théorème de l'énergie cinétique, quantité de mouvement ; loi de Hess, entropie standard, enthalpie libre standard de réaction et constante d'équilibre, quotient de réaction ; premier principe en monobare (\(Q = \Delta H\)) ; nombres d'oxydation, relation de Nernst, diagrammes E-pH ; symétries des distributions de courants, force de Laplace ; équation de d'Alembert et modes propres ; loi de Fourier, équation de diffusion, résistance thermique ; Python et numpy.
+
+\textbf{Difficulté et longueur.} Le sujet est long mais très progressif, et la plupart des questions sont classiques. Les questions les plus sélectives sont Q19 (bilan enthalpique complet), Q33 (hypothèse à poser soi-même), Q45 (bilan sur une couche qui fond) et Q50 (montrer l'existence d'une limite). Les nombreuses questions de commentaire (Q6, Q13, Q21, Q38, Q44, Q47, Q49, Q52) rapportent si l'on y met un argument chiffré.
+
+\textbf{Questions à ne pas laisser passer.} Q1--Q3, Q11, Q12, Q15, Q17, Q18, Q22--Q24, Q28--Q31, Q39--Q43 : ce sont des applications directes du cours.
+
+\textbf{Gestion du temps.} Environ 4,5 minutes par question en moyenne. Les parties étant indépendantes, on peut commencer par celle où l'on se sent le plus à l'aise. Le bloc E-pH (Q22--Q26) est rapide et indépendant de la thermochimie qui le précède.
+
+\hypertarget{partie-a-puxe9nuxe9tromuxe9trie-dynamique}{%
+\section{Partie A --- Pénétrométrie dynamique}\label{partie-a-puxe9nuxe9tromuxe9trie-dynamique}}
+
+On modélise un coup de mouton en trois temps : chute libre, choc mou, enfoncement freiné par le sol. Les outils sont la conservation de la quantité de mouvement pour le choc et le théorème de l'énergie cinétique pour la chute et l'enfoncement. La sous-partie II exploite la formule obtenue sur un relevé réel.
+
+\textbf{I --- La formule des Hollandais}
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Entre le lâcher et le choc, quelles forces s'exercent sur le mouton ? Lesquelles travaillent ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un théorème énergétique donne la norme de la vitesse ; pensez ensuite au caractère vectoriel demandé.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le mouton n'est soumis qu'à son poids (frottements de l'air négligés). Il part sans vitesse et descend de \(H\). Le théorème de l'énergie cinétique, dans le référentiel terrestre galiléen, donne \(\tfrac12MV^2 - 0 = MgH\). Le mouvement est vers le bas :
+
+\equationajustee{\boxed{\vec V = -\sqrt{2gH}\,\vec e_z}}
+
+de norme
+
+\equationajustee{\boxed{V = \sqrt{2\times9{,}8\times0{,}50} = 3{,}1\ \mathrm{m\cdot s^{-1}}}}
+
+\begin{piege}
+
+L'énoncé écrit \(\vec V\) : il attend un vecteur, donc un signe ou une direction, avec l'axe \((Oz)\) orienté vers le haut. La masse \(m\) de l'enclume n'intervient pas dans la chute.
+
+\end{piege}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+L'énoncé donne la grandeur conservée pendant le choc. Choisissez le système qui la conserve.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Après un choc parfaitement mou, combien de vitesses différentes y a-t-il ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Système \{mouton + enclume + tige\}, entre juste avant et juste après le choc. La quantité de mouvement totale est conservée. Avant le choc, seul le mouton bouge ; après, l'ensemble se déplace à la vitesse commune \(\vec v\) :
+
+\equationajustee{M\vec V = (M+m)\vec v}
+
+d'où
+
+\equationajustee{\boxed{\vec v = \frac{M}{M+m}\vec V = -\frac{M}{M+m}\sqrt{2gH}\,\vec e_z}}
+
+Numériquement, \(v = \tfrac{64}{88}\times3{,}13 = 2{,}3\ \mathrm{m\cdot s^{-1}}\), vers le bas.
+
+\begin{methode}
+
+Pendant un choc bref, les forces extérieures finies (poids, réaction du sol) ont un effet négligeable sur la quantité de mouvement : on conserve \(\vec p\), mais pas l'énergie cinétique, sauf si le choc est dit élastique.
+
+\end{methode}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Repérez bien la phase concernée : elle commence juste après le choc et finit à l'arrêt de la tige.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Le système de masse \(M+m\) passe de la vitesse \(v\) à zéro :
+
+\equationajustee{\begin{aligned}
+\Delta E_c &= -\frac12(M+m)v^2\\
+&= -\frac12(M+m)\frac{M^2}{(M+m)^2}\,2gH
+\end{aligned}}
+
+soit
+
+\equationajustee{\boxed{\Delta E_c = -\frac{M^2gH}{M+m} = -2{,}3\times10^{2}\ \mathrm{J}}}
+
+Sur les \(MgH = 314\) J fournis par la chute, seule la fraction \(M/(M+m) = 73\ \%\) reste disponible pour l'enfoncement ; le reste est dissipé dans le choc mou.
+
+\begin{piege}
+
+Ne pas confondre avec l'énergie cinétique perdue \emph{pendant le choc}, qui vaut \(\tfrac12MV^2 - \tfrac12(M+m)v^2 = MgH\,m/(M+m)\).
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Écrivez la force exercée par le sol sur la section terminale à partir d'une pression, puis son travail élémentaire.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La pression peut varier pendant l'enfoncement ; la définition de \(q_d\) comme pression \emph{moyenne} sert à sortir cette pression de l'intégrale.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Quand la pointe est enfoncée de \(\zeta\), le sol exerce \(\vec F = p(\zeta)S\,\vec e_z\), vers le haut, et la pointe se déplace de \(\mathrm{d}\vec r = -\mathrm{d}\zeta\,\vec e_z\). Donc
+
+\equationajustee{\begin{aligned}
+W &= \int_0^e\vec F\cdot\mathrm{d}\vec r\\
+&= -S\int_0^ep(\zeta)\,\mathrm{d}\zeta\\
+&= -Se\,\underbrace{\frac1e\int_0^ep(\zeta)\,\mathrm{d}\zeta}_{q_d}
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{W = -q_dSe}}
+
+Le signe moins traduit le caractère résistant de la force : elle est opposée au déplacement.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Appliquez le même théorème qu'en Q1, mais à un autre système et sur une autre phase.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Faites l'inventaire complet des forces qui travaillent pendant l'enfoncement : il y en a une que l'on oublie souvent, et une que l'énoncé demande de négliger.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Système \{mouton + enclume + tige\}, entre l'instant qui suit le choc et l'arrêt. Le poids travaille, \(W_P = +(M+m)ge\) (déplacement \(e\) vers le bas) ; la force du sol en pointe donne \(-q_dSe\) (Q4) ; les frottements latéraux sont négligés. Le théorème de l'énergie cinétique et Q3 donnent :
+
+\equationajustee{-\frac{M^2gH}{M+m} = (M+m)ge - q_dSe}
+
+soit
+
+\equationajustee{\boxed{q_d = \frac{(M+m)g}{S} + \frac{MgH}{Se}\,\frac{M}{M+m}}}
+
+\begin{piege}
+
+Le travail du poids porte sur le seul enfoncement \(e\), et non sur \(H+e\) : la chute a déjà été exploitée en Q1 et Q2, et l'énergie perdue au choc ne se retrouve pas ici.
+
+\end{piege}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Comparez les deux termes de l'expression de Q5. L'un dépend de \(e\), l'autre non.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour juger la légitimité de l'approximation, il faut chiffrer les deux termes avec les enfoncements réellement observés sur la figure 2.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+La formule des Hollandais néglige le terme statique (poids de l'équipage) devant le terme dynamique (énergie de la chute) :
+
+\equationajustee{\begin{aligned}{}&\frac{(M+m)g}{S}\ll\frac{MgH}{Se}\frac{M}{M+m}\\
+\iff\ &e\ll H\frac{M^2}{(M+m)^2} = 0{,}26\ \mathrm{m}.
+\end{aligned}}
+
+Numériquement, \((M+m)g/S = 0{,}43\) MPa, et le terme dynamique vaut \(1{,}14\times10^{5}/e\) (Pa, \(e\) en m). Les enfoncements observés vont de 5 cm (2 coups pour 10 cm) à 2 mm (50 coups) : la condition est toujours vérifiée. L'erreur relative, rapportée à \(q_d\) complet, vaut environ 16 \% dans la terre meuble, 2,5 \% dans les remblais et 1 \% au seuil de 40 MPa.
+
+\textbf{L'approximation est légitime dans les couches où l'on envisage de fonder.} Elle sous-estime \(q_d\), ce qui va dans le sens de la sécurité.
+
+\begin{jury}
+
+Une question « est-ce légitime ? » attend une comparaison chiffrée. Affirmer qu'un terme est négligeable sans ordre de grandeur ne suffit pas.
+
+\end{jury}
+
+\textbf{II --- Analyse d'un sol}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+La terre meuble est la couche de surface, la plus facile à traverser. Cherchez la profondeur où le nombre de coups change brusquement.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+De 0 à 0,5 m, il faut 2 à 5 coups pour 10 cm ; à 0,6 m, il en faut 17. \textbf{L'épaisseur de la terre meuble est d'environ 0,5 m}, à ±0,05 m près, puisque le pas de mesure est de 10 cm.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Trois étapes à enchaîner soi-même : lire un nombre de coups représentatif de la couche, le convertir en grandeur de la formule, appliquer la formule.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le relevé donne un nombre de coups pour 10 cm, alors que la formule fait intervenir l'enfoncement \(e\) par coup.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Un ordre de grandeur se donne avec un encadrement : utilisez les valeurs extrêmes lues dans la couche.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\emph{Lecture.} Après la terre meuble, la couche de remblais s'étend d'environ 0,5 m à 1,75 m, avec 10 à 20 coups pour 10 cm. On retient \(N\approx15\).
+
+\emph{Enfoncement par coup.} \(e = 0{,}10/N = 6{,}7\times10^{-3}\) m.
+
+\emph{Formule des Hollandais.}
+
+\equationajustee{q_d = \frac{MgH}{Se}\frac{M}{M+m} = \frac{64\times9{,}8\times0{,}50}{20\times10^{-4}\times6{,}7\times10^{-3}}\times\frac{64}{88}\approx1{,}7\times10^{7}\ \mathrm{Pa}.}
+
+Pour \(N = 10\) et \(N = 20\), on trouve 11 et 23 MPa.
+
+\equationajustee{\boxed{q_d\sim10^{7}\ \mathrm{Pa}\ \ (\text{environ } 15 \text{ \text{à} } 20\ \mathrm{MPa})}}
+
+\begin{methode}
+
+Pour une question à prise d'initiative, on annonce la démarche, on dit d'où vient chaque nombre lu, et l'on encadre le résultat. Le correcteur évalue le chemin autant que la valeur.
+
+\end{methode}
+
+\begin{piege}
+
+\(S = 20\ \mathrm{cm^2} = 20\times10^{-4}\ \mathrm{m^2}\). Une erreur d'un facteur 100 sur \(S\) fausse les trois questions suivantes.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Comparez au critère donné en début de partie.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\(q_d\approx17\ \mathrm{MPa} < 40\) MPa, soit moins de la moitié du seuil. De plus, des remblais de gravats forment un matériau rapporté, hétérogène et susceptible de tassement. \textbf{Non, la base des fondations ne peut pas être placée dans les remblais.}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Inversez le raisonnement : quel nombre de coups pour 10 cm correspond à 40 MPa ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Cherchez ensuite sur la figure les profondeurs où ce nombre est dépassé, en restant prudent sur la portée d'un seul point de mesure.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Le seuil correspond à
+
+\equationajustee{e_s = \frac{MgH}{S\,q_d}\frac{M}{M+m} = 2{,}9\ \mathrm{mm},}
+
+soit \(N_s\approx35\) coups pour 10 cm (chaque coup par 10 cm « vaut » environ 1,14 MPa). Seul le dernier point dépasse ce seuil : 50 coups à 3,0 m, soit \(e = 2{,}0\) mm et \(q_d\approx57\) MPa \(> 40\) MPa. Juste au-dessus (2,3 à 2,9 m), \(q_d\) reste entre 11 et 26 MPa.
+
+\textbf{Oui : vers 3 m de profondeur, dans la roche.} La conclusion repose sur un point unique, obtenu au refus de l'appareil : d'autres sondages seraient nécessaires pour confirmer l'épaisseur et la continuité de la roche.
+
+\hypertarget{partie-b-la-chimie-du-buxe9ton}{%
+\section{Partie B --- La chimie du béton}\label{partie-b-la-chimie-du-buxe9ton}}
+
+La sous-partie I est une suite de calculs de thermochimie, de l'enthalpie de réaction jusqu'à l'empreinte carbone du béton. Les erreurs s'y propagent, mais la valeur imposée en Q16 sert de point de contrôle. La sous-partie II est une lecture classique du diagramme E-pH du fer.
+
+\textbf{I --- Empreinte carbone de la fabrication du ciment}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Combinez les entropies molaires standard avec les coefficients stœchiométriques algébriques. Que dit l'énoncé sur la dépendance en température ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour commenter le signe, comptez les moles de gaz de chaque côté.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\equationajustee{\Delta_rS^\circ = 3(213{,}6) + 130{,}5 - 3(92{,}3) - 41{,}3}
+
+soit
+
+\equationajustee{\boxed{\Delta_rS^\circ(1700\ \mathrm{K}) = 4{,}53\times10^{2}\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}>0}}
+
+Les données étant supposées indépendantes de \(T\), la valeur à 298 K vaut à 1700 K. Le signe est positif parce que la réaction crée 3 moles de gaz à partir de solides seulement (\(\Delta n_{\text{gaz}} = +3\)) : le désordre augmente fortement.
+
+\begin{methode}
+
+Le signe de \(\Delta_rS^\circ\) suit en général celui de \(\Delta n_{\text{gaz}}\), à raison d'environ \(+150\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}\) par mole de gaz créée. C'est un contrôle rapide du calcul.
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Loi de Hess. Attention aux signes des enthalpies de formation, toutes négatives.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\equationajustee{\Delta_rH^\circ = 3(-393) + (-2930) - 3(-1206) - (-910)}
+
+soit
+
+\equationajustee{\boxed{\Delta_rH^\circ = +419\ \mathrm{kJ\cdot mol^{-1}}>0}}
+
+\textbf{La réaction est endothermique} : la décarbonatation du calcaire consomme de l'énergie, qu'il faut apporter par le four.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Étudiez le signe de \(\Delta_rG^\circ(T) = \Delta_rH^\circ - T\Delta_rS^\circ\), ou le sens de variation de \(\ln K^\circ\) avec \(T\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+« Commenter le choix industriel » : la thermodynamique ne dit rien de la vitesse de réaction.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\(\Delta_rG^\circ(T)\) décroît avec \(T\) puisque \(\Delta_rS^\circ>0\). De même,
+
+\equationajustee{\begin{aligned}
+\ln K^\circ&=-\frac{\Delta_rG^\circ}{RT}\\
+&=-\frac{\Delta_rH^\circ}{RT}+\frac{\Delta_rS^\circ}{R}
+\end{aligned}}
+
+Ce logarithme croît avec \(T\), puisque \(\Delta_rH^\circ>0\) et que les grandeurs standard ne dépendent pas de \(T\) : \(K^\circ\) croît avec \(T\).
+
+On a \(K^\circ > 1\) au-delà de
+
+\equationajustee{\begin{aligned}
+T_i &= \frac{\Delta_rH^\circ}{\Delta_rS^\circ}\\
+&= \frac{419\times10^{3}}{453}\\
+&= 9{,}2\times10^{2}\ \mathrm{K}.
+\end{aligned}}
+
+\textbf{Oui, la haute température favorise la réaction.} À 1700 K, on est très au-dessus de \(T_i\). Ce choix est aussi dicté par la cinétique : une réaction entre solides est lente, limitée par la diffusion dans les phases condensées. Une température élevée, qui provoque une fusion partielle du mélange, la rend suffisamment rapide.
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Calculez \(\Delta_rG^\circ(1700\ \mathrm{K})\), puis \(K^\circ\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour conclure au caractère total, écrivez \(K^\circ\) en fonction de la seule espèce gazeuse, et comparez la pression d'équilibre correspondante à celle qui règne dans le four.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\equationajustee{\Delta_rG^\circ(1700) = 419\times10^{3} - 1700\times453{,}1 = -3{,}51\times10^{5}\ \mathrm{J\cdot mol^{-1}}}
+
+puis
+
+\equationajustee{K^\circ = \exp\!\left(\frac{3{,}51\times10^{5}}{8{,}31\times1700}\right) = {\mathrm{e}}^{24{,}9}}
+
+soit
+
+\equationajustee{\boxed{K^\circ(1700\ \mathrm{K})\approx6\times10^{10}}}
+
+Les solides purs ont une activité égale à 1, donc \(K^\circ = (P_{\mathrm{CO_2}}/P^\circ)^3\). L'équilibre exigerait \(P_{\mathrm{CO_2}}\approx(6\times10^{10})^{1/3}\approx4\times10^{3}\) bar. Dans le four, à la pression atmosphérique, \(P_{\mathrm{CO_2}}\leq1\) bar : le quotient de réaction reste toujours très inférieur à \(K^\circ\), et la réaction progresse dans le sens direct jusqu'à épuisement d'un réactif. \textbf{Elle est totale.}
+
+\begin{methode}
+
+Quand les seules espèces gazeuses sont des produits, comparer la pression d'équilibre à la pression réellement accessible est plus convaincant que le seul critère « \(K^\circ\gg1\) ».
+
+\end{methode}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Que représente « une tonne de ciment » en quantité de matière, avec le modèle de l'énoncé ? Utilisez ensuite la stœchiométrie.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+On a \(M(\mathrm{Ca_3SiO_5}) = 3\times40{,}0 + 28{,}0 + 5\times16{,}0 = 228\ \mathrm{g\cdot mol^{-1}}\), d'où l'avancement \(\xi = 10^{6}/228 = 4{,}39\times10^{3}\) mol. Il se forme \(3\xi = 1{,}32\times10^{4}\) mol de \(\mathrm{CO_2}\), de masse molaire \(44{,}0\ \mathrm{g\cdot mol^{-1}}\) :
+
+\equationajustee{\boxed{m(\mathrm{CO_2}) = 5{,}8\times10^{2}\ \mathrm{kg}\ \text{par tonne de ciment}}}
+
+\begin{piege}
+
+La tonne porte sur le produit \(\mathrm{Ca_3SiO_5}\), pas sur le calcaire.
+
+\end{piege}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Quel transfert thermique reçoit un système fermé lors d'une transformation monobare ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le résultat à retrouver est donné : il vous indique quelles contributions compter.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Pour une transformation monobare ne faisant intervenir que le travail des forces de pression, le premier principe donne \(Q = \Delta H\). Les réactifs étant supposés déjà à 1700 K (aucune capacité thermique de solide n'est fournie), seule l'enthalpie de réaction intervient :
+
+\equationajustee{Q_{1t} = \xi\,\Delta_rH^\circ = 4{,}39\times10^{3}\times419\times10^{3}}
+
+soit
+
+\equationajustee{\boxed{Q_{1t} = 1{,}84\times10^{9}\ \mathrm{J}}}
+
+\begin{jury}
+
+Dans un « montrer que », le résultat est connu : seule la justification est évaluée. Ici, il faut citer le caractère monobare pour écrire \(Q = \Delta H\), et énoncer l'hypothèse sur la température des réactifs.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Équilibrez successivement le carbone, l'hydrogène, puis l'oxygène, en respectant les états physiques indiqués.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\equationajustee{\boxed{\mathrm{CH_4(g)} + 2\,\mathrm{O_2(g)} = \mathrm{CO_2(g)} + 2\,\mathrm{H_2O(g)}}}
+
+L'eau est gazeuse, comme l'impose l'énoncé (et seul \(\Delta_fH^\circ(\mathrm{H_2O(g)})\) est fourni).
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Loi de Hess ; quelle est l'enthalpie standard de formation d'un corps simple dans son état de référence ?
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\equationajustee{\Delta_rH^\circ_{\text{comb}} = -393 + 2(-242) - (-75) - 2\times0}
+
+soit
+
+\equationajustee{\boxed{\Delta_rH^\circ_{\text{comb}} = -802\ \mathrm{kJ\cdot mol^{-1}}}}
+
+\textbf{La combustion est très exothermique} : une mole de méthane libère près de deux fois l'énergie consommée par une mole de clinkérisation.
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Faites un bilan d'enthalpie sur la chambre de combustion : quels gaz entrent, à quelle température, et quels gaz sortent, à quelle température ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'enthalpie est une fonction d'état : décomposez en une réaction à 298 K suivie d'un échauffement des gaz sortants. Pourquoi le tableau 3 donne-t-il la capacité thermique d'un gaz qui ne réagit pas ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Le transfert thermique de la chambre vers le four est égal à \(Q_{1t}\) ; faites attention à son signe vu de la chambre.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Soit \(n\) la quantité de méthane. L'air stœchiométrique apporte \(2n\) mol de \(\mathrm{O_2}\). Avec 80 \% de \(\mathrm{N_2}\) pour 20 \% de \(\mathrm{O_2}\), il apporte aussi \(8n\) mol de diazote inerte.
+
+Tout entre à 298 K ; \(\mathrm{CO_2}\), \(\mathrm{H_2O}\) et \(\mathrm{N_2}\) sortent à 1700 K. La transformation est monobare, et la chambre cède \(Q_{1t}\) au four (ensemble calorifugé) : \(\Delta H = -Q_{1t}\).
+
+On choisit un chemin fictif : réaction totale à 298 K, puis échauffement des gaz sortants jusqu'à 1700 K.
+
+\equationajustee{\Delta H = n\Big[\Delta_rH^\circ_{\text{comb}} + \big(C_p(\mathrm{CO_2}) + 2C_p(\mathrm{H_2O}) + 8C_p(\mathrm{N_2})\big)(1700 - 298)\Big].}
+
+On a \(\Sigma C_p = 37{,}1 + 67{,}2 + 232{,}8 = 337{,}1\ \mathrm{J\cdot K^{-1}}\) par mole de \(\mathrm{CH_4}\), d'où \(337{,}1\times1402 = 4{,}73\times10^{5}\) J, et
+
+\equationajustee{\begin{aligned}
+\Delta H &= n(-8{,}02 + 4{,}73)\times10^{5}\\
+&= -3{,}29\times10^{5}\,n\\
+&= -Q_{1t},
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{n(\mathrm{CH_4}) = \frac{1{,}84\times10^{9}}{3{,}29\times10^{5}} = 5{,}6\times10^{3}\ \mathrm{mol}\ \ (89\ \mathrm{kg})}}
+
+Seulement 41 \% de l'énergie de combustion chauffe le four ; le reste part avec les fumées.
+
+\begin{piege}
+
+Oublier le diazote, qui représente 69 \% de la capacité thermique des fumées, donne \(n\approx2{,}8\times10^{3}\) mol. Oublier l'échauffement des fumées donne \(n = Q_{1t}/802\ \mathrm{kJ} = 2{,}3\times10^{3}\) mol.
+
+\end{piege}
+
+\begin{methode}
+
+Pour un bilan enthalpique avec réaction et changement de température, on construit un cycle : réaction à la température d'entrée, puis échauffement des produits (et des inertes) jusqu'à la température de sortie. Le résultat ne dépend pas du chemin choisi.
+
+\end{methode}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Il y a deux sources de \(\mathrm{CO_2}\). Additionnez-les.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+La combustion libère une mole de \(\mathrm{CO_2}\) par mole de méthane, soit \(5{,}6\times10^{3}\) mol (246 kg). Avec Q15 :
+
+\equationajustee{\boxed{m_{\text{tot}}(\mathrm{CO_2})\approx5{,}8\times10^{2} + 2{,}5\times10^{2}\approx8{,}2\times10^{2}\ \mathrm{kg}\ \text{par tonne de ciment}}}
+
+Environ 70 \% de ces émissions proviennent de la réaction elle-même, 30 \% du combustible.
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Ramenez votre résultat au mètre cube de béton avec la composition donnée au début de la sous-partie.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparez, puis identifiez les hypothèses du modèle qui majorent ou minorent l'estimation.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Un mètre cube de béton contient 300 kg de ciment, soit \(0{,}300\times825\approx2{,}5\times10^{2}\) kg de \(\mathrm{CO_2}\), contre environ 200 kg estimés par la profession. \textbf{Le modèle donne le bon ordre de grandeur et surestime d'environ 25 \%.}
+
+Les causes plausibles de cette surestimation :
+
+\begin{itemize}
+\tightlist
+\item
+  les fumées sont rejetées à 1700 K. Les cimenteries récupèrent cette chaleur ; à la limite où les fumées ressortiraient à 298 K, il ne faudrait que \(2{,}3\times10^{3}\) mol de méthane, soit environ 205 kg de \(\mathrm{CO_2}\) par \(\mathrm{m^3}\) ;
+\item
+  un ciment réel n'est pas du clinker pur : il contient des ajouts qui ne libèrent pas de \(\mathrm{CO_2}\) ;
+\item
+  certains combustibles sont moins carbonés que le méthane.
+\end{itemize}
+
+À l'inverse, le modèle ignore le préchauffage de la farine, le transport et les granulats. Dans tous les cas, la décarbonatation (environ 70 \%) reste incompressible : elle est inscrite dans l'équation de réaction.
+
+\begin{jury}
+
+« Commenter » un écart demande de l'expliquer par des hypothèses identifiées, pas seulement de le constater.
+
+\end{jury}
+
+\textbf{II --- Corrosion d'un béton armé}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Nombre d'oxydation de l'oxygène dans un oxyde, et électroneutralité.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\(2x + 3\times(-2) = 0\), d'où :
+
+\equationajustee{\boxed{n.o.(\mathrm{Fe}) = +\mathrm{III}}}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Classez les espèces par nombre d'oxydation : comment celui-ci évolue-t-il avec le potentiel ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux espèces de même nombre d'oxydation sont séparées par une frontière verticale. De quel côté se trouve la forme dissoute ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Par nombre d'oxydation croissant, donc de bas en haut, on trouve \(\mathrm{Fe}\) (0) puis \(\mathrm{Fe^{2+}}\) (+II). Viennent ensuite les espèces +III, \(\mathrm{Fe^{3+}}\) et \(\mathrm{Fe_2O_3}\).
+
+Les deux espèces +III sont séparées par la frontière verticale à pH ≈ 1,8 (précipitation \(2\mathrm{Fe^{3+}} + 3\mathrm{H_2O} = \mathrm{Fe_2O_3} + 6\mathrm{H^+}\)) ; l'ion libre est du côté acide.
+
+\equationajustee{\boxed{\begin{aligned}
+(A) &= \mathrm{Fe^{3+}}\\
+(B) &= \mathrm{Fe_2O_3(s)}\\
+(C) &= \mathrm{Fe^{2+}}\\
+(D) &= \mathrm{Fe(s)}
+\end{aligned}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-diagramme-e-ph-fer.pdf}
+\caption*{Figure 1 --- Diagramme E-pH du fer : attribution des domaines (A) à (D),
+bande de pH du béton sain (12 à 13) et effet de la carbonatation}
+\end{figure}
+
+Les pentes confirment cette attribution. La frontière (B)/(C) a une pente de \(-0{,}18\) V/pH, ce qui correspond à \(\mathrm{Fe_2O_3} + 6\mathrm{H^+} + 2\mathrm{e^-} = 2\mathrm{Fe^{2+}} + 3\mathrm{H_2O}\) (pente \(-0{,}06\times6/2\)). La frontière (B)/(D) a une pente de \(-0{,}06\) V/pH, ce qui correspond à \(\mathrm{Fe_2O_3} + 6\mathrm{H^+} + 6\mathrm{e^-} = 2\mathrm{Fe} + 3\mathrm{H_2O}\).
+
+\begin{piege}
+
+La hauteur d'un domaine dans le diagramme traduit le degré d'oxydation, pas l'état physique : \(\mathrm{Fe_2O_3}\) est en haut à droite, pas en bas.
+
+\end{piege}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Écrivez la relation de Nernst sur chaque frontière horizontale.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les conventions de tracé ne sont pas les mêmes pour une frontière entre deux espèces dissoutes et pour une frontière entre un solide et une espèce dissoute.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\emph{\(\mathrm{Fe^{3+}/Fe^{2+}}\).} Sur la frontière (A)/(C), à 0,77 V, les concentrations sont égales, donc le terme logarithmique est nul :
+
+\equationajustee{\boxed{E^\circ(\mathrm{Fe^{3+}/Fe^{2+}}) = 0{,}77\ \mathrm{V}}}
+
+\emph{\(\mathrm{Fe^{2+}/Fe}\).} La frontière (C)/(D) est à \(-0{,}62\) V. On y a \(E = E^\circ + 0{,}03\log[\mathrm{Fe^{2+}}]\) avec \([\mathrm{Fe^{2+}}] = c_t = 10^{-6}\ \mathrm{mol\cdot L^{-1}}\) :
+
+\equationajustee{-0{,}62 = E^\circ - 0{,}18}
+
+d'où
+
+\equationajustee{\boxed{E^\circ(\mathrm{Fe^{2+}/Fe}) = -0{,}44\ \mathrm{V}}}
+
+\begin{piege}
+
+Lire \(-0{,}62\) V comme potentiel standard revient à oublier le terme \(0{,}03\log c_t\). Les valeurs tabulées (0,77 V et \(-0{,}44\) V) servent de contrôle.
+
+\end{piege}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+À pH 12--13, le domaine du fer et celui de l'eau ont-ils une partie commune ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+S'il y a réaction, quel est son produit ? Est-il soluble ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Au-delà de pH ≈ 9,5, la frontière \(\mathrm{Fe_2O_3/Fe}\) passe sous la droite \(\mathrm{H^+/H_2}\). À pH 12, elle est à \(-0{,}77\) V contre \(-0{,}72\) V pour l'eau.
+
+Les domaines du fer et de l'eau sont disjoints : l'eau, et plus encore le dioxygène dissous, oxyde le fer, par exemple selon
+
+\equationajustee{2\mathrm{Fe} + 3\mathrm{H_2O}\to\mathrm{Fe_2O_3} + 3\mathrm{H_2}}
+
+Mais le produit est un oxyde \textbf{solide} qui forme une couche compacte et adhérente, séparant le métal de la solution : c'est la passivation.
+
+\textbf{Oui, l'eau agit sur le fer, mais l'acier se passive : la structure n'est pas fragilisée.} C'est le pH élevé du béton qui protège les armatures.
+
+\begin{methode}
+
+Corrosion, passivation, immunité : on compare le domaine du métal à celui de l'oxydant, puis on regarde si le produit d'oxydation est soluble (corrosion) ou solide (passivation).
+
+\end{methode}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Suivez sur le diagramme ce que devient le produit d'oxydation du fer quand le pH diminue.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Sous pH ≈ 9,5, le domaine du fer devient contigu à celui de \(\mathrm{Fe^{2+}}\) : l'oxydation produit alors un ion soluble, qui ne protège plus le métal. L'acier se corrode (dépassivation). La section des armatures diminue, donc la résistance à la traction de l'ouvrage aussi. Les produits de corrosion, plus volumineux que le métal, mettent le béton d'enrobage en traction, ce qui le fissure et ouvre de nouveaux chemins à l'eau : le processus s'auto-entretient.
+
+\hypertarget{partie-c-jauge-de-contrainte-uxe0-corde-vibrante}{%
+\section{Partie C --- Jauge de contrainte à corde vibrante}\label{partie-c-jauge-de-contrainte-uxe0-corde-vibrante}}
+
+La sous-partie I établit les fréquences propres d'une corde fixée à ses deux extrémités et en déduit la tension du fil. La sous-partie II relie la fréquence à la déformation (loi de Hooke) et discute la sensibilité et les limites du capteur.
+
+\textbf{I --- Modes propres de vibration}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Cherchez les plans de symétrie ou d'antisymétrie de la distribution de courant passant par \(O\). À quels plans le champ magnétique appartient-il ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le fil est parcouru par un courant induit : quelle force subit un conducteur parcouru par un courant dans un champ magnétique ?
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+Les spires sont circulaires, d'axe \((Oy)\), et \(O\) est sur cet axe. Tout plan contenant \((Oy)\) est un plan d'antisymétrie des courants (orthoradiaux). Le champ magnétique est contenu dans tout plan d'antisymétrie des courants, donc dans leur intersection :
+
+\equationajustee{\boxed{\vec B(O) = B\,\vec e_y}}
+
+Le fil, selon \((Ox)\), est parcouru par le courant induit \(i\) et subit la force de Laplace :
+
+\equationajustee{\mathrm{d}\vec F = i\,\mathrm{d}x\,\vec e_x\wedge B\vec e_y = iB\,\mathrm{d}x\,\vec e_z}
+
+\textbf{Cette force de Laplace est perpendiculaire au fil et à \(\vec B\) : elle est transversale.} Son sens alterne avec le courant, ce qui fait vibrer le fil transversalement.
+
+\begin{piege}
+
+\(\vec B\) appartient aux plans d'\textbf{antisymétrie} des courants, et il est orthogonal aux plans de symétrie. Inverser les deux donnerait un champ perpendiculaire à l'axe de la bobine.
+
+\end{piege}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Comparez l'équation fournie à l'équation de d'Alembert.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+L'équation s'écrit \(\partial_t^2\xi = c^2\partial_x^2\xi\) avec \(c^2 = 4T/(\rho\pi d^2)\). En dimensions, une force divisée par (masse volumique × surface) donne \(\dfrac{\mathrm{M\,L\,T^{-2}}}{\mathrm{M\,L^{-3}\,L^{2}}} = \mathrm{L^2\,T^{-2}}\).
+
+\equationajustee{\boxed{c\ \text{est une vitesse, en } \mathrm{m\cdot s^{-1}}}}
+
+C'est la célérité des ondes transversales sur le fil.
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Injectez la forme proposée dans l'équation d'onde.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+On a \(\partial_t^2s = -\omega^2s\) et \(\partial_x^2s = -k^2s\), donc \(\omega^2 = c^2k^2\) pour une solution non nulle :
+
+\equationajustee{\boxed{k = \frac{\omega}{c}}\quad(k>0 \text{ par convention}).}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Que vaut le déplacement aux coupelles, à tout instant ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vous obtenez deux conditions sur la fonction sinus. Leur différence quantifie \(k\), leur somme fixe \(\psi\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour la forme générale, utilisez une propriété de l'équation d'onde qui permet de combiner des solutions.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+Les conditions aux limites s'écrivent \(\xi(\pm L/2,t) = 0\) pour tout \(t\). Pour \(s\), cela impose
+
+\equationajustee{\begin{aligned}
+\sin(kL/2 + \psi) &= 0\\
+\sin(-kL/2 + \psi) &= 0
+\end{aligned}}
+
+soit
+
+\equationajustee{\begin{aligned}
+kL/2 + \psi &= n_1\pi\\
+-kL/2 + \psi &= n_2\pi
+\end{aligned}}
+
+Par différence, \(kL = p\pi\) avec \(p\in\mathbb N^*\) (\(p = 0\) donnerait une solution nulle). Par somme, \(\psi = p\pi/2\) (modulo \(\pi\)).
+
+\equationajustee{\boxed{\begin{aligned}
+\omega_p &= \frac{p\pi c}{L}\\
+f_p &= \frac{pc}{2L}
+\end{aligned}}}
+
+avec \(p\in\mathbb N^*\).
+
+L'équation étant linéaire, le régime libre est une superposition de modes propres :
+
+\equationajustee{\boxed{\xi(x,t) = \sum_{p\geq1}A_p\cos(\omega_pt + \varphi_p)\sin\!\left(\frac{p\pi}{L}\Big(x + \frac L2\Big)\right)}}
+
+Les amplitudes \(A_p\) et les phases \(\varphi_p\) sont fixées par les conditions initiales. Le mode \(p\) présente \(p\) ventres et \(p-1\) nœuds intérieurs.
+
+\begin{methode}
+
+Corde fixée à ses deux bouts : un nombre entier de demi-longueurs d'onde tient sur la longueur, \(L = p\lambda/2\). C'est un moyen rapide de retrouver \(f_p = pc/(2L)\).
+
+\end{methode}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Le fondamental correspond au plus petit \(p\). Inversez ensuite la définition de \(c\).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\equationajustee{\boxed{\begin{aligned}
+c &= 2Lf_1 = 2\times0{,}150\times750\\
+&= 2{,}25\times10^{2}\ \mathrm{m\cdot s^{-1}}
+\end{aligned}}}
+
+La tension s'en déduit :
+
+\equationajustee{T = \frac{\pi\rho d^2c^2}{4} = \frac{\pi\times7{,}80\times10^{3}\times(0{,}75\times10^{-3})^2\times225^2}{4}}
+
+soit
+
+\equationajustee{\boxed{T\approx1{,}7\times10^{2}\ \mathrm{N}}}
+
+Ordre de grandeur : c'est le poids d'environ 18 kg, et la contrainte dans l'acier vaut environ 390 MPa.
+
+\textbf{II --- Un fil sous contrainte}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+La loi de Hooke donne \(\varepsilon_0\) à partir de la tension calculée en Q31.
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(\varepsilon_0\) est défini par rapport à \(L_0\), mais la réponse est demandée en fonction de \(L\) : utilisez la formule de développement fournie.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\equationajustee{\varepsilon_0 = \frac{4T}{E\pi d^2} = \frac{\rho c^2}{E}}
+
+soit
+
+\equationajustee{\boxed{\varepsilon_0\approx1{,}8\times10^{-3}}}
+
+On a \(\Delta L = \varepsilon_0L_0\) et \(L_0 = L(1+\varepsilon_0)^{-1}\approx L(1-\varepsilon_0)\), donc à l'ordre 1 :
+
+\equationajustee{\boxed{\Delta L\approx\varepsilon_0L = 2{,}7\times10^{-4}\ \mathrm{m} = 0{,}27\ \mathrm{mm}}}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Aucune donnée ne relie directement le diamètre à la longueur. Quelle hypothèse simple sur la matière du fil permet de faire ce lien ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Avec cette hypothèse, exprimez \(d/d_0\) comme une puissance de \((1+\varepsilon_0)\) et développez.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+On suppose que la masse et la masse volumique du fil ne changent pas, c'est-à-dire que le volume est conservé. Alors \(\dfrac{\pi d^2}{4}L = \dfrac{\pi d_0^2}{4}L_0\), donc \(d = d_0(1+\varepsilon_0)^{-1/2}\approx d_0(1-\varepsilon_0/2)\), et à l'ordre 1 :
+
+\equationajustee{\boxed{\Delta d\approx-\frac{\varepsilon_0}{2}d = -6{,}7\times10^{-7}\ \mathrm{m} = -0{,}67\ \mu\mathrm{m}}}
+
+Le fil s'amincit en s'allongeant, mais de moins d'un millième en valeur relative : c'est négligeable, ce qui justifie de garder \(d\) constant dans la suite.
+
+\begin{jury}
+
+Quand l'énoncé ne fournit pas toutes les données, l'hypothèse ajoutée doit être écrite explicitement, puis exploitée.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Suivez la chaîne déformation → tension → célérité → fréquence, avec la déformation totale.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Simplifiez : une grandeur géométrique disparaît.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+On a \(T' = E\dfrac{\pi d^2}{4}(\varepsilon_0 + \Delta\varepsilon)\), avec \(L\) et \(d\) inchangés. Donc
+
+\equationajustee{c' = \frac2d\sqrt{\frac{T'}{\pi\rho}} = \sqrt{\frac{E(\varepsilon_0+\Delta\varepsilon)}{\rho}}}
+
+et
+
+\equationajustee{\boxed{f'_1 = \frac{1}{2L}\sqrt{\frac{E(\varepsilon_0 + \Delta\varepsilon)}{\rho}} = f_1\sqrt{1 + \frac{\Delta\varepsilon}{\varepsilon_0}}}}
+
+La fréquence ne dépend pas du diamètre. Pour \(\Delta\varepsilon = 0\), on retrouve 750 Hz.
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Quel est le signe de \(\Delta\varepsilon\) dans chaque cas, sachant que le fil se déforme avec le béton ?
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\(f'_1\) est croissante en \(\Delta\varepsilon\). En compression, le fil se raccourcit et se détend (\(\Delta\varepsilon<0\)) : \textbf{la fréquence diminue}. En traction, le fil est davantage tendu (\(\Delta\varepsilon>0\)) : \textbf{la fréquence augmente}, comme une corde de guitare que l'on tend.
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Appliquez Q34 avec la déformation maximale en traction, puis comparez l'écart de fréquence à la précision de mesure annoncée.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\equationajustee{f'_1 = 750\sqrt{1 + \frac{2{,}0\times10^{-4}}{1{,}79\times10^{-3}}}}
+
+soit
+
+\equationajustee{\boxed{f'_1\approx791\ \mathrm{Hz}}}
+
+L'écart de 41 Hz vaut 41 fois la précision de 1 Hz : \textbf{la variation est largement mesurable}. On peut en déduire la résolution en déformation : \(\delta(\Delta\varepsilon) = 2\varepsilon_0\,\delta f/f_1\approx5\times10^{-6}\).
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Un fil peut-il supporter une compression ? Que devient sa tension quand le béton se raccourcit beaucoup ?
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+Le fil doit rester tendu : \(T'>0\), soit \(\varepsilon_0 + \Delta\varepsilon>0\). Au-delà, il devient mou et ne vibre plus de façon exploitable.
+
+\equationajustee{\boxed{|\Delta\varepsilon|_{\max} = \varepsilon_0\approx1{,}8\times10^{-3} = 0{,}18\ \%}}
+
+C'est environ la moitié des 0,35 \% que supporte le béton : la jauge sature avant le béton. Pour couvrir toute la plage, il faudrait une précontrainte deux fois plus forte (\(\varepsilon_0\geq3{,}5\times10^{-3}\), \(f_1\geq1{,}05\) kHz), donc une contrainte d'environ 770 MPa dans l'acier.
+
+\begin{piege}
+
+La limite ne vient pas du béton mais du capteur : répondre « 0,35 \% » ne tient pas compte du fil.
+
+\end{piege}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Chiffrez la déformation parasite d'origine thermique pour un écart de température réaliste, et comparez-la aux déformations à mesurer.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour corriger, il faut connaître l'effet thermique seul : comment l'obtenir ?
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+Une variation \(\Delta\theta\) change la longueur à vide du fil, ce qui fausse \(\varepsilon\) de \(\alpha\Delta\theta\). Pour \(\Delta\theta = 10\) K, on obtient \(1{,}2\times10^{-4}\), soit 60 \% de la déformation maximale du béton en traction. En fréquence, cela fait environ \(f_1\alpha\Delta\theta/(2\varepsilon_0)\approx25\) Hz, très au-dessus de la résolution. \textbf{Il faut en tenir compte.}
+
+Deux solutions :
+
+\begin{itemize}
+\tightlist
+\item
+  intégrer un capteur de température (thermistance) à la jauge et corriger la déformation calculée ;
+\item
+  placer une jauge de compensation, identique mais libre de contrainte mécanique, à la même température, et retrancher sa mesure.
+\end{itemize}
+
+Le béton se dilatant aussi, avec un coefficient voisin, l'effet est en partie compensé, mais pas exactement.
+
+\hypertarget{partie-d-un-mur-dans-tous-ses-uxe9tats}{%
+\section{Partie D --- Un mur dans tous ses états}\label{partie-d-un-mur-dans-tous-ses-uxe9tats}}
+
+La sous-partie I est un problème de cours sur la diffusion thermique (équation, temps caractéristique, régime stationnaire, résistances en série). La sous-partie II modélise un mur à matériau à changement de phase avec une hypothèse de profils affines (régime quasi stationnaire). On y suit le front de fusion et les puissances échangées, avec une ligne de Python à la fin.
+
+\textbf{I --- Mur avec ou sans isolation thermique}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Faites un bilan d'énergie sur la tranche entre \(t\) et \(t+\mathrm{d}t\) : variation d'énergie interne d'un côté, flux entrant moins flux sortant de l'autre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La loi de Fourier relie le flux au gradient de température.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+La tranche a une masse \(\rho S\,\mathrm{d}x\) ; c'est un solide sans source ni travail reçu. Le premier principe s'écrit :
+
+\equationajustee{\begin{aligned}
+\rho Sc\,\mathrm{d}x\,\frac{\partial T}{\partial t}\mathrm{d}t &= \big[\Phi(x,t) - \Phi(x+\mathrm{d}x,t)\big]\mathrm{d}t\\
+&= -\frac{\partial\Phi}{\partial x}\mathrm{d}x\,\mathrm{d}t.
+\end{aligned}}
+
+Avec la loi de Fourier \(\Phi = -\lambda S\,\partial T/\partial x\) :
+
+\equationajustee{\boxed{\rho c\frac{\partial T}{\partial t} = \lambda\frac{\partial^2T}{\partial x^2}}}
+
+La diffusivité vaut \(D = \lambda/(\rho c) = 8{,}7\times10^{-7}\ \mathrm{m^2\cdot s^{-1}}\).
+
+\begin{jury}
+
+On attend un schéma de la tranche, le système et les deux instants nommés, la loi de Fourier citée, et des notations cohérentes : flux \(\Phi\) en W ou densité de flux en \(\mathrm{W\cdot m^{-2}}\), sans mélanger les deux.
+
+\end{jury}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Par analyse dimensionnelle de l'équation, quel temps peut-on former avec l'épaisseur \(h\) et les caractéristiques du béton ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\equationajustee{\boxed{\begin{aligned}
+\tau &= \frac{\rho ch^2}{\lambda}\\
+&= \frac{2{,}3\times10^{3}\times9{,}0\times10^{2}\times0{,}200^2}{1{,}8}\\
+&= 4{,}6\times10^{4}\ \mathrm{s}\approx13\ \mathrm{h}
+\end{aligned}}}
+
+La canicule dure plus de 72 h, soit plus de cinq fois \(\tau\). \textbf{Le régime stationnaire est atteint au cours de la canicule.}
+
+\begin{methode}
+
+En diffusion, le temps varie comme le carré de la longueur : doubler l'épaisseur quadruple le temps de mise en régime.
+
+\end{methode}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+En régime stationnaire, que devient l'équation de Q39 ? Utilisez les deux conditions aux limites.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la résistance, identifiez ce qui joue le rôle de la tension et ce qui joue le rôle du courant.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+On a \({\mathrm{d}}^2T/\mathrm{d}x^2 = 0\), donc le profil est affine. Avec \(T(0) = T_{\text{ext}}\) et \(T(h) = T_{\text{int}}\) :
+
+\equationajustee{\boxed{\begin{aligned}
+T(x) &= T_{\text{ext}} + (T_{\text{int}} - T_{\text{ext}})\frac xh\\
+&= 30 - 50\,x
+\end{aligned}}}
+
+avec \(T\) en °C et \(x\) en m.
+
+L'allure est une droite décroissant de 30 °C en \(x = 0\) à 20 °C en \(x = 200\) mm.
+
+\equationajustee{\boxed{\begin{aligned}
+\Phi_{th0} &= \frac{\lambda S(T_{\text{ext}} - T_{\text{int}})}{h}\\
+&= \frac{1{,}8\times25\times10}{0{,}200}\\
+&= 2{,}25\ \mathrm{kW}
+\end{aligned}}}
+
+Par analogie avec la loi d'Ohm \(U = RI\) (écart de température ↔ tension, flux ↔ courant), on définit \(R_{th} = (T_{\text{ext}} - T_{\text{int}})/\Phi_{th0}\) :
+
+\equationajustee{\boxed{R_{th} = \frac{h}{\lambda S} = 4{,}4\times10^{-3}\ \mathrm{K\cdot W^{-1}}}}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Bilan d'énergie sur la pièce : que dire de son énergie interne si sa température reste constante ?
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+La pièce reçoit \(\Phi_{th0}\) par le mur (les autres échanges sont négligés) et cède \(P\) au climatiseur. Sa température étant constante, \(\mathrm{d}U/\mathrm{d}t = \Phi_{th0} - P = 0\) :
+
+\equationajustee{\boxed{P = \Phi_{th0} = 2{,}25\ \mathrm{kW}}}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Mur et isolant sont traversés par le même flux : quelle association de résistances cela représente-t-il ?
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+Les résistances sont en série :
+
+\equationajustee{\begin{aligned}
+R_i &= \frac{h_i}{\lambda_iS}\\
+&= \frac{0{,}020}{3{,}8\times10^{-2}\times25}\\
+&= 2{,}1\times10^{-2}\ \mathrm{K\cdot W^{-1}}\\
+R_{\text{tot}} &= R_{th} + R_i = 2{,}55\times10^{-2}\ \mathrm{K\cdot W^{-1}}
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{\Phi_{th1} = \frac{10}{2{,}55\times10^{-2}}\approx3{,}9\times10^{2}\ \mathrm{W}}}
+
+et
+
+\equationajustee{\boxed{\frac{\Phi_{th0}}{\Phi_{th1}}\approx5{,}7}}
+
+Les 2 cm d'isolant offrent à eux seuls une résistance près de 5 fois plus grande que les 20 cm de béton.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q43-profils-mur-isole.pdf}
+\caption*{Figure 2 --- Profils stationnaires de température dans le mur sans et
+avec isolant (a) et schéma électrique équivalent des deux résistances en
+série (b)}
+\end{figure}
+
+\begin{piege}
+
+\(h_i = 20\) mm \(= 0{,}020\) m, à ne pas confondre avec \(h = 200\) mm.
+
+\end{piege}
+
+\textbf{II --- Un mur avec changement de phase}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Décrivez chaque profil : combien de zones, quelle forme dans chacune ? Comparez la température de chaque zone à \(T_0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un profil affine vérifie-t-il l'équation de la diffusion en régime stationnaire ?
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+Chaque profil présente deux zones séparées par un point anguleux \(x_0(t)\), qui avance dans le mur (environ 40 mm à 1 h, 145 mm à 12 h) :
+
+\begin{itemize}
+\tightlist
+\item
+  pour \(0\leq x\leq x_0\), le profil est affine de 30 °C à 20 °C. Comme \(T>T_0\), \textbf{le MCP est liquide} ;
+\item
+  pour \(x_0\leq x\leq h\), la température est uniforme et égale à \(T_0 = 20\) °C : \textbf{le MCP est encore solide} ;
+\item
+  en \(x_0\) se trouve le front de fusion, où les deux phases coexistent à \(T_0\).
+\end{itemize}
+
+Dans la zone liquide, le profil est affine, donc \(\partial^2T/\partial x^2 = 0\) et \(\partial T/\partial t = 0\) localement. Dans la zone solide, \(T\) est uniforme et constante. \textbf{Le régime peut être considéré comme stationnaire dans chaque zone (quasi stationnaire), mais pas globalement, puisque le front se déplace.} C'est raisonnable parce que l'énergie latente (\(\rho\ell_f\approx6{,}7\times10^{7}\ \mathrm{J\cdot m^{-3}}\)) domine l'énergie sensible de la zone liquide (environ \(\rho c\,\Delta T/2\approx1{,}0\times10^{7}\ \mathrm{J\cdot m^{-3}}\)).
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Le système est la fine couche qui fond pendant \(\mathrm{d}t\). Quelle fonction d'état utiliser pour une transformation monobare, et que vaut sa variation lors d'une fusion ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Évaluez le flux reçu par la couche de chaque côté, avec le profil de la zone correspondante.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pensez à \(x_0\,\mathrm{d}x_0 = \tfrac12\mathrm{d}(x_0^2)\).
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+On considère la couche \([x_0, x_0 + \mathrm{d}x_0]\), de masse \(\rho S\,\mathrm{d}x_0\). Elle fond à \(T_0\) entre \(t\) et \(t + \mathrm{d}t\).
+
+La transformation est monobare : \(\Delta H = Q\), avec \(\Delta H = \rho S\ell_f\,\mathrm{d}x_0\).
+
+\begin{itemize}
+\tightlist
+\item
+  Côté liquide, le profil affine apporte le flux \(\lambda S(T_{\text{ext}} - T_0)/x_0\).
+\item
+  Côté solide, la zone est isotherme (\(T_0 = T_{\text{int}}\)) : le flux est nul.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q45-front-de-fusion.pdf}
+\caption*{Figure 3 --- Profil de température à un instant t : MCP liquide entre 0
+et x0, solide au-delà ; la couche dx0 reçoit le flux conductif côté
+liquide et rien côté solide}
+\end{figure}
+
+\equationajustee{\rho S\ell_f\,\mathrm{d}x_0 = \lambda S\frac{T_{\text{ext}} - T_0}{x_0}\mathrm{d}t}
+
+En multipliant les deux membres par \(2x_0/(\rho S\ell_f\,\mathrm{d}t)\), on obtient
+
+\equationajustee{\boxed{\frac{\mathrm{d}}{\mathrm{d}t}(x_0^2) = K}}
+
+avec
+
+\equationajustee{\boxed{K = \frac{2\lambda(T_{\text{ext}} - T_0)}{\rho\ell_f}}}
+
+Avec \(x_0(0) = 0\), on obtient \(x_0 = \sqrt{Kt}\) : le front avance en \(\sqrt t\), comme tout phénomène diffusif.
+
+\begin{methode}
+
+Problème de Stefan simplifié : on fait un bilan sur la couche qui change d'état, en égalant la chaleur latente absorbée à la différence des flux conductifs de part et d'autre du front.
+
+\end{methode}
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Inversez l'expression de \(K\). Pour le commentaire, demandez-vous quelle fraction du matériau composite change réellement d'état.
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+\equationajustee{\ell_f = \frac{2\lambda(T_{\text{ext}} - T_0)}{\rho K} = \frac{2\times1{,}8\times10}{2{,}3\times10^{3}\times5{,}40\times10^{-7}}}
+
+soit
+
+\equationajustee{\boxed{\ell_f\approx2{,}9\times10^{4}\ \mathrm{J\cdot kg^{-1}} = 29\ \mathrm{kJ\cdot kg^{-1}}}}
+
+C'est environ 7 fois moins que la paraffine, ce qui est normal : seules les billes de MCP fondent, le béton ne change pas d'état. On en déduit une fraction massique de MCP d'environ \(29/200\approx15\ \%\), ce qui est réaliste.
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+\begin{indication}{1}
+
+Comparez les deux courbes de la figure 7(b) : dans quel sens est l'écart, et d'où peut-il venir ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'instant \(t_f\) correspond à une valeur particulière de \(x_0\).
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+Les deux courbes sont confondues pendant les premières heures, puis le modèle (tirets) passe légèrement au-dessus : 176 mm contre 170 mm à 16 h, soit environ 3,5 \% d'écart. \textbf{Le modèle est satisfaisant.} Il surestime un peu la vitesse du front parce qu'il néglige l'énergie sensible stockée dans la zone liquide et attribue toute l'énergie reçue à la fusion.
+
+\equationajustee{\boxed{\begin{aligned}
+t_f &= \frac{h^2}{K}\\
+&= \frac{0{,}200^2}{5{,}40\times10^{-7}}\\
+&= 7{,}4\times10^{4}\ \mathrm{s}\approx21\ \mathrm{h}
+\end{aligned}}}
+
+La simulation, un peu plus lente, donnerait une valeur légèrement supérieure (environ 22 h).
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\begin{indication}{1}
+
+En \(x = 0\), quel est le gradient de température ? Remplacez ensuite \(x_0\) par son expression en fonction de \(t\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Après \(t_f\), il n'y a plus de fusion : de quel problème déjà résolu s'agit-il ?
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+\equationajustee{\boxed{\Phi_{th,e}(t) = \lambda S\frac{T_{\text{ext}} - T_0}{x_0(t)} = \frac{\lambda S(T_{\text{ext}} - T_0)}{\sqrt{Kt}}}}
+
+Numériquement, \(\Phi_{th,e} = 450/\sqrt{5{,}40\times10^{-7}\,t}\) (W, \(t\) en s) : 10 kW à 1 h, 4,2 kW à 6 h, 2,25 kW à \(t_f\).
+
+Allure (figure 4, trait plein) : une décroissance en \(1/\sqrt t\), infinie en \(t = 0\) (artefact du modèle, qui impose un gradient infini sur une épaisseur nulle), jusqu'à \(t_f\), suivie d'un palier.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q48-q49-flux-entrant-sortant.pdf}
+\caption*{Figure 4 --- Allure des puissances thermiques entrante (en 1/√t puis
+palier) et sortante (nulle puis échelon en tf) du mur à MCP}
+\end{figure}
+
+Pour \(t>t_f\), le mur entièrement fondu est en régime stationnaire, et le raccord en \(t_f\) est continu car \(T_0 = T_{\text{int}}\) :
+
+\equationajustee{\boxed{\begin{aligned}
+\Phi_{th2} &= \frac{\lambda S(T_{\text{ext}} - T_{\text{int}})}{h}\\
+&= 2{,}25\ \mathrm{kW}\\
+&= \Phi_{th0}
+\end{aligned}}}
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\begin{indication}{1}
+
+Que vaut le gradient de température en \(x = h\) tant qu'il reste du solide ?
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+Pour \(t<t_f\), la zone \([x_0, h]\) est isotherme à \(T_{\text{int}}\). Le flux sortant est donc nul : \(\Phi_{th,s} = 0\).
+
+Pour \(t>t_f\), \(\Phi_{th,s} = \Phi_{th2} = 2{,}25\) kW. La courbe (figure 4, tirets) est nulle jusqu'à \(t_f\approx21\) h, puis passe par un échelon (lissé en réalité) au palier de 2,25 kW.
+
+\textbf{Intérêt : le MCP retarde l'arrivée de la chaleur dans la pièce.} Pendant près d'une journée, la puissance entrante est stockée sous forme latente : le climatiseur n'a rien à compenser. Sur un cycle jour/nuit, le MCP se resolidifie la nuit et écrête les pointes. La puissance en régime permanent, elle, n'est pas réduite.
+
+\begin{piege}
+
+L'intérêt principal est un \textbf{retard} (et un amortissement), pas une diminution de la puissance finale : Q52 le confirme.
+
+\end{piege}
+
+\hypertarget{question-50}{%
+\subsection{Question 50}\label{question-50}}
+
+\begin{indication}{1}
+
+L'équation est de la forme \(\mathrm{d}x_0/\mathrm{d}t = f(x_0)\). Étudiez le signe et la monotonie de \(f\) sur \(]0,h[\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'interprétation, comparez les flux qui arrivent au front et qui en repartent.
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+On écrit
+
+\equationajustee{\frac{\mathrm{d}x_0}{\mathrm{d}t} = \frac{\lambda}{\rho\ell_f}\,g(x_0)}
+
+avec
+
+\equationajustee{g(x_0) = \frac{T_{\text{ext}} - T_0}{x_0} - \frac{T_0 - T_{\text{int}}}{h - x_0},}
+
+où \(T_{\text{ext}} - T_0 = 6\) K et \(T_0 - T_{\text{int}} = 4\) K.
+
+La fonction \(g\) est continue et strictement décroissante sur \(]0,h[\). Elle va de \(+\infty\) à \(-\infty\). Elle s'annule en un point unique \(x_{0,\max}\), où \(\mathrm{d}x_0/\mathrm{d}t\) change de signe (positif avant, négatif après) : partant de 0, le front avance en ralentissant et tend vers cet équilibre stable.
+
+La condition \(g(x_{0,\max}) = 0\) s'écrit
+
+\equationajustee{(T_{\text{ext}} - T_0)(h - x_{0,\max}) = (T_0 - T_{\text{int}})\,x_{0,\max}}
+
+d'où
+
+\equationajustee{\boxed{x_{0,\max} = h\frac{T_{\text{ext}} - T_0}{T_{\text{ext}} - T_{\text{int}}} = 0{,}120\ \mathrm{m}}}
+
+Interprétation : à cette position, le flux qui arrive au front par la zone liquide repart intégralement par la zone solide vers la pièce. Plus rien ne sert à fondre le MCP, et la fusion s'arrête. Le profil final est la droite stationnaire de 30 °C à 20 °C, et \(x_{0,\max}\) est l'abscisse où elle vaut \(T_0 = 24\) °C (\(30 - 50\times0{,}120 = 24\)). Les 40 \% intérieurs du mur restent solides.
+
+\begin{jury}
+
+« Montrer que le front atteint une position limite » demande un argument de convergence (signe de \(\mathrm{d}x_0/\mathrm{d}t\) de part et d'autre), et pas seulement la résolution de \(\mathrm{d}x_0/\mathrm{d}t = 0\).
+
+\end{jury}
+
+\hypertarget{question-51}{%
+\subsection{Question 51}\label{question-51}}
+
+\begin{indication}{1}
+
+Écrivez la loi de Fourier en \(x = h\). Quels indices du tableau correspondent à \(x = h\) et au point voisin ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le découpage en tranches de numpy permet de traiter tous les instants en une seule ligne.
+
+\end{indication}
+
+\hypertarget{solution-50}{%
+\subsubsection{Solution}\label{solution-50}}
+
+On a \(\Phi_{th,s} = -\lambda S\,(\partial T/\partial x)_{x=h}\), avec une différence finie entre les indices \texttt{Nx-1} (\(x = h\)) et \texttt{Nx-2} :
+
+\begin{lstlisting}[language=Python]
+Pth = -Lambda*S*(T[Nx-1, :] - T[Nx-2, :])/dx
+\end{lstlisting}
+
+\texttt{Pth} a autant d'éléments que \texttt{t}. Contrôle : pour le profil stationnaire de 30 à 20 °C, on obtient \(\lambda S\times10/h = 2250\) W.
+
+\begin{piege}
+
+Le dernier indice est \texttt{Nx-1} et non \texttt{Nx}. Il faut respecter l'ordre \texttt{T{[}i,k{]}} (position, puis instant), sans oublier ni le signe moins ni la surface \(S\).
+
+\end{piege}
+
+\hypertarget{question-52}{%
+\subsection{Question 52}\label{question-52}}
+
+\begin{indication}{1}
+
+Décrivez chaque courbe : départ, montée, palier éventuel. Quelle est la différence physique entre les deux murs ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+En régime stationnaire, la puissance transmise ne dépend que de la résistance thermique du mur. Celle-ci change-t-elle avec le MCP ?
+
+\end{indication}
+
+\hypertarget{solution-51}{%
+\subsubsection{Solution}\label{solution-51}}
+
+Les deux courbes partent de zéro (mur initialement isotherme à 20 °C). Le béton simple (tirets) atteint rapidement, en quelques heures, un palier à 2,25 kW. Le mur composite (trait plein) monte beaucoup plus lentement, et n'atteint que 1,9 kW à 22 h, car la fusion du MCP absorbe une partie du flux.
+
+Dans les deux cas, le régime final est la conduction stationnaire à travers 20 cm d'un matériau de même conductivité. Pour le composite, Q50 le confirme : le flux dans la zone solide vaut \(1{,}8\times25\times4/0{,}080 = 2{,}25\) kW.
+
+\equationajustee{\boxed{\Phi_{th,s}(\infty) = \frac{\lambda S(T_{\text{ext}} - T_{\text{int}})}{h} = 2{,}25\ \mathrm{kW}\ \text{dans les deux cas}}}
+
+\textbf{Pour réduire la puissance en régime stationnaire, il faut augmenter la résistance thermique} : un isolant (2 cm ramènent la puissance à 0,39 kW, Q43) ou un mur plus épais. L'isolant abaisse le niveau permanent, et le MCP retarde et écrête les pointes : les deux solutions se complètent.
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Choc puis mouvement} : on conserve la quantité de mouvement pendant le choc, puis on applique le théorème de l'énergie cinétique sur la phase suivante, sans mélanger les deux étapes (Q1--Q5).
+\item
+  \textbf{Exploitation d'un relevé} : lire une valeur représentative, la convertir dans la grandeur de la formule, encadrer le résultat (Q8, Q10).
+\item
+  \textbf{Thermochimie} : loi de Hess pour \(\Delta_rH^\circ\) et \(\Delta_rS^\circ\), signe de l'entropie de réaction relié à \(\Delta n_{\text{gaz}}\), variation de \(K^\circ\) avec \(T\), caractère total jugé par la comparaison entre la pression d'équilibre et la pression réelle (Q11--Q14).
+\item
+  \textbf{Bilan enthalpique en monobare} : cycle « réaction à la température d'entrée, puis échauffement des produits et des inertes » (Q19).
+\item
+  \textbf{Diagramme E-pH} : classement par nombre d'oxydation, pentes des frontières, conventions de tracé dans la relation de Nernst, distinction corrosion / passivation / immunité (Q22--Q26).
+\item
+  \textbf{Symétries} : \(\vec B\) appartient aux plans d'antisymétrie des courants (Q27).
+\item
+  \textbf{Corde fixée aux deux bouts} : \(f_p = pc/(2L)\), solution générale par superposition (Q30).
+\item
+  \textbf{Diffusion} : bilan sur une tranche, \(\tau = \rho ch^2/\lambda\), résistances thermiques en série (Q39--Q43).
+\item
+  \textbf{Front de fusion} : bilan sur la couche qui fond et régime quasi stationnaire, d'où un front en \(\sqrt t\) (Q45).
+\item
+  \textbf{Équation autonome \(\dot x = f(x)\)} : étude du signe de \(f\) pour montrer la convergence vers un équilibre (Q50).
+\end{itemize}
+
+\textbf{Prérequis à revoir si besoin.} Développements limités \((1+\varepsilon)^\alpha\), conventions de tracé des diagrammes E-pH, analyse dimensionnelle, découpage de tableaux numpy (\texttt{T{[}i,\ :{]}}).
+
+\textbf{Questions classiques transposables.} Le choc mou suivi d'un enfoncement (mouton, battage de pieux), le bilan enthalpique d'une combustion avec diazote, la passivation du fer, la corde vibrante comme capteur, la résistance thermique d'une paroi composite et le problème de Stefan reviennent régulièrement, avec des habillages différents, dans les épreuves de physique-chimie des filières TSI, PSI et PT.
+
+\end{document}

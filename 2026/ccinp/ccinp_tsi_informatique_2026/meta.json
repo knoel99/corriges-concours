@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_tsi_informatique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TSI",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 27,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-configuration-perdante.svg",
+      "question": "Q1",
+      "legende": "dans la configuration perdante, les reines (1, 2) et (2, 3) partagent la diagonale descendante i − j = −1"
+    },
+    {
+      "fichier": "figures/q7-diagonales-invariants.svg",
+      "question": "Q7",
+      "legende": "i + j est constant le long d'une diagonale montante, j − i le long d'une diagonale descendante"
+    },
+    {
+      "fichier": "figures/q15-insertion-permutations.svg",
+      "question": "Q15",
+      "legende": "chaque permutation l1 de {0, 1} donne trois listes insertion(v, l1, i) avec v = 2, rangées dans P dans l'ordre"
+    },
+    {
+      "fichier": "figures/q18-symetrie-rotation.svg",
+      "question": "Q18",
+      "legende": "symétrie horizontale et rotation vers la droite de la configuration initiale, en suivant la reine de la ligne 0"
+    },
+    {
+      "fichier": "figures/q22-retour-sur-trace.svg",
+      "question": "Q22",
+      "legende": "configurations partielles visitées par explore pour n = 4, colonnes rejetées par l'élagage, arrêt à la première solution"
+    },
+    {
+      "fichier": "figures/partie2-schema-relationnel.svg",
+      "question": "Q25",
+      "legende": "schéma de la base, clés primaires soulignées, flèches des clés étrangères vers les clés qu'elles référencent"
+    }
+  ]
+}

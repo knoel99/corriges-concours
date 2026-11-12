@@ -1,0 +1,868 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Centrale-Supélec PSI — Physique-chimie 2 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Centrale-Supélec PSI}
+\fancyhead[R]{\small Physique-chimie 2 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Centrale-Supélec PSI — Physique-chimie 2 2026\par}\medskip
+  {\large Centrale-Supélec · PSI · Physique-chimie 2 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\emph{Création d'un synthétiseur analogique rudimentaire.} Durée 4 h, calculatrice autorisée. Données utilisées :
+
+\begin{itemize}
+\tightlist
+\item
+  \(k_B=1{,}38\times10^{-23}\ \mathrm{J\cdot K^{-1}}\) et \(q=1{,}60\times10^{-19}\ \mathrm{C}\) ;
+\item
+  \(h=50\ \mathrm{W\cdot m^{-2}\cdot K^{-1}}\) et \(\lambda=215\ \mathrm{W\cdot m^{-1}\cdot K^{-1}}\) ;
+\item
+  \(N_A=6{,}02\times10^{23}\ \mathrm{mol^{-1}}\), d'où \(R=k_BN_A=8{,}31\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}\).
+\end{itemize}
+
+Deux coquilles de l'énoncé : la masse volumique de \(\mathrm{SiO_2}\) vaut \(2{,}20\ \mathrm{g\cdot cm^{-3}}\) (et non \(\mathrm{kg\cdot m^{-3}}\)). La « figure 13 » de la partie C-II est la figure 12.
+
+\hypertarget{partie-a-cruxe9ation-dun-synthuxe9tiseur-analogique}{%
+\section{Partie A --- Création d'un synthétiseur analogique}\label{partie-a-cruxe9ation-dun-synthuxe9tiseur-analogique}}
+
+\hypertarget{i-des-touches-de-clavier-uxe0-loscillateur}{%
+\subsection{I --- Des touches de clavier à l'oscillateur}\label{i-des-touches-de-clavier-uxe0-loscillateur}}
+
+\hypertarget{i.1-convertisseur-linuxe9aireexponentiel}{%
+\subsubsection{I.1 --- Convertisseur « Linéaire/Exponentiel »}\label{i.1-convertisseur-linuxe9aireexponentiel}}
+
+\textbf{Q1.} Le clavier délivre une tension affine en l'octave : \(V_{\mathrm{in},0}=-5+n\) (en V) pour le La\(_n\). La hauteur musicale, elle, est géométrique : \(f({\mathrm{La}}_n)=f({\mathrm{La}}_0)\,2^n\).
+
+L'OCT donnant \(f=\kappa V_{\mathrm{in},1}\) (linéaire), une chaîne entièrement linéaire rendrait \(f\) affine en \(V_{\mathrm{in},0}\) : les octaves seraient équidistantes en fréquence et non en rapport, la gamme serait fausse. Il faut un bloc qui change une progression arithmétique de tension en progression géométrique de fréquence, c'est-à-dire une exponentielle.
+
+Avec \(n=V_{\mathrm{in},0}+5\) :
+
+\equationajustee{\kappa V_{\mathrm{in},1}=f({\mathrm{La}}_0)\,2^{5}\,{\mathrm{e}}^{V_{\mathrm{in},0}\ln2}}
+
+soit \(V_{\mathrm{in},1}=V_{\mathrm{ref}}\exp(\alpha V_{\mathrm{in},0})\), avec \(V_{\mathrm{ref}}=32f({\mathrm{La}}_0)/\kappa\) et
+
+\equationajustee{\boxed{\alpha=\ln2\simeq0{,}693\ \mathrm{V^{-1}}}}
+
+\textbf{Q2.} \(f\propto V_{\mathrm{in},1}\propto I_C\) : monter d'une octave revient à doubler \(I_C\) à température fixée. Le facteur \(I_S(T)\) se simplifie dans le rapport :
+
+\equationajustee{\begin{aligned}
+2&=\frac{I_S\,{\mathrm{e}}^{(V_{BE}+\Delta V_{BE})/v}}{I_S\,{\mathrm{e}}^{V_{BE}/v}}\\
+&={\mathrm{e}}^{\Delta V_{BE}/v}
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{\Delta V_{BE}=v(T)\ln2}}
+
+À \(T=293{,}15\ \mathrm{K}\), on a \(v=k_BT/q=25{,}3\ \mathrm{mV}\), d'où \(\boxed{\Delta V_{BE}=17{,}5\ \mathrm{mV}}\).
+
+\textbf{Q3.} Comme \(I_B=0\), \(R\) et \(R'\) sont parcourues par le même courant :
+
+\equationajustee{V_{BE}=\frac{R'}{R+R'}V_{\mathrm{in},0}}
+
+Avec \(V_{\mathrm{in},1}=\mu I_C\) (\(\mu\) constante) :
+
+\equationajustee{V_{\mathrm{in},1}=\mu I_S(T)\exp\!\Big(\frac{R'}{(R+R')v(T)}V_{\mathrm{in},0}\Big)}
+
+\equationajustee{\boxed{\alpha=\frac{R'}{(R+R')\,v(T)}}}
+
+On obtient bien la forme \(V_{\mathrm{ref}}\exp(\alpha V_{\mathrm{in},0})\) avec \(V_{\mathrm{ref}}=\mu I_S(T)\).
+
+À \(20\ ^\circ\mathrm{C}\), on a \(R'/(R+R')=1/57=1{,}754\times10^{-2}\), d'où
+
+\equationajustee{\begin{aligned}
+\alpha&=\frac{1{,}754\times10^{-2}}{2{,}528\times10^{-2}}\\
+&=0{,}694\ \mathrm{V^{-1}}
+\end{aligned}}
+
+soit un écart de \(0{,}1\ \%\) à \(\ln2\). \textbf{Le montage réalise donc le convertisseur voulu} : \(\Delta V_{\mathrm{in},0}=1\ \mathrm{V}\) donne \(\Delta V_{BE}=17{,}5\ \mathrm{mV}\), comme exigé en Q2.
+
+\hypertarget{i.2-compensation-de-tempuxe9rature}{%
+\subsubsection{I.2 --- Compensation de température}\label{i.2-compensation-de-tempuxe9rature}}
+
+\textbf{Q4.} Pour le La\(_3\), \(V_{\mathrm{in},0}=-2\ \mathrm{V}\), donc \(V_{BE}=-2/57=-35{,}1\ \mathrm{mV}\). Cette tension est indépendante de \(T\). On a \(f\propto I_C=I_S(T)\exp(V_{BE}/v(T))\).
+
+\emph{Effet de \(I_S\) seul.} Ce courant double entre 20 et 30 °C, donc \(f\) double : \(\boxed{\Delta f/f=+100\ \%}\).
+
+Le La\(_3\) devient un La\(_4\), à \(880\ \mathrm{Hz}\). L'écart vaut 286 fois le seuil de \(0{,}0035\).
+
+\emph{Effet de \(v\) seul.} On a \(v(303{,}15\ \mathrm{K})=26{,}1\ \mathrm{mV}\) et
+
+\equationajustee{\begin{aligned}
+\frac{f(30)}{f(20)}&=\exp\!\Big[V_{BE}\Big(\frac1{v(303)}-\frac1{v(293)}\Big)\Big]\\
+&={\mathrm{e}}^{0{,}0458}
+\end{aligned}}
+
+d'où \(\boxed{\Delta f/f=+4{,}7\ \%}\), soit 13 fois le seuil et près d'un demi-ton (\(5{,}9\ \%\)). Comme \(V_{BE}<0\), l'augmentation de \(v\) rapproche l'exposant de zéro et fait monter \(f\).
+
+Les deux effets font monter la note et celui de \(I_S\) domine largement. Le premier multiplie toutes les notes par le même facteur (transposition globale). Le second dépend de \(V_{BE}\), donc de la note, et désaccorde les intervalles.
+
+\textbf{Q5.} Émetteurs reliés au potentiel \(V_E\). Le transistor 1 a sa base en \(V_B\), le transistor 2 a sa base à la masse, et tous deux ont le même \(I_S(T)\) :
+
+\equationajustee{\begin{aligned}
+I_{C1}&=I_S\,{\mathrm{e}}^{(V_B-V_E)/v}\\
+I_{C2}&=I_S\,{\mathrm{e}}^{-V_E/v}
+\end{aligned}}
+
+En faisant le rapport :
+
+\equationajustee{\boxed{I_{C2}=I_{C1}\exp\!\Big(-\frac{V_B}{v(T)}\Big)}}
+
+\textbf{Q6.} \(I_S(T)\), responsable de la dérive dominante (facteur 2 tous les \(10\ ^\circ\mathrm{C}\)), a disparu : \textbf{la dérive due au courant de saturation est entièrement compensée.} La fréquence ne dépend plus que du courant imposé \(I_{C1}\) et de \(v(T)\), ce qui ne laisse qu'une dérive beaucoup plus faible, par l'exposant.
+
+\textbf{Q7.} On a \(\ln f=\mathrm{cste}-qV_B/(k_BT)\), avec \(V_B=V_{\mathrm{in},0}/57\) indépendant de \(T\). Donc
+
+\equationajustee{\begin{aligned}
+\Big|\frac{\Delta f}{f}\Big|&=\frac{|V_B|}{v(T_0)}\frac{|\Delta T|}{T_0}\\
+&=\alpha|V_{\mathrm{in},0}|\frac{|\Delta T|}{T_0}\\
+&\leqslant0{,}0035
+\end{aligned}}
+
+d'où
+
+\equationajustee{\begin{aligned}
+|\Delta T|&\leqslant\frac{0{,}0035\,T_0}{\ln2\,|V_{\mathrm{in},0}|}\\
+&=\boxed{\frac{1{,}48\ \mathrm{K\cdot V}}{|V_{\mathrm{in},0}|}}
+\end{aligned}}
+
+Pour le La\(_3\), cela donne \(|\Delta T|\leqslant0{,}74\ \mathrm{K}\). Pour \(|V_{\mathrm{in},0}|=5\ \mathrm{V}\), la tolérance tombe à \(0{,}30\ \mathrm{K}\).
+
+Pour \(10\ \mathrm{K}\) d'échauffement, la dérive est de \(+4{,}7\ \%\) (contre \(+109\ \%\) avec le montage de la figure 4) : le progrès est net, mais une tolérance inférieure au kelvin reste \textbf{insuffisante} pour un appareil qui s'échauffe de plusieurs dizaines de degrés. Il faut compenser aussi le terme en \(v(T)\) ou refroidir le composant.
+
+\textbf{Q8.} \emph{Critère.} La fréquence dépend de \(T\) par \(u=V_B/v(T)=qV_B/(k_BT)\). Elle devient indépendante de \(T\) si \(V_B\propto T\).
+
+\emph{Modification.} Comme \(R'\ll R\), on a \(V_B\simeq(R'/R)V_{\mathrm{in},0}\). On remplace \(R'\) par une thermistance CTP et on garde \(R\) fixe :
+
+\equationajustee{R'(T)=R'_{T_0}\big(1+K(T-T_0)\big)}
+
+Alors \(V_B\propto1+K(T-T_0)\), à comparer à \(T=T_0\big(1+(T-T_0)/T_0\big)\). La compensation est exacte au premier ordre si
+
+\equationajustee{\begin{aligned}
+K&=\frac1{T_0}\\
+&=3{,}41\times10^{-3}\ \mathrm{K^{-1}}\\
+&=3411\times10^{-6}\ \mathrm{K^{-1}}
+\end{aligned}}
+
+\emph{Choix.} La valeur la plus proche dans la table est
+
+\equationajustee{\boxed{K=3300\times10^{-6}\ \mathrm{K^{-1}}\ (\pm10\ \%)}}
+
+avec \(\boxed{R'_{20}=500\ \Omega}\). L'écart vaut \(111\times10^{-6}\), contre \(189\times10^{-6}\) pour 3600.
+
+Pour garder \(\alpha=\ln2\), il faut \(R'/(R+R')=1/57\), donc \(R=56R'=28{,}0\ \mathrm{k\Omega}\).
+
+\emph{Tolérance.} Avec \(\theta=T-T_0\) :
+
+\equationajustee{\begin{aligned}
+\frac{u(T)}{u(T_0)}&=\frac{1+K\theta}{1+\theta/T_0}\\
+&\simeq1+\Big(K-\frac1{T_0}\Big)\theta
+\end{aligned}}
+
+d'où
+
+\equationajustee{\begin{aligned}
+\Big|\frac{\Delta f}{f}\Big|&=\ln2\,|V_{\mathrm{in},0}|\,\Big|K-\frac1{T_0}\Big|\,|\theta|\\
+&\leqslant0{,}0035
+\end{aligned}}
+
+donc
+
+\equationajustee{|\theta|\leqslant\frac{0{,}0035}{\ln2\,|V_{\mathrm{in},0}|\,|K-1/T_0|}}
+
+Avec \(|K-1/T_0|=111\times10^{-6}\ \mathrm{K^{-1}}\), on obtient :
+
+\equationajustee{\boxed{|\Delta T|\leqslant23\ \mathrm{K}\ \text{(La}_3\text{)}}}
+
+\equationajustee{\boxed{|\Delta T|\leqslant9\ \mathrm{K}\ (|V_{\mathrm{in},0}|=5\ \mathrm{V})}}
+
+On gagne un facteur \(3411/111\approx31\) par rapport à Q7.
+
+\emph{Conclusion.} La précision de \(\pm10\ \%\) sur \(K\) (\(\pm330\times10^{-6}\)) dépasse l'écart résiduel. Dans le pire cas (\(K=2970\times10^{-6}\)), la tolérance tombe à \(5{,}7\ \mathrm{K}\) pour le La\(_3\).
+
+\textbf{La compensation par CTP améliore la stabilité d'un facteur 8 à 30 selon la dispersion, sans dispenser d'un tri des thermistances ni du refroidissement de la partie B.}
+
+(Sans l'approximation \(R'\ll R\), le coefficient effectif vaut \(KR/(R+R')\) et la valeur idéale devient \(3472\times10^{-6}\). Ce changement reste inférieur à la dispersion de fabrication.)
+
+\hypertarget{i.3-transposition-doctave}{%
+\subsubsection{I.3 --- Transposition d'octave}\label{i.3-transposition-doctave}}
+
+\textbf{Q9.} Pour l'ALI 1, la sortie est reliée directement à l'entrée \(-\). Pour l'ALI 2, la sortie est reliée à l'entrée \(-\) par \(R_C\). Les deux sont en contre-réaction, sans aucune boucle vers \(+\) : \textbf{régime linéaire}. Modèle idéal : \(i_+=i_-=0\), impédance de sortie nulle, gain infini et sortie non saturée, donc \(\boxed{V_+=V_-}\).
+
+\textbf{Q10.} Le commutateur attaque l'entrée \(+\) de l'ALI 1, qui ne prélève aucun courant. Le pont \(R_A\), \(4R_B\), \(R_A\) est donc parcouru par un courant unique :
+
+\equationajustee{I=\frac{20}{2R_A+4R_B}}
+
+Un pas de \(1\ \mathrm{V}\) entre prises impose \(R_BI=1\ \mathrm{V}\), soit \(I=0{,}100\ \mathrm{mA}\). On en tire \(2R_A+4R_B=200\ \mathrm{k\Omega}\), et
+
+\equationajustee{\boxed{R_A=80{,}0\ \mathrm{k\Omega}}}
+
+Vérification : la première prise est à \(-10+R_AI=-2\ \mathrm{V}\). Les prises suivantes montent de 1 V en 1 V jusqu'à \(+2\ \mathrm{V}\), et la dernière résistance ramène à \(+2+R_AI=+10\ \mathrm{V}\).
+
+\textbf{Q11.} L'ALI 1 est un \textbf{suiveur} (\(V_s=V_{SW}\)). Son impédance d'entrée est infinie et son impédance de sortie nulle : il adapte les impédances. Sans lui, la branche \(R_B\) du sommateur chargerait le pont, et les tensions des prises ne vaudraient plus \(-2,\dots,+2\ \mathrm{V}\).
+
+\textbf{Q12.} Au nœud \(+\) (avec \(i_+=0\)), la loi des nœuds s'écrit
+
+\equationajustee{\frac{V_{SW}-V_+}{R_B}+\frac{V_{\mathrm{in},0}-V_+}{R_B}=0}
+
+donc \(V_+=(V_{SW}+V_{\mathrm{in},0})/2\). Au nœud \(-\), le diviseur formé des deux résistances \(R_C\) donne \(V_-=V'_{\mathrm{in},0}/2\). Le régime est linéaire, d'où
+
+\equationajustee{\boxed{V'_{\mathrm{in},0}=V_{\mathrm{in},0}+V_{SW}}}
+
+C'est un \textbf{sommateur} (non inverseur). Comme \(V_{SW}=p\in\{-2,-1,0,1,2\}\ \mathrm{V}\) et qu'un volt correspond à une octave (Q1), la fréquence est multipliée par \(2^p\). \textbf{La note est transposée de \(p\) octaves}, sans changer les intervalles.
+
+\hypertarget{ii-oscillateur-commanduxe9-en-tension}{%
+\subsection{II --- Oscillateur commandé en tension}\label{ii-oscillateur-commanduxe9-en-tension}}
+
+\textbf{Q13.} La sortie de l'ALI 4 est ramenée sur l'entrée \(+\) par \(R_6\) (avec \(R_7\) vers la masse). Aucune branche ne la ramène sur l'entrée \(-\) : la rétroaction est positive, donc \textbf{régime saturé}.
+
+Conséquences : la sortie vaut \(V_{\mathrm{out},2}=\pm V_{\mathrm{sat}}\), soit \(\pm15\ \mathrm{V}\). On a \(V_+\neq V_-\), et le signe de \(V_+-V_-\) fixe l'état de sortie. Le montage est un comparateur à hystérésis.
+
+\textbf{Q14.} L'ALI 3 est en contre-réaction par \(C_1\), donc en régime linéaire. Le diviseur n'étant pas chargé, on a
+
+\equationajustee{\begin{aligned}
+V_{A_1}&=V_{A_2}\\
+&=\frac{R_3}{R_2+R_3}V_{\mathrm{in},1}
+\end{aligned}}
+
+Cette tension est constante. Le transistor étant bloqué, \(I_C=0\). La loi des nœuds en \(A_1\) s'écrit :
+
+\equationajustee{\begin{aligned}
+\frac{V_{\mathrm{in},1}-V_{A_1}}{R_1}&=C_1\frac{\mathrm{d}(V_{A_1}-V_{\mathrm{out},1})}{\mathrm{d}t}\\
+&=-C_1\frac{\mathrm{d}V_{\mathrm{out},1}}{\mathrm{d}t}
+\end{aligned}}
+
+\equationajustee{\boxed{V_{\mathrm{out},1}(t)=V_0-\frac{R_2}{R_1C_1(R_2+R_3)}V_{\mathrm{in},1}\,t}}
+
+C'est une rampe descendante de pente \(-s\), avec \(s=\dfrac{R_2V_{\mathrm{in},1}}{R_1C_1(R_2+R_3)}\). La constante \(V_0=V_{\mathrm{out},1}(0)\) est fixée en Q16.
+
+\textbf{Q15.} Les potentiels des entrées de l'ALI 4 sont
+
+\equationajustee{V_+=\frac{R_7}{R_6+R_7}V_{\mathrm{out},2}}
+
+et \(V_-=V_{\mathrm{out},1}\).
+
+Dans l'état \(+V_{\mathrm{sat}}\), la sortie bascule quand \(V_{\mathrm{out},1}\) dépasse \(V_{\mathrm{haut}}\). Dans l'état \(-V_{\mathrm{sat}}\), elle bascule quand \(V_{\mathrm{out},1}\) descend sous \(V_{\mathrm{bas}}\) :
+
+\equationajustee{\boxed{V_{\mathrm{haut}}=\frac{R_7}{R_6+R_7}V_{\mathrm{sat}}}}
+
+\equationajustee{\boxed{V_{\mathrm{bas}}=-\frac{R_7}{R_6+R_7}V_{\mathrm{sat}}}}
+
+Graphe : cycle d'hystérésis \textbf{inverseur}, parcouru dans le sens horaire (figure 1). Chaque seuil n'est actif que dans un état de sortie.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q15-cycle-hysteresis.pdf}
+\caption*{Figure 1 --- Caractéristique du comparateur à hystérésis : cycle
+inverseur parcouru dans le sens horaire, entre les seuils V\_bas et
+V\_haut}
+\end{figure}
+
+\textbf{Q16.} Le transistor est bloqué, donc \(V_{BE}<0\) et \(V_{\mathrm{out},2}=-V_{\mathrm{sat}}\) (même signe que \(V_{BE}\)). Le seuil actif est donc \(V_{\mathrm{bas}}\).
+
+On part de \(V_{\mathrm{out},1}(0)=-V_{\mathrm{bas}}=V_{\mathrm{haut}}\). La rampe \(V_{\mathrm{haut}}-st\) atteint \(V_{\mathrm{bas}}\) quand \(st_1=2V_{\mathrm{haut}}\) :
+
+\equationajustee{\boxed{t_1=\frac{2R_7}{R_6+R_7}\,\frac{R_1C_1(R_2+R_3)}{R_2}\,\frac{V_{\mathrm{sat}}}{V_{\mathrm{in},1}}}}
+
+À cet instant, l'ALI 4 passe à \(+V_{\mathrm{sat}}\), et \(V_{BE}>0\). Le transistor devient actif : \(C\) est relié à \(E\), donc à la masse.
+
+La résistance \(R_4\) dérive alors vers la masse le courant \(V_{A_1}/R_4\), et la pente de \(V_{\mathrm{out},1}\) change de signe.
+
+\textbf{Q17.} Pour \(t>t_1\), \(V_{A_1}\) garde la même valeur et la loi des nœuds en \(A_1\) devient
+
+\equationajustee{\frac{V_{\mathrm{in},1}-V_{A_1}}{R_1}=\frac{V_{A_1}}{R_4}-C_1\frac{\mathrm{d}V_{\mathrm{out},1}}{\mathrm{d}t}}
+
+d'où
+
+\equationajustee{\frac{\mathrm{d}V_{\mathrm{out},1}}{\mathrm{d}t}=\frac{V_{\mathrm{in},1}}{C_1(R_2+R_3)}\Big(\frac{R_3}{R_4}-\frac{R_2}{R_1}\Big)}
+
+\equationajustee{\boxed{V_{\mathrm{out},1}(t)=V_{\mathrm{bas}}+\frac{V_{\mathrm{in},1}}{C_1(R_2+R_3)}\Big(\frac{R_3}{R_4}-\frac{R_2}{R_1}\Big)(t-t_1)}}
+
+Les oscillations sont symétriques si la pente montante vaut \(+s\), soit \(\dfrac{R_3}{R_4}-\dfrac{R_2}{R_1}=\dfrac{R_2}{R_1}\) :
+
+\equationajustee{\boxed{R_4=\frac{R_1R_3}{2R_2}}}
+
+\textbf{Q18.} Avec \(R_6=R_7\), \(V_{\mathrm{haut}}=-V_{\mathrm{bas}}=V_{\mathrm{sat}}/2\). Chaque demi-période correspond au parcours de \(V_{\mathrm{sat}}\) à la pente \(s\) : \(T/2=V_{\mathrm{sat}}/s\), d'où
+
+\equationajustee{\boxed{f=\frac1{2R_1C_1}\,\frac{R_2}{R_2+R_3}\,\frac{V_{\mathrm{in},1}}{V_{\mathrm{sat}}}}}
+
+\textbf{Q19.} \(V_{\mathrm{out},1}\) est un \textbf{triangle} symétrique entre \(\pm V_{\mathrm{sat}}/2\), soit \(\pm7{,}5\ \mathrm{V}\). Il descend sur \([0,T/2]\) et monte sur \([T/2,T]\).
+
+\(V_{\mathrm{out},2}\) est un \textbf{créneau} \(\pm V_{\mathrm{sat}}\) de rapport cyclique \(1/2\). Il vaut \(-V_{\mathrm{sat}}\) quand le triangle descend et \(+V_{\mathrm{sat}}\) quand il monte. Il bascule exactement aux sommets du triangle.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q19-chronogrammes-vco.pdf}
+\caption*{Figure 2 --- Chronogrammes de l'oscillateur : triangle V\_out,1 entre
+±V\_sat/2 et créneau V\_out,2 = ±V\_sat, qui bascule aux sommets du
+triangle}
+\end{figure}
+
+\textbf{Q20.} La vitesse de balayage \(\sigma=0{,}3\ \mathrm{V\cdot\mu s^{-1}}\) est la valeur maximale de \(|\mathrm{d}V_s/\mathrm{d}t|\) que peut atteindre la sortie d'un ALI réel. C'est une limitation non linéaire de l'étage de sortie : au-delà, les signaux sont déformés.
+
+La sortie de l'ALI 3 (en contre-réaction) a une pente de valeur absolue
+
+\equationajustee{\begin{aligned}
+s&=\frac{V_{\mathrm{sat}}}{T/2}\\
+&=2fV_{\mathrm{sat}}
+\end{aligned}}
+
+Il faut donc \(2fV_{\mathrm{sat}}\leqslant\sigma\) :
+
+\equationajustee{\begin{aligned}
+f&\leqslant\frac{\sigma}{2V_{\mathrm{sat}}}\\
+&=\frac{0{,}3\times10^6}{30}\\
+&=\boxed{1{,}0\times10^{4}\ \mathrm{Hz}}
+\end{aligned}}
+
+\emph{Commentaire.} \(10\ \mathrm{kHz}\) couvre le fondamental de toutes les notes usuelles (La\(_0=55\ \mathrm{Hz}\), soit environ 7,5 octaves au-dessus), mais pas tout le domaine audible (\(20\ \mathrm{kHz}\)) ni les harmoniques des notes aiguës.
+
+L'ALI 4 est lui aussi limité : un front de \(30\ \mathrm{V}\) dure \(100\ \mu\mathrm{s}\). Cette durée n'est négligeable devant \(T/2\) que pour \(f\ll5\ \mathrm{kHz}\). Au-delà, le créneau devient trapézoïdal.
+
+\hypertarget{partie-b-contruxf4le-de-tempuxe9rature-au-sein-dun-synthuxe9tiseur-analogique}{%
+\section{Partie B --- Contrôle de température au sein d'un synthétiseur analogique}\label{partie-b-contruxf4le-de-tempuxe9rature-au-sein-dun-synthuxe9tiseur-analogique}}
+
+\textbf{Q21.} La surface de la tranche en contact avec l'air comprend les deux grandes faces (\(2L\,\mathrm{d}x\)) et les deux chants (\(2e\,\mathrm{d}x\)). Les sections droites sont internes à l'ailette :
+
+\equationajustee{\boxed{\begin{aligned}
+\delta P&=2h(L+e)\big(T(x,t)-T_a\big)\,\mathrm{d}x\\
+&\simeq2hL\big(T(x,t)-T_a\big)\,\mathrm{d}x\quad(e\ll L)
+\end{aligned}}}
+
+\textbf{Q22.} Loi de Fourier :
+
+\equationajustee{\Phi(x)=-\lambda Le\,\frac{\partial T}{\partial x}}
+
+Le bilan stationnaire sur la tranche (rien ne s'accumule) s'écrit
+
+\equationajustee{0=\Phi(x)-\Phi(x+\mathrm{d}x)-2h(L+e)(T-T_a)\mathrm{d}x}
+
+avec
+
+\equationajustee{\Phi(x)-\Phi(x+\mathrm{d}x)=\lambda Le\,T''\mathrm{d}x}
+
+On obtient
+
+\equationajustee{\frac{{\mathrm{d}}^2T}{\mathrm{d}x^2}-m^2T=-m^2T_a}
+
+avec
+
+\equationajustee{\begin{aligned}
+m^2&=\frac{2h(L+e)}{\lambda Le}\\
+&\simeq\frac{2h}{\lambda e}
+\end{aligned}}
+
+\equationajustee{\boxed{m=\sqrt{\frac{2h}{\lambda e}}}}
+
+A.N. : \(m=\sqrt{100/(215\times2{,}0\times10^{-3})}=15{,}2\ \mathrm{m^{-1}}\).
+
+\textbf{Q23.} Contact parfait avec le transistor à \(T_1\) : \(\boxed{T(0)=T_1}\).
+
+\textbf{Q24.}
+- Hypothèse 1 : ailette semi-infinie, \(T\) bornée, soit \(\boxed{T(\ell)\simeq T_a}\) (en pratique \(T(x\to\infty)=T_a\)).
+- Hypothèse 2 : flux nul, \(\boxed{\dfrac{\mathrm{d}T}{\mathrm{d}x}(\ell)=0}\).
+- Hypothèse 3 : continuité du flux en bout d'ailette, \(\boxed{-\lambda\dfrac{\mathrm{d}T}{\mathrm{d}x}(\ell)=h\big(T(\ell)-T_a\big)}\).
+
+La plus réaliste est \textbf{l'hypothèse 3} : l'extrémité est baignée par l'air comme le reste de l'ailette. L'hypothèse 1 est ici fausse (\(m\ell=15{,}2\times0{,}015=0{,}23\ll1\)). L'hypothèse 2 est une bonne approximation de la 3, car la surface d'extrémité \(Le\) ne représente que \(e/(2\ell)=7\ \%\) de la surface latérale.
+
+\textbf{Q25.} On a \(T=T_a+A{\mathrm{e}}^{-mx}+B{\mathrm{e}}^{mx}\). La condition bornée impose \(B=0\), et \(T(0)=T_1\) donne \(A=T_1-T_a\) :
+
+\equationajustee{\boxed{T(x)=T_a+(T_1-T_a){\mathrm{e}}^{-mx}}}
+
+\equationajustee{\boxed{\widetilde T(x)={\mathrm{e}}^{-mx}}}
+
+Tracé (figure 3) : exponentielle décroissante de 1 à 0 ; la tangente à l'origine, de pente \(-m\), coupe l'axe en \(x=1/m\approx6{,}6\ \mathrm{cm}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q25-profil-ailette.pdf}
+\caption*{Figure 3 --- Profil de température réduit de l'ailette semi-infinie, T̃ =
+exp(−mx), et sa tangente à l'origine qui coupe l'axe en x = 1/m}
+\end{figure}
+
+\textbf{Q26.} On cherche \(\theta=T-T_a\) sous la forme \(P\cosh(m(\ell-x))+Q\sinh(m(\ell-x))\). La condition \(\theta'(\ell)=0\) donne \(Q=0\). Puis \(\theta(0)=T_1-T_a\) donne \(P\) :
+
+\equationajustee{\boxed{\widetilde T(x)=\frac{\cosh\big(m(\ell-x)\big)}{\cosh(m\ell)}}}
+
+(Le profil a une tangente horizontale en \(\ell\) et \(\widetilde T(\ell)=1/\cosh(0{,}229)=0{,}974\) : l'ailette est quasi isotherme.)
+
+\textbf{Q27.} En régime stationnaire, sans flux en bout d'ailette, tout ce qui entre par la base est évacué par les faces :
+
+\equationajustee{\Phi=-\lambda Le\,T'(0)}
+
+avec \(T'(0)=-m(T_1-T_a)\tanh(m\ell)\). D'où
+
+\equationajustee{\boxed{\begin{aligned}
+\Phi&=\lambda Le\,m\,(T_1-T_a)\tanh(m\ell)\\
+&=\frac{2hL}{m}(T_1-T_a)\tanh(m\ell)
+\end{aligned}}}
+
+On retrouve le même résultat en intégrant les pertes latérales. A.N. : \(\Phi=2{,}9\times10^{-2}\ \mathrm{W\cdot K^{-1}}\times(T_1-T_a)\).
+
+\textbf{Q28.} La température décroît le long de l'ailette (\(\widetilde T<1\) pour \(x>0\), car la chaleur est perdue en chemin). L'écart local \(T-T_a\), moteur de la loi de Newton, est donc partout inférieur à \(T_1-T_a\) : \(\boxed{\Phi<\Phi_u}\). L'égalité correspondrait à une ailette de conductivité infinie.
+
+\textbf{Q29.} \(\eta\) est un rapport de deux puissances, donc sans dimension, et il est compris entre 0 et 1 d'après Q28. Il compare le flux réellement évacué au flux maximal possible pour la même surface et les mêmes conditions : c'est la définition d'un rendement. La « perte » chiffrée par \(\eta\) vient de la résistance thermique interne de l'ailette.
+
+\textbf{Q30.} \(\Phi_u=2hL\ell(T_1-T_a)\) (même surface d'échange que pour \(\Phi\)). Avec \(\lambda e=2h/m^2\) :
+
+\equationajustee{\begin{aligned}
+\eta&=\frac{\lambda Le\,m\tanh(m\ell)}{2hL\ell}\\
+&=\frac{\lambda e\,m}{2h\ell}\tanh(m\ell)\\
+&=\boxed{\frac{\tanh(m\ell)}{m\ell}}
+\end{aligned}}
+
+\textbf{Q31.} Valeurs utiles : \(m=15{,}2\ \mathrm{m^{-1}}\) et \(m\ell=0{,}229\). Pour les deux autres profils, \(m\ell_c=m(\ell+e/2)=0{,}244\) et \(2m\ell=0{,}457\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Ailette
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Calcul
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\eta\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+rectangulaire & \(\tanh(0{,}244)/0{,}244\) & \(0{,}981\) \\
+triangulaire & \(I_1/I_0(0{,}457)\approx0{,}223\) (graphe), puis \(0{,}223/0{,}229\) & \(0{,}975\) \\
+parabolique & \(2/(1+\sqrt{1+0{,}209})\) & \(0{,}953\) \\
+\end{longtable}
+
+Les trois profils ont les mêmes dimensions \(L\), \(\ell\), \(e\). Leurs surfaces d'échange sont égales à moins de \(1\ \%\) près, car \(2L\sqrt{\ell^2+e^2/4}\simeq2L\ell\). Le classement des flux suit donc celui des rendements : \textbf{l'ailette rectangulaire dissipe le plus.}
+
+Les écarts restent faibles (\(m\ell\ll1\), ailette quasi isotherme), alors que l'ailette triangulaire utilise deux fois moins de métal. Rapporté à la masse, le profil triangulaire serait le plus avantageux.
+
+\textbf{Q32.} Il faut une \textbf{convection forcée en écoulement turbulent} (ventilateur, nombre de Reynolds élevé). Le coefficient \(h\) est d'autant plus grand que la couche limite thermique, où le transfert se fait par diffusion, est mince : \(h\sim\lambda_{\mathrm{air}}/\delta\). Une grande vitesse amincit la couche limite, et le régime turbulent brasse l'air et renouvelle sans cesse l'air chaud au contact de la paroi.
+
+Augmenter \(h\) fait un peu baisser \(\eta\), car \(m\propto\sqrt h\). Mais le flux \(\Phi=\eta h\,2L\ell(T_1-T_a)\) augmente nettement.
+
+\hypertarget{partie-c-protection-par-couches-minces-de-composuxe9s-du-silicium}{%
+\section{Partie C --- Protection par couches minces de composés du silicium}\label{partie-c-protection-par-couches-minces-de-composuxe9s-du-silicium}}
+
+\hypertarget{i-thermodynamique-et-cinuxe9tique-de-formation-du-nitrure-de-silicium}{%
+\subsection{I --- Thermodynamique et cinétique de formation du nitrure de silicium}\label{i-thermodynamique-et-cinuxe9tique-de-formation-du-nitrure-de-silicium}}
+
+\textbf{Q33.}
+
+\equationajustee{\boxed{3\,\mathrm{Si(s)}+2\,\mathrm{N_2(g)}=\mathrm{Si_3N_4(s)}}}
+
+On a \(\Delta_rH^\circ=-828\ \mathrm{kJ\cdot mol^{-1}}\), car \(\Delta_fH^\circ=0\) pour les corps simples. Puis
+
+\equationajustee{\begin{aligned}
+\Delta_rS^\circ&=113-3\times18{,}8-2\times192\\
+&=-327{,}4\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}
+\end{aligned}}
+
+On en déduit
+
+\equationajustee{\begin{aligned}
+\Delta_rG^\circ(298)&=-828+298\times0{,}3274\\
+&=-730\ \mathrm{kJ\cdot mol^{-1}}
+\end{aligned}}
+
+et
+
+\equationajustee{\begin{aligned}
+\ln K^\circ&=\frac{-\Delta_rG^\circ}{RT}\\
+&=\frac{7{,}30\times10^5}{8{,}31\times298}\\
+&=295
+\end{aligned}}
+
+\equationajustee{\boxed{K^\circ\approx10^{128}}}
+
+\(K^\circ\gg10^4\) : à l'équilibre, \(P_{\mathrm{N_2}}=P^\circ K^{\circ\,-1/2}\approx10^{-64}\ \mathrm{bar}\). \textbf{La réaction est quantitative.}
+
+\textbf{Q34.} Réacteur adiabatique et isobare, donc \(\Delta H=0\). On suit un chemin fictif : réaction totale à \(298\ \mathrm{K}\) (\(\xi=1\ \mathrm{mol}\)), puis échauffement du seul produit \(\mathrm{Si_3N_4}\) (proportions stœchiométriques, réaction totale) :
+
+\equationajustee{\Delta_rH^\circ+C_{pm}(\mathrm{Si_3N_4})(T_f-298)=0}
+
+d'où
+
+\equationajustee{\begin{aligned}
+T_f&=298+\frac{828\times10^3}{99{,}5}\\
+&\approx\boxed{8{,}6\times10^3\ \mathrm{K}}
+\end{aligned}}
+
+\emph{Conclusion.} Cette valeur est irréaliste. Elle dépasse largement \(T_{\mathrm{fus}}(\mathrm{Si})=1687\ \mathrm{K}\) et \(T_{\mathrm{fus}}(\mathrm{Si_3N_4})=2173\ \mathrm{K}\) (changements d'état ignorés). Elle dépasse aussi la température d'inversion \(\Delta_rH^\circ/\Delta_rS^\circ\approx2{,}5\times10^3\ \mathrm{K}\), au-delà de laquelle \(\Delta_rG^\circ>0\) et la réaction n'est plus quantitative.
+
+La réaction est très exothermique : \textbf{elle ne peut pas être conduite en réacteur calorifugé} sans emballement ni destruction du produit. Il faut évacuer la chaleur (réacteur isotherme, comme dans la suite de l'énoncé).
+
+\textbf{Q35.} Pour un avancement \(\xi\), la masse de silicium consommée vaut \(\Delta W_{\mathrm{Si}}=3\xi M_{\mathrm{Si}}\). La prise de masse correspond à l'azote fixé, \(\Delta W=4\xi M_{\mathrm{N}}\), en supposant que seul le silicium réagit. Enfin \(W^0_{\mathrm{Si}}=0{,}6856\,W^0\). D'où
+
+\equationajustee{\alpha=\frac{3M_{\mathrm{Si}}}{4M_{\mathrm{N}}\times0{,}6856}\,\frac{\Delta W}{W^0}}
+
+et
+
+\equationajustee{\begin{aligned}
+\beta&=\frac{3\times28{,}1}{4\times14{,}0\times0{,}6856}\\
+&=\boxed{2{,}20}
+\end{aligned}}
+
+\textbf{Q36.} D'après la figure 11-a), le taux atteint plafonne vers 40 \% à 1500 °C, contre environ 60 \% à 1350 et 1400 °C. Deux phénomènes peuvent l'expliquer :
+1. \textbf{La fusion du silicium} (\(T_{\mathrm{fus}}=1414\ ^\circ\mathrm{C}\), entre 1400 et \(1500\ ^\circ\mathrm{C}\)). Les grains fondent et coalescent, la surface de contact avec le gaz chute, et le liquide se recouvre de nitrure.
+2. \textbf{La formation rapide d'une couche dense et passivante de \(\mathrm{Si_3N_4}\)} autour des grains. Elle bloque la diffusion de \(\mathrm{N_2}\) vers le silicium non converti. La forte exothermicité l'aggrave, car elle crée des surchauffes locales au-dessus de la température du four.
+
+L'argument thermodynamique (\(\Delta_rH^\circ<0\), donc \(K^\circ\) décroît avec \(T\) selon la loi de van 't Hoff) va dans le même sens.
+
+Mais il est faible : à \(1773\ \mathrm{K}\), \(\Delta_rG^\circ\approx-2{,}5\times10^2\ \mathrm{kJ\cdot mol^{-1}}\) et \(K^\circ\approx{\mathrm{e}}^{17}\), la réaction reste favorable.
+
+\textbf{Q37.} Ordre 0 : la vitesse molaire est constante, \(\mathrm{d}\xi/\mathrm{d}t=k\), donc \(\xi=kt\). Comme \(\alpha=3M_{\mathrm{Si}}\xi/W^0_{\mathrm{Si}}\) :
+
+\equationajustee{\boxed{\begin{aligned}
+\alpha(t)&=\frac{3M_{\mathrm{Si}}}{W^0_{\mathrm{Si}}}\,k\,t\\
+&=\frac{3M_{\mathrm{Si}}}{0{,}6856\,W^0}\,k\,t
+\end{aligned}}}
+
+C'est une droite passant par l'origine, ce que confirme la figure 11-b). Ici \(k\) s'exprime en \(\mathrm{mol\cdot min^{-1}}\).
+
+\textbf{Q38.} Loi d'Arrhenius :
+
+\equationajustee{\boxed{k(T)=A\exp\!\Big(-\frac{E_a}{RT}\Big)}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(k\) est la constante de vitesse, ici en \(\mathrm{mol\cdot s^{-1}}\) (ordre 0, vitesse molaire).
+\item
+  \(A\) est le facteur préexponentiel, de même unité que \(k\).
+\item
+  \(E_a>0\) est l'énergie d'activation, en \(\mathrm{J\cdot mol^{-1}}\).
+\item
+  \(R=8{,}31\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}\), et \(T\) est la température absolue en K.
+\end{itemize}
+
+Sous forme linéarisée :
+
+\equationajustee{\ln k=\ln A-\frac{E_a}{RT}}
+
+\textbf{Q39.} Pentes lues sur la figure 11-b) (points à \(30\ \mathrm{min}\)) : 13,8 \%, 20,7 \% et 25,2 \%. On en tire \(a=0{,}460\), \(0{,}690\) et \(0{,}840\ \%\cdot\mathrm{min^{-1}}\).
+
+Avec \(k=aW^0_{\mathrm{Si}}/(3M_{\mathrm{Si}})\) et \(W^0_{\mathrm{Si}}=571{,}8\ \mathrm{g}\) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(T\) (K)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(10^4/T\) (\(\mathrm{K^{-1}}\))
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(k\) (\(\mathrm{mol\cdot min^{-1}}\))
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\ln k\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1573 & 6,357 & \(3{,}12\times10^{-2}\) & \(-3{,}47\) \\
+1623 & 6,161 & \(4{,}68\times10^{-2}\) & \(-3{,}06\) \\
+1673 & 5,977 & \(5{,}70\times10^{-2}\) & \(-2{,}87\) \\
+\end{longtable}
+
+La régression de \(\ln k\) en fonction de \(1/T\) donne une pente et une ordonnée à l'origine :
+
+\equationajustee{\begin{aligned}
+-\frac{E_a}{R}&=-1{,}59\times10^4\ \mathrm{K}\\
+\ln A&=6{,}7
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{E_a\approx1{,}3\times10^2\ \mathrm{kJ\cdot mol^{-1}}}}
+
+\equationajustee{\boxed{A\approx8\times10^2\ \mathrm{mol\cdot min^{-1}}\approx13\ \mathrm{mol\cdot s^{-1}}}}
+
+Avec trois points sur une plage étroite de \(1/T\), \(E_a\) n'est connue qu'à environ \(30\ \%\) près. Les pentes deux à deux donnent en effet 172 et \(89\ \mathrm{kJ\cdot mol^{-1}}\), et \(A\) n'est connu qu'en ordre de grandeur.
+
+\hypertarget{ii-formation-de-dioxyde-de-silicium-sur-un-circuit-imprimuxe9}{%
+\subsection{II --- Formation de dioxyde de silicium sur un circuit imprimé}\label{ii-formation-de-dioxyde-de-silicium-sur-un-circuit-imprimuxe9}}
+
+\textbf{Q40.}
+
+\equationajustee{\boxed{\mathrm{Si(s)}+\mathrm{O_2(g)}=\mathrm{SiO_2(s)}}}
+
+\equationajustee{\boxed{\mathrm{Si(s)}+2\,\mathrm{H_2O(g)}=\mathrm{SiO_2(s)}+2\,\mathrm{H_2(g)}}}
+
+Le gaz dégagé avec la vapeur d'eau est le dihydrogène.
+
+Dans les deux cas, le silicium passe du nombre d'oxydation 0 à +IV : il est oxydé. Son partenaire est donc l'oxydant.
+
+\begin{itemize}
+\tightlist
+\item
+  Pour \(\mathrm{O_2}\), l'oxygène passe de 0 à −II (couple \(\mathrm{O_2}/\mathrm{SiO_2}\)).
+\item
+  Pour \(\mathrm{H_2O}\), c'est l'hydrogène qui passe de +I à 0 (couple \(\mathrm{H_2O}/\mathrm{H_2}\)).
+\end{itemize}
+
+\textbf{\(\mathrm{O_2}\) et \(\mathrm{H_2O}\) sont bien des oxydants.}
+
+\textbf{Q41.} \(J_g\) s'exprime en \(\mathrm{mol\cdot m^{-2}\cdot s^{-1}}\). La concentration \(C\) s'exprime en \(\mathrm{mol\cdot m^{-3}}\). Donc
+
+\equationajustee{\boxed{[h_g]=\mathrm{m\cdot s^{-1}}}}
+
+C'est une vitesse de transfert, de même dimension que \(D/x\) et \(k_i\).
+
+\textbf{Q42.} \(M(\mathrm{SiO_2})=60{,}1\ \mathrm{g\cdot mol^{-1}}\) et \(\rho=2{,}20\ \mathrm{g\cdot cm^{-3}}\), donc \(\rho/M=3{,}66\times10^{-2}\ \mathrm{mol\cdot cm^{-3}}\). Il faut une mole de \(\mathrm{O_2}\), ou deux moles de \(\mathrm{H_2O}\), par mole de \(\mathrm{SiO_2}\) :
+
+\equationajustee{\boxed{N_v(\mathrm{O_2})=\frac{\rho}{M}=3{,}66\times10^4\ \mathrm{mol\cdot m^{-3}}}}
+
+\equationajustee{\boxed{N_v(\mathrm{H_2O})=\frac{2\rho}{M}=7{,}32\times10^4\ \mathrm{mol\cdot m^{-3}}}}
+
+Pour former \(1\ \mathrm{cm^3}\) de \(\mathrm{SiO_2}\), il faut donc :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\boxed{3{,}66\times10^{-2}\ \mathrm{mol}\ \text{de}\ \mathrm{O_2}}\), soit \(2{,}20\times10^{22}\) molécules ;
+\item
+  ou \(\boxed{7{,}32\times10^{-2}\ \mathrm{mol}\ \text{de}\ \mathrm{H_2O}}\).
+\end{itemize}
+
+\textbf{Q43.} Le régime est quasi stationnaire, et l'oxydant n'est ni produit ni consommé entre le gaz et l'interface \(\mathrm{Si/SiO_2}\) (il ne réagit qu'à celle-ci). La géométrie est plane : par conservation de la matière, le flux surfacique est le même à toute abscisse, \(J_g=J_d=J_r=J\). Alors
+
+\equationajustee{\begin{aligned}
+C_g-C_s&=\frac{J}{h_g}\\
+C_s-C_i&=\frac{Jx}{D}\\
+C_i&=\frac{J}{k_i}
+\end{aligned}}
+
+En sommant :
+
+\equationajustee{J=\frac{C_g}{\dfrac1{h_g}+\dfrac1{k_i}+\dfrac{x}{D}}}
+
+Pour former une épaisseur \(\mathrm{d}x\), il faut \(N_v\,\mathrm{d}x\) moles d'oxydant par unité d'aire : \(N_v\,\mathrm{d}x/\mathrm{d}t=J\). En intégrant de \(x_0\) (à \(t=0\)) à \(x\) :
+
+\equationajustee{N_v\Big[\Big(\frac1{h_g}+\frac1{k_i}\Big)(x-x_0)+\frac{x^2-x_0^2}{2D}\Big]=C_gt}
+
+soit
+
+\equationajustee{x^2+Ax=B(t+\tau)}
+
+avec
+
+\equationajustee{\boxed{\begin{aligned}
+A&=2D\Big(\frac1{h_g}+\frac1{k_i}\Big)\\
+B&=\frac{2DC_g}{N_v}\\
+\tau&=\frac{x_0^2+Ax_0}{B}
+\end{aligned}}}
+
+\textbf{Q44.} On garde la racine positive :
+
+\equationajustee{\boxed{x(t)=\frac A2\left[\sqrt{1+\frac{4B(t+\tau)}{A^2}}-1\right]}}
+
+\begin{itemize}
+\tightlist
+\item
+  Pour \(t+\tau\ll A^2/4B\) : \(\sqrt{1+u}\simeq1+u/2\), d'où \(\boxed{x\simeq\dfrac BA(t+\tau)}\), \textbf{régime linéaire}. La couche est mince et la croissance est limitée par le transfert gazeux et la réaction d'interface.
+\item
+  Pour \(t+\tau\gg A^2/4B\) : \(\boxed{x\simeq\sqrt{B(t+\tau)}}\), \textbf{régime parabolique}. La croissance est limitée par la diffusion à travers l'oxyde et ralentit (couche auto-limitante).
+\end{itemize}
+
+Allure (figure 4) : \(x(t)\) part de \(x_0\). Elle quitte la droite de pente \(B/A\) vers \(t+\tau\sim A^2/4B\), pour s'infléchir vers la parabole.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q44-croissance-oxyde.pdf}
+\caption*{Figure 4 --- Épaisseur d'oxyde x(t) : régime linéaire puis régime
+parabolique, la courbe restant sous ses deux asymptotes}
+\end{figure}
+
+\textbf{Q45.} Le temps de diffusion à travers la couche est \(\tau_D\sim x^2/D\). Le temps de croissance vaut \(\tau_c=x/\dot x=xN_v/J\), avec
+
+\equationajustee{\begin{aligned}
+\tau_c&=\frac{xN_v}{C_g}\Big(\frac1{h_g}+\frac1{k_i}+\frac xD\Big)\\
+&\geqslant\frac{N_v}{C_g}\frac{x^2}{D}
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{\frac{\tau_c}{\tau_D}\geqslant\frac{N_v}{C_g}}}
+
+Le régime quasi stationnaire exige que le profil de concentration s'établisse bien plus vite que l'interface ne se déplace, \(\tau_D\ll\tau_c\), d'où la condition \(\boxed{C_g\ll N_v}\).
+
+Elle est largement vérifiée. Un gaz à 1 bar et 1000 °C a \(C_g=P/RT\approx9\ \mathrm{mol\cdot m^{-3}}\), contre \(N_v\approx4\times10^4\ \mathrm{mol\cdot m^{-3}}\).
+
+\end{document}

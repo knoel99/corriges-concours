@@ -1,0 +1,1824 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts PSI — Sciences industrielles 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Mines-Ponts PSI}
+\fancyhead[R]{\small Sciences industrielles 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts PSI — Sciences industrielles 2026\par}\medskip
+  {\large Mines-Ponts · PSI · Sciences industrielles · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Support.} Le sujet porte sur une machine de gravure laser à deux axes (PHLOX), qui micrograve un guide d'onde en PMMA pour fabriquer des rétroéclairages (« backlights »). Le faisceau, fixe, est renvoyé par un miroir porté par l'axe X vers une plaque portée par l'axe Y. Chaque axe est motorisé par des moteurs linéaires synchrones (MLS). La qualité de la gravure dépend de deux choses : la \textbf{précision géométrique} des guidages et la \textbf{constance de la vitesse} de balayage.
+
+\textbf{Format.} L'épreuve dure 4 h, \textbf{sans calculatrice}. Elle comporte 35 questions et 7 annexes, et les réponses se font sur un cahier de réponses, qui n'est pas reproduit ici : les questions qui en dépendent sont traitées à partir des données de l'énoncé.
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1012}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1239}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.4068}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3381}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Outils
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2 & Q1--Q7 & schéma cinématique, hyperstatisme, défauts géométriques, mise et maintien en position des rails Y & graphe des liaisons, \(h = E_c - I_c + m_c\), liaisons équivalentes \\
+4 & Q8--Q9 & loi en trapèze de vitesse et durée de gravure & cinématique du point \\
+5 & Q10--Q12 & MLS contre vis-écrou : masses équivalentes & énergie cinétique \\
+6.1 & Q13--Q17 & effort moteur, torseur du guidage & principe fondamental de la dynamique, transport du moment dynamique \\
+6.2 & Q18--Q21 & frottements identifiés aux moindres carrés et modèle retenu & régression linéaire, apprentissage supervisé \\
+7 & Q22--Q26 & MLS vu comme deux machines à courant continu, boucle de courant PI & Laplace, compensation de pôle \\
+8 & Q27--Q34 & boucle de vitesse (P puis PI) et boucle de position (avance de phase) & classe, valeur finale, Bode \\
+9 & Q35 & lecture de \(t_{r5\%}\) et du retard de traînage & réponses temporelles \\
+\end{longtable}
+
+\textbf{Ce qu'en dit le jury.} D'après le rapport 2026, le sujet a été globalement traité jusqu'au bout. Les questions où les copies se sont le plus séparées sont :
+- Q2 (hyperstatisme), « moyennement réussie dans l'ensemble » ;
+- Q8, dont la justification du trapèze de vitesse « a été peu réussie », et dont le tracé de la position a été laborieux ;
+- Q9, où le sens du paramètre \(N\) a souvent été mal identifié ;
+- Q10, à cause des applications numériques (unité du pas) ;
+- Q16, où la partie moment est jugée « beaucoup plus délicate » que la partie résultante ;
+- Q21, question « originale », « relativement peu traitée et peu réussie » ;
+- Q25 à Q28, dont les justifications sur la classe et le correcteur sont souvent restées insuffisantes ;
+- Q29 (valeur de \(K_V\)) et Q34 (confusion entre \(\sin\varphi_m\) et \(\cos\varphi_m\)).
+
+À l'inverse, Q3, Q6, Q11, Q12, Q15 (« Question très bien réussie »), Q22, Q24 et Q32 ont posé peu de difficultés : il ne faut pas les laisser passer.
+
+\textbf{Rédaction : ce que le jury sanctionne.} Le rapport 2026 rappelle que, pour vérifier une exigence, « les candidats ne peuvent se contenter d'indiquer qu'elle est validée sans rappeler l'exigence concernée, donner la valeur déterminée et comparer explicitement les deux. » Il ajoute : « Les réponses brutes n'ont pas été valorisées. » Il demande aussi de limiter les abréviations (TMS, PFD) et de vérifier l'homogénéité, dont l'oubli explique beaucoup de résultats faux.
+
+\textbf{Gestion du temps.} Le sujet est long mais très guidé. Les parties 6.2, 7 et 8.1 sont indépendantes et rapides : elles rapportent beaucoup pour peu de temps. Sans calculatrice, il faut savoir mener les calculs à la main : \(\arctan(5/3)\approx 59°\), \(\sqrt3\approx1{,}73\), \(10\log3\approx4{,}8\) dB.
+
+\hypertarget{partie-2-analyse-guxe9omuxe9trique-partielle-de-la-machine-et-pruxe9cision-des-guidages-exigence-1.1}{%
+\section{Partie 2 --- Analyse géométrique partielle de la machine et précision des guidages (exigence 1.1)}\label{partie-2-analyse-guxe9omuxe9trique-partielle-de-la-machine-et-pruxe9cision-des-guidages-exigence-1.1}}
+
+Cette partie étudie la géométrie du montage des deux axes sur le carter. On calcule d'abord l'hyperstatisme du modèle global, puis on étudie comment la mise en position par piges et le bridage des rails Y rendent ce montage hyperstatique réalisable. Notations : \(E_C\) (ensemble carter), \(E_X\) (ensemble X), \(E_Y\) (ensemble Y). Les numéros (0), (1), (2) sont réservés à la partie 6.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Relisez la description : quelles pièces se touchent réellement ? Un moteur dont l'inducteur et l'induit ne se touchent pas crée-t-il une liaison ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque rail guide seul son induit en translation. Comptez les rails entre chaque paire de classes.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le MLS ne crée \textbf{aucune liaison}, seulement une action mécanique à distance. Les liaisons du schéma sont :
+- entre \(E_C\) et \(E_X\) : une \textbf{glissière de direction \(\vec X\)} (rail X) ;
+- entre \(E_C\) et \(E_Y\) : \textbf{deux glissières de direction \(\vec Y\)} en parallèle (rails Y1 et Y2) ;
+- entre \(E_X\) et \(E_Y\) : \textbf{aucune liaison}, puisque seul le faisceau laser relie le miroir à la plaque.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q1-schema-cinematique.pdf}
+\caption*{Figure 1 --- Schéma cinématique de la machine, vue de dessus : glissière
+L1 suivant X, glissières L2 et L3 suivant Y en parallèle}
+\end{figure}
+
+Le rail X est porté en hauteur par la poutre ; le miroir, en porte-à-faux au-dessus de la plaque, ne la touche pas. Chaque glissière est dessinée avec sa direction réelle : \(\vec X\) pour \(L_1\), \(\vec Y\) pour \(L_2\) et \(L_3\).
+
+\begin{piege}
+
+Dessiner une liaison entre inducteur et induit. L'énoncé répète deux fois qu'ils ne sont pas en contact direct : la force motrice est une action, pas une liaison.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève qu'au-delà des erreurs de choix de liaisons, « la représentation spatiale des liaisons n'est pas toujours correctement maîtrisée ». Le symbole de chaque glissière doit être orienté selon sa direction dans le repère du schéma.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Dessinez le graphe des liaisons et comptez ses cycles indépendants : une arête qui ne ferme aucune boucle ne crée pas d'hyperstatisme.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Déterminez \(m_c\) en listant les mouvements possibles (utiles et internes), puis utilisez \(h = E_c - I_c + m_c\). Contrôlez par l'approche statique.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Le graphe comporte 3 sommets et 3 arêtes :
+- \(L_1\) : glissière \(\vec X\) entre \(E_C\) et \(E_X\) ;
+- \(L_2\) et \(L_3\) : glissières \(\vec Y\) entre \(E_C\) et \(E_Y\).
+
+\equationajustee{\begin{aligned}
+\gamma &= N_L - N_S + 1\\
+&= 3 - 3 + 1\\
+&= 1
+\end{aligned}}
+
+Le seul cycle est formé par \(L_2\) et \(L_3\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q2-graphe-liaisons.pdf}
+\caption*{Figure 2 --- Graphe des liaisons : trois glissières, un seul cycle formé
+par L2 et L3}
+\end{figure}
+
+Les mouvements possibles sont la translation de \(E_X\) suivant \(\vec X\) et celle de \(E_Y\) suivant \(\vec Y\), sans mobilité interne :
+
+\equationajustee{\boxed{m_c = 2}}
+
+Chaque glissière a une inconnue cinématique, donc \(I_c = 3\) ; le cycle donne \(E_c = 6\) équations :
+
+\equationajustee{\begin{aligned}
+h &= E_c - I_c + m_c\\
+&= 6 - 3 + 2\\
+&= 5
+\end{aligned}}
+
+\equationajustee{\boxed{h = 5}}
+
+Contrôle statique : \(I_s = 15\) inconnues et \(E_s = 12\) équations. Le rang vaut \(r_s = 12 - 2 = 10\), d'où \(h = 15 - 10 = 5\).
+
+\textbf{Commentaire vis-à-vis de 1.1.1 (« assurer une raideur \(K'\) »).} Le modèle est \textbf{hyperstatique d'ordre 5}. Cet hyperstatisme est \textbf{voulu} : deux rails en parallèle rigidifient l'axe Y, ce qui sert l'exigence de raideur 1.1.1. En contrepartie, il faut respecter 5 conditions géométriques entre les rails :
+- l'entraxe ;
+- la hauteur relative ;
+- le parallélisme dans le plan horizontal ;
+- le parallélisme dans le plan vertical ;
+- le dévers.
+
+Ces conditions sont traitées par la suite (exigence 1.1.2).
+
+\begin{methode}
+
+Quand on commente un degré d'hyperstatisme, on traduit chaque inconnue surabondante en une condition géométrique (une translation ou une rotation relative bloquée deux fois). C'est cette traduction qui prépare les questions sur les défauts et le montage.
+
+\end{methode}
+
+\begin{piege}
+
+Conclure que le système est « raide », « robuste » ou « solide ». Le degré \(h\) caractérise le modèle : on dit qu'il est hyperstatique d'ordre 5, puis on en tire les conséquences (raideur accrue, conditions géométriques de montage).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 juge la question « moyennement réussie dans l'ensemble » : les erreurs viennent d'une caractérisation incorrecte des liaisons et d'une mauvaise maîtrise de la formule de \(h\). Il note aussi : « Quelques problèmes de vocabulaire ont également été relevés pour conclure sur l'hyperstatisme du système (raide, robuste, solide, etc.). »
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Deux glissières \(\vec Y\) en parallèle : quel seul mouvement relatif laissent-elles libre entre les rails ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un défaut empêche le montage s'il porte sur une direction bloquée et si rien ne peut l'absorber. Ici, les guidages sont réglés en usine.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Seule la translation relative suivant \(\vec Y\) est libre. Les défauts qui \textbf{rendent le montage impossible} sont ceux qui portent sur les 5 mobilités bloquées :
+- entraxe (écart suivant \(\vec X\)) ;
+- parallélisme dans le plan horizontal (rotation autour de \(\vec Z\)) ;
+- différence de hauteur (écart suivant \(\vec Z\)) ;
+- parallélisme dans le plan vertical (rotation autour de \(\vec X\)) ;
+- dévers (rotation autour de \(\vec Y\)).
+
+Un décalage longitudinal suivant \(\vec Y\) est sans effet. \emph{(Sur le cahier de réponses, on entoure les schémas correspondant à ces défauts.)}
+
+\begin{methode}
+
+Les défauts gênants d'un montage hyperstatique sont exactement ceux qui portent sur les mobilités bloquées plusieurs fois : la liste de la question 2 sert directement ici.
+
+\end{methode}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Quelle est la forme de la surface de contact entre le rail et le carter ? Une liaison se donne toujours avec ses caractéristiques géométriques.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Les deux surfaces en contact sont planes : le contact est modélisé par une \textbf{liaison appui plan de normale \(\vec Z\)}, dont le plan de contact est la face d'appui du carter.
+
+Caractéristique géométrique : la normale \(\vec Z\). La liaison laisse 3 degrés de liberté (translations \(\vec X\) et \(\vec Y\), rotation \(\vec Z\)) et a 3 inconnues statiques.
+
+\begin{piege}
+
+Répondre « glissière » parce que le rail sert à guider. On modélise ici le contact rail/carter, pas le contact rail/patin.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 est net : « Une liaison donnée sans caractéristiques ne saurait constituer une réponse suffisante. » Il demande aussi d'orthographier correctement le nom des liaisons, et signale des confusions entre caractéristiques d'une liaison, mobilités et torseur cinématique.
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Contre quelle face du rail une pige verticale peut-elle venir en appui ? Déduisez-en la normale du contact.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Liaisons en parallèle : intersectez les mouvements permis. Que bloque un deuxième point de contact décalé le long du rail ?
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Le flanc du rail s'appuie sur les deux piges. On a deux contacts sphère-plan, caractérisés chacun par un point et une normale :
+- au point \(M_1\), de \textbf{normale \(\vec X\)} ;
+- au point \(M_3\), de \textbf{normale \(\vec X\)}.
+
+Les deux points sont éloignés l'un de l'autre suivant \(\vec Y\). Ils sont en parallèle avec l'appui plan de normale \(\vec Z\) de la question 4.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q5-mise-en-position-rail.pdf}
+\caption*{Figure 3 --- Mise en position du rail Y1 : appui plan de normale Z et
+deux contacts sphère-plan de normale X, équivalents à une glissière de
+direction Y}
+\end{figure}
+
+On intersecte les mouvements permis :
+- l'appui plan laisse \(\{T_X, T_Y, R_Z\}\) ;
+- le contact en \(M_1\) supprime \(T_X\) ;
+- le contact en \(M_3\), décalé suivant \(\vec Y\), supprime \(R_Z\).
+
+\equationajustee{\boxed{\text{liaison \text{équivalente} : \text{glissière} de direction }\vec Y}}
+
+Il y a \(3 + 1 + 1 = 5\) inconnues, exactement celles d'une glissière : l'association est \textbf{isostatique}.
+
+\begin{methode}
+
+Pour des liaisons en parallèle, on intersecte les mobilités. On compte ensuite les inconnues statiques pour savoir si l'association est iso- ou hyperstatique.
+
+\end{methode}
+
+\begin{piege}
+
+Changer de modèle entre Q4 et Q5. La liaison rail Y1/carter reste l'appui plan de normale \(\vec Z\) trouvé à la question 4 ; les piges s'y ajoutent en parallèle. Le rapport 2026 signale des incohérences de ce type entre les deux questions.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note : « Les caractéristiques de la liaison sphère-plan ne sont pas toujours correctement connues. » Il faut donner le point de contact et la normale de chaque sphère-plan, puis la direction de la glissière équivalente.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Dans quelles directions les piges agissent-elles ? Ce qu'elles ne contraignent pas, elles ne le corrigent pas.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Les piges, logées dans des perçages précis, imposent la position du rail suivant \(\vec X\) et son orientation autour de \(\vec Z\). Elles compensent donc :
+- le \textbf{défaut d'entraxe} ;
+- le \textbf{défaut de parallélisme dans le plan horizontal}.
+
+Les défauts suivant \(\vec Z\) (hauteur, parallélisme vertical, dévers) ne sont pas compensés : ils dépendent de la planéité et de la coplanarité des faces d'appui du carter.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Distinguez mise en position et maintien en position : la bride impose-t-elle une nouvelle position, ou presse-t-elle seulement le rail sur ses appuis ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Regardez sur l'Annexe 3 dans quelle direction la bride serre le rail et s'il existe un jeu latéral.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+La bride coiffe la semelle du rail et la plaque sur le carter suivant \(-\vec Z\), avec un jeu latéral. Elle assure le \textbf{maintien en position} : elle ferme l'appui plan et maintient le rail par adhérence. Elle \textbf{n'impose aucune position nouvelle}. Il n'y a donc \textbf{pas d'impact sur la mise en position}, à condition de brider après avoir plaqué le rail contre ses piges.
+
+\textbf{Conclusion vis-à-vis de 1.1.2 (« permettre le montage précis de la machine à gravure »).} La mise en position est isostatique et référencée sur des piges précises, et le maintien en position ne la perturbe pas : \textbf{l'exigence 1.1.2 est satisfaite}.
+
+\begin{piege}
+
+Attribuer aux brides la précision du montage. La précision vient de la mise en position (appui plan et piges) ; les brides ne font que maintenir. Confondre les deux fonctions fausse la conclusion sur 1.1.2.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale : « De nombreuses confusions entre mise en position et maintien en position ont été relevées lors de la conclusion sur l'exigence 1.1.2. »
+
+\end{jury}
+
+\hypertarget{partie-4-uxe9tude-de-la-duruxe9e-dun-cycle-de-gravure-pour-laxe-x-exigence-1.2}{%
+\section{Partie 4 --- Étude de la durée d'un cycle de gravure pour l'axe X (exigence 1.2)}\label{partie-4-uxe9tude-de-la-duruxe9e-dun-cycle-de-gravure-pour-laxe-x-exigence-1.2}}
+
+On établit la loi de mouvement en trapèze de vitesse, puis on en déduit le temps de gravure d'une plaque, qu'on compare au cahier des charges.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Dérivez un échelon de vitesse. Quelle force motrice faudrait-il alors, d'après le théorème de la résultante dynamique ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour les tracés : dérivez le trapèze pour obtenir l'accélération, intégrez-le pour obtenir la position. La vitesse est continue : que dire de la tangente à \(x(t)\) ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Un échelon de vitesse demande une accélération infinie, donc une force motrice infinie : c'est \textbf{irréalisable}, car le moteur sature à \(F_{m\text{-}max}\). De plus, l'énoncé signale que des accélérations trop fortes ont \textbf{fait vibrer la machine} et dégradé la gravure. Le trapèze \textbf{borne l'accélération} à \(\pm a_{max}\), donc l'effort moteur, et assure une \textbf{vitesse constante} pendant l'usinage.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Phase
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\ddot x\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(x(t)\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\([0,t_1]\) & \(+a_{max}\) & parabole convexe \\
+\([t_1,t_2]\) & \(0\) & droite de pente \(V_{max}\) \\
+\([t_2,t_f]\) & \(-a_{max}\) & parabole concave, tangente horizontale en \(t_f\) \\
+\end{longtable}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q8-profils-trapeze.pdf}
+\caption*{Figure 4 --- Trapèze de vitesse, accélération en créneaux et position
+(parabole, droite, parabole) sur un cycle}
+\end{figure}
+
+La position est continue et de tangente continue en \(t_1\) et en \(t_2\). Expressions, avec \(t_1 = V_{max}/a_{max}\) et \(t_2 = t_f - t_1\) :
+
+\equationajustee{x(t) = \begin{cases} \tfrac12 a_{max}t^2 & 0\le t\le t_1\\ \tfrac12 a_{max}t_1^2 + V_{max}(t - t_1) & t_1\le t\le t_2\\ d - \tfrac12 a_{max}(t_f - t)^2 & t_2\le t\le t_f\end{cases}}
+
+\begin{piege}
+
+Tracer des raccords anguleux ou oublier la portion rectiligne de \(x(t)\). La pente de \(x\) vaut \(V_{max}\) de part et d'autre de \(t_1\) et de \(t_2\).
+Elle est nulle au départ et à l'arrivée, en \(t_f\).
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, la justification du trapèze « repose souvent sur des considérations trop générales, mathématiques ou hors sujet ». Le tracé de la position a été « beaucoup plus laborieux », avec « de nombreuses discontinuités de tangence ». La justification attendue est physique : force bornée et vibrations limitées.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+La distance parcourue est l'aire sous \(V(t)\). Vérifiez d'abord que le palier existe.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(N\), croisez la taille de la zone utile (exigence 1.2.2) et le pas de transfert entre deux lignes, donné sur la figure 5.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+On a \(t_1 = V_{max}/a_{max} = 0{,}05\) s. La distance d'accélération vaut :
+
+\equationajustee{d_1 = \frac{V_{max}^2}{2a_{max}} = 25\ \text{mm}}
+
+Comme \(2d_1 < d\), le palier existe. L'aire du trapèze donne \(d = V_{max}(t_f - t_1)\), d'où :
+
+\equationajustee{\boxed{t_f = \frac{d}{V_{max}} + \frac{V_{max}}{a_{max}}}}
+
+\equationajustee{\begin{aligned}
+t_f &= 0{,}52 + 0{,}05\\
+&= 0{,}57\ \text{s}
+\end{aligned}}
+
+Chaque plaque demande \(N\) lignes horizontales et \(N\) lignes verticales, chacune parcourue en \(t_f\) :
+
+\equationajustee{\boxed{T = 2N\,t_f}}
+
+\(N\) est le nombre de lignes dans une direction : la largeur de la zone utile divisée par le pas de transfert. Avec \(N = 500\ \text{mm}/1\ \text{mm} = 500\) lignes :
+
+\equationajustee{\begin{aligned}
+T &= 1000\times0{,}57\ \text{s}\\
+&= 570\ \text{s}\\
+&= 9{,}5\ \text{min}
+\end{aligned}}
+
+\textbf{Conclusion.} L'exigence 1.2.1 fixe un temps de gravure maximal de 10 minutes. Pour la plaque maximale de l'exigence 1.2.2 (\(50\times50\) cm²), on trouve 9,5 min, inférieur à 10 min : \textbf{l'exigence 1.2.1 est satisfaite}, avec une marge faible (5 \%).
+
+\emph{Incohérence à signaler.} La distance d'accélération de 25 mm dépasse la marge de 10 mm de la figure 5 : la vitesse n'est pas encore constante en entrée de zone utile. On poursuit avec \(d = 52\) cm.
+
+\begin{methode}
+
+Contrôle par cas limite : quand \(a_{max}\to\infty\), \(t_f\to d/V_{max}\). Le terme \(V_{max}/a_{max}\) est le temps perdu dans les deux phases transitoires.
+
+\end{methode}
+
+\begin{piege}
+
+Prendre pour \(N\) un nombre de plaques ou de cycles, ou oublier que l'on grave dans les deux directions. Ici \(N\) compte les lignes d'une direction, d'où le facteur 2.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève que certains candidats « n'ont manifestement pas correctement identifié la signification du paramètre N », et que la méthode pour passer d'une courbe de vitesse à un déplacement (l'aire) est mal maîtrisée. Il ajoute : « Les conclusions manquent parfois de justification. » On rappelle donc l'exigence (10 min), la valeur trouvée (9,5 min) et on compare.
+
+\end{jury}
+
+\hypertarget{partie-5-comparaison-entre-mls-et-moteur-rotatif-systuxe8me-vis-uxe9crou-exigences-1.3.1-et-1.3.2}{%
+\section{Partie 5 --- Comparaison entre MLS et (moteur rotatif + système vis-écrou) (exigences 1.3.1 et 1.3.2)}\label{partie-5-comparaison-entre-mls-et-moteur-rotatif-systuxe8me-vis-uxe9crou-exigences-1.3.1-et-1.3.2}}
+
+On compare l'inertie « vue » par la charge dans les deux architectures.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+La masse équivalente se définit par l'égalité des énergies cinétiques, exprimées avec la vitesse de la pièce (2).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrivez la relation entre la rotation de la vis et la translation de l'écrou, avec le pas \(p\), puis éliminez \(\omega\).
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Démarche.
+1. On isole l'ensemble en mouvement (1+2) dans le référentiel du carter, supposé galiléen.
+2. On écrit l'énergie cinétique de chaque solide : la rotation autour d'un axe fixe donne \(\tfrac12 J\omega^2\) et la translation donne \(\tfrac12 mV^2\).
+3. On exprime tout en fonction de la vitesse \(V\) de (2) grâce à la loi entrée-sortie de la vis.
+4. On identifie avec \(\tfrac12 m_{eq1}V^2\).
+
+La loi entrée-sortie de la vis, de pas \(p\) en mètres par tour, s'écrit :
+
+\equationajustee{V = \frac{p}{2\pi}\,\omega}
+
+\equationajustee{\begin{aligned}
+E_c &= \tfrac12 J_{eq}\omega^2 + \tfrac12 m_2V^2\\
+&= \tfrac12\Big[m_2 + J_{eq}\Big(\frac{2\pi}{p}\Big)^2\Big]V^2
+\end{aligned}}
+
+\(J_{eq}\) est l'inertie de tout ce qui tourne à la vitesse de la vis (rotor, accouplement, vis).
+
+\equationajustee{\boxed{m_{eq1} = m_2 + J_{eq}\left(\frac{2\pi}{p}\right)^2}}
+
+\textbf{Application numérique.} Elle utilise les valeurs du cahier de réponses, non disponible ici. Le pas, donné en millimètres, doit être converti en mètres.
+
+Ordre de grandeur, purement indicatif : pour \(V = 1\) m/s, un pas \(p = 20\) mm impose déjà environ 3000 tr/min au moteur. Avec \(J_{eq}\approx10^{-4}\) kg·m², le terme ramené vaut environ 10 kg, du même ordre que la masse en translation.
+
+\begin{piege}
+
+Calculer une inertie équivalente (en kg·m²) au lieu de la masse équivalente demandée (en kg). Le contrôle d'homogénéité (kg·m² × m⁻² = kg) détecte aussi l'oubli du carré ou du \(2\pi\).
+
+\end{piege}
+
+\begin{piege}
+
+Laisser le pas en millimètres : \((2\pi/p)^2\) est alors faux d'un facteur \(10^6\). Et sans calculatrice, garder \(\pi\) sous forme littérale le plus longtemps possible plutôt que de l'arrondir trop tôt.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 constate que la méthode est connue, mais que les applications numériques ont été source de trop nombreuses erreurs, y compris par des approximations de \(\pi\). Il écrit : « Il est étonnant qu'un certain nombre de candidats calcule l'inertie équivalente au lieu de la masse équivalente. Attention notamment à l'unité du pas et son impact dans l'application numérique demandée. »
+
+\end{jury}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Y a-t-il une pièce en rotation dans la solution MLS ?
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+L'induit et le miroir sont encastrés et en translation à la même vitesse, et aucune pièce ne tourne :
+
+\equationajustee{\begin{aligned}
+m_{eq2} &= m_1 + m_2\\
+&= 4 + 6\\
+&= 10\ \text{kg}
+\end{aligned}}
+
+\equationajustee{\boxed{m_{eq2} = 10\ \text{kg}}}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Reliez la masse équivalente à la force nécessaire pour une accélération imposée, puis relisez le texte exact des exigences 1.3.1 et 1.3.2.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+On a \(m_{eq1} > m_{eq2}\) : l'inertie de rotation ramenée alourdit la solution vis-écrou.
+- \textbf{Exigence 1.3.1} (« masse en translation de 6 kg ») : avec le MLS, seule la charge (le miroir, 6 kg) et l'induit sont mis en mouvement, soit 10 kg. La vis-écrou y ajoute l'inertie ramenée.
+- \textbf{Exigence 1.3.2} (\(a_{max} = 20\) m·s⁻² et \(V_{max} = 1\) m·s⁻¹) : à accélération imposée, la force \(m_{eq}a_{max}\), donc le dimensionnement du moteur, est plus grande avec la vis-écrou.
+
+Le MLS travaille en prise directe : sans transmission, il n'y a ni jeu, ni usure, ni vibration de vis. \textbf{Le MLS satisfait mieux les exigences 1.3.1 et 1.3.2.}
+
+\hypertarget{partie-6-moduxe9lisation-et-dimensionnement-dun-mls-exigence-1.3.2}{%
+\section{Partie 6 --- Modélisation et dimensionnement d'un MLS (exigence 1.3.2)}\label{partie-6-moduxe9lisation-et-dimensionnement-dun-mls-exigence-1.3.2}}
+
+On dimensionne le moteur (effort) et son guidage intégré (torseur transmissible) par le principe fondamental de la dynamique, puis on affine le modèle par une identification des frottements. Numérotation de l'Annexe 4 : (0) carter, (1) induit X, (2) miroir.
+
+\hypertarget{dimensionnement-dynamique-du-mls}{%
+\subsection{6.1. Dimensionnement dynamique du MLS}\label{dimensionnement-dynamique-du-mls}}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Choisissez un ensemble isolé qui fait disparaître l'action d'encastrement entre (1) et (2).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une seule projection du théorème de la résultante dynamique suffit. Que transmet une glissière parfaite suivant sa direction, et seulement suivant sa direction ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+On isole \(\Sigma = (1)+(2)\), en translation suivant \(\vec X\) dans \(R\) galiléen.
+
+Hypothèses : solides indéformables et glissière parfaite. La glissière parfaite ne transmet aucun effort suivant \(\vec X\), donc \(X_{01} = 0\) ; ses autres composantes ne sont pas nulles.
+
+Actions extérieures : le poids, \(\{T_{0\to1}\}\) et \(F_m\vec X\).
+
+Le théorème de la résultante dynamique, projeté sur \(\vec X\), donne :
+
+\equationajustee{\boxed{F_m(t) = (m_1+m_2)\,\ddot x(t)}}
+
+\begin{piege}
+
+Écrire que le torseur d'une liaison parfaite est nul. « Parfaite » signifie seulement sans frottement : seule la composante suivant la direction du mouvement, ici \(X_{01}\), est nulle. Le rapport 2026 met explicitement en garde contre cette hypothèse fausse.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 rappelle : « Le théorème de la résultante dynamique étant une équation vectorielle, il convient de préciser la projection utilisée pour obtenir une équation scalaire. » Il ajoute que l'usage d'abréviations pour les théorèmes conduit parfois à des approximations ou des erreurs : on écrit le nom du théorème en entier.
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Où \(|\ddot x|\) est-elle maximale sur le trapèze ? Donnez l'intervalle de temps et dites pourquoi.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+La force motrice est proportionnelle à l'accélération. Elle est donc maximale en valeur absolue quand \(|\ddot x| = a_{max}\), c'est-à-dire :
+- pendant l'accélération, \([0;\,0{,}05\ \text{s}]\) ;
+- pendant la décélération, \([0{,}52;\,0{,}57\ \text{s}]\).
+
+\equationajustee{\begin{aligned}
+|F_m| &= 10\times20\\
+&= 200\ \text{N}
+\end{aligned}}
+
+\equationajustee{\boxed{|F_m|_{max} = 200\ \text{N}}}
+
+Le moteur fournit au plus \(F_{m\text{-}max} = 1000\) N, et \(200\ \text{N} < 1000\) N : le moteur convient, avec un coefficient de sécurité de 5, et \textbf{l'exigence 1.3.2 est satisfaite}.
+
+\begin{piege}
+
+Ajouter le poids dans la projection sur \(\vec X\) : le mouvement est horizontal et le poids n'intervient que dans le torseur du guidage.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 précise : « il était demandé d'identifier la phase mais aussi de le justifier ». La justification tient en une ligne : \(F_m\) est proportionnelle à \(\ddot x\).
+
+\end{jury}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Une glissière parfaite de direction \(\vec X\) ne transmet aucune composante qui travaillerait dans son mouvement.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\equationajustee{\boxed{\{T_{0\to1}\} = \left\{\begin{matrix} Y_{01}\vec Y + Z_{01}\vec Z\\ L_{01}\vec X + M_{01}\vec Y + N_{01}\vec Z\end{matrix}\right\}_M}}
+
+On a 5 inconnues, puisqu'une glissière bloque les trois rotations.
+
+\begin{piege}
+
+Annuler \(L_{01}\) en confondant avec un pivot d'axe \(\vec X\), ou écrire le torseur cinématique de la glissière au lieu de son torseur d'actions mécaniques.
+
+\end{piege}
+
+\begin{jury}
+
+Question « très bien réussie » selon le rapport 2026. Il insiste pourtant : « il est demandé aux candidats de respecter rigoureusement les notations imposées par le sujet. » On garde donc \(X_{01}\), \(Y_{01}\), \ldots{} \(N_{01}\) au point \(M\).
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Le système est en translation : que vaut son moment dynamique en son centre d'inertie ? Les matrices d'inertie sont-elles utiles ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Transportez en \(M\) : \(\vec\delta(M) = \vec\delta(G) + \overrightarrow{MG}\wedge m\vec a(G)\), ou sommez \(\overrightarrow{MG_i}\wedge m_i\vec a(G_i)\). Calculez les moments du poids et de \(F_m\) (appliquée en \(G_1\)).
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\textbf{Démarche.} On isole \(\Sigma = (1)+(2)\) et on applique le principe fondamental de la dynamique en \(M\) dans \(R\) galiléen. L'étude est \textbf{dynamique} : \(\Sigma\) accélère. Il reste 5 équations (résultante sur \(\vec Y\) et \(\vec Z\), moment sur les trois axes) pour 5 inconnues.
+
+Positions des centres d'inertie :
+
+\equationajustee{\overrightarrow{MG_1} = -l\vec Y}
+
+\equationajustee{\begin{aligned}
+\overrightarrow{MG_2} &= \overrightarrow{MG_1} + \overrightarrow{G_1G_2}\\
+&= -(l+b)\vec Y + a\vec Z
+\end{aligned}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q16-geometrie-axe-x.pdf}
+\caption*{Figure 5 --- Position de M, G1 et G2 dans le plan (Y, Z), X sortant :
+bras de levier l, b et a}
+\end{figure}
+
+Chaque solide est en translation, donc \(\vec\delta(G_i, i/R) = \vec 0\) et \(\vec\delta(M,\allowbreak i/R) = \overrightarrow{MG_i}\wedge m_i\ddot x\,\vec X\). Avec \(\vec Y\wedge\vec X = -\vec Z\) et \(\vec Z\wedge\vec X = \vec Y\) :
+
+\equationajustee{\begin{aligned}
+(-l\vec Y)\wedge m_1\ddot x\,\vec X &= m_1 l\ddot x\,\vec Z\\
+\big(-(l+b)\vec Y + a\vec Z\big)\wedge m_2\ddot x\,\vec X &= m_2(l+b)\ddot x\,\vec Z + m_2 a\ddot x\,\vec Y
+\end{aligned}}
+
+Pour le torseur dynamique :
+
+\equationajustee{\vec\delta(M,\Sigma/R) = \ddot x\big[m_2 a\,\vec Y + (m_1 l + m_2(l+b))\,\vec Z\big]}
+
+Moments en \(M\) des actions extérieures :
+- poids : \(g\,[m_1 l + m_2(l+b)]\,\vec X\) ;
+- moteur : \(l\,F_m\,\vec Z\) ;
+- guidage : \(L_{01}\vec X + M_{01}\vec Y + N_{01}\vec Z\).
+
+Théorème de la résultante dynamique, sur \(\vec Y\) puis sur \(\vec Z\) :
+
+\equationajustee{\boxed{Y_{01} = 0}}
+
+\equationajustee{\boxed{Z_{01} = (m_1+m_2)g}}
+
+Théorème du moment dynamique en \(M\), avec \(F_m = (m_1+m_2)\ddot x\) :
+
+\equationajustee{\begin{aligned}
+\vec X &: L_{01} + g\,[m_1 l + m_2(l+b)] = 0\\
+\vec Y &: M_{01} = m_2 a\,\ddot x\\
+\vec Z &: N_{01} + l\,(m_1+m_2)\ddot x = \ddot x\,[m_1 l + m_2(l+b)]
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{L_{01} = -g\,[(m_1+m_2)l + m_2 b]}}
+
+\equationajustee{\boxed{M_{01} = m_2\,a\,\ddot x}}
+
+\equationajustee{\boxed{N_{01} = m_2\,b\,\ddot x}}
+
+Interprétation :
+- \(L_{01}\) est statique : il vient du porte-à-faux du poids.
+- \(M_{01}\) et \(N_{01}\) sont dynamiques : ils viennent de l'excentration \((a, b)\) du miroir.
+- Homogénéité : masse × longueur × accélération, soit des N·m.
+- Contrôle par cas particulier : si \(a = b = 0\) (miroir centré sur \(G_1\)), on trouve \(M_{01} = N_{01} = 0\). La force motrice, appliquée en \(G_1\), passe alors par le centre d'inertie de l'ensemble et ne crée pas de moment dynamique.
+
+\begin{methode}
+
+Pour un solide en translation, \(\vec\delta(G) = \vec 0\) : le moment dynamique en un point \(M\) vaut simplement \(\overrightarrow{MG}\wedge m\vec a\). Les matrices d'inertie ne servent à rien, et il faut le dire.
+
+\end{methode}
+
+\begin{piege}
+
+Mener l'étude en statique, ou écrire \(\vec\delta(M) = \vec 0\) « parce que c'est une translation » : ce n'est vrai qu'au centre d'inertie. On perd alors \(M_{01}\) et \(N_{01}\), qui sont les seuls termes dynamiques.
+
+\end{piege}
+
+\begin{jury}
+
+Pour le rapport 2026, « La partie résultante a globalement été réussie contrairement à la partie moment, beaucoup plus délicate. » Il signale des bilans d'actions extérieures incomplets, un mauvais choix de système isolé, et le fait que « beaucoup d'études ont été menées en statique alors qu'une étude dynamique était nécessaire. » Une vérification d'homogénéité aurait évité plusieurs erreurs.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Quelles composantes dépendent de l'accélération ? Choisissez la phase en conséquence, puis convertissez \(l\), \(a\) et \(b\) en mètres.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Seuls \(M_{01}\) et \(N_{01}\) dépendent de l'accélération. La phase la plus contraignante est donc l'accélération (ou la décélération), avec \(|\ddot x| = 20\) m·s⁻².
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Composante
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Valeur
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Limite
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(Y_{01}\) & 0 & 1 kN \\
+\(Z_{01}\) & \(10\times9{,}81\approx 98\) N & 1 kN \\
+\(L_{01}\) & \(-9{,}81\times(10\times0{,}1 + 6\times0{,}1)\approx -15{,}7\) N·m & 20 N·m \\
+\(M_{01}\) & \(6\times0{,}07\times20 = 8{,}4\) N·m & 80 N·m \\
+\(N_{01}\) & \(6\times0{,}1\times20 = 12\) N·m & 80 N·m \\
+\end{longtable}
+
+\textbf{Conclusion.} Chaque valeur est comparée à la limite du constructeur (Annexe 4) dans le tableau, et chacune lui est inférieure : \textbf{l'exigence 1.3.2 est satisfaite} pour le guidage. Le facteur dimensionnant est \(L_{01}\) (environ 78 \% de sa limite), dû au porte-à-faux statique.
+
+Pour gagner de la marge, il faudrait rapprocher le centre d'inertie de l'axe du guidage, c'est-à-dire réduire \(l\) et \(b\), plutôt que de chercher un moteur plus puissant. Sans calculatrice, \(g\approx10\) m·s⁻² donne \(L_{01}\approx-16\) N·m, et la conclusion est la même.
+
+\begin{methode}
+
+Exprimez chaque effort en pourcentage de sa limite : c'est ce qui révèle la grandeur qui dimensionne réellement le composant.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 note que les unités sont parfois absentes ou incorrectes, et que « Les conclusions sont souvent insuffisamment justifiées faute de comparaison explicite avec les données du cahier des charges. » Le tableau valeur/limite répond exactement à cette attente.
+
+\end{jury}
+
+\hypertarget{amuxe9lioration-de-la-moduxe9lisation-muxe9canique-du-mls}{%
+\subsection{6.2. Amélioration de la modélisation mécanique du MLS}\label{amuxe9lioration-de-la-moduxe9lisation-muxe9canique-du-mls}}
+
+On identifie une loi de frottement à partir de mesures, puis on choisit le modèle de simulation qui la représente.
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+On minimise une somme de carrés d'écarts entre mesures et modèle : quel est le nom de la méthode ? Les données sont-elles étiquetées ?
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\begin{itemize}
+\tightlist
+\item
+  Méthode : \textbf{méthode des moindres carrés} (régression linéaire).
+\item
+  Type d'apprentissage : \textbf{apprentissage supervisé}, car les données \((V_i, F_{fi})\) sont étiquetées.
+\item
+  \(J\) est la \textbf{fonction coût} (erreur quadratique).
+\item
+  Les équations (1) et (2) annulent le gradient de \(J\) : elles caractérisent son \textbf{point critique}, qui est son \textbf{minimum}, car la matrice hessienne de \(J\), constante, a une trace et un déterminant strictement positifs dès que les \(V_i\) ne sont pas tous égaux (voir Q19 et Q20).
+\end{itemize}
+
+\equationajustee{\boxed{e_i = F_{fi} - (aV_i + b)}}
+
+\begin{jury}
+
+Le rapport 2026 prévient : « Deux méthodes conduisant à des résultats différents ne peuvent être simultanément acceptées. » Mieux vaut nommer une seule méthode, la bonne, que d'en proposer plusieurs en espérant que l'une soit retenue.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Dérivez \(\sum (F_{fi} - aV_i - b)^2\) par rapport à \(a\), puis à \(b\). Attention aux facteurs \(-V_i\) et \(-1\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Après division par \(-2\), les deux équations s'écrivent :
+
+\equationajustee{a\sum V_i^2 + b\sum V_i = \sum V_iF_{fi}}
+
+\equationajustee{a\sum V_i + b\,n = \sum F_{fi}}
+
+\equationajustee{\begin{aligned}
+A_{11} &= \sum V_i^2\\
+A_{12} = A_{21} &= \sum V_i\\
+A_{22} &= n\\
+C_1 &= \sum V_iF_{fi}\\
+C_2 &= \sum F_{fi}
+\end{aligned}}
+
+\begin{methode}
+
+Contrôle : la matrice est symétrique (\(A_{12} = A_{21}\)), car c'est, à un facteur 2 près, la hessienne de \(J\).
+
+\end{methode}
+
+\begin{piege}
+
+Laisser \(A_{22}\) sous la forme d'une somme de 1. La somme de \(n\) termes égaux à 1 vaut \(n\). Selon le rapport 2026, c'est le seul point de la question qui a mis des candidats en difficulté.
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Système \(2\times2\) : utilisez les formules de Cramer, après avoir justifié que le déterminant est non nul.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+Le déterminant vaut \(\Delta = n\sum V_i^2 - (\sum V_i)^2\). Il est strictement positif dès que les vitesses mesurées ne sont pas toutes égales (Cauchy-Schwarz).
+
+\equationajustee{\boxed{a = \frac{n\sum V_iF_{fi} - \sum V_i\sum F_{fi}}{n\sum V_i^2 - (\sum V_i)^2}}}
+
+\equationajustee{\boxed{b = \frac{\sum V_i^2\sum F_{fi} - \sum V_i\sum V_iF_{fi}}{n\sum V_i^2 - (\sum V_i)^2}}}
+
+\begin{jury}
+
+Le rapport 2026 demande des réponses « compactes et simplifiées », écrites après un passage au brouillon pour limiter les ratures. Un dénominateur commun, écrit une fois et reconnu comme le déterminant, répond à cette attente.
+
+\end{jury}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Interprétez séparément le terme \(aV\) et le terme constant \(b\). Lequel est linéaire ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que devient le frottement quand la vitesse change de signe ? Un terme non linéaire peut-il figurer dans une fonction de transfert ?
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\(F_f = aV + b\,\mathrm{sgn}(V)\) combine un frottement visqueux et un frottement sec.~On retient le modèle où le frottement visqueux est \textbf{dans la fonction de transfert} et où le frottement sec \(b\) est une \textbf{perturbation} opposée au mouvement :
+
+\equationajustee{\begin{aligned}
+H_{\text{méc}}(p) &= \frac{1}{m_{eq2}\,p + a}\\
+&= \frac{1/a}{1 + \frac{m_{eq2}}{a}\,p}
+\end{aligned}}
+
+Les paramètres sont :
+
+\equationajustee{K_{\text{méc}} = \frac1a\approx0{,}83\ \text{m·s}^{-1}\text{·N}^{-1}}
+
+\equationajustee{\tau_{\text{méc}} = \frac{m_{eq2}}{a}\approx 8{,}3\ \text{s}}
+
+\equationajustee{b = 1{,}1\ \text{N}}
+
+Pourquoi ce modèle et pas un autre :
+- un modèle purement inertiel \(1/(m_{eq2}p)\) ignore la pente \(a\), qui n'est pas nulle ;
+- un modèle sans perturbation ignore l'ordonnée à l'origine \(b\), qui n'est pas nulle, et sous-estime l'erreur de l'asservissement ;
+- un frottement sec placé dans la fonction de transfert n'aurait pas de sens, car il n'est pas linéaire.
+
+La constante de temps \(\tau_{\text{méc}}\) est très grande devant le temps de cycle (0,57 s) : en boucle ouverte, l'axe se comporte presque comme un intégrateur. C'est cohérent avec le schéma simplifié \(cK_V/p\) de la question 29, où l'on retrouvera \(c = A/m_{eq2}\).
+
+\begin{piege}
+
+Mettre le frottement sec dans la fonction de transfert. Un terme constant par morceaux, qui change de signe avec \(V\), n'est pas linéaire : on le modélise comme une entrée de perturbation.
+
+\end{piege}
+
+\begin{piege}
+
+Lire la pente du tracé simplifié sans tenir compte de l'échelle du zoom fourni sur le cahier de réponses : le coefficient directeur est alors faux.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 qualifie la question d'« originale » : elle « a été relativement peu traitée et peu réussie ». Il précise : « Quelques erreurs dans le calcul du coefficient directeur du tracé simplifié proviennent de la non prise en compte du zoom fourni. »
+
+\end{jury}
+
+\hypertarget{partie-7-moduxe9lisation-du-comportement-uxe9lectromuxe9canique-dun-mls-et-uxe9tude-du-pilotage-en-couple-exigence-1.3.3}{%
+\section{Partie 7 --- Modélisation du comportement électromécanique d'un MLS et étude du pilotage en couple (exigence 1.3.3)}\label{partie-7-moduxe9lisation-du-comportement-uxe9lectromuxe9canique-dun-mls-et-uxe9tude-du-pilotage-en-couple-exigence-1.3.3}}
+
+Après la transformation de Park (admise), le MLS équivaut à deux machines à courant continu. On montre que la force ne dépend que de \(i_2\), puis on règle la boucle de courant.
+
+\hypertarget{guxe9nuxe9ration-de-la-force-motrice-f_m}{%
+\subsection{\texorpdfstring{7.1. Génération de la force motrice \(F_m\)}{7.1. Génération de la force motrice F\_m}}\label{guxe9nuxe9ration-de-la-force-motrice-f_m}}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Reportez les flux dans les expressions de \(F_1\) et \(F_2\), puis formez \(F_2 - F_1\).
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Avec \(L_1 = L_2 = L\), les flux valent \(\varphi_1 = Li_1 + \Phi\) et \(\varphi_2 = Li_2\). Les forces s'écrivent donc :
+
+\equationajustee{F_1 = K\varphi_2 i_1 = KL\,i_1i_2}
+
+\equationajustee{F_2 = K\varphi_1 i_2 = KL\,i_1i_2 + K\Phi\,i_2}
+
+\equationajustee{\begin{aligned}
+F_m &= F_2 - F_1\\
+&= K(Li_1 + \Phi)\,i_2 - KLi_2\,i_1\\
+&= K\Phi\,i_2
+\end{aligned}}
+
+\equationajustee{\boxed{F_m = A\,i_2\ \text{ avec }\ A = K\Phi}}
+
+\(A\) est constant, car le flux \(\Phi\) des aimants est constant. Le terme \(K(L_1 - L_2)\,i_1i_2\) s'annule grâce à l'hypothèse de pôles lisses.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Écrivez \(P_J\) en fonction des deux courants, à force motrice imposée. Quel courant est fixé par la force ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Chaque machine dissipe par effet Joule la puissance \(R\,i^2\) dans sa résistance. À force imposée, \(i_2 = F_m/A\) est fixé :
+
+\equationajustee{\begin{aligned}
+P_J &= R\,(i_1^2 + i_2^2)\\
+&= R\,i_1^2 + R\,\frac{F_m^2}{A^2}
+\end{aligned}}
+
+Donc \(P_J \ge RF_m^2/A^2\), avec égalité si et seulement si \(i_1 = 0\). \textbf{Annuler \(i_1\) minimise les pertes Joule} sans changer la force.
+
+\begin{piege}
+
+Minimiser \(P_J\) sans contrainte : on annulerait aussi \(i_2\), donc la force. C'est une minimisation à force donnée.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note que « Certains candidats semblent ne pas connaître précisément la définition de l'effet Joule et des puissances dissipées associées. » La puissance Joule est \(R\,i^2\) par machine, et il faut sommer les deux machines.
+
+\end{jury}
+
+\hypertarget{pilotage-en-courant}{%
+\subsection{7.2. Pilotage en courant}\label{pilotage-en-courant}}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Avec \(\varphi_2 = Li_2\), passez l'équation électrique de la machine 2 dans le domaine de Laplace, en respectant le comparateur du schéma-blocs.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+On a \(u_2 = Ri_2 + L\,\dfrac{\mathrm di_2}{\mathrm dt} + e_2\). Dans le domaine de Laplace, à conditions initiales nulles :
+
+\equationajustee{U_2(p) - E_2(p) = (R + Lp)\,I_2(p)}
+
+Le comparateur du schéma-blocs fait bien entrer \(E_2\) avec le signe moins. Sous forme canonique :
+
+\equationajustee{\boxed{H_{\text{élec}}(p) = \frac{I_2}{U_2 - E_2} = \frac{1/R}{1 + \frac LR\,p}}}
+
+\equationajustee{\boxed{\tau_e = \frac LR}}
+
+C'est un premier ordre de gain statique \(1/R\) (en A·V⁻¹). Homogénéité : H/Ω = s.
+
+\begin{jury}
+
+Question « globalement bien réussie » selon le rapport 2026, qui précise : « Les quelques erreurs relevées proviennent principalement d'une écriture non canonique de la fonction de transfert. » S'arrêter à \(1/(R + Lp)\) ne suffit donc pas : on met le gain statique en facteur et un 1 au dénominateur.
+
+\end{jury}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Identifiez la structure du correcteur. De quelle fonction de transfert l'intégrateur augmente-t-il la classe ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le rejet de \(E_2\), la classe ne suffit pas : où l'intégrateur se trouve-t-il par rapport au point d'entrée de la perturbation ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Le correcteur est un \textbf{proportionnel intégral (PI)}.
+
+Avec un correcteur proportionnel seul, la FTBO de la boucle de courant, \(K_I\,H_{\text{élec}}\), serait de classe 0 : l'erreur statique serait non nulle, pour la consigne comme pour la perturbation. Le PI ajoute un intégrateur dans la \textbf{FTBO}, qui devient de classe 1.
+
+Cette augmentation de classe est une condition \textbf{nécessaire mais pas suffisante} :
+- pour la consigne en échelon, l'erreur statique est nulle si la boucle fermée est stable (précision) ;
+- pour la perturbation \(E_2\) en échelon, il faut en plus que l'intégrateur soit \textbf{en amont du point d'entrée de \(E_2\)}, ce qui est le cas ici (robustesse).
+
+Ce choix règle l'\textbf{exigence 1.3.3.1} (« précision/robustesse axe X : erreur statique nulle »).
+
+\begin{methode}
+
+Le rejet d'une perturbation en échelon exige un intégrateur placé en amont du point d'entrée de cette perturbation, dans une boucle stable.
+
+\end{methode}
+
+\begin{piege}
+
+Confondre « intégrateur » et « classe », ou dire « le correcteur augmente la classe » sans préciser de quoi. C'est la classe de la FTBO qui augmente, et un intégrateur placé après la perturbation ne la rejetterait pas.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 reproche aux candidats d'oublier de préciser à quoi est liée l'augmentation de la classe (système, FTBF, FTBO, correcteur), ainsi que le fait « qu'une augmentation de classe constitue une condition nécessaire mais non suffisante pour assurer une erreur statique nulle en présence d'une perturbation ». Il ajoute : « Quelques confusions entre les notions d'intégrateur et de classe ont également été relevées. »
+
+\end{jury}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Factorisez le correcteur sous la forme \(K_I\dfrac{1+T_Ip}{T_Ip}\) et choisissez \(T_I\) pour compenser le pôle électrique.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quelle est la boucle fermée d'un intégrateur pur à retour unitaire ? Un premier ordre peut-il présenter un dépassement ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Avec \(T_I = \tau_e\), le zéro du correcteur compense le pôle du procédé :
+
+\equationajustee{\begin{aligned}
+\text{FTBO} &= K_I\frac{1+\tau_ep}{\tau_ep}\cdot\frac{1/R}{1+\tau_ep}\\
+&= \frac{K_I}{R\tau_e\,p}\\
+&= \frac{K_I}{Lp}
+\end{aligned}}
+
+puisque \(R\tau_e = L\). On en déduit la boucle fermée, du premier ordre :
+
+\equationajustee{H_{BF}(p) = \frac{1}{1 + \frac{L}{K_I}p}}
+
+\equationajustee{\boxed{K_{BFi} = 1}}
+
+\equationajustee{\boxed{\tau_{BFi} = \frac{L}{K_I}}}
+
+La rapidité se règle par \(K_I\), puisque \(t_{r5\%} = 3\tau_{BFi} = 3L/K_I\).
+
+\textbf{Conclusion vis-à-vis de 1.3.3.2 (« temps de réponse à 5 \% optimal sans dépassement »).}
+- Sans dépassement : un premier ordre n'en présente jamais. Critère respecté.
+- Temps de réponse optimal : \(t_{r5\%}\) diminue quand \(K_I\) augmente, jusqu'aux limites physiques (saturation de la tension, bruit). Critère respecté.
+
+\textbf{L'exigence 1.3.3.2 est satisfaite.}
+
+\begin{jury}
+
+D'après le rapport 2026, il y a eu « Peu d'erreurs sur la fonction de transfert. En revanche, les justifications restent souvent insuffisantes pour valider pleinement la question. » La conclusion doit reprendre les deux termes de l'exigence : absence de dépassement et temps de réponse.
+
+\end{jury}
+
+\hypertarget{partie-8-conception-de-lasservissement-dun-mls}{%
+\section{Partie 8 --- Conception de l'asservissement d'un MLS}\label{partie-8-conception-de-lasservissement-dun-mls}}
+
+On règle une cascade vitesse/position. Pour la boucle de vitesse, on passe d'un correcteur P à un PI, réglé par compensation de pôle. Pour la boucle de position, on synthétise un correcteur à avance de phase sur le diagramme de Bode.
+
+\hypertarget{uxe9tude-de-la-boucle-de-vitesse-exigence-1.3.4}{%
+\subsection{8.1. Étude de la boucle de vitesse (exigence 1.3.4)}\label{uxe9tude-de-la-boucle-de-vitesse-exigence-1.3.4}}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Quelle est la classe de la boucle ouverte avec un correcteur proportionnel ? Appliquez le théorème de la valeur finale.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+On a \(\text{FTBO}_V = \dfrac{K_VA/a}{1+\tau_{\text{méc}}p}\), de \textbf{classe 0}. La boucle fermée est un premier ordre, stable. Pour une consigne de vitesse en échelon \(v_0\,u(t)\) :
+
+\equationajustee{\varepsilon_\infty = \frac{v_0}{1 + K_VA/a}\neq 0}
+
+Avec le frottement sec (une force \(-b\) pour \(V > 0\)), le régime permanent vérifie :
+
+\equationajustee{(a + K_VA)\,V_\infty = K_VA\,v_0 - b}
+
+d'où
+
+\equationajustee{\begin{aligned}
+\varepsilon_\infty &= v_0 - V_\infty\\
+&= \frac{a\,v_0 + b}{a + K_VA}
+\end{aligned}}
+
+Les deux contributions s'ajoutent : l'axe reste en dessous de sa consigne. L'exigence 1.3.4 demande une erreur statique nulle pour un échelon de vitesse : \textbf{avec la correction proportionnelle, l'erreur ne peut pas être nulle pour un gain fini, et l'exigence de précision n'est pas respectée.}
+
+\begin{piege}
+
+Confondre la boucle de vitesse et l'« erreur en vitesse » (réponse à une rampe). Ici, l'entrée de la boucle est une vitesse en échelon : on calcule une erreur statique, en m·s⁻¹.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 écrit : « Nommer un correcteur ne constitue pas une justification suffisante. » Il attend que l'on précise l'état initial, ici une FTBO de classe 0, et pourquoi il nécessite une correction. Il signale aussi : « Quelques confusions entre boucle de vitesse et erreur en vitesse ont également été observées. »
+
+\end{jury}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Que change le terme intégral sur la classe de la FTBO ? Et sur la perturbation de frottement, qui entre après le bloc \(A\) ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+L'intégrateur du PI rend la \textbf{FTBO de la boucle de vitesse} de classe 1. Pourvu que la boucle fermée soit stable, l'\textbf{erreur statique est nulle} pour un échelon de consigne. C'est le cas avec le réglage de la question 29, qui donne une boucle fermée du premier ordre.
+
+L'intégrateur est en amont du point d'entrée de la perturbation de frottement : l'erreur due à un frottement constant est aussi nulle. \textbf{Le PI est pertinent} vis-à-vis de l'exigence de précision (erreur statique nulle).
+
+\begin{jury}
+
+Le rapport 2026 renvoie, pour cette question, aux remarques de la question 27 : il faut dire de quoi la classe augmente (la FTBO) et pourquoi cela suffit ici.
+
+\end{jury}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Trouvez le choix de \(T_v\) qui ramène la FTBO à \(cK_V/p\). Vérifiez la valeur de \(c\) avec vos résultats précédents.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour un premier ordre, à quoi correspond la bande passante à \(-3\) dB ?
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Avec \(T_v = \tau_{\text{méc}} = m_{eq2}/a\approx 8{,}3\) s, la FTBO vaut \(\dfrac{cK_V}{p}\) avec \(c = A/m_{eq2} = 5\) m·s⁻²·A⁻¹.
+
+\equationajustee{\frac{V}{V_C} = \frac{1}{1 + \frac{p}{cK_V}}}
+
+\equationajustee{\boxed{K_X = 1}}
+
+\equationajustee{\boxed{\tau_X = \frac{1}{cK_V}}}
+
+Pour un premier ordre, la bande passante à \(-3\) dB est la pulsation de coupure \(1/\tau_X = cK_V\). Le critère de rapidité de l'Annexe 6 la fixe à 60 rad·s⁻¹ :
+
+\equationajustee{\begin{aligned}
+K_V &= \frac{60}{c}\\
+&= \frac{60}{5}\\
+&= 12\ \text{A·s·m}^{-1}
+\end{aligned}}
+
+\equationajustee{\boxed{K_V = 12\ \text{A·s·m}^{-1}}}
+
+On en déduit \(\tau_X = 1/60\) s.
+
+\begin{piege}
+
+Régler \(K_V\) sur un temps de réponse (\(t_{r5\%} = 3\tau_X\)) alors que le critère porte sur la bande passante à \(-3\) dB. Et ne pas oublier l'unité de \(K_V\), qui convertit une erreur de vitesse en courant : A·s·m⁻¹.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 indique que \(K_X\) et \(\tau_X\) ont généralement été bien déterminés, mais que la troisième grandeur, \(K_V\), « a été source d'erreurs en raison d'une mauvaise prise en compte du critère de rapidité du cahier des charges. »
+
+\end{jury}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Reprenez chaque critère de l'Annexe 6 un par un : énoncé, valeur obtenue, comparaison.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Précision} (erreur statique nulle pour un échelon \(v_0\,u(t)\)) : classe 1 et \(K_X = 1\), donc erreur statique nulle, frottement rejeté. Critère respecté.
+\item
+  \textbf{Rapidité} (bande passante à \(-3\) dB égale à 60 rad·s⁻¹) : \(1/\tau_X = 60\) rad·s⁻¹ avec \(K_V = 12\) A·s·m⁻¹. Critère respecté.
+\item
+  \textbf{Stabilité} : pôle unique \(-60\) s⁻¹, sans dépassement.
+\end{itemize}
+
+\textbf{Tous les critères de la boucle de vitesse sont respectés} (exigence 1.3.4), dans les limites du modèle : compensation exacte de \(\tau_{\text{méc}}\) et boucle de courant beaucoup plus rapide.
+
+\begin{jury}
+
+Le rapport 2026 est explicite : une réponse se limitant à « le cahier des charges est respecté » sans justification n'a pas été retenue.
+
+\end{jury}
+
+\hypertarget{uxe9tude-de-la-boucle-de-position-exigences-1.3.5.1-et-1.3.5.2}{%
+\subsection{8.2. Étude de la boucle de position (exigences 1.3.5.1 et 1.3.5.2)}\label{uxe9tude-de-la-boucle-de-position-exigences-1.3.5.1-et-1.3.5.2}}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+La chaîne directe contient déjà un intégrateur. Le correcteur à avance de phase en apporte-t-il un ? Le supprime-t-il ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le cahier des charges parle aussi de retard de traînage : quelle est l'erreur en réponse à une rampe pour une boucle de classe 1, et quel paramètre la fixe ?
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+L'intégrateur \(1/p\) du procédé (de la vitesse à la position) rend la boucle de \textbf{classe 1}. Le correcteur à avance de phase \textbf{n'apporte pas d'intégrateur} : il ne crée pas la précision, il la préserve. Son gain statique \(C_X(0) = K\) est fini et non nul, donc la classe 1 est conservée. La boucle étant stable, l'\textbf{erreur statique est nulle} en réponse à un échelon.
+
+En réponse à une rampe de pente \(V_{max}\), l'erreur vaut \(V_{max}/K\), ce qui donne :
+
+\equationajustee{\boxed{\Delta t = \frac1K < 0{,}01\ \text{s}\iff K > 100\ \text{s}^{-1}}}
+
+Le gain \(K\) règle donc le traînage, et l'avance de phase permet de l'augmenter sans perdre la stabilité.
+
+\begin{piege}
+
+Attribuer la précision au correcteur à avance de phase, ou croire qu'il faut un intégrateur dans le correcteur. L'intégrateur est déjà dans le procédé ; le rôle de l'avance de phase est la stabilité (marge de phase) à gain élevé.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève que « Certains candidats manquent toutefois de recul sur le rôle réel du correcteur proposé en concluant de manière inappropriée sur la précision du système. »
+
+\end{jury}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Calculez \(aT\omega_m\) et \(T\omega_m\) avec \(\omega_m = 1/(T\sqrt a)\).
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+En \(\omega_m\), on a \(aT\omega_m = \sqrt a\) et \(T\omega_m = 1/\sqrt a\), donc :
+
+\equationajustee{\begin{aligned}
+|C_X(j\omega_m)| &= K\frac{\sqrt{1+a}}{\sqrt{1+1/a}}\\
+&= K\sqrt a
+\end{aligned}}
+
+\equationajustee{\boxed{G_{dB}(\omega_m) = 20\log K + 10\log a}}
+
+\begin{methode}
+
+Contrôle graphique : \(\omega_m\) est la moyenne géométrique de \(1/(aT)\) et \(1/T\), et le gain y vaut la moyenne en dB de \(20\log K\) et \(20\log(aK)\).
+
+\end{methode}
+
+\begin{jury}
+
+Question bien réussie selon le rapport 2026, qui demande toutefois de simplifier autant que possible les expressions obtenues : la forme \(20\log K + 10\log a\) est attendue plutôt qu'un quotient de racines.
+
+\end{jury}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Où faut-il placer l'avance maximale pour qu'elle serve à la marge de phase ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Ordre des étapes : d'abord \(\omega_m\) et la phase non corrigée, puis \(\varphi_m\). On en tire \(a\) et \(T\). On règle enfin \(K\) pour un gain nul en \(\omega_m\), puis on vérifie.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\boxed{\omega_m = \omega_{0dB} = 100\ \text{rad·s}^{-1}}\).
+\item
+  Lire \(\varphi_{nc}(100) = -90° - \arctan(5/3)\approx -149°\).
+\item
+  Viser une phase corrigée de \(-120°\) : \(\varphi_m = -120° - \varphi_{nc}\approx 29°\), d'où \(\boxed{\varphi_m\approx 30°}\).
+\item
+  Calculer \(a = \dfrac{1+\sin\varphi_m}{1-\sin\varphi_m}\), puis \(T = \dfrac{1}{\omega_m\sqrt a}\).
+\item
+  Choisir \(K\) tel que \(20\log K + 10\log a + G_{nc,dB}(\omega_m) = 0\).
+\item
+  Vérifier \(K > 100\) s⁻¹ (traînage), puis le temps de réponse.
+\end{enumerate}
+
+\begin{piege}
+
+Appliquer la méthode d'un correcteur proportionnel (régler seulement le gain pour la marge de phase). Avec une avance de phase, on place d'abord \(\omega_m\) et \(\varphi_m\), et le correcteur relève aussi le gain de \(10\log a\) en \(\omega_m\) : sans l'étape 5, la coupure n'a pas lieu à la bonne pulsation.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale « Quelques confusions avec les méthodes de réglage d'un correcteur proportionnel », et des copies qui ne proposent aucune méthode ici alors qu'elles traitent correctement la question suivante : la démarche est notée pour elle-même.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Relevez le gain et la phase de la FTBO non corrigée à 100 rad·s⁻¹ ; la FTBO non corrigée vaut \(1/(p(1+p/60))\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Avec \(\varphi_m = 30°\), \(\sin\varphi_m\) est une valeur remarquable, et \(a\) tombe juste.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+À 100 rad·s⁻¹ :
+
+\equationajustee{\begin{aligned}
+|\text{FTBO}_{nc}| &= \frac{3}{100\sqrt{34}}\\
+&\approx 5{,}1\cdot10^{-3}
+\end{aligned}}
+
+soit environ \(-45{,}8\) dB, et \(\varphi_{nc}\approx-149°\).
+
+On en déduit :
+- \(\sin 30° = 1/2\), d'où \(\boxed{a = 3}\) ;
+- \(\boxed{T = \dfrac{1}{100\sqrt3}\approx 5{,}8\ \text{ms}}\) ;
+- le gain de \(K\) en décibels :
+
+\equationajustee{\begin{aligned}
+20\log K &= 45{,}8 - 4{,}8\\
+&= 41{,}0\ \text{dB}
+\end{aligned}}
+
+\equationajustee{\boxed{K\approx112\ \text{s}^{-1}}}
+
+Vérifications :
+- \(K > 100\) s⁻¹, et le retard de traînage vaut environ 8,9 ms.
+- Phase corrigée à 100 rad·s⁻¹ : \(-149° + 60° - 30° = -119°\), soit une \textbf{marge de phase de 61°}, pour environ 60° exigés. \textbf{L'exigence 1.3.5.2 est respectée.}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q34-bode-avance-phase.pdf}
+\caption*{Figure 6 --- Bode de la FTBO de position avant et après l'avance de
+phase : coupure à 100 rad/s, marge de phase d'environ 61°}
+\end{figure}
+
+Tracés à reporter :
+- les relevés à 100 rad·s⁻¹ ;
+- la courbe de gain relevée de 45,8 dB ;
+- la phase relevée de 30° ;
+- la marge de phase.
+
+\begin{methode}
+
+Sans calculatrice : \(\arctan\sqrt3 = 60°\) et \(\arctan(1/\sqrt3) = 30°\). Avec \(a = 3\), l'avance maximale du correcteur vaut exactement \(60° - 30° = 30°\).
+
+\end{methode}
+
+\begin{piege}
+
+Prendre \(\cos 30° \approx 0{,}87\) au lieu de \(\sin 30° = 0{,}5\) dans la relation de l'Annexe 7 : on trouverait \(a\approx 14\), soit une avance maximale de 60° au lieu de 30°, et tout le réglage serait faux.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 le dit sans détour : « Beaucoup d'erreurs sur la valeur de \(\sin(\varphi_m)\), confondue avec celle de \(\cos(\varphi_m)\). »
+
+\end{jury}
+
+\hypertarget{partie-9-synthuxe8se}{%
+\section{Partie 9 --- Synthèse}\label{partie-9-synthuxe8se}}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Pour \(t_{r5\%}\) : tracez la bande \([0{,}95;\,1{,}05]\) et cherchez le dernier instant où la réponse en sort.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le traînage : en régime de vitesse constante, la réponse est la consigne décalée. Mesurez l'écart dans l'unité du critère, c'est-à-dire en temps.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Le cahier de réponses fournit les courbes réelles. Les valeurs ci-dessous sont celles du modèle réglé :
+
+\equationajustee{\text{FTBO} = K\frac{1+aTp}{1+Tp}\cdot\frac{1}{p(1+\tau_Xp)}}
+
+avec \(K = 112\) s⁻¹, \(a = 3\), \(T = 5{,}8\) ms et \(\tau_X = 1/60\) s.
+
+Un ordre de grandeur s'obtient sans simulation. Une marge de 60° correspond à un second ordre dominant d'amortissement voisin de 0,6 et de pulsation propre de l'ordre de 140 rad·s⁻¹. On en tire \(t_{r5\%}\approx 3/(\xi\omega_0)\approx 36\) ms.
+
+\textbf{Temps de réponse.} On trace la valeur finale 1, la bande à \(\pm5\,\%\), et on relève la sortie définitive de la bande. Le modèle réglé, simulé, donne \(t_{r5\%}\approx35\) ms et un dépassement d'environ 8 \%. Le cahier des charges exige \(t_{r5\%} < 0{,}1\) s, et 35 ms est inférieur à 0,1 s : \textbf{critère respecté}.
+
+\textbf{Retard de traînage.} Sur le palier à \(V_{max}\), on mesure l'écart horizontal entre consigne et réponse : \(\Delta t = 1/K\approx 8{,}9\) ms. Le cahier des charges exige moins de 0,01 s, et 8,9 ms est inférieur à 10 ms : \textbf{critère respecté}. Cela correspond à un écart de position d'environ 8,9 mm.
+
+\textbf{Conclusion.} L'exigence 1.3.5 est satisfaite : erreur statique nulle, \(t_{r5\%}\) et traînage conformes, marge de phase d'environ 60° à 100 rad·s⁻¹. Le traînage est respecté de justesse.
+
+\begin{piege}
+
+Prendre pour \(t_{r5\%}\) le premier instant d'entrée dans la bande alors qu'il y a dépassement. Ou mesurer le traînage verticalement en mètres alors que le critère est en secondes.
+
+\end{piege}
+
+\begin{jury}
+
+Question « globalement bien réussie » pour qui l'a traitée jusqu'au bout, selon le rapport 2026, mais « Les mêmes difficultés de rédaction apparaissent toutefois lorsqu'il s'agit de conclure à partir des données du cahier des charges. » Pour chaque critère : la valeur exigée, la valeur lue sur le tracé, la comparaison.
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+- Hyperstatisme : graphe des liaisons, \(\gamma\), \(m_c\) justifié, \(h = E_c - I_c + m_c\). On traduit ensuite chaque inconnue surabondante en condition géométrique (défauts de montage).
+- Liaisons en parallèle : on intersecte les mobilités, puis on compte les inconnues statiques. La mise en position isostatique se fait par appui plan et deux points ; le maintien en position ne doit rien imposer de plus.
+- Loi en trapèze de vitesse : \(t_f = d/V_{max} + V_{max}/a_{max}\), après avoir vérifié l'existence du palier.
+- Masse équivalente par l'énergie cinétique : les inerties ramenées sont multipliées par le carré du rapport de transmission, exprimé en unités SI.
+- Solide en translation : \(\vec\delta(G) = \vec 0\), puis transport en \(M\) par \(\overrightarrow{MG}\wedge m\vec a\).
+- Moindres carrés : fonction coût, gradient nul, équations normales, formules de Cramer.
+- Précision d'un asservissement : la classe de la FTBO est nécessaire, mais pas suffisante ; le rejet d'une perturbation demande un intégrateur en amont de celle-ci, dans une boucle stable.
+- Compensation de pôle par un PI.
+- Réglage d'une avance de phase : \(\omega_m = \omega_{0dB}\), puis \(\varphi_m\), puis \(a\) et \(T\), enfin \(K\). Le retard de traînage vaut \(1/K\).
+
+\textbf{Questions discriminantes (rapport 2026).} Q2, Q8, Q9, Q16 (partie moment), Q21, Q25 à Q29 et Q34. Ce sont des questions de justification et de méthode plus que de calcul : c'est là que la rédaction fait la différence.
+
+\textbf{Rédaction, d'après le rapport 2026.}
+- Vérifier une exigence, c'est la rappeler, donner la valeur obtenue et comparer les deux.
+- Écrire les théorèmes en toutes lettres et préciser la projection utilisée.
+- Respecter les notations du sujet ; donner les unités ; vérifier l'homogénéité.
+- Donner toute liaison avec ses caractéristiques géométriques.
+
+\textbf{Prérequis à revoir.}
+- Torseurs des liaisons usuelles.
+- Produits vectoriels dans une base orthonormée directe.
+- Théorème de la valeur finale.
+- Diagrammes de Bode d'un intégrateur et d'un premier ordre.
+- Valeurs remarquables de \(\sin\), \(\arctan\) et \(\log\), indispensables sans calculatrice.
+
+\textbf{Questions transposables.}
+- Hyperstatisme d'un guidage par deux rails et montage par piges : classique sur les tables à deux axes.
+- Comparaison entre entraînement direct et vis-écrou par la masse équivalente.
+- Torseur transmis par un guidage linéaire avec charge en porte-à-faux.
+- Boucle de courant d'une machine synchrone à \(i_d = 0\).
+- Cascade vitesse/position avec avance de phase.
+
+\end{document}

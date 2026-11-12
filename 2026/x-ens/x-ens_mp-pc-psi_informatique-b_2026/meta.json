@@ -1,0 +1,28 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2026
+  },
+  "questions": 16,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-parcours-pp-a.svg",
+      "question": "Q1",
+      "legende": "État des dictionnaires après pp('a') : époque par le remplissage, sortie dans la pastille, sur le graphe de la figure 1 du sujet"
+    },
+    {
+      "fichier": "figures/q10-famille-etages.svg",
+      "question": "Q10",
+      "legende": "Famille de graphes de la Q10 : deux sommets par étage, arcs vers l'étage inférieur, et nombre d'appels de fn par étage"
+    },
+    {
+      "fichier": "figures/q16-temoins-locaux.svg",
+      "question": "Q16",
+      "legende": "Les deux motifs cherchés par la requête de la Q16 : sommet lié et sa cible, deux internes de mêmes fils, arcs nommés par leurs alias SQL"
+    }
+  ]
+}

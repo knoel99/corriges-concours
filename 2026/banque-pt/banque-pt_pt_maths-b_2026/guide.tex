@@ -1,0 +1,1749 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Banque PT PT — Mathématiques B 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Banque PT PT}
+\fancyhead[R]{\small Maths B 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Banque PT PT — Mathématiques B 2026\par}\medskip
+  {\large Banque PT · PT · Maths B · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format.} 4 heures, calculatrice interdite, une feuille de papier millimétré à rendre avec la copie (pour le tracé de la question 9(a) du second exercice). Le sujet comporte deux exercices indépendants et 37 questions en comptant les sous-questions. L'avertissement insiste sur le référencement exact des questions : une réponse mal numérotée n'est pas notée.
+
+\textbf{Premier exercice : algèbre linéaire et géométrie euclidienne.} Le rapport 2026 le résume ainsi : on démontre qu'un endomorphisme d'un sous-espace de \({\mathbb{R}}_3[X]\) est une rotation.
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Partie A} : on étudie un hyperplan \(H\) de \({\mathbb{R}}_3[X]\) (un noyau de forme linéaire), une forme linéaire \(h\) et un endomorphisme \(f\) de \(H\).
+\item
+  \emph{Partie B} : on rappelle la définition d'un produit scalaire et on montre que linéarité à gauche et symétrie donnent la bilinéarité. Le produit scalaire \(\varphi\) « des dérivées en 0 » est en fait le produit scalaire canonique des coefficients. On construit une base orthonormée de \(H\), un projeté orthogonal et \(H^\perp\).
+\item
+  \emph{Partie C} : rotation de \({\mathbb{R}}^3\) d'axe et d'angle donnés (base adaptée, matrice dans la base canonique, puissances).
+\item
+  \emph{Partie D} : synthèse. La matrice de \(f\) dans la base orthonormée de la partie B est exactement la matrice de la partie C, donc \(f\) est une rotation de \(H\). On la réduit.
+\end{itemize}
+
+\textbf{Second exercice : coniques et quadriques.}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Partie A} : questions de cours (ellipse, hyperbole, définition par foyer et directrice, rotation en complexe).
+\item
+  \emph{Partie B} : on reconnaît une conique définie par une équation en module, grâce au projeté orthogonal sur une droite écrit en complexe.
+\item
+  \emph{Partie C} : une rotation ramène cette conique à une équation réduite, puis on demande les éléments caractéristiques, une tangente et un tracé.
+\item
+  \emph{Partie D} (indépendante) : cône \(S\) (points réguliers, plan tangent, sections circulaires, révolution) et surface de révolution engendrée par une branche d'hyperbole.
+\end{itemize}
+
+\textbf{Notions mobilisées.} Sous-espaces, noyau, rang, matrices d'endomorphisme et changement de base ; produit scalaire, bases orthonormées, projection orthogonale ; rotations vectorielles en dimension 3 ; coniques (équations réduites, définition par foyer et directrice) ; nombres complexes et transformations du plan ; surfaces définies par une équation cartésienne (gradient, plan tangent, surfaces de révolution).
+
+\textbf{Difficulté et gestion du temps.} Le sujet est de difficulté moyenne et assez long ; il récompense la précision. Selon le rapport 2026, la grande majorité des candidats a abordé l'ensemble du sujet, et « L'épreuve a permis de bien discriminer les candidats sur l'ensemble du spectre des notes. »
+
+Beaucoup de questions sont des questions de cours ou des calculs directs à ne pas laisser passer : Ex. 1 Q1 à Q7, Q10 ; Ex. 2 Q1, Q2, Q3, Q5, Q7, Q10, Q11.
+
+\textbf{Questions discriminantes d'après le rapport 2026.}
+
+\begin{itemize}
+\tightlist
+\item
+  Ex. 1 : l'ensemble d'arrivée de \(h\) en Q2 (deux candidats sur cinq seulement) ; Q12, peu traitée à cause de sa position ; Q13 et Q14.
+\item
+  Ex. 2 : la partie A, pourtant de cours (6 \% des candidats y ont tous les points) ; Q4(b), Q8(b) et Q8(c), très peu réussies ; Q12(a) et la restriction \(x\geqslant1\) de Q13, vue par une poignée de candidats.
+\end{itemize}
+
+L'énoncé de la question 12(a) du second exercice contient une petite inexactitude (voir plus bas). Comptez environ 1 h 45 pour le premier exercice et 2 h pour le second, tracé compris (15 minutes).
+
+\hypertarget{premier-exercice-partie-a-lhyperplan-h-la-forme-h-et-lendomorphisme-f}{%
+\section{Premier exercice, partie A --- L'hyperplan H, la forme h et l'endomorphisme f}\label{premier-exercice-partie-a-lhyperplan-h-la-forme-h-et-lendomorphisme-f}}
+
+Tout se ramène à écrire \(P=a+bX+cX^2+dX^3\). On a alors \(P(0)=a\) et \(P'(0)=b\), puis \(P''(0)=2c\) et \(P^{(3)}(0)=6d\). Cette traduction en coefficients sert dans tout l'exercice.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Traduisez la condition \(6P(0)=P^{(3)}(0)\) sur les coefficients de \(P\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(H\) est le noyau d'une application linéaire à valeurs dans \(\mathbb{R}\) ; pour la base, isolez les paramètres restés libres.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+La condition s'écrit \(6a=6d\), soit \(a=d\).
+
+L'application \(\psi:P\mapsto6P(0)-P^{(3)}(0)\) est linéaire de \({\mathbb{R}}_3[X]\) dans \(\mathbb{R}\), et \(H=\ker\psi\). C'est donc un sous-espace vectoriel de \({\mathbb{R}}_3[X]\), donc un espace vectoriel.
+
+De plus, \(P\in H\) si et seulement si \(P=a(1+X^3)+bX+cX^2\) avec \((a,b,c)\in{\mathbb{R}}^3\). La famille de polynômes \((1+X^3,X,X^2)\), formée d'éléments de \(H\), engendre donc \(H\).
+
+Elle est libre, car \(a(1+X^3)+bX+cX^2=0\) donne \(a=b=c=0\) par identification. C'est une base de \(H\).
+
+\equationajustee{\boxed{\begin{aligned}
+H&=\operatorname{Vect}(1+X^3,X,X^2),\\
+\dim H&=3.
+\end{aligned}}}
+
+Contrôle : \(\psi\neq0\) car \(\psi(1)=6\). Donc \(\operatorname{rg}\psi=1\) et \(\dim H=4-1=3\).
+
+\begin{methode}
+
+Un ensemble défini par une équation linéaire homogène est un noyau : c'est la façon la plus rapide de prouver qu'on a un sous-espace vectoriel, et le théorème du rang donne la dimension (un hyperplan si la forme est non nulle).
+
+\end{methode}
+
+\begin{piege}
+
+Proposer la base canonique de \({\mathbb{R}}_3[X]\), ou une base faite de vecteurs de \({\mathbb{R}}^4\) : le rapport 2026 relève les deux erreurs. Une base de \(H\) est faite de polynômes appartenant à \(H\). Autre confusion signalée : faire intervenir \(f\), qui n'a rien à faire ici.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 juge la caractérisation des sous-espaces vectoriels insuffisamment maîtrisée et note des « ∈ H » écrits sans sujet. Il observe que « Ceux qui utilisent un ``sous-espace vectoriel engendré par'' s'en sortent mieux. » Pour la base, il ajoute : « Quant à la base, elle n'est pas toujours justifiée ».
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+La dérivation est linéaire ; l'évaluation en \(0\) aussi.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que vaut \(h(P)\) : un polynôme ou un nombre ? Cherchez ensuite l'image exacte de \(h\).
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Pour \(P,Q\in H\) et \(\lambda\in\mathbb{R}\) :
+
+\equationajustee{\begin{aligned}
+h(\lambda P+Q)&=(\lambda P+Q)'(0)\\
+&=\lambda P'(0)+Q'(0)\\
+&=\lambda h(P)+h(Q).
+\end{aligned}}
+
+Donc \(h\) est linéaire.
+
+\(h(P)=P'(0)\) est un réel : \(h\) est une forme linéaire sur \(H\), à valeurs dans \(\mathbb{R}\).
+
+Comme \(X\in H\) et \(h(tX)=t\) pour tout réel \(t\), \(h\) est surjective :
+
+\equationajustee{\boxed{h:H\to\mathbb{R},\qquad h(H)=\mathbb{R}.}}
+
+\begin{piege}
+
+Confondre \(P'(0)\) (un nombre) avec \(P'\) (un polynôme de \({\mathbb{R}}_2[X]\)). C'est l'erreur la plus répandue : d'après le rapport 2026, un candidat sur cinq répond que \(h\) est à valeurs dans \(H\).
+
+\end{piege}
+
+\begin{jury}
+
+Pour l'ensemble d'arrivée, le rapport 2026 note que « seuls 2 candidats sur 5 répondent correctement ». Il précise aussi qu'il n'est pas utile de vérifier que l'image de \(0\) est nulle : la définition de la linéarité suffit.
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+La linéarité est admise : que reste-t-il à prouver pour parler d'endomorphisme de \(H\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculez \(f(P)\) pour \(P=a(1+X^3)+bX+cX^2\) quelconque et comparez le coefficient constant et celui de \(X^3\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Il suffit de montrer \(f(H)\subset H\). Soit \(P\in H\) : par la question 1, \(P=a(1+X^3)+bX+cX^2\). On a \(P(0)=a\), \(P'(0)=b\) et \(P''(0)=2c\), d'où :
+
+\equationajustee{\begin{aligned}
+f(P)&=a(X+X^2)-\frac b2(X^3+X^2-X+1)-\frac c2(X^3-X^2+X+1)\\
+&=-\frac{b+c}2+\Big(a+\frac{b-c}2\Big)X+\Big(a-\frac{b-c}2\Big)X^2-\frac{b+c}2X^3.
+\end{aligned}}
+
+Le coefficient constant est égal à celui de \(X^3\) : \(f(P)\in H\). \textbf{\(f\) est un endomorphisme de \(H\).}
+
+En coordonnées dans \((1+X^3,X,X^2)\) :
+
+\equationajustee{f\big(a(1+X^3)+bX+cX^2\big)=-\frac{b+c}2(1+X^3)+\Big(a+\frac{b-c}2\Big)X+\Big(a-\frac{b-c}2\Big)X^2.}
+
+\begin{methode}
+
+Garder cette formule en coordonnées : elle sert directement aux questions 13 et 14.
+
+\end{methode}
+
+\begin{piege}
+
+Trois erreurs relevées par le rapport 2026 : redémontrer la linéarité, qui est admise ; prouver que \(f\) est un endomorphisme de \({\mathbb{R}}_3[X]\) ; partir de \(P\in H\) mais calculer en fait avec un \(P\) quelconque de \({\mathbb{R}}_3[X]\). Il faut utiliser la condition \(a=d\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 regrette que la base de la question 1 serve si peu : « Rares sont les candidats qui exploitent la base de H trouvée à la question 1. »
+
+\end{jury}
+
+\hypertarget{premier-exercice-partie-b-le-produit-scalaire-ux3c6}{%
+\section{Premier exercice, partie B --- Le produit scalaire φ}\label{premier-exercice-partie-b-le-produit-scalaire-ux3c6}}
+
+Après deux questions de cours, on découvre que \(\varphi(P,Q)=\sum_k p_kq_k\), où \(p_k\) et \(q_k\) sont les coefficients de \(P\) et \(Q\). La base canonique est donc orthonormée et tous les calculs deviennent immédiats.
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Quatre propriétés : deux « algébriques », deux portant sur \(\varphi(P,P)\). N'oubliez pas les ensembles de départ et d'arrivée.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Un produit scalaire sur \({\mathbb{R}}_3[X]\) est une application \(\varphi:{\mathbb{R}}_3[X]\times{\mathbb{R}}_3[X]\to\mathbb{R}\) qui est :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{bilinéaire} ;
+\item
+  \textbf{symétrique} : \(\varphi(P,Q)=\varphi(Q,P)\) ;
+\item
+  \textbf{définie positive} : \(\varphi(P,P)\geqslant0\), et \(\varphi(P,P)=0\Rightarrow P=0\).
+\end{itemize}
+
+\begin{piege}
+
+Donner \({\mathbb{R}}_3[X]\) comme ensemble d'arrivée, ou oublier le carré cartésien au départ : le rapport 2026 relève régulièrement ces deux erreurs. Autre confusion signalée : donner un exemple de produit scalaire au lieu de la définition.
+
+\end{piege}
+
+\begin{jury}
+
+D'après le rapport 2026, il n'était pas demandé d'expliciter chaque terme, mais « les domaines de définition et d'arrivée de \(\varphi\) étaient attendus ». Ils sont rarement donnés.
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Pour obtenir la linéarité en la seconde variable, faites passer cette variable en première position.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La symétrie sert deux fois : avant et après la linéarité à gauche.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Pour \(P,Q_1,Q_2\in{\mathbb{R}}_3[X]\) et \(\lambda\in\mathbb{R}\), par symétrie, linéarité à gauche, puis symétrie :
+
+\equationajustee{\begin{aligned}
+\varphi(P,\lambda Q_1+Q_2)&=\varphi(\lambda Q_1+Q_2,P)\\
+&=\lambda\varphi(Q_1,P)+\varphi(Q_2,P)\\
+&=\lambda\varphi(P,Q_1)+\varphi(P,Q_2).
+\end{aligned}}
+
+\(\varphi\) est linéaire en sa seconde variable et, par hypothèse, en la première : \textbf{\(\varphi\) est bilinéaire.}
+
+\begin{methode}
+
+En pratique, pour montrer qu'une forme est un produit scalaire, on prouve la symétrie, puis la linéarité à gauche seulement, puis on conclut à la bilinéarité par cet argument.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 rappelle que ce résultat n'est plus explicitement au programme, alors que presque tous les candidats l'utilisent. Il sanctionne la simple reformulation de l'énoncé (« à gauche » au lieu de « première variable ») et note : « Les démonstrations sont parfois incomplètes et/ou confuses, en particulier lors de l'utilisation du caractère symétrique. » Écrivez chaque égalité avec la propriété qui la justifie.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Première voie : relier \(P^{(k)}(0)\) aux coefficients de \(P\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Seconde voie : interprétez les hypothèses en termes de multiplicité de la racine \(0\), puis comparez au degré.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\emph{Méthode 1.} Avec \(P=a+bX+cX^2+dX^3\), les hypothèses donnent :
+
+\equationajustee{\begin{aligned}
+a&=0, & b&=0,\\
+2c&=0, & 6d&=0.
+\end{aligned}}
+
+Donc \(P=0\).
+
+\emph{Méthode 2.} \(0\) est racine de \(P\) d'ordre de multiplicité au moins \(4\).
+
+Si \(P\) était non nul, \(X^4\) diviserait \(P\), et on aurait \(\deg P\geqslant4\). Or \(\deg P\leqslant3\) : \textbf{\(P=0\)}.
+
+(Troisième voie possible : la formule de Taylor \(P=\sum_{k=0}^{3}\frac{P^{(k)}(0)}{k!}X^k\).)
+
+\begin{piege}
+
+Écrire « un polynôme de \({\mathbb{R}}_3[X]\) possède au plus 3 racines » sans préciser qu'il est non nul : le rapport 2026 rappelle que la phrase est alors fausse. De même, « \(P\) a 4 racines » est imprécis (lesquelles ? distinctes ?) : il faut parler de la racine \(0\) et de sa multiplicité.
+
+\end{piege}
+
+\begin{jury}
+
+La preuve par les coefficients est bien réussie ; selon le rapport 2026, « L'utilisation de la formule de Taylor pour les polynômes a été appréciée. » Deux façons « différentes » doivent reposer sur deux arguments de nature différente.
+
+\end{jury}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Commencez par vérifier que \(X\) et \(X^2\) sont bien dans \(H\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que représente \(\frac{P^{(k)}(0)}{k!}\) ? Écrivez \(\varphi\) à l'aide des coefficients.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\(\frac{P^{(k)}(0)}{k!}\) est le coefficient \(p_k\) de \(X^k\) dans \(P\), donc :
+
+\equationajustee{\varphi(P,Q)=\sum_{k=0}^3p_kq_k.}
+
+\(X\) et \(X^2\) ont un coefficient constant et un coefficient de \(X^3\) nuls, donc égaux : ils sont dans \(H\). Leurs coefficients sont \((0,1,0,0)\) et \((0,0,1,0)\), d'où :
+
+\equationajustee{\begin{aligned}
+\varphi(X,X)&=1,\\
+\varphi(X^2,X^2)&=\frac{2\cdot2}{(2!)^2}=1,\\
+\varphi(X,X^2)&=0.
+\end{aligned}}
+
+\textbf{\(X\) et \(X^2\) sont deux vecteurs orthogonaux et unitaires de \(H\).}
+
+\begin{methode}
+
+Repérer qu'un produit scalaire « exotique » est le produit scalaire canonique dans une base bien choisie : ici la base \((1,X,X^2,X^3)\) est orthonormée pour \(\varphi\). Si l'on passe aux coordonnées dans \({\mathbb{R}}^4\), il faut d'abord établir cette identité.
+
+\end{methode}
+
+\begin{piege}
+
+Confondre vecteur unitaire (de norme \(1\)) et polynôme unitaire (de coefficient dominant \(1\)), ou oublier de prouver le caractère unitaire : deux erreurs relevées par le rapport 2026.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 insiste : « Il ne fallait pas oublier de signaler que les deux vecteurs proposés appartenaient à H. »
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Il manque un seul vecteur, de degré \(3\). Pensez à la base trouvée à la question 1.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifiez son orthogonalité à \(X\) et \(X^2\) avant de lancer un procédé de Gram-Schmidt.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\(1+X^3\in H\) a pour coefficients \((1,0,0,1)\). Donc il est orthogonal à \(X\) et à \(X^2\), et \(\|1+X^3\|^2=2\).
+
+La famille ci-dessous est orthonormée (donc libre) et compte \(3=\dim H\) vecteurs de \(H\). Elle est rangée par degrés décroissants :
+
+\equationajustee{\boxed{\mathcal{B}=(e_1,e_2,e_3)=\Big(\frac{1+X^3}{\sqrt2},\ X^2,\ X\Big).}}
+
+\begin{piege}
+
+L'ordre est imposé par l'énoncé (degrés décroissants) : \(X^2\) vient avant \(X\). Le signe de \(e_1\) reste libre ; on prend le plus naturel.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 accepte Gram-Schmidt, mais relève deux maladresses. Appliqué à \((X,X^2,1+X^3)\), beaucoup refont tous les calculs sans exploiter la question 7. Appliqué à \((1+X^3,X^2,X)\), il n'aboutit à la base demandée que parce que cette famille est déjà orthogonale.
+
+\end{jury}
+
+\hypertarget{question-9a}{%
+\subsection{Question 9(a)}\label{question-9a}}
+
+\begin{indication}{1}
+
+Dans une base orthonormée de \(H\), le projeté orthogonal a une expression explicite à l'aide des produits scalaires.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+Pour une base orthonormée \((e_1,e_2,e_3)\) de \(H\), le projeté orthogonal d'un polynôme \(Q\) sur \(H\) est :
+
+\equationajustee{p_H(Q)=\sum_{i=1}^3\varphi(Q,e_i)\,e_i.}
+
+Ici \(\varphi(1,e_1)=\frac1{\sqrt2}\) et \(\varphi(1,e_2)=\varphi(1,e_3)=0\), d'où :
+
+\equationajustee{\boxed{p_H(1)=\frac{1+X^3}2.}}
+
+\begin{jury}
+
+Le rapport 2026 trouve cette formule encore trop peu connue. « Les correcteurs incitent les candidats à la donner (en définissant leurs notations) même s'ils n'ont pas réussi à répondre à la question précédente. »
+
+\end{jury}
+
+\hypertarget{question-9b}{%
+\subsection{Question 9(b)}\label{question-9b}}
+
+\begin{indication}{1}
+
+Quelle est la dimension de \(H^\perp\) dans \({\mathbb{R}}_3[X]\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que sait-on du vecteur \(1-p_H(1)\) ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\({\mathbb{R}}_3[X]=H\oplus H^\perp\) en dimension finie, donc \(\dim H^\perp=4-3=1\).
+
+Le vecteur \(1-p_H(1)=\frac{1-X^3}2\) est non nul et appartient à \(H^\perp\), par caractérisation du projeté orthogonal. Contrôle direct : ses coefficients \((1,0,0,-1)\) sont orthogonaux à ceux de \(1+X^3\), \(X\) et \(X^2\).
+
+\equationajustee{\boxed{H^\perp=\operatorname{Vect}(1-X^3).}}
+
+\begin{piege}
+
+Confondre « une base de l'orthogonal de \(H\) » et « une base orthogonale de \(H\) », confusion relevée par le rapport 2026. \(H^\perp\) se cherche dans \({\mathbb{R}}_3[X]\) tout entier.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 le précise : « Il ne fallait pas oublier de justifier la dimension de l'orthogonal de H. »
+
+\end{jury}
+
+\hypertarget{premier-exercice-partie-c-une-rotation-de-lespace}{%
+\section{Premier exercice, partie C --- Une rotation de l'espace}\label{premier-exercice-partie-c-une-rotation-de-lespace}}
+
+On construit une base orthonormée directe adaptée à l'axe, on écrit la matrice de cours, puis on revient dans la base canonique par un changement de base orthonormée.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Normez \(\vec u\) ; choisissez ensuite un vecteur unitaire orthogonal très simple, et complétez par un produit vectoriel.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans une base orthonormée directe dont le premier vecteur oriente l'axe, la matrice d'une rotation d'angle \(\theta\) a une forme connue.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+On pose \(\vec u\,'=\frac1{\sqrt2}(\vec j-\vec k)\). Le vecteur \(\vec v\,'=\vec i\) est unitaire et orthogonal à \(\vec u\,'\). On complète par :
+
+\equationajustee{\begin{aligned}
+\vec w\,'&=\vec u\,'\wedge\vec v\,'\\
+&=\frac1{\sqrt2}(\vec j\wedge\vec i-\vec k\wedge\vec i)\\
+&=-\frac1{\sqrt2}(\vec j+\vec k).
+\end{aligned}}
+
+La base \(\mathcal{B}'=(\vec u\,',\vec v\,',\vec w\,')\) est orthonormée directe. Avec \(\cos\theta=0\) et \(\sin\theta=-1\) :
+
+\equationajustee{\boxed{R'=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\end{pmatrix}=\begin{pmatrix}1&0&0\\0&0&1\\0&-1&0\end{pmatrix}.}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ex1-q10-rotation-plan-orthogonal.pdf}
+\caption*{Figure 1 --- action de r dans le plan (v′, w′) orthogonal à Δ, vu depuis
+la pointe de u′ : quart de tour en sens horaire, r(v′) = −w′ et r(w′) =
+v′}
+\end{figure}
+
+\begin{piege}
+
+Prendre \(\vec w\,'\) « à l'œil » sans vérifier que la base est directe : on obtient alors la rotation d'angle opposé. Autre confusion relevée par le rapport 2026 : donner la matrice de passage de la base canonique à \(\mathcal{B}'\) au lieu de la matrice de \(r\) dans \(\mathcal{B}'\).
+
+\end{piege}
+
+\begin{jury}
+
+Le choix \(\vec v\,'=\vec i\) évite tout calcul ; le rapport 2026 note qu'« Il n'est pas rare que la recherche de \(\mathcal{B}'\) prenne plus d'une page\ldots{} ». La base proposée n'est pas toujours orthonormée ni directe, alors qu'il faut le vérifier.
+
+\end{jury}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Formule de changement de base, avec une matrice de passage orthogonale.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Contrôlez votre résultat : l'axe doit être fixe et la trace doit valoir \(1+2\cos\theta\).
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(P\), de colonnes \(\vec u\,',\vec v\,',\vec w\,'\), est orthogonale. La formule de changement de base donne donc \(R=PR'P^{-1}=PR'P^\top\), avec :
+
+\equationajustee{\begin{aligned}
+P&=\begin{pmatrix}0&1&0\\ \frac1{\sqrt2}&0&-\frac1{\sqrt2}\\ -\frac1{\sqrt2}&0&-\frac1{\sqrt2}\end{pmatrix},\\
+PR'&=\begin{pmatrix}0&0&1\\ \frac1{\sqrt2}&\frac1{\sqrt2}&0\\ -\frac1{\sqrt2}&\frac1{\sqrt2}&0\end{pmatrix}.
+\end{aligned}}
+
+\equationajustee{\boxed{R=\begin{pmatrix}0&-\frac{\sqrt2}2&-\frac{\sqrt2}2\\ \frac{\sqrt2}2&\frac12&-\frac12\\ \frac{\sqrt2}2&-\frac12&\frac12\end{pmatrix}.}}
+
+Contrôles : \(R\vec u\,'=\vec u\,'\) et \(\operatorname{tr}R=1\). De plus \(R\vec i=\frac{\sqrt2}2(\vec j+\vec k)\), qui vaut bien \(-\vec w\,'=r(\vec v\,')\).
+
+\begin{methode}
+
+Pour une rotation donnée par axe et angle : base orthonormée directe adaptée, matrice de cours, puis \(R=PR'P^\top\). Le résultat ne dépend pas de la base adaptée choisie.
+
+\end{methode}
+
+\begin{jury}
+
+Selon le rapport 2026, « Les formules de changement de base associées aux endomorphismes restent trop souvent mal connues ou mal utilisées. » Écrivez la formule avec la définition de \(P\) avant de calculer.
+
+\end{jury}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Que vaut \(R^\top\) pour une matrice orthogonale ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quelle est la plus petite puissance de \(r\) égale à l'identité ? Réduisez les exposants en conséquence.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Une rotation d'angle \(\pi\) en dimension 3 se décrit aussi comme une symétrie : laquelle ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\(R^\top=R^{-1}\). \textbf{\(R^\top\) est associée à \(r^{-1}\), la rotation d'axe \(\Delta\) (orienté par \(\vec u\)) et d'angle \(\frac\pi2\).}
+
+\(r^4\) est la rotation d'angle \(-2\pi\), donc \(r^4=\mathrm{id}\). Comme \(2025\equiv1\) et \(2026\equiv2\pmod 4\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\(R^{2025}=R\) : c'est \(r\)}, rotation d'axe \(\Delta\) et d'angle \(-\frac\pi2\) ;
+\item
+  \(R^{2026}=R^2\) est associée à \(r^2\), avec :
+\end{itemize}
+
+\equationajustee{R^2=\begin{pmatrix}-1&0&0\\0&0&-1\\0&-1&0\end{pmatrix}.}
+
+Deux descriptions de \(r^2\) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{la rotation d'axe \(\Delta\) et d'angle \(\pi\) (demi-tour)} ;
+\item
+  \textbf{la symétrie orthogonale par rapport à la droite \(\Delta\)} (retournement). Elle fixe \(\vec j-\vec k\) et change en leurs opposés les vecteurs du plan \(\Delta^\perp=\operatorname{Vect}(\vec i,\vec j+\vec k)\).
+\end{enumerate}
+
+\begin{piege}
+
+Réduire l'exposant modulo \(2\) au lieu de \(4\) : une rotation d'angle \(\pm\frac\pi2\) est d'ordre \(4\). Pour \(R^{2026}\), le rapport 2026 relève aussi l'oubli du mot « orthogonale » et l'emploi de « réflexion » : une réflexion est une symétrie par rapport à un \textbf{plan}.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 regrette une question délaissée : « Bien que l'on pouvait traiter cette question sans faire les précédentes, elle a été peu traitée, sans doute à cause de sa position. » Les angles doivent être simplifiés (donner \(\frac\pi2\), pas \(-\frac{2025\pi}2\)).
+
+\end{jury}
+
+\hypertarget{premier-exercice-partie-d-f-est-une-rotation-de-h}{%
+\section{Premier exercice, partie D --- f est une rotation de H}\label{premier-exercice-partie-d-f-est-une-rotation-de-h}}
+
+On fait le lien entre les parties B et C : la matrice de \(f\) dans \(\mathcal{B}\) est exactement \(R\).
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Calculez \(f(e_1)\), \(f(e_2)\), \(f(e_3)\) avec la formule en coordonnées de la question 3.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention à l'ordre \((e_1,e_2,e_3)=\big(\frac{1+X^3}{\sqrt2},X^2,X\big)\), différent de celui de la question 3.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Avec la formule de la question 3 :
+
+\equationajustee{\begin{aligned}
+f(e_1)&=\frac1{\sqrt2}(X+X^2)=\frac1{\sqrt2}e_2+\frac1{\sqrt2}e_3,\\[4pt]
+f(X^2)&=-\frac12(1+X^3)-\frac12X+\frac12X^2=-\frac1{\sqrt2}e_1+\frac12e_2-\frac12e_3,\\[4pt]
+f(X)&=-\frac12(1+X^3)+\frac12X-\frac12X^2=-\frac1{\sqrt2}e_1-\frac12e_2+\frac12e_3.
+\end{aligned}}
+
+\equationajustee{\boxed{\operatorname{Mat}_{\mathcal{B}}(f)=\begin{pmatrix}0&-\frac{\sqrt2}2&-\frac{\sqrt2}2\\ \frac{\sqrt2}2&\frac12&-\frac12\\ \frac{\sqrt2}2&-\frac12&\frac12\end{pmatrix}=R.}}
+
+Cette matrice, écrite dans une base orthonormée, est orthogonale de déterminant \(1\) : \(f\) est une rotation de \(H\).
+
+\begin{piege}
+
+Écrire les images en lignes au lieu de colonnes, ou garder l'ordre \((1+X^3,X,X^2)\) de la question 3 : on obtient alors une matrice avec deux lignes et deux colonnes échangées.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale des matrices de taille \(2\) ou \(4\), voire non carrées, sans qu'aucun candidat remarque l'incohérence avec la question suivante. \(H\) est de dimension \(3\) : la matrice est carrée d'ordre \(3\). Il note aussi des soucis de gestion de \(\sqrt2\).
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Le premier vecteur de \(\mathcal{B}''\) est invariant par \(f\) : résolvez \(f(P)=P\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour les deux autres, partez d'un vecteur \(\varepsilon_2\) orthogonal au premier et définissez \(\varepsilon_3\) à partir de \(f(\varepsilon_2)\) en lisant la deuxième colonne de la matrice voulue.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour l'orthogonalité, demandez-vous si elle dépend du choix fait, en regardant où doivent se trouver \(\varepsilon_1\) et \(\varepsilon_2\).
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+On cherche \((\varepsilon_1,\varepsilon_2,\varepsilon_3)\) avec :
+
+\equationajustee{\begin{aligned}
+f(\varepsilon_1)&=\varepsilon_1,\\
+f(\varepsilon_2)&=-\varepsilon_3,\\
+f(\varepsilon_3)&=\varepsilon_2.
+\end{aligned}}
+
+\emph{Vecteur invariant.} Pour \(P=a(1+X^3)+bX+cX^2\), l'égalité \(f(P)=P\) équivaut à :
+
+\equationajustee{\begin{cases}-\frac{b+c}2=a\\[2pt] a+\frac{b-c}2=b\\[2pt] a-\frac{b-c}2=c\end{cases}}
+
+Les deux dernières équations donnent \(a=\frac{b+c}2\). Avec la première, \(a=0\) et \(c=-b\). Donc \(\ker(f-\mathrm{id})=\operatorname{Vect}(X-X^2)\) ; on prend \(\varepsilon_1=X-X^2\).
+
+\emph{Plan tourné.} On prend \(\varepsilon_2=1+X^3\) et \(\varepsilon_3=-f(\varepsilon_2)=-(X+X^2)\). Alors \(f(\varepsilon_2)=-\varepsilon_3\). Et, par la question 13 :
+
+\equationajustee{\begin{aligned}
+f(\varepsilon_3)&=-\big(f(X)+f(X^2)\big)\\
+&=1+X^3=\varepsilon_2.
+\end{aligned}}
+
+\emph{Base.} Dans \((1+X^3,X,X^2)\), les coordonnées de \(\varepsilon_1\), \(\varepsilon_2\), \(\varepsilon_3\) forment une matrice de déterminant \(2\neq0\). C'est une base de \(H\), et
+
+\equationajustee{\boxed{\begin{aligned}
+\mathcal{B}''&=(X-X^2,\ 1+X^3,\ -X-X^2),\\
+\operatorname{Mat}_{\mathcal{B}''}(f)&=\begin{pmatrix}1&0&0\\0&0&1\\0&-1&0\end{pmatrix}.
+\end{aligned}}}
+
+\emph{Orthogonalité.} Les coefficients sont \((0,1,-1,0)\), \((1,0,0,1)\) et \((0,-1,-1,0)\). Donc :
+
+\equationajustee{\begin{aligned}
+\varphi(\varepsilon_1,\varepsilon_2)&=0,\\
+\varphi(\varepsilon_2,\varepsilon_3)&=0,\\
+\varphi(\varepsilon_1,\varepsilon_3)&=-1+1=0.
+\end{aligned}}
+
+\textbf{\(\mathcal{B}''\) est orthogonale.} Chaque vecteur est de norme \(\sqrt2\) ; divisée par \(\sqrt2\), elle devient orthonormée et convient encore.
+
+Plus généralement, \textbf{toute} base qui convient est orthogonale :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\varepsilon_1\in\operatorname{Vect}(X-X^2)\) ;
+\item
+  \(f^2(\varepsilon_2)=-\varepsilon_2\) force \(\varepsilon_2\in\ker(f^2+\mathrm{id})=\operatorname{Vect}(1+X^3,\allowbreak X+X^2)\), plan orthogonal à \(X-X^2\) ;
+\item
+  pour \(v=\alpha(1+X^3)+\beta(X+X^2)\), on a \(f(v)=\alpha(X+X^2)-\beta(1+X^3)\), d'où \(\varphi(v,f(v))=2\alpha\beta-2\alpha\beta=0\). Donc \(\varepsilon_3=-f(\varepsilon_2)\) est orthogonal à \(\varepsilon_2\).
+\end{itemize}
+
+\begin{methode}
+
+Réduire une rotation de l'espace : l'axe est \(\ker(f-\mathrm{id})\), on prend \(\varepsilon_2\) dans le plan orthogonal, et le troisième vecteur se lit sur la matrice cible (\(\varepsilon_3=-f(\varepsilon_2)\) ici). Une construction explicite, vérifiée, est la meilleure preuve d'existence.
+
+\end{methode}
+
+\begin{piege}
+
+Prendre \(\varepsilon_3=f(\varepsilon_2)\) : on obtient alors la matrice transposée (le \(-1\) et le \(1\) échangés).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 indique une question peu traitée, faute des résultats précédents, mais plutôt réussie par ceux qui les avaient : elle récompense ceux qui ont mené les questions 3, 8 et 13 jusqu'au bout.
+
+\end{jury}
+
+\hypertarget{deuxiuxe8me-exercice-partie-a-rappels-sur-les-coniques}{%
+\section{Deuxième exercice, partie A --- Rappels sur les coniques}\label{deuxiuxe8me-exercice-partie-a-rappels-sur-les-coniques}}
+
+Trois questions de cours, à traiter vite et sans erreur : elles servent dans les parties B et C.
+
+\begin{jury}
+
+Cette partie de cours a été très discriminante. Le rapport 2026 constate : « Seuls 6\% des candidats ont obtenu la totalité des points de cette partie. » Par question, les taux de réponse complète sont de 20 \%, 22 \% et 23 \%.
+
+\end{jury}
+
+\hypertarget{question-1a}{%
+\subsection{Question 1(a)}\label{question-1a}}
+
+\begin{indication}{1}
+
+Reconnaissez l'équation réduite et pensez à \(\cos^2+\sin^2=1\).
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+C'est une \textbf{ellipse} de centre \(O\), de sommets \((\pm a,0)\) et \((0,\pm b)\) (un cercle si \(a=b\)). Elle est paramétrée par :
+
+\equationajustee{\boxed{\begin{cases}x=a\cos t\\ y=b\sin t\end{cases}\qquad t\in[0,2\pi[.}}
+
+\hypertarget{question-1b}{%
+\subsection{Question 1(b)}\label{question-1b}}
+
+\begin{indication}{1}
+
+Quelle identité entre fonctions hyperboliques ressemble à l'équation ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une seule de ces fonctions est de signe constant : combien de paramétrages faut-il ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+C'est une \textbf{hyperbole} de centre \(O\), de sommets \((\pm a,0)\), d'asymptotes \(y=\pm\frac bax\), à deux branches :
+
+\equationajustee{\boxed{x>0:\ \begin{cases}x=a\operatorname{ch}t\\ y=b\operatorname{sh}t\end{cases}\qquad x<0:\ \begin{cases}x=-a\operatorname{ch}t\\ y=b\operatorname{sh}t\end{cases}\qquad t\in\mathbb{R}.}}
+
+Chaque paramétrage décrit exactement une branche. En effet, \(\operatorname{ch}^2-\operatorname{sh}^2=1\) et \(\operatorname{ch}\geqslant1\), et \(\operatorname{sh}\) est une bijection de \(\mathbb{R}\) sur \(\mathbb{R}\).
+
+\begin{piege}
+
+Donner le seul paramétrage \((a\operatorname{ch}t,b\operatorname{sh}t)\) : il ne décrit que la branche \(x>0\). Selon le rapport 2026, la plupart des candidats ne connaissent ni le mot « paramétrage » ni l'expression « branche d'une hyperbole ».
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 rappelle : « Dans le paramétrage, il ne faut pas oublier le domaine où évolue le paramètre. »
+
+\end{jury}
+
+\hypertarget{question-2a}{%
+\subsection{Question 2(a)}\label{question-2a}}
+
+\begin{indication}{1}
+
+Comparez deux distances : au foyer et à la directrice.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+C'est l'ensemble des points \(M\) du plan tels que
+
+\equationajustee{\boxed{MF=\varepsilon\,d(M,\mathcal{D}).}}
+
+\hypertarget{question-2b}{%
+\subsection{Question 2(b)}\label{question-2b}}
+
+\begin{indication}{1}
+
+Discutez selon la position de \(\varepsilon\) par rapport à \(1\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\textbf{Ellipse si \(0<\varepsilon<1\), parabole si \(\varepsilon=1\), hyperbole si \(\varepsilon>1\).}
+
+\hypertarget{question-3-1}{%
+\subsection{Question 3}\label{question-3-1}}
+
+\begin{indication}{1}
+
+Comparez les modules et les arguments de \(z\) et \(z'\).
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+On a \(|z'|=|z|\), et \(\arg z'\equiv\arg z+\theta\ [2\pi]\) si \(z\neq0\).
+
+\textbf{\(M'\) est l'image de \(M\) par la rotation de centre \(O\) et d'angle \(\theta\).}
+
+\hypertarget{deuxiuxe8me-exercice-partie-b-une-conique-cachuxe9e-dans-une-uxe9quation-en-module}{%
+\section{Deuxième exercice, partie B --- Une conique cachée dans une équation en module}\label{deuxiuxe8me-exercice-partie-b-une-conique-cachuxe9e-dans-une-uxe9quation-en-module}}
+
+Le projeté orthogonal sur \(\mathcal{D}\), écrit en complexe, fait apparaître la distance à \(\mathcal{D}\) dans l'équation de \(\mathcal{C}\) : on reconnaît la définition par foyer et directrice.
+
+\hypertarget{question-4a}{%
+\subsection{Question 4(a)}\label{question-4a}}
+
+\begin{indication}{1}
+
+Le vecteur \(\overrightarrow{MM'}\) est colinéaire à un vecteur normal de \(\mathcal{D}\), et \(M'\) est sur \(\mathcal{D}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrivez \(M'=M-t\,\vec n\) et déterminez \(t\).
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Avec \(\vec n=(\sqrt3,1)\) normal à \(\mathcal{D}\), on écrit \(M'=M-t\vec n\). Comme \(M'\in\mathcal{D}\) :
+
+\equationajustee{\begin{aligned}{}&\sqrt3(x-\sqrt3t)+(y-t)=3\\
+\iff\ &t=\frac{\sqrt3x+y-3}4.
+\end{aligned}}
+
+D'où :
+
+\equationajustee{\boxed{\begin{aligned}
+x'&=\frac{x-\sqrt3y+3\sqrt3}4,\\
+y'&=\frac{-\sqrt3x+3y+3}4.
+\end{aligned}}}
+
+Contrôle : un point de \(\mathcal{D}\) est sa propre projection.
+
+\begin{piege}
+
+Diviser par \(\|\vec n\|=2\) au lieu de \(\|\vec n\|^2=4\).
+
+Avec la formule de projection, le rapport 2026 rappelle qu'il faut projeter \(\overrightarrow{AM}\) pour un point \(A\) de \(\mathcal{D}\), et non \(\overrightarrow{OM}\) : \(\mathcal{D}\) ne passe pas par \(O\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 ouvre la question sur ce constat : « Les caractérisations d'une projection orthogonale sont mal connues. » Il faut en citer une : \(M'\in\mathcal{D}\) et \(\overrightarrow{MM'}\) normal à \(\mathcal{D}\).
+
+\end{jury}
+
+\hypertarget{question-4b}{%
+\subsection{Question 4(b)}\label{question-4b}}
+
+\begin{indication}{1}
+
+Développez le membre de droite en parties réelle et imaginaire et comparez avec \(x'+iy'\).
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+On a \(e^{i\pi/3}=\frac12+i\frac{\sqrt3}2\) et \(e^{i\pi/6}=\frac{\sqrt3}2+\frac i2\). Donc :
+
+\equationajustee{\bar z\,e^{i\pi/3}=\frac{x+\sqrt3y}2+i\frac{\sqrt3x-y}2.}
+
+Par suite, avec la question 4(a) :
+
+\equationajustee{\begin{aligned}
+z-\bar z\,e^{i\pi/3}+3e^{i\pi/6}&=\frac{x-\sqrt3y+3\sqrt3}2+i\,\frac{-\sqrt3x+3y+3}2\\
+&=2(x'+iy').
+\end{aligned}}
+
+\equationajustee{\boxed{z'=\frac12\Big(z-\bar z\,e^{i\frac\pi3}+3e^{i\frac\pi6}\Big).}}
+
+\begin{jury}
+
+Le rapport 2026 la décrit ainsi : « Très peu traitée même par les candidats ayant réussi la question précédente. » C'est pourtant un simple calcul de parties réelle et imaginaire, et le résultat est donné.
+
+\end{jury}
+
+\hypertarget{question-5-1}{%
+\subsection{Question 5}\label{question-5-1}}
+
+\begin{indication}{1}
+
+Simple soustraction : comparez le résultat avec l'équation de \(\mathcal{C}\).
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+On remplace \(z'\) par l'expression de la question 4(b) :
+
+\equationajustee{\begin{aligned}
+z-z'&=z-\frac12\Big(z-\bar z\,e^{i\frac\pi3}+3e^{i\frac\pi6}\Big)\\
+&=\frac12z+\frac12\bar z\,e^{i\frac\pi3}-\frac32e^{i\frac\pi6}.
+\end{aligned}}
+
+\equationajustee{\boxed{z-z'=\frac12\Big(z+\bar z\,e^{i\frac\pi3}-3e^{i\frac\pi6}\Big).}}
+
+\begin{piege}
+
+Se tromper de signe en développant \(-z'\), erreur relevée par le rapport 2026. Écrivez la ligne intermédiaire.
+
+\end{piege}
+
+\begin{jury}
+
+D'après le rapport 2026, tous les candidats remplacent \(z'\) par le résultat de la question précédente, mais sans le dire. Citez la question 4(b) : un résultat antérieur s'utilise avec son numéro.
+
+\end{jury}
+
+\hypertarget{question-6-1}{%
+\subsection{Question 6}\label{question-6-1}}
+
+\begin{indication}{1}
+
+Interprétez géométriquement \(|z|\) et \(|z-z'|\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vous devez retrouver la relation de la question 2(a) : identifiez foyer, directrice et excentricité.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+D'après la question 5 :
+
+\equationajustee{\big|z+\bar z\,e^{i\pi/3}-3e^{i\pi/6}\big|=2|z-z'|=2MM'.}
+
+\(M'\) étant le projeté orthogonal de \(M\) sur \(\mathcal{D}\), \(MM'=d(M,\mathcal{D})\). Comme \(|z|=OM\) :
+
+\equationajustee{M\in\mathcal{C}\iff OM=2\,d(M,\mathcal{D}).}
+
+Comme \(O\notin\mathcal{D}\), \textbf{\(\mathcal{C}\) est la conique de foyer \(O\), de directrice \(\mathcal{D}:\sqrt3x+y=3\), d'excentricité \(2\) : une hyperbole.}
+
+\begin{piege}
+
+Donner une nature de conique au hasard, sans la déduire de l'excentricité. Le rapport 2026 précise que cela ne rapporte aucun point, et conseille au moins de vérifier la cohérence avec la question 8(c).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 lie l'échec de cette question à celui de la question de cours 2 : sans la définition par foyer et directrice, on ne peut pas conclure. Même parmi ceux qui ont fait le lien, le foyer n'est pas toujours trouvé. Vérifiez aussi que le foyer n'est pas sur la directrice, condition posée à la question 2.
+
+\end{jury}
+
+\hypertarget{deuxiuxe8me-exercice-partie-c-ruxe9duction-par-rotation-et-tracuxe9}{%
+\section{Deuxième exercice, partie C --- Réduction par rotation et tracé}\label{deuxiuxe8me-exercice-partie-c-ruxe9duction-par-rotation-et-tracuxe9}}
+
+On fait tourner la figure pour rendre la directrice verticale, ce qui donne une équation sans terme \(xy\) ; on en lit les éléments caractéristiques.
+
+\hypertarget{question-7-1}{%
+\subsection{Question 7}\label{question-7-1}}
+
+\begin{indication}{1}
+
+Un vecteur normal se lit sur l'équation de \(\mathcal{D}\) ; normez-le et reconnaissez \((\cos\alpha,\sin\alpha)\).
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+On prend \(\vec u=\sqrt3\,\vec e_1+\vec e_2\), normal à \(\mathcal{D}\) et d'abscisse positive. Tout autre choix lui est positivement colinéaire.
+
+Il a même sens que le vecteur unitaire \(\big(\frac{\sqrt3}2,\allowbreak \frac12\big)=(\cos\frac\pi6,\allowbreak \sin\frac\pi6)\) :
+
+\equationajustee{\boxed{\alpha\equiv\frac\pi6\ [2\pi].}}
+
+\begin{piege}
+
+Confondre vecteur normal et vecteur directeur de \(\mathcal{D}\), confusion relevée par le rapport 2026. Il faut aussi commencer par donner explicitement \(\vec u\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 rappelle : « Connaitre le cosinus d'un angle ne suffit pas à trouver cet angle. » Il faut le cosinus \textbf{et} le sinus, et les valeurs usuelles doivent être connues : on n'écrit pas \(\alpha=\arccos\frac12\).
+
+\end{jury}
+
+\hypertarget{question-8a}{%
+\subsection{Question 8(a)}\label{question-8a}}
+
+\begin{indication}{1}
+
+Remplacez \(z\) par \(e^{i\alpha}Z\) et \(\bar z\) par son conjugué, puis factorisez.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\(\bar z=e^{-i\pi/6}\bar Z\), donc \(\bar z\,e^{i\pi/3}=e^{i\pi/6}\bar Z\) et :
+
+\equationajustee{z+\bar z\,e^{i\pi/3}-3e^{i\pi/6}=e^{i\pi/6}(Z+\bar Z-3).}
+
+Avec \(|z|=|Z|\) et \(|e^{i\pi/6}|=1\), on obtient, par définition de \(\mathcal{C}'\) puis de \(\mathcal{C}\) :
+
+\equationajustee{\begin{aligned}
+N\in\mathcal{C}'&\iff M\in\mathcal{C}\\
+&\iff|Z|=|Z+\bar Z-3|.
+\end{aligned}}
+
+\begin{piege}
+
+Mal conjuguer \(e^{i\alpha}Z\) : son conjugué est \(e^{-i\alpha}\bar Z\). Le rapport 2026 signale aussi des \(z\) et \(Z\) indiscernables sur la copie.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève que « les candidats oublient soit de raisonner par équivalence soit de justifier leurs équivalences ». Justifiez chaque équivalence (définition de \(\mathcal{C}'\), puis de \(\mathcal{C}\), puis calcul de module).
+
+\end{jury}
+
+\hypertarget{question-8b}{%
+\subsection{Question 8(b)}\label{question-8b}}
+
+\begin{indication}{1}
+
+\(Z+\bar Z\) est réel ; élevez au carré en justifiant l'équivalence.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\(Z+\bar Z-3=2x-3\). Les deux membres sont positifs, donc l'égalité équivaut à celle des carrés :
+
+\equationajustee{\begin{aligned}
+|Z|=|Z+\bar Z-3|&\iff x^2+y^2=(2x-3)^2\\
+&\iff3x^2-12x-y^2+9=0.
+\end{aligned}}
+
+\equationajustee{\boxed{\mathcal{C}':\ 3x^2-12x-y^2+9=0.}}
+
+\begin{jury}
+
+Très peu traitée selon le rapport 2026, qui note un malaise avec le module d'un complexe et des équivalences souvent oubliées. L'argument de positivité justifie le passage au carré.
+
+\end{jury}
+
+\hypertarget{question-8c}{%
+\subsection{Question 8(c)}\label{question-8c}}
+
+\begin{indication}{1}
+
+Forme canonique en \(x\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les sommets sont sur les axes de symétrie : lequel des deux coupe vraiment la courbe ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+L'équation s'écrit \(3(x-2)^2-y^2=3\), soit :
+
+\equationajustee{(x-2)^2-\frac{y^2}3=1.}
+
+C'est une hyperbole de centre \((2,0)\), avec \(a=1\) et \(b=\sqrt3\), d'axes \(y=0\) et \(x=2\).
+
+La droite \(x=2\) ne coupe pas la courbe ; la droite \(y=0\) la coupe en \(x=1\) et \(x=3\).
+
+\equationajustee{\boxed{\begin{aligned}{}&\text{centre }(2,0),\\
+&\text{sommets }(1,0)\text{ et }(3,0),\\
+&\text{asymptotes }y=\pm\sqrt3\,(x-2).
+\end{aligned}}}
+
+Contrôle : \(c=\sqrt{a^2+b^2}=2\), donc les foyers sont \((0,0)\) et \((4,0)\), et \(e=c/a=2\).
+
+On retrouve le foyer \(O\) et l'excentricité \(2\) de la question 6, la rotation fixant \(O\).
+
+\begin{methode}
+
+Recouper avec la partie B : une rotation de centre \(O\) conserve le foyer \(O\) et l'excentricité. C'est un test d'erreur gratuit.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 juge que la plupart des copies ne fournissent pas les trois éléments demandés, et dénonce des calculs longs et souvent faux faute d'analyser d'abord la structure de l'équation. Sauf indication contraire, les correcteurs lisent les coordonnées dans le repère \((O;\vec e_1,\vec e_2)\) : précisez le repère si vous en changez.
+
+\end{jury}
+
+\hypertarget{question-8d}{%
+\subsection{Question 8(d)}\label{question-8d}}
+
+\begin{indication}{1}
+
+Vérifiez que \(G\) est sur la courbe, puis utilisez un vecteur normal fourni par le gradient.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\(G\in\mathcal{C}'\) car \(-9+9=0\). Avec \(\Phi=3x^2-12x-y^2+9\), on a \(\nabla\Phi(0,3)=(-12,-6)\neq\vec0\). La tangente en \(G\) est donc :
+
+\equationajustee{\begin{aligned}{}&-12x-6(y-3)=0\\
+\iff\ &2x+y-3=0.
+\end{aligned}}
+
+\equationajustee{\boxed{\mathcal{T}:\ 2x+y=3.}}
+
+\begin{piege}
+
+Confondre avec la tangente à une courbe paramétrée, confusion relevée par le rapport 2026. Ici la courbe est donnée par une équation : le gradient fournit un vecteur normal, comme en 11(b).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 rappelle une évidence trop souvent oubliée : « Dans une équation de droite, il y a un signe égal (=). » L'équation doit être simplifiée et de la forme \(ax+by=c\) ou \(ax+by+c=0\).
+
+\end{jury}
+
+\hypertarget{question-9a-1}{%
+\subsection{Question 9(a)}\label{question-9a-1}}
+
+\begin{indication}{1}
+
+Commencez par le squelette : repère gradué, centre, sommets, rectangle de construction, asymptotes.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculez quelques points exacts, par exemple ceux d'abscisse \(0\) et \(4\).
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+Sur papier millimétré, avec une unité d'au moins 1 cm (2 cm donne un tracé plus lisible), repère dessiné et axes gradués :
+
+\begin{itemize}
+\tightlist
+\item
+  placer \(\Omega(2,0)\) et les sommets \((1,0)\) et \((3,0)\) ;
+\item
+  tracer les asymptotes \(y=\pm\sqrt3(x-2)\), diagonales du rectangle \([1,3]\times[-\sqrt3,\sqrt3]\), avec \(\sqrt3\approx1{,}73\) ;
+\item
+  tracer la branche gauche, à tangente verticale en \((1,0)\), passant par \(G(0,3)\) et \((0,-3)\) ;
+\item
+  tracer la branche droite, symétrique par rapport à \(x=2\), passant par \((3,0)\) et \((4,\pm3)\) ;
+\item
+  les branches se rapprochent des asymptotes sans les couper : \(|y|=\sqrt{24}\approx4{,}9\) pour \(x=-1\) ou \(x=5\) ;
+\item
+  éventuellement, ajouter la tangente \(\mathcal{T}:y=3-2x\) en \(G\).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ex2-q9a-trace-hyperbole.pdf}
+\caption*{Figure 2 --- tracé de 𝒞′ : centre Ω(2, 0), sommets S₁(1, 0) et S₂(3, 0),
+rectangle de construction et asymptotes y = ±√3 (x − 2), tangente 𝒯 en
+G(0, 3)}
+\end{figure}
+
+\begin{piege}
+
+Ne pas respecter l'unité imposée, ou tracer sans repère ni graduations : le rapport 2026 sanctionne les deux.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 est sévère : « Tous les candidats qui n'ont pas fait apparaitre de repère ou de graduations claires sur les axes ont été pénalisés et cette année, ils ont été très nombreux. » Il ajoute : « Enfin, il serait souhaitable que la courbe se rapproche de ses asymptotes. »
+
+\end{jury}
+
+\hypertarget{question-9b-1}{%
+\subsection{Question 9(b)}\label{question-9b-1}}
+
+\begin{indication}{1}
+
+Relisez la relation \(z=e^{i\alpha}Z\) à la lumière de la question 3.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\(M\) d'affixe \(z=e^{i\pi/6}Z\) est l'image de \(N\) d'affixe \(Z\) par la rotation de centre \(O\) et d'angle \(\frac\pi6\).
+
+Or \(N\in\mathcal{C}'\iff M\in\mathcal{C}\), et cette rotation est bijective.
+
+\textbf{\(\mathcal{C}\) est l'image de \(\mathcal{C}'\) par la rotation de centre \(O\) et d'angle \(\frac\pi6\).}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ex2-q9b-rotation-c-prime-c.pdf}
+\caption*{Figure 3 --- la rotation de centre O et d'angle π/6 envoie 𝒞′ (gris) sur
+𝒞 (bleu) et la directrice x = 3/2 sur 𝒟 ; H est le projeté de O sur 𝒟}
+\end{figure}
+
+\begin{piege}
+
+Inverser le sens : c'est \(\mathcal{C}'\) qui s'obtient à partir de \(\mathcal{C}\) par la rotation d'angle \(-\frac\pi6\). Le rapport 2026 note que les candidats hésitent souvent entre \(\alpha\) et \(-\alpha\).
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, « Il manque très souvent le centre de la rotation ». Une rotation du plan se donne par son centre \textbf{et} son angle.
+
+\end{jury}
+
+\hypertarget{deuxiuxe8me-exercice-partie-d-un-cuxf4ne-et-une-surface-de-ruxe9volution}{%
+\section{Deuxième exercice, partie D --- Un cône et une surface de révolution}\label{deuxiuxe8me-exercice-partie-d-un-cuxf4ne-et-une-surface-de-ruxe9volution}}
+
+Cette partie est indépendante des précédentes. \(S\) est un cône de sommet \(O\) ; il admet des sections circulaires, qui ne suffisent pas à le dire de révolution. On finit par une surface de révolution engendrée par une branche d'hyperbole.
+
+\hypertarget{question-10-1}{%
+\subsection{Question 10}\label{question-10-1}}
+
+\begin{indication}{1}
+
+Partez d'un point quelconque de \(\mathcal{C}''\) et montrez qu'il est sur \(S\).
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+Soit \((x,y,z)\in\mathcal{C}''\). Alors \(z=1\) et \(y^2=3x^2-3\), donc :
+
+\equationajustee{-3x^2+y^2+3z^2=-3x^2+(3x^2-3)+3=0.}
+
+Le point est sur \(S\). \textbf{Donc \(\mathcal{C}''\subset S\).}
+
+\begin{piege}
+
+Démontrer l'inclusion dans le mauvais sens, ou prétendre que \(S=\mathcal{C}''\) : le rapport 2026 relève les deux, ainsi que des réponses « très mal rédigées ». Une inclusion se prouve en partant d'un point du petit ensemble.
+
+\end{piege}
+
+\hypertarget{question-11a}{%
+\subsection{Question 11(a)}\label{question-11a}}
+
+\begin{indication}{1}
+
+Un point de \(S=\{F=0\}\) est régulier si le gradient de \(F\) n'y est pas nul.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+On a \(\nabla F=(-6x,2y,6z)\). Le gradient est nul si et seulement si ses \textbf{trois} composantes sont nulles, c'est-à-dire en \(O\) seulement. Et \(O\in S\).
+
+\equationajustee{\boxed{\text{Points \text{réguliers} : } S\setminus\{O\}.}}
+
+(\(S\) est un cône de sommet \(O\), car son équation est homogène de degré 2.)
+
+\begin{piege}
+
+Trois erreurs relevées par le rapport 2026 : croire qu'un vecteur est non nul si et seulement si \textbf{toutes} ses coordonnées sont non nulles ; oublier de vérifier que \(O\in S\) ; conclure que les points réguliers sont ceux de \({\mathbb{R}}^3\setminus\{O\}\), alors qu'on parle de points de \(S\).
+
+\end{piege}
+
+\hypertarget{question-11b}{%
+\subsection{Question 11(b)}\label{question-11b}}
+
+\begin{indication}{1}
+
+Vérifiez que \(J\in S\) et qu'il est régulier, puis prenez le gradient comme vecteur normal.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\(F(J)=-12+9+3=0\), donc \(J\in S\), et \(J\neq O\) est régulier. On a \(\nabla F(J)=(-12,-6,-6)=-6(2,1,1)\), d'où :
+
+\equationajustee{\begin{aligned}{}&2(x-2)+(y+3)+(z+1)=0\\
+\iff\ &2x+y+z=0.
+\end{aligned}}
+
+\equationajustee{\boxed{\text{Plan tangent en } J:\ 2x+y+z=0.}}
+
+Le plan tangent passe par le sommet \(O\), comme il se doit pour un cône.
+
+\begin{jury}
+
+Le rapport 2026 veut une équation de la forme \(ax+by+cz+d=0\) aux coefficients les plus simples. Il observe : « La division par 6 a très souvent été faite, celle par −6 un peu moins. »
+
+\end{jury}
+
+\hypertarget{question-12a}{%
+\subsection{Question 12(a)}\label{question-12a}}
+
+\begin{indication}{1}
+
+Dans \(P_\lambda\), un des deux facteurs de l'identité vaut \(\lambda\) : l'équation de \(S\) devient celle d'une sphère.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Où est le centre de cette sphère par rapport à \(P_\lambda\) ? Examinez à part le cas \(\lambda=0\).
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+L'identité se vérifie en développant, car \((2x-\sqrt2z)(2x+\sqrt2z)=4x^2-2z^2\). Sur \(P_\lambda\), on raisonne par équivalence :
+
+\equationajustee{M\in{\mathcal{C}}_\lambda\iff\begin{cases}2x+\sqrt2z=\lambda\\ (x-\lambda)^2+y^2+\big(z+\frac\lambda{\sqrt2}\big)^2=\frac32\lambda^2.\end{cases}}
+
+\emph{Cas \(\lambda\neq0\).} La seconde équation est celle d'une sphère de centre \(\Omega_\lambda=\big(\lambda,0,-\frac\lambda{\sqrt2}\big)\) et de rayon \(|\lambda|\sqrt{3/2}\). Comme \(2\lambda-\lambda=\lambda\), on a \(\Omega_\lambda\in P_\lambda\) : le plan passe par le centre et coupe la sphère selon un grand cercle.
+
+\textbf{\({\mathcal{C}}_\lambda\) est le cercle de \(P_\lambda\) de centre \(\Omega_\lambda\) et de rayon \(\frac{\sqrt6}2|\lambda|\).}
+
+\emph{Cas \(\lambda=0\).} La seconde équation impose \(x=y=z=0\), donc \({\mathcal{C}}_0=\{O\}\) (cercle de rayon nul).
+
+\textbf{Erreur d'énoncé à signaler :} \({\mathcal{C}}_\lambda\) n'est jamais vide. C'est un cercle pour \(\lambda\neq0\) et le point \(O\) pour \(\lambda=0\).
+
+\begin{methode}
+
+Pour montrer qu'une section plane est un cercle, on l'écrit comme intersection d'une sphère et d'un plan, puis on compare la distance du centre au plan avec le rayon.
+
+\end{methode}
+
+\begin{piege}
+
+Prendre l'équation \((x-a)^2+(y-b)^2+(z-c)^2=R^2\) pour celle d'un cercle : c'est une sphère. Le rapport 2026 relève aussi l'oubli de l'équation du plan et l'absence de raisonnement par équivalence.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 confirme que \({\mathcal{C}}_0=\{O\}\), qui n'est donc pas vide. Il note que les rares candidats qui ont changé de base sont arrivés au résultat. Quand un énoncé paraît inexact, on le signale sur la copie et on traite la version corrigée, comme le demande la consigne en tête du sujet.
+
+\end{jury}
+
+\hypertarget{question-12b}{%
+\subsection{Question 12(b)}\label{question-12b}}
+
+\begin{indication}{1}
+
+Pour une surface de révolution d'axe \(A\), où se trouvent les centres des cercles découpés par les plans orthogonaux à \(A\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparez la droite des centres \(\Omega_\lambda\) et la direction normale aux plans \(P_\lambda\).
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\textbf{Non.} Pour une surface de révolution d'axe \(A\), les sections par les plans orthogonaux à \(A\) sont des cercles centrés sur \(A\).
+
+Ici les plans \(P_\lambda\) sont orthogonaux à \(\vec n=(2,0,\sqrt2)\). Mais les centres \(\Omega_\lambda=\lambda\big(1,0,-\frac1{\sqrt2}\big)\) sont sur la droite dirigée par \((\sqrt2,0,-1)\), qui n'est pas colinéaire à \(\vec n\).
+
+Les cercles \({\mathcal{C}}_\lambda\) ne sont pas centrés sur une droite orthogonale à leurs plans : leur existence ne permet pas de conclure.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ex2-q12b-sections-circulaires-coupe.pdf}
+\caption*{Figure 4 --- coupe par le plan y = 0 : S y laisse les droites z = ±x,
+chaque 𝒞\_λ un diamètre (en bleu) ; les centres Ω\_λ sont sur une droite
+non colinéaire à n = (2, 0, √2)}
+\end{figure}
+
+Remarque : les sections \(x=x_0\neq0\) sont les ellipses \(y^2+3z^2=3x_0^2\), non circulaires, donc \(S\) n'est pas de révolution d'axe \((Ox)\). Établir que \(S\) n'est de révolution autour d'aucun axe relèverait de la classification des quadriques, hors programme en PT ; la question ne le demande pas.
+
+\begin{piege}
+
+Conclure « oui » dès qu'on voit des sections circulaires : il faut encore que leurs centres soient sur une droite orthogonale à leurs plans, ce qui n'est pas le cas ici. À l'inverse, le rapport 2026 relève des « non » justifiés par un argument qui exclurait aussi la sphère des surfaces de révolution.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 exige une justification : « Toute affirmation doit être accompagnée d'une justification adaptée ». Un « oui » ou un « non » isolé n'est pas pris en compte. Un contre-exemple graphique a été accepté, mais le jury préfère un argument fondé sur la définition d'une surface de révolution.
+
+\end{jury}
+
+\hypertarget{question-13-1}{%
+\subsection{Question 13}\label{question-13-1}}
+
+\begin{indication}{1}
+
+Quelles abscisses prennent les points de \(\mathcal{C}''\) ? Précisez \(\mathcal{C}''_+\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un point \(M\) est sur \(\Sigma\) s'il est sur le même cercle d'axe \((Ox)\) qu'un point de \(\mathcal{C}''_+\) : même abscisse, même distance à l'axe.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Raisonnez par double inclusion, et n'oubliez pas la contrainte sur \(x\).
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+Sur \(\mathcal{C}''\), \(3x^2=3+y^2\geqslant3\), donc \(|x|\geqslant1\). Ainsi :
+
+\equationajustee{\mathcal{C}''_+=\{(x,y,1)\ :\ 3x^2-y^2=3,\ x\geqslant1\}.}
+
+\(M(x,y,z)\in\Sigma\) si et seulement s'il existe \((x_0,y_0,1)\in\mathcal{C}''_+\) avec \(x=x_0\) et \(y^2+z^2=y_0^2+1\).
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(M\in\Sigma\) : \(x\geqslant1\) et \(y^2+z^2=(3x^2-3)+1=3x^2-2\).
+\item
+  Réciproquement, si \(x\geqslant1\) et \(y^2+z^2=3x^2-2\), le point \((x,\sqrt{3x^2-3},1)\) est dans \(\mathcal{C}''_+\). Il est à la même distance de l'axe que \(M\), donc \(M\in\Sigma\).
+\end{itemize}
+
+\equationajustee{\boxed{\Sigma:\quad3x^2-y^2-z^2=2,\qquad x\geqslant1.}}
+
+La méridienne est \(r=\sqrt{3x^2-2}\) pour \(x\geqslant1\), issue de \((x,r)=(1,1)\). Le point \((1,0,1)\) décrit le cercle de rayon \(1\) du plan \(x=1\).
+
+\begin{piege}
+
+Donner l'équation seule : elle décrit un hyperboloïde à deux nappes complet (\(|x|\geqslant\sqrt{2/3}\)), bien plus grand que \(\Sigma\). La condition \(x\geqslant1\) fait partie de la réponse.
+
+\end{piege}
+
+\begin{jury}
+
+D'après le rapport 2026, cette dernière question a été abordée par très peu de candidats, et seule une poignée a vu la condition \(x\geqslant1\). C'est elle qui fait la différence.
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Un sous-ensemble défini par une équation linéaire est un noyau ; le théorème du rang en donne la dimension.
+\item
+  Un produit scalaire défini par une formule inhabituelle est souvent le produit scalaire canonique dans une base cachée : ici \(\varphi\) est celui des coefficients.
+\item
+  Projeté orthogonal dans une base orthonormée : \(p_F(x)=\sum\langle x,e_i\rangle e_i\). L'orthogonal d'un hyperplan est dirigé par \(x-p_F(x)\).
+\item
+  Rotations de l'espace : base orthonormée directe adaptée, matrice de cours, \(R=PR'P^\top\) ; ordre, transposée, puissances ; une rotation d'angle \(\pi\) est le retournement d'axe \(\Delta\).
+\item
+  Réduire une rotation : axe \(=\ker(f-\mathrm{id})\), puis un vecteur du plan orthogonal et son image.
+\item
+  Coniques : la définition par foyer et directrice se reconnaît en complexe dès qu'apparaît un projeté orthogonal ; une rotation conserve foyer et excentricité.
+\item
+  Surfaces : points réguliers par le gradient ; section plane d'une sphère ; surface de révolution par « même abscisse, même distance à l'axe », sans oublier les contraintes sur le domaine.
+\end{itemize}
+
+\textbf{Ce que le rapport 2026 attend partout.} Citer le numéro de la question dont on utilise le résultat ; ne pas confondre les objets (vecteur, polynôme, matrice, courbe, surface) ; maîtriser « si\ldots{} alors » et « si et seulement si » ; encadrer les résultats. Le rapport le résume : « Une démonstration ne se limite pas à une suite de calculs : une conclusion explicite est attendue. »
+
+\textbf{Questions discriminantes.} D'après le rapport 2026 : l'ensemble d'arrivée de \(h\) (Ex. 1 Q2), les puissances de \(R\) (Q12), la partie A du second exercice (6 \% des candidats ont tous les points), les calculs complexes de Q4(b) et Q8(b), les éléments caractéristiques de Q8(c), les sections circulaires de Q12(a) et la restriction \(x\geqslant1\) de Q13.
+
+\textbf{Prérequis à revoir.} Matrices d'une rotation de l'espace, fonctions hyperboliques et paramétrage des hyperboles, formule du projeté orthogonal sur une droite, équations de sphère, plan tangent à une surface.
+
+\textbf{Questions classiques transposables.} Les deux preuves de Q6 (coefficients ou multiplicité de racine), la bilinéarité par symétrie (Q5), les puissances d'une rotation (Q12), la conique définie par foyer et directrice en complexe (partie B), la surface engendrée par la rotation d'une courbe autour d'un axe (Q13) : ces schémas reviennent régulièrement aux concours de la filière PT.
+
+\end{document}

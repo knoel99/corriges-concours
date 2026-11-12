@@ -1,0 +1,28 @@
+{
+  "slug": "mines-ponts_mp_maths-2_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-colonnes-so2.svg",
+      "question": "Q2",
+      "legende": "Les deux vecteurs unitaires de C₁⊥ : C₂ = u convient, C₂ = −u donne det M = −1"
+    },
+    {
+      "fichier": "figures/q4-rotation-plan.svg",
+      "question": "Q4",
+      "legende": "Dans le plan Vect(e₁, w), la rotation Pₜ d'angle −tθ₀ ramène continûment y = Me₁ sur e₁"
+    },
+    {
+      "fichier": "figures/q7-reflexion.svg",
+      "question": "Q7",
+      "legende": "Avec u = x − y, l'hyperplan u⊥ est la médiatrice du segment joignant x à y : la réflexion s_u envoie x sur y"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "centrale-supelec_mp_physique-chimie-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP",
+    "matiere": "Physique-chimie 1",
+    "annee": 2026
+  },
+  "questions": 46,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q8-niveaux-oscillateur.svg",
+      "question": "Q8",
+      "legende": "Puits harmonique et niveaux E_n = (n + ½)ħω₀ : niveaux équidistants de ħω₀, fondamental à l'énergie de point zéro ħω₀/2"
+    },
+    {
+      "fichier": "figures/q10-branches-p-r.svg",
+      "question": "Q10",
+      "legende": "Lecture de la figure 3 (axe décroissant) : branche R à gauche, branche P à droite, trou central de 4B̃ autour de ν̃₀ ≈ 2886 cm⁻¹, attribution de R(0), R(1), P(1) et P(2)"
+    },
+    {
+      "fichier": "figures/q19-mode-stationnaire.svg",
+      "question": "Q19",
+      "legende": "Mode m = 3 de la cavité sans pertes : un nœud de champ électrique sur chaque miroir, d'où L = mλ/2"
+    },
+    {
+      "fichier": "figures/q26-fonction-airy.svg",
+      "question": "Q26",
+      "legende": "Rapport I_D/I_p en fonction de kL pour R = 96 % : pics de hauteur g ≈ 98 en kL = mπ, de largeur à mi-hauteur 2/√ℳ ≈ 2·10⁻² rad (zoom), fond quasi nul"
+    },
+    {
+      "fichier": "figures/q46-spectres-cavite-courte-longue.svg",
+      "question": "Q46",
+      "legende": "Allure des spectres à colorant et miroirs identiques : (a) microcavité, 16 modes séparés de 1,06 nm ; (b) cavité métrique, environ 10⁵ modes non résolus, bande continue sous la courbe de gain"
+    }
+  ]
+}

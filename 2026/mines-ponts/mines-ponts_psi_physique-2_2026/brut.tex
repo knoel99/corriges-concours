@@ -1,0 +1,1039 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts PSI — Physique 2 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Mines-Ponts PSI}
+\fancyhead[R]{\small Physique 2 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts PSI — Physique 2 2026\par}\medskip
+  {\large Mines-Ponts · PSI · Physique 2 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve de 4 h, calculatrice interdite. Applications numériques à un chiffre significatif avec \(\varepsilon_0\approx9\times10^{-12}\) F·m⁻¹, \(\mu_0\approx10^{-6}\) H·m⁻¹, \(c\approx3\times10^{8}\) m·s⁻¹.
+
+\hypertarget{i-moteur-uxe9lectrostatique-uxe0-capacituxe9-variable}{%
+\section{I --- Moteur électrostatique à capacité variable}\label{i-moteur-uxe9lectrostatique-uxe0-capacituxe9-variable}}
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q01-condensateur-plan.pdf}
+\caption*{Figure 1 --- Condensateur plan : charges ±q, champ E uniforme de +q vers
+−q, flèche de u vers l'armature +q}
+\end{figure}
+
+La flèche de \(u\) pointe vers l'armature \(+q\), de potentiel le plus élevé. Le champ \(\vec E\), uniforme, va de l'armature \(+q\) vers l'armature \(-q\).
+
+Il est nul à l'extérieur : les effets de bord sont négligés car \(d\ll\sqrt S\).
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\textbf{1) Définition de la capacité.} Les deux armatures sont en influence totale. La charge \(q\) de l'armature vers laquelle pointe \(u\) est proportionnelle à \(u\). La capacité est ce coefficient de proportionnalité, positif, qui ne dépend que de la géométrie et du milieu :
+\equationajustee{\boxed{C=\frac{q}{u}}}
+
+\textbf{2) Détermination du champ.} Comme \(d\ll\sqrt S\), chaque armature est assimilée à un plan infini uniformément chargé, de densité \(\sigma=q/S\) ou \(-\sigma\). Pour un plan infini de densité \(\sigma\) et de normale \(\vec n\) :
+
+\begin{itemize}
+\tightlist
+\item
+  tout plan contenant \(\vec n\) est plan de symétrie, donc \(\vec E=E\,\vec n\) ;
+\item
+  l'invariance par translation parallèle au plan donne \(E=E(z)\) ;
+\item
+  le plan chargé est lui-même plan de symétrie, donc \(E(-z)=-E(z)\).
+\end{itemize}
+
+Le théorème de Gauss sur un cylindre d'axe \(\vec n\), de section \(\Sigma\), symétrique par rapport au plan, donne
+\equationajustee{2E\Sigma=\frac{\sigma\Sigma}{\varepsilon_0}}
+Le champ d'un plan a donc pour norme \(\sigma/2\varepsilon_0\) ; il s'éloigne du plan si \(\sigma>0\).
+
+Superposons les deux plans. À l'extérieur, les deux contributions sont opposées et s'annulent. Entre les armatures, elles sont toutes deux dirigées de \(+q\) vers \(-q\) et s'ajoutent :
+\equationajustee{\boxed{\vec E=\frac{q}{\varepsilon_0S}\,\vec u_{+\to-}}}
+
+\textbf{3) Lien entre le champ et la tension.} La tension est la circulation du champ de l'armature \(+q\) à l'armature \(-q\). Le champ étant uniforme sur la distance \(d\) :
+\equationajustee{\begin{aligned}
+u&=V_+-V_-\\
+&=\int_+^-\vec E\cdot\mathrm d\vec\ell\\
+&=Ed\\
+&=\frac{qd}{\varepsilon_0S}
+\end{aligned}}
+
+\textbf{4) Expression de la capacité.} La définition \(C=q/u\) donne
+\equationajustee{\boxed{C=\frac{\varepsilon_0S}{d}}}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+Les électrodes rotoriques (1) et (2) sont reliées entre elles par l'axe, les électrodes statoriques (3) et (4) aussi. Les zones en regard forment des condensateurs plans en parallèle : la capacité est proportionnelle à l'aire en regard entre rotor et stator.
+
+\begin{itemize}
+\tightlist
+\item
+  À \(\theta_{\mathrm r}=0\), (1) et (2) occupent les quadrants complémentaires de (3) et (4). Aucune surface n'est en regard : \(C\) est minimale (valeur résiduelle due aux effets de bord).
+\item
+  Après une rotation de \(\pi/2\), chaque électrode rotorique vient exactement en face d'une électrode statorique : le recouvrement est total.
+\item
+  La configuration se répète après une rotation de \(\pi\).
+\end{itemize}
+
+\equationajustee{\boxed{\begin{aligned}{}&C=C_{\min}\ \text{pour}\ \theta_{\mathrm r}=k\pi\\
+&C=C_{\max}\ \text{pour}\ \theta_{\mathrm r}=\frac{\pi}{2}+k\pi
+\end{aligned}}}
+
+À \(\theta_{\mathrm r}=\pi/2\), deux quarts de disque de rayon \(R\) sont en regard ; la zone de rayon \(\delta\ll R\) autour de l'axe est négligée. L'aire d'un disque étant \(\pi R^2\) :
+\equationajustee{\begin{aligned}
+S_{\max}&=2\times\frac{\pi R^2}{4}\\
+&=\frac{\pi R^2}{2}
+\end{aligned}}
+Avec \(d\ll R\) (effets de bord négligés) et la question 2 :
+\equationajustee{\boxed{C_{\max}=\frac{\pi\varepsilon_0R^2}{2d}}}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+Sur \([0,\pi/2]\), chaque électrode rotorique recouvre une électrode statorique sur un secteur d'angle \(\theta_{\mathrm r}\). L'aire d'un secteur d'angle \(\alpha\) est \(\tfrac12R^2\alpha\), d'où la surface en regard :
+\equationajustee{\begin{aligned}
+S(\theta_{\mathrm r})&=2\times\frac12R^2\theta_{\mathrm r}\\
+&=R^2\theta_{\mathrm r}
+\end{aligned}}
+Elle est affine en \(\theta_{\mathrm r}\). Sur \([\pi/2,\pi]\), le recouvrement décroît symétriquement. En raccordant aux valeurs extrêmes \(C(0)=C_{\min}\) et \(C(\pi/2)=C_{\max}\), on obtient une loi triangulaire :
+\equationajustee{\boxed{C(\theta_{\mathrm r})=\begin{cases}C_{\min}+\dfrac{2}{\pi}(C_{\max}-C_{\min})\,\theta_{\mathrm r}, & 0\le\theta_{\mathrm r}\le\dfrac{\pi}{2}\\[2mm] C_{\min}+\dfrac{2}{\pi}(C_{\max}-C_{\min})\,(\pi-\theta_{\mathrm r}), & \dfrac{\pi}{2}\le\theta_{\mathrm r}\le\pi\end{cases}}}
+
+Tracé sur \([0,2\pi]\) : une suite de triangles à segments droits (première ligne de la figure 2, question 6). \textbf{Période \(\pi\).}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\theta_{\mathrm r}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(0\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\pi/2\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\pi\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(3\pi/2\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(2\pi\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(C\) & \(C_{\min}\) & \(C_{\max}\) & \(C_{\min}\) & \(C_{\max}\) & \(C_{\min}\) \\
+\end{longtable}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+L'énergie stockée est \(\mathcal E_{\text{el}}=\tfrac12C(\theta_{\mathrm r})u^2\). On la dérive par rapport à \(\theta_{\mathrm r}\) à \(u\) fixé :
+\equationajustee{\boxed{\Gamma=\frac{1}{2}u^2\frac{\mathrm dC}{\mathrm d\theta_{\mathrm r}}}}
+
+Pour réaliser un moteur, la puissance mécanique moyenne \(\langle\Gamma\rangle\Omega\) fournie doit être positive en régime permanent. Il faut donc \textbf{\(\langle\Gamma\rangle\neq0\), du signe de \(\Omega\)} (positif pour une rotation dans le sens de \(\theta_{\mathrm r}\) croissant).
+
+Sous tension constante \(U\), on moyenne sur une période \(\pi\) :
+\equationajustee{\begin{aligned}
+\langle\Gamma\rangle&=\frac{U^2}{2\pi}\int_0^{\pi}\frac{\mathrm dC}{\mathrm d\theta_{\mathrm r}}\,\mathrm d\theta_{\mathrm r}\\
+&=\frac{U^2}{2\pi}\big[C(\pi)-C(0)\big]\\
+&=0
+\end{aligned}}
+La moyenne sur une période de la dérivée d'une fonction périodique est nulle. \textbf{On ne peut pas alimenter le moteur sous tension constante} : le rotor serait ramené vers une position de capacité maximale et s'y bloquerait.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\(\Gamma\) a le signe de \(\mathrm dC/\mathrm d\theta_{\mathrm r}\).
+
+Pour \(\Omega>0\), on applique donc \(U\) seulement quand \(C\) croît, et l'on impose \(u=0\) quand \(C\) décroît :
+\equationajustee{\boxed{\begin{aligned}{}&u=U\ \text{pour}\ \theta_{\mathrm r}\in\Big]k\pi,\ k\pi+\frac{\pi}{2}\Big[\\
+&u=0\ \text{pour}\ \theta_{\mathrm r}\in\Big]k\pi+\frac{\pi}{2},\ (k+1)\pi\Big[
+\end{aligned}}}
+
+On note \(\Delta C=C_{\max}-C_{\min}\). Sur les intervalles alimentés, la pente vaut \(2\Delta C/\pi\), donc
+\equationajustee{\Gamma=\frac{U^2(C_{\max}-C_{\min})}{\pi}}
+Ailleurs, \(\Gamma=0\). La courbe \(\Gamma(\theta_{\mathrm r})\) est un créneau de rapport cyclique \(1/2\) et de période \(\pi\) :
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q06-diagramme-synchrone-capacite.pdf}
+\caption*{Figure 2 --- Diagramme synchrone du moteur électrostatique : capacité
+C(θr), tension u et couple Γ}
+\end{figure}
+
+Le couple moyen est la valeur crête multipliée par la fraction de période alimentée :
+\equationajustee{\begin{aligned}
+\langle\Gamma\rangle&=\frac{1}{\pi}\cdot\frac{U^2(C_{\max}-C_{\min})}{\pi}\cdot\frac{\pi}{2}\\
+&=\boxed{\frac{U^2(C_{\max}-C_{\min})}{2\pi}}
+\end{aligned}}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+La tension doit se répéter chaque fois que le rotor retrouve la même configuration, c'est-à-dire après une rotation de \(\pi\) (un demi-tour). Avec \(\theta_{\mathrm r}=\Omega t\), la période de \(u\) est \(T=\pi/\Omega\). Son fondamental a la même période :
+\equationajustee{\begin{aligned}
+\omega&=\frac{2\pi}{T}\\
+&=\boxed{2\Omega}
+\end{aligned}}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+D'après la question 7, \(f=\Omega/\pi\) (car \(\omega=2\pi f\)), soit \(\Omega=\pi f\). En régime permanent, \(\Omega\) est constante, donc la puissance moyenne est \(\langle\Gamma\Omega\rangle=\langle\Gamma\rangle\Omega\) :
+\equationajustee{\begin{aligned}
+\langle\mathcal P_{\text{m,el}}\rangle&=\frac{U^2(C_{\max}-C_{\min})}{2\pi}\cdot\pi f\\
+&=\boxed{\frac{1}{2}fU^2(C_{\max}-C_{\min})}
+\end{aligned}}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\textbf{Période de \(C\).} Les \(2p\) secteurs d'angle \(\pi/2p\), espacés de \(\pi/2p\), forment un motif qui se reproduit après une rotation de \(2\times\pi/2p\) :
+\equationajustee{\boxed{\text{\text{période} de }C(\theta_{\mathrm r})\ :\ \frac{\pi}{p}}}
+La surface rotorique totale ne dépend pas de \(p\), donc \(C_{\max}\) est inchangée :
+\equationajustee{2p\times\frac12R^2\times\frac{\pi}{2p}=\frac{\pi R^2}{2}}
+
+\textbf{Intervalles d'alimentation.} On alimente là où \(C\) croît (\(u=0\) ailleurs) :
+\equationajustee{\boxed{u=U\ \text{pour}\ \theta_{\mathrm r}\in\Big]\frac{k\pi}{p},\ \frac{k\pi}{p}+\frac{\pi}{2p}\Big[}}
+
+\textbf{Couple moyen.} La pente devient \(2p\Delta C/\pi\) et le couple crête \(pU^2\Delta C/\pi\), appliqué la moitié du temps. Le couple moyen est multiplié par \(p\) :
+\equationajustee{\boxed{\langle\Gamma\rangle=\frac{pU^2(C_{\max}-C_{\min})}{2\pi}}}
+
+\textbf{Pulsation.} La période temporelle devient \(\pi/(p\Omega)\) :
+\equationajustee{\boxed{\omega=2p\Omega}}
+
+\textbf{Puissance.} On a maintenant \(f=p\Omega/\pi\), soit \(\Omega=\pi f/p\) :
+\equationajustee{\begin{aligned}
+\langle\mathcal P\rangle&=\langle\Gamma\rangle\Omega\\
+&=\frac{pU^2\Delta C}{2\pi}\cdot\frac{\pi f}{p}\\
+&=\boxed{\frac12fU^2(C_{\max}-C_{\min})}
+\end{aligned}}
+La puissance moyenne est \textbf{inchangée à fréquence d'alimentation donnée} : le couple est multiplié par \(p\), mais la vitesse est divisée par \(p\). À vitesse \(\Omega\) donnée, elle serait multipliée par \(p\).
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\textbf{Relation.} L'empilement alterne stator--\allowbreak{}rotor--\allowbreak{}stator--\allowbreak{}\ldots--\allowbreak{}rotor--\allowbreak{}stator. Chacune des \(N\) plaques rotoriques est encadrée par deux plaques statoriques : il y a \(2N\) espaces d'épaisseur \(d\). Chacun équivaut au condensateur à une couche (mêmes secteurs, même \(R\), même \(d\)).
+
+Les plaques rotoriques sont toutes reliées à l'axe, les plaques statoriques toutes reliées entre elles. Les \(2N\) condensateurs sont donc soumis à la même tension : ils sont en parallèle et leurs capacités s'ajoutent.
+\equationajustee{\boxed{C_N(\theta_{\mathrm r})=2N\,C(\theta_{\mathrm r})}}
+
+\textbf{Puissance.} La formule de la question 8 s'applique avec \(C_N\) :
+\equationajustee{\begin{aligned}
+\langle\mathcal P\rangle&=\frac12fU^2(C_{N,\max}-C_{N,\min})\\
+&=2N\times\frac12fU^2(C_{\max}-C_{\min})
+\end{aligned}}
+La puissance moyenne est multipliée par \(2N\).
+
+\textbf{AN.} Avec \(R=10^{-2}\) m et \(d=1{,}5\times10^{-4}\) m (\(p=3\) ne change pas \(C_{\max}\)) :
+\equationajustee{\begin{aligned}
+C_{\max}&=\frac{\pi\varepsilon_0R^2}{2d}\\
+&=\frac{\pi\times9\times10^{-12}\times10^{-4}}{3\times10^{-4}}\ \text{F}\\
+&\approx9\times10^{-12}\ \text{F}
+\end{aligned}}
+puis
+\equationajustee{\boxed{C_{N,\max}=28\,C_{\max}\approx3\times10^{-10}\ \text{F}}}
+On néglige \(C_{N,\min}\). Avec \(U=100\) V, \(f=1\) kHz et un rapport cyclique de 50 \% (celui de la question 6) :
+\equationajustee{\langle\mathcal P\rangle\approx\frac12\times10^{3}\times10^{4}\times2{,}6\times10^{-10}\ \text{W}}
+\equationajustee{\boxed{\langle\mathcal P\rangle\approx1\ \text{mW}}}
+
+\textbf{Commentaire.} C'est une puissance très faible. Le moteur a 2 cm de diamètre et environ 13 mm de hauteur (\(15\times0{,}3+14\times0{,}3+28\times0{,}15\) mm), soit environ 4 cm³. Sa puissance volumique est donc d'environ \(3\times10^{2}\) W·m⁻³, alors qu'un petit moteur électromagnétique de ce volume fournit de l'ordre du watt.
+
+La vitesse correspondante, \(\Omega=\pi f/p\approx10^{3}\) rad·s⁻¹ (environ \(10^{4}\) tr/min), est déjà élevée : on ne peut guère gagner par la fréquence. Le moteur électrostatique macroscopique n'est envisageable que pour de faibles puissances (partie IV).
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\textbf{Schéma équivalent.} Le rotor, isolé, est un conducteur flottant de charge totale nulle. Il est en influence avec le demi-stator A (capacité \(C_A\)) et avec le demi-stator B (capacité \(C_B\)), et n'est relié à rien d'autre. Entre A et B, le moteur équivaut donc à \textbf{deux condensateurs variables \(C_A(\theta_{\mathrm r})\) et \(C_B(\theta_{\mathrm r})\) en série}, le rotor étant le point milieu.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q11-schema-equivalent-brushless.pdf}
+\caption*{Figure 3 --- Schéma équivalent du moteur « brushless » : deux
+condensateurs variables en série, rotor isolé au point milieu}
+\end{figure}
+
+Dans le montage initial, les deux électrodes statoriques étaient reliées, donc \(C=C_A+C_B\). La rotation de \(\pi\) autour de l'axe laisse le rotor invariant et échange les deux demi-stators : \(C_A=C_B=C/2\) pour tout \(\theta_{\mathrm r}\). D'où
+\equationajustee{\begin{aligned}
+C_{\text{\text{éq}}}&=\frac{C_AC_B}{C_A+C_B}\\
+&=\boxed{\frac{C(\theta_{\mathrm r})}{4}}
+\end{aligned}}
+
+\textbf{Condition.} \(C_{\text{\text{éq}}}\) a la même forme que \(C\) (même période, mêmes intervalles d'alimentation), avec une excursion \((C_{\max}-C_{\min})/4\). La charge du rotor étant fixée, l'énergie s'écrit \(\tfrac12C_{\text{\text{éq}}}u^2\) et les résultats des questions 5 à 8 s'appliquent :
+\equationajustee{\langle\mathcal P'\rangle=\frac12fU'^2\,\frac{C_{\max}-C_{\min}}{4}}
+L'égalité avec \(\tfrac12fU^2(C_{\max}-C_{\min})\) impose
+\equationajustee{\boxed{U'=2U}}
+
+\hypertarget{ii-moteur-uxe9lectromagnuxe9tique-monophasuxe9-uxe0-inductance-variable}{%
+\section{II --- Moteur électromagnétique monophasé à inductance variable}\label{ii-moteur-uxe9lectromagnuxe9tique-monophasuxe9-uxe0-inductance-variable}}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+Dans le fer doux (modèle linéaire), \(\vec B=\mu_0\mu_{\mathrm r}\vec H\) avec \(\mu_{\mathrm r}\sim10^{3}\) à \(10^{4}\). Dans l'air, \(\vec B=\mu_0\vec H\).
+
+Les lignes de champ traversent l'entrefer quasi normalement aux faces polaires. Le flux de \(\vec B\) est conservatif, donc la composante normale de \(\vec B\) est continue à l'interface. Ainsi \(\|\vec B\|\) est du même ordre dans le fer et dans l'entrefer, alors que \(\|\vec H\|\) est \(\mu_{\mathrm r}\) fois plus grand dans l'entrefer que dans le fer.
+
+\begin{itemize}
+\tightlist
+\item
+  Simulation 1 : valeurs faibles (clair) partout, sauf dans la mince bande d'entrefer (foncé). C'est la carte de \(\|\vec H\|\).
+\item
+  Simulation 2 : valeurs élevées (foncé) dans tout le circuit de fer (culasse, pôles, rotor), faibles dans l'air hors entrefer. C'est la carte du flux, donc de \(\|\vec B\|\).
+\end{itemize}
+
+\equationajustee{\boxed{\text{la simulation 2 donne }\|\vec B\|\ (\text{la simulation 1 donne }\|\vec H\|)}}
+
+On compare chaque grandeur d'une région à l'autre, jamais \(B\) à \(H\), qui n'ont pas la même unité.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\textbf{Observation des simulations.} Sur la figure 5, les lignes de champ restent canalisées dans le fer (culasse, pôles, rotor) et ne passent dans l'air qu'à la traversée des deux entrefers. Hors des entrefers, presque aucune ligne de champ ne parcourt l'air, et la carte de \(\|\vec B\|\) (simulation 2) y est claire : le champ y est négligeable.
+
+\textbf{Justification physique.} Le fer, de perméabilité très grande, canalise le flux : à \(\vec B\) fini, \(\vec H=\vec B/\mu\) y est quasi nul. Le théorème d'Ampère impose alors la même circulation \(2Ni\) de \(\vec H\), concentrée dans l'air, sur tout contour qui enlace les enroulements.
+
+Un contour qui ne traverse l'air que dans les entrefers y parcourt la longueur \(2e\). Un contour qui traverse l'air hors des pôles y parcourt une longueur \(2D\), avec \(D\) de l'ordre de \(R\), donc \(D\gg e\). La circulation dans le fer étant négligeable :
+\equationajustee{\begin{aligned}
+2e\,H_{\text{entrefer}}&\simeq2Ni\\
+2D\,H_{\text{air}}&\simeq2Ni
+\end{aligned}}
+d'où
+\equationajustee{\boxed{\frac{B_{\text{air, hors entrefer}}}{B_{\text{entrefer}}}\sim\frac{e}{D}\ll1}}
+Le champ dans l'air hors des entrefers est négligeable devant le champ dans les entrefers.
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+Contour d'Ampère : une ligne de champ qui sort d'un pôle statorique, traverse un entrefer, le rotor, le second entrefer, le second pôle, et revient par la culasse. Elle est orientée dans le sens du champ ; la règle de la main droite fixe alors le signe du courant enlacé.
+
+\begin{itemize}
+\tightlist
+\item
+  Courant enlacé : les deux enroulements de \(N\) spires, en série et bobinés pour que leurs ampères-tours s'ajoutent, donnent \(2Ni\).
+\item
+  Fer (\(\mu\to\infty\), \(B\) fini) : \(\vec H=\vec 0\), contribution nulle.
+\item
+  Entrefers : champ normal aux faces, uniforme car \(e\ll R\) ; chacun contribue pour \(H_ae\).
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+\oint\vec H\cdot\mathrm d\vec\ell&=2H_ae\\
+&=2Ni
+\end{aligned}}
+d'où \(H_a=Ni/e\). Dans l'air, \(B_a=\mu_0H_a\) :
+\equationajustee{\boxed{B_a=\frac{\mu_0Ni}{e}}}
+Ce résultat vaut en tout point des deux entrefers : le même raisonnement s'applique à toute ligne de champ.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\textbf{Repérage.} Les pôles statoriques, d'ouverture \(\beta_{\mathrm s}=\pi/2-\epsilon\), sont centrés en \(\pm\pi/2\).
+
+Les pôles rotoriques, d'ouverture \(\beta_{\mathrm r}=\pi/2+2\epsilon\), sont centrés en \(\theta_{\mathrm r}\) et \(\theta_{\mathrm r}+\pi\). L'entrefer est la zone d'air d'épaisseur \(e\) où un pôle rotorique fait face à un pôle statorique.
+
+\textbf{Volume d'un secteur d'entrefer.} L'aire d'un secteur circulaire d'angle au sommet \(\alpha\) et de rayon \(R\) est \(\tfrac12\alpha R^2\).
+
+Un secteur d'entrefer d'angle \(\alpha\), compris entre les rayons \(R\) et \(R+e\), de longueur \(\ell\), a donc pour volume
+\equationajustee{\begin{aligned}
+V&=\frac{\alpha}{2}\big[(R+e)^2-R^2\big]\ell\\
+&\simeq\alpha\,Re\ell
+\end{aligned}}
+car \(e\ll R\). Le volume total est \(\alpha Re\ell\), où \(\alpha(\theta_{\mathrm r})\) est l'angle total de recouvrement.
+
+\textbf{Position \(\theta_{\mathrm r}=k\pi\)} (rotor horizontal, pôles en quadrature). Le pôle rotorique centré en \(0\) s'étend jusqu'à \(\pi/4+\epsilon\).
+
+Le pôle statorique supérieur commence en \(\pi/2-\beta_{\mathrm s}/2\), soit \(\pi/4+\epsilon/2\). Le recouvrement vaut donc \(\epsilon/2\).
+
+Allure : seules les « cornes » des pôles se font face, en quatre petits secteurs d'ouverture \(\epsilon/2\) (un à chaque extrémité de chaque pôle rotorique). Le volume est minimal :
+\equationajustee{\begin{aligned}
+V_{\min}&=4\times\frac{\epsilon}{2}\,Re\ell\\
+&=\boxed{2\epsilon\,Re\ell}
+\end{aligned}}
+
+\textbf{Position \(\theta_{\mathrm r}=(2k+1)\pi/2\)} (pôles alignés). Le pôle rotorique, plus large, couvre entièrement le pôle statorique en regard : il y a deux secteurs d'entrefer d'ouverture \(\beta_{\mathrm s}\). L'angle total vaut \(2\beta_{\mathrm s}=\pi-2\epsilon\), soit environ \(\pi\). Le volume est maximal :
+\equationajustee{\boxed{V_{\max}\simeq\pi Re\ell}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q15-entrefer-deux-positions.pdf}
+\caption*{Figure 4 --- Allure de l'entrefer : quatre coins d'ouverture ε/2 pour θr
+= kπ, deux secteurs d'ouverture βs pour θr = π/2 + kπ}
+\end{figure}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\textbf{Définition énergétique.} Pour le circuit parcouru par \(i\), l'inductance \(L\) est définie par l'énergie magnétique totale stockée :
+\equationajustee{\boxed{\mathcal E_{\text{ma}}=\frac{1}{2}Li^2}}
+
+\textbf{Calcul.} L'énergie magnétique est l'intégrale de la densité \(B^2/2\mu\). Elle est nulle dans le fer (\(\mu\to\infty\), \(B\) fini) et négligeable dans l'air hors entrefers (question 13). Avec \(B_a=\mu_0Ni/e\) uniforme sur le volume \(V\) des entrefers :
+\equationajustee{\begin{aligned}
+\mathcal E_{\text{ma}}&=\frac{B_a^2}{2\mu_0}V\\
+&=\frac{\mu_0N^2i^2}{2e^2}V
+\end{aligned}}
+Par identification avec \(\tfrac12Li^2\) :
+\equationajustee{L(\theta_{\mathrm r})=\frac{\mu_0N^2}{e^2}V(\theta_{\mathrm r})}
+Avec les volumes de la question 15 :
+\equationajustee{\boxed{\begin{aligned}
+L_{\min}&=\frac{2\mu_0N^2\epsilon R\ell}{e}\\
+L_{\max}&=\frac{\pi\mu_0N^2R\ell}{e}
+\end{aligned}}}
+
+\textbf{Variation.} \(L\) est proportionnelle à l'angle de recouvrement \(\alpha(\theta_{\mathrm r})\), que l'on suit de \(0\) à \(\pi/2\) :
+
+\begin{itemize}
+\tightlist
+\item
+  pour \(|\theta_{\mathrm r}|\le\epsilon/2\), deux coins gagnent ce que les deux autres perdent : palier à \(L_{\min}\) ;
+\item
+  pour \(\epsilon/2\le\theta_{\mathrm r}\le\pi/2-3\epsilon/2\), il ne reste que deux zones de recouvrement, qui croissent chacune comme \(\theta_{\mathrm r}\) : \(\alpha=2\theta_{\mathrm r}+\epsilon\) est affine ;
+\item
+  palier à \(L_{\max}\) tant que le pôle statorique reste entièrement couvert, soit pour \(|\theta_{\mathrm r}-\pi/2|\le3\epsilon/2\) ;
+\item
+  puis décroissance symétrique.
+\end{itemize}
+
+\textbf{\(L\) varie de façon affine par morceaux (courbe trapézoïdale) entre \(L_{\min}\) et \(L_{\max}\), avec une période \(\pi\).} La variation n'est pas seulement continue : elle est linéaire sur chaque rampe.
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+L'énergie \(\mathcal E_{\text{ma}}=\tfrac12L(\theta_{\mathrm r})i^2\) est dérivée à \(i\) fixé :
+\equationajustee{\boxed{\Gamma=\frac{1}{2}i^2\frac{\mathrm dL}{\mathrm d\theta_{\mathrm r}}}}
+À courant constant \(I\), sur une période \(\pi\) :
+\equationajustee{\begin{aligned}
+\langle\Gamma\rangle&=\frac{I^2}{2\pi}\big[L(\pi)-L(0)\big]\\
+&=0
+\end{aligned}}
+par périodicité de \(L\). \textbf{Non}, un courant constant ne permet pas de réaliser un moteur : le rotor se bloque en position d'inductance maximale (pôles alignés).
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+D'après la figure 6, modulo \(\pi\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \(L\) croît sur \([\Delta\beta/2,\ \pi/2-\Delta\beta/2]\) ;
+\item
+  \(L\) est constante sur les paliers de largeur \(\Delta\beta\) centrés en \(k\pi/2\) ;
+\item
+  \(L\) décroît sur \([\pi/2+\Delta\beta/2,\ \pi-\Delta\beta/2]\).
+\end{itemize}
+
+Le couple a le signe de \(\mathrm dL/\mathrm d\theta_{\mathrm r}\) : on n'envoie le courant que sur les rampes montantes.
+\equationajustee{\boxed{\begin{aligned}{}&i=I\ \text{pour}\ \theta_{\mathrm r}\in\Big[k\pi+\frac{\Delta\beta}{2},\ k\pi+\frac{\pi}{2}-\frac{\Delta\beta}{2}\Big]\\
+&i=0\ \text{ailleurs}
+\end{aligned}}}
+
+Diagramme synchrone sur \([0,2\pi]\), avec la pente \(\rho\) de la question 23 :
+\equationajustee{\rho=\frac{L_{\max}-L_{\min}}{\pi/2-\Delta\beta}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q18-diagramme-synchrone-inductance.pdf}
+\caption*{Figure 5 --- Diagramme synchrone du moteur à inductance variable :
+inductance L(θr), courant i et couple Γ}
+\end{figure}
+
+Valeurs sur la première période :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1019}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1201}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1846}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2215}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.2081}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1338}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\theta_{\mathrm r}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\([0,\frac{\Delta\beta}{2}]\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\([\frac{\Delta\beta}{2},\frac{\pi}{2}-\frac{\Delta\beta}{2}]\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\([\frac{\pi}{2}-\frac{\Delta\beta}{2},\allowbreak \frac{\pi}{2}+\frac{\Delta\beta}{2}]\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\([\frac{\pi}{2}+\frac{\Delta\beta}{2},\allowbreak \pi-\frac{\Delta\beta}{2}]\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\([\pi-\frac{\Delta\beta}{2},\pi]\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(L\) & \(L_{\min}\) & rampe montante & \(L_{\max}\) & rampe descendante & \(L_{\min}\) \\
+\(i\) & \(0\) & \(I\) & \(0\) & \(0\) & \(0\) \\
+\(\Gamma\) & \(0\) & \(\dfrac{I^2(L_{\max}-L_{\min})}{2(\pi/2-\Delta\beta)}\) & \(0\) & \(0\) & \(0\) \\
+\end{longtable}
+
+Le motif se répète sur \([\pi,2\pi]\). Couple moyen sur une période \(\pi\), les angles étant exprimés en radians :
+\equationajustee{\begin{aligned}
+\langle\Gamma\rangle&=\frac{1}{\pi}\int_{\text{rampe}}\frac{I^2}{2}\frac{\mathrm dL}{\mathrm d\theta_{\mathrm r}}\,\mathrm d\theta_{\mathrm r}\\
+&=\frac{I^2}{2\pi}\int_{L_{\min}}^{L_{\max}}\mathrm dL\\
+&=\boxed{\frac{I^2(L_{\max}-L_{\min})}{2\pi}}
+\end{aligned}}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\(L\), donc le créneau de courant, est \(\pi\)-périodique en \(\theta_{\mathrm r}\). Avec \(\theta_{\mathrm r}=\Omega t\), la période temporelle est \(\pi/\Omega\) (un demi-tour) :
+\equationajustee{\boxed{\omega=2\Omega}}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+D'après la question 19, \(f=\Omega/\pi\). La vitesse \(\Omega\) étant constante, la puissance moyenne vaut \(\langle\Gamma\rangle\Omega\) :
+\equationajustee{\begin{aligned}
+\langle\mathcal P_{\text{m,ma}}\rangle&=\frac{I^2(L_{\max}-L_{\min})}{2\pi}\cdot\pi f\\
+&=\boxed{\frac{1}{2}fI^2(L_{\max}-L_{\min})}
+\end{aligned}}
+
+\hypertarget{iii-alimentation-uxe9lectrique-du-moteur-monophasuxe9-uxe0-inductance-variable}{%
+\section{III --- Alimentation électrique du moteur monophasé à inductance variable}\label{iii-alimentation-uxe9lectrique-du-moteur-monophasuxe9-uxe0-inductance-variable}}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+En convention récepteur, la loi de Faraday avec le flux propre \(\Phi=L(\theta_{\mathrm r})i\) donne
+\equationajustee{\begin{aligned}
+u&=ri+\frac{\mathrm d\Phi}{\mathrm dt}\\
+&=ri+L\frac{\mathrm di}{\mathrm dt}+i\frac{\mathrm dL}{\mathrm d\theta_{\mathrm r}}\frac{\mathrm d\theta_{\mathrm r}}{\mathrm dt}
+\end{aligned}}
+On introduit la vitesse angulaire du rotor :
+\equationajustee{\boxed{\Omega=\frac{\mathrm d\theta_{\mathrm r}}{\mathrm dt}}}
+On change ensuite de variable, \(\mathrm di/\mathrm dt=\Omega\,\mathrm di/\mathrm d\theta_{\mathrm r}\). Il vient
+\equationajustee{\boxed{\Big[r+\Omega\frac{\mathrm dL}{\mathrm d\theta_{\mathrm r}}\Big]i(\theta_{\mathrm r})+\Omega L(\theta_{\mathrm r})\frac{\mathrm di}{\mathrm d\theta_{\mathrm r}}=u(\theta_{\mathrm r})}}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+Notons K le point commun à T, D et au moteur, et prenons la borne \(-\) de la source comme référence des potentiels. T passant (idéal) relie K à la borne \(+\) : \(V_K=U_0\).
+
+D a son anode à la borne \(-\) et sa cathode en K (figure 7). La tension à ses bornes vaut \(v_{AK}=-U_0<0\) : \textbf{D est bloquée}. Le moteur est alors directement aux bornes de la source :
+\equationajustee{\boxed{u=U_0}}
+Le transistor ne conduit que dans un sens : \textbf{\(i\ge0\)}. Sous \(u=U_0>0\), le courant croît à partir de \(0\).
+
+\textbf{Règles d'interconnexion} : on ne doit pas court-circuiter une source de tension, ni ouvrir le circuit d'une source de courant. Ici, la source de tension \(U_0\) est reliée au moteur. Par son inductance \(L\), le moteur impose la continuité de son courant : c'est un dipôle de type source de courant.
+
+On connecte donc une source de tension à une source de courant, et D, bloquée, ne court-circuite pas la source : \textbf{les règles sont respectées}.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+T est commandé pour imposer le courant sur les intervalles de la question 18, c'est-à-dire sur la rampe montante de \(L\). Celle-ci va de la fin du palier bas (\(\theta_{\mathrm r}=\Delta\beta/2\)) au début du palier haut (\(\theta_{\mathrm r}=\pi/2-\Delta\beta/2\)).
+
+Sur cet intervalle d'amplitude \(\pi/2-\Delta\beta\), \(L\) varie linéairement de \(L_{\min}\) à \(L_{\max}\) (figure 6), d'où la pente constante
+\equationajustee{\frac{\mathrm dL}{\mathrm d\theta_{\mathrm r}}=\frac{L_{\max}-L_{\min}}{\pi/2-\Delta\beta}}
+notée \(\rho\). Avec \(u=U_0\), l'équation de la question 21 devient
+\equationajustee{\boxed{(r+\Omega\rho)\,i+\Omega L(\theta_{\mathrm r})\frac{\mathrm di}{\mathrm d\theta_{\mathrm r}}=U_0}}
+où, sur cette rampe,
+\equationajustee{L(\theta_{\mathrm r})=L_{\min}+\rho\Big(\theta_{\mathrm r}-\frac{\Delta\beta}{2}\Big)}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+À l'ouverture de T (\(\theta_{\mathrm r}=\pi/2-\Delta\beta/2\)), le courant dans le moteur inductif ne peut pas s'annuler brutalement. Il se referme par D, dans son sens passant (de la borne \(-\) vers K). \textbf{D est passante} et impose \(u=0\), tant que \(i>0\).
+
+Sur \(\big[\frac{\pi}{2}-\frac{\Delta\beta}{2},\allowbreak \ \pi+\frac{\Delta\beta}{2}\big]\), la dérivée \(\mathrm dL/\mathrm d\theta_{\mathrm r}\) prend successivement les valeurs :
+
+\begin{itemize}
+\tightlist
+\item
+  \(0\) sur le palier \(L_{\max}\) ;
+\item
+  \(-\rho\) sur la rampe descendante ;
+\item
+  \(0\) sur le palier \(L_{\min}\).
+\end{itemize}
+
+Équations successives, avec \(u=0\) :
+\equationajustee{\boxed{\begin{aligned}{}&\theta_{\mathrm r}\in\Big[\tfrac{\pi}{2}-\tfrac{\Delta\beta}{2},\ \tfrac{\pi}{2}+\tfrac{\Delta\beta}{2}\Big] : && r\,i+\Omega L_{\max}\frac{\mathrm di}{\mathrm d\theta_{\mathrm r}}=0\\
+&\theta_{\mathrm r}\in\Big[\tfrac{\pi}{2}+\tfrac{\Delta\beta}{2},\ \pi-\tfrac{\Delta\beta}{2}\Big] : && (r-\Omega\rho)\,i+\Omega L(\theta_{\mathrm r})\frac{\mathrm di}{\mathrm d\theta_{\mathrm r}}=0\\
+&\theta_{\mathrm r}\in\Big[\pi-\tfrac{\Delta\beta}{2},\ \pi+\tfrac{\Delta\beta}{2}\Big] : && r\,i+\Omega L_{\min}\frac{\mathrm di}{\mathrm d\theta_{\mathrm r}}=0
+\end{aligned}}}
+avec, sur la rampe descendante,
+\equationajustee{L(\theta_{\mathrm r})=L_{\max}-\rho\Big(\theta_{\mathrm r}-\frac{\pi}{2}-\frac{\Delta\beta}{2}\Big)}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+On isole la dérivée du courant :
+\equationajustee{\frac{\mathrm di}{\mathrm d\theta_{\mathrm r}}=\frac{u-\big(r+\Omega\,\mathrm dL/\mathrm d\theta_{\mathrm r}\big)i}{\Omega L}}
+Sur chaque phase, l'évolution de \(i\) est gouvernée par une constante de relaxation angulaire (la variable est l'angle, pas le temps) :
+\equationajustee{\theta_0=\frac{\Omega L}{r+\Omega\,\mathrm dL/\mathrm d\theta_{\mathrm r}}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Montée} (T fermé, début de rampe) : \(i=0\) et \(L=L_{\min}\). La pente \(U_0/(\Omega L_{\min})\) est la plus forte du cycle : front très raide.
+\item
+  \textbf{Plateau} : la f.c.é.m. \(\Omega\rho\,i\) et la chute \(ri\) croissent, et \(L\) augmente. Le courant tend vers \(U_0/(r+\Omega\rho)\) : il est quasi constant.
+\item
+  \textbf{Palier \(L_{\max}\)} (T ouvert, \(u=0\)) : décroissance exponentielle de constante d'angle \(\Omega L_{\max}/r\). L'énergie n'est évacuée que par effet Joule dans \(r\).
+\item
+  \textbf{Rampe descendante} : le coefficient devient \(r-\Omega\rho<r\). Le terme de conversion, devenu générateur, entretient le courant : la décroissance est encore plus lente (le courant croîtrait même si \(\Omega\rho>r\)).
+\item
+  \textbf{Palier \(L_{\min}\)} : la constante d'angle \(\Omega L_{\min}/r\) est nettement plus petite. Le courant résiduel s'annule plus vite, juste avant l'impulsion suivante.
+\end{itemize}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\textbf{Défaut} : le courant n'est pas éteint quand \(L\) commence à décroître. Sur la rampe descendante, le couple est négatif :
+\equationajustee{\Gamma=\frac12i^2\frac{\mathrm dL}{\mathrm d\theta_{\mathrm r}}<0}
+C'est un \textbf{couple de freinage} (créneau négatif puis retour progressif à zéro sur la figure 8), qui réduit le couple moyen et la puissance.
+
+\textbf{Cause} : en roue libre, D impose \(u=0\). L'énergie magnétique \(\tfrac12L_{\max}i^2\) ne peut être dissipée que dans la faible résistance \(r\) : la démagnétisation est lente, et encore ralentie sur la rampe descendante par le fonctionnement en génératrice.
+
+\textbf{Le montage ne peut appliquer qu'une tension \(u\ge0\) : il ne sait pas imposer une tension négative pour annuler rapidement le courant.}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+Notations : H et B sont les bornes \(+\) et \(-\) de la source.
+
+A est le point commun à \(\mathrm T_1\), à \(\mathrm D_1\) et au moteur. A' est le point commun au moteur, à \(\mathrm D_2\) et à \(\mathrm T_2\).
+
+On oriente \(u=V_A-V_{A'}\) et \(i>0\) de A vers A'. D'après la figure 9, \(\mathrm D_1\) a son anode en B et sa cathode en A. \(\mathrm D_2\) a son anode en A' et sa cathode en H.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.3522}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0813}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1349}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1349}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Phase
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Conduction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(u\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\mathrm D_1\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\mathrm D_2\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 : \(\mathrm T_1\), \(\mathrm T_2\) passants & H → \(\mathrm T_1\) → moteur → \(\mathrm T_2\) → B & \(+U_0\) & bloquée & bloquée \\
+2 : \(\mathrm T_1\), \(\mathrm T_2\) ouverts & B → \(\mathrm D_1\) → moteur → \(\mathrm D_2\) → H (courant renvoyé dans la source) & \(-U_0\) & passante & passante \\
+3 : \(\mathrm T_2\) passant, \(\mathrm T_1\) ouvert & moteur → \(\mathrm T_2\) → B → \(\mathrm D_1\) → moteur (roue libre) & \(0\) & passante & bloquée \\
+\end{longtable}
+
+En phase 1, chaque diode a la tension \(-U_0\) à ses bornes. En phase 3, \(\mathrm D_2\) a la tension \(V_{A'}-V_H=-U_0\) à ses bornes.
+
+En phases 2 et 3, ces états supposent \(i>0\). Une fois le courant annulé, les diodes se bloquent et \(u=0\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q27-montage-2-trois-phases.pdf}
+\caption*{Figure 6 --- Montage n°2 : chemin du courant et tension u dans les
+phases 1, 2 et 3}
+\end{figure}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\textbf{Comparaison.} Les montées sont identiques : \(u=U_0\), même équation qu'en question 23. À l'extinction, le montage 1 impose \(u=0\) : la décroissance est exponentielle, lente, gouvernée par \(r\), et se prolonge sur toute la rampe descendante (figure 8).
+
+Le montage 2 impose \(u=-U_0\) : le terme \(\Omega L\,\mathrm di/\mathrm d\theta_{\mathrm r}\simeq-U_0\) domine et la décroissance est quasi linéaire et rapide. Sur la figure 10, le courant s'annule vers la fin du palier \(L_{\max}\), donc avant que \(L\) ne décroisse.
+
+\textbf{Performances du montage 2.}
+
+\begin{itemize}
+\tightlist
+\item
+  Il n'y a plus de courant pendant la décroissance de \(L\), donc \textbf{plus de couple de freinage}. Le couple est un créneau positif ; le couple moyen et la puissance se rapprochent de l'idéal \(I^2\Delta L/2\pi\).
+\item
+  L'énergie magnétique stockée est \textbf{restituée à la source} en phase 2 au lieu d'être dissipée dans \(r\) : meilleur rendement.
+\item
+  La phase 3 (roue libre) permet en outre de réguler le courant par découpage.
+\end{itemize}
+
+\hypertarget{iv-comparaison-des-deux-types-de-moteurs.-lois-duxe9chelle-et-downsizing}{%
+\section{IV --- Comparaison des deux types de moteurs. Lois d'échelle et « downsizing »}\label{iv-comparaison-des-deux-types-de-moteurs.-lois-duxe9chelle-et-downsizing}}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\textbf{Électrostatique.} Comme \(C_{\min}\ll C_{\max}\) :
+\equationajustee{\langle\mathcal P_{\text{m,el}}\rangle\simeq\frac12fU^2C_{\max}}
+Le champ est uniforme, \(E_a=U/d\) (question 2). Avec \(V_{a,\max}=S_{\max}d\) :
+\equationajustee{\begin{aligned}
+C_{\max}&=\frac{\varepsilon_0S_{\max}}{d}\\
+&=\frac{\varepsilon_0V_{a,\max}}{d^2}
+\end{aligned}}
+Donc
+\equationajustee{\begin{aligned}
+\langle\mathcal P_{\text{m,el}}\rangle&\simeq\frac12f(E_ad)^2\frac{\varepsilon_0V_{a,\max}}{d^2}\\
+&=\boxed{\frac{\varepsilon_0}{2}fV_{a,\max}E_a^2}
+\end{aligned}}
+
+\textbf{Électromagnétique.} Comme \(L_{\min}\ll L_{\max}\) :
+\equationajustee{\langle\mathcal P_{\text{m,ma}}\rangle\simeq\frac12fI^2L_{\max}}
+D'après les questions 14 et 16, le courant et l'inductance maximale s'écrivent
+\equationajustee{\begin{aligned}
+I&=\frac{B_ee}{\mu_0N}\\
+L_{\max}&=\frac{\mu_0N^2V_{e,\max}}{e^2}
+\end{aligned}}
+d'où \(I^2L_{\max}=B_e^2V_{e,\max}/\mu_0\) et
+\equationajustee{\boxed{\langle\mathcal P_{\text{m,ma}}\rangle\simeq\frac{1}{2\mu_0}fV_{e,\max}B_e^2}}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+Pour des moteurs de mêmes dimensions (\(V_{a,\max}=V_{e,\max}\)) et à même fréquence, l'égalité des puissances s'écrit
+\equationajustee{\frac{\varepsilon_0}{2}E_a^2=\frac{B_e^2}{2\mu_0}}
+Avec \(\varepsilon_0\mu_0c^2=1\) :
+\equationajustee{\begin{aligned}
+E_a&=\frac{B_e}{\sqrt{\varepsilon_0\mu_0}}\\
+&=cB_e
+\end{aligned}}
+Le champ magnétique est limité par la saturation, \(B_e=B_{\text{sat}}\approx1\) T :
+\equationajustee{\boxed{E_a\approx cB_{\text{sat}}\approx3\times10^{8}\ \text{V}\cdot\text{m}^{-1}}}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\textbf{Champ disruptif.} Sur la branche droite de la courbe de Paschen, \(V_c\) croît à peu près proportionnellement à \(pd\). À pression fixée, \(E_d=V_c/d\) dépend donc peu de \(d\).
+
+On choisit \(p=1\) bar et \(d=1\) mm, soit \(pd=1\) bar·mm. La figure 11 donne alors \(V_c\approx6\times10^{3}\) V :
+\equationajustee{\boxed{E_d\approx\frac{6\times10^{3}\ \text{V}}{10^{-3}\ \text{m}}\approx6\times10^{6}\ \text{V}\cdot\text{m}^{-1}}}
+La courbe n'étant pas exactement de pente 1, on trouve environ \(4\times10^{6}\) V·m⁻¹ pour \(d=1\) cm : \(E_d\) vaut quelques \(10^{6}\) V·m⁻¹.
+
+\textbf{Rapport.} À volumes et fréquence égaux, avec \(E_a=E_d\) et \(B_e=B_{\text{sat}}\) :
+\equationajustee{\begin{aligned}
+\kappa&=\frac{\varepsilon_0E_d^2/2}{B_{\text{sat}}^2/2\mu_0}\\
+&=\Big(\frac{E_d}{cB_{\text{sat}}}\Big)^2\\
+&\approx\Big(\frac{6\times10^{6}}{3\times10^{8}}\Big)^2\\
+&\approx4\times10^{-4}
+\end{aligned}}
+\equationajustee{\boxed{\kappa\sim10^{-4}}}
+
+\textbf{Conclusion.} À pression atmosphérique, un moteur électrostatique macroscopique fournit environ \(10^{4}\) fois moins de puissance qu'un moteur électromagnétique de mêmes dimensions : \textbf{il n'est pas compétitif} (cohérent avec le milliwatt de la question 10).
+
+\textbf{Pression pour \(\kappa\sim1\).} Il faut \(E_d\approx cB_{\text{sat}}\), soit \(3\times10^{8}\) V·m⁻¹.
+
+Pour \(d=1\) mm, cela demande \(V_c\approx3\times10^{5}\) V. La figure 11 donne cette tension pour \(pd\approx10^{2}\) bar·mm, donc
+\equationajustee{\boxed{p\approx10^{2}\ \text{bar}}}
+On trouve le même ordre de grandeur en raisonnant avec \(E_d\propto p\), donc \(\kappa\propto p^2\).
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\equationajustee{\boxed{\begin{aligned}{}&[\varepsilon_0]=\text{F}\cdot\text{m}^{-1}\\
+&[\mu_0]=\text{H}\cdot\text{m}^{-1}
+\end{aligned}}}
+Ce sont des constantes fondamentales : elles sont insensibles au changement d'échelle. Une capacité est donc \(\varepsilon_0\) multiplié par une longueur caractéristique et par un facteur de forme sans dimension, invariant dans une homothétie (par exemple \(C=\varepsilon_0S/d\sim h^2/h\)) :
+\equationajustee{\boxed{C\sim h}}
+De même, une inductance est \(\mu_0N^2\) fois une longueur, à nombre de spires \(N\) fixé (par exemple \(L=\mu_0N^2V/e^2\sim h^3/h^2\)) :
+\equationajustee{\boxed{L\sim h}}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+Comme à la question 2, chaque armature est modélisée par une distribution \textbf{surfacique} de charge : la charge est répartie \textbf{en surface}, uniformément sur les faces en regard, avec la densité surfacique \(\sigma=\varepsilon_0E_a\) (théorème de Gauss, question 2).
+
+On fait fonctionner la machine au champ limite \(E_d\), propriété du gaz indépendante de la taille. La densité surfacique de charge \(\sigma\) est donc invariante par changement d'échelle : c'est une grandeur intensive. La charge vaut alors \(q=\sigma S\sim h^2\). Avec \(C\sim h\) :
+\equationajustee{U=\frac{q}{C}\sim\frac{h^2}{h}}
+\equationajustee{\boxed{U\sim h}}
+C'est équivalent à \(U=E_dd\) avec \(d\sim h\).
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+Moment d'inertie du rotor, à masse volumique inchangée :
+\equationajustee{\begin{aligned}
+J&=\iiint\rho_m r_\perp^2\,\mathrm d\tau\\
+&\sim h^2\cdot h^3\\
+&\sim h^5
+\end{aligned}}
+Travail du couple sur une phase motrice, d'excursion angulaire invariante :
+\equationajustee{\begin{aligned}
+W&=\int\Gamma\,\mathrm d\theta_{\mathrm r}\\
+&=\frac12U^2\Delta C\\
+&\sim h^2\cdot h=h^3
+\end{aligned}}
+Théorème de l'énergie cinétique pour le rotor en rotation autour d'un axe fixe, depuis le repos :
+\equationajustee{\frac12J\Omega^2=W}
+D'où \(\Omega^2\sim h^3/h^5\), soit \(\Omega\sim h^{-1}\). Le temps pour balayer un angle donné est \(t=\Delta\theta/\Omega\) :
+\equationajustee{\boxed{t\sim h}}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+La fréquence d'alimentation est l'inverse d'un temps : \(f\sim1/t\sim h^{-1}\). Avec le résultat de la question 8 :
+\equationajustee{\begin{aligned}
+\langle\mathcal P_{\text{m,el}}\rangle&=\frac12fU^2\Delta C\\
+&\sim h^{-1}\cdot h^2\cdot h
+\end{aligned}}
+\equationajustee{\boxed{\langle\mathcal P_{\text{m,el}}\rangle\sim h^2}}
+La puissance volumique s'obtient en divisant par \(V\sim h^3\) :
+\equationajustee{\boxed{\langle\mathscr P_{\text{m,el}}\rangle=\frac{\langle\mathcal P_{\text{m,el}}\rangle}{V}\sim h^{-1}}}
+\textbf{Conclusion} : la puissance diminue quand on miniaturise, mais la puissance volumique \textbf{augmente} comme \(1/h\). Le moteur électrostatique est d'autant plus performant, à volume donné, qu'il est petit.
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+Pour un câble de longueur \(\ell_c\), de section \(s\) et de conductivité \(\gamma\) :
+\equationajustee{\boxed{r=\frac{\ell_c}{\gamma s}}}
+\(\gamma\) est fixée par le matériau ; \(\ell_c\sim h\) et \(s\sim h^2\) (nombre de spires inchangé). Donc
+\equationajustee{\boxed{r\sim h^{-1}}}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+En régime permanent, la température est stationnaire : toute la puissance dissipée par effet Joule est évacuée vers l'extérieur.
+\equationajustee{\boxed{\mathcal P_{\text{th}}=\mathcal P_{\text{Joule}}}}
+D'une part, la surface d'échange vérifie \(S\sim h^2\), et le coefficient \(k\) et les températures ne dépendent pas de l'échelle : \(\mathcal P_{\text{th}}\sim h^2\).
+
+D'autre part, \(\mathcal P_{\text{Joule}}\propto rI^2\) (le facteur de rapport cyclique est invariant). Donc \(rI^2\sim h^2\), et avec \(r\sim h^{-1}\) :
+\equationajustee{I^2\sim\frac{h^2}{h^{-1}}=h^3}
+\equationajustee{\boxed{I\sim h^{3/2}}}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+On reprend la démarche de la question 34, avec \(J\sim h^5\). Le travail du couple sur une phase motrice vaut
+\equationajustee{\begin{aligned}
+W&=\frac12I^2\Delta L\\
+&\sim h^3\cdot h=h^4
+\end{aligned}}
+Le théorème de l'énergie cinétique, \(\tfrac12J\Omega^2=W\), donne \(\Omega^2\sim h^{-1}\). Avec \(t=\Delta\theta/\Omega\) :
+\equationajustee{\boxed{t\sim h^{1/2}}}
+Ce temps n'obéit pas à la même loi que celui de la question 34 : la dynamique est ici imposée par la contrainte thermique sur le courant, et non par le champ disruptif.
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+La fréquence vérifie maintenant \(f\sim h^{-1/2}\) :
+\equationajustee{\begin{aligned}
+\langle\mathcal P_{\text{m,ma}}\rangle&=\frac12fI^2\Delta L\\
+&\sim h^{-1/2}\cdot h^3\cdot h
+\end{aligned}}
+\equationajustee{\boxed{\langle\mathcal P_{\text{m,ma}}\rangle\sim h^{7/2}}}
+En divisant par \(V\sim h^3\) :
+\equationajustee{\boxed{\langle\mathscr P_{\text{m,ma}}\rangle\sim h^{1/2}}}
+\textbf{Conclusion} : la puissance volumique du moteur électromagnétique \textbf{diminue} quand on miniaturise. Cause : la contrainte thermique limite le courant à \(I\sim h^{3/2}\), donc \(B_e=\mu_0NI/e\sim h^{1/2}\). Le champ dans l'entrefer, et avec lui la densité d'énergie magnétique, s'effondre à petite échelle.
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+& électrostatique & électromagnétique \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\langle\mathcal P\rangle\) & \(\sim h^2\) & \(\sim h^{7/2}\) \\
+\(\langle\mathscr P\rangle\) & \(\sim h^{-1}\) & \(\sim h^{1/2}\) \\
+\end{longtable}
+
+\equationajustee{\boxed{\frac{\langle\mathcal P_{\text{m,el}}\rangle}{\langle\mathcal P_{\text{m,ma}}\rangle}\sim h^{-3/2}}}
+Le rapport croît quand \(h\) diminue. À l'échelle centimétrique, \(\kappa\sim10^{-4}\) (question 31). L'égalité est atteinte pour \(h^{3/2}\sim\kappa\), soit \(h\sim\kappa^{2/3}\) :
+
+\begin{itemize}
+\tightlist
+\item
+  avec \(\kappa=10^{-4}\), \(h\approx2\times10^{-3}\) ;
+\item
+  avec \(\kappa=4\times10^{-4}\), \(h\approx5\times10^{-3}\).
+\end{itemize}
+
+Pour un moteur de rayon \(R=1\) cm, cela correspond à des dimensions de \textbf{quelques dizaines de micromètres}.
+
+\textbf{Conclusion} : à l'échelle macroscopique, le moteur électromagnétique l'emporte de plusieurs ordres de grandeur. Aux échelles micrométriques (microsystèmes, MEMS), le moteur électrostatique devient le plus performant.
+
+La raison est physique : la limite du moteur électrostatique (le champ disruptif du diélectrique) ne dépend pas de la taille, alors que celle du moteur électromagnétique (l'échauffement) se dégrade quand on réduit les dimensions.
+
+L'avantage est même renforcé à très petite distance inter-armatures. Pour \(pd\) inférieur au minimum de Paschen (vers \(10^{-2}\) bar·mm, où \(V_c\approx3\times10^{2}\) V), la tension de claquage remonte et le champ admissible dépasse largement \(E_d\).
+
+\end{document}

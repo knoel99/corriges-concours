@@ -1,0 +1,1755 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP MPI — Physique-chimie 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP MPI}
+\fancyhead[R]{\small Physique-chimie 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP MPI — Physique-chimie 2026\par}\medskip
+  {\large CCINP · MPI · Physique-chimie · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Cadre.} Épreuve spécifique MPI2PC, 4 heures, \textbf{calculatrices interdites}. Les résultats numériques peuvent être donnés avec \textbf{un seul chiffre significatif}. Le sujet, « Notre Terre : attractive, si chaleureuse et\ldots{} magn(if)(ét)ique », compte \textbf{33 questions} (Q1 à Q33, beaucoup à sous-questions) réparties en \textbf{sept parties indépendantes}.
+
+Une annexe, en dernière page, fournit une courbe de \(\log_{10}x\) sur \([1,10]\) et les logarithmes décimaux des données :
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Donnée & Valeur & \(\log_{10}\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\pi\) & 3,14 & 0,50 \\
+\(R_T\) & \(6{,}4\cdot10^6\) m & 6,81 \\
+\(M_T\) & \(6{,}0\cdot10^{24}\) kg & 24,78 \\
+\(G\) & \(6{,}7\cdot10^{-11}\ \mathrm{N\,m^2\,kg^{-2}}\) & −10,17 \\
+\(\Omega\) & \(7{,}3\cdot10^{-5}\ \mathrm{rad\,s^{-1}}\) & −4,14 \\
+\(C\) & \(10^3\ \mathrm{J\,kg^{-1}\,K^{-1}}\) & 3,00 \\
+\(N_A\) & \(6{,}02\cdot10^{23}\ \mathrm{mol^{-1}}\) & 23,78 \\
+\(\mu_0\) & \(4\pi\cdot10^{-7}\ \mathrm{H\,m^{-1}}\) & −5,90 \\
+\end{longtable}
+
+La partie IV ajoute \(R=8{,}31\ \mathrm{J\,K^{-1}\,mol^{-1}}\), les masses molaires de C, O, Si, Al, Ca, Fe, et \(K_e=10^{-14}\). Le rapport 2026 note que cette annexe a été peu utilisée : c'est pourtant elle qui rend les applications numériques rapides.
+
+\textbf{Les sept parties.}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Partie I (Q1--Q3)} : analogie gravitation/électrostatique, théorème de Gauss gravitationnel, champ d'une boule homogène, puis détection gravimétrique d'un gisement de pétrole par superposition.
+\item
+  \emph{Partie II (Q4--Q8)} : poids en référentiel terrestre (force d'inertie d'entraînement), négligeabilité de Coriolis, énergies potentielles et forme approchée d'une équipotentielle de pesanteur : aplatissement de la Terre.
+\item
+  \emph{Partie III (Q9--Q10)} : gravimètre absolu interférométrique (Mach-Zehnder et coins de cube) : différence de marche, minima d'intensité, exploitation d'une droite.
+\item
+  \emph{Partie IV (Q11--Q14)} : chimie. IV.1 formules de Bogue du ciment mises sous forme matricielle en Python ; IV.2 diacide carbonique : diagramme de distribution, pH d'une pluie en équilibre avec le \(\mathrm{CO_2}\) de l'air.
+\item
+  \emph{Partie V (Q15--Q24)} : résistance thermique et mesure de conductivité d'une roche ; énergie gravitationnelle d'une boule et température d'accrétion ; décroissance radioactive, puissance volumique et lecture d'un script Python ; bilan thermique en sphérique avec source et profil de température.
+\item
+  \emph{Partie VI (Q25--Q29)} : bilan radiatif d'après le document de Trenberth : conservation de la puissance rayonnée, lois de Wien et de Stefan, puissance solaire, bilan du sol, échauffement.
+\item
+  \emph{Partie VII (Q30--Q33)} : champ d'un dipôle magnétique, lignes de champ, composantes horizontale et verticale, moment dipolaire terrestre.
+\end{itemize}
+
+\textbf{Notions du programme mobilisées.} Théorème de Gauss et analyse des symétries ; dynamique en référentiel en rotation uniforme autour d'un axe fixe ; énergie potentielle ; développement limité au premier ordre ; interférences à deux ondes ; stœchiométrie ; couples acide-base et diagrammes de distribution ; loi de Fourier, résistance thermique, premier principe appliqué à un système élémentaire ; équation différentielle d'ordre 1 ; champ magnétique d'un dipôle et lignes de champ ; Python (numpy, matplotlib).
+
+\textbf{Ce qu'en dit le jury.} Le rapport 2026 juge le sujet « facile à s'approprier (sauf exceptions) et de niveau adapté », mais « légèrement long ». La moyenne a été de 8,76/20, avec un écart-type de 3,46. Les questions simples, très nombreuses, ont été traitées par la plupart des candidats.
+
+\textbf{Questions discriminantes.} Le rapport désigne comme questions difficiles, peu traitées et donc classantes, \textbf{Q3, Q8, Q10, Q20 et Q28} : superposition avec une masse volumique algébrique, forme de l'équipotentielle, marche des rayons et minima d'interférence, puissance volumique radioactive, puissance solaire tirée du document. S'y ajoutent, d'après les remarques par question, Q14 et Q28--Q29 (rarement traitées) et toute la partie VII, très peu abordée faute de temps.
+
+\textbf{Questions à ne pas laisser passer.} Q1, Q2, Q4, Q5, Q7, Q9, Q11, Q13, Q15, Q16, Q17, Q19, Q22, Q23, Q26, Q27, Q30 sont des applications directes du cours. Le jury signale pourtant que Q5 est « Rarement juste, alors que c'est du cours » et que les résultats de cours de Q7 sont « mal établis » : ces points se gagnent par une rédaction complète.
+
+\textbf{Erreurs générales relevées par le jury.} Oubli du signe moins dans le champ et les énergies potentielles de gravitation et de pesanteur ; températures absolues négatives ; théorème de Gauss appliqué sans préciser la surface fermée et la masse intérieure ; confusion entre scalaire et vecteur ; erreurs de calcul, d'homogénéité et unités omises.
+
+\textbf{Gestion du temps.} Environ 25 min pour la partie I, 35 min pour la II, 25 min pour la III, 35 min pour la IV, 1 h 10 pour la V, 30 min pour la VI et 20 min pour la VII. Le rapport invite à lire tout le sujet avant de commencer et à profiter de l'indépendance des parties : peu de candidats ont atteint la partie VII, dont Q30 et Q31 sont pourtant courtes. On peut commencer par les parties les plus proches du cours (I, VII, V.1).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-i-champ-gravitationnel-et-champ-de-pesanteur}{%
+\section{Partie I --- Champ gravitationnel et champ de pesanteur}\label{partie-i-champ-gravitationnel-et-champ-de-pesanteur}}
+
+On établit le théorème de Gauss gravitationnel par analogie, on l'applique à une boule homogène, puis on utilise la superposition pour modéliser une poche moins dense.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Écrire côte à côte les deux champs créés en \(M\) par une source ponctuelle en \(O\) et identifier terme à terme.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La gravitation est toujours attractive : quel signe doit porter l'analogue de \(1/(4\pi\varepsilon_0)\) ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+\equationajustee{\begin{aligned}
+\vec G(M)&=-\frac{Gm}{r^2}\,\vec u_r\\
+\vec E(M)&=\frac{q}{4\pi\varepsilon_0\,r^2}\,\vec u_r
+\end{aligned}}
+
+L'identification donne
+
+\equationajustee{\boxed{\begin{aligned}
+q\ &\longleftrightarrow\ m\\
+\frac{1}{4\pi\varepsilon_0}\ &\longleftrightarrow\ -G\\
+\varepsilon_0\ &\longleftrightarrow\ -\frac{1}{4\pi G}
+\end{aligned}}}
+
+Le théorème de Gauss électrostatique s'écrit \(\oint_S\vec E\cdot\mathrm d\vec S_{\rm ext}=Q_{\rm int}/\varepsilon_0\). Il devient : le flux du champ gravitationnel sortant d'une \textbf{surface fermée} \(S\) est égal à \(-4\pi G\) fois la masse \textbf{intérieure} au volume \(V\) qu'elle délimite :
+
+\equationajustee{\boxed{\oint_S\vec G\cdot\mathrm d\vec S_{\rm ext}=-4\pi G\iiint_V\mu(P)\,\mathrm d\tau}}
+
+\begin{piege}
+
+Oublier le signe moins conduit à \(\varepsilon_0\leftrightarrow1/(4\pi G)\), donc à un champ de gravitation répulsif. Contrôle : le flux est négatif, le champ est entrant.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 trouve curieuses les erreurs sur l'expression du champ de gravitation, alors qu'il est donné en partie II : « Les candidats doivent prendre un peu de recul. » Il relève aussi, en remarque générale, un énoncé de Gauss qui oublie de spécifier la surface fermée et la masse intérieure.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Commencer par les invariances et les plans de symétrie de la boule : quelle forme a \(\vec G_T\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Prendre comme surface de Gauss une sphère de centre \(O\) et distinguer \(r\ge R_T\) et \(r\le R_T\) : « en tout point de l'espace » impose les deux cas.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Invariance par toute rotation autour de \(O\) : la norme ne dépend que de \(r\). Tout plan contenant \(O\) et \(M\) est plan de symétrie de la distribution, donc
+
+\equationajustee{\vec G_T(M)=G_T(r)\,\vec u_r .}
+
+Surface de Gauss : la sphère fermée de centre \(O\) et de rayon \(r\), sur laquelle \(G_T(r)\) est uniforme. Le flux sortant vaut \(4\pi r^2G_T(r)\), d'où
+
+\equationajustee{4\pi r^2G_T(r)=-4\pi G\,M_{\rm int}(r).}
+
+Pour \(r\ge R_T\), la masse intérieure est \(M_T\) :
+
+\equationajustee{\boxed{\vec G_T=-\frac{GM_T}{r^2}\,\vec u_r}}
+
+Pour \(r\le R_T\), la masse intérieure est \(\frac43\pi r^3\mu_T\) :
+
+\equationajustee{\boxed{\vec G_T=-\frac{4\pi G\mu_T}{3}\,r\,\vec u_r}}
+
+soit aussi \(\vec G_T=-\dfrac{GM_T}{R_T^3}\,r\,\vec u_r\). Le champ est continu en \(R_T\), nul au centre. Contrôle : \(\frac43\pi R_T^3\mu_T\approx6{,}0\cdot10^{24}\) kg, soit \(M_T\).
+
+\begin{methode}
+
+Symétries d'abord (direction et variables du champ), Gauss ensuite : c'est l'analyse des symétries qui permet de sortir \(G_T(r)\) de l'intégrale de flux.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 juge Q2 « Généralement bien réussie ». Les points se perdent sur la rigueur : écrire un vecteur égal à un scalaire, ou oublier le signe moins, deux erreurs que le rapport cite parmi les plus fréquentes.
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+La poche de pétrole « remplace » de la roche : comment écrire la distribution réelle comme somme de deux boules homogènes ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Terre pleine de masse volumique \(\mu_T\) plus une petite boule de masse volumique algébrique bien choisie ; vue de \(M\), extérieure à elle, cette petite boule agit comme une masse ponctuelle en \(C\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour le sens de variation, raisonner sur les normes : les deux champs sont négatifs selon \(\vec u_z\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q3-superposition-petrole.pdf}
+\caption*{Figure 1 --- principe de superposition : Terre réelle égale Terre pleine
+de masse volumique μ\_T plus une boule de centre C, de masse volumique
+μ\_p − μ\_T \textless{} 0, dont le champ en M est dirigé vers
+l'extérieur}
+\end{figure}
+
+Distribution réelle : Terre homogène de masse volumique \(\mu_T\), plus une boule de centre \(C\) et de rayon \(r'\), de masse volumique \(\mu_p-\mu_T\).
+
+Cette boule a la masse \(m'=\frac43\pi r'^3(\mu_p-\mu_T)<0\) et crée en \(M\) le champ \(-Gm'/d^2\,\vec u_z\). D'où
+
+\equationajustee{\boxed{G_{Tp}(M)\,\vec u_z=\left[-\frac{4\pi G\mu_TR_T}{3}-\frac{4\pi G\,r'^3(\mu_p-\mu_T)}{3\,d^2}\right]\vec u_z}}
+
+Avec \(G_T=-\frac43\pi G\mu_TR_T\) :
+
+\equationajustee{\boxed{\varepsilon=\left(\frac{r'}{d}\right)^2\frac{r'}{R_T}\,\frac{\mu_T-\mu_p}{\mu_T}}}
+
+On a \(\varepsilon>0\) et \(G_{Tp}=G_T(1-\varepsilon)\) avec \(G_T<0\). Donc \(|G_{Tp}|<|G_T|\) : \textbf{le champ devient moins intense} (déficit de masse sous \(M\)).
+
+\equationajustee{\varepsilon=\frac14\times\frac{10^{-3}}{4}\times\frac56\approx5\cdot10^{-5}}
+
+C'est environ \(5\cdot10^3\) fois la précision relative des gravimètres : \textbf{le gisement est détectable}.
+
+\begin{piege}
+
+Superposer la Terre pleine et une boule de masse volumique \(\mu_p\) compte deux fois la matière dans la poche : c'est l'erreur que relève le jury, « Beaucoup oublient de retirer la petite sphère de Terre dans le calcul. » Autre piège : conclure de \(\varepsilon>0\) que le champ augmente, alors que \(G_T\) est négatif.
+
+\end{piege}
+
+\begin{methode}
+
+Une cavité ou une inclusion dans une distribution homogène se traite par superposition d'une distribution pleine et d'une distribution de densité algébrique (différence des masses volumiques).
+
+\end{methode}
+
+\begin{jury}
+
+Q3 fait partie des questions difficiles et classantes du rapport 2026 : « Le principe de superposition n'est pas bien maîtrisé pour certains. »
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-ii-forme-de-la-terre}{%
+\section{Partie II --- Forme de la Terre}\label{partie-ii-forme-de-la-terre}}
+
+On définit le poids dans le référentiel terrestre, on justifie qu'on néglige Coriolis, puis on construit l'énergie potentielle de pesanteur pour obtenir la forme d'une équipotentielle et l'aplatissement.
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Le référentiel terrestre est en rotation uniforme autour d'un axe fixe du référentiel géocentrique : quelles forces d'inertie subit un point immobile dans \(R'\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'accélération d'entraînement est celle du point coïncidant, en mouvement circulaire uniforme autour de l'axe des pôles.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\(R'\) tourne uniformément autour de l'axe fixe \(OZ\) de \(R\) (galiléen) : il n'est pas galiléen.
+
+Pour \(M\) immobile dans \(R'\), la force de Coriolis est nulle. La force d'inertie d'entraînement vaut \(-m\vec a_e=m\Omega^2\overrightarrow{HM}\), le point coïncidant décrivant un cercle de rayon \(HM\).
+
+Le poids, opposé de la force qui maintient \(M\) en équilibre dans \(R'\), est
+
+\equationajustee{\vec P=\underbrace{-\frac{GM_Tm}{r^2}\vec u_r}_{\text{gravitation}}+\underbrace{m\Omega^2\overrightarrow{HM}}_{\text{inertie d'\text{entraînement}}} .}
+
+Ordre de grandeur : le terme d'entraînement est petit (Q6), et l'on retrouve la valeur connue.
+
+\equationajustee{\log\frac{GM_T}{R_T^2}=-10{,}17+24{,}78-13{,}62=0{,}99}
+
+\equationajustee{\boxed{g\approx10\ \mathrm{m\,s^{-2}}}}
+
+\begin{piege}
+
+La force d'inertie d'entraînement est centrifuge (\(+m\Omega^2\overrightarrow{HM}\)) ; un signe moins donnerait un poids plus fort à l'équateur qu'aux pôles.
+
+\end{piege}
+
+\begin{jury}
+
+Pour l'ordre de grandeur, le rapport 2026 rappelle que \(g\) est « bien connu ! » : il « a parfois été (re)calculé, et mal calculé, occasionnant des valeurs aberrantes. » Donner \(g\approx10\ \mathrm{m\,s^{-2}}\) suffit ; un calcul, s'il est fait, doit retomber sur cette valeur.
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Majorer la norme de la force de Coriolis et la comparer au poids.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+La force de Coriolis s'écrit \(\vec F_{ic}=-2m\vec\Omega\wedge\vec v\), donc \(\|\vec F_{ic}\|\le2m\Omega v\) :
+
+\equationajustee{\begin{aligned}
+\frac{\|\vec F_{ic}\|}{mg}&\le\frac{2\Omega v}{g}\\
+&\approx\frac{2\times7{,}3\cdot10^{-5}\times100}{9{,}8}\approx1{,}5\cdot10^{-3}\ll1
+\end{aligned}}
+
+\textbf{La force de Coriolis ne dépasse pas 0,15 \% du poids : elle est négligeable devant lui.}
+
+\begin{jury}
+
+Le rapport 2026 constate que Q5 est « Rarement juste, alors que c'est du cours. » Il faut l'expression vectorielle de la force, une majoration de sa norme et une comparaison chiffrée au poids.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Écrire le rapport des deux termes de Q4 à la surface et repérer ce qui dépend de la position.
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(HM=R_T\sin\theta\) : où ce rapport est-il maximal ?
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\equationajustee{\begin{aligned}
+\frac{m\Omega^2R_T\sin\theta}{GM_Tm/R_T^2}&=\frac{\Omega^2R_T^3}{GM_T}\sin\theta\\
+&\le\frac{\Omega^2R_T^3}{GM_T}
+\end{aligned}}
+
+\equationajustee{\boxed{\eta=\frac{\Omega^2R_T^3}{GM_T}}}
+
+La borne est atteinte à l'équateur. Application numérique :
+
+\equationajustee{\log\eta=-8{,}28+20{,}43+10{,}17-24{,}78=-2{,}46}
+
+\equationajustee{\boxed{\eta\approx3{,}5\cdot10^{-3}}}
+
+Le champ de pesanteur ne diffère du champ gravitationnel que de quelques millièmes. L'effet reste mesurable : variation de \(g\) entre pôle et équateur, verticale légèrement non radiale.
+
+\begin{methode}
+
+Pour montrer qu'une quantité est « majorée par », exhiber l'inégalité et dire où le maximum est atteint.
+
+\end{methode}
+
+\begin{piege}
+
+Le rapport 2026 signale « Beaucoup d'erreurs de calculs et d'oublis de puissances de \(R_T\) », menant parfois à la conclusion inverse. Contrôle d'homogénéité : \(\Omega^2R_T^3\) et \(GM_T\) sont tous deux en \(\mathrm{m^3\,s^{-2}}\), \(\eta\) est sans dimension.
+
+\end{piege}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Pour chaque force, calculer le travail élémentaire \(\delta W=\vec F\cdot\mathrm d\overrightarrow{OM}\) et l'écrire comme \(-\mathrm dE_p\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la force centrifuge, utiliser les coordonnées cylindriques d'axe \(OZ\) : seule la distance \(\rho=HM\) à l'axe intervient.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\textbf{a)} Le travail élémentaire de la force gravitationnelle est
+
+\equationajustee{\delta W=-\frac{GM_Tm}{r^2}\mathrm dr=-\mathrm d\!\left(-\frac{GM_Tm}{r}\right).}
+
+Avec \(E_{pG}(\infty)=0\) :
+
+\equationajustee{\boxed{E_{pG}=-\frac{GM_Tm}{r}}}
+
+\textbf{b)} On a \(\vec F_{ie}=m\Omega^2\rho\,\vec u_\rho\) et \(\mathrm d\overrightarrow{OM}=\mathrm d\rho\,\vec u_\rho+\rho\,\mathrm d\varphi\,\vec u_\varphi+\mathrm dz\,\vec u_z\) :
+
+\equationajustee{\delta W=m\Omega^2\rho\,\mathrm d\rho=-\mathrm d\!\left(-\tfrac12m\Omega^2\rho^2\right).}
+
+La constante est nulle car \(\rho=0\) en \(r=0\) :
+
+\equationajustee{\boxed{E_{pe}=-\frac12m\Omega^2(HM)^2}}
+
+\textbf{c)} \(HM=r\sin\theta\) :
+
+\equationajustee{\boxed{E_{pp}(M)=-\frac{GM_Tm}{r}-\frac12m\Omega^2r^2\sin^2\theta}}
+
+\begin{jury}
+
+Pour Q7, le rapport 2026 parle d'« Encore des résultats de cours, mal établis. » « Établir » demande le calcul du travail élémentaire et la fixation de la constante, pas seulement le résultat ; l'oubli du signe moins dans \(E_{pG}\) et \(E_{pp}\) figure parmi les erreurs générales du rapport.
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Écrire l'égalité \(E_{pp}(M)=E_{pp}(N)\) et isoler \(1/r\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le terme centrifuge est petit devant le terme gravitationnel (Q6) : on travaille au premier ordre, ce qui autorise à remplacer \(r\) par \(r_n\) dans le terme correctif.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour l'aplatissement, évaluer \(r\) dans le plan équatorial.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+L'égalité \(E_{pp}(M)=E_{pp}(N)\), avec \(E_{pp}(N)=-GM_Tm/r_n\), donne
+
+\equationajustee{\frac{r_n}{r}=1-\frac{\Omega^2r^2r_n\sin^2\theta}{2GM_T},}
+
+où le dernier terme est de l'ordre de \(\eta/2\ll1\). Au premier ordre, \(r\approx r_n\) dans ce terme et \((1-x)^{-1}\approx1+x\) :
+
+\equationajustee{\boxed{r(\theta)\approx r_n\left(1+\varepsilon\sin^2\theta\right)}}
+
+\equationajustee{\boxed{\varepsilon=\frac{\Omega^2r_n^3}{2GM_T}=\frac\eta2\left(\frac{r_n}{R_T}\right)^3}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q8-equipotentielle.pdf}
+\caption*{Figure 2 --- équipotentielle (Σ) dans un plan méridien, aplatissement
+exagéré, et allure de r(θ) pour 0 ≤ θ ≤ π}
+\end{figure}
+
+Allure : ovale symétrique par rapport à l'axe des pôles et au plan équatorial, de rayon minimal \(r_n\) aux pôles et maximal \(r_e\) à l'équateur. Il est très proche d'un cercle : l'aplatissement est à exagérer sur le dessin. Avec \(r_e=r_n(1+\varepsilon)\) :
+
+\equationajustee{\boxed{\varepsilon'=\frac{r_e-r_n}{r_n}=\varepsilon}}
+
+\equationajustee{\varepsilon'\approx\frac\eta2\approx1{,}7\cdot10^{-3}\approx\frac1{580}}
+
+L'aplatissement réel (\(1/298\)) est environ deux fois plus grand : le modèle ignore l'excès de masse du bourrelet équatorial.
+
+\begin{piege}
+
+Sans l'argument du premier ordre, l'équation en \(r\) est du troisième degré ; il faut écrire explicitement pourquoi on peut remplacer \(r\) par \(r_n\) dans le terme correctif.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 classe Q8 parmi les questions difficiles et la juge « Mal traitée dans l'ensemble. » Il revient sur la notion d'équipotentielle en Q31, comme notion « pas bien maîtrisée ». Le dessin doit porter l'axe des pôles, \(r_n\) et \(r_e\), et signaler que l'échelle de la déformation est exagérée.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-iii-duxe9termination-optique-du-champ-de-pesanteur}{%
+\section{Partie III --- Détermination optique du champ de pesanteur}\label{partie-iii-duxe9termination-optique-du-champ-de-pesanteur}}
+
+Un coin de cube en chute libre fait varier la différence de marche d'un interféromètre ; le défilement des minima d'intensité mesure \(g\).
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+a) Écrire \(g(h)\) à partir de la loi de la gravitation et développer au premier ordre en \(h/R_T\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+b) Chute libre sans vitesse initiale, axe orienté vers le bas.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\textbf{a)} D'après Q2, \(g(h)=g(0)(1+h/R_T)^{-2}\). Le développement limité au premier ordre donne
+
+\equationajustee{\frac{g(h)-g(0)}{g(0)}\approx-\frac{2h}{R_T}\approx-3\cdot10^{-7}.}
+
+\textbf{\(g\) peut être pris uniforme} sur la hauteur de chute.
+
+\textbf{b)} Sur l'axe \textbf{descendant} d'origine \(O_{1,0}\), \(\ddot z_1=+g\), avec \(z_1(0)=0\) et \(\dot z_1(0)=0\) :
+
+\equationajustee{\boxed{z_1(t)=\frac12gt^2}}
+
+\begin{jury}
+
+Le rapport 2026 note que Q9a est « Rarement traitée quantitativement, avec le développement limité attendu » : une phrase qualitative ne suffit pas. Pour Q9b, « Le sens de l'axe est souvent faux (erreur de signe) et l'origine mal prise en compte. »
+
+\end{jury}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+a) Suivre sur la figure 3(a) les deux rayons qui atteignent \(P\) en tenant compte de l'orientation des séparatrices : l'un visite les deux coins de cube, l'autre va directement de \(O\) à \(J\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+a) Un coin de cube impose un aller-retour : chemin double de la distance au sommet. Le quadrilatère \(OJHK\) permet d'éliminer les longueurs inconnues.
+
+\end{indication}
+
+\begin{indication}{3}
+
+b) Introduire l'ordre d'interférence : que vaut-il en un minimum, et de combien varie-t-il entre deux minima consécutifs ? Dans quel sens varie \(\delta\) ? c) Chercher une combinaison des \(t_q\) proportionnelle à \(q\).
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q10-trajets-mach-zehnder.pdf}
+\caption*{Figure 3 --- trajets des rayons (1) et (2) dans l'interféromètre de la
+figure 3(a), axe z descendant d'origine O₁,₀}
+\end{figure}
+
+\textbf{a)} Les réflexions suivent la loi de la réflexion sur les séparatrices à 45° et sur le miroir \(M\).
+
+\begin{itemize}
+\tightlist
+\item
+  Rayon (1) : \(S\to O\to J\to P\), transmis par \(S_{p1}\) puis réfléchi par \(S_{p3}\).
+\item
+  Rayon (2), dans l'ordre :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    réfléchi vers le haut en \(O\) et renvoyé vers le bas par \(C_1\) ;
+  \item
+    transmis par \(S_{p1}\) puis par \(S_{p2}\), renvoyé vers le haut par \(C_2\) ;
+  \item
+    réfléchi vers la droite en \(K\), puis vers le haut par le miroir \(M\) en \(H\) ;
+  \item
+    transmis par \(S_{p3}\) en \(J\) vers \(P\).
+  \end{itemize}
+\end{itemize}
+
+Avec \(n=1\) et les portions communes éliminées :
+
+\equationajustee{\delta=\left[2\,OO_1+OK+2\,KO_2+KH+HJ\right]-OJ .}
+
+\(OJHK\) est un rectangle (\(KH=OJ\), \(HJ=OK\)), donc \(\delta=2\,O_1O_2\), avec \(O_1O_2=z_2-z_1\) :
+
+\equationajustee{\boxed{\delta(P,t)=2(z_2-z_1)=2z_2-g\,t^2}}
+
+\textbf{b)} L'intensité vaut
+
+\equationajustee{I=I_1+I_2+2\sqrt{I_1I_2}\cos\left(\frac{2\pi\delta}{\lambda}\right).}
+
+Un minimum correspond à un ordre d'interférence \(p=\delta/\lambda\) demi-entier. Deux minima consécutifs ont des ordres qui diffèrent de 1 : \(\delta\) varie de \(\lambda\). Comme \(\delta\) décroît :
+
+\equationajustee{\begin{aligned}
+\Delta_q&=-g\left(t_q^2-t_0^2\right)\\
+&=-q\lambda
+\end{aligned}}
+
+\equationajustee{\boxed{g=\frac{q\lambda}{t_q^2-t_0^2}}}
+
+Contrôle sur la figure 3(b) : \(t_0\approx155\ \mu\)s et \(t_1\approx300\ \mu\)s donnent \(g\approx10\ \mathrm{m\,s^{-2}}\). Les minima se resserrent car \(t_q=\sqrt{t_0^2+q\lambda/g}\).
+
+\textbf{c)} On pose
+
+\equationajustee{\boxed{y(q)=t_q^2-t_0^2=\dfrac{\lambda}{g}\,q}}
+
+On relève les \(t_q\), on trace \(y\) en fonction de \(q\) et on ajuste une droite passant par l'origine, de pente \(a=\lambda/g\) ; alors \(g=\lambda/a\).
+
+Les temps étant en microsecondes, \(a=64\,598\ \mu\mathrm s^2=6{,}4598\cdot10^{-8}\ \mathrm{s^2}\) :
+
+\equationajustee{g=\frac{632{,}82\cdot10^{-9}}{6{,}4598\cdot10^{-8}}\approx9{,}796\ \mathrm{m\,s^{-2}}}
+
+C'est la valeur annoncée \(9{,}7961\ \mathrm{m\,s^{-2}}\) au cinquième chiffre près (arrondi de la pente).
+
+\begin{piege}
+
+Oublier le facteur 2 de l'aller-retour sur le coin de cube donne un \(g\) doublé ; oublier l'unité de la pente (\(\mu\mathrm s^2\)) fausse \(g\) d'un facteur \(10^{12}\).
+
+\end{piege}
+
+\begin{methode}
+
+Pour exploiter une loi non linéaire, chercher la grandeur qui varie linéairement (ici \(t_q^2\) en fonction de \(q\)) et identifier la pente.
+
+\end{methode}
+
+\begin{jury}
+
+Q10 est l'une des questions les plus discriminantes du rapport 2026. En a), « Beaucoup de candidats ont raté la marche des rayons lumineux conformément aux lois de la réflexion et de la réfraction. » En b), « une faible proportion de candidats a caractérisé les minima de l'intensité d'interférence (définition, écart des ordres) » : il faut écrire la condition de minimum et l'écart d'une unité d'ordre entre minima successifs. La c) a été très peu traitée, car elle découle des calculs précédents.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-iv-le-calcaire-et-largile-des-richesses-du-sol-bon-marchuxe9}{%
+\section{Partie IV --- Le calcaire et l'argile : des richesses du sol bon marché}\label{partie-iv-le-calcaire-et-largile-des-richesses-du-sol-bon-marchuxe9}}
+
+La chimie du ciment conduit à un système linéaire résolu en Python ; les pluies acides mobilisent un diagramme de distribution et un calcul de pH.
+
+\hypertarget{partie-iv.1-obtention-dun-ciment}{%
+\subsection{Partie IV.1 --- Obtention d'un ciment}\label{partie-iv.1-obtention-dun-ciment}}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+La deuxième ligne du tableau 2 écrit chaque composant comme un assemblage d'oxydes : elle donne directement les coefficients.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\equationajustee{\begin{aligned}{}&(A)\quad 3\,\mathrm{CaO_{(s)}}+\mathrm{SiO_{2(s)}}\longrightarrow\mathrm{Ca_3SiO_{5(s)}}\\
+&(B)\quad 2\,\mathrm{CaO_{(s)}}+\mathrm{SiO_{2(s)}}\longrightarrow\mathrm{Ca_2SiO_{4(s)}}\\
+&(C)\quad 3\,\mathrm{CaO_{(s)}}+\mathrm{Al_2O_{3(s)}}\longrightarrow\mathrm{Ca_3Al_2O_{6(s)}}\\
+&(D)\quad 4\,\mathrm{CaO_{(s)}}+\mathrm{Al_2O_{3(s)}}+\mathrm{Fe_2O_{3(s)}}\longrightarrow\mathrm{Ca_4Al_2Fe_2O_{10(s)}}
+\end{aligned}}
+
+Contrôle par les masses molaires :
+
+\equationajustee{\begin{aligned}
+3\times56+60&=228\\
+2\times56+60&=172\\
+3\times56+102&=270\\
+4\times56+102+160&=486
+\end{aligned}}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Raisonner sur 100 g de mélange : quelle masse d'oxyde \(i\) contient une masse unité de composant \(j\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire d'abord les quatre relations donnant \(p_1,\dots,p_4\) ; l'égalité \(\mathtt{oxy}=\mathtt{gob}\cdot\mathtt{cim}\) fixe ensuite le sens de la matrice : lignes indexées par les oxydes, colonnes par les composants.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+Un motif de composant contient les motifs d'oxydes donnés par Q11. La conservation de la masse de chaque oxyde, pour 100 g de mélange, donne :
+
+\equationajustee{\begin{aligned}
+p_1&=\frac{3M_1}{M_5}p_5+\frac{2M_1}{M_6}p_6+\frac{3M_1}{M_7}p_7+\frac{4M_1}{M_8}p_8\\
+p_2&=\frac{M_2}{M_5}p_5+\frac{M_2}{M_6}p_6\\
+p_3&=\frac{M_3}{M_7}p_7+\frac{M_3}{M_8}p_8\\
+p_4&=\frac{M_4}{M_8}p_8
+\end{aligned}}
+
+Ainsi \(\beta_{ij}=\nu_{ij}M_i/M_{j+4}\), où \(\nu_{ij}\) est le nombre de motifs d'oxyde \(i\) dans le composant \(j\).
+
+\begin{lstlisting}[language=Python]
+5   gob=np.array([[3*M1/M5, 2*M1/M6, 3*M1/M7, 4*M1/M8],
+                  [  M2/M5,   M2/M6,       0,       0],
+                  [      0,       0,   M3/M7,   M3/M8],
+                  [      0,       0,       0,   M4/M8]])
+\end{lstlisting}
+
+Chaque colonne est de somme 1 (conservation de la masse). Avec l'exemple de la ligne 4, le script affiche \texttt{cim} \(\approx[2{,}5\ ;\ 66{,}9\ ;\ 15{,}3\ ;\ 15{,}3]\). On peut signaler que \texttt{M4=159} (ligne 2) diffère de \(M(\mathrm{Fe_2O_3})=160\ \mathrm{g\,mol^{-1}}\), écart sans effet notable.
+
+\begin{piege}
+
+Écrire la transposée donne un script qui s'exécute mais un résultat faux. \(\beta_{ij}\) est un rapport de \textbf{masses} : la masse molaire de l'oxyde, multipliée par son coefficient stœchiométrique, est au numérateur, celle du composant au dénominateur.
+
+\end{piege}
+
+\begin{methode}
+
+Contrôle gratuit d'une matrice de composition massique : chaque colonne doit sommer à 1.
+
+\end{methode}
+
+\begin{jury}
+
+Q11 est « Facile pour tous » selon le rapport 2026. En revanche, en Q12, « La stœchiométrie (proportions) en chimie n'a pas été bien gérée » pour établir les expressions des pourcentages et la matrice : le jury attend les quatre relations explicites avant le code.
+
+\end{jury}
+
+\hypertarget{partie-iv.2-les-pluies-acides}{%
+\subsection{Partie IV.2 --- Les pluies acides}\label{partie-iv.2-les-pluies-acides}}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+a) Un diacide cède successivement deux protons à l'eau. b) Quelle forme prédomine aux faibles pH, aux pH élevés, et laquelle passe par un maximum ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+c) Que vaut le pH là où deux espèces conjuguées ont la même proportion ? Lire l'abscisse avec la précision du quadrillage (0,2 unité de pH par graduation).
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\textbf{a)} Concentrations en \(\mathrm{mol\,L^{-1}}\), activité de l'eau égale à 1 :
+
+\equationajustee{\begin{aligned}{}&\mathrm{H_2CO_3}+\mathrm{H_2O}=\mathrm{HCO_3^-}+\mathrm{H_3O^+}\\
+&Q_{r1}=\frac{[\mathrm{HCO_3^-}][\mathrm{H_3O^+}]}{[\mathrm{H_2CO_3}]}\\
+&\mathrm{HCO_3^-}+\mathrm{H_2O}=\mathrm{CO_3^{2-}}+\mathrm{H_3O^+}\\
+&Q_{r2}=\frac{[\mathrm{CO_3^{2-}}][\mathrm{H_3O^+}]}{[\mathrm{HCO_3^-}]}
+\end{aligned}}
+
+\textbf{b)} L'acide le plus fort prédomine à pH faible, la base la plus forte à pH élevé, l'ampholyte passe par un maximum :
+
+\equationajustee{\boxed{\begin{aligned}
+(1)&:\ \mathrm{CO_{2(aq)},H_2O}\\
+(2)&:\ \mathrm{HCO_3^-}\\
+(3)&:\ \mathrm{CO_3^{2-}}
+\end{aligned}}}
+
+\textbf{c)} Aux intersections à 50 \%, \(\mathrm{pH}=\mathrm pK_a\). On lit \(\mathrm{pH}\approx6{,}35\) pour (1)/(2) et \(\approx10{,}35\) pour (2)/(3). Les constantes demandées sont les \(K_a\) :
+
+\equationajustee{\boxed{\begin{aligned}
+K_{a1}&=10^{-6{,}35}\approx4{,}5\cdot10^{-7}\\
+K_{a2}&=10^{-10{,}35}\approx4{,}5\cdot10^{-11}
+\end{aligned}}}
+
+Contrôle : le maximum de (2) est à \(\mathrm{pH}=\frac12(\mathrm pK_{a1}+\mathrm pK_{a2})\approx8{,}35\), à environ 98 \%, comme sur la figure.
+
+\begin{piege}
+
+Le rapport 2026 juge Q13 « En général bien traitées, mais parfois confusion entre \(K_a\) et \(\mathrm pK_a\) » : la question demande les \(K_a\), on donne donc \(10^{-\mathrm pK_a}\). Une lecture grossière du graphe se répercute en outre directement sur le pH de Q14.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+La concentration de \(\mathrm{CO_{2(aq)}}\) est imposée par l'atmosphère : ce n'est pas un acide de concentration apportée \(c\), il n'y a pas de conservation de la matière à écrire.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire toutes les concentrations en fonction de \(h=[\mathrm{H_3O^+}]\), puis l'électroneutralité ; annoncer les approximations avant de les faire et les vérifier ensuite.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Avec \(h=[\mathrm{H_3O^+}]\) et \([\mathrm{H_2CO_3}]=c\) imposée :
+
+\equationajustee{\begin{aligned}
+[\mathrm{HCO_3^-}]&=\frac{K_{a1}c}{h}\\
+[\mathrm{CO_3^{2-}}]&=\frac{K_{a1}K_{a2}c}{h^2}\\
+[\mathrm{OH^-}]&=\frac{K_e}{h}
+\end{aligned}}
+
+Électroneutralité :
+
+\equationajustee{h=[\mathrm{HCO_3^-}]+2[\mathrm{CO_3^{2-}}]+[\mathrm{OH^-}].}
+
+On néglige \([\mathrm{OH^-}]\) (milieu acide) et \(2[\mathrm{CO_3^{2-}}]\) (\(K_{a2}\ll K_{a1}\)). Il reste \(h=\sqrt{K_{a1}c}\) :
+
+\equationajustee{\boxed{\mathrm{pH}=\frac12(\mathrm pK_{a1}-\log c)\approx5{,}7}}
+
+Concentrations (en \(\mathrm{mol\,L^{-1}}\)) :
+
+\equationajustee{\begin{aligned}
+[\mathrm{H_3O^+}]&=[\mathrm{HCO_3^-}]\approx2\cdot10^{-6}\\
+[\mathrm{CO_{2(aq)},H_2O}]&=1{,}0\cdot10^{-5}\\
+[\mathrm{CO_3^{2-}}]&\approx K_{a2}\approx5\cdot10^{-11}\\
+[\mathrm{OH^-}]&\approx5\cdot10^{-9}
+\end{aligned}}
+
+Vérification : \([\mathrm{OH^-}]/h\approx2\cdot10^{-3}\) et \(2[\mathrm{CO_3^{2-}}]/[\mathrm{HCO_3^-}]\approx4\cdot10^{-5}\). Une pluie non polluée est naturellement acide.
+
+\begin{jury}
+
+Le rapport 2026 indique seulement que Q14 a été « rarement traitée ». C'est une question rentable pour qui a le temps : le résultat s'établit à partir des constantes et de l'électroneutralité, et l'énoncé demande toutes les concentrations, y compris \([\mathrm{OH^-}]\) et \([\mathrm{CO_3^{2-}}]\).
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-v-quelques-propriuxe9tuxe9s-thermodynamiques-de-la-terre}{%
+\section{Partie V --- Quelques propriétés thermodynamiques de la Terre}\label{partie-v-quelques-propriuxe9tuxe9s-thermodynamiques-de-la-terre}}
+
+V.1 exploite l'association en série de résistances thermiques pour mesurer une conductivité ; V.2 estime l'énergie d'accrétion, la puissance radioactive (avec un script Python) puis le profil de température d'une Terre conductrice avec source.
+
+\hypertarget{partie-v.1-mesure-de-la-conductivituxe9-thermique-dune-roche}{%
+\subsection{Partie V.1 --- Mesure de la conductivité thermique d'une roche}\label{partie-v.1-mesure-de-la-conductivituxe9-thermique-dune-roche}}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Penser à l'analogie électrique : quelle grandeur joue le rôle de la tension, laquelle celui de l'intensité ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'expression, intégrer la loi de Fourier en régime stationnaire, sans source, flux uniforme.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\equationajustee{\boxed{R_{th}=\frac{T_1-T_2}{\Phi}}\quad(\mathrm{K\,W^{-1}}),}
+
+où \(\Phi\) est le flux thermique traversant le conducteur de la face à \(T_1\) vers la face à \(T_2\), en régime stationnaire. Avec \(\vec j=-\lambda\,\overrightarrow{\mathrm{grad}}\,T\) et \(\Phi=js\) conservé, \(T_1-T_2=\Phi\,l/(\lambda s)\) :
+
+\equationajustee{\boxed{R_{th}=\frac{l}{\lambda\,s}}}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+En régime stationnaire, le même flux traverse toutes les couches : comment s'associent leurs résistances ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour éliminer les contacts, faire varier un paramètre qui ne les modifie pas, puis tracer une droite.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q16-resistances-serie.pdf}
+\caption*{Figure 4 --- schéma équivalent de la figure 5 : cinq résistances
+thermiques en série traversées par le même flux Φ}
+\end{figure}
+
+Le même flux \(\Phi\) traverse toutes les couches : \textbf{les résistances sont en série}.
+
+\equationajustee{\begin{aligned}
+T_c-T_1&=\Phi\frac{l}{\lambda_ls}\\
+T_1-T_2&=\Phi\left(\frac{e_1}{\lambda_1s}+\frac{d}{\lambda s}+\frac{e_2}{\lambda_2s}\right)
+\end{aligned}}
+
+Le rapport élimine \(\Phi\) et \(s\) :
+
+\equationajustee{\boxed{\frac{T_1-T_2}{T_c-T_1}=\frac{\lambda_l}{l}\left(\frac d\lambda+\frac{e_1}{\lambda_1}+\frac{e_2}{\lambda_2}\right)}}
+
+On mesure le rapport \(Y=\dfrac{T_1-T_2}{T_c-T_1}\) pour plusieurs échantillons de la même roche d'épaisseurs \(d\) différentes, contacts réalisés à l'identique. \(Y(d)\) est une droite de pente \(a=\lambda_l/(l\lambda)\) ; les contacts n'interviennent que dans l'ordonnée à l'origine. D'où
+
+\equationajustee{\boxed{\lambda=\frac{\lambda_l}{l\,a}}}
+
+\begin{piege}
+
+Répondre « on mesure les températures et on applique la formule » ne règle rien : \(e_1/\lambda_1\) et \(e_2/\lambda_2\) restent inconnus.
+
+\end{piege}
+
+\begin{methode}
+
+Éliminer une inconnue parasite constante : faire varier un paramètre contrôlé et exploiter une pente, l'inconnue étant rejetée dans l'ordonnée à l'origine.
+
+\end{methode}
+
+\begin{jury}
+
+Q16 est « En général assez bien traitée » d'après le rapport 2026, avec « parfois oubli de signaler qu'on a des résistances en série ». L'association en série est l'argument de la question : on l'écrit, avec sa justification (même flux).
+
+\end{jury}
+
+\hypertarget{partie-v.2-uxe9volution-de-la-tempuxe9rature-uxe0-lintuxe9rieur-de-la-terre}{%
+\subsection{Partie V.2 --- Évolution de la température à l'intérieur de la Terre}\label{partie-v.2-uxe9volution-de-la-tempuxe9rature-uxe0-lintuxe9rieur-de-la-terre}}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+a) Le résultat de Q7a s'adapte directement : vue de l'extérieur, une boule homogène équivaut à une masse ponctuelle placée en son centre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+b) Quand la boule a le rayon \(r\), exprimer sa masse et celle de la coquille apportée en fonction de \(\mu\) et \(r\), puis intégrer de \(0\) à \(R\).
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\textbf{a)} On reprend \(E_{pG}=-GM_Tm/r\) de Q7a, avec la masse \(m\) de la sphère comme source et \(\mathrm dm\) comme masse test :
+
+\equationajustee{\boxed{\mathrm dE_{pG}(r)=-\frac{Gm\,\mathrm dm}{r}}}
+
+\textbf{b)} Pour la boule de rayon \(r\), \(m(r)=\frac43\pi r^3\mu\), et la coquille apportée a la masse \(\mathrm dm=4\pi r^2\mu\,\mathrm dr\) :
+
+\equationajustee{\mathrm dE_{pG}=-\frac{16\pi^2G\mu^2}{3}r^4\,\mathrm dr .}
+
+On intègre pendant la croissance du rayon de \(0\) à \(R\) :
+
+\equationajustee{E_{pG}(R)=-\frac{16\pi^2G\mu^2}{3}\int_0^Rr^4\,\mathrm dr=-\frac{16\pi^2G\mu^2R^5}{15}.}
+
+Avec \(\mu=3M/(4\pi R^3)\) :
+
+\equationajustee{\boxed{E_{pG}(R)=-\frac35\,\frac{GM^2}{R}}}
+
+Le signe négatif traduit un état lié : la formation de la boule à partir de matière dispersée \textbf{libère} l'énergie \(\frac35GM^2/R\).
+
+\begin{piege}
+
+\(m\) et \(\mathrm dm\) dépendent tous deux de \(r\) : il faut les exprimer avant d'intégrer, sinon on perd le facteur \(3/5\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 précise qu'en Q17a « Il s'agissait de réécrire (et adapter) un résultat déjà établi en Q.7a). » En Q17b, il a été regrettable « de ne pas faire une intégration correcte pour retrouver un résultat donné par l'énoncé » : un résultat donné doit être démontré, bornes d'intégration comprises.
+
+\end{jury}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Bilan d'énergie : l'énergie libérée sert à élever la température de toute la masse terrestre depuis 0 K.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\equationajustee{M_TCT_{eq}=\frac35\frac{GM_T^2}{R_T}}
+
+\equationajustee{\boxed{T_{eq}=\frac{3GM_T}{5R_TC}}}
+
+Homogénéité : \(GM_T/R_T\) est en \(\mathrm{J\,kg^{-1}}\) et \(C\) en \(\mathrm{J\,kg^{-1}\,K^{-1}}\), le rapport est une température, positive.
+
+\equationajustee{\log T_{eq}=-0{,}22-10{,}17+24{,}78-6{,}81-3{,}00=4{,}58}
+
+\equationajustee{\boxed{T_{eq}\approx4\cdot10^4\ \mathrm K}}
+
+Cette valeur est très supérieure à la température du centre de la Terre (quelques milliers de kelvins). L'accrétion suffisait à fondre la planète, mais le modèle surestime l'échauffement : énergie rayonnée pendant l'accrétion et changements d'état négligés.
+
+\begin{piege}
+
+Le rapport 2026 relève qu'en égalisant les deux énergies « certains candidats oublient la masse de la Terre (d'où l'intérêt d'une analyse dimensionnelle) et d'autres obtiennent des températures \(T_{eq}(K) < 0\) ! » Une énergie libérée est positive ; c'est \(-E_{pG}\) qui chauffe la Terre.
+
+\end{piege}
+
+\begin{methode}
+
+Estimer et commenter : confronter la valeur obtenue à une grandeur connue, puis discuter les hypothèses du modèle.
+
+\end{methode}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Équation linéaire du premier ordre à coefficient constant.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\equationajustee{\boxed{N_i(t)=N_{i0}\exp\left(-\frac{\ln2}{\tau_i}t\right)=N_{i0}\,2^{-t/\tau_i}}}
+
+On vérifie que \(N_i(\tau_i)=N_{i0}/2\). Le rapport 2026 juge Q19 « Très bien réussie par (presque) tous ».
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Puissance volumique \(=\) énergie par désintégration \(\times\) nombre de désintégrations par unité de temps et de volume.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Passer de la fraction massique au nombre de noyaux par unité de volume avec \(\mu\), \(M_i\) et \(N_A\) ; la ligne 10 du script donne la structure du résultat.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+Un volume \(V\) de roche contient la masse \(x_i\mu V\) d'isotope \(i\), d'où le nombre initial de noyaux par unité de volume :
+
+\equationajustee{N_{i0}=\frac{x_i\mu N_A}{M_i}.}
+
+Le nombre de désintégrations par unité de volume et de temps est \(-\mathrm dN_i/\mathrm dt=\frac{\ln2}{\tau_i}N_i\), chacune libérant \(\varepsilon_i\) :
+
+\equationajustee{\boxed{p_{v,i}(t)=\frac{\ln2\ \varepsilon_ix_i\mu N_A}{M_i\tau_i}\exp\left(-\frac{\ln2}{\tau_i}t\right)}}
+
+Les puissances des trois éléments dans un même volume s'ajoutent :
+
+\equationajustee{\boxed{p_v(t)=\sum_{i=1}^3p_{v,i}(t)}}
+
+avec \(M_i\) en \(\mathrm{kg\,mol^{-1}}\) et \(\tau_i\) en secondes.
+
+\begin{piege}
+
+Les unités : le script écrit \(M_i\) en \(\mathrm{kg\,mol^{-1}}\) (0,238) et convertit les demi-vies en secondes (ligne 7) ; c'est indispensable pour obtenir des \(\mathrm{W\,m^{-3}}\).
+
+\end{piege}
+
+\begin{jury}
+
+Q20 est l'une des questions classantes du rapport 2026 : « les aspects extensif et volumique de la puissance volumique ont échappé à la plupart des (rares) candidats ayant traité cette question ». Il faut passer explicitement de la fraction massique au nombre de noyaux par unité de volume, puis sommer les puissances. Le jury ajoute qu'« il est à noter que le script Python esquissait la réponse » : la ligne 10 contient déjà \(\ln2\,\mu N_Ax_i\varepsilon_i/(M_i\tau_i)\).
+
+\end{jury}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Relier chaque ligne à une grandeur de Q20 : reconnaître \(\ln2\), \(N_{i0}\), \(\tau_i\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+b)--d) La grille temporelle est discrète : que cherche-t-on en minimisant \(|p_v(t)-p_v(0)/2|\) ? De quoi dépend la précision ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+f) Que signifie \(t=0\) ? Comparer \(p_v(0)\) multiplié par le volume du manteau à la puissance \(P\) donnée dans l'énoncé.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\textbf{a)} \texttt{pvi0} contient les puissances volumiques à \(t=0\) des trois éléments, \(p_{v,i}(0)\), en \(\mathrm{W\,m^{-3}}\) : environ 5,4 ; 4,6 et 2,5 \(\mathrm{nW\,m^{-3}}\).
+
+\textbf{b)} \texttt{Dp} est le plus petit écart, sur la grille de 100 dates, entre \(p_v(t)\) et \(p_v(0)/2\).
+
+\textbf{c)} \texttt{n} est l'indice de la date de la grille où cet écart est minimal.
+
+\textbf{d)} \texttt{pv(0)} \(\approx12{,}5\ \mathrm{nW\,m^{-3}}\) est la puissance volumique totale à \(t=0\). \texttt{t0} \(\approx4{,}95\) Ga est la date de la grille la plus proche de celle où la puissance est réduite de moitié.
+
+Le pas vaut \(10/99\approx0{,}1\) Ga. On améliore la précision en augmentant le nombre de points de \texttt{np.linspace}, ou par une dichotomie sur \(p_v(t)-p_v(0)/2\). La fonction de la ligne 13, avec \texttt{t} en milliards d'années :
+
+\begin{lstlisting}[language=Python]
+12  def pv(t):
+13      return sum(pvi0[k]*np.exp(-np.log(2)*t/tGyi[k]) for k in range(0,3))
+\end{lstlisting}
+
+\textbf{e)}
+
+\begin{lstlisting}[language=Python]
+20  plt.plot(t, pv(t))
+21  plt.xlabel("t (milliards d'années)")
+22  plt.ylabel("pv (W/m3)")
+23  plt.grid(False)
+24  plt.show()
+\end{lstlisting}
+
+\textbf{f)} Courbe décroissante et convexe, de \(12{,}5\) à environ \(4\ \mathrm{nW\,m^{-3}}\) sur 10 Ga (somme de trois exponentielles). L'horizontale \(p_v(0)/2\approx6{,}25\ \mathrm{nW\,m^{-3}}\) coupe la courbe en
+
+\equationajustee{\boxed{t_{1/2}\approx5\cdot10^9\ \text{ans}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q21-puissance-radiogenique.pdf}
+\caption*{Figure 5 --- p\_v(t) recalculée avec les valeurs du script, ses trois
+contributions et la construction de t₁/₂}
+\end{figure}
+
+Ici \(t=0\) est l'instant présent : \(p_v(0)\times0{,}84\times\frac43\pi R_T^3\approx1{,}2\cdot10^{13}\) W, c'est la puissance \(P\) estimée aujourd'hui. \(t_{1/2}\) est donc une date future. Ce n'est aucune des trois demi-vies, \(p_v\) n'étant pas une exponentielle unique.
+
+\begin{piege}
+
+Utiliser \texttt{taui} (en secondes) à la ligne 13 avec \texttt{t} en milliards d'années rend la courbe plate. Autre piège : prendre \(t=0\) pour la formation de la Terre, ce qui fausse la comparaison de Q24d.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note que cette question de compréhension de script n'a été traitée que par une partie des candidats, mais que la majorité a bien exploité la courbe en f). La lecture graphique de \(t_{1/2}\) est donc un point accessible, à justifier par la construction de l'horizontale \(p_v(0)/2\).
+
+\end{jury}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Raisonner sur les causes du transfert thermique (géométrie, source, condition à la surface) plutôt que sur \(\vec j\) lui-même.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une fois établi que \(T\) ne dépend que de \(r\) et \(t\), l'expression du gradient rappelée en tête d'énoncé conclut.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Les causes du transfert sont la répartition de la source et la condition aux limites : matériau homogène, source \(p'_v\) uniforme, température de surface uniforme. Elles sont invariantes par toute rotation autour de \(O\) (\textbf{invariances par rotation d'angles \(\theta\) et \(\varphi\)}), donc \(T=T(r,t)\).
+
+La loi de Fourier et l'expression du gradient donnent
+
+\equationajustee{\vec j=-\lambda\,\overrightarrow{\mathrm{grad}}\,T=-\lambda\frac{\partial T}{\partial r}\,\vec u_r .}
+
+\equationajustee{\boxed{\vec j=j(r,t)\,\vec u_r}}
+
+\(j\) ne dépend ni de \(\theta\) ni de \(\varphi\).
+
+\begin{piege}
+
+Invoquer « la symétrie de \(\vec j\) » pour démontrer que \(\vec j\) est radial est circulaire. Le rapport 2026 constate que beaucoup de candidats ont évoqué la symétrie du « système », voire du vecteur \(\vec j\) lui-même, faute d'identifier la source de la diffusion thermique.
+
+\end{piege}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Appliquer le premier principe à la coquille, système fermé et indéformable, entre \(t\) et \(t+\mathrm dt\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le flux sortant à travers la sphère de rayon \(r\) vaut \(j\,4\pi r^2\) : la surface dépend de \(r\), il faut différentier le produit.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Premier principe, sans travail :
+
+\equationajustee{\mathrm dU=\delta Q_{\rm cond}+\delta Q_{\rm prod}}
+
+\equationajustee{\boxed{\underbrace{\mu C\,4\pi r^2\frac{\partial T}{\partial t}\mathrm dt\,\mathrm dr}_{\text{variation d'\text{énergie} interne}}=\underbrace{-\mathrm d\!\left(j\,4\pi r^2\right)\mathrm dt}_{\text{transfert conductif \text{reçu}}}+\underbrace{p'_v\,4\pi r^2\mathrm dr\,\mathrm dt}_{\text{\text{énergie} produite}}}}
+
+Le premier terme est la variation d'énergie interne de la coquille pendant \(\mathrm dt\). Le deuxième est la différence entre la puissance entrant par la sphère intérieure et celle sortant par la sphère extérieure. Le troisième est l'énergie libérée dans la coquille par la radioactivité.
+
+\begin{piege}
+
+Écrire \(-4\pi r^2\,\mathrm dj\) au lieu de \(-\mathrm d(4\pi r^2j)\) oublie la variation de surface avec \(r\).
+
+\end{piege}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+a) Annuler la dérivée temporelle et injecter la loi de Fourier. b) Intégrer la forme conservative telle quelle ; une constante est fixée par le centre, l'autre par la surface.
+
+\end{indication}
+
+\begin{indication}{2}
+
+d) Inverser c) en \(r=R_T\). Pour le commentaire, comparer à la puissance radiogénique \textbf{actuelle} du manteau, en tenant compte de la fraction de volume qu'il occupe.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\textbf{a)} En régime stationnaire, \(\dfrac{\mathrm d(r^2j)}{\mathrm dr}=p'_vr^2\), et \(j=-\lambda\dfrac{\mathrm dT}{\mathrm dr}\) :
+
+\equationajustee{\boxed{\frac1{r^2}\frac{\mathrm d}{\mathrm dr}\left(r^2\frac{\mathrm dT}{\mathrm dr}\right)=-\frac{p'_v}{\lambda}}}
+
+\textbf{b)} Première intégration de la forme conservative :
+
+\equationajustee{r^2j=\frac{p'_v}{3}r^3+A .}
+
+On a \(A=0\), sinon \(T\sim A/(\lambda r)\) diverge au centre. Puis \(\mathrm dT/\mathrm dr=-p'_vr/(3\lambda)\) et \(T(R_T)=T_s\) :
+
+\equationajustee{\boxed{T(r)=T_s+\frac{p'_v}{6\lambda}\left(R_T^2-r^2\right)}}
+
+\textbf{c)}
+
+\equationajustee{\boxed{j(r)=\frac{p'_v\,r}{3}}}
+
+Contrôle : \(\frac43\pi r^3p'_v=4\pi r^2j\).
+
+\textbf{d)} En \(r=R_T\) :
+
+\equationajustee{p'_v=\frac{3j(R_T)}{R_T}=\frac{3\times7{,}0\cdot10^{-2}}{6{,}4\cdot10^6}}
+
+\equationajustee{\boxed{p'_v\approx3\cdot10^{-8}\ \mathrm{W\,m^{-3}}}}
+
+soit 33 \(\mathrm{nW\,m^{-3}}\).
+
+La radioactivité fournit aujourd'hui \(12{,}5\ \mathrm{nW\,m^{-3}}\) dans le manteau, soit environ \(10\ \mathrm{nW\,m^{-3}}\) en moyenne sur toute la Terre. De même, \(P=1{,}2\cdot10^{13}\) W est à comparer à \(4\pi R_T^2j(R_T)\approx3{,}6\cdot10^{13}\) W.
+
+Elle n'explique donc qu'\textbf{environ un tiers} du flux géothermique ; le reste vient du refroidissement de la Terre (chaleur primitive, Q18), ce qui contredit l'hypothèse stationnaire. Le modèle conductif prévoit de plus \(T(0)\approx7\cdot10^4\) K, irréaliste : le manteau évacue sa chaleur par convection et la radioactivité est concentrée près de la surface.
+
+\begin{methode}
+
+En sphérique avec source, la constante en \(1/r^2\) s'élimine par la finitude au centre ; le flux se contrôle par un bilan global sur la boule de rayon \(r\).
+
+\end{methode}
+
+\begin{jury}
+
+Pour Q24, le rapport 2026 note que beaucoup de candidats ont développé la dérivée de \(j\,r^2\) pour faire apparaître un terme en \(\mathrm d^2T/\mathrm dr^2\), et conclut : « Rappelons aux candidats que lorsqu'on souhaite intégrer une équation, il ne faut pas la dériver. » La forme \(\mathrm d(r^2j)/\mathrm dr=p'_vr^2\) s'intègre en une ligne.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-vi-bilan-uxe9nerguxe9tique-sur-le-sol-de-la-terre-dapruxe8s-une-analyse-documentaire}{%
+\section{Partie VI --- Bilan énergétique sur le sol de la Terre, d'après une analyse documentaire}\label{partie-vi-bilan-uxe9nerguxe9tique-sur-le-sol-de-la-terre-dapruxe8s-une-analyse-documentaire}}
+
+On transpose le bilan thermique au rayonnement, on relie la puissance solaire à ce que reçoit la Terre, puis on exploite le document de Trenberth. Le rapport 2026 note que « Très peu de candidats ont abordé cette partie ».
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Remplacer dans la relation de Q23 chaque grandeur par son analogue ; que devient le terme de source dans le vide ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+En régime permanent, quelle quantité est indépendante de \(r\) ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Transposition terme à terme : \(\mu C\,\partial T/\partial t\) devient \(\partial u_{em}/\partial t\), \(j\,4\pi r^2\) devient \(R\,4\pi r^2\), et le terme de production disparaît (ni source ni absorption dans le vide) :
+
+\equationajustee{\boxed{4\pi r^2\frac{\partial u_{em}}{\partial t}\,\mathrm dt\,\mathrm dr=-\mathrm d\!\left(R\,4\pi r^2\right)\mathrm dt}}
+
+En régime permanent, \(4\pi r^2R\) est indépendant de \(r\) : la puissance traversant toute sphère centrée sur le Soleil est la même. D'où
+
+\equationajustee{\boxed{P_{em}(D)=4\pi D^2R(D)=P_S}}
+
+\begin{jury}
+
+Le rapport 2026 relève que « Certains candidats ont mal exploité l'analogie (transposition) chaleur Q23 -- électromagnétisme Q25. » Écrire la correspondance terme à terme avant la relation évite l'erreur.
+
+\end{jury}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Quelle surface de la Terre intercepte un faisceau parallèle ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\equationajustee{\boxed{P_T=\frac{P_S}{4\pi D^2}\,\pi R_T^2=P_S\frac{R_T^2}{4D^2}}}
+
+La Terre intercepte le rayonnement par sa section droite, un disque de rayon \(R_T\).
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Wien donne la température de surface, Stefan la puissance surfacique émise ; multiplier par l'aire émettrice.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+La loi de Wien donne \(T_S=C_W/\lambda_S\), la loi de Stefan la puissance surfacique \(\sigma T_S^4\) :
+
+\equationajustee{\boxed{P_S=\sigma S_S\left(\dfrac{C_W}{\lambda_S}\right)^4}}
+
+On peut signaler que \(C_W\approx0{,}03\) m·K est dix fois trop grand : la constante de Wien vaut \(2{,}9\cdot10^{-3}\) m·K, ce qui donne \(T_S\approx5{,}6\cdot10^3\) K pour \(\lambda_S=0{,}52\ \mu\)m. Aucune application numérique n'en dépend.
+
+\begin{methode}
+
+Un contrôle d'ordre de grandeur (ici la température de surface du Soleil) permet de repérer une donnée erronée : on la signale et on poursuit, comme le prévoit le préambule.
+
+\end{methode}
+
+\begin{jury}
+
+Q27 est jugée « Facile, surtout avec les relations de cours rappelées dans l'énoncé » par le rapport 2026 : un point à prendre même en fin d'épreuve.
+
+\end{jury}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Vérifier la cohérence du document au sommet de l'atmosphère (incident, réfléchi, émis) : sur quelle surface les flux sont-ils moyennés ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le sol seul, faire la somme algébrique des seuls flux qui touchent la surface.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Au sommet de l'atmosphère, \(341=102+239\) : les flux sont des moyennes sur toute la surface \(4\pi R_T^2\). Donc \(P_T=4\pi R_T^2\varphi_S\), et avec Q26 :
+
+\equationajustee{\boxed{P_S=16\pi D^2\varphi_S}}
+
+\equationajustee{P_S\approx16\times3{,}14\times2{,}25\cdot10^{22}\times341\approx4\cdot10^{26}\ \mathrm W}
+
+Bilan du sol (en \(\mathrm{W\,m^{-2}}\)) : reçu \(161+333\), cédé \(396+17+80\).
+
+\equationajustee{\boxed{\varphi_{tot}=161+333-396-17-80=+1\ \mathrm{W\,m^{-2}}}}
+
+Le déséquilibre est faible (0,2 \% des flux) mais positif : le sol accumule de l'énergie, sa température tend à croître.
+
+\begin{piege}
+
+Prendre 341 comme éclairement d'un disque de section \(\pi R_T^2\) donne \(P_S\approx1\cdot10^{26}\) W, quatre fois trop peu. Pour le bilan, ne pas inclure les flux du sommet de l'atmosphère (341, 102, 239), qui ne concernent pas le sol.
+
+\end{piege}
+
+\begin{jury}
+
+Q28 fait partie des questions difficiles et classantes du rapport 2026, qui la dit « Rarement traitée ». Le tri des flux pertinents et l'argument du facteur 4 sont ce qui rapporte.
+
+\end{jury}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Énergie accumulée pendant \(\tau\) sur toute la surface, puis capacité thermique de la Terre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Convertir 10 ans en secondes (\(1\ \text{an}\approx\pi\cdot10^7\) s) et discuter la masse qui s'échauffe réellement.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\equationajustee{\boxed{\Delta T=\frac{4\pi R_T^2\varphi_{tot}\,\tau}{M_TC}}}
+
+Avec \(\tau\approx3{,}2\cdot10^8\) s :
+
+\equationajustee{\log\Delta T=1{,}10+13{,}62+8{,}50-24{,}78-3{,}00=-4{,}56}
+
+\equationajustee{\boxed{\Delta T\approx3\cdot10^{-5}\ \mathrm K}}
+
+Valeur infime parce que toute la masse terrestre est supposée s'échauffer. Sur une décennie, seules l'atmosphère, la couche superficielle des océans et une faible épaisseur de sol participent ; l'échauffement observé est de l'ordre du dixième de kelvin par décennie.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-vii-le-champ-magnuxe9tique-terrestre}{%
+\section{Partie VII --- Le champ magnétique terrestre}\label{partie-vii-le-champ-magnuxe9tique-terrestre}}
+
+On projette l'expression intrinsèque du champ dipolaire, on intègre l'équation des lignes de champ, puis on exploite une mesure au sol. Le rapport 2026 note que peu de candidats ont traité cette dernière partie.
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Décomposer \(\vec u_z\) sur \((\vec u_r,\vec u_\theta)\) et calculer \(\vec m\cdot\vec r\).
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+On projette \(\vec u_z=\cos\theta\,\vec u_r-\sin\theta\,\vec u_\theta\) :
+
+\equationajustee{\begin{aligned}
+\vec m&=-m\cos\theta\,\vec u_r+m\sin\theta\,\vec u_\theta\\
+\vec m\cdot\vec r&=-mr\cos\theta
+\end{aligned}}
+
+En reportant dans l'expression intrinsèque :
+
+\equationajustee{\boxed{\begin{aligned}
+B_r&=-\frac{\mu_0m\cos\theta}{2\pi r^3}\\
+B_\theta&=-\frac{\mu_0m\sin\theta}{4\pi r^3}\\
+B_\varphi&=0
+\end{aligned}}}
+
+Contrôle : au pôle Nord, \(B_r<0\), le champ entre dans le sol.
+
+\begin{piege}
+
+Oublier de projeter \(\vec u_z\) fait disparaître \(B_\theta\) ; oublier le signe de \(\vec m=-m\vec u_z\) inverse tout le champ.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 regrette que Q30, « Une simple question de projections et de produits scalaires », ait souvent été très mal traitée, étant en fin de problème : elle mérite d'être faite tôt si l'on gère son temps par parties.
+
+\end{jury}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Une ligne de champ est tangente au champ en chacun de ses points : écrire la colinéarité de \(\mathrm d\vec\ell\) et de \(\vec B\) en coordonnées sphériques.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Séparer les variables : le rapport \(B_r/B_\theta\) ne dépend que de \(\theta\).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+La colinéarité de \(\mathrm d\vec\ell=\mathrm dr\,\vec u_r+r\,\mathrm d\theta\,\vec u_\theta\) et de \(\vec B\) s'écrit
+
+\equationajustee{\frac{\mathrm dr}{B_r}=\frac{r\,\mathrm d\theta}{B_\theta},}
+
+soit, avec Q30,
+
+\equationajustee{\frac{\mathrm dr}r=\frac{2\cos\theta}{\sin\theta}\,\mathrm d\theta .}
+
+\equationajustee{\boxed{r(\theta)=K\sin^2\theta}}
+
+\(K\) est la distance maximale de la ligne à \(O\), atteinte dans le plan équatorial. Allure : boucles symétriques par rapport au plan équatorial, d'autant plus larges que \(K\) est grand. Hors de la Terre, elles sortent dans l'hémisphère sud et rentrent dans l'hémisphère nord, le champ étant orienté du sud vers le nord à l'équateur.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q31-lignes-champ-dipole.pdf}
+\caption*{Figure 6 --- lignes de champ r = K sin²θ du dipôle terrestre dans un
+plan méridien, orientées du sud vers le nord à l'extérieur}
+\end{figure}
+
+\begin{jury}
+
+Selon le rapport 2026, « la notion de ligne de champ, au même titre que l'équipotentielle (Q8), n'est pas bien maîtrisée ». On commence donc par la définition (tangence en tout point) avant d'écrire l'équation différentielle, et l'on oriente les lignes sur le tracé.
+
+\end{jury}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Exprimer \(\cos\theta\) et \(\sin\theta\) en fonction de \(\Lambda\), puis identifier localement la verticale et la direction du nord dans la base sphérique.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+On a \(\cos\theta=\sin\Lambda\) et \(\sin\theta=\cos\Lambda\). Localement, \(\vec u_r\) est la verticale ascendante et \(-\vec u_\theta\) pointe vers le nord. Avec \(B_h\) compté vers le nord et \(B_v\) vers le bas :
+
+\equationajustee{\boxed{\begin{aligned}
+B_h&=\frac{\mu_0m\cos\Lambda}{4\pi R_T^3}\\
+B_v&=\frac{\mu_0m\sin\Lambda}{2\pi R_T^3}
+\end{aligned}}}
+
+L'inclinaison vérifie \(\tan I=2\tan\Lambda\) ; dans l'hémisphère sud (\(\Lambda<0\)), le champ remonte vers le haut.
+
+\begin{methode}
+
+Une composante n'a de sens qu'avec son orientation : on précise toujours le sens choisi pour compter \(B_h\) et \(B_v\).
+
+\end{methode}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+À l'équateur, quelle composante est nulle ? Simplifier \(4\pi/\mu_0\).
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+À l'équateur, \(\Lambda=0\), donc \(B=B_h=\dfrac{\mu_0m}{4\pi R_T^3}\), d'où
+
+\equationajustee{\boxed{m=\frac{4\pi R_T^3B}{\mu_0}=10^7R_T^3B}}
+
+\equationajustee{\log m=7+20{,}43+0{,}41-5=22{,}84}
+
+\equationajustee{\boxed{m\approx7\cdot10^{22}\ \mathrm{A\,m^2}}}
+
+C'est proche de la valeur admise (\(8\cdot10^{22}\ \mathrm{A\,m^2}\)).
+
+\begin{piege}
+
+Utiliser la formule de \(B_v\) (facteur 2) à l'équateur, où c'est la composante horizontale qui porte tout le champ.
+
+\end{piege}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Questions discriminantes de la session.} Le rapport 2026 cite Q3, Q8, Q10, Q20 et Q28 comme les questions difficiles qui ont classé les candidats. Toutes reposent sur une idée simple mais à formuler avec soin : distribution de masse algébrique (Q3), développement au premier ordre justifié (Q8), marche des rayons et condition de minimum (Q10), passage de la fraction massique à la puissance volumique (Q20), tri des flux et facteur 4 (Q28).
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Symétries et invariances des \textbf{causes} avant tout théorème de Gauss ou toute loi de Fourier (Q2, Q22) ; superposition avec masse volumique algébrique pour une cavité (Q3).
+\item
+  Référentiel en rotation uniforme : force d'inertie d'entraînement centrifuge et énergie potentielle \(-\frac12m\Omega^2\rho^2\) (Q4, Q7) ; développement au premier ordre justifié par un petit paramètre (Q8, Q9a).
+\item
+  Interférométrie : différence de marche par lecture du montage, minima d'ordre demi-entier espacés d'une unité d'ordre, linéarisation \(t_q^2=f(q)\) (Q10).
+\item
+  Chimie : stœchiométrie matricielle et contrôle par conservation de la masse (Q12) ; \(\mathrm{pH}=\mathrm pK_a\) à l'intersection des courbes de distribution ; pH avec concentration imposée par une phase gazeuse (Q13, Q14).
+\item
+  Thermique : résistances en série et élimination d'une inconnue par variation d'épaisseur (Q16) ; bilan sur une coquille sphérique, forme conservative intégrée sans la développer, finitude au centre (Q23, Q24).
+\item
+  Rayonnement : conservation de la puissance à travers une sphère, section interceptrice \(\pi R_T^2\) contre surface moyenne \(4\pi R_T^2\) (Q25--Q28).
+\item
+  Dipôle : projection d'une expression intrinsèque, équation des lignes de champ \(r=K\sin^2\theta\) (Q30, Q31).
+\end{itemize}
+
+\textbf{Réflexes de rédaction rappelés par le jury.} Vérifier le signe moins des champs et énergies de gravitation ; contrôler l'homogénéité avant d'utiliser un résultat ; une température absolue est positive ; préciser l'unité de toute application numérique ; connaître les ordres de grandeur usuels (\(g\approx10\ \mathrm{N\,kg^{-1}}\)).
+
+\textbf{Prérequis à revoir.} Coordonnées sphériques et cylindriques ; table de logarithmes et calcul sans calculatrice ; lecture précise d'un graphe ; numpy (tableaux, \texttt{linalg.inv}, \texttt{dot}) et matplotlib.
+
+\textbf{Questions classiques transposables.} Champ d'une boule homogène et énergie de constitution \(-\frac35GM^2/R\) ; aplatissement d'une planète en rotation ; gravimètre absolu à coin de cube ; pH d'une eau en équilibre avec le \(\mathrm{CO_2}\) atmosphérique ; profil parabolique de température d'une boule avec source ; température d'équilibre et bilan radiatif ; champ du dipôle terrestre et inclinaison magnétique.
+
+\end{document}

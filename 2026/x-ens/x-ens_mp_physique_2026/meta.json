@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp_physique_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 56,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q07-deplacement-compression.svg",
+      "question": "Q7",
+      "legende": "Déplacement u(x) en compression homogène : une droite de 0 à −ΔL, de pente −ΔL/L (compression exagérée)"
+    },
+    {
+      "fichier": "figures/q23-anneau-premier-mode.svg",
+      "question": "Q23",
+      "legende": "Premier mode (n = 1) de la flûte vu de dessus : l'anneau se translate en bloc de 2aZ, d'un côté puis de l'autre (pointillés : repos)"
+    },
+    {
+      "fichier": "figures/q36-q38-signal-contact-quadrature.svg",
+      "question": "Q36",
+      "legende": "Tension U(t) pour de très faibles vibrations : au contact optique (ϵ = 0), creux du second ordre à fréquence double ; en quadrature (ϵ = λl/8), sinusoïde à la fréquence f"
+    },
+    {
+      "fichier": "figures/q39-franges-grande-amplitude.svg",
+      "question": "Q39",
+      "legende": "Signal U(t) pour az ≫ λl : franges serrées aux passages par z = 0, étirées aux rebroussements z = ±az"
+    },
+    {
+      "fichier": "figures/q52-signal-modulation-frequence.svg",
+      "question": "Q52",
+      "legende": "Signal U(t) modulé en fréquence : amplitude constante, oscillations resserrées quand v < 0 et espacées quand v > 0 (modulation exagérée)"
+    },
+    {
+      "fichier": "figures/q55-sortie-derivateur.svg",
+      "question": "Q55",
+      "legende": "Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)"
+    }
+  ]
+}

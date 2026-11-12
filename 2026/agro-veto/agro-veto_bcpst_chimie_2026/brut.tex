@@ -1,0 +1,992 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto BCPST — Chimie 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Agro-Véto BCPST}
+\fancyhead[R]{\small Chimie 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Agro-Véto BCPST — Chimie 2026\par}\medskip
+  {\large Agro-Véto · BCPST · Chimie · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve de 3 heures, calculatrice autorisée. Sujet : \textbf{« La chimie des fruits \& légumes »}, trois parties largement indépendantes, 44 questions. Les données sont regroupées en fin d'énoncé. Notation : \(c^\circ = 1\ \mathrm{mol\cdot L^{-1}}\) et \(\dfrac{RT}{\mathcal F}\ln 10 = 0{,}06\) V à 298 K.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-i-des-fruits-pour-lutter-contre-le-vieillissement}{%
+\section{Partie I --- Des fruits pour lutter contre le vieillissement}\label{partie-i-des-fruits-pour-lutter-contre-le-vieillissement}}
+
+\hypertarget{i.a-aspect-thermodynamique-du-brunissement-des-pommes}{%
+\subsection{I.A --- Aspect thermodynamique du brunissement des pommes}\label{i.a-aspect-thermodynamique-du-brunissement-des-pommes}}
+
+\hypertarget{q1}{%
+\subsubsection{Q1}\label{q1}}
+
+\(\mathrm{H_2A}\) (4-\allowbreak{}méthylbenzène-\allowbreak{}1,2-\allowbreak{}diol, \(\mathrm{C_7H_8O_2}\)) et \(\mathrm Q\) (4-\allowbreak{}méthylcyclohexa-\allowbreak{}3,5-\allowbreak{}diène-\allowbreak{}1,2-\allowbreak{}dione, \(\mathrm{C_7H_6O_2}\)) diffèrent de deux atomes H. Demi-équation électronique :
+
+\equationajustee{\boxed{\mathrm{Q_{(aq)}} + 2\,\mathrm{H^+_{(aq)}} + 2\,\mathrm{e^-} = \mathrm{H_2A_{(aq)}}}}
+
+\(\mathrm Q\) capte les électrons : c'est l'\textbf{oxydant} du couple, et \(\mathrm{H_2A}\) en est le \textbf{réducteur}.
+
+Un antioxydant est une espèce qui s'oxyde à la place des molécules qu'il protège. \(\mathrm{H_2A}\) est un réducteur : il cède ses électrons aux oxydants du milieu (\(\mathrm{O_2}\), radical hydroxyle\ldots), qui ne s'attaquent donc plus aux biomolécules. \textbf{\(\mathrm{H_2A}\) est bien un antioxydant}, et il est consommé en quinone brune : le brunissement est la trace visible de ce rôle.
+
+\hypertarget{q2}{%
+\subsubsection{Q2}\label{q2}}
+
+Plus la base conjuguée est stable, plus l'acide est fort et plus son p\(K_a\) est faible.
+
+\begin{itemize}
+\tightlist
+\item
+  4-méthylcatéchol : la première acidité est celle d'un \textbf{phénol}. Dans l'ion phénolate, l'oxygène est lié à un carbone du cycle aromatique et sa charge négative est \textbf{délocalisée par mésomérie} sur le cycle : il existe trois formes limites de plus, avec la charge sur les carbones en ortho et en para. La base est stabilisée. La liaison hydrogène intramoléculaire entre \(\mathrm{O^-}\) et l'OH voisin la stabilise encore.
+\item
+  \emph{cis}-cyclohexane-1,2-diol : les OH sont portés par des carbones tétragonaux d'un cycle saturé. La base conjuguée est un \textbf{alcoolate}, dont la charge reste \textbf{localisée} sur l'oxygène, faute de système \(\pi\). Elle est bien moins stable.
+\end{itemize}
+
+\equationajustee{\boxed{\mathrm pK_{a1}(\text{\text{catéchol}}) = 9{,}23 \ll \mathrm pK_{a1}(\text{diol}) = 14{,}50 \text{ : \text{délocalisation} de la charge du \text{phénolate}}}}
+
+\hypertarget{q3}{%
+\subsubsection{Q3}\label{q3}}
+
+Nombres d'oxydation des deux atomes de carbone fonctionnels, ceux qui portent l'oxygène :
+
+\begin{itemize}
+\tightlist
+\item
+  dans \(\mathrm{H_2A}\), chaque carbone est lié à deux carbones et à un groupe OH, d'où un n.o. de \textbf{+I} ;
+\item
+  dans \(\mathrm Q\), chaque carbone est lié à deux carbones et doublement lié à un oxygène, d'où un n.o. de \textbf{+II}.
+\end{itemize}
+
+Ces deux carbones gagnent chacun une unité, soit deux électrons au total, comme dans la demi-équation de Q1. \(\mathrm Q\) est la forme oxydée.
+
+Sur un diagramme \(E\)--pH, la forme oxydée occupe les potentiels élevés. Une frontière verticale sépare un acide de sa base conjuguée. La frontière verticale de la figure 2 se lit vers pH ≈ 9,2, soit \(\mathrm pK_{a1} = 9{,}23\) (avec la convention de concentrations égales aux frontières).
+
+\equationajustee{\boxed{\begin{aligned}
+\mathbf A &= \mathrm{H_2A} \\
+\mathbf B &= \mathrm{HA^-} \\
+\mathbf C &= \mathrm Q
+\end{aligned}}}
+
+C est au-dessus de la frontière oblique : c'est la forme oxydée. A et B sont les formes réduites, A pour pH \textless{} 9,23 (forme protonée) et B pour pH \textgreater{} 9,23 (monoanion). La seconde acidité n'apparaît pas dans la fenêtre du diagramme.
+
+\hypertarget{q4}{%
+\subsubsection{Q4}\label{q4}}
+
+Couple \(\mathrm Q/\mathrm{H_2A}\) : \(\mathrm Q + 2\mathrm H^+ + 2\mathrm e^- = \mathrm{H_2A}\). Relation de Nernst à 298 K :
+
+\equationajustee{E = E^\circ + \frac{0{,}06}{2}\log\frac{[\mathrm Q]\,[\mathrm H^+]^2}{[\mathrm{H_2A}]\,c^{\circ 2}}}
+
+À la frontière, \([\mathrm Q] = [\mathrm{H_2A}]\) :
+
+\equationajustee{\boxed{E_{A/C} = E^\circ(\mathrm Q/\mathrm{H_2A}) - 0{,}06\,\mathrm{pH} = 0{,}53 - 0{,}06\,\mathrm{pH}\ \ (\mathrm V)}}
+
+La pente vaut −0,06 V par unité de pH (le pH est sans dimension, la pente s'exprime donc en volts). Elle est \textbf{négative} : \(\mathrm H^+\) est du côté de l'oxydant, et le potentiel de frontière diminue quand le pH augmente.
+
+Comparaison avec la figure 2 :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{ordonnée à l'origine} : à pH = 0, le trait plein part de 0,53 V, légèrement au-dessus de 0,5 V ;
+\item
+  \textbf{pente} : à pH = 13, on lit \(E \approx -0{,}25\) V, d'où une pente \((-0{,}25 - 0{,}53)/13 \approx -0{,}060\) V par unité de pH ;
+\item
+  \textbf{point particulier} : la droite coupe \(E = 0\) vers pH = 8,8 et vaut −0,02 V à pH = 9,23, à la rencontre de la verticale.
+\end{itemize}
+
+La droite est parallèle aux frontières de l'eau, de même pente. \textbf{L'expression est en accord avec la figure.}
+
+\hypertarget{q5}{%
+\subsubsection{Q5}\label{q5}}
+
+Dans les cellules de la pomme, pH = 4,5 \textless{} p\(K_{a1}\) = 9,23 : la forme réduite qui prédomine est \(\mathrm{H_2A}\) (domaine A). Le domaine de \(\mathrm{O_2}\), au-dessus de \(E = 1{,}23 - 0{,}06\,\mathrm{pH}\), est disjoint du domaine A (à pH 4,5 comme à tout pH) : \(\mathrm{O_2}\) et \(\mathrm{H_2A}\) réagissent.
+
+\equationajustee{\begin{aligned}
+\mathrm{O_{2(g)}} + 4\,\mathrm H^+_{(aq)} + 4\,\mathrm e^- &= 2\,\mathrm{H_2O_{(\ell)}} \\
+2\,\mathrm{H_2A_{(aq)}} &= 2\,\mathrm{Q_{(aq)}} + 4\,\mathrm H^+_{(aq)} + 4\,\mathrm e^-
+\end{aligned}}
+
+\equationajustee{\boxed{2\,\mathrm{H_2A_{(aq)}} + \mathrm{O_{2(g)}} = 2\,\mathrm{Q_{(aq)}} + 2\,\mathrm{H_2O_{(\ell)}}}}
+
+Les potentiels sont égaux à l'équilibre, et \(n = 4\) électrons sont échangés :
+
+\equationajustee{\begin{aligned}
+\log K^\circ &= \frac{4\,\big(E^\circ(\mathrm{O_2/H_2O}) - E^\circ(\mathrm{Q/H_2A})\big)}{0{,}06} \\
+&= \frac{4\times 0{,}70}{0{,}06} \\
+&= 46{,}7
+\end{aligned}}
+
+\equationajustee{\boxed{K^\circ = 10^{46{,}7} \approx 5\times10^{46}}}
+
+\(K^\circ \gg 10^4\) : la réaction est \textbf{thermodynamiquement totale}. Au contact de l'air, le 4-méthylcatéchol de la pomme doit être entièrement oxydé en quinone brune. Seule la vitesse peut limiter le brunissement.
+
+\hypertarget{q6}{%
+\subsubsection{Q6}\label{q6}}
+
+Les deux frontières concernées ont la même pente :
+
+\equationajustee{\begin{aligned}
+E_{\mathrm{O_2/H_2O}} &= 1{,}23 - 0{,}06\,\mathrm{pH} \\
+E_{\mathrm{Q/H_2A}} &= 0{,}53 - 0{,}06\,\mathrm{pH}
+\end{aligned}}
+
+Leur écart vaut 0,70 V \textbf{quel que soit le pH}. À pH 2,5 (citron) comme à pH 4,5, on est sous p\(K_{a1}\) = 9,23 : l'espèce réduite prédominante reste \(\mathrm{H_2A}\).
+
+En superposant les deux diagrammes, on lit 1,08 V et 0,38 V à pH 2,5, contre 0,96 V et 0,26 V à pH 4,5. Les domaines de \(\mathrm{O_2}\) et de \(\mathrm{H_2A}\) restent disjoints exactement de la même façon. \(K^\circ\) ne dépend pas du pH et la réaction reste thermodynamiquement possible et totale.
+
+\textbf{L'action du jus de citron ne s'explique pas par la thermodynamique.} Son origine est cinétique (voir Q14).
+
+\hypertarget{i.b-aspect-cinuxe9tique-du-brunissement-des-pommes}{%
+\subsection{I.B --- Aspect cinétique du brunissement des pommes}\label{i.b-aspect-cinuxe9tique-du-brunissement-des-pommes}}
+
+\hypertarget{q7}{%
+\subsubsection{Q7}\label{q7}}
+
+La vitesse de réaction se définit par \(v = \dfrac{1}{\nu_i}\dfrac{\mathrm d[\mathrm B_i]}{\mathrm dt}\) (\(\nu_i\) algébrique, volume constant). Dans l'équation de Q5, \(\nu_{\mathrm Q} = +2\) :
+
+\equationajustee{\begin{aligned}
+v &= \frac12\frac{\mathrm d[\mathrm Q]}{\mathrm dt} \\
+&= -\frac12\frac{\mathrm d[\mathrm{H_2A}]}{\mathrm dt} \\
+&= -\frac{\mathrm d[\mathrm{O_2}]}{\mathrm dt}
+\end{aligned}}
+
+Comme \(v_{\mathrm Q} = \dfrac{\mathrm d[\mathrm Q]}{\mathrm dt}\), on obtient
+
+\equationajustee{\boxed{v = \frac{v_{\mathrm Q}}{2}}\quad (1)}
+
+\hypertarget{q8}{%
+\subsubsection{Q8}\label{q8}}
+
+Somme des quatre actes, les équilibres étant pris dans le sens direct :
+
+\equationajustee{\mathrm E + \mathrm{O_2} + \mathrm{EO_2} + \mathrm{H_2A} + \mathrm{EO_2P} + \mathrm{EO} + \mathrm{H_2A} \rightarrow \mathrm{EO_2} + \mathrm{EO_2P} + \mathrm{EO} + \mathrm Q + \mathrm{SP_1} + \mathrm E + \mathrm Q + \mathrm{SP_2}}
+
+soit après simplification
+
+\equationajustee{\mathrm{O_2} + 2\,\mathrm{H_2A} \rightarrow 2\,\mathrm Q + \mathrm{SP_1} + \mathrm{SP_2}}
+
+L'enzyme E est régénérée (catalyseur), et \(\mathrm{EO_2}\), \(\mathrm{EO_2P}\) et EO sont des intermédiaires. On retrouve l'équation de Q5 si \(\mathrm{SP_1} + \mathrm{SP_2} = 2\,\mathrm{H_2O}\) : \textbf{le mécanisme est cohérent avec le bilan}.
+
+Conservation des éléments acte par acte :
+
+\begin{itemize}
+\tightlist
+\item
+  acte 3 : \(\mathrm{EO_2P} = \mathrm E\cdot\mathrm{O_2}\cdot\mathrm{C_7H_8O_2}\) donne \(\mathrm{EO} + \mathrm{C_7H_6O_2} + \mathrm{SP_1}\), d'où \(\mathrm{SP_1}\) contient O + 2 H ;
+\item
+  acte 4 : \(\mathrm{EO} + \mathrm{C_7H_8O_2}\) donne \(\mathrm E + \mathrm{C_7H_6O_2} + \mathrm{SP_2}\), d'où \(\mathrm{SP_2}\) contient O + 2 H.
+\end{itemize}
+
+\equationajustee{\boxed{\mathrm{SP_1} = \mathrm{SP_2} = \mathrm{H_2O}}}
+
+\hypertarget{q9}{%
+\subsubsection{Q9}\label{q9}}
+
+Chaque étape du mécanisme est un acte élémentaire. D'après la \textbf{loi de van't Hoff}, sa vitesse est proportionnelle au produit des concentrations de ses réactifs, chacune élevée à son coefficient stœchiométrique (ordres partiels égaux aux molécularités).
+
+Q se forme aux actes 3 et 4 :
+
+\equationajustee{v_{\mathrm Q} = k_3[\mathrm{EO_2P}] + k_4[\mathrm{EO}][\mathrm{H_2A}]}
+
+AEQS appliquée à EO :
+
+\equationajustee{\frac{\mathrm d[\mathrm{EO}]}{\mathrm dt} = k_3[\mathrm{EO_2P}] - k_4[\mathrm{EO}][\mathrm{H_2A}] \approx 0}
+
+On en déduit \(v_{\mathrm Q} = 2k_3[\mathrm{EO_2P}]\), puis, par (1), \(v = k_3[\mathrm{EO_2P}]\).
+
+Équilibres rapides (actes 1 et 2) : les vitesses directe et inverse de chaque acte sont égales, par exemple \(k_1[\mathrm E][\mathrm{O_2}] = k_{-1}[\mathrm{EO_2}]\). Donc
+
+\equationajustee{\begin{aligned}
+[\mathrm{EO_2}] &= \frac{k_1}{k_{-1}}[\mathrm E][\mathrm{O_2}] \\
+[\mathrm{EO_2P}] &= \frac{k_2}{k_{-2}}[\mathrm{EO_2}][\mathrm{H_2A}] \\
+&= \frac{k_1k_2}{k_{-1}k_{-2}}[\mathrm E][\mathrm{O_2}][\mathrm{H_2A}]
+\end{aligned}}
+
+\equationajustee{\boxed{v = \frac{k_1k_2k_3}{k_{-1}k_{-2}}\,[\mathrm E]\,[\mathrm{O_2}]\,[\mathrm{H_2A}]}}
+
+\hypertarget{q10}{%
+\subsubsection{Q10}\label{q10}}
+
+On note \(K_1 = k_1/k_{-1}\) et \(K_2 = k_2/k_{-2}\). Conservation de l'enzyme, avec {[}EO{]} négligeable :
+
+\equationajustee{[\mathrm E]_0 = [\mathrm E] + [\mathrm{EO_2}] + [\mathrm{EO_2P}] = [\mathrm E]\left(1 + K_1[\mathrm{O_2}] + K_1K_2[\mathrm{O_2}][\mathrm{H_2A}]\right)}
+
+En reportant dans Q9, puis en divisant numérateur et dénominateur par \(K_1\) :
+
+\equationajustee{v = \frac{k_3K_2[\mathrm E]_0\,[\mathrm{O_2}][\mathrm{H_2A}]}{\dfrac1{K_1} + [\mathrm{O_2}] + K_2[\mathrm{O_2}][\mathrm{H_2A}]}}
+
+C'est la forme (2), en identifiant :
+
+\equationajustee{\boxed{\begin{aligned}
+K_{m1} &= \frac{k_{-1}}{k_1} \\
+K_{m2} &= \frac{k_{-2}}{k_2} \\
+V_m &= k_3\,[\mathrm E]_0
+\end{aligned}}}
+
+On vérifie le numérateur : \(V_m/K_{m2} = k_3K_2[\mathrm E]_0\). \(K_{m1}\) et \(K_{m2}\) sont des concentrations et \(V_m\) une vitesse volumique.
+
+\hypertarget{q11}{%
+\subsubsection{Q11}\label{q11}}
+
+Avec \([\mathrm{O_2}]_0\) fixé, on inverse (2) (linéarisation de Lineweaver-Burk) :
+
+\equationajustee{\boxed{\frac1{v_0} = \underbrace{\frac{K_{m2}\,(K_{m1} + [\mathrm{O_2}]_0)}{V_m\,[\mathrm{O_2}]_0}}_{a}\times\frac1{[\mathrm{H_2A}]_0} + \underbrace{\frac1{V_m}}_{b}}}
+
+On trace \(1/v_0\) en fonction de \(1/[\mathrm{H_2A}]_0\) avec les quatre points du tableau 1. La régression linéaire donne :
+
+\begin{itemize}
+\tightlist
+\item
+  pente \(a = 1{,}65\times10^4\) s (rapport de L·s·mmol⁻¹ à L·mmol⁻¹) ;
+\item
+  ordonnée à l'origine \(b = 3{,}52\times10^3\) L·s·mmol⁻¹ ;
+\item
+  coefficient de corrélation \(r = 0{,}9999\).
+\end{itemize}
+
+Validation : les résidus valent −35, +20, +42 et −27 L·s·mmol⁻¹, soit moins de 1 \% des valeurs de \(1/v_0\). Ils changent de signe sans tendance ni courbure. Le modèle affine est validé, avec la réserve que quatre points seulement sont disponibles.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q11-lineweaver-burk.pdf}
+\caption*{Figure 1 --- Linéarisation de Lineweaver-Burk des quatre points du
+tableau 1 : ordonnée à l'origine b = 1/Vm, pente a}
+\end{figure}
+
+\equationajustee{\boxed{V_m = \frac1b = 2{,}8\times10^{-4}\ \mathrm{mmol\cdot L^{-1}\cdot s^{-1}}}}
+
+\equationajustee{\begin{aligned}
+K_{m2} &= \frac{a\,V_m\,[\mathrm{O_2}]_0}{K_{m1} + [\mathrm{O_2}]_0} \\
+&= \frac{1{,}65\times10^4\times2{,}84\times10^{-4}\times0{,}14}{1{,}7 + 0{,}14}
+\end{aligned}}
+
+\equationajustee{\boxed{K_{m2} = 0{,}36\ \mathrm{mmol\cdot L^{-1}}}}
+
+\hypertarget{q12}{%
+\subsubsection{Q12}\label{q12}}
+
+TON est la vitesse volumique maximale de formation de Q rapportée à la concentration totale d'enzyme : \(\mathrm{TON} = v_{\mathrm Q,\max}/[\mathrm E]_0\), en s⁻¹.
+
+Dans (2), on a \([\mathrm{O_2}] \gg K_{m1}\), donc le dénominateur tend vers \([\mathrm{O_2}]\left(1 + [\mathrm{H_2A}]/K_{m2}\right)\). Comme de plus \([\mathrm{H_2A}] \gg K_{m2}\), il tend vers \([\mathrm{O_2}][\mathrm{H_2A}]/K_{m2}\), d'où \(v_{\max} = V_m\). D'après (1), \(v_{\mathrm Q,\max} = 2V_m\), donc
+
+\equationajustee{\boxed{\mathrm{TON} = \frac{2V_m}{[\mathrm E]_0}}\quad (3)}
+
+\hypertarget{q13}{%
+\subsubsection{Q13}\label{q13}}
+
+Le tableau 1 a été obtenu à pH 4,5 et à 25 °C, comme la figure 3. On compare donc au point d'abscisse pH = 4,5.
+
+\equationajustee{\mathrm{TON} = \frac{2\times2{,}84\times10^{-4}}{2{,}5\times10^{-7}} = 2{,}3\times10^3\ \mathrm{s^{-1}}}
+
+La figure 3 donne, à pH = 4,5, \(\mathrm{TON} \approx 2{,}2\times10^3\) s⁻¹. L'écart, de quelques pour cent, est compatible avec la précision de la lecture et de la régression : \textbf{la figure 3 est en accord avec le tableau 1}.
+
+\hypertarget{q14}{%
+\subsubsection{Q14}\label{q14}}
+
+\textbf{Diagrammes de prédominance sur la fenêtre étudiée (pH 2 à 6,5)}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q14-diagrammes-predominance.pdf}
+\caption*{Figure 2 --- Diagrammes de prédominance de la clef H₂A et des chaînes
+latérales Glu, His et Cys de la serrure, sur l'axe de pH}
+\end{figure}
+
+Dans une protéine, les fonctions α-COOH et α-NH₃⁺ sont engagées dans les liaisons peptidiques : seuls comptent les p\(K_a\) des chaînes latérales.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{La « clef » (\(\mathrm{H_2A}\))} : p\(K_{a1}\) = 9,23 \textgreater{} 6,5. \(\mathrm{H_2A}\) prédomine sur toute la fenêtre. La structure de la clef ne change pas, alors que l'activité varie d'un facteur supérieur à 100. La première hypothèse est donc écartée.
+\item
+  \textbf{La « serrure » (le site actif de l'enzyme)} : la chaîne latérale de l'acide glutamique passe de \(-\mathrm{COOH}\) à \(-\mathrm{COO^-}\) vers pH 4,25, et l'imidazole de l'histidine passe de ImH⁺ à Im vers pH 6,00. Le thiol de la cystéine (p\(K_a\) = 8,18) ne change pas dans la fenêtre. La charge et le réseau de liaisons hydrogène du site actif changent donc deux fois entre pH 2 et 6,5. Cela modifie la forme et la polarité de la serrure, donc la formation du complexe \(\mathrm{EO_2P}\).
+\end{itemize}
+
+L'activité est maximale vers pH 5, entre 4,25 et 6,00, c'est-à-dire lorsque coexistent \(-\mathrm{COO^-}\) (Glu) et ImH⁺ (His). Elle chute de part et d'autre, d'où l'allure en cloche de la figure 3. \textbf{L'effet du pH vient de la serrure} : la protonation des résidus modifie la conformation de l'enzyme (seconde hypothèse).
+
+Retour à Q6 : à pH 2,5, Glu est sous forme COOH et la serrure n'a plus sa forme active. La figure 3 donne TON ≈ 0. \textbf{Le jus de citron inactive (dénature) la polyphénol oxydase}. L'oxydation reste thermodynamiquement totale, mais elle n'est plus catalysée et devient très lente : le citron bloque le brunissement \textbf{cinétiquement}.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-ii-les-fruits-sources-de-moluxe9cules-naturelles-dintuxe9ruxeat}{%
+\section{Partie II --- Les fruits, sources de molécules naturelles d'intérêt}\label{partie-ii-les-fruits-sources-de-moluxe9cules-naturelles-dintuxe9ruxeat}}
+
+\hypertarget{ii.a-extraction-de-la-cafuxe9ine-des-baies-de-guarana}{%
+\subsection{II.A --- Extraction de la caféine des baies de guarana}\label{ii.a-extraction-de-la-cafuxe9ine-des-baies-de-guarana}}
+
+\hypertarget{q15}{%
+\subsubsection{Q15}\label{q15}}
+
+Équation de dissolution (la caféine est une molécule neutre) :
+
+\equationajustee{\mathrm{\text{caféine}_{(s)}} = \mathrm{\text{caféine}_{(aq)}}}
+
+Le solvant n'apparaît pas dans l'équation. Si on l'écrit, il figure des deux côtés et sa contribution s'annule. Loi de Hess :
+
+\equationajustee{\begin{aligned}
+\Delta_{\rm diss}H^\circ &= \Delta_fH^\circ(\mathrm{\text{caféine}_{(aq)}}) - \Delta_fH^\circ(\mathrm{\text{caféine}_{(s)}}) \\
+&= -300 - (-342)
+\end{aligned}}
+
+\equationajustee{\boxed{\Delta_{\rm diss}H^\circ = +42\ \mathrm{kJ\cdot mol^{-1}}}}
+
+La dissolution est \textbf{endothermique}.
+
+\hypertarget{q16}{%
+\subsubsection{Q16}\label{q16}}
+
+\equationajustee{\begin{aligned}
+\Delta_{\rm diss}G^\circ &= \Delta_{\rm diss}H^\circ - T\Delta_{\rm diss}S^\circ \\
+&= 42{,}0\times10^3 - 298\times105{,}3 \\
+&= 1{,}06\times10^4\ \mathrm{J\cdot mol^{-1}}
+\end{aligned}}
+
+Le produit de solubilité est la constante de l'équilibre de dissolution. Le solide pur a une activité égale à 1, donc \(K_s = [\mathrm{\text{caféine}}]_{\rm \text{éq}}/c^\circ\) et
+
+\equationajustee{\begin{aligned}
+K_s &= \exp\left(-\frac{\Delta_{\rm diss}G^\circ}{RT}\right) \\
+&= \exp\left(-\frac{1{,}062\times10^4}{8{,}314\times298}\right) \\
+&= \mathrm e^{-4{,}29}
+\end{aligned}}
+
+\equationajustee{\boxed{K_s(298\ \mathrm K) = 1{,}4\times10^{-2}}}
+
+\hypertarget{q17}{%
+\subsubsection{Q17}\label{q17}}
+
+À 25 °C, \(s = K_s\,c^\circ = 1{,}38\times10^{-2}\) mol·L⁻¹, soit en masse
+
+\equationajustee{\boxed{s = 1{,}38\times10^{-2}\times194{,}2 = 2{,}7\ \mathrm{g\cdot L^{-1}}}}
+
+Dans 500 mL, on peut dissoudre au plus \(2{,}7\times0{,}500 = 1{,}3\) g de caféine. Les 100,0 mg de baies en contiennent environ \(0{,}09\times100{,}0 = 9{,}0\) mg, soit environ 150 fois moins : \textbf{toute la caféine peut se dissoudre à 25 °C}.
+
+À 70 °C, la loi de van't Hoff donne \(\dfrac{\mathrm d\ln K_s}{\mathrm dT} = \dfrac{\Delta_{\rm diss}H^\circ}{RT^2} > 0\) car la dissolution est endothermique. \(K_s\) augmente avec \(T\), donc la solubilité à 70 °C dépasse 2,7 g·L⁻¹. Dans l'approximation d'Ellingham, \(\Delta G^\circ(343\ \mathrm K) = 5{,}9\) kJ·mol⁻¹, \(K_s \approx 0{,}13\) et \(s \approx 25\) g·L⁻¹. \textbf{A fortiori, toute la caféine peut se dissoudre à 70 °C.}
+
+\hypertarget{q18}{%
+\subsubsection{Q18}\label{q18}}
+
+La solubilité n'est pas limitante, même à 25 °C. Le chauffage ne sert donc pas à dissoudre davantage : il a un \textbf{intérêt cinétique}. Il accélère la sortie de la caféine hors de la matrice végétale broyée (diffusion à travers les tissus, fragilisation des parois cellulaires) et la dissolution, de sorte que l'extraction est plus complète en 30 min.
+
+\hypertarget{ii.b-analyse-du-filtrat-f}{%
+\subsection{II.B --- Analyse du filtrat F}\label{ii.b-analyse-du-filtrat-f}}
+
+\hypertarget{q19}{%
+\subsubsection{Q19}\label{q19}}
+
+Le site basique de la caféine est l'azote \(\mathrm{N_5}\), dont le doublet non liant n'est pas délocalisé. Le chloroforme anhydre n'a pas de propriété acido-basique, donc \(\mathrm{CH_3SO_3H}\) y reste moléculaire et protone directement la caféine :
+
+\equationajustee{\boxed{\mathrm{RN_{5\,(org)}} + \mathrm{CH_3SO_3H_{(org)}} = \mathrm{RN_5H^+_{(org)}} + \mathrm{CH_3SO_3^-{}_{(org)}}}}
+
+Le cation et l'anion restent associés en paire d'ions dans ce solvant peu dissociant. Le BBT vire au premier excès d'acide.
+
+\hypertarget{q20}{%
+\subsubsection{Q20}\label{q20}}
+
+Dans l'eau, \(\mathrm{CH_3SO_3H}\) (\(\mathrm pK_a < 0\)) est un acide fort, totalement dissocié en \(\mathrm{H_3O^+}\). La réaction de titrage serait :
+
+\equationajustee{\mathrm{RN_{5\,(aq)}} + \mathrm{H_3O^+_{(aq)}} = \mathrm{RN_5H^+_{(aq)}} + \mathrm{H_2O_{(\ell)}}}
+
+L'espèce titrante est \(\mathrm{H_3O^+}\), acide du couple \(\mathrm{H_3O^+/H_2O}\) de p\(K_a\) = 0 :
+
+\equationajustee{\begin{aligned}
+K^\circ &= \frac{[\mathrm{RN_5H^+}]\,c^\circ}{[\mathrm{RN_5}][\mathrm{H_3O^+}]} \\
+&= \frac1{K_a(\mathrm{RN_5H^+/RN_5})} \\
+&= 10^{0{,}7 - 0}
+\end{aligned}}
+
+\equationajustee{\boxed{K^\circ = 5{,}0}}
+
+\(K^\circ \ll 10^3\) (le seuil usuel pour une réaction de titrage quantitative) : la réaction n'est pas quantitative et ne présente pas de saut de pH exploitable. \textbf{Le titrage dans l'eau est impossible.} La caféine (\(\mathrm pK_a = 0{,}7\)) est une base à peine plus forte que l'eau (\(\mathrm pK_a(\mathrm{H_3O^+/H_2O}) = 0\)), qui entre en compétition avec elle pour le proton. Dans le chloroforme, cette compétition disparaît.
+
+\hypertarget{q21}{%
+\subsubsection{Q21}\label{q21}}
+
+\begin{itemize}
+\tightlist
+\item
+  Quantité d'acide versée à l'équivalence : \(n_a = C\,V_{\rm \text{éq}} = 1{,}0\times10^{-3}\times4{,}0\times10^{-3} = 4{,}0\times10^{-6}\) mol.
+\item
+  Stœchiométrie 1 : 1 (Q19), donc la caféine extraite de 100 mL de F vaut \(4{,}0\times10^{-6}\) mol.
+\item
+  Les 100 mL représentent 1/5 du filtrat. Dans les 500 mL : \(n = 5\times4{,}0\times10^{-6} = 2{,}0\times10^{-5}\) mol.
+\item
+  Masse : \(m = nM = 2{,}0\times10^{-5}\times194{,}2 = 3{,}9\times10^{-3}\) g.
+\end{itemize}
+
+\equationajustee{\boxed{m_{\text{\text{caféine} extraite}} = 3{,}9\ \mathrm{mg}}}
+
+Pourcentage en masse de caféine extraite des baies :
+
+\equationajustee{\boxed{w = \frac{3{,}9}{100{,}0} = 3{,}9\ \%}}
+
+Les baies contiennent environ 9 \% de caféine. On n'en récupère que \(3{,}9/9{,}0 \approx 43\,\%\) : l'extraction est incomplète. Les pertes possibles sont l'extraction aqueuse partielle des baies (30 min), l'extraction au dichlorométhane non quantitative, et les pertes lors des transferts et de l'évaporation. La valeur de 9 \% n'est par ailleurs qu'un ordre de grandeur.
+
+\hypertarget{q22}{%
+\subsubsection{Q22}\label{q22}}
+
+\(w = 100\,\dfrac{5\,C\,V_{\rm \text{éq}}\,M}{m_{\rm baies}}\) est un produit et un quotient. Seule \(V_{\rm \text{éq}}\) porte une incertitude, donc
+
+\equationajustee{\frac{u(w)}{w} = \frac{u(V_{\rm \text{éq}})}{V_{\rm \text{éq}}}}
+
+« Précision de 1 mL » : \(V_{\rm \text{éq}} \in [3 ; 5]\) mL, avec une loi uniforme de demi-largeur 1 mL, d'où \(u(V_{\rm \text{éq}}) = 1/\sqrt3 = 0{,}58\) mL.
+
+\equationajustee{u(w) = 3{,}88\ \%\times\frac{0{,}58}{4{,}0}}
+
+\equationajustee{\boxed{u(w) = 0{,}6\ \%}}
+
+L'incertitude porte sur le pourcentage en masse demandé : \(w = (3{,}9 \pm 0{,}6)\ \%\).
+
+L'incertitude relative est de 14 \%. Si l'on prend directement \(u(V_{\rm \text{éq}}) = 1\) mL, on trouve \(u(w) = 1{,}0\,\%\).
+
+\hypertarget{q23}{%
+\subsubsection{Q23}\label{q23}}
+
+Un photon d'énergie \(E_{\rm abs} = hc/\lambda_{\rm abs}\) porte la molécule dans un niveau vibrationnel élevé de l'état électronique excité. Une partie de cette énergie est d'abord perdue de façon non radiative (relaxation vibrationnelle, cédée au solvant sous forme de chaleur). Le photon de fluorescence est émis ensuite, donc \(E_{\rm \text{ém}} < E_{\rm abs}\) et
+
+\equationajustee{\frac{hc}{\lambda_{\rm \text{ém}}} < \frac{hc}{\lambda_{\rm abs}}\qquad\Rightarrow\qquad\boxed{\lambda_{\rm \text{ém}} > \lambda_{\rm abs}}}
+
+Le spectre d'émission est décalé vers les grandes longueurs d'onde : c'est le \textbf{déplacement de Stokes}. La figure 5 le confirme : absorption maximale vers 278 nm, émission maximale vers 355 nm.
+
+En énergie, \(E = hc/\lambda\) donne environ 4,5 eV pour le photon absorbé et 3,5 eV pour le photon émis. Environ 1 eV par photon est dissipé avant l'émission.
+
+\hypertarget{q24}{%
+\subsubsection{Q24}\label{q24}}
+
+\emph{Validation.} Les résidus de la figure 6 sont faibles devant les intensités mesurées : au plus 7,2 u.a. en valeur absolue, pour des intensités allant jusqu'à 400 u.a. Ils sont répartis aléatoirement de part et d'autre de zéro, sans courbure ni tendance avec \(m\). Le modèle linéaire \(I_f = a\,m\) est validé sur 0,5--8,8 mg. Le poids relatif des résidus est plus grand pour les deux étalons les plus dilués (13 \% et 17 \%).
+
+\emph{Justification.} D'après le document 3, \(I_f = k\,C\). Tous les étalons sont préparés dans des fioles jaugées \textbf{de même volume} \(V = 100\) mL, donc \(C = \dfrac{m}{MV}\) et
+
+\equationajustee{\boxed{I_f = \frac{k}{MV}\,m = a\,m}}
+
+\equationajustee{a = \frac{k}{MV} = 45{,}196\ \mathrm{u.a.\cdot mg^{-1}}}
+
+\(k\), \(M\) et \(V\) sont des constantes : le modèle est linéaire et passe par l'origine. Les concentrations restent faibles (au plus \(4{,}5\times10^{-4}\) mol·L⁻¹ pour l'étalon 5), ce qui respecte la condition du document 3.
+
+\hypertarget{q25}{%
+\subsubsection{Q25}\label{q25}}
+
+La solution 6 est le filtrat non dilué (100 mL de F dans une fiole de 100 mL). Masse de caféine dans les 100 mL dosés, à l'intérieur du domaine d'étalonnage :
+
+\equationajustee{\begin{aligned}
+m_6 &= \frac{I_f(6)}{a} \\
+&= \frac{34{,}0}{45{,}196} \\
+&= 0{,}752\ \mathrm{mg}
+\end{aligned}}
+
+Les 100 mL dosés représentent 1/5 du filtrat :
+
+\equationajustee{m_{\rm totale} = 5\times0{,}752 = 3{,}76\ \mathrm{mg}}
+
+Rapportée aux 100,0 mg de baies :
+
+\equationajustee{\boxed{w = 3{,}8\ \%\ \text{en masse}}}
+
+Ce résultat est compatible avec celui du titrage (3,9 ± 0,6 \%). Le dosage par fluorescence porte directement sur F, sans extraction au dichlorométhane. L'accord suggère donc que l'écart à 9 \% vient surtout de l'extraction des baies (document 1).
+
+\hypertarget{q26}{%
+\subsubsection{Q26}\label{q26}}
+
+Le code n'attribue d'incertitude non nulle qu'à deux grandeurs. La masse de chaque étalon a \(u(m) = 1\) mg, soit de 200 \% (0,5 mg) à 11 \% (8,8 mg) en relatif ; d'où \(u(a)/a \approx 10\,\%\). La masse de baies a \(u(m_{\rm baies}) = 1\) mg, soit 1 \%. Les intensités ont une incertitude nulle. La contribution dominante est donc la pesée des étalons. Deux modifications possibles :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Préparer les étalons par dilution d'une solution mère} obtenue en pesant une masse importante de caféine (par exemple 100,0 mg dans une fiole de 1,000 L), avec une balance plus précise, puis en prélevant à la pipette jaugée. L'incertitude relative sur la masse de caféine de chaque étalon tombe à moins de 1 \%.
+\item
+  \textbf{Augmenter la prise d'essai de baies} (par exemple 1,000 g au lieu de 100 mg) ou peser sur une balance plus précise. L'incertitude relative sur \(m_{\rm baies}\) passe de 1 \% à 0,1 \%. Il faut alors diluer la solution 6 pour rester dans le domaine d'étalonnage.
+\end{enumerate}
+
+On peut aussi multiplier les étalons et répéter les mesures.
+
+\hypertarget{q27}{%
+\subsubsection{Q27}\label{q27}}
+
+Deux arguments en faveur de la spectrofluorimétrie :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Précision et rapidité} : l'incertitude-type est plus faible (0,4 \% contre 0,6 \%). La mesure est instrumentale, sans repérage visuel d'un virage mal défini. Elle est directe sur le filtrat, sans extraction, séchage, évaporation ni titrage, donc rapide et automatisable pour de grandes séries.
+\item
+  \textbf{Sécurité et environnement} : on supprime le dichlorométhane (danger pour la santé, cancérogène suspecté) et le chloroforme (pictogrammes santé et toxicité aiguë), ainsi que le coût de traitement de leurs déchets halogénés. Le dosage ne consomme que de l'eau.
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-iii-des-fruits-et-luxe9gumes-dans-lassiette-des-chimistes-organiciens}{%
+\section{Partie III --- Des fruits et légumes dans l'assiette des chimistes organiciens}\label{partie-iii-des-fruits-et-luxe9gumes-dans-lassiette-des-chimistes-organiciens}}
+
+\hypertarget{iii.a-la-carotte-et-le-cuxe9leri-comme-bio-ruxe9ducteurs}{%
+\subsection{III.A --- La carotte et le céleri comme bio-réducteurs}\label{iii.a-la-carotte-et-le-cuxe9leri-comme-bio-ruxe9ducteurs}}
+
+\hypertarget{q28}{%
+\subsubsection{Q28}\label{q28}}
+
+La réduction du groupe C=O de \textbf{1} donne le 1-phényléthanol \(\mathrm{C_6H_5{-}CH(OH){-}CH_3}\). Le carbone fonctionnel porte quatre groupes différents et devient asymétrique.
+
+Classement CIP : OH (O, Z = 8) \textgreater{} \(\mathrm{C_6H_5}\) (C lié à C, C, C) \textgreater{} \(\mathrm{CH_3}\) (C lié à H, H, H) \textgreater{} H.
+
+\textbf{Structure du (S)-1-phényléthanol} : OH en \textbf{coin plein}, vers l'observateur, et H en arrière (implicite). H étant en arrière, la séquence OH → Ph → CH₃ tourne dans le sens trigonométrique : configuration \textbf{(S)}.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q28-s-1-phenylethanol.pdf}
+\caption*{Figure 3 --- (S)-1-phényléthanol : OH en coin plein, rangs CIP 1 → 2 → 3
+dans le sens trigonométrique, H en arrière}
+\end{figure}
+
+\equationajustee{\boxed{\text{produit majoritaire : (S)-1-\text{phényléthanol}}}}
+
+Justification : l'acétophénone est prochirale, ses deux faces sont énantiotopes. Le réducteur enzymatique est chiral : il différencie les deux faces et forme majoritairement un énantiomère, le (S) d'après l'énoncé.
+
+\hypertarget{q29}{%
+\subsubsection{Q29}\label{q29}}
+
+Loi de Biot (additivité) :
+
+\equationajustee{\boxed{\alpha = \ell\sum_i[\alpha]_i\,C_i}}
+
+avec \(\ell\) en dm, \(C_i\) concentrations en masse (g·mL⁻¹) et \([\alpha]_i\) pouvoirs rotatoires spécifiques.
+
+Seules les espèces chirales \textbf{dissoutes} contribuent au pouvoir rotatoire. Les morceaux de carotte ou de céleri et les enzymes ont été retirés par filtration : ils ne sont pas dans la solution analysée. Espèces présentes après filtration :
+
+\begin{itemize}
+\tightlist
+\item
+  l'eau et l'acétophénone résiduelle (\(\tau = 0{,}97\)) sont achirales et ne contribuent pas ;
+\item
+  les deux énantiomères (S) et (R) du 1-phényléthanol sont chiraux, avec \([\alpha]_R = -[\alpha]_S\) ;
+\item
+  les éventuelles autres espèces chirales solubles extraites du légume sont supposées en quantité négligeable.
+\end{itemize}
+
+D'où \(\alpha = [\alpha]^S\,\ell\,(C_S - C_R)\).
+
+\hypertarget{q30}{%
+\subsubsection{Q30}\label{q30}}
+
+Les deux énantiomères ont la même masse molaire \(M_S\), donc \(ee = \dfrac{[\mathrm S]-[\mathrm R]}{[\mathrm S]+[\mathrm R]} = \dfrac{C_S - C_R}{C_S + C_R}\).
+
+L'alcool formé vaut \(\tau\,n_{\mathbf 1,0}\) avec \(n_{\mathbf 1,0} = C_0V/M_{\mathbf 1}\). Sa concentration en masse vaut donc
+
+\equationajustee{C_S + C_R = \frac{\tau\,n_{\mathbf 1,0}\,M_S}{V} = \tau\,C_0\,\frac{M_S}{M_{\mathbf 1}}}
+
+Par conséquent \(\alpha = [\alpha]^S\,\ell\,ee\,\tau\,C_0\,\dfrac{M_S}{M_{\mathbf 1}}\), soit
+
+\equationajustee{\boxed{ee = \frac{\alpha}{[\alpha]^S\,\ell\,\tau\,C_0}\,\frac{M_{\mathbf 1}}{M_S}}\quad (4)}
+
+\hypertarget{q31}{%
+\subsubsection{Q31}\label{q31}}
+
+On a \(C_0 = 50\ \mathrm{mg}/50\ \mathrm{mL} = 1{,}0\times10^{-3}\) g·mL⁻¹. L'alcool est \(\mathbf 1 + 2\,\mathrm H\), donc \(M_S = 120{,}4 + 2\times1{,}0 = 122{,}4\) g·mol⁻¹.
+
+\equationajustee{\begin{aligned}
+ee &= \frac{-0{,}77}{(-42)\times20\times0{,}97\times1{,}0\times10^{-3}}\times\frac{120{,}4}{122{,}4} \\
+&= 0{,}945\times0{,}984
+\end{aligned}}
+
+\equationajustee{\boxed{ee = 0{,}93}}
+
+Le mélange contient 96,5 \% de (S) et 3,5 \% de (R).
+
+Avec \(\mathrm{NaBH_4}\), réactif achiral en milieu achiral, les deux faces énantiotopes de la cétone sont attaquées avec la même probabilité : on obtient un racémique, et \(\boxed{ee = 0}\). La bioréduction est donc nettement énantiosélective.
+
+\hypertarget{q32}{%
+\subsubsection{Q32}\label{q32}}
+
+La cétone se lie au Zn²⁺ du site actif par son oxygène, ce qui active le C=O et fixe son orientation. Le phényle, encombrant, ne trouve sa place que dans une poche précise du site chiral, et le méthyle occupe l'autre position. Une seule face du carbonyle (la face \emph{Re}) est donc tournée vers le carbone C4 du NADH, maintenu à proximité. L'hydrure est transféré sur cette face uniquement, et la protonation de l'alcoolate donne l'alcool (S).
+
+\hypertarget{iii.b-synthuxe8se-de-la-vitamine-e}{%
+\subsection{III.B --- Synthèse de la vitamine E}\label{iii.b-synthuxe8se-de-la-vitamine-e}}
+
+\hypertarget{iii.b.1-obtention-du-synthon--3}{%
+\subsubsection{III.B.1 --- Obtention du synthon (−)-3}\label{iii.b.1-obtention-du-synthon--3}}
+
+\hypertarget{q33}{%
+\subsubsection{Q33}\label{q33}}
+
+Dans \textbf{6}, le carbone C2 du chromane porte un groupe OMe, l'oxygène du cycle, un méthyle et un CH₂. Ce carbone tétragonal est lié à deux groupes OR et provient du carbonyle de la but-3-én-2-one.
+
+\equationajustee{\boxed{\text{fonction \text{formée} : \text{acétal} (\text{cétal} mixte, cyclique)}}}
+
+\hypertarget{q34}{%
+\subsubsection{Q34}\label{q34}}
+
+L'anhydride éthanoïque, en présence de pyridine, acyle le seul groupe nucléophile de \textbf{6}, l'OH phénolique. L'acétal est inchangé. \textbf{7} est l'ester acétique de ce phénol, l'éthanoate de 2-\allowbreak{}méthoxy-\allowbreak{}2,5,7,8-\allowbreak{}tétraméthylchroman-\allowbreak{}6-\allowbreak{}yle. On retrouve le squelette de \textbf{6}, où \(\mathrm{HO{-}}\) est remplacé par \(\mathrm{CH_3{-}CO{-}O{-}}\).
+
+\equationajustee{\boxed{\mathbf 6 + (\mathrm{CH_3CO})_2\mathrm O + \mathrm{C_5H_5N} = \mathbf 7 + \mathrm{CH_3COO^-} + \mathrm{C_5H_5NH^+}}}
+
+La pyridine capte l'acide éthanoïque formé. La constante de cette réaction vaut \(10^{5{,}2-4{,}7} = 10^{0{,}5} > 1\), donc la réaction est favorable. On peut aussi écrire le bilan \(\mathbf 6 + (\mathrm{CH_3CO})_2\mathrm O = \mathbf 7 + \mathrm{CH_3COOH}\).
+
+\hypertarget{q35}{%
+\subsubsection{Q35}\label{q35}}
+
+Mécanisme d'addition nucléophile suivie d'élimination (\(\mathrm{ArOH}\) = \textbf{6}) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Addition nucléophile} : un doublet non liant de l'oxygène phénolique attaque le carbone d'un C=O de l'anhydride, et le doublet \(\pi\) du C=O bascule sur l'oxygène. On obtient un intermédiaire tétraédrique, avec \(\mathrm{O^-}\) d'un côté et \(\mathrm{Ar{-}O^+(H){-}}\) de l'autre.
+\item
+  \textbf{Transfert de proton} : la pyridine arrache le proton de l'oxygène chargé positivement, ce qui forme l'ion pyridinium.
+\item
+  \textbf{Élimination} : le doublet de \(\mathrm{O^-}\) reforme la double liaison C=O et expulse l'ion éthanoate \(\mathrm{CH_3COO^-}\), bon nucléofuge (base faible stabilisée par mésomérie). On obtient l'ester \textbf{7}.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q35-mecanisme-acetylation.pdf}
+\caption*{Figure 4 --- Mécanisme d'acétylation du phénol de 6 (ArOH) : addition
+nucléophile, transfert du proton à la pyridine, élimination de l'ion
+éthanoate}
+\end{figure}
+
+\hypertarget{q36}{%
+\subsubsection{Q36}\label{q36}}
+
+Hydrolyse acide de l'acétal : \textbf{8} porte la cétone libérée (\(\mathrm{{-}CH_2CH_2COCH_3}\)) et un phénol libre, issu de l'oxygène du cycle. L'ester acétique est conservé. Mécanisme (catalyse par \(\mathrm{H^+}\)) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Protonation de l'oxygène du groupe OMe par \(\mathrm{H_3O^+}\).
+\item
+  Départ de \(\mathrm{CH_3OH}\), assisté par le doublet de l'oxygène du cycle. On obtient un ion oxocarbénium cyclique, stabilisé par mésomérie : \(\mathrm{C^+{-}O{-}Ar} \leftrightarrow \mathrm{C{=}O^+{-}Ar}\). Ce carbocation tertiaire est en outre stabilisé par l'oxygène voisin : la substitution de MeOH par l'eau suit donc un mécanisme de type \(\mathrm{S_N1}\) (départ du nucléofuge, puis attaque de l'eau), et non \(\mathrm{S_N2}\).
+\item
+  Addition nucléophile de l'eau sur le carbone de l'oxocarbénium, puis déprotonation par l'eau. On obtient un hémiacétal cyclique.
+\item
+  Protonation de l'oxygène du cycle (lié à l'aromatique).
+\item
+  Ouverture du cycle : le doublet de l'OH reforme le C=O et expulse le phénol \(\mathrm{ArOH}\). On obtient la cétone protonée.
+\item
+  Déprotonation par l'eau, qui donne la cétone \textbf{8} et régénère \(\mathrm{H_3O^+}\).
+\end{enumerate}
+
+\equationajustee{\text{\text{acétal} } \mathbf 7 \xrightarrow{\mathrm{H^+},\ -\mathrm{MeOH}} \text{\text{oxocarbénium}} \xrightarrow{\mathrm{H_2O},\ -\mathrm{H^+}} \text{\text{hémiacétal}} \xrightarrow{\mathrm{H^+}} \text{\text{cétone} } \mathbf 8 \text{ (\text{phénol} libre)} + \mathrm{H^+}}
+
+\hypertarget{q37}{%
+\subsubsection{Q37}\label{q37}}
+
+\textbf{9} porte deux esters : l'acétate du phénol et l'ester méthylique de la chaîne. \textbf{3} porte un phénol et un acide carboxylique. Conditions :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Saponification} : soude aqueuse en excès (au moins 3 équivalents : deux esters plus le phénol, qui est déprotoné), dans un mélange eau--méthanol, au reflux. La réaction est totale.
+\item
+  \textbf{Acidification} par HCl aqueux jusqu'à pH ≈ 1--2, après refroidissement. On reprotone le carboxylate et le phénolate, puis on récupère (±)-3 par filtration ou extraction.
+\end{enumerate}
+
+\equationajustee{\boxed{\text{1) NaOH aq. (\text{excès}), } \mathrm{H_2O/MeOH},\ \text{reflux}\quad\text{2) } \mathrm{HCl}\ \text{aq.}}}
+
+Aucune liaison du carbone asymétrique n'est rompue : le produit reste racémique.
+
+\hypertarget{q38}{%
+\subsubsection{Q38}\label{q38}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\tilde\nu\) (cm⁻¹)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Attribution
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+3500 & O--H lié (élongation) du phénol libéré \\
+3400--2300 (large) & O--H lié d'acide carboxylique (dimères liés par liaisons hydrogène) \\
+1670 & C=O de l'acide carboxylique \\
+\end{longtable}
+
+On observe l'apparition des bandes O--H du phénol et de l'acide, absentes dans \textbf{9}. On n'observe plus de bande C=O d'ester vers 1750 cm⁻¹ : les deux esters de \textbf{9} ont été hydrolysés. La bande C=O à 1670 cm⁻¹ est plus basse que la valeur tabulée pour un acide (1760 cm⁻¹) : les liaisons hydrogène des dimères affaiblissent la liaison C=O. \textbf{Le spectre est cohérent avec (±)-3.}
+
+\hypertarget{iii.b.2-obtention-du-synthon-4}{%
+\subsubsection{III.B.2 --- Obtention du synthon 4}\label{iii.b.2-obtention-du-synthon-4}}
+
+\hypertarget{q39}{%
+\subsubsection{Q39}\label{q39}}
+
+\(\mathrm{CN^-}\) compte \(4 + 5 + 1 = 10\) électrons de valence, soit 5 doublets. Schéma de Lewis :
+
+\equationajustee{\boxed{\left[\,|\mathrm C{\equiv}\mathrm N|\,\right]^-\quad\text{(triple liaison, un doublet non liant sur C et sur N, charge formelle } -1 \text{ sur C)}}}
+
+Charges formelles : C a \(4 - (2 + 3) = -1\) et N a \(5 - (2 + 3) = 0\).
+
+Le site nucléophile est le \textbf{carbone} : il porte la charge formelle négative, et il est moins électronégatif que N, donc son doublet est plus disponible. Le produit \textbf{11} est bien un nitrile \(\mathrm{R{-}C{\equiv}N}\) : la nouvelle liaison est C--C.
+
+\hypertarget{q40}{%
+\subsubsection{Q40}\label{q40}}
+
+Le carbone portant le tosylate est \textbf{primaire}, le nucléofuge \(\mathrm{TsO^-}\) est excellent et \(\mathrm{CN^-}\) est un bon nucléophile. Le mécanisme est une \textbf{substitution nucléophile bimoléculaire \(\mathrm{S_N2}\)}, concertée. Le carbocation primaire, trop instable, exclut la \(\mathrm{S_N1}\).
+
+\equationajustee{\mathrm{N{\equiv}C|^-} + \mathrm{R^*{-}CH_2{-}OTs} \rightarrow \left[\mathrm{N{\equiv}C\cdots CH_2(R^*)\cdots OTs}\right]^{-\,\ddagger} \rightarrow \mathrm{N{\equiv}C{-}CH_2{-}R^*} + \mathrm{TsO^-}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q40-mecanisme-sn2.pdf}
+\caption*{Figure 5 --- Mécanisme SN2 de la transformation 10 → 11 : attaque de CN⁻
+par le carbone, du côté opposé au groupe partant OTs}
+\end{figure}
+
+L'inversion de Walden porte sur un \(\mathrm{CH_2}\) sans conséquence stéréochimique. Le carbone asymétrique voisin n'est pas touché et garde sa configuration spatiale.
+
+\hypertarget{q41}{%
+\subsubsection{Q41}\label{q41}}
+
+\(\mathrm{HO^-}\) est une base forte, donc un très mauvais nucléofuge : l'alcool ne subirait pas la substitution. \(\mathrm{TsO^-}\) est la base conjuguée d'un acide fort, sa charge est délocalisée sur les trois oxygènes du sulfonate : c'est un excellent nucléofuge. Activer l'alcool par protonation n'est pas possible ici : en milieu acide, \(\mathrm{CN^-}\) serait protoné en HCN (p\(K_a\) ≈ 9), espèce peu nucléophile et très toxique. \textbf{La tosylation (TsCl, pyridine) réalise l'activation électrophile de l'alcool}, sans milieu acide et sans toucher au stéréocentre : le carbone lié à OTs devient un bon site électrophile, porteur d'un excellent groupe partant.
+
+\hypertarget{q42}{%
+\subsubsection{Q42}\label{q42}}
+
+\(\mathbf{12} = {}^t\mathrm{BuO{-}CH_2{-}CH(CH_3){-}CH_2{-}CHO}\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1361}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1706}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1782}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.4852}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+δ (ppm)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Intégration
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Multiplicité
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Attribution
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+9,67 & 1 H & singulet & H de l'aldéhyde \(\mathrm{{-}CHO}\) : zone 9,5--10,0 ppm, un seul H \\
+1,23 & 9 H & singulet & les trois \(\mathrm{CH_3}\) équivalents du \emph{tert}-butyle, liés à un C quaternaire sans H voisin \\
+1,07 & 3 H & doublet & le \(\mathrm{CH_3}\) porté par le CH du stéréocentre (couplé à 1 H, d'où \(n + 1 = 2\)) \\
+\end{longtable}
+
+Les deux méthyles sont un peu plus déblindés que la zone tabulée \(\mathrm{CH_3{-}C}\) (0,8--1,0 ppm), en raison de la proximité de l'oxygène de l'éther (et, pour le doublet, du groupe CHO). Le CHO, couplé au \(\mathrm{CH_2}\) voisin, devrait être un triplet. La constante \(^3J\) aldéhydique est faible (1--2 Hz), d'où le singulet observé.
+
+\hypertarget{q43}{%
+\subsubsection{Q43}\label{q43}}
+
+\(\mathbf{13} = \mathrm{CH_3{-}C{\equiv}C{-}Li}\) s'additionne sur le C=O de l'aldéhyde (addition nucléophile), puis \(\mathrm{NH_4Cl}\) aqueux protone l'alcoolate. On obtient l'alcool propargylique secondaire :
+
+\equationajustee{\mathbf{14},\ \mathbf{14^*} = {}^t\mathrm{BuO{-}CH_2{-}\overset{*}{C}H(CH_3){-}CH_2{-}\overset{*}{C}H(OH){-}C{\equiv}C{-}CH_3}}
+
+Le carbone carbinol est un \textbf{nouveau stéréocentre}, créé par attaque sur l'une ou l'autre face du C=O. Le stéréocentre préexistant, lui, garde sa configuration (celle de \textbf{12}). \textbf{14} et \textbf{14}* ont donc la même configuration au carbone méthylé et des configurations opposées, (R) et (S), au carbone porteur de OH. Le classement CIP à ce carbone est OH \textgreater{} C≡C \textgreater{} CH₂ \textgreater{} H.
+
+\equationajustee{\boxed{\mathbf{14}\text{ et }\mathbf{14^*}\text{ sont \text{diastéréoisomères} (\text{épimères} au carbone porteur de OH)}}}
+
+Le stéréocentre préexistant n'induit presque aucune sélectivité, d'où environ 50 \% de chaque.
+
+\hypertarget{q44}{%
+\subsubsection{Q44}\label{q44}}
+
+Comparaison des squelettes :
+
+\equationajustee{\mathbf{15}:\ {}^t\mathrm{BuO{-}CH_2{-}CH(CH_3){-}(CH_2)_3{-}CH(CH_3){-}CH_2{-}COOEt}}
+
+\equationajustee{\mathbf 4:\ {}^t\mathrm{BuO{-}CH_2{-}CH(CH_3){-}(CH_2)_3{-}CH(CH_3){-}CH_2{-}\underbrace{CH_2{-}CH_2{-}CH(CH_3)_2}_{\text{\text{à} construire}}}}
+
+Le carbone de l'ester doit devenir un \(\mathrm{CH_2}\) lié à un groupe 2-méthylpropyle \(\mathrm{{-}CH_2CH(CH_3)_2}\) (4 C). Rétrosynthèse : la liaison C--C à créer relie ce \(\mathrm{CH_2}\) au groupe 2-méthylpropyle. On l'obtient par substitution nucléophile d'un organomagnésien sur un dérivé activé de l'alcool primaire \(\mathrm{R{-}CH_2{-}CH_2OH}\), lui-même issu de la réduction de l'ester.
+
+On note \(\mathrm R = {}^t\mathrm{BuO{-}CH_2{-}CH(CH_3){-}(CH_2)_3{-}CH(CH_3){-}}\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Réduction de l'ester} : \(\mathrm{LiAlH_4}\) en excès, éther diéthylique ou THF anhydre, à 0 °C puis à température ambiante. On hydrolyse ensuite par une solution aqueuse acide diluée, à froid. On obtient l'alcool primaire \(\mathrm{R{-}CH_2{-}CH_2OH}\) (et de l'éthanol). \(\mathrm{LiAlH_4}\) réduit directement l'ester en alcool, sans saponification préalable.
+\item
+  \textbf{Activation électrophile de l'alcool} : chlorure de tosyle TsCl, pyridine (solvant et base), à température ambiante. On obtient le tosylate primaire \(\mathrm{R{-}CH_2{-}CH_2{-}OTs}\).
+\item
+  \textbf{Substitution nucléophile par un organomagnésien} : bromure de 2-méthylpropylmagnésium \((\mathrm{CH_3})_2\mathrm{CHCH_2MgBr}\), préparé à partir de magnésium et de 1-bromo-2-méthylpropane dans l'éther anhydre. On le fait réagir sur le tosylate dans le THF anhydre, puis on hydrolyse par \(\mathrm{NH_4Cl}\) aqueux. Le carbone nucléophile de l'organomagnésien remplace \(\mathrm{TsO^-}\) sur le carbone primaire (\(\mathrm{S_N2}\)) et donne \textbf{4}.
+\end{enumerate}
+
+\equationajustee{\boxed{\mathbf{15}\xrightarrow{\text{1) LiAlH}_4\text{, Et}_2\text{O ; 2) H}_3\text{O}^+}\mathrm{R{-}CH_2CH_2OH}\xrightarrow{\text{TsCl, pyridine}}\mathrm{R{-}CH_2CH_2OTs}\xrightarrow{i\mathrm{BuMgBr,\ THF}}\mathbf 4}}
+
+On ne fait pas réagir directement l'organomagnésien sur l'ester \textbf{15} : il s'y additionnerait deux fois et donnerait un alcool tertiaire. Les deux stéréocentres ne sont touchés à aucune étape. L'éther de \emph{tert}-butyle résiste aux milieux basiques, aux hydrures et aux organomagnésiens. Seule l'hydrolyse de l'étape 1 est acide, et elle reste brève, diluée et à froid.
+
+\end{document}

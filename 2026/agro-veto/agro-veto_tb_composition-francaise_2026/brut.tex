@@ -1,0 +1,224 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto TB — Composition française 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Agro-Véto TB}
+\fancyhead[R]{\small Composition française 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Agro-Véto TB — Composition française 2026\par}\medskip
+  {\large Agro-Véto · TB · Composition française · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Texte support : Roberto Casati, \emph{Philosophie de l'océan}, PUF, 2022 (l'\emph{arctium} et le Velcro). Œuvres au programme : Jules Verne, \emph{Vingt mille lieues sous les mers} ; Georges Canguilhem, \emph{La Connaissance de la vie} (Introduction, « I. Méthode », « III. Philosophie », chapitres II à V) ; Marlen Haushofer, \emph{Le Mur invisible}.
+
+\hypertarget{ruxe9sumuxe9-8-points}{%
+\section{1) Résumé (8 points)}\label{ruxe9sumuxe9-8-points}}
+
+\textbf{Problématique du texte :} peut-on fixer la valeur de la nature, et à quelles conditions ?
+
+La bardane, inutilisée, paraît sans valeur. Pourtant, en l'observant, un ingénieur a conçu le Velcro, source d'emplois, de richesses et de commodité. Cet \textbar{} épisode doit éclairer tout débat sur la valeur de la nature.
+
+Même si nous acceptions de la chiffrer, notre ignorance fausserait le calcul : nous méconnaissons \textbar{} les emplois d'une espèce, dont certains, peut-être jamais découverts, pourraient transformer l'humanité. La bardane ébranle aussi l'image d'une nature-réserve, \textbar{} protégée pour ne pas manquer de matières : elle a fourni une idée, non une matière.
+
+Tarifer un milieu, objecte-t-on, pousse à le vendre ; \textbar{} les partisans de la monétarisation répliquent que ce qui n'est pas chiffré cesse d'être vu, donc estimé. Mais c'est le regard comptable \textbar{} qui aveugle. Évaluons donc la nature, en débattant de ce qui fait la valeur, sans la réduire au profit : la bardane nous apprend à ne \textbar{} pas y voir une simple mine.
+
+\textbf{156 mots}
+
+\hypertarget{question-de-vocabulaire-2-points}{%
+\section{2) Question de vocabulaire (2 points)}\label{question-de-vocabulaire-2-points}}
+
+\textbf{Problématique :} que signifie, sous la plume d'un auteur qui accepte l'évaluation sans accepter la seule monétarisation, « mesurer la valeur de la nature » (lignes 44-45) ?
+
+L'expression clôt la thèse de l'auteur (lignes 40-48), et elle reprend à dessein l'argument des partisans de la monétarisation, pour qui « ne pas mesurer signifie ne pas voir du tout la valeur » (lignes 37-38). Dans leur bouche, mesurer, c'est attribuer un prix aux êtres naturels selon leur utilité présente ou future pour l'homme, c'est-à-dire « faire correctement les comptes » (ligne 19). Le texte a déjà fragilisé ce calcul : le « mur d'ignorance » (ligne 19) l'empêche d'aboutir.
+
+Roberto Casati retourne cet argument contre ses auteurs. La fin de la phrase oppose « la valeur en général » (ligne 45) au « bénéfice économique comme seul critère » (ligne 46) : la valeur ne se réduit pas au prix, et la mesure ne se réduit pas au chiffre. Mesurer la valeur, c'est alors apprécier ce qui, dans la nature, mérite d'être estimé et préservé, et non plus seulement compter. Cette appréciation est collective : le « nous » (lignes 43-46) et le mot « discussion » (ligne 45) en font l'objet d'un débat toujours ouvert. Elle est enfin un « défi » et une « nécessité » (ligne 44) : l'auteur concède qu'on ne peut renoncer à évaluer la nature, mais il change le sens de l'évaluation.
+
+Sous la plume de l'auteur, \textbf{« mesurer la valeur de la nature » signifie donc juger collectivement, par un débat sur ce qui vaut, de l'importance de la nature, au lieu de la réduire à un prix calculé selon son seul rendement.}
+
+\hypertarget{duxe9veloppement-10-points}{%
+\section{3) Développement (10 points)}\label{duxe9veloppement-10-points}}
+
+\textbf{Problématique :} l'expérience, singulière et limitée, peut-elle fournir la mesure de ce que vaut la nature, ou seulement nous apprendre à en prendre la mesure ?
+
+Une boule de bardane accrochée à un vêtement ne vaut rien, jusqu'au jour où un ingénieur, l'ayant regardée de près, en tire le Velcro. Roberto Casati accepte dès lors de « mesurer la valeur de la nature », pourvu qu'on ne réduise pas la valeur au profit. Or c'est bien une expérience, une rencontre attentive avec le réel, qui a fait apparaître la valeur de la bardane. L'expérience, épreuve vécue ou expérimentation méthodique, serait-elle donc l'instrument qui établit ce que vaut la nature ? La difficulté tient au double sens de \emph{mesurer} : quantifier, ce qui suppose une unité commune, ou apprécier une qualité, ce qui suppose un jugement. Or l'expérience est toujours singulière, située et limitée : comment fonderait-elle une mesure partagée ? L'enjeu est écologique : on respecte mal ce dont on ignore la valeur. Nous verrons que l'expérience est la condition de toute évaluation de la nature, qu'elle ne fournit pourtant jamais une mesure complète, et qu'elle enseigne plutôt une autre manière de prendre la mesure de ce qui vaut.
+
+Sans expérience, aucune valeur n'apparaît. Canguilhem rappelle, au seuil de « L'expérimentation en biologie animale », que l'expérience est d'abord la fonction générale de tout vivant, son débat avec le milieu : évaluer est une activité vitale avant d'être une opération savante. Coupée du monde, la narratrice du \emph{Mur invisible} compte ses allumettes et ses cartouches, fauche le foin qui nourrira Bella pendant l'hiver ; l'argent n'a plus cours, et chaque chose vaut ce qu'elle permet de vivre. Le savant fait de cette évaluation une méthode, et va jusqu'au chiffre. À bord du \emph{Nautilus}, Aronnax observe, nomme et classe les espèces ; devant la perle géante que Nemo lui fait admirer au large de Ceylan, il calcule ce qu'elle vaut. Nemo, qui tire son électricité du sodium de l'eau de mer et sa houille de gisements sous-marins, prouve qu'une connaissance expérimentale de l'océan permet d'en estimer et d'en exploiter les ressources. La narratrice mesure la nature à ses besoins, le savant vernien à des unités : dans les deux cas, l'expérience donne prise à l'évaluation.
+
+Pourtant, l'expérience ne mesure jamais que ce qu'elle atteint. Canguilhem souligne les obstacles propres à l'expérimentation sur le vivant, sa spécificité, son individualité, sa totalité, l'irréversibilité de ses transformations : ce que l'on mesure au laboratoire est un organisme déjà soustrait à son milieu. Dans « Le vivant et son milieu », il montre en outre, à la suite d'Uexküll, que chaque vivant découpe dans le monde ce qui compte pour lui, comme la tique qui ne réagit qu'à quelques signaux. Notre évaluation est de même relative à nos besoins : Ned Land voit d'abord dans la mer un terrain de chasse, et Nemo lui-même puise l'or des galions de Vigo et massacre des cachalots qu'il juge nuisibles. Elle dépend aussi de notre attention : la narratrice de Haushofer avoue qu'elle serait incapable de décrire un seul des pigeons qu'elle croisait chaque jour en ville. L'expérience, enfin, porte sur le passé : elle ne dit rien des usages encore inconnus que Casati place derrière un « mur d'ignorance ».
+
+L'expérience ne donne donc pas un prix, mais elle peut apprendre une autre mesure. Canguilhem rappelle qu'en latin \emph{valere} signifie se bien porter : avant d'être un prix, la valeur est celle du vivant. Le vivant est normatif : la santé n'est pas une moyenne statistique, mais le pouvoir d'instituer de nouvelles normes, si bien que la valeur est posée par la vie avant d'être calculée par nous. La pensée doit alors, selon sa formule, « tenir du vivant l'idée du vivant ». C'est ce que vit la narratrice : au fil des années, Bella, Lynx et les chats ne se comptent plus en lait ou en services rendus, et la mort du chien et du jeune taureau, tués par un inconnu surgi de nulle part, échappe à toute commune mesure. Nemo, qui proclame que « la mer est tout » et refuse de tuer les baleines sans nécessité, oppose lui aussi à l'évaluation marchande une expérience de l'océan comme espace de liberté ; mais il reste ambivalent, quand la narratrice va jusqu'au bout de sa conversion. Mesurer la valeur de la nature ne veut plus dire chiffrer, mais reconnaître la pluralité de ce qui vaut : c'est la condition même que posait Casati.
+
+L'expérience permet donc de mesurer la valeur de la nature si l'on entend par là en prendre la mesure : elle révèle des valeurs qu'aucun calcul a priori ne soupçonnait. Elle ne permet pas d'en fixer le prix définitif, car elle reste partielle, tributaire de nos besoins et ouverte sur l'inconnu. Sa leçon la plus précieuse est peut-être le sens de la mesure, la modestie de qui sait que la bardane d'aujourd'hui peut être le Velcro de demain, et qu'il faut la protéger avant d'en connaître le prix.
+
+\end{document}

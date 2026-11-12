@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_tsi_physique-chimie-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "TSI",
+    "matiere": "Physique-chimie 1",
+    "annee": 2026
+  },
+  "questions": 52,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q23-diagramme-e-ph-fer.svg",
+      "question": "Q23",
+      "legende": "Figure 1 — Diagramme E-pH du fer : attribution des domaines (A) à (D), bande de pH du béton sain (12 à 13) et effet de la carbonatation"
+    },
+    {
+      "fichier": "figures/q43-profils-mur-isole.svg",
+      "question": "Q43",
+      "legende": "Figure 2 — Profils stationnaires de température dans le mur sans et avec isolant (a) et schéma électrique équivalent des deux résistances en série (b)"
+    },
+    {
+      "fichier": "figures/q45-front-de-fusion.svg",
+      "question": "Q45",
+      "legende": "Figure 3 — Profil de température à un instant t : MCP liquide entre 0 et x0, solide au-delà ; la couche dx0 reçoit le flux conductif côté liquide et rien côté solide"
+    },
+    {
+      "fichier": "figures/q48-q49-flux-entrant-sortant.svg",
+      "question": "Q48",
+      "legende": "Figure 4 — Allure des puissances thermiques entrante (en 1/√t puis palier) et sortante (nulle puis échelon en tf) du mur à MCP"
+    }
+  ]
+}

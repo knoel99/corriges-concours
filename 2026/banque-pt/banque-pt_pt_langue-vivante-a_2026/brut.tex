@@ -1,0 +1,295 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Banque PT — Langue vivante A 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Banque PT PT}
+\fancyhead[R]{\small Langue vivante A 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Banque PT — Langue vivante A 2026\par}\medskip
+  {\large Banque PT · PT · Langue vivante A · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\textbf{Problématique commune} : chaque dossier de cinq documents (trois textes de presse, deux documents iconographiques ou statistiques) confronte un progrès ou une prospérité à son revers (discriminations, climat, développement, tourisme de masse). La synthèse restitue objectivement les idées du dossier, les relie et répond à la question posée, sans avis personnel ni information extérieure.
+
+Durée : 3 h, sans document ni appareil. Synthèse de 450 à 500 mots, précédée d'un titre ; le nombre de mots (titre inclus) est indiqué à la fin. Le candidat compose dans la seule langue choisie à l'inscription ; les cinq langues sont traitées ci-dessous. Nombre de mots : mots séparés par des espaces, titre inclus (trait d'union = un mot, nombre = un mot ; en arabe, mots graphiques, proclitiques soudés non séparés).
+
+\hypertarget{allemand}{%
+\section{Allemand}\label{allemand}}
+
+\hypertarget{synthuxe8se-ist-eine-welt-ohne-diskriminierungen-immer-noch-ein-traum}{%
+\subsection{Synthèse --- Ist eine Welt ohne Diskriminierungen immer noch ein Traum?}\label{synthuxe8se-ist-eine-welt-ohne-diskriminierungen-immer-noch-ein-traum}}
+
+\emph{Problématique : ob eine Gesellschaft ohne Benachteiligung erreichbar ist oder eine Utopie bleibt.}
+
+\textbf{Gleich vor dem Gesetz, ungleich im Alltag}
+
+Das Dossier besteht aus drei Presseartikeln, einer Infografik und einem Foto, die sich mit Diskriminierung im Berufsleben, in der Schule und in der digitalen Welt beschäftigen. Ist eine Gesellschaft ohne Benachteiligung erreichbar oder bleibt sie eine Utopie? Zunächst wird gezeigt, wie verbreitet Diskriminierung heute ist, danach, welche Gegenmittel es gibt.
+
+Erstens geht aus dem Dossier hervor, dass Diskriminierung keineswegs der Vergangenheit angehört. Laut Dokument 1 gibt jeder dritte Arbeitnehmer in Deutschland an, in jüngerer Zeit selbst benachteiligt worden zu sein, vor allem wegen seines Alters oder seines Geschlechts. Fast die Hälfte der Fälle ereignet sich im Arbeitsleben. Besonders gefährlich ist nach Dokument 2 die unbewusste, mittelbare Diskriminierung: Sinti und Roma erleben an Schulen nicht nur Beleidigungen, sondern einen institutionellen Antiziganismus. Ihre Kinder wurden oft pauschal auf Förderschulen geschickt, und eine Studie zeigt, dass angehende Lehrkräfte Kindern mit Migrationshintergrund bei gleichen Leistungen seltener das Gymnasium empfehlen. Die 484 seit 2023 gemeldeten Vorfälle im Bildungsbereich sind dabei nur die Spitze des Eisbergs. Dokument 3 ergänzt, dass selbst angeblich objektive Maschinen nicht neutral sind: Da künstliche Intelligenz aus verzerrten Daten lernt, erkennt sie dunkle Gesichter schlechter, bevorzugt Männer bei der Personalauswahl und gewährt Frauen niedrigere Kredite. Sie kann bestehende Vorurteile also sogar verstärken. Schließlich erinnert das Foto in Dokument 5 daran, dass auch Menschen mit Behinderung oder chronischer Krankheit betroffen sind. Eine Hand hält einen Würfel mit einem Rollstuhlsymbol über einer Pyramide aus Würfeln, die Männer, Frauen und Familien zeigen: Ob dieser Baustein seinen Platz in der Gesellschaft findet, hängt von den anderen ab.
+
+Zweitens zeigen die Dokumente jedoch, dass es wirksame Gegenmittel gibt. Das wichtigste ist das Recht. Während Artikel 3 des Grundgesetzes vor allem den Staat bindet, verbietet das Allgemeine Gleichbehandlungsgesetz seit 2006 auch privaten Arbeitgebern jede Benachteiligung wegen der Herkunft, des Geschlechts, der Religion, einer Behinderung, des Alters oder der sexuellen Identität (Dokument 1). Betroffene können Ansprüche gegen Arbeitgeber, Vorgesetzte und sogar Kollegen geltend machen. Wie man konkret vorgeht, veranschaulicht die Infografik in Dokument 4 am Beispiel der sexuellen Belästigung: Das Opfer soll zunächst entscheiden, was richtig und was falsch ist, gegebenenfalls das Gespräch suchen, dann den Arbeitgeber informieren und sich notfalls an eine Kanzlei wenden. Recht allein genügt aber nicht, denn tief verwurzelte Vorurteile lassen sich nicht verbieten. Deshalb setzt Dokument 2 auf Bildung: Bildungsberater sollen eine gleichberechtigte Teilhabe sichern, und junge Lehrkräfte sollen lernen, die kulturelle Herkunft der Kinder in den Unterricht einzubeziehen. Für die künstliche Intelligenz fordert Dokument 3, schon bei der Programmierung anzusetzen und nur korrekte Daten zu verwenden. Letztlich tragen aber Regierungen und Technologiekonzerne die Verantwortung, während jeder Nutzer die Ergebnisse kritisch prüfen sollte.
+
+Zusammenfassend lässt sich sagen, dass eine Welt ohne Diskriminierung noch nicht Wirklichkeit ist. Die Benachteiligung hat lediglich ihre Formen verändert und versteckt sich heute in Institutionen und Algorithmen. Die Dokumente zeigen aber auch, dass Gesetze, Bildung und Wachsamkeit diesen Traum Schritt für Schritt näher rücken lassen.
+
+\textbf{(482 Wörter, Titel inbegriffen)}
+
+\hypertarget{anglais}{%
+\section{Anglais}\label{anglais}}
+
+\hypertarget{synthuxe8se-to-what-extent-can-geoengineering-contribute-to-the-fight-against-climate-change}{%
+\subsection{Synthèse --- To what extent can geoengineering contribute to the fight against climate change?}\label{synthuxe8se-to-what-extent-can-geoengineering-contribute-to-the-fight-against-climate-change}}
+
+\emph{Problématique : what geoengineering could achieve, what risks it entails and why research is needed.}
+
+\textbf{Cooling the Planet: Shortcut or Short Circuit?}
+
+Since the Industrial Revolution, human activity has steadily warmed the planet. Geoengineering, the deliberate manipulation of the climate to cool the Earth, is increasingly presented as a possible response. Drawing on three press articles, an infographic and a cartoon, this synthesis examines what these techniques could achieve, what risks they entail and why research is needed.
+
+According to document 1, greenhouse gases such as carbon dioxide trap part of the heat that the Earth re-emits. Their concentration has risen from about 280 to 417 parts per million since pre-industrial times, raising average temperatures by roughly 1.2°C. The consequences are already tangible: according to document 2, Americans have suffered wildfires and a record number of costly disasters, which they now pay for through their insurance.
+
+Geoengineering covers a wide range of responses, summed up in the infographic of document 4. Some techniques reflect sunlight back into space: stratospheric aerosols, marine cloud brightening, which consists in spraying fine seawater towards low clouds (document 3), or even space mirrors. Others absorb carbon dioxide, through ocean fertilization, carbon mineralization, direct air capture or reforestation. Solar geoengineering imitates volcanoes: Mount Pinatubo cooled the planet by up to 0.5°C in 1991. Its main appeal is its cost. Injecting about two million tonnes of sulphur a year to lower temperatures by 1°C might cost a few tens of billions of dollars annually, whereas decarbonising the world economy would cost trillions (document 1).
+
+Yet side effects remain largely unknown: according to modelling quoted in document 3, brightening clouds off Namibia could cause droughts in Brazil and threaten its rainforests, while some regions might even get warmer. Direct air capture, the most advanced technique, removes only about 10,000 tonnes of carbon dioxide a year, compared with some 35 billion tonnes emitted worldwide. Experts also fear that such a quick fix may distract governments from reducing emissions. The 2016 cartoon in document 5 takes this criticism further: a factory labelled ``Problem Inc.'' releases carbon dioxide, while ``Solution Inc.'', connected to it by a pipe, emits sulphur dioxide. The irony is clear: the remedy appears as harmful as the disease.
+
+This is why the documents call for research rather than hasty deployment. Richard Spinrad, head of the US agency NOAA, suspects that some techniques will be part of the solution, but insists that their consequences for ecosystems must first be understood (document 2). He also defends his agency's funding, which some members of Congress threaten to cut, and notes that Americans, increasingly aware of the cost of climate change, may be more open to new technologies. Rigorous science could also counter the conspiracy theories that BBC Weather has seen spreading online (document 3).
+
+Geoengineering can therefore contribute to the fight against climate change, but only as a complement to emission cuts. Cheap and increasingly respectable, it will remain a risky gamble as long as its side effects have not been properly assessed.
+
+\textbf{(488 words, title included)}
+
+\hypertarget{arabe}{%
+\section{Arabe}\label{arabe}}
+
+\hypertarget{synthuxe8se-ux639ux644ux649-ux636ux648ux621-ux627ux644ux648ux62bux627ux626ux642-ux627ux644ux62eux645ux633-ux627ux644ux645ux642ux62fux645ux629-ux623ux62fux646ux627ux647-ux625ux644ux649-ux623ux64a-ux62dux62f-ux64aux645ux643ux646-ux627ux639ux62aux628ux627ux631-ux627ux644ux62aux646ux645ux64aux629-ux627ux644ux645ux633ux62aux62fux627ux645ux629-ux630ux627ux62a-ux623ux648ux644ux648ux64aux629-ux641ux64a-ux645ux633ux62aux642ux628ux644-ux633ux643ux627ux646-ux627ux644ux639ux627ux644ux645-ux627ux644ux639ux631ux628ux64a}{%
+\subsection{Synthèse --- على ضوء الوثائق الخمس المقدمة أدناه، إلى أي حد يمكن اعتبار التنمية المستدامة ذات أولوية في مستقبل سكان العالم العربي؟}\label{synthuxe8se-ux639ux644ux649-ux636ux648ux621-ux627ux644ux648ux62bux627ux626ux642-ux627ux644ux62eux645ux633-ux627ux644ux645ux642ux62fux645ux629-ux623ux62fux646ux627ux647-ux625ux644ux649-ux623ux64a-ux62dux62f-ux64aux645ux643ux646-ux627ux639ux62aux628ux627ux631-ux627ux644ux62aux646ux645ux64aux629-ux627ux644ux645ux633ux62aux62fux627ux645ux629-ux630ux627ux62a-ux623ux648ux644ux648ux64aux629-ux641ux64a-ux645ux633ux62aux642ux628ux644-ux633ux643ux627ux646-ux627ux644ux639ux627ux644ux645-ux627ux644ux639ux631ux628ux64a}}
+
+\emph{Problématique : إلى أي مدى تشكل التنمية المستدامة أولوية لمستقبل الشعوب العربية؟}
+
+\textbf{التنمية المستدامة في العالم العربي: ضرورة لا ترف}
+
+يضم هذا الملف خمس وثائق متنوعة: ثلاثة مقالات صحفية نشرتها مواقع جدلية والجزيرة وبي بي سي عربي، ورسم بياني من موقع سكاي نيوز عربية حول استخدام المياه، وملصق يعرض أهداف التنمية المستدامة. وتطرح هذه الوثائق سؤالا جوهريا: إلى أي مدى تشكل التنمية المستدامة أولوية لمستقبل الشعوب العربية؟ سنعرض أولا مفهوم التنمية المستدامة وشروطها، ثم نتوقف عند أزمة المياه بوصفها أخطر التحديات، وأخيرا عند دور الإعلام في مواجهتها.
+
+تؤكد الوثيقة الأولى أن التنمية المستدامة مفهوم شامل يجمع بين النمو الاقتصادي والتقدم الاجتماعي وحماية البيئة. وترى الكاتبة أن تحقيقها مستحيل في ظل الفساد والفقر وغياب الحريات، لأنها تحتاج إلى مؤسسات فعالة خاضعة للمساءلة، وإلى العدل والمساواة وسيادة القانون، ولذلك تربط بينها وبين الديمقراطية. ومن أولويات هذه التنمية القضاء على الفقر، إذ يعيش نحو 30 في المائة من المصريين تحت خط الفقر، إلى جانب ضمان الماء والصرف الصحي والطاقة النظيفة بأسعار معقولة، كألواح الطاقة الشمسية في القرى النائية. وتظهر هذه الأهداف نفسها في الوثيقة الخامسة التي تعرض أهداف التنمية المستدامة السبعة عشر، من القضاء على الفقر والجوع إلى العمل المناخي والسلام والعدل، وتشدد على ترابطها وعلى ضرورة تحقيقها جميعا بحلول عام 2030 حتى لا يتخلف أحد عن الركب.
+
+غير أن الماء يبدو التحدي الأكثر إلحاحا. فحسب الوثيقة الثالثة، يعيش 390 مليون عربي، أي نحو 90 في المائة من السكان، في دول تعاني من ندرة المياه، وتقع 19 دولة عربية من أصل 22 في نطاق الشح المائي. فالعراق، بلاد الرافدين، صار يعاني من الجفاف، ولا يتجاوز نصيب الفرد في مصر 500 متر مكعب سنويا، أي نصف حد الفقر المائي، كما تراجع نصيب الفرد في المغرب من 2500 متر مكعب عام 1960 إلى نحو 650 اليوم. وتؤكد الوثيقة الرابعة خطورة الوضع، فالمنطقة العربية من أفقر مناطق العالم مائيا، وكثير من دولها يستخدم من المياه أكثر مما تتيحه مواردها، ولا سيما الدول المصدرة للنفط كالإمارات والسعودية، وكذلك الأردن ومصر واليمن. وتحاول الحكومات الاستجابة لهذه الأزمة: فقد قطعت تونس الماء سبع ساعات يوميا، ودعا الرئيس الجزائري إلى إنشاء محطات لتحلية مياه البحر، وأقامت السعودية مشاريع لحصاد مياه الأمطار. لكن الخبراء يرون أن ذلك لا يكفي من دون تغيير جذري في ثقافة الاستهلاك والتخلي عن الإسراف.
+
+ولا يمكن مواجهة هذه التحديات من دون إعلام قادر على توعية الجمهور. إلا أن الوثيقة الثانية تكشف ضعف الصحافة البيئية العربية، فهي تهتم بالكوارث كالسيول وانجراف التربة وبخسائرها المادية والبشرية، لكنها تهمل أسبابها والجهات المسؤولة عنها وآثارها على مستقبل السكان، بسبب نقص المعلومات. ويرى الباحث عمر عاصي أن هذا الإعلام ما زال متأخرا جدا، لأنه يعتمد على ترجمة مصادر أجنبية ويكتفي بوجهة نظر واحدة، فضلا عن غياب التمويل والاهتمام الرسمي. ويدعو إلى تناول كل قضية من زوايا ثلاث، اجتماعية وبيئية واقتصادية، إذ لا يجوز مثلا الإشادة بمشروع للطاقة الشمسية في بلد يستغل عمل الأطفال.
+
+وخلاصة القول إن الوثائق تجمع على أن التنمية المستدامة ليست ترفا بل أولوية حيوية لمستقبل العالم العربي، ولا سيما في ظل الفقر وندرة المياه. غير أن تحقيقها يتطلب مؤسسات عادلة وديمقراطية، وسياسات مائية رشيدة، وإعلاما واعيا، ومواطنين مسؤولين.
+
+\textbf{(478 كلمة، بما فيها العنوان)}
+
+\hypertarget{espagnol}{%
+\section{Espagnol}\label{espagnol}}
+
+\hypertarget{synthuxe8se-de-quuxe9-manera-estuxe1-evolucionando-el-modelo-turuxedstico-espauxf1ol}{%
+\subsection{Synthèse --- ¿De qué manera está evolucionando el modelo turístico español?}\label{synthuxe8se-de-quuxe9-manera-estuxe1-evolucionando-el-modelo-turuxedstico-espauxf1ol}}
+
+\emph{Problématique : en qué medida el modelo turístico español está pasando de la expansión sin freno a la búsqueda de límites.}
+
+\textbf{Turismo en España: del récord al límite}
+
+El dossier reúne tres artículos de prensa de 2024 y dos viñetas satíricas que describen un turismo de récord frente al creciente malestar de los vecinos. Cabe preguntarse, por lo tanto, en qué medida el modelo turístico español está pasando de la expansión sin freno a la búsqueda de límites. Se analizarán sucesivamente su peso económico, sus efectos negativos y las alternativas propuestas.
+
+En primer lugar, el turismo sigue siendo un motor esencial de la economía. La patronal Exceltur (documento 2) preveía que la actividad, impulsada por el regreso de los turistas asiáticos, creciera un 8,6 \% en 2024 y aportara por primera vez más de 200.000 millones de euros. Además, el documento 3 recuerda que, tras la crisis de 2008, el capital encontró en el turismo una nueva fuente de beneficios, y que la pandemia reveló hasta qué punto muchos territorios dependen de una sola actividad.
+
+Sin embargo, este éxito tiene un coste social y ambiental cada vez más visible. El documento 1, firmado por plataformas vecinales, denuncia una industria descontrolada que expulsa a los habitantes de los centros históricos de Palma, Cádiz o Barcelona y convierte el patrimonio común en el negocio de unos pocos. Pese al turismo, Cádiz mantiene un paro superior al 20 \% y el barrio de La Viña ha perdido la quinta parte de su población en diez años. A ello se suman el consumo de agua en un país amenazado por la sequía y la destrucción de la posidonia en Baleares. La viñeta del documento 5 resume este proceso con humor parodiando «13, Rue del Percebe»: todos los pisos se han convertido en alojamientos de Airbnb o Booking, la planta baja alberga un Starbucks y al residente solo le queda una buhardilla de 20 metros cuadrados por 700 euros. Incluso las grandes empresas del documento 2 atribuyen el rechazo ciudadano al auge de los pisos turísticos.
+
+Por ello, el modelo se cuestiona en la calle. En abril de 2024, las manifestaciones de «Canarias tiene un límite» abrieron un nuevo ciclo de protestas que une a ecologistas, vecinos y sindicatos (documento 3). La viñeta de Padylla (documento 4) rechaza la etiqueta de «turismofobia»: a unos turistas que preguntan, en un español torpe, si los manifestantes son «turismofóbicos», estos responden que son «canariasfílicos», es decir, que defienden su tierra sin odiar al visitante. Sus pancartas reclaman un turismo sostenible, una moratoria y una ecotasa. El documento 3 va más lejos y propone decrecer y transformar: ningún aeropuerto nuevo, el fin de la promoción internacional y programas públicos de turismo social, aunque advierte del riesgo de reservar los viajes a las élites. El documento 1, por su parte, exige límites urgentes y un diálogo con la ciudadanía.
+
+En definitiva, el modelo turístico español evoluciona del crecimiento ilimitado hacia una exigencia de sostenibilidad: vecinos, activistas e incluso parte del sector reconocen que las ciudades deben seguir siendo, ante todo, lugares para vivir.
+
+\textbf{(490 palabras, título incluido)}
+
+\hypertarget{italien}{%
+\section{Italien}\label{italien}}
+
+\hypertarget{synthuxe8se-in-che-misura-litalia-subisce-e-fa-fronte-al-sovraffollamento-turistico}{%
+\subsection{Synthèse --- In che misura l'Italia subisce e fa fronte al sovraffollamento turistico?}\label{synthuxe8se-in-che-misura-litalia-subisce-e-fa-fronte-al-sovraffollamento-turistico}}
+
+\emph{Problématique : in che misura l'Italia subisca le conseguenze del sovraffollamento e quali risposte riesca a darvi.}
+
+\textbf{Sovraturismo: il prezzo del successo italiano}
+
+Il dossier riunisce tre articoli del 2024, una tabella statistica e una fotografia. Tutti trattano dell'overtourism, che l'Organizzazione mondiale del turismo definisce come l'impatto eccessivo e negativo dei visitatori sulla qualità della vita dei residenti. Ci si chiede quindi in che misura l'Italia ne subisca le conseguenze e quali risposte riesca a darvi. Si esamineranno prima i danni del sovraffollamento, poi le misure adottate e i loro limiti.
+
+Innanzitutto, l'Italia subisce gli effetti di un successo turistico concentrato in pochi luoghi. Come mostra la tabella del documento 4, nel 2022 i turisti europei hanno trascorso oltre 93 milioni di notti negli alberghi italiani: quasi un terzo di queste presenze era tedesco e più di un quinto si concentrava nel solo Trentino-Alto Adige, davanti al Veneto e alla Lombardia. Nelle città, l'afflusso fa salire gli affitti, alimenta il lavoro precario e spinge i residenti fuori dal centro: a Firenze gli affitti sono aumentati di oltre il 20\% da giugno 2023, mentre a Napoli chi vuole restare deve spesso accettare un impiego precario nella ristorazione (documento 1). Il documento 3 cita le Cinque Terre, dove 3.500 abitanti accolgono più di tre milioni di visitatori all'anno, e le Dolomiti, il cui ecosistema è messo a dura prova. A ciò si aggiungono l'inquinamento delle navi da crociera e i rifiuti: a Venezia un cestino si riempie in un quarto d'ora. La fotografia del documento 5 illustra questa saturazione: in piena estate, una folla compatta occupa tutta la piazza davanti alla fontana di Trevi, rendendo la visita scomoda e rischiosa per il monumento stesso.
+
+Per far fronte al fenomeno, le amministrazioni sperimentano diverse soluzioni. Venezia ha sperimentato, per 29 giornate, un contributo d'accesso di 5 euro per i turisti che non pernottano in città, mentre le Cinque Terre hanno limitato gli ingressi e imposto la prenotazione online. Nelle Dolomiti si punta su sensori per monitorare i flussi, parcheggi di interscambio e mobilità sostenibile, mentre il lago di Tenno è presentato come un modello di gestione (documento 3). A Firenze, invece, la delibera che bloccava i nuovi affitti brevi in centro è caduta, e la nuova sindaca chiede un intervento nazionale. L'opinione pubblica appare divisa: secondo il sondaggio Jfc citato nel documento 2, il 49\% degli italiani approva misure di controllo dei flussi, ma il 38,4\% vi si oppone, in parte in nome della libertà di circolare nei luoghi pubblici. Infine, molte misure restano insufficienti: per Massimo Feruzzi, aumentare la tassa di soggiorno fa crescere le entrate dei comuni senza ridurre gli arrivi.
+
+In conclusione, l'Italia subisce pienamente il sovraffollamento, nelle città d'arte come nei luoghi naturali. Le risposte esistono, ma restano locali e spesso parziali. Come suggerisce il documento 3, la sfida consiste nel conciliare i benefici economici del turismo con la tutela del territorio, per esempio attraverso un turismo enogastronomico capace di valorizzare luoghi meno conosciuti.
+
+\textbf{(478 parole, titolo compreso)}
+
+\end{document}

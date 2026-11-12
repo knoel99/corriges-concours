@@ -1,0 +1,1778 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP TSI — Mathématiques 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP TSI}
+\fancyhead[R]{\small Maths 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP TSI — Mathématiques 2026\par}\medskip
+  {\large CCINP · TSI · Maths · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format.} Épreuve de 4 heures, calculatrice interdite, deux problèmes indépendants, 40 questions numérotées Q1 à Q40 (beaucoup avec sous-questions). Les parties de chaque problème sont « globalement indépendantes » : on peut avancer en admettant un résultat.
+
+\textbf{Problème 1 --- Calcul d'une intégrale via les nombres complexes (Q1--Q19).} On calcule \(\displaystyle\int_0^{2\pi}\frac{\cos(nt)}{a-\cos t}\,\mathrm dt\) pour \(|a|>1\). Pour cela, on développe la même fonction \(f:t\mapsto\frac1{a-\cos t}\) de deux façons en série de cosinus, puis on identifie les coefficients.
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Partie I (Q1--Q5)} : racines \(\alpha,\beta\) du trinôme \(z^2-2az+1\) ; l'une, notée \(\alpha\), est de module \(<1\).
+\item
+  \emph{II.1 (Q6--Q9)} : \(f\) est continue, paire, \(2\pi\)-périodique ; le théorème de Dirichlet donne \(f=\sum a_n\cos(nt)\).
+\item
+  \emph{II.2 (Q10--Q15)} : formules d'Euler, réduction au même dénominateur et série géométrique donnent \(f=\sum\gamma_n\cos(nt)\), avec des \(\gamma_n\) explicites.
+\item
+  \emph{II.3 (Q16--Q19)} : la différence \(u_n=a_n-\gamma_n\) vérifie les hypothèses d'un théorème d'unicité admis (Q17 : convergence absolue par deux intégrations par parties), d'où la formule et un calcul explicite.
+\end{itemize}
+
+\textbf{Problème 2 --- Matrices aléatoires (Q20--Q40).} Matrices \(2\times2\) dont les coefficients sont des variables aléatoires discrètes.
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Partie I (Q20--Q24)} : produit scalaire \(\mathrm{Tr}(AB^\top)\), décomposition symétrique + antisymétrique, distance à \(\mathcal S_2(\mathbb R)\).
+\item
+  \emph{Partie II (Q25--Q27)} : lois de la trace et du déterminant pour des coefficients de Rademacher.
+\item
+  \emph{Partie III (Q28--Q31)} : distance à \(\mathcal S_2(\mathbb R)\) d'une matrice à coefficients géométriques, Bienaymé-Tchebychev.
+\item
+  \emph{Partie IV (Q32--Q40)} : coefficients de Poisson ; inversibilité, loi de la trace, éléments propres, probabilité de diagonalisabilité \(g(\lambda)\), approximation numérique (Python, Taylor avec reste intégral), série entière, valeurs intermédiaires et dichotomie.
+\end{itemize}
+
+\textbf{Notions mobilisées.} Trinôme et nombres complexes ; séries de Fourier (coefficients, théorème de Dirichlet) ; séries géométriques et séries entières (rayon, continuité) ; intégration par parties ; comparaison de séries ; produit scalaire, orthogonalité, projection ; lois usuelles discrètes, indépendance, formule des probabilités totales, Bienaymé-Tchebychev ; réduction en dimension 2 ; formule de Taylor avec reste intégral ; Python ; théorème des valeurs intermédiaires, dichotomie.
+
+\textbf{Difficulté et gestion du temps.} Le rapport 2026 juge le sujet « relativement long », de difficulté raisonnable, et rappelle que de nombreuses questions relevaient directement du cours. Les questions de cours (Q8, Q12, Q25, Q28, Q32) et les calculs directs (Q1--Q7, Q20--Q27, Q29--Q36) doivent tous être traités : ils représentent l'essentiel de l'épreuve. Compter environ 1 h 40 pour le problème 1 et 2 h 10 pour le problème 2, dont la partie IV est la plus longue.
+
+\textbf{Ce que le jury a vu (rapport 2026).} Le rapport ne donne pas de statistiques chiffrées, mais il signale clairement les questions qui ont départagé les copies :
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{mal réussies alors qu'accessibles} : Q3 (« très souvent malmenée ou bâclée »), Q4 (« rarement traitée correctement »), Q12 (question de cours à « très faible réussite »), Q14 (peu abordée), Q34 b) (calculs rarement aboutis), Q37 b) (très peu traitée) ;
+\item
+  \emph{rarement abordées} : Q37 c) à g), puis Q39 et Q40, « quasiment jamais » abordées ;
+\item
+  \emph{justifications réclamées partout} : théorème de Dirichlet (Q9), non-nullité d'un vecteur propre (Q35), formule des probabilités totales avec son système complet (Q34 a, Q36 a), indépendance dans chaque calcul de loi ;
+\item
+  \emph{bien réussies} : Q2, Q16, Q37 a) et, plus généralement, l'informatique.
+\end{itemize}
+
+Le rapport note aussi que trop de candidats ne maîtrisent pas leur cours sur les séries de Fourier. Les questions de fin de problème 2 (Q37 b--h, Q38--Q40) sont donc une vraie source de points pour qui garde du temps.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Problème 1 --- Calcul d'une intégrale via les nombres complexes
+
+\hypertarget{partie-i-lemme-pruxe9liminaire}{%
+\section{Partie I --- Lemme préliminaire}\label{partie-i-lemme-pruxe9liminaire}}
+
+Un trinôme réel à discriminant positif, ses relations coefficients-racines, et une petite inégalité sur les modules : c'est ce qui permettra en partie II de développer en série géométrique.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Calculez le discriminant du trinôme et utilisez l'hypothèse sur \(a\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'égalité est demandée pour tout complexe \(z\) : invoquez la factorisation d'un trinôme unitaire par ses racines, pas seulement l'existence de racines.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le trinôme réel \(P(z)=z^2-2az+1\) a pour discriminant
+
+\equationajustee{\Delta=4a^2-4=4(a^2-1).}
+
+Comme \(|a|>1\), on a \(a^2>1\), donc \(\Delta>0\). Il y a deux racines réelles distinctes, \(a-\sqrt{a^2-1}\) et \(a+\sqrt{a^2-1}\).
+
+En les notant \(\alpha\) et \(\beta\), la factorisation d'un trinôme unitaire donne :
+
+\equationajustee{\boxed{\forall z\in\mathbb C,\quad z^2-2az+1=(z-\alpha)(z-\beta)}}
+
+\equationajustee{\{\alpha,\beta\}=\big\{a-\sqrt{a^2-1},\ a+\sqrt{a^2-1}\big\}.}
+
+Retenir : \(\alpha\) et \(\beta\) sont \textbf{réels}, ce qui servira constamment.
+
+\begin{jury}
+
+Le rapport 2026 note : « Beaucoup de candidats calculent le discriminant, dont le signe pose parfois problème, mais ne savent pas exploiter le résultat obtenu. » Le signe de \(\Delta\) se lit sur \(a^2-1>0\), et l'exploitation attendue est la factorisation, valable pour tout \(z\).
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Développez le produit de Q1 et identifiez les coefficients.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Pour tout \(z\), on développe :
+
+\equationajustee{(z-\alpha)(z-\beta)=z^2-(\alpha+\beta)z+\alpha\beta.}
+
+Deux polynômes égaux ont mêmes coefficients, donc :
+
+\equationajustee{\boxed{\begin{aligned}\alpha+\beta&=2a\\ \alpha\beta&=1\end{aligned}}}
+
+\begin{methode}
+
+La relation \(\alpha\beta=1\) est l'information utile de toute la partie : elle donne \(\alpha\neq0\), \(\beta=1/\alpha\) et \(|\alpha|\,|\beta|=1\), ce qui évite de manipuler les radicaux.
+
+\end{methode}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Passez aux modules dans \(\alpha\beta=1\) et combinez avec les deux hypothèses.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour majorer \(|a|\), écrivez \(2a=\alpha+\beta\) et utilisez une inégalité classique sur les modules, en la nommant.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+On a \(|\alpha|\,|\beta|=1\). Supposons \(|\alpha|\ge1\) et \(|\beta|\ge1\). Alors
+
+\equationajustee{\begin{aligned}1=|\alpha|\,|\beta|&\ge|\alpha|\\ &\ge1,\end{aligned}}
+
+donc \(|\alpha|=1\), puis \(|\beta|=1/|\alpha|=1\) :
+
+\equationajustee{|\alpha|=|\beta|=1.}
+
+Par Q2 et l'inégalité triangulaire dans \(\mathbb C\) :
+
+\equationajustee{\begin{aligned}2|a|&=|\alpha+\beta|\\ &\le|\alpha|+|\beta|\\ &=2,\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{|a|\le1.}}
+
+\begin{piege}
+
+Pas d'inégalité entre nombres complexes : on compare des \textbf{modules}, jamais \(\alpha\) et \(1\). Et l'implication (produit égal à 1 et chacun \(\ge1\), donc chacun égal à 1) doit être écrite : c'est le cœur de la question.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 juge la question « très souvent malmenée ou bâclée » : « Peu de candidats pensent à utiliser l'inégalité triangulaire ou l'utilisent sans la citer. » Il ajoute qu'affirmer « il est clair que » est du plus mauvais effet.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Lisez Q3 comme une implication et regardez sa contraposée.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Q3 montre l'implication
+
+\equationajustee{\big(|\alpha|\ge1\ \text{et}\ |\beta|\ge1\big)\Longrightarrow|a|\le1.}
+
+Par contraposition, comme \(|a|>1\) :
+
+\equationajustee{\boxed{|\alpha|<1\quad\text{ou}\quad|\beta|<1.}}
+
+Les deux ne peuvent avoir lieu ensemble, car \(|\alpha|\,|\beta|=1\). Avec la convention \(|\alpha|<1\) de l'énoncé : \(\alpha\) est réel et non nul, donc \(\alpha\in\,]-1,1[\setminus\{0\}\).
+
+Ensuite \(|\beta|=1/|\alpha|>1\) et \(0<1-\alpha^2<1\). Cette remarque légitime toutes les divisions par \(1-\alpha^2\) de la suite.
+
+\begin{jury}
+
+Question « rarement traitée correctement » selon le rapport 2026 : « Trop peu de candidats font le lien avec le résultat précédent. » Le jury précise qu'écrire seulement que le résultat découle de la question précédente ne rapporte aucun point : il faut nommer la contraposition.
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Appliquez Q1 avec \(a=2\) et repérez la racine de module strictement inférieur à 1.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Pour \(a=2\), le trinôme \(z^2-4z+1\) a pour discriminant \(\Delta=16-4=12>0\), et \(\sqrt{12}=2\sqrt3\). Ses racines sont
+
+\equationajustee{\frac{4\pm2\sqrt3}2=2\pm\sqrt3.}
+
+Comme \(1<\sqrt3<2\), on a \(0<2-\sqrt3<1<2+\sqrt3\). Donc
+
+\equationajustee{\boxed{\begin{aligned}\alpha&=2-\sqrt3\\ \beta&=2+\sqrt3\end{aligned}}}
+
+Contrôle : \(\alpha+\beta=4=2a\) et \(\alpha\beta=4-3=1\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q5-racines-disque-unite.pdf}
+\caption*{Figure 1 --- Racines de z² − 4z + 1 (a = 2) : α = 2 − √3 dans le disque
+unité, β = 2 + √3 dehors, a milieu des deux}
+\end{figure}
+
+\begin{piege}
+
+Inverser les rôles de \(\alpha\) et \(\beta\) fausserait Q19 : on obtiendrait une intégrale négative d'une fonction positive.
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, cette résolution a donné du fil à retordre à bon nombre de candidats : « Certains ne simplifient pas racine de 12. »
+
+\end{jury}
+
+\hypertarget{partie-ii-calcul-dune-intuxe9grale}{%
+\section{Partie II --- Calcul d'une intégrale}\label{partie-ii-calcul-dune-intuxe9grale}}
+
+On va écrire \(f\) comme somme d'une série de cosinus de deux manières : par le cours (II.1), puis par un calcul explicite (II.2) ; II.3 identifie les deux.
+
+\hypertarget{ii.1-une-premiuxe8re-expression-en-suxe9rie-trigonomuxe9trique}{%
+\subsection{II.1 --- Une première expression en série trigonométrique}\label{ii.1-une-premiuxe8re-expression-en-suxe9rie-trigonomuxe9trique}}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Comparez \(|a|\) et \(|\cos t|\) avec l'inégalité triangulaire.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Soit \(t\in\mathbb R\). On a \(|\cos t|\le1\), donc :
+
+\equationajustee{\begin{aligned}|a-\cos t|&\ge|a|-|\cos t|\\ &\ge|a|-1\\ &>0.\end{aligned}}
+
+\equationajustee{\boxed{\forall t\in\mathbb R,\quad a-\cos t\neq0.}}
+
+\begin{piege}
+
+L'hypothèse est \(|a|>1\), pas \(a>1\) : le cas \(a<-1\) existe (alors \(f<0\)). L'inégalité triangulaire traite les deux cas à la fois. Le rapport 2026 relève aussi que se contenter de dire que \(a\) est différent de 1 ne suffit pas.
+
+\end{piege}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Trois vérifications séparées, chacune héritée d'une propriété du cosinus ; pour la continuité, Q6 est indispensable mais pas suffisante.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Continuité} : \(t\mapsto a-\cos t\) est continue sur \(\mathbb R\) (différence d'une constante et de \(\cos\)) et ne s'annule pas (Q6). Son inverse \(f\) est donc continue sur \(\mathbb R\).
+\item
+  \emph{Parité} : \(\mathbb R\) est symétrique par rapport à \(0\), et pour tout \(t\in\mathbb R\), \(f(-t)=\frac1{a-\cos(-t)}=f(t)\), car \(\cos\) est paire.
+\item
+  \emph{Périodicité} : pour tout \(t\in\mathbb R\), \(f(t+2\pi)=f(t)\), car \(\cos\) est \(2\pi\)-périodique.
+\end{itemize}
+
+\textbf{\(f\) est continue, paire et \(2\pi\)-périodique sur \(\mathbb R\).}
+
+Pour \(a=2\), \(f\) oscille entre \(\frac13\), atteint en \(t\equiv\pi\), et \(1\), atteint en \(t\equiv0\).
+
+\begin{jury}
+
+Le rapport 2026 insiste sur trois points. La non-annulation du dénominateur est souvent oubliée et ne suffit pas seule pour la continuité. « Pour la parité, ne pas oublier de rappeler que le domaine est centré en 0. » Enfin : « La quantification est très souvent oubliée. »
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Rappelez les formules pour une fonction \(T\)-périodique avec ici \(T=2\pi\). Attention au coefficient constant.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Regardez la forme de la somme annoncée en Q9 pour savoir quelle normalisation de \(a_0\) est attendue.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\(f\) est \(2\pi\)-périodique et continue par morceaux. Ses coefficients de Fourier sont :
+
+\equationajustee{\boxed{\begin{aligned}a_0&=\frac1{2\pi}\int_0^{2\pi}f(t)\,\mathrm dt\\ a_n&=\frac1\pi\int_0^{2\pi}f(t)\cos(nt)\,\mathrm dt\quad(n\ge1)\\ b_n&=\frac1\pi\int_0^{2\pi}f(t)\sin(nt)\,\mathrm dt\quad(n\ge1)\end{aligned}}}
+
+Comme \(f\) est paire, \(t\mapsto f(t)\sin(nt)\) est impaire et \(2\pi\)-périodique. En intégrant sur \([-\pi,\pi]\) :
+
+\equationajustee{b_n=\frac1\pi\int_{-\pi}^{\pi}f(t)\sin(nt)\,\mathrm dt=0.}
+
+\begin{piege}
+
+Avec la normalisation \(a_0=\frac1\pi\int_0^{2\pi}f\), la série de Fourier s'écrit \(\frac{a_0}2+\sum_{n\ge1}\dots\) et l'égalité de Q9 serait fausse. L'énoncé impose implicitement \(a_0\) = valeur moyenne de \(f\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 demande de ne pas oublier le coefficient constant : « Les coefficients de Fourier sont trop souvent mal connus. »
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Quel théorème donne la convergence ponctuelle d'une série de Fourier ? Vérifiez soigneusement ses hypothèses.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La limite fournie par ce théorème est une demi-somme de limites à droite et à gauche : que vaut-elle pour une fonction continue ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\(t\mapsto a-\cos t\) est \(\mathcal C^\infty\) et ne s'annule pas, donc \(f\) est \(\mathcal C^\infty\), a fortiori \(\mathcal C^1\) par morceaux. Elle est de plus \(2\pi\)-périodique.
+
+Par le théorème de Dirichlet, la série de Fourier de \(f\) converge en tout \(t\) vers \(\frac12\big(f(t^+)+f(t^-)\big)\), qui vaut \(f(t)\) puisque \(f\) est continue. Avec \(b_n=0\) :
+
+\equationajustee{\boxed{\begin{aligned}\forall t\in\mathbb R,\quad f(t)&=a_0+\sum_{n=1}^{+\infty}a_n\cos(nt)\\ &=\sum_{n=0}^{+\infty}a_n\cos(nt).\end{aligned}}}
+
+\begin{jury}
+
+Rapport 2026 : « Très peu de candidats pensent à justifier la convergence de la série de Fourier vers la fonction avec le théorème de Dirichlet. » La nullité des \(b_n\) par parité est, elle, bien employée. Il faut donc nommer le théorème et vérifier ses hypothèses : périodicité, \(\mathcal C^1\) par morceaux, continuité pour identifier la limite.
+
+\end{jury}
+
+\hypertarget{ii.2-une-seconde-expression-en-suxe9rie-trigonomuxe9trique}{%
+\subsection{II.2 --- Une seconde expression en série trigonométrique}\label{ii.2-une-seconde-expression-en-suxe9rie-trigonomuxe9trique}}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Formule d'Euler pour \(\cos t\), puis multipliez par une quantité non nulle bien choisie.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Soit \(t\in\mathbb R\). Avec \(\cos t=\frac{e^{it}+e^{-it}}2\) :
+
+\equationajustee{\begin{aligned}2e^{it}(a-\cos t)&=2ae^{it}-e^{2it}-1\\ &=-\big((e^{it})^2-2ae^{it}+1\big).\end{aligned}}
+
+Le membre de gauche est non nul (Q6 et \(e^{it}\neq0\)), donc le trinôme aussi, et
+
+\equationajustee{\boxed{\forall t\in\mathbb R,\quad\frac1{a-\cos t}=\frac{-2e^{it}}{(e^{it})^2-2ae^{it}+1}.}}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Première égalité : Q1 en \(z=e^{it}\). Seconde : utilisez \(\beta=1/\alpha\) pour tout écrire avec \(\alpha\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Plutôt que de chercher vous-même la décomposition, partez du membre de droite et réduisez au même dénominateur.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Par Q1 en \(z=e^{it}\), et Q10 :
+
+\equationajustee{\frac1{a-\cos t}=\frac{-2e^{it}}{(e^{it}-\alpha)(e^{it}-\beta)}.}
+
+Comme \(\beta=1/\alpha\), on factorise :
+
+\equationajustee{\begin{aligned}e^{it}-\alpha&=e^{it}(1-\alpha e^{-it})\\ e^{it}-\beta&=-\frac{1-\alpha e^{it}}\alpha\end{aligned}}
+
+Ces facteurs sont non nuls, car \(|e^{it}|=1\) alors que \(|\alpha|<1<|\beta|\). D'où
+
+\equationajustee{\frac1{a-\cos t}=\frac{2\alpha}{(1-\alpha e^{-it})(1-\alpha e^{it})}.}
+
+Par ailleurs :
+
+\equationajustee{\begin{aligned}\frac{\alpha e^{-it}}{1-\alpha e^{-it}}+\frac1{1-\alpha e^{it}}&=\frac{\alpha e^{-it}(1-\alpha e^{it})+1-\alpha e^{-it}}{(1-\alpha e^{-it})(1-\alpha e^{it})}\\ &=\frac{1-\alpha^2}{(1-\alpha e^{-it})(1-\alpha e^{it})}.\end{aligned}}
+
+Comme \(1-\alpha^2\neq0\) :
+
+\equationajustee{\boxed{\forall t\in\mathbb R,\quad\frac1{a-\cos t}=\frac{2\alpha}{1-\alpha^2}\left(\frac{\alpha e^{-it}}{1-\alpha e^{-it}}+\frac1{1-\alpha e^{it}}\right).}}
+
+\begin{methode}
+
+Quand le résultat d'une décomposition est donné, le vérifier en réduisant au même dénominateur est plus sûr et plus rapide que de recalculer les coefficients. Le rapport 2026 constate justement que cette seconde égalité a souvent donné lieu à des calculs laborieux.
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Question de cours : série géométrique. Deux réponses sont attendues, le rayon et la somme.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(\sum z^n\) converge pour \(|z|<1\). Pour \(|z|\ge1\), son terme général ne tend pas vers 0 et elle diverge grossièrement. Ainsi :
+
+\equationajustee{\boxed{R=1}}
+
+\equationajustee{\boxed{\forall z\in\mathbb C,\ |z|<1\ :\ \sum_{n=0}^{+\infty}z^n=\frac1{1-z}.}}
+
+\begin{piege}
+
+Écrire que la série est égale à \(\frac1{1-z}\) confond la série et sa somme ; la somme partielle, elle, vaut \(\frac{1-z^{N+1}}{1-z}\) pour \(z\neq1\). Et la formule de la somme n'a de sens que pour \(|z|<1\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 trouve « effarant » le faible taux de réussite de cette question de cours. « Régulièrement, le rayon de convergence ou la somme est exact, mais pas les deux. » Et : « Il y a trop de confusions entre somme partielle, série ou somme. »
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Appliquez Q12 à deux complexes de module \(|\alpha|\), en vérifiant la condition de convergence.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la seconde égalité, décalez l'indice dans la première série et regroupez les termes de même indice.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Soit \(t\) réel. On a \(|\alpha e^{-it}|=|\alpha|<1\) et \(|\alpha e^{it}|=|\alpha|<1\), donc, par Q12 :
+
+\equationajustee{\begin{aligned}\frac{\alpha e^{-it}}{1-\alpha e^{-it}}&=\alpha e^{-it}\sum_{n=0}^{+\infty}\alpha^ne^{-int}\\ &=\sum_{n=0}^{+\infty}\alpha^{n+1}e^{-i(n+1)t}\\ \frac1{1-\alpha e^{it}}&=\sum_{n=0}^{+\infty}\alpha^ne^{int}\end{aligned}}
+
+ce qui donne la première égalité. Les deux séries convergent ; on pose \(m=n+1\) dans la première et on isole le terme \(n=0\) de la seconde :
+
+\equationajustee{\begin{aligned}{}&\sum_{m=1}^{+\infty}\alpha^me^{-imt}+1+\sum_{m=1}^{+\infty}\alpha^me^{imt}\\ &=1+\sum_{m=1}^{+\infty}\alpha^m(e^{imt}+e^{-imt})\\ &=1+2\sum_{m=1}^{+\infty}\alpha^m\cos(mt).\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}\frac{\alpha e^{-it}}{1-\alpha e^{-it}}+\frac1{1-\alpha e^{it}}&=\sum_{n=0}^{+\infty}\alpha^{n+1}e^{-i(n+1)t}+\sum_{n=0}^{+\infty}\alpha^ne^{int}\\ &=1+2\sum_{n=1}^{+\infty}\alpha^n\cos(nt).\end{aligned}}}
+
+\begin{piege}
+
+Additionner deux séries terme à terme n'est licite que si les deux convergent : le dire. Et \(\alpha\) réel est utilisé pour écrire \(\alpha^m(e^{imt}+e^{-imt})=2\alpha^m\cos(mt)\) sans partie imaginaire parasite.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Ne pas oublier de vérifier que la raison de chaque série géométrique est de module strictement inférieur à 1. »
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Reportez Q13 dans Q11 et distribuez la constante.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Pour tout \(t\) :
+
+\equationajustee{\begin{aligned}f(t)&=\frac{2\alpha}{1-\alpha^2}\Big(1+2\sum_{n=1}^{+\infty}\alpha^n\cos(nt)\Big)\\ &=\frac{2\alpha}{1-\alpha^2}+\sum_{n=1}^{+\infty}\frac{4\alpha^{n+1}}{1-\alpha^2}\cos(nt).\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}{}&f(t)=\sum_{n=0}^{+\infty}\gamma_n\cos(nt)\\ &\gamma_0=\frac{2\alpha}{1-\alpha^2},\qquad\gamma_n=\frac{4\alpha^{n+1}}{1-\alpha^2}\ \ (n\ge1)\end{aligned}}}
+
+\begin{jury}
+
+Le rapport 2026 classe cette question parmi les moins réussies : peu abordée, et rarement de façon correcte. Elle ne demande pourtant que de combiner Q11 et Q13.
+
+\end{jury}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Reconnaissez une série géométrique dans \(|\gamma_n|\).
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+Pour \(n\ge1\) :
+
+\equationajustee{|\gamma_n|=\frac{4|\alpha|}{1-\alpha^2}|\alpha|^n.}
+
+C'est une constante fois le terme d'une série géométrique de raison \(|\alpha|\in[0,1[\), convergente. \textbf{\(\sum\gamma_n\) converge absolument.}
+
+\hypertarget{ii.3-conclusion}{%
+\subsection{II.3 --- Conclusion}\label{ii.3-conclusion}}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Les deux séries convergent vers la même valeur en chaque point : raisonnez sur les sommes partielles.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Pour \(t\) fixé, \(\sum a_n\cos(nt)\) et \(\sum\gamma_n\cos(nt)\) convergent, de somme \(f(t)\) (Q9, Q14). Les sommes partielles de \(\sum u_n\cos(nt)\) sont les différences de leurs sommes partielles. Par linéarité de la limite :
+
+\equationajustee{\boxed{\begin{aligned}\forall t\in\mathbb R,\quad\sum_{n=0}^{+\infty}u_n\cos(nt)&=f(t)-f(t)\\ &=0.\end{aligned}}}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+a) Dérivez la relation de périodicité, en justifiant la dérivée de \(t\mapsto g(t+T)\). b) Opérations sur les fonctions de classe \(\mathcal C^k\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+c) Partez de \(\int f''\cos(nt)\) et intégrez deux fois par parties en dérivant le cosinus ; les crochets disparaissent grâce à a). Le cas \(n=0\) est à part.
+
+\end{indication}
+
+\begin{indication}{3}
+
+d) Reliez \(\int f\cos(nt)\) à \(a_n\) par Q8, puis inégalité triangulaire. e) Série de Riemann, puis inégalité triangulaire sur \(u_n\).
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\textbf{a)} Soit \(g\) de classe \(\mathcal C^1\) et \(T\)-périodique : \(g(t+T)=g(t)\) pour tout \(t\).
+
+La fonction \(t\mapsto g(t+T)\) est la composée de \(g\) et de \(t\mapsto t+T\), de dérivée \(t\mapsto g'(t+T)\).
+
+En dérivant les deux membres, qui sont deux fonctions égales sur \(\mathbb R\) : \(g'(t+T)=g'(t)\) pour tout \(t\). \textbf{\(g'\) est \(T\)-périodique.}
+
+\textbf{b)} \(t\mapsto a-\cos t\) est \(\mathcal C^\infty\), et ce dénominateur ne s'annule pas (Q6). Son inverse est donc \(\mathcal C^\infty\). \textbf{\(f\) est de classe \(\mathcal C^2\) sur \(\mathbb R\).}
+
+\textbf{c)} Par a), \(f'\) est \(2\pi\)-périodique, donc \(f'(2\pi)=f'(0)\).
+
+\emph{Cas \(n=0\)} : le membre de gauche est nul, et \(-\int_0^{2\pi}f''=-(f'(2\pi)-f'(0))=0\).
+
+\emph{Cas \(n\ge1\)} : on intègre par parties avec \(u=\cos(n\,\cdot)\), \(v=f'\), puis avec \(u=\sin(n\,\cdot)\), \(v=f\).
+
+Ces fonctions sont de classe \(\mathcal C^1\) sur \([0,2\pi]\), car \(f\) est \(\mathcal C^2\) :
+
+\equationajustee{\begin{aligned}\int_0^{2\pi}f''(t)\cos(nt)\,\mathrm dt&=\big[f'(t)\cos(nt)\big]_0^{2\pi}+n\int_0^{2\pi}f'(t)\sin(nt)\,\mathrm dt\\ &=n\int_0^{2\pi}f'(t)\sin(nt)\,\mathrm dt,\end{aligned}}
+
+\equationajustee{\begin{aligned}\int_0^{2\pi}f'(t)\sin(nt)\,\mathrm dt&=\big[f(t)\sin(nt)\big]_0^{2\pi}-n\int_0^{2\pi}f(t)\cos(nt)\,\mathrm dt\\ &=-n\int_0^{2\pi}f(t)\cos(nt)\,\mathrm dt.\end{aligned}}
+
+Le premier crochet vaut \(f'(2\pi)-f'(0)=0\), le second est nul car \(\sin(2n\pi)=\sin0=0\). D'où
+
+\equationajustee{\boxed{\forall n\in\mathbb N,\quad n^2\int_0^{2\pi}f(t)\cos(nt)\,\mathrm dt=-\int_0^{2\pi}f''(t)\cos(nt)\,\mathrm dt.}}
+
+\textbf{d)} Pour \(n\ge1\), \(\int_0^{2\pi}f(t)\cos(nt)\,\mathrm dt=\pi a_n\) (Q8). Par c) et l'inégalité triangulaire :
+
+\equationajustee{\begin{aligned}n^2\pi|a_n|&=\Big|\int_0^{2\pi}f''(t)\cos(nt)\,\mathrm dt\Big|\\ &\le\int_0^{2\pi}|f''(t)|\,\mathrm dt,\end{aligned}}
+
+\equationajustee{\boxed{\forall n\ge1,\quad|a_n|\le\frac1{n^2\pi}\int_0^{2\pi}|f''(t)|\,\mathrm dt.}}
+
+\textbf{e)} Posons \(M=\int_0^{2\pi}|f''|\), fini car \(f''\) est continue sur un segment. Pour \(n\ge1\) :
+
+\equationajustee{0\le|a_n|\le\frac M\pi\cdot\frac1{n^2}.}
+
+La série de Riemann \(\sum\frac1{n^2}\) converge, donc par comparaison \textbf{\(\sum a_n\) converge absolument}. Puis \(|u_n|\le|a_n|+|\gamma_n|\) et \(\sum|\gamma_n|\) converge (Q15) : \textbf{\(\sum u_n\) converge absolument.}
+
+\begin{piege}
+
+En a), la périodicité de \(g'\) n'est pas immédiate : la primitive d'une fonction périodique ne l'est pas toujours (une primitive de la constante \(1\) est \(t\mapsto t\)). C'est l'exemple que donne le rapport 2026.
+
+\end{piege}
+
+\begin{piege}
+
+Dans c), le crochet \([f'(t)\cos(nt)]_0^{2\pi}\) ne s'annule pas parce que le cosinus vaudrait 1 aux bornes : il vaut \(f'(2\pi)-f'(0)\), et c'est la périodicité de \(f'\), donc a), qui le tue. C'est la raison d'être de a).
+
+\end{piege}
+
+\begin{jury}
+
+Pour c), le rapport 2026 écrit : « Bien que non obligatoire, il est conseillé de poser les intégrations par parties. » La vérification des hypothèses (fonctions de classe \(\mathcal C^1\)) est très appréciée. Pour e), il signale des mélanges entre convergence des séries et convergence des intégrales : ici, \(M\) est une intégrale sur un segment, finie, et seule une série est en jeu.
+
+\end{jury}
+
+\begin{methode}
+
+Chaque intégration par parties contre \(\cos(nt)\) ou \(\sin(nt)\) fait gagner un facteur \(1/n\) : une fonction périodique de classe \(\mathcal C^2\) a des coefficients de Fourier en \(O(1/n^2)\), donc absolument sommables.
+
+\end{methode}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Le théorème admis donne \(a_n=\gamma_n\). Revenez à la définition intégrale de \(a_n\) en distinguant \(n=0\) et \(n\ge1\).
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Par Q16, Q17 e) et le théorème admis, \(u_n=0\), donc \(a_n=\gamma_n\) pour tout \(n\).
+
+\begin{itemize}
+\tightlist
+\item
+  \(n\ge1\) :
+\end{itemize}
+
+\equationajustee{\begin{aligned}\int_0^{2\pi}\frac{\cos(nt)}{a-\cos t}\,\mathrm dt&=\pi a_n=\pi\gamma_n\\ &=\frac{4\pi\alpha^{n+1}}{1-\alpha^2}.\end{aligned}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(n=0\), qui donne la même formule :
+\end{itemize}
+
+\equationajustee{\begin{aligned}\int_0^{2\pi}\frac{\mathrm dt}{a-\cos t}&=2\pi a_0=2\pi\gamma_0\\ &=\frac{4\pi\alpha}{1-\alpha^2}.\end{aligned}}
+
+\equationajustee{\boxed{\forall n\in\mathbb N,\quad\int_0^{2\pi}\frac{\cos(nt)}{a-\cos t}\,\mathrm dt=\frac{4\pi\alpha^{n+1}}{1-\alpha^2},}}
+
+avec \(\alpha=a-\sqrt{a^2-1}\) si \(a>1\) et \(\alpha=a+\sqrt{a^2-1}\) si \(a<-1\).
+
+\begin{piege}
+
+Le cas \(n=0\) n'est pas automatique : devant \(a_0\), le facteur vaut \(2\pi\) et non \(\pi\).
+Il compense exactement le coefficient \(2\) (et non \(4\)) de \(\gamma_0\).
+
+Le rapport 2026 le rappelle : « Ne pas oublier de traiter le cas n = 0. »
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Appliquez Q18 en précisant les valeurs des paramètres, et la valeur de \(\alpha\) trouvée en Q5.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Factorisez \(1-\alpha^2\) pour faire apparaître \(2-\sqrt3\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+On applique Q18 avec \(a=2\) (qui vérifie \(|a|>1\)) et \(n=0\). Par Q5, \(\alpha=2-\sqrt3\). Alors :
+
+\equationajustee{\begin{aligned}\alpha^2&=7-4\sqrt3\\ 1-\alpha^2&=4\sqrt3-6=2\sqrt3(2-\sqrt3)\end{aligned}}
+
+Donc
+
+\equationajustee{\begin{aligned}\int_0^{2\pi}\frac{\mathrm dt}{2-\cos t}&=\frac{4\pi(2-\sqrt3)}{2\sqrt3(2-\sqrt3)}\\ &=\frac{2\pi}{\sqrt3}.\end{aligned}}
+
+\equationajustee{\boxed{\int_0^{2\pi}\frac{\mathrm dt}{2-\cos t}=\frac{2\pi\sqrt3}3\approx3{,}63.}}
+
+Contrôle de vraisemblance : \(\frac13\le f\le1\), donc l'intégrale est entre \(\frac{2\pi}3\approx2{,}09\) et \(2\pi\approx6{,}28\).
+
+\begin{jury}
+
+Le rapport 2026 demande, outre le renvoi à Q5, de préciser explicitement les valeurs \(a=2\) et \(n=0\) utilisées dans la formule de Q18.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Problème 2 --- Matrices aléatoires
+
+On note \(\mathcal A_2(\mathbb R)\) le sous-espace des matrices antisymétriques.
+
+\hypertarget{partie-i-guxe9nuxe9ralituxe9s-sur-lespace-vectoriel-mathcal-m_2mathbb-r}{%
+\section{\texorpdfstring{Partie I --- Généralités sur l'espace vectoriel \(\mathcal M_2(\mathbb R)\)}{Partie I --- Généralités sur l'espace vectoriel \textbackslash mathcal M\_2(\textbackslash mathbb R)}}\label{partie-i-guxe9nuxe9ralituxe9s-sur-lespace-vectoriel-mathcal-m_2mathbb-r}}
+
+Le produit \(\mathrm{Tr}(AB^\top)\) n'est autre que le produit scalaire canonique de \(\mathbb R^4\) ; symétriques et antisymétriques sont supplémentaires orthogonaux, ce qui donne la distance à \(\mathcal S_2(\mathbb R)\).
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Calcul direct de \(AB^\top\) ; seuls les coefficients diagonaux comptent.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+On a \(B^\top=\begin{pmatrix}b_1&b_3\\b_2&b_4\end{pmatrix}\), donc
+
+\equationajustee{AB^\top=\begin{pmatrix}a_1b_1+a_2b_2&a_1b_3+a_2b_4\\a_3b_1+a_4b_2&a_3b_3+a_4b_4\end{pmatrix}.}
+
+\equationajustee{\boxed{\begin{aligned}\langle A,B\rangle&=a_1b_1+a_2b_2+a_3b_3+a_4b_4\\ &=\sum_{k=1}^4a_kb_k.\end{aligned}}}
+
+\begin{piege}
+
+Le rapport 2026 relève que « Trop de candidats calculent le produit de A par B (au lieu de celui de A par la transposée de B) » et tombent malgré tout sur le résultat annoncé : le correcteur voit l'erreur. Écrivez \(B^\top\) avant de multiplier.
+
+\end{piege}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Quatre propriétés à vérifier ; l'expression de Q20 les rend immédiates, mais chacune doit être écrite.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Par Q20, pour \(A,A',B\in\mathcal M_2(\mathbb R)\) et \(\lambda\in\mathbb R\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{symétrie} : \(\sum b_ka_k=\sum a_kb_k\) ;
+\item
+  \emph{linéarité à gauche} : les coefficients de \(A+\lambda A'\) sont les \(a_k+\lambda a'_k\), d'où \(\langle A+\lambda A',\allowbreak B\rangle=\langle A,\allowbreak B\rangle+\lambda\langle A',\allowbreak B\rangle\) ; avec la symétrie, la forme est bilinéaire ;
+\item
+  \emph{positivité} : \(\langle A,A\rangle=\sum a_k^2\ge0\) ;
+\item
+  \emph{caractère défini} : une somme de carrés réels nulle impose \(a_k=0\) pour tout \(k\), soit \(A=0\).
+\end{itemize}
+
+\textbf{\(\langle\cdot,\cdot\rangle\) est un produit scalaire.}
+
+\begin{jury}
+
+Question bien traitée selon le rapport 2026, qui précise : « Les correcteurs attendent une justification rigoureuse, en particulier pour la propriété de définition positive du produit scalaire. » Annoncer qu'on « vérifie » une propriété ne vaut pas preuve.
+
+\end{jury}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Transposez. Pour l'orthogonalité, calculez \(\langle S,T\rangle\) de deux façons grâce à la symétrie du produit scalaire.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Avec \(M=\frac{A+A^\top}2\) et \(N=\frac{A-A^\top}2\) :
+
+\equationajustee{\begin{aligned}M^\top&=\frac{A^\top+A}2=M\\ N^\top&=\frac{A^\top-A}2=-N\end{aligned}}
+
+Soient \(S\) symétrique et \(T\) antisymétrique. D'une part \(\langle S,T\rangle=\mathrm{Tr}(ST^\top)=-\mathrm{Tr}(ST)\). D'autre part :
+
+\equationajustee{\begin{aligned}\langle S,T\rangle=\langle T,S\rangle&=\mathrm{Tr}(TS^\top)\\ &=\mathrm{Tr}(TS)=\mathrm{Tr}(ST).\end{aligned}}
+
+Donc \(\langle S,T\rangle=0\). En particulier :
+
+\equationajustee{\boxed{M\in\mathcal S_2(\mathbb R),\quad N\in\mathcal A_2(\mathbb R),\quad\langle M,N\rangle=0.}}
+
+\begin{piege}
+
+Antisymétrique ne veut pas dire non symétrique. Le rapport 2026 le rappelle : « Une matrice M est antisymétrique lorsqu'elle est égale à l'opposé de sa transposée. » Il relève aussi des copies qui appellent symétrie une matrice symétrique.
+
+\end{piege}
+
+\begin{methode}
+
+On a même démontré plus que demandé : \(\mathcal A_2(\mathbb R)\subset\mathcal S_2(\mathbb R)^\perp\). C'est cette version générale qui sert en Q24.
+
+\end{methode}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Deux choses à prouver. Existence : Q22. Unicité : transposez une décomposition quelconque.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\emph{Existence} : \(M+N=A\) avec \(M\) symétrique et \(N\) antisymétrique.
+
+\emph{Unicité} : si \(A=M'+N'\) (\(M'\) symétrique, \(N'\) antisymétrique), alors \(A^\top=M'-N'\). En additionnant et en soustrayant :
+
+\equationajustee{\begin{aligned}M'&=\frac{A+A^\top}2=M\\ N'&=\frac{A-A^\top}2=N\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}N&=\frac{A-A^\top}2\\ \mathcal M_2(\mathbb R)&=\mathcal S_2(\mathbb R)\oplus\mathcal A_2(\mathbb R)\end{aligned}}}
+
+\begin{jury}
+
+Rapport 2026 : « Une majorité de candidats prouve l'existence ou l'unicité de la décomposition, mais pas les deux. »
+
+\end{jury}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Le cours sur la projection orthogonale donne presque tout : identifiez le projeté de \(A\) sur \(\mathcal S_2(\mathbb R)\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour une preuve autonome : pour \(B\) symétrique, décomposez \(A-B\), puis appliquez le théorème de Pythagore et cherchez le cas d'égalité.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+On a \(M\in\mathcal S_2(\mathbb R)\) et \(N=A-M\in\mathcal A_2(\mathbb R)\subset\mathcal S_2(\mathbb R)^\perp\) (Q22). Donc \(M\) est le projeté orthogonal de \(A\) sur \(\mathcal S_2(\mathbb R)\), et la distance cherchée est \(\|A-M\|=\|N\|\).
+
+Détail : pour \(B\in\mathcal S_2(\mathbb R)\), \(A-B=(M-B)+N\), avec \(M-B\) symétrique et \(N\) antisymétrique, orthogonaux. Par Pythagore :
+
+\equationajustee{\begin{aligned}\|A-B\|^2&=\|M-B\|^2+\|N\|^2\\ &\ge\|N\|^2,\end{aligned}}
+
+avec égalité pour \(B=M\). La borne inférieure est atteinte en \(M\) :
+
+\equationajustee{\boxed{\begin{aligned}d(A,\mathcal S_2(\mathbb R))&=\|N\|\\ &=\frac12\|A-A^\top\|.\end{aligned}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q24-projection-orthogonale.pdf}
+\caption*{Figure 2 --- M est le projeté orthogonal de A sur 𝒮₂(ℝ) : pour toute B
+symétrique, le triangle AMB est rectangle en M, donc d(A, 𝒮₂(ℝ)) = ‖N‖}
+\end{figure}
+
+\begin{jury}
+
+Rapport 2026 : « Quand le résultat est donné, une démonstration rigoureuse est attendue. » Une part importante des candidats l'a admis, « alors qu'invoquer la projection orthogonale donne le résultat presque immédiatement ».
+
+\end{jury}
+
+\begin{methode}
+
+Distance à un sous-espace : si l'on dispose d'une décomposition \(A=p+q\) avec \(p\) dans le sous-espace et \(q\) orthogonal à tout le sous-espace, alors la distance vaut \(\|q\|\) (Pythagore, ou théorème du projeté orthogonal).
+
+\end{methode}
+
+\hypertarget{partie-ii-matrice-de-rademacher}{%
+\section{Partie II --- Matrice de Rademacher}\label{partie-ii-matrice-de-rademacher}}
+
+Calculs de lois finies : bien décomposer chaque événement en réunion disjointe d'intersections, puis utiliser l'indépendance, en la citant.
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Définition de l'espérance, puis formule de König-Huygens ; que vaut \(X_1^2\) ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\(E(X_1)=-\frac12+\frac12=0\). Comme \(X_1^2=1\), la formule de König-Huygens donne \(V(X_1)=E(X_1^2)-E(X_1)^2=1\).
+
+\equationajustee{\boxed{\begin{aligned}E(X_1)&=0\\ V(X_1)&=1\end{aligned}}}
+
+\begin{piege}
+
+Une variance négative signale une erreur de calcul : le rapport 2026 regrette que certains candidats en obtiennent une sans remettre en question la cohérence de leur résultat.
+
+\end{piege}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Listez les valeurs possibles de \(X_1+Y_1\) et décrivez chaque événement en termes de \(X_1\) et \(Y_1\). Pour la variance, détaillez \(E(T_1^2)\).
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\(T_1(\Omega)=\{-2,0,2\}\). Par indépendance de \(X_1\) et \(Y_1\) :
+
+\equationajustee{\begin{aligned}P(T_1=-2)&=P(X_1=-1)P(Y_1=-1)=\tfrac14\\ P(T_1=2)&=P(X_1=1)P(Y_1=1)=\tfrac14\end{aligned}}
+
+Ensuite \([T_1=0]=([X_1=-1]\cap[Y_1=1])\sqcup([X_1=1]\cap[Y_1=-1])\) donne \(P(T_1=0)=\frac12\) :
+
+\equationajustee{\boxed{\begin{aligned}P(T_1=-2)&=\tfrac14\\ P(T_1=0)&=\tfrac12\\ P(T_1=2)&=\tfrac14\end{aligned}}}
+
+Espérance et moment d'ordre 2 :
+
+\equationajustee{\begin{aligned}E(T_1)&=-2\cdot\tfrac14+2\cdot\tfrac14=0\\ E(T_1^2)&=4\cdot\tfrac14+4\cdot\tfrac14=2\end{aligned}}
+
+Par König-Huygens :
+
+\equationajustee{\boxed{\begin{aligned}E(T_1)&=0\\ V(T_1)&=2\end{aligned}}}
+
+Contrôle : \(V(X_1+Y_1)=V(X_1)+V(Y_1)=2\) par indépendance.
+
+\begin{jury}
+
+Rapport 2026 : « Lors de la détermination de la loi de probabilité, il ne faut pas oublier l'indépendance des variables aléatoires initiales. » Il note aussi que beaucoup donnent la variance sans détailler le calcul.
+
+\end{jury}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+\(X_1Y_1=1\) signifie que \(X_1\) et \(Y_1\) ont le même signe. Reconnaissez ensuite une loi déjà étudiée.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\(Z_1(\Omega)=\{-1,1\}\) et \([Z_1=1]=([X_1=1]\cap[Y_1=1])\sqcup([X_1=-1]\cap[Y_1=-1])\). Par indépendance, \(P(Z_1=1)=\frac12=P(Z_1=-1)\).
+
+\textbf{\(Z_1\) suit la loi de Rademacher}, donc, comme en Q25 :
+
+\equationajustee{\boxed{\begin{aligned}E(Z_1)&=0\\ V(Z_1)&=1\end{aligned}}}
+
+En particulier \(\det\Sigma_1=\pm1\) : \(\Sigma_1\) est toujours inversible.
+
+\begin{methode}
+
+Reconnaître une loi déjà étudiée dispense de refaire les calculs : le rapport 2026 fait exactement cette remarque pour \(Z_1\).
+
+\end{methode}
+
+\hypertarget{partie-iii-matrice-guxe9omuxe9trique}{%
+\section{Partie III --- Matrice géométrique}\label{partie-iii-matrice-guxe9omuxe9trique}}
+
+La partie I donne une expression simple de la distance, puis on applique Bienaymé-Tchebychev.
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Question de cours.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\equationajustee{\boxed{\begin{aligned}E(X_2)&=\frac1p\\ V(X_2)&=\frac{1-p}{p^2}\end{aligned}}}
+
+\begin{jury}
+
+Le rapport 2026 constate que cette question de cours sans démonstration n'a pas toujours été bien traitée. Plus largement, il attend la connaissance de l'espérance et de la variance des lois usuelles, et la maîtrise de leur démonstration.
+
+\end{jury}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+a) Appliquez Q24 à \(\Sigma_2\) et calculez la norme avec Q20. Que dire du signe de \(Y_2\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+b) \(T_2\) est un multiple constant de \(Y_2\).
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\textbf{a)} Pour tout \(\omega\), on applique Q24 à \(\Sigma_2(\omega)\). On a \(\Sigma_2-\Sigma_2^\top=\begin{pmatrix}0&-2Y_2\\2Y_2&0\end{pmatrix}\), donc \(\|\Sigma_2-\Sigma_2^\top\|^2=8Y_2^2\).
+
+Puisque \(Y_2\ge1>0\), \(\|\Sigma_2-\Sigma_2^\top\|=2\sqrt2\,Y_2\). Par Q24 :
+
+\equationajustee{\boxed{T_2=\sqrt2\,Y_2.}}
+
+\textbf{b)} Par linéarité et \(V(cY)=c^2V(Y)\) :
+
+\equationajustee{\boxed{\begin{aligned}E(T_2)&=\frac{\sqrt2}p\\ V(T_2)&=\frac{2(1-p)}{p^2}\end{aligned}}}
+
+\begin{piege}
+
+\(\sqrt{8Y_2^2}=2\sqrt2\,|Y_2|\) : la valeur absolue disparaît parce que \(Y_2\) est à valeurs dans \(\mathbb N^*\), il faut le dire.
+
+\end{piege}
+
+\begin{jury}
+
+Pour a), le rapport 2026 note : « Lorsque le résultat est donné dans la question, les candidats manquent trop souvent d'honnêteté intellectuelle. » Le calcul de \(\Sigma_2-\Sigma_2^\top\) doit apparaître en entier.
+
+\end{jury}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Reconnaissez une inégalité de concentration du cours faisant intervenir la variance.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\(T_2\) admet une variance. Par l'inégalité de Bienaymé-Tchebychev et Q29 b), pour tout \(\delta>0\) :
+
+\equationajustee{\boxed{\begin{aligned}P\Big(\Big|T_2-\frac{\sqrt2}p\Big|\ge\delta\Big)&\le\frac{V(T_2)}{\delta^2}\\ &=\frac{2(1-p)}{\delta^2p^2}.\end{aligned}}}
+
+\begin{jury}
+
+Le rapport 2026 rappelle que le respect des noms propres fait partie de la rigueur : « L'orthographe du théorème de Bienaymé-Tchebychev est particulièrement malmenée dans les copies. »
+
+\end{jury}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+a) Spécialisez Q30 et résolvez une inégalité en \(\delta\). b) Événement contraire.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\textbf{a)} Pour \(p=\frac12\) : \(E(T_2)=2\sqrt2\) et la majoration vaut \(\frac4{\delta^2}\), qui est \(\le\frac14\) dès que \(\delta\ge4\). \textbf{\(\delta=4\) convient} :
+
+\equationajustee{P\big(|T_2-2\sqrt2|\ge4\big)\le\frac14.}
+
+\textbf{b)} En passant à l'événement contraire :
+
+\equationajustee{P\big(|T_2-2\sqrt2|<4\big)\ge1-\frac14=\frac34.}
+
+Comme \(T_2=d(\Sigma_2,\mathcal S_2(\mathbb R))\) :
+
+\equationajustee{\boxed{P\Big(\big|d(\Sigma_2,\mathcal S_2(\mathbb R))-2\sqrt2\big|<4\Big)\ge\frac34.}}
+
+La probabilité réelle est \(P(Y_2\le4)=\frac{15}{16}\) : Bienaymé-Tchebychev est une majoration grossière mais universelle.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q31-loi-t2-tchebychev.pdf}
+\caption*{Figure 3 --- Loi de T₂ pour p = 1/2 : l'intervalle \textbar T₂ −
+2√2\textbar{} \textless{} 4 contient k = 1 à 4, de probabilité 15/16 au
+lieu du 3/4 garanti}
+\end{figure}
+
+\hypertarget{partie-iv-matrice-de-poisson}{%
+\section{Partie IV --- Matrice de Poisson}\label{partie-iv-matrice-de-poisson}}
+
+La partie la plus longue : probabilités (probabilité d'une réunion de deux événements, formule des probabilités totales, lois de Poisson), réduction d'une matrice triangulaire, puis analyse et numérique autour de \(g(\lambda)=P(D_\lambda)\).
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Question de cours.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\equationajustee{\boxed{\begin{aligned}E(X_3)&=\lambda\\ V(X_3)&=\lambda\end{aligned}}}
+
+\begin{jury}
+
+Rapport 2026 : « Cette question de cours sans démonstration a été peu traitée, ce qui est dommage. »
+
+\end{jury}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+a) Un produit est nul si et seulement si l'un des facteurs l'est : la réunion obtenue n'est pas disjointe.
+
+\end{indication}
+
+\begin{indication}{2}
+
+b) Lien entre déterminant et inversibilité, puis événement contraire.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\textbf{a)} \([Z_3=0]=[X_3=0]\cup[Y_3=0]\). Par la formule de la probabilité de la réunion de deux événements, \(P(A\cup B)=P(A)+P(B)-P(A\cap B)\), puis par indépendance :
+
+\equationajustee{\begin{aligned}P(Z_3=0)&=P(X_3=0)+P(Y_3=0)-P(X_3=0)P(Y_3=0)\\ &=e^{-\lambda}+e^{-\lambda}-e^{-2\lambda}\end{aligned}}
+
+\equationajustee{\boxed{P(Z_3=0)=2\exp(-\lambda)-\exp(-2\lambda).}}
+
+\textbf{b)} \(\det\Sigma_3=X_3Y_3=Z_3\), et \(\Sigma_3\) est inversible si et seulement si \(Z_3\neq0\) :
+
+\equationajustee{\boxed{\begin{aligned}P(\Sigma_3\ \text{inversible})&=1-2e^{-\lambda}+e^{-2\lambda}\\ &=(1-e^{-\lambda})^2.\end{aligned}}}
+
+\begin{jury}
+
+Rapport 2026 : « Ne pas oublier l'indépendance des variables aléatoires. » Il signale aussi quelques tentatives malhonnêtes pour arriver à la formule de l'énoncé : le terme \(P([X_3=0]\cap[Y_3=0])\) doit être écrit et calculé.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+a) Deux inclusions pour \(T_3(\Omega)\). Pour la formule, choisissez un système complet d'événements lié à \(X_3\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+b) Factorisez par \(\frac{\lambda^n}{n!}\) pour faire apparaître des coefficients binomiaux.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\textbf{a)} \emph{Support.} \(T_3(\Omega)\subset\mathbb N\). Pour \(n\in\mathbb N\), par indépendance, \(P([X_3=n]\cap[Y_3=0])=e^{-2\lambda}\frac{\lambda^n}{n!}>0\). Il existe donc \(\omega\) avec \(T_3(\omega)=n\) : \textbf{\(T_3(\Omega)=\mathbb N\).}
+
+\emph{Formule.} La famille \(([X_3=k])_{k\in\mathbb N}\) est un système complet d'événements. Par la formule des probabilités totales :
+
+\equationajustee{\begin{aligned}P(T_3=n)&=\sum_{k=0}^{+\infty}P\big([X_3=k]\cap[T_3=n]\big)\\ &=\sum_{k=0}^{+\infty}P\big([X_3=k]\cap[Y_3=n-k]\big).\end{aligned}}
+
+Pour \(k>n\), \([Y_3=n-k]\) est vide car \(Y_3\ge0\). Par indépendance :
+
+\equationajustee{\boxed{\begin{aligned}{}&\forall n\in\mathbb N,\\ &P(T_3=n)=\sum_{k=0}^nP(X_3=k)P(Y_3=n-k).\end{aligned}}}
+
+\textbf{b)} On reporte les lois de Poisson :
+
+\equationajustee{\begin{aligned}P(T_3=n)&=e^{-2\lambda}\sum_{k=0}^n\frac{\lambda^k\lambda^{n-k}}{k!(n-k)!}\\ &=e^{-2\lambda}\frac{\lambda^n}{n!}\sum_{k=0}^n\binom nk\\ &=e^{-2\lambda}\frac{(2\lambda)^n}{n!}.\end{aligned}}
+
+\textbf{\(T_3\) suit la loi de Poisson de paramètre \(2\lambda\).}
+
+\begin{piege}
+
+Ne pas mélanger les objets : on réunit des \textbf{événements}, on additionne des \textbf{probabilités}. Le rapport 2026 met en garde contre les réunions de probabilités et les sommes d'événements.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Il ne faut pas oublier de citer la formule des probabilités totales en précisant le système complet d'événements utilisé. » Le support était bien justifié, la formule beaucoup moins. Pour b), « Les calculs ont rarement abouti. »
+
+\end{jury}
+
+\begin{methode}
+
+Somme de deux variables indépendantes à valeurs entières : formule des probabilités totales selon la valeur de l'une, indépendance, puis reconnaissance d'une loi. Le résultat (somme de Poisson indépendantes) est classique et réutilisable.
+
+\end{methode}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+a) Calculez le produit matrice-vecteur et vérifiez que le vecteur n'est pas nul.
+
+\end{indication}
+
+\begin{indication}{2}
+
+b) La matrice est triangulaire ; essayez un vecteur de la base canonique.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\textbf{a)} Le vecteur \(V=\begin{pmatrix}X_3-Y_3\\1\end{pmatrix}\) est non nul, car sa seconde coordonnée vaut 1. On calcule :
+
+\equationajustee{\begin{aligned}\Sigma_3V&=\begin{pmatrix}X_3(X_3-Y_3)\\(X_3-Y_3)+Y_3\end{pmatrix}\\ &=X_3V.\end{aligned}}
+
+\textbf{\(V\) est vecteur propre associé à la valeur propre \(X_3\).}
+
+\textbf{b)} Le vecteur \(W=\begin{pmatrix}0\\1\end{pmatrix}\) est non nul, et \(\Sigma_3W=\begin{pmatrix}0\\Y_3\end{pmatrix}=Y_3W\). \textbf{\(Y_3\) est valeur propre, de vecteur propre \(\begin{pmatrix}0\\1\end{pmatrix}\).}
+
+\begin{jury}
+
+Rapport 2026 : « La grande majorité des candidats ne maîtrise pas la définition de vecteur propre et oublie de justifier la non-nullité d'un vecteur propre. » Un vecteur propre est un vecteur \textbf{non nul} \(V\) tel que \(\Sigma_3V\) soit colinéaire à \(V\).
+
+\end{jury}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+a) Système complet d'événements selon la valeur de \(Y_3\), puis formule des probabilités totales et indépendance.
+
+\end{indication}
+
+\begin{indication}{2}
+
+b) Deux implications. Valeurs propres distinctes, ou valeur propre double : dans le second cas, que serait une matrice diagonalisable n'ayant qu'une valeur propre ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+c) Événement contraire, puis développez \(P(X_3=k)^2\).
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\textbf{a)} La famille \(([Y_3=k])_{k\in\mathbb N}\) est un système complet d'événements. Par la formule des probabilités totales :
+
+\equationajustee{\begin{aligned}P(X_3=Y_3)&=\sum_{k=0}^{+\infty}P\big([X_3=Y_3]\cap[Y_3=k]\big)\\ &=\sum_{k=0}^{+\infty}P\big([X_3=k]\cap[Y_3=k]\big).\end{aligned}}
+
+Par indépendance, puis égalité des lois :
+
+\equationajustee{\boxed{\begin{aligned}P(X_3=Y_3)&=\sum_{k=0}^{+\infty}P(X_3=k)P(Y_3=k)\\ &=\sum_{k=0}^{+\infty}P(X_3=k)^2.\end{aligned}}}
+
+\textbf{b)} À \(\omega\) fixé, posons \(x=X_3(\omega)\) et \(y=Y_3(\omega)\).
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Si \(x\neq y\)} : \(\Sigma_3\), d'ordre 2, a deux valeurs propres réelles distinctes (Q35), donc est diagonalisable dans \(\mathbb R\).
+\item
+  \emph{Si \(x=y=c\)} : \(\Sigma_3=\begin{pmatrix}c&0\\1&c\end{pmatrix}\) a \(c\) pour seule valeur propre.
+  Diagonalisable, elle serait semblable à \(cI_2\), donc égale à \(cI_2\) ; c'est faux, car son coefficient \((2,1)\) vaut \(1\).
+\end{itemize}
+
+\equationajustee{\boxed{\Sigma_3\ \text{diagonalisable dans}\ \mathbb R\iff X_3\neq Y_3.}}
+
+\textbf{c)} Par b) puis a), en passant au contraire :
+
+\equationajustee{\begin{aligned}P(D_\lambda)&=1-P(X_3=Y_3)\\ &=1-\sum_{k=0}^{+\infty}e^{-2\lambda}\frac{\lambda^{2k}}{(k!)^2}.\end{aligned}}
+
+\equationajustee{\boxed{P(D_\lambda)=1-e^{-2\lambda}\sum_{k=0}^{+\infty}\frac{\lambda^{2k}}{(k!)^2}.}}
+
+\begin{piege}
+
+Une valeur propre double n'empêche pas, à elle seule, la diagonalisabilité (\(cI_2\) est diagonale) : il faut un argument spécifique : ici, la seule matrice diagonalisable de spectre \(\{c\}\) est \(cI_2\).
+
+\end{piege}
+
+\begin{jury}
+
+Pour a), le rapport 2026 situe la difficulté dans la traduction de l'événement en réunion disjointe, ou dans la citation de la formule des probabilités totales avec son système complet. « L'utilisation de l'indépendance des variables aléatoires est indispensable pour garantir la rigueur du raisonnement. » Pour b) : « De nombreux candidats traitent la condition nécessaire ou la condition suffisante, mais pas les deux. »
+
+\end{jury}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+a) Boucle \texttt{for} avec accumulateur ; attention à la borne de \texttt{range}. b) Formule du cours qui fait apparaître un reste intégral : énoncez-la avec ses hypothèses.
+
+\end{indication}
+
+\begin{indication}{2}
+
+c) Majorez \(e^t\) sur \([0,x]\). d) Cas particulier de c). e) Comparez \((k!)^2\) et \(k!\). f) Cherchez quand la majoration de e) passe sous \(10^{-2}\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+g) La valeur affichée est un arrondi : combinez l'incertitude d'arrondi et l'erreur de troncature. h) Combien de multiplications coûte chaque appel à la factorielle ?
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\textbf{a)}
+
+\begin{lstlisting}[language=Python]
+import math
+
+def Approx_Sum(N):
+    S = 0
+    for k in range(N + 1):          # k = 0, 1, ..., N
+        S = S + math.exp(-2) / math.factorial(k) ** 2
+    return S
+\end{lstlisting}
+
+\textbf{b)} \emph{Formule de Taylor avec reste intégral} : si \(\varphi\) est de classe \(\mathcal C^{n+1}\) sur un intervalle \(I\) et \(a,x\in I\), alors
+
+\equationajustee{\varphi(x)=\sum_{k=0}^n\frac{\varphi^{(k)}(a)}{k!}(x-a)^k+\int_a^x\frac{(x-t)^n}{n!}\varphi^{(n+1)}(t)\,\mathrm dt.}
+
+Hypothèses vérifiées : \(\varphi=\exp\) est de classe \(\mathcal C^\infty\) sur \(I=\mathbb R\), et l'on prend \(a=0\), \(x\ge0\).
+
+Toutes ses dérivées valent \(\exp\), et \(\exp(0)=1\) :
+
+\equationajustee{\boxed{\exp(x)-\sum_{k=0}^n\frac{x^k}{k!}=\frac1{n!}\int_0^x(x-t)^n\exp(t)\,\mathrm dt.}}
+
+Variante sans citer la formule : une récurrence sur \(n\), l'hérédité venant d'une intégration par parties qui abaisse l'exposant de \((x-t)\).
+
+\textbf{c)} Pour \(t\in[0,x]\), \(0\le(x-t)^ne^t\le(x-t)^ne^x\), et \(\int_0^x(x-t)^n\,\mathrm dt=\frac{x^{n+1}}{n+1}\). Par croissance de l'intégrale :
+
+\equationajustee{\boxed{\begin{aligned}0&\le\exp(x)-\sum_{k=0}^n\frac{x^k}{k!}\\ &\le\frac{x^{n+1}}{(n+1)!}\exp(x).\end{aligned}}}
+
+\textbf{d)} En \(x=1\) :
+
+\equationajustee{\begin{aligned}0&\le e-\sum_{k=0}^n\frac1{k!}\\ &\le\frac e{(n+1)!}\xrightarrow[n\to+\infty]{}0.\end{aligned}}
+
+Donc \(\sum_{k\ge0}\frac1{k!}=e\), et :
+
+\equationajustee{\boxed{\sum_{k=n+1}^{+\infty}\frac1{k!}\le\frac e{(n+1)!}.}}
+
+\textbf{e)} Comme \(\frac1{(k!)^2}\le\frac1{k!}\), la série converge, et son reste, positif, vérifie :
+
+\equationajustee{\boxed{\begin{aligned}0&\le\sum_{k=0}^{+\infty}\frac{e^{-2}}{(k!)^2}-\sum_{k=0}^n\frac{e^{-2}}{(k!)^2}\\ &=\sum_{k=n+1}^{+\infty}\frac{e^{-2}}{(k!)^2}\\ &\le e^{-2}\frac e{(n+1)!}=\frac{e^{-1}}{(n+1)!}.\end{aligned}}}
+
+\textbf{f)} Il suffit que \((N_0+1)!\ge100e^{-1}\), et, comme \(100e^{-1}\le37\), que \((N_0+1)!\ge37\). Or \(4!=24\) et \(5!=120\) :
+
+\equationajustee{\boxed{\begin{aligned}{}&N_0=4\ \text{convient, avec une erreur}\\ &\le\frac{e^{-1}}{120}\le\frac{0{,}37}{120}<10^{-2}.\end{aligned}}}
+
+\textbf{g)} Posons \(S=\sum_{k\ge0}\frac{e^{-2}}{(k!)^2}\). La valeur affichée \(0{,}31\) est un arrondi au centième, donc \(\texttt{Approx\_Sum}(4)\in[0{,}305\,;0{,}315[\).
+
+De plus \(0\le S-\texttt{Approx\_Sum}(4)\le10^{-2}\), donc \(S\in[0{,}305\,;0{,}325]\). Par Q36 c) avec \(\lambda=1\), \(P(D_1)=1-S\in[0{,}675\,;0{,}695]\).
+
+\equationajustee{\boxed{S\approx0{,}3\quad\text{et}\quad P(D_1)\approx0{,}7\quad\text{\text{à} }10^{-1}\text{ \text{près}.}}}
+
+Valeurs précises : \(S\approx0{,}3085\) et \(P(D_1)\approx0{,}6915\).
+
+\textbf{h)} Non, ce n'est pas judicieux en général. Chaque appel recalcule \(k!\) depuis le début, soit environ \(k\) multiplications, donc de l'ordre de \(\frac{N(N+1)}2\) au total.
+
+En conservant la factorielle précédente (\(k!=(k-1)!\times k\)), on n'en fait que \(N\) :
+
+\begin{lstlisting}[language=Python]
+def Approx_Sum_bis(N):
+    S, f = 0, 1                     # f vaut k! au début du tour k
+    for k in range(N + 1):
+        if k > 0:
+            f = f * k
+        S = S + math.exp(-2) / f ** 2
+    return S
+\end{lstlisting}
+
+Pour \(N_0=4\), la boucle fait 5 tours sur des entiers minuscules : le surcoût, une dizaine de multiplications au lieu de quatre, est négligeable.
+
+\begin{jury}
+
+Pour b), le rapport 2026 est net : « Il faut citer la formule de Taylor avec reste intégral, ainsi que ses hypothèses, puis les vérifier. » La question a été très peu traitée, comme c) à g). Pour h) : « Les réponses ont trop souvent été confuses et peu précises, même si l'idée était présente. » Il faut donc chiffrer le coût (quadratique contre linéaire) et expliquer pourquoi \(N_0=4\) le rend négligeable.
+
+\end{jury}
+
+\begin{piege}
+
+En g), lire « \(\simeq0{,}31\) » comme une valeur exacte conduit à des encadrements faux (\(S\) vaut en réalité \(0{,}3085<0{,}31\)). Une valeur affichée arrondie porte sa propre incertitude, à ajouter à l'erreur de troncature.
+
+\end{piege}
+
+\begin{methode}
+
+Majorer un reste de série par celui d'une série connue (ici \(\sum1/k!\), contrôlée par Taylor avec reste intégral) permet de choisir à l'avance un rang de troncature garanti : c'est le schéma de toute approximation numérique certifiée.
+
+\end{methode}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+a) Règle de d'Alembert, à citer. b) Propriété de la somme d'une série entière sur son intervalle ouvert de convergence. c) Écrivez \(g\) à l'aide de la fonction de b) composée avec \(\lambda\mapsto\lambda^2\).
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\textbf{a)} Pour \(x\neq0\) :
+
+\equationajustee{\frac{|x|^{k+1}/((k+1)!)^2}{|x|^k/(k!)^2}=\frac{|x|}{(k+1)^2}\xrightarrow[k\to+\infty]{}0.}
+
+Ce rapport tend vers \(0<1\) : par la règle de d'Alembert, la série converge absolument pour tout \(x\) :
+
+\equationajustee{\boxed{R=+\infty.}}
+
+\textbf{b)} La somme d'une série entière est continue sur son intervalle ouvert de convergence, ici \(\mathbb R\). \textbf{\(h:x\mapsto\sum_{k\ge0}\frac{x^k}{(k!)^2}\) est continue sur \(\mathbb R\).}
+
+\textbf{c)} Pour \(\lambda\ge0\), \(g(\lambda)=1-e^{-2\lambda}h(\lambda^2)\). Par composition, produit et somme de fonctions continues, \textbf{\(g\) est continue sur \([0,+\infty[\).}
+
+\begin{piege}
+
+Rapport 2026 : « Une somme infinie de fonctions continues n'est pas immédiatement continue. » Il faut invoquer le théorème sur les séries entières. Et la somme n'est pas un polynôme : « Certains candidats affirment que la somme de la série est une fonction polynomiale. »
+
+\end{piege}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Traduisez la question en une équation \(g(\mu)=\frac12\), puis pensez au théorème des valeurs intermédiaires.
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(g(0)\) se calcule directement. Pour trouver un point où \(g>\frac12\), inutile d'étudier la limite en \(+\infty\) : un point bien choisi et la comparaison de Q37 e) suffisent.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+Par Q36 c), pour \(\lambda>0\), la probabilité que la matrice soit diagonalisable vaut \(g(\lambda)\). On cherche \(\mu>0\) avec \(g(\mu)=\frac12\).
+
+\begin{itemize}
+\tightlist
+\item
+  \(g(0)=1-1=0\).
+\item
+  \(\sum_{k\ge0}\frac1{(k!)^2}\le\sum_{k\ge0}\frac1{k!}=e\), donc :
+\end{itemize}
+
+\equationajustee{\begin{aligned}g(1)&\ge1-e^{-2}e=1-e^{-1}\\ &\ge1-0{,}37=0{,}63>\tfrac12.\end{aligned}}
+
+\(g\) est continue sur \([0,1]\) (Q38 c) et \(g(0)<\frac12<g(1)\).
+
+Par le théorème des valeurs intermédiaires, il existe \(\mu\in[0,1]\) avec \(g(\mu)=\frac12\), et \(\mu\neq0\) puisque \(g(0)=0\).
+
+\equationajustee{\boxed{\begin{aligned}{}&\exists\,\mu\in\,]0,1[,\ \text{pour}\ X_3,Y_3\sim\mathcal P(\mu)\ \text{\text{indépendantes}}:\\ &P\left(\begin{pmatrix}X_3&0\\1&Y_3\end{pmatrix}\text{ diagonalisable}\right)=g(\mu)=\frac12.\end{aligned}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q39-graphe-g-valeurs-intermediaires.pdf}
+\caption*{Figure 4 --- Graphe de g : g(0) = 0 et g(1) ≥ 1 − e⁻¹ \textgreater{}
+1/2, donc g prend la valeur 1/2 en un μ compris entre 0 et 1}
+\end{figure}
+
+\begin{piege}
+
+\(g(0)\) n'est pas une probabilité (la loi de Poisson exige un paramètre \(>0\)) : c'est la valeur de la fonction continue \(g\), ce qui suffit pour le théorème des valeurs intermédiaires ; la conclusion \(\mu>0\) ramène dans le cadre probabiliste.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 indique que cette question n'a quasiment jamais été abordée. Elle ne demande pourtant que Q36 c), Q37 d) et Q38 c) : c'est une question discriminante, accessible à qui a gardé du temps.
+
+\end{jury}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Vous disposez d'une fonction continue qui change de signe sur un intervalle connu.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Décrivez l'algorithme et sa condition d'arrêt, puis expliquez comment évaluer \(g\) en pratique, puisque c'est la somme d'une série.
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\textbf{Méthode de dichotomie} appliquée à \(\varphi=g-\frac12\), continue sur \([0,1]\) avec \(\varphi(0)<0<\varphi(1)\) (Q39) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(u\leftarrow0\), \(v\leftarrow1\) ;
+\item
+  tant que \(v-u>\varepsilon\) : \(m\leftarrow\frac{u+v}2\) ; si \(\varphi(m)<0\) alors \(u\leftarrow m\), sinon \(v\leftarrow m\) ;
+\item
+  renvoyer \(\frac{u+v}2\), valeur approchée de \(\mu\) à \(\varepsilon\) près.
+\end{enumerate}
+
+Justification : l'invariant \(\varphi(u)<0\le\varphi(v)\) et le théorème des valeurs intermédiaires garantissent qu'un zéro reste dans \([u,v]\). La longueur de l'intervalle est divisée par 2 à chaque étape : il faut \(\lceil\log_2(1/\varepsilon)\rceil\) étapes (une dizaine pour \(\varepsilon=10^{-3}\)).
+
+Évaluation de \(g(m)\) : on tronque la série,
+
+\equationajustee{g(m)\simeq1-e^{-2m}\sum_{k=0}^K\frac{m^{2k}}{(k!)^2}.}
+
+Pour \(m\in[0,1]\), l'erreur est majorée par \(\sum_{k>K}\frac1{k!}\le\frac e{(K+1)!}\) (Q37 d--e). Donc \(K=8\) suffit pour une erreur \(<10^{-5}\), avec mise à jour incrémentale de la factorielle (Q37 h). On trouverait \(\mu\approx0{,}44\).
+
+\begin{jury}
+
+Question quasiment jamais abordée selon le rapport 2026, qui précise : « Quelques mots d'explication sont attendus. » Nommer la méthode ne suffit pas : il faut dire pourquoi elle converge et sur quel intervalle on l'initialise.
+
+\end{jury}
+
+\begin{methode}
+
+Valeurs intermédiaires et dichotomie vont de pair : la preuve d'existence fournit l'intervalle de départ et l'invariant de l'algorithme. Quand la fonction est elle-même une somme de série, il faut aussi contrôler l'erreur d'évaluation.
+
+\end{methode}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+- Calculer une intégrale en \textbf{identifiant deux développements} d'une même fonction (Fourier contre série géométrique) ; l'identification demande un théorème d'unicité et donc ses hypothèses (convergence absolue).
+- \textbf{Formules d'Euler + série géométrique} : la voie standard pour développer \(\frac1{a-\cos t}\) ou \(\frac1{1-\alpha e^{it}}\) ; vérifier que la raison est de module \(<1\).
+- \textbf{Intégrations par parties successives} contre \(\cos(nt)\) : décroissance en \(1/n^2\) des coefficients de Fourier d'une fonction \(\mathcal C^2\) périodique, les crochets s'annulant par périodicité.
+- \textbf{Supplémentaires orthogonaux} symétriques/antisymétriques, et distance par le projeté orthogonal.
+- Lois discrètes : \textbf{formule des probabilités totales avec un système complet nommé}, indépendance citée, probabilité d'une réunion de deux événements, somme de Poisson, Bienaymé-Tchebychev.
+- \textbf{Taylor avec reste intégral}, hypothèses vérifiées, pour majorer un reste de série et choisir un rang de troncature ; \textbf{valeurs intermédiaires} puis \textbf{dichotomie}.
+
+\textbf{Ce que le rapport 2026 met en avant.} Les points perdus l'ont surtout été sur des questions de cours ou de rédaction : série géométrique (Q12), coefficients de Fourier et théorème de Dirichlet (Q8, Q9), espérance et variance des lois usuelles (Q28, Q32), définition d'un vecteur propre (Q35). Le rapport insiste sur les quantificateurs, sur la distinction entre implication et équivalence, et sur la citation des théorèmes avec leurs hypothèses. Les questions discriminantes sont Q3, Q4, Q14, Q34 b), Q37 b) et la fin du sujet (Q39, Q40), rarement abordée.
+
+\textbf{Prérequis à revoir.} Convention des coefficients de Fourier (\(a_0\) = valeur moyenne) et énoncé précis du théorème de Dirichlet ; lois géométrique et de Poisson (espérance, variance, et leur démonstration) ; critère de diagonalisabilité en dimension 2 ; règle de d'Alembert et continuité de la somme d'une série entière ; coût des boucles en Python.
+
+\textbf{Questions transposables.} Pour \(a>1\), \(\int_0^{2\pi}\frac{\mathrm dt}{a-\cos t}=\frac{2\pi}{\sqrt{a^2-1}}\), que l'on retrouve à partir de Q18. Aussi : somme de deux Poisson indépendantes ; distance à \(\mathcal S_n(\mathbb R)\) égale à \(\frac12\|A-A^\top\|\) en toute dimension ; majoration \(\sum_{k>n}\frac1{k!}\le\frac e{(n+1)!}\) ; recherche d'un paramètre par valeurs intermédiaires et dichotomie.
+
+\end{document}

@@ -1,0 +1,2197 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP MP — Informatique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP MP}
+\fancyhead[R]{\small Informatique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP MP — Informatique 2026\par}\medskip
+  {\large CCINP · MP · Informatique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Cadre.} Épreuve spécifique de la filière MP (MP7IN, mutualisée avec e3a-Polytech), d'une durée de 4 heures, calculatrices interdites. Le sujet comporte \textbf{trois problèmes indépendants} et 41 questions. Le langage est imposé : \textbf{Python} pour tout le problème 1, \textbf{OCaml} dans le problème 2 à partir de Q15. Le problème 3 ne demande pas de code.
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0989}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3719}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1049}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3942}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Problème
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Thème
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notions mobilisées
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Multiplication de grands entiers : listes de bits, addition, algorithme de Karatsuba & Q1--Q11 & représentation des entiers, dépassement de capacité, invariants de boucle, diviser pour régner, équations de complexité \\
+2 & Ensembles de mots implémentés par tries, puis lus comme automates et simplifiés & Q12--Q28 & dictionnaires, types récursifs OCaml, récursion sur les arbres d'arité quelconque, automates déterministes, équivalence d'états \\
+3 & Logique implicationnelle : tables de vérité, systèmes complets de connecteurs, déduction naturelle, loi de Peirce & Q29--Q41 & sémantique, induction structurelle, arbres de preuve, correction, règles dérivables \\
+\end{longtable}
+
+\textbf{Ce que fait chaque problème.} Le problème 1 part de la représentation d'un entier par la liste de ses bits, poids faibles en tête. Il programme les opérations élémentaires (conversion, addition, complétion, décalage) avant d'analyser deux algorithmes « diviser pour régner » de multiplication, le naïf en \(\Theta(k^2)\) puis celui de Karatsuba en \(O(k^{\log_2 3})\). Le problème 2 construit un trie en OCaml, l'interprète comme un automate fini déterministe et en fusionne les états équivalents pour partager les suffixes communs. Le problème 3 établit que \(\{\to\}\), avec \(\bot\), suffit à tout exprimer, prouve des séquents dans un système réduit à l'implication et à la loi de Peirce, puis montre que la loi de Peirce et le raisonnement par l'absurde sont interchangeables.
+
+\textbf{Difficulté et longueur.} Le sujet est long mais progressif : dans chaque problème, la difficulté croît. Selon le rapport 2026, il a « permis de bien classer les candidates et candidats avec une moyenne de 10,03 et un écart-type de 3,77 » (p.~2). Les excellentes copies en ont traité une part très importante, et seules de rares copies l'ont traité en entier.
+
+\textbf{Questions discriminantes d'après le rapport 2026.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2865}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6835}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ce que relève le jury
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Q2 & Plus de la moitié des copies n'obtient pas la complexité linéaire (p.~3) \\
+Q7, Q8 & Peu traitées ; la complexité « a posé des problèmes importants » (p.~3-4) \\
+Q11 & Cas de base qui ne renvoient pas des listes, confusion entre \(h\) et \(n\) (p.~4) \\
+Q12, Q13 & Questions de cours étonnamment mal réussies (p.~4-5) \\
+Q21, Q25, Q28 & Questions de rédaction, beaucoup moins réussies (p.~4) \\
+Q23 & Peu traitée ; le trie est manipulé comme s'il était mutable (p.~6) \\
+Q32 & Presque aucune preuve par induction correcte (p.~7) \\
+Q35 à Q37 & Correction et conséquence sémantique inconnues de la plupart (p.~3, p.~7) \\
+Q38 à Q41 & Très peu traitées, faute de temps (p.~7) \\
+\end{longtable}
+
+Le problème 3 a été « très clivant » (p.~3) : les tables de vérité et les arbres de preuve sont bien faits, les raisonnements beaucoup moins.
+
+\textbf{Questions à ne pas laisser passer.} Q1 à Q6, Q9, Q10, Q12, Q13, Q14 à Q20, Q22, Q24 à Q26, Q29 à Q31. Ce sont des applications directes du cours, chacune en quelques lignes. Q35 et Q36 sont aussi des questions de cours, mais à condition de connaître la définition de la conséquence sémantique.
+
+\textbf{Gestion du temps.} Les trois problèmes sont indépendants et de poids comparable : comptez environ 1 h 15 chacun et gardez un quart d'heure de relecture. Le jury recommande de « privilégier la qualité à la quantité » (p.~2), et rappelle que certaines questions en posent plusieurs. Dans le problème 3, rédigez les arbres de preuve au brouillon avant de les recopier : un arbre raturé est illisible.
+
+\begin{jury}
+
+Le rapport 2026 insiste sur la lisibilité : questions numérotées, code indenté, identifiants signifiants (« une fonction qui somme les éléments d'une liste s'appelle bien plus volontiers somme\_liste que aux par exemple », p.~3), et idées non triviales d'un code expliquées en français. Le barème prend explicitement en compte la présentation, le soin et l'orthographe.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{probluxe8me-1-multiplication-de-grands-entiers}{%
+\section{Problème 1 --- Multiplication de grands entiers}\label{probluxe8me-1-multiplication-de-grands-entiers}}
+
+Les entiers sont des listes de bits, le bit de rang \(i\) (coefficient de \(2^i\)) étant à l'indice \(i\). On programme d'abord les opérations de base, puis on compare deux stratégies récursives de multiplication. Outils : boucles et invariants, division euclidienne, récurrences de complexité.
+
+\textbf{Remarque sur l'énoncé.} Les sommes \(\sum_{i=k/2}^{k}\) de l'énoncé devraient s'arrêter à \(k-1\), puisqu'une liste de taille \(k\) a pour indices \(0, \dots, k-1\). On lit donc \(f_u = \sum_{i=0}^{k/2-1} u_{i+k/2}\,b^i\), et rien ne change dans la suite.
+
+L'énoncé omet aussi le cas où les soustractions de la formule (2) donnent un entier négatif : le rapport 2026 le reconnaît (p.~4), voir Q11.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Combien d'entiers différents peut-on écrire avec \(m\) bits ? Que se passe-t-il quand un calcul en produit un plus grand ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour Python, pensez au type \texttt{int} : sa taille en mémoire est-elle fixée ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Avec \(m\) bits, on dispose de \(2^m\) motifs : l'ensemble des entiers manipulables est \textbf{fini}. Par exemple :
+
+\begin{itemize}
+\tightlist
+\item
+  en non signé, il s'agit des entiers de \(0\) à \(2^m - 1\) ;
+\item
+  en complément à deux, de \(-2^{m-1}\) à \(2^{m-1} - 1\), soit de \(-2^{63}\) à \(2^{63}-1\) pour \(m = 64\).
+\end{itemize}
+
+Un résultat hors de cet intervalle provoque un \textbf{dépassement de capacité} : on obtient en général le résultat exact modulo \(2^m\), donc faux, et souvent sans aucun signalement.
+
+\textbf{Python ne connaît pas cette limite} : ses entiers \texttt{int} sont multiprécision, leur nombre de chiffres s'adapte à la valeur et seule la mémoire les borne. En contrepartie, une opération arithmétique a un coût qui croît avec la taille des opérandes.
+
+\begin{piege}
+
+Répondre seulement « on ne peut pas dépasser \(2^{64}\) » ne suffit pas. Ce qu'on attend, c'est la conséquence : le calcul devient faux, le plus souvent en silence.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note que le cas général est connu, mais que le cas de Python l'est beaucoup moins. Les bornes n'étaient pas demandées (celles proposées n'étaient pas toujours correctes), et il ne faut pas confondre avec les flottants : parler de précision est hors sujet pour des entiers (p.~3).
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Calculer \(2^i\) à chaque tour est inutile. Comment évaluer un polynôme en un point avec une multiplication et une addition par coefficient ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le schéma de Horner commence par le coefficient de plus haut degré : dans quel sens faut-il parcourir la liste ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\begin{lstlisting}[language=Python]
+def bit_to_int(bit_lst):
+    val = 0
+    for i in range(len(bit_lst) - 1, -1, -1):
+        val = 2 * val + bit_lst[i]
+    return val
+\end{lstlisting}
+
+Invariant : après le traitement de l'indice \(i\), \texttt{val} \(= \sum_{j \ge i} n_j\, 2^{j-i}\). À la fin de la boucle (\(i = 0\)), \texttt{val} \(= \sum_j n_j 2^j\). Chaque tour fait un nombre constant d'opérations arithmétiques, comptées à coût constant comme d'usage : la complexité est \textbf{linéaire} en la taille de la liste. On vérifie que \texttt{bit\_to\_int(\allowbreak{}{[}0,\allowbreak{}\ 1,\allowbreak{}\ 0,\allowbreak{}\ 1,\allowbreak{}\ 0,\allowbreak{}\ 1{]}\allowbreak{})\allowbreak{}} vaut \(42\) et que la liste vide donne \(0\).
+
+\begin{methode}
+
+Horner : \(\sum_{i=0}^{k} a_i x^i = a_0 + x(a_1 + x(a_2 + \dots))\). Une multiplication et une addition par coefficient, en partant du plus haut degré.
+
+\end{methode}
+
+\begin{piege}
+
+\texttt{sum(\allowbreak{}bit\_lst{[}i{]}\allowbreak{}\ *\ 2**i\ for\ i\ in\ ...)\allowbreak{}} n'est pas linéaire : l'opérateur \texttt{**} coûte de l'ordre de \(\log_2 i\) multiplications par exponentiation rapide, d'où \(O(\ell \log \ell)\) pour une liste de longueur \(\ell\). Le rapport 2026 le relève : « La complexité de l'opérateur ** n'est pas connue » (p.~4). Si l'on parcourt la liste dans l'ordre, on maintient une variable \texttt{puissance} doublée à chaque tour.
+
+\end{piege}
+
+\begin{jury}
+
+Question de cours discriminante : « plus de la moitié des copies échoue à garantir une complexité linéaire pour convertir une suite de bits en l'entier correspondant » (rapport 2026, p.~3).
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Reproduisez l'addition posée à l'école, en base 2.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Précisez trois points : le sens du parcours, le calcul du chiffre et de la retenue à chaque rang, et ce qu'on fait de la retenue finale.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  On parcourt les deux listes simultanément depuis l'indice \(0\) (poids faibles), avec une retenue \(r\) initialisée à \(0\).
+\item
+  Au rang \(i\), on forme \(s = u_i + v_i + r \in \{0, 1, 2, 3\}\). Le chiffre de rang \(i\) du résultat est \(s \bmod 2\), la nouvelle retenue est \(s \,//\, 2 \in \{0,1\}\).
+\item
+  Si les listes ont des longueurs différentes, on complète la plus courte par des \(0\) en fin de liste.
+\item
+  Si la retenue vaut \(1\) à la fin, on ajoute un chiffre \(1\) en fin de liste : la somme de deux nombres de \(k\) bits peut en demander \(k+1\).
+\end{itemize}
+
+Chaque rang se traite en temps constant : l'algorithme est \textbf{linéaire}.
+
+\begin{piege}
+
+L'oubli classique est la retenue finale : sans elle, \(1 + 1\) donnerait \(0\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 explique les réponses mal calibrées par une lecture trop rapide : on n'avait pas lu Q4, qui demande le code (p.~4). Ici, on attend les grandes lignes en français, pas un programme.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Traduisez Q3 ligne à ligne : une boucle sur les indices, une variable de retenue, \texttt{\%} et \texttt{//}.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\begin{lstlisting}[language=Python]
+def sum_bits(b_lst_1, b_lst_2):
+    n = len(b_lst_1)          # les deux listes ont même longueur
+    res = []
+    retenue = 0
+    for i in range(n):
+        s = b_lst_1[i] + b_lst_2[i] + retenue
+        res.append(s % 2)
+        retenue = s // 2
+    if retenue == 1:
+        res.append(1)
+    return res
+\end{lstlisting}
+
+Invariant : après le tour \(i\), \(\sum_{j \le i} (u_j + v_j)\,2^j = \sum_{j \le i} \texttt{res}[j]\,2^j + \texttt{retenue}\cdot 2^{i+1}\). En sortie, l'ajout du chiffre de rang \(n\) donne exactement \(u + v\) ; par exemple, \texttt{sum\_bits(\allowbreak{}{[}1{]}\allowbreak{},\allowbreak{}\ {[}1{]}\allowbreak{})\allowbreak{}} vaut \texttt{{[}0,\ 1{]}}. Une nouvelle liste est construite, les arguments ne sont pas modifiés et le coût est linéaire.
+
+\begin{jury}
+
+D'après le rapport 2026, le principe est connu, mais l'implémentation est « souvent trop compliquée et manque des subtilités, comme la gestion de la dernière retenue » (p.~4). Un code court, une phrase de justification (un invariant suffit) et un exemple traité à la main valent mieux qu'un code alambiqué.
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Les poids faibles sont en tête de liste. Où ajouter des zéros sans changer la valeur ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+« Interrompre l'exécution si la condition n'est pas vérifiée » : Python a une instruction faite pour cela.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\begin{lstlisting}[language=Python]
+def complement(lst_bits, size):
+    assert size >= len(lst_bits)
+    return lst_bits + [0] * (size - len(lst_bits))
+\end{lstlisting}
+
+Les zéros sont ajoutés aux rangs de poids fort : la somme \(\sum n_i 2^i\) ne change pas. L'opérateur \texttt{+} construit une nouvelle liste, l'argument est donc préservé. L'inégalité est large, car Q11 appelle \texttt{complement} avec \texttt{size} égal à la longueur de l'une des listes. Coût \(O(\texttt{size})\).
+
+\begin{piege}
+
+\texttt{{[}0{]}\allowbreak{}\ *\ k\ +\ lst\_bits} multiplie la valeur par \(2^k\) : c'est le décalage de Q10, pas un complément.
+
+\end{piege}
+
+\begin{piege}
+
+\texttt{copie\ =\ lst\_bits} suivi de \texttt{copie.append(0)} modifie l'argument : les deux noms désignent la même liste. Le rapport 2026 le souligne, l'affectation à une nouvelle variable ne fait pas une copie d'une liste ; il relève aussi que l'usage de \texttt{assert} est mal connu (p.~4).
+
+\end{piege}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Que valent \(n \bmod 2\) et \(n \,//\, 2\) en fonction des chiffres \(n_0, n_1, \dots\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La division entière par 2 « décale » la décomposition. On répète jusqu'à obtenir \(0\), en rangeant chaque chiffre au fur et à mesure.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+On a \(n = n_0 + 2\sum_{i\ge1} n_i 2^{i-1}\) avec \(n_0 \in \{0,1\}\). Par unicité de la division euclidienne, \(n_0 = n \bmod 2\) et \(n \,//\, 2 = \sum_{i \ge 1} n_i 2^{i-1}\), entier dont les chiffres sont \(n_1, n_2, \dots\) On obtient donc les chiffres du poids faible au poids fort, c'est-à-dire dans l'ordre de la liste :
+
+\begin{lstlisting}[language=Python]
+def int_to_bit(n):
+    if n == 0:
+        return [0]
+    lst = []
+    while n > 0:
+        lst.append(n % 2)
+        n = n // 2
+    return lst
+\end{lstlisting}
+
+La boucle termine parce que \(n\) décroît strictement dans \(\mathbb{N}\) ; elle fait \(\lfloor \log_2 n \rfloor + 1\) tours. Exemple : \texttt{int\_to\_bit(42)} vaut \texttt{{[}0,\allowbreak{}\ 1,\allowbreak{}\ 0,\allowbreak{}\ 1,\allowbreak{}\ 0,\allowbreak{}\ 1{]}\allowbreak{}}.
+
+\begin{piege}
+
+Sans le cas particulier, \texttt{int\_to\_bit(0)} renvoie \texttt{{[}{]}}. Ce n'est pas faux (la somme vide vaut 0), mais il faut l'avoir décidé et le dire.
+
+\end{piege}
+
+\begin{piege}
+
+\texttt{lst\ =\allowbreak{}\ lst\ +\ {[}n\ \%\ 2{]}\allowbreak{}} recopie la liste à chaque tour, d'où un coût quadratique en le nombre de chiffres ; \texttt{lst\ =\allowbreak{}\ {[}n\ \%\ 2{]}\allowbreak{}\ +\ lst} inverse en plus l'ordre des bits. Le rapport 2026 signale ces deux défauts : « l'usage de l'opérateur + pour étendre une liste rend parfois la complexité bien plus importante que nécessaire » (p.~4).
+
+\end{piege}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Combien d'appels récursifs, sur quelle taille, et quel coût pour le reste du travail ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(k = 2^p\), divisez l'équation par \(4^p\) : la suite obtenue se télescope.
+
+\end{indication}
+
+\begin{indication}{3}
+
+La somme qui apparaît est géométrique de raison \(1/2\) : elle reste bornée.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Les étapes a, c et d coûtent au plus \(\lambda k\), et l'étape b fait 4 appels sur des listes de taille \(k/2\) :
+
+\equationajustee{\begin{aligned}
+C(k) &= 4\,C(k/2) + \lambda k, \\
+C(1) &= c_0.
+\end{aligned}}
+
+Avec \(k = 2^p\) et \(D_p = C(2^p)/4^p\), on obtient \(D_p = D_{p-1} + \lambda 2^{-p}\), donc
+
+\equationajustee{\begin{aligned}
+D_p &= c_0 + \lambda\sum_{j=1}^{p} 2^{-j} \\
+&= c_0 + \lambda(1 - 2^{-p}),
+\end{aligned}}
+
+et \(C(2^p) = (c_0 + \lambda)\,k^2 - \lambda k\). Ainsi
+
+\equationajustee{\boxed{C(k) = \Theta(k^2)}}
+
+Pour \(k\) quelconque, on encadre \(2^p \le k < 2^{p+1}\) et la croissance de \(C\) conserve l'ordre de grandeur. Cette méthode ne fait pas mieux que la multiplication posée.
+
+\begin{methode}
+
+Pour \(C(k) = a\,C(k/2) + \lambda k\), on pose \(D_p = C(2^p)/a^p\) et l'on somme : la somme géométrique obtenue décide du résultat. Ici, avec \(a = 4 > 2\), le coût des appels récursifs l'emporte sur le recollement. Il vaut mieux savoir mener ce calcul à la main que d'invoquer un théorème général.
+
+\end{methode}
+
+\begin{piege}
+
+Majorer \(\sum 2^{-j}\) par \(p\) conduit au résultat trop grossier \(O(k^2 \log k)\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 reproche à certaines copies d'oublier « qu'on manipule les complexités à une constante multiplicative près, soit via une constante abstraite, soit via un O() » (p.~4) : d'où le \(\lambda k\). Il attend aussi une conclusion simple, réduite au terme dominant.
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Repérez les produits qui figurent plusieurs fois dans (2) : faut-il les recalculer ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Développez \((f_u - d_u)(f_v - d_v)\) pour comprendre pourquoi la formule est juste, puis reprenez l'équation de Q7 avec le nouveau nombre d'appels.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Dans (2) n'apparaissent que \textbf{trois produits distincts} :
+
+\equationajustee{\begin{aligned}
+P_1 &= d_u d_v, \\
+P_2 &= f_u f_v, \\
+P_3 &= (f_u - d_u)(f_v - d_v),
+\end{aligned}}
+
+et \(P_2 + P_1 - P_3 = f_u d_v + d_u f_v\). Les produits \(P_1\) et \(P_2\) servent deux fois mais ne sont calculés qu'une fois. Leurs facteurs ont au plus \(k/2\) chiffres (\(|f_u - d_u| < b^{k/2}\)). Le reste (découpage, soustractions, additions, décalages) est linéaire. Il faut donc \textbf{3 multiplications récursives}, et
+
+\equationajustee{\boxed{C(k) = 3\,C(k/2) + \lambda k}}
+
+La résolution n'est pas demandée : l'énoncé admet le résultat \(O(k^{\log_2 3})\). Pour s'en convaincre, le télescopage de Q7 avec \(D_p = C(2^p)/3^p\) donne \(O(3^p)\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q8-arbres-appels.pdf}
+\caption*{Figure 1 --- Arbres des appels récursifs : chaque niveau coûte deux fois
+plus que le précédent avec 4 appels, 3/2 fois plus avec Karatsuba}
+\end{figure}
+
+\begin{methode}
+
+Pour accélérer un « diviser pour régner », on cherche à réduire le nombre d'appels récursifs, quitte à faire plus d'additions : c'est le nombre de feuilles de l'arbre d'appels (\(4^p\) contre \(3^p\)) qui domine.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 note que, sur cette question peu traitée, « une résolution de l'équation a été tentée alors que celle-ci n'était pas demandée » (p.~4). Répondez à ce qui est demandé : le nombre de produits, puis l'équation.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Écrivez \(b^i \sum_j n_j b^j\) et regardez ce que devient l'indice de chaque chiffre.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+On a \(b^i n = \sum_j n_j b^{j+i}\).
+
+Le chiffre de rang \(j\) passe au rang \(j+i\), et les rangs \(0\) à \(i-1\) deviennent nuls.
+
+\textbf{Multiplier par \(b^i\), c'est décaler les chiffres de \(i\) rangs vers les poids forts}, donc ici \textbf{ajouter \(i\) zéros en début de liste}, puisque les poids faibles sont en tête. Aucune multiplication n'est effectuée.
+
+\begin{piege}
+
+L'image du « décalage à gauche » suppose l'écriture usuelle, poids forts en tête. Ici l'ordre est inversé : suivez les indices plutôt que l'habitude.
+
+\end{piege}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Une concaténation de listes avec \texttt{+} ne modifie pas ses opérandes.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\begin{lstlisting}[language=Python]
+def shift(lst_bits, i):
+    return [0] * i + lst_bits
+\end{lstlisting}
+
+Le chiffre de rang \(j\) du résultat vaut \(0\) si \(j < i\) et \(n_{j-i}\) sinon, ce qui donne la valeur \(2^i n\). L'argument n'est pas modifié et le coût est \(O(i + \ell)\).
+
+\begin{piege}
+
+Insérer des zéros avec \texttt{lst\_bits.insert(\allowbreak{}0,\allowbreak{}\ 0)\allowbreak{}} modifie l'argument, ce que l'énoncé interdit, et coûte \(O(i\,\ell)\).
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+A et B sont les cas de base : quel est le produit de deux listes vides ? de deux bits ? N'oubliez pas de renvoyer une liste.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour C : trois appels récursifs, puis le recollement selon (2). Si \(n\) est impair, quel exposant faut-il prendre dans \(u = d_1 + b^{?} f_1\) ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+\(f_1 - d_1\) peut être négatif. Soit on suppose que \texttt{sub\_bit\_lst} traite les relatifs, soit on gère le signe à part.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+L'énoncé ne prévoit pas que \(f_1 - d_1\) puisse être négatif. On suppose d'abord, comme l'impose (2), que \texttt{sub\_bit\_lst} calcule une différence d'entiers relatifs, et que son résultat n'est pas plus long que le plus long de ses arguments.
+
+\begin{lstlisting}[language=Python]
+def karatsuba(lst1, lst2):
+    n = max(len(lst1), len(lst2))
+    lst1 = complement(lst1, n)
+    lst2 = complement(lst2, n)
+    if n == 0:
+        # A : listes vides, le produit vaut 0
+        return []
+    if n == 1:
+        # B : produit de deux bits
+        return [lst1[0] * lst2[0]]
+    else:
+        h = n//2
+        d1 = lst1[0:h]
+        f1 = lst1[h:]
+        d2 = lst2[0:h]
+        f2 = lst2[h:]
+        # C : trois produits récursifs, puis recollement selon (2)
+        p1 = karatsuba(d1, d2)
+        p2 = karatsuba(f1, f2)
+        p3 = karatsuba(sub_bit_lst(f1, d1), sub_bit_lst(f2, d2))
+        m = sub_bit_lst(sum_bit_lst(p2, p1), p3)      # = f1*d2 + d1*f2 >= 0
+        return sum_bit_lst(sum_bit_lst(p1, shift(m, h)), shift(p2, 2 * h))
+\end{lstlisting}
+
+Avec \(h = n//2\), on a \(u = d_1 + b^h f_1\) et \(v = d_2 + b^h f_2\), même si \(n\) est impair. La formule (2) écrite avec l'exposant \(h\) donne
+
+\equationajustee{u \times v = P_1 + b^{h}(P_2 + P_1 - P_3) + b^{2h} P_2,}
+
+ce que renvoie la partie C. Les cas de base renvoient des listes : \texttt{{[}{]}} pour \(0\), \texttt{{[}x{]}} pour le produit de deux bits. Pour \(n \ge 2\), on a \(1 \le h \le n-1\) : les appels portent sur des listes strictement plus courtes et la fonction termine.
+
+Variante n'utilisant que des entiers naturels : on compare \(f_1\) et \(d_1\), on calcule la valeur absolue de la différence, puis on ajoute ou retranche \(|P_3|\) selon les signes.
+
+\begin{lstlisting}[language=Python]
+def inferieur(a, b):
+    # a < b pour deux listes de bits (comparaison depuis le poids fort)
+    n = max(len(a), len(b))
+    a = complement(a, n)
+    b = complement(b, n)
+    for i in range(n - 1, -1, -1):
+        if a[i] != b[i]:
+            return a[i] < b[i]
+    return False
+
+def karatsuba(lst1, lst2):
+    n = max(len(lst1), len(lst2))
+    lst1 = complement(lst1, n)
+    lst2 = complement(lst2, n)
+    if n == 0:
+        return []
+    if n == 1:
+        return [lst1[0] * lst2[0]]
+    else:
+        h = n//2
+        d1 = lst1[0:h]
+        f1 = lst1[h:]
+        d2 = lst2[0:h]
+        f2 = lst2[h:]
+        p1 = karatsuba(d1, d2)
+        p2 = karatsuba(f1, f2)
+        neg1 = inferieur(f1, d1)
+        neg2 = inferieur(f2, d2)
+        if neg1:
+            a1 = sub_bit_lst(d1, f1)
+        else:
+            a1 = sub_bit_lst(f1, d1)
+        if neg2:
+            a2 = sub_bit_lst(d2, f2)
+        else:
+            a2 = sub_bit_lst(f2, d2)
+        p3 = karatsuba(a1, a2)              # valeur absolue de P3
+        if neg1 == neg2:                    # P3 >= 0
+            m = sub_bit_lst(sum_bit_lst(p2, p1), p3)
+        else:                               # P3 <= 0
+            m = sum_bit_lst(sum_bit_lst(p2, p1), p3)
+        return sum_bit_lst(sum_bit_lst(p1, shift(m, h)), shift(p2, 2 * h))
+\end{lstlisting}
+
+Cette variante fait toujours trois appels récursifs, et la comparaison ajoutée est linéaire, donc la complexité ne change pas. Elle a été testée sur des milliers de couples aléatoires ainsi que sur \(123\,456\,789 \times 987\,654\,321 = 121\,932\,631\,112\,635\,269\).
+
+\begin{piege}
+
+Les deux \texttt{if} ne sont pas chaînés : sans \texttt{return} dans la partie A, le cas \(n = 0\) tombe dans le \texttt{else} avec \(h = 0\), et l'appel \texttt{karatsuba(\allowbreak{}f1,\allowbreak{}\ f2)\allowbreak{}} se rappelle indéfiniment sur les mêmes listes vides. Autre piège : décaler le terme de tête de \(n\) au lieu de \(2h\), ce qui est faux quand \(n\) est impair.
+
+\end{piege}
+
+\begin{methode}
+
+Pour vérifier un code récursif, examinez trois points : chaque cas de base renvoie une valeur du bon type, la taille décroît strictement à chaque appel, et le recollement correspond exactement à la formule mathématique.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 place les cas de base en tête des difficultés : « Il était ici indispensable d'y renvoyer des listes et ça n'a pas toujours été le cas » (p.~4). Le cas A, pourtant identifié, a souvent été oublié ; \(h\) et \(n\) ont été confondus ; les variables intermédiaires portaient des noms peu significatifs. Quant aux différences négatives, « L'énoncé avait omis le cas où les soustractions intermédiaires pouvaient donner lieu à la représentation d'entiers négatifs, non prévus par l'énoncé » : le traiter n'était pas attendu, mais a fait bonne impression (p.~4).
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{probluxe8me-2-ensembles-de-mots-impluxe9mentuxe9s-par-tries}{%
+\section{Problème 2 --- Ensembles de mots implémentés par tries}\label{probluxe8me-2-ensembles-de-mots-impluxe9mentuxe9s-par-tries}}
+
+On représente un ensemble de mots par un arbre préfixe, puis on programme les opérations usuelles en OCaml. On lit ensuite le trie comme un automate et l'on fusionne les états équivalents. Outils : types récursifs, filtrage, récursion mutuelle, automates déterministes.
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Pensez aux deux grandes familles d'implémentation : l'une repose sur un ordre entre les clés, l'autre sur un calcul d'indice.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Arbre binaire de recherche} (éventuellement équilibré) : les clés sont ordonnées, et les opérations coûtent \(O(h)\) où \(h\) est la hauteur.
+\item
+  \textbf{Table de hachage} : une fonction de hachage envoie la clé dans une case d'un tableau. Le coût moyen est \(O(1)\) par opération sous de bonnes hypothèses de hachage, le pire cas linéaire.
+\end{itemize}
+
+\begin{jury}
+
+Question de cours étonnamment mal réussie selon le rapport 2026 : la seconde structure citée était souvent vague ou hors de propos (piles, files). « Les correcteurs s'attendaient à ce que les arbres binaires de recherche soient cités, mais la mention d'une liste de couples clé-valeur rapportait également les points. » (p.~4)
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Pour un ensemble, seule la présence d'une clé compte : que mettre en valeur associée ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+On utilise les mots comme \textbf{clés}, avec une valeur sans importance (\texttt{true}, \texttt{()}). Tester l'appartenance revient à tester la présence de la clé. Avec une table de hachage, cela coûte en moyenne le calcul du haché, en \(O(|m|)\) ; avec un arbre binaire de recherche équilibré, \(O(|m| \log n)\) comparaisons de caractères pour \(n\) mots.
+
+\begin{methode}
+
+Un ensemble est un dictionnaire dont on ignore les valeurs. Cette remarque vaut pour toutes les implémentations.
+
+\end{methode}
+
+\begin{jury}
+
+« La réponse attendue était d'utiliser un dictionnaire dont les clés sont les mots de l'ensemble et la valeur associée est non signifiante. » (rapport 2026, p.~5) Le jury a aussi accepté, quand elle faisait sens, la lecture selon laquelle on cherche à quels ensembles d'une collection appartient un mot donné, mais certaines copies n'utilisaient tout simplement pas de dictionnaire.
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Insérez les mots un par un : chaque mot suit le chemin déjà existant aussi loin que possible, puis crée une branche.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Repérez les mots qui sont préfixes d'autres mots (en, bot) : leur nœud est à la fois marqué et intérieur.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+La lettre étiquette l'arête qui mène au nœud ; les enfants vides ne sont pas représentés.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q14-trie.pdf}
+\caption*{Figure 2 --- Trie de l'ensemble en, entier, bot, bottier, bottine,
+routier, routine : 25 nœuds, 7 nœuds true, hauteur 7}
+\end{figure}
+
+On compte 25 nœuds, dont 7 marqués \texttt{true}, pour une hauteur de 7.
+
+\begin{piege}
+
+Le nœud de « bot » porte \texttt{true} \textbf{et} a un enfant. Ne marquez pas seulement les feuilles.
+
+\end{piege}
+
+\begin{piege}
+
+Ne fusionnez pas les branches qui se terminent pareil (« ier », « ine ») : le rapport 2026 signale qu'« Une minorité significative produit toutefois une structure qui n'est même pas un arbre » (p.~5). Le partage des suffixes, c'est l'objet de Q24 à Q28.
+
+\end{piege}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Une fonction auxiliaire, appelée sur l'indice \texttt{i}, peut renvoyer la liste des caractères à partir de cet indice. Donnez-lui un nom qui dise ce qu'elle fait.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour garder un coût linéaire, construisez la liste par \texttt{::} en tête, jamais avec \texttt{@}.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\begin{lstlisting}[language=Caml]
+let string_to_list s =
+  let n = String.length s in
+  (* caracteres_depuis i renvoie la liste des caractères de s
+     d'indices i, i+1, ..., n-1 *)
+  let rec caracteres_depuis i =
+    if i >= n then []
+    else s.[i] :: caracteres_depuis (i + 1)
+  in
+  caracteres_depuis 0
+\end{lstlisting}
+
+Rôle de la fonction auxiliaire : \texttt{caracteres\_depuis\ i} renvoie la liste des caractères à partir de l'indice \(i\). Par récurrence descendante sur \(i\), elle vaut \texttt{{[}s.{[}i{]}\allowbreak{};\allowbreak{}\ ...;\allowbreak{}\ s.{[}n-1{]}\allowbreak{}{]}\allowbreak{}}.
+
+Pour la complexité : \texttt{String.length} est appelée une seule fois, en \(O(1)\). La fonction auxiliaire est appelée \(n+1\) fois, chaque appel ne faisant qu'une comparaison, un accès \texttt{s.{[}i{]}} et un \texttt{::} en tête, en \(O(1)\). Le total est \textbf{\(O(n)\)}.
+
+\begin{piege}
+
+Les écritures \texttt{caracteres\_depuis\ (\allowbreak{}i+1)\allowbreak{}\ @\ {[}s.{[}i{]}\allowbreak{}{]}\allowbreak{}} et \texttt{String.sub} à chaque appel sont quadratiques : \texttt{@} coûte la longueur de son premier argument. La première inverse en plus l'ordre si on la combine mal. Autre confusion relevée par le rapport 2026 : \texttt{::} ajoute un élément en tête d'une liste, \texttt{@} concatène deux listes, et ni l'un ni l'autre ne modifie une liste existante (p.~5).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note que les copies écrites en style impératif (« de l'ordre de la moitié ») ont « régulièrement échoué à obtenir la complexité linéaire demandée en utilisant @ sans maîtriser la complexité de cet opérateur », et que d'autres ont oublié de justifier la complexité, pourtant demandée (p.~5).
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Le type n'a pas de constructeur « arbre vide ». Quel est le plus petit trie possible, et quel booléen doit-il porter ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{lstlisting}[language=Caml]
+let empty_trie () = Node (false, [])
+\end{lstlisting}
+
+On obtient une racine seule. Elle porte \texttt{false}, sinon le trie contiendrait le mot vide.
+
+\begin{piege}
+
+\texttt{let\ empty\_trie\ =\allowbreak{}\ Node\ (\allowbreak{}false,\allowbreak{}\ {[}{]}\allowbreak{})\allowbreak{}} n'a pas le type \texttt{unit\ -\textgreater{}\ trie} demandé. Et \texttt{Node\ (true,\ {[}{]})} représente l'ensemble réduit au mot vide, pas l'ensemble vide.
+
+\end{piege}
+
+\begin{jury}
+
+La question demandait une fonction d'argument \texttt{unit}, pas une constante : « Environ un tiers des candidates et candidats a buté sur cette subtilité. » (rapport 2026, p.~5)
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Le cas de base est la liste à un élément. Le cas \texttt{{[}{]}} sert seulement à rendre le filtrage exhaustif.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Nommez le résultat de l'appel récursif avec un \texttt{let} pour ne le calculer qu'une fois.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\begin{lstlisting}[language=Caml]
+let rec max_list lst =
+  match lst with
+  | [] -> failwith "max_list : liste vide"
+  | [x] -> x
+  | x :: reste ->
+      let m = max_list reste in
+      if x > m then x else m
+\end{lstlisting}
+
+Par récurrence sur la longueur \(\ell \ge 1\) : si \(\ell = 1\), on renvoie l'unique élément ; sinon, le maximum est \(\max(x, m)\) où \(m\) est le maximum de \texttt{reste}. Le coût est linéaire.
+
+\begin{piege}
+
+\texttt{if\ x\ \textgreater{}\ max\_list\ reste\ then\ x\ else\ max\_list\ reste} fait deux appels récursifs par niveau, d'où un coût exponentiel.
+
+\end{piege}
+
+\begin{piege}
+
+Avec un accumulateur, l'initialiser à \texttt{0} est faux : rien ne dit que les éléments sont positifs. Le rapport 2026 précise que « la valeur min\_int a été quelques fois lue et acceptée, mais pas zéro » (p.~5).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 déconseille, pour Q17 et Q18, la fonction auxiliaire à accumulateur, qui « alourdit le code et complexifie sa conception », et rappelle que « la récursivité terminale n'est pas au programme » (p.~5). Une fonction directement récursive, comme ci-dessus, est attendue.
+
+\end{jury}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Récursion structurelle sur la liste. Placez l'image de la tête devant le résultat de l'appel récursif.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\begin{lstlisting}[language=Caml]
+let rec list_map f lst =
+  match lst with
+  | [] -> []
+  | x :: reste -> f x :: list_map f reste
+\end{lstlisting}
+
+Par récurrence immédiate, on obtient \texttt{{[}f\ x1;\allowbreak{}\ ...;\allowbreak{}\ f\ xn{]}\allowbreak{}} dans le même ordre, et le type inféré est \texttt{(\allowbreak{}\textquotesingle{}a\ -\textgreater{}\ \textquotesingle{}b)\allowbreak{}\ -\textgreater{}\ \textquotesingle{}a\ list\ -\textgreater{}\ \textquotesingle{}b\ list}.
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Annoncez votre convention : un nœud seul a pour hauteur 0 si l'on compte les arêtes.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour un nœud qui a des enfants, construisez avec \texttt{list\_map} la liste des hauteurs des sous-arbres, puis prenez-en le maximum.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\begin{lstlisting}[language=Caml]
+let rec height t =
+  match t with
+  | Node (_, []) -> 0
+  | Node (_, enfants) ->
+      1 + max_list (list_map (fun (_, fils) -> height fils) enfants)
+\end{lstlisting}
+
+La hauteur d'un nœud ayant des enfants \(t_1, \dots, t_p\) vaut \(1 + \max_j \mathrm{hauteur}(t_j)\). La liste passée à \texttt{max\_list} n'est pas vide, puisque le premier motif a traité le cas sans enfant. Le trie de Q14 a pour hauteur 7.
+
+\begin{piege}
+
+Le motif \texttt{Node\ (\_,\ {[}{]})} doit précéder le cas général, faute de quoi \texttt{max\_list} serait appelée sur une liste vide.
+
+\end{piege}
+
+\begin{piege}
+
+Les enfants sont des couples (lettre, sous-trie). \texttt{list\_map\ height\ enfants} est mal typé : il faut ignorer la lettre, d'où \texttt{fun\ (\allowbreak{}\_,\allowbreak{}\ fils)\allowbreak{}\ -\textgreater{}\ height\ fils}. C'est l'erreur principale relevée par le rapport 2026 pour Q19 et Q20 (p.~5).
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Taille = 1 (la racine) + somme des tailles des sous-arbres. Il faut parcourir une liste de couples.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Même schéma qu'en Q19 : \texttt{list\_map} donne la liste des tailles des sous-tries. Il ne manque qu'une fonction qui somme une liste d'entiers.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\begin{lstlisting}[language=Caml]
+let rec somme_liste lst =
+  match lst with
+  | [] -> 0
+  | x :: reste -> x + somme_liste reste
+
+let rec size t =
+  match t with
+  | Node (_, enfants) ->
+      1 + somme_liste (list_map (fun (_, fils) -> size fils) enfants)
+\end{lstlisting}
+
+Par induction structurelle, \texttt{list\_map} calcule la liste des tailles des sous-tries (la lettre de chaque couple est ignorée), \texttt{somme\_liste} les additionne et \texttt{size} ajoute la racine. Chaque nœud est visité une fois, donc le coût est linéaire. Sur le trie de Q14, on trouve 25.
+
+Variante sans \texttt{list\_map}, par deux fonctions mutuellement récursives :
+
+\begin{lstlisting}[language=Caml]
+let rec size t =
+  match t with
+  | Node (_, enfants) -> 1 + size_list enfants
+and size_list enfants =
+  match enfants with
+  | [] -> 0
+  | (_, fils) :: reste -> size fils + size_list reste
+\end{lstlisting}
+
+\begin{methode}
+
+Pour les arbres d'arité quelconque, deux schémas : appliquer la fonction aux enfants avec \texttt{list\_map} puis agréger (maximum, somme), ou écrire le couple « traiter un nœud » et « traiter une liste d'enfants » en récursion mutuelle. Le second sert aussi à Q22 et Q23.
+
+\end{methode}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Commencez par les deux premiers cas : que compte la fonction sur un nœud sans enfant ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans le troisième cas, le booléen \texttt{b} est reconduit dans \texttt{Node\ (b,\ tail)}. Combien de fois est-il réellement examiné ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Établissez une relation de récurrence entre \(f(t)\) et les \(f(t_j)\) des sous-arbres, puis interprétez-la.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Pour \(t = \texttt{Node}(b, [(c_1, t_1); \dots; (c_p, t_p)])\), montrons que
+
+\equationajustee{f(t) = [b] + \sum_{j=1}^{p} f(t_j),}
+
+où \([b]\) vaut 1 si \(b\) est \texttt{true} et 0 sinon.
+
+Si \(p = 0\), les deux premiers cas renvoient 1 ou 0 selon \(b\). Si \(p \ge 1\), le troisième cas donne
+
+\equationajustee{f(t) = f(t_1) + f(\texttt{Node}(b, [(c_2, t_2); \dots; (c_p, t_p)])),}
+
+et une récurrence sur \(p\) conclut. Le booléen n'est examiné qu'une fois, quand la liste d'enfants est épuisée. Par induction, \(f(t)\) est donc le nombre de nœuds marqués \texttt{true}. Chaque nœud correspond à un unique mot (l'étiquette du chemin qui y mène), donc
+
+\textbf{\(f\) calcule le nombre de mots du trie} : 4 pour la figure 1, 3 pour la figure 2, 7 pour le trie de Q14.
+
+\begin{piege}
+
+« \(f\) compte les feuilles marquées \texttt{true} » est faux : le nœud du mot « le », dans la figure 1, est marqué sans être une feuille, et il est compté. C'est l'erreur relevée par le rapport 2026 : les candidats « estiment souvent à tort qu'on ne compte que les true aux feuilles » (p.~5).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 range Q21 parmi les questions « nécessitant un effort de rédaction » (p.~4) : il faut nommer la grandeur et la justifier par un raisonnement (ici une relation de récurrence), pas seulement par un exemple.
+
+\end{jury}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+On consomme le mot lettre par lettre. Quand il est épuisé, que dit le booléen du nœud atteint ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour trouver l'enfant étiqueté par une lettre, parcourez la liste des enfants avec une seconde fonction.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\begin{lstlisting}[language=Caml]
+let rec is_in_trie mot t =
+  match mot, t with
+  | [], Node (b, _) -> b
+  | c :: reste, Node (_, enfants) -> is_in_children c reste enfants
+and is_in_children c reste enfants =
+  match enfants with
+  | [] -> false
+  | (l, fils) :: suite ->
+      if l = c then is_in_trie reste fils
+      else is_in_children c reste suite
+\end{lstlisting}
+
+Le mot vide appartient au trie si et seulement si la racine porte \texttt{true}. Le mot \(c\cdot w\) y appartient si et seulement s'il existe un enfant étiqueté \(c\) dont le sous-trie contient \(w\). Le coût est \(O(|m|\cdot|\Sigma|)\).
+
+Le rapport 2026 attendait que l'on s'inspire du code de Q21, et notamment de « l'astuce de construction d'un nœud fictif pour gérer les appels récursifs » (p.~5), d'autres solutions restant acceptées. On obtient alors une seule fonction :
+
+\begin{lstlisting}[language=Caml]
+let rec is_in_trie mot t =
+  match mot, t with
+  | [], Node (b, _) -> b
+  | _ :: _, Node (_, []) -> false
+  | c :: reste, Node (b, (l, fils) :: suite) ->
+      if l = c then is_in_trie reste fils
+      else is_in_trie mot (Node (b, suite))
+\end{lstlisting}
+
+Le deuxième cas traite l'enfant manquant ; dans le troisième, si la première lettre ne convient pas, on cherche dans les enfants restants du même nœud.
+
+\begin{piege}
+
+Renvoyer \texttt{true} dès que le chemin existe : « let » n'est pas dans le trie de la figure 1, bien que son chemin existe.
+
+\end{piege}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Même descente qu'en Q22, mais on reconstruit les nœuds au retour, puisque la structure est immuable.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Si aucun enfant ne porte la lettre, on crée la branche en ajoutant la fin du mot au trie vide. Ne perdez ni les autres enfants ni le booléen courant.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\begin{lstlisting}[language=Caml]
+let rec add_to_trie mot t =
+  match mot, t with
+  | [], Node (_, enfants) -> Node (true, enfants)
+  | c :: reste, Node (b, enfants) -> Node (b, add_children c reste enfants)
+and add_children c reste enfants =
+  match enfants with
+  | [] -> [(c, add_to_trie reste (empty_trie ()))]
+  | (l, fils) :: suite ->
+      if l = c then (l, add_to_trie reste fils) :: suite
+      else (l, fils) :: add_children c reste suite
+\end{lstlisting}
+
+Si le mot est vide, on marque le nœud en conservant ses enfants. Sinon, on ajoute la suite du mot dans le bon sous-trie, ou dans une branche neuve s'il n'existe pas ; les autres enfants et le booléen sont conservés. Le résultat contient les mots initiaux et le mot ajouté. En insérant les sept mots de Q14 dans \texttt{empty\_trie\ ()}, on retrouve 25 nœuds, une hauteur de 7 et 7 mots.
+
+\begin{piege}
+
+Renvoyer \texttt{Node\ (true,\ {[}{]})} pour le mot vide détruirait tous les mots plus longs : ajouter « bot » effacerait « bottier » et « bottine ».
+
+\end{piege}
+
+\begin{piege}
+
+Le trie est immuable : appeler \texttt{add\_to\_trie\ reste\ fils} sans remettre le résultat dans un nouveau nœud ne change rien au trie renvoyé. Le rapport 2026 constate que les candidats se comportent souvent « comme si les tries étaient des structures mutables » (p.~6).
+
+\end{piege}
+
+\begin{jury}
+
+« Cette fonction appelait l'explication de son algorithme » (rapport 2026, p.~6) : quand elle était présente, elle a permis de valoriser des programmes imparfaits. Écrivez deux ou trois phrases avant le code.
+
+\end{jury}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Qu'est-ce qu'un trie partage entre les mots ? Qu'est-ce qu'il ne partage jamais ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparez, sur le dessin de Q14, les sous-arbres issus de « botti » et de « routi ».
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+Un trie partage les \textbf{préfixes} communs, mais pas les \textbf{suffixes}. Sur l'exemple de Q14, les sous-arbres issus de « botti » et de « routi » sont identiques (suffixes \{er, ne\}) et stockés deux fois ; la fin « e → r » apparaît trois fois. Dans un vrai lexique, riche en terminaisons communes (pluriels, conjugaisons), on stocke ainsi \textbf{de nombreux sous-arbres identiques, redondants}. C'est un gaspillage de mémoire, alors que le temps de recherche reste en \(O(|m|)\).
+
+\begin{jury}
+
+Question souvent abordée et bien traitée selon le rapport 2026 ; le phénomène attendu est nommé ainsi : « la redondance des suffixes » (p.~6).
+
+\end{jury}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Faites correspondre à chaque composant de l'automate un élément du trie : nœud, racine, booléen, arête étiquetée.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Alphabet} \(\Sigma\) : les lettres.
+\item
+  \textbf{États} : les nœuds du trie.
+\item
+  \textbf{État initial} : la racine, et elle seule.
+\item
+  \textbf{États finaux} : les nœuds marqués \texttt{true}.
+\item
+  \textbf{Transitions} : \(\delta(q, c) = q'\) si \(q'\) est l'enfant de \(q\) étiqueté \(c\). Il n'y a pas de transition (blocage) si cet enfant est vide.
+\end{itemize}
+
+L'automate obtenu est déterministe, en général incomplet, et acyclique. Lire un mot depuis la racine suit l'unique chemin qu'il étiquette ; le mot est accepté si et seulement si le nœud atteint porte \texttt{true}. Le langage reconnu est donc exactement l'ensemble des mots du trie.
+
+\begin{piege}
+
+Les états sont les \textbf{nœuds} du trie, pas ses booléens, ni les deux valeurs \texttt{true} et \texttt{false} (ce qui ne ferait que deux états). Les transitions relient deux états par une lettre : ce ne sont pas les lettres elles-mêmes.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 juge que le passage du trie à l'automate a été compris dans les grandes lignes, « mais la précision de la rédaction laisse à désirer. Les transitions de l'automate demandé ne sont pas des lettres. » (p.~6) Citez les cinq composants, chacun défini précisément.
+
+\end{jury}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Reprenez le dessin de Q14 : orientez les arêtes, ajoutez la flèche d'entrée et doublez les états finaux.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+On note \(q_w\) l'état atteint en lisant \(w\). L'automate a 25 états et 24 transitions. Les états finaux sont doublement cerclés et la flèche entrante marque l'état initial.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q26-automate-trie.pdf}
+\caption*{Figure 3 --- Automate du trie de Q14 : état initial q\_ε, états finaux
+doublement cerclés, 25 états et 24 transitions}
+\end{figure}
+
+Les états finaux sont \(q_{en},\allowbreak q_{entier},\allowbreak q_{bot},\allowbreak q_{bottier},\allowbreak q_{bottine},\allowbreak q_{routier},\allowbreak q_{routine}\).
+
+\begin{piege}
+
+\(q_{en}\) et \(q_{bot}\) sont finaux tout en ayant des transitions sortantes.
+
+\end{piege}
+
+\begin{piege}
+
+D'après le rapport 2026, deux erreurs ont coûté des points : fusionner des états dès cette question, et dessiner l'automate du trie de la figure 1 au lieu de celui de Q14 (p.~6). Le jury s'étonne aussi des copies qui changent de convention pour l'état initial et les états finaux.
+
+\end{piege}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Sans transition sortante, la seconde condition est automatiquement vérifiée : il reste à comparer la finalité.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour un couple avec transitions, vérifiez lettre par lettre en vous appuyant sur le premier couple trouvé.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\textbf{Sans transition sortante} : \(q_{bottier}\) et \(q_{routier}\) sont tous deux finaux, et toute lettre bloque pour les deux. Donc \(q_{bottier}\,E\,q_{routier}\).
+
+\textbf{Avec transition sortante} : \(q_{bottie}\) et \(q_{routie}\) sont non finaux. La lettre \texttt{r} mène à \(q_{bottier}\) et à \(q_{routier}\), qui sont en relation ; toute autre lettre bloque pour les deux. Donc \(q_{bottie}\,E\,q_{routie}\).
+
+\begin{piege}
+
+\(q_{botti}\) et \(q_{bottin}\) ne sont pas en relation : la lettre \texttt{n} bloque pour l'un et pas pour l'autre.
+
+\end{piege}
+
+\begin{piege}
+
+Une transition sortante d'un état \(q\) est une transition qui part de \(q\). Les états sans transition sortante sont donc les feuilles du trie. Le rapport 2026 note que « Quelques candidates et candidats semblent ne pas comprendre ce qu'est une transition sortante. » (p.~6)
+
+\end{piege}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Deux états en relation reconnaissent le même langage. Que se passe-t-il si on les fusionne ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifiez que l'automate fusionné est bien défini : finalité et transitions ne doivent pas dépendre du représentant choisi.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Dans un automate acyclique, on peut calculer les classes en remontant depuis les états sans successeur.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\textbf{Démarche.} \(E\) est une relation d'équivalence : on le vérifie par récurrence sur la hauteur des états, l'automate étant acyclique. On construit l'\textbf{automate quotient} :
+
+\begin{itemize}
+\tightlist
+\item
+  ses états sont les classes \([q]\), et l'état initial est \([q_\varepsilon]\) ;
+\item
+  \([q]\) est final si \(q\) l'est, ce qui est bien défini (même finalité dans une classe) ;
+\item
+  \(\delta'([q], c) = [\delta(q, c)]\), ce qui est bien défini : si \(q\,E\,q'\), la lettre \(c\) bloque pour les deux, ou bien \(\delta(q,c)\,E\,\delta(q',c)\).
+\end{itemize}
+
+Comme deux états en relation reconnaissent le même langage, la fusion ne change pas le langage reconnu. Pour le calcul, on traite les états par hauteur croissante (longueur du plus long chemin qui en part). À chaque état, on associe sa \textbf{signature} : sa finalité et les couples \((c, [\delta(q,c)])\) des lettres non bloquantes. Deux états sont en relation si et seulement s'ils ont même signature.
+
+\textbf{Illustration sur \{car, par, cal, pal\}} (9 états) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Hauteur
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+États
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Signature
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Classe
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 & \(q_{car}, q_{cal}, q_{par}, q_{pal}\) & final, aucune transition & \(X\) \\
+1 & \(q_{ca}, q_{pa}\) & non final, r → \(X\), l → \(X\) & \(Y\) \\
+2 & \(q_c, q_p\) & non final, a → \(Y\) & \(Z\) \\
+3 & \(q_\varepsilon\) & non final, c → \(Z\), p → \(Z\) & \(R\) \\
+\end{longtable}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q28-minimisation.pdf}
+\caption*{Figure 4 --- Minimisation pour car, par, cal, pal : les états de même
+classe fusionnent, de 9 à 4 états}
+\end{figure}
+
+On passe de \textbf{9 à 4 états}, et le langage reste \(\{c,p\}\{a\}\{r,l\}\).
+
+Sur le trie de Q14, on fusionne successivement :
+
+\begin{itemize}
+\tightlist
+\item
+  les cinq états finaux sans successeur ;
+\item
+  \(q_{entie}, q_{bottie}, q_{routie}\) ;
+\item
+  \(q_{bottin}\) et \(q_{routin}\) ;
+\item
+  \(q_{botti}\) et \(q_{routi}\) ;
+\item
+  \(q_{bott}\) et \(q_{rout}\).
+\end{itemize}
+
+On passe de 25 à 16 états.
+
+\begin{methode}
+
+Pour fusionner des états, il faut toujours vérifier que le quotient est bien défini : la finalité et les transitions doivent passer au quotient. Ce sont exactement les deux clauses de la définition de \(E\).
+
+\end{methode}
+
+\begin{jury}
+
+Question très peu traitée. Le rapport 2026 est net : « Ne traiter que l'exemple était insuffisant, de même que se contenter d'une idée vague de fusion d'états : une description raisonnablement algorithmique du procédé était attendue. » (p.~6) Donnez la démarche (quotient, ordre de traitement, signatures), puis l'exemple chiffré.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{probluxe8me-3-logique-implicationnelle}{%
+\section{Problème 3 --- Logique implicationnelle}\label{probluxe8me-3-logique-implicationnelle}}
+
+On compare syntaxe et sémantique. On montre d'abord que l'implication et \(\bot\) suffisent à tout exprimer, puis on prouve des séquents dans un système réduit à l'implication et à la loi de Peirce. On étudie enfin la correction des règles et les liens entre la loi de Peirce et le raisonnement par l'absurde. Outils : tables de vérité, induction structurelle, arbres de preuve.
+
+Notations : \(A \equiv B\) signifie \(v(A) = v(B)\) pour toute valuation \(v\).
+
+La notation \(\Gamma \models F\) (\(F\) est conséquence sémantique de \(\Gamma\)) signifie que toute valuation satisfaisant \(\Gamma\) satisfait \(F\). Les valeurs de vérité sont notées V et F. Comme la valeur d'une formule ne dépend que des valeurs de ses sous-formules, on peut remplacer une sous-formule par une formule équivalente.
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Quatre lignes, pour les quatre combinaisons des valeurs de \(A\) et \(B\).
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+\(v(A)\) & \(v(B)\) & \(A \to B\) & \(\neg A\) & \(\neg A \vee B\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V & V & V & F & V \\
+V & F & F & F & F \\
+F & V & V & V & V \\
+F & F & V & V & V \\
+\end{longtable}
+
+Les deux dernières colonnes coïncident pour toute valuation : \(\boxed{A \to B \equiv \neg A \vee B}\).
+
+\begin{piege}
+
+\(A\) et \(B\) sont des formules et non des variables. On raisonne sur leurs valeurs \(v(A)\) et \(v(B)\), qui parcourent bien les quatre cas.
+
+\end{piege}
+
+\begin{piege}
+
+N'écrivez pas \(\top\) et \(\bot\) dans la table pour « vrai » et « faux » : ce sont des formules, pas des valeurs de vérité. Le rapport 2026 y voit l'un des symptômes d'une mauvaise distinction entre syntaxe et sémantique, « défaut récurrent dans tout cet exercice » (p.~6).
+
+\end{piege}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+\(\bot\) est faux sous toute valuation. Quand une implication est-elle fausse ?
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+\(v(A)\) & \(A \to \bot\) & \(\neg A\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V & F & F \\
+F & V & V \\
+\end{longtable}
+
+\textbf{Oui}, les deux formules sont équivalentes : \(\boxed{\neg A \equiv A \to \bot}\).
+
+On peut aussi faire le lien avec Q29, ce que peu de copies ont fait selon le rapport 2026 (p.~6) : \(A \to \bot \equiv \neg A \vee \bot\), qui a la valeur de \(\neg A\).
+
+\begin{methode}
+
+La négation se définit à partir de \(\to\) et de \(\bot\). Cette remarque servira à Q33 ; en Q40, en revanche, elle ne dispense pas de passer de l'une à l'autre par des règles.
+
+\end{methode}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Calculez les sous-formules de l'intérieur vers l'extérieur : \(A \to B\), puis \((A \to B) \to A\), puis \(\varphi\).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(v(A)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(v(B)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(A \to B\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\((A \to B) \to A\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\varphi\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V & V & V & V & V \\
+V & F & F & V & V \\
+F & V & V & F & V \\
+F & F & V & F & V \\
+\end{longtable}
+
+Si \(A\) est vraie, \(\varphi\) a un conséquent vrai ; si \(A\) est fausse, \((A\to B)\to A\) est fausse et \(\varphi\) a un antécédent faux. \textbf{\(\varphi\) est une tautologie} : c'est la loi de Peirce.
+
+\begin{piege}
+
+Dire seulement que la formule est « toujours vraie » ne suffit pas, et la seconde partie de la question ne doit pas être oubliée. Le rapport 2026 : certains « se sont contentés d'indiquer que la formule est toujours vraie ce qui ne suffisait pas à obtenir les points » (p.~6). Le mot attendu est tautologie (et non « totologie », relevé par le jury).
+
+\end{piege}
+
+\begin{jury}
+
+Détailler la table, c'est faire figurer les colonnes intermédiaires. Q29 à Q31 ont été réussies par quasiment toutes les copies qui les ont traitées (rapport 2026, p.~6) : ce sont des points à prendre.
+
+\end{jury}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Il suffit d'exprimer \(\vee\) et \(\wedge\) à l'aide de \(\neg\) et \(\to\) : Q29 suggère une piste pour \(\vee\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(\wedge\), pensez à \(\neg(A \to \neg B)\), et vérifiez-le par une table.
+
+\end{indication}
+
+\begin{indication}{3}
+
+L'induction porte sur la propriété « il existe une formule équivalente qui n'utilise que \(\neg\) et \(\to\) ». Traitez tous les constructeurs, en remplaçant d'abord les sous-formules.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+Les tables donnent :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(v(A)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(v(B)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(A \vee B\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\neg A \to B\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(A \wedge B\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\neg(A \to \neg B)\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V & V & V & V & V & V \\
+V & F & V & V & F & F \\
+F & V & V & V & F & F \\
+F & F & F & F & F & F \\
+\end{longtable}
+
+donc \(A \vee B \equiv \neg A \to B\) et \(A \wedge B \equiv \neg(A \to \neg B)\).
+
+\textbf{Propriété démontrée.} Pour \(F \in S_P\), on note \(\mathcal{P}(F)\) la propriété : « il existe une formule \(F'\), équivalente à \(F\), dont les seuls connecteurs sont \(\neg\) et \(\to\) ».
+
+Montrons \(\mathcal{P}(F)\) pour toute \(F \in S_P\), par induction structurelle sur \(F\).
+
+\textbf{Cas de base.} Si \(F\) est \(\top\), \(\bot\) ou une variable propositionnelle, \(F' = F\) ne contient aucun connecteur.
+
+\textbf{Cas inductifs.} Soient \(A\) et \(B\) deux formules vérifiant \(\mathcal{P}\) (hypothèse d'induction).
+
+On fixe donc \(A' \equiv A\) et \(B' \equiv B\), deux formules n'utilisant que \(\neg\) et \(\to\).
+
+Par le lemme de remplacement :
+
+\begin{itemize}
+\tightlist
+\item
+  pour \(F = \neg A\), on a \(F \equiv \neg A'\) ;
+\item
+  pour \(F = A \to B\), on a \(F \equiv A' \to B'\) ;
+\item
+  pour \(F = A \vee B\), l'équivalence préalable appliquée à \(A'\) et \(B'\) donne
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+F &\equiv A' \vee B' \\
+&\equiv \neg A' \to B' ;
+\end{aligned}}
+
+\begin{itemize}
+\tightlist
+\item
+  pour \(F = A \wedge B\), de même,
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+F &\equiv A' \wedge B' \\
+&\equiv \neg(A' \to \neg B').
+\end{aligned}}
+
+Dans les quatre cas, la formule obtenue n'utilise que \(\neg\) et \(\to\), puisque \(A'\) et \(B'\) n'utilisent qu'eux.
+
+\textbf{Conclusion.} Par induction structurelle, \(\mathcal{P}(F)\) est vraie pour toute formule de \(S_P\) : \textbf{\(\{\neg, \to\}\) est un système complet.}
+
+\begin{piege}
+
+Appliquer l'équivalence directement à \(A \vee B\), sans avoir d'abord remplacé \(A\) et \(B\) par \(A'\) et \(B'\), laisserait des disjonctions et des conjonctions à l'intérieur des sous-formules.
+
+\end{piege}
+
+\begin{piege}
+
+Erreurs fréquentes relevées par le rapport 2026 (p.~7) : oublier un cas de base (souvent les variables propositionnelles) ou un cas inductif ; mettre les formules de hauteur 1 dans les cas de base ; ne pas dire à quoi s'applique l'hypothèse d'induction ; ne pas annoncer ce qu'on prouve ; confondre induction sur les formules et récurrence sur leur taille.
+
+\end{piege}
+
+\begin{jury}
+
+Question la plus discriminante du problème 3 : « Presque aucun candidat ne sait rédiger une preuve par induction correcte. » Et le jury est strict sur la forme : « Donner les arguments centraux sans se plier au format de preuve imposé par l'énoncé n'accordait pas de point. » (rapport 2026, p.~7) Annoncez la propriété, traitez chaque cas, nommez l'hypothèse d'induction, concluez.
+
+\end{jury}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Composez Q32 et Q30. Il reste à éliminer les \(\neg\), à toutes les profondeurs.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Par Q32, \(F \equiv F'\), où \(F'\) n'utilise que \(\neg\) et \(\to\). On procède ensuite par induction sur \(F'\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\top\), \(\bot\) et les variables sont déjà dans \(S_I\) ;
+\item
+  \(A \to B \equiv A'' \to B''\), où \(A''\) et \(B''\) sont données par l'hypothèse d'induction ;
+\item
+  enfin, par remplacement puis par Q30,
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+\neg A &\equiv \neg A'' \\
+&\equiv A'' \to \bot.
+\end{aligned}}
+
+La formule obtenue appartient à \(S_I\). Par transitivité, \textbf{toute formule de \(S_P\) est équivalente à une formule de \(S_I\)}.
+
+\begin{jury}
+
+Cette question, qui demande moins de formalisme que Q32, a été mieux réussie (rapport 2026, p.~7). Une induction courte mais complète suffit.
+
+\end{jury}
+
+\begin{piege}
+
+On ne peut pas se passer de \(\bot\). Sans lui, toute formule construite avec \(\to\) et des variables serait vraie quand toutes les variables sont vraies, donc \(\neg p\) ne serait pas exprimable.
+
+\end{piege}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Lisez les arbres de bas en haut : pour prouver \(X \to Y\), appliquez intro-\(\to\) ; pour obtenir une formule qui n'est pas dans le contexte, cherchez une implication qui y conduit et appliquez elim-\(\to\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le point 3, la loi de Peirce est un axiome dont on ne peut se servir qu'en prouvant son antécédent \((C \to B) \to C\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Une fois \(C \to B\) ajouté au contexte, \(A \to C\) et \(C \to B\) donnent \(A \to B\), comme au point 2.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\textbf{1.} Avec \(\Gamma_1 = A, A \to B\) :
+
+\equationajustee{\dfrac{\dfrac{\dfrac{}{\Gamma_1 \vdash A \to B}\,\text{ax} \qquad \dfrac{}{\Gamma_1 \vdash A}\,\text{ax}}{\Gamma_1 \vdash B}\,\text{elim-}\to}{A \vdash (A \to B) \to B}\,\text{intro-}\to}
+
+\textbf{2.} Avec \(\Gamma_2 = A \to B, B \to C, A\) :
+
+\equationajustee{\dfrac{\dfrac{\dfrac{}{\Gamma_2 \vdash B \to C}\,\text{ax} \qquad \dfrac{\dfrac{}{\Gamma_2 \vdash A \to B}\,\text{ax} \qquad \dfrac{}{\Gamma_2 \vdash A}\,\text{ax}}{\Gamma_2 \vdash B}\,\text{elim-}\to}{\Gamma_2 \vdash C}\,\text{elim-}\to}{A \to B, B \to C \vdash A \to C}\,\text{intro-}\to}
+
+\textbf{3.} Avec \(\Gamma_3 = (A \to B) \to C, A \to C\) et \(\Delta = \Gamma_3, C \to B\) :
+
+\equationajustee{\pi = \dfrac{\dfrac{\dfrac{}{\Delta, A \vdash C \to B}\,\text{ax} \qquad \dfrac{\dfrac{}{\Delta, A \vdash A \to C}\,\text{ax} \qquad \dfrac{}{\Delta, A \vdash A}\,\text{ax}}{\Delta, A \vdash C}\,\text{elim-}\to}{\Delta, A \vdash B}\,\text{elim-}\to}{\Delta \vdash A \to B}\,\text{intro-}\to}
+
+\equationajustee{\dfrac{\dfrac{}{\Gamma_3 \vdash ((C \to B) \to C) \to C}\,\text{Peirce} \qquad \dfrac{\dfrac{\dfrac{}{\Delta \vdash (A \to B) \to C}\,\text{ax} \qquad \overset{\pi}{\Delta \vdash A \to B}}{\Delta \vdash C}\,\text{elim-}\to}{\Gamma_3 \vdash (C \to B) \to C}\,\text{intro-}\to}{\Gamma_3 \vdash C}\,\text{elim-}\to}
+
+\begin{methode}
+
+Pour se servir d'un axiome de la forme \(X \to Y\), on le place comme prémisse gauche d'un elim-\(\to\) et l'on prouve \(X\) à côté.
+
+\end{methode}
+
+\begin{jury}
+
+« Certaines copies ne mentionnent pas le nom des règles utilisées dans les arbres de preuve, ce qui a été pénalisé. » (rapport 2026, p.~7) Le jury rappelle aussi qu'un arbre trop large peut être découpé en morceaux, en écrivant « prouvé ci-dessous » au bout d'une branche : c'est ce que fait ici le sous-arbre \(\pi\). Le point 3 a posé problème à beaucoup de candidats.
+
+\end{jury}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Une règle correcte transforme des prémisses sémantiquement valides en une conclusion sémantiquement valide. Écrivez-le avec \(\models\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les règles sans prémisse (ax, Peirce) ne sont pas à oublier. Pour intro-\(\to\), distinguez selon la valeur de \(A\).
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Une règle de prémisses \(\Gamma_i \vdash F_i\) et de conclusion \(\Gamma \vdash F\) est \textbf{correcte} si, dès que \(\Gamma_i \models F_i\) pour tout \(i\), on a \(\Gamma \models F\).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{ax} : une valuation qui satisfait \(\Gamma \cup \{A\}\) satisfait \(A\).
+\item
+  \textbf{Peirce} : la formule est une tautologie (Q31), donc elle est satisfaite par toute valuation.
+\item
+  \textbf{elim-\(\to\)} : si \(v\) satisfait \(\Gamma\), alors \(v(A \to B) = v(A) = V\), donc \(v(B) = V\).
+\item
+  \textbf{intro-\(\to\)} : supposons \(\Gamma, A \models B\) et soit \(v\) satisfaisant \(\Gamma\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Si \(v(A) = F\), alors \(v(A \to B) = V\).
+  \item
+    Si \(v(A) = V\), \(v\) satisfait \(\Gamma \cup \{A\}\), donc \(v(B) = V\) et \(v(A \to B) = V\).
+  \end{itemize}
+\end{itemize}
+
+\textbf{Les quatre règles de \(D_I\) sont correctes.}
+
+\begin{piege}
+
+La correction ne signifie pas « la conclusion est vraie ». C'est une implication : si les prémisses sont valides, alors la conclusion l'est.
+
+\end{piege}
+
+\begin{jury}
+
+D'après le rapport 2026, la notion de règle correcte est inconnue de la plupart des candidats, faute de connaître la conséquence sémantique (p.~7). Sans la définition de \(\Gamma \models F\) et sa notation, la question ne peut pas être rédigée.
+
+\end{jury}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+On cherche une relation sémantique entre \(\Gamma\) et \(F\). La justification se fait par induction sur l'arbre de preuve.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+On a \(\boxed{\Gamma \models F}\). Par induction sur l'arbre de preuve : si la dernière règle n'a pas de prémisse, sa correction donne directement \(\Gamma \models F\). Sinon, l'hypothèse d'induction donne \(\Gamma_i \models F_i\) pour chaque prémisse, et la correction de la dernière règle donne \(\Gamma \models F\).
+
+\begin{piege}
+
+Ne pas énoncer la réciproque (complétude) : ce n'est pas ce que l'on demande.
+
+\end{piege}
+
+\begin{piege}
+
+La relation attendue est \(\Gamma \models F\). Le rapport 2026 relève à la place « \(\Gamma \to F\) », ou « \(\Gamma \to F\) est une tautologie » (p.~7). Or \(\Gamma\) est un ensemble de formules, pas une formule ; et l'implication est un connecteur, pas une relation entre un ensemble et une formule.
+
+\end{piege}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Un argument sémantique consiste à trouver une valuation qui satisfait \(\Gamma\) et pas la conclusion.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Rendez \(A\) vraie et \(C\) fausse, puis choisissez \(B\) pour satisfaire les deux hypothèses.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+Les règles invoquées dans l'arbre (ax, elim-\(\to\), intro-\(\to\)) sont correctes (Q35). Raisonnons par l'absurde : si l'arbre était une preuve, Q36 donnerait \(\Gamma \models A \to C\).
+
+Prenons \(v(A) = V\), \(v(B) = V\) et \(v(C) = F\).
+
+\begin{itemize}
+\tightlist
+\item
+  On a \(v(A \to B) = V\) et \(v(C \to B) = V\) (antécédent faux) : \(v\) satisfait \(\Gamma\).
+\item
+  Mais \(v(A \to C) = F\).
+\end{itemize}
+
+Donc \(\Gamma \not\models A \to C\), ce qui contredit Q36 : \textbf{l'arbre est incorrect.}
+
+En complément seulement, on peut localiser la faute : l'étape qui tire \(C\) de \(B\) et de \(C \to B\). La règle elim-\(\to\) va dans l'autre sens ; ce raisonnement fautif s'appelle l'affirmation du conséquent.
+
+\begin{methode}
+
+Pour montrer qu'un séquent n'est pas prouvable dans un système correct, on exhibe une valuation qui satisfait les hypothèses et falsifie la conclusion.
+
+\end{methode}
+
+\begin{jury}
+
+Signaler seulement la règle mal utilisée « dénote une mauvaise compréhension de la question. Celle-ci imposait en effet de répondre via un argument sémantique » (rapport 2026, p.~7) : une valuation qui satisfait \(\Gamma\) sans satisfaire \(A \to C\), puis la correction établie à la question précédente.
+
+\end{jury}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Pour obtenir \(A\), il suffit de déclencher l'hypothèse \((A \to B) \to A\) : il faut donc \(A \to B\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour prouver \(A \to B\), on ajoute \(A\) au contexte. Ce contexte contient alors \(A\) et \(\neg A\) : que permet une contradiction ?
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+Avec \(\Gamma = (A \to B) \to A, \neg A\) :
+
+\equationajustee{\dfrac{\dfrac{}{\Gamma \vdash (A \to B) \to A}\,\text{ax} \qquad \dfrac{\dfrac{\dfrac{\dfrac{}{\Gamma, A \vdash A}\,\text{ax} \qquad \dfrac{}{\Gamma, A \vdash \neg A}\,\text{ax}}{\Gamma, A \vdash \bot}\,\text{elim-}\neg}{\Gamma, A \vdash B}\,\text{elim-}\bot}{\Gamma \vdash A \to B}\,\text{intro-}\to}{\Gamma \vdash A}\,\text{elim-}\to}
+
+\begin{piege}
+
+elim-\(\bot\) (une contradiction prouve tout) n'est pas le raisonnement par l'absurde. Cette preuve n'utilise pas ra.
+
+\end{piege}
+
+\begin{jury}
+
+Q38 à Q40 ont été très peu traitées, sans doute faute de temps selon le rapport 2026, et « Des arbres de preuve partiels ont été valorisés. » (p.~7) Même incomplet, un arbre aux règles nommées rapporte.
+
+\end{jury}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Dériver une règle sans prémisse, c'est la prouver pour un contexte \(\Gamma\) quelconque. Commencez par intro-\(\to\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour prouver \(A\) dans le contexte \(\Gamma, (A \to B) \to A\), raisonnez par l'absurde : vous retrouvez le séquent de Q38.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+Posons \(\Gamma' = \Gamma, (A \to B) \to A\). L'arbre \(\pi_{38}\) de Q38 reste valable dans le contexte élargi \(\Gamma', \neg A\), car la règle ax admet un contexte quelconque :
+
+\equationajustee{\dfrac{\dfrac{\dfrac{\overset{\pi_{38}}{\Gamma', \neg A \vdash A} \qquad \dfrac{}{\Gamma', \neg A \vdash \neg A}\,\text{ax}}{\Gamma', \neg A \vdash \bot}\,\text{elim-}\neg}{\Gamma' \vdash A}\,\text{ra}}{\Gamma \vdash ((A \to B) \to A) \to A}\,\text{intro-}\to}
+
+Toutes les règles appartiennent à \(D_P\) : \textbf{la loi de Peirce est dérivable dans \(D_P\)}.
+
+\begin{piege}
+
+Ne prouver le résultat que pour le contexte vide ne suffit pas : la règle Peirce s'applique avec un \(\Gamma\) quelconque.
+
+\end{piege}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+On suppose une preuve de \(\Gamma, \neg A \vdash \bot\). L'instance de Peirce indiquée ramène le but à \(\Gamma \vdash (A \to \bot) \to A\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans le contexte \(\Gamma' = \Gamma, A \to \bot\), on peut prouver \(\neg A\) par intro-\(\neg\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+La prémisse donne \(\neg\neg A\) par intro-\(\neg\). Avec \(\neg A\), on obtient \(\bot\), puis n'importe quelle formule.
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+Posons \(\Gamma' = \Gamma, A \to \bot\).
+
+\emph{Étape 1.} intro-\(\neg\) appliquée à la prémisse donne \(\Gamma \vdash \neg\neg A\), puis l'affaiblissement donne \(\Gamma' \vdash \neg\neg A\).
+
+\emph{Étape 2.}
+
+\equationajustee{\dfrac{\dfrac{\dfrac{}{\Gamma', A \vdash A \to \bot}\,\text{ax} \qquad \dfrac{}{\Gamma', A \vdash A}\,\text{ax}}{\Gamma', A \vdash \bot}\,\text{elim-}\to}{\Gamma' \vdash \neg A}\,\text{intro-}\neg}
+
+\emph{Étape 3.}
+
+\equationajustee{\dfrac{\dfrac{\Gamma' \vdash \neg A \qquad \Gamma' \vdash \neg\neg A}{\Gamma' \vdash \bot}\,\text{elim-}\neg}{\Gamma' \vdash A}\,\text{elim-}\bot}
+
+\emph{Étape 4.}
+
+\equationajustee{\dfrac{\dfrac{}{\Gamma \vdash ((A \to \bot) \to A) \to A}\,\text{Peirce} \qquad \dfrac{\Gamma' \vdash A}{\Gamma \vdash (A \to \bot) \to A}\,\text{intro-}\to}{\Gamma \vdash A}\,\text{elim-}\to}
+
+La preuve n'utilise jamais ra : \textbf{le raisonnement par l'absurde est dérivable dans \(D\)}.
+
+\begin{piege}
+
+\(A \to \bot\) et \(\neg A\) sont équivalentes (Q30) mais syntaxiquement distinctes : dans une preuve, on passe de l'une à l'autre par des règles (ici intro-\(\neg\) à l'étape 2), pas par l'équivalence sémantique.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 le souligne : « il n'est pas légitime d'utiliser l'équivalence sémantique établie en Q30 pour faciliter la construction de l'arbre de preuve de la Q40, puisqu'un tel arbre est un objet syntaxique » (p.~7).
+
+\end{jury}
+
+\begin{methode}
+
+Pour dériver une règle, on suppose les arbres de ses prémisses et l'on construit sa conclusion autour d'eux, sans jamais les reprouver.
+
+\end{methode}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Q39 et Q40 montrent chacune qu'une règle d'un système est dérivable dans l'autre. Qu'en déduit-on pour les séquents prouvables ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour passer d'une preuve de l'un à une preuve de l'autre, remplacez chaque usage de la règle manquante par sa dérivation.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\textbf{\(D\) et \(D_P\) prouvent exactement les mêmes séquents.} Les deux systèmes partagent toutes leurs règles sauf ra (dans \(D_P\)) et Peirce (dans \(D\)).
+
+\begin{itemize}
+\tightlist
+\item
+  Dans une preuve de \(D\), on remplace chaque feuille Peirce par la dérivation de Q39.
+\item
+  Dans une preuve de \(D_P\), on remplace chaque application de ra par le fragment de Q40, greffé sur la preuve de sa prémisse (induction sur l'arbre).
+\end{itemize}
+
+\(D\) est donc une autre présentation de la déduction naturelle classique, où la loi de Peirce tient le rôle du raisonnement par l'absurde. \(D\) est en particulier correct.
+
+\begin{jury}
+
+Question presque jamais traitée, alors que « La question était abordable en admettant l'existence des arbres de preuve demandés aux questions précédentes. » (rapport 2026, p.~7) Une équivalence de systèmes demande les deux sens, et il faut dire comment on passe de la dérivabilité d'une règle à l'égalité des séquents prouvables.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Représentation des entiers : le dépassement de capacité pour les entiers machine, les entiers multiprécision en Python. Avec une liste poids faibles en tête, compléter revient à ajouter des zéros en fin de liste, multiplier par \(b^i\) à en ajouter en tête.
+\item
+  Justifier un code itératif par un invariant (Horner, addition avec retenue), un code récursif par une récurrence : cas de base, décroissance de la taille, recollement.
+\item
+  Résoudre \(C(k) = a\,C(k/2) + \lambda k\) à la main, par division par \(a^p\) et télescopage : \(a = 4\) donne \(\Theta(k^2)\), \(a = 3\) donne \(O(k^{\log_2 3})\).
+\item
+  En OCaml, sur un arbre d'arité quelconque, écrire une récursion mutuelle entre le nœud et la liste de ses enfants. On reconstruit au retour pour une structure immuable.
+\item
+  Automates : un trie est un automate déterministe acyclique. On fusionne les états de même signature (finalité et transitions vers des classes), en vérifiant que le quotient est bien défini.
+\item
+  Logique : complétude d'un système de connecteurs par induction structurelle ; correction des règles puis du système (induction sur l'arbre) ; réfutation d'un arbre par une valuation ; dérivation d'une règle à partir des arbres supposés de ses prémisses.
+\end{itemize}
+
+\textbf{Ce que retient le rapport 2026.} Les questions de cours rapportent, à condition d'être traitées avec précision : opérateurs Python \texttt{\%}, \texttt{//}, \texttt{**} et \texttt{+} sur les listes, copie de listes, structures de dictionnaire. En OCaml, le style récursif sur des structures immuables simplifie le code et sa complexité. En logique, la distinction entre syntaxe (formules, arbres de preuve) et sémantique (valuations, \(\models\)) commande tout le problème 3 : Q32 et Q35 à Q37 sont les questions qui ont le plus séparé les copies.
+
+\textbf{Prérequis à revoir.} Complément à deux ; division euclidienne et unicité ; schéma de Horner ; dictionnaires (ABR, tables de hachage) ; filtrage OCaml et récursion mutuelle ; automates déterministes et blocage ; tables de vérité ; conséquence sémantique et correction d'un système de preuve ; rédaction d'une preuve par induction structurelle ; règles de la déduction naturelle (en particulier elim-\(\neg\), elim-\(\bot\), ra).
+
+\textbf{Questions classiques transposables.} L'addition de listes de chiffres avec retenue se retrouve dans les entiers en base quelconque et les polynômes. Karatsuba et son équation de complexité se transposent au produit de polynômes. Le trie (insertion, recherche, comptage des mots) prépare la minimisation d'automates. La loi de Peirce, le tiers exclu et le raisonnement par l'absurde sont trois façons de rendre une logique classique.
+
+\end{document}

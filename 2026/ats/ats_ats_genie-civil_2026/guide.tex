@@ -1,0 +1,1751 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Concours ATS — Génie civil 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · ATS ATS}
+\fancyhead[R]{\small Génie civil 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Concours ATS — Génie civil 2026\par}\medskip
+  {\large ATS · ATS · Génie civil · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Cadre.} Épreuve de 5 h, calculatrice autorisée, 17 pages d'énoncé, 17 annexes et 5 documents réponses à rendre. Le support est un projet réel : « La Fabrique », bâtiment d'enseignement et de recherche de l'extension du campus ESTP de Cachan. Les parties sont indépendantes ; la partie I présente le projet et ne contient pas de question. Il y a \textbf{50 questions numérotées Q.1 à Q.50}.
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1711}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0953}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.4178}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2859}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Outils
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+II. Étude thermique & Q.1--Q.9 & DJU par la méthode « météo », énergie de chauffage, gain économique, ventilation des laboratoires, ponts thermiques, déperdition totale & moyennes, analyse dimensionnelle, règle de trois, bilan de puissances \\
+III. Paroi opaque & Q.10--Q.25 & modes de transfert, épaisseur d'isolant, profils stationnaires multicouche et monocouche, régime transitoire en série de Fourier, diffusivité identifiée sur un graphe en \(\ln\) & résistances en série, loi de Fourier, équation de la chaleur 1D, lecture de pente \\
+IV. Poutre continue et poteau & Q.26--Q.39 & lecture des plans de charges, ELU, hyperstaticité, relation \(M\)--\(V\), trois moments, épures, réactions, flèche par Mohr, flambement, critère d'élancement & RDM des poutres, intégrales de Mohr, Eurocode 2 simplifié \\
+V. Confort acoustique & Q.40--Q.46 & réverbération, indice \(\alpha_w\) (ISO 11654), formule de Sabine, salle comble, formule d'optimisation & lecture de norme, Sabine, manipulation algébrique \\
+VI. Fondation & Q.47--Q.50 & types de fondations, \(p_{le}^*\) sur un sondage pressiométrique, coefficient de sécurité, redimensionnement & méthode pressiométrique, lecture de log \\
+\end{longtable}
+
+\textbf{Difficulté et longueur.} Le sujet est long mais rarement difficile. Une quinzaine de questions sont des questions de cours rédigées (Q.8, Q.10, Q.12, Q.13, Q.16, Q.19, Q.29, Q.35 à Q.38, Q.40, Q.41, Q.43, Q.47) : elles rapportent beaucoup pour peu de temps. Les questions longues sont Q.1 (tableau de 12 mois), Q.17--Q.18 (tracés), Q.31 à Q.33 (poutre continue) et Q.42 (méthode normalisée sur deux documents réponses). Plusieurs valeurs « de recalage » sont imposées (DJU = 2500, \(p_{Elu}=31\) kN/m, \(M_C=-120{,}48\) kN·m) : une erreur en amont ne bloque pas la suite.
+
+\textbf{Questions à ne pas laisser passer.} Q.2--Q.5 (cascade d'applications numériques), Q.11 (une somme de résistances), Q.14--Q.15 (équation de Fourier 1D), Q.31 (une seule équation des trois moments), Q.39 (application de formules), Q.48--Q.50 (portance d'une semelle).
+
+\textbf{Gestion du temps (indicative).} Partie II : 45 min ; partie III : 1 h 30 ; partie IV : 1 h 30 ; partie V : 45 min ; partie VI : 30 min. Remplir les documents réponses au fur et à mesure.
+
+\hypertarget{partie-ii-uxe9tude-thermique}{%
+\section{Partie II --- Étude thermique}\label{partie-ii-uxe9tude-thermique}}
+
+On estime les déperditions moyennes du bâtiment sur une année, poste par poste : parois opaques (via les degrés-jours), renouvellement d'air (via trois laboratoires), vitrages et ponts thermiques (via des proportions). Les outils sont des moyennes, une analyse dimensionnelle et des règles de trois.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+L'annexe 3 ne donne que des températures mensuelles : il faut adapter la définition journalière du DJU au mois, et le dire.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chaque mois, calculer \(T_m\), puis \(\Delta T=T_s-T_m\) ; ne compter que les mois où cet écart est positif, et multiplier par le nombre de jours du mois.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+\textbf{Hypothèses.} Méthode « météo » appliquée mois par mois avec la moyenne mensuelle \(T_m=\frac{T_{max}+T_{min}}{2}\) ; année de 365 jours (février : 28 jours) ; chauffage continu à \(T_s=18\) °C, donc seuls les déficits comptent. On pose \(\text{DJU}=0\) si \(T_m\ge T_s\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.1149}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 24\tabcolsep) * \real{0.0713}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Mois
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+J
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+F
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+M
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+A
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+M
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+J
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+J
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+A
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+S
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+O
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+N
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(T_{max}\) (°C) & 6,8 & 8,0 & 11,9 & 15,4 & 18,8 & 22,1 & 24,6 & 24,6 & 20,7 & 15,8 & 10,4 & 7,2 \\
+\(T_{min}\) (°C) & 1,9 & 1,8 & 3,9 & 6,0 & 9,4 & 12,5 & 14,4 & 14,2 & 11,3 & 8,5 & 4,8 & 2,4 \\
+\(T_m\) (°C) & 4,35 & 4,90 & 7,90 & 10,70 & 14,10 & 17,30 & 19,50 & 19,40 & 16,00 & 12,15 & 7,60 & 4,80 \\
+\(T_s\) (°C) & 18 & 18 & 18 & 18 & 18 & 18 & 18 & 18 & 18 & 18 & 18 & 18 \\
+\(\Delta T\) (°C) & 13,65 & 13,10 & 10,10 & 7,30 & 3,90 & 0,70 & −1,50 & −1,40 & 2,00 & 5,85 & 10,40 & 13,20 \\
+Jours & 31 & 28 & 31 & 30 & 31 & 30 & 31 & 31 & 30 & 31 & 30 & 31 \\
+DJU (°C·j) & 423,2 & 366,8 & 313,1 & 219,0 & 120,9 & 21,0 & 0 & 0 & 60,0 & 181,4 & 312,0 & 409,2 \\
+\end{longtable}
+
+\equationajustee{\boxed{\text{DJU}_{chauffage}\approx2427\ \text{°C·jours}}}
+
+C'est cohérent avec les 2500 °C·j imposés ensuite : raisonner sur des moyennes mensuelles lisse les journées froides des mois de mi-saison.
+
+\begin{piege}
+
+Juillet et août ont un \(\Delta T\) négatif : on les compte pour 0, on ne les retranche pas. Un DJU de chauffage est une somme de déficits.
+
+\end{piege}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Écrire l'unité de chacun des trois facteurs et celle de leur produit.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le produit est bien une énergie, mais pas en kWh : quel facteur de conversion manque-t-il entre « jour » et « heure » ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\([U_p]=\text{W·m}^{-2}\text{·K}^{-1}\), \([S]=\text{m}^2\) et \([\text{DJU}]=\text{K·jour}\).
+
+Le produit \(U_pS\,\text{DJU}\) s'exprime donc en W·jour. Or :
+
+\equationajustee{\begin{aligned}
+1\ \text{W·jour}&=24\ \text{Wh}\\
+&=\frac{24}{1000}\ \text{kWh}
+\end{aligned}}
+
+d'où :
+
+\equationajustee{\boxed{E_{\text{consommée}}\ (\text{kWh/an})=\frac{24}{1000}\,U_p\,S\,\text{DJU}}}
+
+\(U_pS\) est le coefficient de déperdition de l'enveloppe (W/K) ; le DJU cumule l'écart de température sur l'année.
+
+\begin{methode}
+
+Quand on demande une relation « homogène », on écrit les crochets de dimension, on voit ce qu'on obtient, puis on convertit explicitement.
+
+\end{methode}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Application numérique directe de Q.2.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\equationajustee{E=\frac{24}{1000}\times0{,}5\times6400\times2500=\boxed{192\,000\ \text{kWh/an}}}
+
+\begin{piege}
+
+Oublier le facteur 24 donne 8 000 kWh/an, moins que la consommation d'un logement pour des milliers de m² : un contrôle d'ordre de grandeur évite l'erreur.
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+L'énergie est proportionnelle à \(U_p\).
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\(E'=\frac{24}{1000}\times0{,}4\times6400\times2500=153\,600\) kWh/an.
+
+\equationajustee{\boxed{\begin{aligned}
+\Delta E&=38\,400\ \text{kWh/an}\ (-20\ \%)\\
+\Delta C&=38\,400\times0{,}19=7\,296\ \text{€/an}
+\end{aligned}}}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Une déperdition « moyenne » en kW est une puissance : énergie divisée par une durée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'énoncé suppose les déperditions homogènes sur tous les jours de l'année : quelle durée en heures ?
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\equationajustee{D_{tot\_\text{bâti}\_parois}=\frac{192\,000\ \text{kWh}}{8760\ \text{h}}=\boxed{21{,}9\ \text{kW}}}
+
+Contrôle : \(U_pS\times\frac{\text{DJU}}{365}=3200\times6{,}85=21{,}9\) kW (écart moyen annuel de 6,85 K).
+
+\begin{piege}
+
+Diviser par 365 donnerait des kWh/jour, pas des kW : la conversion vers une puissance passe par des heures.
+
+\end{piege}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Vérifier d'abord l'homogénéité de la formule donnée : \(Q_{ventilation}\) est un débit par m² de plancher.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\(\frac{\text{Wh}}{\text{K·m}^3}\cdot\frac{\text{m}^3}{\text{h·m}^2}\cdot\text{m}^2\cdot\text{K}=\text{W}\). Avec \(0{,}34\times1{,}7\times6=3{,}468\) W/m² :
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Local & \(S_i\) (m²) & \(Dp_{lab_i}\) (W) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Lab\_1 & 285,4 & 989,8 \\
+Lab\_2 & 347,5 & 1205,1 \\
+Lab\_3 & 281,8 & 977,3 \\
+Total & 914,7 & 3172,2 \\
+\end{longtable}
+
+\equationajustee{\boxed{\begin{aligned}
+Dp_{lab_1}&\approx990\ \text{W}\\
+Dp_{lab_2}&\approx1205\ \text{W}\\
+Dp_{lab_3}&\approx977\ \text{W}
+\end{aligned}}}
+
+\begin{methode}
+
+La constante 0,34 Wh/(m³·K) est la capacité thermique volumique de l'air (\(\rho c_p\approx1{,}2\times1006\) J/(m³·K)) exprimée en Wh : la reconnaître sécurise la formule.
+
+\end{methode}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Les trois laboratoires sont une fraction connue du total : faut-il multiplier ou diviser par cette fraction ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\equationajustee{D_{tot\_\text{bâti}\_renouvellement}=\frac{3172{,}2}{0{,}06}\approx\boxed{52{,}9\ \text{kW}}}
+
+Ce poste dépasse celui des parois opaques : sur un bâtiment bien isolé, le renouvellement d'air devient le premier poste (d'où l'intérêt d'une ventilation double flux).
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Commencer par définir le phénomène (où et pourquoi le flux se concentre), puis classer selon la géométrie : le long d'une ligne ou en un point.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque famille a son coefficient caractéristique, avec une unité différente.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Un pont thermique est une zone localisée de l'enveloppe où la résistance thermique est nettement plus faible qu'en partie courante (isolant interrompu ou traversé, changement de géométrie). Le flux s'y concentre : pertes accrues, surface intérieure plus froide, risque de condensation et de moisissures.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Linéique} (liaison entre parois), coefficient \(\psi\) en W/(m·K). Exemple : liaison plancher / façade isolée par l'intérieur, la dalle traversant l'isolant sur toute la longueur.
+\item
+  \textbf{Ponctuel} (élément traversant localement l'isolant), coefficient \(\chi\) en W/K. Exemple : pattes de fixation métalliques d'une isolation par l'extérieur ou d'un bardage, fixations de balcon.
+\end{itemize}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Écrire le bilan des quatre postes ; attention, les ponts thermiques sont un pourcentage du total, qui est l'inconnue.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\(D_{tot}=21{,}92+52{,}87+21{,}92+0{,}10\,D_{tot}\), donc \(0{,}90\,D_{tot}=96{,}71\) kW :
+
+\equationajustee{\boxed{D_{tot\_\text{bâti}}\approx107{,}5\ \text{kW}}}
+
+dont \(D_{Pt}\approx10{,}7\) kW.
+
+\begin{piege}
+
+Multiplier la somme des trois autres postes par 1,10 donne 106,4 kW : les ponts thermiques ne feraient alors que 9,1 \% du total, et non 10 \%.
+
+\end{piege}
+
+\hypertarget{partie-iii-uxe9tude-dune-paroi-opaque}{%
+\section{Partie III --- Étude d'une paroi opaque}\label{partie-iii-uxe9tude-dune-paroi-opaque}}
+
+On étudie le mur MEXT10 : épaisseur d'isolant, profils de température stationnaires (multicouche réel et monocouche équivalent), puis régime transitoire décrit par une série de modes, dont on identifie la diffusivité équivalente et le temps caractéristique sur des graphes.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Il reste deux modes une fois le rayonnement écarté : l'un sans mouvement de matière, l'autre avec.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chacun : principe, loi, et unité de chaque grandeur.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Conduction} : transfert de proche en proche dans un milieu sans mouvement macroscopique (agitation moléculaire), du chaud vers le froid. Loi de Fourier \(\vec\varphi=-\lambda\,\overrightarrow{\text{grad}}\,T\), en 1D \(\varphi=-\lambda\frac{\mathrm dT}{\mathrm dx}\). Unités : \(\varphi\) en W·m⁻², \(\lambda\) en W·m⁻¹·K⁻¹, gradient en K·m⁻¹.
+\item
+  \textbf{Convection} : échange entre une paroi et un fluide en mouvement (naturel ou forcé), avec transport de matière. Loi de Newton \(\varphi=h\,(T_{paroi}-T_{fluide})\) : \(\varphi\) en W·m⁻², \(h\) en W·m⁻²·K⁻¹, températures en K ou °C.
+\end{itemize}
+
+\begin{piege}
+
+La convection n'est pas « la conduction dans un fluide » : ce qui la caractérise est le mouvement du fluide. \(h\) dépend de l'écoulement, alors que \(\lambda\) est une propriété du matériau.
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Les couches sont traversées successivement par le même flux : comment se combinent leurs résistances ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire \(R_{tot}(e_{iso})>5\), isoler \(e_{iso}\), puis choisir un entier de centimètres dans le bon sens.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\equationajustee{\begin{aligned}
+R_{tot}&=\frac{0{,}15}{1}+\frac{0{,}02}{0{,}025}+\frac{e_{iso}}{0{,}036}+\frac{0{,}20}{2{,}5}\\
+&=1{,}030+\frac{e_{iso}}{0{,}036}\\
+&>5
+\end{aligned}}
+
+d'où \(e_{iso}>0{,}143\) m.
+
+\equationajustee{\boxed{\begin{aligned}
+e_{iso}&=15\ \text{cm}\\
+R_{tot}&=5{,}20\ \text{m}^2\text{·K/W}\\
+e_{mur}&=52\ \text{cm}
+\end{aligned}}}
+
+\begin{piege}
+
+Arrondir à 14 cm donne \(R=4{,}92<5\) : l'arrondi se fait vers le haut. Ne pas oublier la lame d'air, qui pèse 0,80 m²·K/W.
+
+\end{piege}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Comment varie \(R_{tot}\) avec \(e_{iso}\), et l'exigence est-elle une borne inférieure ou supérieure ?
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(R_{tot}\) croît avec \(e_{iso}\) et l'exigence est \(R>5\) : \textbf{15 cm est une épaisseur minimale}. Une épaisseur plus forte reste conforme ; seuls le coût, l'encombrement et la surface utile la limitent.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Penser à la valeur de \(\lambda\) de l'air immobile, puis au rôle d'un vide entre un parement extérieur et le reste du mur.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+L'air immobile est un très bon isolant (\(\lambda=0{,}025\) W/(m·K)) : la lame de 2 cm apporte \(R=0{,}80\) m²·K/W. Elle désolidarise aussi le parement de brique : coupure capillaire, drainage de l'eau ayant traversé la brique, protection de l'isolant contre l'humidité, reprise des tolérances de pose. Son intérêt thermique suppose qu'elle soit peu ou pas ventilée.
+
+\begin{methode}
+
+La valeur \(\lambda=0{,}025\) pour 2 cm d'air est une donnée idéalisée. En pratique, une lame d'air non ventilée compte plutôt pour environ 0,17 m²·K/W, convection et rayonnement compris. On applique la donnée de l'énoncé, mais il est bon de le savoir.
+
+\end{methode}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Trois hypothèses simplifient l'équation : lesquelles annulent le terme temporel et les dérivées en \(y\) et \(z\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Intégrer deux fois, puis fixer les deux constantes par les températures des faces, après avoir orienté l'axe \(x\).
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Paroi plane (dépendance en \(x\) seul), régime stationnaire (\(\partial_tT_s=0\)), pas de source. L'équation se réduit à :
+
+\equationajustee{\begin{aligned}
+\frac{\mathrm d^2T_s}{\mathrm dx^2}&=0\\
+T_s(x)&=Ax+B
+\end{aligned}}
+
+Avec \(x=0\) côté extérieur et \(x=e\) côté intérieur :
+
+\equationajustee{\boxed{T_s(x)=T_{ext}+\left(T_{int}-T_{ext}\right)\frac xe}}
+
+\begin{piege}
+
+En régime stationnaire, ce n'est pas \(\alpha\) qui est nul, c'est \(\partial T/\partial t\).
+
+\end{piege}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Injecter le profil de Q.14 dans la loi de Fourier à une dimension.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Interpréter le signe obtenu, puis faire apparaître une résistance thermique.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\equationajustee{\begin{aligned}
+\varphi&=-\lambda\frac{\mathrm dT_s}{\mathrm dx}\\
+&=-\lambda\frac{T_{int}-T_{ext}}{e}<0
+\end{aligned}}
+
+Le flux est dirigé de l'intérieur vers l'extérieur.
+
+\equationajustee{\boxed{|\varphi|=\frac{\lambda}{e}\left(T_{int}-T_{ext}\right)=\frac{T_{int}-T_{ext}}{R}}}
+
+avec \(R=\frac e\lambda\).
+
+En stationnaire, \(\varphi\) est le même dans toutes les couches d'un multicouche : les résistances s'ajoutent comme des résistances électriques en série.
+
+\begin{methode}
+
+La conservation du flux d'une couche à l'autre est la clé du profil multicouche (Q.17) : un seul flux, puis une chute \(\varphi R_i\) par couche.
+
+\end{methode}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Vers où pointe un gradient ? Vers où va spontanément la chaleur ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Le gradient pointe vers les températures croissantes. Le signe « − » indique que le flux est dirigé en sens inverse : la chaleur va \textbf{du chaud vers le froid}. C'est l'expression locale du second principe (transfert thermique irréversible), pas une convention d'axe.
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Déterminer l'ordre des couches de l'extérieur vers l'intérieur : les abscisses repérées sur l'annexe 6 (0,15 ; 0,17 ; 0,32 m) aident.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculer une fois \(\varphi=\Delta T/R_{tot}\), puis avancer couche par couche avec \(\Delta T_i=\varphi R_i\).
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\(\varphi=24/5{,}197=4{,}62\) W/m².
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Interface & \(x\) (m) & \(\Delta T_i\) (K) & \(T\) (°C) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+extérieur & 0 & --- & −5,0 \\
+brique / air & 0,15 & 0,69 & −4,3 \\
+air / laine & 0,17 & 3,69 & −0,6 \\
+laine / béton & 0,32 & 19,24 & 18,6 \\
+intérieur & 0,52 & 0,37 & 19,0 \\
+\end{longtable}
+
+Document réponse n°2 : ligne brisée continue reliant ces points. Pente faible dans la brique et le béton ; la laine de roche porte 80 \% de la chute de température ; le béton (côté intérieur) reste près de 19 °C.
+
+\begin{piege}
+
+Tracer une droite de −5 à 19 °C, c'est tracer le modèle monocouche (Q.18), pas le multicouche. Le tracé s'arrête à 0,52 m même si l'axe va jusqu'à 0,60 m.
+
+\end{piege}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+C'est le résultat de Q.14 avec l'épaisseur totale du mur.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\equationajustee{\boxed{\begin{aligned}
+T_{seq}(x)&=-5+\frac{24}{0{,}52}x\\
+&=-5+46{,}15\,x
+\end{aligned}}}
+
+(\(T_{seq}\) en °C, \(x\) en m.)
+
+Valeurs 1,9 ; 2,8 ; 9,8 °C en 0,15 ; 0,17 ; 0,32 m (celles de l'annexe 6). Document réponse n°3 : la droite et le profil brisé de Q.17. Ils coïncident aux bords et s'écartent à l'intérieur (18,6 contre 9,8 °C en 0,32 m) : le modèle monocouche sert à décrire la dynamique globale, pas le champ interne.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q17-q18-profils-temperature.pdf}
+\caption*{Figure 1 --- Profils stationnaires dans le mur MEXT10 : multicouche
+Ts(x) et monocouche équivalent Tseq(x)}
+\end{figure}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Isoler, dans l'exponentielle de chaque terme, la durée au bout de laquelle l'amplitude est divisée par \(e\), et regarder comment elle dépend de \(n\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Chaque terme est un mode \(\sin(n\pi x/e)\) d'amplitude décroissante, de constante de temps \(\tau_n=\frac{1}{\alpha_{eq}}\left(\frac{e}{n\pi}\right)^2=\frac{\tau_1}{n^2}\). Les modes élevés (variations spatiales courtes, gradients forts) s'éteignent beaucoup plus vite, et leur amplitude initiale est plus faible (\(a_n\propto1/n\)). Rapidement, seul le mode 1 subsiste et fixe la durée du transitoire. Quand \(t\to\infty\), \(T(x,t)\to T_{seq}(x)\).
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Évaluer \(\theta\) en \(x=0\) et \(x=e\) pour tout \(n\) et tout \(t\).
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\(\sin0=\sin(n\pi)=0\), donc \(\theta(0,t)=\theta(e,t)=0\) pour tout \(t\).
+
+Les conditions aux limites sont donc satisfaites pour tout \(t\), portées par \(T_{seq}\) :
+
+\equationajustee{\begin{aligned}
+T(0,t)&=T_{ext}\\
+T(e,t)&=T_{int}
+\end{aligned}}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Travailler sur un seul mode, dériver une fois en \(t\) et deux fois en \(x\), puis invoquer la linéarité.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Avec \(k_n=n\pi/e\) :
+
+\equationajustee{\begin{aligned}
+\partial_t\theta_n&=-\alpha_{eq}k_n^2\theta_n\\
+\partial_{xx}\theta_n&=-k_n^2\theta_n
+\end{aligned}}
+
+donc \(\partial_t\theta_n=\alpha_{eq}\nabla^2\theta_n\). Par linéarité, la somme est solution. \(T_{seq}\) étant affine et indépendant du temps, \(T=T_{seq}+\theta\) l'est aussi.
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Remplacer \(n\) par 1 et \(e\) par l'épaisseur totale du mur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour comprendre la valeur de \(a_1\) : que vaut \(\theta(x,0)\) quand le mur part de \(T_{int}\) ?
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\(\theta(x,0)=T_{int}-T_{seq}(x)=24(1-x/e)\), dont les coefficients en sinus valent \(a_n=\frac{48}{n\pi}\) ; on retrouve \(a_1=48/\pi\approx15{,}3\) °C.
+
+\equationajustee{\boxed{\theta(x,t)=\frac{48}{\pi}\exp\!\left(-\alpha_{eq}\left(\frac{\pi}{0{,}52}\right)^2t\right)\sin\frac{\pi x}{0{,}52}}}
+
+\(\theta>0\) : le mur, initialement à 19 °C, se refroidit vers le profil stationnaire.
+
+\begin{piege}
+
+Prendre \(e_{iso}=0{,}15\) m au lieu de \(e_{mur}=0{,}52\) m fausse d'un facteur 12 la constante de temps et la diffusivité.
+
+\end{piege}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Prendre le logarithme du mode 1 en un point fixe : quelle est la forme de la courbe et que représente sa pente ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lire deux points bien séparés de l'annexe 5, puis diviser la pente par \((\pi/e)^2\).
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+En un point fixe \(x_0\) :
+
+\equationajustee{\ln\theta=\ln\left(a_1\sin\frac{\pi x_0}{e}\right)-\alpha_{eq}\left(\frac\pi e\right)^2t}
+
+C'est une droite de pente \(-1/\tau_1\). Lecture : \(\ln\theta\approx\) 2,659 à \(t=0\) et 2,516 à 5 × 10⁴ s, donc :
+
+\equationajustee{p=\frac{2{,}516-2{,}659}{5\times10^4}\approx-2{,}86\times10^{-6}\ \text{s}^{-1}}
+
+\equationajustee{\alpha_{eq}=|p|\left(\frac{0{,}52}{\pi}\right)^2\Rightarrow\boxed{\alpha_{eq}\approx7{,}8\times10^{-8}\ \text{m}^2\text{/s}}}
+
+L'ordonnée à l'origine (\(2{,}659=\ln(15{,}28\times0{,}935)\)) montre que la courbe est relevée en \(x_0=0{,}32\) m et non au milieu du mur ; seule la pente compte.
+
+\begin{piege}
+
+Confondre la pente (s⁻¹) et la diffusivité (m²/s) : l'analyse dimensionnelle tranche. Ne lire que des points effectivement tracés (le dernier est à \(5\times10^4\) s).
+
+\end{piege}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Appliquer la définition donnée, puis convertir les secondes en jours.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\equationajustee{\tau_1=\frac{1}{\alpha_{eq}}\left(\frac{0{,}52}{\pi}\right)^2\approx3{,}5\times10^5\ \text{s}\Rightarrow\boxed{\tau_1\approx4{,}0\ \text{jours}}}
+
+(cohérent avec \(1/|p|\)).
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Comparer, sur l'annexe 6, la dernière courbe tracée au profil stationnaire : l'écart est-il négligeable ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'écart décroît en \(e^{-t/\tau_1}\) : choisir un seuil (quelques \%) et le traduire en multiple de \(\tau_1\).
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+En \(x=0{,}32\) m, l'écart vaut encore 3,4 °C à \(5\times10^5\) s (≈ 1,4 \(\tau_1\)), soit environ 24 \% de l'écart initial : le régime n'est pas atteint sur la plage tracée. Pour un écart résiduel de 5 \% à moins de 1 \%, il faut 3 à 5 \(\tau_1\) :
+
+\equationajustee{\boxed{t_{stationnaire}\approx3\ \text{\text{à}}\ 5\,\tau_1\approx12\ \text{\text{à}}\ 20\ \text{jours}}}
+
+\begin{piege}
+
+Répondre « \(5\times10^5\) s », c'est confondre le dernier instant tracé avec l'instant où le régime est atteint.
+
+\end{piege}
+
+\hypertarget{partie-iv-uxe9tude-dune-poutre-continue-et-dun-poteau}{%
+\section{Partie IV --- Étude d'une poutre continue et d'un poteau}\label{partie-iv-uxe9tude-dune-poutre-continue-et-dun-poteau}}
+
+On passe des plans de charges à une charge linéique ELU, puis on résout une poutre continue à quatre appuis (degré 2) par le théorème des trois moments, avant de calculer une flèche par les intégrales de Mohr. La fin de la partie porte sur le flambement du poteau P0 et sur le critère d'élancement de l'Eurocode 2.
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Repérer la zone d'étude sur chacune des deux planches de l'annexe 8 et identifier sa trame dans la légende correspondante.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La zone CE contient deux trames : laquelle couvre l'essentiel de la surface ? Penser ensuite à convertir les daN/m².
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Planche CP : trame magenta à triangles, \(\text{CP}=100\) daN/m². Planche CE : trame magenta hachurée sur les bureaux, qui couvre l'essentiel de la zone (\(350\) daN/m²) ; la bande cyan de circulation (\(400\) daN/m²) est minoritaire.
+
+\equationajustee{\boxed{\begin{aligned}
+\text{CP}&=1{,}0\ \text{kN/m}^2\\
+\text{CE}&=3{,}5\ \text{kN/m}^2
+\end{aligned}}}
+
+CP est une charge permanente complémentaire (revêtements, cloisons, faux plafond) : le poids propre de la dalle n'y figure pas.
+
+\begin{piege}
+
+1 daN = 10 N, donc 100 daN/m² = 1 kN/m². Une erreur d'un facteur 10 ou 100 ici fausse toute la partie.
+
+\end{piege}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Pondérer les charges surfaciques, puis passer aux kN/m en multipliant par une largeur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quelle bande de plancher la poutre de la file 2 reprend-elle ? Regarder les entraxes de part et d'autre sur l'annexe 7 bis.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\equationajustee{p'_{Elu}=1{,}35\times1{,}0+1{,}5\times3{,}5=\boxed{6{,}60\ \text{kN/m}^2}}
+
+Largeur de reprise : \(\frac{6{,}48}{2}+\frac{2{,}62}{2}=4{,}55\) m.
+
+\equationajustee{\boxed{p_{Elu}=6{,}60\times4{,}55\approx30\ \text{kN/m}}}
+
+Valeur cohérente avec les 31 kN/m imposés pour la suite.
+
+\begin{methode}
+
+La charge linéique sur une poutre de plancher vaut la charge surfacique multipliée par la demi-somme des portées de plancher adjacentes.
+
+\end{methode}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Compter les inconnues de liaison et les équations d'équilibre réellement utiles pour un chargement vertical.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Quatre réactions verticales, deux équations utiles (\(\sum F_y=0\), \(\sum M=0\)) :
+
+\equationajustee{\boxed{h=2}}
+
+Inconnues hyperstatiques : les moments sur appuis intermédiaires \(M_B\) et \(M_C\). On peut aussi choisir les réactions \(R_B\) et \(R_C\).
+
+\begin{methode}
+
+Une poutre continue sur \(N\) appuis simples est hyperstatique de degré \(N-2\). Les inconnues naturelles sont les \(N-2\) moments sur appuis intermédiaires.
+
+\end{methode}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Comparer le moment maximal en travée d'une travée isostatique à celui de la même travée dans la poutre continue.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Les moments négatifs sur appuis réduisent les moments en travée et les flèches : sur BC, \(pL^2/8=218\) kN·m en isostatique contre 94,6 kN·m en continu. On obtient des sections plus économiques et une redondance (redistribution des efforts en cas de plastification locale).
+
+\begin{piege}
+
+L'hyperstaticité a une contrepartie : la structure devient sensible aux tassements différentiels d'appui et aux dilatations, qui y créent des efforts.
+
+\end{piege}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Dériver par rapport à \(x\) l'expression de \(M(x_i)\) de l'annexe 9.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer terme à terme avec l'expression de \(V(x_i)\) de l'annexe, en regardant attentivement le signe du terme \((M_{i-1}-M_i)/L_i\).
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\equationajustee{\begin{aligned}
+\frac{\mathrm dM}{\mathrm dx}&=\frac{\mathrm dm}{\mathrm dx}-\frac{M_{i-1}-M_i}{L_i}\\
+V&=v+\frac{M_{i-1}-M_i}{L_i}
+\end{aligned}}
+
+Pour que ces deux écritures soient compatibles quelles que soient les valeurs de \(M_{i-1}\) et \(M_i\) :
+
+\equationajustee{\boxed{V(x)=-\frac{\mathrm dM}{\mathrm dx}}}
+
+et
+
+\equationajustee{\frac{\mathrm dV}{\mathrm dx}=p}
+
+C'est la convention « efforts de la partie droite sur la partie gauche ». Pour une travée isostatique sous charge uniforme, \(m=\frac p2x(L-x)\) et \(v=p\left(x-\frac L2\right)\).
+
+Cette convention est cohérente avec \(R_i=v_{g,i}-v_{d,i}\) de l'annexe. \(M\) est extrémal là où \(V=0\).
+
+\begin{piege}
+
+Le signe de la relation dépend de la convention. On adopte celle de l'annexe et on s'y tient jusqu'aux réactions ; recopier la formule de l'annexe avec un signe modifié pour obtenir \(V=+\mathrm dM/\mathrm dx\) est une faute.
+
+\end{piege}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+\(M_A=0\) et \(M_C\) est donné : une seule équation des trois moments, écrite sur l'appui B, suffit.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Il faut les rotations d'extrémité d'une travée isostatique sous charge uniforme ; l'intégrale de Mohr « parabole × triangle » les donne.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\(|\omega|=\frac{pL^3}{24EI}\), d'où un second membre \(6EI(\omega'_{BC}-\omega''_{AB})=-\frac p4(L_{AB}^3+L_{BC}^3)\) :
+
+\equationajustee{2M_B(4{,}3+7{,}5)+7{,}5\times(-120{,}48)=-\frac{31}{4}(4{,}3^3+7{,}5^3)=-3885{,}7}
+
+\equationajustee{\boxed{M_B\approx-126{,}36\ \text{kN·m}}}
+
+Contrôle sur l'appui C : \(7{,}5M_B+2M_C(10{,}9)=-\frac{31}{4}(7{,}5^3+3{,}4^3)\) redonne \(M_C=-120{,}48\) kN·m.
+
+\begin{methode}
+
+Pour une charge uniforme \(p\) sur deux travées adjacentes, l'équation des trois moments s'écrit \(M_{i-1}L_i+2M_i(L_i+L_{i+1})+M_{i+1}L_{i+1}=-\frac p4(L_i^3+L_{i+1}^3)\).
+
+\end{methode}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Dans chaque travée, \(M(x)\) est la parabole isostatique plus la droite qui joint les moments sur appuis.
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(V\) se déduit de \(M\) par la relation de Q.30 ; les extrema de \(M\) sont aux points où \(V\) s'annule.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+Convention \(V=-\mathrm dM/\mathrm dx\) ; \(x\) compté depuis l'appui gauche de chaque travée.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1675}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2605}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1675}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1935}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1810}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Travée
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(M(x)\) (kN·m)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(V(x)\) (kN)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(M_{max}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Moment nul
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+AB (\(L=4{,}3\)) & \(-15{,}5x^2+37{,}26x\) & \(31x-37{,}26\) & 22,4 en \(x=1{,}20\) & 0 et 2,40 m \\
+BC (\(L=7{,}5\)) & \(-15{,}5x^2+117{,}03x-126{,}36\) & \(31x-117{,}03\) & 94,6 en \(x=3{,}78\) & 1,31 et 6,25 m \\
+CD (\(L=3{,}4\)) & \(-15{,}5x^2+88{,}14x-120{,}48\) & \(31x-88{,}14\) & 4,8 en \(x=2{,}84\) & 2,29 et 3,40 m \\
+\end{longtable}
+
+Valeurs de \(V\) aux extrémités : AB, −37,26 puis +96,04 ; BC, −117,03 puis +115,47 ; CD, −88,14 puis +17,26 kN.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q32-epures-poutre-continue.pdf}
+\caption*{Figure 2 --- Poutre continue ABCD sous pElu = 31 kN/m et épures de M(x)
+et V(x)}
+\end{figure}
+
+Épure de \(M\) : trois paraboles, positives en travée. Épure de \(V\) : trois segments de pente +31 kN/m, avec des sauts aux appuis ; \(V=0\) au droit de chaque maximum de \(M\).
+
+\begin{piege}
+
+Contrôler chaque parabole aux bornes : elle doit valoir exactement \(M_{i-1}\) et \(M_i\). Repérer les moments nuls, qui servent ensuite à placer les arrêts de barres.
+
+\end{piege}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Une réaction d'appui est le saut de l'effort tranchant au droit de l'appui ; respecter l'ordre donné par l'annexe 9.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\(R_i=V(\text{gauche})-V(\text{droite})\) :
+
+\equationajustee{\boxed{\begin{aligned}
+R_A&=37{,}3\ \text{kN}\\
+R_B&=213{,}1\ \text{kN}\\
+R_C&=203{,}6\ \text{kN}\\
+R_D&=17{,}3\ \text{kN}
+\end{aligned}}}
+
+Contrôle : \(\sum R_i=471{,}2\) kN \(=31\times15{,}2\).
+
+\begin{methode}
+
+La vérification de l'équilibre global (somme des réactions égale à la charge totale) valide d'un coup Q.31 à Q.33.
+
+\end{methode}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Superposer deux cas sur la travée BC isostatique : la charge répartie seule, puis les deux moments d'extrémité seuls.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Méthode de la charge unité : force unité au milieu, diagramme triangulaire de sommet \(L/4\) ; lire les coefficients dans l'annexe 10.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Parabole × triangle centré (coefficient 5/12) : \(\frac{5PL^4}{384EI_z}\). Chaque triangle d'extrémité × triangle centré (coefficient 1/4) : \(\frac{M_bL^2}{16EI_z}\) et \(\frac{M_cL^2}{16EI_z}\).
+
+\equationajustee{\boxed{\delta_f=\frac{5\,P_{\text{flèche}}\,L^4}{384\,EI_z}+\frac{(M_b+M_c)\,L^2}{16\,EI_z}}}
+
+Avec \(P=31\) kN/m et \(L=7{,}5\) m : \(\delta_f=409{,}4/EI_z\) (kN·m³). En isostatique, on aurait \(1277/EI_z\).
+
+\begin{methode}
+
+Contrôle de cas limite : avec \(M_b=M_c=-PL^2/12\) (encastrement parfait), on retrouve \(\frac{PL^4}{384EI}\).
+
+\end{methode}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Ce n'est pas un problème de résistance du matériau mais d'équilibre : que devient une petite déformation latérale sous compression ?
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Le flambement est une instabilité de forme des éléments élancés comprimés. Au-delà d'une charge critique, la position droite n'est plus un équilibre stable : un déplacement latéral \(\Delta\) crée un moment \(P_v\Delta\) qui accroît \(\Delta\), et ainsi de suite. La ruine est brutale et survient avant que le matériau n'atteigne sa résistance en compression.
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Quelles hypothèses idéales sous-tendent la charge d'Euler ? Lesquelles sont violées par un poteau réel ?
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+C'est la charge de bifurcation d'une barre idéale (droite, homogène, chargée dans l'axe, élastique indéfiniment). On ne l'atteint pas en pratique : imperfections et excentricités font fléchir le poteau dès le début du chargement, le matériau plastifie ou s'écrase avant pour les élancements courants, et fluage et fissuration du béton réduisent la rigidité. La ruine réelle survient sous une charge inférieure à \(P_{cr}\).
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Réduire la force excentrée au centre de gravité de la section.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+Charge excentrée = charge centrée + moment \(M_0=P_v\,e\) : \textbf{flexion composée}.
+
+Les contraintes ne sont plus uniformes :
+
+\equationajustee{\sigma=\frac{P_v}S\pm\frac{M_0v}{I}}
+
+Une traction apparaît si \(e\) sort du noyau central (\(a/6\) pour un carré). Le moment initial s'ajoute à l'effet \(P_v\Delta\) : le flambement est aggravé et la capacité portante réduite.
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Dans combien de plans un poteau peut-il flamber, et de quoi dépend l'élancement dans chacun ?
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+L'élancement \(\lambda=L_{cr}/i\) se calcule dans chacun des deux plans principaux, et le poteau flambe dans le plus élancé. Des conditions d'appui similaires signifient une même longueur de flambement dans les deux plans (ici \(L_{cr}=L\)). Il faut le préciser car \(L_{cr}\) dépend des liaisons dans chaque plan. La section étant carrée, un seul calcul suffit.
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Enchaîner longueur de flambement, rayon de giration et élancement, puis \(f_{cd}\), \(n\) et \(\lambda_{lim}\), et comparer.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Contrôler que \(n\) est sans dimension (MN avec MPa·m²).
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\(L_{cr}=6{,}62\) m (bi-articulé, hauteur sous poutre). Puis :
+
+\equationajustee{\begin{aligned}
+i&=0{,}5/\sqrt{12}=0{,}144\ \text{m}\\
+\lambda&=45{,}9\\
+f_{cd}&=13{,}33\ \text{MPa}\\
+n&=\frac{0{,}22}{0{,}25\times13{,}33}=0{,}066\\
+\lambda_{lim}&=\frac{20\times0{,}7\times1{,}1}{\sqrt{0{,}066}}=59{,}9
+\end{aligned}}
+
+\equationajustee{\boxed{\lambda\approx45{,}9<\lambda_{lim}\approx59{,}9\ :\ \text{effets du second ordre non pris en compte}}}
+
+\begin{piege}
+
+Prendre \(L_{cr}=0{,}5L\) (bi-encastré) contredit l'hypothèse imposée. Oublier la racine carrée donne \(\lambda_{lim}\approx233\), une marge illusoire.
+
+\end{piege}
+
+\hypertarget{partie-v-confort-de-lhabitat}{%
+\section{Partie V --- Confort de l'habitat}\label{partie-v-confort-de-lhabitat}}
+
+On applique la méthode normalisée de l'indice d'absorption pondéré \(\alpha_w\), puis la formule de Sabine pour un bureau d'enseignants, vide puis comble, et on établit une formule de dimensionnement d'un matériau de substitution.
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Que se passe-t-il pour la parole si le son persiste longtemps après son émission ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\(T_{rev}\) mesure la persistance du son. Trop long, il nuit à l'intelligibilité (recouvrement des syllabes), élève le niveau sonore ambiant et crée de la fatigue. Trop court, le local paraît sourd. La valeur doit être adaptée à l'usage (courte pour bureaux et salles de cours).
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Comparer la longueur d'onde à 125 Hz et à 4000 Hz avec l'épaisseur d'une dalle de plafond.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+La longueur d'onde varie de 2,7 m à 8,5 cm sur les bandes considérées, et les mécanismes de dissipation sont sélectifs. Dans une dalle poreuse, l'énergie est dissipée par \textbf{frottement visqueux} de l'air dans les pores. Ce mécanisme est efficace quand l'épaisseur est significative devant la longueur d'onde : bon en aigu, faible en grave, d'où \(\alpha_p\) croissant avec \(f\). On peut citer aussi la résonance de membrane ou de Helmholtz.
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Reporter les valeurs de la figure 6 sur le document réponse n°4 et relever la courbe de référence telle qu'elle est tracée (à quelles fréquences est-elle définie ?).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Seules les déviations défavorables comptent ; après chaque translation de la référence, recalculer la somme et la comparer à 0,1.
+
+\end{indication}
+
+\begin{indication}{3}
+
+\(\alpha_w\) se lit sur la référence corrigée, à 500 Hz.
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Bande (Hz)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+125
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+250
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+500
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+1000
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+2000
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+4000
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Somme
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Conforme ?
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Référence ISO 11654 & \#N/A & 0,80 & 1,00 & 1,00 & 1,00 & 0,90 & & \\
+\(\alpha_p\) mesuré & 0,50 & 0,45 & 0,60 & 0,85 & 0,95 & 0,95 & & \\
+Déviation, 1re itération & --- & 0,35 & 0,40 & 0,15 & 0,05 & 0 & 0,95 & non \\
+Référence −0,30 & --- & 0,50 & 0,70 & 0,70 & 0,70 & 0,60 & & \\
+Déviation, 2e itération & --- & 0,05 & 0,10 & 0 & 0 & 0 & 0,15 & non \\
+Référence −0,35 & --- & 0,45 & 0,65 & 0,65 & 0,65 & 0,55 & & \\
+Déviation, 3e itération & --- & 0 & 0,05 & 0 & 0 & 0 & 0,05 & oui \\
+\end{longtable}
+
+\equationajustee{\boxed{\alpha_{w\_dalle}=1{,}00-0{,}35=0{,}65}}
+
+La translation au pas de 0,05 prévue par la norme aboutit au même décalage de 0,35.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q42-courbe-absorption.pdf}
+\caption*{Figure 3 --- Courbe mesurée αp, référence ISO 11654 translatée de −0,30
+puis −0,35, lecture de αw à 500 Hz}
+\end{figure}
+
+\begin{piege}
+
+La courbe de référence commence à 250 Hz (0,8) et vaut 1 de 500 à 2000 Hz, puis 0,9 à 4000 Hz. La décaler d'une octave fausse tout le calcul. Les déviations favorables (mesure au-dessus de la référence) ne se retranchent pas.
+
+\end{piege}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Que signifie physiquement un coefficient de 0,05 : quelle part de l'énergie est absorbée, quelle part est réfléchie ?
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+Le linoléum absorbe 5 \% de l'énergie incidente et en \textbf{réfléchit 95 \%} : son absorption n'est pas conséquente. Matériau dense, lisse, non poreux et collé sur un support rigide, il se comporte comme une paroi réfléchissante. Cela justifie qu'on le néglige ensuite.
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Calculer le volume du bureau (annexe 15) et repérer la bonne ligne et la bonne colonne de l'annexe 14.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Traduire l'encadrement de \(T_r\) en encadrement de \(\alpha_{w\_dalle}\) par la formule de Sabine, puis comparer à la valeur de Q.42.
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+\(V=16{,}1\times3{,}1=49{,}91\) m³, \(S_{dalle}=16{,}1\) m². Bureaux collectifs (enseignants permanents), objectif réglementaire \(0{,}4\le T_r\le0{,}8\) s :
+
+\equationajustee{\begin{aligned}{}&\frac{0{,}16V}{0{,}8\,S}\le\alpha_{w\_dalle}\le\frac{0{,}16V}{0{,}4\,S}\\
+\iff\ &\boxed{0{,}62\le\alpha_{w\_dalle}\le1{,}24}
+\end{aligned}}
+
+Avec \(\alpha_w=0{,}65\) : \(T_{rev}=\frac{7{,}99}{0{,}65\times16{,}1}=0{,}76\) s. \textbf{Le choix du bureau d'étude respecte l'objectif réglementaire}, avec une marge faible. L'objectif retenu/HQE (\(T_r\le0{,}6\) s) demanderait \(\alpha_w\ge0{,}83\) : il n'est pas atteint par la dalle seule.
+
+\begin{piege}
+
+Les colonnes de l'annexe 14 diffèrent : la question parle de l'objectif réglementaire. Il est utile de commenter aussi l'objectif retenu, en le nommant.
+
+\end{piege}
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Les personnes ajoutent une aire d'absorption équivalente ; celle de la dalle reste.
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+\(A_{per}=30\times0{,}5\times0{,}7=10{,}5\) m².
+
+\equationajustee{T_{rev}^{comble}=\frac{7{,}99}{10{,}47+10{,}5}\approx\boxed{0{,}38\ \text{s}}}
+
+Les objectifs de l'annexe 14 visent des locaux non occupés ; 30 personnes dans 16,1 m² est une hypothèse de calcul extrême.
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Écrire la formule de Sabine pour la situation actuelle et pour la situation visée, en ne changeant que le coefficient de la surface \(S_{new}=S_{dalle}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Soustraire les deux écritures pour éliminer les absorptions inchangées, puis factoriser \(V^{2/3}\) en utilisant \(V=V^{2/3}V^{1/3}\).
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+Avec \(A_0\) l'ensemble des absorptions inchangées :
+
+\equationajustee{\begin{aligned}
+\frac{0{,}16V}{T_{rev}}&=A_0+\alpha_{w\_dalle}S_{new}\\
+\frac{0{,}16V}{\beta V^{1/3}}&=A_0+\alpha_{w\_new}S_{new}
+\end{aligned}}
+
+\equationajustee{(\alpha_{w\_new}-\alpha_{w\_dalle})S_{new}=0{,}16V^{2/3}\left(\frac1\beta-\frac{V^{1/3}}{T_{rev}}\right)}
+
+\equationajustee{\boxed{\alpha_{w\_new}=\alpha_{w\_dalle}+\frac{0{,}16}{S_{new}}V^{2/3}\left(\frac1\beta-\frac{V^{1/3}}{T_{rev}}\right)}}
+
+Contrôles. Homogénéité : 0,16 en s/m, \(1/\beta\) et \(V^{1/3}/T_{rev}\) en m/s. Cas limite : si \(T_{optimal}=T_{rev}\), on retrouve \(\alpha_{w\_new}=\alpha_{w\_dalle}\).
+
+\begin{piege}
+
+L'énoncé parle de remplacer le linoléum, mais la formule fait intervenir \(\alpha_{w\_dalle}\). La démonstration fonctionne si l'on raisonne par substitution sur la surface \(S_{new}=S_{dalle}\). Le signaler vaut mieux que forcer un calcul.
+
+\end{piege}
+
+\hypertarget{partie-vi-uxe9tude-de-fondation}{%
+\section{Partie VI --- Étude de fondation}\label{partie-vi-uxe9tude-de-fondation}}
+
+On dimensionne une semelle isolée carrée par la méthode pressiométrique : lecture de la pression limite sous la fondation, calcul de la portance, vérification du coefficient de sécurité, puis redimensionnement.
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+\begin{indication}{1}
+
+Classer selon le rapport profondeur / largeur et selon la manière dont la charge est transmise au sol (base seule, ou pointe et frottement).
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Superficielles} : semelles isolées, filantes, radiers ; charge transmise par la base aux couches de surface.
+\item
+  \textbf{Semi-profondes} : puits, massifs sur gros béton ; ils traversent quelques mètres de mauvais sol.
+\item
+  \textbf{Profondes} : pieux, barrettes, micropieux ; charge reprise par la pointe et le frottement latéral, pour des sols médiocres ou des charges fortes.
+\end{itemize}
+
+Les seuils sur \(D/B\) varient selon les référentiels : il vaut mieux les présenter comme indicatifs.
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\begin{indication}{1}
+
+Déduire \(B\) de la surface, \(D\) des cotes NGF, puis la profondeur \(z_e\) de l'énoncé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lire la colonne \(p_l^*\) (et non \(p_f^*\)) du sondage à cette profondeur, en encadrant par les essais voisins.
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+\equationajustee{\begin{aligned}
+B&=\sqrt{3{,}24}=1{,}80\ \text{m}\\
+D&=62{,}50-60{,}66=1{,}84\ \text{m}\\
+z_e&=1{,}84+\frac23\times1{,}80=3{,}04\ \text{m}
+\end{aligned}}
+
+Sur SP18 : 0,92 MPa à 3,0 m et 1,33 MPa à 4,5 m.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q48-semelle-coupe.pdf}
+\caption*{Figure 4 --- Coupe de la semelle : cotes NGF, encastrement D et
+profondeur ze de lecture de ple*}
+\end{figure}
+
+\equationajustee{\boxed{p_{le}^*\approx0{,}92\ \text{MPa}}}
+
+(Interpolation : 0,93 MPa, ou 0,99 MPa avec la tête du log à 62,70 m ; on garde la valeur prudente.)
+
+\begin{piege}
+
+L'énoncé (62,50 NGF) et le log (62,70 m) ne donnent pas la même cote de tête de sondage : il faut le relever et justifier son choix.
+
+\end{piege}
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\begin{indication}{1}
+
+\(q_u\), puis \(Q_{adm}=q_uS\), puis \(F=Q_{adm}/Q\) ; soigner la conversion des tonnes en MN.
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+\equationajustee{\begin{aligned}
+q_u&=0{,}85\times0{,}92=0{,}782\ \text{MPa}\\
+Q_{adm}&=0{,}782\times3{,}24=2{,}53\ \text{MN}\\
+Q&=190\ \text{t}\approx1{,}90\ \text{MN}
+\end{aligned}}
+
+\equationajustee{\boxed{F=\frac{2{,}53}{1{,}90}\approx1{,}33<2}}
+
+La sécurité requise n'est pas assurée : la semelle doit être agrandie.
+
+\begin{piege}
+
+190 t correspondent à environ 1900 kN, pas à 190 kN.
+
+\end{piege}
+
+\hypertarget{question-50}{%
+\subsection{Question 50}\label{question-50}}
+
+\begin{indication}{1}
+
+Inverser \(F\ge2\) pour obtenir une surface minimale, puis une largeur, arrondie vers le haut à une cote constructive.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifier que la nouvelle largeur ne rend pas la valeur de \(p_{le}^*\) défavorable.
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+\equationajustee{\begin{aligned}
+B^2&\ge\frac{2\times1{,}90}{0{,}782}=4{,}86\ \text{m}^2\\
+B&\ge2{,}21\ \text{m}
+\end{aligned}}
+
+Une largeur plus grande abaisse \(z_e\) vers des sols un peu meilleurs : garder 0,92 MPa est conservatif.
+
+\equationajustee{\boxed{\text{Semelle }2{,}30\times2{,}30\ \text{m, \text{ancrée} \text{à} }60{,}66\ \text{NGF}}}
+
+Vérification :
+
+\equationajustee{F=\frac{0{,}782\times5{,}29}{1{,}90}=2{,}18}
+
+\begin{methode}
+
+Une semelle se dimensionne aussi au tassement et au ferraillage : il est bon de le mentionner en une ligne, même si la question ne porte que sur la portance.
+
+\end{methode}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Analyse dimensionnelle avant toute application numérique (Q.2, Q.6, Q.39, Q.46).
+\item
+  Résistances thermiques en série, conservation du flux et chute \(\varphi R_i\) par couche pour tracer un profil multicouche.
+\item
+  Équation de la chaleur 1D : profil affine en stationnaire ; en transitoire, modes de constante de temps \(\tau_n=\tau_1/n^2\). Une diffusivité s'identifie par la pente d'un graphe en \(\ln\).
+\item
+  Poutre continue : degré \(N-2\), équation des trois moments, superposition « isostatique + droite des moments sur appuis », contrôle par l'équilibre global.
+\item
+  Flèches par intégrales de Mohr avec la charge unité.
+\item
+  Critère d'élancement : \(\lambda=L_{cr}/i\) comparé à \(\lambda_{lim}=20ABC/\sqrt n\).
+\item
+  Méthodes normalisées (ISO 11654) : lire exactement la référence et appliquer la règle de translation.
+\item
+  Sabine et raisonnement par différence pour éliminer les absorptions inchangées.
+\item
+  Portance pressiométrique : \(q_u=K_pp_{le}^*\), coefficient de sécurité, redimensionnement arrondi vers le haut.
+\end{itemize}
+
+\textbf{Prérequis à revoir.} Conventions de signe de l'effort tranchant ; table des intégrales de Mohr ; conversion daN, kN, t ; lecture de logs pressiométriques ; définitions des ponts thermiques et des modes de transfert.
+
+\textbf{Questions classiques transposables.} Calcul de DJU, épaisseur d'isolant pour un \(R\) imposé, profil de température dans un mur, poutre continue à trois travées, flèche par Mohr, vérification d'élancement d'un poteau, temps de réverbération de Sabine, portance d'une semelle isolée.
+
+\end{document}

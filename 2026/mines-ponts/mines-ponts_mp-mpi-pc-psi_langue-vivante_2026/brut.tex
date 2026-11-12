@@ -1,0 +1,403 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts MP-MPI-PC-PSI — Langue vivante 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Mines-Ponts MP-MPI-PC-PSI}
+\fancyhead[R]{\small Langue vivante 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts MP-MPI-PC-PSI — Langue vivante 2026\par}\medskip
+  {\large Mines-Ponts · MP-MPI-PC-PSI · Langue vivante · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\textbf{Problématique commune} : chaque article interroge ce que la société transmet à sa jeunesse ou attend d'elle (jeux sérieux, consommation, engagement politique, école, climat, codes culturels). La question 1 en restitue fidèlement le propos, la question 2 y répond par une position argumentée et illustrée.
+
+Durée : 1 h 30, sans document ni appareil. Barème : question 1 sur 4 (80 mots ± 10 \%), question 2 sur 8 (180 mots ± 10 \%), thème sur 8. Le candidat compose dans la seule langue déclarée à l'inscription ; les six langues sont traitées ci-dessous. Nombre de mots : mots séparés par des espaces (trait d'union = un mot, nombre et \% = un mot).
+
+\hypertarget{allemand}{%
+\section{Allemand}\label{allemand}}
+
+\hypertarget{expression-uxe9crite-1-welche-muxf6glichkeiten-bieten-die-neuen-computer--und-videospiele-mit-seriuxf6sen-inhalten-an}{%
+\subsection{Expression écrite --- 1) Welche Möglichkeiten bieten die neuen Computer- und Videospiele mit seriösen Inhalten an?}\label{expression-uxe9crite-1-welche-muxf6glichkeiten-bieten-die-neuen-computer--und-videospiele-mit-seriuxf6sen-inhalten-an}}
+
+Serious Games eröffnen der Bildungsarbeit neue Wege, weil sie Unterhaltung mit ernsten Themen verbinden. Wer selbst handelt, entwickelt eine engere Beziehung zum Erlebten als ein Leser oder Zuschauer. So lässt „The Darkest Files`` die Spieler NS-Verbrechen aufklären und zeigt, wie Unrecht ungestraft bleiben konnte; „Das Ilios-Experiment`` soll Schüler gegen Antisemitismus sensibilisieren und Toleranz fördern. Da sechs von zehn Deutschen spielen, erreicht das Medium ein sehr breites Publikum. Ein Wundermittel gegen rechtes Denken ist es zwar nicht, aber es kann Türen öffnen.
+
+\textbf{(81 Wörter)}
+
+\hypertarget{expression-uxe9crite-2-sollte-bildung-nicht-nur-wissen-vermitteln-sondern-auch-werte-fuxf6rdern}{%
+\subsection{Expression écrite --- 2) Sollte Bildung nicht nur Wissen vermitteln, sondern auch Werte fördern?}\label{expression-uxe9crite-2-sollte-bildung-nicht-nur-wissen-vermitteln-sondern-auch-werte-fuxf6rdern}}
+
+\emph{Problématique : die Schule kann Werte nicht vermeiden, sie muss sie erfahrbar machen.}
+
+Seit dem PISA-Schock von 2001 misst man deutsche Schulen vor allem an ihren Leistungen. Der Rechtsruck der letzten Jahre zeigt jedoch, dass Wissen allein die Demokratie nicht schützt. Muss die Schule also auch Werte vermitteln? Meiner Meinung nach ja, aber nicht auf Kosten des Wissens.
+
+Erstens ist Wissen ohne Urteilskraft wirkungslos, ja sogar gefährlich. Ein Ingenieur muss rechnen können, aber auch die Folgen seiner Entscheidungen für Klima und Menschen abwägen. Das fordert Hans Jonas in „Das Prinzip Verantwortung``: Je mächtiger die Technik wird, desto größer wird unsere Verantwortung.
+
+Zweitens muss Demokratie eingeübt werden. Viele Schulen tun das bereits: Klassensprecherwahlen, Besuche in KZ-Gedenkstätten, Gespräche mit Zeitzeugen. Da Bildung in Deutschland Ländersache ist, setzt jedes Land dabei eigene Schwerpunkte.
+
+Man könnte zwar einwenden, die Wertevermittlung sei Sache der Familie. Doch jeder Unterricht vermittelt ohnehin Werte: durch die Auswahl der Texte, den Umgang mit Fehlern, die Regeln der Diskussion.
+
+Werte lassen sich allerdings nicht predigen, sondern nur erfahren, und sie brauchen Wissen als Grundlage: Wer Nachhaltigkeit verteidigen will, muss zuerst den Klimawandel verstehen. Wissen und Werte gehören also zusammen: Erst beide machen aus Schülern mündige Bürger.
+
+\textbf{(183 Wörter)}
+
+\hypertarget{thuxe8me-j.-m.-g.-le-cluxe9zio-bitna-sous-le-ciel-de-suxe9oul}{%
+\subsection{\texorpdfstring{Thème --- J. M. G. Le Clézio, \emph{Bitna, sous le ciel de Séoul}}{Thème --- J. M. G. Le Clézio, Bitna, sous le ciel de Séoul}}\label{thuxe8me-j.-m.-g.-le-cluxe9zio-bitna-sous-le-ciel-de-suxe9oul}}
+
+„Du, die du Lebenserfahrung hast``, sagte meine Tante an mich gewandt -- von welcher Erfahrung sprach sie? --, „du solltest ihr sagen, sie solle sich bessern. Sie tut nichts mehr für die Schule, sie sagt, sie wolle nicht einmal weitermachen, das bringe ja doch nichts.`` {[}\ldots{]}
+
+Eines Nachmittags habe ich ihr beim Schulausgang ins Gewissen geredet; ich war gekommen, um dort auf sie zu warten. Wir sind in ein Café gegangen {[}\ldots{]}. Sie hat sich auf die Terrasse gesetzt, um rauchen zu können.
+
+„Vielleicht solltest du nicht schon so jung rauchen``, habe ich zu ihr gesagt.
+
+„Weil du etwa nicht rauchst?{}``
+
+„In deinem Alter rauchte ich noch nicht.``
+
+„Und welchen Unterschied macht das jetzt?{}``
+
+Ich habe es dabei bewenden lassen. Schließlich ging es mich nichts an, ob sie in der Öffentlichkeit oder heimlich rauchte.
+
+\hypertarget{anglais}{%
+\section{Anglais}\label{anglais}}
+
+\hypertarget{expression-uxe9crite-1.-according-to-the-text-why-is-asos-currently-struggling-to-remain-competitive}{%
+\subsection{Expression écrite --- 1. According to the text, why is Asos currently struggling to remain competitive?}\label{expression-uxe9crite-1.-according-to-the-text-why-is-asos-currently-struggling-to-remain-competitive}}
+
+Asos misjudged the post-Covid market: expecting lockdown shoppers to stay online for good, it overstocked and was left with £1bn of unsold clothes once people returned to shops. Customers now also have less to spend and prefer holidays, festivals or streaming to new outfits. Meanwhile, rivals innovate faster: Shein, helped by a tax exemption, sells for less and uses technology to spot trends quickly, while Vinted attracts eco-conscious buyers. Squeezed by falling sales, higher wages and new regulations, Asos cannot afford to keep up.
+
+\textbf{(84 words)}
+
+\hypertarget{expression-uxe9crite-2.-should-price-be-the-only-criterion-consumers-take-into-consideration-when-making-purchases}{%
+\subsection{Expression écrite --- 2. Should price be the only criterion consumers take into consideration when making purchases?}\label{expression-uxe9crite-2.-should-price-be-the-only-criterion-consumers-take-into-consideration-when-making-purchases}}
+
+\emph{Problématique : a low price is often a cost shifted elsewhere.}
+
+With inflation squeezing households on both sides of the Atlantic, affordability has become a political issue: Zohran Mamdani won New York's mayoral race in 2025 on that very promise. Can consumers still afford to look beyond the price tag, and should they? I believe they should, even if price comes first for many.
+
+Admittedly, for the poorest families price is a constraint, not a choice. When rent and energy bills swallow most of an income, lecturing them about ethics is unfair: only the well-off can pay more.
+
+Yet a low price is often a cost shifted onto someone else. The collapse of the Rana Plaza factory in Bangladesh, which killed more than 1,100 garment workers in 2013, revealed who really pays for bargain clothes. Cheap goods that fall apart quickly also cost more in the long run, as Huxley foresaw in \emph{Brave New World}, whose citizens are taught that ``ending is better than mending''.
+
+Consumers should therefore weigh durability, working conditions and environmental impact too, and governments should make these choices affordable to all. Price matters, but it should never be the only yardstick.
+
+\textbf{(184 words)}
+
+\hypertarget{thuxe8me-david-foenkinos-vers-la-beautuxe9}{%
+\subsection{\texorpdfstring{Thème --- David Foenkinos, \emph{Vers la beauté}}{Thème --- David Foenkinos, Vers la beauté}}\label{thuxe8me-david-foenkinos-vers-la-beautuxe9}}
+
+Camille had just turned sixteen at the time. For several weeks, her behaviour had been worrying her parents. Although she had always been a brilliant pupil, she was now reluctant to go to school. Her mother kept asking her whether something had happened. ``No, nothing, no, nothing,'' she would repeat. She no longer wanted to get up. One day, she had finally murmured: ``I feel a weight inside me that is impossible to lift.'' Her mother had already heard that kind of remark at the hospital, from patients suffering from depression. Isabelle assumed that she needed to help her daughter on a daily basis; that way, the girl would get her energy back. {[}\ldots{]}
+
+Sitting next to Camille, the doctor did not know what to say.
+
+``You can tell me anything. You know very well that I'm a friend of the family. I've known you since you were a little girl.''
+
+``I know.''
+
+``Then tell me what's the matter. Tell me where it hurts.''
+
+``It doesn't hurt,'' said Camille. {[}\ldots{]}
+
+She wanted to be left alone.
+
+\hypertarget{arabe}{%
+\section{Arabe}\label{arabe}}
+
+\hypertarget{expression-uxe9crite-ux627ux644ux633ux624ux627ux644-ux627ux644ux623ux648ux644-ux627ux644ux623ux633ux628ux627ux628-ux627ux644ux645ux641ux633ux631ux629-ux644ux627ux646ux62fux644ux627ux639-ux627ux62dux62aux62cux627ux62cux627ux62a-ux62dux631ux643ux629-ux62cux64aux644-ux632ux62f-ux641ux64a-ux627ux644ux645ux63aux631ux628}{%
+\subsection{Expression écrite --- السؤال الأول : الأسباب المفسرة لاندلاع احتجاجات حركة «جيل زد» في المغرب}\label{expression-uxe9crite-ux627ux644ux633ux624ux627ux644-ux627ux644ux623ux648ux644-ux627ux644ux623ux633ux628ux627ux628-ux627ux644ux645ux641ux633ux631ux629-ux644ux627ux646ux62fux644ux627ux639-ux627ux62dux62aux62cux627ux62cux627ux62a-ux62dux631ux643ux629-ux62cux64aux644-ux632ux62f-ux641ux64a-ux627ux644ux645ux63aux631ux628}}
+
+يرى الكاتب أن احتجاجات «جيل زد» في المغرب اندلعت لأسباب متشابكة. فهي أولا نتيجة لأزمة النخب السياسية التقليدية العاجزة عن مواكبة التحولات، ولضعف الأحزاب والنقابات التي فقدت دورها في الوساطة، فلم يعد الشباب يثقون بخطاب يرونه مكررا لا يوفر لهم عملا ولا خدمات عامة لائقة. وثانيا، كشفت لهم شبكة الإنترنت ما يتمتع به المسؤولون من امتيازات وتورط بعضهم في الفساد، في وقت يعانون فيه من غلاء المعيشة. يضاف إلى ذلك تفاوت اجتماعي صارخ بين الجهات، وثقافة سياسية جديدة اكتسبوها من الشبكات الاجتماعية.
+
+\textbf{(82 كلمة)}
+
+\hypertarget{expression-uxe9crite-ux627ux644ux633ux624ux627ux644-ux627ux644ux62bux627ux646ux64a-ux62aux62dux648ux644-ux62cux630ux631ux64a-ux623ux645-ux638ux627ux647ux631ux629-ux639ux627ux628ux631ux629}{%
+\subsection{Expression écrite --- السؤال الثاني : تحول جذري أم ظاهرة عابرة؟}\label{expression-uxe9crite-ux627ux644ux633ux624ux627ux644-ux627ux644ux62bux627ux646ux64a-ux62aux62dux648ux644-ux62cux630ux631ux64a-ux623ux645-ux638ux627ux647ux631ux629-ux639ux627ux628ux631ux629}}
+
+\emph{Problématique : تحول حقيقي في طبيعة المطالب، لكنه هش ما لم يجد تنظيما ومؤسسات.}
+
+منذ نهاية سبتمبر 2025، يتظاهر شباب مغاربة بدعوة من مجموعات رقمية. فهل هو تحول جذري في علاقتهم بالسياسة أم موجة عابرة؟ في رأيي، تمثل حركة «جيل زد» تحولا حقيقيا في الوعي السياسي، لكنه تحول هش لم يكتمل بعد.
+
+فهي أولا تحول حقيقي لأنها غيرت طبيعة المطالب نفسها. فهذا الجيل لا ينطلق من إيديولوجيا كبرى، بل من المستشفى والمدرسة وفرص العمل. وقد ظهر ذلك حين قارن الشباب بين الأموال المخصصة للملاعب استعدادا لكأس العالم وبين حالة المستشفيات العمومية. وهذا هو الفرق بين 2011 واليوم: فشعار «الشعب يريد إسقاط النظام» كان شاملا، أما مطالب «جيل زد» فملموسة وقابلة للقياس. كما أن وسائل التواصل جعلت الشباب العربي يتابع ما يجري في البلدان الأخرى لحظة بلحظة، ويستلهم منها الشعارات وأساليب التنظيم.
+
+ثانيا، تدعو تجارب المنطقة إلى الحذر. فحراك الريف في المغرب سنة 2016 انتهى باعتقال قادته، والحراك اللبناني سنة 2019 لم يغير الطبقة السياسية، واحتجاجات تشرين في العراق لم تحقق إلا جزءا من مطالبها. فالشبكات الاجتماعية تحشد بسرعة، لكنها لا تفرز قيادة ولا برنامجا.
+
+لذلك أعتقد أن مستقبل هذه الحركة مرهون بقدرتها على التنظيم، وبقدرة الأحزاب على الإصلاح: فإذا تجددت المؤسسات تحول الغضب إلى سياسة عامة، وإلا عاد الشباب إلى الشارع مرة أخرى.
+
+\textbf{(189 كلمة)}
+
+\hypertarget{thuxe8me-kaouther-adimi-la-joie-ennemie-texte-non-vocalisuxe9}{%
+\subsection{\texorpdfstring{Thème --- Kaouther Adimi, \emph{La Joie ennemie} (texte non vocalisé)}{Thème --- Kaouther Adimi, La Joie ennemie (texte non vocalisé)}}\label{thuxe8me-kaouther-adimi-la-joie-ennemie-texte-non-vocalisuxe9}}
+
+منذ أن أقنعتهما مديرة روضتنا بأن الجمع بين لغتين سيقودنا إلى الفشل الدراسي، أقصى والداي اللغة العربية من البيت. فالفشل الدراسي في نظرهما أعظم مأساة على الإطلاق. أما التفوق في المدرسة، وقد ظلا يرددانه على مسامعنا طوال سنوات دراستنا، فهو أكثر بكثير من ضرورة: إنه واجب علينا تجاه شهداء الثورة الجزائرية. أظافر نظيفة، وأسنان منظفة بالفرشاة، وقمصان مكوية، وشعر ممشط: يحرص والداي على أن نظهر للفرنسيين أفضل صورة عن أنفسنا. لن يقبلا أي حماقة، ولا أي ملاحظة في دفتر المراسلة، ولا أي علامة سيئة. نحن لا نذهب إلى المدرسة فحسب، بل نمضي في مهمة. ولا يهم إن كان لا بد من التضحية بالعربية. وهكذا أرسيت عادة ثابتة: قراءة قصة عند النوم، وإملاء صباح السبت، واستظهار قصيدة بعد ظهر الأحد.
+
+\hypertarget{espagnol}{%
+\section{Espagnol}\label{espagnol}}
+
+\hypertarget{expression-escrita-1.-identifique-los-obstuxe1culos-con-los-que-se-enfrenta-la-comunidad-gitana-en-el-sistema-educativo-espauxf1ol.}{%
+\subsection{Expression escrita --- 1. Identifique los obstáculos con los que se enfrenta la comunidad gitana en el sistema educativo español.}\label{expression-escrita-1.-identifique-los-obstuxe1culos-con-los-que-se-enfrenta-la-comunidad-gitana-en-el-sistema-educativo-espauxf1ol.}}
+
+Los gitanos sufren una brecha educativa que empieza en la infancia: pocos niños asisten a la educación infantil, y lo hacen tarde. Las repeticiones en primaria provocan luego un fuerte desfase curricular, y la mayoría no termina la ESO: el fracaso escolar alcanza el 62,8 \%. A ello se suman la segregación escolar, los prejuicios, las bajas expectativas y la falta de referentes gitanos con estudios, que dificultan su integración. Así, solo un 0,8 \% obtiene un título universitario, lo que compromete su futuro profesional.
+
+\textbf{(83 palabras)}
+
+\hypertarget{expression-escrita-2.-explique-las-medidas-que-se-han-implementado-en-espauxf1a-y-en-amuxe9rica-latina-para-integrar-a-las-comunidades-minoritarias.}{%
+\subsection{Expression escrita --- 2. Explique las medidas que se han implementado en España y en América Latina para integrar a las comunidades minoritarias.}\label{expression-escrita-2.-explique-las-medidas-que-se-han-implementado-en-espauxf1a-y-en-amuxe9rica-latina-para-integrar-a-las-comunidades-minoritarias.}}
+
+\emph{Problemática : dos vías complementarias, el acompañamiento escolar y el reconocimiento cultural.}
+
+Según el artículo, solo el 0,8 \% de los jóvenes gitanos obtiene un título universitario. Integrar a las minorías sigue siendo, pues, un reto a ambos lados del Atlántico, que se ha abordado por dos vías: el acompañamiento y el reconocimiento.
+
+En España, la Fundación Secretariado Gitano desarrolla el programa Promociona, que orienta a los alumnos gitanos y a sus familias para que terminen la ESO y sigan estudiando, y el Estado aprobó una Estrategia Nacional para la Igualdad, Inclusión y Participación del Pueblo Gitano 2021-2030. Más allá de los gitanos, desde 2023 se pueden usar las lenguas cooficiales en el Congreso, y el Gobierno de Pedro Sánchez ha impulsado la regularización extraordinaria de migrantes.
+
+En América Latina, donde las minorías son sobre todo pueblos indígenas, el eje ha sido el reconocimiento. La Constitución boliviana de 2009 define un Estado plurinacional y reconoce como oficiales decenas de lenguas indígenas, mientras que México ha creado universidades interculturales y Perú desarrolla la educación intercultural bilingüe.
+
+Estas medidas muestran que la inclusión exige a la vez recursos concretos en las aulas y el reconocimiento de la identidad de cada minoría.
+
+\textbf{(186 palabras)}
+
+\hypertarget{thuxe8me-rachid-benzine-les-silences-des-puxe8res-phrase-de-contextualisation-non-traduite}{%
+\subsection{\texorpdfstring{Thème --- Rachid Benzine, \emph{Les silences des pères} (phrase de contextualisation non traduite)}{Thème --- Rachid Benzine, Les silences des pères (phrase de contextualisation non traduite)}}\label{thuxe8me-rachid-benzine-les-silences-des-puxe8res-phrase-de-contextualisation-non-traduite}}
+
+En la mina, mis compañeros y yo cogemos una máquina que nos hace descender bajo tierra. A menudo bajo a casi mil metros. En el vientre de la tierra. Los hay que vomitan, otros que tienen miedo, y se les ve el miedo en los ojos. A veces yo también tengo miedo. Pero cuando pienso en usted y rezo, mi corazón se serena gracias a Dios. Eso me da fuerzas. Nos hundimos en la oscuridad, es como si la tierra nos llamara. Es un viaje. Es un mundo extraño. Estoy fascinado y, al mismo tiempo, a menudo estoy preocupado. No tanto por mí sino por los demás. Nunca habría imaginado que bajo nuestros pies hubiera todo un mundo. Como cuando era niño y dormía en la azotea de la casa para descubrir la inmensidad del cielo.
+
+\hypertarget{italien}{%
+\section{Italien}\label{italien}}
+
+\hypertarget{espressione-scritta-1.-illustri-il-problema-della-calura-nelle-cittuxe0-italiane-in-forte-anticipo-sulla-stagione.}{%
+\subsection{Espressione scritta --- 1. Illustri il problema della calura nelle città italiane in forte anticipo sulla stagione.}\label{espressione-scritta-1.-illustri-il-problema-della-calura-nelle-cittuxe0-italiane-in-forte-anticipo-sulla-stagione.}}
+
+Già a fine giugno, con largo anticipo sull'estate, l'anticiclone africano porta un caldo eccezionale nelle città: il ministero della Salute ha messo in bollino rosso diciassette città su ventisette, presto diciannove, e a Taranto si attendono 40 gradi. Neppure la notte dà sollievo, perché le minime restano sopra i 20 gradi e l'afa accresce il disagio. La causa profonda è il riscaldamento del Mediterraneo, molto più caldo della media: accumulando energia, il mare non mitiga più il caldo e rende possibili fenomeni violenti.
+
+\textbf{(83 parole)}
+
+\hypertarget{espressione-scritta-2.-secondo-lei-saruxe0-possibile-risolvere-un-giorno-la-crisi-climatica-e-in-che-modo}{%
+\subsection{Espressione scritta --- 2. Secondo Lei, sarà possibile risolvere un giorno la crisi climatica? E in che modo?}\label{espressione-scritta-2.-secondo-lei-saruxe0-possibile-risolvere-un-giorno-la-crisi-climatica-e-in-che-modo}}
+
+\emph{Problematica : non «risolvere», ma stabilizzare e adattarsi.}
+
+Le ondate di calore come quella di giugno 2025 lo dimostrano: chi, come molti studenti, vive in un alloggio senza aria condizionata sa che la crisi climatica è già qui. Si potrà risolverla un giorno? Secondo me, non come si risolve un'equazione, perché l'anidride carbonica resta per secoli nell'atmosfera. È però possibile stabilizzare il clima, a tre condizioni.
+
+La prima è tecnica. In Francia quasi tutta l'elettricità proviene dal nucleare e dalle rinnovabili, mentre in Danimarca l'eolico supera ormai la metà della produzione. Per cemento, acciaio e aviazione serviranno idrogeno, cattura del carbonio e, semplicemente, meno consumi.
+
+La seconda è politica, ed è la più dura. Un accordo internazionale funziona solo se nessuno ha interesse a tradirlo: per questo servono un prezzo del carbonio e un meccanismo di adeguamento alle frontiere, come quello adottato dall'Unione europea.
+
+La terza è l'adattamento delle città descritte nell'articolo: piantare alberi, ridurre l'asfalto, rivedere gli orari di lavoro durante le ondate di calore.
+
+Sono quindi moderatamente ottimista: non credo né alla catastrofe inevitabile né al miracolo tecnologico, ma a mille decisioni concrete, da prendere subito.
+
+\textbf{(180 parole)}
+
+\hypertarget{thuxe8me-jean-pierre-martin-mes-fous}{%
+\subsection{\texorpdfstring{Thème --- Jean-Pierre Martin, \emph{Mes fous}}{Thème --- Jean-Pierre Martin, Mes fous}}\label{thuxe8me-jean-pierre-martin-mes-fous}}
+
+Abdil ha appena riattaccato che Constance mi chiama. Nelle mani di uno scorticato nell'anima, il telefono moltiplica gli SOS. Finché c'è qualcuno all'altro capo del filo, si conserva un po' di speranza. È sorprendente quanto io sia solo e quanto spesso mi chiamino {[}\ldots{]}.
+
+Il cellulare è diventato un personaggio centrale della mia esistenza. È la mia dipendenza numero uno {[}\ldots{]}. Quando lo perdo, sono ancora più infelice del solito {[}\ldots{]}. A volte mi chiedo se non abiti nel mio cellulare. Ammiro quelli che ne fanno a meno. Vorrei essere come loro {[}\ldots{]}.
+
+Quando squilla, vuol dire che esisto ancora un po'. Chiamo anch'io. Mi capita di consultare la mia lista dei contatti o una vecchia agenda per rifarmi vivo con un amico perso di vista. Possono essere passati vent'anni, ma volano così in fretta, vent'anni. Non vorrei che si spegnessero, i miei amici perduti, senza che ci fossimo detti prima qualche parola d'affetto {[}\ldots{]}.
+
+Con Constance è diverso. Quando chiede aiuto cinque o sei volte al giorno, è una sofferenza.
+
+\hypertarget{russe}{%
+\section{Russe}\label{russe}}
+
+\hypertarget{expression-uxe9crite-1.-ux43aux430ux43aux438ux43c-ux441ux442ux438ux43bux435ux43c-ux43eux442ux43bux438ux447ux430ux435ux442ux441ux44f-ux440ux43eux441ux441ux438ux439ux441ux43aux430ux44f-ux43cux43eux43bux43eux434ux435ux436ux44c-ux441ux435ux433ux43eux434ux43dux44f}{%
+\subsection{Expression écrite --- 1. Каким стилем отличается российская молодежь сегодня?}\label{expression-uxe9crite-1.-ux43aux430ux43aux438ux43c-ux441ux442ux438ux43bux435ux43c-ux43eux442ux43bux438ux447ux430ux435ux442ux441ux44f-ux440ux43eux441ux441ux438ux439ux441ux43aux430ux44f-ux43cux43eux43bux43eux434ux435ux436ux44c-ux441ux435ux433ux43eux434ux43dux44f}}
+
+Судя по тексту, современная молодёжь выделяется прежде всего свободным, как правило спортивным стилем, пришедшим из американского хип-хопа и рэпа. Молодые люди носят рваные джинсы, незашнурованные кроссовки, очень широкие брюки, худи и футболки на несколько размеров больше, яркие золотистые украшения на шее, солнечные очки и бейсболки козырьком набок. К этому добавляются татуировки и особый сленг: «лол», «рофл», «шеймить». Все эти знаки позволяют молодым людям узнавать «своих», выражать протест и отделять себя от мира взрослых. Это одновременно мода, вызов и способ самовыражения.
+
+\textbf{(80 слов)}
+
+\hypertarget{expression-uxe9crite-2.-ux432-ux43aux430ux43aux43eux439-ux43cux435ux440ux435-ux432ux44b-ux443ux437ux43dux430ux451ux442ux435-ux441ux435ux431ux44f-ux432-ux441ux442ux438ux43bux435-ux43aux43eux442ux43eux440ux44bux439-ux43eux43fux438ux441ux44bux432ux430ux435ux442ux441ux44f-ux432-ux442ux435ux43aux441ux442ux435}{%
+\subsection{Expression écrite --- 2. В какой мере Вы узнаёте себя в стиле, который описывается в тексте?}\label{expression-uxe9crite-2.-ux432-ux43aux430ux43aux43eux439-ux43cux435ux440ux435-ux432ux44b-ux443ux437ux43dux430ux451ux442ux435-ux441ux435ux431ux44f-ux432-ux441ux442ux438ux43bux435-ux43aux43eux442ux43eux440ux44bux439-ux43eux43fux438ux441ux44bux432ux430ux435ux442ux441ux44f-ux432-ux442ux435ux43aux441ux442ux435}}
+
+\emph{Problématique : узнаю ли я себя в вещах или в механизме «свои --- чужие»?}
+
+Я узнаю себя в этом стиле лишь отчасти.
+
+Внешне --- почти нет. Я учусь в подготовительном классе, где готовятся к вступительным экзаменам в инженерные школы, и мой «стиль» определяется расписанием: удобные брюки, свитер, рюкзак с книгами. У меня нет ни татуировок, ни золотых цепочек, а бейсболку я ношу козырьком вперёд. Правда, кроссовки у меня иногда остаются незашнурованными, но только из-за спешки, а не из протеста. Мне просто некогда думать о моде: после десяти часов занятий важнее выспаться.
+
+Зато в языке я узнаю себя сразу. Мы с друзьями тоже говорим «лол» и «рофл», «шеймим» и «прикалываемся», и родители часто не понимают половины наших разговоров. Кроме того, у нас есть свой школьный жаргон, который никто со стороны не поймёт. Это тот самый механизм, о котором пишет автор: язык только для своих.
+
+Поэтому мне кажется, что автор прав в главном. Молодёжная культура --- это не набор вещей, а способ провести границу между «своими» и «чужими». У рэпера это рваные джинсы, у студента --- сокращения, у геймера --- никнейм. Каждое поколение придумывает свои знаки: у моих родителей были другие слова и другая музыка. Форма меняется, а потребность сказать «я --- свой» остаётся.
+
+\textbf{(183 слова)}
+
+\hypertarget{thuxe8me-kuxe9thuxe9vane-davrichewy-lautre-joseph}{%
+\subsection{\texorpdfstring{Thème --- Kéthévane Davrichewy, \emph{L'autre Joseph}}{Thème --- Kéthévane Davrichewy, L'autre Joseph}}\label{thuxe8me-kuxe9thuxe9vane-davrichewy-lautre-joseph}}
+
+Мой отец очень близок со своей бабушкой. Она рядом с ним на протяжении всего его детства и отрочества, проведённых вместе с братьями в маленьком доме в Ле-Везине. Их мать работает в Париже и в конце концов там поселится --- быть может, не выдержав властного характера свекрови. Анета никогда не расстанется со своим сыном Дато; она ему предана, и он отвечает ей тем же, защищая её от Иосифа --- отца, столь же ненавистного, сколь и долгожданного. Она умирает, когда моя мать беременна мной, с нетерпением ожидая ребёнка, которого ей не суждено узнать и которого она уже называет «девочкой». Иосиф в своих записях ни разу не упоминает ни Анету, ни какую-либо другую женщину или ребёнка, словно прожил жизнь в полном одиночестве.
+
+Понадобилось целое стечение обстоятельств, много лет спустя после смерти отца, чтобы я задумалась о своём прадеде по отцовской линии и об этой стороне своего происхождения.
+
+\end{document}

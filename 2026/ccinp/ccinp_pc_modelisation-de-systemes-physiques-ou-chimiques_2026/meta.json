@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_pc_modelisation-de-systemes-physiques-ou-chimiques_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PC",
+    "matiere": "Modélisation de systèmes physiques ou chimiques",
+    "annee": 2026
+  },
+  "questions": 56,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q03-potentiel-morse.svg",
+      "question": "Q3",
+      "legende": "Potentiel de Morse : D est la profondeur du puits, mouvement borné entre x₁ et x₂ si E_m < D, non borné si E_m > D"
+    },
+    {
+      "fichier": "figures/q34-intensite-cuve.svg",
+      "question": "Q34",
+      "legende": "Intensité dans la cuve, de I₀ en x = 0 à I_s en x = e, décroissance en exp(−x/δ)"
+    },
+    {
+      "fichier": "figures/q38-maille-ni3cr.svg",
+      "question": "Q38",
+      "legende": "Maille CFC de l'alliage, Ni aux sommets et sur 4 faces, Cr sur 2 faces opposées"
+    },
+    {
+      "fichier": "figures/q40-contact-face.svg",
+      "question": "Q40",
+      "legende": "Face de la maille CFC, contact le long de la diagonale de face, de longueur a√2 = 2d"
+    },
+    {
+      "fichier": "figures/q48-difference-marche.svg",
+      "question": "Q48",
+      "legende": "Différence de marche δ = a sin θ entre deux fentes consécutives, rayons réunis en M par la lentille"
+    },
+    {
+      "fichier": "figures/q56-ordres-fente.svg",
+      "question": "Q56",
+      "legende": "Positions des ordres sur l'écran, seul l'ordre 1 passe par la fente en x₀ = 3 cm, à λ₀ = 3 µm"
+    }
+  ]
+}

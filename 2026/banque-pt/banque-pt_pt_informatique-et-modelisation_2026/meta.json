@@ -1,0 +1,28 @@
+{
+  "slug": "banque-pt_pt_informatique-et-modelisation_2026",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Informatique et modélisation",
+    "annee": 2026
+  },
+  "questions": 50,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q03-q06-forces-capteur.svg",
+      "question": "Q3",
+      "legende": "Forces pressantes sur le capteur : l'eau pousse chaque paroi vers l'intérieur, l'air intérieur vers l'extérieur ; il reste la poussée d'Archimède, vers le haut (flèches non à l'échelle)"
+    },
+    {
+      "fichier": "figures/q08-q10-dioptres-successifs.svg",
+      "question": "Q8",
+      "legende": "Deux dioptres successifs : normales parallèles, donc θt(z) = θi(z + dz) ; le triangle I₁HI₂ donne sin θ = dx/ds (angles exagérés)"
+    },
+    {
+      "fichier": "figures/q44-canal-sofar.svg",
+      "question": "Q44",
+      "legende": "Canal SOFAR : (a) profil de Munk et profondeurs de retournement, où c(z) = c(zₑ)/cos a ; (b) trajectoires calculées pour des sources à 1500 m et 3000 m sous 0,05 rad"
+    }
+  ]
+}

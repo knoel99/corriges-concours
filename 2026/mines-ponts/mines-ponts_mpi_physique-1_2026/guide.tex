@@ -1,0 +1,1363 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts MPI — Physique 1 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Mines-Ponts MPI}
+\fancyhead[R]{\small Physique 1 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts MPI — Physique 1 2026\par}\medskip
+  {\large Mines-Ponts · MPI · Physique 1 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} « Du spectre à la structure de l'hydrogène » retrace la naissance de la mécanique quantique à partir d'un fil conducteur, l'\textbf{impulsion} \(p\) et la relation de de Broglie \(\lambda=h/p\). On part de mesures (les raies visibles de l'hydrogène), on les interprète par le modèle semi-classique de Bohr, puis par les ondes de matière et l'équation de Schrödinger.
+
+\textbf{Découpage (25 questions, 3 heures, sans calculatrice).}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I (Q1--Q5)} : relation de Planck-Einstein, exploitation de la figure 1 (droite de Balmer), valeur de \(E_0\), relation de Rydberg, domaines spectraux des séries. Accessible dès les premières minutes.
+\item
+  \textbf{Partie II (Q6--Q12)} : mécanique du point en force centrale (énergie potentielle coulombienne, conservation du moment cinétique, énergie potentielle effective, discussion graphique des orbites) puis règle de Bohr et rayon de Bohr. Les questions 6 à 9 sont du cours de première année.
+\item
+  \textbf{Partie III (Q13--Q25)} : ondes de matière. III.A interprétation de la fonction d'onde et onde plane ; III.B puits infini et neutron confiné dans un noyau ; III.C expérience de Davisson et Germer (électrostatique, courant de probabilité, interférences sur un réseau de plans, exploitation d'un document historique) ; III.D état fondamental de l'hydrogène par l'équation de Schrödinger en symétrie sphérique.
+\end{itemize}
+
+\textbf{Notions du programme mobilisées.} Photon, quantification de l'énergie, mécanique en force centrale conservative, énergie potentielle effective, dualité onde-corpuscule, fonction d'onde et densité de probabilité, équation de Schrödinger, puits infini, courant de probabilité, interférences à ondes multiples (différence de marche), lecture et exploitation de graphes, applications numériques sans calculatrice.
+
+\textbf{Difficulté et gestion du temps.} Le rapport 2026 juge que « La longueur du sujet est bien adaptée » et qu'il s'agit d'« un sujet classique, ne présentant pas de difficulté majeure » (p.~19). Les trois parties sont presque indépendantes : on peut traiter III.A, III.B et III.D même si la partie II a résisté.
+
+Questions abordables à ne pas laisser passer : Q1, Q3, Q4, Q6, Q10, Q13, Q16, Q19. D'après le rapport 2026 (p.~76), les questions qui ont fait la différence sont :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Q7}, dont la démonstration de la planéité est jugée « assez discriminante » ;
+\item
+  \textbf{Q21}, « Question très mal traitée » (schéma, trigonométrie) ;
+\item
+  \textbf{Q23}, où l'intégration en sphériques est souvent omise ;
+\item
+  \textbf{Q22, Q24 et Q25}, peu abordées mais réussies par les meilleurs candidats : Q22 est « parfois couronnée de succès », et Q24 comme Q25 est jugée « Peu traitée mais brillamment réussie par certains candidats ».
+\end{itemize}
+
+Sans calculatrice, préparer les applications numériques avec \(hc\simeq1{,}2\) eV·µm et les puissances de dix, et garder deux chiffres significatifs. Le rapport rappelle « qu'une application numérique donnée sans unité vaut 0 » (p.~18).
+
+\hypertarget{partie-i-les-raies-duxe9mission-de-lhydroguxe8ne-atomique}{%
+\section{Partie I --- Les raies d'émission de l'hydrogène atomique}\label{partie-i-les-raies-duxe9mission-de-lhydroguxe8ne-atomique}}
+
+On transforme des longueurs d'onde mesurées en niveaux d'énergie. Outils : \(\epsilon=h\nu\), lecture d'une droite (pente, ordonnée à l'origine), monotonie d'une suite d'entiers.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Deux relations à raccorder : l'énergie emportée par le photon, et le lien entre énergie du photon, fréquence et longueur d'onde dans le vide.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le photon emporte \(\epsilon=E_i-E_f>0\). D'après la relation de Planck-Einstein, \(\epsilon=h\nu\), et dans le vide \(\nu=c/\lambda_0\). Donc
+
+\equationajustee{\boxed{\lambda_0=\frac{hc}{E_i-E_f}}}
+
+\begin{jury}
+
+Le rapport 2026 relève « Des erreurs inacceptables sur la relation fréquence-longueur d'onde » (p.~76). Écrire \(\nu=c/\lambda_0\) en toutes lettres, et vérifier l'homogénéité : \(hc\) est une énergie fois une longueur.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Partir de la loi (2), calculer \(1/\lambda_0\) pour la transition \(n_i=k+2\to n_f=2\) grâce à Q1, et l'écrire en fonction de \(X=1/(k+2)^2\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+« Compatible » ne se limite pas à « affine » : la loi prévoit aussi un rapport précis entre la pente et l'ordonnée à l'origine. Le vérifier sur la figure.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Avec (2), \(n_i=k+2\) et \(n_f=2\) :
+
+\equationajustee{\frac1{\lambda_0}=\frac{E_0}{hc}\left(\frac14-\frac1{(k+2)^2}\right).}
+
+Avec \(X=1/(k+2)^2\), c'est une loi affine :
+
+\equationajustee{\boxed{\frac1{\lambda_0}=b-\alpha X}}
+
+\equationajustee{\begin{aligned}
+b&=\frac{E_0}{4hc}\\
+\alpha&=\frac{E_0}{hc}=4b
+\end{aligned}}
+
+C'est une fonction affine décroissante de \(X\), comme la droite en pointillés. Contrôle quantitatif : l'ordonnée à l'origine vaut \(b\simeq2{,}7\ \mu\text{m}^{-1}\). La droite passe par le point \(k=1\), d'abscisse \(X\simeq0{,}111\) et d'ordonnée \(1/0{,}66\simeq1{,}5\ \mu\text{m}^{-1}\). D'où
+
+\equationajustee{\alpha\simeq\frac{2{,}7-1{,}5}{0{,}111}\ \mu\text{m}^{-1}\simeq11\ \mu\text{m}^{-1}\simeq4b.}
+
+Les cinq points sont alignés aux barres d'erreur près : \textbf{la figure est compatible avec (2)}.
+
+\begin{piege}
+
+Croire que le rapport pente/ordonnée teste le zéro des énergies. Une loi \(E_n=A-E_0/n^2\) donnerait exactement la même droite, car la constante \(A\) disparaît des différences d'énergie.
+
+Ce que la figure teste, c'est la dépendance en \(1/n^2\) et la valeur \(n_f=2\) (rapport \(n_f^2=4\)) ; le choix \(E_n\to0\) pour \(n\to\infty\) est une convention.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 (p.~76) : « Ne pas mélanger expressions littérales et valeurs numériques. » On établit d'abord la loi littérale \(1/\lambda_0=b-\alpha X\), puis seulement on lit les valeurs sur la figure.
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Relier l'ordonnée à l'origine (ou la pente) à \(E_0\) grâce à Q2, et utiliser la donnée \(hc\simeq1{,}2\) eV·µm en gardant \(1/\lambda_0\) en \(\mu\text{m}^{-1}\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+On lit \(b\simeq2{,}7\ \mu\text{m}^{-1}\), et \(E_0=4hc\,b\) :
+
+\equationajustee{E_0\simeq4\times1{,}2\times2{,}7\ \text{eV}}
+
+\equationajustee{\boxed{E_0\simeq13\ \text{eV}}}
+
+La pente donne le même résultat : \(hc\,\alpha\simeq1{,}2\times11\simeq13\) eV.
+
+\begin{methode}
+
+Sans calculatrice, choisir l'unité qui évite les conversions : avec \(1/\lambda_0\) en \(\mu\text{m}^{-1}\) et \(hc\) en eV·µm, l'énergie sort directement en électronvolts.
+
+\end{methode}
+
+\begin{piege}
+
+Oublier le facteur \(4\) conduit à \(E_0\simeq3{,}2\) eV, valeur trop faible pour une énergie de liaison atomique (de l'ordre de la dizaine d'eV).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 regrette que la valeur soit parfois donnée de mémoire, « sans aucun calcul » (p.~76). Connaître les \(13{,}6\) eV de l'hydrogène sert de contrôle, pas de réponse : la question demande de déduire \(E_0\) de la figure.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Refaire le calcul de Q2 avec un état final \(n_f\) quelconque, puis identifier.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Pour \(n_i>n_f\), la question 1 et la loi (2) donnent
+
+\equationajustee{\frac1{\lambda_0}=\frac{E_0}{hc}\left(\frac1{n_f^2}-\frac1{n_i^2}\right),}
+
+d'où, par identification avec (3),
+
+\equationajustee{\boxed{R_\infty=\frac{E_0}{hc}}}
+
+Numériquement \(R_\infty\simeq13/1{,}2\simeq11\ \mu\text{m}^{-1}\), donc
+
+\equationajustee{\boxed{\frac1{R_\infty}\simeq92\ \text{nm}}}
+
+Contrôle : \(\text{H}_\alpha\) (\(3\to2\)) donne \(\lambda_0=\frac{36}5\times92\simeq6{,}6\times10^2\) nm, la valeur tabulée.
+
+\begin{methode}
+
+Un contrôle sur une donnée de l'énoncé (ici une raie du tableau) coûte une ligne et sécurise toute la suite de la partie.
+
+\end{methode}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Pour chaque série, étudier comment varie \(\frac1{n_f^2}-\frac1{n_i^2}\) lorsque \(n_i\) (et éventuellement \(n_f\)) parcourt les valeurs permises, puis inverser l'inégalité.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(n_f=1\), la borne est atteinte pour la plus petite valeur de \(n_i\).
+
+Pour \(n_f\geqslant3\), majorer \(\frac1{n_f^2}-\frac1{n_i^2}\) par une quantité indépendante de \(n_i\) et de \(n_f\). Comparer enfin aux bornes du visible (environ \(400\)--\(800\) nm).
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\textbf{Cas \(n_f=1\).} Le minimum de \(1-1/n_i^2\) est atteint en \(n_i=2\) :
+
+\equationajustee{\frac1{\lambda_0}=R_\infty\left(1-\frac1{n_i^2}\right)\geqslant\frac34R_\infty,}
+
+donc
+
+\equationajustee{\boxed{\lambda_0\leqslant\lambda_{\max}=\frac4{3R_\infty}\simeq1{,}2\times10^2\ \text{nm}}}
+
+Ces raies sont dans l'\textbf{ultraviolet} (série de Lyman).
+
+\textbf{Cas \(n_f\geqslant3\).}
+
+\equationajustee{\begin{aligned}
+\frac1{\lambda_0}&<\frac{R_\infty}{n_f^2}\\
+&\leqslant\frac{R_\infty}9,
+\end{aligned}}
+
+donc
+
+\equationajustee{\boxed{\lambda_0>\lambda_{\min}=\frac9{R_\infty}\simeq8{,}3\times10^2\ \text{nm}}}
+
+La borne n'est pas atteinte. Ces raies sont dans l'\textbf{infrarouge}.
+
+\textbf{Raies visibles.} Seule la série \(n_f=2\) (Balmer) peut tomber dans le visible :
+
+\equationajustee{\frac4{R_\infty}<\lambda_0\leqslant\frac{36}{5R_\infty},}
+
+soit \(370\) nm \(<\lambda_0\leqslant660\) nm.
+
+Les raies visibles sont celles de Balmer avec \(n_i=3\) à \(7\), c'est-à-dire \textbf{les cinq raies du tableau, de \(\text{H}_\alpha\) à \(\text{H}_\epsilon\)}. Les suivantes, au-dessous de \(400\) nm, s'accumulent vers \(370\) nm dans le proche ultraviolet.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q05-niveaux-et-series.pdf}
+\caption*{Figure 1 --- Niveaux E\_n = −E\_0/n² à l'échelle et transitions vers
+n\_f = 1 (UV), 2 (visible) et 3 (IR)}
+\end{figure}
+
+\begin{piege}
+
+Majorer \(1/\lambda_0\) revient à minorer \(\lambda_0\) : un sens d'inégalité inversé transforme l'ultraviolet en infrarouge. Repère sûr : les courtes longueurs d'onde (moins de \(400\) nm) sont l'ultraviolet, les grandes (plus de \(800\) nm) l'infrarouge.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 (p.~76) : « Les valeurs numériques sont parfois étonnantes. Il y a des confusions entre ultra-violet et infra-rouge. » Le jury ajoute qu'« Il est inacceptable que le spectre électromagnétique, et en particulier les domaines ultra-violet et infra-rouge, soient mal connus » (p.~19).
+
+\end{jury}
+
+\hypertarget{partie-ii-le-moduxe8le-de-bohr-pour-latome-dhydroguxe8ne}{%
+\section{Partie II --- Le modèle de Bohr pour l'atome d'hydrogène}\label{partie-ii-le-moduxe8le-de-bohr-pour-latome-dhydroguxe8ne}}
+
+\hypertarget{ii.a-uxe9nergie-potentielle-effective}{%
+\subsection{II.A Énergie potentielle effective}\label{ii.a-uxe9nergie-potentielle-effective}}
+
+Mécanique du point dans un champ de force central conservatif : on ramène le mouvement à un problème radial à un degré de liberté, que l'on discute graphiquement.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Écrire la force de Coulomb entre \(+e\) et \(-e\), puis son travail élémentaire, et identifier \(\delta W=-dE_p\).
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+La force de Coulomb exercée par le noyau sur l'électron est
+
+\equationajustee{\vec F=-\frac{e^2}{4\pi\varepsilon_0r^2}\,\vec e_r.}
+
+Son travail élémentaire vaut
+
+\equationajustee{\delta W=-\frac{e^2}{4\pi\varepsilon_0r^2}\,dr,}
+
+et il s'identifie à \(-dE_p\). La condition \(E_p(\infty)=0\) fixe la constante d'intégration :
+
+\equationajustee{\boxed{E_p(r)=-\frac{e^2}{4\pi\varepsilon_0\,r}}}
+
+\begin{piege}
+
+Le signe : l'interaction est attractive, \(E_p\) est négative et croissante. Un \(E_p\) positif interdirait tout état lié. Autre erreur : une force en \(1/r\) (au lieu de \(1/r^2\)), qui donnerait une énergie potentielle en \(\ln r\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale « Trop de fautes de calcul (signe, primitive) ainsi que d'erreurs sur l'expression de la force de Coulomb » (p.~76). Écrire la force vectoriellement, avec \(\vec e_r\) orienté de \(O\) vers \(M\), avant d'intégrer.
+
+\end{jury}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Dériver \(\vec s=\vec r\wedge\vec p\) par rapport au temps dans le référentiel galiléen où \(O\) est fixe, et utiliser le principe fondamental de la dynamique.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la planéité, que vaut \(\vec r\cdot\vec s\) à chaque instant ? Penser au cas particulier \(\vec s=\vec 0\).
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Dans le référentiel galiléen où le noyau est fixe en \(O\), le principe fondamental de la dynamique donne \(d\vec p/dt=\vec F\), d'où
+
+\equationajustee{\frac{d\vec s}{dt}=\vec v\wedge m_e\vec v+\vec r\wedge\vec F.}
+
+Le premier terme est nul, et le second aussi car la force est centrale. \textbf{\(\vec s\) est constant.}
+
+Comme \(\vec r\cdot\vec s=0\) à tout instant, si \(\vec s\neq\vec0\), \(M\) reste dans le plan fixe passant par \(O\) et normal à \(\vec s\). \textbf{Le mouvement est plan, dans un plan contenant le noyau.}
+
+Si \(\vec s=\vec0\), le mouvement est rectiligne sur une droite passant par \(O\) (cas écarté ensuite).
+
+\begin{methode}
+
+Conservation du vecteur moment cinétique : vérifier explicitement les hypothèses (référentiel galiléen, point fixe, force centrale). La planéité exige que le \textbf{vecteur} soit constant, pas seulement sa norme.
+
+\end{methode}
+
+\begin{jury}
+
+Pour le rapport 2026, « La démonstration de la planéité du mouvement est assez discriminante » (p.~76). Le jury note aussi que « Des oublis du référentiel sont encore constatés en mécanique » (p.~19) : nommer le référentiel galiléen dès la première ligne.
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Écrire l'énergie mécanique en coordonnées polaires, puis éliminer \(\dot\theta\) à l'aide de la constante \(s\).
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+En polaires, \(v^2=\dot r^2+r^2\dot\theta^2\). De plus \(s=m_er^2|\dot\theta|\), donc
+
+\equationajustee{\frac12m_er^2\dot\theta^2=\frac{s^2}{2m_er^2}.}
+
+L'énergie mécanique se conserve (force conservative) et s'écrit \(E=\frac12m_e\dot r^2+U(r)\) avec
+
+\equationajustee{\boxed{U(r)=\frac{s^2}{2m_er^2}-\frac{e^2}{4\pi\varepsilon_0\,r}}}
+
+\begin{piege}
+
+Le rapport 2026 juge anormal d'écrire le carré de la vitesse sous la forme \((\dot r+r\dot\theta)^2\) au lieu de \(\dot r^2+r^2\dot\theta^2\) (p.~76). La base polaire est orthonormée : le carré de la norme est la somme des carrés des composantes.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Étudier les limites de \(U\) en \(0^+\) et en \(+\infty\), puis le signe de \(U'\). Le mouvement radial n'est possible que là où \(E-U(r)\geqslant0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Classer selon la position de \(E\) par rapport à deux valeurs remarquables de \(U\) : son minimum et sa limite à l'infini. Cela donne quatre cas, dont un cas limite.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour l'orbite circulaire, \(r\) est constant : \(r_c\) est la position du minimum de \(U\), et sur un cercle \(\vec r\perp\vec p\).
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+On note \(k_e=\dfrac{e^2}{4\pi\varepsilon_0}\). \(U\to+\infty\) en \(0^+\) et \(U\to0^-\) en \(+\infty\). La dérivée vaut
+
+\equationajustee{U'(r)=\frac1{r^3}\left(k_er-\frac{s^2}{m_e}\right).}
+
+\(U\) décroît jusqu'à \(r_c=s^2/(m_ek_e)\) puis croît. Elle forme un puits de minimum \(U_{\min}=-k_e/(2r_c)<0\) et s'annule en \(r_c/2\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q09-energie-potentielle-effective.pdf}
+\caption*{Figure 2 --- Énergie potentielle effective U(r) et les quatre niveaux
+d'énergie : cercle, ellipse, parabole, hyperbole}
+\end{figure}
+
+Comme \(\frac12m_e\dot r^2=E-U(r)\geqslant0\) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(E=U_{\min}\) : \(r=r_c\) constant, orbite \textbf{circulaire} uniforme.
+\item
+  \(U_{\min}<E<0\) : \(r\) oscille entre \(r_{\min}\) et \(r_{\max}\), racines de \(|E|r^2-k_er+\frac{s^2}{2m_e}=0\). État \textbf{lié}, \textbf{ellipse} de foyer \(O\).
+\item
+  \(E=0\) : seul rebroussement en \(r_{\min}=r_c/2\), l'électron repart à l'infini avec une vitesse tendant vers \(0\) : \textbf{parabole}.
+\item
+  \(E>0\) : un seul point de rebroussement, vitesse non nulle à l'infini : \textbf{hyperbole} (état de diffusion), avec
+  \equationajustee{r_{\min}=\frac{-k_e+\sqrt{k_e^2+2Es^2/m_e}}{2E}.}
+\end{enumerate}
+
+Orbites circulaires :
+
+\equationajustee{\boxed{r_c(s)=\frac{4\pi\varepsilon_0s^2}{m_ee^2}}}
+
+\equationajustee{\boxed{p_c(s)=\frac s{r_c}=\frac{m_ee^2}{4\pi\varepsilon_0s}}}
+
+\equationajustee{\boxed{E_c(s)=-\frac{m_ee^4}{32\pi^2\varepsilon_0^2s^2}}}
+
+On remarque que \(E_c=-p_c^2/(2m_e)=\frac12E_p(r_c)\).
+
+\begin{methode}
+
+Discussion graphique d'un potentiel effectif : tracer des droites horizontales \(E=\text{cte}\) ; les intersections avec la courbe sont les points de rebroussement, la portion sous la droite est la zone accessible.
+
+\end{methode}
+
+\begin{piege}
+
+Oublier le cas limite \(E=0\) (on ne trouve alors que trois types d'orbites) ou ne pas donner les rayons caractéristiques demandés. La nature conique des trajectoires est admise, pas démontrée.
+
+\end{piege}
+
+\hypertarget{ii.b-lhypothuxe8se-de-quantification-de-bohr}{%
+\subsection{II.B L'hypothèse de quantification de Bohr}\label{ii.b-lhypothuxe8se-de-quantification-de-bohr}}
+
+On impose une onde stationnaire sur l'orbite circulaire : le moment cinétique, puis le rayon et l'énergie, deviennent quantifiés.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Écrire la condition « périmètre \(=n\) longueurs d'onde » avec la relation de de Broglie, et reconnaître le moment cinétique d'une orbite circulaire.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pourquoi la longueur d'onde est-elle la même tout le long du cercle ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Sur une orbite circulaire, \(r_c\) et \(s\) sont constants, donc la vitesse est uniforme : \(p_c\), et avec elle \(\lambda=h/p_c\), est le même en tout point du cercle. La condition de Bohr s'écrit
+
+\equationajustee{2\pi r_c=n\frac h{p_c}.}
+
+Comme \(\vec r\perp\vec p\) sur un cercle, \(s=r_cp_c\), d'où
+
+\equationajustee{\boxed{s=\frac{nh}{2\pi}}}
+
+avec \(n\in\mathbb N^*\).
+
+\begin{jury}
+
+Rapport 2026 (p.~76) : « Une justification concise mais nécessaire est attendue. » Deux arguments suffisent : la longueur d'onde est uniforme sur l'orbite, et \(s=r_cp_c\) parce que \(\vec r\perp\vec p\).
+
+\end{jury}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Reporter la valeur quantifiée de \(s\) dans les trois expressions de Q9, en suivant soigneusement les facteurs \(\pi\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la comparaison, identifier \(E_c(n)\) à la forme (2) et faire l'application numérique de \(E_0\).
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\equationajustee{\boxed{r_c(n)=\frac{\varepsilon_0h^2}{\pi m_ee^2}n^2}}
+
+\equationajustee{\boxed{p_c(n)=\frac{m_ee^2}{2\varepsilon_0h\,n}}}
+
+\equationajustee{\boxed{E_c(n)=-\frac{m_ee^4}{8\varepsilon_0^2h^2}\cdot\frac1{n^2}}}
+
+On retrouve la forme (2) avec
+
+\equationajustee{\boxed{E_0=\frac{m_ee^4}{8\varepsilon_0^2h^2}}}
+
+Numériquement,
+
+\equationajustee{E_0\simeq\frac{9{,}1\times10^{-31}\times6{,}6\times10^{-76}}{8\times7{,}9\times10^{-23}\times4{,}4\times10^{-67}}\ \text{J}\simeq2{,}2\times10^{-18}\ \text{J},}
+
+soit \(E_0\simeq14\) eV (\(13{,}5\) eV avant arrondi). C'est en accord avec la lecture de Q3, compte tenu de la précision graphique et des données à deux chiffres.
+
+\begin{methode}
+
+Le contrôle numérique est le meilleur détecteur d'un facteur \(4\pi^2\) égaré : un écart d'un facteur \(10\) ou \(40\) avec Q3 signale une erreur d'algèbre.
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Comment \(r_c(n)\) varie-t-il avec \(n\) ? L'application numérique se fait avec un seul chiffre significatif.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour commenter, comparer à la taille connue des atomes et revenir au problème que le modèle planétaire classique ne savait pas résoudre.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(r_c\) croît comme \(n^2\), donc le rayon minimal est obtenu pour \(n=1\) :
+
+\equationajustee{\boxed{r_{c,\min}=r_c(1)=\frac{\varepsilon_0h^2}{\pi m_ee^2}}}
+
+\equationajustee{r_{c,\min}\simeq\frac{8{,}9\times10^{-12}\times4{,}4\times10^{-67}}{3{,}1\times9{,}1\times10^{-31}\times2{,}6\times10^{-38}}\ \text{m}}
+
+\equationajustee{\boxed{r_{c,\min}\simeq5\times10^{-11}\ \text{m}}}
+
+C'est le rayon de Bohr, de l'ordre du dixième de nanomètre : la taille des atomes est obtenue à partir des seules constantes fondamentales, la constante de Planck fixant l'échelle.
+
+Le rayon minimal non nul assure la stabilité de l'atome, que le modèle classique ne pouvait expliquer : un électron en orbite rayonnerait et s'effondrerait sur le noyau. Le modèle reste semi-classique (trajectoire conservée, quantification postulée).
+
+\begin{jury}
+
+Le rapport 2026 note des « Valeurs numériques parfois fantaisistes » (p.~76). Un rayon atomique doit sortir vers \(10^{-10}\) m : c'est le commentaire attendu, et le meilleur contrôle de l'application numérique.
+
+\end{jury}
+
+\hypertarget{partie-iii-ondes-de-matiuxe8re-en-physique-microscopique}{%
+\section{Partie III --- Ondes de matière en physique microscopique}\label{partie-iii-ondes-de-matiuxe8re-en-physique-microscopique}}
+
+\hypertarget{iii.a-uxe9tats-quantiques-stationnaires}{%
+\subsection{III.A États quantiques stationnaires}\label{iii.a-uxe9tats-quantiques-stationnaires}}
+
+Cours sur la fonction d'onde : interprétation probabiliste, séparation des variables, onde plane et relation de de Broglie.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+\(|\Psi|^2\) est une densité volumique de probabilité ; \(S\,dx\) est un volume. Que vaut la probabilité totale pour une particule confinée dans \(\mathscr D\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Injecter la forme \(\psi(x)e^{-i\omega t}\) dans (4) et simplifier par le facteur temporel, qui ne s'annule pas.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+L'intégrale est \textbf{la probabilité de trouver la particule dans \(\mathscr D\)}, égale à \(1\) (normalisation). Une probabilité étant sans dimension :
+
+\equationajustee{\boxed{[\Psi]=L^{-3/2}}}
+
+Avec \(\Psi=\psi e^{-i\omega t}\), on a \(i\hbar\partial_t\Psi=\hbar\omega\Psi\), et, après simplification par \(e^{-i\omega t}\),
+
+\equationajustee{\boxed{-\frac{\hbar^2}{2m}\frac{d^2\psi}{dx^2}+V(x)\psi=E\psi}}
+
+\equationajustee{\boxed{E=\hbar\omega}}
+
+\begin{piege}
+
+Écrire \([\Psi]=L^{-1/2}\) en raisonnant à une dimension : c'est le facteur \(S\) de l'intégrale qui impose une densité volumique.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 déplore « un nombre bien trop important de fautes de dimension » et une confusion entre dimension et unité, la dimension masse « M » étant parfois prise pour le mètre (p.~19). Une dimension s'écrit avec \(M\), \(L\), \(T\)\ldots{} comme le rappelle l'énoncé, pas en unités.
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Avec \(V_0\) constant, l'équation est linéaire à coefficients constants : discuter selon le signe de \(E-V_0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans le cas oscillant, lire la période spatiale, puis appliquer la relation de de Broglie à une seule onde progressive et comparer à l'expression classique de l'énergie cinétique.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+L'équation devient
+
+\equationajustee{\psi''+\frac{2m(E-V_0)}{\hbar^2}\psi=0.}
+
+Si \(E<V_0\), les solutions sont des exponentielles réelles (onde évanescente). Si \(E=V_0\), \(\psi\) est affine. Dans les deux cas, il n'y a pas de propagation.
+
+Si \(E>V_0\), avec \(k=\sqrt{2m(E-V_0)}/\hbar\) :
+
+\equationajustee{\boxed{\psi=Ae^{ikx}+Be^{-ikx}}}
+
+ce sont deux ondes progressives d'amplitude constante. \textbf{Condition : \(E>V_0\).} La longueur d'onde vaut
+
+\equationajustee{\boxed{\lambda=\frac{2\pi}k=\frac h{\sqrt{2m(E-V_0)}}}}
+
+Pour un seul sens de propagation, \(p=h/\lambda=\hbar k\), d'où
+
+\equationajustee{\boxed{K=E-V_0=\frac{p^2}{2m}}}
+
+C'est \textbf{la même relation qu'en mécanique classique non relativiste} ; seul le sens de \(p\) change (relié à la longueur d'onde, plus à une trajectoire).
+
+\begin{jury}
+
+Le rapport 2026 regrette que certaines questions proches du cours soient traitées « en mode pilote automatique, avec des blocs de cours récités sans aucune adaptation à la question posée », et vise « notamment » les solutions stationnaires de l'équation de Schrödinger (p.~19). Ici, la question demande une condition, une longueur d'onde, une impulsion et une comparaison : répondre à chacune, rien de plus.
+
+\end{jury}
+
+\hypertarget{iii.b-ondes-stationnaires-et-uxe9tats-liuxe9s}{%
+\subsection{III.B Ondes stationnaires et états liés}\label{iii.b-ondes-stationnaires-et-uxe9tats-liuxe9s}}
+
+Puits infini : la quantification résulte des conditions aux limites. Application à l'échelle nucléaire.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Écrire chacune des deux conditions sous la forme « longueur disponible \(=\) nombre entier de \ldots{} ».
+
+\end{indication}
+
+\begin{indication}{2}
+
+Distance entre deux nœuds consécutifs d'une onde stationnaire ? Le cercle de Bohr impose-t-il des nœuds ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+Non, elles ne sont pas identiques, bien qu'elles relèvent du même principe d'onde stationnaire.
+
+\begin{itemize}
+\tightlist
+\item
+  Bohr : l'onde se referme sur le cercle et doit être en phase avec elle-même après un tour, \(2\pi r_c=n\lambda\). C'est un \textbf{nombre entier de longueurs d'onde}, sans nœud imposé.
+\item
+  Figure 4 : \(\Psi\) s'annule aux deux bords, et les \(n+1\) nœuds sont espacés de \(\lambda/2\), d'où \(\ell=n\lambda/2\). C'est un \textbf{nombre entier de demi-longueurs d'onde}.
+\end{itemize}
+
+Le cercle déroulé n'admettrait qu'un nombre pair de demi-longueurs d'onde.
+
+\begin{piege}
+
+Compter les nœuds au lieu des intervalles conduit à \(\ell=(n+1)\lambda/2\), ce qui fausse Q16.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 (p.~76) : « Un raisonnement est attendu. » Un « oui » ou un « non » sec ne rapporte rien : écrire les deux conditions et les comparer.
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Utiliser Q14 avec \(V_0=0\) et imposer \(\psi(0)=0\) puis \(\psi(\ell)=0\). Commencer par exclure les énergies négatives ou nulles.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écarter la solution identiquement nulle ; exprimer le résultat avec \(h\) et non \(\hbar\).
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Pour \(E\leqslant0\), les solutions (exponentielles réelles, fonction affine) ne s'annulent aux deux extrémités que si \(\psi\) est identiquement nulle. Donc \(E>0\) et, avec \(k=\sqrt{2mE}/\hbar\),
+
+\equationajustee{\psi=C\sin kx+D\cos kx.}
+
+La condition \(\psi(0)=0\) impose \(D=0\). La condition \(\psi(\ell)=0\) avec \(C\neq0\) impose \(k\ell=n\pi\), \(n\in\mathbb N^*\). Ainsi
+
+\equationajustee{\begin{aligned}
+E_n&=\frac{\hbar^2\pi^2n^2}{2m\ell^2}\\
+&=\frac{n^2h^2}{8m\ell^2}.
+\end{aligned}}
+
+\equationajustee{\boxed{E_n=\frac{n^2h^2}{8m\ell^2}}}
+
+\begin{methode}
+
+Contrôle express : \(\ell=n\lambda/2\), \(p=h/\lambda\) et \(E=p^2/(2m)\) redonnent le même résultat.
+
+\end{methode}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Écrire \(E_2-E_1\) à l'aide de Q16 avec la masse du neutron, puis isoler \(\ell\). Convertir les MeV en joules.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer la longueur obtenue aux tailles connues (atome, noyau). Quelles interactions peuvent agir sur une particule neutre ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+L'écart vaut
+
+\equationajustee{\Delta E=\frac{3h^2}{8m_n\ell^2},}
+
+donc
+
+\equationajustee{\ell=h\sqrt{\frac3{8m_n\Delta E}},}
+
+avec \(\Delta E=4{,}8\times10^{-12}\) J. Numériquement :
+
+\equationajustee{\begin{aligned}
+\ell&=6{,}6\times10^{-34}\sqrt{\frac3{6{,}5\times10^{-38}}}\ \text{m}\\
+&\simeq6{,}6\times10^{-34}\times6{,}8\times10^{18}\ \text{m}
+\end{aligned}}
+
+\equationajustee{\boxed{\ell\simeq4{,}5\times10^{-15}\ \text{m}}}
+
+Quelques femtomètres : c'est la taille d'un \textbf{noyau}, environ \(10^4\) fois plus petit que l'atome. La situation est celle d'un \textbf{nucléon confiné dans un noyau}, avec des écarts d'énergie de l'ordre de la dizaine de MeV, typiques de la physique nucléaire.
+
+Le neutron est neutre (pas d'interaction électromagnétique) et la gravitation est négligeable : c'est l'\textbf{interaction forte}, attractive et de portée de l'ordre du femtomètre, qui le confine. Le puits infini à une dimension n'est qu'un modèle d'ordre de grandeur.
+
+\begin{piege}
+
+Utiliser \(m_e\) au lieu de \(m_n\) donnerait environ \(2\times10^{-13}\) m, sans signification ici.
+
+\end{piege}
+
+\hypertarget{iii.c-ondes-progressives-et-diffraction}{%
+\subsection{III.C Ondes progressives et diffraction}\label{iii.c-ondes-progressives-et-diffraction}}
+
+L'expérience de Davisson et Germer : préparer un faisceau d'électrons d'impulsion connue, le décrire par une onde plane, puis exploiter les interférences sur les plans atomiques.
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Que produit une charge accumulée sur le cristal dans la région où les électrons sont censés voler librement ? Quelle grandeur, essentielle pour l'expérience, n'est alors plus maîtrisée ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le choix de la connexion, raisonner sur l'énergie cinétique des électrons à leur arrivée sur le cristal selon le potentiel auquel celui-ci est porté, en partant de K.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Le cristal isolé se charge négativement et crée un champ qui freine et dévie les électrons avant l'impact, de plus en plus au cours du temps. Leur impulsion, donc leur longueur d'onde, n'est plus fixée par \(V_A\), et le faisceau finit par être repoussé. \textbf{On perd le contrôle de \(\lambda\).}
+
+Il faut \textbf{relier le cristal aux électrodes A et B}. Un électron parti de K (potentiel nul, vitesse négligeable) a, en un point de potentiel \(V\), l'énergie cinétique \(eV\).
+
+\begin{itemize}
+\tightlist
+\item
+  Cristal au potentiel \(V_A\) : la région B--cristal est équipotentielle, les électrons y volent librement avec l'énergie \(eV_A\).
+\item
+  Cristal à la masse : leur énergie cinétique serait nulle au niveau du cristal. Ils seraient freinés entre B et le cristal et rebrousseraient chemin.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q18-energie-potentielle-electron.pdf}
+\caption*{Figure 3 --- Énergie potentielle d'un électron de K au cristal, selon
+que le cristal est relié aux grilles A et B ou à la masse}
+\end{figure}
+
+\begin{piege}
+
+Répondre « à la masse, pour évacuer les charges » : le cristal doit certes être relié à un conducteur pour évacuer les électrons, mais au potentiel des grilles, pour préserver l'équipotentialité de la zone de vol.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 décrit des « Réponses qui donnent souvent une impression de ``pile ou face'' » (p.~76). Le choix de la connexion vaut surtout par sa justification énergétique : comparer l'énergie cinétique à l'arrivée dans les deux cas.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Théorème de l'énergie cinétique entre K et A, pour une charge \(-e\). Préciser ensuite l'origine des énergies potentielles retenue pour \(E\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Le théorème de l'énergie cinétique entre K et A, dans le référentiel du laboratoire, donne
+
+\equationajustee{\frac12m_ev^2=(-e)(V_K-V_A)=eV_A,}
+
+d'où
+
+\equationajustee{\boxed{p=\sqrt{2m_eeV_A}}}
+
+Dans la région de vol libre, prise comme origine des énergies potentielles (cohérente avec l'onde plane \(\Psi_{\text{inc}}\)) :
+
+\equationajustee{\boxed{E=\frac{p^2}{2m_e}=eV_A}}
+
+\begin{piege}
+
+Le signe du travail : \(W=q(V_{\text{\text{départ}}}-V_{\text{\text{arrivée}}})\) avec \(q=-e\). Une énergie cinétique négative signale une erreur de signe.
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Utiliser la dimension de \(\Psi\) trouvée en Q13. Reconnaître dans \(\vec J\) la structure « densité \(\times\) vitesse ».
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer la définition de \(\Phi_0\) donnée par l'énoncé à la norme de \(\vec J\) pour l'onde incidente. Pour la dernière question : une phase constante est-elle observable ?
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\equationajustee{\begin{aligned}
+[\vec J]&=L^{-3}\cdot L\,T^{-1}\\
+&=L^{-2}T^{-1}
+\end{aligned}}
+
+\equationajustee{\boxed{[\vec J]=L^{-2}T^{-1}}}
+
+\(\vec J=|\Psi|^2\vec v\) est la \textbf{densité de courant de probabilité} : son flux à travers une surface est le nombre de particules la traversant par unité de temps. Pour \(\Psi_{\text{inc}}\), \(J=\psi_0^2p/m_e\), qui doit valoir \(\Phi_0\) :
+
+\equationajustee{\boxed{\psi_0=\sqrt{\frac{m_e\Phi_0}p}}}
+
+\textbf{Aucune perte de généralité} : une amplitude complexe ne diffère que par un facteur de phase global constant, sans effet sur \(|\Psi|^2\), \(\vec J\) ou toute observable.
+
+Remarque : l'onde \(\Psi_{\text{inc}}\) de l'énoncé est la conjuguée de la forme en \(e^{-i\omega t}\) de III.A. Elle se propage toujours vers les \(x\) croissants et \(|\Psi_{\text{inc}}|^2\) n'en dépend pas : les résultats sont inchangés.
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Sur la figure 6, repérer laquelle des droites est le plan réticulaire et laquelle est sa normale : regarder le long de quelle droite la distance \(a\) est mesurée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Exprimer la différence de marche entre deux rayons réfléchis en deux points d'une même normale séparés de \(a\), en projetant \(\vec{IJ}\) sur les directions incidente et diffractée.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Condition d'interférences constructives pour un grand nombre de plans équidistants : une condition entre deux plans consécutifs suffit.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+La distance \(a\) est mesurée le long de la droite en pointillés, perpendiculaire aux alignements d'atomes : les pointillés sont la \textbf{normale} aux plans, bissectrice de l'angle \(\theta\) (loi de la réflexion). L'angle d'incidence par rapport à la normale est \(\theta/2\).
+
+Soit \(\vec{IJ}=a\vec n\), avec \(\vec n\) la normale orientée vers l'intérieur du cristal, et \(\vec u\), \(\vec u\,'\) les directions incidente et diffractée :
+
+\equationajustee{\vec n\cdot\vec u=\cos\frac\theta2}
+
+\equationajustee{\vec n\cdot\vec u\,'=-\cos\frac\theta2}
+
+Les surfaces d'onde passant par \(I\) étant orthogonales aux rayons, le rayon réfléchi en \(J\) parcourt en plus
+
+\equationajustee{\delta=\vec{IJ}\cdot(\vec u-\vec u\,'),}
+
+\equationajustee{\boxed{\delta=2a\cos\frac\theta2}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q21-difference-de-marche.pdf}
+\caption*{Figure 4 --- Différence de marche entre deux plans réticulaires
+consécutifs : H et H' sont sur les fronts d'onde passant par I, et HJ +
+JH' = 2a cos(θ/2)}
+\end{figure}
+
+L'intensité est maximale lorsque deux plans consécutifs sont en phase :
+
+\equationajustee{\boxed{2a\cos\frac\theta2=q\lambda,\qquad q\in\mathbb N^*}}
+
+\begin{piege}
+
+Appliquer machinalement la formule de Bragg \(2d\sin\alpha=q\lambda\) avec \(\alpha=\theta/2\) : dans cette formule \(\alpha\) est l'angle \textbf{rasant} (entre le rayon et le plan), qui vaut ici \(90^\circ-\theta/2\). Le sinus conduirait en Q22 à \(a\simeq4\times10^{-10}\) m, supérieur au paramètre de maille du nickel.
+
+\end{piege}
+
+\begin{piege}
+
+Citer le théorème de Malus sans dire à quoi il sert. Il ne sert ici qu'à une chose : placer les surfaces d'onde perpendiculairement aux rayons, pour savoir entre quels points comparer les chemins (\(H\), \(J\), \(H'\) sur la figure 4).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 (p.~76) : « Question très mal traitée. Schémas souvent faux et trop petits pour être exploités correctement. Des erreurs inadmissibles de trigonométrie et de géométrie de base. Evocation quasi-systématique mais incantatoire et sans contexte du théorème de Malus. » Faire un schéma grand, y reporter les angles \(\theta/2\), et justifier chaque projection.
+
+\end{jury}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Combiner Q19 et Q21 : comment l'ordre \(q\) dépend-il de \(V\) à angle fixé ? Qu'en déduire sur la répartition des maxima selon l'axe choisi ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux maxima consécutifs correspondent à des ordres consécutifs : mesurer l'écart moyen entre maxima plutôt que leurs positions absolues.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Avec \(\lambda=h/\sqrt{2m_eeV}\), la condition de Q21 donne
+
+\equationajustee{q=\frac{2a\cos(\theta/2)\sqrt{2m_ee}}h\sqrt V.}
+
+\textbf{\(q\) est proportionnel à \(\sqrt V\) : les maxima sont équidistants en \(\sqrt V\).}
+
+Les maxima se lisent aux abscisses suivantes (en \(\text{V}^{1/2}\)) :
+
+\equationajustee{\sqrt V\simeq8{,}0\ ;\ 11{,}4\ ;\ 14{,}7\ ;\ 18{,}2\ ;\ 21{,}2\ ;\ 24{,}3.}
+
+D'où \(\Delta\sqrt V\simeq16{,}3/5\simeq3{,}3\ \text{V}^{1/2}\) pour \(\Delta q=1\), et
+
+\equationajustee{a=\frac h{2\cos(\theta/2)\sqrt{2m_ee}\,\Delta\sqrt V}}
+
+\equationajustee{a\simeq\frac{6{,}6\times10^{-34}}{2\times0{,}91\times5{,}4\times10^{-25}\times3{,}3}\ \text{m}}
+
+\equationajustee{\boxed{a\simeq2\times10^{-10}\ \text{m}}}
+
+C'est l'ordre de grandeur des distances interatomiques dans un métal. Il est comparable à la longueur d'onde des électrons de quelques dizaines d'eV (\(\simeq1{,}5\times10^{-10}\) m à \(64\) V) : c'est la condition d'observation de la diffraction, et une confirmation quantitative de la relation de de Broglie.
+
+Les positions absolues ne sont pas des multiples entiers de \(\Delta\sqrt V\) (\(8{,}0/3{,}3\simeq2{,}5\)) : le modèle simple néglige la modification de la longueur d'onde dans le cristal, d'où l'intérêt de travailler sur l'écart.
+
+\begin{methode}
+
+Exploiter un document : choisir une variable qui linéarise la loi (ici \(\sqrt V\)), puis mesurer une différence (pente, écart moyen) plutôt qu'une position absolue, plus sensible aux effets parasites.
+
+\end{methode}
+
+\hypertarget{iii.d-retour-sur-latome-dhydroguxe8ne}{%
+\subsection{III.D Retour sur l'atome d'hydrogène}\label{iii.d-retour-sur-latome-dhydroguxe8ne}}
+
+L'équation de Schrödinger en symétrie sphérique redonne, sans postulat ad hoc, les résultats de Bohr pour l'état fondamental.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Intégrer \(|\Psi|^2\) sur la coquille comprise entre \(r\) et \(r+dr\) : écrire le volume élémentaire en sphériques, puis utiliser l'intégrale angulaire donnée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Normaliser à l'aide de \(\int_0^\infty x^2e^{-x}dx\), puis étudier le signe de \(\rho'\) pour situer le maximum.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+En sphériques, \(d\tau=r^2\sin\theta\,dr\,d\theta\,d\varphi\), et \(|\Psi|^2=\psi_0^2e^{-2r/R}\) ne dépend que de \(r\). L'intégrale angulaire valant \(4\pi\),
+
+\equationajustee{d\mathbb P=4\pi\psi_0^2r^2e^{-2r/R}\,dr.}
+
+Donc \(\rho(r)=4\pi\psi_0^2r^2e^{-2r/R}\). La normalisation, avec \(x=2r/R\), donne \(4\pi\psi_0^2R^3/4=1\), d'où
+
+\equationajustee{\boxed{\rho(r)=\frac4{R^3}r^2e^{-2r/R}}}
+
+On a \(\rho(0)=0\) et \(\rho\to0\) à l'infini. La dérivée vaut
+
+\equationajustee{\rho'(r)=\frac{8r}{R^3}e^{-2r/R}\left(1-\frac rR\right).}
+
+Le maximum est en \(r=R\), de valeur \(4e^{-2}/R\simeq0{,}54/R\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-densite-radiale.pdf}
+\caption*{Figure 5 --- Densité radiale de probabilité ρ(r), maximale en r = R}
+\end{figure}
+
+\textbf{\(R\) est la distance électron--noyau la plus probable.}
+
+\begin{piege}
+
+Confondre la densité radiale \(\rho\) avec la densité volumique \(|f|^2\), maximale en \(r=0\) : c'est le facteur \(r^2\) (surface de la coquille) qui crée le maximum en \(R\).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 (p.~76) : « L'intégration sur le volume élémentaire en sphérique est fréquemment omise ou mal réalisée. » Le jury relève aussi une interprétation de \(R\) souvent donnée de façon arbitraire, sans avoir obtenu \(\rho(r)\). L'interprétation se déduit de l'étude de \(\rho\), pas l'inverse.
+
+\end{jury}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Écrire l'équation de Schrödinger stationnaire à trois dimensions avec le potentiel coulombien de Q6, et calculer le laplacien de \(f\) (seule la partie radiale intervient).
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'équation obtenue doit être vraie pour tout \(r>0\) : séparer les termes constants et les termes en \(1/r\).
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+Le laplacien se réduit à sa partie radiale :
+
+\equationajustee{\Delta f=\frac1{r^2}\frac{d}{dr}\left(r^2f'\right)}
+
+\equationajustee{\Delta f=\left(\frac1{R^2}-\frac2{Rr}\right)f}
+
+On reporte dans \(-\dfrac{\hbar^2}{2m_e}\Delta f-\dfrac{e^2}{4\pi\varepsilon_0r}f=Ef\) et on divise par \(f\). Pour tout \(r>0\) :
+
+\equationajustee{\left(-\frac{\hbar^2}{2m_eR^2}-E\right)+\left(\frac{\hbar^2}{m_eR}-\frac{e^2}{4\pi\varepsilon_0}\right)\frac1r=0.}
+
+Les deux coefficients sont nuls (faire \(r\to\infty\), puis multiplier par \(r\) et faire \(r\to0\)) :
+
+\equationajustee{\boxed{R=\frac{\varepsilon_0h^2}{\pi m_ee^2}}}
+
+\equationajustee{\boxed{E=-\frac{\hbar^2}{2m_eR^2}=-\frac{m_ee^4}{8\varepsilon_0^2h^2}}}
+
+Ce sont le rayon \(r_c(1)\simeq5\times10^{-11}\) m et l'énergie \(-E_0\) du niveau fondamental de Bohr. Mais \(R\) est maintenant la distance la plus probable d'un électron délocalisé et non le rayon d'une trajectoire. Et la quantification découle de l'équation d'onde au lieu d'être postulée.
+
+\begin{methode}
+
+Identification « pour tout \(r\) » : une relation \(A+B/r=0\) valable sur un intervalle impose \(A=B=0\). C'est cette étape qui fixe à la fois \(R\) et \(E\).
+
+\end{methode}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+La moyenne de \(V(r)\) se calcule avec la densité radiale de Q23 ; l'intégrale \(\int_0^\infty xe^{-x}dx\) est donnée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'énergie totale est la somme des moyennes des énergies cinétique et potentielle. Pour commenter, comparer le rapport obtenu à celui de l'orbite circulaire classique (Q9).
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\equationajustee{\begin{aligned}
+\langle V\rangle&=-\frac{e^2}{4\pi\varepsilon_0}\cdot\frac4{R^3}\int_0^\infty re^{-2r/R}dr\\
+&=-\frac{e^2}{4\pi\varepsilon_0}\cdot\frac4{R^3}\cdot\frac{R^2}4
+\end{aligned}}
+
+\equationajustee{\boxed{\langle V\rangle=-\frac{e^2}{4\pi\varepsilon_0R}}}
+
+\equationajustee{\begin{aligned}
+\langle V\rangle&=-\frac{m_ee^4}{4\varepsilon_0^2h^2}\\
+&=-2E_0\simeq-27\ \text{eV}
+\end{aligned}}
+
+Avec \(E=-E_0\) (Q24) :
+
+\equationajustee{\begin{aligned}
+\langle K\rangle&=E-\langle V\rangle\\
+&=-E=E_0
+\end{aligned}}
+
+\equationajustee{\boxed{\langle K\rangle=E_0\simeq14\ \text{eV}}}
+
+\textbf{Commentaire.} \(\langle K\rangle>0\), \(\langle V\rangle<0\) et \(E<0\) : état lié. La relation \(2\langle K\rangle+\langle V\rangle=0\) est celle de l'orbite circulaire classique (\(E_c=\frac12E_p\), Q9), caractéristique des potentiels en \(1/r\) (théorème du viriel). Modèle ondulatoire et modèle de Bohr s'accordent aussi sur la répartition de l'énergie.
+
+\(E_0\) est l'énergie d'ionisation depuis l'état fondamental. Enfin \(\sqrt{\langle v^2\rangle}=\sqrt{2E_0/m_e}\simeq2\times10^6\) m/s, très inférieure à \(c\) : le traitement non relativiste est justifié.
+
+\begin{piege}
+
+Moyenner \(V\) avec la densité volumique \(|f|^2\) sans le facteur \(4\pi r^2\), ou oublier la normalisation : le résultat n'a alors plus la dimension d'une énergie.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Passer d'une mesure à une loi : linéariser (ici \(1/\lambda_0\) en fonction de \(1/(k+2)^2\), puis intensité en fonction de \(\sqrt V\)), lire pente et ordonnée, contrôler sur une donnée.
+\item
+  Mouvement à force centrale : conservation du moment cinétique, planéité, énergie potentielle effective, discussion graphique selon le niveau d'énergie.
+\item
+  Quantification par onde stationnaire : nombre entier de longueurs d'onde sur une boucle, de demi-longueurs d'onde entre deux nœuds.
+\item
+  Équation de Schrödinger stationnaire : séparation des variables, discussion du signe de \(E-V\), conditions aux limites, identification terme à terme.
+\item
+  Interférences à ondes multiples : différence de marche par projection sur un schéma soigné, condition d'accord de phase entre éléments consécutifs.
+\end{itemize}
+
+\textbf{Ce que le rapport 2026 retient.} Les points perdus l'ont été sur des bases : relation \(\nu=c/\lambda_0\) (Q1), domaines UV et IR (Q5), force de Coulomb et primitives (Q6), vitesse en polaires (Q8), géométrie et trigonométrie du schéma de diffraction (Q21), élément de volume sphérique (Q23). La planéité (Q7) et Q21 ont départagé les copies ; Q22, Q24 et Q25, peu abordées, ont été réussies par les meilleurs.
+
+\textbf{Prérequis à revoir.} Force de Coulomb et énergie potentielle ; théorème du moment cinétique ; théorème de l'énergie cinétique pour une charge dans un potentiel ; densité de probabilité et normalisation ; laplacien et élément de volume en coordonnées sphériques ; ordres de grandeur (taille d'un atome \(\sim10^{-10}\) m, d'un noyau \(\sim10^{-15}\) m, énergies atomiques en eV, nucléaires en MeV) ; bornes du spectre visible.
+
+\textbf{Questions classiques transposables.} Séries spectrales de l'hydrogène (Lyman, Balmer, Paschen) ; rayon de Bohr et énergie d'ionisation ; puits infini et énergie de confinement ; diffraction d'électrons et relation de de Broglie ; courant de probabilité d'une onde plane ; état fondamental de l'hydrogène et théorème du viriel.
+
+\end{document}

@@ -1,0 +1,38 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-b_2026",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles B",
+    "annee": 2026
+  },
+  "questions": 56,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q6-q10-trainee-vue-de-dessus.svg",
+      "question": "Q6",
+      "legende": "Vue de dessus du double-bras pour Ω > 0 : vitesses (bleu) et traînées de l'air (vermillon) de sens opposés ; des deux côtés, le moment en A est résistant (C_aero < 0)"
+    },
+    {
+      "fichier": "figures/q12-q13-montee-en-vitesse.svg",
+      "question": "Q13",
+      "legende": "Montée en vitesse Ω(t) = α tanh(βt) pour Cm = 475 N·m : pente initiale B, asymptote Ω∞ = 33,1 rad/s au-dessus de Ωmax = 31,6 rad/s, 95 % de Ω∞ atteints à 49,6 s"
+    },
+    {
+      "fichier": "figures/q21-q22-montages-o-et-x.svg",
+      "question": "Q21",
+      "legende": "Lignes de pression et précharge des roulements à contact oblique : montage en O (a), montage en X (b) et montage retenu en O avec bâti, cale et charge Pm (c)"
+    },
+    {
+      "fichier": "figures/q32-effort-normal-bras.svg",
+      "question": "Q32",
+      "legende": "Effort normal dans le bras (2+) : N(x) = F + a(L² − x²)/2 décroît de −XA à l'encastrement à F en bout de bras (tracé qualitatif)"
+    },
+    {
+      "fichier": "figures/q43-q51-masse-de-correction.svg",
+      "question": "Q49",
+      "legende": "Actions en bout de bras pour l'A.N. de Q51 (zc = 0,1 m, ze = 0, zm ≈ −72 mm) et correspondance des bases : X = x2, Y = z, Z = −y2"
+    }
+  ]
+}

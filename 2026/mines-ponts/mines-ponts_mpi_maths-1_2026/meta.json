@@ -1,0 +1,33 @@
+{
+  "slug": "mines-ponts_mpi_maths-1_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MPI",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 18,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q4-fonction-plateau.svg",
+      "question": "Q4",
+      "legende": "la fonction plateau ψ_c,d, nulle hors de l'intervalle ouvert d'extrémités c et d, posée sur un intervalle où f > 0 (allure de f en tirets)"
+    },
+    {
+      "fichier": "figures/q6-variation-admissible.svg",
+      "question": "Q6",
+      "legende": "perturbations y_ε = z_0 + εη de l'extrémale z_0, à extrémités fixes ; en bas, la direction η, nulle en x_A et x_B"
+    },
+    {
+      "fichier": "figures/q15-cycloide.svg",
+      "question": "Q15",
+      "legende": "cycloïde décrite par un point M d'une roue de rayon 1 ; y_0 est une portion, de A à B, de la branche descendante, où θ est compris entre π et 2π"
+    },
+    {
+      "fichier": "figures/q18-catenoide.svg",
+      "question": "Q18",
+      "legende": "(a) les deux caténoïdes s'appuyant sur les cercles x = 0 et x = 1, col de rayon 1/c ; (b) leurs constantes c = 2u viennent des deux racines de ch u = 2u"
+    }
+  ]
+}

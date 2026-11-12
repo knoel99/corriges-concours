@@ -1,0 +1,2858 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto BCPST — SVT (épreuve sur support de documents) 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Agro-Véto BCPST}
+\fancyhead[R]{\small SVT 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Agro-Véto BCPST — SVT (épreuve sur support de documents) 2026\par}\medskip
+  {\large Agro-Véto · BCPST · SVT · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Nature et contraintes de l'épreuve.} SVT, épreuve sur support de documents, \textbf{3 h 30}, en deux parties strictement indépendantes : \textbf{géologie} (7 pages, 1 h 45 indicatives) et \textbf{biologie} (9 pages, 1 h 45 indicatives). Calculatrice, tables, abaques et tout instrument électronique sont \textbf{interdits} : toutes les exploitations chiffrées sont des lectures graphiques et des calculs de tête ou à la main. Une \textbf{annexe A3}, commune aux deux parties, est à rendre avec la copie : sept questions demandent d'y porter une légende, un point ou une construction (géologie 1.a, 2.b, 6.e, 8.b, 9.b ; biologie 9a, 10c).
+
+Trois consignes transversales, répétées par l'énoncé, valent autant que les connaissances : s'appuyer \textbf{essentiellement sur l'analyse des documents}, ne pas dérouler de long développement de cours indépendant des questions, et \textbf{exploiter les documents sans les paraphraser}. En biologie, l'énoncé précise en outre qu'aucune introduction ni conclusion n'est attendue, qu'il faut indiquer clairement les numéros des questions et des documents, et respecter les limites de longueur (5, 10 et 4 lignes pour les questions 3a, 3c et 4b ; 10 lignes pour la question 6.b de géologie).
+
+\textbf{Découpage.}
+
+\emph{Géologie --- « L'olivine dans tous ses états » (41 sous-questions).}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Thème 1 (Q1 à Q5)} : l'olivine comme minéral et comme sonde planétaire. On part de l'échantillon macroscopique (basalte et enclave de péridotite), on passe à la cristallochimie (nésosilicate, solution solide Mg--Fe), puis à la sismologie terrestre (zone de transition, discontinuités des 410, 520 et 660 km), à l'expérimentation haute pression (cellule à enclume de diamant, polymorphes α, β, γ), et enfin à Mars.
+\item
+  \textbf{Thème 2 (Q6 à Q8)} : l'olivine comme minéral magmatique. Fusion partielle du manteau (diagramme ternaire olivine -- clinopyroxène -- grenat, eutectique, règle des leviers), puis cristallisation (diagramme binaire forstérite -- fayalite à solution solide totale, zonation des cristaux).
+\item
+  \textbf{Thème 3 (Q9 à Q11)} : l'olivine comme minéral instable en surface. Hydrolyse consommatrice de CO₂, diagramme de Goldschmidt, précipitation des carbonates, puis discussion argumentée de deux projets de géo-ingénierie (plages d'olivine, épandage agricole) et critique d'un dispositif expérimental.
+\end{itemize}
+
+\emph{Biologie --- « }Wolbachia* » (30 sous-questions).*
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Thème 1 (Q1 à Q4)} : la bactérie symbiotique. Identification en microscopie électronique, apport de vitamine B7 à la punaise de lit, protection du moustique contre la dengue, application à la lutte antivectorielle en Indonésie.
+\item
+  \textbf{Thème 2 (Q5 à Q8)} : la bactérie parasite. Incompatibilité cytoplasmique, puis décortication moléculaire du couple CidA/CidB (gel d'électrophorèse, test de survie de levures, immunomarquages).
+\item
+  \textbf{Thème 3 (Q9 à Q13)} : la bactérie transmise. Transmission verticale maternelle, phylogénie des fourmis, endocytose, vection par une guêpe parasitoïde, et synthèse sous forme de carte mentale.
+\end{itemize}
+
+\textbf{Notions du programme mobilisées.} Géologie : minéraux et roches magmatiques, textures, structure interne du globe et ondes sismiques, fusion partielle et contextes géodynamiques, diagrammes de phases binaires et ternaires, altération chimique, sols, cycle du carbone et climat, ressources géologiques. Biologie : techniques d'étude (MET, immunofluorescence, PCR et RT-PCR, Western blot, électrophorèse), cellule procaryote, symbiose et parasitisme, immunité innée des Arthropodes, reproduction sexuée et gamétogenèse, génétique et sélection naturelle, phylogénie et homoplasie, endocytose.
+
+\textbf{Difficulté et longueur.} Le sujet n'est pas difficile conceptuellement, mais il est \textbf{long} : 71 sous-questions en 3 h 30, soit environ trois minutes par question. Les questions les plus coûteuses sont, en géologie, Q6 (six sous-questions dont deux constructions et un développement de 10 lignes) et Q8.d, et, en biologie, Q3c, Q8c--d, Q11a et Q13. Le reste se traite en quelques lignes.
+
+\textbf{Questions abordables à ne pas laisser passer.} 1.b, 1.c, 2.a, 3.a, 4.e, 7, 8.a, 9.c, 10.d, 11.a en géologie ; 1a, 1b, 1c, 3a, 5, 7a, 12a en biologie. Ce sont des questions de cours ou de lecture immédiate, qui rapportent autant que les autres. Le rapport 2026 juge bien réussies, dans l'ensemble, 2.b, 4.b, 4.c, 4.e, 6.d, 10.d et 11.a en géologie, et le premier volet des questions 2 et 4 ainsi que la question 9 en biologie.
+
+\textbf{Ce que dit le rapport 2026.} La distribution des notes culmine vers 9--10/20, et les moyennes des deux parties ne diffèrent que de 0,5 point. Les questions qui ont départagé les candidats sont surtout les questions de diagramme et d'esprit critique, rarement traitées ou mal réussies : 6.a--6.b (graphique de fusion partielle), 6.e--6.f (règle des leviers, nature de Q), 8.a (nom du motif), 8.d (critique des températures), 10.b (réservoirs), 10.f et 11.e (limites, au pluriel), 11.b (analyse quantifiée) et 11.c--11.d en géologie ; 2b, 3a--3b (techniques), 11a, 12b et 13 en biologie. Le jury signale aussi des confusions récurrentes entre minéral et roche (question 2.a), et rappelle que les verbes « justifier », « indiquer », « nommer », « rappeler » et « discuter » n'appellent pas la même réponse, et qu'un pluriel (« quelques organismes », « des limites ») exige plusieurs éléments.
+
+\textbf{Gestion du temps.} Traiter les deux parties dans l'ordre et respecter la répartition 1 h 45 / 1 h 45 : les deux parties pèsent le même poids, et abandonner la seconde coûte la moitié de la note. Le jury rappelle que les questions de synthèse sont fortement coefficientées : garder du temps pour 6.a--6.b, 8.d, 10.f, 11.e et la carte mentale de la question 13. À l'intérieur d'une partie, les thèmes sont indépendants : une impasse sur un document ne condamne pas la suite. En revanche, les questions d'un même thème s'enchaînent (Q4 suppose Q3, Q6.e suppose Q6.c et Q6.d, Q10 suppose Q9, Q8d suppose Q6 et Q7). Faire d'abord au brouillon les constructions destinées à l'annexe, les reporter ensuite au propre : elles rapportent vite et une annexe vide se voit.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-guxe9ologie-thuxe8me-1-lolivine-un-minuxe9ral-abondant-sur-terre-et-dans-le-systuxe8me-solaire}{%
+\section{Partie géologie --- Thème 1 : l'olivine, un minéral abondant sur Terre et dans le système solaire}\label{partie-guxe9ologie-thuxe8me-1-lolivine-un-minuxe9ral-abondant-sur-terre-et-dans-le-systuxe8me-solaire}}
+
+Le fil de ce thème est un changement d'échelle continu : de l'échantillon de main au cristal, du cristal aux ondes sismiques, et de la Terre à Mars. Les outils sont la reconnaissance des textures magmatiques, la cristallochimie des silicates, et la lecture couplée de deux documents (profil sismique et diagramme de phases).
+
+\hypertarget{question-1.a}{%
+\subsection{Question 1.a}\label{question-1.a}}
+
+\begin{indication}{1}
+
+Comparer les deux clichés : ils ne sont pas à la même échelle (1 cm à gauche, 1 mm à droite). Ce que l'on peut légender diffère donc d'une image à l'autre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chaque roche, identifier d'abord la \textbf{texture} (voit-on tous les cristaux ? y a-t-il une pâte ?), puis les minéraux visibles. Les couleurs sont ici informatives : vert olive, vert sombre, noir.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Sur l'annexe, porter les légendes suivantes.
+
+Roche A (partie sombre) : pâte sombre à grain très fin, où aucun cristal n'est individualisable à cette échelle (verre + microlites de plagioclase et de pyroxène) ; quelques petites taches claires (petits cristaux ou vacuoles).
+
+Roche B (partie verte) : cristaux jointifs de taille millimétrique --- \textbf{olivine} (grains vert olive, vitreux, les plus abondants), \textbf{pyroxènes} (grains sombres, vert foncé à brun-noir), et éventuellement de rares grains noirs opaques (\textbf{spinelle}).
+
+\begin{methode}
+
+Une légende de photographie de roche se construit toujours en deux temps : la texture d'abord (elle décide de la famille de roche), les minéraux ensuite. Inverser l'ordre fait écrire des noms de minéraux non justifiés.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 relève de nombreuses légendes incompatibles avec les roches étudiées (quartz, biotite, feldspath potassique, voire « ophiolite », qui n'est pas un minéral). Distinguer orthopyroxène et clinopyroxène n'était pas exigé ; reconnaître les minéraux constitutifs d'un basalte et d'une péridotite l'était.
+
+\end{jury}
+
+\hypertarget{question-1.b}{%
+\subsection{Question 1.b}\label{question-1.b}}
+
+\begin{indication}{1}
+
+Deux caractères suffisent : la texture, qui donne le mode de mise en place, et la couleur, qui renseigne sur la composition chimique.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+La roche A ne laisse pas voir ses cristaux, même à l'échelle du millimètre : sa texture est \textbf{microlitique} (verre, microlites, parfois quelques phénocristaux), celle d'une roche \textbf{volcanique}, refroidie rapidement au contact de la surface. Sa couleur très sombre traduit une forte proportion de minéraux ferromagnésiens, donc une roche \textbf{basique}.
+
+\textbf{La roche A est un basalte} (un gabbro, de même composition, aurait une texture grenue).
+
+\begin{piege}
+
+Écrire seulement que la roche est sombre, donc un basalte, n'est pas une justification : beaucoup de roches sont sombres. C'est l'association texture microlitique (donc volcanique) + couleur sombre (donc basique) qui identifie le basalte. Le rapport 2026 précise que les identifications fondées sur la seule couleur, ou par exclusion (« ni sédimentaire ni métamorphique donc magmatique »), n'ont pas été valorisées, et que la confusion entre texture microlitique et texture grenue, donc entre basalte et gabbro, reste fréquente.
+
+\end{piege}
+
+\hypertarget{question-1.c}{%
+\subsection{Question 1.c}\label{question-1.c}}
+
+\begin{indication}{1}
+
+Même méthode : texture, puis minéralogie. Quels minéraux sont présents, et surtout lesquels sont \textbf{absents} ?
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+La roche B est entièrement cristallisée, sans verre, tous les cristaux étant visibles et jointifs : \textbf{texture grenue}. Sa minéralogie est dominée par l'olivine, accompagnée de pyroxènes ; il n'y a ni quartz ni feldspath. C'est donc une roche \textbf{ultrabasique}.
+
+\textbf{La roche B est une péridotite} (une lherzolite si olivine, orthopyroxène et clinopyroxène coexistent).
+
+\begin{piege}
+
+La texture grenue n'implique pas ici « roche plutonique issue d'un magma » : la péridotite est la roche du \textbf{manteau}, et non un magma cristallisé en profondeur. La question 1.d confirme ce sens de lecture.
+
+\end{piege}
+
+\hypertarget{question-1.d}{%
+\subsection{Question 1.d}\label{question-1.d}}
+
+\begin{indication}{1}
+
+Observer la nature du contact sur le cliché de droite : net ou progressif ? Y a-t-il une auréole de réaction ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux liens sont à envisager, et tous deux sont vrais : un lien mécanique (lequel des deux morceaux contient l'autre ?) et un lien génétique (d'où vient un basalte ?).
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Le contact entre A et B est \textbf{net}, sans zone de réaction : B forme un fragment anguleux englobé dans A. La roche B est donc une \textbf{enclave (xénolite) de péridotite}, arrachée au manteau et remontée par le magma basaltique qui a donné A.
+
+Ce lien est aussi génétique : un basalte résulte de la \textbf{fusion partielle d'une péridotite mantellique}. La roche A est donc issue de la fusion d'une roche du type de la roche B. La rapidité de l'ascension du magma explique que l'enclave n'ait eu le temps ni de fondre ni de se rééquilibrer.
+
+\begin{methode}
+
+Devant deux roches en contact, trois relations possibles : l'une recoupe l'autre (filon), l'une contient l'autre (enclave), ou l'une dérive de l'autre (filiation magmatique ou métamorphique). Le caractère net ou progressif du contact tranche presque toujours.
+
+\end{methode}
+
+\begin{piege}
+
+Faire intervenir le métamorphisme est l'erreur que le rapport 2026 signale le plus souvent ici. Il note aussi que les liens géométrique (enclave) et génétique (fusion partielle) ne sont souvent compris que partiellement : il faut donner les deux.
+
+\end{piege}
+
+\hypertarget{question-1.e}{%
+\subsection{Question 1.e}\label{question-1.e}}
+
+\begin{indication}{1}
+
+« Localisation \textbf{principale} sur Terre » : la question ne porte pas sur les affleurements, mais sur l'endroit où se trouve l'essentiel de cette roche.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Les péridotites constituent le \textbf{manteau terrestre}, et en particulier le \textbf{manteau supérieur}, sous la discontinuité de Mohorovičić --- à partir d'environ 7 km de profondeur sous les océans et 30 km sous les continents. Le manteau représente l'essentiel du volume du globe. On n'observe de péridotites en surface qu'à titre exceptionnel : enclaves dans les laves (comme ici) et massifs ophiolitiques obductés.
+
+\hypertarget{question-2.a}{%
+\subsection{Question 2.a}\label{question-2.a}}
+
+\begin{indication}{1}
+
+La définition d'un silicate tient dans un motif élémentaire. Pensez à sa charge.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le rôle des cations, raisonner en deux temps : l'électroneutralité d'une part, la cohésion mécanique d'autre part --- en se demandant ce qui relie entre eux des tétraèdres qui ne partagent aucun oxygène.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Un \textbf{silicate} est un minéral dont l'unité structurale de base est le \textbf{tétraèdre \([\mathrm{SiO_4}]^{4-}\)} : un atome de silicium au centre, quatre atomes d'oxygène aux sommets. Les silicates se classent selon le degré de polymérisation de ces tétraèdres (isolés, en chaînes, en feuillets, en charpente). Dans l'olivine \(\mathrm{X_2SiO_4}\), les tétraèdres sont \textbf{isolés} : c'est un \textbf{nésosilicate}.
+
+Les cations divalents \(\mathrm{X^{2+}}\), logés dans les sites octaédriques entre les tétraèdres (et non à la place du silicium), jouent deux rôles :
+
+\begin{itemize}
+\tightlist
+\item
+  ils assurent la \textbf{neutralité électrique} du cristal : deux charges \(+2\) compensent exactement la charge \(-4\) d'un tétraèdre ;
+\item
+  ils assurent la \textbf{cohésion} de l'édifice, en reliant par des liaisons ioniques des tétraèdres qui ne partagent aucun oxygène.
+\end{itemize}
+
+Comme \(\mathrm{Mg^{2+}}\) et \(\mathrm{Fe^{2+}}\) ont la même charge et des rayons voisins, ils se substituent librement : l'olivine forme une \textbf{solution solide} continue entre forstérite et fayalite.
+
+\begin{methode}
+
+Le rapport entre la charge du motif et la charge des cations est le moyen le plus rapide de vérifier qu'une formule de silicate est cohérente : ici \(2 \times (+2) - 4 = 0\).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 : « Le jury attendait clairement la formule des tétraèdres de silice. » Il valorise les copies qui explicitent le rôle des cations dans la compensation des charges, et non un vague « rôle de stabilisation ».
+
+\end{jury}
+
+\begin{piege}
+
+Le rapport 2026 relève de fréquentes confusions entre silice, silicium et silicate (un silicate est un minéral, pas une roche), des cations décrits comme remplaçant le silicium au centre des tétraèdres, et une confusion entre silicates et phyllosilicates.
+
+\end{piege}
+
+\hypertarget{question-2.b}{%
+\subsection{Question 2.b}\label{question-2.b}}
+
+\begin{indication}{1}
+
+Lire attentivement la légende du document 2 : l'axe gradué en bas donne la teneur en \textbf{fer}, alors que l'énoncé donne d'abord la teneur en magnésium.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Ces olivines contiennent-elles du calcium ? Si non, où se placent-elles nécessairement dans le triangle ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Ni l'olivine 1 ni l'olivine 2 ne contiennent de calcium : elles se placent donc \textbf{sur le côté inférieur} du triangle, le joint \(\mathrm{Mg_2SiO_4}\)--\(\mathrm{Fe_2SiO_4}\), gradué en pourcentage de fer (0 à gauche, 100 à droite).
+
+\begin{itemize}
+\tightlist
+\item
+  Olivine 1 : 8 \% de Fe, donc un point à l'abscisse 8, dans le champ 0--10 \% : c'est une \textbf{forstérite} (notation Fo₉₂).
+\item
+  Olivine 2 : 40 \% de Fe, donc un point à l'abscisse 40, dans le champ 30--50 \% : c'est une \textbf{hyalosidérite} (Fo₆₀).
+\end{itemize}
+
+\begin{piege}
+
+Placer l'olivine 1 à l'abscisse 92 (du côté de la fayalite) est l'erreur type : l'axe est gradué en fer, pas en magnésium. Toujours relire la légende d'un axe avant de reporter une valeur. Le rapport 2026 signale aussi des olivines placées hors de l'axe binaire Mg--Fe, comme si elles contenaient du calcium.
+
+\end{piege}
+
+\hypertarget{question-3.a}{%
+\subsection{Question 3.a}\label{question-3.a}}
+
+\begin{indication}{1}
+
+Quelle information l'énoncé donne-t-il gratuitement en choisissant de représenter les ondes \textbf{S} plutôt que les ondes P ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Le document 3 montre des ondes S qui se propagent entre les zones 1 et 3, avec \(V_S\) croissant de ≈ 5,2 à ≈ 5,6 km·s⁻¹. Or les ondes S sont des ondes de cisaillement : elles ne se propagent que dans les milieux solides. \textbf{Le milieu est donc solide} sur toute cette tranche.
+
+Les profondeurs concernées (≈ 410 à ≈ 660 km) appartiennent au manteau, dont la roche principale est la \textbf{péridotite}, riche en olivine, avec pyroxènes et grenat. À ces profondeurs, l'olivine est présente sous ses formes de haute pression (wadsleyite, puis ringwoodite, cf.~document 4).
+
+\begin{jury}
+
+D'après le rapport 2026, beaucoup de candidats n'écrivent pas le mot « péridotite », le jugeant sans doute implicite : il faut le donner, avec l'état solide. Les termes « rigide » ou « ductile » ont été acceptés lorsqu'ils étaient employés à bon escient.
+
+\end{jury}
+
+\hypertarget{question-3.b}{%
+\subsection{Question 3.b}\label{question-3.b}}
+
+\begin{indication}{1}
+
+Décrire d'abord la \textbf{forme} de la courbe au niveau de chaque zone : s'agit-il d'un saut, d'une rupture de pente, d'une extinction ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+Les trois zones correspondent à des changements brusques de \(V_S\) à profondeur quasi constante : un saut de ≈ 4,75 à ≈ 5,2 km·s⁻¹ vers 410 km (zone 1), une rupture de pente vers 520--550 km (zone 2), et un saut de ≈ 5,6 à ≈ 6,1 km·s⁻¹ vers 660 km (zone 3). Ce sont des \textbf{discontinuités sismiques} du manteau : la discontinuité des \textbf{410 km}, celle des \textbf{≈ 520 km}, et celle des \textbf{660 km}, cette dernière marquant la limite entre manteau supérieur et manteau inférieur. L'intervalle 410--660 km constitue la \textbf{zone de transition}.
+
+\begin{piege}
+
+Ne pas confondre ces discontinuités avec le Moho (quelques dizaines de kilomètres), la LVZ ou la discontinuité de Gutenberg (2 900 km), où \(V_S\) s'annule : le rapport 2026 cite ces deux dernières parmi les réponses incohérentes avec les profondeurs. Ici les ondes S continuent de se propager : le milieu reste solide de part et d'autre. Les mots « d'un point de vue sismique » excluent aussi une réponse en termes de transitions de phase (c'est l'objet de la question 4) ou d'opposition rigide/ductile, qui confond propriétés mécaniques et sismiques.
+
+\end{piege}
+
+\hypertarget{question-4.a}{%
+\subsection{Question 4.a}\label{question-4.a}}
+
+\begin{indication}{1}
+
+Deux propriétés du diamant sont utilisées, l'une mécanique, l'autre optique.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour relier l'outil à la structure cristalline : quelle technique, utilisant un rayonnement capable de traverser le diamant, donne accès à l'arrangement des atomes ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Un échantillon de quelques dizaines de micromètres est placé dans le trou d'un joint métallique, entre les pointes de deux diamants taillés en enclume. Une force modérée appliquée sur une surface très petite engendre, par \(P = F/S\), une pression de plusieurs dizaines de GPa, comparable à celle du manteau profond. Un chauffage (laser ou résistance) impose simultanément la température.
+
+Le diamant est le plus dur des matériaux naturels --- il supporte ces pressions --- et il est \textbf{transparent} aux rayons X. On peut donc réaliser, \textbf{in situ} et sans décomprimer, une \textbf{diffraction des rayons X} : la position des pics diffractés donne les paramètres de la maille, donc la \textbf{structure cristalline} de la phase stable au couple \((P, T)\) imposé.
+
+En répétant l'expérience pour de nombreux couples \((P,T)\) et en notant pour chacun quelle structure est stable, on délimite les champs de stabilité des différentes phases : c'est la construction point par point du \textbf{diagramme de phases}.
+
+\begin{jury}
+
+Le rapport 2026 valorise une description rigoureuse accompagnée d'un schéma précis et légendé, et regrette des schémas imprécis, notamment sur le rôle de la température et l'utilisation des rayons X.
+
+\end{jury}
+
+\begin{piege}
+
+La cellule à enclumes de diamant n'est pas une presse triaxiale destinée à étudier le comportement mécanique des roches : décrire une fracturation de l'échantillon, ou une « stimulation » des minéraux par le diamant, est un contresens relevé par le jury.
+
+\end{piege}
+
+\hypertarget{question-4.b}{%
+\subsection{Question 4.b}\label{question-4.b}}
+
+\begin{indication}{1}
+
+Les deux documents partagent la même numérotation des zones et une échelle commune : laquelle ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour relier un changement de structure cristalline à une variation de vitesse sismique, penser aux deux grandeurs dont dépend la vitesse d'une onde.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Les trois bandes du document 4 sont situées aux mêmes profondeurs que les trois zones du document 3 (≈ 410, ≈ 520 et ≈ 670 km) et encadrent chacune une limite de champ de stabilité de l'olivine :
+
+\begin{itemize}
+\tightlist
+\item
+  zone 1 : olivine α → olivine β (wadsleyite) ;
+\item
+  zone 2 : olivine β → olivine γ (ringwoodite) ;
+\item
+  zone 3 : olivine γ → bridgmanite + magnésiowüstite.
+\end{itemize}
+
+À chaque transition, les mêmes atomes se réorganisent dans un arrangement \textbf{plus compact} : la masse volumique augmente, et la rigidité du matériau augmente davantage encore, de sorte que la vitesse des ondes S croît brusquement.
+
+\textbf{Les discontinuités sismiques du document 3 sont donc la traduction sismologique des transitions de phase de l'olivine du document 4}, à composition chimique constante.
+
+\begin{methode}
+
+Un saut de vitesse sismique admet trois causes possibles : changement d'état, changement de composition chimique, changement de structure cristalline. Ici, les documents imposent la troisième, et c'est elle qui fait tout l'intérêt de l'olivine comme sonde.
+
+\end{methode}
+
+\hypertarget{question-4.c}{%
+\subsection{Question 4.c}\label{question-4.c}}
+
+\begin{indication}{1}
+
+Chaque zone fixe un intervalle de \textbf{pression} (largeur de la bande colorée). Reporter cet intervalle sur les deux courbes en pointillés correspondantes et lire les températures d'intersection.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention à la zone 3 : la pente de ses limites est négative, et elle est forte. L'intervalle de température lu n'est pas du tout le même que pour les zones 1 et 2.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1096}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3003}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3149}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2452}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Zone
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pression (largeur de la bande)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Transition
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Gamme de température
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & ≈ 13,8 -- 14,3 GPa & α → β & ≈ 1 320 -- 1 510 °C \\
+2 & ≈ 17,8 -- 18,6 GPa & β → γ & ≈ 1 370 -- 1 550 °C \\
+3 & ≈ 23,6 -- 24,2 GPa & γ → bridgmanite + magnésiowüstite & ≈ 1 300 -- 1 700 °C \\
+\end{longtable}
+
+Lecture de la zone 3 : les deux limites ont une pente négative et forte. Le domaine de coexistence n'entre dans la bande qu'entre ≈ 1 300 °C (limite de gauche, au bord droit de la bande) et ≈ 1 700 °C (limite de droite, au bord gauche de la bande).
+
+Les trois gammes se recouvrent vers \textbf{1 400 -- 1 500 °C}, avec une incertitude de lecture de l'ordre de ± 30 °C et un intervalle particulièrement large pour la zone 3, dont les limites sont presque verticales.
+
+Ce résultat est compatible avec le faible gradient de température du manteau convectif (gradient adiabatique de quelques dixièmes de degré par kilomètre, soit environ + 100 °C entre 410 et 660 km) : l'écart attendu est du même ordre que l'incertitude de lecture, et ne peut donc pas être mis en évidence ici.
+
+\begin{piege}
+
+Pour la zone 3, une température supérieure à ≈ 1 700 °C fait sortir de la bande de pression : à 1 750 °C, la transition se produit entre ≈ 23,0 et ≈ 23,4 GPa, à gauche de la zone 3. À l'inverse, à 1 200 °C, elle se produit au-delà de 24,4 GPa, à droite. Toujours vérifier que le point lu appartient bien au rectangle imposé par les \textbf{deux} contraintes.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « La gamme de température de la zone 3 a été particulièrement mal évaluée, même dans des copies par ailleurs satisfaisantes. » Une valeur moyenne au lieu d'un intervalle n'a rapporté qu'une partie des points, et des lectures « à l'œil » s'écartaient de plus d'une centaine de degrés : lire les graduations.
+
+\end{jury}
+
+\hypertarget{question-4.d}{%
+\subsection{Question 4.d}\label{question-4.d}}
+
+\begin{indication}{1}
+
+Deux ingrédients sont nécessaires pour faire un thermomètre : une grandeur mesurable in situ, et une relation entre cette grandeur et la température.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pourquoi faut-il que le minéral choisi soit abondant ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Trois arguments s'enchaînent.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  L'olivine est le minéral \textbf{le plus abondant du manteau supérieur} : ses changements de structure modifient les propriétés élastiques moyennes de la roche, donc produisent un signal sismique détectable à l'échelle du globe.
+\item
+  Les limites de phase du document 4 sont des droites \textbf{inclinées} dans le plan \((P,T)\) : la pression de transition dépend de la température. À une profondeur de transition donnée, donc à une pression donnée, ne correspond qu'une seule température.
+\item
+  La sismologie donne précisément la profondeur des discontinuités, mais aucune température ; l'expérimentation en cellule à enclume donne la relation \(P(T)\). Le croisement des deux fournit la température à la profondeur considérée.
+\end{enumerate}
+
+On dispose ainsi d'une mesure de température \textbf{inaccessible autrement} : aucun forage n'atteint 410 km. Chaque discontinuité fournit un \textbf{point d'ancrage du géotherme}. Mieux encore, les variations latérales de profondeur d'une discontinuité cartographient les anomalies thermiques ; comme la transition à 410 km a une pente positive et celle à 660 km une pente négative, les deux discontinuités réagissent en sens opposé à une même anomalie chaude, ce qui permet de distinguer un effet thermique d'un effet de composition.
+
+\begin{jury}
+
+Le rapport 2026 attend l'enchaînement complet : les changements de phase dépendent de la pression et de la température, la profondeur des discontinuités sismiques donne la pression, donc la température. Dire seulement que les phases de l'olivine renseignent sur la température, ou associer chaque phase à une température sans parler des transitions, est jugé très incomplet.
+
+\end{jury}
+
+\hypertarget{question-4.e}{%
+\subsection{Question 4.e}\label{question-4.e}}
+
+\begin{indication}{1}
+
+Écrire la réaction et équilibrer les atomes, élément par élément.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Pour une olivine 100 \% magnésienne, la transition de la zone 3 s'écrit
+
+\equationajustee{\mathrm{Mg_2SiO_4 \longrightarrow \ \text{bridgmanite} \ + \ MgO}}
+
+La conservation des éléments impose, pour la bridgmanite, \(2 - 1 = 1\) magnésium, 1 silicium et \(4 - 1 = 3\) oxygènes :
+
+\equationajustee{\boxed{\mathrm{Mg_2SiO_4 \longrightarrow MgSiO_3 + MgO}}}
+
+La bridgmanite a donc pour formule \(\mathrm{MgSiO_3}\). C'est le minéral le plus abondant de la Terre, constituant essentiel du manteau inférieur.
+
+\begin{piege}
+
+Le rapport 2026 signale des copies qui donnent à la bridgmanite la formule de la forstérite (\(\mathrm{Mg_2SiO_4}\)) : vérifier le bilan élément par élément.
+
+\end{piege}
+
+\hypertarget{question-5.a}{%
+\subsection{Question 5.a}\label{question-5.a}}
+
+\begin{indication}{1}
+
+L'énoncé renvoie au « document 6 », mais les vitesses martiennes sont au \textbf{document 5}. Signaler l'erreur d'énoncé sur la copie et poursuivre, comme l'y invite la consigne liminaire.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'axe des ordonnées est une \textbf{distance au centre}, pas une profondeur. Commencer par chercher où \(V_S\) s'annule.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Sous la croûte, \(V_P\) et \(V_S\) n'évoluent pas de la même façon sur les 500 premiers kilomètres et plus bas : quelle enveloppe, définie par son comportement mécanique, cela suggère-t-il ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+Lecture du profil, depuis la surface (\(r \approx 3\,390\) km) :
+
+\begin{itemize}
+\tightlist
+\item
+  jusqu'à \(r \approx 3\,320\) km, les vitesses sont les plus faibles du profil (\(V_S\) ≈ 2,6 à 3,5 km·s⁻¹) : c'est la \textbf{croûte}, épaisse de quelques dizaines de kilomètres (≈ 50 à 70 km) ;
+\item
+  de \(r \approx 3\,320\) à \(r \approx 1\,830\) km, les ondes S se propagent : c'est un \textbf{manteau silicaté solide}, péridotitique, épais d'environ 1 500 km ;
+\item
+  dans sa partie supérieure, jusqu'à \(r \approx 2\,850\) km (≈ 500 km de profondeur), \(V_P\) reste constante (≈ 7,7 km·s⁻¹) et \(V_S\) diminue légèrement (≈ 4,4 → 4,3 km·s⁻¹). Ce manteau supérieur rigide forme avec la croûte une \textbf{lithosphère} épaisse ; la légère baisse de \(V_S\) traduit une température qui augmente vite dans cette couche où la chaleur est transmise par conduction ;
+\item
+  plus bas, \(V_P\) croît jusqu'à ≈ 9,4 km·s⁻¹ et \(V_S\) jusqu'à ≈ 4,9 km·s⁻¹. Deux ressauts de vitesse y sont repérés : l'étoile A à \(r \approx 2\,350\) km (soit ≈ 1 040 km de profondeur) et l'étoile B à \(r \approx 2\,100\) km (≈ 1 280 km), interprétés comme les transitions α → β et β → γ de l'olivine ;
+\item
+  à \(r \approx 1\,830\) km, \textbf{\(V_S\) s'annule} et \(V_P\) chute brutalement de ≈ 9,4 à ≈ 4,8 km·s⁻¹ : c'est la limite manteau / noyau ;
+\item
+  de \(r = 1\,830\) km au centre, seules les ondes P se propagent, avec \(V_P\) croissant régulièrement de 4,8 à 6 km·s⁻¹, sans aucune discontinuité : le \textbf{noyau est entièrement liquide}, et aucune graine solide n'est détectée.
+\end{itemize}
+
+\textbf{Modèle : Mars est une planète différenciée en trois enveloppes concentriques --- une croûte, un manteau péridotitique solide siège de deux transitions de phase de l'olivine, et un noyau métallique entièrement liquide de rayon ≈ 1 830 km. La croûte et le manteau supérieur forment une lithosphère épaisse d'environ 500 km.}
+
+\begin{methode}
+
+Face à un profil de vitesses, les trois réflexes sont toujours les mêmes : chercher où \(V_S\) s'annule (liquide), repérer les sauts (limites d'enveloppes ou transitions de phase), puis convertir les ordonnées en profondeurs si nécessaire.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 : « De nombreuses copies identifient uniquement une ``croûte'' superficielle sans mentionner la lithosphère ». Il rappelle qu'une partie de la lithosphère appartient au manteau supérieur : ne pas opposer lithosphère et manteau. Il relève aussi des contresens graves (« croûte liquide », « gabbro à 2400 km de profondeur ») et des lectures de l'axe comme une profondeur.
+
+\end{jury}
+
+\hypertarget{question-5.b}{%
+\subsection{Question 5.b}\label{question-5.b}}
+
+\begin{indication}{1}
+
+Comparer terme à terme avec la structure de la Terre. Pour expliquer la profondeur des transitions de phase, se souvenir que ces transitions se produisent à une \textbf{pression} donnée, et écrire comment la pression varie avec la profondeur.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mars
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Terre
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Rayon & ≈ 3 390 km & 6 371 km \\
+Transition α → β & ≈ 1 040 km & 410 km \\
+Transition β → γ & ≈ 1 280 km & ≈ 520 km \\
+Transition γ → bridgmanite & absente & 660 km \\
+Manteau inférieur & inexistant & 660 -- 2 900 km \\
+Noyau & entièrement liquide & liquide + graine solide (\(r\) = 1 220 km) \\
+\end{longtable}
+
+Trois différences majeures.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Les transitions de phase sont deux à trois fois plus profondes.} Elles se produisent à pression fixée (≈ 14 et ≈ 18 GPa, document 4). Or \(P \approx \rho g z\) : la pesanteur martienne étant environ 2,6 fois plus faible que la terrestre, la pression augmente d'autant plus lentement avec la profondeur, et il faut descendre beaucoup plus bas pour atteindre la même pression.
+\item
+  \textbf{Il n'y a pas de manteau inférieur.} La pression à la base du manteau martien reste inférieure à ≈ 20 GPa, donc aux ≈ 24 GPa nécessaires à la dissociation de la ringwoodite : la bridgmanite ne peut pas se former.
+\item
+  \textbf{Le noyau est entièrement liquide}, sans graine solide, alors que la Terre possède une graine. Les vitesses maximales du manteau sont aussi plus faibles (≈ 9,4 km·s⁻¹ contre ≈ 13,7 km·s⁻¹ à la base du manteau terrestre).
+\end{enumerate}
+
+\begin{piege}
+
+Attribuer la plus grande profondeur des transitions à une composition différente du manteau martien n'est pas recevable : l'énoncé précise que les deux ressauts sont interprétés comme des transitions de phase \textbf{de l'olivine}, donc à chimie identique. L'explication est mécanique.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 valorise l'absence de graine solide et le nombre plus limité de transitions de phase mantelliques (l'absence de manteau inférieur pouvant rester implicite). En revanche, l'argument d'une « taille plus petite » de Mars, avancé seul, n'a pas été retenu s'il n'était pas relié à des conséquences géophysiques précises : ici, la pesanteur plus faible et la pression plus basse en profondeur.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-guxe9ologie-thuxe8me-2-fusion-et-formation-de-lolivine}{%
+\section{Partie géologie --- Thème 2 : fusion et formation de l'olivine}\label{partie-guxe9ologie-thuxe8me-2-fusion-et-formation-de-lolivine}}
+
+Ce thème est le cœur « diagrammes » du sujet. Deux outils différents y sont employés : un \textbf{ternaire} (trois constituants, un eutectique, règle des leviers pour la fusion partielle) et un \textbf{binaire à solution solide totale} (fuseau liquidus/solidus, compositions conjuguées, zonation). Ne pas les confondre : l'un a un eutectique, l'autre non.
+
+\hypertarget{question-6.a}{%
+\subsection{Question 6.a}\label{question-6.a}}
+
+\begin{indication}{1}
+
+Un graphique « choisi judicieusement » signifie ici : le plan (température, profondeur) avec le solidus de la péridotite et le géotherme.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Si le géotherme est à gauche du solidus, trois manières de franchir la courbe : déplacer le point vers la droite, vers le haut, ou déplacer la courbe elle-même.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Le graphique à tracer (figure 1) porte la \textbf{profondeur} en ordonnée (orientée vers le bas) et la \textbf{température} en abscisse, avec trois courbes : le \textbf{solidus sec} (déshydraté) de la péridotite, le \textbf{solidus hydraté}, fortement abaissé, et le \textbf{géotherme} moyen, qui reste à gauche du solidus sec.~La roche mère, placée sur le géotherme, est donc normalement solide.
+
+Une péridotite fond partiellement dès que son point représentatif franchit le solidus (et non le liquidus), ce qui peut se produire de trois façons :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Décompression adiabatique} (flèche verticale vers le haut) : lors d'une remontée rapide, la roche n'échange pas de chaleur et sa température ne baisse que de quelques dixièmes de degré par kilomètre, alors que le solidus, lui, baisse beaucoup plus vite quand la pression diminue. Le solidus est franchi.
+\item
+  \textbf{Hydratation} (déplacement du solidus vers les basses températures) : l'ajout d'eau abaisse le solidus de plusieurs centaines de degrés, de sorte que, à pression et température inchangées, la roche se retrouve au-dessus du solidus hydraté.
+\item
+  \textbf{Apport de chaleur} (flèche horizontale vers la droite) : une anomalie thermique élève localement la température de la roche jusqu'au solidus.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q6a-solidus-geotherme.pdf}
+\caption*{Figure 1 --- Fusion partielle d'une péridotite : le géotherme reste à
+gauche du solidus sec ; décompression (1), hydratation (2) ou apport de
+chaleur (3) font franchir le solidus (courbes d'allure)}
+\end{figure}
+
+Dans les trois cas, la fusion est \textbf{partielle} (de quelques pour cent à ≈ 25 \%) : le liquide produit, moins dense, se sépare du résidu solide et migre vers le haut.
+
+\begin{jury}
+
+Le rapport 2026 attend un graphique faisant apparaître le géotherme mantellique, la position de la roche mère, les solidus des péridotites hydratées et déshydratées et la trajectoire de décompression adiabatique. Il note que cette question a très souvent été mal traitée ou laissée de côté, y compris dans de bonnes copies : c'est l'une des plus discriminantes du sujet.
+
+\end{jury}
+
+\begin{piege}
+
+Erreurs relevées par le jury : un schéma, un diagramme TAS ou un diagramme binaire à la place du graphique demandé ; la confusion entre solidus et liquidus (« la roche franchit le liquidus ») ; une décompression adiabatique mal représentée ; la fusion partielle réduite à un simple échauffement, ou attribuée à la « fonte des parois d'une chambre magmatique ».
+
+\end{piege}
+
+\hypertarget{question-6.b}{%
+\subsection{Question 6.b}\label{question-6.b}}
+
+\begin{indication}{1}
+
+Dix lignes pour quatre contextes : une phrase par contexte, chacune associée explicitement à l'un des trois mécanismes de la question précédente.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Aux \textbf{dorsales océaniques}, l'asthénosphère remonte passivement sous l'axe d'accrétion : la décompression adiabatique (mécanisme 1) y produit 10 à 25 \% de fusion, d'où les basaltes et gabbros de la croûte océanique. Dans les \textbf{rifts continentaux}, l'amincissement de la lithosphère permet la même remontée et la même décompression. Aux \textbf{points chauds}, un panache mantellique plus chaud que son environnement fond par apport de chaleur (mécanisme 3), auquel s'ajoute la décompression de sa remontée : le magmatisme basaltique y est abondant et indépendant des limites de plaques. Dans les \textbf{zones de subduction}, la lithosphère océanique plongeante, hydratée, voit ses minéraux hydratés se déstabiliser vers 80 à 150 km de profondeur ; l'eau libérée hydrate le coin de manteau sus-jacent et en abaisse le solidus (mécanisme 2), d'où les magmas des arcs volcaniques.
+
+Sur le graphique de la question 6.a, on associe la flèche 1 aux dorsales et aux rifts, la flèche 2 aux subductions et la flèche 3 aux points chauds.
+
+\begin{jury}
+
+Le rapport 2026 valorise les copies qui relient chaque contexte à son mécanisme : décompression adiabatique aux dorsales, abaissement du solidus par hydratation des péridotites en subduction. Citer la dorsale et la subduction sans ce lien ne suffit pas. La question portant sur la fusion d'une roche mère mantellique, elle excluait le magmatisme d'anatexie, parfois cité à tort.
+
+\end{jury}
+
+\begin{piege}
+
+Deux abus de langage relevés par le jury : parler d'« hydratation du solidus » (c'est la roche qui est hydratée, le solidus qui s'abaisse), et associer l'hydratation à la fusion sous les dorsales, où le mécanisme est la décompression.
+
+\end{piege}
+
+\hypertarget{question-6.c}{%
+\subsection{Question 6.c}\label{question-6.c}}
+
+\begin{indication}{1}
+
+Où convergent les isothermes en pointillés ? Que vaut la température en ce point par rapport à tout le reste du diagramme ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La propriété vraiment utile pour la suite n'est pas la température de E, mais la composition du \textbf{premier liquide} formé.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+E est le \textbf{point eutectique} du système ternaire olivine -- clinopyroxène -- grenat à 40 kbar : c'est le point de concours des lignes cotectiques et le minimum de la surface du liquidus, à \(T_E = 1\,670\) °C. Sa composition se lit ≈ 6 \% d'olivine, ≈ 47 \% de grenat et ≈ 47 \% de clinopyroxène.
+
+Deux propriétés :
+
+\begin{itemize}
+\tightlist
+\item
+  c'est la \textbf{température de fusion commençante} du système : aucune roche contenant les trois minéraux ne peut commencer à fondre en dessous de 1 670 °C ;
+\item
+  le \textbf{premier liquide formé a la composition de E}, quelle que soit la composition de la roche de départ, et il la conserve tant que les trois minéraux subsistent dans le résidu. Seule la \textbf{quantité} de liquide augmente ; ce n'est qu'après épuisement de l'un des trois minéraux que la température remonte et que la composition du liquide quitte E.
+\end{itemize}
+
+\begin{jury}
+
+D'après le rapport 2026, le mot « eutectique » est très souvent cité, mais sa définition reste approximative. Est attendue une composition, ou une condition particulière, permettant l'apparition de liquide lors de la fusion d'un assemblage minéral, idéalement avec la notion de température de fusion minimale.
+
+\end{jury}
+
+\hypertarget{question-6.d}{%
+\subsection{Question 6.d}\label{question-6.d}}
+
+\begin{indication}{1}
+
+Dans un diagramme ternaire, la proportion d'un pôle se lit sur l'axe qui lui correspond, le long des lignes parallèles au côté opposé. Vérifier que la somme des trois valeurs fait 100 \%.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+La lecture des coordonnées de P donne environ \textbf{58 \% d'olivine, 28 \% de grenat et 14 \% de clinopyroxène} (à ± 3 \% près ; la somme fait bien 100 \%).
+
+C'est la composition d'une \textbf{péridotite à grenat} (lherzolite à grenat dans un système réel, qui contiendrait aussi de l'orthopyroxène) : une roche mantellique \textbf{fertile}, typique de l'asthénosphère sous une centaine de kilomètres de profondeur.
+
+\begin{methode}
+
+Toujours contrôler une lecture barycentrique par la somme. Si elle ne fait pas 100 \%, c'est qu'un des trois axes a été lu dans le mauvais sens.
+
+\end{methode}
+
+\begin{piege}
+
+Ici, les graduations du côté gauche sont portées par des traits horizontaux : lire le grenat à la hauteur de P (≈ 41 \%) donnerait une somme supérieure à 100 \%. Le rapport 2026 relève précisément des « pourcentages dont la somme dépasse 100 \% ». La teneur en grenat se lit le long d'une parallèle au côté olivine -- clinopyroxène.
+
+\end{piege}
+
+\hypertarget{question-6.e}{%
+\subsection{Question 6.e}\label{question-6.e}}
+
+\begin{indication}{1}
+
+Première étape : le liquide est-il encore à l'eutectique après 20 \% de fusion ? Calculer à quel taux de fusion le minéral le plus sollicité serait épuisé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deuxième étape : écrire la conservation de la matière. Si \(f\) est le taux de fusion, P est le barycentre de E (poids \(f\)) et de Q (poids \(1-f\)). La traduction géométrique est une construction sur la droite (EP).
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\textbf{Le magma.} Tant que les trois minéraux coexistent dans le résidu, le liquide a la composition de l'eutectique. Vérifions-le : le liquide contient ≈ 47 \% de clinopyroxène, alors que P n'en contient que 14 \%. Le clinopyroxène serait donc épuisé pour un taux de fusion \(f\) tel que
+
+\equationajustee{\begin{aligned}
+0{,}47\,f &= 0{,}14 \\
+f &\approx 30\ \%
+\end{aligned}}
+
+Comme 20 \% \textless{} 30 \%, les trois minéraux subsistent (le grenat ne s'épuiserait que vers 60 \%). \textbf{Le magma a la composition de E : ≈ 6 \% d'olivine, 47 \% de grenat, 47 \% de clinopyroxène.}
+
+\textbf{Le résidu Q.} La conservation de la matière (règle des leviers) s'écrit
+
+\equationajustee{\mathrm{P} = 0{,}20\,\mathrm{E} + 0{,}80\,\mathrm{Q}}
+
+d'où, composante par composante :
+
+\equationajustee{\begin{aligned}
+\text{olivine} &\approx \frac{58 - 0{,}20 \times 6}{0{,}80} \approx 71\ \% \\
+\text{grenat} &\approx \frac{28 - 0{,}20 \times 47}{0{,}80} \approx 23\ \% \\
+\text{cpx} &\approx \frac{14 - 0{,}20 \times 47}{0{,}80} \approx 6\ \%
+\end{aligned}}
+
+La somme vaut 100 \% et le clinopyroxène reste positif, ce qui confirme le premier point.
+
+\textbf{Construction sur l'annexe.} Q se trouve sur la droite (EP), \textbf{au-delà de P} par rapport à E, à la distance
+
+\equationajustee{\mathrm{PQ} = \frac{f}{1-f}\,\mathrm{EP} = 0{,}25\,\mathrm{EP}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q6e-ternaire-fusion.pdf}
+\caption*{Figure 2 --- Fusion de 20 \% de la roche P : le liquide reste en E, le
+résidu Q se place sur la droite (EP) au-delà de P, avec PQ = 0,25 EP}
+\end{figure}
+
+\equationajustee{\boxed{\begin{aligned}
+\text{magma} &\approx \mathrm{E}\ (6\ \%\ \text{ol},\ 47\ \%\ \text{grt},\ 47\ \%\ \text{cpx}) \\
+\mathrm{Q} &\approx 71\ \%\ \text{ol},\ 23\ \%\ \text{grt},\ 6\ \%\ \text{cpx}
+\end{aligned}}}
+
+\begin{piege}
+
+Le rapport 2026 juge cette question rarement traitée et plus rarement réussie. Erreurs relevées : ne donner que la composition du solide résiduel sans celle du liquide, attribuer au magma une composition incorrecte, ou se contenter d'indiquer que le liquide conserve une composition eutectique, sans placer Q. Le liquide reste en E ; c'est le \textbf{résidu} qui s'éloigne de E en passant par P.
+
+\end{piege}
+
+\begin{methode}
+
+La règle des leviers est toujours la même : trois points alignés (liquide, roche initiale, résidu), la roche initiale entre les deux autres, et les distances inversement proportionnelles aux masses.
+
+\end{methode}
+
+\hypertarget{question-6.f}{%
+\subsection{Question 6.f}\label{question-6.f}}
+
+\begin{indication}{1}
+
+Quel contexte produit couramment 10 à 25 \% de fusion ? Et, dans ce contexte, quels objets géologiques concrets correspondent à la roche de départ et au résidu ?
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Un taux de fusion de 20 \% est caractéristique d'une \textbf{dorsale océanique}, où la fusion se fait par décompression adiabatique (un point chaud est une réponse également défendable).
+
+Dans ce cadre :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{P} est la péridotite asthénosphérique \textbf{fertile} (lherzolite à grenat) qui remonte sous l'axe ;
+\item
+  \textbf{Q} est le résidu \textbf{appauvri} : enrichi en olivine, très appauvri en clinopyroxène, c'est la péridotite qui, en refroidissant, constitue le \textbf{manteau lithosphérique océanique} sous la croûte. Pour des taux de fusion plus élevés, une fois le clinopyroxène épuisé (vers 30 \%), le résidu évoluerait vers une harzburgite, puis une dunite ;
+\item
+  le liquide extrait, de composition E, cristallise en \textbf{gabbros et basaltes}, c'est-à-dire la croûte océanique.
+\end{itemize}
+
+\begin{piege}
+
+Donner à Q le nom d'une roche issue du magma (basalte, gabbro) est l'erreur que le rapport 2026 relève dans la majorité des copies. Q est le \textbf{résidu} solide de la fusion : une péridotite appauvrie, pas une roche magmatique cristallisée.
+
+\end{piege}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Deux caractères du cristal sont exploitables sur le document : sa taille relative et la forme de ses contours.
+
+\end{indication}
+
+\begin{indication}{2}
+
+À quelle condition un cristal peut-il développer des faces planes et régulières ? Puis mobiliser une connaissance : l'ordre de cristallisation des minéraux d'un magma basaltique.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Sur le document 7, l'olivine présente deux traits remarquables :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  sa \textbf{taille} : plusieurs millimètres (barre d'échelle de 1 mm), alors que la pâte est faite de microlites de quelques dizaines de micromètres --- c'est un \textbf{phénocristal} ;
+\item
+  sa \textbf{forme} : le cristal est \textbf{automorphe}, limité par des faces planes et des angles nets.
+\end{enumerate}
+
+Or un cristal ne peut développer ses faces propres que s'il croît \textbf{librement} dans un liquide, sans gêne de ses voisins. \textbf{L'olivine fait donc partie des premiers minéraux formés} : elle a cristallisé lentement, en profondeur, dans un magma encore essentiellement liquide, avant que l'éruption ne fige le reste en une pâte microlitique.
+
+Les connaissances le confirment : dans la \textbf{série de Bowen}, l'olivine, le silicate le moins polymérisé et le plus riche en Mg et Fe, est le premier minéral ferromagnésien à cristalliser, à la plus haute température.
+
+\begin{jury}
+
+Le rapport 2026 attendait deux éléments : le caractère automorphe et la grande taille du cristal (document), et la série de Bowen (connaissances). Le terme « automorphe » a été rarement employé, et le second argument rarement utilisé. Le recours au principe d'inclusion pour justifier la cristallisation précoce de l'olivine n'a pas été valorisé.
+
+\end{jury}
+
+\begin{piege}
+
+Conclure « refroidissement lent » pour toute la roche serait faux : la lame enregistre \textbf{deux} vitesses successives, lente en profondeur (phénocristal) puis rapide en surface (microlites et verre). C'est précisément la texture microlitique porphyrique.
+
+\end{piege}
+
+\hypertarget{question-8.a}{%
+\subsection{Question 8.a}\label{question-8.a}}
+
+\begin{indication}{1}
+
+Un seul mot est attendu, celui qui décrit une organisation concentrique cœur -- bordure dans un cristal.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+Le cristal présente une distinction entre un cœur et une bordure, soulignée par des teintes de polarisation différentes et des limites concentriques qui reproduisent la forme du cristal : c'est une \textbf{zonation} (cristal zoné), de nature chimique.
+
+\begin{piege}
+
+Le rapport 2026 juge cette sous-question globalement mal traitée : beaucoup ont répondu « couronne réactionnelle » ou « auréole », d'autres « forme en fuseau », « œil de chat », « couronne de cristallisation », « plagioclase zoné ». Une couronne réactionnelle est un autre minéral formé autour du cristal ; ici, c'est le même minéral dont la composition varie du cœur à la bordure.
+
+\end{piege}
+
+\hypertarget{question-8.b}{%
+\subsection{Question 8.b}\label{question-8.b}}
+
+\begin{indication}{1}
+
+Repérer d'abord le type de diagramme : y a-t-il un eutectique, ou les deux pôles sont-ils miscibles en toutes proportions ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Descendre la verticale \(x = 0{,}80\) et lire, à chaque température, les \textbf{deux} compositions conjuguées : celle du liquide sur le liquidus, celle du solide sur le solidus.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Le diagramme décrit des états d'équilibre. Quelle hypothèse faut-il lever pour qu'un cristal \textbf{hétérogène} puisse subsister ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Le document 8 est un diagramme binaire à \textbf{solution solide totale} : les deux pôles \(\mathrm{Fe_2SiO_4}\) (fusion à 1 205 °C) et \(\mathrm{Mg_2SiO_4}\) (1 890 °C) sont miscibles en toutes proportions, à l'état solide comme à l'état liquide. Il n'y a donc pas d'eutectique, mais un \textbf{fuseau} entre liquidus (au-dessus) et solidus (en dessous), dans lequel coexistent un liquide et un solide de compositions différentes.
+
+Refroidissement d'un liquide de composition \(x = 0{,}80\) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  à \textbf{≈ 1 840 °C}, la verticale coupe le liquidus : les premiers cristaux apparaissent. Leur composition se lit sur le solidus à la même température, soit \(x \approx 0{,}96\) : le premier solide est nettement \textbf{plus magnésien} que le liquide dont il est issu, car le pôle magnésien est le plus réfractaire ;
+\item
+  le refroidissement se poursuivant, le liquide s'appauvrit en magnésium en suivant le liquidus vers la gauche, et le solide en équilibre suit le solidus, lui aussi vers la gauche : chaque nouvelle couche déposée est \textbf{plus ferreuse} que la précédente ;
+\item
+  à \textbf{≈ 1 670 °C}, la verticale coupe le solidus : à l'équilibre, la dernière goutte de liquide (\(x \approx 0{,}47\)) disparaît et le cristal final serait \textbf{homogène} à \(x = 0{,}80\), la diffusion ayant rééquilibré toutes les couches ;
+\item
+  mais la \textbf{diffusion à l'état solide est très lente} dans l'olivine, et le refroidissement d'un magma est rapide devant elle. Les couches successives ne se rééquilibrent donc pas : chacune conserve la composition à laquelle elle s'est formée, et la cristallisation peut se poursuivre en dessous de 1 670 °C, avec des bordures encore plus ferreuses.
+\end{enumerate}
+
+\textbf{Il en résulte un cristal zoné, à cœur magnésien et bordures de plus en plus ferreuses.}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q8b-binaire-zonation.pdf}
+\caption*{Figure 3 --- Refroidissement d'un liquide x = 0,80 : premier solide Fo₉₆
+vers 1 840 °C, puis liquide et solide de plus en plus ferreux ; sans
+rééquilibrage, le cristal garde un cœur magnésien et une bordure
+ferreuse}
+\end{figure}
+
+\begin{methode}
+
+C'est la cristallisation fractionnée, à l'échelle d'un seul cristal : le solide déjà formé est soustrait à l'équilibre avec le liquide.
+
+\end{methode}
+
+\begin{piege}
+
+Oublier l'argument cinétique rend la réponse contradictoire avec le document 7 : à l'équilibre, le diagramme prédit un cristal homogène, donc \textbf{aucune} zonation.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 valorise un document 8 annoté et légendé sur l'annexe, même sans explication rédigée. Les chemins sont souvent bien tracés, mais rarement légendés clairement ; certains tracent le chemin d'une fusion au lieu de celui de la cristallisation.
+
+\end{jury}
+
+\hypertarget{question-8.c}{%
+\subsection{Question 8.c}\label{question-8.c}}
+
+\begin{indication}{1}
+
+Le cœur, c'est la partie formée en premier. À quelle température ? Et quelle composition le solidus donne-t-il à cette température ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Le cœur s'est formé \textbf{en premier}, donc à la température la plus élevée. Or le solide en équilibre avec le liquide y est le plus proche du pôle le plus réfractaire : \(\mathrm{Mg_2SiO_4}\) fond à 1 890 °C contre 1 205 °C pour \(\mathrm{Fe_2SiO_4}\). La lecture du solidus à ≈ 1 840 °C donne \(x \approx 0{,}96\).
+
+\textbf{Le cœur est donc plus riche en magnésium} (≈ Fo₉₆) que la composition globale (Fo₈₀), et \emph{a fortiori} que la bordure.
+
+\begin{jury}
+
+Le rapport 2026 : « Le verbe d'action étant justifier et non indiquer, les candidats ne devaient pas se contenter d'écrire que le cœur était plus riche en magnésium ». Presque tous trouvent la bonne réponse, peu la justifient par le document 8 (premier solide formé plus magnésien).
+
+\end{jury}
+
+\hypertarget{question-8.d}{%
+\subsection{Question 8.d}\label{question-8.d}}
+
+\begin{indication}{1}
+
+« L'analyse venant d'être réalisée » couvre tout le thème 2. Relever les températures qu'elle fait intervenir (documents 6 et 8), puis les confronter à la température d'émission d'un basalte.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour expliquer l'écart, relire les conditions des deux documents : la pression de chacun, et le nombre de constituants pris en compte.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\textbf{L'incohérence.} L'analyse du thème 2 fait intervenir :
+
+\begin{itemize}
+\tightlist
+\item
+  une fusion commençante de la péridotite à \textbf{1 670 °C} (eutectique E, document 6) ;
+\item
+  une fusion de la forstérite à \textbf{1 890 °C} et une cristallisation de l'olivine Fo₈₀ entre ≈ 1 840 et ≈ 1 670 °C (document 8).
+\end{itemize}
+
+Or un basalte, dont les laves contiennent précisément des phénocristaux d'olivine (document 7), est émis en surface vers \textbf{1 100 -- 1 250 °C} (≈ 1 200 °C). \textbf{L'écart atteint plusieurs centaines de degrés.} L'analyse donne le comportement qualitatif correct (ordre de cristallisation, zonation, cœur magnésien), mais ses températures ne sont pas celles d'un magma basaltique naturel.
+
+\textbf{Explications} (une seule, bien argumentée, suffit) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{La pression du document 6.} Le ternaire est établi à 40 kbar (4 GPa), soit environ 120 km de profondeur. En système sec, les températures de fusion augmentent avec la pression : l'eutectique à 1 670 °C est une valeur profonde, logiquement bien supérieure à la température des laves en surface.
+\item
+  \textbf{Le nombre de constituants.} Le document 6 ne retient que trois minéraux, alors qu'une péridotite contient aussi de l'orthopyroxène (et du spinelle) ; le document 8 ne retient que deux pôles purs, alors qu'un magma basaltique contient en outre \(\mathrm{SiO_2}\), \(\mathrm{Al_2O_3}\), \(\mathrm{CaO}\), \(\mathrm{Na_2O}\)\ldots{} Chaque constituant supplémentaire abaisse la température d'apparition du liquide, comme le montre déjà l'abaissement eutectique du document 6.
+\item
+  \textbf{Le domaine du document 8.} Établi à 0,1 MPa pour le seul binaire de l'olivine, il ne représente pas les conditions de fusion d'un magma basaltique profond : les 1 890 °C de la forstérite pure ne sont pas la température de cristallisation de l'olivine dans un basalte.
+\item
+  \textbf{L'eau et les volatils} abaissent encore solidus et liquidus, comme le solidus hydraté de la question 6.a.
+\end{enumerate}
+
+\begin{jury}
+
+Le rapport 2026 juge cette sous-question très rarement traitée. Il attendait la confrontation des 1 670 °C (document 6) et des 1 890 °C (document 8) aux ≈ 1 200 °C d'émission d'un basalte, puis « Une seule explication cohérente » : pression du document 6 (≈ 120 km), nombre limité de minéraux pris en compte, ou basse pression du document 8.
+
+\end{jury}
+
+\begin{piege}
+
+Penser que la pression abaisse les températures de fusion est faux pour un système sec : la pression élève les températures de fusion. C'est précisément pourquoi le document 6, établi à 4 GPa, donne des températures plus élevées qu'en surface.
+
+\end{piege}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-guxe9ologie-thuxe8me-3-altuxe9ration-de-lolivine}{%
+\section{Partie géologie --- Thème 3 : altération de l'olivine}\label{partie-guxe9ologie-thuxe8me-3-altuxe9ration-de-lolivine}}
+
+Ce thème relie la chimie minérale au climat. Deux équations le structurent (l'hydrolyse de l'olivine, la précipitation des carbonates) ; tout le reste --- géo-ingénierie, réservoirs, limites --- en découle par bilan. Les questions 10.f, 11.c et 11.e sont des questions d'argumentation ouverte, où ce qui compte est la précision des arguments et leur ancrage dans la minéralogie et le dispositif.
+
+\hypertarget{question-9.a}{%
+\subsection{Question 9.a}\label{question-9.a}}
+
+\begin{indication}{1}
+
+Écrire, à côté de l'équation 1, l'équation de l'hydrolyse d'un feldspath potassique, et comparer les deux membres de droite.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La différence porte sur l'existence, ou non, d'un résidu solide.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Dans les deux cas, l'eau chargée en \(\mathrm{CO_2}\) (donc en acide carbonique, \(\mathrm{CO_2} + \mathrm{H_2O} \rightleftharpoons \mathrm{H^+} + \mathrm{HCO_3^-}\)) attaque le minéral : les protons rompent les liaisons entre les tétraèdres et les cations, et libèrent ces derniers en solution. C'est une \textbf{hydrolyse}, réaction d'altération chimique, et non une simple dissolution.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Solution d'attaque} (réactifs) : eau et \(\mathrm{CO_2}\) dissous. En toute rigueur, le \(\mathrm{CO_2(g)}\) de l'équation 1 se dissout d'abord en \(\mathrm{CO_2(aq)}\).
+\item
+  \textbf{Solution de lessivage} (produits) : acide silicique H₄SiO₄, ions HCO₃⁻ et Mg²⁺, exportés par les eaux.
+\end{itemize}
+
+Pour un feldspath potassique :
+
+\equationajustee{2\,\mathrm{KAlSi_3O_8} + 2\,\mathrm{CO_2} + 11\,\mathrm{H_2O} \longrightarrow \underbrace{\mathrm{Al_2Si_2O_5(OH)_4}}_{\text{kaolinite}} + 2\,\mathrm{K^+} + 2\,\mathrm{HCO_3^-} + 4\,\mathrm{H_4SiO_4}}
+
+\textbf{Différence essentielle} : le membre de droite de l'équation 1 ne comporte \textbf{aucune phase solide}. Faute d'aluminium, il ne se forme pas d'argile : l'olivine est \textbf{entièrement mise en solution}, alors que l'hydrolyse du feldspath est partielle et laisse un résidu argileux. Le processus \textbf{consomme du \(\mathrm{CO_2}\)} --- quatre moles par mole d'olivine.
+
+\begin{piege}
+
+Le rapport 2026 : « De trop nombreux candidats indiquent que l'équation 1 représente une dissolution. » Les termes bisiallitisation ou allitisation, maladroits ici, n'ont pas été pénalisés ; l'explication du processus (réactifs de la solution d'attaque, produits de la solution de lessivage) a été peu souvent donnée.
+
+\end{piege}
+
+\hypertarget{question-9.b}{%
+\subsection{Question 9.b}\label{question-9.b}}
+
+\begin{indication}{1}
+
+Les deux axes du diagramme de Goldschmidt sont deux propriétés de l'ion. Les droites qui délimitent les domaines passent par l'origine : quelle grandeur est donc constante le long de chacune ?
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Le diagramme porte le \textbf{rayon ionique} \(r\) en abscisse et la \textbf{charge} \(z\) en ordonnée. Les domaines sont délimités par des droites passant par l'origine, le long desquelles le \textbf{potentiel ionique} \(z/r\) est constant (\(r\) en Å). Ce potentiel mesure la densité de charge de l'ion, donc son aptitude à polariser les molécules d'eau. Trois champs à légender :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{potentiel ionique faible} (inférieur à 3 environ) : \textbf{cations solubles} (Na⁺, K⁺, Ca²⁺, Mg²⁺, Fe²⁺), qui s'entourent d'une sphère d'hydratation et sont exportés par les eaux ;
+\item
+  \textbf{potentiel ionique intermédiaire} : \textbf{cations précipitants (hydrolysats)} (Al³⁺, Fe³⁺, Ti⁴⁺, et Si⁴⁺ en limite), qui précipitent sur place en hydroxydes et en argiles et forment le résidu de l'altération (sols, latérites) ;
+\item
+  \textbf{potentiel ionique élevé} (supérieur à 10 environ) : \textbf{oxyanions solubles} (anions complexes), l'ion arrachant les oxygènes pour former HCO₃⁻, NO₃⁻, SO₄²⁻, PO₄³⁻.
+\end{itemize}
+
+Application à l'équation 1 : \(\mathrm{Mg^{2+}}\), de potentiel ionique faible, est un cation soluble, d'où sa présence en solution ; le silicium, en limite de domaine, part ici sous forme d'acide silicique \(\mathrm{H_4SiO_4}\).
+
+\begin{piege}
+
+Ce n'est pas la charge seule qui décide, mais le \textbf{rapport} \(z/r\) : un ion fortement chargé mais volumineux peut rester soluble.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attendait trois légendes : cations solubles, cations précipitants (hydrolysats), oxyanions solubles. Il s'étonne que ce classique de la sédimentologie, inscrit au programme, soit rarement bien légendé, et relève des confusions avec les séries magmatiques ou les étapes du cycle sédimentaire, ainsi que des légendes élément par élément (« Ca : calcium »).
+
+\end{jury}
+
+\hypertarget{question-9.c}{%
+\subsection{Question 9.c}\label{question-9.c}}
+
+\begin{indication}{1}
+
+Bien écrire l'équation dans le sens de la \textbf{précipitation}, et vérifier le devenir du carbone : combien d'hydrogénocarbonates pour un carbonate solide ?
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+Équation 2 :
+
+\equationajustee{\boxed{\mathrm{Ca^{2+}_{(aq)} + 2\,HCO_3^-{}_{(aq)} \longrightarrow CaCO_3{}_{(s)} + CO_{2\,(aq)} + H_2O_{(l)}}}}
+
+Point capital pour la suite : cette précipitation \textbf{libère une molécule de \(\mathrm{CO_2}\) pour deux \(\mathrm{HCO_3^-}\) consommés}.
+
+Organismes marins qui assurent ou favorisent cette précipitation : \textbf{foraminifères}, \textbf{coccolithophoridés} (dont les plaques calcaires sont les coccolithes), \textbf{coraux}, \textbf{mollusques} (bivalves, gastéropodes), échinodermes, algues rouges calcaires ; les \textbf{cyanobactéries} la favorisent indirectement (stromatolithes).
+
+\begin{jury}
+
+Le rapport 2026 note que l'équation attendue a rarement été donnée ; la forme simplifiée \(\mathrm{CO_3^{2-}} + \mathrm{Ca^{2+}} = \mathrm{CaCO_3}\) ne rapporte pas tous les points. Pour les organismes, le pluriel de l'énoncé compte : un seul type d'organisme a été pénalisé.
+
+\end{jury}
+
+\begin{piege}
+
+Le rapport 2026 : « Les réponses telles que coccolithes ou encore stromatolithes n'ont pas été acceptées puisqu'il ne s'agit pas d'organismes. » Citer des organismes à test siliceux (diatomées) est une autre erreur fréquente.
+
+\end{piege}
+
+\hypertarget{question-10.a}{%
+\subsection{Question 10.a}\label{question-10.a}}
+
+\begin{indication}{1}
+
+L'énoncé impose d'utiliser \textbf{les deux} équations : il faut donc les combiner pour obtenir un bilan net, et non se contenter de dire que l'altération consomme du \(\mathrm{CO_2}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Multiplier l'équation 2 par le coefficient qui permet d'éliminer les \(\mathrm{HCO_3^-}\).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+Pour une mole d'olivine, on somme (1) et \(2 \times\) (2) :
+
+\equationajustee{\mathrm{Mg_2SiO_4 + 4\,CO_2 + 4\,H_2O \longrightarrow H_4SiO_4 + 4\,HCO_3^- + 2\,Mg^{2+}}}
+\equationajustee{\mathrm{2\,Ca^{2+} + 4\,HCO_3^- \longrightarrow 2\,CaCO_3 + 2\,CO_2 + 2\,H_2O}}
+\equationajustee{\boxed{\mathrm{Mg_2SiO_4 + 2\,CO_2 + 2\,H_2O + 2\,Ca^{2+} \longrightarrow 2\,CaCO_3 + H_4SiO_4 + 2\,Mg^{2+}}}}
+
+L'altération capte 4 \(\mathrm{CO_2}\), la précipitation en restitue 2 : \textbf{le bilan net est de 2 moles de \(\mathrm{CO_2}\) piégées par mole d'olivine}, stockées sous forme de carbonate solide. Le \(\mathrm{CO_2}\) étant un gaz à effet de serre, ce piégeage contribue à atténuer le réchauffement climatique.
+
+Ordre de grandeur, avec \(M(\mathrm{Mg_2SiO_4}) \approx 141\) g·mol⁻¹, pour une tonne d'olivine :
+
+\equationajustee{m(\mathrm{CO_2}) \approx \frac{10^6}{141} \times 2 \times 44 \approx 6 \times 10^5\ \text{g}}
+
+soit \textbf{environ 0,6 tonne de \(\mathrm{CO_2}\)} (et jusqu'à ≈ 1,25 t tant que le carbone reste dissous sous forme \(\mathrm{HCO_3^-}\)).
+
+Le mécanisme n'a rien d'artificiel : c'est celui qui régule naturellement le climat aux échelles géologiques (altération des silicates continentaux, export d'ions vers l'océan, précipitation de carbonates). La géo-ingénierie proposée ne fait qu'en \textbf{accélérer} la cinétique, en augmentant la surface réactive (broyage fin) et en renouvelant la solution au contact des grains (action des vagues).
+
+\begin{piege}
+
+Ne compter que l'équation 1 (4 moles de \(\mathrm{CO_2}\)) surestime le rendement d'un facteur deux : c'est exactement l'erreur que la question cherche à écarter en imposant l'usage des deux équations. Autre erreur relevée par le jury : additionner les équations 1 et 2 sans multiplier la seconde par 2, ce qui conduit à trois molécules de \(\mathrm{CO_2}\) piégées.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : la majorité des candidats n'a raisonné qu'à partir de l'équation 1 ; un raisonnement complet sur cette seule équation (piégeage du \(\mathrm{CO_2}\), gaz à effet de serre) a rapporté la moitié des points. Le bilan combiné, très rarement proposé, était attendu.
+
+\end{jury}
+
+\hypertarget{question-10.b}{%
+\subsection{Question 10.b}\label{question-10.b}}
+
+\begin{indication}{1}
+
+Suivre le carbone, atome par atome, dans le bilan combiné : d'où part-il, par où transite-t-il, où finit-il ?
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Diminuent} : l'\textbf{atmosphère}, dont le \(\mathrm{CO_2}\) est consommé, et l'\textbf{océan} : le bilan combiné piège du \(\mathrm{CO_2}\) dissous, et les échanges par dissolution et dégazage entre océan et atmosphère font baisser les deux réservoirs.
+\item
+  \textbf{Augmente} : le \textbf{réservoir carbonaté} de la lithosphère, par la formation de roches carbonatées.
+\end{itemize}
+
+Le \(\mathrm{HCO_3^-}\) produit par l'équation 1 n'est qu'un intermédiaire, consommé par l'équation 2 : au bilan, le carbone passe de l'atmosphère et de l'océan vers les carbonates. Le stock de silicates diminue, mais il n'appartient pas au cycle du carbone.
+
+\begin{piege}
+
+Le rapport 2026 : « une grande partie des candidats ont indiqué que le volume du réservoir océanique allait augmenter. » C'est oublier l'équation 2 : le carbone dissous ne s'accumule pas dans l'océan, il précipite en carbonates. Le jury accepte « géosphère » ou « réservoir lithosphérique » pour le réservoir qui augmente.
+
+\end{piege}
+
+\hypertarget{question-10.c}{%
+\subsection{Question 10.c}\label{question-10.c}}
+
+\begin{indication}{1}
+
+Deux horloges à comparer : celle de la réaction elle-même, et celle du réservoir d'arrivée (son temps de résidence).
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Il s'agit d'un effet à \textbf{long terme}, pour deux raisons convergentes.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Le réservoir d'arrivée est lent.} Les flux qui concernent le réservoir carbonaté sont lents : précipitation et dissolution des carbonates, et surtout \textbf{subduction}, qui recycle les carbonates vers le manteau avant que le volcanisme ne restitue le carbone. Son temps de résidence est de l'ordre du million à la centaine de millions d'années, contre quelques années dans l'atmosphère. Le stockage est donc quasi irréversible à l'échelle humaine.
+\item
+  \textbf{La cinétique de la réaction est lente.} Même finement broyée, l'olivine met des années à des décennies à se dissoudre, et l'ensemble du processus (transport des ions, précipitation, sédimentation) s'étale sur des siècles.
+\end{itemize}
+
+Conséquence à mentionner : un procédé dont l'effet significatif se manifeste sur des siècles ne peut pas répondre à une crise climatique décennale ; c'est un complément, non un substitut à la réduction des émissions.
+
+\begin{jury}
+
+Le rapport 2026 : « Le lien avec le recyclage des carbonates dans le manteau par subduction n'a presque jamais été évoqué. » L'effet à long terme, lui, est le plus souvent trouvé : c'est sa justification par les flux et le temps de résidence qui fait la différence.
+
+\end{jury}
+
+\hypertarget{question-10.d}{%
+\subsection{Question 10.d}\label{question-10.d}}
+
+\begin{indication}{1}
+
+Une définition en trois éléments : une substance ou une forme d'énergie, une origine géologique, et une exploitabilité \textbf{potentielle}. Attention au mot voisin « réserve ».
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Une \textbf{ressource géologique} est un composé naturel (minéral, roche, eau, hydrocarbure\ldots) ou une forme d'énergie d'origine géologique, \textbf{potentiellement} exploitable et utilisable pour satisfaire les besoins humains, même si son exploitation n'est pas encore rentable ou techniquement possible. Elle est le plus souvent \textbf{non renouvelable} à l'échelle des temps humains.
+
+On la distingue de la \textbf{réserve}, partie de la ressource identifiée, exploitable et rentable dans le contexte technique et économique du moment ; le \textbf{gisement} est le lieu où la ressource est concentrée.
+
+\begin{piege}
+
+Définir la ressource par sa rentabilité, c'est définir la réserve : le rapport 2026 indique que les candidats qui ont confondu ressources et réserves ont été pénalisés.
+
+\end{piege}
+
+\hypertarget{question-10.e}{%
+\subsection{Question 10.e}\label{question-10.e}}
+
+\begin{indication}{1}
+
+Il faut une roche très riche en olivine, en très grand volume, et affleurant sur un continent. Par quel mécanisme tectonique une roche du manteau peut-elle se retrouver sur un continent ?
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Les \textbf{massifs de péridotites mantelliques portés à l'affleurement}, c'est-à-dire principalement les \textbf{complexes ophiolitiques obductés} sur les continents lors de la fermeture d'un océan (Oman, Nouvelle-Calédonie, Chypre, Alpes), ainsi que les grands massifs de péridotites (dunites de Norvège). Les niveaux de \textbf{dunite}, qui contiennent plus de 90 \% d'olivine, en constituent le meilleur minerai. Le rapport 2026 attendait la mention des zones ophiolitiques, où les péridotites peuvent affleurer.
+
+\hypertarget{question-10.f}{%
+\subsection{Question 10.f}\label{question-10.f}}
+
+\begin{indication}{1}
+
+Organiser la réponse en familles : le bilan carbone du procédé lui-même, l'ordre de grandeur des masses, les impacts, la vérification.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour les impacts, se souvenir de la minéralogie d'une péridotite et des métaux qu'elle contient : c'est l'argument le plus spécifique du sujet.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Bilan carbone du procédé.} Extraction, concassage, broyage très fin (opération très énergivore) et transport jusqu'aux littoraux émettent du \(\mathrm{CO_2}\), qu'il faut retrancher des 0,6 t séquestrées par tonne : le gain net doit être démontré, non postulé.
+\item
+  \textbf{Échelle des masses.} À 0,6 t de \(\mathrm{CO_2}\) par tonne d'olivine, compenser des émissions mondiales de l'ordre de 40 Gt de \(\mathrm{CO_2}\) par an supposerait de mobiliser des dizaines de gigatonnes de roche par an, soit l'ordre de grandeur de toute l'industrie extractive mondiale.
+\item
+  \textbf{Risques sanitaires et écotoxicologiques.} Les péridotites contiennent du \textbf{nickel} et du \textbf{chrome}, libérés par l'altération et susceptibles de s'accumuler dans les chaînes alimentaires littorales ; les massifs ultrabasiques contiennent fréquemment des minéraux fibreux de type amiante, dont le broyage produit des poussières inhalables.
+\item
+  \textbf{Impacts écologiques.} Turbidité, modification de la granulométrie et du pH des sédiments littoraux, apport massif de Mg²⁺ et d'acide silicique pouvant favoriser une eutrophisation, perturbation des communautés benthiques (faune et flore), destruction d'écosystèmes et dégradation des paysages sur le site minier.
+\item
+  \textbf{Permanence du stockage.} Le \(\mathrm{CaCO_3}\) formé peut se redissoudre s'il gagne des eaux sous-saturées, en particulier sous la profondeur de compensation des carbonates, ce qui restitue le carbone.
+\item
+  \textbf{Cinétique, vérification, gouvernance.} La dissolution reste lente et son rendement réel en mer est mal contraint ; quantifier le \(\mathrm{CO_2}\) effectivement séquestré en milieu ouvert est difficile. S'y ajoutent le coût, l'acceptabilité sociale et le risque que la promesse d'un puits futur serve à différer la réduction des émissions.
+\end{enumerate}
+
+\begin{jury}
+
+Le rapport 2026 rappelle que l'énoncé demande « des limites » : une seule ne suffit pas. Il précise que « Des réponses évasives comme ``contraintes financières et environnementales'' ne permettaient pas d'obtenir l'intégralité des points » : chaque limite doit être nommée et expliquée.
+
+\end{jury}
+
+\hypertarget{question-11.a}{%
+\subsection{Question 11.a}\label{question-11.a}}
+
+\begin{indication}{1}
+
+Question de cours : énumérer les horizons de haut en bas, en précisant pour chacun ce qui le caractérise (matière organique, lessivage, accumulation, altération).
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+De haut en bas :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{O} : litière, débris végétaux peu décomposés, matière organique ;
+\item
+  \textbf{A} : horizon organo-minéral, humifère, sombre, riche en racines et en organismes du sol ;
+\item
+  \textbf{E} (dans certains sols) : horizon éluvial, appauvri par lessivage en argiles, fer et matière organique, de teinte claire ;
+\item
+  \textbf{B} : horizon d'accumulation (illuvial), minéral, enrichi en argiles et en oxydes de fer ;
+\item
+  \textbf{C} : roche-mère fragmentée et altérée ;
+\item
+  \textbf{R} : roche-mère saine.
+\end{itemize}
+
+Le dispositif du document 10 reprend cette logique : la couche de mélange correspond aux horizons supérieurs mêlés à l'olivine, puis viennent HB, HC et R.
+
+\begin{jury}
+
+Le rapport 2026 attendait la nature de chaque horizon (organique, organo-minéral, roche mère altérée, roche mère ou substrat) : « Les candidats ayant seulement nommé ces horizons par les lettres correspondantes sans décrire leur nature ont été pénalisés. »
+
+\end{jury}
+
+\hypertarget{question-11.b}{%
+\subsection{Question 11.b}\label{question-11.b}}
+
+\begin{indication}{1}
+
+Commencer par chiffrer : comparer les deux nuages de points, aux temps courts puis aux temps longs.
+
+\end{indication}
+
+\begin{indication}{2}
+
+D'où vient le \(\mathrm{Mg^{2+}}\) lessivé ? Quelle propriété générale des réactions chimiques est alors en jeu ?
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\textbf{Lecture du document 10D.}
+
+\begin{itemize}
+\tightlist
+\item
+  À 19 °C (triangles), la teneur en Mg²⁺ de la solution de lessivage passe de ≈ 3,3--4,5 u.a. les vingt premiers jours à \textbf{5--5,5 u.a.} à partir de ≈ 40 jours, puis se stabilise.
+\item
+  À 4 °C (points rouges), elle reste faible et irrégulière, entre \textbf{1,7 et 3 u.a.} (moyenne ≈ 2,4 u.a., hormis un premier point à 4,4).
+\end{itemize}
+
+\textbf{La solution est donc environ deux fois plus riche en Mg²⁺ à 19 °C qu'à 4 °C} (≈ 5,3 contre ≈ 2,4 u.a.).
+
+\textbf{Explication.} Le Mg²⁺ lessivé provient de l'hydrolyse de l'olivine (équation 1) : sa hausse traduit une \textbf{altération chimique plus poussée} à 19 °C. Comme toute réaction chimique, celle-ci est d'autant plus rapide que la température est élevée : à 19 °C, l'hydrolyse libère plus de Mg²⁺ dans le même temps. S'y ajoute l'activité biologique du sol (respiration des racines et des micro-organismes), elle aussi accrue, qui enrichit l'eau du sol en \(\mathrm{CO_2}\) donc en acidité, ce qui accélère encore l'hydrolyse.
+
+C'est la raison pour laquelle l'altération chimique est intense sous climat chaud et humide (sols épais, latérites des zones intertropicales) et faible sous climat froid, où domine la désagrégation mécanique.
+
+\begin{jury}
+
+Le rapport 2026 : « Les résultats de l'expérience ont rarement été présentés avec précision, et n'ont presque jamais été quantifiés. » La plupart des candidats se sont contentés d'écrire que la température augmente la teneur en Mg²⁺, sans proposer d'explication ; le jury cite cette question comme exemple d'analyse quantifiée manquante.
+
+\end{jury}
+
+\hypertarget{question-11.c}{%
+\subsection{Question 11.c}\label{question-11.c}}
+
+\begin{indication}{1}
+
+Avant toute autre critique, se demander à quoi l'on compare les mesures. Quelle condition expérimentale manque-t-il pour attribuer le \(\mathrm{Mg^{2+}}\) mesuré à l'olivine ajoutée ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux autres angles : combien d'échantillons par condition ? et la grandeur mesurée est-elle bien celle que l'on veut démontrer ?
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Un témoin sans olivine}, à chaque température. C'est le manque principal : un sol libère naturellement du \(\mathrm{Mg^{2+}}\) (altération des argiles et des micas, complexe adsorbant), et rien ne prouve donc que le magnésium mesuré provienne de l'olivine ajoutée.
+\item
+  \textbf{Des répétitions.} Une seule carotte par température : aucune barre d'erreur, aucun test statistique possible, et la variabilité naturelle entre carottes n'est pas évaluée.
+\item
+  \textbf{Une mesure du carbone.} Le \(\mathrm{Mg^{2+}}\) n'est qu'un indicateur indirect : pour démontrer une séquestration, il faudrait mesurer l'alcalinité et le carbone inorganique dissous, et vérifier qu'aucun carbonate ne reprécipite dans le sol --- ce qui relarguerait du \(\mathrm{CO_2}\).
+\item
+  \textbf{Le contrôle des autres facteurs} : volume, pH et composition de la solution d'arrosage, humidité, granulométrie exacte de l'olivine, teneur initiale du sol en magnésium.
+\item
+  \textbf{La durée et le réalisme} : 120 jours seulement, en laboratoire, sur une carotte sans végétation ni racines, sans variations saisonnières. Le suivi d'autres éléments libérés (Ni, Cr) manque également.
+\item
+  \textbf{Un contrôle direct de l'altération} : observation des grains d'olivine au MEB en fin d'expérience, ou essai avec une solution d'arrosage enrichie en \(\mathrm{CO_2}\).
+\end{enumerate}
+
+\begin{jury}
+
+D'après le rapport 2026, une seule limite pertinente suffisait ici (carotte unique par condition, sol témoin sans olivine, contrôle au MEB, ajout de \(\mathrm{CO_2}\)\ldots), mais la sous-question a rarement été traitée.
+
+\end{jury}
+
+\hypertarget{question-11.d}{%
+\subsection{Question 11.d}\label{question-11.d}}
+
+\begin{indication}{1}
+
+Le verbe « concilier » impose deux mécanismes distincts : l'un climatique, l'autre agronomique. La réponse doit expliciter les deux.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que devient un sol acide auquel on apporte des cations \(\mathrm{Mg^{2+}}\) et \(\mathrm{Ca^{2+}}\) ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+La solution proposée est l'\textbf{épandage de roche silicatée finement broyée sur les sols agricoles} (olivine, ou mieux basalte), incorporée aux horizons de surface des parcelles cultivées.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Côté climat} : l'hydrolyse consomme du \(\mathrm{CO_2}\) (équation 1) ; les \(\mathrm{HCO_3^-}\) formés sont exportés par les eaux de drainage vers les rivières puis l'océan, où le carbone est stocké durablement, et peuvent précipiter en carbonates (équation 2).
+\item
+  \textbf{Côté agronomie} : la libération de cations basiques (\(\mathrm{Mg^{2+}}\), \(\mathrm{Ca^{2+}}\)) agit comme un \textbf{amendement}, qui relève le pH des sols acidifiés par les engrais azotés --- ce qui améliore la disponibilité du phosphore et réduit la toxicité de l'aluminium --- et qui apporte des \textbf{nutriments} (le magnésium est constituant de la chlorophylle) ainsi que de la \textbf{silice}, bénéfique aux Poacées.
+\end{itemize}
+
+Les terres cultivées sont en outre déjà accessibles et travaillées : le labour renouvelle en permanence les surfaces réactives, comme le faisaient les vagues sur la plage, et le surcoût logistique est faible. On préfère souvent le basalte à l'olivine : moins efficace par tonne, mais bien plus pauvre en nickel et en chrome.
+
+Autre solution, citée par le rapport 2026 : broyer des \textbf{feldspaths potassiques} et les incorporer au sol. Leur hydrolyse piège aussi du \(\mathrm{CO_2}\), par analogie avec l'olivine, et libère du potassium, l'un des principaux engrais.
+
+\hypertarget{question-11.e}{%
+\subsection{Question 11.e}\label{question-11.e}}
+
+\begin{indication}{1}
+
+Reprendre les limites de la question 10.f et se demander lesquelles deviennent plus graves lorsque le milieu récepteur est un sol cultivé, qui produit de la nourriture.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Contamination métallique des sols et des cultures} : le nickel et le chrome libérés s'accumulent dans les horizons de surface, peuvent être prélevés par les plantes et entrer dans la chaîne alimentaire.
+\item
+  \textbf{Effet agronomique non garanti} : la hausse du pH est bénéfique sur sol acide, mais délétère sur sol neutre ou calcaire (blocage du fer, du manganèse, du zinc) ; les communautés microbiennes et la faune du sol peuvent être modifiées.
+\item
+  \textbf{Risque professionnel} : manipulation de poussières fines, éventuellement fibreuses, par les agriculteurs.
+\item
+  \textbf{Bilan carbone, coût énergétique et économique} : broyage énergivore, transport, et quantités à épandre de l'ordre de plusieurs dizaines de tonnes par hectare.
+\item
+  \textbf{Dépendance au climat} : le document 10 montre une altération deux fois plus faible à 4 °C qu'à 19 °C ; le rendement dépend donc de la température, donc de la latitude et de la saison.
+\item
+  \textbf{Autolimitation} : l'hydrolyse partielle peut former des argiles en surface des grains, qui les isolent de la solution et limitent l'hydrolyse.
+\item
+  \textbf{Vérification et permanence} : le \(\mathrm{Mg^{2+}}\) peut être retenu sur le complexe argilo-humique sans être exporté, des carbonates peuvent reprécipiter dans le sol en relarguant du \(\mathrm{CO_2}\), et les \(\mathrm{HCO_3^-}\) peuvent dégazer en rivière. Sans mesure fiable, le gain climatique n'est pas démontrable.
+\item
+  \textbf{Échelle et aléa moral} : le potentiel mondial reste très inférieur aux émissions, et la promesse d'un puits futur peut retarder les réductions à la source.
+\end{enumerate}
+
+\begin{jury}
+
+Le rapport 2026 : « Deux limites étaient donc nécessaires pour obtenir la totalité des points. » Les rares candidats qui ont traité cette question n'en ont le plus souvent proposé qu'une.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-biologie-thuxe8me-1-wolbachia-une-bactuxe9rie-symbiotique}{%
+\section{\texorpdfstring{Partie biologie --- Thème 1 : \emph{Wolbachia}, une bactérie symbiotique}{Partie biologie --- Thème 1 : Wolbachia, une bactérie symbiotique}}\label{partie-biologie-thuxe8me-1-wolbachia-une-bactuxe9rie-symbiotique}}
+
+Ce thème monte progressivement en échelle : la cellule (identification de la bactérie), l'organisme (apport nutritionnel à la punaise, protection du moustique), puis la population humaine (lutte antivectorielle en Indonésie). Les techniques y sont systématiquement interrogées : chaque question « justifier la technique » attend un raisonnement sur ce que la technique permet et sur ce qu'une autre ne permettrait pas.
+
+\hypertarget{question-1a}{%
+\subsection{Question 1a}\label{question-1a}}
+
+\begin{indication}{1}
+
+Regarder les barres d'échelle avant tout le reste, et comparer la taille des détails visibles au pouvoir séparateur du microscope optique.
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+Les barres d'échelle indiquent 0,6 µm (cliché A) et 500 nm (cliché B) : les objets observés mesurent de l'ordre de 0,5 à 1 µm, et des détails bien plus fins sont visibles (membranes, enveloppe nucléaire, paroi de la vésicule). Or le pouvoir séparateur d'un microscope photonique est limité par la diffraction à environ 0,2 µm : il ne permettrait pas d'observer ces structures.
+
+Les images sont en outre en \textbf{niveaux de gris} --- le contraste vient de zones plus ou moins denses aux électrons --- et correspondent à des \textbf{coupes} très fines révélant l'\textbf{ultrastructure} des cellules. Ce sont les caractéristiques de la \textbf{microscopie électronique à transmission (MET)}, dont le pouvoir séparateur est de l'ordre du nanomètre.
+
+\begin{methode}
+
+Devant tout cliché de microscopie, le premier geste est la lecture de l'échelle : elle tranche à elle seule entre photonique (≳ 0,2 µm), électronique à balayage (surfaces, relief) et électronique à transmission (coupes, niveaux de gris).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 : « De nombreux candidats n'ont pas tenu compte du terme ``justifier'' de la première sous-question ». Nommer le MET ne suffisait pas : il fallait dire ce qui permet de le reconnaître (ultrastructure, échelle inférieure au micromètre, zones plus ou moins denses aux électrons).
+
+\end{jury}
+
+\hypertarget{question-1b}{%
+\subsection{Question 1b}\label{question-1b}}
+
+\begin{indication}{1}
+
+Un argument décisif est \textbf{comparatif} : que voit-on, sur le même cliché, dans la cellule hôte et dans les structures \emph{w} ?
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+Deux arguments, lisibles sur le document 1A :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Absence de noyau et d'organites.} Le contenu des structures \emph{w} est homogène, sans enveloppe nucléaire ni compartiment interne, alors que le noyau \emph{n} de la cellule hôte est parfaitement visible sur le même cliché : l'organisation est \textbf{procaryote}.
+\item
+  \textbf{Taille.} Les structures \emph{w} mesurent ≈ 0,5 à 1 µm (mesurables à la barre d'échelle), ordre de grandeur d'une bactérie --- bien inférieur à celui d'une cellule eucaryote (10 à 100 µm) et supérieur à celui d'un virus.
+\end{enumerate}
+
+\begin{piege}
+
+Invoquer les ribosomes 70S, un chromosome circulaire, un nucléoïde ou une paroi n'est pas recevable : rien de tout cela n'est visible sur le document (et \emph{Wolbachia} est une bactérie Gram négatif), alors que la question demande des arguments tirés du cliché. Le rapport 2026 ajoute que la simple présence dans une cellule eucaryote et le caractère unicellulaire ne prouvent rien : il existe des eucaryotes unicellulaires parasites intracellulaires, comme le plasmodium. Enfin, ne pas confondre avec la question d'un caractère parasite ou pathogène : le titre du thème parle d'une bactérie symbiotique.
+
+\end{piege}
+
+\hypertarget{question-1c}{%
+\subsection{Question 1c}\label{question-1c}}
+
+\begin{indication}{1}
+
+L'énoncé précise qu'aucune justification n'est attendue : répondre en une phrase, mais ne rien omettre de ce que montre le cliché « 24 h après ».
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+Après infection, \emph{Wolbachia} est \textbf{intracellulaire} : elle se trouve dans le \textbf{cytoplasme} de la cellule hôte. L'une des bactéries est \textbf{à l'intérieur d'une vésicule} (\emph{v}) ; aucune vésicule n'est visible autour de la seconde, qui semble dans le cytosol. Avant la co-culture, les bactéries étaient à l'extérieur (\emph{e}), au contact de la membrane plasmique.
+
+\begin{jury}
+
+Le rapport 2026 juge « cytoplasme » trop imprécis : la vésicule (à ne pas confondre avec une vacuole) était attendue, la position dans le cytosol étant acceptée pour la seconde bactérie.
+
+\end{jury}
+
+\hypertarget{question-2a}{%
+\subsection{Question 2a}\label{question-2a}}
+
+\begin{indication}{1}
+
+Le document comporte deux volets qui, séparément, ne prouvent rien. Formuler chacun comme un maillon, puis les relier.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un mot de l'énoncé est à exploiter : la punaise de lit est \textbf{hématophage}. Qu'est-ce que cela implique sur son régime vitaminique ?
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+\textbf{Document 2A.} Le taux de métamorphose des larves en adultes est d'environ 89 \% lorsque le sang apporte toutes les vitamines B, et tombe à environ 65 \% lorsqu'il est privé de la seule vitamine B7, soit une baisse relative d'environ un quart ; la différence est statistiquement significative. \emph{Conclusion : la vitamine B7 est nécessaire au bon déroulement de la métamorphose.}
+
+\textbf{Document 2B.} Chez des punaises traitées par un antibiotique, donc débarrassées de \emph{Wolbachia}, la teneur en B7 passe de ≈ 2,2 à ≈ 1,5 ng·mg⁻¹, soit environ un tiers de moins, là encore significativement. \emph{Conclusion : une part de la vitamine B7 de la punaise est apportée par Wolbachia.}
+
+\textbf{Mise en relation.} \emph{Wolbachia} fournit de la vitamine B7, et la B7 est nécessaire à la métamorphose : la bactérie favorise donc le développement de son hôte. Ce résultat prend tout son sens compte tenu du régime strictement \textbf{hématophage} de la punaise, le sang de Mammifère étant très pauvre en vitamines du groupe B : le symbiote comble une carence imposée par un régime spécialisé. La relation est \textbf{mutualiste}.
+
+\begin{jury}
+
+Le rapport 2026 juge ce volet majoritairement réussi, mais regrette des réponses non appuyées sur une comparaison de valeurs chiffrées ou une quantification relative.
+
+\end{jury}
+
+\hypertarget{question-2b}{%
+\subsection{Question 2b}\label{question-2b}}
+
+\begin{indication}{1}
+
+Quel maillon de la démonstration n'a jamais été mesuré directement ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une expérience complémentaire teste une hypothèse causale. Penser à une expérience de restauration, et aux témoins qui la rendent interprétable.
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+Le maillon manquant est l'effet direct de \emph{Wolbachia} sur la métamorphose. On propose donc une \textbf{expérience de restauration}, sur quatre lots de punaises élevées dans des conditions par ailleurs identiques :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2370}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2813}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1750}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2767}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Lot
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Antibiotique
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Apport de B7
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Résultat attendu
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 (témoin) & non & non & métamorphose élevée (≈ 89 \%) \\
+2 & oui & non & métamorphose abaissée (≈ 65 \%) \\
+3 & oui & oui & métamorphose \textbf{restaurée} \\
+4 (témoin de toxicité) & oui, sur punaises non infectées & non & inchangée \\
+\end{longtable}
+
+Si l'apport de biotine seule restaure la métamorphose des punaises traitées (lot 3), on démontre que c'est bien \textbf{par la vitamine B7} que \emph{Wolbachia} agit. Le lot 4 vérifie que l'antibiotique n'est pas toxique par lui-même. Variante possible : réinfecter des punaises traitées par \emph{Wolbachia} et observer le retour à la normale.
+
+\begin{piege}
+
+Augmenter l'effectif n'est pas une expérience complémentaire : c'est une amélioration statistique. Une expérience complémentaire teste une \textbf{hypothèse}. Le rapport 2026 juge cette sous-question rarement traitée et regrette des propositions sans protocole précis (vérifier la présence de \emph{Wolbachia}, sans dire comment) ou hors sujet (étudier les autres vitamines B). Mesurer la métamorphose avec et sans antibiotique, ou suivre le transfert de précurseurs radioactifs de la vitamine B7 des bactéries aux punaises, a été accepté.
+
+\end{piege}
+
+\hypertarget{question-3a}{%
+\subsection{Question 3a}\label{question-3a}}
+
+\begin{indication}{1}
+
+Cinq lignes : une phrase de principe pour la RT-PCR, une pour le Western blot, une pour la comparaison. Le mot-clé est donné par l'énoncé lui-même : DENV-2 est un virus \textbf{à ARN}.
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+(5 lignes.) La RT-PCR comporte une rétro-transcription des ARN en ADN complémentaire, suivie d'une amplification PCR de cet ADN avec des amorces spécifiques : elle identifie un \textbf{ARN spécifique} (en version quantitative, la fluorescence émise à chaque cycle mesure la quantité d'ARN de départ). Le Western blot, lui, sépare des \textbf{protéines} par électrophorèse et identifie une protéine spécifique grâce à des anticorps. Comme DENV-2 est un virus \textbf{à ARN}, la RT-PCR quantifie directement son génome, donc sa multiplication, avec une sensibilité bien supérieure (quelques copies suffisent) et sans nécessiter d'anticorps. Le Western blot renseigne en revanche sur la protéine effectivement produite : les deux informations sont complémentaires.
+
+\begin{jury}
+
+Le rapport 2026 relève de nombreuses confusions entre RT-PCR et PCR simple, entre Western, Northern et Southern blot, et entre électrophorèse simple et blot suivi d'un immunomarquage. Il précise : « Les réponses du type ``la RT-PCR est plus précise que le WB'', sans justification, n'ont pas été valorisées. »
+
+\end{jury}
+
+\hypertarget{question-3b}{%
+\subsection{Question 3b}\label{question-3b}}
+
+\begin{indication}{1}
+
+Devant un Western blot, une seule question : comment savoir que les quantités déposées dans les différentes pistes sont comparables ?
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+Il manque un \textbf{témoin de charge} : le marquage, dans chaque piste, d'une protéine constitutive du moustique (actine, tubuline), qui permettrait de vérifier que la même quantité d'extrait protéique a été déposée dans chaque puits du gel. Sans lui, l'absence de bande anti-DENV-2 en présence de \emph{Wolbachia} peut résulter d'un dépôt insuffisant et non d'une absence réelle de la protéine virale.
+
+On peut y ajouter un \textbf{marqueur de masse moléculaire} et l'indication du nombre de répétitions.
+
+\begin{piege}
+
+Le rapport 2026 : « De nombreux candidats ont proposé de compléter le document 3B par un témoin W-/DENV- qui ne présenterait aucun intérêt. » Le jury attendait le témoin de charge. Autre contresens relevé : parler d'anticorps anti-W ou anti-DENV-2 produits par le moustique, alors que les anticorps sont les outils de révélation du blot.
+
+\end{piege}
+
+\hypertarget{question-3c}{%
+\subsection{Question 3c}\label{question-3c}}
+
+\begin{indication}{1}
+
+Dix lignes pour trois volets : A donne la quantité de génome viral, B la protéine virale, C une piste de mécanisme. Chiffrer chaque volet avant de conclure.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention à l'axe du document 3A : il est gradué en milliers de copies. Et penser à la conséquence pour le moustique lui-même, pas seulement pour le virus.
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+(10 lignes.) Le document 3A montre qu'après infection par DENV-2 les moustiques porteurs de \emph{Wolbachia} contiennent ≈ 0,2 millier de copies d'ARN viral, contre ≈ 3,4 milliers chez les moustiques dépourvus de la bactérie : la charge virale est divisée par plus de dix, donc la multiplication du virus est fortement réduite. Le document 3B le confirme au niveau protéique : la protéine virale n'est révélée que chez les moustiques sans \emph{Wolbachia} ; en présence de la bactérie (bande anti-Wolb positive), aucune protéine virale n'est détectée, bien que le moustique ait été exposé au virus. Le document 3C fournit une piste de mécanisme : chez des moustiques porteurs de \emph{Wolbachia} et non infectés par DENV-2, quatre gènes de l'immunité sont significativement surexprimés. La bactérie maintient donc les défenses de son hôte en état d'activation. \textbf{Conclusion : \emph{Wolbachia} rend \emph{Aedes aegypti} résistant à DENV-2} --- réplication du génome viral fortement réduite, protéine virale indétectable --- vraisemblablement en stimulant son immunité innée. Protégé, le moustique symbiotique voit sa \textbf{fitness augmentée} : nouveau bénéfice de la symbiose. Il devient en outre un mauvais vecteur du virus.
+
+\begin{jury}
+
+Le rapport 2026 : la protection du moustique par stimulation de son immunité est souvent bien démontrée, mais « l'augmentation de la fitness des moustiques en symbiose avec la bactérie n'a que très rarement été mentionnée ». C'est elle qui relie ce document au caractère symbiotique étudié dans le thème.
+
+\end{jury}
+
+\begin{piege}
+
+Deux fautes classiques : parler d'anticorps ou d'immunité acquise chez un insecte, qui ne possède qu'une immunité \textbf{innée} ; et affirmer que \emph{Wolbachia} « tue le virus », alors que les documents montrent seulement un blocage de sa multiplication, dont le mécanisme n'est que suggéré par la corrélation du 3C.
+
+\end{piege}
+
+\hypertarget{question-4a}{%
+\subsection{Question 4a}\label{question-4a}}
+
+\begin{indication}{1}
+
+« Décrire » impose des valeurs et des dates. Traiter d'abord la région test, puis la région contrôle, chacune avec ses chiffres.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La hausse observée dans les régions contrôle est elle-même un résultat : comment l'expliquer, sachant qu'aucun lâcher n'y a été fait et que les régions sont imbriquées (4A) ?
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+\textbf{Régions test (4C, région 10).} Au premier relevé (printemps 2017, après le lâcher d'œufs infectés de janvier), ≈ 18 \% des \emph{A. aegypti} sont porteurs de \emph{Wolbachia}. La proportion augmente ensuite rapidement : ≈ 60--75 \% à l'été 2017, ≈ 88 \% fin 2017, ≈ 98 \% début 2018. Elle se maintient ensuite entre ≈ 90 et 100 \% jusqu'à fin 2019 (≈ 81--88 \% aux derniers relevés), sans nouveau lâcher. L'infection \textbf{envahit la population de moustiques en moins d'un an et s'y maintient}, de façon auto-entretenue.
+
+\textbf{Régions contrôle (4D, région 13).} Les relevés ne commencent que fin 2017. La proportion reste faible : quelques \% en 2018, ≈ 5--15 \% en 2019 avec un pic à ≈ 30 \% fin 2019, puis ≈ 13--20 \% début 2020. D'autres régions contrôle montent davantage (au-delà de 50 \%, jusqu'à ≈ 80 \% pour la région 4). Aucun lâcher n'y a pourtant été fait : la bactérie s'est \textbf{propagée} depuis les régions test voisines, vraisemblablement par migration de moustiques infectés, les régions étant imbriquées sur la carte 4A.
+
+\textbf{Interprétation.} Une invasion aussi rapide suppose que les moustiques infectés aient un avantage : une \textbf{fitness augmentée} (protection contre le virus, question 3), à laquelle s'ajoute la transmission maternelle de la bactérie, étudiée au thème 2.
+
+\textbf{Conséquence sanitaire (4B).} La proportion moyenne de personnes infectées par DENV-2 est de ≈ 0,03 \% dans les régions test, contre ≈ 0,10 \% dans les régions contrôle, soit une réduction d'un facteur ≈ 3.
+
+\begin{jury}
+
+Le rapport 2026 juge ce volet généralement réussi, mais note que la notion de fitness augmentée a trop peu été proposée pour expliquer l'invasion des zones test, et valorise l'hypothèse de migrations de moustiques vers les zones témoins.
+
+\end{jury}
+
+\hypertarget{question-4b}{%
+\subsection{Question 4b}\label{question-4b}}
+
+\begin{indication}{1}
+
+Quatre lignes : une phrase pour les atouts du dispositif, une ou deux pour les réserves. Trancher, ne pas délayer.
+
+\end{indication}
+
+\hypertarget{solution-50}{%
+\subsubsection{Solution}\label{solution-50}}
+
+(4 lignes.) Piste prometteuse : un lâcher installe durablement la bactérie (≈ 90--100 \% de porteurs pendant trois ans), sans insecticide, et les cas de dengue sont divisés par ≈ 3. Réserves : significativité non indiquée et forte variabilité (région test 10 ≈ région contrôle 13 en 4B) ; risque d'infection dépendant aussi des piqûres et des modes de vie, non renseignés ; témoins gagnés par la bactérie ; effets inconnus sur les autres maladies vectorielles et sur l'écosystème.
+
+\begin{piege}
+
+Ne pas écrire que \emph{Wolbachia} « tue les moustiques » : les documents 4C et 4D montrent une population de moustiques qui persiste, simplement devenue majoritairement porteuse. C'est la compétence vectorielle qui est visée, pas la population.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « Le terme ``discuter'' présent dans la consigne invite en effet les candidats à faire preuve d'esprit critique. » L'effet protecteur a très souvent été retrouvé sans nuance ; étaient pertinents les effets possibles sur d'autres maladies vectorielles ou sur l'écosystème, l'absence d'indication de significativité, et la dépendance du risque au nombre de piqûres, aux habitudes locales et au niveau de vie.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-biologie-thuxe8me-2-wolbachia-une-bactuxe9rie-parasite}{%
+\section{\texorpdfstring{Partie biologie --- Thème 2 : \emph{Wolbachia}, une bactérie parasite}{Partie biologie --- Thème 2 : Wolbachia, une bactérie parasite}}\label{partie-biologie-thuxe8me-2-wolbachia-une-bactuxe9rie-parasite}}
+
+Le thème construit, document après document, un modèle moléculaire complet. La progression est exemplaire : un phénotype (mortalité embryonnaire), une quantification et une dissection génétique (document 6), une caractérisation biochimique des deux protéines (document 7), enfin leur localisation (document 8). Chaque question suppose les précédentes.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Lire le document 5 comme un tableau à double entrée : une seule case diffère des autres.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour « se propage », raisonner en fréquences sur plusieurs générations : comparer le succès reproducteur d'une femelle infectée et celui d'une femelle non infectée, à mesure que les mâles infectés deviennent plus nombreux.
+
+\end{indication}
+
+\hypertarget{solution-51}{%
+\subsubsection{Solution}\label{solution-51}}
+
+Les quatre croisements donnent :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Femelle non infectée
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Femelle infectée
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Mâle non infecté} & descendance viable, non infectée & descendance viable, infectée \\
+\textbf{Mâle infecté} & \textbf{embryons morts} & descendance viable, infectée \\
+\end{longtable}
+
+\textbf{Un parasite.} Le croisement mâle infecté × femelle non infectée tue la totalité des embryons : la présence de la bactérie annule le succès reproducteur de ce couple. Or la bactérie, elle, tire profit de son hôte : elle y vit, s'y multiplie et s'y transmet. Bénéfice pour l'une, préjudice pour l'autre : c'est la définition du \textbf{parasitisme}. Le préjudice ne porte d'ailleurs pas sur l'individu qui l'héberge, mais sur son partenaire et leur descendance : c'est un parasitisme par manipulation de la reproduction.
+
+\textbf{Une espèce qui se propage.} Deux observations se combinent :
+
+\begin{itemize}
+\tightlist
+\item
+  la transmission maternelle est \textbf{totale} : toute la descendance d'une femelle infectée est infectée, quel que soit le mâle ;
+\item
+  les femelles infectées ont un \textbf{avantage relatif} : elles obtiennent une descendance viable avec tous les mâles, alors qu'une femelle non infectée n'en obtient qu'avec un mâle non infecté.
+\end{itemize}
+
+Les femelles infectées produisent donc, d'une génération à l'autre, plus de descendants que les femelles non infectées. On le chiffre en supposant que la moitié des individus est infectée à la génération \(n\) et que les croisements se font au hasard (chacun des quatre croisements avec la probabilité \(1/4\)) :
+
+\equationajustee{\begin{aligned}
+\text{descendants viables} &= \tfrac{3}{4} \\
+\text{descendants viables \text{infectés}} &= \tfrac{2}{4} \\
+\text{\text{fréquence} des \text{infectés} \text{à} la \text{génération} } n+1 &= \tfrac{2/4}{3/4} \\
+&= \tfrac{2}{3}
+\end{aligned}}
+
+Plus la proportion de mâles infectés augmente, plus les femelles non infectées sont pénalisées : le mécanisme est auto-amplifiant et la fréquence des individus infectés croît à chaque génération jusqu'à une quasi-fixation --- exactement ce qu'observe le document 4C du thème 1.
+
+\begin{methode}
+
+La propagation ne repose pas sur un avantage \textbf{absolu} des porteuses (elles ne pondent pas plus) mais sur un désavantage \textbf{relatif} imposé aux non-porteuses. C'est ce raisonnement fréquentiel qu'il faut expliciter.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 : dire qu'une femelle infectée transmet la bactérie à sa descendance ne justifie la propagation que si l'on précise que les femelles infectées produisent plus de descendants que les femelles non infectées. Il ajoute : « Le tableau de croisement permet de dire avec précision que 2/3 des descendants adultes seront infectés à la génération n+1 quand 1/2 des individus d'une population le sont à la génération n.~»
+
+\end{jury}
+
+\hypertarget{question-6a}{%
+\subsection{Question 6a}\label{question-6a}}
+
+\begin{indication}{1}
+
+Décoder d'abord la symbolique : symbole plein = individu infecté, symbole vide = non infecté. Repérer quelles lignes correspondent au croisement du document 5.
+
+\end{indication}
+
+\hypertarget{solution-52}{%
+\subsubsection{Solution}\label{solution-52}}
+
+Dans les cinq lignes du document 6, le mâle est infecté ; la femelle est non infectée dans les quatre premières et infectée dans la dernière.
+
+Le premier croisement (mâle infecté × femelle non infectée, sans modification génétique) donne en moyenne ≈ 5 \% d'embryons éclos (points dispersés de 0 à 20 \%), contre ≈ 95 \% pour le croisement mâle infecté × femelle infectée. \textbf{C'est bien ce que montrait le document 5} : la quasi-totalité des embryons meurt dans la combinaison mâle infecté × femelle non infectée, alors que la descendance est viable dès que la femelle est infectée.
+
+Le document 6 apporte en outre une information \textbf{quantitative} que le document 5, purement qualitatif, ne donnait pas : la mortalité n'est pas absolue, puisque ≈ 5 \% des embryons éclosent malgré tout.
+
+\begin{jury}
+
+Le rapport 2026 regrette des descriptions exhaustives du document 6, transgenèses comprises, alors que seules les lignes supérieure et inférieure répondaient à la question, et des lectures réduites à « aucun » et « tous » : « une lecture attentive de la figure montre des résultats d'éclosion moyens de 5\% dans le premier cas, et de 95 \% dans le second cas. »
+
+\end{jury}
+
+\hypertarget{question-6b}{%
+\subsection{Question 6b}\label{question-6b}}
+
+\begin{indication}{1}
+
+Comparer les trois lignes à ovocytes modifiés entre elles et au témoin : quelle modification, à elle seule, fait passer l'éclosion de 5 \% à 95 \% ?
+
+\end{indication}
+
+\hypertarget{solution-53}{%
+\subsubsection{Solution}\label{solution-53}}
+
+Tous ces croisements concernent des femelles \textbf{non infectées} fécondées par des mâles \textbf{infectés} :
+
+\begin{itemize}
+\tightlist
+\item
+  ovocyte exprimant \emph{cidB} seul : ≈ 5 \% d'éclosion, comme le témoin non modifié → CidB n'apporte rien ;
+\item
+  ovocyte exprimant \emph{cidA} seul : ≈ 95 \% → la viabilité est restaurée, au niveau du croisement compatible ;
+\item
+  ovocyte exprimant \emph{cidA} et \emph{cidB} : ≈ 95 \% → le sauvetage persiste malgré la présence de CidB.
+\end{itemize}
+
+\textbf{La condition suffisante est l'expression du gène \emph{cidA} (donc la présence de la protéine CidA) dans l'ovocyte}, que \emph{cidB} soit ou non exprimé. L'infection de la femelle elle-même n'est donc pas requise : seul compte le produit du gène bactérien.
+
+\begin{jury}
+
+Le rapport 2026 note que la réponse (expression de CidA dans l'ovocyte, par infection ou par transgenèse) est trouvée dans la grande majorité des copies, mais trop rarement appuyée sur l'analyse du document.
+
+\end{jury}
+
+\begin{methode}
+
+« Suffisante » est à prendre au sens strict : CidA suffit. On ne peut pas conclure qu'elle est \textbf{nécessaire} sans une expérience de suppression (ovocyte de femelle infectée privé de \emph{cidA}), qui n'est pas dans le document.
+
+\end{methode}
+
+\hypertarget{question-7a}{%
+\subsection{Question 7a}\label{question-7a}}
+
+\begin{indication}{1}
+
+Comparer les trois pistes du gel deux à deux ; l'absence totale de bande est une information, pas un raté.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'énoncé demande l'effet \textbf{dans un embryon} : il faut donc transposer, en se souvenant de qui apporte CidB et de ce qui s'y trouve.
+
+\end{indication}
+
+\hypertarget{solution-54}{%
+\subsubsection{Solution}\label{solution-54}}
+
+Les trois pistes du document 7A contiennent le même mélange d'ADN (6,0 ; 5,0 ; 3,0 ; 1,5 kb) :
+
+\begin{itemize}
+\tightlist
+\item
+  ADN seul : les quatre bandes sont présentes et nettes (témoin, ADN intact) ;
+\item
+  ADN + CidA : les bandes sont identiques au témoin → CidA n'altère pas l'ADN ;
+\item
+  ADN + CidB : \textbf{aucune bande n'est visible} → l'ADN a disparu, dégradé en fragments trop petits pour être révélés.
+\end{itemize}
+
+CidB possède donc une activité de \textbf{nucléase} : c'est une enzyme qui dégrade l'ADN, quelle que soit la taille des molécules.
+
+Transposé à un embryon issu d'une femelle non infectée, où CidB est apportée par le spermatozoïde et où rien ne la neutralise : \textbf{CidB dégraderait l'ADN}, en particulier celui du noyau d'origine paternelle, ce qui empêcherait le développement et provoquerait la mort de l'embryon --- exactement ce qu'observaient les documents 5 et 6.
+
+\begin{piege}
+
+Erreurs relevées par le rapport 2026 : un simple « effet négatif » de CidB sur l'ADN, trop imprécis ; un CidB qui empêcherait la formation, la réplication ou l'expression de l'ADN, ou qui le condenserait et bloquerait sa migration, ce qui méconnaît l'expérience in vitro ; et la confusion de cette électrophorèse d'ADN avec un Western blot. Les mots « nucléase » ou « enzyme » n'apparaissent que très rarement : ce sont eux qui étaient attendus.
+
+\end{piege}
+
+\hypertarget{question-7b}{%
+\subsection{Question 7b}\label{question-7b}}
+
+\begin{indication}{1}
+
+Le document 7B comporte une piste de trop par rapport à un simple test de toxicité. Quelle information apporte la construction \emph{cidA*} ?
+
+\end{indication}
+
+\hypertarget{solution-55}{%
+\subsubsection{Solution}\label{solution-55}}
+
+Le document 7B utilise la levure comme système rapporteur : une protéine toxique empêche la formation de colonies.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3690}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1693}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4317}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Levure transformée par
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Colonies
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interprétation
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+plasmide vide & oui & la transformation n'est pas toxique \\
+\emph{cidB} seul & non & CidB est toxique (cohérent avec l'activité nucléase) \\
+\emph{cidB} + \emph{cidA} & oui & CidA neutralise CidB \\
+\emph{cidB} + \emph{cidA*} (sans domaine de liaison) & non & la neutralisation exige la liaison \\
+\end{longtable}
+
+La comparaison des deux dernières lignes est décisive : privée de son seul domaine de liaison à CidB, CidA ne protège plus. La neutralisation ne peut donc pas passer par une voie indirecte (dégradation de CidB, extinction de son gène, réparation de l'ADN) : elle exige l'\textbf{interaction physique directe} des deux protéines.
+
+\textbf{Mécanisme proposé : CidA se lie à CidB par son domaine de liaison et forme un complexe inactif}, dans lequel le site catalytique de la nucléase est masqué. C'est un système \textbf{toxine (CidB) -- antitoxine (CidA)}.
+
+\begin{piege}
+
+C'est la survie des \textbf{colonies de levures} que l'on observe, non celle des plasmides : le rapport 2026 y voit une mauvaise compréhension de la technique de transformation.
+
+\end{piege}
+
+\hypertarget{question-7c}{%
+\subsection{Question 7c}\label{question-7c}}
+
+\begin{indication}{1}
+
+Dresser la table des combinaisons possibles entre ADN, CidA et CidB, et chercher celle qui manque.
+
+\end{indication}
+
+\hypertarget{solution-56}{%
+\subsubsection{Solution}\label{solution-56}}
+
+Le document 7A explore trois des quatre combinaisons : ADN seul, ADN + CidA, ADN + CidB. Il manque \textbf{ADN + CidA + CidB}.
+
+Résultat attendu si le modèle est exact : les quatre bandes réapparaissent intactes, ce qui démontrerait directement, sur l'ADN lui-même, la protection assurée par CidA --- chaînon établi pour l'instant seulement de façon indirecte, par la survie de levures (7B).
+
+On peut compléter par une piste ADN + CidA* + CidB (dégradation attendue, contrôle de spécificité), par une gamme de doses ou une cinétique, ou par une piste avec CidB dénaturée par la chaleur, qui montrerait que la dégradation est bien de nature enzymatique.
+
+\begin{methode}
+
+Réflexe transposable : devant tout plan d'expérience, dresser la table complète des combinaisons de facteurs et repérer celles qui n'ont pas été réalisées.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 : la piste ADN + CidA + CidB a été proposée par la très grande majorité, ADN + CidB + CidA* par certains, mais l'objectif de l'expérience et les résultats attendus n'ont pas toujours été précisés. Des propositions hors programme comme la co-immunoprécipitation ont été validées quand elles étaient pertinentes.
+
+\end{jury}
+
+\hypertarget{question-8a}{%
+\subsection{Question 8a}\label{question-8a}}
+
+\begin{indication}{1}
+
+Se demander quelle question précise est posée par cette étude : « ces protéines existent-elles ? » ou « où sont-elles ? ».
+
+\end{indication}
+
+\hypertarget{solution-57}{%
+\subsubsection{Solution}\label{solution-57}}
+
+CidA, CidB et l'histone acétylée H4ac sont des \textbf{protéines}. Un immunomarquage utilise des anticorps dirigés spécifiquement contre chacune d'elles, couplés à des fluorochromes de couleurs différentes ; l'observation en microscopie à fluorescence \textbf{localise in situ} chaque protéine dans la préparation, à l'échelle de la cellule et même du pronucléus.
+
+Or la question posée n'est pas de savoir si ces protéines existent --- un Western blot y répondrait --- mais \textbf{où} elles se trouvent : dans quelle catégorie de cellules du testicule, à quel stade de la différenciation, et dans lequel des deux pronucléus de l'œuf fécondé. Seule une technique \textbf{in situ}, qui conserve l'architecture du tissu et de la cellule, permet cette réponse. Le marquage simultané de l'ADN et de l'histone acétylée H4ac, avec d'autres fluorochromes, fournit de plus des repères : il identifie le stade de différenciation des cellules observées et permet de superposer la localisation des protéines à celle de leur cible supposée, l'ADN.
+
+\begin{piege}
+
+L'immunomarquage ne détecte pas des gènes. Le rapport 2026 rappelle la différence avec la FISH, hybridation in situ de sondes nucléotidiques fluorescentes sur des séquences d'ADN ou d'ARN. Il juge partielle une réponse qui se contente de dire que l'immunomarquage localise CidA, CidB et H4ac sans rappeler leur nature protéique, qui justifie le choix de la technique.
+
+\end{piege}
+
+\hypertarget{question-8b}{%
+\subsection{Question 8b}\label{question-8b}}
+
+\begin{indication}{1}
+
+À qui appartiennent les gènes \emph{cidA} et \emph{cidB} ? Une cellule peut-elle synthétiser une protéine dont elle n'a pas le gène ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Relire l'énoncé : lequel des deux partenaires du croisement est infecté ? C'est dans ses cellules seulement qu'il faut chercher l'effet de l'infection.
+
+\end{indication}
+
+\hypertarget{solution-58}{%
+\subsubsection{Solution}\label{solution-58}}
+
+\emph{cidA} et \emph{cidB} sont des gènes de \textbf{\emph{Wolbachia}}, et non de la Drosophile : ils ne peuvent être exprimés que là où la bactérie est présente. Le croisement porte sur un mâle \textbf{infecté} et une femelle \textbf{non infectée} : seules les cellules du mâle (8A) renseignent donc sur l'effet de l'infection.
+
+\begin{itemize}
+\tightlist
+\item
+  Dans les spermatides en cours de différenciation (flèche entière), CidA et CidB sont toutes deux détectées.
+\item
+  Dans les spermatozoïdes en fin de différenciation (tête de flèche, sans H4ac), seule CidB est encore détectée.
+\end{itemize}
+
+\textbf{L'infection par \emph{Wolbachia} entraîne l'expression de CidA et de CidB dans la lignée germinale mâle}, CidB seule persistant en fin de différenciation.
+
+La femelle non infectée, elle, ne possède pas ces gènes : elle ne peut pas les exprimer.
+
+\begin{piege}
+
+Le rapport 2026 : « seule l'analyse de l'expression des protéines CidA et CidB dans les cellules du mâle était pertinente et attendue. » Il relève aussi qu'un léger bruit de fond sur le pronucléus femelle a parfois été lu comme une expression de CidB dans l'ovocyte : une incompréhension majeure, puisque la femelle n'est pas infectée.
+
+\end{piege}
+
+\hypertarget{question-8c}{%
+\subsection{Question 8c}\label{question-8c}}
+
+\begin{indication}{1}
+
+La légende donne une clé facile à manquer : H4ac disparaît en fin de différenciation. À quoi sert cette information pour interpréter la flèche et la tête de flèche ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans le document 8B, comparer les deux pronucléus canal par canal.
+
+\end{indication}
+
+\hypertarget{solution-59}{%
+\subsubsection{Solution}\label{solution-59}}
+
+\textbf{Dans le testicule (8A).} Les spermatides en cours de différenciation (flèche entière) présentent un marquage pour l'ADN, CidA, CidB et H4ac. Les spermatozoïdes différenciés (tête de flèche) ne présentent plus H4ac --- ce qui confirme, d'après la légende, qu'il s'agit bien des cellules les plus avancées --- ni CidA, alors que \textbf{CidB} y est toujours présente.
+
+\textbf{Dans l'ovocyte fécondé (8B).} Le pronucléus mâle montre un marquage CidB intense et concentré ; le canal CidA est noir, tant sur le pronucléus mâle que sur le pronucléus femelle.
+
+\textbf{Conclusion : seule CidB est transmise.} Elle persiste dans les spermatozoïdes différenciés, alors que CidA disparaît, comme H4ac, en fin de différenciation ; elle se retrouve ensuite dans l'ovocyte, associée au pronucléus mâle. Ce sont les \textbf{protéines}, et non les bactéries, qui franchissent cette étape.
+
+\begin{piege}
+
+Écrire que le spermatozoïde transmet \emph{Wolbachia} rendrait tout le modèle incohérent, et contredirait le thème 3, où l'on verra que les bactéries sont éliminées au cours de la différenciation des spermatozoïdes. Le rapport 2026 signale deux autres erreurs sur le document 8A : ignorer la légende des flèches et têtes de flèche (donc ne pas distinguer spermatides et spermatozoïdes), et prendre H4ac pour une donnée à analyser, alors que ce n'est qu'un marqueur de différenciation.
+
+\end{piege}
+
+\hypertarget{question-8d}{%
+\subsection{Question 8d}\label{question-8d}}
+
+\begin{indication}{1}
+
+Faire l'inventaire de ce que contient l'œuf de ce croisement précis : quelle protéine y est présente, laquelle est absente, et que prévoit alors le document 6 ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour les rôles, revenir au document 7 : lequel des deux partenaires moléculaires agit, lequel neutralise ?
+
+\end{indication}
+
+\hypertarget{solution-60}{%
+\subsubsection{Solution}\label{solution-60}}
+
+Le croisement réalisé est mâle infecté × femelle \textbf{non} infectée. L'ovocyte ne contient donc aucune CidA (8b) et reçoit du spermatozoïde une CidB active, concentrée sur la chromatine paternelle (8c). Or, dans cette configuration, le document 6 indique environ 5 \% d'éclosion.
+
+\textbf{L'embryon n'a donc quasiment aucune chance de survivre.}
+
+\textbf{Rôles.} CidB est la \textbf{toxine} : nucléase déposée dans le spermatozoïde au cours de la différenciation des gamètes d'un mâle infecté, elle dégrade l'ADN du pronucléus mâle dans l'œuf fécondé. CidA est l'\textbf{antitoxine} : elle se lie à CidB et la neutralise (document 7B). On peut supposer, sans que les documents le prouvent, qu'elle est présente dans l'ovocyte lorsque la femelle est infectée. La survie de l'embryon suppose donc que la femelle soit infectée.
+
+Ce système toxine -- antitoxine rend compte des quatre cases du document 5 :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3224}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2476}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Croisement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CidB dans l'œuf
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CidA dans l'œuf
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Devenir
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+mâle non infecté × femelle non infectée & non & non & viable \\
+mâle non infecté × femelle infectée & non & oui & viable \\
+mâle infecté × femelle infectée & oui & oui & viable (neutralisation) \\
+mâle infecté × femelle non infectée & \textbf{oui} & \textbf{non} & \textbf{mort embryonnaire} \\
+\end{longtable}
+
+C'est la base moléculaire de l'\textbf{incompatibilité cytoplasmique}, qui explique la propagation de la bactérie étudiée en question 5.
+
+\begin{jury}
+
+Le rapport 2026 regrette des réponses qui se limitent à la mort des embryons sans reparler de CidA et CidB, alors que la question demande leurs rôles. L'argument attendu : le mâle infecté transmet à l'ovocyte des protéines CidB qui, en l'absence de leur inhibiteur CidA, dégradent l'ADN de l'embryon et provoquent sa mort. La protection par CidA dans les ovocytes de femelles infectées n'était pas attendue.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-biologie-thuxe8me-3-wolbachia-une-bactuxe9rie-transmise}{%
+\section{\texorpdfstring{Partie biologie --- Thème 3 : \emph{Wolbachia}, une bactérie transmise}{Partie biologie --- Thème 3 : Wolbachia, une bactérie transmise}}\label{partie-biologie-thuxe8me-3-wolbachia-une-bactuxe9rie-transmise}}
+
+Dernier thème, et le plus synthétique : il oppose puis articule deux modes de transmission. La voie verticale est établie par la cytologie des gonades, la voie horizontale par un raisonnement phylogénétique, un mécanisme cellulaire et un exemple de vection. La question 13 demande de tout rassembler : la garder en tête dès la question 9.
+
+\hypertarget{question-9a}{%
+\subsection{Question 9a}\label{question-9a}}
+
+\begin{indication}{1}
+
+Repérer d'abord, sur 9A et 9B, où sont les bactéries à chaque stade, puis reporter ces observations sur le schéma 9C.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le schéma 9C comporte deux lignes (femelle, mâle) et deux étapes par ligne : il faut donc décider, pour chacune des quatre cases, s'il y a ou non des bactéries.
+
+\end{indication}
+
+\hypertarget{solution-61}{%
+\subsubsection{Solution}\label{solution-61}}
+
+\textbf{Observations.} Document 9A (vitellarium de femelle) : la fluorescence verte des \emph{Wolbachia} est présente dans le vitellarium, et en particulier dans le cytoplasme de l'ovocyte. Document 9B (cyste de mâle) : au stade \textbf{spermatocyte} (1), de nombreuses bactéries (points jaunes) sont visibles dans le cyste, associées aux cellules germinales ; au stade \textbf{spermatozoïde} (2), il n'y en a plus au niveau des spermatozoïdes différenciés.
+
+\textbf{Report sur le document 9C :}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q9a-schema-9c-complete.pdf}
+\caption*{Figure 4 --- Document 9C complété : Wolbachia dans les cellules
+nourricières, le futur ovocyte et l'ovocyte mature ; présentes dans les
+spermatocytes, absentes des spermatozoïdes}
+\end{figure}
+
+\begin{jury}
+
+Le rapport 2026 attendait des bactéries dans le futur ovocyte puis dans l'ovocyte mature, dans les spermatocytes, et pas dans les spermatozoïdes différenciés. Représenter des bactéries au niveau du flagelle a été accepté, tant qu'elles n'étaient pas dans la tête du spermatozoïde.
+
+\end{jury}
+
+\hypertarget{question-9b}{%
+\subsection{Question 9b}\label{question-9b}}
+
+\begin{indication}{1}
+
+Démonstration en deux volets : la voie femelle (ce que montre 9A, et ce que cela implique à la fécondation), puis la voie mâle (ce que montre 9B).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour expliquer le résultat chez les mâles, se demander ce que devient le cytoplasme d'une spermatide au cours de sa différenciation.
+
+\end{indication}
+
+\hypertarget{solution-62}{%
+\subsubsection{Solution}\label{solution-62}}
+
+\textbf{La voie femelle est fonctionnelle.} Les bactéries sont présentes dans le cytoplasme de l'ovocyte (9A). Or, à la fécondation, c'est l'ovocyte qui apporte la quasi-totalité du cytoplasme du zygote : toutes les cellules de l'embryon en dériveront et hériteront donc des bactéries. C'est exactement ce qu'établissait le document 5 : toute la descendance d'une femelle infectée est infectée, quel que soit le mâle.
+
+\textbf{La voie mâle ne l'est pas.} Les bactéries, présentes au stade spermatocyte, ne sont plus associées aux spermatozoïdes différenciés (9B) : le gamète mâle n'en transmet pas. La transmission est donc \textbf{strictement verticale et maternelle}.
+
+\textbf{Explication du résultat chez les mâles.} Au cours de leur différenciation, les spermatides expulsent la quasi-totalité de leur cytoplasme et de leurs organites, qui sont ensuite éliminés ; seuls subsistent le noyau condensé, le flagelle et une mince gaine. Les \emph{Wolbachia}, bactéries \textbf{cytoplasmiques}, sont évacuées avec ce cytoplasme résiduel. S'y ajoute un second filtre : même si une bactérie subsistait, le spermatozoïde n'apporte presque pas de cytoplasme à l'ovocyte. Seules les \textbf{protéines} déjà déposées (CidB, thème 2) franchissent cette barrière.
+
+\begin{methode}
+
+C'est le même raisonnement que pour l'hérédité mitochondriale, également strictement maternelle, et pour la même raison : la transmission d'un élément cytoplasmique suit le gamète qui apporte le cytoplasme.
+
+\end{methode}
+
+\begin{piege}
+
+Ne pas conclure que « les bactéries meurent chez le mâle » : elles sont bien vivantes dans les spermatocytes, où elles produisent d'ailleurs CidA et CidB. C'est leur \textbf{transmission au gamète mature} qui est bloquée.
+
+\end{piege}
+
+\hypertarget{question-10a}{%
+\subsection{Question 10a}\label{question-10a}}
+
+\begin{indication}{1}
+
+Comparer la répartition des points d'une même couleur à la topologie de l'arbre : les genres porteurs sont-ils voisins ou dispersés ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Formuler ce qu'on attendrait si le caractère était hérité d'un ancêtre commun, puis confronter cette attente à l'observation. Le vocabulaire attendu est celui des groupes monophylétique, paraphylétique et polyphylétique.
+
+\end{indication}
+
+\hypertarget{solution-63}{%
+\subsubsection{Solution}\label{solution-63}}
+
+Les genres porteurs d'une même espèce de \emph{Wolbachia} sont \textbf{dispersés} dans l'arbre. L'espèce 2 (magenta) est présente chez \emph{Wasmannia}, \emph{Sericomyrmex}, \emph{Trachymyrmex}, \emph{Atta} et \emph{Pheidole}, mais aussi chez \emph{Azteka}, genre d'une sous-famille distincte ; entre ces genres s'intercalent de nombreux genres qui en sont dépourvus. De même, l'espèce 4 (noir) se trouve chez \emph{Crematogaster}, \emph{Metapone}, \emph{Pheidole} et \emph{Aenictus}, ce dernier très éloigné des précédents.
+
+Or, si la présence d'une espèce donnée de \emph{Wolbachia} était une innovation évolutive \textbf{héritée}, elle serait apparue une fois chez un ancêtre commun et aurait été transmise à toute sa descendance : les genres porteurs formeraient alors un groupe \textbf{monophylétique} (un ancêtre et tous ses descendants), donc un bloc sur l'arbre. Ce n'est manifestement pas le cas.
+
+\textbf{Les genres partageant une même espèce de \emph{Wolbachia} forment donc un groupe polyphylétique} : le caractère a été acquis plusieurs fois indépendamment (\textbf{homoplasie}, par convergence évolutive). Il ne constitue pas une innovation évolutive héritée d'un ancêtre commun, et ne définit aucun groupe taxonomique valide.
+
+\begin{jury}
+
+Le rapport 2026 : « le terme de polyphylétique est revenu régulièrement mais sans justification et des confusions avec le terme ``paraphylétique'' ont été observées plusieurs fois. » Un groupe paraphylétique comprend un ancêtre et une partie seulement de ses descendants ; ici, les porteurs n'ont pas d'ancêtre commun exclusif.
+
+\end{jury}
+
+\hypertarget{question-10b}{%
+\subsection{Question 10b}\label{question-10b}}
+
+\begin{indication}{1}
+
+Si la répartition ne suit pas la filiation, par quelle autre voie la bactérie a-t-elle pu passer d'une lignée à l'autre ?
+
+\end{indication}
+
+\hypertarget{solution-64}{%
+\subsubsection{Solution}\label{solution-64}}
+
+Puisque la répartition ne suit pas la phylogénie, la bactérie n'a pas été transmise d'un ancêtre à ses descendants : elle est passée \textbf{directement d'une lignée à une autre}, y compris entre lignées très éloignées. C'est une \textbf{transmission horizontale} (interspécifique), indépendante de la filiation, qui suppose un contact écologique : partage d'un même milieu ou d'une même ressource, prédation ou cannibalisme, échanges de nourriture entre individus, ou vection par un parasite commun.
+
+Cela explique que deux genres proches puissent différer, et que deux genres très éloignés puissent héberger la même espèce de bactérie.
+
+\hypertarget{question-10c}{%
+\subsection{Question 10c}\label{question-10c}}
+
+\begin{indication}{1}
+
+Identifier d'abord les deux genres qui portent l'espèce 3, puis remonter dans l'arbre jusqu'à leur ancêtre commun le plus récent.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Redescendre ensuite sur \textbf{toutes} les feuilles issues de ce nœud, et sur aucune autre.
+
+\end{indication}
+
+\hypertarget{solution-65}{%
+\subsubsection{Solution}\label{solution-65}}
+
+L'espèce 3 (vert) est observée chez \emph{Apterostigma} et chez \emph{Pheidole}. En transmission strictement verticale, ces deux genres l'auraient héritée de leur \textbf{ancêtre commun le plus récent}, et tous les descendants de cet ancêtre la porteraient.
+
+Il faudrait donc, sur l'annexe, porter un point vert en face de \textbf{\emph{Apterostigma}, \emph{Myrmicocrypta}, \emph{Cyphomyrmex}, \emph{Sericomyrmex}, \emph{Trachymyrmex}, \emph{Acromyrmex}, \emph{Atta} et \emph{Pheidole}} --- c'est-à-dire sur tout le clade issu de cet ancêtre --- et sur aucun autre genre. La distribution serait alors monophylétique.
+
+\begin{piege}
+
+En général, colorier tout ce qui se trouve entre les deux genres dans l'ordre de la liste ne suffit pas : il faut passer par le nœud. Ici, les deux méthodes coïncident (le rapport 2026 attendait la présence de \emph{Wolbachia} pour tous les genres compris entre \emph{Apterostigma} et \emph{Pheidole}), mais la méthode sûre reste de partir des deux feuilles, de remonter au nœud qui les réunit, puis de redescendre sur toutes ses feuilles.
+
+\end{piege}
+
+\hypertarget{question-11a}{%
+\subsection{Question 11a}\label{question-11a}}
+
+\begin{indication}{1}
+
+Dans le document 11A, comparer la rangée « live » et la rangée « dead » : dans quel cas les bactéries finissent-elles \textbf{à l'intérieur} de la cellule ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans le 11B, la chlorpromazine inhibe l'endocytose. Que conclure de son effet sur la proportion de cellules infectées ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+L'énoncé n'attend qu'un schéma fonctionnel : des étapes reliées par des flèches orientées, avec l'effet de l'inhibiteur figuré.
+
+\end{indication}
+
+\hypertarget{solution-66}{%
+\subsubsection{Solution}\label{solution-66}}
+
+\textbf{Lecture préalable.} Document 11A : au contact de cellules de drosophile \textbf{vivantes} (\emph{live}), les bactéries (rouges), d'abord extérieures, sont progressivement retrouvées \textbf{à l'intérieur} de la cellule (0 h, 2 h, 4 h) ; au contact de cellules \textbf{mortes} (\emph{dead}), elles restent agglomérées à l'extérieur. L'entrée exige donc une cellule vivante : c'est un processus \textbf{actif}, assuré par la cellule hôte. Document 11B : la proportion de cellules infectées est de ≈ 0,26 / 0,22 / 0,27 dans les témoins à 1, 2 et 3 jours, et chute significativement en présence de \textbf{chlorpromazine} (≈ 0,12 / 0,09 / 0,06). Comme celle-ci inhibe l'endocytose, \textbf{l'entrée des bactéries est facilitée par l'endocytose}. L'infection n'est pourtant pas abolie (baisse d'environ 55 \% au jour 1 et 80 \% au jour 3) : l'entrée peut aussi se faire, plus rarement, par une autre voie.
+
+\textbf{Schéma fonctionnel} (l'inhibition par la chlorpromazine y est partielle) :
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q11a-entree-endocytose.pdf}
+\caption*{Figure 5 --- Schéma fonctionnel : la bactérie libre adhère à une cellule
+vivante et y entre par endocytose, que freine (inhibition partielle) la
+chlorpromazine ; aucune entrée dans une cellule morte}
+\end{figure}
+
+\begin{piege}
+
+La chlorpromazine agit sur l'endocytose \textbf{de la cellule hôte} : conclure qu'elle tue les bactéries ou qu'elle empêche leur multiplication contredit le document. Conclure que l'endocytose est la seule voie d'entrée va aussi au-delà des données : l'infection persiste sous chlorpromazine.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attendait un schéma montrant que les bactéries ne pénètrent que dans les cellules vivantes, et que le processus est facilité par endocytose, « bien qu'il puisse avoir lieu sans ». Une réponse sous forme de texte ou de carte mentale n'a pas été prise en compte ; schématiser seulement l'expérience, ou une endocytose théorique sans lien avec les documents, ne suffit pas.
+
+\end{jury}
+
+\hypertarget{question-11b}{%
+\subsection{Question 11b}\label{question-11b}}
+
+\begin{indication}{1}
+
+Le document 11 fournit un mécanisme à l'échelle de la cellule ; le document 10 pose une question à l'échelle des populations. Il manque un maillon : comment les bactéries passent-elles d'un individu à un autre ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Penser au mode de vie des fourmis, insectes sociaux, et aux occasions de contact intime entre individus et entre espèces.
+
+\end{indication}
+
+\hypertarget{solution-67}{%
+\subsubsection{Solution}\label{solution-67}}
+
+Le document 10 impose une transmission horizontale entre lignées de fourmis ; le document 11 en donne le \textbf{mécanisme cellulaire} : une bactérie libre dans le milieu extérieur peut adhérer à une cellule vivante d'un nouvel hôte et y pénétrer par endocytose. L'énoncé précise que ce résultat peut être étendu à tous les Arthropodes.
+
+Reste à franchir la frontière entre individus. Chez les fourmis, insectes eusociaux, les occasions de contact sont nombreuses : échanges de nourriture entre ouvrières, toilettage mutuel, consommation de cadavres ou d'œufs, bactéries libérées dans le milieu par la mort ou la blessure d'un individu, prédation d'autres arthropodes infectés, partage d'un même nid, d'une même proie ou d'un même parasite. Les bactéries ainsi introduites peuvent coloniser les cellules du nouvel hôte selon le cycle précédent ; si elles atteignent la \textbf{lignée germinale d'une femelle}, la transmission verticale prend alors le relais et l'infection se fixe durablement dans la nouvelle lignée. C'est ce qui explique la distribution en mosaïque du document 10.
+
+\hypertarget{question-12a}{%
+\subsection{Question 12a}\label{question-12a}}
+
+\begin{indication}{1}
+
+Deux propriétés de l'objet d'étude rendent la détection difficile : la quantité de bactéries, et leur mode de vie. En quoi la PCR y répond-elle ?
+
+\end{indication}
+
+\hypertarget{solution-68}{%
+\subsubsection{Solution}\label{solution-68}}
+
+\emph{Wolbachia} est une bactérie \textbf{intracellulaire}, présente en très faible quantité chez la guêpe après la consommation d'une larve, et non cultivable sur milieu usuel : les méthodes microbiologiques classiques sont donc inopérantes.
+
+La PCR amplifie de façon exponentielle une séquence choisie, grâce à des amorces \textbf{spécifiques} de l'ADN de \emph{Wolbachia}. Elle offre ainsi :
+
+\begin{itemize}
+\tightlist
+\item
+  une grande \textbf{sensibilité} : quelques copies du génome bactérien suffisent à produire une bande visible ;
+\item
+  une grande \textbf{spécificité} : la bactérie est détectée au milieu de l'ADN de la guêpe et de tout son microbiote ;
+\item
+  une mise en œuvre \textbf{simple et rapide}, sur un broyat total, sans dissection ni marquage, ce qui permet de suivre de nombreux individus jour après jour.
+\end{itemize}
+
+L'intensité relative des bandes donne de plus une indication semi-quantitative de la charge bactérienne au cours du temps.
+
+\begin{jury}
+
+Le rapport 2026 : expliquer seulement que la PCR amplifie l'ADN ne répond pas à la question. « Ici, l'intérêt de la PCR est de détecter spécifiquement la présence d'ADN bactérien et donc de la bactérie Wolbachia dans les guêpes hôtes, afin de déterminer si elles sont infectées ou pas. »
+
+\end{jury}
+
+\hypertarget{question-12b}{%
+\subsection{Question 12b}\label{question-12b}}
+
+\begin{indication}{1}
+
+Traiter les deux documents comme deux \textbf{fenêtres temporelles} : combien de temps l'ADN reste-t-il détectable, et combien de temps la guêpe reste-t-elle contaminante ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les deux durées ne coïncident pas. Que détecte exactement une PCR, et qu'exige au contraire une contamination ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+L'énoncé demande de « préciser les conditions de transmission » : il faut donc un délai et un mode de contact, ce dernier étant suggéré par la légende du document 12A.
+
+\end{indication}
+
+\hypertarget{solution-69}{%
+\subsubsection{Solution}\label{solution-69}}
+
+\textbf{Document 12B --- persistance chez \emph{Eretmocerus}.} Après consommation de larves d'aleurodes contaminées, l'ADN de \emph{Wolbachia} est détecté dès le premier jour, avec une bande intense, puis les bandes s'affaiblissent progressivement avant de disparaître à la dernière piste. La bactérie ne se multiplie donc pas chez la guêpe et n'y persiste que quelques jours : la guêpe n'est pas un hôte durable.
+
+\textbf{Document 12C --- capacité de contamination.} Le pourcentage d'aleurodes initialement sains qui deviennent infectés dépend étroitement du délai écoulé depuis la contamination de la guêpe : ≈ 60 \% en moyenne (jusqu'à 80 \%) si le contact a lieu au jour 1, ≈ 30 \% au jour 2, et \textbf{0 \% dès le jour 3}.
+
+\textbf{Croisement des deux.} La guêpe reste porteuse d'ADN bactérien plusieurs jours, mais n'est \textbf{contaminante que pendant environ 48 heures}. L'écart s'explique simplement : la PCR détecte de l'ADN, y compris celui de bactéries mortes ou en voie de dégradation, alors qu'une contamination exige des bactéries \textbf{vivantes et infectieuses}. Or la guêpe se nourrit des larves d'aleurodes et \textbf{pond à l'intérieur} de celles-ci : son ovipositeur et ses pièces buccales peuvent transporter mécaniquement des bactéries d'une larve à l'autre. Comme elle visite plusieurs larves par jour, elle peut, dans sa fenêtre de deux jours, en contaminer plusieurs successivement ; de proche en proche, la bactérie se propage dans la population d'aleurodes \textbf{sans jamais avoir besoin de s'établir durablement chez le vecteur}.
+
+\textbf{Conditions de transmission :} des bactéries encore vivantes, un contact dans les \textbf{deux jours} suivant la contamination de la guêpe, et un contact intime avec les tissus de la larve (nutrition, et surtout ponte à l'intérieur). La guêpe est donc un \textbf{vecteur transitoire}, et non un hôte.
+
+\begin{jury}
+
+Le scénario attendu par le rapport 2026 : une guêpe consomme une larve infectée et devient porteuse ; tant que la bactérie survit chez elle, soit environ deux jours, une ponte dans une nouvelle larve d'aleurode la contamine. Cette question de fin de sujet, qui croise deux documents, a peu été traitée.
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Une carte mentale se construit autour d'un centre unique et de branches hiérarchisées. Ici, le centre est imposé par la question ; les deux branches maîtresses le sont par le thème.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'énoncé demande de s'appuyer sur « les documents du thème III » : faire figurer le numéro du document à chaque nœud.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Ne pas oublier le lien entre les deux branches : une infection acquise horizontalement peut-elle devenir héréditaire ?
+
+\end{indication}
+
+\hypertarget{solution-70}{%
+\subsubsection{Solution}\label{solution-70}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q13-carte-mentale.pdf}
+\caption*{Figure 6 --- Carte mentale de la transmission de Wolbachia : voie
+verticale (maternelle), voie horizontale (entre hôtes) et leur
+articulation}
+\end{figure}
+
+\begin{methode}
+
+Une carte mentale doit être lisible d'un coup d'œil : un centre, deux branches maîtresses, des ramifications brèves. Ce qui la distingue d'une liste de connaissances, c'est le rattachement explicite de chaque nœud à un document, et la mention du lien entre les branches.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 attendait la transmission verticale (de la mère aux descendants, drosophile) et horizontale, par endocytose depuis l'environnement (fourmis) ou par l'intermédiaire d'une espèce parasite (aleurode). Il rappelle que les questions de synthèse en fin de sujet sont généralement généreuses en points : même partielle, la carte mentale est à faire.
+
+\end{jury}
+
+\begin{piege}
+
+Opposer les deux voies comme des alternatives exclusives est l'erreur conceptuelle à éviter : elles agissent à des échelles différentes --- la verticale à l'intérieur d'une lignée, génération après génération ; l'horizontale entre lignées, événement rare mais décisif --- et c'est leur articulation qui explique à la fois la distribution en mosaïque du document 10 et la fixation rapide observée au document 4C.
+
+\end{piege}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Identifier une roche magmatique} : texture d'abord (grenue, microlitique, vitreuse), minéralogie ensuite, en notant aussi les minéraux absents. La relation entre deux roches en contact se lit sur la nature du contact (net ou progressif).
+\item
+  \textbf{Lire un profil de vitesses sismiques} : chercher d'abord où \(V_S\) s'annule (liquide), puis les sauts et ruptures de pente (limites d'enveloppes ou transitions de phase), enfin convertir les ordonnées (distance au centre ou profondeur). Un saut de vitesse admet trois causes : état, composition, structure cristalline.
+\item
+  \textbf{Croiser deux documents} pour obtenir une grandeur inaccessible : la sismologie donne la pression, l'expérimentation donne la relation \(P(T)\), le croisement donne la température. C'est le principe de tout géothermomètre et de tout géobaromètre.
+\item
+  \textbf{Diagramme ternaire avec eutectique} : le premier liquide a la composition de l'eutectique, quelle que soit la roche de départ, tant que les trois phases coexistent ; le résidu se déplace sur la droite joignant l'eutectique à la roche initiale, au-delà de celle-ci, avec la règle des leviers.
+\item
+  \textbf{Diagramme binaire à solution solide totale} : à chaque température, deux compositions conjuguées (liquidus et solidus). La zonation d'un cristal s'explique par la lenteur de la diffusion à l'état solide, qui soustrait les couches déjà formées à l'équilibre.
+\item
+  \textbf{Critiquer un modèle} : comparer des chiffres (températures prédites contre températures observées), puis identifier les simplifications (nombre de constituants, pression du diagramme, absence de volatils). En système sec, la pression élève les températures de fusion. Un modèle simplifié n'est pas faux, il a un domaine de validité.
+\item
+  \textbf{Bilan de géo-ingénierie} : toujours combiner les équations avant de conclure (ici 2 \(\mathrm{CO_2}\) piégés par olivine, et non 4), puis raisonner sur les réservoirs (atmosphère et océan diminuent, carbonates augmentent) et leurs temps de résidence.
+\item
+  \textbf{Critiquer un dispositif expérimental} : chercher d'abord le \textbf{témoin manquant}, ensuite les répétitions, ensuite l'adéquation entre la grandeur mesurée et la conclusion visée, enfin le réalisme et la durée.
+\item
+  \textbf{Justifier une technique} : partir de la question posée (quantifier ? localiser ? détecter ?) et de l'objet (taille, nature chimique, cultivabilité), et dire ce qu'une autre technique ne permettrait pas.
+\item
+  \textbf{Analyser un plan d'expérience} : dresser la table complète des combinaisons de facteurs ; la case manquante est souvent la réponse à « proposer une expérience complémentaire ».
+\item
+  \textbf{Raisonner en nécessaire / suffisant} : un sauvetage par ajout démontre la suffisance, pas la nécessité, qui exige une expérience de suppression.
+\item
+  \textbf{Lire une phylogénie} : un caractère hérité d'un ancêtre commun définit un groupe monophylétique ; une distribution dispersée signe l'homoplasie et un groupe polyphylétique. Pour la situation contrefactuelle, remonter au nœud puis redescendre sur toutes les feuilles.
+\end{enumerate}
+
+\textbf{Questions discriminantes selon le rapport 2026.} En géologie, le graphique de fusion partielle (6.a), la règle des leviers et la nature du résidu (6.e--6.f), le nom du motif zoné (8.a), la critique des températures (8.d), les réservoirs du carbone (10.b) et les limites, toujours au pluriel (10.f, 11.e). En biologie, les techniques (RT-PCR, Western blot, immunomarquage), les expériences complémentaires (2b, 7c), et les questions de fin de thème (11a, 12b, 13), peu traitées alors qu'elles sont généreuses en points.
+
+\textbf{Prérequis à revoir.} Textures et classification des roches magmatiques ; structure interne du globe et ondes sismiques ; fusion partielle et contextes géodynamiques ; lecture des diagrammes binaires et ternaires ; altération chimique, potentiel ionique et sols ; cycle du carbone et régulation du climat. Côté biologie : techniques d'étude de la cellule et des molécules (MET, immunofluorescence, PCR, RT-PCR, Western blot, électrophorèse) ; cellule procaryote ; symbiose, parasitisme et immunité innée des Arthropodes ; gamétogenèse et fécondation ; phylogénie et homoplasie ; endocytose.
+
+\textbf{Questions classiques transposables.} La lecture couplée profil sismique / diagramme de phases se transpose à toute planète tellurique ou à toute discontinuité terrestre. La règle des leviers appliquée à la fusion partielle revient à l'identique dans tous les sujets de pétrologie magmatique. Le couple « cœur magnésien -- bordure ferreuse » est la question type sur les solutions solides, quels que soient les pôles. En biologie, le trio « phénotype -- quantification -- dissection génétique -- localisation » du thème 2 est le schéma de toute démonstration moléculaire, et le raisonnement phylogénétique du thème 3 se retrouve dans tous les sujets portant sur un caractère partagé par des taxons éloignés.
+
+\end{document}

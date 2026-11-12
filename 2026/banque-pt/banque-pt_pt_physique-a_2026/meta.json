@@ -1,0 +1,43 @@
+{
+  "slug": "banque-pt_pt_physique-a_2026",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique A",
+    "annee": 2026
+  },
+  "questions": 50,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q06-lecture-log-log.svg",
+      "question": "Q6",
+      "legende": "Lecture graphique de la question 6 sur la figure 3 : l'horizontale $f=5\\times10^{-2}$ coupe la courbe en $x\\approx0{,}33$ ; asymptotes $x^2/2$ et $x$ en tirets"
+    },
+    {
+      "fichier": "figures/q25-cycle-hysteresis.svg",
+      "question": "Q25",
+      "legende": "Cycle d'hystérésis $V_E(V_B)$ du comparateur non inverseur : montée en $V_h$, descente en $V_b$"
+    },
+    {
+      "fichier": "figures/q29-cycle-ve-hr.svg",
+      "question": "Q29",
+      "legende": "Tension $V_E$ en fonction de $Hr$ : bascule à $+12$ V en $Hr=0{,}20$ quand le sol s'humidifie, à $-12$ V en $Hr=0{,}10$ quand il s'assèche"
+    },
+    {
+      "fichier": "figures/q31-commande-vf-hr.svg",
+      "question": "Q31",
+      "legende": "Tension $V_F$ appliquée à l'électrovanne en fonction de $Hr$ : vanne ouverte à 0 V, fermée à 12 V"
+    },
+    {
+      "fichier": "figures/q37-q38-pore-poiseuille.svg",
+      "question": "Q37",
+      "legende": "Pore de rayon $R$ et système $(\\mathcal K)$ de rayon $r$ : profil de vitesse parabolique, forces de pression et force de viscosité selon $-\\vec u_z$"
+    },
+    {
+      "fichier": "figures/q50-cycle-vase-expansion.svg",
+      "question": "Q50",
+      "legende": "Volume d'eau dans le vase d'expansion : remplissage en $\\tau_1=3{,}75$ min, vidange en $\\tau_2=2{,}5$ min, période $6{,}25$ min"
+    }
+  ]
+}

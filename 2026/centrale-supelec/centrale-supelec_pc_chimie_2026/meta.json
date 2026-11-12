@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_pc_chimie_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PC",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 48,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q5-profil-enthalpie-libre.svg",
+      "question": "Q5",
+      "legende": "Profil d'enthalpie libre standard de la cyclisation 0 → i : les deux sens passent par le même complexe activé ‡i"
+    },
+    {
+      "fichier": "figures/q18-osmose-pression-osmotique.svg",
+      "question": "Q18",
+      "legende": "Osmose : à pressions égales l'eau passe vers la solution (a) ; une surpression Π sur la solution annule ce flux (b)"
+    },
+    {
+      "fichier": "figures/q32-evaporation-triple-effet.svg",
+      "question": "Q32",
+      "legende": "Atelier à triple effet (débits en kg/h) : la vapeur de chaque effet chauffe l'effet suivant, à pression plus basse"
+    },
+    {
+      "fichier": "figures/q34-courbe-ie-apres-equivalence.svg",
+      "question": "Q34",
+      "legende": "Courbe courant-potentiel juste après l'équivalence : les potentiels à ±20 µA encadrent étroitement E_éq, ΔE est faible"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Centrale-Supélec MP-MPI-PC-PSI — Rédaction 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Centrale-Supélec MP-MPI-PC-PSI}
+\fancyhead[R]{\small Rédaction 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Centrale-Supélec MP-MPI-PC-PSI — Rédaction 2026\par}\medskip
+  {\large Centrale-Supélec · MP-MPI-PC-PSI · Rédaction · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{partie-a-ruxe9sumuxe9-de-texte}{%
+\section{Partie A -- Résumé de texte}\label{partie-a-ruxe9sumuxe9-de-texte}}
+
+\textbf{Thèse du texte :} mythe et science procèdent du même geste imaginatif, l'invention d'un monde possible ; la science s'en distingue en soumettant ce rêve à l'épreuve, le mythe en le chargeant de sens et de valeurs.
+
+Le mythe satisfait mieux que la science notre besoin de voir le monde unifié : il explique tout a priori ; la science, locale, se contente de réponses partielles et provisoires. Mais elle est née en substituant aux questions générales des questions limitées, qui, paradoxalement, mènent aux réponses générales. Choisir les problèmes \textbar{} mûrs fait le chercheur créatif ; le débutant veut tout embrasser. Cette méthode morcelle le savoir en îlots, que des synthèses relient parfois sans combler toutes les brèches.
+
+Mythe et science obéissent pourtant au même principe : expliquer le visible par des forces invisibles. Tous deux imaginent. Observer suppose de savoir déjà \textbar{} quoi examiner ; les découvertes naissent souvent moins des instruments que de regards neufs, guidés par une idée de la réalité. Toute enquête commence par inventer un monde possible.
+
+Le mythe en reste là : il loge le réel dans son cadre et lit chaque fait comme un signe. La science, elle, \textbar{} soumet sans relâche son rêve à la critique et au contrôle expérimental, pour approcher davantage la réalité.
+
+Reste au mythe une fonction que la science, soucieuse de soustraire la connaissance à toute émotion, ne remplit pas : apaiser notre angoisse, donner sens à la vie, fonder des valeurs et une loi. \textbar{}
+
+\textbf{Total : 200 mots.}
+
+\hypertarget{partie-b-dissertation}{%
+\section{Partie B -- Dissertation}\label{partie-b-dissertation}}
+
+\textbf{Problématique :} si le savant imagine comme le conteur, qu'est-ce qui distingue encore la connaissance de la fable, et l'expérience de la nature se réduit-elle à la représentation que nous nous en faisons ?
+
+Au début de \emph{Vingt mille lieues sous les mers}, une frégate entière, l'\emph{Abraham Lincoln}, appareille pour chasser un être qui n'existe pas : le « monstre » que la presse a composé à partir de quelques abordages inexpliqués. Avant d'être observée, la mer est déjà peuplée d'images. C'est ce que donne à penser François Jacob dans \emph{Le Jeu des possibles} : « Mythique ou scientifique, la représentation du monde que construit l'homme fait toujours une large part à son imagination. » La phrase réunit trois affirmations. Le monde ne nous est pas simplement donné : nous en \emph{construisons} une représentation. L'imagination y occupe « une large part », ce qui veut dire qu'elle n'occupe pas toute la place. Enfin, cela vaut « toujours », donc aussi pour la science, que l'on croit d'ordinaire tirée de la seule observation et opposée trait pour trait au mythe. Si le savant imagine comme le conteur, qu'est-ce qui distingue encore la connaissance de la fable ? Et l'expérience de la nature se réduit-elle à la représentation que nous nous en faisons ? Le roman d'aventures scientifiques de Jules Verne, le récit de survie de Marlen Haushofer et les études de Georges Canguilhem sur la biologie permettent de mettre la formule à l'épreuve. Nous montrerons d'abord que l'imagination est au principe de toute représentation de la nature, savante comprise ; puis que ce qui sépare la science du mythe tient au traitement que l'on fait subir à cette part imaginaire ; enfin, que l'expérience de la nature déborde la représentation elle-même et rend à l'imaginaire une autre fonction que celle de connaître.
+
+Nulle représentation de la nature, d'abord, ne commence par la seule observation. Le roman de Verne s'ouvre sur une énigme et sur un concours d'hypothèses. Dans le chapitre « Le pour et le contre », Aronnax, professeur au Muséum, écarte l'écueil flottant et l'engin sous-marin, puis conclut à un narval gigantesque armé d'une défense capable de percer une coque. Il n'a rien vu : il raisonne sur la déchirure de la \emph{Scotia} et sur des témoignages. Son savoir lui sert à donner une forme plausible à ce qu'il imagine, et Verne souligne l'ironie : l'hypothèse écartée, celle d'une machine construite par un homme, est la vraie. Le savant n'a pas été moins imaginatif que la foule ; il l'a été avec plus de méthode.
+
+Canguilhem montre que cette part imaginaire ne se limite pas aux rumeurs : elle loge au cœur des concepts. Dans « Machine et organisme », il établit que l'explication mécaniste du vivant ne sort pas de l'observation des corps, mais des techniques disponibles, automates et horloges, dont on transporte le modèle dans l'organisme. « La théorie cellulaire » rappelle que la cellule de Hooke est d'abord l'alvéole d'un rayon de miel, et que la notion a longtemps porté des valeurs affectives et sociales de coopération et d'association, qui ont orienté la recherche autant que les microscopes. « Le vivant et son milieu » retrace l'importation en biologie d'une notion venue de la mécanique. Enfin, « La monstruosité et le monstrueux » rappelle que le monstre fut une créature de la légende avant de devenir l'objet d'une science, la tératologie : l'imaginaire précède le concept et lui lègue ses questions.
+
+La narratrice du \emph{Mur invisible} n'échappe pas à cette loi. Devant la paroi transparente qui la sépare du reste du monde, elle échafaude des explications, l'effet de quelque arme inconnue par exemple, sans pouvoir en vérifier aucune. Puis elle entreprend d'écrire un rapport : cette forme sobre, chronologique, est déjà une manière de construire un monde habitable, pour ne pas perdre la raison. L'imagination n'est donc pas un ornement de la connaissance : elle en est la condition. Mais Jacob ne dit pas qu'elle est tout, et c'est sur ce reste qu'il faut s'arrêter.
+
+« Une large part » suppose en effet une autre part, celle du réel qui répond. Le texte de Jacob situe la différence non dans la présence de l'imagination, mais dans ce qu'on en fait : le mythe s'arrête au monde qu'il a inventé, la science confronte sans relâche le possible et l'existant. Verne met en scène cette confrontation. Le monstre devient une coque de tôles boulonnées ; à bord du \emph{Nautilus}, Aronnax mesure, sonde, relève la position, compte les espèces derrière les vitres du salon. Au pôle Sud, Nemo attend que le soleil paraisse pour prendre sa hauteur et prouver, par le calcul, qu'il a atteint le point visé. Le chapitre « Les poulpes » accomplit tout le trajet : la légende du kraken, évoquée par les voyageurs, n'est ni confirmée ni abolie ; un calmar géant surgit, et l'on peut décrire ses bras, son bec, sa taille. La fable avait désigné, en l'exagérant, un possible que l'expérience corrige. Le roman sait pourtant aussi franchir la frontière dans l'autre sens : au chapitre « Un continent disparu », Nemo trace un seul mot sur un rocher, « Atlantide », et la légende de Platon devient paysage sans autre examen. Le romancier s'accorde la liberté que le savant se refuse, et c'est sa propre fiction qui occupe alors toute la place.
+
+Canguilhem empêche de croire que cette épreuve soit un tribunal simple. « L'expérimentation en biologie animale » énumère ce qui, dans le vivant, résiste aux protocoles calqués sur la physique : la spécificité, qui interdit de conclure d'une espèce à une autre, l'individualité, la totalité de l'organisme, que l'on altère en l'isolant, et l'irréversibilité des phénomènes. Le biologiste doit donc inventer des méthodes ajustées à son objet ; l'imagination n'est pas éliminée, elle est corrigée et relancée. Mais Canguilhem ne conclut jamais que les concepts équivalent à des mythes : la cellule, chargée d'images au départ, est devenue un concept opératoire parce qu'elle a été mise à l'épreuve.
+
+Haushofer donne de cette correction la version la plus quotidienne. La citadine arrive dans la montagne avec des images de vacances ; l'hiver, la fenaison dans la clairière, la culture des pommes de terre, la naissance du veau de Bella lui imposent un savoir qui ne se discute pas. Elle apprend en se trompant, elle se méfie de ses rêveries et de ses souvenirs, car il lui faut d'abord survivre. La forêt n'est ni bienveillante ni hostile : elle obéit à son propre rythme. Ici la correction ne réfute pas des théories, elle défait des images. Faut-il pour autant tenir l'imagination pour une illusion à réduire, que la science effacerait peu à peu ?
+
+Ce serait oublier la fonction que Jacob reconnaît lui-même au mythe : donner un sens, des valeurs, une loi, aider à supporter l'angoisse. Canguilhem prolonge cette idée en biologiste. Dès « La pensée et le vivant », la connaissance apparaît comme une manière, pour le vivant humain, de résoudre les tensions qui l'opposent à son milieu ; elle n'est pas une pure contemplation. S'il défend le vitalisme, c'est comme une exigence plutôt que comme une doctrine scientifique : la fidélité de la pensée à l'originalité de la vie. Et « Le vivant et son milieu » rappelle que l'univers abstrait du savant reste ancré dans le milieu propre d'un vivant. La part imaginaire de la représentation exprime alors un rapport vital au monde, non une faiblesse de l'esprit.
+
+Verne l'incarne en Nemo. Avec sa bibliothèque de douze mille volumes et ses collections, nul n'est plus savant ; pourtant « la mer est tout » est une profession de foi, non une loi physique. Sa mer est un refuge et une patrie, le lieu d'une liberté et d'une vengeance. Aronnax, devant les panneaux ouverts du salon, oublie qu'il est prisonnier, et les énumérations de genres et d'espèces deviennent chez Verne une poésie de la nomenclature. Le même livre fait coexister les deux parts sans les confondre.
+
+Le \emph{Mur invisible} va plus loin, et touche la limite de la formule. Le mur n'est jamais expliqué : il n'est ni mythe ni objet de science, il est ce qui résiste à toute représentation. Autour de lui, la nature cesse d'être une image pour devenir le froid, la faim, la fatigue, puis la mort de Lynx et du jeune taureau, tués à la hache par un homme surgi de nulle part. Ces épreuves ne font pas une large part à l'imagination : elles la réduisent au silence. Et pourtant le récit s'achève sur un geste, aller nourrir la corneille blanche que les autres rejettent, qui ne doit rien au mythe ni à la théorie et fonde une valeur à même l'expérience. Le rapport qu'elle écrit n'est ni fable ni traité : c'est un témoignage, dont la vérité tient à la fidélité.
+
+La formule de Jacob est donc juste, mais incomplète. Juste, parce qu'aucune représentation de la nature ne se passe d'invention : le narval d'Aronnax, les images dont Canguilhem fait la généalogie, les hypothèses de la narratrice le confirment. Mais la science se distingue du mythe par l'épreuve qu'elle impose à cette invention, une épreuve que le vivant complique sans l'abolir. Surtout, la formule ne dit rien d'une expérience de la nature qui précède toute représentation et à laquelle toute représentation doit répondre : celle qu'Haushofer donne à lire, et qui rappelle que la nature n'est pas seulement ce que nous imaginons, mais ce qui nous arrive.
+
+\textbf{Environ 1 470 mots} (1 588 si chaque élision compte pour un mot) ; plafond : 1 800 mots.
+
+\end{document}

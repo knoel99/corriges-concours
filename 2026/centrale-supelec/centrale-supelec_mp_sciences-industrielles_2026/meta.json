@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_mp_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 33,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-position-zs.svg",
+      "question": "Q1",
+      "legende": "Allure de la position souhaitée z_s(t) sur un cycle : arcs de parabole raccordés sans point anguleux, palier de 10 min à 130 m (valeurs de Q2)"
+    },
+    {
+      "fichier": "figures/q03-mecanisme-cables.svg",
+      "question": "Q3-Q8",
+      "legende": "Schéma cinématique du mécanisme, d'après la figure 5 du sujet : câble tracteur ct en rouge, câble d'équilibrage ceq en bleu, chevrons donnant l'orientation des câbles choisie en Q4 et Q8"
+    },
+    {
+      "fichier": "figures/q07-mouflage-pcp.svg",
+      "question": "Q7",
+      "legende": "Vitesses de la poulie mobile pcp pour ω_m > 0 : I_pcp1 est fixe (centre instantané de rotation), O_pcp va deux fois moins vite que I_pcp2"
+    },
+    {
+      "fichier": "figures/q20-puissance-modele-mesure.svg",
+      "question": "Q20",
+      "legende": "Puissance p_em pendant les phases à vitesse constante : modèle Eq. 1 constant à ±186 kW (tirets) et mesure de la figure 6, dont le module décroît quand l'altitude augmente"
+    }
+  ]
+}

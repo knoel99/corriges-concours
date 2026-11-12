@@ -1,0 +1,38 @@
+{
+  "slug": "g2e_bcpst_maths_2026",
+  "epreuve": {
+    "concours": "G2E",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2026
+  },
+  "questions": 42,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/p1-q3b-quart-de-disque.svg",
+      "question": "P1 Q3(b)",
+      "legende": "La courbe de f est le demi-cercle supérieur de 𝒞 ; I est l'aire du quart de disque, soit π/4"
+    },
+    {
+      "fichier": "figures/p1-q5a-points-d3.svg",
+      "question": "P1 Q5(a)",
+      "legende": "Les 29 points de D₃ : l'origine, 4n = 12 points sur les axes et les quatre copies (±a, ±b) des 4 points de Q₃"
+    },
+    {
+      "fichier": "figures/p1-q6a-somme-riemann.svg",
+      "question": "P1 Q6(a)",
+      "legende": "Somme de Riemann Rₙ pour n = 8 : rectangles de largeur 1/n et de hauteur f(x/n), prise à droite, sous la courbe de f"
+    },
+    {
+      "fichier": "figures/p2-q6-chaine-base.svg",
+      "question": "P2 Q6(d)",
+      "legende": "Action de u sur la base 𝓑 = (u(a), e′, a) : a ↦ u(a) ↦ 0 et e′ ↦ 0, d'où la matrice de u dans 𝓑"
+    },
+    {
+      "fichier": "figures/p2-partie-c-frise-lancers.svg",
+      "question": "P2 Q7(a)",
+      "legende": "Exemple de l'énoncé : les six découpent la suite des lancers ; X₅ = 0 pour deux six consécutifs"
+    }
+  ]
+}

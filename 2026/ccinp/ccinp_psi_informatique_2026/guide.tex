@@ -1,0 +1,1850 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP PSI — Informatique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP PSI}
+\fancyhead[R]{\small Informatique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP PSI — Informatique 2026\par}\medskip
+  {\large CCINP · PSI · Informatique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} « Autour de l'astro-informatique » : le sujet suit la chaîne de traitement des données du \emph{Sloan Digital Sky Survey} (SDSS), des octets bruts d'une photographie jusqu'à la détection des filaments galactiques. Épreuve PSI5IN, mutualisée avec e3a-Polytech, \textbf{3 heures, calculatrice interdite}. Tout se rédige en Python, sauf les requêtes en SQL, sur un Document Réponse (DR) de 12 pages qui fournit les signatures typées attendues (par exemple \texttt{distance(\allowbreak{}S1:\allowbreak{}{[}float{]}\allowbreak{},\allowbreak{}\ S2:\allowbreak{}{[}float{]}\allowbreak{})\allowbreak{}\ -\textgreater{}\ float}), le graphe de Q23--Q24 et le squelette de Q28.
+
+\textbf{Quatre parties indépendantes, 33 questions.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I (Q1--Q5) --- Base de données astronomiques.} Deux calculs de taille mémoire sans calculatrice, puis trois requêtes SQL sur deux tables \texttt{PhotoObj} et \texttt{SpecObj} reliées par deux clefs étrangères (\texttt{bestObjId}, \texttt{targetObjId}). Piège central : l'attribut \texttt{z} désigne une magnitude dans une table et un redshift dans l'autre.
+\item
+  \textbf{Partie II (Q6--Q14) --- \(k\)-moyennes sur des spectres de galaxies.} Cours, distance entre spectres, valeurs manquantes \texttt{None}, invariant de boucle et comparaison de deux complexités, puis assemblage de fonctions fournies pour écrire les \(k\)-moyennes et un algorithme qui extrait les groupes un par un.
+\item
+  \textbf{Partie III (Q15--Q22) --- \(k\) plus proches voisins sur des spectres d'étoiles.} Cours, biais dû à des effectifs déséquilibrés, puis \textbf{lecture critique d'un script fourni} (valeur de \(k\), rôle des blocs, signature, défauts, niveau de confiance) et matrice de confusion.
+\item
+  \textbf{Partie IV (Q23--Q33) --- Arbre couvrant de poids minimal.} Algorithme glouton (Prim) à la main sur le graphe à sept sommets du DR, matrice d'adjacence, fonctions auxiliaires de Prim, variant, complexité, puis élagage et découpage de l'arbre.
+\end{itemize}
+
+\textbf{Notions du programme mobilisées.} Représentation des entiers et des flottants, taille des données ; SQL (jointure, \texttt{COUNT}, \texttt{GROUP\ BY}, \texttt{HAVING}, \texttt{ORDER\ BY}) ; listes et dictionnaires ; invariant et variant de boucle ; complexité dans le pire des cas ; apprentissage non supervisé (\(k\)-moyennes) et supervisé (\(k\) plus proches voisins, matrice de confusion) ; graphes pondérés, matrice d'adjacence, arbre couvrant, algorithme glouton.
+
+\textbf{Difficulté et longueur.} Sujet long, sans question très difficile. Les points se gagnent sur la précision : compter juste (Q2, Q11, Q30), respecter l'annexe (pas de \texttt{min}, \texttt{max}, \texttt{.sort()} ni de test \texttt{in} sur une liste qui trivialiserait la question), lire attentivement le code fourni (Q17--Q20, Q29, Q32).
+
+\textbf{Questions à ne pas laisser passer.} Q1, Q2, Q3, Q7, Q8, Q9, Q12, Q17, Q25, Q26, Q27, Q28 : courtes et presque mécaniques. Les questions de cours Q6 et Q15, à condition de répondre explicitement sur le sens de \(k\). Q23--Q24 : un tableau bien tenu suffit.
+
+\textbf{Ce qu'en dit le jury (rapport 2026).} Le SQL a été abordé par 80 à 90 \% des copies et a rapporté beaucoup de points ; Q7, première question de programmation, a été tentée par 99 \% des copies et réussie à près de 90 \%. Les questions les plus discriminantes sont les questions de cours et de recul :
+
+\begin{itemize}
+\tightlist
+\item
+  Q6 et Q15 (définition des deux algorithmes, souvent confondus) ;
+\item
+  Q10 (moins de 10 \% d'invariants corrects) ;
+\item
+  Q13--Q14 (à peine plus de la moitié des copies) ;
+\item
+  Q21 (30 \% de tentatives, une sur trois aboutie) et Q22 (matrice de confusion mal connue) ;
+\item
+  en fin de sujet, Q30, Q31 et Q33, traitées par la moitié, le tiers, puis très peu de copies.
+\end{itemize}
+
+Le jury prévient aussi que « le barème a tendance à privilégier les candidats montrant leur maîtrise du langage au programme des CPGE » : les questions de commentaire ne remplacent pas le code.
+
+\textbf{Gestion du temps.} Les parties sont indépendantes : on peut commencer par la I (rapide), puis la IV, la plus longue (11 questions) mais très guidée, et garder pour la fin les questions de rédaction de la III. Compter environ 25 min pour la I, 50 min pour la II, 40 min pour la III et 60 min pour la IV.
+
+\hypertarget{partie-i-interrogation-dune-base-de-donnuxe9es-astronomiques}{%
+\section{Partie I --- Interrogation d'une base de données astronomiques}\label{partie-i-interrogation-dune-base-de-donnuxe9es-astronomiques}}
+
+Deux ordres de grandeur sur la taille des données, puis trois requêtes sur une base à deux tables. Outils : puissances de 2, conversion bits/octets, requêtes SQL avec jointure et agrégats.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Combien de valeurs distinctes peut-on coder avec \(n\) bits ? Comparer à \(256\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le produit sans calculatrice, faire apparaître \(1024\) dans \(2048\).
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Avec \(n\) bits on code \(2^n\) valeurs. Il faut \(2^n \geqslant 256\), et \(256 = 2^8\), donc \(n \geqslant 8\). Ainsi 8 bits suffisent exactement.
+
+\equationajustee{\boxed{8 \text{ bits, soit } 1 \text{ octet par pixel}}}
+
+La photographie compte \(2048 \times 1489\) pixels d'un octet. Calcul posé, sans calculatrice :
+
+\equationajustee{\begin{aligned}
+2048 \times 1489 &= 2 \times 1024 \times 1489 \\
+&= 2978 \times 1024 \\
+&= 3\,049\,472 \text{ octets.}
+\end{aligned}}
+
+Soit \(3{,}05 \times 10^6\) octets, ou \(2978/1024 \approx 2{,}9\) Mio en unités binaires. Arrondi au mégaoctet :
+
+\equationajustee{\boxed{\text{environ } 3 \text{ Mo}}}
+
+\begin{piege}
+
+Les entiers de 0 à 255 sont au nombre de 256 et non 255 : 8 bits conviennent, 9 serait faux. Ne pas confondre non plus « 256 valeurs » et « 256 bits ». Le rapport 2026 note que la majorité trouve 8 bits, mais que « 8 bits = 1 octet semble être souvent inconnu » ; une réponse sur cinq était complètement fausse.
+
+\end{piege}
+
+\begin{jury}
+
+Des réponses aberrantes ont été relevées (jusqu'à \(8^{256}\) bits pour un pixel). Le rapport 2026 : « Quelques ordres de grandeur sur les tailles des images usuelles auraient pu guider ces copies vers les erreurs de raisonnement y ayant mené. » Une photographie de quelques millions de pixels pèse quelques mégaoctets.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Compter les longueurs d'onde échantillonnées : combien d'intervalles de \(0{,}1\) nm, puis combien de points ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un flottant de \(64\) bits occupe combien d'octets ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+On compte les longueurs d'onde de 380 à 920 nm par pas de 0,1 nm, bornes comprises :
+
+\equationajustee{\begin{aligned}
+\frac{920 - 380}{0{,}1} &= 5400 \text{ pas,} \\
+5400 + 1 &= 5401 \text{ longueurs d'onde.}
+\end{aligned}}
+
+Chaque intensité est un flottant de 64 bits, soit 8 octets. Les longueurs d'onde ne sont pas stockées : elles se retrouvent par \(\lambda_i = 380 + 0{,}1\, i\) nm.
+
+\equationajustee{5401 \times 8 = 43\,208 \text{ octets}}
+
+\equationajustee{\boxed{\text{environ } 43 \text{ ko}}}
+
+En kibioctets : \(43\,208 / 1024 \approx 42{,}2\), soit 42 Kio. Un spectre est environ 70 fois plus léger qu'une photographie.
+
+\begin{piege}
+
+L'erreur « piquets et intervalles » : 5400 intervalles mais 5401 points. Ici l'arrondi au ko ne change pas, mais le décompte doit être justifié.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève surtout des erreurs de calcul et la confusion bit/octet. L'énoncé dit « déterminer » et non « donner » : « on attendait donc au moins de voir le calcul posé pour expliquer la démarche ».
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Les deux attributs à comparer sont-ils dans la même table ?
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\texttt{bestObjId} et \texttt{targetObjId} sont deux attributs de la même ligne de \texttt{SpecObj} : un filtre d'égalité et un comptage suffisent, sans jointure.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q3-schema-relationnel.pdf}
+\caption*{Figure 1 --- Tables SpecObj et PhotoObj : bestObjId et targetObjId
+désignent tous deux un objID de PhotoObj, et z est un redshift d'un
+côté, une magnitude de l'autre}
+\end{figure}
+
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*)
+FROM SpecObj
+WHERE bestObjId = targetObjId;
+\end{lstlisting}
+
+\begin{methode}
+
+Avant d'écrire une jointure, repérer dans quelles tables se trouvent les attributs utilisés dans \texttt{SELECT} et \texttt{WHERE}. Si tout est dans une table, on n'en joint pas d'autre.
+
+\end{methode}
+
+\begin{jury}
+
+Question traitée par 95 \% des candidats selon le rapport 2026 ; certains oublient ou ne connaissent pas le mot clé \texttt{COUNT}.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+On veut un nombre par objet photographique : quelle clause regroupe les lignes ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La condition « au moins deux spectres » porte sur un agrégat : \texttt{WHERE} ou \texttt{HAVING} ?
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+On relie chaque spectre à son objet photographique par \texttt{bestObjId}, on regroupe par objet, on filtre après agrégation et on trie.
+
+\begin{lstlisting}[language=SQL]
+SELECT PhotoObj.objID, COUNT(*) AS nb_spectres
+FROM PhotoObj
+JOIN SpecObj ON PhotoObj.objID = SpecObj.bestObjId
+GROUP BY PhotoObj.objID
+HAVING COUNT(*) >= 2
+ORDER BY nb_spectres DESC;
+\end{lstlisting}
+
+La jointure interne écarte les objets sans spectre, ce qui est sans effet puisqu'on en exige deux. Grouper directement \texttt{SpecObj} sur \texttt{bestObjId} donne les mêmes valeurs ; la jointure garantit que les identifiants sont ceux « stockés dans la table \texttt{PhotoObj} ».
+
+\begin{piege}
+
+\texttt{WHERE\ COUNT(\allowbreak{}*)\allowbreak{}\ \textgreater{}=\allowbreak{}\ 2} est une erreur : \texttt{WHERE} filtre les lignes avant le regroupement, quand l'agrégat n'existe pas encore. Le filtre sur un agrégat se met dans \texttt{HAVING}. Autres fautes relevées par le rapport 2026 : \texttt{GROUP\ BY} oublié (la plupart du temps), \texttt{ORDER\ BY\ DESC} sans l'attribut de tri, clauses dans le désordre.
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, « seulement un tiers des candidats arrivent à mettre tous les éléments en place sans erreur ». Le jury conseille une ligne par mot clé, comme ci-dessus, et la forme \texttt{Table.Attribut} (et non \texttt{Attribut.Table}).
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Dresser la liste des attributs utilisés et la table de chacun : il en faut des deux tables.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux attributs s'appellent \texttt{z} : lequel est la magnitude, lequel le redshift ?
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Classe et redshift viennent de \texttt{SpecObj}, angles et magnitude de \texttt{PhotoObj} ; on joint par \texttt{bestObjId}, puisque l'énoncé impose la meilleure observation photographique.
+
+\begin{lstlisting}[language=SQL]
+SELECT PhotoObj.objID, PhotoObj.ra, PhotoObj.dec, SpecObj.z
+FROM PhotoObj
+JOIN SpecObj ON PhotoObj.objID = SpecObj.bestObjId
+WHERE SpecObj.class = 'GALAXY'
+  AND PhotoObj.z < 17
+  AND PhotoObj.ra >= 100 AND PhotoObj.ra <= 250;
+\end{lstlisting}
+
+\texttt{PhotoObj.z\ \textless{}\ 17} est la contrainte de magnitude, \texttt{SpecObj.z} le redshift demandé. Un objet ayant plusieurs spectres apparaît une fois par spectre, avec chaque fois le redshift de ce spectre.
+
+\begin{piege}
+
+Écrire \texttt{z} sans préfixe : la requête est ambiguë et, si elle passe, elle filtre peut-être le redshift au lieu de la magnitude. Joindre sur \texttt{targetObjId} ne respecte pas la consigne de la meilleure observation. Le rapport 2026 relève aussi l'oubli de certains critères (classe, magnitude, intervalle d'ascension droite).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 accepte deux façons de distinguer les deux \texttt{z} : préciser la table, ou une requête imbriquée avec alias. Il rappelle que les questions de SQL ne sont pas rangées par difficulté croissante : « il était donc déconseillé de sauter Q5 sous prétexte que Q4 semblait déjà difficile ».
+
+\end{jury}
+
+\hypertarget{partie-ii-classification-de-spectres-de-galaxies}{%
+\section{Partie II --- Classification de spectres de galaxies}\label{partie-ii-classification-de-spectres-de-galaxies}}
+
+On classe automatiquement des spectres de galaxies par les \(k\)-moyennes, puis on automatise le choix du nombre de groupes. Outils : parcours de listes, invariant, complexité, assemblage de fonctions données.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Rappeler les deux étapes qui alternent dans la boucle et le critère d'arrêt.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Supervisé ou non supervisé ? Le \(k\) est-il une donnée ou un résultat ?
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Les \(k\)-moyennes sont un \textbf{algorithme de classification non supervisée} (apprentissage non supervisé) : on regroupe des données sans étiquette (ici des spectres de \({\mathbb{R}}^N\) munis d'une distance) en \(k\) groupes de données proches.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Initialisation : choisir \(k\) centroïdes, par exemple \(k\) données tirées au hasard.
+\item
+  Affectation : rattacher chaque donnée au centroïde le plus proche, d'où une partition en \(k\) groupes.
+\item
+  Mise à jour : remplacer chaque centroïde par le barycentre des données de son groupe.
+\item
+  Recommencer 2 et 3 jusqu'à ce que la partition ne change plus.
+\end{enumerate}
+
+\textbf{\(k\) est le nombre de groupes que l'on impose}, fixé à l'avance. Le résultat dépend de l'initialisation : on obtient une partition stable qui n'est en général qu'un optimum local.
+
+\begin{piege}
+
+Confondre le \(k\) des \(k\)-moyennes (nombre de groupes) avec celui des \(k\) plus proches voisins de la partie III (nombre de voisins qui votent).
+
+\end{piege}
+
+\begin{jury}
+
+Question discriminante : selon le rapport 2026, sur les 75 \% de copies qui l'ont tentée, plus de la moitié n'a eu aucun point, très souvent par confusion avec les \(k\) plus proches voisins. Le jury ajoute : « Le fait qu'il s'agisse d'un algorithme de classification a été très peu mis en évidence. » Le dire dès la première phrase.
+
+\end{jury}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Un accumulateur, un parcours, puis la division et la racine dans le bon ordre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Faut-il parcourir en valeur ou en position pour lire les deux listes en même temps ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\begin{lstlisting}[language=Python]
+def distance(S1, S2):
+    """S1, S2 : listes de N flottants. Renvoie d(S1, S2)."""
+    N = len(S1)
+    s = 0
+    for i in range(N):
+        s = s + (S1[i] - S2[i]) ** 2   # somme des carres des ecarts
+    return (s / N) ** 0.5              # moyenne, puis racine
+\end{lstlisting}
+
+Coût \(\Theta(N)\). La racine s'écrit \texttt{**\ 0.5}, comme dans le code de l'énoncé.
+
+\begin{piege}
+
+Oublier la division par \(N\) ou la racine. Ici tous les spectres ont la même longueur, donc l'ordre des distances ne changerait pas, mais la fonction ne calculerait pas la grandeur définie par l'énoncé.
+
+\end{piege}
+
+\begin{jury}
+
+Tentée par 99 \% des copies et réussie à près de 90 \% selon le rapport 2026. Fautes relevées : bornes du \texttt{range}, cumul oublié, et l'écrasement des arguments par un \texttt{S1\ =\ {[}{]}} en tête de fonction (« il ne faut surtout pas écraser les arguments donnés à la fonction »). Un nom de variable ne peut pas contenir de parenthèses : \texttt{d(S1,\ S2)\ =\ …} n'a pas de sens en Python.
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Un seul parcours des indices, une condition à deux membres.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comment tester qu'une valeur est \texttt{None} sans confondre avec une intensité nulle ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\begin{lstlisting}[language=Python]
+def positions_a_rejeter(S1, S2):
+    """Liste croissante des i tels que S1[i] ou S2[i] vaut None."""
+    rejet = []
+    for i in range(len(S1)):
+        if S1[i] is None or S2[i] is None:
+            rejet.append(i)
+    return rejet
+\end{lstlisting}
+
+La liste est croissante et sans doublon. Coût \(\Theta(N)\).
+
+\begin{piege}
+
+\texttt{if\ not\ S1{[}i{]}} rejetterait aussi les intensités nulles, qui sont des mesures valides. Et \texttt{if\ S1{[}i{]}\allowbreak{}\ or\ S2{[}i{]}\allowbreak{}\ is\ None} ne teste pas ce qu'on croit : la priorité de \texttt{is} fait lire \texttt{S1{[}i{]}\allowbreak{}\ or\ (\allowbreak{}S2{[}i{]}\allowbreak{}\ is\ None)\allowbreak{}}. Deux boucles séparées sur \texttt{S1} puis \texttt{S2} produiraient des doublons, ce qui fausserait \texttt{m\ =\allowbreak{}\ N\ -\ len(\allowbreak{}a\_rejeter)\allowbreak{}}.
+
+\end{piege}
+
+\begin{piege}
+
+Erreur relevée par le rapport 2026 : deux \texttt{if} successifs (un pour \texttt{S1}, un pour \texttt{S2}) ajoutent deux fois l'indice quand \texttt{S1{[}i{]}} et \texttt{S2{[}i{]}} valent tous deux \texttt{None}. Il faut une condition composée par \texttt{or}, ou un \texttt{if}/\texttt{elif}.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Recherche séquentielle avec sortie anticipée ; quel est le cas où la boucle va jusqu'au bout ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\begin{lstlisting}[language=Python]
+def est_absent(element, L):
+    """True si element n'apparait pas dans L, False sinon."""
+    for v in L:
+        if v == element:
+            return False      # trouve
+    return True               # aucune occurrence
+\end{lstlisting}
+
+Chaque tour coûte \(O(1)\). Le pire des cas est celui où \texttt{element} est absent : on fait les \(r\) tours.
+
+\equationajustee{\boxed{C_{\text{pire}}(r) = \Theta(r)}}
+
+\begin{piege}
+
+Mettre \texttt{else:\allowbreak{}\ return\ True} dans la boucle : la fonction répondrait après le premier élément. Autre erreur typique selon le rapport 2026 : inverser \texttt{True} et \texttt{False}, alors que le nom \texttt{est\_absent} dit ce que l'on renvoie.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 indique que \texttt{return\ not(\allowbreak{}element\ in\ L)\allowbreak{}} a été sanctionné : on attendait un vrai parcours, en distinguant l'élément de sa position. Il rappelle aussi qu'« une instruction conditionnelle n'a pas forcément d'instruction else associée ».
+
+\end{jury}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Seule la variable \texttt{d} évolue dans la boucle : que vaut-elle après avoir traité les indices \(0\) à \(i-1\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'invariant doit faire apparaître explicitement l'exclusion des indices rejetés.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Notons \(A\) l'ensemble des indices de \texttt{a\_rejeter}. Au début de l'itération d'indice \(i\) (et pour \(i = N\) en sortie de boucle) :
+
+\equationajustee{d = \sum_{\substack{0 \leqslant j < i \\ j \notin A}} \big(S_1[j] - S_2[j]\big)^2}
+
+Pour \(i = 0\), la somme est vide et \(d = 0\). Pour \(i = N\), on obtient la somme sur toutes les positions conservées.
+
+La valeur renvoyée \(\sqrt{d/m}\), avec \(m = N - |A|\), est donc la distance cherchée.
+
+\begin{methode}
+
+Un bon invariant est \textbf{quantifié par le compteur de boucle} : il dit « jusqu'où » le travail est fait. « \(d\) contient la somme des carrés » sans borne n'est ni vérifiable ni utilisable.
+
+\end{methode}
+
+\begin{jury}
+
+Question la plus discriminante de la partie II. Le rapport 2026 : « Moins de 10\% des candidats ont su trouver un invariant. » Le jury se demande si la notion même est comprise : une propriété liant les variables à l'indice de boucle, qui donne le résultat en sortie.
+
+\end{jury}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Dans \texttt{distance2}, quel est le coût de l'appel placé dans la boucle ? Distinguer les indices rejetés des autres.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour un indice rejeté, la recherche s'arrête à la position où il se trouve dans \texttt{a\_rejeter} ; sommer ces positions.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Dans \texttt{distance3}, il n'y a que des boucles à corps constant et deux copies.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+On note \(N\) = \texttt{len(S1)}, \(r\) = \texttt{len(a\_rejeter)} (\(0 \leqslant r \leqslant N\), indices distincts).
+
+\textbf{\texttt{distance2}.} \(N\) itérations, chacune avec un appel \texttt{est\_absent(\allowbreak{}i,\allowbreak{}\ a\_rejeter)\allowbreak{}}, de coût au plus \(r\) (Q9) :
+
+\begin{itemize}
+\tightlist
+\item
+  les \(N - r\) indices conservés coûtent \(r\) comparaisons chacun ;
+\item
+  les \(r\) indices rejetés sont trouvés aux positions \(1, 2, \dots, r\) de la liste.
+\end{itemize}
+
+Le nombre total de comparaisons vaut :
+
+\equationajustee{\begin{aligned}
+c(N, r) &= (N - r)\,r + \frac{r(r+1)}{2} \\
+&= Nr - \frac{r(r-1)}{2}.
+\end{aligned}}
+
+Il est compris entre \(Nr/2\) et \(Nr\), car \(r - 1 \leqslant N\). Il s'y ajoute \(\Theta(N)\) pour le reste de la boucle :
+
+\equationajustee{\boxed{C_2 = \Theta(N + Nr)}}
+
+On conclut : \texttt{distance2} est en \(O(Nr)\) pour \(r \geqslant 1\). Elle est en \(O(N^2)\) si \(r\) est proportionnel à \(N\).
+
+\textbf{\texttt{distance3}.} Deux copies en \(\Theta(N)\), \(r\) tours à coût constant, \(N\) tours à coût constant :
+
+\equationajustee{\begin{aligned}
+C_3 &= \Theta(N + r) \\
+&= \Theta(N).
+\end{aligned}}
+
+\equationajustee{\boxed{\texttt{distance3} \text{ est en } O(N)}}
+
+\texttt{distance3} est linéaire, au prix de deux copies (\(\Theta(N)\) en mémoire). Mettre à \(0\) les \textbf{deux} composantes d'une position rejetée annule sa contribution ; les copies évitent de modifier les spectres de l'appelant.
+
+\begin{methode}
+
+Pour un appel de fonction dans une boucle, multiplier le nombre de tours par le coût de l'appel, puis vérifier que le majorant est atteint. Ici le décompte exact donne un encadrement entre \(Nr/2\) et \(Nr\).
+
+\end{methode}
+
+\begin{piege}
+
+Répondre \(O(N^2)\) pour \texttt{distance2} sans faire apparaître \(r\) : le résultat est demandé en fonction des \textbf{deux} paramètres. Ou compter \(\Theta(N)\) en oubliant le coût de l'appel à \texttt{est\_absent} dans la boucle, défaut que le rapport 2026 dit trop fréquent.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « La réponse attendue pour une question de complexité est généralement sous forme d'un grand O. » Le calcul bien expliqué rapporte les points de justification, « mais il ne faut pas oublier de conclure ».
+
+\end{jury}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Une fonction fournie fait déjà tout le travail pour un spectre.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\begin{lstlisting}[language=Python]
+def produit_partition(spectres, centroides):
+    """Indices des centroides les plus proches, dans l'ordre de spectres."""
+    partitionnement = []
+    for S in spectres:
+        partitionnement.append(trouve_centroide_le_plus_proche(S, centroides))
+    return partitionnement
+\end{lstlisting}
+
+Sur l'exemple, S1, S3 et S4 donnent \(1\) (C2), S2 donne \(2\) (C3) et S5 donne \(0\) (C1) : on obtient \texttt{{[}1,\ 2,\ 1,\ 1,\ 0{]}}. Coût \(\Theta(pkN)\).
+
+\begin{piege}
+
+L'énoncé impose d'utiliser au moins une fonction fournie : réécrire la recherche du plus proche centroïde n'est pas dans la consigne. Les indices renvoyés commencent à \(0\) (C2 donne \(1\)). Confusion relevée par le rapport 2026 : en bouclant sur les indices, le spectre est \texttt{spectres{[}i{]}} ; en bouclant sur les spectres, c'est la variable de boucle elle-même.
+
+\end{piege}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Initialiser, puis alterner affectation et recalcul des barycentres.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le critère d'arrêt compare deux partitions successives : il faut garder la précédente. Quelle valeur initiale lui donner pour entrer dans la boucle ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\begin{lstlisting}[language=Python]
+def k_moyennes(spectres, k):
+    """Renvoie (centroides, partitionnement) apres convergence."""
+    centroides = initialise(k, spectres)
+    partitionnement = produit_partition(spectres, centroides)
+    ancien = []                                  # pas encore de partition precedente
+    while partitionnement != ancien:
+        ancien = partitionnement
+        centroides = calcule_centroides(ancien, spectres)
+        partitionnement = produit_partition(spectres, centroides)
+    return centroides, partitionnement
+\end{lstlisting}
+
+\texttt{ancien\ =\ {[}{]}} fait entrer au moins une fois dans la boucle. En sortie, les deux partitions successives sont égales : \texttt{centroides} est la liste des barycentres de \texttt{partitionnement}, et \texttt{partitionnement} est la partition associée à \texttt{centroides}. Chaque appel à \texttt{produit\_partition} construit une liste neuve, donc \texttt{ancien} n'est jamais modifiée par aliasing. Coût d'un tour : \(\Theta(pkN)\).
+
+\begin{methode}
+
+Pour une boucle « jusqu'à stabilisation », garder la valeur précédente dans une variable et comparer en tête de \texttt{while}. Comparer des entiers (les partitions) plutôt que des flottants (les centroïdes) évite les tests d'égalité entre flottants.
+
+\end{methode}
+
+\begin{piege}
+
+Erreur fréquente selon le rapport 2026 : se servir de \texttt{initialise} pour remplacer les spectres. Elle ne fournit que les \(k\) centroïdes de départ, nécessaires au premier appel de \texttt{produit\_partition} ; les spectres, bien plus nombreux, restent tous à classer.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Transcrire les quatre étapes : quelle variable représente les spectres encore à classer ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+\texttt{k\_moyennes} renvoie deux valeurs ; laquelle sert à \texttt{principal\_et\_reste} ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour justifier la terminaison : le groupe majoritaire parmi \(10\) groupes a au moins quelle taille ?
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\begin{lstlisting}[language=Python]
+def groupes_de_spectres(spectres):
+    """Liste des groupes extraits ; les derniers spectres (au plus 100) sont perdus."""
+    groupes = []
+    restants = spectres
+    while len(restants) > 100:                                   # etape 4
+        centroides, partitionnement = k_moyennes(restants, 10)   # etapes 1 et 2
+        principal, reste = principal_et_reste(partitionnement, restants)
+        groupes.append(principal)                                # etape 3
+        restants = reste
+    return groupes
+\end{lstlisting}
+
+On réaffecte \texttt{restants} sans le modifier en place, donc \texttt{spectres} est préservée. Si \texttt{len(restants)} \(= n > 100\), le plus gros des \(10\) groupes contient au moins \(\lceil n/10 \rceil \geqslant 11\) spectres : \texttt{len(restants)} décroît strictement et la boucle termine. Le test en tête de boucle équivaut à l'algorithme de l'énoncé dès que la liste de départ contient plus de \(100\) spectres, ce qui est le cas.
+
+\begin{piege}
+
+Ajouter le \texttt{reste} au lieu du groupe \texttt{principal} : l'exemple de l'énoncé (\texttt{{[}S1,\allowbreak{}\ S3,\allowbreak{}\ S4{]}\allowbreak{},\allowbreak{}\ {[}S2,\allowbreak{}\ S5{]}\allowbreak{}}) indique l'ordre des deux valeurs renvoyées. Autres erreurs relevées par le rapport 2026 : reconstruire le reste à partir du groupe principal, alors que \texttt{principal\_et\_reste} le renvoie déjà ; mal gérer la condition d'arrêt ; renvoyer à la fin les spectres restants, que l'énoncé demande de laisser de côté.
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, Q13 et Q14 ont été traitées par à peine plus de 50 \% des copies, et seule la moitié de celles-ci a tenté des choses intéressantes. Elles demandaient de se souvenir du cours sur les \(k\)-moyennes : c'est là que se fait l'écart dans la partie II.
+
+\end{jury}
+
+\hypertarget{partie-iii-classification-de-spectres-stellaires}{%
+\section{Partie III --- Classification de spectres stellaires}\label{partie-iii-classification-de-spectres-stellaires}}
+
+On classe les étoiles par les \(k\) plus proches voisins, puis on analyse de manière critique un script fourni. Outils : lecture de code, spécification d'une fonction, évaluation d'un classifieur.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Ici les références sont étiquetées : quel type d'apprentissage ? Décrire les trois temps du classement d'une nouvelle donnée.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+L'algorithme des \(k\) plus proches voisins est un \textbf{algorithme de classification supervisée} (apprentissage supervisé) : on dispose de références dont la classe est connue (les \(7R\) spectres étiquetés). Pour classer une donnée \(S\) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  calculer la distance de \(S\) à chaque référence ;
+\item
+  retenir les \(k\) références les plus proches ;
+\item
+  attribuer à \(S\) la classe majoritaire parmi ces \(k\) voisins : c'est un \textbf{vote majoritaire}.
+\end{enumerate}
+
+\textbf{\(k\) est le nombre de voisins qui votent.} Trop petit, la décision est sensible au bruit ; trop grand, des références éloignées votent et les frontières entre classes s'effacent.
+
+\begin{methode}
+
+Pour les deux algorithmes d'apprentissage du programme, toujours préciser : supervisé ou non, rôle de \(k\), ce qui est calculé à chaque étape.
+
+\end{methode}
+
+\begin{piege}
+
+S'arrêter à l'étape 2 : trouver les \(k\) plus proches voisins n'est pas l'algorithme, c'est le vote qui classe. Le rapport 2026 relève cette réponse incomplète dans un nombre « bien trop important » de copies.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « La notion de vote majoritaire suffisait en général pour distinguer les candidats qui ont passé un peu de temps à apprendre leur cours de deuxième année. » Comme en Q6, dire qu'il s'agit d'un algorithme de classification.
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+La décision est un vote par effectifs : que se passe-t-il dans une zone où deux classes se mélangent ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chiffrer l'exemple : sur \(8\) voisins dans la zone frontière, combien de O et de B en moyenne ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Le vote compte les voisins de chaque classe. Au voisinage d'une donnée, une classe a d'autant plus de représentants qu'elle est nombreuse parmi les références. Avec des effectifs inégaux, la classe la plus fournie gagne plus souvent, même quand la ressemblance réelle ne le justifie pas. Un même \(R\) pour toutes les classes supprime ce biais.
+
+Si les références O sont trois fois plus nombreuses que les B et que les deux types sont proches, on trouve environ trois O pour un B dans la zone où ils se mélangent. Avec \(k = 8\), une étoile B y a typiquement 6 voisins O pour 2 B : elle est \textbf{classée O à tort}. Le classifieur est biaisé vers O, justement là où la décision est la plus délicate.
+
+\begin{lstlisting}
+Zone frontiere O/B, etoile B a classer (x), k = 8 voisins les plus proches :
+
+      o     b     o
+   o     o     o
+      o     x     b
+   o     o
+
+   o : reference O (3 fois plus nombreuses)    b : reference B
+   vote des 8 voisins : 6 O, 2 B  ->  etoile classee O (a tort)
+\end{lstlisting}
+
+De plus, le script suppose des blocs de taille \(R\) identique (ligne 5 \texttt{R\ =\allowbreak{}\ len(\allowbreak{}references)\allowbreak{}\ /\allowbreak{}/\allowbreak{}\ len(\allowbreak{}types\_spectraux)\allowbreak{}}, ligne 17 \texttt{j\ =\ i\ //\ R}) : avec des effectifs inégaux, ces lignes attribueraient des références au mauvais type.
+
+\begin{piege}
+
+Se contenter de « cela favorise O » paraphrase la question. Il faut expliquer le mécanisme (vote par effectifs) et donner l'effet sur une étoile B.
+
+\end{piege}
+
+\begin{jury}
+
+Question mal traitée faute de connaître l'algorithme, selon le rapport 2026, qui ajoute : « Un petit schéma permettait d'expliquer la notion rapidement et avec élégance. » Le schéma ci-dessus suffit.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+\(k\) est un paramètre formel de \texttt{mystere} : où reçoit-il sa valeur ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\equationajustee{\boxed{k = 8}}
+
+visible \textbf{ligne 26} : \texttt{type\_spectral\ =\allowbreak{}\ mystere(\allowbreak{}S,\allowbreak{}\ 8)\allowbreak{}}.
+
+\begin{piege}
+
+La ligne 13 (\texttt{seuil\ =\allowbreak{}\ copie\_L{[}k{]}\allowbreak{}}) utilise \(k\) mais n'en fixe pas la valeur. Question la plus réussie du sujet selon le rapport 2026, mais quelques copies ont confondu \(k\) (nombre de voisins) et \(R\) (nombre de références par type, ligne 5).
+
+\end{piege}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Pour chaque bloc, dire à quoi il sert dans l'algorithme, pas ce que fait chaque instruction.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lignes 1 à 5} : chargement des \(7R\) références, liste des types spectraux et nombre \(R\) de références par type.
+\item
+  \textbf{Lignes 8 à 11} : calcul des distances de \(S\) à toutes les références.
+\item
+  \textbf{Lignes 12 à 18} : sélection des \(k\) références les plus proches (distances strictement inférieures à la \((k+1)\)-ième plus petite) et décompte de ces voisins par type.
+\item
+  \textbf{Lignes 19 à 22} : vote majoritaire, renvoi du type le plus représenté parmi les voisins.
+\item
+  \textbf{Lignes 24 à 27} : classification de tous les spectres à classer.
+\end{itemize}
+
+\begin{methode}
+
+« Sans paraphraser » : nommer l'étape de l'algorithme (distances, sélection des voisins, vote, application), pas les instructions.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 relève beaucoup de paraphrases ; les meilleures copies ont respecté la consigne d'une ligne par bloc. En particulier, « faire apparaitre la notion de vote majoritaire pour les lignes 19 à 22 était largement suffisant ».
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Le DR utilise la notation \texttt{nom(\allowbreak{}param:\allowbreak{}type,\allowbreak{}\ …)\allowbreak{}\ -\textgreater{}\ type}. Ajouter les contraintes sur les paramètres et le sens de la valeur renvoyée.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\begin{lstlisting}[language=Python]
+def mystere(S: [float], k: int) -> str
+\end{lstlisting}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{S} : spectre à classer, liste de \(N\) flottants, échantillonnée comme les références ;
+\item
+  \texttt{k} : nombre de voisins, entier avec \(1 \leqslant k <\) \texttt{len(references)} (sinon \texttt{copie\_L{[}k{]}} lève une erreur) ;
+\item
+  renvoie une chaîne de \texttt{types\_spectraux} (\texttt{"O"}, \texttt{"B"}, \ldots, \texttt{"M"}) : le type majoritaire parmi les \(k\) plus proches références de \texttt{S}.
+\end{itemize}
+
+La fonction lit les variables globales \texttt{references}, \texttt{types\_spectraux} et \texttt{R} et ne modifie rien.
+
+\begin{jury}
+
+Pour le spectre, le rapport 2026 précise qu'« il était attendu de préciser que c'était une liste de flottants et pas juste une liste ». Utiliser la nomenclature du sujet pour les spécifications était jugé « tout à fait valable (et efficace) ».
+
+\end{jury}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Un défaut est un cas où le script ne fait pas ce que promet sa spécification, pas une lenteur. Chercher les cas d'égalité.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que se passe-t-il si plusieurs références sont exactement à la distance \texttt{seuil} ? Et si deux types obtiennent le même nombre de voix ? Relire aussi les noms de variables d'une ligne à l'autre.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+Un défaut est ici un cas où le script ne respecte pas sa spécification (renvoyer le type majoritaire parmi les \(k\) plus proches voisins), et non une complexité perfectible.
+
+\textbf{Défaut 1 --- lignes 13 et 16 : distances égales au seuil.} Les voisins retenus sont ceux dont la distance est strictement inférieure à \texttt{seuil\ =\allowbreak{}\ copie\_L{[}k{]}\allowbreak{}}. Des références à égalité avec \texttt{seuil} sont toutes exclues, et moins de \(k\) voisins votent.
+
+Si les \(k+1\) plus petites distances sont égales (références identiques), aucun voisin n'est retenu. Alors \(M = 0\) et la fonction renvoie \texttt{"O"} sans vote.
+
+\textbf{Défaut 2 --- lignes 19 à 22 : égalité du vote.} Si plusieurs types obtiennent le même nombre maximal de voix (4 contre 4 avec \(k = 8\)), la boucle renvoie le premier dans l'ordre de \texttt{types\_spectraux}, sans signaler l'égalité. Le résultat dépend alors de l'ordre de la liste, non des données.
+
+\textbf{Erreur de nom --- ligne 14.} \texttt{resultats\ =\allowbreak{}\ {[}0{]}\allowbreak{}\ *\ len(\allowbreak{}type\_spectraux)\allowbreak{}} emploie le nom \texttt{type\_spectraux}, alors que la variable définie ligne 3 s'appelle \texttt{types\_spectraux} : l'appel lève une \texttt{NameError} et aucun spectre n'est classé. On corrige en \texttt{len(\allowbreak{}types\_spectraux)\allowbreak{}}.
+
+\textbf{Autres défauts.} Lignes 5 et 17 : si \texttt{len(references)} n'est pas un multiple de 7, \texttt{R} est tronqué et des références changent de type. Les variables globales rendent la fonction peu réutilisable.
+
+\begin{methode}
+
+Un défaut se décrit par la ligne en cause, le cas qui le déclenche et la conséquence observable. Un exemple concret (deux références identiques) vaut mieux que « il peut y avoir des problèmes d'égalité ».
+
+\end{methode}
+
+\begin{piege}
+
+Signaler une complexité non optimale (toutes les distances recalculées et triées alors que seules les \(k+1\) plus petites servent) : c'est une amélioration possible, pas un défaut au sens de la question.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 écarte les remarques de complexité : « Ce sont donc de vrais défauts algorithmiques qui étaient attendus ». Les deux défauts attendus sont l'égalité au seuil (nombre de voisins différent de \(k\), voire nul) et l'égalité du vote (premier type renvoyé). La faute \texttt{type\_spectraux}, non voulue par les auteurs, a été comptée comme un défaut majeur quand elle était signalée.
+
+\end{jury}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Une mesure naturelle : la part des voix obtenue par le type gagnant.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Par quoi diviser : par \(k\), ou par le nombre de voisins effectivement retenus ? Penser au défaut 2.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+On renvoie le type et la proportion de voix qu'il a obtenues parmi les voisins retenus.
+
+\begin{lstlisting}[language=Python]
+def mystere(S, k):
+    """Renvoie (type, confiance), confiance = part des voisins retenus
+    qui sont du type renvoye (entre 0 et 1)."""
+    L = []
+    for Sref in references:
+        L.append(distance(S, Sref))
+    copie_L = copie_ordonnee(L)
+    seuil = copie_L[k]
+    resultats = [0] * len(types_spectraux)
+    nb_votants = 0
+    for i in range(len(references)):
+        if L[i] < seuil:
+            j = i // R
+            resultats[j] = resultats[j] + 1
+            nb_votants = nb_votants + 1
+    if nb_votants == 0:                      # aucun voisin retenu
+        return None, 0.0
+    imax = 0                                 # maximum sans max()
+    for i in range(len(resultats)):
+        if resultats[i] > resultats[imax]:
+            imax = i
+    return types_spectraux[imax], resultats[imax] / nb_votants
+\end{lstlisting}
+
+La confiance vaut \(1\) quand tous les voisins sont du même type. Avec 8 voisins retenus et 7 types, le gagnant a au moins 2 voix, donc la confiance est comprise entre \(0{,}25\) et \(1\). Un résultat comme \texttt{("B",\ 0.5)} signale un spectre à vérifier. L'appel ligne 26 devient \texttt{type\_spectral,\allowbreak{}\ confiance\ =\allowbreak{}\ mystere(\allowbreak{}S,\allowbreak{}\ 8)\allowbreak{}}.
+
+\begin{piege}
+
+Renvoyer une « confiance » sans dire ce qu'elle mesure ni entre quelles bornes elle varie. La distance au plus proche voisin, seule, dépend de l'échelle des intensités et ne se compare pas d'un spectre à l'autre.
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, 30 \% des copies ont tenté cette question et une tentative sur trois seulement aboutissait : il fallait un peu de recul sur l'algorithme vu en cours. Une proposition simple, codée et justifiée, rapporte déjà des points.
+
+\end{jury}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Une matrice carrée indexée par les classes : que compte la case de la ligne \(a\) et de la colonne \(b\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour les références, la classe réelle est connue par la position dans la liste. Que se passe-t-il si une référence vote pour elle-même ?
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\textbf{Définition.} On teste un classifieur à \(c\) classes sur des données de classe connue. La matrice de confusion \(M\) est une matrice carrée d'ordre \(c\), indexée par les classes. Son coefficient \(M_{a,b}\) compte les données de classe réelle \(a\) classées en \(b\).
+
+La diagonale contient les bonnes classifications, les termes hors diagonale les confusions ; la trace divisée par le total donne le taux de réussite.
+
+\textbf{Algorithme.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Créer une matrice \(7 \times 7\) de zéros, dans l'ordre de \texttt{types\_spectraux}.
+\item
+  Pour chaque indice \(i\) de \texttt{references} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    type réel : \(a = i \,/\!/\, R\) ;
+  \item
+    classer \texttt{references{[}i{]}} par les \(k\) plus proches voisins \textbf{parmi les autres références}, en sautant l'indice \(i\) dans le calcul des distances ; soit \(b\) l'indice du type obtenu ;
+  \item
+    ajouter \(1\) à \(M_{a,b}\).
+  \end{itemize}
+\item
+  Renvoyer \(M\).
+\end{enumerate}
+
+On exclut la référence testée car elle est à distance nulle d'elle-même et voterait toujours pour sa classe : la matrice serait trop optimiste. On l'exclut par son indice, sans la supprimer de la liste, pour ne pas décaler \texttt{j\ =\ i\ //\ R}.
+
+\begin{methode}
+
+Évaluer un classifieur sur des données qu'il ne connaît pas. Ici, faute d'un jeu de test séparé, on retire à tour de rôle chaque référence.
+
+\end{methode}
+
+\begin{jury}
+
+D'après le rapport 2026, la définition d'une matrice de confusion semble inconnue de la plupart des candidats qui ont abordé la question : c'est une notion du cours de deuxième année, à connaître.
+
+\end{jury}
+
+\hypertarget{partie-iv-reconnaissance-des-filaments-galactiques}{%
+\section{Partie IV --- Reconnaissance des filaments galactiques}\label{partie-iv-reconnaissance-des-filaments-galactiques}}
+
+On fait apparaître les filaments en construisant un arbre couvrant de poids minimal par l'algorithme de Prim, puis en l'élaguant et en le découpant. Outils : graphes pondérés, dictionnaires, variant, complexité.
+
+Graphe du DR (sept sommets, quatorze arêtes) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Arête
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CD
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AB
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AC
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AD
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AF
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+EF
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CB
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+EG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+BE
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+FG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DE
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Poids & 1 & 1 & 2 & 3 & 3 & 4 & 4 & 5 & 5 & 6 & 6 & 7 & 7 & 8 \\
+\end{longtable}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Tenir un tableau : pour chaque sommet hors de l'arbre, le plus petit poids d'une arête qui le relie à l'arbre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+À chaque étape, prendre le minimum de \textbf{toute} la ligne, pas seulement parmi les arêtes issues du dernier sommet ajouté. Mettre ensuite la ligne à jour avec les arêtes du sommet ajouté.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Entre parenthèses, l'extrémité dans l'arbre de l'arête la plus légère.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Arbre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+A
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+B
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+C
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+E
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+F
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+G
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ajout
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+D & 3 (D) & \(\infty\) & \textbf{1 (D)} & 8 (D) & \(\infty\) & 4 (D) & C par DC = 1 \\
+D, C & \textbf{2 (C)} & 6 (C) & --- & 8 (D) & \(\infty\) & 3 (C) & A par CA = 2 \\
+D, C, A & --- & \textbf{1 (A)} & --- & 8 (D) & 4 (A) & 3 (C) & B par AB = 1 \\
+D, C, A, B & --- & --- & --- & 7 (B) & 4 (A) & \textbf{3 (C)} & G par CG = 3 \\
+D, C, A, B, G & --- & --- & --- & 6 (G) & \textbf{4 (A)} & --- & F par AF = 4 \\
+D, C, A, B, G, F & --- & --- & --- & \textbf{5 (F)} & --- & --- & E par FE = 5 \\
+\end{longtable}
+
+\equationajustee{\boxed{\text{Ordre d'ajout : D, C, A, B, G, F, E}}}
+
+Arbre à tracer : \textbf{DC (1), CA (2), AB (1), CG (3), AF (4), FE (5)}, six arêtes pour sept sommets (figure 2, panneau a ; le panneau b sert à la question 24).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-arbre-couvrant-minimal.pdf}
+\caption*{Figure 2 --- Arbre couvrant de poids minimal du graphe du DR (en bleu,
+poids 16) obtenu depuis D (a) et depuis F (b) ; pastilles : rang d'ajout
+des sommets ; disposition des sommets choisie ici}
+\end{figure}
+
+\equationajustee{\boxed{\text{Poids total} = 16}}
+
+\begin{piege}
+
+Choisir l'arête la plus légère du graphe entier (c'est l'algorithme de Kruskal, pas celui de l'énoncé) ou seulement parmi celles du dernier sommet ajouté. Après l'ajout de B, la seule arête issue de B vers l'extérieur est BE = 7, mais le bon choix est G par CG = 3, arête issue d'un sommet ajouté plus tôt.
+
+\end{piege}
+
+\begin{piege}
+
+Le rapport 2026 : « Beaucoup de copies ont cherché à obtenir un chemin plutôt qu'un arbre, aboutissant à un résultat faux. » Ici C est relié à trois sommets (D, A et G) : l'arbre n'est pas un chemin.
+
+\end{piege}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Même tableau depuis F. Comparer ensuite trois choses : l'ordre d'ajout, l'ensemble des arêtes, le poids total.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le commentaire, s'appuyer sur le paragraphe de l'énoncé qui suit la question : quand l'arbre minimal est-il unique ?
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Arbre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+A
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+B
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+C
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+E
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+G
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ajout
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+F & \textbf{4 (F)} & \(\infty\) & \(\infty\) & \(\infty\) & 5 (F) & 7 (F) & A par FA = 4 \\
+F, A & --- & \textbf{1 (A)} & 2 (A) & 3 (A) & 5 (F) & 5 (A) & B par AB = 1 \\
+F, A, B & --- & --- & \textbf{2 (A)} & 3 (A) & 5 (F) & 5 (A) & C par AC = 2 \\
+F, A, B, C & --- & --- & --- & \textbf{1 (C)} & 5 (F) & 3 (C) & D par CD = 1 \\
+F, A, B, C, D & --- & --- & --- & --- & 5 (F) & \textbf{3 (C)} & G par CG = 3 \\
+F, A, B, C, D, G & --- & --- & --- & --- & \textbf{5 (F)} & --- & E par FE = 5 \\
+\end{longtable}
+
+\equationajustee{\boxed{\text{Ordre d'ajout : F, A, B, C, D, G, E}}}
+
+Arêtes : FA (4), AB (1), AC (2), CD (1), CG (3), FE (5), poids \(16\).
+
+\textbf{Commentaire.} L'ordre d'ajout dépend du départ, mais on retrouve \textbf{le même arbre} et le même poids 16. Le poids est forcément le même, puisque l'algorithme donne un arbre couvrant de poids minimal quel que soit le départ.
+
+Les arêtes, elles, pourraient différer : le graphe a des poids répétés et, en général, deux départs peuvent donner deux arbres différents de même poids. Ici l'arbre minimal est unique, car chaque arête non retenue est strictement plus lourde que toutes celles du cycle qu'elle fermerait (AD = 3 ferme D--C--A de poids 1 et 2 ; AG = 5 ferme A--C--G de poids 2 et 3 ; EG = 6 ferme E--F--A--C--G de poids au plus 5\ldots). Des poids distincts suffisent à l'unicité, sans être nécessaires.
+
+\begin{piege}
+
+Conclure que « le départ n'a jamais d'influence sur l'arbre » : c'est faux en général quand des poids sont égaux. Ce qui ne dépend jamais du départ, c'est le \textbf{poids total}.
+
+\end{piege}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Le poids est-il la distance ou son carré ? Vérifier sur l'exemple donné.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\begin{lstlisting}[language=Python]
+def poids(coords, i, j):
+    """Carre de la distance euclidienne entre les galaxies i et j."""
+    p = 0
+    for c in range(3):                      # x, y, z
+        p = p + (coords[i][c] - coords[j][c]) ** 2
+    return p
+\end{lstlisting}
+
+Sur l'exemple : \((0-3)^2 + (1-2)^2 + (5-5)^2 = 9 + 1 + 0 = 10\). Coût \(O(1)\).
+
+\begin{piege}
+
+Prendre la racine : l'exemple attend \(10\) et non \(\sqrt{10}\). La fonction reçoit des \textbf{indices} \texttt{i}, \texttt{j}, pas des triplets. Erreur principale relevée par le rapport 2026 : utiliser des variables \texttt{x}, \texttt{y}, \texttt{z} qui ne sont pas définies dans les arguments ; les coordonnées se lisent dans \texttt{coords{[}i{]}} et \texttt{coords{[}j{]}}. Une boucle n'est pas nécessaire, le nombre de coordonnées étant fixé.
+
+\end{piege}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Deux boucles imbriquées ; construire chaque ligne par \texttt{append}.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\begin{lstlisting}[language=Python]
+def matrice_adjacence(coords):
+    """Matrice N x N des poids du graphe complet des galaxies."""
+    N = len(coords)
+    M = []
+    for i in range(N):
+        ligne = []
+        for j in range(N):
+            ligne.append(poids(coords, i, j))
+        M.append(ligne)
+    return M
+\end{lstlisting}
+
+\(M\) est symétrique (\(p_{ij} = p_{ji}\)), de diagonale nulle ; coût \(\Theta(N^2)\) en temps et en mémoire.
+
+\begin{piege}
+
+\texttt{M\ =\allowbreak{}\ {[}{[}0{]}\allowbreak{}\ *\ N{]}\allowbreak{}\ *\ N} crée \(N\) références vers \textbf{la même} ligne : modifier \texttt{M{[}0{]}{[}j{]}} modifierait toutes les lignes. Remettre \texttt{ligne\ =\ {[}{]}} à chaque tour de la boucle extérieure. Le rapport 2026 relève aussi \texttt{{[}{[}{]}*N{]}} (une liste contenant une seule liste vide) et l'accès à \texttt{M{[}i{]}{[}j{]}} dans une liste vide.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note que certains ont exploité la symétrie de la matrice, « mais ne pas le faire n'était pas pénalisé ».
+
+\end{jury}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Toutes les galaxies sont des clefs ; une seule n'a pas la valeur infinie. Dans quel ordre écrire les affectations ?
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\begin{lstlisting}[language=Python]
+def initialisation_distance(G, depart):
+    """dist[i] = inf pour tout i, sauf dist[depart] = 0."""
+    dist = {}
+    for i in range(len(G)):
+        dist[i] = float('inf')
+    dist[depart] = 0
+    return dist
+\end{lstlisting}
+
+\texttt{depart} reste une clef de valeur \(0\), donc la première recherche l'extrait et le place dans l'arbre. Coût \(\Theta(N)\).
+
+\begin{piege}
+
+Exclure \texttt{depart} du dictionnaire : la boucle de \texttt{arbre\_couvrant\_minimal} ne le traiterait jamais et ses voisins ne seraient pas mis à jour au premier tour.
+
+\end{piege}
+
+\begin{piege}
+
+Erreurs relevées par le rapport 2026 : \texttt{dist{[}\textquotesingle{}depart\textquotesingle{}{]}} (une chaîne) au lieu de \texttt{dist{[}depart{]}} (la variable) ; \texttt{G{[}i{]}} ou \texttt{G{[}i{]}{[}j{]}} pris comme clefs au lieu de l'indice \texttt{i} ; départ traité avant la boucle puis écrasé par l'infini ; boucle commençant à 1 ou terminant à \texttt{len(G)\ -\ 1}, ce qui oublie une galaxie, alors que le départ peut être n'importe quelle galaxie. Tout remplir à l'infini puis corriger le départ, comme ci-dessus, évite ces écueils.
+
+\end{piege}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Le squelette du DR maintient le minimum courant \texttt{mindist} et la galaxie qui le réalise \texttt{candidat}. À quelle condition faut-il les mettre à jour ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Squelette du DR complété :
+
+\begin{lstlisting}[language=Python]
+def recherche_distance_minimale(dist):
+    mindist = float('inf')
+    candidat = None
+    for gal in dist:
+        if dist[gal] < mindist:
+            mindist = dist[gal]
+            candidat = gal
+    del dist[candidat] # Suppression de la clef candidate du dictionnaire
+    return candidat    # et renvoi du candidat
+\end{lstlisting}
+
+À la fin de la boucle, \texttt{candidat} est la galaxie de \texttt{dist} de distance minimale à l'arbre ; elle est retirée de \texttt{dist} (modification visible depuis l'appelant) puis renvoyée. Dans notre graphe complet à poids finis, \texttt{candidat} n'est jamais \texttt{None} : au premier tour \texttt{dist{[}depart{]}\ =\ 0}, ensuite toutes les valeurs restantes sont finies. Sur un graphe non connexe, où toutes les valeurs restantes pourraient valoir l'infini, il faudrait écrire \texttt{if\ candidat\ is\ None\ or\ dist{[}gal{]}\allowbreak{}\ \textless{}\ mindist:\allowbreak{}}. Coût \(O(|\texttt{dist}|)\).
+
+\begin{methode}
+
+Recherche du minimum sans \texttt{min} : une valeur courante initialisée à l'infini (ou au premier élément), un test strict, la mise à jour simultanée de la valeur et de l'élément qui la réalise.
+
+\end{methode}
+
+\begin{piege}
+
+Comme en Q27, le rapport 2026 relève la confusion entre chaîne et variable : \texttt{dist{[}\textquotesingle{}gal\textquotesingle{}{]}} au lieu de \texttt{dist{[}gal{]}}. Question bien traitée, selon lui, par les 70 \% de candidats arrivés jusque-là.
+
+\end{piege}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Que devient \texttt{len(dist)} à chaque tour de la boucle \texttt{while} ? Examiner les deux fonctions appelées.
+
+\end{indication}
+
+\begin{indication}{2}
+
+\texttt{mise\_a\_jour} peut-elle ajouter une clef à \texttt{dist} ? Regarder la condition qui protège l'affectation.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Un variant est une quantité entière, positive, qui décroît strictement à chaque tour de boucle.
+
+\textbf{Variant : \(V\) = \texttt{len(dist)}.}
+
+\begin{itemize}
+\tightlist
+\item
+  \(V\) est un entier naturel.
+\item
+  \texttt{recherche\_distance\_minimale} retire exactement une clef (\texttt{del\ dist{[}candidat{]}\allowbreak{}}). \texttt{mise\_a\_jour} n'écrit \texttt{dist{[}y{]}} que si \texttt{y\ in\ dist} : elle modifie des valeurs existantes sans ajouter de clef (ses ajouts portent sur \texttt{pred}). Donc \(V\) diminue de \(1\) à chaque tour.
+\end{itemize}
+
+Une suite d'entiers naturels strictement décroissante est finie : la condition \texttt{len(dist)\ !=\ 0} devient fausse et la fonction \textbf{termine}, après exactement \(N\) tours puisque \(V = N\) au départ.
+
+\begin{methode}
+
+Prouver qu'une quantité est un variant, c'est vérifier deux points : elle est entière et positive, et \textbf{tout} le corps de boucle la fait décroître strictement, y compris les fonctions appelées.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 : « Attention néanmoins à bien définir ce qu'est un variant et à justifier correctement sa décroissance stricte. »
+
+\end{jury}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Donner d'abord le coût de chaque fonction auxiliaire, puis le nombre de tours de boucle (Q29).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le test \texttt{y\ in\ dist} sur un dictionnaire : quel coût d'après l'annexe ?
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+Soit \(N\) = \texttt{len(G)}.
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{initialisation\_distance} : \(N\) insertions en \(O(1)\), donc \(\Theta(N)\).
+\item
+  \texttt{recherche\_distance\_minimale} : au tour \(t\), avec \(0 \leqslant t \leqslant N-1\), \texttt{dist} a \(N - t\) clefs. Parcours en \(\Theta(N - t)\), suppression en \(O(1)\).
+\item
+  \texttt{mise\_a\_jour} : \(N\) tours avec un test \texttt{y\ in\ dist} en \(O(1)\) (dictionnaire), une lecture \texttt{G{[}x{]}{[}y{]}} et au plus deux affectations, donc \(\Theta(N)\).
+\item
+  Boucle principale : \(N\) tours (Q29).
+\end{itemize}
+
+On somme le coût de l'initialisation et ceux des \(N\) tours :
+
+\equationajustee{\begin{aligned}
+C(N) &= \Theta(N) + \sum_{t=0}^{N-1} \big( \Theta(N - t) + \Theta(N) \big) \\
+&= \Theta(N) + \Theta\!\left(\frac{N(N+1)}{2}\right) + \Theta(N^2).
+\end{aligned}}
+
+\equationajustee{\boxed{C(N) = \Theta(N^2)}}
+
+La fonction est donc en \(O(N^2)\) dans le pire des cas. Ce coût est du même ordre que la taille de la matrice d'adjacence, qu'il faut de toute façon construire.
+
+\begin{piege}
+
+Annoncer \(\Theta(N^2)\) sans les trois coûts intermédiaires, que la question demande expressément. Le même test \texttt{y\ in\ dist} sur une liste coûterait \(O(N)\) et ferait passer le total à \(O(N^3)\).
+
+\end{piege}
+
+\begin{jury}
+
+Abordée par la moitié des copies seulement, avec, selon le rapport 2026, « souvent des erreurs dans les combinaisons de complexités même si celles des fonctions de base sont souvent bien évaluées ». Le point délicat est la composition : un coût par tour, sommé sur les \(N\) tours de la boucle principale.
+
+\end{jury}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+Dans le dictionnaire \texttt{arbre}, la clef est le successeur et la valeur le prédécesseur, point à garder en tête pour les trois dernières questions.
+
+\begin{indication}{1}
+
+Plutôt que de compter, pour chaque \(x\), les \(y\) tels que \texttt{arbre{[}y{]}\ ==\ x} (deux boucles), faire « déclarer » chaque liaison à son prédécesseur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un seul parcours des clefs \(y\) ; un compteur par prédécesseur dans un dictionnaire.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\begin{lstlisting}[language=Python]
+def dico_galaxies_avec_successeurs(arbre):
+    """{x : nombre de y tels que arbre[y] == x}, pour les x ayant un successeur."""
+    nb_succ = {}
+    for y in arbre:
+        x = arbre[y]                 # y est un successeur de x
+        if x in nb_succ:
+            nb_succ[x] = nb_succ[x] + 1
+        else:
+            nb_succ[x] = 1
+    return nb_succ
+\end{lstlisting}
+
+Une galaxie sans successeur n'est jamais créée comme clef ; la racine (\texttt{depart}, absente des clefs de \texttt{arbre}) est créée dès qu'elle apparaît comme valeur. Coût \(\Theta(n)\), chaque opération de dictionnaire étant en \(O(1)\).
+
+\begin{methode}
+
+Le comptage par dictionnaire (un compteur par clef, créé à la première rencontre) transforme un double parcours en \(O(n^2)\) en un parcours unique en \(O(n)\).
+
+\end{methode}
+
+\begin{jury}
+
+Traitée par un tiers des copies. Le rapport 2026 : « La racine a souvent été oubliée malgré la dernière phrase de la question dans l'énoncé. » Les solutions qui parcourent les valeurs du dictionnaire, comme celle-ci, n'ont pas ce problème et sont linéaires sans effort.
+
+\end{jury}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Quelles galaxies un tour de la boucle conserve-t-il ? Traduire « sans successeur » en vocabulaire d'arbre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que devient une galaxie dont tous les successeurs viennent d'être supprimés ? Comparer l'effet sur une branche courte et sur le long filament.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+Un tour calcule les galaxies ayant au moins un successeur et ne garde que ces clefs : \textbf{il supprime toutes les feuilles} de l'arbre (galaxies sans successeur) avec la liaison vers leur prédécesseur. Une galaxie dont tous les successeurs ont disparu devient feuille au tour suivant. Après \texttt{nb\_etapes} tours, \texttt{nb\_etapes} couches de feuilles ont été retirées : les branches de longueur au plus \texttt{nb\_etapes} ont disparu.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q32-elagage.pdf}
+\caption*{Figure 3 --- Deux tours d'élagage sur un arbre d'exemple : chaque tour
+retire toutes les feuilles (en vermillon), la racine reste}
+\end{figure}
+
+Intérêt : l'arbre couvrant relie toutes les galaxies, y compris les petites ramifications (« radicules » de la figure 5(a)) sans signification physique. Elles disparaissent en quelques tours, tandis que le filament, long, ne perd qu'un sommet par tour à ses extrémités libres (la racine, qui n'est pas une clef, n'est pas retirée tant qu'elle a un successeur). Il reste le squelette de la figure 5(b), plus lisible pour l'astronome. Coût \(O(n)\) par tour.
+
+\begin{piege}
+
+Dire qu'on supprime les galaxies sans \textbf{prédécesseur} : les clefs de \texttt{arbre} ont toutes un prédécesseur ; c'est l'absence de successeur qui provoque la suppression. Remarquer aussi que l'élagage ne tient aucun compte des distances : il ne coupe pas la longue liaison vers l'amas isolé, d'où la question suivante.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attend une description appuyée sur ce que fait réellement le code. Le retrait des galaxies sans successeur est souvent cité, mais « celui de la répétition itérative de ce retrait l'a très rarement été ». Les schémas sur un petit arbre inventé, comme celui ci-dessus, ont été très appréciés.
+
+\end{jury}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Deux parcours : un pour la longueur moyenne \(\ell_m\), un pour filtrer. Pourquoi ne peut-on pas tout faire en un seul ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les coefficients de \texttt{G} sont des carrés de distances. Comment obtenir la longueur d'une liaison ? Et comment ne pas modifier \texttt{arbre} ?
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+La longueur de la liaison de \texttt{y} vers son prédécesseur est \texttt{G{[}y{]}\allowbreak{}{[}arbre{[}y{]}\allowbreak{}{]}\allowbreak{}\ **\ 0.5}, puisque \texttt{G} contient des carrés de distances. On calcule \(\ell_m\) sur toutes les liaisons de l'arbre reçu, puis on construit un nouveau dictionnaire.
+
+\begin{lstlisting}[language=Python]
+def separation(G, arbre, alpha):
+    """Nouveau dictionnaire de predecesseurs sans les liaisons de longueur
+    > alpha * lm ; G, arbre et alpha ne sont pas modifies."""
+    if len(arbre) == 0:
+        return {}
+    somme = 0
+    for y in arbre:                              # longueur moyenne lm
+        somme = somme + G[y][arbre[y]] ** 0.5
+    lm = somme / len(arbre)
+    nouvel_arbre = {}
+    for y in arbre:                              # filtrage
+        if G[y][arbre[y]] ** 0.5 <= alpha * lm:
+            nouvel_arbre[y] = arbre[y]
+    return nouvel_arbre
+\end{lstlisting}
+
+Retirer la clef \texttt{y} coupe la liaison \texttt{y}--\texttt{arbre{[}y{]}} : \texttt{y} devient la racine d'une nouvelle composante connexe. L'amas isolé, rattaché au filament par une seule liaison très longue, en est séparé. On divise par le nombre de liaisons \texttt{len(arbre)}, pas par le nombre de galaxies. Coût \(\Theta(n)\). On peut aussi travailler directement sur les carrés \texttt{G{[}y{]}{[}arbre{[}y{]}{]}}, puisque \(\alpha\) est empirique, à condition de le dire.
+
+\begin{piege}
+
+Supprimer des clefs de \texttt{arbre} par \texttt{del} : l'énoncé interdit de modifier les arguments, et supprimer pendant le parcours d'un dictionnaire provoque une erreur. Filtrer en même temps que l'on calcule la moyenne comparerait chaque liaison à une moyenne partielle.
+
+\end{piege}
+
+\begin{piege}
+
+Erreur fréquente selon le rapport 2026, pour cette question la moins traitée du sujet : calculer la moyenne des distances sur toute la matrice \texttt{G}, c'est-à-dire sur toutes les paires de galaxies, au lieu des seules liaisons de l'arbre restant.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Taille des données : \(\lceil \log_2 v \rceil\) bits pour \(v\) valeurs, « piquets et intervalles » pour un échantillonnage, conversions octets/ko/Mo dans une convention annoncée.
+\item
+  SQL : repérer la table de chaque attribut avant de joindre, préfixer les homonymes, \texttt{HAVING} pour un filtre sur un agrégat.
+\item
+  Invariant de boucle quantifié par le compteur ; variant entier strictement décroissant en examinant tout le corps de boucle, fonctions appelées comprises.
+\item
+  Complexité d'un appel dans une boucle : nombre de tours fois coût de l'appel, puis vérifier que le majorant est atteint ; coût \(O(1)\) des opérations de dictionnaire.
+\item
+  Comptage par dictionnaire pour passer de \(O(n^2)\) à \(O(n)\).
+\item
+  Recherche de minimum sans \texttt{min}, avec mise à jour simultanée de la valeur et de l'élément.
+\end{itemize}
+
+\textbf{Questions discriminantes (rapport 2026).} Les définitions de cours (Q6, Q15, Q22), l'invariant (Q10), les \(k\)-moyennes à assembler (Q13--Q14), le niveau de confiance (Q21) et les questions de fin de sujet (Q30, Q31, Q33). Le jury insiste : seule une pratique régulière sur machine installe les automatismes, et le code doit rester lisible (indentation nette, noms clairs, une clause SQL par ligne).
+
+\textbf{Prérequis à revoir.} Les deux algorithmes d'apprentissage du programme (\(k\)-moyennes, \(k\) plus proches voisins) et la matrice de confusion ; les dictionnaires Python (\texttt{in}, \texttt{del}, parcours des clefs) ; l'algorithme de Prim et sa parenté avec Dijkstra.
+
+\textbf{Questions classiques transposables.} Calcul de taille mémoire d'une image ou d'un signal ; requêtes avec \texttt{GROUP\ BY\ …\ HAVING} ; recherche séquentielle et sa complexité ; comparaison de deux implémentations d'un même calcul ; \(k\)-moyennes avec critère d'arrêt sur la partition ; critique d'un script de \(k\) plus proches voisins (égalités, effectifs) ; Prim à la main par tableau ; variant d'une boucle qui vide une structure ; élagage des feuilles d'un arbre représenté par ses prédécesseurs.
+
+\end{document}

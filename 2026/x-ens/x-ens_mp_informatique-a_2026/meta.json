@@ -1,0 +1,33 @@
+{
+  "slug": "x-ens_mp_informatique-a_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2026
+  },
+  "questions": 25,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/i8-file-fenetre-glissante.svg",
+      "question": "I.8",
+      "legende": "Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent 2 triplets, puis t_j est enfilé"
+    },
+    {
+      "fichier": "figures/ii4-chemin-inverse-skip-list.svg",
+      "question": "II.4",
+      "legende": "Chemin de recherche de 28 dans la skip list de la figure 3 du sujet, lu à l'envers : montée avec probabilité p, recul au même étage avec probabilité 1 − p"
+    },
+    {
+      "fichier": "figures/ii6-insertion-raccordement.svg",
+      "question": "II.6",
+      "legende": "Insertion de 30, tiré au niveau 1 : à chaque étage ≤ 1, le nouveau nœud reprend d'abord le successeur de pred (1), puis pred pointe vers lui (2)"
+    },
+    {
+      "fichier": "figures/iii7-quantification-produit.svg",
+      "question": "III.7",
+      "legende": "Quantification de produit avec m = 3 paquets et k = 4 : la distance approchée D′ij est la somme des lectures d1(2, 1), d2(0, 0) et d3(3, 2) dans les tables des paquets"
+    }
+  ]
+}

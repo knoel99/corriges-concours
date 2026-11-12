@@ -1,0 +1,38 @@
+{
+  "slug": "mines-ponts_mpi_physique-2_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MPI",
+    "matiere": "Physique 2",
+    "annee": 2026
+  },
+  "questions": 27,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-contour-ampere.svg",
+      "question": "Q2",
+      "legende": "Coupe méridienne du solénoïde infini (⊙ courant sortant, ⊗ courant entrant, comme sur la figure 2 de l'énoncé) et contour d'Ampère ABCD : côté AB intérieur, côté CD extérieur où le champ est nul"
+    },
+    {
+      "fichier": "figures/q5-cylindre-flux.svg",
+      "question": "Q5",
+      "legende": "Cylindre élémentaire de rayon r entre z et z + dz : le flux du champ magnétique entre par le disque inférieur et sort par le disque supérieur et par la surface latérale (hauteur dz exagérée)"
+    },
+    {
+      "fichier": "figures/q6-lignes-de-champ.svg",
+      "question": "Q6",
+      "legende": "Lignes de champ r = kz près de l'axe, dans un plan méridien : demi-droites orientées vers les z croissants, en trait plein là où z ≫ b, prolongées en tirets jusqu'à O"
+    },
+    {
+      "fichier": "figures/q10-diagramme-fresnel.svg",
+      "question": "Q10",
+      "legende": "Diagramme de Fresnel : le facteur −j met I₂ en quadrature retard, la division par R + jLω le fait encore tourner de arctan(Lω/R), d'où cos φ < 0 et sin φ < 0 (angle d'environ 2° à 50 Hz, exagéré ici)"
+    },
+    {
+      "fichier": "figures/q12-forces-anneau.svg",
+      "question": "Q12",
+      "legende": "Forces de Laplace sur deux éléments opposés de l'anneau, à un instant où i₁ > 0 croît et i₂ < 0 : les composantes radiales se compensent, les composantes axiales, dues à la composante radiale du champ, s'ajoutent (inclinaison du champ exagérée)"
+    }
+  ]
+}

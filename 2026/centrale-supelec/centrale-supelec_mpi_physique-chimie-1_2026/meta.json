@@ -1,0 +1,43 @@
+{
+  "slug": "centrale-supelec_mpi_physique-chimie-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MPI",
+    "matiere": "Physique-chimie 1",
+    "annee": 2026
+  },
+  "questions": 43,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q7-force-element-surface.svg",
+      "question": "Q7",
+      "legende": "j_s et B* changent de signe ensemble : la force sur dS reste dirigée vers le conducteur (+e_z)"
+    },
+    {
+      "fichier": "figures/q10-modes-cavite.svg",
+      "question": "Q10",
+      "legende": "Trois premiers modes de la cavité : un nœud de E sur chaque plan, n demi-longueurs d'onde, λ_n = 2a/n"
+    },
+    {
+      "fichier": "figures/q27-geometrie-sphere-plan.svg",
+      "question": "Q27",
+      "legende": "Géométrie sphère-plan (non à l'échelle) : R² = x² + (R − e)², H = d + e, la force vient de la calotte x < x_c = √(2Rd)"
+    },
+    {
+      "fichier": "figures/q35-dispersion-plasma.svg",
+      "question": "Q35",
+      "legende": "Dispersion du plasma ω² = ω_P² + k²c² : onde évanescente sous ω_P, propagation avec v_φ > c au-dessus"
+    },
+    {
+      "fichier": "figures/q41-orientation-bd1.svg",
+      "question": "Q41",
+      "legende": "Orientation de BD1 vue dans le sens de propagation (e_z vers l'observateur) : directions propres selon les bissectrices de x et y, A1 reçoit 1 + e^(−iφ), B1 reçoit 1 − e^(−iφ)"
+    },
+    {
+      "fichier": "figures/q42-contraste-complexe.svg",
+      "question": "Q42",
+      "legende": "Contraste complexe : C = e^(iφ) parcourt le cercle unité, la déflexion se lit sur l'angle polaire θ = φ"
+    }
+  ]
+}

@@ -1,0 +1,1744 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto BCPST — Mathématiques 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Agro-Véto BCPST}
+\fancyhead[R]{\small Maths 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Agro-Véto BCPST — Mathématiques 2026\par}\medskip
+  {\large Agro-Véto · BCPST · Maths · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} Le sujet suit l'expérience de Luria et Delbrück (1943), qui a montré que les mutations de résistance apparaissent au hasard au fil des divisions cellulaires, et non en réponse à l'exposition. Mathématiquement, on oppose deux modèles pour le nombre \(X\) de bactéries survivantes :
+
+\begin{itemize}
+\tightlist
+\item
+  un modèle « mutation induite », dans lequel chaque bactérie mute indépendamment. On obtient une loi binomiale, approchée par une loi de Poisson ;
+\item
+  un modèle « mutation spontanée transmise », qui conduit à la loi de Yule--Simon.
+\end{itemize}
+
+Les deux modèles se distinguent par l'\textbf{indice de dispersion} \(\mathbb V(X)/\mathbb E(X)\). Il vaut \(1\) dans le premier modèle et dépasse strictement \(1\) dans le second.
+
+\textbf{Format.} L'épreuve dure 2 heures, sans calculatrice, et le sujet tient en 4 pages. Elle compte 37 questions. Il n'y a aucune donnée numérique. Les parties sont indépendantes, sauf la question 24.
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0899}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1102}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3464}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.4235}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notions mobilisées
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I & 1--4 & Approximation binomiale de la loi de Poisson & schéma de Bernoulli, limites avec \(\exp\circ\ln\), espérance et variance de lois usuelles \\
+II & 5--7 & Inégalités de Markov et de Chernoff & espérance discrète, théorème de transfert, série exponentielle, étude de fonction, croissances comparées \\
+III & 8--17 & Transformée \(L_P\), endomorphisme \(\sum a_kX^k\mapsto\sum k!\,a_kX^k\), commutant d'une matrice & intégrales généralisées, intégration par parties, noyau, théorème du rang, éléments propres, diagonalisation, sous-espaces vectoriels \\
+IV & 18--20 & Construction de la loi de Yule--Simon & comparaison d'intégrales, changement de variable, somme géométrique, existence d'une variable discrète de loi donnée \\
+V & 21--24 & Espérance et variance de la loi de Yule--Simon, conclusion & intégration par parties, récurrence, dérivation d'une identité, séries à termes positifs, König--Huygens, estimation \\
+\end{longtable}
+
+\textbf{Difficulté et longueur.} Le sujet est long pour 2 heures, mais très guidé.
+
+\begin{itemize}
+\tightlist
+\item
+  Beaucoup de questions sont des questions de cours ou des applications immédiates : 1, 4, 5, 10, 11, 12, 13, 14, 16, 17.a, 17.c, 20.a et 21.c. Il ne faut pas les laisser passer.
+\item
+  Les questions les plus techniques sont 3, 7.b, 7.c, 19, 20.c et surtout 22.c, qui assemble quatre résultats précédents.
+\item
+  La question 24 est une question de synthèse. Elle se rédige même sans avoir fait la partie V, puisque le résultat de 23.c est donné par l'énoncé.
+\end{itemize}
+
+\textbf{Ce que le rapport 2026 juge discriminant.} Le jury rappelle que la justification porte « une partie très importante des points ». Des questions réputées faciles ont en réalité trié les copies :
+
+\begin{itemize}
+\tightlist
+\item
+  question 1 : seule la moitié des copies a tous les points, faute de citer l'indépendance ;
+\item
+  question 5 (Markov) : abordée par la moitié des candidats, et la majorité n'a eu aucun point ;
+\item
+  question 8 : la moitié des copies qui l'abordent n'a aucun point ;
+\item
+  question 10 : 12 \% des copies seulement ont tous les points ;
+\item
+  question 14 : correcte dans un tiers des copies ; question 17.a : moins d'un tiers des copies a tous les points ;
+\item
+  question 18 : les trois quarts des copies qui l'abordent n'ont aucun point ;
+\item
+  question 20.a : 10 \% des copies qui l'abordent ont tous les points.
+\end{itemize}
+
+À l'inverse, les questions 4 (près de 70 \%) et 11 (80 \%) sont bien réussies. Sur la partie I, les candidats n'ont en moyenne obtenu que la moitié des points.
+
+\textbf{Gestion du temps.} Comptez environ 20 minutes pour la partie I, 25 pour la II, 30 pour la III, 15 pour la IV et 30 pour la V. Si le temps manque, traitez en priorité les questions 10 à 17, très rentables si elles sont justifiées, puis la question 24. Le jury déconseille un « grappillage très rarement fructueux » : mieux vaut rédiger complètement moins de questions.
+
+\hypertarget{partie-i-approximation-de-la-loi-de-poisson}{%
+\section{Partie I --- Approximation de la loi de Poisson}\label{partie-i-approximation-de-la-loi-de-poisson}}
+
+On montre que le nombre de survivantes, qui suit une loi binomiale de paramètres \(N\) et \(\lambda/N\), converge vers une loi de Poisson. On en tire ensuite la propriété caractéristique de cette loi : l'espérance et la variance y sont égales.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Chaque bactérie est une épreuve à deux issues. Quelles hypothèses de l'énoncé permettent de reconnaître une loi usuelle ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrivez \(X_N\) comme une somme de variables indicatrices, puis citez précisément l'hypothèse d'indépendance.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+On suppose \(N\ge\lambda\), pour que \(\lambda/N\in\,]0,1]\) soit une probabilité. Ce n'est pas restrictif, car la suite du sujet fait tendre \(N\) vers \(+\infty\).
+
+Pour \(i\in\{1,\dots,N\}\), notons \(B_i\) la variable qui vaut \(1\) si la \(i\)-ème bactérie devient résistante, donc survit, et \(0\) sinon.
+
+Chaque bactérie est une expérience de Bernoulli de paramètre \(\lambda/N\), et ces \(N\) expériences sont \textbf{mutuellement indépendantes} par hypothèse. La variable \(X_N=\sum_{i=1}^NB_i\) compte les succès. Donc :
+
+\equationajustee{\boxed{X_N\sim\mathcal B\!\left(N,\tfrac\lambda N\right)}}
+
+c'est-à-dire, pour \(k\in\{0,\dots,N\}\) :
+
+\equationajustee{\boxed{\mathbb P(X_N=k)=\binom Nk\left(\frac\lambda N\right)^k\left(1-\frac\lambda N\right)^{N-k}.}}
+
+\begin{jury}
+
+Rapport 2026 : « Il fallait justifier qu'il s'agissait d'une loi binomiale en évoquant des expériences de Bernoulli indépendantes. » Seule la moitié des copies a eu tous les points sur cette question pourtant traitée par presque tous. Donnez aussi le support et les probabilités élémentaires : la formule sert dès la question 3.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+On a une forme indéterminée du type « \(1^\infty\) ». Comment transformer une puissance dont l'exposant varie ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Passez par \(\exp\big((N-k)\ln(1-\lambda/N)\big)\), puis utilisez l'équivalent usuel de \(\ln(1+u)\) en \(0\). Rappelez-vous que \(k\) ne dépend pas de \(N\).
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Soit \(k\) fixé. Pour \(N>\lambda\), on a \(1-\lambda/N\in\,]0,1[\) et
+
+\equationajustee{\left(1-\frac\lambda N\right)^{N-k}=\exp\!\left[(N-k)\ln\!\left(1-\frac\lambda N\right)\right].}
+
+On étudie l'exposant. Comme \(\lambda/N\to0\) et \(\ln(1+u)\sim u\) en \(0\), on a \(\ln(1-\lambda/N)\sim-\lambda/N\). Comme \(k\) est fixé, \(N-k\sim N\). Par produit d'équivalents :
+
+\equationajustee{(N-k)\ln\!\left(1-\frac\lambda N\right)\sim-\lambda .}
+
+Une suite équivalente à une constante non nulle tend vers cette constante : l'exposant tend vers \(-\lambda\). Par continuité de l'exponentielle (composition de limites) :
+
+\equationajustee{\boxed{\lim_{N\to+\infty}\left(1-\frac\lambda N\right)^{N-k}=e^{-\lambda}.}}
+
+\begin{methode}
+
+Pour une limite de la forme \(u_N^{v_N}\), écrivez toujours \(e^{v_N\ln u_N}\) et cherchez la limite de l'exposant. Une variante consiste à séparer \((1-\lambda/N)^N\,(1-\lambda/N)^{-k}\), dont le second facteur tend vers \(1\).
+
+\end{methode}
+
+\begin{piege}
+
+Écrire « \(1^\infty=1\) », ou écrire un équivalent de l'exponentielle à partir d'un équivalent de l'exposant. Le rapport 2026 rappelle que « l'on ne peut pas passer les équivalents dans l'exponentielle » : on conclut sur la \textbf{limite} de l'exposant, puis par continuité. Il relève aussi des oublis fréquents de parenthèses en écrivant \((N-k)\ln(\dots)\).
+
+\end{piege}
+
+\begin{piege}
+
+Oublier que \(k\) est fixé. Si \(k\) dépendait de \(N\), par exemple \(k=N/2\), la limite ne serait plus \(e^{-\lambda}\).
+
+\end{piege}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Partez de la formule de la question 1 et isolez le facteur traité à la question 2.
+
+\end{indication}
+
+\begin{indication}{2}
+
+N'écrivez pas \(\binom Nk\) avec \(N!\). Utilisez plutôt le produit \(N(N-1)\cdots(N-k+1)\), qui compte \(k\) facteurs, et divisez chacun par \(N\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Pour \(N\ge\max(k,\lambda)\) :
+
+\equationajustee{\begin{aligned}
+\mathbb P(X_N=k)&=\frac{N(N-1)\cdots(N-k+1)}{N^k}\cdot\frac{\lambda^k}{k!}\cdot\left(1-\frac\lambda N\right)^{N-k}\\
+&=\prod_{j=0}^{k-1}\left(1-\frac jN\right)\cdot\frac{\lambda^k}{k!}\cdot\left(1-\frac\lambda N\right)^{N-k}.
+\end{aligned}}
+
+Le produit compte un nombre \textbf{fixe} \(k\) de facteurs, qui tendent chacun vers \(1\), donc il tend vers \(1\). Le dernier facteur tend vers \(e^{-\lambda}\) (question 2). Ainsi :
+
+\equationajustee{\boxed{\lim_{N\to+\infty}\mathbb P(X_N=k)=e^{-\lambda}\frac{\lambda^k}{k!}.}}
+
+\begin{piege}
+
+Le passage à la limite dans un produit n'est licite que si le \textbf{nombre} de facteurs ne dépend pas de \(N\). C'est le cas ici, car \(k\) est fixé.
+
+\end{piege}
+
+\begin{jury}
+
+Il faut démontrer le résultat, pas le citer. Rapport 2026 : « Les étudiants qui ont cité ce résultat directement (sans en vérifier d'ailleurs les hypothèses) n'ont pas répondu à la question. » Le jury signale aussi des raisonnements qui partent d'une question 2 fausse et retombent « miraculeusement » sur le résultat demandé.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Question de cours : rappelez l'espérance et la variance d'une loi de Poisson.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Si \(X\sim\mathcal P(\mu)\) avec \(\mu>0\), alors \(\mathbb E(X)=\mu\) et \(\mathbb V(X)=\mu\), et \(\mathbb E(X)\ne0\). Donc :
+
+\equationajustee{\boxed{\frac{\mathbb V(X)}{\mathbb E(X)}=1.}}
+
+Ce rapport ne dépend pas du paramètre, ce qui en fait une signature de la loi de Poisson testable sur des données. C'est l'idée de la question 24.
+
+\hypertarget{partie-ii-inuxe9galituxe9s-de-concentration}{%
+\section{Partie II --- Inégalités de concentration}\label{partie-ii-inuxe9galituxe9s-de-concentration}}
+
+On démontre l'inégalité de Markov, puis on l'applique à \(e^{tX}\) pour obtenir une famille de bornes, qu'on optimise en \(t\) (méthode de Chernoff). Le cas de la loi de Poisson montre que la seconde borne est bien meilleure.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Partez de la définition de \(\mathbb E(X)\) comme somme sur les valeurs prises par \(X\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Coupez la somme en deux selon la position des valeurs par rapport à \(a\). Une des deux parties peut être minorée par \(0\), l'autre par un multiple de \(\mathbb P(X>a)\).
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Soit \(X\) discrète positive admettant une espérance, et soit \(a>0\). On a \(\mathbb E(X)=\sum_{x\in X(\Omega)}x\,\mathbb P(X=x)\), série absolument convergente.
+
+\begin{itemize}
+\tightlist
+\item
+  Les termes avec \(x\le a\) sont positifs, car \(X\ge0\). On peut donc les retirer en minorant.
+\item
+  Pour \(x>a\), on a \(x\,\mathbb P(X=x)\ge a\,\mathbb P(X=x)\).
+\end{itemize}
+
+D'où :
+
+\equationajustee{\begin{aligned}
+\mathbb E(X)&\ge\sum_{x>a}x\,\mathbb P(X=x)\\
+&\ge a\sum_{x>a}\mathbb P(X=x)\\
+&=a\,\mathbb P(X>a).
+\end{aligned}}
+
+La dernière égalité vient de ce que \(\{X>a\}\) est la réunion disjointe des \(\{X=x\}\) pour \(x>a\). Comme \(a>0\) :
+
+\equationajustee{\boxed{\mathbb P(X>a)\le\frac{\mathbb E(X)}a.}}
+
+\begin{jury}
+
+Question de cours abordée par la moitié des candidats seulement, et la majorité n'y a eu aucun point (rapport 2026). Le rapport rappelle en introduction : « Lorsqu'il est explicitement demandé de prouver un résultat, on ne peut pas se contenter de dire qu'il apparaît dans le cours ou de citer son nom. » Faites apparaître chaque hypothèse là où elle sert : la positivité de \(X\) pour retirer des termes, \(a>0\) pour diviser.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Traduisez l'événement \(\{X>a\}\) en un événement portant sur \(Z_t\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+La stricte croissance de \(u\mapsto e^{tu}\) demande \(t>0\). Le cas \(t=0\) se traite à part, et il est immédiat.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\textbf{Cas \(t=0\).} On a \(\psi(0)=\ln1=0\), et l'inégalité \(\mathbb P(X>a)\le1\) est vraie.
+
+\textbf{Cas \(t>0\).} La fonction \(u\mapsto e^{tu}\) est strictement croissante, donc \(\{X>a\}=\{Z_t>e^{ta}\}\).
+
+On vérifie les hypothèses de Markov : \(Z_t\) est positive, elle admet une espérance puisque \(\psi(t)\) est définie, et le seuil \(e^{ta}\) est strictement positif. La question 5 donne :
+
+\equationajustee{\begin{aligned}
+\mathbb P(X>a)&=\mathbb P(Z_t>e^{ta})\\
+&\le\frac{\mathbb E(Z_t)}{e^{ta}}\\
+&=e^{\psi(t)-ta}.
+\end{aligned}}
+
+Dans les deux cas :
+
+\equationajustee{\boxed{\forall t\ge0,\quad\mathbb P(X>a)\le e^{\psi(t)-ta}.}}
+
+La question 5 n'a été démontrée que pour une variable discrète. Si \(X\) est discrète, \(Z_t\) l'est aussi, ce qui suffit pour la question 7.
+
+\begin{methode}
+
+L'inégalité vaut pour \textbf{tout} \(t\ge0\). On peut donc ensuite choisir le \(t\) qui rend la borne la plus petite. C'est exactement ce que fait la question 7.b.
+
+\end{methode}
+
+\begin{jury}
+
+Rapport 2026 : « Avant d'appliquer le résultat précédent, il faut en vérifier les hypothèses. » Le jury attend aussi que l'égalité des événements soit justifiée par l'injectivité ou la stricte croissance de l'exponentielle, ce qui impose la disjonction de cas selon que \(t\) est nul ou non.
+
+\end{jury}
+
+\hypertarget{question-7.a}{%
+\subsection{Question 7.a}\label{question-7.a}}
+
+\begin{indication}{1}
+
+Pour l'existence comme pour le calcul, utilisez le théorème de transfert : l'espérance de \(e^{tX}\) s'exprime comme une série.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Regroupez \(e^{tk}\lambda^k\) en une seule puissance \(k\)-ième et reconnaissez une série de référence, convergente pour tout réel.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Soit \(t\ge0\). Par le théorème de transfert, \(Z_t\) admet une espérance si et seulement si la série \(\sum_ke^{tk}e^{-\lambda}\lambda^k/k!\) converge absolument. Ses termes sont positifs, il suffit donc qu'elle converge. Or :
+
+\equationajustee{\begin{aligned}
+\sum_{k=0}^{+\infty}e^{tk}e^{-\lambda}\frac{\lambda^k}{k!}&=e^{-\lambda}\sum_{k=0}^{+\infty}\frac{(\lambda e^t)^k}{k!}\\
+&=e^{-\lambda}e^{\lambda e^t},
+\end{aligned}}
+
+la série exponentielle convergeant sur \(\mathbb R\). Donc \(\mathbb E(Z_t)=e^{\lambda(e^t-1)}\).
+
+Ce réel est \textbf{strictement} positif, donc son logarithme existe, et \(\psi\) est bien définie sur \(\mathbb R_+\), avec :
+
+\equationajustee{\boxed{\psi(t)=\lambda\,(e^t-1).}}
+
+\begin{jury}
+
+Rapport 2026 : « L'objectif de la question n'a pas été comprise. » Il fallait d'abord établir que \(\exp(tX)\) admet une espérance, et non se contenter de sa positivité pour justifier le logarithme. Pour le calcul, « il fallait évoquer le théorème de transfert et s'intéresser à la convergence absolue de la série ».
+
+\end{jury}
+
+\begin{piege}
+
+Le jury note « de très fréquentes erreurs sur les exponentielles ». Typiquement : écrire \(\sum(\lambda e^t)^k/k!=e^\lambda e^t\) au lieu de \(e^{\lambda e^t}\), ou oublier le facteur \(e^{-\lambda}\).
+
+\end{piege}
+
+\hypertarget{question-7.b}{%
+\subsection{Question 7.b}\label{question-7.b}}
+
+\begin{indication}{1}
+
+Vous disposez d'une borne \(e^{\varphi(t)}\) valable pour tout \(t\ge0\). Que faire de ce paramètre libre ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Étudiez les variations de \(\varphi(t)=\lambda(e^t-1)-ta\) sur \(\mathbb R_+\). L'hypothèse \(\lambda\le a\) sert à placer le point critique dans \(\mathbb R_+\).
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+D'après les questions 6 et 7.a, \(\mathbb P(X>a)\le e^{\varphi(t)}\) pour tout \(t\ge0\), avec :
+
+\equationajustee{\varphi(t)=\lambda(e^t-1)-ta .}
+
+On a \(\varphi'(t)=\lambda e^t-a\), positif si et seulement si \(t\ge t^*\), où \(t^*=\ln(a/\lambda)\). Comme \(\lambda\le a\), on a \(t^*\ge0\).
+
+La fonction \(\varphi\) décroît sur \([0,t^*]\) puis croît, et son minimum vaut :
+
+\equationajustee{\begin{aligned}
+\varphi(t^*)&=\lambda\left(\frac a\lambda-1\right)-a\ln\frac a\lambda\\
+&=a\ln\lambda-a\ln a+a-\lambda .
+\end{aligned}}
+
+En prenant \(t=t^*\), on obtient, si \(\lambda\le a\) :
+
+\equationajustee{\boxed{\mathbb P(X>a)\le\exp(a\ln\lambda-a\ln a+a-\lambda).}}
+
+\begin{piege}
+
+Sans l'hypothèse \(\lambda\le a\), on aurait \(t^*<0\). Le minimum sur \(\mathbb R_+\) serait alors atteint en \(t=0\), ce qui ne donne que la borne triviale \(1\).
+
+\end{piege}
+
+\hypertarget{question-7.c}{%
+\subsection{Question 7.c}\label{question-7.c}}
+
+\begin{indication}{1}
+
+Explicitez la borne de Markov dans le cas de la loi de Poisson : que vaut \(\mathbb E(X)\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les deux bornes tendent vers \(0\). Pour les comparer, étudiez la limite de leur \textbf{rapport}, ou du logarithme de ce rapport.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+Pour \(a\ge\lambda\), on compare la borne de Markov \(B_5(a)=\lambda/a\) et la borne de 7.b :
+
+\equationajustee{B_7(a)=\exp\left(-a\ln\frac a\lambda+a-\lambda\right).}
+
+Le logarithme de leur rapport vaut :
+
+\equationajustee{\begin{aligned}
+\ln\frac{B_7(a)}{B_5(a)}&=-(a-1)\ln\frac a\lambda+a-\lambda\\
+&\underset{a\to+\infty}{\sim}-a\ln a ,
+\end{aligned}}
+
+car \(a-\lambda=o(a\ln a)\). Il tend vers \(-\infty\), donc \(B_7(a)/B_5(a)\to0\).
+
+\textbf{La borne de la question 7.b est la meilleure quand \(a\to+\infty\)}, et \(B_7(a)=o(B_5(a))\). Elle décroît comme \(e^{-a\ln a}\), plus vite que toute exponentielle, alors que la borne de Markov ne décroît qu'en \(1/a\).
+
+Par exemple, pour \(\lambda=2\) et \(a=14\), on trouve \(B_5\approx0{,}14\) et \(B_7\approx2{,}4\times10^{-7}\). Les deux bornes valent \(1\) en \(a=\lambda\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q7c-bornes-markov-chernoff.pdf}
+\caption*{Figure 1 --- Bornes de Markov (Q5) et de Q7.b pour une loi de Poisson de
+paramètre λ = 2, en échelle logarithmique : égales à 1 en a = λ, elles
+se séparent ensuite très vite}
+\end{figure}
+
+\begin{piege}
+
+Constater que \(B_7(a)\to0\) ne suffit pas, puisque \(B_5(a)\to0\) aussi. C'est la comparaison des vitesses qui répond à la question.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Il ne s'agit pas de répondre ``la première'' ou ``la seconde''. Toute réponse doit être justifiée. »
+
+\end{jury}
+
+\hypertarget{partie-iii-uxe9tude-dun-endomorphisme}{%
+\section{Partie III --- Étude d'un endomorphisme}\label{partie-iii-uxe9tude-dun-endomorphisme}}
+
+Les questions 8 et 9 montrent que \(L_P(\nu)\) se calcule en multipliant chaque coefficient de \(P\) par \(k!\), ce qui motive l'endomorphisme \(L\). On en étudie ensuite le noyau, la surjectivité, la matrice et les éléments propres. La question 17, indépendante, porte sur un commutant de matrice.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Que dire de \(|P(s)|\,e^{-s/(2\nu)}\) quand \(s\to+\infty\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Appliquez la définition de la limite avec \(\varepsilon=1\). Pour l'intégrale, séparez un segment \([0,M]\) et une demi-droite \([M,+\infty[\) où vous comparez.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Soit \(P=\sum_{j=0}^na_js^j\). Pour \(s\ge0\), on a \(|P(s)|\le\sum|a_j|s^j\), et chaque \(s^je^{-s/(2\nu)}\) tend vers \(0\) par croissances comparées. Donc \(|P(s)|e^{-s/(2\nu)}\to0\).
+
+Par définition de la limite (avec \(\varepsilon=1\)), il existe \(M\ge0\) tel que \(|P(s)|e^{-s/(2\nu)}\le1\) pour \(s>M\). En multipliant par \(e^{-s/(2\nu)}>0\) :
+
+\equationajustee{\boxed{\forall s>M,\quad|P(s)|e^{-s/\nu}\le e^{-s/(2\nu)}.}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q8-domination-seuil-m.pdf}
+\caption*{Figure 2 --- Exemple P(s) = s³ et ν = 1, en échelle logarithmique : la
+majoration de Q8 est fausse pour 1,23 \textless{} s \textless{} 17,0 et
+ne devient vraie qu'au-delà du seuil M ≈ 17}
+\end{figure}
+
+La fonction \(s\mapsto P(s)e^{-s/\nu}\) est \textbf{continue} sur \([0,+\infty[\) : l'intégrale n'est généralisée qu'en \(+\infty\).
+
+\begin{itemize}
+\tightlist
+\item
+  Sur \([0,M]\), son intégrale existe, car c'est une intégrale sur un segment.
+\item
+  Sur \([M,+\infty[\), sa valeur absolue est majorée par la fonction positive \(s\mapsto e^{-s/(2\nu)}\). L'intégrale de celle-ci converge et vaut \(2\nu e^{-M/(2\nu)}\). Par comparaison de fonctions \textbf{positives}, l'intégrale converge absolument, donc converge.
+\end{itemize}
+
+Par la relation de Chasles, \textbf{\(L_P(\nu)\) est bien défini}.
+
+\begin{methode}
+
+Pour l'intégrabilité d'un « polynôme × exponentielle décroissante », on garde la moitié de l'exponentielle pour absorber le polynôme, et l'autre moitié pour dominer. Tout facteur \(\theta\in\,]0,1[\) conviendrait à la place de \(1/2\).
+
+\end{methode}
+
+\begin{piege}
+
+La majoration est fausse sur une plage intermédiaire. Pour \(P(s)=s^3\) et \(\nu=1\), elle n'est vraie qu'au-delà de \(s\approx17\). On ne peut donc pas comparer sur tout \([0,+\infty[\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 parle de « graves lacunes » : « quasiment aucune copie n'évoque la continuité de la fonction », et « le critère de comparaison porte sur les fonctions positives ». Une justification rapide de la convergence de l'intégrale du majorant était attendue. La moitié des copies qui ont abordé la question n'a eu aucun point.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Établissez une relation de récurrence entre l'intégrale d'exposant \(k\) et celle d'exposant \(k-1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Intégrez par parties sur un segment \([0,A]\), puis faites tendre \(A\) vers \(+\infty\). Rédigez une vraie récurrence, et contrôlez votre formule sur \(k=0\).
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Posons \(J_k=\int_0^{+\infty}s^ke^{-s/\nu}\,\mathrm ds\), qui converge par la question 8 appliquée à \(P=X^k\). On montre par récurrence la propriété \(\mathcal H_k\) : « \(J_k=k!\,\nu^{k+1}\) ».
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Initialisation.} On a \(\int_0^Ae^{-s/\nu}\,\mathrm ds=\nu(1-e^{-A/\nu})\), qui tend vers \(\nu\). Donc \(J_0=\nu\), et \(\mathcal H_0\) est vraie.
+\item
+  \textbf{Hérédité.} Soit \(k\ge1\) tel que \(\mathcal H_{k-1}\) soit vraie. Sur \([0,A]\), les fonctions \(s\mapsto s^k\) et \(s\mapsto-\nu e^{-s/\nu}\) sont de classe \(\mathcal C^1\). Une intégration par parties donne :
+\end{itemize}
+
+\equationajustee{\int_0^As^ke^{-s/\nu}\,\mathrm ds=-\nu A^ke^{-A/\nu}+k\nu\int_0^As^{k-1}e^{-s/\nu}\,\mathrm ds .}
+
+Le crochet \(-\nu A^ke^{-A/\nu}\) tend vers \(0\) par croissances comparées. En faisant \(A\to+\infty\) :
+
+\equationajustee{\begin{aligned}
+J_k&=k\nu J_{k-1}\\
+&=k\nu\cdot(k-1)!\,\nu^k\\
+&=k!\,\nu^{k+1}.
+\end{aligned}}
+
+Par récurrence, \(\mathcal H_k\) est vraie pour tout \(k\). En divisant par \(\nu\) :
+
+\equationajustee{\boxed{\frac1\nu\int_0^{+\infty}s^ke^{-s/\nu}\,\mathrm ds=k!\,\nu^k.}}
+
+Pour \(P=\sum_{k=0}^na_kX^k\), la linéarité s'applique (somme finie d'intégrales convergentes) :
+
+\equationajustee{\boxed{L_P(\nu)=\sum_{k=0}^nk!\,a_k\,\nu^k.}}
+
+\begin{piege}
+
+Oublier un facteur \(\nu\) : \(J_k\) vaut \(k!\,\nu^{k+1}\), et c'est le facteur \(1/\nu\) de l'énoncé qui ramène à \(k!\,\nu^k\). Le contrôle \(J_0=\nu\) tranche immédiatement.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « La rédaction propre d'une récurrence est un attendu de base. » Pour l'intégration par parties, il faut préciser la régularité des fonctions et la limite du crochet. Le jury note enfin que trop de copies ont oublié la seconde partie de la question, l'expression de \(L_P(\nu)\).
+
+\end{jury}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Un endomorphisme est une application linéaire d'un espace dans lui-même. Il y a deux choses à vérifier.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+Les coefficients d'un polynôme dans la base \((1,X,\dots,X^d)\) sont uniques, donc \(L\) est bien définie.
+
+L'image \(\sum k!\,a_kX^k\) ne contient que des puissances \(X^k\) avec \(k\le d\). Elle est de degré au plus \(d\), donc elle appartient à \(\mathbb R_d[X]\).
+
+Soient \(P=\sum a_kX^k\), \(Q=\sum b_kX^k\) et \(\mu\in\mathbb R\). Les coefficients de \(\mu P+Q\) sont les \(\mu a_k+b_k\), donc :
+
+\equationajustee{\begin{aligned}
+L(\mu P+Q)&=\sum_{k=0}^dk!\,(\mu a_k+b_k)X^k\\
+&=\mu L(P)+L(Q).
+\end{aligned}}
+
+\textbf{\(L\) est un endomorphisme de \(\mathbb R_d[X]\).}
+
+\begin{jury}
+
+Rapport 2026 : « Au final, seul 12\% des copies ont tous les points. » Le calcul de \(L(\mu P+Q)\) doit faire apparaître les coefficients du polynôme \(\mu P+Q\). Et pour l'espace d'arrivée, « une rapide justification était attendue ».
+
+\end{jury}
+
+\begin{piege}
+
+Nommer deux polynômes \(P\) et \(P'\), comme le relève le jury : la notation \(P'\) désigne déjà la dérivée. Prenez \(P\) et \(Q\).
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Comptez les éléments de la base canonique, sans oublier le degré \(0\).
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\equationajustee{\boxed{\dim\mathbb R_d[X]=d+1.}}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Donnez d'abord la définition, puis traduisez \(L(P)=0\) sur les coefficients.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Par définition :
+
+\equationajustee{\ker L=\{P\in\mathbb R_d[X]\ :\ L(P)=0\}.}
+
+Si \(P=\sum a_kX^k\), alors \(L(P)=0\) équivaut à \(k!\,a_k=0\) pour tout \(k\).
+
+Comme \(k!\ne0\), cela équivaut à \(a_k=0\) pour tout \(k\). Donc :
+
+\equationajustee{\boxed{\ker L=\{0\}.}}
+
+\begin{jury}
+
+Quand une question demande une définition, il faut l'écrire. Le rapport 2026 note un « grand flottement dans l'écriture formelle ensembliste ou logique », et des notations mal choisies. Par exemple, appeler \(X\) l'élément générique de \(\mathbb R_d[X]\) entre en conflit avec l'indéterminée \(X\).
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Que dit le théorème du rang pour un endomorphisme d'un espace de dimension finie dont le noyau est nul ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\(L\) est un endomorphisme de \(\mathbb R_d[X]\), de \textbf{dimension finie} \(d+1\). Le théorème du rang donne :
+
+\equationajustee{\operatorname{rg}L=d+1-\dim\ker L=d+1 .}
+
+Donc \(\operatorname{Im}L=\mathbb R_d[X]\).
+
+\textbf{\(L\) est surjectif}, et même bijectif. Directement : \(\sum b_kX^k=L\left(\sum\frac{b_k}{k!}X^k\right)\).
+
+\begin{piege}
+
+Rapport 2026 : « Tout endomorphisme injectif n'est pas forcément surjectif. » Il fallait préciser que \(\mathbb R_d[X]\) est de dimension finie. En dimension infinie, l'endomorphisme \(P\mapsto XP\) de \(\mathbb R[X]\) est injectif sans être surjectif : le polynôme \(1\) n'a pas d'antécédent.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Calculez l'image de chaque vecteur de la base canonique et rangez les coordonnées en colonnes.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+On a \(L(1)=1\), \(L(X)=X\), \(L(X^2)=2X^2\) et \(L(X^3)=6X^3\). Dans la base \((1,X,X^2,X^3)\) :
+
+\equationajustee{\boxed{\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&2&0\\0&0&0&6\end{pmatrix}.}}
+
+\begin{piege}
+
+Attention, \(0!=1\) et non \(0\). Les deux premiers coefficients diagonaux sont donc égaux, ce qui compte aux questions 15 et 16.
+
+\end{piege}
+
+\begin{piege}
+
+Une matrice dans une base est un tableau de \textbf{nombres}. Le rapport 2026 relève que les matrices obtenues « contiennent souvent des \(X\) ou des \(a_k\) » ; la question n'est correctement traitée que dans un tiers des copies.
+
+\end{piege}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+La base canonique est formée de vecteurs propres. Repérez cependant les valeurs de \(k!\) qui coïncident.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour obtenir les sous-espaces propres, résolvez \(L(P)=\mu P\) coefficient par coefficient.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+On a \(L(P)=\mu P\) si et seulement si \((k!-\mu)\,a_k=0\) pour tout \(k\in\{0,\dots,d\}\). Donc \(\mu\) est valeur propre si et seulement si \(\mu=k!\) pour un certain \(k\).
+
+Le sous-espace propre associé est alors engendré par les \(X^j\) tels que \(j!=\mu\). Comme \(0!=1!=1\) et que \(k\mapsto k!\) est strictement croissante sur \(\mathbb N^*\) :
+
+\equationajustee{\boxed{\operatorname{Sp}(L)=\{1,2,6,\dots,d!\}}}
+
+Les sous-espaces propres, engendrés par des polynômes, sont :
+
+\equationajustee{\boxed{E_1(L)=\operatorname{Vect}(1,X)}}
+
+et, pour \(2\le k\le d\) :
+
+\equationajustee{\boxed{E_{k!}(L)=\operatorname{Vect}(X^k).}}
+
+Il y a donc \(d\) valeurs propres distinctes, et \(\dim E_1(L)=2\). Pour \(d=1\), \(L=\mathrm{id}\).
+
+\begin{piege}
+
+Annoncer « \(d+1\) valeurs propres distinctes » est faux, car \(0!=1!\).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : on revient au cas \(d\) quelconque, et les sous-espaces propres doivent être engendrés par des \textbf{polynômes}, non par des vecteurs colonnes. Les bonnes copies ont vu que l'espace propre associé à la valeur propre \(1\) est de dimension \(2\).
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+La formulation suggère une condition sur \(d\). Regardez la matrice de \(L\) dans la base canonique : est-elle déjà diagonale ?
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Pour tout \(d\in\mathbb N^*\), la base canonique est une base de vecteurs propres. La matrice de \(L\) dans cette base, \(\mathrm{diag}(0!,1!,\dots,d!)\), est diagonale. On peut aussi additionner les dimensions des sous-espaces propres : \(2+(d-1)=d+1\).
+
+\textbf{\(L\) est diagonalisable pour toute valeur de \(d\in\mathbb N^*\).}
+
+\begin{piege}
+
+Une valeur propre multiple n'empêche pas la diagonalisabilité. Ce qui compte, c'est la dimension du sous-espace propre : ici, \(\dim E_1=2\).
+
+\end{piege}
+
+\begin{jury}
+
+Le théorème spectral s'applique, mais le rapport 2026 le juge « très largement disproportionné » : « une matrice diagonale est diagonalisable ».
+
+\end{jury}
+
+\hypertarget{question-17.a}{%
+\subsection{Question 17.a}\label{question-17.a}}
+
+\begin{indication}{1}
+
+Utilisez la caractérisation d'un sous-espace vectoriel : combien de points faut-il vérifier ?
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+On vérifie les trois points de la caractérisation.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Inclusion.} Par définition, \(C(A)\subset\mathcal M_3(\mathbb R)\).
+\item
+  \textbf{Non vide.} On a \(A\,0_3=0_3=0_3\,A\), donc \(0_3\in C(A)\).
+\item
+  \textbf{Stabilité.} Soient \(M,N\in C(A)\) et \(\mu\in\mathbb R\). Par distributivité, puis car \(AM=MA\) et \(AN=NA\) :
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+A(\mu M+N)&=\mu AM+AN\\
+&=\mu MA+NA\\
+&=(\mu M+N)A .
+\end{aligned}}
+
+\textbf{\(C(A)\) est un sous-espace vectoriel de \(\mathcal M_3(\mathbb R)\).}
+
+Variante : \(C(A)\) est le noyau de l'application linéaire \(M\mapsto AM-MA\) de \(\mathcal M_3(\mathbb R)\) dans lui-même.
+
+\begin{jury}
+
+Rapport 2026 : « Trois points sont à vérifier. » L'inclusion dans \(\mathcal M_3(\mathbb R)\) est à préciser. La stabilité porte sur une combinaison linéaire de \textbf{matrices du commutant}, \(\mu M+N\) : il ne fallait pas considérer \(C(\mu A+B)\). Moins d'un tiers des copies a tous les points.
+
+\end{jury}
+
+\hypertarget{question-17.b}{%
+\subsection{Question 17.b}\label{question-17.b}}
+
+\begin{indication}{1}
+
+Multiplier à gauche par une matrice diagonale agit sur les lignes ; multiplier à droite agit sur les colonnes.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+On calcule les deux produits :
+
+\equationajustee{AM=\begin{pmatrix}0&0&0\\0&0&0\\g&h&k\end{pmatrix}}
+
+et
+
+\equationajustee{MA=\begin{pmatrix}0&0&c\\0&0&f\\0&0&k\end{pmatrix}.}
+
+En identifiant les neuf coefficients, on obtient la condition nécessaire et suffisante :
+
+\equationajustee{\boxed{M\in C(A)\iff(c,f,g,h)=(0,0,0,0).}}
+
+Les éléments de \(C(A)\) sont donc les matrices \(\begin{pmatrix}a&b&0\\d&e&0\\0&0&k\end{pmatrix}\).
+
+\begin{methode}
+
+Pour \(A\) diagonale, on a \((AM)_{ij}=A_{ii}M_{ij}\) et \((MA)_{ij}=M_{ij}A_{jj}\). Donc \(AM=MA\) équivaut à \((A_{ii}-A_{jj})M_{ij}=0\) pour tous \(i,j\). Les coefficients situés entre deux valeurs propres distinctes sont nuls, les autres sont libres.
+
+\end{methode}
+
+\begin{jury}
+
+Une condition nécessaire et suffisante s'énonce par une \textbf{équivalence}, pas par « il faut que ». Rapport 2026 : « Les confusions ou les négligences entre condition nécessaire/suffisante sont évidemment sanctionnées dans une épreuve de raisonnement. »
+
+\end{jury}
+
+\hypertarget{question-17.c}{%
+\subsection{Question 17.c}\label{question-17.c}}
+
+\begin{indication}{1}
+
+Lisez la forme générale obtenue en 17.b : combien de paramètres libres ?
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Notons \(E_{i,j}\) les matrices élémentaires de \(\mathcal M_3(\mathbb R)\).
+
+\equationajustee{\boxed{(E_{1,1},E_{1,2},E_{2,1},E_{2,2},E_{3,3})\ \text{est une base de }C(A)}}
+
+\equationajustee{\boxed{\dim C(A)=5.}}
+
+\begin{piege}
+
+Donner une base formée de vecteurs colonnes ou de matrices d'une autre taille : les éléments de la base sont des matrices \(3\times3\). Le rapport 2026 indique que le jury a valorisé les copies dont la dimension était cohérente avec leur base.
+
+\end{piege}
+
+\hypertarget{question-17.d}{%
+\subsection{Question 17.d}\label{question-17.d}}
+
+\begin{indication}{1}
+
+Décrivez explicitement les éléments de \(\operatorname{Vect}(I_3,A)\) : quelle forme ont-ils ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Choisissez dans \(C(A)\) une matrice qui n'a pas cette forme. Il faut justifier les deux appartenances, l'une positive et l'autre négative.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Les éléments de \(\operatorname{Vect}(I_3,A)\) s'écrivent \(\alpha I_3+\beta A=\mathrm{diag}(\alpha,\alpha,\alpha+\beta)\) : ils sont tous diagonaux.
+
+La matrice \(E_{1,2}\) appartient à \(C(A)\), car \(c=f=g=h=0\) (question 17.b). Son coefficient \((1,2)\) vaut \(1\neq0\), donc elle n'est pas diagonale et n'appartient pas à \(\operatorname{Vect}(I_3,A)\).
+
+\equationajustee{\boxed{E_{1,2}=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix}\in C(A)\setminus\operatorname{Vect}(I_3,A).}}
+
+L'argument de dimension confirme l'existence d'une telle matrice : \(\dim\operatorname{Vect}(I_3,A)=2<5=\dim C(A)\).
+
+\begin{jury}
+
+Rapport 2026 : « Il ne suffisait pas de trouver une matrice qui convenait, il fallait évidemment justifier qu'elle convenait. »
+
+\end{jury}
+
+\hypertarget{partie-iv-loi-de-yulesimon}{%
+\section{Partie IV --- Loi de Yule--Simon}\label{partie-iv-loi-de-yulesimon}}
+
+On montre que les \(p_k\) sont bien définis, on les écrit comme des intégrales sur \([0,1]\), puis on vérifie que leur somme vaut \(1\). Ils définissent alors une loi de probabilité sur \(\mathbb N\).
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+L'intégrande est positive. Majorez le facteur \((1-e^{-s})^k\) par une constante.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+La fonction \(f_k:s\mapsto(1-e^{-s})^ke^{-(\nu+1)s}\) est continue sur \([0,+\infty[\). Pour \(s\ge0\), on a \(0\le1-e^{-s}<1\), donc :
+
+\equationajustee{0\le f_k(s)\le e^{-(\nu+1)s}.}
+
+L'intégrale \(\int_0^{+\infty}e^{-(\nu+1)s}\,\mathrm ds\) converge, car \(\nu+1>0\), et vaut \(\frac1{\nu+1}\). Par comparaison de fonctions positives, \textbf{l'intégrale définissant \(p_k\) converge}. De plus, \(0\le p_k\le\frac\nu{\nu+1}\).
+
+\begin{piege}
+
+Rapport 2026 : « Un trop grand nombre de candidats considèrent que la limite finie de l'intégrande est suffisante pour justifier la convergence de l'intégrale. » Une limite finie en \(+\infty\) ne suffit pas : la fonction constante \(1\) a une limite finie, et son intégrale sur \([0,+\infty[\) diverge.
+
+\end{piege}
+
+\begin{jury}
+
+Même difficulté qu'à la question 8 : les trois quarts des copies qui ont abordé la question n'ont obtenu aucun point (rapport 2026). Continuité, positivité, majorant intégrable : les trois mots doivent apparaître.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Le résultat attendu fait apparaître \(1-t\) là où l'on avait \(1-e^{-s}\). Quel changement de variable s'impose ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Effectuez le changement de variable sur un segment \([0,A]\), puis faites tendre \(A\) vers \(+\infty\). Attention au facteur provenant de \(\mathrm ds\).
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+Soit \(A>0\). On pose \(t=e^{-s}\).
+
+La fonction \(s\mapsto e^{-s}\) est de classe \(\mathcal C^1\) et strictement décroissante de \([0,A]\) sur \([e^{-A},1]\), et \(t\mapsto t^\nu(1-t)^k\) est continue sur \([e^{-A},1]\).
+
+On a \(\mathrm dt=-e^{-s}\,\mathrm ds\) et \(e^{-(\nu+1)s}=t^{\nu}\cdot e^{-s}\), d'où, en échangeant les bornes pour absorber le signe :
+
+\equationajustee{\int_0^A(1-e^{-s})^ke^{-(\nu+1)s}\,\mathrm ds=\int_{e^{-A}}^1t^\nu(1-t)^k\,\mathrm dt .}
+
+Le membre de gauche tend vers \(p_k/\nu\) (question 18). La fonction \(t\mapsto t^\nu(1-t)^k\) est continue sur le segment \([0,1]\), car \(\nu>0\). Donc \(x\mapsto\int_x^1t^\nu(1-t)^k\,\mathrm dt\) est continue en \(0\).
+
+En faisant \(A\to+\infty\) et en multipliant par \(\nu\) :
+
+\equationajustee{\boxed{p_k=\nu\int_0^1t^\nu(1-t)^k\,\mathrm dt.}}
+
+\begin{piege}
+
+Oublier le \(1/t\) issu de \(\mathrm ds=-\mathrm dt/t\) fait apparaître \(t^{\nu+1}\) au lieu de \(t^\nu\). Contrôle simple : pour \(k=0\), les deux expressions doivent donner \(\frac\nu{\nu+1}\).
+
+\end{piege}
+
+\begin{jury}
+
+Le changement de variable n'est pas donné. Rapport 2026 : la plupart l'ont trouvé, « mais trop peu rappellent les hypothèses pour qu'il soit légitime. Le résultat étant donné, on attendait un minimum d'explications. »
+
+\end{jury}
+
+\hypertarget{question-20.a}{%
+\subsection{Question 20.a}\label{question-20.a}}
+
+\begin{indication}{1}
+
+Somme géométrique : quelle est la raison, et pour quelle valeur de \(t\) vaut-elle \(1\) ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\equationajustee{\boxed{\sum_{k=0}^N(1-t)^k=\begin{cases}\dfrac{1-(1-t)^{N+1}}{t}&\text{si }t\in\,]0,1],\\[2mm] N+1&\text{si }t=0.\end{cases}}}
+
+Pour \(t=1\), la formule donne \(1\), ce qui est bien la valeur de la somme : seul le terme \(k=0\) est non nul.
+
+\begin{piege}
+
+L'énoncé autorise \(t=0\), où la raison vaut \(1\) : il faut distinguer ce cas. Le rapport 2026 précise que le cas \(t=1\), lui, n'est pas un cas particulier et ne donne pas \(0\). Seules 10 \% des copies qui ont abordé la question ont tous les points.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « De façon générale, lorsque l'on manipule un quotient, il est préférable que le dénominateur soit non nul. »
+
+\end{jury}
+
+\hypertarget{question-20.b}{%
+\subsection{Question 20.b}\label{question-20.b}}
+
+\begin{indication}{1}
+
+Comparez \(t^{\nu-1}\) à \(1\) sur \([0,1]\), en utilisant le signe de \(\nu-1\).
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Comme \(\nu-1>0\), la fonction \(t\mapsto t^{\nu-1}\) est croissante sur \(\mathbb R_+\). Pour \(t\in[0,1]\), on a donc :
+
+\equationajustee{0\le t^{\nu-1}\le1 .}
+
+On multiplie par le réel positif \((1-t)^{N+1}\). Les fonctions obtenues sont continues sur \([0,1]\). Par croissance de l'intégrale sur un segment :
+
+\equationajustee{\boxed{\int_0^1t^{\nu-1}(1-t)^{N+1}\,\mathrm dt\le\int_0^1(1-t)^{N+1}\,\mathrm dt.}}
+
+Le majorant vaut \(\frac1{N+2}\).
+
+\begin{methode}
+
+Calculez tout de suite le majorant, \(\frac1{N+2}\) : c'est lui qui sert en 20.c.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 attend une justification soigneuse de l'inégalité entre fonctions : multiplication par une quantité positive, croissance de \(t\mapsto t^\alpha\) sur \(\mathbb R_+\) pour \(\alpha\) positif. Puis la croissance de l'intégrale, « sans rajouter une équivalence fausse ».
+
+\end{jury}
+
+\hypertarget{question-20.c}{%
+\subsection{Question 20.c}\label{question-20.c}}
+
+\begin{indication}{1}
+
+Une suite \((p_k)\) définit une loi de probabilité sur \(\mathbb N\) si deux conditions sont remplies. Lesquelles ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculez la somme partielle \(\sum_{k=0}^Np_k\) en échangeant somme \textbf{finie} et intégrale, puis utilisez 20.a et 20.b.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Vous devez trouver \(1\) moins un reste que 20.b permet de majorer.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+Il faut montrer que les \(p_k\) sont positifs, ce que donne la question 18, et que \(\sum_{k=0}^{+\infty}p_k=1\).
+
+Par la question 19 et la linéarité de l'intégrale (somme finie) :
+
+\equationajustee{\begin{aligned}
+\sum_{k=0}^Np_k&=\sum_{k=0}^N\nu\int_0^1t^\nu(1-t)^k\,\mathrm dt\\
+&=\nu\int_0^1t^\nu\sum_{k=0}^N(1-t)^k\,\mathrm dt .
+\end{aligned}}
+
+Sur \(]0,1]\), la question 20.a donne :
+
+\equationajustee{t^\nu\sum_{k=0}^N(1-t)^k=t^{\nu-1}\big(1-(1-t)^{N+1}\big).}
+
+Les deux membres sont continus sur \([0,1]\) et nuls en \(0\), car \(\nu>1\). L'égalité vaut donc sur \([0,1]\), et :
+
+\equationajustee{\begin{aligned}
+\sum_{k=0}^Np_k&=\nu\int_0^1t^{\nu-1}\,\mathrm dt-\nu\int_0^1t^{\nu-1}(1-t)^{N+1}\,\mathrm dt\\
+&=1-R_N .
+\end{aligned}}
+
+Par 20.b, \(0\le R_N\le\frac\nu{N+2}\), qui tend vers \(0\). Donc \(\sum_{k\ge0}p_k=1\).
+
+La suite \((p_k)_{k\in\mathbb N}\), positive et de somme \(1\), est une loi de probabilité. \textbf{Il existe une variable aléatoire discrète \(X\) telle que \(\mathbb P(X=k)=p_k\) pour tout \(k\).}
+
+\begin{piege}
+
+Deux oublis fréquents : la positivité des \(p_k\), qui est la moitié du critère, et la justification de l'échange somme--intégrale. Cet échange est licite parce que la somme est \textbf{finie}.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 juge la question difficile, mais rappelle qu'on pouvait au moins vérifier la positivité des \(p_k\) et dire ce qu'il restait à montrer, à savoir que la somme des \(p_k\) vaut \(1\).
+
+\end{jury}
+
+\hypertarget{partie-v-calculs-de-moments}{%
+\section{Partie V --- Calculs de moments}\label{partie-v-calculs-de-moments}}
+
+On calcule les intégrales \(I_{n,p}\) (intégrales bêta), puis on obtient l'espérance par les sommes partielles \(\sum kp_k\) et la variance à partir du moment factoriel. La comparaison avec la partie I conclut le sujet.
+
+\hypertarget{question-21.a}{%
+\subsection{Question 21.a}\label{question-21.a}}
+
+\begin{indication}{1}
+
+Intégration par parties : la relation doit faire monter l'exposant de \(t\) et baisser celui de \(1-t\). Laquelle des deux fonctions faut-il primitiver ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Les fonctions \(t\mapsto\frac{t^{n+1}}{n+1}\) et \(t\mapsto(1-t)^{p+1}\) sont de classe \(\mathcal C^1\) sur \([0,1]\). On intègre par parties, en primitivant \(t^n\) et en dérivant \((1-t)^{p+1}\) :
+
+\equationajustee{I_{n,p+1}=\left[\frac{t^{n+1}(1-t)^{p+1}}{n+1}\right]_0^1+\frac{p+1}{n+1}\int_0^1t^{n+1}(1-t)^p\,\mathrm dt .}
+
+Le crochet est nul aux deux bornes. Donc :
+
+\equationajustee{\boxed{(n+1)\,I_{n,p+1}=(p+1)\,I_{n+1,p}.}}
+
+\begin{jury}
+
+Le rapport 2026 signale que les questions 21.a et 21.b figuraient déjà dans le sujet 2025, et que « les mêmes écueils ont été observés ». Les annales récentes sont à travailler.
+
+\end{jury}
+
+\hypertarget{question-21.b}{%
+\subsection{Question 21.b}\label{question-21.b}}
+
+\begin{indication}{1}
+
+Raisonnez par récurrence. Sur quel indice, et que faut-il mettre dans l'hypothèse de récurrence, sachant que la relation 21.a modifie aussi \(n\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Faites une récurrence sur \(p\) avec une propriété « pour tout \(n\) ».
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+On montre par récurrence sur \(p\) la propriété \(\mathcal H_p\) : « pour tout \(n\in\mathbb N\), \(I_{n,p}=\frac{n!\,p!}{(n+p+1)!}\) ».
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Initialisation.} \(I_{n,0}=\frac1{n+1}=\frac{n!\,0!}{(n+1)!}\).
+\item
+  \textbf{Hérédité.} Si \(\mathcal H_p\) est vraie, on applique 21.a puis \(\mathcal H_p\) à l'entier \(n+1\) :
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+I_{n,p+1}&=\frac{p+1}{n+1}\cdot\frac{(n+1)!\,p!}{(n+p+2)!}\\
+&=\frac{n!\,(p+1)!}{(n+p+2)!}.
+\end{aligned}}
+
+\equationajustee{\boxed{\forall n,p\in\mathbb N,\quad I_{n,p}=\frac{n!\,p!}{(n+p+1)!}.}}
+
+\begin{piege}
+
+Une récurrence « à \(n\) fixé » ne boucle pas. L'hérédité a besoin de l'hypothèse au rang \(n+1\).
+
+\end{piege}
+
+\hypertarget{question-21.c}{%
+\subsection{Question 21.c}\label{question-21.c}}
+
+\begin{indication}{1}
+
+Reconnaissez une intégrale \(I_{n,p}\) avec des indices bien choisis.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\equationajustee{\begin{aligned}
+(N+1)\int_0^1t(1-t)^N\,\mathrm dt&=(N+1)\,I_{1,N}\\
+&=\frac{(N+1)\,N!}{(N+2)!}\\
+&=\frac1{N+2}.
+\end{aligned}}
+
+\equationajustee{\boxed{\lim_{N\to+\infty}(N+1)\int_0^1t(1-t)^N\,\mathrm dt=0.}}
+
+Ce résultat servira en 22.c. Selon le rapport 2026, seule la moitié des copies qui ont tenté de « grappiller » cette question l'a réussie.
+
+\hypertarget{question-22.a}{%
+\subsection{Question 22.a}\label{question-22.a}}
+
+\begin{indication}{1}
+
+La somme cherchée ressemble à la dérivée d'une somme géométrique. Par rapport à quelle variable dériver ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dérivez par rapport à \(t\) les deux membres de l'identité de 20.a, sur un intervalle ouvert où \(t\neq0\). Attention au signe venant de la dérivée de \(1-t\).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+Sur l'intervalle ouvert \(]0,2[\), qui contient \(]0,1]\), la raison \(1-t\) diffère de \(1\), et :
+
+\equationajustee{\sum_{k=0}^N(1-t)^k=\frac{1-(1-t)^{N+1}}t .}
+
+On dérive les deux membres. La dérivée de \(t\mapsto(1-t)^k\) est \(t\mapsto-k(1-t)^{k-1}\) :
+
+\equationajustee{-\sum_{k=1}^Nk(1-t)^{k-1}=\frac{(N+1)(1-t)^Nt-1+(1-t)^{N+1}}{t^2}.}
+
+En changeant les signes, pour \(t\in\,]0,1]\) :
+
+\equationajustee{\boxed{\sum_{k=1}^Nk(1-t)^{k-1}=\frac1{t^2}-\frac{(1-t)^{N+1}}{t^2}-\frac{(N+1)(1-t)^N}t.}}
+
+Contrôle pour \(t=1\) et \(N\ge1\) : les deux membres valent \(1\).
+
+\begin{methode}
+
+On dérive une identité vraie sur tout un \textbf{intervalle} : c'est ce qui autorise à dériver les deux membres. On dérive ici une somme finie, donc sans difficulté.
+
+\end{methode}
+
+\begin{piege}
+
+Oublier le signe \(-\) de la dérivée de \(t\mapsto(1-t)^k\). Le rapport 2026 ajoute : « Essayer ensuite de tromper le jury sur son problème de signe ne le résout pas. »
+
+\end{piege}
+
+\hypertarget{question-22.b}{%
+\subsection{Question 22.b}\label{question-22.b}}
+
+\begin{indication}{1}
+
+Simplifiez la puissance de \(t\), développez, puis intégrez des puissances. L'hypothèse \(\nu>2\) garantit qu'il n'y a pas de problème en \(0\).
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+L'intégrande \(\nu t^{\nu-2}(1-t)\) est continue sur \([0,1]\), car \(\nu-2>0\). Alors :
+
+\equationajustee{\begin{aligned}
+\int_0^1\nu\,t^\nu(1-t)\frac1{t^2}\,\mathrm dt&=\nu\left(\frac1{\nu-1}-\frac1\nu\right)\\
+&=\frac{\nu}{\nu-1}-1 .
+\end{aligned}}
+
+\equationajustee{\boxed{\int_0^1\nu\,t^\nu(1-t)\frac1{t^2}\,\mathrm dt=\frac1{\nu-1}.}}
+
+\begin{piege}
+
+Appliquer la question 21 : elle suppose des exposants entiers, et \(\nu\) n'est pas supposé entier (rapport 2026). On intègre directement les puissances \(t^{\nu-2}\) et \(t^{\nu-1}\).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Le jury s'attend à ce que le résultat soit donné sous forme de fraction irréductible. »
+
+\end{jury}
+
+\hypertarget{question-22.c}{%
+\subsection{Question 22.c}\label{question-22.c}}
+
+\begin{indication}{1}
+
+L'existence de l'espérance se ramène à la convergence d'une série à termes positifs. Étudiez ses sommes partielles.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrivez \(\sum_{k=1}^Nkp_k\) comme une intégrale, factorisez \(1-t\) pour faire apparaître la somme de 22.a, et séparez trois intégrales.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Le premier terme est donné par 22.b. Pour les deux restes, majorez la puissance de \(t\) : par \(1\) pour l'un, par \(t\) pour l'autre, ce qui permet d'invoquer 21.c.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Les termes \(kp_k\) sont positifs, donc \(X\) admet une espérance si et seulement si \(\Sigma_N=\sum_{k=1}^Nkp_k\) converge. Par la question 19, en factorisant \(1-t\) :
+
+\equationajustee{\Sigma_N=\nu\int_0^1t^\nu(1-t)\sum_{k=1}^Nk(1-t)^{k-1}\,\mathrm dt .}
+
+On applique 22.a et l'on sépare l'intégrale en trois : \(\Sigma_N=T-R^{(1)}_N-R^{(2)}_N\), avec
+
+\equationajustee{\begin{aligned}
+T&=\nu\int_0^1t^{\nu-2}(1-t)\,\mathrm dt,\\
+R^{(1)}_N&=\nu\int_0^1t^{\nu-2}(1-t)^{N+2}\,\mathrm dt,\\
+R^{(2)}_N&=\nu(N+1)\int_0^1t^{\nu-1}(1-t)^{N+1}\,\mathrm dt .
+\end{aligned}}
+
+Les trois intégrandes sont continues sur \([0,1]\), car \(\nu>2\).
+
+\begin{itemize}
+\tightlist
+\item
+  \(T=\frac1{\nu-1}\) par 22.b.
+\item
+  On a \(0\le t^{\nu-2}\le1\), donc \(0\le R^{(1)}_N\le\frac\nu{N+3}\), qui tend vers \(0\).
+\item
+  Comme \(\nu-1>1\), on a \(t^{\nu-1}\le t\). Avec \((1-t)^{N+1}\le(1-t)^N\), on obtient \(0\le R^{(2)}_N\le\nu(N+1)\int_0^1t(1-t)^N\,\mathrm dt\). Ce majorant tend vers \(0\) par 21.c.
+\end{itemize}
+
+Donc \(\Sigma_N\to\frac1{\nu-1}\), et \textbf{\(X\) admet une espérance} :
+
+\equationajustee{\boxed{\mathbb E(X)=\frac1{\nu-1}.}}
+
+\begin{piege}
+
+Pour \(R^{(2)}_N\), majorer \(t^{\nu-1}\) par \(1\) donne \(\nu(N+1)/(N+2)\), qui tend vers \(\nu\) : on ne peut pas conclure.
+Il faut garder un facteur \(t\), ce qui demande \(\nu\ge2\).
+
+\end{piege}
+
+\begin{jury}
+
+On ne fait pas passer une somme infinie sous l'intégrale sans justification : on travaille sur des sommes partielles finies, puis on passe à la limite. Question jugée « très difficile » par le rapport 2026, qui précise : « le jury prend en compte le fait de savoir ce qu'il faut démontrer à défaut d'y parvenir ». Écrire que l'espérance existe si et seulement si \(\sum kp_k\) converge rapporte déjà.
+
+\end{jury}
+
+\hypertarget{question-23.a}{%
+\subsection{Question 23.a}\label{question-23.a}}
+
+\begin{indication}{1}
+
+Développez \((1-t)^2\), simplifiez par \(t^3\) et intégrez trois puissances. Vérifiez d'abord la convergence en \(0\).
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Pour \(t\in\,]0,1]\), on a :
+
+\equationajustee{\nu t^\nu(1-t)^2\frac2{t^3}=2\nu\left(t^{\nu-3}-2t^{\nu-2}+t^{\nu-1}\right).}
+
+Comme \(\nu-3>-1\), l'intégrale \(\int_0^1t^{\nu-3}\,\mathrm dt\) converge et vaut \(\frac1{\nu-2}\). C'est une intégrale de Riemann, généralisée en \(0\) si \(\nu<3\). On obtient :
+
+\equationajustee{\begin{aligned}
+\mathbb E((X-1)X)&=2\nu\left(\frac1{\nu-2}-\frac2{\nu-1}+\frac1\nu\right)\\
+&=2\nu\cdot\frac{2}{\nu(\nu-1)(\nu-2)}.
+\end{aligned}}
+
+En effet, au dénominateur commun \(\nu(\nu-1)(\nu-2)\), le numérateur vaut \(\nu(\nu-1)-2\nu(\nu-2)+(\nu-1)(\nu-2)=2\). Après simplification :
+
+\equationajustee{\boxed{\mathbb E((X-1)X)=\frac4{(\nu-1)(\nu-2)}.}}
+
+\begin{jury}
+
+Rapport 2026 : \(\nu\) n'est toujours pas supposé entier, « et il faut simplifier les expressions rationnelles ».
+
+\end{jury}
+
+\hypertarget{question-23.b}{%
+\subsection{Question 23.b}\label{question-23.b}}
+
+\begin{indication}{1}
+
+Exprimez \(X^2\) à l'aide de \((X-1)X\) et de \(X\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Distinguez deux étapes : l'existence du moment d'ordre 2, qui garantit celle de la variance, puis la formule de König--Huygens pour le calcul.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+On a \(X^2=(X-1)X+X\). Les deux termes admettent une espérance, donc \(X^2\) aussi, par linéarité. Ainsi \(X\) admet un moment d'ordre 2, donc une variance. Par la formule de König--Huygens :
+
+\equationajustee{\begin{aligned}
+\mathbb V(X)&=\mathbb E((X-1)X)+\mathbb E(X)-\mathbb E(X)^2\\
+&=\frac4{(\nu-1)(\nu-2)}+\frac1{\nu-1}-\frac1{(\nu-1)^2}\\
+&=\frac{4(\nu-1)+(\nu-1)(\nu-2)-(\nu-2)}{(\nu-1)^2(\nu-2)}.
+\end{aligned}}
+
+Le numérateur vaut \(\nu^2\), donc :
+
+\equationajustee{\boxed{\mathbb V(X)=\frac{\nu^2}{(\nu-1)^2(\nu-2)}.}}
+
+\begin{piege}
+
+Écrire \(\mathbb E(X)\) au lieu de \(\mathbb E(X)^2\) dans König--Huygens.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Trop peu de copies citent Koenig-Huygens. » Nommez la formule que vous utilisez.
+
+\end{jury}
+
+\hypertarget{question-23.c}{%
+\subsection{Question 23.c}\label{question-23.c}}
+
+\begin{indication}{1}
+
+Simplifiez le quotient, puis comparez numérateur et dénominateur en étudiant leur différence. Vérifiez le signe du dénominateur.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\equationajustee{\frac{\mathbb V(X)}{\mathbb E(X)}=\frac{\nu^2}{(\nu-1)(\nu-2)}.}
+
+Comme \(\nu>2\), le dénominateur est strictement positif. De plus :
+
+\equationajustee{\nu^2-(\nu-1)(\nu-2)=3\nu-2>0 .}
+
+Donc :
+
+\equationajustee{\boxed{\frac{\mathbb V(X)}{\mathbb E(X)}=\frac{\nu^2}{(\nu-1)(\nu-2)}>1.}}
+
+Le rapport tend vers \(1\) quand \(\nu\to+\infty\) et vers \(+\infty\) quand \(\nu\to2^+\).
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Rapprochez les questions 4 et 23.c : quelle quantité prend des valeurs différentes dans les deux modèles ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comment estimer cette quantité à partir d'observations ? Formulez une règle de décision.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+L'indice de dispersion \(\mathbb V(X)/\mathbb E(X)\) vaut \(1\) pour la loi de Poisson de la partie I (question 4). Pour la binomiale exacte \(\mathcal B(N,\lambda/N)\), il vaut \(1-\lambda/N\le1\). En revanche, il vaut \(\frac{\nu^2}{(\nu-1)(\nu-2)}>1\) pour la loi de Yule--Simon de la partie V (question 23.c).
+
+On observe \(n\) cultures indépendantes, menées dans les mêmes conditions, et on note \(x_1,\dots,x_n\) les nombres de survivantes. On calcule :
+
+\begin{itemize}
+\tightlist
+\item
+  la moyenne empirique \(\bar x=\frac1n\sum x_i\), qui estime \(\mathbb E(X)\) par la loi des grands nombres ;
+\item
+  la variance empirique \(s^2=\frac1{n-1}\sum(x_i-\bar x)^2\), qui estime \(\mathbb V(X)\) ;
+\item
+  puis \(\widehat D=s^2/\bar x\).
+\end{itemize}
+
+\textbf{Si \(\widehat D\) est proche de \(1\), on privilégie le modèle de la partie I. S'il est nettement supérieur à \(1\) (sur-dispersion), on privilégie le modèle de la partie V.} L'écart à \(1\) s'apprécie selon la taille de l'échantillon.
+
+Biologiquement, une mutation précoce donne une grande « grappe » de résistantes dans certaines cultures (figure 3). La variance augmente sans que la moyenne change beaucoup : c'est la sur-dispersion observée par Luria et Delbrück.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q24-mutations-cultures.pdf}
+\caption*{Figure 3 --- Trois cultures parallèles : une mutation transmise à toute
+la descendance donne 0, 1 ou 4 résistantes selon qu'elle est absente,
+tardive ou précoce}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q24-poisson-yule-simon.pdf}
+\caption*{Figure 4 --- Lois de Yule--Simon (ν = 3) et de Poisson (λ = 0,5), de
+même espérance 0,5, en échelle logarithmique : la queue lourde de la
+première porte l'indice de dispersion à 4,5}
+\end{figure}
+
+\begin{piege}
+
+Comparer les moyennes ne permet pas de trancher : les deux modèles peuvent avoir la même espérance. Pour \(\nu=3\) et \(\lambda=0{,}5\), les deux espérances valent \(0{,}5\), mais les indices valent \(4{,}5\) et \(1\).
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Limite d'une puissance variable : passer à l'écriture \(\exp(v_N\ln u_N)\), chercher la limite de l'exposant, puis conclure par continuité de l'exponentielle (Q2, Q3).
+\item
+  Démonstration de l'inégalité de Markov, et son « amplification » par \(e^{tX}\) suivie d'une optimisation en \(t\) (Q5 à Q7).
+\item
+  Intégrale généralisée de type « polynôme × exponentielle » : continuité, croissances comparées, puis domination d'une fonction positive sur \([M,+\infty[\) (Q8, Q18).
+\item
+  Intégration par parties et changement de variable : les faire sur un segment, en citant la régularité des fonctions, puis passer à la limite (Q9, Q19).
+\item
+  Endomorphisme diagonal dans la base canonique : noyau, rang, éléments propres, avec attention aux valeurs propres répétées (Q12 à Q16).
+\item
+  Sous-espace vectoriel : inclusion, vecteur nul, stabilité par combinaison linéaire (Q17.a). Commutant d'une matrice diagonale : \((A_{ii}-A_{jj})M_{ij}=0\) (Q17.b).
+\item
+  Convergence d'une série définie par des intégrales : sommes partielles finies, échange somme--intégrale licite, reste majoré (Q20.c, Q22.c).
+\item
+  Intégrales bêta \(I_{n,p}\) : intégration par parties et récurrence quantifiée sur l'autre indice (Q21).
+\item
+  Variance via le moment factoriel : \(X^2=X(X-1)+X\), puis König--Huygens (Q23).
+\end{itemize}
+
+\textbf{Ce que le rapport 2026 met en avant.} La justification rapporte l'essentiel des points. Les questions qui ont fait la différence sont des questions de cours ou de rédaction : 1, 5, 8, 10, 14, 17.a, 18 et 20.a. Le jury insiste sur la vérification des hypothèses avant d'appliquer un théorème, sur le renvoi explicite à la question utilisée, et sur le bon usage des parenthèses.
+
+\textbf{Prérequis à revoir.} Lois binomiale et de Poisson, théorème de transfert, série exponentielle, intégrales de Riemann \(\int_0^1t^\alpha\,\mathrm dt\), critère de comparaison pour les fonctions positives, théorème du rang, critères de diagonalisabilité, existence d'une variable aléatoire de loi \((p_k)\) donnée.
+
+\textbf{Questions classiques transposables.} L'approximation binomiale--Poisson, l'inégalité de Markov et la borne de Chernoff, le calcul de \(\int_0^{+\infty}s^ke^{-s/\nu}\,\mathrm ds\), le commutant d'une matrice diagonale et la formule \(I_{n,p}=\frac{n!\,p!}{(n+p+1)!}\) reviennent régulièrement dans les sujets BCPST et au-delà. L'indice de dispersion comme critère de choix entre modèles est une idée de modélisation à retenir pour les questions de synthèse.
+
+\end{document}

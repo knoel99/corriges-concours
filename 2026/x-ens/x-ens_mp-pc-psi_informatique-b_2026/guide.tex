@@ -1,0 +1,1141 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={X-ENS MP-PC-PSI — Informatique B 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · X-ENS MP-PC-PSI}
+\fancyhead[R]{\small Informatique B 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries X-ENS MP-PC-PSI — Informatique B 2026\par}\medskip
+  {\large X-ENS · MP-PC-PSI · Informatique B · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} Le sujet s'intitule « Cycles et unification ». On manipule un graphe orienté acyclique \(G\), codé en Python par un dictionnaire de listes d'adjacence : l'étiquette d'un arc est son indice dans la liste. Le fil conducteur est simple : on veut ajouter des arcs à \(G\) sans jamais créer de cycle. On se sert ensuite de cette opération pour résoudre des problèmes d'\textbf{unification}, c'est-à-dire rendre égales les « formes normales » de plusieurs paires de sommets.
+
+\textbf{Format.} 2 heures, sans calculatrice, 16 questions, 8 pages. L'épreuve est commune aux filières MP, PC et PSI. Elle relève du tronc commun d'informatique : Python, parcours de graphes, terminaison, complexité, SQL.
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2175}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1136}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3767}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2623}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Outils
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I. Détection de cycles & Q1--Q7 & parcours en profondeur \texttt{pp} avec époques et numéros de sortie ; preuve de \texttt{accessible} et \texttt{lier} par invariants & DFS, invariants, récurrence le long d'un chemin \\
+II. Unification & Q8--Q14 & forme normale \texttt{fn}, terminaison, explosion exponentielle, mémoïsation, comptage de chemins, algorithme \texttt{unif} & variant de terminaison, récurrences, mémoïsation \\
+III. Représentation relationnelle & Q15--Q16 & vérification des invariants en SQL, recherche de deux sommets de même forme normale & jointures, \texttt{UNION}, \texttt{LIMIT} \\
+\end{longtable}
+
+La partie II peut se traiter sans la partie I, à l'exception de Q14, qui utilise \texttt{lier}. La partie III ne demande que les définitions des deux premières parties.
+
+\textbf{Notions mobilisées.} Parcours en profondeur et ordre de fin de traitement (post-ordre), invariants de structure, variant de terminaison, complexité d'une fonction récursive, mémoïsation par dictionnaire, requêtes SQL avec jointures et auto-jointures.
+
+\textbf{Difficulté.} Le sujet demande peu de code : trois questions de Python (Q11, Q12, Q14) et deux de SQL (Q15, Q16). Le cœur est l'analyse d'algorithmes de graphes. Les preuves de la partie I sont courtes, mais elles demandent de la rigueur : il faut dire quels invariants sont vrais à quel moment, et à quelle étape sert A1. Le rapport 2026 prévient : « Il est très facile d'avoir des intuitions fausses (par exemple, s'il existe un chemin s---\textgreater u-\textgreater v alors tout chemin de s à v passe par u), d'où l'importance de raisonner très rigoureusement. » Il ajoute que « La grande majorité des questions se résolvent par des réponses très courtes. »
+
+\textbf{Questions discriminantes.} D'après les statistiques du rapport 2026 (moyenne sur 1 point, parmi les copies qui ont traité la question) :
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Question & Copies l'ayant traitée & Moyenne \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Q10 (minoration exponentielle) & 89 \% & 0,45 \\
+Q13 (problème sans solution) & 78 \% & 0,45 \\
+Q14 (compléter \texttt{unif}) & 60 \% & 0,51 \\
+Q15 (SQL, invariants) & 54 \% & 0,46 \\
+Q16 (SQL, formes normales) & 18 \% & 0,24 \\
+\end{longtable}
+
+À l'opposé, Q8 (0,98), Q3 (0,91) et Q5 (0,85) sont très bien réussies. La Q16 est la plus sélective : il faut d'abord trouver une caractérisation locale, car le SQL au programme ne permet pas de calculer \texttt{fn}.
+
+\textbf{À ne pas laisser passer.} Q1, Q2, Q3, Q5 et Q8 sont rapides et sûres. Q11 (mémoïsation), Q12 et Q15 (une double jointure) rapportent beaucoup pour peu d'effort. Près de la moitié des copies n'ont pas abordé Q15 : c'est un signe de temps mal géré plus que de difficulté.
+
+\textbf{Gestion du temps.} Prévoir environ 50 minutes pour la partie I, 45 minutes pour la partie II et 20 minutes pour la partie III, en gardant 5 minutes pour relire le code. Ne pas laisser la partie III pour les toutes dernières minutes.
+
+\hypertarget{partie-i-duxe9tection-de-cycles}{%
+\section{Partie I --- Détection de cycles}\label{partie-i-duxe9tection-de-cycles}}
+
+Avant d'ajouter un arc \(u\to s\), on veut vérifier que \(s\not\rightsquigarrow u\). La fonction \texttt{pp} attribue l'époque courante à tous les sommets qu'elle visite et numérote les sommets par ordre de fin de traitement. Les invariants A2--A4 servent à répondre \texttt{False} sans parcours dans certains cas. Toute la partie consiste à prouver que ce raccourci est juste, puis que les invariants survivent aux appels.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Simulez l'appel pas à pas. \texttt{sortie{[}s{]}} n'est affecté qu'\textbf{après} la boucle sur les successeurs : c'est un numéro de fin de traitement.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lorsque \texttt{pp(\textquotesingle{}d\textquotesingle{})} s'exécute, regardez l'époque de ses deux cibles à cet instant.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Avec \texttt{présent\ =\ 1} et \texttt{compteur\ =\ 0}, \texttt{pp(\textquotesingle{}a\textquotesingle{})} procède ainsi :
+
+\begin{itemize}
+\tightlist
+\item
+  elle visite \texttt{a}, puis \texttt{c} ;
+\item
+  elle visite \texttt{X} (sortie 0), puis \texttt{Y} (sortie 1), et termine \texttt{c} (sortie 2) ;
+\item
+  elle visite \texttt{d}, dont les cibles \texttt{Y} et \texttt{X} ont déjà l'époque 1, et termine \texttt{d} (sortie 3) ;
+\item
+  elle termine \texttt{a} (sortie 4).
+\end{itemize}
+
+Les sommets \texttt{b}, \texttt{e}, \texttt{W}, \texttt{Z} ne sont pas atteints.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q01-parcours-pp-a.pdf}
+\caption*{Figure 1 --- État des dictionnaires après pp(`a') : époque par le
+remplissage, sortie dans la pastille, sur le graphe de la figure 1 du
+sujet}
+\end{figure}
+
+\begin{longtable}[]{@{}llllllllll@{}}
+\toprule\noalign{}
+& a & b & c & d & e & W & X & Y & Z \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{époque} & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 1 & 0 \\
+\texttt{sortie} & 4 & 0 & 2 & 3 & 0 & 0 & 0 & 1 & 0 \\
+\end{longtable}
+
+On retrouve bien \texttt{sortie{[}\textquotesingle{}a\textquotesingle{}{]}\ =\ 4} et \texttt{sortie{[}\textquotesingle{}X\textquotesingle{}{]}\ =\ 0}, comme l'indique l'énoncé.
+
+\begin{piege}
+
+Le rapport 2026 relève que « Plusieurs copies ne donnent pas les bonnes valeurs pour le tableau sortie. » Le numéro est attribué en \textbf{fin} de visite, pas à l'entrée. Et \texttt{d} ne revisite ni \texttt{Y} ni \texttt{X}, qui portent déjà l'époque courante. Les sommets non visités gardent leurs valeurs initiales, 0 pour les deux dictionnaires.
+
+\end{piege}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Quel invariant borne les époques par \texttt{présent} ? Est-il valide au moment de l'incrémentation ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+On raisonne sur des dictionnaires quelconques qui vérifient les invariants. Soit \(p\) la valeur de \texttt{présent} avant l'incrémentation. L'instruction s'exécute hors de \texttt{pp}, donc A2 est vrai : \(\texttt{\text{époque}}[t]\le p\) pour tout sommet \(t\).
+
+L'incrémentation ne modifie pas \texttt{époque}, et \texttt{présent} vaut ensuite \(p+1\). Donc
+
+\equationajustee{\texttt{\text{époque}}[t]\le p<p+1=\texttt{\text{présent}},}
+
+d'où \textbf{\(\texttt{\text{époque}}[t]\neq\texttt{\text{présent}}\) pour tout sommet \(t\)}.
+
+\begin{jury}
+
+Le rapport 2026 est explicite : « Le raisonnement doit partir du cas général où les tableaux présent et époque sont quelconques et satisfont l'invariant A2. » Il note que « Certaines copies se restreignent aux tableaux obtenus en question 1. » Un exemple ne prouve rien ici.
+
+\end{jury}
+
+\begin{methode}
+
+Une époque fraîche, strictement supérieure à toutes celles déjà distribuées, permet de marquer « visité pendant ce parcours » sans réinitialiser tout le dictionnaire. C'est l'intérêt du compteur \texttt{présent}.
+
+\end{methode}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Deux sens à démontrer. Pour l'un, il faut savoir qui peut recevoir l'époque \texttt{présent} ; pour l'autre, il faut suivre un chemin de \(s\) à \(t\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le résultat de Q2 dit qu'avant l'appel, aucun sommet ne porte l'époque \texttt{présent}. Pour le sens direct, montrez que tout successeur d'un sommet visité est visité, puis raisonnez par récurrence le long du chemin.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Pendant \texttt{pp(s)}, \texttt{présent} est constant. Une époque n'est modifiée qu'à la ligne 16, et elle reçoit alors la valeur \texttt{présent}, sur le sommet visité. On montre que \textbf{les sommets visités sont exactement les sommets accessibles depuis \(s\)}.
+
+\emph{Sens indirect.} On suppose \(\texttt{\text{époque}}[t]=\texttt{\text{présent}}\) après l'appel. D'après Q2, cette égalité était fausse avant l'appel, donc \(t\) a été visité. Or \texttt{pp} n'est appelée récursivement que sur un successeur d'un sommet en cours de visite, en partant de \(s\). Par récurrence sur l'ordre des appels, tout sommet visité est accessible depuis \(s\). Donc \(s\rightsquigarrow t\).
+
+\emph{Sens direct.} Soit \(x\) visité et \(x\to y\) un arc. Quand la boucle de \texttt{pp(x)} examine \(y\), deux cas sont possibles :
+
+\begin{itemize}
+\tightlist
+\item
+  soit \(y\) porte déjà l'époque \texttt{présent}, et il a donc été visité pendant cet appel (Q2) ;
+\item
+  soit \texttt{pp(y)} est appelée.
+\end{itemize}
+
+Dans les deux cas, \(y\) est visité. Pour un chemin \(s=x_0\to\dots\to x_k=t\), une récurrence sur \(i\) montre que chaque \(x_i\) est visité. Donc \(t\) reçoit l'époque \texttt{présent}, qui n'est plus modifiée par la suite.
+
+\equationajustee{\boxed{\ s\rightsquigarrow t\iff \texttt{\text{époque}}[t]=\texttt{\text{présent}}\ }}
+
+\begin{jury}
+
+Selon le rapport 2026, « La réponse doit exprimer explicitement que le parcours en profondeur pp(s) visite exactement les sommets accessibles depuis s, et doit réutiliser la question 2. » La phrase en gras de la solution répond à la première exigence ; le sens indirect répond à la seconde.
+
+\end{jury}
+
+\begin{piege}
+
+Sans Q2, le sens indirect tombe : un sommet pourrait porter l'époque \texttt{présent} héritée d'un parcours antérieur sans être accessible depuis \(s\).
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Placez-vous à l'instant où la boucle de \texttt{pp(u)} examine \(v\). Distinguez selon que \(v\) porte déjà l'époque courante ou non.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Si \(v\) a déjà été atteint, sa visite peut être terminée ou encore en cours. Que signifierait « encore en cours » pour le graphe ?
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+On se place dans le contexte de Q3 et d'\texttt{accessible} : l'appel \texttt{pp(s)} suit \texttt{présent\ +=\ 1}, donc aucun sommet ne porte l'époque courante au départ (Q2). Comme \(s\rightsquigarrow u\), \texttt{pp(u)} s'exécute (Q3). Le compteur croît strictement à chaque affectation de \texttt{sortie}. Considérons l'instant où la boucle de \texttt{pp(u)} examine \(t=v\).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\(v\) n'a pas l'époque courante.} Alors \texttt{pp(v)} est appelée depuis \texttt{pp(u)} et se termine, en affectant \texttt{sortie{[}v{]}}, avant que \texttt{pp(u)} n'affecte \texttt{sortie{[}u{]}}. Donc \(\texttt{sortie}[v]<\texttt{sortie}[u]\).
+\item
+  \textbf{\(v\) a l'époque courante.} Alors \texttt{pp(v)} a commencé pendant cet appel, peut-être hors de \texttt{pp(u)}. Supposons qu'elle ne soit pas terminée. Alors \texttt{pp(u)} a été déclenchée, directement ou non, par \texttt{pp(v)}, et la pile d'appels fournit un chemin \(v\rightsquigarrow u\). Avec l'arc \(u\to v\), cela forme un cycle, ce qu'exclut A1. Donc \texttt{pp(v)} est terminée, et \texttt{sortie{[}v{]}} est strictement inférieur à la valeur que recevra \texttt{sortie{[}u{]}}.
+\end{itemize}
+
+Dans les deux cas, \(\texttt{sortie}[u]>\texttt{sortie}[v]\), donc \textbf{\(\texttt{sortie}[u]\ge\texttt{sortie}[v]\)}.
+
+\begin{methode}
+
+C'est la propriété classique de l'ordre de fin dans un parcours en profondeur d'un graphe sans cycle : un sommet finit après tous ses successeurs. L'acyclicité sert à exclure exactement un cas, l'arc vers un sommet dont la visite est encore en cours (un « arc arrière »).
+
+\end{methode}
+
+\begin{piege}
+
+Le rapport 2026 signale que « Plusieurs copies affirment que sortie{[}v{]} sera affectée à l'intérieur de pp(u), ce qui n'est pas nécessairement le cas s'il existe des chemins de s à v ne passant pas par u. » Dans la figure 1, après \texttt{pp(\textquotesingle{}a\textquotesingle{})}, l'arc \(d\to X\) en est un exemple : \texttt{X} a été visité depuis \texttt{c}, avant \texttt{pp(\textquotesingle{}d\textquotesingle{})}. C'est tout l'objet du second cas.
+
+\end{piege}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Montrez d'abord que les lignes 5--6 ne renvoient jamais \texttt{False} à tort, c'est-à-dire que si \(s\rightsquigarrow t\), leur condition est fausse. Concluez ensuite avec Q3.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le long d'un chemin, A3 rend les époques croissantes. Si les époques des extrémités sont égales, que dire des époques intermédiaires ? Quel invariant s'applique alors à chaque arc ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+N'oubliez pas le cas \(t=s\), qui correspond au chemin vide.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+On suppose \(s\rightsquigarrow t\) par un chemin \(s=x_0\to\dots\to x_k=t\), éventuellement vide. A3 rend croissante la suite des époques des \(x_i\), donc
+
+\equationajustee{\texttt{\text{époque}}[s]\le\texttt{\text{époque}}[t].}
+
+Si de plus les époques de \(s\) et de \(t\) sont égales, la suite des époques est constante. A4 s'applique alors à chaque arc et rend décroissante la suite des sorties, donc
+
+\equationajustee{\texttt{sortie}[s]\ge\texttt{sortie}[t].}
+
+La condition des lignes 5--6 est donc fausse.
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(s\rightsquigarrow t\), la fonction exécute \texttt{présent\ +=\ 1} puis \texttt{pp(s)}. Pour \(t\neq s\), Q3 donne \(\texttt{\text{époque}}[t]=\texttt{\text{présent}}\). Pour \(t=s\), la ligne 16 l'impose. Le résultat est \texttt{True}.
+\item
+  Si \(s\not\rightsquigarrow t\), alors \(t\neq s\). Soit le test renvoie \texttt{False}, soit \texttt{pp(s)} s'exécute et Q3 donne \(\texttt{\text{époque}}[t]\neq\texttt{\text{présent}}\) : le résultat est \texttt{False}.
+\end{itemize}
+
+\textbf{\texttt{accessible(s,\ t)} renvoie \texttt{True} si et seulement si \(s\rightsquigarrow t\).}
+
+\begin{jury}
+
+La question est bien réussie (moyenne 0,85), mais le rapport 2026 insiste : « Attention à bien argumenter que les lignes 5 à 7 sont une garde qui est nécessairement satisfaite s'il existe un chemin de s à t (par extension de A3 et A4). » Autrement dit, il faut étendre A3 et A4 d'un arc à un chemin, comme ci-dessus, et pas seulement invoquer Q3.
+
+\end{jury}
+
+\begin{methode}
+
+Pour prouver un test « raccourci », on montre qu'il ne répond jamais faux. La justesse de la réponse donnée sans raccourci vient ensuite d'un résultat déjà établi.
+
+\end{methode}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Notez \(V\) l'ensemble des sommets visités. Que valent les époques dans \(V\) et hors de \(V\) ? Qu'est-ce qui a changé hors de \(V\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Propriété clé : si \(x\in V\) et \(x\to y\), alors \(y\in V\).
+
+Pour A4, montrez que l'égalité des époques force les deux extrémités de l'arc à être du même côté de \(V\), puis utilisez Q4.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Si la fonction sort ligne 7, rien n'est modifié. Sinon, soit \(p\) la valeur de \texttt{présent} avant la ligne 9, et \(V=\{x : s\rightsquigarrow x\}\) l'ensemble des sommets visités.
+
+\begin{itemize}
+\tightlist
+\item
+  D'après Q3, ce sont exactement les sommets d'époque \(p+1\).
+\item
+  Hors de \(V\), \texttt{époque} et \texttt{sortie} sont inchangés, et les époques y restent au plus \(p\) par A2.
+\item
+  \(V\) est stable par les arcs.
+\end{itemize}
+
+On vérifie chaque invariant.
+
+\begin{itemize}
+\item
+  \textbf{A2.} Dans \(V\), l'époque vaut \(p+1\), c'est-à-dire \texttt{présent}. Hors de \(V\), elle est au plus \(p\), donc inférieure à \texttt{présent}.
+\item
+  \textbf{A3.} Soit un arc \(x\to y\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Si \(x\in V\), alors \(y\in V\), et les deux époques sont égales.
+  \item
+    Si \(x\notin V\) et \(y\in V\), l'époque de \(x\) est au plus \(p\), celle de \(y\) vaut \(p+1\).
+  \item
+    Si \(x\notin V\) et \(y\notin V\), A3 valait déjà avant l'appel.
+  \end{itemize}
+\item
+  \textbf{A4.} Soit un arc \(x\to y\) dont les extrémités ont la même époque. Les époques valent \(p+1\) dans \(V\), et au plus \(p\) ailleurs.
+
+  Les deux sommets sont donc tous deux dans \(V\), ou tous deux hors de \(V\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Dans \(V\), Q4 s'applique (\(s\rightsquigarrow x\)) et donne \(\texttt{sortie}[x]\ge\texttt{sortie}[y]\).
+  \item
+    Hors de \(V\), A4 valait déjà avant l'appel.
+  \end{itemize}
+\end{itemize}
+
+\texttt{accessible} ne modifie pas le graphe. \textbf{A2, A3 et A4 sont préservés.}
+
+\begin{jury}
+
+D'après le rapport 2026, « Il était possible de résoudre simplement cette question en admettant que la fonction pp préserve les invariants A2-A4. Toutefois, les copies qui l'ont démontré ont été valorisées. » La preuve ci-dessus est celle qui rapporte le plus.
+
+\end{jury}
+
+\begin{piege}
+
+Le cas « \(x\) non visité, \(y\) visité » existe bel et bien : par exemple \(b\to c\) après \texttt{pp(\textquotesingle{}a\textquotesingle{})} en Q1. A3 y est strict, donc A4 ne s'y applique pas.
+
+\end{piege}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Commencez par A1 : tout cycle créé emprunterait le nouvel arc. Pour A2--A4, utilisez Q6 sur les arcs anciens. Il ne reste alors qu'à étudier l'arc ajouté.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'arc \(u\to s\) n'est ajouté que si \texttt{accessible(s,\ u)} a renvoyé \texttt{False}. Distinguez les lignes qui ont pu produire ce \texttt{False} : chacune donne une information sur les époques et les sorties de \(u\) et \(s\).
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\texttt{accessible(s,\ u)} modifie \texttt{présent}, \texttt{époque} et \texttt{sortie} (par \texttt{pp}), mais elle préserve A2--A4 (Q6) et ne modifie pas le graphe. Si son résultat est \texttt{True}, rien n'est ajouté. Sinon, \(s\not\rightsquigarrow u\) (Q5) et l'on ajoute l'arc \(u\to s\) ligne 20.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{A1.} Un cycle du nouveau graphe emprunterait l'arc \(u\to s\) et se refermerait par un chemin \(s\rightsquigarrow u\) de l'ancien graphe, ce qui est impossible. Notamment \(u\neq s\), car \texttt{accessible(s,\ s)} renvoie \texttt{True}.
+\item
+  \textbf{A2.} Il est vrai après \texttt{accessible} (Q6), et la ligne 20 ne touche ni à \texttt{époque} ni à \texttt{présent}.
+\item
+  \textbf{A3, A4.} Les arcs anciens les vérifient après \texttt{accessible} (Q6). Pour le nouvel arc \(u\to s\) :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    sortie ligne 7 avec \(\texttt{\text{époque}}[s]>\texttt{\text{époque}}[u]\) : A3 est strict, et A4 ne s'applique pas ;
+  \item
+    sortie ligne 7 avec des époques égales et \(\texttt{sortie}[s]<\texttt{sortie}[u]\) : A3 et A4 sont vrais ;
+  \item
+    sortie ligne 12 : l'époque de \(s\) vaut \texttt{présent}, celle de \(u\) en diffère et lui est au plus égale (A2). A3 est donc strict, et A4 ne s'applique pas.
+  \end{itemize}
+\end{itemize}
+
+\textbf{\texttt{lier(u,\ s)} préserve A1, A2, A3 et A4.}
+
+\begin{jury}
+
+Le rapport 2026 note que de nombreuses copies se contentent de renvoyer à Q6 pour A2--A4. « Il faut toutefois s'assurer que l'arc u-\textgreater s ajouté ligne 20 satisfait également A3 et A4. » C'est l'objet de la discussion selon la ligne de sortie d'\texttt{accessible}.
+
+\end{jury}
+
+\begin{piege}
+
+Ne pas écrire que \texttt{lier} laisse \texttt{époque} inchangé. Le rapport 2026 relève que « Certaines copies indiquent que lier ne modifierait pas époque, ce qui n'est pas le cas puisque la fonction fait appel à pp indirectement. » Seule la ligne 20 laisse les dictionnaires intacts.
+
+\end{piege}
+
+\hypertarget{partie-ii-unification}{%
+\section{Partie II --- Unification}\label{partie-ii-unification}}
+
+On suppose maintenant que les sommets ont au plus deux arcs sortants. Chaque sommet représente alors un terme binaire, sa forme normale, avec des sommets libres aux feuilles. Unifier, c'est lier certains sommets libres pour rendre égales des formes normales, comme on unifie des termes avec variables. Les outils sont un variant de terminaison, une récurrence de complexité, la mémoïsation et l'exploitation des équivalences T1--T4.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Lisez la longueur de chaque liste dans la représentation Python.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Internes} (degré 2) : \(a,b,c,d,e\).
+\item
+  \textbf{Lié} (degré 1) : \(W\).
+\item
+  \textbf{Libres} (degré 0) : \(X,Y,Z\).
+\end{itemize}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Cherchez une quantité entière, attachée à chaque sommet, qui diminue quand on suit un arc. Pourquoi est-elle bien définie dans ce graphe ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+On pose \(N(s)\) = longueur du plus long chemin issu de \(s\). Cette quantité est finie, car \(G\) est fini et acyclique : un chemin ne repasse par aucun sommet et a donc au plus \(|S|-1\) arcs.
+
+Pour tout arc \(s\to t\), on prolonge un plus long chemin issu de \(t\) par cet arc. Le résultat est un chemin issu de \(s\), car il ne repasse pas par \(s\) (A1). D'où
+
+\equationajustee{N(s)\ge 1+N(t)>N(t).}
+
+Les appels récursifs de \texttt{fn(s)} portent sur \(s^*\), \(s_0\) ou \(s_1\), qui sont des cibles d'arcs issus de \(s\). L'entier naturel \(N\) décroît donc strictement à chaque appel : \textbf{\texttt{fn} termine}.
+
+\begin{jury}
+
+Le rapport 2026 accepte plusieurs choix de \(N(s)\) : le nombre de sommets accessibles depuis \(s\), ou la longueur du plus long chemin depuis \(s\). Dans tous les cas, « Il faut invoquer l'acyclicité pour justifier la décroissance stricte. »
+
+\end{jury}
+
+\begin{piege}
+
+Ne pas confondre « \(t\) accessible depuis \(s\) » et « \(t\) successeur de \(s\) ». Le rapport 2026 relève des copies qui supposent qu'un chemin entre deux sommets fait apparaître le second dans la liste du premier, ce qui est faux.
+
+\end{piege}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Il faut une \textbf{minoration} : construire une famille de graphes, et pas seulement observer un cas. Comptez le nombre d'appels \(C(s)\) et écrivez sa relation de récurrence.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Cherchez des étages de sommets internes dont les deux fils sont à l'étage inférieur, de sorte que chaque étage double le nombre d'appels. Un même sommet doit donc être atteint par plusieurs arcs.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+On note \(C(s)\) le nombre d'appels déclenchés par \texttt{fn(s)}, cet appel compris :
+
+\equationajustee{C(s)=\begin{cases}1 & \text{si } s \text{ est libre,}\\ 1+C(s^*) & \text{si } s \text{ est \text{lié},}\\ 1+C(s_0)+C(s_1) & \text{si } s \text{ est interne.}\end{cases}}
+
+Pour \(m\ge 0\), on prend \(n=2(m+1)\) sommets \(x_0,y_0,\dots,x_m,y_m\). Les sommets \(x_0\) et \(y_0\) sont libres et, pour \(1\le i\le m\) :
+
+\begin{lstlisting}
+x_i : [x_{i-1}, y_{i-1}]      y_i : [y_{i-1}, x_{i-1}]
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q10-famille-etages.pdf}
+\caption*{Figure 2 --- Famille de graphes de la Q10 : deux sommets par étage, arcs
+vers l'étage inférieur, et nombre d'appels de fn par étage}
+\end{figure}
+
+Les arcs descendent d'un étage, donc le graphe est acyclique. Le degré sortant est au plus 2, et il n'y a pas d'arc multiple. Par symétrie, \(C(x_i)=C(y_i)\), que l'on note \(c_i\). On a
+
+\equationajustee{\begin{aligned}
+c_0&=1,\\
+c_i&=1+2c_{i-1}\ \text{ pour } 1\le i\le m,\\
+c_i+1&=2(c_{i-1}+1),\\
+c_m&=2^{m+1}-1.
+\end{aligned}}
+
+Comme \(m+1=n/2\) :
+
+\equationajustee{\boxed{C(x_m)=2^{n/2}-1}}
+
+Chaque appel coûte au moins une opération. \textbf{La complexité dans le pire cas de \texttt{fn} est donc au moins exponentielle en le nombre de sommets.}
+
+Variante plus simple, si l'on accepte deux arcs vers le même sommet : une chaîne \(s_0,\dots,s_{n-1}\) avec \texttt{G{[}s\_i{]}\allowbreak{}\ =\allowbreak{}\ {[}s\_\{i+1\},\allowbreak{}\ s\_\{i+1\}{]}\allowbreak{}} et \(s_{n-1}\) libre. Elle donne \(2^n-1\) appels pour \(n\) sommets.
+
+\begin{jury}
+
+Le rapport 2026 juge que « Cette question est rarement bien traitée. » Beaucoup de copies prouvent que la complexité est \emph{au plus} exponentielle, alors que la question porte sur la borne inférieure. L'exemple le plus simple, selon le rapport, est justement la chaîne de la variante : chaque sommet interne a ses deux arcs vers le suivant, jusqu'à un sommet libre. Les arcs doublés sont donc admis.
+
+\end{jury}
+
+\begin{piege}
+
+Un arbre ne convient pas. Le rapport 2026 l'explique : « De très nombreuses réponses proposent un graphe arborescent. Mais la complexité dans ce cas sera exponentielle en la hauteur de l'arbre, et non en la taille du graphe. » Dans un arbre, \texttt{fn} fait un appel par sommet : il faut du \textbf{partage}, des sommets atteints par plusieurs chemins.
+
+\end{piege}
+
+\begin{methode}
+
+Pour minorer une complexité, on exhibe une famille d'entrées et on résout la récurrence du nombre d'appels. Ici, \(u_i=1+2u_{i-1}\) se résout en posant \(u_i+1\).
+
+\end{methode}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+La lenteur de \texttt{fn} vient de ce qu'elle recalcule la même valeur pour un même sommet. Comment ne la calculer qu'une fois ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Utilisez un dictionnaire de résultats. Pour la complexité, comptez combien de fois le corps « utile » s'exécute, et vérifiez que construire un couple coûte \(O(1)\).
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\begin{lstlisting}[language=Python]
+def fn_efficace(s):
+    memo = {}
+
+    def aux(x):
+        if x not in memo:
+            if len(G[x]) == 0:          # libre
+                memo[x] = x
+            elif len(G[x]) == 1:        # lié
+                memo[x] = aux(G[x][0])
+            else:                       # interne
+                memo[x] = (aux(G[x][0]), aux(G[x][1]))
+        return memo[x]
+
+    return aux(s)
+\end{lstlisting}
+
+\emph{Correction.} \texttt{aux} suit la définition de \(\mathrm{fn}\), et la valeur mémorisée pour \(x\) est \(\mathrm{fn}(x)\). La terminaison découle de Q9.
+
+\emph{Complexité.} Le calcul de \texttt{memo{[}x{]}} s'exécute au plus une fois par sommet, en \(O(1)\) hors appels récursifs. La construction d'un couple se contente de référencer deux valeurs déjà construites, sans les recopier. Chaque exécution de ce calcul lance au plus deux appels, donc il y a au plus \(1+2|S|\) appels en tout. \textbf{Complexité \(O(|S|)\).}
+
+\begin{jury}
+
+Le rapport 2026 s'étonne qu'une part notable des copies ne pense pas à la mémoïsation ou l'implémente mal : dictionnaire jamais rempli, présence non testée, ou test fait avant chaque appel, ce qui alourdit le code. « Il est beaucoup plus naturel de vérifier la présence dans le dictionnaire au début de la fonction. » Il juge aussi surprenant de ne pas mémoïser le cas de base, même si la complexité reste linéaire.
+
+\end{jury}
+
+\begin{piege}
+
+La forme normale peut avoir une taille exponentielle si on la « déplie » en arbre. Elle n'est pourtant jamais recopiée : les sous-termes sont \textbf{partagés} par référence. Une version qui convertirait le résultat en chaîne de caractères perdrait la linéarité.
+
+\end{piege}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Écrivez une relation de récurrence sur \(T\) en fonction du premier arc d'un chemin. Que vaut \(T\) sur un sommet libre ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le chemin vide compte. La même astuce qu'en Q11 évite une explosion du temps de calcul, mais elle n'est pas exigée.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+Si \(s\) est libre, \(T(s)=1\) : le seul chemin est le chemin vide. Sinon, les chemins voulus se répartissent selon leur premier arc, d'où
+
+\equationajustee{T(s)=\sum_{s\to t}T(t).}
+
+La récursion termine par Q9.
+
+\begin{lstlisting}[language=Python]
+def taille(s):
+    memo = {}
+
+    def aux(x):
+        if x not in memo:
+            if len(G[x]) == 0:
+                memo[x] = 1
+            else:
+                total = 0
+                for y in G[x]:
+                    total = total + aux(y)
+                memo[x] = total
+        return memo[x]
+
+    return aux(s)
+\end{lstlisting}
+
+Vérification sur la figure 1 : \(T(a)=T(c)+T(d)=2+2=4\), et \(T(W)=T(Z)=1\). \textbf{Complexité \(O(|S|)\).}
+
+\begin{jury}
+
+Le rapport 2026 attend « Un code très simple » et précise qu'« il n'est pas demandé que la fonction soit efficace » : la récursion directe, sans \texttt{memo}, est acceptée. Passer par le résultat de \texttt{fn(s)} est possible, mais pas facile ; il ne faut pas alors appliquer \texttt{len} à ce résultat, qui n'est pas toujours un couple.
+
+\end{jury}
+
+\begin{piege}
+
+Le cas de base est indispensable. Le rapport 2026 relève des copies qui écrivent seulement la somme des \texttt{taille(t)} pour \texttt{t} dans \texttt{G{[}s{]}}. Cette somme est vide pour un sommet libre, ce qui donne 0 au lieu de 1, puis 0 partout.
+
+\end{piege}
+
+\begin{methode}
+
+\(T(s)\) est exactement le nombre de feuilles de l'arbre \(\mathrm{fn}(s)\) déplié. Elle mesure donc la taille de la forme normale « à plat », qui peut être exponentielle (Q10), alors que son calcul est linéaire.
+
+\end{methode}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Une extension ne modifie que les sommets libres. Que devient alors \(c\), et quelle forme a nécessairement \(\mathrm{fn}(c)\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un terme fini peut-il être égal à l'un de ses sous-termes stricts ? Définissez une taille pour le démontrer.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Soit \(H\) une extension. Le sommet \(c\) reste interne, avec \(c_0=X\) et \(c_1=Y\), donc
+
+\equationajustee{{\mathrm{fn}}_H(c)=\big({\mathrm{fn}}_H(X),\ {\mathrm{fn}}_H(Y)\big).}
+
+\(H\) vérifie A1 et A5, donc Q9 s'applique à \(H\) : les formes normales y sont des termes finis. On définit leur taille par \(|v|=1\) pour un sommet et \(|(\alpha,\beta)|=1+|\alpha|+|\beta|\) pour un couple. Alors
+
+\equationajustee{|{\mathrm{fn}}_H(c)|=1+|{\mathrm{fn}}_H(X)|+|{\mathrm{fn}}_H(Y)|>|{\mathrm{fn}}_H(X)|.}
+
+Donc \({\mathrm{fn}}_H(c)\neq{\mathrm{fn}}_H(X)\) pour toute extension \(H\). \textbf{Le problème \(\{(c,X)\}\) n'a pas de solution.}
+
+\begin{jury}
+
+Le rapport 2026 est net : « Pour cette question, la qualité de la justification est déterminante. Peu de copies apportent des arguments satisfaisants. » Il faut un argument qui vaille pour \textbf{toutes} les extensions, comme la taille ci-dessus, et pas une simple constatation sur la figure.
+
+\end{jury}
+
+\begin{piege}
+
+Montrer seulement que \(\mathrm{fn}(c)\neq\mathrm{fn}(X)\) dans \(G\) ne suffit pas : il faut considérer toutes les extensions, y compris celles où \(X\) devient lié. C'est l'analogue du test d'occurrence en unification : \(x\) ne s'unifie pas avec un terme qui contient strictement \(x\).
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Quand cette branche est atteinte, que sait-on de \(s\), et de \(t\) compte tenu des branches précédentes ? Quelle équivalence parmi T1--T4 s'applique alors ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+T4 a une hypothèse \(s\neq t\). Que se passe-t-il si \(s=t\) ? Et que renverrait \texttt{lier(s,\ s)} ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Si l'arc voulu crée un cycle, peut-il appartenir à une extension ? Et s'il est ajouté, reste-t-il du travail dans \(P\) ?
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\begin{lstlisting}[language=Python]
+        elif len(G[s]) == 0:
+            if s != t and not lier(s, t):
+                return False
+\end{lstlisting}
+
+Dans cette branche, \(s\) est libre et \(t\) n'est pas lié. En effet, les cas « \(t\) lié » et « deux internes » ont été traités avant. La branche \texttt{else} ramène « \(s\) interne, \(t\) libre » à ce cas, grâce à T1.
+
+\texttt{unif} ne modifie \(G\) que par \texttt{lier}, qui préserve A1--A4 (Q7). Q5 s'applique donc à chaque appel : \texttt{lier(s,\ t)} ajoute \(s\to t\) si et seulement si \(t\not\rightsquigarrow s\).
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(s=t\), la paire est satisfaite par toute extension, et on la retire simplement. Sans le test \texttt{s\ !=\ t}, \texttt{lier(s,\ s)} renverrait \texttt{False} puisque \(s\rightsquigarrow s\), et \texttt{unif} répondrait à tort « pas de solution ».
+\item
+  Si \(s\neq t\), T4 s'applique : \(P\) a une solution si et seulement si \(P'\) en a une qui contient \(s\to t\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Si \(t\rightsquigarrow s\), aucune extension ne contient \(s\to t\), car elle contient \(G\) et elle est acyclique : \texttt{lier(s,\ t)} renvoie \texttt{False}, et la fonction aussi.
+  \item
+    Sinon, \texttt{lier} ajoute \(s\to t\), étiqueté 0 puisque \(s\) était libre. Les extensions du nouveau \(G\) sont celles de l'ancien qui contiennent \(s\to t\). On continue avec \(P'\), puisque \texttt{P.pop()} a déjà retiré la paire.
+  \end{itemize}
+\end{itemize}
+
+\begin{jury}
+
+Le rapport 2026 constate une mauvaise compréhension fréquente de \texttt{unif} : « il n'est pas nécessaire d'utiliser return unif(P) à l'intérieur puisque la boucle while itère déjà le comportement de la fonction. » Le rapport propose ensuite deux lignes, \texttt{if\ s\ !=\ t:} suivi de \texttt{return\ lier(s,t)}. Prise à la lettre, cette seconde ligne est fausse (voir le piège ci-dessous) : on ne doit sortir de la boucle que sur un échec.
+
+\end{jury}
+
+\begin{piege}
+
+Ne pas renvoyer le résultat de \texttt{lier} quand il vaut \texttt{True}. Un \texttt{return\ lier(\allowbreak{}s,\allowbreak{}\ t)\allowbreak{}} quitte la boucle dès la première liaison réussie, avant d'avoir traité le reste de \(P\). Sur la figure 1, \texttt{unif(\allowbreak{}{[}(\allowbreak{}\textquotesingle{}c\textquotesingle{},\allowbreak{}\ \textquotesingle{}X\textquotesingle{})\allowbreak{},\allowbreak{}\ (\allowbreak{}\textquotesingle{}Y\textquotesingle{},\allowbreak{}\ \textquotesingle{}Z\textquotesingle{})\allowbreak{}{]}\allowbreak{})\allowbreak{}} lierait alors \texttt{Y} à \texttt{Z} et renverrait \texttt{True}, alors que \((c,X)\) n'a pas de solution (Q13).
+
+\end{piege}
+
+\begin{piege}
+
+Écrire \texttt{lier(t,\ s)} est faux quand \(t\) est interne : le sommet qui reçoit un arc sortant doit être libre, sinon on viole la définition d'une extension et A5.
+
+\end{piege}
+
+\hypertarget{partie-iii-repruxe9sentation-relationnelle}{%
+\section{Partie III --- Représentation relationnelle}\label{partie-iii-repruxe9sentation-relationnelle}}
+
+Le graphe est maintenant stocké dans deux tables, \texttt{sommets} et \texttt{arcs}. La Q15 est une vérification de routine par double jointure. La Q16 paraît demander de calculer \texttt{fn}, ce qui serait récursif. Il faut d'abord un raisonnement de graphe pour la ramener à une propriété locale.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Pour vérifier un invariant en SQL, on cherche ses contre-exemples : la requête doit renvoyer un résultat vide si l'invariant est vrai.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chaque arc, il faut les colonnes de sa source et de sa cible : joignez deux fois la table \texttt{sommets}.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\begin{lstlisting}[language=SQL]
+SELECT a.source, a.cible
+FROM arcs AS a
+JOIN sommets AS s ON s.id = a.source
+JOIN sommets AS t ON t.id = a.cible
+WHERE s.époque > t.époque
+   OR (s.époque = t.époque AND s.sortie < t.sortie);
+\end{lstlisting}
+
+\textbf{A3 et A4 sont vérifiés si et seulement si cette requête ne renvoie aucune ligne.} Les lignes renvoyées, s'il y en a, sont les arcs fautifs. On peut aussi remplacer la première ligne par \texttt{SELECT\ COUNT(*)} et tester que le résultat vaut 0.
+
+\begin{piege}
+
+La négation de « \(P\Rightarrow Q\) » est « \(P\) et non \(Q\) ». Il faut donc écrire une égalité des époques \textbf{et} l'inégalité stricte \texttt{s.sortie\ \textless{}\ t.sortie}.
+
+\end{piege}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Le SQL au programme ne permet pas de calculer \texttt{fn} récursivement. Relisez l'énoncé : on demande \textbf{une} paire, s'il en existe. Cherchez une propriété \textbf{locale} qui en garantit l'existence.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Commencez par les cas évidents : un sommet lié et sa cible ont-ils la même forme normale ? Deux sommets internes qui ont exactement les mêmes fils ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+En l'absence de sommet lié, prenez une paire solution qui minimise \(N(s)\) (Q9), et regardez les fils.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\textbf{Lemme.} Il existe deux sommets \(s\neq t\) tels que \(\mathrm{fn}(s)=\mathrm{fn}(t)\) si et seulement si l'une des conditions suivantes est remplie :
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{(\roman{enumi})}
+  \tightlist
+  \item
+    \(G\) a un sommet lié ;
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{(\roman{enumi})}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    deux sommets internes distincts ont les mêmes fils 0 et 1.
+  \end{enumerate}
+\end{itemize}
+
+\emph{Preuve.} Si \(s\) est lié, \(\mathrm{fn}(s)=\mathrm{fn}(s^*)\), et \(s\neq s^*\) par acyclicité. Si deux internes ont les mêmes fils, leurs formes normales coïncident.
+
+Réciproquement, on suppose qu'aucun sommet n'est lié et qu'il existe des paires solutions. On en choisit une, \((s,t)\), qui minimise \(N(s)\). Un libre a pour forme normale un sommet, un interne un couple.
+
+\begin{itemize}
+\tightlist
+\item
+  Si l'un des deux est libre, les deux le sont, et alors \(s=\mathrm{fn}(s)=\mathrm{fn}(t)=t\), ce qui est exclu.
+\item
+  Les deux sont donc internes, avec \(\mathrm{fn}(s_0)=\mathrm{fn}(t_0)\) et \(\mathrm{fn}(s_1)=\mathrm{fn}(t_1)\).
+\item
+  Si \(s_0\neq t_0\), la paire \((s_0,t_0)\) contredirait la minimalité, puisque \(N(s_0)<N(s)\). Donc \(s_0=t_0\), et de même \(s_1=t_1\). \(\square\)
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q16-temoins-locaux.pdf}
+\caption*{Figure 3 --- Les deux motifs cherchés par la requête de la Q16 : sommet
+lié et sa cible, deux internes de mêmes fils, arcs nommés par leurs
+alias SQL}
+\end{figure}
+
+\begin{lstlisting}[language=SQL]
+SELECT a.source, a.cible                      -- (i) un sommet lié et sa cible
+FROM arcs AS a
+JOIN sommets AS s ON s.id = a.source
+WHERE s.degré = 1
+UNION
+SELECT a0.source, b0.source                   -- (ii) deux internes de mêmes fils
+FROM arcs AS a0
+JOIN arcs AS b0 ON b0.cible = a0.cible AND b0.étiquette = 0
+JOIN arcs AS a1 ON a1.source = a0.source AND a1.étiquette = 1
+JOIN arcs AS b1 ON b1.source = b0.source AND b1.étiquette = 1
+                AND b1.cible = a1.cible
+WHERE a0.étiquette = 0 AND a0.source < b0.source
+LIMIT 1;
+\end{lstlisting}
+
+L'existence d'un arc d'étiquette 1 garantit que les sommets de la seconde partie sont internes. La condition \texttt{a0.source\ \textless{}\ b0.source} impose \(s\neq t\) et évite les doublons.
+
+\textbf{Toute ligne renvoyée est une paire valide, et le lemme garantit qu'une ligne est renvoyée dès qu'une paire existe.} Sur la figure 1, la requête renvoie \((W,Z)\).
+
+\begin{jury}
+
+Seules 18 \% des copies ont abordé cette question, avec une moyenne de 0,24. Le rapport 2026 la juge « assez subtile » : « Il ne faut pas chercher à écrire une requête SQL qui retournerait toutes les paires (s, t), mais remarquer que la question demande simplement d'en retourner une s'il en existe. » Il suffit d'énumérer des cas de base qui couvrent toutes les possibilités. L'exemple du rapport, deux sommets distincts liés au même sommet, est un cas particulier du motif (i) : un seul sommet lié et sa cible suffisent déjà.
+
+\end{jury}
+
+\begin{piege}
+
+Si l'on ne traite que les sommets internes de mêmes fils, on oublie les sommets liés. Sur la figure 1, la requête ne renverrait alors rien, alors que \(\mathrm{fn}(W)=\mathrm{fn}(Z)\).
+
+\end{piege}
+
+\begin{methode}
+
+Quand une propriété globale semble exiger une récursion, on cherche un \textbf{contre-exemple minimal} : un argument de minimalité montre souvent qu'il existe un témoin local, détectable par une jointure de profondeur fixe.
+
+\end{methode}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Prouver un algorithme de graphe par \textbf{invariants}, en disant quand chacun est valide : ici, A2--A4 sont vrais hors de \texttt{pp}. Le rapport 2026 le rappelle : « Les invariants sont l'outil éprouvé pour ce type de raisonnement. »
+\item
+  L'ordre de \textbf{fin de traitement} d'un parcours en profondeur dans un graphe acyclique : un sommet finit après ses successeurs. L'acyclicité exclut les arcs vers un sommet dont la visite est en cours.
+\item
+  Prouver la terminaison par un \textbf{variant entier} : la longueur du plus long chemin dans un graphe acyclique, ou le nombre de sommets accessibles.
+\item
+  Minorer une complexité par une famille d'exemples et une \textbf{récurrence} du type \(u_i=1+2u_{i-1}\). Le partage de sommets, et non la hauteur d'un arbre, produit l'exponentielle en la taille.
+\item
+  La \textbf{mémoïsation} par dictionnaire, testée au début de la fonction, avec le partage des sous-structures, fait passer d'un coût exponentiel à un coût linéaire.
+\item
+  En SQL, vérifier un invariant revient à chercher ses \textbf{contre-exemples} ; on remplace une récursion par un argument de \textbf{témoin minimal}.
+\end{itemize}
+
+\textbf{Questions discriminantes.} Q10, Q13, Q14 et Q16, où les moyennes tombent autour de 0,5 ou moins. Ce sont les questions où il faut une construction (Q10), un argument valable pour toutes les extensions (Q13), une bonne compréhension de la boucle de \texttt{unif} (Q14) ou une caractérisation locale (Q16).
+
+\textbf{Prérequis à revoir.} Le parcours en profondeur récursif en Python, les variables globales (\texttt{global}), la complexité des opérations sur les dictionnaires, les jointures multiples et les auto-jointures, ainsi que \texttt{UNION} et \texttt{LIMIT}.
+
+\textbf{Questions classiques transposables.} Le test d'accessibilité incrémental dans un graphe acyclique se retrouve dans l'ordonnancement et les dépendances de compilation. Le test d'occurrence en unification (Q13) se retrouve en typage et en programmation logique. La forme normale mémoïsée (Q11) se retrouve dans le partage de sous-expressions et les diagrammes de décision binaires. Le comptage de chemins dans un graphe acyclique (Q12) est un exercice classique de programmation dynamique.
+
+\end{document}

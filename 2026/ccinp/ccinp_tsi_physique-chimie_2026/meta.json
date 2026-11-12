@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_tsi_physique-chimie_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TSI",
+    "matiere": "Physique-chimie",
+    "annee": 2026
+  },
+  "questions": 69,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-diagramme-pt-eau.svg",
+      "question": "Q2",
+      "legende": "Diagramme (P, T) de l'eau : domaines solide, liquide et gaz, point triple A, point critique B, fusion F et vaporisation V sous 1 bar"
+    },
+    {
+      "fichier": "figures/q20-methode-rectangles.svg",
+      "question": "Q20",
+      "legende": "Méthode des rectangles : l'intervalle de a à b découpé en n intervalles de largeur h, chaque rectangle a pour hauteur la valeur de f au milieu de l'intervalle"
+    },
+    {
+      "fichier": "figures/q30-cycle-beau-de-rochas.svg",
+      "question": "Q30",
+      "legende": "Cycle de Beau de Rochas dans le diagramme de Watt (allure) : deux adiabatiques, deux isochores, parcours horaire, donc W < 0"
+    },
+    {
+      "fichier": "figures/q41-bilan-forces-voiture.svg",
+      "question": "Q41",
+      "legende": "Voiture à vitesse constante : la propulsion F⃗p compense la traînée f⃗, la réaction normale N⃗ compense le poids m g⃗"
+    },
+    {
+      "fichier": "figures/q51-contour-ampere-solenoide.svg",
+      "question": "Q51",
+      "legende": "Contour d'Ampère ABCD : AB intérieur parcouru selon +e⃗x, CD extérieur où B⃗ = 0⃗ ; les nℓ spires enlacées portent un courant entrant, d'où B⃗S = −µ0 n Is e⃗x"
+    },
+    {
+      "fichier": "figures/q52-moment-magnetique-spire.svg",
+      "question": "Q52",
+      "legende": "Spire du rotor vue comme la figure 5 (z vers le bas) : m⃗ pointe vers le haut à droite, à θ de e⃗x, d'où m⃗ = Ir πa² (cos θ e⃗x − sin θ e⃗z)"
+    }
+  ]
+}

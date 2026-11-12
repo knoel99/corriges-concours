@@ -1,0 +1,1978 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP PSI — Modélisation et ingénierie numérique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP PSI}
+\fancyhead[R]{\small Modélisation et ingénierie numérique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP PSI — Modélisation et ingénierie numérique 2026\par}\medskip
+  {\large CCINP · PSI · Modélisation et ingénierie numérique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} « Modélisation de l'entretien automatisé d'une piscine privée ». Épreuve PSI3MO, \textbf{4 heures, calculatrice interdite}, 14 pages, 46 questions en \textbf{deux parties indépendantes}. Le sujet suit l'eau du bassin : une pompe la fait circuler (partie I), puis un électrolyseur au sel, une sonde redox et un pH-mètre en contrôlent la qualité chimique (partie II). La même démarche revient deux fois : on construit un modèle, on en tire une prédiction chiffrée et on la compare à un relevé expérimental (figure 3 pour le débit, figure 11 pour le potentiel).
+
+\textbf{Partie I --- Régulation du débit de la pompe de circulation (Q1--Q17), sciences industrielles.}
+
+\begin{itemize}
+\tightlist
+\item
+  Q1 : dimensionnement du débit et du diamètre des conduites à partir du cahier des charges.
+\item
+  I.1 (Q2--Q9) : système bielle-manivelle. Loi entrée-sortie par fermeture géométrique, tracé, cylindrée, vitesse du piston, débit instantané puis moyen, fonction Python \texttt{moyenne}, validation du modèle sur un relevé.
+\item
+  I.2 (Q10--Q12) : schéma-bloc avec perturbation (pertes de charge). Réglage de l'adaptateur, fonctions de transfert en poursuite et en régulation, précision du système non corrigé.
+\item
+  I.3 (Q13--Q17) : correcteur proportionnel intégral réglé par compensation du pôle dominant. Précision, marges, amortissement, rapidité.
+\end{itemize}
+
+\textbf{Partie II --- Régulation des paramètres physico-chimiques de l'eau (Q18--Q46), physique-chimie et ingénierie numérique.}
+
+\begin{itemize}
+\tightlist
+\item
+  Q18--Q27 : électrolyse du chlorure de sodium, diagramme potentiel-pH du chlore, dismutation, répartition entre acide hypochloreux et ion hypochlorite, sonde redox (Nernst), effet sur le pH.
+\item
+  Q28--Q29 : chaîne de mesure du pH (capteur et convertisseur analogique-numérique 12 bits).
+\item
+  Q30--Q37 : photolyse du chlore par les UV. Beer-Lambert, lecture de spectres, absorption par l'eau, Planck-Einstein, vitesse de disparition.
+\item
+  Q38--Q44 : modèle différentiel de la concentration en acide hypochloreux, résolution par la méthode d'Euler (une ligne de Python à compléter), confrontation à la mesure, durée de fonctionnement de l'électrolyseur.
+\item
+  Q45--Q46 : tension d'électrolyse sur des courbes intensité-potentiel, énergie consommée, intérêt du volet roulant.
+\end{itemize}
+
+\textbf{Notions mobilisées.} Fermeture géométrique, dérivation composée, moyenne temporelle ; schémas-blocs, théorème de la valeur finale, classe d'un système, correcteur PI, marges de gain et de phase, premier ordre ; titres massique et molaire, loi de Faraday ; diagrammes E-pH, dismutation, stabilité dans l'eau, blocage cinétique ; relation de Nernst ; quantification d'un CAN ; loi de Beer-Lambert, photon ; bilan de matière, schéma d'Euler ; courbes intensité-potentiel.
+
+\textbf{Difficulté et longueur.} Sujet long (46 questions en 4 heures, soit environ 5 minutes par question), sans question vraiment difficile. On gagne des points sur la rigueur des justifications et la propreté des calculs à la main. \textbf{Deux anomalies d'énoncé} sont à signaler sur la copie, comme le demande la consigne : l'intervalle de potentiel donné après Q26 (calculé avec un seul électron) et l'unité du volume dans le programme de Q41.
+
+\textbf{Ce que dit le rapport 2026.} Le jury juge la qualité des copies satisfaisante, mais insiste sur trois points. D'abord : « Même si plusieurs questions du sujet ne demandaient pas de grandes justifications, il est nécessaire d'argumenter les réponses. » Ensuite, les applications numériques et les unités : « Un résultat donné sans unité est incorrect. » Enfin, le temps : « Pour beaucoup de candidats, une mauvaise gestion du temps n'a pas permis d'aborder la dernière partie de manière posée et réfléchie. »
+
+\textbf{Questions discriminantes (rapport 2026).} Le jury signale comme mal réussies ou rarement justifiées : Q2 (unicité de la solution), Q15 (définitions des marges), Q20 (équation-bilan, souvent sautée), Q23 (blocage cinétique), Q24 (équation de dismutation), Q27 (effet sur le pH), Q28 (nature du signal, rôle du CAN), Q33 (comparaison chiffrée), Q41 (ligne d'Euler) et Q45 (lecture de la tension). Q9, Q17, Q32 et Q36 à Q39 ont été peu traitées alors qu'elles sont accessibles.
+
+\textbf{Questions à ne pas laisser passer.} Q1, Q4, Q10, Q14, Q17, Q18, Q19, Q22, Q25, Q29, Q30, Q35, Q44 : courtes, presque mécaniques. Q21 et Q24 se traitent vite si le diagramme E-pH est maîtrisé.
+
+\textbf{Gestion du temps.} Environ 1 h 30 pour la partie I et 2 h 30 pour la partie II, qui est plus longue mais faite de questions courtes. Les blocs de la partie II sont assez indépendants : en cas de blocage sur Beer-Lambert, on peut passer à Q42--Q46, qui demandent surtout des lectures de figures.
+
+\hypertarget{partie-i-ruxe9gulation-du-duxe9bit-de-la-pompe-de-circulation}{%
+\section{Partie I --- Régulation du débit de la pompe de circulation}\label{partie-i-ruxe9gulation-du-duxe9bit-de-la-pompe-de-circulation}}
+
+On part du cahier des charges (renouveler l'eau en 8 heures) pour dimensionner l'installation, puis on modélise la pompe à piston et son asservissement de débit. Outils : cinématique plane, calcul intégral, schémas-blocs et correcteurs.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Un débit volumique est un volume divisé par une durée, et c'est aussi une vitesse multipliée par une section.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le diamètre varie comme la racine carrée du débit : inutile de refaire le calcul pour le second diamètre.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le volume du bassin doit passer dans la pompe en \(\Delta t=8\ \text{h}=2{,}88\cdot10^4\) s. Le débit vaut donc \(q=V/\Delta t\) :
+
+\equationajustee{\begin{aligned}
+q_{\min}&=\frac{30}{2{,}88\cdot10^4}\\
+&\simeq1{,}04\cdot10^{-3}\ \mathrm{m^3\cdot s^{-1}}\\
+q_{\max}&=\frac{120}{2{,}88\cdot10^4}\\
+&\simeq4{,}17\cdot10^{-3}\ \mathrm{m^3\cdot s^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}q_{\min}&\simeq1{,}0\ \mathrm{L\cdot s^{-1}}\\ q_{\max}&\simeq4{,}2\ \mathrm{L\cdot s^{-1}}\end{aligned}}}
+
+La vitesse \(v=1{,}5\ \mathrm{m\cdot s^{-1}}\) est uniforme sur une section circulaire. Donc \(q=v\,\pi d^2/4\), d'où \(d=\sqrt{4q/(\pi v)}\) :
+
+\equationajustee{\begin{aligned}
+d_{\min}&=\sqrt{\frac{4\times1{,}04\cdot10^{-3}}{\pi\times1{,}5}}\\
+&\simeq\sqrt{8{,}8\cdot10^{-4}}\\
+&\simeq2{,}97\cdot10^{-2}\ \text{m}\\
+d_{\max}&=\sqrt{\frac{q_{\max}}{q_{\min}}}\,d_{\min}\\
+&=2\,d_{\min}
+\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}d_{\min}&\simeq30\ \text{mm}\\ d_{\max}&\simeq59\ \text{mm}\end{aligned}}}
+
+Ces diamètres, de 3 à 6 cm, sont ceux des canalisations usuelles d'une piscine : les ordres de grandeur sont cohérents.
+
+\begin{piege}
+
+Le débit se calcule sur les 8 heures de fonctionnement, pas sur 24 heures. Et l'énoncé impose les unités : L·s⁻¹ et mm. Un résultat en m³·s⁻¹ ne répond pas complètement.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève des candidats qui « donnent un résultat non abouti sous forme de fraction », et d'autres qui « obtiennent des ordres de grandeurs très aberrants mais ne font aucune remarque sur la pertinence de leurs résultats ». Une valeur décimale avec son unité, puis une phrase de contrôle de l'ordre de grandeur, règlent les deux défauts.
+
+\end{jury}
+
+\hypertarget{i.1-moduxe9lisation-muxe9canique-du-systuxe8me-daspiration-de-la-pompe}{%
+\subsection{I.1 --- Modélisation mécanique du système d'aspiration de la pompe}\label{i.1-moduxe9lisation-muxe9canique-du-systuxe8me-daspiration-de-la-pompe}}
+
+Système bielle-manivelle à une seule boucle : on en tire la loi entrée-sortie, puis le débit, qu'on confronte à la mesure.
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Écrire la fermeture géométrique de la boucle \(O\to A\to B\to O\) et la projeter sur \(\vec x_0\) et \(\vec y_0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+La projection sur \(\vec y_0\) élimine \(x_3\) et donne \(\sin\theta_2\). Il reste une ambiguïté de signe sur \(\cos\theta_2\) : examiner si \(\cos\theta_2\) peut s'annuler au cours du mouvement.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Une fonction continue qui ne s'annule jamais garde un signe constant : il suffit de la connaître à \(t=0\).
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Fermeture géométrique : \(\overrightarrow{OA}+\overrightarrow{AB}=\overrightarrow{OB}\), soit \(R\,\vec x_1+L\,\vec x_2=x_3\,\vec x_0\). On projette sur \(\vec x_0\) et \(\vec y_0\) :
+
+\equationajustee{\left\{\begin{aligned}R\cos\theta_1+L\cos\theta_2&=x_3\\ R\sin\theta_1+L\sin\theta_2&=0\end{aligned}\right.}
+
+La seconde équation donne \(\sin\theta_2=-\frac{R}{L}\sin\theta_1\). On en tire \(L\cos\theta_2=\pm\sqrt{L^2-R^2\sin^2\theta_1}\). Mathématiquement, il existe donc deux solutions :
+
+\equationajustee{x_3=R\cos\theta_1\pm\sqrt{L^2-(R\sin\theta_1)^2}}
+
+\textbf{Choix du signe.}
+
+\begin{itemize}
+\tightlist
+\item
+  Comme \(R<L\), on a \(|\sin\theta_2|\le R/L<1\) : \(\cos\theta_2\) ne s'annule jamais.
+\item
+  Fonction continue du temps qui ne s'annule pas, \(\cos\theta_2\) garde un signe constant (théorème des valeurs intermédiaires).
+\item
+  À l'instant initial, \(\theta_1=0\) et la figure 2 place B à droite de A. Donc \(\theta_2=0\) et \(\cos\theta_2=1>0\).
+\item
+  Ainsi \(\cos\theta_2>0\) à chaque instant, et seul le signe \(+\) convient.
+\end{itemize}
+
+\equationajustee{\boxed{x_3=R\cos\theta_1+\sqrt{L^2-(R\sin\theta_1)^2}}}
+
+La racine écartée se ramène à la première. En notant \(x_3^{+}\) la racine retenue, qui est au moins égale à \(L-R\) :
+
+\equationajustee{\begin{aligned}
+R\cos\theta_1-\sqrt{L^2-R^2\sin^2\theta_1}&=-x_3^{+}(\pi-\theta_1)\\
+&\le-(L-R)\\
+&<0
+\end{aligned}}
+
+Elle placerait B à gauche de O. C'est l'autre montage du mécanisme, symétrique par rapport à \((O,\vec y_0)\), incompatible avec la figure 2.
+
+\begin{methode}
+
+Pour lever une ambiguïté de signe dans une loi entrée-sortie : montrer que la quantité concernée ne s'annule jamais (ici grâce à \(R<L\)), puis lire son signe sur la configuration de la figure. C'est l'argument de continuité, qui vaut pour tous les mécanismes à une boucle.
+
+\end{methode}
+
+\begin{jury}
+
+D'après le rapport 2026, la plupart des candidats trouvent le résultat, mais « très peu montrent l'existence mathématique de deux solutions et montrent rigoureusement qu'une seule des deux est possible pour ce système ». Les deux étapes sont attendues : écrire le \(\pm\), puis l'argument qui élimine le signe \(-\).
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Diviser par \(L\) : seul le rapport \(R/L\) reste comme paramètre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chercher la période, la parité et les valeurs en \(0\), \(\pi/2\), \(\pi\). L'inégalité triangulaire dans le triangle \(OAB\) encadre \(OB\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\equationajustee{\boxed{\frac{x_3}{L}=\frac{R}{L}\cos\theta_1+\sqrt{1-\Big(\frac{R}{L}\Big)^2\sin^2\theta_1}}}
+
+Pour \(R/L=1/2\), on obtient une fonction \(2\pi\)-périodique et paire :
+
+\equationajustee{\frac{x_3}{L}=\frac12\cos\theta_1+\sqrt{1-\frac14\sin^2\theta_1}}
+
+Par l'inégalité triangulaire, \(L-R\le OB\le L+R\), avec égalité quand O, A et B sont alignés :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\theta_1=0\), \(2\pi\), \(4\pi\) : \(\boxed{x_3/L=3/2}\) (maximum) ;
+\item
+  \(\theta_1=\pi\), \(3\pi\) : \(\boxed{x_3/L=1/2}\) (minimum) ;
+\item
+  valeurs intermédiaires : \(x_3/L\simeq0{,}87\) en \(\pi/2\) et \(x_3/L\simeq0{,}58\) en \(3\pi/4\).
+\end{itemize}
+
+\begin{longtable}[]{@{}lllllllll@{}}
+\toprule\noalign{}
+θ₁ & 0 & π/2 & 3π/4 & π & 3π/2 & 2π & 3π & 4π \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+x₃/L & 1,5 & 0,87 & 0,58 & 0,5 & 0,87 & 1,5 & 0,5 & 1,5 \\
+\end{longtable}
+
+Allure (figure 1) : deux oscillations entre 0,5 et 1,5 sur \([0,4\pi]\). Ce n'est pas une sinusoïde : les maxima sont plus pointus et les minima plus aplatis, parce que le terme en racine déforme la courbe.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q03-course-piston.pdf}
+\caption*{Figure 1 --- Loi entrée-sortie x₃/L(θ₁) pour R/L = 1/2 sur deux tours,
+comparée à une sinusoïde de mêmes extrema}
+\end{figure}
+
+\begin{piege}
+
+Tracer une sinusoïde « propre » n'est acceptable que si \(R/L\ll1\). Ici \(R/L=1/2\) : la dissymétrie se voit et doit apparaître, avec les valeurs 3/2 et 1/2 portées sur le graphe.
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Volume balayé = course × section. La course se lit sur les extrema de Q3.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+D'après Q3, \(x_3\) atteint ses extrema aux points morts : \(x_3(0)=L+R\) et \(x_3(\pi)=L-R\). La course est la distance parcourue par le piston entre ces deux positions, soit \(2R\).
+
+La section du piston est un disque d'aire \(S_p=\pi d_p^2/4\). Le volume balayé sur un tour vaut :
+
+\equationajustee{\begin{aligned}
+C&=2R\cdot\frac{\pi d_p^2}{4}\\
+&=\frac{\pi R\,d_p^2}{2}
+\end{aligned}}
+
+\equationajustee{\boxed{C=\frac{\pi R\,d_p^2}{2}}}
+
+La longueur \(L\) de la bielle n'intervient pas, ce que l'énoncé laissait prévoir.
+
+\begin{piege}
+
+Le rapport 2026 note que « L'évaluation de la course est souvent mal comprise. » La course est la différence entre les positions extrêmes, \(2R\) : ni \(R\), ni \(L+R\). Et la section d'un piston de diamètre \(d_p\) est \(\pi d_p^2/4\), pas \(\pi d_p^2\).
+
+\end{piege}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Le piston est en translation : sa vitesse est la dérivée de \(x_3\) par rapport au temps.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dériver par rapport à \(\theta_1\) puis multiplier par \(\dot\theta_1=\Omega_m\). Vérifier que le radicande ne s'annule pas.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Le piston est en translation de direction \(\vec x_0\). Avec \(\theta_1=\Omega_mt\), la dérivée composée donne \(v_3=\dot x_3=\Omega_m\,\dfrac{\mathrm dx_3}{\mathrm d\theta_1}\).
+
+Le radicande vérifie \(L^2-R^2\sin^2\theta_1\ge L^2-R^2>0\) : la racine est dérivable, et
+
+\equationajustee{\frac{\mathrm dx_3}{\mathrm d\theta_1}=-R\sin\theta_1-\frac{R^2\sin\theta_1\cos\theta_1}{\sqrt{L^2-R^2\sin^2\theta_1}}}
+
+\equationajustee{\boxed{v_3=-R\,\Omega_m\sin\theta_1\left(1+\frac{R\cos\theta_1}{\sqrt{L^2-(R\sin\theta_1)^2}}\right)}}
+
+Contrôle : \(v_3\) s'annule aux points morts, en 0 et en π. Le facteur entre parenthèses est strictement positif : \(R^2\cos^2\theta_1<L^2-R^2\sin^2\theta_1\) équivaut à \(R^2<L^2\), vrai puisque \(R<L\).
+
+Donc \(v_3\) a le signe de \(-\sin\theta_1\) : \(v_3\le0\) pour \(\theta_1\in[0,\pi]\), et \(v_3\ge0\) pour \(\theta_1\in[\pi,2\pi]\).
+
+\begin{piege}
+
+Le rapport 2026 signale « De nombreuses erreurs dans le calcul de la dérivée. » Dériver la racine comme une fonction composée : \(\big(\sqrt u\big)'=u'/(2\sqrt u)\), avec \(u'=-2R^2\sin\theta_1\cos\theta_1\). Et ne pas donner \(\mathrm dx_3/\mathrm d\theta_1\) comme vitesse : il manque le facteur \(\Omega_m\).
+
+\end{piege}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Pendant \(\mathrm dt\), le piston chasse un cylindre de section \(\pi d_p^2/4\) et de longueur \(v_3\,\mathrm dt\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifier le signe de \(v_3\) sur l'intervalle de refoulement, pour savoir s'il faut un signe moins ou une valeur absolue.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Pendant \(\mathrm dt\), le piston de section \(S_p=\pi d_p^2/4\) chasse le volume \(S_p\,v_3\,\mathrm dt\). Sur \([\pi,2\pi]\), on a \(v_3\ge0\) (Q5), donc le débit refoulé est positif :
+
+\equationajustee{\boxed{q=\begin{cases}0&\text{pour }\theta_1\in[0,\pi]\\[4pt] \dfrac{\pi d_p^2}{4}\,v_3&\text{pour }\theta_1\in[\pi,2\pi]\end{cases}}}
+
+Avec les données numériques, le maximum vaut \(8{,}3\cdot10^{-3}\ \mathrm{m^3\cdot s^{-1}}\) vers \(\theta_1\simeq292^\circ\). Cela correspond à \(t\simeq19{,}5\) ms, comme sur la figure 3.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Inutile d'intégrer l'expression de \(q\) : \(q\,\mathrm dt\) est un volume élémentaire balayé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'intégrale du débit sur un tour est la cylindrée. Il reste à diviser par la bonne durée.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Sur une période \(T=2\pi/\Omega_m\), le débit n'est non nul que pendant le refoulement, où \(q\,\mathrm dt=S_p\,\mathrm dx_3\) :
+
+\equationajustee{\begin{aligned}
+q_{moy}&=\frac1T\int_0^Tq\,\mathrm dt\\
+&=\frac1T\,\frac{\pi d_p^2}{4}\big[x_3(2\pi)-x_3(\pi)\big]\\
+&=\frac{C}{T}\\
+&=\frac{\pi R d_p^2}{2}\cdot\frac{\Omega_m}{2\pi}
+\end{aligned}}
+
+\equationajustee{\boxed{q_{moy}=\frac{R\,d_p^2\,\Omega_m}{4}}}
+
+\begin{methode}
+
+Reconnaître une dérivée exacte sous l'intégrale (\(q=S_p\,\dot x_3\)) transforme un calcul pénible en une différence de valeurs aux bornes.
+
+\end{methode}
+
+\begin{piege}
+
+La moyenne se prend sur la période entière \(T\), pas sur la demi-période de refoulement : diviser par \(T/2\) double le résultat. Le rapport 2026 note que beaucoup de candidats abordent le calcul sans aboutir à l'expression finale : le changement de variable évite justement d'intégrer l'expression de Q6.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Avec un pas de temps constant, la moyenne temporelle sur une période est la moyenne arithmétique des échantillons.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Le relevé de la figure 3 couvre une période (\(T=60/2500=24\) ms), échantillonnée à pas constant \(\Delta t\). Sur \(N\) échantillons, la somme de Riemann se simplifie :
+
+\equationajustee{\frac{1}{N\Delta t}\sum_k q_k\,\Delta t=\frac1N\sum_k q_k}
+
+\begin{lstlisting}[language=Python]
+def moyenne(q):
+    """Débit moyen (m3/s) d'une liste de débits relevés à pas de temps constant."""
+    s = 0.0
+    for qi in q:
+        s = s + qi
+    return s / len(q)
+\end{lstlisting}
+
+\texttt{sum(q)/len(q)} convient aussi.
+
+\begin{piege}
+
+Le rapport 2026 met en garde contre la division euclidienne \texttt{//}, vue dans quelques copies : elle tronque le résultat. La moyenne s'obtient avec \texttt{/}. Le \texttt{return} doit être hors de la boucle, et on divise par \texttt{len(q)}, pas par une constante écrite en dur.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Convertir \(\Omega_m\) en rad·s⁻¹ avant tout calcul.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sans calculatrice : séparer mantisses et puissances de dix, puis comparer l'écart relatif à la précision du relevé.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+On convertit d'abord la vitesse de rotation :
+
+\equationajustee{\Omega_m=2500\times\frac{2\pi}{60}\simeq262\ \mathrm{rad\cdot s^{-1}}}
+
+\equationajustee{\begin{aligned}
+q_{moy}&=\frac{0{,}04\times9\cdot10^{-4}\times262}{4}\\
+&=\frac{3{,}6\cdot10^{-5}\times262}{4}\\
+&\simeq2{,}36\cdot10^{-3}\ \mathrm{m^3\cdot s^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{q_{moy}\simeq2{,}36\cdot10^{-3}\ \mathrm{m^3\cdot s^{-1}}}}
+
+L'écart relatif avec la mesure, \(2{,}4\cdot10^{-3}\ \mathrm{m^3\cdot s^{-1}}\), est d'environ 2 \%. C'est du même ordre que la précision de la valeur mesurée, donnée avec deux chiffres significatifs. La forme du débit modélisé (nul puis en cloche, maximum vers \(8{,}3\cdot10^{-3}\ \mathrm{m^3\cdot s^{-1}}\)) correspond aussi à la figure 3.
+
+\textbf{Le modèle (piston étanche, fluide incompressible, clapets parfaits) est validé.} Ce débit appartient à \([q_{\min};q_{\max}]\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q09-debit-instantane.pdf}
+\caption*{Figure 2 --- Débit instantané modélisé sur un tour de manivelle (T = 24
+ms) et débit moyen q\_moy ≈ 2,36·10⁻³ m³·s⁻¹}
+\end{figure}
+
+\begin{piege}
+
+Oublier la conversion tr·min⁻¹ → rad·s⁻¹ fausse le résultat d'un facteur \(2\pi/60\simeq0{,}1\).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Peu traitée. L'application numérique n'a pas toujours été bien réalisée. » La question est pourtant rapide une fois Q7 obtenue. « Conclure quant à la validité » demande une phrase argumentée : un écart relatif chiffré, comparé à la précision des données, et le rappel des hypothèses validées.
+
+\end{jury}
+
+\hypertarget{i.2-moduxe9lisation-de-la-ruxe9gulation-sous-la-forme-dun-schuxe9ma-bloc}{%
+\subsection{I.2 --- Modélisation de la régulation sous la forme d'un schéma-bloc}\label{i.2-moduxe9lisation-de-la-ruxe9gulation-sous-la-forme-dun-schuxe9ma-bloc}}
+
+Schéma-bloc classique avec une perturbation additive en sortie. On établit les deux fonctions de transfert, puis on constate que le système sans correcteur est inutilisable.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Écrire \(\varepsilon\) en fonction de \(Q_c\) et \(Q_s\), puis exiger \(\varepsilon=0\) lorsque \(Q_s=Q_c\).
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+D'après le schéma-bloc :
+
+\equationajustee{\begin{aligned}
+\varepsilon&=U_c-U_{mes}\\
+&=K_aQ_c-K_qQ_s
+\end{aligned}}
+
+Pour que \(\varepsilon=0\) équivaille à \(Q_s=Q_c\), il faut \((K_a-K_q)\,Q_c=0\) quelle que soit la consigne :
+
+\equationajustee{\boxed{K_a=K_q=1\ \mathrm{V\cdot s\cdot m^{-3}}}}
+
+\begin{piege}
+
+\(K_a\) a une unité : il convertit un débit en tension. Et ce réglage garantit seulement que \(\varepsilon=0\) signifie \(Q_s=Q_c\). Que \(\varepsilon\) tende vers 0 dépend de la classe de la boucle (Q12--Q13).
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Système linéaire : écrire l'équation de boucle, ou superposer les deux entrées.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lire attentivement le signe de \(Q_{pc}\) au sommateur de sortie. « Forme canonique » : 1 comme terme constant au dénominateur.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+On note \(G(p)=C(p)K_vH(p)K_{pom}\), c'est-à-dire :
+
+\equationajustee{G(p)=\frac{C(p)K_vK_mK_{pom}}{1+\tau_mp}}
+
+Le schéma-bloc donne deux relations, la perturbation étant retranchée au sommateur de sortie :
+
+\equationajustee{\begin{aligned}
+Q_s&=G\varepsilon-Q_{pc}\\
+\varepsilon&=K_aQ_c-K_qQ_s
+\end{aligned}}
+
+D'où \(Q_s(1+K_qG)=K_aGQ_c-Q_{pc}\). Avec \(C=1\), on pose \(K=K_qK_vK_mK_{pom}\), sans dimension, qui vaut \(9\cdot10^{-4}\). En remplaçant \(H(p)\) par son expression :
+
+\equationajustee{\boxed{\begin{aligned}H_1(p)&=\frac{\dfrac{K_aK_vK_mK_{pom}}{1+K}}{1+\dfrac{\tau_m}{1+K}\,p}\\[6pt] H_2(p)&=-\frac{1}{1+K}\cdot\frac{1+\tau_mp}{1+\dfrac{\tau_m}{1+K}\,p}\end{aligned}}}
+
+Numériquement, \(H_1(p)\simeq\dfrac{9\cdot10^{-4}}{1+p}\) et \(H_2(p)\simeq-1\).
+
+\begin{piege}
+
+Le « \(-\) » sur \(Q_{pc}\) traduit la « diminution du débit » annoncée : \(H_2\) est négative. Écrire \(H_1=9\cdot10^{-4}/(1{,}0009+p)\) n'est pas une forme canonique.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 juge la question bien réussie, « mais quelques candidats laissent H(p) sans remplacer par son expression et ne donnent pas les résultats sous forme canonique ». Les deux étapes sont exigées : expliciter \(H(p)\), puis mettre gain statique et constante de temps en évidence.
+
+\end{jury}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Exprimer \(\varepsilon(p)\) en fonction des deux entrées, puis appliquer le théorème de la valeur finale à des échelons.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifier d'abord la stabilité. Penser à la classe de la boucle ouverte.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+On lit « non asservi » comme « sans correction » (\(C=1\)). Alors :
+
+\equationajustee{\varepsilon(p)=\frac{K_aQ_c(p)+K_qQ_{pc}(p)}{1+K_qG(p)}}
+
+Le pôle \(-(1+K)/\tau_m\) est négatif : le système est stable et le théorème de la valeur finale s'applique. Pour des échelons \(Q_{c0}/p\) et \(Q_{pc0}/p\) :
+
+\equationajustee{\begin{aligned}
+\varepsilon_s&=\frac{K_aQ_{c0}}{1+K}\\
+&\simeq K_aQ_{c0}\neq0\\
+\varepsilon_{pert}&=\frac{K_qQ_{pc0}}{1+K}\\
+&\simeq K_qQ_{pc0}\neq0
+\end{aligned}}
+
+Ces écarts sont des tensions : ils valent presque toute la consigne convertie, et presque toute la perturbation convertie. \textbf{Les exigences de précision ne sont pas respectées.}
+
+La boucle ouverte est de classe 0 et son gain \(K=9\cdot10^{-4}\) est si faible que le débit obtenu vaut environ \(9\cdot10^{-4}\,Q_{c0}\). Si l'on comprend « non asservi » au sens de boucle ouverte, la conclusion est la même : rien ne corrige la perturbation.
+
+\begin{piege}
+
+Le rapport 2026 note que « De nombreux candidats confondent BO et BF. » Le théorème de la valeur finale s'applique à l'écart du système bouclé, pas à la boucle ouverte. Et \(1/(1+K)\simeq1\) ne veut pas dire « écart nul » : l'écart vaut presque toute la consigne.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Attention à bien justifier pour les deux erreurs. » Il faut conclure séparément sur l'écart en poursuite et sur l'écart dû à la perturbation, chacun avec son calcul.
+
+\end{jury}
+
+\hypertarget{i.3-mise-en-place-dun-correcteur}{%
+\subsection{I.3 --- Mise en place d'un correcteur}\label{i.3-mise-en-place-dun-correcteur}}
+
+Un correcteur PI apporte l'intégrateur qui manquait. Son zéro, placé sur le pôle du moteur, ramène la boucle ouverte à un intégrateur pur : tout le réglage en découle.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Que devient la classe de la boucle ouverte ? Où l'intégrateur est-il placé par rapport à l'entrée de la perturbation ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+La fonction de transfert en boucle ouverte est :
+
+\equationajustee{\mathrm{FTBO}(p)=\frac{K_pK_qK_vK_mK_{pom}}{T_i}\cdot\frac{1+T_ip}{p(1+\tau_mp)}}
+
+Elle est de classe 1, et l'intégrateur est \textbf{en amont} du point d'entrée de \(Q_{pc}\). Si le système corrigé est stable (vérifié en Q15--Q16), le théorème de la valeur finale donne, pour des échelons :
+
+\equationajustee{\begin{aligned}
+\varepsilon_s&=\lim_{p\to0}\frac{K_aQ_{c0}}{1+\mathrm{FTBO}(p)}\\
+&=0\\
+\varepsilon_{pert}&=\lim_{p\to0}\frac{K_qQ_{pc0}}{1+\mathrm{FTBO}(p)}\\
+&=0
+\end{aligned}}
+
+\textbf{L'exigence de précision est respectée.}
+
+\begin{methode}
+
+Pour annuler l'écart dû à une perturbation en échelon, il faut un intégrateur \textbf{entre le comparateur et le point d'entrée de la perturbation}. La classe de la boucle ouverte ne suffit pas à elle seule.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 regrette que « l'argument de la classe est souvent oublié » et ajoute : « De nombreux candidats ne précisent pas que le correcteur doit être placé en amont de la perturbation. » Dire « un PI améliore la précision » ne suffit pas : il faut les deux arguments.
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Hors intégrateur, combien de pôles a la boucle ouverte ? Placer le zéro du correcteur pour qu'il simplifie l'un d'eux.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Le seul pôle non nul, \(-1/\tau_m\), est le pôle dominant. On le compense :
+
+\equationajustee{\boxed{T_i=\tau_m=1\ \text{s}}}
+
+La boucle ouverte devient un intégrateur pur :
+
+\equationajustee{\boxed{\begin{aligned}H_{BO}(p)&=\frac{K_{BO}}{p}\\ K_{BO}&=\frac{K_pK_qK_vK_mK_{pom}}{T_i}\\ &=9\cdot10^{-4}K_p\ \ (\mathrm{s^{-1}})\end{aligned}}}
+
+C'est bien la valeur que l'énoncé donne à la question Q17.
+
+\begin{piege}
+
+La compensation est une simplification exacte du modèle. En pratique, \(\tau_m\) n'est connu qu'approximativement et la simplification reste imparfaite.
+
+\end{piege}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Rappeler les définitions avec les pulsations où elles s'évaluent. Quelle est la phase d'un intégrateur pur ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+La marge de gain s'évalue à la pulsation \(\omega_{180}\) où \(\arg H_{BO}=-180^\circ\). La marge de phase s'évalue à la pulsation \(\omega_{0\,\text{dB}}\) où \(|H_{BO}|=1\) :
+
+\equationajustee{\begin{aligned}
+MG&=-20\log|H_{BO}(j\omega_{180})|\\
+MP&=180^\circ+\arg H_{BO}(j\omega_{0\,\text{dB}})
+\end{aligned}}
+
+Pour \(H_{BO}=K_{BO}/p\), la phase vaut \(-90^\circ\) à toute pulsation et n'atteint jamais \(-180^\circ\). Donc \(\boxed{MG=+\infty>10\ \text{dB}}\).
+
+Le gain coupe 0 dB en \(\omega_{0\,\text{dB}}=K_{BO}\), donc \(\boxed{MP=90^\circ>45^\circ}\). Les deux critères sont respectés, quel que soit \(K_p>0\).
+
+\begin{piege}
+
+« La marge de gain n'existe pas » ne veut pas dire « critère non respecté » : la phase n'atteignant jamais \(-180^\circ\), la marge est infinie.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « La plupart des candidats ne connaissent pas les définitions des marges de gain et de phase. » C'est une question de cours discriminante : écrire les deux définitions, avec la pulsation où chacune s'évalue, avant de les appliquer.
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Le retour n'est pas unitaire : partir de \(H_1=K_aG/(1+K_qG)\) et utiliser le réglage de Q10.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quel est l'ordre du système bouclé ? Un tel système peut-il présenter un dépassement ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Avec \(K_qG=H_{BO}\) et \(K_a=K_q\) :
+
+\equationajustee{\begin{aligned}
+H_{BF}(p)&=\frac{K_a}{K_q}\cdot\frac{K_{BO}/p}{1+K_{BO}/p}\\
+&=\frac{K_{BO}}{p+K_{BO}}\\
+&=\frac{1}{1+\dfrac{p}{K_{BO}}}
+\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}H_{BF}(p)&=\frac{1}{1+\tau_{BF}\,p}\\ \tau_{BF}&=\frac{1}{K_{BO}}\end{aligned}}}
+
+Premier ordre de gain statique 1 : la réponse indicielle \(Q_{c0}\big(1-e^{-t/\tau_{BF}}\big)\) est strictement croissante, donc \textbf{sans dépassement}. Le critère d'amortissement est respecté.
+
+\begin{methode}
+
+Un intégrateur pur bouclé par un retour proportionnel donne toujours un premier ordre : stable, sans dépassement, de constante de temps \(1/K_{BO}\).
+
+\end{methode}
+
+\begin{jury}
+
+Rapport 2026 : « Attention à bien identifier l'expression du gain. » Sous forme canonique, le gain statique vaut 1 (grâce à \(K_a=K_q\)) et la constante de temps vaut \(1/K_{BO}\) : ne pas confondre \(K_{BO}\) avec le gain de la boucle fermée.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Temps de réponse à 5 \% d'un premier ordre : combien de constantes de temps ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Pour un premier ordre, \(t_{r5\%}=\tau_{BF}\ln20\simeq3/K_{BO}\). L'exigence \(t_{r5\%}<1\) s donne donc :
+
+\equationajustee{\begin{aligned}
+K_{BO}&>3\ \mathrm{s^{-1}}\\
+9\cdot10^{-4}K_p&>3
+\end{aligned}}
+
+\equationajustee{\boxed{K_{p,\min}=\frac{3}{9\cdot10^{-4}}\simeq3{,}3\cdot10^3}}
+
+Les marges, l'absence de dépassement et la précision ne dépendent pas de \(K_p\) : toutes les exigences sont satisfaites dès que \(K_p>3{,}3\cdot10^3\).
+
+\begin{piege}
+
+\(t_{r5\%}\) diminue quand \(K_{BO}\) augmente : l'exigence donne une borne \textbf{inférieure} sur \(K_p\). Et la question demande une valeur : il faut conclure par un nombre.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Peu traitée mais bien réussie par les candidats ayant abordé la question. » Deux lignes de calcul suffisent : c'est un point à prendre même en fin de partie.
+
+\end{jury}
+
+\hypertarget{partie-ii-ruxe9gulation-des-paramuxe8tres-physico-chimiques-de-leau}{%
+\section{Partie II --- Régulation des paramètres physico-chimiques de l'eau}\label{partie-ii-ruxe9gulation-des-paramuxe8tres-physico-chimiques-de-leau}}
+
+On suit l'élément chlore : produit par électrolyse, il se dismute en acide hypochloreux désinfectant, qui est détruit par les UV. On le mesure par une sonde redox et on modélise sa concentration au cours de la journée. Outils : oxydoréduction, E-pH, Beer-Lambert, bilan de matière, Euler.
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Écrire la dissolution du sel pour justifier la stœchiométrie, puis diviser le titre massique par la bonne masse molaire.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\(M(\mathrm{NaCl})=23{,}0+35{,}5=58{,}5\ \mathrm{g\cdot mol^{-1}}\). La dissolution \(\mathrm{NaCl(s)}\to\mathrm{Na^+}+\mathrm{Cl^-}\) est totale et libère une mole d'ions chlorure par mole de sel. La concentration en ions \(\mathrm{Cl^-}\) est donc égale à la concentration apportée en sel :
+
+\equationajustee{\begin{aligned}
+c_0&=\frac{c_m}{M(\mathrm{NaCl})}\\
+&=\frac{5{,}0}{58{,}5}\ \mathrm{mol\cdot L^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{c_0\simeq8{,}5\cdot10^{-2}\ \mathrm{mol\cdot L^{-1}}}}
+
+\begin{piege}
+
+Le rapport 2026 relève « Des confusions entre concentration apportée en soluté et concentration molaire en ions. » Ici elles sont égales, mais il faut le justifier par la stœchiométrie de la dissolution. Diviser par \(M(\mathrm{Cl})=35{,}5\) seule surestime \(c_0\) de 65 \% : la masse dissoute est celle du sel.
+
+\end{piege}
+
+\begin{jury}
+
+Le jury reproche une « Application numérique souvent trop arrondie témoignant d'un certain manque de rigueur » (rapport 2026). On garde deux chiffres significatifs, comme la donnée : 5,0/58,5 ≈ 0,085, et non 0,1.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Comparer à la salinité de l'eau de mer, que l'on connaît à peu près.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+L'eau contient \(5\ \mathrm{g\cdot L^{-1}}\) de chlorure de sodium dissous, c'est-à-dire des ions \(\mathrm{Na^+}\) et \(\mathrm{Cl^-}\) : c'est le sel de l'eau de mer. La salinité de la mer est d'environ \(35\ \mathrm{g\cdot L^{-1}}\). Sept fois moins salée que la mer, l'eau a un \textbf{goût salé perceptible mais léger}.
+
+\begin{piege}
+
+D'après le rapport 2026, de nombreux candidats attribuent le goût salé au seul chlore ou au seul sodium. C'est le sel dissous, l'ensemble des ions sodium et chlorure, qui donne ce goût, et non le chlore actif.
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Identifier l'oxydation à l'anode et la réduction à la cathode (l'eau ou les ions sodium ?).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Relier l'intensité au débit d'électrons avec \(F\), puis appliquer la stœchiométrie de la demi-équation.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+Demi-équations :
+
+\begin{itemize}
+\tightlist
+\item
+  anode (oxydation) : \(2\,\mathrm{Cl^-}=\mathrm{Cl_2}+2e^-\) ;
+\item
+  cathode (réduction de l'eau) : \(2\,\mathrm{H_2O}+2e^-=\mathrm{H_2}+2\,\mathrm{HO^-}\).
+\end{itemize}
+
+Équation-bilan, sans électron :
+
+\equationajustee{\boxed{2\,\mathrm{Cl^-}+2\,\mathrm{H_2O}\longrightarrow\mathrm{Cl_2}+\mathrm{H_2}+2\,\mathrm{HO^-}}}
+
+Intensité d'électrolyse :
+
+\equationajustee{\begin{aligned}
+I&=jS\\
+&=4{,}0\cdot10^3\times20\cdot10^{-4}\ \text{A}\\
+&=8{,}0\ \text{A}
+\end{aligned}}
+
+Il faut deux électrons par molécule de \(\mathrm{Cl_2}\) :
+
+\equationajustee{\begin{aligned}
+v(\mathrm{Cl_2})&=\frac{I}{2F}\\
+&=\frac{8{,}0}{1{,}93\cdot10^5}\ \mathrm{mol\cdot s^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{v(\mathrm{Cl_2})\simeq4{,}1\cdot10^{-5}\ \mathrm{mol\cdot s^{-1}}}}
+
+soit \(0{,}15\ \mathrm{mol\cdot h^{-1}}\).
+
+\begin{piege}
+
+\(20\ \mathrm{cm^2}=20\cdot10^{-4}\ \mathrm m^2\), pas \(20\cdot10^{-2}\). On retrouve \(I=8\) A à la ligne 1 du programme de la figure 10 : bon contrôle.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Question mal réussie, régulièrement sautée. De nombreux candidats confondent équation-bilan et demi-équation d'oxydoréduction. » Écrire les deux demi-équations, puis leur somme sans électron : c'est cette somme qui est l'équation-bilan demandée.
+
+\end{jury}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Calculer le nombre d'oxydation du chlore dans chaque espèce : plus il est grand, plus le domaine est haut.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une frontière verticale ne fait intervenir aucun électron. Les pentes des autres frontières permettent de vérifier l'attribution.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Nombres d'oxydation du chlore : −I dans \(\mathrm{Cl^-}\), 0 dans \(\mathrm{Cl_2}\), +I dans \(\mathrm{HClO}\) et \(\mathrm{ClO^-}\).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{III = \(\mathrm{Cl^-}\)} : domaine le plus bas.
+\item
+  \textbf{I = \(\mathrm{HClO}\)}, \textbf{IV = \(\mathrm{ClO^-}\)} : domaines supérieurs séparés par une verticale (frontière acido-basique), forme acide à gauche.
+\item
+  \textbf{II = \(\mathrm{Cl_2}\)} : degré intermédiaire, entre \(\mathrm{Cl^-}\) et \(\mathrm{HClO}\), en milieu très acide.
+\end{itemize}
+
+Vérification par les pentes, \(-0{,}06\,m/n\) V par unité de pH pour \(m\) protons et \(n\) électrons :
+
+\begin{itemize}
+\tightlist
+\item
+  II/III, \(\mathrm{Cl_2}+2e^-=2\,\mathrm{Cl^-}\), sans proton : horizontale ;
+\item
+  I/II, \(2\,\mathrm{HClO}+2\,\mathrm{H^+}+2e^-=\mathrm{Cl_2}+2\,\mathrm{H_2O}\) : pente \(-0{,}06\) V ;
+\item
+  I/III, \(\mathrm{HClO}+\mathrm{H^+}+2e^-=\mathrm{Cl^-}+\mathrm{H_2O}\) : pente \(-0{,}03\) V ;
+\item
+  IV/III, \(\mathrm{ClO^-}+2\,\mathrm{H^+}+2e^-=\mathrm{Cl^-}+\mathrm{H_2O}\) : pente \(-0{,}06\) V.
+\end{itemize}
+
+Ces valeurs correspondent à la figure 5.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q21-diagramme-e-ph.pdf}
+\caption*{Figure 3 --- Diagramme E-pH du chlore : domaines attribués, droite
+O₂/H₂O et pH de travail 7,2}
+\end{figure}
+
+\begin{methode}
+
+Attribuer les domaines d'un diagramme E-pH : nombre d'oxydation croissant vers le haut, forme acide à gauche d'une frontière verticale, puis contrôle par les pentes \(-0{,}06\,m/n\).
+
+\end{methode}
+
+\begin{piege}
+
+Mettre \(\mathrm{Cl_2}\) tout en haut « parce que c'est un oxydant fort » : \(\mathrm{HClO}\), de degré +I, est au-dessus.
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Que vaut le pH sur la frontière entre la forme acide et la forme basique ?
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Sur la verticale I/IV, les deux formes ont la même concentration, donc \(\mathrm{pH}=\mathrm pK_a\). Elle se situe aux sept huitièmes de l'intervalle \([4;8]\) :
+
+\equationajustee{\boxed{\mathrm pK_a\simeq7{,}5}}
+
+Cette valeur est confirmée par la donnée \(10^{-0,3}=0{,}5\) de Q25, puisque 7,2 − 7,5 = −0,3.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Superposer au diagramme la frontière du couple \(\mathrm{O_2/H_2O}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Des domaines disjoints signifient une réaction thermodynamiquement favorable. Pourquoi ne l'observe-t-on pas ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+La frontière du couple \(\mathrm{O_2/H_2O}\) est la droite \(E=1{,}23-0{,}06\,\mathrm{pH}\). Les domaines de \(\mathrm{HClO}\) et \(\mathrm{ClO^-}\) sont entièrement au-dessus :
+
+\begin{itemize}
+\tightlist
+\item
+  à pH 7,2, au-dessus de 1,24 V pour \(\mathrm{HClO}\), contre 0,80 V pour l'eau ;
+\item
+  à pH 14, 0,84 V contre 0,39 V.
+\end{itemize}
+
+Domaines disjoints : \textbf{\(\mathrm{HClO}\) et \(\mathrm{ClO^-}\) oxydent l'eau}.
+
+\equationajustee{2\,\mathrm{HClO}\longrightarrow2\,\mathrm{Cl^-}+\mathrm{O_2}+2\,\mathrm{H^+}}
+
+\equationajustee{2\,\mathrm{ClO^-}\longrightarrow2\,\mathrm{Cl^-}+\mathrm{O_2}}
+
+On peut les négliger parce qu'elles sont \textbf{cinétiquement bloquées} : l'oxydation de l'eau en dioxygène est très lente (fort surpotentiel d'oxydation de l'eau, système lent). Ces espèces sont métastables, comme l'eau de Javel, qui se conserve des mois.
+
+\begin{methode}
+
+Thermodynamiquement possible ne veut pas dire observé. Quand une prévision E-pH contredit l'expérience, l'explication attendue est cinétique.
+
+\end{methode}
+
+\begin{jury}
+
+Rapport 2026 : « L'argument sur la séparation des zones est globalement connu. La proposition de réaction lente est rare. » La seconde moitié de la question, « Proposer une explication », attend précisément l'argument cinétique.
+
+\end{jury}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Le dichlore est l'oxydant d'un couple et le réducteur d'un autre. Comparer les deux frontières à pH 7,2.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\(\mathrm{Cl_2}\) n'existe que si \(E>1{,}45\) V (frontière \(\mathrm{Cl_2/Cl^-}\)) et \(E<1{,}53-0{,}06\,\mathrm{pH}\) (frontière \(\mathrm{HClO/Cl_2}\)). Ces conditions sont incompatibles au-delà de pH 1,3 (point A).
+
+À pH 7,2, la seconde frontière est à \(1{,}53-0{,}06\times7{,}2\simeq1{,}10\) V, sous 1,45 V. \textbf{Le dichlore n'est pas stable : il se dismute}, car les domaines de \(\mathrm{HClO}\) et de \(\mathrm{Cl^-}\) ont une partie commune :
+
+\equationajustee{\boxed{\mathrm{Cl_2}+\mathrm{H_2O}\longrightarrow\mathrm{HClO}+\mathrm{Cl^-}+\mathrm{H^+}}}
+
+À pH \(7{,}2<\mathrm pK_a\), c'est bien \(\mathrm{HClO}\) qui est majoritaire parmi les espèces de degré +I.
+
+\begin{piege}
+
+Rapport 2026 : « La réaction correcte est rarement proposée. Certaines réactions ne font même pas intervenir le dichlore. » La dismutation part de \(\mathrm{Cl_2}\) et donne les deux espèces voisines, \(\mathrm{HClO}\) et \(\mathrm{Cl^-}\). Il faut écrire le \(\mathrm{H^+}\) produit : il sert à la question 27. Et c'est une dismutation, pas une médiamutation (réaction inverse).
+
+\end{piege}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Le rapport \([\mathrm{ClO^-}]/[\mathrm{HClO}]\) ne dépend que de \(\mathrm{pH}-\mathrm pK_a\). La donnée \(10^{-0,3}\) indique la démarche.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Le rapport des deux formes ne dépend que de l'écart au \(\mathrm pK_a\) :
+
+\equationajustee{\frac{[\mathrm{ClO^-}]}{[\mathrm{HClO}]}=10^{\mathrm{pH}-\mathrm pK_a}}
+
+Avec \(c_t=[\mathrm{HClO}]+[\mathrm{ClO^-}]\), on écrit d'abord le résultat littéral, puis l'application numérique :
+
+\equationajustee{\begin{aligned}
+[\mathrm{HClO}]&=\frac{c_t}{1+10^{\mathrm{pH}-\mathrm pK_a}}\\
+&=\frac{60}{1+10^{-0,3}}\ \mu\mathrm{mol\cdot L^{-1}}\\
+&=\frac{60}{1{,}5}\ \mu\mathrm{mol\cdot L^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{[\mathrm{HClO}]=40\ \mu\mathrm{mol\cdot L^{-1}}}}
+
+\textbf{L'eau est bien désinfectée}, à la limite haute de la plage \([10;40]\ \mu\mathrm{mol\cdot L^{-1}}\). Une hausse du pH ferait baisser la fraction de \(\mathrm{HClO}\) : d'où l'importance de réguler le pH.
+
+\begin{piege}
+
+Confondre le rapport (0,5) et la fraction d'acide hypochloreux (1/1,5 = 2/3).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Beaucoup de mélanges entre relations littérales et numériques rendent la rédaction particulièrement difficile à comprendre. » Une relation littérale d'abord, puis une ligne d'application numérique avec l'unité.
+
+\end{jury}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+La tension mesurée est la différence entre le potentiel de l'électrode de platine et celui de la référence.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire la demi-équation du couple \(\mathrm{HClO/Cl^-}\) en milieu acide et compter les électrons avant d'écrire Nernst.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+La tension mesurée est \(U=E_{\mathrm{Pt}}-E_{ref}\). Demi-équation du couple, écrite en milieu acide (c'est à elle que se rapporte \(E^\circ=1{,}49\) V) :
+
+\equationajustee{\mathrm{HClO}+\mathrm{H^+}+2e^-=\mathrm{Cl^-}+\mathrm{H_2O}}
+
+Formule de Nernst à 25 °C, concentrations rapportées à \(c^\circ=1\ \mathrm{mol\cdot L^{-1}}\) :
+
+\equationajustee{E_{\mathrm{Pt}}=E^\circ+\frac{0{,}06}{2}\log\frac{[\mathrm{HClO}][\mathrm{H^+}]}{[\mathrm{Cl^-}]}}
+
+Avec \([\mathrm{Cl^-}]=c_0\) constant (Q43) :
+
+\equationajustee{\boxed{U=E^\circ-E_{ref}-0{,}03\,\mathrm{pH}+0{,}03\log\frac{[\mathrm{HClO}]}{c_0}}}
+
+Pour pH 7,2 et \([\mathrm{HClO}]\) entre 10 et \(40\ \mu\mathrm{mol\cdot L^{-1}}\), on obtient \(957\ \text{mV}<U<975\ \text{mV}\).
+
+\textbf{Erreur d'énoncé à signaler.} L'intervalle annoncé, de 633 à 669 mV, se retrouve (634 et 670 mV) avec le coefficient \(0{,}059\) au lieu de \(0{,}059/2\), c'est-à-dire avec un seul électron. Or \(n=2\) : la pente \(-0{,}03\) V/pH de la frontière I/III (Q21) le confirme. On garde l'expression juste et on poursuit avec l'intervalle de l'énoncé, qui a servi à construire la figure 11.
+
+\begin{piege}
+
+D'après le rapport 2026, trop de candidats utilisent le potentiel standard du couple avec une demi-équation équilibrée avec des ions hydroxyde. La valeur \(E^\circ=1{,}49\) V correspond à l'écriture en milieu acide, avec \(\mathrm{H^+}\) : en changeant d'écriture, on change de potentiel standard.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « La demi-équation doit être indiquée avant d'écrire la formule de Nernst. » Par ailleurs, la consigne de l'épreuve demande de signaler une erreur d'énoncé et d'expliquer les initiatives prises : une phrase claire, avec le calcul qui la justifie, vaut mieux qu'un résultat ajusté pour tomber sur la valeur attendue.
+
+\end{jury}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Que devient le dichlore au pH de la piscine ? Quelle espèce acido-basique la réaction libère-t-elle ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Penser à la conséquence d'une dérive du pH sur la répartition entre \(\mathrm{HClO}\) et \(\mathrm{ClO^-}\), et à la suite du sujet.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+La production de dichlore s'accompagne de sa dismutation (Q24), qui libère un ion \(\mathrm{H^+}\) par molécule de \(\mathrm{Cl_2}\) :
+
+\equationajustee{\mathrm{Cl_2}+\mathrm{H_2O}\longrightarrow\mathrm{HClO}+\mathrm{Cl^-}+\mathrm{H^+}}
+
+\textbf{La production de dichlore acidifie l'eau : le pH diminue.}
+
+Conséquence : le pH sort de la plage \([7{,}0;7{,}4]\) fixée pour le confort des baigneurs. La fraction d'acide hypochloreux change aussi (Q25), donc l'efficacité de la désinfection. \textbf{Il faut mesurer le pH en continu et injecter un correcteur} avec la pompe péristaltique, ce qui justifie la chaîne de mesure étudiée ensuite.
+
+Remarque : la cathode produit deux \(\mathrm{HO^-}\) par \(\mathrm{Cl_2}\). Le bilan global de l'électrolyseur, \(\mathrm{Cl^-}+2\,\mathrm{H_2O}\to\mathrm{HClO}+\mathrm{H_2}+\mathrm{HO^-}\), est donc basique, et c'est ce qu'on observe en pratique sur les électrolyseurs au sel. La conséquence reste la même : le pH dérive et doit être régulé.
+
+\begin{piege}
+
+Préciser le périmètre du raisonnement (dismutation du dichlore, comme le demande la question, ou électrolyseur complet) : les deux bilans ne donnent pas le même sens de variation.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « La réponse est très rarement justifiée voir donnée au hasard. » Le sens de variation du pH doit s'appuyer sur une équation écrite, ici celle de Q24 avec son \(\mathrm{H^+}\).
+
+\end{jury}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Quelle est la nature de chaque signal (chimique, électrique, analogique, numérique) ? Qui exploite l'information en bout de chaîne ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Gain = variation de la sortie / variation de l'entrée sur la plage utile. Sur 12 bits, combien de valeurs possibles ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Il faut distinguer la nature du signal de son unité.
+
+\begin{itemize}
+\tightlist
+\item
+  Entrée du capteur : le pH, grandeur physico-chimique, sans unité.
+\item
+  Sortie : la tension \(U\), en volts. C'est un signal électrique \textbf{analogique}, continu en temps et en amplitude.
+\end{itemize}
+
+Le boîtier est un calculateur \textbf{numérique} (affichage, commande de la pompe) : il ne traite que des nombres binaires. La fonction du \textbf{CAN} est de convertir le signal analogique en un nombre \(N\) codé sur 12 bits, par échantillonnage puis quantification.
+
+Chaque gain est le rapport des étendues de sortie et d'entrée :
+
+\equationajustee{\boxed{\begin{aligned}K_{cap}&=\frac{10}{14}\simeq0{,}71\ \text{V par \text{unité} de pH}\\ K_{CAN}&=\frac{2^{12}}{10}\simeq4{,}1\cdot10^2\ \mathrm{V^{-1}}\end{aligned}}}
+
+La convention \((2^{12}-1)/10\) donne le même résultat à 0,02 \% près.
+
+\begin{jury}
+
+Rapport 2026 : « De nombreux candidats confondent unité physique et nature du signal. La fonction principale d'un CAN n'est pas bien connue. » « Volt » est une unité ; « analogique » ou « numérique » est une nature. Le CAN convertit un signal analogique en signal numérique exploitable par le calculateur.
+
+\end{jury}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+La plus petite variation mesurable fait changer \(N\) d'une unité. La ramener à l'entrée par les gains.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+La plus petite variation mesurable fait changer \(N\) d'une unité. On la ramène à l'entrée par les deux gains :
+
+\equationajustee{\begin{aligned}
+\Delta{\mathrm{pH}}_{\min}&=\frac{1}{K_{cap}K_{CAN}}\\
+&=\frac{14}{4096}
+\end{aligned}}
+
+\equationajustee{\boxed{\Delta{\mathrm{pH}}_{\min}\simeq3{,}4\cdot10^{-3}}}
+
+C'est environ 30 fois plus fin que les 0,1 requis : \textbf{la chaîne de mesure est pertinente}, et la numérisation n'est pas le facteur limitant.
+
+\begin{piege}
+
+Le rapport 2026 signale quelques copies qui concluent que la mesure est trop précise et qu'il faudrait réduire le nombre de bits. Une résolution meilleure que nécessaire n'est pas un défaut : le cahier des charges est respecté avec de la marge. Et la résolution n'est pas la précision, qui dépend surtout de l'électrode (étalonnage, dérive, température).
+
+\end{piege}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Loi de cours : préciser le logarithme utilisé et l'unité de chaque grandeur.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+Pour une solution diluée traversée sur une longueur \(\ell\) par un rayonnement monochromatique, les absorbances des espèces s'ajoutent :
+
+\equationajustee{\boxed{A=\log\frac{I_0}{I}=\sum_i\varepsilon_i\,\ell\,c_i}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\) : absorbance, sans unité ;
+\item
+  \(I_0\), \(I\) : intensités incidente et transmise, en \(\mathrm{W\cdot m^{-2}}\) ;
+\item
+  \(\varepsilon_i\) : coefficient d'absorption molaire, en \(\mathrm{L\cdot mol^{-1}\cdot cm^{-1}}\) ;
+\item
+  \(\ell\) : longueur traversée, en cm ;
+\item
+  \(c_i\) : concentration, en \(\mathrm{mol\cdot L^{-1}}\).
+\end{itemize}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Identifier les courbes avec la légende (trait épais et trait fin) avant de lire.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+À 290 nm, la courbe fine (ion hypochlorite) est presque à son maximum, et la courbe épaisse (acide hypochloreux) sur un épaulement faible :
+
+\equationajustee{\boxed{\begin{aligned}\varepsilon_{\mathrm{ClO^-}}&\simeq3{,}8\cdot10^2\ \mathrm{L\cdot mol^{-1}\cdot cm^{-1}}\\ \varepsilon_{\mathrm{HClO}}&\simeq35\ \mathrm{L\cdot mol^{-1}\cdot cm^{-1}}\end{aligned}}}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Additionner les absorbances des deux formes, puis exprimer \([\mathrm{ClO^-}]\) à l'aide de \(K_a\).
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+Par additivité des absorbances :
+
+\equationajustee{A=\big(\varepsilon_{\mathrm{HClO}}[\mathrm{HClO}]+\varepsilon_{\mathrm{ClO^-}}[\mathrm{ClO^-}]\big)z}
+
+La constante d'acidité donne \([\mathrm{ClO^-}]=\dfrac{K_a}{[\mathrm{H^+}]}[\mathrm{HClO}]\). D'où \(A=\alpha_t[\mathrm{HClO}]\,z\) avec :
+
+\equationajustee{\boxed{\alpha_t=\varepsilon_{\mathrm{HClO}}+\varepsilon_{\mathrm{ClO^-}}\frac{K_a}{[\mathrm{H^+}]}}}
+
+Contrôle à pH 7,2, où \(K_a/[\mathrm{H^+}]=0{,}5\) :
+
+\equationajustee{\begin{aligned}
+\alpha_t&\simeq35+380\times0{,}5\ \mathrm{L\cdot mol^{-1}\cdot cm^{-1}}\\
+&\simeq2{,}2\cdot10^2\ \mathrm{L\cdot mol^{-1}\cdot cm^{-1}}\\
+&=2{,}2\cdot10^4\ \mathrm{L\cdot mol^{-1}\cdot m^{-1}}
+\end{aligned}}
+
+C'est en accord avec la valeur de l'énoncé.
+
+\begin{piege}
+
+Les \(\varepsilon\) sont lus par centimètre et \(\alpha_t\) est donné par mètre : il y a un facteur 100. \(\alpha_t\) dépend du pH : c'est un coefficient effectif.
+
+\end{piege}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Lire \(\alpha_e\) sur l'échelle logarithmique, puis le comparer à une grandeur de même unité.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La grandeur à comparer est \(\alpha_t[\mathrm{HClO}]\) (en m⁻¹), pas \(\alpha_t\) seul.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Sur la figure 8, à 290 nm, la courbe est sur sa partie décroissante entre 200 et 500 nm. On lit \(\alpha_e\simeq0{,}1\) à \(0{,}2\ \mathrm{m^{-1}}\) ; le programme retient \texttt{alpha\_e\ =\ 0.1}.
+
+On compare \(\alpha_e\) au terme de même unité dû au chlore, \(\alpha_t[\mathrm{HClO}]\), sur la plage de désinfection :
+
+\equationajustee{\begin{aligned}
+\alpha_t\times10\ \mu\mathrm{mol\cdot L^{-1}}&\simeq0{,}23\ \mathrm{m^{-1}}\\
+\alpha_t\times40\ \mu\mathrm{mol\cdot L^{-1}}&\simeq0{,}92\ \mathrm{m^{-1}}
+\end{aligned}}
+
+Le terme de l'eau est du même ordre de grandeur : il représente de 10 \% à près de 50 \% de l'absorption totale. \textbf{On ne peut pas négliger l'absorption des UV par l'eau.}
+
+\begin{piege}
+
+Comparer \(\alpha_e\) à \(\alpha_t=2{,}3\cdot10^4\) : les unités diffèrent et la conclusion serait fausse.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Passé la mesure graphique, la justification pour négliger ou pas l'absorption due à l'eau est très rare. » Le jury ajoute que « trop de candidat se contente d'affirmer que c'est négligeable sans comparaison à un autre terme ». Négliger, c'est comparer : il faut deux nombres de même unité.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Les absorptions de l'eau et du chlore s'ajoutent dans le logarithme décimal. Inverser ensuite.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Les absorptions de l'eau et du chlore s'ajoutent, avec \([\mathrm{HClO}]\) uniforme :
+
+\equationajustee{\log\frac{I(0)}{I(z)}=\big(\alpha_e+\alpha_t[\mathrm{HClO}]\big)z}
+
+\equationajustee{\boxed{I(z)=I_0\,10^{-(\alpha_e+\alpha_t[\mathrm{HClO}])\,z}}}
+
+Pour \([\mathrm{HClO}]=33\ \mu\mathrm{mol\cdot L^{-1}}\), il ne reste qu'environ 5 \% de l'intensité au fond, à 1,5 m.
+
+\begin{piege}
+
+Rapport 2026 : « La plupart des candidats ont la dépendance en alpha\_e mais pas celle en alpha\_t. » Les deux absorbants agissent ensemble : l'exposant contient la somme. Écrire \(e^{-(\alpha_e+\alpha_tc)z}\) oublie en outre le facteur \(\ln10\) : la définition est en logarithme décimal.
+
+\end{piege}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Énergie d'un photon en fonction de sa fréquence, puis de sa longueur d'onde.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\equationajustee{\boxed{E=h\nu=\frac{hc}{\lambda}}}
+
+\(E\) énergie d'un photon (J), \(h\) constante de Planck (J·s), \(\nu\) fréquence (Hz), \(c\) vitesse de la lumière dans le vide (\(\mathrm{m\cdot s^{-1}}\)), \(\lambda\) longueur d'onde (m).
+
+À 300 nm, \(E\simeq6{,}6\cdot10^{-19}\) J, soit environ 4 eV, l'ordre de grandeur d'une énergie de liaison.
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Deux absorbants en compétition dans la même tranche \(\mathrm dz\) : la proportion revenant à l'un est le rapport de sa probabilité à la probabilité totale.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\equationajustee{\boxed{\tau=\frac{\alpha_t[\mathrm{HClO}]}{\alpha_e+\alpha_t[\mathrm{HClO}]}}}
+
+Ce rapport est indépendant de \(z\) (milieu uniforme), donc valable pour toute la colonne d'eau. Pour \([\mathrm{HClO}]=33\ \mu\mathrm{mol\cdot L^{-1}}\), \(\tau\simeq0{,}88\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q36-bilan-photons.pdf}
+\caption*{Figure 4 --- Bilan de photons UV dans la colonne d'eau et profil I(z)/I₀
+calculé}
+\end{figure}
+
+\begin{piege}
+
+Une proportion est comprise entre 0 et 1 : \(\alpha_t[\mathrm{HClO}]/\alpha_e\) n'en est pas une.
+
+\end{piege}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Faire un bilan de puissance absorbée dans la colonne d'eau de section \(S_e\), puis compter les photons.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Rendement 1 : un photon absorbé par le chlore détruit une molécule. Passer en moles avec \(\mathcal N_A\).
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+La puissance absorbée dans la colonne vaut \(S_e\big(I(0)-I(L)\big)\), dont la part \(\tau\) par le chlore. Chaque photon porte l'énergie \(hc/\lambda\), et chaque photon absorbé par le chlore détruit une molécule. On divise enfin par \(\mathcal N_A\) :
+
+\equationajustee{\begin{aligned}
+v_d&=\tau\,\frac{S_e\lambda}{hc\,\mathcal N_A}\big(I(0)-I(L)\big)\\
+&=\tau K_d\big(I(0)-I(L)\big)
+\end{aligned}}
+
+\equationajustee{\boxed{K_d=\frac{S_e\,\lambda}{h\,c\,\mathcal N_A}}}
+
+Unités : \(K_d\) en \(\mathrm{mol\cdot m^2\cdot J^{-1}}\) et \(I\) en \(\mathrm{W\cdot m^{-2}}\), donc \(v_d\) en \(\mathrm{mol\cdot s^{-1}}\).
+
+Avec \(\lambda=300\) nm, \(K_d\simeq7{,}0\cdot10^{-5}\ \mathrm{mol\cdot m^2\cdot J^{-1}}\) : c'est ce que code la ligne 12 du programme, multiplié par 3600 pour un temps en heures.
+
+\begin{methode}
+
+Pour passer d'un flux lumineux à une vitesse de réaction : puissance absorbée, puis division par \(hc/\lambda\) pour obtenir des photons par seconde, puis par \(\mathcal N_A\) pour obtenir des moles, multiplié par le rendement quantique.
+
+\end{methode}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Combiner la vitesse de production du dichlore (Q20) et la stœchiométrie de sa dismutation (Q24).
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+L'électrolyseur produit \(\mathrm{Cl_2}\) à la vitesse \(I/(2F)\) (Q20), et chaque molécule se dismute en un \(\mathrm{HClO}\) (Q24) :
+
+\equationajustee{\boxed{v_p=\frac{I}{2F}=\frac{jS}{2F}}}
+
+Soit \(v_p\simeq4{,}1\cdot10^{-5}\ \mathrm{mol\cdot s^{-1}}\), ou \(0{,}15\ \mathrm{mol\cdot h^{-1}}\) (ligne 7 du programme).
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Variation de la quantité de matière dans le bassin = production − disparition. L'électrolyseur ne fonctionne pas en permanence.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Remplacer \(\tau\) et \(I(L)\) par leurs expressions en fonction de \(c\), pour que l'équation ne contienne que l'inconnue \(c\).
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+Bilan de matière sur le bassin, de volume \(V\) constant. On note \(e(t)\in\{0,1\}\) l'état de l'électrolyseur :
+
+\equationajustee{\mathrm d(cV)=e(t)\,v_p\,\mathrm dt-v_d\,\mathrm dt}
+
+On reporte \(\tau\) (Q36), \(v_d\) (Q37) et \(I(L)\) (Q34) :
+
+\equationajustee{\boxed{V\frac{\mathrm dc}{\mathrm dt}=e(t)\frac{I}{2F}-\frac{\alpha_t\,c}{\alpha_e+\alpha_t\,c}\,K_d\,I_0(t)\left[1-10^{-(\alpha_e+\alpha_t c)L}\right]}\qquad(1)}
+
+Équation du premier ordre, non linéaire et non autonome : on la résout numériquement. Ordre de grandeur en plein soleil : \(v_d\simeq0{,}27\ \mathrm{mol\cdot h^{-1}}\), plus que \(v_p=0{,}15\ \mathrm{mol\cdot h^{-1}}\). La concentration baisse donc même électrolyseur allumé.
+
+\begin{piege}
+
+Oublier \(V\) rend l'équation non homogène : \(v_p\) et \(v_d\) sont en \(\mathrm{mol\cdot s^{-1}}\), \(c\) est une concentration.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 indique que les questions Q36 à Q39 ont été peu traitées. Elles s'enchaînent pourtant : chaque résultat se reporte dans le suivant, et l'équation (1) n'est que leur assemblage.
+
+\end{jury}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Relier la courbe au mouvement apparent du Soleil. Pourquoi le maximum est-il à 14 h en été ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La courbe est parfaitement lisse : à quel temps qu'il fait correspond-elle ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+Intensité nulle la nuit (avant 6 h environ, après 22 h), puis une cloche maximale vers 14 h, à \(1{,}3\ \mathrm{W\cdot m^{-2}}\). L'éclairement d'une surface horizontale croît avec la hauteur du Soleil, et un Soleil bas traverse plus d'atmosphère, où l'ozone absorbe l'UV. Le maximum est au midi solaire, vers 14 h en heure d'été (UTC+2).
+
+\textbf{Phénomène non pris en compte : la couverture nuageuse} (la variabilité météorologique). La courbe décrit un ciel clair idéal.
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Euler explicite : \(c_{k+1}=c_k+\Delta t\cdot\dfrac{\mathrm dc}{\mathrm dt}(t_k,\allowbreak c_k)\), avec la dérivée tirée de (1).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\texttt{c} est une liste : \texttt{c\ +=\ {[}...{]}} ajoute un élément. Les fonctions \texttt{electrolyseur} et \texttt{phi} attendent un temps, pas un indice.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\begin{lstlisting}[language=Python]
+for k in range(0, len(T)-1) :
+
+    c += [c[k] + dt*(electrolyseur(T[k])*v_p
+                     - K_d*phi(T[k])*alpha_t*c[k]/(alpha_e + alpha_t*c[k])
+                       *(1 - 10**(-(alpha_e + alpha_t*c[k])*L)))/V]
+\end{lstlisting}
+
+\textbf{Signalement.} \texttt{V\ =\ 1.5*S\_eau} vaut 42 (en m³), alors que \texttt{c} est en \(\mathrm{mol\cdot L^{-1}}\) (\texttt{alpha\_t*c} doit être en m⁻¹, comme \texttt{alpha\_e}). Il faut diviser par \texttt{V*1000}, le volume en litres. Sans cette correction, la concentration varie mille fois trop vite.
+
+Avec elle, la simulation sur une journée donne des concentrations de l'ordre de \(2\cdot10^{-5}\) à \(4\cdot10^{-5}\ \mathrm{mol\cdot L^{-1}}\). Elles restent dans la plage de désinfection, ce qui est cohérent avec la figure 11.
+
+\begin{piege}
+
+\texttt{c\ +=\ c{[}k{]}\ +\ ...} sans crochets lève une erreur (on ne peut pas ajouter un flottant à une liste). Utiliser \texttt{c{[}k+1{]}} à droite échoue aussi : l'élément n'existe pas encore.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Peu traitée, très peu de résultats sans erreurs. » Pour limiter les erreurs, écrire d'abord la relation de récurrence en mathématiques, puis la traduire terme à terme en reprenant les noms de variables du programme.
+
+\end{jury}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Lire le minimum et le maximum de la figure 11 et regarder l'unité réelle des graduations.
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+Les valeurs vont de 0,634 à 0,666 : ce sont des volts, malgré la légende « mV ». On a donc \(634\ \text{mV}\le U\le666\ \text{mV}\), et :
+
+\equationajustee{\boxed{[634;666]\ \text{mV}\subset[633;669]\ \text{mV}}}
+
+\textbf{Les valeurs sont conformes} : la concentration en acide hypochloreux reste dans la plage de désinfection toute la journée, au plus bas vers 17--18 h après la photolyse diurne.
+
+Le modèle suit bien les mesures. Il est légèrement au-dessus des points de 13 h à 22 h, donc sous-estime un peu la disparition du chlore (consommation par les matières organiques, non modélisée). Avec l'expression correcte de Q26, l'intervalle serait \([957;975]\) mV : on compare ici dans la convention commune à l'énoncé et à la figure.
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Suivre l'élément chlore dans toutes les réactions du modèle : que devient-il après la photolyse ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer l'ordre de grandeur de \(c_t\) à celui de \(c_0\). Pour la réalité : le bassin est-il fermé ?
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+Dans le modèle, l'élément chlore suit un cycle :
+
+\begin{itemize}
+\tightlist
+\item
+  l'électrolyse et la dismutation consomment un \(\mathrm{Cl^-}\) par \(\mathrm{HClO}\) formé ;
+\item
+  la photolyse en restitue un.
+\end{itemize}
+
+La somme \([\mathrm{Cl^-}]+[\mathrm{HClO}]+[\mathrm{ClO^-}]\) est donc constante. \([\mathrm{Cl^-}]\) varie au plus de \(c_t\sim6\cdot10^{-5}\ \mathrm{mol\cdot L^{-1}}\), soit moins de 0,1 \% de \(c_0=8{,}5\cdot10^{-2}\ \mathrm{mol\cdot L^{-1}}\) : \textbf{la concentration en ions chlorure reste constante}.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q43-cycle-chlore.pdf}
+\caption*{Figure 5 --- Cycle de l'élément chlore dans le modèle : électrolyse,
+dismutation, photolyse}
+\end{figure}
+
+En réalité, le bassin perd de l'eau salée (lavage du filtre à contre-courant, éclaboussures, baigneurs, débordements, vidanges partielles). Une partie du chlore sort du cycle (chloramines, chlorates), et les appoints d'eau douce diluent le sel. La salinité baisse lentement : on la contrôle au moins une fois par saison et on rajoute du sel.
+
+\begin{jury}
+
+Rapport 2026 : « Réponses souvent à côté. » La question a deux temps : un argument de conservation de l'élément chlore dans le modèle, avec une comparaison d'ordres de grandeur, puis une cause réelle de perte de sel.
+
+\end{jury}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Repérer les instants des fronts sur la figure 12 et additionner les durées à l'état 1.
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+L'électrolyseur est allumé de 0 h à 2 h et de 11 h à 24 h :
+
+\equationajustee{\begin{aligned}
+\Delta t_{on}&=2+13\ \text{h}\\
+&=15\ \text{h}
+\end{aligned}}
+
+\equationajustee{\boxed{\Delta t_{on}=15\ \text{h}}}
+
+Contrôle croisé : sur la figure 11, la concentration reste à peu près constante la nuit, électrolyseur éteint (entre 2 h et 8 h).
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Identifier les réactions réellement mises en jeu à chaque électrode : à l'anode, celle qui démarre au potentiel le plus bas ; à la cathode, celle qui démarre au potentiel le plus haut.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lire les potentiels à \(+4\) et \(-4\ \mathrm{kA\cdot m^{-2}}\) ; la tension est leur différence. Énergie = puissance × durée de fonctionnement.
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+À l'anode, l'oxydation de \(\mathrm{Cl^-}\) démarre vers 1,4 V, avant celle de l'eau (vers 1,7 V). À la cathode, l'eau est réduite dès \(-0{,}8\) V, bien avant \(\mathrm{Na^+}\) (vers \(-2{,}7\) V).
+
+Le même courant traverse les deux électrodes, de même surface : on lit les deux potentiels à la même densité de courant, en valeur absolue. Un carreau vaut 0,2 V et \(1\ \mathrm{kA\cdot m^{-2}}\). À \(|j|=4{,}0\ \mathrm{kA\cdot m^{-2}}\), on lit \(E_a\simeq+1{,}6\) V et \(E_c\simeq-1{,}3\) V. Sans chute ohmique :
+
+\equationajustee{\begin{aligned}
+U&=E_a-E_c\\
+&\simeq1{,}6-(-1{,}3)\ \text{V}
+\end{aligned}}
+
+\equationajustee{\boxed{U\simeq2{,}9\ \text{V}}}
+
+Puissance pendant le fonctionnement, puis énergie sur 15 h (Q44) :
+
+\equationajustee{\begin{aligned}
+P&=UI\\
+&\simeq2{,}9\times8{,}0\ \text{W}\\
+&\simeq23\ \text{W}\\
+W&=P\,\Delta t_{on}\\
+&\simeq23\times15\ \text{Wh}\\
+&\simeq3{,}5\cdot10^2\ \text{Wh}
+\end{aligned}}
+
+\equationajustee{\boxed{W\simeq0{,}35\ \text{kWh par jour}}}
+
+\begin{piege}
+
+Le kWh mesure une énergie : il faut multiplier la puissance par les 15 h de fonctionnement, pas par 24 h. La tension d'électrolyse est une différence de potentiels, donc ici la somme des deux valeurs absolues. Lire les seuils (1,4 V et −0,8 V) au lieu des potentiels à 4 kA·m⁻² sous-estime la tension.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Peu de candidats relèvent correctement la tension. » Avant de lire, il faut fixer l'échelle des deux axes (valeur d'un carreau) et la densité de courant de fonctionnement.
+
+\end{jury}
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Dans l'équation (1), quel terme dépend de l'éclairement ?
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+Le volet occulte la surface : \(I_0\simeq0\), donc \(v_d\simeq0\). \textbf{La photodégradation du chlore libre par les UV est supprimée.}
+
+Le chlore se maintient sans production, donc l'électrolyseur fonctionne moins longtemps : économie d'électricité (Q45) et moindre usure des électrodes. Effets secondaires : le volet limite l'évaporation et les pertes thermiques, et empêche l'entrée de débris qui consomment du chlore.
+
+\begin{jury}
+
+Rapport 2026 : « Réponses souvent bien vagues. » La réponse attendue est précise : nommer le terme de l'équation (1) qui s'annule, puis la conséquence chiffrable sur la durée de fonctionnement de l'électrolyseur.
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Mécanismes : fermeture géométrique, projection, levée d'ambiguïté par continuité ; un débit moyen sur un cycle se calcule comme volume balayé / période, sans intégrer.
+\item
+  Asservissements : un intégrateur placé en amont de la perturbation annule les deux écarts statiques. La compensation du pôle dominant ramène la boucle ouverte à un intégrateur pur : marge de gain infinie, marge de phase de 90°, boucle fermée du premier ordre, temps de réponse à 5 \% de trois constantes de temps.
+\item
+  Chimie des solutions : attribuer un diagramme E-pH par les nombres d'oxydation puis le vérifier par les pentes ; reconnaître une dismutation et un blocage cinétique ; écrire Nernst après avoir écrit la demi-équation.
+\item
+  Photochimie : Beer-Lambert additif, puis passage de la puissance absorbée à un débit de photons et à une vitesse molaire.
+\item
+  Numérique : écrire un schéma d'Euler sur une liste et vérifier la cohérence des unités du programme fourni.
+\end{itemize}
+
+\textbf{Leçons du rapport 2026.} Les points perdus le sont surtout par manque de justification et par des applications numériques mal conduites. Les questions qui ont départagé les candidats sont celles qui demandent un argument écrit (Q2, Q13, Q23, Q27, Q33), une définition de cours (Q15, Q28), une équation-bilan juste (Q20, Q24) ou une lecture soignée (Q45). Le jury apprécie aussi la présentation : « On note un effort fait par de nombreux candidats pour répondre dans l'ordre aux questions posées et pour encadrer les résultats, ce qui est très apprécié. »
+
+\textbf{Prérequis à revoir.} Théorème de la valeur finale et classe d'un système ; définitions des marges ; nombre d'oxydation et pentes des frontières E-pH ; quantification d'un CAN ; loi de Beer-Lambert avec ses unités.
+
+\textbf{Questions classiques transposables.} Loi entrée-sortie bielle-manivelle (moteurs, compresseurs) ; réglage d'un PI par compensation de pôle ; stabilité d'une espèce dans l'eau et dismutation (chlore, iode, cuivre) ; tension d'électrolyse lue sur des courbes intensité-potentiel ; bilan de matière non linéaire résolu par Euler.
+
+\textbf{Erreurs d'énoncé.} Elles se signalent brièvement, avec le calcul qui les établit, puis on poursuit (Q26, Q41). Cette attitude est explicitement demandée par la consigne.
+
+\end{document}

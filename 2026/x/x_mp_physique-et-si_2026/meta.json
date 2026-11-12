@@ -1,0 +1,38 @@
+{
+  "slug": "x_mp_physique-et-si_2026",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Physique et SI",
+    "annee": 2026
+  },
+  "questions": 37,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q05-courbe-dispersion.svg",
+      "question": "Q5",
+      "legende": "Courbe de dispersion du plasma : coupure en ω_p, asymptote k = ω/c, zones de forte et de faible dispersion"
+    },
+    {
+      "fichier": "figures/q18-graphe-liaisons.svg",
+      "question": "Q18",
+      "legende": "Graphe de liaisons : deux pivots, puis deux sphériques J et I en parallèle entre solides successifs"
+    },
+    {
+      "fichier": "figures/q19-schema-cinematique.svg",
+      "question": "Q19",
+      "legende": "Schéma cinématique en configuration déployée, dans le plan des panneaux"
+    },
+    {
+      "fichier": "figures/q31-schema-bloc.svg",
+      "question": "Q31",
+      "legende": "Schéma de commande complété : boucle de vitesse interne (codeur K_C) et boucle de position à retour unitaire"
+    },
+    {
+      "fichier": "figures/q34-schema-bloc-correcteur.svg",
+      "question": "Q34",
+      "legende": "Schéma de commande avec le correcteur C(p) inséré entre K_G et la boucle de vitesse"
+    }
+  ]
+}

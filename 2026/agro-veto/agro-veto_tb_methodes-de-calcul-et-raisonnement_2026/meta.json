@@ -1,0 +1,28 @@
+{
+  "slug": "agro-veto_tb_methodes-de-calcul-et-raisonnement_2026",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "TB",
+    "matiere": "Méthodes de calcul et raisonnement",
+    "annee": 2026
+  },
+  "questions": 33,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/analyse-q4-q5-integrandes.svg",
+      "question": "Analyse Q4–Q5",
+      "legende": "Les intégrandes x ↦ xⁿeˣ sur l’intervalle de 0 à 1 pour n = 0, 1, 2, 5, 20 : elles s'emboîtent en descendant quand n croît, restent sous la droite y = e, et l'aire Iₙ (ombrée pour n = 2) tend vers 0"
+    },
+    {
+      "fichier": "figures/p1-q3-arbre-pondere.svg",
+      "question": "Probabilités P1 Q3",
+      "legende": "Arbre pondéré des tirages sans remise (N = 3) : chaque nœud montre le contenu de l'urne, et les trois chemins qui mènent à la boule rouge ont la probabilité 1/3"
+    },
+    {
+      "fichier": "figures/p2-q2b-deux-scenarios.svg",
+      "question": "Probabilités P2 Q2.b",
+      "legende": "Les deux scénarios incompatibles qui réalisent (Y = k) : k − 1 tirages d'une même couleur, puis l'autre couleur au k-ième tirage ; P(Y = k) est la somme de leurs probabilités"
+    }
+  ]
+}

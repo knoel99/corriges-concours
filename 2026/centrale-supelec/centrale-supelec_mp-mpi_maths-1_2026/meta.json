@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_mp-mpi_maths-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP-MPI",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 41,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q8-groupe-diedral-hexagone.svg",
+      "question": "Q8",
+      "legende": "𝒟₆ (m = 6) comme groupe des isométries d'un hexagone régulier : 6 rotations ρᵏ et 6 symétries d'axes d'angles π/4 + kπ/6 ; l'axe de ρσ se déduit de celui de σ par une rotation de π/6"
+    },
+    {
+      "fichier": "figures/q20-inclusion-boules.svg",
+      "question": "Q20",
+      "legende": "B ≼ A équivaut à l'inclusion de la boule de A dans celle de B (inclusion renversée) ; pour la réciproque, X est ramené en tX sur le bord de la boule de A"
+    },
+    {
+      "fichier": "figures/q28-ellipse-determinant-maximal.svg",
+      "question": "Q28",
+      "legende": "𝒞, réunion des ellipses Mℬ (M ∈ G), contient ℬ ; parmi les ellipses centrées en 0 qui contiennent 𝒞, dont ℬ(0, R), celle de déterminant maximal est unique"
+    },
+    {
+      "fichier": "figures/q40-denombrement-triangle.svg",
+      "question": "Q40",
+      "legende": "Q40 pour p = 6 : chaque point (i, j) du triangle i + j ≤ p porte ij + 1 valeurs de k, et leur somme vaut 𝒩₆ = 98"
+    }
+  ]
+}

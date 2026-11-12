@@ -1,0 +1,262 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Concours ATS — Français 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · ATS ATS}
+\fancyhead[R]{\small Français 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Concours ATS — Français 2026\par}\medskip
+  {\large ATS · ATS · Français · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Texte support : Stéphanie Chanvallon et Stéphane Héas, « L'Homme et la Nature : en quête/enquête sensible », revue \emph{Natures Sciences Sociétés} (2011). Durée : 4 heures, sans dictionnaire ni appareil électronique. Œuvres au programme ATS (deux œuvres seulement) : Jules Verne, \emph{Vingt mille lieues sous les mers} ; Georges Canguilhem, \emph{La Connaissance de la vie} (introduction, partie I et chapitres 2 à 5 de la partie III).
+
+\hypertarget{ruxe9sumuxe9}{%
+\section{1. Résumé}\label{ruxe9sumuxe9}}
+
+\textbf{Problématique du texte :} au-delà de l'enjeu collectif de l'écologie, que fait à l'individu l'expérience vécue de la Nature ?
+
+Les enjeux écologiques obligent chacun à interroger sa relation à la Nature. Or nos sociétés technicisées ne la côtoient plus \textbar{} que rarement, indirectement : on tente de renouer, mais le vécu individuel échappe. Chacun, comme la société, invente ses natures, éprouvées \textbar{} ailleurs grâce aux voyages. Engageant l'être entier, cette expérience renouvelle le regard, mais surtout reconduit à soi, voire transforme. \textbar{}
+
+L'Occident aime et détruit la Nature ; l'idée d'un homme souverain, ruinée par ses ravages et le brouillage \textbar{} de la frontière animale, cède devant celle d'une espèce solidaire du vivant.
+
+Mieux qu'un militant, il faudrait un \textbar{} habitant conscient des interdépendances qui l'unissent au monde. Car, irréductible au simulacre, au savoir, au politique, la Nature ouvre \textbar{} l'homme à d'autres dimensions de lui-même.
+
+\textbf{Total : 128 mots} (décompte usuel : le mot élidé compte pour un mot, « l'homme » = 2 mots ; un mot composé à trait d'union compte pour un mot).
+
+\hypertarget{dissertation}{%
+\section{2. Dissertation}\label{dissertation}}
+
+\textbf{Problématique :} le rapport privilégié à la Nature nous reconduit-il à nous-mêmes, ou ne nous transforme-t-il qu'en nous délogeant de la place que nous croyions occuper ?
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Lorsque, dans \emph{Vingt mille lieues sous les mers}, les panneaux du salon du Nautilus s'écartent pour la première fois sur la mer illuminée par le fanal du navire, le professeur Aronnax, qui avait consacré un ouvrage savant aux grands fonds sous-marins, mesure soudain la distance entre ce qu'il savait et ce qu'il voit. Le spectacle ne lui apprend pas seulement des espèces : il ébranle le savant lui-même. C'est une expérience de ce genre que décrivent Stéphanie Chanvallon et Stéphane Héas lorsqu'ils affirment qu'« un rapport privilégié avec la Nature non seulement initie à une autre ``façon'' de la voir, mais surtout constitue une rencontre avec soi-même, un retour sur soi bénéfique », et qu'« il permet dans certains cas une véritable transformation de soi ».
+
+La phrase est construite avec soin. Le rapport dont il est question est dit \emph{privilégié} : ce n'est pas le commerce ordinaire avec un paysage, mais une relation rare et intense, qui suppose des conditions que tous ne réunissent pas. Le verbe \emph{initier} appartient au vocabulaire du seuil : on n'apprend pas la Nature comme une leçon, on y est introduit. Les guillemets qui entourent « façon » signalent que l'enjeu dépasse une simple manière de regarder : c'est la forme même que nous donnons à ce que nous voyons qui se trouve modifiée. Surtout, la gradation « non seulement\ldots{} mais surtout » établit une hiérarchie : le gain de connaissance est second, la rencontre avec soi est l'essentiel. Enfin, deux réserves encadrent la thèse : le retour sur soi est déclaré \emph{bénéfique}, ce qui est un jugement de valeur, et la transformation n'est promise que « dans certains cas ».
+
+Or cette thèse recèle une difficulté. Ce qui fait le prix d'une expérience de la Nature, c'est qu'elle nous met en présence de ce qui n'est pas nous : une altérité, une résistance, une indifférence. Si l'essentiel de la rencontre est un retour sur soi, la Nature risque de n'être plus qu'un miroir, un moyen de se découvrir, alors même que les auteurs rappellent, à la fin de leur texte, qu'elle « n'est pas uniquement » une nature recréée, un objet de science ou un environnement instrumentalisé.
+
+Le rapport privilégié à la Nature nous reconduit-il donc à nous-mêmes, ou ne nous transforme-t-il qu'en nous délogeant de la place que nous croyions occuper ? Pour en juger, on confrontera les deux œuvres au programme : \emph{Vingt mille lieues sous les mers} (1869-1870), où Jules Verne fait vivre à quatre hommes une même immersion dans l'océan, et \emph{La Connaissance de la vie} (1952), où Georges Canguilhem pense le rapport du vivant à son milieu et celui du savant au vivant qu'il étudie. Nous verrons d'abord que l'expérience privilégiée de la Nature a bien la structure d'une initiation, qui change le regard et fait retour sur celui qui l'éprouve. Nous montrerons ensuite que ce retour sur soi n'a rien de nécessaire, qu'il n'est pas toujours bénéfique et qu'il peut réduire la Nature au rang de miroir. Nous soutiendrons enfin que ce que l'on rencontre est moins un « soi » que sa condition de vivant, et que la transformation n'est véritable que si cette décentration ouvre à de nouvelles manières de vivre.
+
+\hypertarget{i.-le-rapport-priviluxe9giuxe9-uxe0-la-nature-est-bien-une-initiation-qui-change-le-regard-et-reconduit-le-sujet-uxe0-lui-muxeame}{%
+\subsection{I. Le rapport privilégié à la Nature est bien une initiation qui change le regard et reconduit le sujet à lui-même}\label{i.-le-rapport-priviluxe9giuxe9-uxe0-la-nature-est-bien-une-initiation-qui-change-le-regard-et-reconduit-le-sujet-uxe0-lui-muxeame}}
+
+\textbf{1. Une rupture du regard.} Il faut d'abord accorder aux auteurs que le rapport privilégié commence par une rupture avec le regard ordinaire, qui fait de la Nature un décor ou une ressource. Chez Verne, cette rupture a un lieu précis : le salon du Nautilus, dont les panneaux ouverts transforment la mer en un spectacle que nul n'avait jamais contemplé ainsi. La première promenade sous-marine, dans la forêt de l'île Crespo, l'accomplit : revêtus de scaphandres, Aronnax et Conseil marchent au fond de l'eau, dans une lumière et un silence inconnus, et la Nature cesse d'être un objet placé devant eux pour devenir un milieu dans lequel ils se tiennent. Le roman souligne d'ailleurs, sur le mode comique, l'insuffisance des cadres habituels : Conseil, classificateur infatigable, range chaque poisson dans son embranchement, sa classe et son ordre, tandis que Ned Land, qui les connaît en pêcheur, les nomme sans savoir les classer ; aucun des deux savoirs n'épuise le spectacle.
+
+Canguilhem permet de comprendre ce que signifie voir « autrement ». Dans l'introduction de \emph{La Connaissance de la vie}, « La pensée et le vivant », il montre que la connaissance procède en décomposant ce que la vie compose : elle analyse, sépare, immobilise, alors que le vivant forme des totalités. Voir autrement la Nature, ce n'est donc pas obtenir une image plus fine du même objet, c'est suspendre, au moins un instant, l'attitude qui découpe pour accueillir ce qui se présente comme un tout. C'est en ce sens que la « façon » de voir est aussi une façon de \emph{former} son objet.
+
+\textbf{2. La structure d'une initiation.} Ce déplacement mérite le nom d'initiation, car il en a les trois éléments : un seuil, un maître, des épreuves. Le seuil, chez Verne, est franchi malgré soi : projeté à la mer par le choc qui ébranle l'\emph{Abraham Lincoln}, Aronnax se retrouve avec Conseil et Ned Land enfermé dans une cellule obscure, puis soumis à la loi du capitaine, qui leur interdit tout retour à terre. Le maître est Nemo, qui choisit ce que ses hôtes verront, leur ouvre ou leur ferme les panneaux, et formule le credo de cette vie nouvelle : « La mer est tout ». Les épreuves enfin rythment le voyage : la marche nocturne parmi les ruines de l'Atlantide, à la lueur d'un volcan sous-marin ; l'emprisonnement sous la banquise ; le combat contre les poulpes géants. Chaque épisode est un seuil franchi. La devise du Nautilus, \emph{Mobilis in mobili}, « mobile dans l'élément mobile », résume cette logique : il ne s'agit plus de juger la mer depuis la terre ferme, mais d'épouser son mouvement.
+
+\textbf{3. Un retour sur soi.} Reste le point décisif de la citation : ce déplacement fait retour sur le sujet. Canguilhem en donne le fondement. Celui qui connaît la vie n'est jamais extérieur à ce qu'il connaît : le biologiste est lui-même un vivant, et sa connaissance est une manière pour la vie de se rapporter à elle-même. D'où la formule par laquelle s'achève son introduction : la pensée du vivant doit « tenir du vivant l'idée du vivant ». Le chapitre « L'expérimentation en biologie animale » le confirme concrètement : la spécificité des espèces, l'individualité des organismes, leur caractère de totalité, l'irréversibilité de leurs processus font obstacle à l'expérimentation, et le savant découvre, en se heurtant au vivant, les limites de son propre pouvoir de connaître. Connaître le vivant, c'est donc aussi apprendre quelque chose sur soi.
+
+Verne montre ce retour sur soi dans la trajectoire d'Aronnax. Le savant observe, décrit, classe, mais il éprouve aussi un enthousiasme qui lui fait oublier sa captivité, au point qu'il hésite à suivre Ned Land dans ses projets d'évasion, tant le voyage le retient. Sous le professeur du Muséum apparaît un homme que la mer captive. À ce premier niveau, on peut donc partager le point de vue des auteurs : le rapport privilégié à la Nature initie, change la façon de voir et révèle à lui-même celui qui voit.
+
+\hypertarget{ii.-mais-ce-retour-sur-soi-nest-ni-nuxe9cessaire-ni-toujours-buxe9nuxe9fique-et-il-risque-de-faire-de-la-nature-un-miroir}{%
+\subsection{II. Mais ce retour sur soi n'est ni nécessaire ni toujours bénéfique, et il risque de faire de la Nature un miroir}\label{ii.-mais-ce-retour-sur-soi-nest-ni-nuxe9cessaire-ni-toujours-buxe9nuxe9fique-et-il-risque-de-faire-de-la-nature-un-miroir}}
+
+\textbf{1. Une transformation qui n'a rien d'automatique.} Les auteurs le reconnaissent eux-mêmes : la transformation n'a lieu que « dans certains cas ». Verne l'illustre en faisant vivre le même voyage à trois passagers. Conseil, serviteur dévoué, traverse les mêmes merveilles qu'Aronnax sans cesser d'être celui qu'il était : il classe, il suit son maître, et sa science range sans rencontrer. Ned Land, le harponneur canadien, vit le voyage comme une captivité : il réclame de la viande fraîche, guette chaque terre en vue et n'aspire qu'à s'enfuir. Le même privilège, que nul autre homme ne partage, produit trois effets incomparables. Il n'existe donc pas de rapport à la Nature qui agirait uniformément sur tous ; l'expérience dépend de ce que chacun y cherche et de ce qu'il consent à y laisser.
+
+\textbf{2. Un retour sur soi qui peut enfermer.} Plus grave, le retour sur soi n'est pas nécessairement bénéfique. Nemo possède le rapport le plus privilégié qui se puisse concevoir avec la mer. Il a rompu avec les hommes --- « Je ne suis pas ce que vous appelez un homme civilisé ! J'ai rompu avec la société tout entière pour des raisons que moi seul j'ai le droit d'apprécier » --- et il tire de l'océan sa nourriture, ses vêtements, son énergie, jusqu'à la sépulture de ses compagnons, inhumés dans un cimetière de corail. Or cette vie rendue à la Nature ne l'apaise pas. Sa compassion même, lorsqu'il sauve un pêcheur de perles de Ceylan, le ramène aux peuples opprimés dont il se dit solidaire, c'est-à-dire à sa blessure. Et sa haine reste intacte : il éperonne un navire de guerre et le regarde sombrer, avant de s'agenouiller en sanglotant devant le portrait d'une femme et de deux enfants. Les dernières paroles qu'Aronnax entend de lui, au moment de la fuite, sont un cri : « Dieu tout-puissant ! assez ! assez ! ». La mer n'a pas transformé Nemo ; elle lui a donné les moyens de rester enfermé dans sa douleur. Se rencontrer soi-même, c'est aussi risquer de s'y installer, et la solitude au sein de la Nature devient alors un retranchement.
+
+\textbf{3. Le risque de faire de la Nature un miroir.} La dernière réserve vise la structure de la thèse. Si l'essentiel du rapport à la Nature est le bénéfice que le sujet en retire, la Nature vaut d'abord comme moyen. Les auteurs écrivent pourtant qu'elle « n'est pas uniquement » une nature « que l'on recrée en ersatz », ni « un objet de science », ni « cet environnement instrumentalisé » : faire d'elle avant tout un révélateur de soi, ce serait lui assigner un usage de plus, d'autant plus discret qu'il se présente comme une forme de respect.
+
+Canguilhem aide à formuler cette limite. Dans « Le vivant et son milieu », il reprend la distinction établie par le biologiste Uexküll entre l'\emph{Umgebung}, l'environnement géographique, l'\emph{Umwelt}, le milieu de comportement propre à un vivant, découpé dans cet environnement selon ce qui a pour lui une signification vitale (la tique ne retient du monde que quelques signaux), et la \emph{Welt}, l'univers de la science. Chaque vivant est le centre de son milieu propre. Une expérience de la Nature qui ne ferait que revenir au sujet resterait prisonnière de ce centre : elle ne verrait de la Nature que ce qui intéresse l'homme.
+
+Verne met en scène cette limite avec ironie. Parvenu au pôle Sud, Nemo déploie un pavillon noir marqué d'un N d'or et prend possession de cette terre : le rapport le plus intime avec la Nature s'achève en geste de souveraineté, celui même de « l'Homme, être supérieur et maître de la Nature » que décrit le texte. Or peu après, le Nautilus est pris sous la banquise, l'air vient à manquer, et l'équipage doit attaquer la glace pour survivre. La mer n'est ni le miroir ni la complice de l'homme ; elle ignore les significations dont il l'investit. La citation n'est donc pas fausse, mais elle nomme mal ce qui est rencontré.
+
+\hypertarget{iii.-ce-que-lon-rencontre-est-moins-soi-muxeame-que-sa-condition-de-vivant-la-transformation-vuxe9ritable-est-une-duxe9centration}{%
+\subsection{III. Ce que l'on rencontre est moins soi-même que sa condition de vivant : la transformation véritable est une décentration}\label{iii.-ce-que-lon-rencontre-est-moins-soi-muxeame-que-sa-condition-de-vivant-la-transformation-vuxe9ritable-est-une-duxe9centration}}
+
+\textbf{1. Se découvrir vivant parmi les vivants.} Il faut donc requalifier le « soi » de la citation. Ce que révèle l'expérience privilégiée de la Nature n'est pas d'abord une intériorité à retrouver, mais une condition : celle d'un vivant parmi d'autres. Canguilhem permet de le penser. Si chaque vivant est le centre de son milieu, aucun ne l'est absolument : la tique comme l'homme découpent leur monde selon leurs besoins. Découvrir que l'on est un centre parmi d'autres, c'est relativiser le sien. Le retour sur soi devient alors une décentration, et il n'est bénéfique que dans la mesure où il décentre.
+
+C'est la leçon que reçoit Aronnax. Sous la mer, il découvre un monde qui existait sans lui : les récifs, les forêts sous-marines, les ruines de l'Atlantide englouties depuis des millénaires. Venu chasser un « monstre » à classer, il se découvre l'hôte d'un monde qui se passait de témoin. Le texte de Chanvallon et Héas ne dit pas autre chose dans son dernier mouvement, lorsqu'il souhaite un homme qui agirait « par compréhension des lois de la Nature », de ses « réseaux d'interdépendances », « de tout ce dont il fait partie ». La Nature ne renvoie pas l'homme à lui-même : elle l'inclut.
+
+\textbf{2. Une décentration toujours médiatisée.} Cette décentration n'est jamais immédiate. Il n'y a pas d'expérience nue de la Nature, et c'est précisément ce qui rend le rapport « privilégié » : il suppose un dispositif. Chez Verne, ce dispositif est le Nautilus. Sans lui, ni forêt de Crespo, ni Atlantide, ni pôle Sud : l'océan resterait une surface. L'expérience la plus intime de la mer est donc l'œuvre d'une machine, mue par l'électricité. On pourrait y voir une contradiction, comme si la technique éloignait de la Nature ; Canguilhem invite à penser l'inverse. Dans « Machine et organisme », il refuse d'expliquer l'organisme par la machine et propose de comprendre la machine à partir de la vie : la technique prolonge l'activité du vivant au lieu de s'y opposer. Le Nautilus n'est pas l'écran qui masque la mer, mais l'organe par lequel un vivant terrestre accède à un milieu qui n'est pas le sien.
+
+La médiation est aussi celle du récit. Le roman est le témoignage qu'Aronnax rédige après son retour : l'expérience ne devient compréhensible, et transmissible, qu'une fois mise en forme. Le texte support le suggérait en citant Lussault, pour qui « la société ``invente'' {[}\ldots{]} ses natures acceptables » : il n'y a pas de Nature en soi qui viendrait frapper une conscience vierge, mais des natures façonnées par des techniques, des savoirs et des récits.
+
+\textbf{3. Un critère de la transformation véritable.} Reste à donner un sens précis à la « véritable transformation », faute de quoi n'importe quelle émotion forte passerait pour une métamorphose. Canguilhem en fournit le critère dans « Le normal et le pathologique » : la norme n'est pas une moyenne statistique, et le vivant est normatif, c'est-à-dire capable d'instituer des normes et d'en changer quand son milieu change. La santé n'est pas l'absence de troubles, mais la marge qui permet d'inventer d'autres manières de vivre. Une transformation est donc véritable lorsqu'elle accroît cette capacité : lorsqu'elle rend possible une manière de vivre et de penser qu'on ne concevait pas auparavant.
+
+Ce critère éclaire les personnages de Verne. Conseil et Ned Land reviennent pour l'essentiel tels qu'ils étaient partis. Nemo s'est donné des normes propres, mais figées : sa haine se répète sans se convertir, et le roman l'abandonne dans le Maelström, sans que l'on sache s'il y a survécu. Aronnax seul revient autre. Les dernières lignes du roman le montrent répondant à la question de l'Ecclésiaste, « Qui a jamais pu sonder les profondeurs de l'abîme ? » : deux hommes ont désormais le droit d'y répondre, « le capitaine Nemo et moi ». Ce n'est pas une vanterie, mais la reconnaissance d'un savoir conquis par l'expérience, et qui demeure quand l'émotion est retombée. On peut alors répondre à la question posée : le rapport privilégié à la Nature transforme véritablement, non parce qu'il nous rendrait à nous-mêmes, mais parce qu'il nous ôte d'un centre que nous croyions occuper. C'est bien ce que suggèrent les auteurs lorsqu'ils préfèrent à l'« écocitoyen » « tout simplement un citoyen, un habitant de la Terre » : le mot juste n'est pas miroir, mais habitation.
+
+\hypertarget{conclusion}{%
+\subsection{Conclusion}\label{conclusion}}
+
+La thèse de Chanvallon et Héas apparaît ainsi juste dans son constat et discutable dans sa formulation. Juste, car le rapport privilégié à la Nature a bien la structure d'une initiation : il rompt avec le regard ordinaire, engage celui qui l'éprouve, et Canguilhem rappelle qu'on ne connaît jamais la vie sans être soi-même vivant. Discutable, car le retour sur soi n'est ni automatique, comme le montrent Conseil et Ned Land, ni nécessairement bénéfique, comme le montre Nemo, et parce qu'en faisant de la rencontre avec soi l'essentiel, on risque de réduire la Nature au rôle de miroir. Nous partageons donc ce point de vue, à condition d'en déplacer le centre : ce qui transforme n'est pas le retour à soi mais la découverte de sa condition de vivant parmi les vivants, et cette transformation n'est véritable que si elle ouvre à de nouvelles normes de vie.
+
+Une question demeure : si cette expérience est réservée à quelques privilégiés --- il n'y a qu'un Nautilus ---, comment pourrait-elle transformer d'autres qu'eux ? La réponse tient peut-être dans le geste d'Aronnax, qui raconte. Par le récit, l'expérience singulière devient commune, et \emph{Vingt mille lieues sous les mers} n'est pas seulement le récit d'une expérience de la nature : il en offre une à chacun de ses lecteurs.
+
+\end{document}

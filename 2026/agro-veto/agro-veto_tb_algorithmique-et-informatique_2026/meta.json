@@ -1,0 +1,33 @@
+{
+  "slug": "agro-veto_tb_algorithmique-et-informatique_2026",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "TB",
+    "matiere": "Algorithmique et informatique",
+    "annee": 2026
+  },
+  "questions": 14,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-indices-operations.svg",
+      "question": "Q1",
+      "legende": "Indices des opérations sur la chaîne 'agro' (n = 4) : n + 1 positions d'insertion entre les caractères, n indices de caractère pour la suppression et la substitution ; le préfixe 'ag' et le suffixe 'ro' se séparent en position 2"
+    },
+    {
+      "fichier": "figures/q5-dependances-case.svg",
+      "question": "Q5",
+      "legende": "Les trois cases dont dépend D(i, j) : insertion depuis la gauche, suppression depuis le haut, substitution depuis la diagonale, chacune de coût 1 ; recopie gratuite de la diagonale si les deux caractères comparés sont égaux"
+    },
+    {
+      "fichier": "figures/q6-alias-matrice-nulle.svg",
+      "question": "Q6",
+      "legende": "Listes en mémoire pour n = 2 et p = 3, après avoir mis 7 dans la case (0, 0) : matrice_nulle_1 crée trois listes distinctes, matrice_nulle_2 trois références vers une même liste, dont toute la colonne 0 vaut alors 7"
+    },
+    {
+      "fichier": "figures/q10-chemins-matrice.svg",
+      "question": "Q10",
+      "legende": "Les deux chemins optimaux dans la matrice D de la question 5, orientés de (0,0) vers (5,6) (la remontée les parcourt à l'envers), et les deux suites minimales de 3 opérations de ACTCT à AGTCAG"
+    }
+  ]
+}

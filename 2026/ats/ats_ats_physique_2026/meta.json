@@ -1,0 +1,38 @@
+{
+  "slug": "ats_ats_physique_2026",
+  "epreuve": {
+    "concours": "ATS",
+    "filiere": "ATS",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 46,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q08-rails-tige-induction.svg",
+      "question": "Q8",
+      "legende": "Rails, tige et résistance en mode dynamique : orientation choisie pour I_d et normale n = +e_y"
+    },
+    {
+      "fichier": "figures/q14-surface-de-gauss.svg",
+      "question": "Q14",
+      "legende": "Surface de Gauss cylindrique, à cheval sur le plan chargé, et normales sortantes"
+    },
+    {
+      "fichier": "figures/q16-champ-trois-zones.svg",
+      "question": "Q16",
+      "legende": "Champ des deux plans dans les trois zones"
+    },
+    {
+      "fichier": "figures/q29-resistance-interne-generateur.svg",
+      "question": "Q29",
+      "legende": "Circuit de la figure III.8 complété par la résistance interne r du générateur"
+    },
+    {
+      "fichier": "figures/q41-aimant-lignes-de-champ.svg",
+      "question": "Q41",
+      "legende": "Lignes de champ d'un aimant droit, pôle Nord en haut"
+    }
+  ]
+}

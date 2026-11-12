@@ -1,0 +1,28 @@
+{
+  "slug": "centrale-supelec_psi_maths-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PSI",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 42,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q09-vandermonde-double-comptage.svg",
+      "question": "Q9",
+      "legende": "Figure 1 — Double comptage de Vandermonde : une partie A à k éléments de ℱ = M ⊔ P se coupe en A ∩ M (k − j éléments) et A ∩ P (j éléments)"
+    },
+    {
+      "fichier": "figures/q17-signe-pk-s.svg",
+      "question": "Q17",
+      "legende": "Figure 2 — Cas k = 3 : P₃ et S changent de signe aux mêmes racines x₁, x₂, x₃ ; leur produit P₃S garde un signe constant (allure, échelles verticales arbitraires)"
+    },
+    {
+      "fichier": "figures/q30-polynomes-legendre.svg",
+      "question": "Q30",
+      "legende": "Figure 3 — Polynômes de Legendre L₀ à L₃ entre −1 et 1 : L_k a k racines simples, vaut 1 en x = 1 et reste dans la bande |y| ⩽ 1"
+    }
+  ]
+}

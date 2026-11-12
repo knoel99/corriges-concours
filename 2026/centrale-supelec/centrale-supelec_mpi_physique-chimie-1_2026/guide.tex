@@ -1,0 +1,1648 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Centrale-Supélec MPI — Physique-chimie 1 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Centrale-Supélec MPI}
+\fancyhead[R]{\small Physique-chimie 1 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Centrale-Supélec MPI — Physique-chimie 1 2026\par}\medskip
+  {\large Centrale-Supélec · MPI · Physique-chimie 1 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format.} 4 heures, calculatrice autorisée, 43 questions (Q1 à Q43) réparties en trois parties « relativement indépendantes », sous le titre « Modélisation et mesure de l'effet Casimir ». Quatre questions sont soulignées dans l'énoncé (prise d'initiative, barème valorisé) : \textbf{Q9, Q27, Q38 et Q42}. Le formulaire final rappelle les relations de passage pour \(\vec E\) et \(\vec B\), l'équation de Schrödinger, la loi de Planck, la loi de Wien, la formule du double rotationnel, l'intégrale \(\int_0^\infty x^3/(e^x-1)\,dx=\pi^4/15\) et les constantes usuelles à trois chiffres significatifs.
+
+\textbf{Le fil du sujet.} Deux miroirs neutres placés dans le vide s'attirent : c'est l'effet Casimir, conséquence de l'énergie de point zéro du champ électromagnétique. Le sujet le reconstruit pas à pas avec les outils de MPI, puis le confronte à des expériences réelles.
+
+\textbf{Partie A --- Cavité en électromagnétisme classique (Q1--Q11).}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{A.I (Q1--Q9)} : réflexion d'une onde plane sur un conducteur parfait, onde stationnaire, énergie moyenne, courant surfacique, force sur un élément de surface et pression de radiation \(P_{\mathrm{rad}}=\langle u_{em}\rangle\), retrouvée par un bilan de quantité de mouvement des photons.
+\item
+  \emph{A.II (Q10--Q11)} : modes d'une cavité plan-plan, \(\omega_n=n\pi c/a\).
+\end{itemize}
+
+\textbf{Partie B --- Approche quantique simplifiée (Q12--Q25).}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{B.I (Q12--Q16)} : oscillateur harmonique quantique ; l'inégalité de Heisenberg impose \(E\geqslant\hbar\omega_0/2\).
+\item
+  \emph{B.II (Q17--Q20)} : énergie de point zéro de la cavité, divergence, troncature, énergie de Casimir dans un modèle unidimensionnel, caractère attractif.
+\item
+  \emph{B.III (Q21--Q25)} : complétion d'un script Python, lecture d'une loi de puissance en log-log, force de Casimir, analyse dimensionnelle, applications numériques.
+\end{itemize}
+
+\textbf{Partie C --- Mesures et corrections (Q26--Q43).}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{C.I (Q26--Q28)} : configuration sphère-plan, approximation de proximité, comparaison à une mesure réelle.
+\item
+  \emph{C.II (Q29--Q30)} : effet de la température (Wien, Planck).
+\item
+  \emph{C.III (Q31--Q39)} : modèle du plasma, conductivité complexe, relation de dispersion, pulsation plasma, masse effective, correction de conductivité finie.
+\item
+  \emph{C.IV (Q40--Q43)} : interférométrie en quadrature de phase pour mesurer la déflexion d'un micro-levier.
+\end{itemize}
+
+\textbf{Notions du programme mobilisées.} Ondes électromagnétiques dans le vide, réflexion sur un conducteur parfait, ondes stationnaires, relations de passage, énergie électromagnétique, force de Laplace ; photon (énergie, quantité de mouvement) ; équation de Schrödinger, états stationnaires, inégalité de Heisenberg ; ondes dans un plasma ; polarisation de la lumière, interférences ; analyse dimensionnelle ; lecture de graphes log-log ; Python (méthode des rectangles).
+
+\textbf{Difficulté et longueur.} Sujet long, très guidé dans les parties A et B, plus ouvert dans la partie C. Les points délicats sont les signes (Q5--Q7, Q23), la densité de modes non fournie (Q18), les deux approximations de Q19, la question géométrique Q27 et le rôle de la lame quart d'onde (Q42).
+
+\textbf{Questions à ne pas laisser passer.} Q1--Q4, Q10--Q12, Q15--Q17, Q24--Q25, Q29, Q32--Q37, Q40, Q43 : du cours ou des calculs directs.
+
+\textbf{Gestion du temps.} Environ 5 minutes par question : 1 h pour la partie A, 1 h 15 pour la partie B, 1 h 45 pour la partie C. Tout résultat donné par l'énoncé peut être admis ; les résultats de Q2, Q8, \(E(a)\), Q22 et la formule de \(F_{sp}\) sont autant de points de reprise.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-a-uxe9tude-dune-cavituxe9-en-uxe9lectromagnuxe9tisme-classique}{%
+\section{Partie A --- Étude d'une cavité en électromagnétisme classique}\label{partie-a-uxe9tude-dune-cavituxe9-en-uxe9lectromagnuxe9tisme-classique}}
+
+\hypertarget{i-pression-de-radiation-sur-un-conducteur-parfait}{%
+\subsection{I --- Pression de radiation sur un conducteur parfait}\label{i-pression-de-radiation-sur-un-conducteur-parfait}}
+
+On construit l'onde stationnaire devant un miroir parfait, puis on calcule la force qu'elle exerce sur lui de deux façons : par la force de Laplace sur les courants surfaciques et par un bilan de photons. Outils : relations de passage, ondes planes, force de Laplace, photon.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Que vaut le champ électrique dans le conducteur ? Que dit la relation de passage avec \(\sigma=0\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'onde incidente seule vérifie-t-elle la condition obtenue en \(z=0\) ? L'égalité doit être vraie à chaque instant : qu'impose-t-elle sur la pulsation et la direction du champ réfléchi ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Milieu 1 : le vide (\(z<0\)) ; milieu 2 : le conducteur ; \(\vec n_{12}=\vec e_z\). La relation de passage avec \(\sigma=0\) donne \(\vec E_2=\vec E_1\), et \(\vec E_2=\vec 0\) dans le conducteur parfait : le champ total est nul en \(z=0^-\) à tout instant.
+
+Or \(\vec E_i(0,t)=E_0\cos(\omega t)\,\vec e_x\neq\vec 0\). Il faut donc une onde réfléchie telle que \(\vec E_r(0,t)=-E_0\cos(\omega t)\,\vec e_x\) pour tout \(t\) : même dépendance sinusoïdale (\textbf{même pulsation}), même direction \(\vec e_x\) (\textbf{même polarisation}). Elle se propage selon \(-\vec e_z\) :
+
+\equationajustee{\boxed{\vec E_r(M,t)=-E_0\cos\!\left(\omega\left(t+\frac zc\right)\right)\vec e_x\qquad(z<0)}}
+
+\begin{piege}
+
+L'argument de l'onde réfléchie est \(\omega(t+z/c)\) et non \(\omega(t-z/c)\) : sinon l'onde repartirait vers le conducteur.
+
+\end{piege}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Sommez les deux champs et transformez une différence de cosinus en produit.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Avec \(\cos p-\cos q=-2\sin\frac{p+q}{2}\sin\frac{p-q}{2}\), pour \(p=\omega t-\omega z/c\) et \(q=\omega t+\omega z/c\) :
+
+\equationajustee{\vec E=E_0\left[\cos\!\left(\omega t-\frac{\omega z}{c}\right)-\cos\!\left(\omega t+\frac{\omega z}{c}\right)\right]\vec e_x=2E_0\sin\!\left(\frac{\omega z}{c}\right)\sin(\omega t)\,\vec e_x}
+
+\equationajustee{\boxed{E_{0t}=2E_0}}
+
+Contrôle : \(\vec E(0,t)=\vec 0\), nœud de champ électrique sur le miroir.
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+La relation de structure d'une onde plane progressive ne s'applique pas à une onde stationnaire. Comment s'y prendre ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculez le champ magnétique de chacune des deux ondes progressives, puis sommez. Contrôlez avec Maxwell-Faraday.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Pour chaque onde progressive, \(\vec B=\vec k\wedge\vec E/\omega\) :
+
+\equationajustee{\vec B_i=\frac{E_0}{c}\cos\!\left(\omega\left(t-\frac zc\right)\right)\vec e_y}
+
+\equationajustee{\begin{aligned}
+\vec B_r&=\left(-\frac1c\vec e_z\right)\wedge\left(-E_0\cos\!\left(\omega\left(t+\frac zc\right)\right)\vec e_x\right)\\
+&=\frac{E_0}{c}\cos\!\left(\omega\left(t+\frac zc\right)\right)\vec e_y
+\end{aligned}}
+
+\equationajustee{\boxed{\vec B(M,t)=\frac{2E_0}{c}\cos\!\left(\frac{\omega z}{c}\right)\cos(\omega t)\,\vec e_y}}
+
+Contrôle : \(\partial_t\vec B=-\overrightarrow{\mathrm{rot}}\,\vec E=-\partial_zE_x\,\vec e_y=-\frac{2E_0\omega}{c}\cos\frac{\omega z}{c}\sin\omega t\,\vec e_y\), cohérent. \(\vec B\) a un ventre là où \(\vec E\) a un nœud, et les deux sont en quadrature temporelle.
+
+\begin{methode}
+
+Pour une onde stationnaire, on construit toujours les champs onde par onde. La relation \(\vec B=\vec k\wedge\vec E/\omega\) n'a de sens que pour une onde plane progressive.
+
+\end{methode}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Écrivez \(u_{em}=\frac{\varepsilon_0E^2}{2}+\frac{B^2}{2\mu_0}\) et utilisez \(\varepsilon_0\mu_0c^2=1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+La partie spatiale sort de la moyenne temporelle.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\equationajustee{\boxed{u_{em}=2\varepsilon_0E_0^2\left[\sin^2\!\left(\frac{\omega z}{c}\right)\sin^2(\omega t)+\cos^2\!\left(\frac{\omega z}{c}\right)\cos^2(\omega t)\right]}}
+
+Avec \(\langle\sin^2\omega t\rangle=\langle\cos^2\omega t\rangle=\frac12\) :
+
+\equationajustee{\boxed{\langle u_{em}\rangle=\varepsilon_0E_0^2}}
+
+La moyenne est \textbf{uniforme} : les nœuds électriques coïncident avec les ventres magnétiques. C'est ce qui rendra la relation de Q8 sans ambiguïté.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Écrivez la relation de passage pour \(\vec B\) entre \(z=0^-\) et \(z=0^+\), en respectant le sens de \(\vec n_{12}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Cherchez \(\vec j_s\) selon la direction du champ électrique incident, puis identifiez.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Avec \(\vec n_{12}=\vec e_z\), \(\vec B_2=\vec 0\) et \(\vec B_1=\frac{2E_0}{c}\cos(\omega t)\,\vec e_y\) :
+
+\equationajustee{-\frac{2E_0}{c}\cos(\omega t)\,\vec e_y=\mu_0\,\vec j_s\wedge\vec e_z}
+
+Pour \(\vec j_s=j_s\vec e_x\), \(\vec e_x\wedge\vec e_z=-\vec e_y\), donc \(\mu_0j_s=\frac{2E_0}{c}\cos\omega t\) et, avec \(1/(\mu_0c)=\varepsilon_0c\) :
+
+\equationajustee{\boxed{\vec j_s(t)=2\varepsilon_0cE_0\cos(\omega t)\,\vec e_x}}
+
+\begin{piege}
+
+Deux sources d'erreur de signe : le sens de \(\vec n_{12}\) (du milieu 1 vers le milieu 2) et le produit \(\vec e_x\wedge\vec e_z=-\vec e_y\). Une erreur ici retourne la force de Q7.
+
+\end{piege}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Le champ total en \(z=0^\pm\) est la somme de \(\vec B^*\) et du champ \(\vec B_{dS}\) de l'élément lui-même.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculez \(\vec B^*=\vec B-\vec B_{dS}\) des deux côtés ; le résultat doit être le même.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\(\vec j_s\wedge\vec e_z=-j_s\vec e_y\), donc
+
+\equationajustee{\begin{aligned}
+\vec B_{dS}(0^-)&=\frac{\mu_0j_s}{2}\vec e_y=\frac{E_0}{c}\cos(\omega t)\,\vec e_y\\
+\vec B_{dS}(0^+)&=-\frac{E_0}{c}\cos(\omega t)\,\vec e_y
+\end{aligned}}
+
+D'où
+
+\equationajustee{\begin{aligned}
+\vec B^*(0^-)&=\frac{2E_0}{c}\cos\omega t\,\vec e_y-\frac{E_0}{c}\cos\omega t\,\vec e_y\\
+\vec B^*(0^+)&=\vec 0+\frac{E_0}{c}\cos\omega t\,\vec e_y
+\end{aligned}}
+
+\equationajustee{\boxed{\vec B^*(z\to0^\pm,t)=\frac{E_0}{c}\cos(\omega t)\,\vec e_y}}
+
+Le champ « extérieur » à \(dS\) est continu, comme il se doit puisqu'il n'est pas créé par \(dS\) ; c'est la moyenne des champs totaux de part et d'autre.
+
+\begin{methode}
+
+La force sur une nappe de courant s'obtient avec le champ créé par tout le reste, égal à la demi-somme des champs de part et d'autre de la nappe. Le même raisonnement donne la pression électrostatique \(\sigma^2/(2\varepsilon_0)\) sur un conducteur chargé.
+
+\end{methode}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Force de Laplace sur un élément de courant surfacique : \(d\vec F=\vec j_s\,dS\wedge\vec B^*\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Faites le produit avant de moyenner.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\equationajustee{d\vec F=2\varepsilon_0cE_0\cos(\omega t)\,\frac{E_0}{c}\cos(\omega t)\,(\vec e_x\wedge\vec e_y)\,dS}
+
+\equationajustee{\boxed{d\vec F=2\varepsilon_0E_0^2\cos^2(\omega t)\,dS\,\vec e_z}}
+
+\equationajustee{\boxed{\langle d\vec F\rangle=\varepsilon_0E_0^2\,dS\,\vec e_z}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q7-force-element-surface.pdf}
+\caption*{Figure 1 --- j\_s et B* changent de signe ensemble : la force sur dS
+reste dirigée vers le conducteur (+e\_z)}
+\end{figure}
+
+\begin{piege}
+
+Utiliser le champ total \(\vec B(0^-)\) au lieu de \(\vec B^*\) double la force. Et moyenner \(\vec j_s\) et \(\vec B^*\) séparément donne zéro : la moyenne d'un produit n'est pas le produit des moyennes.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Qu'est-ce qui caractérise une force pressante ? Comparez avec Q4.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+La force moyenne est normale au plan, dirigée du vide vers le conducteur (l'onde pousse le miroir), proportionnelle à \(dS\) et indépendante du point \(P\) : c'est une force pressante, de pression \(P_{\mathrm{rad}}=\varepsilon_0E_0^2\). D'après Q4 :
+
+\equationajustee{\boxed{P_{\mathrm{rad}}=\langle u_{em}\rangle}}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Trois étapes : quantité de mouvement transférée par un photon, nombre de photons qui frappent \(dS\) pendant \(dt\), puis bilan.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le choc est élastique sur un plan parfaitement réfléchissant : que devient la quantité de mouvement du photon ? Les photons qui frappent \(dS\) pendant \(dt\) sont contenus dans un cylindre.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour la densité d'énergie, n'oubliez pas les photons réfléchis.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\emph{Choc.} L'énergie \(\hbar\omega\) du photon est conservée, donc la norme de sa quantité de mouvement aussi ; il repart selon \(-\vec e_z\). La conservation de la quantité de mouvement de \(\{\)photon, plan\(\}\) donne la quantité cédée au plan :
+
+\equationajustee{\delta\vec p=\frac{\hbar\omega}{c}\vec e_z-\left(-\frac{\hbar\omega}{c}\vec e_z\right)=\frac{2\hbar\omega}{c}\vec e_z}
+
+\emph{Comptage.} Pendant \(dt\), les photons qui frappent \(dS\) occupent le cylindre de base \(dS\) et de hauteur \(c\,dt\) : il y en a \(n_\gamma c\,dt\,dS\).
+
+\emph{Bilan.} Quantité de mouvement cédée par unité de temps et de surface :
+
+\equationajustee{\boxed{n_\gamma c\times\frac{2\hbar\omega}{c}\,\vec e_z=2n_\gamma\hbar\omega\,\vec e_z}}
+
+C'est la force surfacique sur le plan, donc \(P_{\mathrm{rad}}=2n_\gamma\hbar\omega\). Les photons incidents portent \(u_{\mathrm{inc}}=n_\gamma\hbar\omega\), les réfléchis (même densité) \(u_{\mathrm{\text{réf}}}=n_\gamma\hbar\omega\) :
+
+\equationajustee{\boxed{P_{\mathrm{rad}}=u_{\mathrm{inc}}+u_{\mathrm{\text{réf}}}}}
+
+\emph{Commentaire.} Les descriptions ondulatoire (Q8) et corpusculaire donnent la même pression : \(\langle u_{em}\rangle=\varepsilon_0E_0^2\) compte bien les deux ondes (l'onde incidente seule porte \(\varepsilon_0E_0^2/2\)). Le facteur 2 est la signature de la réflexion ; sur un absorbeur parfait, on aurait \(P=u_{\mathrm{inc}}\).
+
+\begin{jury}
+
+Sur une question à prise d'initiative, la démarche doit être lisible : on annonce les étapes, on justifie le facteur 2 et le cylindre de comptage, et l'on conclut par une phrase de comparaison explicite avec Q8.
+
+\end{jury}
+
+\hypertarget{ii-champ-uxe9lectromagnuxe9tique-dans-une-cavituxe9-plane-duxe9limituxe9e-par-deux-plans-conducteurs}{%
+\subsection{II --- Champ électromagnétique dans une cavité plane délimitée par deux plans conducteurs}\label{ii-champ-uxe9lectromagnuxe9tique-dans-une-cavituxe9-plane-duxe9limituxe9e-par-deux-plans-conducteurs}}
+
+On ajoute un second miroir : la condition d'annulation du champ sur les deux plans quantifie les pulsations. C'est le mécanisme qui fonde toute la suite.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Le champ électrique tangentiel doit s'annuler sur chaque plan. Partez de la forme stationnaire de Q2, qui satisfait déjà la condition en \(z=0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrivez la condition en \(z=-a\) pour tout \(t\), sans oublier d'exclure la solution nulle.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Le champ dans la cavité est une superposition d'ondes se propageant selon \(\pm\vec e_z\) ; la condition en \(z=0\) impose
+
+\equationajustee{\vec E=E_{0t}\sin(\omega z/c)\sin(\omega t)\,\vec e_x}
+
+En \(z=-a\), pour tout \(t\) et \(E_{0t}\neq0\) :
+
+\equationajustee{\sin(\omega a/c)=0}
+
+\equationajustee{\boxed{\omega_n=\frac{n\pi c}{a},\qquad n\in\mathbb N^*}}
+
+\(n=0\) donne un champ nul, \(n<0\) redonne les mêmes modes. Chaque \(n\) correspond à un mode, de pulsation spatiale \(k_{z,n}=n\pi/a\) : la cavité contient \(n\) demi-longueurs d'onde.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q10-modes-cavite.pdf}
+\caption*{Figure 2 --- Trois premiers modes de la cavité : un nœud de E sur chaque
+plan, n demi-longueurs d'onde, λ\_n = 2a/n}
+\end{figure}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Exprimez \(\lambda_n\) et cherchez le plus petit \(n\) permis. Situez le résultat par rapport au visible.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\(\lambda_n=2\pi c/\omega_n=2a/n\), maximale pour \(n=1\) :
+
+\equationajustee{\boxed{\lambda_{\max}=2a=200\ \mathrm{nm}}}
+
+C'est de l'\textbf{ultraviolet} (UV lointain), sous la borne du visible (\(\approx400\) nm). Ce résultat resservira en Q29.
+
+\begin{piege}
+
+Pour \(n=1\), la cavité contient une demi-longueur d'onde : \(\lambda_{\max}=2a\), et non \(a\).
+
+\end{piege}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-b-une-approche-quantique-simplifiuxe9e-du-champ-dans-la-cavituxe9}{%
+\section{Partie B --- Une approche quantique simplifiée du champ dans la cavité}\label{partie-b-une-approche-quantique-simplifiuxe9e-du-champ-dans-la-cavituxe9}}
+
+\hypertarget{i-uxe9nergie-minimale-dun-oscillateur-harmonique-quantique}{%
+\subsection{I --- Énergie minimale d'un oscillateur harmonique quantique}\label{i-uxe9nergie-minimale-dun-oscillateur-harmonique-quantique}}
+
+On montre qu'un oscillateur quantique ne peut pas avoir une énergie nulle : l'inégalité de Heisenberg impose \(E\geqslant\hbar\omega_0/2\). Outils : équation de Schrödinger, parité, intégration, étude de fonction.
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Injectez la forme \(\psi=\varphi(x)e^{-iEt/\hbar}\) dans l'équation de Schrödinger du formulaire.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(i\hbar\partial_t\psi=E\psi\) et \(\partial_x^2\psi=\varphi''e^{-iEt/\hbar}\) ; en simplifiant par l'exponentielle, jamais nulle :
+
+\equationajustee{\boxed{-\frac{\hbar^2}{2m}\varphi''(x)+\frac12m\omega_0^2x^2\varphi(x)=E\,\varphi(x)}}
+
+Comme \(|\psi|^2=\varphi^2\) (\(\varphi\) réelle, facteur de phase de module 1), la normalisation est indépendante du temps :
+
+\equationajustee{\boxed{\int_{-\infty}^{+\infty}\varphi(x)^2\,dx=1}}
+
+\begin{piege}
+
+On normalise \(\varphi^2\), pas \(\varphi\).
+
+\end{piege}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Le potentiel est pair : que dire de \(x\mapsto\varphi(-x)\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour établir que \(\varphi\) est paire ou impaire, comparez \(\varphi\) et \(\varphi(-x)\), deux solutions de la même équation linéaire, à l'aide de leur wronskien.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+L'équation s'écrit \(\varphi''+q\varphi=0\), avec \(q\) paire :
+
+\equationajustee{q(x)=\frac{2m}{\hbar^2}\left(E-\frac12m\omega_0^2x^2\right)}
+
+La fonction \(\chi(x)=\varphi(-x)\) vérifie la même équation. Le wronskien \(W=\varphi\chi'-\varphi'\chi\) a une dérivée nulle, il est constant.
+
+Pour cet état lié, \(\varphi\) et \(\varphi'\) tendent vers 0 à l'infini, donc \(W=0\). Il vient \(\varphi(-x)=\lambda\varphi(x)\), et en appliquant deux fois, \(\lambda^2=1\).
+
+Ainsi \(\varphi\) est paire ou impaire, \(\varphi^2\) est paire, et \(x\varphi^2\) est impaire et intégrable :
+
+\equationajustee{\boxed{\langle x\rangle=\int_{-\infty}^{+\infty}x\,\varphi(x)^2\,dx=0}}
+
+\begin{methode}
+
+Une symétrie de l'équation se transmet aux solutions dès qu'elles sont déterminées à un facteur près. Le wronskien est l'outil du programme pour montrer que deux solutions d'une équation linéaire du second ordre sont proportionnelles.
+
+\end{methode}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Que devient le produit \(\psi^*\partial_x\psi\) pour un état stationnaire avec \(\varphi\) réelle ? Reconnaissez une dérivée.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\(\psi^*\partial_x\psi=\varphi\varphi'=\frac12(\varphi^2)'\), donc
+
+\equationajustee{\langle p_x\rangle=-i\hbar\left[\frac{\varphi^2}{2}\right]_{-\infty}^{+\infty}=0}
+
+puisque \(\varphi\to0\) à l'infini. Autre argument : \(\langle p_x\rangle\) est réel, alors que le calcul donne \(-i\hbar\) fois un réel ; il est donc nul.
+
+\equationajustee{\boxed{\langle p_x\rangle=0}}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Dans un état stationnaire, la valeur moyenne de l'énergie totale vaut \(E\). Reliez \(\langle x^2\rangle\) à \(\Delta x\) grâce à Q13, et de même pour \(p_x\).
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\(E=\frac12m\omega_0^2\langle x^2\rangle+\frac{\langle p_x^2\rangle}{2m}\), avec \(\Delta x^2=\langle x^2\rangle-\langle x\rangle^2=\langle x^2\rangle\) et \(\Delta p_x^2=\langle p_x^2\rangle\) :
+
+\equationajustee{\boxed{E=\frac12m\omega_0^2\,\Delta x^2+\frac{\Delta p_x^2}{2m}}}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Minorez \(\Delta p_x\) par l'inégalité de Heisenberg, puis reportez dans Q15.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Étudiez la fonction obtenue sur \(]0,+\infty[\) par le signe de sa dérivée.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+L'inégalité impose \(\Delta x>0\) et \(\Delta p_x\geqslant\hbar/(2\Delta x)>0\) ; en élevant au carré deux quantités positives :
+
+\equationajustee{E\geqslant f_H(\Delta x)}
+
+\equationajustee{\boxed{f_H(X)=\frac12m\omega_0^2X^2+\frac{\hbar^2}{8mX^2}}}
+
+\(f_H'(X)=m\omega_0^2X-\frac{\hbar^2}{4mX^3}\) est négative puis positive, nulle en \(X_m^2=\frac{\hbar}{2m\omega_0}\) :
+
+\equationajustee{f_H(X_m)=\frac{\hbar\omega_0}{4}+\frac{\hbar\omega_0}{4}}
+
+\equationajustee{\boxed{\min f_H=\frac{\hbar\omega_0}{2}}}
+
+\begin{methode}
+
+La compétition entre un terme qui pénalise la délocalisation (\(\propto\Delta x^2\)) et un terme qui pénalise la localisation (\(\propto1/\Delta x^2\)) donne l'ordre de grandeur de l'énergie fondamentale. Le même raisonnement estime la taille de l'atome d'hydrogène.
+
+\end{methode}
+
+\begin{piege}
+
+Annuler la dérivée ne suffit pas : il faut justifier que l'extremum est un minimum global (signe de \(f_H'\), ou limites infinies en \(0^+\) et en \(+\infty\)).
+
+\end{piege}
+
+\hypertarget{ii-une-premiuxe8re-approche-quantique-de-leffet-casimir}{%
+\subsection{II --- Une première approche quantique de l'effet Casimir}\label{ii-une-premiuxe8re-approche-quantique-de-leffet-casimir}}
+
+On attribue \(\hbar\omega/2\) à chaque mode de la cavité. La somme diverge ; on la tronque, et seule la différence entre la cavité et un « continuum » reste significative.
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Sommez l'énergie de point zéro sur tous les modes de Q10. De quelle série s'agit-il ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\equationajustee{\begin{aligned}
+E&=\sum_{n=1}^{+\infty}\frac{\hbar k_{z,n}c}{2}\\
+&=\frac{\hbar\pi c}{2a}\sum_{n=1}^{+\infty}n\\
+&=\boxed{+\infty}
+\end{aligned}}
+
+La série diverge grossièrement (terme général qui ne tend pas vers 0). Une énergie infinie pour un volume fini de vide n'a pas de sens physique et interdit tout calcul de force par dérivation ; le modèle du conducteur parfait n'est d'ailleurs plus valable aux très hautes pulsations. Contrôle : tronquée à \(n_0\), la somme redonne \(E(a)=\frac{\hbar\pi c}{4a}n_0(n_0+1)\).
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+La densité de modes n'est pas donnée : quel est l'écart entre deux pulsations spatiales consécutives de la grande cavité ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le nombre de modes dans \(dk_z\) est \(dk_z\) divisé par cet écart.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Les modes \(k_{z,n}=n\pi/\tilde a\) sont espacés de \(\pi/\tilde a\), donc \(\rho_{k_z}=\tilde a/\pi\) :
+
+\equationajustee{E_\infty=\int_0^{n_0\pi/a}\frac{\hbar k_zc}{2}\,\frac{\tilde a}{\pi}\,dk_z=\frac{\hbar c\tilde a}{4\pi}\,\frac{n_0^2\pi^2}{a^2}}
+
+\equationajustee{\boxed{E_\infty=\frac{\pi\hbar c\,\tilde a\,n_0^2}{4a^2}}}
+
+\begin{piege}
+
+La densité de modes est celle de la grande cavité (\(\tilde a/\pi\)), pas \(a/\pi\). L'énoncé demande d'ailleurs un résultat fonction de \(\tilde a\).
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Factorisez par \(\frac{\pi\hbar cn_0^2}{4a}\), puis utilisez les deux hypothèses l'une après l'autre.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\equationajustee{E_{\mathrm{Cas}}=\frac{\pi\hbar c\,n_0^2}{4a}\left[1+\frac1{n_0}-\frac{\tilde a}{a}\right]}
+
+Avec \(n_0\gg1\), \(1+1/n_0\simeq1\) ; avec \(a\ll\tilde a\), ce 1 est négligeable devant \(\tilde a/a\) :
+
+\equationajustee{\boxed{E_{\mathrm{Cas}}\simeq-\frac{\pi\hbar c\,\tilde a\,n_0^2}{4a^2}}}
+
+L'énergie de Casimir est négative et varie en \(1/a^2\) dans ce modèle unidimensionnel, qui ne retient que les modes longitudinaux ; la partie III corrigera l'exposant.
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Le signe de l'énergie ne suffit pas : regardez son sens de variation avec \(a\), à \(\tilde a\) et \(n_0\) fixés.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\(E_{\mathrm{Cas}}=-K/a^2\) avec \(K>0\), et \(\frac{dE_{\mathrm{Cas}}}{da}=\frac{2K}{a^3}>0\) : \(E_{\mathrm{Cas}}\) croît avec \(a\). Pour la minimiser, la cavité diminue \(a\) : les plans se rapprochent. \textbf{L'effet Casimir est attractif.}
+
+\begin{piege}
+
+« Attractif car l'énergie est négative » n'est pas un argument : une constante additive changerait le signe sans changer la force. Seul le sens de variation compte.
+
+\end{piege}
+
+\hypertarget{iii-uxe9tude-de-la-duxe9pendance-de-luxe9nergie-de-casimir-avec-la-dimension-longitudinale-de-la-cavituxe9}{%
+\subsection{III --- Étude de la dépendance de l'énergie de Casimir avec la dimension longitudinale de la cavité}\label{iii-uxe9tude-de-la-duxe9pendance-de-luxe9nergie-de-casimir-avec-la-dimension-longitudinale-de-la-cavituxe9}}
+
+Le modèle tridimensionnel est traité numériquement ; on en lit la loi de puissance, on en déduit la force, puis une analyse dimensionnelle fixe la constante.
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Repérez ce que fait déjà la ligne 13 (facteurs \texttt{a} et \texttt{dk}) et ce que calcule chaque boucle.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La ligne 19 doit assembler les trois termes de \(g(u,a)\), dont un ne figure dans aucune boucle.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\begin{lstlisting}[language=Python]
+        s1 = s1 + np.sqrt(u**2 + k_droite**2)          # ligne 12
+        s2 = s2 + np.sqrt(u**2 + (j * np.pi / a)**2)   # ligne 17
+    return s1 - u / 2 - s2                             # ligne 19
+\end{lstlisting}
+
+La boucle \texttt{for\ i} accumule l'intégrande aux bornes droites \(k=(i+1)\,dk\) ; la ligne 13 multiplie par \(dk\) et par \(a\).
+
+La boucle \texttt{for\ j} somme les \(n_0\) premiers termes de la série. Le script complété et exécuté donne \(a^3f(a)\) constant : la loi en \(a^{-3}\) découle de l'homogénéité du calcul (pas, abscisses et termes de la série en \(1/a\)), alors que la valeur absolue n'est pas fiable, comme l'annonce l'énoncé.
+
+\begin{piege}
+
+Ne pas remettre \texttt{dk} ou \texttt{a} en ligne 12 (ils seraient comptés deux fois), et ne pas oublier le terme \texttt{-\ u\ /\ 2}.
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+En log-log, une loi de puissance est une droite. Relevez deux points éloignés et calculez \(\Delta\log_{10}f/\Delta\log_{10}a\).
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Les points de la figure 2 vont de \(f(10^{-7}\ \mathrm m)\approx9\times10^{19}\) à \(f(10^{-5}\ \mathrm m)\approx9\times10^{13}\) : six décades pour deux, pente \(-3\). Donc \(f=C/a^3\) avec \(C>0\) et
+
+\equationajustee{\boxed{\begin{aligned}
+E_{\mathrm{Cas}}(a)&=-\frac{B}{a^{\xi}}\\
+\xi&=3\\
+B&=\frac{\hbar cL^2C}{2\pi}>0
+\end{aligned}}}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+La force est l'opposée de la dérivée de l'énergie par rapport à la position de la paroi. Attention : la paroi est en \(z=-a\).
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Avec \(z_p=-a\) :
+
+\equationajustee{\begin{aligned}
+F_z&=-\frac{dE_{\mathrm{Cas}}}{dz_p}\\
+&=+\frac{dE_{\mathrm{Cas}}}{da}\\
+&=\frac{3B}{a^4}
+\end{aligned}}
+
+\equationajustee{\boxed{\vec F=\frac{3B}{a^4}\,\vec e_z}}
+
+\equationajustee{\boxed{\|\vec F\|=\frac{3B}{a^4}}}
+
+La force pousse la paroi vers l'autre plan : elle est \textbf{attractive}, comme en Q20. Sa décroissance en \(a^{-4}\) est très rapide (un facteur \(10^4\) par décade).
+
+\begin{methode}
+
+Pour contrôler un signe de force dérivée d'une énergie, on vérifie qu'elle pousse le système vers les énergies plus basses.
+
+\end{methode}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Une force par unité de surface est une pression. Écrivez la dimension de \(\hbar\) en M, L, T.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Résolvez le système en commençant par l'équation sur M, puis identifiez la force totale à celle de Q23.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\([\hbar]=\mathrm{M\,L^2\,T^{-1}}\), \([c]=\mathrm{L\,T^{-1}}\), et \([P]=\mathrm{M\,L^{-1}\,T^{-2}}\) :
+
+\equationajustee{\begin{aligned}{}&\text{(M)}\quad\delta=1\\
+&\text{(T)}\quad-\beta-\delta=-2\\
+&\text{(L)}\quad\alpha+\beta+2\delta=-1
+\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}
+\delta&=1\\
+\beta&=1\\
+\alpha&=-4
+\end{aligned}}}
+
+La force sur \(L^2\) vaut \(\kappa\hbar cL^2/a^4=3B/a^4\), d'où, avec \(\kappa=\pi^2/240\) :
+
+\equationajustee{\begin{aligned}
+B&=\frac{\kappa\hbar cL^2}{3}\\
+&=\boxed{\frac{\pi^2\hbar cL^2}{720}}
+\end{aligned}}
+
+On retrouve la dépendance en \(a^{-4}\) de Q23 par un chemin indépendant.
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+\(\Delta P_{\mathrm{Cas}}=\kappa\hbar c/a^4\). Calculez une fois le préfacteur, puis faites varier \(a\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour commenter, comparez à une grandeur familière et pensez à la difficulté de garder deux plans parallèles.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+La force étant attractive, la pression extérieure l'emporte :
+
+\equationajustee{\Delta P_{\mathrm{Cas}}=\frac{\pi^2\hbar c}{240\,a^4}}
+
+avec
+
+\equationajustee{\begin{aligned}
+\frac{\pi^2\hbar c}{240}&=\frac{9{,}87\times3{,}14\times10^{-26}}{240}\\
+&=1{,}29\times10^{-27}\ \mathrm{J\cdot m}
+\end{aligned}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(a=100\) nm (\(a^4=10^{-28}\) m⁴) : \(\boxed{\Delta P_{\mathrm{Cas}}\approx13\ \mathrm{Pa}}\) et \(\boxed{F\approx1{,}3\times10^{-3}\ \mathrm N}\) sur 1 cm² ;
+\item
+  \(a=1\) mm : facteur \(10^{16}\), \(\boxed{\Delta P_{\mathrm{Cas}}\approx1{,}3\times10^{-15}\ \mathrm{Pa}}\) et \(\boxed{F\approx1{,}3\times10^{-19}\ \mathrm N}\).
+\end{itemize}
+
+\emph{Commentaire.} À 100 nm, la force (le poids d'environ 130 mg) est mesurable ; à 1 mm, elle est indétectable. Mais garder deux plaques de 1 cm² parallèles à 100 nm est très difficile : \(\delta F/F=4\,\delta a/a\), donc une exactitude de 1 \% exige un parallélisme meilleur que \(0{,}25\) nm sur 1 cm.
+
+\begin{piege}
+
+L'erreur la plus fréquente est une puissance de 10 perdue dans \(a^4\). Écrivez \(a^4\) à part avant de diviser.
+
+\end{piege}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-c-mesures-expuxe9rimentales-et-corrections-des-uxe9carts-uxe0-la-force-thuxe9orique-de-casimir}{%
+\section{Partie C --- Mesures expérimentales et corrections des écarts à la force théorique de Casimir}\label{partie-c-mesures-expuxe9rimentales-et-corrections-des-uxe9carts-uxe0-la-force-thuxe9orique-de-casimir}}
+
+\hypertarget{i-une-mesure-dans-une-configuration-sphuxe8re-plan}{%
+\subsection{I --- Une mesure dans une configuration sphère-plan}\label{i-une-mesure-dans-une-configuration-sphuxe8re-plan}}
+
+La géométrie sphère-plan contourne la difficulté du parallélisme ; l'approximation de proximité permet de réutiliser la loi plan-plan couronne par couronne.
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Quelle contrainte de réglage la loi en \(a^{-4}\) impose-t-elle en plan-plan ? Cette contrainte existe-t-elle pour une sphère ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+En plan-plan, la distance doit être la même partout à mieux que le nanomètre sur des plaques centimétriques (Q25) : c'est pratiquement hors de portée. Une sphère n'a pas d'orientation : la géométrie est fixée par la seule distance de plus courte approche \(d\), mesurée par interférométrie, sans aucun réglage de parallélisme. La zone en interaction est petite (Q27), donc la qualité de surface n'est requise que localement, et la sphère se monte directement sur le micro-levier d'un microscope à force atomique.
+
+\begin{methode}
+
+Une réponse qualitative en physique expérimentale gagne beaucoup à être chiffrée : ici, le parallélisme exigé en plan-plan.
+
+\end{methode}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Reliez \(e\), \(x\) et \(R\) par le théorème de Pythagore, puis simplifiez pour \(e\ll R\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+La contribution locale varie en \((d+e)^{-4}\). Choisissez un critère explicite (par exemple, \(e\) devient égal à \(d\)) et calculez le rayon correspondant.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour aller plus loin, intégrez sur les couronnes avec \(x\,dx=R\,de\) et calculez la fraction de la force due aux couronnes de rayon inférieur à \(X\).
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\emph{Géométrie.} Dans le triangle rectangle formé par le centre \(O\), le centre de la couronne et un point de celle-ci : \(R^2=x^2+(R-e)^2\), soit \(x^2=2Re-e^2\), et pour \(e\ll R\)
+
+\equationajustee{\boxed{e\simeq\frac{x^2}{2R}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q27-geometrie-sphere-plan.pdf}
+\caption*{Figure 3 --- Géométrie sphère-plan (non à l'échelle) : R² = x² + (R −
+e)², H = d + e, la force vient de la calotte x \textless{} x\_c = √(2Rd)}
+\end{figure}
+
+\emph{Estimation.} D'après Q23--Q24, la force surfacique locale vaut \(\kappa\hbar c/(d+e)^4\), donc
+
+\equationajustee{\frac{P(x)}{P(0)}=\left(1+\frac{x^2}{2Rd}\right)^{-4}}
+
+Elle est divisée par 16 dès que \(e=d\), c'est-à-dire pour
+
+\equationajustee{\begin{aligned}
+x_c&=\sqrt{2Rd}\\
+&=\sqrt{2\times10^{-4}\times10^{-7}}\\
+&\approx\boxed{4{,}5\ \mu\mathrm m\ll R=100\ \mu\mathrm m}
+\end{aligned}}
+
+On vérifie \(e\sim d=10^{-3}R\ll R\). En intégrant, avec \(dS=2\pi x\,dx=2\pi R\,de\) :
+
+\equationajustee{\frac{F(x<X)}{F}=1-\left(1+\frac{X^2}{2Rd}\right)^{-3}}
+
+soit 87,5 \% pour \(X=x_c\) et 99 \% pour \(X\approx9\) µm. La force provient donc d'une calotte de quelques micromètres de rayon autour du point le plus proche.
+
+L'intégrale complète redonne la formule de \(F_{sp}\) pour \(\eta_E=1\) :
+
+\equationajustee{\begin{aligned}
+F&=\frac{2\pi R\kappa\hbar c}{3d^3}\\
+&=\frac{\pi^3\hbar cR}{360\,d^3}
+\end{aligned}}
+
+\begin{methode}
+
+Approximation de proximité : on découpe une géométrie courbe en éléments quasi plans et l'on somme la loi plan-plan. Le changement de variable \(x\,dx=R\,de\) rend l'intégrale immédiate.
+
+\end{methode}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Calculez d'abord le préfacteur pour \(\eta_E=1\), puis lisez \(\eta_E\) sur la figure 6 au bord gauche.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\equationajustee{\frac{\pi^3\hbar cR}{360\,d^3}=\frac{31{,}0\times3{,}14\times10^{-26}\times10^{-4}}{360\times10^{-21}}=2{,}70\times10^{-10}\ \mathrm N}
+
+Avec \(\eta_E\approx0{,}54\) à \(d=0{,}1\) µm (figure 6) :
+
+\equationajustee{\boxed{F_{sp}\approx1{,}5\times10^{-10}\ \mathrm N\approx0{,}15\ \mathrm{nN}}}
+
+La figure 4 donne environ \(-0{,}14\) nN à 100 nm (le signe traduit l'attraction) : l'accord est très bon, à la précision de lecture des graphes près.
+
+\begin{piege}
+
+Sans le facteur \(\eta_E\), on trouve 0,27 nN et l'on conclurait à tort à un désaccord d'un facteur 2.
+
+\end{piege}
+
+\hypertarget{ii-prise-en-compte-de-la-tempuxe9rature-non-nulle}{%
+\subsection{II --- Prise en compte de la température non nulle}\label{ii-prise-en-compte-de-la-tempuxe9rature-non-nulle}}
+
+On vérifie que les photons thermiques ne gênent pas la mesure à 100 nm.
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Loi de Wien à température ambiante, puis comparaison avec la plus grande longueur d'onde admise dans la cavité.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\equationajustee{\boxed{\lambda_T\approx\frac{2898\ \mu\mathrm m\cdot\mathrm K}{300\ \mathrm K}\approx10\ \mu\mathrm m}}
+
+(infrarouge thermique). Q11 donne \(\lambda_{\max}=200\) nm, environ 50 fois plus petit : aucun mode de la cavité ne peut accueillir ces photons (\(\hbar\omega_1\approx6\) eV contre \(k_BT\approx26\) meV). \textbf{Les photons thermiques ne contribuent pas à l'intérieur de la cavité.}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Faites le changement de variable \(x=\hbar\omega/(k_BT)\) pour faire apparaître l'intégrale fournie.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La face interne reçoit-elle des photons thermiques ? Que devient la pression sur la face externe ? Comparez à Q25.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\equationajustee{u(T)=\frac{\hbar}{\pi^2c^3}\left(\frac{k_BT}{\hbar}\right)^4\int_0^{+\infty}\frac{x^3\,dx}{e^x-1}}
+
+d'où
+
+\equationajustee{\boxed{u(T)=\frac{\pi^2(k_BT)^4}{15\,\hbar^3c^3}}}
+
+À 300 K : \(k_BT=4{,}14\times10^{-21}\) J et \(u\approx6{,}2\times10^{-6}\) J·m⁻³. D'après Q8, la pression sur la face externe est de l'ordre de \(P_{\mathrm{th}}\sim u\sim10^{-5}\) Pa.
+
+La face interne ne recevant pas de photons thermiques (Q29), cette pression n'est pas compensée : elle pousse chaque miroir vers l'autre et s'ajoute à l'attraction de Casimir. Cependant
+
+\equationajustee{\frac{P_{\mathrm{th}}}{\Delta P_{\mathrm{Cas}}(100\ \mathrm{nm})}\approx\frac{6\times10^{-6}}{13}\approx5\times10^{-7}}
+
+\textbf{La température est sans effet mesurable à 100 nm.} Comme \(\Delta P_{\mathrm{Cas}}\propto a^{-4}\), les deux pressions deviennent comparables vers \(a\approx4\) µm : la correction thermique compte aux grandes séparations.
+
+\begin{piege}
+
+Ne pas croire la pression thermique « compensée » par symétrie : c'est précisément l'absence de photons thermiques entre les miroirs qui la rend non compensée.
+
+\end{piege}
+
+\hypertarget{iii-prise-en-compte-du-caractuxe8re-imparfait-des-plans-ruxe9flecteurs}{%
+\subsection{III --- Prise en compte du caractère imparfait des plans réflecteurs}\label{iii-prise-en-compte-du-caractuxe8re-imparfait-des-plans-ruxe9flecteurs}}
+
+Un métal réel n'est pas un conducteur parfait : on le modélise par un plasma d'électrons, dont la pulsation plasma fixe l'échelle des corrections.
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Nommez chaque terme, et repérez les forces absentes de l'équation.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour une onde plane progressive dans le milieu, reliez \(\|\vec B\|\) à \(\|\vec E\|\) par la vitesse de phase.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\(m^*\,d\vec v/dt\) : inertie, avec une masse effective qui rend compte de l'interaction de l'électron avec le réseau ; \(-e\vec E\) : force électrique ; \(-e\,\vec v\wedge\vec B\) : force magnétique. Sont négligés le poids et le frottement dû à la relaxation (plasma sans pertes).
+
+Pour une opph, \(\|\vec B\|=\|\vec E\|/v_\varphi\), donc \(\|\vec v\wedge\vec B\|/\|\vec E\|\leqslant v/v_\varphi\) :
+
+\equationajustee{\boxed{\text{terme \text{magnétique} \text{négligeable} si }v\ll v_\varphi}}
+
+c'est-à-dire pour des électrons non relativistes si \(v_\varphi\geqslant c\) (établi en Q36).
+
+\begin{piege}
+
+\(B=E/c\) n'est vrai que dans le vide ; dans le plasma, c'est \(v_\varphi\) qui intervient.
+
+\end{piege}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Comparez les vitesses acquises par un ion et un électron dans le même champ.
+
+\end{indication}
+
+\begin{indication}{2}
+
+En notation complexe, \(d/dt\) devient \(i\omega\) ; identifiez \(\underline{\vec j}=\underline\sigma\,\underline{\vec E}\).
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+À charge égale en valeur absolue, la vitesse est inversement proportionnelle à la masse ; à densités égales, le rapport des courants vaut \(m^*/M\sim10^{-5}\) ou moins : \textbf{les ions ne contribuent pratiquement pas}. Pour les électrons : \(i\omega m^*\underline{\vec v}=-e\underline{\vec E}\) et \(\underline{\vec j}=-n_ee\underline{\vec v}\), d'où
+
+\equationajustee{\boxed{\underline\sigma=\frac{n_ee^2}{i\,m^*\omega}=-i\,\frac{n_ee^2}{m^*\omega}}}
+
+La conductivité est imaginaire pure : le courant est en quadrature avec le champ et le plasma ne dissipe pas en moyenne.
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Prenez le rotationnel de Maxwell-Ampère et utilisez la formule du formulaire avec \(\mathrm{div}\,\vec B=0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Remplacez ensuite \(\overrightarrow{\mathrm{rot}}\,\underline{\vec E}\) par Maxwell-Faraday en notation complexe.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\(\overrightarrow{\mathrm{rot}}\,\underline{\vec B}=\mu_0(\underline\sigma+i\omega\varepsilon_0)\underline{\vec E}\). En prenant le rotationnel (milieu homogène), avec \(\overrightarrow{\mathrm{rot}}\,\overrightarrow{\mathrm{rot}}\,\underline{\vec B}=-\Delta\underline{\vec B}\) et \(\overrightarrow{\mathrm{rot}}\,\underline{\vec E}=-i\omega\underline{\vec B}\) :
+
+\equationajustee{-\Delta\underline{\vec B}=-i\omega\mu_0\underline\sigma\,\underline{\vec B}+\frac{\omega^2}{c^2}\underline{\vec B}}
+
+avec
+
+\equationajustee{i\omega\mu_0\underline\sigma=\frac{\mu_0n_ee^2}{m^*}}
+
+\equationajustee{\boxed{\Delta\underline{\vec B}+\left(\frac{\omega^2}{c^2}-\frac{\mu_0n_ee^2}{m^*}\right)\underline{\vec B}=\vec 0}}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Pour une onde en \(e^{i(\omega t-kz)}\), à quoi se réduit le laplacien ?
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\(\Delta\underline{\vec B}=-k^2\underline{\vec B}\), d'où, avec \(\mu_0=1/(\varepsilon_0c^2)\) :
+
+\equationajustee{\boxed{k^2=\frac{1}{c^2}\left(\omega^2-\frac{n_ee^2}{\varepsilon_0m^*}\right)}}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Discutez le signe de \(k^2\) selon \(\omega\).
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\equationajustee{\boxed{\omega_P=\sqrt{\frac{n_ee^2}{\varepsilon_0m^*}}}}
+
+d'où
+
+\equationajustee{k^2=\frac{\omega^2-\omega_P^2}{c^2}}
+
+Pour \(\omega>\omega_P\), \(k\) est réel : propagation. Pour \(\omega<\omega_P\), \(k\) est imaginaire pur : onde évanescente, pas de propagation, l'onde est réfléchie. \(\omega_P\) est une \textbf{pulsation de coupure}.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q35-dispersion-plasma.pdf}
+\caption*{Figure 4 --- Dispersion du plasma ω² = ω\_P² + k²c² : onde évanescente
+sous ω\_P, propagation avec v\_φ \textgreater{} c au-dessus}
+\end{figure}
+
+\begin{methode}
+
+Un métal réfléchit les ondes de pulsation inférieure à \(\omega_P\) : c'est ce qui justifie le modèle du miroir parfait tant que \(\omega\ll\omega_P\), et ce qui le met en défaut quand les modes utiles approchent \(\omega_P\), c'est-à-dire quand \(a\) approche \(\lambda_P\).
+
+\end{methode}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+\(v_\varphi=\omega/k\) ; comparez à \(c\), puis revenez à la condition de Q31.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\equationajustee{\boxed{v_\varphi=\frac{c}{\sqrt{1-\omega_P^2/\omega^2}}>c}}
+
+La condition \(v\ll v_\varphi\) est donc remplie dès que \(v\ll c\).
+
+Or \(v=eE/(m^*\omega)\) : avec \(\omega\sim10^{16}\) rad·s⁻¹ et \(E\) jusqu'à \(10^5\) V·m⁻¹, \(v\lesssim10^3\) m·s⁻¹. L'hypothèse de Q31 est validée.
+
+(La vitesse de phase supérieure à \(c\) ne transporte ni énergie ni information ; ici \(v_gv_\varphi=c^2\).)
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Passez de \(\lambda_P\) à \(\omega_P\), puis inversez l'expression de Q35.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\(\omega_P=2\pi c/\lambda_P=2{,}39\times10^{16}\) rad·s⁻¹, puis
+
+\equationajustee{m^*=\frac{n_ee^2}{\varepsilon_0\omega_P^2}=\frac{1{,}96\times10^{29}\times2{,}56\times10^{-38}}{8{,}85\times10^{-12}\times5{,}71\times10^{32}}}
+
+\equationajustee{\boxed{m^*\approx9{,}9\times10^{-31}\ \mathrm{kg}\approx1{,}09\,m_e}}
+
+Valeur proche de \(m_e\) : le modèle d'électrons quasi libres est raisonnable pour l'aluminium.
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Sur la figure 8, quelle est la pente de la droite en tirets (régime \(a\ll\lambda_P\)) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Combinez la loi obtenue pour \(\eta_F\) avec la dépendance de \(F_{\mathrm{th}}\) établie en Q23--Q24.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+L'asymptote va de \(\eta_F\approx1{,}2\times10^{-2}\) pour \(a/\lambda_P=10^{-2}\) à \(\eta_F\approx1\) pour \(a/\lambda_P\approx0{,}8\) : deux décades pour deux, pente 1.
+
+Donc \(\eta_F\propto a\) pour \(a\ll\lambda_P\), et avec \(F_{\mathrm{th}}\propto a^{-4}\) :
+
+\equationajustee{\boxed{\|F_{\mathrm{mes}}\|=\eta_F\,\|F_{\mathrm{th}}\|\propto a^{\alpha'}}}
+
+\equationajustee{\boxed{\alpha'=-3}}
+
+La force réelle est plus faible que la force idéale et diverge moins vite ; pour \(a\gg\lambda_P\), \(\eta_F\to1\) et l'on retrouve \(a^{-4}\).
+
+\begin{piege}
+
+L'énoncé impose un exposant entier : il vise le régime asymptotique (droite en tirets), pas une pente moyenne sur la figure 7, qui ne serait pas entière.
+
+\end{piege}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Calculez \(a/\lambda_P\) pour chaque métal dans les deux cas et lisez \(\eta_F\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour justifier l'or, pensez à ce qui se forme à la surface de l'aluminium à l'air et aux conséquences sur la distance et les potentiels.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\emph{Cas 1, \(a=0{,}1\) µm.} \(a/\lambda_P=1{,}27\) (Al) et \(0{,}73\) (Au).
+
+\(\eta_F\) croît avec \(a/\lambda_P\), et la figure 7 donne \(\eta_F^{\mathrm{Al}}\approx0{,}55\) contre \(\eta_F^{\mathrm{Au}}\approx0{,}48\). Le choix compte, à l'avantage de l'aluminium (environ 15 \% de signal en plus).
+
+\emph{Cas 2, \(a=10\) µm.} \(a/\lambda_P\gg1\) pour les deux métaux, \(\eta_F\approx0{,}98\) : choix indifférent.
+
+\emph{Pour \(a\sim100\) nm}, les figures favorisent l'aluminium, mais l'or est choisi en pratique : chimiquement inerte, il ne s'oxyde pas, alors que l'aluminium se couvre d'une couche d'alumine isolante de quelques nanomètres. Cette couche rend incertaine la position de la surface réfléchissante (avec \(\delta F/F\approx4\,\delta a/a\), 2 nm à 100 nm donnent environ 8 \%, bien plus que les 2 \% de précision visés) et gêne l'égalisation des potentiels (force électrostatique parasite). On perd un peu de signal mais on gagne en exactitude.
+
+\hypertarget{iv-mesure-de-duxe9flexion-par-interfuxe9romuxe9trie-en-quadrature-de-phase}{%
+\subsection{IV --- Mesure de déflexion par interférométrie en quadrature de phase}\label{iv-mesure-de-duxe9flexion-par-interfuxe9romuxe9trie-en-quadrature-de-phase}}
+
+Deux polarisations jouent le rôle des deux bras d'un interféromètre. Un déplaceur à \(45^\circ\) les fait interférer, et une seconde voie déphasée de \(\pi/2\) donne accès à \(\cos\varphi\) et à \(\sin\varphi\).
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Comparez les chemins des deux rayons à l'aller et au retour.
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+Le rayon réfléchi sur l'extrémité parcourt \(d\) de plus à l'aller et \(d\) de plus au retour : différence de marche \(2d\).
+
+\equationajustee{\boxed{\varphi=\frac{2\pi}{\lambda_0}\,2d=\frac{4\pi d}{\lambda_0}}}
+
+C'est un retard, cohérent avec le facteur \(e^{-i\varphi}\) en convention \(e^{+i\omega t}\).
+
+\begin{piege}
+
+L'oubli du facteur 2 de l'aller-retour se répercute directement sur la résolution de Q43.
+
+\end{piege}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Sur quelle base faut-il décomposer \(\vec e_x+e^{-i\varphi}\vec e_y\) pour faire apparaître \(1\pm e^{-i\varphi}\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un déplaceur sépare les composantes selon \(\vec e_u\) et \(\vec e_v\) : comment orienter ces directions par rapport à \(x\) et \(y\) ? Faites un schéma dans le plan transverse.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+Le faisceau qui atteint \(\mathrm{BD_1}\) se propage selon \(\vec e_z\). Avec
+
+\equationajustee{\begin{aligned}
+\vec e_{A_1}&=\frac{\vec e_x+\vec e_y}{\sqrt2}\\
+\vec e_{B_1}&=\frac{\vec e_x-\vec e_y}{\sqrt2}
+\end{aligned}}
+
+on a
+
+\equationajustee{\underline{E'_0}(\vec e_x+e^{-i\varphi}\vec e_y)=\frac{\underline{E'_0}}{\sqrt2}\left[(1+e^{-i\varphi})\vec e_{A_1}+(1-e^{-i\varphi})\vec e_{B_1}\right]}
+
+Ce sont les amplitudes annoncées, avec \(\underline{E''_0}=\underline{E'_0}/\sqrt2\).
+
+\(\mathrm{BD_1}\) a donc sa face d'entrée normale à \(\vec e_z\) et ses directions propres selon les bissectrices de \(x\) et \(y\) : \textbf{il est tourné de \(45^\circ\) autour de l'axe de propagation}. Par exemple :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\vec e_u=\vec e_{A_1}\) (rayon non dévié, vers \(A_1\)) ;
+\item
+  \(\vec e_v=-\vec e_{B_1}\) (rayon décalé, vers \(B_1\)), \((\vec e_u,\vec e_v,\vec e_z)\) direct ;
+\item
+  axe optique dans le plan \((\vec e_v,\vec e_z)\).
+\end{itemize}
+
+Le signe de \(\vec e_{B_1}\) n'affecte pas l'intensité.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q41-orientation-bd1.pdf}
+\caption*{Figure 5 --- Orientation de BD1 vue dans le sens de propagation (e\_z
+vers l'observateur) : directions propres selon les bissectrices de x et
+y, A1 reçoit 1 + e\^{}(−iφ), B1 reçoit 1 − e\^{}(−iφ)}
+\end{figure}
+
+\begin{methode}
+
+Projeter deux polarisations orthogonales sur des axes à \(45^\circ\) les fait interférer : chaque voie reçoit leur somme ou leur différence. Sans cette rotation, on mesurerait deux intensités indépendantes et l'information de phase serait perdue.
+
+\end{methode}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Calculez \(C_1\) à partir des amplitudes données, en développant \(|1\pm e^{-i\varphi}|^2\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Après le cube, la composante qui porte \(e^{-i\varphi}\) est-elle selon \(y\) ou selon \(z\) ? Que lui fait la lame, en convention \(e^{+i\omega t}\) ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Placez le point \((C_1,C_2)\) dans le plan : sur quelle courbe se trouve-t-il ?
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\emph{Voie 1.} \(|1\pm e^{-i\varphi}|^2=2\pm2\cos\varphi\), d'où \(C_1=\cos\varphi\).
+
+\emph{Voie 2.} Après réflexion sur \(\mathrm{CS_s}\), la composante issue de \(\vec e_y\), qui porte \(e^{-i\varphi}\), reste selon \(\vec e_y\) (elle est perpendiculaire au plan de réflexion), l'autre passe selon \(\vec e_z\).
+
+La lame avance la composante selon \(y\) de \(\pi/2\), c'est-à-dire la multiplie par \(e^{i\pi/2}\) : elle porte \(e^{-i(\varphi-\pi/2)}\). Tout se passe comme si \(\varphi\) était remplacé par \(\varphi-\pi/2\) :
+
+\equationajustee{C_2=\cos\!\left(\varphi-\frac\pi2\right)=\sin\varphi}
+
+\emph{Conclusion.}
+
+\equationajustee{\boxed{\underline C=e^{i\varphi}}}
+
+\equationajustee{\boxed{\varphi=\theta=\arg\underline C}}
+
+Le point \((C_1,C_2)\) décrit le cercle unité et \(\theta\) est son angle polaire mesuré depuis l'axe \(C_1\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q42-contraste-complexe.pdf}
+\caption*{Figure 6 --- Contraste complexe : C = e\^{}(iφ) parcourt le cercle
+unité, la déflexion se lit sur l'angle polaire θ = φ}
+\end{figure}
+
+Avec une seule voie, on aurait \(\cos\varphi\) : ambiguïté de signe et sensibilité nulle près de \(\varphi=0\). La quadrature lève l'ambiguïté, donne une sensibilité uniforme, et la mesure, faite sur des rapports d'intensités, est insensible aux fluctuations de puissance du laser.
+
+\begin{jury}
+
+Sur une question à prise d'initiative, il faut expliquer pourquoi la lame revient à décaler \(\varphi\) de \(\pi/2\) et préciser la convention utilisée ; avec d'autres conventions, on trouve \(\theta=-\varphi\), ce qui est acceptable si c'est dit.
+
+\end{jury}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Différenciez la relation entre \(\theta\) et \(d\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour conclure, convertissez en force avec une raideur de levier plausible (elle n'est pas donnée) et comparez aux forces de la figure 4.
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\(\theta=4\pi d/\lambda_0\), donc
+
+\equationajustee{\delta d=\frac{\lambda_0\,\delta\theta}{4\pi}=\frac{633\times10^{-9}\times10^{-5}}{4\pi}}
+
+\equationajustee{\boxed{\delta d\approx5\times10^{-13}\ \mathrm m=0{,}5\ \mathrm{pm}}}
+
+C'est une petite fraction de la taille d'un atome. La raideur \(k\) du levier n'étant pas donnée, on raisonne en ordre de grandeur : \(\delta F=k\,\delta d\) va de \(5\times10^{-15}\) N (\(k\sim10^{-2}\) N·m⁻¹) à quelques \(10^{-12}\) N (\(k\sim\) quelques N·m⁻¹), très en dessous des 0,1 à 0,5 nN de la figure 4. \textbf{La détection optique n'est pas le facteur limitant} : ce sont plutôt le bruit thermique du levier et les dérives. Le dispositif convient largement à la mesure des forces de Casimir sur toute la plage explorée.
+
+\begin{methode}
+
+Pour conclure sur une résolution, on la convertit dans la grandeur d'intérêt (ici une force) et on la compare au signal attendu, en signalant les hypothèses non fournies par l'énoncé.
+
+\end{methode}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Onde devant un conducteur parfait : condition \(\vec E_{\mathrm{tan}}=\vec 0\), onde réfléchie déphasée de \(\pi\), onde stationnaire, champs construits onde par onde.
+\item
+  Force sur une nappe de courant : champ créé par le reste de la nappe, égal à la demi-somme des champs de part et d'autre.
+\item
+  Pression de radiation : \(P=\langle u_{em}\rangle\) pour un miroir parfait en incidence normale, retrouvée par un bilan de photons (facteur 2 de la réflexion).
+\item
+  Quantification par les conditions aux limites : \(\omega_n=n\pi c/a\), densité de modes \(\rho_k=L/\pi\).
+\item
+  Énergie minimale par Heisenberg : minimiser \(\frac12m\omega_0^2\Delta x^2+\hbar^2/(8m\Delta x^2)\).
+\item
+  Divergence et différence : une somme infinie peut avoir une différence finie et physique.
+\item
+  Lecture log-log : pente \(=\Delta\log y/\Delta\log x\).
+\item
+  Analyse dimensionnelle avec \([\hbar]=\mathrm{M\,L^2\,T^{-1}}\) : \(P_{\mathrm{Cas}}\propto\hbar c/a^4\).
+\item
+  Approximation de proximité et changement de variable \(x\,dx=R\,de\).
+\item
+  Modèle du plasma : \(\underline\sigma\) imaginaire pure, \(k^2=(\omega^2-\omega_P^2)/c^2\), coupure, \(v_\varphi>c\).
+\item
+  Interférométrie de polarisation : projection à \(45^\circ\), lame quart d'onde, contraste complexe \(e^{i\varphi}\).
+\end{itemize}
+
+\textbf{Prérequis à revoir.} Relations de passage et orientation de la normale ; force de Laplace ; photon ; états stationnaires ; ondes dans un plasma ; polarisation et lames à retard ; lois de Planck et de Wien.
+
+\textbf{Questions classiques transposables.} Pression de radiation (Q4--Q9), modes d'une cavité (Q10--Q11), énergie du fondamental par Heisenberg (Q13--Q16), plasma (Q31--Q37) : ces blocs reviennent très souvent, dans des contextes variés (voile solaire, laser, ionosphère, métaux). Les questions de lecture de figures (Q22, Q28, Q38, Q39) récompensent les relevés chiffrés et les comparaisons explicites.
+
+\end{document}

@@ -1,0 +1,1000 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP PSI — Informatique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · CCINP PSI}
+\fancyhead[R]{\small Informatique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries CCINP PSI — Informatique 2026\par}\medskip
+  {\large CCINP · PSI · Informatique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve PSI5IN, mutualisée avec e3a-Polytech, durée 3 heures, calculatrice interdite. Python, sauf pour les bases de données (SQL). Sujet « Autour de l'astro-informatique » en quatre parties indépendantes, 33 questions. Les questions Q23, Q24 et Q28 s'appuient sur le Document Réponse (DR) : le graphe à sept sommets et le squelette de \texttt{recherche\_distance\_minimale} sont repris ci-dessous d'après le DR publié par le concours.
+
+\hypertarget{partie-i-interrogation-dune-base-de-donnuxe9es-astronomiques}{%
+\section{Partie I --- Interrogation d'une base de données astronomiques}\label{partie-i-interrogation-dune-base-de-donnuxe9es-astronomiques}}
+
+\hypertarget{i.1-observation-du-ciel-et-poids-des-donnuxe9es}{%
+\subsection{I.1 --- Observation du ciel et poids des données}\label{i.1-observation-du-ciel-et-poids-des-donnuxe9es}}
+
+\hypertarget{q1}{%
+\subsection{Q1}\label{q1}}
+
+Avec \(n\) bits on code \(2^n\) valeurs distinctes. Un pixel prend \(256 = 2^8\) valeurs (entiers de 0 à 255).
+
+Il faut donc \(2^n \geqslant 2^8\) : 7 bits n'en coderaient que \(128\), 8 bits en codent exactement \(256\).
+
+\equationajustee{\boxed{8 \text{ bits, soit } 1 \text{ octet par pixel}}}
+
+Une photographie compte \(2048 \times 1489\) pixels d'un octet chacun. Calcul posé, sans calculatrice :
+
+\equationajustee{\begin{aligned}
+2048 \times 1489 &= 2 \times 1024 \times 1489 \\
+&= 2978 \times 1024 \\
+&= 3\,049\,472 \text{ octets.}
+\end{aligned}}
+
+Avec \(1\ \text{Mo} = 10^6\) octets, cela fait \(3{,}05\) Mo.
+
+Avec \(1\ \text{Mio} = 2^{20}\) octets, cela fait \(2978/1024 \approx 2{,}9\) Mio. Dans les deux conventions :
+
+\equationajustee{\boxed{\text{taille d'une photographie} \approx 3\ \text{Mo}}}
+
+\hypertarget{q2}{%
+\subsection{Q2}\label{q2}}
+
+Les longueurs d'onde vont de 380 à 920 nm par pas de 0,1 nm, les deux bornes comprises :
+
+\equationajustee{\begin{aligned}
+\frac{920 - 380}{0{,}1} &= 5400 \text{ pas,} \\
+5400 + 1 &= 5401 \text{ longueurs d'onde.}
+\end{aligned}}
+
+Chaque intensité est un flottant de 64 bits, soit 8 octets. On ne stocke pas les longueurs d'onde, qui se retrouvent par \(\lambda_i = 380 + 0{,}1\,i\) nm.
+
+\equationajustee{5401 \times 8 = 43\,208 \text{ octets}}
+
+\equationajustee{\boxed{\text{taille d'un spectre} \approx 43\ \text{ko}}}
+
+En unités binaires, \(43\,208/1024 \approx 42{,}2\) Kio, soit 42 Kio. Compter 5400 valeurs donnerait 43 200 octets, même arrondi.
+
+Un spectre est environ 70 fois plus léger qu'une photographie.
+
+\hypertarget{i.2-interrogation-de-la-base-en-sql}{%
+\subsection{I.2 --- Interrogation de la base en SQL}\label{i.2-interrogation-de-la-base-en-sql}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q3-schema-relationnel.pdf}
+\caption*{Figure 1 --- Tables SpecObj et PhotoObj : bestObjId et targetObjId
+désignent tous deux un objID de PhotoObj, et z est un redshift d'un
+côté, une magnitude de l'autre}
+\end{figure}
+
+\hypertarget{q3}{%
+\subsection{Q3}\label{q3}}
+
+Les deux identifiants à comparer sont des attributs de la même ligne de \texttt{SpecObj} : aucune jointure n'est nécessaire.
+
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*)
+FROM SpecObj
+WHERE bestObjId = targetObjId;
+\end{lstlisting}
+
+\hypertarget{q4}{%
+\subsection{Q4}\label{q4}}
+
+On associe chaque spectre à son objet photographique par \texttt{bestObjId}, on regroupe par objet, on filtre sur l'agrégat avec \texttt{HAVING} (le \texttt{WHERE} agit avant le regroupement) et on trie par nombre décroissant.
+
+\begin{lstlisting}[language=SQL]
+SELECT PhotoObj.objID, COUNT(*) AS nb_spectres
+FROM PhotoObj
+JOIN SpecObj ON PhotoObj.objID = SpecObj.bestObjId
+GROUP BY PhotoObj.objID
+HAVING COUNT(*) >= 2
+ORDER BY nb_spectres DESC;
+\end{lstlisting}
+
+La jointure interne écarte d'elle-même les objets sans spectre, ce qui ne change rien puisqu'on en exige au moins deux. Une version sans jointure (\texttt{SELECT\ bestObjId,\allowbreak{}\ COUNT(\allowbreak{}*)\allowbreak{}\ FROM\ SpecObj\ GROUP\ BY\ bestObjId\ …}) renvoie les mêmes valeurs ; la jointure garantit que les identifiants renvoyés sont bien ceux de \texttt{PhotoObj}.
+
+\hypertarget{q5}{%
+\subsection{Q5}\label{q5}}
+
+La classe et le redshift sont dans \texttt{SpecObj}, les angles et la magnitude dans \texttt{PhotoObj} ; on joint par \texttt{bestObjId} (meilleure observation) et on préfixe les deux attributs homonymes \texttt{z}.
+
+\begin{lstlisting}[language=SQL]
+SELECT PhotoObj.objID, PhotoObj.ra, PhotoObj.dec, SpecObj.z
+FROM PhotoObj
+JOIN SpecObj ON PhotoObj.objID = SpecObj.bestObjId
+WHERE SpecObj.class = 'GALAXY'
+  AND PhotoObj.z < 17
+  AND PhotoObj.ra >= 100 AND PhotoObj.ra <= 250;
+\end{lstlisting}
+
+\texttt{PhotoObj.z\ \textless{}\ 17} porte sur la magnitude absolue infrarouge et \texttt{SpecObj.z} est le redshift demandé. Un objet associé à plusieurs spectres donne une ligne par spectre, chacune avec son redshift.
+
+\hypertarget{partie-ii-classification-de-spectres-de-galaxies}{%
+\section{Partie II --- Classification de spectres de galaxies}\label{partie-ii-classification-de-spectres-de-galaxies}}
+
+\hypertarget{ii.1-justification-de-lapproche}{%
+\subsection{II.1 --- Justification de l'approche}\label{ii.1-justification-de-lapproche}}
+
+\hypertarget{q6}{%
+\subsection{Q6}\label{q6}}
+
+L'algorithme des \(k\)-moyennes est un \textbf{algorithme de classification non supervisée} (apprentissage non supervisé) : il partitionne des données non étiquetées (ici des spectres, vecteurs de \({\mathbb{R}}^N\) munis d'une distance) en \(k\) groupes de données proches.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  On choisit \(k\) centroïdes initiaux, par exemple \(k\) données tirées au hasard.
+\item
+  On affecte chaque donnée au centroïde le plus proche, ce qui définit une partition en \(k\) groupes.
+\item
+  On remplace chaque centroïde par le barycentre (la moyenne) des données de son groupe.
+\item
+  On répète les étapes 2 et 3 jusqu'à ce que la partition ne change plus.
+\end{enumerate}
+
+\textbf{Le paramètre \(k\) est le nombre de groupes (classes) que l'on demande à l'algorithme de former} ; il est fixé à l'avance. Le résultat dépend de l'initialisation : l'algorithme converge vers une partition stable qui n'est en général qu'un optimum local.
+
+\hypertarget{ii.2-distance-entre-deux-spectres}{%
+\subsection{II.2 --- Distance entre deux spectres}\label{ii.2-distance-entre-deux-spectres}}
+
+\hypertarget{q7}{%
+\subsection{Q7}\label{q7}}
+
+\begin{lstlisting}[language=Python]
+def distance(S1, S2):
+    """S1, S2 : listes de N flottants. Renvoie d(S1, S2)."""
+    N = len(S1)
+    s = 0
+    for i in range(N):
+        s = s + (S1[i] - S2[i]) ** 2   # somme des carres des ecarts
+    return (s / N) ** 0.5              # moyenne puis racine carree
+\end{lstlisting}
+
+Le parcours se fait en position, pour lire le même indice dans les deux listes. Coût \(\Theta(N)\).
+
+\hypertarget{q8}{%
+\subsection{Q8}\label{q8}}
+
+\begin{lstlisting}[language=Python]
+def positions_a_rejeter(S1, S2):
+    """Renvoie la liste croissante des i tels que S1[i] ou S2[i] vaut None."""
+    rejet = []
+    for i in range(len(S1)):
+        if S1[i] is None or S2[i] is None:
+            rejet.append(i)
+    return rejet
+\end{lstlisting}
+
+Un seul parcours : chaque indice apparaît au plus une fois et la liste est croissante. On teste \texttt{is\ None} (ou \texttt{==\ None}) et non la valeur de vérité de \texttt{S1{[}i{]}}, une intensité nulle étant une mesure valide.
+
+\hypertarget{q9}{%
+\subsection{Q9}\label{q9}}
+
+\begin{lstlisting}[language=Python]
+def est_absent(element, L):
+    """Renvoie True si element n'apparait pas dans L, False sinon."""
+    for v in L:
+        if v == element:
+            return False     # trouve : on s'arrete
+    return True              # parcours complet sans rencontre
+\end{lstlisting}
+
+Chaque itération coûte \(O(1)\). Le pire des cas est celui où \texttt{element} est absent de \texttt{L} : les \(r\) itérations sont toutes faites.
+
+\equationajustee{\boxed{C_{\text{pire}}(r) = \Theta(r)}}
+
+\hypertarget{q10}{%
+\subsection{Q10}\label{q10}}
+
+Notons \(A\) l'ensemble des indices contenus dans \texttt{a\_rejeter}. Invariant de la boucle \texttt{for\ i\ in\ range(\allowbreak{}N)\allowbreak{}} de \texttt{distance2} :
+
+\begin{quote}
+
+au début de l'itération d'indice \(i\) (et, pour \(i = N\), en sortie de boucle), \(\displaystyle d = \sum_{\substack{0 \leqslant j < i \\ j \notin A}} (S_1[j] - S_2[j])^2\).
+
+\end{quote}
+
+Il est vrai pour \(i = 0\) (somme vide, \(d = 0\)). Pour \(i = N\), il donne la somme des carrés sur les seules positions conservées.
+
+Le résultat renvoyé \(\sqrt{d/m}\), avec \(m = N - |A|\), est donc la distance cherchée.
+
+\hypertarget{q11}{%
+\subsection{Q11}\label{q11}}
+
+Posons \(N\) = \texttt{len(S1)} et \(r\) = \texttt{len(a\_rejeter)}, avec \(0 \leqslant r \leqslant N\) et des éléments de \texttt{a\_rejeter} distincts.
+
+\textbf{\texttt{distance2}.} La boucle fait \(N\) itérations, chacune appelant \texttt{est\_absent(\allowbreak{}i,\allowbreak{}\ a\_rejeter)\allowbreak{}}, dont le coût est au plus \(r\) (Q9). Plus précisément :
+
+\begin{itemize}
+\tightlist
+\item
+  pour les \(N - r\) indices conservés, la recherche échoue et coûte \(r\) comparaisons ;
+\item
+  les \(r\) indices rejetés sont trouvés chacun à une position différente de \texttt{a\_rejeter}, d'où \(1 + 2 + \dots + r\) comparaisons au total.
+\end{itemize}
+
+Le nombre total de comparaisons vaut :
+
+\equationajustee{\begin{aligned}
+c(N, r) &= (N - r)\,r + \frac{r(r+1)}{2} \\
+&= Nr - \frac{r(r-1)}{2}.
+\end{aligned}}
+
+Comme \(r - 1 \leqslant N\), ce nombre est encadré :
+
+\equationajustee{\begin{aligned}
+c(N, r) &\geqslant \frac{Nr}{2}, \\
+c(N, r) &\leqslant Nr.
+\end{aligned}}
+
+Il s'y ajoute \(\Theta(N)\) pour le reste de la boucle :
+
+\equationajustee{\boxed{C_2(N, r) = \Theta(N + Nr)}}
+
+Conclusion : \texttt{distance2} est en \(O(Nr)\) dès que \(r \geqslant 1\). Si \(r = 0\), elle est en \(O(N)\).
+
+Elle devient quadratique, en \(O(N^2)\), si \(r\) est proportionnel à \(N\).
+
+\textbf{\texttt{distance3}.} Deux copies en \(\Theta(N)\), une boucle de \(r\) itérations à coût constant, une boucle de \(N\) itérations à coût constant. Comme \(r \leqslant N\) :
+
+\equationajustee{\begin{aligned}
+C_3(N, r) &= \Theta(N + r) \\
+&= \Theta(N).
+\end{aligned}}
+
+\equationajustee{\boxed{\texttt{distance3} \text{ est en } O(N)}}
+
+\texttt{distance3} est linéaire au prix d'une mémoire supplémentaire \(\Theta(N)\) (les deux copies). Elle est correcte car, aux positions rejetées, les deux composantes valent \(0\) et la contribution \((0 - 0)^2\) est nulle.
+
+\hypertarget{ii.3-impluxe9mentation-des-k-moyennes}{%
+\subsection{\texorpdfstring{II.3 --- Implémentation des \(k\)-moyennes}{II.3 --- Implémentation des k-moyennes}}\label{ii.3-impluxe9mentation-des-k-moyennes}}
+
+\hypertarget{q12}{%
+\subsection{Q12}\label{q12}}
+
+\begin{lstlisting}[language=Python]
+def produit_partition(spectres, centroides):
+    """Renvoie la liste des p indices du centroide le plus proche
+    de chaque spectre, dans l'ordre de spectres."""
+    partitionnement = []
+    for S in spectres:
+        partitionnement.append(trouve_centroide_le_plus_proche(S, centroides))
+    return partitionnement
+\end{lstlisting}
+
+Sur l'exemple : S1, S3, S4 donnent l'indice \(1\) (C2), S2 l'indice \(2\) (C3), S5 l'indice \(0\) (C1), d'où \texttt{{[}1,\ 2,\ 1,\ 1,\ 0{]}}.
+
+\hypertarget{q13}{%
+\subsection{Q13}\label{q13}}
+
+\begin{lstlisting}[language=Python]
+def k_moyennes(spectres, k):
+    """Renvoie (centroides, partitionnement) apres convergence."""
+    centroides = initialise(k, spectres)
+    partitionnement = produit_partition(spectres, centroides)
+    ancien = []                                  # aucune partition precedente
+    while partitionnement != ancien:             # la partition a change
+        ancien = partitionnement
+        centroides = calcule_centroides(ancien, spectres)
+        partitionnement = produit_partition(spectres, centroides)
+    return centroides, partitionnement
+\end{lstlisting}
+
+\texttt{ancien\ =\ {[}{]}} garantit au moins un passage dans la boucle (pour \(p \geqslant 1\)). En sortie, \texttt{partitionnement} est la partition associée aux centroïdes renvoyés, et ces centroïdes sont les barycentres de cette même partition. \texttt{produit\_partition} renvoie une liste neuve à chaque appel, donc \texttt{ancien} n'est jamais modifiée par aliasing. La comparaison \texttt{!=} de deux listes est autorisée par l'annexe ; on compare les partitions (entiers) et non les centroïdes (flottants). Coût d'un tour : \(\Theta(pkN)\).
+
+\hypertarget{ii.4-duxe9termination-automatique-du-nombre-de-groupes}{%
+\subsection{II.4 --- Détermination automatique du nombre de groupes}\label{ii.4-duxe9termination-automatique-du-nombre-de-groupes}}
+
+\hypertarget{q14}{%
+\subsection{Q14}\label{q14}}
+
+\begin{lstlisting}[language=Python]
+def groupes_de_spectres(spectres):
+    """Renvoie la liste des groupes successivement extraits ;
+    les spectres restants (au plus 100) sont perdus."""
+    groupes = []
+    restants = spectres
+    while len(restants) > 100:                        # etape 4
+        centroides, partitionnement = k_moyennes(restants, 10)   # etapes 1 et 2
+        principal, reste = principal_et_reste(partitionnement, restants)
+        groupes.append(principal)                     # etape 3
+        restants = reste
+    return groupes
+\end{lstlisting}
+
+La liste \texttt{spectres} n'est pas modifiée (on réaffecte \texttt{restants}, on ne le modifie pas en place). Terminaison : tant que \texttt{len(restants)} \(= n > 100\), le groupe majoritaire parmi \(10\) groupes contient au moins \(\lceil n/10 \rceil \geqslant 11\) spectres, donc \texttt{len(restants)} décroît strictement ; c'est un entier positif, la boucle termine. Le test placé en tête équivaut à l'algorithme de l'énoncé (test en fin d'étape 4) dès que la liste initiale contient plus de \(100\) spectres. (Le DR nomme cette fonction \texttt{groupe\_de\_spectres}, sans « s » ; le nom est sans incidence.)
+
+\hypertarget{partie-iii-classification-de-spectres-stellaires}{%
+\section{Partie III --- Classification de spectres stellaires}\label{partie-iii-classification-de-spectres-stellaires}}
+
+\hypertarget{q15}{%
+\subsection{Q15}\label{q15}}
+
+L'algorithme des \(k\) plus proches voisins est un \textbf{algorithme de classification supervisée} (apprentissage supervisé) : on dispose de données de référence dont la classe est connue (ici les \(7R\) spectres étiquetés). Pour classer une nouvelle donnée \(S\) :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  on calcule la distance de \(S\) à chaque référence ;
+\item
+  on retient les \(k\) références les plus proches ;
+\item
+  on attribue à \(S\) la classe majoritaire parmi ces \(k\) voisins : c'est un \textbf{vote majoritaire}.
+\end{enumerate}
+
+\textbf{\(k\) est le nombre de voisins qui participent au vote.} Un \(k\) petit rend la décision sensible au bruit ; un \(k\) grand fait voter des références éloignées et brouille les frontières entre classes.
+
+\hypertarget{q16}{%
+\subsection{Q16}\label{q16}}
+
+La décision est un vote à la majorité des effectifs. Au voisinage de \(S\), le nombre de références d'une classe est d'autant plus grand que cette classe est représentée parmi les références. Avec des effectifs différents, une classe sur-représentée l'emporte plus souvent, indépendamment de la ressemblance réelle : prendre le même \(R\) pour toutes les classes évite ce biais.
+
+Si les références O sont trois fois plus nombreuses que les B, alors que O et B sont spectralement proches, les deux types sont mêlés dans la zone frontière et l'on y trouve environ trois O pour un B. Avec \(k = 8\), une étoile B y aura typiquement \(6\) voisins O pour \(2\) voisins B et sera \textbf{classée O à tort} : le classifieur est biaisé vers O.
+
+De plus, le script fourni suppose des blocs de taille \(R\) identique : la ligne 5 calcule \texttt{R\ =\allowbreak{}\ len(\allowbreak{}references)\allowbreak{}\ /\allowbreak{}/\allowbreak{}\ len(\allowbreak{}types\_spectraux)\allowbreak{}} et la ligne 17 retrouve le type par \texttt{j\ =\ i\ //\ R}. Avec des effectifs inégaux, ces lignes attribueraient des références au mauvais type.
+
+\hypertarget{q17}{%
+\subsection{Q17}\label{q17}}
+
+\equationajustee{\boxed{k = 8}}
+
+valeur lue \textbf{ligne 26} : \texttt{type\_spectral\ =\allowbreak{}\ mystere(\allowbreak{}S,\allowbreak{}\ 8)\allowbreak{}}. (La ligne 13, \texttt{seuil\ =\allowbreak{}\ copie\_L{[}k{]}\allowbreak{}}, utilise \(k\) sans fixer sa valeur.)
+
+\hypertarget{q18}{%
+\subsection{Q18}\label{q18}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lignes 1 à 5} : chargement des \(7R\) spectres de référence, liste des sept types spectraux et nombre \(R\) de références par type.
+\item
+  \textbf{Lignes 8 à 11} : calcul des distances de \(S\) à toutes les références.
+\item
+  \textbf{Lignes 12 à 18} : détermination des \(k\) références les plus proches (distances strictement inférieures à la \((k+1)\)-ième plus petite) et décompte de ces voisins par type spectral.
+\item
+  \textbf{Lignes 19 à 22} : vote majoritaire, renvoi du type spectral le plus représenté parmi les voisins.
+\item
+  \textbf{Lignes 24 à 27} : classification de tous les spectres à classer, résultats rangés dans \texttt{classification}.
+\end{itemize}
+
+\hypertarget{q19}{%
+\subsection{Q19}\label{q19}}
+
+\begin{lstlisting}[language=Python]
+def mystere(S: [float], k: int) -> str
+\end{lstlisting}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{S} : spectre à classer, liste de \(N\) flottants échantillonnée comme les spectres de référence ;
+\item
+  \texttt{k} : entier, nombre de voisins, avec \(1 \leqslant k <\) \texttt{len(references)} (sinon \texttt{copie\_L{[}k{]}} lève une erreur) ;
+\item
+  valeur renvoyée : une chaîne de \texttt{types\_spectraux} (\texttt{"O"}, \texttt{"B"}, \ldots, \texttt{"M"}), le type majoritaire parmi les \(k\) plus proches références de \texttt{S}.
+\end{itemize}
+
+La fonction lit les variables globales \texttt{references}, \texttt{types\_spectraux} et \texttt{R} et ne modifie rien.
+
+\hypertarget{q20}{%
+\subsection{Q20}\label{q20}}
+
+Un défaut est ici un cas où le script ne respecte pas sa spécification (renvoyer le type majoritaire parmi les \(k\) plus proches voisins), et non une complexité perfectible.
+
+\textbf{Défaut 1 --- lignes 13 et 16 : distances égales au seuil.} On ne retient que les distances strictement inférieures à \texttt{seuil\ =\allowbreak{}\ copie\_L{[}k{]}\allowbreak{}}. Si plusieurs références sont à la distance \texttt{seuil}, elles sont toutes exclues et moins de \(k\) voisins votent.
+
+Cas extrême : si les \(k+1\) plus petites distances sont égales (références identiques), aucun voisin n'est retenu. Alors \texttt{resultats} reste nul, \(M = 0\) et la fonction renvoie \texttt{"O"} sans qu'aucun voisin n'ait voté.
+
+\textbf{Défaut 2 --- lignes 19 à 22 : égalité du vote.} Si plusieurs types obtiennent le même nombre maximal de voix (par exemple 4 contre 4 avec \(k = 8\)), la boucle renvoie le premier dans l'ordre de \texttt{types\_spectraux}, sans signaler l'égalité. Le résultat dépend alors de l'ordre arbitraire de la liste et non des données.
+
+\textbf{Erreur de nom --- ligne 14.} \texttt{resultats\ =\allowbreak{}\ {[}0{]}\allowbreak{}\ *\ len(\allowbreak{}type\_spectraux)\allowbreak{}} emploie le nom \texttt{type\_spectraux}, alors que la variable définie ligne 3 s'appelle \texttt{types\_spectraux} : l'appel de \texttt{mystere} lève une \texttt{NameError} et le script ne classe rien. Correction : \texttt{len(\allowbreak{}types\_spectraux)\allowbreak{}}.
+
+\textbf{Autres défauts recevables.} Lignes 5 et 17 : si \texttt{len(references)} n'est pas un multiple de 7, \texttt{R} est tronqué et des références sont attribuées au mauvais type. Ligne 13 : \texttt{copie\_L{[}k{]}} lève une erreur si \(k \geqslant 7R\). \texttt{mystere} dépend de variables globales. En revanche, recalculer et trier toutes les distances (lignes 9 à 12) est une question de complexité, pas un défaut au sens de la spécification.
+
+\hypertarget{q21}{%
+\subsection{Q21}\label{q21}}
+
+On renvoie, avec le type, la proportion des voix obtenues par le type gagnant parmi les voisins effectivement retenus.
+
+\begin{lstlisting}[language=Python]
+def mystere(S, k):
+    """Renvoie (type, confiance), confiance = part des voisins retenus
+    qui sont du type renvoye (entre 0 et 1)."""
+    L = []
+    for Sref in references:
+        L.append(distance(S, Sref))
+    copie_L = copie_ordonnee(L)
+    seuil = copie_L[k]
+    resultats = [0] * len(types_spectraux)
+    nb_votants = 0
+    for i in range(len(references)):
+        if L[i] < seuil:
+            j = i // R
+            resultats[j] = resultats[j] + 1
+            nb_votants = nb_votants + 1
+    if nb_votants == 0:                      # aucun voisin retenu (cf. Q20)
+        return None, 0.0
+    imax = 0                                 # recherche du maximum sans max()
+    for i in range(len(resultats)):
+        if resultats[i] > resultats[imax]:
+            imax = i
+    return types_spectraux[imax], resultats[imax] / nb_votants
+\end{lstlisting}
+
+La confiance vaut \(1\) si tous les voisins sont du même type. Avec \(k = 8\) voisins effectivement retenus et 7 types, le type gagnant a au moins 2 voix.
+
+La confiance est alors comprise entre \(2/8 = 0{,}25\) et \(1\). Un résultat comme \texttt{("B",\ 0.5)} signale une classification douteuse. L'appel ligne 26 devient \texttt{type\_spectral,\allowbreak{}\ confiance\ =\allowbreak{}\ mystere(\allowbreak{}S,\allowbreak{}\ 8)\allowbreak{}}.
+
+\hypertarget{q22}{%
+\subsection{Q22}\label{q22}}
+
+\textbf{Définition.} On évalue un classifieur à \(c\) classes sur des données dont la classe réelle est connue. La matrice de confusion \(M\) est une matrice carrée d'ordre \(c\), indexée par les classes. Son coefficient \(M_{a,b}\) est le nombre de données de classe réelle \(a\) classées dans la classe \(b\).
+
+La diagonale compte les bonnes classifications, les termes hors diagonale les confusions (par exemple \(M_{B,O}\) : étoiles B prises pour des O). La trace divisée par le nombre total de données est le taux de réussite.
+
+\textbf{Algorithme pour les spectres de référence.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Créer une matrice \(7 \times 7\) de zéros, lignes et colonnes rangées dans l'ordre de \texttt{types\_spectraux}.
+\item
+  Pour chaque indice \(i\) de \texttt{references} :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    le type réel est \(a = i \,/\!/\, R\) ;
+  \item
+    classer \texttt{references{[}i{]}} par les \(k\) plus proches voisins \textbf{parmi les autres références} (on exclut la référence d'indice \(i\), qui est à distance nulle d'elle-même et voterait toujours pour sa vraie classe) ; soit \(b\) l'indice du type obtenu ;
+  \item
+    ajouter \(1\) à \(M_{a,b}\).
+  \end{itemize}
+\item
+  Renvoyer \(M\).
+\end{enumerate}
+
+Pour l'exclusion, on procède par indice (on saute \(i\) dans le calcul des distances) : supprimer l'élément de la liste décalerait les indices et fausserait \texttt{j\ =\ i\ //\ R}. Sans cette exclusion, la matrice obtenue est trop optimiste.
+
+\hypertarget{partie-iv-reconnaissance-des-filaments-galactiques}{%
+\section{Partie IV --- Reconnaissance des filaments galactiques}\label{partie-iv-reconnaissance-des-filaments-galactiques}}
+
+\hypertarget{iv.1-exemple-pour-comprendre-le-concept}{%
+\subsection{IV.1 --- Exemple pour comprendre le concept}\label{iv.1-exemple-pour-comprendre-le-concept}}
+
+Graphe du DR (sept sommets, quatorze arêtes) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 28\tabcolsep) * \real{0.0667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Arête
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CD
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AB
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AC
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AD
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AF
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+AG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+EF
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+CB
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+EG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+BE
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+FG
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+DE
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Poids & 1 & 1 & 2 & 3 & 3 & 4 & 4 & 5 & 5 & 6 & 6 & 7 & 7 & 8 \\
+\end{longtable}
+
+\hypertarget{q23}{%
+\subsection{Q23}\label{q23}}
+
+Tableau de l'algorithme glouton depuis D : pour chaque sommet hors de l'arbre, plus petit poids d'une arête le reliant à l'arbre (entre parenthèses, l'extrémité dans l'arbre) ; on ajoute à chaque étape le sommet de valeur minimale.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Arbre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+A
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+B
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+C
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+E
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+F
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+G
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ajout
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+D & 3 (D) & \(\infty\) & \textbf{1 (D)} & 8 (D) & \(\infty\) & 4 (D) & C par DC = 1 \\
+D, C & \textbf{2 (C)} & 6 (C) & --- & 8 (D) & \(\infty\) & 3 (C) & A par CA = 2 \\
+D, C, A & --- & \textbf{1 (A)} & --- & 8 (D) & 4 (A) & 3 (C) & B par AB = 1 \\
+D, C, A, B & --- & --- & --- & 7 (B) & 4 (A) & \textbf{3 (C)} & G par CG = 3 \\
+D, C, A, B, G & --- & --- & --- & 6 (G) & \textbf{4 (A)} & --- & F par AF = 4 \\
+D, C, A, B, G, F & --- & --- & --- & \textbf{5 (F)} & --- & --- & E par FE = 5 \\
+\end{longtable}
+
+\equationajustee{\boxed{\text{Ordre d'ajout : D, C, A, B, G, F, E}}}
+
+Arbre couvrant (à tracer sur le graphe vierge, figure 2) : arêtes \textbf{DC (1), CA (2), AB (1), CG (3), AF (4), FE (5)}, soit \(6 = 7 - 1\) arêtes.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-arbre-couvrant-minimal.pdf}
+\caption*{Figure 2 --- Arbre couvrant de poids minimal du graphe du DR (en bleu,
+poids 16) obtenu depuis D (a) et depuis F (b) ; pastilles : rang d'ajout
+des sommets ; disposition des sommets choisie ici}
+\end{figure}
+
+\equationajustee{\boxed{\text{Poids total} = 1 + 2 + 1 + 3 + 4 + 5 = 16}}
+
+\hypertarget{q24}{%
+\subsection{Q24}\label{q24}}
+
+Depuis F :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1250}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Arbre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+A
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+B
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+C
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+D
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+E
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+G
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ajout
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+F & \textbf{4 (F)} & \(\infty\) & \(\infty\) & \(\infty\) & 5 (F) & 7 (F) & A par FA = 4 \\
+F, A & --- & \textbf{1 (A)} & 2 (A) & 3 (A) & 5 (F) & 5 (A) & B par AB = 1 \\
+F, A, B & --- & --- & \textbf{2 (A)} & 3 (A) & 5 (F) & 5 (A) & C par AC = 2 \\
+F, A, B, C & --- & --- & --- & \textbf{1 (C)} & 5 (F) & 3 (C) & D par CD = 1 \\
+F, A, B, C, D & --- & --- & --- & --- & 5 (F) & \textbf{3 (C)} & G par CG = 3 \\
+F, A, B, C, D, G & --- & --- & --- & --- & \textbf{5 (F)} & --- & E par FE = 5 \\
+\end{longtable}
+
+\equationajustee{\boxed{\text{Ordre d'ajout : F, A, B, C, D, G, E}}}
+
+Arêtes retenues : FA (4), AB (1), AC (2), CD (1), CG (3), FE (5), poids total \(16\).
+
+\textbf{Commentaire.} L'ordre d'ajout change avec le sommet de départ, mais on obtient \textbf{le même arbre} (les mêmes six arêtes) et donc le même poids 16. Le poids total est toujours le même, puisque l'algorithme fournit un arbre couvrant de poids minimal quel que soit le départ.
+
+L'identité des arêtes n'est en revanche pas automatique : le graphe a des poids répétés (1, 3, 4, 5, 6 et 7 apparaissent deux fois) et, en général, deux départs peuvent donner deux arbres différents de même poids.
+
+Ici l'arbre minimal est unique : pour chaque arête non retenue, toutes les arêtes du cycle qu'elle formerait avec l'arbre sont strictement plus légères qu'elle (par exemple AD = 3 ferme le cycle D--C--A de poids 1 et 2 ; AG = 5 ferme A--C--G de poids 2 et 3 ; EG = 6 ferme E--F--A--C--G de poids au plus 5). Des poids deux à deux distincts suffisent à garantir l'unicité, sans être nécessaires, comme le montre cet exemple.
+
+\hypertarget{iv.2-application-uxe0-la-distribution-de-galaxies-initialisation-du-graphe}{%
+\subsection{IV.2 --- Application à la distribution de galaxies : initialisation du graphe}\label{iv.2-application-uxe0-la-distribution-de-galaxies-initialisation-du-graphe}}
+
+\hypertarget{q25}{%
+\subsection{Q25}\label{q25}}
+
+\begin{lstlisting}[language=Python]
+def poids(coords, i, j):
+    """Carre de la distance euclidienne entre les galaxies i et j."""
+    p = 0
+    for c in range(3):                       # composantes x, y, z
+        p = p + (coords[i][c] - coords[j][c]) ** 2
+    return p
+\end{lstlisting}
+
+Exemple : \((0-3)^2 + (1-2)^2 + (5-5)^2 = 10\). Pas de racine : le poids est le carré de la distance. Coût \(O(1)\).
+
+\hypertarget{q26}{%
+\subsection{Q26}\label{q26}}
+
+\begin{lstlisting}[language=Python]
+def matrice_adjacence(coords):
+    """Matrice N x N des poids du graphe complet des galaxies."""
+    N = len(coords)
+    M = []
+    for i in range(N):
+        ligne = []
+        for j in range(N):
+            ligne.append(poids(coords, i, j))
+        M.append(ligne)
+    return M
+\end{lstlisting}
+
+\(M\) est symétrique, de diagonale nulle. Coût \(\Theta(N^2)\) en temps et en mémoire. On évite \texttt{{[}{[}0{]}\ *\ N{]}\ *\ N}, qui ferait partager la même liste à toutes les lignes.
+
+\hypertarget{iv.3-algorithme-de-construction-de-larbre}{%
+\subsection{IV.3 --- Algorithme de construction de l'arbre}\label{iv.3-algorithme-de-construction-de-larbre}}
+
+\hypertarget{q27}{%
+\subsection{Q27}\label{q27}}
+
+\begin{lstlisting}[language=Python]
+def initialisation_distance(G, depart):
+    """dist[i] = inf pour toute galaxie i, sauf dist[depart] = 0."""
+    dist = {}
+    for i in range(len(G)):
+        dist[i] = float('inf')
+    dist[depart] = 0
+    return dist
+\end{lstlisting}
+
+\texttt{depart} reste une clef de \texttt{dist}, de valeur \(0\) : c'est donc lui que la première recherche extrait. Coût \(\Theta(N)\).
+
+\hypertarget{q28}{%
+\subsection{Q28}\label{q28}}
+
+Squelette du DR complété :
+
+\begin{lstlisting}[language=Python]
+def recherche_distance_minimale(dist):
+    mindist = float('inf')
+    candidat = None
+    for gal in dist:
+        if dist[gal] < mindist:
+            mindist = dist[gal]
+            candidat = gal
+    del dist[candidat] # Suppression de la clef candidate du dictionnaire
+    return candidat    # et renvoi du candidat
+\end{lstlisting}
+
+La boucle maintient dans \texttt{mindist} la plus petite distance rencontrée et dans \texttt{candidat} la galaxie correspondante ; on renvoie la galaxie de \texttt{dist} la plus proche de l'arbre, après l'avoir retirée de \texttt{dist} (modification visible depuis l'appelant). Ici le graphe est complet à poids finis : après le premier tour, toutes les valeurs de \texttt{dist} sont finies, et au premier tour \texttt{depart} vaut \(0\), donc \texttt{candidat} n'est jamais \texttt{None}. Sur un graphe où toutes les valeurs restantes vaudraient \texttt{float(\textquotesingle{}inf\textquotesingle{})}, il faudrait écrire \texttt{if\ candidat\ is\ None\ or\ dist{[}gal{]}\allowbreak{}\ \textless{}\ mindist:\allowbreak{}}. Coût \(O(|\texttt{dist}|)\).
+
+\hypertarget{q29}{%
+\subsection{Q29}\label{q29}}
+
+Un variant est une quantité entière, positive, qui décroît strictement à chaque tour de boucle.
+
+\textbf{Variant : \(V\) = \texttt{len(dist)}.}
+
+\begin{itemize}
+\tightlist
+\item
+  \(V\) est un entier naturel.
+\item
+  À chaque itération, \texttt{recherche\_distance\_minimale} supprime exactement une clef de \texttt{dist} (\texttt{del\ dist{[}candidat{]}\allowbreak{}}), et \texttt{mise\_a\_jour} n'en ajoute aucune : elle ne modifie \texttt{dist{[}y{]}} que si \texttt{y\ in\ dist}, c'est-à-dire pour une clef déjà présente ; ses ajouts portent sur \texttt{pred}. Donc \(V\) diminue exactement de \(1\) par itération.
+\end{itemize}
+
+Une suite d'entiers naturels strictement décroissante est finie : la boucle \texttt{while\ len(\allowbreak{}dist)\allowbreak{}\ !=\allowbreak{}\ 0} s'arrête. Comme \(V = N\) au départ, elle fait exactement \(N\) itérations : \textbf{\texttt{arbre\_couvrant\_minimal} termine}.
+
+\hypertarget{q30}{%
+\subsection{Q30}\label{q30}}
+
+Soit \(N\) = \texttt{len(G)}.
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{initialisation\_distance} : \(N\) insertions en \(O(1)\), soit \(\Theta(N)\).
+\item
+  \texttt{recherche\_distance\_minimale} : parcours des clefs de \texttt{dist}, puis suppression en \(O(1)\). À l'itération \(t\), avec \(0 \leqslant t \leqslant N-1\), \texttt{dist} contient \(N - t\) clefs. Coût : \(\Theta(N - t)\).
+\item
+  \texttt{mise\_a\_jour} : \(N\) itérations, chacune avec un test \texttt{y\ in\ dist} en \(O(1)\) (dictionnaire, d'après l'annexe), une lecture \texttt{G{[}x{]}{[}y{]}} et au plus deux affectations en \(O(1)\), soit \(\Theta(N)\).
+\item
+  Boucle principale : \(N\) itérations (Q29).
+\end{itemize}
+
+On somme le coût de l'initialisation et ceux des \(N\) tours :
+
+\equationajustee{\begin{aligned}
+C(N) &= \Theta(N) + \sum_{t=0}^{N-1} \big( \Theta(N - t) + \Theta(N) \big) \\
+&= \Theta(N) + \Theta\!\left(\frac{N(N+1)}{2}\right) + \Theta(N^2).
+\end{aligned}}
+
+\equationajustee{\boxed{C(N) = \Theta(N^2)}}
+
+La fonction \texttt{arbre\_couvrant\_minimal} est donc en \(O(N^2)\) dans le pire des cas.
+
+\hypertarget{iv.4-uxe9lagage-de-larbre-couvrant-de-poids-minimal}{%
+\subsection{IV.4 --- Élagage de l'arbre couvrant de poids minimal}\label{iv.4-uxe9lagage-de-larbre-couvrant-de-poids-minimal}}
+
+\hypertarget{q31}{%
+\subsection{Q31}\label{q31}}
+
+On parcourt une seule fois les couples (galaxie, prédécesseur) et l'on incrémente le compteur du prédécesseur.
+
+\begin{lstlisting}[language=Python]
+def dico_galaxies_avec_successeurs(arbre):
+    """Renvoie {x : nombre de y tels que arbre[y] == x}, pour les x
+    ayant au moins un successeur."""
+    nb_succ = {}
+    for y in arbre:
+        x = arbre[y]                 # y est un successeur de x
+        if x in nb_succ:
+            nb_succ[x] = nb_succ[x] + 1
+        else:
+            nb_succ[x] = 1
+    return nb_succ
+\end{lstlisting}
+
+Une galaxie sans successeur n'est jamais créée comme clef ; la racine, qui n'est pas clef de \texttt{arbre}, apparaît dès qu'elle est valeur. \(n\) itérations à opérations de dictionnaire en \(O(1)\) :
+
+\equationajustee{\boxed{\Theta(n)}}
+
+\hypertarget{q32}{%
+\subsection{Q32}\label{q32}}
+
+À chaque tour de boucle, \texttt{elagage} calcule les galaxies ayant au moins un successeur, puis ne conserve dans l'arbre que les clefs qui en font partie : \textbf{un tour supprime toutes les feuilles} (galaxies sans successeur) et l'arête qui les relie à leur prédécesseur. Une galaxie dont tous les successeurs viennent d'être supprimés devient feuille à son tour. Après \texttt{nb\_etapes} tours, on a retiré \texttt{nb\_etapes} couches successives de feuilles : toutes les branches de longueur au plus \texttt{nb\_etapes} ont disparu.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q32-elagage.pdf}
+\caption*{Figure 3 --- Deux tours d'élagage sur un arbre d'exemple : chaque tour
+retire toutes les feuilles (en vermillon), la racine reste}
+\end{figure}
+
+Intérêt : l'arbre couvrant minimal relie toutes les galaxies, y compris les petites ramifications (les « radicules » de la figure 5(a)) qui ne sont pas des structures physiques. Ces branches courtes disparaissent en quelques tours, alors que le filament, long, ne perd qu'un sommet par tour à chacune de ses extrémités libres (la racine \texttt{depart}, qui n'est pas une clef, n'est jamais retirée tant qu'elle a un successeur). On obtient le squelette du filament de la figure 5(b), plus lisible pour un astronome. Le coût est \(O(n)\) par tour.
+
+\hypertarget{iv.5-suxe9paration-des-groupes-sans-filament}{%
+\subsection{IV.5 --- Séparation des groupes sans filament}\label{iv.5-suxe9paration-des-groupes-sans-filament}}
+
+\hypertarget{q33}{%
+\subsection{Q33}\label{q33}}
+
+Les coefficients de \texttt{G} sont des carrés de distances (Q25) ; la distance d'une galaxie \texttt{y} à son prédécesseur \texttt{arbre{[}y{]}} est donc \texttt{G{[}y{]}\allowbreak{}{[}arbre{[}y{]}\allowbreak{}{]}\allowbreak{}\ **\ 0.5}. On calcule d'abord la longueur moyenne \(\ell_m\) sur toutes les liaisons de l'arbre reçu, puis on construit un nouveau dictionnaire ne gardant que les liaisons de longueur au plus \(\alpha \ell_m\).
+
+\begin{lstlisting}[language=Python]
+def separation(G, arbre, alpha):
+    """Nouveau dictionnaire de predecesseurs sans les liaisons de longueur
+    > alpha * lm ; G, arbre et alpha ne sont pas modifies."""
+    if len(arbre) == 0:
+        return {}
+    somme = 0
+    for y in arbre:                              # longueur moyenne lm
+        somme = somme + G[y][arbre[y]] ** 0.5
+    lm = somme / len(arbre)
+    nouvel_arbre = {}
+    for y in arbre:                              # filtrage
+        if G[y][arbre[y]] ** 0.5 <= alpha * lm:
+            nouvel_arbre[y] = arbre[y]
+    return nouvel_arbre
+\end{lstlisting}
+
+Retirer la clef \texttt{y} coupe la liaison \texttt{y}--\texttt{arbre{[}y{]}} : \texttt{y} devient la racine d'une nouvelle composante connexe. Ainsi l'amas isolé, rattaché au filament par une seule liaison anormalement longue, en est séparé. La moyenne est calculée sur toutes les liaisons avant le filtrage, et l'on divise par le nombre de liaisons \texttt{len(arbre)} (pas par le nombre de galaxies). Coût \(\Theta(n)\) avec \(n\) = \texttt{len(arbre)}. Variante acceptable, puisque \(\alpha\) est choisi empiriquement : raisonner directement sur les coefficients \texttt{G{[}y{]}{[}arbre{[}y{]}{]}} (carrés des longueurs), à condition de le dire.
+
+\textbf{FIN}
+
+\end{document}

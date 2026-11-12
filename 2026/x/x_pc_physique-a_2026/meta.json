@@ -1,0 +1,43 @@
+{
+  "slug": "x_pc_physique-a_2026",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2026
+  },
+  "questions": 43,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q06-q10-cone-taylor.svg",
+      "question": "Q10",
+      "legende": "Cône de Taylor : la surface θ = θ0 est l'équipotentielle V = V0, θ est mesuré depuis le jet (π − θ0 ≈ 49,3°) ; ½ε0E² équilibre la tension en γ/r et σ ∝ r^(−1/2) croît vers la pointe"
+    },
+    {
+      "fichier": "figures/q20-resonance-amplitude.svg",
+      "question": "Q20",
+      "legende": "Amplitude |Z0(ω)| calculée pour ω0τ = 20 et ω0τ = 5 : pic en ω0 de hauteur Fτ/(mω0) et de largeur 2/τ à |Z0|max/√2"
+    },
+    {
+      "fichier": "figures/q22-deux-champs-tournants.svg",
+      "question": "Q22",
+      "legende": "La force qE cos ωt, portée par x, est la somme de deux forces d'amplitude qE/2 tournant en sens opposés ; seule la composante +ω, horaire comme l'ion, résonne"
+    },
+    {
+      "fichier": "figures/q26-spirale-archimede.svg",
+      "question": "Q26",
+      "legende": "Trajectoire à la résonance : spirale d'Archimède issue de O, parcourue dans le sens horaire, de pas constant 2πA/ω0 (B sortant, q > 0)"
+    },
+    {
+      "fichier": "figures/q36-cyclotron-magnetron.svg",
+      "question": "Q36",
+      "legende": "Mouvement dans le plan avec piégeage : boucles rapides à ω+ dont le centre tourne lentement à ω−, dans le même sens horaire (rapport ω+/ω− exagéré)"
+    },
+    {
+      "fichier": "figures/q39-q41-electrodes-detection.svg",
+      "question": "Q40",
+      "legende": "Réciprocité : configuration réelle (ion q en y0, électrodes 1 et 2 reliées au potentiel nul, excitation selon x) et configuration auxiliaire (électrodes à ∓V/2, potentiel affine, V′0 = Vy0/d)"
+    }
+  ]
+}
