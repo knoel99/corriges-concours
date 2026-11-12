@@ -1,5 +1,8 @@
 name: Vérification
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 permissions:
   contents: read
 jobs:
@@ -7,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Python système du runner, aucune dépendance : forme des corrigés et
+      # absence de fichiers revue*, rapport* ou sujet*.
       - run: python3 scripts/verifier.py
