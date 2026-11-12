@@ -1,0 +1,28 @@
+{
+  "slug": "mines-ponts_mpi_informatique-2_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MPI",
+    "matiere": "Informatique 2",
+    "annee": 2026
+  },
+  "questions": 38,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q12-graphe-csr.svg",
+      "question": "Q12",
+      "legende": "Graphe orienté pondéré codé par la représentation CSR de la question 12 : 5 salles, 7 passages, coût porté sur chaque arc"
+    },
+    {
+      "fichier": "figures/q23-contre-exemple-dijkstra.svg",
+      "question": "Q23",
+      "legende": "Contre-exemple de la question 23 : valeurs initiales de bfs_cout ; si l'on n'empile que 0, le passage 1→2 n'est jamais relâché et la valeur de la salle 2 reste à 5 au lieu de 2"
+    },
+    {
+      "fichier": "figures/q38-partition-bsp.svg",
+      "question": "Q38",
+      "legende": "Exemple de creation(7) : (a) régions rangées en largeur, la coupe i (direction, proportion) découpe la région i en 2i+1 et 2i+2 ; (b) pavage du carré de côté 300 avec les coordonnées entières"
+    }
+  ]
+}

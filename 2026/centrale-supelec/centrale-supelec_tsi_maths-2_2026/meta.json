@@ -1,0 +1,28 @@
+{
+  "slug": "centrale-supelec_tsi_maths-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "TSI",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 41,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q14-graphe-chemins.svg",
+      "question": "Q14",
+      "legende": "Figure 1 — Graphe G₃ annoté : à chaque sommet (i, j), le nombre de chemins C(i+j, i) ; tout chemin vers (2, 3) traverse un seul sommet (k, 2 − k)"
+    },
+    {
+      "fichier": "figures/q20-sommes-partielles.svg",
+      "question": "Q20",
+      "legende": "Figure 2 — Sommes partielles S_n : les rangs pairs décroissent au-dessus de 1/e, les rangs impairs croissent au-dessous"
+    },
+    {
+      "fichier": "figures/q26-graphe-permutation.svg",
+      "question": "Q26",
+      "legende": "Figure 3 — Graphe G(σ) de la permutation de la figure 4 : boucles en 1 et 3, bi-boucle entre 2 et 4"
+    }
+  ]
+}

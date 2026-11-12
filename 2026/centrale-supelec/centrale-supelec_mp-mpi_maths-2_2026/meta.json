@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_mp-mpi_maths-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP-MPI",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 38,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q14-disques-delta-d.svg",
+      "question": "Q14",
+      "legende": "disques 𝒟_d pour d = 0,95 ; 0,85 ; 0,75, dont le bord gauche g(d) est strictement entre 1/2 et 1 ; l'intersection des Δ_d est le demi-plan fermé Re(s) ⩽ 1/2 (Q12–Q14)"
+    },
+    {
+      "fichier": "figures/q18-paliers-f3.svg",
+      "question": "Q18",
+      "legende": "paliers de f₃ entre 1/(m+1) (exclu) et 1/m (inclus) : valeurs 0, 1/3, 2/3, accumulation en 0, nombre fini de paliers sur un segment d'origine a > 0 (Q18)"
+    },
+    {
+      "fichier": "figures/q23-comparaison-serie-integrale.svg",
+      "question": "Q23",
+      "legende": "w_k est l'aire entre le palier de hauteur 1/kˢ et la courbe t ↦ 1/tˢ, de k à k+1 ; l'écart vertical est majoré par s/kˢ⁺¹ (Q23)"
+    },
+    {
+      "fichier": "figures/q35-projection-orthogonale.svg",
+      "question": "Q35",
+      "legende": "dₙ est la longueur de la composante de 𝟏 orthogonale à Gₙ ; Pythagore donne 1 = ‖πₙ(𝟏)‖² + dₙ² (Q35)"
+    }
+  ]
+}

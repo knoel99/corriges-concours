@@ -1,0 +1,43 @@
+{
+  "slug": "centrale-supelec_mp_informatique_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 43,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-automate-let.svg",
+      "question": "Q3",
+      "legende": "automate déterministe des mots qui contiennent le facteur let (Q3)"
+    },
+    {
+      "fichier": "figures/q5-automate-lexemes.svg",
+      "question": "Q5",
+      "legende": "automate des mots clés let, in et des noms de variables, avec le constructeur de chaque état final (Q5)"
+    },
+    {
+      "fichier": "figures/q18-file-deux-piles.svg",
+      "question": "Q18",
+      "legende": "file à deux piles après enfile 1, 2, 3, defile, enfile 4, 5 ; son contenu est s @ rev(e) (Q18)"
+    },
+    {
+      "fichier": "figures/q38-traces-g3-g4-g5.svg",
+      "question": "Q38",
+      "legende": "tracé planaire de G3 (K4 en rouge), G4 colorié avec 3 couleurs, G5 contenant K3,3 (Q38)"
+    },
+    {
+      "fichier": "figures/q39-exemples-4-sommets.svg",
+      "question": "Q39",
+      "legende": "graphes planaires connexes à 4 sommets de nombres chromatiques 2, 3 et 4 (Q39)"
+    },
+    {
+      "fichier": "figures/q42-cycle-kempe.svg",
+      "question": "Q42",
+      "legende": "le cycle C formé par v, s1, la chaîne a/c et s3 sépare s2 de s4 (Q42)"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "centrale-supelec_mp_physique-chimie-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP",
+    "matiere": "Physique-chimie 2",
+    "annee": 2026
+  },
+  "questions": 46,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q08-diagramme-e-ph-argent.svg",
+      "question": "Q8",
+      "legende": "Diagramme potentiel-pH de l'azote et frontière Ag⁺/Ag : l'argent n'est attaqué spontanément par l'acide nitrique que pour pH < 2,5"
+    },
+    {
+      "fichier": "figures/q09-montage-electrolyse.svg",
+      "question": "Q9",
+      "legende": "Électrolyse de dénudation : fil de Wollaston en anode (+), platine en cathode (−), sens du courant et réactions aux électrodes"
+    },
+    {
+      "fichier": "figures/q17-profil-hors-contact.svg",
+      "question": "Q17",
+      "legende": "Profil d'échauffement hors contact : parabole nulle en ±L, maximum JL²/2 au centre, moyenne JL²/3"
+    },
+    {
+      "fichier": "figures/q24-profil-en-contact.svg",
+      "question": "Q24",
+      "legende": "Profils d'échauffement en contact et hors contact (u = 2) : point anguleux en x = 0, maxima en ±x_m, écart Δθ négatif"
+    },
+    {
+      "fichier": "figures/q41-asymptotes-amplitude.svg",
+      "question": "Q41",
+      "legende": "Amplitude du signal à 3ω (figure 6) et ses asymptotes : plateau, pente −1, intersection vers 235 Hz"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "ccinp_mpi_maths-2_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MPI",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 20,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-noyau-droite-propre.svg",
+      "question": "Q1",
+      "legende": "J annule le plan ker J d'équation x + y + z = 0 et multiplie par 3 le vecteur u = ᵗ(1, 1, 1), orthogonal à ce plan"
+    },
+    {
+      "fichier": "figures/q9-paires-conjuguees.svg",
+      "question": "Q9",
+      "legende": "Racines n-ièmes de l'unité pour n = 5 et n = 6 ; ωₖ et ωₙ₋ₖ sont conjugués, ω₀ = 1 n'entre pas dans le produit et, pour n pair, −1 reste seul"
+    },
+    {
+      "fichier": "figures/q10-projection-orthogonale.svg",
+      "question": "Q10",
+      "legende": "x se décompose en p_F(x) ∈ F et x − p_F(x) ∈ F⊥ ; le triangle de sommets 0, p_F(x), x est rectangle en p_F(x)"
+    }
+  ]
+}

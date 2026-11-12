@@ -1,0 +1,38 @@
+{
+  "slug": "ccinp_tsi_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 58,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-decalage-premiere-ventouse.svg",
+      "question": "Q3",
+      "legende": "Vue de dessus à l'échelle, robot et butée immobiles : de Ø 83 à Ø 106 mm, la ventouse 1 avance de 23 mm mais le centre de b1 de 11,5 mm seulement, d'où Δx = −11,5 mm"
+    },
+    {
+      "fichier": "figures/q10-barriere-codeur.svg",
+      "question": "Q10",
+      "legende": "Barrière photoélectrique à hauteur des goulots et codeur sur l'arbre de la poulie : les Δn impulsions comptées entre deux fronts montants donnent l'entraxe"
+    },
+    {
+      "fichier": "figures/q18-bode-passe-bande.svg",
+      "question": "Q18",
+      "legende": "Bode de H(jω) pour ξ = 0,05 : asymptotes à ±20 dB/déc concourantes à −20 dB en ω0, pic réel à 0 dB en ω0, phase de +90° à −90°"
+    },
+    {
+      "fichier": "figures/q38-schema-bloc-mcc.svg",
+      "question": "Q38",
+      "legende": "Schéma-bloc de la MCC, inductance négligée, avec la boucle de force contre-électromotrice"
+    },
+    {
+      "fichier": "figures/q42-phase-boucle-ouverte.svg",
+      "question": "Q42",
+      "legende": "Phase de la FTBO pour T > τ, T = τ et T < τ : elle ne coupe jamais −180° et ne reste au-dessus que si T > τ"
+    }
+  ]
+}

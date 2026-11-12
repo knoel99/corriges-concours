@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_pc_physique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PC",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 45,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-lame-air.svg",
+      "question": "Q1",
+      "legende": "Lame d'air équivalente : le rayon d'incidence i donne (1), réfléchi en I sur M₂′, et (2), réfléchi en J sur M₁ ; KH est un plan d'onde commun"
+    },
+    {
+      "fichier": "figures/q09-points-fonctionnement.svg",
+      "question": "Q9-Q10",
+      "legende": "Éclairements des deux photodiodes (Ψ = π/2 et Ψ = 3π/2) : en x = 0, mi-frange et pentes opposées"
+    },
+    {
+      "fichier": "figures/q34-bilan-debit.svg",
+      "question": "Q34",
+      "legende": "Bilan de débit sur le cylindre de rayon r entre les armatures (écart exagéré) : l'air chassé par A sort latéralement à la vitesse u(r, t)"
+    },
+    {
+      "fichier": "figures/q39-profil-poiseuille.svg",
+      "question": "Q39",
+      "legende": "Profil de Poiseuille de v_r entre les armatures : nul sur les parois, de moyenne u et de maximum 3u/2 en ℓ₀/2"
+    },
+    {
+      "fichier": "figures/q42-armatures-percees.svg",
+      "question": "Q42",
+      "legende": "Armature pleine (drainage sur la distance R) et armature percée (drainage sur la demi-distance a entre trous)"
+    },
+    {
+      "fichier": "figures/q45-longueur-glissement.svg",
+      "question": "Q45",
+      "legende": "Allure de 1/Z″ en fonction de h₀ : le glissement translate la droite de −b, l'extrapolation coupe l'axe en −b"
+    }
+  ]
+}

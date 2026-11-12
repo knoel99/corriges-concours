@@ -1,0 +1,28 @@
+{
+  "slug": "ccinp_mp_maths-1_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MP",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 22,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/exo1-schema-tables.svg",
+      "question": "Exercice I (Q1–Q4)",
+      "legende": "Schéma de la base : la clé étrangère id_eleve de PAIEMENTS référence la clé primaire id de ELEVES."
+    },
+    {
+      "fichier": "figures/q14-constantes-g.svg",
+      "question": "Q14",
+      "legende": "La borne |g| ≤ π (Q10) élimine la composante en e^x, la limite π en 0⁺ (Q11) fixe β = π."
+    },
+    {
+      "fichier": "figures/q15-q16-periodisation.svg",
+      "question": "Q15–Q16",
+      "legende": "F, somme des translatées entières de f ; sur [0, 1], le pic de f(x − n) est à distance au moins n − 1."
+    }
+  ]
+}

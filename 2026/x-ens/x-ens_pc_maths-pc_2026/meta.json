@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_pc_maths-pc_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2026
+  },
+  "questions": 32,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-pentes-cordes.svg",
+      "question": "Q1",
+      "legende": "Inégalité des pentes : pour g convexe, la corde de gauche (pente τ₋(h)) est moins inclinée que la tangente en x, elle-même moins inclinée que la corde de droite (pente τ₊(h))"
+    },
+    {
+      "fichier": "figures/q12-anneau-transfert.svg",
+      "question": "Q12",
+      "legende": "Anneau de spins : chaque lien orienté aᵢ → aᵢ₊₁ porte le facteur B(aᵢ, aᵢ₊₁), et le terme β a_N a₁ referme la chaîne, d'où une trace"
+    },
+    {
+      "fichier": "figures/q18-convergence-derivees.svg",
+      "question": "Q18",
+      "legende": "(a) g_β → |h| simplement ; (b) les g_β′, continues et nulles en 0, tendent vers ℓ, discontinue en 0 (tracé pour β = 0, 1, 2)"
+    },
+    {
+      "fichier": "figures/q25-profil-psi.svg",
+      "question": "Q25",
+      "legende": "Profil ψ_β,0 : maximum unique en 0 pour β = 0,3 ; pour β = 0,8, 0 devient un minimum local (zone teintée : ψ″ > 0) et les maxima sont en ±x*(β, 0)"
+    },
+    {
+      "fichier": "figures/q29-aimantation-saut.svg",
+      "question": "Q29",
+      "legende": "Dérivée ∂g/∂h (β, h) en fonction de h : continue pour β = 0,3, saut de −x*(β, 0) à x*(β, 0) en h = 0 pour β = 0,8"
+    },
+    {
+      "fichier": "figures/q31-point-fixe.svg",
+      "question": "Q31",
+      "legende": "Pour h = 0,2, x*(β, h) est l'abscisse de l'intersection positive de y = x et y = th(h + 2βx) ; pour β = 0,8, les deux intersections négatives ne sont pas des maxima"
+    }
+  ]
+}

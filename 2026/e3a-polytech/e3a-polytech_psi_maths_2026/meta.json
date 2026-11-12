@@ -1,0 +1,23 @@
+{
+  "slug": "e3a-polytech_psi_maths_2026",
+  "epreuve": {
+    "concours": "e3a-Polytech",
+    "filiere": "PSI",
+    "matiere": "Maths",
+    "annee": 2026
+  },
+  "questions": 47,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-6-toile-vn.svg",
+      "question": "Ex. 2, Q1.6",
+      "legende": "Figure 1 — Itérés de vₙ₊₁ = f(vₙ) depuis v₀ = 1 : dès v₁ = a, la suite reste entre a et b (carré clair) et converge vers le point fixe 0 en alternant de signe"
+    },
+    {
+      "fichier": "figures/q3-racines-onziemes.svg",
+      "question": "Ex. 4, Q3",
+      "legende": "Figure 2 — Les onze racines ωₖ = e^(2ikπ/11) de X¹¹ − 1 sur le cercle unité : sans ω₀ = 1 (cercle creux), les dix racines de 1 + X + … + X¹⁰ sont toutes hors de l'axe réel"
+    }
+  ]
+}

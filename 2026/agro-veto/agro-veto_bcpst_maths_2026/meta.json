@@ -1,0 +1,33 @@
+{
+  "slug": "agro-veto_bcpst_maths_2026",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2026
+  },
+  "questions": 37,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q7c-bornes-markov-chernoff.svg",
+      "question": "Q7.c",
+      "legende": "Bornes de Markov (Q5) et de Q7.b pour une loi de Poisson de paramètre λ = 2, en échelle logarithmique : égales à 1 en a = λ, elles se séparent ensuite très vite"
+    },
+    {
+      "fichier": "figures/q8-domination-seuil-m.svg",
+      "question": "Q8",
+      "legende": "Exemple P(s) = s³ et ν = 1, en échelle logarithmique : la majoration de Q8 est fausse pour 1,23 < s < 17,0 et ne devient vraie qu'au-delà du seuil M ≈ 17"
+    },
+    {
+      "fichier": "figures/q24-mutations-cultures.svg",
+      "question": "Q24",
+      "legende": "Trois cultures parallèles : une mutation transmise à toute la descendance donne 0, 1 ou 4 résistantes selon qu'elle est absente, tardive ou précoce"
+    },
+    {
+      "fichier": "figures/q24-poisson-yule-simon.svg",
+      "question": "Q24",
+      "legende": "Lois de Yule–Simon (ν = 3) et de Poisson (λ = 0,5), de même espérance 0,5, en échelle logarithmique : la queue lourde de la première porte l'indice de dispersion à 4,5"
+    }
+  ]
+}

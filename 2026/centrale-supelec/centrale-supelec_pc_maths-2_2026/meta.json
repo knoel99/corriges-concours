@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_pc_maths-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PC",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 34,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q6-bosses-rho-epsilon.svg",
+      "question": "Q6",
+      "legende": "Les bosses ρ_ε pour ε = 1, 1/2, 1/4 : nulles pour |x| > ε, de plus en plus hautes, toutes d'aire 1"
+    },
+    {
+      "fichier": "figures/q13-valeur-principale.svg",
+      "question": "Q13",
+      "legende": "Valeur principale de 1/x : avec la découpe symétrique, les aires ln(A/ε) et ln(ε/A) se compensent exactement"
+    },
+    {
+      "fichier": "figures/q17-saut-heaviside-dirac.svg",
+      "question": "Q17",
+      "legende": "Dérivées au sens des distributions : |x| a pour dérivée la fonction signe (a), l'échelon H a pour dérivée la masse de Dirac δ₀, égale au saut (b)"
+    },
+    {
+      "fichier": "figures/partie-e-strategie.svg",
+      "question": "Q28-Q34",
+      "legende": "Enchaînement de la partie E : de l'hypothèse S_N → 0 aux coefficients nuls, via F = ∑ u_n/n² et le cas absolument convergent (Q29)"
+    }
+  ]
+}

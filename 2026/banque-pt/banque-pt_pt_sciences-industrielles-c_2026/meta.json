@@ -1,0 +1,43 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-c_2026",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles C",
+    "annee": 2026
+  },
+  "questions": 32,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-2-chronogramme-quadrature.svg",
+      "question": "Q1.2",
+      "legende": "chronogrammes des voies A et B dans les deux sens ; B lu au front montant de A donne le sens"
+    },
+    {
+      "fichier": "figures/q1-7-platine-deux-pivots.svg",
+      "question": "Q1.7",
+      "legende": "vue de dessus : deux pivots directs bloquent la rotation de la platine, le coulisseau la libère"
+    },
+    {
+      "fichier": "figures/q1-8-graphe-liaisons.svg",
+      "question": "Q1.8",
+      "legende": "graphe des liaisons de la fixation des vérins : une boucle 0-1-4-3-2-0 et une branche 4-5"
+    },
+    {
+      "fichier": "figures/q2-1-battement-axial.svg",
+      "question": "Q2.1",
+      "legende": "battement axial 0,02 / C : contrôle au comparateur et zone de tolérance sur un cylindre de mesure"
+    },
+    {
+      "fichier": "figures/q2-10-lpbf-fdm.svg",
+      "question": "Q2.10",
+      "legende": "principe de la fusion laser sur lit de poudre (a) et du dépôt de fil fondu (b)"
+    },
+    {
+      "fichier": "figures/q3-1-coupe-principe-vertebre.svg",
+      "question": "Q3.1",
+      "legende": "coupe longitudinale de principe de la vertèbre, repères de la nomenclature (échelle non respectée)"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_psi_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-isolement-freinage.svg",
+      "question": "Q2",
+      "legende": "Isolement de Σ en freinage sur la roue avant : actions du sol en A et B, poids en G, vitesse et décélération de G, cotes L, a₄ et R + h"
+    },
+    {
+      "fichier": "figures/q8-pendule-inverse.svg",
+      "question": "Q8",
+      "legende": "Pendule inversé vu le long de la droite de contact : le poids, de bras de levier (R + h) sin β, crée autour de (A, y₁) un moment qui fait croître β"
+    },
+    {
+      "fichier": "figures/q11-graphe-structure.svg",
+      "question": "Q11",
+      "legende": "Graphe de structure du gyroscope : pivots (O_V, z₁) entre 1 et S et (O_V, x_S) entre S et V, machine électrique C_m z_S entre 1 et S"
+    },
+    {
+      "fichier": "figures/q14-effet-gyroscopique.svg",
+      "question": "Q14",
+      "legende": "Effet gyroscopique : le moment cinétique A_V ω_v x_S, entraîné à ψ̇ autour de z_S, donne le terme A_V ω_v ψ̇ y_S, sans composante sur z_S"
+    }
+  ]
+}

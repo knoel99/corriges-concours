@@ -1,0 +1,38 @@
+{
+  "slug": "ccinp_tpc_physique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TPC",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 53,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q11-resistances-serie.svg",
+      "question": "Q11",
+      "legende": "Schéma électrique équivalent, les résistances conducto-convective et de l'enveloppe traversées par le même flux sont en série"
+    },
+    {
+      "fichier": "figures/q19-q21-tranche-fluide.svg",
+      "question": "Q19-Q21",
+      "legende": "Tranche de fluide au repos et en mouvement, longueur dx(1 + ∂ξ/∂x) et forces de pression sur ses deux faces"
+    },
+    {
+      "fichier": "figures/q29-q30-surface-gauss.svg",
+      "question": "Q29-Q30",
+      "legende": "Coupe du condensateur terrestre, champ dirigé vers la Terre et sphère de Gauss de rayon r"
+    },
+    {
+      "fichier": "figures/q47-filtres-bf-hf.svg",
+      "question": "Q47",
+      "legende": "Filtres A et B en basse fréquence (C ouvert) et en haute fréquence (C remplacé par un fil)"
+    },
+    {
+      "fichier": "figures/q51-localisation-deux-detecteurs.svg",
+      "question": "Q51",
+      "legende": "Vue de haut, deux droites de visée perpendiculaires au champ mesuré se coupent au point d'impact"
+    }
+  ]
+}

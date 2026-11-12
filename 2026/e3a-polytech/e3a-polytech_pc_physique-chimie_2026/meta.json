@@ -1,0 +1,38 @@
+{
+  "slug": "e3a-polytech_pc_physique-chimie_2026",
+  "epreuve": {
+    "concours": "e3a-Polytech",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2026
+  },
+  "questions": 43,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-lignes-fil-spire-solenoide.svg",
+      "question": "Q2",
+      "legende": "Lignes de champ magnétique d'un fil infini, d'une spire et d'un solénoïde, avec le sens du courant."
+    },
+    {
+      "fichier": "figures/q6-lignes-dipole-terrestre.svg",
+      "question": "Q6",
+      "legende": "Lignes de champ du dipôle géomagnétique dans le plan (yOz), orientées du sud vers le nord."
+    },
+    {
+      "fichier": "figures/q8-trajectoires-magnetopause.svg",
+      "question": "Q8",
+      "legende": "Trajectoires d'un proton (sens horaire) et d'un électron (sens antihoraire) à la magnétopause."
+    },
+    {
+      "fichier": "figures/q37-cip-acide-l-aspartique.svg",
+      "question": "Q37",
+      "legende": "Acide L-aspartique annoté : priorités CIP et sens de rotation, configuration S."
+    },
+    {
+      "fichier": "figures/q42-linearisation-racemisation.svg",
+      "question": "Q42",
+      "legende": "Linéarisation ln((1 − r)/(1 + r)) en fonction de t, régression et points du document 8 en log décimal."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_pc_maths-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PC",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 34,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q7-courbe-cf.svg",
+      "question": "Q7",
+      "legende": "Tracé de 𝒞_f (Q7) : tangente horizontale y = b en (0, b), demi-tangente verticale x = a en (a, 0) ; tracé avec a = 3, b = 2"
+    },
+    {
+      "fichier": "figures/q8-ellipse-foyers.svg",
+      "question": "Q8",
+      "legende": "L'ellipse ℰ (Q8) : sommets A, A′, B, B′, foyers F, F′ sur le grand axe, et un point M avec MF + MF′ = 2a ; tracé avec a = 3, b = 2, c = √5"
+    },
+    {
+      "fichier": "figures/q28-graphe-f-droite-1-sur-t.svg",
+      "question": "Q28",
+      "legende": "Résolution graphique de (Eₜ) (Q28) : la droite d'ordonnée 1/t coupe le graphe de F en λ₁(t) < λ₂(t) < λ₃(t), (a) pour t > 0, (b) pour t < 0 ; tracé avec a = 1, b = 3, c = 5, u² = v² = w² = 1"
+    },
+    {
+      "fichier": "figures/q34-allure-lambda1.svg",
+      "question": "Q34",
+      "legende": "Allure de λ₁ prolongée (Q32–Q34) : égale à a en 0 avec la pente u², tendant vers ρ₁ en +∞ et vers −∞ en −∞ ; courbe calculée avec a = 1, b = 3, c = 5, u² = v² = w² = 1"
+    }
+  ]
+}

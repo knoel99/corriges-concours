@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_tpc_chimie_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TPC",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 49,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q07-courbes-analyse-thermique.svg",
+      "question": "Q7",
+      "legende": "Courbes d'analyse thermique : deux ruptures de pente à 105 et 116 °C pour w = 0,30, palier à 122 °C pour l'azéotrope"
+    },
+    {
+      "fichier": "figures/q11-cellule-electrolyse.svg",
+      "question": "Q11",
+      "legende": "Cellule d'électrolyse : anode en aluminium au pôle +, cathode en aluminium au pôle −, sens des électrons et migration des ions"
+    },
+    {
+      "fichier": "figures/q14-courbes-intensite-potentiel.svg",
+      "question": "Q14",
+      "legende": "Allure des courbes courant-potentiel : Umin = 0,04 V entre les seuils −1,84 V et −1,80 V, échelle non respectée"
+    },
+    {
+      "fichier": "figures/q23-om-complexe-plan-carre.svg",
+      "question": "Q23",
+      "legende": "Les quatre OM les plus basses de AlL4 vues de dessus : Φ1, Φ2, Φ3 liantes, Φ4 non liante"
+    },
+    {
+      "fichier": "figures/q25-diagramme-om-hydroxo.svg",
+      "question": "Q25",
+      "legende": "Diagramme d'OM de HO− : 2s(O) non liante, σ liante, deux π non liantes (HO) et σ* antiliante (BV)"
+    },
+    {
+      "fichier": "figures/q26-interaction-ho-bv.svg",
+      "question": "Q26",
+      "legende": "Recouvrement σ en phase, selon Oz, entre la HO 2p de O (HO−) et la BV 3pz de Al (AlL4)"
+    }
+  ]
+}

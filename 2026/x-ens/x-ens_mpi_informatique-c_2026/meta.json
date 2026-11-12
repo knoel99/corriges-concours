@@ -1,0 +1,33 @@
+{
+  "slug": "x-ens_mpi_informatique-c_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MPI",
+    "matiere": "Informatique C",
+    "annee": 2026
+  },
+  "questions": 24,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-automates-prefixes-interdits.svg",
+      "question": "Q3",
+      "legende": "Automates reconnaissant P̂₁, P̂₂ et P̂₄ : état initial fléché, état acceptant en double cercle ; les transitions absentes mènent à un puits"
+    },
+    {
+      "fichier": "figures/q7-ultime-invariance.svg",
+      "question": "Q7",
+      "legende": "Système de la figure 2 de l'énoncé annoté pour la Q7 : Φ en bleu, boucle de s₁ hors de Φ en orange ; s₄, s₅, s₆ satisfont Φ^ω, s₀ et s₁ ne satisfont pas EAΦ"
+    },
+    {
+      "fichier": "figures/q22a-systeme-transitions.svg",
+      "question": "Q22 a",
+      "legende": "Système de transitions T de la Q22 a : une ligne par nombre d'instructions exécutées, valeurs de v, a, b définies en chaque état, états terminaux en gris"
+    },
+    {
+      "fichier": "figures/q22b-mise-en-veille.svg",
+      "question": "Q22 b",
+      "legende": "États de T< accessibles depuis (s₀, ∅) : seule B reçoit Z = {t₁¹}, et la transition B → D étiquetée t₁¹ disparaît"
+    }
+  ]
+}

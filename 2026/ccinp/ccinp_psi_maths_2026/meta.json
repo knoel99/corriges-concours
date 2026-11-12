@@ -1,0 +1,28 @@
+{
+  "slug": "ccinp_psi_maths_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PSI",
+    "matiere": "Maths",
+    "annee": 2026
+  },
+  "questions": 43,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q17-cordes-lemme-des-pentes.svg",
+      "question": "Q17",
+      "legende": "Les trois cordes issues de (n + 1, g(n + 1)) : leurs pentes croissent avec l'autre extrémité, d'où l'encadrement de Q17 (allure d'une fonction convexe quelconque)"
+    },
+    {
+      "fichier": "figures/q25-q27-chaine-de-v.svg",
+      "question": "Q25-Q27",
+      "legende": "Action de v sur la base canonique : Vect(1) et Vect(1, X), seuls sous-espaces stables de dimension 1 et 2, sont emboîtés"
+    },
+    {
+      "fichier": "figures/q33-q35-base-adaptee-n2.svg",
+      "question": "Q33-Q35",
+      "legende": "Base de Q35 pour u² = 0 : chaque paire (eᵢ, fᵢ) donne un bloc J, chaque eⱼ avec j > r un bloc nul"
+    }
+  ]
+}

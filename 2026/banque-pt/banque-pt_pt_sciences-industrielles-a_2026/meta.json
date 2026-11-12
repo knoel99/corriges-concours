@@ -1,0 +1,33 @@
+{
+  "slug": "banque-pt_pt_sciences-industrielles-a_2026",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Sciences industrielles A",
+    "annee": 2026
+  },
+  "questions": 48,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q11-schemas-liaisons.svg",
+      "question": "Q11",
+      "legende": "Schémas complétés : deux liaisons sphère-plan en A et B (a), liaison cylindre-plan équivalente d'axe x0 (b)"
+    },
+    {
+      "fichier": "figures/q20-caracteristique-force-contraction.svg",
+      "question": "Q20",
+      "legende": "Caractéristique force-contraction linéarisée à pression constante, et à une pression plus forte P′"
+    },
+    {
+      "fichier": "figures/q41-bode-gain-asymptotique.svg",
+      "question": "Q41",
+      "legende": "Diagramme de gain asymptotique de FTBO_nc, avec la courbe réelle en pointillés gris"
+    },
+    {
+      "fichier": "figures/q48-chronogramme-pression.svg",
+      "question": "Q48",
+      "legende": "Chronogramme complété : lignes d'état du stm et pression dans l'accumulateur"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "ccinp_psi_modelisation-et-ingenierie-numerique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PSI",
+    "matiere": "Modélisation et ingénierie numérique",
+    "annee": 2026
+  },
+  "questions": 46,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q03-course-piston.svg",
+      "question": "Q3",
+      "legende": "Loi entrée-sortie x₃/L(θ₁) pour R/L = 1/2 sur deux tours, comparée à une sinusoïde de mêmes extrema"
+    },
+    {
+      "fichier": "figures/q09-debit-instantane.svg",
+      "question": "Q9",
+      "legende": "Débit instantané modélisé sur un tour de manivelle (T = 24 ms) et débit moyen q_moy ≈ 2,36·10⁻³ m³·s⁻¹"
+    },
+    {
+      "fichier": "figures/q21-diagramme-e-ph.svg",
+      "question": "Q21",
+      "legende": "Diagramme E-pH du chlore : domaines attribués, droite O₂/H₂O et pH de travail 7,2"
+    },
+    {
+      "fichier": "figures/q36-bilan-photons.svg",
+      "question": "Q36",
+      "legende": "Bilan de photons UV dans la colonne d'eau et profil I(z)/I₀ calculé"
+    },
+    {
+      "fichier": "figures/q43-cycle-chlore.svg",
+      "question": "Q43",
+      "legende": "Cycle de l'élément chlore dans le modèle : électrolyse, dismutation, photolyse"
+    }
+  ]
+}

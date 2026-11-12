@@ -1,0 +1,302 @@
+# Banque PT PT — Français A 2026 · Corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+## Présentation du sujet
+
+**Format.** Dissertation unique, 4 heures, sans dictionnaire ni appareil électronique. Aucune longueur imposée. Le sujet tient en deux phrases : une citation de Maurice Merleau-Ponty et une consigne.
+
+> « La Nature est un objet énigmatique, un objet qui n'est pas tout à fait objet ; elle n'est pas tout à fait devant nous. Elle est notre sol, non pas ce qui est devant, mais ce qui nous porte. » (Maurice Merleau-Ponty, *La Nature. Notes de cours du Collège de France (1956-1957)*)
+>
+> En quoi cette réflexion vous semble-t-elle valable pour définir notre expérience de la nature telle qu'elle apparaît dans les trois œuvres au programme ?
+
+**Le thème et les œuvres.** Le thème 2025-2026 des CPGE scientifiques, « Expériences de la nature », associe trois œuvres de genres très différents :
+
+| Œuvre | Genre | Ce qu'elle apporte au sujet |
+|---|---|---|
+| Jules Verne, *Vingt mille lieues sous les mers* (1869-1870) | roman d'exploration scientifique | la nature comme spectacle et inventaire (Aronnax, Conseil, la vitre du salon), comme ressource exploitée par la technique (« La mer est tout ! »), comme élément où l'on vit (*Mobilis in mobili*) |
+| Georges Canguilhem, *La Connaissance de la vie* (1952, éd. revue 1965) | essai d'épistémologie et de philosophie de la biologie | le vivant comme objet qui résiste à l'expérimentation, la pensée comme activité vivante, le milieu propre (Uexküll), le normal et le pathologique, le monstrueux |
+| Marlen Haushofer, *Le Mur invisible* (1963) | récit de survie à la première personne | le mur d'origine inexpliquée, la montagne comme sol vital, le soin des bêtes, le temps des saisons, le « rapport » écrit après coup |
+
+**L'auteur de la citation.** Merleau-Ponty, philosophe de la perception, cherche dans ses cours sur la Nature une voie entre la nature-objet de la science classique (un ensemble de choses étalées devant un esprit qui les connaît) et une nature divinisée. Le mot « sol » fait écho à une réflexion de Husserl, que Merleau-Ponty commente, selon laquelle la Terre n'est pas d'abord un corps céleste parmi d'autres mais le sol de toute expérience. Ce contexte n'est pas exigé : la citation se suffit à elle-même si on la lit de près.
+
+**Les attentes.** La consigne demande un **jugement** (« en quoi … valable ? ») sur une définition de **notre expérience** de la nature, et non une définition de la nature. On attend une analyse de la citation entière, dont les deux phrases forment un seul raisonnement, puis une confrontation constante des trois œuvres.
+
+**Ce qu'en dit le rapport 2026.** Sur 2681 copies, la moyenne est de 9,26 (9,87 en 2025), l'écart type de 3,77 ; 102 copies ont obtenu de 17 à 20, 224 de 0 à 4. Le jury attribue cette baisse à une mauvaise analyse du sujet, très fréquente : « La grande majorité des candidats n'a pas réussi cette année à traiter le sujet dans son intégralité » (p. 2). Trois points ont été **discriminants** :
+
+- lire la citation comme un tout, en comprenant le passage de « objet » à « sol » ;
+- analyser la notion d'**objet**, éludée par la plupart des copies qui se sont contentées de se demander si la nature est mystérieuse ;
+- maîtriser Canguilhem : « Canguilhem a été le plus malmené, c'est pourtant lui qui offrait la clé de compréhension du sujet » (p. 2).
+
+Le rapport insiste aussi sur la confrontation des œuvres dans chaque paragraphe et sur la qualité de la langue, prise en compte dans la note.
+
+**Difficulté et gestion du temps.** Sujet d'apparence abordable, mais piégeux : la citation semble claire, et l'on est tenté de n'en traiter qu'une phrase ou d'en réciter un cours. Répartition indicative : 1 h 15 de préparation au brouillon (analyse, problématique, plan détaillé, choix des exemples, introduction et conclusion rédigées), 2 h 30 de rédaction, 15 min de relecture, que le jury juge indispensables pour corriger les fautes d'accord.
+
+**Étapes du travail.** Comme pour toute dissertation, les « questions » ci-dessous sont les étapes de la préparation : 1. analyser la citation ; 2. analyser la consigne ; 3. problématiser ; 4. construire le plan ; 5. choisir les exemples ; 6. rédiger l'introduction ; 7. rédiger les transitions et la conclusion ; 8. le devoir complet.
+
+## Partie I — Comprendre le sujet
+
+On ne commence pas par chercher des exemples : on lit la citation comme un raisonnement, puis la consigne mot par mot. Tout le reste en dépend.
+
+### Étape 1 — Analyser la citation
+
+> [!INDICATION]
+> Lisez les deux phrases comme un seul mouvement : la seconde se contente-t-elle d'ajouter une idée, ou explique-t-elle la première ?
+
+> [!INDICATION]
+> Interrogez le mot « objet », répété trois fois : d'où vient-il, et quelles sortes d'objets peut-on distinguer (chose inerte, être vivant, outil) ? Opposez ensuite « devant » à ce qui est dessous, et cherchez tous les sens de « porter » et de « notre ».
+
+#### Solution
+
+**Un seul raisonnement.** La première phrase procède par corrections : elle accorde à la nature le statut d'**objet**, puis le lui retire à moitié (« énigmatique », « pas tout à fait objet », « pas tout à fait devant nous »). La seconde, juxtaposée, la rectifie et l'explique : si la nature n'est pas devant nous, c'est parce qu'elle est notre sol. L'énigme de la première phrase trouve sa raison dans la seconde.
+
+**« Objet ».** Étymologiquement, l'objet est ce qui est jeté devant (*ob-jectum*), par opposition au sujet, ce qui est jeté dessous (*sub-jectum*). Être objet, c'est être placé en face d'un regard qui observe, mesure, connaît. Mais il faut distinguer l'objet inerte, l'objet vivant (que la biologie peine à objectiver, ce qui renvoie directement à Canguilhem) et l'objet technique, ce que l'homme utilise et manipule, d'où une réflexion légitime sur l'emprise de la technique sur la nature.
+
+**« Énigmatique ».** L'énigme n'est pas un simple mystère : c'est ce qui, dans la nature, résiste à l'objectivation et laisse un reste. Le « pas tout à fait » ne nie pas que la science de la nature existe et réussisse ; il dit qu'elle n'épuise pas son objet.
+
+**« Notre sol ».** Le passage de « devant » à « dessous » rejoint l'étymologie : ce qui est dessous n'est plus en position d'objet. Le sol est ce sur quoi l'on se tient, ce dans quoi l'on s'enracine, ce qui fournit des ressources, mais aussi ce que l'on cultive et que l'on foule. Ce n'est **pas** ce qui nous entoure.
+
+**« Porter ».** Soutenir (le sol porte nos pas) ; nourrir, faire vivre (la terre porte ses fruits). En retournant la phrase, on obtient un troisième sens que la citation n'emploie pas, avoir la charge de : il permettra de la discuter.
+
+**« Notre ».** Le possessif dit l'appartenance (la nature est le sol d'un « nous »), mais aussi la prétention à posséder et à dominer. La citation peut alors se lire comme une leçon de modestie adressée à l'homme avide de connaissance et de maîtrise.
+
+On en tire trois questions : comment connaître une nature que l'on ne peut pas placer devant soi ; quelle est notre condition, celle d'un vivant parmi les vivants ; que devient notre domination technique sur un sol qui nous porte.
+
+> [!METHODE]
+> Repérez la structure logique d'une citation (affirmation, correction, explication) avant d'en définir les mots, puis mettez les notions en relation. Une analyse qui définit « objet » et « sol » séparément sans dire comment l'un conduit à l'autre manque l'essentiel.
+
+> [!JURY]
+> Le rapport 2026 désigne la cause principale d'échec : « les candidat(e)s n'ont pas considéré la citation comme un tout, un raisonnement suivi » (p. 2). Beaucoup n'ont retenu que l'un des deux termes, « objet » ou « sol ». Le jury rappelle que la seconde phrase, « juxtaposée à la précédente, la rectifie et la précise » (p. 3), et regrette que presque aucun candidat n'ait connu l'étymologie latine du mot « objet ».
+
+> [!PIEGE]
+> Assimiler le sol à l'environnement, au motif que ce qui n'est pas devant nous serait autour de nous. Le rapport 2026 relève ce contresens : « Fréquemment et à contre-sens, le “sol” a été assimilé à “ce qui nous entoure”, à notre environnement » (p. 4). Les autres contresens signalés sur « pas tout à fait devant nous » : l'invisible (par contamination du titre de Haushofer), l'obstacle, l'avenir.
+
+> [!PIEGE]
+> Personnifier la Nature à cause de sa majuscule : nature bonne mère, providentielle, cruelle ou vengeresse. Ces images peuvent appartenir aux personnages d'une œuvre, pas à l'analyse. Le jury s'en étonne de la part de futurs ingénieurs : « Tout cela n'est pas présenté comme une certaine vision anthropomorphique mais comme une réalité objective » (p. 4).
+
+### Étape 2 — Analyser la consigne
+
+> [!INDICATION]
+> Pesez chacun des mots de la question : « en quoi », « valable », « définir », « notre expérience », « telle qu'elle apparaît ». Sur quoi porte exactement la définition demandée ?
+
+#### Solution
+
+- « **En quoi** … **valable** » : on demande d'établir la pertinence de la citation, mais aussi, implicitement, d'en mesurer les **limites**. « Valable » n'est pas « vrai » : une réflexion peut valoir sous certaines conditions, ou pour une part de l'expérience seulement.
+- « **Définir notre expérience** » : la citation est évaluée comme définition de l'**expérience** que nous faisons de la nature, et non comme définition de la nature elle-même. Le devoir porte sur des manières de connaître, d'habiter, de dépendre, de dominer.
+- « **Notre** » : le sujet parle de nous, lecteurs et humains, et pas seulement des personnages. On peut se demander comment les œuvres nous font éprouver la nature (par le récit, par le concept).
+- « **Telle qu'elle apparaît dans les trois œuvres** » : la dissertation se fait sur les œuvres. Chaque argument doit s'y appuyer.
+
+> [!JURY]
+> Le rapport 2026 reproche aux candidats de ne pas avoir vu qu'ils étaient invités à « réfléchir sur notre expérience de la nature et non sur une définition de celle-ci » (p. 2). La plupart ont discuté ou simplement expliqué la définition de la nature donnée par Merleau-Ponty, au lieu d'évaluer sa valeur pour l'expérience décrite dans les œuvres.
+
+> [!PIEGE]
+> Transformer la consigne en « Montrez que… », ou au contraire en plan passe-partout sur les bienfaits et les méfaits de la nature. Le jury note que cette expérience ne prend pas la forme d'un tel plan et que le plan dialectique ne se réduit pas à une vision manichéenne du monde.
+
+### Étape 3 — Problématiser
+
+> [!INDICATION]
+> Cherchez ce que la citation présuppose ou laisse dans l'ombre. Le mot « sol » a-t-il une connotation ? Les œuvres la confirment-elles toujours ?
+
+> [!INDICATION]
+> Pensez aux moments où la nature, dans les trois œuvres, cesse de porter ceux qui l'habitent, et à ceux où ce sont les personnages qui portent quelque chose.
+
+#### Solution
+
+La citation est convaincante, mais le mot « sol » est rassurant : il évoque la stabilité, la fiabilité, presque la protection. Or dans les œuvres la nature se dérobe (la mer emprisonne et engloutit, l'hiver affame) et les personnages doivent porter ce qui les porte (la narratrice et ses bêtes). La problématique doit tenir compte des deux phrases et du mot « expérience » :
+
+**Si notre expérience de la nature n'est jamais tout à fait celle d'un objet placé devant nous, mais celle d'un sol qui nous porte, est-elle pour autant une appartenance paisible, ou ce sol peut-il se dérober et nous charger, à notre tour, de le porter ?**
+
+> [!METHODE]
+> Une bonne problématique naît d'une tension interne à la citation (ici, entre la sécurité qu'implique le mot « sol » et l'« énigme » de la première phrase), pas d'une simple question « Est-ce vrai ? ».
+
+> [!JURY]
+> Le rapport 2026 rappelle que la problématique naît de l'analyse des notions et de leur mise en relation, qu'elle ne se réduit pas à une question générale sur la validité de la thèse, et qu'elle ne consiste pas « à un premier énoncé sous forme de questions des parties du plan annoncé juste derrière » (p. 5). Il propose cet exemple, qui prend en compte les deux phrases et le libellé : « Si notre expérience de la nature n'est pas à proprement parler celle d'un objet à étudier, faut-il alors la traiter comme un sujet, et instaurer des relations harmonieuses avec elle ? » (p. 5).
+
+> [!PIEGE]
+> Les problématiques qui ne retiennent qu'une phrase : « La nature peut-elle faire l'objet d'une connaissance rationnelle et objective ? » (première phrase seule), « La Nature protège-t-elle réellement l'homme ? » (seconde phrase seule). Le jury les cite comme incomplètes ; il classe comme hors-sujet les questions du type « La Nature nous veut-elle du bien ? ».
+
+## Partie II — Construire la dissertation
+
+Une fois le sujet compris, on construit un plan qui progresse et on rassemble, pour chaque sous-partie, des exemples tirés des trois œuvres et mis en regard.
+
+### Étape 4 — Construire le plan
+
+> [!INDICATION]
+> Les deux phrases de la citation forment un raisonnement : la première pose une énigme, la seconde en donne la raison. Servez-vous de ce mouvement pour vos deux premières parties. Que reste-t-il pour la troisième ?
+
+> [!INDICATION]
+> La troisième partie doit dépasser la citation à partir des œuvres, sans la rejeter : appuyez-vous sur le sens du verbe « porter » que la citation n'emploie pas, et sur l'ambiguïté de « notre ».
+
+#### Solution
+
+Plan progressif en trois parties. Chaque sous-partie est construite autour d'une idée et confronte les œuvres, au lieu de consacrer un paragraphe à chacune :
+
+| Partie | Sous-parties | Rapport à la citation |
+|---|---|---|
+| I. Une nature placée devant nous, mais qui n'est « pas tout à fait objet » | A. Observer, classer, compter ; B. un objet vivant qui résiste ; C. où est l'énigme ? | valide la première phrase |
+| II. « Notre sol » : ce qui nous porte et dont nous procédons | A. un sol qui nourrit, mais différemment ; B. l'homme vivant parmi les vivants ; C. le sol n'est pas le milieu | valide la seconde phrase, qui explique la première |
+| III. Un sol qui se dérobe et qu'il faut porter | A. un sol qui peut manquer ; B. porter ce qui nous porte, sans le posséder ; C. une expérience qui passe par l'écriture | nuance et prolonge |
+
+> [!JURY]
+> Le rapport 2026 exige que chaque partie soit subdivisée en paragraphes et que « les trois œuvres doivent être tour à tour convoquées, sans pour autant se succéder dans un catalogue » (p. 7). Il signale deux écueils : « le plan plaqué, qui ne correspond pas au sujet mais reproduit un schéma déjà appris, et le plan réducteur, qui ne s'intéresse qu'à l'une des composantes du libellé » (p. 7).
+
+> [!PIEGE]
+> Le plan « une sous-partie par œuvre » (A. Verne, B. Canguilhem, C. Haushofer). Il juxtapose au lieu de comparer. Le rapport 2026 en fait une faiblesse majeure : « de nombreux candidats consacrent chaque paragraphe à une seule œuvre, sans jamais les mettre en dialogue » (p. 8).
+
+> [!PIEGE]
+> Faire de la partie I une partie « contre » la citation (« la nature est un objet ») et de la partie II une partie « pour ». La citation elle-même concède l'objet et en marque la limite : une partie qui « confirme » la citation en montrant que la nature est un objet placé devant nous est un contresens.
+
+### Étape 5 — Choisir les exemples
+
+> [!INDICATION]
+> Pour chaque sous-partie, cherchez dans chaque œuvre une scène, un personnage ou un concept précis, et demandez-vous ce qui distingue les œuvres autant que ce qui les rapproche.
+
+> [!INDICATION]
+> Chez Canguilhem, pensez aux chapitres plutôt qu'aux formules : sur l'expérimentation, sur la machine, sur le milieu, sur le normal et le pathologique, sur le monstrueux.
+
+#### Solution
+
+| Idée | Verne | Canguilhem | Haushofer |
+|---|---|---|---|
+| La nature placée devant un regard | Aronnax naturaliste, la vitre du salon, Conseil qui classe, Ned Land qui évalue ce qui se mange | la biologie doit objectiver le vivant pour le connaître | l'inventaire des provisions, des allumettes, des munitions |
+| Un objet vivant qui résiste | Conseil qui range sans reconnaître ; les poulpes géants | « L'expérimentation en biologie animale » : spécificité, individualité, totalité, irréversibilité ; « Machine et organisme » | les saisons qui déjouent les calculs, le savoir de citadine inutile |
+| Où est l'énigme ? | le « monstre » qui se révèle machine | | le mur d'origine incertaine ; le vieil homme figé derrière la paroi |
+| Un sol qui nourrit | « La mer est tout ! » ; byssus, sodium tiré de l'eau de mer ; autonomie technique | | potager, foin, traite de Bella, chasse ; dépendance directe |
+| L'homme vivant parmi les vivants | *Mobilis in mobili* ; le cimetière de corail | « La pensée et le vivant » : « la pensée du vivant doit tenir du vivant l'idée du vivant » | le corps transformé, le temps cyclique, la communauté avec les bêtes |
+| Sol et milieu | le *Nautilus*, milieu artificiel construit | « Le vivant et son milieu » : *Umgebung* et *Umwelt* (Uexküll, Goldstein), le débat du vivant avec son milieu | le territoire borné par le mur |
+| Le sol qui peut manquer | prison de la banquise après le pôle Sud, maelström final | « Le normal et le pathologique », « La monstruosité et le monstrueux » | hivers, orage, Perle tuée, Tigre disparu |
+| Porter sans posséder | Nemo refuse le massacre des baleines, détruit les cachalots | l'exemple du hérisson et de nos routes | Bella, Lynx, le veau ; la mise bas ; l'homme qui tue Lynx et le taureau ; la corneille blanche |
+| L'expérience par l'écriture | le témoignage d'Aronnax | le concept qui met à distance ce qu'il défend | le « rapport » écrit après coup |
+
+Le tableau compte des cases vides : c'est normal pour une idée que porte surtout une œuvre, à condition que chaque sous-partie en confronte au moins deux.
+
+> [!JURY]
+> Le rapport 2026 reproche aux copies d'avoir énuméré les ressources fournies par la mer et par la montagne sans les distinguer : « Ce sont précisément ces différences qu'il convenait d'interroger et mettre en lumière, ce que les candidats ont rarement fait » (p. 9). Il souligne aussi qu'un même épisode admet plusieurs lectures : la mise bas de Bella (parenté avec l'animal ou anthropocentrisme), le massacre des cachalots, où Nemo peut sembler aider la nature ou s'arroger « indument la position de juge en se servant de critères humains » (p. 10).
+
+> [!JURY]
+> Sur Canguilhem, le rapport 2026 indique que les difficultés de l'expérimentation sur le vivant « permettaient précisément d'expliquer pourquoi la Nature reste à jamais un “objet énigmatique” » (p. 10), et que « la notion de “milieu” qu'il convenait de distinguer de celle de “sol” » était l'objet de « Le vivant et son milieu » (p. 10). Il déplore que l'on se contente de prendre parti pour le hérisson « sans reprendre l'idée exacte que cet exemple illustrait » (p. 11), et que l'on prête à Canguilhem des expériences qu'il ne fait que rapporter (la tique d'Uexküll, l'expérience de Courrier sur la lapine).
+
+> [!PIEGE]
+> Présenter le *Nautilus* ou le mur comme des énigmes naturelles. Le rapport 2026 rappelle que « ce qu'on prenait pour un phénomène naturel se révèle une production humaine, en tout cas pour le premier, pour le second la question demeure pendante » (p. 7). De même, l'homme de l'alpage qui tue Taureau et Lynx n'est pas un danger naturel.
+
+> [!PIEGE]
+> Les erreurs de détail coûtent cher en crédibilité. Le jury relève : Nemo veut atteindre le pôle Sud, et non le pôle Nord ; il n'est pas victime d'un cyclone à la fin, mais du maelström. Il relève aussi les noms écorchés (le *Nautilus*, Ned Land, Canguilhem). Ajoutons : la chatte du *Mur invisible* n'a pas de nom (Perle et Tigre sont ses petits) ; *La Connaissance de la vie* date de 1952. En cas de doute sur une citation, paraphrasez en désignant précisément la scène.
+
+## Partie III — Rédiger
+
+L'introduction et la conclusion se rédigent au brouillon ; le développement se rédige directement au propre à partir du plan détaillé.
+
+### Étape 6 — Rédiger l'introduction
+
+> [!INDICATION]
+> Une introduction de dissertation comporte cinq temps : amorce, citation recopiée et analysée, présentation des œuvres, problématique, annonce du plan.
+
+> [!INDICATION]
+> L'amorce doit mener à la citation : partez de l'évidence que la citation conteste (nous plaçons spontanément la nature en face de nous). L'analyse doit être précise, mais proportionnée.
+
+#### Solution
+
+L'introduction du devoir complet (étape 8) suit ces cinq temps :
+
+1. **Amorce** : la langue et la science placent la nature « en face » de nous.
+2. **Citation et analyse** : citation recopiée intégralement ; les deux phrases comme un raisonnement ; étymologie et sortes d'objets ; le sol comme dessous, non comme entourage ; « porter » et « notre ».
+3. **Œuvres** : titre, auteur, date et une ligne de présentation pour chacune.
+4. **Problématique** : la face rassurante du mot « sol » face aux œuvres.
+5. **Annonce du plan** : trois parties, en une ou deux phrases, sans les sous-parties.
+
+> [!JURY]
+> Le rapport 2026 relève trois travers dans les introductions : « l'absence totale d'analyse et l'arrivée brutale d'une problématique », une analyse si longue qu'elle réduit le développement « à n'être qu'une simple répétition illustrée d'exemples », et une problématique sans rapport avec l'analyse, empruntée à un ancien corrigé (p. 6). Il ajoute qu'« il est inutile, et même contreproductif, de commencer par une autre citation que le sujet » (p. 6).
+
+> [!PIEGE]
+> Ouvrir sur un exemple mal relié au sujet. Le jury cite le *Voyageur contemplant une mer de nuages* de Friedrich, Robinson ou les films de Miyazaki, convoqués sans être mis en relation avec le sens de la citation.
+
+### Étape 7 — Rédiger les transitions et la conclusion
+
+> [!INDICATION]
+> Chaque transition fait le bilan de la partie qui s'achève et énonce la question qui motive la suivante.
+
+> [!INDICATION]
+> La conclusion répond à la problématique en reprenant le mouvement du devoir ; si vous ouvrez, l'ouverture doit naître du parcours, pas d'une citation apprise.
+
+#### Solution
+
+- **Transition I → II** : si la nature échappe à l'objectivation, c'est peut-être que nous ne sommes jamais entièrement en face d'elle.
+- **Transition II → III** : le mot « sol » suggère la stabilité, presque la protection ; les œuvres invitent à nuancer.
+- **Conclusion** : réponse en trois temps (objet énigmatique, sol qui explique l'énigme, sol qui peut manquer et qu'il faut porter), puis formule de synthèse : notre expérience de la nature est une appartenance inquiète, qui engage notre responsabilité. La dernière phrase revient au verbe de la citation plutôt que d'ouvrir sur un sujet nouveau.
+
+> [!JURY]
+> Le rapport 2026 demande que la conclusion donne « la réponse à la problématique posée dans l'introduction » sans devenir un résumé interminable, et juge que les ouvertures finales « s'avèrent la plupart du temps catastrophiques » (p. 8) lorsqu'elles posent une question nouvelle ou plaquent une citation apprise. Il veut aussi des transitions : « Le parcours argumentatif, bien visible, doit être explicité par des transitions logiques adaptées » (p. 7).
+
+> [!PIEGE]
+> Les connecteurs pauvres ou faux. Le jury relève les « de plus » en série, l'absence de connecteurs de cause, de conséquence, de concession ou d'opposition, et l'inversion de la cause et de la conséquence.
+
+### Étape 8 — Le devoir complet
+
+> [!INDICATION]
+> Rédigez en suivant le plan de l'étape 4 et le tableau de l'étape 5 : dans chaque sous-partie, une idée, des exemples tirés de plusieurs œuvres, leur analyse, et un retour explicite à la citation.
+
+#### Solution
+
+**Introduction**
+
+Nous parlons de la nature comme d'un paysage que l'on regarde ou d'un objet que l'on étudie : la langue elle-même la place en face de nous, au bout du regard du promeneur ou sous l'instrument du savant. C'est cette évidence que Maurice Merleau-Ponty conteste dans ses cours du Collège de France de 1956-1957 : « La Nature est un objet énigmatique, un objet qui n'est pas tout à fait objet ; elle n'est pas tout à fait devant nous. Elle est notre sol, non pas ce qui est devant, mais ce qui nous porte. »
+
+Les deux phrases forment un seul raisonnement. La première accorde à la nature le statut d'objet, puis le lui retire à moitié. Or l'objet, étymologiquement, est ce qui est jeté devant (*ob-jectum*) : chose inerte que l'on observe, chose vivante que l'on expérimente, outil que l'on manipule. Une nature « pas tout à fait objet » est donc une nature que nous ne parvenons jamais à tenir entièrement à distance, d'où son caractère « énigmatique ». La seconde phrase, juxtaposée à la première, en donne la raison : si la nature n'est pas devant nous, c'est qu'elle est dessous. Le « sol » n'est pas ce qui nous entoure, mais ce sur quoi nous nous tenons, où nous nous enracinons, ce qui nous « porte » au double sens de soutenir et de faire vivre. Le possessif « notre » est lui-même ambigu : il dit notre appartenance à ce sol, mais aussi la prétention à le posséder, à le cultiver, à le fouler.
+
+Le sujet ne demande pas de définir la nature, mais d'évaluer si cette réflexion est « valable » pour définir « notre expérience » de la nature dans *Vingt mille lieues sous les mers* de Jules Verne (1869-1870), roman où un naturaliste découvre l'océan à bord d'un sous-marin, dans *La Connaissance de la vie* de Georges Canguilhem (1952, édition revue en 1965), essai sur la manière dont la biologie peut connaître le vivant, et dans *Le Mur invisible* de Marlen Haushofer (1963), récit d'une femme brusquement isolée dans une forêt autrichienne par une paroi inexplicable.
+
+Or le mot « sol » a une résonance rassurante : un sol porte, il ne trahit pas. Si notre expérience de la nature n'est jamais tout à fait celle d'un objet placé devant nous, mais celle d'un sol qui nous porte, est-elle pour autant une appartenance paisible, ou ce sol peut-il se dérober et nous charger, à notre tour, de le porter ? Nous verrons d'abord que les œuvres placent la nature devant un regard qui la connaît et la manipule, mais qu'elle y reste énigmatique (I). Elles montrent ensuite que cette énigme tient à ce que la nature est notre sol, ce qui nous porte et dont nous procédons (II). Elles révèlent enfin que ce sol peut se dérober et qu'il demande à être porté, de sorte que notre expérience de la nature est moins un repos qu'une responsabilité (III).
+
+**I. Une nature placée devant nous, mais qui n'est « pas tout à fait objet »**
+
+Les trois œuvres commencent par mettre la nature à distance, pour la connaître ou pour s'en servir. Mais cette mise à distance, loin de démentir Merleau-Ponty, fait apparaître ce qu'il appelle l'énigme.
+
+**A. Mettre la nature devant soi : observer, classer, compter.** Le roman de Verne est d'abord celui d'un regard. Pierre Aronnax, professeur suppléant au Muséum d'histoire naturelle de Paris, embarque sur l'*Abraham Lincoln* pour identifier ce que l'on prend pour un monstre marin. À bord du *Nautilus*, lorsque les panneaux du salon s'ouvrent, la mer s'encadre derrière la vitre comme dans un aquarium : la nature est littéralement placée « devant » les passagers. Aronnax nomme et décrit, Conseil classe, Ned Land évalue ce qui se chasse et se mange. La narratrice du *Mur invisible* adopte d'abord une attitude semblable, mais pour survivre et non pour savoir : elle compte les provisions, les allumettes, les munitions, recense ce que le chalet et la forêt peuvent lui fournir. Canguilhem donne à cette attitude sa forme la plus rigoureuse : pour connaître le vivant, la biologie doit en faire un objet, l'isoler, le mesurer, le soumettre à l'expérimentation. Le savant de Verne, la survivante de Haushofer et l'expérimentateur de Canguilhem mettent ainsi la nature devant eux, l'un pour l'inventorier, l'autre pour en vivre, le troisième pour la connaître.
+
+**B. Un objet vivant, qui résiste à l'objectivation.** Mais cet objet n'est pas inerte, et c'est ce qui le rend « pas tout à fait objet ». Dans « L'expérimentation en biologie animale », Canguilhem montre que le vivant oppose à l'expérimentateur des obstacles propres : la spécificité des espèces, qui interdit de transposer sans précaution un résultat de l'une à l'autre ; l'individualité de chaque organisme ; la totalité, qui fait qu'une fonction isolée n'est plus tout à fait la même que dans l'organisme entier ; l'irréversibilité des phénomènes vitaux. Dans « Machine et organisme », il refuse d'expliquer l'organisme par la machine et invite à comprendre la machine elle-même comme un prolongement de l'activité du vivant. Les romans font éprouver cette résistance. Conseil range les poissons dans leurs familles sans savoir les reconnaître ; la classification laisse échapper l'animal réel, et les poulpes géants qui arrachent un homme d'équipage ne se laissent pas réduire à une case. Chez Haushofer, le compte des provisions ne dit rien des saisons qui déjouent les calculs ni du comportement des bêtes : la narratrice comprend vite que son savoir de citadine ne lui apprend pas comment vivre. L'énigme n'est donc pas un mystère vague : c'est la résistance précise que le vivant oppose à la connaissance qui voudrait le réduire.
+
+**C. Où est l'énigme ?** Encore faut-il ne pas se tromper d'énigme. Le « monstre » qui ouvre le roman de Verne, que le naturaliste prend pour un narval géant, se révèle une machine : ce que l'on croyait un phénomène naturel est une production humaine. Le mur de Haushofer est lui aussi une énigme, mais dont l'origine reste en suspens : la narratrice soupçonne une arme humaine, sans jamais pouvoir le vérifier. Ces deux dispositifs ne sont donc pas des énigmes de la nature ; ils en déplacent la question. Derrière la paroi, la narratrice aperçoit un vieil homme figé près d'une fontaine, image d'un monde arrêté ; de son côté, la forêt continue de vivre. Ce qui est énigmatique, ce n'est pas un phénomène étrange posé devant nous, c'est la nature qui persiste sous nos dispositifs et nos savoirs, et dont nous ne pouvons pas sortir pour la regarder du dehors.
+
+Les œuvres valident donc la première phrase de Merleau-Ponty : la nature peut être mise devant nous, mais elle y reste « énigmatique ». Reste à comprendre pourquoi : si elle échappe à l'objectivation, c'est peut-être que nous ne sommes jamais entièrement en face d'elle.
+
+**II. « Notre sol » : la nature comme ce qui nous porte et dont nous procédons**
+
+La seconde phrase de la citation rectifie et explique la première : la nature n'est pas « devant » nous parce qu'elle est d'abord sous nous. L'expérience de la nature cesse alors d'être frontale pour devenir une expérience d'appui.
+
+**A. Un sol qui nourrit, mais pas de la même façon.** Les deux romans font de la nature une source de toutes les ressources. Le capitaine Nemo le proclame : « La mer est tout ! » Tout, à bord du *Nautilus*, vient d'elle : la nourriture tirée des poissons et des algues, les étoffes tissées avec le byssus de certains coquillages, l'énergie même, puisque le sodium des piles est extrait de l'eau de mer. La montagne porte aussi la narratrice : elle plante pommes de terre et haricots, fauche le foin pour l'hiver, trait la vache Bella, chasse pour la viande. Mais la différence est décisive. Nemo est porté par la mer à travers une machine qui le tient à l'abri d'elle, et son autonomie est d'abord une prouesse technique. La narratrice, elle, n'a que ses mains, quelques outils et ses bêtes : la terre ne la porte que si elle s'y épuise. Le même mot, « sol », recouvre ainsi une nature exploitée par la technique et une nature dont on dépend directement.
+
+**B. Un sol dont nous procédons : l'homme vivant parmi les vivants.** Le sol n'est pas seulement ce qui fournit, c'est ce dans quoi l'on s'enracine. Canguilhem le montre sur le terrain du savoir lui-même. L'introduction de *La Connaissance de la vie*, « La pensée et le vivant », rappelle que la connaissance est une activité de vivant et que « la pensée du vivant doit tenir du vivant l'idée du vivant ». Le biologiste ne surplombe pas la vie qu'il étudie : il en procède, et c'est pourquoi il ne peut jamais la placer tout à fait devant lui. Les romans donnent à cette idée un contenu vécu. La narratrice note que son corps change, que sa personne d'avant s'efface, que le temps cyclique des saisons et des travaux remplace celui des horloges. Elle se pense peu à peu avec le chien Lynx, Bella, la chatte, puis le jeune taureau, comme une communauté de vivants dont elle n'est plus le centre. Nemo, avec sa devise *Mobilis in mobili*, « mobile dans l'élément mobile », dit une existence qui se tient non en face de la mer mais en elle ; le cimetière de corail, où il ensevelit l'un de ses hommes, fait de la mer le sol qui porte les vivants et reçoit les morts.
+
+**C. Le sol n'est pas le milieu.** Il faut pourtant distinguer le sol de ce qui nous entoure. Dans « Le vivant et son milieu », Canguilhem retrace l'histoire de la notion de milieu, d'abord pensée comme un ensemble de conditions extérieures qui agissent sur l'organisme. Avec Jakob von Uexküll et Kurt Goldstein, la notion se renverse : chaque vivant découpe dans l'environnement géographique (*Umgebung*) un milieu propre (*Umwelt*), fait des seuls éléments qui ont pour lui valeur de signal, et il entretient avec ce milieu un rapport de débat. Le milieu est donc centré sur le vivant : il est ce que le vivant organise autour de lui. Le sol de Merleau-Ponty est plus profond : il est ce qui précède cette organisation et la rend possible. La différence se lit dans les romans. Le *Nautilus* est un milieu artificiel, fermé, que Nemo a construit autour de lui ; la narratrice est enfermée dans un territoire que borne le mur. Mais ni le salon du *Nautilus* ni le chalet ne sont leur sol : celui-ci est la mer et la montagne, dont ils dépendent sans les avoir choisies ni bornées.
+
+Les œuvres donnent donc raison à la seconde phrase : notre expérience de la nature est celle d'un appui et d'une appartenance. Mais le mot « sol » suggère la stabilité, presque la protection, et c'est sur ce point que les œuvres invitent à nuancer.
+
+**III. Un sol qui se dérobe et qu'il faut porter : l'expérience de la nature comme responsabilité**
+
+Si la nature est notre sol, ce sol n'est ni immobile ni bienveillant. Les trois œuvres montrent qu'il peut se dérober, et qu'il ne porte durablement que celui qui accepte, en retour, de le porter.
+
+**A. Un sol qui peut manquer.** Chez Verne, l'élément qui porte le *Nautilus* menace aussi de l'engloutir : après le passage au pôle Sud, le sous-marin reste prisonnier de la banquise et ses passagers manquent d'y étouffer ; le roman s'achève dans le maelström des côtes norvégiennes, d'où Aronnax et ses compagnons ne sortent que par leur fuite. Chez Haushofer, l'hiver menace chaque année les réserves, l'orage dévaste, les bêtes meurent ou disparaissent : Perle est tuée, Tigre ne revient pas. Il ne faut pas pour autant prêter à la nature une volonté de nuire : la forêt ne punit pas la narratrice, elle ne s'occupe pas d'elle. Canguilhem donne à cette fragilité son sens exact. Dans « Le normal et le pathologique » et « La monstruosité et le monstrueux », il montre que la maladie et la malformation ne sont pas des châtiments, mais l'envers d'une vie qui invente ses formes et peut échouer : la régularité du vivant est précaire. La nature nous porte, mais sans nous garantir. L'énigme de la première phrase réapparaît ainsi au cœur de la seconde.
+
+**B. Porter ce qui nous porte.** Le verbe « porter » doit alors être retourné. La narratrice ne vit que parce que des bêtes dépendent d'elle : elle ne peut abandonner ni Bella qu'il faut traire, ni Lynx qui l'attend, ni le veau qui grandit. Lorsqu'elle aide Bella à mettre bas en s'appuyant sur ses souvenirs d'accouchement, on peut y lire une parenté avec l'animal, mais aussi la persistance d'un regard humain sur lui. À la fin, un homme surgi on ne sait d'où tue le jeune taureau et Lynx, et la narratrice l'abat : la violence ne vient pas de la nature mais d'un humain, et ce qui est détruit est précisément ce qu'elle portait. Dans les dernières pages, elle nourrit une corneille blanche que les autres rejettent, soin sans utilité qui est la forme la plus nue de la responsabilité. Nemo, lui, refuse que Ned Land tue des baleines pour le seul plaisir de chasser, mais il massacre les cachalots qui les attaquent. Le geste est ambigu : il protège une espèce, mais il s'arroge le droit de juger les vivants selon des critères humains. Canguilhem éclaire cette ambiguïté : dans « Le vivant et son milieu », l'exemple du hérisson rappelle que nos routes coupent un milieu qui n'est pas le nôtre, et que l'homme n'a pas à prendre son propre milieu pour celui de tous les vivants. Le « notre » de Merleau-Ponty prend alors son double sens : la nature est notre sol, mais elle ne nous appartient pas.
+
+**C. Une expérience qui passe par l'écriture.** Enfin, si l'expérience de la nature est « notre » expérience, c'est qu'elle nous parvient toujours par une médiation : le récit d'Aronnax, qui veut témoigner de ce qu'il a vu ; le concept chez Canguilhem, qui ne peut parler de la vie qu'en la mettant à distance tout en dénonçant cette distance ; le rapport de la narratrice, écrit après coup sur le papier qui lui reste. Aucune des trois œuvres ne nous installe dans la nature sans distance ; toutes nous font éprouver, par l'écriture, la tension entre le regard qui objective et le sol qui porte. La validité de la formule tient à son « pas tout à fait » : la nature n'est ni tout à fait objet, ni un sol que l'on pourrait oublier, et notre expérience consiste à tenir ensemble ces deux rapports.
+
+**Conclusion**
+
+La réflexion de Merleau-Ponty se révèle largement valable pour définir l'expérience de la nature dans les trois œuvres, à condition d'être lue comme un raisonnement. Les œuvres mettent d'abord la nature devant un regard, celui du naturaliste, de la survivante qui fait ses comptes, de l'expérimentateur, et montrent que ce regard bute sur un vivant qui « n'est pas tout à fait objet ». Elles expliquent ensuite cette énigme : la nature est le sol qui nourrit les personnages et dont procède jusqu'à la pensée du biologiste, un sol plus profond que le milieu que chaque vivant organise autour de lui. Mais elles ajoutent ce que la formule laisse dans l'ombre : ce sol peut manquer, et il ne nous porte durablement que si nous acceptons de le porter, sans prétendre le posséder. Notre expérience de la nature n'est donc ni une simple connaissance ni un repos, mais une appartenance inquiète, qui engage notre responsabilité. C'est le sens que prend, au terme du parcours, le verbe même de la citation : la nature est ce qui nous porte, et ce qu'il nous revient de porter.
+
+> [!METHODE]
+> Chaque sous-partie s'achève sur un retour à un mot de la citation (« énigmatique », « sol », « porte », « notre »). C'est ce va-et-vient qui fait d'une suite d'exemples une démonstration.
+
+> [!PIEGE]
+> Faire de la dernière partie une simple étude de la forme des œuvres (journal, récit, témoignage). Le jury l'admet, mais note que cela peut se révéler « artificiellement plaqué et se substituant à un réel achèvement du parcours de réflexion » (p. 8). Ici, l'écriture n'occupe qu'une sous-partie et ramène au « pas tout à fait » de la citation.
+
+## Bilan
+
+- **Questions discriminantes en 2026** : la lecture de la citation comme un raisonnement (de « objet » à « sol »), l'analyse de la notion d'objet, la distinction entre sol et milieu, et l'usage précis de Canguilhem. Le rapport attend une analyse du sujet « qui ne fait l'impasse sur aucune des notions du libellé, notamment celles d'objet et d'énigmatique » (p. 13).
+- **Méthode de l'analyse de citation** : repérer la structure logique (affirmation, correction, explication), définir chaque terme, l'étymologie au besoin, puis chercher ce que la citation laisse dans l'ombre. Ici, le sens de « porter » qu'elle n'emploie pas (avoir la charge de) et l'ambiguïté de « notre » fournissent la troisième partie.
+- **Lire la consigne** : « valable » appelle un jugement nuancé ; on définit une expérience, pas la nature.
+- **Confronter les œuvres** : chaque sous-partie part d'une idée et met au moins deux œuvres en regard, en soulignant leurs différences. Canguilhem, plus abstrait, s'utilise par chapitres et concepts, en lui attribuant ses thèses et non les expériences qu'il rapporte.
+- **Expression** : le jury tient compte de la langue dans la note. Titres des œuvres en toutes lettres et soulignés sur la copie, noms propres exacts (Merleau-Ponty, Canguilhem, Haushofer, *Nautilus*), niveau de langue soutenu, relecture des accords.
+- **Réservoir réutilisable pour le thème** : le regard du naturaliste et ses limites (Aronnax, Conseil) ; *Umwelt* et *Umgebung* ; la pensée comme activité du vivant ; le normal et le pathologique ; le mur d'origine incertaine ; le soin des bêtes et la corneille blanche ; le rapport écrit après coup.
+- **Sujets voisins** : la nature comme spectacle ou comme milieu ; maîtrise et appartenance ; connaître la nature, est-ce s'en séparer ; la nature nous est-elle hostile ou indifférente.

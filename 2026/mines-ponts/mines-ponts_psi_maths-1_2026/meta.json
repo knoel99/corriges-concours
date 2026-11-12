@@ -1,0 +1,28 @@
+{
+  "slug": "mines-ponts_psi_maths-1_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PSI",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 25,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q4-structure-carre-nul.svg",
+      "question": "Q4",
+      "legende": "Base adaptée de Q4 : u envoie bijectivement S sur Im u (f_i = u(e_i)) et annule Ker u = Im u ⊕ Vect(g_j), les cases suivant l'ordre de la base"
+    },
+    {
+      "fichier": "figures/q20-decomposition-jn.svg",
+      "question": "Q20",
+      "legende": "J_6 vue comme la chaîne ε_1 → … → ε_6 de la base canonique : B_1 (bleu, plein) prend les flèches issues d'un indice impair, B_2 (orange, tirets) celles d'un indice pair"
+    },
+    {
+      "fichier": "figures/q21-decomposition-v-ec.svg",
+      "question": "Q21",
+      "legende": "V + E_C pour n = 6 : la chaîne s'arrête en ε_5, les retours ε_6 → ε_j de poids c_j vont dans B_1 si j est pair, dans B_2 si j est impair"
+    }
+  ]
+}

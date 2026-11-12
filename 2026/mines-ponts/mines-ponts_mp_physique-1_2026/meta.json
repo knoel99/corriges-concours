@@ -1,0 +1,33 @@
+{
+  "slug": "mines-ponts_mp_physique-1_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Physique 1",
+    "annee": 2026
+  },
+  "questions": 25,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q5-niveaux-series.svg",
+      "question": "Q5",
+      "legende": "Niveaux En = −E0/n² et séries d'émission : seul le niveau final n = 2 donne des raies visibles"
+    },
+    {
+      "fichier": "figures/q9-energie-potentielle-effective.svg",
+      "question": "Q9",
+      "legende": "Énergie potentielle effective U(r) et domaine accessible selon le niveau d'énergie : cercle, ellipse, parabole, hyperbole"
+    },
+    {
+      "fichier": "figures/q21-difference-de-marche.svg",
+      "question": "Q21",
+      "legende": "Différence de marche entre deux plans réticulaires consécutifs : δ = 2a cos(θ/2)"
+    },
+    {
+      "fichier": "figures/q23-densite-radiale.svg",
+      "question": "Q23",
+      "legende": "Densité radiale ρ(r), maximale en r = R, distance électron-noyau la plus probable"
+    }
+  ]
+}

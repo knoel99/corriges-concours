@@ -1,0 +1,38 @@
+{
+  "slug": "mines-ponts_mp_chimie_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 26,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-dispositif-electro-fenton.svg",
+      "question": "Q3",
+      "legende": "Dispositif électro-Fenton complété : anode au pôle +, cathode au pôle −, ampèremètre en série, électrons dans les fils seulement"
+    },
+    {
+      "fichier": "figures/q4-montage-trois-electrodes.svg",
+      "question": "Q4",
+      "legende": "Montage à trois électrodes : i mesuré entre ET et CE, E mesuré entre ET et ER"
+    },
+    {
+      "fichier": "figures/q5-courbe-intensite-potentiel.svg",
+      "question": "Q5",
+      "legende": "Courbe intensité-potentiel et réaction associée à chaque portion"
+    },
+    {
+      "fichier": "figures/q8-schemas-lewis.svg",
+      "question": "Q8",
+      "legende": "Schémas de Lewis de l'ion sulfate, de l'ion ammonium et du peroxyde d'hydrogène"
+    },
+    {
+      "fichier": "figures/q18-maille-cfc.svg",
+      "question": "Q18",
+      "legende": "Maille cubique à faces centrées : 8 sommets, 6 centres de faces, contact le long d'une diagonale de face"
+    }
+  ]
+}

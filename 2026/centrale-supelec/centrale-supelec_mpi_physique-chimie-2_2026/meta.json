@@ -1,0 +1,38 @@
+{
+  "slug": "centrale-supelec_mpi_physique-chimie-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MPI",
+    "matiere": "Physique-chimie 2",
+    "annee": 2026
+  },
+  "questions": 40,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q8-electrolyse-sens-courant.svg",
+      "question": "Q8",
+      "legende": "figure 8 complétée : (A) cathode reliée à la borne −, (B) anode reliée à la borne +, électrons de (B) vers (A) par les fils, courant i en sens inverse et de (B) vers (A) dans la solution"
+    },
+    {
+      "fichier": "figures/q14-expanseur-keplerien.svg",
+      "question": "Q14",
+      "legende": "expanseur képlérien : F′1 ≡ F2, rayons croisés en F′1, sortie parallèle et inversée, D = f′1 + f′2 (tracé pour τ = 2)"
+    },
+    {
+      "fichier": "figures/q16-expanseur-galileen.svg",
+      "question": "Q16",
+      "legende": "expanseur galiléen : F′3 ≡ F1 à gauche de 𝓛3, rayons semblant venir de F′3, sortie parallèle non inversée, D = f′1 − |f′3| (tracé pour τ′ = 3)"
+    },
+    {
+      "fichier": "figures/q19-prisme-division-faisceau.svg",
+      "question": "Q19",
+      "legende": "prisme cubique : chaque moitié du faisceau (orange, bleue) traverse une lame à faces parallèles et ressort parallèle à l'axe, de l'autre côté, d'où d_f = d′0/2"
+    },
+    {
+      "fichier": "figures/q35-schema-resistances-thermiques.svg",
+      "question": "Q35",
+      "legende": "schéma équivalent : R_peau et R_combi en série, puis R_cc et R_rad en parallèle entre T_paroi et T_0"
+    }
+  ]
+}

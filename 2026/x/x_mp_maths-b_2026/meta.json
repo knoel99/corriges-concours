@@ -1,0 +1,28 @@
+{
+  "slug": "x_mp_maths-b_2026",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q7-valeurs-propres-demi-cercle.svg",
+      "question": "Q7",
+      "legende": "Valeurs propres 2cos θ_k de T_8 : projections d'angles équirépartis sur le demi-cercle de rayon 2, et densité de l'arcsinus sur le même axe"
+    },
+    {
+      "fichier": "figures/q10b-pn-vers-echelon.svg",
+      "question": "Q10b",
+      "legende": "Graphes de P_2, P_4, P_8 : convergence vers l'échelon H hors de la bande −η ≤ x ≤ η, et correspondance x ↔ t = (1 − x)/2 avec les intervalles de 10a"
+    },
+    {
+      "fichier": "figures/q12-echelons-et-bandes.svg",
+      "question": "Q12",
+      "legende": "La fonction f, l'escalier Φ et le polynôme F_n : F_n ne s'écarte de Φ que dans les bandes disjointes de largeur 2η centrées en c_i, d'au plus un saut a_i"
+    }
+  ]
+}

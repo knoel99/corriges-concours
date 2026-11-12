@@ -1,0 +1,33 @@
+{
+  "slug": "mines-ponts_mp_informatique_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q5-forme-mots-a1.svg",
+      "question": "Q5",
+      "legende": "Forme d'un mot accepté par A₁ : k lettres nulles, la colonne (1, 1) au rang k, puis une ligne 2 nulle"
+    },
+    {
+      "fichier": "figures/q8-automate-trois-etats.svg",
+      "question": "Q8",
+      "legende": "Automate à trois états pour L, tous finaux : p₀ garde les deux égalités, p₁ ne suit que v₁ = v₃, p₂ que v₂ = v₃"
+    },
+    {
+      "fichier": "figures/q15-automate-retenue.svg",
+      "question": "Q15",
+      "legende": "Automate de l'addition : l'état est la retenue, seul r₀ est final"
+    },
+    {
+      "fichier": "figures/q27-deroule-automates.svg",
+      "question": "Q27",
+      "legende": "Déroulé sur φ(x₂) : (a) E, (b) son complémentaire B, (c) projection C puis sans_zero D (finaux ajoutés en vermillon), (d) complémentaire de D, sans état final accessible"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "e3a-polytech_pc_maths_2026",
+  "epreuve": {
+    "concours": "e3a-Polytech",
+    "filiere": "PC",
+    "matiere": "Maths",
+    "annee": 2026
+  },
+  "questions": 42,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q4-1-triangle-t.svg",
+      "question": "Ex. 3, Q4.1",
+      "legende": "Le triangle T, de sommets O(0, 0), A(1, 0), B(0, 1), bord compris"
+    },
+    {
+      "fichier": "figures/q4-6-graphe-g.svg",
+      "question": "Ex. 3, Q4.6",
+      "legende": "Graphe de g : x ↦ x(1 − x) pour 0 ⩽ x ⩽ 1, en repère orthonormé, maximum 1/4 en 1/2, tangentes de pentes 1 et −1 aux extrémités"
+    },
+    {
+      "fichier": "figures/q4-7-bord-triangle.svg",
+      "question": "Ex. 3, Q4.7",
+      "legende": "Restriction de f aux trois côtés de T : maximum 1 en (1/2, 0), minimum 0 aux sommets"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_tsi_modelisation_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TSI",
+    "matiere": "Modélisation",
+    "annee": 2026
+  },
+  "questions": 52,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q8-flotteur-gite-bras-redressement.svg",
+      "question": "Q8",
+      "legende": "Flotteur en gîte : le poids en G et la poussée en C forment un couple de bras GZ qui ramène θ vers 0"
+    },
+    {
+      "fichier": "figures/q31-graphe-f-demi-periode.svg",
+      "question": "Q31",
+      "legende": "Graphe de f sur une demi-période : cloche symétrique, tangentes horizontales en 0, τ/2 et τ, deux inflexions"
+    },
+    {
+      "fichier": "figures/q32-graphe-f-periode-complete.svg",
+      "question": "Q32",
+      "legende": "Graphe de f sur 0 ≤ t ≤ 2τ : translation de τ puis symétrie d'axe (Ot), soit la symétrie de centre (τ, 0)"
+    },
+    {
+      "fichier": "figures/q33-configurations-extremes.svg",
+      "question": "Q33",
+      "legende": "Corps rectiligne en t = 0, τ, 2τ et configurations extrêmes en τ/2 et 3τ/2, avec Δ ≈ ±280°"
+    },
+    {
+      "fichier": "figures/q40-amplitude-bornee-resonance.svg",
+      "question": "Q40",
+      "legende": "Réponse θ(t) bornée si Ω ≠ ω, amplitude croissant linéairement si Ω = ω"
+    },
+    {
+      "fichier": "figures/q52-bande-instabilite.svg",
+      "question": "Q52",
+      "legende": "Domaine d'instabilité |Ω − ω| < ω|δ|/4 au voisinage de Ω = ω"
+    }
+  ]
+}

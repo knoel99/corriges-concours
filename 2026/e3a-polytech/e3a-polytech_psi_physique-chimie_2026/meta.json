@@ -1,0 +1,33 @@
+{
+  "slug": "e3a-polytech_psi_physique-chimie_2026",
+  "epreuve": {
+    "concours": "e3a-Polytech",
+    "filiere": "PSI",
+    "matiere": "Physique-chimie",
+    "annee": 2026
+  },
+  "questions": 41,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q21-triangle-vitesses.svg",
+      "question": "Q21",
+      "legende": "Triangle des vitesses en M dans le plan normal à l'axe : U orthoradial, W// à l'angle β de U, composante radiale de norme V_r dirigée vers l'axe"
+    },
+    {
+      "fichier": "figures/q28-cycle-hysteresis.svg",
+      "question": "Q28",
+      "legende": "Allure du cycle d'hystérésis d'un ferromagnétique doux, parcouru dans le sens trigonométrique, avec champ rémanent, excitation coercitive et saturation (échelle non respectée)"
+    },
+    {
+      "fichier": "figures/q34-diagramme-e-ph-fer.svg",
+      "question": "Q34",
+      "legende": "Diagramme E-pH du fer réduit au nécessaire : immunité de Fe(s), corrosion de Fe²⁺ et Fe³⁺, passivation par Fe₂O₃ et Fe₃O₄, droites de l'eau en tirets"
+    },
+    {
+      "fichier": "figures/q35-potentiel-mixte.svg",
+      "question": "Q35",
+      "legende": "Construction du potentiel mixte : l'opposé de la branche cathodique de H⁺ coupe la courbe du fer en E corr et celle du magnésium en E mixte, avant le seuil d'oxydation du fer"
+    }
+  ]
+}

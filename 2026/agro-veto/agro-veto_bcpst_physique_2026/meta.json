@@ -1,0 +1,23 @@
+{
+  "slug": "agro-veto_bcpst_physique_2026",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 33,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q18-allure-temperature.svg",
+      "question": "Q18",
+      "legende": "Allure de T(t) : refroidissement exponentiel de T_i vers l'asymptote T_a jusqu'à T_s en t_1, puis palier de solidification de durée t_2 ; la tangente à l'origine coupe l'asymptote en τ"
+    },
+    {
+      "fichier": "figures/q33-trajectoire-flanc.svg",
+      "question": "Q33",
+      "legende": "Trajectoire asymptotique du cheveu et flanc du volcan (pente moyenne p) : si u > u_min, l'écart au sol croît et le cheveu dépasse la côte ; si u < u_min, il retombe sur les pentes"
+    }
+  ]
+}

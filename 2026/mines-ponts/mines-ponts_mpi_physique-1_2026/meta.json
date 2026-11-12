@@ -1,0 +1,38 @@
+{
+  "slug": "mines-ponts_mpi_physique-1_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MPI",
+    "matiere": "Physique 1",
+    "annee": 2026
+  },
+  "questions": 25,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q05-niveaux-et-series.svg",
+      "question": "Q5",
+      "legende": "Niveaux E_n = −E_0/n² à l'échelle et transitions vers n_f = 1 (UV), 2 (visible) et 3 (IR)"
+    },
+    {
+      "fichier": "figures/q09-energie-potentielle-effective.svg",
+      "question": "Q9",
+      "legende": "Énergie potentielle effective U(r) et les quatre niveaux d'énergie : cercle, ellipse, parabole, hyperbole"
+    },
+    {
+      "fichier": "figures/q18-energie-potentielle-electron.svg",
+      "question": "Q18",
+      "legende": "Énergie potentielle d'un électron de K au cristal, selon que le cristal est relié aux grilles A et B ou à la masse"
+    },
+    {
+      "fichier": "figures/q21-difference-de-marche.svg",
+      "question": "Q21",
+      "legende": "Différence de marche entre deux plans réticulaires consécutifs : H et H' sont sur les fronts d'onde passant par I, et HJ + JH' = 2a cos(θ/2)"
+    },
+    {
+      "fichier": "figures/q23-densite-radiale.svg",
+      "question": "Q23",
+      "legende": "Densité radiale de probabilité ρ(r), maximale en r = R"
+    }
+  ]
+}

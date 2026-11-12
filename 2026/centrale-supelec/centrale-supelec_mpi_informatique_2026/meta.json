@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_mpi_informatique_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MPI",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 42,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q12-arbres-ambiguite-g.svg",
+      "question": "Q12",
+      "legende": "les deux arbres de dérivation du mot non n et n dans G, qui diffèrent par la règle appliquée au E sous la racine"
+    },
+    {
+      "fichier": "figures/q21-q22-univers-e.svg",
+      "question": "Q21-Q22",
+      "legende": "l'univers 𝔼 de l'énoncé ; a, j et k ne mènent qu'à l, où Q est fausse ; b, k est un témoin de P ∧ □¬P"
+    },
+    {
+      "fichier": "figures/q23-q25-contre-modeles.svg",
+      "question": "Q23-Q25",
+      "legende": "les univers 𝕌₁, 𝕌₂ et 𝕌₃ ; en orange, le monde où □P est vraie et P fausse"
+    },
+    {
+      "fichier": "figures/q31-univers-arborescent.svg",
+      "question": "Q31",
+      "legende": "arborescent(𝔼, 2, i), mondes numérotés dans l'ordre de création ; le monde l est copié une fois par chemin"
+    }
+  ]
+}

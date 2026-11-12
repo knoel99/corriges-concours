@@ -1,0 +1,43 @@
+{
+  "slug": "agro-veto_bcpst_biologie_2026",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Biologie",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/partie1-site-de-liaison.svg",
+      "question": "I.1",
+      "legende": "Site de liaison : l'eau ordonnée de la poche libre est remplacée par le ligand, retenu par des interactions ioniques (Asp⁻, Lys⁺), une liaison hydrogène (Ser) et des contacts apolaires (Leu, Phe)"
+    },
+    {
+      "fichier": "figures/partie1-courbes-saturation-o2.svg",
+      "question": "I.4",
+      "legende": "Courbes de saturation en O₂ de la myoglobine et de l'hémoglobine ; l'effet Bohr décale la sigmoïde vers la droite et augmente l'O₂ délivré aux tissus"
+    },
+    {
+      "fichier": "figures/partie2-cinetique-inhibiteurs.svg",
+      "question": "II.1",
+      "legende": "Cinétique michaélienne : un inhibiteur compétitif augmente le KM apparent sans changer Vmax, un inhibiteur non compétitif abaisse Vmax sans changer KM"
+    },
+    {
+      "fichier": "figures/partie2-cycle-myosine.svg",
+      "question": "II.3",
+      "legende": "Cycle des têtes de myosine : la fixation de l'ATP détache la tête, la libération de Pᵢ déclenche le coup de rame ; le cycle exige le Ca²⁺ fixé sur la troponine C"
+    },
+    {
+      "fichier": "figures/partie2-operon-lactose.svg",
+      "question": "II.3",
+      "legende": "Opéron lactose : sans lactose, LacI occupe l'opérateur ; avec lactose et sans glucose, LacI–allolactose se détache et CAP–AMPc favorise la transcription"
+    },
+    {
+      "fichier": "figures/partie3-cascade-transduction.svg",
+      "question": "III.1",
+      "legende": "Cascade de transduction d'un récepteur couplé aux protéines G dans l'hépatocyte : amplification jusqu'au glucose-1-P et mécanismes d'extinction"
+    }
+  ]
+}

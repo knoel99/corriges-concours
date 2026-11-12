@@ -1,0 +1,38 @@
+{
+  "slug": "ccinp_mpi_informatique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MPI",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 41,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q07-gadget-e2.svg",
+      "question": "Q7",
+      "legende": "Le gadget de l'arête e2 = (β, δ) : deux chaînes de six sommets et quatre arêtes croisées, en couleur"
+    },
+    {
+      "fichier": "figures/q08-traversees-gadget.svg",
+      "question": "Q8",
+      "legende": "Les trois traversées du gadget, en bleu : (a) de s1 à s6, (b) de t1 à t6, (c) deux passages séparés"
+    },
+    {
+      "fichier": "figures/q09-chemins-gamma-delta.svg",
+      "question": "Q9",
+      "legende": "Étape (iii) : A_δ enfile les gadgets de e1 à e4, A_γ relie ceux de e3 et de e6"
+    },
+    {
+      "fichier": "figures/q16-arbre-cycle-h.svg",
+      "question": "Q16",
+      "legende": "Le cycle H = 1, 2, 3, 8, 4, 5, 6, 7, 1 sur l'arbre T de la figure 2 de l'énoncé, raccourcis en tirets"
+    },
+    {
+      "fichier": "figures/q39-blocs-alignes.svg",
+      "question": "Q39",
+      "legende": "Alignement de a v a v a sur les blocs µ(m_j), pour p pair et pour p impair (exemple |v| = 3)"
+    }
+  ]
+}

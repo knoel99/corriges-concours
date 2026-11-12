@@ -1,0 +1,33 @@
+{
+  "slug": "ats_ats_maths_2026",
+  "epreuve": {
+    "concours": "ATS",
+    "filiere": "ATS",
+    "matiere": "Maths",
+    "annee": 2026
+  },
+  "questions": 76,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-dent-de-scie.svg",
+      "question": "Ex. 1, Q1",
+      "legende": "Graphe de f entre −4π et 4π : dent de scie de pente −1/2, extrémités exclues (cercles vides), f(2kπ) = 0 (points pleins)"
+    },
+    {
+      "fichier": "figures/q12-s3-points-critiques.svg",
+      "question": "Ex. 1, Q12",
+      "legende": "S₃ et ses six points critiques entre 0 et 2π : maxima locaux en π/4, 3π/4, 4π/3, minima locaux en 2π/3, 5π/4, 7π/4 ; f en tiretés"
+    },
+    {
+      "fichier": "figures/ex3-q4-image-demi-droite.svg",
+      "question": "Ex. 3, Q4",
+      "legende": "Image de la demi-droite D par f : la demi-droite f(D) d'origine O, tournée de θ ; chaque point r va en r·e^(iθ)"
+    },
+    {
+      "fichier": "figures/ex3-q12-orbite-periodique.svg",
+      "question": "Ex. 3, Q12",
+      "legende": "Orbite de z₀ = 1 + i pour λ = e^(iπ/3) dans U₆ : six points sur le cercle de rayon r₀ = √2, chaque pas tourne de π/3, et z₆ = z₀"
+    }
+  ]
+}

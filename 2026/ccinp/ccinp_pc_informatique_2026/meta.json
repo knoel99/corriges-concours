@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_pc_informatique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PC",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 33,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q05-tables-photoobj-specobj.svg",
+      "question": "Q5",
+      "legende": "Les deux tables de la partie I : deux clefs étrangères vers PhotoObj.objID et deux attributs z de sens différents"
+    },
+    {
+      "fichier": "figures/q06-iteration-k-moyennes.svg",
+      "question": "Q6",
+      "legende": "Une itération des k-moyennes pour k = 2 : affectation au centroïde le plus proche, mise à jour aux barycentres, nouvelle affectation"
+    },
+    {
+      "fichier": "figures/q14-organigramme-pelage.svg",
+      "question": "Q14",
+      "legende": "Structure de groupes_de_spectres : le test d'arrêt suit un premier passage, d'où une boucle « faire … tant que »"
+    },
+    {
+      "fichier": "figures/q16-biais-effectifs-knn.svg",
+      "question": "Q16",
+      "legende": "Vote des k = 8 plus proches voisins : tripler les références O fait basculer la prédiction de B à O"
+    },
+    {
+      "fichier": "figures/q23-arbre-couvrant-depart-d.svg",
+      "question": "Q23",
+      "legende": "Arbre couvrant de poids minimal du graphe du DR depuis D : ordre d'ajout et arêtes retenues (poids total 16)"
+    },
+    {
+      "fichier": "figures/q32-elagage-feuilles.svg",
+      "question": "Q32",
+      "legende": "Effet de elagage : chaque étape supprime les galaxies sans successeur, les branches reculent d'un sommet"
+    }
+  ]
+}

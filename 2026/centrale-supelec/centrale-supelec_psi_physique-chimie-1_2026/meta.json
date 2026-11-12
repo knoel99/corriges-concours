@@ -1,0 +1,43 @@
+{
+  "slug": "centrale-supelec_psi_physique-chimie-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PSI",
+    "matiere": "Physique-chimie 1",
+    "annee": 2026
+  },
+  "questions": 44,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q11-lignes-de-champ.svg",
+      "question": "Q11",
+      "legende": "Lignes de champ et champ électrique en A, B et C, orientés de l'armature + (en bas) vers l'armature − (en haut) ; longueurs des vecteurs indicatives"
+    },
+    {
+      "fichier": "figures/q17-q18-diagrammes-fresnel.svg",
+      "question": "Q17, Q18",
+      "legende": "Diagrammes de Fresnel du coupleur, i_e en référence : (a) cas idéal, (b) C₁ = 40 nF, où u_e prend 6,2° d'avance"
+    },
+    {
+      "fichier": "figures/q22-effet-hall-plaquette.svg",
+      "question": "Q19 à Q22",
+      "legende": "Effet Hall, vue de dessus : B₀ sortant, électrons déviés vers la face y = 0 (C), champ de Hall de D vers C"
+    },
+    {
+      "fichier": "figures/q30-integrateur-ali.svg",
+      "question": "Q30",
+      "legende": "Montage intégrateur inverseur, R₁ en entrée et C₁′ en contre-réaction, entrée + à la masse"
+    },
+    {
+      "fichier": "figures/q40-accumulateur-decharge.svg",
+      "question": "Q40",
+      "legende": "Accumulateur lithium-air en décharge : polarités, électrons, courant, migration des ions et réactions aux électrodes"
+    },
+    {
+      "fichier": "figures/q44-diodes-tete-beche.svg",
+      "question": "Q44",
+      "legende": "Interrupteur K réalisé par deux diodes en sens opposés, D₁ passante en décharge et D₂ en charge"
+    }
+  ]
+}

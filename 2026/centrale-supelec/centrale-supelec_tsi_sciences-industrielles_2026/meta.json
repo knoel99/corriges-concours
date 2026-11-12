@@ -1,0 +1,38 @@
+{
+  "slug": "centrale-supelec_tsi_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "TSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 37,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q03-chaines-fonctionnelles.svg",
+      "question": "Q3",
+      "legende": "DR1 complété : en bleu, les quatre constituants placés et la mesure de vitesse prise sur l'arbre moteur"
+    },
+    {
+      "fichier": "figures/q12-pesanteur-nacelles.svg",
+      "question": "Q12",
+      "legende": "Pesanteur sur les nacelles : montante chargée et descendante vide, de vitesses verticales opposées v sin α"
+    },
+    {
+      "fichier": "figures/q15-schema-bloc-mcc.svg",
+      "question": "Q15",
+      "legende": "DR2 complété : schéma-bloc de la MCC, en bleu les blocs et les signes ajoutés"
+    },
+    {
+      "fichier": "figures/q25-q26-demarrage.svg",
+      "question": "Q25–Q26",
+      "legende": "Démarrage en charge maximale : vitesse v(t) des nacelles et intensité i(t), toujours sous le courant nominal de 1064 A"
+    },
+    {
+      "fichier": "figures/q35-bode-reglage-kp.svg",
+      "question": "Q35",
+      "legende": "Réglage de Kp sur le Bode : φ = −120° en ω60 ≈ 3 rad/s, gain relevé de 6,8 dB"
+    }
+  ]
+}

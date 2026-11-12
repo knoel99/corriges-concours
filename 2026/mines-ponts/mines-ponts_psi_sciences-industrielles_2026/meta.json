@@ -1,0 +1,43 @@
+{
+  "slug": "mines-ponts_psi_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 35,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-schema-cinematique.svg",
+      "question": "Q1",
+      "legende": "Schéma cinématique de la machine, vue de dessus : glissière L1 suivant X, glissières L2 et L3 suivant Y en parallèle"
+    },
+    {
+      "fichier": "figures/q2-graphe-liaisons.svg",
+      "question": "Q2",
+      "legende": "Graphe des liaisons : trois glissières, un seul cycle formé par L2 et L3"
+    },
+    {
+      "fichier": "figures/q5-mise-en-position-rail.svg",
+      "question": "Q5",
+      "legende": "Mise en position du rail Y1 : appui plan de normale Z et deux contacts sphère-plan de normale X, équivalents à une glissière de direction Y"
+    },
+    {
+      "fichier": "figures/q8-profils-trapeze.svg",
+      "question": "Q8",
+      "legende": "Trapèze de vitesse, accélération en créneaux et position (parabole, droite, parabole) sur un cycle"
+    },
+    {
+      "fichier": "figures/q16-geometrie-axe-x.svg",
+      "question": "Q16",
+      "legende": "Position de M, G1 et G2 dans le plan (Y, Z), X sortant : bras de levier l, b et a"
+    },
+    {
+      "fichier": "figures/q34-bode-avance-phase.svg",
+      "question": "Q34",
+      "legende": "Bode de la FTBO de position avant et après l'avance de phase : coupure à 100 rad/s, marge de phase d'environ 61°"
+    }
+  ]
+}

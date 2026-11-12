@@ -1,0 +1,33 @@
+{
+  "slug": "ccinp_mp_informatique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MP",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 41,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q8-arbres-appels.svg",
+      "question": "Q8",
+      "legende": "Arbres des appels récursifs : chaque niveau coûte deux fois plus que le précédent avec 4 appels, 3/2 fois plus avec Karatsuba"
+    },
+    {
+      "fichier": "figures/q14-trie.svg",
+      "question": "Q14",
+      "legende": "Trie de l'ensemble en, entier, bot, bottier, bottine, routier, routine : 25 nœuds, 7 nœuds true, hauteur 7"
+    },
+    {
+      "fichier": "figures/q26-automate-trie.svg",
+      "question": "Q26",
+      "legende": "Automate du trie de Q14 : état initial q_ε, états finaux doublement cerclés, 25 états et 24 transitions"
+    },
+    {
+      "fichier": "figures/q28-minimisation.svg",
+      "question": "Q28",
+      "legende": "Minimisation pour car, par, cal, pal : les états de même classe fusionnent, de 9 à 4 états"
+    }
+  ]
+}

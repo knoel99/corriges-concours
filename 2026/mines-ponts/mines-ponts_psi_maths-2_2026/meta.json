@@ -1,0 +1,33 @@
+{
+  "slug": "mines-ponts_psi_maths-2_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PSI",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 25,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-distance-segment.svg",
+      "question": "Q2",
+      "legende": "Distance du point 1 au segment d'extrémités 0 et e^{iθ} : elle est au moins |sin θ|, distance de 1 à la droite portant le segment, que le pied de la perpendiculaire soit sur le segment (a) ou sur son prolongement (b)"
+    },
+    {
+      "fichier": "figures/q5-fonction-s.svg",
+      "question": "Q5",
+      "legende": "La fonction S, paire et 2π-périodique : sur l'intervalle de 0 à π (arc bleu) elle coïncide avec t²/4 − πt/2 + S(0), obtenue sur un segment de a à θ qui évite 0, puis par a → 0"
+    },
+    {
+      "fichier": "figures/q20-escalier-domination.svg",
+      "question": "Q20",
+      "legende": "Pour k = 2 et n = 10, la fonction en escalier f_n (bleu), sa limite simple f (gris) et la domination −φ ≤ f_n ≤ φ avec φ(t) = 1/⌊t⌋^k (tirets)"
+    },
+    {
+      "fichier": "figures/q21-domaines-fn-en.svg",
+      "question": "Q21",
+      "legende": "Pour N = 3, F_N (bleu) sous l'hyperbole ij = N, le carré E_N (orange pour E_N privé de F_N) et F_N² (gris) sous l'hyperbole ij = N², qui passe par le coin (N, N)"
+    }
+  ]
+}

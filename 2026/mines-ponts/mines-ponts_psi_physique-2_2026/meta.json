@@ -1,0 +1,43 @@
+{
+  "slug": "mines-ponts_psi_physique-2_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PSI",
+    "matiere": "Physique 2",
+    "annee": 2026
+  },
+  "questions": 40,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-condensateur-plan.svg",
+      "question": "Q1",
+      "legende": "Condensateur plan : charges ±q, champ E uniforme de +q vers −q, flèche de u vers l'armature +q"
+    },
+    {
+      "fichier": "figures/q06-diagramme-synchrone-capacite.svg",
+      "question": "Q6",
+      "legende": "Diagramme synchrone du moteur électrostatique : capacité C(θr), tension u et couple Γ"
+    },
+    {
+      "fichier": "figures/q11-schema-equivalent-brushless.svg",
+      "question": "Q11",
+      "legende": "Schéma équivalent du moteur « brushless » : deux condensateurs variables en série, rotor isolé au point milieu"
+    },
+    {
+      "fichier": "figures/q15-entrefer-deux-positions.svg",
+      "question": "Q15",
+      "legende": "Allure de l'entrefer : quatre coins d'ouverture ε/2 pour θr = kπ, deux secteurs d'ouverture βs pour θr = π/2 + kπ"
+    },
+    {
+      "fichier": "figures/q18-diagramme-synchrone-inductance.svg",
+      "question": "Q18",
+      "legende": "Diagramme synchrone du moteur à inductance variable : inductance L(θr), courant i et couple Γ"
+    },
+    {
+      "fichier": "figures/q27-montage-2-trois-phases.svg",
+      "question": "Q27",
+      "legende": "Montage n°2 : chemin du courant et tension u dans les phases 1, 2 et 3"
+    }
+  ]
+}

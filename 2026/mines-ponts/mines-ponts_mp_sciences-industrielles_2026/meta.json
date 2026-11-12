@@ -1,0 +1,38 @@
+{
+  "slug": "mines-ponts_mp_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 24,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q1-schema-cinematique.svg",
+      "question": "Q1",
+      "legende": "Schéma cinématique retenu : une glissière d'axe X pour (induit X + miroir), deux glissières d'axe Y en parallèle pour (induits Y1, Y2 + plaque guide), aucune liaison entre les deux ensembles"
+    },
+    {
+      "fichier": "figures/q2-profils-trapeze.svg",
+      "question": "Q2",
+      "legende": "Allure des profils : accélération en créneaux, vitesse en trapèze, position parabole, droite de pente Vmax, parabole, raccordées tangentiellement"
+    },
+    {
+      "fichier": "figures/q10-isolement-axe-x.svg",
+      "question": "Q10",
+      "legende": "Ensemble isolé (1+2) vu dans le plan (Y, Z) : points M, G1, G2, cotes l, b, a, poids, force motrice en G1 et action du guidage en M"
+    },
+    {
+      "fichier": "figures/q23-bode-avance-phase.svg",
+      "question": "Q23",
+      "legende": "Bode de la boucle ouverte avant et après correction : gain remonté de 45,8 dB à 100 rad/s, marge de phase portée de 31° à 61°"
+    },
+    {
+      "fichier": "figures/q24-reponses-temporelles.svg",
+      "question": "Q24",
+      "legende": "Réponse indicielle, dépassement d'environ 8 % et entrée définitive dans la bande ±5 % vers 35 ms, puis écart de poursuite de 8,9 mm sur le palier du trapèze"
+    }
+  ]
+}

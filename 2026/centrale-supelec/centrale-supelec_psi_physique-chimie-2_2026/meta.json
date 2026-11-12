@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_psi_physique-chimie-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PSI",
+    "matiere": "Physique-chimie 2",
+    "annee": 2026
+  },
+  "questions": 45,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q15-cycle-hysteresis.svg",
+      "question": "Q15",
+      "legende": "Caractéristique du comparateur à hystérésis : cycle inverseur parcouru dans le sens horaire, entre les seuils V_bas et V_haut"
+    },
+    {
+      "fichier": "figures/q19-chronogrammes-vco.svg",
+      "question": "Q19",
+      "legende": "Chronogrammes de l'oscillateur : triangle V_out,1 entre ±V_sat/2 et créneau V_out,2 = ±V_sat, qui bascule aux sommets du triangle"
+    },
+    {
+      "fichier": "figures/q25-profil-ailette.svg",
+      "question": "Q25",
+      "legende": "Profil de température réduit de l'ailette semi-infinie, T̃ = exp(−mx), et sa tangente à l'origine qui coupe l'axe en x = 1/m"
+    },
+    {
+      "fichier": "figures/q44-croissance-oxyde.svg",
+      "question": "Q44",
+      "legende": "Épaisseur d'oxyde x(t) : régime linéaire puis régime parabolique, la courbe restant sous ses deux asymptotes"
+    }
+  ]
+}
