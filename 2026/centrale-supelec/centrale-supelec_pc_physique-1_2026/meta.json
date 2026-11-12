@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_pc_physique-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PC",
+    "matiere": "Physique 1",
+    "annee": 2026
+  },
+  "questions": 50,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q32-profil-vitesse-film.svg",
+      "question": "Q32",
+      "legende": "Profil de vitesse semi-parabolique dans le film : nul sur le substrat, maximal et à tangente verticale sur la surface libre"
+    },
+    {
+      "fichier": "figures/q40-montage-collimation.svg",
+      "question": "Q40",
+      "legende": "Montage de collimation : le condenseur L₁ concentre la lampe sur le diaphragme, source quasi ponctuelle S placée au foyer objet de L₂"
+    },
+    {
+      "fichier": "figures/q42-lame-difference-de-marche.svg",
+      "question": "Q42",
+      "legende": "Différence de marche entre deux rayons émergents successifs : aller-retour supplémentaire 2nh/cos β dans la lame, moins ℓ sin α dans l'air (angles non à l'échelle)"
+    },
+    {
+      "fichier": "figures/q50-linearisation-franges.svg",
+      "question": "Q50",
+      "legende": "Linéarisation du tableau 1 : ln k en fonction de −ln cos θₖ, droite passant par l'origine de pente ℓ ≈ 5,4"
+    }
+  ]
+}

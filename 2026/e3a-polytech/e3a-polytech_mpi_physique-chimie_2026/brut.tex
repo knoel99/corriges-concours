@@ -1,0 +1,1035 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={e3a-Polytech MPI — Physique-chimie 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · e3a-Polytech MPI}
+\fancyhead[R]{\small Physique-chimie 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries e3a-Polytech MPI — Physique-chimie 2026\par}\medskip
+  {\large e3a-Polytech · MPI · Physique-chimie · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve de 4 heures, calculatrice interdite. Sujet « Autour de l'hélium », cinq parties indépendantes, 40 questions.
+
+\hypertarget{partie-i-lhuxe9lium-un-gaz-rare-dans-notre-atmosphuxe8re}{%
+\section{Partie I -- L'hélium, un gaz « rare » dans notre atmosphère}\label{partie-i-lhuxe9lium-un-gaz-rare-dans-notre-atmosphuxe8re}}
+
+\hypertarget{q1.}{%
+\subsection{Q1.}\label{q1.}}
+
+L'air sec contient environ \textbf{78 \% de diazote \(\mathrm{N_2}\)} et \textbf{21 \% de dioxygène \(\mathrm{O_2}\)}, en fraction molaire (c'est-à-dire en volume). Le reste, environ 1 \%, est surtout de l'argon, avec un peu de \(\mathrm{CO_2}\) et des traces d'autres gaz, dont l'hélium.
+
+\hypertarget{q2.}{%
+\subsection{Q2.}\label{q2.}}
+
+La Terre est à symétrie sphérique. Pour \(r=OP\ge R_T\), elle agit sur \(P\) comme un point de masse \(M_T\) placé en \(O\). On note \(\vec e_r=\overrightarrow{OP}/r\) le vecteur unitaire radial :
+
+\equationajustee{\boxed{\vec F=-\frac{GM_Tm}{r^2}\,\vec e_r}}
+
+La force est centrale et ne dépend que de \(r\). On cherche \(E_{\mathrm p}(r)\) telle que \(\vec F=-\dfrac{\mathrm dE_{\mathrm p}}{\mathrm dr}\vec e_r\). Il faut donc :
+
+\equationajustee{\frac{\mathrm dE_{\mathrm p}}{\mathrm dr}=\frac{GM_Tm}{r^2}}
+
+On intègre, avec la condition \(E_{\mathrm p}(\infty)=0\) :
+
+\equationajustee{\boxed{E_{\mathrm p}(r)=-\frac{GM_Tm}{r}}}
+
+C'est un scalaire, négatif pour tout \(r\).
+
+\hypertarget{q3.}{%
+\subsection{Q3.}\label{q3.}}
+
+\equationajustee{\boxed{E_{\mathrm m}=\frac12mv^2-\frac{GM_Tm}{r}}}
+
+Dans le référentiel géocentrique galiléen, \(P\) n'est soumis qu'à \(\vec F\), qui est conservative : aucune force non conservative ne travaille. Le théorème de la puissance mécanique s'écrit alors :
+
+\equationajustee{\frac{\mathrm dE_{\mathrm m}}{\mathrm dt}=\mathcal P_{\text{non cons.}}=0}
+
+\textbf{\(E_{\mathrm m}\) se conserve}.
+
+\hypertarget{q4.}{%
+\subsection{Q4.}\label{q4.}}
+
+On applique le théorème du moment cinétique en \(O\), point fixe du référentiel galiléen, avec \(\vec L_O=\overrightarrow{OP}\wedge m\vec v\) :
+
+\equationajustee{\frac{\mathrm d\vec L_O}{\mathrm dt}=\overrightarrow{OP}\wedge\vec F=\vec 0}
+
+En effet, \(\vec F\) est colinéaire à \(\overrightarrow{OP}\) (force centrale). \(\vec L_O\) est donc un vecteur constant.
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(\vec L_O\neq\vec 0\) : \(\overrightarrow{OP}\) reste orthogonal à ce vecteur fixe, donc \(P\) se déplace dans le plan passant par \(O\) et orthogonal à \(\vec L_O\).
+\item
+  Si \(\vec L_O=\vec 0\) : \(\vec v\) est colinéaire à \(\overrightarrow{OP}\), et le mouvement est rectiligne, donc plan lui aussi.
+\end{itemize}
+
+\textbf{Le mouvement est plan.}
+
+On prend \(\vec e_z\) normal à ce plan. En polaires, \(\vec v=\dot r\vec e_r+r\dot\theta\vec e_\theta\), d'où \(\vec L_O=mr^2\dot\theta\,\vec e_z\). Comme ce vecteur est constant :
+
+\equationajustee{\boxed{r^2\dot\theta=C=\text{cste}}}
+
+\hypertarget{q5.}{%
+\subsection{Q5.}\label{q5.}}
+
+En polaires, \(v^2=\dot r^2+r^2\dot\theta^2\). Avec \(\dot\theta=C/r^2\) :
+
+\equationajustee{v^2=\dot r^2+\frac{C^2}{r^2}}
+
+En reportant dans \(E_{\mathrm m}\) :
+
+\equationajustee{E_{\mathrm m}=\frac12m\dot r^2+\frac{mC^2}{2r^2}-\frac{GM_Tm}{r}}
+
+C'est la forme (1), avec :
+
+\equationajustee{\boxed{E_{\mathrm p,\mathrm{eff}}(r)=\frac{mC^2}{2r^2}-\frac{GM_Tm}{r}}}
+
+\hypertarget{q6.}{%
+\subsection{Q6.}\label{q6.}}
+
+On suppose \(C\neq0\).
+
+\begin{itemize}
+\tightlist
+\item
+  Quand \(r\to0^+\), le terme en \(1/r^2\) domine : \(E_{\mathrm p,\mathrm{eff}}\to+\infty\).
+\item
+  Quand \(r\to+\infty\), le terme en \(-1/r\) domine : \(E_{\mathrm p,\mathrm{eff}}\to0^-\).
+\item
+  La dérivée \(E_{\mathrm p,\mathrm{eff}}'(r)=\dfrac{m}{r^3}\left(GM_Tr-C^2\right)\) s'annule en \(r_0=C^2/(GM_T)\). La fonction décroît sur \(]0,r_0]\), puis croît sur \([r_0,+\infty[\).
+\item
+  Le minimum vaut \(E_{\min}=E_{\mathrm p,\mathrm{eff}}(r_0)=-\dfrac{G^2M_T^2m}{2C^2}<0\).
+\item
+  La fonction s'annule en \(r_0/2\).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q06-energie-potentielle-effective.pdf}
+\caption*{Figure 1 --- Allure de l'énergie potentielle effective : une droite E\_m
+\textless{} 0 coupe la courbe deux fois (état lié entre r1 et r2), une
+droite E\_m ≥ 0 une seule fois (état de diffusion)}
+\end{figure}
+
+Comme \(\frac12m\dot r^2\ge0\), le mouvement n'est possible que là où \(E_{\mathrm p,\mathrm{eff}}(r)\le E_{\mathrm m}\).
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(E_{\min}\le E_{\mathrm m}<0\), la droite horizontale d'ordonnée \(E_{\mathrm m}\) coupe la courbe en \(r_1\le r_2\) finis. On a alors \(r_1\le r\le r_2\) : c'est un \textbf{état lié}.
+\item
+  Si \(E_{\mathrm m}\ge0\), la droite ne coupe la courbe qu'en un point \(r_1\). Tout \(r\ge r_1\) est accessible, jusqu'à l'infini : c'est un \textbf{état de diffusion}.
+\end{itemize}
+
+\equationajustee{\boxed{P \text{ peut \text{échapper} \text{à} la Terre} \iff E_{\mathrm m}\ge0}}
+
+Si \(C=0\) (mouvement radial), \(E_{\mathrm p,\mathrm{eff}}=E_{\mathrm p}\), et la conclusion est la même.
+
+\hypertarget{q7.}{%
+\subsection{Q7.}\label{q7.}}
+
+Au départ de la surface (\(r=R_T\)) avec une vitesse de norme \(v\), l'énergie mécanique vaut :
+
+\equationajustee{E_{\mathrm m}=\frac12mv^2-\frac{GM_Tm}{R_T}}
+
+Cette énergie se conserve et ne dépend que de la norme de \(v\), pas de sa direction (pourvu que la trajectoire ne recoupe pas la Terre). La condition d'échappement \(E_{\mathrm m}\ge0\) donne \(v\ge\sqrt{2GM_T/R_T}\) :
+
+\equationajustee{\boxed{v_\ell=\sqrt{\frac{2GM_T}{R_T}}}}
+
+Application numérique :
+
+\equationajustee{\begin{aligned}
+v_\ell^2&=\frac{2\times7{,}0\cdot10^{-11}\times6{,}0\cdot10^{24}}{6{,}0\cdot10^{6}}\\
+&=1{,}4\cdot10^{8}\ \mathrm{m^2\,s^{-2}}
+\end{aligned}}
+
+\equationajustee{\boxed{v_\ell\approx1{,}2\cdot10^{4}\ \mathrm{m\,s^{-1}}}}
+
+\hypertarget{q8.}{%
+\subsection{Q8.}\label{q8.}}
+
+Le modèle du gaz parfait repose sur trois hypothèses :
+
+\begin{itemize}
+\tightlist
+\item
+  les particules sont ponctuelles : leur volume propre est négligeable devant le volume offert ;
+\item
+  il n'y a aucune interaction à distance entre particules, donc pas d'énergie potentielle d'interaction. Les particules n'interagissent que par des chocs (entre elles et avec les parois), supposés élastiques ;
+\item
+  les particules sont très nombreuses, en agitation désordonnée, avec une répartition des vitesses homogène et isotrope (chaos moléculaire).
+\end{itemize}
+
+\hypertarget{q9.}{%
+\subsection{Q9.}\label{q9.}}
+
+\equationajustee{\begin{aligned}
+u&=\sqrt{\frac{3RT}{M_{\mathrm{He}}}}\\
+&=\sqrt{\frac{3\times8{,}0\times300}{4{,}0\cdot10^{-3}}}\\
+&=\sqrt{1{,}8\cdot10^{6}}\ \mathrm{m\,s^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{u\approx1{,}3\cdot10^{3}\ \mathrm{m\,s^{-1}}}}
+
+Or \(v_\ell/10\approx1{,}2\cdot10^3\ \mathrm{m\,s^{-1}}\). Comme \(u>v_\ell/10\), le critère admis est vérifié : \textbf{les atomes d'hélium s'échappent de l'attraction terrestre.}
+
+L'hélium dégazé par la croûte quitte donc en permanence l'atmosphère, ce qui explique sa très faible concentration. À l'inverse, \(\mathrm{N_2}\) et \(\mathrm{O_2}\) sont 7 à 8 fois plus lourds. Leur vitesse \(u\) est environ \(\sqrt7\approx2{,}7\) fois plus faible : ils restent piégés.
+
+\hypertarget{partie-ii-le-laser-huxe9lium-nuxe9on}{%
+\section{Partie II -- Le laser hélium-néon}\label{partie-ii-le-laser-huxe9lium-nuxe9on}}
+
+\hypertarget{q10.}{%
+\subsection{Q10.}\label{q10.}}
+
+Trois applications du laser :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{vie quotidienne} : lecteurs de codes-barres, pointeurs, lecture des disques optiques ;
+\item
+  \textbf{industrie} : découpe et soudage de métaux, télémétrie et alignement sur les chantiers ;
+\item
+  \textbf{médecine} : chirurgie réfractive de l'œil, photocoagulation de la rétine, dermatologie.
+\end{itemize}
+
+On peut citer aussi la recherche (refroidissement d'atomes, interférométrie des ondes gravitationnelles) et les télécommunications par fibre optique.
+
+\hypertarget{q11.}{%
+\subsection{Q11.}\label{q11.}}
+
+Dans un conducteur ohmique de conductivité \(\gamma\), la loi d'Ohm locale s'écrit \(\vec j=\gamma\vec E\). La puissance volumique cédée aux porteurs par le champ (effet Joule) vaut :
+
+\equationajustee{\begin{aligned}
+p&=\vec j\cdot\vec E\\
+&=\frac{j^2}{\gamma}\\
+&=\gamma E^2
+\end{aligned}}
+
+Un conducteur parfait correspond à \(\gamma\to+\infty\). La densité de courant et la puissance dissipée y restent finies : un champ non nul y produirait une puissance \(\gamma E^2\) infinie, physiquement impossible. On a donc \(E^2=p/\gamma\to0\), et la puissance dissipée \(j^2/\gamma\) tend vers 0 : un conducteur parfait ne dissipe pas d'énergie.
+
+\equationajustee{\boxed{\vec E=\vec 0\ \text{dans un conducteur parfait}}}
+
+\hypertarget{q12.}{%
+\subsection{Q12.}\label{q12.}}
+
+Dans le vide sans charges ni courants (\(\rho=0\), \(\vec j=\vec 0\), \(\mu_0\varepsilon_0c^2=1\)), les équations de Maxwell s'écrivent :
+
+\equationajustee{\begin{aligned}
+\operatorname{div}\vec E&=0\\
+\overrightarrow{\operatorname{rot}}\,\vec E&=-\frac{\partial\vec B}{\partial t}\\
+\operatorname{div}\vec B&=0\\
+\overrightarrow{\operatorname{rot}}\,\vec B&=\frac1{c^2}\frac{\partial\vec E}{\partial t}
+\end{aligned}}
+
+On prend le rotationnel de Maxwell-Faraday, puis on permute les dérivations en temps et en espace :
+
+\equationajustee{\begin{aligned}
+\overrightarrow{\operatorname{rot}}(\overrightarrow{\operatorname{rot}}\,\vec E)&=-\frac{\partial}{\partial t}\overrightarrow{\operatorname{rot}}\,\vec B\\
+&=-\frac1{c^2}\frac{\partial^2\vec E}{\partial t^2}
+\end{aligned}}
+
+D'après l'identité fournie, et puisque \(\operatorname{div}\vec E=0\), on a \(\overrightarrow{\operatorname{rot}}(\overrightarrow{\operatorname{rot}}\,\vec E)=-\Delta\vec E\). D'où l'équation de d'Alembert :
+
+\equationajustee{\boxed{\Delta\vec E-\frac1{c^2}\frac{\partial^2\vec E}{\partial t^2}=\vec 0}}
+
+Le champ est transverse, porté par un axe fixe orthogonal à \(\vec e_x\), de composante \(E(x,t)=f(x)\sin(\omega t)\). En reportant, pour tout \(t\) :
+
+\equationajustee{\left(f''(x)+\frac{\omega^2}{c^2}f(x)\right)\sin\omega t=0}
+
+Ce produit est nul pour tout \(t\), donc :
+
+\equationajustee{\boxed{f''(x)+\frac{\omega^2}{c^2}f(x)=0}}
+
+\hypertarget{q13.}{%
+\subsection{Q13.}\label{q13.}}
+
+La solution générale est \(f(x)=A\cos(kx)+B\sin(kx)\), avec \(k=\omega/c\). Le champ est nul dans les miroirs (Q11) et \(E\) est continu en \(x=0\) et en \(x=L\).
+
+\begin{itemize}
+\tightlist
+\item
+  En \(x=0\) : \(f(0)=0\), donc \(A=0\).
+\item
+  En \(x=L\) : \(f(L)=B\sin(kL)=0\). Une solution non nulle impose \(\sin(kL)=0\), soit \(kL=n\pi\) avec \(n\in\mathbb N^*\).
+\end{itemize}
+
+On obtient \(f(x)=B\sin(n\pi x/L)\) et \(\omega_n=n\pi c/L\), d'où les fréquences propres :
+
+\equationajustee{\boxed{\nu_n=\frac{nc}{2L}}}
+
+L'écart entre deux modes voisins vaut :
+
+\equationajustee{\boxed{\mathrm{ISL}=\nu_{n+1}-\nu_n=\frac{c}{2L}}}
+
+\hypertarget{q14.}{%
+\subsection{Q14.}\label{q14.}}
+
+Le trait d'échelle de la figure 1 vaut 2 cm. Le tube, bague comprise, mesure environ 6,5 fois ce trait, soit \(L\approx13\ \mathrm{cm}\) (la cavité est un peu plus courte que le boîtier). On en déduit :
+
+\equationajustee{\mathrm{ISL}=\frac{c}{2L}\approx\frac{3{,}0\cdot10^8}{2\times0{,}13}\approx1{,}2\cdot10^{9}\ \mathrm{Hz}}
+
+\equationajustee{\boxed{\mathrm{ISL}\sim1\ \mathrm{GHz}}}
+
+\textbf{C'est cohérent avec les 1 090 MHz du fabricant.} Cette spécification correspond à \(L=c/(2\,\mathrm{ISL})\approx14\) cm, compatible avec la photographie.
+
+\hypertarget{q15.}{%
+\subsection{Q15.}\label{q15.}}
+
+On applique la méthode des rectangles avec un pas \(\Delta t=2/200=0{,}01\) : 201 points, donc 200 intervalles. Chaque terme de la somme est l'aire d'un rectangle, hauteur multipliée par la largeur \(\Delta t\).
+
+Les termes extrêmes sont nuls, car \(\sqrt{1-t^2}=0\) en \(t=\pm1\) : sommer les 201 points revient à sommer 200 rectangles.
+
+\begin{lstlisting}[language=Python]
+def g(x):
+    S = 0                              # ligne 5
+    T = np.linspace(-1,1,201)
+    # tableau de 201 valeurs régulièrement réparties dans l'intervalle [-1,1]
+    for k in T:
+        S = S + airy(x,k)*(2/200)      # ligne 9 : aire d'un rectangle
+    return S                           # ligne 10
+\end{lstlisting}
+
+\hypertarget{q16.}{%
+\subsection{Q16.}\label{q16.}}
+
+En \(x=0\), \(\cos(0)=1\). Avec la primitive fournie :
+
+\equationajustee{\begin{aligned}
+g(0)&=\int_{-1}^1\sqrt{1-t^2}\,\mathrm dt\\
+&=\left[\frac{t\sqrt{1-t^2}+\arcsin t}{2}\right]_{-1}^{1}\\
+&=\frac12\left(\frac\pi2+\frac\pi2\right)
+\end{aligned}}
+
+\equationajustee{\boxed{g(0)=\frac\pi2\approx1{,}57}}
+
+C'est bien le maximum lu sur la figure 3 (environ 1,57). Le programme de Q15 donne 1,5702.
+
+\hypertarget{q17.}{%
+\subsection{Q17.}\label{q17.}}
+
+Si \(g(a)\) et \(g(\text{milieu})\) ont le même signe, la racine est dans \([\text{milieu},b]\). Sinon, elle est dans \([a,\text{milieu}]\).
+
+La boucle s'arrête quand \(|b-a|\le2\varepsilon\), et le milieu renvoyé est alors à moins de \(\varepsilon\) de la racine : on prend \(\varepsilon=10^{-2}\).
+
+D'après la figure 3, \(g(1)>0\) et \(g(2)<0\), et \(g\) ne s'annule qu'une fois sur \([1,2]\) : le premier zéro positif est dans cet intervalle.
+
+\begin{lstlisting}[language=Python]
+def h(a,b,eps):
+    while abs(b-a) > 2*eps:
+        milieu = (a+b)/2
+        if g(a)*g(milieu) > 0:
+            a = milieu                 # ligne 5
+        else:
+            b = milieu                 # ligne 7
+    return ((a+b)/2)
+
+print(h(1, 2, 1e-2))                   # ligne 10
+\end{lstlisting}
+
+Le programme rend 1,2266, à \(10^{-2}\) près du zéro exact (1,2197).
+
+\hypertarget{q18.}{%
+\subsection{Q18.}\label{q18.}}
+
+D'après (6), \(\lambda=\dfrac{\phi R}{1{,}22\,d}\) : c'est un produit de puissances de grandeurs mesurées indépendamment. Les incertitudes relatives s'ajoutent donc quadratiquement :
+
+\equationajustee{\boxed{u(\lambda)=\lambda\sqrt{\left(\frac{u(\phi)}{\phi}\right)^2+\left(\frac{u(R)}{R}\right)^2+\left(\frac{u(d)}{d}\right)^2}}}
+
+Vérification :
+
+\equationajustee{\begin{aligned}
+\frac{u(\lambda)}{\lambda}&=\sqrt{0{,}0625^2+0{,}040^2+0{,}0025^2}\\
+&\approx0{,}074
+\end{aligned}}
+
+On retrouve \(u(\lambda)\approx0{,}074\times656\approx49\) nm. Le terme dû à \(\phi\) domine.
+
+L'écart normalisé compare l'écart des deux valeurs à l'incertitude-type de leur différence. La valeur attendue (632,8 nm) a une incertitude négligeable, d'où :
+
+\equationajustee{z=\frac{|\lambda_{\exp}-\lambda_{\text{\text{réf}}}|}{u(\lambda)}}
+
+\equationajustee{\begin{aligned}
+z&=\frac{656-632{,}8}{49}\\
+&=\frac{23{,}2}{49}
+\end{aligned}}
+
+\equationajustee{\boxed{z\approx0{,}47}}
+
+Comme \(z<2\), \textbf{la mesure est compatible avec la valeur attendue de 632,8 nm}. La précision reste modeste (incertitude relative de 7 \%), surtout limitée par la mesure du diamètre de la tache.
+
+\hypertarget{partie-iii-de-lhuxe9lium-pour-duxe9tecter-les-fuites}{%
+\section{Partie III -- De l'hélium pour détecter les fuites}\label{partie-iii-de-lhuxe9lium-pour-duxe9tecter-les-fuites}}
+
+\hypertarget{q19.}{%
+\subsection{Q19.}\label{q19.}}
+
+Le système est l'ion, dans le référentiel terrestre galiléen ; son poids est négligé. Il n'est soumis qu'à la force de Lorentz magnétique \(e\vec v\wedge\vec B\), avec \(\vec B=B\vec e_z\). Le principe fondamental de la dynamique s'écrit :
+
+\equationajustee{m\frac{\mathrm d\vec v}{\mathrm dt}=e\vec v\wedge\vec B}
+
+Le vecteur \(\vec v\wedge\vec e_z\) est orthogonal à \(\vec e_z\). La projection sur \(\vec e_z\) donne \(m\ddot z=0\).
+
+\begin{itemize}
+\tightlist
+\item
+  Comme \(\vec v_0=v_0\vec e_x\), on a \(\dot z(0)=0\), donc \(\dot z(t)=0\).
+\item
+  Comme l'ion part de \(O\), on a \(z(0)=0\), donc \(z(t)=0\).
+\end{itemize}
+
+\textbf{La trajectoire est dans le plan \((O,\vec e_x,\vec e_y)\).}
+
+\hypertarget{q20.}{%
+\subsection{Q20.}\label{q20.}}
+
+La puissance de la force magnétique est nulle :
+
+\equationajustee{\mathcal P=(e\vec v\wedge\vec B)\cdot\vec v=0}
+
+Le poids est négligé. Le théorème de l'énergie cinétique donne donc \(\frac12mv^2=\text{cste}\), soit \(\|\vec v\|=v_0\) : \textbf{le mouvement est uniforme.}
+
+Sur la figure 4, l'ion entre selon \(+\vec e_x\) et se courbe vers \(-\vec e_y\), vers le détecteur. La force initiale doit donc être selon \(-\vec e_y\). Avec \(\vec B=B_z\vec e_z\) :
+
+\equationajustee{ev_0\vec e_x\wedge B_z\vec e_z=-ev_0B_z\vec e_y}
+
+Cela impose \(B_z>0\) : \textbf{\(\vec B\) est dirigé selon \(+\vec e_z\)}, sortant du plan de la figure. On note \(B>0\) sa norme.
+
+\hypertarget{q21.}{%
+\subsection{Q21.}\label{q21.}}
+
+Avec \(\vec e_x\wedge\vec e_z=-\vec e_y\) et \(\vec e_y\wedge\vec e_z=\vec e_x\) :
+
+\equationajustee{\vec v\wedge\vec B=(v_x\vec e_x+v_y\vec e_y)\wedge B\vec e_z=B(v_y\vec e_x-v_x\vec e_y)}
+
+On projette le principe fondamental sur \(\vec e_x\) et \(\vec e_y\), avec \(\omega=eB/m\) :
+
+\equationajustee{\boxed{\begin{aligned}
+\frac{\mathrm dv_x}{\mathrm dt}&=\omega v_y\\
+\frac{\mathrm dv_y}{\mathrm dt}&=-\omega v_x
+\end{aligned}}}
+
+\hypertarget{q22.}{%
+\subsection{Q22.}\label{q22.}}
+
+On dérive \(\underline u=v_y+\mathrm jv_x\), puis on reporte les équations de Q21 :
+
+\equationajustee{\begin{aligned}
+\frac{\mathrm d\underline u}{\mathrm dt}&=\frac{\mathrm dv_y}{\mathrm dt}+\mathrm j\frac{\mathrm dv_x}{\mathrm dt}\\
+&=-\omega v_x+\mathrm j\omega v_y\\
+&=\mathrm j\omega\,(v_y+\mathrm jv_x)\\
+&=\mathrm j\omega\,\underline u
+\end{aligned}}
+
+\equationajustee{\boxed{\frac{\mathrm d\underline u}{\mathrm dt}-\mathrm j\omega\,\underline u=0}}
+
+\hypertarget{q23.}{%
+\subsection{Q23.}\label{q23.}}
+
+La solution est \(\underline u(t)=\underline u(0)\,e^{\mathrm j\omega t}\), avec \(\underline u(0)=v_y(0)+\mathrm jv_x(0)=\mathrm jv_0\). D'où :
+
+\equationajustee{\begin{aligned}
+\underline u&=\mathrm jv_0(\cos\omega t+\mathrm j\sin\omega t)\\
+&=-v_0\sin\omega t+\mathrm j\,v_0\cos\omega t
+\end{aligned}}
+
+On identifie la partie réelle à \(v_y\) et la partie imaginaire à \(v_x\) :
+
+\equationajustee{\boxed{\begin{aligned}
+v_x(t)&=v_0\cos(\omega t)\\
+v_y(t)&=-v_0\sin(\omega t)
+\end{aligned}}}
+
+\hypertarget{q24.}{%
+\subsection{Q24.}\label{q24.}}
+
+On intègre avec \(x(0)=y(0)=0\) :
+
+\equationajustee{\boxed{\begin{aligned}
+x(t)&=\frac{v_0}{\omega}\sin(\omega t)\\
+y(t)&=\frac{v_0}{\omega}\big(\cos(\omega t)-1\big)
+\end{aligned}}}
+
+\hypertarget{q25.}{%
+\subsection{Q25.}\label{q25.}}
+
+On élimine le temps :
+
+\equationajustee{\begin{aligned}
+x^2+\left(y+\frac{v_0}{\omega}\right)^2&=\frac{v_0^2}{\omega^2}(\sin^2\omega t+\cos^2\omega t)\\
+&=\frac{v_0^2}{\omega^2}
+\end{aligned}}
+
+La trajectoire est donc portée par le cercle de centre \((0,-v_0/\omega)\) et de rayon \(v_0/\omega\). \textbf{Elle est circulaire}, de rayon :
+
+\equationajustee{\boxed{R=\frac{v_0}{\omega}=\frac{mv_0}{eB}}}
+
+\hypertarget{q26.}{%
+\subsection{Q26.}\label{q26.}}
+
+Tous les ions ont la même charge \(e\) et la même énergie cinétique \(E_{\mathrm c}=\frac12mv_0^2\). On a donc \(mv_0=\sqrt{2mE_{\mathrm c}}\), et :
+
+\equationajustee{R=\frac{\sqrt{2mE_{\mathrm c}}}{eB}\propto\sqrt m}
+
+Plus l'ion est lourd, plus le rayon est grand. Les masses molaires se rangent ainsi :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6283}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3417}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Ions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Masse molaire (g/mol)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+légers : \(\mathrm H_2^+\), \(^3{\mathrm{He}}^+\) & 2 et 3 \\
+hélium : \(^4{\mathrm{He}}^+\) & 4 \\
+lourds : \(\mathrm N_2^+\), \(\mathrm O_2^+\), \({\mathrm{Ar}}^+\), \(\mathrm{CO_2^+}\) & 28 à 44 \\
+\end{longtable}
+
+Les trois trajectoires partent de \(O\) tangentes à \(\vec e_x\), avec un centre en \((0,-R)\). Celle de plus petit rayon tourne le plus vite vers \(-\vec e_y\) : c'est la plus intérieure, (1). Celle de plus grand rayon est la plus extérieure, (3). Le détecteur est placé au bout de (2), et le champ est réglé pour que seuls les ions hélium le traversent.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{(1)} : ions légers (\(\mathrm H_2^+\), \(^3{\mathrm{He}}^+\)), rayon le plus petit ;
+\item
+  \textbf{(2)} : ions hélium \(^4{\mathrm{He}}^+\), sélectionnés vers le détecteur ;
+\item
+  \textbf{(3)} : ions lourds (\(\mathrm N_2^+\), \(\mathrm O_2^+\), \(\mathrm{CO_2^+}\), \({\mathrm{Ar}}^+\)), rayon le plus grand.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q20-q26-trajectoires-spectrometre.pdf}
+\caption*{Figure 2 --- Spectromètre de masse : B sortant du plan, force initiale
+selon −e\_y, quarts de cercle tangents en O de rayon R ∝ √m ; seuls les
+ions hélium (2) atteignent le détecteur}
+\end{figure}
+
+\hypertarget{q27.}{%
+\subsection{Q27.}\label{q27.}}
+
+Le quart de cercle est parcouru à vitesse constante :
+
+\equationajustee{\begin{aligned}
+\tau&=\frac{\pi R/2}{v_0}\\
+&=\frac{\pi}{2\omega}\\
+&=\frac{\pi m}{2eB}
+\end{aligned}}
+
+La masse de l'ion est \(m=M_{\mathrm{He}}/\mathcal N_A=6{,}7\cdot10^{-27}\) kg. On en déduit :
+
+\equationajustee{\omega=\frac{1{,}6\cdot10^{-19}\times0{,}10}{6{,}7\cdot10^{-27}}=2{,}4\cdot10^{6}\ \mathrm{rad\,s^{-1}}}
+
+\equationajustee{\tau=\frac{\pi}{2\times2{,}4\cdot10^{6}}\ \mathrm s}
+
+\equationajustee{\boxed{\tau\approx6{,}5\cdot10^{-7}\ \mathrm s}}
+
+La durée \(\tau\) ne dépend pas de \(v_0\).
+
+\hypertarget{q28.}{%
+\subsection{Q28.}\label{q28.}}
+
+On compare la vitesse de l'ion à celle de la lumière. On a \(v_0=R\omega\). Pour \(R\approx3\) cm :
+
+\equationajustee{v_0\approx3\cdot10^{-2}\times2{,}4\cdot10^6\approx7\cdot10^{4}\ \mathrm{m\,s^{-1}}}
+
+Pour tout \(R\) de 1 à 10 cm, \(v_0\) reste entre \(2\cdot10^4\) et \(2\cdot10^5\ \mathrm{m\,s^{-1}}\).
+
+\equationajustee{\boxed{\frac{v_0}{c}\sim2\cdot10^{-4}\ll1}}
+
+\textbf{Le traitement non relativiste est pleinement justifié.} L'écart relatif \(\gamma-1\approx\frac12(v_0/c)^2\sim10^{-8}\) est négligeable.
+
+\hypertarget{partie-iv-des-bulles-de-savon-remplies-dhuxe9lium}{%
+\section{Partie IV -- Des bulles de savon remplies d'hélium}\label{partie-iv-des-bulles-de-savon-remplies-dhuxe9lium}}
+
+\hypertarget{q29.}{%
+\subsection{Q29.}\label{q29.}}
+
+On a \(V_0=\frac43\pi r^3=a^3\), donc \(r=\left(\dfrac{3V_0}{4\pi}\right)^{1/3}\) et \(a=V_0^{1/3}\). Les deux surfaces valent \(S_{\mathrm s}=4\pi r^2\) et \(S_{\mathrm c}=6a^2\), d'où :
+
+\equationajustee{\begin{aligned}
+\frac{S_{\mathrm s}}{S_{\mathrm c}}&=\frac{4\pi}{6}\left(\frac{3}{4\pi}\right)^{2/3}\\
+&=\left(\frac{(4\pi)^3}{6^3}\cdot\frac{9}{(4\pi)^2}\right)^{1/3}\\
+&=\left(\frac{36\pi}{216}\right)^{1/3}
+\end{aligned}}
+
+\equationajustee{\boxed{\frac{S_{\mathrm s}}{S_{\mathrm c}}=\left(\frac\pi6\right)^{1/3}\approx0{,}81<1}}
+
+À volume égal, la sphère a moins de surface que le cube : environ 19 \% de moins. Plus généralement, la sphère minimise l'aire à volume fixé. L'énergie de tension superficielle est proportionnelle à l'aire, c'est pourquoi les bulles libres sont sphériques.
+
+\hypertarget{q30.}{%
+\subsection{Q30.}\label{q30.}}
+
+Système : la bulle de rayon \(r_{\mathrm c}\) (hélium et coque), dans le référentiel terrestre. On fait le bilan des forces verticales, en négligeant la traînée à l'équilibre limite. La coque est mince (\(e\ll r_{\mathrm c}\)) : son volume vaut environ \(4\pi r_{\mathrm c}^2e\).
+
+\begin{itemize}
+\tightlist
+\item
+  poids de l'hélium : \(\rho_{\mathrm{He}}\,\frac43\pi r_{\mathrm c}^3\,g\), vers le bas ;
+\item
+  poids de la coque liquide : \(\rho_\ell\,4\pi r_{\mathrm c}^2e\,g\), vers le bas ;
+\item
+  poussée d'Archimède : \(\rho_{\mathrm a}\,\frac43\pi r_{\mathrm c}^3\,g\), vers le haut.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q30-bilan-forces-bulle.pdf}
+\caption*{Figure 3 --- Bilan des forces sur la bulle de rayon critique : la
+poussée d'Archimède compense le poids de l'hélium et celui de la coque}
+\end{figure}
+
+Le rayon critique sépare les bulles qui montent de celles qui descendent : les forces s'y compensent. Après division par \(4\pi r_{\mathrm c}^2g\) :
+
+\equationajustee{\rho_{\mathrm{He}}\frac{r_{\mathrm c}}{3}+\rho_\ell e=\rho_{\mathrm a}\frac{r_{\mathrm c}}{3}}
+
+\equationajustee{\boxed{e=\frac{r_{\mathrm c}(\rho_{\mathrm a}-\rho_{\mathrm{He}})}{3\rho_\ell}}}
+
+Application numérique :
+
+\equationajustee{e=\frac{6\cdot10^{-3}\times(1{,}2-0{,}2)}{3\times1{,}0\cdot10^{3}}}
+
+\equationajustee{\boxed{e\approx2\cdot10^{-6}\ \mathrm m=2\ \mu\mathrm m}}
+
+On vérifie que \(e\ll r_{\mathrm c}\). Pour \(r>r_{\mathrm c}\), la poussée nette (en \(r^3\)) l'emporte sur le poids de la coque (en \(r^2\)) : la bulle monte. C'est bien l'observation.
+
+\hypertarget{q31.}{%
+\subsection{Q31.}\label{q31.}}
+
+On note \(I\) le point où le rayon incident frappe la face inférieure du film. Le rayon (1) s'y réfléchit. Le rayon (2) est réfracté sous l'angle \(i_2\), avec \(\sin i_1=n_\ell\sin i_2\). Il se réfléchit en \(J\) sur la face supérieure, puis ressort en \(K\) sur la face inférieure. Par les lois de Descartes, il émerge sous l'angle \(i_1\), parallèle à (1).
+
+\begin{itemize}
+\tightlist
+\item
+  On a \(IJ=JK=e/\cos i_2\) et \(IK=2e\tan i_2\).
+\item
+  Les rayons émergents sont parallèles. Pour les faire interférer à l'infini, on les fait converger en un point \(M\) du plan focal d'une lentille (ou à l'infini).
+\item
+  Par le retour inverse de la lumière, on peut voir ces rayons comme issus du point \(M\). Le théorème de Malus dit alors que le plan \(\Pi\) orthogonal aux rayons émergents est une surface d'onde. Les chemins optiques de \(\Pi\) à \(M\) sont donc égaux pour les deux rayons.
+\item
+  On choisit \(\Pi\) passant par \(K\). Il coupe le rayon (1) en \(H\), avec \(IH=IK\cos(90°-i_1)=IK\sin i_1\).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q31-lame-mince-malus.pdf}
+\caption*{Figure 4 --- Construction de Malus : le plan d'onde Π passant par K
+coupe le rayon (1) en H ; δ = nℓ(IJ + JK) − IH}
+\end{figure}
+
+La différence de chemin optique entre (2) et (1) vaut, avec \(\sin i_1=n_\ell\sin i_2\) :
+
+\equationajustee{\begin{aligned}
+\delta&=n_\ell(IJ+JK)-IH\\
+&=\frac{2n_\ell e}{\cos i_2}-2e\tan i_2\sin i_1\\
+&=\frac{2n_\ell e}{\cos i_2}\left(1-\sin^2i_2\right)\\
+&=2n_\ell e\cos i_2
+\end{aligned}}
+
+Le rayon (1) subit en plus un déphasage de \(\pi\) à la réflexion air/liquide. Le déphasage de (2) par rapport à (1) est donc :
+
+\equationajustee{\begin{aligned}
+\varphi&=\frac{2\pi\delta}{\lambda}-\pi\\
+&=\frac{4\pi n_\ell e}{\lambda}\cos i_2-\pi
+\end{aligned}}
+
+\equationajustee{\boxed{\alpha=4\pi n_\ell e}}
+
+\hypertarget{q32.}{%
+\subsection{Q32.}\label{q32.}}
+
+Les interférences sont destructives quand \(\varphi=(2p+1)\pi\), avec \(p\) entier. Cela donne \(\dfrac{\alpha\cos i_2}{\lambda}=2(p+1)\pi\). On pose \(k=p+1\), avec \(k\ge1\) car \(\lambda>0\) :
+
+\equationajustee{\boxed{\lambda_k=\frac{\alpha\cos i_2}{2\pi k},\qquad k\in\mathbb N^*}}
+
+Avec \(\alpha=4\pi n_\ell e\), cela s'écrit aussi :
+
+\equationajustee{\lambda_k=\frac{2n_\ell e\cos i_2}{k}}
+
+\hypertarget{q33.}{%
+\subsection{Q33.}\label{q33.}}
+
+En incidence normale, \(\lambda_k=2n_\ell e/k\), donc \(1/\lambda_k=k/(2n_\ell e)\) : les inverses des longueurs d'onde éteintes sont régulièrement espacés.
+
+Les annulations de la figure 7 sont lues vers 665, 591, 532, 484, 443, 409, 380 et 355 nm. On vérifie que le produit \(k\lambda_k\) est constant pour \(k=8,9,\dots,15\) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1111}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(k\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+8
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+9
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+10
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+11
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+12
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+13
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+14
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+15
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\lambda_k\) (nm) & 665 & 591 & 532 & 484 & 443 & 409 & 380 & 355 \\
+\(k\lambda_k\) (µm) & 5,32 & 5,32 & 5,32 & 5,32 & 5,32 & 5,32 & 5,32 & 5,33 \\
+\end{longtable}
+
+Ainsi \(2n_\ell e\approx5{,}32\ \mu\mathrm m\), d'où :
+
+\equationajustee{e=\frac{5{,}32\ \mu\mathrm m}{2\times1{,}33}}
+
+\equationajustee{\boxed{e\approx2{,}0\ \mu\mathrm m}}
+
+Avec deux minima seulement (13 et 8), on retrouve la même valeur :
+
+\equationajustee{\frac{1}{2n_\ell e}=\frac15\left(\frac1{409}-\frac1{665}\right)\ \mathrm{nm^{-1}}}
+
+\textbf{Elle concorde avec les \(2\ \mu\)m de Q30} : l'épaisseur du film sur le cadre est bien celle des bulles.
+
+\hypertarget{q34.}{%
+\subsection{Q34.}\label{q34.}}
+
+On note \(O'\) le centre de courbure. D'après la figure 8, \(R\) est la distance de \(O'\) à l'axe de la fibre. Le bord intérieur du cœur est alors à \(R-d/2\) de \(O'\), le bord extérieur à \(R+d/2\).
+
+\begin{itemize}
+\tightlist
+\item
+  La lumière arrive en incidence normale, avec des rayons parallèles à l'axe à l'entrée de la partie courbe. Un rayon se propage en ligne droite, perpendiculairement à la droite d'entrée. Il est caractérisé par sa distance \(b\) à \(O'\), avec \(R-d/2\le b\le R+d/2\).
+\item
+  Le rayon frappe l'interface extérieure cœur/gaine, cercle de rayon \(R+d/2\). La normale y est radiale, donc \(\sin i=\dfrac{b}{R+d/2}\).
+\item
+  La réflexion conserve la distance \(b\) de la droite à \(O'\). Toutes les réflexions suivantes ont lieu sous le même angle \(i\). Le rayon ne descend jamais sous la distance \(b\ge R-d/2\) : il ne touche pas la paroi intérieure.
+\item
+  Il y a réflexion totale si \(\sin i\ge n_2/n_1\). Le cas le plus défavorable est le plus petit \(b\), soit \(b=R-d/2\) (rayon entrant au bord intérieur).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q34-fibre-courbee.pdf}
+\caption*{Figure 5 --- Fibre courbée : le rayon entré au bord intérieur, à b = R −
+d/2 de O', frappe la gaine sous l'angle i, avec sin i = b/(R + d/2) ;
+proportions exagérées}
+\end{figure}
+
+Toute la lumière est guidée si :
+
+\equationajustee{\frac{R-d/2}{R+d/2}\ge\frac{n_2}{n_1}}
+
+Cette condition équivaut à \(R(n_1-n_2)\ge\dfrac d2(n_1+n_2)\), d'où :
+
+\equationajustee{\boxed{R_{\min}=\frac d2\cdot\frac{n_1+n_2}{n_1-n_2}}}
+
+Application numérique :
+
+\equationajustee{R_{\min}=25\ \mu\mathrm m\times\frac{3{,}00}{0{,}10}}
+
+\equationajustee{\boxed{R_{\min}\approx7{,}5\cdot10^{-4}\ \mathrm m=0{,}75\ \mathrm{mm}}}
+
+\hypertarget{partie-v-gonfler-un-ballon-volant-sans-huxe9lium}{%
+\section{Partie V -- Gonfler un ballon volant sans hélium}\label{partie-v-gonfler-un-ballon-volant-sans-huxe9lium}}
+
+\hypertarget{q35.}{%
+\subsection{Q35.}\label{q35.}}
+
+La réaction produit du dihydrogène gazeux qui gonfle le ballon. À \(P\) et \(T\) données, un gaz parfait a une masse volumique \(\rho=PM/(RT)\).
+
+Or \(M(\mathrm H_2)=2\ \mathrm{g\,mol^{-1}}\), contre \(29\ \mathrm{g\,mol^{-1}}\) pour l'air : le gaz contenu est environ 15 fois moins dense que l'air. Quand le volume est assez grand, la poussée d'Archimède (\(\rho_{\mathrm a} Vg\)) dépasse le poids total : gaz, enveloppe et la petite quantité de liquide et d'aluminium. \textbf{Le ballon s'envole.}
+
+\hypertarget{q36.}{%
+\subsection{Q36.}\label{q36.}}
+
+\textbf{Une base forte est une base dont la réaction avec l'eau est totale}, selon \(\mathrm B+\mathrm H_2\mathrm O\to\mathrm{BH^+}+\mathrm{HO^-}\). Elle est entièrement convertie en \(\mathrm{HO^-}\), et son acide conjugué est indifférent dans l'eau.
+
+Pour l'hydroxyde de sodium, la dissolution \(\mathrm{NaOH}\to\mathrm{Na^+}+\mathrm{HO^-}\) est totale, donc \([\mathrm{HO^-}]=c=0{,}1\ \mathrm{mol\,L^{-1}}\). Le produit ionique de l'eau donne :
+
+\equationajustee{[\mathrm{H_3O^+}]=\frac{K_{\mathrm e}}{c}=10^{-13}\ \mathrm{mol\,L^{-1}}}
+
+Les ions \(\mathrm{HO^-}\) apportés par l'autoprotolyse sont en même quantité que ces \(\mathrm{H_3O^+}\), donc négligeables devant \(c\).
+
+\equationajustee{\mathrm{pH}=\mathrm pK_{\mathrm e}+\log c=14-1}
+
+\equationajustee{\boxed{\mathrm{pH}=13}}
+
+\hypertarget{q37.}{%
+\subsection{Q37.}\label{q37.}}
+
+Dans \(\mathrm{A\ell(OH)_4^-}\), l'oxygène est au n.o. \(-\mathrm{II}\) et l'hydrogène au n.o. \(+\mathrm I\). Chaque groupe OH compte donc pour \(-1\).
+
+La somme des nombres d'oxydation est égale à la charge de l'ion : \(x+4\times(-1)=-1\).
+
+\equationajustee{\boxed{\mathrm{n.o.}(\mathrm{A\ell})=+\mathrm{III}\ \text{dans}\ \mathrm{A\ell(OH)_4^-}}}
+
+\equationajustee{\boxed{\mathrm{n.o.}(\mathrm{A\ell})=0\ \text{dans}\ \mathrm{A\ell_{(s)}}}}
+
+\textbf{\(\mathrm{A\ell(OH)_4^-}\) est l'oxydant} du couple (n.o. le plus élevé) et \textbf{\(\mathrm{A\ell}\) le réducteur}.
+
+\hypertarget{q38.}{%
+\subsection{Q38.}\label{q38.}}
+
+\begin{itemize}
+\tightlist
+\item
+  Couple 1 : la conservation de l'aluminium donne \(\beta_1=1\), celle de l'oxygène \(\gamma_1=4\). La charge impose \(-1-\alpha_1=-4\), donc \(\alpha_1=3\). L'hydrogène est alors équilibré (4 de chaque côté).
+\item
+  Couple 2 : la conservation de l'oxygène donne \(\alpha_2=\gamma_2\), celle de l'hydrogène \(2\alpha_2=2+\gamma_2\). On en tire \(\gamma_2=\alpha_2=2\). La charge impose enfin \(\beta_2=\gamma_2=2\).
+\end{itemize}
+
+\equationajustee{\boxed{\begin{aligned}
+\alpha_1&=3\\
+\beta_1&=1\\
+\gamma_1&=4
+\end{aligned}}}
+
+\equationajustee{\boxed{\begin{aligned}
+\alpha_2&=2\\
+\beta_2&=2\\
+\gamma_2&=2
+\end{aligned}}}
+
+Les deux demi-équations s'écrivent donc :
+
+\equationajustee{\begin{aligned}
+\mathrm{A\ell(OH)_4^-}+3\,\mathrm e^-&=\mathrm{A\ell}+4\,\mathrm{HO^-}\\
+2\,\mathrm{H_2O}+2\,\mathrm e^-&=\mathrm{H_2}+2\,\mathrm{HO^-}
+\end{aligned}}
+
+On combine \(2\times\)(1), écrite dans le sens de l'oxydation, et \(3\times\)(2) : 6 électrons sont cédés et 6 captés, ils disparaissent du bilan. Après simplification des \(\mathrm{HO^-}\) :
+
+\equationajustee{\boxed{2\,\mathrm{A\ell_{(s)}}+2\,\mathrm{HO^-_{(aq)}}+6\,\mathrm{H_2O_{(\ell)}}\longrightarrow2\,\mathrm{A\ell(OH)^-_{4(aq)}}+3\,\mathrm{H_{2(g)}}}}
+
+Contrôle : 2 \(\mathrm{A\ell}\), 8 \(\mathrm O\), 14 \(\mathrm H\) et une charge \(-2\) de chaque côté.
+
+\hypertarget{q39.}{%
+\subsection{Q39.}\label{q39.}}
+
+Le potentiel standard de l'oxydant \(\mathrm{H_2O}\) (\(E_2^\circ=-0{,}83\) V) est nettement supérieur à celui du réducteur \(\mathrm{A\ell}\) (\(E_1^\circ=-2{,}33\) V). Avec 6 électrons échangés :
+
+\equationajustee{\begin{aligned}
+\log K^\circ&=\frac{6\,(E_2^\circ-E_1^\circ)}{0{,}06}\\
+&=\frac{6\times1{,}50}{0{,}06}\\
+&=150
+\end{aligned}}
+
+\(K^\circ=10^{150}\gg1\) : \textbf{on peut supposer la réaction totale.}
+
+Cette conclusion porte sur la thermodynamique seulement. En pratique, la réaction est lente au départ, car la couche d'alumine protège le métal ; la soude dissout cette couche.
+
+\hypertarget{q40.}{%
+\subsection{Q40.}\label{q40.}}
+
+Le dihydrogène est assimilé à un gaz parfait :
+
+\equationajustee{\begin{aligned}
+n(\mathrm H_2)&=\frac{PV}{RT}\\
+&=\frac{1{,}013\cdot10^{5}\times5{,}0\cdot10^{-3}}{8{,}3\times298}\\
+&\approx0{,}20\ \mathrm{mol}
+\end{aligned}}
+
+La réaction est totale et \(\mathrm{A\ell}\) est le réactif limitant. D'après les coefficients du bilan de Q38, 2 mol d'aluminium donnent 3 mol de dihydrogène :
+
+\equationajustee{n(\mathrm{A\ell})=\frac23n(\mathrm H_2)\approx0{,}137\ \mathrm{mol}}
+
+\equationajustee{\begin{aligned}
+m&=\frac23\,\frac{PV}{RT}\,M_{\mathrm{A\ell}}\\
+&=0{,}137\times27\ \mathrm g
+\end{aligned}}
+
+\equationajustee{\boxed{m\approx3{,}7\ \mathrm g}}
+
+\end{document}

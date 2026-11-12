@@ -1,0 +1,1407 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto BCPST — Modélisation mathématique et informatique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Agro-Véto BCPST}
+\fancyhead[R]{\small Modélisation mathématique et informatique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Agro-Véto BCPST — Modélisation mathématique et informatique 2026\par}\medskip
+  {\large Agro-Véto · BCPST · Modélisation mathématique et informatique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Convention : \(t^0=1\) pour tout réel \(t\), y compris \(t=0\) (c'est aussi la convention de Python, \texttt{0**0} vaut \texttt{1}).
+
+\hypertarget{i.-notion-de-fonction-guxe9nuxe9ratrice}{%
+\section{I. Notion de fonction génératrice}\label{i.-notion-de-fonction-guxe9nuxe9ratrice}}
+
+\hypertarget{q-1.1}{%
+\subsection{Q 1.1}\label{q-1.1}}
+
+Soit \(t\in[0,1]\). Pour tout \(n\in\mathbb N\), on a \(0\le t^n\le1\) et \(P(X=n)\ge0\), donc :
+
+\equationajustee{\begin{aligned}
+0&\le P(X=n)\,t^n\\
+&\le P(X=n).
+\end{aligned}}
+
+Les événements \((X=n)_{n\in\mathbb N}\) sont deux à deux incompatibles. Leur réunion est \(\Omega\), car \(X\) est à valeurs dans \(\mathbb N\).
+
+Par \(\sigma\)-additivité, la série \(\sum P(X=n)\) converge, et sa somme vaut \(P(\Omega)=1\).
+
+La série \(\sum P(X=n)t^n\) est à termes positifs, majorée terme à terme par une série convergente. Par comparaison des séries à termes positifs, elle converge.
+
+\textbf{\(G_X\) est définie (au moins) sur \([0,1]\).}
+
+\hypertarget{q-1.2}{%
+\subsection{Q 1.2}\label{q-1.2}}
+
+En \(t=0\), seul le terme \(n=0\) est non nul, car \(0^0=1\) et \(0^n=0\) pour \(n\ge1\).
+
+En \(t=1\), on somme les \(P(X=n)\), de somme \(1\) (Q 1.1) :
+
+\equationajustee{\boxed{G_X(0)=P(X=0)}}
+
+\equationajustee{\boxed{G_X(1)=1}}
+
+\hypertarget{q-1.3}{%
+\subsection{Q 1.3}\label{q-1.3}}
+
+Soient \(s,t\) tels que \(0\le s\le t\le1\). Pour tout \(n\), la fonction \(u\mapsto u^n\) est croissante sur \([0,1]\), donc \(s^n\le t^n\).
+
+Comme \(P(X=n)\ge0\), on multiplie, puis on somme de \(0\) à \(N\) :
+
+\equationajustee{\begin{aligned}
+P(X=n)\,s^n&\le P(X=n)\,t^n,\\
+\sum_{n=0}^NP(X=n)\,s^n&\le\sum_{n=0}^NP(X=n)\,t^n .
+\end{aligned}}
+
+Les deux séries convergent (Q 1.1). L'inégalité large passe à la limite quand \(N\to+\infty\) : \(G_X(s)\le G_X(t)\).
+
+\textbf{\(G_X\) est croissante sur \([0,1]\).}
+
+\hypertarget{q-1.4}{%
+\subsection{Q 1.4}\label{q-1.4}}
+
+Soit \(t\in[0,1]\). \(G_X(t)\) est la somme d'une série à termes positifs, donc \(G_X(t)\ge0\). Par croissance (Q 1.3) et Q 1.2, \(G_X(t)\le G_X(1)=1\).
+
+\equationajustee{\boxed{\forall t\in[0,1],\ G_X(t)\in[0,1]}}
+
+\hypertarget{q-1.5}{%
+\subsection{Q 1.5}\label{q-1.5}}
+
+Soit \(t\in[0,1]\). On a \(t^X=\varphi(X)\) avec \(\varphi:n\mapsto t^n\).
+
+D'après le théorème de transfert, \(t^X\) admet une espérance si et seulement si la série \(\sum|t^n|P(X=n)\) converge. Cette série est \(\sum t^nP(X=n)\), qui converge (Q 1.1). Le même théorème donne alors la valeur :
+
+\equationajustee{\begin{aligned}
+E\big(t^X\big)&=\sum_{n=0}^{+\infty}t^nP(X=n)\\
+&=G_X(t).
+\end{aligned}}
+
+\equationajustee{\boxed{E\big(t^X\big)=G_X(t)}}
+
+\hypertarget{q-1.6}{%
+\subsection{Q 1.6}\label{q-1.6}}
+
+Soit \(t\in[0,1]\). On a \((t^X)^2=(t^2)^X\), avec \(t^2\in[0,1]\).
+
+D'après Q 1.5 appliquée à \(t^2\), la variable \((t^X)^2\) admet une espérance, égale à \(G_X(t^2)\). Donc \(t^X\) admet un moment d'ordre 2, donc une variance. La formule de König-Huygens donne :
+
+\equationajustee{\begin{aligned}
+V\big(t^X\big)&=E\big((t^X)^2\big)-E\big(t^X\big)^2\\
+&=G_X(t^2)-G_X(t)^2 .
+\end{aligned}}
+
+\equationajustee{\boxed{V\big(t^X\big)=G_X(t^2)-G_X(t)^2}}
+
+Comme \(G_X(t)^2\ge0\) et \(G_X(t^2)\le1\) (Q 1.4), \textbf{\(V(t^X)\le1\)}.
+
+\hypertarget{q-2}{%
+\subsection{Q 2}\label{q-2}}
+
+\(X\) est à valeurs dans \(\{0,\dots,n\}\) : la série est une somme finie. Pour \(t\in[0,1]\), par la formule du binôme :
+
+\equationajustee{\begin{aligned}
+G_X(t)&=\sum_{k=0}^n\binom nk p^k(1-p)^{n-k}t^k\\
+&=\sum_{k=0}^n\binom nk(pt)^k(1-p)^{n-k}\\
+&=(pt+1-p)^n .
+\end{aligned}}
+
+\equationajustee{\boxed{\forall t\in[0,1],\ G_X(t)=(pt+1-p)^n}}
+
+\hypertarget{q-3.1}{%
+\subsection{Q 3.1}\label{q-3.1}}
+
+\textbf{(i) ⇒ (ii).} Supposons \(P(X\le m)=1\). Pour tout entier \(n>m\), \((X=n)\subset(X>m)\), donc :
+
+\equationajustee{\begin{aligned}
+P(X=n)&\le P(X>m)\\
+&=0 .
+\end{aligned}}
+
+Une probabilité étant positive, \(P(X=n)=0\) pour tout \(n>m\). Pour tout \(t\in\mathbb R\), la série définissant \(G_X(t)\) n'a donc qu'un nombre fini de termes non nuls : elle converge.
+
+\(G_X\) est donc définie sur \(\mathbb R\), et pour tout réel \(t\), \(G_X(t)=\sum_{n=0}^mP(X=n)\,t^n\). C'est une fonction polynomiale : (ii) est établie.
+
+\textbf{(ii) ⇒ (i).} Supposons \(G_X\) définie sur \(\mathbb R\) et égale sur \(\mathbb R\) à une fonction polynomiale \(Q\).
+
+\(Q\) n'est pas nulle, car \(Q(1)=G_X(1)=1\). Notons \(d\) son degré et \(c\neq0\) son coefficient dominant.
+
+Supposons par l'absurde qu'il existe \(n_0>d\) tel que \(P(X=n_0)>0\). Pour \(t>1\), tous les termes de la série sont positifs, et la somme majore chacun d'eux :
+
+\equationajustee{\frac{Q(t)}{t^d}\ge P(X=n_0)\,t^{n_0-d}.}
+
+Le membre de droite tend vers \(+\infty\) quand \(t\to+\infty\), alors que \(Q(t)/t^d\) tend vers \(c\) : contradiction.
+
+Donc \(P(X=n)=0\) pour tout \(n>d\). Par \(\sigma\)-additivité, \(P(X>d)=0\), d'où \(P(X\le d)=1\) : \(m=d\) convient, et (i) est établie.
+
+\textbf{Les assertions (i) et (ii) sont équivalentes.}
+
+\hypertarget{q-3.2}{%
+\subsection{Q 3.2}\label{q-3.2}}
+
+D'après Q 3.1, \(P(X=n)=0\) pour tout \(n>m\). La série \(\sum nP(X=n)\) n'a qu'un nombre fini de termes non nuls : \(X\) admet une espérance, et \(E(X)=\sum_{n=1}^m nP(X=n)\).
+
+La fonction \(G_X\) coïncide sur \(\mathbb R\) avec le polynôme \(\sum_{n=0}^mP(X=n)t^n\). Elle est donc dérivable sur \(\mathbb R\), en particulier en \(1\), et
+
+\equationajustee{\begin{aligned}
+(G_X)'(1)&=\sum_{n=1}^m nP(X=n)\\
+&=E(X).
+\end{aligned}}
+
+\equationajustee{\boxed{E(X)=(G_X)'(1)}}
+
+\hypertarget{q-4}{%
+\subsection{Q 4}\label{q-4}}
+
+\textbf{(i) ⇒ (ii).} Si \(X\) et \(Y\) ont même loi, alors \(P(X=n)=P(Y=n)\) pour tout \(n\).
+
+Les séries définissant \(G_X(t)\) et \(G_Y(t)\) ont donc les mêmes termes, et \(G_X=G_Y\) sur \([0,1]\).
+
+\textbf{(ii) ⇒ (i).} \(X\) et \(Y\) sont à valeurs dans \(\{0,\dots,m\}\). Pour \(t\in[0,1]\), on a donc :
+
+\equationajustee{\begin{aligned}
+G_X(t)-G_Y(t)&=\sum_{n=0}^mP(X=n)\,t^n-\sum_{n=0}^mP(Y=n)\,t^n\\
+&=\sum_{n=0}^m\big(P(X=n)-P(Y=n)\big)t^n .
+\end{aligned}}
+
+Ce polynôme, de degré au plus \(m\), s'annule sur \([0,1]\), ensemble infini : c'est le polynôme nul. Donc \(P(X=n)=P(Y=n)\) pour \(0\le n\le m\). Pour \(n>m\), les deux probabilités sont nulles.
+
+\textbf{\(X\) et \(Y\) ont même loi si et seulement si \(G_X=G_Y\) sur \([0,1]\).}
+
+\hypertarget{ii.-sommes-aluxe9atoires-un-premier-moduxe8le}{%
+\section{II. Sommes aléatoires : un premier modèle}\label{ii.-sommes-aluxe9atoires-un-premier-moduxe8le}}
+
+\hypertarget{ii.a.-pruxe9sentation-du-moduxe8le}{%
+\subsection{II.A. Présentation du modèle}\label{ii.a.-pruxe9sentation-du-moduxe8le}}
+
+\hypertarget{q-5}{%
+\subsection{Q 5}\label{q-5}}
+
+Notons \(H_i\) l'indicatrice de l'événement « la jacinthe \(i\) atteint vingt centimètres ».
+
+D'après \((A_1)\), \(H_i\) suit la loi \(\mathcal B(p_1)\). D'après \((A_3)\), les variables \(H_1,\dots,H_n\) sont indépendantes.
+
+\(J_1=\sum_{i=1}^nH_i\) compte les succès de \(n\) épreuves de Bernoulli indépendantes, de même paramètre \(p_1\) :
+
+\equationajustee{\boxed{J_1\hookrightarrow\mathcal B(n,p_1)}}
+
+c'est-à-dire, pour \(0\le i\le n\) :
+
+\equationajustee{P(J_1=i)=\binom ni p_1^i(1-p_1)^{n-i}.}
+
+Hypothèses utilisées : \((A_1)\) et \((A_3)\).
+
+\hypertarget{q-6}{%
+\subsection{Q 6}\label{q-6}}
+
+D'après Q 5, \(J_1\hookrightarrow\mathcal B(2,\tfrac23)\) :
+
+\equationajustee{\begin{aligned}
+P(J_1=0)&=\tfrac19,\\
+P(J_1=1)&=\tfrac49,\\
+P(J_1=2)&=\tfrac49 .
+\end{aligned}}
+
+Ces trois probabilités sont non nulles. Sachant \((J_1=i)\), les \(i\) plantes retenues fleurissent chacune avec probabilité \(\tfrac34\), indépendamment, d'après \((A_2)\), \((A_3)\) et \((A_4)\).
+
+La loi conditionnelle de \(J_2\) sachant \((J_1=i)\) est donc \(\mathcal B(i,\tfrac34)\).
+
+On applique la formule des probabilités totales au système complet \((J_1=i)_{0\le i\le2}\), d'événements de probabilités non nulles :
+
+\equationajustee{\begin{aligned}
+P(J_2=0)&=\tfrac19\cdot1+\tfrac49\cdot\tfrac14+\tfrac49\cdot\tfrac1{16}\\
+&=\tfrac{4+4+1}{36}\\
+&=\tfrac14,\\[1mm]
+P(J_2=1)&=\tfrac49\cdot\tfrac34+\tfrac49\cdot2\cdot\tfrac34\cdot\tfrac14\\
+&=\tfrac13+\tfrac16\\
+&=\tfrac12,\\[1mm]
+P(J_2=2)&=\tfrac49\cdot\tfrac9{16}\\
+&=\tfrac14.
+\end{aligned}}
+
+\textbf{\(J_2\hookrightarrow\mathcal B(2,\tfrac12)\)}, avec \(\tfrac12=p_1p_2\).
+
+\hypertarget{q-7.1}{%
+\subsection{Q 7.1}\label{q-7.1}}
+
+\begin{lstlisting}[language=Python]
+def J2(n, p1, p2):
+    aux = 0
+    l = [0 for i in range(n)]
+    for i in range(n):
+        if rd.binomial(1, p1) == 1:
+            l[i] = 1
+    for i in range(n):
+        if l[i] == 1:
+            if rd.binomial(1, p2) == 1:
+                aux = aux + 1
+    return aux
+\end{lstlisting}
+
+\hypertarget{q-7.2}{%
+\subsection{Q 7.2}\label{q-7.2}}
+
+La boucle des lignes 4 à 6 simule la \textbf{phase de croissance}. Pour chacune des \(n\) jacinthes, un tirage de Bernoulli de paramètre \(p_1\), indépendant des autres, décide si elle atteint vingt centimètres. \texttt{l{[}i{]}} vaut alors \(1\) (c'est \(H_i\)), et \texttt{sum(l)} est une réalisation de \(J_1\).
+
+La boucle des lignes 7 à 10 simule la \textbf{phase de floraison} des seules plantes retenues (\texttt{l{[}i{]}\ ==\ 1}). Pour chacune, un tirage de Bernoulli de paramètre \(p_2\) décide si elle fleurit, et \texttt{aux} compte les plantes retenues qui ont fleuri. La valeur renvoyée est une réalisation de \(J_2\).
+
+\hypertarget{ii.b.-loi-de-j_2}{%
+\subsection{\texorpdfstring{II.B. Loi de \(J_2\)}{II.B. Loi de J\_2}}\label{ii.b.-loi-de-j_2}}
+
+\hypertarget{q-8.1}{%
+\subsection{Q 8.1}\label{q-8.1}}
+
+\(J_1\) est à valeurs dans \(\{0,\dots,n\}\).
+
+\begin{itemize}
+\tightlist
+\item
+  Les événements \((J_1=i)\) sont deux à deux incompatibles : \(J_1(\omega)\) ne peut prendre deux valeurs.
+\item
+  Leur réunion est \(\Omega\) : pour tout \(\omega\), \(J_1(\omega)\in\{0,\dots,n\}\).
+\end{itemize}
+
+\textbf{\((J_1=i)_{0\le i\le n}\) est un système complet d'événements.}
+
+\hypertarget{q-8.2}{%
+\subsection{Q 8.2}\label{q-8.2}}
+
+D'après Q 5, et comme \(p_1\in\,]0,1[\) :
+
+\equationajustee{P(J_1=i)=\binom ni p_1^i(1-p_1)^{n-i}>0 .}
+
+Sachant \((J_1=i)\), exactement \(i\) plantes sont retenues. Chacune fleurit avec probabilité \(p_2\) d'après \((A_2)\), indépendamment des autres d'après \((A_3)\).
+
+La floraison est indépendante de la phase de croissance d'après \((A_4)\). Le conditionnement par \((J_1=i)\) ne modifie donc pas la loi des floraisons.
+
+\(J_2\) compte ainsi les succès de \(i\) épreuves de Bernoulli indépendantes de paramètre \(p_2\) :
+
+\equationajustee{\begin{aligned}
+P_{(J_1=i)}(J_2=\ell)&=\binom i\ell p_2^\ell(1-p_2)^{i-\ell}&&\text{si }0\le\ell\le i,\\
+P_{(J_1=i)}(J_2=\ell)&=0&&\text{si }\ell>i.
+\end{aligned}}
+
+\textbf{La loi conditionnelle de \(J_2\) sachant \((J_1=i)\) est la loi binomiale \(\mathcal B(i,p_2)\)} (loi certaine en \(0\) si \(i=0\)).
+
+\hypertarget{q-8.3}{%
+\subsection{Q 8.3}\label{q-8.3}}
+
+Soit \(\ell\in\{0,\dots,n\}\). On applique la formule des probabilités totales au système complet de Q 8.1, formé d'événements de probabilités non nulles (Q 8.2) :
+
+\equationajustee{\begin{aligned}
+P(J_2=\ell)&=\sum_{i=0}^nP(J_1=i)\,P_{(J_1=i)}(J_2=\ell)\\
+&=\sum_{i=\ell}^nP(J_1=i)\,P_{(J_1=i)}(J_2=\ell),
+\end{aligned}}
+
+car les termes d'indice \(i<\ell\) sont nuls (Q 8.2). Avec Q 5 et Q 8.2 :
+
+\equationajustee{\boxed{\begin{aligned}
+P(J_2=\ell)=\sum_{i=\ell}^n&\binom i\ell(p_2)^\ell(1-p_2)^{i-\ell}\\
+&\times\binom ni(p_1)^i(1-p_1)^{n-i}
+\end{aligned}}}
+
+\hypertarget{q-8.4}{%
+\subsection{Q 8.4}\label{q-8.4}}
+
+Soient \(0\le\ell\le i\le n\). D'une part :
+
+\equationajustee{\begin{aligned}
+\binom i\ell\binom ni&=\frac{i!}{\ell!(i-\ell)!}\cdot\frac{n!}{i!(n-i)!}\\
+&=\frac{n!}{\ell!(i-\ell)!(n-i)!}.
+\end{aligned}}
+
+D'autre part :
+
+\equationajustee{\begin{aligned}
+\binom n\ell\binom{n-\ell}{i-\ell}&=\frac{n!}{\ell!(n-\ell)!}\cdot\frac{(n-\ell)!}{(i-\ell)!(n-i)!}\\
+&=\frac{n!}{\ell!(i-\ell)!(n-i)!}.
+\end{aligned}}
+
+\equationajustee{\boxed{\binom i\ell\binom ni=\binom n\ell\binom{n-\ell}{i-\ell}}}
+
+\hypertarget{q-8.5}{%
+\subsection{Q 8.5}\label{q-8.5}}
+
+On reporte Q 8.4 dans Q 8.3 et on écrit \(p_1^i=p_1^\ell p_1^{i-\ell}\). On pose \(k=i-\ell\), qui décrit \(\{0,\dots,n-\ell\}\). La formule du binôme donne :
+
+\equationajustee{\begin{aligned}
+P(J_2=\ell)&=\binom n\ell(p_1p_2)^\ell\sum_{k=0}^{n-\ell}\binom{n-\ell}{k}\big(p_1(1-p_2)\big)^k(1-p_1)^{n-\ell-k}\\
+&=\binom n\ell(p_1p_2)^\ell\big(p_1(1-p_2)+1-p_1\big)^{n-\ell}\\
+&=\binom n\ell(p_1p_2)^\ell(1-p_1p_2)^{n-\ell}.
+\end{aligned}}
+
+Pour tout \(\ell\in\{0,\dots,n\}\) :
+
+\equationajustee{\boxed{P(J_2=\ell)=\binom n\ell(p_1p_2)^\ell(1-p_1p_2)^{n-\ell}}}
+
+\textbf{\(J_2\) suit la loi binomiale \(\mathcal B(n,p_1p_2)\).}
+
+\hypertarget{q-9}{%
+\subsection{Q 9}\label{q-9}}
+
+La ligne 2 simule une variable aléatoire \texttt{i} de loi \(\mathcal B(n,p_1)\), c'est-à-dire la loi de \(J_1\) (Q 5) : c'est la phase de croissance.
+
+La ligne 3 renvoie une réalisation de \(\mathcal B(\texttt i,p_2)\), qui est la loi conditionnelle de \(J_2\) sachant \((J_1=\texttt i)\) (Q 8.2) : c'est la phase de floraison des plantes retenues.
+
+Notons \(M\) la valeur renvoyée. La formule des probabilités totales sur le système \((\texttt i=i)_{0\le i\le n}\) donne pour \(P(M=\ell)\) exactement l'expression de Q 8.3.
+
+\textbf{\texttt{mystere1(\allowbreak{}n,\allowbreak{}\ p1,\allowbreak{}\ p2)\allowbreak{}} simule la variable aléatoire \(J_2\) et renvoie une réalisation de \(J_2\), de loi \(\mathcal B(n,p_1p_2)\)}. Elle simule d'abord le nombre de plantes ayant franchi le seuil, puis, parmi elles, le nombre de plantes ayant fleuri.
+
+\hypertarget{q-10.1}{%
+\subsection{Q 10.1}\label{q-10.1}}
+
+Modélisons l'expérience par des variables indépendantes \(H_1,\dots,H_n,F_1,\dots,F_n\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \(H_i\hookrightarrow\mathcal B(p_1)\) indique si la plante \(i\) atteint le seuil \((A_1)\) ;
+\item
+  \(F_i\hookrightarrow\mathcal B(p_2)\) indique si elle fleurit \((A_2)\) ;
+\item
+  l'indépendance entre plantes est \((A_3)\), celle entre hauteurs et floraisons est \((A_4)\).
+\end{itemize}
+
+Alors \(J_1=\sum_iH_i\) et \(J_2=\sum_iH_iF_i\).
+
+Pour \(h\in\{0,1\}^n\), soit \(\sigma_h\) la permutation de \(\{1,\dots,n\}\) qui range d'abord, dans l'ordre croissant, les indices \(i\) tels que \(h_i=1\), puis les autres. Posons \(H=(H_1,\dots,H_n)\) et :
+
+\equationajustee{X_k(\omega)=F_{\sigma_{H(\omega)}(k)}(\omega).}
+
+Les indices \(\sigma_{H(\omega)}(1),\dots,\sigma_{H(\omega)}(J_1(\omega))\) sont exactement ceux des plantes retenues. Donc :
+
+\equationajustee{\begin{aligned}
+J_2(\omega)&=\sum_{i:\,H_i(\omega)=1}F_i(\omega)\\
+&=\sum_{k=1}^{J_1(\omega)}X_k(\omega),
+\end{aligned}}
+
+la somme étant nulle si \(J_1(\omega)=0\).
+
+Soient \((x_1,\dots,x_n)\in\{0,1\}^n\) et \(i\in\{0,\dots,n\}\). On somme sur les \(h\) tels que \(h_1+\dots+h_n=i\), et on utilise l'indépendance de \(H\) et de \((F_1,\dots,F_n)\) :
+
+\equationajustee{\begin{aligned}
+P(J_1=i,X_1=x_1,\dots,X_n=x_n)&=\sum_{h}P(H=h)\,P\big(F_{\sigma_h(1)}=x_1,\dots,F_{\sigma_h(n)}=x_n\big)\\
+&=P(J_1=i)\prod_{k=1}^np_2^{x_k}(1-p_2)^{1-x_k}.
+\end{aligned}}
+
+En effet, \((F_{\sigma_h(1)},\dots,F_{\sigma_h(n)})\) est une permutation fixe de variables indépendantes de loi \(\mathcal B(p_2)\).
+
+\textbf{Ainsi \(X_1,\dots,X_n\) suivent la loi \(\mathcal B(p_2)\), les \(n+1\) variables \(X_1,\dots,X_n,J_1\) sont indépendantes, et \(J_2=\sum_{k=1}^{J_1}X_k\).}
+
+\hypertarget{q-10.2}{%
+\subsection{Q 10.2}\label{q-10.2}}
+
+D'après Q 2 avec \(n=1\), \(G_{X_1}(t)=p_2t+1-p_2\). D'après Q 2 et Q 5, \(G_{J_1}(u)=(p_1u+1-p_1)^n\).
+
+Pour \(t\in[0,1]\), \(G_{X_1}(t)\in[0,1]\) (Q 1.4), donc la composée a un sens. On compose, on ne multiplie pas :
+
+\equationajustee{\begin{aligned}
+G_{J_2}(t)&=G_{J_1}\big(G_{X_1}(t)\big)\\
+&=\big(p_1(p_2t+1-p_2)+1-p_1\big)^n\\
+&=(p_1p_2\,t+1-p_1p_2)^n .
+\end{aligned}}
+
+\equationajustee{\boxed{\forall t\in[0,1],\ G_{J_2}(t)=(p_1p_2\,t+1-p_1p_2)^n}}
+
+\hypertarget{q-10.3}{%
+\subsection{Q 10.3}\label{q-10.3}}
+
+Soit \(Z\hookrightarrow\mathcal B(n,p_1p_2)\), avec \(p_1p_2\in\,]0,1[\). D'après Q 2 et Q 10.2, pour tout \(t\in[0,1]\) :
+
+\equationajustee{\begin{aligned}
+G_Z(t)&=(p_1p_2t+1-p_1p_2)^n\\
+&=G_{J_2}(t).
+\end{aligned}}
+
+\(J_2\) et \(Z\) sont à valeurs dans \(\{0,\dots,n\}\). Le sens (ii) ⇒ (i) de la question 4, avec \(m=n\), donne : \textbf{\(J_2\hookrightarrow\mathcal B(n,p_1p_2)\)}.
+
+\hypertarget{q-11.1}{%
+\subsection{Q 11.1}\label{q-11.1}}
+
+Une plante est retenue si et seulement si elle atteint le seuil (probabilité \(p_1\), d'après \((A_1)\)) et fleurit (probabilité \(p_2\), d'après \((A_2)\)). Ces deux événements sont indépendants d'après \((A_4)\) :
+
+\equationajustee{\boxed{P(\text{plante retenue})=p_1p_2}}
+
+\hypertarget{q-11.2}{%
+\subsection{Q 11.2}\label{q-11.2}}
+
+Soit \(R_i\) l'indicatrice de l'événement « la plante \(i\) est retenue ». D'après Q 11.1, \(R_i\hookrightarrow\mathcal B(p_1p_2)\). D'après \((A_3)\), les variables \(R_1,\dots,R_n\) sont indépendantes.
+
+\(J_2=\sum R_i\) compte les succès de \(n\) épreuves de Bernoulli indépendantes de paramètre \(p_1p_2\) : \textbf{\(J_2\hookrightarrow\mathcal B(n,p_1p_2)\)}.
+
+\hypertarget{q-12}{%
+\subsection{Q 12}\label{q-12}}
+
+Chaque tour de boucle traite une plante :
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{hauteur\_i} simule une variable de loi \(\mathcal B(p_1)\) : seuil atteint ou non, d'après \((A_1)\) ;
+\item
+  \texttt{floraison\_i} simule une variable de loi \(\mathcal B(p_2)\) : floraison ou non, d'après \((A_2)\) ;
+\item
+  les deux tirages sont indépendants, comme le veut \((A_4)\).
+\end{itemize}
+
+\texttt{aux} est incrémenté si et seulement si les deux valent \(1\), c'est-à-dire si la plante est finalement retenue (probabilité \(p_1p_2\), Q 11.1). Les tours de boucle sont indépendants, comme le veut \((A_3)\). La fonction renvoie donc \(\sum_iR_i\).
+
+\textbf{\texttt{mystere2(\allowbreak{}n,\allowbreak{}\ p1,\allowbreak{}\ p2)\allowbreak{}} simule l'expérience de la question 11 et renvoie une réalisation de la variable aléatoire \(J_2\), de loi \(\mathcal B(n,p_1p_2)\).} La floraison est tirée même pour les plantes non retenues, ce qui ne change pas la loi grâce à \((A_4)\).
+
+\hypertarget{iii.-sommes-aluxe9atoires-un-second-moduxe8le}{%
+\section{III. Sommes aléatoires : un second modèle}\label{iii.-sommes-aluxe9atoires-un-second-moduxe8le}}
+
+\hypertarget{iii.a.-pruxe9sentation-du-moduxe8le}{%
+\subsection{III.A. Présentation du modèle}\label{iii.a.-pruxe9sentation-du-moduxe8le}}
+
+\hypertarget{q-13}{%
+\subsection{Q 13}\label{q-13}}
+
+\begin{itemize}
+\tightlist
+\item
+  \((H_3)\) : toutes les euglènes, quel que soit le jour, ont la \textbf{même loi de reproduction}, celle de \(D\). Les individus sont interchangeables et le milieu est stationnaire au cours du temps.
+\item
+  \((H_5)\) : une euglène a \textbf{au plus \(m\) descendants} en une journée : la fécondité est bornée.
+\item
+  \((H_6)\) : les nombres de descendants des différentes euglènes, le même jour ou des jours différents, sont \textbf{indépendants}. Il n'y a aucune interaction entre individus (ni compétition pour les ressources, ni régulation par la densité), ni influence de la lignée.
+\end{itemize}
+
+\hypertarget{q-14}{%
+\subsection{Q 14}\label{q-14}}
+
+Comme \(N_0=1\), on a \(N_1=\sum_{k=1}^{N_0}D_{0,k}=D_{0,1}\). D'après \((H_3)\), \(D_{0,1}\) suit la loi de \(D\).
+
+\textbf{\(N_1\) et \(D\) suivent la même loi.} (Elles ne sont pas égales pour autant : seule leur loi est commune.)
+
+\hypertarget{q-15}{%
+\subsection{Q 15}\label{q-15}}
+
+Par récurrence sur \(j\). Pour \(j=0\), \(N_0=1\in\{0,\dots,m^0\}\).
+
+Supposons \(N_j\) à valeurs dans \(\{0,\dots,m^j\}\), et soit \(\omega\in\Omega\).
+
+\(N_{j+1}(\omega)\) est une somme de \(N_j(\omega)\) entiers compris entre \(0\) et \(m\) d'après \((H_5)\), nulle si \(N_j(\omega)=0\). C'est donc un entier, et :
+
+\equationajustee{\begin{aligned}
+0\le N_{j+1}(\omega)&\le m\,N_j(\omega)\\
+&\le m^{j+1}.
+\end{aligned}}
+
+\textbf{Pour tout \(j\in\mathbb N\), \(N_j\) est à valeurs dans \(\{0,\dots,m^j\}\).}
+
+\hypertarget{q-16}{%
+\subsection{Q 16}\label{q-16}}
+
+D'après \((H_4)\), \(D\) est à valeurs dans \(\{0,\dots,m\}\). Donc \(p_n=0\) pour tout \(n>m\), et \textbf{\(S\subset\{0,\dots,m\}\)}.
+
+De plus, \(p_m=P(D=m)>0\) d'après \((H_4)\), donc \textbf{\(m\in S\)}.
+
+\hypertarget{q-17.1}{%
+\subsection{Q 17.1}\label{q-17.1}}
+
+La racine (euglène du jour 0) porte \(D_{0,1}\). Les nœuds du jour 1 portent, de gauche à droite, \(D_{1,1},\dots,D_{1,k}\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q17-1-arbres-a1-a2.pdf}
+\caption*{Figure 1 --- Arbres des événements A₁ et A₂ : chaque nœud porte son
+nombre de descendants ; A₁ laisse trois euglènes au jour 2, de
+descendance non précisée, A₂ éteint la population au jour 2}
+\end{figure}
+
+Sur \(A_1\), il y a \(2+1=3\) euglènes au jour 2. Sur \(A_2\), la population est éteinte au jour 2.
+
+\hypertarget{q-17.2}{%
+\subsection{Q 17.2}\label{q-17.2}}
+
+Les variables en jeu sont indépendantes d'après \((H_6)\), et suivent la loi de \(D\) d'après \((H_3)\) :
+
+\equationajustee{\begin{aligned}
+P(A_1)&=P(D_{0,1}=4)P(D_{1,1}=0)P(D_{1,2}=2)P(D_{1,3}=1)P(D_{1,4}=0)\\
+&=p_0^2\,p_1\,p_2\,p_4,\\[1mm]
+P(A_2)&=P(D_{0,1}=3)P(D_{1,1}=0)P(D_{1,2}=0)P(D_{1,3}=0)\\
+&=p_0^3\,p_3 .
+\end{aligned}}
+
+\equationajustee{\boxed{P(A_1)=p_0^2p_1p_2p_4}}
+
+\equationajustee{\boxed{P(A_2)=p_0^3p_3}}
+
+\hypertarget{q-17.3}{%
+\subsection{Q 17.3}\label{q-17.3}}
+
+L'inclusion \(\{0,1,2,3,4\}\subset S\) donne \(p_0,p_1,p_2,p_3,p_4>0\). Un produit de réels strictement positifs est strictement positif : \textbf{\(P(A_1)>0\) et \(P(A_2)>0\).}
+
+\hypertarget{q-17.4}{%
+\subsection{Q 17.4}\label{q-17.4}}
+
+Sur \(A_1\), \(N_1=D_{0,1}=4\), puis :
+
+\equationajustee{\begin{aligned}
+N_2&=D_{1,1}+D_{1,2}+D_{1,3}+D_{1,4}\\
+&=0+2+1+0\\
+&=3 .
+\end{aligned}}
+
+Donc \(A_1\subset(N_2=3)\).
+
+Si l'on avait aussi \(A_1\subset(N_2=n')\) avec \(n'\neq3\), alors \(A_1\) serait inclus dans \((N_2=3)\cap(N_2=n')\), qui est vide. Cela contredit \(P(A_1)>0\). \textbf{L'unique entier est \(n=3\).}
+
+\hypertarget{q-17.5}{%
+\subsection{Q 17.5}\label{q-17.5}}
+
+Soit \(B=(D_{0,1}=3,\ D_{1,1}=1,\ D_{1,2}=1,\ D_{1,3}=1)\).
+
+\begin{itemize}
+\tightlist
+\item
+  Sur \(B\), \(N_1=3\) et \(N_2=1+1+1=3\), donc \(B\subset(N_2=3)\).
+\item
+  \(B\cap A_1=\varnothing\), car \(D_{0,1}\) vaut \(3\) sur \(B\) et \(4\) sur \(A_1\).
+\item
+  Par \((H_3)\) et \((H_6)\), \(P(B)=p_3p_1^3>0\).
+\end{itemize}
+
+Donc, par additivité :
+
+\equationajustee{\begin{aligned}
+P(N_2=3)&\ge P(A_1\cup B)\\
+&=P(A_1)+P(B)\\
+&>P(A_1).
+\end{aligned}}
+
+\textbf{\(P(A_1)<P(N_2=3)\).}
+
+\hypertarget{iii.b.-uxe9tude-de-la-population-moyenne}{%
+\subsection{III.B. Étude de la population moyenne}\label{iii.b.-uxe9tude-de-la-population-moyenne}}
+
+\hypertarget{q-18.1}{%
+\subsection{Q 18.1}\label{q-18.1}}
+
+Montrons par récurrence que \(N_j\) est une fonction de la famille finie \((D_{i,k})_{0\le i\le j-1,\,1\le k\le m^i}\). C'est vrai pour \(j=0\), car \(N_0=1\).
+
+Si c'est vrai au rang \(j\), comme \(N_j\le m^j\) (Q 15), on peut écrire :
+
+\equationajustee{\begin{aligned}
+N_{j+1}&=\sum_{k=1}^{N_j}D_{j,k}\\
+&=\sum_{k=1}^{m^j}\mathbf 1_{\{k\le N_j\}}D_{j,k}.
+\end{aligned}}
+
+C'est une fonction de \(N_j\) et de \(D_{j,1},\dots,D_{j,m^j}\), donc des \(D_{i,k}\) avec \(i\le j\) et \(k\le m^i\).
+
+La famille finie \((D_{i,k})_{0\le i\le j,\,1\le k\le m^i}\) est indépendante d'après \((H_6)\). Par le lemme des coalitions, \(N_j\), fonction des variables d'indice \(i\le j-1\), est indépendante des variables \(D_{j,1},\dots,D_{j,m^j}\), qui forment un paquet disjoint.
+
+\textbf{Les \(m^j+1\) variables \(D_{j,1},\dots,D_{j,m^j},N_j\) sont indépendantes.}
+
+\hypertarget{q-18.2}{%
+\subsection{Q 18.2}\label{q-18.2}}
+
+Soient \(j\in\mathbb N\) et \(n\in\{0,\dots,m^{j+1}\}\). D'après Q 15, \((N_j=\ell)_{0\le\ell\le m^j}\) est un système complet d'événements. Sur \((N_j=\ell)\), on a \(N_{j+1}=\sum_{k=1}^\ell D_{j,k}\). La formule des probabilités totales donne :
+
+\equationajustee{\begin{aligned}
+P(N_{j+1}=n)&=\sum_{\ell=0}^{m^j}P(N_j=\ell,\ N_{j+1}=n)\\
+&=\sum_{\ell=0}^{m^j}P\Big(N_j=\ell,\ \sum_{k=1}^\ell D_{j,k}=n\Big).
+\end{aligned}}
+
+Comme \(\ell\le m^j\), la somme \(\sum_{k=1}^\ell D_{j,k}\) est une fonction de \(D_{j,1},\dots,D_{j,m^j}\). D'après Q 18.1 et le lemme des coalitions, elle est indépendante de \(N_j\). D'où :
+
+\equationajustee{\boxed{\begin{aligned}
+P(N_{j+1}=n)=\sum_{\ell=0}^{m^j}&P(N_j=\ell)\\
+&\times P\Big(\sum_{k=1}^\ell D_{j,k}=n\Big)
+\end{aligned}}}
+
+\hypertarget{q-18.3}{%
+\subsection{Q 18.3}\label{q-18.3}}
+
+\(D\) est à valeurs dans \(\{0,\dots,m\}\) d'après \((H_4)\).
+
+D'après Q 15, \(N_j\) est à valeurs dans \(\{0,\dots,m^j\}\), et \(N_{j+1}\) dans \(\{0,\dots,m^{j+1}\}\).
+
+Ces trois variables prennent un nombre fini de valeurs : elles admettent une espérance.
+
+Pour \(0\le\ell\le m^j\), posons \(T_\ell=\sum_{k=1}^\ell D_{j,k}\). D'après \((H_5)\), \(T_\ell\) est à valeurs dans \(\{0,\dots,\ell m\}\), inclus dans \(\{0,\dots,m^{j+1}\}\).
+
+Par linéarité de l'espérance et \((H_3)\), \(E(T_\ell)=\ell E(D)\).
+
+On multiplie Q 18.2 par \(n\), on somme, et on intervertit deux sommes finies :
+
+\equationajustee{\begin{aligned}
+E(N_{j+1})&=\sum_{n=0}^{m^{j+1}}n\sum_{\ell=0}^{m^j}P(N_j=\ell)P(T_\ell=n)\\
+&=\sum_{\ell=0}^{m^j}P(N_j=\ell)\sum_{n=0}^{m^{j+1}}nP(T_\ell=n)\\
+&=\sum_{\ell=0}^{m^j}P(N_j=\ell)\,\ell E(D)\\
+&=E(D)\,E(N_j).
+\end{aligned}}
+
+\equationajustee{\boxed{E(N_{j+1})=E(D)\,E(N_j)}}
+
+\hypertarget{q-18.4}{%
+\subsection{Q 18.4}\label{q-18.4}}
+
+La suite \(\big(E(N_j)\big)_{j\in\mathbb N}\) est géométrique de raison \(E(D)\) (Q 18.3), de premier terme \(E(N_0)=1\). Pour tout \(j\in\mathbb N\) :
+
+\equationajustee{\boxed{E(N_j)=E(D)^j}}
+
+\hypertarget{q-19}{%
+\subsection{Q 19}\label{q-19}}
+
+Si \(E(D)>1\), \(E(N_j)=E(D)^j\) tend vers \(+\infty\) de façon géométrique : la population moyenne croît sans limite. C'est irréaliste dans un milieu fini, où la lumière, la matière organique et le volume sont limités.
+
+Deux hypothèses sont en cause :
+
+\begin{itemize}
+\tightlist
+\item
+  \((H_6)\) : le nombre de descendants d'une euglène est indépendant de ceux des autres euglènes et des générations précédentes, donc de la taille de la population. En réalité, la fécondité baisse quand la densité augmente (compétition pour les ressources).
+\item
+  \((H_3)\) : la loi de reproduction est la même au début de l'expérience, quand il y a très peu d'euglènes, et quand la population est très grande, ce qui est peu réaliste.
+\end{itemize}
+
+\textbf{Le modèle n'est pertinent que pour une population petite devant la capacité du milieu (phase initiale). À long terme, l'hypothèse \((H_6)\) n'est plus réaliste.}
+
+\hypertarget{iii.c.-calcul-de-la-probabilituxe9-dextinction-uxe9tude-dexemples}{%
+\subsection{III.C. Calcul de la probabilité d'extinction : étude d'exemples}\label{iii.c.-calcul-de-la-probabilituxe9-dextinction-uxe9tude-dexemples}}
+
+\hypertarget{q-20}{%
+\subsection{Q 20}\label{q-20}}
+
+Sur \(A_2\), on a \(N_2=0\). Donc \(A_2\subset(N_2=0)\subset E_0\), et \(P(E_0\mid A_2)=1\).
+
+Sur \(A_1\), on a \(N_2=3\) (Q 17.4). Chacune des trois euglènes présentes au jour 2 est à l'origine d'une lignée. D'après \((H_3)\) et \((H_6)\), chaque lignée évolue comme le processus initial issu d'une seule euglène. Elle est indépendante des deux autres lignées et des variables \(D_{0,1},D_{1,1},\dots,D_{1,4}\) qui définissent \(A_1\).
+
+La population s'éteint si et seulement si les trois lignées s'éteignent, chacune avec probabilité \(\alpha\) :
+
+\equationajustee{\boxed{P(E_0\mid A_1)=\alpha^3}}
+
+\equationajustee{\boxed{P(E_0\mid A_2)=1}}
+
+\hypertarget{q-21.1}{%
+\subsection{Q 21.1}\label{q-21.1}}
+
+\(p_0+p_2=1\), donc \(p_n=0\) pour \(n\notin\{0,2\}\) : \(D\) est à valeurs dans \(\{0,2\}\subset\{0,1,2\}\).
+
+On prend \(m=2\ge2\), et \(P(D=2)=p>0\).
+
+\textbf{\((H_4)\) est satisfaite avec \(m=2\).}
+
+\hypertarget{q-21.2}{%
+\subsection{Q 21.2}\label{q-21.2}}
+
+On a \(G_D(t)=1-p+pt^2\). L'équation \(G_D(t)=t\) s'écrit :
+
+\equationajustee{pt^2-t+1-p=0 .}
+
+\(1\) est racine évidente. Le produit des racines vaut \(\frac{1-p}p\), donc la seconde racine est \(\frac{1-p}p\). Or \(\frac{1-p}p\le1\) si et seulement si \(p\ge\frac12\).
+
+D'après le résultat admis, \(\alpha_p\) est la plus petite solution dans \([0,1]\) :
+
+\begin{itemize}
+\tightlist
+\item
+  si \(0<p\le\frac12\), la seule solution dans \([0,1]\) est \(1\) ;
+\item
+  si \(\frac12\le p\le1\), la plus petite solution est \(\frac{1-p}p\).
+\end{itemize}
+
+\equationajustee{\boxed{\alpha_p=\min\Big(1,\ \frac{1-p}p\Big)}}
+
+\hypertarget{q-21.3}{%
+\subsection{Q 21.3}\label{q-21.3}}
+
+La fonction \(p\mapsto\alpha_p\) est constante égale à \(1\) sur \(]0,\frac12]\).
+
+Sur \([\frac12,1]\), \(\alpha_p=\frac1p-1\) a pour dérivée \(-\frac1{p^2}<0\). Elle décroît strictement de \(1\) à \(\alpha_1=0\), et elle est continue en \(\frac12\).
+
+\textbf{\(p\mapsto\alpha_p\) est décroissante sur \(]0,1]\)}, strictement sur \([\frac12,1]\).
+
+\textbf{Interprétation} : \(E(D)=2p\). Si \(E(D)\le1\), l'extinction est certaine. Au-delà du seuil \(p=\frac12\), plus une euglène a de chances de se diviser, plus la probabilité d'extinction est faible. Elle est nulle pour \(p=1\), où chaque euglène a toujours deux descendants.
+
+\hypertarget{q-22.1}{%
+\subsection{Q 22.1}\label{q-22.1}}
+
+Au début du tour \texttt{i}, \texttt{N} contient \(N_i\). Les lignes 4 à 6 ajoutent à \texttt{aux}, pour chacune des \texttt{N} euglènes vivantes, une réalisation indépendante de \(D\), son nombre de descendants \(D_{i,k}\).
+
+À la fin, \texttt{aux} contient \(\sum_{k=1}^{N_i}D_{i,k}=N_{i+1}\), que la ligne 7 affecte à \texttt{N}. Ces lignes simulent le passage du jour \(i\) au jour \(i+1\) ; si \(N_i=0\), \texttt{aux} reste nul.
+
+\hypertarget{q-22.2}{%
+\subsection{Q 22.2}\label{q-22.2}}
+
+\texttt{N1} est le nombre de descendants de l'euglène initiale de l'appel courant, c'est-à-dire une réalisation de \(N_1=D_{0,1}\), de même loi que \(D\) (Q 14) : \textbf{le nombre d'euglènes au jour 1.}
+
+\hypertarget{q-22.3}{%
+\subsection{Q 22.3}\label{q-22.3}}
+
+\textbf{\texttt{extinction\_iter} réalise un parcours en largeur.} La boucle \texttt{for\ i\ in\ range(\allowbreak{}j)\allowbreak{}} de la ligne 3 traite toute une génération (toutes les euglènes du jour \(i\)) avant de passer au jour suivant. Seul l'effectif \texttt{N} de la génération courante est conservé.
+
+\textbf{\texttt{extinction\_rec} réalise un parcours en profondeur.} Après avoir tiré le nombre \texttt{N1} d'enfants de la racine, la boucle \texttt{for\ k\ in\ range(\allowbreak{}N1)\allowbreak{}} de la ligne 17 appelle \texttt{extinction\_rec(\allowbreak{}j-1)\allowbreak{}} sur le premier enfant. Cet appel explore entièrement le sous-arbre de cet enfant, en suivant une lignée jusqu'au jour \(j\), avant de passer au deuxième enfant.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q22-3-parcours-largeur-profondeur.pdf}
+\caption*{Figure 2 --- Ordre des appels à simule\_D() sur l'arbre de l'expérience
+2 pour j = 3 : extinction\_iter tire génération par génération,
+extinction\_rec branche par branche et s'arrête dès qu'une lignée
+atteint le jour 3}
+\end{figure}
+
+\textbf{Comparaison.} Les deux fonctions renvoient une variable de même loi (l'indicatrice de \(N_j=0\)).
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{extinction\_iter} effectue \(N_0+N_1+\dots+N_{j-1}\) appels à \texttt{simule\_D}, moins si la population s'éteint avant. Ce nombre croît en moyenne comme \(E(D)^j\) lorsque \(E(D)>1\). La mémoire utilisée est constante.
+\item
+  \texttt{extinction\_rec} visite au plus les mêmes nœuds, et s'arrête dès qu'elle a trouvé une euglène vivante au jour \(j\) (lignes 18-19). En cas de survie, elle peut conclure après très peu d'appels : elle est alors bien plus efficace.
+\item
+  En cas d'extinction au jour \(j\), les deux visitent tout l'arbre et sont aussi rapides. La version récursive utilise en outre une pile d'appels de profondeur \(j\) (risque de dépasser la limite de récursion de Python pour \(j\) grand) et un surcoût par appel.
+\end{itemize}
+
+\hypertarget{q-23.1}{%
+\subsection{Q 23.1}\label{q-23.1}}
+
+\(p_0=p_2=\frac12\), donc \(D\) est à valeurs dans \(\{0,2\}\subset\{0,1,2\}\). On prend \(m=2\ge2\), et \(P(D=2)=\frac12>0\) : \textbf{\((H_4)\) est satisfaite.}
+
+\hypertarget{q-23.2}{%
+\subsection{Q 23.2}\label{q-23.2}}
+
+On a \(G_D(t)=\frac12+\frac12t^2\). Pour \(t\in[0,1]\) :
+
+\equationajustee{G_D(t)-t=\frac{(t-1)^2}2 .}
+
+Ainsi \(G_D(t)=t\) si et seulement si \(t=1\), et donc \(\boxed{\alpha=1}\).
+
+Comme \(N_0=1\), on a \(E_0=\bigcup_{j\ge1}(N_j=0)\), c'est-à-dire \(E_0=(\mathcal E\neq\varnothing)\). Sur cet événement, \(J=\min\mathcal E\ge1\). Donc \((J=0)=(\mathcal E=\varnothing)\), soit \((J=0)=\overline{E_0}\), et :
+
+\equationajustee{\begin{aligned}
+P(J=0)&=1-\alpha\\
+&=0 .
+\end{aligned}}
+
+\equationajustee{\boxed{P(J=0)=0}}
+
+\hypertarget{q-23.3}{%
+\subsection{Q 23.3}\label{q-23.3}}
+
+\(J\) est à valeurs dans \(\mathbb N\) : elle admet une espérance si et seulement si la série \(\sum jP(J=j)\) converge.
+
+Or \(jP(J=j)\sim\frac2j\) quand \(j\to+\infty\). C'est l'équivalent du terme positif d'une série divergente (série harmonique). Par comparaison des séries à termes positifs, \(\sum jP(J=j)\) diverge.
+
+\textbf{\(J\) n'admet pas d'espérance.}
+
+\hypertarget{q-23.4}{%
+\subsection{Q 23.4}\label{q-23.4}}
+
+Si l'euglène initiale n'a aucun descendant (probabilité \(\frac12\)), la population disparaît au jour 1. Sinon, elle a deux descendants, dont les lignées sont deux copies indépendantes du processus.
+
+Si ces lignées s'éteignent en \texttt{t1} et \texttt{t2} jours, comptés à partir du jour 1, la population entière est éteinte au jour \(1+\max(\texttt{t1},\texttt{t2})\).
+
+\begin{lstlisting}[language=Python]
+def temps_extinction():
+    if rd.binomial(1, 1/2) == 0:
+        return 1
+    else:
+        t1 = temps_extinction()
+        t2 = temps_extinction()
+        return 1 + max(t1, t2)
+\end{lstlisting}
+
+\hypertarget{iii.d.-calcul-de-la-probabilituxe9-dextinction-uxe9tude-guxe9nuxe9rale}{%
+\subsection{III.D. Calcul de la probabilité d'extinction : étude générale}\label{iii.d.-calcul-de-la-probabilituxe9-dextinction-uxe9tude-guxe9nuxe9rale}}
+
+Remarque préliminaire : si \(N_j(\omega)=0\), la somme définissant \(N_{j+1}(\omega)\) est vide, donc \(N_{j+1}(\omega)=0\).
+
+Par récurrence, \(N_{j'}(\omega)=0\) pour tout \(j'\ge j\). Ainsi \((N_j=0)\subset(N_{j+1}=0)\), et \(a_0=P(N_0=0)=0\).
+
+\hypertarget{q-24.1}{%
+\subsection{Q 24.1}\label{q-24.1}}
+
+Soit \(j\in\mathbb N\). Si \(\omega\in(N_{j+1}=0,N_j\ne0)\), alors \(\omega\in(N_{j+1}=0)\subset E_0\).
+
+Réciproquement, soit \(\omega\in E_0\). L'ensemble \(\{k\in\mathbb N:N_k(\omega)=0\}\)
+est une partie non vide de \(\mathbb N\) ; notons \(j_0\) son plus petit élément.
+
+Comme \(N_0=1\), \(j_0\ge1\), et par minimalité \(N_{j_0-1}(\omega)\neq0\). Donc \(\omega\in(N_{j_0}=0,N_{j_0-1}\ne0)\).
+
+\equationajustee{\boxed{E_0=\bigcup_{j\in\mathbb N}(N_{j+1}=0,\ N_j\ne0)}}
+
+Ces événements sont deux à deux incompatibles. Si \(j<j'\) et \(N_{j+1}(\omega)=0\), alors \(N_{j'}(\omega)=0\) d'après la remarque préliminaire, ce qui exclut \(N_{j'}(\omega)\ne0\).
+
+\hypertarget{q-24.2}{%
+\subsection{Q 24.2}\label{q-24.2}}
+
+Soit \(j\in\mathbb N\). On découpe selon que \(N_j\) est nul ou non. Comme \((N_j=0)\subset(N_{j+1}=0)\), l'événement \((N_{j+1}=0,N_j=0)\) est égal à \((N_j=0)\) :
+
+\equationajustee{\begin{aligned}
+(N_{j+1}=0)&=(N_{j+1}=0,\ N_j\ne0)\cup(N_{j+1}=0,\ N_j=0)\\
+&=(N_{j+1}=0,\ N_j\ne0)\cup(N_j=0).
+\end{aligned}}
+
+\textbf{On a donc \((N_{j+1}=0)=(N_{j+1}=0,\ N_j\ne0)\cup(N_j=0)\), et cette réunion est disjointe.}
+
+\hypertarget{q-24.3}{%
+\subsection{Q 24.3}\label{q-24.3}}
+
+La réunion de Q 24.2 est disjointe. Par additivité, pour tout \(j\in\mathbb N\) :
+
+\equationajustee{P(N_{j+1}=0,\ N_j\ne0)=a_{j+1}-a_j .}
+
+La réunion de Q 24.1 est disjointe. Par \(\sigma\)-additivité :
+
+\equationajustee{\begin{aligned}
+\alpha&=\sum_{j=0}^{+\infty}P(N_{j+1}=0,\ N_j\ne0)\\
+&=\sum_{j=0}^{+\infty}(a_{j+1}-a_j).
+\end{aligned}}
+
+Donc :
+
+\equationajustee{\boxed{\alpha=\sum_{j=0}^{+\infty}(a_{j+1}-a_j)}}
+
+\hypertarget{q-24.4}{%
+\subsection{Q 24.4}\label{q-24.4}}
+
+Pour \(r\in\mathbb N^*\), la somme partielle est télescopique :
+
+\equationajustee{\begin{aligned}
+\sum_{j=0}^{r-1}(a_{j+1}-a_j)&=a_r-a_0\\
+&=a_r .
+\end{aligned}}
+
+Elle converge vers la somme de la série (Q 24.3) :
+
+\equationajustee{\boxed{\lim_{j\to+\infty}a_j=\alpha}}
+
+\hypertarget{q-25.1}{%
+\subsection{Q 25.1}\label{q-25.1}}
+
+Soit \(j\in\mathbb N\). D'après Q 14, \(P(N_1=n)=p_n\), et \((N_1=n)_{0\le n\le m}\) est un système complet d'événements. Les termes d'indice \(n\notin S\), de probabilité nulle, ne contribuent pas ; pour \(n\in S\), la probabilité conditionnelle a un sens. La formule des probabilités totales donne :
+
+\equationajustee{\boxed{\begin{aligned}
+a_{j+1}&=P(N_{j+1}=0)\\
+&=\sum_{n\in S}p_n\,P(N_{j+1}=0\mid N_1=n)
+\end{aligned}}}
+
+\hypertarget{q-25.2}{%
+\subsection{Q 25.2}\label{q-25.2}}
+
+Soient \(j\in\mathbb N\) et \(n\in S\). Sur \((N_1=n)\), la population au jour \(j+1\) est la réunion des descendances, au jour \(j+1\), des \(n\) euglènes du jour 1.
+
+D'après \((H_3)\) et \((H_6)\), ces \(n\) lignées évoluent comme \(n\) copies indépendantes du processus initial issu d'une seule euglène, décalées d'un jour, et indépendantes de \(D_{0,1}=N_1\).
+
+La population est éteinte au jour \(j+1\) si et seulement si chacune des \(n\) lignées est éteinte \(j\) jours après son départ. Cela arrive pour chacune avec probabilité \(P(N_j=0)=a_j\). Par indépendance :
+
+\equationajustee{\boxed{\begin{aligned}
+P(N_{j+1}=0\mid N_1=n)&=\prod_{k=1}^nP(N_j=0)\\
+&=(a_j)^n
+\end{aligned}}}
+
+Pour \(n=0\), on trouve \(1\), ce qui est cohérent.
+
+\hypertarget{q-25.3}{%
+\subsection{Q 25.3}\label{q-25.3}}
+
+Soit \(j\in\mathbb N\). D'après Q 25.1 et Q 25.2, on ajoute des termes nuls (\(p_n=0\) hors de \(S\)) :
+
+\equationajustee{\begin{aligned}
+a_{j+1}&=\sum_{n\in S}p_n\,a_j^n\\
+&=\sum_{n=0}^mp_n\,a_j^n .
+\end{aligned}}
+
+Comme \(a_j\in[0,1]\), on reconnaît \(G_D(a_j)\) :
+
+\equationajustee{\boxed{a_{j+1}=G_D(a_j)}}
+
+\hypertarget{q-25.4}{%
+\subsection{Q 25.4}\label{q-25.4}}
+
+D'après \((H_4)\), \(P(D\le m)=1\). D'après Q 3.1, \(G_D\) est polynomiale, donc continue.
+
+Comme \(a_j\in[0,1]\) et \(a_j\to\alpha\) (Q 24.4), on a \(\alpha\in[0,1]\). On passe à la limite dans \(a_{j+1}=G_D(a_j)\), par continuité de \(G_D\) en \(\alpha\) :
+
+\equationajustee{\boxed{\alpha=G_D(\alpha)}}
+
+\hypertarget{q-25.5}{%
+\subsection{Q 25.5}\label{q-25.5}}
+
+Soit \(t\in\mathcal F\). Montrons par récurrence que \(a_j\le t\) pour tout \(j\).
+
+\begin{itemize}
+\tightlist
+\item
+  \(a_0=0\le t\).
+\item
+  Si \(a_j\le t\), alors, par croissance de \(G_D\) sur \([0,1]\) (Q 1.3) et Q 25.3, \(a_{j+1}=G_D(a_j)\le G_D(t)=t\).
+\end{itemize}
+
+\textbf{Pour tous \(t\in\mathcal F\) et \(j\in\mathbb N\), \(a_j\le t\).}
+
+\hypertarget{q-25.6}{%
+\subsection{Q 25.6}\label{q-25.6}}
+
+D'après Q 25.4, \(\alpha\in[0,1]\) et \(G_D(\alpha)=\alpha\), donc \(\alpha\in\mathcal F\).
+
+Soit \(t\in\mathcal F\). Pour tout \(j\), \(a_j\le t\) (Q 25.5). Par passage à la limite (Q 24.4), \(\alpha\le t\).
+
+\textbf{\(\alpha\) est le plus petit élément de \(\mathcal F\).}
+
+\hypertarget{q-26}{%
+\subsection{Q 26}\label{q-26}}
+
+Si \(p_0=0\), alors \(G_D(0)=p_0=0\) (Q 1.2). Donc \(0\in\mathcal F\), et \(\alpha=\min\mathcal F=0\) (Q 25.6).
+
+Si \(\alpha=0\), alors \(G_D(0)=0\) (Q 25.4), soit \(p_0=0\) (Q 1.2).
+
+\textbf{Ainsi \(\alpha=0\) si et seulement si \(p_0=0\).}
+
+\hypertarget{q-27.1}{%
+\subsection{Q 27.1}\label{q-27.1}}
+
+D'après \((H_4)\), \(P(D\le m)=1\). La question 3.1 assure alors que \(G_D\) est polynomiale, avec \(G_D(t)=\sum_{n=0}^mp_nt^n\).
+
+\(f\) est donc polynomiale, donc deux fois dérivable sur \([0,1]\), avec :
+
+\equationajustee{f'(t)=\sum_{n=1}^mnp_nt^{n-1}-1}
+
+\equationajustee{f''(t)=\sum_{n=2}^mn(n-1)p_nt^{n-2}}
+
+\hypertarget{q-27.2}{%
+\subsection{Q 27.2}\label{q-27.2}}
+
+Pour \(t\in[0,1]\), \(f''(t)\) est une somme de termes positifs. Le terme d'indice \(m\) vaut \(m(m-1)p_mt^{m-2}\).
+
+Comme \(m\ge2\) et \(p_m>0\), ce terme est strictement positif pour \(t>0\).
+
+Donc \(f''\ge0\) sur \([0,1]\) et \(f''>0\) sur \(]0,1]\).
+
+Ainsi \(f'\) est continue sur \([0,1]\) et strictement croissante sur \(]0,1]\), donc \textbf{strictement croissante sur \([0,1]\)}.
+
+\hypertarget{q-27.3}{%
+\subsection{Q 27.3}\label{q-27.3}}
+
+En \(t=0\), tous les termes \(np_nt^{n-1}\) d'indice \(n\ge2\) s'annulent : \(f'(0)=p_1-1\).
+
+Comme \(\sum p_n=1\) et \(p_m>0\) avec \(m\ne1\), on a \(p_1\le1-p_m<1\).
+
+\equationajustee{\boxed{f'(0)=p_1-1<0}}
+
+\hypertarget{q-28.1}{%
+\subsection{Q 28.1}\label{q-28.1}}
+
+D'après \((H_4)\) et Q 3.2, \((G_D)'(1)=E(D)\). Donc :
+
+\equationajustee{\boxed{f'(1)=E(D)-1\le0}}
+
+\hypertarget{q-28.2}{%
+\subsection{Q 28.2}\label{q-28.2}}
+
+\(f'\) est strictement croissante (Q 27.2), donc pour \(t\in[0,1[\), \(f'(t)<f'(1)\le0\).
+
+\textbf{\(f\) est strictement décroissante sur \([0,1]\)}, de \(f(0)=p_0\) à \(f(1)=G_D(1)-1=0\).
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+\(t\) & \(0\) & & \(1\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(f'(t)\) & & \(-\) & \(\le0\) \\
+\(f\) & \(p_0\) & décroissante & \(0\) \\
+\end{longtable}
+
+\hypertarget{q-28.3}{%
+\subsection{Q 28.3}\label{q-28.3}}
+
+\(f\) est strictement décroissante et \(f(1)=0\). Donc \(f(t)>0\) pour \(t\in[0,1[\), et \(1\in\mathcal F\).
+
+Ainsi \(\mathcal F=\{1\}\), et d'après Q 25.6, \(\alpha=\min\mathcal F=1\).
+
+\equationajustee{\boxed{\mathcal F=\{1\}}}
+
+\equationajustee{\boxed{\alpha=1}}
+
+\textbf{Interprétation} : si chaque euglène a en moyenne au plus un descendant, la population s'éteint presque sûrement. C'est vrai même dans le cas \(E(D)=1\), où la population moyenne reste constante.
+
+\hypertarget{q-29.1}{%
+\subsection{Q 29.1}\label{q-29.1}}
+
+D'après \((H_4)\) et Q 3.2, \((G_D)'(1)=E(D)\). Donc :
+
+\equationajustee{\boxed{f'(1)=E(D)-1>0}}
+
+\hypertarget{q-29.2}{%
+\subsection{Q 29.2}\label{q-29.2}}
+
+\(f'\) est continue (Q 27.1) et strictement croissante (Q 27.2) sur \([0,1]\). De plus \(f'(0)<0<f'(1)\) (Q 27.3, Q 29.1).
+
+Par le théorème de la bijection, \textbf{il existe un unique \(\beta\in\,]0,1[\) tel que \(f'(\beta)=0\).}
+
+\hypertarget{q-29.3}{%
+\subsection{Q 29.3}\label{q-29.3}}
+
+\(f'\) est strictement croissante et s'annule en \(\beta\) : \(f'<0\) sur \([0,\beta[\) et \(f'>0\) sur \(]\beta,1]\).
+
+\(f\) est strictement décroissante sur \([0,\beta]\) et strictement croissante sur \([\beta,1]\). De plus \(f(0)=p_0\ge0\) et \(f(1)=0\), et \(f(\beta)<f(1)=0\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(t\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(0\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\beta\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(1\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(f'(t)\) & \(<0\) & \(-\) & \(0\) & \(+\) & \(>0\) \\
+\(f\) & \(p_0\ge0\) & décroissante & \(f(\beta)<0\) & croissante & \(0\) \\
+\end{longtable}
+
+\hypertarget{q-29.4}{%
+\subsection{Q 29.4}\label{q-29.4}}
+
+Sur \([\beta,1]\), \(f\) est strictement croissante et \(f(1)=0\) : son seul zéro sur cet intervalle est \(1\).
+
+Sur \([0,\beta]\), \(f\) est continue et strictement décroissante, avec \(f(0)\ge0>f(\beta)\). Par le théorème de la bijection, elle a un unique zéro \(\gamma\in[0,\beta[\).
+
+Donc \(\mathcal F=\{\gamma,1\}\), et \(\alpha=\min\mathcal F=\gamma<1\) (Q 25.6).
+
+\equationajustee{\boxed{\mathcal F=\{\alpha,1\}}}
+
+\equationajustee{\boxed{\alpha<1}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q29-4-points-fixes-gd.pdf}
+\caption*{Figure 3 --- Courbe de G\_D et droite y = t : si E(D) ≤ 1, seul point
+commun en 1 ; si E(D) \textgreater{} 1, second point commun α
+\textless{} 1, et f = G\_D − t est minimale en β (exemples G\_D(t) = 0,6
++ 0,4t² et 0,2 + 0,8t²)}
+\end{figure}
+
+\textbf{Interprétation} : si chaque euglène a en moyenne strictement plus d'un descendant, la population survit indéfiniment avec la probabilité strictement positive \(1-\alpha\). L'extinction reste possible (\(\alpha>0\)) dès que \(p_0>0\).
+
+\hypertarget{iii.e.-une-application-calcul-numuxe9rique-de-la-probabilituxe9-dextinction}{%
+\subsection{III.E. Une application : calcul numérique de la probabilité d'extinction}\label{iii.e.-une-application-calcul-numuxe9rique-de-la-probabilituxe9-dextinction}}
+
+\hypertarget{q-30}{%
+\subsection{Q 30}\label{q-30}}
+
+D'après Q 28 et Q 29, pour \(b\in[0,1]\) : \(G_D(b)-b>0\) si et seulement si \(b<\alpha\). On maintient l'invariant \(a\le\alpha\le c\), et la longueur \(c-a\) est divisée par \(2\) à chaque tour.
+
+À la sortie, \(c-a\le\varepsilon\), donc \(\alpha\le c\le\alpha+\varepsilon\) : \(c\) est une valeur approchée de \(\alpha\) par excès à \(\varepsilon\) près.
+
+\begin{lstlisting}[language=Python]
+def proba_extinction(epsilon):
+    a = 0
+    c = 1
+    while c - a > epsilon:
+        b = (a+c)/2
+        if G_D(b) - b > 0:
+            a = b
+        else:
+            c = b
+    return c
+\end{lstlisting}
+
+La boucle s'arrête après \(\lceil\log_2(1/\varepsilon)\rceil\) tours. On renvoie \texttt{c}, défini avant la boucle : pour \texttt{epsilon\ =\ 1}, la boucle n'est jamais exécutée et \texttt{b} n'existerait pas.
+
+\hypertarget{iv.-tracuxe9s-de-graphes}{%
+\section{IV. Tracés de graphes}\label{iv.-tracuxe9s-de-graphes}}
+
+\hypertarget{q-31.1}{%
+\subsection{Q 31.1}\label{q-31.1}}
+
+Soit \(t\in[0,1]\), et posons \(Y_j=t^{X_j}\). Les \(Y_j\) sont indépendantes, comme fonctions des \(X_j\) indépendantes, et de même loi que \(t^X\). D'après Q 1.5 et Q 1.6 :
+
+\equationajustee{\begin{aligned}
+E(Y_j)&=G_X(t),\\
+V(Y_j)&\le1 .
+\end{aligned}}
+
+Soit \(M=\frac1n\sum_{j=0}^{n-1}Y_j\). Par linéarité, \(E(M)=G_X(t)\). Par indépendance :
+
+\equationajustee{\begin{aligned}
+V(M)&=\frac1{n^2}\sum_{j=0}^{n-1}V(Y_j)\\
+&\le\frac1n .
+\end{aligned}}
+
+L'inégalité de Bienaymé-Tchebychev donne :
+
+\equationajustee{\begin{aligned}
+P\left(\left|\frac1n\sum_{j=0}^{n-1}t^{X_j}-G_X(t)\right|\ge\varepsilon\right)&\le\frac{V(M)}{\varepsilon^2}\\
+&\le\frac1{n\varepsilon^2}.
+\end{aligned}}
+
+\hypertarget{q-31.2}{%
+\subsection{Q 31.2}\label{q-31.2}}
+
+Soit \(i\in\{0,\dots,p\}\), et posons \(t_i=\frac ip\in[0,1]\). Le complémentaire \(\overline{A_i}\) de \(A_i\) est l'événement :
+
+\equationajustee{\left(\left|\frac1n\sum_{j=0}^{n-1}t_i^{X_j}-G_X(t_i)\right|\ge\varepsilon\right).}
+
+D'après Q 31.1, \(P(\overline{A_i})\le\frac1{n\varepsilon^2}\). Par passage au complémentaire et sous-additivité :
+
+\equationajustee{\begin{aligned}
+P\Big(\bigcap_{i=0}^pA_i\Big)&=1-P\Big(\bigcup_{i=0}^p\overline{A_i}\Big)\\
+&\ge1-\sum_{i=0}^pP(\overline{A_i})\\
+&\ge1-\frac{p+1}{n\varepsilon^2}.
+\end{aligned}}
+
+\hypertarget{q-31.3}{%
+\subsection{Q 31.3}\label{q-31.3}}
+
+D'après Q 31.2, il suffit que \(\frac{p+1}{n\varepsilon^2}\le\eta\). Une condition suffisante est donc :
+
+\equationajustee{\boxed{n\ge\frac{p+1}{\eta\,\varepsilon^2}}}
+
+\hypertarget{q-32.1}{%
+\subsection{Q 32.1}\label{q-32.1}}
+
+Posons \(q=\frac{p+1}{\eta\varepsilon^2}>0\). \texttt{int} tronque le réel positif \(q\) à sa partie entière, donc \(n=\lfloor q\rfloor+1>q\).
+
+La ligne 4 choisit la taille d'échantillon \(n\), le plus petit entier strictement supérieur à \(q\). Elle vérifie la condition suffisante de Q 31.3, de sorte que \(P(\bigcap A_i)\ge1-\eta\).
+
+\hypertarget{q-32.2}{%
+\subsection{Q 32.2}\label{q-32.2}}
+
+La ligne 5 produit un échantillon \(X_0,\dots,X_{n-1}\) de \(n\) réalisations indépendantes de \(X\). Pour chaque \texttt{i} (ligne 6), les lignes 7 et 8 accumulent dans \texttt{y\_empir{[}i{]}}, initialisé à \(0\), les termes \(x_i^{X_j}/n\). À la fin :
+
+\equationajustee{\texttt{y\_empir[i]}=\frac1n\sum_{j=0}^{n-1}\Big(\frac ip\Big)^{X_j}.}
+
+C'est la moyenne empirique qui estime \(G_X(i/p)\). Pour \(i=0\), \texttt{0**0} vaut \texttt{1}, et l'on estime \(P(X=0)=G_X(0)\).
+
+\hypertarget{q-32.3}{%
+\subsection{Q 32.3}\label{q-32.3}}
+
+\texttt{ymax{[}i{]}} vaut \texttt{y\_empir{[}i{]}} \(+\varepsilon\) et \texttt{ymin{[}i{]}} vaut \texttt{y\_empir{[}i{]}} \(-\varepsilon\). Ce sont les bornes de l'intervalle \(\left]\,\texttt{y\_empir[i]}-\varepsilon,\allowbreak \ \texttt{y\_empir[i]}+\varepsilon\,\right[\), qui contient \(G_X(i/p)\) sur l'événement \(A_i\).
+
+Les lignes 11 à 13 tracent ces deux lignes brisées. Elles encadrent les \(p+1\) valeurs \(G_X(i/p)\) simultanément avec probabilité au moins \(1-\eta\).
+
+\hypertarget{q-32.4}{%
+\subsection{Q 32.4}\label{q-32.4}}
+
+\(M_i\) et \(N_i\) ont même abscisse \texttt{x{[}i{]}} : le segment \([M_i,N_i]\) est vertical, de longueur \(\texttt{ymax[i]}-\texttt{ymin[i]}=2\varepsilon\).
+
+La courbe de \(G_X\) rencontre ce segment si et seulement si \(\texttt{ymin[i]}\le G_X(i/p)\le\texttt{ymax[i]}\). C'est le cas sur \(A_i\), où les inégalités sont même strictes. Donc l'événement « la courbe coupe les \(p+1\) segments » contient \(\bigcap_{i=0}^pA_i\).
+
+Comme \(n\ge\frac{p+1}{\eta\varepsilon^2}\) (Q 32.1), Q 31.2 et Q 31.3 donnent :
+
+\equationajustee{\begin{aligned}
+P\big(\text{la courbe de }G_X\text{ coupe les }p+1\text{ segments}\big)&\ge P\Big(\bigcap_{i=0}^pA_i\Big)\\
+&\ge1-\eta .
+\end{aligned}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q32-4-segments-confiance.pdf}
+\caption*{Figure 4 --- Sortie de trace1 simulée pour X de loi binomiale ℬ(2, 1/2),
+p = 5, ε = 0,1 : la courbe de G\_X coupe les p + 1 segments verticaux de
+longueur 2ε}
+\end{figure}
+
+\hypertarget{q-33}{%
+\subsection{Q 33}\label{q-33}}
+
+Comme \(P(X\le m)=1\), on a \(G_X(t)=\sum_{n=0}^m\texttt{liste[n]}\,t^n\) (Q 3.1).
+
+\begin{lstlisting}[language=Python]
+def trace2(p, liste):
+    x = [i/p for i in range(p+1)]
+    y = [0 for i in range(p+1)]
+    m = len(liste)-1
+    for i in range(p+1):
+        for n in range(m+1):
+            y[i] = y[i] + liste[n]*x[i]**n
+    plt.plot(x, y)
+    plt.show()
+\end{lstlisting}
+
+Pour \texttt{trace2(\allowbreak{}10,\allowbreak{}\ {[}0.4,\allowbreak{}\ 0.6{]}\allowbreak{})\allowbreak{}}, on obtient les onze points \((\frac i{10},\,0{,}4+0{,}6\cdot\frac i{10})\), de \((0;0{,}4)\) à \((1;1)\). C'est bien le graphe de \(G_X(t)=0{,}4+0{,}6t\), fonction génératrice de \(\mathcal B(3/5)\).
+
+\end{document}

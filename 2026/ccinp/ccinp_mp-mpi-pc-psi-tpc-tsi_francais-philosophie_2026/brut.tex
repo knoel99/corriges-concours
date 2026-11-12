@@ -1,0 +1,250 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP MP-MPI-PC-PSI-TPC-TSI — Français-philosophie 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · CCINP MP-MPI-PC-PSI-TPC-TSI}
+\fancyhead[R]{\small Français-philosophie 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries CCINP MP-MPI-PC-PSI-TPC-TSI — Français-philosophie 2026\par}\medskip
+  {\large CCINP · MP-MPI-PC-PSI-TPC-TSI · Français-philosophie · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve FP4 (mutualisée avec e3a-Polytech), 4 heures, sans document ni machine. Texte : Kathleen Raine, \emph{Le monde vivant de l'imagination} (trad. C. Garnier-Tardieu et M. Duclos, Éditions du Rocher, 1998, p.~86-90). Thème de l'année : l'expérience de la nature. Œuvres au programme : Jules Verne, \emph{Vingt mille lieues sous les mers} ; Georges Canguilhem, \emph{La Connaissance de la vie} ; Marlen Haushofer, \emph{Le Mur invisible}. Barème : résumé 1/3 (20 points), dissertation 2/3 (40 points).
+
+\hypertarget{ruxe9sumuxe9-de-texte-20-points}{%
+\section{Résumé de texte (20 points)}\label{ruxe9sumuxe9-de-texte-20-points}}
+
+\textbf{Problématique du texte :} la science, qui mesure, peut-elle se dire la connaissance de la nature, quand une reconnaissance première, antérieure à tout savoir acquis, nous la livre tout entière ?
+
+\begin{quote}
+
+La science mesure utilement la nature, sans en détenir seule la connaissance : arts, poésie et simple contemplation, ouverte à tous, saisissent l'incalculable de ce refuge spirituel. ‖ Étudiant le tout par la partie, séparant observateur et objet, la science est objective. Mais l'homme, simple fragment, prétend juger l'ensemble en seul être pensant : cet orgueil matérialiste appauvrit notre expérience occidentale. ‖ Retrouvons donc, avec le poète, le savoir premier, antérieur à la coupure entre moi et monde. Enfant, je saisissais fleurs et bêtes sans apprendre ; grandir m'en a éloignée. On reconnaît ces êtres d'emblée, entièrement, sans les connaître : la nature parle sa langue.
+
+\end{quote}
+
+\textbf{105 mots} (fourchette admise : 90 à 110), en trois paragraphes de 27, 34 et 44 mots. Règle de comptage de l'énoncé : est un mot toute unité typographique signifiante séparée par une espace, un tiret ou une apostrophe (« l'homme » = 2, « d'emblée » = 2, « m'en » = 2) ; les doubles barres ‖ marquent les changements de paragraphe et ne sont pas comptées.
+
+\hypertarget{dissertation-40-points}{%
+\section{Dissertation (40 points)}\label{dissertation-40-points}}
+
+\textbf{Problématique :} la réalité de la nature se donne-t-elle d'emblée, dans une reconnaissance que le savoir acquis ne ferait que recouvrir, ou ne se livre-t-elle qu'au terme d'un apprentissage qui seul permet de la reconnaître ?
+
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
+
+Une longue tradition philosophique place l'étonnement au commencement du savoir : on se met à chercher parce qu'on s'émerveille. Kathleen Raine renverse cette continuité. Dans \emph{Le monde vivant de l'imagination}, la poétesse britannique soutient que l'émerveillement n'est pas l'antichambre de la connaissance, mais une connaissance à part entière, et la plus haute : « Ce n'est pas l'expérience acquise par le savoir qui nous permet d'en appréhender la réalité, mais une reconnaissance totale et immédiate. » Le pronom « en » renvoie à l'énumération qui précède (l. 50-52) : un arbre en fleur, un oiseau, la lune, des cailloux, un ruisseau, un faisan, un chat, la corolle d'une pensée, et jusqu'à un intrus, des tasses accrochées dans un dressoir. Il s'agit donc des choses, et d'abord des êtres de la nature, telles qu'on les rencontre pour la première fois. « Appréhender » ne veut pas dire ici redouter, mais saisir par l'esprit, connaître. Quant à la « réalité », ce n'est pas la vérité d'un énoncé, mais ce que les choses sont en elles-mêmes, par-delà nos représentations. L'« expérience acquise par le savoir » désigne l'expérience instruite : transmise par l'école, les livres et la parole d'autrui autant que par la science, elle nomme, classe et mesure, et s'accumule avec le temps. La « reconnaissance totale et immédiate », à l'inverse, saisit l'être entier, sans médiation ni délai, dans une fusion du regard et de la chose. Le jugement est donc double : il refuse au savoir le pouvoir de nous livrer le réel et l'attribue à une évidence première. Il recèle pourtant un paradoxe que le mot même de Raine trahit : \emph{re}-connaître, c'est connaître de nouveau, et l'immédiateté revendiquée suppose une familiarité antérieure, que l'auteure nomme un savoir « inné ». La réalité de la nature se donne-t-elle d'emblée, dans une reconnaissance que le savoir acquis ne ferait que recouvrir, ou ne se livre-t-elle qu'au terme d'un apprentissage qui seul permet de la reconnaître ? Les trois œuvres du programme, \emph{Vingt mille lieues sous les mers} de Jules Verne, \emph{La Connaissance de la vie} de Georges Canguilhem et \emph{Le Mur invisible} de Marlen Haushofer, accordent d'abord à Raine que le savoir accumulé peut faire écran à la présence des êtres. Elles montrent ensuite que l'évidence immédiate est le lieu même de l'illusion et que la réalité se conquiert. Elles invitent enfin à comprendre la reconnaissance non comme un point de départ perdu, mais comme le fruit d'un savoir qui retourne au regard.
+
+\hypertarget{i.-le-savoir-acquis-peut-faire-uxe9cran-uxe0-la-ruxe9alituxe9-des-uxeatres}{%
+\subsection{I. Le savoir acquis peut faire écran à la réalité des êtres}\label{i.-le-savoir-acquis-peut-faire-uxe9cran-uxe0-la-ruxe9alituxe9-des-uxeatres}}
+
+Le premier mérite de la formule est de nommer une expérience que les trois œuvres attestent : celle d'un savoir qui possède tous les mots et ne rencontre rien.
+
+Le savoir des classifications, d'abord, peut se suffire à lui-même au point de ne plus rien voir, et Verne en fait un type romanesque. Dans \emph{Vingt mille lieues sous les mers}, Conseil, le domestique du professeur Aronnax, connaît par cœur la classification des naturalistes, embranchements, classes, ordres, familles, genres, espèces ; mais le narrateur précise d'emblée que cette science est de pure théorie et qu'il ne distinguerait pas un cachalot d'une baleine. Conseil incarne exactement l'« expérience acquise par le savoir » réduite à elle-même : un classement qui tourne à vide. Devant la vitre du salon du \emph{Nautilus}, lorsque les panneaux s'ouvrent sur la mer éclairée, c'est Ned Land, le harponneur, qui reconnaît et nomme les poissons, tandis que Conseil se contente de les ranger. Et Aronnax lui-même, professeur au Muséum, cesse alors d'être un savant qui énumère : il est un spectateur ébloui, qui avoue à plusieurs reprises, devant la forêt sous-marine de l'île Crespo ou les ruines englouties de l'Atlantide, que ses connaissances ne suffisent pas à dire ce qu'il voit. Le roman fait ainsi de l'émerveillement le moment où le réel déborde le savoir.
+
+Il arrive même que la réalité de la nature ne se découvre qu'au moment où le savoir acquis cesse de servir. \emph{Le Mur invisible} fait de cette épreuve son point de départ. La narratrice, une citadine venue passer quelques jours dans un pavillon de chasse des montagnes autrichiennes, se découvre un matin séparée du monde par une paroi transparente. Tout ce qu'elle savait, les usages sociaux, les nouvelles, les compétences d'une vie urbaine, perd d'un coup son objet. Ce qui s'impose alors ne procède d'aucun savoir : la présence de Lynx, le chien, dont l'attachement se donne sans avoir à être appris ; la forêt, la prairie, l'alpage, qui deviennent la totalité de son monde et qu'elle apprend à regarder pour eux-mêmes. Le mur lui-même reste une énigme qu'elle renonce à expliquer : elle écrit son récit non pour comprendre, mais pour tenir. Haushofer donne ici raison à Raine : la perte des savoirs ordinaires rend la narratrice à la présence des êtres.
+
+Cette antériorité du rapport vécu sur le savoir n'est pas seulement une donnée littéraire : elle a un fondement philosophique. Dans « La pensée et le vivant », introduction de \emph{La Connaissance de la vie}, Canguilhem rappelle que celui qui connaît la vie est lui-même un vivant, et que la pensée du vivant doit tenir du vivant l'idée du vivant : la biologie ne peut se donner son objet de l'extérieur. Le chapitre « Le vivant et son milieu » précise ce primat : le milieu homogène et décentré de la physique est une construction obtenue par abstraction, à partir du milieu vécu qu'un organisme centre autour de lui et qu'il qualifie selon ses besoins. C'est un tel milieu centré, qualifié par les besoins et les attachements, qui devient le monde entier de la narratrice du \emph{Mur invisible}. Même le chapitre consacré à la théorie cellulaire montre que les concepts de la biologie sont nés d'images et de valeurs, avant toute mesure. En ce sens, la reconnaissance dont parle Raine n'est pas un ornement poétique ajouté à la science : elle est ce sans quoi il n'y aurait même pas d'objet à connaître.
+
+Il faut pourtant aller plus loin : si l'évidence première suffisait, aucun de ces livres ne raconterait une histoire, car il ne s'y passerait rien.
+
+\hypertarget{ii.-mais-limmuxe9diat-est-le-lieu-propre-de-lillusion-la-ruxe9alituxe9-se-conquiert}{%
+\subsection{II. Mais l'immédiat est le lieu propre de l'illusion : la réalité se conquiert}\label{ii.-mais-limmuxe9diat-est-le-lieu-propre-de-lillusion-la-ruxe9alituxe9-se-conquiert}}
+
+Loin de livrer la réalité, la perception immédiate est d'abord le règne de la projection. \emph{Vingt mille lieues sous les mers} s'ouvre précisément sur une perception immédiate, totale et fausse. En 1866, des navires de plusieurs nations aperçoivent en pleine mer une chose énorme, longue, fusiforme, parfois phosphorescente : l'opinion y voit aussitôt un monstre marin. Aronnax lui-même, consulté par la presse, propose l'hypothèse d'un narval gigantesque, erreur savante construite sur une évidence populaire. Il faut des mois de traque à bord de l'\emph{Abraham Lincoln} puis la chute du professeur à la mer, qui le fait échouer sur le dos même de la bête, pour que la vérité apparaisse : sous ses pieds, Aronnax découvre une coque de tôle, celle d'un bateau sous-marin. Verne place ainsi, en ouverture, la réfutation de l'immédiateté : la première fois que l'on voit une chose, on la reconnaît d'après ce que l'on craint ou ce que l'on attend, et l'on se trompe. La reconnaissance n'est jamais vierge ; elle mobilise des images reçues.
+
+Ce que la réaction spontanée prend pour le réel, seul un savoir patient peut le rectifier. Canguilhem le montre dans « La monstruosité et le monstrueux » : comme le « monstre » de 1866, le monstre biologique suscite d'emblée une réaction totale, faite de fascination et d'effroi, parce qu'il semble contredire l'ordre même de la vie. Cette réaction est une évaluation spontanée du vivant par le vivant ; elle n'est pas une connaissance. C'est le travail de la tératologie, avec les Geoffroy Saint-Hilaire, que de soustraire la monstruosité au monstrueux en montrant qu'elle relève des mêmes lois du développement que la forme normale. Le savoir acquis, ici, ne recouvre pas le réel : il le dégage de l'imaginaire qui l'enveloppait. De même, le chapitre « L'expérimentation en biologie animale » établit qu'on ne connaît le vivant qu'au prix d'un détour, isoler, provoquer, faire varier, détour d'autant plus délicat que l'organisme est un individu et que l'intervention le modifie, mais dont aucune contemplation ne dispense.
+
+Habiter la nature, enfin, ne relève pas d'un don mais d'un apprentissage, et \emph{Le Mur invisible} ne raconte rien d'autre. La narratrice ne survit pas parce qu'elle reconnaît la nature, mais parce qu'elle apprend, lentement et maladroitement, à planter des pommes de terre et des haricots, à faucher et rentrer le foin, à traire et soigner la vache Bella, à chasser pour nourrir le chien et se nourrir elle-même, à prévoir les réserves de l'hiver. Chaque erreur se paie en fatigue, en récoltes compromises, en bêtes perdues. La montagne n'est pas pour elle un livre ouvert, mais un milieu opaque dont il faut patiemment déchiffrer les saisons, les orages, les dangers. Rien d'inné ne la sauve : c'est une compétence construite, jour après jour, qui lui permet d'habiter ce qu'elle se contentait autrefois de traverser. Le roman répond ainsi à Raine par sa forme même : la réalité de la nature s'y livre dans la durée, saison après saison, et non dans l'instant d'une révélation.
+
+La formule de Raine semble donc démentie : loin d'être un écran, le savoir acquis est souvent la condition pour voir ce qui est. Faut-il pour autant renvoyer l'intuition à l'illusion ?
+
+\hypertarget{iii.-la-reconnaissance-comme-fruit-dun-savoir-qui-retourne-au-regard}{%
+\subsection{III. La reconnaissance comme fruit d'un savoir qui retourne au regard}\label{iii.-la-reconnaissance-comme-fruit-dun-savoir-qui-retourne-au-regard}}
+
+Ce serait manquer ce que la formule a de juste. Elle ne décrit pas une alternative, mais un ordre : le savoir naît d'une rencontre et doit y revenir. Le texte lui-même le laisse voir. Raine a appris plus tard que le buisson de son enfance était un groseillier, et ce nom n'a rien détruit : elle revoit les pétales avec la même précision, et c'est le nom qui lui permet aujourd'hui de nous transmettre sa vision. L'enfant perçoit la fleur comme quintuple avant de savoir compter jusqu'à cinq ; mais le nombre viendra, et il dira exactement ce que le regard avait saisi. La poésie elle-même, que Raine donne pour modèle, n'est pas une saisie immédiate : elle est un travail de la langue, une étude qui se déploie dans la durée. La reconnaissance est première dans l'ordre du fondement ; elle n'est pas suffisante dans l'ordre de la connaissance.
+
+Le savoir n'éteint pas le regard : il l'aiguise, tant qu'il ne se fait pas pouvoir. Verne le montre en distribuant les rôles. Conseil classe sans voir, Ned Land voit sans classer, et le roman suggère qu'à eux deux ils feraient un naturaliste accompli : la reconnaissance véritable naît de leur union. Ned, d'ailleurs, ne voit dans la mer que des proies à harponner : son regard immédiat est celui du « consommateur » dont parle Raine. Aronnax, lui, voit davantage parce qu'il sait : la classification ne s'interpose pas entre lui et l'animal, elle multiplie ce qu'il perçoit, distingue là où l'ignorant ne verrait qu'une masse confuse, et fait de la vitre du salon un spectacle inépuisable. Le roman indique aussi le point où ce savoir se pervertit : lorsque le \emph{Nautilus}, armé de son éperon, massacre une troupe de cachalots, le récit insiste sur le carnage et la mer ensanglantée. Le savoir aveugle n'est pas celui qui sait trop, mais celui qui devient pouvoir. Et c'est l'expérience acquise, au terme d'un voyage de vingt mille lieues, qui permet à Aronnax de conclure qu'à la vieille question de l'Ecclésiaste, qui a jamais sondé les profondeurs de l'abîme, Nemo et lui sont désormais les seuls à pouvoir répondre.
+
+Connaître et vivre ne s'opposent donc pas : la connaissance prolonge la vie, à condition de lui revenir. Canguilhem donne à cet ordre sa formule dans l'introduction de son livre : la vie forme des formes, la connaissance analyse les matières que la vie a informées. La connaissance n'est pas le contraire de la vie ; elle en est un moment, qui défait pour comprendre ce que la vie a formé, et qui doit donc toujours revenir à ce qu'elle a défait. Le chapitre « Le normal et le pathologique » en tire une conséquence concrète : la norme n'est pas une moyenne statistique, elle est instituée par le vivant lui-même, capable de créer de nouvelles normes ; un savoir médical qui oublierait l'expérience vécue du malade manquerait son objet. Il n'y a donc pas à choisir entre reconnaître et connaître, mais à exiger du savoir qu'il n'oublie pas d'où il vient.
+
+La reconnaissance la plus haute, enfin, vient à la fin du chemin et non à son début. C'est ce que la narratrice de Haushofer atteint au terme de son épreuve. Après des années de travail, son regard n'est plus celui de la femme d'avant, ni celui d'une enfant qui reconnaîtrait tout d'emblée : c'est une attention instruite, faite d'habitude, de soin et de deuils. Elle finit par se sentir partie de la forêt plutôt que sujet face à elle, comme si la séparation du dedans et du dehors dont parle Raine s'effaçait, non par un retour à l'enfance, mais au bout d'un long travail. Elle remarque une corneille blanche que ses congénères rejettent parce qu'elle ne leur ressemble pas, et elle la nourrit : reconnaître un être singulier dans sa fragilité n'est pas ici un don originel, mais le fruit tardif d'une longue fréquentation. À l'inverse, l'homme qui surgit à la fin du récit et abat à coups de hache le jeune taureau puis Lynx incarne une violence sans regard ni attention. Chez Haushofer, l'immédiat sans savoir n'est pas le paradis perdu : c'est la brutalité.
+
+\hypertarget{conclusion}{%
+\subsection{Conclusion}\label{conclusion}}
+
+On peut donc souscrire au jugement de Kathleen Raine, mais dans une mesure précise. Il est vrai qu'aucune accumulation de savoirs ne produit à elle seule la présence des êtres et que le savoir peut tourner à vide : Conseil le montre, et Canguilhem le fonde en rappelant que la pensée du vivant procède du vivant. Il est faux, en revanche, que la reconnaissance immédiate suffise à saisir la réalité : le monstre de 1866, le monstrueux qu'a dû dissiper la tératologie, la montagne opaque de la narratrice sont autant d'évidences trompeuses ou de mondes à déchiffrer. La formule vaut comme ordre de fondation et comme avertissement contre la réduction de la nature à une matière exploitable ; elle ne vaut pas comme exclusion du savoir. Les trois œuvres décrivent un même trajet : on ne voit d'abord que ce que l'on projette, puis on apprend, et le savoir, s'il reste fidèle à la vie, rend enfin au regard ce qu'il lui avait d'abord pris. Si, comme l'écrit Raine, la nature parle une langue, il faut lui accorder ce que l'on accorde à toute langue : on la reconnaît d'autant mieux qu'on l'a apprise.
+
+FIN
+
+\end{document}

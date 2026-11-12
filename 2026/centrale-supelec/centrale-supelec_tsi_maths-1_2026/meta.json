@@ -1,0 +1,38 @@
+{
+  "slug": "centrale-supelec_tsi_maths-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "TSI",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 52,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-projection-orthogonale.svg",
+      "question": "Q3",
+      "legende": "projection orthogonale sur F : p_F(v) est le point de F le plus proche de v, le résidu v − p_F(v) est orthogonal à F et sa norme est la distance de v à F (schéma, F hyperplan de ℳ₄,₁(ℝ))"
+    },
+    {
+      "fichier": "figures/q22-rolle-zeros.svg",
+      "question": "Q22",
+      "legende": "Rolle entre zéros consécutifs : entre c_j et c_{j+1}, g a une tangente horizontale en d_j, zéro de g′ ; quatre zéros de g donnent trois zéros distincts de g′"
+    },
+    {
+      "fichier": "figures/q26-droite-regression.svg",
+      "question": "Q26",
+      "legende": "droite des moindres carrés y = c + dx : E(c, d) est la somme des carrés des écarts verticaux y_i − c − dx_i (tirets), non des distances à la droite"
+    },
+    {
+      "fichier": "figures/q42-quatre-sous-espaces.svg",
+      "question": "Q42",
+      "legende": "les quatre sous-espaces de la SVD : A envoie ker(A) sur 0 et ker(A)^⊥ bijectivement sur Im(A), Ã fait l'inverse et annule Im(A)^⊥, donc b = Ãy est dans ker(A)^⊥"
+    },
+    {
+      "fichier": "figures/q50-gradient-zigzag.svg",
+      "question": "Q50",
+      "legende": "gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ"
+    }
+  ]
+}

@@ -1,0 +1,1866 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Banque PT 2026 — Informatique et modélisation de systèmes physiques},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Banque PT PT}
+\fancyhead[R]{\small Informatique et modélisation 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Banque PT 2026 — Informatique et modélisation de systèmes physiques\par}\medskip
+  {\large Banque PT · PT · Informatique et modélisation · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} \emph{Étude et modélisation de phénomènes de communication sous-marine.} Le sujet part d'une question concrète : comment communiquer sous l'eau ? Il en tire une progression qui va de la physique (pourquoi le son et pas la radio) à la simulation numérique (trajectoire des rayons sonores, canal SOFAR), puis aux données (base SQL de mesures, classification de sons par \(k\) plus proches voisins).
+
+\textbf{Format.} 4 heures, \textbf{calculatrice interdite}, 50 questions. Selon le rapport 2026, la partie physique (Q1 à Q22) pèse 40 \% du barème et la partie informatique (Q23 à Q50) 60 \%. Les applications numériques sont attendues avec un ou deux chiffres significatifs : seul l'ordre de grandeur compte, mais il doit être juste et accompagné de son unité.
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2193}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1181}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3175}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3151}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notions mobilisées
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1.1 Pression au fond des océans & Q1 à Q6 & forces pressantes sur un capteur cylindrique, poussée d'Archimède & statique des fluides, intégrale de surface, symétrie \\
+1.2 Communication acoustique & Q7 à Q14 & loi de Snell-Descartes en milieu stratifié, équation des rayons & optique géométrique, invariant \(\sin\theta/c\), dérivation composée \\
+1.3 Ondes radio & Q15 à Q22 & onde plane dans un conducteur ohmique, effet de peau & équations de Maxwell, équation de diffusion, nombres complexes \\
+2.1 Euler & Q23 à Q26 & résolution numérique du système de la Q13 & schéma d'Euler explicite, choix du pas \\
+2.2 Milieux non uniformes & Q27 à Q36 & simulateur de rayon par dioptres successifs & réfraction, réflexion totale, programmation modulaire \\
+2.3 Loi de célérité & Q37 à Q44 & requêtes SQL, profil de Munk, dichotomie & jointures, agrégation, recherche d'un zéro \\
+2.4 Classification & Q45 à Q50 & \(k\) plus proches voisins, matrice de confusion & apprentissage supervisé, tri partiel, métriques \\
+\end{longtable}
+
+\textbf{Difficulté.} Le sujet est long mais rarement difficile. Les pièges sont plutôt de l'ordre de la rigueur : signe des forces (Q3), domaine de définition d'\texttt{asin} (Q30 à Q32), cohérence des conventions dans le simulateur (\texttt{direction}, angles comptés par rapport à la verticale ou à l'horizontale), lecture d'une matrice de confusion. L'énoncé contient une \textbf{incohérence de signatures} (Q33 et Q34 : l'argument \texttt{direction} est annoncé pour une fonction mais pas pour l'autre, et l'extrait de code ne le passe à aucune) : il faut la signaler et la trancher, comme le demande la première page.
+
+\textbf{Ce qu'a observé le jury en 2026.} Le sujet contenait de nombreuses questions simples, qui permettaient à un candidat moyen de valoriser son cours, et d'autres plus difficiles pour départager les meilleures copies. Certains candidats n'abordent presque pas la partie physique (ou, plus rarement, la partie informatique), « ce qui n'est jamais une bonne idée ». En informatique, les bases de Python sont maîtrisées. Les algorithmes classiques (Euler, dichotomie, distance euclidienne, tri) ne sont écrits sans erreur que par la moitié des candidats environ : les autres trébuchent sur la condition d'arrêt ou sur un test de signe. Le choix des paramètres numériques (pas d'Euler, tolérance de la dichotomie) est rarement justifié, et la partie sur l'intelligence artificielle est la moins bien maîtrisée.
+
+\textbf{Questions discriminantes.} D'après le rapport 2026, les questions mal traitées ou peu réussies sont Q11, Q12, Q14, Q21 et Q22 en physique, puis Q26, Q29, Q34, Q36, Q41, Q42, Q44, Q46 et Q48 à Q50 en informatique. La Q25 n'a que 60 \% de réussite.
+
+\textbf{Questions à ne pas laisser passer.} Q1, Q2, Q7, Q15, Q21 (cours direct, mais la Q21 a été très mal traitée en 2026) ; Q23, Q24, Q37 à Q40, Q45, Q47 (informatique de base) ; Q49 (simples calculs de proportions).
+
+\textbf{Gestion du temps.} Les trois sous-parties de la partie 1 sont indépendantes entre elles, de même que les blocs 2.1, 2.2, 2.3 et 2.4. Un ordre raisonnable : partie 1 en 1 h 30, puis 2.1, 2.3 et 2.4 (rapides), et enfin la partie 2.2, la plus longue à écrire proprement.
+
+\hypertarget{partie-1.1-pression-au-fond-des-ocuxe9ans}{%
+\section{Partie 1.1 --- Pression au fond des océans}\label{partie-1.1-pression-au-fond-des-ocuxe9ans}}
+
+On établit l'ordre de grandeur des efforts sur un capteur à 4 km de profondeur. Les outils : la relation fondamentale de la statique des fluides et un calcul de résultante par symétrie.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+C'est le résultat de cours de la statique des fluides : équilibre d'une particule de fluide soumise à son poids et aux forces de pression.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Pour un fluide au repos, de masse volumique uniforme \(\mu\), dans le champ de pesanteur uniforme \(\vec g\) :
+
+\equationajustee{\boxed{\overrightarrow{\mathrm{grad}}\,P = \mu\,\vec g}}
+
+\begin{jury}
+
+Rapport 2026 : « Trop peu de candidats donnent l'expression vectorielle attendue, beaucoup donnent directement une projection avec parfois des erreurs de signe. » On écrit la relation vectorielle ici, et on ne projette qu'à la question 2.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Projeter sur \(\vec e_z\) en faisant attention à son orientation, puis intégrer avec la condition à la surface.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Avec \(\vec e_z\) descendant, \(\vec g = g\,\vec e_z\). Les projections horizontales montrent que \(P\) ne dépend que de \(z\). La projection sur \(\vec e_z\) donne
+
+\equationajustee{\frac{\mathrm{d}P}{\mathrm{d}z} = \mu g.}
+
+Comme \(\mu\) et \(g\) sont uniformes, on intègre : \(P(z) = \mu g z + \text{cte}\). La condition \(P(0) = P_0\) à la surface fixe la constante :
+
+\equationajustee{\boxed{P(z) = P_0 + \mu g z}}
+
+\begin{piege}
+
+L'axe est \textbf{descendant} dans ce sujet : la pression croît avec \(z\), sans signe moins. Avec l'axe ascendant habituel, on écrirait \(P = P_0 - \mu g z\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 juge la question bien traitée, mais relève qu'il manque assez souvent des précisions dans la rédaction. On les donne toutes : fluide homogène et \(g\) uniforme, pression fonction de \(z\) seule, condition à la surface utilisée pour la constante.
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Sur une face horizontale, la pression est uniforme : la force est la pression multipliée par l'aire, dirigée selon la normale.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un fluide \textbf{pousse} toujours la paroi : la force est dirigée de l'eau vers le solide. Situer l'eau par rapport à chaque face.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+La force élémentaire est \(\mathrm{d}\vec f = -P\,\mathrm{d}S\,\vec n\), où \(\vec n\) est la normale sortante du cylindre. Sur une face, \(P\) est uniforme et la force vaut \(P S\), avec \(S = \pi R^2\).
+
+\begin{itemize}
+\tightlist
+\item
+  Face \(A\), à la cote \(H - L/2\) : l'eau est au-dessus, \(\vec n = -\vec e_z\), la face est poussée vers le bas.
+\item
+  Face \(B\), à la cote \(H + L/2\) : \(\vec n = +\vec e_z\), la face est poussée vers le haut.
+\end{itemize}
+
+\equationajustee{\boxed{\vec f_A = \Big[P_0 + \mu g\big(H - \tfrac{L}{2}\big)\Big]\pi R^2\,\vec e_z}}
+
+\equationajustee{\boxed{\vec f_B = -\Big[P_0 + \mu g\big(H + \tfrac{L}{2}\big)\Big]\pi R^2\,\vec e_z}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q03-q06-forces-capteur.pdf}
+\caption*{Figure 1 --- Forces pressantes sur le capteur : l'eau pousse chaque
+paroi vers l'intérieur, l'air intérieur vers l'extérieur ; il reste la
+poussée d'Archimède, vers le haut (flèches non à l'échelle)}
+\end{figure}
+
+\begin{methode}
+
+Force pressante sur une paroi : \(\mathrm{d}\vec f = -P\,\mathrm{d}S\,\vec n_{\text{sortant du solide}}\). Il faut toujours contrôler le sens obtenu sur un schéma.
+
+\end{methode}
+
+\begin{piege}
+
+Le rapport 2026 relève « des erreurs surprenantes comme \(f = \frac{p}{s}\) ». Une force pressante est un \textbf{produit} pression × surface. L'homogénéité le confirme : des pascals multipliés par des mètres carrés donnent des newtons.
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+\(L \ll H\) : la profondeur de la face \(A\) vaut pratiquement \(H\). Et \(P_0\) est-il significatif devant \(\mu g H\) ?
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Toutes les longueurs sont en mètres :
+
+\equationajustee{\begin{aligned}
+P(z_A) &= 10^5 + 10^3 \times 10 \times 3999{,}95\\
+&\approx 4{,}0 \times 10^7\ \mathrm{Pa}\\
+S &= \pi \times (2 \times 10^{-2})^2\\
+&\approx 1{,}3 \times 10^{-3}\ \mathrm{m^2}
+\end{aligned}}
+
+La pression atmosphérique \(P_0\) ne représente que 0,25 \% de \(P(z_A)\). On obtient :
+
+\equationajustee{\boxed{f_A = P(z_A)\,S \approx 5 \times 10^4\ \mathrm{N}}}
+
+La masse équivalente est \(m = f_A/g \approx 5 \times 10^3\) kg, soit \textbf{5 tonnes} sur un disque de 4 cm de diamètre.
+
+\begin{methode}
+
+Sans calculatrice, on arrondit tôt : \(\pi \times 4 \approx 12{,}6\), puis \(4 \times 1{,}26 \approx 5\). Un ou deux chiffres significatifs suffisent.
+
+\end{methode}
+
+\begin{piege}
+
+Le rapport 2026 note que l'application numérique « nécessitait des conversions d'unités qui ont été sources d'erreurs ». Il faut passer en mètres avant tout calcul (\(R = 2 \times 10^{-2}\) m, \(H = 4 \times 10^3\) m), et se souvenir qu'une tonne vaut \(10^3\) kg.
+
+\end{piege}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Sur la paroi latérale, la normale est horizontale et tourne avec l'angle polaire \(\varphi\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+À profondeur fixée, associer deux éléments de surface diamétralement opposés, ou intégrer \(\cos\varphi\) et \(\sin\varphi\) sur un tour.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+L'élément de paroi \((\varphi, z)\), de normale sortante \(\vec u_r(\varphi) = \cos\varphi\,\vec e_x + \sin\varphi\,\vec e_y\), subit \(\mathrm{d}\vec f = -P(z)\,\vec u_r\,R\,\mathrm{d}\varphi\,\mathrm{d}z\). Par conséquent
+
+\equationajustee{\begin{aligned}
+\vec f_C &= -R\int_{H-L/2}^{H+L/2} P(z)\left(\int_0^{2\pi}\vec u_r(\varphi)\,\mathrm{d}\varphi\right)\mathrm{d}z\\
+&= \vec 0,
+\end{aligned}}
+
+car les intégrales de \(\cos\varphi\) et de \(\sin\varphi\) sur un tour sont nulles. \textbf{La résultante latérale est nulle}, quelle que soit la loi \(P(z)\).
+
+\begin{jury}
+
+L'argument de symétrie a souvent été vu, mais le rapport 2026 précise que « les copies proposant une bonne rédaction ont été davantage récompensées ». Il faut nommer les deux éléments de surface appariés (diamétralement opposés, à la même profondeur, donc à la même pression) ou écrire l'intégrale.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Faire le bilan séparément pour l'eau (Q3 et Q5) et pour l'air intérieur, à pression uniforme.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que vaut la résultante des forces exercées par une pression \textbf{uniforme} sur une surface fermée ?
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\begin{itemize}
+\tightlist
+\item
+  Eau (\(P_0\) se simplifie) :
+\end{itemize}
+
+\equationajustee{\begin{aligned}
+\vec f_A + \vec f_B + \vec f_C &= [P(z_A) - P(z_B)]\,\pi R^2\,\vec e_z\\
+&= -\mu g L\,\pi R^2\,\vec e_z
+\end{aligned}}
+
+\begin{itemize}
+\tightlist
+\item
+  Air intérieur : il pousse \(A\) vers le haut (\(-P_0 S\,\vec e_z\)) et \(B\) vers le bas (\(+P_0 S\,\vec e_z\)), et sa contribution latérale est nulle. Sa résultante est nulle.
+\end{itemize}
+
+\equationajustee{\boxed{\vec F = -\mu\,(\pi R^2 L)\,g\,\vec e_z}}
+
+On reconnaît la \textbf{poussée d'Archimède} : une force verticale ascendante, égale au poids du volume d'eau déplacé. Elle vaut \(\approx 1{,}3\) N, une quantité minuscule devant les \(5 \times 10^4\) N qui s'exercent sur chaque face.
+
+\begin{piege}
+
+L'air intérieur ne change pas la résultante, puisqu'une pression uniforme a une résultante nulle sur une surface fermée. En revanche, il réduit énormément la \textbf{différence de pression} entre les deux côtés de chaque paroi : c'est elle qui dimensionne l'épaisseur du capteur, pas la poussée d'Archimède.
+
+\end{piege}
+
+\hypertarget{partie-1.2-communication-acoustique-sous-marine}{%
+\section{Partie 1.2 --- Communication acoustique sous-marine}\label{partie-1.2-communication-acoustique-sous-marine}}
+
+On transpose l'optique géométrique aux ondes sonores. Dans un milieu stratifié, l'invariant de Snell-Descartes conduit à une équation différentielle de la trajectoire, que la partie 2 résoudra numériquement.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Comparer avec les deux lois de l'optique écrites avec les indices \(n_1\) et \(n_2\). Quel est ici l'équivalent de l'indice ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\(\theta_r = -\theta_i\) est l'analogue de la \textbf{loi de la réflexion} de Snell-Descartes, et \(\dfrac{\sin\theta_i}{c_1} = \dfrac{\sin\theta_t}{c_2}\) celui de la \textbf{loi de la réfraction} de Snell-Descartes, \(n_1\sin\theta_i = n_2\sin\theta_t\). L'indice est ici \(n = c_0/c\), inversement proportionnel à la célérité.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Dessiner deux dioptres horizontaux successifs et le segment de rayon qui les relie. Où sont les normales ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux droites parallèles coupées par une sécante : quels angles sont égaux ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q08-q10-dioptres-successifs.pdf}
+\caption*{Figure 2 --- Deux dioptres successifs : normales parallèles, donc θt(z)
+= θi(z + dz) ; le triangle I₁HI₂ donne sin θ = dx/ds (angles exagérés)}
+\end{figure}
+
+Entre les deux dioptres, le rayon est rectiligne. Les normales en \(I_1\) et en \(I_2\) sont verticales, donc parallèles, et le segment \(I_1I_2\) fait avec elles des angles alternes-internes égaux : \(\theta_t(z) = \theta_i(z + \mathrm{d}z)\). \textbf{L'angle de transmission sur un dioptre est l'angle d'incidence sur le suivant.}
+
+\begin{jury}
+
+Le schéma est le plus souvent correct, mais, selon le rapport 2026, « les angles ne sont pas toujours bien indiqués ». On trace les deux normales et on nomme explicitement \(\theta_t(z)\) et \(\theta_i(z + \mathrm{d}z)\).
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Écrire la loi de la réfraction au dioptre \(z\) en utilisant la question 8 pour renommer les angles.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+On note \(\theta(z)\) l'angle avec la verticale dans la couche de célérité \(c(z)\), juste sous le dioptre \(z\). D'après la question 8, c'est aussi l'angle d'incidence sur le dioptre suivant. La loi de la réfraction sur ce dioptre s'écrit
+
+\equationajustee{\frac{\sin\theta(z)}{c(z)} = \frac{\sin\theta(z + \mathrm{d}z)}{c(z + \mathrm{d}z)},}
+
+c'est-à-dire \(A(z) = A(z + \mathrm{d}z)\). De proche en proche (récurrence sur les couches successives), \(A\) garde la même valeur sur tout le trajet. En \(z = 0^+\) :
+
+\equationajustee{\boxed{A = \frac{\sin\theta(z)}{c(z)} = \frac{\sin\theta_0}{c_0}}}
+
+\begin{methode}
+
+Dans un milieu stratifié, \(n(z)\sin\theta(z)\) est un \textbf{invariant} du rayon. C'est l'outil universel pour le mirage, la fibre à gradient d'indice ou le canal SOFAR.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 constate que l'idée « est souvent là mais rarement bien rédigée ». Mentionner explicitement une récurrence, ou un raisonnement de proche en proche d'une couche à la suivante, était bienvenu.
+
+\end{jury}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Triangle rectangle élémentaire de côtés \(\mathrm{d}x\) et \(\mathrm{d}z\) ; \(\theta\) est mesuré \textbf{depuis la verticale}.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\equationajustee{\boxed{\sin\theta(z) = \frac{\mathrm{d}x}{\sqrt{\mathrm{d}x^2 + \mathrm{d}z^2}}}}
+
+ce qui équivaut à \(\tan\theta = \dfrac{\mathrm{d}x}{\mathrm{d}z}\).
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Exprimer \(\sin\theta(z)\) à l'aide de \(n(z)\) grâce à la question 9.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculer \(1/\sin^2\theta\) à partir de la question 10.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Les questions 9 et 10 donnent respectivement :
+
+\equationajustee{\begin{aligned}
+\sin\theta &= \frac{\sin\theta_0\,c}{c_0}\\
+&= \frac{\sin\theta_0}{n}\\
+\frac{1}{\sin^2\theta} &= 1 + \left(\frac{\mathrm{d}z}{\mathrm{d}x}\right)^2
+\end{aligned}}
+
+On reporte la première dans la seconde :
+
+\equationajustee{\boxed{\left(\frac{\mathrm{d}z}{\mathrm{d}x}\right)^2 = \frac{n^2(z)}{\sin^2\theta_0} - 1}}
+
+\begin{jury}
+
+Question discriminante : d'après le rapport 2026, « assez peu arrivent à la formule correcte ». La Q12, qui en dépend, a été « assez peu abordée ». Il faut repartir proprement des résultats des questions 9 et 10.
+
+\end{jury}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Dériver par rapport à \(x\) : le membre de droite dépend de \(x\) à travers \(z(x)\).
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\equationajustee{2\,z'\,z'' = \frac{1}{\sin^2\theta_0}\,\frac{\mathrm{d}(n^2)}{\mathrm{d}z}\,z'.}
+
+Là où \(z' \neq 0\), on simplifie par \(2z'\). Aux points isolés où le rayon est horizontal (sommets de la trajectoire), le résultat s'étend par continuité des deux membres :
+
+\equationajustee{\boxed{\frac{{\mathrm{d}}^2 z}{\mathrm{d}x^2} = \frac{1}{2\sin^2\theta_0}\,\frac{\mathrm{d}}{\mathrm{d}z}(n^2)}}
+
+\begin{piege}
+
+Au sommet d'une trajectoire, \(z' = 0\) mais \(z'' \neq 0\) : c'est là que le rayon se retourne. Diviser par \(z'\) sans le justifier, ou prétendre que « tout s'annule » en ce point, est faux.
+
+\end{piege}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Calculer \(\mathrm{d}(n^2)/\mathrm{d}z\), puis poser une nouvelle inconnue pour abaisser l'ordre.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Avec \(n^2 = 1 - \beta z^2\), l'équation de la question 12 devient :
+
+\equationajustee{\begin{aligned}
+\frac{\mathrm{d}(n^2)}{\mathrm{d}z} &= -2\beta z\\
+z'' &= -\frac{\beta}{\sin^2\theta_0}\,z
+\end{aligned}}
+
+On pose \(\alpha = z'\), de sorte que \(\alpha' = z''\) :
+
+\equationajustee{\boxed{\left\{\begin{aligned}\frac{\mathrm{d}z}{\mathrm{d}x} &= \alpha(x)\\ \frac{\mathrm{d}\alpha}{\mathrm{d}x} &= -\frac{\beta}{\sin^2\theta_0}\,z(x)\end{aligned}\right.}}
+
+C'est un oscillateur harmonique en \(x\) : le rayon ondule autour de \(z = 0\), où l'indice est maximal.
+
+\begin{methode}
+
+Toute équation d'ordre 2 se ramène à un système d'ordre 1 en prenant la dérivée comme nouvelle inconnue. C'est le préalable à Euler ou à \texttt{odeint}.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 demande de faire « attention à expliquer un minimum les calculs effectués » : la dérivée de \(n^2\) et le changement d'inconnue doivent apparaître.
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+\(\alpha = \mathrm{d}z/\mathrm{d}x\) : relire la question 10 avec l'angle mesuré depuis l'horizontale.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\(\alpha = \dfrac{\mathrm{d}z}{\mathrm{d}x} = \dfrac{1}{\tan\theta}\) est la \textbf{pente du rayon} : c'est la tangente de l'angle \(\dfrac{\pi}{2} - \theta\) que fait le rayon avec l'horizontale, positive quand le rayon descend.
+
+\begin{jury}
+
+Rapport 2026 : « L'interprétation géométrique demandée est souvent imprécise et / ou fausse. » Il faut dire de quel angle il s'agit (avec l'horizontale, et non avec la verticale) et que \(\alpha\) en est la tangente, pas l'angle lui-même.
+
+\end{jury}
+
+\hypertarget{partie-1.3-communication-par-ondes-radio}{%
+\section{Partie 1.3 --- Communication par ondes radio}\label{partie-1.3-communication-par-ondes-radio}}
+
+On montre que l'eau de mer, conductrice, absorbe les ondes radio sur une épaisseur de l'ordre du mètre (effet de peau). Les outils : équations de Maxwell, notation complexe, relation de dispersion.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Question de cours.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\equationajustee{\boxed{\vec j = \gamma\,\vec E}}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+En régime sinusoïdal, dériver par rapport au temps revient à multiplier l'amplitude par \(\omega\). Comparer les deux termes de Maxwell-Ampère.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+En norme, le courant de déplacement vaut \(\epsilon\omega E\) et le courant de conduction \(\gamma E\). Leur rapport vaut \(\epsilon\omega/\gamma\), et le courant de déplacement est négligeable si \(\omega \ll \omega_c\), avec
+
+\equationajustee{\boxed{\omega_c = \frac{\gamma}{\epsilon}}}
+
+Application numérique :
+
+\equationajustee{\begin{aligned}
+\omega_c &= \frac{4}{8 \times 10^{-10}}\\
+&= 5 \times 10^9\ \mathrm{rad\,s^{-1}}
+\end{aligned}}
+
+soit \(f \ll 8 \times 10^8\) Hz. C'est largement vérifié pour 10 à 100 kHz.
+
+\begin{jury}
+
+D'après le rapport 2026, les réponses correctes ne vont pas toujours jusqu'à l'application numérique demandée, et d'autres mélangent « aléatoirement les lois de l'électromagnétisme ». Il suffit de comparer les deux termes de Maxwell-Ampère, puis de donner \(\omega_c\) et de le comparer aux fréquences étudiées.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Prendre le rotationnel de Maxwell-Faraday et utiliser Maxwell-Ampère simplifiée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Formule du double rotationnel, et Maxwell-Gauss avec \(\rho = 0\).
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Maxwell-Faraday, puis Maxwell-Ampère simplifiée (\(\overrightarrow{\mathrm{rot}}\,\vec B = \mu_0\gamma\,\vec E\)), donnent :
+
+\equationajustee{\begin{aligned}
+\overrightarrow{\mathrm{rot}}\big(\overrightarrow{\mathrm{rot}}\,\vec E\big) &= -\frac{\partial}{\partial t}\overrightarrow{\mathrm{rot}}\,\vec B\\
+&= -\mu_0\gamma\,\frac{\partial\vec E}{\partial t}
+\end{aligned}}
+
+La formule du double rotationnel et Maxwell-Gauss (\(\mathrm{div}\,\vec E = \rho/\epsilon = 0\)) donnent par ailleurs :
+
+\equationajustee{\begin{aligned}
+\overrightarrow{\mathrm{rot}}\big(\overrightarrow{\mathrm{rot}}\,\vec E\big) &= \overrightarrow{\mathrm{grad}}(\mathrm{div}\,\vec E) - \Delta\vec E\\
+&= -\Delta\vec E
+\end{aligned}}
+
+On obtient
+
+\equationajustee{\boxed{\Delta\vec E - \mu_0\gamma\,\frac{\partial\vec E}{\partial t} = \vec 0}}
+
+C'est une équation de \textbf{diffusion} (une dérivée temporelle d'ordre 1), et non une équation de d'Alembert.
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+En notation complexe, \(\Delta \to -\underline k^2\) et \(\partial_t \to i\omega\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour extraire la racine carrée de \(-i\), écrire \(-i = e^{-i\pi/2}\).
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+L'équation de la question 17, valable pour tout \((z, t)\) avec \(E_0 \neq 0\), donne la relation de dispersion
+
+\equationajustee{\underline k^2 = -i\mu_0\gamma\omega.}
+
+Comme \(-i = \left(\dfrac{1-i}{\sqrt 2}\right)^2\), elle a exactement deux solutions, opposées :
+
+\equationajustee{\boxed{\underline k = \pm(1-i)\sqrt{\frac{\mu_0\gamma\omega}{2}}}}
+
+\begin{jury}
+
+Le rapport 2026 note que la relation de dispersion est souvent obtenue, mais que la formulation des solutions manque généralement de rigueur. On donne les deux racines, et on ne choisit entre elles qu'à la question 19, par un argument physique.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Séparer partie réelle et partie imaginaire de \(-i\underline k z\). Laquelle des deux racines reste bornée quand \(z \to +\infty\) ?
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+On pose \(\delta = \sqrt{2/(\mu_0\gamma\omega)}\). Pour \(\underline k = (1-i)/\delta\) :
+
+\equationajustee{e^{-i\underline k z} = e^{-iz/\delta}\,e^{-z/\delta},}
+
+d'où \(\underline{\vec E} = E_0\,e^{i(\omega t - z/\delta)}\,e^{-z/\delta}\,\vec e_x\). L'autre racine donne une amplitude qui diverge quand \(z \to +\infty\) : on l'exclut.
+
+\equationajustee{\boxed{\delta = \sqrt{\frac{2}{\mu_0\gamma\omega}}}}
+
+Pour \(f = 100\) kHz, \(\omega \approx 6{,}3 \times 10^5\ \mathrm{rad\,s^{-1}}\) :
+
+\equationajustee{\begin{aligned}
+\delta &\approx \sqrt{\frac{2}{10^{-6} \times 4 \times 6{,}3 \times 10^5}}\\
+&\approx 0{,}9\ \mathrm{m}
+\end{aligned}}
+
+\begin{methode}
+
+\(\delta\) est l'\textbf{épaisseur de peau} : elle décroît comme \(1/\sqrt{\omega}\), si bien que les très basses fréquences pénètrent mieux. C'est pourquoi les sous-marins sont contactés en VLF ou ELF, avec un débit très faible.
+
+\end{methode}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Le facteur d'atténuation est \(e^{-L/\delta}\). Pour en donner un ordre de grandeur, passer en puissance de 10 (\(\ln 10 \approx 2{,}3\)).
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\equationajustee{\boxed{\begin{aligned}
+\frac{E(L)}{E_0} &= e^{-L/\delta}\\
+&\approx e^{-1100}\\
+&\approx 10^{-480}
+\end{aligned}}}
+
+L'atténuation est totale : \textbf{la radio est inutilisable pour joindre un sous-marin à 1 km de profondeur.}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Convertir en longueur d'onde dans le vide.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\equationajustee{\begin{aligned}
+\lambda &= \frac{c}{f}\\
+&= \frac{3 \times 10^8}{5 \times 10^{14}}\\
+&= 6 \times 10^{-7}\ \mathrm{m}
+\end{aligned}}
+
+Soit 600 nm, entre 400 et 800 nm : \textbf{domaine visible}.
+
+\begin{piege}
+
+Question « globalement très mal traitée » selon le rapport 2026 : les domaines gamma, X, UV, IR et radio ont tous été cités, plus souvent que le visible attendu, « sans parler des ondes sonores\ldots{} ». À retenir : le visible s'étend d'environ \(4 \times 10^{14}\) à \(7{,}5 \times 10^{14}\) Hz, et une onde sonore n'est pas une onde électromagnétique.
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Que voit un plongeur, ou un sous-marin, à quelques centaines de mètres de profondeur ?
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Les grands fonds sont \textbf{dans le noir} : la lumière solaire est absorbée et diffusée par l'eau et ne dépasse pas quelques centaines de mètres (zone aphotique). Une onde visible ne traverse donc pas 1 km d'eau.
+
+\begin{jury}
+
+L'observation attendue est le fait qu'il fasse sombre sous l'eau, signe que les ondes visibles y sont fortement atténuées. Le rapport 2026 regrette « De trop nombreuses réponses vagues qui n'apportent rien ».
+
+\end{jury}
+
+\begin{piege}
+
+Le texte vient de dire que le modèle ohmique ne vaut plus à ces fréquences : il ne faut pas appliquer la formule de \(\delta\) à \(5 \times 10^{14}\) Hz.
+
+\end{piege}
+
+\hypertarget{partie-2.1-ruxe9solution-de-luxe9quation-diffuxe9rentielle-par-euler}{%
+\section{Partie 2.1 --- Résolution de l'équation différentielle par Euler}\label{partie-2.1-ruxe9solution-de-luxe9quation-diffuxe9rentielle-par-euler}}
+
+On résout numériquement le système de la question 13, écrit \(z' = \alpha\), \(\alpha' = -Az\).
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Euler explicite : la valeur suivante est la valeur courante plus le pas multiplié par la dérivée \textbf{évaluée au point courant}.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\equationajustee{\boxed{\begin{aligned}
+x_{n+1} &= x_n + \mathrm{d}x\\
+z_{n+1} &= z_n + a_n\,\mathrm{d}x\\
+a_{n+1} &= a_n - A\,z_n\,\mathrm{d}x
+\end{aligned}}}
+
+\begin{piege}
+
+Calculer \(a_{n+1}\) avec \(z_{n+1}\) déjà mis à jour donne un autre schéma, Euler symplectique, qui n'est pas celui demandé. D'où l'affectation simultanée \texttt{x,\ z,\ a\ =\ ...} dans le code.
+
+\end{piege}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+La boucle tourne tant que l'abscisse courante n'a pas atteint \texttt{xf}. Les trois nouvelles valeurs se calculent à partir des anciennes uniquement.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\begin{lstlisting}[language=Python]
+def rayon_Euler(x0, xf, dx, z0, a0, A):
+    # Initialisation des listes
+    valeurs_x = [x0]
+    valeurs_z = [z0]
+    valeurs_a = [a0]
+    x, z, a = x0, z0, a0  # Valeurs courantes des variables
+    # Schéma d'Euler explicite
+    while x < xf:
+        x_nouveau = x + dx          # Calcul de x{n+1}
+        z_nouveau = z + a * dx      # Calcul de z{n+1}
+        a_nouveau = a - A * z * dx  # Calcul de alpha{n+1}
+        # Ajout des nouveaux éléments
+        valeurs_x.append(x_nouveau)
+        valeurs_z.append(z_nouveau)
+        valeurs_a.append(a_nouveau)
+        # Actualisation des variables
+        x, z, a = x_nouveau, z_nouveau, a_nouveau
+    return valeurs_x, valeurs_z
+\end{lstlisting}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Revenir à l'interprétation de \(\alpha\) établie à la question 14.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\texttt{a0} représente l'\textbf{angle initial du rayon sonore}, son angle d'émission par rapport à l'horizontale (positif vers le fond). Plus précisément, \texttt{a0} \(= \alpha(x_0)\) est la pente initiale du rayon, donc la tangente de cet angle. Pour un rayon peu incliné, elle se confond avec l'angle en radians.
+
+\begin{jury}
+
+Rapport 2026 : « Il fallait avoir identifié \(a_0\) comme l'angle initial du rayon sonore. » La question n'a obtenu que 60 \% de réussite, alors qu'elle découle directement de la Q14.
+
+\end{jury}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Quelle est la longueur caractéristique de la trajectoire sur la figure 3 ? Le pas doit lui être très inférieur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que devient l'amplitude d'un oscillateur harmonique intégré par Euler explicite ? Calculer le module de la matrice d'itération.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Le pas doit être petit devant l'échelle de variation de la trajectoire, pour en suivre les ondulations, sans multiplier inutilement le nombre de pas. Sur la figure 3, la période spatiale est \(\Lambda \approx 50\) km.
+
+Euler explicite amplifie de plus l'oscillation : l'amplitude est multipliée par \(\sqrt{1 + A\,\mathrm{d}x^2}\) à chaque pas, avec \(A = (2\pi/\Lambda)^2 \approx 1{,}6 \times 10^{-8}\ \mathrm{m^{-2}}\). Sur 90 km, le facteur cumulé vaut environ
+
+\equationajustee{e^{A\,\mathrm{d}x\,(x_f - x_0)/2}.}
+
+Il vaut 1,007 pour 10 m, 1,07 pour 100 m et 2 pour 1000 m.
+
+\textbf{On propose \(\mathrm{d}x \approx 10\) m} : 9000 pas pour 90 km, et une dérive de l'amplitude inférieure à 1 \%. Un pas de 100 m reste acceptable (dérive d'environ 7 \%).
+
+\begin{methode}
+
+Le choix d'un pas répond à deux critères : la \textbf{précision} (pas petit devant l'échelle de variation) et le \textbf{coût} (nombre de pas). Il faut toujours donner un chiffre justifié par une échelle lue sur l'énoncé.
+
+\end{methode}
+
+\begin{jury}
+
+Question mal traitée en 2026. Le jury attendait une discussion du pas, entre 10 et 1000 m, « afin que la discrétisation capture correctement les variations de la trajectoire, sans engendrer un temps de calcul excessif », en s'appuyant sur les simulations de rayons. Le calcul de dérive ci-dessus montre qu'il vaut mieux rester dans le bas de cette fourchette.
+
+\end{jury}
+
+\hypertarget{partie-2.2-propagation-dans-un-milieu-non-uniforme}{%
+\section{Partie 2.2 --- Propagation dans un milieu non uniforme}\label{partie-2.2-propagation-dans-un-milieu-non-uniforme}}
+
+On construit un simulateur discret : l'océan est découpé en couches d'épaisseur \(h\), et à chaque dioptre le rayon est réfracté ou totalement réfléchi. L'énoncé fixe les noms des fonctions, mais il faut fixer soi-même les conventions et s'y tenir : \texttt{direction} vaut \(+1\) si le rayon descend et \(-1\) s'il remonte ; \texttt{theta1} et \texttt{theta2} sont mesurés depuis la verticale.
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+La direction ne doit changer que si le rayon descend vers le fond ou remonte vers la surface. Tester le prochain dioptre, pas seulement le dernier.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\begin{lstlisting}[language=Python]
+def conditions_limites(z_I, h, direction):
+    if direction == 1 and z_I + h > 5000:     # le fond marin réfléchit
+        direction = -1
+    elif direction == -1 and z_I - h < 0:     # la surface réfléchit
+        direction = 1
+    return direction
+\end{lstlisting}
+
+\begin{piege}
+
+Un \texttt{if} suivi d'un second \texttt{if} indépendant pourrait inverser deux fois la direction si \(h\) était grand devant la hauteur d'eau. Le \texttt{elif} rend les deux cas exclusifs.
+
+\end{piege}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Le rayon vient du côté opposé à \texttt{direction}. L'énoncé suggère d'évaluer \texttt{celerite} au milieu de chaque couche, en \(z \pm h/2\).
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\begin{lstlisting}[language=Python]
+def calculer_celerite(z, h, direction):
+    c1 = celerite(z - direction * h / 2)   # couche d'où vient le rayon
+    c2 = celerite(z + direction * h / 2)   # couche dans laquelle il entrerait
+    return c1, c2
+\end{lstlisting}
+
+\begin{piege}
+
+Le rapport 2026 insiste sur le sens de propagation : il ne faut pas inverser \texttt{c1} et \texttt{c2} selon que le rayon monte ou descend. Multiplier le décalage \(h/2\) par \texttt{direction} traite les deux cas d'un coup, sans écrire deux branches symétriques dont l'une serait fausse.
+
+\end{piege}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Le segment \(IB\) traverse une couche d'épaisseur \(h\) : faire de la trigonométrie dans le triangle rectangle correspondant.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Seule la valeur de \(\theta_2\) diffère entre les deux cas. Pour la réfraction, exprimer \(\tan\theta_2\) à partir de \(\sin\theta_2\).
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Dans les deux cas, le segment \(IB\) traverse une couche d'épaisseur \(h\). Dans le triangle rectangle de côtés \(h\) (vertical) et \(L_2\) (horizontal), l'angle en \(I\) avec la verticale est \(\theta_2\) :
+
+\equationajustee{L_2 = h\tan\theta_2 .}
+
+\begin{itemize}
+\tightlist
+\item
+  Réfraction : \(\sin\theta_2 = \dfrac{c_2}{c_1}\sin\theta_1\), donc
+  \equationajustee{\boxed{L_2 = \frac{h\,c_2\sin\theta_1}{\sqrt{c_1^2 - c_2^2\sin^2\theta_1}}}}
+\item
+  Réflexion totale : \(\theta_2 = \theta_1\), et \(B\) revient dans la couche de départ :
+  \equationajustee{\boxed{L_2 = h\tan\theta_1}}
+\end{itemize}
+
+\begin{jury}
+
+Question mal traitée en 2026 : « Trop peu de candidats parviennent à exprimer simplement la longueur \(L_2\) en fonction de \(h\), \(c_1\), \(c_2\) et \(\theta_1\), en particulier dans le cas de la réfraction. » Il suffit d'enchaîner la trigonométrie du triangle rectangle et la loi de Snell-Descartes.
+
+\end{jury}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Un sinus ne peut pas dépasser 1. Écrire la condition pour que l'équation \(\sin\theta_t = \frac{c_2}{c_1}\sin\theta_i\) ait une solution.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Distinguer les cas selon le signe de \(c_2 - c_1\) : dans l'un d'eux, la condition est toujours vraie.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+L'angle transmis doit vérifier \(\sin\theta_t = \frac{c_2}{c_1}\sin\theta_i\). Il existe si et seulement si \(\sin\theta_i \le c_1/c_2\).
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(c_2 \le c_1\) (le rayon va vers un milieu plus lent), c'est toujours vrai : il y a toujours transmission.
+\item
+  Si \(c_2 > c_1\), on a \(c_1/c_2 < 1\). Le sinus étant strictement croissant sur \([0, \pi/2]\), la condition s'écrit \(\theta_i \le \arcsin(c_1/c_2)\). L'égalité donne un rayon rasant, limite de la réflexion totale.
+\end{itemize}
+
+D'où l'existence d'un rayon transmis si et seulement si
+
+\equationajustee{\boxed{\theta_i < \theta_c = \arcsin\left(\frac{c_1}{c_2}\right)\qquad (c_2 > c_1)}}
+
+Si \(c_2 \le c_1\), on peut convenir que \(\theta_c = \pi/2\).
+
+\begin{piege}
+
+La réflexion totale n'existe qu'en allant vers un milieu \textbf{plus rapide} (moins réfringent). C'est exactement l'inverse de l'intuition « le milieu plus lent bloque ». Il faut vérifier ce point sur l'optique : la réflexion totale a lieu du verre vers l'air, pas l'inverse.
+
+\end{piege}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+\texttt{asin(c1/c2)} n'est défini que si \(c_1 \le c_2\). Que renvoyer dans l'autre cas, pour que la condition de la question suivante reste simple ?
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\begin{lstlisting}[language=Python]
+def angle_critique(c1, c2):
+    if c1 >= c2:          # pas de réflexion totale possible
+        return pi / 2
+    return asin(c1 / c2)
+\end{lstlisting}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Traduire la question 30 avec la fonction de la question 31.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\begin{lstlisting}[language=Python]
+theta1 < angle_critique(c1, c2)
+\end{lstlisting}
+
+Avec la convention \(\theta_c = \pi/2\) quand \(c_1 \ge c_2\), cette seule comparaison couvre les deux cas, sans appel hors domaine.
+
+\begin{piege}
+
+Écrire \texttt{(\allowbreak{}c1\ \textless{}=\allowbreak{}\ c2)\allowbreak{}\ or\ theta1\ \textless{}\ asin(\allowbreak{}c1/\allowbreak{}c2)\allowbreak{}} inverse les cas. Quand \(c_1 > c_2\), \texttt{asin(c1/c2)} lève \texttt{ValueError}. Quand \(c_1 \le c_2\), on force une réfraction impossible, et \texttt{asin} de la fonction \texttt{refraction} plante à son tour. Il faut tester sa condition sur les deux cas, \(c_1 < c_2\) puis \(c_1 > c_2\), avant de la recopier dans la synthèse.
+
+\end{piege}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Où se trouve \(B\) par rapport à \(I\), en profondeur, selon le sens de propagation ? Quelle information faut-il pour le savoir ?
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+La question demande l'argument \texttt{direction} mais l'extrait de code ne le passe pas. Il est indispensable pour calculer \(z_B\) : on le garde en dernier argument et on le signale.
+
+\begin{lstlisting}[language=Python]
+def refraction(x_I, z_I, theta1, h, c1, c2, direction):
+    theta2 = asin(c2 / c1 * sin(theta1))
+    x_B = x_I + h * tan(theta2)
+    z_B = z_I + direction * h        # B dans la couche suivante
+    return theta2, x_B, z_B
+\end{lstlisting}
+
+\begin{jury}
+
+Le rapport 2026 attendait que l'on reprenne l'expression de \(L_2\) pour calculer \(x_B\) et \(z_B\), en tenant compte du sens de propagation via \texttt{direction}. Et la première page de l'épreuve demande de signaler toute erreur d'énoncé en expliquant l'initiative prise : une phrase claire, suivie d'une fonction cohérente, vaut mieux qu'un code qui suit à la lettre une signature impossible.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Même question qu'en 33 : sans le sens de propagation, peut-on savoir si \(B\) est au-dessus ou au-dessous de \(I\) ?
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+On ajoute \texttt{direction}, en signalant l'incohérence de l'énoncé. L'inversion de \texttt{direction} elle-même est faite dans le BLOC2 (question 35).
+
+\begin{lstlisting}[language=Python]
+def reflexion_totale(x_I, z_I, theta1, hauteur_couche, direction):
+    theta2 = theta1                                   # loi de la réflexion
+    x_B = x_I + hauteur_couche * tan(theta2)
+    z_B = z_I - direction * hauteur_couche            # retour dans la couche de départ
+    return theta2, x_B, z_B
+\end{lstlisting}
+
+\begin{jury}
+
+Le rapport 2026 reconnaît l'incohérence : « Le sujet évoque le changement de direction en cas de réflexion totale, mais la variable direction est absente des arguments de la fonction. » La question a été mal traitée ; quelques candidats seulement ont pensé à mettre à jour \texttt{direction}.
+
+\end{jury}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Après une réflexion totale, le rayon change de sens. Qui doit mettre à jour \texttt{direction}, et à quel moment ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifier que \texttt{z\ +\ direction*h} redonne bien \(z_B\) dans les deux branches, une fois \texttt{direction} mise à jour.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\begin{lstlisting}[language=Python]
+# BLOC2
+if not (theta1 < angle_critique(c1, c2)):   # il y a eu réflexion totale
+    direction = -direction
+valeurs_x.append(x_B)
+valeurs_z.append(z_B)
+x_I = x_B
+z = z + direction * h        # vaut z_B dans les deux cas
+z_I = z
+theta1 = theta2
+direction = conditions_limites(z, h, direction)
+\end{lstlisting}
+
+Après une réflexion, \texttt{z\ +\ direction*h} \(= z_I - \text{direction}_{\text{avant}}\,h = z_B\). Après une réfraction, on a directement \(z_I + \text{direction}\,h = z_B\).
+
+\begin{piege}
+
+Oublier d'inverser \texttt{direction} après une réflexion totale (ou oublier \texttt{theta1\ =\ theta2}) ne provoque pas d'erreur Python, mais le rayon suivant est calculé du mauvais côté du dioptre. Le bug ne se voit que sur un tracé.
+
+\end{piege}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Initialiser la liste avec le point d'émission, convertir l'angle d'émission (compté depuis l'horizontale) en angle depuis la verticale, et en déduire la direction initiale à partir de son signe.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La boucle reprend l'extrait de l'énoncé (célérités, CONDITION\_1, réfraction ou réflexion), puis le BLOC2. La condition d'arrêt porte sur l'abscisse.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+Convention : \texttt{angle\_emission} est compté depuis l'horizontale, positivement vers le fond, et supposé non nul ; \texttt{y\_emission} est la profondeur d'émission.
+
+\begin{lstlisting}[language=Python]
+def trajet_rayon(x_emission, y_emission, angle_emission, h, distance_x_max):
+    rayon = [(x_emission, y_emission)]          # initialisation de la liste
+    x_I, z = x_emission, y_emission             # z : profondeur du dioptre courant
+    if angle_emission > 0:
+        direction = 1                           # le rayon descend
+        theta1 = pi / 2 - angle_emission        # angle par rapport à la verticale
+    else:
+        direction = -1                          # le rayon remonte
+        theta1 = pi / 2 + angle_emission
+    direction = conditions_limites(z, h, direction)
+    while x_I < x_emission + distance_x_max:
+        c1, c2 = calculer_celerite(z, h, direction)
+        if theta1 < angle_critique(c1, c2):     # CONDITION_1
+            theta2, x_B, z_B = refraction(x_I, z, theta1, h, c1, c2, direction)
+        else:
+            theta2, x_B, z_B = reflexion_totale(x_I, z, theta1, h, direction)
+            direction = -direction
+        rayon.append((x_B, z_B))
+        x_I = x_B
+        z = z + direction * h                   # vaut z_B dans les deux cas
+        theta1 = theta2
+        direction = conditions_limites(z, h, direction)
+    return rayon
+\end{lstlisting}
+
+Contrôle avec \texttt{celerite\ =\ munk} et \(h = 10\) m : émis à 1500 m sous \(0{,}05\) rad, le rayon reste entre 920 et 1770 m. Ce sont exactement les profondeurs où \(c(z) = c(1500)/\cos(0{,}05)\), comme le prévoit l'invariant de la question 9. Émis à 3000 m, il oscille entre 350 et 3110 m, comme sur la figure 7.
+
+\begin{methode}
+
+Pour valider un simulateur, on le confronte à un \textbf{invariant connu} (ici \(\sin\theta/c\)) ou à un cas limite (réflexions en surface et au fond pour un angle fort, comme sur la figure 4). Annoncer un test sans l'avoir fait est pire que de ne rien annoncer.
+
+\end{methode}
+
+\begin{jury}
+
+« Question très peu traitée » en 2026. Les points d'attention du jury étaient l'initialisation des variables utiles au calcul du rayon et la boucle conditionnelle qui appelle les fonctions des questions précédentes.
+
+\end{jury}
+
+\hypertarget{partie-2.3-choix-dune-loi-duxe9volution-de-la-cuxe9luxe9rituxe9}{%
+\section{Partie 2.3 --- Choix d'une loi d'évolution de la célérité}\label{partie-2.3-choix-dune-loi-duxe9volution-de-la-cuxe9luxe9rituxe9}}
+
+Deux blocs indépendants : des requêtes SQL sur trois tables, puis l'étude du profil de Munk (dérivée, dichotomie, interprétation physique).
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Le nom de la région n'est pas dans \texttt{mesures} : il faut une jointure sur la clé étrangère.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\begin{lstlisting}[language=SQL]
+SELECT m.profondeur, m.temperature, m.salinite
+FROM mesures AS m
+JOIN regions AS r ON m.id_region = r.id_region
+WHERE r.region = 'Region1' AND m.date = '2025-04-17';
+\end{lstlisting}
+
+(La date est supposée stockée au format ISO.)
+
+\begin{piege}
+
+Écrire \texttt{WHERE\ id\_region\ =\allowbreak{}\ 1} suppose connu un identifiant que l'énoncé ne donne pas. Le filtre doit porter sur le nom.
+
+\end{piege}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Deux jointures (région et période), puis une fonction d'agrégation.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*) AS nb_mesures
+FROM mesures AS m
+JOIN regions AS r ON m.id_region = r.id_region
+JOIN periodes AS p ON m.id_periode = p.id_periode
+WHERE r.region = 'Region2' AND p.periode = 'Été';
+\end{lstlisting}
+
+\begin{piege}
+
+Une chaîne SQL est comparée caractère par caractère : \texttt{\textquotesingle{}Ete\textquotesingle{}} ne trouve pas \texttt{\textquotesingle{}Été\textquotesingle{}}. Il faut recopier la valeur exactement comme l'énoncé l'écrit.
+
+\end{piege}
+
+\begin{jury}
+
+Les deux requêtes SQL sont bien traitées dans l'ensemble, « même si certaines rédactions restent confuses » (rapport 2026). Une jointure explicite par \texttt{JOIN\ …\ ON}, des alias courts et un filtre par ligne rendent la requête lisible.
+
+\end{jury}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Traduction directe de la formule. Calculer d'abord \(\bar z\) dans une variable locale, et importer \texttt{exp}.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\begin{lstlisting}[language=Python]
+from math import exp
+
+def munk(z):
+    zb = 2 * (z - 1300) / 1300
+    return 1500 * (1 + 0.00737 * (zb - 1 + exp(-zb)))
+\end{lstlisting}
+
+On vérifie que \texttt{munk(1300)} \(= 1500\) m/s (minimum) et \texttt{munk(0)} \(\approx 1548{,}5\) m/s.
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+\(\bar z\) est une fonction affine de \(z\) : dériver la fonction composée.
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\equationajustee{\boxed{\frac{\mathrm{d}c}{\mathrm{d}z} = \frac{1500 \times 0{,}00737 \times 2}{1300}\left(1 - e^{-\bar z}\right) \approx 1{,}7 \times 10^{-2}\left(1 - e^{-\bar z}\right)\ \mathrm{s^{-1}}}}
+
+\begin{lstlisting}[language=Python]
+def dmunk(z):
+    zb = 2 * (z - 1300) / 1300
+    return 1500 * 0.00737 * 2 / 1300 * (1 - exp(-zb))
+\end{lstlisting}
+
+On vérifie que cette dérivée vaut \(\approx -0{,}11\ \mathrm{s^{-1}}\) en surface, s'annule en 1300 m et tend vers \(0{,}017\ \mathrm{s^{-1}}\) en profondeur, comme sur la figure 8.
+
+\begin{jury}
+
+Le rapport 2026 attendait le calcul analytique de la dérivée, puis son implémentation en Python. Une dérivée approchée par un taux d'accroissement ne répond pas à la question.
+
+\end{jury}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Le minimum de \(c\) est le zéro de \(\mathrm{d}c/\mathrm{d}z\). Sur \([0, 5000]\), quel est le signe de \texttt{dmunk} aux deux bornes ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Maintenir l'invariant \texttt{dmunk(\allowbreak{}a)\allowbreak{}\ \textless{}\ 0\ \textless{}=\allowbreak{}\ dmunk(\allowbreak{}b)\allowbreak{}} et couper l'intervalle en deux tant que sa largeur dépasse la tolérance.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\begin{lstlisting}[language=Python]
+def dichotomie(dmunk, borne_debut, borne_fin, tolerance):
+    a, b = borne_debut, borne_fin       # invariant : dmunk(a) < 0 <= dmunk(b)
+    while b - a > tolerance:
+        m = (a + b) / 2
+        if dmunk(m) < 0:
+            a = m
+        else:
+            b = m
+    return (a + b) / 2
+\end{lstlisting}
+
+Il y a \(\lceil \log_2((b - a)/\text{tolerance}) \rceil\) itérations, chacune avec un seul appel à \texttt{dmunk}.
+
+\begin{methode}
+
+La dichotomie exige un changement de signe sur l'intervalle de départ. Ici, la croissance de \texttt{dmunk} (c est convexe) garantit en plus l'unicité du zéro.
+
+\end{methode}
+
+\begin{piege}
+
+« Question rarement traitée correctement, alors qu'il s'agit d'un algorithme classique » (rapport 2026). Les erreurs portent sur la condition d'arrêt, qui doit porter sur la \textbf{taille de l'intervalle}, et sur le test du signe de \texttt{dmunk} : c'est le signe au milieu qui décide quelle moitié garder.
+
+\end{piege}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+La fonction renvoie le \textbf{milieu} de l'intervalle final. À quelle distance au plus de la racine se trouve ce milieu ?
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+L'erreur commise est au plus \texttt{tolerance/2}. \textbf{\texttt{tolerance\ =\ 20}} m garantit donc les 10 m demandés (8 itérations). C'est la réponse attendue ; \texttt{tolerance\ =\ 10} m, plus prudent, est correct mais coûte une itération de plus.
+
+\begin{jury}
+
+« Question très peu réussie. » Le rapport 2026 tranche : « La tolérance est de 20 m puisque l'on renvoie le milieu de l'intervalle final. »
+
+\end{jury}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Un appel à \texttt{dichotomie} avec les bonnes bornes, puis la célérité en ce point.
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\begin{lstlisting}[language=Python]
+z_min = dichotomie(dmunk, 0, 5000, 20)
+c_min = munk(z_min)
+print(z_min, c_min)
+\end{lstlisting}
+
+On obtient \(z_{\min} \approx 1300\) m (1298,8 m) et \(c_{\min} \approx 1500\) m/s.
+
+\begin{piege}
+
+Un \texttt{return} n'a de sens qu'à l'intérieur d'une fonction. Pour des « instructions », il faut des affectations suivies d'un affichage.
+
+\end{piege}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Penser à un guide optique dont l'indice est maximal au centre. Où l'indice acoustique \(n = c_0/c\) est-il maximal ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Avec l'invariant \(\sin\theta/c\), trouver à quelle profondeur un rayon devient horizontal.
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+Le canal SOFAR fonctionne comme une \textbf{fibre optique à gradient d'indice} : \(n = c_0/c\) est maximal à la profondeur du minimum de célérité. Un rayon qui s'en éloigne entre dans des couches plus rapides, se redresse jusqu'à l'horizontale et revient vers l'axe. Il oscille ainsi sans toucher ni la surface ni le fond, ce qui limite les pertes.
+
+Avec le profil de Munk, les ondes sont guidées autour de \textbf{\(z \approx 1300\) m}. Un rayon émis en \(z_e\) sous l'angle \(a\) se retourne là où \(c(z) = c(z_e)/\cos a\) : entre 900 et 1800 m environ pour une émission à 1500 m sous 0,05 rad. Le canal s'étend tant que \(c(z) < c(0) \approx 1549\) m/s, soit jusqu'à 4800 m environ.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q44-canal-sofar.pdf}
+\caption*{Figure 3 --- Canal SOFAR : (a) profil de Munk et profondeurs de
+retournement, où c(z) = c(zₑ)/cos a ; (b) trajectoires calculées pour
+des sources à 1500 m et 3000 m sous 0,05 rad}
+\end{figure}
+
+\begin{jury}
+
+Question peu abordée et mal traitée en 2026. Le rapport résume la réponse attendue : « Le canal SOFAR agit comme un guide d'onde : les rayons sont piégés autour du minimum de célérité, situé vers 1 300 m. » Le parallèle avec la fibre optique est jugé pertinent.
+
+\end{jury}
+
+\hypertarget{partie-2.4-reconnaissance-de-signaux-acoustiques-sous-marins}{%
+\section{Partie 2.4 --- Reconnaissance de signaux acoustiques sous-marins}\label{partie-2.4-reconnaissance-de-signaux-acoustiques-sous-marins}}
+
+Chaque son est réduit à deux grandeurs (fréquence, niveau sonore) et étiqueté Animale ou Anthropique (sous-partie 2.4.1, sans question). On le classe par \(k\) plus proches voisins, puis on évalue la classification.
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Données étiquetées, distance, sélection des voisins, vote : expliquer ces quatre éléments dans l'ordre.
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+L'algorithme des \(k\) plus proches voisins est une méthode d'apprentissage \textbf{supervisé}. La base d'apprentissage contient des points (fréquence, niveau) dont la classe est connue. Pour classer une nouvelle donnée, on calcule sa distance à chaque point de la base, puis on retient les \(k\) plus proches. On lui attribue la classe majoritaire parmi ces \(k\) voisins, en fixant une règle pour les égalités (\(k\) impair, par exemple). Il n'y a pas d'entraînement : tout le calcul a lieu à la prédiction, avec \(N\) calculs de distance par requête.
+
+\begin{jury}
+
+Rapport 2026 : « Peu de candidats expliquent correctement le principe de classification par vote majoritaire des \(k\) plus proches voisins. » Les trois étapes attendues sont la distance à chaque point de la base d'apprentissage, la sélection des \(k\) plus proches, puis le vote majoritaire.
+
+\end{jury}
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Que se passe-t-il pour \(k = 1\), puis pour \(k\) égal à la taille de la base ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comment évaluer honnêtement plusieurs valeurs de \(k\) ? Il faut des données qui n'ont pas servi à l'apprentissage.
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+On compare plusieurs valeurs de \(k\) sur un jeu de validation (ou par validation croisée), et on retient celle qui maximise le taux de bonnes réponses. Un ordre de grandeur usuel pour démarrer est \(k \approx \sqrt N\), où \(N\) est la taille du jeu d'apprentissage. En classification binaire, on prend \(k\) impair pour éviter les égalités de vote.
+
+\begin{itemize}
+\tightlist
+\item
+  \(k\) trop petit : la prédiction suit le bruit et les points atypiques (sur-apprentissage).
+\item
+  \(k\) trop grand : la frontière se lisse à l'excès et, pour \(k = N\), on prédit toujours la classe majoritaire (sous-apprentissage). Le coût de calcul augmente aussi.
+\end{itemize}
+
+Schéma des trois régimes, dans le plan (fréquence, niveau sonore) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3301}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3301}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3099}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(k\) trop petit (\(k = 1\))
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(k\) bien choisi
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(k\) trop grand (\(k = N\))
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+frontière très découpée, îlots autour de chaque point isolé & frontière régulière, qui suit la séparation des deux nuages & plus de frontière : une seule classe prédite partout \\
+sur-apprentissage (\emph{overfitting}) & compromis & sous-apprentissage (\emph{underfitting}) \\
+\end{longtable}
+
+\begin{jury}
+
+Question peu abordée et mal traitée en 2026. Selon le rapport, « L'utilisation d'un schéma est appréciée pour illustrer les cas extrêmes ». Il mentionne aussi la règle \(k \approx \sqrt N\) et le choix d'un \(k\) impair pour éviter les égalités.
+
+\end{jury}
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+\begin{indication}{1}
+
+Dépaqueter les deux tuples, puis appliquer le théorème de Pythagore.
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+\begin{lstlisting}[language=Python]
+def distance_euclidienne(A, B):
+    freq_A, dB_A = A
+    freq_B, dB_B = B
+    return ((freq_A - freq_B) ** 2 + (dB_A - dB_B) ** 2) ** 0.5
+\end{lstlisting}
+
+\begin{piege}
+
+Le calcul de distance est bien réussi en 2026, mais le rapport relève des erreurs fréquentes pour extraire la fréquence et le niveau en dB des tuples \texttt{A} et \texttt{B}. La fréquence est la composante d'indice 0, le niveau celle d'indice 1 : dépaqueter les tuples en début de fonction évite toute confusion.
+
+\end{piege}
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\begin{indication}{1}
+
+Sans tri, il suffit de chercher \(k\) fois le minimum parmi les indices pas encore retenus.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un tableau de booléens permet de marquer les indices déjà retenus, sans modifier la liste \texttt{distances}.
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+\begin{lstlisting}[language=Python]
+def plus_proches(distances, k):
+    n = len(distances)
+    choisi = [False] * n
+    indices = []
+    for _ in range(k):
+        i_min = -1
+        for i in range(n):
+            if not choisi[i] and (i_min == -1 or distances[i] < distances[i_min]):
+                i_min = i
+        choisi[i_min] = True
+        indices.append(i_min)
+    return indices
+\end{lstlisting}
+
+C'est un tri par sélection arrêté après \(k\) étapes, de complexité \(O(kn)\). Par exemple, \texttt{plus\_proches(\allowbreak{}{[}5.0,\allowbreak{}\ 1.0,\allowbreak{}\ 3.0,\allowbreak{}\ 0.5,\allowbreak{}\ 4.0,\allowbreak{}\ 2.0{]}\allowbreak{},\allowbreak{}\ 3)\allowbreak{}} renvoie \texttt{{[}3,\ 1,\ 5{]}}.
+
+\begin{piege}
+
+Remplacer les distances retenues par \texttt{0}, ou les supprimer de la liste, décale ou fausse les indices. Il faut renvoyer des \textbf{indices dans la liste d'origine}.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 rappelle qu'il fallait opérer sur les valeurs pour renvoyer ensuite les indices correspondants, en s'inspirant des tris classiques (tri à bulles, tri par sélection).
+
+\end{jury}
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\begin{indication}{1}
+
+Fixer et annoncer une convention : lignes = classe réelle, colonnes = classe prédite. La diagonale contient les bonnes réponses.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chaque origine, on peut diviser la diagonale par le total de la ligne (sons réellement de cette origine) ou de la colonne (sons prédits de cette origine). Préciser lequel des deux on calcule.
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+Il y a 135 sons : 65 animaux (\(52 + 13\)) et 70 anthropiques (\(22 + 48\)).
+
+\begin{itemize}
+\tightlist
+\item
+  Précision globale : \(\boxed{100/135 \approx 74\,\%}\)
+\item
+  Par origine réelle : Animale \(52/65 = 80\,\%\), Anthropique \(48/70 \approx 69\,\%\).
+\item
+  Par origine prédite : Animale \(52/74 \approx 70\,\%\), Anthropique \(48/61 \approx 79\,\%\).
+\end{itemize}
+
+Le modèle fait nettement mieux que le hasard, mais \textbf{il n'est pas fiable} : un son sur quatre est mal classé, et 22 sons anthropiques sur 70 sont pris pour des sons animaux. Sur la figure 11, les erreurs se concentrent dans la zone où les deux nuages se recouvrent (de 20 Hz à 10 kHz environ, entre 130 et 190 dB), alors que les sons isolés (prospection sismique très forte, sifflements de dauphins à haute fréquence) sont bien reconnus.
+
+\begin{piege}
+
+Un taux global de 74 \% ne dit rien de la classe la plus mal reconnue. Il faut toujours regarder les taux par classe.
+
+\end{piege}
+
+\begin{jury}
+
+Le jury attendait une exploitation chiffrée de la matrice de confusion : « Il ne s'agissait pas de porter un jugement qualitatif sur ses performances » (rapport 2026). La conclusion vient après les taux, et s'appuie sur eux.
+
+\end{jury}
+
+\hypertarget{question-50}{%
+\subsection{Question 50}\label{question-50}}
+
+\begin{indication}{1}
+
+Regarder les ordres de grandeur des deux variables : laquelle domine la distance euclidienne brute ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Au-delà de la distance, penser au choix de \(k\), au vote et aux données elles-mêmes.
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Mettre les variables à l'échelle} : travailler avec \(\log_{10} f\) et centrer-réduire les deux grandeurs. Sinon, des écarts de fréquence de plusieurs milliers de hertz écrasent des écarts de niveau de quelques dizaines de décibels.
+\item
+  \textbf{Optimiser \(k\)} par validation croisée, et pondérer le vote par l'inverse de la distance.
+\item
+  \textbf{Ajouter des caractéristiques} (durée, largeur de bande, modulation, descripteurs spectraux) pour séparer la zone de recouvrement.
+\item
+  \textbf{Augmenter et équilibrer la base}, et évaluer sur un jeu de test distinct.
+\end{itemize}
+
+\begin{methode}
+
+Le \(k\) plus proches voisins n'est jamais meilleur que sa distance. La normalisation des variables est le premier réflexe, avant tout réglage de \(k\).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 cite trois pistes : la normalisation des données (« le niveau des fréquences domine ici celui des décibels »), l'optimisation de \(k\) par validation croisée et l'enrichissement des descripteurs.
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Force pressante : \(-P\,\mathrm{d}S\,\vec n_{\text{sortant}}\), et une résultante nulle par symétrie dès qu'on peut apparier les éléments de surface ; poussée d'Archimède.
+\item
+  Milieu stratifié : l'invariant \(n\sin\theta\) donne l'équation de la trajectoire. Le rayon se courbe vers les zones de \textbf{faible célérité} (fort indice).
+\item
+  Conducteur ohmique à basse fréquence : équation de diffusion, \(\underline k^2 = -i\mu_0\gamma\omega\), épaisseur de peau \(\delta = \sqrt{2/(\mu_0\gamma\omega)}\).
+\item
+  Euler explicite : écrire les récurrences, mettre à jour toutes les variables simultanément, choisir le pas par rapport à l'échelle de variation. Sur un oscillateur, l'amplitude dérive vers le haut.
+\item
+  Réfraction : la réflexion totale n'existe que vers un milieu plus rapide, et \texttt{asin} impose de vérifier le domaine avant tout appel.
+\item
+  SQL : jointure sur la clé étrangère, filtre sur la valeur textuelle exacte, \texttt{COUNT(*)}.
+\item
+  Dichotomie : changement de signe, invariant, nombre d'itérations, et lien entre la tolérance et la précision du milieu renvoyé.
+\item
+  \(k\) plus proches voisins : principe, choix de \(k\) par validation, normalisation, matrice de confusion lue ligne par ligne et colonne par colonne.
+\end{itemize}
+
+\textbf{Questions qui ont fait la différence en 2026.} Selon le rapport, la physique s'est jouée sur les calculs de trajectoire (Q11 à Q14) et sur la culture du spectre (Q21, Q22). L'informatique s'est jouée sur la justification des paramètres numériques (Q26, Q42), la gestion de \texttt{direction} dans le simulateur (Q29, Q34, Q36), la dichotomie (Q41), l'interprétation du canal SOFAR (Q44) et toute la partie sur les \(k\) plus proches voisins (Q45 à Q50).
+
+\textbf{Prérequis à revoir} si des questions ont résisté : statique des fluides et intégrales de surface (Q3 à Q6), lois de Snell-Descartes et réflexion totale (Q7, Q30), équations de Maxwell et notation complexe (Q16 à Q19), domaine des fonctions trigonométriques réciproques en Python (Q31, Q32).
+
+\textbf{Questions classiques transposables.} Mirage et fibre à gradient d'indice (Q9 à Q14, Q44), effet de peau (Q16 à Q20), Euler sur un oscillateur harmonique (Q23 à Q26), sélection des \(k\) minima sans tri (Q48), métriques d'une matrice de confusion (Q49). Elles reviennent régulièrement dans les épreuves d'informatique et de modélisation.
+
+\end{document}

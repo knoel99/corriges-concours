@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_pc_chimie_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PC",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 50,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q7-analyse-thermique.svg",
+      "question": "Q7",
+      "legende": "courbes d'analyse thermique (allure) pour w = 0,30 et pour l'azéotrope w = 0,67"
+    },
+    {
+      "fichier": "figures/q11-cellule-electrolyse.svg",
+      "question": "Q11",
+      "legende": "cellule d'électrolyse : anode (+) siège de l'oxydation de Al, cathode (−) siège de la réduction de l'eau"
+    },
+    {
+      "fichier": "figures/q14-courbes-intensite-potentiel.svg",
+      "question": "Q14",
+      "legende": "allure des courbes intensité-potentiel sur Al à pH 14 et tension minimale (échelle des potentiels non respectée)"
+    },
+    {
+      "fichier": "figures/q22-om-complexe-plan-carre.svg",
+      "question": "Q22",
+      "legende": "OM Φ1 à Φ4 du complexe plan carré AlL4, vue de dessus (bleu : signe +, blanc : signe −)"
+    },
+    {
+      "fichier": "figures/q23-diagramme-om-hydroxyde.svg",
+      "question": "Q23",
+      "legende": "diagramme d'OM de l'ion hydroxyde HO−, HO = n_ξ, n_η"
+    },
+    {
+      "fichier": "figures/q24-q25-pont-hydroxo.svg",
+      "question": "Q24-Q25",
+      "legende": "(a) interaction HO de HO− / BV 3p_z de Al le long de Oz ; (b) pontage Al–O(H)–Al"
+    }
+  ]
+}

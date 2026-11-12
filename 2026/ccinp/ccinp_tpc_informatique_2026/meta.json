@@ -1,0 +1,33 @@
+{
+  "slug": "ccinp_tpc_informatique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "TPC",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 27,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q07-invariants-diagonales.svg",
+      "question": "Q7",
+      "legende": "Valeurs de i + j et de j − i sur la grille 4 × 4 : constantes le long d'une diagonale montante et d'une diagonale descendante"
+    },
+    {
+      "fichier": "figures/q15-arbre-insertions.svg",
+      "question": "Q15",
+      "legende": "Code de Q15 : chaque permutation de {0, 1} donne trois permutations de {0, 1, 2} par insertion de 2 à la position i, numérotées dans l'ordre des append"
+    },
+    {
+      "fichier": "figures/q22-arbre-retour-sur-trace.svg",
+      "question": "Q22",
+      "legende": "Sommets visités par resout_graphe(4) : une configuration rejetée par est_possible n'est pas prolongée, et le parcours s'arrête à la première solution"
+    },
+    {
+      "fichier": "figures/q25-schema-relationnel.svg",
+      "question": "Q25",
+      "legende": "Schéma de la base : clés primaires soulignées, clés étrangères de Factures et Records vers Clients et Jeux"
+    }
+  ]
+}

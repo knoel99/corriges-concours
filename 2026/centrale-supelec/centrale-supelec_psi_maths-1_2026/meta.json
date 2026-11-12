@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_psi_maths-1_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PSI",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 45,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q6-arbre-systeme-complet.svg",
+      "question": "Q6",
+      "legende": "Arbre des deux premiers lancers pour n = 2 : le système complet F₁, P₁ ∩ F₂, P₁ ∩ P₂ et l'apport de chaque événement à P(X₂ = k), pour k > 2"
+    },
+    {
+      "fichier": "figures/q7-trinome-racines.svg",
+      "question": "Q7",
+      "legende": "Allure du trinôme X² − qX − pq, tracé pour p = q = 1/2 : positif en −1 et en 1, négatif en 0, il a une racine r₂ entre −1 et 0 et une racine r₁ entre 0 et 1"
+    },
+    {
+      "fichier": "figures/q30-frise-premier-face.svg",
+      "question": "Q30",
+      "legende": "Sur Eᵢ, le face du rang i coupe la suite des lancers : les lancers i + 1, i + 2, … forment une suite de même loi, dont le temps d'attente vaut k − i quand Xₙ = k"
+    },
+    {
+      "fichier": "figures/q31-allure-f.svg",
+      "question": "Q31",
+      "legende": "Allure de f, tracé pour n = 3 et p = 0,7 : f(1) = pⁿ > 0, donc f > 0 sur un intervalle de la forme 1 − δ ≤ t ≤ 1, à droite de p, où l'on choisit t"
+    }
+  ]
+}

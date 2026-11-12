@@ -1,0 +1,1398 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={X-ENS MP — Informatique A 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · X-ENS MP}
+\fancyhead[R]{\small Informatique A 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries X-ENS MP — Informatique A 2026\par}\medskip
+  {\large X-ENS · MP · Informatique A · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} Le sujet s'intitule \emph{Bases de données de vecteurs}. Il porte sur un problème central des moteurs de recherche modernes, de la reconnaissance musicale aux bases vectorielles de l'IA : trouver rapidement les plus proches voisins d'un vecteur requête. On en étudie trois implémentations, dans trois parties \textbf{indépendantes}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I, Reconnaissance d'extraits musicaux (I.1 à I.10).} On passe du spectrogramme (matrice de caractères) à une représentation creuse, puis aux ensembles codés par des vecteurs de bits (\texttt{lsl}, \texttt{land}, comptage de bits). Viennent ensuite l'intersection de listes triées par fusion, les « signatures » d'une musique (triplets de fréquences et d'écart temporel), un comptage en un seul passage avec une file, et pour finir l'indice de Jaccard et le \emph{MinHash}, avec une preuve probabiliste.
+\item
+  \textbf{Partie II, Listes à sauts et graphes hiérarchiques (II.1 à II.7).} On écrit les fonctions de base d'une \emph{skip list} (longueur, recherche, insertion). On analyse en probabilités le coût moyen d'une recherche (récurrence \(C_\ell=\ell/p\), puis \(O(\log n)\)). On généralise enfin à un graphe hiérarchique, sur lequel on fait une recherche gloutonne du plus proche voisin.
+\item
+  \textbf{Partie III, Quantification de produit (III.1 à III.8).} On implémente les \(k\)-moyennes (\texttt{pick}, \texttt{update}, \texttt{kmeans}). On les applique paquet par paquet pour approcher les distances, et on termine par une analyse de complexité du pré-calcul.
+\end{itemize}
+
+\textbf{Notions mobilisées.} OCaml impératif et fonctionnel (références, boucles, tableaux, listes, files, filtrage) ; complexité dans le pire cas et complexité amortie ; invariants de boucle et preuves par récurrence ; probabilités discrètes (espérance, linéarité, loi géométrique, analyse au premier pas) ; graphes.
+
+\textbf{Difficulté et longueur.} Le sujet compte 25 questions, dont beaucoup sont découpées en sous-questions (a), (b), (c). Il est long mais régulier : l'énoncé précise qu'aucune question de code ne demande plus d'une douzaine de lignes. Les questions les plus délicates sont I.8 (un seul passage avec une file), I.10(a), II.4 et II.5 (analyse probabiliste), II.6(b) (insertion qui respecte tous les invariants) et II.7(b) (complexité fine).
+
+\textbf{À ne pas laisser passer.} I.2, I.4, I.6, II.2, III.1 à III.4 et III.8(a)(c) sont des points presque gratuits, à condition d'être rédigés proprement. I.3 et II.1 semblent l'être aussi, mais le rapport 2026 montre qu'elles ont coûté cher : il faut les soigner.
+
+\textbf{Ce qu'en dit le jury (rapport 2026).} Le jury juge que « C'est finalement la compréhension du concept même de liste à saut qui a été discriminante dès les premières questions de la partie (II.1 et II.3) ». Il signale aussi des difficultés sur la représentation binaire des entiers (I.3 à I.5).
+
+Les questions les moins réussies, en score moyen des candidats qui les ont traitées, sont II.4 et II.5 (22 \% et 12 \% en MP), II.7 (20 \% en MP), III.7 et surtout III.8 (8 \% en MP, 19 \% en MPI). D'après le rapport, les MPI ont plus traité et mieux traité que les MP chaque question du sujet. Le rapport note enfin que III.4 et III.6, applications directes du cours, auraient pu être mieux traitées.
+
+\textbf{Gestion du temps.} Comptez environ 1 h 30 pour la partie I, 1 h 30 pour la partie II et 1 h pour la partie III. Les parties étant indépendantes, ne restez pas bloqué sur II.4 et II.5 : la partie III est plus mécanique et rapporte vite.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-i-reconnaissance-automatique-dextraits-musicaux}{%
+\section{Partie I --- Reconnaissance automatique d'extraits musicaux}\label{partie-i-reconnaissance-automatique-dextraits-musicaux}}
+
+On manipule des ensembles de deux façons : en listes triées, et en entiers vus comme des vecteurs de bits. Puis on construit une mesure de similarité robuste au bruit. La partie se termine par une preuve probabiliste sur le \emph{MinHash}.
+
+\hypertarget{question-i.1}{%
+\subsection{Question I.1}\label{question-i.1}}
+
+\begin{indication}{1}
+
+Voyez chaque colonne du spectrogramme comme une seule « lettre ». Que devient alors la musique ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comptez le nombre de positions de départ possibles pour l'extrait, puis le coût maximal d'une comparaison à une position donnée.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Chaque instant \(t\) donne une colonne de hauteur \(F\), que l'on voit comme une lettre de l'alphabet \(\{\texttt{' '},\texttt{'x'}\}^F\). Une musique devient alors un mot.
+
+Savoir si une musique de durée \(D\) est exactement un extrait d'une musique de durée \(T\), c'est chercher un \textbf{motif} de longueur \(D\) dans un \textbf{texte} de longueur \(T\) : c'est le problème de la \textbf{recherche de motif} (\emph{pattern matching}).
+
+Recherche naïve : on essaie les \(T-D+1\) positions de départ \(t\in\{0,\dots,T-D\}\). À chaque position, on compare les \(D\) colonnes, chacune de hauteur \(F\), en s'arrêtant au premier désaccord. Une position coûte au plus \(F\,D\) comparaisons de caractères. Ce maximum est atteint à toutes les positions si, par exemple, le texte et l'extrait sont formés de colonnes identiques, sauf la dernière colonne de l'extrait. Le pire cas coûte donc
+
+\equationajustee{\boxed{O\big(F\,D\,(T-D+1)\big)},}
+
+c'est-à-dire \(O(D\,T\,F)\), puisque \(T-D+1\le T\).
+
+\begin{piege}
+
+Ne pas oublier le facteur \(F\) : comparer deux colonnes n'est pas une opération élémentaire, cela coûte jusqu'à \(F\) comparaisons.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 donne la complexité attendue, \(O(DTF)\). I.1 est l'une des questions où l'écart entre filières est le plus net : 60 \% des points en moyenne pour les MP qui l'ont traitée, contre 75 \% pour les MPI.
+
+\end{jury}
+
+\hypertarget{question-i.2}{%
+\subsection{Question I.2}\label{question-i.2}}
+
+\begin{indication}{1}
+
+Deux boucles imbriquées suffisent, sur les fréquences et sur les temps. Accumulez les couples dans une référence de liste.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'ajout en tête renverse l'ordre de parcours. Pour obtenir une liste triée, parcourez la matrice de la fin vers le début.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\begin{lstlisting}[language=Caml]
+let to_sparse (s : spectrogram) : sparse =
+  let res = ref [] in
+  for f = Array.length s - 1 downto 0 do
+    for t = Array.length s.(f) - 1 downto 0 do
+      if s.(f).(t) = 'x' then res := (f, t) :: !res
+    done
+  done;
+  !res
+\end{lstlisting}
+
+La liste contient exactement les couples \((f,t)\) tels que \texttt{s.(f).(t)\ =\ \textquotesingle{}x\textquotesingle{}}, rangés dans l'ordre lexicographique croissant. Le coût est \(O(F\,T)\).
+
+\begin{piege}
+
+On compare à un caractère, \texttt{\textquotesingle{}x\textquotesingle{}}, et non à une chaîne, \texttt{"x"}. L'ordre des composantes est \((f,t)\) : la ligne, puis la colonne. Prenez aussi la longueur de la ligne effectivement parcourue, \texttt{s.(f)}, et non celle d'une autre ligne.
+
+\end{piege}
+
+\hypertarget{question-i.3}{%
+\subsection{Question I.3}\label{question-i.3}}
+
+\begin{indication}{1}
+
+Quel entier a pour seul bit à 1 le bit \(i\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Combinez ces entiers en parcourant la liste avec \texttt{List.fold\_left}. Pourquoi l'absence de doublons simplifie-t-elle le choix de l'opération ?
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\begin{lstlisting}[language=Caml]
+let convert (l : int list) : int =
+  List.fold_left (fun acc i -> acc lor (1 lsl i)) 0 l
+\end{lstlisting}
+
+\texttt{1\ lsl\ i} a pour seul bit à 1 le bit \(i\), et le « ou » bit à bit \texttt{lor} réunit ces bits. Comme la liste est sans doublons, on peut aussi écrire \texttt{acc\ +\ (1\ lsl\ i)} : on ajoute des puissances de 2 distinctes, donc sans retenue. Le coût est \(O(|l|)\).
+
+\begin{jury}
+
+Le rapport 2026 relève que, pour la question I.3, « au lieu d'utiliser l'instruction lsl rappelée dans le sujet, beaucoup ont réécrit une fonction puissance ». Quand l'énoncé rappelle une opération, c'est qu'il attend qu'on s'en serve : \texttt{1\ lsl\ i} calcule \(2^i\) en temps constant.
+
+\end{jury}
+
+\hypertarget{question-i.4}{%
+\subsection{Question I.4}\label{question-i.4}}
+
+\begin{indication}{1}
+
+L'intersection d'ensembles correspond, bit par bit, à un connecteur logique.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\begin{lstlisting}[language=Caml]
+let inter (a : int) (b : int) : int = a land b
+\end{lstlisting}
+
+Le bit \(i\) de \texttt{a\ land\ b} vaut 1 si et seulement si \(i\in a\) et \(i\in b\). Le coût est \(O(1)\).
+
+\hypertarget{question-i.5}{%
+\subsection{Question I.5}\label{question-i.5}}
+
+\begin{indication}{1}
+
+L'indication donne une opération qui isole un seul bit. Que se passe-t-il si on retire ce bit de \texttt{b} ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour (b), cherchez une quantité qui reste constante d'un tour de boucle à l'autre et qui relie le compteur à ce qu'il reste dans \texttt{b}.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\textbf{(a)}
+
+\begin{lstlisting}[language=Caml]
+let size (n : int) : int =
+  let count = ref 0 in
+  let b = ref n in
+  while !b <> 0 do
+    b := !b - (!b land (- !b));
+    count := !count + 1
+  done;
+  !count
+\end{lstlisting}
+
+\texttt{!b\ land\ (-\ !b)} vaut \(2^j\), où \(j\) est le bit à 1 de poids le plus faible de \texttt{!b}. Comme ce bit vaut 1, le soustraire l'éteint sans retenue : chaque tour éteint exactement un bit. Si \(s\) est le cardinal de l'ensemble, on fait \(s\) tours en \(O(1)\) chacun, d'où une complexité \(\boxed{O(s)}\).
+
+\textbf{(b)} On note \(\mathrm{pc}(x)\) le nombre de bits à 1 de \(x\geq0\), et \(s=\mathrm{pc}(n)\). Invariant : \(\texttt{!b}\geq0\) et \(\texttt{!count}+\mathrm{pc}(\texttt{!b})=s\).
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Initialisation} : \(0+\mathrm{pc}(n)=s\).
+\item
+  \emph{Conservation} : un tour éteint un bit et ajoute 1 au compteur, donc la somme ne change pas.
+\item
+  \emph{Terminaison} : \texttt{!b} est un entier positif qui décroît strictement, c'est un variant.
+\item
+  \emph{Sortie} : on sort avec \(\texttt{!b}=0\), donc \(\texttt{!count}=s\).
+\end{itemize}
+
+\begin{methode}
+
+Une preuve de boucle se rédige toujours en quatre temps : invariant, initialisation, conservation, puis conclusion à la sortie, sans oublier le variant qui assure la terminaison. Ici, la bonne idée est de relier ce qui a déjà été compté à ce qu'il reste à compter.
+
+\end{methode}
+
+\begin{jury}
+
+D'après le rapport 2026, « Certains élèves ont eu des difficultés avec la représentation en binaire des entiers (I.3 à I.5) ». I.5 est la moins réussie des trois : 50 \% des points en moyenne pour les MP qui l'ont traitée, 63 \% pour les MPI.
+
+\end{jury}
+
+\hypertarget{question-i.6}{%
+\subsection{Question I.6}\label{question-i.6}}
+
+\begin{indication}{1}
+
+Les deux listes sont triées : pensez à la fusion du tri fusion.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparez les deux têtes. Dans chacun des trois cas (\(<\), \(=\), \(>\)), laquelle des deux peut-on écarter sans rien perdre ?
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\textbf{(a)}
+
+\begin{lstlisting}[language=Caml]
+let rec sparse_inter (a : 'a list) (b : 'a list) : int =
+  match a, b with
+  | [], _ | _, [] -> 0
+  | x :: a', y :: b' ->
+      if x = y then 1 + sparse_inter a' b'
+      else if x < y then sparse_inter a' b
+      else sparse_inter a b'
+\end{lstlisting}
+
+La fonction est polymorphe, car \texttt{=} et \texttt{\textless{}} le sont : elle s'applique aux entiers comme aux \(d\)-uplets.
+
+Si \(x<y\), alors \(x\) est plus petit que tous les éléments de \(b\) (tri strictement croissant), donc \(x\notin b\). Le cas \(x>y\) est symétrique. Si \(x=y\), on a un élément commun, que l'on compte.
+
+\textbf{(b)} Chaque appel retire au moins une tête. Il y a donc au plus \(|a|+|b|+1\) appels, chacun en \(O(1)\), d'où \(\boxed{O(|a|+|b|)}\).
+
+\begin{piege}
+
+Chercher chaque élément de \(a\) dans \(b\) coûte \(O(|a|\cdot|b|)\) : c'est quadratique, donc refusé. La linéarité repose entièrement sur l'hypothèse de tri.
+
+\end{piege}
+
+\hypertarget{question-i.7}{%
+\subsection{Question I.7}\label{question-i.7}}
+
+\begin{indication}{1}
+
+Après \texttt{Array.of\_list}, on peut accéder à la \(i\)-ème occurrence en temps constant. Le coût \(O(n^2)\) demandé invite à examiner tous les couples d'occurrences.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour un couple \(\big((f_1,t_1),(f_2,t_2)\big)\), à quelle condition sur \(t_2-t_1\) obtient-on un triplet de la signature ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\textbf{(a)}
+
+\begin{lstlisting}[language=Caml]
+let tosignature (sp : sparse) (delta : int) : signature =
+  let a = Array.of_list sp in
+  let n = Array.length a in
+  let res = ref [] in
+  for i = 0 to n - 1 do
+    let (f1, t1) = a.(i) in
+    for j = 0 to n - 1 do
+      let (f2, t2) = a.(j) in
+      let d = t2 - t1 in
+      if 0 < d && d <= delta then res := (f1, f2, d) :: !res
+    done
+  done;
+  !res
+\end{lstlisting}
+
+On ajoute \((f_1,f_2,\delta)\) exactement lorsqu'il existe deux occurrences \((f_1,t)\) et \((f_2,t+\delta)\) avec \(0<\delta\le\Delta\) : c'est la définition (1). Un même triplet réalisé à plusieurs instants figure plusieurs fois dans la liste. Supprimer les doublons demanderait un tri, ce qui ferait perdre la borne \(O(n^2)\). C'est d'ailleurs le nombre de couples que la question I.8 compte.
+
+\textbf{(b)} \texttt{Array.of\_list} coûte \(O(n)\), et les deux boucles font \(n^2\) tours en \(O(1)\). Le total est \(\boxed{O(n^2)}\).
+
+\begin{piege}
+
+L'écart doit être strictement positif : \(\delta=0\) est exclu par la définition. Testez donc \texttt{0\ \textless{}\ d} et non \texttt{0\ \textless{}=\ d}.
+
+\end{piege}
+
+\hypertarget{question-i.8}{%
+\subsection{Question I.8}\label{question-i.8}}
+
+\begin{indication}{1}
+
+Le temps étant croissant le long de la liste, quels instants passés peuvent encore former un triplet avec l'instant courant ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Gardez dans une file les instants récents « encore utiles ». À l'arrivée d'un nouvel instant, que faut-il retirer de la tête, et que vous donne ensuite la longueur de la file ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour la complexité, ne comptez pas les tours de la boucle intérieure instant par instant : comptez combien de fois, au total, chaque élément peut quitter la file.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\textbf{(a)}
+
+\begin{lstlisting}[language=Caml]
+let signature_size (sp : sparse) (delta : int) : int =
+  let q = Queue.create () in
+  let count = ref 0 in
+  List.iter (fun (_, t) ->
+      while Queue.length q > 0 && t - Queue.peek q > delta do
+        Queue.drop q
+      done;
+      count := !count + Queue.length q;
+      Queue.push t q)
+    sp;
+  !count
+\end{lstlisting}
+
+Exemples de l'énoncé : avec \texttt{{[}(1,1);\ (5,5){]}} et \(\Delta=3\), on obtient 0. Avec les cinq couples et \(\Delta=10\), on obtient \(0+1+2+3+4=10\).
+
+\textbf{(b)} \emph{Correction.} Les temps sont distincts et croissants. Pour \(i<j\), on a donc \(t_j-t_i>0\), et le couple \((i,j)\) donne un triplet si et seulement si \(t_j-t_i\le\Delta\).
+
+Invariant : avant le traitement de \(t_j\), la file contient, dans l'ordre croissant, les \(t_i\) (\(i<j\)) tels que \(t_{j-1}-t_i\le\Delta\).
+
+\begin{itemize}
+\tightlist
+\item
+  La boucle \texttt{while} retire de la tête les \(t_i\) trop anciens, ceux tels que \(t_j-t_i>\Delta\). Ils forment un préfixe de la file, et ils ne serviront plus jamais, car les temps suivants sont encore plus grands.
+\item
+  Il reste exactement les partenaires valides de \(t_j\). On ajoute leur nombre au compteur, puis on enfile \(t_j\).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/i8-file-fenetre-glissante.pdf}
+\caption*{Figure 1 --- Un pas de signature\_size avec Δ = 4 : à l'arrivée de t\_j
+= 10, les instants 4 et 5 sont défilés, les deux instants restants
+donnent 2 triplets, puis t\_j est enfilé}
+\end{figure}
+
+En sommant sur \(j\), on obtient \(|S_\Delta(M)|\).
+
+\emph{Complexité.} La liste est parcourue une seule fois. Chaque instant est enfilé une fois et défilé au plus une fois : la boucle \texttt{while} fait donc au plus \(n\) tours \textbf{au total} sur tout le parcours. Toutes les opérations de file, \texttt{Queue.length} comprise, sont en \(O(1)\) d'après l'énoncé. La complexité est amortie linéaire : \(\boxed{O(n)}\).
+
+\begin{methode}
+
+C'est la technique de la \textbf{fenêtre glissante} sur une suite triée. Une boucle intérieure dont le nombre total de tours est borné par le nombre d'éléments (chacun entre et sort une fois) donne un coût \textbf{amorti} linéaire.
+
+\end{methode}
+
+\begin{piege}
+
+\texttt{Queue.length} est en temps constant : l'énoncé le rappelle. Le rapport 2026 note pourtant que « Certains candidats croient toutefois que Queue.length est en temps \(O(n)\) alors qu'on rappelle dans le sujet que cette fonction s'exécute en temps \(O(1)\) ». Avec cette erreur, on conclut à tort à un coût quadratique.
+
+\end{piege}
+
+\begin{jury}
+
+Pour la complexité, le rapport 2026 donne l'argument attendu : « chaque élément a été inséré une fois et défilé une fois donc la complexité est amortie linéaire ». La question est jugée « plus difficile » : 64 \% des MP l'ont traitée, avec 41 \% des points en moyenne.
+
+\end{jury}
+
+\begin{piege}
+
+L'énoncé ne rappelle pas \texttt{Queue.is\_empty}. On teste donc \texttt{Queue.length\ q\ \textgreater{}\ 0} avant \texttt{Queue.peek}, qui lève \texttt{Queue.Empty} sur une file vide. L'ordre du \texttt{\&\&}, évalué de gauche à droite, protège cet appel.
+
+\end{piege}
+
+\hypertarget{question-i.9}{%
+\subsection{Question I.9}\label{question-i.9}}
+
+\begin{indication}{1}
+
+Le nombre de triplets communs est le même pour \(A\) et pour \(B\) : il faut un autre critère. Que signifie un écart \(t'_i-t_i\) identique pour tous les triplets ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\textbf{C'est \(A\).} Les deux musiques partagent trois triplets avec \(M\) : l'indice de Jaccard ne les départage pas.
+
+Pour \(A\), l'histogramme des écarts \(t'^{(A)}_i-t_i\) est concentré sur une seule valeur, environ 1. Les triplets communs se retrouvent dans \(A\) avec le même décalage temporel, ce qui veut dire que \(M\) est un morceau de \(A\) translaté dans le temps.
+
+Pour \(B\), les écarts sont dispersés, vers 3, 8 et 11 environ. Aucun décalage commun n'explique les correspondances, qui sont donc fortuites.
+
+\begin{methode}
+
+Pour aligner un extrait sur un morceau, on ne compte pas seulement les correspondances : on vérifie leur \textbf{cohérence géométrique}, ici un décalage constant. C'est le principe des empreintes acoustiques.
+
+\end{methode}
+
+\begin{piege}
+
+Ne pas justifier le choix de \(A\) par la petitesse de l'écart. Un décalage commun de 100 serait tout aussi probant : l'extrait commencerait simplement plus loin dans le morceau.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 est explicite : « ce qui était important n'était pas que l'écart soit petit, mais que l'histogramme soit concentré autour d'une seule valeur, indiquant la cohérence temporelle des correspondances ».
+
+\end{jury}
+
+\hypertarget{question-i.10}{%
+\subsection{Question I.10}\label{question-i.10}}
+
+\begin{indication}{1}
+
+Pour (a), regardez l'élément de \(A\cup B\) qui a le plus petit numéro. Où doit-il se trouver pour que les deux minimums coïncident ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Montrez l'équivalence entre « minHash de \(A\) = minHash de \(B\) » et « cet élément est dans \(A\cap B\) ». Utilisez ensuite le fait que la permutation est uniforme pour trouver la loi de cet élément.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour (b), une seule fonction de hachage donne un événement de probabilité \(J\). Comment estimer une probabilité avec plusieurs tirages indépendants ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\textbf{(a)} Soient \(A,B\) non vides. La permutation \(h\) a des valeurs distinctes. Soit \(x^\star\) l'unique élément de \(A\cup B\) qui minimise \(h\).
+
+\begin{itemize}
+\tightlist
+\item
+  Si \(x^\star\in A\cap B\), alors \(\min_A h=h(x^\star)=\min_B h\).
+\item
+  Si, par exemple, \(x^\star\in A\setminus B\), alors \(\min_A h=h(x^\star)\). Mais \(\min_B h=h(b)\) avec \(b\in B\), \(b\neq x^\star\), donc \(h(b)>h(x^\star)\), et les deux minima diffèrent.
+\end{itemize}
+
+Ainsi, \(\mathsf{minHash}(h)(A)=\mathsf{minHash}(h)(B)\iff x^\star\in A\cap B\). La permutation \(h\) est uniforme : tous les éléments de \(A\cup B\) ont la même chance de porter le plus petit numéro, donc \(x^\star\) suit la loi uniforme sur \(A\cup B\). D'où
+
+\equationajustee{\boxed{\begin{aligned}
+\Pr\big(\mathsf{minHash}(h)(A)=\mathsf{minHash}(h)(B)\big)&=\frac{|A\cap B|}{|A\cup B|}\\
+&=J(A,B).
+\end{aligned}}}
+
+\textbf{(b)}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \emph{Prétraitement.} Pour chaque musique \(X\) de la base, on calcule \(S_\Delta(X)\) à partir de sa représentation concise (I.2 et I.7). On tire \(r\) fonctions de hachage indépendantes, et on ne stocke que \(\sigma(X)=\big(\mathsf{minHash}(h_1)(S_\Delta(X)),\allowbreak \dots,\allowbreak \mathsf{minHash}(h_r)(S_\Delta(X))\big)\). Ce vecteur a une taille fixe \(r\), ce qui économise beaucoup de mémoire.
+\item
+  \emph{Requête.} On calcule \(\sigma(M)\) pour l'extrait. La fraction des coordonnées où \(\sigma(M)\) et \(\sigma(X)\) coïncident est une moyenne de \(r\) variables de Bernoulli indépendantes de paramètre \(J(S_\Delta(M),S_\Delta(X))\). C'est donc un estimateur sans biais de l'indice de Jaccard, de variance au plus \(1/(4r)\).
+\item
+  On renvoie les musiques les mieux classées. On départage les meilleures par la cohérence temporelle des triplets communs, avec le critère de I.9.
+\end{enumerate}
+
+Pour ne pas parcourir toute la base, on peut indexer les musiques par des blocs de coordonnées de \(\sigma\). On ne compare alors l'extrait qu'aux musiques qui partagent un bloc avec lui.
+
+\begin{piege}
+
+Pour l'implication réciproque, il faut l'argument du \textbf{minimum strict} : les valeurs de \(h\) sont distinctes. Sans lui, deux minima pourraient coïncider par hasard sur deux éléments différents.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 ne commente pas I.10, mais ses statistiques la classent parmi les questions difficiles de la partie I : moins de 40 \% des points en moyenne pour ceux qui l'ont traitée, en MP comme en MPI. Le rapport 2025 de cette épreuve demandait, pour une question de probabilités, de faire le calcul et aussi d'en donner une explication informelle. Il notait que cette explication avait souvent manqué. Ici, une phrase du type « l'élément de plus petit numéro est uniforme sur \(A\cup B\) » est exactement ce qui est attendu.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-ii-listes-uxe0-sauts-et-graphes-hiuxe9rarchiques-navigables}{%
+\section{Partie II --- Listes à sauts et graphes hiérarchiques navigables}\label{partie-ii-listes-uxe0-sauts-et-graphes-hiuxe9rarchiques-navigables}}
+
+On écrit les fonctions de base d'une \emph{skip list}, on montre qu'une recherche coûte en moyenne \(O(\log n)\), puis on transpose l'idée des étages à un graphe de voisinage pour une recherche gloutonne.
+
+\hypertarget{question-ii.1}{%
+\subsection{Question II.1}\label{question-ii.1}}
+
+\begin{indication}{1}
+
+Quel étage contient toutes les valeurs ? Suivez-le à partir du nœud factice.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\begin{lstlisting}[language=Caml]
+let skip_length (skl : skip_list) : int =
+  let rec aux node acc =
+    match node.successors.(0) with
+    | None -> acc
+    | Some next -> aux next (acc + 1)
+  in
+  aux skl.init_node 0
+\end{lstlisting}
+
+On parcourt la liste triée de l'étage 0 en comptant les successeurs rencontrés. Le nœud factice n'est pas compté. Le coût est \(O(n)\).
+
+\begin{piege}
+
+Partir de \texttt{init\_level} ne compte que les valeurs des étages supérieurs. Le rapport 2026 le relève : « certaines copies commencent la recherche à init\_level alors que pour cette question il faut commencer à 0 ».
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 classe II.1 parmi les deux questions qui ont été discriminantes dans la partie II, avec II.3 : elles testent la compréhension même de la structure de liste à sauts.
+
+\end{jury}
+
+\hypertarget{question-ii.2}{%
+\subsection{Question II.2}\label{question-ii.2}}
+
+\begin{indication}{1}
+
+Une valeur est présente à l'étage \(\ell\) si et seulement si son niveau tiré est au moins \(\ell\). Combien de tirages doivent réussir pour cela ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Introduisez des indicatrices et utilisez la linéarité de l'espérance.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+Si les étages ne sont pas bornés, le niveau \(\ell_v\) d'une valeur vérifie \(\ell_v\geq\ell\) si et seulement si les \(\ell\) premiers tirages, indépendants, réussissent. Donc \(\Pr(\ell_v\geq\ell)=p^\ell\). Par linéarité de l'espérance appliquée aux indicatrices de présence, le nombre moyen de valeurs à l'étage \(\ell\) est
+
+\equationajustee{\boxed{n\,p^\ell.}}
+
+\begin{piege}
+
+« Présente à l'étage \(\ell\) » veut dire « niveau \(\geq\ell\) », de probabilité \(p^\ell\). Ne confondez pas avec « niveau exactement \(\ell\) », de probabilité \(p^\ell(1-p)\).
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, « les copies ont proposé toutes sortes de valeurs exotiques mais la bonne était \(np^\ell\) ». Le calcul par indicatrices et linéarité de l'espérance tient en deux lignes et évite ces dérives.
+
+\end{jury}
+
+\hypertarget{question-ii.3}{%
+\subsection{Question II.3}\label{question-ii.3}}
+
+\begin{indication}{1}
+
+À l'étage courant, avancez tant que le successeur porte une valeur plus petite que \(v\). Que faire quand ce n'est plus le cas ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la correction, gardez un invariant sur la valeur du nœud courant par rapport à \(v\). Pour la complexité dans le pire cas, demandez-vous si le nœud courant peut reculer.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\textbf{(a)}
+
+\begin{lstlisting}[language=Caml]
+let search (skl : skip_list) (v : int) : skip_node option =
+  let rec descend node level =
+    match node.successors.(level) with
+    | Some nx when nx.value = v -> Some nx
+    | Some nx when nx.value < v -> descend nx level
+    | _ -> if level = 0 then None else descend node (level - 1)
+  in
+  descend skl.init_node skl.init_level
+\end{lstlisting}
+
+\textbf{(b)} \emph{Invariant} : \texttt{node.value} \(<v\), et \texttt{node} est présent à l'étage \texttt{level}. Ce point est vrai au départ, puisque le nœud factice vaut \(0<v\), et on n'avance que vers des valeurs \(<v\).
+
+\emph{Terminaison} : le couple (\texttt{level}, nombre de nœuds après \texttt{node} à l'étage 0) décroît strictement pour l'ordre lexicographique.
+
+\emph{Correction} :
+- Si la fonction renvoie \texttt{Some\ nx}, alors \texttt{nx.value} \(=v\).
+- Si elle renvoie \texttt{None}, on est à l'étage 0, le successeur de \texttt{node} est absent ou supérieur à \(v\), et \texttt{node.value} \(<v\). L'étage 0 contient toutes les valeurs, triées, donc \(v\) est absente.
+
+\textbf{(c)} Le nœud courant ne recule jamais. Il y a au plus \(n\) avancées et au plus \(L\) descentes. La complexité dans le pire cas est \(\boxed{O(n+L)}\).
+
+Elle est atteinte, par exemple, si la plus petite valeur monte jusqu'à l'étage \(L-1\) et que toutes les autres restent à l'étage 0. En cherchant la plus grande valeur, on descend alors les \(L-1\) étages, puis on parcourt toute la liste de l'étage 0.
+
+\begin{piege}
+
+Ne confondez pas le pire cas, \(O(n+L)\) et linéaire, avec le cas moyen, \(O(\log n)\), qui fait l'objet de II.5.
+
+\end{piege}
+
+\begin{piege}
+
+Le rapport 2026 signale deux erreurs : « Trop de copies recommençaient la recherche tout à gauche à chaque étage ou bien confondaient init\_level avec max\_level ». Après une descente, on repart du nœud atteint, pas du nœud factice. Et la recherche commence à \texttt{init\_level}, l'étage le plus haut occupé, non à \texttt{max\_level}.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 résume l'idée attendue : « aller vers la droite ou le bas permet d'obtenir une complexité \(O(n + L)\) ». C'est l'une des deux questions discriminantes de la partie, avec II.1 : 37 \% des points en moyenne pour les MP qui l'ont traitée.
+
+\end{jury}
+
+\hypertarget{question-ii.4}{%
+\subsection{Question II.4}\label{question-ii.4}}
+
+\begin{indication}{1}
+
+Placez-vous en un point \((x,i)\) du chemin inversé. Par quels deux types de pas la recherche directe a-t-elle pu y arriver ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'un des deux cas se produit exactement quand \(x\) est aussi présent à l'étage \(i+1\). Sachant que \(x\) est présent à l'étage \(i\), quelle est la probabilité de cet événement, d'après \texttt{random\_level} ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Écrivez \(C_\ell\) en fonction de \(C_\ell\) lui-même et de \(C_{\ell-1}\) selon le premier pas (analyse au premier pas), puis résolvez.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+En un point \((x,i)\) du chemin inversé, la recherche directe est arrivée de l'une des deux façons suivantes :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{par une descente} depuis \((x,i+1)\), si \(x\) est présent à l'étage \(i+1\) : la recherche y a atteint \(x\), puis elle est descendue. À l'envers, on \textbf{monte} ;
+\item
+  \textbf{horizontalement} depuis le prédécesseur de \(x\) à l'étage \(i\), sinon. À l'envers, on reste au même étage.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ii4-chemin-inverse-skip-list.pdf}
+\caption*{Figure 2 --- Chemin de recherche de 28 dans la skip list de la figure 3
+du sujet, lu à l'envers : montée avec probabilité p, recul au même étage
+avec probabilité 1 − p}
+\end{figure}
+
+Sachant que \(x\) est présent à l'étage \(i\), il l'est aussi à l'étage supérieur avec probabilité \(p\) : c'est un tirage indépendant de plus dans \texttt{random\_level}.
+
+Chaque pas coûte 1. Avec probabilité \(p\), il reste \(\ell-1\) étages à monter ; avec probabilité \(1-p\), il en reste toujours \(\ell\). On a \(C_0=0\) et, pour \(\ell\geq1\),
+
+\equationajustee{\begin{aligned}
+C_\ell&=1+p\,C_{\ell-1}+(1-p)\,C_\ell\\
+p\,C_\ell&=1+p\,C_{\ell-1}\\
+C_\ell&=C_{\ell-1}+\frac1p.
+\end{aligned}}
+
+Par récurrence,
+
+\equationajustee{\boxed{C_\ell=\frac{\ell}{p}.}}
+
+\begin{methode}
+
+\textbf{Analyse au premier pas} : on conditionne sur le premier pas, et l'espérance cherchée apparaît des deux côtés de l'équation. C'est la même technique que pour l'espérance d'une loi géométrique, qui vaut \(1/p\). On retrouve d'ailleurs \(1/p\) pas en moyenne par étage monté.
+
+\end{methode}
+
+\begin{piege}
+
+La probabilité \(p\) est \textbf{conditionnelle} à la présence de \(x\) à l'étage \(i\). Il faut le dire, et souligner que le tirage supplémentaire est indépendant de ce qui précède.
+
+\end{piege}
+
+\hypertarget{question-ii.5}{%
+\subsection{Question II.5}\label{question-ii.5}}
+
+\begin{indication}{1}
+
+Coupez le chemin à un étage seuil \(\ell^\star\) où l'on n'attend plus qu'environ une valeur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+En dessous du seuil, utilisez II.4. Au-dessus, majorez le nombre de pas, horizontaux \textbf{et} verticaux, par le nombre de nœuds présents dans ces étages, puis utilisez II.2.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+On pose \(\ell^\star=\lceil\log_{1/p}n\rceil\), de sorte que \(n\,p^{\ell^\star}\le1\). On note \(N_\ell\) le nombre de valeurs présentes à l'étage \(\ell\).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Morceau de l'étage 0 à l'étage \(\ell^\star\).} À l'envers, c'est une montée de \(\ell^\star\) étages, qui prend en moyenne au plus \(C_{\ell^\star}=\ell^\star/p=O(\log n)\) pas.
+\item
+  \textbf{Morceau au-dessus de \(\ell^\star\).}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    À l'étage \(\ell\), les pas horizontaux passent par des nœuds distincts de cet étage : il y en a au plus \(N_\ell\).
+  \item
+    Il y a une descente par étage non vide. Chacun de ces étages contient au moins un nœud, donc le nombre de descentes est au plus \(\sum_{\ell\geq\ell^\star}N_\ell\).
+  \item
+    Ce morceau compte donc au plus \(2\sum_{\ell\geq\ell^\star}N_\ell\) pas. Par II.2, l'espérance est
+    \equationajustee{\begin{aligned}
+    2\sum_{\ell\geq\ell^\star}n\,p^\ell&=\frac{2\,n\,p^{\ell^\star}}{1-p}\\
+    &\le\frac2{1-p},
+    \end{aligned}}
+    qui est un \(O(1)\) à \(p\) fixé.
+  \end{itemize}
+\end{itemize}
+
+Le nombre moyen d'étapes est donc au plus \(\dfrac{\lceil\log_{1/p}n\rceil}{p}+\dfrac{2}{1-p}\), soit \(\boxed{O(\log n)}\).
+
+\begin{piege}
+
+Majorer par le seul nombre de nœuds au-dessus du seuil ne compte que les pas horizontaux. Il faut aussi compter les descentes. Pensez également à prendre la partie entière supérieure de \(\log_{1/p}n\), qui n'est pas entier en général.
+
+\end{piege}
+
+\begin{jury}
+
+Pour II.4 et II.5, le rapport 2026 écrit : « Bien que difficiles, ces questions ont été parfois bien traitées dans de rares copies. » Elles comptent parmi les moins réussies du sujet : en MP, 22 \% et 12 \% des points en moyenne pour ceux qui les ont traitées. Une récurrence propre en II.4, même sans II.5, rapporte déjà.
+
+\end{jury}
+
+\hypertarget{question-ii.6}{%
+\subsection{Question II.6}\label{question-ii.6}}
+
+\begin{indication}{1}
+
+Pour (a), à combien d'étages le nouveau nœud apparaît-il ? Combien de pointeurs déjà existants faut-il rediriger à chacun de ces étages ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour (b), refaites la descente de \texttt{search}, en notant à chaque étage le dernier nœud de valeur \(<v\). C'est le prédécesseur auquel raccorder le nouveau nœud.
+
+\end{indication}
+
+\begin{indication}{3}
+
+\texttt{init\_level} n'est pas mis à jour. À partir de quel étage faut-il commencer la descente pour que, même aux étages supérieurs à \texttt{init\_level}, le prédécesseur soit le bon ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\textbf{(a)} Le nouveau nœud est présent aux étages \(0,\dots,\ell\), où \(\ell\) est le niveau tiré. À chacun de ces étages, on redirige un seul pointeur existant, celui de son prédécesseur. On modifie donc au plus \textbf{\(\ell+1\le L\) successeurs} existants. S'ajoutent les \(\ell+1\) cases du nouveau nœud, à remplir, soit au plus \(2L\) écritures en tout.
+
+\textbf{(b)} On suppose \texttt{p} défini globalement. Il y a deux différences avec \texttt{search} :
+
+\begin{itemize}
+\tightlist
+\item
+  on avance tant que le successeur est \(<v\), et on raccorde le nouveau nœud derrière le nœud atteint, à chaque étage \(\le\ell\) ;
+\item
+  la descente part de l'étage \(\max(\ell,\texttt{init\_level})\).
+\end{itemize}
+
+\begin{lstlisting}[language=Caml]
+let insert (skl : skip_list) (v : int) : unit =
+  let lvl = random_level p skl.max_level in
+  let new_node = create_node skl.max_level v in
+  let rec advance node level =        (* comme dans search *)
+    match node.successors.(level) with
+    | Some nx when nx.value < v -> advance nx level
+    | _ -> node
+  in
+  let rec descend node level =
+    let pred = advance node level in
+    if level <= lvl then begin        (* raccordement à cet étage *)
+      new_node.successors.(level) <- pred.successors.(level);
+      pred.successors.(level) <- Some new_node
+    end;
+    if level > 0 then descend pred (level - 1)
+  in
+  descend skl.init_node (max lvl skl.init_level)
+\end{lstlisting}
+
+À chaque étage \(\le\ell\), \texttt{pred} est le dernier nœud \(<v\) et son successeur est \(>v\), puisque \(v\) est absente. On insère entre les deux, ce qui préserve le tri, l'inclusion des étages et l'unicité du prédécesseur.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ii6-insertion-raccordement.pdf}
+\caption*{Figure 3 --- Insertion de 30, tiré au niveau 1 : à chaque étage ≤ 1, le
+nouveau nœud reprend d'abord le successeur de pred (1), puis pred pointe
+vers lui (2)}
+\end{figure}
+
+\begin{piege}
+
+L'erreur la plus naturelle est de ne descendre qu'à partir de \texttt{init\_level}, puis de raccorder les étages supérieurs directement derrière le nœud factice, en pensant qu'ils sont vides. Ce n'est vrai que si \texttt{init\_level} est tenu à jour, ce que l'énoncé ne demande pas. Contre-exemple : insérer 50 puis 70, tirés tous deux au niveau 3. À l'étage 3, on obtient la chaîne \(0\to70\to50\), qui n'est plus triée.
+
+\end{piege}
+
+\begin{piege}
+
+L'ordre des deux affectations compte. Il faut d'abord copier \texttt{pred.successors.(\allowbreak{}level)\allowbreak{}} dans le nouveau nœud, et seulement ensuite faire pointer \texttt{pred} vers lui. Dans l'autre ordre, on perd la suite de la liste.
+
+\end{piege}
+
+\begin{jury}
+
+Pour II.6(a), le rapport 2026 indique : « nous avons accepté les réponses L et 2L ». Les deux décomptes sont donc admis, à condition de dire ce que l'on compte. Il juge l'insertion difficile mais relativement bien comprise par la plupart des candidats.
+
+Le rapport 2025 rappelait déjà qu'une fonction doit toujours rendre une valeur qui satisfait les invariants énoncés pour son type. Ici, ce sont le tri à chaque étage, l'inclusion des étages et l'unicité du prédécesseur.
+
+\end{jury}
+
+\hypertarget{question-ii.7}{%
+\subsection{Question II.7}\label{question-ii.7}}
+
+\begin{indication}{1}
+
+Gardez un nœud courant et un étage courant. À chaque tour, examinez la liste des voisins du nœud courant à cet étage.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour (b) et (c), suivez la distance du nœud courant à la requête. Comment évolue-t-elle lors d'un déplacement, et lors d'une descente ? Qu'en déduire sur les nœuds visités ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\textbf{(a)} On part du nœud 0, supposé présent à l'étage \(L-1\).
+
+\begin{lstlisting}[language=Caml]
+let closest (query : vector) (g : hgraph) : int =
+  let current = ref 0 in
+  let level = ref (Array.length g.(0) - 1) in
+  let dcur = ref (dist query db.(0)) in
+  let fini = ref false in
+  while not !fini do
+    let best = ref !current and dbest = ref !dcur in
+    List.iter (fun j ->
+        let dj = dist query db.(j) in
+        if dj < !dbest then begin best := j; dbest := dj end)
+      g.(!current).(!level);
+    if !best <> !current then begin current := !best; dcur := !dbest end
+    else if !level = 0 then fini := true
+    else level := !level - 1
+  done;
+  !current
+\end{lstlisting}
+
+À chaque tour, on se déplace vers le voisin le plus proche de \texttt{query} s'il réduit strictement la distance. Sinon, on descend d'un étage, ou on s'arrête si l'on est à l'étage 0.
+
+\textbf{(b)} La distance du nœud courant à \texttt{query} décroît strictement à chaque déplacement et ne change pas lors d'une descente. Les nœuds visités sont donc tous distincts : il y a au plus \(n-1\) déplacements, et au plus \(L-1\) descentes. Chaque couple (nœud, étage) est examiné au plus une fois, et les listes d'adjacence parcourues ont une longueur totale au plus \(\sum_\ell2|E_\ell|=2|E|\). Chaque voisin demande un calcul de distance en \(O(d)\). Complexité :
+
+\equationajustee{\boxed{O\big(d\,(|E|+1)+n+L\big)}.}
+
+\textbf{(c)} \textbf{Non.} La distance à \texttt{query} est un variant strictement décroissant lors des déplacements, donc on ne repasse jamais par un nœud déjà visité. Il y a au plus \(n-1\) déplacements et \(L-1\) descentes : l'algorithme termine sans marquage.
+
+\begin{methode}
+
+Pour prouver la terminaison d'un algorithme glouton, on cherche une \textbf{quantité qui décroît strictement} et qui ne prend qu'un nombre fini de valeurs. Elle remplace le marquage des sommets, qui est indispensable dans un parcours en largeur ou en profondeur.
+
+\end{methode}
+
+\begin{piege}
+
+Avec une comparaison large (\texttt{\textless{}=}), on pourrait osciller entre deux nœuds à égale distance de la requête, et la terminaison ne serait plus assurée. L'inégalité stricte est essentielle.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 admet deux lectures de l'énoncé : parcourir une seule arête par étage, ou « faire un parcours glouton à chaque étage jusqu'à tomber dans un minimum local (la solution attendue) ». C'est la seconde que suit le code ci-dessus. Pour (c), il note : « Beaucoup ont remarqué que la distance décroissait strictement, ainsi il n'était pas nécessaire de marquer les nœuds. »
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-iii-quantification-de-produit}{%
+\section{Partie III --- Quantification de produit}\label{partie-iii-quantification-de-produit}}
+
+On implémente les \(k\)-moyennes avec des tableaux. On les applique sur des paquets de coordonnées pour approcher les distances, puis on chiffre ce que rapporte le pré-calcul.
+
+\hypertarget{question-iii.1}{%
+\subsection{Question III.1}\label{question-iii.1}}
+
+\begin{indication}{1}
+
+\texttt{Array.init\_matrix\ n\ n\ f} remplit la case \((i,j)\) avec \texttt{f\ i\ j}. Quelle fonction faut-il lui passer ?
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\begin{lstlisting}[language=Caml]
+let compute_all_dist2 (db : matrix) : square =
+  let n = Array.length db in
+  Array.init_matrix n n (fun i j -> dist2 db.(i) db.(j))
+\end{lstlisting}
+
+Le coût est \(O(n^2 d)\).
+
+\hypertarget{question-iii.2}{%
+\subsection{Question III.2}\label{question-iii.2}}
+
+\begin{indication}{1}
+
+Combien de distances faut-il calculer, et combien coûte chacune ?
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+On calcule \(n\) distances en \(O(d)\) chacune, puis on prend le minimum en \(O(n)\). La complexité est \(\boxed{O(n\,d)}\).
+
+\hypertarget{question-iii.3}{%
+\subsection{Question III.3}\label{question-iii.3}}
+
+\begin{indication}{1}
+
+Pour chaque vecteur, cherchez l'indice qui minimise la distance aux centroïdes. Initialisez avec le centroïde 0, et non avec une constante arbitraire.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\begin{lstlisting}[language=Caml]
+let pick (db : matrix) (centroids : matrix) (centroid_of : int array) : unit =
+  let k = Array.length centroids in
+  for i = 0 to Array.length db - 1 do
+    let best = ref 0 and dbest = ref (dist2 db.(i) centroids.(0)) in
+    for j = 1 to k - 1 do
+      let dj = dist2 db.(i) centroids.(j) in
+      if dj < !dbest then begin best := j; dbest := dj end
+    done;
+    centroid_of.(i) <- !best
+  done
+\end{lstlisting}
+
+Minimiser la distance ou son carré revient au même. Le coût est \(O(n\,k\,d)\), avec \(k\geq1\).
+
+\hypertarget{question-iii.4}{%
+\subsection{Question III.4}\label{question-iii.4}}
+
+\begin{indication}{1}
+
+Le nouveau centroïde d'un groupe est la moyenne des vecteurs qui lui sont affectés. Accumulez, groupe par groupe, une somme de vecteurs et un effectif.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que faire d'un groupe dont l'effectif est nul ?
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\begin{lstlisting}[language=Caml]
+let update (k : int) (db : matrix) (centroid_of : int array)
+    (centroids : matrix) : unit =
+  let d = Array.length db.(0) in
+  let sums = Array.init k (fun _ -> Array.make d 0.) in
+  let counts = Array.make k 0 in
+  for i = 0 to Array.length db - 1 do
+    let j = centroid_of.(i) in
+    sums.(j) <- vector_sum sums.(j) db.(i);
+    counts.(j) <- counts.(j) + 1
+  done;
+  for j = 0 to k - 1 do
+    if counts.(j) > 0 then
+      centroids.(j) <- vector_div sums.(j) (float_of_int counts.(j))
+  done
+\end{lstlisting}
+
+Un groupe vide garde son ancien centroïde. Le coût est \(O((n+k)\,d)\).
+
+\begin{piege}
+
+\texttt{Array.make\ k\ (\allowbreak{}Array.make\ d\ 0.)\allowbreak{}} crée \(k\) fois \textbf{le même} tableau : c'est du partage de mémoire (\emph{aliasing}). Ici, c'est sans danger, parce que \texttt{vector\_sum} renvoie un nouveau vecteur, mais toute mutation en place serait faussée. \texttt{Array.init} crée des tableaux distincts. Pensez aussi à \texttt{float\_of\_int} : OCaml ne convertit jamais implicitement un entier en flottant.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 estime que les questions III.1 à III.6, sauf éventuellement III.3 et III.5, « sont une application directe du cours, donc III.4 et III.6 auraient pu être mieux traitées ». En MP, III.4 n'a été traitée que par la moitié des candidats, avec 40 \% des points en moyenne.
+
+\end{jury}
+
+\hypertarget{question-iii.5}{%
+\subsection{Question III.5}\label{question-iii.5}}
+
+\begin{indication}{1}
+
+Dans votre code, à quelle condition un centroïde n'est-il pas recalculé ? Cette situation peut-elle se produire ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Cherchez un tout petit exemple en dimension 1, en jouant sur l'initialisation aux premiers vecteurs et sur l'inégalité stricte de \texttt{pick}.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\textbf{Oui.} Un centroïde \(j\) n'est pas mis à jour si aucun vecteur ne lui est affecté (\texttt{counts.(j)\ =\ 0}). Exemple : \(db=(0,0,1)\) en dimension 1 avec \(k=2\). Les deux centroïdes initiaux valent \(0\). À cause de l'inégalité stricte, \texttt{pick} affecte les trois vecteurs au centroïde 0, et le centroïde 1 n'est pas mis à jour. Plus généralement, un groupe peut se vider au fil des itérations.
+
+Si l'on entend « mis à jour » au sens de « modifié », la réponse reste oui : un centroïde dont le groupe ne change pas est recalculé à l'identique, ce qui arrive dès que l'algorithme a convergé.
+
+\begin{jury}
+
+Le rapport 2026 précise : « nous souhaitions faire référence au cas où un centroïde n'est affecté à aucun point, mais nous avons compté juste pour les copies ayant interprété différemment la question ». La réponse attendue est donc celle du groupe vide ; l'autre lecture a été acceptée.
+
+\end{jury}
+
+\hypertarget{question-iii.6}{%
+\subsection{Question III.6}\label{question-iii.6}}
+
+\begin{indication}{1}
+
+Initialisez les centroïdes avec des copies des \(k\) premiers vecteurs, puis alternez \texttt{pick} et \texttt{update}.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que contient \texttt{centroid\_of} à la fin, par rapport aux centroïdes que vous renvoyez ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\begin{lstlisting}[language=Caml]
+let kmeans (db : matrix) (k : int) (n_iter : int) : int array * matrix =
+  let centroids = Array.init k (fun j -> Array.copy db.(j)) in
+  let centroid_of = Array.make (Array.length db) 0 in
+  for _ = 1 to n_iter do
+    pick db centroids centroid_of;
+    update k db centroid_of centroids
+  done;
+  pick db centroids centroid_of;
+  (centroid_of, centroids)
+\end{lstlisting}
+
+Le \texttt{pick} final rend l'affectation cohérente avec les centroïdes renvoyés. Version sans ce \texttt{pick} final, aussi acceptable : on fait \texttt{n\_iter} fois \texttt{pick} puis \texttt{update}, et \texttt{centroid\_of} correspond alors à l'avant-dernière position des centroïdes. Le coût est \(O((n_{\text{iter}}+1)\,n\,k\,d)\).
+
+\begin{piege}
+
+Sans \texttt{Array.copy}, \texttt{centroids.(j)} et \texttt{db.(j)} désignent le même tableau. Toute modification en place d'un centroïde altérerait alors la base.
+
+\end{piege}
+
+\hypertarget{question-iii.7}{%
+\subsection{Question III.7}\label{question-iii.7}}
+
+\begin{indication}{1}
+
+Décomposez le travail : \texttt{submatrix} découpe la base en paquets, \texttt{kmeans} donne pour chaque paquet les codes et les centroïdes, et une petite fonction auxiliaire calcule la table des \(d_\ell(a,b)\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(D'_{ij}\) est une somme sur les paquets : un \texttt{List.fold\_left} sur la liste des résultats par paquet s'en charge.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\begin{lstlisting}[language=Caml]
+(* table des d_l(a, b) pour les centroïdes d'un paquet *)
+let table (centroids : matrix) : square =
+  let k = Array.length centroids in
+  Array.init_matrix k k (fun a b -> dist2 centroids.(a) centroids.(b))
+
+let approx_dist (db : matrix) (k : int) (n_iter : int) (m : int) : square =
+  let n = Array.length db in
+  let quant =
+    List.map (fun pack -> let (c, cent) = kmeans pack k n_iter in (c, table cent))
+      (submatrix db m)
+  in
+  Array.init_matrix n n (fun i j ->
+      List.fold_left (fun acc (c, t) -> acc +. t.(c.(i)).(c.(j))) 0. quant)
+\end{lstlisting}
+
+Pour le paquet \(\ell\), \texttt{c.(i)} \(=c_\ell(p_i)\) et \texttt{t.(a).(b)} \(=d_\ell(a,b)\). Le \texttt{fold\_left} donne donc \(D'_{ij}=\sum_{\ell}d_\ell(c_\ell(p_i),c_\ell(p_j))\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/iii7-quantification-produit.pdf}
+\caption*{Figure 4 --- Quantification de produit avec m = 3 paquets et k = 4 : la
+distance approchée D′ij est la somme des lectures d1(2, 1), d2(0, 0) et
+d3(3, 2) dans les tables des paquets}
+\end{figure}
+
+Coût :
+- les \(k\)-moyennes : \(O(n_{\text{iter}}\,n\,k\,d)\) ;
+- les tables : \(O(k^2 d)\) ;
+- le remplissage de la matrice : \(O(n^2 m)\).
+
+\begin{methode}
+
+Calculer la table des \(d_\ell(a,b)\) une seule fois, puis la consulter, ramène le remplissage de \(O(n^2 d)\) à \(O(n^2 m)\). C'est exactement le pré-calcul étudié en III.8. Vérification rapide : avec \(k=n\), chaque vecteur est son propre centroïde, et l'on retrouve les distances exactes de III.1.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 note que « Quelques copies ont proposé des codes élégants tirant parti de la programmation fonctionnelle OCaml pour implémenter la quantification de produit (III.7) ». Découper en petites fonctions, comme \texttt{table} ici, et composer \texttt{List.map} et \texttt{List.fold\_left} est exactement ce que suggère l'énoncé.
+
+\end{jury}
+
+\hypertarget{question-iii.8}{%
+\subsection{Question III.8}\label{question-iii.8}}
+
+\begin{indication}{1}
+
+Pour (a), comptez les entrées du dictionnaire, puis le coût d'une entrée. Attention à la dimension d'un paquet.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour (b), de quoi \(D'_{ij}\) dépend-il réellement ? Pour (c) et (d), que coûte un \(D'_{ij}\) une fois le dictionnaire disponible, et que manque-t-il pour un vecteur qui n'est pas dans la base ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\textbf{(a)} Il y a \(m\,k^2\) entrées, chacune calculée en \(O(d/m)\), car un paquet est de dimension \(d/m\). Le total est \(\boxed{O(k^2 d)}\).
+
+\textbf{(b)} \(D'_{ij}\) ne dépend que du couple de codes \((q(p_i),q(p_j))\in[k]^m\times[k]^m\). Il prend donc au plus \(\boxed{k^{2m}}\) valeurs distinctes. Par symétrie de \(d_\ell\), la valeur ne dépend que des paires non ordonnées \(\{c_\ell(p_i),c_\ell(p_j)\}\). On obtient la borne plus fine \(\left(\frac{k(k+1)}2\right)^m\).
+
+\textbf{(c)} Chaque \(D'_{ij}\) coûte \(m\) lectures dans le dictionnaire et \(m\) additions. Pour les \(n\) candidats, avec la recherche du minimum, le coût est \(\boxed{O(n\,m)}\). Il faut ajouter \(O(n\log n)\) si l'on veut les voisins triés.
+
+\textbf{(d)} Il faut d'abord \textbf{coder} \(p\) : pour chaque paquet, on cherche le plus proche des \(k\) centroïdes en dimension \(d/m\), soit \(O(k\,d)\) au total. Ensuite, on procède comme en (c). Le coût est \(\boxed{O(k\,d+n\,m)}\), à comparer au \(O(n\,d)\) de la recherche exacte.
+
+\begin{piege}
+
+En (d), le vecteur n'est pas dans la base : son code n'est pas pré-calculé. Oublier le terme \(O(k\,d)\) du codage est l'erreur typique.
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, III.7 et III.8 « permettaient de comprendre l'intérêt de cette dernière partie ». III.8 est pourtant la question la moins réussie du sujet : 8 \% des points en moyenne pour les MP qui l'ont traitée, 19 \% pour les MPI. Ses quatre sous-questions sont courtes : en fin d'épreuve, elles valent la peine d'être tentées.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+- \emph{Bits et ensembles} : \texttt{1\ lsl\ i} pour un singleton, \texttt{land} pour l'intersection, \texttt{b\ land\ (-b)} pour isoler le bit de poids faible. Le comptage de bits par extinction successive est linéaire en le cardinal.
+- \emph{Listes triées} : la fusion donne l'intersection en temps linéaire. Une file en fenêtre glissante permet de compter des couples proches en un seul passage, avec un coût amorti linéaire.
+- \emph{Probabilités pour l'algorithmique} : les indicatrices et la linéarité de l'espérance (II.2), l'analyse au premier pas (II.4), et le découpage à un seuil où l'on attend une seule valeur (II.5). Le \emph{MinHash} se ramène à « le plus petit élément d'une permutation uniforme est uniforme ».
+- \emph{Preuves de programmes} : invariant et variant (I.5, II.3, I.8), et variant strictement décroissant pour la terminaison d'un glouton sans marquage (II.7).
+- \emph{\(k\)-moyennes et quantification} : alterner affectation et recalcul, gérer les groupes vides, et pré-calculer des tables pour passer de \(O(d)\) à \(O(m)\) par distance.
+
+\textbf{Ce que retient le rapport 2026.} Les questions discriminantes sont II.1 et II.3, qui testent la compréhension des listes à sauts. Les difficultés portent aussi sur I.3 à I.5 (représentation binaire des entiers) et sur I.8, jugée plus difficile, où l'argument amorti est attendu. Les moins réussies sont II.4, II.5, II.7, III.7 et III.8.
+
+\textbf{Prérequis à revoir.} Les opérations bit à bit en OCaml ; le module \texttt{Queue} ; le partage de mémoire entre tableaux (\texttt{Array.make} et \texttt{Array.init}, \texttt{Array.copy}) ; les enregistrements à champs mutables ; l'espérance d'une loi géométrique.
+
+\textbf{Questions classiques transposables.} La recherche naïve de motif et sa complexité (I.1) ; l'intersection de listes triées (I.6) ; la recherche et l'insertion dans une liste chaînée triée, généralisées aux \emph{skip lists} (II.3, II.6) ; l'analyse moyenne de Pugh (II.4, II.5) ; l'algorithme de Lloyd pour les \(k\)-moyennes (III.3 à III.6) ; les compromis entre pré-calcul et requête (III.8).
+
+\end{document}

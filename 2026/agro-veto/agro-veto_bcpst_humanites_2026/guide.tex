@@ -1,0 +1,736 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto BCPST — Humanités 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Agro-Véto BCPST}
+\fancyhead[R]{\small Humanités 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Agro-Véto BCPST — Humanités 2026\par}\medskip
+  {\large Agro-Véto · BCPST · Humanités · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Nature de l'épreuve.} Dissertation de 3 heures sur programme, sans document ni calculatrice. Le sujet tient en une page : une citation de François Ost, suivie d'une question unique. Aucune contrainte de longueur n'est imposée ; la copie que le jury reproduit dans son rapport 2026 comme excellente occupe près de onze pages manuscrites.
+
+\textbf{La citation.} « Si la nature, au terme de son évolution, a produit l'espèce humaine dont elle assure journellement les conditions de survie, elle est aussi, pour l'homme, ``tout autre'', étrangère absolument. Homme et nature ont ``partie liée'' sans pour autant qu'on puisse ramener l'un à l'autre. » (François Ost, \emph{La Nature hors la loi}, La Découverte, « Écologie et société », 1995.) Ost est juriste et philosophe du droit ; son livre examine comment le droit peut penser la nature. Sans qu'il soit nécessaire de le connaître, on retiendra que la phrase refuse à la fois de séparer l'homme de la nature et de les confondre, et qu'elle met l'accent sur la frontière.
+
+\textbf{La consigne.} « En quoi ce propos éclaire-t-il votre réflexion sur les expériences de la nature ? » Le verbe \emph{éclairer} fait du propos un instrument de lecture, non une thèse à approuver en bloc ; « en quoi » demande la mesure et les modalités de cet éclairage, ce qui autorise à discuter la thèse, puis à la prolonger.
+
+\textbf{Les œuvres} (dans l'ordre chronologique, comme le jury attend qu'on les mentionne en introduction).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2719}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6981}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Œuvre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ce qu'elle apporte au sujet
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Jules Verne, \emph{Vingt mille lieues sous les mers} (1869-1870) & La survie dans l'abondance : le \emph{Nautilus} vit de la mer, « nourrice prodigieuse », mais à l'abri d'une coque et d'une vitre. L'altérité des formes vivantes (le « bizarre zoophyte », les poulpes) ; un anthropomorphisme moral (Nemo protège les baleines « bonnes » et massacre les cachalots) ; l'hybris punie (banquise, Maelström). \\
+Georges Canguilhem, \emph{La Connaissance de la vie} (1952, édition augmentée en 1965 ; extraits) & Le concept : « la pensée n'est rien d'autre que le décollement de l'homme et du monde » (« La pensée et le vivant ») ; la connaissance comme assimilation ; les limites de l'expérimentation et la critique de l'anthropomorphisme (« L'expérimentation en biologie animale ») ; la technique comme fait de vie (« Machine et organisme ») ; le milieu propre (« Le vivant et son milieu ») ; les valeurs humaines irréductibles aux normes vitales (« Le normal et le pathologique ») ; le monstre, qui met en question notre habitude de voir le même engendrer le même (« La monstruosité et le monstrueux »). \\
+Marlen Haushofer, \emph{Le Mur invisible} (1963) & La survie dans la pénurie : une femme isolée par une paroi transparente vit de peu avec quelques bêtes. L'étrangeté (« Étranger et méchant restent encore pour moi une seule et même chose ») ; la crainte de la déshumanisation ; la responsabilité envers les bêtes ; une nature qui se passera de l'homme. \\
+\end{longtable}
+
+Attention au périmètre de Canguilhem : sont au programme l'introduction, la partie « Méthode » et les chapitres II à V de la partie « Philosophie » (« Machine et organisme », « Le vivant et son milieu », « Le normal et le pathologique », « La monstruosité et le monstrueux »). Le chapitre I (« Aspects du vitalisme ») et la partie « Histoire » (« La théorie cellulaire ») en sont exclus.
+
+\textbf{Ce que le rapport 2026 dit des copies.} Le sujet a produit peu de contresens majeurs, et le jury a relevé d'excellents travaux : pour la deuxième année consécutive, un quart des candidats a obtenu 13 sur 20 ou davantage. Les écarts se sont faits sur des points précis, qui sont autant de questions discriminantes :
+
+\begin{itemize}
+\tightlist
+\item
+  l'\textbf{analyse de la citation}, où le jury a constaté cette année des lacunes inhabituelles : valeur concessive de « si », distinction d'« autre » et d'« étranger », sens exact d'« avoir partie liée », portée de « ramener » ;
+\item
+  la \textbf{problématisation du paradoxe}, trop rarement faite alors qu'il était souvent perçu ;
+\item
+  le \textbf{plan} : ni dissociation des deux termes du paradoxe dans deux parties, ni plan qui suit le mouvement de la citation ;
+\item
+  la \textbf{mobilisation de Canguilhem}, moins exploité que les deux récits, et qu'il ne fallait pas reléguer en deuxième ou troisième partie.
+\end{itemize}
+
+\textbf{Difficulté.} Le sujet semble accessible, car la citation épouse le thème, et c'est son piège : il est facile de rabattre le propos sur des questions traitées pendant l'année (la nature nourricière, la domination de la nature, les mystères de la nature) ou de réciter une dissertation préparée. La différence se fait sur l'analyse fine des mots, sur la tenue du paradoxe comme un tout dans chaque partie et sur des références précises, commentées et exactes.
+
+\textbf{Gestion du temps conseillée.} Environ 20 minutes d'analyse du propos et de la consigne, 30 minutes d'inventaire des œuvres et de construction du plan, 15 minutes pour rédiger l'introduction au brouillon, environ 1 h 40 de rédaction au propre (une trentaine de minutes par partie), et 15 minutes pour la conclusion et la relecture (titres des œuvres soulignés, nom de l'éditeur en caractères droits, orthographe de Canguilhem, Haushofer, Aronnax, Uexküll).
+
+\textbf{Ce qu'il ne faut pas laisser passer.} La valeur concessive de « si », qui fait porter l'accent sur la limite ; l'adverbe « journellement » et le mot « survie » ; la différence entre « autre », « étranger » et « hostile » ; le sens d'« avoir partie liée » (solidarité réciproque) ; la double interdiction contenue dans « ramener » (anthropomorphisme et naturalisme) ; la présence des trois œuvres dans chaque partie, Canguilhem compris dès la première.
+
+\hypertarget{partie-i-comprendre-le-sujet}{%
+\section{Partie I --- Comprendre le sujet}\label{partie-i-comprendre-le-sujet}}
+
+Les trois premières étapes se font au brouillon, avant toute recherche d'exemples : on ne mobilise les œuvres qu'après avoir compris ce que le propos permet de voir.
+
+\hypertarget{uxe9tape-1-analyser-la-citation}{%
+\subsection{Étape 1 --- Analyser la citation}\label{uxe9tape-1-analyser-la-citation}}
+
+\begin{indication}{1}
+
+Découpez les deux phrases en propositions et repérez les rapports logiques entre subordonnée et principale : quelle est la valeur de « si » ? Sur quelle proposition l'accent porte-t-il alors ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pesez les mots les plus marqués : un adverbe de temps, deux expressions entre guillemets, deux adverbes d'intensité et un verbe à l'infinitif dans la dernière proposition. « Autre » et « étranger » disent-ils la même chose ? Que désignent les deux mouvements interdits par « ramener » ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le propos se décompose en quatre temps.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Une concession d'ordre biologique} : « Si la nature, au terme de son évolution, a produit l'espèce humaine ». « Si » a ici une valeur concessive, non hypothétique : l'auteur accorde un fait pour mieux affirmer ce qui suit. La nature est le sujet des verbes : elle apparaît comme une puissance qui a sa vie propre. « Au terme de son évolution » renvoie à l'évolution darwinienne et fait de l'homme un résultat tardif, ce qui n'en fait pas pour autant le centre de la nature.
+\item
+  \textbf{Une dépendance renouvelée} : « dont elle assure journellement les conditions de survie ». L'adverbe déplace la dépendance de l'origine vers le quotidien, et le mot « survie » la limite au nécessaire : il n'y est pas question d'abondance.
+\item
+  \textbf{Une altérité radicale, du point de vue de l'homme} : « elle est aussi, pour l'homme, ``tout autre'', étrangère absolument ». La principale porte la thèse. « Tout autre » dit la différence de nature (l'expression, entre guillemets, évoque le tout autre du vocabulaire religieux) ; « étrangère » dit l'extériorité, ce qui vient du dehors. Les deux ne se confondent pas : l'étranger peut me ressembler, et l'autre n'est pas forcément du dehors. Les adverbes « tout » et « absolument » radicalisent l'une et l'autre. Aucun de ces mots ne signifie « hostile ».
+\item
+  \textbf{Un lien sans réduction} : « Homme et nature ont ``partie liée'' sans pour autant qu'on puisse ramener l'un à l'autre. » « Avoir partie liée », c'est être engagé solidairement avec quelqu'un dans une même affaire : la solidarité est réciproque, et l'on ne lie que des termes distincts. La concession « sans pour autant » ramène l'accent sur la limite. « Ramener » interdit deux réductions : ramener la nature à l'homme (l'anthropomorphisme, qui lui prête des traits, des intentions ou des valeurs humaines) et ramener l'homme à la nature (le naturalisme, qui prétend tirer de la nature les normes humaines et nie la culture). La solidarité exclut de son côté le dualisme qui fait de la nature un simple moyen.
+\end{enumerate}
+
+La thèse tient en une formule : ni séparés, ni confondus, avec un accent sur la frontière.
+
+\begin{piege}
+
+Lire la citation comme une thèse simple (« l'homme fait partie de la nature ») ou comme une opposition (« l'homme contre la nature »). Le propos tient les deux affirmations ensemble, et la seconde phrase n'est pas une simple reformulation de la première : elle noue le paradoxe.
+
+\end{piege}
+
+\begin{piege}
+
+Glisser de l'« étranger » à l'« ennemi » : on parle alors d'un « rapport de force » ou d'une « supériorité de la nature », et l'on quitte le sujet. Autre écart fréquent, en sens inverse : lire « au terme de son évolution » comme une vision anthropocentrique, alors que la nature est le sujet de la phrase.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 regrette que la subordonnée concessive ait suscité trop peu d'intérêt : « il n'est pas rare que la concession ait été confondue avec une hypothèse, la valeur de la conjonction ``si'' ayant été mal interprétée ». Il conclut : « l'accent porte bien sur la limite qui sépare l'homme et la nature » (p.~5-6).
+
+\end{jury}
+
+\begin{jury}
+
+Sur les adjectifs, le rapport 2026 rappelle que « l'étranger peut, à certains égards, me ressembler, et tout autre n'est pas un étranger », et que « l'étranger n'est pourtant pas nécessairement l'ennemi » (p.~5). Il note aussi que les adverbes et les guillemets ont été « très peu commentés par les candidats » (p.~9).
+
+\end{jury}
+
+\begin{jury}
+
+Sur la locution, le rapport 2026 donne le sens : « Au sens propre, ``avoir partie liée'' signifie ``être engagé solidairement avec quelqu'un dans une affaire'' » (p.~10). Il observe que « le sens exact de la locution verbale a échappé à la plupart des candidats », et s'est montré bienveillant pourvu que l'analyse n'aplanisse pas le propos (p.~4).
+
+\end{jury}
+
+\hypertarget{uxe9tape-2-analyser-la-consigne-et-le-thuxe8me}{%
+\subsection{Étape 2 --- Analyser la consigne et le thème}\label{uxe9tape-2-analyser-la-consigne-et-le-thuxe8me}}
+
+\begin{indication}{1}
+
+Comparez « en quoi ce propos éclaire-t-il\ldots{} » avec « discutez » ou « commentez » : quel rôle la consigne donne-t-elle à la citation ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le thème est au pluriel et construit avec un génitif : « les expériences de la nature ». Quelles expériences le propos lui-même nomme-t-il ? Et combien de sens le mot « expérience » peut-il prendre ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\textbf{La consigne.} La citation est un instrument : elle doit faire apparaître, dans les œuvres, ce qui sans elle resterait dans l'ombre. « En quoi » porte sur la mesure et les modalités de l'éclairage : on peut défendre la thèse, la discuter sur un point précis, puis la prolonger, à condition de se situer toujours par rapport à elle.
+
+\textbf{Les expériences que nomme le propos.} Le sujet ne parle pas de n'importe quelle expérience : il en désigne trois, qui doivent rester au centre du devoir.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2016}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3322}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4362}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Expérience
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ce que dit le propos
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Où la trouver
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+La survie & dépendance renouvelée chaque jour (« journellement »), limitée au nécessaire & abondance du \emph{Nautilus} et pénurie du \emph{Mur invisible} ; le milieu chez Canguilhem \\
+L'altérité et l'étrangeté & « tout autre », « étrangère absolument » & variété des formes vivantes chez Verne, opacité des bêtes chez Haushofer ; décollement de la pensée et monstruosité chez Canguilhem \\
+La solidarité sans confusion & « partie liée », « sans pour autant {[}\ldots{]} ramener » & responsabilité envers les bêtes, critique de l'anthropomorphisme et du naturalisme \\
+\end{longtable}
+
+\textbf{Le mot « expérience ».} Il désigne l'épreuve vécue (la peine, l'émerveillement, la peur), la connaissance acquise par l'action ou par l'expérimentation et, si l'on prend le génitif au sens subjectif, les essais que fait la nature elle-même : pour Canguilhem, la vie est « tentative dans tous les sens », et le monstre en révèle le caractère expérimental.
+
+\begin{methode}
+
+Quand un thème contient un génitif (« expériences de la nature »), testez les deux lectures, objective et subjective. Mais partez toujours de ce que la citation nomme : le thème s'éclaire par le propos, non l'inverse.
+
+\end{methode}
+
+\begin{piege}
+
+Plaquer sur le sujet des expériences qu'il n'évoque pas (contemplation, émotion esthétique, art) au détriment de la survie, de l'altérité et du lien, qui sont celles du propos.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 le relève : « Trop souvent aussi, diverses expériences de la nature -- esthétique, artistique, contemplative\ldots{} --- ont été plaquées sur le sujet, au détriment de celles qui y étaient précisément évoquées » (p.~3).
+
+\end{jury}
+
+\hypertarget{uxe9tape-3-probluxe9matiser}{%
+\subsection{Étape 3 --- Problématiser}\label{uxe9tape-3-probluxe9matiser}}
+
+\begin{indication}{1}
+
+Une problématique naît de l'intérieur du propos : faites jouer ses termes les uns contre les autres. Comment ce qui nous fait vivre peut-il nous rester étranger, et qu'est-ce qui lie encore deux termes séparés par un tel écart ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Ne remettez pas la citation à la forme interrogative et n'en faites pas une alternative entre ses deux moitiés. Demandez-vous plutôt pourquoi l'auteur insiste sur la frontière, et ce que nos expériences en confirment ou en contestent.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Le paradoxe est le point de départ. Si l'homme n'existe que par la nature et l'éprouve chaque jour, comment peut-elle lui demeurer « étrangère absolument » ? Et si un tel écart les sépare, qu'est-ce qui les lie encore ? On peut alors interroger la radicalité de la frontière, et l'enjeu de son maintien :
+
+\textbf{La frontière que François Ost maintient au cœur même de la dépendance rend-elle justice à nos expériences de la nature, ou ces expériences, en la rendant poreuse, obligent-elles à repenser ce que signifie « avoir partie liée », et pourquoi il importe malgré tout de ne pas « ramener l'un à l'autre » ?}
+
+\begin{piege}
+
+Problématiser en opposant deux camps (« certains pensent que\ldots{} d'autres au contraire\ldots{} ») ou deux réponses (« l'homme et la nature sont-ils unis ou séparés ? »). Ost refuse lui-même la séparation et la confusion : une telle question démembre le propos, et le devoir qui en sort traite chaque moitié dans une partie.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 est net : « mettre la citation, ou les principaux acquis de l'analyse, à la forme interrogative, n'est pas considéré comme une démarche de problématisation, et ne rapporte par conséquent pas de points » (p.~6). Il ajoute : « Il convenait également de ne pas transformer le paradoxe en alternative » (p.~8), et regrette que si peu de candidats aient ancré leur problématique dans le paradoxe.
+
+\end{jury}
+
+\hypertarget{partie-ii-construire-le-devoir}{%
+\section{Partie II --- Construire le devoir}\label{partie-ii-construire-le-devoir}}
+
+Le plan se construit à partir de la thèse prise comme un tout, puis on y répartit les œuvres. L'inverse, partir des scènes que l'on connaît, produit un catalogue.
+
+\hypertarget{uxe9tape-4-faire-linventaire-des-ux153uvres}{%
+\subsection{Étape 4 --- Faire l'inventaire des œuvres}\label{uxe9tape-4-faire-linventaire-des-ux153uvres}}
+
+\begin{indication}{1}
+
+Faites trois colonnes au brouillon (Verne, Canguilhem, Haushofer) et, pour chaque œuvre, cherchez une scène ou une thèse où la dépendance et la frontière apparaissent ensemble, une autre qui rend la frontière moins absolue, une troisième qui montre une continuité sans confusion.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour Canguilhem, chaque chapitre au programme correspond à une idée utilisable : associez à chacun une phrase-thèse avant de chercher où la placer, et vérifiez que vous savez distinguer ses thèses de celles qu'il rapporte et discute.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Les pages renvoient aux éditions retenues par le rapport 2026 (Folio classique pour Verne, Vrin pour Canguilhem, Babel pour Haushofer).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0979}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2694}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3211}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2816}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verne
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Canguilhem
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Haushofer
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Dépendance et frontière ensemble & Nemo et la mer « nourrice prodigieuse » (I, X, p.~150), vue à travers la vitre du salon ; « bizarre zoophyte » (p.~316) et questions sans réponse devant l'Atlantide (p.~453) ; rêve du mollusque (p.~473) ; baleines « bonnes », cachalots massacrés (p.~496) ; épaves des fonds marins & Milieu centré sur le vivant (« Le vivant et son milieu », p.~184-185) ; connaissance comme résolution des tensions avec le milieu (p.~12-13) ; « la pensée n'est rien d'autre que le décollement de l'homme et du monde » (p.~12) ; Harvey contre l'irrigation (p.~26-27) ; « Un homme ne vit pas uniquement comme un arbre ou comme un lapin » (p.~200) ; « créateur de configuration géographique » (p.~182) & Pommes de terre, haricots, almanach (p.~50-56) ; « cette créature qui seule n'avait pas sa place ici » (p.~72-73) ; « Étranger et méchant\ldots{} » (p.~293) ; « un homme ne peut jamais devenir un animal » (p.~51) ; responsabilité des bêtes (p.~92) ; Lynx, nom d'un animal exterminé (p.~45) \\
+Frontière moins absolue, lien fragile & Ned Land contre Conseil (I, XIV) ; extinction des lamantins et fièvre jaune (p.~573) ; « ce cadavre refroidi » (p.~421) ; vie apparue sans l'homme sur l'île Clermont-Tonnerre (I, XIX) ; « l'homme des eaux, le génie des mers » (p.~635) & Dépendance commune « à l'égard des sommations du besoin » (p.~13) ; « théories d'assimilation » (p.~12) ; l'idée d'un « règne séparé » (p.~13) ; Descartes et l'animal-machine (p.~142-143) ; « une sorte de mimétisme » (p.~29) & Les barrières entre hommes et bêtes tombent (p.~274) ; prévoir le temps (p.~91), les étoiles familières (p.~221) ; le mur comme « arme idéale » (p.~48) ; les orties qui survivront (p.~215) ; le meurtre de Taureau et de Lynx (p.~188) ; les pigeons de la ville (p.~256-257) ; les racines de la forêt (p.~215) \\
+Continuité sans coïncidence & Le \emph{Nautilus} qui « respire à la manière des cétacés » (p.~293) ; pôle et banquise ; Maelström au dénouement ambigu ; Atlantide ; dugong permis, baleines refusées ; Ceylan ; \emph{mobilis in mobili} & « Phénomène biologique universel » (« Machine et organisme », p.~163) ; « la vie est expérience {[}\ldots{]} tentative dans tous les sens » (p.~152) ; tératogénie (p.~233) ; « La pensée du vivant doit tenir du vivant l'idée du vivant » (p.~16) & La scie (p.~93) ; les « dieux » techniques (p.~258-259) ; Perle et l'angora (p.~149) ; le chien (p.~136) ; le grand jeu des astres (p.~244) ; « Je ne suis pas le dieu des lézards » et le rôle de la providence (p.~214) ; la corneille blanche ; le « rapport » écrit \\
+\end{longtable}
+
+\begin{piege}
+
+Écarter « Machine et organisme » en le croyant hors programme : c'est le chapitre II de la partie « Philosophie », explicitement visé par le libellé (« chapitres II, III, IV et V »). Il est précieux ici, pour la continuité entre technique et vie.
+
+\end{piege}
+
+\begin{piege}
+
+Attribuer à Canguilhem une thèse qu'il rapporte. La phrase sur le milieu « étranger », qui « ne fait rien pour la vie », exprime la conception de Lamarck que Canguilhem retrace ; elle n'est pas la sienne. De même, l'image de la route et du hérisson, à la fin de « L'expérimentation en biologie animale », a une visée surtout méthodologique : elle ne sert pas à déplorer l'indifférence des hommes envers les animaux.
+
+\end{piege}
+
+\begin{piege}
+
+Citer une phrase de seconde main. Mieux vaut une reformulation précise, rattachée à un chapitre ou à un épisode nommé, qu'une citation approximative ou fausse donnée pour exacte.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale des citations fabriquées et une formule qui revenait dans plusieurs copies, « La forêt décide, je m'incline », absente du \emph{Mur invisible} et puisée sur une fiche en ligne (p.~15). Il prévient que ces citations « sont aisément repérables par les correcteurs ».
+
+\end{jury}
+
+\begin{jury}
+
+Sur Canguilhem, le rapport 2026 tranche : « Il n'est pas recevable que les candidats relèguent \emph{La Connaissance de la vie} à la deuxième, voire à la troisième partie de la dissertation » (p.~14). Le recueil pouvait étayer toutes les étapes du raisonnement.
+
+\end{jury}
+
+\hypertarget{uxe9tape-5-construire-le-plan}{%
+\subsection{Étape 5 --- Construire le plan}\label{uxe9tape-5-construire-le-plan}}
+
+\begin{indication}{1}
+
+Ne tirez pas le plan du mouvement de la citation (survie, puis étrangeté, puis lien) : chaque partie doit traiter le propos tout entier. Cherchez plutôt à le défendre, puis à le discuter sur un point précis, puis à le prolonger.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la discussion, repérez les mots les plus radicaux (« tout », « absolument ») et les plus discutables (« ont » partie liée, comme d'un état acquis ; « terme » de l'évolution). Pour le prolongement, demandez-vous ce que devient la frontière si l'on pense la continuité entre la vie et les activités humaines.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{I. Le paradoxe tenu d'un seul tenant : la dépendance fait paraître la frontière.} A. Une survie qui passe par des médiations (la mer « nourrice » du \emph{Nautilus} et la pénurie du \emph{Mur invisible} ; le milieu chez Canguilhem ; la coque, la vitre, les outils). B. La pensée comme décollement ; l'altérité des formes vivantes et l'étrangeté, qui n'est pas l'hostilité (Canguilhem, le rêve d'Aronnax, la narratrice redevenue « créature » sans place, les poulpes, les insectes). C. Ne ramener ni l'un à l'autre (anthropomorphisme : Harvey, Nemo et les baleines, l'innocence de la nature ; naturalisme : l'homme qui ne vit pas « comme un arbre ou comme un lapin », l'abîme ; d'où la responsabilité et la réciprocité du lien).
+\item
+  \textbf{II. Une frontière moins absolue, un lien plus fragile.} A. La nature en l'homme et la connaissance qui assimile (le corps et la souffrance, Ned Land, les signes du temps, les « théories d'assimilation »). B. Une solidarité que l'homme défait et que la nature ne rend pas (le « règne séparé », l'animal-machine, les espèces exterminées, le mur comme arme, les orties qui survivront, l'homme qui tue Lynx). C. Réinscrire l'homme dans la nature sans l'y confondre (les pigeons de la ville, la mer de Nemo, le mimétisme ; mais les racines de la forêt et « le génie des mers »).
+\item
+  \textbf{III. Une continuité sans coïncidence, qui fonde une éthique.} A. La technique et le savoir prolongent la vie (« Machine et organisme », la scie, le \emph{Nautilus} qui respire ; les techniques divinisées, le savoir pour le savoir). B. Une évolution sans « terme » (la vie « tentative dans tous les sens », Perle, l'Atlantide ; l'hybris : banquise, Maelström, tératogénie, le grand jeu des astres). C. Responsabilité et humilité (rationalisme raisonnable, « Je ne suis pas le dieu des lézards », dugong et baleines ; Ceylan, la corneille blanche, le récit, \emph{mobilis in mobili}).
+\end{itemize}
+
+Les transitions portent le mouvement : la première partie se clôt sur une question qui vise la radicalité de « tout autre » et « absolument » ; la deuxième montre que la frontière reparaît, déplacée, au moment où l'on voudrait la supprimer, ce qui ouvre la troisième.
+
+\begin{methode}
+
+Vérifiez sur une grille de neuf cases (trois parties, trois œuvres) qu'aucune case n'est vide, puis, paragraphe par paragraphe, que chacun confronte au moins deux œuvres. Une œuvre absente d'une partie entière se remarque aussitôt.
+
+\end{methode}
+
+\begin{piege}
+
+Consacrer une partie à la proximité et une autre à l'éloignement. Même avec une troisième partie de « réconciliation », ce plan démembre la thèse : il illustre la citation au lieu d'en débattre.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 prévient qu'« on ne pouvait espérer obtenir une note très satisfaisante en envisageant dans une grande partie la proximité entre l'homme et la nature, et dans une autre leur éloignement, c'est-à-dire en dissociant les termes du paradoxe » (p.~2). Il ajoute : « Le jury s'étonne que tant de candidats aient eu pour tout projet argumentatif de suivre le mouvement de la pensée de François Ost » (p.~11).
+
+\end{jury}
+
+\begin{jury}
+
+Le rapport 2026 fixe des repères chiffrés : « chaque grande partie doit contenir au moins une référence pertinente à chaque œuvre », et « tous les paragraphes argumentatifs comportent au minimum deux exemples tirés d'œuvres différentes » (p.~14).
+
+\end{jury}
+
+\hypertarget{partie-iii-ruxe9diger}{%
+\section{Partie III --- Rédiger}\label{partie-iii-ruxe9diger}}
+
+\hypertarget{uxe9tape-6-ruxe9diger-lintroduction}{%
+\subsection{Étape 6 --- Rédiger l'introduction}\label{uxe9tape-6-ruxe9diger-lintroduction}}
+
+\begin{indication}{1}
+
+Cherchez une amorce qui soit déjà un argument : une scène précise, tirée des œuvres, qui fasse sentir la tension du propos. Deux scènes symétriques valent mieux qu'une généralité ou qu'un texte hors programme sans rapport étroit avec la citation.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Enchaînez dans cet ordre : amorce, citation intégrale avec sa source, analyse des termes et des rapports logiques, problématique, mention des œuvres dans l'ordre chronologique, annonce du plan en phrases rédigées.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+L'introduction du devoir complet (étape 7) suit ces temps. Son amorce rapproche deux vitres : celle du salon du \emph{Nautilus}, derrière laquelle Aronnax découvre la mer vivante, et la paroi transparente contre laquelle se heurte la narratrice du \emph{Mur invisible}. Le rapprochement pose d'emblée qu'on peut être au plus près de la nature et en rester séparé, c'est-à-dire le paradoxe lui-même. L'analyse suit ensuite la construction du propos (concession, principale, nouvelle concession), distingue « autre » et « étranger », définit « avoir partie liée » et les deux réductions interdites. Le passage au thème part des expériences que la citation nomme. La problématique fait jouer les termes les uns contre les autres, puis l'annonce du plan expose les trois temps de la réponse.
+
+\begin{piege}
+
+Une amorce sur « l'homme et la nature depuis la nuit des temps » n'apprend rien au lecteur. Une amorce reprise d'un sujet de l'année, qui ne prépare aucun argument, est une amorce perdue.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 rappelle les attendus formels : « amorce, citation intégrale de l'énoncé rapporté à sa source, analyse de la citation, problématisation et mention des œuvres au programme par ordre chronologique » (p.~3). Il cite en contre-exemple un passage des \emph{Travailleurs de la mer} sur les masques de la nature, souvent placé en amorce alors qu'il n'entretient avec le propos « qu'un rapport très lâche ».
+
+\end{jury}
+
+\hypertarget{uxe9tape-7-ruxe9diger-le-duxe9veloppement-et-la-conclusion}{%
+\subsection{Étape 7 --- Rédiger le développement et la conclusion}\label{uxe9tape-7-ruxe9diger-le-duxe9veloppement-et-la-conclusion}}
+
+\begin{indication}{1}
+
+Dans chaque paragraphe, reprenez au moins un mot du propos entre guillemets et dites ce que l'exemple fait à la thèse (il la confirme, la nuance, la prolonge) : c'est ce qui empêche le devoir de glisser vers une dissertation générale sur le thème.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Rédigez tout, sans titres ni numéros : les transitions et les phrases d'annonce des parties guident le lecteur. En conclusion, répondez nettement à la problématique ; l'ouverture n'est pas obligatoire, et elle doit rester liée au propos.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Le devoir complet est rédigé ci-dessous. Comme dans une copie, il ne porte ni titres ni numéros ; les astérisques marquent seulement les lignes que l'on saute entre l'introduction, les parties et la conclusion.
+
+Dans le grand salon du \emph{Nautilus}, deux panneaux de métal glissent et découvrent, derrière une épaisse vitre de cristal, la mer éclairée par le fanal électrique : le professeur Aronnax, naturaliste du Muséum, voit enfin vivre chez eux les poissons qu'il ne connaissait que dans les collections. Moins d'un siècle plus tard, la narratrice du \emph{Mur invisible}, descendant avec un chien la route qui mène au village, se heurte à une paroi lisse, froide et transparente : elle voit la vallée de l'autre côté et ne l'atteindra jamais. Ces deux vitres disent la même chose de deux manières inverses : on peut se trouver au plus près de la nature, au milieu de la mer ou au cœur de la forêt, et en rester séparé par une limite que l'on ne franchit pas.
+
+C'est ce paradoxe que formule le juriste et philosophe du droit François Ost dans \emph{La Nature hors la loi} (La Découverte, 1995) : « Si la nature, au terme de son évolution, a produit l'espèce humaine dont elle assure journellement les conditions de survie, elle est aussi, pour l'homme, ``tout autre'', étrangère absolument. Homme et nature ont ``partie liée'' sans pour autant qu'on puisse ramener l'un à l'autre. »
+
+La première phrase s'ouvre sur une subordonnée de valeur concessive : « si » n'y introduit pas une hypothèse, il accorde un fait pour mieux affirmer ce qui suit. Ce fait est d'ordre biologique. La nature, sujet des verbes, y apparaît comme une puissance qui a sa vie propre : elle « a produit l'espèce humaine », et le complément « au terme de son évolution », d'inspiration darwinienne, fait de l'homme un résultat tardif plutôt que le centre du monde. L'adverbe « journellement » ajoute que la dépendance ne tient pas seulement à l'origine : elle se renouvelle chaque jour, et elle porte sur la « survie », non sur l'abondance.
+
+La principale déplace alors le point de vue vers l'homme et y pose une limite. La nature est « ``tout autre'' » : d'une autre sorte que lui, et les guillemets signalent une expression forte, qui évoque le tout autre du vocabulaire religieux. Elle est aussi « étrangère », c'est-à-dire extérieure, venue du dehors. Les deux mots ne se confondent pas : l'étranger peut me ressembler par certains traits, et l'autre n'est pas forcément du dehors. Les adverbes « tout » et « absolument » radicalisent l'un et l'autre, mais aucun de ces termes ne dit que la nature soit hostile.
+
+La seconde phrase noue le paradoxe. « Avoir partie liée », c'est être engagé solidairement avec quelqu'un dans une même affaire : on ne lie que ce qui est distinct, et la locution suppose une solidarité réciproque, que la simple subsistance ne suffit pas à définir. Une nouvelle concession, « sans pour autant », ramène pourtant l'accent sur la limite : on ne peut « ramener l'un à l'autre ». Ramener la nature à l'homme, ce serait l'anthropomorphisme, qui lui prête des traits, des intentions ou des valeurs humaines. Ramener l'homme à la nature, ce serait le naturalisme, qui prétend tirer de la nature les normes de la vie humaine et nie ce que la culture a de propre. La solidarité que suppose « partie liée » exclut de son côté le vieux dualisme qui ne voit dans la nature qu'un moyen. Ni séparés, ni confondus : telle est la thèse, et c'est sur la frontière que porte l'accent.
+
+Or ce propos met en jeu nos expériences de la nature elles-mêmes. Il en nomme une, élémentaire et fondatrice : l'expérience de la survie, recommencée chaque jour. Il en nomme une autre, plus troublante : celle d'une altérité et d'une étrangeté qu'aucune proximité n'abolit. Il en suppose une troisième : celle d'une solidarité qui engage. Le mot y prend ses deux sens ordinaires, l'épreuve que l'on vit et la connaissance que l'on acquiert par l'action ou par l'expérimentation ; un troisième lui vient de la biologie, si l'on admet avec Canguilhem que la vie elle-même procède par essais.
+
+D'où la difficulté. Si l'homme n'existe que par la nature et l'éprouve chaque jour, comment peut-elle lui demeurer « étrangère absolument » ? Et si un tel écart les sépare, qu'est-ce qui les lie encore l'un à l'autre ? Il s'agit de savoir si la frontière que François Ost maintient au cœur même de la dépendance rend justice à nos expériences de la nature, ou si ces expériences, en la rendant poreuse, obligent à repenser ce que signifie « avoir partie liée », et pourquoi il importe malgré tout de ne pas « ramener l'un à l'autre ».
+
+Nous mettrons cette question à l'épreuve de \emph{Vingt mille lieues sous les mers} de Jules Verne (1869-1870), de \emph{La Connaissance de la vie} de Georges Canguilhem (1952, édition augmentée en 1965) et du \emph{Mur invisible} de Marlen Haushofer (1963). Nos expériences de la nature confirment d'abord le paradoxe, pourvu qu'on le tienne d'un seul tenant : la dépendance même y fait paraître la frontière, et la pensée l'établit. Cette frontière n'est pourtant pas aussi absolue qu'Ost le dit : la nature est aussi en nous, la connaissance la rapproche, et c'est plutôt la solidarité que l'homme défait, au point qu'il faudrait l'y réinscrire. Il faudra alors penser entre l'homme et la nature une continuité sans coïncidence, qui ne se réduit ni à la fusion ni à la séparation et qui fonde une responsabilité.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Le propos de François Ost se vérifie d'abord dans les œuvres, à condition de ne pas en séparer les deux moitiés : la dépendance qu'il concède n'est pas le contraire de la frontière qu'il affirme, elle en est souvent le lieu même.
+
+La nature « assure journellement les conditions de survie » des personnages, mais selon des régimes très différents, et c'est leur contraste qui instruit. À bord du \emph{Nautilus}, tout vient de la mer : la nourriture, les étoffes tissées du byssus de certains coquillages, l'encre tirée de la seiche, et jusqu'à l'électricité, produite grâce au sodium extrait de l'eau de mer. Nemo célèbre « cette nourrice prodigieuse, inépuisable », qui ne le nourrit pas seulement mais le vêt encore. Derrière le mur, au contraire, la narratrice de Marlen Haushofer survit de peu dans une montagne rude : des pommes de terre et des haricots qu'elle apprend à cultiver en consultant un almanach paysan, le lait de Bella, le gibier qu'elle chasse. Ost parle de « survie », non d'abondance, et le récit autrichien lui donne raison : la nature n'y donne rien sans travail, et la survie y est une tâche reprise chaque jour, que rien ne garantit.
+
+Canguilhem donne à cette dépendance son concept. Le milieu, explique « Le vivant et son milieu », n'est pas l'environnement neutre que décrit le géographe : reprenant Jakob von Uexküll, Canguilhem le définit comme un monde centré sur le vivant, qui en retient ce qui répond à ses besoins. Comme l'araignée ou l'oiseau, l'homme se compose son milieu, mais avec des moyens plus élaborés, et la connaissance elle-même, lit-on dans l'introduction du recueil, est une méthode générale pour résoudre les tensions entre l'homme et le milieu. Or ces moyens, qui permettent de survivre, sont aussi ce qui sépare. Nemo vit de la mer à l'abri d'une coque de métal et ne la contemple qu'à travers une vitre ; la narratrice ne vit de la forêt qu'avec une faux, un fusil et une scie. La dépendance passe par une médiation, et la médiation est déjà une distance : c'est le sens le plus concret de la frontière que pose Ost.
+
+Cette distance ne tient pas seulement aux outils : elle tient à la pensée. Canguilhem l'écrit dans l'introduction de son recueil : « la pensée n'est rien d'autre que le décollement de l'homme et du monde ». Penser, c'est prendre la nature pour objet, donc la mettre à distance. Les deux récits le confirment a contrario, puisque la frontière ne s'y efface que lorsque la pensée se suspend. Endormi dans la grotte du volcan où Nemo se ravitaille en sodium, Aronnax rêve que son existence se réduit à la vie végétative d'un simple mollusque. Après une longue halte où ses pensées s'étaient tues, la narratrice du \emph{Mur invisible} se remet en route et redevient, en marchant, « cette créature qui seule n'avait pas sa place ici ». La fusion avec la nature ne s'obtient qu'au prix de la conscience : dès que l'homme pense, il redevient l'étranger.
+
+Encore faut-il distinguer les deux termes qu'Ost juxtapose. L'altérité tient d'abord à la variété des formes que la nature a produites. Aronnax ne cesse de qualifier de « bizarre » un zoophyte, un crapaud de mer ou tel animal inconnu, et, devant des articulés auxquels le roc fait comme une seconde carapace, il se demande à quel ordre ils appartiennent et où la nature a trouvé le secret de leur existence : ses questions restent sans réponse. Le monstre est la figure extrême de cette altérité. Canguilhem montre, dans « La monstruosité et le monstrueux », que l'existence des monstres met en question notre habitude de voir le même engendrer le même ; les poulpes géants de Verne ne sont pas seulement des ennemis, ils sont l'image d'une forme de vie à laquelle rien ne nous prépare. L'étrangeté, elle, n'est pas l'hostilité. La narratrice l'avoue en observant des insectes : « Étranger et méchant restent encore pour moi une seule et même chose. » Mais elle souhaiterait que cette étrangeté se change en familiarité, et tient la confusion pour un réflexe à dépasser. La banquise qui se referme sur le \emph{Nautilus} ne punit pas plus Nemo que la paroi ne vise la narratrice : la nature est étrangère parce qu'elle ne se règle pas sur nous, non parce qu'elle nous veut du mal.
+
+C'est pourquoi l'on ne peut « ramener » la nature à l'homme : l'anthropomorphisme empêche de la comprendre. Canguilhem le montre dans « L'expérimentation en biologie animale » : tant qu'on assimilait la distribution du sang à partir du cœur à l'irrigation d'un jardin par des canaux, on ne pouvait pas découvrir la circulation, que Harvey mit en évidence. « Machine et organisme » ajoute que la conception mécanique de l'organisme est elle-même anthropomorphique. Verne en offre un équivalent moral : Nemo épargne les baleines parce qu'il les tient pour des « êtres inoffensifs et bons », et il extermine les cachalots qui les attaquent, comme s'il y avait dans la mer des bons et des méchants. La narratrice de Haushofer parle au contraire, à plusieurs reprises, de l'innocence de la nature : ce qui y arrive n'est ni bien ni mal.
+
+On ne peut pas davantage ramener l'homme à la nature. « Un homme ne vit pas uniquement comme un arbre ou comme un lapin », écrit Canguilhem dans « Le normal et le pathologique » : ses valeurs ne sont pas seulement vitales, elles sont aussi sociales et existentielles. La narratrice du \emph{Mur invisible}, seule parmi ses bêtes, en éprouve l'envers : « ce qui est terrible, c'est qu'un homme ne peut jamais devenir un animal, il passe à côté de l'animalité pour sombrer dans l'abîme ». Nemo, qui a rompu avec les lois des hommes, ne revient pas pour autant à un état de nature : il forme avec son équipage une petite société, avec sa hiérarchie, ses règles et sa langue. La frontière qu'Ost maintient protège ainsi à la fois ce qu'est la nature et ce qu'est l'homme.
+
+Elle explique enfin pourquoi la « partie liée » engage. Être solidaire de la nature sans se confondre avec elle, c'est en répondre, et seul l'homme le peut. Le savoir, écrit Canguilhem, est une des voies par lesquelles l'humanité cherche à assumer son destin et à transformer son être en devoir ; la narratrice, de son côté, porte la responsabilité de ses bêtes. La solidarité est d'ailleurs réciproque, car l'homme agit sur ce dont il vit : il est, selon Canguilhem, « créateur de configuration géographique ». La montagne du \emph{Mur invisible} est découpée en districts de chasse et traversée de chemins, et le chien de Hugo porte le nom d'un animal exterminé depuis si longtemps que personne, dans la région, ne pouvait s'en faire une idée ; les fonds marins de Verne sont jonchés d'épaves. L'homme et la nature ont bien partie liée : le sort de l'un passe par l'autre.
+
+Le paradoxe d'Ost se vérifie donc : la dépendance même fait paraître une frontière, que la pensée établit et que la responsabilité oblige à respecter. Mais l'écart est-il aussi absolu que le disent « tout autre » et « étrangère absolument » ? Et la solidarité que suppose « partie liée » est-elle acquise ?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+À l'épreuve des œuvres, la frontière se révèle moins nette que ne l'affirme François Ost, et c'est plutôt le lien qui se montre fragile.
+
+La nature n'est pas seulement hors de l'homme : elle est en lui. Il éprouve dans son corps le besoin, la fatigue et la souffrance, et ces épreuves le rapprochent des autres vivants. La narratrice du \emph{Mur invisible} observe que les barrières entre les hommes et les animaux tombent très facilement, parce que les bêtes souffrent comme nous si on leur fait mal et ont comme nous besoin de nourriture, de chaleur et d'un peu de tendresse. Canguilhem rappelle de même que l'homme partage avec tous les vivants la dépendance « à l'égard des sommations du besoin et des pressions du milieu », ce qui interdit de mépriser les bêtes. Verne loge enfin dans ses personnages des instincts : celui du chasseur chez Ned Land, et cet « instinct destructif » qu'Aronnax tient pour propre à l'espèce humaine. Ce qui est « tout autre » est aussi, par une part de nous-mêmes, notre semblable.
+
+Cette proximité se change en connaissance, et l'étrangeté recule à mesure qu'on habite la nature. Ned Land, harponneur, connaît la faune marine par la pratique bien mieux que Conseil par ses classifications. La narratrice, livrée sans défense aux intempéries pendant ses premiers foins, apprend ensuite à discerner le moment propice, et les étoiles, dont elle ignore les noms, lui deviennent très vite familières. Canguilhem donne la clé de ce mouvement : la connaissance consiste, écrit-il, « dans la construction de théories d'assimilation ». Assimiler, c'est rendre semblable. En connaissant la nature, l'homme la ramène à lui, et la pensée, qui commence par le décollement, a pour fin, selon le même texte, de permettre un nouvel équilibre avec le monde. La nature n'est donc pas « étrangère absolument » : elle l'est d'abord, et le devient moins.
+
+Ce qui vacille alors, c'est moins la frontière que la solidarité. Ost écrit que l'homme et la nature « ont » partie liée, comme s'il s'agissait d'un état acquis ; les œuvres montrent un homme qui ne cesse de s'en délier. Canguilhem le constate dans son introduction : tantôt l'homme s'émerveille du vivant, tantôt, se scandalisant d'être un vivant, il forge à son usage l'idée d'un règne séparé. « Machine et organisme » montre comment la théorie cartésienne de l'animal-machine donne à cette séparation son fondement : l'homme ne peut se rendre maître et possesseur de la nature qu'en la tenant tout entière hors de lui, comme un moyen. Le \emph{Nautilus} exploite ainsi la mer nourricière, alors même qu'Aronnax sait que baleines, phoques et lamantins disparaissent sous les coups des hommes, et qu'il impute à la destruction des lamantins la fièvre jaune qui désole les côtes de l'Amérique du Sud. La narratrice imagine, elle, que le mur est une invention humaine, « arme idéale qui laissait la terre intacte et ne tuait que les hommes et les bêtes ».
+
+La solidarité n'est d'ailleurs pas symétrique : l'homme existe par la nature, mais la nature n'a pas besoin de l'homme. La narratrice le sait. Les orties lui survivront, et un jour la forêt s'avancera jusqu'au mur « en reconquérant le sol que l'homme lui avait volé » : le verbe dit que l'intérêt de l'homme et celui de la nature ne convergent pas. Aronnax envisage, avec une légèreté qui conjure la menace, que la terre soit un jour « ce cadavre refroidi », inhabitable comme la lune, et Verne fait apparaître graduellement la vie sur une île du Pacifique sans le moindre concours humain. Quant à l'être le plus étranger du \emph{Mur invisible}, ce n'est ni le mur ni la forêt : c'est l'homme qui surgit à l'alpage et tue à la hache Taureau, puis Lynx, et chez qui la narratrice devine un désir secret de tuer. Le danger que désignent les œuvres n'est donc pas une nature hostile, mais un homme qui se délie de ce dont il dépend.
+
+Il y aurait donc lieu de « ramener » l'homme à la nature, non pour l'y confondre, mais pour l'y réinscrire. La narratrice comprend après coup combien sa vie urbaine avait appauvri son expérience : elle qui aimait les bêtes serait incapable de décrire un seul des pigeons qu'elle croisait en ville, et elle constate : « C'est depuis que j'ai ralenti mes mouvements que la forêt pour moi est devenue vivante. » Nemo, de son côté, s'épanouit dans l'élément liquide, « l'immense désert où l'homme n'est jamais seul, car il sent frémir la vie à ses côtés ». Canguilhem fonde en raison cette réinscription : la connaissance du vivant repose selon lui sur « une sorte de mimétisme », et la conclusion de « L'expérimentation en biologie animale » demande au biologiste, qui ne peut aller vers le vivant qu'avec des concepts et des outils humains, de laisser son intelligence se déconcerter. Sans doute l'animal ne sait-il pas résoudre tous les problèmes que nous lui posons, remarque l'introduction, « mais c'est parce que ce sont les nôtres et non les siens ».
+
+Cette réinscription a pourtant ses limites, et les œuvres interdisent de l'idéaliser. La narratrice redoute de sentir la forêt « allonger en {[}elle{]} ses racines pour penser avec {[}son{]} cerveau ses vieilles et éternelles pensées » : la fusion qu'on pourrait rêver lui apparaît comme une déshumanisation. Et Nemo, à mesure qu'il se fond dans la mer, cesse d'être pour Aronnax un semblable : « c'était l'homme des eaux, le génie des mers ». On ne revient pas à la nature comme à un état perdu. La frontière d'Ost reparaît donc, mais déplacée : elle n'est plus un gouffre, elle est ce qui empêche la proximité de tourner à la confusion.
+
+Le débat ne ruine donc pas le paradoxe : il en change la figure. Entre l'homme et la nature, il n'y a ni gouffre ni fusion, mais une continuité qui ne va pas jusqu'à la coïncidence. Reste à dire ce qu'elle permet de penser et de faire.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Lus à la lumière de Canguilhem, les deux récits invitent à penser l'homme non plus face à la nature, mais avec elle : dans une continuité sans coïncidence, qui fonde une éthique.
+
+Les activités que l'on croit les plus propres à l'homme prolongent la vie. La technique, montre « Machine et organisme », n'est pas l'application d'une science préalable : c'est un « phénomène biologique universel », par lequel l'homme est en continuité avec la vie, et il faut comprendre la machine à partir de l'organisme, non l'inverse. Le mot grec \emph{organon}, qui désigne à la fois l'organe et l'outil, en garde la trace. \emph{Le Mur invisible} le fait sentir dans le corps : la narratrice, qui ne sait pas se servir d'une scie, raconte : « Le troisième jour je compris enfin, ou plutôt mes mains, mes bras, mes épaules comprirent ». Le \emph{Nautilus} lui-même, que l'on a d'abord pris pour un narval géant, respire à la manière des cétacés en remontant à la surface : la machine la plus audacieuse imite encore l'animal.
+
+Quand elle oublie cette fin vitale, la technique perd son sens. Les conduites de gaz, les centrales et les oléoducs, constate la narratrice maintenant que les hommes n'existent plus, montrent leur vrai visage : « On en avait fait des dieux au lieu de s'en servir comme d'objets d'usage. » Le savoir obéit à la même règle : « savoir pour savoir ce n'est guère plus sensé que manger pour manger, ou tuer pour tuer », écrit Canguilhem, pour qui le conflit n'est pas entre la pensée et la vie, mais entre l'homme et le monde dans la conscience humaine de la vie. Chez Verne, Conseil, qui classe sans voir, est un personnage comique, et la narratrice regrette une botanique apprise dans les livres et aussitôt oubliée. Le décollement que produit la pensée n'est pas une sortie hors de la vie : c'est une manière humaine d'y répondre, qui s'égare dès qu'elle l'oublie.
+
+Cette continuité est celle d'une évolution ouverte, et elle conduit à corriger un mot du propos : l'homme n'est pas le « terme » de l'évolution. « La vie est expérience, c'est-à-dire improvisation, utilisation des occurrences ; elle est tentative dans tous les sens », écrit Canguilhem dans « Machine et organisme ». Voilà le troisième sens des expériences de la nature : celles qu'elle fait elle-même, dont les monstres révèlent le caractère expérimental, et dans lesquelles l'homme est engagé comme les autres vivants. L'homme et l'animal ont d'ailleurs une histoire commune. Perle meurt, note la narratrice, parce qu'un de ses ancêtres avait été un chat angora trop sélectionné, et elle se demande si ce n'est pas le chien qui est responsable de la folie et de la grandeur de l'homme. Chez Verne, les ruines de l'Atlantide, que Nemo contemple avec nostalgie, rappellent qu'aucune civilisation n'est un aboutissement.
+
+Une évolution sans terme ne se maîtrise pas, et les trois œuvres dénoncent l'orgueil qui l'oublie. Au moment où Nemo plante son pavillon au pôle Sud, un iceberg se retourne et le \emph{Nautilus} se trouve emprisonné sous la banquise ; à la fin, le sous-marin est aspiré par le Maelström, sans que le narrateur sache s'il a survécu. Canguilhem rappelle les expériences de tératogénie de Réaumur et de Geoffroy Saint-Hilaire pour mettre en garde : « Du curieux au scabreux et du scabreux au monstrueux, la route est droite sinon courte. » La narratrice, enfin, oppose aux inventions humaines le grand jeu du soleil, de la lune et des étoiles, qui « semblait avoir réussi ; il est vrai qu'il n'avait pas été inventé par les hommes ».
+
+Ce qui reste de la « partie liée », c'est alors une responsabilité qui connaît ses limites. Canguilhem appelle un rationalisme raisonnable, qui sait reconnaître les siennes : « L'intelligence ne peut s'appliquer à la vie qu'en reconnaissant l'originalité de la vie. La pensée du vivant doit tenir du vivant l'idée du vivant. » La narratrice applique à l'action la même modestie. « Je ne suis pas le dieu des lézards ni celui des chats », écrit-elle, et elle sait qu'en jouant parfois le rôle de la providence elle ne fait que sauver une bête pour en tuer une autre, la forêt venant facilement à bout de son gâchis. Nemo esquisse une telle éthique sans la tenir : il permet à Ned Land de tuer un dugong pour nourrir l'équipage, mais lui refuse les baleines, car ce serait « tuer pour tuer », avant de massacrer les cachalots. La responsabilité naît de la différence de l'homme ; l'humilité, de sa continuité avec ce qu'il ne maîtrise pas.
+
+Cette éthique prend la forme du soin et du récit. À Ceylan, Nemo se jette sur un requin pour sauver un pêcheur de perles qu'il ne connaît pas ; derrière le mur, la narratrice nourrit une corneille blanche que les siennes rejettent, sans rien en attendre. Ces gestes lient sans confondre. Ils nous parviennent dans des textes qui tiennent ensemble ce qui ne se réduit pas : le récit d'Aronnax, dernier témoin du \emph{Nautilus} ; le « rapport » que la narratrice écrit jusqu'à épuisement de son papier ; la philosophie de Canguilhem, réflexion de la vie sur la connaissance qu'elle prend d'elle-même. La devise du \emph{Nautilus} en donne la formule : \emph{mobilis in mobili}, mobile dans l'élément mobile. Le navire n'est pas la mer et la mer ne lui appartient pas ; il s'y meut, il en dépend, il s'en distingue. C'est avoir partie liée sans ramener l'un à l'autre.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Le propos de François Ost éclaire nos expériences de la nature parce qu'il refuse d'en séparer les deux faces. Les œuvres le confirment : la survie qui nous lie chaque jour à la nature passe par des outils, des techniques et une pensée qui nous en décollent, et cette distance préserve à la fois ce qu'est la nature, que l'anthropomorphisme défigure, et ce qu'est l'homme, que le naturalisme nie. Elles en nuancent pourtant la radicalité : la nature est aussi en nous, la connaissance la rend moins étrangère, et c'est plutôt la solidarité que l'homme défait, au point qu'il faut l'y réinscrire sans l'y dissoudre.
+
+Ce que révèle finalement le paradoxe, c'est une continuité sans coïncidence. La technique et le savoir prolongent la vie, l'évolution reste ouverte, et la frontière qu'Ost maintient n'a de sens que parce qu'elle fonde une responsabilité. Faire l'expérience de la nature, ce n'est ni la rejoindre ni la posséder : c'est répondre de ce dont on dépend sans pouvoir s'y réduire. Le titre du livre d'où la phrase est tirée, \emph{La Nature hors la loi}, en désigne l'enjeu : une nature dont nous dépendons entièrement ne saurait rester hors de la loi que les hommes se donnent.
+
+\begin{methode}
+
+Un paragraphe, une idée, au moins deux œuvres confrontées : chaque exemple est situé en une phrase, ramené à un détail précis (le « si » concessif, la vitre du salon, la narratrice qui redevient « créature » en reprenant sa marche, les baleines « bonnes ») et interprété au regard du propos, plutôt que résumé.
+
+\end{methode}
+
+\begin{piege}
+
+Confondre altérité et hostilité : décrire en discussion une « nature dangereuse » (tempêtes, requins, monstres). Les monstres disent d'abord la différence radicale ; l'hostilité, qui est encore une relation, ne rend pas compte du mot « absolument ».
+
+\end{piege}
+
+\begin{piege}
+
+Fausser un dénouement pour servir l'argument. Chez Verne, le sort du \emph{Nautilus} dans le Maelström reste inconnu du narrateur : on peut y lire la défaite de l'hybris de Nemo, mais comme une interprétation d'un dénouement ambigu, non comme un fait.
+
+\end{piege}
+
+\begin{piege}
+
+Juxtaposer les paragraphes avec des connecteurs d'addition (« tout d'abord\ldots{} de plus\ldots{} enfin ») ou laisser apparents des titres numérotés. Les liens logiques (certes, mais, dès lors ; or ; c'est pourquoi) font du développement un raisonnement.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 écarte la présentation à titres : « Le plan apparent avec titres et sous-titres numérotés, adopté par une poignée de candidats peu renseignés, est cependant à bannir » (p.~11). Il conseille de reprendre les termes de l'énoncé « tout au long de la dissertation, et non seulement dans les courts paragraphes introduisant les grandes parties ou dans les transitions » (p.~13).
+
+\end{jury}
+
+\begin{jury}
+
+Pour la conclusion, le rapport 2026 rappelle qu'elle « a vocation à donner une réponse ferme à la problématique initialement dégagée », et qu'« il n'est nullement indispensable d'``ouvrir'' la réflexion par une question supplémentaire ou par une citation » (p.~27-28).
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Analyser une citation mot à mot et dans ses rapports logiques (concession, principale, nouvelle concession) avant de chercher des exemples ; repérer où porte l'accent.
+\item
+  Distinguer les termes voisins (« autre », « étranger », « hostile ») et donner leur sens exact aux locutions (« avoir partie liée »).
+\item
+  Problématiser en faisant jouer les termes du paradoxe les uns contre les autres, sans le mettre à la forme interrogative ni le transformer en alternative.
+\item
+  Construire un plan qui défend la thèse prise comme un tout, la discute sur un point précis, puis la prolonge ; ne jamais répartir les deux moitiés du paradoxe dans deux parties.
+\item
+  Remplir une grille parties × œuvres et confronter au moins deux œuvres par paragraphe.
+\end{itemize}
+
+\textbf{Questions discriminantes selon le rapport 2026.} L'analyse de l'énoncé, jugée cette année superficielle dans un nombre inhabituel de copies ; l'ancrage de la problématique dans le paradoxe ; la tenue de la thèse comme un tout dans chaque partie ; l'usage de Canguilhem dès la première partie, en distinguant ses thèses de celles qu'il examine ; des références commentées, exactes et personnelles. La langue compte aussi : les fautes peuvent coûter jusqu'à deux points sur vingt et obscurcissent le raisonnement.
+
+\textbf{Prérequis à revoir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Le périmètre exact des extraits de Canguilhem au programme et la thèse de chaque chapitre, en particulier « Machine et organisme », qu'on aurait tort de croire hors programme, et l'introduction, où se trouve la formule du décollement.
+\item
+  Les épisodes clés des deux romans, avec leur ordre et leur dénouement : chez Verne, le salon, Crespo, Ceylan, l'Atlantide, le pôle et la banquise, les poulpes, les baleines et les cachalots, le Maelström ; chez Haushofer, la découverte du mur, l'alpage, la mort du taureau et de Lynx, la corneille blanche, la fin du rapport.
+\item
+  Quelques formules sûres, à citer exactement ou à ne pas citer : « la mer est tout », \emph{mobilis in mobili}, « la pensée n'est rien d'autre que le décollement de l'homme et du monde », « la pensée du vivant doit tenir du vivant l'idée du vivant », « Étranger et méchant restent encore pour moi une seule et même chose ».
+\end{itemize}
+
+\textbf{Transposable à d'autres sujets.} La tension entre lien et frontière, le refus symétrique de l'anthropomorphisme et du naturalisme, la connaissance comme assimilation et comme décollement, et le trio expérience vécue, connaissance, expériences de la nature structurent la plupart des sujets possibles sur ce thème, qu'ils portent sur la connaissance du vivant, la technique, la solitude ou la survie.
+
+\end{document}

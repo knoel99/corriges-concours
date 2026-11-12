@@ -1,0 +1,706 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto TB — Méthodes de calcul et raisonnement 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Agro-Véto TB}
+\fancyhead[R]{\small Méthodes de calcul et raisonnement 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Agro-Véto TB — Méthodes de calcul et raisonnement 2026\par}\medskip
+  {\large Agro-Véto · TB · Méthodes de calcul et raisonnement · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve de 2 heures, sans calculatrice ni document. Trois exercices totalement indépendants.
+
+\hypertarget{exercice-dalguxe8bre}{%
+\section{Exercice d'Algèbre}\label{exercice-dalguxe8bre}}
+
+On note \(A=\begin{pmatrix}-3&-4\\2&3\end{pmatrix}\).
+
+\hypertarget{section}{%
+\subsection{1.}\label{section}}
+
+Pour \(\lambda\in\mathbb R\) :
+
+\equationajustee{\begin{aligned}
+\det(A-\lambda I_2)&=\begin{vmatrix}-3-\lambda&-4\\2&3-\lambda\end{vmatrix}\\
+&=(-3-\lambda)(3-\lambda)+8\\
+&=\lambda^2-9+8\\
+&=(\lambda-1)(\lambda+1).
+\end{aligned}}
+
+Un réel \(\lambda\) est valeur propre de \(A\) si et seulement si \(A-\lambda I_2\) n'est pas inversible. Cela équivaut à \(\det(A-\lambda I_2)=0\), donc à \(\lambda\in\{-1,1\}\).
+
+Ainsi \(-1\) et \(1\) sont valeurs propres, et ce sont les seules :
+
+\equationajustee{\boxed{\text{les valeurs propres de }A\text{ sont exactement }-1\text{ et }1.}}
+
+\hypertarget{a.}{%
+\subsection{2.a.}\label{a.}}
+
+Avec \(U=\begin{pmatrix}-1\\1\end{pmatrix}\) :
+
+\equationajustee{\begin{aligned}
+AU&=\begin{pmatrix}(-3)(-1)+(-4)(1)\\2(-1)+3(1)\end{pmatrix}\\
+&=\begin{pmatrix}-1\\1\end{pmatrix}=U.
+\end{aligned}}
+
+Le vecteur \(U\) est non nul et vérifie \(AU=1\cdot U\). \textbf{\(U\) est donc un vecteur propre de \(A\) associé à la valeur propre \(1\).}
+
+\hypertarget{b.}{%
+\subsection{2.b.}\label{b.}}
+
+\equationajustee{\boxed{m=-2}}
+
+Vérification : pour \(m=-2\), \(AV=\begin{pmatrix}-3m-4\\2m+3\end{pmatrix}=\begin{pmatrix}2\\-1\end{pmatrix}\), c'est-à-dire \(AV=-V\).
+
+\hypertarget{a.-1}{%
+\subsection{3.a.}\label{a.-1}}
+
+Les colonnes de \(P\) sont des vecteurs propres associés, dans l'ordre, aux coefficients diagonaux de \(D\). L'ordre croissant impose \(D=\mathrm{diag}(-1,1)\).
+
+On place donc \(V\) (valeur propre \(-1\)) en première colonne et \(U\) (valeur propre \(1\)) en seconde. La deuxième ligne de \(P\) est alors formée de \(1\) :
+
+\equationajustee{\boxed{D=\begin{pmatrix}-1&0\\0&1\end{pmatrix}\ \text{ et }\ P=\begin{pmatrix}-2&-1\\1&1\end{pmatrix}.}}
+
+\(P\) est inversible car \(\det P=(-2)(1)-(-1)(1)=-1\neq0\).
+
+Par construction, \(AP=(AV\ \ AU)=(-V\ \ U)=PD\). En multipliant à droite par \(P^{-1}\), on obtient \(A=PDP^{-1}\).
+
+Contrôle : \(AP\) et \(PD\) valent tous deux \(\begin{pmatrix}2&-1\\-1&1\end{pmatrix}\).
+
+\hypertarget{b.-1}{%
+\subsection{3.b.}\label{b.-1}}
+
+Pour \(M=\begin{pmatrix}a&b\\c&d\end{pmatrix}\) avec \(ad-bc\neq0\) :
+
+\equationajustee{M^{-1}=\frac1{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.}
+
+Ici \(\det P=-1\), donc :
+
+\equationajustee{\boxed{P^{-1}=\begin{pmatrix}-1&-1\\1&2\end{pmatrix}.}}
+
+Vérification :
+
+\equationajustee{PP^{-1}=\begin{pmatrix}2-1&2-2\\-1+1&-1+2\end{pmatrix}=I_2.}
+
+\hypertarget{section-1}{%
+\subsection{4.}\label{section-1}}
+
+Comme \(A=PDP^{-1}\), on a \(D=P^{-1}AP\).
+
+Comme \(P\) est inversible, la définition \(Y=P^{-1}XP\) équivaut à \(X=PYP^{-1}\). De même, \(C=P^{-1}BP\) équivaut à \(B=PCP^{-1}\).
+
+\emph{Sens direct.} Supposons \(AX+XA=B\). On multiplie à gauche par \(P^{-1}\) et à droite par \(P\), puis on insère \(PP^{-1}=I_2\) (associativité, sans commuter aucun produit) :
+
+\equationajustee{\begin{aligned}
+P^{-1}(AX+XA)P&=P^{-1}AXP+P^{-1}XAP\\
+&=(P^{-1}AP)(P^{-1}XP)+(P^{-1}XP)(P^{-1}AP)\\
+&=DY+YD.
+\end{aligned}}
+
+Le membre de gauche vaut \(P^{-1}BP=C\), donc \(DY+YD=C\).
+
+\emph{Réciproque.} Supposons \(DY+YD=C\). On multiplie à gauche par \(P\) et à droite par \(P^{-1}\) :
+
+\equationajustee{\begin{aligned}
+P(DY+YD)P^{-1}&=PDYP^{-1}+PYDP^{-1}\\
+&=(PDP^{-1})(PYP^{-1})+(PYP^{-1})(PDP^{-1})\\
+&=AX+XA.
+\end{aligned}}
+
+Le membre de gauche vaut \(PCP^{-1}=B\), donc \(AX+XA=B\).
+
+\textbf{Les deux implications sont établies : pour toutes \(X,B\in\mathcal M_2(\mathbb R)\), \(AX+XA=B\) si et seulement si \(DY+YD=C\).}
+
+\hypertarget{a.-2}{%
+\subsection{5.a.}\label{a.-2}}
+
+\equationajustee{\begin{aligned}
+P^{-1}B&=\begin{pmatrix}-1&-1\\1&2\end{pmatrix}\begin{pmatrix}4&4\\-2&-2\end{pmatrix}=\begin{pmatrix}-2&-2\\0&0\end{pmatrix},\\
+C=(P^{-1}B)P&=\begin{pmatrix}-2&-2\\0&0\end{pmatrix}\begin{pmatrix}-2&-1\\1&1\end{pmatrix}\\
+&=\begin{pmatrix}4-2&2-2\\0&0\end{pmatrix}\\
+&=\begin{pmatrix}2&0\\0&0\end{pmatrix}.
+\end{aligned}}
+
+\equationajustee{\boxed{C=\begin{pmatrix}2&0\\0&0\end{pmatrix}}}
+
+\hypertarget{b.-2}{%
+\subsection{5.b.}\label{b.-2}}
+
+Soit \(Y=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\mathcal M_2(\mathbb R)\). On calcule :
+
+\equationajustee{\begin{aligned}
+DY&=\begin{pmatrix}-a&-b\\c&d\end{pmatrix},\\
+YD&=\begin{pmatrix}-a&b\\-c&d\end{pmatrix},\\
+DY+YD&=\begin{pmatrix}-2a&0\\0&2d\end{pmatrix}.
+\end{aligned}}
+
+Par identification des coefficients, on raisonne par équivalences :
+
+\equationajustee{\begin{aligned}
+DY+YD=C&\iff\begin{cases}-2a=2\\0=0\\0=0\\2d=0\end{cases}\\
+&\iff a=-1\ \text{ et }\ d=0.
+\end{aligned}}
+
+Les équations portant sur \(b\) et \(c\) sont \(0=0\) : elles n'imposent rien, et \(b\) et \(c\) sont des réels quelconques, pas nécessairement nuls. Comme on a raisonné par équivalences, toute matrice de cette forme convient :
+
+\equationajustee{\boxed{\{Y\in\mathcal M_2(\mathbb R)\ :\ DY+YD=C\}=\left\{\begin{pmatrix}-1&b\\c&0\end{pmatrix}\ ;\ (b,c)\in\mathbb R^2\right\}.}}
+
+\hypertarget{c.}{%
+\subsection{5.c.}\label{c.}}
+
+D'après la question 4, \(X\) est solution de \((E)\) si et seulement si \(Y=P^{-1}XP\) est l'une des matrices trouvées en 5.b. Cela équivaut à \(X=PYP^{-1}\) avec \(Y=\begin{pmatrix}-1&b\\c&0\end{pmatrix}\) et \((b,c)\in\mathbb R^2\). On calcule :
+
+\equationajustee{\begin{aligned}
+PY&=\begin{pmatrix}-2&-1\\1&1\end{pmatrix}\begin{pmatrix}-1&b\\c&0\end{pmatrix}=\begin{pmatrix}2-c&-2b\\c-1&b\end{pmatrix},\\
+PYP^{-1}&=\begin{pmatrix}2-c&-2b\\c-1&b\end{pmatrix}\begin{pmatrix}-1&-1\\1&2\end{pmatrix}\\
+&=\begin{pmatrix}c-2b-2&c-4b-2\\b-c+1&2b-c+1\end{pmatrix}.
+\end{aligned}}
+
+\equationajustee{\boxed{\mathcal S_E=\left\{\begin{pmatrix}c-2b-2&c-4b-2\\b-c+1&2b-c+1\end{pmatrix}\ ;\ (b,c)\in\mathbb R^2\right\}.}}
+
+Autrement dit, \(X=X_0+bM+cM'\) avec :
+
+\equationajustee{X_0=\begin{pmatrix}-2&-2\\1&1\end{pmatrix},\qquad M=\begin{pmatrix}-2&-4\\1&2\end{pmatrix},\qquad M'=\begin{pmatrix}1&1\\-1&-1\end{pmatrix}.}
+
+Vérification pour \(b=c=0\) : \(AX_0\) et \(X_0A\) valent tous deux \(\begin{pmatrix}2&2\\-1&-1\end{pmatrix}\), donc \(AX_0+X_0A=B\).
+
+\hypertarget{section-2}{%
+\subsection{6.}\label{section-2}}
+
+On calcule \(C=P^{-1}BP\) pour \(B=\begin{pmatrix}1&1\\-1&-1\end{pmatrix}\) :
+
+\equationajustee{\begin{aligned}
+P^{-1}B&=\begin{pmatrix}-1&-1\\1&2\end{pmatrix}\begin{pmatrix}1&1\\-1&-1\end{pmatrix}=\begin{pmatrix}0&0\\-1&-1\end{pmatrix},\\
+C&=\begin{pmatrix}0&0\\-1&-1\end{pmatrix}\begin{pmatrix}-2&-1\\1&1\end{pmatrix}=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
+\end{aligned}}
+
+D'après la question 4, \((E)\) a une solution si et seulement s'il existe \(Y\in\mathcal M_2(\mathbb R)\) telle que \(DY+YD=C\).
+
+Or, d'après le calcul de 5.b, valable pour toute matrice \(Y=\begin{pmatrix}a&b\\c&d\end{pmatrix}\), le coefficient \((2,1)\) de \(DY+YD\) est toujours nul.
+
+Celui de \(C\) vaut \(1\) : l'égalité imposerait \(0=1\), ce qui est absurde. Aucune matrice \(Y\) ne convient, donc :
+
+\equationajustee{\boxed{\text{pour }B=\begin{pmatrix}1&1\\-1&-1\end{pmatrix},\ \text{l'\text{équation} }(E)\text{ n'a aucune solution.}}}
+
+\hypertarget{exercice-danalyse}{%
+\section{Exercice d'Analyse}\label{exercice-danalyse}}
+
+Pour \(n\in\mathbb N\), la fonction \(x\mapsto x^ne^x\) est continue sur \([0,1]\), donc \(I_n=\int_0^1x^ne^x\,\mathrm dx\) est bien définie.
+
+\hypertarget{section-3}{%
+\subsection{1.}\label{section-3}}
+
+\equationajustee{\begin{aligned}
+I_0&=\int_0^1e^x\,\mathrm dx\\
+&=\big[e^x\big]_0^1\\
+&=e-1.
+\end{aligned}}
+
+\equationajustee{\boxed{I_0=e-1}}
+
+\hypertarget{a.-3}{%
+\subsection{2.a.}\label{a.-3}}
+
+\(g\) est dérivable sur \(\mathbb R\) et, par dérivation d'un produit, pour tout \(x\in\mathbb R\) :
+
+\equationajustee{\begin{aligned}
+g'(x)&=\big(e^x+xe^x\big)-e^x\\
+&=xe^x.
+\end{aligned}}
+
+\equationajustee{\boxed{\forall x\in\mathbb R,\quad g'(x)=xe^x}}
+
+\hypertarget{b.-3}{%
+\subsection{2.b.}\label{b.-3}}
+
+D'après 2.a, \(g\) est une primitive de \(x\mapsto xe^x\) sur \([0,1]\), donc :
+
+\equationajustee{\begin{aligned}
+I_1&=\big[g(x)\big]_0^1\\
+&=g(1)-g(0)\\
+&=(e-e)-(0-1)\\
+&=1.
+\end{aligned}}
+
+\equationajustee{\boxed{I_1=1}}
+
+\hypertarget{section-4}{%
+\subsection{3.}\label{section-4}}
+
+Soit \(n\in\mathbb N\) et \(x\in[0,1]\). Comme \(x\ge0\), on a \(x^n\ge0\). L'exponentielle est strictement positive, donc \(x^ne^x\ge0\).
+
+La fonction \(x\mapsto x^ne^x\) est donc continue et positive sur \([0,1]\), et les bornes sont dans l'ordre croissant (\(0\le1\)). Par positivité de l'intégrale :
+
+\equationajustee{\boxed{\forall n\in\mathbb N,\quad I_n\ge0.}}
+
+\hypertarget{a.-4}{%
+\subsection{4.a.}\label{a.-4}}
+
+Soit \(x\in[0,1]\) et \(n\in\mathbb N\). On multiplie l'inégalité \(x\le1\) par \(x^n\ge0\), ce qui conserve le sens : \(x^{n+1}\le x^n\).
+
+On multiplie ensuite par \(e^x>0\) (positivité de l'exponentielle), ce qui conserve encore le sens :
+
+\equationajustee{\boxed{x^{n+1}\le x^n\ \text{ et }\ x^{n+1}e^x\le x^ne^x.}}
+
+\hypertarget{b.-4}{%
+\subsection{4.b.}\label{b.-4}}
+
+Soit \(n\in\mathbb N\). Les fonctions \(x\mapsto x^{n+1}e^x\) et \(x\mapsto x^ne^x\) sont continues sur \([0,1]\) et vérifient l'inégalité de 4.a en tout point de \([0,1]\).
+
+Par croissance de l'intégrale (bornes \(0\le1\)), \(I_{n+1}\le I_n\). Ceci vaut pour tout \(n\) :
+
+\equationajustee{\boxed{(I_n)_{n\in\mathbb N}\text{ est \text{décroissante}.}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/analyse-q4-q5-integrandes.pdf}
+\caption*{Figure 1 --- Les intégrandes x ↦ xⁿeˣ sur l'intervalle de 0 à 1 pour n =
+0, 1, 2, 5, 20 : elles s'emboîtent en descendant quand n croît, restent
+sous la droite y = e, et l'aire Iₙ (ombrée pour n = 2) tend vers 0}
+\end{figure}
+
+\hypertarget{a.-5}{%
+\subsection{5.a.}\label{a.-5}}
+
+Soit \(x\in[0,1]\) et \(n\in\mathbb N\). L'exponentielle est croissante sur \(\mathbb R\) et \(x\le1\), donc \(e^x\le e^1=e\).
+
+En multipliant par \(x^n\ge0\) :
+
+\equationajustee{\boxed{x^ne^x\le e\,x^n.}}
+
+\hypertarget{b.-5}{%
+\subsection{5.b.}\label{b.-5}}
+
+Les deux membres de 5.a sont continus sur \([0,1]\) et les bornes sont dans l'ordre croissant. Par croissance et linéarité de l'intégrale :
+
+\equationajustee{\begin{aligned}
+I_n&\le\int_0^1e\,x^n\,\mathrm dx\\
+&=e\left[\frac{x^{n+1}}{n+1}\right]_0^1\\
+&=\frac e{n+1}.
+\end{aligned}}
+
+\equationajustee{\boxed{\forall n\in\mathbb N,\quad I_n\le\frac e{n+1}}}
+
+\hypertarget{c.-1}{%
+\subsection{5.c.}\label{c.-1}}
+
+D'après 3 et 5.b, pour tout \(n\in\mathbb N\) :
+
+\equationajustee{0\le I_n\le\frac e{n+1}.}
+
+Les deux bornes tendent vers \(0\) quand \(n\to+\infty\). Le théorème d'encadrement donne à la fois la convergence et la limite :
+
+\equationajustee{\boxed{(I_n)\text{ converge et }\lim_{n\to+\infty}I_n=0.}}
+
+\hypertarget{a.-6}{%
+\subsection{6.a.}\label{a.-6}}
+
+Soit \(n\in\mathbb N\). On pose \(u(x)=x^{n+1}\) et \(v(x)=e^x\), de classe \(\mathcal C^1\) sur \([0,1]\).
+
+On a \(u'(x)=(n+1)x^n\) et \(v'(x)=e^x\). Par intégration par parties :
+
+\equationajustee{\begin{aligned}
+I_{n+1}&=\big[x^{n+1}e^x\big]_0^1-\int_0^1(n+1)x^ne^x\,\mathrm dx\\
+&=(e-0)-(n+1)I_n,
+\end{aligned}}
+
+car \(0^{n+1}=0\) puisque \(n+1\ge1\). Donc :
+
+\equationajustee{\boxed{\forall n\in\mathbb N,\quad I_{n+1}=e-(n+1)I_n.}}
+
+Pour \(n=0\), on retrouve \(I_1=e-(e-1)=1\), en accord avec 2.b.
+
+\hypertarget{b.-6}{%
+\subsection{6.b.}\label{b.-6}}
+
+De 6.a, on tire \((n+1)I_n=e-I_{n+1}\). Comme \(n+1\neq0\) :
+
+\equationajustee{\boxed{\forall n\in\mathbb N,\quad I_n=\frac{e-I_{n+1}}{n+1}.}}
+
+\hypertarget{c.-2}{%
+\subsection{6.c.}\label{c.-2}}
+
+Pour \(n\ge1\), d'après 6.b :
+
+\equationajustee{\begin{aligned}
+nI_n&=\frac{n}{n+1}\,\big(e-I_{n+1}\big)\\
+&=\frac1{1+\frac1n}\,\big(e-I_{n+1}\big).
+\end{aligned}}
+
+Le premier facteur tend vers \(1\). D'après 5.c, \(I_{n+1}\to0\), donc le second facteur tend vers \(e\). Par produit :
+
+\equationajustee{\boxed{\lim_{n\to+\infty}nI_n=e.}}
+
+Comme \(e\neq0\), on en déduit, pour \(n\ge1\) :
+
+\equationajustee{\frac{I_n}{e/n}=\frac{nI_n}{e}\xrightarrow[n\to+\infty]{}1.}
+
+\equationajustee{\boxed{I_n\underset{n\to+\infty}{\sim}\frac en.}}
+
+\hypertarget{exercice-de-probabilituxe9s}{%
+\section{Exercice de Probabilités}\label{exercice-de-probabilituxe9s}}
+
+Pour tout \(i\ge1\), l'urne ne contenant que des boules vertes et une rouge, \(V_i=\overline{R_i}\).
+
+\hypertarget{partie-1}{%
+\subsection{Partie 1}\label{partie-1}}
+
+\(N=3\) : 2 boules vertes, 1 rouge, tirages sans remise jusqu'à obtenir la rouge.
+
+\hypertarget{section-5}{%
+\subsubsection{1.}\label{section-5}}
+
+\equationajustee{\boxed{P(R_1)=\frac13}}
+
+(tirage équiprobable d'une boule parmi 3, une seule rouge).
+
+\hypertarget{a.-7}{%
+\subsubsection{2.a.}\label{a.-7}}
+
+\equationajustee{\boxed{P(V_1)=\frac23\ \text{ et }\ P_{V_1}(R_2)=\frac12}}
+
+(sachant \(V_1\), l'urne contient 1 verte et 1 rouge).
+
+\hypertarget{b.-7}{%
+\subsubsection{2.b.}\label{b.-7}}
+
+Comme \(P(V_1)\neq0\), la formule des probabilités composées donne un \textbf{produit} :
+
+\equationajustee{\begin{aligned}
+P(V_1\cap R_2)&=P(V_1)\,P_{V_1}(R_2)\\
+&=\frac23\times\frac12\\
+&=\frac13.
+\end{aligned}}
+
+\equationajustee{\boxed{P(V_1\cap R_2)=\frac13}}
+
+\hypertarget{section-6}{%
+\subsubsection{3.}\label{section-6}}
+
+Les tirages étant sans remise, ils ne sont pas indépendants : on conditionne étape par étape.
+
+\begin{itemize}
+\tightlist
+\item
+  \(P(V_1)=\frac23\neq0\).
+\item
+  Sachant \(V_1\), l'urne contient 1 verte et 1 rouge, donc \(P_{V_1}(V_2)=\frac12\). Ainsi \(P(V_1\cap V_2)=\frac13\neq0\).
+\item
+  Sachant \(V_1\cap V_2\), les deux vertes ont été retirées et seule la rouge reste, donc \(P_{V_1\cap V_2}(R_3)=1\).
+\end{itemize}
+
+Par la formule des probabilités composées :
+
+\equationajustee{\begin{aligned}
+P(V_1\cap V_2\cap R_3)&=P(V_1)\,P_{V_1}(V_2)\,P_{V_1\cap V_2}(R_3)\\
+&=\frac23\times\frac12\times1\\
+&=\frac13.
+\end{aligned}}
+
+\equationajustee{\boxed{P(V_1\cap V_2\cap R_3)=\frac13}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/p1-q3-arbre-pondere.pdf}
+\caption*{Figure 2 --- Arbre pondéré des tirages sans remise (N = 3) : chaque nœud
+montre le contenu de l'urne, et les trois chemins qui mènent à la boule
+rouge ont la probabilité 1/3}
+\end{figure}
+
+\hypertarget{a.-8}{%
+\subsubsection{4.a.}\label{a.-8}}
+
+Il faut au moins un tirage. Comme les tirages se font sans remise, après deux vertes il ne reste que la rouge, tirée au troisième tirage. Les trois valeurs sont atteintes (probabilités non nulles en 4.b) :
+
+\equationajustee{\boxed{X(\Omega)=\{1,2,3\}.}}
+
+\hypertarget{b.-8}{%
+\subsubsection{4.b.}\label{b.-8}}
+
+On traduit chaque événement à l'aide des questions précédentes :
+
+\begin{itemize}
+\tightlist
+\item
+  \((X=1)=R_1\), donc \(P(X=1)=P(R_1)=\frac13\) (question 1) ;
+\item
+  \((X=2)=V_1\cap R_2\), donc \(P(X=2)=\frac13\) (question 2.b) ;
+\item
+  \((X=3)=V_1\cap V_2\cap R_3\), donc \(P(X=3)=\frac13\) (question 3).
+\end{itemize}
+
+\equationajustee{\boxed{\begin{aligned}
+P(X=1)&=\frac13\\
+P(X=2)&=\frac13\\
+P(X=3)&=\frac13
+\end{aligned}}}
+
+(contrôle : la somme vaut \(1\)).
+
+\hypertarget{c.-3}{%
+\subsubsection{4.c.}\label{c.-3}}
+
+\(X\) prend les valeurs \(1,2,3\), chacune avec probabilité \(\frac13\) :
+
+\equationajustee{\boxed{X\text{ suit la loi uniforme sur }\{1,2,3\}.}}
+
+Ce n'est pas une loi géométrique : les tirages sans remise ne forment pas une répétition d'épreuves de Bernoulli identiques et indépendantes.
+
+\hypertarget{d.}{%
+\subsubsection{4.d.}\label{d.}}
+
+\(X\) prend un nombre fini de valeurs, donc admet une espérance :
+
+\equationajustee{\begin{aligned}
+E(X)&=1\times\frac13+2\times\frac13+3\times\frac13\\
+&=2.
+\end{aligned}}
+
+\textbf{Il faut en moyenne 2 tirages pour obtenir la boule rouge.}
+
+\hypertarget{partie-2}{%
+\subsection{Partie 2}\label{partie-2}}
+
+\(N\ge3\), tirages avec remise : la composition de l'urne est la même à chaque tirage, et les tirages sont mutuellement indépendants.
+
+\hypertarget{section-7}{%
+\subsubsection{1.}\label{section-7}}
+
+Pour tout \(i\ge1\) :
+
+\equationajustee{\boxed{P(R_i)=\frac1N\ \text{ et }\ P(V_i)=\frac{N-1}N.}}
+
+\hypertarget{a.-9}{%
+\subsubsection{2.a.}\label{a.-9}}
+
+Les événements \(R_1\cap R_2\cap V_3\) et \(V_1\cap V_2\cap R_3\) sont \textbf{incompatibles} : le premier est inclus dans \(R_1\), le second dans \(V_1=\overline{R_1}\). Donc :
+
+\equationajustee{P(Y=3)=P(R_1\cap R_2\cap V_3)+P(V_1\cap V_2\cap R_3).}
+
+Les tirages avec remise étant mutuellement \textbf{indépendants} :
+
+\equationajustee{\begin{aligned}
+P(R_1\cap R_2\cap V_3)&=P(R_1)\,P(R_2)\,P(V_3)=\frac{N-1}{N^3},\\
+P(V_1\cap V_2\cap R_3)&=P(V_1)\,P(V_2)\,P(R_3)=\frac{(N-1)^2}{N^3}.
+\end{aligned}}
+
+En additionnant :
+
+\equationajustee{\begin{aligned}
+P(Y=3)&=\frac{(N-1)\big(1+(N-1)\big)}{N^3}\\
+&=\frac{(N-1)N}{N^3}\\
+&=\frac{N-1}{N^2}.
+\end{aligned}}
+
+\equationajustee{\boxed{P(Y=3)=\frac{N-1}{N^2}}}
+
+\hypertarget{b.-9}{%
+\subsubsection{2.b.}\label{b.-9}}
+
+Soit \(k\ge2\). L'événement \((Y=k)\) signifie qu'après \(k-1\) tirages on n'a pas encore vu les deux couleurs, donc que les \(k-1\) premiers tirages sont tous de la même couleur, et que le \(k\)-ième tirage donne l'autre couleur. Ainsi :
+
+\equationajustee{(Y=k)=\big(R_1\cap\cdots\cap R_{k-1}\cap V_k\big)\cup\big(V_1\cap\cdots\cap V_{k-1}\cap R_k\big).}
+
+Ces deux événements sont incompatibles (inclus respectivement dans \(R_1\) et dans \(V_1\)). Par indépendance mutuelle des tirages :
+
+\equationajustee{P(Y=k)=\left(\frac1N\right)^{k-1}\frac{N-1}N+\left(\frac{N-1}N\right)^{k-1}\frac1N.}
+
+Pour tout entier \(k\ge2\) :
+
+\equationajustee{\boxed{P(Y=k)=\frac{(N-1)+(N-1)^{k-1}}{N^k}.}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/p2-q2b-deux-scenarios.pdf}
+\caption*{Figure 3 --- Les deux scénarios incompatibles qui réalisent (Y = k) : k
+− 1 tirages d'une même couleur, puis l'autre couleur au k-ième tirage ;
+P(Y = k) est la somme de leurs probabilités}
+\end{figure}
+
+Contrôles :
+
+\begin{itemize}
+\tightlist
+\item
+  pour \(k=3\), on retrouve \(\frac{(N-1)N}{N^3}=\frac{N-1}{N^2}\) (question 2.a) ;
+\item
+  pour \(k=2\), \(P(Y=2)=\frac{2(N-1)}{N^2}\) ;
+\item
+  \(Y\ge2\), car un seul tirage ne donne qu'une couleur ;
+\item
+  les deux séries géométriques ont pour sommes \(\frac1N\) et \(\frac{N-1}N\), de total \(1\) : \(Y\) est finie presque sûrement.
+\end{itemize}
+
+\end{document}

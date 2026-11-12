@@ -1,0 +1,1995 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Centrale-Supélec PSI — Mathématiques 1 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Centrale-Supélec PSI}
+\fancyhead[R]{\small Maths 1 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Centrale-Supélec PSI — Mathématiques 1 2026\par}\medskip
+  {\large Centrale-Supélec · PSI · Maths 1 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} Le sujet, intitulé \emph{Obtention de piles successifs lors de lancers d'une pièce}, étudie le temps d'attente \(X_n\) de la première série de \(n\) piles consécutifs. La pièce a pour paramètre \(p\in]0,1[\), et \(q=1-p\).
+
+Le sujet étudie ensuite la probabilité \(P(A_{n,k})\) de voir au moins \(n\) piles consécutifs en \(k\) lancers. Épreuve de 4 heures, calculatrice autorisée, 45 questions.
+
+\textbf{Fil conducteur.} Une seule idée probabiliste, conditionner par \textbf{le rang du premier face} parmi les premiers lancers, fournit à chaque fois une \textbf{récurrence linéaire d'ordre \(n\)} :
+\equationajustee{\begin{aligned}
+P(X_n=k)&=\sum_{i=1}^nqp^{i-1}P(X_n=k-i)\\
+&=qP(X_n=k-1)+\dots+qp^{n-1}P(X_n=k-n).
+\end{aligned}}
+Le sujet exploite ensuite cette récurrence par trois outils : la résolution explicite (ordre 2), la réduction de la matrice compagnon (ordre 3) et la fonction génératrice (ordre \(n\)). Le polynôme \(f(t)=t^n-q\sum_{i=1}^np^{i-1}t^{n-i}\) de l'introduction est le polynôme caractéristique de cette récurrence : il revient en B, en C et en D.
+
+\textbf{Découpage.}
+- \textbf{Partie A (Q1--Q13), \(n=1\) puis \(n=2\).} Loi géométrique, puis récurrence d'ordre 2 pour \(X_2\), résolution explicite, \(P(X_2=+\infty)=0\), fonction génératrice, espérance et variance.
+- \textbf{Partie B (Q14--Q28), \(n=3\).} Récurrence d'ordre 3 et matrice compagnon \(M\). Localisation des racines de \(\chi_M\) : une racine réelle \(\lambda_1\in]0,1[\), deux racines complexes conjuguées de module plus petit. Diagonalisation, équivalent \(P(X_3=k)\sim m\lambda_1^k\), puis cas explicite \(p=\frac34\).
+- \textbf{Partie C (Q29--Q35), \(n\) quelconque.} Majoration \(P(X_n=k)\leqslant t^k\), fonction génératrice rationnelle, \(E(X_n)=\frac{1-p^n}{qp^n}\), décomposition en éléments simples admise.
+- \textbf{Partie D (Q36--Q45), au moins \(n\) piles en \(k\) lancers.} Récurrence affine, passage à \(u_k=1-P(A_{n,k})\), décroissance géométrique de \(u_k\), conséquence « presque sûre », application numérique, démarche de synthèse.
+
+\textbf{Notions du programme mobilisées.} Systèmes complets d'événements et formule des probabilités totales ; continuité croissante et décroissante ; loi géométrique ; fonctions génératrices, critère d'existence des moments par le rayon de convergence ; séries entières (rayon, unicité du développement) ; suites récurrentes linéaires d'ordre 2 ; polynôme caractéristique, diagonalisation, relations coefficients-racines ; théorème des valeurs intermédiaires ; récurrence forte ; Python.
+
+\textbf{Difficulté et longueur.} Le sujet est long mais progressif et très guidé. La plupart des questions sont des variantes d'un même raisonnement : celui qui a bien compris Q6 traite Q15, Q30 et Q37 presque mécaniquement. Les questions discriminantes sont Q19 (une seule racine réelle), Q24 (comparaison des modules), Q33 (calcul de la fonction génératrice), Q42 (récurrence d'ordre \(n\) avec un \(\alpha\) à construire) et Q45 (synthèse).
+
+\textbf{À ne pas laisser passer.} Q1--Q2, Q4, Q14, Q16--Q17, Q26--Q29, Q31, Q36, Q38--Q39, Q43--Q44 : ce sont des points presque assurés.
+
+\textbf{Gestion du temps.} Environ 55 minutes pour A, 1 h 15 pour B, 50 minutes pour C, 50 minutes pour D, 10 minutes de relecture. Les parties dépendent peu les unes des autres : la partie D peut être abordée directement (elle ne réutilise de C que la fonction \(f\) et l'idée de Q32), ce qui permet de récolter Q36--Q41 et Q43--Q44 si l'on bloque en B.
+
+Notations : \(P_i\) (resp. \(F_i\)) est l'événement « le \(i\)-ième lancer donne pile (resp. face) ». Les lancers sont mutuellement indépendants et de même loi.
+
+\hypertarget{a-les-cas-ouxf9-n1-et-n2}{%
+\section{\texorpdfstring{A --- Les cas où \(n=1\) et \(n=2\)}{A --- Les cas où n=1 et n=2}}\label{a-les-cas-ouxf9-n1-et-n2}}
+
+La partie A met en place tous les gestes du sujet sur les cas les plus simples : décrire un événement par des mots en \(P\) et \(F\), conditionner par le premier face, montrer qu'une variable à valeurs dans \({\mathbb{N}}^*\cup\{+\infty\}\) est presque sûrement finie, et tirer espérance et variance d'une fonction génératrice de rayon strictement supérieur à 1.
+
+\hypertarget{i-le-cas-ouxf9-n1}{%
+\subsection{\texorpdfstring{I --- Le cas où \(n=1\)}{I --- Le cas où n=1}}\label{i-le-cas-ouxf9-n1}}
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Écrivez l'événement \((X_1=k)\) comme une intersection d'événements portant chacun sur un lancer.
+
+\end{indication}
+
+\begin{indication}{2}
+
+N'oubliez pas la valeur \(+\infty\) : une loi n'est complète que si l'on connaît aussi \(P(X_1=+\infty)\).
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Soit \(k\in{\mathbb{N}}^*\). On a
+\equationajustee{(X_1=k)=F_1\cap\dots\cap F_{k-1}\cap P_k,}
+donc, par indépendance des lancers, \(P(X_1=k)=q^{k-1}p\). Comme
+\equationajustee{\sum_{k\geqslant1}q^{k-1}p=\frac{p}{1-q}=1,}
+on obtient
+\equationajustee{\begin{aligned}
+P(X_1=+\infty)&=1-\sum_{k\geqslant1}P(X_1=k)\\
+&=0.
+\end{aligned}}
+\equationajustee{\boxed{\begin{aligned}{}&\forall k\in{\mathbb{N}}^*,\ P(X_1=k)=q^{k-1}p,\\
+&P(X_1=+\infty)=0 :\ X_1\sim\mathcal{G}(p).
+\end{aligned}}}
+
+\begin{piege}
+
+Écrire seulement « \(X_1\) suit une loi géométrique » ne suffit pas : il faut décrire l'événement et invoquer l'indépendance. L'énoncé autorise \(X_n=+\infty\), il faut donc régler le cas de cette valeur.
+
+\end{piege}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+« Donner directement » : on attend les formules de cours, sans démonstration (elle fait l'objet de Q3).
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\equationajustee{\boxed{\begin{aligned}
+G_{X_1}(z)&=\frac{pz}{1-qz}\quad(|z|<1/q),\\
+E(X_1)&=\frac1p,\\
+V(X_1)&=\frac{q}{p^2}.
+\end{aligned}}}
+
+\begin{piege}
+
+Ne pas confondre avec le nombre d'échecs \(X_1-1\), à valeurs dans \(\mathbb{N}\). Sa fonction génératrice est \(\frac{p}{1-qz}\) et son espérance \(\frac qp\).
+
+\end{piege}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+La fonction génératrice est la somme d'une série géométrique. Quel est son rayon de convergence ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un rayon strictement supérieur à \(1\) autorise à dériver en \(1\). Rappelez ce que donnent \(G'(1)\) et \(G''(1)\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\emph{Fonction génératrice.} Soit \(|z|<1/q\). La série \(\sum_{k\geqslant1}q^{k-1}pz^k\) est géométrique de raison \(qz\), avec \(|qz|<1\) ; elle converge absolument et
+\equationajustee{G_{X_1}(z)=pz\sum_{k\geqslant1}(qz)^{k-1}=\frac{pz}{1-qz}.}
+Son rayon de convergence est \(1/q>1\).
+
+\emph{Moments.} Les séries dérivées \(\sum kP(X_1=k)z^{k-1}\) et \(\sum k(k-1)P(X_1=k)z^{k-2}\) ont le même rayon \(1/q>1\). Elles convergent donc absolument en \(z=1\).
+
+Ainsi \(X_1\) admet un moment d'ordre 2, avec
+\equationajustee{\begin{aligned}
+E(X_1)&=G'_{X_1}(1),\\
+E(X_1(X_1-1))&=G''_{X_1}(1).
+\end{aligned}}
+Or
+\equationajustee{\begin{aligned}
+G'_{X_1}(z)&=\frac{p}{(1-qz)^2},\\
+G''_{X_1}(z)&=\frac{2pq}{(1-qz)^3},
+\end{aligned}}
+d'où \(E(X_1)=\frac{p}{p^2}=\frac1p\) et \(E(X_1(X_1-1))=\frac{2q}{p^2}\). Par la formule de König-Huygens,
+\equationajustee{\begin{aligned}
+V(X_1)&=G''(1)+G'(1)-G'(1)^2\\
+&=\frac{2q}{p^2}+\frac1p-\frac1{p^2}\\
+&=\frac{2q+p-1}{p^2}\\
+&=\frac{q}{p^2}.
+\end{aligned}}
+
+\begin{methode}
+
+Retenez la formule \(V(X)=G''(1)+G'(1)-G'(1)^2\), valable dès que \(X\) admet un moment d'ordre 2. Elle resservira en Q13.
+
+\end{methode}
+
+\begin{piege}
+
+\(G''(1)\) vaut \(E(X(X-1))\) et non \(E(X^2)\). Oublier le terme \(+G'(1)\) est l'erreur la plus fréquente.
+
+\end{piege}
+
+\hypertarget{ii-le-cas-ouxf9-n2}{%
+\subsection{\texorpdfstring{II --- Le cas où \(n=2\)}{II --- Le cas où n=2}}\label{ii-le-cas-ouxf9-n2}}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Combien de lancers faut-il au minimum pour voir deux piles consécutifs ?
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\((X_2=1)\) est impossible, et \((X_2=2)=P_1\cap P_2\). Donc
+\equationajustee{\boxed{\begin{aligned}
+P(X_2=1)&=0,\\
+P(X_2=2)&=p^2.
+\end{aligned}}}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Parmi les quatre résultats possibles des deux premiers lancers, lequel est incompatible avec \(X_2=k>2\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour être complet, regardez ce qu'impose \(X_2=k\) sur les lancers \(k-2\) à \(k\). Testez ensuite les petites valeurs de \(k\).
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Soit \(k>2\) et supposons \(X_2=k\). Les deux premiers lancers ne donnent pas \(PP\), sinon on aurait \(X_2=2\). Donc \textbf{les deux premiers résultats appartiennent à \(\{FF,FP,PF\}\)} : soit le premier lancer donne face, soit les deux premiers donnent \(PF\).
+
+Plus précisément, fixons \(k\). L'événement \((X_2=k)\) impose \(P_{k-1}\cap P_k\). Comme \(k\geqslant3\), il impose aussi \(F_{k-2}\) :
+- \(k=3\) : \(F_1P_2P_3\), l'ensemble est \(\{FP\}\) ;
+- \(k=4\) : \(F_2P_3P_4\). L'ensemble est \(\{FF,PF\}\) (suites \(FFPP\) et \(PFPP\)) ;
+- \(k\geqslant5\) : les trois issues sont possibles. On place \(k-4\geqslant1\) faces au milieu. Par exemple : \(FF\,F\cdots F\,PP\), \(FP\,F\cdots F\,PP\), \(PF\,F\cdots F\,PP\).
+
+\begin{methode}
+
+Le regroupement utile pour la suite n'est pas \(\{FF\}\cup\{FP\}\cup\{PF\}\) mais \(\{F\ \text{au premier lancer}\}\cup\{PF\}\) : c'est la position du \textbf{premier face} qui dit à partir de quel lancer le processus recommence.
+
+\end{methode}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Utilisez le système complet \(F_1\), \(P_1\cap F_2\), \(P_1\cap P_2\), suggéré par Q5.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sachant \(F_1\), que devient la recherche de deux piles consécutifs ? Expliquez pourquoi les lancers suivants « recommencent l'expérience ».
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Considérons les événements \(F_1\), \(P_1\cap F_2\) et \(P_1\cap P_2\). Ils sont deux à deux incompatibles, de réunion \(\Omega\).
+
+Leurs probabilités \(q\), \(pq\), \(p^2\) sont non nulles : c'est un système complet. Soit \(k>2\).
+
+\begin{itemize}
+\tightlist
+\item
+  Sur \(P_1\cap P_2\), \(X_2=2\neq k\) : \(P\big((X_2=k)\cap P_1\cap P_2\big)=0\).
+\item
+  Sur \(F_1\), aucune série de deux piles ne contient le lancer 1. Ainsi \(X_2=k\) équivaut à : la première série \(PP\) des lancers à partir du deuxième se termine au rang \(k-1\) de cette suite. Ces lancers sont indépendants, de même loi, et indépendants du premier, donc \(P\big(F_1\cap(X_2=k)\big)=q\,P(X_2=k-1)\).
+\item
+  Sur \(P_1\cap F_2\), aucune série \(PP\) ne contient les lancers 1 ou 2. De même, \(P\big(P_1\cap F_2\cap(X_2=k)\big)=pq\,P(X_2=k-2)\), avec \(k-2\geqslant1\).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q6-arbre-systeme-complet.pdf}
+\caption*{Figure 1 --- Arbre des deux premiers lancers pour n = 2 : le système
+complet F₁, P₁ ∩ F₂, P₁ ∩ P₂ et l'apport de chaque événement à P(X₂ =
+k), pour k \textgreater{} 2}
+\end{figure}
+
+La formule des probabilités totales donne
+\equationajustee{\boxed{\begin{aligned}
+\forall k>2,\quad P(X_2=k)&=q\,P(X_2=k-1)\\
+&\quad+pq\,P(X_2=k-2).
+\end{aligned}}}
+
+\begin{jury}
+
+L'argument du « redémarrage » doit être écrit : le face interdit à toute série de chevaucher les premiers lancers, et les lancers suivants forment une suite de même loi, indépendante des premiers. Écrire seulement « on repart de zéro » ne justifie pas le décalage d'indice.
+
+\end{jury}
+
+\begin{methode}
+
+Cette décomposition est le cœur du sujet : elle sera réécrite en Q15 (\(n=3\)), Q30 (\(n\) quelconque) et Q37 (événement \(A_{n,k}\)). Soignez-la une fois pour toutes.
+
+\end{methode}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Discriminant, puis relations coefficients-racines (somme et produit) pour les signes et les modules.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la localisation dans \(]-1,1[\), évaluez le trinôme. Les points utiles sont \(-1\), \(0\) et \(1\).
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Soit \(T=X^2-qX-pq\). Son discriminant \(\Delta=q^2+4pq\) est strictement positif, donc \(T\) a deux racines réelles
+\equationajustee{\begin{aligned}
+r_1&=\frac{q+\sqrt{q^2+4pq}}{2},\\
+r_2&=\frac{q-\sqrt{q^2+4pq}}{2},
+\end{aligned}}
+avec \(r_2<r_1\).
+
+Leur produit vaut \(-pq<0\), donc \(r_2<0<r_1\). Leur somme vaut \(q>0\), d'où
+\equationajustee{|r_1|-|r_2|=r_1+r_2=q>0,}
+soit \(|r_2|<|r_1|\).
+
+Enfin, on évalue le trinôme en \(1\), \(-1\) et \(0\) :
+\equationajustee{\begin{aligned}
+T(1)&=1-q-pq\\
+&=p-pq\\
+&=p^2>0,\\
+T(-1)&=1+q-pq\\
+&=1+q^2>0,\\
+T(0)&=-pq<0.
+\end{aligned}}
+Par le théorème des valeurs intermédiaires, \(T\) s'annule dans \(]-1,0[\) et dans \(]0,1[\). Comme \(T\) n'a que deux racines, ce sont \(r_2\) et \(r_1\) :
+\equationajustee{\boxed{\begin{aligned}{}&-1<r_2<0<r_1<1,\\
+&|r_2|<|r_1|.
+\end{aligned}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q7-trinome-racines.pdf}
+\caption*{Figure 2 --- Allure du trinôme X² − qX − pq, tracé pour p = q = 1/2 :
+positif en −1 et en 1, négatif en 0, il a une racine r₂ entre −1 et 0 et
+une racine r₁ entre 0 et 1}
+\end{figure}
+
+\begin{piege}
+
+« \(T(1)>0\) donc \(r_1<1\) » est faux en soi. En effet, \(T(1)>0\) dit seulement que \(1\) est hors de \([r_2,r_1]\).
+
+Le signe de \(T(0)\) (ou la position de \(0\)) précise de quel côté.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+La série est la différence de deux séries géométriques. Quels sont leurs rayons ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que sait-on du rayon d'une somme de deux séries entières de rayons \textbf{différents} ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+La série \(\sum r_1^{k-1}z^k\) a pour rayon \(1/r_1\). La série \(\sum r_2^{k-1}z^k\) a pour rayon \(1/|r_2|\). Ces rayons sont distincts puisque \(|r_2|<r_1\) (Q7), donc le rayon de la différence est le plus petit des deux :
+\equationajustee{\boxed{R=\frac1{r_1}>1.}}
+
+\begin{piege}
+
+Si les deux rayons étaient égaux, on saurait seulement que le rayon de la somme est au moins égal à leur valeur commune. C'est l'inégalité stricte \(|r_2|<|r_1|\) de Q7 qui permet de conclure.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+La suite \((P(X_2=k))_k\) vérifie une récurrence linéaire d'ordre 2 dont l'équation caractéristique est le trinôme de Q7.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les conditions initiales sont celles de Q4. Vérifiez votre formule pour \(k=1\) et \(k=2\).
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+D'après Q6, \(u_k=P(X_2=k)\) vérifie, pour \(k\geqslant3\),
+\equationajustee{u_k=qu_{k-1}+pqu_{k-2}.}
+L'équation caractéristique \(x^2-qx-pq=0\) a deux racines réelles distinctes \(r_1,r_2\). Il existe donc \((\alpha,\beta)\in{\mathbb{R}}^2\) tels que, pour tout \(k\geqslant1\),
+\equationajustee{u_k=\alpha r_1^k+\beta r_2^k.}
+Les conditions \(u_1=0\) et \(u_2=p^2\) donnent
+\equationajustee{\begin{aligned}
+\alpha r_1+\beta r_2&=0,\\
+\alpha r_1^2+\beta r_2^2&=p^2.
+\end{aligned}}
+En reportant \(\beta r_2=-\alpha r_1\) dans la seconde, \(\alpha r_1(r_1-r_2)=p^2\), d'où
+\equationajustee{\begin{aligned}
+\alpha&=\frac{p^2}{r_1(r_1-r_2)},\\
+\beta&=-\frac{p^2}{r_2(r_1-r_2)}.
+\end{aligned}}
+Avec \(r_1-r_2=\sqrt{q^2+4pq}\), pour tout \(k\geqslant2\) (et même \(k\geqslant1\)) :
+\equationajustee{\boxed{P(X_2=k)=\frac{p^2}{\sqrt{q^2+4pq}}\left(r_1^{k-1}-r_2^{k-1}\right).}}
+
+\begin{piege}
+
+La récurrence ne vaut que pour \(k\geqslant3\) : les deux conditions initiales sont \(u_1\) et \(u_2\), et il faut les deux.
+
+\end{piege}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+\(X_2=+\infty\) signifie que \(X_2\) dépasse tout entier. Quelle propriété de continuité d'une probabilité s'applique à une intersection décroissante ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Il reste à calculer \(\sum_{j\geqslant1}P(X_2=j)\) à partir de Q9 ; le produit \((1-r_1)(1-r_2)\) se lit sur le trinôme.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\(X_2\) vaut \(+\infty\) si et seulement si elle est supérieure ou égale à tout entier :
+\equationajustee{\boxed{(X_2=+\infty)=\bigcap_{k\in{\mathbb{N}}^*}(X_2\geqslant k).}}
+La suite \(\big((X_2\geqslant k)\big)_k\) est décroissante pour l'inclusion ; par continuité décroissante,
+\equationajustee{\begin{aligned}
+P(X_2=+\infty)&=\lim_{k\to+\infty}P(X_2\geqslant k)\\
+&=\lim_{k\to+\infty}\Big(1-\sum_{j=1}^{k-1}P(X_2=j)\Big)\\
+&=1-\sum_{j=1}^{+\infty}P(X_2=j).
+\end{aligned}}
+Comme \(|r_1|,|r_2|<1\), Q9 donne
+\equationajustee{\begin{aligned}
+\sum_{j\geqslant1}P(X_2=j)&=\frac{p^2}{r_1-r_2}\left(\frac1{1-r_1}-\frac1{1-r_2}\right)\\
+&=\frac{p^2}{(1-r_1)(1-r_2)}\\
+&=1,
+\end{aligned}}
+car \((1-r_1)(1-r_2)=T(1)=p^2\). Donc
+\equationajustee{\boxed{P(X_2=+\infty)=0.}}
+
+\begin{piege}
+
+Écrire « \(\sum_jP(X_2=j)=1\) car c'est une loi de probabilité » est un raisonnement circulaire : c'est justement ce qu'il faut démontrer, puisque la masse manquante est \(P(X_2=+\infty)\).
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Remplacez \(P(X_2=k)\) par l'expression de Q9 et sommez deux séries géométriques.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Reconnaissez \((1-r_1z)(1-r_2z)\) grâce aux relations coefficients-racines.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Soit \(|z|<R=1/r_1\) ; alors \(|r_2z|<|r_1z|<1\). D'après Q9 et Q10, \(G_{X_2}(z)=\sum_{k\geqslant1}P(X_2=k)z^k\) et
+\equationajustee{\begin{aligned}
+G_{X_2}(z)&=\frac{p^2}{r_1-r_2}\sum_{k\geqslant2}\left(r_1^{k-1}-r_2^{k-1}\right)z^k\\
+&=\frac{p^2z^2}{r_1-r_2}\left(\frac{r_1}{1-r_1z}-\frac{r_2}{1-r_2z}\right)\\
+&=\frac{p^2z^2}{(1-r_1z)(1-r_2z)},
+\end{aligned}}
+puisque \(r_1(1-r_2z)-r_2(1-r_1z)=r_1-r_2\). Or
+\equationajustee{\begin{aligned}
+(1-r_1z)(1-r_2z)&=1-(r_1+r_2)z+r_1r_2z^2\\
+&=1-qz-pqz^2,
+\end{aligned}}
+donc
+\equationajustee{\boxed{\forall z\in\mathbb{C},\ |z|<R,\quad G_{X_2}(z)=\frac{p^2z^2}{1-qz-pqz^2}.}}
+
+\begin{methode}
+
+Autre voie, plus rapide et généralisable : multiplier la récurrence de Q6 par \(z^k\) et sommer pour \(k\geqslant3\), ce qui donne \(G(z)(1-qz-pqz^2)=p^2z^2\). C'est la méthode de Q33.
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Le rayon de convergence de la fonction génératrice est-il strictement supérieur à \(1\) ?
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+La série entière \(\sum P(X_2=k)z^k\) a pour rayon \(R=1/r_1>1\) (Q8). Ses séries dérivées première et seconde ont le même rayon, donc convergent absolument en \(z=1\).
+
+Ainsi \(\sum kP(X_2=k)\) et \(\sum k(k-1)P(X_2=k)\) convergent, donc aussi \(\sum k^2P(X_2=k)\).
+
+Comme \(X_2\) est presque sûrement finie (Q10), \textbf{\(X_2\) admet une espérance et une variance}, avec
+\equationajustee{\begin{aligned}
+E(X_2)&=G'(1),\\
+E(X_2(X_2-1))&=G''(1).
+\end{aligned}}
+
+\begin{jury}
+
+Pour une variance, il faut établir l'existence du moment d'ordre 2, et pas seulement celle de l'espérance. L'argument du rayon strictement supérieur à 1 donne les deux d'un coup.
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Plutôt que de dériver un quotient, dérivez l'identité \(D(z)G(z)=p^2z^2\) avec \(D(z)=1-qz-pqz^2\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour simplifier la variance, posez \(u=1/p\) et éliminez \(q=1-p\).
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Notons \(G=G_{X_2}\) et \(D(z)=1-qz-pqz^2\). On a \(D(z)G(z)=p^2z^2\) sur \(]-R,R[\), intervalle qui contient \(1\). De plus :
+\equationajustee{\begin{aligned}
+G(1)&=1,\\
+D(1)&=p^2,\\
+D'(1)&=-q-2pq\\
+&=-q(1+2p),\\
+D''&=-2pq.
+\end{aligned}}
+
+\emph{Espérance.} En dérivant une fois et en évaluant en \(1\) :
+\equationajustee{D'(1)+p^2G'(1)=2p^2,}
+d'où
+\equationajustee{\begin{aligned}
+p^2G'(1)&=2p^2+(1-p)(1+2p)\\
+&=1+p,
+\end{aligned}}
+et
+\equationajustee{\boxed{E(X_2)=\frac{1+p}{p^2}=\frac1{p^2}+\frac1p.}}
+
+\emph{Variance.} En dérivant deux fois :
+\equationajustee{D''(1)+2D'(1)G'(1)+p^2G''(1)=2p^2,}
+donc
+\equationajustee{\begin{aligned}
+p^2G''(1)&=2p^2+2pq+2q(1+2p)\frac{1+p}{p^2}\\
+&=2p+\frac{2(1+2p-p^2-2p^3)}{p^2},
+\end{aligned}}
+puisque \(2p^2+2pq=2p\) et \((1-p)(1+2p)(1+p)=1+2p-p^2-2p^3\).
+
+Posons \(u=1/p\). Alors \(G''(1)=2u^4+4u^3-2u^2-2u\) et \(E(X_2)=u^2+u\), d'où
+\equationajustee{\begin{aligned}
+V(X_2)&=G''(1)+G'(1)-G'(1)^2\\
+&=(2u^4+4u^3-2u^2-2u)+(u^2+u)-(u^4+2u^3+u^2)\\
+&=u^4+2u^3-2u^2-u,
+\end{aligned}}
+\equationajustee{\boxed{V(X_2)=\frac1{p^4}+\frac2{p^3}-\frac2{p^2}-\frac1p.}}
+Contrôle : pour \(p=\frac12\), on trouve \(E(X_2)=6\) et
+\equationajustee{V(X_2)=16+16-8-2=22.}
+
+\begin{methode}
+
+Dériver une identité \(D\,G=N\) plutôt que le quotient \(N/D\) réduit beaucoup les risques d'erreur. Un contrôle sur une valeur simple (\(p=\frac12\)) coûte une ligne et sécurise le calcul.
+
+\end{methode}
+
+\hypertarget{b-le-cas-ouxf9-n3}{%
+\section{\texorpdfstring{B --- Le cas où \(n=3\)}{B --- Le cas où n=3}}\label{b-le-cas-ouxf9-n3}}
+
+La partie B traite la récurrence d'ordre 3 par l'algèbre linéaire. On l'écrit \(U_{k+1}=MU_k\), puis on localise les racines de \(\chi_M\) : une racine réelle \(\lambda_1\in]0,1[\) et deux racines complexes conjuguées de module plus petit. On diagonalise et l'on en déduit le comportement asymptotique de \(P(X_3=k)\). Le polynôme auxiliaire \(\psi=(X-p)\chi_M\) sert d'outil central en Q19 et Q24.
+
+\hypertarget{i-uxe9tude-guxe9nuxe9rale-uxe0-laide-de-lalguxe8bre-linuxe9aire}{%
+\subsection{I --- Étude générale à l'aide de l'algèbre linéaire}\label{i-uxe9tude-guxe9nuxe9rale-uxe0-laide-de-lalguxe8bre-linuxe9aire}}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Même raisonnement qu'en Q4, avec trois piles.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Trois piles consécutifs demandent au moins trois lancers, et \((X_3=3)=P_1\cap P_2\cap P_3\) :
+\equationajustee{\boxed{\begin{aligned}
+P(X_3=1)&=0,\\
+P(X_3=2)&=0,\\
+P(X_3=3)&=p^3.
+\end{aligned}}}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Classez les issues selon le rang du premier face parmi les trois premiers lancers, ou son absence.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le dernier événement du système correspond à \(PPF\), pas à \(PPP\) : vérifiez le coefficient du terme en \(P(X_3=k-3)\).
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+Considérons les événements
+\equationajustee{\begin{aligned}
+E_1&=F_1,\\
+E_2&=P_1\cap F_2,\\
+E_3&=P_1\cap P_2\cap F_3,\\
+E_0&=P_1\cap P_2\cap P_3.
+\end{aligned}}
+Ils forment un système complet. Leurs probabilités respectives sont
+\equationajustee{q,\qquad pq,\qquad p^2q,\qquad p^3.}
+Soit \(k>3\). Sur \(E_0\), \(X_3=3\neq k\).
+
+Soit \(i\in\{1,2,3\}\). Sur \(E_i\), le face du rang \(i\) empêche toute série de trois piles de contenir un lancer de rang \(\leqslant i\).
+
+L'expérience recommence au lancer \(i+1\), avec des lancers indépendants de même loi et indépendants des \(i\) premiers. Donc \(P\big(E_i\cap(X_3=k)\big)=P(E_i)\,P(X_3=k-i)\), avec \(k-i\geqslant1\).
+
+Par la formule des probabilités totales :
+\equationajustee{\boxed{\begin{aligned}
+\forall k>3,\quad P(X_3=k)&=qP(X_3=k-1)+pqP(X_3=k-2)\\
+&\quad+qp^2P(X_3=k-3).
+\end{aligned}}}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+La première ligne de \(M\) code la récurrence ; les deux autres décalent les composantes.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Soit \(k\geqslant1\). On a \(k+3>3\), donc Q15 donne la première composante de \(U_{k+1}\). Les deux autres composantes de \(U_{k+1}\) sont les deux premières de \(U_k\) :
+\equationajustee{\boxed{M=\begin{pmatrix}q&pq&qp^2\\1&0&0\\0&1&0\end{pmatrix}.}}
+
+\begin{piege}
+
+L'ordre des composantes de \(U_k\) est décroissant de haut en bas. Inverser cet ordre change la place de la ligne de récurrence, et donc la forme de la matrice.
+
+\end{piege}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Développez \(\det(XI_3-M)\) selon la première colonne, qui ne contient que deux termes non nuls.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\equationajustee{\begin{aligned}
+\chi_M(X)&=\begin{vmatrix}X-q&-pq&-qp^2\\-1&X&0\\0&-1&X\end{vmatrix}\\
+&=(X-q)X^2+\begin{vmatrix}-pq&-qp^2\\-1&X\end{vmatrix}\\
+&=(X-q)X^2-pqX-qp^2,
+\end{aligned}}
+\equationajustee{\boxed{\chi_M(X)=X^3-qX^2-pqX-qp^2.}}
+
+\begin{methode}
+
+On retrouve l'équation caractéristique de la récurrence : c'est la propriété générale des matrices compagnons. Pour \(n=3\), \(\chi_M\) est exactement le polynôme qui définit \(f\).
+
+\end{methode}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+L'existence vient du théorème des valeurs intermédiaires entre \(0\) et \(1\) ; le calcul de \(\chi_M(1)\) fait apparaître une somme géométrique.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'unicité, divisez par \(x^3\) : la fonction \(x\mapsto\chi_M(x)/x^3\) a une monotonie évidente sur \(]0,+\infty[\).
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+On a \(\chi_M(0)=-qp^2<0\) et
+\equationajustee{\begin{aligned}
+\chi_M(1)&=1-q(1+p+p^2)\\
+&=1-(1-p^3)\\
+&=p^3>0.
+\end{aligned}}
+Par le théorème des valeurs intermédiaires, \(\chi_M\) s'annule sur \(]0,1[\).
+
+Pour \(x>0\), on a
+\equationajustee{\frac{\chi_M(x)}{x^3}=1-\frac qx-\frac{pq}{x^2}-\frac{qp^2}{x^3}.}
+Cette fonction est strictement croissante sur \(]0,+\infty[\) (somme de fonctions croissantes, dont l'une strictement). Donc \(\chi_M\) s'annule au plus une fois sur \(]0,+\infty[\).
+
+Ainsi \textbf{\(\chi_M\) a une unique racine \(\lambda_1\) dans \(]0,1[\)} ; c'est sa seule racine positive, et
+\equationajustee{\begin{aligned}
+\chi_M&<0\ \text{sur}\ ]0,\lambda_1[,\\
+\chi_M&>0\ \text{sur}\ ]\lambda_1,+\infty[.
+\end{aligned}}
+
+\begin{methode}
+
+Le signe de \(\chi_M\) de part et d'autre de \(\lambda_1\) ne coûte rien ici. Il sert en Q24 pour comparer \(q\) à \(\lambda_1\). On peut aussi étudier \(\chi_M'\), mais l'astuce de la division par \(x^3\) est plus courte.
+
+\end{methode}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+La vérification est un développement. Pour le nombre de racines réelles, étudiez les variations de \(\psi=X^4-X^3+qp^3\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(p\) est toujours une racine de \(\psi\). Distinguez selon le signe de \(\psi(\frac34)\), et regardez quand \(p\) est racine de \(\chi_M\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\emph{Vérification.}
+\equationajustee{\begin{aligned}
+(X-p)\chi_M(X)&=X^4-qX^3-pqX^2-qp^2X\\
+&\quad-pX^3+pqX^2+qp^2X+qp^3\\
+&=X^4-(p+q)X^3+qp^3\\
+&=X^4-X^3+qp^3.
+\end{aligned}}
+
+\emph{Une seule racine réelle.} Soit \(\psi=X^4-X^3+qp^3\). Alors \(\psi'=X^2(4X-3)\).
+
+Ainsi \(\psi\) est strictement décroissante sur \(]-\infty,\frac34]\) et strictement croissante sur \([\frac34,+\infty[\) : elle a au plus deux racines réelles distinctes. De plus \(\psi(p)=p^3(p-1+q)=0\), et
+\equationajustee{\begin{aligned}
+\chi_M(p)&=p^3-3qp^2\\
+&=p^2(p-3q).
+\end{aligned}}
+
+\emph{Cas \(\psi(\frac34)<0\).} Alors \(\psi\) a exactement deux racines réelles. L'une est \(p\). L'autre est \(\lambda_1\), racine de \(\chi_M\) donc de \(\psi\).
+
+En effet \(\lambda_1\neq p\). Sinon \(\chi_M(p)=0\), d'où \(p=3q\), soit \(p=\frac34\). On aurait alors \(\psi(\frac34)=\psi(p)=0\) : contradiction.
+
+Les racines réelles de \(\chi_M\) sont parmi \(\{p,\lambda_1\}\), et \(\chi_M(p)\neq0\). Donc \textbf{\(\lambda_1\) est la seule racine réelle de \(\chi_M\)}.
+
+\emph{Cas \(\psi(\frac34)=0\).} Alors \(\frac34\) est l'unique racine réelle de \(\psi\) (minimum strict). Comme \(\psi(p)=0\), on a \(p=\frac34\).
+
+Ainsi \(\frac34\) est la seule racine réelle de \(\chi_M\) : \(\lambda_1=\frac34\).
+
+\emph{Cas \(\psi(\frac34)>0\).} Il est exclu puisque \(\psi(p)=0\).
+
+Dans tous les cas, \(\chi_M\) admet une seule racine réelle, \(\lambda_1\).
+
+\begin{piege}
+
+« \(\psi\) a au plus deux racines réelles » ne suffit pas à lui seul : il faut écarter que \(\chi_M\) ait une racine réelle double ou une deuxième racine réelle égale à \(p\). C'est le rôle de la discussion sur \(\chi_M(p)\). Une autre rédaction consiste à compter les racines réelles avec multiplicité : \(\psi\) en a exactement deux, donc \(\chi_M\) en a une seule.
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Combien \(\chi_M\) a-t-il de racines complexes distinctes ?
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\(\chi_M\), réel de degré 3, est scindé sur \(\mathbb{C}\). Sa seule racine réelle est \(\lambda_1\).
+
+Ses deux autres racines sont donc non réelles et, \(\chi_M\) étant à coefficients réels, conjuguées. Ce sont \(\lambda_2\) et \(\overline{\lambda_2}\), avec \(\lambda_2\neq\overline{\lambda_2}\).
+
+Les trois nombres \(\lambda_1,\lambda_2,\overline{\lambda_2}\) sont deux à deux distincts (\(\lambda_1\) est réel, les deux autres non). La matrice \(M\in{\mathcal{M}}_3(\mathbb{C})\) a trois valeurs propres distinctes : \textbf{elle est diagonalisable dans \(\mathbb{C}\)}.
+
+\begin{methode}
+
+En dimension \(n\), \(n\) valeurs propres distinctes suffisent pour diagonaliser : inutile de calculer les sous-espaces propres.
+
+\end{methode}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Exprimez \(U_k\) à l'aide de \(M^{k-1}\) et de \(U_1\). Remplacez ensuite \(M^{k-1}\) par \(QD^{k-1}Q^{-1}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lisez seulement la troisième composante : chaque terme est un produit d'un coefficient de \(Q\), d'une puissance de valeur propre et d'une composante de \(Q^{-1}U_1\).
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Par récurrence immédiate, \(U_k=M^{k-1}U_1\) pour \(k\geqslant1\). De plus \(M^{k-1}=QD^{k-1}Q^{-1}\), avec \(D=\mathrm{diag}(\lambda_1,\lambda_2,\overline{\lambda_2})\) (on ordonne ainsi les valeurs propres).
+
+Posons \(V=Q^{-1}U_1=(v_1,v_2,v_3)^\top\), et notons \((w_1,w_2,w_3)\) la troisième ligne de \(Q\). La troisième composante de \(U_k\) vaut alors
+\equationajustee{P(X_3=k)=w_1v_1\lambda_1^{k-1}+w_2v_2\lambda_2^{k-1}+w_3v_3\overline{\lambda_2}^{\,k-1}.}
+Posons
+\equationajustee{\begin{aligned}
+A&=w_1v_1,\\
+B&=w_2v_2,\\
+C&=w_3v_3,
+\end{aligned}}
+indépendants de \(k\). Pour tout \(k\geqslant1\) :
+\equationajustee{\boxed{P(X_3=k)=A\lambda_1^{k-1}+B\lambda_2^{k-1}+C\overline{\lambda_2}^{\,k-1},}}
+avec \(\lambda_1\in]0,1[\) (Q18) et \(\lambda_2\in\mathbb{C}\).
+
+\begin{piege}
+
+L'exposant est \(k-1\) et non \(k\), parce que \(U_k=M^{k-1}U_1\). Et c'est bien la troisième composante de \(U_k\) qui vaut \(P(X_3=k)\).
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Écrivez la relation de Q21 pour \(k=1,2,3\) à l'aide de Q14 : c'est un système de Vandermonde.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour éliminer \(B\) et \(C\) d'un coup, combinez les trois équations avec les coefficients du polynôme \((X-\lambda_2)(X-\overline{\lambda_2})\).
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Pour \(k=1,2,3\) :
+\equationajustee{\begin{aligned}
+A+B+C&=0,\\
+A\lambda_1+B\lambda_2+C\overline{\lambda_2}&=0,\\
+A\lambda_1^2+B\lambda_2^2+C\overline{\lambda_2}^2&=p^3.
+\end{aligned}}
+Soit \(L(X)=(X-\lambda_2)(X-\overline{\lambda_2})=X^2-sX+m\), avec \(s=2\mathrm{Re}\lambda_2\) et \(m=|\lambda_2|^2\).
+
+La combinaison (troisième) \(-\,s\,\)(deuxième) \(+\,m\,\)(première) donne
+\equationajustee{A\,L(\lambda_1)+B\,L(\lambda_2)+C\,L(\overline{\lambda_2})=p^3,}
+soit
+\equationajustee{A\,L(\lambda_1)=p^3.}
+Or \(L(\lambda_1)=(\lambda_1-\lambda_2)(\lambda_1-\overline{\lambda_2})=|\lambda_1-\lambda_2|^2\). Ce nombre est non nul, car \(\lambda_1\) est réel et distinct de \(\lambda_2\). Donc
+\equationajustee{\boxed{A=\frac{p^3}{(\lambda_1-\lambda_2)(\lambda_1-\overline{\lambda_2})}=\frac{p^3}{|\lambda_1-\lambda_2|^2}>0.}}
+Si l'on veut une expression ne faisant intervenir que les racines : \(\psi(\lambda_1)=0\) donne \(qp^3=\lambda_1^3(1-\lambda_1)\). La somme des racines de \(\chi_M\) donne \(q=\lambda_1+2\mathrm{Re}\lambda_2\). D'où
+\equationajustee{A=\frac{\lambda_1^3(1-\lambda_1)}{(\lambda_1+2\mathrm{Re}\lambda_2)\,|\lambda_1-\lambda_2|^2}.}
+
+\begin{methode}
+
+Pour extraire une seule inconnue d'un système de Vandermonde, on applique à la suite le polynôme qui annule les autres racines : c'est l'idée de l'interpolation de Lagrange. On évite ainsi la résolution complète.
+
+\end{methode}
+
+\begin{piege}
+
+Retenez que \(A\) est réel et strictement positif : c'est ce qui rend possible l'équivalent de Q25.
+
+\end{piege}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+\(P(X_3=k)\) est réel : il est égal à sa partie réelle. C'est la raison pour laquelle l'énoncé a introduit la notation \(\mathrm{Re}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrivez \(\lambda_2^{k-1}=r^{k-1}e^{i(k-1)\theta}\) et développez \(\mathrm{Re}(Be^{i\varphi})\) et \(\mathrm{Re}(Ce^{-i\varphi})\).
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Écrivons \(\lambda_2=re^{i\theta}\), de sorte que
+\equationajustee{\begin{aligned}
+\lambda_2^{k-1}&=r^{k-1}e^{i(k-1)\theta},\\
+\overline{\lambda_2}^{\,k-1}&=r^{k-1}e^{-i(k-1)\theta}.
+\end{aligned}}
+Les nombres \(P(X_3=k)\) et \(\lambda_1\) sont réels. En prenant la partie réelle de l'égalité de Q21 :
+\equationajustee{P(X_3=k)=\mathrm{Re}(A)\lambda_1^{k-1}+r^{k-1}\mathrm{Re}\big(Be^{i(k-1)\theta}\big)+r^{k-1}\mathrm{Re}\big(Ce^{-i(k-1)\theta}\big).}
+Or
+\equationajustee{\begin{aligned}
+\mathrm{Re}(Be^{i\varphi})&=\mathrm{Re}B\cos\varphi-\mathrm{Im}B\sin\varphi,\\
+\mathrm{Re}(Ce^{-i\varphi})&=\mathrm{Re}C\cos\varphi+\mathrm{Im}C\sin\varphi.
+\end{aligned}}
+Posons
+\equationajustee{\begin{aligned}
+a&=\mathrm{Re}A,\\
+b&=\mathrm{Re}B+\mathrm{Re}C,\\
+c&=\mathrm{Im}C-\mathrm{Im}B,
+\end{aligned}}
+qui sont des réels indépendants de \(k\). Pour tout \(k\in{\mathbb{N}}^*\) :
+\equationajustee{\boxed{P(X_3=k)=a\lambda_1^{k-1}+br^{k-1}\cos((k-1)\theta)+cr^{k-1}\sin((k-1)\theta).}}
+D'après Q22, \(a=A=\frac{p^3}{|\lambda_1-\lambda_2|^2}>0\).
+
+\begin{methode}
+
+Variante : montrer que le triplet \((A,B,C)\) est unique (système de Vandermonde inversible), puis conjuguer pour obtenir \(C=\overline B\) et \(A\in\mathbb{R}\). On trouve alors \(b=2\mathrm{Re}B\) et \(c=-2\mathrm{Im}B\). Le passage direct à la partie réelle évite cet argument d'unicité.
+
+\end{methode}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Pour \(q<\lambda_1\), calculez \(\chi_M(q)\) et utilisez le signe de \(\chi_M\) établi en Q18. Pour \(\mathrm{Re}(\lambda_2)\), pensez à la somme des racines.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(|\lambda_2|<\lambda_1\), utilisez que les deux nombres sont racines de \(\psi\). Ils vérifient donc \(\lambda^3(1-\lambda)=qp^3\) : passez au module.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\emph{\(q<\lambda_1\).} On a
+\equationajustee{\begin{aligned}
+\chi_M(q)&=q^3-q^3-pq^2-qp^2\\
+&=-pq(q+p)\\
+&=-pq<0.
+\end{aligned}}
+Or \(\chi_M>0\) sur \(]\lambda_1,+\infty[\) (Q18). Comme \(q>0\), on a \(q<\lambda_1\).
+
+\emph{\(\mathrm{Re}(\lambda_2)<0\).} La somme des racines de \(\chi_M\) vaut \(q\), soit \(\lambda_1+2\mathrm{Re}\lambda_2=q\). D'où \(2\mathrm{Re}\lambda_2=q-\lambda_1<0\).
+
+\emph{\(|\lambda_2-1|>1\).} Comme \(1-\mathrm{Re}\lambda_2>1\),
+\equationajustee{|\lambda_2-1|^2=(1-\mathrm{Re}\lambda_2)^2+(\mathrm{Im}\lambda_2)^2\geqslant(1-\mathrm{Re}\lambda_2)^2>1.}
+
+\emph{\(|\lambda_2|<\lambda_1\).} Les nombres \(\lambda_1\) et \(\lambda_2\) sont racines de \(\psi\) (Q19). Ils vérifient donc \(\lambda^3(1-\lambda)=qp^3\).
+
+En passant au module pour \(\lambda_2\) :
+\equationajustee{|\lambda_2|^3|\lambda_2-1|=qp^3=\lambda_1^3(1-\lambda_1).}
+Comme \(|\lambda_2-1|>1\) et \(0<1-\lambda_1<1\),
+\equationajustee{|\lambda_2|^3<|\lambda_2|^3|\lambda_2-1|=\lambda_1^3(1-\lambda_1)<\lambda_1^3,}
+et la stricte croissance de \(x\mapsto x^3\) sur \({\mathbb{R}}_+\) conclut :
+\equationajustee{\boxed{\begin{aligned}{}&q<\lambda_1,\\
+&\mathrm{Re}(\lambda_2)<0,\\
+&|\lambda_2-1|>1,\\
+&|\lambda_2|<\lambda_1.
+\end{aligned}}}
+
+\begin{methode}
+
+Les quatre résultats s'enchaînent : chacun sert au suivant. Quand une question est découpée ainsi, l'ordre de l'énoncé est presque toujours l'ordre de la preuve.
+
+\end{methode}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Dans l'écriture de Q23, majorez le terme oscillant en valeur absolue par une constante fois \(r^{k-1}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un équivalent se prouve en montrant que le quotient tend vers \(1\) ; il faut pour cela que \(a\) soit non nul. Attention au décalage entre \(\lambda_1^{k-1}\) et \(\lambda_1^k\).
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+D'après Q23, \(\big|P(X_3=k)-a\lambda_1^{k-1}\big|\leqslant(|b|+|c|)r^{k-1}\). Puisque \(a>0\) (Q22),
+\equationajustee{\left|\frac{P(X_3=k)}{a\lambda_1^{k-1}}-1\right|\leqslant\frac{|b|+|c|}{a}\left(\frac{r}{\lambda_1}\right)^{k-1}\xrightarrow[k\to+\infty]{}0,}
+car \(0<r<\lambda_1\) (Q24). Donc \(P(X_3=k)\sim a\lambda_1^{k-1}=\frac{a}{\lambda_1}\lambda_1^k\) :
+\equationajustee{\boxed{\begin{aligned}
+P(X_3=k)&\underset{k\to+\infty}{\sim}m\lambda_1^k,\\
+m&=\frac{p^3}{\lambda_1|\lambda_1-\lambda_2|^2}\\
+&=\frac{p^3}{\lambda_1(\lambda_1-\lambda_2)(\lambda_1-\overline{\lambda_2})}>0.
+\end{aligned}}}
+
+\begin{piege}
+
+Oublier la division par \(\lambda_1\) (on obtiendrait \(m=A\)) est l'erreur classique de cette question.
+
+\end{piege}
+
+\hypertarget{ii-un-cas-particulier}{%
+\subsection{II --- Un cas particulier}\label{ii-un-cas-particulier}}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Écrivez \(\chi_M\) pour \(p=\frac34\), puis substituez \(\frac X4\). En multipliant par \(64\), on obtient un polynôme unitaire à coefficients entiers.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une racine entière d'un polynôme unitaire à coefficients entiers divise le terme constant.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Pour \(p=\frac34\), on a \(q=\frac14\) et \(\chi_M(X)=X^3-\frac14X^2-\frac3{16}X-\frac9{64}\), donc
+\equationajustee{\chi_M\!\left(\frac X4\right)=\frac1{64}\left(X^3-X^2-3X-9\right).}
+Une racine entière de \(X^3-X^2-3X-9\) divise \(9\). On teste les diviseurs positifs :
+\equationajustee{\begin{aligned}
+1-1-3-9&\neq0,\\
+729-81-27-9&\neq0,\\
+27-9-9-9&=0.
+\end{aligned}}
+Donc \textbf{\(3\) est racine de \(\chi_M(X/4)\)}. Ainsi \(\frac34\) est racine de \(\chi_M\).
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Factorisez par \(X-3\), résolvez le trinôme restant, puis revenez aux racines de \(\chi_M\) en divisant par \(4\).
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+On factorise :
+\equationajustee{X^3-X^2-3X-9=(X-3)(X^2+2X+3).}
+Le trinôme \(X^2+2X+3\), de discriminant \(-8\), a pour racines \(-1\pm i\sqrt2\).
+
+Or un nombre \(z\) est racine de \(\chi_M\) si et seulement si \(4z\) est racine du polynôme précédent. Donc :
+\equationajustee{\boxed{\begin{aligned}
+\lambda_1&=\frac34,\\
+\lambda_2&=\frac{-1+i\sqrt2}{4},\\
+\overline{\lambda_2}&=\frac{-1-i\sqrt2}{4}.
+\end{aligned}}}
+Contrôles : la somme vaut \(\frac14=q\), et le produit \(\frac34\cdot\frac3{16}=\frac9{64}=qp^2\). De plus \(|\lambda_2|=\frac{\sqrt3}4<\frac34\) et \(\mathrm{Re}\lambda_2=-\frac14<0\), conformément à Q24.
+
+\begin{methode}
+
+Les relations coefficients-racines fournissent un contrôle immédiat d'un calcul de racines. Remarquez aussi que, pour \(p=\frac34\), on a \(\lambda_1=p\) : c'est exactement le cas limite \(\psi(\frac34)=0\) de Q19.
+
+\end{methode}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Appliquez la formule de \(m\) obtenue en Q25 avec les valeurs de Q27.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+On a \(\lambda_1-\lambda_2=\frac{4-i\sqrt2}{4}\), donc
+\equationajustee{\begin{aligned}
+|\lambda_1-\lambda_2|^2&=\frac{16+2}{16}\\
+&=\frac98,
+\end{aligned}}
+puis
+\equationajustee{\begin{aligned}
+m&=\frac{27/64}{\frac34\cdot\frac98}\\
+&=\frac{27/64}{27/32}\\
+&=\frac12.
+\end{aligned}}
+Ainsi :
+\equationajustee{\boxed{P(X_3=k)\underset{k\to+\infty}{\sim}\frac12\left(\frac34\right)^k.}}
+Contrôle numérique (calculatrice autorisée) : la récurrence de Q15 donne \(P(X_3=20)\approx1{,}5857\cdot10^{-3}\). De son côté, \(\frac12(\frac34)^{20}\approx1{,}5856\cdot10^{-3}\).
+
+\hypertarget{c-luxe9tude-guxe9nuxe9rale-par-le-calcul-de-la-fonction-guxe9nuxe9ratrice}{%
+\section{C --- L'étude générale par le calcul de la fonction génératrice}\label{c-luxe9tude-guxe9nuxe9rale-par-le-calcul-de-la-fonction-guxe9nuxe9ratrice}}
+
+Pour \(n\) quelconque, on ne cherche plus les racines. On majore \(P(X_n=k)\) par une suite géométrique \(t^k\), de raison \(t<1\). Ce réel \(t\) est fourni par \(f\).
+
+Cela garantit un rayon de convergence strictement supérieur à \(1\). La récurrence donne alors directement une expression rationnelle de \(G_{X_n}\), dont on tire l'espérance.
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Même raisonnement qu'en Q4 et Q14.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\(n\) piles consécutifs demandent au moins \(n\) lancers, et \((X_n=n)=P_1\cap\dots\cap P_n\) :
+\equationajustee{\boxed{\begin{aligned}{}&\forall k\in\{1,\dots,n-1\},\ P(X_n=k)=0,\\
+&P(X_n=n)=p^n.
+\end{aligned}}}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Généralisez le système complet de Q15 : rang du premier face parmi les \(n\) premiers lancers, ou absence de face.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+Pour \(i\in\{1,\dots,n\}\), soit
+\equationajustee{E_i=P_1\cap\dots\cap P_{i-1}\cap F_i,}
+de probabilité \(p^{i-1}q\). Soit aussi
+\equationajustee{E_0=P_1\cap\dots\cap P_n,}
+de probabilité \(p^n\). Ces \(n+1\) événements sont deux à deux incompatibles et de réunion \(\Omega\) : c'est un système complet. Soit \(k>n\).
+
+Sur \(E_0\), \(X_n=n\neq k\).
+
+Soit \(i\in\{1,\dots,n\}\). Sur \(E_i\), le lancer de rang \(i\) donne face. Aucune série de \(n\) piles ne peut donc contenir un lancer de rang \(\leqslant i\).
+
+Ainsi \(X_n=k\) équivaut à : la première série de \(n\) piles des lancers suivants se termine au rang \(k-i\) de cette suite.
+
+Ces lancers sont indépendants, de même loi et indépendants des \(i\) premiers. D'où \(P\big(E_i\cap(X_n=k)\big)=p^{i-1}q\,P(X_n=k-i)\), avec \(k-i\geqslant k-n\geqslant1\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q30-frise-premier-face.pdf}
+\caption*{Figure 3 --- Sur Eᵢ, le face du rang i coupe la suite des lancers : les
+lancers i + 1, i + 2, \ldots{} forment une suite de même loi, dont le
+temps d'attente vaut k − i quand Xₙ = k}
+\end{figure}
+
+La formule des probabilités totales donne
+\equationajustee{\boxed{\begin{aligned}
+\forall k>n,\quad P(X_n=k)&=qP(X_n=k-1)+qpP(X_n=k-2)\\
+&\quad+\dots+qp^{n-1}P(X_n=k-n).
+\end{aligned}}}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+\(f(1)\) contient une somme géométrique de raison \(p\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(f(1)>0\) et \(f\) est continue. Ainsi \(f\) reste positive sur tout un voisinage de \(1\). Choisissez \(t\) dans ce voisinage en respectant aussi \(t>p\).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+Comme \(p\neq1\),
+\equationajustee{\begin{aligned}
+\sum_{i=1}^np^{i-1}&=\frac{1-p^n}{1-p}\\
+&=\frac{1-p^n}{q},
+\end{aligned}}
+donc
+\equationajustee{\boxed{\begin{aligned}
+f(1)&=1-(1-p^n)\\
+&=p^n>0.
+\end{aligned}}}
+La fonction \(f\) est polynomiale, donc continue en \(1\). Il existe ainsi \(\delta\in]0,1-p[\) tel que \(f>0\) sur \([1-\delta,1]\).
+
+Le réel \(t=1-\frac\delta2\) vérifie \(p<1-\delta<t<1\) et \(f(t)>0\). \textbf{Il existe donc \(t\in]p,1[\) tel que \(f(t)\geqslant0\)}, ce qui s'écrit
+\equationajustee{q\sum_{i=1}^np^{i-1}t^{n-i}\leqslant t^n.\qquad(\ast)}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q31-allure-f.pdf}
+\caption*{Figure 4 --- Allure de f, tracé pour n = 3 et p = 0,7 : f(1) = pⁿ
+\textgreater{} 0, donc f \textgreater{} 0 sur un intervalle de la forme
+1 − δ ≤ t ≤ 1, à droite de p, où l'on choisit t}
+\end{figure}
+
+\begin{methode}
+
+Réécrire \(f(t)\geqslant0\) sous la forme \((\ast)\) dès maintenant : c'est exactement l'inégalité qui fait marcher l'hérédité de Q32, puis celle de Q42.
+
+\end{methode}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Récurrence forte, avec une initialisation sur les \(n\) premiers rangs (Q29). Où sert l'hypothèse \(t>p\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans l'hérédité, appliquez Q30, majorez chaque terme, puis mettez \(t^{k-n}\) en facteur pour faire apparaître \((\ast)\).
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+Récurrence forte sur \(k\in{\mathbb{N}}^*\).
+
+\emph{Initialisation, \(1\leqslant k\leqslant n\).} Pour \(k<n\), on a \(P(X_n=k)=0\leqslant t^k\). Pour \(k=n\), on a \(P(X_n=n)=p^n\leqslant t^n\), car \(0<p<t\).
+
+\emph{Hérédité.} Soit \(k>n\) tel que \(P(X_n=j)\leqslant t^j\) pour tout \(j\in\{1,\dots,k-1\}\). Pour \(i\in\{1,\dots,n\}\), on a \(1\leqslant k-i\leqslant k-1\), donc par Q30 et \((\ast)\) :
+\equationajustee{\begin{aligned}
+P(X_n=k)&=\sum_{i=1}^nqp^{i-1}P(X_n=k-i)\\
+&\leqslant\sum_{i=1}^nqp^{i-1}t^{k-i}\\
+&=t^{k-n}\,q\sum_{i=1}^np^{i-1}t^{n-i}\\
+&\leqslant t^{k-n}t^n\\
+&=t^k.
+\end{aligned}}
+\equationajustee{\boxed{\forall k\in{\mathbb{N}}^*,\quad P(X_n=k)\leqslant t^k.}}
+
+\begin{piege}
+
+Une récurrence d'ordre \(n\) s'initialise sur \(n\) rangs consécutifs. Initialiser seulement en \(k=1\) ne permet pas d'appliquer la relation de Q30 au rang \(n+1\).
+
+\end{piege}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+La convergence découle de Q32 par comparaison à une série géométrique. Pour le calcul, multipliez la relation de Q30 par \(z^k\) et sommez pour \(k>n\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Après interversion des sommes, la somme intérieure redonne \(G(z)\) tout entière, car \(P(X_n=j)=0\) pour \(j<n\). On obtient une équation du premier degré en \(G(z)\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Avant de diviser, vérifiez que le dénominateur ne s'annule pas sur le disque, et que \(1-pz\neq0\).
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\emph{Définition.} Soit \(|z|<1/t\). On a \(|P(X_n=k)z^k|\leqslant(t|z|)^k\), avec \(t|z|<1\).
+
+La série \(\sum P(X_n=k)z^k\) converge donc absolument. Ainsi \(G_{X_n}\) est définie sur le disque \(|z|<1/t\), et son rayon de convergence est au moins \(1/t>1\).
+
+\emph{Calcul.} Notons \(u_k=P(X_n=k)\), \(G=G_{X_n}\), et fixons \(|z|<1/t\).
+
+La famille \((qp^{i-1}u_{k-i}z^k)_{1\leqslant i\leqslant n,\ k>n}\) est sommable : elle est majorée par \(q(t|z|)^{k-i}|z|^i\), et l'indice \(i\) ne prend qu'un nombre fini de valeurs. Cela autorise l'interversion. Par Q29--Q30 :
+\equationajustee{\begin{aligned}
+G(z)-p^nz^n&=\sum_{k>n}\sum_{i=1}^nqp^{i-1}u_{k-i}z^k\\
+&=\sum_{i=1}^nqp^{i-1}z^i\sum_{j>n-i}u_jz^j\\
+&=G(z)\,q\sum_{i=1}^np^{i-1}z^i,
+\end{aligned}}
+car \(u_j=0\) pour \(j<n\) et \(n-i<n\).
+
+Comme \(|pz|<p/t<1\), on a \(pz\neq1\) et
+\equationajustee{q\sum_{i=1}^np^{i-1}z^i=qz\frac{1-p^nz^n}{1-pz}.}
+En multipliant par \(1-pz\) et en utilisant \(pz+qz=z\) :
+\equationajustee{G(z)\big[(1-pz)-qz+qp^nz^{n+1}\big]=p^nz^n(1-pz),}
+soit
+\equationajustee{G(z)\big(qp^nz^{n+1}-z+1\big)=p^nz^n(1-pz).}
+Supposons que \(qp^nz^{n+1}-z+1\) s'annule en un point \(z_0\) du disque. On aurait \(p^nz_0^n(1-pz_0)=0\), donc \(z_0=0\).
+
+Or ce facteur vaut \(1\) en \(0\). On peut donc diviser :
+\equationajustee{\boxed{\forall z\in\mathbb{C},\ |z|<\frac1t,\quad G_{X_n}(z)=\frac{p^nz^n(1-pz)}{qp^nz^{n+1}-z+1}.}}
+En particulier, comme \(1<1/t\), on a \(G_{X_n}(1)=\frac{p^nq}{qp^n}=1\). Donc \(P(X_n=+\infty)=0\).
+
+\begin{methode}
+
+Multiplier une récurrence linéaire par \(z^k\) et sommer : c'est la méthode standard pour obtenir la série génératrice d'une suite récurrente. Elle redonne Q11 pour \(n=2\).
+
+\end{methode}
+
+\begin{jury}
+
+L'interversion des sommations et la non-annulation du dénominateur sont deux points de rigueur attendus. Une copie qui divise sans vérifier perd une partie des points.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+L'existence vient du rayon de convergence. Pour le calcul, dérivez le quotient \(N/D\) en \(1\), sachant que \(N(1)=D(1)\).
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Le rayon de convergence de \(\sum P(X_n=k)z^k\) est au moins \(1/t>1\). La série dérivée converge donc absolument en \(1\).
+
+Ainsi \textbf{\(X_n\) (presque sûrement finie, Q33) admet une espérance}, et \(E(X_n)=G'_{X_n}(1)\).
+
+Posons \(N(z)=p^n(z^n-pz^{n+1})\) et \(D(z)=1-z+qp^nz^{n+1}\). Alors :
+\equationajustee{\begin{aligned}
+N(1)&=qp^n,\\
+D(1)&=qp^n,\\
+N'(1)&=p^n\big(n-(n+1)p\big),\\
+D'(1)&=(n+1)qp^n-1.
+\end{aligned}}
+Donc
+\equationajustee{\begin{aligned}
+E(X_n)&=\frac{N'(1)D(1)-N(1)D'(1)}{D(1)^2}\\
+&=\frac{p^n\big(n-(n+1)p\big)-(n+1)qp^n+1}{qp^n}\\
+&=\frac{p^n\big(n-(n+1)(p+q)\big)+1}{qp^n},
+\end{aligned}}
+\equationajustee{\boxed{\begin{aligned}
+E(X_n)&=\frac{1-p^n}{qp^n}\\
+&=\sum_{i=1}^n\frac1{p^i}.
+\end{aligned}}}
+Contrôles : pour \(n=1\), on retrouve \(\frac1p\) (Q2). Pour \(n=2\), on retrouve \(\frac{1+p}{p^2}\) (Q13).
+
+\begin{methode}
+
+Toujours confronter une formule générale aux cas particuliers déjà traités : ici A.I et A.II.
+
+\end{methode}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Développez chaque \(\frac{a_i}{z-\lambda_i}\) en série géométrique, en mettant \(-\lambda_i\) en facteur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux séries entières égales sur un disque de rayon strictement positif ont les mêmes coefficients.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Soit \(i\in\{1,\dots,n\}\). Pour \(|z|<|\lambda_i|\), on a
+\equationajustee{\begin{aligned}
+\frac{a_i}{z-\lambda_i}&=-\frac{a_i}{\lambda_i}\cdot\frac{1}{1-z/\lambda_i}\\
+&=-\sum_{k\geqslant0}\frac{a_i}{\lambda_i^{k+1}}z^k.
+\end{aligned}}
+Soit \(\rho=\min\left(\frac1t,|\lambda_1|,\dots,|\lambda_n|\right)\). Sur le disque \(|z|<\rho\), en sommant ces \(n\) développements :
+\equationajustee{\begin{aligned}
+\sum_{k\geqslant1}P(X_n=k)z^k&=G_{X_n}(z)\\
+&=\Big(a-\sum_{i=1}^n\frac{a_i}{\lambda_i}\Big)-\sum_{k\geqslant1}\Big(\sum_{i=1}^n\frac{a_i}{\lambda_i^{k+1}}\Big)z^k.
+\end{aligned}}
+Par unicité du développement en série entière sur ce disque de rayon \(\rho>0\), pour tout \(k\in{\mathbb{N}}^*\) :
+\equationajustee{\boxed{P(X_n=k)=-\sum_{1\leqslant i\leqslant n}\frac{a_i}{\lambda_i^{k+1}},}}
+et de plus le terme constant donne \(a=\sum_{i=1}^n\frac{a_i}{\lambda_i}\).
+
+\begin{piege}
+
+L'exposant est \(k+1\), à cause du facteur \(-\frac1{\lambda_i}\) sorti de la série géométrique. Et il faut nommer le théorème d'unicité plutôt que d'« identifier » sans justification.
+
+\end{piege}
+
+\hypertarget{d-obtenir-une-succession-de-pile-uxe0-la-suite-de-lancers-dune-piuxe8ce}{%
+\section{D --- Obtenir une succession de pile à la suite de lancers d'une pièce}\label{d-obtenir-une-succession-de-pile-uxe0-la-suite-de-lancers-dune-piuxe8ce}}
+
+On passe du temps d'attente à l'événement \(A_{n,k}=(X_n\leqslant k)\). La récurrence devient affine ; on la rend linéaire en posant \(u_k=1-P(A_{n,k})\), probabilité de ne pas avoir vu la série. On montre que \(u_k\) décroît géométriquement, d'où un résultat « presque sûr » et une minoration numérique, puis on esquisse la forme exacte de \(P(A_{n,k})\).
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Avec exactement \(n\) lancers, que signifie « au moins \(n\) piles consécutifs » ?
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+Si \(k<n\), \(A_{n,k}=\varnothing\) ; et \(A_{n,n}=P_1\cap\dots\cap P_n\) :
+\equationajustee{\boxed{\begin{aligned}{}&\forall k\in\{1,\dots,n-1\},\ P(A_{n,k})=0,\\
+&P(A_{n,n})=p^n.
+\end{aligned}}}
+
+\begin{piege}
+
+Ces valeurs coïncident avec celles de Q29, mais \(A_{n,k}=(X_n\leqslant k)\) et non \((X_n=k)\) : les deux suites diffèrent dès le rang \(n+1\).
+
+\end{piege}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Reprenez le système complet de Q30. Qu'est-ce qui change pour l'événement \(E_0\) ?
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+On reprend le système complet \((E_0,E_1,\dots,E_n)\) de Q30. Soit \(k>n\).
+
+On a \(E_0\subset A_{n,k}\), donc \(P(E_0\cap A_{n,k})=p^n\).
+
+Soit \(i\in\{1,\dots,n\}\). Sur \(E_i\), aucune série de \(n\) piles ne contient un lancer de rang \(\leqslant i\).
+
+Ainsi \(A_{n,k}\) est réalisé si et seulement si les lancers de rangs \(i+1,\dots,k\) contiennent au moins \(n\) piles consécutifs. Ces \(k-i\) lancers sont indépendants, de même loi et indépendants des \(i\) premiers.
+
+Donc \(P(E_i\cap A_{n,k})=qp^{i-1}P(A_{n,k-i})\), avec \(k-i\geqslant1\).
+
+Par la formule des probabilités totales :
+\equationajustee{\boxed{\begin{aligned}
+\forall k>n,\quad P(A_{n,k})&=p^n+qP(A_{n,k-1})+qpP(A_{n,k-2})\\
+&\quad+\dots+qp^{n-1}P(A_{n,k-n}).
+\end{aligned}}}
+
+\begin{methode}
+
+Le terme constant \(p^n\) vient de \(E_0\), qui réalise désormais l'événement au lieu de l'exclure. La récurrence est affine : d'où la suite de la partie, qui retranche une solution constante.
+
+\end{methode}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Remplissez une liste de gauche à droite en distinguant \(l<n\), \(l=n\) et \(l>n\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention au décalage : l'élément d'indice \(j\) de la liste contient \(P(A_{n,j+1})\).
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\begin{lstlisting}[language=Python]
+def probas_series(p, k, n):
+    """Renvoie [P(A_{n,1}), ..., P(A_{n,k})] ; proba[j] contient P(A_{n,j+1})."""
+    q = 1 - p
+    proba = []
+    for l in range(1, k + 1):
+        if l < n:
+            proba.append(0)
+        elif l == n:
+            proba.append(p ** n)
+        else:
+            s = p ** n
+            for i in range(1, n + 1):
+                s = s + q * p ** (i - 1) * proba[l - i - 1]   # P(A_{n,l-i})
+            proba.append(s)
+    return proba
+\end{lstlisting}
+
+Soit \(l>n\). Pour \(1\leqslant i\leqslant n\), l'indice \(l-i-1\) vérifie
+\equationajustee{0\leqslant l-n-1\leqslant l-i-1\leqslant l-2,}
+donc les valeurs utilisées sont déjà calculées.
+
+Le coût est en \(O(nk)\) opérations. Par exemple, \texttt{probas\_series(\allowbreak{}0.5,\allowbreak{}\ 100,\allowbreak{}\ 5)\allowbreak{}{[}-1{]}\allowbreak{}} vaut environ \(0{,}8101\).
+
+\begin{piege}
+
+Les deux erreurs classiques : oublier le terme constant \(p^n\) pour \(l>n\), et se tromper d'une unité dans les indices. La fonction doit \textbf{renvoyer} la liste, pas l'afficher.
+
+\end{piege}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Injectez une constante \(v\) dans la relation ; la somme \(q\sum_{i=1}^np^{i-1}\) a déjà été calculée en Q31.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+La suite constante égale à \(v\) convient si et seulement si
+\equationajustee{\begin{aligned}
+v&=p^n+v\,q\sum_{i=1}^np^{i-1}\\
+&=p^n+v(1-p^n),
+\end{aligned}}
+c'est-à-dire \(vp^n=p^n\), soit \(v=1\) (car \(p^n\neq0\)) :
+\equationajustee{\boxed{\forall k\in{\mathbb{N}}^*,\ v_k=1.}}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Comme pour une équation différentielle linéaire avec second membre, retranchez la solution particulière de Q39 : posez \(w_k=1-P(A_{n,k})\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifiez que \((w_k)\) satisfait la relation de \((\star)\), puis utilisez l'unicité admise ; les conditions initiales viennent de Q36.
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+Posons \(w_k=1-P(A_{n,k})\). Pour \(k>n\), par Q37 et \(q\sum_{i=1}^np^{i-1}=1-p^n\) :
+\equationajustee{\begin{aligned}
+\sum_{i=1}^nqp^{i-1}w_{k-i}&=(1-p^n)-\sum_{i=1}^nqp^{i-1}P(A_{n,k-i})\\
+&=(1-p^n)-\big(P(A_{n,k})-p^n\big)\\
+&=w_k.
+\end{aligned}}
+La suite \((w_k)\) vérifie donc la relation de \((\star)\). Ses premiers termes sont \(w_i=1-P(A_{n,i})\) pour \(i\leqslant n\) (Q36).
+
+Par l'unicité admise, la suite \((u_k)\) associée à ces conditions initiales est \((w_k)\). Donc \(P(A_{n,k})=1-u_k\) pour tout \(k\), avec
+\equationajustee{\boxed{(b_1,\dots,b_{n-1},b_n)=(1,\dots,1,\ 1-p^n).}}
+
+\begin{piege}
+
+La dernière condition initiale \(b_n=1-p^n\) diffère des autres : ne pas l'oublier.
+
+\end{piege}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Interprétez \(u_k\) comme la probabilité d'un événement, puis utilisez la monotonie de \(k\mapsto A_{n,k}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour les inégalités strictes, exhibez un événement de probabilité non nulle inclus dans \(\overline{A_{n,k}}\), puis un autre inclus dans \(A_{n,k}\).
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+D'après Q40, \(u_k=1-P(A_{n,k})=P\big(\overline{A_{n,k}}\big)\).
+- Une série présente dans les \(k\) premiers lancers l'est dans les \(k+1\) premiers : \(A_{n,k}\subset A_{n,k+1}\). Donc \(P(A_{n,k})\leqslant P(A_{n,k+1})\), et \textbf{\((u_k)\) est décroissante}.
+- L'événement \(\overline{A_{n,k}}\) contient \(F_1\cap\dots\cap F_k\), de probabilité \(q^k>0\). Donc \(u_k>0\).
+- Soit \(k\geqslant n\). On a \(A_{n,n}\subset A_{n,k}\), donc \(P(A_{n,k})\geqslant p^n>0\). Ainsi \(u_k\leqslant1-p^n<1\).
+
+\equationajustee{\boxed{\begin{aligned}{}&\forall k\geqslant n,\ 0<u_k<1,\\
+&(u_k)_{k\in{\mathbb{N}}^*}\text{ \text{décroissante}}.
+\end{aligned}}}
+
+\begin{methode}
+
+L'interprétation probabiliste évite toute récurrence sur \((\star)\). « Une probabilité est positive » ne donne pas une inégalité stricte : il faut exhiber un événement réalisable.
+
+\end{methode}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Trois étapes. D'abord, montrer \(M<1\) (sinon \([M,1[\) est vide). Ensuite, choisir \(\alpha\in[M,1[\) tel que \(f(\alpha)\geqslant0\). Enfin, faire une récurrence d'ordre \(n\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(M<1\), cherchez un événement inclus dans \(A_{n,i+1}\) mais pas dans \(A_{n,i}\), de probabilité non nulle. Pour \(\alpha\), raisonnez comme en Q31.
+
+\end{indication}
+
+\begin{indication}{3}
+
+L'initialisation porte sur les rangs \(n+1\) à \(2n\). Elle utilise la définition de \(M\) et l'inégalité \(u_n<1\). L'hérédité est la même mise en facteur qu'en Q32.
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\emph{\(M<1\).} Soit \(i\in\{n,\dots,2n-1\}\). Notons \(B_i\) l'événement « les lancers \(1,\dots,i+1-n\) donnent face et les lancers \(i+2-n,\dots,i+1\) donnent pile ».
+
+Il est bien défini car \(i+1-n\geqslant1\). Sur \(B_i\), les \(n\) derniers des \(i+1\) premiers lancers sont piles. Donc \(B_i\subset A_{n,i+1}\).
+
+De plus, les \(i\) premiers lancers ne contiennent que \(n-1\) piles, consécutifs à la fin. Donc \(B_i\subset\overline{A_{n,i}}\). Ainsi
+\equationajustee{\begin{aligned}
+u_i-u_{i+1}&=P(A_{n,i+1})-P(A_{n,i})\\
+&\geqslant P(B_i)\\
+&=q^{i+1-n}p^n>0.
+\end{aligned}}
+Comme \(u_i>0\), on en déduit \(\frac{u_{i+1}}{u_i}<1\). Le maximum d'un nombre fini de réels strictement inférieurs à \(1\) est strictement inférieur à \(1\) : \(0<M<1\).
+
+\emph{Choix de \(\alpha\).} On a \(f(1)=p^n>0\) (Q31), et \(f\) est continue.
+
+Il existe donc \(\delta\in]0,1[\) tel que \(f\geqslant0\) sur \([1-\delta,1]\). Posons \(\alpha=\max(M,1-\delta)\).
+
+Alors \(\alpha\in[M,1[\) et \(f(\alpha)\geqslant0\), soit
+\equationajustee{q\sum_{i=1}^np^{i-1}\alpha^{n-i}\leqslant\alpha^n.\qquad(\ast\ast)}
+
+\emph{Récurrence d'ordre \(n\) à partir du rang \(n+1\).} Montrons \(u_k\leqslant\alpha^{k-n}\) pour tout \(k\geqslant n+1\).
+
+\emph{Rangs \(n+1\) à \(2n\).} Pour \(i\in\{n,\dots,2n-1\}\), on a \(u_{i+1}\leqslant Mu_i\leqslant\alpha u_i\).
+
+Donc, pour \(j\in\{1,\dots,n\}\), \(u_{n+j}\leqslant\alpha^ju_n\leqslant\alpha^j\), puisque \(u_n=1-p^n<1\).
+
+\emph{Hérédité.} Soit \(k\geqslant2n+1\) tel que la propriété soit vraie aux rangs \(k-n,\dots,k-1\), qui sont tous \(\geqslant n+1\). Par \((\star)\) et \((\ast\ast)\) :
+\equationajustee{\begin{aligned}
+u_k&=\sum_{i=1}^nqp^{i-1}u_{k-i}\\
+&\leqslant\sum_{i=1}^nqp^{i-1}\alpha^{k-i-n}\\
+&=\alpha^{k-2n}\,q\sum_{i=1}^np^{i-1}\alpha^{n-i}\\
+&\leqslant\alpha^{k-2n}\alpha^n\\
+&=\alpha^{k-n}.
+\end{aligned}}
+
+\equationajustee{\boxed{\exists\alpha\in[M,1[,\ \forall k\geqslant n+1,\quad u_k\leqslant\alpha^{k-n}.}}
+
+\begin{methode}
+
+Le rôle de \(M\) est de fournir l'initialisation sur \(n\) rangs consécutifs ; celui de \(f\) est de faire passer l'hérédité. C'est le même schéma qu'en Q32, avec une suite qui décroît au lieu d'une suite majorée.
+
+\end{methode}
+
+\begin{piege}
+
+L'énoncé ne dit pas que \(M<1\) : il faut le démontrer, sinon l'intervalle \([M,1[\) pourrait être vide. La simple décroissance large de Q41 ne suffit pas.
+
+\end{piege}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+La suite \((A_{n,k})_k\) est croissante : quel théorème de continuité s'applique ? La question 42 donne la limite de \(u_k\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'interprétation, identifiez l'événement « obtenir à un moment une série d'au moins \(10\,000\) piles » à une réunion.
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+La suite \((A_{n,k})_k\) est croissante pour l'inclusion (Q41). De plus \(0<u_k\leqslant\alpha^{k-n}\to0\), car \(0\leqslant\alpha<1\). Par continuité croissante :
+\equationajustee{\boxed{\begin{aligned}
+P\Big(\bigcup_{k=1}^{+\infty}A_{n,k}\Big)&=\lim_{k\to+\infty}P(A_{n,k})\\
+&=1-\lim_{k\to+\infty}u_k\\
+&=1.
+\end{aligned}}}
+Prenons \(n=10\,000\). L'événement « on obtient à un moment une série d'au moins \(10\,000\) piles consécutifs » est exactement \(\bigcup_kA_{10\,000,k}\). En effet, une telle série, si elle apparaît, se termine à un rang fini \(k\).
+
+Il est de probabilité \(1\) : il est \textbf{presque sûr}, quel que soit \(p\in]0,1[\).
+
+\begin{piege}
+
+Presque sûr ne veut pas dire certain : la suite « face à tous les lancers » réalise le contraire, mais avec probabilité nulle.
+
+\end{piege}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Appliquez Q42 avec \(k=100\) et \(n=5\), puis Q40 pour revenir à \(P(A_{5,100})\). Vérifiez que \(k\geqslant n+1\) et que l'exposant est \(k-n\).
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+Ici \(n=5\), \(p=\frac12\), \(k=100\geqslant n+1\). Avec la valeur admise \(\alpha=0{,}9827\), Q42 donne \(u_{100}\leqslant\alpha^{95}\leqslant0{,}193\), d'où, par Q40,
+\equationajustee{\boxed{\begin{aligned}
+P(A_{5,100})&=1-u_{100}\\
+&\geqslant1-0{,}193\\
+&=0{,}807\geqslant0{,}8.
+\end{aligned}}}
+La probabilité d'obtenir au moins cinq piles consécutifs en \(100\) lancers d'une pièce équilibrée est donc au moins \(0{,}8\).
+
+\emph{Remarque sur la donnée.} La valeur admise n'est pas compatible avec la construction de Q42. En effet :
+\equationajustee{\begin{aligned}
+u_5&=1-\frac1{32}=\frac{31}{32},\\
+u_6&=1-\Big(\frac1{32}+\frac1{64}\Big)=\frac{61}{64},
+\end{aligned}}
+donc
+\equationajustee{M\geqslant\frac{u_6}{u_5}=\frac{61}{62}\approx0{,}9839>0{,}9827.}
+De plus \(f(0{,}9827)<0\). Avec ce \(\alpha\), la majoration \(u_k\leqslant\alpha^{k-5}\) est d'ailleurs fausse à partir de \(k=113\).
+
+Elle est vraie pour \(k=100\) : la fonction de Q38 donne \(u_{100}\approx0{,}1899\). La conclusion reste donc exacte : \(P(A_{5,100})\approx0{,}8101\).
+
+Le plus petit \(\alpha\) légitime, \(\alpha=\frac{61}{62}\), ne donnerait que \(P(A_{5,100})\geqslant0{,}787\).
+
+\begin{methode}
+
+Le candidat applique la donnée admise, comme le demande l'énoncé. Mais un contrôle numérique rapide (ici avec la fonction de Q38) permet de vérifier que la conclusion est vraie et de repérer une donnée douteuse.
+
+\end{methode}
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Suivez le plan de la partie B : récurrence linéaire, matrice compagnon, polynôme caractéristique, racines, diagonalisation, lecture d'une composante.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La récurrence de Q37 n'est pas linéaire : sur quelle suite faut-il travailler ? Quel polynôme de l'énoncé est le polynôme caractéristique ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour \(|\mu|<1\), supposez \(|\mu|\geqslant1\) et utilisez l'inégalité triangulaire dans \(\mu^n=q\sum p^{i-1}\mu^{n-i}\). Pour la simplicité des racines, imitez Q19 avec \((X-p)\chi_N\).
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+Démarche, calquée sur la partie B.
+
+\textbf{1. Linéariser.} Travailler sur \(u_k=1-P(A_{n,k})\), qui vérifie la récurrence linéaire d'ordre \(n\) \((\star)\) (Q40), sans terme constant.
+
+\textbf{2. Vectoriser.} Poser \(V_k=(u_{k+n-1},\dots,u_{k+1},u_k)^\top\). Alors \(V_{k+1}=NV_k\), donc \(V_k=N^{k-1}V_1\).
+
+Ici \(N\) est la matrice compagnon de première ligne \((q,\ qp,\ \dots,\ qp^{n-1})\). Elle a des \(1\) sur la sous-diagonale et des \(0\) ailleurs.
+
+\textbf{3. Polynôme caractéristique.} Comme en Q17, \(\chi_N(X)=X^n-q\sum_{i=1}^np^{i-1}X^{n-i}\) : c'est le polynôme qui définit \(f\).
+
+\textbf{4. Racines de module \(<1\).} Soit \(\mu\) une racine telle que \(|\mu|\geqslant1\). Alors
+\equationajustee{\begin{aligned}
+|\mu|^n&\leqslant q\sum_{i=1}^np^{i-1}|\mu|^{n-i}\\
+&\leqslant|\mu|^{n-1}(1-p^n)\\
+&<|\mu|^{n-1},
+\end{aligned}}
+d'où \(|\mu|<1\) : absurde. De plus \(\mu\neq0\), car \(\chi_N(0)=-qp^{n-1}\neq0\).
+
+\textbf{5. Racines simples, diagonalisation.} Comme en Q19, on pose
+\equationajustee{\Psi=(X-p)\chi_N=X^{n+1}-X^n+qp^n,}
+de dérivée \(\Psi'=X^{n-1}\big((n+1)X-n\big)\).
+
+Une racine multiple de \(\chi_N\) serait racine multiple de \(\Psi\). Elle serait donc égale à \(\frac n{n+1}\), car \(\Psi(0)\neq0\).
+
+L'égalité \(\Psi(\frac n{n+1})=0\) force alors \(p=\frac n{n+1}\). Ce réel serait racine au moins triple de \(\Psi\). C'est exclu, car \(\Psi''(\frac n{n+1})\neq0\).
+
+Donc \(\chi_N\) a \(n\) racines distinctes \(\mu_1,\dots,\mu_n\). On a alors \(N=QDQ^{-1}\), avec \(D=\mathrm{diag}(\mu_1,\dots,\mu_n)\).
+
+\textbf{6. Conclure.} Comme en Q21, la dernière composante de \(V_k=QD^{k-1}Q^{-1}V_1\) s'écrit \(u_k=\sum_i\gamma_i\mu_i^{k-1}\). On pose \(c_i=\gamma_i/\mu_i\) :
+\equationajustee{\boxed{\begin{aligned}{}&\forall k\in{\mathbb{N}}^*,\ P(A_{n,k})=1-\sum_{i=1}^nc_i\mu_i^k,\\
+&|\mu_i|<1.
+\end{aligned}}}
+Les \(c_i\) se déterminent par les \(n\) conditions initiales (système de Vandermonde inversible, les \(\mu_i\) étant distincts et non nuls).
+
+\begin{jury}
+
+Pour une question de démarche, on attend des étapes nettement identifiées, chacune avec le résultat qui la justifie. Les trois points qui font que la conclusion est vraie sont la linéarisation préalable, la simplicité des racines (sans elle, des termes en \(k^j\mu_i^k\) apparaîtraient) et la majoration \(|\mu_i|<1\).
+
+\end{jury}
+
+\begin{methode}
+
+L'étape 4 est le pendant, en dimension \(n\), de l'étude des racines faite en Q18--Q24. Elle n'utilise que \(q\sum_{i=1}^np^{i-1}=1-p^n<1\), l'inégalité qui a déjà servi en Q31 et Q39.
+
+\end{methode}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+- \textbf{Conditionner par le premier face} : système complet \(E_1,\dots,E_n,E_0\), formule des probabilités totales, et argument de « redémarrage » (indépendance et identité de loi des lancers suivants). Le même schéma donne Q6, Q15, Q30 et Q37.
+- \textbf{Montrer qu'une variable est presque sûrement finie} : continuité décroissante, puis calcul effectif de \(\sum_kP(X=k)\) (Q10), ou \(G_X(1)=1\) (Q33). Jamais par l'argument circulaire « c'est une loi ».
+- \textbf{Moments par la fonction génératrice} : un rayon strictement supérieur à \(1\) donne d'un coup l'existence de tous les moments ; \(V=G''(1)+G'(1)-G'(1)^2\).
+- \textbf{Récurrence linéaire et matrice compagnon} : \(\chi_M\) est le polynôme caractéristique de la récurrence ; valeurs propres distinctes, donc diagonalisation, donc combinaison de suites géométriques ; la racine de plus grand module donne l'équivalent.
+- \textbf{Localiser des racines} : valeurs intermédiaires, monotonie de \(\chi(x)/x^n\), relations coefficients-racines, polynôme auxiliaire \((X-p)\chi\) dont la dérivée se factorise.
+- \textbf{Majoration géométrique par récurrence forte} : initialiser sur \(n\) rangs, puis mettre \(t^{k-n}\) en facteur pour utiliser \(f(t)\geqslant0\) (Q32, Q42).
+- \textbf{Série génératrice d'une suite récurrente} : multiplier par \(z^k\), sommer, intervertir, résoudre une équation du premier degré.
+
+\textbf{Prérequis à revoir.} Loi géométrique et sa fonction génératrice ; continuité monotone d'une probabilité ; théorème sur les suites récurrentes linéaires d'ordre 2 ; rayon de convergence d'une somme ; unicité du développement en série entière ; critère de diagonalisabilité par valeurs propres distinctes ; racines conjuguées d'un polynôme réel.
+
+\textbf{Questions classiques transposables.} Le temps d'attente d'un motif dans une suite de Bernoulli (\(E(X_n)=\sum_{i=1}^np^{-i}\), soit \(62\) lancers en moyenne pour cinq piles avec une pièce équilibrée) ; la fonction génératrice d'une suite définie par récurrence ; le comportement asymptotique d'une suite récurrente linéaire via la racine dominante ; la technique « solution particulière constante + solution homogène » pour une récurrence affine (Q39--Q40), analogue exact des équations différentielles linéaires avec second membre.
+
+\end{document}

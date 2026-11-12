@@ -1,0 +1,2086 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Centrale-Supélec MPI — Informatique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Centrale-Supélec MPI}
+\fancyhead[R]{\small Informatique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Centrale-Supélec MPI — Informatique 2026\par}\medskip
+  {\large Centrale-Supélec · MPI · Informatique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} La logique \emph{déontique}, logique du « devoir être » : une propriété est \emph{obligatoire} si elle est vraie dans tous les mondes idéaux, \emph{autorisée} si elle est vraie dans au moins l'un d'eux, indépendamment de ce qui se passe dans le monde réel. Ces deux quantificateurs sur les mondes, « pour tout » et « il existe », sont le fil rouge des quatre parties : ils deviennent un \texttt{GROUP\ BY\ …\ HAVING} en SQL, les opérateurs \(\Box\) et \(\Diamond\) d'une grammaire puis d'une sémantique de Kripke, et enfin trois règles d'inférence.
+
+\textbf{Format.} 4 heures, calculatrice autorisée (inutile), 42 questions, aucune donnée numérique. Trois langages : SQL (partie A), OCaml (partie B), C (partie C), plus de la logique pure (parties C.II à C.V et D).
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2847}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1675}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5178}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A --- SQL & Q1--Q5 & sélection, jointure, différence ensembliste, quantification universelle par comptage \\
+B.I --- Analyse lexicale & Q6--Q9 & parcours de chaîne, sous-chaîne, automate des lexèmes, plus long préfixe \\
+B.II --- Grammaires & Q10--Q12 & appartenance d'un mot, comparaison de langages, ambiguïté \\
+B.III --- Analyse syntaxique & Q13--Q15 & descente récursive avec fonctions mutuellement récursives \\
+C.I --- Formules en C & Q16--Q19 & allocation, parcours d'arbre, libération, copie profonde \\
+C.II --- Modèles & Q20--Q25 & évaluation propositionnelle, sémantique de Kripke, contre-modèles, conséquence logique \\
+C.III --- Formules réduites & Q26--Q29 & forme normale négative, test, évaluation dans un univers \\
+C.IV --- Décidabilité & Q30--Q34 & dépliage en arbre, préservation de la satisfaction, espace de recherche fini \\
+C.V --- NP-complétude & Q35--Q39 & réduction depuis SAT, univers totaux, certificat polynomial \\
+D --- Déduction naturelle & Q40--Q42 & arbres de preuve, règles modales D1, D2, D3 \\
+\end{longtable}
+
+\textbf{Notions du programme mobilisées.} SQL (jointure, \texttt{EXCEPT}, agrégation et \texttt{HAVING}) ; OCaml (chaînes, références, exceptions, filtrage, fonctions mutuellement récursives) ; C (structures, pointeurs, \texttt{malloc}/\texttt{free}, \texttt{assert}, tableaux bidimensionnels) ; automates finis ; grammaires non contextuelles, arbres de dérivation, ambiguïté ; induction structurelle ; logique propositionnelle (lois de De Morgan, équivalence) ; décidabilité ; classes P et NP, réductions polynomiales, théorème de Cook-Levin ; déduction naturelle.
+
+\textbf{Difficulté.} Sujet long mais très progressif. Les parties A, B, C.I et D sont des points rapides pour qui connaît son cours. La logique modale des parties C.II à C.V n'est pas au programme en tant que telle, mais l'énoncé définit tout ; la difficulté est dans la rigueur des inductions (Q27, Q32, Q38) et dans l'assemblage des résultats (Q34, Q39).
+
+\textbf{À ne pas laisser passer.} Q1 à Q4, Q6, Q7, Q13 à Q18, Q20 à Q22, Q26, Q28, Q30, Q35, Q36, Q40, Q41 se traitent en quelques minutes chacune. La partie D est indépendante de tout le reste et souvent oubliée en fin d'épreuve : il vaut mieux la traiter tôt.
+
+\textbf{Gestion du temps.} Environ 25 minutes pour A, 50 minutes pour B, 1 h 15 pour C.I à C.III, 1 h pour C.IV et C.V, 20 minutes pour D, et une relecture des codes (exhaustivité des filtrages, \texttt{NULL}, initialisation des tableaux).
+
+\hypertarget{partie-a-base-de-donnuxe9es-sql}{%
+\section{Partie A --- Base de données (SQL)}\label{partie-a-base-de-donnuxe9es-sql}}
+
+On interroge une table \texttt{conseiller(\allowbreak{}INSEE,\allowbreak{}\ Département,\allowbreak{}\ Monde)\allowbreak{}} où le monde 0 est le monde réel et les mondes 1 à 20 sont les mondes idéaux. Toute la partie consiste à traduire « possible », « obligatoire » et « pas dans le monde réel » en SQL, en distinguant soigneusement le monde 0 des autres.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Que signifie, dans la table, « proposer de créer le Gévaudan » pour le conseiller numéro \(i\) ? Combien de lignes un même conseiller peut-il produire ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le monde réel n'est pas un conseiller : pensez à l'exclure, même si l'énoncé rend ici la précaution redondante.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Proposer de créer le Gévaudan, c'est rattacher au moins une commune au Gévaudan dans son monde idéal ; ce département n'existe pas dans le monde réel.
+
+\begin{lstlisting}[language=SQL]
+SELECT DISTINCT Monde
+FROM conseiller
+WHERE Département = 'Gévaudan' AND Monde <> 0;
+\end{lstlisting}
+
+\texttt{DISTINCT} répond à l'exigence « sans doublon » : un conseiller qui rattache trois communes au Gévaudan produirait sinon trois lignes. La condition \texttt{Monde\ \textless{}\textgreater{}\ 0} garantit qu'on ne renvoie que des numéros de conseillers et rend la requête juste pour tout département.
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Le nom de la commune et son rattachement ne sont pas dans la même table.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une jointure sur la clef \texttt{INSEE}, puis trois conditions de sélection. Attention à la colonne présente dans les deux tables.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\begin{lstlisting}[language=SQL]
+SELECT c.Monde
+FROM conseiller AS c JOIN commune AS m ON c.INSEE = m.INSEE
+WHERE m.Nom = 'Mont-Saint-Michel'
+  AND c.Département = 'Ille-et-Vilaine'
+  AND c.Monde <> 0;
+\end{lstlisting}
+
+L'unicité du nom garantit que la jointure ne concerne qu'une commune ; un conseiller ne rattachant cette commune qu'à un département, chaque numéro apparaît une fois (un \texttt{DISTINCT} ne coûterait rien).
+
+\begin{piege}
+
+Écrire \texttt{INSEE} sans préfixe dans la condition de jointure ou dans le \texttt{SELECT} : la colonne existe dans les deux tables, la requête est ambiguë et refusée.
+
+\end{piege}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+« Peut » est un quantificateur existentiel sur les mondes idéaux : une seule ligne suffit.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\begin{lstlisting}[language=SQL]
+SELECT DISTINCT INSEE
+FROM conseiller
+WHERE Département = 'Sarthe' AND Monde <> 0;
+\end{lstlisting}
+
+La condition \texttt{Monde\ \textless{}\textgreater{}\ 0} est cette fois indispensable : une commune sarthoise dans le monde réel mais dans aucun monde idéal n'est pas autorisée à être en Sarthe et ne doit pas apparaître.
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+« Vrai dans un monde idéal » et « faux dans le monde réel » portent sur deux lignes différentes de la table.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un opérateur ensembliste au programme réalise exactement « le résultat de Q3 privé de\ldots{} ».
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\begin{lstlisting}[language=SQL]
+SELECT INSEE FROM conseiller WHERE Département = 'Sarthe' AND Monde <> 0
+EXCEPT
+SELECT INSEE FROM conseiller WHERE Département = 'Sarthe' AND Monde = 0;
+\end{lstlisting}
+
+\texttt{EXCEPT} calcule la différence ensembliste et élimine les doublons.
+
+\begin{piege}
+
+\texttt{WHERE\ Département\ =\allowbreak{}\ \textquotesingle{}Sarthe\textquotesingle{}\ AND\ Monde\ \textless{}\textgreater{}\ 0\ AND\ NOT\ (\allowbreak{}Département\ =\allowbreak{}\ \textquotesingle{}Sarthe\textquotesingle{}\ AND\ Monde\ =\allowbreak{}\ 0)\allowbreak{}} ne retire rien : chaque condition est évaluée sur une seule ligne. Dès qu'une propriété met en jeu deux lignes, il faut deux requêtes combinées (ou une sous-requête).
+
+\end{piege}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Un « pour tout » sur un ensemble fini et connu de mondes se traduit en SQL par un comptage.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Regroupez par couple (commune, département) en ne gardant que les mondes idéaux, filtrez les groupes, puis retirez ce qui est vrai dans le monde réel.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Le couple (\texttt{INSEE}, \texttt{Département}) est obligatoire s'il apparaît dans les 20 mondes idéaux :
+
+\begin{lstlisting}[language=SQL]
+SELECT INSEE, Département
+FROM conseiller
+WHERE Monde <> 0
+GROUP BY INSEE, Département
+HAVING COUNT(DISTINCT Monde) = 20
+EXCEPT
+SELECT INSEE, Département
+FROM conseiller
+WHERE Monde = 0;
+\end{lstlisting}
+
+\begin{itemize}
+\tightlist
+\item
+  Le \texttt{WHERE\ Monde\ \textless{}\textgreater{}\ 0} filtre les lignes \textbf{avant} le regroupement : sinon un couple présent dans 19 mondes idéaux et dans le monde réel atteindrait 20.
+\item
+  \texttt{HAVING} filtre les groupes, après agrégation ; un \texttt{WHERE\ COUNT(...)} serait refusé.
+\item
+  \texttt{COUNT(\allowbreak{}DISTINCT\ Monde)\allowbreak{}} protège contre d'éventuelles lignes répétées ; si l'on admet que (\texttt{INSEE}, \texttt{Monde}) identifie une ligne, \texttt{COUNT(*)} convient.
+\item
+  \texttt{EXCEPT} conserve un couple dont le département n'existe pas dans le monde réel (le Gévaudan), ce qui est voulu.
+\end{itemize}
+
+\begin{methode}
+
+En SQL, « pour tout \(x\) de \(X\) » se traduit par \texttt{GROUP\ BY\ …\ HAVING\ COUNT(\allowbreak{}DISTINCT\ x)\allowbreak{}\ =\allowbreak{}\ \textbar{}X\textbar{}} quand \(|X|\) est connu, ou par une double négation (« il n'existe pas de \(x\) tel que non\ldots{} ») avec \texttt{NOT\ EXISTS} ou \texttt{EXCEPT}.
+
+\end{methode}
+
+\hypertarget{partie-b-analyse-lexicale-et-syntaxique-ocaml}{%
+\section{Partie B --- Analyse lexicale et syntaxique (OCaml)}\label{partie-b-analyse-lexicale-et-syntaxique-ocaml}}
+
+On transforme une chaîne en liste de lexèmes grâce à un automate, puis la liste en arbre de syntaxe abstraite par descente récursive, après avoir comparé deux grammaires candidates.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Un parcours d'indice, avec un arrêt dès que le caractère est trouvé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'évaluation paresseuse de \texttt{\&\&} et \texttt{\textbar{}\textbar{}} permet d'écrire la fonction en une seule expression booléenne, sans lire hors de la chaîne.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\begin{lstlisting}[language=Caml]
+let appartient chaine c =
+  let n = String.length chaine in
+  let rec parcours i =
+    i < n && (chaine.[i] = c || parcours (i + 1))
+  in
+  parcours 0
+\end{lstlisting}
+
+Le test \texttt{i\ \textless{}\ n} est évalué d'abord : \texttt{chaine.{[}n{]}} n'est jamais lu. Terminaison : \(n-i\) décroît strictement. Complexité \(O(n)\) dans le pire cas. Une boucle \texttt{while} avec une référence booléenne est tout aussi correcte.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Commencez par écrire la condition exacte de validité sur \texttt{debut} et la longueur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une chaîne OCaml est immuable : on la construit d'un coup (par une fonction qui donne le \(k\)-ième caractère) ou par concaténations.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\begin{lstlisting}[language=Caml]
+let sous_chaine chaine debut longueur =
+  assert (debut >= 0 && longueur >= 0
+          && debut + longueur <= String.length chaine);
+  String.init longueur (fun k -> chaine.[debut + k])
+\end{lstlisting}
+
+Si l'appel est invalide, l'assertion lève \texttt{Assert\_failure}. Sinon, tous les indices \texttt{debut\ +\ k}, \(0\le k<\) \texttt{longueur}, sont valides. Contrôle : les indices 3 à 6 de \texttt{"abracadabra"} portent \texttt{a}, \texttt{c}, \texttt{a}, \texttt{d}, d'où \texttt{"acad"} ; pour \texttt{sous\_chaine\ "abc"\ 1\ 3}, \(1+3=4>3\) et l'exception est levée. Coût linéaire.
+
+Si l'on veut n'utiliser que les éléments de \texttt{String} exigibles (\texttt{String.length}, \texttt{s.{[}i{]}} et \texttt{\^{}}), on accumule dans une référence \texttt{r\ :\allowbreak{}=\allowbreak{}\ !r\ \^{}\ String.make\ 1\ chaine.{[}i{]}\allowbreak{}} pour \texttt{i} de \texttt{debut} à \texttt{debut\ +\ longueur\ -\ 1} ; c'est correct mais de coût quadratique.
+
+\begin{piege}
+
+Le troisième argument est une \textbf{longueur}, pas un indice de fin. La condition est \texttt{debut\ +\ longueur\ \textless{}=\allowbreak{}\ String.length\ chaine} (inégalité large) : la sous-chaîne qui va jusqu'au dernier caractère est valide.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Lisez l'automate comme un programme : une boucle pour l'état 0, puis une décision sur le premier caractère non espacé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Repérez quels états sont acceptants et quand l'automate se bloque. Le « plus long préfixe reconnu » demande-t-il un retour arrière ici ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Listez les cas où aucun préfixe n'atteint un état acceptant : c'est là qu'il faut lever l'exception.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+L'automate reconnaît \(\mathcal E^*\bigl(\mathcal P\cup\mathcal A(\mathcal A\cup\{\_\})^*\bigr)\). Après les espacements, une parenthèse mène à l'état 3, acceptant et sans transition sortante : le lexème a un caractère. Une lettre mène à l'état 1 ; les états 1 et 2 sont acceptants et lisent tous deux lettres et \texttt{\_} (l'état 1 passe en 2 sur \texttt{\_}), l'automate se bloque sur tout autre caractère. Comme tous les états atteints après le premier caractère sont acceptants, le plus long préfixe reconnu s'obtient en avançant tant qu'on lit une lettre ou \texttt{\_}, sans retour arrière.
+
+\begin{lstlisting}[language=Caml]
+let detecte_lexeme chaine debut =
+  let n = String.length chaine in
+  let i = ref debut in
+  while !i < n && appartient espaces chaine.[!i] do   (* état 0 *)
+    i := !i + 1
+  done;
+  let d = !i in
+  if d >= n then raise Erreur_Lexicale
+  else if chaine.[d] = '(' || chaine.[d] = ')' then (d, d + 1)   (* état 3 *)
+  else if appartient alphabet chaine.[d] then begin               (* état 1 *)
+    let j = ref (d + 1) in
+    while !j < n && (appartient alphabet chaine.[!j] || chaine.[!j] = '_') do
+      j := !j + 1                                                  (* états 1, 2 *)
+    done;
+    (d, !j)
+  end
+  else raise Erreur_Lexicale
+\end{lstlisting}
+
+L'exception est levée si la fin de chaîne est atteinte dans l'état 0 (non acceptant) ou si le premier caractère non espacé n'est ni une lettre ni une parenthèse (par exemple \texttt{\_}, ce qui traduit l'interdiction de commencer une variable par ce caractère). Contrôle : depuis l'indice 3 de \texttt{"non\ doit\ manger\_crepe"}, on saute l'espace, \texttt{d\ =\ 4}, on lit \texttt{doit} et l'on s'arrête à l'espace d'indice 8 : \texttt{(4,\ 8)} ; depuis 4, même résultat.
+
+\begin{piege}
+
+\texttt{fin\_lexeme} est \textbf{exclu} : c'est l'indice du premier caractère non consommé. Renvoyer l'indice du dernier caractère du lexème décale toute l'analyse de Q9.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+On enchaîne \texttt{detecte\_lexeme} et \texttt{produit\_lexeme}, en repartant de l'indice de fin.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que fait \texttt{detecte\_lexeme} sur une fin de chaîne constituée uniquement d'espacements ? La condition d'arrêt doit le prévoir.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\begin{lstlisting}[language=Caml]
+let analyse_lexicale chaine =
+  let n = String.length chaine in
+  let rec fini i = i >= n || (appartient espaces chaine.[i] && fini (i + 1)) in
+  let rec parcours debut =
+    if fini debut then []
+    else
+      let (d, f) = detecte_lexeme chaine debut in
+      produit_lexeme chaine d f :: parcours f
+  in
+  parcours 0
+\end{lstlisting}
+
+Les erreurs lexicales sont levées par \texttt{detecte\_lexeme} et se propagent sans rattrapage. Terminaison : \texttt{f\ \textgreater{}\ d\ \textgreater{}=\ debut}. Sur l'exemple, les découpes successives sont \texttt{(0,\ 3)}, \texttt{(4,\ 8)}, \texttt{(9,\ 21)}, d'où \texttt{{[}Lex\_non;\allowbreak{}\ Lex\_doit;\allowbreak{}\ Lex\_var\ "manger\_crepe"{]}\allowbreak{}}. La fonction n'est pas récursive terminale ; la profondeur de pile est le nombre de lexèmes, ce qui est acceptable. Une version terminale utiliserait un accumulateur et \texttt{List.rev}, pas \texttt{@}.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Pour montrer qu'un mot \textbf{n'est pas} engendré, examinez la première règle appliquée au symbole initial : le premier terminal du mot élimine la plupart des choix.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour éliminer \(E\to A\ \mathtt{et}\ A\) dans \(\mathcal G\), cherchez un invariant vérifié par tous les mots engendrés, portant sur les parenthèses.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour montrer qu'un mot \textbf{est} engendré, une dérivation complète suffit.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+On écrit \(m_1 = n\ \mathtt{doit}\ (\ n\ \mathtt{et}\ n\ )\) et \(m_2 = n\ \mathtt{et}\ \mathtt{doit}\ (\ \mathtt{non}\ n\ \mathtt{et}\ n\ )\). Tout mot engendré par \(\mathcal G\) est bien parenthésé (les règles créent les parenthèses par paires).
+
+\textbf{\(m_1\notin L(\mathcal G)\).} \(A\to(E)\) est exclu, car \(m_1\) ne commence pas par \texttt{(} ; donc \(A\to E\). Puis :
+
+\begin{itemize}
+\tightlist
+\item
+  \(E\to n\) est exclu, car \(m_1\ne n\) ;
+\item
+  \(E\to\mathtt{non}\,A\) et \(E\to\mathtt{doit}\,A\) aussi, car \(m_1\) commence par \(n\) ;
+\item
+  reste \(E\to A\ \mathtt{et}\ A\) : l'unique \texttt{et} de \(m_1\) impose que le premier \(A\) engendre \(n\ \mathtt{doit}\ (\ n\), mot mal parenthésé : impossible.
+\end{itemize}
+
+\textbf{\(m_1\notin L(\mathcal H)\).} Depuis \(E\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \(E\to n\) donne \(n\) ;
+\item
+  \(E\to(B)\) donne un mot commençant par \texttt{(} ;
+\item
+  \(E\to C\) donne un mot commençant par \texttt{non} ou \texttt{doit}.
+\end{itemize}
+
+Or \(m_1\) commence par \(n\) et n'est pas réduit à \(n\).
+
+\textbf{\(m_2\in L(\mathcal G)\).}
+
+\equationajustee{
+\begin{aligned}
+A &\Rightarrow E\\
+&\Rightarrow A\ \mathtt{et}\ A\\
+&\Rightarrow E\ \mathtt{et}\ A\\
+&\Rightarrow n\ \mathtt{et}\ A\\
+&\Rightarrow n\ \mathtt{et}\ E\\
+&\Rightarrow n\ \mathtt{et}\ \mathtt{doit}\ A\\
+&\Rightarrow n\ \mathtt{et}\ \mathtt{doit}\ (\,E\,)\\
+&\Rightarrow n\ \mathtt{et}\ \mathtt{doit}\ (\,A\ \mathtt{et}\ A\,)\\
+&\Rightarrow n\ \mathtt{et}\ \mathtt{doit}\ (\,E\ \mathtt{et}\ A\,)\\
+&\Rightarrow n\ \mathtt{et}\ \mathtt{doit}\ (\,\mathtt{non}\ A\ \mathtt{et}\ A\,)\\
+&\Rightarrow^* m_2 .
+\end{aligned}
+}
+
+\textbf{\(m_2\notin L(\mathcal H)\)}, par le même argument que pour \(m_1\).
+
+\begin{piege}
+
+Une réponse négative non justifiée (« ce n'est pas une formule bien formée ») ne vaut rien : il faut montrer qu'\textbf{aucune} dérivation n'aboutit.
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+La question précédente fournit peut-être déjà la réponse.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour compléter le tableau, demandez-vous si l'un des deux langages est inclus dans l'autre, et prouvez-le par induction sur les dérivations.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\textbf{Non} : \(m_2\in L(\mathcal G)\) et \(m_2\notin L(\mathcal H)\) (Q10). Des exemples plus courts sont \(n\ \mathtt{et}\ n\) et \((\,n\,)\).
+
+En revanche \(L(\mathcal H)\subseteq L(\mathcal G)\). Par induction sur la dérivation dans \(\mathcal H\), on montre :
+
+\begin{itemize}
+\tightlist
+\item
+  si \(E\) ou \(C\) engendre \(w\) dans \(\mathcal H\), alors \(A\) l'engendre dans \(\mathcal G\) ;
+\item
+  si \(B\) engendre \(w\) dans \(\mathcal H\), alors \(E\) engendre \(w\) dans \(\mathcal G\).
+\end{itemize}
+
+Cas par règle :
+
+\begin{itemize}
+\tightlist
+\item
+  \(E\to n\) : \(A\Rightarrow E\Rightarrow n\).
+\item
+  \(E\to(B)\) avec \(B\Rightarrow^*_{\mathcal H}u\) : \(A\Rightarrow(E)\Rightarrow^*(u)\).
+\item
+  \(E\to C\) : hypothèse sur \(C\).
+\item
+  \(B\to E\ \mathtt{et}\ E\) : \(E\Rightarrow A\ \mathtt{et}\ A\Rightarrow^*u_1\ \mathtt{et}\ u_2\).
+\item
+  \(C\to\mathtt{non}\ E\) ou \(\mathtt{doit}\ E\) : \(A\Rightarrow E\Rightarrow\mathtt{non}\ A\Rightarrow^*\mathtt{non}\ u\), de même pour \texttt{doit}.
+\end{itemize}
+
+Donc \(L(\mathcal H)\subsetneq L(\mathcal G)\) : \(\mathcal H\) est la version « entièrement parenthésée » de \(\mathcal G\).
+
+\begin{methode}
+
+Pour montrer que deux grammaires n'engendrent pas le même langage, un mot suffit, à condition de justifier \textbf{les deux} appartenances (il est dans l'un, il n'est pas dans l'autre).
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Pour \(\mathcal G\), cherchez un mot court qui se lit de deux façons, comme une formule logique mal parenthésée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(\mathcal H\), observez que chaque règle de \(E\) commence par un terminal différent. Que reste-t-il à justifier dans la règle de \(B\) ?
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\textbf{\(\mathcal G\) est ambiguë.} Le mot \(\mathtt{non}\ n\ \mathtt{et}\ n\) admet deux arbres :
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\to E\to\mathtt{non}\ A\), et ce \(A\) se dérive en \(E\to A\ \mathtt{et}\ A\) puis \(n\ \mathtt{et}\ n\) : lecture \(\neg(x\wedge y)\) ;
+\item
+  \(A\to E\to A\ \mathtt{et}\ A\), le premier \(A\) donnant \(\mathtt{non}\ n\) et le second \(n\) : lecture \((\neg x)\wedge y\).
+\end{itemize}
+
+Les deux arbres diffèrent par la règle appliquée au \(E\) sous la racine.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q12-arbres-ambiguite-g.pdf}
+\caption*{Figure 1 --- Q12 : les deux arbres de dérivation du mot non n et n dans
+G, qui diffèrent par la règle appliquée au E sous la racine}
+\end{figure}
+
+\textbf{\(\mathcal H\) n'est pas ambiguë.} Le premier terminal fixe la règle de \(E\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \(n\) donne \(E\to n\) ;
+\item
+  \texttt{(} donne \(E\to(B)\) ;
+\item
+  \texttt{non} ou \texttt{doit} donnent \(E\to C\), puis la règle correspondante de \(C\).
+\end{itemize}
+
+Pour \(B\to E\ \mathtt{et}\ E\), la découpe est unique car \(L(\mathcal H)\) est sans préfixe.
+
+En effet, un mot de \(L(\mathcal H)\) est \(n\), ou un mot qui commence par \texttt{(} et s'arrête à la parenthèse fermante associée, ou \(\mathtt{non}\,u\), \(\mathtt{doit}\,u\) avec \(u\in L(\mathcal H)\).
+
+Si \(u_1\ \mathtt{et}\ u_2=v_1\ \mathtt{et}\ v_2\), l'un de \(u_1,v_1\) est préfixe de l'autre, donc ils sont égaux. Par induction, l'arbre est unique.
+
+\begin{piege}
+
+L'ambiguïté porte sur les \textbf{arbres} de dérivation, pas sur les dérivations : deux ordres de réécriture différents pour le même arbre ne prouvent rien. Donner les deux lectures logiques du mot est la façon la plus sûre de montrer que les arbres diffèrent.
+
+\end{piege}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+On est dans la règle \(B\to E\ \mathtt{et}\ E\) : le premier \(E\) et le \texttt{et} ont été reconnus. Que reste-t-il à analyser, et quel reste faut-il renvoyer ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\begin{lstlisting}[language=Caml]
+        let (f2, q2) = derive_E q in
+        (Et (f1, f2), q2)
+\end{lstlisting}
+
+On analyse le second opérande sur le reste \texttt{q} qui suit \texttt{Lex\_et} et l'on renvoie le reste \texttt{q2} du second appel. Renvoyer \texttt{q} serait faux : le reste contiendrait encore les lexèmes du second opérande, et \texttt{derive\_E} (branche \texttt{Lex\_PO}) échouerait à trouver la parenthèse fermante qu'elle attend. La parenthèse fermante n'est pas consommée ici mais par \texttt{derive\_E}.
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+La règle \(C\to\mathtt{non}\ E\mid\mathtt{doit}\ E\) se lit sur la tête de la liste.
+
+\end{indication}
+
+\begin{indication}{2}
+
+N'oubliez pas le cas où aucune des deux règles ne s'applique.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\begin{lstlisting}[language=Caml]
+  | Lex_non :: q ->
+    let (f, reste) = derive_E q in
+    (Non f, reste)
+  | Lex_doit :: q ->
+    let (f, reste) = derive_E q in
+    (Doit f, reste)
+  | _ -> raise Erreur_Syntaxique
+\end{lstlisting}
+
+Sur l'exemple de l'énoncé, \texttt{derive\_E} délègue à \texttt{derive\_C}, qui filtre \texttt{Lex\_non}, obtient \texttt{(\allowbreak{}Var\ "manger\_crepe",\allowbreak{}\ {[}Lex\_et;\allowbreak{}\ Lex\_doit;\allowbreak{}\ Lex\_var\ "remercier\_mamie";\allowbreak{}\ Lex\_PF{]}\allowbreak{})\allowbreak{}} et renvoie \texttt{(\allowbreak{}Non\ (\allowbreak{}Var\ "manger\_crepe")\allowbreak{},\allowbreak{}\ {[}Lex\_et;\allowbreak{}\ Lex\_doit;\allowbreak{}\ Lex\_var\ "remercier\_mamie";\allowbreak{}\ Lex\_PF{]}\allowbreak{})\allowbreak{}}. Terminaison : tout cycle d'appels consomme un lexème (\texttt{Lex\_PO} avant \texttt{derive\_B}, \texttt{Lex\_non} ou \texttt{Lex\_doit} avant le \texttt{derive\_E} de \texttt{derive\_C}). Le cas de la liste vide aboutit à \texttt{Erreur\_Syntaxique}.
+
+Le point-virgule qui termine la ligne 4 du squelette (\texttt{(Var\ x,\ q);}) est superflu mais sans effet : OCaml accepte un \texttt{;} final dans une séquence, et le squelette compile tel quel.
+
+\begin{methode}
+
+Dans une descente récursive, chaque fonction renvoie (arbre, reste) et chaque règle de la grammaire devient un cas de filtrage. Le \textbf{reste} circule d'un appel au suivant : c'est le seul état de l'analyseur.
+
+\end{methode}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+\texttt{derive\_E} peut réussir sur un préfixe strict de la liste. Comment le détecter ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\begin{lstlisting}[language=Caml]
+let analyse_syntaxique lexemes =
+  match derive_E lexemes with
+  | (f, []) -> f
+  | _ -> raise Erreur_Syntaxique
+\end{lstlisting}
+
+La liste est engendrée par \(\mathcal H\) si et seulement si \texttt{derive\_E} réussit avec un reste vide ; les échecs internes propagent \texttt{Erreur\_Syntaxique}. Sans le test du reste, la liste issue de \texttt{"x\ )"} serait acceptée. Sur la phrase d'introduction, le résultat est \texttt{Et\ (\allowbreak{}Var\ "Grand\_mere\_a\_prepare\_des\_crepes",\allowbreak{}\ Doit\ (\allowbreak{}Var\ "je\_mange\_les\_crepes")\allowbreak{})\allowbreak{}}.
+
+\hypertarget{partie-c-univers-de-kripke-en-c}{%
+\section{Partie C --- Univers de Kripke (en C)}\label{partie-c-univers-de-kripke-en-c}}
+
+Les formules sont représentées par des arbres binaires en C, interprétées dans des graphes de mondes (sémantique de Kripke), mises sous forme réduite (négations devant les variables seulement), puis l'on montre que la satisfiabilité est décidable et qu'une variante restreinte est NP-complète.
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Allocation sur le tas de la \textbf{structure} (pas d'un pointeur), contrôle de l'allocation, puis affectation des quatre champs.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{lstlisting}[language=C]
+formule *cree_formule(int op, int variable, formule *fg, formule *fd) {
+    formule *f = malloc(sizeof(formule));
+    assert(f != NULL);
+    f->op = op;
+    f->variable = variable;
+    f->gauche = fg;
+    f->droite = fd;
+    return f;
+}
+\end{lstlisting}
+
+C'est un constructeur brut : c'est à l'appelant de passer \texttt{NULL} et \(-1\) aux bons endroits.
+
+\begin{piege}
+
+\texttt{malloc(\allowbreak{}sizeof(\allowbreak{}formule\ *)\allowbreak{})\allowbreak{}} alloue la taille d'un pointeur, pas celle de la structure : les écritures suivantes débordent.
+
+\end{piege}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Parcours récursif de l'arbre ; un test de nullité en tête évite de distinguer variables, opérateurs unaires et binaires.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\begin{lstlisting}[language=C]
+int compter_peut(formule *f) {
+    if (f == NULL) { return 0; }
+    int n = (f->op == PEUT) ? 1 : 0;
+    return n + compter_peut(f->gauche) + compter_peut(f->droite);
+}
+\end{lstlisting}
+
+Sur \(X_1\vee\Diamond X_2\) : la racine \texttt{OU} et les deux variables comptent 0, le nœud \texttt{PEUT} compte 1 : résultat 1. On ne s'arrête pas à un \texttt{PEUT} : \(\Diamond\Diamond X_1\) en contient deux.
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Dans quel ordre libérer un nœud et ses fils pour ne jamais lire une zone déjà libérée ?
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\begin{lstlisting}[language=C]
+void free_formule(formule *f) {
+    if (f == NULL) { return; }
+    free_formule(f->gauche);
+    free_formule(f->droite);
+    free(f);
+}
+\end{lstlisting}
+
+Post-ordre : les champs \texttt{gauche} et \texttt{droite} sont lus avant \texttt{free(f)}. Sur \(X_1\vee\Diamond X_2\), les quatre structures sont libérées (les deux variables, le \texttt{PEUT}, puis le \texttt{OU}).
+
+\begin{piege}
+
+Un \texttt{free(f)} placé en premier fait lire \texttt{f-\textgreater{}gauche} dans une zone libérée : comportement indéfini, même si le programme semble fonctionner.
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Les trois contraintes réunies imposent une copie profonde : chaque nœud du résultat doit être alloué.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Traitez récursivement les deux fils, puis assemblez selon l'opérateur ; seul le cas de l'implication change de forme.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\begin{lstlisting}[language=C]
+formule *retirer_implications(formule *f) {
+    if (f == NULL) { return NULL; }
+    formule *g = retirer_implications(f->gauche);
+    formule *d = retirer_implications(f->droite);
+    if (f->op == IMPLIQUE) {
+        return cree_formule(OU, -1, cree_formule(NON, -1, g, NULL), d);
+    }
+    return cree_formule(f->op, f->variable, g, d);
+}
+\end{lstlisting}
+
+Par induction sur \texttt{f} : rien n'est écrit dans \texttt{f} ; chaque nœud renvoyé vient d'un \texttt{malloc} neuf, feuilles comprises, donc aucun partage de mémoire ; un nœud \(\varphi\to\psi\) devient \(\neg\varphi'\vee\psi'\) avec \(\varphi',\psi'\) sans implication par hypothèse d'induction. Le nœud \texttt{NON} créé respecte la convention des unaires (\texttt{droite\ =\ NULL}, \texttt{variable\ =\ -1}).
+
+\begin{piege}
+
+\texttt{cree\_formule(\allowbreak{}OU,\allowbreak{}\ -1,\allowbreak{}\ cree\_formule(\allowbreak{}NON,\allowbreak{}\ -1,\allowbreak{}\ f-\textgreater{}gauche,\allowbreak{}\ NULL)\allowbreak{},\allowbreak{}\ f-\textgreater{}droite)\allowbreak{}} partage les sous-arbres avec \texttt{f} : une libération de \texttt{f} suivie de celle du résultat produirait une double libération.
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Trois formes seulement : variable, négation, conjonction. La valeur d'une variable se lit dans le tableau du monde.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\begin{lstlisting}[language=C]
+bool satisfaction(monde *m, formule *f) {
+    if (f->op == VARIABLE) {
+        assert(0 <= f->variable && f->variable < m->taille);
+        return m->valuation[f->variable];
+    }
+    if (f->op == NON) { return !satisfaction(m, f->gauche); }
+    assert(f->op == ET);
+    return satisfaction(m, f->gauche) && satisfaction(m, f->droite);
+}
+\end{lstlisting}
+
+L'assertion sur l'indice protège d'une lecture hors du tableau (un monde ne représente qu'un nombre fini de variables). On ne peut pas écrire de \texttt{switch} : en C, des identificateurs \texttt{const\ int} ne sont pas des expressions constantes admises comme étiquettes \texttt{case}.
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+\(\Box\Box Q\) demande que \textbf{tout} successeur de \(i\) satisfasse \(\Box Q\) : un seul successeur fautif suffit à conclure négativement.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q21-q22-univers-e.pdf}
+\caption*{Figure 2 --- Q21-Q22 : l'univers 𝔼 de l'énoncé ; a, j et k ne mènent
+qu'à l, où Q est fausse ; b, k est un témoin de P ∧ □¬P}
+\end{figure}
+
+Le seul successeur de \(j\) est \(l\), où \(Q\) est fausse : \(\mathbb E\not\models_j\Box Q\).
+
+Comme \(j\) est un successeur de \(i\) :
+
+\equationajustee{\boxed{\mathbb E\not\models_i\Box\Box Q}}
+
+\begin{piege}
+
+\(\Box\Box Q\) ne dit pas « \(Q\) est vraie à distance 1 ou 2 » mais « \(Q\) est vraie dans tout monde accessible en \textbf{exactement} deux étapes ». Ici ces mondes se réduisent à \(l\).
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Un \(\Diamond\) demande un témoin : examinez les successeurs de \(i\) un par un.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Le successeur \(k\) de \(i\) vérifie \(P\). Son seul successeur \(l\) vérifie \(\neg P\), donc \(\mathbb E\models_k\Box\neg P\).
+
+Ainsi \(\mathbb E\models_k P\wedge\Box\neg P\) et :
+
+\equationajustee{\boxed{\mathbb E\models_i\Diamond(P\wedge\Box\neg P)}}
+
+(Le successeur \(j\) ne convient pas, \(P\) y étant fausse ; un seul témoin suffit.)
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Pour satisfaire une implication, il suffit d'en rendre la conclusion vraie.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour \(\neg\theta_1\), il faut \(\Box\Box P\) vraie et \(\Box P\) fausse : où \(P\) doit-elle être fausse, où doit-elle être vraie ? N'oubliez pas que tout monde doit avoir un successeur.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-q25-contre-modeles.pdf}
+\caption*{Figure 3 --- Q23 à Q25 : les univers 𝕌₁, 𝕌₂ et 𝕌₃ ; en orange, le monde
+où □P est vraie et P fausse}
+\end{figure}
+
+\textbf{\(\theta_1\) satisfiable.} \(\mathbb U_1\) : un monde \(w\), arc \((w,w)\), \(P\) vraie.
+
+Le seul successeur de \(w\) vérifie \(P\), donc \(\mathbb U_1\models_w\Box P\), et l'implication \(\theta_1\) est vraie en \(w\).
+
+\textbf{\(\neg\theta_1\) satisfiable.} Univers \(\mathbb U_2\) :
+
+\begin{itemize}
+\tightlist
+\item
+  mondes \(i,j,k\) ;
+\item
+  arcs \(i\to j\), \(j\to k\), \(k\to k\) ;
+\item
+  \(P\) fausse en \(i\) et \(j\), vraie en \(k\).
+\end{itemize}
+
+Alors :
+
+\begin{itemize}
+\tightlist
+\item
+  l'unique successeur de \(j\) est \(k\), donc \(\mathbb U_2\models_j\Box P\) ;
+\item
+  l'unique successeur de \(i\) est \(j\), donc \(\mathbb U_2\models_i\Box\Box P\) ;
+\item
+  mais \(P\) est fausse en \(j\) : \(\mathbb U_2\not\models_i\Box P\).
+\end{itemize}
+
+Donc \(\mathbb U_2\models_i\neg\theta_1\).
+
+\begin{piege}
+
+Un contre-modèle où un monde n'a pas de successeur (par exemple \(i\to j\) avec \(j\) « terminal ») est hors définition : l'énoncé impose que tout monde ait au moins un successeur.
+
+\end{piege}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Traduisez d'abord \(\neg\theta_2\) en poussant la négation à l'intérieur de la modalité : vous saurez exactement quel monde construire.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les univers de la question précédente peuvent resservir.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\equationajustee{
+\begin{aligned}
+\neg\theta_2&\equiv\Diamond\neg(\Box P\to P)\\
+&\equiv\Diamond(\Box P\wedge\neg P)
+\end{aligned}
+}
+
+Il faut donc un successeur où \(P\) est fausse mais obligatoire.
+
+\textbf{\(\theta_2\) satisfiable} : dans \(\mathbb U_1\), le seul successeur \(w\) de \(w\) vérifie \(P\), donc \(\Box P\to P\).
+
+D'où \(\mathbb U_1\models_w\theta_2\).
+
+\textbf{\(\neg\theta_2\) satisfiable} : dans \(\mathbb U_2\), le successeur \(j\) de \(i\) vérifie \(\Box P\), car son unique successeur vérifie \(P\).
+
+Il vérifie aussi \(\neg P\).
+
+Donc \(\mathbb U_2\not\models_j\Box P\to P\), et \(\mathbb U_2\models_i\neg\theta_2\).
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Pour le premier sens, prenez un modèle de \(\theta_2\) et supposez la prémisse de \(\theta_1\) ; regardez un successeur quelconque.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le second, il faut un univers où \(\theta_1\) est vraie \textbf{et} \(\theta_2\) fausse. Le plus économique est de rendre fausse la prémisse de \(\theta_1\) par une branche, tout en installant ailleurs ce qui met \(\theta_2\) en défaut.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\textbf{\(\theta_2\) entraîne \(\theta_1\).} Soit \((\mathbb U,i)\) avec \(\mathbb U\models_i\Box(\Box P\to P)\).
+
+Supposons \(\mathbb U\models_i\Box\Box P\) et soit \(j\) un successeur de \(i\). Alors :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathbb U\models_j\Box P\) ;
+\item
+  \(\mathbb U\models_j\Box P\to P\) ;
+\item
+  donc \(\mathbb U\models_j P\).
+\end{itemize}
+
+Ainsi \(\mathbb U\models_i\Box P\), et \(\mathbb U\models_i\theta_1\).
+
+\textbf{\(\theta_1\) n'entraîne pas \(\theta_2\).} Univers \(\mathbb U_3\) :
+
+\begin{itemize}
+\tightlist
+\item
+  mondes \(i,a,b,c\) ;
+\item
+  arcs \(i\to a\), \(i\to b\), \(a\to a\), \(b\to c\), \(c\to c\) ;
+\item
+  \(P\) fausse en \(i,a,b\), vraie en \(c\).
+\end{itemize}
+
+Alors :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathbb U_3\not\models_a\Box P\) (boucle sur \(a\), \(P\) fausse), donc \(\mathbb U_3\not\models_i\Box\Box P\). La prémisse de \(\theta_1\) est fausse : \(\mathbb U_3\models_i\theta_1\).
+\item
+  \(\mathbb U_3\models_b\Box P\) (unique successeur \(c\)) et \(\mathbb U_3\not\models_b P\). Donc \(\mathbb U_3\not\models_i\theta_2\).
+\end{itemize}
+
+\begin{piege}
+
+L'univers \(\mathbb U_2\) ne répond pas à la seconde moitié : il satisfait \(\neg\theta_1\) \textbf{et} \(\neg\theta_2\), ce n'est donc pas un modèle de \(\theta_1\).
+
+\end{piege}
+
+\begin{methode}
+
+« \(\varphi\) est conséquence logique de \(\psi\) » se démontre en prenant un modèle quelconque de \(\psi\) ; « n'est pas conséquence » se réfute par \textbf{un} modèle de \(\psi\) qui n'est pas modèle de \(\varphi\), vérifié explicitement monde par monde.
+
+\end{methode}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Question de cours : deux lois, à énoncer toutes les deux.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\equationajustee{\boxed{\begin{aligned}
+\neg(\varphi\wedge\psi)&\equiv\neg\varphi\vee\neg\psi\\
+\neg(\varphi\vee\psi)&\equiv\neg\varphi\wedge\neg\psi
+\end{aligned}}}
+
+Elles valent en tout monde de tout univers, car les clauses de \(\wedge,\vee,\neg\) sont celles du calcul propositionnel au monde considéré ; on peut donc les utiliser à l'intérieur des modalités.
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Établissez d'abord les « lois de De Morgan modales » reliant \(\neg\Box\) et \(\neg\Diamond\) à \(\Diamond\neg\) et \(\Box\neg\), directement à partir de la sémantique.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une induction qui ne construit qu'une forme réduite de \(\varphi\) bloque sur le cas \(\varphi=\neg\psi\). Renforcez l'énoncé.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Construisez simultanément une forme réduite de \(\varphi\) et une forme réduite de \(\neg\varphi\).
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\emph{Lemmes.}
+
+\emph{(1)} \(\neg\Box\varphi\equiv\Diamond\neg\varphi\) et \(\neg\Diamond\varphi\equiv\Box\neg\varphi\) : « il est faux que tout successeur satisfait \(\varphi\) » équivaut à « un successeur satisfait \(\neg\varphi\) », et symétriquement.
+
+\emph{(2)} \(\neg\neg\varphi\equiv\varphi\) et \(\varphi\to\psi\equiv\neg\varphi\vee\psi\).
+
+\emph{(3)} L'équivalence est compatible avec tous les connecteurs : la valeur d'une formule composée en \(i\) ne dépend que des valeurs de ses composantes en \(i\) ou en ses successeurs.
+
+\emph{Construction simultanée de \(\mathrm r(\varphi)\) et \(\mathrm n(\varphi)\)} :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2306}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3697}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3697}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\varphi\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\mathrm r(\varphi)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\mathrm n(\varphi)\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(P\) & \(P\) & \(\neg P\) \\
+\(\neg\psi\) & \(\mathrm n(\psi)\) & \(\mathrm r(\psi)\) \\
+\(\psi\wedge\chi\) & \(\mathrm r(\psi)\wedge\mathrm r(\chi)\) & \(\mathrm n(\psi)\vee\mathrm n(\chi)\) \\
+\(\psi\vee\chi\) & \(\mathrm r(\psi)\vee\mathrm r(\chi)\) & \(\mathrm n(\psi)\wedge\mathrm n(\chi)\) \\
+\(\psi\to\chi\) & \(\mathrm n(\psi)\vee\mathrm r(\chi)\) & \(\mathrm r(\psi)\wedge\mathrm n(\chi)\) \\
+\(\Box\psi\) & \(\Box\,\mathrm r(\psi)\) & \(\Diamond\,\mathrm n(\psi)\) \\
+\(\Diamond\psi\) & \(\Diamond\,\mathrm r(\psi)\) & \(\Box\,\mathrm n(\psi)\) \\
+\end{longtable}
+
+\emph{Réduction} : par induction, les feuilles \(P\) et \(\neg P\) sont réduites, et les autres lignes n'emploient que \(\wedge,\vee,\Box,\Diamond\) sur des formules réduites.
+
+\emph{Équivalence} : par induction simultanée, \(\mathrm r(\varphi)\equiv\varphi\) et \(\mathrm n(\varphi)\equiv\neg\varphi\).
+
+\emph{Cas \(\neg\psi\)} :
+
+\equationajustee{
+\begin{aligned}
+\mathrm r&=\mathrm n(\psi)\\
+&\equiv\neg\psi\\[4pt]
+\mathrm n&=\mathrm r(\psi)\\
+&\equiv\psi\\
+&\equiv\neg\neg\psi
+\end{aligned}
+}
+
+\emph{Cas \(\psi\wedge\chi\)} : \(\mathrm r\equiv\psi\wedge\chi\) par (3) ; par De Morgan,
+
+\equationajustee{
+\begin{aligned}
+\mathrm n&\equiv\neg\psi\vee\neg\chi\\
+&\equiv\neg(\psi\wedge\chi)
+\end{aligned}
+}
+
+Le cas \(\vee\) est symétrique.
+
+\emph{Cas \(\psi\to\chi\)} :
+
+\equationajustee{
+\begin{aligned}
+\mathrm r&\equiv\neg\psi\vee\chi\\
+&\equiv\psi\to\chi\\[4pt]
+\mathrm n&\equiv\psi\wedge\neg\chi\\
+&\equiv\neg(\neg\psi\vee\chi)
+\end{aligned}
+}
+
+\emph{Cas \(\Box\psi\)} : \(\mathrm r\equiv\Box\psi\) ; par (3) puis (1),
+
+\equationajustee{
+\begin{aligned}
+\mathrm n&\equiv\Diamond\neg\psi\\
+&\equiv\neg\Box\psi
+\end{aligned}
+}
+
+Le cas \(\Diamond\) est symétrique.
+
+Toute formule déontique est donc équivalente à la formule réduite \(\mathrm r(\varphi)\).
+
+De plus, \(|\mathrm r(\varphi)|+|\mathrm n(\varphi)|\le4|\varphi|\) (récurrence immédiate) : la transformation est linéaire, ce qui servira en Q39.
+
+\begin{methode}
+
+Renforcer l'hypothèse d'induction (ici : traiter \(\varphi\) et \(\neg\varphi\) ensemble) est le réflexe standard quand le cas inductif demande une information que l'hypothèse ne fournit pas.
+
+\end{methode}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Traduisez la définition inductive cas par cas. Un seul cas demande d'examiner le fils au lieu de rappeler la fonction.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\begin{lstlisting}[language=C]
+bool est_reduite(formule *f) {
+    if (f->op == VARIABLE) { return true; }
+    if (f->op == NON) { return f->gauche->op == VARIABLE; }
+    if (f->op == ET || f->op == OU) {
+        return est_reduite(f->gauche) && est_reduite(f->droite);
+    }
+    if (f->op == DOIT || f->op == PEUT) { return est_reduite(f->gauche); }
+    return false;   /* IMPLIQUE */
+}
+\end{lstlisting}
+
+\begin{piege}
+
+\texttt{return\ est\_reduite(\allowbreak{}f-\textgreater{}gauche)\allowbreak{};\allowbreak{}} dans le cas \texttt{NON} accepterait \(\neg\Box P\) ou \(\neg(P\wedge Q)\), qui ne sont pas réduites. Et sans le \texttt{return\ false} final, la fonction n'a pas de valeur de retour sur une implication.
+
+\end{piege}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Étendez \texttt{satisfaction} : \(\Box\) est un « et » sur les successeurs, \(\Diamond\) un « ou ». Les successeurs se lisent sur la ligne \(i\) de la matrice.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\begin{lstlisting}[language=C]
+bool satisfaction2(univers *u, int i, formule *f) {
+    if (f->op == VARIABLE) {
+        assert(0 <= f->variable && f->variable < u->mondes[i].taille);
+        return u->mondes[i].valuation[f->variable];
+    }
+    if (f->op == NON) {
+        return !satisfaction2(u, i, f->gauche);   /* fils : une variable */
+    }
+    if (f->op == ET) {
+        return satisfaction2(u, i, f->gauche) && satisfaction2(u, i, f->droite);
+    }
+    if (f->op == OU) {
+        return satisfaction2(u, i, f->gauche) || satisfaction2(u, i, f->droite);
+    }
+    if (f->op == DOIT) {
+        for (int j = 0; j < u->nb_mondes; j = j + 1) {
+            if (u->matrice[i][j] && !satisfaction2(u, j, f->gauche)) { return false; }
+        }
+        return true;
+    }
+    assert(f->op == PEUT);
+    for (int j = 0; j < u->nb_mondes; j = j + 1) {
+        if (u->matrice[i][j] && satisfaction2(u, j, f->gauche)) { return true; }
+    }
+    return false;
+}
+\end{lstlisting}
+
+La récursion porte sur des sous-formules strictes : elle termine même si le graphe a des cycles. Sans mémoïsation, le coût peut être exponentiel en la profondeur modale (de l'ordre de \(|\varphi|\,N^{\mathrm{md}(\varphi)}\)). Sur \(\mathbb E\), la fonction confirme Q21 et Q22.
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Écrivez la relation de récurrence que suit le nombre de mondes, en suivant l'algorithme à la lettre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un monde de \(\mathbb U\) accessible par plusieurs chemins est dupliqué autant de fois.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\equationajustee{\boxed{\begin{aligned}
+T(i,0)&=1\\
+T(i,N)&=1+\sum_{j\,:\,R_{\mathbb U}(i,j)}T(j,N-1)
+\end{aligned}}}
+
+\begin{lstlisting}[language=C]
+int taille(univers *u, int i, int N) {
+    if (N == 0) { return 1; }
+    int s = 1;
+    for (int j = 0; j < u->nb_mondes; j = j + 1) {
+        if (u->matrice[i][j]) { s = s + taille(u, j, N - 1); }
+    }
+    return s;
+}
+\end{lstlisting}
+
+Sur \(\mathbb E\) depuis \(i\) : 1, 3, 5 pour \(N=0,1,2\).
+
+Si tout monde a \(d\) successeurs, \(T(i,N)=1+d+\dots+d^N\) : croissance exponentielle en \(N\).
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Allouez l'univers d'un coup grâce à Q30, puis remplissez-le par un parcours récursif.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Il faut un compteur « prochain indice libre » partagé par tous les appels : passez-le par pointeur à une fonction auxiliaire. La racine doit être créée avant ses descendants.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\begin{lstlisting}[language=C]
+int remplir(univers *u, int i, int N, univers *a, int *suivant) {
+    int r = *suivant;
+    *suivant = r + 1;
+    int t = u->mondes[i].taille;
+    a->mondes[r].taille = t;
+    a->mondes[r].valuation = malloc(t * sizeof(bool));
+    assert(a->mondes[r].valuation != NULL);
+    for (int v = 0; v < t; v = v + 1) {
+        a->mondes[r].valuation[v] = u->mondes[i].valuation[v];
+    }
+    if (N == 0) {
+        a->matrice[r][r] = true;
+        return r;
+    }
+    for (int j = 0; j < u->nb_mondes; j = j + 1) {
+        if (u->matrice[i][j]) {
+            int rj = remplir(u, j, N - 1, a, suivant);
+            a->matrice[r][rj] = true;
+        }
+    }
+    return r;
+}
+
+univers *arborescent(univers *u, int i, int N) {
+    int n = taille(u, i, N);
+    univers *a = malloc(sizeof(univers));
+    assert(a != NULL);
+    a->nb_mondes = n;
+    a->mondes = malloc(n * sizeof(monde));
+    a->matrice = malloc(n * sizeof(bool *));
+    assert(a->mondes != NULL && a->matrice != NULL);
+    for (int r = 0; r < n; r = r + 1) {
+        a->matrice[r] = malloc(n * sizeof(bool));
+        assert(a->matrice[r] != NULL);
+        for (int c = 0; c < n; c = c + 1) { a->matrice[r][c] = false; }
+    }
+    int suivant = 0;
+    remplir(u, i, N, a, &suivant);
+    return a;
+}
+\end{lstlisting}
+
+La racine reçoit l'indice 0 ; chacun des \(T(i,N)=n\) appels consomme un indice, donc tous les indices sont utilisés une fois. Sur \(\mathbb E\) avec \(N=2\), on obtient cinq mondes :
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q31-univers-arborescent.pdf}
+\caption*{Figure 4 --- Q31 : arborescent(𝔼, 2, i), mondes numérotés dans l'ordre
+de création ; le monde l est copié une fois par chemin}
+\end{figure}
+
+\begin{piege}
+
+Trois oublis classiques : ne pas initialiser la matrice (\texttt{malloc} ne met pas à zéro), partager les tableaux de valuations avec \(\mathbb U\), utiliser un compteur local à chaque appel (plusieurs mondes reçoivent alors le même indice).
+
+\end{piege}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+L'énoncé fixe \(N\) et \(i\), mais une induction sur la formule fait descendre à la fois la formule et la profondeur : généralisez à tout monde \(j\) et toute profondeur \(n\) assez grande.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Introduisez la profondeur modale \(\mathrm{md}(\varphi)\), majorée par le nombre de modalités, et justifiez que la satisfaction en un monde ne dépend que des mondes accessibles depuis lui.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pourquoi l'hypothèse « réduite » permet-elle de ne démontrer qu'une implication et non une équivalence ?
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+On note \(A_n(j)\) l'univers \texttt{arborescent(\allowbreak{}U,\allowbreak{}\ n,\allowbreak{}\ j)\allowbreak{}}, de racine \(r\).
+
+\emph{Lemme de localité.} La satisfaction en un monde \(x\) ne dépend que du sous-univers des mondes accessibles depuis \(x\). Deux mondes dont les parties accessibles sont isomorphes (valuations comprises, \(x\) envoyé sur \(y\)) satisfont les mêmes formules (induction immédiate).
+
+Dans \(A_n(j)\), avec \(n\ge1\), les successeurs de \(r\) sont les racines \(r_k\) des copies de \(A_{n-1}(k)\).
+
+Ici, \(k\) parcourt les successeurs de \(j\).
+
+La partie accessible depuis \(r_k\) est exactement cette copie. Donc :
+
+\equationajustee{A_n(j)\models_{r_k}\psi\iff A_{n-1}(k)\models_{r_k}\psi.\qquad(\ast)}
+
+\emph{Proposition.} Pour toute formule réduite \(\varphi\), tout \(n\ge\mathrm{md}(\varphi)\) et tout monde \(j\) :
+
+\equationajustee{\mathbb U\models_j\varphi\Rightarrow A_n(j)\models_r\varphi.}
+
+Induction structurelle :
+
+\begin{itemize}
+\item
+  \(P\), \(\neg P\) : \(r\) est une copie de \(j\).
+\item
+  \(\wedge\), \(\vee\) : hypothèse d'induction au même \(n\), au même \(j\).
+\item
+  \(\Box\psi\) (\(n\ge1\)) : tout successeur de \(r\) est un \(r_k\) avec \(R_{\mathbb U}(j,k)\).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    On a \(\mathbb U\models_k\psi\).
+  \item
+    Puis \(A_{n-1}(k)\models_{r_k}\psi\) (hypothèse, \(n-1\ge\mathrm{md}(\psi)\)).
+  \item
+    On conclut par \((\ast)\).
+  \end{itemize}
+\item
+  \(\Diamond\psi\) : un successeur \(k\) de \(j\) vérifie \(\psi\).
+
+  Par le même raisonnement, \(r_k\) est un successeur de \(r\) qui vérifie \(\psi\).
+\end{itemize}
+
+Avec \(j=i\) et \(n=N\) :
+
+\equationajustee{\mathbb U\models_i\varphi\Rightarrow\mathbb A\models_r\varphi.}
+
+\begin{methode}
+
+Dans une formule réduite, aucune négation ne précède une modalité : tous les connecteurs sont \textbf{monotones}, et une induction à sens unique suffit. Sans cette hypothèse, le cas \(\neg\Box\psi\) demanderait la réciproque, donc une équivalence complète (qui est vraie, mais plus longue à établir).
+
+\end{methode}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Précisez d'abord ce que signifie « deux univers identiques », puis ce que deux tels univers ont en commun du point de vue de la satisfaction.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Reprenez la preuve de Q32 : quel cas profite de la suppression de successeurs, lequel risque d'en souffrir ?
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Deux univers arborescents sont identiques s'ils sont isomorphes, valuations et racines comprises ; par le lemme de localité, ils satisfont les mêmes formules en leur racine.
+
+Sous la racine de \(A'_n(j)\) (algorithme modifié), les sous-arbres conservés forment une partie \(\mathcal C\) des \(A'_{n-1}(k)\). Tout sous-arbre supprimé est identique à un élément de \(\mathcal C\). On reprend Q32 :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\Box\psi\) : les successeurs de la racine sont des racines de \(A'_{n-1}(k)\), avec \(R_{\mathbb U}(j,k)\). L'argument est inchangé, avec moins de successeurs à examiner.
+\item
+  \(\Diamond\psi\) : un successeur \(k\) de \(j\) vérifie \(\psi\), donc \(A'_{n-1}(k)\) vérifie \(\psi\) en sa racine.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    S'il est conservé, c'est fini.
+  \item
+    Sinon, il est identique à un \(T\in\mathcal C\), qui vérifie \(\psi\) en sa racine ; celle-ci est un successeur de la racine de \(A'_n(j)\).
+  \end{itemize}
+\end{itemize}
+
+La proposition reste donc vraie.
+
+\begin{piege}
+
+Sans définir « identiques » et sans dire que deux univers identiques satisfont les mêmes formules, l'argument du cas \(\Diamond\) n'est qu'une intuition.
+
+\end{piege}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Il faut un algorithme qui termine toujours. Ramenez-vous à un ensemble \textbf{fini} d'univers candidats, en enchaînant les résultats précédents.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux sources d'infini sont à éliminer : les variables (une valuation porte sur un ensemble infini) et la largeur des arbres.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Comptez les univers arborescents de profondeur \(n\) sans sous-arbres frères identiques, à valuations restreintes : une récurrence sur \(n\) montre qu'il y en a un nombre fini.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(\varphi'=\mathrm r(\varphi)\) (Q27) est réduite, équivalente à \(\varphi\), calculable. Soit \(N\) son nombre de modalités et \(V\) ses \(m\) variables.
+\item
+  La satisfaction de \(\varphi'\) ne dépend que des valeurs des variables de \(V\) : on restreint les valuations à \(V\).
+\item
+  Si \((\mathbb U,i)\) est un modèle de \(\varphi'\), alors \(A'_N(i)\), arbre sans doublons, en est un en sa racine (Q32 et Q33).
+
+  L'ensemble \(\mathcal T_n\) de ces arbres (à isomorphisme près, valuations sur \(V\)) est fini. Un arbre de \(\mathcal T_{n+1}\) est en effet déterminé par la valuation de sa racine et par un ensemble \textbf{non vide} (sérialité) d'éléments de \(\mathcal T_n\), donc :
+  \equationajustee{
+  \begin{aligned}
+  |\mathcal T_0|&=2^m\\
+  |\mathcal T_{n+1}|&=2^m(2^{|\mathcal T_n|}-1)
+  \end{aligned}
+  }
+  Ces arbres s'énumèrent.
+\item
+  Algorithme : énumérer \(\mathcal T_N\) et tester chaque arbre par \texttt{satisfaction2} (Q29) ; répondre oui si un test réussit.
+\end{enumerate}
+
+Un test réussi exhibe un modèle ; réciproquement, si \(\varphi\) est satisfiable, l'étape 3 fournit un arbre qui passe le test. L'algorithme termine : \textbf{DSAT est décidable}. Le nombre de candidats est une tour d'exponentielles, mais la section ne demande que la terminaison.
+
+\begin{methode}
+
+Schéma général d'une preuve de décidabilité par « petit modèle » : (i) normaliser la formule ; (ii) montrer que tout modèle se transforme en un modèle d'une forme contrainte ; (iii) montrer que les modèles de cette forme sont en nombre fini et énumérables ; (iv) tester chacun.
+
+\end{methode}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Un sens est purement définitionnel. Pour l'autre, que manque-t-il à un problème de NP pour être NP-complet ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quel problème NP-complet connu se plonge directement dans DSAT ? Vérifiez les deux sens de l'équivalence entre les deux notions de satisfiabilité.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Si DSAT est NP-complet, il est dans NP par définition. Réciproquement, supposons DSAT \(\in\) NP ; il suffit de montrer qu'il est NP-difficile. Réduction identité depuis SAT (une formule propositionnelle est une formule déontique sans modalité), calculable en temps linéaire :
+
+\begin{itemize}
+\item
+  si une valuation \(v\) satisfait \(\varphi\), considérons l'univers à un monde \(w\) de valuation \(v\), avec l'arc \((w,w)\) (non vide, sériel).
+
+  Il vérifie \(\mathbb U\models_w\varphi\), car sans modalité la satisfaction en \(w\) ne dépend que de la valuation de \(w\) ;
+\item
+  si \(\mathbb U\models_x\varphi\), la valuation de \(x\) satisfait \(\varphi\), pour la même raison.
+\end{itemize}
+
+SAT étant NP-complet (Cook-Levin) et \(\text{SAT}\le_p\text{DSAT}\), DSAT est NP-difficile, donc NP-complet.
+
+\begin{piege}
+
+Le sens de la réduction : c'est le problème \textbf{connu} (SAT) qui se réduit au problème \textbf{étudié} (DSAT), pas l'inverse.
+
+\end{piege}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Dans un univers total, chaque monde est son propre successeur. Quelle formule de la forme « c'est le cas, mais il devrait en être autrement » devient alors contradictoire ?
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\(\varphi=P\wedge\Box\neg P\).
+
+\begin{itemize}
+\item
+  Satisfiable : mondes \(i,j\), arcs \(i\to j\), \(j\to j\), \(P\) vraie en \(i\) et fausse en \(j\).
+
+  \(P\) est vraie en \(i\) et le seul successeur de \(i\) vérifie \(\neg P\).
+\item
+  Dans un univers total, \((i,i)\) est un arc ; \(\mathbb U\models_i\Box\neg P\) entraînerait \(\mathbb U\models_i\neg P\), contradiction avec \(P\).
+\end{itemize}
+
+Les univers totaux ne savent pas représenter la « faute », pourtant au cœur de la logique déontique.
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Dans un univers total, la valeur de \(\Box\psi\) ou \(\Diamond\psi\) en un monde dépend-elle de ce monde ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculez, de bas en haut, le tableau des \(N\) valeurs de chaque sous-formule, en \(O(N)\) par sous-formule.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+Par totalité, indépendamment de \(j\) :
+
+\equationajustee{
+\begin{aligned}
+\mathbb U\models_j\Box\psi&\iff\forall k,\ \mathbb U\models_k\psi\\
+\mathbb U\models_j\Diamond\psi&\iff\exists k,\ \mathbb U\models_k\psi
+\end{aligned}
+}
+
+On parcourt les sous-formules en post-ordre (au plus \(|\varphi|\)) et l'on calcule pour chacune son tableau de \(N\) booléens :
+
+\begin{itemize}
+\tightlist
+\item
+  \(P\), \(\neg P\) : lecture des valuations, \(O(N)\) ;
+\item
+  \(\psi\wedge\chi\), \(\psi\vee\chi\) : combinaison case par case, \(O(N)\) ;
+\item
+  \(\Box\psi\), \(\Diamond\psi\) : conjonction ou disjonction des \(N\) cases, puis tableau constant, \(O(N)\).
+\end{itemize}
+
+La réponse est la case \(i\) du tableau de \(\varphi\), en \(O(N\,|\varphi|)\).
+
+\begin{methode}
+
+Quand une même sous-valeur serait recalculée de nombreuses fois par une récursion, on la range dans un tableau rempli par taille croissante des sous-problèmes.
+
+\end{methode}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Que faut-il garder de \(\mathbb U\) pour que chaque \(\Diamond\psi\) vrai le reste ? Un monde par sous-formule suffit-il ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Prenez le sous-graphe \textbf{induit} : quelles propriétés de \(\mathbb U\) hérite-t-il ? Puis prouvez la préservation de la satisfaction par une induction à sens unique.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+Pour chaque sous-formule \(\Diamond\psi\) de \(\varphi\) telle qu'un monde de \(\mathbb U\) satisfasse \(\psi\), on choisit un tel monde \(k_\psi\).
+
+Soit \(\mathbb T\) le sous-graphe induit par \(\{i\}\cup\{k_\psi\}\).
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathbb T\) est un témoignage : sous-graphe, total (tous les arcs de \(\mathbb U\) sont gardés, boucles comprises), et chaque \(\Diamond\psi\) ayant un témoin dans \(\mathbb U\) en a un dans \(\mathbb T\). Il contient \(i\) et c'est un univers (sériel par totalité).
+\item
+  Taille : au plus \(1+|\varphi|\) mondes.
+\item
+  Pour toute sous-formule \(\chi\) et tout \(x\) de \(\mathbb T\), on montre par induction \(\mathbb U\models_x\chi\Rightarrow\mathbb T\models_x\chi\) :
+
+  \begin{itemize}
+  \item
+    littéraux : mêmes valuations ;
+  \item
+    \(\wedge,\vee\) : hypothèse d'induction ;
+  \item
+    \(\Box\chi_1\) : tout successeur \(y\) de \(x\) dans \(\mathbb T\) est un monde de \(\mathbb U\).
+
+    Par totalité de \(\mathbb U\), la formule \(\chi_1\) y est vraie, donc aussi dans \(\mathbb T\) par induction ;
+  \item
+    \(\Diamond\chi_1\) : le témoin \(k_{\chi_1}\) est dans \(\mathbb T\) et y satisfait \(\chi_1\) ; c'est un successeur de \(x\) par totalité de \(\mathbb T\).
+  \end{itemize}
+\end{itemize}
+
+Avec \(\chi=\varphi\), \(x=i\) : \(\mathbb T\models_i\varphi\).
+
+\begin{piege}
+
+Ne pas oublier d'ajouter \(i\) lui-même : rien dans la définition d'un témoignage ne l'impose, mais la question demande un témoignage \textbf{contenant} \(i\).
+
+\end{piege}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Deux moitiés : appartenance à NP et NP-difficulté. Pour la première, quel certificat de taille polynomiale les questions précédentes fournissent-elles, et comment le vérifier vite ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'entrée est une formule quelconque, pas forcément réduite. La mise sous forme réduite fait-elle exploser la taille ?
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\textbf{TOTAL-DSAT \(\in\) NP.} Pour \(\varphi\) de taille \(n\), \(\varphi'=\mathrm r(\varphi)\) se calcule en \(O(n)\) et a une taille \(O(n)\).
+
+\begin{itemize}
+\tightlist
+\item
+  Certificat : un univers total \(\mathbb T\) d'au plus \(|\varphi'|+1\) mondes, à valuations restreintes aux variables de \(\varphi\), et un monde \(i\) ; taille \(O(n^2)\).
+\item
+  Vérification : calculer \(\varphi'\), vérifier que la matrice de \(\mathbb T\) est pleine, tester \(\mathbb T\models_i\varphi'\) par Q37 ; temps \(O(n^2)\).
+\item
+  Si \(\varphi\) est satisfiable dans un univers total \(\mathbb B\) en \(x\), alors \(\varphi'\) aussi, et Q38 fournit un témoignage total de petite taille satisfaisant \(\varphi'\) en \(x\) : un certificat accepté existe.
+\item
+  Réciproquement, un certificat accepté est un modèle total de \(\varphi'\equiv\varphi\).
+\end{itemize}
+
+\textbf{NP-difficulté.} Réduction identité depuis SAT comme en Q35 : l'univers à un monde avec boucle est total.
+
+\textbf{TOTAL-DSAT est NP-complet.}
+
+\begin{piege}
+
+Proposer comme certificat « un univers total qui satisfait \(\varphi\) » sans borne de taille ne suffit pas : c'est précisément le rôle de Q38 de garantir un certificat polynomial.
+
+\end{piege}
+
+\hypertarget{partie-d-duxe9duction-naturelle-pour-la-logique-duxe9ontique}{%
+\section{Partie D --- Déduction naturelle pour la logique déontique}\label{partie-d-duxe9duction-naturelle-pour-la-logique-duxe9ontique}}
+
+On construit des arbres de preuve avec les règles de la figure 1, puis avec trois règles modales : D1 (un théorème est obligatoire), D2 (distribution de \(\Box\) sur l'implication) et D3 (ce qui est obligatoire est permis).
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Le but est une implication : quelle règle, lue de bas en haut, fait passer l'hypothèse à gauche du \(\vdash\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Après deux applications, il reste une conjonction à introduire à partir de deux axiomes. Attention à la forme exacte de Ax.
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\equationajustee{
+\dfrac{
+  \dfrac{
+    \dfrac{
+      \dfrac{\dfrac{}{A\vdash A}\,\text{Ax}}{A,B\vdash A}\,\text{Aff}
+      \qquad
+      \dfrac{}{A,B\vdash B}\,\text{Ax}
+    }{A,B\vdash A\wedge B}\,\text{I}\wedge
+  }{A\vdash B\to(A\wedge B)}\,\text{I}\!\to
+}{\vdash A\to\bigl(B\to(A\wedge B)\bigr)}\,\text{I}\!\to
+}
+
+La règle Ax s'écrit \(\Gamma,A\vdash A\) ; on obtient \(A,B\vdash A\) par Ax puis Aff, ce qui vaut quelle que soit la façon de lire les contextes (si on les voit comme des ensembles, Ax suffit directement).
+
+\begin{jury}
+
+Chaque trait d'inférence doit porter le nom de la règle employée, et les contextes doivent être écrits en entier à chaque ligne : c'est ce qui distingue un arbre de preuve d'un empilement de séquents.
+
+\end{jury}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Pour prouver une négation, supposez la formule et dérivez l'absurde.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Des deux conjoints, l'un donne directement une formule ; la règle D3, appliquée à l'autre, donne sa négation.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+Avec \(\Gamma=\{\Box A\wedge\Box\neg A\}\) :
+
+\equationajustee{
+\dfrac{
+  \dfrac{
+    \dfrac{\dfrac{}{\Gamma\vdash\Box A\wedge\Box\neg A}\,\text{Ax}}{\Gamma\vdash\Box\neg A}\,\text{E}_2\wedge
+    \qquad
+    \dfrac{\dfrac{\dfrac{}{\Gamma\vdash\Box A\wedge\Box\neg A}\,\text{Ax}}{\Gamma\vdash\Box A}\,\text{E}_1\wedge}{\Gamma\vdash\neg\Box\neg A}\,\text{D3}
+  }{\Gamma\vdash\bot}\,\text{E}\neg
+}{\vdash\neg(\Box A\wedge\Box\neg A)}\,\text{I}\neg
+}
+
+E\(\neg\) est appliquée à \(\Box\neg A\) et à sa négation \(\neg\Box\neg A\). La règle D3 est la contrepartie syntaxique de la sérialité : dans un univers où un monde n'aurait pas de successeur, \(\Box A\) et \(\Box\neg A\) y seraient vraies simultanément par vacuité.
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+D1 ne s'applique qu'à un séquent \textbf{sans contexte} : il faut donc d'abord prouver des théorèmes propositionnels, puis les « modaliser ».
+
+\end{indication}
+
+\begin{indication}{2}
+
+Schéma commun aux deux sens : théorème \(\vdash\varphi\to\psi\), puis D1, puis D2, puis Aff pour entrer dans le contexte, puis E\(\to\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour le sens réciproque, le théorème de Q40 est le bon point de départ ; D2, contrairement à D1, garde son contexte et peut servir deux fois.
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\textbf{Sens direct.}
+
+\equationajustee{
+\tau_1=\dfrac{
+  \dfrac{
+    \dfrac{\dfrac{\dfrac{}{A\wedge B\vdash A\wedge B}\,\text{Ax}}{A\wedge B\vdash A}\,\text{E}_1\wedge}{\vdash(A\wedge B)\to A}\,\text{I}\!\to
+  }{\vdash\Box\bigl((A\wedge B)\to A\bigr)}\,\text{D1}
+}{\vdash\Box(A\wedge B)\to\Box A}\,\text{D2}
+}
+
+et de même \(\tau_2\) conclut \(\vdash\Box(A\wedge B)\to\Box B\) (avec E\(_2\wedge\)). Avec \(\Gamma=\{\Box(A\wedge B)\}\) :
+
+\equationajustee{
+\rho_1=\dfrac{
+  \dfrac{\tau_1}{\Gamma\vdash\Box(A\wedge B)\to\Box A}\,\text{Aff}
+  \qquad
+  \dfrac{}{\Gamma\vdash\Box(A\wedge B)}\,\text{Ax}
+}{\Gamma\vdash\Box A}\,\text{E}\!\to
+}
+
+\(\rho_2\) conclut de même \(\Gamma\vdash\Box B\), puis :
+
+\equationajustee{
+\dfrac{\dfrac{\rho_1\qquad\rho_2}{\Gamma\vdash\Box A\wedge\Box B}\,\text{I}\wedge}{\vdash\Box(A\wedge B)\to(\Box A\wedge\Box B)}\,\text{I}\!\to
+}
+
+\textbf{Sens réciproque.} Avec \(\pi_{40}\) la preuve de Q40 et \(\Delta=\{\Box A\wedge\Box B\}\) :
+
+\equationajustee{
+\tau_3=\dfrac{\dfrac{\pi_{40}}{\vdash\Box\bigl(A\to(B\to(A\wedge B))\bigr)}\,\text{D1}}{\vdash\Box A\to\Box\bigl(B\to(A\wedge B)\bigr)}\,\text{D2}
+}
+
+\equationajustee{
+\alpha=\dfrac{\dfrac{}{\Delta\vdash\Box A\wedge\Box B}\,\text{Ax}}{\Delta\vdash\Box A}\,\text{E}_1\wedge
+}
+
+\equationajustee{
+\beta=\dfrac{\dfrac{}{\Delta\vdash\Box A\wedge\Box B}\,\text{Ax}}{\Delta\vdash\Box B}\,\text{E}_2\wedge
+}
+
+\equationajustee{
+\gamma=\dfrac{\dfrac{\tau_3}{\Delta\vdash\Box A\to\Box\bigl(B\to(A\wedge B)\bigr)}\,\text{Aff}\qquad\alpha}{\Delta\vdash\Box\bigl(B\to(A\wedge B)\bigr)}\,\text{E}\!\to
+}
+
+\equationajustee{
+\delta=\dfrac{\gamma}{\Delta\vdash\Box B\to\Box(A\wedge B)}\,\text{D2}
+}
+
+\equationajustee{
+\dfrac{\dfrac{\delta\qquad\beta}{\Delta\vdash\Box(A\wedge B)}\,\text{E}\!\to}{\vdash(\Box A\wedge\Box B)\to\Box(A\wedge B)}\,\text{I}\!\to
+}
+
+Les deux séquents sont prouvables : l'équivalence \(\Box(A\wedge B)\leftrightarrow(\Box A\wedge\Box B)\) est établie dans \(\mathcal D\).
+
+\begin{piege}
+
+Appliquer D1 dans le contexte \(\Delta\) (« de \(\Delta\vdash A\) on tire \(\Delta\vdash\Box A\) ») est interdit : ce serait conclure que tout ce qui est vrai est obligatoire. D1 ne porte que sur les théorèmes, qu'on fait ensuite entrer dans le contexte par Aff.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{SQL} : un « pour tout » sur un ensemble fini se traduit par un comptage \texttt{GROUP\ BY\ …\ HAVING\ COUNT(\allowbreak{}DISTINCT\ …)\allowbreak{}\ =\allowbreak{}\ n} ; une propriété qui oppose deux lignes demande \texttt{EXCEPT} ou une sous-requête, jamais deux conditions contradictoires dans un même \texttt{WHERE}.
+\item
+  \textbf{Analyse lexicale} : un automate déterministe se code directement en boucles ; le plus long lexème se trouve sans retour arrière quand tous les états atteints après le premier caractère sont acceptants.
+\item
+  \textbf{Grammaires} : la non-appartenance d'un mot se prouve par examen de la première règle et par un invariant (bon parenthésage) ; l'ambiguïté se prouve par deux \textbf{arbres} distincts ; la non-ambiguïté d'une grammaire LL(1) découle de ce que le premier terminal détermine la règle.
+\item
+  \textbf{Descente récursive} : une fonction par non-terminal, qui renvoie (arbre, reste) ; l'analyse complète exige un reste vide.
+\item
+  \textbf{C} : allocation de la structure, \texttt{assert} après \texttt{malloc}, libération en post-ordre, copie profonde dès qu'aucun partage n'est permis, initialisation explicite des tableaux.
+\item
+  \textbf{Logique modale} : \(\Box\) est un « pour tout successeur », \(\Diamond\) un « il existe un successeur » ; on pousse les négations à l'intérieur par \(\neg\Box\equiv\Diamond\neg\) ; les contre-modèles doivent respecter la sérialité et être vérifiés monde par monde.
+\item
+  \textbf{Inductions} : renforcer l'énoncé (Q27 avec \(\varphi\) et \(\neg\varphi\), Q32 avec tout \(n\ge\mathrm{md}\) et tout monde) ; profiter de la monotonie des formules réduites pour n'établir qu'une implication.
+\item
+  \textbf{Complexité} : NP-complétude = appartenance à NP (certificat polynomial + vérification polynomiale) + réduction depuis un problème NP-complet connu, ici SAT par l'identité.
+\item
+  \textbf{Déduction naturelle} : construire l'arbre de bas en haut ; D1 seulement sans contexte, puis Aff.
+\end{itemize}
+
+\textbf{Prérequis à revoir.} Annexes OCaml et C du programme (chaînes immuables, \texttt{assert}, \texttt{malloc}/\texttt{free}) ; grammaires non contextuelles et ambiguïté ; induction structurelle ; lois de De Morgan ; théorème de Cook-Levin et réductions ; règles de la déduction naturelle.
+
+\textbf{Questions transposables.} Q5 (quantification universelle en SQL), Q8--Q9 (lexeur à partir d'un automate), Q12 (ambiguïté d'une grammaire d'expressions), Q13--Q15 (descente récursive), Q18--Q19 (libération et copie profonde d'un arbre en C), Q27 (forme normale négative), Q35 et Q39 (NP-complétude par réduction depuis SAT et certificat de petite taille), Q40 (arbre de preuve élémentaire).
+
+\end{document}

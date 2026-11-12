@@ -1,0 +1,33 @@
+{
+  "slug": "ats_ats_genie-civil_2026",
+  "epreuve": {
+    "concours": "ATS",
+    "filiere": "ATS",
+    "matiere": "Génie civil",
+    "annee": 2026
+  },
+  "questions": 50,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q17-q18-profils-temperature.svg",
+      "question": "Q17-Q18",
+      "legende": "Profils stationnaires dans le mur MEXT10 : multicouche Ts(x) et monocouche équivalent Tseq(x)"
+    },
+    {
+      "fichier": "figures/q32-epures-poutre-continue.svg",
+      "question": "Q32",
+      "legende": "Poutre continue ABCD sous pElu = 31 kN/m et épures de M(x) et V(x)"
+    },
+    {
+      "fichier": "figures/q42-courbe-absorption.svg",
+      "question": "Q42",
+      "legende": "Courbe mesurée αp, référence ISO 11654 translatée de −0,30 puis −0,35, lecture de αw à 500 Hz"
+    },
+    {
+      "fichier": "figures/q48-semelle-coupe.svg",
+      "question": "Q48",
+      "legende": "Coupe de la semelle : cotes NGF, encastrement D et profondeur ze de lecture de ple*"
+    }
+  ]
+}

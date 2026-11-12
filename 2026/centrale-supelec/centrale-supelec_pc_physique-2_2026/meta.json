@@ -1,0 +1,43 @@
+{
+  "slug": "centrale-supelec_pc_physique-2_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PC",
+    "matiere": "Physique 2",
+    "annee": 2026
+  },
+  "questions": 43,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-difference-marche.svg",
+      "question": "Q2",
+      "legende": "Différence de marche entre deux miroirs : au retour, le rayon issu de M1 parcourt a sin θ de plus jusqu'au plan d'onde diffracté passant par M2"
+    },
+    {
+      "fichier": "figures/q8-critere-resolution.svg",
+      "question": "Q8",
+      "legende": "Pics de λ et λ + δλ (tirets) et leur somme (trait noir) : deux raies si l'écart dépasse δθp/2, une seule raie élargie sinon"
+    },
+    {
+      "fichier": "figures/q14-echelette-marche.svg",
+      "question": "Q14",
+      "legende": "Réseau échelette, hauteur h exagérée : le rayon passant par Mk parcourt h de plus à l'aller et a sin θ + h cos θ de plus au retour"
+    },
+    {
+      "fichier": "figures/q15-ordres-enveloppe.svg",
+      "question": "Q15",
+      "legende": "Ordres d'interférence et enveloppe de diffraction d'une facette, tracés pour a = 4λm : le réseau plan n'éclaire que l'ordre 0, l'échelette porte l'ordre p0 = 1 au sommet de l'enveloppe"
+    },
+    {
+      "fichier": "figures/q36-mode-n2.svg",
+      "question": "Q36",
+      "legende": "Mode n = 2 : surpression p1/pa (trait plein) et survitesse v1/va (tirets) en quadrature spatiale, nœuds de vitesse aux parois et au milieu"
+    },
+    {
+      "fichier": "figures/q40-cycle-clapeyron.svg",
+      "question": "Q40",
+      "legende": "Cycle frigorifique en diagramme de Clapeyron (allure, échelles dilatées) : deux adiabatiques et deux isobares parcourues dans le sens trigonométrique"
+    }
+  ]
+}

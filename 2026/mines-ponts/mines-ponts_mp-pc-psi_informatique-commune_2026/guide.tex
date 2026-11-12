@@ -1,0 +1,1257 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts MP-PC-PSI — Informatique commune 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Mines-Ponts MP-PC-PSI}
+\fancyhead[R]{\small Informatique commune 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts MP-PC-PSI — Informatique commune 2026\par}\medskip
+  {\large Mines-Ponts · MP-PC-PSI · Informatique commune · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format.} Épreuve de 2 heures, commune aux filières MP, PC et PSI. La calculatrice et tout dispositif électronique sont interdits. On répond sur un cahier de réponses de 8 pages. Le code est en Python, les requêtes en SQL. L'énoncé impose trois règles :
+
+\begin{itemize}
+\tightlist
+\item
+  ne pas recopier la signature des fonctions ;
+\item
+  soigner la concision ;
+\item
+  \textbf{ne pas utiliser de fonction interne de complexité linéaire} sur les listes, dictionnaires et chaînes (\texttt{sum}, \texttt{count}, \texttt{in} sur une liste, \texttt{max} d'une liste\ldots), le tranchage et l'extraction restant permis.
+\end{itemize}
+
+\textbf{Thème.} Le jeu Quixo est un morpion \(5\times5\) à cubes glissants. À chaque tour, on prélève un cube sur le bord (neutre ou à sa marque), puis on le réinsère à une extrémité de sa ligne ou de sa colonne, ce qui pousse les autres cubes. Le premier joueur qui aligne 5 symboles gagne.
+
+\textbf{Découpage.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie 2, jeu à deux joueurs humains} (Q1 à Q11) : représentation du plateau, dénombrement des configurations, règles de validité d'un coup, procédure de glissement avec preuve de terminaison, détection des alignements. Les questions sont courtes et très abordables.
+\item
+  \textbf{Partie 3, jeu contre un ordinateur} (Q12 à Q19) : dénombrement des coups, minimax sur un arbre, coût de l'exploration, heuristique d'évaluation, élagage alpha-bêta décrit par l'énoncé.
+\item
+  \textbf{Partie 4, base de données} (Q20, Q21) : agrégats, jointure, double jointure sur la même table.
+\end{itemize}
+
+\textbf{Notions du programme.} Listes de listes et piège de la copie superficielle, booléens paresseux, boucles et variant de boucle, invariant, complexité, représentation des entiers en binaire et logarithme, jeux à deux joueurs et algorithme min-max avec heuristique, SQL (jointures, agrégats, requêtes imbriquées).
+
+\textbf{Documents du cahier de réponses.} Q8, Q9, Q13, Q15 et Q18 s'appuient sur des documents qui ne figurent que sur le cahier de réponses : le code de \texttt{deplacement\_case}, un arbre de jeu à 16 feuilles et le code de \texttt{deplacements\_possibles}. Ce corrigé les reconstruit. L'arbre est un exemple illustratif, dont les valeurs ne sont pas celles du cahier. Pour ces questions, retenez surtout la méthode.
+
+\textbf{Difficulté et gestion du temps.} Le sujet est long pour 2 heures mais sans piège profond. Les points se gagnent sur la précision.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Questions à ne pas laisser passer} : Q1, Q3, Q4, Q5, Q6, Q7, Q11, Q12 (première partie), Q16, Q20, Q21. Le rapport 2026 juge Q9 très réussie : une erreur y coûte cher.
+\item
+  \textbf{Questions qui demandent du soin} : Q2 (arrondi par excès), Q8 (variant), Q10 (un seul accès par case), Q14 (discussion chiffrée), Q17 (respect exact des règles) et Q18--Q19 (application fidèle du pseudo-code).
+\item
+  \textbf{Questions discriminantes} d'après le rapport 2026 : Q12, dont peu de copies traitent correctement les deux parties, puis Q17 et Q18, peu traitées. L'alpha-bêta, inconnu de la plupart des candidats, départage ceux qui savent s'approprier un algorithme nouveau.
+\end{itemize}
+
+\textbf{Rédaction (rapport 2026).} Le jury rappelle que les réponses doivent tenir dans l'espace du document-réponse, sans astérisques ni renvois. Il demande des commentaires courts, réservés aux astuces. Il signale aussi des erreurs de syntaxe récurrentes : \texttt{assert} à la place de \texttt{if}, parenthèses oubliées après \texttt{range}, \texttt{=} au lieu de \texttt{==}, syntaxe numpy appliquée à des listes.
+
+Comptez environ 50 minutes pour la partie 2, 55 minutes pour la partie 3 et 15 minutes pour le SQL.
+
+\textbf{Un lemme qui sert partout.} Avant Q4, établissez une fois pour toutes où peut se réinsérer un cube prélevé en \((i,j)\) sur le bord. La poussée se fait en ligne droite depuis la case d'insertion jusqu'à la case libérée.
+
+Les seules destinations sont donc :
+
+\begin{itemize}
+\tightlist
+\item
+  les extrémités de la ligne \(i\), soit \((i,0)\) et \((i,4)\) ;
+\item
+  les extrémités de la colonne \(j\), soit \((0,j)\) et \((4,j)\) ;
+\item
+  à l'exclusion de la case \((i,j)\) elle-même.
+\end{itemize}
+
+On obtient \textbf{2 destinations pour un coin} et \textbf{3 pour les autres cases de bord}. Le lemme resservira en Q4, Q7, Q12, Q14 et Q15.
+
+\hypertarget{partie-2-jeu-uxe0-deux-joueurs-humains}{%
+\section{Partie 2 --- Jeu à deux joueurs humains}\label{partie-2-jeu-uxe0-deux-joueurs-humains}}
+
+On construit, fonction par fonction, un tour de jeu complet : choix du cube, choix de la destination, glissement, test de victoire. Chaque fonction doit être courte et réutiliser les précédentes.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Il faut 5 lignes qui soient 5 objets distincts en mémoire.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Méfiez-vous de la répétition d'une liste de listes par \texttt{*} : que duplique-t-elle exactement ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+\begin{lstlisting}[language=Python]
+def initialisation():
+    jeu = []
+    for i in range(5):
+        jeu.append([0] * 5)
+    return jeu
+\end{lstlisting}
+
+\texttt{{[}0{]}\ *\ 5} est correct pour une ligne d'entiers, et chaque tour de boucle crée une nouvelle ligne. La compréhension \texttt{{[}{[}0{]}\allowbreak{}\ *\ 5\ for\ i\ in\ range(\allowbreak{}5)\allowbreak{}{]}\allowbreak{}} convient aussi.
+
+\begin{piege}
+
+\texttt{{[}{[}0{]}\ *\ 5{]}\ *\ 5} duplique cinq fois \textbf{la même référence} de ligne : \texttt{jeu{[}0{]}{[}0{]}\ =\ 1} modifierait alors toute la colonne 0. C'est le caractère superficiel de la copie de listes, explicitement au programme.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève trois erreurs : l'usage de numpy alors que le sujet impose une liste de listes, des lignes « dépendantes les unes des autres » (le piège ci-dessus), et l'affectation \texttt{plateau{[}i{]}{[}j{]}=0} sur une liste encore vide, qui lève une erreur d'indice.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Chaque case peut prendre combien d'états, indépendamment des autres ? Le dénombrement est un produit.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour coder \(N\) valeurs distinctes sur \(n\) bits, comparez \(2^n\) à \(N\). Le nombre de bits est un entier : quel arrondi faut-il ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Une configuration associe à chacune des 25 cases un état parmi \(\{0,1,2\}\). Sans tenir compte des symétries ni des configurations inaccessibles :
+\equationajustee{\boxed{N\le3^{25}\approx8{,}5\cdot10^{11}.}}
+Il faut \(2^n\ge N\), donc
+\equationajustee{\begin{aligned}
+n&=\left\lceil\log_2\left(3^{25}\right)\right\rceil\\
+&=\left\lceil25\log_2 3\right\rceil\\
+&=\left\lceil 25\,\frac{\ln3}{\ln2}\right\rceil\\
+&=\boxed{40.}
+\end{aligned}}
+Sans calculatrice :
+
+\begin{itemize}
+\tightlist
+\item
+  \(3^5=243<2^8\) donne \(3^{25}<2^{40}\) ;
+\item
+  \(3^{12}=531\,441>2^{19}=524\,288\) donne \(3^{25}=3\,(3^{12})^2>2^{39}\).
+\end{itemize}
+
+Donc 39 bits ne suffisent pas et 40 suffisent, contre \(25\times16=400\) bits pour le stockage naïf.
+
+\begin{piege}
+
+Deux confusions classiques : écrire \(25^3\) au lieu de \(3^{25}\) (ce sont les cases qui choisissent un état), et arrondir \(25\log_2 3\approx39{,}6\) à 39. Un arrondi par défaut rend le codage non injectif.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Peu de candidats font le lien entre le nombre de bits nécessaires et \(\log_2\). » C'est pourtant ce que demande l'énoncé (« à l'aide d'un logarithme ») : \(n\) bits codent \(2^n\) valeurs.
+
+\end{jury}
+
+\begin{methode}
+
+Pour encadrer une puissance sans calculatrice, comparez de petites puissances (\(3^5\) et \(2^8\), \(3^{12}\) et \(2^{19}\)), puis élevez à la puissance voulue.
+
+\end{methode}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Deux conditions : être sur le bord, et porter un X \textbf{ou} être neutre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Parcourez les 16 cases de bord ligne par ligne. N'oubliez pas les bords gauche et droit des lignes 1 à 3.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Sur la figure 2, les cases de bord neutres ou marquées X sont, par ligne croissante :
+\equationajustee{\boxed{(0,3),\ (0,4),\ (1,4),\ (2,0),\ (3,4),\ (4,1),\ (4,3)}}
+Il y a 7 cubes, dont un neutre en \((0,4)\).
+
+\begin{piege}
+
+Le cube neutre \((0,4)\) est choisissable : la règle autorise « l'un de ses cubes \textbf{ou} un cube neutre ».
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Dans quelle direction la poussée peut-elle se propager pour reboucher la case libérée ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Repérez les extrémités de la ligne et de la colonne du cube, puis appliquez la règle sur la case d'origine.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+D'après le lemme de la présentation, les destinations possibles sont les extrémités de la ligne 1, \((1,0)\) et \((1,4)\), et celles de la colonne 4, \((0,4)\) et \((4,4)\). On retire la case d'origine :
+\equationajustee{\boxed{(0,4),\ (1,0),\ (4,4)}}
+
+\begin{itemize}
+\tightlist
+\item
+  Réinsérer en \((1,0)\) pousse la ligne 1 vers la droite.
+\item
+  Réinsérer en \((0,4)\) fait descendre le cube \((0,4)\) en \((1,4)\).
+\item
+  Réinsérer en \((4,4)\) fait remonter les cubes \((2,4)\), \((3,4)\) et \((4,4)\).
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q3-q4-plateau-figure2.pdf}
+\caption*{Figure 1 --- Plateau de la figure 2 : les 7 cubes choisissables par le
+joueur 1 (Q3) et les 3 réinsertions du cube (1,4) (Q4)}
+\end{figure}
+
+\begin{piege}
+
+Un cube ne se déplace pas d'une case : il est \textbf{réinséré à une extrémité}. Des réponses comme \((0,3)\) ou \((2,4)\) sont fausses.
+
+\end{piege}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Caractérisez le bord par une condition sur les indices, sans liste de cases.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\begin{lstlisting}[language=Python]
+def case_bord(i, j):
+    return i == 0 or i == 4 or j == 0 or j == 4
+\end{lstlisting}
+
+\begin{piege}
+
+Énumérer les 16 cases du bord est interdit par l'énoncé, et le rapport 2026 signale que certains candidats l'ont pourtant fait.
+
+\end{piege}
+
+\begin{piege}
+
+\texttt{i\ ==\ 0\ or\ 4} est toujours vrai : si \texttt{i\ !=\ 0}, l'expression vaut \texttt{4}, entier non nul, donc considéré comme vrai. Chaque comparaison doit être écrite en entier.
+
+\end{piege}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Combinez \texttt{case\_bord} (obligatoire) avec un test sur le contenu de la case.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention à la priorité de \texttt{and} sur \texttt{or}.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\begin{lstlisting}[language=Python]
+def case_choix_valide(jeu, i, j, joueur):
+    return case_bord(i, j) and (jeu[i][j] == 0 or jeu[i][j] == joueur)
+\end{lstlisting}
+
+\begin{piege}
+
+Rapport 2026 : « Oubli récurrent des cases neutres. » Tester seulement \texttt{jeu{[}i{]}\allowbreak{}{[}j{]}\allowbreak{}\ =\allowbreak{}=\allowbreak{}\ joueur} refuse les cubes neutres, que la règle autorise.
+
+\end{piege}
+
+\begin{piege}
+
+Sans parenthèses, \texttt{case\_bord(\allowbreak{}i,\allowbreak{}\ j)\allowbreak{}\ and\ jeu{[}i{]}\allowbreak{}{[}j{]}\allowbreak{}\ =\allowbreak{}=\allowbreak{}\ 0\ or\ jeu{[}i{]}\allowbreak{}{[}j{]}\allowbreak{}\ =\allowbreak{}=\allowbreak{}\ joueur} accepterait toute case à la marque du joueur, même à l'intérieur du plateau.
+
+\end{piege}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Traduisez le lemme : même ligne et extrémité de ligne, \textbf{ou} même colonne et extrémité de colonne.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quelle condition supplémentaire impose l'interdiction de remettre le cube à sa place ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\begin{lstlisting}[language=Python]
+def case_deplacement_valide(i_d, j_d, i_n, j_n):
+    meme_ligne = i_n == i_d and (j_n == 0 or j_n == 4) and j_n != j_d
+    meme_colonne = j_n == j_d and (i_n == 0 or i_n == 4) and i_n != i_d
+    return meme_ligne or meme_colonne
+\end{lstlisting}
+
+Les deux cas couvrent exactement les destinations du lemme. Les conditions \(j_n\ne j_d\) et \(i_n\ne i_d\) excluent la case de départ. On renvoie directement le booléen, sans \texttt{if\ …\ return\ True\ …\ return\ False}.
+
+\begin{jury}
+
+Le rapport 2026 demande de « synthétiser leurs codes lorsque c'est possible » : certaines propositions étaient longues et complexes. Dans ses remarques générales, il juge que \texttt{if\ a=\allowbreak{}=\allowbreak{}b\ :\allowbreak{}\ return\ True\ ...\ else\ :\allowbreak{}\ return\ False}, sans être incorrect, « montre le manque de familiarisation avec les booléens ».
+
+\end{jury}
+
+\begin{piege}
+
+Le seul test \texttt{i\_n\ =\allowbreak{}=\allowbreak{}\ i\_d\ or\ j\_n\ =\allowbreak{}=\allowbreak{}\ j\_d} est insuffisant : il accepterait \((0,2)\to(0,1)\), qui ne pousse rien. Sans les conditions de différence, chaque case de bord gagnerait une destination fictive, sa propre case, et la question 12 donnerait 60 au lieu de 44.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Pour chaque branche, identifiez l'extrémité d'insertion. Les cubes glissent vers la case libérée, donc en s'éloignant de l'insertion.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la terminaison, cherchez une quantité entière, positive tant que la boucle tourne, et qui diminue à chaque tour.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\emph{Le code est celui du cahier de réponses, reconstruit ici avec quatre cas et des boucles \texttt{while}. Les lignes du mouvement 2, objet de Q9, sont déjà complétées.}
+
+\begin{lstlisting}[language=Python]
+def deplacement_case(jeu, i_d, j_d, i_n, j_n, joueur):
+    if j_n == j_d and i_n == 0:        # mouvement 1
+        i = i_d
+        while i > 0:
+            jeu[i][j_d] = jeu[i - 1][j_d]
+            i = i - 1
+    elif j_n == j_d and i_n == 4:      # mouvement 2
+        i = i_d
+        while i < 4:
+            jeu[i][j_d] = jeu[i + 1][j_d]
+            i = i + 1
+    elif j_n == 4:                     # mouvement 3 (i_n == i_d)
+        j = j_d
+        while j < 4:
+            jeu[i_d][j] = jeu[i_d][j + 1]
+            j = j + 1
+    else:                              # mouvement 4 (i_n == i_d, j_n == 0)
+        j = j_d
+        while j > 0:
+            jeu[i_d][j] = jeu[i_d][j - 1]
+            j = j - 1
+    jeu[i_n][j_n] = joueur
+\end{lstlisting}
+
+\textbf{Mouvements globaux.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Mouvement 1} (insertion en \((0,j_d)\)) : la partie de la colonne \(j_d\) au-dessus de la case libérée \textbf{descend} d'une case.
+\item
+  \textbf{Mouvement 2} (insertion en \((4,j_d)\)) : la partie en dessous \textbf{monte} d'une case.
+\item
+  \textbf{Mouvement 3} (insertion en \((i_d,4)\)) : la partie de la ligne \(i_d\) à droite \textbf{glisse vers la gauche}.
+\item
+  \textbf{Mouvement 4} (insertion en \((i_d,0)\)) : la partie à gauche \textbf{glisse vers la droite}.
+\end{itemize}
+
+Dans les quatre cas, la case d'insertion reçoit ensuite la marque du joueur.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q8-quatre-mouvements.pdf}
+\caption*{Figure 2 --- Les quatre mouvements de deplacement\_case : les cubes
+glissent d'une case vers la case libérée}
+\end{figure}
+
+\textbf{Terminaison du mouvement 1.} On prend pour variant \(\boxed{V=i}\).
+
+\begin{itemize}
+\tightlist
+\item
+  C'est un entier : il vaut \(i_d\) au départ et n'est modifié que par décrément de 1.
+\item
+  Il est positif dans la boucle, puisque la condition \texttt{i\ \textgreater{}\ 0} garantit \(V\ge1\).
+\item
+  Il décroît strictement, de 1 à chaque itération.
+\end{itemize}
+
+Une suite d'entiers naturels strictement décroissante est finie. La boucle s'arrête donc après \(i_d\) itérations, et la procédure se termine. L'accès \texttt{jeu{[}i\ -\ 1{]}{[}j\_d{]}} reste dans le tableau car \(i\ge1\).
+
+\begin{methode}
+
+Pour un décalage en place, on recopie \textbf{depuis la case libérée vers l'insertion}. Pour faire descendre une colonne, on parcourt donc \(i\) en décroissant : on écrit \texttt{jeu{[}i{]}} à partir de \texttt{jeu{[}i-1{]}}. Dans l'autre sens, une même valeur se propagerait dans toute la colonne.
+
+\end{methode}
+
+\begin{jury}
+
+Rapport 2026 : « La notion d'invariant ne semble pas toujours maitrisée et est confondue avec la notion de variant. Il s'agit d'une question d'analyse appelant une question courte et précise, pas une paraphrase du code. » On attend un \textbf{variant} (ici \(i\)), avec ses trois propriétés, et non un invariant ni un récit ligne à ligne de la boucle.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+C'est le symétrique du mouvement 1 : dans quel sens faut-il parcourir la colonne ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\begin{lstlisting}[language=Python]
+        i = i_d
+        while i < 4:
+            jeu[i][j_d] = jeu[i + 1][j_d]
+            i = i + 1
+\end{lstlisting}
+
+On parcourt en croissant, de la case libérée vers le bas. Le variant est \(4-i\), et la boucle fait \(4-i_d\) itérations.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Un seul accès par case interdit de tester chaque position de départ possible. Il faut un seul balayage.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Tenez à jour un compteur de pions consécutifs du joueur. Que doit-il devenir sur une case qui n'est pas au joueur ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\begin{lstlisting}[language=Python]
+def alig(jeu, joueur, i, n):
+    c = 0
+    for j in range(5):
+        if jeu[i][j] == joueur:
+            c = c + 1
+            if c == n:
+                return True
+        else:
+            c = 0
+    return False
+\end{lstlisting}
+
+\textbf{Invariant.} Après le traitement de la colonne \(j\), \texttt{c} est la longueur du bloc maximal de pions du joueur qui se termine en \((i,j)\). Ce bloc s'allonge de 1 si la case est au joueur et tombe à 0 sinon. Comme \texttt{c} ne croît que d'une unité à la fois, il prend la valeur \(n\) si et seulement si la ligne contient \(n\) pions consécutifs du joueur. Chaque case est lue une seule fois.
+
+Les fonctions \texttt{acol}, \texttt{adiag1} et \texttt{adiag2} s'écrivent de même, en lisant \texttt{jeu{[}k{]}{[}j{]}}, \texttt{jeu{[}k{]}{[}k{]}} et \texttt{jeu{[}k{]}{[}4\ -\ k{]}}.
+
+\begin{piege}
+
+Le rapport 2026 relève trois défauts : la condition d'optimalité (un seul accès par case) non respectée, une sortie de boucle mal gérée, et le test \texttt{c\ ==\ n} placé au mauvais endroit. Ici, il est fait juste après l'incrément, dans la branche où la case est au joueur, et il provoque un \texttt{return} immédiat.
+
+\end{piege}
+
+\begin{piege}
+
+Le rapport 2026 note aussi que plusieurs copies testent si \(n\) cases de la ligne sont au joueur « sans tester qu'elles sont consécutives ». Le mot important est « consécutifs ». Compter les pions du joueur sur la ligne est faux : \texttt{X\ X\ .\ X\ X} contient quatre X mais aucun alignement de trois. La remise à zéro \texttt{c\ =\ 0} est le cœur de la fonction.
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Sur un plateau \(5\times5\), un alignement de 5 occupe une ligne, une colonne ou une diagonale entière. Combien de droites faut-il tester ?
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\begin{lstlisting}[language=Python]
+def gagnant(jeu, joueur):
+    for k in range(5):
+        if alig(jeu, joueur, k, 5) or acol(jeu, joueur, k, 5):
+            return True
+    return adiag1(jeu, joueur, 5) or adiag2(jeu, joueur, 5)
+\end{lstlisting}
+
+On teste 12 droites (5 lignes, 5 colonnes, 2 diagonales), en s'arrêtant au premier alignement trouvé. La règle de départage, quand les deux joueurs sont alignés, relève de l'appelant : cette fonction ne juge qu'un seul joueur.
+
+\begin{piege}
+
+Une seule boucle sur \texttt{k} suffit, puisque \texttt{alig} et \texttt{acol} parcourent déjà leur ligne ou leur colonne. Le rapport 2026 signale que plusieurs candidats ont écrit des boucles imbriquées.
+
+\end{piege}
+
+\hypertarget{partie-3-jeu-contre-un-ordinateur}{%
+\section{Partie 3 --- Jeu contre un ordinateur}\label{partie-3-jeu-contre-un-ordinateur}}
+
+On dénombre d'abord les coups pour mesurer la taille de l'arbre de jeu. On applique ensuite minimax, on construit une heuristique pour évaluer les positions sans aller jusqu'au bout de la partie, puis on implémente l'élagage alpha-bêta fourni en pseudo-code.
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+En position initiale, quels cubes de bord sont disponibles ? Combien de destinations a chacun, selon qu'il est un coin ou non ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le minimum, cherchez à priver le joueur de presque toutes ses cases de bord, puis vérifiez que la position n'est pas déjà gagnée par l'adversaire.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\textbf{Situation initiale.} Les 16 cases de bord sont neutres, donc toutes disponibles : 4 coins à 2 destinations et 12 cases à 3 destinations.
+\equationajustee{\boxed{4\times2+12\times3=44\ \text{mouvements.}}}
+
+\textbf{Situation minimale.} Le joueur 2 occupe tout le bord sauf les coins opposés \((0,0)\) et \((4,4)\), qui sont neutres :
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+& 0 & 1 & 2 & 3 & 4 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{0} & · & O & O & O & O \\
+\textbf{1} & O & X & X & · & O \\
+\textbf{2} & O & X & · & · & O \\
+\textbf{3} & O & · & · & X & O \\
+\textbf{4} & O & O & O & O & · \\
+\end{longtable}
+
+Les lignes 0 et 4, les colonnes 0 et 4 et la diagonale principale sont toutes coupées par un coin libre : personne n'a gagné. Le joueur 1 n'a que deux coins, soit
+\equationajustee{\boxed{4\ \text{mouvements}.}}
+On ne peut pas descendre plus bas. Avec au plus une case de bord disponible, l'adversaire tiendrait 15 cases de bord sur 16, donc la ligne 0 ou la ligne 4 en entier : la partie serait déjà finie.
+
+\begin{piege}
+
+Le calcul \(16\times3=48\) oublie que les coins n'ont que 2 destinations. Autre confusion : compter les cubes au lieu des couples (départ, arrivée).
+
+\end{piege}
+
+\begin{piege}
+
+Une position à 0 ou 2 mouvements suppose que l'adversaire a déjà aligné 5 cubes : ce n'est plus une situation de jeu. Si les deux coins libres sont du même côté, la ligne opposée est complète.
+
+\end{piege}
+
+\begin{jury}
+
+Question discriminante : d'après le rapport 2026, « peu de copies traitent correctement les 2 parties de la question ». Le jury ajoute qu'il est possible d'utiliser un dessin, ce que fait le tableau ci-dessus.
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Identifiez d'abord le type de chaque niveau, en alternant MAX et MIN depuis la racine.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Remontez des feuilles vers la racine, un niveau complet à la fois.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\textbf{Méthode.} On remplit l'arbre du cahier de bas en haut. Chaque rond (MIN) reçoit le \textbf{minimum} des valeurs de ses fils, chaque carré (MAX) le \textbf{maximum}. La racine, qui est MAX, reçoit la valeur de la partie supposée jouée au mieux par les deux joueurs. Le coup choisi est celui qui mène au fils de valeur maximale.
+
+\textbf{Exemple illustratif} (même forme que l'arbre du cahier, valeurs fictives) :
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q13-arbre-minimax.pdf}
+\caption*{Figure 3 --- Remontée minimax sur l'arbre illustratif : minimum aux
+ronds (MIN), maximum aux carrés (MAX), racine 6}
+\end{figure}
+
+La racine vaut \(\max(2,6)=6\) : MAX choisit la branche droite.
+
+\begin{piege}
+
+La valeur de la racine n'est pas la meilleure feuille (ici 15). C'est la meilleure valeur que MAX peut \textbf{garantir} face à un adversaire qui joue au mieux pour lui.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Majorez le nombre de coups à chacun des trois tours, en partant de la position initiale. Quels cubes sont interdits au joueur à chaque tour ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le nombre de suites de trois coups est un produit. Comment croît-il avec la profondeur ?
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Tour 1} : 44 mouvements (Q12).
+\item
+  \textbf{Tour 2} : le seul X est sur le bord (la case d'insertion). Le joueur 2 dispose des 15 autres cases de bord, soit \(44-2=42\) mouvements si le X est sur un coin et \(41\) sinon.
+\item
+  \textbf{Tour 3} : seul le O, sur le bord, est interdit au joueur 1, qui a au plus 42 mouvements.
+\end{itemize}
+
+\equationajustee{\boxed{44\times42\times42=77\,616\approx8\cdot10^4\ \text{suites de 3 coups au plus.}}}
+
+Le maximum 42 est atteint quand le coup précédent a été joué dans un coin. Le nombre exact de suites, obtenu par énumération, est \(76\,596\), du même ordre.
+
+\textbf{Discussion.} À la profondeur 3, environ \(8\cdot10^4\) feuilles, chacune avec une copie du plateau et une évaluation, restent explorables. Mais le nombre de feuilles croît comme \(b^p\), avec \(b\approx40\) :
+
+\begin{itemize}
+\tightlist
+\item
+  environ \(4\cdot10^6\) à la profondeur 4 ;
+\item
+  environ \(7\cdot10^9\) à la profondeur 6.
+\end{itemize}
+
+Une partie compte des dizaines de tours et peut ne jamais finir, puisqu'aucun cube n'est retiré. \textbf{Le minimax complet est donc hors de portée.} On le limite à quelques coups d'avance, avec une heuristique aux feuilles (Q16, Q17) et un élagage (Q18, Q19).
+
+\begin{piege}
+
+Additionner les nombres de coups (\(44+42+42\)) au lieu de les multiplier. À l'inverse, conclure « impossible » à partir de \(8\cdot10^4\) : ce nombre est petit. L'obstacle vient de la croissance exponentielle avec la profondeur.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Les interprétations proposées ne sont pas toujours en accord avec l'ordre de grandeur proposé. Il est demandé aux candidats de vérifier la cohérence de leurs réponses. » La conclusion doit découler du nombre calculé : \(8\cdot10^4\) est faisable, c'est la croissance avec la profondeur qui ne l'est pas.
+
+\end{jury}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Repérez les cubes de bord que le joueur 1 peut prendre sur la figure 3. Il y en a très peu.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'ordre de la liste est celui du parcours de \texttt{deplacements\_possibles} : déroulez ses boucles au lieu de deviner.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\emph{Hypothèse sur le code du cahier} : on balaie les départs par lignes puis colonnes croissantes, et pour chaque départ valide, les arrivées de la même façon.
+
+\begin{lstlisting}[language=Python]
+def deplacements_possibles(jeu, joueur):
+    depl = []
+    for i in range(5):
+        for j in range(5):
+            if case_choix_valide(jeu, i, j, joueur):
+                for i_n in range(5):
+                    for j_n in range(5):
+                        if case_deplacement_valide(i, j, i_n, j_n):
+                            depl.append([i, j, i_n, j_n])
+    return depl
+\end{lstlisting}
+
+Sur la figure 3, les seuls cubes de bord disponibles pour X sont \((0,3)\), \((2,0)\) et le coin \((4,4)\). Tout le reste du bord porte un O, et les cases neutres \((1,1)\) et \((1,3)\) sont intérieures. On obtient \(3+3+2=8\) mouvements :
+\equationajustee{\boxed{\begin{aligned}\lbrack&[0,3,0,0],\ [0,3,0,4],\ [0,3,4,3],\\ &[2,0,0,0],\ [2,0,2,4],\ [2,0,4,0],\\ &[4,4,0,4],\ [4,4,4,0]]\end{aligned}}}
+
+Seul l'ordre dépend du code exact du cahier : l'ensemble des 8 mouvements, lui, n'en dépend pas.
+
+\begin{methode}
+
+Les choix de X sur cette position sont tous mauvais, ce qui montre l'intérêt de regarder plusieurs coups à l'avance. Pour chacun des 8 coups, O a une réponse gagnante, par exemple prélever un O de la colonne 4 et le réinsérer en \((4,4)\). Les deux coups du coin \((4,4)\) complètent même immédiatement la ligne 4 de O. Une évaluation à profondeur 0 ne voit pas cette menace, alors qu'une recherche à profondeur 2 la voit.
+
+\end{methode}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Les fonctions \texttt{alig}, \texttt{acol}, \texttt{adiag1} et \texttt{adiag2} renvoient un booléen. Que peut-on compter avec elles ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{lstlisting}[language=Python]
+def alignement_4(jeu, joueur):
+    c = 0
+    for k in range(5):
+        if alig(jeu, joueur, k, 4):
+            c = c + 1
+        if acol(jeu, joueur, k, 4):
+            c = c + 1
+    if adiag1(jeu, joueur, 4):
+        c = c + 1
+    if adiag2(jeu, joueur, 4):
+        c = c + 1
+    return c
+\end{lstlisting}
+
+On compte les droites (5 lignes, 5 colonnes, 2 diagonales) qui contiennent au moins 4 pions consécutifs du joueur. Le résultat est entre 0 et 12. Une ligne de 5 pions compte une fois.
+
+\begin{piege}
+
+Le rapport 2026 signale, comme en Q11, des boucles imbriquées qui conduisent ici à une erreur de dénombrement : une même droite est comptée plusieurs fois. Autre défaut relevé, des \texttt{if}, \texttt{elif}, \texttt{else} mal enchaînés. Avec \texttt{elif}, une ligne alignée empêcherait de compter la colonne de même indice : il faut deux \texttt{if} indépendants.
+
+\end{piege}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Traduisez les règles dans l'ordre : d'abord le cas gagnant, qui court-circuite tout, puis les contributions, puis le signe.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le score gagnant dépend de \textbf{qui} a gagné. Pensez aussi au cas où les deux joueurs sont alignés en même temps, prévu par l'énoncé.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Le décompte des pions se fait par une double boucle, sans fonction linéaire interne.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Le score est orienté vers le joueur 1. En cas de double alignement, l'énoncé fait gagner le joueur dont ce n'était pas le tour. Dans \texttt{alphabeta}, \texttt{joueur} est le joueur dont c'est le tour : le dernier coup a été joué par son adversaire, et c'est donc \texttt{joueur} qui gagne.
+
+\begin{lstlisting}[language=Python]
+def evaluation(jeu, joueur, profondeur):
+    g1 = gagnant(jeu, 1)
+    g2 = gagnant(jeu, 2)
+    if g1 and g2:                  # double alignement : gagne le joueur dont c'est le tour
+        if joueur == 1:
+            return 100 + profondeur
+        return -100 - profondeur
+    if g1:
+        return 100 + profondeur
+    if g2:
+        return -100 - profondeur
+    val = 5 * alignement_4(jeu, joueur) + profondeur
+    if jeu[2][2] == joueur:
+        val = val + 20
+    for i in range(5):
+        for j in range(5):
+            if jeu[i][j] == joueur:
+                val = val + 1
+            elif jeu[i][j] != 0:
+                val = val - 1
+    if joueur == 1:
+        return val
+    return -val
+\end{lstlisting}
+
+\textbf{Contrôle sur la figure 3}, avec une profondeur de 3. Personne n'a gagné.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Joueur 1} : la ligne 2 est un alignement de 4 (\(+5\)), il a le centre (\(+20\)), et 10 X contre 13 O donnent \(-3\). Avec la profondeur, on obtient \(25\).
+\item
+  \textbf{Joueur 2} : la ligne 4 et la colonne 4 donnent \(+10\), il n'a pas le centre, et les pions donnent \(+3\). Avec la profondeur, on obtient \(16\), et la fonction renvoie \(-16\).
+\end{itemize}
+
+Le terme \(+\)profondeur favorise les victoires rapides : une victoire trouvée plus tôt dans la recherche laisse une profondeur restante plus grande.
+
+\begin{jury}
+
+Rapport 2026 sur Q17 : « Question peu traitée. » La traduire fidèlement règle par règle rapporte des points que beaucoup laissent.
+
+\end{jury}
+
+\begin{piege}
+
+Trois oublis possibles : le \texttt{return} immédiat du cas gagnant (sinon on ajoute des bonus à 100), le signe final pour le joueur 2, et l'exclusion des cases neutres dans le décompte (\texttt{elif\ jeu{[}i{]}\allowbreak{}{[}j{]}\allowbreak{}\ !=\allowbreak{}\ 0}).
+
+\end{piege}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Explorez en profondeur, de gauche à droite, en transmettant aux fils l'intervalle \([\alpha,\beta]\) des valeurs encore utiles.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Coupez dans un nœud MAX dès que sa valeur partielle atteint \(\beta\), et dans un nœud MIN dès qu'elle descend à \(\alpha\). Qu'écrire alors dans le nœud coupé ?
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\textbf{Méthode.} \(\alpha\) est la meilleure valeur déjà garantie à MAX et \(\beta\) la meilleure déjà garantie à MIN. Les deux bornes descendent vers les fils et se resserrent.
+
+\begin{itemize}
+\tightlist
+\item
+  Dans un nœud MAX : si \(v\ge\beta\), \textbf{coupure \(\beta\)}, et le nœud porte « \(\ge v\) ».
+\item
+  Dans un nœud MIN : si \(v\le\alpha\), \textbf{coupure \(\alpha\)}, et le nœud porte « \(\le v\) ».
+\end{itemize}
+
+Sur le cahier, on barre les branches coupées comme sur la figure 4.
+
+\textbf{Exemple illustratif} (arbre de Q13). Les branches non calculées sont en pointillé gris.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q18-arbre-alphabeta.pdf}
+\caption*{Figure 4 --- Élagage alpha-bêta sur le même arbre, exploré de gauche à
+droite : 4 coupures, 10 feuilles évaluées sur 16}
+\end{figure}
+
+Les quatre coupures, dans l'ordre de l'exploration :
+
+\begin{itemize}
+\tightlist
+\item
+  sous le deuxième MIN de gauche, la feuille 2 donne \(v=2\le\alpha=2\) : coupure \(\alpha\), la feuille 4 n'est pas lue ;
+\item
+  le MAX suivant atteint \(3\ge\beta=2\) : coupure \(\beta\), son second fils n'est pas calculé ;
+\item
+  dans la moitié droite, la feuille 6 donne \(v=6\le\alpha=6\) : coupure \(\alpha\) (feuille 5) ;
+\item
+  le dernier MAX atteint \(7\ge\beta=6\) : coupure \(\beta\) (feuilles 8 et 14).
+\end{itemize}
+
+On retrouve la même valeur 6 à la racine, avec 4 coupures et 10 feuilles évaluées sur 16.
+
+\begin{piege}
+
+Un nœud coupé ne porte qu'une \textbf{borne}, qui peut différer de sa vraie valeur minimax. Ici, le nœud « \(\le 6\) » vaut en réalité 5, et le nœud « \(\ge 7\) » vaut 8. N'y écrivez pas la vraie valeur : vous ne l'avez pas calculée.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 sur Q18 : « Question peu traitée. » L'énoncé explique pourtant les deux coupures sur la figure 4 : il suffit d'appliquer ce mécanisme.
+
+\end{jury}
+
+\begin{methode}
+
+L'efficacité de l'élagage dépend de l'ordre d'exploration. Si les meilleurs coups sont examinés en premier, on coupe davantage.
+
+\end{methode}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Ligne 3 : qu'est-ce qu'une feuille dans ce jeu, et quand la profondeur est-elle atteinte ? Ligne 4 : quelle fonction donne l'heuristique ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lignes 12 et 13 : sur quel plateau joue-t-on le coup ? Quel joueur et quelle profondeur passe-t-on à l'appel récursif, sachant que la ligne 6 a déjà décrémenté ?
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\begin{lstlisting}[language=Python]
+    if profondeur == 0 or gagnant(jeu, 1) or gagnant(jeu, 2):     # ligne 3
+        eval = evaluation(jeu, joueur, profondeur)                 # ligne 4
+        return eval, None
+
+            deplacement_case(jeu_c, depl[0], depl[1], depl[2], depl[3], joueur)   # ligne 12
+            v = max(v, alphabeta(jeu_c, 2, alpha, beta, profondeur)[0])         # ligne 13
+\end{lstlisting}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Ligne 3.} Une feuille est une position où la partie est finie, c'est-à-dire où un des deux joueurs est aligné. Une partie non finie offre toujours au moins 4 coups (Q12). La profondeur est atteinte quand elle vaut 0, qui correspond à une évaluation directe.
+\item
+  \textbf{Ligne 12.} Le coup s'applique à la copie profonde \texttt{jeu\_c}, sinon les coups suivants de la boucle partiraient d'un plateau modifié. L'ordre des arguments est celui de la reconstruction de Q8.
+\item
+  \textbf{Ligne 13.} On passe \texttt{jeu\_c}, l'adversaire (joueur 2, puisque ce bloc est celui du joueur 1, et on peut écrire \texttt{3\ -\ joueur}) et \texttt{profondeur} sans nouveau décrément. Le \texttt{{[}0{]}} extrait la valeur du couple renvoyé.
+\end{itemize}
+
+Le nom \texttt{eval} est imposé par la ligne 5 de l'ébauche, même s'il masque une fonction interne de Python.
+
+\begin{piege}
+
+Transmettre \texttt{profondeur\ -\ 1} décrémente deux fois par niveau. Oublier de changer de joueur empile des nœuds MAX. Jouer le coup sur \texttt{jeu} au lieu de \texttt{jeu\_c} fausse tous les frères.
+
+\end{piege}
+
+\hypertarget{partie-4-gestion-dune-base-de-donnuxe9es}{%
+\section{Partie 4 --- Gestion d'une base de données}\label{partie-4-gestion-dune-base-de-donnuxe9es}}
+
+La table \texttt{Partie} a trois clés étrangères vers \texttt{Joueur.id}. Toute requête qui a besoin des deux joueurs d'une partie doit donc joindre \texttt{Joueur} deux fois.
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Une seule jointure suffit. Sur quelle clé étrangère porte-t-elle pour traduire « il a commencé la partie » ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+« John Doe » se répartit entre deux attributs.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\begin{lstlisting}[language=SQL]
+SELECT COUNT(*) AS nb_parties, AVG(P.nbtours) AS moyenne_tours
+FROM Partie AS P
+JOIN Joueur AS J ON P.id_joueur1 = J.id
+WHERE J.prenom = 'John' AND J.nom = 'Doe';
+\end{lstlisting}
+
+Il ne faut pas de \texttt{GROUP\ BY} : après le filtre, l'agrégat porte sur les seules parties où John Doe est joueur 1.
+
+\begin{piege}
+
+Joindre aussi sur \texttt{id\_joueur2}, ou utiliser \texttt{OR}, compterait les parties où il joue en second.
+
+\end{piege}
+
+\begin{piege}
+
+Le rapport 2026 relève une confusion entre \texttt{WHERE} et \texttt{HAVING} et sur l'usage de \texttt{LIKE}. Le filtre porte sur des attributs de lignes, avant agrégation : c'est un \texttt{WHERE}. \texttt{HAVING} filtre des groupes après un \texttt{GROUP\ BY}. Une égalité exacte suffit, \texttt{LIKE} sert aux motifs.
+
+\end{piege}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Deux joueurs par partie : il faut deux exemplaires de \texttt{Joueur}, sous deux alias.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un agrégat ne peut pas figurer dans \texttt{WHERE}. Comment obtenir le minimum de \texttt{nbtours} pour le comparer ?
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\begin{lstlisting}[language=SQL]
+SELECT P.nbtours, J1.nom, J1.prenom, J2.nom, J2.prenom
+FROM Partie AS P
+JOIN Joueur AS J1 ON P.id_joueur1 = J1.id
+JOIN Joueur AS J2 ON P.id_joueur2 = J2.id
+WHERE P.nbtours = (SELECT MIN(nbtours) FROM Partie);
+\end{lstlisting}
+
+La sous-requête calcule le minimum sur toute la table. Comme la partie minimale est unique, la requête renvoie une seule ligne.
+
+\begin{piege}
+
+\texttt{WHERE\ nbtours\ =\allowbreak{}\ MIN(\allowbreak{}nbtours)\allowbreak{}} est illégal. Sans alias, les colonnes \texttt{nom} et \texttt{prenom} sont ambiguës. Enfin, la projection doit inclure \texttt{nbtours}, qui est demandé.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « l'attribut id de la table Joueur doit être égal à l'attribut id\_joueur1 ou id\_joueur2 de la table Partie ». Le jury relève aussi \texttt{attribut.table} au lieu de \texttt{table.attribut}, \texttt{SELECT\ a\ AND\ b} au lieu de \texttt{SELECT\ a,b}, et une confusion entre \texttt{JOIN} et \texttt{UNION}. Il demande de réfléchir à l'utilité du renommage d'une table : ici, les deux alias \texttt{J1} et \texttt{J2} sont indispensables, puisque \texttt{Joueur} apparaît deux fois.
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Établir une fois pour toutes un \textbf{lemme sur les règles} (ici, les destinations d'un cube), puis s'en servir partout : Q4, Q7, Q12, Q14 et Q15 en découlent.
+\item
+  \textbf{Variant de boucle} : le nommer, puis vérifier qu'il est entier, minoré et strictement décroissant.
+\item
+  \textbf{Balayage à compteur avec remise à zéro} pour détecter des blocs consécutifs en un seul passage (Q10), justifié par un invariant.
+\item
+  \textbf{Coût d'une recherche dans un arbre de jeu} : un produit de facteurs de branchement, \(b^p\), d'où la nécessité de l'heuristique et de l'élagage.
+\item
+  \textbf{Minimax et alpha-bêta à la main} : remonter niveau par niveau, transmettre \([\alpha,\beta]\), écrire des bornes dans les nœuds coupés.
+\item
+  \textbf{SQL} : une jointure par rôle quand une table est référencée plusieurs fois, et une sous-requête pour comparer à un agrégat.
+\end{itemize}
+
+\textbf{Questions discriminantes (rapport 2026).} Q12 (les deux parties), Q17 et Q18 ont fait la différence. Le jury insiste aussi sur la manipulation des booléens (parenthèses, lois de De Morgan, renvoi direct d'une condition) et sur les fonctions qui doivent renvoyer une valeur dans tous les cas.
+
+\textbf{Prérequis à revoir.} Copie superficielle des listes, priorité et paresse de \texttt{and}/\texttt{or}, logarithme en base 2 et nombre de bits, décalage d'un tableau en place, jointures et agrégats SQL.
+
+\textbf{Questions transposables.} L'initialisation d'une grille, le test d'appartenance au bord, la détection d'alignements (puissance 4, morpion), le nombre de bits d'un codage, le minimax sur un arbre donné, la complétion d'un alpha-bêta et la double jointure sur une table de joueurs reviennent régulièrement dans les sujets de jeux à deux joueurs de l'informatique commune.
+
+\end{document}

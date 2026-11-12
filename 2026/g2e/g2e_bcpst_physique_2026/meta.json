@@ -1,0 +1,38 @@
+{
+  "slug": "g2e_bcpst_physique_2026",
+  "epreuve": {
+    "concours": "G2E",
+    "filiere": "BCPST",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 51,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-soupape-forces.svg",
+      "question": "Q3",
+      "legende": "Bilan des forces verticales sur la soupape au décollage : force pressante intérieure vers le haut, force pressante atmosphérique et poids vers le bas"
+    },
+    {
+      "fichier": "figures/q19-courbe-temperature.svg",
+      "question": "Q19",
+      "legende": "Allure de T(t) : départ en Ti, asymptote T = Tf, tangente à l'origine coupant l'asymptote en t = τth"
+    },
+    {
+      "fichier": "figures/q29-profil-parabolique.svg",
+      "question": "Q29",
+      "legende": "Profil stationnaire pour −e ≤ x ≤ e : parabole paire, maximale au centre avec tangente horizontale, égale à T(e) sur les deux faces"
+    },
+    {
+      "fichier": "figures/q46-snell-descartes.svg",
+      "question": "Q46",
+      "legende": "Lois de Snell-Descartes en I : réflexion (i1′ = i1) et réfraction (n1 sin i1 = n2 sin i2), angles comptés depuis la normale"
+    },
+    {
+      "fichier": "figures/q47-refractometre-pulfrich.svg",
+      "question": "Q47",
+      "legende": "Marche du rayon rasant dans le réfractomètre de Pulfrich : α en I, β en J, θ par rapport à la direction incidente (tracé pour l'eau)"
+    }
+  ]
+}

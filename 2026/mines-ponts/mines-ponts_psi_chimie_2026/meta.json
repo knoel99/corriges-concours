@@ -1,0 +1,43 @@
+{
+  "slug": "mines-ponts_psi_chimie_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PSI",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 26,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-montage-electro-fenton.svg",
+      "question": "Q3",
+      "legende": "Dispositif électro-Fenton complété : générateur (borne + vers l'anode), ampèremètre en série, sens des électrons et du courant i"
+    },
+    {
+      "fichier": "figures/q4-montage-trois-electrodes.svg",
+      "question": "Q4",
+      "legende": "Montage à trois électrodes : générateur réglable et ampèremètre entre électrode de travail et contre-électrode, voltmètre entre électrode de travail et électrode de référence"
+    },
+    {
+      "fichier": "figures/q5-courbe-intensite-potentiel.svg",
+      "question": "Q5",
+      "legende": "Allure de la courbe intensité-potentiel annotée, axe des potentiels non à l'échelle, i positif en oxydation"
+    },
+    {
+      "fichier": "figures/q8-lewis-sulfate-ammonium-peroxyde.svg",
+      "question": "Q8",
+      "legende": "Schémas de Lewis de l'ion sulfate (octet, charges formelles), de l'ion ammonium et du peroxyde d'hydrogène"
+    },
+    {
+      "fichier": "figures/q18-maille-cfc.svg",
+      "question": "Q18",
+      "legende": "Maille conventionnelle CFC du platine : 8 atomes aux sommets comptés 1/8, 6 aux centres des faces comptés 1/2"
+    },
+    {
+      "fichier": "figures/q19-contact-diagonale-face.svg",
+      "question": "Q19",
+      "legende": "Face de la maille CFC : contact des atomes le long de la diagonale, a√2 = 4R"
+    }
+  ]
+}

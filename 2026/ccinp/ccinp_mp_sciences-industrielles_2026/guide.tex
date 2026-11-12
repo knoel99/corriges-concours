@@ -1,0 +1,2114 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP MP — Sciences industrielles 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP MP}
+\fancyhead[R]{\small Sciences industrielles 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP MP — Sciences industrielles 2026\par}\medskip
+  {\large CCINP · MP · Sciences industrielles · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Support.} Bering est un robot autonome de traçage au sol (terrains de sport, signalisation routière). Il a deux roues motrices arrière, actionnées chacune par un servomoteur, et une ou deux roues folles à l'avant. Un GPS corrigé et une centrale inertielle permettent d'asservir son mouvement. Le fil directeur est la \textbf{validation d'exigences} du diagramme de la figure 18 : non-basculement (1.1.1), asservissement du lacet (1.1.3.2 et ses quatre exigences filles), respect des normes de tracé (1.2.2), optimisation du parcours (1.2.3).
+
+\textbf{Conditions.} 4 h, calculatrice interdite, cinq parties annoncées indépendantes. Le Document Réponse (16 pages) est seul rendu. Il n'est pas reproduit dans nos sources : pour les questions qui s'y appuient, ce corrigé reconstruit le document à partir de l'énoncé et le signale.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1140}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5304}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1396}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1861}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Durée indicative
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I & Cinématique : roulement sans glissement, consignes de vitesse des roues en ligne droite, en arc de cercle, en pivotement sur place & Q1--Q9 & 30 min \\
+II & Centre d'inertie, matrice d'inertie, Huygens ; résultante et moment dynamiques en virage ; basculement, lecture d'abaque & Q10--Q20 & 50 min \\
+III & Moteur à courant continu, inertie équivalente, schéma-bloc du lacet, correcteur à avance de phase, validation des exigences & Q21--Q33 & 1 h 20 \\
+IV & Diagrammes d'états pour le tracé d'un coin sans recouvrement & Q34--Q36 & 25 min \\
+V & Python : lecture de fichier, dictionnaire, algorithme glouton du plus proche voisin, mutabilité & Q37--Q46 & 35 min \\
+\end{longtable}
+
+\textbf{Notions mobilisées.} Torseur cinématique d'une liaison pivot, composition des vitesses, roulement sans glissement ; dérivation vectorielle en base mobile ; barycentre, symétries matérielles, matrice d'inertie, théorème de Huygens ; théorèmes de la résultante et du moment dynamiques ; transformée de Laplace, schéma-bloc, formes canoniques, inertie équivalente par l'énergie cinétique ; diagrammes de Bode, marges, réponse d'un second ordre, correcteur à avance de phase ; diagrammes d'états SysML ; Python (fichiers, dictionnaires, copies).
+
+\textbf{Difficulté.} Sujet de longueur raisonnable pour 4 h, très guidé : la partie II donne même les expressions de \(Z_2\), \(Z_3\), \(Z_4\), et la partie III recale \(H_{BO}\) avant le réglage du correcteur. Les difficultés réelles sont les signes de la partie I, le moment dynamique avec produit d'inertie (Q16), le raisonnement sur l'axe de basculement (Q19), la lecture fine du schéma-bloc de la figure 12 (Q22) et le réglage chiffré du correcteur sans calculatrice (Q32--Q33).
+
+\textbf{Ce qu'en dit le rapport 2026.} La moyenne est de 9,93/20, avec un écart-type de 3,29. Le jury juge l'épreuve « plutôt classique avec une longueur assez raisonnable », mais relève des résultats de cours « parfois mal maîtrisés ou mal appliqués ». Il insiste sur trois défauts : la rétro-analyse (partir du résultat donné à la question suivante, surtout pour le signe d'un produit vectoriel), l'oubli du poids dans le principe fondamental de la dynamique, et des lacunes de base en informatique (distance euclidienne, dictionnaires). La partie IV n'a été traitée que par la moitié environ des candidats, qui l'ont en général bien réussie.
+
+\textbf{Questions discriminantes} d'après le rapport : Q22 (\(H_{pert}\) « rarement correctement réalisée »), Q23 (« très peu traitée »), Q31 (« Très souvent mal traitée »), Q32 (borne due à la rapidité), Q40, Q42 (« quasiment jamais juste ») et Q45 (« rarement juste »). Ce sont aussi les questions où une réponse juste et justifiée rapporte le plus par rapport à la moyenne.
+
+\textbf{Questions à ne pas laisser passer.} Q1--Q9, Q10, Q12, Q17, Q21, Q25--Q27, Q30, Q34--Q36, Q37--Q39, Q43--Q44 : du cours appliqué, rapide et rentable.
+
+\textbf{Gestion du temps.} Les parties étant indépendantes, on peut commencer par la partie V (courte et sûre) ou la partie I. La partie III est la plus longue et la plus dense en points : ne pas la laisser pour la dernière demi-heure. Le jury regrette que des candidats bloqués ne passent pas au bloc de questions suivant : il n'y a pas d'impasse à faire sur une partie entière.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-i-uxe9tude-du-duxe9placement-de-bering}{%
+\section{Partie I --- Étude du déplacement de Bering}\label{partie-i-uxe9tude-du-duxe9placement-de-bering}}
+
+On établit la loi entrée-sortie cinématique du robot : quelles vitesses de roues imposer pour obtenir une vitesse \(V\) du point \(P\) et une vitesse de lacet \(\omega_{10}\). Outils : torseur d'une liaison pivot, formule de changement de point, composition des mouvements, roulement sans glissement.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Quelle est la forme du torseur cinématique d'une liaison pivot, et en quels points son moment est-il nul ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifier que \(C_d\) et \(C_g\) appartiennent à l'axe \((P,\vec y_1)\).
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Chaque roue est en liaison pivot d'axe \((P,\vec y_1)\) avec le châssis. Le torseur d'une pivot a pour résultante le vecteur rotation, porté par l'axe, et un moment (vitesse) nul en tout point de l'axe.
+
+Or \(\overrightarrow{PC_d} = -a\vec y_1\) et \(\overrightarrow{PC_g} = a\vec y_1\) : les deux centres sont sur l'axe. Résultante en haut, moment en bas, point de réduction en indice :
+
+\equationajustee{\boxed{\{\mathcal V_{2/1}\} = \left\{\begin{matrix}\omega_{21}\,\vec y_1\\ \vec 0\end{matrix}\right\}_{C_d}}}
+
+\equationajustee{\boxed{\{\mathcal V_{3/1}\} = \left\{\begin{matrix}\omega_{31}\,\vec y_1\\ \vec 0\end{matrix}\right\}_{C_g}}}
+
+\begin{piege}
+
+Les bases \(\mathcal B_2\) et \(\mathcal B_3\) partagent \(\vec y_1\) avec \(\mathcal B_1\) : la rotation se fait autour de ce vecteur commun. Ne pas permuter résultante et moment.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève l'« Oubli sur l'écriture du point d'application et inversion résultante/moment. » Un torseur sans point de réduction est incomplet.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Décomposer \(\vec V_{I_d\in 2/0}\) par composition des mouvements en passant par le châssis 1.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chaque terme, partir du point où le torseur est connu (\(C_d\) pour 2/1, \(P\) pour 1/0) et transporter le moment jusqu'à \(I_d\). Écrire soigneusement \(\overrightarrow{I_dP}\) à partir des données \(\overrightarrow{I_dC_d}\) et \(\overrightarrow{PC_d}\).
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+On décompose : \(\vec V_{I_d\in 2/0} = \vec V_{I_d\in 2/1} + \vec V_{I_d\in 1/0}\).
+
+Mouvement 2/1, depuis \(C_d\) :
+
+\equationajustee{\begin{aligned}
+\vec V_{I_d\in 2/1} &= \vec V_{C_d\in 2/1} + \overrightarrow{I_dC_d}\wedge\vec\Omega_{2/1}\\
+&= \vec 0 + r\vec z_1\wedge\omega_{21}\vec y_1\\
+&= -r\,\omega_{21}\,\vec x_1
+\end{aligned}}
+
+Mouvement 1/0, depuis \(P\) : \(\overrightarrow{I_dP} = r\vec z_1 + a\vec y_1\) et \(\vec\Omega_{1/0} = \omega_{10}\vec z_0 = \omega_{10}\vec z_1\).
+
+\equationajustee{\begin{aligned}
+\vec V_{I_d\in 1/0} &= V\vec x_1 + (r\vec z_1 + a\vec y_1)\wedge\omega_{10}\vec z_1\\
+&= (V + a\,\omega_{10})\,\vec x_1
+\end{aligned}}
+
+\equationajustee{\boxed{\vec V_{I_d\in 2/0} = \left(V + a\,\omega_{10} - r\,\omega_{21}\right)\vec x_1}}
+
+\begin{methode}
+
+Formule de changement de point : \(\vec V_{A} = \vec V_{B} + \overrightarrow{AB}\wedge\vec\Omega\). Retenir l'ordre \(\overrightarrow{AB}\wedge\vec\Omega\) (ou \(\vec\Omega\wedge\overrightarrow{BA}\)) pour ne pas se tromper de signe.
+
+\end{methode}
+
+\begin{piege}
+
+Une erreur de signe sur \(\overrightarrow{I_dP}\) change le signe de \(a\,\omega_{10}\) et fausse toute la partie. Le résultat de Q3 sert de contrôle a posteriori, pas de guide : on calcule d'abord, on compare ensuite.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale la « Rétro-analyse en utilisant la réponse donnée en Q3., erreur courante sur le calcul du produit vectoriel. » Il note aussi que « Certains candidats passent, péniblement, par la dérivation du vecteur position. » La formule de changement de point est ici la voie directe.
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Que signifie, en termes de vitesse, le roulement sans glissement d'une roue sur le sol en un point de contact ?
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+L'énoncé suppose que la roue 2 roule sans glisser en \(I_d\) : la vitesse de glissement \(\vec V_{I_d\in 2/0}\) est nulle. Avec Q2, \(V + a\,\omega_{10} - r\,\omega_{21} = 0\), et comme \(r \neq 0\) :
+
+\equationajustee{\boxed{\omega_{21} = \frac{V + a\,\omega_{10}}{r}}}
+
+\begin{piege}
+
+Dire que « le point \(I_d\) est fixe » est faux : le point géométrique de contact se déplace sur le sol. C'est le point de la roue qui coïncide avec lui qui a une vitesse nulle par rapport au sol.
+
+\end{piege}
+
+\begin{jury}
+
+Pour une question dont le résultat est donné, le rapport 2026 précise qu'« une attention particulière est apportée sur la justification et l'application rigoureuse de la méthode ». Il faut nommer l'hypothèse (roulement sans glissement en \(I_d\)) et écrire sa traduction (\(\vec V_{I_d\in 2/0} = \vec 0\)).
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Reprendre Q2--Q3 en remplaçant \(C_d\) par \(C_g\) : seul le vecteur \(\overrightarrow{PC_g}\) change de signe.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Ici \(\overrightarrow{I_gP} = r\vec z_1 - a\vec y_1\). On obtient \(\vec V_{I_g\in 1/0} = (V - a\,\omega_{10})\vec x_1\) et \(\vec V_{I_g\in 3/1} = -r\,\omega_{31}\vec x_1\). Le roulement sans glissement en \(I_g\) donne
+
+\equationajustee{\boxed{\omega_{31} = \frac{V - a\,\omega_{10}}{r}}}
+
+\begin{methode}
+
+Contrôle utile : \(\omega_{21} - \omega_{31} = 2a\,\omega_{10}/r\). La différence des vitesses des roues commande la vitesse de lacet ; c'est le principe de la commande différentielle de la partie III.
+
+\end{methode}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+En ligne droite, comment évolue l'orientation du châssis ? Que vaut alors \(\omega_{10}\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un torseur cinématique de résultante nulle caractérise un type de mouvement bien précis.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+En ligne droite, \(\theta_{10}\) est constant, donc \(\omega_{10} = 0\) : la direction \(\vec x_1\) est fixe dans \(\mathcal R_0\).
+
+La trajectoire de \(P\) est une droite. Le mouvement de 1/0 est une \textbf{translation rectiligne} de direction \(\vec x_1\) (uniforme si \(V\) est constante). Le torseur est un couple, le même en tout point :
+
+\equationajustee{\boxed{\{\mathcal V_{1/0}\} = \left\{\begin{matrix}\vec 0\\ V\vec x_1\end{matrix}\right\}_{\forall M}}}
+
+\begin{piege}
+
+« Ligne droite » décrit la trajectoire d'un point ; « translation rectiligne » décrit le mouvement du solide. Il faut nommer le mouvement et en donner la direction.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève une « Confusion entre trajectoire et mouvement. » et l'« Oubli des caractéristiques du mouvement (direction, axes, etc.). »
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Reporter la valeur de \(\omega_{10}\) trouvée en Q5 dans les résultats de Q3 et Q4.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\equationajustee{\boxed{\omega_{21} = \omega_{31} = \frac{V}{r}}}
+
+Deux roues identiques à la même vitesse : trajectoire rectiligne, comme attendu.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+\(P\) décrit un cercle de centre \(O\) fixe. Dériver \(\overrightarrow{OP}\) par rapport au temps dans \(\mathcal R_0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(\vec y_1\) tourne avec le châssis : sa dérivée dans \(\mathcal R_0\) s'obtient par \(\vec\Omega_{1/0}\wedge\vec y_1\).
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\equationajustee{\begin{aligned}
+\vec V_{P\in 1/0} &= R\left.\frac{d\vec y_1}{dt}\right|_{\mathcal R_0}\\
+&= R\,\omega_{10}\vec z_1\wedge\vec y_1\\
+&= -R\,\omega_{10}\,\vec x_1
+\end{aligned}}
+
+En identifiant avec \(V\vec x_1\) :
+
+\equationajustee{\boxed{V = -R\,\omega_{10}}}
+
+soit \(|V| = R|\omega_{10}|\), relation rappelée en partie II. Comme \(\overrightarrow{OP} = +R\vec y_1\), le centre du virage est du côté \(-\vec y_1\), celui de la roue droite 2. En marche avant, le robot tourne donc à droite et \(\omega_{10} < 0\), ce que confirme la figure 4.
+
+\begin{piege}
+
+Écrire \(V = R\,\omega_{10}\) sans discuter l'orientation conduit en Q8 à une roue intérieure plus rapide que la roue extérieure, ce qui est physiquement absurde.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Substituer la relation de Q7 dans Q3 et Q4, puis vérifier le résultat par trois contrôles : homogénéité, limite \(R\to\infty\), roue la plus rapide.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Avec \(\omega_{10} = -V/R\) :
+
+\equationajustee{\boxed{\omega_{21} = \frac{V}{r}\left(1 - \frac{a}{R}\right)}}
+
+\equationajustee{\boxed{\omega_{31} = \frac{V}{r}\left(1 + \frac{a}{R}\right)}}
+
+Le rapport \(a/R\) est sans dimension, et \(R\to\infty\) redonne Q6. La roue 2, intérieure, est plus lente. Si \(R = a\), la roue 2 est immobile (pivotement autour de \(C_d\)).
+
+\begin{methode}
+
+Les trois contrôles (dimension, cas limite, sens physique) coûtent deux lignes et sécurisent une question de signes.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 rappelle que « Le résultat doit faire intervenir les paramètres et variables précisés dans la question. » Ici \(V\), \(R\), \(r\) et \(a\) seulement : \(\omega_{10}\) doit avoir disparu.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+« Sans modification de la position du point \(P\) » : que vaut \(V\) ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\(V = 0\) et \(\omega_{10} \neq 0\), d'où
+
+\equationajustee{\boxed{\omega_{21} = \frac{a\,\omega_{10}}{r}}}
+
+\equationajustee{\boxed{\omega_{31} = -\frac{a\,\omega_{10}}{r}}}
+
+\equationajustee{\boxed{\frac{\omega_{21}}{\omega_{31}} = -1}}
+
+Les roues tournent à la même vitesse en sens opposés. Le rapport a un sens car \(\omega_{31} \neq 0\) (\(a\), \(r\), \(\omega_{10}\) non nuls). C'est ce pivotement autour du point de peinture \(P\) qu'utilise la partie IV.
+
+\begin{piege}
+
+Il n'y a aucun engrenage ici : le « rapport » demandé est un rapport de vitesses angulaires, tiré de Q3 et Q4 avec \(V = 0\). Le rapport 2026 cite des candidats qui « répondent par un rapport de nombre de dents » ; d'autres partent à tort du résultat de Q8, établi pour un virage de rayon \(R\).
+
+\end{piege}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-ii-uxe9tude-du-basculement-du-robot-dans-un-virage}{%
+\section{Partie II --- Étude du basculement du robot dans un virage}\label{partie-ii-uxe9tude-du-basculement-du-robot-dans-un-virage}}
+
+On construit un modèle inertiel simplifié, on calcule le torseur dynamique du robot en virage uniforme, puis on cherche quelle roue décolle et à quelle vitesse. Outils : symétries, barycentre, Huygens, dérivation en base mobile, théorèmes généraux.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Chercher un plan de symétrie matérielle de l'ensemble des quatre solides modélisés.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Le plan \((P,\vec x_1,\vec z_1)\) est plan de symétrie matérielle. Le châssis et le réservoir, homogènes, sont symétriques par rapport à lui ; les deux stators, identiques, sont symétriques l'un de l'autre. Le centre d'inertie appartient à tout plan de symétrie matérielle, donc \(\boxed{y_G = 0}\).
+
+\begin{piege}
+
+Le résultat est donné : la question vaut par la justification. Il faut nommer un \textbf{plan} (pas un axe) de symétrie \textbf{matérielle} (masses comprises, pas seulement la géométrie) et vérifier la symétrie de chaque solide, stators compris.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note une « Justification parfois confuse (axe/plan de symétrie géométrique). »
+
+\end{jury}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Barycentre des centres d'inertie des quatre solides. Il faut d'abord placer chacun d'eux sur la figure 5 dans le repère d'origine \(P\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lire les appuis : axe des stators passant par \(P\), châssis posé sur les stators, réservoir posé sur le châssis, faces arrière du châssis et du réservoir à l'aplomb de \(P\) sur la vue de côté.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+Solide & Masse & \(x\) & \(z\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+stators M1 et M2 & \(m_M\) chacun & \(0\) & \(0\) \\
+châssis C & \(m_C\) & \(a_C/2\) & \(d_M/2 + c_C/2\) \\
+réservoir R & \(m_R\) & \(a_R/2\) & \(d_M/2 + c_C + c_R/2\) \\
+\end{longtable}
+
+Avec la masse totale \(m_1 = 2m_M + m_C + m_R\) :
+
+\equationajustee{\boxed{x_G = \frac{m_C\,a_C + m_R\,a_R}{2\,(2m_M + m_C + m_R)}}}
+
+\equationajustee{\boxed{z_G = \frac{m_C\,(d_M + c_C) + m_R\,(d_M + 2c_C + c_R)}{2\,(2m_M + m_C + m_R)}}}
+
+Contrôle : avec \(m_M = m_R = 0\), on retrouve le centre du seul châssis.
+
+\begin{piege}
+
+Trois oublis fréquents : les stators comptent au dénominateur mais pas aux numérateurs ; le châssis est décalé de \(d_M/2\) par l'épaisseur des stators ; le réservoir est au-dessus de toute la hauteur \(c_C\) du châssis.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale l'« Oubli fréquent de la masse totale. » Le dénominateur est \(m_1\), avec les \textbf{deux} stators.
+
+\end{jury}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+La matrice fournie est écrite pour un cylindre d'axe \(\vec z\) ; ici l'axe de révolution est \(\vec y_1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention : la figure donne un diamètre, la formule un rayon.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+Rayon \(d_M/2\), hauteur \(h_M\), axe \(\vec y_1\) ; la symétrie de révolution rend \(\mathcal B_1\) principale :
+
+\equationajustee{\boxed{I(G_{M1}, M1) = \begin{pmatrix} m_M\left(\dfrac{d_M^2}{16} + \dfrac{h_M^2}{12}\right) & 0 & 0\\ 0 & \dfrac{m_M\,d_M^2}{8} & 0\\ 0 & 0 & m_M\left(\dfrac{d_M^2}{16} + \dfrac{h_M^2}{12}\right)\end{pmatrix}_{\mathcal B_1}}}
+
+\begin{piege}
+
+Recopier la matrice telle quelle place le moment axial \(m R^2/2\) sur \(\vec z_1\) au lieu de \(\vec y_1\). Le rapport 2026 parle d'une « Mauvaise prise en compte du repère du cylindre. »
+
+\end{piege}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Relation de Chasles par \(P\). Où se trouve la section extrême du stator M1 selon \(\vec y_1\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'énoncé dit que les sections extrêmes des stators coïncident avec les faces du châssis de normale \(\vec y_1\). Le centre du cylindre est à mi-hauteur.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+M1 est du côté \(+\vec y_1\) (vue de derrière). Sa face extrême est en \(y = b_C/2\), et son centre en \(y = (b_C - h_M)/2\), sur l'axe (\(x = z = 0\)). Avec \(\overrightarrow{GP} = -x_G\vec x_1 - z_G\vec z_1\) :
+
+\equationajustee{\boxed{\overrightarrow{GG_{M1}} = -x_G\,\vec x_1 + \frac{b_C - h_M}{2}\,\vec y_1 - z_G\,\vec z_1}}
+
+\begin{methode}
+
+La liste des variables imposée par l'énoncé (\(x_G\), \(z_G\), \(b_C\), \(h_M\)) est un indice sur la géométrie à lire.
+
+\end{methode}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Transport d'un moment d'inertie entre deux axes parallèles : théorème de Huygens.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La distance entre les axes \((G,\vec x_1)\) et \((G_{M1},\vec x_1)\) ne fait intervenir que les composantes de \(\overrightarrow{GG_{M1}}\) orthogonales à \(\vec x_1\).
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+On transporte le seul terme demandé :
+
+\equationajustee{I_{Gx_1} = I_{G_{M1}x_1} + m_M\,d^2}
+
+avec \(d^2 = \left(\frac{b_C - h_M}{2}\right)^2 + z_G^2\). D'où
+
+\equationajustee{\boxed{I_{Gx_1} = m_M\left[\frac{d_M^2}{16} + \frac{h_M^2}{12} + \left(\frac{b_C - h_M}{2}\right)^2 + z_G^2\right]}}
+
+\begin{piege}
+
+\(x_G\) n'apparaît pas : la composante selon l'axe ne change pas la distance à l'axe. On additionne des carrés de distances, pas des distances.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note que « la matrice de Huyghens n'est très souvent pas bien écrite », et que « Certains calculent tous les termes de la matrice, le sujet n'en demandait qu'un seul. » Un seul moment d'inertie est demandé : inutile de transporter toute la matrice.
+
+\end{jury}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+La résultante dynamique vaut \(m_1\,\vec a_{G,1/0}\). Exprimer \(\overrightarrow{OG}\) dans \(\mathcal B_1\) et dériver deux fois.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Seuls les vecteurs \(\vec x_1\) et \(\vec y_1\) varient ; \(R\), \(x_G\), \(z_G\) et \(\omega_{10}\) sont constants.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+On écrit \(\overrightarrow{OG} = R\vec y_1 + x_G\vec x_1 + z_G\vec z_1\). Les dérivées des vecteurs de base dans \(\mathcal R_0\) sont
+
+\equationajustee{\left.\frac{d\vec x_1}{dt}\right|_0 = \omega_{10}\,\vec y_1}
+
+\equationajustee{\left.\frac{d\vec y_1}{dt}\right|_0 = -\omega_{10}\,\vec x_1}
+
+D'où, en dérivant deux fois :
+
+\equationajustee{\begin{aligned}
+\vec V_{G,1/0} &= -R\,\omega_{10}\,\vec x_1 + x_G\,\omega_{10}\,\vec y_1\\
+\vec a_{G,1/0} &= -x_G\,\omega_{10}^2\,\vec x_1 - R\,\omega_{10}^2\,\vec y_1
+\end{aligned}}
+
+\equationajustee{\boxed{\vec R_d(1/0) = -m_1\,\omega_{10}^2\left(x_G\,\vec x_1 + R\,\vec y_1\right)}}
+
+C'est une accélération centripète : \(G\) décrit un cercle d'axe vertical passant par \(O\), de rayon \(\sqrt{R^2 + x_G^2}\).
+
+\begin{jury}
+
+Le rapport 2026 relève un « Problème récurrent sur le calcul de la dérivation vectorielle. » Écrire explicitement la dérivée de chaque vecteur de base avant de dériver \(\overrightarrow{OG}\) évite l'essentiel des erreurs.
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+En \(G\), le moment dynamique est la dérivée du moment cinétique, lui-même produit de la matrice d'inertie par le vecteur rotation.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les composantes de \(\vec\sigma\) dans \(\mathcal B_1\) sont constantes ; seule la rotation de la base contribue à la dérivée dans \(\mathcal R_0\).
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Le produit de la matrice \(I(G,1)\) par le vecteur \((0, 0, \omega_{10})\) donne
+
+\equationajustee{\vec\sigma(G,1/0) = -E\,\omega_{10}\,\vec x_1 + C\,\omega_{10}\,\vec z_1}
+
+En \(G\), \(\vec\delta(G,1/0)\) est la dérivée de \(\vec\sigma(G,1/0)\) dans \(\mathcal R_0\) :
+
+\equationajustee{\begin{aligned}
+\vec\delta(G,1/0) &= \vec 0 + \omega_{10}\vec z_1\wedge\vec\sigma(G,1/0)\\
+&= \omega_{10}\vec z_1\wedge\left(-E\,\omega_{10}\,\vec x_1 + C\,\omega_{10}\,\vec z_1\right)\\
+&= -E\,\omega_{10}^2\,\vec y_1
+\end{aligned}}
+
+\equationajustee{\boxed{\vec\delta(G,1/0) = -E\,\omega_{10}^2\,\vec y_1}}
+
+\begin{piege}
+
+Dériver les composantes sans le terme \(\vec\Omega_{1/0}\wedge\vec\sigma\) donne \(\vec 0\) ; oublier le produit d'inertie \(E\) aussi. Le terme obtenu est le couple qui apparaît dans les expressions de \(Z_2\), \(Z_3\), \(Z_4\) fournies plus loin.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale un « Problème récurrent sur le calcul d'un produit matrice/vecteur. » Écrire la matrice et le vecteur colonne côte à côte, puis multiplier ligne par ligne.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Faire le bilan des actions extérieures au robot, puis appliquer le théorème de la résultante dynamique dans \(\mathcal R_0\) galiléen.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Actions extérieures : le poids \(-m_1g\,\vec z_1\), appliqué en \(G\), et les actions du sol sur les roues 2, 3 et 4. Avec Q15 :
+
+\equationajustee{\boxed{\begin{aligned} X_2 + X_3 + X_4 &= -m_1\,\omega_{10}^2\,x_G\\ Y_2 + Y_3 + Y_4 &= -m_1\,\omega_{10}^2\,R\\ Z_2 + Z_3 + Z_4 - m_1 g &= 0\end{aligned}}}
+
+\begin{methode}
+
+La troisième équation sert de contrôle aux expressions fournies : on vérifie que \(Z_2 + Z_3 + Z_4 = m_1 g\).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 relève l'« Oubli des actions de la pesanteur. » Il recommande fortement un inventaire rigoureux des actions mécaniques extérieures à l'ensemble isolé, écrit avant toute équation.
+
+\end{jury}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+De quel côté du robot se trouve le centre du virage ? Quelle roue est à l'intérieur ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer \(Z_2\) et \(Z_3\) en formant leur différence à partir des expressions fournies ; examiner aussi le signe de \(Z_4\).
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Une roue ne touche plus le sol quand l'effort normal \(Z_i\) qu'elle reçoit s'annule. On a \(\overrightarrow{PO} = -R\vec y_1\) : le centre du virage est du côté de la roue 2 (\(\overrightarrow{PC_d} = -a\vec y_1\)), qui est donc intérieure. Les expressions données fournissent
+
+\equationajustee{Z_3 - Z_2 = \frac{m_1\,\omega_{10}^2\,(z_G + r)\,R}{a} > 0}
+
+Donc \(Z_2 < Z_3\) dès que le robot tourne. La roue avant ne décolle pas non plus : \(Z_4\) contient le terme de poids \(x_G m_1 g/b > 0\) et un terme \(m_1\omega_{10}^2 x_G(z_G + r)/b > 0\) qui croît avec la vitesse (le produit d'inertie \(E\) étant d'influence secondaire).
+
+\(Z_2\) est la plus faible et décroît quand \(\omega_{10}^2\) croît : \textbf{la roue 2 (droite, intérieure) décolle}. La vitesse limite s'obtient en écrivant \(\boxed{Z_2 = 0}\), puis \(V = R|\omega_{10}|\).
+
+\begin{piege}
+
+Ce n'est pas la roue extérieure qui décolle : l'effet d'inertie dirigé vers l'extérieur charge les roues extérieures et décharge les roues intérieures.
+
+\end{piege}
+
+\begin{jury}
+
+Pour Q18 comme pour Q19, le rapport 2026 juge la « Réponse souvent non justifiée et parfois au hasard. » Le signe de \(Z_3 - Z_2\), tiré des expressions fournies, est la justification attendue.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Au moment du basculement, deux roues décollent : lesquelles, et autour de quelle droite le robot tend-il à pivoter ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire le théorème du moment dynamique en un point de cette droite, projeté sur sa direction : les actions des roues restées au sol disparaissent.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Utiliser \(\vec\delta(J) = \vec\delta(G) + \overrightarrow{JG}\wedge m_1\vec a_G\) avec les résultats de Q15 et Q16.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Les deux roues intérieures (côté \(-\vec y_1\)) décollent. Le robot pivote autour de la droite \(\Delta\) des contacts extérieurs, de direction \(\vec x_1\), au niveau du sol.
+
+Soit \(J \in \Delta\) avec \(\overrightarrow{PJ} = a\vec y_1 - r\vec z_1\). Alors \(\overrightarrow{JG} = x_G\vec x_1 - a\vec y_1 + (z_G + r)\vec z_1\). On projette sur \(\vec x_1\) le théorème du moment dynamique en \(J\) ; les actions du sol ont un moment nul sur \(\Delta\).
+
+\begin{itemize}
+\tightlist
+\item
+  Moment dynamique : \(\vec\delta(G)\cdot\vec x_1 = 0\), et le terme de transport vaut \(m_1\,\omega_{10}^2\,R\,(z_G + r)\).
+\item
+  Poids : \(\left[\overrightarrow{JG}\wedge(-m_1 g\vec z_1)\right]\cdot\vec x_1 = m_1\,g\,a\).
+\end{itemize}
+
+On en déduit
+
+\equationajustee{m_1\,\omega_{10}^2\,R\,(z_G + r) = m_1\,g\,a}
+
+\equationajustee{V_{max} = \sqrt{\frac{g\,a\,R}{z_G + r}}}
+
+Conclusion :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{augmenter \(R\) augmente la vitesse maximale} (l'accélération centripète \(V^2/R\) diminue à vitesse donnée) ;
+\item
+  \textbf{augmenter \(a\) augmente la vitesse maximale} (le bras de levier stabilisant du poids autour de \(\Delta\) croît).
+\end{itemize}
+
+\begin{methode}
+
+Pour un problème de basculement, le moment par rapport à l'axe de basculement élimine d'un coup toutes les actions inconnues des appuis restants. C'est plus rapide que la résolution du système complet.
+
+\end{methode}
+
+\begin{piege}
+
+Une réponse de « bon sens » sans justification vaut peu : le rapport 2026 renvoie ici au même défaut qu'en Q18 (« Idem »). La loi \(V_{max}^2(z_G + r) = \text{cte}\) est d'ailleurs cohérente avec l'allure de la courbe « deux roues folles » de la figure 8.
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Quelles sont les conditions de l'exigence 1.1.1 ? Comparer avec les conditions de tracé de la figure 8.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les courbes sont décroissantes : la condition \(V_{max} \geq\) seuil donne un intervalle de \(z_G\).
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+L'exigence 1.1.1 impose de ne pas basculer à \(1{,}5\ \text{m·s}^{-1}\) dans un virage de \(0{,}5\) m, rayon pour lequel la figure 8 est tracée. On trace l'horizontale \(V = 1{,}5\ \text{m·s}^{-1}\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{une roue folle} : intersection vers \(z_G \approx 0{,}35\) m, donc \(\boxed{z_G \lesssim 0{,}35\ \text{m}}\) ;
+\item
+  \textbf{deux roues folles} : la courbe reste au-dessus du seuil sur tout le graphe (elle l'atteint en \(z_G = 1\) m), donc \(\boxed{z_G \lesssim 1\ \text{m}}\), toute hauteur réaliste convient.
+\end{itemize}
+
+La version à deux roues folles respecte largement l'exigence. Avec une roue folle, il faut maintenir \(z_G\) sous 35 cm environ, y compris réservoir plein.
+
+\begin{jury}
+
+Le rapport 2026 constate que « La lecture de courbes semble difficile pour bon nombre de candidats ». On attend un intervalle (et non une seule valeur), le sens de l'inégalité justifié par la monotonie des courbes, et une conclusion qui cite l'exigence et ses valeurs.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-iii-uxe9tude-de-lasservissement-du-duxe9placement}{%
+\section{Partie III --- Étude de l'asservissement du déplacement}\label{partie-iii-uxe9tude-de-lasservissement-du-duxe9placement}}
+
+On modélise le moteur, on calcule l'inertie qu'il voit, on établit la boucle ouverte de l'asservissement en lacet, puis on règle un correcteur à avance de phase et on confronte les performances aux exigences 1.1.3.2.x. Dans cette partie, \(b\) est la voie du robot (\(b = 2a\) avec les notations de la partie I).
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Sous les conditions de Heaviside, une dérivée temporelle devient une multiplication par \(p\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque équation devient un bloc ou un comparateur ; la force contre-électromotrice crée une boucle de retour interne.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\equationajustee{\begin{aligned}
+U_m(p) &= (R + Lp)\,I_m(p) + E(p)\\
+J_e\,p\,\Omega_m(p) &= C_m(p) + C_r(p)\\
+E(p) &= k_e\,\Omega_m(p)\\
+C_m(p) &= k_c\,I_m(p)
+\end{aligned}}
+
+Schéma-bloc (figure 1) : une chaîne électrique, couple, mécanique, bouclée par la force contre-électromotrice \(E = k_e\,\Omega_m\) vers l'entrée (−) du comparateur.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q21-schema-bloc-moteur.pdf}
+\caption*{Figure 1 --- schéma-bloc du moteur à courant continu, avec la boucle de
+force contre-électromotrice et l'entrée de perturbation C\_r}
+\end{figure}
+
+\begin{piege}
+
+Le couple \(C_r\) entre avec le signe + : l'énoncé écrit \(J_e\dot\omega_m = c_m + c_r\) (sa valeur sera négative en pratique).
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Éliminer \(I_m\), \(C_m\) et \(E\) pour exprimer \(\Omega_m\) en fonction de \(U_m\) et \(C_r\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Regarder attentivement la figure 12 : à quel endroit la perturbation rejoint-elle la chaîne ? \(H_{pert}\) n'est pas forcément le rapport \(\Omega_m/C_r\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Mettre la relation obtenue sous la forme \(\Omega_m = H_m\,(U_m + H_{pert}\,C_r)\) et identifier.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+En éliminant \(I_m\), \(C_m\) et \(E\) :
+
+\equationajustee{\left[J_e\,p\,(R + Lp) + k_c k_e\right]\Omega_m = k_c\,U_m + (R + Lp)\,C_r}
+
+On divise par \(k_ck_e\) pour obtenir la forme canonique (terme constant égal à 1 au dénominateur) :
+
+\equationajustee{\Omega_m = \frac{\dfrac{1}{k_e}}{1 + \dfrac{R J_e}{k_c k_e}\,p + \dfrac{L J_e}{k_c k_e}\,p^2}\left[U_m + \frac{R + Lp}{k_c}\,C_r\right]}
+
+Sur la figure 12, \(C_r\) traverse \(H_{pert}\) puis s'ajoute à \(U_m\) avant \(H_m\) : \(\Omega_m = H_m\,(U_m + H_{pert}\,C_r)\). Par identification :
+
+\equationajustee{\boxed{H_m(p) = \frac{K_m}{1 + \dfrac{2\xi}{\omega_0}\,p + \dfrac{p^2}{\omega_0^2}}}}
+
+avec les paramètres caractéristiques
+
+\equationajustee{\begin{aligned}
+K_m &= \frac{1}{k_e}\\
+\omega_0 &= \sqrt{\frac{k_c k_e}{J_e L}}\\
+\xi &= \frac{R}{2}\sqrt{\frac{J_e}{L\,k_c k_e}}
+\end{aligned}}
+
+\equationajustee{\boxed{H_{pert}(p) = \frac{R}{k_c}\left(1 + \frac{L}{R}\,p\right)}}
+
+\begin{piege}
+
+Calculer \(\Omega_m/C_r\) à \(U_m = 0\) donne \(H_m\cdot H_{pert}\), pas \(H_{pert}\). La position du sommateur sur le schéma-bloc fixe la définition de chaque fonction de transfert.
+
+\end{piege}
+
+\begin{methode}
+
+Pour \(\xi\), partir de \(\dfrac{2\xi}{\omega_0} = \dfrac{RJ_e}{k_ck_e}\) et substituer \(\omega_0\) plutôt que de manipuler des carrés.
+
+Contrôle : \(k_ck_e\) est homogène à des \(\text{J}\) (ou \(\text{N·m·s}\)), donc \(LJ_e/(k_ck_e)\) est bien en \(\text{s}^2\).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 relève une « Formule de Black parfois non maîtrisée, difficulté ou oubli de mise sous forme canonique. » Il ajoute : « Détermination de Hpert difficile et rarement correctement réalisée. » C'est l'une des questions discriminantes du sujet.
+
+\end{jury}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+L'inertie équivalente se définit par l'énergie cinétique : écrire celle de tout ce qui bouge en ligne droite, en fonction de la vitesse d'un moteur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que dit \(T(p) = r/p\) sur le lien entre rotation du moteur et rotation de la roue ? Combien de moteurs se partagent l'énergie cinétique du robot ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\(T(p) = r/p\) donne \(\dot d = r\,\omega_m\) : la vitesse d'avance est \(v = r\,\omega_m\) et la roue est entraînée directement à \(\omega_m\).
+
+En ligne droite, le châssis est en translation et \(\omega_{mg} = \omega_{md} = \omega_m\). L'énergie cinétique de l'ensemble (robot en translation, deux roues et deux rotors en rotation), répartie sur les deux moteurs, s'écrit
+
+\equationajustee{\frac12\,m\,r^2\,\omega_m^2 + 2\cdot\frac12\,J_r\,\omega_m^2 + 2\cdot\frac12\,J_m\,\omega_m^2 = 2\cdot\frac12\,J_e\,\omega_m^2}
+
+\equationajustee{\boxed{J_e = J_m + J_r + \frac{m\,r^2}{2}}}
+
+AN, sans calculatrice : \(r^2 = 0{,}0361\ \text{m}^2\).
+
+\begin{itemize}
+\tightlist
+\item
+  Pour \(m = 7{,}7\) kg (maximum), \(mr^2/2 \approx 0{,}139\).
+\item
+  Pour \(m \approx 7{,}7 - 4{,}6 = 3{,}1\) kg (robot sans la charge maximale de l'exigence 1.3), \(mr^2/2 \approx 0{,}056\).
+\end{itemize}
+
+En ajoutant \(J_r = 0{,}005\) et \(J_m\) négligeable :
+
+\equationajustee{\boxed{6\cdot10^{-2}\ \text{kg·m}^2 \lesssim J_e \lesssim 1{,}4\cdot10^{-1}\ \text{kg·m}^2}}
+
+Le terme \(mr^2/2\) pèse 92 à 96 \% de \(J_e\).
+
+\begin{piege}
+
+Le facteur \(1/2\) devant \(mr^2\) vient de ce que deux moteurs entraînent la même masse. L'oublier double la masse ramenée sur chaque arbre.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « Question très peu traitée. L'écriture de l'énergie cinétique de l'ensemble est très souvent fausse. L'application numérique approchée a été très rarement traitée. » Sans calculatrice, on arrondit franchement (\(0{,}19^2 \approx 0{,}036\)) : l'ordre de grandeur et l'encadrement suffisent.
+
+\end{jury}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Par quel paramètre la quantité de peinture intervient-elle dans le modèle du moteur ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Regarder comment \(K_m\), \(\omega_0\) et \(\xi\) (Q22) dépendent de \(J_e\).
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+La peinture agit sur \(m\), donc sur \(J_e\) (environ ×2,3 entre vide et plein). D'après Q22 :
+
+\begin{itemize}
+\tightlist
+\item
+  \(K_m = 1/k_e\) est \textbf{inchangé} : la vitesse en régime permanent ne dépend pas du remplissage ;
+\item
+  \(\omega_0 \propto 1/\sqrt{J_e}\) \textbf{diminue} et \(\xi \propto \sqrt{J_e}\) \textbf{augmente}, le produit \(\xi\omega_0 = R/(2L)\) restant constant.
+\end{itemize}
+
+Le moteur devient plus lent. Dans le modèle du premier ordre utilisé ensuite, \(\tau_m = RJ_e/(k_ck_e)\) croît proportionnellement à \(J_e\). Le réglage doit être valable réservoir plein, cas le plus lent.
+
+\begin{jury}
+
+Le rapport 2026 regrette qu'une réponse « scientifique » soit très rare et que « beaucoup de candidats énoncent des banalités ». « Le robot est plus lourd » ne suffit pas : il faut dire quel paramètre du modèle change (\(J_e\)) et dans quel sens évoluent \(K_m\), \(\omega_0\), \(\xi\) ou \(\tau_m\).
+
+\end{jury}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Suivre les signes le long de la figure 11 : comparateur d'entrée, puis les deux comparateurs qui produisent \(\omega_{cg}\) et \(\omega_{cd}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifier ensuite que la correction fait bien revenir \(\beta\) vers 0 : une roue plus rapide fait tourner le robot du côté opposé.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Avec \(\beta_c = 0\), \(\varepsilon_\beta = -\beta\) ; \(\Delta\Omega_c\) a le signe de \(\varepsilon_\beta\) (gains positifs). La figure 11 donne \(\Omega_{cg} = \Omega_c - \Delta\Omega_c\) et \(\Omega_{cd} = \Omega_c + \Delta\Omega_c\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1831}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2037}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1916}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1958}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1958}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Signe de \(\beta\) mesuré
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Signe de \(\varepsilon_\beta\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Signe de \(\Delta\Omega_c\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Évolution de \(\Omega_{mg}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Évolution de \(\Omega_{md}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\beta > 0\) & \(-\) & \(-\) & ↗ & ↘ \\
+\(\beta < 0\) & \(+\) & \(+\) & ↘ & ↗ \\
+\end{longtable}
+
+Si \(\beta > 0\) (robot trop orienté à gauche), la roue gauche accélère et la droite ralentit : le robot tourne à droite et \(\beta\) revient vers 0. La boucle est bien une contre-réaction. (Le tableau du Document Réponse n'est pas disponible ; sa forme exacte peut différer, le contenu reste celui-ci.)
+
+\begin{piege}
+
+Un tableau dont la conclusion éloigne \(\beta\) de 0 est incohérent : le contrôle physique de la dernière phrase le détecte. Le rapport 2026 juge cette question « simple de lecture du schéma-bloc » mais note que les réponses y « sont souvent incohérentes ».
+
+\end{piege}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Écrire les deux voies, gauche et droite, puis la différence \(d_d - d_g\).
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\equationajustee{\beta = \frac{T\,H_m\left[(\Omega_c + \Delta\Omega_c) - (\Omega_c - \Delta\Omega_c)\right]}{b}}
+
+\equationajustee{\boxed{H_1(p) = \frac{2\,H_m(p)\,T(p)}{b}}}
+
+La consigne commune \(\Omega_c\) disparaît parce que les deux chaînes sont identiques ; \(\Delta\Omega_c\), retranché à gauche et ajouté à droite, compte deux fois.
+
+\begin{piege}
+
+Le facteur 2 se perd si l'on ne raisonne que sur une voie. Le rapport 2026 : « L'oubli du facteur 2 est très courant. »
+
+\end{piege}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Retour unitaire : la boucle ouverte est le produit des blocs de la chaîne directe.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+Avec \(H_m = K_m/(1 + \tau_m p)\) et \(T = r/p\) :
+
+\equationajustee{\begin{aligned}
+H_{BO}(p) &= C(p)\,k_a\,H_1(p)\\
+&= \frac{2\,k_a\,r\,K_m}{b}\cdot\frac{C(p)}{p\,(1 + \tau_m\,p)}
+\end{aligned}}
+
+Classe 1 : l'intégrateur vient de la transmission, qui transforme une vitesse en distance. Pour \(C = 1\), on retrouve la forme \(5/[p(1 + 0{,}05p)]\) retenue ensuite, avec \(\tau_m = 0{,}05\) s et \(2k_arK_m/b = 5\ \text{s}^{-1}\).
+
+\begin{jury}
+
+Le rapport 2026 juge la « Réponse souvent partielle. » On attend l'expression littérale complète, en fonction des paramètres de l'étude (\(C(p)\), \(k_a\), \(r\), \(K_m\), \(\tau_m\), \(b\)), et non le seul produit des blocs.
+
+\end{jury}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Quelles sont les exigences « temporelles » filles de 1.1.3.2 ? Pour chacune, quelle grandeur lire sur la réponse indicielle ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+À défaut de courbe, la boucle fermée de \(5/[p(1 + 0{,}05p)]\) se calcule exactement : identifier \(\omega_0\) et \(\xi\).
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\equationajustee{\begin{aligned}
+\frac{\beta}{\beta_c} &= \frac{5}{0{,}05\,p^2 + p + 5}\\
+&= \frac{100}{(p + 10)^2}
+\end{aligned}}
+
+On identifie \(\omega_0 = 10\ \text{rad·s}^{-1}\) et \(\xi = 1\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1594}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2435}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3682}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1988}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Exigence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Critère
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Système non corrigé
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1.1.3.2.1 & erreur statique nulle & \(\beta \to 1°\) (classe 1) & satisfaite \\
+1.1.3.2.4 & dépassement \(< 10\ \%\) & aucun (\(\xi = 1\)) & satisfaite \\
+1.1.3.2.2 & \(t_{5\%} < 0{,}01\) s & \(t_{5\%} \approx 4{,}74/\omega_0 \approx 0{,}47\) s & \textbf{non satisfaite} \\
+\end{longtable}
+
+En complément, \(\omega_{0\,\text{dB}} \approx 4{,}9\) rad/s (bande passante insuffisante) et \(M_\varphi \approx 76°\). \textbf{Le système non corrigé est précis, stable, sans dépassement, mais beaucoup trop lent} (facteur 47 sur le temps de réponse).
+
+\begin{methode}
+
+Pour \(\xi = 1\), l'abaque du temps de réponse réduit donne \(t_{5\%}\,\omega_0 \approx 4{,}75\) ; on peut aussi lire directement le temps sur la courbe à 0,95°.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 : « Bon nombre de candidats se limitent à la validation d'un seul critère de performances alors que la question fait bien référence à plusieurs exigences. » Un tableau exigence par exigence, avec valeur lue et verdict, répond à cette attente.
+
+\end{jury}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Partir du diagnostic de Q28 : quelle performance faut-il améliorer, lesquelles faut-il préserver ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Évaluer ce que donnerait un simple gain réglé pour atteindre la bande passante voulue.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Seule la rapidité est en défaut. Un gain pur plaçant \(\omega_{0\,\text{dB}}\) à 100 rad/s laisserait une marge bien en dessous de 45° :
+
+\equationajustee{M_\varphi = 90° - \arctan 5 \approx 11°}
+
+La précision est déjà acquise : \(H_{BO}\) est de classe 1, l'erreur statique est nulle (exigence 1.1.3.2.1). Une action intégrale est donc inutile et coûterait de la phase.
+
+L'avance de phase relève le gain en hautes fréquences (donc \(\omega_{0\,\text{dB}}\)) et apporte de la phase autour de la nouvelle coupure. Elle ne change pas la classe : la précision est conservée. \textbf{C'est le correcteur adapté.}
+
+\begin{jury}
+
+Le rapport 2026 : « Le critère de rapidité est énoncé, mais pas celui de précision. » La justification complète dit ce que le correcteur améliore (rapidité) \textbf{et} ce qu'il préserve (précision par la classe, stabilité par l'apport de phase).
+
+\end{jury}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Où sont les deux cassures du correcteur, et entre elles quelle est la pente asymptotique de son gain ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+« À partir de » fixe la première cassure, « sur une décade » fixe le rapport des deux.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+La cassure de \(H_{BO}\) est \(1/0{,}05 = 20\) rad/s. Il faut donc
+
+\equationajustee{\begin{aligned}
+\frac{1}{a\tau} &= 20\ \text{rad·s}^{-1}\\
+\frac{1}{\tau} &= 200\ \text{rad·s}^{-1}
+\end{aligned}}
+
+d'où
+
+\equationajustee{\boxed{\tau = 5\cdot10^{-3}\ \text{s}}}
+
+\equationajustee{\boxed{a = 10}}
+
+Alors \(a\tau = 0{,}05\) s : le zéro du correcteur compense le pôle du moteur, et \(H_{BO}^c = \dfrac{5K_p}{p\,(1 + 0{,}005\,p)}\).
+
+\begin{piege}
+
+Centrer l'avance de phase sur 20 rad/s ou prendre \(a = \sqrt{10}\) sont des lectures erronées de l'énoncé. Le rapport 2026 parle d'une « Méthode de réglage du correcteur peu maîtrisée (action asymptotique sur une décade). »
+
+\end{piege}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Tracer d'abord les asymptotes de chaque facteur (un zéro, un pôle), puis les sommer.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Valeurs remarquables : écarts aux asymptotes aux cassures, phase maximale et pulsation où elle est atteinte (moyenne géométrique des cassures).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\(C(p) = \dfrac{1 + 0{,}05p}{1 + 0{,}005p}\).
+
+\textbf{Gain.} Asymptotes : 0 dB jusqu'à 20 rad/s, \(+20\) dB/décade de 20 à 200 rad/s, 20 dB au-delà. Courbe réelle : 3 dB à 20 rad/s, 10 dB à 63,2 rad/s, 17 dB à 200 rad/s.
+
+\textbf{Phase.} Asymptotes en créneau : 0° jusqu'à 20 rad/s, \(+90°\) de 20 à 200 rad/s, 0° au-delà. Courbe réelle en cloche : 39,3° aux deux cassures, maximum en
+
+\equationajustee{\omega_m = \sqrt{20\times200} \approx 63{,}2\ \text{rad·s}^{-1}}
+
+où elle vaut
+
+\equationajustee{\varphi_{max} = \arcsin\frac{a - 1}{a + 1} = \arcsin\frac{9}{11} \approx 55°}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q31-bode-correcteur.pdf}
+\caption*{Figure 2 --- diagrammes de Bode du correcteur à avance de phase pour Kp
+= 1, asymptotes en tirets et courbes réelles}
+\end{figure}
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+\(\omega\) (rad/s) & 2 & 20 & 63,2 & 200 & 2000 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+gain asymptotique (dB) & 0 & 0 & 10 & 20 & 20 \\
+gain réel (dB) & ≈ 0 & 3,0 & 10 & 17,0 & ≈ 20 \\
+phase asymptotique & 0° & 0°/90° & 90° & 90°/0° & 0° \\
+phase réelle & ≈ 5° & 39,3° & 54,9° & 39,3° & ≈ 5° \\
+\end{longtable}
+
+\begin{piege}
+
+Une avance de phase a une phase \textbf{positive} et un gain qui \textbf{monte} : un tracé qui descend est celui d'un retard de phase. \(\omega_m\) est la moyenne géométrique des cassures (milieu en échelle logarithmique), pas la moyenne arithmétique 110 rad/s.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : question « Très souvent mal traitée », avec « confusion entre avance et retard de phase, pulsation de cassure incohérente (même par rapport à la réponse donnée en Q30) ». Les cassures du tracé doivent être celles calculées en Q30.
+
+\end{jury}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Traduire chacune des deux exigences (marge de phase, bande passante) en une condition sur la pulsation de coupure à 0 dB.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La forme \(10^{p/q}\) suggère un raisonnement en décibels sur le diagramme tracé pour \(K_p = 1\) : de combien faut-il relever la courbe ?
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+La phase de \(H_{BO}^c\) vaut \(-90° - \arctan(0{,}005\,\omega)\) et reste au-dessus de \(-180°\) : \(M_G\) est infinie. Les deux autres exigences portent sur la coupure :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{stabilité} : \(M_\varphi = 90° - \arctan(0{,}005\,\omega_{0\,\text{dB}}) > 45°\) impose \(\omega_{0\,\text{dB}} < 200\) rad/s ;
+\item
+  \textbf{rapidité} : la bande passante impose \(\omega_{0\,\text{dB}} > 100\) rad/s.
+\end{itemize}
+
+Pour \(K_p = 1\), le gain vaut environ \(-27\) dB à 100 rad/s et \(-35\) dB à 200 rad/s. La rapidité donne une \textbf{valeur minimale} de \(K_p\) (relever de plus de 27 dB), la stabilité une \textbf{valeur maximale} (moins de 35 dB) :
+
+\equationajustee{\boxed{10^{27/20} < K_p < 10^{35/20}}}
+
+soit \(22{,}4 < K_p < 56\).
+
+\begin{piege}
+
+Lire sur l'asymptote au lieu de la courbe réelle fait perdre 1 à 3 dB.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « La contrainte sur la marge de stabilité est maîtrisée mais pas celle sur la rapidité. Le fait de trouver une valeur limite (supérieure ou inférieure du gain suivant le cas) n'est pas très souvent mentionnée. » Chaque exigence doit être reliée explicitement à la borne qu'elle fournit.
+
+\end{jury}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Écrire la boucle fermée et identifier \(\omega_0\) et \(\xi\) en fonction de \(K_p\). Que remarquez-vous sur le produit \(\xi\,\omega_0\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Passer en revue les quatre exigences filles de 1.1.3.2 une par une, avec une valeur numérique pour chacune.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+En boucle fermée :
+
+\equationajustee{\frac{\beta}{\beta_c} = \frac{1000\,K_p}{p^2 + 200\,p + 1000\,K_p}}
+
+On identifie \(\omega_0 = \sqrt{1000K_p}\) et \(\xi = 100/\omega_0\). La partie réelle des pôles vaut \(-100\ \text{s}^{-1}\) pour tout \(K_p > 10\).
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+\(K_p\) & \(\omega_0\) (rad/s) & \(\xi\) & dépassement & \(t_{5\%}\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+22,4 & 150 & 0,67 & 5,9 \% & 0,033 s \\
+28,6 & 169 & 0,59 & 10 \% & 0,031 s \\
+56 & 237 & 0,42 & 23 \% & 0,031 s \\
+\end{longtable}
+
+\begin{itemize}
+\tightlist
+\item
+  1.1.3.2.1 : erreur statique nulle, \textbf{satisfaite} (classe 1).
+\item
+  1.1.3.2.3 : stabilité, \textbf{satisfaite} (\(M_\varphi\) entre 45° et 63°, \(M_G\) infinie).
+\item
+  1.1.3.2.4 : dépassement \(< 10\ \%\) si \(K_p < 28{,}6\) ; on restreint donc à \(22{,}4 < K_p < 28{,}6\).
+\item
+  1.1.3.2.2 : bande passante \textbf{satisfaite}, mais \(t_{5\%} \approx 0{,}03\) s \(> 0{,}01\) s : \textbf{non satisfaite}.
+\end{itemize}
+
+\textbf{L'exigence 1.1.3.2 n'est pas entièrement validée} : aucun \(K_p\) ne ramène le temps de réponse sous 0,01 s. Les pôles restent à partie réelle \(-100\ \text{s}^{-1}\), fixée par le pôle du correcteur. Il faudrait réduire \(\tau_m\) (boucle de vitesse plus performante) ou changer de structure de correction.
+
+\begin{methode}
+
+Pour un second ordre \(\omega_0^2/(p^2 + 2\xi\omega_0 p + \omega_0^2)\), le dépassement \(D = \exp\left(-\pi\xi/\sqrt{1 - \xi^2}\right)\) vaut 10 \% pour \(\xi \approx 0{,}59\) et 5 \% pour \(\xi \approx 0{,}69\) ; ces deux valeurs méritent d'être connues.
+
+\end{methode}
+
+\begin{jury}
+
+Pour Q33, le rapport 2026 renvoie au défaut de Q28 (« Idem Q28. ») : se limiter à un seul critère. Il faut conclure sur \textbf{chacune} des exigences 1.1.3.2.x, en comparant une valeur à un critère, et signaler celle qui n'est pas atteinte en expliquant pourquoi.
+
+\end{jury}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-iv-uxe9tude-de-luxe9laboration-dun-coin}{%
+\section{Partie IV --- Étude de l'élaboration d'un coin}\label{partie-iv-uxe9tude-de-luxe9laboration-dun-coin}}
+
+On décrit par des diagrammes d'états quatre manières de tracer un angle droit, et on place les points intermédiaires qui suppriment manque et recouvrement. La buse dépose une ligne de largeur \(L\) (notée \(l\) dans le texte), centrée sur \(P\), perpendiculaire au déplacement.
+
+On note \(\vec u_1\) la direction \(P_{i-1}\to P_i\) et \(\vec u_2\) la direction \(P_i\to P_{i+1}\).
+
+Le rapport 2026 indique que la moitié environ des candidats ont traité cette partie et l'ont en général bien réussie : ce sont des points accessibles.
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Les gardes ① et ② sont les deux transitions qui quittent l'état \texttt{Avancer} : où le robot doit-il cesser d'avancer ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Qu'est-ce qui distingue géométriquement les traces (a) et (b) ? Que balaie une ligne de peinture qui pivote de 90° autour de son milieu ?
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Dans les deux cas, le robot avance jusqu'à \(P_i\), pivote sur place de 90°, puis avance jusqu'à \(P_{i+1}\).
+
+Une ligne de largeur \(L\) pivotant autour de \(P_i\) balaie deux quarts de disque de rayon \(L/2\) opposés par le sommet. C'est exactement l'arrondi extérieur et le quart de disque à trois couches de (b). En (b), la buse est donc ouverte pendant la rotation ; en (a), elle reste fermée (l'action \texttt{Exit\ /\allowbreak{}\ Fermer\ la\ buse} d'\texttt{Avancer} l'a fermée).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+① garde \texttt{Avancer} → \texttt{Tourner}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+② garde \texttt{Avancer} → état final
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+③ action de \texttt{Tourner}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+④ action de \texttt{Tourner}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+coin (a) & \texttt{when\ (P\ =\ Pi)} & \texttt{when\ (P\ =\ Pi+1)} & × & × \\
+coin (b) & \texttt{when\ (P\ =\ Pi)} & \texttt{when\ (P\ =\ Pi+1)} & \texttt{Entry\ /\allowbreak{}\ Ouvrir\ la\ buse} & \texttt{Exit\ /\allowbreak{}\ Fermer\ la\ buse} \\
+\end{longtable}
+
+\begin{piege}
+
+Une garde est une condition (\texttt{when\ (...)}), une action est précédée de son moment d'exécution (\texttt{Entry}, \texttt{Do}, \texttt{Exit}). Ne pas mélanger les deux colonnes, et marquer × les cases vides comme demandé.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 n'a qu'une remarque : « Attention sur la syntaxe du when. » On recopie la forme de la figure 16, \texttt{when\ (P\ =\ Pi)}, condition entre parenthèses.
+
+\end{jury}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Traduire la figure 16 en suite de mouvements. Après la rotation, dans quel sens se fait le recul ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer la zone à deux couches de (c) à celle de (a) : où doit commencer la seconde bande pour couvrir aussi le quart extérieur du carré de coin ?
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Séquence : avancer en peignant jusqu'à \(P_i\), pivoter de 90°, reculer selon \(-\vec u_2\) jusqu'à \(P_B\), puis avancer en peignant jusqu'à \(P_{i+1}\). La première bande s'arrête au niveau de \(P_i\) ; la seconde commence en \(P_B\).
+
+Il faut couvrir l'angle extérieur et obtenir la zone à deux couches de (c), qui occupe toute la moitié du carré de coin située du côté de \(P_{i-1}\). La seconde bande doit donc commencer au bord extérieur de la première :
+
+\equationajustee{\boxed{\overrightarrow{P_iP_B} = -\frac{l}{2}\,\vec u_2}}
+
+\(P_B\) est sur la droite \((P_iP_{i+1})\), à \(l/2\) de \(P_i\), du côté opposé à \(P_{i+1}\) ; on le reporte au même endroit sur la figure (d).
+
+\begin{piege}
+
+\(P_B\) ne peut pas être entre \(P_i\) et \(P_{i+1}\) : le robot l'atteint en reculant.
+
+\end{piege}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+En (d), la seconde bande couvre déjà tout le carré de coin. Où doit s'arrêter la première pour ne pas la chevaucher ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le pivotement se fait sans déplacer \(P\) : en quel point doit-il avoir lieu pour que la ligne suivante soit bien sur \((P_iP_{i+1})\) ? Comment rejoindre ce point sans peindre ?
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\equationajustee{\boxed{\overrightarrow{P_iP_A} = -\frac{l}{2}\,\vec u_1}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q35-q36-coins-c-et-d.pdf}
+\caption*{Figure 3 --- placement de P\_B sur le coin (c) et de P\_A sur le coin
+(d), avec le nombre de couches de peinture}
+\end{figure}
+
+\(P_A\) est sur \((P_{i-1}P_i)\), à \(l/2\) avant \(P_i\) (figure 3).
+
+Le pivotement doit avoir lieu en \(P_i\), seul point commun aux deux droites. Le robot continue donc d'avancer buse fermée de \(P_A\) à \(P_i\), ce qui demande un second état \texttt{Avancer\ sans\ peindre}, sans action sur la buse (figure 4).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q36-diagramme-etats-coin-d.pdf}
+\caption*{Figure 4 --- diagramme d'états du coin (d), l'état ajouté à la figure 16
+en bleu}
+\end{figure}
+
+Le tracé obtenu est le coin en équerre sans aucune surépaisseur de la figure 15(d).
+
+\begin{methode}
+
+Pour concevoir un diagramme d'états, écrire d'abord la séquence de mouvements et l'état de la buse sur chaque segment, puis faire un état par couple (mouvement, état de la buse) et une garde par point de changement.
+
+\end{methode}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{partie-v-optimisation-du-parcours-de-marquage-itc}{%
+\section{Partie V --- Optimisation du parcours de marquage (ITC)}\label{partie-v-optimisation-du-parcours-de-marquage-itc}}
+
+On lit un fichier texte dans un dictionnaire, puis on construit un parcours par un algorithme glouton (toujours aller à l'extrémité la plus proche). Le rapport 2026 juge les bases souvent fragiles : distance euclidienne mal écrite, dictionnaires mal maîtrisés, et des confusions « entre clé/indice et coordonnées » dans le code comme dans les commentaires. Les scripts du Document Réponse sont reconstruits d'après l'énoncé :
+
+\begin{lstlisting}[language=Python]
+fichier = open("carre.txt", "r")
+traces = {}
+k = 0
+for ligne in fichier:
+    if k > 0:
+        # ligne manquante 1
+        # ligne manquante 2
+    k = k + 1
+fichier.close()
+\end{lstlisting}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Que contient la première ligne du fichier \texttt{carre.txt} de la figure 17 ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer le rang d'une ligne dans le fichier et la clé attendue dans le dictionnaire.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\texttt{k} compte les lignes lues (0 pour la première). La première ligne est l'en-tête \texttt{xp1\ yp1\ xp2\ yp2} : la condition \texttt{if\ k\ \textgreater{}\ 0} l'écarte, car sa conversion en \texttt{float} lèverait une \texttt{ValueError}. \texttt{k} sert aussi à numéroter : la ligne de rang \texttt{k} du fichier est la ligne à tracer de clé \texttt{k-1}, ce qui fait partir les clés de 0.
+
+\begin{jury}
+
+Le rapport 2026 note un « Manque de rigueur dans la réponse. » Il faut donner les \textbf{deux} rôles de \texttt{k} (compteur de lignes, source de la clé) et la raison précise du test (l'en-tête non numérique).
+
+\end{jury}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Une ligne pour découper la chaîne en quatre champs, une ligne pour construire la valeur et l'affecter.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Respecter les types : des \texttt{float}, rangés dans une liste de deux 2-uplets.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\begin{lstlisting}[language=Python]
+        elements = ligne.split()
+        traces[k-1] = [(float(elements[0]), float(elements[1])),
+                       (float(elements[2]), float(elements[3]))]
+\end{lstlisting}
+
+La clé vaut \textbf{\texttt{k-1}}. On obtient \texttt{\{0:\allowbreak{}\ {[}(\allowbreak{}0.0,\allowbreak{}\ 0.0)\allowbreak{},\allowbreak{}\ (\allowbreak{}1.0,\allowbreak{}\ 0.0)\allowbreak{}{]}\allowbreak{},\allowbreak{}\ 1:\allowbreak{}\ {[}(\allowbreak{}0.0,\allowbreak{}\ 0.0)\allowbreak{},\allowbreak{}\ (\allowbreak{}0.0,\allowbreak{}\ 1.0)\allowbreak{}{]}\allowbreak{},\allowbreak{}\ ...\}}, conforme à l'énoncé.
+
+\begin{piege}
+
+\texttt{traces{[}k{]}} décale toutes les clés d'une unité ; sans \texttt{float}, on stocke des chaînes et les distances échouent. Le rapport 2026 relève exactement ces deux défauts : « oubli de conversion, problème d'indice ».
+
+\end{piege}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Commencer par l'importation de \texttt{sqrt}, puis appliquer la formule de la distance dans le plan.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\begin{lstlisting}[language=Python]
+from math import sqrt
+
+def distance(A: (float, float), B: (float, float)) -> float:
+    """Renvoie la distance euclidienne entre les deux points A et B"""
+    return sqrt((B[0] - A[0])**2 + (B[1] - A[1])**2)
+\end{lstlisting}
+
+\texttt{distance(\allowbreak{}(\allowbreak{}0,\allowbreak{}\ 0)\allowbreak{},\allowbreak{}\ (\allowbreak{}1,\allowbreak{}\ 0)\allowbreak{})\allowbreak{}} renvoie \texttt{1.0}.
+
+\begin{piege}
+
+La fonction doit renvoyer (\texttt{return}), pas afficher (\texttt{print}). L'importation fait partie de la réponse : l'énoncé demande que « les commandes nécessaires à sa bonne utilisation » soient précisées.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « Question la plus traitée de la partie informatique avec toutefois des réponses ubuesques et des oublis d'importation de bibliothèque. »
+
+\end{jury}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+De quoi \texttt{trajet} a-t-il besoin pour avancer d'une ligne : seulement de la clé de la ligne, ou aussi de l'extrémité par laquelle commencer ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\begin{lstlisting}[language=Python]
+def PPE(A: (float, float), traces: dict) -> (int, int):
+    """Renvoie le couple (cle, i) tel que traces[cle][i] est, parmi toutes les
+    extremites des lignes de traces, la plus proche du point A (distance
+    euclidienne) ; i vaut 0 ou 1. Precondition : traces est non vide."""
+\end{lstlisting}
+
+La spécification dit ce que la fonction renvoie, avec sa précondition, pas comment elle le calcule. \texttt{PPE} prend des coordonnées mais renvoie une position dans le dictionnaire (clé, indice), pas des coordonnées.
+
+\begin{jury}
+
+Le rapport 2026 : « Très peu de bonnes réponses et peu traitée, les candidats semblent ne pas comprendre les variables manipulées dans le code. » Identifier le type de chaque variable (point, clé entière, indice 0 ou 1) avant d'écrire la signature.
+
+\end{jury}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Repérer la structure : initialisation d'un minimum, double boucle (lignes puis extrémités), mise à jour conditionnelle, renvoi.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+Code reconstruit, commenté ligne à ligne :
+
+\begin{lstlisting}[language=Python]
+def PPE(A, traces):
+    cles = list(traces.keys())             # cles des lignes restant a tracer
+    cle_min = cles[0]                      # candidat initial : premiere ligne...
+    i_min = 0                              # ... par son extremite d'indice 0
+    dmin = distance(A, traces[cle_min][0]) # distance du candidat initial
+    for cle in cles:                       # parcours de toutes les lignes
+        for i in range(2):                 # parcours des deux extremites
+            d = distance(A, traces[cle][i])  # distance de A a l'extremite
+            if d < dmin:                   # strictement plus proche ?
+                dmin = d                   # nouveau minimum
+                cle_min = cle              # ligne correspondante
+                i_min = i                  # extremite correspondante
+    return cle_min, i_min                  # ligne et extremite de depart
+\end{lstlisting}
+
+\texttt{cle} est un numéro de ligne et \texttt{i} un indice (0 ou 1) ; seul \texttt{traces{[}cle{]}{[}i{]}} est un point. L'initialisation sur une distance effectivement atteinte garantit la correction (et exige un dictionnaire non vide). Les trois mises à jour sont solidaires. Complexité linéaire en le nombre de lignes.
+
+\begin{methode}
+
+Commenter, c'est dire le rôle d'une ligne dans l'algorithme (« distance de la position courante à l'extrémité \texttt{i} de la ligne \texttt{cle} »), pas paraphraser la syntaxe.
+
+\end{methode}
+
+\begin{piege}
+
+Malgré son nom, \texttt{PPE} n'est pas un algorithme des k plus proches voisins (KNN) : c'est une simple recherche de minimum. Le rapport 2026 note que « le nom de la fonction a guidé bon nombre de candidats sur l'étude d'un algorithme KNN », et relève une « confusion entre les coordonnées d'un point et le couple clé/indice du point dans le dictionnaire ».
+
+\end{piege}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Boucler tant qu'il reste des lignes : choisir la plus proche, la mémoriser, se déplacer, la retirer.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Après avoir tracé une ligne commencée par l'extrémité d'indice \texttt{i}, le robot se trouve à l'extrémité d'indice \texttt{1\ -\ i}.
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\begin{lstlisting}[language=Python]
+def trajet(depart: (float, float), traces: dict) -> list:
+    parcours = []
+    position = depart
+    while len(traces) > 0:
+        cle, i = PPE(position, traces)   # ligne la plus proche et extremite de depart
+        parcours.append((cle, i))
+        position = traces[cle][1 - i]    # on arrive a l'autre extremite
+        del traces[cle]                  # la ligne est tracee : on la retire
+    return parcours
+\end{lstlisting}
+
+La boucle termine : le dictionnaire perd une clé à chaque tour.
+
+\begin{piege}
+
+Sans \texttt{del}, \texttt{PPE} renvoie indéfiniment la même ligne ; sans mise à jour de \texttt{position}, on cherche toujours depuis le point de départ. Parcourir le dictionnaire avec \texttt{for} en le modifiant lève une \texttt{RuntimeError}.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 : « Très peu traitée et quasiment jamais juste. » Question discriminante : la mise à jour de \texttt{position} par l'extrémité opposée \texttt{1\ -\ i} est le point le plus souvent manqué dans ce type d'algorithme.
+
+\end{jury}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Que fait \texttt{trajet} à son argument, et l'objet modifié est-il une copie ou l'objet de l'appelant ?
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\textbf{Non.} Un dictionnaire est mutable : \texttt{trajet} reçoit une référence au même objet et le vide par des \texttt{del}. Après l'appel, \texttt{traces} vaut \texttt{\{\}} : on ne peut plus convertir les clés du parcours en coordonnées ni refaire un calcul.
+
+\begin{jury}
+
+Le rapport 2026 : « Réponse très souvent non justifiée. » Le « non » ne vaut que par son explication : mutabilité, passage de la même référence, effet des \texttt{del}.
+
+\end{jury}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Quelle différence entre copie superficielle et copie profonde ? \texttt{trajet} modifie-t-il le dictionnaire, ou les listes qu'il contient ?
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+\textbf{Oui}, avec \texttt{from\ copy\ import\ copy}, et à condition de se servir ensuite de \texttt{traces1} (ou d'appeler \texttt{trajet} sur la copie). \texttt{copy} crée un nouveau dictionnaire avec les mêmes associations ; les listes sont partagées, mais \texttt{trajet} ne fait que retirer des clés, sans modifier ces listes. La copie superficielle suffit ; \texttt{deepcopy} ne serait nécessaire que si les valeurs étaient modifiées en place.
+
+\begin{piege}
+
+Répondre « oui » sans dire pourquoi la copie superficielle suffit, ou exiger \texttt{deepcopy} sans avoir lu \texttt{trajet}, passe à côté de la question.
+
+\end{piege}
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Les deux conditions ne diffèrent que dans un cas particulier : lequel ? Est-il fréquent sur le carré ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans chaque cas, quelle extrémité est conservée parmi plusieurs ex æquo : la première ou la dernière rencontrée ?
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+On compare \texttt{d\ \textless{}\ dmin} et \texttt{d\ \textless{}=\ dmin} (variantes reconstruites). Avec \texttt{\textless{}}, la \textbf{première} extrémité rencontrée à distance minimale est retenue ; avec \texttt{\textless{}=}, la \textbf{dernière}. Sur le carré, les égalités sont fréquentes : depuis \((0,0)\), les lignes 1 et 2 sont à distance nulle.
+
+\begin{lstlisting}
+d <  dmin : [(0, 0), (3, 1), (2, 0), (1, 1), (4, 0), (5, 0)]
+d <= dmin : [(1, 0), (2, 1), (3, 0), (0, 1), (5, 0), (4, 1)]
+\end{lstlisting}
+
+Les deux parcours sont symétriques par rapport à la diagonale et ont la même longueur à vide (\(\approx 1{,}21\) m) ; seuls l'ordre et le sens changent. L'algorithme reste glouton dans les deux cas, donc non optimal en général.
+
+\begin{jury}
+
+Le rapport 2026 : « Peu traitée et rarement juste. » La réponse attendue porte sur le traitement des ex æquo, à illustrer sur le carré.
+
+\end{jury}
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Dérouler l'appel tour par tour : position courante, ligne choisie, extrémité de départ, nouvelle position.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un trajet sans peinture n'existe que si la ligne choisie ne commence pas là où le robot se trouve.
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+Avec \texttt{d\ \textless{}\ dmin} depuis \((0,0)\) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0989}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2383}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1467}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2028}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2833}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Ordre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ligne (fig.~17)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Clé, indice
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sens de tracé
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Trajet sans peinture préalable
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & ligne 1 (bas) & (0, 0) & \((0;0)\to(1;0)\) & aucun \\
+2 & ligne 4 (droite) & (3, 1) & \((1;0)\to(1;1)\) & aucun \\
+3 & ligne 3 (haut) & (2, 0) & \((1;1)\to(0;1)\) & aucun \\
+4 & ligne 2 (gauche) & (1, 1) & \((0;1)\to(0;0)\) & aucun \\
+5 & ligne 5 (médiane verticale) & (4, 0) & \((0{,}5;0)\to(0{,}5;1)\) & ① \((0;0)\to(0{,}5;0)\), 0,5 m \\
+6 & ligne 6 (médiane horizontale) & (5, 0) & \((0;0{,}5)\to(1;0{,}5)\) & ② \((0{,}5;1)\to(0;0{,}5)\), \(\approx 0{,}71\) m \\
+\end{longtable}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q46-parcours-carre.pdf}
+\caption*{Figure 5 --- parcours de trajet((0,0), traces) sur le carré : ordre de
+tracé, sens et trajets sans peinture}
+\end{figure}
+
+Tour du carré dans le sens trigonométrique, puis les deux médianes après les trajets à vide ① et ②. Total : 4 m peints, environ 1,21 m à vide.
+
+\begin{methode}
+
+Contrôle final d'un déroulé : chaque ligne apparaît une seule fois, la somme des longueurs peintes vaut la longueur totale du dessin, et chaque trajet à vide relie la fin d'une ligne au début de la suivante.
+
+\end{methode}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Roulement sans glissement : \(\vec V_{I\in S/S'} = \vec 0\), puis composition des mouvements et changement de point. Vérifier les signes par un cas limite et par le sens physique (roue intérieure plus lente), sans partir du résultat de la question suivante.
+\item
+  Dérivation en base mobile : \(\left.\frac{d\vec u}{dt}\right|_0 = \left.\frac{d\vec u}{dt}\right|_1 + \vec\Omega_{1/0}\wedge\vec u\), pour l'accélération comme pour le moment cinétique ; en \(G\), \(\vec\delta = d\vec\sigma/dt\).
+\item
+  Principe fondamental de la dynamique : inventaire écrit des actions extérieures, poids compris, avant toute équation.
+\item
+  Basculement : moment par rapport à l'axe de basculement, qui élimine les actions des appuis restants.
+\item
+  Schéma-bloc : la position des sommateurs définit les fonctions de transfert ; identifier sous la forme imposée par la figure.
+\item
+  Inertie équivalente par l'énergie cinétique, en partageant entre les moteurs.
+\item
+  Avance de phase : cassures \(1/(a\tau)\) et \(1/\tau\), et \(\varphi_{max} = \arcsin\frac{a-1}{a+1}\) en \(\omega_m = 1/(\tau\sqrt a)\). Le gain y vaut \(10\log a\). On règle \(K_p\) en dB, lu sur le diagramme, en associant chaque exigence à sa borne.
+\item
+  Second ordre : \(D = \exp(-\pi\xi/\sqrt{1 - \xi^2})\) ; \(t_{5\%}\,\omega_0 \approx 4{,}75\) pour \(\xi = 1\), minimal (\(\approx 3\)) vers \(\xi = 0{,}7\).
+\item
+  Python : mutabilité et passage par référence, copie superficielle ou profonde, gestion des ex æquo dans une recherche de minimum ; distinguer clé, indice et coordonnées.
+\end{itemize}
+
+\textbf{Questions discriminantes (rapport 2026).} Q22 (\(H_{pert}\)), Q23 (énergie cinétique et application numérique approchée), Q31 (Bode de l'avance de phase), Q32 (borne de rapidité), Q40--Q42 (signature, lecture et écriture de l'algorithme glouton), Q45 (ex æquo). Le jury recommande de lire l'intitulé complet de chaque question, d'« éviter les rétro-analyses, justifier chaque étape » et de s'entraîner aux valeurs approchées sans calculatrice. Il rappelle aussi que les résultats doivent être encadrés sur le Document Réponse.
+
+\textbf{Prérequis à revoir.} Torseurs cinématiques et liaisons normalisées ; matrices d'inertie et Huygens ; diagrammes de Bode asymptotiques (y compris la phase en créneau d'un correcteur à avance) ; diagrammes d'états SysML (gardes \texttt{when}, actions \texttt{Entry}/\texttt{Do}/\texttt{Exit}).
+
+\textbf{Questions classiques transposables.} Consignes de vitesse d'un robot différentiel (Q1--Q9), basculement d'un véhicule en virage (Q18--Q19), inertie équivalente d'un véhicule entraîné par deux moteurs (Q23), réglage d'une avance de phase par compensation de pôle (Q30--Q33), algorithme glouton du plus proche voisin (Q42).
+
+\end{document}

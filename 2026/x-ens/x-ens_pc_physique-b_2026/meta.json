@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_pc_physique-b_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2026
+  },
+  "questions": 45,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q4-dispersion-monoatomique.svg",
+      "question": "Q4",
+      "legende": "Relation de dispersion ω(k) de la chaîne monoatomique sur la première zone de Brillouin, avec ses demi-tangentes en 0 et ses tangentes horizontales en ±π/a"
+    },
+    {
+      "fichier": "figures/q7-4-profil-evanescent.svg",
+      "question": "Q7.4",
+      "legende": "Profil de l'onde évanescente : déplacements alternés de part et d'autre de la source n = 0, sous les enveloppes ±U0 e^(−|n|a/ℓ)"
+    },
+    {
+      "fichier": "figures/q14-dispersion-dimerisee.svg",
+      "question": "Q14",
+      "legende": "Relation de dispersion de la chaîne dimérisée pour ω1/ω2 = 2/3 (bande interdite entre √2ω1 et √2ω2) et pour ω1/ω2 = 1 (branches raccordées en bord de zone)"
+    },
+    {
+      "fichier": "figures/q18-trajectoire-vecteur-d.svg",
+      "question": "Q18",
+      "legende": "Trajectoire de d(k) : cercle de centre (−ω1², 0) et de rayon ω2², parcouru dans le sens trigonométrique, origine extérieure si ω1 > ω2 et intérieure si ω1 < ω2"
+    },
+    {
+      "fichier": "figures/q21-mode-de-bord.svg",
+      "question": "Q21",
+      "legende": "Mode de bord pour ω1g/ω2g = 0,7 : seules les masses impaires bougent, avec une amplitude alternée qui décroît de part et d'autre de l'interface"
+    },
+    {
+      "fichier": "figures/q29-dispersion-kelvin.svg",
+      "question": "Q29",
+      "legende": "Les trois branches (+), (0) et (−) dans le plan (kx, ω) pour f0 = ±1 (bandes interdites 0 < |ω| < 1) et pour f0 = 0 (branches concourantes)"
+    }
+  ]
+}

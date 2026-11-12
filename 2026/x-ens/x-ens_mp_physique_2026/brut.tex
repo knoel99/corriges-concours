@@ -1,0 +1,954 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={X-ENS MP — Physique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · X-ENS MP}
+\fancyhead[R]{\small Physique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries X-ENS MP — Physique 2026\par}\medskip
+  {\large X-ENS · MP · Physique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve n° 5, durée 4 h, calculatrice interdite. Sujet : \emph{Étude des ondes mécaniques dans une plaque élastique}.
+
+\hypertarget{i.-pruxe9ambule-onde-de-compression-unidimensionnelle}{%
+\section{I. Préambule : onde de compression unidimensionnelle}\label{i.-pruxe9ambule-onde-de-compression-unidimensionnelle}}
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+Un ressort de raideur \(\kappa\) dont l'allongement algébrique (longueur moins longueur à vide) vaut \(\delta_n\) emmagasine
+
+\equationajustee{\boxed{E_{p,n}=\tfrac12\,\kappa\,\delta_n^{2}}}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+Le \(n\)-ième ressort relie les molécules \(n\) et \(n+1\), de positions au repos \(na\) et \((n+1)a\). Son allongement est la différence des déplacements de ses deux extrémités :
+
+\equationajustee{\delta_n=u\big((n+1)a,t\big)-u(na,t)}
+
+On somme sur les ressorts dont l'extrémité gauche est au repos dans \([0,\lambda[\), soit \(\lambda/a\) ressorts :
+
+\equationajustee{\boxed{\begin{aligned}E_p^{\lambda}&=\sum_{n=1}^{\lambda/a}\tfrac12\,\kappa\,\delta_n^{2}\\&=\sum_{n=1}^{\lambda/a}\tfrac12\,\kappa\,\big[u((n+1)a,t)-u(na,t)\big]^2\end{aligned}}}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+Un déplacement uniforme (\(u\) indépendant de \(x\)) ne modifie la longueur d'aucun ressort : c'est la variation spatiale de \(u\), et non \(u\) lui-même, qui mesure la déformation. Comme \(a\ll\lambda\), on a au premier ordre
+
+\equationajustee{\delta_n\simeq a\,\frac{\partial u}{\partial x}(x_n,t),}
+
+et chaque ressort emmagasine \(\tfrac12\kappa a^2\left(\partial u/\partial x\right)^2\).
+
+Les ressorts sont espacés de \(a\) : la somme est une somme de Riemann de pas \(a\), et chaque ressort « occupe » la longueur \(\mathrm{d}x=a\). On remplace donc \(\sum_n\) par \(\dfrac1a\displaystyle\int\mathrm{d}x\) :
+
+\equationajustee{\begin{aligned}E_p^{\lambda}&\simeq\frac1a\int_0^{\lambda}\tfrac12\kappa a^2\Big(\frac{\partial u}{\partial x}\Big)^2\mathrm{d}x\\&=\tfrac12\,\kappa a\int_0^{\lambda}\Big(\frac{\partial u}{\partial x}\Big)^2\mathrm{d}x\end{aligned}}
+
+C'est le résultat demandé. Contrôle : \(\kappa a\) est une force, \((\partial u/\partial x)^2\) est sans dimension et \(\mathrm{d}x\) est une longueur, d'où une énergie.
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+Chaque molécule, de masse \(m\), a la vitesse \(\partial u/\partial t\). Il y a une molécule par longueur \(a\), d'où une masse linéique \(m/a\) :
+
+\equationajustee{\boxed{\begin{aligned}E_c^{\lambda}&=\sum_n\tfrac12 m\Big(\frac{\partial u}{\partial t}\Big)^2\\&\simeq\frac{m}{2a}\int_0^{\lambda}\Big(\frac{\partial u}{\partial t}\Big)^2\mathrm{d}x\end{aligned}}}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+Avec \(u=U\sin(kx-\omega t)\), on a :
+
+\equationajustee{\begin{aligned}\frac{\partial u}{\partial x}&=Uk\cos(kx-\omega t)\\\frac{\partial u}{\partial t}&=-U\omega\cos(kx-\omega t)\\\int_0^\lambda\cos^2(kx-\omega t)\,\mathrm{d}x&=\frac{\lambda}{2}\end{aligned}}
+
+Donc
+
+\equationajustee{\begin{aligned}E_p^{\lambda}&=\frac{\kappa a U^2k^2\lambda}{4}\\E_c^{\lambda}&=\frac{mU^2\omega^2\lambda}{4a}\end{aligned}}
+
+L'égalité \(E_c^\lambda=E_p^\lambda\) donne \(\dfrac{m}{a}\omega^2=\kappa a k^2\), soit
+
+\equationajustee{\boxed{\omega^2=k^2c^2}}
+
+\equationajustee{\boxed{c=a\sqrt{\frac{\kappa}{m}}}}
+
+\(c\) est homogène à une vitesse (\(\mathrm{m}\cdot\sqrt{\mathrm{N\,m^{-1}\,kg^{-1}}}=\mathrm{m\,s^{-1}}\)). C'est la célérité des ondes de compression (vitesse du son) dans la chaîne, et aussi la vitesse de phase \(\omega/k\) de l'OPPH.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+Pour une OPPH, chaque dérivée seconde fait apparaître un facteur simple :
+
+\equationajustee{\begin{aligned}\frac{\partial^2u}{\partial t^2}&=-\omega^2u\\\frac{\partial^2u}{\partial x^2}&=-k^2u\end{aligned}}
+
+En remplaçant \(\omega^2\) par \(-\partial^2/\partial t^2\) et \(k^2\) par \(-\partial^2/\partial x^2\), la relation \(\omega^2=c^2k^2\) devient
+
+\equationajustee{\boxed{\frac{\partial^2u}{\partial t^2}=c^2\,\frac{\partial^2u}{\partial x^2}}}
+
+C'est l'équation de d'Alembert. Elle est linéaire, ce qui autorise la superposition. Elle est invariante par \(t\to-t\) : la propagation est réversible et sans atténuation. Elle est non dispersive : \(v_\varphi=v_g=c\) pour toutes les fréquences, et un paquet d'ondes se propage sans se déformer.
+
+\hypertarget{ii.-uxe9nergie-uxe9lastique-pour-une-plaque-en-compression-homoguxe8ne}{%
+\section{II. Énergie élastique pour une plaque en compression homogène}\label{ii.-uxe9nergie-uxe9lastique-pour-une-plaque-en-compression-homoguxe8ne}}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+Tous les ressorts selon \((Ox)\) se raccourcissent de \(\delta\), donc \(\partial u/\partial x=-\delta/a\) est uniforme et \(u(x)\) est \textbf{affine}.
+
+En prenant l'extrémité \(x=0\) comme référence :
+
+\equationajustee{u(x)=-\frac{\Delta L}{L}\,x}
+
+C'est une droite de pente \(-\Delta L/L\), qui passe de \(0\) en \(x=0\) à \(-\Delta L\) en \(x=L\). Si la compression est symétrique, la droite passe par \(0\) au milieu de la plaque ; la pente reste la même.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q07-deplacement-compression.pdf}
+\caption*{Figure 1 --- Déplacement u(x) en compression homogène : une droite de 0
+à −ΔL, de pente −ΔL/L (compression exagérée)}
+\end{figure}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+Une section droite \(e\times l\) contient \(\dfrac{e}{a}\cdot\dfrac{l}{a}\) chaînes parallèles à \((Ox)\), et chaque chaîne compte \(L/a\) ressorts. Le nombre de ressorts comprimés est le nombre de chaînes multiplié par le nombre de ressorts par chaîne :
+
+\equationajustee{\boxed{N=\frac{e\,l\,L}{a^3}}}
+
+Les corrections de bord, par exemple compter \(e/a+1\) plans de molécules au lieu de \(e/a\), sont d'un ordre relatif \(a/e\) (ou \(a/l\), \(a/L\)). Elles sont négligeables, car les dimensions de la plaque sont très grandes devant la maille.
+
+Le nombre de ressorts est extensif : il est proportionnel au volume \(elL\).
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+Chaque chaîne de \(L/a\) ressorts se raccourcit de \(\Delta L\). La compression étant homogène, chaque ressort se raccourcit de
+
+\equationajustee{\delta=\frac{a\,\Delta L}{L}}
+
+Alors
+
+\equationajustee{\begin{aligned}E_p^L&=N\cdot\tfrac12\kappa\delta^2\\&=\frac{elL}{a^3}\cdot\frac12\kappa\frac{a^2\Delta L^2}{L^2}\\&=\tfrac12\,\frac{\kappa}{a}\,\frac{el}{L}\,\Delta L^2\end{aligned}}
+
+\equationajustee{\boxed{E_p^L=\tfrac12\,K\,\frac{el}{L}\,\Delta L^2}}
+
+avec \(K=\kappa/a\).
+
+\(K\) s'exprime en \(\mathrm{N\,m^{-2}}=\mathrm{Pa}\) : c'est un module d'élasticité (module d'Young du modèle).
+
+\hypertarget{iii.-flexion}{%
+\section{III. Flexion}\label{iii.-flexion}}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\(R_C\) est le \textbf{rayon de courbure} de la fibre neutre : la fibre neutre est un arc de cercle de centre \(C\), et \(R_C\) est son rayon. Sa longueur reste \(L\) et elle intercepte l'angle \(\theta\) :
+
+\equationajustee{\boxed{L=R_C\,\theta}}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+La fibre située à la distance algébrique \(r\) de la fibre neutre est un arc de rayon \(R_C+r\) et d'angle \(\theta\). Sa longueur vaut \((R_C+r)\theta\) et son élongation
+
+\equationajustee{\begin{aligned}\Delta L(r)&=(R_C+r)\theta-R_C\theta\\&=r\theta\end{aligned}}
+
+\equationajustee{\boxed{\Delta L(r)=\frac{r\,L}{R_C}}}
+
+Elle est positive pour \(r>0\) (extension) et négative pour \(r<0\) (compression).
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+L'élément compris entre \(r\) et \(r+\mathrm{d}r\) est une plaque d'épaisseur \(\mathrm{d}r\), de même largeur \(l\) et de même longueur \(L\) que la tranche.
+
+Il est allongé de façon homogène de \(\Delta L(r)\). La question 9 s'applique avec \(e\to\mathrm{d}r\) :
+
+\equationajustee{\begin{aligned}\mathrm{d}E_p&=\frac12K\frac{l\,\mathrm{d}r}{L}\Big(\frac{rL}{R_C}\Big)^2\\&=\frac12\,K\,\frac{lL}{R_C^2}\,r^2\,\mathrm{d}r\end{aligned}}
+
+\equationajustee{\boxed{\mathrm{d}E_p=\frac12\,K\,\frac{lL}{R_C^2}\,r^2\,\mathrm{d}r}}
+
+L'énergie élémentaire est proportionnelle à l'épaisseur \(\mathrm{d}r\) de la couche. Elle est nulle pour la fibre neutre (\(r=0\)), qui ne se déforme pas, et ne dépend pas du signe de \(r\) : extension et compression coûtent la même énergie.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+On intègre sur l'épaisseur, \(r\in[-e/2,e/2]\), avec
+
+\equationajustee{\int_{-e/2}^{e/2}r^2\,\mathrm{d}r=\frac{e^3}{12}}
+
+D'où
+
+\equationajustee{\begin{aligned}E_p^L&=\frac12K\frac{lL}{R_C^2}\cdot\frac{e^3}{12}\\&=\frac1{24}\,K\,\frac{Lle^3}{R_C^2}\end{aligned}}
+
+\equationajustee{\boxed{E_p^L=\frac1{24}\,K\,\frac{Lle^3}{R_C^2}}}
+
+\equationajustee{\boxed{A=\frac1{24}}}
+
+\hypertarget{iv.-relation-de-dispersion-des-ondes-de-flexion}{%
+\section{IV. Relation de dispersion des ondes de flexion}\label{iv.-relation-de-dispersion-des-ondes-de-flexion}}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+La pente de la fibre neutre est \(\tan\alpha=\partial Z/\partial x\). En faibles déformations, \(\tan\alpha\simeq\alpha\) :
+
+\equationajustee{\boxed{\alpha(x,t)=\frac{\partial Z}{\partial x}(x,t)}}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+Localement, un élément de longueur \(\mathrm{d}s\simeq\mathrm{d}x\) est un arc de rayon \(R_c\). La question 13, avec \(L\to\mathrm{d}x\), donne
+
+\equationajustee{\begin{aligned}\mathrm{d}E_p&=AKle^3\,\frac{\mathrm{d}x}{R_c^2}\\&=AKle^3\Big(\frac{\partial^2Z}{\partial x^2}\Big)^2\mathrm{d}x\end{aligned}}
+
+L'énergie dépend de la dérivée \textbf{seconde} de \(Z\) (la courbure), et non de la pente. Avec \(\partial_x^2Z=-a_Zk^2\sin(kx-\omega t)\) et \(\int_0^\lambda\sin^2(kx-\omega t)\,\mathrm{d}x=\lambda/2\) :
+
+\equationajustee{\begin{aligned}E_p^{\lambda}&=AKle^3a_Z^2k^4\,\frac{\lambda}{2}\\&=\frac{K\,l\,e^3\,a_Z^2\,k^4\,\lambda}{48}\end{aligned}}
+
+\equationajustee{\boxed{E_p^{\lambda}=\frac{K\,l\,e^3\,a_Z^2\,k^4\,\lambda}{48}}}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+Chaque tranche \(\mathrm{d}x\), de masse \(\rho\,e\,l\,\mathrm{d}x\), se déplace transversalement à la vitesse
+
+\equationajustee{\frac{\partial Z}{\partial t}=-a_Z\omega\cos(kx-\omega t)}
+
+D'où
+
+\equationajustee{\begin{aligned}E_c^{\lambda}&=\int_0^\lambda\frac12\rho e l\Big(\frac{\partial Z}{\partial t}\Big)^2\mathrm{d}x\\&=\frac{\rho\,e\,l\,a_Z^2\,\omega^2\,\lambda}{4}\end{aligned}}
+
+\equationajustee{\boxed{E_c^{\lambda}=\frac{\rho\,e\,l\,a_Z^2\,\omega^2\,\lambda}{4}}}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+Ici \(E_p^\lambda\) et \(E_c^\lambda\) ne dépendent pas du temps : ils sont égaux à leurs moyennes temporelles. L'égalité donne
+
+\equationajustee{\begin{aligned}\frac{Kle^3a_Z^2k^4\lambda}{48}&=\frac{\rho e l a_Z^2\omega^2\lambda}{4}\\12\,\rho\,\omega^2&=K e^2k^4\end{aligned}}
+
+En posant \(c^2=K/\rho\) :
+
+\equationajustee{\boxed{12\,\omega^2=e^2c^2k^4}}
+
+Contrôle dimensionnel : \(K/\rho\) est en \(\mathrm{Pa\,m^3\,kg^{-1}}=\mathrm{m^2\,s^{-2}}\), et \(e^2c^2k^4\) est bien en \(\mathrm{s^{-2}}\).
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\equationajustee{\boxed{c=\sqrt{\frac{K}{\rho}}}}
+
+\equationajustee{\begin{aligned}c&=\sqrt{\frac{70\times10^{9}}{2500}}\\&=\sqrt{2{,}8\times10^{7}}\\&\approx5{,}3\times10^{3}\ \mathrm{m\,s^{-1}}\end{aligned}}
+
+Cette célérité est celle des ondes de \textbf{compression} du matériau. Avec \(\rho=m/a^3\) et \(K=\kappa/a\), on retrouve exactement le \(c=a\sqrt{\kappa/m}\) de la question 5. Sa valeur, environ 5 km/s, est typique de la vitesse du son dans un solide et vaut environ 15 fois celle dans l'air. Ce n'est pas la vitesse des ondes de flexion : celles-ci dépendent de \(k\) et sont bien plus lentes tant que \(ke\ll1\).
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+La relation de dispersion s'écrit \(\omega=\dfrac{ec}{\sqrt{12}}k^2\), d'où
+
+\equationajustee{\begin{aligned}v_\varphi&=\frac{\omega}{k}=\frac{ec}{\sqrt{12}}\,k\\v_g&=\frac{\mathrm{d}\omega}{\mathrm{d}k}=\frac{2ec}{\sqrt{12}}\,k\end{aligned}}
+
+\equationajustee{\boxed{v_g=2\,v_\varphi}}
+
+Comme \(k=\left(\sqrt{12}\,\omega/(ec)\right)^{1/2}\), on a
+
+\equationajustee{v_\varphi=\left(\frac{ec\,\omega}{\sqrt{12}}\right)^{1/2}\propto\sqrt f}
+
+et de même \(v_g\propto\sqrt f\) : \textbf{les deux vitesses croissent comme la racine carrée de la fréquence}. Le milieu est dispersif.
+
+Un paquet d'ondes se déforme et s'étale au cours de la propagation : ses composantes de haute fréquence prennent de l'avance sur les basses. L'énergie du paquet avance à \(v_g\), deux fois plus vite que les crêtes.
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+Pour une OPPH, \(\omega^2Z=-\partial_t^2Z\) et \(k^4Z=\partial_x^4Z\). On remplace donc \(\omega^2\) par \(-\partial^2/\partial t^2\) et \(k^4\) par \(\partial^4/\partial x^4\).
+
+La relation \(12\omega^2=e^2c^2k^4\) correspond ainsi à l'équation linéaire
+
+\equationajustee{\boxed{\frac{\partial^2Z}{\partial t^2}+\frac{e^2c^2}{12}\,\frac{\partial^4Z}{\partial x^4}=0}}
+
+Vérification : avec \(Z=a_Z\sin(kx-\omega t)\), on obtient \((-\omega^2+e^2c^2k^4/12)Z=0\).
+
+Commentaire des termes :
+- le terme \(\partial_t^2Z\) est le terme d'inertie (accélération transverse, associée à la masse linéique \(\rho el\)) ;
+- le terme en \(\partial_x^4Z\) est la force de rappel due à la rigidité de flexion. Il fait intervenir la dérivée seconde de la courbure, et son coefficient \(e^2c^2/12=Ke^2/(12\rho)\) croît avec l'épaisseur ;
+- l'ordre 4 en espace contre l'ordre 2 en temps rend la propagation dispersive. L'équation reste linéaire et réversible, sans terme de dissipation. C'est l'équation des poutres d'Euler--Bernoulli.
+
+\hypertarget{v.-applications}{%
+\section{V. Applications}\label{v.-applications}}
+
+\hypertarget{modes-propres-dun-anneau-fluxfbte-uxe0-champagne}{%
+\subsection{Modes propres d'un anneau (flûte à champagne)}\label{modes-propres-dun-anneau-fluxfbte-uxe0-champagne}}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+Une condition aux limites périodique quantifie aussi le nombre d'onde dans le \textbf{modèle de Bohr} de l'atome d'hydrogène : l'onde de de Broglie de l'électron sur son orbite circulaire doit se refermer sur elle-même, soit \(2\pi r=n\lambda\). Cela quantifie le moment cinétique et l'énergie. On peut citer aussi un électron confiné sur un anneau (molécule cyclique) ou les conditions de Born--von Kármán dans un cristal.
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+La somme des deux ondes est une onde stationnaire :
+
+\equationajustee{Z(s,t)=2a_Z\sin(ks)\cos(\omega t)}
+
+Elle doit vérifier \(Z(s+2\pi R_0,t)=Z(s,t)\) pour tout \(s\), donc \(2\pi R_0k\in2\pi\mathbb{Z}\) :
+
+\equationajustee{\boxed{k_n=\frac{n}{R_0},\quad n\in{\mathbb{N}}^*}}
+
+Autrement dit, le périmètre contient un nombre entier de longueurs d'onde.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+La figure 5 du sujet (deux bosses et deux creux, \(Z\propto\cos 2\varphi\), avec \(\varphi\) l'angle polaire) est le mode \(n=2\) : deux longueurs d'onde sur le périmètre \(2\pi R_0\).
+
+Le premier mode est \(n=1\) : \(k=1/R_0\), une seule longueur d'onde sur le tour. Le déplacement radial vaut, à l'origine des angles près,
+
+\equationajustee{Z=2a_Z\cos\varphi\cos\omega t}
+
+Un côté s'écarte de \(2a_Z\) pendant que le côté opposé se rapproche de \(2a_Z\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-anneau-premier-mode.pdf}
+\caption*{Figure 2 --- Premier mode (n = 1) de la flûte vu de dessus : l'anneau se
+translate en bloc de 2aZ, d'un côté puis de l'autre (pointillés : repos)}
+\end{figure}
+
+Au premier ordre en \(a_Z\), un déplacement radial \(2a_Z\cos\varphi\) décrit le même cercle translaté de \(2a_Z\) selon la direction \(\varphi=0\) (figure 2). Le verre oscille donc \textbf{en bloc}, d'un côté puis de l'autre, sans se déformer. Pour un anneau réel, ce mouvement ne met en jeu aucune élasticité. Il n'émet pas le son de flexion et il est bloqué par le pied du verre. C'est pourquoi le premier mode de vibration réelle est le mode \(n=2\) de la figure 5 du sujet.
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+Mode \(n=2\) : \(k_2=2/R_0\). La question 17 donne \(\omega=\dfrac{ec}{\sqrt{12}}k^2\), d'où
+
+\equationajustee{\begin{aligned}\omega_2&=\frac{ec}{\sqrt{12}}\cdot\frac{4}{R_0^2}\\&=\frac{2ec}{\sqrt3\,R_0^2}\end{aligned}}
+
+La fréquence temporelle est \(f_2=\omega_2/(2\pi)\) :
+
+\equationajustee{\boxed{f_2=\frac{e}{\pi\sqrt3\,R_0^2}\sqrt{\frac{K}{\rho}}}}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+Avec \(e=5\times10^{-4}\) m, \(R_0=2\times10^{-2}\) m et \(c\approx5{,}3\times10^3\ \mathrm{m\,s^{-1}}\) :
+
+\equationajustee{\begin{aligned}f_2&=\frac{5\times10^{-4}\times5{,}3\times10^{3}}{\pi\sqrt3\times4\times10^{-4}}\\&\approx\frac{2{,}65}{5{,}4\times4\times10^{-4}}\\&\approx1{,}2\times10^{3}\ \mathrm{Hz}\end{aligned}}
+
+Discussion :
+- \(f_2\approx1\) kHz est une fréquence audible et aiguë, compatible avec le « chant » d'un verre, qui sonne entre quelques centaines de hertz et le kilohertz ;
+- le modèle ne fait pas intervenir la hauteur \(h\), puisque la déformation est supposée uniforme verticalement. Il ignore aussi l'encastrement au pied et la forme conique réelle ;
+- il traite l'anneau comme une plaque plane : la courbure de l'anneau abaisse la fréquence d'un facteur de l'ordre de l'unité ;
+- \(f_2\propto e/R_0^2\) : un verre plus fin ou plus large chante plus grave, et un liquide ajouté (masse en plus) abaisse aussi la fréquence.
+
+L'ordre de grandeur est le bon.
+
+\hypertarget{suxe9ismes}{%
+\subsection{Séismes}\label{suxe9ismes}}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+La célérité des ondes de compression de la croûte (questions 5 et 18) vaut
+
+\equationajustee{\begin{aligned}c&=\sqrt{\frac{K}{\rho}}=\sqrt{\frac{10^{11}}{2{,}8\times10^{3}}}\\&=\sqrt{3{,}6\times10^{7}}\\&\approx6{,}0\times10^{3}\ \mathrm{m\,s^{-1}}\end{aligned}}
+
+La vitesse des ondes P (6 km/s) est \textbf{cohérente} avec ce résultat. Les ondes P sont des ondes de compression longitudinales : le modèle des parties I et II les décrit par une équation de d'Alembert, donc sans dispersion. Leur vitesse ne dépend alors ni de la fréquence ni de l'épaisseur \(e\) de la croûte, seulement du matériau (\(K\), \(\rho\)), ce qui donne un sens à « une » vitesse des ondes P.
+
+L'accord à quelques pour cent près ne doit pas être surinterprété : \(K\) et \(\rho\) ne sont donnés qu'à un chiffre et varient avec la profondeur, et le modèle de ressorts selon un seul axe ignore le couplage avec les directions transverses. On retient l'accord en ordre de grandeur, ce qui valide l'usage de ce modèle simple pour la croûte.
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+Les ondes de flexion sont dispersives : \(v_\varphi\) et \(v_g\) dépendent toutes deux de la fréquence, et \(v_g=2v_\varphi\). Une vitesse sismique se mesure par le \textbf{temps d'arrivée} d'un train d'ondes entre la source et des stations éloignées. C'est donc la vitesse de propagation de l'énergie (de l'enveloppe du paquet) qui est mesurée, pas celle des crêtes, qui n'est pas accessible par un chronométrage. L'affirmation n'a de sens que pour la \textbf{vitesse de groupe}, prise à la fréquence dominante du train d'ondes.
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+D'après la question 19, \(v_g=\dfrac{2ec}{\sqrt{12}}k=\dfrac{ec}{\sqrt3}k\), donc
+
+\equationajustee{\begin{aligned}k&=\frac{\sqrt3\,v_g}{ec}\\\lambda&=\frac{2\pi}{k}=\frac{2\pi ec}{\sqrt3\,v_g}\end{aligned}}
+
+Avec \(e=3\times10^4\) m, \(c\approx6{,}0\times10^{3}\ \mathrm{m\,s^{-1}}\) et \(v_g=4\times10^{3}\ \mathrm{m\,s^{-1}}\) :
+
+\equationajustee{k=\frac{1{,}73\times4\times10^{3}}{3\times10^{4}\times6\times10^{3}}\approx3{,}9\times10^{-5}\ \mathrm{m^{-1}}}
+
+\equationajustee{\boxed{\lambda\approx1{,}6\times10^{5}\ \mathrm{m}\approx1{,}6\times10^{2}\ \mathrm{km}}}
+
+Si l'on interprétait 4 km/s comme une vitesse de phase, on obtiendrait \(\lambda=2\pi ec/(\sqrt{12}\,v_\varphi)\approx8\times10^{1}\) km.
+
+Dans les deux cas \(\lambda\) n'est que quelques fois \(e\) : l'hypothèse de plaque mince (\(\lambda\gg e\)) est à peine vérifiée. La période correspondante, de l'ordre de la minute, est bien plus longue que celle des ondes S usuelles. Cela confirme que l'assimilation est « abusive ».
+
+\hypertarget{lac-geluxe9}{%
+\subsection{Lac gelé}\label{lac-geluxe9}}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+Description de la figure 6 :
+- on voit deux signaux de même allure, un par impact, séparés d'environ 1,1 s (le premier commence vers 0,5 s, le second vers 1,7 s). Leurs durées sont voisines, donc les deux impacts sont à des distances voisines du micro ;
+- dans chaque signal, les hautes fréquences (environ 2 kHz) arrivent les premières, puis la fréquence reçue décroît vers quelques dizaines de hertz en environ 0,5 s : c'est un balayage descendant (« chirp ») ;
+- la puissance la plus forte est reçue aux basses fréquences, en fin de signal (traînée claire au voisinage de \(f\approx0\)).
+
+Interprétation : l'impact excite toutes les fréquences au même instant, mais elles ne se propagent pas à la même vitesse. Comme \(v_g\propto\sqrt f\) (question 19), les hautes fréquences arrivent avant les basses : c'est la signature directe de la dispersion des ondes de flexion, et l'origine du son « de pistolet laser » des lacs gelés.
+
+La figure seule ne permet pas d'identifier une loi \(f(t)\) précise. C'est le modèle qui la prédit : la fréquence \(f\) arrive à \(t=t_0+x/v_g(f)\), d'où \(f\propto(t-t_0)^{-2}\). On pourrait le tester en relevant des points sur la figure (question 30). De même, la variation de la puissance au cours du signal ne prouve pas une dissipation : elle traduit surtout la façon dont l'énergie de l'impact se répartit entre les fréquences et dans le temps.
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+D'après la question 19, la vitesse de groupe s'écrit
+
+\equationajustee{\begin{aligned}v_g(f)&=2\left(\frac{\pi e c f}{\sqrt3}\right)^{1/2}=\beta\sqrt f\\\beta&=2\sqrt{\frac{\pi ec}{\sqrt3}}\end{aligned}}
+
+La composante de fréquence \(f\), émise à l'instant \(t_0\) de l'impact situé à la distance \(x\), arrive à
+
+\equationajustee{t(f)=t_0+\frac{x}{\beta\sqrt f}.}
+
+L'origine des temps étant arbitraire, \(t_0\) est inconnu. On relève sur la figure 6 plusieurs couples \((t,f)\) le long d'une branche et on trace \(t\) en fonction de \(1/\sqrt f\). On obtient une droite de pente \(x/\beta\).
+
+On peut aussi utiliser une différence de temps, qui élimine \(t_0\) :
+
+\equationajustee{t(f_1)-t(f_2)=\frac{x}{\beta}\left(f_1^{-1/2}-f_2^{-1/2}\right)}
+
+Connaissant la distance \(x\) de l'impact au micro et la célérité \(c=\sqrt{K/\rho}\) de la glace, on obtient \(\beta\), puis
+
+\equationajustee{\boxed{e=\frac{\sqrt3\,\beta^2}{4\pi c}}}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+L'écart d'arrivée entre deux fréquences est \textbf{proportionnel à la distance} :
+
+\equationajustee{\Delta t=x\left(\frac1{v_g(f_2)}-\frac1{v_g(f_1)}\right)}
+
+À 50 m, toutes les fréquences arrivent presque ensemble et l'on entend un claquement bref. À 500 m, le balayage dure environ dix fois plus longtemps et l'on entend un sifflement descendant nettement étalé.
+
+Le son lointain est aussi plus faible, sans qu'il faille invoquer une dissipation : le modèle est dispersif mais non dissipatif. L'énergie de l'impact se répartit sur un front de plus en plus grand (onde à deux dimensions sur la glace) et sur une durée de plus en plus longue (étalement dû à la dispersion). Une atténuation réelle (frottements internes, rayonnement dans l'air), plus forte en général aux hautes fréquences, peut s'y ajouter, mais elle sort du modèle. Le timbre et la durée du son diffèrent donc selon la distance.
+
+\hypertarget{vi.-duxe9tection-des-ondes-de-flexion-vibromuxe9trie-laser}{%
+\section{VI. Détection des ondes de flexion : vibrométrie laser}\label{vi.-duxe9tection-des-ondes-de-flexion-vibromuxe9trie-laser}}
+
+\hypertarget{mesure-de-lamplitude-des-vibrations}{%
+\subsection{Mesure de l'amplitude des vibrations}\label{mesure-de-lamplitude-des-vibrations}}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+Une séparatrice idéale transmet ou réfléchit la moitié de l'énergie, donc multiplie l'amplitude par \(1/\sqrt2\). Les miroirs ont un facteur 1.
+- Référence \(OS_0S_1M_1S_1S_3P\) : réflexion sur \(S_0\), transmission par \(S_1\), réflexion sur \(M_1\), puis réflexion sur \(S_1\) et transmission par \(S_3\). Cela fait quatre passages par une séparatrice.
+- Sonde \(OS_0S_2M_2S_2S_3P\) : transmission par \(S_0\) et par \(S_2\), réflexion sur \(M_2\), puis réflexion sur \(S_2\) et sur \(S_3\). Cela fait aussi quatre passages par une séparatrice.
+
+Chaque amplitude est donc multipliée par \((1/\sqrt2)^4=1/4\) :
+
+\equationajustee{\boxed{a_1=a_2=\frac{a_0}{4}}}
+
+Un miroir à 45° placé en \(S_1\) enverrait directement le faisceau de référence vers \(S_3\). On aurait alors \(a_1=a_0/2\) et \(a_2=a_0/4\), et le contraste tomberait à
+
+\equationajustee{\frac{2a_1a_2}{a_1^2+a_2^2}=0{,}8}
+
+La séparatrice impose \textbf{\(a_1=a_2\), donc un contraste maximal égal à 1}. Elle permet aussi d'insérer le bras \(S_1M_1\), dont le miroir monté sur vis micrométrique sert à régler finement le chemin optique de référence (\(\epsilon\)) et à équilibrer les deux bras.
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+Longueurs des trajets :
+- référence : \(OS_0+S_0S_1+2S_1M_1+S_1S_3+S_3P=6d+2\epsilon\) ;
+- sonde : \(OS_0+S_0S_2+2S_2M_2+S_2S_3+S_3P=4d+2D+2z(t)\).
+
+Les phases s'écrivent donc
+
+\equationajustee{\boxed{\varphi_1=2\pi f_lt-\frac{2\pi}{\lambda_l}(6d+2\epsilon)}}
+
+\equationajustee{\boxed{\varphi_2=2\pi f_lt-\frac{2\pi}{\lambda_l}\big(4d+2D+2z(t)\big)}}
+
+Le retard de propagation dans \(z\) (de l'ordre de 0,1 ns) est négligeable devant la période de vibration.
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+Les deux ondes viennent de la même source. Elles n'interfèrent que si la différence de marche \(\delta=2(D-d)+2z-2\epsilon\) reste inférieure à la longueur de cohérence temporelle du laser, \(\ell_c=c_0/\Delta f_l\). Comme \(z\) et \(\epsilon\) sont microscopiques :
+
+\equationajustee{\boxed{2\,|D-d|\lesssim\ell_c}}
+
+Ordres de grandeur : environ 1 mm à 1 cm pour une diode laser multimode, environ 10 cm à 1 m pour un laser à gaz usuel, et jusqu'à des centaines de mètres pour un laser monomode stabilisé (\(\Delta f_l\sim1\) MHz). Avec un laser de vibrométrie, la distance \(D\) peut aller de quelques centimètres au mètre autour de \(d\). Le réglage \(D=d\) annule la différence de marche géométrique.
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+L'intensité reçue est \(I\propto\langle(s_1+s_2)^2\rangle\), moyennée sur le temps de réponse de la photodiode \(\tau_d=5\) ns. Cette durée est très grande devant la période optique (\(\sim10^{-15}\) s) et très petite devant la période de vibration (1 ms). Avec \(a_1=a_2=a\) et la formule rappelée :
+
+\equationajustee{(s_1+s_2)^2=a^2\left[\cos^2\varphi_1+\cos^2\varphi_2+\cos(\varphi_1+\varphi_2)+\cos(\varphi_1-\varphi_2)\right].}
+
+On a \(\langle\cos^2\varphi_i\rangle=1/2\), et \(\langle\cos(\varphi_1+\varphi_2)\rangle=0\) car ce terme oscille à \(2f_l\). Le terme \(\cos(\varphi_1-\varphi_2)\) ne dépend que de \(z(t)\), lent, et survit. Avec \(D=d\) :
+
+\equationajustee{\begin{aligned}\varphi_2-\varphi_1&=\frac{2\pi}{\lambda_l}\big(2\epsilon+2d-2D-2z\big)\\&=-\frac{4\pi}{\lambda_l}\big(z(t)-\epsilon\big)\end{aligned}}
+
+d'où \(I\propto a^2\left[1+\cos\left(4\pi\dfrac{z-\epsilon}{\lambda_l}\right)\right]\). La tension étant proportionnelle à l'intensité :
+
+\equationajustee{\boxed{U(t)=U_0\left(1+\cos\left(4\pi\,\frac{z(t)-\epsilon}{\lambda_l}\right)\right)}}
+
+Au maximum, \(U=2U_0\) : les amplitudes s'ajoutent (\(2a\)), et l'intensité vaut quatre fois celle d'une seule onde d'amplitude \(a\), ce qui n'a rien de paradoxal (l'énergie manque aux franges sombres).
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+Avec \(\epsilon=0\), \(z=a_z\sin\omega t\) et \(4\pi a_z/\lambda_l\ll1\), on développe \(\cos X\simeq1-X^2/2\) :
+
+\equationajustee{\begin{aligned}U(t)&\simeq2U_0-\frac{8\pi^2a_z^2}{\lambda_l^2}U_0\sin^2\omega t\\&=2U_0-\frac{4\pi^2a_z^2}{\lambda_l^2}U_0\big(1-\cos2\omega t\big)\end{aligned}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q36-q38-signal-contact-quadrature.pdf}
+\caption*{Figure 3 --- Tension U(t) pour de très faibles vibrations : au contact
+optique (ϵ = 0), creux du second ordre à fréquence double ; en
+quadrature (ϵ = λl/8), sinusoïde à la fréquence f}
+\end{figure}
+
+La tension reste presque constante, égale à \(2U_0\) (frange brillante), avec de minuscules creux, du second ordre en \(a_z/\lambda_l\), à la fréquence double \(2f\).
+
+Au contact optique on est sur un extremum de frange, où \(\mathrm{d}U/\mathrm{d}z=0\). La sensibilité est nulle au premier ordre, le signal est quadratique, et le signe de \(z\) est perdu puisque \(z\) et \(-z\) donnent le même signal. Ce réglage est mauvais.
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+Il faut se placer sur le \textbf{flanc d'une frange} (quadrature), là où la pente
+
+\equationajustee{\left|\frac{\mathrm{d}U}{\mathrm{d}z}\right|=U_0\frac{4\pi}{\lambda_l}\left|\sin\frac{4\pi(z-\epsilon)}{\lambda_l}\right|}
+
+est maximale en \(z=0\). La condition est \(\dfrac{4\pi\epsilon}{\lambda_l}=\dfrac{\pi}{2}+p\pi\), soit
+
+\equationajustee{\boxed{\epsilon=\frac{\lambda_l}{8}+p\,\frac{\lambda_l}{4},\ p\in\mathbb{Z}}}
+
+Par exemple \(\epsilon=\lambda_l/8\approx39\) nm.
+
+On tourne la vis micrométrique pour déplacer \(M_1\) d'un huitième de longueur d'onde à partir du contact optique. Le réglage doit être fait à une petite fraction de \(\lambda_l/8\) près, soit à quelques nanomètres. Un écart \(\delta\epsilon\) réduit la pente d'un facteur \(\cos(4\pi\delta\epsilon/\lambda_l)\) et fait réapparaître un terme quadratique. Le réglage doit aussi rester stable, à mieux que quelques nanomètres, vis-à-vis des dilatations thermiques et des vibrations parasites.
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+Avec \(\epsilon=\lambda_l/8\) :
+
+\equationajustee{\begin{aligned}U&=U_0\left(1+\cos\left(\frac{4\pi z}{\lambda_l}-\frac{\pi}{2}\right)\right)\\&=U_0\left(1+\sin\frac{4\pi z}{\lambda_l}\right)\\&\simeq U_0\left(1+\frac{4\pi a_z}{\lambda_l}\sin\omega t\right)\end{aligned}}
+
+Voir la figure 3, courbe du bas.
+
+C'est une sinusoïde de fréquence \(f\) (celle de la vibration) centrée sur \(U_0\), d'amplitude \(4\pi a_zU_0/\lambda_l\) proportionnelle à \(a_z\). La réponse est linéaire et de sensibilité maximale.
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+Le signal s'écrit
+
+\equationajustee{U(t)=U_0\left(1+\cos\left(\frac{4\pi a_z}{\lambda_l}\sin\omega t-\frac{4\pi\epsilon}{\lambda_l}\right)\right)}
+
+avec \(4\pi a_z/\lambda_l\gg1\). La phase balaie un grand nombre de franges. \(U\) oscille entre \(0\) et \(2U_0\) avec la fréquence instantanée
+
+\equationajustee{f_{\text{fr}}(t)=\frac{2|\dot z|}{\lambda_l}=\frac{2a_z\omega|\cos\omega t|}{\lambda_l}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q39-franges-grande-amplitude.pdf}
+\caption*{Figure 4 --- Signal U(t) pour az ≫ λl : franges serrées aux passages par
+z = 0, étirées aux rebroussements z = ±az}
+\end{figure}
+
+Les oscillations sont très serrées aux passages par \(z=0\) (instants \(0\), \(T/2\) et \(T\)), où la vitesse est maximale.
+
+Elles s'espacent jusqu'à s'arrêter aux points de rebroussement \(z=\pm a_z\) (instants \(T/4\) et \(3T/4\)), et le motif est symétrique par rapport à ces instants.
+
+Sur une période on compte \(8a_z/\lambda_l\) franges, soit environ 2 500 pour \(a_z=100\ \mu\)m. La fréquence maximale des franges, environ 4 MHz, reste compatible avec les 5 ns de la photodiode.
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+Entre deux rebroussements, \(z\) passe de \(-a_z\) à \(+a_z\) pendant une demi-période, et la phase \(4\pi z/\lambda_l\) varie de \(8\pi a_z/\lambda_l\).
+
+On compte donc \(\mathcal N=4a_z/\lambda_l\) franges, une par déplacement de \(\lambda_l/2\) (aller-retour). À l'oscilloscope, on compte le nombre \(\mathcal N\) de maxima de \(U\) entre deux instants où les franges s'arrêtent :
+
+\equationajustee{\boxed{a_z=\frac{\mathcal N\,\lambda_l}{4}}}
+
+La résolution est d'environ \(\lambda_l/4\approx80\) nm. On peut aussi mesurer la fréquence maximale des franges, \(f_{\max}=2a_z\omega/\lambda_l\), ce qui donne \(a_z=\lambda_lf_{\max}/(2\omega)\).
+
+\hypertarget{mesure-de-la-vitesse-des-vibrations}{%
+\subsection{Mesure de la vitesse des vibrations}\label{mesure-de-la-vitesse-des-vibrations}}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+À \(t=0\), un front atteint le miroir. Le front suivant est à la distance \(c_0T\) en arrière et rattrape le miroir, qui fuit à la vitesse \(v\), avec la vitesse relative \(c_0-v\). Il l'atteint à l'instant \(T'\) tel que \(c_0T'=c_0T+vT'\) :
+
+\equationajustee{\boxed{T'=\frac{T}{1-v/c_0}\simeq T\left(1+\frac{v}{c_0}\right)}}
+
+On a bien \(T'>T\) pour \(v>0\).
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+Le front réémis à \(t=0\) par le miroir se trouve à \(t=T'\) à la distance \(c_0T'\) de la position initiale du miroir, du côté de \(S_2\). Le miroir, qui s'est éloigné de \(vT'\), réémet alors le front suivant. Leur distance est la nouvelle longueur d'onde :
+
+\equationajustee{\boxed{\lambda''=(c_0+v)\,T'}}
+
+\equationajustee{\boxed{T''=\frac{\lambda''}{c_0}=T'\left(1+\frac{v}{c_0}\right)}}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+En combinant les questions 41 et 42, au premier ordre en \(v/c_0\) :
+
+\equationajustee{\begin{aligned}T''&=T\,\frac{1+v/c_0}{1-v/c_0}\simeq T\left(1+\frac{2v}{c_0}\right)\\f''&=\frac1{T''}\simeq f_l\left(1-\frac{2v}{c_0}\right)\end{aligned}}
+
+\equationajustee{\boxed{f_D=f''-f_l=-2f_l\,\frac{v}{c_0}}}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\equationajustee{f_l=\frac{c_0}{\lambda_l}=\frac{3\times10^{8}}{3{,}15\times10^{-7}}\approx9{,}5\times10^{14}\ \mathrm{Hz}}
+
+La vitesse de la plaque est \(v=\dot z=a_z\omega\cos\omega t\), avec \(\omega=2\pi f\) et \(f=1\) kHz. Son amplitude vaut
+
+\equationajustee{v_{\max}=2\pi fa_z=2\pi\times10^3\times10^{-4}\approx0{,}63\ \mathrm{m\,s^{-1}}}
+
+Le décalage Doppler \(f_D=-2v/\lambda_l\) oscille donc entre \(\pm|f_D|_{\max}\) :
+
+\equationajustee{\boxed{|f_D|_{\max}=\frac{2v_{\max}}{\lambda_l}=\frac{2\times0{,}63}{3{,}15\times10^{-7}}\approx4\times10^{6}\ \mathrm{Hz}}}
+
+C'est environ \(4\times10^{-9}\) fois \(f_l\) (rapport \(2v_{\max}/c_0\)).
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+Avec \(\epsilon=0\) et \(D=d\), l'onde de référence parcourt \(6d\) à la fréquence \(f_l\).
+
+L'onde sonde parcourt \(3d\) (trajet \(OS_0S_2M_2\)) à la fréquence \(f_l\), puis \(3d\) (trajet \(M_2S_2S_3P\)) à \(f_l+f_D\) après réflexion.
+
+La phase Doppler, acquise à la réflexion sur \(M_2\) avec \(z(0)=0\), est retardée de \(3d/c_0\) :
+
+\equationajustee{\boxed{\varphi_1=2\pi f_l\Big(t-\frac{6d}{c_0}\Big)}}
+
+\equationajustee{\boxed{\varphi_2=2\pi f_l\Big(t-\frac{6d}{c_0}\Big)+2\pi f_D\Big(t-\frac{3d}{c_0}\Big)}}
+
+Intensité instantanée, avec \(a_1=a_2=a\), développée puis linéarisée à l'aide de \(\cos^2X=\tfrac12(1+\cos2X)\) et de la formule rappelée :
+
+\equationajustee{\boxed{I(t)\propto a^2\left[1+\tfrac12\cos2\varphi_1+\tfrac12\cos2\varphi_2+\cos(\varphi_1+\varphi_2)+\cos(\varphi_1-\varphi_2)\right]}}
+
+Les trois termes \(\cos2\varphi_1\), \(\cos2\varphi_2\) et \(\cos(\varphi_1+\varphi_2)\) oscillent à environ \(2f_l\approx2\times10^{15}\) Hz. Le terme \(\cos(\varphi_1-\varphi_2)\) oscille à \(f_D\), quelques mégahertz.
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+La formule de Fresnel s'obtient en moyennant sur une durée \(\tau_{\text{int}}\) très grande devant la période optique, mais petite devant les temps d'évolution du signal utile :
+
+\equationajustee{\frac1{f_l}\ \ll\ \tau_{\text{int}}\ \ll\ \frac1{|f_D|}}
+
+avec \(1/f_l\sim10^{-15}\) s et \(1/|f_D|\gtrsim2{,}5\times10^{-7}\) s.
+
+En pratique \(\tau_{\text{int}}\) est le temps de réponse de la photodiode, 5 ns, qui convient. Les termes à \(2f_l\) se moyennent à zéro. Le terme de battement à \(f_D\), \(10^7\) à \(10^8\) fois plus lent, n'est pas moyenné. Les deux rayons, de fréquences voisines et issus de la même source (donc cohérents entre eux), produisent un \textbf{battement} : l'intensité moyenne varie à la fréquence \(|f_D|\).
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+Après moyenne, \(I\propto a^2\left[1+\cos(\varphi_2-\varphi_1)\right]\) avec \(\varphi_2-\varphi_1=2\pi f_D(t-3d/c_0)\). La tension étant proportionnelle à l'intensité moyenne :
+
+\equationajustee{\boxed{U(t)=U_0\Big(1+\cos\big[2\pi f_D(t)\,(t-\tau)\big]\Big)}}
+
+\equationajustee{\boxed{\tau=\frac{D+2d}{c_0}=\frac{3d}{c_0}}}
+
+\(\tau\) est le temps de vol de la lumière entre la plaque \(M_2\), où elle acquiert le décalage Doppler, et la photodiode.
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\equationajustee{\begin{aligned}\tau&=\frac{3\times10^{-2}}{3\times10^{8}}\\&=1\times10^{-10}\ \mathrm{s}=0{,}1\ \mathrm{ns}\end{aligned}}
+
+\(\tau\) est négligeable devant le temps de réponse de la photodiode (5 ns), devant la période minimale du battement (250 ns) et devant la période de vibration (1 ms). Le déphasage \(2\pi f_D\tau\lesssim2{,}5\times10^{-3}\) rad est négligeable, donc \(U(t)\simeq U_0\left(1+\cos(2\pi f_Dt)\right)\) : la mesure est quasi instantanée.
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\(U\) ne dépend de \(v\) qu'à travers \(\cos(2\pi f_D(t-\tau))\), et le cosinus est pair.
+
+Changer \(f_D\) en \(-f_D\), c'est-à-dire \(v\) en \(-v\), donne donc le même signal.
+
+On mesure \(|f_D|\), c'est-à-dire \(|v|\), mais \textbf{pas le signe de la vitesse} : on ne sait pas si la plaque s'approche ou s'éloigne.
+
+\hypertarget{question-50}{%
+\subsection{Question 50}\label{question-50}}
+
+La sonde arrive sur \(M_2\) à la fréquence \(f_l+f_B\). Elle repart à la fréquence \(f_l+f_B+f_D'\), avec
+
+\equationajustee{f_D'=-2(f_l+f_B)\frac{v}{c_0}\simeq f_D\quad\text{car } f_B\ll f_l.}
+
+La référence reste à \(f_l\). Le battement se fait donc à \(f_B+f_D\) :
+
+\equationajustee{\boxed{U(t)=U_0\Big(1+\cos\big[2\pi\big(f_B+f_D(t)\big)t+\psi_0\big]\Big)}}
+
+où \(\psi_0\) est une phase constante due aux chemins optiques.
+
+Comme \(f_B=40\) MHz dépasse \(|f_D|_{\max}\approx4\) MHz, la fréquence du battement \(f_B+f_D\) reste toujours positive, entre 36 et 44 MHz.
+
+Elle est supérieure à \(f_B\) si \(v<0\) (la plaque s'approche) et inférieure à \(f_B\) si \(v>0\) (elle s'éloigne). Changer le signe de \(v\) change le signal, donc l'indétermination est levée.
+
+\hypertarget{question-51}{%
+\subsection{Question 51}\label{question-51}}
+
+Le signal est une porteuse de fréquence \(f_B=40\) MHz dont la \textbf{fréquence instantanée} varie au rythme de la vitesse de la plaque :
+
+\equationajustee{f_B+f_D(t)=f_B-\frac{2v(t)}{\lambda_l}}
+
+L'information (le signal modulant \(v(t)\), à 1 kHz) est codée dans la fréquence, et l'amplitude \(U_0\) reste constante. C'est la définition d'une modulation de fréquence, d'excursion \(\pm4\) MHz autour de la porteuse.
+
+\hypertarget{question-52}{%
+\subsection{Question 52}\label{question-52}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q52-signal-modulation-frequence.pdf}
+\caption*{Figure 5 --- Signal U(t) modulé en fréquence : amplitude constante,
+oscillations resserrées quand v \textless{} 0 et espacées quand v
+\textgreater{} 0 (modulation exagérée)}
+\end{figure}
+
+La sinusoïde reste comprise entre \(0\) et \(2U_0\), avec une amplitude constante : ce n'est pas une modulation d'amplitude.
+
+Ses oscillations se resserrent quand \(v<0\) et s'espacent quand \(v>0\), avec la période \(1/f=1\) ms de la vibration. En réalité, chaque milliseconde contient environ \(4\times10^4\) oscillations et la fréquence ne varie que de \(\pm10\,\%\).
+
+\hypertarget{question-53}{%
+\subsection{Question 53}\label{question-53}}
+
+Le circuit est supposé à vide (aucun courant prélevé en sortie). Le courant \(i\) traverse \(C\) puis \(R\). Avec la loi des mailles \(u_C=U-U_s\) :
+
+\equationajustee{\begin{aligned}U_s&=Ri\\i&=C\frac{\mathrm{d}u_C}{\mathrm{d}t}=C\left(\frac{\mathrm{d}U}{\mathrm{d}t}-\frac{\mathrm{d}U_s}{\mathrm{d}t}\right)\end{aligned}}
+
+En divisant par \(C\) après avoir remplacé \(i\) par \(U_s/R\) :
+
+\equationajustee{\boxed{\frac{\mathrm{d}U}{\mathrm{d}t}=\frac{U_s}{RC}+\frac{\mathrm{d}U_s}{\mathrm{d}t}}}
+
+\hypertarget{question-54}{%
+\subsection{Question 54}\label{question-54}}
+
+On a \(U_s\simeq RC\,\dfrac{\mathrm{d}U}{\mathrm{d}t}\) si \(\left|\dfrac{\mathrm{d}U_s}{\mathrm{d}t}\right|\ll\dfrac{|U_s|}{RC}\). En régime sinusoïdal à la pulsation \(\Omega\), cela s'écrit \(RC\,\Omega\ll1\). La fonction de transfert \(\underline H=\dfrac{jRC\Omega}{1+jRC\Omega}\) se réduit alors à \(jRC\Omega\).
+
+Le signal contient des fréquences jusqu'à \(f_B+|f_D|_{\max}=44\) MHz, il faut donc
+
+\equationajustee{RC\ll\frac1{2\pi\times44\times10^{6}}\approx3{,}6\ \mathrm{ns}.}
+
+Par exemple :
+
+\equationajustee{\boxed{R=10\ \Omega}}
+
+\equationajustee{\boxed{C=10\ \mathrm{pF}}}
+
+soit \(RC=0{,}1\) ns. Cela donne \(RC\Omega\le0{,}03\) et une erreur relative inférieure à \(10^{-3}\) sur la pente. On ne peut pas descendre beaucoup plus bas, car l'amplitude de sortie, \(\sim2\pi fRCU_0\approx0{,}03\,U_0\), diminue avec \(RC\), et les capacités parasites sont de l'ordre du picofarad.
+
+\hypertarget{question-55}{%
+\subsection{Question 55}\label{question-55}}
+
+\(U=U_0(1+\cos\Phi)\) avec \(\Phi'(t)=2\pi(f_B+f_D(t))\), donc
+
+\equationajustee{\begin{aligned}U_s&\simeq RC\frac{\mathrm{d}U}{\mathrm{d}t}\\&=-2\pi RC\,U_0\big(f_B+f_D(t)\big)\sin\Phi(t)\end{aligned}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q55-sortie-derivateur.pdf}
+\caption*{Figure 6 --- Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont
+l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)}
+\end{figure}
+
+On obtient une porteuse à environ 40 MHz, centrée sur zéro (la composante continue \(U_0\) est éliminée), dont l'\textbf{amplitude} est proportionnelle à la fréquence instantanée.
+
+L'enveloppe varie entre \(2\pi RCU_0(f_B-|f_D|_{\max})\) et \(2\pi RCU_0(f_B+|f_D|_{\max})\), soit \(\pm10\,\%\) autour de sa valeur moyenne, au rythme de \(v(t)\). Le dérivateur a converti la modulation de fréquence en modulation d'amplitude.
+
+\hypertarget{question-56}{%
+\subsection{Question 56}\label{question-56}}
+
+On extrait l'enveloppe \(E(t)=2\pi RCU_0\left(f_B+f_D(t)\right)\) par détection de crête : diode suivie d'un filtre RC de constante de temps comprise entre \(1/f_B\) et \(1/f\). Le rapport à sa valeur moyenne donne
+
+\equationajustee{\begin{aligned}\frac{E(t)-\langle E\rangle}{\langle E\rangle}&=\frac{f_D(t)}{f_B}\\&=-\frac{2v(t)}{\lambda_lf_B}\end{aligned}}
+
+ce qui ne demande de connaître ni \(U_0\) ni \(RC\).
+
+On en déduit \(v(t)=-\dfrac{\lambda_l}{2}f_D(t)\), une fonction sinusoïdale de pulsation \(\omega\) et d'amplitude \(v_{\max}=a_z\omega\). Si \(m\) est la profondeur de modulation relative mesurée de l'enveloppe, \(|f_D|_{\max}=mf_B\) et
+
+\equationajustee{\begin{aligned}a_z&=\frac{v_{\max}}{\omega}=\frac{\lambda_l\,|f_D|_{\max}}{2\omega}\\&=\frac{\lambda_l\,m\,f_B}{4\pi f}\end{aligned}}
+
+\equationajustee{\boxed{a_z=\frac{\lambda_l\,m\,f_B}{4\pi f}}}
+
+Contrôle : \(m=0{,}1\) donne \(a_z=\dfrac{3{,}15\times10^{-7}\times4\times10^{6}}{4\pi\times10^{3}}\approx1{,}0\times10^{-4}\) m, ce qui redonne bien \(100\ \mu\)m.
+
+On peut aussi intégrer numériquement \(v(t)\) pour reconstruire \(z(t)\), à une constante près (le signe de \(v\) est connu grâce au décalage \(f_B\)). Cette méthode fonctionne quelle que soit l'amplitude, sans le réglage critique de \(\epsilon\) ni le comptage de franges.
+
+\end{document}

@@ -1,0 +1,1983 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP TPC — Chimie 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP TPC}
+\fancyhead[R]{\small Chimie 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP TPC — Chimie 2026\par}\medskip
+  {\large CCINP · TPC · Chimie · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+L'épreuve (TPC3C, 4 heures, \textbf{calculatrices interdites}) comporte \textbf{deux problèmes indépendants} et 49 questions, avec des données à la fin de chaque problème (pages 9 et 15--16). Les aides numériques (\(6/11\), \(7/8\), \(4{,}8\times1{,}3\), \(5{,}0\times3{,}6\)) signalent les applications numériques attendues : y penser avant de poser un calcul.
+
+\textbf{Problème 1 --- Les MOFs (Q1 à Q27).} Le fil conducteur est la préparation du MIL-53(Al), un solide poreux formé de chaînes d'octaèdres d'aluminium reliés par des ions téréphtalate.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I --- L'aluminium métallique (Q1 à Q16).} Culture et atomistique (Q1--Q2) ; diagramme E-pH de l'aluminium et attaque de Al par HCl (Q3--Q5) ; diagramme binaire liquide-vapeur eau/acide nitrique avec azéotrope (Q6--Q10) ; électrolyse sur électrodes d'aluminium en milieu basique : équations, potentiels, courbes courant-potentiel, rendement faradique (Q11--Q16).
+\item
+  \textbf{Partie II --- L'acide téréphtalique (Q17 à Q19).} Polyester PET, hydrolyse et titrage pH-métrique et conductimétrique d'un mélange acide fort et diacide faible.
+\item
+  \textbf{Partie III --- Réacteur continu (Q20 à Q22).} RPAC en régime permanent, ordre 1, bilan thermique adiabatique.
+\item
+  \textbf{Partie IV --- Orbitales moléculaires (Q23 à Q27).} Complexe plan carré {[}AlL\(_4\){]} à partir d'un diagramme fourni, OM de HO\(^-\), interaction frontalière et pontage.
+\end{itemize}
+
+\textbf{Problème 2 --- Synthèse de 1,3-oxazines (Q28 à Q49).}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I --- Du tartrate au succinimide (Q28 à Q39).} Stéréochimie de l'acide tartrique (Q28--Q30), estérification et Dean-Stark, synthèse de Williamson, solvant DMF, RMN (Q31--Q35), saponification et traitement d'une extraction (Q36--Q39).
+\item
+  \textbf{Partie II --- Formation de 1,3-oxazines (Q40 à Q49).} Activation et alkylation d'un imide, réduction partielle et ion N-acyliminium (Q40--Q44), protection silylée, hydroboration, oxydation et aldolisation (Q45--Q47), addition de Michael et oxa-Michael, stéréochimie du produit (Q48--Q49).
+\end{itemize}
+
+\textbf{Notions mobilisées} : configuration électronique ; diagrammes E-pH, loi de Nernst, constante d'équilibre redox ; diagrammes binaires isobares, variance, théorème des moments, distillation ; électrolyse, courbes courant-potentiel, surpotentiels, loi de Faraday ; titrages et conductimétrie ; RPAC et bilans enthalpiques ; méthode des fragments en OM ; stéréochimie (CIP, méso, pouvoir rotatoire) ; estérification, SN2, saponification, extraction liquide-liquide ; acidité des imides, mésomérie ; réductions par NaBH\(_4\), ion iminium ; silylation, hydroboration, oxydations, aldolisation-\allowbreak{}crotonisation, addition de Michael ; spectroscopies IR et RMN.
+
+\textbf{Difficulté.} Elle est moyenne, mais le sujet est long. Beaucoup de questions relèvent du cours (Q1--Q5, Q17, Q20--Q21, Q28--Q33, Q36, Q38--Q40, Q42). Les vraies difficultés sont les lectures graphiques (Q4, Q7, Q9), la gestion rigoureuse des potentiels et surpotentiels (Q13--Q14), l'interprétation conjointe des deux courbes de titrage (Q18) et la rédaction des mécanismes et des choix de réactifs (Q44, Q47, Q48).
+
+\textbf{À ne pas laisser passer} : Q1--Q5, Q8, Q10, Q12, Q16, Q17, Q19--Q22, Q24, Q28--Q32, Q35, Q36, Q38, Q40, Q42, Q43.
+
+\textbf{Gestion du temps} : environ 2 h pour chaque problème. Dans le problème 1, les parties III et IV ne dépendent pas des parties I et II : en cas de blocage sur l'électrolyse, passer au RPAC (trois questions rapides). Dans le problème 2, la partie II.3 (Q48--Q49) est en grande partie indépendante de ce qui précède.
+
+Problème 1 --- Les MOFs (Metal-Organic Frameworks)
+
+\hypertarget{partie-i-laluminium-muxe9tallique}{%
+\section{Partie I --- L'aluminium métallique}\label{partie-i-laluminium-muxe9tallique}}
+
+On part de l'atome, puis on utilise le diagramme E-pH pour comprendre l'attaque acide des déchets d'aluminium. Le diagramme binaire eau/HNO\(_3\) sert ensuite à analyser la distillation qui élimine l'acide nitrique. Une voie électrochimique termine la partie : courbes courant-potentiel et loi de Faraday.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Le prix décerné à ces trois chercheurs est le plus célèbre des prix scientifiques ; il porte le nom d'un industriel du XIXe siècle qui a fait fortune dans les explosifs.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Il s'agit du \textbf{prix Nobel de chimie 2025}. Il porte le nom d'Alfred Nobel, chimiste et industriel suédois, inventeur de la \textbf{dynamite} (nitroglycérine absorbée sur de la terre de diatomées, ce qui la rend manipulable).
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Déduire \(Z\) de la période et de la colonne, puis appliquer la règle de Klechkowski.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+L'aluminium est dans la 3e période et la colonne 13, donc \(Z=13\) :
+
+\equationajustee{\boxed{\mathrm{Al}:\ 1s^2\,2s^2\,2p^6\,3s^2\,3p^1}}
+
+Il possède trois électrons de valence (\(3s^2\,3p^1\)), d'où l'ion Al\(^{3+}\).
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Classer d'abord les espèces par nombre d'oxydation : verticalement, le diagramme sépare les degrés d'oxydation.
+
+\end{indication}
+
+\begin{indication}{2}
+
+À n.o. égal, se déplacer vers la droite revient à « ajouter des HO\(^-\) » : ranger les trois espèces de l'aluminium(III) dans cet ordre.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Nombres d'oxydation : 0 pour Al(s), +III pour Al\(^{3+}\), Al(OH)\(_3\) et {[}Al(OH)\(_4\){]}\(^-\). Le domaine du bas, présent à tout pH, est celui du n.o. le plus faible : \textbf{D = Al(s)}.
+
+À n.o. +III, de gauche à droite, on passe du cation Al\(^{3+}\) à l'hydroxyde, puis à l'aluminate :
+
+\equationajustee{\begin{aligned}
+\mathrm{Al^{3+}}+3\,\mathrm{HO^-}&=\mathrm{Al(OH)_3}\\
+\mathrm{Al(OH)_3}+\mathrm{HO^-}&=[\mathrm{Al(OH)_4}]^-
+\end{aligned}}
+
+Les frontières verticales à pH 4 et pH 10 sont des frontières de précipitation et de dissolution.
+
+\equationajustee{\boxed{\begin{aligned}
+A&=\mathrm{Al^{3+}(aq)}\\
+B&=\mathrm{Al(OH)_3(s)}\\
+C&=[\mathrm{Al(OH)_4}]^-(\mathrm{aq})\\
+D&=\mathrm{Al(s)}
+\end{aligned}}}
+
+Contrôle par les pentes :
+
+\begin{itemize}
+\tightlist
+\item
+  A/D est horizontale, car Al³⁺ + 3 e⁻ = Al ne fait pas intervenir H⁺ ;
+\item
+  B/D a une pente de \(-0{,}06\) V par unité de pH (3 H⁺ pour 3 e⁻) ;
+\item
+  C/D a une pente de \(-0{,}08\) V par unité de pH (4 H⁺ pour 3 e⁻), comme on le lit sur la figure 1 : de \(-2{,}08\) V à pH 10 à \(-2{,}40\) V à pH 14.
+\end{itemize}
+
+\begin{methode}
+
+Attribuer un diagramme E-pH : n.o. croissant de bas en haut, basicité croissante de gauche à droite à n.o. fixé. Vérifier ensuite les pentes, qui valent \(-0{,}06\,m/n\) pour \(m\) H\(^+\) et \(n\) électrons.
+
+\end{methode}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Sur le segment horizontal, une seule espèce dissoute intervient ; écrire la loi de Nernst et la convention de tracé.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention au nombre d'électrons échangés : le terme de concentration n'est pas \(0{,}06\log c_T\).
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Couple Al\(^{3+}\)/Al : Al\(^{3+}\) + 3 e\(^-\) = Al(s), d'où
+
+\equationajustee{E=E^\circ+\frac{0{,}06}{3}\log[\mathrm{Al^{3+}}]}
+
+Sur la frontière A/D, \([\mathrm{Al^{3+}}]=c_T=10^{-2}\) mol/L, et on lit \(E_{\mathrm{front}}\approx-1{,}70\) V :
+
+\equationajustee{\begin{aligned}
+E^\circ&=E_{\mathrm{front}}-0{,}02\log c_T\\
+&=-1{,}70+0{,}04
+\end{aligned}}
+
+\equationajustee{\boxed{E^\circ(\mathrm{Al^{3+}/Al})\approx-1{,}66\ \mathrm V}}
+
+\begin{piege}
+
+Prendre directement \(E^\circ=-1{,}70\) V en oubliant la convention de tracé. L'écart de 0,04 V est petit, mais c'est lui que la question évalue.
+
+\end{piege}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Quel oxydant de la solution d'acide chlorhydrique peut oxyder l'aluminium ? Observer le gaz qui se dégage.
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(\log K^\circ=n\,\Delta E^\circ/0{,}06\), avec \(n\) le nombre d'électrons de l'équation telle qu'elle est écrite.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+L'oxydant est H\(^+\) (Cl\(^-\) est spectateur) :
+
+\equationajustee{\boxed{2\,\mathrm{Al(s)}+6\,\mathrm{H^+(aq)}\longrightarrow2\,\mathrm{Al^{3+}(aq)}+3\,\mathrm{H_2(g)}}}
+
+Avec \(n=6\) électrons :
+
+\equationajustee{\begin{aligned}
+\log K^\circ&=\frac{6\,(0-(-1{,}66))}{0{,}06}\\
+&=166
+\end{aligned}}
+
+\equationajustee{\boxed{K^\circ=10^{166}}}
+
+\textbf{La réaction est totale.} Elle explique le dégagement gazeux (H\(_2\)) et l'exothermicité. Bilan de matière :
+
+\equationajustee{\begin{aligned}
+n(\mathrm{H^+})&=0{,}60\ \mathrm{mol}\\
+n(\mathrm{Al})&=5{,}0/27\approx0{,}185\ \mathrm{mol}
+\end{aligned}}
+
+L'aluminium consomme \(0{,}56\) mol de H\(^+\). L'acide est en léger excès, l'aluminium est entièrement oxydé et le pH reste dans le domaine de Al\(^{3+}\).
+
+\begin{jury}
+
+Le verbe conclure appelle une phrase qui relie la valeur de \(K^\circ\) à la transformation réelle : réaction totale, réactif limitant, observations du protocole.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Repérer les points où les deux courbes se rejoignent : corps purs et point A. Dans chaque fuseau, quelle courbe correspond à l'apparition de la première bulle ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans un domaine biphasé, la composition des phases ne se lit pas au point figuratif mais sur les courbes, à la même température.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Les courbes se rejoignent en \(w=0\) (eau, 100 °C), en \(w=1\) (HNO\(_3\), 83 °C) et en A (122 °C) : il s'agit d'un azéotrope à maximum de température.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{(a)}, la courbe inférieure de chaque fuseau, est la \textbf{courbe d'ébullition} ; \textbf{(b)}, la courbe supérieure, est la \textbf{courbe de rosée}.
+\item
+  \textbf{I} : \textbf{liquide} seul, de composition égale à la composition globale.
+\item
+  \textbf{II} (\(w<0{,}67\)) : \textbf{liquide + vapeur}. Le liquide a la composition lue sur la courbe d'ébullition, la vapeur celle lue sur la courbe de rosée ; la vapeur est plus riche en eau.
+\item
+  \textbf{III} (\(w>0{,}67\)) : \textbf{liquide + vapeur}, avec les mêmes règles de lecture ; la vapeur est plus riche en HNO\(_3\).
+\item
+  \textbf{IV} : \textbf{vapeur} seule, de composition égale à la composition globale.
+\end{itemize}
+
+\begin{piege}
+
+Annoncer « liquide + vapeur » sans dire où lire les compositions. La question demande « nature \textbf{et} composition ».
+
+\end{piege}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Une rupture de pente apparaît chaque fois que le nombre de phases change. Repérer, à \(w=0{,}30\), les températures d'entrée et de sortie du fuseau.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le point A, penser à la question suivante : la température peut-elle varier pendant la vaporisation ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\textbf{\(w=0{,}30\).} Le liquide chauffe seul (pente forte) jusqu'à \textbf{105 °C} (courbe d'ébullition, première bulle). La pente diminue alors : une partie de la puissance sert à vaporiser, mais la température continue de croître, car le liquide s'enrichit en HNO\(_3\) et sa température d'ébullition augmente. La dernière goutte disparaît vers \textbf{116 °C} (courbe de rosée) : nouvelle rupture de pente, la pente redevient forte (vapeur seule).
+
+\textbf{\(w=0{,}67\).} La température croît jusqu'à \textbf{122 °C}, puis reste constante (\textbf{palier}) pendant toute la vaporisation, et remonte ensuite.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q07-courbes-analyse-thermique.pdf}
+\caption*{Figure 1 --- Courbes d'analyse thermique : deux ruptures de pente à 105
+et 116 °C pour w = 0,30, palier à 122 °C pour l'azéotrope}
+\end{figure}
+
+\begin{piege}
+
+Dessiner un palier pour \(w=0{,}30\). Un mélange de composition quelconque bout sur un intervalle de température : seuls un corps pur et un azéotrope donnent un palier.
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Que dire de la composition de la vapeur formée à partir d'un liquide de composition A ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Compter les paramètres intensifs (\(T\), \(P\), compositions des deux phases), retrancher les relations d'équilibre, puis les contraintes imposées : pression fixée et égalité des compositions.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Le point A est un \textbf{azéotrope} (à maximum de température, dit négatif). La vapeur formée a \textbf{la même composition que le liquide} : le mélange bout à température constante (122 °C sous 1 bar) sans changer de composition, comme un corps pur.
+
+Variance du système biphasé :
+
+\equationajustee{\begin{aligned}
+v&=c+2-\varphi\\
+&=2
+\end{aligned}}
+
+Avec \(P\) fixée et la contrainte \(w_L=w_V\) propre à l'azéotrope :
+
+\equationajustee{\boxed{v'=2-1-1=0}}
+
+Le système est invariant : la température reste constante tant que les deux phases coexistent, d'où le \textbf{palier}. Pour une autre composition, \(v'=1\) : la température varie pendant l'ébullition.
+
+\begin{piege}
+
+Un azéotrope à maximum de température est dit \textbf{négatif} : on ne le qualifie pas d'azéotrope « positif ».
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Placer le point (\(w=0{,}20\) ; 105 °C) et vérifier qu'il est dans un fuseau. Tracer l'horizontale et lire les deux compositions aux extrémités.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire la conservation de la masse totale et celle de la masse de HNO\(_3\) ; l'aide numérique du sujet indique les fractions attendues.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+À 105 °C, \(w=0{,}20\) est dans le domaine II : à cette composition, la courbe d'ébullition passe vers 103 °C et la courbe de rosée vers 112 °C. L'horizontale à 105 °C coupe la courbe d'ébullition en \(w_L\approx0{,}30\) et la courbe de rosée en \(w_V\approx0{,}08\).
+
+\equationajustee{\begin{aligned}
+m_L+m_V&=m\\
+m_L\,w_L+m_V\,w_V&=m\,w
+\end{aligned}}
+
+\equationajustee{\begin{aligned}
+m_L&=m\,\frac{w-w_V}{w_L-w_V}\\
+&=1{,}0\times\frac{0{,}12}{0{,}22}\\
+&=\frac{6}{11}\ \mathrm{kg}
+\end{aligned}}
+
+\equationajustee{m_V=\frac{5}{11}\ \mathrm{kg}}
+
+\equationajustee{\boxed{\begin{aligned}
+m_{\mathrm{liquide}}&\approx0{,}55\ \mathrm{kg}\ (w=0{,}30)\\
+m_{\mathrm{vapeur}}&\approx0{,}45\ \mathrm{kg}\ (w=0{,}08)
+\end{aligned}}}
+
+\begin{methode}
+
+Théorème des moments : la masse d'une phase est proportionnelle à la longueur du segment qui sépare le point figuratif de l'\textbf{autre} phase. On ne l'applique qu'avec des fractions \textbf{massiques} quand on cherche des \textbf{masses}.
+
+\end{methode}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Une distillation fractionnée conduit le distillat et le résidu vers les deux bornes du fuseau qui contient le mélange initial.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Laquelle de ces deux bornes a la température d'ébullition la plus élevée ? C'est elle qui reste dans le bouilleur.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Le mélange \(w=0{,}40\) est dans le fuseau II, borné par l'eau pure (100 °C) et l'azéotrope (122 °C). La vapeur, plus riche en eau, s'élève dans la colonne : en tête, on recueille le constituant de plus basse température d'ébullition ; dans le bouilleur, il reste l'azéotrope.
+
+\equationajustee{\boxed{\begin{aligned}{}&\text{distillat : eau pure }(w=0)\\
+&\text{\text{résidu} : \text{azéotrope} }(w=0{,}67)
+\end{aligned}}}
+
+Conservation de HNO\(_3\) :
+
+\equationajustee{\begin{aligned}
+m_{\mathrm{\text{rés}}}&=\frac{m\,w}{w_A}\\
+&=\frac{0{,}40}{0{,}67}\\
+&\approx\boxed{0{,}60\ \mathrm{kg}}
+\end{aligned}}
+
+On recueille aussi environ 0,40 kg d'eau.
+
+\begin{piege}
+
+Annoncer « eau et HNO\(_3\) pur » : on ne franchit pas un azéotrope par distillation. Ici le résidu est l'azéotrope, et non le distillat, parce que celui-ci est à \textbf{maximum} de température.
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+L'anode est le siège de l'oxydation. À quel pôle du générateur est-elle reliée en électrolyse ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la soude, penser à trois rôles : réactif, conducteur, et effet sur un acide de p\(K_a\) connu.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q11-cellule-electrolyse.pdf}
+\caption*{Figure 2 --- Cellule d'électrolyse : anode en aluminium au pôle +,
+cathode en aluminium au pôle −, sens des électrons et migration des ions}
+\end{figure}
+
+Les deux lames d'aluminium plongent dans la soude (pH 14) qui contient l'ion téréphtalate : l'\textbf{anode} est reliée au pôle \textbf{+}, la \textbf{cathode} au pôle \textbf{−}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Porteurs de charge} : dans le circuit extérieur, les électrons vont de l'anode vers le pôle +, puis du pôle − vers la cathode. Dans la solution, les cations (Na\(^+\)) migrent vers la cathode et les anions (HO\(^-\), BDC\(^{2-}\), aluminate) vers l'anode.
+\item
+  \textbf{Soude} : elle fournit les HO⁻ consommés à l'anode (Al + 4 HO⁻ → {[}Al(OH)₄{]}⁻ + 3 e⁻) et régénérés à la cathode. Elle maintient l'aluminium(III) sous forme d'aluminate soluble (pH \textgreater{} 10), ce qui évite la passivation par Al(OH)\(_3\). Elle rend la solution conductrice.
+\item
+  \textbf{Solubilité de l'acide téréphtalique} : à pH 14 ≫ p\(K_{a2}=4{,}5\), l'acide est entièrement sous forme BDC\(^{2-}\), ionique et très soluble. La soude \textbf{augmente fortement sa solubilité}, celle de BDCH\(_2\) n'étant que de \(1{,}02\cdot10^{-4}\) mol/L.
+\end{itemize}
+
+\begin{piege}
+
+En électrolyse, l'anode est reliée au pôle +. Dans une pile, c'est l'inverse : l'anode est le pôle −. Aucun électron ne circule dans la solution.
+
+\end{piege}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Lister, pour chaque électrode, tous les couples où Al ou l'eau peuvent être oxydés (anode) ou réduits (cathode).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le milieu est basique : équilibrer avec HO\(^-\) et H\(_2\)O.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\textbf{Anode} :
+
+\equationajustee{\mathrm{Al(s)}+4\,\mathrm{HO^-}\longrightarrow[\mathrm{Al(OH)_4}]^-+3\,e^-\qquad\qquad4\,\mathrm{HO^-}\longrightarrow\mathrm{O_2(g)}+2\,\mathrm{H_2O}+4\,e^-}
+
+\textbf{Cathode} :
+
+\equationajustee{2\,\mathrm{H_2O}+2\,e^-\longrightarrow\mathrm{H_2(g)}+2\,\mathrm{HO^-}\qquad\qquad[\mathrm{Al(OH)_4}]^-+3\,e^-\longrightarrow\mathrm{Al(s)}+4\,\mathrm{HO^-}}
+
+La seconde réduction n'est possible qu'une fois l'aluminate formé.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Calculer les trois potentiels de Nernst à pH 14 (activités unitaires sauf H\(^+\)), en écrivant chaque demi-équation avec H\(^+\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Ajouter ensuite les surpotentiels pour obtenir les potentiels de démarrage. À l'anode, quelle oxydation démarre la première quand le potentiel croît ? À la cathode, quelle réduction démarre la première quand il décroît ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Couple de l'aluminate : \([\mathrm{Al(OH)_4}]^-+4\mathrm H^++3e^-=\mathrm{Al}+4\mathrm{H_2O}\).
+
+\equationajustee{\begin{aligned}
+E_1&=-1{,}18-0{,}08\times14\\
+&=-2{,}30\ \mathrm V
+\end{aligned}}
+
+Couple de l'eau réduite : \(2\mathrm H^++2e^-=\mathrm{H_2}\).
+
+\equationajustee{\begin{aligned}
+E_2&=-0{,}06\times14\\
+&=-0{,}84\ \mathrm V
+\end{aligned}}
+
+Couple de l'eau oxydée : \(\mathrm{O_2}+4\mathrm H^++4e^-=2\mathrm{H_2O}\).
+
+\equationajustee{\begin{aligned}
+E_3&=1{,}23-0{,}84\\
+&=0{,}39\ \mathrm V
+\end{aligned}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Réaction & Potentiel de démarrage \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+oxydation de Al & \(-2{,}30+0{,}5=-1{,}80\) V \\
+oxydation de l'eau en O\(_2\) & \(0{,}39+1{,}0=1{,}39\) V \\
+réduction de l'eau en H\(_2\) & \(-0{,}84-1{,}0=-1{,}84\) V \\
+réduction de l'aluminate & \(\leq-2{,}30\) V \\
+\end{longtable}
+
+À l'anode, l'oxydation de Al démarre bien avant celle de l'eau ; à la cathode, la réduction de l'eau démarre avant celle de l'aluminate.
+
+\equationajustee{\boxed{\text{Anode : }\mathrm{Al}+4\mathrm{HO^-}\to[\mathrm{Al(OH)_4}]^-+3e^-\qquad\text{Cathode : }2\mathrm{H_2O}+2e^-\to\mathrm{H_2}+2\mathrm{HO^-}}}
+
+\begin{piege}
+
+Le coefficient de pH est \(0{,}06\,m/n\) : \(4\times0{,}06/3=0{,}08\) V pour le couple de l'aluminate, et non 0,06 V. Une erreur sur ce point inverse les conclusions des questions suivantes.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Tracer sur un même axe la branche anodique retenue et la branche cathodique retenue, avec leurs potentiels de démarrage.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un courant \(I\) circule quand l'anode débite \(+I\) et la cathode \(-I\) : quel écart minimal de potentiel cela impose-t-il ?
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q14-courbes-intensite-potentiel.pdf}
+\caption*{Figure 3 --- Allure des courbes courant-potentiel : Umin = 0,04 V entre
+les seuils −1,84 V et −1,80 V, échelle non respectée}
+\end{figure}
+
+La branche cathodique (réduction de l'eau, \(i<0\)) part de \(-1{,}84\) V. La branche anodique (oxydation de Al, \(i>0\)) part de \(-1{,}80\) V. L'oxydation de l'eau ne partirait qu'à \(1{,}39\) V.
+
+Pour qu'un courant passe, il faut \(E_a>-1{,}80\) V et \(E_c<-1{,}84\) V :
+
+\equationajustee{\begin{aligned}
+U_{\min}&=-1{,}80-(-1{,}84)\\
+&=\boxed{0{,}04\ \mathrm V}
+\end{aligned}}
+
+Équation de l'électrolyse (2 × anode + 3 × cathode, puis division par 2) :
+
+\equationajustee{\boxed{\mathrm{Al(s)}+\mathrm{HO^-}+3\,\mathrm{H_2O}\longrightarrow[\mathrm{Al(OH)_4}]^-+\tfrac32\,\mathrm{H_2(g)}}}
+
+\begin{methode}
+
+La tension seuil d'électrolyse est l'écart entre les potentiels de démarrage anodique et cathodique, lus sur les courbes \(i(E)\). Elle vaut \(\Delta E_{\mathrm{Nernst}}+\eta_a-\eta_c\). Ici elle est petite, car la réaction globale est thermodynamiquement favorable : l'aluminium se dissout spontanément dans la soude.
+
+\end{methode}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+La relation \(U=E_a-E_c\) n'est complète que si l'on tient compte de la solution, traversée par un courant.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les surpotentiels donnés sont-ils ceux qui correspondent à 50 mA ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+L'écart de \(0{,}96\) V provient :
+
+\begin{itemize}
+\tightlist
+\item
+  de la \textbf{chute ohmique} \(RI\) dans l'électrolyte entre les électrodes et dans les connexions ;
+\item
+  de l'\textbf{augmentation des surtensions} avec l'intensité. Les surpotentiels de l'énoncé sont donnés à courant (quasi) nul ; pour débiter 50 mA, l'anode doit être portée au-delà de \(-1{,}80\) V et la cathode en deçà de \(-1{,}84\) V (surtensions d'activation, voire de diffusion).
+\end{itemize}
+
+Cette énergie supplémentaire est dissipée (effet Joule, irréversibilités aux électrodes).
+
+\begin{piege}
+
+Invoquer uniquement la résistance de la solution : à courant non nul, les branches \(i(E)\) ont une pente finie, et les surtensions croissent avec \(|i|\).
+
+\end{piege}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Loi de Faraday : charge, puis quantité d'électrons, puis quantité d'aluminium (combien d'électrons par atome ?), puis masse.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Repérer dans l'aide numérique le produit qui donne la charge, puis le rapport qui donne le rendement.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\equationajustee{\begin{aligned}
+Q&=I\,t\\
+&=0{,}050\times3600\\
+&=180\ \mathrm C
+\end{aligned}}
+
+d'où
+
+\equationajustee{\begin{aligned}
+m_{\mathrm{th}}&=\frac{Q}{3F}\,M(\mathrm{Al})\\
+&=\frac{180}{3\times10^5}\times27\\
+&=6{,}0\cdot10^{-4}\times27\ \mathrm g\\
+&\approx16\ \mathrm{mg}
+\end{aligned}}
+
+\equationajustee{\begin{aligned}
+\eta_F&=\frac{14}{16{,}2}\\
+&\approx\boxed{0{,}86}
+\end{aligned}}
+
+Avec \(m_{\mathrm{th}}\approx16\) mg, on trouve \(\eta_F\approx\tfrac78\approx0{,}88\).
+
+\textbf{Conclusion} : environ 85 à 90 \% de la charge sert à dissoudre l'aluminium, et le procédé est efficace. Le reste de la charge sert à des processus parasites : formation d'un film d'oxyde ou d'hydroxyde en surface, réactions secondaires, courants de fuite.
+
+\begin{methode}
+
+Rendement faradique = quantité effectivement transformée divisée par la quantité prévue par la loi de Faraday, \(n=It/(zF)\). Un rendement inférieur à 1 signale qu'une partie du courant sert à d'autres réactions.
+
+\end{methode}
+
+\hypertarget{partie-ii-lacide-tuxe9ruxe9phtalique}{%
+\section{Partie II --- L'acide téréphtalique}\label{partie-ii-lacide-tuxe9ruxe9phtalique}}
+
+On identifie les monomères du PET, puis on dose l'acide téréphtalique libéré par l'hydrolyse basique. Le cœur de la partie est la lecture conjointe d'une courbe pH-métrique et d'une courbe conductimétrique.
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Quel groupe se répète dans la chaîne de la figure 3 ? Quelle réaction le forme à partir d'un acide carboxylique ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Couper chaque liaison C(=O)--O du motif, puis compléter chaque fragment par OH ou par H.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+La fonction formée est l'\textbf{ester}. Le PET est un polyester obtenu par polycondensation (polyestérification).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{BDCH\(_2\)} : acide benzène-\allowbreak{}1,4-\allowbreak{}dicarboxylique, un cycle benzénique portant deux groupes COOH en positions \textbf{para} : HOOC--C\(_6\)H\(_4\)--COOH.
+\item
+  \textbf{Autre monomère} : l'\textbf{éthane-1,2-diol} HO--CH\(_2\)--CH\(_2\)--OH (éthylène glycol). En topologique, c'est un segment de deux sommets, chacun portant un OH.
+\end{itemize}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Faire l'inventaire des acides présents dans la solution titrée et tracer le diagramme de prédominance de l'acide téréphtalique.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux acidités dont les p\(K_a\) diffèrent de moins de 4 unités donnent-elles deux sauts distincts ? Associer chaque segment de la droite conductimétrique aux ions qui apparaissent et disparaissent.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Prédominance : \textbf{BDCH₂} pour pH \textless{} 3,5, \textbf{BDCH⁻} entre 3,5 et 4,5, \textbf{BDC²⁻} pour pH \textgreater{} 4,5. La solution contient l'excès d'acide sulfurique, diacide fort (H₃O⁺), et BDCH₂, libéré de son sel par cet acide.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\(0<V<V_{e1}=16\) mL} : \(\mathrm{H_3O^+}+\mathrm{HO^-}\to2\,\mathrm{H_2O}\). Le pH reste inférieur à environ 3, BDCH₂ prédomine et n'est pas dosé. La conductivité \textbf{chute} : H₃O⁺ (35 mS·m²/mol) est remplacé par Na⁺ (5).
+\item
+  \textbf{\(V_{e1}<V<V_{e2}=29\) mL} : \(\mathrm{BDCH_2}+2\,\mathrm{HO^-}\to\mathrm{BDC^{2-}}+2\,\mathrm{H_2O}\). Comme \(\Delta\mathrm pK_a=1\), les deux acidités sont dosées \textbf{ensemble}. Le pH traverse les domaines de BDCH⁻ et de BDC²⁻ (zone tampon). La conductivité \textbf{croît lentement} : il apparaît BDC²⁻ (7) et Na⁺ (5) à partir d'une espèce neutre.
+\item
+  \textbf{\(V>V_{e2}\)} : excès de HO\(^-\). Le pH tend vers 12 et la conductivité \textbf{croît fortement} (HO\(^-\) : 20).
+\end{itemize}
+
+Le pH ne présente pas de saut net en \(V_{e1}\), car l'acide faible tamponne dès pH 3 : cette équivalence se repère par la cassure (minimum) de la conductimétrie. Le grand saut de pH est en \(V_{e2}\).
+
+\begin{methode}
+
+En titrage de mélange, on utilise la conductimétrie pour les équivalences que le pH ne marque pas. Chaque segment se justifie par le bilan des ions (disparition, apparition, ions spectateurs apportés), pondéré par leurs conductivités molaires.
+
+\end{methode}
+
+\begin{piege}
+
+Le sujet impose de traiter H\(_2\)SO\(_4\) comme un diacide \textbf{fort} : on ne justifie pas l'ordre des dosages par un p\(K_a\) de HSO\(_4^-\).
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Quel volume de soude correspond à l'acide téréphtalique seul ? Combien de HO\(^-\) consomme une molécule ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Rendement : quantité obtenue rapportée à la quantité maximale de motifs de PET hydrolysés. Utiliser l'aide numérique \(4{,}8\times1{,}3\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\equationajustee{\begin{aligned}
+n(\mathrm{BDCH_2})&=\frac{C_b\,(V_{e2}-V_{e1})}{2}\\
+&=\frac{2{,}0\cdot10^{-2}\times13\cdot10^{-3}}{2}\\
+&=1{,}3\cdot10^{-4}\ \mathrm{mol}
+\end{aligned}}
+
+\equationajustee{n_{\max}=\frac{40\cdot10^{-3}}{192}\ \mathrm{mol}}
+
+\equationajustee{\begin{aligned}
+\rho&=\frac{1{,}3\cdot10^{-4}\times192}{40\cdot10^{-3}}\\
+&=1{,}3\times4{,}8\times10^{-1}\\
+&\approx\boxed{0{,}62=62\ \%}
+\end{aligned}}
+
+\begin{piege}
+
+Oublier le facteur 2 (diacide) double le rendement, qui dépasserait alors 100 \%, ce qui doit alerter.
+
+\end{piege}
+
+\hypertarget{partie-iii-formation-du-mil-53al-en-mode-continu}{%
+\section{Partie III --- Formation du MIL-53(Al) en mode continu}\label{partie-iii-formation-du-mil-53al-en-mode-continu}}
+
+Trois questions courtes sur le RPAC : bilan de matière en régime permanent, temps de passage, bilan thermique adiabatique.
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Définition du taux de conversion appliquée au réactif limitant, avec un débit volumique conservé.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\equationajustee{\begin{aligned}
+[\mathrm{Al^{3+}}]_s&=c_0\,(1-X)\\
+&=1{,}0\times0{,}20\\
+&=\boxed{0{,}20\ \mathrm{mol\cdot L^{-1}}}
+\end{aligned}}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Bilan de matière sur Al\(^{3+}\) en régime permanent : entrée = sortie + disparition par réaction dans tout le volume.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans un RPAC, à quelle concentration la vitesse est-elle évaluée ?
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Le réacteur est uniforme, à la composition de sortie, et \(v=k\,c_s\) :
+
+\equationajustee{Q\,c_0=Q\,c_s+k\,c_s\,\mathcal V}
+
+d'où
+
+\equationajustee{\begin{aligned}
+\tau&=\frac{\mathcal V}{Q}\\
+&=\frac{c_0-c_s}{k\,c_s}\\
+&=\frac{X}{k(1-X)}
+\end{aligned}}
+
+\equationajustee{\begin{aligned}
+\tau&=\frac{0{,}80}{5{,}0\times0{,}20}\\
+&=\boxed{0{,}80\ \mathrm{min}=48\ \mathrm s}
+\end{aligned}}
+
+\equationajustee{\mathcal V=Q\tau=\boxed{240\ \mathrm L}}
+
+\begin{piege}
+
+Utiliser la loi intégrée du réacteur fermé, \(\tau=\ln(1/(1-X))/k\), qui donnerait 0,32 min. Elle vaut pour un réacteur fermé ou piston, pas pour un RPAC.
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Premier principe en système ouvert, en régime permanent, adiabatique : le flux d'enthalpie est conservé entre l'entrée et la sortie.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Décomposer en deux étapes fictives : réaction à \(T_e\) (débit molaire réagi \(Qc_0X\)), puis échauffement du débit massique \(\rho Q\) de \(T_e\) à \(T_s\).
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\equationajustee{0=Q\,c_0\,X\,\Delta_rH^\circ+\rho\,Q\,C_{moy}\,(T_s-T_e)}
+
+d'où
+
+\equationajustee{\Delta T=\frac{-\Delta_rH^\circ\,c_0\,X}{\rho\,C_{moy}}}
+
+\equationajustee{\begin{aligned}
+\Delta T&=\frac{65\cdot10^3\times1{,}0\times0{,}80}{1\times5\cdot10^3}\\
+&\approx\boxed{+10\ \mathrm K}
+\end{aligned}}
+
+La réaction exothermique échauffe le milieu d'une dizaine de degrés : c'est \textbf{modéré}, compatible avec la gamme de 20 à 80 °C, sans risque d'emballement. Le débit \(Q\) se simplifie : \(\Delta T\) ne dépend que de la concentration d'entrée et de la conversion. On a supposé \(\Delta_rH^\circ\) indépendante de \(T\).
+
+\begin{methode}
+
+Élévation adiabatique de température : \(\Delta T_{ad}=-\Delta_rH\,c_0X/(\rho c_p)\). C'est la grandeur à calculer en premier pour juger de la sécurité thermique d'un réacteur.
+
+\end{methode}
+
+\hypertarget{partie-iv-uxe9tude-de-la-liaison-aluminium-oxyguxe8ne-dans-le-mil-53al}{%
+\section{Partie IV --- Étude de la liaison aluminium-oxygène dans le MIL-53(Al)}\label{partie-iv-uxe9tude-de-la-liaison-aluminium-oxyguxe8ne-dans-le-mil-53al}}
+
+Le diagramme des OM du complexe plan carré est fourni : il faut l'interpréter par la méthode des fragments. On construit ensuite les OM de HO\(^-\) et l'on raisonne sur les orbitales frontalières pour expliquer le pont Al--OH--Al.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Pour chaque OM du fragment L\(_4\), chercher l'orbitale de valence de Al (3s, 3p\(_x\), 3p\(_y\), 3p\(_z\)) qui a la même symétrie, c'est-à-dire un recouvrement non nul.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une OM de fragment qui ne trouve aucun partenaire reste à son énergie : regarder sur la figure 6 quelles OM ne sont reliées qu'à un seul côté.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Recouvrements non nuls :
+
+\begin{itemize}
+\tightlist
+\item
+  3s avec \(\varphi_1\) (les 4 L en phase) ;
+\item
+  3p\(_y\) avec \(\varphi_2\) et 3p\(_x\) avec \(\varphi_3\) (L en opposition de phase sur un même axe).
+\end{itemize}
+
+\(\varphi_4\) (signes \(+,-,+,-\) d'un axe à l'autre) n'a pas de partenaire, faute d'orbitale d sur Al ; 3p\(_z\) non plus.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-om-complexe-plan-carre.pdf}
+\caption*{Figure 4 --- Les quatre OM les plus basses de AlL4 vues de dessus : Φ1,
+Φ2, Φ3 liantes, Φ4 non liante}
+\end{figure}
+
+Représentation conventionnelle (schéma ci-dessus, plan \(xy\) vu de dessus) :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{\(\Phi_1\)} : 3s de Al en phase avec les 4 orbitales des L, toutes de même signe. \textbf{Liante.}
+\item
+  \textbf{\(\Phi_2\), \(\Phi_3\)} (dégénérées) : 3p\(_y\) (resp. 3p\(_x\)) de Al, chaque lobe en phase avec l'orbitale du L situé en face, sur le même axe. \textbf{Liantes.}
+\item
+  \textbf{\(\Phi_4\)} : orbitales des L seules, de même signe sur l'axe \(x\), de signe opposé sur l'axe \(y\), sans contribution de Al. \textbf{Non liante.}
+\end{itemize}
+
+\equationajustee{\boxed{\Phi_1,\Phi_2,\Phi_3\ \text{liantes};\quad\Phi_4\ \text{non liante}}}
+
+Au-dessus : \(\Phi_5\) = 3p\(_z\), non liante.
+
+Viennent ensuite \(\Phi_6\) et \(\Phi_7\), antiliantes (p\(_x\), p\(_y\)), puis \(\Phi_8\), antiliante (s).
+
+\begin{piege}
+
+Raisonner comme pour un complexe de métal de transition et associer \(\varphi_4\) à une orbitale \(d_{x^2-y^2}\) : l'aluminium n'a pas d'orbitale d de valence.
+
+\end{piege}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Remplir les OM par énergie croissante avec 8 électrons.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\(\Phi_1\), \(\Phi_2\), \(\Phi_3\) et \(\Phi_4\) sont doublement occupées.
+
+\equationajustee{\boxed{\begin{aligned}
+\mathrm{HO}&=\Phi_4\ (\text{non liante, sur les ligands})\\
+\mathrm{BV}&=\Phi_5\ (3p_z\text{ de Al, vacante})
+\end{aligned}}}
+
+La BV est perpendiculaire au plan du complexe et présente un lobe de chaque côté : c'est elle qui accueillera les ligands axiaux.
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Calculer les écarts d'énergie entre 1s(H) et chacune des OA de valence de O, et appliquer le critère des 10 eV.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Parmi les trois orbitales 2p, laquelle a un recouvrement non nul avec 1s(H) ? Compter ensuite les électrons de valence de l'ion, sans oublier la charge.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Axe O--H noté \(z'\).
+
+\begin{itemize}
+\tightlist
+\item
+  \(|{-33{,}9}+13{,}6|=20{,}3\) eV, supérieur à 10 eV : 2s(O) n'interagit pas.
+\item
+  \(|{-17{,}6}+13{,}6|=4{,}0\) eV, inférieur à 10 eV : 1s(H) interagit avec la seule 2p\(_{z'}\), car son recouvrement avec 2p\(_{x'}\) et 2p\(_{y'}\) est nul.
+\end{itemize}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+OM (énergie croissante)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Nature
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Électrons
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+2s(O) & non liante & 2 \\
+\(\sigma\) = 2p\(_{z'}\) + 1s, plus développée sur O & liante & 2 \\
+2p\(_{x'}\), 2p\(_{y'}\) de O & non liantes, dégénérées & 4 \\
+\(\sigma^*\) = 2p\(_{z'}\) − 1s, plus développée sur H & antiliante & 0 \\
+\end{longtable}
+
+8 électrons de valence (\(6+1+1\)).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q25-diagramme-om-hydroxo.pdf}
+\caption*{Figure 5 --- Diagramme d'OM de HO− : 2s(O) non liante, σ liante, deux π
+non liantes (HO) et σ* antiliante (BV)}
+\end{figure}
+
+\equationajustee{\boxed{\mathrm{HO}:\ 2p_{x'},\,2p_{y'}\text{ de O (non liantes)};\qquad\mathrm{BV}:\ \sigma^*_{\mathrm{OH}}}}
+
+Représentation : chaque HO est une orbitale p pure de O, à deux lobes de signes opposés, perpendiculaire à l'axe O--H. La BV \(\sigma^*\) comporte un gros lobe sur H et un lobe plus petit, de signe opposé, sur O, du côté de H, avec un nœud entre les deux atomes.
+
+\begin{methode}
+
+Dans une OM liante, l'OA la plus basse en énergie (la plus électronégative) a le plus gros coefficient ; dans l'antiliante, c'est l'inverse.
+
+\end{methode}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Lequel des deux partenaires est le nucléophile ? Associer sa HO à la BV de l'autre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Vérifier le recouvrement : une orbitale qui arrive selon \(Oz\) peut-elle interagir avec \(\Phi_4\), contenue dans le plan \(xy\) ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+L'interaction est \textbf{HO(HO⁻) -- BV({[}AlL₄{]})} : un doublet non liant 2p de O donne dans la 3p\(_z\) vacante de Al (\(\Phi_5\)).
+
+L'interaction inverse, HO du complexe (\(\Phi_4\)) avec \(\sigma^*\) de HO⁻, a un recouvrement nul par symétrie : \(\Phi_4\) présente des signes alternés dans le plan \(xy\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q26-interaction-ho-bv.pdf}
+\caption*{Figure 6 --- Recouvrement σ en phase, selon Oz, entre la HO 2p de O
+(HO−) et la BV 3pz de Al (AlL4)}
+\end{figure}
+
+HO\(^-\) arrive selon \(Oz\) ; un lobe de la 2p non liante de O pointe vers Al (dans ce modèle, l'axe O--H est donc perpendiculaire à \(Oz\)) et recouvre axialement, en phase, le lobe supérieur de la 3p\(_z\) de Al (recouvrement \(\sigma\)). Cette interaction à deux électrons forme la liaison de coordination Al--O.
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Combien de doublets non liants, de même énergie, porte l'oxygène de HO\(^-\) ? Combien en faut-il pour une liaison de coordination ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Regarder aussi la BV du complexe : combien de lobes, de quel côté du plan ?
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+L'oxygène de HO\(^-\) possède \textbf{deux} HO dégénérées (deux doublets 2p non liants). Après une première liaison Al--O, il garde un doublet disponible, qu'il peut donner à la 3p\(_z\) vacante d'un \textbf{second} complexe. Inversement, la 3p\(_z\) de chaque Al a deux lobes, au-dessus et au-dessous du plan : chaque Al accepte deux HO\(^-\) en \emph{trans} (figure 5) et complète son octaèdre.
+
+\textbf{HO\(^-\) est donc un ligand pontant (\(\mu_2\)-OH)}, ce qui explique les chaînes \ldots Al--OH--Al--OH\ldots{} d'octaèdres reliés par leurs sommets du MIL-53(Al).
+
+Problème 2 --- Synthèse de 1,3-oxazines
+
+\hypertarget{partie-i-formation-dun-succinimide-uxe0-partir-de-lacide--tartrique}{%
+\section{Partie I --- Formation d'un succinimide à partir de l'acide (+)-tartrique}\label{partie-i-formation-dun-succinimide-uxe0-partir-de-lacide--tartrique}}
+
+On fixe la stéréochimie de l'acide tartrique, qui sera conservée jusqu'au bout. On protège ensuite les deux alcools (Williamson), puis on libère les acides carboxyliques (saponification), avec une analyse détaillée du traitement.
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Classer les quatre substituants de chaque centre par les règles CIP ; la difficulté est de départager COOH et CH(OH)COOH.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le H implicite est-il vers l'avant ou vers l'arrière quand le OH est en coin plein ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Priorités sur C2 comme sur C3 : OH \textgreater{} COOH (O,O,O) \textgreater{} CH(OH)COOH (O,C,H) \textgreater{} H.
+
+Sur la figure 8, sur chaque centre, OH est en coin plein et H est donc en arrière. Sur C2 (sommet bas), le parcours OH (bas) → COOH (haut gauche) → C3 (haut droite) tourne dans le sens horaire : \textbf{R}. Sur C3 (sommet haut), le parcours OH (haut) → COOH (bas droite) → C2 (bas gauche) tourne aussi dans le sens horaire : \textbf{R}.
+
+\equationajustee{\boxed{\text{acide }(2R,3R)\text{-2,3-\text{dihydroxybutanedioïque}}}}
+
+\begin{piege}
+
+Lire le sens de rotation avec H vers l'observateur sans inverser le résultat. Ici, H est en arrière, et la lecture est directe.
+
+\end{piege}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Deux centres stéréogènes donnent au plus quatre combinaisons. Les deux moitiés de la molécule étant identiques, deux d'entre elles décrivent-elles la même molécule ?
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Il existe \textbf{3 stéréoisomères de configuration} (représentés sur la même chaîne en zigzag que la figure 8) :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{(2R,3R)} : l'acide (+)-tartrique, les deux OH en coin plein, chiral ;
+\item
+  \textbf{(2S,3S)} : son énantiomère, les deux OH en pointillés ;
+\item
+  \textbf{(2R,3S)}, identique à (2S,3R) : la forme \textbf{méso}, avec un OH en coin plein et l'autre en pointillés. Elle est achirale (centre de symétrie dans la conformation anti, plan de symétrie dans la conformation éclipsée).
+\end{itemize}
+
+Les formes (R,R) et (S,S) sont énantiomères ; la forme méso est diastéréoisomère de chacune.
+
+\begin{piege}
+
+Compter quatre stéréoisomères : (R,S) et (S,R) sont la même molécule, superposable à son image.
+
+\end{piege}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+La mention (+) concerne une mesure au polarimètre : dans quel sens tourne le plan de polarisation ?
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+(+) correspond à \textbf{dextrogyre} : la substance fait tourner le plan de polarisation de la lumière polarisée rectilignement \textbf{vers la droite} (sens horaire pour un observateur qui reçoit la lumière), \([\alpha]>0\).
+
+\equationajustee{\boxed{(2S,3S)\text{ : }(-)\text{, \text{lévogyre}};\qquad\text{\text{méso} : achiral, optiquement inactif, sans mention}}}
+
+\begin{piege}
+
+Croire que R signifie dextrogyre : le signe de \([\alpha]\) se mesure, il ne se déduit pas des descripteurs CIP.
+
+\end{piege}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Quelle réaction donne un ester à partir d'un acide et d'un alcool ? Elle est lente et équilibrée : comment agir sur chacun de ces deux défauts ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour que le Dean-Stark sépare l'eau, que faut-il au solvant vis-à-vis de l'eau (miscibilité, densité, azéotrope) ?
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+On réalise une \textbf{estérification de Fischer} : acide tartrique dans l'\textbf{éthanol en large excès}, catalyseur acide (H\(_2\)SO\(_4\) ou APTS), chauffage à reflux. Le catalyseur et la température accélèrent une réaction lente ; l'excès d'alcool déplace un équilibre de constante \(K\approx1\).
+
+\textbf{Dean-Stark} : il élimine l'eau formée et déplace l'équilibre vers l'ester. Il faut un solvant \textbf{non miscible à l'eau, moins dense qu'elle}, qui forme avec l'eau un \textbf{hétéroazéotrope} de température d'ébullition inférieure à celle des autres espèces (toluène, cyclohexane). L'eau condensée décante au fond du tube et y reste piégée, tandis que le solvant reflue dans le ballon.
+
+\begin{piege}
+
+Proposer un Dean-Stark dans l'éthanol pur : l'éthanol est miscible à l'eau, et rien ne décanterait.
+
+\end{piege}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Comparer le groupe porté par les carbones 2 et 3 avant et après la réaction.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer les p\(K_a\) des couples H\(_2\)/H\(^-\) et ROH/RO\(^-\) donnés.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+On crée deux fonctions \textbf{éther-oxyde} (éthers benzyliques). \textbf{NaH} est une base forte (p\(K_a\) 35 ≫ 16--18) : il déprotone totalement et irréversiblement (départ de H\(_2\)) les deux alcools en \textbf{alcoolates}, bien plus nucléophiles que les alcools.
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Utiliser les deux données physiques du DMF, puis regarder s'il porte un hydrogène acide.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Le DMF est \textbf{polaire} (\(\mu=3{,}85\) D) et \textbf{dissociant} (\(\varepsilon_r=38\)) : il dissout et dissocie les espèces ioniques (alcoolate de sodium, NaBr) ainsi que les réactifs organiques. Il est \textbf{aprotique} : il ne réagit pas avec NaH et ne protone pas l'alcoolate. Il solvate bien les cations (doublets de O) et mal les anions (pas de liaison hydrogène) : l'alcoolate, peu solvaté, est très nucléophile, ce qui favorise la SN2 sur BnBr.
+
+\begin{methode}
+
+Solvants des SN2 avec un nucléophile anionique : polaires aprotiques (DMF, DMSO, acétone). Ils dissolvent le sel tout en laissant l'anion réactif.
+
+\end{methode}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Deux actes élémentaires par fonction alcool : une réaction acide-base, puis une substitution nucléophile.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une liaison d'un carbone stéréogène est-elle rompue ? En déduire la configuration de \textbf{1} et son éventuelle symétrie.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Pour chaque fonction alcool :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Acide-base} : \(\mathrm{RO{-}H}+\mathrm{H^-}\to\mathrm{RO^-}+\mathrm{H_2}\uparrow\). Une flèche part du doublet de H\(^-\) vers le H de OH, une autre de la liaison O--H vers O.
+\item
+  \textbf{SN2} : \(\mathrm{RO^-}+\mathrm{PhCH_2{-}Br}\to\mathrm{RO{-}CH_2Ph}+\mathrm{Br^-}\), en une étape. Une flèche part du doublet de O\(^-\) vers le carbone benzylique, à l'opposé de Br, une autre de la liaison C--Br vers Br.
+\end{enumerate}
+
+Aucune liaison de C2 ni de C3 n'est rompue : \textbf{1} est (2R,3R), chiral (axe \(C_2\), sans plan ni centre de symétrie) et formé seul, sans son énantiomère. \textbf{Il est optiquement actif.}
+
+\begin{piege}
+
+Confondre « deux centres identiques » et « méso » : la forme (R,R) n'est pas superposable à son image, contrairement à la forme (R,S).
+
+\end{piege}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Repérer d'abord le motif éthyle (triplet et quadruplet de même \(J\)). Exploiter ensuite la symétrie \(C_2\) pour expliquer les intégrations doublées.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pourquoi deux H portés par des carbones voisins peuvent-ils apparaître en singulet ?
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1614}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.0932}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1680}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.5474}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(\delta\) (ppm)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Int.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mult.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Attribution
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1,16 & 6 H & t, \(J=7{,}2\) Hz & 2 CH\(_3\) (OCH\(_2\)CH\(_3\)), couplés aux 2 H du CH\(_2\) voisin \\
+4,12 & 4 H & q, \(J=7{,}2\) Hz & 2 OCH\(_2\)CH\(_3\), couplés aux 3 H du CH\(_3\) (même \(J\)), déblindés par O de l'ester \\
+4,37 & 2 H & s & 2 CH(OBn), équivalents par l'axe \(C_2\) : leur couplage mutuel n'est pas observable, et ils n'ont pas d'autre voisin ; déblindés par O et C=O \\
+4,60 & 4 H & s & 2 OCH\(_2\)Ph, sans H sur les atomes voisins (O, C aromatique) \\
+7,30 & 10 H & m & 10 H aromatiques \\
+\end{longtable}
+
+Le total de 26 H correspond à C\(_{22}\)H\(_{26}\)O\(_6\).
+
+\begin{methode}
+
+Des noyaux équivalents ne se couplent pas de façon observable. Une symétrie de la molécule (\(C_2\), plan) explique à la fois des intégrations doublées et des singulets inattendus.
+
+\end{methode}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Comparer les formules brutes de \textbf{1} et de \textbf{2} : quels groupes ont disparu ?
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+Il s'agit d'une \textbf{saponification} des deux esters ; l'acidification qui suit donne le diacide. La formule C₂₂H₂₆O₆ − 2 C₂H₄ donne C₁₈H₁₈O₆ (\(M=330\) g/mol ; 4,27 g correspondent bien à 13 mmol).
+
+\textbf{2} = acide (2R,3R)-\allowbreak{}2,3-\allowbreak{}bis(benzyloxy)butanedioïque, HOOC--\allowbreak{}CH(OBn)--\allowbreak{}CH(OBn)--\allowbreak{}COOH. Sa représentation topologique spatiale est celle de \textbf{1} (figure 9), dans laquelle les deux OEt sont remplacés par OH, avec les mêmes coins pleins pour les OBn : configuration conservée.
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Qui doit être dissous : un sel minéral et un diester très lipophile. Un seul solvant y suffit-il ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que deviendrait l'éthanol lors de l'acidification, puis lors de l'extraction à l'éthanoate d'éthyle ?
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\textbf{Éthanol/eau} : l'eau dissout LiOH et fournit HO\(^-\), l'éthanol dissout le diester \textbf{1}. La réaction se fait \textbf{en phase homogène}, donc plus vite. L'éthanol est aussi l'alcool libéré, ce qui exclut toute transestérification parasite.
+
+\textbf{Élimination de l'éthanol avant acidification} :
+
+\begin{itemize}
+\tightlist
+\item
+  en milieu acide, l'éthanol pourrait ré-estérifier en partie le diacide (Fischer) ;
+\item
+  surtout, l'éthanol est miscible à l'eau et à l'éthanoate d'éthyle : il gênerait la décantation et retiendrait \textbf{2} dans la phase aqueuse, ce qui ferait baisser l'efficacité de l'extraction.
+\end{itemize}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Sous quelle forme se trouve \textbf{2} en milieu basique, et laquelle est soluble dans un solvant organique ? Comparer pH = 2 aux p\(K_a\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire la quantité restant en phase aqueuse après une extraction par un volume \(v\), avec le coefficient de partage \(K\), puis après \(p\) extractions.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\textbf{Acidification} : le dicarboxylate de lithium, ionique, reste dans l'eau. À pH = 2, inférieur aux p\(K_a\) (3--5) d'au moins une unité, \textbf{2} est sous forme de diacide neutre, extractible par l'éthanoate d'éthyle.
+
+\textbf{Extractions multiples} : il reste dans l'eau, après \(p\) extractions de volume \(v\),
+
+\equationajustee{n_{\mathrm{restant}}=n_0\left(\frac{V_{aq}}{V_{aq}+K\,v}\right)^p}
+
+À volume total \(pv=400\) mL fixé, cette quantité diminue quand \(p\) augmente. Par exemple, si \(Kv/V_{aq}=1\) pour \(v=100\) mL : \((1/2)^4\approx6\ \%\) restant après 4 extractions, contre \(1/5=20\ \%\) après une seule. \textbf{Fractionner est plus efficace.}
+
+\begin{methode}
+
+Le gain des extractions multiples se démontre en trois lignes avec la loi de partage. C'est une justification quantitative à donner à chaque fois.
+
+\end{methode}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Penser à ce qui reste dans la phase organique après extraction (eau, sels, acide) et à la solubilité de \textbf{2} dans une phase aqueuse très salée.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+La \textbf{saumure} élimine l'acide et les sels résiduels (HCl, LiCl). Elle retire une partie de l'\textbf{eau dissoute} dans l'éthanoate d'éthyle (pré-séchage avant MgSO\(_4\)). Elle limite le passage de \textbf{2} dans l'eau par \textbf{relargage}, la phase aqueuse très ionique dissolvant peu le composé organique. Elle facilite enfin la décantation.
+
+\textbf{L'eau pure} redissoudrait une partie du diacide \textbf{2}, assez polaire avec ses deux COOH, ce qui ferait perdre du produit. Elle laisserait aussi davantage d'eau dans la phase organique.
+
+\hypertarget{partie-ii-formation-de-13-oxazines}{%
+\section{Partie II --- Formation de 1,3-oxazines}\label{partie-ii-formation-de-13-oxazines}}
+
+La partie commence par un échec instructif (Q40--Q44) : activation de l'imide, réduction partielle, ion N-acyliminium. Elle construit ensuite la chaîne énone (Q45--Q47) qui permettra de fermer le cycle oxazine par oxa-Michael (Q48--Q49).
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Activer la nucléophilie de N revient à le déprotoner. Écarter d'abord les acides, puis les bases trop faibles.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Parmi les bases fortes restantes, laquelle ne risque pas de s'additionner sur les C=O de l'imide ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\begin{itemize}
+\tightlist
+\item
+  H\(_2\)SO\(_4\), APTS : acides, \textbf{exclus}.
+\item
+  Pyridine (p\(K_a\) du pyridinium ≈ 5) : trop faible pour déprotoner l'imide, \textbf{exclue}.
+\item
+  NaOH : déprotonation équilibrée ; HO\(^-\) est aussi nucléophile et peut ouvrir l'imide par hydrolyse ; l'eau formée gêne l'alkylation. \textbf{Déconseillé.}
+\item
+  CH\(_3\)MgBr : base forte, mais nucléophile qui s'additionne sur les C=O. \textbf{Exclu.}
+\item
+  \textbf{NaH} : base très forte, non nucléophile, déprotonation totale et irréversible (départ de H\(_2\)) en milieu aprotique.
+\end{itemize}
+
+\equationajustee{\boxed{\mathrm{R1}=\mathrm{NaH}}}
+
+\begin{methode}
+
+Pour déprotoner sans attaquer un électrophile voisin, choisir une base forte peu nucléophile : NaH, LDA, ou un alcoolate encombré.
+
+\end{methode}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Partir du doublet négatif de N et le faire basculer vers chacun des deux carbonyles.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\textbf{4bis} est le cycle de \textbf{4} avec N\(^-\) (contre-ion Na\(^+\)) à la place de N--H, les deux OBn étant inchangés. Formes mésomères limites :
+
+\equationajustee{\begin{aligned}{}&\mathrm{O{=}C{-}\overset{\ominus}{N}{-}C{=}O}\\
+\longleftrightarrow\ &\mathrm{{}^{\ominus}O{-}C{=}N{-}C{=}O}\\
+\longleftrightarrow\ &\mathrm{O{=}C{-}N{=}C{-}O^{\ominus}}
+\end{aligned}}
+
+La charge est délocalisée sur N et sur \textbf{deux} oxygènes électronégatifs (\(\chi=3{,}44\)), d'où la relative stabilité de l'anion et l'acidité marquée de l'imide, bien supérieure à celle d'un amide simple.
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Comparer \textbf{5} et \textbf{4} : quel groupe a été ajouté sur N ? Quel électrophile simple l'apporte par SN2 ?
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\equationajustee{\boxed{\mathrm{R2}=\text{bromure d'allyle }\mathrm{CH_2{=}CH{-}CH_2Br}}}
+
+L'azote de \textbf{4bis} réalise une SN2 sur le carbone allylique primaire, et Br\(^-\) part.
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Quelles fonctions \textbf{6} contient-il ? Associer chaque bande à une liaison du tableau IR.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La bande C=O est-elle en haut ou en bas de sa plage ? Relier sa position à la nature du carbonyle.
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{3 340 cm\(^{-1}\), large} : élongation O--H de l'hémiaminal (OH porté par le carbone lié à N), élargie par les liaisons hydrogène.
+\item
+  \textbf{1 675 cm\(^{-1}\), intense} : élongation C=O du lactame. Elle se situe en bas de la plage, car la conjugaison avec le doublet de N affaiblit la liaison C=O.
+\end{itemize}
+
+\begin{piege}
+
+Attribuer 1 675 cm\(^{-1}\) à la liaison C=C : la bande C=C est faible et se situe plus bas (1 580--1 620 cm\(^{-1}\) d'après les données) ; la bande « intense » est celle du carbonyle.
+
+\end{piege}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Première étape : quel réactif apporte un nucléophile, et sur quel site s'additionne-t-il ? Comparer à \textbf{6}.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deuxième étape, en milieu acide : faire partir OH sous forme d'eau. Quel cation se forme, et quel atome voisin le stabilise ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Le nucléophile final est le solvant.
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+\textbf{NaBH\(_4\)/MeOH puis hydrolyse} : addition de H\(^-\) sur l'un des deux C=O, équivalents, de \textbf{8} (flèche de la liaison B--H vers C, puis de la liaison \(\pi\) C=O vers O). L'alcoolate obtenu est protoné en \textbf{hydroxylactame} (5-\allowbreak{}hydroxy-\allowbreak{}1-\allowbreak{}allylpyrrolidin-\allowbreak{}2-\allowbreak{}one). Le C=O restant, celui d'un amide, est peu électrophile.
+
+\textbf{APTS/EtOH puis hydrolyse} :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  protonation de OH, qui devient \(-\mathrm{OH_2^+}\) ;
+\item
+  départ de H\(_2\)O, assisté par le doublet de N : \textbf{ion N-acyliminium} ;
+\item
+  addition de EtOH sur le carbone de C=N\(^+\) ;
+\item
+  déprotonation, qui donne \textbf{9} (5-\allowbreak{}éthoxy-\allowbreak{}1-\allowbreak{}allylpyrrolidin-\allowbreak{}2-\allowbreak{}one, un N,O-acétal) et régénère H\(^+\).
+\end{enumerate}
+
+\begin{methode}
+
+Un hémiaminal s'ionise en milieu acide en ion iminium, que piège un nucléophile. C'est le même schéma que l'acétalisation, l'azote remplaçant l'oxygène comme donneur.
+
+\end{methode}
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+La silylation libère HCl. Que devient-il en présence d'imidazole ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'imidazole a deux azotes : lequel a un doublet non liant qui n'est pas engagé dans la délocalisation électronique du cycle ?
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+L'imidazole est d'abord une \textbf{base} : il capte HCl (p\(K_a\) 6,9) sous forme de chlorure d'imidazolium et protège ainsi les groupes sensibles aux acides. C'est aussi un \textbf{catalyseur nucléophile} : il attaque le silicium de TBSCl et forme un ion \emph{N}-silylimidazolium, plus électrophile, que l'alcool attaque ensuite.
+
+\textbf{Site actif} : l'azote de \textbf{type pyridine} (=N--, sans H), dont le doublet non liant n'intervient dans aucune forme mésomère du cycle : il est localisé, donc disponible. Le doublet de l'azote N--H est délocalisé sur le cycle par mésomérie avec les doubles liaisons C=C et C=N et n'est pas disponible. L'ion imidazolium est en outre stabilisé par délocalisation de la charge sur les deux azotes.
+
+\begin{piege}
+
+Désigner l'azote N--H comme site basique : protoner ce doublet supprimerait sa délocalisation sur le cycle, donc la stabilisation par mésomérie.
+
+\end{piege}
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Comparer le nombre de liaisons B--H et l'encombrement de BH\(_3\) et du 9-BBN.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'hydroboration-\allowbreak{}oxydation d'un alcène terminal donne un alcool : primaire ou secondaire ?
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+\textbf{Intérêt du 9-BBN} :
+
+\begin{itemize}
+\tightlist
+\item
+  il n'a \textbf{qu'une liaison B--H} : une seule addition par molécule de borane, ce qui donne un produit unique ;
+\item
+  il est \textbf{très encombré} : le bore se fixe quasi exclusivement sur le carbone terminal (régiosélectivité anti-Markovnikov presque totale) ;
+\item
+  il est \textbf{plus chimiosélectif} que BH\(_3\), qui réduit aussi les amides ; c'est de plus un solide stable et facile à manipuler.
+\end{itemize}
+
+\textbf{11} : la même pyrrolidin-2-one que \textbf{10} (BnO en coin plein en C3, BnO en pointillés en C4, OTBS en pointillés en C5), dont la chaîne N-allyle devient \textbf{N--CH\(_2\)--CH\(_2\)--CH\(_2\)--OH}.
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+\begin{indication}{1}
+
+Comparer les chaînes de \textbf{11} et de \textbf{12} : combien de carbones ont été ajoutés, et par quel réactif à trois carbones ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une condensation aldolique demande un électrophile carbonylé : de quelle fonction faut-il disposer en bout de chaîne, et quel oxydant des données permet de l'obtenir sans aller trop loin ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour un aldol croisé propre, comment former l'énolate d'un seul partenaire ? Regarder les p\(K_a\) des données.
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Oxydation ménagée} de l'alcool primaire en \textbf{aldéhyde} N--CH\(_2\)CH\(_2\)--CHO par \textbf{CrO\(_3\)/pyridine} (H\(_2\)CrO\(_4\) irait jusqu'à l'acide).
+\item
+  \textbf{Aldolisation croisée} avec la \textbf{propanone} : énolate de l'acétone formé quantitativement par le LDA (p\(K_a\) 36 ≫ 22) dans le THF à −78 °C, puis ajout de l'aldéhyde, et hydrolyse. On obtient N--CH\(_2\)CH\(_2\)--CH(OH)--CH\(_2\)--CO--CH\(_3\). Variante : acétone en large excès avec NaOH dilué.
+\item
+  \textbf{Crotonisation} en milieu basique et à chaud (E1cb) : on obtient l'énone conjuguée \emph{E}, \textbf{12}.
+\end{enumerate}
+
+\begin{piege}
+
+Faire la déshydratation en milieu acide : l'APTS ionise le N,O-acétal en ion N-acyliminium (Q44) et menace le groupe OTBS. On reste en conditions basiques.
+
+\end{piege}
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\begin{indication}{1}
+
+Quel hydrogène de la cyclopentane-1,3-dione est acide (p\(K_a\) 8,9) ? Sur quel carbone de la buténone le nucléophile s'additionne-t-il dans une addition de Michael ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une base forte est-elle nécessaire, compte tenu de ce p\(K_a\) ? Quel solvant facilite les transferts de proton ?
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+\textbf{Produit} : la \textbf{2-\allowbreak{}(3-\allowbreak{}oxobutyl)cyclopentane-\allowbreak{}1,3-\allowbreak{}dione}, un cycle à 5 chaînons avec deux C=O en 1 et 3, dont le carbone 2 porte la chaîne --CH\(_2\)CH\(_2\)C(=O)CH\(_3\).
+
+\textbf{Conditions} : une base modérée en \textbf{quantité catalytique} (Et\(_3\)N, ou HO\(^-\) ou EtO\(^-\) catalytiques) dans un \textbf{solvant protique} (eau, méthanol, éthanol), à température ambiante. La dione, assez acide, n'exige pas de base forte ; une base forte stœchiométrique favoriserait la polymérisation ou l'aldolisation de la buténone et une double addition. L'énolate stabilisé conduit à l'addition 1,4 (contrôle thermodynamique).
+
+\textbf{Mécanisme} :
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  déprotonation du CH\(_2\) situé entre les deux C=O : énolate délocalisé sur C2 et les deux O ;
+\item
+  addition 1,4 : le doublet de C2 attaque le carbone \(\beta\) (=CH\(_2\)) de la buténone, la liaison \(\pi\) C=C bascule en C=C\(\alpha\), puis le \(\pi\) C=O vers O\(^-\) ; on obtient l'énolate de la cétone ;
+\item
+  protonation sur le carbone \(\alpha\) par le solvant ou par BH, ce qui régénère la base et donne le produit.
+\end{enumerate}
+
+\begin{methode}
+
+Un nucléophile carboné stabilisé (énolate de 1,3-dicarbonylé) s'additionne en 1,4 sur une énone. Une base catalytique suffit, car le produit, moins acide, est protoné par le milieu.
+
+\end{methode}
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\begin{indication}{1}
+
+Quels centres stéréogènes de \textbf{13} existaient déjà dans \textbf{12}, et lequel est créé par l'addition de l'alcoolate sur l'énone ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le stéréoisomère formé ne diffère de \textbf{13} que par ce nouveau centre : est-ce un énantiomère ou un diastéréoisomère ?
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+L'oxa-Michael crée un seul \textbf{nouveau centre stéréogène}, le carbone du cycle oxazine lié à O qui porte CH\(_2\)COCH\(_3\). Les deux C--OBn et le carbone de jonction N--CH--O gardent leur configuration (liaisons non rompues). Le stéréoisomère susceptible de se former est l'\textbf{épimère de 13 en ce carbone} : même représentation que \textbf{13} sur la figure 14 (BnO en coin plein et en pointillés, H de jonction en coin plein), mais avec \textbf{CH\(_2\)COCH\(_3\) en coin plein} au lieu de pointillés, c'est-à-dire du même côté que l'hydrogène de jonction.
+
+C'est un \textbf{diastéréoisomère} de \textbf{13} (une configuration inversée sur quatre), et non un énantiomère. Les diastéréoisomères ont des propriétés physiques différentes (\(R_f\), solubilité, températures de changement d'état) : \textbf{on peut les séparer physiquement}, par chromatographie sur colonne ou par recristallisation.
+
+\begin{piege}
+
+Dessiner l'image de \textbf{13} dans un miroir : on obtiendrait un énantiomère, ce qui exigerait d'inverser \textbf{tous} les centres, y compris ceux hérités de l'acide tartrique, qui ne sont pas touchés ici.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir}
+
+\begin{itemize}
+\tightlist
+\item
+  Diagramme E-pH : n.o. en ordonnée, basicité en abscisse, pentes en \(-0{,}06\,m/n\), convention de tracé dans la loi de Nernst (Q3--Q4) ; \(\log K=n\Delta E^\circ/0{,}06\) (Q5).
+\item
+  Diagramme binaire isobare : nommer les courbes, lire les compositions sur les courbes, théorème des moments en fractions massiques, variance et palier de l'azéotrope, limite de la distillation (Q6--Q10).
+\item
+  Électrolyse : couples écrits en milieu basique, potentiels de démarrage = Nernst + surpotentiels, tension seuil, part de la chute ohmique et des surtensions, rendement faradique (Q11--Q16).
+\item
+  Titrage d'un mélange acide fort + diacide faible à p\(K_a\) proches : une seule équivalence pour le diacide, rôle de la conductimétrie (Q18--Q19).
+\item
+  RPAC : \(\tau=X/(k(1-X))\) à l'ordre 1, élévation adiabatique \(\Delta T=-\Delta_rH\,c_0X/(\rho c)\) (Q21--Q22).
+\item
+  OM par fragments : symétrie, OM non liantes, orbitales frontalières, interaction HO du nucléophile -- BV de l'électrophile, recouvrement nul par symétrie (Q23--Q27).
+\item
+  Chimie organique : CIP et forme méso, Fischer et Dean-Stark, Williamson dans un solvant polaire aprotique, saponification et traitement, choix d'une base non nucléophile, ion N-acyliminium, silylation catalysée par l'imidazole, hydroboration sélective, oxydation ménagée, aldolisation-\allowbreak{}crotonisation, addition de Michael, diastéréoisomères séparables (Q28--Q49).
+\end{itemize}
+
+\textbf{Prérequis à revoir} : loi de Nernst avec H\(^+\) et HO\(^-\) ; règle des phases ; courbes courant-potentiel ; conductivités molaires et allure des droites de titrage ; bilans en réacteur ouvert ; règles de construction des diagrammes d'OM ; règles CIP ; lecture des spectres IR et RMN ; tableau des p\(K_a\) de la chimie organique.
+
+\textbf{Questions classiques transposables} : attribution d'un diagramme E-pH ; analyse thermique et azéotrope ; tension de seuil et rendement faradique d'une électrolyse ; titrage d'un polyacide suivi par deux méthodes ; RPAC d'ordre 1 ; pontage d'un ligand expliqué par les OM ; stéréoisomères de l'acide tartrique ; justification d'un Dean-Stark, du DMF ou d'extractions multiples ; mécanisme d'une addition de Michael.
+
+\end{document}

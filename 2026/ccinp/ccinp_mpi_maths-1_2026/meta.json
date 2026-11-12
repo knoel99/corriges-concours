@@ -1,0 +1,33 @@
+{
+  "slug": "ccinp_mpi_maths-1_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MPI",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 22,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/ex1-schema-relationnel.svg",
+      "question": "Exercice I",
+      "legende": "Schéma des deux tables : la clé étrangère PAIEMENTS.id_eleve référence la clé primaire ELEVES.id ; un élève a zéro, un ou plusieurs paiements."
+    },
+    {
+      "fichier": "figures/q7-antidiagonale-cauchy.svg",
+      "question": "Q7",
+      "legende": "Les couples (k, j) tels que k + j = n forment une antidiagonale : c_n = P(X + Y = n) somme les produits a_k b_(n−k) (ici n = 4)."
+    },
+    {
+      "fichier": "figures/q11-concentration-integrande.svg",
+      "question": "Q11",
+      "legende": "Module de l'intégrande initiale pour x = 1, 1/2 et 1/4 : quand x → 0⁺, la masse se concentre en t = 0 à aire π constante."
+    },
+    {
+      "fichier": "figures/q15-periodisation-f.svg",
+      "question": "Q15",
+      "legende": "Périodisation de f : les translatées x ↦ f(x + n) ont pour somme F, 1-périodique, qui oscille entre π th π et π coth π."
+    }
+  ]
+}

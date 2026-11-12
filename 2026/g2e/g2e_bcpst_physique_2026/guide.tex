@@ -1,0 +1,1535 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={G2E BCPST — Physique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · G2E BCPST}
+\fancyhead[R]{\small Physique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries G2E BCPST — Physique 2026\par}\medskip
+  {\large G2E · BCPST · Physique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} Un fil conducteur culinaire : cuire, conserver, filtrer et contrôler des aliments. Le sujet balaie une grande partie du programme de physique de BCPST : thermodynamique (gaz parfaits, équilibre liquide-vapeur, premier principe), mécanique (statique, oscillateur amorti en régime sinusoïdal forcé), transferts thermiques (conduction, loi de Fourier, loi de Newton, diffusion), hydrodynamique (loi de Darcy, résistances hydrauliques), optique géométrique (Snell-Descartes) et traitement des incertitudes (écart normalisé), avec une question de programmation Python (\texttt{odeint}).
+
+\textbf{Découpage (51 questions, 3 h 30, calculatrice autorisée).}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2527}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1320}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5853}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A. Cuisson des aliments & 1--15 & cocotte-minute (Duperray, soupape, pressions partielles), électron élastiquement lié forcé par une micro-onde, loi d'échelle diffusive et critique d'une recette \\
+B. Température lors de la cuisson & 16--36 & modèle à gradient nul (équation du premier ordre), profil stationnaire avec source dans un échantillon, script \texttt{odeint}, résolution analytique, raccordement conducto-convectif, critique \\
+C. Microfiltration & 37--45 & loi de Darcy, résistances en série, loi de filtration \(t=\frac A2V^2+BV\), linéarisation, application numérique \\
+D. Réfractomètre de Pulfrich & 46--51 & Snell-Descartes, \(\sin\theta=\sqrt{N^2-n^2}\), domaine de mesure, choix technologiques, \(z\)-score \\
+\end{longtable}
+
+\textbf{Difficulté.} Le sujet est long mais très progressif : la plupart des questions sont des applications directes du cours. Les points délicats sont la phase en Q11, le bilan avec source de Q23, la lecture attentive des lois de la partie C (le \(S\) au numérateur de la loi du filtre) et la critique des applications numériques : deux résultats numériques sont physiquement absurdes (Q35, qui appelle la critique de Q36, et Q45, où une donnée semble erronée).
+
+\textbf{Questions à ne pas laisser passer.} 1, 3, 6, 7, 10, 13, 14, 16, 17, 18, 22, 25, 27, 30--33, 37, 41, 43, 46, 48, 51 : courtes, indépendantes ou presque, et entièrement guidées par l'énoncé.
+
+\textbf{Gestion du temps.} Environ 4 minutes par question. Les quatre parties sont indépendantes ; la partie D, courte, peut être traitée tôt. Ne pas s'enliser dans Q11 ni dans la discussion de Q5.
+
+\hypertarget{partie-a-cuisson-des-aliments}{%
+\section{Partie A --- Cuisson des aliments}\label{partie-a-cuisson-des-aliments}}
+
+La cocotte-minute mobilise la relation de Duperray, l'équilibre d'un solide et le mélange idéal de gaz parfaits. Le four à micro-ondes sert de prétexte à l'étude complète d'un oscillateur amorti forcé. La cuisson traditionnelle introduit la loi d'échelle diffusive.
+
+Données : \(V=8\) L et \(V_{\mathrm{eau}}=1\) L, d'où \(V_{\mathrm{gaz}}=7{,}0\) L.
+
+Conditions initiales : \(\theta_0=20\) °C et \(P_0=1\) atm \(\approx1\) bar. Relation de Duperray :
+
+\equationajustee{P_s=P_0(\theta/100)^4}
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Quelle condition sur la pression de vapeur saturante définit l'ébullition sous une pression donnée ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+L'eau bout lorsque \(P_s(\theta)\) égale la pression au-dessus du liquide : \(P_0(\theta_{\mathrm{eb}}/100)^4=P_0\), d'où
+
+\equationajustee{\boxed{\theta_{\mathrm{eb}}=100\ ^\circ\mathrm C\ (373\ \mathrm K)}}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Quelle est la pression absolue dans la cocotte quand la soupape s'ouvre ? Le mot « différentielle » est essentiel.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Réinjecter cette pression dans la relation de Duperray et isoler \(\theta\) par une racine quatrième.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+À l'ouverture, \(P=P_0+\Delta P\) et l'eau bouillonnante vérifie \(P_s(\theta_1)=P_0+\Delta P\) :
+
+\equationajustee{\boxed{\theta_1=100\left(1+\frac{\Delta P}{P_0}\right)^{1/4}}}
+
+Numériquement :
+
+\equationajustee{\begin{aligned}
+\theta_1&=100\times2^{1/4}\\
+&\simeq\boxed{119\ ^\circ\mathrm C\ (392\ \mathrm K)}
+\end{aligned}}
+
+\textbf{Intérêt.} On cuit vers 120 °C au lieu de 100 °C. Les réactions de cuisson étant activées thermiquement (loi d'Arrhenius), elles sont plusieurs fois plus rapides (de l'ordre d'un facteur 3) : le temps de cuisson est fortement réduit, sans perte d'eau par évaporation.
+
+\begin{piege}
+
+Une soupape différentielle de 1 bar ne maintient pas 1 bar dans la cocotte, mais une \textbf{surpression} de 1 bar : la pression absolue vaut 2 bar.
+
+\end{piege}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Faire le bilan des forces verticales sur la soupape au moment où elle décolle, sans oublier l'atmosphère qui appuie sur sa face supérieure.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Forces sur la soupape (axe vertical ascendant) : \(+P_{\mathrm{int}}S\), \(-P_0S\), \(-mg\). Elle se soulève lorsque \((P_{\mathrm{int}}-P_0)S=mg\) :
+
+\equationajustee{\begin{aligned}
+\Delta P&=\frac{mg}{S}\\
+&=\frac{40\times10^{-3}\times10}{4\times10^{-6}}\\
+&\Longrightarrow\quad\boxed{\Delta P=1{,}0\times10^5\ \mathrm{Pa}=1{,}0\ \mathrm{bar}}
+\end{aligned}}
+
+C'est bien une soupape différentielle de 1 bar.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q3-soupape-forces.pdf}
+\caption*{Figure 1 --- Bilan des forces verticales sur la soupape au décollage :
+force pressante intérieure vers le haut, force pressante atmosphérique
+et poids vers le bas}
+\end{figure}
+
+\begin{piege}
+
+\(1\ {\mathrm{mm}}^2=10^{-6}\ \mathrm m^2\) : une surface se convertit avec le carré du facteur de conversion des longueurs.
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+L'air est enfermé : que deviennent sa quantité de matière et son volume entre l'état initial et le déclenchement ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire deux fois la loi des gaz parfaits pour l'air seul, avec sa pression partielle.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\(n_{\mathrm{air}}\) et \(V_{\mathrm{gaz}}\) sont constants (soupape fermée ; volume du liquide quasi inchangé, cf.~Q5) :
+
+\equationajustee{\begin{aligned}
+\frac{P_0V_{\mathrm{gaz}}}{RT_0}&=\frac{p_{\mathrm{air}}V_{\mathrm{gaz}}}{RT_1}\\
+&\Longrightarrow\quad\boxed{p_{\mathrm{air}}=P_0\frac{T_1}{T_0}}
+\end{aligned}}
+
+On prend \(T_1=392\) K et \(T_0=293\) K. Pour \(P_0=1{,}00\) bar, on obtient \(p_{\mathrm{air}}=1{,}34\) bar.
+
+Pour \(P_0=1{,}013\) bar, on aurait \(1{,}36\) bar. On retient environ \(1{,}35\) bar.
+
+\begin{methode}
+
+Dans un mélange idéal de gaz parfaits, chaque constituant obéit à \(p_iV=n_iRT\) avec le volume total du mélange, et la pression totale est la somme des pressions partielles (loi de Dalton).
+
+\end{methode}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+La pression totale est imposée par la soupape ; en déduire la pression partielle de la vapeur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour commenter, comparer la masse trouvée à la masse d'eau introduite, puis vérifier si l'hypothèse « eau à 119 °C » est compatible avec la présence d'air.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\equationajustee{\begin{aligned}
+p_{\mathrm{vap}}&=P_0+\Delta P-p_{\mathrm{air}}\\
+&=2{,}00-1{,}35\\
+&=0{,}65\ \mathrm{bar}
+\end{aligned}}
+
+\equationajustee{\begin{aligned}
+n_{\mathrm{eau}}&=\frac{p_{\mathrm{vap}}V_{\mathrm{gaz}}}{RT_1}\\
+&=\frac{0{,}65\times10^5\times7{,}0\times10^{-3}}{8{,}31\times392}\\
+&\Longrightarrow\quad\boxed{n_{\mathrm{eau}}\simeq0{,}14\ \mathrm{mol}}
+\end{aligned}}
+
+\equationajustee{\boxed{m_{\mathrm{eau}}=n_{\mathrm{eau}}M\simeq2{,}5\ \mathrm g}}
+
+\textbf{Commentaire.} Sur 1,0 kg d'eau, seuls 2,5 g (0,25 \%) sont sous forme vapeur : la phase liquide est à peine entamée, ce qui justifie de considérer \(V_{\mathrm{gaz}}\) constant.
+
+Le modèle n'est cependant pas entièrement cohérent : à 119 °C la vapeur saturante serait à 2,0 bar et la pression totale à 3,35 bar.
+
+En présence d'air, la soupape s'ouvre en fait dès que \(p_{\mathrm{air}}(T)+P_s(\theta)=2\) bar, vers 93 °C. Elle chasse l'air, puis le régime « vapeur quasi pure à 2 bar et 119 °C » s'installe.
+
+Avec \(p_{\mathrm{vap}}=2{,}0\) bar, on trouverait 0,43 mol, soit 7,7 g : la conclusion qualitative est la même.
+
+\begin{jury}
+
+L'en-tête du sujet invite à signaler ce qui semble être une incohérence d'énoncé et à expliquer les initiatives prises. Une remarque brève et argumentée est préférable à un long développement.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Relation entre longueur d'onde, célérité et fréquence dans le vide ; rappeler les bornes du visible.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\equationajustee{\begin{aligned}
+\lambda&=\frac cf\\
+&=\frac{3{,}00\times10^8}{3\times10^9}\\
+&=\boxed{0{,}10\ \mathrm m}
+\end{aligned}}
+
+Le visible va de 400 à 800 nm : \(\lambda\) est environ \(10^5\) fois plus grande (\(0{,}10/5\times10^{-7}=2\times10^5\)). Ce sont des ondes centimétriques (micro-ondes).
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Que signifie « monochromatique » en termes de spectre ? Quelle forme temporelle cela impose-t-il ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+L'onde a une fréquence unique (\(f=3\) GHz) : elle est \textbf{monochromatique}. Une onde de fréquence unique a une dépendance temporelle sinusoïdale, \(E_0\cos(\omega t-kx+\varphi)\) avec \(\omega=2\pi f\) : elle est \textbf{sinusoïdale}. C'est une idéalisation (un train d'onde réel a une durée finie, donc une petite largeur spectrale).
+
+\begin{piege}
+
+Ne pas confondre monochromatique (une seule fréquence) avec plane (géométrie des surfaces d'onde) ou polarisée (direction du champ).
+
+\end{piege}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Préciser système, référentiel et bilan des forces, puis projeter sur \(\vec e_x\). Quelle est la charge \(q\) de l'électron ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+Électron (masse \(m\), charge \(q=-e\)), référentiel galiléen lié au noyau :
+
+\equationajustee{\begin{aligned}
+m\ddot x&=-kx-\frac m\tau\dot x+qE_0\cos(\omega t)\\
+&\Longrightarrow\quad\boxed{m\frac{\mathrm d^2x}{\mathrm dt^2}+\frac m\tau\frac{\mathrm dx}{\mathrm dt}+kx=-eE_0\cos(\omega t)}
+\end{aligned}}
+
+\begin{piege}
+
+Les signes « \(-\) » des forces de rappel et de frottement sont déjà dans leurs expressions vectorielles : ne pas en ajouter un second. Le signe de \(q\) ne change pas l'amplitude mais décale la phase de \(\pi\).
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Forme canonique : coefficient 1 devant la dérivée seconde, puis identification de \(\omega_0\) et du facteur de qualité.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\equationajustee{\boxed{\ddot x+\frac{\omega_0}{Q}\dot x+\omega_0^2x=\frac{qE_0}{m}\cos(\omega t)}}
+
+avec
+
+\equationajustee{\begin{aligned}
+\omega_0&=\sqrt{\frac km}\\
+Q&=\omega_0\tau
+\end{aligned}}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Que devient l'équation sans frottement et sans excitation ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Sans frottement ni excitation : \(\ddot x+\frac kmx=0\), équation de l'oscillateur harmonique, de solutions sinusoïdales de pulsation
+
+\equationajustee{\boxed{\omega_0=\sqrt{\frac km}}}
+
+homogène à des s⁻¹ (\([k]=\mathrm{kg\,s^{-2}}\)).
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Associer à \(x(t)\) l'amplitude complexe \(\underline X=A_m\mathrm e^{j\varphi}\) et remplacer chaque dérivation temporelle par une multiplication par \(j\omega\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(A_m\) est le module de \(\underline X\), \(\varphi\) son argument. Penser que \(q<0\) et que l'argument du dénominateur varie dans \(]0,\pi[\) : la fonction arctangente seule ne suffit pas.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+En régime permanent, avec l'excitation complexe \(\frac{qE_0}{m}\mathrm e^{j\omega t}\) :
+
+\equationajustee{\begin{aligned}
+\left(\omega_0^2-\omega^2+j\frac\omega\tau\right)\underline X&=\frac{qE_0}{m}\\
+\Longrightarrow\quad\underline X&=\frac{qE_0/m}{\omega_0^2-\omega^2+j\omega/\tau}
+\end{aligned}}
+
+\equationajustee{\boxed{A_m=\frac{eE_0/m}{\sqrt{(\omega_0^2-\omega^2)^2+\omega^2/\tau^2}}}}
+
+Le dénominateur a une partie imaginaire positive, donc un argument \(\psi=\frac\pi2-\arctan\frac{\tau(\omega_0^2-\omega^2)}{\omega}\in\,]0,\allowbreak \pi[\) ; et \(\arg(q)=\pi\). D'où \(\varphi=\pi-\psi\) :
+
+\equationajustee{\boxed{\varphi=\frac\pi2+\arctan\!\left(\frac{\tau(\omega_0^2-\omega^2)}{\omega}\right)\in\,]0,\pi[}}
+
+c'est-à-dire \(\tan\varphi=-\dfrac{\omega/\tau}{\omega_0^2-\omega^2}\) avec \(\sin\varphi>0\).
+
+\(A_m\) est l'\textbf{amplitude} des oscillations forcées. \(\varphi\) est le \textbf{déphasage} de \(x(t)\) par rapport à l'excitation \(E_0\cos\omega t\).
+
+À basse fréquence (\(\omega\ll\omega_0\)), \(\varphi\to\pi\) : l'électron, de charge négative, oscille en opposition de phase avec le champ.
+
+\begin{methode}
+
+Pour obtenir une phase sans ambiguïté, déterminer d'abord le signe de la partie réelle ou imaginaire du complexe, puis choisir l'intervalle. L'écriture \(\arg(a+jb)=\frac\pi2-\arctan(a/b)\), valable quand \(b>0\), évite de distinguer les cas selon le signe de \(\omega_0-\omega\).
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Opposer la conduction à la convection et au rayonnement : support matériel, mouvement de matière, sens du transfert, loi phénoménologique.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+La conduction est un transfert d'énergie \textbf{sans mouvement macroscopique de matière}, de proche en proche, par agitation thermique (chocs moléculaires, vibrations du réseau, électrons libres). Elle exige un milieu matériel, se fait \textbf{du chaud vers le froid} (phénomène irréversible), obéit à la \textbf{loi de Fourier} \(\vec\jmath_{\mathrm{th}}=-\lambda\,\overrightarrow{\mathrm{grad}}\,T\) et est \textbf{diffusive} : lente, de durée caractéristique proportionnelle au carré de la distance.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Isoler \(D_{\mathrm{th}}\) dans la loi d'échelle.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\(D_{\mathrm{th}}=L^2/\tau\) : \(\boxed{D_{\mathrm{th}}\ \text{s'exprime en m}^2\cdot\text{s}^{-1}}\), unité commune à tous les coefficients de diffusion.
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Masse proportionnelle au volume, volume d'une sphère proportionnel à \(R^3\).
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\(m\propto R^3\) (même masse volumique), donc \((R_2/R_1)^3=2\) :
+
+\equationajustee{\boxed{R_2=2^{1/3}R_1\simeq1{,}26\,R_1}}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Quelle est la longueur caractéristique sur laquelle la chaleur doit diffuser pour cuire le cœur ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la critique, écrire la règle du livre sous la forme \(\Delta t\propto m^{a}\) et comparer les exposants sur un exemple chiffré.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\(\Delta t\propto R^2/D_{\mathrm{th}}\), même \(D_{\mathrm{th}}\) pour les deux préparations :
+
+\equationajustee{\begin{aligned}
+\frac{\Delta t_2}{\Delta t_1}&=\left(\frac{R_2}{R_1}\right)^2\\
+&=2^{2/3}
+\end{aligned}}
+
+d'où
+
+\equationajustee{\begin{aligned}{}&\boxed{a=\frac23}\\
+&\boxed{\Delta t_2\simeq1{,}6\,\Delta t_1}
+\end{aligned}}
+
+\textbf{Critique.} « 1 h 30 par kilo » suppose \(\Delta t\propto m\) (\(a=1\)). La diffusion donne \(\Delta t\propto m^{2/3}\) : doubler la masse ne multiplie le temps que par 1,6. Calée sur 1 kg, la règle donne 9 h pour une dinde de 6 kg, contre environ 5 h selon la loi d'échelle : elle surestime nettement le temps des grosses pièces. Elle n'est acceptable qu'au voisinage de la masse qui a servi à l'établir (et la dinde n'est ni sphérique ni homogène).
+
+\begin{methode}
+
+Loi d'échelle diffusive : \(\tau\sim L^2/D\). Avec \(L\propto m^{1/3}\) à masse volumique fixée, toute durée de diffusion varie comme \(m^{2/3}\).
+
+\end{methode}
+
+\hypertarget{partie-b-uxe9volution-temporelle-et-spatiale-de-la-tempuxe9rature-lors-de-la-cuisson}{%
+\section{Partie B --- Évolution temporelle et spatiale de la température lors de la cuisson}\label{partie-b-uxe9volution-temporelle-et-spatiale-de-la-tempuxe9rature-lors-de-la-cuisson}}
+
+Deux modèles complémentaires : un corps de température uniforme chauffé par son contact avec l'air du four (équation du premier ordre en temps), puis un échantillon chauffé en volume par les micro-ondes, en régime stationnaire (équation du second ordre en espace), résolu numériquement puis analytiquement.
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Loi de Newton : proportionnalité à la surface et à l'écart de température ; choisir l'orientation « reçu par le corps ».
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\equationajustee{\boxed{\Phi_{cc}=hS\left(T_f-T(t)\right)}}
+
+flux reçu par le corps (en W ; \(h\) en W·m⁻²·K⁻¹), positif tant que \(T<T_f\).
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Premier principe pour une phase condensée entre \(t\) et \(t+\mathrm dt\) : expression de \(\mathrm dU\), du travail, du transfert thermique.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Premier principe : \(\mathrm dU=\delta W+\delta Q\). Ici \(\delta W=0\) (phase condensée indilatable), \(\mathrm dU=mc\,\mathrm dT\) et \(\delta Q=hS(T_f-T)\,\mathrm dt\) :
+
+\equationajustee{\frac{\mathrm dT}{\mathrm dt}+\frac{hS}{mc}T=\frac{hS}{mc}T_f}
+
+\equationajustee{\begin{aligned}{}&\boxed{A=\frac{hS}{mc}}\\
+&\boxed{B=\frac{hST_f}{mc}}
+\end{aligned}}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Solution générale de l'équation homogène, solution particulière constante, puis condition initiale.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Avec \(\tau_{\mathrm{th}}=\dfrac{mc}{hS}\) :
+
+\equationajustee{\boxed{T(t)=T_f+\left(T_i-T_f\right)\mathrm e^{-t/\tau_{\mathrm{th}}}}}
+
+On vérifie \(T(0)=T_i\) et \(T(t)\to T_f\).
+
+\begin{piege}
+
+\(T(t)=T_f+T_i\,\mathrm e^{-t/\tau}\) ne vérifie pas la condition initiale : la constante se détermine sur la solution complète, pas sur la solution homogène seule.
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Repérer la valeur initiale, l'asymptote, la pente à l'origine et le point \(t=\tau_{\mathrm{th}}\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Courbe croissante et concave, partant de \(T_i\), tendant vers l'asymptote horizontale \(T=T_f\) sans l'atteindre.
+
+La tangente à l'origine (pente \((T_f-T_i)/\tau_{\mathrm{th}}\)) coupe l'asymptote en \(t=\tau_{\mathrm{th}}\), instant où \(T=T_i+0{,}63(T_f-T_i)\).
+
+Au bout de \(5\tau_{\mathrm{th}}\), l'écart à \(T_f\) est inférieur à 1 \% de l'écart initial.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q19-courbe-temperature.pdf}
+\caption*{Figure 2 --- Allure de T(t) : départ en Ti, asymptote T = Tf, tangente à
+l'origine coupant l'asymptote en t = τth}
+\end{figure}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Isoler l'exponentielle puis prendre le logarithme ; vérifier que le résultat est positif.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\equationajustee{\boxed{\Delta t=\frac{mc}{hS}\ln\!\left(\frac{T_f-T_i}{T_f-T(\Delta t)}\right)}}
+
+Le logarithme est positif car \(T_f-T(\Delta t)<T_f-T_i\) ; \(\Delta t\to\infty\) quand la cible tend vers \(T_f\).
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Intégrer le flux de Q16 en y reportant l'expression de \(T(t)\).
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\equationajustee{\begin{aligned}
+Q&=\int_0^{\Delta t}hS(T_f-T_i)\,\mathrm e^{-t/\tau_{\mathrm{th}}}\,\mathrm dt\\
+&=hS(T_f-T_i)\,\tau_{\mathrm{th}}\left(1-\mathrm e^{-\Delta t/\tau_{\mathrm{th}}}\right)
+\end{aligned}}
+
+\equationajustee{\boxed{Q=mc\left(T_f-T_i\right)\left(1-\mathrm e^{-hS\Delta t/(mc)}\right)}}
+
+Contrôle : c'est bien \(mc\,(T(\Delta t)-T_i)\), et \(Q\to mc(T_f-T_i)\) aux temps longs.
+
+\begin{piege}
+
+Sortir \(T\) de l'intégrale comme s'il était constant donne \(hS(T_f-T_i)\Delta t\), qui croît sans limite : résultat faux.
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Forme vectorielle de la loi, puis projection sur l'axe \(x\) ; dresser la liste des grandeurs avec leurs unités.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\equationajustee{\boxed{\vec\jmath_{\mathrm{th}}=-\lambda\frac{\mathrm dT}{\mathrm dx}\vec e_x}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Grandeur & Signification & Unité \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\vec\jmath_{\mathrm{th}}\) & densité de flux thermique & W·m⁻² \\
+\(\lambda\) & conductivité thermique & W·m⁻¹·K⁻¹ \\
+\(T\) & température & K \\
+\(\mathrm dT/\mathrm dx\) & gradient de température & K·m⁻¹ \\
+\end{longtable}
+
+Flux à travers la section : \(\Phi(x)=-\lambda S\,\mathrm dT/\mathrm dx\) (W). Le signe « \(-\) » traduit le transfert du chaud vers le froid.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Pour le signe : où la température est-elle maximale, compte tenu de la symétrie et du fait que la chaleur ne s'évacue que par les faces ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour le bilan : la puissance \(\mathcal P\) est une puissance totale ; quelle puissance est déposée dans une tranche de volume \(S\,\mathrm dx\) ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+En régime stationnaire : flux entrant en \(x\) + puissance produite = flux sortant en \(x+\mathrm dx\).
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\textbf{Signe.} Source uniforme, évacuation par les seules faces \(x=\pm e\), symétrie par rapport à \(x=0\) : \(T\) est maximale au centre.
+
+L'énergie s'écoule donc vers \(+\vec e_x\) pour \(x>0\). Ainsi \(-\lambda\,\mathrm dT/\mathrm dx>0\), soit \(\mathrm dT/\mathrm dx<0\).
+
+\textbf{Bilan.} Puissance volumique \(p_v=\dfrac{\mathcal P}{2eS}\). Sur la tranche \([x,x+\mathrm dx]\), en régime stationnaire :
+
+\equationajustee{\begin{aligned}
+\Phi(x)+p_vS\,\mathrm dx&=\Phi(x+\mathrm dx)\\
+\Longrightarrow\quad\frac{\mathrm d\Phi}{\mathrm dx}&=\frac{\mathcal P}{2e}
+\end{aligned}}
+
+et, avec \(\Phi=-\lambda S\,\mathrm dT/\mathrm dx\) :
+
+\equationajustee{\boxed{\lambda\frac{\mathrm d^2T}{\mathrm dx^2}+\frac{\mathcal P}{2eS}=0}}
+
+\begin{methode}
+
+Bilan local en régime stationnaire : ce qui entre + ce qui est produit = ce qui sort. La source s'écrit toujours avec une puissance \textbf{volumique} multipliée par le volume de la tranche.
+
+\end{methode}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Deux conditions sont imposées en \(x=0\) : laquelle découle d'une propriété physique du problème, laquelle est un choix ?
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{dTsurdt0\ =\ 0} : \(\mathrm dT/\mathrm dx=0\) en \(x=0\), imposé par la symétrie (profil pair, flux nul dans le plan médian, maximum de température). Le nom \texttt{dTsurdt} désigne en fait \(\mathrm dT/\mathrm dx\).
+\item
+  \texttt{T0\ =\ 373} : \(T(0)=373\) K, valeur arbitraire (la vraie valeur dépend des échanges aux faces, Q34). Comme l'équation ne porte que sur \(T''\), cette valeur ne fait que translater le profil verticalement. Ce \texttt{T0} n'est pas la température extérieure \(T_0\) de l'énoncé.
+\end{itemize}
+
+Une équation du second ordre résolue par \texttt{odeint} exige deux conditions en un même point.
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Que renvoie \texttt{np.linspace(\allowbreak{}a,\allowbreak{}\ b,\allowbreak{}\ n)\allowbreak{}} et à quoi sert ce tableau dans la suite du script ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\texttt{x\ =\allowbreak{}\ np.linspace(\allowbreak{}0,\allowbreak{}e,\allowbreak{}1000)\allowbreak{}} crée 1000 abscisses régulièrement espacées de 0 à \(e\) inclus (pas \(e/999\)). C'est la discrétisation de \([0,e]\), où \texttt{odeint} renvoie \(T\) et qui sert d'abscisse pour le tracé.
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Comment ramener une équation du second ordre à un système du premier ordre ? Quel est le vecteur d'état ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+On pose \(Y=(T,\ \mathrm dT/\mathrm dx)\). \texttt{derivee(Y,x)} reçoit l'état et l'abscisse (l. 19), puis en extrait \(T\) et \(\mathrm dT/\mathrm dx\) (l. 20). Elle renvoie (l. 21), la dérivée seconde étant tirée de l'équation de Q23 :
+
+\equationajustee{\frac{\mathrm dY}{\mathrm dx}=\left(\frac{\mathrm dT}{\mathrm dx},\ -\frac{\mathcal P}{2eS\lambda}\right)}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Suivre la notice de l'annexe : fonction, conditions initiales, liste des abscisses, dans cet ordre.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\begin{lstlisting}[language=Python]
+def temperature(T0, dTsurdt0):
+    return odeint(derivee, [T0, dTsurdt0], x)[:,0]
+\end{lstlisting}
+
+\texttt{odeint} renvoie un tableau à 1000 lignes et 2 colonnes (\(T\) puis \(\mathrm dT/\mathrm dx\)) ; \texttt{{[}:,0{]}} prend toutes les lignes de la colonne 0, donc les valeurs de \(T(x)\).
+
+\begin{piege}
+
+\texttt{{[}0,:{]}} renverrait la première \textbf{ligne} (l'état en \(x=0\) seulement), pas le profil.
+
+\end{piege}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+\texttt{plt.plot} attend les abscisses, les ordonnées, puis éventuellement un style ; observer le style du graphe fourni.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour commenter : forme de la courbe, pente en \(x=0\), valeur en \(x=e\) que l'on peut recalculer.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\begin{lstlisting}[language=Python]
+plt.plot(x, temperature(T0, dTsurdt0), 'b--')
+\end{lstlisting}
+
+Le graphe est un arc de parabole concave (\(T''<0\) constante). La tangente est horizontale en \(x=0\), puis la décroissance est de plus en plus rapide, de 373 K à 323 K en \(x=e\). En effet
+
+\equationajustee{T(x)=T(0)-\frac{\mathcal P}{4eS\lambda}x^2}
+
+et
+
+\equationajustee{\begin{aligned}
+T(0)-T(e)&=\frac{\mathcal Pe}{4S\lambda}\\
+&=50\ \mathrm K.
+\end{aligned}}
+
+Le cœur est le point le plus chaud.
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Utiliser la symétrie du problème par rapport au plan \(x=0\).
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+Profil pair : parabole \(T(x)=T(0)-\dfrac{\mathcal P}{4eS\lambda}x^2\) sur \([-e,e]\), maximale au centre (tangente horizontale), égale à \(T(e)\) sur les deux faces.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q29-profil-parabolique.pdf}
+\caption*{Figure 3 --- Profil stationnaire pour −e ≤ x ≤ e : parabole paire,
+maximale au centre avec tangente horizontale, égale à T(e) sur les deux
+faces}
+\end{figure}
+
+\begin{piege}
+
+Prolonger la courbe de façon impaire (décroissante sur tout \([-e,e]\)) contredit la symétrie du dispositif.
+
+\end{piege}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Le second membre est constant : deux intégrations successives.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\equationajustee{\boxed{T(x)=-\frac{\mathcal P}{4eS\lambda}x^2+A_1x+A_2}}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Écrire \(T(e)\) et \(T(-e)\) avec l'expression précédente, puis les combiner.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+La différence donne \(A_1=0\), puis \(A_2=T(e)+\dfrac{\mathcal Pe}{4S\lambda}\) :
+
+\equationajustee{\boxed{T(x)=T(e)+\frac{\mathcal P}{4eS\lambda}\left(e^2-x^2\right)}}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Où une parabole paire tournée vers le bas atteint-elle son maximum ?
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\equationajustee{\boxed{T_{\max}=T(0)=T(e)+\frac{\mathcal Pe}{4S\lambda}}}
+
+L'écart cœur-surface croît avec \(\mathcal P\) et \(e\) et décroît avec \(\lambda\).
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Appliquer \(\Phi=-\lambda S\,\mathrm dT/\mathrm dx\) au profil de Q31.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\equationajustee{\begin{aligned}{}&\boxed{\Phi(x)=\frac{\mathcal P}{2e}x}\\
+&\boxed{\Phi(e)=\frac{\mathcal P}{2}}
+\end{aligned}}
+
+Chaque face évacue la moitié de la puissance déposée : le bilan global est vérifié.
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Écrire le flux conducto-convectif cédé par la face \(x=e\) à l'extérieur, puis l'égaler au flux conductif arrivant à cette face.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\(\Phi(e)=hS\left(T(e)-T_0\right)=\dfrac{\mathcal P}{2}\) par continuité du flux, d'où
+
+\equationajustee{\begin{aligned}{}&\boxed{T(e)=T_0+\frac{\mathcal P}{2hS}}\\
+&\boxed{T_{\max}=T_0+\frac{\mathcal P}{2hS}+\frac{\mathcal Pe}{4S\lambda}}
+\end{aligned}}
+
+\begin{methode}
+
+L'élévation de température au cœur est la somme de deux contributions en série : le saut à l'interface (résistance conducto-convective) et la chute dans le matériau (résistance de conduction). Leur rapport \(he/(2\lambda)\) indique laquelle limite le transfert.
+
+\end{methode}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Calculer séparément les deux termes ajoutés à \(T_0\) ; regarder le résultat d'un œil critique.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\equationajustee{\begin{aligned}
+\frac{\mathcal P}{2hS}&=\frac{200}{2\times10\times1{,}0\times10^{-2}}\\
+&=1{,}0\times10^3\ \mathrm K\\
+\frac{\mathcal Pe}{4S\lambda}&=\frac{200\times5{,}0\times10^{-3}}{4\times1{,}0\times10^{-2}\times0{,}50}\\
+&=50\ \mathrm K
+\end{aligned}}
+
+\equationajustee{\begin{aligned}{}&\boxed{T(e)\simeq1{,}29\times10^3\ \mathrm K}\\
+&\boxed{T_{\max}\simeq1{,}34\times10^3\ \mathrm K}
+\end{aligned}}
+
+Résultat absurde pour un aliment aqueux (plus de 1000 °C), dominé par le saut à l'interface.
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+À quelle température plafonne un aliment contenant de l'eau liquide sous 1 bar, et pourquoi ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Revenir aussi sur les hypothèses : régime stationnaire, source uniforme, modes de transfert retenus.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+Non : la modélisation prévoit plus de 1000 °C, alors qu'un aliment humide plafonne vers 100 °C. Il faut prendre en compte la \textbf{vaporisation de l'eau} : au voisinage de 100 °C, la puissance absorbée sert au changement d'état (enthalpie de vaporisation \(\approx2{,}3\times10^6\) J/kg ; 200 W vaporisent environ \(9\times10^{-5}\) kg/s, soit 0,3 kg/h) à température quasi constante. Le modèle néglige aussi le caractère transitoire de la cuisson, la non-uniformité de la puissance absorbée (atténuation de l'onde, ondes stationnaires dans la cavité) et le rayonnement.
+
+\hypertarget{partie-c-microfiltration-des-boissons}{%
+\section{Partie C --- Microfiltration des boissons}\label{partie-c-microfiltration-des-boissons}}
+
+On modélise la filtration par deux résistances hydrauliques en série : celle du « cake », qui grossit au cours du temps, et celle du filtre, constante. On en tire une loi \(t(V)\) qu'on linéarise pour remonter aux caractéristiques des deux milieux.
+
+Lois de l'énoncé : \(D_v=\dfrac{KS}{\eta}\dfrac{\Delta P_1}{H}\) pour le cake, \(D_v=\dfrac{S}{\beta\eta}\Delta P_2\) pour le filtre.
+
+\begin{piege}
+
+Lire attentivement la loi du filtre : c'est la surface \(S\) qui figure au numérateur, pas la perméabilité \(K\).
+
+Une confusion ici fausse \(R_{h2}\), \(R_h\), la constante \(B\) et la valeur de \(\beta\).
+
+L'unité de \(\beta\) sortirait pourtant juste, \(K\) et \(S\) s'exprimant tous deux en m².
+
+\end{piege}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Isoler \(K\) dans la loi de Darcy et \(\beta\) dans la loi du filtre, puis remplacer chaque grandeur par son unité SI.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\equationajustee{\begin{aligned}
+K&=\frac{D_v\eta H}{S\Delta P_1}\\
+{[K]}&=\frac{\mathrm{m^3\,s^{-1}\cdot Pa\,s\cdot m}}{\mathrm{m^2\cdot Pa}}\\
+&\Longrightarrow\quad\boxed{K\ \text{en m}^2}
+\end{aligned}}
+
+\equationajustee{\begin{aligned}
+\beta&=\frac{S\Delta P_2}{\eta D_v}\\
+{[\beta]}&=\frac{\mathrm{m^2\cdot Pa}}{\mathrm{Pa\,s\cdot m^3\,s^{-1}}}\\
+&\Longrightarrow\quad\boxed{\beta\ \text{en m}^{-1}}
+\end{aligned}}
+
+\(K\) est de l'ordre du carré de la taille des pores ; \(\beta\) s'interprète comme le rapport épaisseur/perméabilité d'un milieu poreux équivalent au filtre.
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Pourquoi la relation débit/pression est-elle linéaire ? Quelles hypothèses sur le fluide, le milieu et le régime d'écoulement ?
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+Écoulement lent et laminaire, dominé par la viscosité (Reynolds de pore très petit devant 1), d'où la linéarité ; fluide newtonien, incompressible, de viscosité uniforme ; milieu poreux homogène, isotrope, saturé et indéformable ; régime permanent ou quasi permanent ; écoulement unidirectionnel mû par la différence de pression (pesanteur négligée ou incluse dans la pression motrice).
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Définir la résistance par analogie avec la loi d'Ohm : quelle grandeur joue le rôle de la tension, laquelle celui de l'intensité ?
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\(R_h=\dfrac{\Delta P}{D_v}\) (en Pa·s·m⁻³), analogue de \(R=U/I\).
+
+\equationajustee{\begin{aligned}{}&\boxed{R_{h1}=\frac{\eta H}{KS}}\\
+&\boxed{R_{h2}=\frac{\beta\eta}{S}}
+\end{aligned}}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Le fluide traverse-t-il le cake et le filtre successivement ou parallèlement ? Qu'est-ce qui est commun aux deux ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+Même débit à travers le cake puis le filtre, chutes de pression additives (série) :
+
+\equationajustee{\begin{aligned}
+\Delta P&=(R_{h1}+R_{h2})D_v\\
+R_h&=R_{h1}+R_{h2}\\
+&=\boxed{\frac{\eta}{S}\left(\frac HK+\beta\right)}
+\end{aligned}}
+
+\begin{methode}
+
+Analogie électrique : débit commun, pressions additives (série) ; pression commune, débits additifs (parallèle).
+
+\end{methode}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Définition du débit volumique.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\equationajustee{\boxed{D_v=\frac{\mathrm dV}{\mathrm dt}}}
+
+\begin{piege}
+
+\(D_v=V/t\) n'est valable qu'à débit constant, ce qui n'est pas le cas ici puisque le cake s'épaissit.
+
+\end{piege}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+Exprimer \(h\) puis \(H\) en fonction de \(V\) et \(S\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Reporter dans \(\Delta P=R_hD_v\) avec \(D_v=\mathrm dV/\mathrm dt\), puis séparer les variables (on rappelle que \(\Delta P\) est constante).
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\(h=V/S\), donc \(H=\alpha V/S\) :
+
+\equationajustee{\begin{aligned}
+\Delta P&=\left(\frac{\alpha\eta V}{KS^2}+\frac{\beta\eta}{S}\right)\frac{\mathrm dV}{\mathrm dt}\\
+&\Longrightarrow\quad\boxed{\mathrm dt=AV\,\mathrm dV+B\,\mathrm dV}
+\end{aligned}}
+
+avec
+
+\equationajustee{\begin{aligned}{}&\boxed{A=\frac{\alpha\eta}{KS^2\Delta P}}\\
+&\boxed{B=\frac{\beta\eta}{S\Delta P}}
+\end{aligned}}
+
+Unités : \(A\) en s·m⁻⁶, \(B\) en s·m⁻³.
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Intégrer entre l'instant initial, où aucun filtrat n'est recueilli, et l'instant \(t\).
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\equationajustee{\boxed{t=\frac A2V^2+BV}}
+
+Aux faibles volumes le filtre limite (\(V\propto t\)), aux grands volumes le cake (\(V\propto\sqrt t\)).
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Diviser la relation précédente par \(V\) : quelle fonction de \(V\) obtient-on ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que mesurer, quoi tracer, et quelles grandeurs lire sur la droite ? Chaque coefficient fait intervenir une seule des deux inconnues.
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+\equationajustee{\frac tV=\frac A2V+B}
+
+\(t/V\) est une fonction affine de \(V\). Sa représentation est une \textbf{droite} de pente \(A/2\) et d'ordonnée à l'origine \(B\).
+
+On filtre à \(\Delta P\) constante et on relève des couples \((t_i,V_i)\). On trace \(t_i/V_i\) en fonction de \(V_i\), on vérifie l'alignement et on fait une régression linéaire. D'où
+
+\equationajustee{\begin{aligned}{}&\boxed{K=\frac{\alpha\eta}{AS^2\Delta P}}\\
+&\boxed{\beta=\frac{BS\Delta P}{\eta}}
+\end{aligned}}
+
+\begin{methode}
+
+Linéariser une loi pour exploiter une régression linéaire : on teste le modèle (alignement) et on obtient pente et ordonnée à l'origine avec leurs incertitudes.
+
+\end{methode}
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Convertir \(S\) et \(\Delta P\) en unités SI, appliquer les formules de Q44, puis comparer \(K\) à des valeurs usuelles de perméabilité.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Si un résultat est physiquement impossible, chercher quelle donnée pourrait être erronée et le dire.
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+\(S=2{,}0\times10^{-3}\) m², \(S^2=4{,}0\times10^{-6}\) m⁴, \(\Delta P=1{,}0\times10^5\) Pa.
+
+\equationajustee{K=\frac{0{,}48\times1{,}0\times10^{-3}}{A\times4{,}0\times10^{-6}\times1{,}0\times10^5}}
+
+Avec \(A=1{,}9\times10^{-9}\) s·m⁻⁶ (valeur de l'énoncé), \(K=6{,}3\times10^5\) m². Cette valeur est absurde (les perméabilités usuelles vont de \(10^{-16}\) à \(10^{-10}\) m²). On suppose une erreur d'exposant, \(A=1{,}9\times10^{9}\) s·m⁻⁶ :
+
+\equationajustee{\boxed{K\simeq6{,}3\times10^{-13}\ \mathrm m^2}}
+
+\equationajustee{\begin{aligned}
+\beta&=\frac{BS\Delta P}{\eta}\\
+&=\frac{3{,}6\times10^6\times2{,}0\times10^{-3}\times1{,}0\times10^5}{1{,}0\times10^{-3}}\\
+&\Longrightarrow\quad\boxed{\beta\simeq7{,}2\times10^{11}\ \mathrm m^{-1}}
+\end{aligned}}
+
+ordre de grandeur courant pour la résistance d'une membrane de microfiltration ; \(\beta\) ne dépend pas de la valeur de \(A\).
+
+\begin{jury}
+
+Un résultat numérique invraisemblable doit être commenté. Lorsqu'une donnée paraît erronée, on le signale, on explique l'hypothèse retenue et on poursuit le calcul, comme le prévoit l'en-tête du sujet.
+
+\end{jury}
+
+\hypertarget{partie-d-uxe9tude-dun-ruxe9fractomuxe8tre-uxe0-prisme}{%
+\section{Partie D --- Étude d'un réfractomètre à prisme}\label{partie-d-uxe9tude-dun-ruxe9fractomuxe8tre-uxe0-prisme}}
+
+Deux réfractions successives dans un prisme rectangle conduisent à une relation entre l'angle d'émergence et l'indice du liquide, indépendante de la géométrie ; on en déduit le domaine de mesure, puis on discute la qualité d'une mesure.
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Trois énoncés : plan d'incidence, réflexion, réfraction ; les angles se comptent à partir de la normale.
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+Dioptre plan entre milieux d'indices \(n_1\) et \(n_2\), incidence \(i_1\) en \(I\) :
+- rayons réfléchi et réfracté dans le \textbf{plan d'incidence} (rayon incident et normale en \(I\)) ;
+- \textbf{réflexion} : \(i_1'=i_1\) (rayon réfléchi symétrique par rapport à la normale) ;
+- \textbf{réfraction} : \(\boxed{n_1\sin i_1=n_2\sin i_2}\), rayon réfracté de l'autre côté de la normale.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q46-snell-descartes.pdf}
+\caption*{Figure 4 --- Lois de Snell-Descartes en I : réflexion (i1′ = i1) et
+réfraction (n1 sin i1 = n2 sin i2), angles comptés depuis la normale}
+\end{figure}
+
+Le réfracté se rapproche de la normale (\(i_2<i_1\)) si \(n_2>n_1\). Si \(n_1>n_2\), au-delà de l'angle limite \(\arcsin(n_2/n_1)\), il y a réflexion totale.
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+\begin{indication}{1}
+
+En incidence rasante, le rayon entre dans un milieu plus réfringent : se rapproche-t-il ou s'éloigne-t-il de la normale ? Tracer les deux normales.
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q47-refractometre-pulfrich.pdf}
+\caption*{Figure 5 --- Marche du rayon rasant dans le réfractomètre de Pulfrich :
+α en I, β en J, θ par rapport à la direction incidente (tracé pour
+l'eau)}
+\end{figure}
+
+Entrant dans un verre plus réfringent (\(N>n\)), le rayon se rapproche de la normale en \(I\) (verticale), d'où \(\alpha\) ; en \(J\), \(\beta\) se compte depuis la normale horizontale, parallèle à la direction incidente, d'où \(\theta\).
+
+\begin{piege}
+
+Les angles se mesurent par rapport aux normales, pas aux faces : sinon sinus et cosinus s'échangent dans la suite.
+
+\end{piege}
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\begin{indication}{1}
+
+Les deux normales sont perpendiculaires : regarder le triangle qu'elles forment avec le segment \(IJ\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire Snell-Descartes en \(I\) avec une incidence de 90°, puis en \(J\), et éliminer \(\alpha\) et \(\beta\).
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+Faces perpendiculaires, donc normales perpendiculaires : \(\boxed{\alpha+\beta=90^\circ}\).
+
+En \(I\) : \(n\sin90^\circ=N\sin\alpha\), d'où \(\sin\alpha=n/N\). En \(J\) : \(N\sin\beta=\sin\theta\) avec \(\sin\beta=\cos\alpha=\sqrt{1-n^2/N^2}\). Donc
+
+\equationajustee{\boxed{\sin\theta=\sqrt{N^2-n^2}}}
+
+Eau :
+
+\equationajustee{\begin{aligned}
+\sin\theta&=\sqrt{2{,}6406-1{,}7769}\\
+&=0{,}9294
+\end{aligned}}
+
+soit \(\boxed{\theta\simeq68{,}3^\circ}\).
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\begin{indication}{1}
+
+À quelle condition le rayon rasant peut-il pénétrer dans le prisme en \(I\) ?
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+Il faut \(\sin\alpha=n/N\le1\) ; sinon il y a réflexion totale sur la face supérieure :
+
+\equationajustee{\boxed{n_{\max}=N=1{,}625}}
+
+De plus, l'émergence en \(J\) exige \(N^2-n^2\le1\), soit \(n\ge\sqrt{N^2-1}\simeq1{,}28\) : la plage de mesure est \([1{,}28\,;\,1{,}625]\).
+
+\hypertarget{question-50}{%
+\subsection{Question 50}\label{question-50}}
+
+\begin{indication}{1}
+
+De quels paramètres, autres que la nature du liquide, l'indice de réfraction dépend-il ?
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Diode laser} : source quasi monochromatique. L'indice dépend de la longueur d'onde (dispersion) : en lumière blanche, la limite d'éclairement serait irisée et floue. Une seule longueur d'onde donne une limite nette et une mesure associée à une longueur d'onde connue ; la source est en outre intense et directive.
+\item
+  \textbf{Prisme thermostaté} : l'indice d'un liquide varie avec la température (de \(10^{-4}\) à quelques \(10^{-4}\) par kelvin en valeur absolue), ce qui est du même ordre que la précision visée ; les tables donnent les indices à température fixée (20 °C). La régulation rend les mesures reproductibles et comparables aux tables.
+\end{itemize}
+
+\hypertarget{question-51}{%
+\subsection{Question 51}\label{question-51}}
+
+\begin{indication}{1}
+
+L'écart normalisé compare l'écart entre les deux valeurs à l'incertitude-type ; à quel seuil le compare-t-on ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour expliquer un désaccord, reprendre les paramètres d'influence identifiés à la question précédente.
+
+\end{indication}
+
+\hypertarget{solution-50}{%
+\subsubsection{Solution}\label{solution-50}}
+
+La valeur tabulée étant prise sans incertitude :
+
+\equationajustee{\begin{aligned}
+z&=\frac{|n-n'|}{u(n)}\\
+&=\frac{4{,}0\times10^{-3}}{1{,}1\times10^{-3}}\\
+&\Longrightarrow\quad\boxed{z\simeq3{,}6>2}
+\end{aligned}}
+
+Les deux valeurs \textbf{ne sont pas compatibles}. Explications possibles : température de mesure différente de 20 °C (l'indice diminue quand la température augmente ; une valeur trop élevée suggère une mesure à plus basse température, d'une dizaine de degrés pour un liquide organique) ; longueur d'onde différente de celle de la table (raie D du sodium, 589 nm) ; liquide impur ; biais d'étalonnage ou incertitude sous-estimée.
+
+\begin{methode}
+
+Écart normalisé : \(z=\dfrac{|x_1-x_2|}{\sqrt{u_1^2+u_2^2}}\) ; compatibilité si \(z\le2\). Si une valeur de référence est donnée sans incertitude, on prend \(u_2=0\).
+
+\end{methode}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+- Équilibre liquide-vapeur : ébullition quand \(P_s(T)\) égale la pression extérieure ; loi de Dalton pour un mélange de gaz parfaits.
+- Oscillateur amorti forcé : forme canonique, passage en complexes, module et argument avec un choix d'intervalle soigné.
+- Loi d'échelle diffusive \(\tau\sim L^2/D\) et ses conséquences (\(\Delta t\propto m^{2/3}\)).
+- Premier principe pour une phase condensée : \(mc\,\mathrm dT=\Phi\,\mathrm dt\), équation du premier ordre, constante de temps \(mc/(hS)\).
+- Bilan thermique local avec source sur une tranche, symétrie et conditions aux limites, continuité du flux à une interface (loi de Newton).
+- Résolution numérique d'une équation du second ordre avec \texttt{odeint} (vecteur d'état, extraction de colonne).
+- Résistances hydrauliques en série, loi de filtration, linéarisation et régression linéaire.
+- Snell-Descartes, incidence rasante, réflexion totale ; écart normalisé.
+
+\textbf{Prérequis à revoir.} Conversions d'unités (mm², cm²) ; argument d'un nombre complexe ; conduction et loi de Fourier ; lecture attentive des formules données par l'énoncé.
+
+\textbf{Questions classiques transposables.} Soupape de cocotte-minute ; électron élastiquement lié ; refroidissement ou chauffage d'un corps de température uniforme ; profil de température avec source interne (résistance électrique, réaction exothermique, combustible nucléaire) ; filtration sur gâteau et loi de Darcy ; réfractomètres d'Abbe et de Pulfrich ; compatibilité d'une mesure et d'une valeur de référence.
+
+\end{document}

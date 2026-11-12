@@ -1,0 +1,43 @@
+{
+  "slug": "mines-ponts_mp_physique-2_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Physique 2",
+    "annee": 2026
+  },
+  "questions": 22,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q2-images-plan-focal.svg",
+      "question": "Q2",
+      "legende": "Images A′ et B′ dans le plan focal image : le faisceau de A converge en F′, celui de B, incliné de ε/2, en B′ sur le rayon non dévié passant par O"
+    },
+    {
+      "fichier": "figures/q5-difference-de-marche.svg",
+      "question": "Q5",
+      "legende": "Onde plane reçue par T1 et T2 : T1 et K sont sur le même plan d'onde, la différence de marche est δ0 = KT2 = b0 sin θ"
+    },
+    {
+      "fichier": "figures/q6-base-equivalente.svg",
+      "question": "Q6",
+      "legende": "Base équivalente : distance T1K entre les axes optiques parallèles, b(θ) = b0 cos θ"
+    },
+    {
+      "fichier": "figures/q12-contraste-sinc.svg",
+      "question": "Q12",
+      "legende": "Contraste en fonction de b(θ) pour la galaxie, |sinc|, et pour une étoile double, |cos| : même première annulation en λ0/ε"
+    },
+    {
+      "fichier": "figures/q16-courbe-vitesse.svg",
+      "question": "Q16",
+      "legende": "Allure de v0(r) : linéaire dans le bulbe, maximale en Rb, puis en 1/√r dans le disque képlérien"
+    },
+    {
+      "fichier": "figures/q20-croissance-masse.svg",
+      "question": "Q20",
+      "legende": "Croissance de m(t) = m0(1 + t/τ0)^5 en échelles linéaires (a) et logarithmiques (b), avec les deux régimes limites"
+    }
+  ]
+}

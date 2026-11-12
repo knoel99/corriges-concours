@@ -1,0 +1,312 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Banque PT PT — Langue vivante B 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Banque PT PT}
+\fancyhead[R]{\small Langue vivante B 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Banque PT PT — Langue vivante B 2026\par}\medskip
+  {\large Banque PT · PT · Langue vivante B · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\textbf{Problématique commune} : le texte d'Alexandre Gefen (\emph{Nouvelle revue d'esthétique}, n° 33, 2024) se demande si l'IA générative n'est qu'une machine à recombiner des formes connues ou si elle pose une question neuve à l'art : celle de l'auteur, de notre émotion et de ce que représentent ses images. La contraction en restitue les quatre temps ; la rédaction juge l'ampleur de la « révolution » dans plusieurs arts.
+
+Durée : 3 h, sans dictionnaire ni appareil électronique. Exercice I : contraction croisée du texte français en 130 mots ± 10 \% (117 à 143), dans la langue choisie à l'inscription. Exercice II : réponse en 200 à 220 mots à la question propre à chaque langue. Le candidat ne compose que dans sa langue ; les cinq langues proposées (allemand, anglais, arabe, espagnol, italien) sont traitées ci-dessous, soit 10 exercices. Nombre de mots : suites de caractères séparées par des espaces (mot à trait d'union = un mot, nombre = un mot) ; en arabe, la conjonction و, soudée au mot qui suit, ne compte pas à part.
+
+\hypertarget{allemand}{%
+\section{Allemand}\label{allemand}}
+
+\hypertarget{i.-contraction-130-mots-10}{%
+\subsection{I. Contraction (130 mots ± 10 \%)}\label{i.-contraction-130-mots-10}}
+
+Angesichts der Bilderflut generativer KI könnte man diese als billiges Illustrationswerkzeug abtun. Es gäbe keine künstliche Ästhetik: Bestenfalls setze KI die algorithmische Kunst fort, schlimmstenfalls übertrage sie nur bestehende Stile, plagiiere und erstelle geschickte Collagen, die bloß durch neu kombinierte bekannte Formen überraschen. Diese Sichtweise erinnert jedoch daran, dass Künstler seit Langem von kunstschaffenden Maschinen und vom Verschwinden des Autors träumen. Zudem erscheint KI als delegierte Produktion, ähnlich der kollektiven Werkstattarbeit. Da wir aber wissen, dass eine Maschine diese Werke geschaffen hat, geraten wir ins „unheimliche Tal``: Wir können keine Absicht rekonstruieren und lassen uns ungern von ihnen berühren. Schließlich zeigen diese Bilder weder die Welt noch einen menschlichen Blick, sondern Darstellungen, die die Maschine nach eigenen Regeln ordnet. Künstler und Betrachter müssen entscheiden, was sie mit dieser fremden Wahrheit anfangen.
+
+\textbf{(131 Wörter)}
+
+\hypertarget{ii.-ruxe9daction-200-uxe0-220-mots-inwiefern-revolutioniert-ihrer-meinung-nach-die-kuxfcnstliche-intelligenz-die-verschiedenen-kunstformen-und-die-kuxfcnstlerische-praxis}{%
+\subsection{II. Rédaction (200 à 220 mots) --- Inwiefern revolutioniert Ihrer Meinung nach die künstliche Intelligenz die verschiedenen Kunstformen und die künstlerische Praxis?}\label{ii.-ruxe9daction-200-uxe0-220-mots-inwiefern-revolutioniert-ihrer-meinung-nach-die-kuxfcnstliche-intelligenz-die-verschiedenen-kunstformen-und-die-kuxfcnstlerische-praxis}}
+
+\emph{Problématique : Die KI verändert die Werkzeuge und den Markt der Kunst grundlegend, aber verändert sie auch deren Wesen?}
+
+Im Jahr 2023 gewann der deutsche Fotograf Boris Eldagsen einen renommierten Fotopreis mit einem Bild, das eine KI erzeugt hatte, und lehnte ihn anschließend ab. Dieser Fall zeigt, wie sehr die künstliche Intelligenz die Kunstwelt verunsichert. Revolutioniert sie aber wirklich die Kunst?
+
+Einerseits verändert die KI die künstlerische Praxis grundlegend. In der Musik wurde 2021 in Bonn Beethovens zehnte Sinfonie uraufgeführt, die ein Team aus Musikwissenschaftlern und Informatikern mithilfe eines Programms aus Skizzen des Komponisten vollendet hatte. Im Film und in Videospielen erzeugen Programme Landschaften, Stimmen und Figuren in wenigen Sekunden, wofür früher ganze Teams monatelang arbeiteten. Dadurch kann jeder, auch ohne Ausbildung, Werke schaffen, und viele Illustratoren, Synchronsprecher und Musiker fürchten um ihre Arbeit.
+
+Andererseits ist diese Revolution eher technisch als künstlerisch. Schon die Fotografie galt im 19. Jahrhundert als Ende der Malerei, doch sie hat die Maler befreit und ist selbst zu einer Kunstform geworden. Außerdem bleibt der Mensch unverzichtbar: Er formuliert den Prompt, wählt aus und gibt dem Werk einen Sinn. Ohne menschliche Absicht ist ein Bild nur eine Kombination von Daten.
+
+Meiner Meinung nach revolutioniert die KI also vor allem die Werkzeuge und den Kunstmarkt, aber nicht das Wesen der Kunst. Die Künstler müssen jedoch lernen, mit ihr zu arbeiten, statt sie zu ignorieren.
+
+\textbf{(208 Wörter)}
+
+\hypertarget{anglais}{%
+\section{Anglais}\label{anglais}}
+
+\hypertarget{i.-contraction-130-mots-10-1}{%
+\subsection{I. Contraction (130 mots ± 10 \%)}\label{i.-contraction-130-mots-10-1}}
+
+Faced with the flood of AI-generated images, one might dismiss generative AI as a cheap illustration tool. There would be no artificial aesthetic: at best, AI would extend algorithmic art; at worst, it would merely transfer existing styles, plagiarise and assemble skilful collages that impress only by recombining familiar forms. This analysis nevertheless recalls that artists long dreamt of art-making machines and of the author's disappearance, and it invites us to see AI as delegated production, like workshop practice. Yet knowing that a machine made these works draws us into the ``uncanny valley'': we cannot reconstruct any intention and are reluctant to be moved. Finally, these images depict neither the world nor a human gaze, but representations reorganised by the machine's own rules. Artists and viewers must decide what to make of this alien truth.
+
+\textbf{(135 words)}
+
+\hypertarget{ii.-ruxe9daction-200-uxe0-220-mots-to-what-extent-would-you-say-that-artificial-intelligence-is-revolutionising-different-art-forms-and-artistic-practices}{%
+\subsection{II. Rédaction (200 à 220 mots) --- To what extent would you say that artificial intelligence is revolutionising different art forms and artistic practices?}\label{ii.-ruxe9daction-200-uxe0-220-mots-to-what-extent-would-you-say-that-artificial-intelligence-is-revolutionising-different-art-forms-and-artistic-practices}}
+
+\emph{Problématique : AI is overturning how art is made, but is it changing what art is?}
+
+In 2023, Hollywood screenwriters and actors went on strike partly to protect their work from artificial intelligence. Such fears suggest that AI is overturning artistic practices, but to what extent is it truly revolutionising them?
+
+Admittedly, AI has transformed the way art is made in many fields. In music, machine-learning software isolated John Lennon's voice from an old demo tape, which allowed the Beatles to release ``Now and Then'', awarded a Grammy in 2025. In the visual arts, Refik Anadol's installation Unsupervised, shown at MoMA in New York, turned the museum's own collection into images generated in real time. Never before could a single artist produce so much, so quickly.
+
+However, this upheaval affects tools and markets more than art itself. Photography was once accused of killing painting, yet it eventually freed painters and became an art form in its own right. Similarly, the German photographer Boris Eldagsen, who won a Sony World Photography Award in 2023 with an AI-generated picture, turned down the prize to spark a debate, not to replace photographers. What AI really threatens is the income of illustrators, voice actors and session musicians.
+
+In conclusion, AI is revolutionising artistic practices and the economics of creation, but the meaning of a work still depends on the human intention behind it.
+
+\textbf{(213 words)}
+
+\hypertarget{arabe}{%
+\section{Arabe}\label{arabe}}
+
+\hypertarget{i.-contraction-130-mots-10-2}{%
+\subsection{I. Contraction (130 mots ± 10 \%)}\label{i.-contraction-130-mots-10-2}}
+
+أمام الكم الهائل من الصور التي ينتجها الذكاء الاصطناعي التوليدي، قد نختزله في أداة رخيصة لإنتاج الرسوم التوضيحية. فلا وجود في هذه الحال لجمالية اصطناعية: إنه في أحسن الأحوال امتداد للفن الخوارزمي، وفي أسوئها مجرد تقنية تنقل أساليب قائمة وتنتحلها وتركب منها ملصقات بارعة لا تدهشنا إلا بإعادة تركيب أشكال مألوفة. غير أن هذا التحليل يذكرنا بأن الفنانين حلموا طويلا بآلات تنتج الفن وباختفاء المؤلف، ويدعونا إلى النظر إلى الذكاء الاصطناعي بوصفه إنتاجا مفوضا يشبه العمل الجماعي في الورشة. لكن علمنا بأن آلة صنعت هذه الأعمال يوقعنا في «وادي الغرابة»: إذ يتعذر علينا أن نستعيد نية المؤلف أو سياق العمل، ونتحرج من أن نتأثر بها. وأخيرا، لا تصور هذه الصور العالم ولا نظرة إنسانية، بل تمثيلات أعادت الآلة تنظيمها وفق قواعدها الخاصة. ويبقى على الفنان والمتلقي أن يقررا ما يصنعان بهذه الحقيقة الغريبة عنهما.
+
+\textbf{(134 كلمة)}
+
+\hypertarget{ii.-ruxe9daction-200-uxe0-220-mots-ux625ux644ux649-ux623ux64a-ux62dux62f-ux64aux645ux643ux646ux643-ux627ux644ux642ux648ux644-ux625ux646-ux627ux644ux630ux643ux627ux621-ux627ux644ux627ux635ux637ux646ux627ux639ux64a-ux64aux62dux62fux62b-ux62bux648ux631ux629-ux641ux64a-ux623ux634ux643ux627ux644-ux627ux644ux641ux646-ux627ux644ux645ux62eux62aux644ux641ux629-ux648ux641ux64a-ux627ux644ux645ux645ux627ux631ux633ux627ux62a-ux627ux644ux641ux646ux64aux629}{%
+\subsection{II. Rédaction (200 à 220 mots) --- إلى أي حد يمكنك القول إن الذكاء الاصطناعي يُحدِث ثورة في أشكال الفن المختلفة وفي الممارسات الفنية؟}\label{ii.-ruxe9daction-200-uxe0-220-mots-ux625ux644ux649-ux623ux64a-ux62dux62f-ux64aux645ux643ux646ux643-ux627ux644ux642ux648ux644-ux625ux646-ux627ux644ux630ux643ux627ux621-ux627ux644ux627ux635ux637ux646ux627ux639ux64a-ux64aux62dux62fux62b-ux62bux648ux631ux629-ux641ux64a-ux623ux634ux643ux627ux644-ux627ux644ux641ux646-ux627ux644ux645ux62eux62aux644ux641ux629-ux648ux641ux64a-ux627ux644ux645ux645ux627ux631ux633ux627ux62a-ux627ux644ux641ux646ux64aux629}}
+
+\emph{Problématique : ثورة في أدوات الإبداع وممارساته، لا في جوهر الفن الذي يبقى تعبيرا عن تجربة إنسانية.}
+
+في عام 2021، عرض الروبوت الرسام «آي-دا» أعماله عند أهرامات الجيزة، بعد أن احتجزته الجمارك المصرية أياما. ويختصر هذا المشهد الطريف سؤالا جديا: إلى أي حد يحدث الذكاء الاصطناعي ثورة في الفن؟ أرى أنه يحدث ثورة حقيقية في أدوات الإبداع وممارساته، لكنه لا يغير جوهر الفن.
+
+فمن جهة، غير الذكاء الاصطناعي طريقة إنتاج الأعمال الفنية في مجالات كثيرة. ففي الموسيقى، صار بإمكان أي شخص أن يؤلف أغنية كاملة في ثوان، بل أن يقلد أصوات مطربين راحلين، وهو ما أثار جدلا واسعا في العالم العربي. كما أصبحت برامج توليد الصور تنتج في لحظات لوحات بأسلوب أي رسام، مما يطرح بحدة مسألة حقوق المؤلف. وفي السينما وألعاب الفيديو، تولد البرامج المناظر والأصوات والشخصيات بسرعة غير مسبوقة. ولذلك يخشى كثير من الرسامين ومؤدي الدبلجة والموسيقيين على مستقبلهم المهني.
+
+ومن جهة أخرى، تبقى هذه الثورة تقنية أكثر منها فنية. فحين ظهر التصوير الفوتوغرافي في القرن التاسع عشر، ظن كثيرون أنه سيقضي على الرسم، لكنه حرره من وظيفة نقل الواقع وفتح الطريق أمام الفن الحديث. كما يظل الإنسان ضروريا، فهو الذي يختار ويصحح ويمنح العمل معناه. فالصورة التي لا تحمل قصدا إنسانيا ليست سوى تركيب من البيانات.
+
+وخلاصة القول، إن الذكاء الاصطناعي يحدث ثورة في الوسائل وفي سوق الفن، أما الفن نفسه فيبقى تعبيرا عن تجربة إنسانية لا تستطيع الآلة أن تعيشها.
+
+\textbf{(207 كلمات)}
+
+\hypertarget{espagnol}{%
+\section{Espagnol}\label{espagnol}}
+
+\hypertarget{i.-contraction-130-mots-10-3}{%
+\subsection{I. Contraction (130 mots ± 10 \%)}\label{i.-contraction-130-mots-10-3}}
+
+Ante la avalancha de imágenes generadas por IA, cabría ver la IA como una herramienta de ilustración barata. No habría estética artificial: en el mejor caso, arte algorítmico; en el peor, una técnica que transfiere estilos, plagia y fabrica hábiles collages, sorprendentes solo por recombinar formas conocidas. Sin embargo, este análisis recuerda que los artistas soñaron con máquinas creadoras y con la desaparición del autor, e invita a considerarla una producción delegada, semejante al trabajo de taller. Pero saber que una máquina creó estas obras nos sumerge en el «valle inquietante»: no podemos reconstruir ninguna intención y nos resistimos a emocionarnos. Por último, estas imágenes no muestran ni el mundo ni una mirada humana, sino representaciones reorganizadas según las reglas de la máquina. Al artista y al espectador les toca decidir qué hacer con esta verdad ajena.
+
+\textbf{(137 palabras)}
+
+\hypertarget{ii.-ruxe9daction-200-uxe0-220-mots-en-quuxe9-medida-piensa-usted-que-la-inteligencia-artificial-estuxe1-revolucionando-los-diferentes-tipos-de-arte-y-las-pruxe1cticas-artuxedsticas}{%
+\subsection{II. Rédaction (200 à 220 mots) --- ¿En qué medida piensa usted que la inteligencia artificial está revolucionando los diferentes tipos de arte y las prácticas artísticas?}\label{ii.-ruxe9daction-200-uxe0-220-mots-en-quuxe9-medida-piensa-usted-que-la-inteligencia-artificial-estuxe1-revolucionando-los-diferentes-tipos-de-arte-y-las-pruxe1cticas-artuxedsticas}}
+
+\emph{Problématique : la IA revoluciona los medios y el mercado del arte, ¿pero también su esencia?}
+
+En 2023, «NostalgIA», una canción que imitaba con inteligencia artificial la voz de Bad Bunny, se hizo viral y provocó la indignación del cantante puertorriqueño. Este caso plantea una pregunta: ¿está la IA revolucionando realmente el arte o solo sus herramientas?
+
+Por un lado, es innegable que la IA transforma las prácticas artísticas. En la música, cualquiera puede ahora componer una canción completa en pocos segundos. En los museos, el Museo Dalí de Florida «resucitó» al pintor en 2019: un Dalí recreado digitalmente recibe a los visitantes y conversa con ellos. En el cine y en los videojuegos, los decorados y los efectos especiales se generan cada vez más rápido. Por eso, muchos ilustradores, actores de doblaje y músicos temen perder su trabajo.
+
+Por otro lado, esta revolución es más técnica que artística. En el siglo XIX, la fotografía parecía condenar la pintura, pero liberó a los pintores de la obligación de imitar la realidad y abrió el camino al arte moderno. Además, el ser humano sigue siendo indispensable: es él quien elige, corrige y da sentido a la obra. Sin intención, una imagen no es más que una combinación de datos.
+
+En definitiva, creo que la IA está revolucionando los medios y el mercado del arte, pero no su esencia, que sigue siendo humana.
+
+\textbf{(215 palabras)}
+
+\hypertarget{italien}{%
+\section{Italien}\label{italien}}
+
+\hypertarget{i.-contraction-130-mots-10-4}{%
+\subsection{I. Contraction (130 mots ± 10 \%)}\label{i.-contraction-130-mots-10-4}}
+
+Di fronte alla massa di immagini prodotte dall'IA generativa, si potrebbe ridurla a uno strumento di illustrazione a basso costo. Non esisterebbe un'estetica artificiale: nel migliore dei casi, arte algoritmica; nel peggiore, una tecnica che trasferisce stili, plagia e produce abili collage, sorprendenti solo perché ricombinano forme note. Questa analisi ricorda però che gli artisti hanno sognato a lungo macchine creatrici e la scomparsa dell'autore, e invita a vedere nell'IA una produzione delegata, simile al lavoro di bottega. Tuttavia, sapere che queste opere provengono da una macchina ci fa cadere nella «valle perturbante»: non ne ricostruiamo l'intenzione e siamo restii a commuoverci. Infine, queste immagini non mostrano né il mondo né uno sguardo umano, ma rappresentazioni riorganizzate secondo regole proprie della macchina. Spetta all'artista e allo spettatore decidere che fare di questa verità estranea.
+
+\textbf{(134 parole)}
+
+\hypertarget{ii.-ruxe9daction-200-uxe0-220-mots-in-che-senso-secondo-voi-lintelligenza-artificiale-sta-rivoluzionando-le-varie-forme-darte-e-le-pratiche-artistiche}{%
+\subsection{II. Rédaction (200 à 220 mots) --- In che senso secondo voi l'intelligenza artificiale sta rivoluzionando le varie forme d'arte e le pratiche artistiche?}\label{ii.-ruxe9daction-200-uxe0-220-mots-in-che-senso-secondo-voi-lintelligenza-artificiale-sta-rivoluzionando-le-varie-forme-darte-e-le-pratiche-artistiche}}
+
+\emph{Problématique : una rivoluzione degli strumenti e del mercato, non del senso dell'arte.}
+
+Nel marzo 2025 il quotidiano Il Foglio ha messo in edicola un inserto interamente scritto dall'intelligenza artificiale. Questo esperimento dimostra che l'IA non riguarda più soltanto le immagini, ma tutte le forme di creazione. In che senso, però, si può parlare di rivoluzione?
+
+Innanzitutto, l'IA rivoluziona le pratiche artistiche. Nella musica, alcuni programmi compongono ormai una canzone completa in pochi secondi; nel cinema e nei videogiochi, generano scenografie, voci e personaggi. Chiunque, anche senza alcuna formazione, può così diventare creatore. Questa democratizzazione ha però un costo: illustratori, doppiatori e musicisti temono per il loro lavoro, tanto che nel 2025 il Parlamento italiano ha approvato una legge che riconosce il diritto d'autore solo alle opere frutto dell'ingegno umano, anche se create con l'aiuto dell'IA.
+
+Tuttavia, la rivoluzione è più tecnica che estetica. Già nell'Ottocento la fotografia sembrava condannare la pittura, ma in realtà ha liberato i pittori dall'obbligo di imitare la realtà. Allo stesso modo, l'IA potrebbe spingere gli artisti verso ciò che una macchina non sa fare: esprimere esperienze vissute. Senza intenzione umana, ogni immagine resta una semplice combinazione di dati.
+
+In conclusione, secondo me l'IA sta rivoluzionando gli strumenti e il mercato dell'arte, ma non il suo senso, che dipende ancora dall'uomo.
+
+\textbf{(203 parole)}
+
+\end{document}

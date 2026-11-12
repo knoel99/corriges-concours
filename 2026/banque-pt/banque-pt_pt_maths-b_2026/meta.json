@@ -1,0 +1,33 @@
+{
+  "slug": "banque-pt_pt_maths-b_2026",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths B",
+    "annee": 2026
+  },
+  "questions": 37,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/ex1-q10-rotation-plan-orthogonal.svg",
+      "question": "Ex. 1, Q10",
+      "legende": "action de r dans le plan (v′, w′) orthogonal à Δ, vu depuis la pointe de u′ : quart de tour en sens horaire, r(v′) = −w′ et r(w′) = v′"
+    },
+    {
+      "fichier": "figures/ex2-q9a-trace-hyperbole.svg",
+      "question": "Ex. 2, Q9(a)",
+      "legende": "tracé de 𝒞′ : centre Ω(2, 0), sommets S₁(1, 0) et S₂(3, 0), rectangle de construction et asymptotes y = ±√3 (x − 2), tangente 𝒯 en G(0, 3)"
+    },
+    {
+      "fichier": "figures/ex2-q9b-rotation-c-prime-c.svg",
+      "question": "Ex. 2, Q9(b)",
+      "legende": "la rotation de centre O et d'angle π/6 envoie 𝒞′ (gris) sur 𝒞 (bleu) et la directrice x = 3/2 sur 𝒟 ; H est le projeté de O sur 𝒟"
+    },
+    {
+      "fichier": "figures/ex2-q12b-sections-circulaires-coupe.svg",
+      "question": "Ex. 2, Q12(b)",
+      "legende": "coupe par le plan y = 0 : S y laisse les droites z = ±x, chaque 𝒞_λ un diamètre (en bleu) ; les centres Ω_λ sont sur une droite non colinéaire à n = (2, 0, √2)"
+    }
+  ]
+}

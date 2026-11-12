@@ -1,0 +1,33 @@
+{
+  "slug": "agro-veto_tb_biotechnologies_2026",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "TB",
+    "matiere": "Biotechnologies",
+    "annee": 2026
+  },
+  "questions": 29,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q5-genome-virgfp.svg",
+      "question": "Q5",
+      "legende": "Construction de Φ80α-virGFP : double crossing-over entre les bras de 500 nt de pDVB434 et les séquences gp18 et gp19, insertion de la cassette RBS-gfp dépourvue de promoteur, module de lysogénie inactivé par la mutation vir"
+    },
+    {
+      "fichier": "figures/q10-courbes-croissance.svg",
+      "question": "Q10",
+      "legende": "Allure des trois courbes de croissance : chute de la DO₆₀₀ vers 3–4 h dans les deux cultures infectées, reprise seulement avec le phage tempéré Φ80α"
+    },
+    {
+      "fichier": "figures/q15-chromatographie-affinite.svg",
+      "question": "Q15",
+      "legende": "Les cinq étapes de la chromatographie d'affinité : la cyclase Ssc-CdnE03 est le ligand greffé, et l'élution par augmentation de la force ionique fournit les ARN qui lui sont liés"
+    },
+    {
+      "fichier": "figures/q28-logigramme-cbass.svg",
+      "question": "Q28",
+      "legende": "Logigramme de la cascade CBASS : un ARN viral active la cyclase, les nucléotides cycliques activent CAP15, la membrane plasmique est perméabilisée et la multiplication virale s'arrête"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "x-ens_pc_chimie-a_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2026
+  },
+  "questions": 59,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q07-q11-dimerisation-chrome.svg",
+      "question": "Q7",
+      "legende": "Part du chrome sous forme Cr₂O₇²⁻ et HCrO₄⁻ à pH ≤ 3 en fonction de Ctot, calculée avec K° = 1,5·10² : environ 50 % (figure 2A), 75 % (figure 2B), 82 % dans les tubes de la DCO (Q11)"
+    },
+    {
+      "fichier": "figures/q21-cinetique-dbo.svg",
+      "question": "Q21",
+      "legende": "Cinétique d'ordre 1 (kT = 0,2 j⁻¹) : la concentration en O₂ décroît vers son asymptote, DBOt croît vers DBO∞ ; la tangente à l'origine coupe l'asymptote en τ ≈ 2,2 j, et DBO₅ = 0,9 DBO∞"
+    },
+    {
+      "fichier": "figures/q23-diagramme-phases-eau.svg",
+      "question": "Q23",
+      "legende": "Diagramme (P, T) de l'eau, non à l'échelle : fusion de pente négative, vaporisation arrêtée au point critique C, zone supercritique T > Tc et P > Pc hachurée"
+    }
+  ]
+}

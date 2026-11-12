@@ -1,0 +1,33 @@
+{
+  "slug": "ccinp_psi_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 38,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q11-actions-tapis.svg",
+      "question": "Q11",
+      "legende": "Morceau de tapis chargé isolé : l'action tangentielle du support s'oppose au glissement, vers le bas de la pente, et vaut le cinquième de l'action normale (vecteurs à l'échelle)"
+    },
+    {
+      "fichier": "figures/q15-schema-bloc.svg",
+      "question": "Q15",
+      "legende": "Schéma-bloc de l'asservissement de vitesse : retour pris sur Ωm par le codeur de l'arbre moteur, perturbation UP ajoutée en aval du correcteur"
+    },
+    {
+      "fichier": "figures/q24-bode-pi.svg",
+      "question": "Q24",
+      "legende": "Diagrammes de Bode du correcteur PI (KP = 1420, Ti = 0,2 s) : asymptotes en tirets, courbes réelles en trait plein, cassure en ωi = 5 rad/s"
+    },
+    {
+      "fichier": "figures/q34-diagramme-etats.svg",
+      "question": "Q34",
+      "legende": "Diagramme d'états de la navette : branche des bacs 2 à 6 en haut, branche du bac 1 en bas, retour rapide commun"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "mines-ponts_mp-pc-psi_informatique-commune_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique commune",
+    "annee": 2026
+  },
+  "questions": 21,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-q4-plateau-figure2.svg",
+      "question": "Q3, Q4",
+      "legende": "Plateau de la figure 2 : les 7 cubes choisissables par le joueur 1 (Q3) et les 3 réinsertions du cube (1,4) (Q4)"
+    },
+    {
+      "fichier": "figures/q8-quatre-mouvements.svg",
+      "question": "Q8",
+      "legende": "Les quatre mouvements de deplacement_case : les cubes glissent d'une case vers la case libérée"
+    },
+    {
+      "fichier": "figures/q13-arbre-minimax.svg",
+      "question": "Q13",
+      "legende": "Remontée minimax sur l'arbre illustratif : minimum aux ronds (MIN), maximum aux carrés (MAX), racine 6"
+    },
+    {
+      "fichier": "figures/q18-arbre-alphabeta.svg",
+      "question": "Q18",
+      "legende": "Élagage alpha-bêta sur le même arbre, exploré de gauche à droite : 4 coupures, 10 feuilles évaluées sur 16"
+    }
+  ]
+}

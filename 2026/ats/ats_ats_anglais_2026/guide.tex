@@ -1,0 +1,2423 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={ATS — Anglais 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · ATS ATS}
+\fancyhead[R]{\small Anglais 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries ATS — Anglais 2026\par}\medskip
+  {\large ATS · ATS · Anglais · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format.} L'épreuve dure 2 heures, sans dictionnaire ni appareil électronique. Elle est entièrement à choix multiples (quatre options, une seule juste) et compte 137 items :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1032}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1264}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2888}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.4517}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Items
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Support
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ce qui est testé
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I & 1 à 100 & phrases isolées & grammaire (temps, modaux, prépositions, articles, quantifieurs) et lexique (verbes à particule, faux amis, idiomes) \\
+II & 101 à 110 & \emph{The Guardian}, 2024 : les voyages en solo & compréhension fine, sens d'expressions en contexte \\
+III & 111 à 121 & NBC, 2024 : les pandas de Hong Kong & texte à trous (mot juste par le sens et la grammaire) \\
+IV & 122 à 126 & \emph{The Independent}, 2023 : désamorcer une dispute & sens d'expressions soulignées \\
+V & 127 à 137 & \emph{The Guardian}, 2025 : un homme et son sac à main & compréhension globale, idiomes, ironie \\
+\end{longtable}
+
+\textbf{Barème.} Réponse juste +3, réponse fausse −1, absence de réponse 0. Le total brut maximal est donc de 411 points ; le sujet ne dit pas comment il est ramené à la note sur 20. Ce barème fixe la stratégie de réponse :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4542}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.5158}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Situation
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Espérance d'un item
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+réponse au hasard entre 4 options & \(\frac{1}{4}\cdot 3-\frac{3}{4}\cdot 1=0\) \\
+une option éliminée, hasard entre 3 & \(\frac{1}{3}\cdot 3-\frac{2}{3}\cdot 1=\frac{1}{3}\) \\
+deux options éliminées, hasard entre 2 & \(\frac{1}{2}\cdot 3-\frac{1}{2}\cdot 1=1\) \\
+\end{longtable}
+
+Répondre au hasard ne coûte rien en moyenne, et dès qu'une option est éliminée, répondre rapporte. Laisser un blanc n'est raisonnable que si l'on n'a aucune idée et que l'on préfère réduire le risque.
+
+\textbf{Difficulté.} Les cent items de grammaire sont des classiques de l'enseignement secondaire et de classe préparatoire : aucun n'est individuellement difficile, mais il faut les traiter en moins de 30 secondes chacun. Les textes sont courts. Les pièges portent sur les nuances (options qui exagèrent ou inversent le sens) et sur le vocabulaire idiomatique (\emph{at sea}, \emph{fit the bill}, \emph{on the same page}).
+
+\textbf{Anomalies de l'énoncé.} Deux items sont imprimés avec une coquille : l'item 69 (aucune option imprimée ne donne une phrase correcte et sensée ; b) porte le sens voulu, \emph{so as not to}) et l'item 86 (l'option c) reprend un \emph{as} déjà présent dans la phrase). L'item 11 est discutable (\emph{resume} américain contre \emph{CVs} au pluriel). Ces trois items sont commentés à leur place.
+
+\textbf{Gestion du temps.} Une répartition raisonnable : 45 minutes pour les cent items de grammaire, 60 minutes pour les quatre textes (lecture complète avant les questions), 15 minutes de marge et de report sur la feuille. Ne vous bloquez sur aucun item : marquez-le et revenez-y.
+
+\textbf{Ce que dit le rapport 2026.} Le rapport commun des épreuves ATS consacre une page à l'écrit d'anglais (p.~24). Il rappelle que « Le qcm de grammaire et lexique comporte cent items. » et annonce pour la compréhension « entre quarante et cinquante questions » ; il y en avait 37 cette année. Les erreurs relevées portent « sur les quantifieurs, les if-clauses, le passif mal identifié, des verbes prépositionnels mal connus », sur « le prétérite modal ou le past perfect », sur « des constructions pas connues (disapprove/ look forward \ldots) », sur « le choix entre l'infinitif ou V-ing », sur « des adverbes comme either/ neither à revoir » et sur « la différence entre last et latest ». Trois conseils de méthode :
+
+\begin{itemize}
+\tightlist
+\item
+  « il est conseillé de traiter les exercices dans l'ordre du sujet » ;
+\item
+  « les connaissances grammaticales doivent devenir des automatismes » ;
+\item
+  « ne pas finir l'épreuve est extrêmement pénalisant ».
+\end{itemize}
+
+Statistiques publiées (p.~10, candidats présents à toutes les épreuves) : moyenne de l'écrit d'anglais 7,97 (écart-type 5,17) en Ingénierie industrielle et 6,35 (écart-type 4,95) en Génie civil, soit les moyennes d'écrit les plus basses de chaque filière. Le jury ne commente pas ces chiffres.
+
+\hypertarget{partie-i-qcm-de-grammaire-et-de-lexique-questions-1-uxe0-100}{%
+\section{Partie I --- QCM de grammaire et de lexique (questions 1 à 100)}\label{partie-i-qcm-de-grammaire-et-de-lexique-questions-1-uxe0-100}}
+
+Cent phrases à compléter : temps, modaux, prépositions, articles, quantifieurs, verbes à particule, faux amis et expressions idiomatiques. Une seule réponse correcte par item.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Quelle forme verbale suit le verbe \emph{enjoy} ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+\textbf{Réponse c) \emph{talking}.} \emph{enjoy} se construit avec la forme en -ing : \emph{We really enjoyed talking to him}.
+
+\begin{methode}
+
+Verbes suivis de V-ing à connaître par cœur : \emph{enjoy, avoid, mind, finish, keep, can't help, be worth, look forward to, be used to, object to}. Les items 1, 2, 8, 34, 91 et 94 relèvent tous de ce réflexe.
+
+\end{methode}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+\emph{worth} fait partie des expressions suivies d'une forme verbale particulière.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\textbf{Réponse b) \emph{visiting}.} \emph{be worth} + V-ing : \emph{Rome is well worth visiting} (« vaut la peine d'être visitée »).
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+\emph{had better} est un semi-modal : quelle forme suit un modal ?
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\textbf{Réponse b) \emph{buy}.} \emph{had better} + base verbale sans \emph{to} : \emph{We had better buy}.
+
+\begin{methode}
+
+\emph{had better}, \emph{would rather} (item 74) et les modaux (\emph{must, can, should, needn't}) sont suivis de la base verbale sans \emph{to}. L'item 97 exploite la même règle à l'envers : un blanc suivi de \emph{to} exclut les modaux.
+
+\end{methode}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Il faut un mot qui signifie « étant donné » devant un groupe nominal.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\textbf{Réponse b) \emph{Given}.} \emph{Given} (« étant donné, compte tenu de ») introduit un groupe nominal : \emph{Given the current global warming}.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Deux jours sont envisagés et le verbe \emph{suit} est au pluriel.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\textbf{Réponse a) \emph{both}.} Pour deux éléments pris ensemble, avec un nom et un verbe au pluriel : \emph{both days suit me}. \emph{either} et \emph{each} exigeraient le singulier (\emph{either day suits me}) ; \emph{every} ne s'emploie pas pour deux.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Expression : « durcir le ton » face à la criminalité, avec \emph{get} + adjectif.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\textbf{Réponse a) \emph{tougher}.} \emph{get tough on crime} = se montrer plus sévère envers la délinquance ; avec \emph{get} et un comparatif : \emph{get tougher on crime}.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Quelle préposition suit \emph{approve} / \emph{disapprove} ?
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\textbf{Réponse b) \emph{of}.} \emph{disapprove of something} = désapprouver quelque chose.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Dans \emph{look forward to}, \emph{to} est-il la marque de l'infinitif ou une préposition ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\textbf{Réponse a) \emph{meeting}.} \emph{to} est ici une préposition, suivie d'un nom ou d'une forme en -ing : \emph{I look forward to meeting her}.
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : parmi les points mal maîtrisés, le jury cite « des constructions pas connues (disapprove/ look forward \ldots) ». Ce sont exactement les items 7 et 8.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Le blanc est le noyau du sujet du verbe \emph{is getting} : quelle nature de mot faut-il ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\textbf{Réponse d) \emph{exploration}.} Il faut un nom : \emph{Oil and gas exploration \ldots{} is getting more intense} (l'exploration pétrolière et gazière).
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+\emph{seem to be} annonce une forme progressive.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\textbf{Réponse b) \emph{working}.} \emph{seem to be} + V-ing : \emph{Our website seems to be working normally again}.
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+On parle du document qu'un candidat remet avant un entretien. Attention au nombre (\emph{your \ldots{} first}) et aux faux amis.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+\textbf{Réponse b) \emph{resume}.} \emph{resume} (ou \emph{résumé}) est le mot américain pour le CV. \emph{CVs} est au pluriel alors que l'on s'adresse à un seul candidat ; \emph{pay slip} = fiche de paie ; \emph{bulletin} est un faux ami (bulletin d'information).
+
+\begin{piege}
+
+Item discutable : \emph{resume} (américain) et \emph{CV} (britannique) désignent le même document. On retient b) parce que \emph{CVs} est au pluriel alors que l'interlocuteur est un seul candidat. Si vous hésitez réellement entre deux options après en avoir éliminé deux, répondre reste rentable (voir la présentation).
+
+\end{piege}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Verbe à particule signifiant « avancer, proposer » une idée.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\textbf{Réponse c) \emph{forward}.} \emph{put forward a suggestion} = avancer, proposer une suggestion.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Jack connaît Tom et Tom connaît Jack : quel pronom exprime la réciprocité ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\textbf{Réponse b) \emph{each other}.} Pronom réciproque : \emph{Jack and Tom have known each other for many years}. \emph{themselves} serait réfléchi (chacun se connaît lui-même).
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Construction de \emph{consider} + complément + attribut.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\textbf{Réponse c) \emph{to be}.} \emph{consider something to be the driving force} (proposition infinitive après \emph{consider}).
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Dans une subordonnée en \emph{if} à valeur de condition réelle, quel temps emploie-t-on ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\textbf{Réponse d) \emph{happens}.} Après \emph{if} (condition portant sur l'avenir), présent simple et non \emph{will} : \emph{If the problem happens again, \ldots{} we'll be able}. \emph{comes out} (sortir, être publié) n'a pas le bon sens ; \emph{came} casserait la concordance avec \emph{we'll}.
+
+\begin{methode}
+
+Pas de \emph{will} dans une subordonnée de condition (\emph{if}) ni de temps (\emph{when, as soon as, until}) qui renvoie à l'avenir : on y met le présent. Même réflexe aux items 31 et 53.
+
+\end{methode}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+« On dirait que » : \emph{It looks as \ldots{}}
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\textbf{Réponse c) \emph{though}.} \emph{It looks as though} (= \emph{as if}) \emph{it's going to be a splendid afternoon}.
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+« Augmentation de salaire » en anglais britannique ; attention au faux ami.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\textbf{Réponse a) \emph{rise}.} \emph{a pay rise} (britannique ; \emph{a raise} en américain). \emph{augmentation} (accroissement, au sens technique) ne s'emploie pas pour un salaire, et \emph{raises} est au pluriel après \emph{a}.
+
+\begin{piege}
+
+\emph{augmentation} est un faux ami : on dit \emph{a pay rise} (britannique) ou \emph{a raise} (américain). De même, \emph{bulletin} (item 11) et \emph{penalty} (item 56) n'ont pas le sens français attendu.
+
+\end{piege}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Il faut un adjectif devant \emph{worker}, de sens positif (\emph{conscientious}).
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\textbf{Réponse a) \emph{hard}.} \emph{a hard worker} = un gros travailleur. \emph{hardly} est un adverbe (« à peine ») ; \emph{indolent} et \emph{idle} (paresseux) contredisent \emph{conscientious}.
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Adverbe qui indique que la qualification est complète.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\textbf{Réponse b) \emph{fully}.} \emph{a fully qualified engineer} = un ingénieur pleinement diplômé.
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Déterminant négatif devant un nom pluriel, dans une phrase affirmative (\emph{There are}).
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\textbf{Réponse b) \emph{no}.} \emph{There are no actual pieces of evidence}. \emph{not} exigerait \emph{not any} ; \emph{none} est un pronom ; \emph{any} donnerait le sens inverse.
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+« Divisé en deux parties » : préposition de changement d'état.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\textbf{Réponse b) \emph{into}.} \emph{divided into two parts}.
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Ajout négatif en fin de phrase (« non plus »).
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\textbf{Réponse a) \emph{either}.} Dans une phrase déjà négative (\emph{doesn't want}), « non plus » se dit \emph{either} en fin de phrase. \emph{neither} exigerait une inversion sans négation (\emph{neither does he}) ; \emph{as well} et \emph{also} s'emploient en phrase affirmative.
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : le jury signale « des adverbes comme either/ neither à revoir ». \emph{either} en fin de phrase négative ; \emph{neither} + auxiliaire + sujet en tête (item 79).
+
+\end{jury}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Le blanc précède le nom \emph{strategy} : quelle nature de mot faut-il ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\textbf{Réponse c) \emph{promotional}.} Adjectif épithète : \emph{a strong promotional strategy}.
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+\emph{Any government (which proposes) tax cuts} : comment réduire la relative ?
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\textbf{Réponse b) \emph{proposing}.} Relative réduite au participe en -ing (sens actif) : \emph{Any government proposing tax cuts is bound to be popular}.
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+« Juste à la sortie de la ville », ce qui est un avantage (\emph{It's great!}).
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\textbf{Réponse d) \emph{outside}.} \emph{just outside the city} = juste à l'extérieur de la ville. \emph{at the city} et \emph{on the city} ne se disent pas ; \emph{into} marque un mouvement.
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+« Il n'y avait pas assez de chaises ».
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\textbf{Réponse c) \emph{enough}.} \emph{not enough chairs} (la salle était trop pleine : \emph{so popular that\ldots{}}).
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+\emph{milk} est indénombrable ; on demande « un peu » (sens positif).
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\textbf{Réponse b) \emph{a little}.} \emph{a little} + indénombrable = un peu (\emph{a few} pour les dénombrables). \emph{little} seul signifie « peu » (sens restrictif) ; dans une demande polie on emploie \emph{some}, pas \emph{any}.
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Qui « fait appliquer » les lois ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\textbf{Réponse b) \emph{enforces}.} \emph{enforce the law} = faire respecter, faire appliquer la loi. \emph{inflict} = infliger ; \emph{compells} est mal orthographié (\emph{compels}) et n'a pas ce sens.
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+\emph{It's high time} exprime un reproche ou une urgence : quel temps suit ?
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\textbf{Réponse d) \emph{got up}.} \emph{It's high time} + prétérit modal (valeur d'irréel) : \emph{It's high time we got up}.
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : « le prétérite modal ou le past perfect » figurent parmi les temps mal maîtrisés. Le prétérit modal (valeur d'irréel, pas de passé) apparaît après \emph{It's high time} (item 29), \emph{if} (items 53 et 85), \emph{wish}, \emph{would rather} + sujet.
+
+\end{jury}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Réponse courte qui reprend l'auxiliaire au présent, avec le sujet \emph{I}.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\textbf{Réponse d) \emph{don't}.} \emph{No, I don't (like fish)} : auxiliaire \emph{do} au présent, première personne.
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Subordonnée de temps (\emph{When}) qui renvoie à l'avenir.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\textbf{Réponse c) \emph{am}.} Après \emph{when} temporel, présent et non futur : \emph{When I am older, I want to\ldots{}}.
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Devant un nom de profession attribut, l'anglais emploie un article ; lequel, devant le son {[}f{]} ?
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\textbf{Réponse b) \emph{a}.} \emph{become a football player} : article indéfini devant une profession ; \emph{a} devant une consonne.
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+« Être à court de » nourriture.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\textbf{Réponse c) \emph{out of}.} \emph{run out of food} = se trouver à court de nourriture (\emph{It was tough}).
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : le jury relève « des verbes prépositionnels mal connus ». Ceux du sujet : \emph{disapprove of}, \emph{put forward}, \emph{run out of}, \emph{sort out}, \emph{break up with}, \emph{capitalize on}, \emph{be passionate about}.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+\emph{Without} est une préposition.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\textbf{Réponse b) \emph{knowing}.} Préposition + V-ing : \emph{Without knowing much about the situation}.
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : « le choix entre l'infinitif ou V-ing » est cité parmi les erreurs. Après une préposition (\emph{without}, \emph{after}, \emph{about}), toujours V-ing.
+
+\end{jury}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Pronom relatif sujet, antécédent humain.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\textbf{Réponse a) \emph{who}.} \emph{The person who invited me over} : \emph{who} sujet, antécédent humain. \emph{whom} est complément ; \emph{which} s'emploie pour les choses ; \emph{what} n'a pas d'antécédent.
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Expression idiomatique : « comme sur des roulettes ».
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\textbf{Réponse b) \emph{clockwork}.} \emph{run like clockwork} = se dérouler comme sur des roulettes. \emph{a breeze} s'emploie dans \emph{be a breeze}, pas dans \emph{run like}.
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Adjectif en -ed ou en -ing : la situation éprouve-t-elle la gêne ou la provoque-t-elle ?
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\textbf{Réponse b) \emph{embarrassing}.} La situation provoque la gêne : \emph{embarrassing} (-ing = qui cause). \emph{embarrassed} qualifie la personne gênée.
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Le sujet \emph{I} subit l'action, à un moment passé daté (\emph{When I got home}).
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\textbf{Réponse c) \emph{was greeted}.} Passif au prétérit : \emph{I was greeted by all my friends}. Le \emph{present perfect} est exclu avec un repère passé révolu.
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : le jury cite « le passif mal identifié ». Demandez-vous qui fait l'action : ici les amis accueillent, le sujet \emph{I} la subit (de même aux items 41 et 89).
+
+\end{jury}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Verbe à particule signifiant « effectuer, réaliser ».
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\textbf{Réponse b) \emph{to carry out}.} \emph{carry out an internship} = effectuer un stage (\emph{carry out} = réaliser, mener à bien).
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+« Des larmes de joie ».
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+\textbf{Réponse d) \emph{of}.} \emph{tears of joy}.
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Le jeune n'a pas le droit d'entrer : il faut un passif, après \emph{to}.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\textbf{Réponse a) \emph{be allowed}.} \emph{too young to be allowed in a pub} : infinitif passif ; après \emph{to}, base verbale (\emph{be}), d'où l'exclusion de \emph{being}.
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+\emph{be} au progressif décrit un comportement passager.
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\textbf{Réponse b) \emph{are being}.} \emph{You are being naughty!} = tu n'es pas sage en ce moment (comportement temporaire).
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+\emph{lately} porte sur une période qui va jusqu'au moment présent.
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\textbf{Réponse b) \emph{have you been doing}.} \emph{lately} appelle le \emph{present perfect}, ici progressif (activité continue) : \emph{What have you been doing with your life lately?}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+Il faut un adverbe de manière après \emph{doing very}.
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+\textbf{Réponse a) \emph{badly}.} \emph{do badly} = mal marcher (\emph{business is doing very badly}). \emph{hardly} = à peine ; \emph{harshly} = durement ; \emph{toughly} n'existe pas dans ce sens.
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+Verbe à particule signifiant « régler, résoudre ».
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+\textbf{Réponse a) \emph{out}.} \emph{sort out a problem} = régler un problème.
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+« Qu'est-ce qui se passe ici ? »
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+\textbf{Réponse d) \emph{What}.} \emph{What is going on here?}
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+\begin{indication}{1}
+
+Même semi-modal qu'à l'item 3, avec contraction possible (\emph{You'd}).
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+\textbf{Réponse b) \emph{better}.} \emph{You had better go now} = tu ferais mieux de partir.
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\begin{indication}{1}
+
+Structure « plus \ldots, plus \ldots{} ».
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+\textbf{Réponse c) \emph{earlier / more}.} \emph{The earlier you get up, the more you can do} : \emph{the} + comparatif, \emph{the} + comparatif. \emph{more earlier} est un double comparatif fautif.
+
+\begin{methode}
+
+« Plus \ldots, plus \ldots{} » : \emph{the} + comparatif, \emph{the} + comparatif, sans \emph{more} devant un comparatif en -er.
+
+\end{methode}
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\begin{indication}{1}
+
+« Ce que j'ai en tête ».
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+\textbf{Réponse c) \emph{on}.} \emph{what is on my mind} = ce qui me préoccupe, ce que j'ai en tête.
+
+\hypertarget{question-50}{%
+\subsection{Question 50}\label{question-50}}
+
+\begin{indication}{1}
+
+« Penser par soi-même ».
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+\textbf{Réponse c) \emph{himself}.} \emph{think for oneself} : pronom réfléchi \emph{himself} (en un mot).
+
+\hypertarget{question-51}{%
+\subsection{Question 51}\label{question-51}}
+
+\begin{indication}{1}
+
+« Inutile de t'inquiéter » : absence d'obligation.
+
+\end{indication}
+
+\hypertarget{solution-50}{%
+\subsubsection{Solution}\label{solution-50}}
+
+\textbf{Réponse c) \emph{needn't}.} \emph{You needn't worry} = tu n'as pas besoin de t'inquiéter. \emph{don't have} exigerait \emph{to} ; \emph{must} et \emph{have to} donnent le sens inverse.
+
+\hypertarget{question-52}{%
+\subsection{Question 52}\label{question-52}}
+
+\begin{indication}{1}
+
+« Son dernier tube » : le plus récent ou le dernier d'une série close ?
+
+\end{indication}
+
+\hypertarget{solution-51}{%
+\subsubsection{Solution}\label{solution-51}}
+
+\textbf{Réponse d) \emph{latest}.} \emph{his latest hit} = son tout dernier tube, le plus récent. \emph{last} signifie le dernier d'une série terminée.
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : « la différence entre last et latest » est explicitement citée parmi les points mal maîtrisés.
+
+\end{jury}
+
+\hypertarget{question-53}{%
+\subsection{Question 53}\label{question-53}}
+
+\begin{indication}{1}
+
+Hypothèse irréelle au présent : \emph{Where would you go \ldots{} if you \ldots{}}
+
+\end{indication}
+
+\hypertarget{solution-52}{%
+\subsubsection{Solution}\label{solution-52}}
+
+\textbf{Réponse c) \emph{could}.} \emph{if} + prétérit modal : \emph{if you could take a break}. \emph{can} et \emph{will} sont exclus ; \emph{might} n'a pas de sens de capacité ici.
+
+\hypertarget{question-54}{%
+\subsection{Question 54}\label{question-54}}
+
+\begin{indication}{1}
+
+Expression : « du gâteau » (c'était facile).
+
+\end{indication}
+
+\hypertarget{solution-53}{%
+\subsubsection{Solution}\label{solution-53}}
+
+\textbf{Réponse a) \emph{cake}.} \emph{a piece of cake} = un jeu d'enfant.
+
+\hypertarget{question-55}{%
+\subsection{Question 55}\label{question-55}}
+
+\begin{indication}{1}
+
+Une action ponctuelle interrompt une action en cours (\emph{were reading}).
+
+\end{indication}
+
+\hypertarget{solution-54}{%
+\subsubsection{Solution}\label{solution-54}}
+
+\textbf{Réponse b) \emph{heard}.} Prétérit simple pour l'événement ponctuel : \emph{we were reading \ldots{} when we heard a big noise}.
+
+\hypertarget{question-56}{%
+\subsection{Question 56}\label{question-56}}
+
+\begin{indication}{1}
+
+Ce que l'on paie pour un excès de vitesse.
+
+\end{indication}
+
+\hypertarget{solution-55}{%
+\subsubsection{Solution}\label{solution-55}}
+
+\textbf{Réponse c) \emph{fine}.} \emph{a fine} = une amende. \emph{penalty} désigne une sanction en général ou un penalty ; \emph{reward} = récompense.
+
+\begin{piege}
+
+\emph{penalty} est un faux ami partiel : l'amende pour excès de vitesse est \emph{a fine} (\emph{a speeding fine}).
+
+\end{piege}
+
+\hypertarget{question-57}{%
+\subsection{Question 57}\label{question-57}}
+
+\begin{indication}{1}
+
+Quelle préposition suit \emph{passionate} ?
+
+\end{indication}
+
+\hypertarget{solution-56}{%
+\subsubsection{Solution}\label{solution-56}}
+
+\textbf{Réponse a) \emph{about}.} \emph{be passionate about something}.
+
+\hypertarget{question-58}{%
+\subsection{Question 58}\label{question-58}}
+
+\begin{indication}{1}
+
+Vérité générale sur une espèce, nom au pluriel.
+
+\end{indication}
+
+\hypertarget{solution-57}{%
+\subsubsection{Solution}\label{solution-57}}
+
+\textbf{Réponse d) ∅ (aucun article).} Pluriel générique sans article : \emph{Cats are usually very independent animals}. \emph{Every} et \emph{Any} exigent le singulier ; \emph{The cats} désignerait des chats précis.
+
+\hypertarget{question-59}{%
+\subsection{Question 59}\label{question-59}}
+
+\begin{indication}{1}
+
+Superlatif d'un adjectif long.
+
+\end{indication}
+
+\hypertarget{solution-58}{%
+\subsubsection{Solution}\label{solution-58}}
+
+\textbf{Réponse b) \emph{most}.} \emph{the most important soft skill} (superlatif : \emph{the most} + adjectif long).
+
+\hypertarget{question-60}{%
+\subsection{Question 60}\label{question-60}}
+
+\begin{indication}{1}
+
+Nom de discipline en -ics.
+
+\end{indication}
+
+\hypertarget{solution-59}{%
+\subsubsection{Solution}\label{solution-59}}
+
+\textbf{Réponse b) \emph{Electronics}.} \emph{Electronics} (l'électronique), nom de discipline en -ics comme \emph{physics}, \emph{mathematics}. \emph{Electronic} est un adjectif.
+
+\hypertarget{question-61}{%
+\subsection{Question 61}\label{question-61}}
+
+\begin{indication}{1}
+
+Projet prévu pour ce soir : quelle forme du présent exprime l'avenir proche ?
+
+\end{indication}
+
+\hypertarget{solution-60}{%
+\subsubsection{Solution}\label{solution-60}}
+
+\textbf{Réponse c) \emph{going}.} Présent progressif à valeur de futur : \emph{Are you going out tonight?}
+
+\hypertarget{question-62}{%
+\subsection{Question 62}\label{question-62}}
+
+\begin{indication}{1}
+
+Après \emph{a}, il faut un nom, pas un adjectif de nationalité.
+
+\end{indication}
+
+\hypertarget{solution-61}{%
+\subsubsection{Solution}\label{solution-61}}
+
+\textbf{Réponse b) \emph{Spaniard}.} \emph{a Spaniard} = un Espagnol. \emph{Spanish} est un adjectif (ou désigne la langue) ; \emph{a Spanish} est fautif.
+
+\begin{piege}
+
+Nationalités : \emph{a Spaniard}, \emph{a Dane}, \emph{a Swede}, \emph{a Pole}, \emph{a Turk}, mais \emph{a Frenchman / a French person}. Avec \emph{the} + adjectif, on désigne le peuple entier (\emph{the Spanish}).
+
+\end{piege}
+
+\hypertarget{question-63}{%
+\subsection{Question 63}\label{question-63}}
+
+\begin{indication}{1}
+
+Expression : « à quelques minutes à pied ».
+
+\end{indication}
+
+\hypertarget{solution-62}{%
+\subsubsection{Solution}\label{solution-62}}
+
+\textbf{Réponse a) \emph{walking distance}.} \emph{within walking distance from/of my flat} = à distance de marche.
+
+\hypertarget{question-64}{%
+\subsection{Question 64}\label{question-64}}
+
+\begin{indication}{1}
+
+« Dans un délai de deux semaines ».
+
+\end{indication}
+
+\hypertarget{solution-63}{%
+\subsubsection{Solution}\label{solution-63}}
+
+\textbf{Réponse c) \emph{within}.} \emph{within two weeks} = en moins de deux semaines, dans un délai de deux semaines. \emph{less than} exigerait \emph{in less than}.
+
+\hypertarget{question-65}{%
+\subsection{Question 65}\label{question-65}}
+
+\begin{indication}{1}
+
+« Du lundi au vendredi inclus », en américain.
+
+\end{indication}
+
+\hypertarget{solution-64}{%
+\subsubsection{Solution}\label{solution-64}}
+
+\textbf{Réponse c) \emph{through}.} \emph{Monday through Friday} (américain ; \emph{Monday to Friday} en britannique).
+
+\hypertarget{question-66}{%
+\subsection{Question 66}\label{question-66}}
+
+\begin{indication}{1}
+
+« Rompre avec » sa petite amie.
+
+\end{indication}
+
+\hypertarget{solution-65}{%
+\subsubsection{Solution}\label{solution-65}}
+
+\textbf{Réponse b) \emph{breaking up}.} \emph{break up with someone} = rompre avec quelqu'un. \emph{break out} = éclater ; \emph{break into} = entrer par effraction.
+
+\hypertarget{question-67}{%
+\subsection{Question 67}\label{question-67}}
+
+\begin{indication}{1}
+
+On demande à qui appartient le téléphone.
+
+\end{indication}
+
+\hypertarget{solution-66}{%
+\subsubsection{Solution}\label{solution-66}}
+
+\textbf{Réponse c) \emph{Whose}.} Interrogatif possessif : \emph{Whose phone has she borrowed?} \emph{Who's} = \emph{who is / who has}.
+
+\hypertarget{question-68}{%
+\subsection{Question 68}\label{question-68}}
+
+\begin{indication}{1}
+
+Le blanc est suivi d'une proposition complète (sujet + verbe).
+
+\end{indication}
+
+\hypertarget{solution-67}{%
+\subsubsection{Solution}\label{solution-67}}
+
+\textbf{Réponse c) \emph{Although}.} \emph{Although} + proposition. \emph{Despite} et \emph{In spite of} se construisent avec un nom ou une forme en -ing ; \emph{And yet} ne peut pas ouvrir une concessive placée avant la principale.
+
+\hypertarget{question-69}{%
+\subsection{Question 69}\label{question-69}}
+
+\begin{indication}{1}
+
+Le sens attendu est négatif : on monte pour ne pas être dérangé. Cherchez l'option qui contient la négation.
+
+\end{indication}
+
+\hypertarget{solution-68}{%
+\subsubsection{Solution}\label{solution-68}}
+
+\textbf{Réponse b) so as to not to (pour \emph{so as not to}).} Le sens impose \emph{so as not to be disturbed} (« afin de ne pas être dérangés »). La seule option qui porte la négation est b), imprimée \emph{so as to not to} : le second \emph{to} est en trop, ce qui ressemble à une coquille d'énoncé. a) donne le contresens « afin d'être dérangés » ; \emph{for not to} est fautif ; \emph{with a view to} se construit avec V-ing.
+
+\begin{piege}
+
+Coquille probable de l'énoncé : aucune option ne donne, telle qu'imprimée, une phrase à la fois correcte et sensée. La consigne de couverture demande de signaler une erreur d'énoncé sur la copie ; dans un QCM, on coche l'option qui porte le sens voulu (b) et on peut l'indiquer en une ligne.
+
+\end{piege}
+
+\hypertarget{question-70}{%
+\subsection{Question 70}\label{question-70}}
+
+\begin{indication}{1}
+
+« En plus de » ou « à côté de » ?
+
+\end{indication}
+
+\hypertarget{solution-69}{%
+\subsubsection{Solution}\label{solution-69}}
+
+\textbf{Réponse a) \emph{besides}.} \emph{besides} = en plus de, outre. \emph{beside} = à côté de.
+
+\begin{piege}
+
+\emph{besides} (en plus de) et \emph{beside} (à côté de) ne diffèrent que d'un \emph{s} : c'est un piège classique de ce type de QCM.
+
+\end{piege}
+
+\hypertarget{question-71}{%
+\subsection{Question 71}\label{question-71}}
+
+\begin{indication}{1}
+
+Le chien traverse la route.
+
+\end{indication}
+
+\hypertarget{solution-70}{%
+\subsubsection{Solution}\label{solution-70}}
+
+\textbf{Réponse b) \emph{across}.} \emph{run across the road} = traverser la route en courant (d'un bord à l'autre d'une surface).
+
+\hypertarget{question-72}{%
+\subsection{Question 72}\label{question-72}}
+
+\begin{indication}{1}
+
+On ne voit pas la Trump Tower : l'avion est-il au-dessus ou au-dessous des nuages ?
+
+\end{indication}
+
+\hypertarget{solution-71}{%
+\subsubsection{Solution}\label{solution-71}}
+
+\textbf{Réponse c) \emph{above}.} \emph{above the clouds} : au-dessus des nuages, le sol est caché.
+
+\hypertarget{question-73}{%
+\subsection{Question 73}\label{question-73}}
+
+\begin{indication}{1}
+
+Elle éclabousse le pull de Joe en mangeant : où est-il assis ?
+
+\end{indication}
+
+\hypertarget{solution-72}{%
+\subsubsection{Solution}\label{solution-72}}
+
+\textbf{Réponse a) \emph{opposite}.} \emph{opposite Joe} = en face de Joe.
+
+\hypertarget{question-74}{%
+\subsection{Question 74}\label{question-74}}
+
+\begin{indication}{1}
+
+\emph{would rather} se comporte comme un modal.
+
+\end{indication}
+
+\hypertarget{solution-73}{%
+\subsubsection{Solution}\label{solution-73}}
+
+\textbf{Réponse a) \emph{spend}.} \emph{would rather} + base verbale : \emph{He would rather spend a holiday in Egypt than in Tunisia}.
+
+\hypertarget{question-75}{%
+\subsection{Question 75}\label{question-75}}
+
+\begin{indication}{1}
+
+« À côté de l'église » ; vérifiez qu'il ne manque pas un mot à l'option d).
+
+\end{indication}
+
+\hypertarget{solution-74}{%
+\subsubsection{Solution}\label{solution-74}}
+
+\textbf{Réponse c) \emph{beside}.} \emph{beside the church} = à côté de l'église. \emph{in front} exigerait \emph{of} (\emph{in front of}).
+
+\hypertarget{question-76}{%
+\subsection{Question 76}\label{question-76}}
+
+\begin{indication}{1}
+
+Le blanc est suivi d'un groupe nominal ; il exprime une concession.
+
+\end{indication}
+
+\hypertarget{solution-75}{%
+\subsubsection{Solution}\label{solution-75}}
+
+\textbf{Réponse b) \emph{Despite}.} \emph{Despite the pandemic} (+ nom). \emph{In spite} exigerait \emph{of} ; \emph{Although} exige une proposition ; \emph{Because of} donne un contresens.
+
+\hypertarget{question-77}{%
+\subsection{Question 77}\label{question-77}}
+
+\begin{indication}{1}
+
+\emph{in the last two months} : période non révolue qui va jusqu'à maintenant.
+
+\end{indication}
+
+\hypertarget{solution-76}{%
+\subsubsection{Solution}\label{solution-76}}
+
+\textbf{Réponse b) \emph{have visited}.} \emph{present perfect} avec une période qui inclut le présent : \emph{We have visited three Asian countries in the last two months}.
+
+\hypertarget{question-78}{%
+\subsection{Question 78}\label{question-78}}
+
+\begin{indication}{1}
+
+« Mourir de causes naturelles ».
+
+\end{indication}
+
+\hypertarget{solution-77}{%
+\subsubsection{Solution}\label{solution-77}}
+
+\textbf{Réponse a) \emph{of}.} \emph{die of natural causes}. \emph{due} exigerait \emph{due to}.
+
+\hypertarget{question-79}{%
+\subsection{Question 79}\label{question-79}}
+
+\begin{indication}{1}
+
+« Elle non plus » : \emph{Neither} + auxiliaire + sujet ; quel auxiliaire reprend \emph{haven't said} ?
+
+\end{indication}
+
+\hypertarget{solution-78}{%
+\subsubsection{Solution}\label{solution-78}}
+
+\textbf{Réponse c) \emph{has she}.} \emph{Neither has she} : inversion, et reprise de l'auxiliaire \emph{have} du \emph{present perfect}, à la 3e personne.
+
+\hypertarget{question-80}{%
+\subsection{Question 80}\label{question-80}}
+
+\begin{indication}{1}
+
+Adverbe d'intensité devant un comparatif (« bien meilleur »).
+
+\end{indication}
+
+\hypertarget{solution-79}{%
+\subsubsection{Solution}\label{solution-79}}
+
+\textbf{Réponse a) \emph{far}.} \emph{far better} = bien meilleur (comme \emph{much better}).
+
+\hypertarget{question-81}{%
+\subsection{Question 81}\label{question-81}}
+
+\begin{indication}{1}
+
+Le mot est-il variable en anglais ?
+
+\end{indication}
+
+\hypertarget{solution-80}{%
+\subsubsection{Solution}\label{solution-80}}
+
+\textbf{Réponse b) \emph{series}.} \emph{a series of accidents} : \emph{series} est invariable (singulier et pluriel identiques).
+
+\hypertarget{question-82}{%
+\subsection{Question 82}\label{question-82}}
+
+\begin{indication}{1}
+
+\emph{information} est-il dénombrable ?
+
+\end{indication}
+
+\hypertarget{solution-81}{%
+\subsubsection{Solution}\label{solution-81}}
+
+\textbf{Réponse a) \emph{much}.} \emph{information} est indénombrable : \emph{as much information as we can}.
+
+\begin{methode}
+
+Indénombrables fréquents : \emph{information, advice, news, research, equipment, furniture, luggage, evidence} (item 20 : \emph{pieces of evidence}). Ils prennent \emph{much}, \emph{a little}, jamais de \emph{-s}.
+
+\end{methode}
+
+\hypertarget{question-83}{%
+\subsection{Question 83}\label{question-83}}
+
+\begin{indication}{1}
+
+Déduction sur un événement futur proche (il devrait arriver).
+
+\end{indication}
+
+\hypertarget{solution-82}{%
+\subsubsection{Solution}\label{solution-82}}
+
+\textbf{Réponse c) \emph{should be}.} \emph{should} exprime une probabilité forte : \emph{he should be here in a few minutes}. \emph{ought to being} est fautif (\emph{ought to be}).
+
+\hypertarget{question-84}{%
+\subsection{Question 84}\label{question-84}}
+
+\begin{indication}{1}
+
+Après \emph{wish someone}, il faut un nom.
+
+\end{indication}
+
+\hypertarget{solution-83}{%
+\subsubsection{Solution}\label{solution-83}}
+
+\textbf{Réponse b) \emph{success}.} \emph{I wish him success} (\emph{wish somebody something}).
+
+\hypertarget{question-85}{%
+\subsection{Question 85}\label{question-85}}
+
+\begin{indication}{1}
+
+Système hypothétique : \emph{if} + prétérit dans la subordonnée.
+
+\end{indication}
+
+\hypertarget{solution-84}{%
+\subsubsection{Solution}\label{solution-84}}
+
+\textbf{Réponse a) \emph{would get}.} \emph{if you were more organized} (irréel du présent) → \emph{would} + base verbale : \emph{You would get better results}.
+
+\hypertarget{question-86}{%
+\subsection{Question 86}\label{question-86}}
+
+\begin{indication}{1}
+
+Le blanc relie \emph{Northern California} à \emph{Silicon Valley} sans verbe conjugué (le verbe principal est \emph{is very famous}).
+
+\end{indication}
+
+\hypertarget{solution-85}{%
+\subsubsection{Solution}\label{solution-85}}
+
+\textbf{Réponse c) \emph{better known as}.} Participe passé en position de relative réduite : \emph{The part of Northern California better known as Silicon Valley is very famous}. a) ajouterait un second verbe conjugué. L'option c) reprend \emph{as}, déjà imprimé dans la phrase : coquille sans incidence sur le choix.
+
+\begin{piege}
+
+Coquille d'énoncé : l'option c) reprend \emph{as} déjà imprimé dans la phrase. Le choix reste univoque : seule c) évite un second verbe conjugué.
+
+\end{piege}
+
+\hypertarget{question-87}{%
+\subsection{Question 87}\label{question-87}}
+
+\begin{indication}{1}
+
+On imagine une réaction à un moment passé (\emph{ten years before}) : hypothèse sur le passé.
+
+\end{indication}
+
+\hypertarget{solution-86}{%
+\subsubsection{Solution}\label{solution-86}}
+
+\textbf{Réponse d) \emph{would have reacted}.} \emph{She wondered how she would have reacted ten years before} : irréel du passé (\emph{would have} + participe passé).
+
+\hypertarget{question-88}{%
+\subsection{Question 88}\label{question-88}}
+
+\begin{indication}{1}
+
+Après \emph{it's very}, il faut un adjectif.
+
+\end{indication}
+
+\hypertarget{solution-87}{%
+\subsubsection{Solution}\label{solution-87}}
+
+\textbf{Réponse b) \emph{likely}.} \emph{it's very likely (that) it will snow} : adjectif. \emph{probably}, \emph{possibly} et \emph{certainly} sont des adverbes.
+
+\hypertarget{question-89}{%
+\subsection{Question 89}\label{question-89}}
+
+\begin{indication}{1}
+
+Le blanc est suivi de \emph{be saved} : quel modal se construit directement avec la base verbale ?
+
+\end{indication}
+
+\hypertarget{solution-88}{%
+\subsubsection{Solution}\label{solution-88}}
+
+\textbf{Réponse d) \emph{could}.} \emph{hundreds of lives could be saved} (modal + infinitif passif). \emph{could have} exigerait \emph{been saved} ; \emph{were able} et \emph{were allowed to} sont mal construits.
+
+\hypertarget{question-90}{%
+\subsection{Question 90}\label{question-90}}
+
+\begin{indication}{1}
+
+Conseil fort ou obligation : il faut faire un effort.
+
+\end{indication}
+
+\hypertarget{solution-89}{%
+\subsubsection{Solution}\label{solution-89}}
+
+\textbf{Réponse a) \emph{must}.} \emph{you must make an effort} (obligation). \emph{needn't} et \emph{can't} donnent un contresens.
+
+\hypertarget{question-91}{%
+\subsection{Question 91}\label{question-91}}
+
+\begin{indication}{1}
+
+\emph{After} est ici une préposition.
+
+\end{indication}
+
+\hypertarget{solution-90}{%
+\subsubsection{Solution}\label{solution-90}}
+
+\textbf{Réponse c) \emph{checking}.} \emph{After checking the results} (préposition + V-ing). \emph{having check} est fautif (\emph{having checked}).
+
+\hypertarget{question-92}{%
+\subsection{Question 92}\label{question-92}}
+
+\begin{indication}{1}
+
+Adverbe de degré devant un comparatif (« un peu plus »).
+
+\end{indication}
+
+\hypertarget{solution-91}{%
+\subsubsection{Solution}\label{solution-91}}
+
+\textbf{Réponse c) \emph{a little}.} \emph{a little more than his wife}. \emph{few}, \emph{many} et \emph{a few} portent sur des noms dénombrables.
+
+\hypertarget{question-93}{%
+\subsection{Question 93}\label{question-93}}
+
+\begin{indication}{1}
+
+Déduction certaine (\emph{I'm sure}) portant sur le passé.
+
+\end{indication}
+
+\hypertarget{solution-92}{%
+\subsubsection{Solution}\label{solution-92}}
+
+\textbf{Réponse b) \emph{must have}.} \emph{somebody must have told him} : \emph{must have} + participe passé = déduction sur le passé. \emph{can't have} donne l'inverse.
+
+\hypertarget{question-94}{%
+\subsection{Question 94}\label{question-94}}
+
+\begin{indication}{1}
+
+\emph{What about} + \ldots{} ?
+
+\end{indication}
+
+\hypertarget{solution-93}{%
+\subsubsection{Solution}\label{solution-93}}
+
+\textbf{Réponse b) \emph{inviting}.} \emph{What about inviting your parents?} (\emph{What about} + V-ing).
+
+\hypertarget{question-95}{%
+\subsection{Question 95}\label{question-95}}
+
+\begin{indication}{1}
+
+Que se passe-t-il quand une expression négative comme \emph{Not only} ouvre la phrase ?
+
+\end{indication}
+
+\hypertarget{solution-94}{%
+\subsubsection{Solution}\label{solution-94}}
+
+\textbf{Réponse b) \emph{was she}.} Inversion sujet-auxiliaire après \emph{Not only} en tête : \emph{Not only was she happy\ldots, but she was also grateful}.
+
+\begin{methode}
+
+Inversion après un adverbe négatif ou restrictif placé en tête : \emph{Not only}, \emph{Never}, \emph{Rarely}, \emph{Hardly \ldots{} when}, \emph{No sooner \ldots{} than}, \emph{Neither} (item 79).
+
+\end{methode}
+
+\hypertarget{question-96}{%
+\subsection{Question 96}\label{question-96}}
+
+\begin{indication}{1}
+
+\emph{It was hard} + quelle forme verbale ?
+
+\end{indication}
+
+\hypertarget{solution-95}{%
+\subsubsection{Solution}\label{solution-95}}
+
+\textbf{Réponse a) \emph{to survive}.} \emph{it was hard to survive} (\emph{it is} + adjectif + infinitif complet).
+
+\hypertarget{question-97}{%
+\subsection{Question 97}\label{question-97}}
+
+\begin{indication}{1}
+
+Regardez ce qui suit le blanc : \emph{\ldots{} to pay}.
+
+\end{indication}
+
+\hypertarget{solution-96}{%
+\subsubsection{Solution}\label{solution-96}}
+
+\textbf{Réponse d) \emph{have}.} \emph{why I have to pay} : le blanc est suivi de \emph{to}, ce qui exclut les modaux \emph{must}, \emph{needn't}, \emph{should} (jamais suivis de \emph{to}).
+
+\begin{methode}
+
+Lire ce qui suit le blanc avant de choisir : ici \emph{to pay} élimine trois options d'un coup.
+
+\end{methode}
+
+\hypertarget{question-98}{%
+\subsection{Question 98}\label{question-98}}
+
+\begin{indication}{1}
+
+Le relatif est-il sujet ou complément de \emph{met} ?
+
+\end{indication}
+
+\hypertarget{solution-97}{%
+\subsubsection{Solution}\label{solution-97}}
+
+\textbf{Réponse a) ∅ (pas de relatif).} Relatif complément d'objet, donc omissible : \emph{the man she met at my wedding}. \emph{whose} et \emph{what} sont exclus, \emph{than} est un comparatif.
+
+\hypertarget{question-99}{%
+\subsection{Question 99}\label{question-99}}
+
+\begin{indication}{1}
+
+\emph{people} est dénombrable ; « très peu de gens ».
+
+\end{indication}
+
+\hypertarget{solution-98}{%
+\subsubsection{Solution}\label{solution-98}}
+
+\textbf{Réponse c) \emph{few}.} \emph{very few people} (dénombrable). \emph{little} et \emph{much} portent sur des indénombrables ; \emph{many} contredit le froid.
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : les « quantifieurs » sont le premier point d'erreur cité par le jury. Dénombrables : \emph{few, a few, many} ; indénombrables : \emph{little, a little, much} (items 20, 27, 82, 92, 99).
+
+\end{jury}
+
+\hypertarget{question-100}{%
+\subsection{Question 100}\label{question-100}}
+
+\begin{indication}{1}
+
+Comparatif dans une phrase négative, suivi de \emph{than}.
+
+\end{indication}
+
+\hypertarget{solution-99}{%
+\subsubsection{Solution}\label{solution-99}}
+
+\textbf{Réponse d) \emph{any smarter}.} \emph{he is not any smarter than you are} (\emph{not any} + comparatif). \emph{as smart} exigerait \emph{as you are} ; \emph{as smarter} est fautif.
+
+\hypertarget{partie-ii-text-one-solo-travel-questions-101-uxe0-110}{%
+\section{Partie II --- Text one : solo travel (questions 101 à 110)}\label{partie-ii-text-one-solo-travel-questions-101-uxe0-110}}
+
+Article du \emph{Guardian} (James Tapper, 20 janvier 2024) sur l'essor des voyages en solo et les amitiés qu'ils créent. Questions de compréhension fine : chaque bonne réponse reformule une phrase précise du texte.
+
+\hypertarget{question-101}{%
+\subsection{Question 101}\label{question-101}}
+
+\begin{indication}{1}
+
+Cherchez comment le texte désigne \emph{The Unfriend} au paragraphe suivant.
+
+\end{indication}
+
+\hypertarget{solution-100}{%
+\subsubsection{Solution}\label{solution-100}}
+
+\textbf{Réponse c) \emph{a play}.} \emph{The Unfriend} est une comédie du West End et le texte la reprend par \emph{The play may be funny}.
+
+\begin{methode}
+
+En compréhension, la bonne option reformule une phrase précise du texte. Retrouvez cette phrase avant de lire les options, puis éliminez celles qui ajoutent, exagèrent ou inversent le sens.
+
+\end{methode}
+
+\hypertarget{question-102}{%
+\subsection{Question 102}\label{question-102}}
+
+\begin{indication}{1}
+
+Repérez l'expression \emph{at the heart of it} au deuxième paragraphe.
+
+\end{indication}
+
+\hypertarget{solution-101}{%
+\subsubsection{Solution}\label{solution-101}}
+
+\textbf{Réponse c) \emph{people see it as a way to make long-lasting friendships}.} \emph{the chance to make lifelong friendships is at the heart of it} : \emph{lifelong} = \emph{long-lasting}. d) (\emph{make friends on the way}) est trop faible : le texte insiste sur des amitiés durables.
+
+\hypertarget{question-103}{%
+\subsection{Question 103}\label{question-103}}
+
+\begin{indication}{1}
+
+Que dit Jen Burton de l'accueil des autres femmes ?
+
+\end{indication}
+
+\hypertarget{solution-102}{%
+\subsubsection{Solution}\label{solution-102}}
+
+\textbf{Réponse c) \emph{she got lots of support from the other group members}.} \emph{The support you can get from a group of women you don't even know is phenomenal.} La composition du groupe (16 femmes) était connue d'avance : ce n'est pas une découverte.
+
+\hypertarget{question-104}{%
+\subsection{Question 104}\label{question-104}}
+
+\begin{indication}{1}
+
+\emph{laugh so hard} : qui rit, et de quoi ?
+
+\end{indication}
+
+\hypertarget{solution-103}{%
+\subsubsection{Solution}\label{solution-103}}
+
+\textbf{Réponse c) \emph{she had never had so much fun before}.} \emph{{[}I had{]} never laughed so hard in my whole life} = elle ne s'était jamais autant amusée. a) (\emph{been laughed at}) et b) (\emph{made fun of people}) sont des contresens.
+
+\hypertarget{question-105}{%
+\subsection{Question 105}\label{question-105}}
+
+\begin{indication}{1}
+
+\emph{host} = recevoir chez soi.
+
+\end{indication}
+
+\hypertarget{solution-104}{%
+\subsubsection{Solution}\label{solution-104}}
+
+\textbf{Réponse a) \emph{she put up an Australian friend}.} \emph{host a friend} = héberger un ami (\emph{put somebody up}). Rien n'indique une location ou des hôtes payants.
+
+\hypertarget{question-106}{%
+\subsection{Question 106}\label{question-106}}
+
+\begin{indication}{1}
+
+Mesurez la force de \emph{slightly missing out}.
+
+\end{indication}
+
+\hypertarget{solution-105}{%
+\subsubsection{Solution}\label{solution-105}}
+
+\textbf{Réponse b) \emph{had the feeling that sharing a room could have been enjoyable}.} \emph{missing out} = passer à côté de quelque chose ; \emph{slightly} atténue le regret, d'où \emph{This time I'll share a room}. c) (\emph{really badly regretted}) et d) (\emph{lonely and depressed}) exagèrent.
+
+\begin{piege}
+
+Les options graduées (\emph{slightly} / \emph{really badly}) testent la nuance : une option trop forte est fausse même si elle va dans le bon sens.
+
+\end{piege}
+
+\hypertarget{question-107}{%
+\subsection{Question 107}\label{question-107}}
+
+\begin{indication}{1}
+
+Distinguez voyage passé, voyage à venir et ami reçu chez soi.
+
+\end{indication}
+
+\hypertarget{solution-106}{%
+\subsubsection{Solution}\label{solution-106}}
+
+\textbf{Réponse a) \emph{Jordan}.} Elle est allée en Jordanie ; \emph{Norway is next} (voyage à venir) ; l'amie australienne est venue chez elle.
+
+\hypertarget{question-108}{%
+\subsection{Question 108}\label{question-108}}
+
+\begin{indication}{1}
+
+Que fait l'entreprise pour favoriser les amitiés ?
+
+\end{indication}
+
+\hypertarget{solution-107}{%
+\subsubsection{Solution}\label{solution-107}}
+
+\textbf{Réponse c) \emph{may be shy and need help from professional tour guides to socialize with others}.} G Adventures conçoit des circuits qui laissent le temps de se rencontrer et forme ses guides à créer de la camaraderie : les clients ont besoin d'aide pour se lier. Les autres options prêtent à Marceau des injonctions absentes du texte.
+
+\hypertarget{question-109}{%
+\subsection{Question 109}\label{question-109}}
+
+\begin{indication}{1}
+
+\emph{get on (with somebody)} = s'entendre avec quelqu'un.
+
+\end{indication}
+
+\hypertarget{solution-108}{%
+\subsubsection{Solution}\label{solution-108}}
+
+\textbf{Réponse c) \emph{identify who was not on good terms with other customers}.} \emph{to spot when people might not be getting on} = repérer ceux qui ne s'entendent pas. Le texte ne parle ni de bagarre ni de rapport au supérieur.
+
+\hypertarget{question-110}{%
+\subsection{Question 110}\label{question-110}}
+
+\begin{indication}{1}
+
+Comparez la crainte initiale et ce qui s'est passé ensuite.
+
+\end{indication}
+
+\hypertarget{solution-109}{%
+\subsubsection{Solution}\label{solution-109}}
+
+\textbf{Réponse b) \emph{an unexpected and pleasant experience with his room mate}.} Il redoutait \emph{a dreadful experience} mais s'est lié au point de rester ami avec son compagnon de chambre de 75 ans : expérience inattendue et agréable.
+
+\hypertarget{partie-iii-text-two-les-pandas-de-hong-kong-questions-111-uxe0-121}{%
+\section{Partie III --- Text two : les pandas de Hong Kong (questions 111 à 121)}\label{partie-iii-text-two-les-pandas-de-hong-kong-questions-111-uxe0-121}}
+
+Article de NBC (24 décembre 2024) à trous : il faut choisir le mot qui convient par le sens et par la grammaire (nature du mot, temps, préposition).
+
+\hypertarget{question-111}{%
+\subsection{Question 111}\label{question-111}}
+
+\begin{indication}{1}
+
+Il faut un adjectif devant \emph{bears} : « les ours bien-aimés ».
+
+\end{indication}
+
+\hypertarget{solution-110}{%
+\subsubsection{Solution}\label{solution-110}}
+
+\textbf{Réponse a) \emph{beloved}.} \emph{the beloved bears} : \emph{beloved} = adoré, chéri (adjectif). \emph{loving} = affectueux (qui aime).
+
+\begin{methode}
+
+Texte à trous : identifiez d'abord la nature du mot attendu (adjectif devant un nom, nom après un déterminant, participe après \emph{has been}), puis choisissez par le sens.
+
+\end{methode}
+
+\hypertarget{question-112}{%
+\subsection{Question 112}\label{question-112}}
+
+\begin{indication}{1}
+
+Quelle préposition suit \emph{capitalize} ?
+
+\end{indication}
+
+\hypertarget{solution-111}{%
+\subsubsection{Solution}\label{solution-111}}
+
+\textbf{Réponse b) \emph{on}.} \emph{capitalize on something} = tirer parti de quelque chose.
+
+\hypertarget{question-113}{%
+\subsection{Question 113}\label{question-113}}
+
+\begin{indication}{1}
+
+Hong Kong a eu du mal à retrouver ses touristes après les restrictions.
+
+\end{indication}
+
+\hypertarget{solution-112}{%
+\subsubsection{Solution}\label{solution-112}}
+
+\textbf{Réponse a) \emph{struggled}.} \emph{has struggled to attract tourists} = a eu du mal à attirer les touristes.
+
+\hypertarget{question-114}{%
+\subsection{Question 114}\label{question-114}}
+
+\begin{indication}{1}
+
+Ce qui a suivi les manifestations de 2019 et terni l'image de la ville.
+
+\end{indication}
+
+\hypertarget{solution-113}{%
+\subsubsection{Solution}\label{solution-113}}
+
+\textbf{Réponse a) \emph{crackdown}.} \emph{a crackdown on dissent} = une répression de la contestation.
+
+\hypertarget{question-115}{%
+\subsection{Question 115}\label{question-115}}
+
+\begin{indication}{1}
+
+« Actuellement », Hong Kong compte six pandas.
+
+\end{indication}
+
+\hypertarget{solution-114}{%
+\subsubsection{Solution}\label{solution-114}}
+
+\textbf{Réponse b) \emph{currently}.} \emph{Hong Kong currently has six pandas}.
+
+\hypertarget{question-116}{%
+\subsection{Question 116}\label{question-116}}
+
+\begin{indication}{1}
+
+Nom désignant la reproduction des animaux, employé comme épithète de \emph{efforts}.
+
+\end{indication}
+
+\hypertarget{solution-115}{%
+\subsubsection{Solution}\label{solution-115}}
+
+\textbf{Réponse b) \emph{breeding}.} \emph{breeding efforts} = tentatives de reproduction. \emph{breading} (paner) est un piège orthographique.
+
+\begin{piege}
+
+\emph{breeding} (reproduction) et \emph{breading} (panure) : une seule lettre les sépare.
+
+\end{piege}
+
+\hypertarget{question-117}{%
+\subsection{Question 117}\label{question-117}}
+
+\begin{indication}{1}
+
+Comment appelle-t-on les petits d'un ours ? Ying Ying a eu des jumeaux.
+
+\end{indication}
+
+\hypertarget{solution-116}{%
+\subsubsection{Solution}\label{solution-116}}
+
+\textbf{Réponse c) \emph{cubs}.} \emph{The cubs} : les petits (au pluriel, ce sont des jumeaux).
+
+\begin{jury}
+
+Rapport 2026 (p.~24) : l'exercice à trous était voulu « volontairement assez accessible », mais « deux ou trois items - notamment « cub » - se sont avérés compliqués ». \emph{cub} désigne le petit de l'ours, du lion ou du renard.
+
+\end{jury}
+
+\hypertarget{question-118}{%
+\subsection{Question 118}\label{question-118}}
+
+\begin{indication}{1}
+
+Action passée datée (\emph{In September}).
+
+\end{indication}
+
+\hypertarget{solution-117}{%
+\subsubsection{Solution}\label{solution-117}}
+
+\textbf{Réponse a) \emph{welcomed}.} \emph{In September, Hong Kong also welcomed a pair of pandas} (prétérit). \emph{has welcome} est fautif.
+
+\hypertarget{question-119}{%
+\subsection{Question 119}\label{question-119}}
+
+\begin{indication}{1}
+
+Qui parle d'« économie du panda » et encourage les entreprises ?
+
+\end{indication}
+
+\hypertarget{solution-118}{%
+\subsubsection{Solution}\label{solution-118}}
+
+\textbf{Réponse c) \emph{officials}.} \emph{Hong Kong officials} = les responsables, les autorités. \emph{politics} désigne la politique, pas les personnes.
+
+\hypertarget{question-120}{%
+\subsection{Question 120}\label{question-120}}
+
+\begin{indication}{1}
+
+Les deux pandas offerts par Pékin ont 5 ans.
+
+\end{indication}
+
+\hypertarget{solution-119}{%
+\subsubsection{Solution}\label{solution-119}}
+
+\textbf{Réponse d) \emph{bears}.} \emph{the two Beijing-gifted bears} : le panda géant est un ours. Ils ne sont ni des bébés ni des animaux de compagnie.
+
+\hypertarget{question-121}{%
+\subsection{Question 121}\label{question-121}}
+
+\begin{indication}{1}
+
+\emph{has been \ldots{} financially} : forme progressive.
+
+\end{indication}
+
+\hypertarget{solution-120}{%
+\subsubsection{Solution}\label{solution-120}}
+
+\textbf{Réponse a) \emph{struggling}.} \emph{has been struggling financially} = connaît des difficultés financières (\emph{present perfect} progressif).
+
+\hypertarget{partie-iv-text-three-how-to-stop-an-argument-questions-122-uxe0-126}{%
+\section{Partie IV --- Text three : How to Stop an Argument? (questions 122 à 126)}\label{partie-iv-text-three-how-to-stop-an-argument-questions-122-uxe0-126}}
+
+Article de \emph{The Independent} (28 mai 2023) : sens d'expressions soulignées, à déduire du contexte.
+
+\hypertarget{question-122}{%
+\subsection{Question 122}\label{question-122}}
+
+\begin{indication}{1}
+
+\emph{litter} = joncher, parsemer.
+
+\end{indication}
+
+\hypertarget{solution-121}{%
+\subsubsection{Solution}\label{solution-121}}
+
+\textbf{Réponse b) \emph{full of}.} \emph{are littered with scoreboards} = sont jonchés de tableaux de score, donc \emph{full of}.
+
+\begin{methode}
+
+Pour une expression inconnue, raisonnez sur le contexte : une liste d'échecs « \emph{littered with} » des tableaux de score signifie qu'ils en sont pleins.
+
+\end{methode}
+
+\hypertarget{question-123}{%
+\subsection{Question 123}\label{question-123}}
+
+\begin{indication}{1}
+
+\emph{meaningful} = qui a du sens, qui compte.
+
+\end{indication}
+
+\hypertarget{solution-122}{%
+\subsubsection{Solution}\label{solution-122}}
+
+\textbf{Réponse a) \emph{count}.} \emph{meaningful relationships} = des relations qui comptent. \emph{humdrum} = banal.
+
+\hypertarget{question-124}{%
+\subsection{Question 124}\label{question-124}}
+
+\begin{indication}{1}
+
+\emph{entrenched position} : image militaire de la tranchée.
+
+\end{indication}
+
+\hypertarget{solution-123}{%
+\subsubsection{Solution}\label{solution-123}}
+
+\textbf{Réponse a) \emph{sticks to their argument and doesn't budge}.} \emph{digging further into their entrenched position} = s'enfoncer dans sa position, ne pas bouger d'un pouce.
+
+\hypertarget{question-125}{%
+\subsection{Question 125}\label{question-125}}
+
+\begin{indication}{1}
+
+\emph{out-} + verbe = faire mieux que.
+
+\end{indication}
+
+\hypertarget{solution-124}{%
+\subsubsection{Solution}\label{solution-124}}
+
+\textbf{Réponse a) \emph{to do better than the other}.} \emph{to outdo the other} = surpasser l'autre.
+
+\hypertarget{question-126}{%
+\subsection{Question 126}\label{question-126}}
+
+\begin{indication}{1}
+
+\emph{be on the same page} = être sur la même longueur d'onde.
+
+\end{indication}
+
+\hypertarget{solution-125}{%
+\subsubsection{Solution}\label{solution-125}}
+
+\textbf{Réponse b) \emph{agree with each other}.} \emph{we should be on the same page} = nous devrions être d'accord.
+
+\hypertarget{partie-v-text-four-my-week-with-a-man-bag-questions-127-uxe0-137}{%
+\section{Partie V --- Text four : My week with a man bag (questions 127 à 137)}\label{partie-v-text-four-my-week-with-a-man-bag-questions-127-uxe0-137}}
+
+Chronique humoristique de Tim Dowling (\emph{The Guardian}, 30 janvier 2025) : compréhension globale, sens d'expressions idiomatiques et du ton ironique.
+
+\hypertarget{question-127}{%
+\subsection{Question 127}\label{question-127}}
+
+\begin{indication}{1}
+
+Lisez le titre et le chapeau : de qui porte-t-on les sacs ?
+
+\end{indication}
+
+\hypertarget{solution-126}{%
+\subsubsection{Solution}\label{solution-126}}
+
+\textbf{Réponse b) \emph{the catching on of ``ladies' bags'' for men}.} L'article porte sur la mode des sacs à main féminins chez les hommes (\emph{fashionable men have begun to appear in public wearing \ldots{} ladies' handbags}). \emph{catch on} = devenir à la mode.
+
+\hypertarget{question-128}{%
+\subsection{Question 128}\label{question-128}}
+
+\begin{indication}{1}
+
+\emph{Perhaps admiring is the wrong word} : que corrige le journaliste ?
+
+\end{indication}
+
+\hypertarget{solution-127}{%
+\subsubsection{Solution}\label{solution-127}}
+
+\textbf{Réponse d) \emph{she is probably surprised at seeing a man using a handbag}.} \emph{Perhaps admiring is the wrong word} et \emph{So, is this, like, a thing now?} traduisent la surprise, non l'admiration.
+
+\hypertarget{question-129}{%
+\subsection{Question 129}\label{question-129}}
+
+\begin{indication}{1}
+
+\emph{I have missed something} = être passé à côté de quelque chose.
+
+\end{indication}
+
+\hypertarget{solution-128}{%
+\subsubsection{Solution}\label{solution-128}}
+
+\textbf{Réponse d) \emph{is unaware of the situation}.} Il découvre une tendance qu'il ignorait (\emph{Again, I have missed something. How can I hope to catch up?}).
+
+\hypertarget{question-130}{%
+\subsection{Question 130}\label{question-130}}
+
+\begin{indication}{1}
+
+Quelles marques sont citées pour chacun ?
+
+\end{indication}
+
+\hypertarget{solution-129}{%
+\subsubsection{Solution}\label{solution-129}}
+
+\textbf{Réponse d) \emph{pricey handbags from glamorous brands}.} Chalamet porte un petit sac Chanel, Pharrell Williams a relancé le Speedy de Louis Vuitton : des sacs coûteux de grandes marques. Le sac Gucci à anse en bambou est celui de Harry Styles.
+
+\begin{piege}
+
+Ne mélangez pas les personnes citées : le sac à anse en bambou est celui de Harry Styles, pas de Chalamet ni de Pharrell Williams.
+
+\end{piege}
+
+\hypertarget{question-131}{%
+\subsection{Question 131}\label{question-131}}
+
+\begin{indication}{1}
+
+\emph{be at sea} = être dérouté.
+
+\end{indication}
+
+\hypertarget{solution-130}{%
+\subsubsection{Solution}\label{solution-130}}
+
+\textbf{Réponse c) \emph{is totally lost}.} \emph{I am absolutely at sea} = je suis complètement perdu ; la suite le confirme (\emph{They all look the same to me}).
+
+\hypertarget{question-132}{%
+\subsection{Question 132}\label{question-132}}
+
+\begin{indication}{1}
+
+Cherchez la phrase qui précède \emph{bag blind}.
+
+\end{indication}
+
+\hypertarget{solution-131}{%
+\subsubsection{Solution}\label{solution-131}}
+
+\textbf{Réponse c) \emph{finds it difficult to see differences between bags}.} \emph{They all look the same to me} : il ne distingue pas les sacs entre eux.
+
+\hypertarget{question-133}{%
+\subsection{Question 133}\label{question-133}}
+
+\begin{indication}{1}
+
+\emph{fit the bill} = faire l'affaire.
+
+\end{indication}
+
+\hypertarget{solution-132}{%
+\subsubsection{Solution}\label{solution-132}}
+
+\textbf{Réponse b) \emph{is what the man is looking for}.} \emph{a shearling bag \ldots{} that seems to fit the bill} = qui correspond à ce qu'il cherche.
+
+\hypertarget{question-134}{%
+\subsection{Question 134}\label{question-134}}
+
+\begin{indication}{1}
+
+\emph{that} désigne l'objet qu'elle montre du doigt.
+
+\end{indication}
+
+\hypertarget{solution-133}{%
+\subsubsection{Solution}\label{solution-133}}
+
+\textbf{Réponse d) \emph{doesn't like her husband sporting a handbag}.} \emph{pointing to the shearling bag over my shoulder} : c'est le sac porté par son mari qui la dérange.
+
+\hypertarget{question-135}{%
+\subsection{Question 135}\label{question-135}}
+
+\begin{indication}{1}
+
+Relevez \emph{discomfort} et \emph{mortification}.
+
+\end{indication}
+
+\hypertarget{solution-134}{%
+\subsubsection{Solution}\label{solution-134}}
+
+\textbf{Réponse a) \emph{embarrassed and self-conscious}.} \emph{The extent of the discomfort I feel}, \emph{undiluted mortification} : il est gêné et mal à l'aise.
+
+\hypertarget{question-136}{%
+\subsection{Question 136}\label{question-136}}
+
+\begin{indication}{1}
+
+\emph{no one cares what you are putting your shopping in}.
+
+\end{indication}
+
+\hypertarget{solution-135}{%
+\subsubsection{Solution}\label{solution-135}}
+
+\textbf{Réponse c) \emph{don't care about what people use for a bag}.} \emph{no one cares what you are putting your shopping in at the self-checkout} : personne ne juge.
+
+\hypertarget{question-137}{%
+\subsection{Question 137}\label{question-137}}
+
+\begin{indication}{1}
+
+\emph{obsolete} est un mot transparent.
+
+\end{indication}
+
+\hypertarget{solution-136}{%
+\subsubsection{Solution}\label{solution-136}}
+
+\textbf{Réponse b) \emph{outdated}.} \emph{obsolete} = dépassé, périmé (\emph{outdated}).
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{À retenir pour l'épreuve.}
+
+\begin{itemize}
+\tightlist
+\item
+  Lire ce qui entoure le blanc avant les options : un \emph{to} qui suit (item 97), un nom qui suit (items 23, 111), un verbe conjugué déjà présent (item 86) éliminent souvent deux ou trois options d'un coup.
+\item
+  En compréhension, retrouver la phrase du texte qui fonde la réponse, puis éliminer les options qui ajoutent, exagèrent (\emph{really badly}, item 106) ou inversent le sens.
+\item
+  Avec le barème +3 / −1, répondre dès qu'une option est éliminée.
+\end{itemize}
+
+\textbf{Grammaire à revoir, par famille (numéros d'items).}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2230}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4821}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2649}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Famille
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Règle
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Items
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V-ing ou infinitif & V-ing après \emph{enjoy}, \emph{be worth}, une préposition (\emph{look forward to}, \emph{without}, \emph{after}, \emph{What about}) ; infinitif après \emph{it is hard}, \emph{consider \ldots{} to be} & 1, 2, 8, 14, 34, 91, 94, 96 \\
+Modaux et semi-modaux & base verbale après \emph{had better}, \emph{would rather}, \emph{must}, \emph{could} ; \emph{needn't} = absence d'obligation ; \emph{must have} / \emph{can't have} = déduction sur le passé & 3, 47, 51, 74, 83, 89, 90, 93, 97 \\
+Temps & prétérit (moment passé daté), \emph{present perfect} (\emph{lately}, \emph{in the last two months}), prétérit modal (\emph{It's high time}, \emph{if}), présent après \emph{if} et \emph{when} à valeur de futur & 15, 29, 31, 38, 43, 53, 55, 77, 85, 87, 118, 121 \\
+Passif & sujet qui subit l'action : \emph{was greeted}, \emph{be allowed}, \emph{could be saved} & 38, 41, 89 \\
+Quantifieurs & \emph{few / a few / many} (dénombrables), \emph{little / a little / much} (indénombrables), \emph{no}, \emph{enough}, \emph{both} & 5, 20, 26, 27, 82, 92, 99 \\
+Comparatifs & \emph{the earlier \ldots, the more \ldots{}} ; \emph{far better} ; \emph{not any smarter} ; superlatif \emph{the most} & 48, 59, 80, 100 \\
+Inversion & après \emph{Not only}, \emph{Neither} & 79, 95 \\
+Relatifs et interrogatifs & \emph{who} sujet, relatif objet omis, \emph{whose}, \emph{what} & 35, 46, 67, 98 \\
+Prépositions et verbes à particule & \emph{disapprove of}, \emph{put forward}, \emph{run out of}, \emph{sort out}, \emph{break up}, \emph{capitalize on}, \emph{divided into}, \emph{die of}, \emph{passionate about} & 7, 12, 21, 33, 45, 57, 66, 78, 112 \\
+Lexique piège & faux amis (\emph{augmentation}, \emph{bulletin}, \emph{penalty}), paronymes (\emph{beside / besides}, \emph{last / latest}, \emph{breeding / breading}), nationalités (\emph{Spaniard}) & 11, 17, 52, 56, 62, 70, 116 \\
+\end{longtable}
+
+\textbf{Expressions idiomatiques rencontrées.} \emph{a piece of cake}, \emph{run like clockwork}, \emph{what is on my mind}, \emph{within walking distance}, \emph{get tough on crime}, \emph{at sea}, \emph{fit the bill}, \emph{catch on}, \emph{on the same page}, \emph{outdo}, \emph{host a friend}, \emph{miss out}, \emph{get on with somebody}.
+
+\textbf{Situations qui se retrouvent d'une année à l'autre.} Le QCM ATS reprend chaque session les mêmes familles de règles : un entraînement chronométré sur les annales, item par item, avec la règle notée à chaque erreur, est la préparation la plus rentable. Pour les textes, la lecture régulière de la presse britannique et américaine (\emph{The Guardian}, \emph{The Independent}, \emph{BBC News}) donne l'habitude du ton ironique et des expressions idiomatiques.
+
+\end{document}

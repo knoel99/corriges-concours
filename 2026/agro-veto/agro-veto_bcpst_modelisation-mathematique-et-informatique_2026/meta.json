@@ -1,0 +1,33 @@
+{
+  "slug": "agro-veto_bcpst_modelisation-mathematique-et-informatique_2026",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Modélisation mathématique et informatique",
+    "annee": 2026
+  },
+  "questions": 81,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q17-1-arbres-a1-a2.svg",
+      "question": "Q17.1",
+      "legende": "Arbres des événements A₁ et A₂ : chaque nœud porte son nombre de descendants ; A₁ laisse trois euglènes au jour 2, de descendance non précisée, A₂ éteint la population au jour 2"
+    },
+    {
+      "fichier": "figures/q22-3-parcours-largeur-profondeur.svg",
+      "question": "Q22.3",
+      "legende": "Ordre des appels à simule_D() sur l'arbre de l'expérience 2 pour j = 3 : extinction_iter tire génération par génération, extinction_rec branche par branche et s'arrête dès qu'une lignée atteint le jour 3"
+    },
+    {
+      "fichier": "figures/q29-4-points-fixes-gd.svg",
+      "question": "Q29.4",
+      "legende": "Courbe de G_D et droite y = t : si E(D) ≤ 1, seul point commun en 1 ; si E(D) > 1, second point commun α < 1, et f = G_D − t est minimale en β (exemples G_D(t) = 0,6 + 0,4t² et 0,2 + 0,8t²)"
+    },
+    {
+      "fichier": "figures/q32-4-segments-confiance.svg",
+      "question": "Q32.4",
+      "legende": "Sortie de trace1 simulée pour X de loi binomiale ℬ(2, 1/2), p = 5, ε = 0,1 : la courbe de G_X coupe les p + 1 segments verticaux de longueur 2ε"
+    }
+  ]
+}

@@ -1,0 +1,1558 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts MP — Physique 2 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Mines-Ponts MP}
+\fancyhead[R]{\small Physique 2 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts MP — Physique 2 2026\par}\medskip
+  {\large Mines-Ponts · MP · Physique 2 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} « De la physique avec les galaxies ». Le sujet aborde la galaxie par deux côtés totalement indépendants : comment on l'\textbf{observe} (optique, partie I) et comment on la \textbf{pèse} et suit sa croissance (mécanique, analyse vectorielle et lecture de graphes, partie II).
+
+\textbf{Format.} 3 heures, calculatrice interdite, 22 questions numérotées de 1 à 22. Les applications numériques sont demandées avec \textbf{un chiffre significatif} et se font de tête.
+
+Données : \(G=6{,}7\times10^{-11}\) SI, \(1\ \mathrm{pc}=3\times10^{16}\) m, 1 an \(=3\times10^7\) s, \(M_\odot=2\times10^{30}\) kg. La liste des données porte par erreur « \(2^{30}\) kg » pour la masse du Soleil : la page 5 donne la bonne valeur, et il faut signaler la coquille sur la copie, comme le demande la consigne de l'épreuve.
+
+\textbf{Découpage.}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5700}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Questions
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenu
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I (préambule) & Q1 & domaine spectral \\
+I.A Télescope unique & Q2--Q4 & images à l'infini, résolution du capteur, diffraction, diamètre utile maximal \\
+I.B.1 Modèle équivalent & Q5--Q6 & différence de marche entre deux télescopes, base équivalente \\
+I.B.2 Système équivalent & Q7--Q12 & trous d'Young, ordre d'interférence, sources incohérentes, brouillage, résolution, contraste d'une source étendue (sinus cardinal) \\
+I.C \(N\) télescopes & Q13 & interférences à \(N\) ondes, qualitatif \\
+II.A Répartition de masse & Q14--Q18 & orbite circulaire, théorème de Gauss gravitationnel, courbe de rotation, matière noire \\
+II.B Formation d'étoiles & Q19--Q22 & loi de puissance en échelle log-log, équation différentielle à variables séparables, redshift, lecture de graphe \\
+\end{longtable}
+
+\textbf{Notions du programme mobilisées.} Première année : optique géométrique (images dans le plan focal, rayon non dévié), mécanique du point (mouvement circulaire, forces centrales, lois de Kepler), analyse dimensionnelle. Deuxième année MP : superposition d'ondes lumineuses (formule de Fresnel, cohérence, trous d'Young, \(N\) ondes), électrostatique et analogie gravitationnelle (théorème de Gauss, forme locale), équations différentielles.
+
+\textbf{Difficulté.} Le rapport 2026 juge le sujet « très abordable et progressif », proche du cours. La partie I demande surtout des \textbf{schémas justes} et une bonne maîtrise du raisonnement par différence de marche (théorème de Malus) ; le seul vrai calcul est l'intégrale de la question 12. La partie II est plus classique (Gauss en symétrie sphérique, courbe de rotation) et se termine par des lectures de graphes qui demandent du soin.
+
+\textbf{Questions à ne pas laisser passer.} Le rapport 2026 classe Q1, Q2, Q7, Q8, Q14, Q15 et Q16 parmi les questions de restitution du cours, et Q4, Q5, Q6, Q9, Q16 (seconde moitié) et Q19 parmi les exploitations immédiates de l'énoncé. Avec Q18 et Q21, elles représentent l'essentiel du barème probable.
+
+\textbf{Questions discriminantes.} D'après le rapport 2026 :
+
+\begin{itemize}
+\tightlist
+\item
+  Q2 : construction d'images à l'infini, avec un taux de réponses correctes jugé anormalement bas ;
+\item
+  Q7 et Q8 : les schémas corrects avec le théorème de Malus étaient rares, et ils conditionnent toute la suite ;
+\item
+  Q9 à Q13 : peu traitées, beaucoup de candidats ayant abandonné la partie I ;
+\item
+  Q19 à Q22 : sans prérequis, mais peu traitées ; les deux coefficients de Q19, l'intégration de Q20 et l'application numérique de Q21 ont rarement été justes.
+\end{itemize}
+
+\textbf{Gestion du temps.} Les deux parties sont indépendantes, et le rapport indique que la partie I représente la moitié de l'épreuve : comptez environ 1 h 30 pour chacune. Les questions 12, 13 et 20 sont les plus longues : ne pas s'y enliser au détriment des questions de cours de la partie II, ni de la fin du sujet, qui ne demande que de la lecture de graphes et du calcul soigné.
+
+\begin{jury}
+
+Le rapport 2026 rappelle que les applications numériques étaient toutes gratifiées : « le résultat se présente au format scientifique, avec le nombre de chiffres significatifs spécifiés (ici, un seul pour des calculs faits à la main), et avec une unité. Un résultat sous forme de fraction ou de racine n'est pas pris en compte. » Il refuse aussi les acronymes non introduits (PRIL, BAME, PFD\ldots) et les raccourcis du type « j'utilise Malus » : on nomme le théorème de Malus.
+
+\end{jury}
+
+\hypertarget{partie-i-lobservation-des-galaxies}{%
+\section{Partie I --- L'observation des galaxies}\label{partie-i-lobservation-des-galaxies}}
+
+La partie montre qu'un télescope unique a une résolution limitée par son capteur et par la diffraction, puis qu'on la dépasse en combinant deux télescopes éloignés. Le dispositif devient un système de trous d'Young, et c'est la \textbf{disparition du contraste} des franges qui renseigne sur la taille angulaire de la source. Outils : optique géométrique, formule de Fresnel, cohérence, sommation d'intensités.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Il suffit de connaître les bornes du domaine visible, en micromètres.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le domaine visible s'étend de \(0{,}4\ \mu\)m (violet) à \(0{,}8\ \mu\)m (rouge) environ. Comme \(\lambda_0=2{,}0\ \mu\mathrm m>0{,}8\ \mu\mathrm m\), \textbf{ces ondes appartiennent à l'infrarouge (proche infrarouge)}.
+
+\begin{jury}
+
+Rapport 2026 : « Des réponses souvent fantaisistes à une question élémentaire. » Les bornes du visible et la position de l'ultraviolet et de l'infrarouge doivent être sues sans hésitation.
+
+\end{jury}
+
+\hypertarget{i.a-tuxe9lescope-unique}{%
+\subsection{I.A Télescope unique}\label{i.a-tuxe9lescope-unique}}
+
+On modélise le télescope par une lentille mince de focale \(f'\) et de diamètre \(D\), la caméra étant dans le plan focal image. On cherche ce qui limite la finesse des détails observables.
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Où se forme l'image d'un point situé à l'infini ? Quel rayon particulier permet de la placer sans calcul ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention à l'angle : le point \(B\) est au bord de la galaxie, à \(\epsilon/2\) de l'axe, et non à \(\epsilon\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Deux images sont distinguées par le capteur si elles ne tombent pas sur la même cellule.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\emph{Construction.} \(A\) et \(B\) sont à l'infini : les rayons issus de chacun arrivent parallèles entre eux. Par stigmatisme de la lentille dans les conditions de Gauss, chaque faisceau converge en un point du plan focal image.
+
+\begin{itemize}
+\tightlist
+\item
+  Les rayons issus de \(A\) sont parallèles à l'axe : ils convergent au foyer image, \(A'=F'\).
+\item
+  Les rayons issus de \(B\) sont inclinés de \(\epsilon/2\) : ils convergent au point \(B'\) du plan focal où arrive le rayon passant par le centre optique \(O\), qui n'est pas dévié.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q2-images-plan-focal.pdf}
+\caption*{Figure 1 --- images A′ et B′ dans le plan focal image : le faisceau de A
+converge en F′, celui de B, incliné de ε/2, en B′ sur le rayon non dévié
+passant par O}
+\end{figure}
+
+\emph{Distance entre les images.} Le rayon non dévié fait l'angle \(\epsilon/2\) avec l'axe ; dans les conditions de Gauss, cet angle est petit et
+
+\equationajustee{\boxed{A'B'=\frac{f'\epsilon}{2}}}
+
+\emph{Résolution du capteur.} Les deux images sont séparées si \(A'B'\geqslant a\), soit \(\epsilon\geqslant2a/f'\) :
+
+\equationajustee{\boxed{r_{\rm cap}=\frac{2a}{f'}}}
+
+\begin{methode}
+
+Image d'un point à l'infini dans la direction \(\alpha\) : point du plan focal image situé à la distance \(f'\alpha\) de l'axe (conditions de Gauss). Ce résultat sert dans toute la partie I : il convertit un angle en une position dans le plan d'observation.
+
+\end{methode}
+
+\begin{piege}
+
+Les objets étant à l'infini, la relation de conjugaison de Descartes avec \(\overline{OA}\) fini n'a pas de sens ici ; on raisonne directement sur les faisceaux parallèles.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Les constructions doivent respecter le stigmatisme. » et « Dans les calculs, les conditions de Gauss imposent l'approximation des petits angles. » Le jury précise dans ses commentaires généraux qu'il refuse les écritures en arc tangente d'un sinus et leurs variantes : on écrit directement \(f'\epsilon/2\).
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+On demande un ordre de grandeur : quel est le seul angle que l'on peut former avec \(\lambda_0\) et \(D\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour appliquer le critère de l'énoncé, convertir l'ouverture angulaire de la tache en une taille dans le plan focal, puis la comparer à \(A'B'\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\emph{Ouverture angulaire de la tache.} La diffraction par une pupille de taille \(D\) étale la lumière dans un cône de demi-angle
+
+\equationajustee{\boxed{\theta_{\rm diff}\sim\frac{\lambda_0}{D}}}
+
+Le calcul pour une pupille circulaire donne \(1{,}22\,\lambda_0/D\), préfacteur inutile en ordre de grandeur.
+
+\emph{Résolution.} La tache a dans le plan focal une taille caractéristique (rayon) \(f'\lambda_0/D\). Les deux points sont distingués si
+
+\equationajustee{\begin{aligned}
+\frac{f'\epsilon}{2}>\frac{f'\lambda_0}{D}
+&\iff\epsilon>\frac{2\lambda_0}{D}\\
+\boxed{r_{\rm diff}=\frac{2\lambda_0}{D}}&
+\end{aligned}}
+
+\begin{piege}
+
+Comparer directement un angle (\(\lambda_0/D\)) à une longueur (\(A'B'\)) est une faute d'homogénéité : passer par le plan focal (facteur \(f'\)) ou tout raisonner en angles.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « On n'exige ici que l'ordre de grandeur de l'angle de diffraction. » Inutile de démontrer le facteur \(1{,}22\) ; en revanche, annoncer la convention choisie (rayon ou diamètre de la tache) et la garder jusqu'à la question 4.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Pour séparer deux points, les deux critères doivent être satisfaits simultanément : la résolution effective est la plus défavorable des deux.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Laquelle des deux résolutions dépend de \(D\) ? À partir de quand cesse-t-elle d'être la plus contraignante ?
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+La résolution effective est la plus grande des deux :
+
+\equationajustee{r=\max\left(\frac{2a}{f'},\frac{2\lambda_0}{D}\right)}
+
+Quand \(D\) croît, \(r_{\rm diff}\) diminue ; dès que \(r_{\rm diff}<r_{\rm cap}\), c'est le capteur qui limite et la résolution n'augmente plus. Le diamètre limite vérifie \(r_{\rm diff}=r_{\rm cap}\) :
+
+\equationajustee{\boxed{D_{\max}=\frac{\lambda_0f'}{a}}}
+
+\emph{Application numérique.}
+
+\equationajustee{D_{\max}=\frac{2{,}0\times10^{-6}\times10}{1{,}0\times10^{-6}}\ \mathrm m=\underline{2\times10^{1}\ \mathrm m}}
+
+La résolution correspondante vaut \(2\times10^{-7}\) rad.
+
+\emph{Commentaire.} C'est l'ordre de grandeur des plus grands télescopes actuels (8 à 10 m) et en construction (39 m pour l'ELT) : capteur et optique sont dimensionnés l'un pour l'autre. Pour profiter d'un miroir plus grand, il faut réduire \(a\) ou allonger \(f'\). Au sol, la turbulence atmosphérique limite en pratique la résolution, sauf optique adaptative.
+
+\begin{piege}
+
+Ce n'est pas la somme des deux résolutions ni la plus petite des deux qui compte, mais la plus grande : il faut satisfaire les deux critères à la fois.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale une « Question souvent non traitée qui faisait la synthèse des trois précédentes. » Pour le commentaire, il attend « une phrase courte qui exprime une idée de physique, une conséquence (et non pas une banalité sous forme de truisme) ».
+
+\end{jury}
+
+\hypertarget{i.b-association-de-2-tuxe9lescopes}{%
+\subsection{I.B Association de 2 télescopes}\label{i.b-association-de-2-tuxe9lescopes}}
+
+Deux télescopes séparés d'une base \(b_0\) pointent dans la même direction ; leurs faisceaux sont recombinés. La sous-partie I.B.1 construit un modèle équivalent (des trous d'Young), la sous-partie I.B.2 l'exploite.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+La source est à l'infini : à quoi ressemblent ses surfaces d'onde au niveau du sol ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Tracer le plan d'onde passant par le télescope atteint en premier, et chercher sur l'autre rayon le chemin restant à parcourir. Un triangle rectangle d'hypoténuse \(b_0\) apparaît.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour la compensation : à quelle condition deux ondes issues d'un même point source peuvent-elles interférer ? Et la différence de marche reste-t-elle constante au cours d'une nuit ?
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+L'onde issue d'une source à l'infini est plane ; ses surfaces d'onde sont perpendiculaires à la direction de propagation, inclinée de \(\theta\) sur la verticale. Sur la figure 2, la direction d'observation penche du côté de \(T_1\), qui est donc atteint en premier.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q5-difference-de-marche.pdf}
+\caption*{Figure 2 --- onde plane reçue par T1 et T2 : T1 et K sont sur le même
+plan d'onde, la différence de marche est δ0 = KT2 = b0 sin θ}
+\end{figure}
+
+Le plan d'onde passant par \(T_1\) coupe en \(K\) le rayon qui va vers \(T_2\).
+
+Le triangle \(T_1KT_2\) est rectangle en \(K\) ; l'angle en \(T_2\), entre la base horizontale et le rayon, vaut \(\pi/2-\theta\).
+
+D'après le théorème de Malus, \(T_1\) et \(K\) sont sur le même plan d'onde, donc à même chemin optique de la source. La différence de marche est la longueur \(KT_2=b_0\cos(\pi/2-\theta)\) :
+
+\equationajustee{\boxed{\delta_0(\theta)=b_0\sin\theta}}
+
+Contrôle : au zénith (\(\theta=0\)), les deux télescopes sont sur le même plan d'onde et \(\delta_0=0\).
+
+\emph{Nécessité de la compensation.} Le but est d'\textbf{obtenir} des interférences. Critère du cours : deux ondes issues d'un même point source interfèrent si leur différence de marche reste inférieure à la longueur de cohérence \(\ell_c\). Or, pour \(b_0\) de quelques centaines de mètres, \(\delta_0\) est de l'ordre de la centaine de mètres.
+
+\begin{itemize}
+\tightlist
+\item
+  La lumière réelle n'est pas monochromatique : sa longueur de cohérence \(\ell_c=\lambda_0^2/\Delta\lambda\) reste au plus décimétrique, même avec un filtre étroit (\(4\) mm pour \(\Delta\lambda=1\) nm). Comme \(\delta_0\gg\ell_c\), les faisceaux ne peuvent pas interférer sans compensation.
+\item
+  Même dans le modèle monochromatique, \(\delta_0(\theta)\) change avec la rotation de la Terre, à une vitesse pouvant atteindre \(b_0\Omega_T\approx10^3\times7\times10^{-5}\approx7\ \mathrm{cm\cdot s^{-1}}\). Plusieurs dizaines de milliers de franges défileraient chaque seconde, et la figure serait brouillée pendant la pose.
+\end{itemize}
+
+Les miroirs mobiles (ligne à retard) doivent donc allonger le trajet du faisceau 1 de \(\delta_0(\theta)\), \textbf{à chaque instant}.
+
+\begin{methode}
+
+Différence de marche entre deux points recevant une onde plane : projeter le vecteur qui les joint sur la direction de propagation. Ici \(\delta_0=\overrightarrow{T_1T_2}\cdot\hat u\), avec \(\hat u\) unitaire de la direction de propagation.
+
+\end{methode}
+
+\begin{piege}
+
+Confondre \(\sin\theta\) et \(\cos\theta\) : le test du zénith (\(\delta_0(0)=0\)) tranche immédiatement.
+
+\end{piege}
+
+\begin{piege}
+
+Croire que la compensation sert à éviter les interférences, ou évoquer, sans fondement, « une dégradation du signal ou une perte de qualité ». Le rapport 2026 juge ces commentaires « quasiment tous des contre-sens : il s'agit d'obtenir des interférences et non pas de les éviter ».
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Le calcul doit être justifié par un raisonnement sur les plans d'ondes (théorème de Malus). » et « Le critère du cours portant sur la longueur de cohérence doit être cité. »
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+La distance entre deux droites parallèles se mesure sur une perpendiculaire commune.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Réutiliser le triangle de la question 5 : le côté cherché est l'autre côté de l'angle droit.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Les axes optiques sont deux droites parallèles, inclinées de \(\theta\) sur la verticale, passant par \(T_1\) et \(T_2\). La perpendiculaire commune menée de \(T_1\) coupe l'axe de \(T_2\) au point \(K\) de la question 5.
+
+Dans le triangle \(T_1KT_2\) rectangle en \(K\), d'hypoténuse \(b_0\), le segment \(T_1K\) fait l'angle \(\theta\) avec l'horizontale :
+
+\equationajustee{\boxed{b(\theta)=T_1K=b_0\cos\theta}}
+
+Contrôle : \(b^2+\delta_0^2=b_0^2\), et \(b(0)=b_0\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q6-base-equivalente.pdf}
+\caption*{Figure 3 --- base équivalente : distance T1K entre les axes optiques
+parallèles, b(θ) = b0 cos θ}
+\end{figure}
+
+\emph{Paramètre variable.} Les télescopes suivent l'astre au cours de la nuit. La Terre tournant, la direction de l'astre change dans le référentiel terrestre : \(\theta\) varie, et avec lui \(b(\theta)=b_0\cos\theta\), entre \(b_0\) (astre au zénith) et \(0\) (astre à l'horizon). La base équivalente est donc un paramètre que la rotation terrestre fait balayer, et que l'on va exploiter.
+
+\begin{methode}
+
+Ce qui compte pour un interféromètre n'est pas la distance au sol entre les télescopes, mais sa \textbf{projection perpendiculairement à la direction visée}. C'est elle qui joue le rôle de l'écartement des trous d'Young.
+
+\end{methode}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Les deux fentes sont-elles atteintes en phase par l'onde issue de \(A\) ? Toute la différence de marche naît alors après les fentes.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quels rayons convergent en \(M(x)\) après la lentille ? Tracer le plan d'onde perpendiculaire à ces rayons et utiliser le théorème de Malus.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour l'intensité, la formule de Fresnel avec deux ondes cohérentes de même intensité.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\emph{Construction.} \(A\) est à l'infini sur l'axe : les surfaces d'onde incidentes sont parallèles au plan des fentes, atteintes en phase.
+
+En \(M(x)\) convergent les rayons sortant des fentes parallèlement au rayon non dévié passant par \(O\) et \(M\), qui fait l'angle \(\alpha=x/f'\) avec l'axe (conditions de Gauss).
+
+Le plan d'onde perpendiculaire à ces rayons, mené par la fente \((2)\), coupe le rayon issu de \((1)\) en \(H\). Par le retour inverse et le théorème de Malus, les chemins optiques de ce plan d'onde jusqu'à \(M\) sont égaux. La différence de marche est donc la longueur \((1)H\), placée avant la lentille :
+
+\equationajustee{\begin{aligned}
+\delta_A&=(1)H=b(\theta)\,\alpha=\frac{b(\theta)\,x}{f'}\\
+\boxed{p_A(x)=\frac{b(\theta)\,x}{\lambda_0f'}}&
+\end{aligned}}
+
+\emph{Intensité.} Les deux ondes viennent du même point source : elles sont cohérentes. Chacune ayant l'intensité \(I_0\), la formule de Fresnel donne
+
+\equationajustee{\begin{aligned}
+I_A&=I_0+I_0+2\sqrt{I_0I_0}\cos(2\pi p_A)\\
+\boxed{I_A(x)=2I_0\left[1+\cos\left(\frac{2\pi b(\theta)x}{\lambda_0f'}\right)\right]}&
+\end{aligned}}
+
+\textbf{\(I_0\) est l'intensité que donnerait en \(M\) une seule voie (un seul télescope), l'autre étant masquée.}
+
+\emph{Allure.} Franges \textbf{rectilignes}, parallèles aux fentes, donc perpendiculaires à l'axe \(Ox\) qui joint les fentes. Elles sont équidistantes, d'interfrange \(\boxed{i=\dfrac{\lambda_0f'}{b(\theta)}}\), et de contraste \(C=1\), puisque \(I_{\min}=0\).
+
+\emph{Dépendance en \(b(\theta)\).} \textbf{Le contraste ne dépend pas de \(b(\theta)\)} (il vaut toujours 1) ; \textbf{l'interfrange est inversement proportionnel à \(b(\theta)\)}.
+
+\begin{piege}
+
+\(I_0\) n'est ni l'intensité maximale (\(4I_0\)) ni l'intensité moyenne (\(2I_0\)).
+
+\end{piege}
+
+\begin{piege}
+
+Calculer la différence de marche par la géométrie des trajets après la lentille. Le rapport 2026 explique pourquoi c'est faux : « Un calcul géométrique de la différence de marche n'est pas possible lorsqu'une lentille est mise en œuvre », car la traversée du verre ajoute un retard qui dépend du point de passage. Seul le théorème de Malus place correctement la différence de marche sur la figure.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Le jury attendait des éléments très précis pour accorder les points à chaque sous-question. » Sur l'allure : « Les franges ne sont pas des bandes ni des traits ni des taches ni circulaires ou hyperboliques, elles sont rectilignes, et orientées perpendiculairement à l'axe des trous d'Young. » Le jury rappelle aussi que parler de l'intensité d'un rayon n'a pas de sens.
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Pour \(B\), l'onde arrive inclinée : une différence de marche existe déjà à l'entrée des fentes, calculée comme à la question 5. Refaire la construction pour savoir si elle s'ajoute à celle de la question 7 ou s'en retranche.
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(A\) et \(B\) sont deux points distincts de la galaxie : leurs ondes peuvent-elles interférer entre elles ? Qu'additionne-t-on alors ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour le brouillage, transformer la somme des deux cosinus en produit et isoler le facteur indépendant de \(x\).
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\emph{Ordre d'interférence.} L'onde issue de \(B\) arrive inclinée de \(\epsilon/2\), du côté de la fente \((1)\) (figure 3(b)). Son plan d'onde atteint la fente \((1)\) en premier : avant les fentes, le trajet vers \((2)\) est plus long de \(b(\theta)\epsilon/2\).
+
+Après les fentes, le trajet par \((1)\) reste plus long de \(b(\theta)x/f'\). Les deux contributions se retranchent :
+
+\equationajustee{\boxed{p_B(x)=\frac{b(\theta)}{\lambda_0}\left(\frac{x}{f'}-\frac{\epsilon}{2}\right)}}
+
+La frange d'ordre 0 de \(B\) est en \(x=f'\epsilon/2\), sur l'image géométrique de \(B\) : la figure de \(B\) est celle de \(A\) translatée de \(f'\epsilon/2\).
+
+L'énoncé écrit ensuite \(\mathrm dI_{\rm gal}\) avec le terme \(x/f'+\alpha\), l'angle \(\alpha\) y étant compté dans l'autre sens (\(B\) correspond à \(\alpha=-\epsilon/2\)). Ce choix d'orientation ne change aucun contraste.
+
+\emph{Superposition.} \(A\) et \(B\) émettent indépendamment : le déphasage entre leurs ondes fluctue aléatoirement sur des durées très courtes devant le temps de réponse du détecteur, et le terme d'interférence croisé a une moyenne nulle. \textbf{Les sources sont incohérentes : on ajoute les intensités}, d'où la superposition des deux figures.
+
+Avec \(\Phi=2\pi b(\theta)x/(\lambda_0f')\) et \(\psi=\pi b(\theta)\epsilon/(2\lambda_0)\) :
+
+\equationajustee{\begin{aligned}
+I&=2I_0\left[2+\cos\Phi+\cos(\Phi-2\psi)\right]\\
+&=4I_0\left[1+\cos\psi\,\cos(\Phi-\psi)\right]
+\end{aligned}}
+
+L'interfrange est inchangé ; le contraste vaut \(C=\left|\cos\psi\right|\).
+
+\emph{Brouillage.} \(C=0\) quand les deux systèmes sont décalés d'un demi-interfrange :
+
+\equationajustee{\begin{aligned}
+\frac{\pi b(\theta)\epsilon}{2\lambda_0}&=\frac\pi2+k\pi\\
+\boxed{b(\theta)=(2k+1)\frac{\lambda_0}{\epsilon},\ k\in\mathbb N}&
+\end{aligned}}
+
+\begin{methode}
+
+Critère de brouillage pour deux sources ponctuelles incohérentes de même intensité : les franges disparaissent quand la différence des ordres d'interférence, \(p_A-p_B\), est demi-entière (franges brillantes de l'une sur les franges sombres de l'autre). Pour une source étendue, le critère est différent : il porte sur la variation d'ordre d'environ 1 sur l'étendue de la source, comme le montrera la question 12.
+
+\end{methode}
+
+\begin{piege}
+
+Oublier la différence de marche à l'entrée des fentes donne \(p_B=p_A\) : la figure ne serait jamais brouillée et toute la suite tomberait.
+
+\end{piege}
+
+\begin{piege}
+
+Justifier l'addition des intensités par le « théorème de superposition ». Rapport 2026 : « Ce n'est pas le théorème de superposition qui permet de dire qu'on additionne les intensités. Incohérence, asynchrone et déphasés sont des notions différentes. » La raison est l'incohérence des deux sources.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Sans construction, il est impossible de valider la réponse. » Le signe devait être cohérent avec la nouvelle construction. Le jury note aussi que certains candidats retrouvent le bon critère de brouillage par le calcul du contraste à la question 9 sans corriger leur énoncé faux de la question 8.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Choisir l'entier qui minimise la famille obtenue à la question 8.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la mesure : quel paramètre varie naturellement au cours de l'observation, et que faut-il repérer pour remonter à \(\epsilon\) sans ambiguïté sur l'entier ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+La plus petite valeur correspond à \(k=0\) :
+
+\equationajustee{\boxed{b_{\min}=\frac{\lambda_0}{\epsilon}}}
+
+\emph{Mesure.} On suit le contraste des franges pendant que \(b(\theta)\) varie (rotation terrestre, ou changement de paire de télescopes), en partant des petites bases. On note la base \(b^\star\) de la \textbf{première} disparition des franges : alors \(\epsilon=\lambda_0/b^\star\), en radians.
+
+La distance \(d\) étant connue et \(\epsilon\ll1\), le diamètre de la galaxie vaut
+
+\equationajustee{\boxed{L=\epsilon d=\frac{\lambda_0d}{b^\star}}}
+
+\begin{piege}
+
+Une extinction quelconque ne suffit pas : l'entier \(k\) serait inconnu. C'est la première qui donne \(\epsilon\) sans ambiguïté.
+
+\end{piege}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+La mesure de la question 9 n'est possible que si la base critique est accessible. Que cela impose-t-il à \(\epsilon\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'équivalence, comparer avec la forme de la résolution d'un télescope unique obtenue à la question 3.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\(b(\theta)\) prend les valeurs de \([0,b_0]\). L'extinction n'est observable que si \(\lambda_0/\epsilon\leqslant b_0\), c'est-à-dire \(\epsilon\geqslant\lambda_0/b_0\) :
+
+\equationajustee{\boxed{r_{\rm double}=\frac{\lambda_0}{b_0}}}
+
+\emph{Équivalence.} Un télescope unique de diamètre \(D\) a une résolution \(\sim\lambda_0/D\) (question 3, au facteur 2 de convention près). En remplaçant \(D\) par \(b_0\), on retrouve \(r_{\rm double}\) : pour la résolution angulaire, le télescope double équivaut à un télescope unique de diamètre \(b_0\).
+
+\emph{Application numérique.}
+
+\equationajustee{r_{\rm double}=\frac{2{,}0\times10^{-6}}{10^3}=\underline{2\times10^{-9}\ \mathrm{rad}}}
+
+C'est cent fois mieux que le télescope de \(2\times10^1\) m de la question 4.
+
+\begin{jury}
+
+Rapport 2026 : « Le résultat d'un calcul de petit angle est en radians et non en degrés. » Le jury tient l'unité radian pour indispensable, même sans dimension. L'équivalence n'est vraie qu'en ordre de grandeur : le dire plutôt que forcer une égalité stricte.
+
+\end{jury}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Résolution et sensibilité ne dépendent pas de la même caractéristique de la pupille. De quoi dépend la quantité de lumière recueillie ?
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+La puissance recueillie est proportionnelle à la \textbf{surface collectrice}.
+
+\begin{itemize}
+\tightlist
+\item
+  Un télescope de diamètre \(b_0\) collecte sur \(\pi b_0^2/4\).
+\item
+  Le télescope double ne collecte que sur ses deux pupilles, \(2\pi D^2/4\).
+\end{itemize}
+
+Le rapport \(2D^2/b_0^2\) vaut environ \(2\times10^{-4}\) pour \(D=10\) m et \(b_0=1\) km. \textbf{Le télescope double a la résolution d'un télescope de diamètre \(b_0\), mais pas sa sensibilité} : un objet peu lumineux ne fournit pas assez de flux pour être détecté.
+
+\begin{methode}
+
+Résolution : liée à l'\textbf{étendue} de la pupille (sa plus grande dimension). Sensibilité : liée à sa \textbf{surface}. L'interférométrie gagne la première, pas la seconde.
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Les étoiles de la galaxie sont des sources incohérentes entre elles. Quelles sont les bornes de \(\alpha\), sachant que le centre est sur l'axe et que la galaxie est vue sous l'angle \(\epsilon\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'intégrale du cosinus fait apparaître une différence de deux sinus : utiliser la formule du formulaire et reconnaître un sinus cardinal.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour distinguer galaxie et étoile double, comparer les deux fonctions contraste au-delà de leur première annulation.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(\alpha\) décrit \([-\epsilon/2,\epsilon/2]\) et les intensités s'ajoutent. On pose \(\kappa=2\pi b(\theta)/\lambda_0\) et \(\Phi=\kappa x/f'\) :
+
+\equationajustee{\begin{aligned}
+I_{\rm gal}&=\Gamma\int_{-\epsilon/2}^{\epsilon/2}\left[1+\cos(\Phi+\kappa\alpha)\right]\mathrm d\alpha\\
+&=\Gamma\epsilon+\frac\Gamma\kappa\left[\sin\left(\Phi+\frac{\kappa\epsilon}2\right)-\sin\left(\Phi-\frac{\kappa\epsilon}2\right)\right]
+\end{aligned}}
+
+La formule \(\sin p-\sin q=2\sin\frac{p-q}2\cos\frac{p+q}2\) transforme le second terme, avec \(\kappa\epsilon/2=\pi b(\theta)\epsilon/\lambda_0\) :
+
+\equationajustee{\begin{aligned}
+\frac\Gamma\kappa\left[\dots\right]&=\frac{2\Gamma}{\kappa}\sin\frac{\kappa\epsilon}2\cos\Phi\\
+&=\Gamma\epsilon\,\mathrm{sinc}\left(\frac{\kappa\epsilon}2\right)\cos\Phi
+\end{aligned}}
+
+\equationajustee{\boxed{I_{\rm gal}(x)=\Gamma\epsilon\left[1+\mathrm{sinc}\left(\frac{\pi b(\theta)\epsilon}{\lambda_0}\right)\cos\left(\frac{2\pi b(\theta)x}{\lambda_0f'}\right)\right]}}
+
+Ce résultat vaut aussi pour \(b=0\), puisque \(\mathrm{sinc}(0)=1\).
+
+\emph{Contraste.}
+
+\equationajustee{\boxed{C=\left|\mathrm{sinc}\left(\frac{\pi b(\theta)\epsilon}{\lambda_0}\right)\right|}}
+
+\emph{Allure} (en fonction de \(b(\theta)\)) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Point de la courbe
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(b(\theta)\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(C\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+origine & \(0\) & \(1\) \\
+première annulation & \(\lambda_0/\epsilon\) & \(0\) \\
+premier lobe secondaire & \(\approx1{,}43\,\lambda_0/\epsilon\) & \(0{,}22\) \\
+deuxième annulation & \(2\lambda_0/\epsilon\) & \(0\) \\
+deuxième lobe secondaire & \(\approx2{,}46\,\lambda_0/\epsilon\) & \(0{,}13\) \\
+troisième annulation & \(3\lambda_0/\epsilon\) & \(0\) \\
+\end{longtable}
+
+Le contraste décroît de 1 à 0 entre \(b=0\) et \(b=\lambda_0/\epsilon\), puis ne présente plus que des lobes de hauteur décroissante.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q12-contraste-sinc.pdf}
+\caption*{Figure 4 --- contraste en fonction de b(θ) pour la galaxie,
+\textbar sinc\textbar, et pour une étoile double, \textbar cos\textbar{}
+: même première annulation en λ0/ε}
+\end{figure}
+
+\emph{Commentaire.} Quand la base augmente, les figures dues aux différents points de la galaxie se décalent les unes par rapport aux autres et se brouillent. La première annulation, en \(b=\lambda_0/\epsilon\), coïncide avec celle du modèle à deux points : sa mesure donne \(\epsilon\).
+
+\emph{Galaxie ou étoile double.} Pour deux points séparés de \(\epsilon/2\), le contraste \(\left|\cos\left(\pi b\epsilon/(2\lambda_0)\right)\right|\) est \textbf{périodique} en \(b\).
+
+Il revient à 1 pour \(b=2\lambda_0/\epsilon\), \(4\lambda_0/\epsilon\), etc. Pour la galaxie, \(C\) reste inférieur à \(0{,}22\) après la première annulation.
+
+\textbf{Même première extinction ; c'est le comportement au-delà (retour à 1 ou lobes faibles décroissants) qui distingue l'étoile double de l'objet étendu.}
+
+\begin{methode}
+
+Source étendue incohérente : on somme les intensités élémentaires sur l'étendue angulaire. Le contraste est alors, au module près, la moyenne de \(\cos\) de la phase sur la source, ce qui donne un sinus cardinal pour une source uniforme.
+
+\end{methode}
+
+\begin{piege}
+
+Le contraste est positif par définition : écrire \(C=|\mathrm{sinc}(\cdot)|\). Un sinus cardinal négatif correspond simplement à une inversion des franges brillantes et sombres.
+
+\end{piege}
+
+\begin{piege}
+
+Perdre un facteur 2 dans la formule \(\sin p-\sin q\). Le rapport 2026 note que les calculs de contraste sont souvent faux « par mauvaise application des formules d'addition en trigonométrie (les facteurs 2 et 1/2 sont mal gérés) ». Contrôle immédiat : pour \(\epsilon\to0\), on doit retrouver \(C=1\).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Le calcul de l'intégrale (pourtant posée dans l'énoncé) est souvent fantaisiste : une intégrale possède des bornes que le contexte impose. » Ici, les bornes sont \(\pm\epsilon/2\) parce que le centre de la galaxie est sur l'axe. Le graphe doit avoir ses axes légendés.
+
+\end{jury}
+
+\hypertarget{i.c-association-de-n-tuxe9lescopes}{%
+\subsection{\texorpdfstring{I.C Association de \(N\) télescopes}{I.C Association de N télescopes}}\label{i.c-association-de-n-tuxe9lescopes}}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Le dispositif équivaut à \(N\) fentes équidistantes devant une lentille. Écrire la condition de l'énoncé (voisines en phase) en fonction de \(x\) et de la direction de la source.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que deviennent les maxima quand \(N\) grandit : leur position change-t-elle ? leur largeur ? Relier la largeur angulaire d'un pic à la résolution.
+
+\end{indication}
+
+\begin{indication}{3}
+
+« Dans quelle mesure » invite à dire aussi ce que l'analogie ne restitue pas.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\emph{Dispositif.} \(N\) fentes régulièrement espacées de \(b(\theta)\) devant la lentille de focale \(f'\), observation dans le plan focal image (comme la figure 3, avec \(N\) ouvertures).
+
+\emph{Condition.} Pour une source dans la direction \(\alpha\) (orientation de l'énoncé), deux voies voisines présentent en \(M(x)\) la différence de marche \(b(x/f'+\alpha)\). L'intensité n'est non nulle (pour \(N\) grand) que si
+
+\equationajustee{\begin{aligned}
+\frac{b(\theta)}{\lambda_0}\left(\frac{x}{f'}+\alpha\right)&=p\in\mathbb Z\\
+x&=f'\left(p\frac{\lambda_0}{b(\theta)}-\alpha\right)
+\end{aligned}}
+
+Hors de ces positions, le déphasage entre la première et la dernière voie atteint \(2\pi\) pour un écart \(N\) fois plus petit qu'avec deux voies : les \(N\) ondes se répartissent sur tout le cercle des phases et s'annulent. Les maxima gardent l'espacement \(\lambda_0f'/b\) mais deviennent des pics fins, de largeur angulaire \(\sim\lambda_0/(Nb)\).
+
+\emph{Télescope de diamètre infini.} La position des pics dépend de la direction \(\alpha\) : deux sources séparées de plus de \(\lambda_0/(Nb)\) donnent des pics distincts. Cette résolution est celle d'un télescope de diamètre \(\sim Nb\), qui tend vers l'infini avec \(N\) : l'image d'un point source devient un point.
+
+\textbf{Tout se passe comme pour un télescope de diamètre infiniment grand, mais seulement pour la résolution, et avec des limites :}
+
+\begin{itemize}
+\tightlist
+\item
+  les pics d'une même source se répètent avec la période angulaire \(\lambda_0/b\) ; deux sources dont les directions diffèrent d'un multiple de \(\lambda_0/b\) sont confondues, l'analogie ne vaut que dans un champ de largeur \(\lambda_0/b\) ;
+\item
+  la surface collectrice reste \(N\pi D^2/4\) (question 11) ;
+\item
+  \(N\) est fini en pratique.
+\end{itemize}
+
+\begin{methode}
+
+Pour \(N\) ondes de phases en progression arithmétique, le raisonnement qualitatif suffit : positions des maxima fixées par l'accord de phase entre voisines, largeur des pics divisée par \(N\). Le programme n'exige pas de calcul de la somme.
+
+\end{methode}
+
+\hypertarget{partie-ii-quelques-propriuxe9tuxe9s-galactiques}{%
+\section{Partie II --- Quelques propriétés galactiques}\label{partie-ii-quelques-propriuxe9tuxe9s-galactiques}}
+
+La partie II pèse la galaxie par sa dynamique : orbite képlérienne autour du trou noir, champ d'un bulbe sphérique par le théorème de Gauss, courbe de rotation incompatible avec l'observation, d'où un halo de matière noire. Elle s'achève sur la croissance en masse des galaxies, à partir de lectures de graphes en échelle logarithmique.
+
+\hypertarget{ii.a-ruxe9partition-de-masse}{%
+\subsection{II.A Répartition de masse}\label{ii.a-ruxe9partition-de-masse}}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+La force est centrale : que dit la projection du principe fondamental de la dynamique sur la direction orthoradiale ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La projection radiale relie \(v^2/r\) à l'attraction. Attention aux conversions : kiloparsec en mètres, masse du Soleil en kilogrammes.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\emph{Uniformité.} Dans le référentiel galactique supposé galiléen, en coordonnées polaires de centre \(T\), l'accélération du mouvement circulaire s'écrit
+
+\equationajustee{\vec a=-r\dot\varphi^2\hat u_r+r\ddot\varphi\,\hat u_\varphi}
+
+La force \(\vec F=-\dfrac{GM_TM_\odot}{r^2}\hat u_r\) est centrale. La projection du principe fondamental sur \(\hat u_\varphi\) donne \(r\ddot\varphi=0\) : \(\dot\varphi\) est constant, et la norme \(v=r|\dot\varphi|\) aussi. \textbf{Le mouvement est uniforme.}
+
+\emph{Vitesse et période.} La projection sur \(\hat u_r\) donne \(v^2/r=GM_T/r^2\), donc
+
+\equationajustee{\boxed{v(r)=\sqrt{\frac{GM_T}{r}}}}
+
+\equationajustee{\boxed{\tau=\frac{2\pi r}{v}=2\pi\sqrt{\frac{r^3}{GM_T}}}}
+
+\emph{Application numérique.}
+
+\equationajustee{\begin{aligned}
+r&=8\times10^3\times3\times10^{16}\ \mathrm m=2{,}4\times10^{20}\ \mathrm m\\
+M_T&=8\times10^{36}\ \mathrm{kg}\\
+GM_T&\approx5{,}4\times10^{26}\ \mathrm{m^3\cdot s^{-2}}\\
+v&=\sqrt{\frac{5{,}4\times10^{26}}{2{,}4\times10^{20}}}\approx\sqrt{2{,}2\times10^6}\ \mathrm{m\cdot s^{-1}}\\
+v&\approx\underline{1\times10^{3}\ \mathrm{m\cdot s^{-1}}}
+\end{aligned}}
+
+\textbf{Non} : c'est plus de cent fois moins que les \(2\times10^5\ \mathrm{m\cdot s^{-1}}\) observés. Il faudrait une masse intérieure \(v^2r/G\approx7\times10^{10}M_\odot\), environ \(2\times10^4\) fois celle du trou noir.
+
+\begin{piege}
+
+Uniforme ne veut pas dire rectiligne uniforme : l'accélération centripète n'est pas nulle. On peut aussi conclure par la puissance de la force, nulle car \(\vec F\) est radiale et \(\vec v\) orthoradiale.
+
+\end{piege}
+
+\begin{piege}
+
+Invoquer la seule conservation du moment cinétique. Rapport 2026 : « Le moment cinétique constant ne suffit pas à lui seul à démontrer le caractère uniforme du mouvement. » Il faut ajouter que \(r\) est constant, ou projeter le principe fondamental comme ci-dessus.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève « Beaucoup de confusions » entre la norme de la vitesse constante et le vecteur vitesse constant, et demande d'annoncer la méthode employée : « on ne confond pas les coordonnées polaires et le repère de Frenet ». Il conseille de faire les calculs au brouillon pour éviter les développements « souvent indigestes ».
+
+\end{jury}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Partir des deux lois de force entre objets ponctuels, en déduire les deux champs, puis établir le dictionnaire de correspondance.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Bien garder le signe : l'une des interactions peut être répulsive, l'autre jamais.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\emph{Forces.} On place en \(O\) une charge \(q_1\) ou une masse \(m_1\), et en \(M\) une charge \(q_2\) ou une masse \(m_2\).
+
+La force exercée sur \(M\) vaut, selon le cas,
+
+\equationajustee{\vec F_e=\frac{q_1q_2}{4\pi\varepsilon_0r^2}\hat u_r}
+
+\equationajustee{\vec F_g=-\frac{Gm_1m_2}{r^2}\hat u_r}
+
+\emph{Champs.} Avec \(\vec F_e=q_2\vec E\) et \(\vec F_g=m_2\vec g\), les champs créés par la source en \(O\) sont
+
+\equationajustee{\vec E=\frac{q_1}{4\pi\varepsilon_0r^2}\hat u_r}
+
+\equationajustee{\vec g=-\frac{Gm_1}{r^2}\hat u_r}
+
+Les deux champs sont radiaux, en \(1/r^2\), et obéissent au principe de superposition. On passe de l'un à l'autre par la correspondance
+
+\equationajustee{q\longleftrightarrow m}
+
+\equationajustee{\frac1{4\pi\varepsilon_0}\longleftrightarrow-G,\ \text{soit}\ \frac1{\varepsilon_0}\longleftrightarrow-4\pi G}
+
+Le théorème de Gauss électrostatique
+
+\equationajustee{\oint\!\!\!\!\oint_S\vec E\cdot\mathrm d\vec S=\frac{Q_{\rm int}}{\varepsilon_0}}
+
+ne repose que sur ces propriétés ; il se transpose en
+
+\equationajustee{\boxed{\oint\!\!\!\!\oint_S\vec g\cdot\mathrm d\vec S=-4\pi GM_{\rm int}}}
+
+\(M_{\rm int}\) étant la masse intérieure à \(S\). Le signe \(-\) traduit le caractère toujours attractif de la gravitation.
+
+\begin{methode}
+
+Analogie électrostatique-\allowbreak{}gravitation : \(q\to m\), \(\dfrac{1}{4\pi\varepsilon_0}\to-G\). Tout résultat d'électrostatique fondé sur Gauss (champ d'une boule, d'une coquille, d'un plan) se transpose immédiatement.
+
+\end{methode}
+
+\begin{jury}
+
+Rapport 2026 : « L'analogie doit être entièrement explicitée et partir de l'expression des forces. Analogie n'est pas identité, on ne veut pas de signe égal. » D'où les flèches de correspondance, et non une égalité entre \(1/(4\pi\varepsilon_0)\) et \(-G\).
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Étudier les invariances (de quelles variables dépend la norme du champ ?) puis les symétries (quelle est sa direction ?) de la distribution.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Surface de Gauss : sphère de centre \(T\) passant par \(M\). La masse intérieure n'a pas la même expression dans le bulbe et à l'extérieur.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour Kepler : à quel champ connu ressemble le champ à l'extérieur du bulbe ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\emph{Distribution.} Bulbe homogène de centre \(T\), de masse \(M_b=\frac43\pi R_b^3\mu_0\) ; disque assimilé au vide. On repère \(M\) par ses coordonnées sphériques \((r,\theta,\varphi)\) de centre \(T\).
+
+\emph{Invariances.} La distribution est invariante par toute rotation autour d'un axe passant par \(T\) : la norme du champ ne dépend ni de \(\theta\) ni de \(\varphi\), seulement de \(r\).
+
+\emph{Symétries.} Les plans \((M,\hat u_r,\hat u_\theta)\) et \((M,\hat u_r,\hat u_\varphi)\) contiennent \(T\) : ce sont des plans de symétrie de la distribution. Le champ en \(M\) appartient à leur intersection, la droite \((TM)\) :
+
+\equationajustee{\vec g(M)=g(r)\,\hat u_r}
+
+\emph{Gauss} sur la sphère de centre \(T\) et de rayon \(r\), où \(g(r)\) est uniforme :
+
+\equationajustee{4\pi r^2g(r)=-4\pi GM_{\rm int}(r)}
+
+\begin{itemize}
+\tightlist
+\item
+  \(r\leqslant R_b\) : \(M_{\rm int}=M_br^3/R_b^3\), \(\boxed{\vec g=-\dfrac{GM_b}{R_b^3}\,r\,\hat u_r}\).
+\item
+  \(R_b\leqslant r\leqslant R_d\) : \(M_{\rm int}=M_b\), \(\boxed{\vec g=-\dfrac{GM_b}{r^2}\hat u_r}\).
+\end{itemize}
+
+\emph{Vitesse.} La projection radiale du principe fondamental donne \(v_0^2/r=|g|\) :
+
+\equationajustee{\boxed{v_0=r\sqrt{\frac{GM_b}{R_b^3}}\quad(r\leqslant R_b)}}
+
+\equationajustee{\boxed{v_0=\sqrt{\frac{GM_b}{r}}\quad(R_b\leqslant r\leqslant R_d)}}
+
+\emph{Allure.} Croissance linéaire de 0 à \(v_{\max}=\sqrt{GM_b/R_b}\) en \(R_b\) (rotation d'ensemble du bulbe), puis décroissance en \(1/\sqrt r\) jusqu'à \(R_d\). La courbe est continue, avec un point anguleux en \(R_b\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q16-courbe-vitesse.pdf}
+\caption*{Figure 5 --- allure de v0(r) : linéaire dans le bulbe, maximale en Rb,
+puis en 1/√r dans le disque képlérien}
+\end{figure}
+
+\emph{Kepler.} Pour \(R_b\leqslant r\leqslant R_d\), le champ est celui d'une masse ponctuelle \(M_b\) en \(T\) : \textbf{le disque suit les lois de Kepler} (\(\tau^2/r^3=4\pi^2/(GM_b)\)). Dans le bulbe, le champ est proportionnel à \(r\) : la période est la même pour tous les rayons, la troisième loi de Kepler n'y est pas vérifiée.
+
+\begin{piege}
+
+Prendre \(M_{\rm int}=M_b\) aussi dans le bulbe fait disparaître la partie linéaire et le maximum de la courbe.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « L'application du théorème de Gauss doit (bien évidemment) être précédée de l'analyse des symétries et invariances. Invoquer la symétrie sphérique ne suffit pas, on attend le développement complet. » Pour la courbe, le jury exige le graphe : « Il faut savoir représenter correctement l'allure de fonctions élémentaires, légender les axes, présenter convenablement un graphe. »
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Écrire le flux de deux manières pour un volume quelconque : par le théorème de Gauss (masse intérieure) et par Green-Ostrogradski.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans le halo, que donne le principe fondamental pour une étoile en mouvement circulaire de vitesse \(v_1\) ? Utiliser ensuite la divergence en coordonnées sphériques du formulaire.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour l'analyse dimensionnelle, poser \(\mu=k\,v_1^aG^br^c\) et résoudre le système sur les dimensions de masse, longueur et temps.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\emph{Forme locale.} Pour tout volume \(V\) de frontière \(S\) :
+
+\equationajustee{\begin{aligned}
+\oint\!\!\!\!\oint_S\vec g\cdot\mathrm d\vec S&=-4\pi G\iiint_V\mu\,\mathrm dV\\
+\oint\!\!\!\!\oint_S\vec g\cdot\mathrm d\vec S&=\iiint_V\mathrm{div}\,\vec g\,\mathrm dV
+\end{aligned}}
+
+L'égalité valant pour tout \(V\), les intégrandes (continus) sont égaux :
+
+\equationajustee{\boxed{\mathrm{div}\,\vec g=-4\pi G\mu}}
+
+\emph{Halo.} Mouvement circulaire de vitesse \(v_1\) : \(\vec g=-\dfrac{v_1^2}{r}\hat u_r\). Alors
+
+\equationajustee{\begin{aligned}
+\mathrm{div}\,\vec g&=\frac1{r^2}\frac{\mathrm d(r^2g_r)}{\mathrm dr}\\
+&=\frac{1}{r^2}\frac{\mathrm d(-v_1^2r)}{\mathrm dr}\\
+&=-\frac{v_1^2}{r^2}
+\end{aligned}}
+
+\equationajustee{\boxed{\mu(r)=\frac{v_1^2}{4\pi Gr^2}}}
+
+\emph{Analyse dimensionnelle.} Dimensions : \([\mu]=\mathrm{M\,L^{-3}}\), \([v_1]=\mathrm{L\,T^{-1}}\), \([G]=\mathrm{M^{-1}L^3T^{-2}}\) et \([r]=\mathrm L\). Avec \(\mu=k\,v_1^aG^br^c\) :
+
+\equationajustee{\begin{aligned}
+\text{masse :}&\quad-b=1\\
+\text{temps :}&\quad-a-2b=0\\
+\text{longueur :}&\quad a+3b+c=-3
+\end{aligned}}
+
+D'où \(b=-1\), \(a=2\), \(c=-2\) et \(\mu=k\,v_1^2/(Gr^2)\). On retrouve le résultat, avec \(k=1/(4\pi)\) que l'analyse dimensionnelle ne peut pas fournir.
+
+Remarque : avec un bulbe sans effet, le théorème de Gauss intégral appliqué à cette densité donnerait \(g=-v_1^2(r-R_b)/r^2\). Ce champ n'est égal à \(-v_1^2/r\) que pour \(r\gg R_b\) : le modèle de l'énoncé n'est rigoureusement cohérent que loin du bulbe.
+
+\begin{piege}
+
+La divergence d'un champ radial en sphériques n'est pas \(\partial g_r/\partial r\) : il faut le facteur \(r^2\) à l'intérieur de la dérivée. Sans lui, ou avec \(g_r>0\), on trouve une masse volumique négative, ce qu'un contrôle de signe détecte immédiatement.
+
+\end{piege}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Découper le halo en coquilles sphériques : le facteur \(r^2\) de l'élément de volume se simplifie avec \(\mu(r)\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le pourcentage se rapporte à la masse totale de la galaxie, pas à la seule masse visible.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\equationajustee{\begin{aligned}
+M_h&=\int_{R_b}^{R_h}\frac{v_1^2}{4\pi Gr^2}\,4\pi r^2\,\mathrm dr\\
+\boxed{M_h=\frac{v_1^2(R_h-R_b)}{G}}&
+\end{aligned}}
+
+\emph{Application numérique.} \(v_1^2=4\times10^{10}\ \mathrm{m^2\cdot s^{-2}}\) et \(R_h-R_b=98\ \mathrm{kpc}\approx3\times10^{21}\) m :
+
+\equationajustee{\begin{aligned}
+M_h&\approx\frac{4\times10^{10}\times3\times10^{21}}{6{,}7\times10^{-11}}\ \mathrm{kg}\approx\underline{2\times10^{42}\ \mathrm{kg}}\\
+M_h&\approx\underline{9\times10^{11}\,M_\odot}
+\end{aligned}}
+
+\emph{Proportion.} Masse visible : \(M_b=2\times10^{11}M_\odot\) (trou noir négligeable). La fraction de matière noire vaut
+
+\equationajustee{\frac{M_h}{M_h+M_b}\approx\frac9{11}\approx0{,}8}
+
+\textbf{La matière noire représente environ 80 \% de la masse de la galaxie.}
+
+\begin{methode}
+
+Masse d'une distribution à symétrie sphérique : \(M=\displaystyle\int4\pi r^2\mu(r)\,\mathrm dr\). Une densité en \(1/r^2\) donne une masse proportionnelle au rayon, d'où le plateau de la courbe de rotation.
+
+\end{methode}
+
+\begin{piege}
+
+Multiplier \(\mu\) par le volume du halo. Le rapport 2026 rappelle la différence entre multiplier par le volume et intégrer sur le volume, « notamment quand la masse volumique est variable ». Il note une « A.N. peu traitée et souvent fausse ».
+
+\end{piege}
+
+\hypertarget{ii.b-formation-duxe9toiles}{%
+\subsection{II.B Formation d'étoiles}\label{ii.b-formation-duxe9toiles}}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Passer au logarithme décimal : quelle forme prend \(\dot m=\alpha_0m^{\beta_0}\) dans les axes de la figure 6 ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lire deux points éloignés de la droite pour la pente, puis calculer l'ordonnée en \(\log m=0\), qui est hors du graphe.
+
+\end{indication}
+
+\begin{indication}{3}
+
+L'efficacité de la formation d'étoiles se juge par rapport à la masse déjà présente.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\(\log\dot m=\log\alpha_0+\beta_0\log m\) : droite de pente \(\beta_0\). On lit \(\log\dot m=-0{,}8\) en \(\log m=9{,}0\) et \(1{,}6\) en \(\log m=12{,}0\) :
+
+\equationajustee{\begin{aligned}
+\beta_0&=\frac{1{,}6+0{,}8}{3{,}0}=0{,}8\\
+\log\alpha_0&=-0{,}8-0{,}8\times9{,}0=-8{,}0
+\end{aligned}}
+
+\equationajustee{\boxed{\frac{\mathrm dm}{\mathrm dt}=\alpha_0m^{\beta_0}}}
+
+avec
+
+\equationajustee{\boxed{\alpha_0=10^{-8}}}
+
+\equationajustee{\boxed{\beta_0=0{,}8}}
+
+(\(m\) en \(M_\odot\), \(\dot m\) en \(M_\odot\)/an.) Contrôle : en \(\log m=10\), \(\log\dot m=0\), conforme à la figure.
+
+\emph{Efficacité.} Le taux spécifique \(\dot m/m=\alpha_0m^{\beta_0-1}=\alpha_0m^{-0{,}2}\) décroît avec \(m\) car \(\beta_0<1\) : \textbf{les galaxies peu massives forment chaque année une plus grande fraction de leur masse en étoiles.}
+
+\emph{Inversion.} Il faudrait que \(\dot m/m\) croisse avec \(m\) :
+
+\equationajustee{\boxed{\beta_0>1}}
+
+\begin{piege}
+
+Comparer les \(\dot m\) conduit à la conclusion inverse (les galaxies massives forment plus d'étoiles en valeur absolue) : c'est le taux spécifique \(\dot m/m\) qui mesure l'efficacité.
+
+\end{piege}
+
+\begin{piege}
+
+Confondre logarithme décimal et népérien en passant de \(\log\alpha_0=-8\) à \(\alpha_0\) : les axes sont en \(\log\) décimal, donc \(\alpha_0=10^{-8}\) et non \(\mathrm e^{-8}\). Le rapport 2026 le rappelle : « Un logarithme décimal n'est pas népérien. »
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « La question 19 demandait les valeurs numériques des deux coefficients d'un ajustement affine donné sur un graphique : nous avons rarement eu les deux valeurs correctes. » Lire deux points éloignés sur la droite, pas sur le nuage de points.
+
+\end{jury}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Équation à variables séparables : séparer, intégrer entre \(0\) et \(t\), puis isoler \(m(t)\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Factoriser \(m_0^{1-\beta_0}\) : le temps caractéristique apparaît comme ce qui divise \(t\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour les régimes, développer pour \(t\) petit devant ce temps, et négliger le 1 pour \(t\) grand.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+\(m^{-\beta_0}\,\mathrm dm=\alpha_0\,\mathrm dt\), intégré de \(0\) à \(t\) (\(\beta_0\neq1\)) :
+
+\equationajustee{\frac{m^{1-\beta_0}-m_0^{1-\beta_0}}{1-\beta_0}=\alpha_0t}
+
+On pose
+
+\equationajustee{\boxed{\tau_0=\frac{m_0^{1-\beta_0}}{(1-\beta_0)\alpha_0}=\frac{m_0}{(1-\beta_0)\dot m(0)}}}
+
+et l'on obtient
+
+\equationajustee{\boxed{m(t)=m_0\left(1+\frac t{\tau_0}\right)^{\frac1{1-\beta_0}}=m_0\left(1+\frac t{\tau_0}\right)^5}}
+
+\emph{Régimes.}
+
+\begin{itemize}
+\tightlist
+\item
+  \(t\ll\tau_0\) : \(m\simeq m_0(1+5t/\tau_0)=m_0+\alpha_0m_0^{\beta_0}t\), croissance \textbf{linéaire} au taux initial.
+\item
+  \(t\gg\tau_0\) : \(m\simeq m_0(t/\tau_0)^5=[(1-\beta_0)\alpha_0t]^5\), croissance en \textbf{loi de puissance} \(t^5\), indépendante de \(m_0\) (la condition initiale est oubliée). Pas de divergence en temps fini car \(\beta_0<1\).
+\end{itemize}
+
+\emph{Allure.} Courbe croissante et convexe, tangente à l'origine de pente \(\dot m(0)\), qui se redresse au-delà de \(\tau_0\) (on a \(m(\tau_0)=32\,m_0\)).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q20-croissance-masse.pdf}
+\caption*{Figure 6 --- croissance de m(t) = m0(1 + t/τ0)\^{}5 en échelles
+linéaires (a) et logarithmiques (b), avec les deux régimes limites}
+\end{figure}
+
+\emph{Ordre de grandeur.} Pour \(m_0=10^{10}M_\odot\) : \(\dot m(0)=1\ M_\odot\)/an et \(\tau_0=5\times10^{10}\) ans, plus que l'âge de l'Univers ; une telle galaxie serait encore dans le régime linéaire.
+
+\begin{methode}
+
+Pour une équation \(\dot y=\alpha y^\beta\), mettre la solution sous la forme \(y_0(1+t/\tau)^{n}\) fait apparaître d'un coup le temps caractéristique et les deux régimes.
+
+\end{methode}
+
+\begin{jury}
+
+Rapport 2026 : la question a donné « De trop rares succès », à cause d'erreurs de calcul « dues à la négligence ». Surtout, « La discussion physique du résultat obtenu (mise en évidence d'un temps caractéristique ; description des régimes asymptotiques) relève de savoir-faire ordinaires en physique, mais cela n'a quasiment jamais été étudié. » Les deux régimes et \(\tau_0\) rapportent des points à part entière.
+
+\end{jury}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Inverser la relation donnée pour isoler \(H_0\Delta t\), puis remarquer que \(4/9\) est un carré parfait.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Convertir \(H_0\) en \(\mathrm s^{-1}\) (le mégaparsec en mètres), puis \(1/H_0\) en années.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+La relation est valable pour \(z>1\), donc pour \(z=2\) :
+
+\equationajustee{\begin{aligned}
+(H_0\Delta t)^{2/3}&=\frac{4}{3(1+z)}=\frac49\\
+H_0\Delta t&=\left(\frac23\right)^3=\frac8{27}
+\end{aligned}}
+
+Conversions :
+
+\equationajustee{\begin{aligned}
+H_0&=\frac{7\times10^4}{3\times10^{22}}\ \mathrm{s^{-1}}\approx2{,}3\times10^{-18}\ \mathrm{s^{-1}}\\
+\frac1{H_0}&\approx4{,}3\times10^{17}\ \mathrm s\approx1{,}4\times10^{10}\ \text{ans}\\
+\Delta t&\approx0{,}30\times1{,}4\times10^{10}\ \text{ans}\approx\underline{4\times10^9\ \text{ans}}
+\end{aligned}}
+
+\equationajustee{\boxed{\Delta t\approx4\ \text{milliards d'\text{années}}}}
+
+\begin{piege}
+
+La formule ne vaut que pour \(z>1\) : l'appliquer à \(z=0\) donnerait environ 22 milliards d'années, incompatible avec les 13,8 annoncés.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « L'application numérique de la question 21 était souvent commencée mais rarement terminée et souvent fausse. » Mener les conversions jusqu'au bout (mégaparsec en mètres, secondes en années) et conclure en milliards d'années, comme le demande l'énoncé.
+
+\end{jury}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+En échelle logarithmique, un rapport constant entre deux grandeurs se traduit par un décalage vertical constant. Lire ce décalage à masse fixée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'explication, s'appuyer sur ce que dit l'énoncé de la compétition entre l'apport de matière par la toile cosmique et la consommation dans les étoiles.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\emph{Lecture.} À masse fixée, les deux séquences de la figure 7 sont décalées d'environ \(1{,}5\) décade :
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+\(\log m\) & \(\log\dot m\) à \(z=2\) & \(\log\dot m\) à \(z=0\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(9\) & \(0{,}7\) & \(-0{,}8\) \\
+\(10\) & \(1{,}5\) & \(0{,}0\) \\
+\(12\) & \(3{,}0\) & \(1{,}6\) \\
+\end{longtable}
+
+Le décalage est quasi constant, donc
+
+\equationajustee{\frac{\dot m(z=2)}{\dot m(z=0)}\approx10^{1{,}5}\approx\underline{3\times10^1}}
+
+\textbf{À masse égale, le taux de formation d'étoiles a été divisé par environ 30 entre \(z=2\) (il y a une dizaine de milliards d'années) et \(z=0\)} : \(\alpha_0\) a diminué d'un facteur \(\approx30\), \(\beta_0\) restant à peu près le même.
+
+\emph{Explication.} Le taux de formation dépend de la réserve de gaz froid :
+
+\begin{itemize}
+\tightlist
+\item
+  à \(z=2\), l'Univers, plus jeune et plus dense, alimentait abondamment les galaxies en gaz frais par les filaments de la toile cosmique ;
+\item
+  depuis, l'expansion a dilué la matière et réduit cet apport, et le gaz présent a été consommé par les étoiles déjà formées.
+\end{itemize}
+
+Les galaxies actuelles vivent sur un réservoir appauvri. La loi \(\dot m=\alpha_0m^{\beta_0}\) décrit la dépendance en masse à une époque donnée, mais son coefficient dépend de l'époque.
+
+\begin{piege}
+
+Un écart de \(1{,}5\) sur un axe logarithmique est un \textbf{facteur} \(10^{1{,}5}\approx30\), pas une différence de \(1{,}5\ M_\odot\)/an.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Image d'un point à l'infini : plan focal, distance \(f'\alpha\) à l'axe dans les conditions de Gauss ; résolution limitée à la fois par le capteur et par la diffraction (\(\sim\lambda/D\)).
+\item
+  Différence de marche pour une onde plane : projection de la base sur la direction de propagation (théorème de Malus) ; base équivalente = projection perpendiculaire à la visée.
+\item
+  Trous d'Young à l'infini : \(\delta=bx/f'\), interfrange \(\lambda f'/b\), construction par le théorème de Malus (jamais par la géométrie des trajets après la lentille).
+\item
+  Sources incohérentes : on ajoute les \textbf{intensités} ; brouillage quand les ordres diffèrent d'un demi-entier ; source étendue uniforme : contraste en \(|\mathrm{sinc}|\).
+\item
+  Interférométrie : la résolution vient de l'étendue de la base, la sensibilité de la surface collectrice.
+\item
+  Analogie électrostatique-\allowbreak{}gravitation à partir des forces, puis théorème de Gauss précédé d'une étude complète des symétries et invariances ; passage à la forme locale par Green-Ostrogradski « pour tout volume ».
+\item
+  Courbe de rotation : \(v^2/r=GM_{\rm int}/r^2\) ; plateau \(\Leftrightarrow\) \(M_{\rm int}\propto r\) \(\Leftrightarrow\) \(\mu\propto1/r^2\).
+\item
+  Lois de puissance : droites en log-log décimal ; équation \(\dot m=\alpha m^\beta\) à variables séparables, temps caractéristique et régimes limites.
+\end{itemize}
+
+\textbf{Ce que le jury a sanctionné en 2026.} Constructions d'optique sans stigmatisme ni théorème de Malus (Q2, Q7, Q8) ; commentaires à contre-sens sur la compensation de la différence de marche (Q5) ; calculs de contraste faux d'un facteur 2 (Q8, Q12) ; Gauss appliqué sans étude des symétries (Q16) ; masse obtenue en multipliant par le volume au lieu d'intégrer (Q18) ; applications numériques inachevées ou sans unité (Q14, Q18, Q21).
+
+\textbf{Prérequis à revoir.} Optique géométrique de première année (faisceaux parallèles, plan focal) ; formule de Fresnel et notion de cohérence ; divergence en coordonnées sphériques ; conversions astronomiques (parsec, année, masse solaire).
+
+\textbf{Questions classiques transposables.} Mesure d'un diamètre angulaire par l'annulation du contraste (interféromètre stellaire de Michelson, fentes d'Young éclairées par une fente source large) ; réseau et finesse des pics à \(N\) ondes ; champ d'une boule homogène ; courbe de rotation et matière noire ; lecture d'une loi de puissance sur un graphe log-log.
+
+\end{document}

@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mpi_physique-mpi_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MPI",
+    "matiere": "Physique MPI",
+    "annee": 2026
+  },
+  "questions": 35,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q09-potentiel-effectif.svg",
+      "question": "Q9",
+      "legende": "Énergie potentielle effective : minimum en $r_0$ (orbite circulaire), petites oscillations de $r$ autour"
+    },
+    {
+      "fichier": "figures/q14-oscillation-radiale.svg",
+      "question": "Q14",
+      "legende": "Écart radial $r_1(t)$ : l'aphélie est atteint à $T/4$ si $v_1>0$, à $3T/4$ si $v_1<0$"
+    },
+    {
+      "fichier": "figures/q17-orbite-vecteur-t.svg",
+      "question": "Q17",
+      "legende": "Orbite elliptique : Soleil au foyer, sens de parcours, $\\vec v_P$, $\\vec v_A$ et $\\vec T$ porté par le petit axe"
+    },
+    {
+      "fichier": "figures/q25-moteur-ionique.svg",
+      "question": "Q25",
+      "legende": "Moteur ionique : ions accélérés de $x=0$ à $x=d$ puis éjectés vers $+x$, poussée $F(d)$ selon $-\\vec u_x$"
+    },
+    {
+      "fichier": "figures/q31-potentiel-child-langmuir.svg",
+      "question": "Q31",
+      "legende": "Potentiel $V(x)$ : charge d'espace ($V_0(x/d)^{4/3}$, tangente horizontale en 0) et condensateur vide (droite)"
+    },
+    {
+      "fichier": "figures/q33-asteroide-double-echelle.svg",
+      "question": "Q33",
+      "legende": "Astéroïde double à l'échelle ($R_1\\approx0{,}37\\,D$, $R_2\\approx0{,}08\\,D$) et zone où S est caché vu de la Terre"
+    }
+  ]
+}

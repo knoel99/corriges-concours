@@ -1,0 +1,23 @@
+{
+  "slug": "x-ens_mp_maths-a_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2026
+  },
+  "questions": 34,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q10-principe-maximum.svg",
+      "question": "Q10",
+      "legende": "Si le maximum $M$ de $|p|$ était atteint en un point $x_0$ avec $\\mathbb D(x_0,\\delta)\\subset S$, le changement de variable et Q9 donneraient sur le cercle un point de $S$ où $|p|>M$"
+    },
+    {
+      "fichier": "figures/q16-blocs-dilatation.svg",
+      "question": "Q16",
+      "legende": "Blocs de $U_k^jE_1x$ pour $k=3$ : le terme $-D_Ax$ remonte d'un bloc par étape et n'atteint le bloc 1 qu'à l'étape $k+2$ (∗ : bloc quelconque)"
+    }
+  ]
+}

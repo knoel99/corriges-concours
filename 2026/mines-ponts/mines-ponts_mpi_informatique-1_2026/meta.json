@@ -1,0 +1,38 @@
+{
+  "slug": "mines-ponts_mpi_informatique-1_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MPI",
+    "matiere": "Informatique 1",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q4-forme-mots-a1.svg",
+      "question": "Q4",
+      "legende": "Forme d'un mot accepté par 𝒜₁ : k lettres nulles, la colonne (1, 1) au rang k, puis une ligne 2 nulle et une ligne 1 quelconque u"
+    },
+    {
+      "fichier": "figures/q7-automate-trois-etats.svg",
+      "question": "Q7",
+      "legende": "Automate à trois états pour L, tous finaux : r₁ suit π₁ = π₃, r₂ suit π₂ = π₃"
+    },
+    {
+      "fichier": "figures/q14-automate-retenue.svg",
+      "question": "Q14",
+      "legende": "Automate de l'addition : l'état est la retenue, seul r₀ est final"
+    },
+    {
+      "fichier": "figures/q16-mot-pompage.svg",
+      "question": "Q16",
+      "legende": "Mot pompé : les p premières colonnes sont nulles, donc le facteur y aussi"
+    },
+    {
+      "fichier": "figures/q27-deroule-automates.svg",
+      "question": "Q27",
+      "legende": "Déroulé sur φ(x₂) : ℬ₁, son complémentaire ℬ₂, la projection ℬ₃ puis sans_zero ℬ₄, et ℬ₅ sans état final accessible"
+    }
+  ]
+}

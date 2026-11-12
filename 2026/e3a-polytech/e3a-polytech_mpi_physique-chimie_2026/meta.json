@@ -1,0 +1,38 @@
+{
+  "slug": "e3a-polytech_mpi_physique-chimie_2026",
+  "epreuve": {
+    "concours": "e3a-Polytech",
+    "filiere": "MPI",
+    "matiere": "Physique-chimie",
+    "annee": 2026
+  },
+  "questions": 40,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q06-energie-potentielle-effective.svg",
+      "question": "Q6",
+      "legende": "Allure de l'énergie potentielle effective : une droite E_m < 0 coupe la courbe deux fois (état lié entre r1 et r2), une droite E_m ≥ 0 une seule fois (état de diffusion)"
+    },
+    {
+      "fichier": "figures/q20-q26-trajectoires-spectrometre.svg",
+      "question": "Q20, Q26",
+      "legende": "Spectromètre de masse : B sortant du plan, force initiale selon −e_y, quarts de cercle tangents en O de rayon R ∝ √m ; seuls les ions hélium (2) atteignent le détecteur"
+    },
+    {
+      "fichier": "figures/q30-bilan-forces-bulle.svg",
+      "question": "Q30",
+      "legende": "Bilan des forces sur la bulle de rayon critique : la poussée d'Archimède compense le poids de l'hélium et celui de la coque"
+    },
+    {
+      "fichier": "figures/q31-lame-mince-malus.svg",
+      "question": "Q31",
+      "legende": "Construction de Malus : le plan d'onde Π passant par K coupe le rayon (1) en H ; δ = nℓ(IJ + JK) − IH"
+    },
+    {
+      "fichier": "figures/q34-fibre-courbee.svg",
+      "question": "Q34",
+      "legende": "Fibre courbée : le rayon entré au bord intérieur, à b = R − d/2 de O', frappe la gaine sous l'angle i, avec sin i = b/(R + d/2) ; proportions exagérées"
+    }
+  ]
+}

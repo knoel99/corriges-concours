@@ -1,0 +1,28 @@
+{
+  "slug": "ccinp_psi_informatique_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "PSI",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 33,
+  "redaction": "IA (?), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-schema-relationnel.svg",
+      "question": "Q3",
+      "legende": "Tables SpecObj et PhotoObj : bestObjId et targetObjId désignent tous deux un objID de PhotoObj, et z est un redshift d'un côté, une magnitude de l'autre"
+    },
+    {
+      "fichier": "figures/q23-arbre-couvrant-minimal.svg",
+      "question": "Q23",
+      "legende": "Arbre couvrant de poids minimal du graphe du DR (en bleu, poids 16) obtenu depuis D (a) et depuis F (b) ; pastilles : rang d'ajout des sommets ; disposition des sommets choisie ici"
+    },
+    {
+      "fichier": "figures/q32-elagage.svg",
+      "question": "Q32",
+      "legende": "Deux tours d'élagage sur un arbre d'exemple : chaque tour retire toutes les feuilles (en vermillon), la racine reste"
+    }
+  ]
+}

@@ -1,0 +1,2003 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP PC — Modélisation de systèmes physiques ou chimiques 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · CCINP PC}
+\fancyhead[R]{\small Modélisation de systèmes physiques ou chimiques 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries CCINP PC — Modélisation de systèmes physiques ou chimiques 2026\par}\medskip
+  {\large CCINP · PC · Modélisation de systèmes physiques ou chimiques · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+L'épreuve (PC7MO, mutualisée avec e3a-Polytech, 4 heures, \textbf{calculatrices interdites}) a pour fil conducteur un \textbf{spectrophotomètre infrarouge}. Elle comporte 56 questions réparties en deux parties indépendantes, et une annexe qui donne les commandes Python autorisées, quelques formules (rotationnel du rotationnel, vecteur de Poynting moyen, développement limité) et une aide aux calculs.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I --- Absorption vibrationnelle (Q1 à Q36).} Trois modèles du même phénomène, de plus en plus fins.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{I.1 (Q1-Q14), modèle classique} : potentiel de Morse, approximation harmonique, deux lois de Newton combinées en une équation pour la masse réduite, fréquence propre et nombre d'onde, puis modèle « ressorts en parallèle » de la multiplicité des liaisons, confronté à trois bandes IR de C--N, C=N et C≡N.
+  \item
+    \emph{I.2 (Q15-Q26), modèle quantique} : équation de Schrödinger stationnaire de l'oscillateur harmonique, discrétisée par différences finies, puis résolue en Python par une récurrence à deux termes (méthode du tir), avec une normalisation par la méthode des rectangles et un tracé.
+  \item
+    \emph{I.3 (Q27-Q36), modèle ondulatoire} : propagation d'une onde plane dans un milieu de permittivité complexe, relation de dispersion, onde atténuée, vecteur de Poynting, puis loi de Beer-Lambert.
+  \end{itemize}
+\item
+  \textbf{Partie II --- Le spectrophotomètre (Q37 à Q56).}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{II.1 (Q37-Q47), la source} : configuration électronique du nickel, maille CFC de l'alliage Ni₃Cr, bilan thermique d'une tige chauffée par effet Joule (rayonnement et conducto-convection), puis résolution par dichotomie en Python.
+  \item
+    \emph{II.2 (Q48-Q56), le monochromateur} : déphasage entre deux traits d'un réseau en conditions de Gauss, puis calcul en Python de l'intensité à \(N\) ondes et de la bande spectrale transmise par une fente.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Notions mobilisées} : mécanique du point et énergie potentielle (PCSI), oscillateur harmonique, équation de Schrödinger (PC), équations de Maxwell et ondes dans les milieux (PC), interférences et lentilles (PCSI-PC), architecture de la matière et cristallographie (PCSI), bilans thermiques et rayonnement (PC), et la partie « outils numériques » du programme : récurrences, intégration, dichotomie, numpy et matplotlib.
+
+\textbf{Difficulté et longueur.} Le sujet est long, mais très guidé et régulier. Près de 20 questions sont des compléments de code courts. Le rapport 2026 juge sa longueur adaptée : la majorité des candidats a abordé l'essentiel des questions, et la diversité des niveaux de difficulté a permis un bon classement. Il ne donne pas de statistiques par question.
+
+\textbf{Questions discriminantes selon le rapport 2026.} Q4-Q5 (développement limité jugé « Très confus »), Q8 (combinaison linéaire, très souvent fausse), toute la sous-partie I.3 de Q29 à Q33 (calcul en complexes, souvent absente ou inaboutie), Q40 (énoncé mal lu), Q41-Q44 (bilan thermique sans premier principe), Q46 (dichotomie), Q48 (différence de marche, question de cours « mal traitée et confuse ») et les codes de Q51 à Q56, abordés surtout dans les bonnes copies.
+
+\textbf{À ne pas laisser passer} : Q1, Q2, Q5, Q9-Q12, Q20-Q22, Q25, Q34-Q38, Q41, Q51-Q53, Q55. Ce sont des questions de cours ou de lecture directe. Le jury note que des candidats découragés par un blocage ont laissé de côté beaucoup de questions accessibles : les parties sont indépendantes, il faut en profiter.
+
+\textbf{Rédaction attendue.} Le rapport 2026 regrette les résultats « parachutés » et recommande de « citer explicitement les définitions, théorèmes, lois ou relations utilisés ». Pour le code, il conseille de préparer le raisonnement au brouillon et de « tester mentalement son code sur des cas simples » : bornes, borne incluse ou exclue, initialisation.
+
+\textbf{Gestion du temps} : environ 2 h 15 pour la partie I et 1 h 30 pour la partie II, plus 15 minutes de relecture. Les blocs de code ne demandent presque jamais la physique qui précède, car la formule est rappelée dans l'énoncé : en cas de blocage sur un calcul, on peut passer directement au code.
+
+\textbf{Notations.} L'énoncé réutilise \(\alpha\), \(\mu\), \(L\), \(a\), \(\delta\) et \(\varphi\) pour des objets différents selon les sous-parties. On garde ses notations et on précise le sens quand il y a un risque de confusion.
+
+\hypertarget{partie-i-absorption-vibrationnelle}{%
+\section{Partie I --- Absorption vibrationnelle}\label{partie-i-absorption-vibrationnelle}}
+
+\hypertarget{i.1-moduxe8le-classique-de-la-vibration-dune-moluxe9cule-diatomique}{%
+\subsection{I.1 --- Modèle classique de la vibration d'une molécule diatomique}\label{i.1-moduxe8le-classique-de-la-vibration-dune-moluxe9cule-diatomique}}
+
+On part d'un potentiel réaliste (Morse), on le linéarise près de l'équilibre et on obtient un oscillateur harmonique. Les outils sont l'analyse dimensionnelle, la lecture d'un profil d'énergie potentielle, les développements limités et la deuxième loi de Newton.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Que peut-on dire de l'argument d'une exponentielle ? Et de la dimension d'une énergie potentielle ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+L'argument \(-\alpha(x-x_e)\) de l'exponentielle est sans dimension, et l'exponentielle elle-même aussi.
+
+On soustrait \(x_e\) à la longueur \(x\) : \(x_e\) est une longueur. Le produit \(\alpha(x-x_e)\) étant sans dimension, \(\alpha\) est l'inverse d'une longueur.
+
+Le facteur \((1-e^{-\alpha(x-x_e)})^2\) est sans dimension, donc \(D\) a la dimension de \(E_p\), une énergie :
+\equationajustee{\boxed{\begin{aligned}
+D&\ \text{en J}=\text{kg·m}^2\text{·s}^{-2}\\
+\alpha&\ \text{en m}^{-1}\\
+x_e&\ \text{en m}
+\end{aligned}}}
+
+\begin{piege}
+
+L'énoncé demande le Système international : \(D\) s'exprime en joules, pas en électronvolts, même si l'ordre de grandeur usuel est de quelques eV. Il faut aussi distinguer deux arguments : l'argument de l'exponentielle est sans dimension, et l'exponentielle l'est donc aussi.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 note que « D est trop souvent restée en J » : le jury attendait visiblement l'expression en unités de base, kg·m²·s⁻². Donner les deux formes ne coûte rien.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Quelle caractérisation graphique des positions d'équilibre connaît-on pour un système conservatif à un degré de liberté ?
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Une position d'équilibre est un point où la force \(-\mathrm dE_p/\mathrm dx\) est nulle : la tangente à la courbe y est horizontale. L'équilibre est stable si \(E_p\) y présente un minimum.
+
+La figure 3 n'a qu'une tangente horizontale, au minimum situé en \(x_e\). \textbf{Le système a une unique position d'équilibre, \(x=x_e\), et elle est stable} : un écart à \(x_e\) augmente \(E_p\), si bien que la force ramène vers \(x_e\).
+
+\begin{piege}
+
+Un équilibre se caractérise par \(\mathrm dE_p/\mathrm dx=0\), pas par \(E_p=0\) : ici, les deux coïncident en \(x_e\) par hasard du choix de l'origine des énergies. Et un maximum de \(E_p\) est aussi un équilibre, mais instable.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 constate que « La grande partie des candidats ne font pas la différence entre équilibre et stabilité de l'équilibre ». Il faut deux critères distincts : tangente horizontale pour l'équilibre, minimum pour la stabilité. L'énoncé impose une phrase, sans dériver \(E_p\).
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Calculer \(E_p\) en deux points remarquables : au fond du puits et pour une distance infinie.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la nature de l'état, tracer l'horizontale \(E_m\) et chercher les points où \(E_m=E_p(x)\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+On a \(E_p(x_e)=0\) et \(E_p(x)\to D\) quand \(x\to+\infty\). Sur le tracé, la branche répulsive est très raide pour \(x<x_e\), le minimum vaut zéro en \(x_e\), et l'asymptote horizontale est \(E_p=D\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q03-potentiel-morse.pdf}
+\caption*{Figure 1 --- Potentiel de Morse : D est la profondeur du puits,
+mouvement borné entre x₁ et x₂ si E\_m \textless{} D, non borné si E\_m
+\textgreater{} D}
+\end{figure}
+
+\textbf{\(D\) est la profondeur du puits}, l'écart entre le minimum et l'asymptote : c'est l'énergie de dissociation.
+
+Le mouvement n'a lieu que là où \(E_m\ge E_p(x)\) :
+
+\begin{itemize}
+\tightlist
+\item
+  si \(E_m>D\), il n'y a pas de point de rebroussement à droite et \(x\) peut tendre vers l'infini : c'est un \textbf{état libre}, la molécule se dissocie ;
+\item
+  si \(E_m<D\), il y a deux points de rebroussement \(x_1<x_e<x_2\) et le mouvement est borné : c'est un \textbf{état lié}, la molécule vibre.
+\end{itemize}
+
+\begin{piege}
+
+Placer \(D\) comme l'ordonnée du minimum est faux, car celle-ci vaut zéro. \(D\) se lit comme une hauteur entre le fond du puits et l'asymptote.
+
+\end{piege}
+
+\begin{jury}
+
+Question bien traitée selon le rapport 2026, « mais la notion d'asymptote apparaît rarement ». C'est pourtant elle qui justifie la place de \(D\) : nommer l'asymptote horizontale \(E_p=D\) sur le tracé.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Appliquer le développement de l'annexe en \(a=x_e\). Que valent \(E_p(x_e)\) et \(E_p'(x_e)\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Poser \(u=x-x_e\) et dériver deux fois \(D(1-e^{-\alpha u})^2\), ou bien développer \(1-e^{-\alpha u}\) à l'ordre 1 avant d'élever au carré.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+On écrit d'abord le développement de l'annexe en \(a=x_e\) :
+\equationajustee{E_p(x)\approx E_p(x_e)+(x-x_e)E_p'(x_e)+\frac12(x-x_e)^2E_p''(x_e).}
+Avec \(u=x-x_e\) et \(g(u)=D(1-e^{-\alpha u})^2\), on dérive deux fois :
+\equationajustee{\begin{aligned}
+g'(u)&=2D\alpha e^{-\alpha u}(1-e^{-\alpha u})\\
+g''(u)&=2D\alpha^2e^{-2\alpha u}-2D\alpha^2e^{-\alpha u}(1-e^{-\alpha u})
+\end{aligned}}
+En \(u=0\) :
+\equationajustee{\begin{aligned}
+g(0)&=0\\
+g'(0)&=0\\
+g''(0)&=2D\alpha^2
+\end{aligned}}
+Le terme constant est nul car le minimum vaut zéro, le terme d'ordre 1 car \(x_e\) est une position d'équilibre. Il vient
+\equationajustee{\boxed{E_p(x)\approx D\alpha^2(x-x_e)^2}}
+
+\begin{methode}
+
+Près d'un minimum, toute énergie potentielle régulière s'écrit \(E_p(x)\approx E_p(x_e)+\tfrac12E_p''(x_e)(x-x_e)^2\). La raideur équivalente vaut donc \(E_p''(x_e)\), et ce réflexe sert dans tous les problèmes de petites oscillations.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 juge Q4-Q5 « Très confus » : « Le DL est trop souvent non explicitement donné » et « Le calcul des dérivées premières et secondes est très souvent absent des copies ». Écrire la formule du DL, puis les dérivées, puis leurs valeurs en \(x_e\), en justifiant la disparition des deux premiers termes.
+
+\end{jury}
+
+\begin{piege}
+
+Le jury relève des erreurs dans la dérivée seconde. Dériver \(e^{-\alpha u}(1-e^{-\alpha u})\) comme un produit, ou plus sûrement développer d'abord \(g'(u)=2D\alpha(e^{-\alpha u}-e^{-2\alpha u})\).
+
+\end{piege}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Identifier terme à terme avec \(\tfrac12k(x-x_e)^2\).
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\equationajustee{\boxed{k=2D\alpha^2}}
+Comme \(D>0\), \textbf{\(k>0\)}, ce qui est cohérent avec le minimum stable de la Q2.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Faire un bilan des forces sur \(A\) seul. Quel est l'allongement du ressort qui modélise la liaison ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Raisonner sur un cas : si \(x>x_e\), le ressort est étiré. Dans quel sens tire-t-il \(A\), qui est à gauche de \(B\) sur la figure 2 ?
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Système : l'atome \(A\). Référentiel d'étude, supposé galiléen.
+
+Bilan des forces : la molécule est isolée, la seule force est celle de la liaison. Le ressort a la longueur \(x=x_B-x_A\) et la longueur à vide \(x_e\).
+
+Étiré, il tire \(A\) vers \(B\), c'est-à-dire vers les \(x\) croissants, d'où la force \(+k(x-x_e)\vec u_x\). La deuxième loi de Newton projetée sur \(\vec u_x\) donne la relation (1) :
+\equationajustee{\boxed{m_A\ddot x_A=k(x-x_e)}}
+
+\begin{piege}
+
+Écrire \(-k(x-x_e)\) par réflexe conduit en Q8 à \(\mu\ddot x=+k(x-x_e)\), qui n'a pas de solution oscillante. Le signe dépend de la position de l'atome par rapport à l'autre extrémité du ressort. Autre erreur relevée par le jury : écrire l'allongement avec \(x_A\) ou \(x_B\) seul, au lieu de \(x-x_e\).
+
+\end{piege}
+
+\begin{jury}
+
+Sur Q6-Q7, le rapport 2026 note qu'« Un grand nombre ne font pas l'effort de citer le référentiel et de faire le bilan des forces ». Ces deux lignes font partie de la réponse attendue.
+
+\end{jury}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Même démarche pour \(B\), ou bien utiliser le principe des actions réciproques.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Le ressort étiré tire \(B\) vers les \(x\) décroissants. La relation (2) s'écrit
+\equationajustee{\boxed{m_B\ddot x_B=-k(x-x_e)}}
+Contrôle : \(m_A\ddot x_A+m_B\ddot x_B=0\), puisque le centre de masse d'un système isolé a une accélération nulle.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Exprimer \(\ddot x_A\) et \(\ddot x_B\), puis former \(\ddot x=\ddot x_B-\ddot x_A\).
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+On divise (1) par \(m_A\) et (2) par \(m_B\), puis on retranche :
+\equationajustee{\begin{aligned}
+\ddot x&=\ddot x_B-\ddot x_A\\
+&=-\frac{k(x-x_e)}{m_B}-\frac{k(x-x_e)}{m_A}\\
+&=-k(x-x_e)\left(\frac1{m_A}+\frac1{m_B}\right)\\
+&=-\frac k\mu(x-x_e)
+\end{aligned}}
+où l'on a posé \(\dfrac1\mu=\dfrac1{m_A}+\dfrac1{m_B}\). D'où
+\equationajustee{\boxed{\mu\ddot x+kx=kx_e}}
+\equationajustee{\boxed{\mu=\frac{m_Am_B}{m_A+m_B}}}
+
+\begin{methode}
+
+Le problème à deux corps isolés se ramène à une seule particule fictive de masse \(\mu\), soumise à la force d'interaction. Limite de contrôle : si \(m_B\to\infty\), alors \(\mu\to m_A\).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 trouve Q8 « Très souvent fausse » même avec Q6 et Q7 justes, « les candidats n'étant pas à l'aise avec le calcul de combinaison linéaire ». Écrire la combinaison étape par étape, comme ci-dessus, évite les erreurs de signe.
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Changer de variable pour faire disparaître le second membre constant.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+Avec \(X=x-x_e\), on obtient \(\ddot X+\dfrac k\mu X=0\). C'est l'équation de l'oscillateur harmonique masse-ressort, de masse \(\mu\) et de raideur \(k\), de pulsation propre \(\omega_0=\sqrt{k/\mu}\). Comme \(f_0=\omega_0/(2\pi)\) :
+\equationajustee{\boxed{f_0=\frac1{2\pi}\sqrt{\frac k\mu}}}
+
+\begin{piege}
+
+On demande une fréquence, pas une pulsation : le facteur \(1/(2\pi)\) est indispensable. Contrôle d'homogénéité : \(k/\mu\) est en s⁻², pas \(\mu/k\).
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, « Peu de candidats citent l'analogie avec l'oscillateur harmonique », et certains ignorent le lien entre pulsation et fréquence ou font des erreurs d'homogénéité. Le jury cite justement la fréquence propre de l'oscillateur masse-ressort parmi les erreurs d'homogénéité évitables.
+
+\end{jury}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Relier longueur d'onde dans le vide et fréquence.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+On a \(\lambda_0=c/f_0\), donc
+\equationajustee{\boxed{\sigma_0=\frac{f_0}c=\frac1{2\pi c}\sqrt{\frac k\mu}}}
+
+\begin{piege}
+
+Le nombre d'onde \(\sigma=1/\lambda\) n'est pas le vecteur d'onde \(2\pi/\lambda\). Les spectroscopistes l'expriment en cm⁻¹, ce qui fait un facteur 100 par rapport aux m⁻¹.
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Deux ressorts en parallèle : qu'ont-ils en commun, la force ou l'allongement ?
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Les deux ressorts relient le même support au même point matériel et ont la même longueur à vide \(x_e\). Ils ont donc à chaque instant la même longueur \(\ell\), donc le même allongement, et leurs forces s'ajoutent :
+\equationajustee{\vec F=-k(\ell-x_e)\vec u_x-k(\ell-x_e)\vec u_x=-2k(\ell-x_e)\vec u_x .}
+C'est la force d'un ressort unique de longueur à vide \(x_e\) et de raideur
+\equationajustee{\boxed{k_{eq}=2k}}
+
+\begin{piege}
+
+Pour des ressorts en série, ce sont les inverses des raideurs qui s'ajoutent. Ici, deux ressorts côte à côte rendent le système plus raide, donc \(k_{eq}>k\). Le jury signale que l'analogie électrique avec des inductances a mené certains candidats à un résultat faux : mieux vaut sommer les forces.
+
+\end{piege}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Généraliser sans refaire le calcul.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+Les trois ressorts ont encore le même allongement, et leurs trois forces s'ajoutent :
+\equationajustee{\boxed{k_{eq}=3k}}
+Plus généralement, \(k_{eq}=pk\) pour \(p\) ressorts identiques en parallèle.
+
+\begin{jury}
+
+L'énoncé dit « Sans démonstration », mais le rapport 2026 regrette que le cas des trois ressorts soit « souvent parachuté sans explication ». Une phrase qui reprend l'argument de la Q11 suffit.
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Qu'est-ce qui change avec la multiplicité de la liaison : la masse réduite, la raideur, ou les deux ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\(\mu\) ne change pas, puisque ce sont les mêmes atomes. On remplace \(k\) par \(k_{eq}\) dans la Q10 :
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  double liaison :
+  \equationajustee{\boxed{\sigma_0=\frac1{2\pi c}\sqrt{\frac{2k}\mu}=\sqrt2\,\sigma_{0,\text{simple}}}}
+\item
+  triple liaison :
+  \equationajustee{\boxed{\sigma_0=\frac1{2\pi c}\sqrt{\frac{3k}\mu}=\sqrt3\,\sigma_{0,\text{simple}}}}
+\end{enumerate}
+
+\textbf{Conclusion} : à atomes donnés, le nombre d'onde croît avec la multiplicité, comme \(\sqrt p\), donc dans les rapports \(1:1{,}4:1{,}7\).
+
+\begin{methode}
+
+« Conclure » appelle une phrase quantitative (la loi en \(\sqrt p\) et les rapports), pas seulement « \(\sigma_0\) augmente ».
+
+\end{methode}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Les trois liaisons relient les mêmes atomes : seule la multiplicité change. Lire attentivement l'ordre dans lequel l'énoncé les dessine.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Classer les trois valeurs, puis vérifier les rapports à l'aide de \(\sqrt2\) et \(\sqrt3\).
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\(\mu\) et \(k\) sont communs et \(\sigma_0\) croît avec la multiplicité. Avec \(1\,300<1\,650<2\,200\) :
+\equationajustee{\boxed{\mathrm{C{-}N}:1\,300\ \mathrm{cm^{-1}},\qquad \mathrm{C{\equiv}N}:2\,200\ \mathrm{cm^{-1}},\qquad \mathrm{C{=}N}:1\,650\ \mathrm{cm^{-1}}}}
+Contrôle : \(2\,200/1\,300\simeq1{,}69\), proche de \(\sqrt3\simeq1{,}73\), et \(1\,650/1\,300\simeq1{,}27\), à comparer à \(\sqrt2\simeq1{,}41\). Le modèle rend compte de l'ordre et de l'ordre de grandeur, sans être exact : une liaison double n'est pas rigoureusement deux fois plus raide qu'une simple.
+
+\begin{piege}
+
+L'énoncé dessine les liaisons dans l'ordre simple, triple, double. Recopier les valeurs dans l'ordre croissant sans lire les traits de liaison mène à une attribution fausse.
+
+\end{piege}
+
+\hypertarget{i.2-le-moduxe8le-quantique}{%
+\subsection{I.2 --- Le modèle quantique}\label{i.2-le-moduxe8le-quantique}}
+
+On obtient l'équation de Schrödinger stationnaire, on la discrétise par différences finies et on programme la récurrence obtenue (méthode du tir). Les outils sont la séparation des variables, la formule de Taylor, les tableaux numpy, la méthode des rectangles et matplotlib.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Injecter la forme proposée, dériver une fois en temps et deux fois en espace.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Simplifier par le facteur temporel, en justifiant qu'il ne s'annule jamais.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+On calcule les deux dérivées :
+\equationajustee{\begin{aligned}
+\frac{\partial\psi}{\partial t}&=-\frac{iE}\hbar\varphi(x)e^{-iEt/\hbar}\\
+\frac{\partial^2\psi}{\partial x^2}&=\varphi''(x)e^{-iEt/\hbar}
+\end{aligned}}
+En injectant dans l'équation de Schrödinger, on simplifie par \(e^{-iEt/\hbar}\), de module 1 :
+\equationajustee{E\varphi=-\frac{\hbar^2}{2\mu}\varphi''+\frac12\mu\omega_0^2x^2\varphi .}
+En multipliant par \(2\mu/\hbar^2\) :
+\equationajustee{\boxed{\frac{\mathrm d^2\varphi}{\mathrm dx^2}+\frac\mu{\hbar^2}(2E-\mu\omega_0^2x^2)\varphi=0}}
+
+\begin{piege}
+
+On a \(i\hbar\times(-iE/\hbar)=+E\). Une erreur de signe ici inverse le rôle de \(E\) et de \(V\).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 demande des dérivées explicites et des calculs détaillés ; il juge bienvenu d'introduire le calcul par « en injectant, on trouve\ldots{} ». Il note aussi que les candidats qui ont séparé les fonctions temporelle et spatiale ont souvent produit un calcul peu clair : l'injection directe de la forme donnée est plus sûre.
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Appliquer la formule de l'annexe autour de \(a=x\), avec des écarts \(+\mathrm dx\) puis \(-\mathrm dx\).
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Le développement est au second ordre \textbf{en \(\mathrm dx\)}. L'énoncé écrit « par rapport à \(x\) », ce qui est une coquille à signaler.
+\equationajustee{\boxed{\varphi(x+\mathrm dx)\approx\varphi(x)+\mathrm dx\,\varphi'(x)+\frac{\mathrm dx^2}2\varphi''(x)}}
+\equationajustee{\boxed{\varphi(x-\mathrm dx)\approx\varphi(x)-\mathrm dx\,\varphi'(x)+\frac{\mathrm dx^2}2\varphi''(x)}}
+
+\begin{jury}
+
+Le rapport 2026 juge la question globalement réussie, « mais l'emploi de ≈ pratiquement tout le temps absent ». Un développement limité tronqué est une égalité approchée : le signe \(\approx\) fait partie de la réponse.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Quelle combinaison des deux développements élimine \(\varphi'\) ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+On additionne les deux développements : les termes en \(\varphi'\) se compensent, et il reste \(\varphi(x+\mathrm dx)+\varphi(x-\mathrm dx)\approx2\varphi(x)+\mathrm dx^2\varphi''(x)\). On isole \(\varphi''\) :
+\equationajustee{\boxed{\frac{\mathrm d^2\varphi}{\mathrm dx^2}(x)\approx\frac{\varphi(x+\mathrm dx)+\varphi(x-\mathrm dx)-2\varphi(x)}{\mathrm dx^2}}}
+
+\begin{methode}
+
+Le schéma centré à trois points pour la dérivée seconde est un classique. Le contrôle d'homogénéité impose \(\mathrm dx^2\) au dénominateur.
+
+\end{methode}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Traduire \(x\pm\mathrm dx\) en indices.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+On écrit la Q17 en \(x=x_i\). Les points sont régulièrement espacés, donc \(x_{i\pm1}=x_i\pm\mathrm dx\) et \(\varphi(x_i\pm\mathrm dx)=\varphi_{i\pm1}\) :
+\equationajustee{\boxed{\varphi_{i+1}+\varphi_{i-1}-2\varphi_i=\mathrm dx^2\,\frac{\mathrm d^2\varphi}{\mathrm dx^2}(x_i)}}
+
+\begin{jury}
+
+Sur Q17-Q18, le rapport 2026 note que « la démarche est rarement expliquée » : dire quelle combinaison on forme et pourquoi elle élimine \(\varphi'\), puis comment on passe aux indices.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Écrire la Q15 au point \(x_i\) pour exprimer \(\varphi''(x_i)\), puis égaler avec la Q18.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour retrouver exactement la forme imposée, remplacer \(E\) par sa valeur quantifiée et factoriser par \(2\omega_0\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\(\varphi''(x_i)=\dfrac\mu{\hbar^2}(\mu\omega_0^2x_i^2-2E)\varphi_i\), donc
+\equationajustee{\varphi_{i+1}=\left(2+\frac{\mu\,\mathrm dx^2}{\hbar^2}(\mu\omega_0^2x_i^2-2E)\right)\varphi_i-\varphi_{i-1}.}
+Avec \(E=\hbar\omega_0(v+\tfrac12)\), on a \(\mu\omega_0^2x_i^2-2E=2\omega_0\big(\tfrac12\mu\omega_0x_i^2-\hbar(v+\tfrac12)\big)\). Il vient
+\equationajustee{\boxed{\varphi_{i+1}=\left(2+\frac{2\mu\omega_0}{\hbar^2}\mathrm dx^2\left(\frac12\mu\omega_0x_i^2-\hbar\left(v+\frac12\right)\right)\right)\varphi_i-\varphi_{i-1}}}
+
+\begin{methode}
+
+Pour un résultat imposé, la note porte sur le chemin. Les deux étapes doivent apparaître : l'élimination de \(\varphi''\), puis la substitution de \(E\) et la factorisation.
+
+\end{methode}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+\(L\) est le point où la parabole \(V(x)\) coupe le niveau \(v=5\). Écrire cette égalité.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+On écrit \(V(L)=E_5\), avec \(E_5=\hbar\omega_0(5+\tfrac12)\) :
+\equationajustee{\begin{aligned}
+\frac12\mu\omega_0^2L^2&=\frac{11}2\hbar\omega_0\\
+L&=\sqrt{\frac{11\hbar}{\mu\omega_0}}\simeq3{,}4\cdot10^{-10}\ \text{m}
+\end{aligned}}
+
+\begin{lstlisting}[language=Python]
+L = np.sqrt(11*hbar/(mu*omega0))          # instruction 1.1
+\end{lstlisting}
+
+\begin{piege}
+
+La figure 5 numérote les niveaux \(E_1\) à \(E_5\), mais l'énoncé impose \(v=5\), soit \(E=\tfrac{11}2\hbar\omega_0\). Ne pas oublier le \(\tfrac12\) de l'énergie de point zéro.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 regrette que « Des candidats n'ont pas détaillé comment ils avaient trouvé cette expression », et que d'autres n'aient pas respecté \(v=5\). L'égalité \(V(L)=E_5\) doit être écrite avant le code.
+
+\end{jury}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+L'annexe donne une fonction qui fabrique exactement ce tableau.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\begin{lstlisting}[language=Python]
+X = np.linspace(-L, L, N)                 # instruction 1.2
+\end{lstlisting}
+
+\begin{piege}
+
+Le jury constate que les candidats qui n'ont pas utilisé \texttt{linspace} ont souvent écrit des codes faux, par erreur de \texttt{range} ou de pas. La fonction de l'annexe inclut les deux bornes et produit exactement \(N\) points.
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+L'écart entre deux éléments consécutifs.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\begin{lstlisting}[language=Python]
+dx = X[1] - X[0]                          # instruction 1.3
+\end{lstlisting}
+
+\begin{piege}
+
+\texttt{linspace} produit \(N\) points, donc \(N-1\) intervalles : le pas vaut \(2L/(N-1)\), et non \(2L/N\). C'est la confusion entre piquets et intervalles que relève le rapport 2026 : les codes réussis calculent l'écart entre deux éléments successifs, comme l'énoncé le suggère (« à partir du vecteur \(X\) »).
+
+\end{piege}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Deux valeurs initiales sont fixées. À partir de quel indice la récurrence peut-elle démarrer ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La récurrence calcule \texttt{phi{[}i+1{]}} à partir de \texttt{phi{[}i{]}} et \texttt{phi{[}i-1{]}} : en déduire les bornes de la boucle.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\begin{lstlisting}[language=Python]
+    phi = np.zeros(N)                     # instructions 2 : phi[0] = 0
+    phi[1] = 1
+    for i in range(1, N-1):
+        c = 2 + 2*mu*omega0/hbar**2*dx**2*(0.5*mu*omega0*X[i]**2 - hbar*(v + 1/2))
+        phi[i+1] = c*phi[i] - phi[i-1]
+\end{lstlisting}
+
+Le programme complet, exécuté, donne bien 0, 1 et 2 zéros pour \(v=0,1,2\).
+
+Après normalisation, \(\max|\varphi_0|\simeq7{,}4\cdot10^4\) m\(^{-1/2}\), la valeur théorique \((\mu\omega_0/\pi\hbar)^{1/4}\). Près de \(x=+L\), on observe une légère divergence, qui croît avec \(v\) : la condition \(\varphi(-L)=0\) n'est qu'approchée, et la zone classiquement interdite amplifie les erreurs.
+
+\begin{piege}
+
+Démarrer la boucle à 0 ferait lire \texttt{phi{[}-1{]}}, qui en Python désigne silencieusement le dernier élément : il n'y a pas d'erreur, mais le résultat est faux. Le rapport 2026 relève de nombreuses erreurs de \texttt{range} et d'indices dans la récurrence, et des confusions entre listes et tableaux : \texttt{phi} est ici un tableau numpy de taille fixe, rempli par indice, sans \texttt{append}.
+
+\end{piege}
+
+\begin{jury}
+
+Le conseil général du rapport 2026 s'applique ici : tester mentalement la boucle sur les premiers indices (\(i=1\) calcule \texttt{phi{[}2{]}} à partir de \texttt{phi{[}1{]}} et \texttt{phi{[}0{]}}) et sur le dernier (\(i=N-2\) calcule \texttt{phi{[}N-1{]}}).
+
+\end{jury}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Sur \([x_i,x_{i+1}]\), la méthode utilise \(f(x_i)\). Quels indices interviennent donc ?
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+Les points \(x_0\) à \(x_{N-2}\) :
+
+\begin{lstlisting}[language=Python]
+    norm = np.sum(phi[:-1]**2)*dx         # instruction 3.1
+\end{lstlisting}
+
+\begin{piege}
+
+On intègre \(\varphi^2\), pas \(\varphi\) : le rapport 2026 note que « Beaucoup de candidats ont intégré phi au lieu de phi² ». Une boucle est acceptée, mais \texttt{np.sum} de l'annexe évite les erreurs de bornes et les sommes oubliées que le jury a relevées.
+
+\end{piege}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Une opération vectorielle suffit.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\begin{lstlisting}[language=Python]
+    phi = phi/np.sqrt(norm)               # instruction 3.2
+\end{lstlisting}
+
+\begin{piege}
+
+On divise par la \textbf{racine} de l'intégrale, puisque c'est \(\int\varphi^2\) qui doit valoir 1. C'est l'oubli que signale le rapport 2026 sur cette question. La division d'un tableau numpy par un nombre agit élément par élément : pas besoin de boucle.
+
+\end{piege}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Où placer \texttt{plt.show()} pour obtenir un seul graphique ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\begin{lstlisting}[language=Python]
+for v in [0, 1, 2]:                       # instructions 4
+    plt.plot(X, fonction_onde(v))
+plt.xlabel('x')
+plt.ylabel('phi(x)')
+plt.show()
+\end{lstlisting}
+
+\begin{methode}
+
+Superposer des courbes avec matplotlib : plusieurs \texttt{plt.plot} successifs, puis un seul \texttt{plt.show()} à la fin. Selon le rapport 2026, « Peu ont pensé à faire une boucle » sur les valeurs de \(v\) : c'est pourtant le plus court.
+
+\end{methode}
+
+\hypertarget{i.3-le-moduxe8le-ondulatoire-absorption-dune-onde-uxe9lectromagnuxe9tique-par-une-solution-chimique}{%
+\subsection{I.3 --- Le modèle ondulatoire : absorption d'une onde électromagnétique par une solution chimique}\label{i.3-le-moduxe8le-ondulatoire-absorption-dune-onde-uxe9lectromagnuxe9tique-par-une-solution-chimique}}
+
+On mène l'étude classique d'une onde dans un milieu absorbant : équation de propagation, relation de dispersion avec un vecteur d'onde complexe, atténuation, puis bilan énergétique, qui conduit à la loi de Beer-Lambert. Tout se fait en notation complexe, avec la convention \(e^{j(\omega t-kx)}\) de l'énoncé.
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Prendre le rotationnel de Maxwell-Faraday et utiliser l'identité de l'annexe.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que vaut le terme en gradient de la divergence ? Utiliser ensuite Maxwell-Ampère.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+On prend le rotationnel de Maxwell-Faraday. D'un côté, avec Maxwell-Gauss (\(\mathrm{div}\,\underline{\vec E}=0\)) :
+\equationajustee{\begin{aligned}
+\overrightarrow{\mathrm{rot}}\,\overrightarrow{\mathrm{rot}}\,\underline{\vec E}&=\overrightarrow{\mathrm{grad}}(\mathrm{div}\,\underline{\vec E})-\Delta\underline{\vec E}\\
+&=-\Delta\underline{\vec E}
+\end{aligned}}
+De l'autre, avec Maxwell-Ampère :
+\equationajustee{\begin{aligned}
+\overrightarrow{\mathrm{rot}}\left(-\frac{\partial\underline{\vec B}}{\partial t}\right)&=-\frac{\partial}{\partial t}\overrightarrow{\mathrm{rot}}\,\underline{\vec B}\\
+&=-\underline\varepsilon\mu_0\frac{\partial^2\underline{\vec E}}{\partial t^2}
+\end{aligned}}
+D'où
+\equationajustee{\boxed{\Delta\underline{\vec E}-\underline\varepsilon\mu_0\frac{\partial^2\underline{\vec E}}{\partial t^2}=\vec0}}
+
+\begin{methode}
+
+Il faut dire explicitement pourquoi le terme \(\overrightarrow{\mathrm{grad}}(\mathrm{div}\,\vec E)\) disparaît, et ne pas se contenter de l'omettre.
+
+\end{methode}
+
+\begin{piege}
+
+Le milieu n'est pas le vide : le coefficient de l'équation est \(\underline\varepsilon\mu_0\), complexe. Le rapport 2026 note que « certains ont voulu à tout prix introduire une célérité de l'onde », ce qui les a fait échouer aux questions suivantes.
+
+\end{piege}
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+En notation complexe, comment agissent \(\partial/\partial t\) et \(\partial/\partial x\) sur la forme proposée ?
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Dériver par rapport à \(x\) revient à multiplier par \(-j\underline k\), et par rapport à \(t\) à multiplier par \(j\omega\) :
+\equationajustee{\begin{aligned}
+\Delta\underline{\vec E}&=-\underline k^2\underline{\vec E}\\
+\frac{\partial^2\underline{\vec E}}{\partial t^2}&=-\omega^2\underline{\vec E}
+\end{aligned}}
+Donc \((-\underline k^2+\underline\varepsilon\mu_0\omega^2)\underline{\vec E}=\vec0\). Pour une onde non nulle :
+\equationajustee{\boxed{\underline k^2=\mu_0\omega^2(\varepsilon_r-j\varepsilon_i)}}
+
+\begin{piege}
+
+Le rapport 2026 signale « Des erreurs dans les signes au passage aux complexes ». \((-j\underline k)^2=-\underline k^2\) et \((j\omega)^2=-\omega^2\) : les deux signes moins se compensent dans la relation finale.
+
+\end{piege}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Factoriser \(\varepsilon_r\) et utiliser un développement limité de \(\sqrt{1+u}\) pour \(|u|\ll1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une racine carrée complexe a deux déterminations : laquelle correspond à une onde qui avance vers les \(x\) croissants et qui s'atténue ?
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+On factorise par \(\varepsilon_r\) :
+\equationajustee{\underline k^2=\mu_0\varepsilon_r\omega^2\left(1-j\frac{\varepsilon_i}{\varepsilon_r}\right).}
+Comme \(\varepsilon_i/\varepsilon_r\ll1\), le développement limité \(\sqrt{1+u}\approx1+u/2\) donne
+\equationajustee{\underline k\approx\pm\omega\sqrt{\mu_0\varepsilon_r}\left(1-\frac j2\frac{\varepsilon_i}{\varepsilon_r}\right).}
+Le signe \(+\) donne \(k'>0\) (propagation vers les \(x\) croissants) et \(k''>0\) (atténuation) :
+\equationajustee{\boxed{\begin{aligned}
+k'&=\omega\sqrt{\mu_0\varepsilon_r}\\
+k''&=\frac{\omega\varepsilon_i}2\sqrt{\frac{\mu_0}{\varepsilon_r}}
+\end{aligned}}}
+On a bien \(k''\ll k'\).
+
+\begin{piege}
+
+Avec la convention \(e^{j(\omega t-kx)}\), une atténuation correspond à \(\underline k=k'-jk''\) avec \(k''>0\). Avec la convention \(e^{i(kx-\omega t)}\), les signes s'inversent : il faut s'en tenir à celle de l'énoncé.
+
+\end{piege}
+
+\begin{piege}
+
+Erreurs relevées par le rapport 2026 : annuler purement la partie imaginaire parce que \(\varepsilon_i\) est petit (elle porte toute l'absorption), mal factoriser, ou écrire que \(\sqrt{a+b}=\sqrt a+\sqrt b\).
+
+\end{piege}
+
+\begin{jury}
+
+Question discriminante : selon le rapport 2026, elle « a posé beaucoup de difficultés » et ceux qui ont abouti n'ont pas toujours dit qu'ils faisaient un développement limité. Nommer le DL et son domaine de validité (\(|u|\ll1\)).
+
+\end{jury}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Séparer dans \(e^{-j\underline kx}\) un facteur réel et un facteur de phase, puis prendre la partie réelle.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+On sépare l'exponentielle : \(e^{-j\underline kx}=e^{-k''x}e^{-jk'x}\). Donc \(\underline{\vec E}=E_0e^{-k''x}e^{j(\omega t-k'x)}\vec u_y\), et le champ réel en est la partie réelle (avec \(E_0\) réel) :
+\equationajustee{\boxed{\vec E(x,t)=E_0e^{-k''x}\cos(\omega t-k'x)\vec u_y}}
+\textbf{Le milieu est absorbant} : l'amplitude décroît exponentiellement avec \(x\), car \(k''>0\). L'onde cède de l'énergie au milieu sur une distance caractéristique \(1/k''\).
+
+\begin{jury}
+
+Le rapport 2026 constate que « Passer de la forme complexe à la forme réelle n'est pas une évidence pour tous ». Il ajoute qu'une forme réelle correcte a toujours conduit à la bonne conclusion sur l'absorption : c'est l'étape qui rapporte.
+
+\end{jury}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+La vitesse de phase se lit sur la partie réelle du vecteur d'onde. Le caractère dispersif se juge sur la dépendance en \(\omega\).
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\equationajustee{\boxed{v_\varphi=\frac\omega{k'}=\frac1{\sqrt{\mu_0\varepsilon_r}}}}
+Si \(\varepsilon_r\) est une constante du milieu, \(v_\varphi\) ne dépend pas de \(\omega\) : \textbf{le milieu n'est pas dispersif dans ce modèle}. En réalité, \(\varepsilon_r\) dépend de \(\omega\) au voisinage des bandes d'absorption, et le milieu est alors dispersif.
+
+\begin{piege}
+
+« Absorbant » et « dispersif » sont deux notions distinctes. Un \(\underline k\) complexe signale une absorption, pas une dispersion.
+
+\end{piege}
+
+\begin{piege}
+
+Le rapport 2026 relève « Des confusions entre vitesse de phase et vitesse de groupe » et des calculs menés avec \(\underline k\) au lieu de \(\mathrm{Re}(\underline k)\). La vitesse de phase est \(\omega/k'\), avec la seule partie réelle.
+
+\end{piege}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Utiliser Maxwell-Faraday en notation complexe : à quoi se ramènent le rotationnel et la dérivée temporelle ?
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+L'onde est une pseudo-onde plane progressive harmonique. On applique Maxwell-Faraday en notation complexe :
+\equationajustee{\begin{aligned}
+\overrightarrow{\mathrm{rot}}\,\underline{\vec E}&=\frac{\partial\underline E_y}{\partial x}\vec u_z=-j\underline k\,\underline E_y\vec u_z\\
+-\frac{\partial\underline{\vec B}}{\partial t}&=-j\omega\underline{\vec B}
+\end{aligned}}
+Donc \(\underline{\vec B}=\dfrac{\underline k}\omega\underline E_y\vec u_z\), et en détaillant \(\underline k=k'-jk''\) :
+\equationajustee{\boxed{\underline{\vec B}(x,t)=\frac{k'-jk''}\omega E_0e^{-k''x}e^{j(\omega t-k'x)}\vec u_z}}
+
+\begin{methode}
+
+Pour une onde plane en notation complexe, \(\underline{\vec B}=\dfrac{\underline k\,\vec u_x\wedge\underline{\vec E}}{\omega}\). Le facteur \(\underline k/\omega\) complexe traduit un léger déphasage entre \(\vec B\) et \(\vec E\), qui n'existe pas dans le vide.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 note que la structure de pseudo-onde plane est peu souvent citée et, surtout, que le résultat reste évasif quand \(\underline k\) n'est pas détaillé, alors que c'était important pour traiter la question suivante. Écrire \(k'-jk''\) explicitement.
+
+\end{jury}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Appliquer la formule de l'annexe avec le \textbf{conjugué} de \(\underline{\vec B}\). Que deviennent les facteurs de phase ? Et les facteurs d'atténuation ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Seule la partie réelle de \((k'+jk'')/\omega\) subsiste.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Le conjugué change \(j\) en \(-j\) et laisse le facteur réel \(e^{-k''x}\) inchangé :
+\equationajustee{\underline{\vec B}^*=\frac{k'+jk''}\omega E_0e^{-k''x}e^{-j(\omega t-k'x)}\vec u_z .}
+Avec \(\vec u_y\wedge\vec u_z=\vec u_x\), les facteurs de phase se compensent, et la formule de l'annexe donne
+\equationajustee{\begin{aligned}
+\langle\vec\Pi\rangle&=\frac1{2\mu_0}\mathcal Re\left(\frac{k'+jk''}{\omega}\right)E_0^2e^{-2k''x}\vec u_x\\
+&=\frac{k'E_0^2}{2\mu_0\omega}e^{-2k''x}\vec u_x
+\end{aligned}}
+Donc \(I=I_0e^{-x/\delta}\) avec
+\equationajustee{\boxed{\begin{aligned}
+I_0&=\frac{k'E_0^2}{2\mu_0\omega}\\
+\delta&=\frac1{2k''}
+\end{aligned}}}
+
+\begin{piege}
+
+L'amplitude décroît en \(e^{-k''x}\), mais l'intensité, quadratique, décroît en \(e^{-2k''x}\). Écrire \(\delta=1/k''\) est faux.
+
+\end{piege}
+
+\begin{piege}
+
+Le conjugué de \(e^{-k''x}\) est lui-même : seul le facteur \(e^{j(\omega t-k'x)}\) et le coefficient \(k'-jk''\) changent. Le rapport 2026 note que très peu de candidats ont su écrire correctement le conjugué de \(\underline{\vec B}\), et que ceux qui ont calculé le vecteur de Poynting directement l'ont souvent fait avec les grandeurs complexes, ce qui est faux : un produit de champs se calcule en réels.
+
+\end{piege}
+
+\begin{jury}
+
+Question « souvent non aboutie » selon le rapport 2026, avec des résultats parachutés « très souvent faux ». Le jury ajoute que ceux qui sont passés aux champs réels sont toujours arrivés au bon résultat : c'est une alternative sûre à la formule de l'annexe.
+
+\end{jury}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Où se trouve la sortie de la cuve ?
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+La sortie est en \(x=e\). On reporte \(x=e\) et \(1/\delta=\alpha c_0\) dans \(I=I_0\exp(-x/\delta)\) :
+\equationajustee{\boxed{I_s=I_0\exp(-\alpha c_0e)}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q34-intensite-cuve.pdf}
+\caption*{Figure 2 --- Intensité dans la cuve, de I₀ en x = 0 à I\_s en x = e,
+décroissance en exp(−x/δ)}
+\end{figure}
+
+Ici, \(e\) désigne l'épaisseur de la cuve et \(\alpha\) le coefficient défini par \(\delta=1/(\alpha c_0)\), à ne pas confondre avec la constante de Morse.
+
+\begin{jury}
+
+Question bien traitée selon le rapport 2026, « même si l'expression apparaît souvent sans explication ». Une ligne suffit : dire où est la sortie et ce que l'on substitue.
+
+\end{jury}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+Passer du logarithme népérien au logarithme décimal avec l'annexe.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+D'après la Q34, \(\ln(I_0/I_s)=\alpha c_0e\). L'annexe donne \(\log x=\ln x/\ln10\) :
+\equationajustee{\boxed{\begin{aligned}
+A&=\frac{\alpha c_0e}{\ln10}\\
+T&=\exp(-\alpha c_0e)
+\end{aligned}}}
+On vérifie que \(T=10^{-A}\).
+
+\begin{piege}
+
+Le rapport 2026 signale des lectures erronées des définitions de \(A\) et \(T\), et des « confusions de calculs entre log et ln pour l'appliquer à l'exponentielle ». Seul \(\ln\) simplifie une exponentielle : on calcule d'abord \(\ln(I_0/I_s)\), puis on divise par \(\ln10\).
+
+\end{piege}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Substitution directe, puis nommer la loi de chimie analytique ainsi obtenue.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\equationajustee{\boxed{A=\epsilon_{em}c_0e}}
+C'est la \textbf{loi de Beer-Lambert}.
+
+\begin{methode}
+
+Le modèle montre l'origine de la loi : une décroissance exponentielle de l'intensité, valable pour une solution homogène, une lumière monochromatique et des réflexions négligées, dont le taux est proportionnel à la concentration.
+
+\end{methode}
+
+\hypertarget{partie-ii-principe-de-fonctionnement-dun-spectrophotomuxe8tre-infrarouge}{%
+\section{Partie II --- Principe de fonctionnement d'un spectrophotomètre infrarouge}\label{partie-ii-principe-de-fonctionnement-dun-spectrophotomuxe8tre-infrarouge}}
+
+\hypertarget{ii.1-uxe9tude-de-la-source-infrarouge}{%
+\subsection{II.1 --- Étude de la source infrarouge}\label{ii.1-uxe9tude-de-la-source-infrarouge}}
+
+On étudie la structure de l'alliage (chimie de PCSI), puis un bilan de puissance sur la tige en régime permanent, résolu numériquement par dichotomie.
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Appliquer la règle de Klechkowski. Le nickel fait-il partie des exceptions usuelles ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour un élément du bloc \(d\), la colonne se lit sur le total des électrons \(ns\) et \((n-1)d\).
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\equationajustee{\boxed{\mathrm{Ni}:\ 1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^8}}
+La couche \(n=4\) est la plus élevée occupée : \textbf{4e ligne}. Il y a \(2+8=10\) électrons de valence : \textbf{10e colonne}.
+
+\begin{piege}
+
+Le chrome (\(4s^1\,3d^5\)) et le cuivre sont des exceptions à la règle de Klechkowski, pas le nickel. Compter seulement les 8 électrons \(3d\) donnerait la colonne 8, ce qui est faux.
+
+\end{piege}
+
+\begin{jury}
+
+Les erreurs ont surtout porté sur la colonne, et le rapport 2026 rappelle qu'« un étudiant de filière PC devrait se poser des questions quand il positionne le Ni par exemple dans la colonne des halogènes ». Contrôle de vraisemblance : le nickel est un métal de transition, donc dans le bloc \(d\) (colonnes 3 à 12).
+
+\end{jury}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Quelle fraction d'un atome placé à un sommet, ou au centre d'une face, appartient à la maille ?
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+Un atome à un sommet est partagé entre 8 mailles, un atome au centre d'une face entre 2 mailles :
+\equationajustee{\begin{aligned}
+N(\mathrm{Ni})&=8\times\tfrac18+4\times\tfrac12=3\\
+N(\mathrm{Cr})&=2\times\tfrac12=1
+\end{aligned}}
+\textbf{3 Ni et 1 Cr par maille}, d'où la formule Ni₃Cr.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q38-maille-ni3cr.pdf}
+\caption*{Figure 3 --- Maille CFC de l'alliage, Ni aux sommets et sur 4 faces, Cr
+sur 2 faces opposées}
+\end{figure}
+
+\begin{methode}
+
+Une maille CFC contient toujours 4 sites. La somme des atomes doit donc valoir 4, ce qui permet de contrôler le décompte.
+
+\end{methode}
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\begin{indication}{1}
+
+Masse volumique : masse d'une maille divisée par son volume. Passer des masses molaires aux masses d'atomes.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+La maille contient 3 Ni et 1 Cr, de masse totale \((3M(\mathrm{Ni})+M(\mathrm{Cr}))/N_A\), dans un volume \(a^3\) :
+\equationajustee{\mu(\mathrm{NiCr})=\frac{3M(\mathrm{Ni})+M(\mathrm{Cr})}{N_Aa^3},}
+donc
+\equationajustee{\boxed{a=\left(\frac{3M(\mathrm{Ni})+M(\mathrm{Cr})}{N_A\,\mu(\mathrm{NiCr})}\right)^{1/3}}}
+Ici, \(\mu\) désigne une masse volumique, sans lien avec la masse réduite de la partie I.
+
+\begin{piege}
+
+Le rapport 2026 énumère les erreurs : « volume de la maille, absence du nombre d'Avogadro, absence de la population propre des atomes, erreur de calcul pour extraire a ». Chaque espèce compte avec sa propre population (3 et 1), et on extrait \(a\) par une racine cubique.
+
+\end{piege}
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+\begin{indication}{1}
+
+Dans une structure CFC, sur quelle droite se trouvent deux plus proches voisins ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Utiliser l'aide aux calculs avec \(\sqrt2\simeq1{,}4\).
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+L'énoncé impose un modèle d'atomes identiques : on ne distingue pas Ni et Cr. Un sommet et le centre d'une face qui le contient sont alignés sur la diagonale de face, de longueur \(a\sqrt2\), qui contient deux distances entre voisins. Donc \(d=a/\sqrt2\) :
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q40-contact-face.pdf}
+\caption*{Figure 4 --- Face de la maille CFC, contact le long de la diagonale de
+face, de longueur a√2 = 2d}
+\end{figure}
+
+\equationajustee{\boxed{d\simeq\frac{350}{1{,}4}=250\ \mathrm{pm}}}
+
+\begin{piege}
+
+La grande diagonale du cube (\(a\sqrt3\)) est la direction de contact de la structure cubique centrée, pas de la CFC. Le quotient \(350/1{,}7\) de l'aide aux calculs ne sert donc pas ici.
+
+\end{piege}
+
+\begin{jury}
+
+Question souvent fausse ou absente selon le rapport 2026 : « Beaucoup de candidats ont apparemment mal lu l'énoncé et se sont lancés dans des calculs de plus proche voisin entre Ni/Cr ». Les autres erreurs portent sur le lieu de tangence et sur la diagonale de face.
+
+\end{jury}
+
+\hypertarget{question-41}{%
+\subsection{Question 41}\label{question-41}}
+
+\begin{indication}{1}
+
+Puissance dissipée par effet Joule dans une résistance.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+Système : la tige, conducteur ohmique de résistance \(R\). La puissance électrique reçue, dissipée par effet Joule, vaut
+\equationajustee{\boxed{P_{\text{\text{élec}}}=Ri^2=\frac{Li^2}{\gamma\pi a^2}}}
+
+\begin{jury}
+
+Sur Q41 à Q44, le rapport 2026 écrit : « Une réponse globale est souvent parachutée sans explication ». Il regrette une présentation brouillonne, beaucoup de candidats ayant « bricolé » pour retrouver la Q44. Il précise ce qu'il attendait : « On aurait aimé avoir une analyse d'échange thermique : quel est le système, application du premier principe de la thermodynamique, le transfert thermique est-il gagné ou perdu par le système ? »
+
+\end{jury}
+
+\hypertarget{question-42}{%
+\subsection{Question 42}\label{question-42}}
+
+\begin{indication}{1}
+
+La tige émet selon la loi de Stefan, mais elle reçoit aussi le rayonnement du gaz, considéré comme un corps noir.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quelle surface retenir pour une tige longue et fine ?
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+On néglige les bases (\(L\gg a\)) : la surface d'échange est \(S=2\pi aL\). La tige émet \(\sigma T_s^4S\) (loi de Stefan) et reçoit \(\sigma T_a^4S\) du gaz, corps noir à \(T_a\). La puissance nette perdue par la tige, cédée au gaz, est
+\equationajustee{\boxed{P_{ray}=2\pi aL\,\sigma(T_s^4-T_a^4)}}
+C'est cohérent avec l'équation imposée en Q44, où seul \(2\pi aL\) se simplifie.
+
+\begin{piege}
+
+Oublier le rayonnement reçu, c'est-à-dire écrire \(2\pi aL\sigma T_s^4\), rend la Q44 impossible.
+
+\end{piege}
+
+\hypertarget{question-43}{%
+\subsection{Question 43}\label{question-43}}
+
+\begin{indication}{1}
+
+Loi de Newton sur la même surface. Choisir le signe en fonction du sens de l'échange.
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\equationajustee{\boxed{P_{cc}=2\pi aL\,H(T_s-T_a)}}
+C'est une puissance perdue par la tige et cédée au gaz, positive puisque \(T_s>T_a\) : on peut enlever la valeur absolue de la loi de Newton.
+
+\begin{jury}
+
+Le rapport 2026 le demande explicitement : « Enlever la valeur absolue à Q43 ». Cela suppose de dire dans quel sens va le transfert, ici de la tige chaude vers le gaz.
+
+\end{jury}
+
+\hypertarget{question-44}{%
+\subsection{Question 44}\label{question-44}}
+
+\begin{indication}{1}
+
+En régime permanent, que dire de l'énergie interne de la tige ?
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+Système : la tige. On lui applique le premier principe de la thermodynamique en puissance : elle reçoit \(P_{\text{\text{élec}}}\) et perd \(P_{ray}\) et \(P_{cc}\). En régime stationnaire, son énergie interne ne varie pas, \(\mathrm dU/\mathrm dt=0\), donc :
+\equationajustee{P_{\text{\text{élec}}}-P_{ray}-P_{cc}=0 .}
+On remplace les trois puissances et on divise par \(2\pi aL\) :
+\equationajustee{\frac{i^2}{2\pi^2\gamma a^3}=\sigma(T_s^4-T_a^4)+H(T_s-T_a).}
+En regroupant les termes en \(T_a\) à gauche :
+\equationajustee{\boxed{\sigma T_a^4+HT_a=\sigma T_s^4+HT_s-\frac{i^2}{2\pi^2\gamma a^3}}}
+Contrôle : pour \(i=0\), on retrouve \(T_a=T_s\).
+
+\begin{jury}
+
+Le rapport 2026 est sévère : « Pratiquement aucun candidat n'a suggéré l'application du 1er principe, ni expliquer ce qu'impliquait le régime stationnaire ». Annoncer le système, nommer le premier principe, en déduire \(\mathrm dU/\mathrm dt=0\) et fixer le sens de chaque transfert.
+
+\end{jury}
+
+\hypertarget{question-45}{%
+\subsection{Question 45}\label{question-45}}
+
+\begin{indication}{1}
+
+La dichotomie cherche un zéro : tout ramener dans un seul membre.
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+La dichotomie cherche un zéro : on écrit l'équation de la Q44 sous la forme \(f(T_a)=0\), en passant tous les termes dans le premier membre :
+\equationajustee{f(x)=\sigma x^4+Hx-\sigma T_s^4-HT_s+\frac{i^2}{2\pi^2\gamma a^3}.}
+Le programme 2 n'importe pas numpy : on importe \(\pi\) depuis \texttt{math}.
+
+\begin{lstlisting}[language=Python]
+from math import pi
+def f(x):                                 # instruction 4
+    return sigma*x**4 + H*x - sigma*Ts**4 - H*Ts + i**2/(2*pi**2*gamma*a**3)
+\end{lstlisting}
+
+\begin{piege}
+
+Le terme Joule change de signe en passant à gauche. Avec le mauvais signe, on trouve \(T_a\simeq1\,014\) K, plus chaud que la tige, ce qui est absurde. Par ailleurs, \texttt{i} désigne ici l'intensité : il ne faut pas l'utiliser comme indice de boucle.
+
+\end{piege}
+
+\begin{jury}
+
+« Très rare sont les candidats qui ont pris la peine d'expliquer qu'il fallait mettre sous la forme f(x) = 0 », note le rapport 2026. Il relève aussi des fonctions qui codent l'équation de la Q44 telle quelle, sans tout passer dans le premier membre, et des \texttt{return} oubliés.
+
+\end{jury}
+
+\hypertarget{question-46}{%
+\subsection{Question 46}\label{question-46}}
+
+\begin{indication}{1}
+
+Traduire le principe de l'énoncé : une boucle qui s'arrête quand l'intervalle est assez étroit.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comment tester que \(f(b)\) et \(f(m)\) sont de même signe, sans supposer \(f\) croissante ?
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+\begin{lstlisting}[language=Python]
+def dichotomie(f, b, c, p):               # instructions 5
+    while c - b > p:
+        m = (b + c)/2
+        if f(b)*f(m) > 0:                 # même signe : racine dans [m, c]
+            b = m
+        else:
+            c = m
+    return (b + c)/2
+\end{lstlisting}
+
+\(f\) est continue et strictement croissante. Elle change de signe sur l'intervalle :
+\equationajustee{\begin{aligned}
+f(298)&\simeq-5{,}4\cdot10^4<0\\
+f(1\,000)&\simeq+3{,}2\cdot10^3>0
+\end{aligned}}
+La racine est unique, et 10 itérations suffisent pour \(p=1\) K. L'énoncé contient deux coquilles : \texttt{Dichotomie} avec une majuscule dans l'appel, et l'espace dans \texttt{print(f\ "…")}, qui est une erreur de syntaxe.
+
+\begin{methode}
+
+La dichotomie se code avec trois éléments : un critère d'arrêt sur la largeur de l'intervalle, un test de signe par produit, et une valeur renvoyée par \texttt{return}, pas affichée.
+
+\end{methode}
+
+\begin{piege}
+
+Ce sont exactement les trois manques relevés par le rapport 2026 : « la condition d'arrêt liée à la précision p est souvent absente », les conditions sur les intervalles et la réaffectation de \(m\) sont souvent fausses, et \(m\) n'est pas renvoyé. Tester mentalement deux tours de boucle avant de rendre.
+
+\end{piege}
+
+\hypertarget{question-47}{%
+\subsection{Question 47}\label{question-47}}
+
+\begin{indication}{1}
+
+Comparer \(T_a\) à \(T_s\) : le sens de l'écart est-il cohérent ? Pourquoi l'écart est-il si faible ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer le terme Joule à \(\sigma T_s^4\), puis se demander si 986 K est une température « ambiante » vraisemblable.
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+On a \(T_a\simeq986\) K \(<T_s\), ce qui est cohérent avec le fait que la tige cède de la chaleur.
+
+L'écart n'est que de 14 K, parce que le terme Joule (\(\simeq3{,}2\cdot10^3\) W·m⁻²) ne représente que 5,6 \% de \(\sigma T_s^4\simeq5{,}7\cdot10^4\) W·m⁻². En linéarisant :
+\equationajustee{\Delta T\simeq\frac{3{,}2\cdot10^3}{4\sigma T_s^3+H}\simeq14\ \mathrm K .}
+Une température ambiante de 713 °C est cependant irréaliste, ce qui révèle les limites du modèle. L'air (N₂, O₂) n'est pas un corps noir : il est transparent dans l'IR, et le rayonnement est absorbé par des parois plus froides. \(H=1\) W·m⁻²·K⁻¹ est faible pour de l'air (plutôt 5 à 25). Les pertes par les supports et les extrémités sont négligées.
+
+\begin{jury}
+
+Le rapport 2026 relève « Beaucoup de commentaires sans que les candidats ne sachent vraiment à quoi rattacher cette valeur ». Il faut des points de comparaison précis : \(T_s\) (sens de l'écart), l'ordre de grandeur d'une température ambiante, et les hypothèses du modèle.
+
+\end{jury}
+
+\hypertarget{ii.2-monochromateur-uxe0-ruxe9seau}{%
+\subsection{II.2 --- Monochromateur à réseau}\label{ii.2-monochromateur-uxe0-ruxe9seau}}
+
+On établit le déphasage entre deux traits du réseau, puis on simule le filtrage par une fente. Les outils sont la différence de marche, le rôle d'une lentille, les conditions de Gauss, les nombres complexes en Python et les boucles imbriquées.
+
+\hypertarget{question-48}{%
+\subsection{Question 48}\label{question-48}}
+
+\begin{indication}{1}
+
+Sous incidence normale, les traits vibrent en phase. Projeter l'écart \(a\) entre deux traits sur la direction des rayons émergents.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La lentille ajoute-t-elle une différence de marche entre des rayons parallèles qui convergent en \(M\) ? Où convergent les rayons inclinés de \(\theta\) ?
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+Sous incidence normale, le plan du réseau est une surface d'onde : deux fentes consécutives \(F_1\) et \(F_2\) vibrent en phase, et \(\delta=(F_2M)-(F_1M)\).
+
+Par retour inverse de la lumière, \(M\) est vu comme une source dans le plan focal image : les rayons qui en sont issus ressortent de la lentille parallèles, inclinés de \(\theta\). D'après le théorème de Malus, le plan perpendiculaire à ces rayons est une surface d'onde, à chemin optique constant jusqu'à \(M\).
+
+Soit \(H\) le projeté de \(F_1\) sur le rayon issu de \(F_2\). Comme \((HM)=(F_1M)\), il reste \(\delta=F_2H\).
+
+C'est un côté du triangle rectangle en \(H\), d'hypoténuse \(a\), opposé à l'angle \(\theta\) :
+\equationajustee{\delta=a\sin\theta .}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q48-difference-marche.pdf}
+\caption*{Figure 5 --- Différence de marche δ = a sin θ entre deux fentes
+consécutives, rayons réunis en M par la lentille}
+\end{figure}
+
+L'écran est dans le plan focal image, et le rayon passant par le centre optique n'est pas dévié : \(x=f'\tan\theta\). Dans les conditions de Gauss, \(\sin\theta\approx\tan\theta\approx x/f'\). Avec \(a=1/n\) :
+\equationajustee{\boxed{\delta\approx\frac x{nf'}}}
+\equationajustee{\boxed{\varphi=\frac{2\pi\delta}{\lambda_0}=\frac{2\pi x}{\lambda_0nf'}}}
+
+\begin{piege}
+
+\(n\) est un nombre de traits \textbf{par unité de longueur} : il est au dénominateur, car \(a=1/n\). On vérifie que \(nf'\) est sans dimension.
+
+\end{piege}
+
+\begin{piege}
+
+Deux triangles rectangles interviennent : celui du réseau donne \(\delta=a\sin\theta\), celui de la lentille donne \(\tan\theta=x/f'\). Le rapport 2026 cite des copies où on lit « sinθ = ax/f′ », signe de la confusion entre les deux, et note que la surface d'onde est souvent mal placée sur le schéma.
+
+\end{piege}
+
+\begin{jury}
+
+Question de cours « mal traitée et confuse » selon le rapport 2026 : beaucoup récitent le résultat sans les étapes. Le jury attend l'expression de la différence de chemin optique, le théorème de Malus et le retour inverse associés aux notions de surface d'onde et d'invariance du chemin optique, et la mention des conditions de Gauss : « Peu citent les conditions de Gauss pour l'approximation des petits angles ».
+
+\end{jury}
+
+\hypertarget{question-49}{%
+\subsection{Question 49}\label{question-49}}
+
+\begin{indication}{1}
+
+Traduction directe de la Q48. Attention au nom du paramètre.
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+\begin{lstlisting}[language=Python]
+import numpy as np
+def phi(x, lamda):                        # instruction 6
+    return 2*np.pi*x/(lamda*n*f)
+\end{lstlisting}
+
+\texttt{lambda} est un mot-clé réservé de Python, d'où le nom \texttt{lamda} imposé.
+
+\begin{piege}
+
+Le rapport 2026 relève l'absence du \texttt{return} dans une partie des copies : une fonction qui calcule sans renvoyer ne peut pas être appelée par \texttt{intensite}.
+
+\end{piege}
+
+\hypertarget{question-50}{%
+\subsection{Question 50}\label{question-50}}
+
+\begin{indication}{1}
+
+Sommer les \(N\) exponentielles complexes, puis multiplier par le conjugué.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le résultat sera comparé à un seuil en Q54 : quel type doit-il avoir ?
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+On prend \(A_0=1\), de sorte que la fonction renvoie \(I/I_0\).
+
+\begin{lstlisting}[language=Python]
+def intensite(x, lamda):                  # instructions 7
+    p = np.linspace(0, N-1, N)            # indices 0..N-1
+    A = np.sum(np.exp(-1j*p*phi(x, lamda)))
+    return (A*A.conjugate()).real
+\end{lstlisting}
+
+Contrôle : en \(x=0\), on obtient \(N^2=10^6\), comme sur la figure 10.
+
+\begin{piege}
+
+En Python, l'unité imaginaire s'écrit \texttt{1j}. Sans \texttt{.real}, le résultat reste de type complexe, et la comparaison avec un seuil lève une erreur.
+
+\end{piege}
+
+\begin{piege}
+
+Le rapport 2026 note que « Certains oublient de mettre l'incrément dans leurs expressions ou de faire la somme » : chaque terme porte son propre indice \(p\), et c'est la somme \(\underline A\) qu'on multiplie par son conjugué, pas chaque terme.
+
+\end{piege}
+
+\hypertarget{question-51}{%
+\subsection{Question 51}\label{question-51}}
+
+\begin{indication}{1}
+
+La fente a une largeur \(b\) et elle est centrée en \(x_0\).
+
+\end{indication}
+
+\hypertarget{solution-50}{%
+\subsubsection{Solution}\label{solution-50}}
+
+\begin{lstlisting}[language=Python]
+    x_min = x0 - b/2                      # instructions 8.1
+    x_max = x0 + b/2
+\end{lstlisting}
+
+\begin{piege}
+
+\(b\) est la largeur totale de la fente (figure 12), d'où \(\pm b/2\) autour de \(x_0\). Le rapport 2026 signale que « Les erreurs ont porté sur la largeur de la fente (2b au lieu de b) », et que certains ont codé une recherche de maximum et de minimum dans une liste alors qu'il s'agissait d'une simple lecture de figure.
+
+\end{piege}
+
+\hypertarget{question-52}{%
+\subsection{Question 52}\label{question-52}}
+
+\begin{indication}{1}
+
+Deux appels à la même fonction de l'annexe.
+
+\end{indication}
+
+\hypertarget{solution-51}{%
+\subsubsection{Solution}\label{solution-51}}
+
+\begin{lstlisting}[language=Python]
+    X_list = np.linspace(x_min, x_max, 1000)        # instructions 8.2
+    Lambda_list = np.linspace(2e-6, 6e-6, 1000)
+\end{lstlisting}
+
+Le pas en longueur d'onde vaut \(4\cdot10^{-6}/999\simeq4\cdot10^{-9}\) m : il interviendra en Q56.
+
+\begin{jury}
+
+Le rapport 2026 note que « Ceux qui ont utilisé linspace ont la plupart du temps proposé le code correct », alors que les boucles maison ne respectaient pas le cahier des charges (1 000 éléments, bornes incluses).
+
+\end{jury}
+
+\hypertarget{question-53}{%
+\subsection{Question 53}\label{question-53}}
+
+\begin{indication}{1}
+
+L'intensité maximale est le maximum de \texttt{intensite(\allowbreak{}x,\allowbreak{}\ lamda)\allowbreak{}} sur la grille : comment parcourir tous les couples \((x,\lambda)\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'annexe fournit \texttt{max}. Pour contrôler la valeur obtenue, lire l'ordonnée des pics sur la figure 10.
+
+\end{indication}
+
+\hypertarget{solution-52}{%
+\subsubsection{Solution}\label{solution-52}}
+
+On calcule l'intensité pour tous les couples de la grille, par une double boucle, puis on prend le maximum :
+
+\begin{lstlisting}[language=Python]
+    I_tout = []                           # instruction 8.3
+    for lamda in Lambda_list:
+        for x in X_list:
+            I_tout.append(intensite(x, lamda))
+    I_seuil = 0.1*max(I_tout)
+\end{lstlisting}
+
+Contrôle : le maximum vaut \(N^2=10^6\) quand les \(N\) ondes sont en phase (figure 10). Sur la grille de la fente centrée en 3 cm, on obtient \(0{,}99999\cdot10^6\) : écrire \texttt{I\_seuil\ =\allowbreak{}\ 0.1*N**2} donne ici le même résultat.
+
+\begin{jury}
+
+Le rapport 2026 indique que, à part ceux qui ont écrit seulement \texttt{0,1*I}, « l'erreur la plus courante a été de ne pas faire une double boucle », et que les candidats ont rarement utilisé \texttt{max}. La réponse attendue calcule donc le maximum sur la grille.
+
+\end{jury}
+
+\hypertarget{question-54}{%
+\subsection{Question 54}\label{question-54}}
+
+\begin{indication}{1}
+
+Deux boucles imbriquées, dans l'ordre indiqué par l'énoncé, et une liste remplie par \texttt{append}.
+
+\end{indication}
+
+\hypertarget{solution-53}{%
+\subsubsection{Solution}\label{solution-53}}
+
+\begin{lstlisting}[language=Python]
+    longueur_onde = []                    # instructions 8.4
+    for lamda in Lambda_list:
+        for x in X_list:
+            if intensite(x, lamda) > I_seuil:
+                longueur_onde.append(lamda)
+\end{lstlisting}
+
+Les doublons sont sans conséquence pour la suite.
+
+\begin{piege}
+
+Une seule boucle ne suffit pas : il faut tester chaque longueur d'onde pour chaque abscisse de la fente. C'est à nouveau l'erreur la plus courante selon le rapport 2026, qui note aussi que les candidats sont « beaucoup plus à l'aise avec l'utilisation des listes que celle des tableaux numpy ». Ici, une liste et \texttt{append} conviennent.
+
+\end{piege}
+
+\hypertarget{question-55}{%
+\subsection{Question 55}\label{question-55}}
+
+\begin{indication}{1}
+
+L'annexe fournit \texttt{max} et \texttt{min}.
+
+\end{indication}
+
+\hypertarget{solution-54}{%
+\subsubsection{Solution}\label{solution-54}}
+
+\begin{lstlisting}[language=Python]
+    return max(longueur_onde) - min(longueur_onde)  # instruction 8.5
+\end{lstlisting}
+
+\hypertarget{question-56}{%
+\subsection{Question 56}\label{question-56}}
+
+\begin{indication}{1}
+
+Commencer par identifier la longueur d'onde transmise : quel ordre d'interférence tombe en \(x_0=3\) cm ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Comparer \(\Delta\lambda\) à la largeur imposée par la fente, à \(\lambda_0\) et à l'étendue du spectre de la source. Penser aussi au pas de \texttt{Lambda\_list}.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour faire le lien avec la partie I, convertir la résolution en nombre d'onde.
+
+\end{indication}
+
+\hypertarget{solution-55}{%
+\subsubsection{Solution}\label{solution-55}}
+
+Les maxima principaux vérifient \(\varphi=2\pi p\), soit \(\lambda=x/(p\,nf')\) avec \(nf'=10^4\).
+
+En \(x_0=3\) cm, l'ordre 1 donne \(\lambda_0=3\) µm, qui est dans le spectre. L'ordre 2 donnerait 1,5 µm, hors spectre. \textbf{Seul l'ordre 1 est transmis, autour de 3 µm.}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q56-ordres-fente.pdf}
+\caption*{Figure 6 --- Positions des ordres sur l'écran, seul l'ordre 1 passe par
+la fente en x₀ = 3 cm, à λ₀ = 3 µm}
+\end{figure}
+
+La largeur obtenue a deux origines. La fente donne \(\Delta\lambda_{\text{fente}}=b/(nf')=10^{-8}\) m. La largeur propre d'un pic, finie car \(N=1\,000\), vaut environ \(4\cdot10^{-9}\) m au dixième du maximum.
+
+La somme, environ \(1{,}4\cdot10^{-8}\) m, est échantillonnée au pas de \(4\cdot10^{-9}\) m de \texttt{Lambda\_list} : quatre valeurs sont retenues, d'où \(\Delta\lambda=1{,}2\cdot10^{-8}\) m.
+\equationajustee{\boxed{\begin{aligned}
+\frac{\Delta\lambda}{\lambda_0}&=4\cdot10^{-3}\\
+\frac{\lambda_0}{\Delta\lambda}&\simeq250
+\end{aligned}}}
+La bande transmise est environ 300 fois plus étroite que le spectre de la source : le faisceau est quasi monochromatique. En nombre d'onde, \(\Delta\sigma=\Delta\lambda/\lambda_0^2\simeq13\) cm⁻¹, très inférieur aux écarts entre les bandes de la Q14 (350 cm⁻¹ et plus) : l'appareil sépare sans peine les liaisons simple, double et triple. C'est la fente qui limite la résolution. La rétrécir l'améliorerait, au prix d'une perte de flux lumineux.
+
+\begin{methode}
+
+Pour commenter une résolution spectrale, on la rapporte à \(\lambda_0\) (pouvoir de résolution), à l'étendue du spectre et aux grandeurs que l'on veut séparer. On identifie aussi le facteur limitant : la fente, le réseau ou la discrétisation numérique.
+
+\end{methode}
+
+\begin{jury}
+
+Pour cette question de fin de sujet, le rapport 2026 écrit : « Les candidats ne savent pas à quoi comparer cette valeur. Très peu abordent la notion de sélectivité ou filtre. » Le commentaire attendu dit que le dispositif est un filtre sélectif et chiffre cette sélectivité par des comparaisons.
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir}
+
+\begin{itemize}
+\tightlist
+\item
+  Lire un profil d'énergie potentielle : équilibre et stabilité, état lié ou libre, énergie de dissociation (Q2-Q3). Linéariser au voisinage d'un minimum pour obtenir \(k=E_p''(x_e)\) (Q4-Q5).
+\item
+  Ramener un problème à deux corps à une masse réduite (Q6-Q8). Associer des ressorts en parallèle : même allongement, les raideurs s'ajoutent (Q11).
+\item
+  Séparer les variables dans l'équation de Schrödinger (Q15). Utiliser le schéma centré de la dérivée seconde et une récurrence à deux termes en Python (Q16-Q23).
+\item
+  Onde dans un milieu de permittivité complexe : relation de dispersion, choix de la racine, atténuation de l'amplitude en \(e^{-k''x}\) et de l'intensité en \(e^{-2k''x}\) (Q27-Q33). On aboutit à la loi de Beer-Lambert (Q34-Q36).
+\item
+  Décompter les atomes d'une maille, relier masse volumique et paramètre de maille, trouver la direction de contact en CFC (Q38-Q40).
+\item
+  Bilan de puissance en régime permanent avec rayonnement et conducto-convection (Q41-Q44). Programmer une dichotomie (Q46).
+\item
+  Réseau en conditions de Gauss : \(\varphi=2\pi x/(\lambda nf')\) (Q48). Calculer une intensité à \(N\) ondes en Python et estimer une résolution spectrale (Q50-Q56).
+\end{itemize}
+
+\textbf{Ce qui a fait la différence en 2026} (rapport du jury) : le développement limité écrit en entier (Q4-Q5, Q29), la combinaison linéaire de Q8, le calcul en complexes de Q29 à Q33, le bilan thermique fondé sur le premier principe (Q41-Q44), la dichotomie complète (Q46), la démonstration de Q48 et les codes à double boucle de Q53-Q54. Partout, le jury sanctionne les résultats parachutés et récompense les étapes nommées.
+
+\textbf{Prérequis à revoir} : la règle de Klechkowski et ses exceptions, les identités d'analyse vectorielle, la notation complexe et la convention de signe, le vecteur de Poynting moyen, les fonctions numpy \texttt{linspace}, \texttt{zeros}, \texttt{sum} et les indices négatifs de Python.
+
+\textbf{Questions classiques transposables} : potentiel de Morse ou de Lennard-Jones (Q1-Q5), masse réduite (Q8), effet de peau ou absorption dans un milieu conducteur (Q27-Q33), maille CFC (Q38-Q40), fil chauffé par effet Joule (Q41-Q44), pouvoir de résolution d'un réseau (Q56). Dans chacun de ces exercices, il faut chiffrer le résultat puis le confronter à la réalité physique.
+
+\end{document}

@@ -1,0 +1,33 @@
+{
+  "slug": "mines-ponts_mp_maths-1_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Maths 1",
+    "annee": 2026
+  },
+  "questions": 18,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q4-fonction-test-bosse.svg",
+      "question": "Q4",
+      "legende": "Fonction test h = ψ_{c,d} : strictement positive pour c < x < d, nulle ailleurs, portée par un segment autour de x₀ où f ≥ f(x₀)/2 > 0"
+    },
+    {
+      "fichier": "figures/q6-perturbation-admissible.svg",
+      "question": "Q6",
+      "legende": "Perturbation y_ε = z₀ + εη à extrémités fixes : pour |ε| petit le graphe reste dans U, un ε trop grand peut l'en faire sortir"
+    },
+    {
+      "fichier": "figures/q15-arc-cycloide.svg",
+      "question": "Q15",
+      "legende": "Le graphe de y₀ (de A à B) est un arc de la cycloïde θ ↦ (θ − sin θ + c, 1 − cos θ), décrite par un point M d'un cercle de rayon 1 qui roule"
+    },
+    {
+      "fichier": "figures/q18-profils-catenoide.svg",
+      "question": "Q18",
+      "legende": "(a) Caténoïde engendrée par la rotation du graphe de y₀ entre les cercles x = 0 et x = 1 ; (b) les deux profils ch(γ(x − 1/2))/γ avec ch(γ/2) = γ"
+    }
+  ]
+}

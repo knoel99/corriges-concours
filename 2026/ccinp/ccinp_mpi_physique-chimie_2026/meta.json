@@ -1,0 +1,43 @@
+{
+  "slug": "ccinp_mpi_physique-chimie_2026",
+  "epreuve": {
+    "concours": "CCINP",
+    "filiere": "MPI",
+    "matiere": "Physique-chimie",
+    "annee": 2026
+  },
+  "questions": 33,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q3-superposition-petrole.svg",
+      "question": "Q3",
+      "legende": "principe de superposition : Terre réelle égale Terre pleine de masse volumique μ_T plus une boule de centre C, de masse volumique μ_p − μ_T < 0, dont le champ en M est dirigé vers l'extérieur"
+    },
+    {
+      "fichier": "figures/q8-equipotentielle.svg",
+      "question": "Q8",
+      "legende": "équipotentielle (Σ) dans un plan méridien, aplatissement exagéré, et allure de r(θ) pour 0 ≤ θ ≤ π"
+    },
+    {
+      "fichier": "figures/q10-trajets-mach-zehnder.svg",
+      "question": "Q10",
+      "legende": "trajets des rayons (1) et (2) dans l'interféromètre de la figure 3(a), axe z descendant d'origine O₁,₀"
+    },
+    {
+      "fichier": "figures/q16-resistances-serie.svg",
+      "question": "Q16",
+      "legende": "schéma équivalent de la figure 5 : cinq résistances thermiques en série traversées par le même flux Φ"
+    },
+    {
+      "fichier": "figures/q21-puissance-radiogenique.svg",
+      "question": "Q21",
+      "legende": "p_v(t) recalculée avec les valeurs du script, ses trois contributions et la construction de t₁/₂"
+    },
+    {
+      "fichier": "figures/q31-lignes-champ-dipole.svg",
+      "question": "Q31",
+      "legende": "lignes de champ r = K sin²θ du dipôle terrestre dans un plan méridien, orientées du sud vers le nord à l'extérieur"
+    }
+  ]
+}

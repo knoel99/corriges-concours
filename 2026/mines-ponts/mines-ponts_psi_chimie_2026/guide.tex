@@ -1,0 +1,1432 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts PSI — Chimie 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Mines-Ponts PSI}
+\fancyhead[R]{\small Chimie 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts PSI — Chimie 2026\par}\medskip
+  {\large Mines-Ponts · PSI · Chimie · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format.} 1 h 30, calculatrice et tout dispositif électronique interdits, 26 questions réparties en deux parties indépendantes. Les données sont regroupées en annexe, avec des approximations faites pour le calcul de tête :
+
+\begin{itemize}
+\tightlist
+\item
+  \({\mathcal{N}}_A\approx6\cdot10^{23}\) mol⁻¹ et \(R\approx8\) J·K⁻¹·mol⁻¹ ;
+\item
+  \(\sqrt2\approx10/7\approx1{,}4\) et \(\ln10\approx2{,}3\) ;
+\item
+  \(\frac{RT}{F}\ln x\approx0{,}06\log x\) V à 298 K.
+\end{itemize}
+
+Un résultat qui « tombe rond » (400 pm, \(10^{1580}\)\ldots) est souvent le signe qu'on a suivi le chemin prévu.
+
+\textbf{Thème.} La dépollution des eaux usées.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I --- Procédé électro-Fenton (Q1--Q20).} On fabrique par électrolyse les deux réactifs de Fenton (\(\mathrm{Fe^{2+}}\) et \(\mathrm{H_2O_2}\)), qui produisent le radical \(\mathrm{HO^\bullet}\), puis on suit la dégradation d'un colorant. Le parcours balaie presque tout le programme de chimie de PSI et de PCSI :
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{électrochimie (Q1--Q6)} : pouvoir oxydant, anode et cathode, montage d'électrolyse, montage à trois électrodes, courbes courant-potentiel avec systèmes lents et rapides, tension minimale d'électrolyse ;
+  \item
+    \emph{structure de la matière (Q7--Q8)} : électrons de valence, schémas de Lewis ;
+  \item
+    \emph{solutions aqueuses (Q9--Q11)} : diagramme potentiel-pH du fer, dilution, produit de solubilité ;
+  \item
+    \emph{cinétique et spectrophotométrie (Q12--Q17)} : choix de la longueur d'onde, temps de demi-réaction, loi de Beer-Lambert, loi intégrée d'ordre 1, linéarisation ;
+  \item
+    \emph{cristallographie (Q18--Q20)} : structure CFC du platine, paramètre de maille, masse volumique.
+  \end{itemize}
+\item
+  \textbf{Partie II --- Procédés biologiques (Q21--Q26).} Oxydation de l'éthanol par le dioxygène dissous (équilibrage, \(\Delta_rG^\circ\), \(K^\circ\)), puis par les ions nitrate en milieu anaérobie (nombre d'oxydation, demi-équations, relation de Nernst, constante d'équilibre d'une réaction d'oxydoréduction).
+\end{itemize}
+
+\textbf{Ce qu'en dit le jury.} Le rapport 2026 juge que « Le sujet était très proche du cours et a permis de classer les candidats de façon efficace ». Les questions qui ont fait la différence, d'après son analyse question par question :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Q3 et Q5}, « globalement mal traitée » et « généralement été mal traitée » : polarités du générateur, sens des électrons, signe des courants sur la courbe \(i=f(E)\) ;
+\item
+  \textbf{Q4}, réussie par une moitié des candidats seulement ;
+\item
+  \textbf{Q6}, où « Peu de candidats fournissent la bonne valeur numérique » ;
+\item
+  \textbf{Q10, Q11, Q15 et Q22}, faciles mais rarement menées au bout ou mal justifiées (dilution, relation \(Q^{eq}=K_s\), intégration de la loi d'ordre 1, valeur numérique de \(K^\circ\)) ;
+\item
+  \textbf{Q26}, peu traitée, faute de temps selon le jury, alors qu'elle n'avait rien de difficile.
+\end{itemize}
+
+À l'inverse, Q1, Q7, Q12, Q13, Q19, Q21 et Q23 ont été bien réussies : les manquer coûte cher.
+
+\textbf{Difficulté et gestion du temps.} Environ 3,5 minutes par question : le sujet est court mais dense, et chaque question rapporte. Questions abordables à ne pas laisser passer : Q1, Q2, Q7, Q10, Q14, Q15, Q18--Q21, Q23. Celles qui demandent le plus de construction : Q3--Q6 (schémas et lecture des surpotentiels), Q8 (Lewis), Q9 (justifier), Q24--Q26 (équilibrages et combinaison à 60 électrons).
+
+Plusieurs questions se terminent par « Justifier », « Cela est-il cohérent ? » ou « Conclure » : la phrase de conclusion fait partie de la réponse. Les deux parties étant indépendantes, on peut garder 15 minutes pour la partie II, très rentable : le jury constate que Q26 a souvent été sacrifiée.
+
+\hypertarget{partie-i-traitement-des-eaux-par-le-procuxe9duxe9-uxe9lectro-fenton}{%
+\section{Partie I --- Traitement des eaux par le procédé électro-Fenton}\label{partie-i-traitement-des-eaux-par-le-procuxe9duxe9-uxe9lectro-fenton}}
+
+\hypertarget{uxe9lectrochimie-du-procuxe9duxe9}{%
+\subsection{Électrochimie du procédé}\label{uxe9lectrochimie-du-procuxe9duxe9}}
+
+Six questions sur l'électrolyse : identifier les électrodes, câbler le montage, puis exploiter une courbe courant-potentiel dans laquelle les surpotentiels jouent le premier rôle. C'est le bloc le plus discriminant du sujet.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Le pouvoir oxydant se compare à l'aide d'une grandeur fournie en annexe 3.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'oxydant le plus fort appartient au couple dont la grandeur en question est la plus grande.
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+On compare les potentiels standard des couples \(\mathrm{HO^\bullet/H_2O}\) (\(2{,}80\) V) et \(\mathrm{Cl_2/Cl^-}\) (\(1{,}36\) V). L'oxydant le plus fort est celui du couple de plus haut potentiel standard : \textbf{le radical hydroxyle \(\mathrm{HO^\bullet}\) est plus oxydant que le dichlore.}
+
+\begin{piege}
+
+Justifier par « c'est un radical » n'utilise pas la donnée et ne répond pas à « Justifier ». Un potentiel standard renseigne sur la thermodynamique, pas sur la vitesse de l'oxydation.
+
+\end{piege}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Anode et cathode se définissent par la nature de la réaction qui s'y produit, pas par la borne du générateur.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Lire sur la figure 1 si chaque électrode porte un gain ou une perte d'électrons.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Électrode A : \(\mathrm{H_2O}\to2\,\mathrm{H^+}+\tfrac12\,\mathrm{O_2}+2\,e^-\) (« −2e⁻ »). L'oxygène passe de −II à 0, c'est une \textbf{oxydation} : \textbf{A est l'anode}.
+\item
+  Électrode B : \(\mathrm{O_2}+2\,\mathrm{H^+}+2\,e^-\to\mathrm{H_2O_2}\) et \(\mathrm{Fe^{3+}}+e^-\to\mathrm{Fe^{2+}}\) (« +2e⁻ », « +e⁻ »). Ce sont des \textbf{réductions} : \textbf{B est la cathode}.
+\end{itemize}
+
+La réaction de Fenton, \(\mathrm{Fe^{2+}}+\mathrm{H_2O_2}+\mathrm{H^+}\to\mathrm{Fe^{3+}}+\mathrm{H_2O}+\mathrm{HO^\bullet}\), a lieu en solution. Le Fe³⁺ formé diffuse vers la cathode où il est régénéré en Fe²⁺ : le fer est un catalyseur, d'où la « quantité catalytique » de l'énoncé.
+
+\begin{methode}
+
+Anode = oxydation, cathode = réduction, que l'on soit en pile ou en électrolyse. Seule la correspondance avec les bornes change (anode reliée à la borne + en électrolyse, anode pôle − en pile).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 précise : « L'identification seule ne suffisait pas mais devait être accompagnée d'une justification portant sur la nature des échanges observés (oxydation/réduction). » Écrire « A est l'anode » sans dire qu'il s'y produit une oxydation ne rapporte rien.
+
+\end{jury}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Pile ou électrolyseur ? Ici, les réactions aux électrodes sont-elles spontanées ou forcées ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'électrolyseur est un récepteur : c'est le générateur qui doit « aspirer » les électrons libérés à l'anode. Un ampèremètre mesure le courant qui le traverse : où doit-il être placé ?
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Le dispositif est un \textbf{électrolyseur} : les réactions sont forcées par un générateur extérieur. L'anode, siège de l'oxydation, doit donc être reliée à la borne + du générateur.
+
+Montage complété :
+
+\begin{itemize}
+\tightlist
+\item
+  un \textbf{générateur de tension continue} relié par sa \textbf{borne + à l'anode} (plaque de graphite) et par sa \textbf{borne − à la cathode} (feutre de carbone) ;
+\item
+  un \textbf{ampèremètre en série} dans le circuit, par exemple entre la borne + et la plaque de graphite.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q3-montage-electro-fenton.pdf}
+\caption*{Figure 1 --- dispositif électro-Fenton complété : générateur (borne +
+vers l'anode), ampèremètre en série, sens des électrons et du courant i}
+\end{figure}
+
+Les \textbf{électrons} sont libérés à l'anode par l'oxydation de l'eau et circulent dans le fil de l'anode vers la borne + du générateur. Ils le traversent et repartent par la borne − vers la cathode, où ils sont consommés.
+
+Le courant \(i\) circule en sens inverse dans le circuit extérieur. Dans la solution, ce sont les ions qui transportent le courant (anions vers l'anode, cations vers la cathode) : c'est le rôle du sulfate de sodium ajouté.
+
+\begin{piege}
+
+Erreur relevée par le jury : des polarités incompatibles avec le sens des électrons dessiné. Les deux doivent se correspondre : les électrons entrent dans le générateur par la borne + et en sortent par la borne −. Un ampèremètre en dérivation court-circuite le générateur.
+
+\end{piege}
+
+\begin{jury}
+
+Question « globalement mal traitée » selon le rapport 2026, qui note : « Les candidats confondent les dispositifs électrochimiques de type pile et électrolyseur. » Commencer la réponse par la nature du dispositif évite l'erreur de polarité.
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Pour tracer \(i=f(E)\), il faut à la fois imposer ou mesurer le potentiel d'une électrode et mesurer le courant qui la traverse. Combien d'électrodes faut-il pour que la mesure du potentiel ne soit pas faussée par le passage du courant ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une des électrodes sert d'origine des potentiels et ne doit être traversée par aucun courant. Et il faut bien une source pour faire varier le potentiel.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+Montage à \textbf{trois électrodes} plongeant dans la solution étudiée, reliées à un potentiostat (ou à un générateur réglable, un voltmètre et un ampèremètre) :
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{électrode de travail} (carbone/graphite) : électrode étudiée, dont on fixe le potentiel et dont on mesure le courant ;
+\item
+  \textbf{électrode de référence} (par exemple au calomel saturé) : potentiel fixe et connu ; le voltmètre est branché entre elle et l'électrode de travail ; elle n'est traversée par aucun courant ;
+\item
+  \textbf{contre-électrode} (électrode auxiliaire, par exemple en platine) : elle ferme le circuit du courant ; le générateur et l'ampèremètre sont en série entre elle et l'électrode de travail.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q4-montage-trois-electrodes.pdf}
+\caption*{Figure 2 --- montage à trois électrodes : générateur réglable et
+ampèremètre entre électrode de travail et contre-électrode, voltmètre
+entre électrode de travail et électrode de référence}
+\end{figure}
+
+Le générateur réglable est la source qui fait varier le potentiel de l'électrode de travail. On relève, point par point, \(E\) (au voltmètre, par rapport à la référence) et \(i\) (à l'ampèremètre).
+
+\begin{piege}
+
+Avec deux électrodes seulement, la tension mesurée mêle les deux potentiels d'électrode et la chute ohmique : on ne connaît pas le potentiel de l'électrode étudiée. La question demande aussi de nommer chaque électrode.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 indique que la question n'a été convenablement traitée que par une moitié des candidats : « Certains confondent l'attribution des électrodes tandis que d'autres ne positionnent aucune source permettant de faire varier le potentiel. »
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Commencer par recenser les espèces électroactives réellement présentes au départ (attention au fer).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour un système rapide, la vague se place au voisinage du potentiel standard ; pour un système lent, il faut décaler du surpotentiel donné. Une espèce dissoute en faible concentration donne un palier, le solvant donne un mur.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Ranger les vagues obtenues par potentiel croissant et les associer, de gauche à droite, aux portions de la figure 3, en vérifiant le signe de \(i\) de chacune.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Espèces présentes : \(\mathrm{O_2}\) dissous, \(\mathrm{Fe^{2+}}\), le solvant (\(\mathrm{H_2O}\), \(\mathrm{H^+}\)). Pas de Fe³⁺ au départ : aucune vague de réduction du fer(III).
+
+Les positions sont estimées avec les potentiels standard (pH voisin de 0, le pH n'étant pas précisé). À pH 2, les vagues des couples qui font intervenir \(\mathrm{H^+}\) se décalent toutes d'environ −0,12 V, celle du fer ne bouge pas : l'ordre des vagues est inchangé.
+
+\begin{itemize}
+\tightlist
+\item
+  Réduction \(\mathrm{O_2}\to\mathrm{H_2O_2}\) : système lent, vague décalée de −0,5 V par rapport à \(E^\circ=0{,}69\) V, donc vers 0,2 V. Palier de diffusion (O₂ dissous peu concentré).
+\item
+  Oxydation \(\mathrm{Fe^{2+}}\to\mathrm{Fe^{3+}}\) : système rapide, vague centrée vers \(E^\circ\approx0{,}68\) V. Palier de diffusion.
+\item
+  Oxydation de l'eau : système lent, mur vers \(1{,}23+0{,}5\approx1{,}7\) V. Pas de palier : le solvant est en excès.
+\item
+  Réduction des ions \(\mathrm{H^+}\) en \(\mathrm{H_2}\) : mur aux potentiels les plus bas.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q5-courbe-intensite-potentiel.pdf}
+\caption*{Figure 3 --- allure de la courbe intensité-potentiel annotée, axe des
+potentiels non à l'échelle, i positif en oxydation}
+\end{figure}
+
+Courbe reproduite et annotée, de gauche à droite. Convention : \(i>0\) pour une oxydation (au-dessus de l'axe), \(i<0\) pour une réduction (en dessous).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4872}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.4828}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Portion de la courbe
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Réaction électrochimique
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+mur cathodique, \(i<0\) (au voisinage de 0 V et en dessous) & \(2\,\mathrm{H^+}+2\,e^-\to\mathrm{H_2}\) \\
+vague puis palier cathodiques, \(i<0\) (vague vers 0,2 V) & \(\mathrm{O_2}+2\,\mathrm{H^+}+2\,e^-\to\mathrm{H_2O_2}\) \\
+zone de courant nul (≈ 0,2 V à ≈ 0,6 V) & aucune réaction \\
+vague puis palier anodiques, \(i>0\) (vers 0,68 V) & \(\mathrm{Fe^{2+}}\to\mathrm{Fe^{3+}}+e^-\) \\
+mur anodique, \(i>0\) (vers 1,7 V) & \(2\,\mathrm{H_2O}\to\mathrm{O_2}+4\,\mathrm{H^+}+4\,e^-\) \\
+\end{longtable}
+
+\begin{piege}
+
+Écrire une oxydation sur une portion où \(i<0\), ou l'inverse : c'est l'erreur que le jury relève le plus souvent ici. Autres confusions : dessiner une vague de réduction de Fe³⁺ (absent au départ), oublier les surpotentiels (les vagues de O₂ et de Fe²⁺ seraient alors superposées vers 0,7 V), attribuer la vague cathodique à \(\mathrm{O_2}\to\mathrm{H_2O}\) alors que le procédé repose sur la formation de \(\mathrm{H_2O_2}\).
+
+\end{piege}
+
+\begin{jury}
+
+D'après le rapport 2026, la question a été mal traitée : « les échanges proposés sont aléatoires et bien souvent incompatibles avec le signe conventionnel des intensités ».
+
+\end{jury}
+
+\begin{methode}
+
+Lecture d'une courbe courant-potentiel : palier = espèce dissoute limitée par la diffusion ; mur = solvant (ou électrode) ; vague raide au voisinage de \(E^\circ\) = système rapide ; vague décalée = système lent.
+
+\end{methode}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+La tension à appliquer est la différence entre le potentiel où la réaction anodique voulue démarre et celui où la réaction cathodique voulue démarre.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque potentiel de démarrage s'obtient à partir d'un potentiel standard corrigé du surpotentiel correspondant, avec son signe.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Le surpotentiel \(\eta\) n'est pas un potentiel : c'est l'écart à ajouter au potentiel standard pour qu'un système lent démarre (\(\eta<0\) à la cathode, \(\eta>0\) à l'anode).
+
+Cathode : \(\mathrm{H_2O_2}\) se forme à partir de :
+
+\equationajustee{E_c\approx0{,}69-0{,}5\approx0{,}2\ \mathrm{V}}
+
+Anode : \(\mathrm{O_2}\) se dégage à partir de :
+
+\equationajustee{E_a\approx1{,}23+0{,}5\approx1{,}7\ \mathrm{V}}
+
+D'où :
+
+\equationajustee{\begin{aligned}
+U_{\min}&=E_a-E_c\\
+&\approx(1{,}23+0{,}5)-(0{,}69-0{,}5)\\
+&\approx0{,}54+1{,}0
+\end{aligned}}
+
+\equationajustee{\boxed{U_{\min}\approx1{,}5\ \mathrm{V}}}
+
+Ce résultat ne dépend pas du pH : les deux couples échangent un proton par électron, et leurs potentiels varient tous deux de \(-0{,}06\) V par unité de pH. Il faut en pratique appliquer davantage, à cause de la chute ohmique \(R\,i\) dans la solution.
+
+\begin{piege}
+
+\(1{,}23-0{,}69=0{,}54\) V est la tension thermodynamique : elle ne ferait passer aucun courant. Les surpotentiels ne se compensent pas, ils s'ajoutent à la tension à fournir. Prendre \(0{,}5\) V pour un potentiel d'électrode est la confusion que relève le jury.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Beaucoup de candidats confondent potentiel et surpotentiel. Peu de candidats fournissent la bonne valeur numérique. »
+
+\end{jury}
+
+\hypertarget{structure-de-la-matiuxe8re}{%
+\subsection{Structure de la matière}\label{structure-de-la-matiuxe8re}}
+
+Le sel de Mohr fournit l'occasion de deux questions de cours sur la classification et les schémas de Lewis.
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+L'annexe 2 donne la position des éléments, pas leur numéro atomique : c'est la colonne qui renseigne sur les électrons de valence.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+Pour les blocs s et p, le nombre d'électrons de valence vaut le numéro de colonne (colonnes 1--2) ou ce numéro moins 10 (colonnes 13--18) :
+
+\begin{itemize}
+\tightlist
+\item
+  N : 2ᵉ ligne, 15ᵉ colonne (\(15-10\)) : \textbf{5 électrons de valence} ;
+\item
+  O : 2ᵉ ligne, 16ᵉ colonne (\(16-10\)) : \textbf{6 électrons de valence} ;
+\item
+  S : 3ᵉ ligne, même colonne que O, la 16ᵉ : \textbf{6 électrons de valence}.
+\end{itemize}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Commencer par le décompte des électrons de valence de chaque édifice, sans oublier la charge.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Répartir les doublets pour satisfaire l'octet (duet pour H), puis calculer les charges formelles. Pour l'ammonium, que devient le doublet non liant de l'azote ? Pour le peroxyde, quels atomes sont liés entre eux ?
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\textbf{Ion sulfate} \(\mathrm{SO_4^{2-}}\) : \(6+4\times6+2=32\) électrons, soit 16 doublets. Structure respectant l'octet : quatre liaisons simples S--O, trois doublets non liants sur chaque O. Charges formelles \(+2\) sur S et \(-1\) sur chaque O.
+
+Écriture également admise (S est de la 3ᵉ période) : deux liaisons S=O et deux S--O⁻, charge formelle nulle sur S ; les quatre liaisons sont équivalentes par mésomérie.
+
+\textbf{Ion ammonium} \(\mathrm{NH_4^+}\) : \(5+4-1=8\) électrons, 4 doublets liants N--H, aucun doublet non liant ; charge formelle \(+1\) sur N.
+
+\textbf{Peroxyde d'hydrogène} \(\mathrm{H_2O_2}\) : \(2+12=14\) électrons, 7 doublets : H--O--O--H et deux doublets non liants sur chaque O ; pas de charge formelle.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q8-lewis-sulfate-ammonium-peroxyde.pdf}
+\caption*{Figure 4 --- schémas de Lewis de l'ion sulfate (octet, charges
+formelles), de l'ion ammonium et du peroxyde d'hydrogène}
+\end{figure}
+
+\begin{piege}
+
+Laisser un doublet non liant sur l'azote de l'ammonium lui donnerait dix électrons : impossible pour un élément de la 2ᵉ période. Dans \(\mathrm{H_2O_2}\), la liaison O--O simple est la signature du peroxyde (oxygène au nombre d'oxydation −I).
+
+\end{piege}
+
+\begin{jury}
+
+Question simple, mais le rapport 2026 rappelle : « Tous les doublets non liants doivent être convenablement positionnés, ainsi que les éventuelles charges formelles. »
+
+\end{jury}
+
+\hypertarget{diagramme-potentiel-ph-et-solubilituxe9}{%
+\subsection{Diagramme potentiel-pH et solubilité}\label{diagramme-potentiel-ph-et-solubilituxe9}}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Calculer le nombre d'oxydation du fer dans les cinq espèces : combien d'« étages » horizontaux attend-on ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Verticalement, le nombre d'oxydation croît avec \(E\). Horizontalement, à nombre d'oxydation fixé, laquelle des deux espèces est la forme acide, laquelle la forme basique ?
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+Nombres d'oxydation du fer (O : −II, H : +I), notés \(x\) :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\mathrm{Fe^{3+}}\) : +III ;
+\item
+  \(\mathrm{Fe(OH)_3}\) : \(x+3\times(-1)=0\), soit +III ;
+\item
+  \(\mathrm{Fe^{2+}}\) : +II ;
+\item
+  \(\mathrm{Fe(OH)_2}\) : \(x+2\times(-1)=0\), soit +II ;
+\item
+  Fe : 0.
+\end{itemize}
+
+Trois étages : +III en haut, +II au milieu, 0 en bas.
+
+À nombre d'oxydation fixé, l'ion libre est la forme acide et l'hydroxyde la forme basique : \(\mathrm{Fe^{3+}}+3\,\mathrm{H_2O}=\mathrm{Fe(OH)_3}+3\,\mathrm{H^+}\) (de même au degré +II). L'ion occupe donc les pH acides, l'hydroxyde les pH basiques.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Domaine & Espèce & n.o. du fer \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{A} & \(\mathrm{Fe^{3+}_{(aq)}}\) & +III \\
+\textbf{B} & \(\mathrm{Fe(OH)_{3(s)}}\) & +III \\
+\textbf{C} & \(\mathrm{Fe^{2+}_{(aq)}}\) & +II \\
+\textbf{D} & \(\mathrm{Fe(OH)_{2(s)}}\) & +II \\
+\textbf{E} & \(\mathrm{Fe_{(s)}}\) & 0 \\
+\end{longtable}
+
+Contrôles sur les frontières :
+
+\begin{itemize}
+\tightlist
+\item
+  A/C est horizontale (couple Fe³⁺/Fe²⁺ sans échange de proton) ;
+\item
+  A/B et C/D sont verticales (précipitations, pas d'électron échangé) ;
+\item
+  B/C a une pente de \(-0{,}18\) V/pH (\(\mathrm{Fe(OH)_3}+3\,\mathrm{H^+}+e^-=\mathrm{Fe^{2+}}+3\,\mathrm{H_2O}\)), plus forte que celles de B/D et D/E (\(-0{,}06\) V/pH), conformément à la figure.
+\end{itemize}
+
+\begin{methode}
+
+Pour attribuer les domaines d'un diagramme E-pH : n.o. croissant vers le haut, basicité croissante vers la droite (ions, puis hydroxydes ou oxydes, puis éventuellement complexes hydroxo). Les pentes des frontières se contrôlent par le rapport du nombre de protons au nombre d'électrons.
+
+\end{methode}
+
+\begin{jury}
+
+Le calcul des nombres d'oxydation n'a pas posé de difficulté, mais selon le rapport 2026 « le jury attend une justification portant sur les nombres d'oxydation et sur l'acidité/basicité des différentes espèces afin de justifier complètement l'attribution proposée ». Le tableau seul ne suffit pas : il faut les deux arguments.
+
+\end{jury}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Une seule des trois additions apporte du fer(II). Dans quel volume final est-il dilué ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Seul le sel de Mohr apporte Fe²⁺ :
+
+\equationajustee{n=4{,}5\cdot10^{-3}\times10\cdot10^{-3}=4{,}5\cdot10^{-5}\ \mathrm{mol}}
+
+Le volume total vaut \(170+10=180\) mL (gouttes d'acide et volume du sulfate de sodium négligés). La quantité de fer(II) se conserve lors de la dilution :
+
+\equationajustee{C_0=\frac{n}{V}=\frac{4{,}5\cdot10^{-5}}{0{,}180}}
+
+\equationajustee{\boxed{C_0=2{,}5\cdot10^{-4}\ \mathrm{mol\cdot L^{-1}}}}
+
+\begin{piege}
+
+Recopier \(4{,}5\cdot10^{-3}\) mol·L⁻¹ (oubli de la dilution) ou diviser par 170 mL seulement.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 regrette que cette simple dilution ne soit « pas assez souvent menée à terme » : le calcul, sans calculatrice, doit aller jusqu'à la valeur et l'unité.
+
+\end{jury}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Au tout début de la précipitation, le quotient de réaction de la dissolution atteint juste le produit de solubilité, tout le fer(III) étant encore dissous.
+
+\end{indication}
+
+\begin{indication}{2}
+
+En déduire \([\mathrm{HO^-}]\) puis le pH, et comparer au pH du protocole en disant pourquoi c'est souhaitable.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Équilibre de dissolution : \(\mathrm{Fe(OH)_{3(s)}}=\mathrm{Fe^{3+}_{(aq)}}+3\,\mathrm{HO^-_{(aq)}}\). Au début de la précipitation :
+
+\equationajustee{Q^{eq}=\frac{[\mathrm{Fe^{3+}}]\,[\mathrm{HO^-}]^3}{(c^\circ)^4}=K_s}
+
+\equationajustee{K_s=10^{-\mathrm{p}K_s}=10^{-38}}
+
+avec \([\mathrm{Fe^{3+}}]=C_0'=1{,}0\cdot10^{-4}\) mol·L⁻¹. D'où :
+
+\equationajustee{\begin{aligned}
+\left(\frac{[\mathrm{HO^-}]}{c^\circ}\right)^3&=\frac{10^{-38}}{10^{-4}}=10^{-34}\\
+\mathrm{pOH}&=\frac{34}{3}\approx11{,}3\\
+\mathrm{pH}&=14-\mathrm{pOH}
+\end{aligned}}
+
+\equationajustee{\boxed{\mathrm{pH}\approx2{,}7}}
+
+Au-delà de pH 2,7, \(\mathrm{Fe(OH)_3}\) précipite. L'expérience est menée à pH = 2 \textless{} 2,7 : le fer(III) ne précipite pas. Il reste en solution, peut être réduit à la cathode et entretenir le cycle de Fenton. \textbf{Les conditions sont cohérentes.}
+
+Même si tout le fer du bécher était à l'état +III (\(2{,}5\cdot10^{-4}\) mol·L⁻¹), on trouverait pH ≈ 2,5 \textgreater{} 2.
+
+\begin{piege}
+
+Confondre pOH et pH (annoncer 11,3), ou oublier la puissance 3. Un cation aussi acide que Fe³⁺ précipite en milieu franchement acide : le résultat doit être un petit pH.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève que trop de candidats ne savent pas écrire la relation de type \(Q^{eq}=K_S\) et méconnaissent la définition de \(K_S\). Il ajoute qu'écrire « c'est cohérent » n'est pas une justification : il faut comparer les deux pH et dire ce que cela implique pour le fer(III).
+
+\end{jury}
+
+\hypertarget{cinuxe9tique-de-duxe9gradation-du-bleu-de-muxe9thyluxe8ne}{%
+\subsection{Cinétique de dégradation du bleu de méthylène}\label{cinuxe9tique-de-duxe9gradation-du-bleu-de-muxe9thyluxe8ne}}
+
+Le suivi est spectrophotométrique : on choisit la longueur d'onde, on exploite le tableau, puis on établit et on vérifie la loi d'ordre 1.
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Sur le spectre de l'annexe 6, quelle longueur d'onde donne la mesure la plus sensible ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Penser aussi à la stabilité de la mesure si le réglage de \(\lambda\) est légèrement imprécis.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+On règle l'appareil au \textbf{maximum d'absorption} du bleu de méthylène :
+
+\equationajustee{\boxed{\lambda\approx665\ \mathrm{nm}}}
+
+(un maximum secondaire, plus bas, apparaît vers 620 nm). Justification :
+
+\begin{itemize}
+\tightlist
+\item
+  \(\varepsilon\) y est maximal : sensibilité maximale ;
+\item
+  au voisinage d'un maximum, \(A\) varie peu avec \(\lambda\) : une petite erreur de réglage a peu d'effet ;
+\item
+  le BM étant la seule espèce colorée, l'absorbance mesurée ne dépend que de sa concentration.
+\end{itemize}
+
+Une solution qui absorbe dans l'orangé-rouge apparaît bien bleue (couleur complémentaire).
+
+\begin{piege}
+
+Choisir une longueur d'onde « bleue » (vers 450--480 nm) confond couleur perçue et couleur absorbée.
+
+\end{piege}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Relier l'absorbance à la concentration en BM pour traduire « la moitié du BM a disparu ».
+
+\end{indication}
+
+\begin{indication}{2}
+
+Encadrer la valeur cherchée par deux colonnes du tableau, puis interpoler.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\(A\) est proportionnelle à \([\mathrm{BM}]\) (seule espèce colorée) : \(t_{1/2}\) vérifie \(A=A_0/2=0{,}937\).
+
+Le tableau donne \(A(240)=0{,}993\) et \(A(300)=0{,}863\), qui encadrent 0,937. Par interpolation linéaire :
+
+\equationajustee{\begin{aligned}
+t_{1/2}&\approx240+60\times\frac{0{,}993-0{,}937}{0{,}993-0{,}863}\\
+&\approx240+26
+\end{aligned}}
+
+\equationajustee{\boxed{t_{1/2}\approx2{,}7\cdot10^{2}\ \mathrm{s}}}
+
+soit environ 4,5 min (encadrement sûr : entre 240 et 300 s).
+
+\begin{piege}
+
+Chercher l'instant où \(A=0{,}5\) au lieu de \(A_0/2\). Utiliser \(\ln2/k\) suppose l'ordre 1, qui n'est vérifié qu'en Q16 ; la question demande d'exploiter le tableau.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Question de cours : donner la définition de l'absorbance, la loi, puis chaque grandeur avec son unité usuelle.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+Pour une espèce absorbante en solution, éclairée en lumière monochromatique de longueur d'onde \(\lambda\) :
+
+\equationajustee{\boxed{A=\log\frac{I_0}{I}=\varepsilon_\lambda\,\ell\,c}}
+
+\begin{itemize}
+\tightlist
+\item
+  \(A\) : absorbance, sans dimension (\(I_0\) intensité incidente, \(I\) intensité transmise) ;
+\item
+  \(\varepsilon_\lambda\) : coefficient d'absorption molaire, en L·mol⁻¹·cm⁻¹ ;
+\item
+  \(\ell\) : longueur de solution traversée (épaisseur de la cuve), en cm ;
+\item
+  \(c\) : concentration de l'espèce absorbante, en mol·L⁻¹.
+\end{itemize}
+
+La loi vaut pour des solutions diluées ; les absorbances de plusieurs espèces s'ajoutent.
+
+\begin{jury}
+
+Rapport 2026 : « La loi de Beer-Lambert écrite sous la forme \(A = kC\) sans explicitation de \(k\) n'est pas acceptée. » L'énoncé demandait de nommer chaque terme avec des unités cohérentes entre elles.
+
+\end{jury}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Écrire la loi de vitesse d'ordre 1, puis intégrer l'équation différentielle obtenue.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Passer des concentrations aux absorbances grâce à la question précédente.
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+Loi de vitesse d'ordre 1, séparation des variables, puis intégration entre 0 et \(t\) :
+
+\equationajustee{\begin{aligned}
+v=-\frac{\mathrm{d}[\mathrm{BM}]}{\mathrm{d}t}&=k[\mathrm{BM}]\\
+\frac{\mathrm{d}[\mathrm{BM}]}{[\mathrm{BM}]}&=-k\,\mathrm{d}t\\
+\ln\frac{[\mathrm{BM}](t)}{[\mathrm{BM}]_0}&=-k\,t
+\end{aligned}}
+
+Le BM étant la seule espèce colorée, à \(\lambda\) et cuve fixées, \(A=\varepsilon\ell[\mathrm{BM}]\) et \(A_0=\varepsilon\ell[\mathrm{BM}]_0\). Le rapport des concentrations est celui des absorbances :
+
+\equationajustee{\boxed{\ln A=\ln A_0-k\,t}}
+
+soit \(A(t)=A_0\,{\mathrm{e}}^{-kt}\).
+
+\begin{methode}
+
+Méthode intégrale : on postule un ordre, on écrit la fonction de la concentration (ou de l'absorbance) qui doit être affine en \(t\), et on vérifie l'alignement. Ordre 1 : \(\ln A\) ; ordre 2 : \(1/[\mathrm{BM}]\).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 note que cette « simple intégration d'une cinétique d'ordre 1 a posé problème à beaucoup de candidats qui se contentent de fournir un résultat connu par cœur ». « Établir » impose d'écrire l'équation différentielle et de l'intégrer.
+
+\end{jury}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Que prédit la question précédente pour la courbe \(\ln A=f(t)\) si l'ordre est 1 ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Identifier terme à terme le modèle et l'équation de la droite ; attention au signe et à l'unité.
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+Pour un ordre 1, la question 15 prévoit que \(\ln A\) est une fonction affine décroissante de \(t\), de pente \(-k\).
+
+Sur la figure 5, les points \(\ln A\) en fonction de \(t\) (en s) s'alignent sur la droite \(y=-2{,}23\cdot10^{-3}x+0{,}563\) entre 0 et 600 s : \textbf{l'allure justifie l'ordre 1}. Par identification de la pente :
+
+\equationajustee{\boxed{k=2{,}23\cdot10^{-3}\ \mathrm{s^{-1}}}}
+
+On peut nuancer à partir du tableau 1 : les \(\ln A\) calculés sont un peu au-dessus de la droite aux deux extrémités (0,63 contre 0,563 à \(t=0\)). L'ordonnée à l'origine donne ainsi \({\mathrm{e}}^{0{,}563}\approx1{,}76\) au lieu de \(A_0=1{,}873\). Cette légère courbure explique l'écart entre le \(t_{1/2}\) lu en Q13 (≈ 270 s) et \(\ln2/k\approx310\) s.
+
+\begin{piege}
+
+\(k\) est positive : c'est la pente qui vaut \(-k\). Et la constante de vitesse d'un ordre 1 s'exprime en s⁻¹ : le jury compte faux un résultat sans unité. Un alignement confirme un ordre supposé, il ne le démontre pas.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 précise que seuls les candidats qui avaient établi la relation de Q15 ont pu prétendre aux points, et rappelle : « Un résultat sans unité est compté faux. »
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Traduire « éliminer 99 \% » en rapport \(A/A_0\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Inverser la loi de Q15 et utiliser l'approximation de \(\ln10\) fournie.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Il reste 1 \% du BM : \(A/A_0=10^{-2}\), donc
+
+\equationajustee{\begin{aligned}
+t_{99}&=\frac{1}{k}\ln\frac{A_0}{A}=\frac{2\ln10}{k}\\
+&\approx\frac{4{,}6}{2{,}23\cdot10^{-3}}
+\end{aligned}}
+
+\equationajustee{\boxed{t_{99}\approx2{,}1\cdot10^{3}\ \mathrm{s}\approx34\ \mathrm{min}}}
+
+Les 10 minutes de l'expérience ne dégradent qu'environ trois quarts du colorant (il reste \(0{,}495/1{,}873\approx26\) \%).
+
+\begin{piege}
+
+Écrire \(t=\frac1k\ln\frac{A}{A_0}\) donne une durée négative ; le jury relève de nombreuses copies où cette durée « devient par magie positive à la ligne suivante ». Écrire \(\ln(A_0/A)\), positif, dès le départ. Autre erreur : prendre \(A/A_0=0{,}99\) (ce qui reste après avoir éliminé 1 \%).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « De nombreuses erreurs de signe aboutissent à une durée négative qui devient par magie positive à la ligne suivante. » Une erreur rattrapée sans explication est sanctionnée : le rapport rappelle que la malhonnêteté ne paye pas.
+
+\end{jury}
+
+\hypertarget{cristallographie-du-platine}{%
+\subsection{Cristallographie du platine}\label{cristallographie-du-platine}}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Dans une structure CFC, où sont les atomes ? Par combien de mailles chaque position est-elle partagée ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la coordinence, se placer sur un atome au centre d'une face et compter ses voisins les plus proches de part et d'autre de cette face.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Maille conventionnelle : cube d'arête \(a\), atomes aux 8 sommets et aux centres des 6 faces.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q18-maille-cfc.pdf}
+\caption*{Figure 5 --- maille conventionnelle CFC du platine : 8 atomes aux
+sommets comptés 1/8, 6 aux centres des faces comptés 1/2}
+\end{figure}
+
+\begin{itemize}
+\tightlist
+\item
+  Population : \(N=8\times\frac18+6\times\frac12=\boxed{4\ \text{atomes par maille}}\).
+\item
+  Coordinence, c'est-à-dire nombre de plus proches voisins d'un atome : un atome au centre d'une face a pour plus proches voisins, à \(a/\sqrt2\), les 4 sommets de cette face et 4 centres de faces dans chacune des deux mailles qui la partagent : \(\boxed{12}\).
+\end{itemize}
+
+\begin{piege}
+
+Compter 14 atomes (oubli des partages) ou une coordinence de 8 (confusion avec la structure cubique centrée). Le jury signale aussi la confusion entre coordinence (un nombre de voisins) et compacité (une fraction du volume occupée, 0,74 en CFC).
+
+\end{piege}
+
+\begin{jury}
+
+Question bien traitée, « même si de nombreux candidats méconnaissent la définition de la coordinence et la confondent avec la compacité de l'édifice » (rapport 2026). Donner la définition en une demi-ligne lève toute ambiguïté.
+
+\end{jury}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Le long de quelle direction de la maille CFC les atomes sont-ils tangents ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrire cette condition de contact, puis utiliser l'approximation de \(\sqrt2\) de l'annexe 1.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Les atomes sont tangents le long de la diagonale d'une face (sommet, centre de face, sommet opposé) : \(a\sqrt2=4R\), soit \(a=2\sqrt2\,R\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q19-contact-diagonale-face.pdf}
+\caption*{Figure 6 --- face de la maille CFC : contact des atomes le long de la
+diagonale, a√2 = 4R}
+\end{figure}
+
+Avec \(\sqrt2\approx10/7\) :
+
+\equationajustee{a\approx2\times\frac{10}{7}\times140\ \mathrm{pm}}
+
+\equationajustee{\boxed{a\approx4{,}0\cdot10^{2}\ \mathrm{pm}=4{,}0\cdot10^{-10}\ \mathrm{m}}}
+
+(Sans approximation : 396 pm.)
+
+\begin{methode}
+
+Contact selon l'arête : cubique simple (\(a=2R\)) ; selon la grande diagonale : cubique centrée (\(a\sqrt3=4R\)) ; selon la diagonale de face : CFC (\(a\sqrt2=4R\)).
+
+\end{methode}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Masse volumique = masse des atomes d'une maille divisée par son volume.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Convertir \(a\) et \(M\) dans un système cohérent avant de calculer.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+En unités SI :
+
+\equationajustee{\begin{aligned}
+\rho&=\frac{N\,M(\mathrm{Pt})}{{\mathcal{N}}_A\,a^3}\\
+&=\frac{4\times200\cdot10^{-3}}{6\cdot10^{23}\times(4{,}0\cdot10^{-10})^3}\\
+&=\frac{0{,}8}{3{,}84\cdot10^{-5}}\ \mathrm{kg\cdot m^{-3}}
+\end{aligned}}
+
+\equationajustee{\boxed{\rho\approx2{,}1\cdot10^{4}\ \mathrm{kg\cdot m^{-3}}=21\ \mathrm{g\cdot cm^{-3}}}}
+
+Cohérent avec la valeur tabulée du platine (21,4 g·cm⁻³), l'un des métaux les plus denses.
+
+\begin{piege}
+
+Oublier \(N=4\) (on trouverait environ 5 g·cm⁻³) ou se tromper de puissance de dix en élevant \(a\) au cube.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 indique que l'application numérique était acceptée avec une marge de tolérance : l'essentiel est la relation littérale juste, puis un ordre de grandeur correct avec son unité.
+
+\end{jury}
+
+\hypertarget{partie-ii-traitement-des-eaux-par-des-procuxe9duxe9s-biologiques}{%
+\section{Partie II --- Traitement des eaux par des procédés biologiques}\label{partie-ii-traitement-des-eaux-par-des-procuxe9duxe9s-biologiques}}
+
+Deux oxydants pour l'éthanol, modèle de la matière organique : le dioxygène dissous (approche thermochimique) puis l'ion nitrate (approche par les potentiels). Dans les deux cas, la conclusion porte sur le caractère quantitatif et sur le rôle cinétique des bactéries.
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+Équilibrer successivement le carbone, l'hydrogène, puis l'oxygène, avec le coefficient 1 imposé pour l'éthanol.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\equationajustee{\boxed{\mathrm{C_2H_6O_{(aq)}}+3\,\mathrm{O_{2(aq)}}\longrightarrow2\,\mathrm{CO_{2(g)}}+3\,\mathrm{H_2O_{(\ell)}}}}
+
+Contrôle : C 2 = 2 ; H 6 = 6 ; O 1 + 6 = 4 + 3. Bilan électronique : 2 C passent de −II à +IV (12 électrons cédés), 3 O₂ en captent 12.
+
+\begin{piege}
+
+Les états physiques comptent : le dioxygène est dissous, ce qui conditionne les données à utiliser à la question suivante.
+
+\end{piege}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Loi de Hess pour \(\Delta_rH^\circ\) et pour \(\Delta_rS^\circ\), avec les données de l'annexe 5 telles quelles (regarder la ligne de \(\mathrm{O_{2(aq)}}\)).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Attention aux unités en combinant \(\Delta_rH^\circ\) (kJ) et \(T\Delta_rS^\circ\) (J), puis relier \(\Delta_rG^\circ\) à \(K^\circ\) et passer au logarithme décimal.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+\equationajustee{\Delta_rH^\circ=2(-400)+3(-300)-(-300)-3(-10)=-1370\ \mathrm{kJ\cdot mol^{-1}}}
+
+\equationajustee{\Delta_rS^\circ=2(200)+3(50)-150-3(100)=+100\ \mathrm{J\cdot K^{-1}\cdot mol^{-1}}}
+
+\equationajustee{\begin{aligned}
+\Delta_rG^\circ&=\Delta_rH^\circ-T\Delta_rS^\circ\\
+&=-1370-298\times0{,}100\\
+&\approx-1370-30\ \mathrm{kJ\cdot mol^{-1}}
+\end{aligned}}
+
+\equationajustee{\boxed{\Delta_rG^\circ\approx-1{,}40\cdot10^{3}\ \mathrm{kJ\cdot mol^{-1}}}}
+
+De \(\Delta_rG^\circ=-RT\ln K_1^\circ\) :
+
+\equationajustee{\begin{aligned}
+\ln K_1^\circ&=-\frac{\Delta_rG^\circ}{RT}=\frac{1{,}40\cdot10^{6}}{8\times298}\approx587\\
+\log K_1^\circ&=\frac{587}{2{,}3}\approx255
+\end{aligned}}
+
+\equationajustee{\boxed{K_1^\circ\approx10^{255}}}
+
+Conclusion : la réaction est \textbf{thermodynamiquement totale} ; l'éthanol peut être entièrement minéralisé par le dioxygène dissous. Elle est cependant lente à température ambiante : ce sont les bactéries (leurs enzymes) qui la catalysent. Le terme entropique (\(\approx30\) kJ·mol⁻¹) est négligeable devant le terme enthalpique.
+
+\begin{piege}
+
+Prendre \(\Delta_fH^\circ(\mathrm{O_2})=0\) : c'est vrai pour le gaz dans son état standard de référence, pas pour le dioxygène dissous, auquel l'annexe attribue −10 kJ·mol⁻¹. Oublier le facteur \(10^{-3}\) dans \(T\Delta_rS^\circ\) donnerait un \(\Delta_rG^\circ\) absurde.
+
+\end{piege}
+
+\begin{jury}
+
+Selon le rapport 2026, les relations sont connues mais peu de candidats aboutissent à une valeur acceptable de \(K^\circ\) ; « Les candidats qui ont eu le courage de mener les calculs ont été récompensés. » Avec \(8\times298\approx2{,}4\cdot10^3\) et \(\ln10\approx2{,}3\), le calcul se fait de tête. La phrase de conclusion (réaction totale, mais lente sans catalyse) est attendue.
+
+\end{jury}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+La somme des nombres d'oxydation des atomes vaut la charge de l'ion.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Avec O à −II :
+
+\equationajustee{x+3\times(-2)=-1}
+
+d'où \(\boxed{\mathrm{n.o.(N)}=+\mathrm{V}}\) : c'est le nombre d'oxydation maximal de l'azote (5 électrons de valence), l'ion nitrate ne peut être que réduit.
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Équilibrer l'azote, puis l'oxygène avec de l'eau, l'hydrogène avec des ions \(\mathrm{H^+}\), et enfin les charges avec des électrons.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans la relation de Nernst, chaque espèce apparaît par son activité : concentration rapportée à \(c^\circ\) pour un soluté, pression partielle rapportée à \(p^\circ\) pour un gaz ; l'eau n'apparaît pas.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+\equationajustee{\boxed{2\,\mathrm{NO^-_{3(aq)}}+12\,\mathrm{H^+_{(aq)}}+10\,e^-=\mathrm{N_{2(g)}}+6\,\mathrm{H_2O_{(\ell)}}}}
+
+Contrôle : \(2\times(5-0)=10\) électrons ; charges \(-2+12-10=0\).
+
+L'oxydant \(\mathrm{NO_3^-}\) et les \(\mathrm{H^+}\) de son côté vont au numérateur, le réducteur \(\mathrm{N_2}\) au dénominateur :
+
+\equationajustee{\boxed{E_1=1{,}25+\frac{0{,}06}{10}\log\frac{[\mathrm{NO_3^-}]^2\,[\mathrm{H^+}]^{12}}{(c^\circ)^{14}\,\dfrac{p_{\mathrm{N_2}}}{p^\circ}}}}
+
+soit, en V :
+
+\equationajustee{E_1=1{,}25+0{,}012\log\frac{[\mathrm{NO_3^-}]}{c^\circ}-0{,}072\,\mathrm{pH}-0{,}006\log\frac{p_{\mathrm{N_2}}}{p^\circ}}
+
+\begin{piege}
+
+Oublier le coefficient 2 devant \(\mathrm{NO_3^-}\) (le diazote est diatomique) fausse le nombre d'électrons et toute la question 26.
+
+\end{piege}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Même méthode ; le carbone de l'éthanol est en moyenne au nombre d'oxydation −II.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\equationajustee{\boxed{2\,\mathrm{CO_{2(g)}}+12\,\mathrm{H^+_{(aq)}}+12\,e^-=\mathrm{C_2H_6O_{(aq)}}+3\,\mathrm{H_2O_{(\ell)}}}}
+
+Contrôle : \(2\times(4-(-2))=12\) électrons, cohérent avec le bilan de Q21.
+
+L'oxydant est ici \(\mathrm{CO_2}\) (numérateur), le réducteur l'éthanol (dénominateur) :
+
+\equationajustee{\boxed{E_2=-0{,}33+\frac{0{,}06}{12}\log\frac{\left(\dfrac{p_{\mathrm{CO_2}}}{p^\circ}\right)^2[\mathrm{H^+}]^{12}}{[\mathrm{C_2H_6O}]\,(c^\circ)^{11}}}}
+
+soit, en V :
+
+\equationajustee{E_2=-0{,}33+0{,}01\log\frac{p_{\mathrm{CO_2}}}{p^\circ}-0{,}06\,\mathrm{pH}-0{,}005\log\frac{[\mathrm{C_2H_6O}]}{c^\circ}}
+
+\begin{methode}
+
+Relation de Nernst : toujours « log (oxydant et espèces de son côté) sur (réducteur et espèces de son côté) », chaque activité élevée à son coefficient stœchiométrique.
+
+\end{methode}
+
+\begin{piege}
+
+Inverser oxydant et réducteur dans le logarithme : c'est l'erreur que le rapport 2026 relève pour Q24 et Q25. Ici, l'éthanol est le réducteur ; il va au dénominateur.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026, sur Q24 et Q25 : « L'écriture des demi-équations est parfois fausse, l'équation de Nernst n'est pas parfaitement connue de tous : certains candidats y confondent l'oxydant et le réducteur. »
+
+\end{jury}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Repérer l'oxydant le plus fort et le réducteur le plus fort, puis combiner les deux demi-équations pour éliminer les électrons (plus petit commun multiple de 10 et 12).
+
+\end{indication}
+
+\begin{indication}{2}
+
+À l'équilibre, les potentiels des deux couples sont égaux ; en déduire \(\log K^\circ\) en fonction de l'écart des potentiels standard et du nombre d'électrons échangés dans l'équation écrite.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+\(E^\circ(\mathrm{NO_3^-/N_2})=1{,}25\) V est supérieur à \(E^\circ(\mathrm{CO_2/C_2H_6O})=-0{,}33\) V : le nitrate oxyde l'éthanol. On additionne \(6\times\)(Q24) et \(5\times\)(Q25 écrite dans le sens de l'oxydation), soit 60 électrons, puis on simplifie \(\mathrm{H^+}\) et \(\mathrm{H_2O}\) :
+
+\equationajustee{\boxed{5\,\mathrm{C_2H_6O_{(aq)}}+12\,\mathrm{NO^-_{3(aq)}}+12\,\mathrm{H^+_{(aq)}}=10\,\mathrm{CO_{2(g)}}+6\,\mathrm{N_{2(g)}}+21\,\mathrm{H_2O_{(\ell)}}}}
+
+Contrôle : C 10 = 10 ; N 12 = 12 ; H 42 = 42 ; O 41 = 41 ; charges 0 = 0.
+
+À l'équilibre \(E_1=E_2\), ce qui donne :
+
+\equationajustee{\begin{aligned}
+\log K_2^\circ&=\frac{60\,(E_1^\circ-E_2^\circ)}{0{,}06}\\
+&=\frac{60\times1{,}58}{0{,}06}=1580
+\end{aligned}}
+
+\equationajustee{\boxed{K_2^\circ\approx10^{1580}}}
+
+Pour l'équation rapportée à une mole d'éthanol (12 électrons), on trouverait \(10^{316}\) : une constante d'équilibre dépend de l'écriture de l'équation.
+
+Conclusion : la réaction est \textbf{totale}. En milieu anaérobie, les ions nitrate oxydent quantitativement l'éthanol en \(\mathrm{CO_2}\) et sont eux-mêmes éliminés sous forme de diazote gazeux : c'est la dénitrification annoncée. Comme en milieu aérobie, la réaction n'a lieu à une vitesse notable qu'avec la catalyse bactérienne.
+
+\begin{piege}
+
+Utiliser \(n=10\) ou \(n=12\) avec l'équation à 60 électrons. Le \(n\) de la formule est celui de l'équation effectivement écrite.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 constate que la question a été peu traitée, alors qu'elle ne présentait pas de difficulté particulière : les candidats ont probablement manqué de temps. Garder un quart d'heure pour la partie II.
+
+\end{jury}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  Anode = oxydation, cathode = réduction ; en électrolyse, l'anode est reliée à la borne + du générateur.
+\item
+  Courbes courant-potentiel : recenser les espèces présentes, placer chaque vague (au voisinage de \(E^\circ\) pour un système rapide, décalée du surpotentiel pour un système lent), distinguer paliers de diffusion et murs du solvant, respecter le signe de \(i\) ; tension minimale d'électrolyse = écart des potentiels de démarrage, plus la chute ohmique.
+\item
+  Diagrammes E-pH : n.o. croissant vers le haut, formes acides à gauche et formes basiques à droite, pentes contrôlées par le rapport protons/électrons.
+\item
+  Début de précipitation : \(Q=K_s\) avec la concentration totale encore dissoute.
+\item
+  Cinétique : Beer-Lambert pour passer de \([\mathrm{BM}]\) à \(A\), loi intégrée d'ordre 1 établie par intégration, linéarisation et lecture de la pente ; \(t_{99}=2\ln10/k\).
+\item
+  CFC : 4 atomes par maille, coordinence 12, contact selon la diagonale de face.
+\item
+  Thermochimie : loi de Hess, unités homogènes, \(\Delta_rG^\circ=-RT\ln K^\circ\) ; oxydoréduction : \(\log K^\circ=n\,\Delta E^\circ/0{,}06\) avec le \(n\) de l'équation écrite.
+\end{itemize}
+
+\textbf{Questions discriminantes selon le jury.} Le bloc électrochimique Q3--Q6 (polarités, montage à trois électrodes, signes des courants, surpotentiels) et les applications numériques menées au bout (Q6, Q10, Q22). Le rapport 2026 insiste, pour la filière PSI, sur des « expressions littérales \emph{suivies par} l'application numérique correspondante », sur des réponses toujours justifiées et sur des applications numériques avec leur unité.
+
+\textbf{Prérequis à revoir.} Montage à trois électrodes, conventions de signe des courbes \(i=f(E)\), écriture de la relation de Nernst avec les activités, schémas de Lewis des ions polyatomiques et charges formelles.
+
+\textbf{Questions classiques transposables.} Tension minimale d'une électrolyse avec surpotentiels, pH de début de précipitation, choix de la longueur d'onde de travail, vérification d'un ordre par linéarisation, masse volumique d'un métal CFC, constante d'équilibre d'une réaction d'oxydoréduction à partir des potentiels standard : autant de questions qui reviennent d'un sujet à l'autre et qui doivent être traitées vite et sans erreur.
+
+\end{document}

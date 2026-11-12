@@ -1,0 +1,38 @@
+{
+  "slug": "banque-pt_pt_physique-b---thermodynamique_2026",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Physique B - thermodynamique",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-echanges-moteur-ditherme.svg",
+      "question": "Q1",
+      "legende": "Échanges d'énergie de l'eau du circuit secondaire, modélisée en moteur ditherme"
+    },
+    {
+      "fichier": "figures/q07-cycle-clapeyron.svg",
+      "question": "Q7",
+      "legende": "Allure du cycle dans le diagramme de Clapeyron (P, v), parcouru dans le sens horaire"
+    },
+    {
+      "fichier": "figures/q09-cycle-diagramme-ts.svg",
+      "question": "Q9",
+      "legende": "Cycle dans le diagramme (T, s) de l'eau : 1 et 2 confondus, palier à 5 MPa, détente verticale à s ≈ 7,0"
+    },
+    {
+      "fichier": "figures/q18-resistances-serie.svg",
+      "question": "Q18",
+      "legende": "Conduite isolée en coupe et schéma équivalent : trois résistances thermiques en série"
+    },
+    {
+      "fichier": "figures/q20-rayon-critique.svg",
+      "question": "Q20",
+      "legende": "Allure de R_th−eq(e) dans les cas α > 1 et α < 1 (rayon critique)"
+    }
+  ]
+}

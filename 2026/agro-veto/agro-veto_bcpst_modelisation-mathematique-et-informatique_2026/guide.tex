@@ -1,0 +1,2785 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto BCPST — Modélisation mathématique et informatique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Agro-Véto BCPST}
+\fancyhead[R]{\small Modélisation mathématique et informatique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Agro-Véto BCPST — Modélisation mathématique et informatique 2026\par}\medskip
+  {\large Agro-Véto · BCPST · Modélisation mathématique et informatique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Cadre.} Épreuve de 3 heures, sans calculatrice ni document. Un problème unique, en quatre parties, consacré à la \textbf{fonction génératrice} d'une variable aléatoire \(X\) à valeurs dans \(\mathbb N\) :
+
+\equationajustee{G_X(t)=\sum_{n\in\mathbb N}P(X=n)\,t^n .}
+
+Une annexe rappelle trois commandes Python : \texttt{rd.binomial(\allowbreak{}n,\allowbreak{}\ p)\allowbreak{}} (module \texttt{numpy.random}), \texttt{plt.plot(x,\ y)} et \texttt{plt.show()} (module \texttt{matplotlib.pyplot}). On compte \textbf{81 questions élémentaires}.
+
+\textbf{Découpage.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie I (Q 1 à 4)} : la boîte à outils. Définition de \(G_X\) sur \([0,1]\), valeurs aux bornes, croissance, lien avec l'espérance de \(t^X\) et sa variance, loi binomiale. Puis la caractérisation des variables presque sûrement bornées par le caractère polynomial de \(G_X\), la formule \(E(X)=G_X'(1)\), et surtout le fait que \textbf{\(G_X\) caractérise la loi} (Q 4). Tout le reste du sujet s'appuie sur ces résultats.
+\item
+  \textbf{Partie II (Q 5 à 12)} : jacinthes soumises à deux filtres successifs (hauteur puis floraison). On obtient \textbf{trois fois} la loi \(\mathcal B(n,p_1p_2)\) du nombre \(J_2\) de plantes retenues. D'abord par la formule des probabilités totales et un calcul de coefficients binomiaux, puis par la composition \(G_{J_2}=G_{J_1}\circ G_{X_1}\), enfin directement. Trois programmes Python simulent \(J_2\).
+\item
+  \textbf{Partie III (Q 13 à 30)} : un \textbf{processus de branchement} (modèle de Galton-Watson) pour une population d'euglènes. Croissance moyenne \(E(N_j)=E(D)^j\), exemples, puis le résultat central : la probabilité d'extinction est \textbf{le plus petit point fixe} de \(G_D\) sur l'intervalle des probabilités. Elle vaut \(1\) si la moyenne \(E(D)\) est au plus \(1\), et elle est strictement inférieure à \(1\) sinon. Une dichotomie en Python la calcule.
+\item
+  \textbf{Partie IV (Q 31 à 33)} : estimation de \(G_X\) par une moyenne empirique (inégalité de Bienaymé-Tchebychev), lecture d'un programme de tracé avec bande de confiance, puis tracé exact quand la loi est connue.
+\end{itemize}
+
+Les parties II, III et IV sont indépendantes entre elles. La sous-partie III.C utilise un résultat admis qui n'est démontré qu'en III.D.
+
+\textbf{Notions du programme mobilisées.} Séries à termes positifs (comparaison, équivalents), théorème de transfert, variance et König-Huygens, formule du binôme, polynômes (nombre de racines), système complet d'événements et probabilités totales, lois de Bernoulli et binomiale, indépendance et lemme des coalitions, \(\sigma\)-additivité, suites récurrentes \(u_{n+1}=f(u_n)\), étude de fonctions et théorème de la bijection, inégalité de Bienaymé-Tchebychev. En Python : boucles, listes, récursivité, dichotomie, parcours d'arbre.
+
+\textbf{Ce qu'en dit le jury (rapport 2026).} Moyenne \(9{,}54/20\), médiane \(9{,}30\), écart type \(4{,}00\) ; la moitié des copies est entre \(6{,}70\) et \(12{,}40\). Le rapport juge le sujet long et précise : « traiter convenablement un grand nombre des questions 1 à 22 permettait d'obtenir une très bonne note ». La partie II « a été la mieux réussie de l'épreuve ».
+
+Les questions \textbf{discriminantes} relevées par le jury :
+
+\begin{itemize}
+\tightlist
+\item
+  Q 1.1, où la convergence de la série est rarement justifiée ;
+\item
+  Q 20, « très rarement réussie », faute de maîtriser le conditionnement ;
+\item
+  Q 22.3, où largeur et profondeur sont souvent confondues ;
+\item
+  Q 23.4, « très rarement traitée correctement » ;
+\item
+  Q 27, qui « n'a ainsi que très rarement rapporté des points », faute d'avoir vu que \((H_4)\) rend \(G_D\) polynomiale ;
+\item
+  Q 30, où la valeur approchée par excès a souvent posé problème.
+\end{itemize}
+
+\textbf{Difficulté et gestion du temps.} Le sujet est long mais très guidé. Les questions les plus délicates sont Q 3.1 (sens réciproque), Q 10.1 (réindexation), Q 18.1-18.2 (indépendance), Q 20 et Q 25.2 (propriété de branchement), Q 22.3 (parcours d'arbre) et Q 23.4 (récursivité).
+
+À ne pas laisser passer : Q 1.1 à 1.6, Q 2, Q 5, Q 6, Q 7.1, Q 8.1, Q 8.4, Q 11, Q 14 à 17, Q 21, Q 23.1-23.2, Q 24, Q 25.3 à 25.6, Q 26 à 29, Q 30, Q 31, Q 33.
+
+Les questions de code (7.1, 7.2, 9, 12, 22.1 à 22.3, 23.4, 30, 32.1 à 32.4, 33) sont nombreuses et rapides : ne pas les garder pour la fin. Le jury note qu'aborder des questions isolées de la partie III sans les résultats intermédiaires « s'est souvent révélé inefficace », et qu'il pouvait être plus judicieux de passer à la partie IV.
+
+Compter environ 30 minutes pour la partie I, 40 minutes pour la partie II, 1 h 20 pour la partie III et 30 minutes pour la partie IV.
+
+Convention utilisée partout : \(t^0=1\) pour tout réel \(t\), y compris \(t=0\) (en Python, \texttt{0**0} vaut \texttt{1}).
+
+\hypertarget{partie-i-notion-de-fonction-guxe9nuxe9ratrice}{%
+\section{Partie I --- Notion de fonction génératrice}\label{partie-i-notion-de-fonction-guxe9nuxe9ratrice}}
+
+On installe les propriétés de \(G_X\) avec les seuls outils des séries numériques à termes positifs (les séries entières ne sont pas au programme de BCPST), puis on fait le lien avec l'espérance.
+
+\hypertarget{question-1.1}{%
+\subsection{Question 1.1}\label{question-1.1}}
+
+\begin{indication}{1}
+
+Pour \(t\in[0,1]\), encadrez le terme général \(P(X=n)t^n\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Que vaut \(\sum_{n\ge0}P(X=n)\), et pourquoi cette série converge-t-elle ? Quel théorème de comparaison s'applique à des séries à termes positifs ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Soit \(t\in[0,1]\). Pour tout \(n\in\mathbb N\), \(0\le t^n\le1\) et \(P(X=n)\ge0\), donc
+
+\equationajustee{\begin{aligned}
+0&\le P(X=n)\,t^n\\
+&\le P(X=n).
+\end{aligned}}
+
+Les événements \((X=n)_{n\in\mathbb N}\) sont deux à deux incompatibles, de réunion \(\Omega\). Par \(\sigma\)-additivité, la série à termes positifs \(\sum P(X=n)\) converge et vaut \(1\).
+
+Par le théorème de comparaison des séries à termes positifs, \(\sum P(X=n)t^n\) converge. \textbf{\(G_X\) est définie en tout point de \([0,1]\).}
+
+\begin{jury}
+
+Le rapport 2026 relève que la convergence de cette série « n'a que trop rarement été correctement justifiée ». Il ajoute : « La nécessité même d'étudier la convergence de cette série ne semble d'ailleurs souvent pas avoir été perçue. » Écrire la majoration, la positivité, et dire pourquoi \(\sum P(X=n)\) converge.
+
+\end{jury}
+
+\begin{piege}
+
+Le théorème « \(u_n\le v_n\) et \(\sum v_n\) converge, donc \(\sum u_n\) converge » exige \(u_n\ge0\). Il faut écrire la minoration par \(0\).
+
+\end{piege}
+
+\hypertarget{question-1.2}{%
+\subsection{Question 1.2}\label{question-1.2}}
+
+\begin{indication}{1}
+
+Évaluez chaque terme de la série en \(t=0\) en tenant compte de la convention \(0^0=1\), puis en \(t=1\).
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+En \(t=0\) : \(0^0=1\) et \(0^n=0\) pour \(n\ge1\), donc seul le terme \(n=0\) subsiste.
+
+En \(t=1\) : on somme les \(P(X=n)\), ce qui donne \(1\) (Q 1.1).
+
+\equationajustee{\boxed{G_X(0)=P(X=0)}}
+
+\equationajustee{\boxed{G_X(1)=1}}
+
+\begin{piege}
+
+Écrire \(G_X(0)=0\) en oubliant que \(0^0=1\). Or \(G_X(0)=P(X=0)\) servira à la question 26.
+
+\end{piege}
+
+\hypertarget{question-1.3}{%
+\subsection{Question 1.3}\label{question-1.3}}
+
+\begin{indication}{1}
+
+Prenez \(0\le s\le t\le1\) et comparez les termes généraux des deux séries.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une inégalité entre sommes partielles se conserve par passage à la limite.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Soient \(0\le s\le t\le1\). Pour tout \(n\), \(u\mapsto u^n\) est croissante sur \(\mathbb R_+\), donc \(s^n\le t^n\).
+
+Comme \(P(X=n)\ge0\), on multiplie, puis on somme pour \(n\) de \(0\) à \(N\) :
+
+\equationajustee{\begin{aligned}
+P(X=n)\,s^n&\le P(X=n)\,t^n,\\
+\sum_{n=0}^NP(X=n)\,s^n&\le\sum_{n=0}^NP(X=n)\,t^n .
+\end{aligned}}
+
+Les deux séries convergent (Q 1.1), et une inégalité large passe à la limite quand \(N\to+\infty\) : \(G_X(s)\le G_X(t)\). \textbf{\(G_X\) est croissante sur \([0,1]\).}
+
+\begin{jury}
+
+Le rapport 2026 note qu'il est fréquent « de voir dériver spontanément la fonction génératrice sans s'interroger sur la validité de cette opération ». Il rappelle que pour établir la croissance d'une fonction, « revenir directement à la définition peut parfois constituer une stratégie plus efficace ». C'est le cas ici : dériver une série terme à terme n'est pas au programme.
+
+\end{jury}
+
+\hypertarget{question-1.4}{%
+\subsection{Question 1.4}\label{question-1.4}}
+
+\begin{indication}{1}
+
+Utilisez les deux questions précédentes plutôt qu'une nouvelle majoration.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\(G_X(t)\) est la somme d'une série à termes positifs, donc \(G_X(t)\ge0\). Par croissance (Q 1.3) et Q 1.2, \(G_X(t)\le G_X(1)=1\).
+
+\equationajustee{\boxed{\forall t\in[0,1],\ G_X(t)\in[0,1]}}
+
+\begin{methode}
+
+Dans un sujet construit en escalier, une réponse courte qui cite les questions précédentes est attendue. Ce résultat fait de \(G_X\) une application de \([0,1]\) dans \([0,1]\), ce qui permettra d'itérer \(G_D\) en partie III.
+
+\end{methode}
+
+\hypertarget{question-1.5}{%
+\subsection{Question 1.5}\label{question-1.5}}
+
+\begin{indication}{1}
+
+\(t^X\) est l'image de \(X\) par une fonction ; quel théorème donne l'espérance d'une telle variable ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La condition d'existence du théorème de transfert est une convergence absolue : la question 1.1 la fournit.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+Soit \(t\in[0,1]\). La variable \(t^X\) est \(\varphi(X)\) avec \(\varphi:n\mapsto t^n\).
+
+D'après le théorème de transfert, elle admet une espérance si et seulement si la série \(\sum|\varphi(n)|P(X=n)\) converge. Cette série est \(\sum t^nP(X=n)\), qui converge (Q 1.1, termes positifs). Le théorème donne alors :
+
+\equationajustee{\begin{aligned}
+E\big(t^X\big)&=\sum_{n=0}^{+\infty}t^nP(X=n)\\
+&=G_X(t).
+\end{aligned}}
+
+\equationajustee{\boxed{E\big(t^X\big)=G_X(t)}}
+
+\begin{jury}
+
+Le rapport 2026 constate que le théorème de transfert et la formule de König-Huygens sont souvent cités, mais que « leurs hypothèses comme leurs conclusions demeurent insuffisamment maîtrisées ». Le transfert a deux conclusions : l'existence de l'espérance, sous la condition de convergence absolue, et sa valeur.
+
+\end{jury}
+
+\begin{piege}
+
+\(E(t^X)\) n'est pas \(t^{E(X)}\) : l'espérance ne commute pas avec une fonction non affine.
+
+\end{piege}
+
+\hypertarget{question-1.6}{%
+\subsection{Question 1.6}\label{question-1.6}}
+
+\begin{indication}{1}
+
+Écrivez \(\big(t^X\big)^2\) comme une puissance d'un autre réel de \([0,1]\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Appliquez Q 1.5 à ce réel, puis la formule de König-Huygens ; pour la majoration, servez-vous de Q 1.4.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Soit \(t\in[0,1]\). Pour tout \(\omega\), \(\big(t^{X(\omega)}\big)^2=(t^2)^{X(\omega)}\), et \(t^2\in[0,1]\).
+
+D'après Q 1.5, \((t^X)^2=(t^2)^X\) admet une espérance égale à \(G_X(t^2)\). Donc \(t^X\) admet un moment d'ordre 2, donc une variance, et par König-Huygens :
+
+\equationajustee{\begin{aligned}
+V\big(t^X\big)&=E\big((t^X)^2\big)-E\big(t^X\big)^2\\
+&=G_X(t^2)-G_X(t)^2 .
+\end{aligned}}
+
+\equationajustee{\boxed{V\big(t^X\big)=G_X(t^2)-G_X(t)^2}}
+
+Comme \(G_X(t)^2\ge0\) et \(G_X(t^2)\le1\) (Q 1.4), \(V(t^X)\le1\).
+
+\begin{piege}
+
+König-Huygens suppose que la variable admet un moment d'ordre 2 : il faut l'établir avant d'écrire la formule, et non l'en déduire.
+
+\end{piege}
+
+\begin{methode}
+
+Cette majoration grossière est \textbf{universelle} (indépendante de la loi de \(X\)) : c'est elle qui permettra en partie IV de dimensionner un échantillon sans connaître \(G_X\).
+
+\end{methode}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+La série se réduit à une somme finie ; reconnaissez une formule classique.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\(X\) est à valeurs dans \(\{0,\dots,n\}\), donc \(P(X=k)=0\) pour \(k>n\). Pour \(t\in[0,1]\), par la formule du binôme de Newton :
+
+\equationajustee{\begin{aligned}
+G_X(t)&=\sum_{k=0}^n\binom nkp^k(1-p)^{n-k}t^k\\
+&=\sum_{k=0}^n\binom nk(pt)^k(1-p)^{n-k}\\
+&=(pt+1-p)^n .
+\end{aligned}}
+
+\equationajustee{\boxed{G_X(t)=(pt+1-p)^n}}
+
+\begin{piege}
+
+L'énoncé fixe déjà \(n\) : la somme doit être indexée par une autre lettre (\(k\)). Le rapport 2026 le rappelle : « il convient de ne pas réutiliser une lettre déjà fixée dans l'énoncé pour indexer une somme ».
+
+\end{piege}
+
+\begin{methode}
+
+Contrôle gratuit : \(G_X(1)=1\) et \(G_X(0)=(1-p)^n=P(X=0)\). Le cas \(n=1\) donne la loi de Bernoulli, \(G(t)=pt+1-p\), utile en Q 10.2.
+
+\end{methode}
+
+\hypertarget{question-3.1}{%
+\subsection{Question 3.1}\label{question-3.1}}
+
+\begin{indication}{1}
+
+Sens direct : montrez que \(P(X=n)=0\) pour tout \(n>m\), à l'aide de l'inclusion \((X=n)\subset(X>m)\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sens réciproque : raisonnez par l'absurde, en supposant \(P(X=n_0)>0\) pour un \(n_0\) strictement supérieur au degré du polynôme, et regardez le comportement quand \(t\to+\infty\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour \(t>1\), une somme de termes positifs est supérieure à chacun de ses termes. Comparez à \(t^d\) où \(d\) est le degré.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\textbf{(i) ⇒ (ii).} Supposons \(P(X\le m)=1\). Pour tout entier \(n>m\), \((X=n)\subset(X>m)\), donc
+
+\equationajustee{\begin{aligned}
+P(X=n)&\le P(X>m)\\
+&=0 .
+\end{aligned}}
+
+Ainsi \(P(X=n)=0\) pour \(n>m\). Pour tout \(t\in\mathbb R\), la série définissant \(G_X(t)\) n'a qu'un nombre fini de termes non nuls.
+
+\(G_X\) est donc définie sur \(\mathbb R\), et \(G_X(t)=\sum_{n=0}^mP(X=n)t^n\) est polynomiale.
+
+\textbf{(ii) ⇒ (i).} Supposons \(G_X\) définie sur \(\mathbb R\) et égale sur \(\mathbb R\) à une fonction polynomiale \(Q\).
+
+Comme \(Q(1)=1\), \(Q\) n'est pas nul ; soit \(d\) son degré et \(c\ne0\) son coefficient dominant.
+
+Supposons qu'il existe \(n_0>d\) tel que \(P(X=n_0)>0\). Pour \(t>1\), tous les termes de la série sont positifs, donc
+
+\equationajustee{\frac{Q(t)}{t^d}\ge P(X=n_0)\,t^{\,n_0-d}.}
+
+Le membre de droite tend vers \(+\infty\) quand \(t\to+\infty\), alors que \(Q(t)/t^d\to c\) : contradiction.
+
+Ainsi \(P(X=n)=0\) pour tout \(n>d\). Par \(\sigma\)-additivité, \(P(X>d)=0\), donc \(P(X\le d)=1\) : \(m=d\) convient.
+
+\textbf{(i) et (ii) sont équivalentes.}
+
+\begin{piege}
+
+Invoquer « l'unicité des coefficients d'une série entière » : ce résultat n'est pas au programme de BCPST. L'argument de croissance comparée suffit.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 signale des copies qui annoncent une double implication mais écrivent des « ⇔ » dans le sens direct : « outre que ceci n'a aucun sens, cette rédaction conduit souvent à oublier de démontrer le sens réciproque ». Deux sens séparés, annoncés, chacun conclu sur l'assertion visée.
+
+\end{jury}
+
+\hypertarget{question-3.2}{%
+\subsection{Question 3.2}\label{question-3.2}}
+
+\begin{indication}{1}
+
+Sous ces hypothèses, toutes les sommes sont finies : il n'y a plus de difficulté de convergence.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+D'après Q 3.1, \(P(X=n)=0\) pour \(n>m\). La série \(\sum nP(X=n)\) n'a qu'un nombre fini de termes non nuls : \(X\) admet une espérance, et \(E(X)=\sum_{n=1}^mnP(X=n)\).
+
+Par ailleurs, \(G_X\) coïncide sur \(\mathbb R\) avec le polynôme \(\sum_{n=0}^mP(X=n)t^n\), donc est dérivable en \(1\), et
+
+\equationajustee{\begin{aligned}
+(G_X)'(1)&=\sum_{n=1}^mnP(X=n)\\
+&=E(X).
+\end{aligned}}
+
+\equationajustee{\boxed{E(X)=(G_X)'(1)}}
+
+\begin{methode}
+
+Dériver « terme à terme » n'est licite ici que parce que la somme est finie ; c'est ce qu'il faut dire.
+
+\end{methode}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Un sens est immédiat. Pour l'autre, écrivez \(G_X\) et \(G_Y\) comme des polynômes (pourquoi est-ce possible ?).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Combien de racines peut avoir un polynôme non nul de degré au plus \(m\) ?
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\textbf{(i) ⇒ (ii)} : si \(X\) et \(Y\) ont même loi, les séries définissant \(G_X(t)\) et \(G_Y(t)\) ont les mêmes termes.
+
+\textbf{(ii) ⇒ (i)} : \(X\) et \(Y\) sont à valeurs dans \(\{0,\dots,m\}\). Pour \(t\in[0,1]\) :
+
+\equationajustee{\begin{aligned}
+G_X(t)-G_Y(t)&=\sum_{n=0}^mP(X=n)\,t^n-\sum_{n=0}^mP(Y=n)\,t^n\\
+&=\sum_{n=0}^m\big(P(X=n)-P(Y=n)\big)t^n .
+\end{aligned}}
+
+Ce polynôme, de degré au plus \(m\), s'annule sur \([0,1]\), ensemble infini : c'est le polynôme nul.
+
+Donc \(P(X=n)=P(Y=n)\) pour \(0\le n\le m\) ; pour \(n>m\), les deux probabilités sont nulles. \textbf{\(X\) et \(Y\) ont même loi.}
+
+\begin{methode}
+
+« La fonction génératrice caractérise la loi » : pour identifier une loi, il suffit de reconnaître sa fonction génératrice (Q 10.3). Penser à vérifier que les deux variables sont à valeurs dans un même \(\{0,\dots,m\}\).
+
+\end{methode}
+
+\hypertarget{partie-ii-sommes-aluxe9atoires-un-premier-moduxe8le}{%
+\section{Partie II --- Sommes aléatoires : un premier modèle}\label{partie-ii-sommes-aluxe9atoires-un-premier-moduxe8le}}
+
+On détermine de trois façons la loi du nombre \(J_2\) de jacinthes qui franchissent deux filtres successifs. L'enjeu est de citer précisément les hypothèses \((A_1)\) à \((A_4)\) et de lire des programmes de simulation. C'est la partie la mieux réussie selon le rapport 2026 : il ne faut pas y perdre de points.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Introduisez, pour chaque plante, l'indicatrice de l'événement « elle atteint vingt centimètres ».
+
+\end{indication}
+
+\begin{indication}{2}
+
+Reconnaissez un schéma de Bernoulli : quelles hypothèses donnent le paramètre, lesquelles donnent l'indépendance ?
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Soit \(H_i\) l'indicatrice de « la jacinthe \(i\) atteint le seuil ». D'après \((A_1)\), \(H_i\hookrightarrow\mathcal B(p_1)\) ; d'après \((A_3)\), \(H_1,\dots,H_n\) sont indépendantes.
+
+\(J_1=\sum_{i=1}^nH_i\) compte les succès de \(n\) épreuves de Bernoulli indépendantes de même paramètre \(p_1\) :
+
+\equationajustee{\boxed{J_1\hookrightarrow\mathcal B(n,p_1)}}
+
+Hypothèses utilisées : \((A_1)\) et \((A_3)\) (la floraison n'intervient pas).
+
+\begin{jury}
+
+Le rapport 2026 attend exactement ces deux hypothèses, \((A_1)\) et \((A_3)\). Les nommer une à une, et seulement celles qui servent.
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Conditionnez par la valeur de \(J_1\) ; sachant \((J_1=i)\), quelle est la loi du nombre de plantes qui fleurissent ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Formule des probabilités totales sur un système complet à trois événements, de probabilités non nulles ; vérifiez que la somme fait \(1\).
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+D'après Q 5, \(J_1\hookrightarrow\mathcal B(2,\frac23)\) :
+
+\equationajustee{\begin{aligned}
+P(J_1=0)&=\tfrac19,\\
+P(J_1=1)&=\tfrac49,\\
+P(J_1=2)&=\tfrac49 .
+\end{aligned}}
+
+Sachant \((J_1=i)\), chacune des \(i\) plantes retenues fleurit avec probabilité \(\frac34\), indépendamment \((A_2,A_3,A_4)\). La loi conditionnelle de \(J_2\) est donc \(\mathcal B(i,\frac34)\).
+
+Les trois événements \((J_1=i)\) forment un système complet de probabilités non nulles. Par la formule des probabilités totales :
+
+\equationajustee{\begin{aligned}
+P(J_2=0)&=\tfrac19\cdot1+\tfrac49\cdot\tfrac14+\tfrac49\cdot\tfrac1{16}\\
+&=\tfrac14,\\[1mm]
+P(J_2=1)&=\tfrac49\cdot\tfrac34+\tfrac49\cdot2\cdot\tfrac34\cdot\tfrac14\\
+&=\tfrac12,\\[1mm]
+P(J_2=2)&=\tfrac49\cdot\tfrac9{16}\\
+&=\tfrac14.
+\end{aligned}}
+
+\textbf{\(J_2\hookrightarrow\mathcal B(2,\frac12)\)}, et l'on remarque que \(\frac12=\frac23\cdot\frac34=p_1p_2\).
+
+\begin{methode}
+
+Le rapport 2026 propose aussi une preuve directe : chaque bulbe a la probabilité \(p_1p_2=\frac12\) de franchir le seuil et de fleurir, indépendamment de l'autre, donc \(J_2\) suit \(\mathcal B(2,\frac12)\). C'est l'idée de la question 11.
+
+\end{methode}
+
+\begin{piege}
+
+Oublier le terme \(i=0\) dans \(P(J_2=0)\), ou le coefficient \(\binom21=2\).
+
+\end{piege}
+
+\hypertarget{question-7.1}{%
+\subsection{Question 7.1}\label{question-7.1}}
+
+\begin{indication}{1}
+
+Que renvoie \texttt{rd.binomial(\allowbreak{}1,\allowbreak{}\ p)\allowbreak{}} ? Relisez l'annexe : c'est une épreuve de Bernoulli.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La liste \texttt{l} doit marquer les plantes retenues à l'issue de la première phase ; la seconde boucle ne considère que celles-là.
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\begin{lstlisting}[language=Python]
+def J2(n, p1, p2):
+    aux = 0
+    l = [0 for i in range(n)]
+    for i in range(n):
+        if rd.binomial(1, p1) == 1:
+            l[i] = 1
+    for i in range(n):
+        if l[i] == 1:
+            if rd.binomial(1, p2) == 1:
+                aux = aux + 1
+    return aux
+\end{lstlisting}
+
+\begin{piege}
+
+Le rapport 2026 rappelle que « la commande rd.binomial(1, p) renvoie 0 ou 1 ». Il relève des instructions telles que « if rd.binomial(1, p) == p », qui confondent l'entrée et la sortie de la commande : le test est presque toujours faux.
+
+\end{piege}
+
+\hypertarget{question-7.2}{%
+\subsection{Question 7.2}\label{question-7.2}}
+
+\begin{indication}{1}
+
+Associez chaque boucle à une phase de l'expérience et à une variable aléatoire du modèle.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+La boucle des lignes 4 à 6 simule la \textbf{phase de croissance}. Pour chaque jacinthe, un tirage de Bernoulli de paramètre \(p_1\) décide si elle atteint vingt centimètres. \texttt{l{[}i{]}} vaut alors \(1\) (c'est \(H_i\)), et le nombre de \(1\) dans \texttt{l} est une réalisation de \(J_1\).
+
+La boucle des lignes 7 à 10 simule la \textbf{phase de floraison} des seules plantes retenues. Pour chaque \texttt{i} tel que \texttt{l{[}i{]}\ ==\ 1}, un tirage de Bernoulli de paramètre \(p_2\) décide si la plante fleurit, et \texttt{aux} compte ces plantes. La valeur renvoyée est une réalisation de \(J_2\).
+
+\begin{jury}
+
+Le rapport 2026 regrette que les explications de programmes se réduisent « trop souvent à de la paraphrase ou à une description ligne par ligne du code ». Il attend « une prise de recul sur le fonctionnement global du programme » : nommer la phase biologique et la variable simulée.
+
+\end{jury}
+
+\hypertarget{question-8.1}{%
+\subsection{Question 8.1}\label{question-8.1}}
+
+\begin{indication}{1}
+
+Revenez à la définition : incompatibilité deux à deux, réunion égale à \(\Omega\).
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\(J_1\) est à valeurs dans \(\{0,\dots,n\}\).
+
+\begin{itemize}
+\tightlist
+\item
+  Pour \(i\ne i'\), \((J_1=i)\cap(J_1=i')=\varnothing\).
+\item
+  Pour tout \(\omega\), \(J_1(\omega)\in\{0,\dots,n\}\), donc \(\bigcup_{i=0}^n(J_1=i)=\Omega\).
+\end{itemize}
+
+\textbf{\((J_1=i)_{0\le i\le n}\) est un système complet d'événements.}
+
+\begin{jury}
+
+« La définition d'un système complet d'événements est trop rarement connue avec précision » (rapport 2026). Les deux conditions, incompatibilité deux à deux et réunion égale à \(\Omega\), doivent apparaître.
+
+\end{jury}
+
+\hypertarget{question-8.2}{%
+\subsection{Question 8.2}\label{question-8.2}}
+
+\begin{indication}{1}
+
+Pour la positivité, utilisez la loi de \(J_1\) et le fait que \(p_1\in\,]0,1[\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sachant \((J_1=i)\), combien de plantes peuvent fleurir, avec quelle probabilité chacune, et pourquoi le conditionnement par les hauteurs ne change-t-il rien ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+D'après Q 5, et comme \(p_1\in\,]0,1[\), \(P(J_1=i)=\binom nip_1^i(1-p_1)^{n-i}>0\).
+
+Sachant \((J_1=i)\), exactement \(i\) plantes sont retenues. Chacune fleurit avec probabilité \(p_2\) \((A_2)\), indépendamment des autres \((A_3)\).
+
+\((A_4)\) assure que la floraison est indépendante de la croissance. L'information « \(i\) plantes ont franchi le seuil » ne modifie donc pas la loi des floraisons. Ainsi :
+
+\equationajustee{\begin{aligned}
+P_{(J_1=i)}(J_2=\ell)&=\binom i\ell p_2^\ell(1-p_2)^{i-\ell}&&\text{si }0\le\ell\le i,\\
+P_{(J_1=i)}(J_2=\ell)&=0&&\text{si }\ell>i.
+\end{aligned}}
+
+\textbf{La loi conditionnelle de \(J_2\) sachant \((J_1=i)\) est \(\mathcal B(i,p_2)\)} (variable nulle si \(i=0\)).
+
+\begin{methode}
+
+C'est \((A_4)\) qui justifie le conditionnement : sans elle, savoir qu'une plante est haute pourrait renseigner sur son aptitude à fleurir. Le rapport 2026 cite les trois hypothèses \((A_2)\), \((A_3)\) et \((A_4)\).
+
+\end{methode}
+
+\hypertarget{question-8.3}{%
+\subsection{Question 8.3}\label{question-8.3}}
+
+\begin{indication}{1}
+
+Formule des probabilités totales avec le système complet de Q 8.1 ; pourquoi la somme peut-elle commencer à \(i=\ell\) ?
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+Les événements \((J_1=i)\) forment un système complet de probabilités non nulles (Q 8.1, Q 8.2), donc
+
+\equationajustee{\begin{aligned}
+P(J_2=\ell)&=\sum_{i=0}^nP(J_1=i)\,P_{(J_1=i)}(J_2=\ell)\\
+&=\sum_{i=\ell}^nP(J_1=i)\,P_{(J_1=i)}(J_2=\ell).
+\end{aligned}}
+
+Les termes \(i<\ell\) sont nuls, car \(J_2\le J_1\) : on ne peut avoir plus de plantes fleuries que de plantes retenues. Avec Q 5 et Q 8.2 :
+
+\equationajustee{\boxed{\begin{aligned}
+P(J_2=\ell)=\sum_{i=\ell}^n&\binom i\ell(p_2)^\ell(1-p_2)^{i-\ell}\\
+&\times\binom ni(p_1)^i(1-p_1)^{n-i}
+\end{aligned}}}
+
+\hypertarget{question-8.4}{%
+\subsection{Question 8.4}\label{question-8.4}}
+
+\begin{indication}{1}
+
+Écrivez les quatre coefficients binomiaux avec des factorielles.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+Pour \(0\le\ell\le i\le n\) :
+
+\equationajustee{\begin{aligned}
+\binom i\ell\binom ni&=\frac{i!}{\ell!\,(i-\ell)!}\cdot\frac{n!}{i!\,(n-i)!}\\
+&=\frac{n!}{\ell!\,(i-\ell)!\,(n-i)!}
+\end{aligned}}
+
+et
+
+\equationajustee{\begin{aligned}
+\binom n\ell\binom{n-\ell}{i-\ell}&=\frac{n!}{\ell!\,(n-\ell)!}\cdot\frac{(n-\ell)!}{(i-\ell)!\,(n-i)!}\\
+&=\frac{n!}{\ell!\,(i-\ell)!\,(n-i)!}.
+\end{aligned}}
+
+\equationajustee{\boxed{\binom i\ell\binom ni=\binom n\ell\binom{n-\ell}{i-\ell}}}
+
+\begin{methode}
+
+Lecture combinatoire : choisir \(i\) plantes parmi \(n\), puis \(\ell\) parmi ces \(i\).
+
+C'est choisir d'abord les \(\ell\) plantes, puis compléter par \(i-\ell\) plantes parmi les \(n-\ell\) autres.
+
+\end{methode}
+
+\hypertarget{question-8.5}{%
+\subsection{Question 8.5}\label{question-8.5}}
+
+\begin{indication}{1}
+
+Remplacez le produit de coefficients binomiaux grâce à Q 8.4 et sortez de la somme tout ce qui ne dépend pas de \(i\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Écrivez \(p_1^i=p_1^\ell p_1^{i-\ell}\), posez \(k=i-\ell\) et reconnaissez un binôme de Newton.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+D'après Q 8.3 et Q 8.4, on sort de la somme les facteurs indépendants de \(i\). Avec \(k=i-\ell\), qui décrit \(\{0,\dots,n-\ell\}\), et \(n-i=(n-\ell)-k\) :
+
+\equationajustee{\begin{aligned}
+P(J_2=\ell)&=\binom n\ell(p_1p_2)^\ell\sum_{i=\ell}^n\binom{n-\ell}{i-\ell}\big(p_1(1-p_2)\big)^{i-\ell}(1-p_1)^{n-i}\\
+&=\binom n\ell(p_1p_2)^\ell\sum_{k=0}^{n-\ell}\binom{n-\ell}k\big(p_1(1-p_2)\big)^k(1-p_1)^{n-\ell-k}\\
+&=\binom n\ell(p_1p_2)^\ell\big(p_1(1-p_2)+1-p_1\big)^{n-\ell}\\
+&=\binom n\ell(p_1p_2)^\ell(1-p_1p_2)^{n-\ell}.
+\end{aligned}}
+
+\equationajustee{\boxed{P(J_2=\ell)=\binom n\ell(p_1p_2)^\ell(1-p_1p_2)^{n-\ell}}}
+
+\textbf{\(J_2\) suit la loi binomiale \(\mathcal B(n,p_1p_2)\).}
+
+\begin{piege}
+
+Laisser \(p_1(1-p_2)+1-p_1\) sans le simplifier en \(1-p_1p_2\) empêche de reconnaître la loi.
+
+\end{piege}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Que représente la variable \texttt{i} tirée à la ligne 2 dans le modèle ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+La ligne 3 tire une binomiale dont le premier paramètre est aléatoire : rapprochez-la de Q 8.2, puis concluez par les probabilités totales.
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+La ligne 2 simule une variable de loi \(\mathcal B(n,p_1)\), c'est-à-dire le nombre \(J_1\) de plantes ayant atteint le seuil (Q 5) : c'est la phase de croissance.
+
+Sachant que \texttt{i} vaut \(i\), la ligne 3 renvoie une réalisation de \(\mathcal B(i,p_2)\), la loi conditionnelle de \(J_2\) sachant \((J_1=i)\) (Q 8.2) : c'est la phase de floraison.
+
+Soit \(M\) la valeur renvoyée. La formule des probabilités totales sur le système \((\texttt i=i)_{0\le i\le n}\) redonne exactement l'expression de Q 8.3 : \(M\) a la loi de \(J_2\).
+
+\textbf{\texttt{mystere1(\allowbreak{}n,\allowbreak{}\ p1,\allowbreak{}\ p2)\allowbreak{}} simule la variable aléatoire \(J_2\) en deux étapes et renvoie une réalisation de \(J_2\), de loi \(\mathcal B(n,p_1p_2)\).}
+
+\begin{piege}
+
+Le rapport 2026 relève que plusieurs candidats « indiquent simuler une probabilité ou un événement alors que les commandes Python proposées simulent en réalité des variables aléatoires ». Ici, on simule \(J_2\), pas \(P(J_2=\ell)\).
+
+\end{piege}
+
+\hypertarget{question-10.1}{%
+\subsection{Question 10.1}\label{question-10.1}}
+
+\begin{indication}{1}
+
+Modélisez chaque plante par deux variables de Bernoulli, l'une pour la hauteur, l'autre pour la floraison, et écrivez \(J_1\) et \(J_2\) à l'aide de ces variables.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Renumérotez les plantes en plaçant d'abord celles qui franchissent le seuil ; cette renumérotation ne dépend que des hauteurs.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour l'indépendance, calculez \(P(J_1=i,X_1=x_1,\dots,X_n=x_n)\) en conditionnant par le vecteur des hauteurs.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Soient \(H_1,\dots,H_n,F_1,\dots,F_n\) indépendantes, avec \(H_i\hookrightarrow\mathcal B(p_1)\) (hauteur, \(A_1\)) et \(F_i\hookrightarrow\mathcal B(p_2)\) (floraison, \(A_2\)).
+
+L'indépendance entre plantes traduit \((A_3)\), celle entre hauteurs et floraisons \((A_4)\). Alors \(J_1=\sum_iH_i\) et \(J_2=\sum_iH_iF_i\).
+
+Pour \(h\in\{0,1\}^n\), soit \(\sigma_h\) la permutation de \(\{1,\dots,n\}\) qui range d'abord, par ordre croissant, les indices \(i\) tels que \(h_i=1\), puis les autres.
+
+Posons \(X_k=F_{\sigma_H(k)}\), où \(H=(H_1,\dots,H_n)\).
+
+Les indices \(\sigma_H(1),\dots,\sigma_H(J_1)\) sont exactement ceux des plantes retenues, donc
+
+\equationajustee{\begin{aligned}
+J_2&=\sum_{i:\,H_i=1}F_i\\
+&=\sum_{k=1}^{J_1}X_k,
+\end{aligned}}
+
+la somme étant nulle si \(J_1=0\).
+
+Soient \((x_1,\dots,x_n)\in\{0,1\}^n\) et \(i\in\{0,\dots,n\}\). On somme sur les \(h\) tels que \(h_1+\dots+h_n=i\), et on utilise l'indépendance de \(H\) et de \((F_1,\dots,F_n)\) :
+
+\equationajustee{\begin{aligned}
+P(J_1=i,X_1=x_1,\dots,X_n=x_n)&=\sum_hP(H=h)P\big(F_{\sigma_h(1)}=x_1,\dots,F_{\sigma_h(n)}=x_n\big)\\
+&=P(J_1=i)\prod_{k=1}^np_2^{x_k}(1-p_2)^{1-x_k}.
+\end{aligned}}
+
+En effet, \(h\) étant fixé, \((F_{\sigma_h(1)},\dots,F_{\sigma_h(n)})\) est une permutation fixe de variables indépendantes de loi \(\mathcal B(p_2)\).
+
+\textbf{Les \(X_k\) suivent la loi \(\mathcal B(p_2)\), \(X_1,\dots,X_n,J_1\) sont indépendantes, et \(J_2=\sum_{k=1}^{J_1}X_k\).}
+
+\begin{methode}
+
+Le rapport 2026 se contente de l'idée : noter \(X_k\) l'indicatrice de floraison de la \(k\)-ième plante après avoir listé en premier celles qui ont atteint le seuil, et invoquer les hypothèses du modèle pour la loi et l'indépendance. Le calcul ci-dessus en est la version complète.
+
+\end{methode}
+
+\begin{piege}
+
+Poser simplement \(X_k=F_k\) : alors \(\sum_{k\le J_1}F_k\) compte les floraisons des \(J_1\) \textbf{premières} plantes, qui ne sont pas forcément celles qui ont franchi le seuil.
+
+\end{piege}
+
+\hypertarget{question-10.2}{%
+\subsection{Question 10.2}\label{question-10.2}}
+
+\begin{indication}{1}
+
+Les deux fonctions génératrices à composer sont celles de lois binomiales : la question 2 les donne.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+D'après Q 2, \(G_{X_1}(t)=p_2t+1-p_2\) (avec \(n=1\)) et \(G_{J_1}(u)=(p_1u+1-p_1)^n\). Comme \(G_{X_1}(t)\in[0,1]\) pour \(t\in[0,1]\), la composée a un sens :
+
+\equationajustee{\begin{aligned}
+G_{J_2}(t)&=G_{J_1}\big(G_{X_1}(t)\big)\\
+&=\big(p_1(p_2t+1-p_2)+1-p_1\big)^n\\
+&=(p_1p_2\,t+1-p_1p_2)^n .
+\end{aligned}}
+
+\equationajustee{\boxed{G_{J_2}(t)=(p_1p_2\,t+1-p_1p_2)^n}}
+
+\begin{piege}
+
+« Dans la question 10.2, la composition et le produit de fonctions sont fréquemment confondus » (rapport 2026). \(G_{J_1}\circ G_{X_1}\) n'est pas \(G_{J_1}\times G_{X_1}\) : on remplace \(u\) par \(G_{X_1}(t)\) dans \(G_{J_1}(u)\).
+
+\end{piege}
+
+\begin{methode}
+
+Vérifier \(G_{J_2}(1)=1\) détecte immédiatement une erreur de calcul.
+
+\end{methode}
+
+\hypertarget{question-10.3}{%
+\subsection{Question 10.3}\label{question-10.3}}
+
+\begin{indication}{1}
+
+Reconnaissez la fonction génératrice d'une loi connue et vérifiez les hypothèses de la question 4.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+Soit \(Z\hookrightarrow\mathcal B(n,p_1p_2)\). D'après Q 2 et Q 10.2, \(G_Z(t)=(p_1p_2t+1-p_1p_2)^n=G_{J_2}(t)\) pour tout \(t\in[0,1]\).
+
+Les variables \(J_2\) et \(Z\) sont à valeurs dans \(\{0,\dots,n\}\). Le sens réciproque de la question 4, avec \(m=n\), donne \textbf{\(J_2\hookrightarrow\mathcal B(n,p_1p_2)\)}.
+
+\hypertarget{question-11.1}{%
+\subsection{Question 11.1}\label{question-11.1}}
+
+\begin{indication}{1}
+
+Une plante est retenue si deux événements sont réalisés : lesquels, et quelle hypothèse les rend indépendants ?
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+La plante est retenue si et seulement si elle atteint le seuil (probabilité \(p_1\), \(A_1\)) et fleurit (probabilité \(p_2\), \(A_2\)). Ces événements sont indépendants \((A_4)\), donc
+
+\equationajustee{\boxed{P(\text{plante retenue})=p_1p_2}}
+
+\begin{piege}
+
+Le rapport 2026 relève que les notions d'événements incompatibles et indépendants « sont fréquemment confondues ». Ici, les deux événements sont indépendants, et on multiplie. S'ils étaient incompatibles, leur intersection serait vide.
+
+\end{piege}
+
+\hypertarget{question-11.2}{%
+\subsection{Question 11.2}\label{question-11.2}}
+
+\begin{indication}{1}
+
+Nouveau schéma de Bernoulli, avec \(n\) épreuves.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+Soit \(R_i\) l'indicatrice de « la plante \(i\) est retenue ». D'après Q 11.1, \(R_i\hookrightarrow\mathcal B(p_1p_2)\), et les \(R_i\) sont indépendantes \((A_3)\).
+
+\(J_2=\sum_{i=1}^nR_i\) compte les succès de \(n\) épreuves indépendantes de paramètre \(p_1p_2\) : \textbf{\(J_2\hookrightarrow\mathcal B(n,p_1p_2)\)}.
+
+\begin{methode}
+
+Morale de la partie : deux filtres indépendants successifs équivalent à un filtre unique de probabilité égale au produit des probabilités.
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Que représentent \texttt{hauteur\_i} et \texttt{floraison\_i} ? Quand \texttt{aux} est-il incrémenté ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Rapprochez le programme de la question 11 plutôt que de la question 7.
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Chaque tour de boucle traite une plante :
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{hauteur\_i} simule \(\mathcal B(p_1)\) (seuil atteint, \(A_1\)) ;
+\item
+  \texttt{floraison\_i} simule \(\mathcal B(p_2)\) (floraison, \(A_2\)) ;
+\item
+  les deux tirages sont indépendants \((A_4)\).
+\end{itemize}
+
+\texttt{aux} est incrémenté si et seulement si les deux valent \(1\), c'est-à-dire si la plante est finalement retenue, ce qui arrive avec probabilité \(p_1p_2\) (Q 11.1). Les tours de boucle sont indépendants \((A_3)\). La valeur renvoyée est \(\sum_iR_i\).
+
+\textbf{\texttt{mystere2(\allowbreak{}n,\allowbreak{}\ p1,\allowbreak{}\ p2)\allowbreak{}} simule l'expérience de la question 11 et renvoie une réalisation de la variable aléatoire \(J_2\), de loi \(\mathcal B(n,p_1p_2)\).} La floraison est tirée même pour une plante non retenue, ce qui ne change rien à la loi grâce à \((A_4)\).
+
+\begin{methode}
+
+Les trois programmes \texttt{J2}, \texttt{mystere1} et \texttt{mystere2} simulent la même loi : le premier suit la chronologie, le deuxième le conditionnement (Q 8-9), le troisième le filtre unique (Q 11). \texttt{mystere1} n'appelle que deux fois \texttt{rd.binomial}.
+
+\end{methode}
+
+\hypertarget{partie-iii-sommes-aluxe9atoires-un-second-moduxe8le}{%
+\section{Partie III --- Sommes aléatoires : un second modèle}\label{partie-iii-sommes-aluxe9atoires-un-second-moduxe8le}}
+
+Le nombre d'euglènes au jour \(j+1\) est une somme aléatoire, dont le nombre de termes est la population du jour \(j\). On étudie d'abord la moyenne (III.B), puis la probabilité d'extinction sur des exemples (III.C), en général (III.D) et numériquement (III.E). Les outils : indépendance et lemme des coalitions, \(\sigma\)-additivité, suites récurrentes, étude de fonctions.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Pour chaque hypothèse, dites quel phénomène biologique elle suppose ou exclut.
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\begin{itemize}
+\tightlist
+\item
+  \((H_3)\) : toutes les euglènes, quel que soit le jour, ont la \textbf{même loi de reproduction}, celle de \(D\). Les individus sont interchangeables (reproduction asexuée, donc clonale), et les conditions de milieu stables au cours du temps.
+\item
+  \((H_5)\) : une euglène engendre \textbf{au plus \(m\) descendants} en une journée : fécondité bornée.
+\item
+  \((H_6)\) : les nombres de descendants de toutes les euglènes, le même jour ou des jours différents, sont \textbf{indépendants}. Aucune interaction (pas de compétition pour la lumière ou la nourriture, pas de régulation par la densité), aucune influence de la lignée.
+\end{itemize}
+
+\begin{jury}
+
+« Le jury rappelle qu'une réponse concise mais précise est attendue » ; il trouve que beaucoup de candidats « restent trop vagues dans leurs interprétations des modèles étudiés » (rapport 2026). Une phrase par hypothèse, qui dit ce qu'elle impose aux euglènes.
+
+\end{jury}
+
+\begin{piege}
+
+Paraphraser (« \((H_6)\) signifie que les variables sont indépendantes ») ne rapporte rien : il faut une traduction biologique.
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Écrivez la relation de récurrence pour \(j=0\).
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+Comme \(N_0=1\), \(N_1=\sum_{k=1}^1D_{0,k}=D_{0,1}\), qui suit la loi de \(D\) d'après \((H_3)\). \textbf{\(N_1\) et \(D\) suivent la même loi.}
+
+\begin{piege}
+
+Même loi ne veut pas dire égalité. Le rapport 2026 cite l'affirmation erronée « \(N\) et \(D\) ont même loi donc \(N=D\) » parmi les confusions fréquentes entre événements, variables aléatoires et lois.
+
+\end{piege}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Récurrence sur \(j\) : majorez chacun des termes de la somme.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\(N_0=1\in\{0,\dots,m^0\}\). Supposons \(N_j\) à valeurs dans \(\{0,\dots,m^j\}\) et soit \(\omega\in\Omega\).
+
+\(N_{j+1}(\omega)\) est une somme de \(N_j(\omega)\) entiers compris entre \(0\) et \(m\) \((H_5)\), nulle si \(N_j(\omega)=0\). C'est un entier, et
+
+\equationajustee{\begin{aligned}
+0\le N_{j+1}(\omega)&\le mN_j(\omega)\\
+&\le m^{j+1}.
+\end{aligned}}
+
+\textbf{Pour tout \(j\), \(N_j\) est à valeurs dans \(\{0,\dots,m^j\}\).}
+
+\begin{methode}
+
+Ce résultat rend finis tous les systèmes complets et toutes les sommes de la sous-partie III.B : les interversions de sommes seront licites sans théorème supplémentaire.
+
+\end{methode}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Traduisez \((H_4)\) en termes de \(p_n\).
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+D'après \((H_4)\), \(D\) est à valeurs dans \(\{0,\dots,m\}\), donc \(p_n=0\) pour \(n>m\) : \textbf{\(S\subset\{0,\dots,m\}\)}.
+
+De plus, \(p_m=P(D=m)>0\) : \textbf{\(m\in S\)}.
+
+\hypertarget{question-17.1}{%
+\subsection{Question 17.1}\label{question-17.1}}
+
+\begin{indication}{1}
+
+\(D_{0,1}\) est l'étiquette de la racine ; \(D_{1,k}\) celle du \(k\)-ième nœud du jour 1.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q17-1-arbres-a1-a2.pdf}
+\caption*{Figure 1 --- Arbres des événements A₁ et A₂ : chaque nœud porte son
+nombre de descendants ; A₁ laisse trois euglènes au jour 2, de
+descendance non précisée, A₂ éteint la population au jour 2}
+\end{figure}
+
+Les nœuds du jour 1 sont rangés de gauche à droite selon l'indice \(k\) de \(D_{1,k}\). Sur \(A_1\), il y a \(2+1=3\) euglènes au jour 2, dont la descendance n'est pas précisée ; sur \(A_2\), la population est éteinte au jour 2.
+
+\hypertarget{question-17.2}{%
+\subsection{Question 17.2}\label{question-17.2}}
+
+\begin{indication}{1}
+
+\(A_1\) et \(A_2\) sont des intersections d'événements portant sur des variables distinctes de la famille \((D_{j,k})\).
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+Les variables concernées sont indépendantes \((H_6)\) et suivent la loi de \(D\) \((H_3)\) :
+
+\equationajustee{\begin{aligned}
+P(A_1)&=p_4\,p_0\,p_2\,p_1\,p_0\\
+&=p_0^2p_1p_2p_4,\\[1mm]
+P(A_2)&=p_3\,p_0^3 .
+\end{aligned}}
+
+\equationajustee{\boxed{P(A_1)=p_0^2p_1p_2p_4}}
+
+\equationajustee{\boxed{P(A_2)=p_0^3p_3}}
+
+\hypertarget{question-17.3}{%
+\subsection{Question 17.3}\label{question-17.3}}
+
+\begin{indication}{1}
+
+Que signifie \(\{0,1,2,3,4\}\subset S\) ?
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Par définition de \(S\), \(p_0,p_1,p_2,p_3,p_4>0\), et un produit de réels strictement positifs est strictement positif : \textbf{\(P(A_1)>0\) et \(P(A_2)>0\).}
+
+\begin{piege}
+
+« Une confusion entre inégalité stricte et inégalité au sens large apparaît souvent » (rapport 2026). Ici, la stricte positivité vient de celle de chaque facteur ; \(p_n\ge0\) ne suffirait pas.
+
+\end{piege}
+
+\hypertarget{question-17.4}{%
+\subsection{Question 17.4}\label{question-17.4}}
+
+\begin{indication}{1}
+
+Calculez \(N_1\) puis \(N_2\) pour \(\omega\in A_1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'unicité, que dire d'un événement inclus dans deux événements \((N_2=n)\) et \((N_2=n')\) distincts ?
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+Pour \(\omega\in A_1\), \(N_1(\omega)=D_{0,1}(\omega)=4\), puis
+
+\equationajustee{\begin{aligned}
+N_2(\omega)&=D_{1,1}(\omega)+D_{1,2}(\omega)+D_{1,3}(\omega)+D_{1,4}(\omega)\\
+&=0+2+1+0\\
+&=3 .
+\end{aligned}}
+
+Donc \(A_1\subset(N_2=3)\).
+
+Si l'on avait aussi \(A_1\subset(N_2=n')\) avec \(n'\ne3\), on aurait \(A_1\subset(N_2=3)\cap(N_2=n')\), qui est vide. Cela contredit \(P(A_1)>0\). \textbf{L'unique entier est \(n=3\).}
+
+\hypertarget{question-17.5}{%
+\subsection{Question 17.5}\label{question-17.5}}
+
+\begin{indication}{1}
+
+L'inclusion de Q 17.4 ne donne qu'une inégalité large. Cherchez une autre configuration d'arbre menant à trois euglènes au jour 2.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Il faut un événement de probabilité strictement positive, inclus dans \((N_2=3)\) et disjoint de \(A_1\).
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+Soit \(B=(D_{0,1}=3,\ D_{1,1}=1,\ D_{1,2}=1,\ D_{1,3}=1)\).
+
+\begin{itemize}
+\tightlist
+\item
+  Sur \(B\), \(N_1=3\) et \(N_2=3\), donc \(B\subset(N_2=3)\).
+\item
+  \(B\) et \(A_1\) sont incompatibles : \(D_{0,1}\) vaut \(3\) sur l'un et \(4\) sur l'autre.
+\item
+  \(P(B)=p_3p_1^3>0\).
+\end{itemize}
+
+Donc
+
+\equationajustee{\begin{aligned}
+P(N_2=3)&\ge P(A_1\cup B)\\
+&=P(A_1)+P(B)\\
+&>P(A_1).
+\end{aligned}}
+
+\textbf{\(P(A_1)<P(N_2=3)\).}
+
+\begin{methode}
+
+Le rapport 2026 utilise un autre témoin, en permutant les descendances du jour 1 : \((D_{0,1}=4,D_{1,1}=2,D_{1,2}=0,D_{1,3}=1,D_{1,4}=0)\), de même probabilité que \(A_1\). Tout événement de probabilité non nulle, inclus dans \((N_2=3)\) et disjoint de \(A_1\), convient.
+
+\end{methode}
+
+\begin{piege}
+
+« L'inclusion est stricte donc l'inégalité est stricte » est faux : la différence pourrait être de probabilité nulle. Il faut exhiber un témoin de probabilité non nulle.
+
+\end{piege}
+
+\hypertarget{question-18.1}{%
+\subsection{Question 18.1}\label{question-18.1}}
+
+\begin{indication}{1}
+
+Montrez d'abord que \(N_j\) ne dépend que des variables \(D_{i,k}\) avec \(i\le j-1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour écrire \(N_{j+1}\) comme une fonction d'un nombre fixe de variables, utilisez la borne \(N_j\le m^j\) et des indicatrices.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Concluez par le lemme des coalitions.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+Montrons par récurrence que \(N_j\) est une fonction de la famille finie \((D_{i,k})_{0\le i\le j-1,\,1\le k\le m^i}\). C'est vrai pour \(j=0\), car \(N_0=1\). Si c'est vrai au rang \(j\), comme \(N_j\le m^j\) (Q 15),
+
+\equationajustee{\begin{aligned}
+N_{j+1}&=\sum_{k=1}^{N_j}D_{j,k}\\
+&=\sum_{k=1}^{m^j}\mathbf 1_{\{k\le N_j\}}D_{j,k}
+\end{aligned}}
+
+est une fonction de \(N_j\) et de \(D_{j,1},\dots,D_{j,m^j}\), donc des \(D_{i,k}\) avec \(i\le j\) et \(k\le m^i\).
+
+La famille finie \((D_{i,k})_{0\le i\le j,\,1\le k\le m^i}\) est indépendante \((H_6)\). Par le lemme des coalitions, une fonction des variables d'indice \(i\le j-1\) (ici \(N_j\)) est indépendante des variables \(D_{j,1},\dots,D_{j,m^j}\), qui ne figurent pas dans ce paquet.
+
+\textbf{\(D_{j,1},\dots,D_{j,m^j},N_j\) sont indépendantes.}
+
+\begin{jury}
+
+Le rapport 2026 conclut lui aussi « d'après le lemme des coalitions et l'hypothèse \((H_6)\) ». Nommer le lemme et préciser à quels paquets disjoints de variables il s'applique est indispensable ; « par indépendance » ne suffit pas.
+
+\end{jury}
+
+\hypertarget{question-18.2}{%
+\subsection{Question 18.2}\label{question-18.2}}
+
+\begin{indication}{1}
+
+Formule des probabilités totales avec le système complet \((N_j=\ell)_{0\le\ell\le m^j}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sur \((N_j=\ell)\), \(N_{j+1}\) est une somme d'un nombre \textbf{fixe} de termes ; utilisez Q 18.1 pour séparer les deux événements.
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+Soit \(n\in\{0,\dots,m^{j+1}\}\). D'après Q 15, \((N_j=\ell)_{0\le\ell\le m^j}\) est un système complet. Sur \((N_j=\ell)\), \(N_{j+1}=\sum_{k=1}^\ell D_{j,k}\). Donc
+
+\equationajustee{\begin{aligned}
+P(N_{j+1}=n)&=\sum_{\ell=0}^{m^j}P\big((N_j=\ell)\cap(N_{j+1}=n)\big)\\
+&=\sum_{\ell=0}^{m^j}P\Big((N_j=\ell)\cap\Big(\sum_{k=1}^\ell D_{j,k}=n\Big)\Big).
+\end{aligned}}
+
+Comme \(\ell\le m^j\), \(\sum_{k=1}^\ell D_{j,k}\) est une fonction de \(D_{j,1},\dots,D_{j,m^j}\). Elle est donc indépendante de \(N_j\) (Q 18.1, lemme des coalitions) :
+
+\equationajustee{\boxed{\begin{aligned}
+P(N_{j+1}=n)=\sum_{\ell=0}^{m^j}&P(N_j=\ell)\\
+&\times P\Big(\sum_{k=1}^\ell D_{j,k}=n\Big)
+\end{aligned}}}
+
+Pour \(\ell=0\), la somme est vide et vaut \(0\).
+
+\begin{piege}
+
+On ne peut pas écrire directement \(P(N_j=\ell)P(N_{j+1}=n)\) : \(N_j\) et \(N_{j+1}\) ne sont pas indépendantes. C'est le remplacement de \(N_{j+1}\) par une somme d'un nombre fixe de termes qui permet de séparer.
+
+\end{piege}
+
+\hypertarget{question-18.3}{%
+\subsection{Question 18.3}\label{question-18.3}}
+
+\begin{indication}{1}
+
+L'existence des espérances est immédiate : pourquoi ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Multipliez la relation de Q 18.2 par \(n\), sommez, intervertissez les sommes finies et reconnaissez l'espérance d'une somme de \(\ell\) variables.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\(D\), \(N_j\) et \(N_{j+1}\) sont à valeurs dans des ensembles finis (\((H_4)\), Q 15) : elles admettent une espérance.
+
+Soit \(T_\ell=\sum_{k=1}^\ell D_{j,k}\), à valeurs dans \(\{0,\dots,\ell m\}\subset\{0,\dots,m^{j+1}\}\). Par linéarité et \((H_3)\), \(E(T_\ell)=\ell E(D)\). Alors
+
+\equationajustee{\begin{aligned}
+E(N_{j+1})&=\sum_{n=0}^{m^{j+1}}n\sum_{\ell=0}^{m^j}P(N_j=\ell)P(T_\ell=n)\\
+&=\sum_{\ell=0}^{m^j}P(N_j=\ell)E(T_\ell)\\
+&=E(D)\sum_{\ell=0}^{m^j}\ell P(N_j=\ell)\\
+&=E(D)\,E(N_j).
+\end{aligned}}
+
+\equationajustee{\boxed{E(N_{j+1})=E(D)\,E(N_j)}}
+
+\begin{piege}
+
+La linéarité de l'espérance ne demande aucune indépendance ; l'indépendance a servi en 18.2.
+
+\end{piege}
+
+\hypertarget{question-18.4}{%
+\subsection{Question 18.4}\label{question-18.4}}
+
+\begin{indication}{1}
+
+Suite géométrique.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\(E(N_0)=1=E(D)^0\) et, par récurrence avec Q 18.3, pour tout \(j\in\mathbb N\) :
+
+\equationajustee{\boxed{E(N_j)=E(D)^j}}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Que devient \(E(N_j)\) quand \(j\to+\infty\) si \(E(D)>1\) ? Est-ce réaliste ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quelle hypothèse interdit toute régulation de la population par sa propre taille ? Laquelle fige la loi de reproduction, quelle que soit la taille de la population ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+Si \(E(D)>1\), \(E(N_j)=E(D)^j\to+\infty\), de façon géométrique : la population moyenne croît sans limite. Avec \(E(D)=2\), elle dépasse \(10^9\) en un mois. C'est irréaliste dans un milieu fini, où la lumière, la matière organique et l'espace sont limités.
+
+Or \((H_6)\) impose que le nombre de descendants d'une euglène soit indépendant de ceux des autres, donc de la taille de la population : le modèle ignore toute compétition et toute régulation par la densité. De même, \((H_3)\) garde la même loi de reproduction quand la population est très grande qu'au début de l'expérience.
+
+\textbf{Le modèle n'est pertinent que tant que la population reste petite (phase initiale) ; à long terme, \((H_6)\) cesse d'être réaliste.} Il faudrait une fécondité qui décroît avec la densité (modèle de type logistique).
+
+\begin{jury}
+
+Le rapport 2026 met en cause les deux hypothèses. Pour \((H_3)\), il écrit qu'avec une population très importante, « il est peu réaliste d'observer la même loi de reproduction journalière que celle du début de l'expérience, lorsque très peu d'euglènes étaient présentes ». Pour \((H_6)\), il souligne qu'en réalité, « la taille de la population influe sur le nombre de descendants par euglène ».
+
+\end{jury}
+
+\begin{methode}
+
+Une question de critique de modèle attend trois éléments : la conséquence mathématique, le phénomène réel ignoré, l'hypothèse responsable.
+
+\end{methode}
+
+\begin{piege}
+
+\(E(N_j)\to+\infty\) n'entraîne pas que la population survit à coup sûr : on verra (Q 26, Q 29) que l'extinction garde une probabilité \(\alpha>0\) dès que \(p_0>0\).
+
+\end{piege}
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Combien d'euglènes vivent au jour 2 sur \(A_1\) ? sur \(A_2\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque euglène vivante au jour 2 est à l'origine d'une lignée qui évolue comme le processus initial : avec quelle probabilité s'éteint-elle, et les lignées sont-elles indépendantes ?
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+Sur \(A_2\), \(N_2=0\), donc \(A_2\subset(N_2=0)\subset E_0\) et \(P(E_0\mid A_2)=1\).
+
+Sur \(A_1\), \(N_2=3\) (Q 17.4). Chacune des trois euglènes présentes au jour 2 engendre une lignée. D'après \((H_3)\) et \((H_6)\), chaque lignée évolue comme le processus initial issu d'une seule euglène. Elle est indépendante des deux autres lignées et des variables \(D_{0,1},D_{1,1},\dots,D_{1,4}\) qui définissent \(A_1\).
+
+La population s'éteint si et seulement si les trois lignées s'éteignent, chacune avec probabilité \(\alpha\) :
+
+\equationajustee{\boxed{P(E_0\mid A_1)=\alpha^3}}
+
+\equationajustee{\boxed{P(E_0\mid A_2)=1}}
+
+\begin{jury}
+
+Selon le rapport 2026, cette question « n'a ainsi été que très rarement réussie », alors qu'une lecture attentive du modèle et une compréhension correcte du conditionnement suffisaient. Il ajoute : « Trop de candidates et de candidats semblent avoir le réflexe d'utiliser la formule de Bayes dès qu'apparaît un conditionnement, ce qui n'était pas pertinent ici. »
+
+\end{jury}
+
+\begin{piege}
+
+Répondre \(\alpha^4\) pour \(A_1\) : on connaît déjà les descendants des quatre euglènes du jour 1, il faut repartir des trois euglènes du jour 2.
+
+\end{piege}
+
+\hypertarget{question-21.1}{%
+\subsection{Question 21.1}\label{question-21.1}}
+
+\begin{indication}{1}
+
+Quelles sont les valeurs prises par \(D\) ? Quel \(m\) choisir ?
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+\(p_0+p_2=1\), donc \(p_n=0\) pour \(n\notin\{0,2\}\) : \(D\) est à valeurs dans \(\{0,2\}\subset\{0,1,2\}\).
+
+Avec \(m=2\ge2\), \(P(D=m)=p>0\). \textbf{\((H_4)\) est satisfaite avec \(m=2\).}
+
+\hypertarget{question-21.2}{%
+\subsection{Question 21.2}\label{question-21.2}}
+
+\begin{indication}{1}
+
+Écrivez \(G_D\), puis l'équation \(G_D(t)=t\) : elle a une racine évidente (pourquoi est-ce toujours le cas ?).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Discutez selon la position de la seconde racine par rapport à \(1\).
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+\(G_D(t)=1-p+pt^2\), et l'équation \(G_D(t)=t\) s'écrit
+
+\equationajustee{pt^2-t+1-p=0 .}
+
+La racine \(1\) est évidente, car \(G_D(1)=1\). Le produit des racines vaut \(\frac{1-p}p\), donc l'autre racine est \(\frac{1-p}p\). Or \(\frac{1-p}p\le1\) si et seulement si \(p\ge\frac12\).
+
+D'après le résultat admis (\(\alpha\) est la plus petite solution dans \([0,1]\)) :
+
+\begin{itemize}
+\tightlist
+\item
+  si \(0<p\le\frac12\), \(\alpha_p=1\) ;
+\item
+  si \(\frac12\le p\le1\), \(\alpha_p=\frac{1-p}p\).
+\end{itemize}
+
+\equationajustee{\boxed{\alpha_p=\min\Big(1,\ \frac{1-p}p\Big)}}
+
+\begin{methode}
+
+Variante du rapport 2026 : le discriminant vaut \(1-4p(1-p)=(2p-1)^2\), ce qui donne directement les deux racines \(1\) et \(\frac{1-p}p\).
+
+\end{methode}
+
+\begin{piege}
+
+Répondre \(\alpha_p=\frac{1-p}p\) sans discussion : pour \(p<\frac12\), cette valeur dépasse \(1\).
+
+\end{piege}
+
+\hypertarget{question-21.3}{%
+\subsection{Question 21.3}\label{question-21.3}}
+
+\begin{indication}{1}
+
+Étudiez chacun des deux morceaux, puis reliez le seuil à \(E(D)\).
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+Sur \(]0,\frac12]\), \(\alpha_p=1\) est constante.
+
+Sur \([\frac12,1]\), \(\alpha_p=\frac1p-1\) a pour dérivée \(-\frac1{p^2}<0\) : elle décroît strictement de \(1\) à \(\alpha_1=0\).
+
+La fonction est continue en \(\frac12\), donc décroissante au sens large sur \(]0,1]\).
+
+\begin{longtable}[]{@{}llllll@{}}
+\toprule\noalign{}
+\(p\) & \(0\) & & \(\frac12\) & & \(1\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\alpha_p\) & & \(1\) (constante) & \(1\) & décroissante & \(0\) \\
+\end{longtable}
+
+\textbf{Interprétation} : \(E(D)=2p\). Tant que \(E(D)\le1\), l'extinction est certaine. Au-delà du seuil \(p=\frac12\), plus les divisions sont probables, plus l'extinction est improbable ; elle est impossible pour \(p=1\) (chaque euglène a toujours deux descendants).
+
+\hypertarget{question-22.1}{%
+\subsection{Question 22.1}\label{question-22.1}}
+
+\begin{indication}{1}
+
+Que contient \texttt{N} au début de chaque tour de la boucle externe ? Que calcule \texttt{aux} ?
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+Au début du tour \texttt{i}, \texttt{N} contient \(N_i\). Les lignes 4 à 6 ajoutent à \texttt{aux}, pour chacune des \texttt{N} euglènes vivantes, une réalisation indépendante de \(D\) : son nombre de descendants \(D_{i,k}\).
+
+En fin de boucle, \texttt{aux} contient \(\sum_{k=1}^{N_i}D_{i,k}=N_{i+1}\), que la ligne 7 range dans \texttt{N}. \textbf{Ces lignes simulent le passage d'un jour au suivant} ; si \(N_i=0\), la boucle ne s'exécute pas et \texttt{aux} reste nul.
+
+\hypertarget{question-22.2}{%
+\subsection{Question 22.2}\label{question-22.2}}
+
+\begin{indication}{1}
+
+Rapprochez la ligne 16 de la question 14.
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+\texttt{N1} est le nombre de descendants de l'euglène initiale de l'appel courant : \textbf{c'est une réalisation de \(N_1=D_{0,1}\), le nombre d'euglènes au jour 1}, de même loi que \(D\) (Q 14). Chacune de ces \texttt{N1} euglènes est ensuite traitée par un appel récursif, comme une nouvelle racine.
+
+\hypertarget{question-22.3}{%
+\subsection{Question 22.3}\label{question-22.3}}
+
+\begin{indication}{1}
+
+Dans quel ordre chaque fonction visite-t-elle les euglènes de l'arbre ? Niveau par niveau, ou branche par branche ? Repérez la boucle qui pilote chaque parcours.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'efficacité, comparez le nombre d'appels à \texttt{simule\_D} et la mémoire utilisée, en distinguant extinction et survie.
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+\textbf{\texttt{extinction\_iter} : parcours en largeur.} La boucle \texttt{for\ i\ in\ range(\allowbreak{}j)\allowbreak{}} de la ligne 3 traite toute une génération (toutes les euglènes du jour \(i\)) avant de passer à la suivante. Seul l'effectif \texttt{N} est conservé.
+
+\textbf{\texttt{extinction\_rec} : parcours en profondeur.} Après avoir tiré le nombre \texttt{N1} d'enfants de la racine, la boucle \texttt{for\ k\ in\ range(\allowbreak{}N1)\allowbreak{}} de la ligne 17 appelle \texttt{extinction\_rec(\allowbreak{}j-1)\allowbreak{}} sur le premier enfant. Cet appel suit une lignée et explore entièrement le sous-arbre de cet enfant, jusqu'au jour \(j\), avant de passer au deuxième enfant. La pile des appels récursifs joue le rôle de la pile d'un parcours en profondeur.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q22-3-parcours-largeur-profondeur.pdf}
+\caption*{Figure 2 --- Ordre des appels à simule\_D() sur l'arbre de l'expérience
+2 pour j = 3 : extinction\_iter tire génération par génération,
+extinction\_rec branche par branche et s'arrête dès qu'une lignée
+atteint le jour 3}
+\end{figure}
+
+\textbf{Comparaison.} Les deux fonctions renvoient une variable de même loi (l'indicatrice de \(N_j=0\)).
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{extinction\_iter} fait \(N_0+N_1+\dots+N_{j-1}\) appels à \texttt{simule\_D}, moins si l'extinction survient avant : en moyenne de l'ordre de \(E(D)^j\) si \(E(D)>1\). Sa mémoire est constante.
+\item
+  \texttt{extinction\_rec} visite au plus les mêmes euglènes, mais s'arrête dès qu'elle a trouvé une euglène vivante au jour \(j\) (lignes 18-19). En cas de survie, elle peut conclure après peu d'appels : elle est alors bien plus efficace.
+\item
+  En cas d'extinction au jour \(j\), les deux visitent tout l'arbre et sont aussi rapides. La version récursive utilise en revanche une pile de profondeur \(j\) (risque de dépasser la limite de récursion de Python) et un surcoût par appel.
+\end{itemize}
+
+\begin{jury}
+
+« Dans la question 22.3, les parcours en profondeur et en largeur sont souvent confondus. Une réponse avec justification était par ailleurs attendue » (rapport 2026). La justification du rapport s'appuie sur la boucle de la ligne 3 (une génération après l'autre) et sur celle de la ligne 17 (une lignée jusqu'au jour \(j\)).
+
+\end{jury}
+
+\begin{methode}
+
+Parcours en largeur : on traite une génération entière à la fois (file ou, ici, simple compteur). Parcours en profondeur : on descend une branche jusqu'au bout avant de passer à la suivante (pile, ou récursivité).
+
+\end{methode}
+
+\hypertarget{question-23.1}{%
+\subsection{Question 23.1}\label{question-23.1}}
+
+\begin{indication}{1}
+
+Même vérification qu'à la question 21.1.
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+\(p_0=p_2=\frac12\), donc \(D\) est à valeurs dans \(\{0,2\}\subset\{0,1,2\}\).
+
+Avec \(m=2\ge2\), \(P(D=2)=\frac12>0\) : \textbf{\((H_4)\) est satisfaite.} C'est le cas \(p=\frac12\) de la question 21, avec \(E(D)=1\).
+
+\hypertarget{question-23.2}{%
+\subsection{Question 23.2}\label{question-23.2}}
+
+\begin{indication}{1}
+
+Résolvez \(G_D(t)=t\) : le discriminant est remarquable.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Exprimez l'événement \((J=0)\) à l'aide de \(E_0\), en vous servant de \(N_0=1\).
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+\(G_D(t)=\frac12+\frac12t^2\), et pour \(t\in[0,1]\) :
+
+\equationajustee{G_D(t)-t=\frac{(t-1)^2}2 .}
+
+Ainsi \(G_D(t)=t\) si et seulement si \(t=1\), et \(\boxed{\alpha=1}\).
+
+Comme \(N_0=1\neq0\), \(E_0=\bigcup_{j\ge1}(N_j=0)=(\mathcal E\neq\varnothing)\), et sur cet événement \(J=\min\mathcal E\ge1\). Donc \((J=0)=(\mathcal E=\varnothing)\), soit \((J=0)=\overline{E_0}\), et
+
+\equationajustee{\begin{aligned}
+P(J=0)&=1-\alpha\\
+&=0 .
+\end{aligned}}
+
+\equationajustee{\boxed{P(J=0)=0}}
+
+\hypertarget{question-23.3}{%
+\subsection{Question 23.3}\label{question-23.3}}
+
+\begin{indication}{1}
+
+À quelle condition une variable à valeurs dans \(\mathbb N\) admet-elle une espérance ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Utilisez l'équivalent fourni et un théorème de comparaison de séries à termes positifs.
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+\(J\), à valeurs dans \(\mathbb N\), admet une espérance si et seulement si \(\sum jP(J=j)\) converge.
+
+Or \(jP(J=j)\sim\frac2j\), terme général positif d'une série divergente (série harmonique). Par comparaison par équivalents des séries à termes positifs, \(\sum jP(J=j)\) diverge. \textbf{\(J\) n'admet pas d'espérance.}
+
+\begin{methode}
+
+Dans le cas critique \(E(D)=1\), l'extinction est certaine mais son temps d'attente n'a pas d'espérance finie. Le rapport 2026 justifie l'équivalent admis : \(P(J=j)=a_j-a_{j-1}\) et \(a_{j+1}=\frac{1+a_j^2}2\), d'où \(\frac1{1-a_{j+1}}-\frac1{1-a_j}=\frac1{1+a_j}\to\frac12\). Le lemme de Cesàro, hors programme en BCPST, donne alors \(1-a_j\sim\frac2j\).
+
+\end{methode}
+
+\hypertarget{question-23.4}{%
+\subsection{Question 23.4}\label{question-23.4}}
+
+\begin{indication}{1}
+
+Distinguez selon que l'euglène initiale a \(0\) ou \(2\) descendants. Dans le second cas, chaque descendant lance une copie indépendante du processus.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La population est éteinte quand la \textbf{dernière} des deux lignées l'est ; n'oubliez pas le décalage d'un jour.
+
+\end{indication}
+
+\hypertarget{solution-50}{%
+\subsubsection{Solution}\label{solution-50}}
+
+Si l'euglène initiale n'a pas de descendant (probabilité \(\frac12\)), la population a disparu au jour 1.
+
+Sinon, elle a deux descendants, dont les lignées s'éteignent en \texttt{t1} et \texttt{t2} jours comptés à partir du jour 1. La population est éteinte au jour \(1+\max(\texttt{t1},\texttt{t2})\).
+
+\begin{lstlisting}[language=Python]
+def temps_extinction():
+    if rd.binomial(1, 1/2) == 0:
+        return 1
+    else:
+        t1 = temps_extinction()
+        t2 = temps_extinction()
+        return 1 + max(t1, t2)
+\end{lstlisting}
+
+(Si l'on dispose de \texttt{simule\_D} de la question 22, la ligne 2 peut s'écrire \texttt{if\ simule\_D(\allowbreak{})\allowbreak{}\ =\allowbreak{}=\allowbreak{}\ 0:\allowbreak{}}.)
+
+\begin{jury}
+
+Le rapport 2026, après avoir noté que les questions mêlant informatique et probabilités ont souvent été bien réussies : « La question 23.4 constitue toutefois une exception notable et a été très rarement traitée correctement. » Sa solution est celle-ci, avec \texttt{rd.binomial(\allowbreak{}1,\allowbreak{}\ 0.5)\allowbreak{}\ =\allowbreak{}=\allowbreak{}\ 0} et \texttt{1\ +\ max(t1,t2)}.
+
+\end{jury}
+
+\begin{piege}
+
+\texttt{1\ +\ t1\ +\ t2} ou \texttt{1\ +\ min(t1,\ t2)} sont faux : les deux lignées vivent en parallèle et la population ne disparaît qu'avec la dernière.
+
+\end{piege}
+
+\hypertarget{partie-iii.d-calcul-de-la-probabilituxe9-dextinction-uxe9tude-guxe9nuxe9rale}{%
+\section{Partie III.D --- Calcul de la probabilité d'extinction : étude générale}\label{partie-iii.d-calcul-de-la-probabilituxe9-dextinction-uxe9tude-guxe9nuxe9rale}}
+
+On démontre le résultat admis en III.C. La suite \(a_j=P(N_j=0)\) croît vers \(\alpha\) et vérifie \(a_{j+1}=G_D(a_j)\).
+
+On en déduit que \(\alpha\) est le plus petit point fixe de \(G_D\). Puis l'étude de \(f=G_D-\mathrm{id}\) départage les cas \(E(D)\le1\) et \(E(D)>1\).
+
+Remarque préliminaire, utile partout : si \(N_j(\omega)=0\), la somme définissant \(N_{j+1}(\omega)\) est vide, donc \(N_{j+1}(\omega)=0\).
+
+Par récurrence, \(N_{j'}(\omega)=0\) pour tout \(j'\ge j\). Ainsi \((N_j=0)\subset(N_{j+1}=0)\), et \(a_0=0\).
+
+\hypertarget{question-24.1}{%
+\subsection{Question 24.1}\label{question-24.1}}
+
+\begin{indication}{1}
+
+Double inclusion. Pour la plus difficile, considérez le premier jour où la population est nulle.
+
+\end{indication}
+
+\hypertarget{solution-51}{%
+\subsubsection{Solution}\label{solution-51}}
+
+Si \(\omega\in(N_{j+1}=0,N_j\ne0)\) pour un \(j\), alors \(\omega\in(N_{j+1}=0)\subset E_0\).
+
+Réciproquement, si \(\omega\in E_0\), \(\{k\in\mathbb N:N_k(\omega)=0\}\)
+est une partie non vide de \(\mathbb N\), qui admet un plus petit élément \(j_0\).
+
+On a \(j_0\ge1\) car \(N_0=1\), et par minimalité \(N_{j_0-1}(\omega)\ne0\). Donc \(\omega\) appartient au terme d'indice \(j_0-1\).
+
+\equationajustee{\boxed{E_0=\bigcup_{j\in\mathbb N}(N_{j+1}=0,\ N_j\ne0)}}
+
+De plus, ces événements sont deux à deux incompatibles : si \(j<j'\) et \(N_{j+1}(\omega)=0\), alors \(N_{j'}(\omega)=0\).
+
+\begin{methode}
+
+Le « premier instant » transforme une réunion croissante en réunion disjointe, ce qui ouvre la voie à la \(\sigma\)-additivité.
+
+\end{methode}
+
+\hypertarget{question-24.2}{%
+\subsection{Question 24.2}\label{question-24.2}}
+
+\begin{indication}{1}
+
+Découpez \((N_{j+1}=0)\) selon que \(N_j\) est nul ou non, et utilisez la remarque préliminaire.
+
+\end{indication}
+
+\hypertarget{solution-52}{%
+\subsubsection{Solution}\label{solution-52}}
+
+Comme \((N_j=0)\subset(N_{j+1}=0)\), l'événement \((N_{j+1}=0,N_j=0)\) est égal à \((N_j=0)\). Donc
+
+\equationajustee{\begin{aligned}
+(N_{j+1}=0)&=(N_{j+1}=0,\ N_j\ne0)\cup(N_{j+1}=0,\ N_j=0)\\
+&=(N_{j+1}=0,\ N_j\ne0)\cup(N_j=0).
+\end{aligned}}
+
+\textbf{On obtient l'égalité demandée, et c'est une réunion de deux événements incompatibles.}
+
+\hypertarget{question-24.3}{%
+\subsection{Question 24.3}\label{question-24.3}}
+
+\begin{indication}{1}
+
+Appliquez la \(\sigma\)-additivité à la réunion de Q 24.1, puis l'additivité à celle de Q 24.2.
+
+\end{indication}
+
+\hypertarget{solution-53}{%
+\subsubsection{Solution}\label{solution-53}}
+
+D'après Q 24.2 (réunion disjointe), \(a_{j+1}=P(N_{j+1}=0,N_j\ne0)+a_j\). D'après Q 24.1 (réunion disjointe) et la \(\sigma\)-additivité :
+
+\equationajustee{\begin{aligned}
+\alpha&=\sum_{j=0}^{+\infty}P(N_{j+1}=0,\ N_j\ne0)\\
+&=\sum_{j=0}^{+\infty}(a_{j+1}-a_j).
+\end{aligned}}
+
+\equationajustee{\boxed{\alpha=\sum_{j=0}^{+\infty}(a_{j+1}-a_j)}}
+
+\begin{piege}
+
+La \(\sigma\)-additivité exige des événements deux à deux incompatibles : il faut l'avoir établi.
+
+\end{piege}
+
+\hypertarget{question-24.4}{%
+\subsection{Question 24.4}\label{question-24.4}}
+
+\begin{indication}{1}
+
+Série télescopique : calculez ses sommes partielles.
+
+\end{indication}
+
+\hypertarget{solution-54}{%
+\subsubsection{Solution}\label{solution-54}}
+
+Pour \(r\in\mathbb N^*\) :
+
+\equationajustee{\begin{aligned}
+\sum_{j=0}^{r-1}(a_{j+1}-a_j)&=a_r-a_0\\
+&=a_r .
+\end{aligned}}
+
+Ces sommes partielles convergent vers \(\alpha\) (Q 24.3) :
+
+\equationajustee{\boxed{\lim_{j\to+\infty}a_j=\alpha}}
+
+\begin{piege}
+
+Nommer la borne de la somme partielle \(J\) : cette lettre désigne déjà une variable aléatoire en Q 23. Le rapport 2026 demande de ne pas réutiliser une lettre déjà fixée dans l'énoncé.
+
+\end{piege}
+
+\hypertarget{question-25.1}{%
+\subsection{Question 25.1}\label{question-25.1}}
+
+\begin{indication}{1}
+
+Probabilités totales en conditionnant par la valeur de \(N_1\) ; quelle est sa loi ?
+
+\end{indication}
+
+\hypertarget{solution-55}{%
+\subsubsection{Solution}\label{solution-55}}
+
+D'après Q 14, \(P(N_1=n)=p_n\), et \((N_1=n)_{0\le n\le m}\) est un système complet. Les événements de probabilité nulle (\(n\notin S\)) ne contribuent pas ; pour \(n\in S\), la probabilité conditionnelle a un sens. Donc
+
+\equationajustee{\boxed{\begin{aligned}
+a_{j+1}&=P(N_{j+1}=0)\\
+&=\sum_{n\in S}p_n\,P(N_{j+1}=0\mid N_1=n)
+\end{aligned}}}
+
+\begin{methode}
+
+Le rapport 2026 parle de système « quasi-complet » d'événements non négligeables : \((N_1=n)_{n\in S}\) a une réunion de probabilité \(1\), ce qui suffit pour la formule des probabilités totales.
+
+\end{methode}
+
+\hypertarget{question-25.2}{%
+\subsection{Question 25.2}\label{question-25.2}}
+
+\begin{indication}{1}
+
+Sachant \(N_1=n\), la population du jour \(j+1\) est formée des descendants des \(n\) euglènes du jour 1.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque lignée est une copie du processus initial décalée d'un jour ; quelles hypothèses donnent la même loi, lesquelles l'indépendance ?
+
+\end{indication}
+
+\hypertarget{solution-56}{%
+\subsubsection{Solution}\label{solution-56}}
+
+Soit \(n\in S\). Sur \((N_1=n)\), la population au jour \(j+1\) est la réunion des descendances, au jour \(j+1\), des \(n\) euglènes du jour 1.
+
+D'après \((H_3)\) (même loi de reproduction pour tous) et \((H_6)\) (indépendance de toutes les reproductions), ces \(n\) lignées évoluent comme \(n\) copies indépendantes du processus initial, décalées d'un jour, et indépendantes de \(N_1=D_{0,1}\).
+
+La population est éteinte au jour \(j+1\) si et seulement si chaque lignée est éteinte \(j\) jours après son départ, ce qui arrive pour chacune avec probabilité \(P(N_j=0)=a_j\). Par indépendance :
+
+\equationajustee{\boxed{\begin{aligned}
+P(N_{j+1}=0\mid N_1=n)&=\prod_{k=1}^nP(N_j=0)\\
+&=(a_j)^n
+\end{aligned}}}
+
+Pour \(n=0\), on trouve \(1\) : la population est déjà éteinte.
+
+\begin{jury}
+
+Le rapport 2026 rédige cet argument au même niveau : conditionnellement à \((N_1=n)\), les populations issues des \(n\) euglènes sont indépendantes, et chacune suit la même loi que le processus initial, « avec toutefois un décalage d'un jour ». Le décalage d'indice doit apparaître : \(N_{j+1}\) pour la population totale correspond à \(N_j\) pour chaque lignée.
+
+\end{jury}
+
+\hypertarget{question-25.3}{%
+\subsection{Question 25.3}\label{question-25.3}}
+
+\begin{indication}{1}
+
+Reportez Q 25.2 dans Q 25.1 et complétez la somme par des termes nuls.
+
+\end{indication}
+
+\hypertarget{solution-57}{%
+\subsubsection{Solution}\label{solution-57}}
+
+D'après Q 25.1 et Q 25.2, on ajoute des termes nuls (\(p_n=0\) hors de \(S\)) :
+
+\equationajustee{\begin{aligned}
+a_{j+1}&=\sum_{n\in S}p_na_j^n\\
+&=\sum_{n=0}^mp_na_j^n .
+\end{aligned}}
+
+Comme \(a_j\in[0,1]\), on reconnaît \(G_D(a_j)\) :
+
+\equationajustee{\boxed{a_{j+1}=G_D(a_j)}}
+
+\begin{methode}
+
+\(a_j=G_D\circ\dots\circ G_D(0)\) : c'est la version itérée de la composition \(G_{J_2}=G_{J_1}\circ G_{X_1}\) de la partie II.
+
+\end{methode}
+
+\hypertarget{question-25.4}{%
+\subsection{Question 25.4}\label{question-25.4}}
+
+\begin{indication}{1}
+
+Passez à la limite dans la relation de récurrence ; quelle propriété de \(G_D\) faut-il justifier ?
+
+\end{indication}
+
+\hypertarget{solution-58}{%
+\subsubsection{Solution}\label{solution-58}}
+
+D'après \((H_4)\), \(P(D\le m)=1\). D'après Q 3.1, \(G_D\) est donc polynomiale, donc continue.
+
+Comme \(a_j\in[0,1]\) et \(a_j\to\alpha\), on a \(\alpha\in[0,1]\). En passant à la limite dans \(a_{j+1}=G_D(a_j)\) :
+
+\equationajustee{\boxed{\alpha=G_D(\alpha)}}
+
+\begin{jury}
+
+Le rapport 2026 observe que peu de candidats « ont identifié dans la partie III que l'hypothèse \((H_4)\) garantissait le caractère polynomial de la fonction génératrice ».
+C'est pourtant ce qui justifie ici la continuité, et en Q 27-29 la dérivabilité.
+
+\end{jury}
+
+\hypertarget{question-25.5}{%
+\subsection{Question 25.5}\label{question-25.5}}
+
+\begin{indication}{1}
+
+Récurrence sur \(j\) ; utilisez la croissance de \(G_D\) (partie I).
+
+\end{indication}
+
+\hypertarget{solution-59}{%
+\subsubsection{Solution}\label{solution-59}}
+
+Soit \(t\in\mathcal F\). On a \(a_0=0\le t\). Si \(a_j\le t\), alors, \(G_D\) étant croissante sur \([0,1]\) (Q 1.3), \(a_{j+1}=G_D(a_j)\le G_D(t)=t\).
+
+\textbf{Pour tous \(t\in\mathcal F\) et \(j\in\mathbb N\), \(a_j\le t\).}
+
+\hypertarget{question-25.6}{%
+\subsection{Question 25.6}\label{question-25.6}}
+
+\begin{indication}{1}
+
+Un plus petit élément doit appartenir à l'ensemble et le minorer.
+
+\end{indication}
+
+\hypertarget{solution-60}{%
+\subsubsection{Solution}\label{solution-60}}
+
+\(\alpha\in[0,1]\) et \(G_D(\alpha)=\alpha\) (Q 25.4) : \(\alpha\in\mathcal F\).
+
+Pour \(t\in\mathcal F\), \(a_j\le t\) pour tout \(j\) (Q 25.5), donc \(\alpha\le t\) par passage à la limite (Q 24.4). \textbf{\(\alpha=\min\mathcal F\).}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Que vaut \(G_D(0)\) ? Utilisez la caractérisation de \(\alpha\).
+
+\end{indication}
+
+\hypertarget{solution-61}{%
+\subsubsection{Solution}\label{solution-61}}
+
+Si \(p_0=0\), \(G_D(0)=p_0=0\) (Q 1.2), donc \(0\in\mathcal F\) et \(\alpha=\min\mathcal F=0\).
+
+Si \(\alpha=0\), \(G_D(0)=0\) (Q 25.4), donc \(p_0=0\).
+
+\textbf{Ainsi \(\alpha=0\) si et seulement si \(p_0=0\).}
+
+\begin{methode}
+
+Contrôle intuitif, qui est aussi la preuve du sens direct dans le rapport 2026 : \((N_1=0)\subset E_0\), donc \(\alpha\ge P(N_1=0)=p_0\), et \(p_0>0\) interdit \(\alpha=0\).
+
+\end{methode}
+
+\hypertarget{question-27.1}{%
+\subsection{Question 27.1}\label{question-27.1}}
+
+\begin{indication}{1}
+
+\(G_D\) est un polynôme : pourquoi ? Quelle hypothèse, et quelle question de la partie I ?
+
+\end{indication}
+
+\hypertarget{solution-62}{%
+\subsubsection{Solution}\label{solution-62}}
+
+D'après \((H_4)\), \(P(D\le m)=1\). D'après Q 3.1, \(G_D(t)=\sum_{n=0}^mp_nt^n\) est polynomiale. \(f\) est donc polynomiale, donc deux fois dérivable, avec
+
+\equationajustee{f'(t)=\sum_{n=1}^mnp_nt^{n-1}-1}
+
+\equationajustee{f''(t)=\sum_{n=2}^mn(n-1)p_nt^{n-2}}
+
+\begin{jury}
+
+Le rapport 2026 : « La question 27, souvent abordée sans avoir traité les questions précédentes, n'a ainsi que très rarement rapporté des points. » Le lien \((H_4)\), puis Q 3.1, puis \(G_D\) polynomiale, est la clé de toute la fin de la partie III.
+
+\end{jury}
+
+\hypertarget{question-27.2}{%
+\subsection{Question 27.2}\label{question-27.2}}
+
+\begin{indication}{1}
+
+Étudiez le signe de \(f''\) ; quel terme est strictement positif, et où ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une fonction dont la dérivée est positive et ne s'annule qu'en un point est strictement monotone.
+
+\end{indication}
+
+\hypertarget{solution-63}{%
+\subsubsection{Solution}\label{solution-63}}
+
+Pour \(t\in[0,1]\), \(f''(t)\) est une somme de termes positifs. Le terme d'indice \(m\) vaut \(m(m-1)p_mt^{m-2}\).
+
+Comme \(m\ge2\) et \(p_m>0\), ce terme est strictement positif pour \(t>0\).
+
+Donc \(f''\ge0\) sur \([0,1]\) et \(f''>0\) sur \(]0,1]\).
+
+\textbf{\(f'\) est donc strictement croissante sur \([0,1]\)} : sa dérivée ne s'annule au plus qu'en \(0\).
+
+\begin{piege}
+
+« \(f''\ge0\) donc \(f'\) strictement croissante » est faux en général ; il faut la stricte positivité sauf en des points isolés. Sans \(m\ge2\) et \(p_m>0\), on pourrait avoir \(f''\) identiquement nulle (cas \(D\in\{0,1\}\)).
+
+\end{piege}
+
+\hypertarget{question-27.3}{%
+\subsection{Question 27.3}\label{question-27.3}}
+
+\begin{indication}{1}
+
+Calculez \(f'(0)\), puis majorez \(p_1\) à l'aide de \(p_m\).
+
+\end{indication}
+
+\hypertarget{solution-64}{%
+\subsubsection{Solution}\label{solution-64}}
+
+En \(t=0\), les termes \(np_nt^{n-1}\) avec \(n\ge2\) sont nuls : \(f'(0)=p_1-1\).
+
+Comme \(\sum p_n=1\) et \(p_m>0\) avec \(m\ne1\), \(p_1\le1-p_m<1\).
+
+\equationajustee{\boxed{f'(0)=p_1-1<0}}
+
+\hypertarget{question-28.1}{%
+\subsection{Question 28.1}\label{question-28.1}}
+
+\begin{indication}{1}
+
+Partie I : quelle question relie la dérivée de \(G\) en \(1\) à l'espérance ?
+
+\end{indication}
+
+\hypertarget{solution-65}{%
+\subsubsection{Solution}\label{solution-65}}
+
+D'après Q 3.2, applicable car \(P(D\le m)=1\) \((H_4)\), \((G_D)'(1)=E(D)\). Donc
+
+\equationajustee{\boxed{f'(1)=E(D)-1\le0}}
+
+\hypertarget{question-28.2}{%
+\subsection{Question 28.2}\label{question-28.2}}
+
+\begin{indication}{1}
+
+Combinez la stricte croissance de \(f'\) et le signe de \(f'(1)\).
+
+\end{indication}
+
+\hypertarget{solution-66}{%
+\subsubsection{Solution}\label{solution-66}}
+
+Pour \(t\in[0,1[\), \(f'(t)<f'(1)\le0\) : \textbf{\(f\) est strictement décroissante sur \([0,1]\)}, de \(f(0)=p_0\) à \(f(1)=0\).
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+\(t\) & \(0\) & & \(1\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(f'(t)\) & & \(-\) & \(\le0\) \\
+\(f\) & \(p_0\) & décroissante & \(0\) \\
+\end{longtable}
+
+\hypertarget{question-28.3}{%
+\subsection{Question 28.3}\label{question-28.3}}
+
+\begin{indication}{1}
+
+Une fonction strictement monotone s'annule au plus une fois.
+
+\end{indication}
+
+\hypertarget{solution-67}{%
+\subsubsection{Solution}\label{solution-67}}
+
+\(f\) est strictement décroissante et \(f(1)=0\), donc \(f>0\) sur \([0,1[\).
+
+Ainsi \(\mathcal F=\{1\}\), et \(\alpha=\min\mathcal F=1\) (Q 25.6).
+
+\equationajustee{\boxed{\mathcal F=\{1\}}}
+
+\equationajustee{\boxed{\alpha=1}}
+
+\textbf{Interprétation} : si une euglène a en moyenne au plus un descendant, la population s'éteint presque sûrement. C'est vrai même dans le cas \(E(D)=1\), où \(E(N_j)=1\) pour tout \(j\) : la probabilité que la population soit encore présente au jour \(j\) tend vers \(0\), et, quand elle l'est, elle est en moyenne grande.
+
+\hypertarget{question-29.1}{%
+\subsection{Question 29.1}\label{question-29.1}}
+
+\begin{indication}{1}
+
+Même calcul qu'en 28.1.
+
+\end{indication}
+
+\hypertarget{solution-68}{%
+\subsubsection{Solution}\label{solution-68}}
+
+D'après \((H_4)\) et Q 3.2, \((G_D)'(1)=E(D)\), donc
+
+\equationajustee{\boxed{f'(1)=E(D)-1>0}}
+
+\hypertarget{question-29.2}{%
+\subsection{Question 29.2}\label{question-29.2}}
+
+\begin{indication}{1}
+
+\(f'\) change de signe sur \([0,1]\) et elle est strictement monotone : quel théorème ?
+
+\end{indication}
+
+\hypertarget{solution-69}{%
+\subsubsection{Solution}\label{solution-69}}
+
+\(f'\) est continue (polynomiale) et strictement croissante sur \([0,1]\), avec \(f'(0)<0<f'(1)\) (Q 27.3, Q 29.1). Par le théorème de la bijection, \textbf{il existe un unique \(\beta\in\,]0,1[\) tel que \(f'(\beta)=0\).}
+
+\hypertarget{question-29.3}{%
+\subsection{Question 29.3}\label{question-29.3}}
+
+\begin{indication}{1}
+
+Le signe de \(f'\) se déduit de sa monotonie et de son zéro \(\beta\) ; évaluez \(f\) aux bornes et comparez \(f(\beta)\) à \(f(1)\).
+
+\end{indication}
+
+\hypertarget{solution-70}{%
+\subsubsection{Solution}\label{solution-70}}
+
+\(f'<0\) sur \([0,\beta[\) et \(f'>0\) sur \(]\beta,1]\).
+
+Donc \(f\) est strictement décroissante sur \([0,\beta]\) et strictement croissante sur \([\beta,1]\).
+
+De plus, \(f(0)=p_0\ge0\), \(f(1)=0\) et \(f(\beta)<f(1)=0\).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\(t\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(0\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(\beta\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(1\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(f'(t)\) & \(<0\) & \(-\) & \(0\) & \(+\) & \(>0\) \\
+\(f\) & \(p_0\ge0\) & décroissante & \(f(\beta)<0\) & croissante & \(0\) \\
+\end{longtable}
+
+\hypertarget{question-29.4}{%
+\subsection{Question 29.4}\label{question-29.4}}
+
+\begin{indication}{1}
+
+Cherchez les zéros de \(f\) séparément sur chacun des deux intervalles de monotonie.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sur \([0,\beta]\), n'oubliez pas le cas \(p_0=0\).
+
+\end{indication}
+
+\hypertarget{solution-71}{%
+\subsubsection{Solution}\label{solution-71}}
+
+Sur \([\beta,1]\), \(f\) est strictement croissante et \(f(1)=0\) : son seul zéro est \(1\).
+
+Sur \([0,\beta]\), \(f\) est continue et strictement décroissante, avec \(f(0)=p_0\ge0>f(\beta)\). Elle a donc un unique zéro \(\gamma\in[0,\beta[\), égal à \(0\) si \(p_0=0\).
+
+Donc \(\mathcal F=\{\gamma,1\}\) et \(\alpha=\min\mathcal F=\gamma<1\).
+
+\equationajustee{\boxed{\mathcal F=\{\alpha,1\}}}
+
+\equationajustee{\boxed{\alpha<1}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q29-4-points-fixes-gd.pdf}
+\caption*{Figure 3 --- Courbe de G\_D et droite y = t : si E(D) ≤ 1, seul point
+commun en 1 ; si E(D) \textgreater{} 1, second point commun α
+\textless{} 1, et f = G\_D − t est minimale en β (exemples G\_D(t) = 0,6
++ 0,4t² et 0,2 + 0,8t²)}
+\end{figure}
+
+\textbf{Interprétation} : si une euglène a en moyenne strictement plus d'un descendant, la population survit indéfiniment avec la probabilité \(1-\alpha>0\). L'extinction garde la probabilité \(\alpha>0\) dès que \(p_0>0\) (accident des premières générations).
+
+\begin{methode}
+
+Pour dénombrer exactement les zéros, appliquer le théorème de la bijection sur chaque intervalle de stricte monotonie.
+
+\end{methode}
+
+\hypertarget{partie-iii.e-une-application-calcul-numuxe9rique-de-la-probabilituxe9-dextinction}{%
+\section{Partie III.E --- Une application : calcul numérique de la probabilité d'extinction}\label{partie-iii.e-une-application-calcul-numuxe9rique-de-la-probabilituxe9-dextinction}}
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+D'après les études de 28 et 29, quel est le signe de \(G_D(b)-b\) selon que \(b<\alpha\) ou \(b\ge\alpha\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Maintenez l'invariant \(a\le\alpha\le c\) ; laquelle des deux bornes est une approximation par excès ?
+
+\end{indication}
+
+\hypertarget{solution-72}{%
+\subsubsection{Solution}\label{solution-72}}
+
+D'après Q 28 et Q 29, pour \(b\in[0,1]\), \(G_D(b)-b>0\) si et seulement si \(b<\alpha\). On maintient l'invariant \(a\le\alpha\le c\) ; la longueur \(c-a\) est divisée par \(2\) à chaque tour.
+
+À la sortie, \(c-a\le\varepsilon\), donc \(\alpha\le c\le\alpha+\varepsilon\) : on renvoie \texttt{c}.
+
+\begin{lstlisting}[language=Python]
+def proba_extinction(epsilon):
+    a = 0
+    c = 1
+    while c - a > epsilon:
+        b = (a+c)/2
+        if G_D(b) - b > 0:
+            a = b
+        else:
+            c = b
+    return c
+\end{lstlisting}
+
+La boucle effectue \(\lceil\log_2(1/\varepsilon)\rceil\) tours. Exemple : pour \(G_D(t)=0{,}2+0{,}8t^2\), on obtient \(\alpha=0{,}25\).
+
+\begin{jury}
+
+Le rapport 2026 note que « la notion de « valeur approchée par excès » ne semble pas toujours avoir été bien comprise ». Il précise : « Renvoyer b ne pouvait pas être une bonne idée puisque cette variable était définie à l'intérieur de la boucle while, dans laquelle le programme pouvait ne jamais entrer. »
+
+\end{jury}
+
+\begin{piege}
+
+Renvoyer \texttt{b} : pour \texttt{epsilon\ =\ 1}, la boucle n'est jamais exécutée et \texttt{b} n'existe pas ; sinon, \texttt{b} peut être inférieur à \(\alpha\). Renvoyer \texttt{a} ou \texttt{(a+c)/2} ne garantit pas non plus une approximation \textbf{par excès}.
+
+\end{piege}
+
+\hypertarget{partie-iv-tracuxe9s-de-graphes}{%
+\section{Partie IV --- Tracés de graphes}\label{partie-iv-tracuxe9s-de-graphes}}
+
+On estime \(G_X(t)=E(t^X)\) par une moyenne empirique, on contrôle l'erreur par l'inégalité de Bienaymé-Tchebychev, puis on lit et on écrit des programmes de tracé. Le rapport 2026 suggère d'y venir sans attendre si la partie III résiste : elle ne dépend que de la partie I.
+
+\hypertarget{question-31.1}{%
+\subsection{Question 31.1}\label{question-31.1}}
+
+\begin{indication}{1}
+
+Posez \(Y_j=t^{X_j}\) et calculez l'espérance et la variance de leur moyenne.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Quelle inégalité majore \(P(|M-E(M)|\ge\varepsilon)\) à l'aide de la variance ?
+
+\end{indication}
+
+\hypertarget{solution-73}{%
+\subsubsection{Solution}\label{solution-73}}
+
+Soit \(t\in[0,1]\) et \(Y_j=t^{X_j}\). Les \(Y_j\) sont indépendantes (fonctions des \(X_j\) indépendantes) et de même loi que \(t^X\).
+
+D'après Q 1.5 et Q 1.6, \(E(Y_j)=G_X(t)\) et \(V(Y_j)\le1\).
+
+Soit \(M=\frac1n\sum_{j=0}^{n-1}Y_j\). Par linéarité, \(E(M)=G_X(t)\). Par indépendance :
+
+\equationajustee{\begin{aligned}
+V(M)&=\frac1{n^2}\sum_{j=0}^{n-1}V(Y_j)\\
+&\le\frac1n .
+\end{aligned}}
+
+L'inégalité de Bienaymé-Tchebychev donne
+
+\equationajustee{\begin{aligned}
+P\left(\left|\frac1n\sum_{j=0}^{n-1}t^{X_j}-G_X(t)\right|\ge\varepsilon\right)&\le\frac{V(M)}{\varepsilon^2}\\
+&\le\frac1{n\varepsilon^2}.
+\end{aligned}}
+
+\begin{piege}
+
+Oublier le facteur \(\frac1{n^2}\) dans la variance de la moyenne, ou additionner les variances sans invoquer l'indépendance.
+
+\end{piege}
+
+\hypertarget{question-31.2}{%
+\subsection{Question 31.2}\label{question-31.2}}
+
+\begin{indication}{1}
+
+Passez au complémentaire et majorez la probabilité d'une réunion.
+
+\end{indication}
+
+\hypertarget{solution-74}{%
+\subsubsection{Solution}\label{solution-74}}
+
+Soit \(t_i=\frac ip\in[0,1]\). Le complémentaire \(\overline{A_i}\) est l'événement \(\left(\left|\frac1n\sum_jt_i^{X_j}-G_X(t_i)\right|\ge\varepsilon\right)\), donc \(P(\overline{A_i})\le\frac1{n\varepsilon^2}\) (Q 31.1). Par sous-additivité :
+
+\equationajustee{\begin{aligned}
+P\Big(\bigcap_{i=0}^pA_i\Big)&=1-P\Big(\bigcup_{i=0}^p\overline{A_i}\Big)\\
+&\ge1-\sum_{i=0}^pP(\overline{A_i})\\
+&\ge1-\frac{p+1}{n\varepsilon^2}.
+\end{aligned}}
+
+\begin{piege}
+
+Les \(A_i\) portent sur le même échantillon : ils ne sont pas indépendants, on ne peut pas multiplier les probabilités. Il y a \(p+1\) indices, pas \(p\).
+
+\end{piege}
+
+\hypertarget{question-31.3}{%
+\subsection{Question 31.3}\label{question-31.3}}
+
+\begin{indication}{1}
+
+Rendez le terme \(\frac{p+1}{n\varepsilon^2}\) inférieur à \(\eta\).
+
+\end{indication}
+
+\hypertarget{solution-75}{%
+\subsubsection{Solution}\label{solution-75}}
+
+Il suffit que \(\frac{p+1}{n\varepsilon^2}\le\eta\), c'est-à-dire
+
+\equationajustee{\boxed{n\ge\frac{p+1}{\eta\,\varepsilon^2}}}
+
+\hypertarget{question-32.1}{%
+\subsection{Question 32.1}\label{question-32.1}}
+
+\begin{indication}{1}
+
+Que fait \texttt{int} sur un réel positif ? Comparez la valeur obtenue à la condition de Q 31.3.
+
+\end{indication}
+
+\hypertarget{solution-76}{%
+\subsubsection{Solution}\label{solution-76}}
+
+Avec \(q=\frac{p+1}{\eta\varepsilon^2}>0\), \texttt{int(q)} est la partie entière de \(q\), donc \(n=\lfloor q\rfloor+1>q\).
+
+\textbf{La ligne 4 choisit la taille \(n\) de l'échantillon (le plus petit entier strictement supérieur à \(q\)) qui vérifie la condition de Q 31.3.} Ainsi les \(p+1\) encadrements sont simultanément vrais avec probabilité au moins \(1-\eta\).
+
+\hypertarget{question-32.2}{%
+\subsection{Question 32.2}\label{question-32.2}}
+
+\begin{indication}{1}
+
+Que contient \texttt{y\_empir{[}i{]}} à la fin de la boucle sur \texttt{j} ? Comparez à la définition de \(A_i\).
+
+\end{indication}
+
+\hypertarget{solution-77}{%
+\subsubsection{Solution}\label{solution-77}}
+
+La ligne 5 fournit \(n\) réalisations indépendantes \(X_0,\dots,X_{n-1}\) de \(X\). Pour chaque \texttt{i}, les lignes 7 et 8 accumulent dans \texttt{y\_empir{[}i{]}} (initialisé à \(0\)) les termes \(x_i^{X_j}/n\) ; à la fin,
+
+\equationajustee{\texttt{y\_empir[i]}=\frac1n\sum_{j=0}^{n-1}\Big(\frac ip\Big)^{X_j}.}
+
+C'est \textbf{la moyenne empirique qui estime \(G_X(i/p)\)}. Pour \(i=0\), \texttt{0**0} vaut \texttt{1} et l'on estime \(P(X=0)=G_X(0)\).
+
+\begin{jury}
+
+Ici encore, le rapport 2026 attend « une prise de recul sur le fonctionnement global du programme » : dire ce que contient \texttt{y\_empir{[}i{]}} à la fin, et non décrire chaque passage dans la boucle.
+
+\end{jury}
+
+\hypertarget{question-32.3}{%
+\subsection{Question 32.3}\label{question-32.3}}
+
+\begin{indication}{1}
+
+Rapprochez \texttt{ymin{[}i{]}} et \texttt{ymax{[}i{]}} des inégalités qui définissent \(A_i\).
+
+\end{indication}
+
+\hypertarget{solution-78}{%
+\subsubsection{Solution}\label{solution-78}}
+
+\texttt{ymax{[}i{]}} vaut \texttt{y\_empir{[}i{]}} \(+\varepsilon\) et \texttt{ymin{[}i{]}} vaut \texttt{y\_empir{[}i{]}} \(-\varepsilon\). Ce sont les bornes de l'intervalle qui, sur l'événement \(A_i\), contient \(G_X(i/p)\).
+
+Les lignes 11 à 13 tracent les deux lignes brisées correspondantes : \textbf{elles encadrent les \(p+1\) valeurs \(G_X(i/p)\) simultanément avec probabilité au moins \(1-\eta\)} (Q 31.2, Q 32.1).
+
+\begin{piege}
+
+La garantie porte sur les \(p+1\) abscisses \(i/p\), pas sur tout le graphe entre deux abscisses.
+
+\end{piege}
+
+\hypertarget{question-32.4}{%
+\subsection{Question 32.4}\label{question-32.4}}
+
+\begin{indication}{1}
+
+Les points \(M_i\) et \(N_i\) ont la même abscisse. Quand la courbe de \(G_X\) rencontre-t-elle le segment ?
+
+\end{indication}
+
+\hypertarget{solution-79}{%
+\subsubsection{Solution}\label{solution-79}}
+
+\(M_i\) et \(N_i\) ont même abscisse \texttt{x{[}i{]}} : le segment \([M_i,N_i]\) est vertical, de longueur \(\texttt{ymax[i]}-\texttt{ymin[i]}=2\varepsilon\).
+
+La courbe de \(G_X\) rencontre ce segment si et seulement si \(\texttt{ymin[i]}\le G_X(i/p)\le\texttt{ymax[i]}\), ce qui est réalisé sur \(A_i\). Donc l'événement « la courbe coupe les \(p+1\) segments » contient \(\bigcap_iA_i\). Comme \(n\ge\frac{p+1}{\eta\varepsilon^2}\) :
+
+\equationajustee{\begin{aligned}
+P\big(\text{la courbe de }G_X\text{ coupe les }p+1\text{ segments}\big)&\ge P\Big(\bigcap_{i=0}^pA_i\Big)\\
+&\ge1-\eta .
+\end{aligned}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q32-4-segments-confiance.pdf}
+\caption*{Figure 4 --- Sortie de trace1 simulée pour X de loi binomiale ℬ(2, 1/2),
+p = 5, ε = 0,1 : la courbe de G\_X coupe les p + 1 segments verticaux de
+longueur 2ε}
+\end{figure}
+
+\begin{piege}
+
+L'événement « la courbe coupe les segments » contient \(\bigcap_iA_i\), mais ne lui est pas égal : les segments sont fermés, alors que \(A_i\) impose des inégalités strictes. Seule l'inclusion sert, et elle suffit.
+
+\end{piege}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+La loi est connue : \(G_X\) est un polynôme dont les coefficients sont les éléments de \texttt{liste}.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Deux boucles imbriquées : sur les \(p+1\) abscisses, puis sur les \(m+1\) coefficients ; n'oubliez pas d'initialiser \texttt{y}.
+
+\end{indication}
+
+\hypertarget{solution-80}{%
+\subsubsection{Solution}\label{solution-80}}
+
+Comme \(P(X\le m)=1\), \(G_X(t)=\sum_{n=0}^m\texttt{liste[n]}\,t^n\) (Q 3.1).
+
+\begin{lstlisting}[language=Python]
+def trace2(p, liste):
+    x = [i/p for i in range(p+1)]
+    y = [0 for i in range(p+1)]
+    m = len(liste)-1
+    for i in range(p+1):
+        for n in range(m+1):
+            y[i] = y[i] + liste[n]*x[i]**n
+    plt.plot(x, y)
+    plt.show()
+\end{lstlisting}
+
+Pour \texttt{trace2(\allowbreak{}10,\allowbreak{}\ {[}0.4,\allowbreak{}\ 0.6{]}\allowbreak{})\allowbreak{}}, on obtient les onze points \(\big(\frac i{10},\ 0{,}4+0{,}6\cdot\frac i{10}\big)\), alignés de \((0;0{,}4)\) à \((1;1)\). C'est conforme à \(G_X(t)=0{,}4+0{,}6t\) pour \(X\hookrightarrow\mathcal B(3/5)\).
+
+\begin{piege}
+
+\texttt{range(p)} au lieu de \texttt{range(p+1)} (il faut \(p+1\) points), ou \texttt{range(m)} au lieu de \texttt{range(m+1)} (on perd le terme de plus haut degré) ; \texttt{y\ =\ {[}{]}} rendrait \texttt{y{[}i{]}} invalide. Le rapport 2026 rappelle que plusieurs erreurs « auraient pu être évitées par une lecture attentive de l'annexe Python » : \texttt{plt.plot} puis \texttt{plt.show}.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\item
+  \(G_X(t)=E(t^X)\) : une fonction génératrice est une espérance (théorème de transfert), ce qui ouvre la porte à Bienaymé-Tchebychev et à Monte-Carlo.
+\item
+  Pour une variable presque sûrement bornée, \(G_X\) est un polynôme : on dérive sans précaution (\(E(X)=G_X'(1)\)), et la loi est caractérisée par \(G_X\) (polynôme ayant une infinité de racines). Identifier une loi par sa fonction génératrice est souvent plus rapide qu'un calcul direct (Q 8.5 contre Q 10.3).
+\item
+  Somme aléatoire : formule des probabilités totales sur la valeur du nombre de termes, puis indépendance (lemme des coalitions) pour « oublier » le conditionnement.
+\item
+  Processus de branchement : la relation \(a_{j+1}=G_D(a_j)\) fait de la probabilité d'extinction le plus petit point fixe de \(G_D\). Le seuil critique se lit sur la pente de \(G_D\) en \(1\), qui vaut \(E(D)\).
+\item
+  Premier instant de réalisation d'un événement pour transformer une réunion croissante en réunion disjointe (\(\sigma\)-additivité, série télescopique).
+\item
+  Suite \(u_{n+1}=f(u_n)\) avec \(f\) croissante : majoration par un point fixe par récurrence, passage à la limite par continuité.
+\item
+  Dichotomie : écrire l'invariant avant le code ; il dicte les affectations et la valeur renvoyée.
+\end{itemize}
+
+\textbf{Ce que le rapport 2026 met en avant.} La justification des convergences (Q 1.1) et des théorèmes cités (transfert, König-Huygens, avec leurs hypothèses). La rédaction des équivalences en deux sens séparés. La définition exacte d'un système complet, la distinction entre incompatibles et indépendants, entre égalité et égalité en loi. Le conditionnement lu sur le modèle plutôt que par la formule de Bayes (Q 20). Le rôle de \((H_4)\), qui rend \(G_D\) polynomiale (Q 25, Q 27). Côté informatique : la sortie de \texttt{rd.binomial(\allowbreak{}1,\allowbreak{}\ p)\allowbreak{}}, l'explication globale d'un programme plutôt que sa paraphrase, les parcours d'arbre justifiés (Q 22.3), la récursivité (Q 23.4) et la valeur renvoyée par une dichotomie (Q 30).
+
+\textbf{Prérequis à revoir.} Comparaison des séries à termes positifs (y compris par équivalents) ; théorème de transfert, König-Huygens ; lois binomiales et formule du binôme ; lemme des coalitions ; théorème de la bijection ; inégalité de Bienaymé-Tchebychev ; parcours en largeur et en profondeur, récursivité en Python.
+
+\textbf{Questions classiques transposables.} Montrer qu'une loi est binomiale par un schéma de Bernoulli en citant les hypothèses ; interpréter un programme de simulation à l'aune du modèle ; établir \(P(A)<P(B)\) en exhibant un témoin de probabilité non nulle ; critiquer une hypothèse d'indépendance dans un modèle de population ; dimensionner un échantillon par Bienaymé-Tchebychev ; compléter une dichotomie.
+
+\end{document}

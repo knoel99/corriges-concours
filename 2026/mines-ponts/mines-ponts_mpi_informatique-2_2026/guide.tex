@@ -1,0 +1,2074 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Mines-Ponts MPI — Informatique 2 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Mines-Ponts MPI}
+\fancyhead[R]{\small Informatique 2 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Mines-Ponts MPI — Informatique 2 2026\par}\medskip
+  {\large Mines-Ponts · MPI · Informatique 2 · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Thème.} « Regards contemporains sur des algorithmes des années 1990 » : le monde d'un jeu vidéo rétro, ensemble de salles reliées par des passages orientés et pondérés, est suivi à travers plusieurs représentations (base relationnelle, listes chaînées, tableaux CSR), puis exploité pour la recherche de chemins (parcours en largeur, Dijkstra, A*, A* pondéré) ; la dernière partie change d'objet avec les arbres BSP (parcours infixe, dérécursivation, génération procédurale de carte). Le fil rouge est l'adéquation entre structure de données, algorithme et contraintes matérielles (mémoire, temps).
+
+\textbf{Cadre.} 4 heures, sans calculatrice, 38 questions. Programmation en C (sept en-têtes standards supposés inclus, \texttt{math.h} n'en fait pas partie), requêtes en SQL. L'énoncé insiste sur la gestion de la mémoire, l'initialisation des structures, l'usage d'\texttt{assert}, la concision : les fonctions attendues tiennent en une dizaine de lignes.
+
+\textbf{Découpage.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Partie 1 (Q1--Q5)} : modèle relationnel et SQL (jointures, jointure externe, agrégats, \texttt{HAVING}, tri).
+\item
+  \textbf{Partie 2.1 (Q6--Q11)} : graphe par listes chaînées en C, puis décompte mémoire.
+\item
+  \textbf{Partie 2.2 (Q12--Q19)} : représentation CSR (\emph{Compressed Sparse Row}), conversion, comparaison mémoire.
+\item
+  \textbf{Partie 2.3 (Q20--Q23)} : parcours en largeur, majorant du coût minimal, Dijkstra initialisé par ce majorant.
+\item
+  \textbf{Partie 3 (Q24--Q33)} : A*, admissibilité, monotonie, A* pondéré et garantie de \(w\)-optimalité. Questions de preuve et de discussion.
+\item
+  \textbf{Partie 4 (Q34--Q38)} : arbres BSP, parcours infixe récursif puis itératif, génération aléatoire d'une partition.
+\end{itemize}
+
+\textbf{Notions du programme MPI mobilisées.} Bases de données (association 1--N, clé étrangère, jointures, agrégation) ; C (structures, pointeurs, \texttt{malloc}/\texttt{free}, listes chaînées, tableaux) ; graphes (représentations, parcours en largeur, Dijkstra, A*) ; arbres binaires (parcours, représentation en tableau, numérotation en largeur) ; preuves d'algorithmes (invariants, raisonnement par l'absurde).
+
+\textbf{Difficulté et gestion du temps.} Le sujet est long mais régulier ; le rapport 2026 note qu'« Il fallait savoir aller à l'essentiel ». Les parties 1, 2.1, 2.2 et 4 (sauf Q38) sont très abordables et rapportent : il ne faut pas les laisser passer. La partie 4 est indépendante : un candidat pressé par le temps a intérêt à l'aborder avant les questions de discussion de la partie 3.
+
+\textbf{Questions discriminantes selon le rapport 2026.}
+
+\begin{itemize}
+\tightlist
+\item
+  La gestion de la mémoire en C, jugée « le point le plus discriminant » : allocations (Q6, Q13, Q17), \texttt{sizeof}, indices de la représentation CSR.
+\item
+  Q10, Q11 et Q18 : calculs simples mais souvent mal traités (bits et octets confondus, mauvais ordre de grandeur).
+\item
+  Q15, « point saillant du sujet » : la somme des degrés se lit dans la sentinelle, sans boucle.
+\item
+  Q21 (parcours en largeur, gestion de la file « très discriminante ») et Q23 (Dijkstra, traitée par la moitié des copies).
+\item
+  Q27 et Q33 : les preuves les moins abordées ; Q33 est la « Démonstration la plus difficile du sujet ».
+\item
+  Q28 à Q32 : la série de discussion sur A* pondéré a permis, selon le jury, de repérer les candidats qui comprenaient le comportement concret des algorithmes.
+\end{itemize}
+
+Le jury rappelle aussi que le code est lu sur papier : un \texttt{;} oublié est toléré, pas du code invalide (\texttt{()} au lieu de \texttt{{[}{]}}, \texttt{None} au lieu de \texttt{NULL}, fonction définie dans une autre).
+
+\hypertarget{partie-1-repruxe9sentation-relationnelle-des-donnuxe9es}{%
+\section{Partie 1 --- Représentation relationnelle des données}\label{partie-1-repruxe9sentation-relationnelle-des-donnuxe9es}}
+
+On traduit une association du modèle entité-association et on écrit des requêtes simples : jointures (dont une auto-jointure), jointure externe, \texttt{GROUP\ BY}, \texttt{HAVING}, \texttt{ORDER\ BY}.
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+Combien d'objets une salle peut-elle contenir ? Dans combien de salles un objet peut-il se trouver ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un attribut d'une relation ne contient qu'une seule valeur. Que faudrait-il faire pour stocker plusieurs objets dans une ligne de \texttt{salle} ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Une salle contient zéro, un ou plusieurs objets ; un objet est posé dans exactement une salle. L'association est donc \textbf{un-à-plusieurs} : cardinalité \((1,1)\) du côté \texttt{objet}, \((0,N)\) du côté \texttt{salle}.
+
+Un attribut est atomique. La clé étrangère se place donc dans la table dont chaque ligne ne référence qu'une seule ligne de l'autre table : \texttt{objet}. Un attribut \texttt{objet\_id} dans \texttt{salle} obligerait, pour une salle à \(k \ge 2\) objets, soit à mettre \(k\) valeurs dans un même attribut (interdit), soit à dupliquer la ligne de la salle \(k\) fois, ce qui casse l'unicité de la clé primaire \texttt{salle.id} et duplique \texttt{nom}, \texttt{x}, \texttt{y} (redondance, risque d'incohérence) ; une salle vide porterait \texttt{NULL}.
+
+\textbf{Clé étrangère dans \texttt{objet}, association de cardinalité 1--∗ (1--N) : un objet est dans une seule salle, une salle contient 0 à N objets.}
+
+\begin{methode}
+
+Pour une association 1--N, la clé étrangère va dans la table « côté plusieurs » (celle dont chaque ligne ne pointe que vers une ligne de l'autre). Pour une association N--N, on crée une table d'association, comme \texttt{passage} qui relie deux salles.
+
+\end{methode}
+
+\begin{piege}
+
+Répondre seulement « parce qu'une salle peut contenir plusieurs objets » sans dire pourquoi cela interdit \texttt{objet\_id} dans \texttt{salle} (atomicité, unicité de la clé), et oublier de donner la cardinalité explicitement demandée.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attend surtout la cardinalité, écrite explicitement : « L'erreur la plus fréquente a été d'expliquer correctement le placement de la clé sans jamais formaliser la cardinalité, ou d'en indiquer une erronée. »
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+La table \texttt{passage} ne contient que des identifiants : il faut retrouver le nom de la salle de départ \textbf{et} celui de la salle d'arrivée.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La table \texttt{salle} doit apparaître deux fois dans la requête, avec deux alias.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+\begin{lstlisting}[language=SQL]
+SELECT DISTINCT arr.nom
+FROM passage AS p
+JOIN salle AS dep ON p.entree = dep.id
+JOIN salle AS arr ON p.sortie = arr.id
+WHERE dep.nom = 'ENTRÉE';
+\end{lstlisting}
+
+\texttt{dep} sert à reconnaître la salle de départ par son nom, \texttt{arr} à récupérer le nom de la salle atteinte. \texttt{DISTINCT} élimine les doublons si deux passages relient les mêmes salles.
+
+\begin{piege}
+
+Écrire \texttt{WHERE\ salle.nom\ =\allowbreak{}\ \textquotesingle{}ENTRÉE\textquotesingle{}} et projeter \texttt{salle.nom} avec une seule occurrence de \texttt{salle} : on obtient le nom de la salle de départ, pas ceux des salles d'arrivée. Le rapport 2026 relève exactement ces deux défauts : « jointures sur passage.id et absence de la seconde jointure ». La jointure se fait sur \texttt{entree} et \texttt{sortie}, jamais sur l'identifiant du passage.
+
+\end{piege}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+« Pour chaque salle » : une salle sans passage sortant doit-elle apparaître ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une jointure interne fait disparaître les salles sans passage. Laquelle ne les fait pas disparaître, et que faut-il alors compter pour obtenir 0 ?
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+\begin{lstlisting}[language=SQL]
+SELECT s.nom, COUNT(p.id) AS nb_sortants
+FROM salle AS s
+LEFT JOIN passage AS p ON p.entree = s.id
+GROUP BY s.id, s.nom;
+\end{lstlisting}
+
+La jointure externe gauche conserve chaque salle, avec des attributs \texttt{NULL} côté \texttt{passage} si elle n'a pas de passage sortant. \texttt{COUNT(p.id)} ignore les \texttt{NULL} et donne 0 ; \texttt{COUNT(*)} compterait la ligne artificielle et donnerait 1. On regroupe sur la clé primaire \texttt{s.id}, car rien n'interdit deux salles homonymes.
+
+\begin{piege}
+
+Les deux erreurs sont indépendantes et se cumulent : jointure interne (les salles sans issue disparaissent) et \texttt{COUNT(*)} (elles reçoivent 1 au lieu de 0).
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attendait « Une jointure, un GROUP BY et un COUNT » et cite comme fautes récurrentes l'oubli du \texttt{GROUP\ BY} et la jointure sur la mauvaise extrémité du passage (\texttt{sortie} au lieu de \texttt{entree}) : les passages sortants d'une salle sont ceux dont elle est l'\texttt{entree}. Le rapport ne se prononce pas sur les salles sans passage sortant ; la jointure externe est le choix le plus fidèle à « pour chaque salle ».
+
+\end{jury}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Ici, seules les salles ayant au moins un passage sortant sont demandées : quel type de jointure réalise exactement ce filtre ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un agrégat par salle, puis un tri à deux clés dans l'ordre imposé par l'énoncé.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\begin{lstlisting}[language=SQL]
+SELECT s.nom, MIN(p.cout) AS cout_min
+FROM salle AS s
+JOIN passage AS p ON p.entree = s.id
+GROUP BY s.id, s.nom
+ORDER BY cout_min DESC, s.nom ASC;
+\end{lstlisting}
+
+La jointure interne supprime précisément les salles de degré sortant nul. Le tri principal est décroissant sur le coût minimal, le tri secondaire alphabétique sur le nom.
+
+\begin{piege}
+
+Reprendre par réflexe la jointure externe de Q3 : on ferait apparaître des salles de coût minimal \texttt{NULL}, qui ne sont pas demandées.
+
+\end{piege}
+
+\begin{jury}
+
+Question « Nettement plus difficile, souvent non traitée » selon le rapport 2026 : il fallait combiner \texttt{GROUP\ BY}, \texttt{MIN} et un double \texttt{ORDER\ BY}. Outre les copies blanches, l'oubli du \texttt{GROUP\ BY} et les jointures sur la mauvaise clé ont dominé.
+
+\end{jury}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Le filtre « au moins deux objets » porte sur un résultat d'agrégation : quelle clause filtre les groupes ?
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\begin{lstlisting}[language=SQL]
+SELECT s.nom, COUNT(o.id) AS nb_objets
+FROM salle AS s
+JOIN objet AS o ON o.salle_id = s.id
+GROUP BY s.id, s.nom
+HAVING COUNT(o.id) >= 2;
+\end{lstlisting}
+
+\texttt{WHERE} filtre les lignes avant regroupement, \texttt{HAVING} les groupes après agrégation : un agrégat ne peut figurer que dans \texttt{HAVING}. La jointure interne suffit, puisque les salles sans objet seraient éliminées par le filtre.
+
+\begin{methode}
+
+Avant de choisir le type de jointure, se demander quelles lignes survivent au filtre final. S'il élimine de toute façon les « sans correspondance », la jointure interne suffit.
+
+\end{methode}
+
+\begin{piege}
+
+Filtrer par \texttt{WHERE\ COUNT(\allowbreak{}o.id)\allowbreak{}\ \textgreater{}=\allowbreak{}\ 2} : c'est invalide. Le rapport 2026 précise qu'« Un WHERE placé après un HAVING, ou utilisé pour filtrer un COUNT, n'est pas valide. »
+
+\end{piege}
+
+\begin{jury}
+
+Pour le rapport 2026, l'emploi de \texttt{WHERE} à la place de \texttt{HAVING} « a été l'erreur la plus répandue, et sanctionnée ». Sur l'ensemble de la partie, le jury distinguait aisément les candidats ayant révisé SQL de ceux qui improvisaient.
+
+\end{jury}
+
+\hypertarget{partie-2-repruxe9sentation-en-muxe9moire-et-navigation-dans-le-monde}{%
+\section{Partie 2 --- Représentation en mémoire et navigation dans le monde}\label{partie-2-repruxe9sentation-en-muxe9moire-et-navigation-dans-le-monde}}
+
+\hypertarget{impluxe9mentation-classique-du-graphe-ponduxe9ruxe9}{%
+\subsection{2.1 Implémentation classique du graphe pondéré}\label{impluxe9mentation-classique-du-graphe-ponduxe9ruxe9}}
+
+Le graphe est stocké sous forme de listes d'adjacence chaînées. On écrit les fonctions de base, puis on évalue le coût mémoire de cette représentation, qui motive la suite.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Combien de niveaux d'allocation ? La structure \texttt{monde}, le tableau \texttt{salles}, puis chacune des salles.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque champ doit être initialisé : \texttt{taille}, \texttt{id} de chaque salle (qui coïncide avec son indice) et la liste de passages, vide au départ.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+\begin{lstlisting}[language=C]
+monde* monde_init(int n) {
+    assert(n >= 0);
+    monde* m = malloc(sizeof(monde));
+    assert(m != NULL);
+    m->taille = n;
+    m->salles = malloc(n * sizeof(salle*));
+    assert(n == 0 || m->salles != NULL);
+    for (int i = 0; i < n; i++) {
+        m->salles[i] = malloc(sizeof(salle));
+        assert(m->salles[i] != NULL);
+        m->salles[i]->id = i;
+        m->salles[i]->passages = NULL;     /* liste vide */
+    }
+    return m;
+}
+\end{lstlisting}
+
+\(n + 2\) allocations, complexité \(O(n)\). Le test \texttt{n\ ==\ 0\ \textbar{}\textbar{}} tient compte de ce que \texttt{malloc(0)} peut légitimement renvoyer \texttt{NULL}.
+
+\begin{piege}
+
+Allouer le tableau de pointeurs sans allouer les salles, ou écrire \texttt{malloc(\allowbreak{}n\ *\ sizeof(\allowbreak{}salle)\allowbreak{})\allowbreak{}} pour un tableau qui contient des \texttt{salle*}. Oublier \texttt{passages\ =\ NULL} rend tout parcours ultérieur indéfini.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attendait l'allocation de la structure, celle du tableau, puis une boucle d'initialisation. Erreurs fréquentes : « absence d'allocation individuelle, oubli de l'initialisation des champs à NULL, confusion entre sizeof(structure) et sizeof(pointeur) ». L'énoncé valorisant la gestion des erreurs, on vérifie chaque allocation par un \texttt{assert}, sans noyer le code.
+
+\end{jury}
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Le degré sortant est la longueur d'une liste chaînée.
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\begin{lstlisting}[language=C]
+int monde_degre(monde* m, int s) {
+    assert(m != NULL && 0 <= s && s < m->taille);
+    int d = 0;
+    for (passage* p = m->salles[s]->passages; p != NULL; p = p->suivant) {
+        d++;
+    }
+    return d;
+}
+\end{lstlisting}
+
+Complexité \(O(d^+(s))\).
+
+\begin{piege}
+
+La condition \texttt{p-\textgreater{}suivant\ !=\allowbreak{}\ NULL} oublie le dernier maillon (et plante sur une liste vide). Itérer sur des indices de tableau au lieu de suivre les chaînages trahit, pour le jury, une incompréhension de la structure.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 précise que « Le recours à une fonction récursive, moins efficace, a été sanctionné. » La confusion entre liste et tableau, déjà signalée les années précédentes, a été pénalisée à chaque occurrence.
+
+\end{jury}
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+Chaque passage est sortant d'exactement une salle.
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\begin{lstlisting}[language=C]
+int monde_sommeDegres(monde* m) {
+    assert(m != NULL);
+    int total = 0;
+    for (int s = 0; s < m->taille; s++) {
+        total += monde_degre(m, s);
+    }
+    return total;
+}
+\end{lstlisting}
+
+Chaque passage figure une seule fois, dans la liste de sa salle d'entrée : la somme des degrés sortants vaut \(n_p\). Complexité \(O(n_s + n_p)\).
+
+\begin{jury}
+
+L'énoncé impose d'utiliser \texttt{monde\_degre}. Pour le rapport 2026, « La consigne essentielle était de réutiliser cette fonction plutôt que de recalculer les degrés ; ne pas le faire a été sanctionné. »
+
+\end{jury}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Même double parcours qu'à la question précédente, mais en accumulant le champ \texttt{cout}.
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+\begin{lstlisting}[language=C]
+int monde_coutTotal(monde* m) {
+    assert(m != NULL);
+    int total = 0;
+    for (int s = 0; s < m->taille; s++) {
+        for (passage* p = m->salles[s]->passages; p != NULL; p = p->suivant) {
+            total += p->cout;
+        }
+    }
+    return total;
+}
+\end{lstlisting}
+
+Complexité \(O(n_s + n_p)\). Sur un très grand monde, la somme pourrait déborder un \texttt{int} ; un \texttt{int64\_t} lèverait ce risque.
+
+\begin{jury}
+
+Le rapport 2026 rappelle « qu'imbriquer une définition de fonction dans une autre plafonnait la note » : une fonction auxiliaire s'écrit à part, avant la fonction qui l'appelle.
+
+\end{jury}
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Faire la liste de toutes les structures et de tous les tableaux alloués, avec leur nombre d'exemplaires.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Taille de chaque structure : somme des tailles de ses champs (4 octets chacun). N'oublier ni la structure \texttt{monde}, ni le tableau de pointeurs \texttt{salles}.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+Tous les champs font 4 octets, il n'y a donc pas de remplissage ; on ignore le surcoût interne de l'allocateur.
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+élément & taille unitaire & nombre & total \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\texttt{monde} (\texttt{salles}, \texttt{taille}) & 8 & 1 & 8 \\
+tableau \texttt{salles} (pointeurs) & 4 & \(n_s\) & \(4n_s\) \\
+\texttt{salle} (\texttt{id}, \texttt{passages}) & 8 & \(n_s\) & \(8n_s\) \\
+\texttt{passage} (\texttt{cout}, \texttt{sortie}, \texttt{suivant}) & 12 & \(n_p\) & \(12n_p\) \\
+\end{longtable}
+
+\equationajustee{\boxed{M_{\text{listes}} = 12\,n_s + 12\,n_p + 8 \ \text{octets}}}
+
+\begin{piege}
+
+Oublier le tableau de pointeurs (confondu avec les salles elles-mêmes) ou le pointeur \texttt{suivant}, qui fait passer un passage de 8 à 12 octets.
+
+\end{piege}
+
+\begin{piege}
+
+Répondre en bits. Un entier de 32 bits occupe 4 octets ; le rapport 2026 qualifie la confusion entre bits et octets de « rédhibitoire » et cite aussi des coefficients erronés (taille d'un maillon ou d'une salle).
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Remplacer \(n_p\) par \(4n_s\) dans la formule précédente et négliger la constante.
+
+\end{indication}
+
+\begin{indication}{2}
+
+64 Ko valent \(64 \times 1024\) octets ; un ordre de grandeur suffit.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+Avec \(n_p = 4n_s\) : \(M \approx 12n_s + 48n_s = 60\,n_s\) octets. Il faut \(60\,n_s \le 65\,536\), soit \(n_s \lesssim 1\,100\).
+
+\textbf{Ordre de grandeur : 1 000 salles.} Le surcoût réel des blocs alloués (en-têtes de l'allocateur) ne peut que réduire cette valeur, ce qui exclut 10 000.
+
+\begin{piege}
+
+Oublier le facteur 4 sur les passages conduit à \(65\,536/24 \approx 2\,700\) et à hésiter entre deux ordres de grandeur. Ce sont les passages qui dominent l'empreinte mémoire.
+
+\end{piege}
+
+\begin{jury}
+
+Question « Simple, mais étonnamment mal traitée » selon le rapport 2026 : la réponse attendue est 1 000, et de nombreuses copies ont répondu 100, parfois 10 000. Un calcul d'une ligne, comme ci-dessus, suffit à trancher.
+
+\end{jury}
+
+\hypertarget{repruxe9sentation-csr-pour-un-graphe}{%
+\subsection{2.2 Représentation CSR pour un graphe}\label{repruxe9sentation-csr-pour-un-graphe}}
+
+On remplace les listes chaînées par trois tableaux contigus. Le tableau \texttt{indices}, avec sa case sentinelle, découpe \texttt{sorties} et \texttt{couts} en tranches consécutives, une par salle.
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Combien de salles ? La longueur de \texttt{indices} vaut \(n_s + 1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chaque salle \(s\), lire les cases \(k\) de \texttt{indices{[}s{]}} à \texttt{indices{[}s+1{]}-1} dans \texttt{sorties} et dans \texttt{couts}.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(n_s = 5\), \(n_p = \texttt{indices}[5] = 7\).
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+salle \(s\) & cases \(k\) & passages (coût) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+0 & 0, 1 & \(0 \to 1\) (2), \(0 \to 3\) (5) \\
+1 & 2 & \(1 \to 2\) (1) \\
+2 & 3, 4 & \(2 \to 0\) (4), \(2 \to 4\) (3) \\
+3 & 5 & \(3 \to 1\) (6) \\
+4 & 6 & \(4 \to 2\) (2) \\
+\end{longtable}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q12-graphe-csr.pdf}
+\caption*{Figure 1 --- Graphe orienté pondéré codé par la représentation CSR de la
+question 12 : 5 salles, 7 passages, coût porté sur chaque arc}
+\end{figure}
+
+Le triangle orienté \(0 \to 1 \to 2 \to 0\) porte les coûts 2, 1, 4 ; la salle 4 est reliée à 2 par deux arcs de sens opposés. Le graphe est fortement connexe.
+
+\begin{piege}
+
+Lire \(n_s = 6\) (la sentinelle n'est pas une salle), dessiner une arête non orientée entre 2 et 4 alors qu'il s'agit de deux passages de coûts différents, ou indexer \texttt{couts} comme \texttt{indices}.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 cite comme erreurs principales un « nombre de sommets incorrect (6 au lieu de 5) » et des arêtes mal placées, et note que l'effort de schématisation a été valorisé.
+
+\end{jury}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Quatre allocations ; quelle est la taille exacte de chacun des trois tableaux ?
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+\begin{lstlisting}[language=C]
+mondeCSR* mondeCSR_init(int ns, int np) {
+    assert(ns >= 0 && np >= 0);
+    mondeCSR* mc = malloc(sizeof(mondeCSR));
+    assert(mc != NULL);
+    mc->nb_salles = ns;
+    mc->indices = malloc((ns + 1) * sizeof(int));   /* sentinelle incluse */
+    mc->sorties = malloc(np * sizeof(int));
+    mc->couts   = malloc(np * sizeof(int));
+    assert(mc->indices != NULL);
+    assert(np == 0 || (mc->sorties != NULL && mc->couts != NULL));
+    return mc;
+}
+\end{lstlisting}
+
+\begin{piege}
+
+Allouer \texttt{ns} cases pour \texttt{indices} : la sentinelle disparaît et toutes les fonctions suivantes lisent hors du tableau pour la dernière salle. Oublier de renseigner \texttt{nb\_salles}.
+
+\end{piege}
+
+\begin{jury}
+
+« Quatre allocations étaient attendues. » Le rapport 2026 relève l'« oubli d'allouer la structure mondeCSR elle-même, et dimensionnement du tableau d'indices à ns au lieu de ns+1 ».
+
+\end{jury}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Le degré est le nombre de cases de la tranche de \(s\) : pas besoin de boucle.
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\begin{lstlisting}[language=C]
+int mondeCSR_degre(mondeCSR* mc, int s) {
+    assert(mc != NULL && 0 <= s && s < mc->nb_salles);
+    return mc->indices[s + 1] - mc->indices[s];
+}
+\end{lstlisting}
+
+L'accès à \texttt{indices{[}s+1{]}} est licite car \(s + 1 \le n_s\) : c'est le rôle de la sentinelle. Complexité \(O(1)\), contre \(O(d^+(s))\) avec les listes.
+
+\begin{piege}
+
+Le rapport 2026 relève deux erreurs : l'« off-by-one » \texttt{indices{[}s+1{]}-1}, qui compte une case de moins, et une boucle de comptage là où une soustraction suffit.
+
+\end{piege}
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+Écrire la somme des degrés à l'aide de la question précédente et la simplifier.
+
+\end{indication}
+
+\begin{indication}{2}
+
+La somme est télescopique ; que vaut \texttt{indices{[}0{]}} ?
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\begin{lstlisting}[language=C]
+int mondeCSR_sommeDegres(mondeCSR* mc) {
+    assert(mc != NULL);
+    return mc->indices[mc->nb_salles];   /* sentinelle : vaut np */
+}
+\end{lstlisting}
+
+La somme se télescope, et \texttt{indices{[}0{]}} vaut 0 :
+
+\equationajustee{\begin{aligned}
+\sum_{s=0}^{n_s-1}\left(\texttt{indices}[s+1] - \texttt{indices}[s]\right)
+&= \texttt{indices}[n_s] - \texttt{indices}[0] \\
+&= \texttt{indices}[n_s] = n_p .
+\end{aligned}}
+
+Complexité \(O(1)\). C'est d'ailleurs la définition même de la sentinelle donnée par l'énoncé.
+
+\begin{jury}
+
+Le rapport 2026 en fait le « point saillant du sujet » : la somme est donnée directement par \texttt{indices{[}nb\_salles{]}\allowbreak{}}. « Une large majorité des copies a néanmoins écrit un parcours complet, ce qui ne permettait pas d'obtenir tous les points », l'exploitation directe de la structure étant attendue.
+
+\end{jury}
+
+\begin{methode}
+
+Une somme de différences consécutives se télescope : c'est le réflexe à avoir dès qu'une quantité s'écrit \texttt{t{[}i+1{]}\ -\ t{[}i{]}}.
+
+\end{methode}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+\begin{indication}{1}
+
+Les tranches recouvrent exactement les cases \(0\) à \(n_p - 1\) de \texttt{couts}. Où lire \(n_p\) ?
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\begin{lstlisting}[language=C]
+int mondeCSR_coutTotal(mondeCSR* mc) {
+    assert(mc != NULL);
+    int np = mc->indices[mc->nb_salles];
+    int total = 0;
+    for (int k = 0; k < np; k++) {
+        total += mc->couts[k];
+    }
+    return total;
+}
+\end{lstlisting}
+
+Une seule boucle sur un tableau contigu, complexité \(O(n_p)\).
+
+\begin{jury}
+
+Selon le rapport 2026, la borne de boucle méritait une attention particulière : « itérer sur le nombre de passages, et non de salles, et éviter d'appeler une fonction de calcul dans la condition de boucle ». D'où la variable locale \texttt{np}, lue une fois.
+
+\end{jury}
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+\begin{indication}{1}
+
+Pour allouer, il faut connaître \(n_p\) : une fonction précédente le fournit.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un seul compteur \(k\) parcourt \texttt{sorties} et \texttt{couts}. Que vaut \(k\) au moment où l'on commence la salle \(s\) ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Ne pas oublier la dernière case de \texttt{indices}.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+\begin{lstlisting}[language=C]
+mondeCSR* monde_vers_CSR(monde* m) {
+    assert(m != NULL);
+    int ns = m->taille;
+    int np = monde_sommeDegres(m);
+    mondeCSR* mc = mondeCSR_init(ns, np);
+    int k = 0;
+    for (int s = 0; s < ns; s++) {
+        mc->indices[s] = k;                     /* début de la tranche de s */
+        for (passage* p = m->salles[s]->passages; p != NULL; p = p->suivant) {
+            mc->sorties[k] = p->sortie;
+            mc->couts[k] = p->cout;
+            k++;
+        }
+    }
+    mc->indices[ns] = k;                        /* sentinelle, k = np */
+    return mc;
+}
+\end{lstlisting}
+
+L'allocation passe par \texttt{mondeCSR\_init}, et la première itération pose \texttt{indices{[}0{]}\ =\ 0}.
+
+Invariant : avant le traitement de \(s\), les cases \(0\) à \(k-1\) contiennent, dans l'ordre, les passages des salles \(0\) à \(s-1\). De plus, \texttt{indices{[}j{]}} est correct pour tout \(j < s\).
+
+En sortie, \(k = n_p\). Complexité \(O(n_s + n_p)\). Le monde \texttt{m} n'est pas modifié.
+
+\begin{piege}
+
+Écrire \texttt{indices{[}s{]}\ =\ k} après la boucle interne (on obtient la fin de tranche, décalée d'une salle) ou oublier la sentinelle \texttt{indices{[}ns{]}}.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attendait une initialisation via \texttt{mondeCSR\_init} (les allocations refaites à la main étaient pénalisées), la pose explicite de \texttt{indices{[}0{]}} à 0, la construction du tableau d'indices, puis le remplissage de \texttt{sorties} et \texttt{couts}. Beaucoup de copies sont restées inachevées ou ont laissé ces deux tableaux vides.
+
+\end{jury}
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{indication}{1}
+
+Même méthode qu'à la question 10 : la structure, puis les trois tableaux, sans oublier la case sentinelle.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\texttt{mondeCSR} : trois pointeurs et un entier, 16 octets ; \texttt{indices} : \(4(n_s + 1)\) ; \texttt{sorties} et \texttt{couts} : \(4n_p\) chacun.
+
+\equationajustee{\boxed{M_{\text{CSR}} = 4\,n_s + 8\,n_p + 20 \ \text{octets}}}
+
+\begin{piege}
+
+Le rapport 2026 signale les mêmes défauts qu'à Q10 : résultats en bits au lieu d'octets, coefficients erronés.
+
+\end{piege}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+\begin{indication}{1}
+
+Comparer terme à terme les coefficients de \(n_s\) et de \(n_p\), puis chiffrer avec l'hypothèse de la question 11.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Une « conclusion » attend aussi un regard sur ce que le décompte d'octets ne dit pas : allocations, localité, facilité de modification.
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+Les deux occupations (Q10 et Q18) sont :
+
+\equationajustee{\begin{aligned}
+M_{\text{listes}} &= 12\,n_s + 12\,n_p + 8, \\
+M_{\text{CSR}} &= 4\,n_s + 8\,n_p + 20 .
+\end{aligned}}
+
+Leur différence vaut :
+
+\equationajustee{\begin{aligned}
+M_{\text{listes}} - M_{\text{CSR}}
+&= (12\,n_s + 12\,n_p + 8) - (4\,n_s + 8\,n_p + 20) \\
+&= 8\,n_s + 4\,n_p - 12 .
+\end{aligned}}
+
+Elle est strictement positive dès que \(2n_s + n_p \ge 4\), donc pour tout monde non trivial.
+
+Par salle, 12 octets deviennent 4 (plus de structure \texttt{salle} ni de pointeur vers elle) ; par passage, 12 deviennent 8 (le pointeur \texttt{suivant} est remplacé par la contiguïté).
+
+Avec \(n_p = 4n_s\), on compare \(60\,n_s\) à \(36\,n_s\) : rapport \(5/3\), environ 40 \% d'économie. Dans 64 Ko, cela fait de l'ordre de 1 100 salles contre 1 800.
+
+\textbf{Conclusion : CSR est toujours plus compact}, demande 4 allocations au lieu de \(n_s + n_p + 2\) (surcoût d'allocateur négligeable), donne un accès séquentiel aux passages d'une salle (localité mémoire) et un degré en \(O(1)\). En contrepartie, c'est une structure statique : insérer un passage coûte \(O(n_s + n_p)\). Elle convient à un monde chargé une fois pour toutes, ce qui est le cas d'un niveau de jeu.
+
+\begin{methode}
+
+Une comparaison de représentations se conclut par un compromis : ce que l'on gagne (mémoire, localité, accès en temps constant) et ce que l'on perd (modifications coûteuses).
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 attendait « à la fois le calcul et une comparaison algébrique explicite menant à une conclusion ». « Une conclusion sans calcul, ou fondée sur un résultat erroné à la question 10, ne pouvait être pleinement créditée. »
+
+\end{jury}
+
+\hypertarget{recherche-dun-chemin-de-couxfbt-minimal}{%
+\subsection{2.3 Recherche d'un chemin de coût minimal}\label{recherche-dun-chemin-de-couxfbt-minimal}}
+
+On calcule d'abord un majorant des coûts minimaux par parcours en largeur, puis on l'améliore par l'algorithme de Dijkstra. L'initialisation inhabituelle de Dijkstra cache un piège.
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{indication}{1}
+
+Dans quel ordre le parcours en largeur découvre-t-il les sommets ? Penser à l'état de la file.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Montrer que la file contient à tout instant des sommets de deux niveaux consécutifs au plus, rangés par niveau croissant, puis raisonner par récurrence sur la distance en nombre de passages.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour la seconde partie : quand le coût d'un chemin est-il une fonction croissante de son nombre de passages ?
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+Le parcours enfile \(s\) (marqué), puis répète : défiler \(u\), enfiler en les marquant les successeurs non marqués de \(u\), en retenant \(u\) comme père.
+
+Notons \(\ell(t)\) le nombre minimal de passages de \(s\) à \(t\), et \(\mathrm{niv}(t)\) la longueur du chemin de l'arbre des pères.
+
+\emph{Invariant} : les niveaux des sommets de la file sont croissants au sens large et prennent au plus deux valeurs consécutives \(d\) et \(d+1\). C'est vrai pour la file \((s)\). Défiler un sommet de niveau \(d\) (minimal) et enfiler en queue des sommets de niveau \(d+1\) le conserve. Les sommets sont donc marqués \textbf{par couches}, de niveaux croissants.
+
+\emph{Récurrence sur \(d\)} : tout \(t\) avec \(\ell(t) = d\) est marqué au niveau \(d\). Pour \(d = 0\), \(t = s\).
+
+Sinon, considérons un chemin minimal \(s \to \dots \to v \to t\). Alors \(\ell(v) = d - 1\), donc \(v\) est marqué au niveau \(d - 1\) par hypothèse de récurrence.
+
+Lorsque \(v\) est défilé, ou bien \(t\) est marqué maintenant, au niveau \(d\), ou bien il est déjà marqué. Dans ce cas, son niveau est au plus \(d\), par le marquage par couches. Il est aussi au moins \(\ell(t)\), car \(\mathrm{niv}(t)\) est la longueur d'un vrai chemin.
+
+Le chemin de l'arbre de parcours de \(s\) à \(t\) utilise donc \textbf{un nombre minimal de passages} ; tout \(t\) est atteint par forte connexité.
+
+\textbf{Cas où ces chemins sont aussi de coût minimal : tous les passages ont le même coût \(c > 0\).} Le coût d'un chemin vaut alors \(c \times\) (nombre de passages), fonction strictement croissante de ce nombre. (Autre cas trivial : un graphe où chaque salle n'est reliée à \(s\) que par un seul chemin élémentaire.)
+
+\begin{piege}
+
+Affirmer « le parcours explore par couches » sans justification. L'énoncé demande d'expliquer : l'invariant sur la file est l'argument attendu.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 attendait « une justification par couches (niveaux du parcours en largeur) du caractère minimal du nombre de passages ; une simple affirmation ne suffisait pas ». Il met aussi en garde contre les explications interminables : « ce qui se conçoit clairement s'exprime brièvement ».
+
+\end{jury}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+\begin{indication}{1}
+
+C'est un parcours en largeur ordinaire sur la représentation CSR ; seule change la valeur stockée pour un sommet découvert.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Marquer un sommet au moment où on l'enfile (pas quand on le défile) : chaque salle est alors enfilée au plus une fois, ce qui dimensionne la file.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Le tableau \texttt{dist} peut servir lui-même de marque, à condition de l'initialiser à une valeur qu'aucune salle atteinte ne peut prendre.
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+\begin{lstlisting}[language=C]
+int* bfs_cout(mondeCSR* mc, int s) {
+    assert(mc != NULL && 0 <= s && s < mc->nb_salles);
+    int n = mc->nb_salles;
+    int* dist = malloc(n * sizeof(int));
+    assert(dist != NULL);
+    for (int u = 0; u < n; u++) { dist[u] = -1; }   /* -1 : non atteinte */
+    file* f = file_init(n);
+    dist[s] = 0;
+    file_enfile(f, s);
+    while (!file_vide(f)) {
+        int u = file_defile(f);
+        for (int k = mc->indices[u]; k < mc->indices[u + 1]; k++) {
+            int v = mc->sorties[k];
+            if (dist[v] == -1) {                     /* v découverte maintenant */
+                dist[v] = dist[u] + mc->couts[k];
+                file_enfile(f, v);
+            }
+        }
+    }
+    file_libere(f);
+    return dist;            /* à libérer par l'appelant */
+}
+\end{lstlisting}
+
+La valeur \(-1\) marque les salles non atteintes. Une salle atteinte a une valeur positive ou nulle (0 pour \(s\), les coûts étant strictement positifs) : une initialisation à 0 confondrait les salles non atteintes avec la source.
+
+\texttt{dist{[}v{]}} est écrit une seule fois, au moment de la découverte : c'est le coût du chemin de l'arbre du parcours. Le graphe étant fortement connexe, aucune case ne reste à \(-1\). Complexité \(O(n_s + n_p)\).
+
+\begin{piege}
+
+Écrire \texttt{mc-\textgreater{}couts{[}v{]}} au lieu de \texttt{mc-\textgreater{}couts{[}k{]}} : \texttt{couts} est indexé comme \texttt{sorties}, par numéro de passage, pas par numéro de salle. Autre oubli fréquent : libérer la file.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 est net : « un parcours en profondeur (DFS) était noté 0 ». Le point délicat était l'initialisation de \texttt{dist} à \(-1\), et non à 0, pour distinguer les sommets non atteints ; la gestion de la file était « très discriminante ». Le jury reproche aussi les tableaux de prédécesseurs et autres structures superflues : ne coder que ce qui est demandé.
+
+\end{jury}
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+\begin{indication}{1}
+
+Que représente concrètement \texttt{dist{[}u{]}} ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le coût minimal est un minimum sur un ensemble de chemins : il suffit d'exhiber un élément de cet ensemble.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+Par construction, \texttt{dist{[}s{]}\ =\ 0}, puis \texttt{dist{[}v{]}\allowbreak{}\ =\allowbreak{}\ dist{[}u{]}\allowbreak{}\ +\ c(\allowbreak{}u,\allowbreak{}v)\allowbreak{}} lorsque \(v\) est découverte depuis \(u\). Donc \texttt{dist{[}u{]}} est le coût d'un chemin effectif \(P_u\) de \(s\) à \(u\) : celui de l'arbre du parcours.
+
+Le coût minimal \(\delta(s,u)\) existe : l'ensemble des chemins est non vide (forte connexité) et, les coûts étant strictement positifs, on peut se restreindre aux chemins élémentaires, en nombre fini. D'où :
+
+\equationajustee{\begin{aligned}
+\delta(s,u) &= \min_{P : s \leadsto u} \mathrm{cout}(P) \\
+&\le \mathrm{cout}(P_u) \\
+&= \texttt{dist}[u].
+\end{aligned}}
+
+\textbf{\texttt{dist{[}u{]}} est un majorant du coût minimal.} Il peut être mauvais : avec \(0 \to 2\) de coût \(M\) et \(0 \to 1 \to 2\) de coûts \(1, 1\), on a \(\texttt{dist}[2] = M\) alors que \(\delta(0,2) = 2\).
+
+\begin{jury}
+
+Question courte, souvent laissée de côté faute de temps d'après le rapport 2026 ; l'erreur rare consistait à confondre borne supérieure et borne inférieure. Le jury note qu'« une réponse d'une demi-page tenait plus de l'esquive que de l'explication » : trois lignes suffisent.
+
+\end{jury}
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\begin{indication}{1}
+
+Le tas fourni n'a pas d'opération « diminuer la priorité » : comment s'en passer ? Comment reconnaître une entrée périmée ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Dans Dijkstra classique, une salle n'entre dans le tas que lorsque sa distance diminue strictement. Ici, les distances initiales sont déjà finies : que se passe-t-il pour une salle dont la valeur initiale est déjà optimale ? Ses successeurs seront-ils relâchés ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Toutes les salles sont déjà « découvertes » au sens de l'énoncé, avec une priorité connue.
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+On ré-empile une salle à chaque diminution de sa distance et l'on ignore, grâce à un tableau \texttt{traite}, les entrées d'une salle déjà traitée.
+
+\textbf{Avec une relaxation stricte, il faut empiler toutes les salles au départ.} Si l'on n'empile que \(s\), une salle dont la valeur fournie par le parcours en largeur est déjà optimale n'est jamais améliorée, donc jamais empilée, et ses arcs sortants ne sont jamais relâchés.
+
+Exemple : passages \(0 \to 1\) (1), \(1 \to 2\) (1), \(0 \to 2\) (5) et \(2 \to 0\) (1). \texttt{bfs\_cout} donne \((0, 1, 5)\).
+
+En n'empilant que 0, relâcher \(0 \to 1\) teste \(1 < 1\), faux ; relâcher \(0 \to 2\) teste \(5 < 5\), faux. Le tas est vide et \(\texttt{dist}[2]\) reste à 5 au lieu de 2.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q23-contre-exemple-dijkstra.pdf}
+\caption*{Figure 2 --- Contre-exemple de la question 23 : valeurs initiales de
+bfs\_cout ; si l'on n'empile que 0, le passage 1→2 n'est jamais relâché
+et la valeur de la salle 2 reste à 5 au lieu de 2}
+\end{figure}
+
+\begin{lstlisting}[language=C]
+void dijkstra(mondeCSR* mc, int s, int* dist) {
+    assert(mc != NULL && dist != NULL && 0 <= s && s < mc->nb_salles);
+    int n = mc->nb_salles;
+    bool* traite = malloc(n * sizeof(bool));
+    assert(traite != NULL);
+    tasMin* tm = tasMin_init();
+    dist[s] = 0;
+    for (int u = 0; u < n; u++) {            /* toutes les salles sont découvertes */
+        traite[u] = false;
+        tasMin_empile(tm, u, dist[u]);
+    }
+    while (!tasMin_vide(tm)) {
+        int u = tasMin_depile(tm);
+        if (!traite[u]) {                     /* sinon : entrée périmée */
+            traite[u] = true;
+            for (int k = mc->indices[u]; k < mc->indices[u + 1]; k++) {
+                int v = mc->sorties[k];
+                int d = dist[u] + mc->couts[k];
+                if (d < dist[v]) {
+                    dist[v] = d;
+                    tasMin_empile(tm, v, d);
+                }
+            }
+        }
+    }
+    tasMin_libere(tm);
+    free(traite);
+}
+\end{lstlisting}
+
+Variante tout aussi correcte : n'empiler que \(s\), mais relâcher avec le test large \texttt{d\ \textless{}=\allowbreak{}\ dist{[}v{]}\allowbreak{}\ \&\&\ !traite{[}v{]}\allowbreak{}}. Chaque salle est alors empilée au moins une fois, de proche en proche le long de l'arbre du parcours en largeur. Seule la combinaison « source seule et test strict » est fausse.
+
+\emph{Correction.} Deux invariants valent à tout instant.
+
+\begin{itemize}
+\tightlist
+\item
+  (I1) \texttt{dist{[}u{]}} est le coût d'un chemin effectif, donc \(\texttt{dist}[u] \ge \delta(s,u)\) : vrai au départ par Q22, conservé par relâchement.
+\item
+  (I2) Toute salle non traitée a dans le tas une entrée de priorité \texttt{dist{[}u{]}} : empilement initial, puis à chaque diminution.
+\end{itemize}
+
+Les entrées d'une même salle ont des priorités de plus en plus faibles : son premier dépilement se fait avec la valeur courante.
+
+Supposons qu'une salle soit traitée avec une valeur non optimale et prenons la première, \(u\). Soit \(s = v_0, \dots, v_k = u\) un plus court chemin et \(v_i\) sa première salle non traitée. On a \(i \ge 1\) car \(s\), seule de priorité 0, est traitée en premier.
+
+Les \(v_j\) (\(j < i\)) ont été traitées avec la valeur \(\delta(s,v_j)\) et ont relâché \(v_j \to v_{j+1}\). D'où :
+
+\equationajustee{\begin{aligned}
+\texttt{dist}[v_i] &\le \delta(s,v_{i-1}) + c(v_{i-1},v_i) \\
+&= \delta(s,v_i),
+\end{aligned}}
+
+donc égalité par (I1). Par (I2), \(v_i\) est dans le tas avec la priorité \(\delta(s,v_i)\), et :
+
+\equationajustee{\begin{aligned}
+\delta(s,v_i) &\le \delta(s,u) \\
+&< \texttt{dist}[u].
+\end{aligned}}
+
+Ce n'est donc pas \(u\) qui aurait été dépilée : contradiction. \textbf{En fin d'exécution, \(\texttt{dist}[u] = \delta(s,u)\) pour toute salle.}
+
+Complexité : au plus \(n_s + n_p\) entrées, d'où \(O((n_s + n_p)\log(n_s + n_p))\).
+
+\begin{piege}
+
+Recopier Dijkstra « tel quel » en remplaçant seulement \(+\infty\) par les valeurs du parcours en largeur : l'algorithme obtenu est faux, et silencieusement. L'initialisation à \(+\infty\) garantissait que toute première relaxation empile le sommet ; ce n'est plus le cas.
+
+\end{piege}
+
+\begin{methode}
+
+Sans opération de diminution de clé : ré-empiler à chaque amélioration et ignorer au dépilement les sommets déjà traités (suppression paresseuse). Le tas contient au plus \(n_s + n_p\) entrées.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 attendait « la structure correcte du parcours et une gestion de la file de priorité ». Il range parmi les erreurs fréquentes l'« initialisation empilant tous les sommets au lieu de la seule source », la relaxation non conditionnelle, et ≤ au lieu de \textless{} dans la relaxation. Or, avec \texttt{dist} initialisé par \texttt{bfs\_cout}, la version « source seule et test strict » est fausse (contre-exemple ci-dessus) ; chacune des deux autres pratiques suffit à la réparer. Ce corrigé maintient la version qui empile toutes les salles, avec sa justification. Le jury raisonnait sans doute sur le Dijkstra du cours, initialisé à \(+\infty\) ; sur copie, il est prudent d'écrire en une phrase pourquoi l'on s'en écarte. Le rapport note enfin que Q23 a souvent été mieux réussie que Q21.
+
+\end{jury}
+
+\hypertarget{partie-3-recherche-rapide-dun-chemin-avec-heuristique}{%
+\section{Partie 3 --- Recherche rapide d'un chemin avec heuristique}\label{partie-3-recherche-rapide-dun-chemin-avec-heuristique}}
+
+On justifie l'optimalité de A* (heuristique admissible), on relie admissibilité et monotonie, puis on étudie A* pondéré, qui sacrifie l'optimalité exacte contre une garantie à un facteur \(w\) près. L'outil commun est le « sommet frontière » d'un chemin optimal.
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\begin{indication}{1}
+
+Raisonner par l'absurde : \(t\) est extraite avec \(\texttt{dist}[t] > \delta(s,t)\). Considérer un chemin optimal de \(s\) à \(t\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Sur ce chemin, regarder le premier sommet encore présent dans la file. Que vaut sa distance, sachant que tous ses prédécesseurs sur le chemin ont été extraits et ont relâché leurs arcs ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Comparer la priorité de ce sommet à celle de \(t\) en utilisant l'admissibilité et \(h(t) = 0\).
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+Notons \(f(u) = \texttt{dist}[u] + h(u)\) et \(\delta = \delta(s,t)\). \texttt{dist{[}u{]}} est toujours le coût d'un chemin effectif, donc \(\texttt{dist}[u] \ge \delta(s,u)\), et toute diminution de \texttt{dist{[}v{]}} provoque une (ré)insertion de \(v\).
+
+\textbf{Lemme (sommet frontière).} Soit \(P = (s = v_0, \dots, v_k = t)\) un chemin optimal. À un instant où \(t\) est dans la file, soit \(v_i\) le sommet de \(P\) d'indice minimal présent dans la file. Alors \(\texttt{dist}[v_i] = \delta(s,v_i)\).
+
+\emph{Preuve.} \(s\) a été extrait en premier, donc \(i \ge 1\). Pour \(j < i\), \(v_j\) n'est pas dans la file : il a été extrait après sa dernière modification et a relâché ses arcs.
+
+Par récurrence sur \(j < i\), \(\texttt{dist}[v_j] = \delta(s,v_j)\), et la relaxation de \(v_j \to v_{j+1}\) donne :
+
+\equationajustee{\begin{aligned}
+\texttt{dist}[v_{j+1}] &\le \texttt{dist}[v_j] + c(v_j,v_{j+1}) \\
+&= \delta(s,v_j) + c(v_j,v_{j+1}) \\
+&= \delta(s,v_{j+1}),
+\end{aligned}}
+
+car un préfixe de chemin optimal est optimal. Avec la minoration, il y a égalité, jusqu'à \(\texttt{dist}[v_i] = \delta(s,v_i)\).
+
+\textbf{Par l'absurde}, supposons \(t\) extraite avec \(\texttt{dist}[t] > \delta\). Juste avant l'extraction, soit \(v_i\) le sommet frontière :
+
+\equationajustee{\begin{aligned}
+f(v_i) &= \delta(s,v_i) + h(v_i) \\
+&\le \delta(s,v_i) + \delta(v_i,t) && \text{(\text{admissibilité})} \\
+&= \delta && (v_i \text{ sur un chemin optimal}) \\
+&< \texttt{dist}[t] && \text{(\text{hypothèse})} \\
+&= f(t) && (h(t) = 0).
+\end{aligned}}
+
+Les salles étant extraites par \(f\) minimal, \(v_i\) (ou une salle de priorité plus faible encore) serait sortie avant \(t\) : contradiction.
+
+\textbf{Dès que \(t\) est extraite, \(\texttt{dist}[t] = \delta(s,t)\) : le chemin reconstruit est de coût minimal.}
+
+\begin{piege}
+
+Supposer que « toute salle extraite a une distance définitive » : c'est vrai pour une heuristique monotone (Q27), pas pour une heuristique seulement admissible, où une salle peut être rouverte. La preuve ne doit porter que sur le sommet frontière.
+
+\end{piege}
+
+\begin{methode}
+
+Le lemme du sommet frontière se réutilise tel quel pour Dijkstra (Q25), la monotonie (Q27) et A* pondéré (Q33). Il vaut la peine de l'isoler.
+
+\end{methode}
+
+\begin{jury}
+
+Question rarement traitée selon le rapport 2026, qui attendait « un raisonnement par l'absurde mené à son terme » : de nombreuses copies n'ont proposé qu'une ébauche, sans conclusion. La contradiction doit être écrite, et la conclusion énoncée.
+
+\end{jury}
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\begin{indication}{1}
+
+Quelle heuristique transforme la priorité de A* en celle de Dijkstra ? Vérifie-t-elle l'hypothèse de la question 24 ?
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\textbf{Dijkstra est A* avec l'heuristique nulle \(h \equiv 0\)} : la priorité \(\texttt{dist}[u] + 0\) est celle de Dijkstra, le reste est identique.
+
+Cette heuristique est \textbf{admissible} : \(h(u) = 0 \le \delta(u,t)\) (coûts positifs) et \(h(t) = 0\). Le raisonnement de Q24 s'applique donc et prouve qu'à l'extraction de \(t\), \texttt{dist{[}t{]}} est le coût minimal.
+
+\begin{piege}
+
+Dire seulement « A* généralise Dijkstra » sans nommer \(h \equiv 0\) ni vérifier son admissibilité.
+
+\end{piege}
+
+\begin{jury}
+
+Question abordable mais souvent non traitée, d'après le rapport 2026. Le mot « admissible » devait figurer explicitement dans la réponse, ce qui a souvent manqué.
+
+\end{jury}
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{indication}{1}
+
+Suivre un chemin de coût minimal de \(u\) à \(t\) et appliquer la monotonie à chacun de ses passages.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les inégalités s'enchaînent : formuler la propriété au rang \(j\) et la démontrer par récurrence. Où intervient \(h(t) = 0\) ?
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Soit \(u\) une salle et \(u = w_0, w_1, \dots, w_k = t\) un chemin de coût minimal, \(c_j\) le coût de \(w_{j-1} \to w_j\). Si \(t\) n'était pas accessible, on aurait \(\delta(u,t) = +\infty\) et rien à montrer.
+
+La monotonie donne, pour tout \(j \in [\![1, k]\!]\) :
+
+\equationajustee{h(w_{j-1}) \le c_j + h(w_j).}
+
+Montrons par récurrence sur \(j \in [\![0, k]\!]\) :
+
+\equationajustee{h(u) \le \sum_{i=1}^{j} c_i + h(w_j).}
+
+Pour \(j = 0\), c'est une égalité. Si l'inégalité vaut au rang \(j - 1\), la monotonie majore \(h(w_{j-1})\) :
+
+\equationajustee{\begin{aligned}
+h(u) &\le \sum_{i=1}^{j-1} c_i + h(w_{j-1}) \\
+&\le \sum_{i=1}^{j-1} c_i + c_j + h(w_j) \\
+&= \sum_{i=1}^{j} c_i + h(w_j).
+\end{aligned}}
+
+Au rang \(k\), avec \(h(w_k) = h(t) = 0\) :
+
+\equationajustee{\begin{aligned}
+h(u) &\le \sum_{j=1}^{k} c_j + h(t) \\
+&= \delta(u,t).
+\end{aligned}}
+
+\textbf{Toute heuristique monotone est admissible.} La réciproque est fausse : sur \(s \to a \to t\) (coûts 1 et 1), \(h(s) = 2\), \(h(a) = h(t) = 0\) est admissible, mais l'inégalité \(h(s) \le 1 + h(a)\) est fausse.
+
+\begin{methode}
+
+Une inégalité locale (sur chaque arc) se transforme en inégalité globale (sur un chemin) par télescopage.
+
+\end{methode}
+
+\begin{jury}
+
+Le rapport 2026 attendait quatre éléments : une somme le long d'un chemin formellement défini \((v_0, \dots, v_k)\), l'inégalité de monotonie, sa généralisation par récurrence, et la mention explicite de \(h(t) = 0\) pour conclure. Des pointillés sans récurrence ne suffisent pas.
+
+\end{jury}
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\begin{indication}{1}
+
+Comparer la priorité d'une salle insérée en relâchant \(u \to v\) à celle de \(u\) : la monotonie dit dans quel sens elle évolue.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Généraliser la chaîne d'inégalités de Q26 : comparer \(h(v)\) et \(h(u)\) pour deux salles quelconques, puis reprendre la preuve de Q24 pour une salle \(u\) quelconque extraite de la file au lieu de \(t\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Si \texttt{dist{[}u{]}} est définitif à l'extraction, une relaxation ultérieure peut-elle encore le diminuer ?
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\textbf{Non-décroissance de \(f\).} Soit \(u\) extraite, puis \(v\) (ré)insérée par relaxation du passage \(u \to v\) de coût \(c\). Par monotonie :
+
+\equationajustee{\begin{aligned}
+f(v) &= \texttt{dist}[u] + c + h(v) \\
+&\ge \texttt{dist}[u] + h(u) \\
+&= f(u).
+\end{aligned}}
+
+Toute insertion se fait donc avec une priorité au moins égale à celle de la salle qui vient d'être extraite. Les valeurs de \(f\) des salles extraites forment une suite croissante au sens large, et \(f\) ne décroît pas le long des chemins de l'arbre de recherche.
+
+\textbf{Inégalité triangulaire.} Le télescopage de Q26, mené le long d'un plus court chemin de \(v\) à \(u\), donne pour toutes salles :
+
+\equationajustee{h(v) \le \delta(v,u) + h(u). \qquad (\star)}
+
+\textbf{Distance définitive.} Supposons \(u\) extraite avec \(\texttt{dist}[u] > \delta(s,u)\). Soit \(v_i\) le sommet frontière d'un plus court chemin de \(s\) à \(u\) : par le lemme de Q24, \(\texttt{dist}[v_i] = \delta(s,v_i)\). Alors :
+
+\equationajustee{\begin{aligned}
+f(v_i) &= \delta(s,v_i) + h(v_i) \\
+&\le \delta(s,v_i) + \delta(v_i,u) + h(u) && (\star) \\
+&= \delta(s,u) + h(u) \\
+&< f(u).
+\end{aligned}}
+
+Donc \(v_i\) aurait été extraite avant \(u\). \textbf{Une salle extraite a donc une valeur \texttt{dist} définitive.}
+
+\textbf{Pas de réinsertion.} Après l'extraction de \(u\), toute relaxation depuis \(w\) donne :
+
+\equationajustee{\begin{aligned}
+\texttt{dist}[w] + c(w,u) &\ge \delta(s,w) + c(w,u) \\
+&\ge \delta(s,u) \\
+&= \texttt{dist}[u].
+\end{aligned}}
+
+Elle n'améliore jamais \(u\) : on peut marquer \(u\) comme fermée et ne plus la traiter.
+
+\textbf{Intérêt pratique.} Chaque salle est développée une seule fois et chaque passage relâché une seule fois : même complexité que Dijkstra, ensemble fermé codé par un tableau de booléens, arrêt licite dès l'extraction de \(t\).
+
+Vu autrement, avec les coûts réduits \(c'(u,v) = c(u,v) + h(v) - h(u) \ge 0\), A* monotone est exactement Dijkstra sur le graphe repondéré. Sans monotonie, des salles fermées peuvent devoir être rouvertes et le nombre de développements peut exploser.
+
+\begin{piege}
+
+Écrire une preuve qui n'utilise que l'admissibilité : elle « démontrerait » une propriété fausse pour les heuristiques seulement admissibles. C'est \((\star)\) qui a besoin de la monotonie.
+
+\end{piege}
+
+\begin{jury}
+
+« L'une des questions les plus mal traitées du sujet », selon le rapport 2026, et très majoritairement non abordée. Il fallait établir la non-décroissance de \(f\) le long d'un chemin et en déduire l'absence de réinsertion d'un sommet déjà traité ; les rares réponses étaient souvent trop vagues.
+
+\end{jury}
+
+\hypertarget{heuristique-ponduxe9ruxe9e-compromis-entre-rapidituxe9-et-qualituxe9}{%
+\subsection{3.1 Heuristique pondérée : compromis entre rapidité et qualité}\label{heuristique-ponduxe9ruxe9e-compromis-entre-rapidituxe9-et-qualituxe9}}
+
+Questions de discussion (Q28 à Q32) puis une preuve (Q33). Les réponses gagnent à s'appuyer sur des inégalités précises plutôt que sur des formules vagues.
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{indication}{1}
+
+Écrire la valeur d'extraction de chaque algorithme. Laquelle fait intervenir la destination ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Décrire l'ensemble des salles développées avant \(t\) par une inégalité, pour chacun des deux algorithmes.
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Valeur d'extraction.} Dijkstra : \texttt{dist{[}u{]}} minimal (coût déjà parcouru). A* : \texttt{dist{[}u{]}\ +\ h(u)} minimal (estimation du coût total d'un chemin de \(s\) à \(t\) passant par \(u\)).
+\item
+  \textbf{Exploration de Dijkstra.} Il explore par coûts croissants autour de \(s\), dans toutes les directions : il développe avant \(t\) toutes les salles telles que \(\delta(s,u) < \delta(s,t)\), la destination ne servant que de condition d'arrêt.
+\item
+  \textbf{Exploration de A*.} Avec une heuristique monotone, une salle n'est développée avant \(t\) que si \(\delta(s,u) + h(u) \le \delta(s,t)\). Les salles qui s'éloignent de \(t\) ont un \(h\) grand : elles sont repoussées en fin de file et souvent jamais développées. L'exploration est orientée vers la destination.
+\item
+  \textbf{Cas limites.} L'heuristique nulle redonne Dijkstra ; une heuristique parfaite \(h = \delta(\cdot,t)\) ne développe, aux égalités près, que des salles situées sur des chemins optimaux.
+\end{itemize}
+
+\begin{jury}
+
+Le rapport 2026 attendait une comparaison explicite de l'exploration guidée par \texttt{dist{[}u{]}\ +\ h(u)} à celle guidée par \texttt{dist{[}u{]}}, et notamment l'orientation plus directe de A* vers la cible. Les deux points de l'énoncé (valeur d'extraction, effet sur l'exploration) structurent la réponse.
+
+\end{jury}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\begin{indication}{1}
+
+Factoriser \(f(u)\) par \(w\) : qu'advient-il du poids relatif de \texttt{dist} ?
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+On factorise la priorité par \(w\) :
+
+\equationajustee{f(u) = w\left(\tfrac{1}{w}\,\texttt{dist}[u] + h(u)\right).}
+
+À un facteur global près, sans effet sur l'ordre, cela revient à diviser par \(w\) le poids du coût déjà parcouru. On a de plus :
+
+\equationajustee{f(u) < f(v) \iff \texttt{dist}[u] - \texttt{dist}[v] < w\,\bigl(h(v) - h(u)\bigr).}
+
+Un écart d'estimation restante pèse \(w\) fois plus qu'un écart de coût déjà payé. \textbf{L'exploration devient plus gloutonne} : elle privilégie les salles estimées proches de \(t\), même chères à atteindre, et se resserre dans la direction de \(t\).
+
+Pour \(w = 1\), c'est A* ; quand \(w \to +\infty\), on tend vers une recherche gloutonne guidée par \(h\) seule.
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+\begin{indication}{1}
+
+Chercher un contre-exemple minimal, avec une heuristique aussi bonne que possible.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+\textbf{Non}, pas en général.
+
+\(h_w\) est admissible si et seulement si \(h(u) \le \delta(u,t)/w\) pour toute salle \(u\). Or l'admissibilité de \(h\) permet qu'une salle vérifie :
+
+\equationajustee{\frac{\delta(u,t)}{w} < h(u) \le \delta(u,t).}
+
+Pour une telle salle, \(h_w(u) > \delta(u,t)\) : \(h_w\) n'est plus admissible.
+
+Exemple : deux salles \(s, t\) et un passage \(s \to t\) de coût 10, avec \(h(s) = 10\) et \(h(t) = 0\) ; \(h\) est admissible (et exacte).
+
+Avec \(w = 2\), on obtient \(h_w(s) = 20\), alors que \(\delta(s,t) = 10\).
+
+\(h_w\) ne reste admissible que pour une heuristique qui sous-estime déjà d'un facteur \(w\), par exemple \(h \equiv 0\).
+
+\begin{piege}
+
+Multiplier une majoration par \(w > 1\) ne la conserve pas : \(h \le \delta\) n'entraîne pas \(w h \le \delta\). Le rapport 2026 cite comme erreur principale le fait d'« affirmer à tort que l'heuristique pondérée reste admissible, ou ne raisonner que sur un cas particulier » : le contre-exemple illustre la réponse, l'argument général la justifie.
+
+\end{piege}
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{indication}{1}
+
+Pour le nombre de salles : s'appuyer sur Q29. Est-ce une tendance ou une propriété garantie ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'optimalité : l'argument de Q24 s'applique-t-il encore à \(w\,h\) ? La définition qui suit l'énoncé laisse deviner la réponse quantitative.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Salles explorées} : en général leur nombre diminue quand \(w\) augmente, la recherche se concentrant dans un couloir vers \(t\) ; à la limite, une descente gloutonne. C'est une tendance, pas une garantie : une heuristique qui attire la recherche dans un cul-de-sac peut faire augmenter le nombre de développements.
+\item
+  \textbf{Qualité du chemin} : \textbf{il n'est plus optimal en général}, puisque \(w\,h\) n'est plus admissible (Q30) et que la preuve de Q24 ne s'applique plus. La perte est bornée : le chemin est \(w\)-optimal, de coût au plus \(w\,\delta(s,t)\) (Q33). Plus \(w\) est grand, moins la garantie est forte.
+\end{itemize}
+
+\begin{piege}
+
+Inverser le sens de la variation, faute relevée dans plusieurs copies par le rapport 2026. Quand \(w\) augmente, on explore moins (en tendance) et l'on garantit moins.
+
+\end{piege}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+\begin{indication}{1}
+
+Relier les contraintes de la partie 2 (mémoire) et le temps de calcul disponible dans un jeu aux propriétés établies en Q29--Q31.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Temps} : un jeu calcule une image toutes les 16 à 33 ms environ, pour tout le traitement ; c'est le pire cas qui provoque des saccades. Développer moins de salles (Q31) est décisif.
+\item
+  \textbf{Mémoire} : 64 Ko, de l'ordre de \(10^3\) salles (Q11, Q19). Moins de salles développées, c'est une file de priorité et des tableaux de travail plus petits.
+\item
+  \textbf{Garantie} : la dégradation est bornée par le facteur \(w\) (Q33), réglable par le concepteur selon l'usage.
+\item
+  \textbf{Perception} : un joueur ne remarque pas un chemin 10 ou 20 \% plus long que l'optimum, alors qu'il remarque un ralentissement.
+\end{itemize}
+
+\textbf{A* pondéré échange une perte d'optimalité contrôlée contre un gain important en temps et en mémoire}, exactement le compromis imposé par ces plateformes.
+
+\begin{jury}
+
+Pour le rapport 2026, le point attendu était « le compromis entre rapidité de calcul et qualité du chemin », et les meilleures réponses le reliaient explicitement aux contraintes du temps réel. L'énoncé demande de s'appuyer sur les questions précédentes : des renvois explicites (Q31, Q33) valent mieux qu'une dissertation générale.
+
+\end{jury}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\begin{indication}{1}
+
+Étape 1 : reprendre le sommet frontière \(v_i\) d'un chemin optimal de Q24. Que vaut \texttt{dist{[}v\_i{]}} ? Majorer \(h(v_i)\), puis utiliser \(w > 1\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour majorer \(\delta(s,v_i) + w\,\delta(v_i,t)\) par une quantité proportionnelle à \(\delta(s,t)\), utiliser \(\delta(s,v_i) \le w\,\delta(s,v_i)\).
+
+\end{indication}
+
+\begin{indication}{3}
+
+Étape 2 : la salle dépilée a la priorité minimale. Distinguer selon qu'un sommet du chemin optimal est encore dans la file ou non.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+Notons \(\delta = \delta(s,t)\) et \(f(u) = \texttt{dist}[u] + w\,h(u)\). \texttt{dist{[}u{]}} est toujours le coût d'un chemin effectif, et toute diminution provoque une insertion. \texttt{best} est le coût d'un chemin complet effectivement trouvé.
+
+\textbf{Étape 1.} Soit \(P = (s = v_0, \dots, v_k = t)\) un chemin optimal. À un instant où un sommet de \(P\) est dans la file, soit \(v_i\) celui d'indice minimal. Le lemme de Q24, dont la preuve n'utilise ni l'admissibilité ni \(w\), donne \(\texttt{dist}[v_i] = \delta(s,v_i)\). Alors :
+
+\equationajustee{\begin{aligned}
+f(v_i) &= \delta(s,v_i) + w\,h(v_i) \\
+&\le \delta(s,v_i) + w\,\delta(v_i,t) && \text{(\text{admissibilité})} \\
+&\le \max(1, w)\,\bigl(\delta(s,v_i) + \delta(v_i,t)\bigr) && \text{(termes positifs)} \\
+&= w\,\bigl(\delta(s,v_i) + \delta(v_i,t)\bigr) && (w > 1) \\
+&= w\,\delta && (v_i \in P).
+\end{aligned}}
+
+\textbf{Tant qu'un sommet de \(P\) est dans la file, \(\min f \le w\,\delta\).}
+
+\textbf{Étape 2.} L'arrêt a lieu lorsque la salle dépilée, de priorité minimale, vérifie \(f(u) \ge \texttt{best}\), soit \(\min f \ge \texttt{best}\).
+
+\begin{itemize}
+\tightlist
+\item
+  Si un sommet de \(P\) est encore dans la file : \(\texttt{best} \le \min f \le w\,\delta\).
+\item
+  Sinon, tous les sommets de \(P\) ont été extraits après leur dernière mise à jour. La récurrence du lemme, menée jusqu'à \(v_k = t\), donne \(\texttt{dist}[t] = \delta\). \texttt{best} ayant été mis à jour à la découverte de ce chemin, \(\texttt{best} \le \delta \le w\,\delta\).
+\item
+  Si la file se vide sans \texttt{break}, on est dans ce second cas.
+\end{itemize}
+
+\equationajustee{\boxed{\texttt{best} \le w \cdot \delta(s,t)}}
+
+\textbf{Le chemin retourné est \(w\)-optimal.}
+
+\begin{piege}
+
+Oublier de dire où sert \(w > 1\) (passage de \(\delta(s,v_i)\) à \(w\,\delta(s,v_i)\)) et utiliser l'égalité \(\delta(s,v_i) + \delta(v_i,t) = \delta(s,t)\) pour un sommet qui n'est pas sur un chemin optimal.
+
+\end{piege}
+
+\begin{jury}
+
+« Démonstration la plus difficile du sujet » pour le rapport 2026, presque toujours laissée blanche. Le jury désigne comme point clé « le passage au maximum et la justification rigoureuse de l'encadrement des distances » : c'est la ligne \(\max(1,w)\) ci-dessus, et le lemme qui garantit \(\texttt{dist}[v_i] = \delta(s,v_i)\).
+
+\end{jury}
+
+\hypertarget{partie-4-arbres-bsp-et-duxe9ruxe9cursivation}{%
+\section{Partie 4 --- Arbres BSP et dérécursivation}\label{partie-4-arbres-bsp-et-duxe9ruxe9cursivation}}
+
+On écrit le parcours infixe d'un arbre stocké dans un tableau global, on le dérécursive avec une pile explicite, puis on génère une partition aléatoire de l'espace à partir d'un arbre BSP complet numéroté en largeur.
+
+\hypertarget{duxe9ruxe9cursivation}{%
+\subsection{4.1 Dérécursivation}\label{duxe9ruxe9cursivation}}
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+\begin{indication}{1}
+
+Transcrire la définition. Comment traiter un fils absent, codé par \(-1\) ?
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\begin{lstlisting}[language=C]
+void infixe(int n) {
+    if (n == -1) { return; }            /* sous-arbre vide */
+    infixe(bsp[n].filsDevant);
+    visite(n);
+    infixe(bsp[n].filsDerriere);
+}
+\end{lstlisting}
+
+Terminaison par récurrence sur la hauteur ; complexité \(O(N)\) pour \(N\) nœuds ; profondeur de pile d'appels égale à la hauteur de l'arbre, ce qui motive la dérécursivation.
+
+\begin{piege}
+
+Sans le test \texttt{n\ ==\ -1}, l'accès \texttt{bsp{[}-1{]}} est hors du tableau. L'arbre est une variable globale : la signature imposée ne doit pas être modifiée.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 relève deux lacunes : l'oubli du cas de base \texttt{n\ ==\ -1} et le mauvais placement de la visite du nœud par rapport aux deux appels récursifs.
+
+\end{jury}
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\begin{indication}{1}
+
+À quel moment de la version récursive correspond le point L1/L2 ? Le nœud courant vient d'être visité et n'a pas de fils « derrière » : l'appel récursif se termine. À qui revient la main ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le sommet de la pile est en position \texttt{sommet-1}. Dans quel ordre écrire les deux opérations ?
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\begin{lstlisting}[language=C]
+            sommet--;            /* L1 */
+            n = pile[sommet];    /* L2 */
+\end{lstlisting}
+
+On atteint L1 quand \texttt{n} vient d'être visité, n'a pas de fils « derrière » et que la pile est non vide. Dans la version récursive, l'appel se termine et l'on revient au dernier nœud empilé, qui a fini son sous-arbre « devant » et doit maintenant être visité. On le dépile (décrémentation d'abord, puisque le sommet est en \texttt{sommet-1}), et la boucle interne le visite au tour suivant ; s'il a un fils « derrière », on repart en descente depuis ce fils.
+
+Trace sur l'arbre complet à 7 nœuds (fils de \(i\) : \(2i+1\), \(2i+2\)), en partant de \texttt{n\ =\ 0}, pile vide :
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+étape & pile & \texttt{n} & action \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & --- & 0 & empile 0, descend en 1 \\
+2 & 0 & 1 & empile 1, descend en 3 \\
+3 & 0, 1 & 3 & visite 3 ; pas de fils derrière : L1-L2, \texttt{n\ =\ 1} \\
+4 & 0 & 1 & visite 1 ; fils derrière : \texttt{n\ =\ 4} \\
+5 & 0 & 4 & visite 4 ; L1-L2, \texttt{n\ =\ 0} \\
+6 & --- & 0 & visite 0 ; fils derrière : \texttt{n\ =\ 2} \\
+7 & --- & 2 & empile 2, descend en 5 ; visite 5 ; L1-L2, \texttt{n\ =\ 2} \\
+8 & --- & 2 & visite 2 ; fils derrière : \texttt{n\ =\ 6} \\
+9 & --- & 6 & visite 6 ; pile vide : fin \\
+\end{longtable}
+
+Ordre obtenu : \(3, 1, 4, 0, 5, 2, 6\), celui du parcours infixe récursif.
+
+\begin{piege}
+
+Inverser les deux lignes : \texttt{n\ =\ pile{[}sommet{]}} avant \texttt{sommet-\/-} lit la case au-dessus du sommet, qui ne contient pas le bon nœud. C'est l'erreur la plus fréquente selon le rapport 2026, avec une mauvaise manipulation de la pile ; la question, technique, a été plutôt bien réussie quand elle était abordée.
+
+\end{piege}
+
+\begin{methode}
+
+Pour dérécursiver, identifier ce que contient la pile d'appels (ici : les nœuds dont le sous-arbre « devant » est en cours et qui restent à visiter) et le reproduire dans une pile explicite. Une trace sur un petit arbre vérifie le résultat.
+
+\end{methode}
+
+\hypertarget{guxe9nuxe9ration-procuxe9durale-dune-carte-de-jeu}{%
+\subsection{4.2 Génération procédurale d'une carte de jeu}\label{guxe9nuxe9ration-procuxe9durale-dune-carte-de-jeu}}
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\begin{indication}{1}
+
+Combien d'entiers dans \([\![300, 700]\!]\) ? Utiliser le reste d'une division euclidienne puis une translation.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\begin{lstlisting}[language=C]
+int alea(void) {
+    return 300 + rand() % 401;      /* 401 valeurs, de 300 à 700 */
+}
+\end{lstlisting}
+
+\texttt{rand()\ \%\ 401} prend les valeurs 0 à 400 ; le biais est d'ordre \(401/(\texttt{RAND\_MAX} + 1)\), négligeable puisque \texttt{RAND\_MAX} est assimilé à \(+\infty\).
+
+\begin{piege}
+
+\texttt{rand()\ \%\ 400} exclut la borne 700, demandée incluse.
+
+\end{piege}
+
+\begin{jury}
+
+Question « notée en tout ou rien » selon le rapport 2026 : « L'erreur dominante a été un modulo 400 au lieu de 401 ». Compter les entiers de l'intervalle avant d'écrire le modulo.
+
+\end{jury}
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+\begin{indication}{1}
+
+Une allocation, puis une boucle qui tire la direction et la proportion de chaque nœud. Quelle fonction de la question précédente sert ici ?
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+\begin{lstlisting}[language=C]
+coupe* repartition(int n) {
+    assert(n > 0);
+    coupe* coupes = malloc(n * sizeof(coupe));
+    assert(coupes != NULL);
+    for (int i = 0; i < n; i++) {
+        coupes[i].dir = rand() % 2;          /* 0 : verticale, 1 : horizontale */
+        coupes[i].proportion = alea();
+    }
+    return coupes;
+}
+\end{lstlisting}
+
+Les nœuds sont rangés dans l'ordre du parcours en largeur : les fils de \(i\) sont \(2i+1\) et \(2i+2\). Le tableau est à libérer par l'appelant.
+
+\begin{jury}
+
+Le rapport 2026 attendait quatre points : allocation de la structure, boucle de remplissage, choix de la direction de coupe et respect des proportions. Erreurs fréquentes : oublis de \texttt{return} et incohérences dans la manipulation des structures.
+
+\end{jury}
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\begin{indication}{1}
+
+Les régions sont demandées dans l'ordre \(A, A_1, A_2, A_{11}, \dots\) : c'est le même ordre en largeur que celui des coupes. Quelle région la coupe \(i\) découpe-t-elle, et où ranger les deux morceaux ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Combien de régions au total pour \(n\) nœuds internes d'un arbre complet ? Quel est le côté du carré initial, sachant que la lettre \(n\) de l'énoncé change de sens ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+L'énoncé ne dit pas depuis quel bord se mesure la proportion : la figure et le tableau d'exemple permettent de choisir une convention, qu'il faut annoncer.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+\textbf{Indexation.} Avec \(A\) en case 0, l'ordre demandé est l'ordre en largeur : la coupe \(i\) découpe la région \(i\) en les régions \(2i+1\) et \(2i+2\).
+
+Un arbre complet à \(n\) nœuds internes a \(n + 1\) feuilles : \(2n + 1\) régions (15 pour \(n = 7\)). Une seule boucle croissante suffit : la région \(i\) est écrite avant d'être découpée, car son père \(\lfloor (i-1)/2 \rfloor\) est plus petit.
+
+\textbf{Côté du carré.} Dans \texttt{creation(int\ n)}, \(n\) est le nombre de nœuds ; le nombre de salles finales est \(p = n + 1\), et le côté vaut \(100\log_2(n+1)\) (300 pour \(n = 7\)), calculé par doublements puisque \texttt{math.h} n'est pas disponible.
+
+\textbf{Convention} (lue sur la figure) : la proportion se mesure depuis \(x_{\min}\) ou \(y_{\min}\) ; pour une coupe verticale, la région \(2i+1\) est à gauche ; pour une coupe horizontale, la région \(2i+1\) est la bande du haut. Sur la figure, \(A_{11}\) est en haut de \(A_1\) et en occupe 31 \% pour la proportion 690.
+
+\begin{lstlisting}[language=C]
+region* creation(int n) {
+    assert(n > 0);
+    coupe* coupes = repartition(n);
+    region* regions = malloc((2 * n + 1) * sizeof(region));
+    assert(regions != NULL);
+    int k = 0;                                   /* 2^k = n + 1 */
+    while ((1 << k) < n + 1) { k++; }
+    regions[0].xmin = 0; regions[0].xmax = 100 * k;
+    regions[0].ymin = 0; regions[0].ymax = 100 * k;
+    for (int i = 0; i < n; i++) {
+        region r = regions[i];
+        region a = r, b = r;                     /* régions 2i+1 et 2i+2 */
+        if (coupes[i].dir == 0) {                /* verticale : partage en x */
+            int xc = r.xmin + (r.xmax - r.xmin) * coupes[i].proportion / 1000;
+            a.xmax = xc;  b.xmin = xc;
+        } else {                                 /* horizontale : partage en y */
+            int yc = r.ymin + (r.ymax - r.ymin) * coupes[i].proportion / 1000;
+            a.ymin = yc;  b.ymax = yc;           /* 2i+1 en haut */
+        }
+        regions[2 * i + 1] = a;
+        regions[2 * i + 2] = b;
+    }
+    free(coupes);
+    return regions;
+}
+\end{lstlisting}
+
+Invariant : avant l'itération \(i\), les régions \(0\) à \(2i\) sont écrites. Complexité \(O(n)\). Le tableau des coupes est libéré, celui des régions est à la charge de l'appelant.
+
+Vérification sur l'exemple (côté 300) :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1425}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3770}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4506}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+région
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+coupe appliquée
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+coordonnées \([x_{\min}, x_{\max}] \times [y_{\min}, y_{\max}]\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(A\) & verticale à 37 \% (\(x = 111\)) & \([0,300] \times [0,300]\) \\
+\(A_1\) & horizontale à 69 \% depuis le bas (\(y = 207\)) & \([0,111] \times [0,300]\) \\
+\(A_2\) & verticale (\(x = 203\)) & \([111,300] \times [0,300]\) \\
+\(A_{11}\) & --- & \([0,111] \times [207,300]\) \\
+\(A_{12}\) & --- & \([0,111] \times [0,207]\) \\
+\(A_{21}\) & --- & \([111,203] \times [0,300]\) \\
+\(A_{22}\) & --- & \([203,300] \times [0,300]\) \\
+\end{longtable}
+
+Une autre convention, clairement annoncée, est tout aussi recevable.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q38-partition-bsp.pdf}
+\caption*{Figure 3 --- Exemple de creation(7) : (a) régions rangées en largeur, la
+coupe i (direction, proportion) découpe la région i en 2i+1 et 2i+2 ;
+(b) pavage du carré de côté 300 avec les coordonnées entières}
+\end{figure}
+
+\begin{piege}
+
+Allouer \(n + 1\) régions au lieu de \(2n + 1\) (l'énoncé demande aussi les régions initiale et intermédiaires, et fournit le contrôle « 15 pour 7 ») ; diviser par 100 au lieu de 1000 (la proportion est en pour mille) ; prendre un côté \(100n\) avec \(n\) nombre de nœuds.
+
+\end{piege}
+
+\begin{jury}
+
+Question la plus exigeante de la partie, rarement menée à terme d'après le rapport 2026. Erreurs principales : tableau dimensionné à \(n\) au lieu de \(2n + 1\), côté initial \(100 \cdot n\) au lieu de \(100 \cdot \log_2(\dots)\), et de nombreux oublis du test de direction de coupe et de l'affectation des bornes \texttt{xmin}, \texttt{xmax}, \texttt{ymin}, \texttt{ymax}.
+
+\end{jury}
+
+\begin{methode}
+
+Dans un arbre binaire complet rangé en largeur, le nœud \(i\) a pour fils \(2i+1\) et \(2i+2\) et pour père \(\lfloor (i-1)/2 \rfloor\) : un parcours de l'arbre devient une simple boucle croissante sur les indices.
+
+\end{methode}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+
+\begin{itemize}
+\tightlist
+\item
+  SQL : jointure externe et \texttt{COUNT(colonne)} pour « chaque ligne, y compris sans correspondance » ; \texttt{HAVING} pour filtrer sur un agrégat ; auto-jointure avec alias.
+\item
+  C : allocation à plusieurs niveaux avec \texttt{assert}, initialisation de chaque champ, libération des structures auxiliaires ; décompte mémoire champ par champ.
+\item
+  Représentation CSR : tranches délimitées par un tableau d'indices avec sentinelle ; degré en \(O(1)\) ; somme télescopique ; conversion avec un seul compteur.
+\item
+  Graphes : le parcours en largeur minimise le nombre d'arcs, avec \texttt{dist} initialisé à \(-1\) comme marque ; Dijkstra sans diminution de clé (suppression paresseuse) ; prudence quand on change l'initialisation d'un algorithme connu.
+\item
+  Preuves A* : le lemme du sommet frontière, l'admissibilité pour majorer la priorité de ce sommet, \(h(t) = 0\) pour conclure ; la monotonie donne l'inégalité triangulaire \((\star)\) et des distances définitives.
+\item
+  Arbres : parcours infixe, dérécursivation par pile explicite, numérotation en largeur \(2i+1\), \(2i+2\).
+\end{itemize}
+
+\textbf{Ce que le rapport 2026 retient.} Le jury a surtout départagé les candidats sur la gestion de la mémoire en C (allocations, \texttt{sizeof}, sentinelle CSR), sur Q15 (exploiter la sentinelle sans boucle), Q21 et Q23 (parcours en largeur et Dijkstra), et sur les preuves Q27 et Q33, rarement abordées. Les calculs de taille (Q10, Q18) et l'ordre de grandeur de Q11 ont coûté des points faciles. En SQL, l'emploi de \texttt{WHERE} au lieu de \texttt{HAVING} a été l'erreur la plus répandue. Sur Q23, le corrigé s'écarte d'une attente du rapport, pour une raison démontrée par un contre-exemple (voir la question).
+
+\textbf{Prérequis à revoir.} Modèle entité-association ; invariants de boucle ; preuve de correction de Dijkstra ; représentation d'un arbre complet dans un tableau.
+
+\textbf{Questions classiques transposables.} Q3 (jointure externe et comptage), Q10/Q18 (empreinte mémoire d'une structure), Q20 (le parcours en largeur calcule les plus courts chemins en nombre d'arcs), Q24--Q27 (optimalité de A*, monotone implique admissible), Q34--Q35 (dérécursivation d'un parcours d'arbre).
+
+\end{document}

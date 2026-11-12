@@ -1,0 +1,38 @@
+{
+  "slug": "ats_ats_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "ATS",
+    "filiere": "ATS",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 64,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q05-profil-vitesse-trapeze.svg",
+      "question": "Q5",
+      "legende": "Loi de vitesse en trapèze du moule : accélération, palier, décélération ; l'aire sous la courbe vaut Δx"
+    },
+    {
+      "fichier": "figures/q09-figures-changement-base.svg",
+      "question": "Q9",
+      "legende": "Figures de changement de base : rotations d'axe z0 d'angles β, θ, φ (dessinés positifs)"
+    },
+    {
+      "fichier": "figures/q17-q18-positions-genouillere.svg",
+      "question": "Q17-Q18",
+      "legende": "Positions extrêmes de la manivelle 3 et de la bielle 4 (cotes en mm) et course Δx du moule"
+    },
+    {
+      "fichier": "figures/q19-graphe-structure.svg",
+      "question": "Q19",
+      "legende": "Graphe de structure des pièces 0, 1 et 6 : pivots glissants en J et K en parallèle"
+    },
+    {
+      "fichier": "figures/q54-tensions-simples.svg",
+      "question": "Q54",
+      "legende": "Tensions simples v1, v2, v3 de l'onduleur pleine onde sur une période"
+    }
+  ]
+}

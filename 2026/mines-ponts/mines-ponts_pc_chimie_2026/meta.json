@@ -1,0 +1,38 @@
+{
+  "slug": "mines-ponts_pc_chimie_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PC",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 44,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q23-maille-licoo2.svg",
+      "question": "Q23",
+      "legende": "Maille de LiCoO₂ : O²⁻ en réseau cubique à faces centrées, sites octaédriques au centre du cube et aux milieux des arêtes ; à droite, projections cotées z = 0 et z = a/2 (tailles non à l'échelle)"
+    },
+    {
+      "fichier": "figures/q24-lewis-h2o2.svg",
+      "question": "Q24",
+      "legende": "Schéma de Lewis de H₂O₂ : squelette H–O–O–H, deux doublets non liants sur chaque oxygène"
+    },
+    {
+      "fichier": "figures/q33-separation-mn-co.svg",
+      "question": "Q33",
+      "legende": "Droite A et frontières MnO₂/Mn²⁺ et Co(OH)₃/Co²⁺ superposées : A domine la frontière du manganèse à tout pH, celle du cobalt seulement au-delà de pH ≈ 3,2"
+    },
+    {
+      "fichier": "figures/q40-courbes-courant-potentiel.svg",
+      "question": "Q40",
+      "legende": "Figure 6 du sujet reproduite et annotée : vagues de Ni²⁺ et de Co²⁺ avec paliers de diffusion, mur de réduction de l'eau vers −0,65 V"
+    },
+    {
+      "fichier": "figures/q44-allure-courbes.svg",
+      "question": "Q44",
+      "legende": "Allure proposée des courbes de réduction dans LiCl à 10 mol/L : nickel dès −0,29 V, courbe peu raide ; cobalt dès −0,51 V, courbe très raide ; à −0,55 V le courant du cobalt vaut trois fois celui du nickel"
+    }
+  ]
+}

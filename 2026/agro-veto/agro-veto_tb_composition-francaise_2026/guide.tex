@@ -1,0 +1,532 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto TB — Composition française 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · Agro-Véto TB}
+\fancyhead[R]{\small Composition française 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries Agro-Véto TB — Composition française 2026\par}\medskip
+  {\large Agro-Véto · TB · Composition française · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{L'épreuve.} Trois heures, sans document ni instrument électronique, trois exercices liés au même texte : un résumé en 150 mots (marge de 10 \%, soit de 135 à 165 mots, noté sur 8), une question de vocabulaire (notée sur 2) et un développement d'une page et demie environ, nourri des trois œuvres au programme (noté sur 10). Les fautes de langue sont sanctionnées directement dans le résumé ; ailleurs, une expression confuse pénalise indirectement, par le manque de lisibilité du propos.
+
+\textbf{Le texte.} Un extrait de \emph{Philosophie de l'océan} de Roberto Casati (PUF, 2022), qui compte entre 700 et 800 mots selon l'énoncé. Il part d'un objet dérisoire, l'inflorescence de la bardane (\emph{arctium}), pour interroger la prétention de « monétariser » la nature. Il compte quatre paragraphes, le dernier en trois mouvements :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0784}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5881}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3035}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Lignes
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mouvement
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fonction
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1-15 & La bardane, jugée sans valeur faute d'usage, a inspiré à George de Mestral le Velcro, source d'emplois, de richesses et de commodité. & exemple argumentatif, qui réfute une estimation hâtive \\
+16-23 & Même si l'on admettait de monétariser l'environnement, un « mur d'ignorance » empêcherait le calcul : les usages d'une espèce sont inconnus, parfois pour toujours, et certains pourraient changer la condition humaine. & première leçon : l'ignorance qui a fait mésestimer la bardane rend le chiffrage impossible \\
+24-33 & Le Velcro « annihile ou du moins tempère » le modèle de la nature comme \emph{gisement} (réserve de substances qu'on protège pour ne pas s'en priver) : ici, la nature a été une source d'inspiration, une « muse ». & deuxième leçon : critique d'un modèle conceptuel \\
+34-37 & Argument contre la monétarisation : chiffrer, c'est inviter à vendre (« l'occasion fait le larron »). & premier point de vue \\
+37-40 & Réponse des partisans de la monétarisation : ne pas mesurer, c'est rendre la nature invisible et la dévaluer. & second point de vue, introduit par « Mais » \\
+40-48 & Position de l'auteur, introduite par un second « Mais » : le problème tient aux « lunettes monétaires ». Sans aller jusqu'à Romain Gary, on peut accepter le défi de mesurer la valeur de la nature, à condition de discuter de la valeur en général et de ne pas faire du bénéfice économique le seul critère ; la bardane doit guider ce regard. & thèse nuancée, retour à l'exemple \\
+\end{longtable}
+
+Le point décisif est la \textbf{position conditionnelle} de l'auteur : il ne refuse pas l'évaluation, il refuse qu'elle se réduise au prix. Il reprend l'argument des partisans de la monétarisation pour en changer le sens.
+
+\textbf{Le développement.} « L'expérience permet-elle de ``mesurer la valeur de la nature'' ? » Le sujet greffe l'expression du texte sur le thème au programme. Il faut jouer sur deux polysémies : \emph{l'expérience} (épreuve vécue, expérimentation scientifique) et \emph{mesurer} (quantifier, ou qualifier, apprécier). Les trois œuvres s'y prêtent : Verne (le \emph{Nautilus}, laboratoire et entreprise d'exploitation de la mer), Canguilhem (les conditions de l'expérimentation sur le vivant, le milieu, la normativité de la vie), Haushofer (une survie qui oblige à compter, puis à s'attacher).
+
+\textbf{Ce qu'a montré la session.} Selon le rapport 2026, la moyenne est de 10,19/20, la médiane de 9,40, avec un quartile inférieur à 7,70 et un quartile supérieur à 12,40 (notes de 3,20 à 19,60). Le jury juge « assez bas » le premier quartile et la médiane, et situe la marge de progression dans la question de vocabulaire et dans l'essai. Trois points départagent les copies : la finesse de compréhension et la \textbf{qualité de reformulation} du résumé, une \textbf{explication lexicale} vraiment ancrée dans le texte, et la \textbf{problématisation} de l'essai.
+
+\textbf{Difficulté et temps.} Le texte est clair, mais son paragraphe final est dense, et le contresens (faire de l'auteur un adversaire de toute évaluation) est le principal danger. Répartition raisonnable : lecture et analyse du texte, 15 minutes ; résumé, 55 minutes, décompte compris ; vocabulaire, 15 minutes ; développement, 85 minutes dont 20 de plan ; relecture, 10 minutes.
+
+\begin{jury}
+
+Le rapport 2026 met en garde contre l'impasse sur la question de vocabulaire : « Certains candidats ont expédié en trois ou quatre lignes l'explication lexicale, sans même faire référence au texte. » Et il ajoute : « Cette stratégie est très mauvaise, et le jury conseille d'y renoncer. » Elle coûte deux points et prive l'essai de ses meilleures pistes.
+
+\end{jury}
+
+\hypertarget{partie-1-ruxe9sumuxe9}{%
+\section{Partie 1 --- Résumé}\label{partie-1-ruxe9sumuxe9}}
+
+Il s'agit de reformuler le texte au cinquième de sa longueur environ, en conservant l'ordre et l'enchaînement logique, sans commentaire ni citation recopiée, en se mettant à la place de l'auteur (pas de « l'auteur montre que »), avec ses pronoms et son ton.
+
+\hypertarget{question-1-uxe9tape-a-comprendre-et-duxe9couper-le-texte}{%
+\subsection{Question 1, étape a --- Comprendre et découper le texte}\label{question-1-uxe9tape-a-comprendre-et-duxe9couper-le-texte}}
+
+\begin{indication}{1}
+
+Repérez les connecteurs qui ouvrent chaque mouvement (« Mais », « En même temps », « Mais ceux qui\ldots{} », « Mais le problème\ldots{} ») : ils marquent les changements de point de vue.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Demandez-vous à quoi sert l'exemple de la bardane dans chaque paragraphe, et si l'auteur, à la fin, refuse la mesure de la valeur de la nature ou s'il en fixe les conditions. Relisez « Sans aller jusqu'à\ldots{} nous pouvons alors\ldots{} à condition que\ldots{} ».
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Le texte compte quatre paragraphes et six mouvements (voir le tableau de la présentation). Plutôt que de calquer ce découpage, on peut regrouper les idées en trois temps selon le rôle de l'exemple : l'anecdote de la bardane (lignes 1-15), les deux leçons qu'on en tire contre le chiffrage (lignes 16-33), puis le débat sur la monétarisation et la position de l'auteur (lignes 34-48). Quatre idées doivent impérativement apparaître : l'ignorance qui empêche le calcul, rattachée à la bardane longtemps mésestimée ; la critique du modèle du gisement ; l'argument des partisans de la monétarisation (ne pas mesurer, c'est ne pas voir) ; la position finale (accepter l'évaluation sans la réduire au profit), avec le retour à la bardane. Le rejet de la position de Romain Gary est secondaire : on peut l'omettre pour tenir le format.
+
+\begin{piege}
+
+Le rapport 2026 situe les erreurs de compréhension dans les paragraphes 2 et 4. Au paragraphe 2, le « mur d'ignorance » a souvent été mal compris, alors qu'il prolonge l'anecdote : on a négligé la bardane parce qu'on ignorait ce qu'elle pouvait apporter. Au paragraphe 4, dense, l'exemple de la Grande Barrière de corail a été pris pour une critique de l'ultra-capitalisme ; le jury le rattache au débat sur l'idée qu'un prix révèle la valeur, et rappelle qu'étant illustratif, il n'avait pas à être repris.
+
+\end{piege}
+
+\begin{jury}
+
+Le paragraphe 4 ne se résume pas à la seule thèse : selon le rapport 2026, « on ne pouvait pas supprimer l'argument des partisans de la monétarisation sans créer un raccourci préjudiciable », puisque l'auteur reprend finalement à son compte la nécessité de mesurer la valeur de la nature.
+
+\end{jury}
+
+\hypertarget{question-1-uxe9tape-b-ruxe9diger-compter-et-poser-les-barres}{%
+\subsection{Question 1, étape b --- Rédiger, compter et poser les barres}\label{question-1-uxe9tape-b-ruxe9diger-compter-et-poser-les-barres}}
+
+\begin{indication}{1}
+
+Rédigez d'abord une phrase par mouvement sans vous soucier de la longueur, puis comprimez : supprimez les exemples illustratifs (Google, la Grande Barrière, le miel et le pétrole) avant de toucher aux connecteurs. Gardez l'exemple argumentatif de la bardane.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour chaque mot clé du texte, cherchez un équivalent : \emph{gisement}, \emph{entrepôt}, \emph{inspiration}, \emph{invisible} se reformulent ; \emph{bardane}, \emph{Velcro} et \emph{monétarisation} peuvent rester.
+
+\end{indication}
+
+\begin{indication}{3}
+
+Pour le décompte typographique, l'apostrophe et le trait d'union séparent les mots : « qu'on » vaut 2, « peut-être » vaut 2, « objecte-t-on » vaut 3. Un nombre en chiffres compte pour un mot.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+La bardane, inutilisée, paraît sans valeur. Pourtant, en l'observant, un ingénieur a conçu le Velcro, source d'emplois, de richesses et de commodité. Cet \textbar{} épisode doit éclairer tout débat sur la valeur de la nature.
+
+Même si nous acceptions de la chiffrer, notre ignorance fausserait le calcul : nous méconnaissons \textbar{} les emplois d'une espèce, dont certains, peut-être jamais découverts, pourraient transformer l'humanité. La bardane ébranle aussi l'image d'une nature-réserve, \textbar{} protégée pour ne pas manquer de matières : elle a fourni une idée, non une matière.
+
+Tarifer un milieu, objecte-t-on, pousse à le vendre ; \textbar{} les partisans de la monétarisation répliquent que ce qui n'est pas chiffré cesse d'être vu, donc estimé. Mais c'est le regard comptable \textbar{} qui aveugle. Évaluons donc la nature, en débattant de ce qui fait la valeur, sans la réduire au profit : la bardane nous apprend à ne \textbar{} pas y voir une simple mine.
+
+\textbf{156 mots}
+
+Contrôle : les barres tombent après le 25e mot (« Cet »), le 50e (« méconnaissons »), le 75e (« réserve », second élément de « nature-réserve »), le 100e (« vendre »), le 125e (« comptable ») et le 150e (« ne »). Le résumé suit l'ordre du texte en trois paragraphes, conserve les articulations (« Pourtant », « Même si », « aussi », « objecte-t-on », « répliquent », « Mais », « donc ») et revient à la bardane à la fin, comme le texte. Les mots du texte que le jury a relevés comme calques évitables (\emph{gisement}, \emph{entrepôt}, \emph{inspiration}, \emph{servir de guide}) sont reformulés (« nature-réserve », « une idée », « nous apprend ») ; \emph{bardane}, \emph{Velcro} et \emph{monétarisation} sont gardés.
+
+\begin{methode}
+
+Distinguer l'exemple argumentatif, qui porte le raisonnement et se garde (la bardane), de l'exemple illustratif, qui se supprime (les serveurs de Google, entre parenthèses). Reprendre l'exemple argumentatif une ou deux fois montre qu'on a compris son rôle.
+
+\end{methode}
+
+\begin{piege}
+
+Recopier les mots du texte : un emprunt isolé passe, des calques systématiques sont pénalisés. Le rapport 2026 cite ceux de la session : « Les calques qui ont fleuri cette année semblaient évitables : « inspiration », « gisement », « entrepôt biologique », « servir de guide »\ldots{} » Les deux résumés de candidats qu'il reproduit, notés 6,6/8 et 7,6/8, sont jugés fidèles, mais leur reformulation est dite insuffisante ou inaboutie.
+
+\end{piege}
+
+\begin{jury}
+
+Le rapport 2026 précise ce qu'on ne reformule pas : « « bardane » et « velcro » devaient être conservés », et mieux vaut garder \emph{monétarisation} qu'une périphrase hasardeuse. Il rappelle aussi que les fautes de langue « sont directement sanctionnées dans le résumé » : la relecture des accords et des homophones fait partie de l'exercice.
+
+\end{jury}
+
+\hypertarget{partie-2-question-de-vocabulaire}{%
+\section{Partie 2 --- Question de vocabulaire}\label{partie-2-question-de-vocabulaire}}
+
+Une explication en contexte, et non une définition de dictionnaire : on situe l'expression, on en analyse les termes à partir des échos du texte, puis on dit ce qu'elle signifie sous la plume de l'auteur.
+
+\hypertarget{question-2-expliquer-mesurer-la-valeur-de-la-nature-lignes-44-45}{%
+\subsection{Question 2 --- Expliquer « mesurer la valeur de la nature » (lignes 44-45)}\label{question-2-expliquer-mesurer-la-valeur-de-la-nature-lignes-44-45}}
+
+\begin{indication}{1}
+
+Relisez la phrase entière où l'expression apparaît : quels mots l'encadrent (avant et après) et quelle attitude de l'auteur traduisent-ils ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'expression répond à un argument exposé quelques lignes plus haut. Lequel, et l'auteur lui donne-t-il le même sens ?
+
+\end{indication}
+
+\begin{indication}{3}
+
+Concluez par une phrase-définition qui tienne compte de la condition posée par l'auteur.
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+L'expression clôt la thèse de l'auteur (lignes 40-48), et elle reprend à dessein l'argument des partisans de la monétarisation, pour qui « ne pas mesurer signifie ne pas voir du tout la valeur » (lignes 37-38). Dans leur bouche, mesurer, c'est attribuer un prix aux êtres naturels selon leur utilité présente ou future pour l'homme, c'est-à-dire « faire correctement les comptes » (ligne 19). Le texte a déjà fragilisé ce calcul : le « mur d'ignorance » (ligne 19) l'empêche d'aboutir.
+
+Roberto Casati retourne cet argument contre ses auteurs. La fin de la phrase oppose « la valeur en général » (ligne 45) au « bénéfice économique comme seul critère » (ligne 46) : la valeur ne se réduit pas au prix, et la mesure ne se réduit pas au chiffre. Mesurer la valeur, c'est alors apprécier ce qui, dans la nature, mérite d'être estimé et préservé, et non plus seulement compter. Cette appréciation est collective : le « nous » (lignes 43-46) et le mot « discussion » (ligne 45) en font l'objet d'un débat toujours ouvert. Elle est enfin un « défi » et une « nécessité » (ligne 44) : l'auteur concède qu'on ne peut renoncer à évaluer la nature, mais il change le sens de l'évaluation.
+
+Sous la plume de l'auteur, \textbf{« mesurer la valeur de la nature » signifie donc juger collectivement, par un débat sur ce qui vaut, de l'importance de la nature, au lieu de la réduire à un prix calculé selon son seul rendement.}
+
+\begin{jury}
+
+Le rapport 2026 conseille de partir de deux questions : « quelle est la signification, pour l'auteur du texte, du mot ou du groupe de mots sur lequel porte cette partie de l'épreuve, et dans quelle intention argumentative l'auteur emploie-t-il ce mot ou ce groupe de mots ? » Ici, la fin de la phrase, qui oppose « la valeur en général » au « bénéfice économique comme seul critère », donne les deux axes de la réponse. Le jury regrette aussi l'absence des numéros de ligne dans les citations.
+
+\end{jury}
+
+\begin{piege}
+
+Trois écueils relevés par le rapport 2026 : définir \emph{mesurer}, \emph{valeur} et \emph{nature} hors contexte puis les recomposer (ou donner un sens « général » avant le sens dans le texte) ; aligner des citations sans les commenter (une telle réponse a obtenu 0,7 sur 2) ; ouvrir déjà le débat de l'essai, voire donner un avis personnel (0,4 sur 2 pour une réponse de ce type). À l'inverse, une glose de tout le texte dilue le sens.
+
+\end{piege}
+
+\begin{methode}
+
+Pour toute question de vocabulaire : situer, analyser les termes à partir d'indices du texte (citations courtes, commentées, avec les lignes), dégager l'intention argumentative, puis reformuler le sens en une phrase.
+
+\end{methode}
+
+\hypertarget{partie-3-duxe9veloppement}{%
+\section{Partie 3 --- Développement}\label{partie-3-duxe9veloppement}}
+
+Le sujet demande une réflexion personnelle, argumentée et nourrie des trois œuvres, d'une page et demie environ. La réponse proposée fait environ 800 mots ; l'essai de candidat que le jury reproduit (9/10) est plus long, mais le rapport 2026 rappelle que « la qualité prime sur la quantité ».
+
+\hypertarget{question-3-uxe9tape-a-analyser-le-libelluxe9}{%
+\subsection{Question 3, étape a --- Analyser le libellé}\label{question-3-uxe9tape-a-analyser-le-libelluxe9}}
+
+\begin{indication}{1}
+
+Chaque terme est double. Que peut désigner « l'expérience » dans les trois œuvres ? Et « mesurer » : faut-il nécessairement un nombre ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le verbe « permet-elle » pose une question de pouvoir : demandez-vous ce que l'expérience atteint et ce qui lui échappe par nature. Puis demandez-vous pourquoi la question compte aujourd'hui.
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\emph{L'expérience} désigne l'épreuve vécue (la narratrice de Haushofer, isolée derrière le mur), l'expérimentation scientifique (le laboratoire chez Canguilhem, les observations d'Aronnax) et, plus largement chez Canguilhem, le rapport de tout vivant à son milieu. \emph{Mesurer} s'entend au sens propre, quantifier (chiffrer, au besoin en monnaie), et au sens figuré, qualifier, prendre la mesure. \emph{La valeur de la nature} reprend la question du texte : valeur marchande, valeur d'usage, valeur vitale, esthétique ou morale. Les guillemets imposent de tenir compte du sens établi à la question 2.
+
+La difficulté naît de la rencontre des deux termes. Une expérience subjective, donc plurielle, peut-elle fonder une mesure partagée ? Et si l'expérimentation quantifie, comment s'entendre sur la qualité ? L'enjeu, enfin, est écologique : prendre la mesure de la valeur de la nature est une condition pour la respecter.
+
+\begin{piege}
+
+Le rapport 2026 relève l'erreur inverse de celle qu'on attendrait : beaucoup de copies ont travaillé la valeur et oublié la mesure, « évacuant, dans bien des cas, la dimension de la mesure pour se concentrer sur celle de la valeur ». D'autres ont réduit le sujet à « quantifier le prix de la nature », ou l'ont dérivé vers des questions rebattues (bienfaits et hostilité de la nature, destruction de la nature par l'homme).
+
+\end{piege}
+
+\begin{jury}
+
+Pour le rapport 2026, « la problématique ne se confond pas avec l'énoncé, qu'il soit repris tel quel ou paraphrasé ». Elle naît de l'analyse : ici, de la polysémie dégagée à la question 2, que les meilleures copies ont réemployée.
+
+\end{jury}
+
+\hypertarget{question-3-uxe9tape-b-probluxe9matiser-et-construire-le-plan}{%
+\subsection{Question 3, étape b --- Problématiser et construire le plan}\label{question-3-uxe9tape-b-probluxe9matiser-et-construire-le-plan}}
+
+\begin{indication}{1}
+
+Partez de l'exemple du texte : qu'est-ce qui a fait apparaître la valeur de la bardane ? Puis demandez-vous ce que cette même expérience ne pouvait pas connaître.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Un plan en trois temps peut aller de ce que l'expérience rend possible, à ce qu'elle manque, puis à la transformation du sens de « mesurer » qu'elle opère.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\textbf{Problématique :} l'expérience, toujours singulière et limitée, peut-elle fournir une mesure de ce que vaut la nature, ou nous apprend-elle seulement à en prendre la mesure ?
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.0775}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4316}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4608}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Partie
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Idée directrice
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Appuis
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I & L'expérience est la condition de toute évaluation : sans rencontre, aucune valeur n'apparaît, et la nécessité ou la science obligent à compter. & Canguilhem, ouverture de « L'expérimentation en biologie animale » ; Haushofer, l'économie de survie ; Verne, Aronnax qui classe et estime la perle de Ceylan, Nemo qui exploite le sodium et la houille sous-marine \\
+II & Mais elle ne mesure que ce qu'elle atteint : l'expérimentation modifie le vivant, chaque évaluation dépend des besoins et de l'attention de l'évaluateur, et l'expérience ignore l'avenir. & Canguilhem, difficultés de l'expérimentation, Uexküll et la tique ; Verne, Ned Land, l'or de Vigo, les cachalots ; Haushofer, les pigeons qu'elle n'a jamais regardés ; Casati, le « mur d'ignorance » \\
+III & Elle enseigne alors une autre mesure : reconnaître des valeurs que la vie pose elle-même, au-delà du prix. & Canguilhem, \emph{valere} et la normativité du vivant, « tenir du vivant l'idée du vivant » ; Haushofer, l'attachement aux bêtes et la mort de Lynx ; Verne, Nemo et la mer comme espace de liberté \\
+\end{longtable}
+
+\begin{methode}
+
+Chaque grande partie fait place aux trois œuvres, et les exemples se répondent dans un même paragraphe au lieu de se succéder œuvre par œuvre : c'est ce qu'exige le rapport 2026, pour qui « il y a lieu de ménager une place à chaque auteur dans chacune des grandes parties ».
+
+\end{methode}
+
+\begin{piege}
+
+Deux plans à éviter, selon le rapport 2026 : la dialectique mécanique (« les points en faveur {[}\ldots{]}, puis en défaveur, avant de nuancer »), et le calque du texte de Casati (valeur monétaire, puis valeur d'inspiration), qui ne trouve pas d'appui dans les œuvres. La tension entre quantité et qualité peut structurer l'essai, à condition de ne pas réduire la quantification à la monnaie.
+
+\end{piege}
+
+\begin{piege}
+
+Le personnage de Nemo est ambivalent : il protège les baleines mais attaque les cachalots et puise les trésors de Vigo. L'exploiter dans les deux sens est plus juste que d'en faire un simple protecteur de la mer.
+
+\end{piege}
+
+\hypertarget{question-3-uxe9tape-c-ruxe9diger-le-duxe9veloppement}{%
+\subsection{Question 3, étape c --- Rédiger le développement}\label{question-3-uxe9tape-c-ruxe9diger-le-duxe9veloppement}}
+
+\begin{indication}{1}
+
+L'introduction peut partir de la bardane : elle relie le développement au texte et pose d'emblée le paradoxe d'une valeur qui change sans que la chose change.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Chaque référence doit produire un argument : demandez-vous, pour chaque exemple, ce qu'il prouve à propos de la mesure, et pas seulement de la nature. Comparez brièvement les exemples pour dégager ce qui les distingue.
+
+\end{indication}
+
+\begin{indication}{3}
+
+La conclusion répond nettement à la question en distinguant les deux sens de « mesurer », puis ouvre brièvement.
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Une boule de bardane accrochée à un vêtement ne vaut rien, jusqu'au jour où un ingénieur, l'ayant regardée de près, en tire le Velcro. Roberto Casati accepte dès lors de « mesurer la valeur de la nature », pourvu qu'on ne réduise pas la valeur au profit. Or c'est bien une expérience, une rencontre attentive avec le réel, qui a fait apparaître la valeur de la bardane. L'expérience, épreuve vécue ou expérimentation méthodique, serait-elle donc l'instrument qui établit ce que vaut la nature ? La difficulté tient au double sens de \emph{mesurer} : quantifier, ce qui suppose une unité commune, ou apprécier une qualité, ce qui suppose un jugement. Or l'expérience est toujours singulière, située et limitée : comment fonderait-elle une mesure partagée ? L'enjeu est écologique : on respecte mal ce dont on ignore la valeur. Nous verrons que l'expérience est la condition de toute évaluation de la nature, qu'elle ne fournit pourtant jamais une mesure complète, et qu'elle enseigne plutôt une autre manière de prendre la mesure de ce qui vaut.
+
+Sans expérience, aucune valeur n'apparaît. Canguilhem rappelle, au seuil de « L'expérimentation en biologie animale », que l'expérience est d'abord la fonction générale de tout vivant, son débat avec le milieu : évaluer est une activité vitale avant d'être une opération savante. Coupée du monde, la narratrice du \emph{Mur invisible} compte ses allumettes et ses cartouches, fauche le foin qui nourrira Bella pendant l'hiver ; l'argent n'a plus cours, et chaque chose vaut ce qu'elle permet de vivre. Le savant fait de cette évaluation une méthode, et va jusqu'au chiffre. À bord du \emph{Nautilus}, Aronnax observe, nomme et classe les espèces ; devant la perle géante que Nemo lui fait admirer au large de Ceylan, il calcule ce qu'elle vaut. Nemo, qui tire son électricité du sodium de l'eau de mer et sa houille de gisements sous-marins, prouve qu'une connaissance expérimentale de l'océan permet d'en estimer et d'en exploiter les ressources. La narratrice mesure la nature à ses besoins, le savant vernien à des unités : dans les deux cas, l'expérience donne prise à l'évaluation.
+
+Pourtant, l'expérience ne mesure jamais que ce qu'elle atteint. Canguilhem souligne les obstacles propres à l'expérimentation sur le vivant, sa spécificité, son individualité, sa totalité, l'irréversibilité de ses transformations : ce que l'on mesure au laboratoire est un organisme déjà soustrait à son milieu. Dans « Le vivant et son milieu », il montre en outre, à la suite d'Uexküll, que chaque vivant découpe dans le monde ce qui compte pour lui, comme la tique qui ne réagit qu'à quelques signaux. Notre évaluation est de même relative à nos besoins : Ned Land voit d'abord dans la mer un terrain de chasse, et Nemo lui-même puise l'or des galions de Vigo et massacre des cachalots qu'il juge nuisibles. Elle dépend aussi de notre attention : la narratrice de Haushofer avoue qu'elle serait incapable de décrire un seul des pigeons qu'elle croisait chaque jour en ville. L'expérience, enfin, porte sur le passé : elle ne dit rien des usages encore inconnus que Casati place derrière un « mur d'ignorance ».
+
+L'expérience ne donne donc pas un prix, mais elle peut apprendre une autre mesure. Canguilhem rappelle qu'en latin \emph{valere} signifie se bien porter : avant d'être un prix, la valeur est celle du vivant. Le vivant est normatif : la santé n'est pas une moyenne statistique, mais le pouvoir d'instituer de nouvelles normes, si bien que la valeur est posée par la vie avant d'être calculée par nous. La pensée doit alors, selon sa formule, « tenir du vivant l'idée du vivant ». C'est ce que vit la narratrice : au fil des années, Bella, Lynx et les chats ne se comptent plus en lait ou en services rendus, et la mort du chien et du jeune taureau, tués par un inconnu surgi de nulle part, échappe à toute commune mesure. Nemo, qui proclame que « la mer est tout » et refuse de tuer les baleines sans nécessité, oppose lui aussi à l'évaluation marchande une expérience de l'océan comme espace de liberté ; mais il reste ambivalent, quand la narratrice va jusqu'au bout de sa conversion. Mesurer la valeur de la nature ne veut plus dire chiffrer, mais reconnaître la pluralité de ce qui vaut : c'est la condition même que posait Casati.
+
+L'expérience permet donc de mesurer la valeur de la nature si l'on entend par là en prendre la mesure : elle révèle des valeurs qu'aucun calcul a priori ne soupçonnait. Elle ne permet pas d'en fixer le prix définitif, car elle reste partielle, tributaire de nos besoins et ouverte sur l'inconnu. Sa leçon la plus précieuse est peut-être le sens de la mesure, la modestie de qui sait que la bardane d'aujourd'hui peut être le Velcro de demain, et qu'il faut la protéger avant d'en connaître le prix.
+
+\begin{jury}
+
+Le rapport 2026 apprécie les essais étayés de quelques citations, mais exige des références précises et commentées, sans narration ni résumé d'épisode. Il valorise les souvenirs de lecture personnels, comme l'étymologie de « valeur » rappelée par Canguilhem ou les calculs d'Aronnax devant la perle de Ceylan. Il demande enfin d'orthographier les noms propres : « transformer « Lynx » en « Sphynx » ne contribue pas à mettre le correcteur dans de bonnes dispositions ».
+
+\end{jury}
+
+\begin{piege}
+
+Allonger pour paraître complet : le rapport 2026 note que des essais « un peu plus courts que d'autres » ont obtenu les meilleurs résultats quand ils pensaient précisément la mesure de la valeur. Mieux vaut une réflexion serrée qui garde le temps de la relecture.
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Résumé :} découper le texte en mouvements, distinguer exemples argumentatifs et illustratifs, garder l'argument adverse, reformuler les mots clés au lieu de les recopier, compter selon la règle typographique (apostrophe et trait d'union séparent les mots) et vérifier les barres. Reformulation et finesse de compréhension sont ce qui départage le plus.
+\item
+  \textbf{Vocabulaire :} situer l'expression, analyser ses termes à partir d'indices précis et commentés du texte, dégager l'intention argumentative, conclure par une définition en contexte. C'est l'exercice que le rapport 2026 désigne comme la première marge de progression.
+\item
+  \textbf{Développement :} problématiser les deux termes du libellé (ici \emph{expérience} et \emph{mesurer}), en exploitant la polysémie dégagée à la question 2 ; dire l'enjeu (ici écologique) ; faire place aux trois œuvres dans chaque partie ; conclure par une réponse nette. La problématisation est le point faible de la session.
+\item
+  \textbf{Œuvres à connaître précisément :} chez Canguilhem, les difficultés propres de l'expérimentation sur le vivant, le milieu propre (Uexküll), la normativité du vivant et l'étymologie de \emph{valeur} (\emph{valere}, se bien porter), la formule finale de l'introduction ; chez Verne, l'exploitation de la mer par Nemo (sodium, houille, trésors de Vigo), la perle estimée par Aronnax et l'épisode des baleines et des cachalots ; chez Haushofer, l'économie de survie, le regard qui change sur les bêtes et l'attachement à Bella et à Lynx.
+\item
+  \textbf{Transposable :} toute question du type « l'expérience permet-elle de connaître / juger / évaluer\ldots{} » appelle la même distinction entre ce que l'expérience rend possible, ce qu'elle laisse hors de portée, et la transformation de la notion interrogée.
+\end{itemize}
+
+\end{document}

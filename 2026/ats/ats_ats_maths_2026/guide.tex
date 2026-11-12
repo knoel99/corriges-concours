@@ -1,0 +1,2266 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={ATS — Mathématiques 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé guidé}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé guidé} · ATS ATS}
+\fancyhead[R]{\small Maths 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé guidé}\par\smallskip
+  {\LARGE\bfseries ATS — Mathématiques 2026\par}\medskip
+  {\large ATS · ATS · Maths · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\hypertarget{pruxe9sentation-du-sujet}{%
+\section{Présentation du sujet}\label{pruxe9sentation-du-sujet}}
+
+\textbf{Format.} Épreuve de 3 heures, \textbf{calculatrice interdite}, sans document. Quatre exercices totalement indépendants, 76 questions élémentaires en comptant chaque sous-question.
+
+\textbf{Exercice 1 --- Série de Fourier d'une dent de scie (29 questions).}
+- \emph{Partie A (questions 1 à 7)} : tracé de la fonction, calcul des coefficients de Fourier (parité, intégration par parties), théorème de Dirichlet. On en déduit deux sommes classiques : \(\sum\frac{(-1)^p}{2p+1}=\frac\pi4\) par évaluation en \(\frac\pi2\), et \(\sum\frac1{n^2}=\frac{\pi^2}6\) par Parseval. Un petit volet algorithmique conclut.
+- \emph{Partie B (questions 8 à 15)} : étude des points critiques de la somme partielle \(S_n(t)=\sum_{k=1}^n\frac{\sin(kt)}k\). On calcule \(S_n'\) comme somme géométrique complexe, on résout \(S_n'(t)=0\), puis on classe chaque point critique par le signe de \(S_n''\). C'est la partie la plus longue et la plus technique, mais elle est très guidée.
+
+\textbf{Exercice 2 --- Puissances d'une matrice (14 questions).} Réduction de \(A=J-I_3\) (\(J\) = matrice dont tous les coefficients valent \(1\)), calcul de \(A^n\) par le binôme de Newton, application à un système de trois suites récurrentes.
+
+\textbf{Exercice 3 --- Rotation dans le plan complexe (16 questions).} Étude de \(z\mapsto\lambda z\) avec \(|\lambda|=1\) : module, argument, image d'une demi-droite. Puis périodicité de la suite \(z_n=\lambda^nz_0\) selon que \(\frac\theta{2\pi}\) est rationnel ou non. La partie C fait intervenir les racines \(N\)-ièmes de l'unité et un algorithme.
+
+\textbf{Exercice 4 --- Deux approximations de \(e\) (17 questions).} Suites adjacentes \(a_n=\sum_{k\le n}\frac1{k!}\) et \(b_n\), identification de la limite par les intégrales \(\int_0^1t^ne^{-t}\,dt\). Puis développement limité de \((1+\frac1n)^n\) et comparaison des vitesses de convergence.
+
+\textbf{Notions du programme mobilisées.} Séries de Fourier (coefficients, Dirichlet, Parseval) ; nombres complexes (exponentielle, somme géométrique, racines de l'unité) ; trigonométrie ; dérivation, critère de la dérivée seconde ; réduction des matrices (polynôme caractéristique, sous-espaces propres, critère de diagonalisabilité) ; binôme de Newton dans \({\mathcal{M}}_n(\mathbb{R})\) ; suites adjacentes, intégration par parties, encadrement d'intégrales ; développements limités, équivalents ; algorithmique élémentaire (boucle « tant que »).
+
+\textbf{Difficulté et gestion du temps.} Le sujet est long mais sans question vraiment difficile. Les exercices 2, 3 (parties A et B) et 4 (partie A) contiennent beaucoup de questions courtes et sûres à ne pas laisser passer : 2.1 à 2.6, 3.1 à 3.10, 4.A.1, 4.A.3(a)-(b).
+
+Le passage le plus exigeant est l'exercice 1 partie B, où chaque question s'appuie sur la précédente ; un candidat bloqué peut admettre les formules données par l'énoncé et poursuivre. Un partage raisonnable : environ 70 minutes pour l'exercice 1, 35 pour l'exercice 2, 35 pour l'exercice 3, 40 pour l'exercice 4.
+
+\textbf{Ce qu'en dit le jury (rapport 2026).} Le rapport ne donne ni statistique ni barème. Il indique que peu de candidats ont traité intégralement l'un des quatre exercices.
+
+Les exercices 1 et 2 ont été les plus traités, sans être menés au bout. L'exercice 3, pourtant le plus élémentaire, a été « Étonnamment peu traité », et l'exercice 4 moins que les deux premiers.
+
+Le jury relève aussi que certains candidats sautent d'un exercice à l'autre question par question : mieux vaut traiter un exercice dans l'ordre, puis passer au suivant.
+
+Les points où le rapport voit des copies perdre des points, donc ceux qui ont fait la différence :
+- le tracé de la question 1.1 (fonction impaire) ;
+- l'application de Dirichlet et de Parseval aux sommes numériques (1.4 à 1.6), et la convergence aux points de discontinuité ;
+- en exercice 2, le polynôme caractéristique, les bases des sous-espaces propres, la confusion inversible/diagonalisable, la commutation avant le binôme et la rédaction des récurrences ;
+- en exercice 3, module, argument, formes trigonométrique et exponentielle ;
+- en exercice 4, l'application du théorème des suites adjacentes, la monotonie prouvée pour tout \(n\) et les développements limités composés au voisinage de \(0\).
+
+\textbf{Deux coquilles d'énoncé} à signaler sur la copie :
+- en 1.14(a) et 1.15(c), le renvoi « question 6.(b) » désigne en fait la question \textbf{13.(b)} ;
+- en 4.A.3(d), la phrase « En déduire que les suites pour tout entier naturel non nul, \(\varphi_n=a_n\) » se lit « En déduire que, pour tout entier naturel non nul, \(\varphi_n=a_n\) ».
+
+\hypertarget{exercice-1-partie-a-calcul-de-la-suxe9rie-de-fourier-de-f}{%
+\section{\texorpdfstring{Exercice 1 --- Partie A : calcul de la série de Fourier de \(f\)}{Exercice 1 --- Partie A : calcul de la série de Fourier de f}}\label{exercice-1-partie-a-calcul-de-la-suxe9rie-de-fourier-de-f}}
+
+On identifie la fonction sur une période complète, on calcule ses coefficients par parité et intégration par parties. Puis on exploite les deux grands théorèmes (Dirichlet, Parseval) pour obtenir des sommes de séries numériques.
+
+Convention utilisée (celle de l'énoncé, où le terme constant s'écrit \(a_0\)) :
+
+\equationajustee{\begin{aligned}
+a_0&=\frac1{2\pi}\int_{-\pi}^{\pi}f,\\
+a_n&=\frac1\pi\int_{-\pi}^{\pi}f(t)\cos(nt)\,dt,\\
+b_n&=\frac1\pi\int_{-\pi}^{\pi}f(t)\sin(nt)\,dt.
+\end{aligned}}
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+\begin{indication}{1}
+
+L'énoncé ne donne \(f\) que sur \(]0,\pi[\) et en \(0\). Utilisez l'imparité pour obtenir \(f\) sur \(]-\pi,0[\), puis la périodicité.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Calculez l'expression de \(f\) sur \(]\pi,2\pi[\) en passant par \(t-2\pi\) : vous constaterez qu'une seule formule suffit sur tout \(]0,2\pi[\). Que vaut \(f(\pi)\) ?
+
+\end{indication}
+
+\hypertarget{solution}{%
+\subsubsection{Solution}\label{solution}}
+
+Pour \(t\in\,]-\pi,0[\), l'imparité donne \(f(t)=-f(-t)=-\frac{\pi+t}2\).
+
+Pour \(t\in\,]\pi,2\pi[\), la périodicité donne :
+
+\equationajustee{\begin{aligned}
+f(t)&=f(t-2\pi)\\
+&=-\frac{\pi+t-2\pi}2\\
+&=\frac{\pi-t}2.
+\end{aligned}}
+
+Enfin \(f(\pi)=f(-\pi)=-f(\pi)\) donne \(f(\pi)=0=\frac{\pi-\pi}2\) : \(f\) est continue en \(\pi\).
+
+\equationajustee{\boxed{\begin{aligned}
+f(t)&=\frac{\pi-t}2\ \text{sur } ]0,2\pi[,\\
+f(2k\pi)&=0.
+\end{aligned}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q1-dent-de-scie.pdf}
+\caption*{Figure 1 --- Graphe de f entre −4π et 4π : dent de scie de pente −1/2,
+extrémités exclues (cercles vides), f(2kπ) = 0 (points pleins)}
+\end{figure}
+
+Le graphe sur \([-4\pi,4\pi]\) est formé de quatre segments parallèles de pente \(-\frac12\), un sur chaque intervalle \(]2k\pi,2(k+1)\pi[\) (\(k=-2,-1,0,1\)).
+
+Chacun coupe l'axe des abscisses en \((2k+1)\pi\). En \(-4\pi,-2\pi,0,2\pi,4\pi\), la fonction vaut \(0\) : point isolé au milieu du saut.
+
+\begin{piege}
+
+Recopier la formule \(\frac{\pi-t}2\) par simple symétrie autour de l'axe des ordonnées donne une fonction paire (un graphe « en toit »), incompatible avec l'imparité. Contrôle : le graphe doit être symétrique par rapport à l'origine. Sur la figure, on marque les extrémités exclues par des cercles vides et la valeur \(0\) en \(2k\pi\) par un point plein.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Peu de candidats ont tracé correctement la courbe ; parfois, la fonction représentée n'est pas impaire. » Une question de cours rapide sur le papier, mais qui coûte cher si l'on va trop vite : tracez au moins deux périodes complètes et vérifiez la symétrie centrale.
+
+\end{jury}
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+\begin{indication}{1}
+
+Quelle est la parité de \(t\mapsto f(t)\cos(nt)\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+N'oubliez pas \(n=0\) : \(a_0\) a une formule propre.
+
+\end{indication}
+
+\hypertarget{solution-1}{%
+\subsubsection{Solution}\label{solution-1}}
+
+Pour \(n\ge1\), \(t\mapsto f(t)\cos(nt)\) est impaire (impaire × paire) et continue par morceaux. Son intégrale sur \([-\pi,\pi]\) est donc nulle : \(a_n=0\).
+
+Pour \(n=0\), \(a_0=\frac1{2\pi}\int_{-\pi}^{\pi}f=0\) car \(f\) est impaire.
+
+\equationajustee{\boxed{\forall n\in\mathbb{N},\ a_n=0.}}
+
+\begin{methode}
+
+Fonction impaire : tous les \(a_n\) sont nuls ; fonction paire : tous les \(b_n\) sont nuls. On l'écrit en une ligne, mais en nommant la parité de l'intégrande et la symétrie de l'intervalle.
+
+\end{methode}
+
+\hypertarget{question-3a}{%
+\subsection{Question 3(a)}\label{question-3a}}
+
+\begin{indication}{1}
+
+Intégration par parties : dérivez \(x\), primitivez \(\sin(nx)\).
+
+\end{indication}
+
+\hypertarget{solution-2}{%
+\subsubsection{Solution}\label{solution-2}}
+
+Les fonctions \(x\mapsto x\) et \(x\mapsto-\frac{\cos(nx)}n\) sont \({\mathcal{C}}^1\) sur \([0,\pi]\) :
+
+\equationajustee{\begin{aligned}
+\int_0^\pi x\sin(nx)\,dx&=\Big[-\frac{x\cos(nx)}n\Big]_0^\pi+\frac1n\int_0^\pi\cos(nx)\,dx\\
+&=-\frac{\pi\cos(n\pi)}n+\frac1{n^2}\big[\sin(nx)\big]_0^\pi.
+\end{aligned}}
+
+Avec \(\cos(n\pi)=(-1)^n\) et \(\sin(n\pi)=0\) :
+
+\equationajustee{\boxed{\int_0^\pi x\sin(nx)\,dx=-\frac{\pi(-1)^n}n.}}
+
+\hypertarget{question-3b}{%
+\subsection{Question 3(b)}\label{question-3b}}
+
+\begin{indication}{1}
+
+L'intégrande \(f(t)\sin(nt)\) est paire : ramenez \(b_n\) à une intégrale sur \([0,\pi]\), où l'expression de \(f\) est connue.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Développez \(\frac{\pi-t}2\sin(nt)\) en deux morceaux ; l'un est élémentaire, l'autre est le résultat de (a).
+
+\end{indication}
+
+\hypertarget{solution-3}{%
+\subsubsection{Solution}\label{solution-3}}
+
+\equationajustee{\begin{aligned}
+b_n&=\frac2\pi\int_0^\pi\frac{\pi-t}2\sin(nt)\,dt\\
+&=\int_0^\pi\sin(nt)\,dt-\frac1\pi\int_0^\pi t\sin(nt)\,dt\\
+&=\frac{1-(-1)^n}n+\frac{(-1)^n}n.
+\end{aligned}}
+
+\equationajustee{\boxed{\forall n\ge1,\ b_n=\frac1n.}}
+
+\begin{piege}
+
+Une erreur de signe dans l'un des deux morceaux donne un résultat de la forme \(\frac{1-2(-1)^n}n\), plausible mais faux. Vérification rapide : \(b_1=\frac2\pi\int_0^\pi\frac{\pi-t}2\sin t\,dt=1\).
+
+\end{piege}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+\begin{indication}{1}
+
+Le théorème attendu est celui de Dirichlet (convergence ponctuelle). Énoncez-le avec ses hypothèses, puis vérifiez-les pour \(f\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Distinguez les points de continuité et les points de \(2\pi\mathbb{Z}\) ; c'est pour ces derniers que la convention \(f(0)=0\) a été posée.
+
+\end{indication}
+
+\hypertarget{solution-4}{%
+\subsubsection{Solution}\label{solution-4}}
+
+\emph{Théorème de Dirichlet.} Si \(g\) est \(2\pi\)-périodique et \({\mathcal{C}}^1\) par morceaux, sa série de Fourier converge en tout point \(t\) vers \(\frac12\big(g(t^+)+g(t^-)\big)\), donc vers \(g(t)\) en tout point de continuité.
+
+\emph{Hypothèses.} \(f\) est \(2\pi\)-périodique ; sur \(]0,2\pi[\) elle coïncide avec une fonction affine, prolongeable en fonction \({\mathcal{C}}^1\) sur \([0,2\pi]\). Elle est donc \({\mathcal{C}}^1\) par morceaux.
+
+\emph{Points de continuité.} Sur \(\mathbb{R}\setminus2\pi\mathbb{Z}\), \(f\) est continue, donc \(S(t)=f(t)\).
+
+\emph{Points de discontinuité.} En \(2k\pi\), la somme est la demi-somme des limites latérales :
+
+\equationajustee{\begin{aligned}
+\frac12\big(f(0^+)+f(0^-)\big)&=\frac12\Big(\frac\pi2-\frac\pi2\Big)\\
+&=0=f(2k\pi).
+\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}
+\forall t\in\mathbb{R},\ S(t)&=\sum_{k=1}^{+\infty}\frac{\sin(kt)}k\\
+&=f(t).
+\end{aligned}}}
+
+\begin{piege}
+
+En un point de discontinuité, la série de Fourier ne converge pas « vers \(f\) » en général, mais vers la demi-somme des limites à gauche et à droite. Ici elle vaut \(0\) en \(2k\pi\), qui se trouve être la valeur posée par l'énoncé : il faut le calculer, pas l'affirmer.
+
+\end{piege}
+
+\begin{piege}
+
+Le théorème de convergence normale exige une fonction \textbf{continue} et \({\mathcal{C}}^1\) par morceaux : il ne s'applique pas ici (d'ailleurs \(\sum\frac1k\) diverge, la convergence n'est pas normale). C'est le théorème de Dirichlet qu'il faut citer.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : les théorèmes de Dirichlet et de Parseval sont en général bien énoncés, mais « la convergence aux points de discontinuité est parfois mal comprise ». Énoncé complet, vérification de chaque hypothèse, puis traitement séparé des points \(2k\pi\).
+
+\end{jury}
+
+\hypertarget{question-5a}{%
+\subsection{Question 5(a)}\label{question-5a}}
+
+\begin{indication}{1}
+
+Séparez les cas \(k=2p\) et \(k=2p+1\).
+
+\end{indication}
+
+\hypertarget{solution-5}{%
+\subsubsection{Solution}\label{solution-5}}
+
+Si \(k=2p\) (\(p\ge1\)) : \(\sin\frac{k\pi}2=\sin(p\pi)=0\).
+
+Si \(k=2p+1\) (\(p\ge0\)), avec \(p=\frac{k-1}2\) :
+
+\equationajustee{\begin{aligned}
+\sin\Big(p\pi+\frac\pi2\Big)&=\cos(p\pi)\\
+&=(-1)^p.
+\end{aligned}}
+
+\equationajustee{\boxed{\sin\Big(\frac{k\pi}2\Big)=\begin{cases}(-1)^{\frac{k-1}2}&k\text{ impair}\\0&k\text{ pair}\end{cases}}}
+
+\hypertarget{question-5b}{%
+\subsection{Question 5(b)}\label{question-5b}}
+
+\begin{indication}{1}
+
+Évaluez la relation \(S=f\) de la question 4 en un point bien choisi, où \(f\) est continue.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Avec (a), seuls les termes d'indice impair subsistent. Justifiez en une phrase le passage de la somme sur \(k\) à la somme sur \(p\).
+
+\end{indication}
+
+\hypertarget{solution-6}{%
+\subsubsection{Solution}\label{solution-6}}
+
+\(\frac\pi2\in\,]0,\pi[\) est un point de continuité, donc \(S\big(\frac\pi2\big)=f\big(\frac\pi2\big)=\frac\pi4\).
+
+D'autre part \(S\big(\frac\pi2\big)=\sum_k\frac{\sin(k\pi/2)}k\), et les termes d'indice pair sont nuls. La somme partielle d'indice \(2P+1\) vaut donc \(\sum_{p=0}^P\frac{(-1)^p}{2p+1}\).
+
+Ces sommes partielles forment une suite extraite d'une suite convergente : elles ont la même limite.
+
+\equationajustee{\boxed{\begin{aligned}
+S\Big(\frac\pi2\Big)&=\frac\pi4,\\
+\sum_{p=0}^{+\infty}\frac{(-1)^p}{2p+1}&=\frac\pi4.
+\end{aligned}}}
+
+\begin{jury}
+
+Rapport 2026 : les deux théorèmes sont en général correctement énoncés, « mais leur application pour la détermination des séries numériques n'était pas correctement faite dans certains cas, ce qui n'a pas permis d'aboutir aux résultats des sommes attendues. » Écrivez explicitement la relation \(S\big(\frac\pi2\big)=f\big(\frac\pi2\big)\), puis le terme général après simplification par 5(a).
+
+\end{jury}
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+\begin{indication}{1}
+
+Écrivez l'identité de Parseval avec la convention de l'énoncé (terme constant noté \(a_0\), sans facteur \(\frac12\)).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le membre de gauche demande \(\int_{-\pi}^\pi f^2\) : utilisez la parité de \(f^2\).
+
+\end{indication}
+
+\hypertarget{solution-7}{%
+\subsubsection{Solution}\label{solution-7}}
+
+\emph{Parseval.} Si \(g\) est \(2\pi\)-périodique et continue par morceaux :
+
+\equationajustee{\frac1{2\pi}\int_{-\pi}^{\pi}g^2=a_0^2+\frac12\sum_{n\ge1}\big(a_n^2+b_n^2\big).}
+
+\(f\) est \(2\pi\)-périodique et continue par morceaux. Comme \(f^2\) est paire :
+
+\equationajustee{\begin{aligned}
+\frac1{2\pi}\int_{-\pi}^{\pi}f^2&=\frac1\pi\int_0^\pi\frac{(\pi-t)^2}4\,dt\\
+&=\frac1{4\pi}\cdot\frac{\pi^3}3\\
+&=\frac{\pi^2}{12}.
+\end{aligned}}
+
+Le membre de droite vaut \(\frac12\sum\frac1{n^2}\), d'où :
+
+\equationajustee{\boxed{\sum_{n=1}^{+\infty}\frac1{n^2}=\frac{\pi^2}6.}}
+
+\begin{piege}
+
+Selon que la série s'écrit avec \(a_0\) ou \(\frac{a_0}2\), Parseval s'écrit \(a_0^2+\frac12\sum(\dots)\) ou \(\frac{a_0^2}4+\frac12\sum(\dots)\) (avec \(\frac1{2\pi}\int\) à gauche).
+
+Mélanger les conventions donne \(\frac{\pi^2}{12}\) ou \(\frac{\pi^2}3\) ; le résultat \(\frac{\pi^2}6\), connu, sert de contrôle.
+
+\end{piege}
+
+\begin{methode}
+
+Parseval demande moins que Dirichlet : la continuité par morceaux suffit. Pour obtenir une somme \(\sum\frac1{n^{2}}\), \(\sum\frac1{n^4}\)\ldots, on cherche une fonction dont les coefficients sont \(\frac1n\), \(\frac1{n^2}\)\ldots{}
+
+\end{methode}
+
+\hypertarget{question-7a}{%
+\subsection{Question 7(a)}\label{question-7a}}
+
+\begin{indication}{1}
+
+Déroulez la boucle à la main pour \(k=1,2,3\).
+
+\end{indication}
+
+\hypertarget{solution-8}{%
+\subsubsection{Solution}\label{solution-8}}
+
+La fonction calcule \(\sum_{k=1}^n\frac1{k^2}\). Pour \(n=3\) :
+
+\equationajustee{\begin{aligned}
+f(3)&=1+\frac14+\frac19\\
+&=\frac{36+9+4}{36}.
+\end{aligned}}
+
+\equationajustee{\boxed{f(3)=\frac{49}{36}.}}
+
+\hypertarget{question-7b}{%
+\subsection{Question 7(b)}\label{question-7b}}
+
+\begin{indication}{1}
+
+Le nombre de tours n'est pas connu à l'avance : quelle boucle faut-il ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le test de la boucle est la négation de la condition d'arrêt. Initialisez de sorte que la variable \texttt{S} contienne toujours la somme jusqu'à l'indice courant \texttt{n}.
+
+\end{indication}
+
+\hypertarget{solution-9}{%
+\subsubsection{Solution}\label{solution-9}}
+
+\begin{lstlisting}[language=Python]
+from math import pi
+
+def approx(eps):
+    cible = pi**2 / 6
+    n = 1
+    S = 1.0                      # somme des 1/k^2 pour k = 1..n
+    while abs(S - cible) > eps:
+        n = n + 1
+        S = S + 1 / (n * n)
+    return n
+\end{lstlisting}
+
+La boucle termine car \(\sum_{k\le n}\frac1{k^2}\) croît vers \(\frac{\pi^2}6\) (question 6).
+
+Essais : \texttt{approx(0.1)} renvoie \(10\), \texttt{approx(0.001)} renvoie \(1000\). Le reste \(\sum_{k>n}\frac1{k^2}\) est de l'ordre de \(\frac1n\) : il faut donc environ \(\frac1\varepsilon\) tours.
+
+\begin{piege}
+
+Avec des nombres flottants, ajouter \(\frac1{n^2}\) à une somme voisine de \(1{,}64\) ne change plus rien dès que \(n\) dépasse environ \(10^8\). Pour \(\varepsilon\) très petit, la boucle peut alors tourner indéfiniment : la terminaison mathématique ne garantit pas la terminaison numérique.
+
+\end{piege}
+
+\hypertarget{exercice-1-partie-b-extremum-de-s_n}{%
+\section{\texorpdfstring{Exercice 1 --- Partie B : extremum de \(S_n\)}{Exercice 1 --- Partie B : extremum de S\_n}}\label{exercice-1-partie-b-extremum-de-s_n}}
+
+Ici \(S_n(t)=\sum_{k=1}^n\frac{\sin(kt)}k\). On calcule \(S_n'\) sous forme close (somme géométrique), on en déduit les points critiques, puis leur nature par le signe de \(S_n''\). Outils : exponentielle complexe, équations trigonométriques, dérivée d'un quotient.
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\begin{indication}{1}
+
+\(S_n\) est une somme \textbf{finie} : aucun théorème sur les séries n'est nécessaire.
+
+\end{indication}
+
+\hypertarget{solution-10}{%
+\subsubsection{Solution}\label{solution-10}}
+
+D'après la partie A, \(S_n(t)=\sum_{k=1}^n\frac{\sin(kt)}k\). Chaque terme est dérivable de dérivée \(\cos(kt)\), et une somme finie de fonctions dérivables est dérivable :
+
+\equationajustee{\boxed{\forall t\in\mathbb{R},\ S_n'(t)=\sum_{k=1}^n\cos(kt).}}
+
+\hypertarget{question-9a}{%
+\subsection{Question 9(a)}\label{question-9a}}
+
+\begin{indication}{1}
+
+Formule d'Euler et additivité de la partie réelle.
+
+\end{indication}
+
+\hypertarget{solution-11}{%
+\subsubsection{Solution}\label{solution-11}}
+
+\(\cos(kt)=\operatorname{Re}(e^{ikt})\) et \(\operatorname{Re}(z+z')=\operatorname{Re}z+\operatorname{Re}z'\), d'où :
+
+\equationajustee{\begin{aligned}
+\sum_{k=1}^n\cos(kt)&=\sum_{k=1}^n\operatorname{Re}(e^{ikt})\\
+&=\operatorname{Re}\Big(\sum_{k=1}^ne^{ikt}\Big).
+\end{aligned}}
+
+\hypertarget{question-9b}{%
+\subsection{Question 9(b)}\label{question-9b}}
+
+\begin{indication}{1}
+
+Somme géométrique de raison \(e^{it}\) ; pourquoi faut-il \(t\notin2\pi\mathbb{Z}\) ?
+
+\end{indication}
+
+\begin{indication}{2}
+
+Technique de l'angle moitié : factorisez \(e^{i\alpha}-1\) par \(e^{i\alpha/2}\).
+
+\end{indication}
+
+\hypertarget{solution-12}{%
+\subsubsection{Solution}\label{solution-12}}
+
+Pour \(t\notin2\pi\mathbb{Z}\), \(e^{it}\neq1\), et l'on utilise \(e^{i\alpha}-1=2i\,e^{i\alpha/2}\sin\frac\alpha2\) :
+
+\equationajustee{\begin{aligned}
+\sum_{k=1}^ne^{ikt}&=e^{it}\,\frac{e^{int}-1}{e^{it}-1}\\
+&=e^{it}\,\frac{e^{int/2}\sin(nt/2)}{e^{it/2}\sin(t/2)}\\
+&=e^{i(n+1)\frac t2}\,\frac{\sin(\frac{nt}2)}{\sin(\frac t2)}.
+\end{aligned}}
+
+Le calcul est licite car \(\sin\frac t2\neq0\). Avec (a), on obtient la formule demandée.
+
+\begin{methode}
+
+L'angle moitié transforme toute somme \(\sum e^{ikt}\) en un produit « exponentielle × quotient de sinus réels » : c'est la façon standard de calculer \(\sum\cos(kt)\) et \(\sum\sin(kt)\).
+
+\end{methode}
+
+\hypertarget{question-9c}{%
+\subsection{Question 9(c)}\label{question-9c}}
+
+\begin{indication}{1}
+
+Le quotient de sinus est réel : que devient la partie réelle d'un réel fois une exponentielle ?
+
+\end{indication}
+
+\hypertarget{solution-13}{%
+\subsubsection{Solution}\label{solution-13}}
+
+\(\rho=\frac{\sin(nt/2)}{\sin(t/2)}\) est réel, donc \(\operatorname{Re}(\rho\,e^{i(n+1)t/2})=\rho\cos\frac{(n+1)t}2\). Pour \(t\notin2\pi\mathbb{Z}\) :
+
+\equationajustee{\boxed{\sum_{k=1}^n\cos(kt)=\frac{\cos(\frac{(n+1)t}2)\sin(\frac{nt}2)}{\sin(\frac t2)}.}}
+
+\hypertarget{question-10a}{%
+\subsection{Question 10(a)}\label{question-10a}}
+
+\begin{indication}{1}
+
+\(\sin u=0\iff u\in\pi\mathbb{Z}\).
+
+\end{indication}
+
+\hypertarget{solution-14}{%
+\subsubsection{Solution}\label{solution-14}}
+
+\equationajustee{\begin{aligned}
+\sin\frac{nt}2=0&\iff\frac{nt}2=m\pi\ (m\in\mathbb{Z})\\
+&\iff t=\frac{2m\pi}n\ (m\in\mathbb{Z}).
+\end{aligned}}
+
+\hypertarget{question-10b}{%
+\subsection{Question 10(b)}\label{question-10b}}
+
+\begin{indication}{1}
+
+\(\cos u=0\iff u\in\frac\pi2+\pi\mathbb{Z}\).
+
+\end{indication}
+
+\hypertarget{solution-15}{%
+\subsubsection{Solution}\label{solution-15}}
+
+\equationajustee{\begin{aligned}
+\cos\frac{(n+1)t}2=0&\iff\frac{(n+1)t}2=\frac{(2m+1)\pi}2\ (m\in\mathbb{Z})\\
+&\iff t=\frac{\pi(2m+1)}{n+1}\ (m\in\mathbb{Z}).
+\end{aligned}}
+
+\hypertarget{question-10c}{%
+\subsection{Question 10(c)}\label{question-10c}}
+
+\begin{indication}{1}
+
+La formule de 9(c) n'est valable que hors de \(2\pi\mathbb{Z}\) : traitez ces points à part avec la question 8.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Parmi les solutions de (a) et (b), lesquelles tombent dans \(2\pi\mathbb{Z}\) ? Pour la seconde famille, regardez la parité.
+
+\end{indication}
+
+\hypertarget{solution-16}{%
+\subsubsection{Solution}\label{solution-16}}
+
+En \(t=2j\pi\) : \(S_n'(t)=\sum_{k=1}^n1=n\neq0\).
+
+Hors de \(2\pi\mathbb{Z}\) : \(\sin\frac t2\neq0\), donc \(S_n'(t)=0\) si et seulement si \(\sin\frac{nt}2=0\) ou \(\cos\frac{(n+1)t}2=0\). On retire les points de \(2\pi\mathbb{Z}\) :
+- \(\frac{2m\pi}n\in2\pi\mathbb{Z}\iff m\in n\mathbb{Z}\) ;
+- \(\frac{\pi(2m+1)}{n+1}=2j\pi\iff2m+1=2j(n+1)\), impossible (impair = pair).
+
+\equationajustee{\boxed{\{S_n'=0\}=\Big\{\frac{2m\pi}n\ \Big|\ m\in\mathbb{Z}\setminus n\mathbb{Z}\Big\}\cup\Big\{\frac{\pi(2m+1)}{n+1}\ \Big|\ m\in\mathbb{Z}\Big\}.}}
+
+\begin{piege}
+
+Conclure directement depuis 9(c) ferait apparaître \(t=0\) comme point critique, alors que \(S_n'(0)=n\). La notation \(\mathbb{Z}\setminus n\mathbb{Z}\) de l'énoncé est précisément là pour l'exclure.
+
+\end{piege}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\begin{indication}{1}
+
+Traduisez \(0\le t<2\pi\) en une double inégalité sur \(m\) pour chaque famille ; attention à la borne stricte.
+
+\end{indication}
+
+\hypertarget{solution-17}{%
+\subsubsection{Solution}\label{solution-17}}
+
+\emph{Première famille.} \(0\le\frac{2m\pi}n<2\pi\iff0\le m\le n-1\), et \(m\notin n\mathbb{Z}\) retire \(m=0\) : \(1\le m\le n-1\).
+
+\emph{Seconde famille.} Pour \(m\) entier :
+
+\equationajustee{\begin{aligned}
+0\le\frac{\pi(2m+1)}{n+1}<2\pi&\iff0\le2m+1<2n+2\\
+&\iff-\frac12\le m<n+\frac12\\
+&\iff0\le m\le n.
+\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}
+t_{1,m}&=\frac{2m\pi}n,\quad 1\le m\le n-1,\\
+t_{2,m}&=\frac{\pi(2m+1)}{n+1},\quad 0\le m\le n.
+\end{aligned}}}
+
+\begin{methode}
+
+Pour savoir si les deux familles se recoupent : \(\frac{2m}n=\frac{2m'+1}{n+1}\) impose \(n\mid2m\) (\(n\) et \(n+1\) sont premiers entre eux), donc \(2m=n\).
+
+Seul \(\pi\) est commun, et seulement pour \(n\) pair : c'est le cas \(m=\frac n2\) écarté en 14(c) et 15(e).
+
+\end{methode}
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+\begin{indication}{1}
+
+Appliquez directement la question 11 avec \(n=3\).
+
+\end{indication}
+
+\hypertarget{solution-18}{%
+\subsubsection{Solution}\label{solution-18}}
+
+\(t_{1,1}=\frac{2\pi}3\) et \(t_{1,2}=\frac{4\pi}3\) ; puis \(t_{2,m}=\frac{(2m+1)\pi}4\) pour \(m=0,\dots,3\). Ces six réels sont distincts (\(n=3\) est impair).
+
+\equationajustee{\boxed{\Big\{\frac{2\pi}3,\frac{4\pi}3,\frac\pi4,\frac{3\pi}4,\frac{5\pi}4,\frac{7\pi}4\Big\}.}}
+
+Valeurs pour contrôle :
+- \(S_3(\frac\pi4)\approx1{,}443\) (maximum) ;
+- \(S_3(\frac{2\pi}3)\approx0{,}433\) (minimum) ;
+- \(S_3(\frac{3\pi}4)\approx0{,}443\) (maximum) ;
+- puis les valeurs opposées sur \(]\pi,2\pi[\), car \(S_3(2\pi-t)=-S_3(t)\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q12-s3-points-critiques.pdf}
+\caption*{Figure 2 --- S₃ et ses six points critiques entre 0 et 2π : maxima
+locaux en π/4, 3π/4, 4π/3, minima locaux en 2π/3, 5π/4, 7π/4 ; f en
+tiretés}
+\end{figure}
+
+La nature des points (maximum ou minimum local) est démontrée aux questions 14 et 15.
+
+\hypertarget{question-13a}{%
+\subsection{Question 13(a)}\label{question-13a}}
+
+\begin{indication}{1}
+
+Identifiez \(A\) et \(B\) dans la formule donnée à partir du numérateur de 9(c) : \(\sin\) porte \(A\), \(\cos\) porte \(B\).
+
+\end{indication}
+
+\hypertarget{solution-19}{%
+\subsubsection{Solution}\label{solution-19}}
+
+On pose \(A=\frac{nt}2\) et \(B=\frac{(n+1)t}2\). Alors \(A+B=\big(n+\frac12\big)t\) et \(A-B=-\frac t2\), donc :
+
+\equationajustee{2\cos B\sin A=\sin\Big(\Big(n+\frac12\Big)t\Big)-\sin\frac t2.}
+
+En multipliant numérateur et dénominateur de 9(c) par \(2\), pour \(t\notin2\pi\mathbb{Z}\) :
+
+\equationajustee{\boxed{S_n'(t)=\frac{\sin((n+\frac12)t)-\sin(\frac t2)}{2\sin(\frac t2)}.}}
+
+\begin{piege}
+
+Intervertir \(A\) et \(B\) donne \(+\sin\frac t2\) au numérateur. Contrôle : la bonne formule tend vers \(n\) quand \(t\to0\), comme \(S_n'(0)=n\).
+
+\end{piege}
+
+\hypertarget{question-13b}{%
+\subsection{Question 13(b)}\label{question-13b}}
+
+\begin{indication}{1}
+
+Dérivez le quotient \(\frac ND\), puis utilisez ce que signifie « \(t\) est un point critique ».
+
+\end{indication}
+
+\hypertarget{solution-20}{%
+\subsubsection{Solution}\label{solution-20}}
+
+Sur \(\mathbb{R}\setminus2\pi\mathbb{Z}\), \(D\) ne s'annule pas et :
+
+\equationajustee{S_n''=\frac{N'D-ND'}{D^2}.}
+
+En un point critique, \(\frac{N(t)}{D(t)}=0\), donc \(N(t)=0\) et :
+
+\equationajustee{\boxed{S_n''(t)=\frac{N'(t)}{D(t)}.}}
+
+\begin{methode}
+
+En un point où un quotient \(\frac ND\) s'annule, sa dérivée vaut simplement \(\frac{N'}D\) : cela évite de dériver deux fois une expression lourde.
+
+\end{methode}
+
+\hypertarget{question-14a}{%
+\subsection{Question 14(a)}\label{question-14a}}
+
+\begin{indication}{1}
+
+Calculez \(N'(t)\), puis simplifiez \(\big(n+\frac12\big)\frac{2m\pi}n\) modulo \(2\pi\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Le renvoi de l'énoncé à « la question 6.(b) » est une coquille : c'est la question 13.(b) qui sert.
+
+\end{indication}
+
+\hypertarget{solution-21}{%
+\subsubsection{Solution}\label{solution-21}}
+
+On dérive \(N\) :
+
+\equationajustee{N'(t)=\Big(n+\frac12\Big)\cos\Big(\Big(n+\frac12\Big)t\Big)-\frac12\cos\frac t2.}
+
+En \(t_{1,m}\) : \(\big(n+\frac12\big)t_{1,m}=2m\pi+\frac{m\pi}n\) et \(\frac{t_{1,m}}2=\frac{m\pi}n\), donc :
+
+\equationajustee{\begin{aligned}
+N'(t_{1,m})&=\Big(n+\frac12\Big)\cos\frac{m\pi}n-\frac12\cos\frac{m\pi}n\\
+&=n\cos\frac{m\pi}n,\\
+D(t_{1,m})&=2\sin\frac{m\pi}n.
+\end{aligned}}
+
+\(t_{1,m}\) est critique et hors de \(2\pi\mathbb{Z}\) ; par 13(b) :
+
+\equationajustee{\boxed{S_n''(t_{1,m})=\frac n2\,\frac{\cos(\frac{m\pi}n)}{\sin(\frac{m\pi}n)}.}}
+
+\hypertarget{question-14b}{%
+\subsection{Question 14(b)}\label{question-14b}}
+
+\begin{indication}{1}
+
+Dans quel intervalle se trouve \(\frac{m\pi}n\) ? Quel est alors le signe du sinus ?
+
+\end{indication}
+
+\hypertarget{solution-22}{%
+\subsubsection{Solution}\label{solution-22}}
+
+\(1\le m\le n-1\) donne \(\frac{m\pi}n\in\,]0,\pi[\), donc \(\sin\frac{m\pi}n>0\).
+
+Sur \(]0,\pi[\), \(\cos u>0\iff u<\frac\pi2\) et \(\cos u<0\iff u>\frac\pi2\). Or \(\frac{m\pi}n<\frac\pi2\iff m<\frac n2\).
+
+\equationajustee{\boxed{\begin{aligned}
+S_n''(t_{1,m})&>0\text{ si } m<\tfrac n2,\\
+S_n''(t_{1,m})&<0\text{ si } m>\tfrac n2.
+\end{aligned}}}
+
+\hypertarget{question-14c}{%
+\subsection{Question 14(c)}\label{question-14c}}
+
+\begin{indication}{1}
+
+Critère de la dérivée seconde en un point critique.
+
+\end{indication}
+
+\hypertarget{solution-23}{%
+\subsubsection{Solution}\label{solution-23}}
+
+Si \(S_n'(t_0)=0\) et \(S_n''(t_0)>0\), la formule de Taylor-Young donne :
+
+\equationajustee{S_n(t)-S_n(t_0)=\frac{S_n''(t_0)}2(t-t_0)^2+o((t-t_0)^2).}
+
+Cette quantité est strictement positive au voisinage de \(t_0\) (sauf en \(t_0\)) : minimum local strict. De même, \(S_n''(t_0)<0\) donne un maximum local strict.
+
+\equationajustee{\boxed{t_{1,m}:\ \text{minimum local si } m<\tfrac n2,\ \text{maximum local si } m>\tfrac n2.}}
+
+\begin{piege}
+
+\(S_n''>0\) correspond à un \textbf{minimum} (fonction localement convexe). Pour \(m=\frac n2\) (\(n\) pair), \(S_n''(\pi)=0\) et le critère ne conclut pas ; en fait, \(S_n(2\pi-t)=-S_n(t)\) montre que \(\pi\) est un centre de symétrie du graphe, donc pas un extremum.
+
+\end{piege}
+
+\hypertarget{question-15a}{%
+\subsection{Question 15(a)}\label{question-15a}}
+
+\begin{indication}{1}
+
+Écrivez \(n+\frac12=(n+1)-\frac12\) avant de multiplier par \(t_{2,m}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+\(\cos\big((2m+1)\pi-x\big)\) : développez, ou pensez à \(\cos(\pi-x)\) et à la \(2\pi\)-périodicité.
+
+\end{indication}
+
+\hypertarget{solution-24}{%
+\subsubsection{Solution}\label{solution-24}}
+
+\equationajustee{\begin{aligned}
+\Big(n+\frac12\Big)t_{2,m}&=\big((n+1)-\tfrac12\big)\frac{\pi(2m+1)}{n+1}\\
+&=\pi(2m+1)-\frac{\pi(2m+1)}{2(n+1)}.
+\end{aligned}}
+
+Avec \(\cos((2m+1)\pi)=-1\) et \(\sin((2m+1)\pi)=0\), on a \(\cos\big((2m+1)\pi-x\big)=-\cos x\) :
+
+\equationajustee{\boxed{\cos\Big(\Big(n+\frac12\Big)t_{2,m}\Big)=-\cos\Big(\frac{\pi(2m+1)}{2(n+1)}\Big).}}
+
+\hypertarget{question-15b}{%
+\subsection{Question 15(b)}\label{question-15b}}
+
+\begin{indication}{1}
+
+Remarquez que \(\frac{t_{2,m}}2\) est exactement l'angle qui apparaît en (a).
+
+\end{indication}
+
+\hypertarget{solution-25}{%
+\subsubsection{Solution}\label{solution-25}}
+
+Avec \(x_m=\frac{\pi(2m+1)}{2(n+1)}=\frac{t_{2,m}}2\) et la question (a) :
+
+\equationajustee{\begin{aligned}
+N'(t_{2,m})&=\Big(n+\frac12\Big)(-\cos x_m)-\frac12\cos x_m\\
+&=-(n+1)\cos x_m.
+\end{aligned}}
+
+\equationajustee{\boxed{N'(t_{2,m})=-(n+1)\cos\Big(\frac{\pi(2m+1)}{2(n+1)}\Big).}}
+
+\hypertarget{question-15c}{%
+\subsection{Question 15(c)}\label{question-15c}}
+
+\begin{indication}{1}
+
+Même démarche qu'en 14(a) : vérifiez que 13(b) s'applique, puis calculez \(D(t_{2,m})\).
+
+\end{indication}
+
+\hypertarget{solution-26}{%
+\subsubsection{Solution}\label{solution-26}}
+
+\(t_{2,m}\) est critique et n'appartient pas à \(2\pi\mathbb{Z}\) (question 10(c)) ; de plus \(D(t_{2,m})=2\sin x_m\). Par 13(b) :
+
+\equationajustee{\boxed{S_n''(t_{2,m})=-\frac{n+1}2\,\frac{\cos(\frac{\pi(2m+1)}{2(n+1)})}{\sin(\frac{\pi(2m+1)}{2(n+1)})}.}}
+
+\hypertarget{question-15d}{%
+\subsection{Question 15(d)}\label{question-15d}}
+
+\begin{indication}{1}
+
+Encadrez \(x_m\) à l'aide de \(0\le m\le n\), puis comparez \(x_m\) à \(\frac\pi2\).
+
+\end{indication}
+
+\hypertarget{solution-27}{%
+\subsubsection{Solution}\label{solution-27}}
+
+\(1\le2m+1\le2n+1<2(n+1)\) donne \(x_m\in\,]0,\pi[\) et \(\sin x_m>0\).
+
+Le signe de \(S_n''(t_{2,m})\) est l'opposé de celui de \(\cos x_m\). Or \(\cos x_m>0\iff2m+1<n+1\iff m<\frac n2\), et \(\cos x_m<0\iff m>\frac n2\).
+
+\equationajustee{\boxed{\begin{aligned}
+S_n''(t_{2,m})&<0\text{ si } m<\tfrac n2,\\
+S_n''(t_{2,m})&>0\text{ si } m>\tfrac n2.
+\end{aligned}}}
+
+\hypertarget{question-15e}{%
+\subsection{Question 15(e)}\label{question-15e}}
+
+\begin{indication}{1}
+
+Même critère qu'en 14(c) ; attention, les conclusions s'inversent.
+
+\end{indication}
+
+\hypertarget{solution-28}{%
+\subsubsection{Solution}\label{solution-28}}
+
+\equationajustee{\boxed{t_{2,m}:\ \text{maximum local si } m<\tfrac n2,\ \text{minimum local si } m>\tfrac n2.}}
+
+Bilan de la partie : sur \(]0,\pi[\), maxima en \(t_{2,m}\) et minima en \(t_{1,m}\) alternent, en commençant par le maximum \(t_{2,0}=\frac\pi{n+1}\) ; sur \(]\pi,2\pi[\), c'est l'inverse.
+
+\begin{methode}
+
+Le premier maximum \(t_{2,0}=\frac\pi{n+1}\) se rapproche de \(0\) quand \(n\) grandit, et \(S_n(\frac\pi{n+1})\) tend vers \(\int_0^\pi\frac{\sin u}u\,du\approx1{,}852\), nettement au-dessus de \(\frac\pi2\approx1{,}571\) (phénomène de Gibbs, hors programme). Cela illustre pourquoi la convergence de la question 4 n'est pas uniforme.
+
+\end{methode}
+
+\hypertarget{exercice-2-partie-a-ruxe9duction-et-puissances-de-a}{%
+\section{\texorpdfstring{Exercice 2 --- Partie A : réduction et puissances de \(A\)}{Exercice 2 --- Partie A : réduction et puissances de A}}\label{exercice-2-partie-a-ruxe9duction-et-puissances-de-a}}
+
+\(A=\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\end{pmatrix}\). On réduit \(A\) par la méthode générale (polynôme caractéristique, sous-espaces propres), puis on calcule \(A^n\) par une autre voie : l'écriture \(A=B-I_3\) et le binôme de Newton.
+
+\hypertarget{question-1a}{%
+\subsection{Question 1(a)}\label{question-1a}}
+
+\begin{indication}{1}
+
+Annoncez votre convention : \(\det(XI_3-A)\) ou \(\det(A-XI_3)\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Les sommes des lignes de \(XI_3-A\) sont toutes égales : ajoutez toutes les colonnes à la première pour faire apparaître un facteur commun.
+
+\end{indication}
+
+\hypertarget{solution-29}{%
+\subsubsection{Solution}\label{solution-29}}
+
+On ajoute les colonnes 2 et 3 à la colonne 1, on factorise \(X-2\), puis on retranche la ligne 1 aux lignes 2 et 3 :
+
+\equationajustee{\begin{aligned}
+\chi_A(X)&=\det(XI_3-A)\\
+&=\begin{vmatrix}X&-1&-1\\-1&X&-1\\-1&-1&X\end{vmatrix}\\
+&=(X-2)\begin{vmatrix}1&-1&-1\\1&X&-1\\1&-1&X\end{vmatrix}\\
+&=(X-2)\begin{vmatrix}1&-1&-1\\0&X+1&0\\0&0&X+1\end{vmatrix}.
+\end{aligned}}
+
+\equationajustee{\boxed{\chi_A(X)=X^3-3X-2=(X-2)(X+1)^2.}}
+
+Avec l'autre convention, \(\det(A-XI_3)=-X^3+3X+2\).
+
+\begin{piege}
+
+Pour une matrice \(3\times3\), le polynôme caractéristique est de degré \(3\) : un résultat de degré \(2\) signale un déterminant mal développé. Le rapport 2026 relève que, parfois, « le polynôme caractéristique n'était pas de dimension 3 » (comprendre : de degré 3).
+
+\end{piege}
+
+\begin{methode}
+
+Contrôles rapides sans calculatrice : la somme des valeurs propres (avec multiplicité) vaut la trace, ici \(-1-1+2=0=\operatorname{tr}A\) ; leur produit vaut le déterminant, \((-1)^2\cdot2=2=\det A\).
+
+\end{methode}
+
+\hypertarget{question-1b}{%
+\subsection{Question 1(b)}\label{question-1b}}
+
+\begin{indication}{1}
+
+Lisez les racines sur la forme factorisée.
+
+\end{indication}
+
+\hypertarget{solution-30}{%
+\subsubsection{Solution}\label{solution-30}}
+
+\equationajustee{\boxed{\begin{aligned}
+\lambda_1&=-1\ \text{(\text{multiplicité} 2)},\\
+\lambda_2&=2\ \text{(\text{multiplicité} 1)}.
+\end{aligned}}}
+
+\hypertarget{question-2a}{%
+\subsection{Question 2(a)}\label{question-2a}}
+
+\begin{indication}{1}
+
+Résolvez \((A-2I_3)X=0\) ; les différences de lignes simplifient beaucoup.
+
+\end{indication}
+
+\hypertarget{solution-31}{%
+\subsubsection{Solution}\label{solution-31}}
+
+\((x,y,z)\in E_2\) si et seulement si :
+
+\equationajustee{\begin{cases}-2x+y+z=0\\x-2y+z=0\\x+y-2z=0\end{cases}}
+
+La différence des deux premières équations donne \(x=y\), celle des deux dernières \(y=z\) ; réciproquement \((1,1,1)\) convient.
+
+\equationajustee{\boxed{\begin{aligned}
+E_2&=\operatorname{Vect}\big((1,1,1)^T\big),\\
+\dim E_2&=1.
+\end{aligned}}}
+
+\hypertarget{question-2b}{%
+\subsection{Question 2(b)}\label{question-2b}}
+
+\begin{indication}{1}
+
+Écrivez \(A+I_3\) : ses lignes ont une forme très particulière.
+
+\end{indication}
+
+\hypertarget{solution-32}{%
+\subsubsection{Solution}\label{solution-32}}
+
+\(A+I_3\) a ses trois lignes égales à \((1\ 1\ 1)\) ; elle est de rang \(1\). \(E_{-1}\) est le plan d'équation \(x+y+z=0\).
+
+En écrivant \(x=-y-z\), on obtient \((x,y,z)=-y(1,-1,0)-z(1,0,-1)\), d'où une base :
+
+\equationajustee{\boxed{\begin{aligned}
+E_{-1}&=\operatorname{Vect}\big((1,-1,0)^T,(1,0,-1)^T\big),\\
+\dim E_{-1}&=2.
+\end{aligned}}}
+
+\begin{jury}
+
+Rapport 2026 : pour les sous-espaces propres, « certains ne calculent que le rang avec le théorème du rang et ne donnent pas les vecteurs de base. » Le théorème du rang donne la dimension, pas le sous-espace : déterminer \(E_\lambda\) veut dire en donner une base explicite.
+
+\end{jury}
+
+\hypertarget{question-2c}{%
+\subsection{Question 2(c)}\label{question-2c}}
+
+\begin{indication}{1}
+
+Énoncez un critère de diagonalisabilité fondé sur les dimensions des sous-espaces propres.
+
+\end{indication}
+
+\hypertarget{solution-33}{%
+\subsubsection{Solution}\label{solution-33}}
+
+\(\dim E_{-1}+\dim E_2=3\) : la somme des dimensions des sous-espaces propres vaut la taille de la matrice. Donc \textbf{\(A\) est diagonalisable}, avec :
+
+\equationajustee{\begin{aligned}
+P&=\begin{pmatrix}1&1&1\\-1&0&1\\0&-1&1\end{pmatrix},\\
+D&=\operatorname{diag}(-1,-1,2),\\
+A&=PDP^{-1}.
+\end{aligned}}
+
+\begin{piege}
+
+Le critère « \(\chi_A\) scindé à racines simples » ne s'applique pas (\(-1\) est double) : il faut bien passer par la dimension de \(E_{-1}\).
+
+\end{piege}
+
+\begin{piege}
+
+Inversible et diagonalisable sont deux notions indépendantes. Ici \(A\) est inversible (\(0\) n'est pas valeur propre), mais ce n'est pas cela qui la rend diagonalisable : \(\begin{pmatrix}1&1\\0&1\end{pmatrix}\) est inversible et non diagonalisable. Le rapport 2026 note que « quelques étudiants confondent inversible/diagonalisable ».
+
+\end{piege}
+
+\hypertarget{question-3a-1}{%
+\subsection{Question 3(a)}\label{question-3a-1}}
+
+\begin{indication}{1}
+
+Comparez coefficient par coefficient.
+
+\end{indication}
+
+\hypertarget{solution-34}{%
+\subsubsection{Solution}\label{solution-34}}
+
+\(B-I_3\) a des \(0\) sur la diagonale et des \(1\) ailleurs : c'est \(A\). \(\boxed{A=B-I_3.}\)
+
+\hypertarget{question-3b-1}{%
+\subsection{Question 3(b)}\label{question-3b-1}}
+
+\begin{indication}{1}
+
+La formule du binôme pour des matrices exige une hypothèse : laquelle ? Vérifiez-la ici.
+
+\end{indication}
+
+\hypertarget{solution-35}{%
+\subsubsection{Solution}\label{solution-35}}
+
+\(I_3\) commute avec toute matrice : \(B\) et \(I_3\) commutent, donc \(B\) et \(-I_3\) aussi.
+
+La formule du binôme s'applique donc à \(A^n=(B+(-I_3))^n\), et \((-I_3)^{n-k}=(-1)^{n-k}I_3\) :
+
+\equationajustee{\boxed{A^n=\sum_{k=0}^n\binom nk(-1)^{n-k}B^k.}}
+
+\begin{jury}
+
+Rapport 2026 : « Il faut préciser que \(B\) et \(I\) commutent pour appliquer le binôme de Newton. » L'énoncé demande de justifier l'utilisation de la formule : c'est cette phrase qui est évaluée.
+
+\end{jury}
+
+\hypertarget{question-3c}{%
+\subsection{Question 3(c)}\label{question-3c}}
+
+\begin{indication}{1}
+
+Calculez \(B^2\) directement, puis faites une récurrence sur \(k\ge1\).
+
+\end{indication}
+
+\hypertarget{solution-36}{%
+\subsubsection{Solution}\label{solution-36}}
+
+Chaque coefficient de \(B^2\) vaut \(1+1+1=3\), donc \(B^2=3B\).
+
+Montrons par récurrence sur \(k\ge1\) la propriété \(\mathcal{P}(k)\) : « \(B^k=3^{k-1}B\) ».
+
+\emph{Initialisation.} \(B^1=B=3^0B\).
+
+\emph{Hérédité.} Si \(\mathcal{P}(k)\) est vraie pour un \(k\ge1\), alors :
+
+\equationajustee{\begin{aligned}
+B^{k+1}&=B^kB=3^{k-1}B^2\\
+&=3^{k-1}\cdot3B=3^kB.
+\end{aligned}}
+
+\emph{Conclusion.} \(\mathcal{P}(k)\) est vraie pour tout \(k\ge1\).
+
+\equationajustee{\boxed{\forall k\ge1,\ B^k=3^{k-1}B.}}
+
+\begin{jury}
+
+Rapport 2026 : « Les récurrences ne sont pas toujours bien rédigées, voire complétement oubliées. » Nommez la propriété, rédigez l'initialisation et l'hérédité, et concluez : vérifier quelques rangs puis généraliser ne vaut pas preuve.
+
+\end{jury}
+
+\hypertarget{question-3d}{%
+\subsection{Question 3(d)}\label{question-3d}}
+
+\begin{indication}{1}
+
+La formule de (c) est fausse pour \(k=0\) : isolez ce terme avant de l'utiliser.
+
+\end{indication}
+
+\hypertarget{solution-37}{%
+\subsubsection{Solution}\label{solution-37}}
+
+Pour \(n\ge1\), le terme \(k=0\) vaut \((-1)^nI_3\), et les autres valent \(\binom nk(-1)^{n-k}3^{k-1}B\) :
+
+\equationajustee{\boxed{A^n=(-1)^nI_3+\Big(\sum_{k=1}^n\binom nk3^{k-1}(-1)^{n-k}\Big)B.}}
+
+\hypertarget{question-3e}{%
+\subsection{Question 3(e)}\label{question-3e}}
+
+\begin{indication}{1}
+
+Reconnaissez le développement de \((3+(-1))^n\), auquel il manque un terme et un facteur.
+
+\end{indication}
+
+\hypertarget{solution-38}{%
+\subsubsection{Solution}\label{solution-38}}
+
+\equationajustee{\begin{aligned}
+\sum_{k=0}^n\binom nk3^k(-1)^{n-k}&=(3-1)^n\\
+&=2^n.
+\end{aligned}}
+
+On retire le terme \(k=0\), égal à \((-1)^n\), et on divise par \(3\) :
+
+\equationajustee{\boxed{\sum_{k=1}^n\binom nk3^{k-1}(-1)^{n-k}=\frac13\big(2^n-(-1)^n\big).}}
+
+\hypertarget{question-3f}{%
+\subsection{Question 3(f)}\label{question-3f}}
+
+\begin{indication}{1}
+
+Reportez (e) dans (d) et lisez les coefficients diagonaux et non diagonaux. L'énoncé dit « pour tout \(n\in\mathbb{N}\) » : et \(n=0\) ?
+
+\end{indication}
+
+\hypertarget{solution-39}{%
+\subsubsection{Solution}\label{solution-39}}
+
+Pour \(n\ge1\) :
+
+\equationajustee{A^n=(-1)^nI_3+\frac{2^n-(-1)^n}3B.}
+
+On lit les coefficients diagonaux et non diagonaux :
+
+\equationajustee{\boxed{\begin{aligned}
+a_n&=\frac{2^n+2(-1)^n}3,\\
+b_n&=\frac{2^n-(-1)^n}3.
+\end{aligned}}}
+
+Pour \(n=0\), ces formules donnent \(a_0=1\) et \(b_0=0\), soit \(A^0=I_3\) : elles valent pour tout \(n\in\mathbb{N}\).
+
+Contrôle : \(a_1=0\) et \(b_1=1\) redonnent \(A\) ; \(a_2=2\) et \(b_2=1\) redonnent \(A^2=B+I_3\).
+
+\begin{methode}
+
+Vérifier une formule de \(A^n\) sur \(n=0,1,2\) coûte quelques secondes et détecte la plupart des erreurs de signe.
+
+\end{methode}
+
+\hypertarget{exercice-2-partie-b-systuxe8me-ruxe9current}{%
+\section{Exercice 2 --- Partie B : système récurrent}\label{exercice-2-partie-b-systuxe8me-ruxe9current}}
+
+On traduit le système en \(X_{n+1}=AX_n\) et on réutilise \(A^n\).
+
+\hypertarget{question-4-1}{%
+\subsection{Question 4}\label{question-4-1}}
+
+\begin{indication}{1}
+
+Calculez le produit \(AX_n\) ligne par ligne.
+
+\end{indication}
+
+\hypertarget{solution-40}{%
+\subsubsection{Solution}\label{solution-40}}
+
+\equationajustee{\begin{aligned}
+AX_n&=\begin{pmatrix}v_n+w_n\\u_n+w_n\\u_n+v_n\end{pmatrix}\\
+&=X_{n+1}.
+\end{aligned}}
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+\begin{indication}{1}
+
+Récurrence, initialisée à \(n=0\) avec \(A^0=I_3\).
+
+\end{indication}
+
+\hypertarget{solution-41}{%
+\subsubsection{Solution}\label{solution-41}}
+
+Montrons par récurrence sur \(n\in\mathbb{N}\) la propriété « \(X_n=A^nX_0\) ».
+
+\emph{Initialisation.} \(A^0X_0=I_3X_0=X_0\).
+
+\emph{Hérédité.} Si \(X_n=A^nX_0\), la question 4 donne \(X_{n+1}=AX_n=A^{n+1}X_0\).
+
+\emph{Conclusion.} \(\boxed{\forall n\in\mathbb{N},\ X_n=A^nX_0.}\)
+
+\hypertarget{question-6-1}{%
+\subsection{Question 6}\label{question-6-1}}
+
+\begin{indication}{1}
+
+Utilisez 3(f), ou remarquez que \(X_0\) est un vecteur propre de \(A\).
+
+\end{indication}
+
+\hypertarget{solution-42}{%
+\subsubsection{Solution}\label{solution-42}}
+
+Chaque ligne de \(A^n\) a pour somme \(a_n+2b_n\), donc \(X_n=(a_n+2b_n)\begin{pmatrix}1\\1\\1\end{pmatrix}\), avec :
+
+\equationajustee{\begin{aligned}
+a_n+2b_n&=\frac{3\cdot2^n}3\\
+&=2^n.
+\end{aligned}}
+
+\equationajustee{\boxed{\begin{aligned}
+X_n&=2^n\begin{pmatrix}1\\1\\1\end{pmatrix},\\
+u_n=v_n=w_n&=2^n.
+\end{aligned}}}
+
+Contrôle : \(AX_0=2X_0\) (\(X_0\in E_2\)), donc \(A^nX_0=2^nX_0\).
+
+\begin{methode}
+
+Quand la donnée initiale est un vecteur propre, l'itéré \(A^nX_0\) est immédiat : \(\lambda^nX_0\). Plus généralement, on décompose \(X_0\) sur une base de vecteurs propres.
+
+\end{methode}
+
+\hypertarget{exercice-3-partie-a-uxe9tude-de-la-transformation}{%
+\section{Exercice 3 --- Partie A : étude de la transformation}\label{exercice-3-partie-a-uxe9tude-de-la-transformation}}
+
+\(f(z)=\lambda z\) avec \(|\lambda|=1\), \(\lambda\neq1\), \(\lambda=e^{i\theta}\) : c'est la rotation de centre \(O\) et d'angle \(\theta\). Les quatre questions reposent sur les propriétés du module et de l'argument.
+
+\hypertarget{question-1-1}{%
+\subsection{Question 1}\label{question-1-1}}
+
+\begin{indication}{1}
+
+Le module d'un produit est le produit des modules.
+
+\end{indication}
+
+\hypertarget{solution-43}{%
+\subsubsection{Solution}\label{solution-43}}
+
+\(|f(z)|=|\lambda|\,|z|=|z|\).
+
+\hypertarget{question-2-1}{%
+\subsection{Question 2}\label{question-2-1}}
+
+\begin{indication}{1}
+
+Ne divisez pas par \(z\) : regroupez tout dans un membre et factorisez.
+
+\end{indication}
+
+\hypertarget{solution-44}{%
+\subsubsection{Solution}\label{solution-44}}
+
+\equationajustee{\begin{aligned}
+f(z)=z&\iff(\lambda-1)z=0\\
+&\iff z=0,
+\end{aligned}}
+
+car \(\lambda\neq1\). \textbf{L'unique solution est \(z=0\).}
+
+\begin{piege}
+
+Diviser par \(z\) conduit à « \(\lambda=1\), impossible, donc pas de solution » et fait perdre la solution \(z=0\).
+
+\end{piege}
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+\begin{indication}{1}
+
+Écrivez \(z\) sous forme trigonométrique ; quel cas faut-il exclure ?
+
+\end{indication}
+
+\hypertarget{solution-45}{%
+\subsubsection{Solution}\label{solution-45}}
+
+Pour \(z\neq0\), on écrit \(z=|z|e^{i\varphi}\) (forme exponentielle). Alors :
+
+\equationajustee{f(z)=|z|e^{i(\varphi+\theta)},}
+
+avec \(|z|>0\) : c'est la forme exponentielle de \(f(z)\), de module \(|z|\) et d'argument \(\varphi+\theta\).
+
+\equationajustee{\boxed{\arg f(z)\equiv\arg z+\theta\ [2\pi]}}
+
+Pour \(z=0\), l'argument n'est pas défini.
+
+\begin{piege}
+
+L'argument se lit sur une écriture \(re^{i\alpha}\) avec \(r>0\) : si le coefficient devant l'exponentielle est négatif, l'argument est \(\alpha+\pi\). Le module multiplie, l'argument s'ajoute.
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : l'exercice 3 a été « Étonnamment peu traité, avec des incohérences sur la notion de module et argument qui devraient être maitrisées. » Le jury ajoute : « Il y a une méconnaissance de la forme trigonométrique et de la forme exponentielle. » Ces questions sont parmi les plus rentables du sujet.
+
+\end{jury}
+
+\hypertarget{question-4-2}{%
+\subsection{Question 4}\label{question-4-2}}
+
+\begin{indication}{1}
+
+Paramétrez \(D\) par \(r\ge0\) et appliquez \(f\).
+
+\end{indication}
+
+\hypertarget{solution-46}{%
+\subsubsection{Solution}\label{solution-46}}
+
+\(D=\{r\mid r\ge0\}\), donc \(f(D)=\{re^{i\theta}\mid r\ge0\}\).
+
+C'est \textbf{la demi-droite fermée d'origine \(O\), dirigée par \(e^{i\theta}\)}, image de \(D\) par la rotation de centre \(O\) et d'angle \(\theta\).
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ex3-q4-image-demi-droite.pdf}
+\caption*{Figure 3 --- Image de la demi-droite D par f : la demi-droite f(D)
+d'origine O, tournée de θ ; chaque point r va en r·e\^{}(iθ)}
+\end{figure}
+
+Sur la copie, on attend : le demi-axe \(D\), la demi-droite \(f(D)\), l'arc qui marque l'angle \(\theta\).
+
+On peut ajouter quelques points \(r\) reliés à leur image \(re^{i\theta}\) par des arcs de cercle de centre \(O\) (le module est conservé).
+
+\hypertarget{exercice-3-partie-b-uxe9tude-de-la-suite-z_n}{%
+\section{\texorpdfstring{Exercice 3 --- Partie B : étude de la suite \((z_n)\)}{Exercice 3 --- Partie B : étude de la suite (z\_n)}}\label{exercice-3-partie-b-uxe9tude-de-la-suite-z_n}}
+
+La suite est géométrique de raison \(\lambda\) ; sa périodicité dépend de l'existence d'une puissance de \(\lambda\) égale à \(1\).
+
+\hypertarget{question-5-1}{%
+\subsection{Question 5}\label{question-5-1}}
+
+\begin{indication}{1}
+
+Récurrence (ou cours sur les suites géométriques).
+
+\end{indication}
+
+\hypertarget{solution-47}{%
+\subsubsection{Solution}\label{solution-47}}
+
+Montrons par récurrence sur \(n\in\mathbb{N}\) la propriété « \(z_n=\lambda^nz_0\) ».
+
+\emph{Initialisation.} \(\lambda^0z_0=z_0\).
+
+\emph{Hérédité.} Si \(z_n=\lambda^nz_0\), alors \(z_{n+1}=\lambda z_n=\lambda^{n+1}z_0\).
+
+\emph{Conclusion.} \(\boxed{\forall n\in\mathbb{N},\ z_n=\lambda^nz_0.}\)
+
+\hypertarget{question-6-2}{%
+\subsection{Question 6}\label{question-6-2}}
+
+\begin{indication}{1}
+
+Module d'une puissance.
+
+\end{indication}
+
+\hypertarget{solution-48}{%
+\subsubsection{Solution}\label{solution-48}}
+
+\(|z_n|=|\lambda|^n|z_0|=|z_0|\).
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{indication}{1}
+
+Traduisez géométriquement la question 6 : distance du point \(M_n\) à l'origine.
+
+\end{indication}
+
+\hypertarget{solution-49}{%
+\subsubsection{Solution}\label{solution-49}}
+
+\(OM_n=|z_n|=|z_0|>0\) : \textbf{le point d'affixe \(z_n\) est sur le cercle de centre \(O\) et de rayon \(|z_0|\).}
+
+\hypertarget{question-8a}{%
+\subsection{Question 8(a)}\label{question-8a}}
+
+\begin{indication}{1}
+
+Écrivez \(\frac\theta{2\pi}=\frac ap\) et calculez \(\lambda^p\).
+
+\end{indication}
+
+\hypertarget{solution-50}{%
+\subsubsection{Solution}\label{solution-50}}
+
+On écrit \(\frac\theta{2\pi}=\frac ap\) avec \(a\in\mathbb{Z}\) et \(p\in{\mathbb{N}}^*\) (dénominateur choisi positif). Alors :
+
+\equationajustee{\begin{aligned}
+\lambda^p&=e^{ip\theta}\\
+&=e^{2ia\pi}=1.
+\end{aligned}}
+
+\hypertarget{question-8b}{%
+\subsection{Question 8(b)}\label{question-8b}}
+
+\begin{indication}{1}
+
+Calculez \(z_{n+p}\) avec la question 5.
+
+\end{indication}
+
+\hypertarget{solution-51}{%
+\subsubsection{Solution}\label{solution-51}}
+
+\(z_{n+p}=\lambda^p\lambda^nz_0=z_n\) pour tout \(n\) : \textbf{\((z_n)\) est périodique de période \(p\).}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\begin{indication}{1}
+
+Raisonnez par l'absurde : il suffit d'écrire la périodicité en \(n=0\).
+
+\end{indication}
+
+\hypertarget{solution-52}{%
+\subsubsection{Solution}\label{solution-52}}
+
+Si \(p\ge1\) est une période, \(z_p=z_0\), soit \((\lambda^p-1)z_0=0\). Comme \(z_0\neq0\), \(\lambda^p=1\).
+
+Donc \(p\theta=2k\pi\) pour un \(k\in\mathbb{Z}\), et \(\frac\theta{2\pi}=\frac kp\in\mathbb{Q}\) : contradiction.
+
+\textbf{\((z_n)\) n'est pas périodique} (pour \(z_0=0\), la suite serait nulle donc périodique).
+
+\begin{methode}
+
+Les questions 8 et 9 établissent ensemble, pour \(z_0\neq0\) : \((z_n)\) périodique \(\iff\frac\theta{2\pi}\in\mathbb{Q}\).
+
+\end{methode}
+
+\hypertarget{exercice-3-partie-c-application-numuxe9rique}{%
+\section{Exercice 3 --- Partie C : application numérique}\label{exercice-3-partie-c-application-numuxe9rique}}
+
+\(z_0=1+i\), \(\lambda\in{\mathbb{U}}_N\). On applique les résultats précédents au cas des racines de l'unité, puis à un \(\lambda\) « irrationnel ».
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+\begin{indication}{1}
+
+Module d'un complexe \(a+ib\).
+
+\end{indication}
+
+\hypertarget{solution-53}{%
+\subsubsection{Solution}\label{solution-53}}
+
+\(\boxed{r_0=|1+i|=\sqrt2}\), et \(z_0=\sqrt2\,e^{i\pi/4}\).
+
+\hypertarget{question-11-1}{%
+\subsection{Question 11}\label{question-11-1}}
+
+\begin{indication}{1}
+
+Écrivez \(\lambda=e^{i\theta}\) et traduisez \(\lambda^N=1\) sur l'argument.
+
+\end{indication}
+
+\hypertarget{solution-54}{%
+\subsubsection{Solution}\label{solution-54}}
+
+\(e^{iN\theta}=1\iff N\theta\in2\pi\mathbb{Z}\). Forme exponentielle puis forme trigonométrique :
+
+\equationajustee{\boxed{\begin{aligned}
+\lambda&=e^{\frac{2ik\pi}N}\\
+&=\cos\frac{2k\pi}N+i\sin\frac{2k\pi}N,\quad k\in\{0,\dots,N-1\}.
+\end{aligned}}}
+
+L'hypothèse générale \(\lambda\neq1\) exclut \(k=0\) (et impose \(N\ge2\)). On a \(\frac\theta{2\pi}=\frac kN\in\mathbb{Q}\).
+
+\begin{piege}
+
+La « forme trigonométrique » est \(\cos\alpha+i\sin\alpha\) (multipliée par le module) ; la forme exponentielle est \(e^{i\alpha}\). La question demande la forme trigonométrique : donnez-la explicitement, la forme exponentielle en complément ; une forme algébrique \(a+ib\) ne répond pas à la question.
+
+\end{piege}
+
+\hypertarget{question-12-1}{%
+\subsection{Question 12}\label{question-12-1}}
+
+\begin{indication}{1}
+
+Quelle puissance de \(\lambda\) vaut \(1\) ? Revenez à la question 8(b).
+
+\end{indication}
+
+\hypertarget{solution-55}{%
+\subsubsection{Solution}\label{solution-55}}
+
+\(\lambda^N=1\), donc \(z_{n+N}=z_n\) pour tout \(n\) : \textbf{\((z_n)\) est périodique et \(N\) en est une période.} (La plus petite période est \(\frac N{\gcd(k,N)}\), ce qui n'est pas demandé.)
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/ex3-q12-orbite-periodique.pdf}
+\caption*{Figure 4 --- Orbite de z₀ = 1 + i pour λ = e\^{}(iπ/3) dans U₆ : six
+points sur le cercle de rayon r₀ = √2, chaque pas tourne de π/3, et z₆ =
+z₀}
+\end{figure}
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\begin{indication}{1}
+
+Une égalité d'ensembles se prouve par double inclusion.
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour l'inclusion \({\mathbb{U}}_N\subset f({\mathbb{U}}_N)\), cherchez l'antécédent de \(\nu\) sous la forme \(\lambda^{-1}\nu\).
+
+\end{indication}
+
+\hypertarget{solution-56}{%
+\subsubsection{Solution}\label{solution-56}}
+
+\emph{Inclusion directe.} Si \(\mu\in{\mathbb{U}}_N\), \((\lambda\mu)^N=\lambda^N\mu^N=1\) : \(f({\mathbb{U}}_N)\subset{\mathbb{U}}_N\).
+
+\emph{Inclusion réciproque.} Si \(\nu\in{\mathbb{U}}_N\), \(\mu=\lambda^{-1}\nu\) vérifie \(\mu^N=1\) et \(f(\mu)=\nu\) : \({\mathbb{U}}_N\subset f({\mathbb{U}}_N)\).
+
+\equationajustee{\boxed{f({\mathbb{U}}_N)={\mathbb{U}}_N.}}
+
+\begin{piege}
+
+Une seule inclusion ne prouve pas l'égalité. Variante valable : \(f\) est injective et \({\mathbb{U}}_N\) est fini, donc \(f({\mathbb{U}}_N)\subset{\mathbb{U}}_N\) a autant d'éléments que \({\mathbb{U}}_N\).
+
+\end{piege}
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{indication}{1}
+
+Identifiez \(\theta\) et calculez \(\frac\theta{2\pi}\). Quel résultat de la partie B s'applique ?
+
+\end{indication}
+
+\hypertarget{solution-57}{%
+\subsubsection{Solution}\label{solution-57}}
+
+\(\theta=2\sqrt2\pi\), donc \(\frac\theta{2\pi}=\sqrt2\notin\mathbb{Q}\) : si \(\sqrt2=\frac ab\) sous forme irréductible, \(a^2=2b^2\) rend \(a\) pair, puis \(b\) pair, contradiction.
+
+De plus \(|\lambda|=1\), \(\lambda\neq1\) et \(z_0\neq0\) : par la question 9, \textbf{\((z_n)\) n'est pas périodique.}
+
+(Ce \(\lambda\) n'est dans aucun \({\mathbb{U}}_N\) : la question sort du cadre posé en tête de partie C.)
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+\begin{indication}{1}
+
+On ne connaît pas à l'avance le nombre de termes : boucle « tant que », avec la mise à jour \(z\leftarrow\lambda z\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Pour la terminaison : les \(z_n\) sont deux à deux distincts sur un cercle ; deux d'entre eux sont donc très proches (principe des tiroirs). Que dire alors de \(\lambda^{m-n}\) ?
+
+\end{indication}
+
+\hypertarget{solution-58}{%
+\subsubsection{Solution}\label{solution-58}}
+
+\emph{Terminaison.} Les \(z_n\) sont distincts : \(z_n=z_m\) avec \(n<m\) donnerait \(\lambda^{m-n}=1\).
+
+Découpons \(C_{r_0}\) en \(K\) arcs de corde inférieure à \(\varepsilon\). Deux des \(K+1\) points \(z_0,\dots,z_K\) sont dans un même arc ; avec \(q=m-n\) :
+
+\equationajustee{0<|z_m-z_n|=r_0|\lambda^q-1|<\varepsilon.}
+
+Les points \(z_{jq}=(\lambda^q)^jz_0\) tournent alors autour du cercle, toujours dans le même sens, par pas de corde inférieure à \(\varepsilon\).
+
+Tout \(z\in C_{r_0}\) est donc à distance inférieure à \(\varepsilon\) de l'un d'eux : le plus petit \(n\) cherché existe.
+
+\emph{Algorithme} (on passe \(\theta\) en paramètre) :
+
+\begin{lstlisting}[language=Python]
+import cmath
+
+def premier_indice(eps, z, theta):
+    lam = cmath.exp(1j * theta)
+    n = 0
+    zn = 1 + 1j                   # z_0
+    while abs(zn - z) >= eps:
+        n = n + 1
+        zn = lam * zn
+    print(n)
+    return n
+\end{lstlisting}
+
+Essai : avec \(\theta=2\sqrt2\pi\), \(z=-1-i\) et \(\varepsilon=10^{-3}\), la fonction affiche \(1189\).
+
+\begin{piege}
+
+La condition de la boucle est la négation de \(|z_n-z|<\varepsilon\), soit \(|z_n-z|\ge\varepsilon\). L'énoncé demande d'\textbf{afficher} \(n\) : un \texttt{print} est attendu.
+
+\end{piege}
+
+\begin{methode}
+
+La justification complète de la terminaison (densité de l'orbite) dépasse ce qu'on attend en ATS ; l'essentiel est une boucle correcte, et l'argument des tiroirs ci-dessus suffit à la justifier si on le souhaite.
+
+\end{methode}
+
+\hypertarget{exercice-4-partie-a-convergence-de-la-suite-a_n}{%
+\section{\texorpdfstring{Exercice 4 --- Partie A : convergence de la suite \((a_n)\)}{Exercice 4 --- Partie A : convergence de la suite (a\_n)}}\label{exercice-4-partie-a-convergence-de-la-suite-a_n}}
+
+\(a_n=\sum_{k=0}^n\frac1{k!}\) et \(b_n=a_n+\frac1{n\cdot n!}\). On montre que les deux suites sont adjacentes, puis on identifie la limite commune grâce aux intégrales \(f_n=\int_0^1t^ne^{-t}\,dt\).
+
+\hypertarget{question-1a-1}{%
+\subsection{Question 1(a)}\label{question-1a-1}}
+
+\begin{indication}{1}
+
+Calculez \(a_{n+1}-a_n\).
+
+\end{indication}
+
+\hypertarget{solution-59}{%
+\subsubsection{Solution}\label{solution-59}}
+
+Pour tout \(n\ge1\), \(a_{n+1}-a_n=\frac1{(n+1)!}>0\) : \((a_n)\) est strictement croissante.
+
+\begin{piege}
+
+Calculer \(a_1\), \(a_2\), \(a_3\) et constater qu'ils croissent ne prouve rien : la monotonie se démontre pour \textbf{tout} \(n\), par le signe de \(a_{n+1}-a_n\) (ou du quotient, pour une suite positive). Le rapport 2026 le relève : « Certaines copies pensent qu'il suffit de tester les premiers termes pour montrer qu'une suite est croissante ou décroissante. »
+
+\end{piege}
+
+\hypertarget{question-1b-1}{%
+\subsection{Question 1(b)}\label{question-1b-1}}
+
+\begin{indication}{1}
+
+Dans \(b_{n+1}\), le terme correctif devient \(\frac1{(n+1)\,(n+1)!}\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Utilisez \((n+1)!=(n+1)\,n!\) et réduisez au dénominateur commun \(n(n+1)^2n!\) ; le numérateur est remarquablement simple.
+
+\end{indication}
+
+\hypertarget{solution-60}{%
+\subsubsection{Solution}\label{solution-60}}
+
+Pour tout \(n\ge1\) :
+
+\equationajustee{\begin{aligned}
+b_{n+1}-b_n&=\frac1{(n+1)!}+\frac1{(n+1)(n+1)!}-\frac1{n\,n!}\\
+&=\frac{n(n+1)+n-(n+1)^2}{n(n+1)^2\,n!}\\
+&=\frac{-1}{n(n+1)^2\,n!}<0.
+\end{aligned}}
+
+\((b_n)\) est strictement décroissante.
+
+\begin{piege}
+
+Oublier de remplacer \(n\) par \(n+1\) dans le terme \(\frac1{n\cdot n!}\) en écrivant \(b_{n+1}\).
+
+\end{piege}
+
+\hypertarget{question-1c}{%
+\subsection{Question 1(c)}\label{question-1c}}
+
+\begin{indication}{1}
+
+Rappelez la définition de suites adjacentes ; il reste à étudier \(b_n-a_n\).
+
+\end{indication}
+
+\hypertarget{solution-61}{%
+\subsubsection{Solution}\label{solution-61}}
+
+Les trois conditions de la définition sont vérifiées : \((a_n)\) croît, \((b_n)\) décroît, et \(b_n-a_n=\frac1{n\cdot n!}\to0\). \textbf{Les suites sont adjacentes.}
+
+\begin{jury}
+
+Rapport 2026 : « le cours est compris sur les suites adjacentes, mais ils ne savent pas toujours l'appliquer. » Citez les trois conditions de la définition et renvoyez, pour chacune, à la question qui l'établit.
+
+\end{jury}
+
+\hypertarget{question-1d}{%
+\subsection{Question 1(d)}\label{question-1d}}
+
+\begin{indication}{1}
+
+Théorème des suites adjacentes.
+
+\end{indication}
+
+\hypertarget{solution-62}{%
+\subsubsection{Solution}\label{solution-62}}
+
+Deux suites adjacentes convergent vers une même limite : \((a_n)\) converge vers un réel \(\ell\).
+
+Les monotonies étant strictes, \(a_n<\ell<b_n\) pour tout \(n\ge1\).
+
+\begin{methode}
+
+L'encadrement \(a_n<\ell<b_n\) est le sous-produit le plus utile du théorème : il servira à mesurer l'erreur en partie C.
+
+\end{methode}
+
+\hypertarget{question-2a-1}{%
+\subsection{Question 2(a)}\label{question-2a-1}}
+
+\begin{indication}{1}
+
+Monotonie de \(t\mapsto e^{-t}\) sur \([0,1]\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Multipliez par un facteur positif, puis intégrez (bornes dans l'ordre croissant).
+
+\end{indication}
+
+\hypertarget{solution-63}{%
+\subsubsection{Solution}\label{solution-63}}
+
+\(t\mapsto e^{-t}\) décroît, donc \(\frac1e\le e^{-t}\le1\) sur \([0,1]\).
+
+On multiplie par \(t^n\ge0\) et on intègre sur \([0,1]\), avec \(\int_0^1t^n\,dt=\frac1{n+1}\) :
+
+\equationajustee{\boxed{\frac1{e(n+1)}\le f_n\le\frac1{n+1}.}}
+
+\hypertarget{question-2b-1}{%
+\subsection{Question 2(b)}\label{question-2b-1}}
+
+\begin{indication}{1}
+
+Encadrez \(\frac{f_n}{n!}\) et appliquez le théorème des gendarmes.
+
+\end{indication}
+
+\hypertarget{solution-64}{%
+\subsubsection{Solution}\label{solution-64}}
+
+\(0\le\frac{f_n}{n!}\le\frac1{(n+1)!}\) et \(\frac1{(n+1)!}\to0\), donc \(\frac{f_n}{n!}\to0\) et :
+
+\equationajustee{\boxed{\varphi_n=e\Big(1-\frac{f_n}{n!}\Big)\to e.}}
+
+\hypertarget{question-3a-2}{%
+\subsection{Question 3(a)}\label{question-3a-2}}
+
+\begin{indication}{1}
+
+Primitive de \(e^{-t}\).
+
+\end{indication}
+
+\hypertarget{solution-65}{%
+\subsubsection{Solution}\label{solution-65}}
+
+\(f_0=\big[-e^{-t}\big]_0^1=1-\frac1e\). Puis :
+
+\equationajustee{\begin{aligned}
+\varphi_0&=e\Big(1-1+\frac1e\Big)\\
+&=1.
+\end{aligned}}
+
+\hypertarget{question-3b-2}{%
+\subsection{Question 3(b)}\label{question-3b-2}}
+
+\begin{indication}{1}
+
+Intégration par parties : dérivez \(t^{n+1}\), primitivez \(e^{-t}\).
+
+\end{indication}
+
+\hypertarget{solution-66}{%
+\subsubsection{Solution}\label{solution-66}}
+
+\equationajustee{\begin{aligned}
+f_{n+1}&=\big[-t^{n+1}e^{-t}\big]_0^1+(n+1)\int_0^1t^ne^{-t}\,dt\\
+&=-\frac1e+(n+1)f_n.
+\end{aligned}}
+
+\equationajustee{\boxed{f_{n+1}=(n+1)f_n-\frac1e.}}
+
+\hypertarget{question-3c-1}{%
+\subsection{Question 3(c)}\label{question-3c-1}}
+
+\begin{indication}{1}
+
+Divisez la relation de (b) par \((n+1)!\) avant de la reporter dans \(\varphi_{n+1}\).
+
+\end{indication}
+
+\hypertarget{solution-67}{%
+\subsubsection{Solution}\label{solution-67}}
+
+En divisant (b) par \((n+1)!\) :
+
+\equationajustee{\frac{f_{n+1}}{(n+1)!}=\frac{f_n}{n!}-\frac1{e\,(n+1)!}.}
+
+On reporte dans la définition de \(\varphi_{n+1}\) :
+
+\equationajustee{\begin{aligned}
+\varphi_{n+1}&=e\Big(1-\frac{f_n}{n!}\Big)+\frac{e}{e\,(n+1)!}\\
+&=\varphi_n+\frac1{(n+1)!}.
+\end{aligned}}
+
+\equationajustee{\boxed{\varphi_{n+1}=\varphi_n+\frac1{(n+1)!}.}}
+
+\hypertarget{question-3d-1}{%
+\subsection{Question 3(d)}\label{question-3d-1}}
+
+\begin{indication}{1}
+
+Les suites \((a_n)\) et \((\varphi_n)\) vérifient la même relation de récurrence : il suffit qu'elles coïncident au rang initial.
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'énoncé contient une coquille ; lisez « en déduire que, pour tout entier naturel non nul, \(\varphi_n=a_n\) ». Initialisez à \(n=1\).
+
+\end{indication}
+
+\hypertarget{solution-68}{%
+\subsubsection{Solution}\label{solution-68}}
+
+Par définition, \(a_{n+1}=a_n+\frac1{(n+1)!}\). Montrons par récurrence sur \(n\ge1\) la propriété « \(\varphi_n=a_n\) ».
+
+\emph{Initialisation.} \(\varphi_1=\varphi_0+1=2\) et \(a_1=1+1=2\).
+
+\emph{Hérédité.} Si \(\varphi_n=a_n\), alors \(\varphi_{n+1}=a_n+\frac1{(n+1)!}=a_{n+1}\).
+
+\emph{Conclusion.} \(\boxed{\forall n\ge1,\ \varphi_n=a_n.}\)
+
+\hypertarget{question-3e-1}{%
+\subsection{Question 3(e)}\label{question-3e-1}}
+
+\begin{indication}{1}
+
+Combinez (d) et 2(b).
+
+\end{indication}
+
+\hypertarget{solution-69}{%
+\subsubsection{Solution}\label{solution-69}}
+
+\(a_n=\varphi_n\to e\), donc, par unicité de la limite :
+
+\equationajustee{\boxed{\begin{aligned}
+\ell&=e,\\
+\sum_{k=0}^{+\infty}\frac1{k!}&=e.
+\end{aligned}}}
+
+\hypertarget{exercice-4-partie-b-convergence-de-la-suite-c_n}{%
+\section{\texorpdfstring{Exercice 4 --- Partie B : convergence de la suite \((c_n)\)}{Exercice 4 --- Partie B : convergence de la suite (c\_n)}}\label{exercice-4-partie-b-convergence-de-la-suite-c_n}}
+
+On étudie \(c_n=(1+\frac1n)^n\) par un développement limité, qui donne à la fois la limite et la vitesse.
+
+\hypertarget{question-1-2}{%
+\subsection{Question 1}\label{question-1-2}}
+
+\begin{indication}{1}
+
+Développez \(\ln(1+x)\) à l'ordre 2 en \(x=\frac1n\), qui tend bien vers \(0\), puis multipliez par \(n\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+L'exposant tend vers \(1\), pas vers \(0\) : écrivez \(c_n=e\cdot e^{u_n}\) avec \(u_n\to0\), et développez \(e^{u}\) à l'ordre 1.
+
+\end{indication}
+
+\hypertarget{solution-70}{%
+\subsubsection{Solution}\label{solution-70}}
+
+Comme \(x=\frac1n\to0\), le développement \(\ln(1+x)=x-\frac{x^2}2+o(x^2)\) en \(0\) s'applique :
+
+\equationajustee{\begin{aligned}
+n\ln\Big(1+\frac1n\Big)&=n\Big(\frac1n-\frac1{2n^2}+o\Big(\frac1{n^2}\Big)\Big)\\
+&=1-\frac1{2n}+o\Big(\frac1n\Big).
+\end{aligned}}
+
+L'exposant tend vers \(1\) : on factorise \(e^1\) et l'on pose \(u_n=-\frac1{2n}+o(\frac1n)\), qui tend vers \(0\). Le développement \(e^{u}=1+u+o(u)\) en \(0\) s'applique alors :
+
+\equationajustee{\begin{aligned}
+c_n&=e\,e^{u_n}\\
+&=e\Big(1-\frac1{2n}+o\Big(\frac1n\Big)\Big).
+\end{aligned}}
+
+\equationajustee{\boxed{c_n=e-\frac e{2n}+o\Big(\frac1n\Big).}}
+
+\begin{piege}
+
+Un développement de \(\ln(1+x)\) à l'ordre 1 seulement donne \(c_n\to e\) mais perd le terme \(-\frac e{2n}\), indispensable en partie C. Après multiplication par \(n\), le reste \(o(\frac1{n^2})\) devient \(o(\frac1n)\).
+
+\end{piege}
+
+\begin{piege}
+
+Écrire \(e^{1-\frac1{2n}+\dots}=1+\big(1-\frac1{2n}\big)+\dots\) revient à utiliser le développement de l'exponentielle loin de \(0\) : c'est faux. On ne compose avec \(e^u=1+u+o(u)\) que si \(u\to0\).
+
+\end{piege}
+
+\begin{jury}
+
+Rapport 2026 : « Certains candidats calculent des DL sans vérifier qu'ils sont au voisinage de 0 : attention quand on compose les DL, il faut être en 0. » Écrivez explicitement que \(\frac1n\to0\), puis que \(u_n\to0\), avant chaque développement.
+
+\end{jury}
+
+\hypertarget{question-2-2}{%
+\subsection{Question 2}\label{question-2-2}}
+
+\begin{indication}{1}
+
+Lisez la limite sur le développement.
+
+\end{indication}
+
+\hypertarget{solution-71}{%
+\subsubsection{Solution}\label{solution-71}}
+
+\(\frac e{2n}\to0\) et \(o(\frac1n)\to0\) : \(\boxed{c_n\to e.}\)
+
+\hypertarget{exercice-4-partie-c-vitesse-de-convergence}{%
+\section{Exercice 4 --- Partie C : vitesse de convergence}\label{exercice-4-partie-c-vitesse-de-convergence}}
+
+On compare \(\frac{|u_{n+1}-\alpha|}{|u_n-\alpha|}\) à \(0\) ou \(1\). Il faut d'abord vérifier que la suite ne prend jamais la valeur \(\alpha\).
+
+\hypertarget{question-1a-2}{%
+\subsection{Question 1(a)}\label{question-1a-2}}
+
+\begin{indication}{1}
+
+Utilisez l'encadrement issu des suites adjacentes, au rang \(n\) pour la majoration et au rang \(n+1\) pour la minoration.
+
+\end{indication}
+
+\hypertarget{solution-72}{%
+\subsubsection{Solution}\label{solution-72}}
+
+\(a_{n+1}<e<b_n\) (partie A, 1(d) et 3(e)). Donc :
+
+\equationajustee{\begin{aligned}
+e-a_n&<b_n-a_n=\frac1{n\cdot n!},\\
+e-a_n&>a_{n+1}-a_n=\frac1{(n+1)!}.
+\end{aligned}}
+
+\equationajustee{\boxed{\frac1{(n+1)!}\le e-a_n\le\frac1{n\cdot n!}.}}
+
+\hypertarget{question-1b-2}{%
+\subsection{Question 1(b)}\label{question-1b-2}}
+
+\begin{indication}{1}
+
+Majorez le numérateur \(e-a_{n+1}\) et minorez le dénominateur \(e-a_n\) avec (a).
+
+\end{indication}
+
+\hypertarget{solution-73}{%
+\subsubsection{Solution}\label{solution-73}}
+
+\(e-a_n>0\) : \((a_n)\) ne prend pas la valeur \(e\). Par (a) :
+
+\equationajustee{\begin{aligned}
+0<\frac{e-a_{n+1}}{e-a_n}&\le\frac{1/\big((n+1)(n+1)!\big)}{1/(n+1)!}\\
+&=\frac1{n+1}\to0.
+\end{aligned}}
+
+Donc \(\beta=0\) : \textbf{la convergence de \((a_n)\) vers \(e\) est rapide.}
+
+\begin{piege}
+
+Pour majorer un quotient de nombres positifs, on majore le numérateur \textbf{et} on minore le dénominateur ; utiliser deux majorations ne donne rien.
+
+\end{piege}
+
+\hypertarget{question-2a-2}{%
+\subsection{Question 2(a)}\label{question-2a-2}}
+
+\begin{indication}{1}
+
+Partez du développement de la partie B : un terme non nul suivi d'un \(o\) de même ordre donne un équivalent.
+
+\end{indication}
+
+\hypertarget{solution-74}{%
+\subsubsection{Solution}\label{solution-74}}
+
+\(c_n-e=-\frac e{2n}+o\big(\frac1n\big)\), donc \(\boxed{c_n-e\sim-\frac e{2n}.}\)
+
+\hypertarget{question-2b-2}{%
+\subsection{Question 2(b)}\label{question-2b-2}}
+
+\begin{indication}{1}
+
+Vérifiez d'abord que \(c_n\neq e\) pour \textbf{tout} \(n\) : comparez \(\ln(1+x)\) et \(x\).
+
+\end{indication}
+
+\begin{indication}{2}
+
+Formez le quotient des équivalents de \(|c_{n+1}-e|\) et \(|c_n-e|\).
+
+\end{indication}
+
+\hypertarget{solution-75}{%
+\subsubsection{Solution}\label{solution-75}}
+
+Pour \(x>0\), \(\ln(1+x)<x\) : la fonction \(x\mapsto x-\ln(1+x)\) est nulle en \(0\), de dérivée \(\frac x{1+x}>0\).
+
+Donc \(n\ln(1+\frac1n)<1\) et \(c_n<e\) pour tout \(n\ge1\). Ensuite :
+
+\equationajustee{\begin{aligned}
+\frac{|c_{n+1}-e|}{|c_n-e|}&\sim\frac{e/(2(n+1))}{e/(2n)}\\
+&=\frac n{n+1}\to1.
+\end{aligned}}
+
+Donc \(\beta=1\) : \textbf{la convergence de \((c_n)\) vers \(e\) est lente.}
+
+Ordre de grandeur : pour une erreur inférieure à \(10^{-8}\), il suffit de \(n=11\) avec \((a_n)\), car \(e-a_{11}\approx2{,}3\cdot10^{-9}\) alors que \(e-a_{10}\approx2{,}7\cdot10^{-8}\).
+
+Avec \((c_n)\), il faut \(n\) de l'ordre de \(1{,}4\cdot10^8\).
+
+\begin{piege}
+
+L'équivalent ne montre \(c_n\neq e\) qu'à partir d'un certain rang ; la définition de l'énoncé demande que la suite ne prenne jamais la valeur \(\alpha\), d'où l'inégalité \(\ln(1+x)<x\).
+
+\end{piege}
+
+\hypertarget{bilan}{%
+\section{Bilan}\label{bilan}}
+
+\textbf{Méthodes à retenir.}
+- Coefficients de Fourier : exploiter la parité (fonction impaire : \(a_n=0\), \(b_n=\frac2\pi\int_0^\pi f(t)\sin(nt)\,dt\)), puis intégration par parties.
+- Dirichlet pour une valeur ponctuelle de la somme (vérifier \({\mathcal{C}}^1\) par morceaux et traiter les points de discontinuité), Parseval pour une somme de carrés (continuité par morceaux suffit) ; toujours annoncer la convention des coefficients.
+- Sommes \(\sum e^{ikt}\) : somme géométrique et angle moitié, en excluant \(t\in2\pi\mathbb{Z}\).
+- En un point critique d'un quotient \(\frac ND\), la dérivée seconde vaut \(\frac{N'}D\) ; critère de la dérivée seconde pour la nature d'un extremum.
+- Puissances d'une matrice \(\alpha I+\beta J\) : binôme de Newton (après avoir vérifié la commutation) et relation \(J^k=3^{k-1}J\) ; contrôle sur \(n=0,1,2\).
+- Rotation \(z\mapsto e^{i\theta}z\) : l'orbite est périodique si et seulement si \(\frac\theta{2\pi}\in\mathbb{Q}\).
+- Suites adjacentes pour encadrer une limite, puis encadrement de l'erreur.
+- Développement limité de \(n\ln(1+\frac1n)\) et passage à l'exponentielle, en se ramenant au voisinage de \(0\).
+
+\textbf{Ce que le rapport 2026 invite à soigner.} Le tracé d'une fonction définie par parité et périodicité ; le traitement des points de discontinuité dans Dirichlet ; l'exploitation concrète de Dirichlet et de Parseval jusqu'à la somme demandée ; des bases explicites de sous-espaces propres ; la commutation avant tout binôme matriciel ; des récurrences complètes ; module, argument, formes trigonométrique et exponentielle ; la monotonie prouvée pour tout \(n\) ; des DL composés au voisinage de \(0\). Et, sur la forme, traiter les exercices l'un après l'autre.
+
+\textbf{Prérequis à revoir si besoin.} Énoncés exacts des théorèmes de Dirichlet et de Parseval ; formules de trigonométrie (\(\cos(\pi-x)\), transformation produit-somme) ; critère de diagonalisabilité par les dimensions ; racines \(N\)-ièmes de l'unité ; développements limités usuels de \(\ln(1+x)\) et \(e^x\).
+
+\textbf{Questions classiques transposables.}
+- \(\sum\frac1{n^2}=\frac{\pi^2}6\) par Parseval, et la formule de Leibniz \(\sum\frac{(-1)^p}{2p+1}=\frac\pi4\) ;
+- noyau de Dirichlet \(\sum_{k=1}^n\cos(kt)\) ;
+- puissances de \(J-I\) ;
+- \(\sum\frac1{k!}=e\) via \(\int_0^1t^ne^{-t}\,dt\) ;
+- \((1+\frac1n)^n=e-\frac e{2n}+o(\frac1n)\) ;
+- comparaison de vitesses de convergence par le rapport \(\frac{|u_{n+1}-\alpha|}{|u_n-\alpha|}\).
+
+\end{document}

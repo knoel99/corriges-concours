@@ -1,0 +1,28 @@
+{
+  "slug": "mines-ponts_mpi_maths-2_2026",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MPI",
+    "matiere": "Maths 2",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q4-chemin-so2.svg",
+      "question": "Q4",
+      "legende": "Question 4, cas n = 2 : SO_2(ℝ) vu comme le cercle unité (R_θ ↔ (cos θ, sin θ)) ; le chemin γ(t) = R_tθ, t allant de 0 à 1, relie I_2 à M = R_θ"
+    },
+    {
+      "fichier": "figures/q7-reflexion.svg",
+      "question": "Q7",
+      "legende": "Question 7, dans le plan Vect(x, y) : la réflexion A d'hyperplan u^⊥, u = (x − y)/‖x − y‖, envoie x sur y ; u^⊥ est l'hyperplan médiateur du segment d'extrémités x et y"
+    },
+    {
+      "fichier": "figures/q14-q17-tranche-diagonale.svg",
+      "question": "Q14, Q17",
+      "legende": "Questions 14 et 17, cas n = 2, matrices diagonales diag(a, d) : contrainte ad = 1 et lignes de niveau a² + d² = g ; le minimum g = 2 est atteint en ±I_2, et D_t = diag(t, 1/t) part à l'infini"
+    }
+  ]
+}

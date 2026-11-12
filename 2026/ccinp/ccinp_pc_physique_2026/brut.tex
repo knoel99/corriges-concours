@@ -1,0 +1,706 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={CCINP PC — Physique 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · CCINP PC}
+\fancyhead[R]{\small Physique 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries CCINP PC — Physique 2026\par}\medskip
+  {\large CCINP · PC · Physique · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+Épreuve PC2P, 4 heures, calculatrices interdites. \emph{Nanorhéologie par appareil à force dynamique de surface.} Applications numériques à un chiffre significatif, comme l'impose l'énoncé.
+
+\hypertarget{partie-i-mesure-de-la-force-sexeruxe7ant-sur-le-plan}{%
+\section{Partie I --- Mesure de la force s'exerçant sur le plan}\label{partie-i-mesure-de-la-force-sexeruxe7ant-sur-le-plan}}
+
+\hypertarget{i.1-mesure-interfuxe9romuxe9trique-du-duxe9placement-du-plan-par-rapport-au-buxe2ti-fixe}{%
+\subsection{I.1 --- Mesure interférométrique du déplacement du plan par rapport au bâti fixe}\label{i.1-mesure-interfuxe9romuxe9trique-du-duxe9placement-du-plan-par-rapport-au-buxe2ti-fixe}}
+
+\textbf{Q1.} On remplace le miroir \(M_2\) par son image \(M_2'\) à travers la séparatrice. Le Michelson réglé en lame d'air équivaut alors à une lame d'air d'épaisseur \(e\) comprise entre \(M_1\) et \(M_2'\), parallèles. Le miroir à 45° du bras 1 ne fait que replier ce bras.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q01-lame-air.pdf}
+\caption*{Figure 1 --- Lame d'air équivalente : le rayon d'incidence i donne (1),
+réfléchi en I sur M₂′, et (2), réfléchi en J sur M₁ ; KH est un plan
+d'onde commun}
+\end{figure}
+
+La source \(S\) est ponctuelle (au foyer du condenseur), et le point d'observation \(M\) est à l'infini dans la direction \(i\) : il est au foyer image de \((\mathcal L)\).
+
+Un rayon issu de \(S\) arrive sur la lame sous l'incidence \(i\) et se divise en \(I\).
+
+Le rayon (1) se réfléchit en \(I\) sur \(M_2'\). Le rayon (2) se réfléchit en \(J\) sur \(M_1\) et ressort en \(K\). Les deux rayons émergents sont parallèles.
+
+Par définition, la différence de marche en \(M\) est la différence des chemins optiques de \(S\) à \(M\) le long des deux rayons :
+\equationajustee{\delta=(SM)_2-(SM)_1 .}
+Les deux chemins sont communs de \(S\) à \(I\). Soit \(H\) le projeté orthogonal de \(K\) sur le rayon (1).
+
+Par le principe de retour inverse, on peut considérer \(M\) comme une source à l'infini, qui émet une onde plane dans la direction des rayons émergents. D'après le théorème de Malus, les plans d'onde de cette onde sont orthogonaux aux rayons : le plan \(KH\) en est un, et \((HM)=(KM)\). Avec \(n=1\) et sans déphasage de réflexion, il reste
+\equationajustee{\delta=(IJ+JK)-IH .}
+La géométrie de la lame donne :
+\equationajustee{\begin{aligned}
+IJ&=JK=\frac{e}{\cos i}\\
+IK&=2e\tan i\\
+IH&=IK\sin i=\frac{2e\sin^2 i}{\cos i}
+\end{aligned}}
+D'où :
+\equationajustee{\begin{aligned}
+\delta&=\frac{2e}{\cos i}\left(1-\sin^2 i\right)\\
+&=2e\cos i
+\end{aligned}}
+\equationajustee{\boxed{\delta=2e\cos i}}
+
+\textbf{Q2.} À \(e\) fixé, \(\delta=2e\cos i\) ne dépend que de l'inclinaison \(i\) du rayon. Tous les rayons de même inclinaison ont le même état d'interférence, quel que soit leur point d'incidence : ce sont des \textbf{franges d'égale inclinaison}.
+
+Le système est invariant par rotation autour de la normale aux miroirs, donc les rayons d'inclinaison \(i\) forment un cône. La lentille envoie la direction \(i\) sur le cercle de rayon \(f'\tan i\) centré sur le foyer image, d'où des anneaux.
+
+Sans condenseur, le faisceau laser est parallèle et arrive en incidence normale : il n'y a qu'une seule inclinaison, \(i=0\). La lentille le concentre au foyer image. On observe \textbf{une seule tache lumineuse}, dont l'éclairement dépend de \(2e/\lambda\) : c'est l'interférence pour \(i=0\). On ne voit aucun anneau.
+
+\textbf{Q3.} L'ordre d'interférence vaut \(p(i)=\dfrac{2e\cos i}{\lambda}\). Il est maximal au centre, où il vaut \(p_0=2e/\lambda\).
+
+Un anneau donné est un lieu d'ordre \(p\) constant, défini par
+\equationajustee{\cos i=\frac{p\lambda}{2e} .}
+Quand on se rapproche du contact optique, \(e\) diminue. À \(p\) fixé, \(\cos i\) augmente, donc \(i\) diminue, ainsi que le rayon \(f'\tan i\) de l'anneau sur l'écran.
+
+Les anneaux \textbf{rentrent} vers le centre et y disparaissent un à un : \(p_0\) diminue d'une unité chaque fois que \(e\) diminue de \(\lambda/2\).
+
+\textbf{Il faut donc diminuer le rayon des anneaux, c'est-à-dire les faire rentrer}, en translatant \(M_1\). Au contact optique (\(e=0\)), l'éclairement de l'écran est uniforme (teinte plate).
+
+Remarque : les anneaux restants sont de moins en moins nombreux et de plus en plus espacés. Aux petits angles, le \(k\)-ième anneau brillant compté depuis le centre a pour rayon
+\equationajustee{\rho_k\simeq f'\sqrt{\frac{(k-\varepsilon)\lambda}{e}} ,}
+où \(\varepsilon\in[0,1[\) est l'excédent fractionnaire. Ce rayon croît comme \(e^{-1/2}\) : c'est l'écart entre anneaux qui augmente, pas le rayon d'un anneau donné.
+
+\textbf{Q4.} Le contact optique correspond à des bras de même longueur optique depuis la séparatrice. Le bras 1 mesure \(d+d_1\) (séparatrice, puis miroir à 45°, puis \(M_1\)) et le bras 2 mesure \(d_2\) (pour \(x=0\)) :
+\equationajustee{\boxed{d+d_1=d_2}}
+
+\textbf{Q5.} En coin d'air éclairé en incidence quasi normale, les franges sont localisées au voisinage des miroirs. Pour les observer, l'écran doit donc être le conjugué du plan des miroirs par \((\mathcal L')\).
+
+La relation de conjugaison de Descartes s'écrit, avec \(\overline{OA}=-D\) et \(\overline{OA'}=D'\) :
+\equationajustee{\frac{1}{\overline{OA'}}-\frac{1}{\overline{OA}}=\frac{1}{f'} .}
+Elle donne
+\equationajustee{\frac1{D'}=\frac1{f'}-\frac1D ,}
+soit
+\equationajustee{\boxed{D'=\frac{D\,f'}{D-f'}}}
+L'image n'est réelle que si \(D>f'\), d'où le choix d'une lentille de courte focale.
+
+\textbf{Q6.} Pour \(\alpha\) petit, \(e_0(y)=\alpha y\) et \(\delta=2\alpha y\). L'éclairement ne dépend que de \(y\) : les franges sont des \textbf{droites parallèles à l'arête du coin} (perpendiculaires à \(y\)), appelées \textbf{franges d'égale épaisseur}.
+
+Sur les miroirs, deux franges brillantes consécutives vérifient \(2\alpha\,\Delta y=\lambda\), soit \(\Delta y=\lambda/(2\alpha)\). Le grandissement transversal de la lentille vaut \(\gamma=\overline{OA'}/\overline{OA}=-D'/D\). L'interfrange sur l'écran est donc
+\equationajustee{\boxed{i_e=\frac{D'}{D}\,\frac{\lambda}{2\alpha}}}
+
+\textbf{Q7.} On prend \(\delta=\mathcal L_1-\mathcal L_2\), où \(\mathcal L_1\) et \(\mathcal L_2\) sont les chemins optiques par \(M_1\) et par \(M_2\).
+
+Le déplacement \(x\) ne modifie que le bras 2, dont la longueur passe de \(d_2\) à \(d_2-x\), parcourue à l'aller et au retour.
+
+\(\mathcal L_2\) diminue donc de \(2x\) et, au même point des miroirs,
+\equationajustee{\boxed{\delta(x)=\delta_0+2x}}
+Avec la convention opposée, on aurait \(\delta=\delta_0-2x\), et seul le signe de \(\Psi\) changerait en Q8.
+
+\textbf{Q8.} Les deux rayons qui interfèrent en un point de l'écran sont issus d'un même rayon de la source (division d'amplitude) : ils sont cohérents et ont la même pulsation \(\omega\). On écrit leurs vibrations lumineuses en ce point :
+\equationajustee{\begin{aligned}
+s_1(t)&=A_0\cos(\omega t-\varphi_1)\\
+s_2(t)&=A_0\cos(\omega t-\varphi_2)
+\end{aligned}}
+avec \(\varphi_2-\varphi_1=2\pi\delta/\lambda\). Les amplitudes sont égales, comme l'indique l'énoncé.
+
+L'éclairement est \(\mathcal E=K\langle s^2\rangle\), où \(s=s_1+s_2\) et \(\langle\cdot\rangle\) est la moyenne temporelle sur la durée de réponse du détecteur. Chaque rayon seul donne
+\equationajustee{\mathcal E_0=K\langle s_1^2\rangle=\frac{KA_0^2}{2} .}
+Le terme croisé vaut :
+\equationajustee{\begin{aligned}
+2K\langle s_1s_2\rangle&=KA_0^2\left\langle\cos(2\omega t-\varphi_1-\varphi_2)+\cos(\varphi_2-\varphi_1)\right\rangle\\
+&=KA_0^2\cos(\varphi_2-\varphi_1)
+\end{aligned}}
+car le premier cosinus est de moyenne nulle. On obtient la formule de Fresnel :
+\equationajustee{\boxed{\mathcal E=2\mathcal E_0\left[1+\cos\frac{2\pi\delta(x)}{\lambda}\right]}}
+Avec \(\delta(x)=\delta_0+2x\) :
+\equationajustee{\mathcal E=2\mathcal E_0\left[1+\cos\left(\frac{4\pi x}{\lambda}+\frac{2\pi\delta_0}{\lambda}\right)\right] .}
+C'est la forme demandée, avec :
+\equationajustee{\begin{aligned}
+\mathcal E_{max}&=4\mathcal E_0\\
+\Psi&=\frac{2\pi\delta_0}{\lambda}
+\end{aligned}}
+
+\textbf{Q9.} On dérive :
+\equationajustee{\boxed{S=\left|\frac{\mathrm d\mathcal E}{\mathrm dx}\right|=\frac{2\pi\mathcal E_{max}}{\lambda}\left|\sin\left(\frac{4\pi x}{\lambda}+\Psi\right)\right|}}
+Au voisinage de \(x=0\), \(S\simeq\dfrac{2\pi\mathcal E_{max}}{\lambda}|\sin\Psi|\). Cette sensibilité est maximale pour \(|\sin\Psi|=1\) :
+\equationajustee{\boxed{\Psi=\frac{\pi}{2}+n\pi,\ n\in\mathbb Z}}
+Ces points sont à mi-frange (\(\mathcal E=\mathcal E_{max}/2\)), là où la pente est la plus forte.
+
+\textbf{Q10.} Deux valeurs successives sont \(\Psi_1=\pi/2\) et \(\Psi_2=3\pi/2\). On pose \(u=4\pi x/\lambda\). Les formules trigonométriques donnent :
+\equationajustee{\begin{aligned}
+\cos\left(u+\frac\pi2\right)&=-\sin u\\
+\cos\left(u+\frac{3\pi}2\right)&=\sin u
+\end{aligned}}
+Pour \(x\ll\lambda\), on a \(u\ll1\) et \(\sin u\simeq u\). D'où :
+\equationajustee{\boxed{\begin{aligned}
+\mathcal E_1&=\frac{\mathcal E_{max}}{2}\left(1-\frac{4\pi x}{\lambda}\right)\\
+\mathcal E_2&=\frac{\mathcal E_{max}}{2}\left(1+\frac{4\pi x}{\lambda}\right)
+\end{aligned}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q09-points-fonctionnement.pdf}
+\caption*{Figure 2 --- Éclairements des deux photodiodes (Ψ = π/2 et Ψ = 3π/2) :
+en x = 0, mi-frange et pentes opposées}
+\end{figure}
+
+\textbf{Q11.} La résistance \(R_1\) relie la sortie à l'entrée inverseuse : il y a une boucle de rétroaction sur la borne inverseuse, ce qui justifie un fonctionnement en régime linéaire (on le suppose stable).
+
+L'ALI idéal en régime linéaire impose alors \(V_+=V_-\). L'entrée non inverseuse est reliée à la masse, donc \(V_+=0\) et \(V_-=0\). La photodiode est branchée entre l'entrée inverseuse et la masse : la tension à ses bornes est nulle. \textbf{La photodiode est en court-circuit} et débite \(I_{cc}=\beta\mathcal E\).
+
+\textbf{Q12.} L'ALI est idéal : ses courants d'entrée sont nuls, en particulier \(i_-=0\). Avec le sens de \(I_{cc}\) de la figure 4 (de la photodiode vers la masse), le courant \(I_{cc}\) quitte le nœud inverseur par la photodiode. La loi des nœuds impose qu'il y arrive par \(R_1\), depuis la sortie. La loi d'Ohm donne \(U_s-V_-=R_1I_{cc}\), avec \(V_-=0\) (Q11) :
+\equationajustee{\boxed{U_s=R_1\beta\,\mathcal E}}
+
+\textbf{Q13.} On a \(U_i=\beta R_1\mathcal E_i\). Avec Q10 :
+\equationajustee{\begin{aligned}
+U_2-U_1&=\beta R_1\mathcal E_{max}\,\frac{4\pi x}{\lambda}\\
+U_1+U_2&=\beta R_1\mathcal E_{max}
+\end{aligned}}
+Il vient
+\equationajustee{\boxed{U_{opt}=\frac{4\pi K}{\lambda}\,x}}
+Cette relation ne dépend ni de \(\beta\), ni de \(R_1\), ni de la puissance du laser. Le déplacement minimal détectable vaut :
+\equationajustee{\begin{aligned}
+x_{min}&=\frac{\lambda\,U_{opt,min}}{4\pi K}\\
+&=\frac{633\cdot10^{-9}\times2\cdot10^{-4}}{4\pi\times10}\ \text{m}\\
+&\simeq\frac{1{,}3\cdot10^{-10}}{1{,}3\cdot10^{2}}\ \text{m}
+\end{aligned}}
+\equationajustee{\boxed{x_{min}\simeq1\cdot10^{-12}\ \text{m}}}
+C'est environ cent fois moins que la taille d'un atome. On vérifie a posteriori que \(x\ll\lambda\).
+
+\hypertarget{i.2-ruxe9ponse-muxe9canique-du-cantilever}{%
+\subsection{I.2 --- Réponse mécanique du cantilever}\label{i.2-ruxe9ponse-muxe9canique-du-cantilever}}
+
+\textbf{Q14.} \(\vec F_r\) traduit l'\textbf{élasticité du cantilever} \(L_2\) : la lame déformée en flexion exerce une force de rappel, linéaire pour de petites déformations (loi de Hooke). \(\vec f_v\) traduit la \textbf{dissipation} : frottement fluide de l'air sur le porte-plan en mouvement et frottements internes du matériau de la lame. À faible vitesse, ce frottement est proportionnel à la vitesse.
+
+\textbf{Q15.} Les signaux complexes sont :
+\equationajustee{\begin{aligned}
+\underline F(t)&=\underline{F_1}\,e^{j\omega t}\\
+\underline x(t)&=\underline{x_1}\,e^{j\omega t}
+\end{aligned}}
+avec \(F(t)=\mathrm{Re}\,\underline F(t)\) et \(x(t)=\mathrm{Re}\,\underline x(t)\). Les amplitudes complexes valent :
+\equationajustee{\boxed{\begin{aligned}
+\underline{F_1}&=F_1e^{j\psi}\\
+\underline{x_1}&=x_1e^{j\varphi}
+\end{aligned}}}
+
+\textbf{Q16.} On applique le principe fondamental de la dynamique au solide de masse \(m\), dans le référentiel galiléen du bâti, projeté sur \(\vec u_x\). Le poids et la réaction verticale n'interviennent pas. On obtient
+\equationajustee{m\ddot x=-kx-\mu\dot x+F(t) .}
+En régime sinusoïdal forcé, \((k-m\omega^2+j\mu\omega)\underline{x_1}=\underline{F_1}\), d'où
+\equationajustee{\underline H_m=\frac{k\underline{x_1}}{\underline{F_1}}=\frac{1}{1+j\dfrac{\mu\omega}{k}-\dfrac{m\omega^2}{k}} .}
+On identifie avec la forme proposée :
+\equationajustee{\boxed{\begin{aligned}
+\omega_0&=\sqrt{\frac km}\\
+Q&=\frac{k}{\mu\omega_0}=\frac{\sqrt{km}}{\mu}
+\end{aligned}}}
+\(\omega_0\) est la pulsation propre : c'est la pulsation des oscillations libres du système non amorti. \(Q\) est le facteur de qualité. Il est d'autant plus grand que l'amortissement est faible et donne l'ordre du nombre d'oscillations visibles en régime libre. Il fixe aussi l'acuité de la résonance : largeur relative \(\simeq1/Q\) et \(|\underline H_m|(\omega_0)=Q\).
+
+\textbf{Q17.} Avec \(\xi=\omega/\omega_0\), \(\underline H_m=\dfrac{1}{1-\xi^2+j\xi/Q}\). Le module d'un quotient est le quotient des modules :
+\equationajustee{\boxed{|\underline H_m|=\frac{1}{\sqrt{(1-\xi^2)^2+\xi^2/Q^2}}}}
+
+\textbf{Q18.} \(|\underline H_m|\) est maximal quand le dénominateur est minimal. On pose \(X=\xi^2\ge0\) et
+\equationajustee{D(X)=(1-X)^2+\frac{X}{Q^2} .}
+Sa dérivée \(D'(X)=-2(1-X)+1/Q^2\) s'annule en \(X_r=1-\dfrac{1}{2Q^2}\), où \(D\) est minimal car \(D''=2>0\). Il y a résonance, c'est-à-dire un maximum de \(|\underline H_m|\) pour une pulsation non nulle, si et seulement si \(X_r>0\) :
+\equationajustee{\boxed{Q>\frac1{\sqrt2}}}
+\equationajustee{\boxed{\omega_r=\omega_0\sqrt{1-\frac{1}{2Q^2}}}}
+Pour \(Q\le1/\sqrt2\), \(D\) est croissante sur \(\mathbb R_+\) et il n'y a pas de résonance.
+
+On a \(\omega_r\simeq\omega_0\) dès que \(\dfrac{1}{2Q^2}\ll1\), c'est-à-dire \(\boxed{Q\gg1}\). L'écart relatif vaut alors \(\simeq1/(4Q^2)\), soit 1 \% dès \(Q=5\).
+
+\textbf{Q19.} La figure 6 présente un plateau \(|\underline H_m|\simeq1\) à basse fréquence (conforme à Q17) et un pic très fin à \(f_r\simeq35\) Hz. On assimile provisoirement \(f_0\) à \(f_r\) :
+\equationajustee{\omega_0\simeq2\pi\times35\ \text{rad·s}^{-1}\simeq2{,}2\cdot10^2\ \text{rad·s}^{-1}}
+\equationajustee{\boxed{\omega_0\simeq2\cdot10^2\ \text{rad·s}^{-1}}}
+Au maximum, \(|\underline H_m|_{max}=\dfrac{2Q^2}{\sqrt{4Q^2-1}}\simeq Q\) pour \(Q\gg1\). Le sommet se lit vers 90, rapporté au plateau égal à 1 :
+\equationajustee{\boxed{Q\simeq1\cdot10^2}}
+Justification a posteriori : avec \(Q\simeq10^2\), Q18 donne \(\omega_r/\omega_0-1\simeq-1/(4Q^2)\simeq-3\cdot10^{-5}\). Prendre \(\omega_r=\omega_0\) est donc légitime.
+
+\textbf{Q20.} Avec la masse de lestage, le système a pour masse \(m+m_a\) et la même raideur \(k\). Donc \(\omega_0^2=\dfrac{k}{m+m_a}\), et
+\equationajustee{\frac1{\omega_0^2}=\frac mk+\frac{m_a}{k} .}
+La figure 7 montre bien une droite en fonction de \(m_a\), de pente \(1/k\). Elle passe par \((0\,;\,19{,}2\cdot10^{-6}\ \text{s}^2)\) et environ \((4{,}1\cdot10^{-3}\ \text{kg}\,;\,20{,}65\cdot10^{-6}\ \text{s}^2)\), d'où la pente :
+\equationajustee{\frac1k\simeq\frac{1{,}45\cdot10^{-6}}{4{,}1\cdot10^{-3}}\ \text{s}^2\text{·kg}^{-1}\simeq3{,}5\cdot10^{-4}\ \text{s}^2\text{·kg}^{-1}}
+\equationajustee{\boxed{k\simeq3\cdot10^3\ \text{N·m}^{-1}}}
+L'ordonnée à l'origine \(m/k\) donne aussi \textbf{la masse \(m\) du plan et du porte-plan} :
+\equationajustee{m\simeq2{,}9\cdot10^3\times1{,}92\cdot10^{-5}\ \text{kg}}
+\equationajustee{\boxed{m\simeq6\cdot10^{-2}\ \text{kg}}}
+La valeur est comprise entre 5 et \(6\cdot10^{-2}\) kg selon la lecture. Contrôle : \(1/\sqrt{19{,}2\cdot10^{-6}}\simeq2{,}3\cdot10^2\) rad/s, soit \(f_0\simeq36\) Hz, en accord avec Q19.
+
+\textbf{Q21.} En module, \(F_1=\dfrac{kx_1}{|\underline H_m|}\), donc
+\equationajustee{k=\frac{F_1\,|\underline H_m|(40\ \text{Hz})}{x_1} .}
+Sur la figure 6, juste au-dessus de la résonance, on lit \(|\underline H_m|(40\ \text{Hz})\simeq3\) :
+\equationajustee{k\simeq\frac{2\cdot10^{-6}\times3}{2\cdot10^{-9}}\ \text{N·m}^{-1}}
+\equationajustee{\boxed{k\simeq3\cdot10^3\ \text{N·m}^{-1}}}
+Commentaire : on retrouve la valeur mesurée par la méthode de Cleveland (Q20), ce qui confirme la cohérence de l'étalonnage. À 40 Hz, si près de \(f_0\), on ne peut pas utiliser la relation statique \(F_1=kx_1\), qui donnerait \(10^3\) N/m.
+
+La lecture de \(|\underline H_m|\) est toutefois sensible à la position exacte du pic : le modèle donne de 3 à 5. Le résultat n'est donc fiable qu'à un facteur 1,5 près.
+
+\hypertarget{partie-ii-mesure-du-duxe9placement-relatif-entre-la-sphuxe8re-et-le-plan}{%
+\section{Partie II --- Mesure du déplacement relatif entre la sphère et le plan}\label{partie-ii-mesure-du-duxe9placement-relatif-entre-la-sphuxe8re-et-le-plan}}
+
+\hypertarget{ii.1-fonctionnement-du-capteur-capacitif}{%
+\subsection{II.1 --- Fonctionnement du capteur capacitif}\label{ii.1-fonctionnement-du-capteur-capacitif}}
+
+\textbf{Q22.} On a \(\ell/R\simeq5\cdot10^{-5}/3\cdot10^{-2}\simeq2\cdot10^{-3}\ll1\). Les effets de bord ne concernent qu'une couronne de largeur de l'ordre de \(\ell\) au bord des disques. Partout ailleurs, les armatures se comportent comme deux plans infinis uniformément chargés.
+
+Sous cette hypothèse, on étudie d'abord la cause, la distribution de charges. En un point \(M\) entre les armatures, les plans \((M,\vec u_r,\vec u_x)\) et \((M,\vec u_\theta,\vec u_x)\) sont des plans de symétrie de cette distribution. Le champ \(\vec E(M)\), qui en est la conséquence, appartient à ces deux plans, donc à leur intersection, la droite \((M,\vec u_x)\) :
+\equationajustee{\vec E=E\,\vec u_x .}
+La distribution de charges est invariante par rotation autour de \((Ox)\) et par toute translation parallèle aux armatures. \(E\) ne dépend donc ni de \(\theta\) ni de \(r\) :
+\equationajustee{\boxed{\vec E=E(x)\,\vec u_x}}
+
+\textbf{Q23.} Il n'y a pas de charge entre les armatures (les charges sont surfaciques) : la densité volumique de charge y est nulle. L'équation de Maxwell-Gauss y donne \(\mathrm{div}\,\vec E=0\).
+
+Avec la forme \(\vec E=E(x)\,\vec u_x\) obtenue en Q22, le formulaire donne \(\mathrm{div}\,\vec E=\dfrac{\mathrm dE}{\mathrm dx}\).
+
+Donc \(E\) est indépendant de \(x\), comme de \(r\) et \(\theta\) : \textbf{\(\vec E\) est uniforme} dans le condensateur.
+
+\textbf{Q24.} En régime statique, l'équation de Maxwell-Faraday donne \(\overrightarrow{\mathrm{rot}}\,\vec E=-\partial\vec B/\partial t=\vec 0\). Un champ de rotationnel nul dérive d'un potentiel :
+\equationajustee{\boxed{\vec E=-\overrightarrow{\mathrm{grad}}\,V}}
+Comme \(\vec E=E\,\vec u_x\), les dérivées de \(V\) par rapport à \(r\) et \(\theta\) sont nulles : \(V\) ne dépend que de \(x\), et
+\equationajustee{\frac{\mathrm dV}{\mathrm dx}=-E .}
+\(E\) est une constante (Q23). On intègre de l'armature \(O\) (\(x=0\), potentiel \(V_O\)) jusqu'à l'abscisse \(x\) :
+\equationajustee{V(x)=V_O-Ex}
+pour \(0\le x\le\ell\).
+En \(x=\ell\) (armature \(A\)), \(V_A=V_O-E\ell\), donc \(E=(V_O-V_A)/\ell=U/\ell\) :
+\equationajustee{\boxed{\vec E=\frac{U}{\ell}\,\vec u_x}}
+Le champ est dirigé de \(O\) (chargée \(+Q\)) vers \(A\).
+
+\textbf{Q25.} \(u_e\) est uniforme dans le volume \(\pi R^2\ell\) du cylindre compris entre les armatures :
+\equationajustee{\begin{aligned}
+E_e&=\frac{\varepsilon_0}{2}\frac{U^2}{\ell^2}\,\pi R^2\ell\\
+&=\frac{\varepsilon_0\pi R^2U^2}{2\ell}
+\end{aligned}}
+\equationajustee{\boxed{E_e=\frac{\varepsilon_0\pi R^2U^2}{2\ell}}}
+
+\textbf{Q26.} \(E_e=\dfrac12CU^2\). On identifie avec Q25 pour tout \(U\) :
+\equationajustee{\boxed{C=\frac{\varepsilon_0\pi R^2}{\ell}}}
+Numériquement, \(C\simeq5\cdot10^{-10}\) F pour \(\ell=50\ \mu\)m.
+
+\textbf{Q27.} Conventions (schéma de la figure 9) : on note \(G\) et \(D\) les nœuds de gauche et de droite, communs au condensateur et à la bobine. D'après la flèche de la figure, \(u_c=V_G-V_D\).
+
+On oriente le courant \(i\) dans la bobine de \(G\) vers \(D\) : la bobine est en convention récepteur pour la tension \(u_c\), donc
+\equationajustee{u_c=L\frac{\mathrm di}{\mathrm dt} .}
+Le courant \(i\) revient de \(D\) vers \(G\) à travers le condensateur.
+
+Dans le condensateur, le courant orienté de \(G\) vers \(D\) (convention récepteur pour \(u_c\)) vaut donc \(-i\) :
+\equationajustee{-i=C\frac{\mathrm du_c}{\mathrm dt} .}
+En dérivant cette relation et en reportant dans la première :
+\equationajustee{\boxed{\frac{\mathrm d^2u_c}{\mathrm dt^2}+\frac{1}{LC}u_c=0}}
+C'est l'équation d'un oscillateur harmonique de pulsation \(1/\sqrt{LC}\) :
+\equationajustee{\boxed{f_{LC}=\frac{1}{2\pi\sqrt{LC}}}}
+
+\textbf{Q28.} On reporte \(C\) de Q26 :
+\equationajustee{\begin{aligned}
+f_{LC}^2&=\frac{1}{4\pi^2LC}\\
+&=\frac{\ell}{4\pi^3\varepsilon_0R^2L}
+\end{aligned}}
+\equationajustee{\boxed{\ell=4\pi^3\varepsilon_0R^2L\,f_{LC}^2}}
+Seule \(f_{LC}\) varie : sa mesure donne \(\ell\).
+
+\textbf{Q29.} On différentie (la dérivée de \(f_{LC}^2\) est \(2f_{LC}\)) :
+\equationajustee{\boxed{\mathrm d\ell=8\pi^3\varepsilon_0R^2L\,f_{LC}\,\mathrm df}}
+soit encore \(\dfrac{\mathrm d\ell}{\ell}=2\dfrac{\mathrm df}{f_{LC}}\).
+
+On prend \(8\pi^3\simeq2{,}5\cdot10^2\), \(\varepsilon_0=9\cdot10^{-12}\) F/m, \(R^2=9\cdot10^{-4}\) m² et \(L=2\cdot10^{-6}\) H. Avec \(f_{LC}=10^7\) Hz et \(\mathrm df=0{,}2\) Hz :
+\equationajustee{\begin{aligned}
+\mathrm d\ell&\simeq2{,}5\times9\times9\times2\times0{,}2\cdot10^{2-12-4-6+7}\ \text{m}\\
+&\simeq81\cdot10^{-13}\ \text{m}
+\end{aligned}}
+\equationajustee{\boxed{\mathrm d\ell_{min}\simeq8\cdot10^{-12}\ \text{m}}}
+Remarque : les données ne sont pas tout à fait cohérentes. Pour \(\ell=50\ \mu\)m, Q28 donne \(f_{LC}\simeq5\) MHz, et \(\mathrm d\ell=2\ell\,\mathrm df/f\) donnerait alors \(2\cdot10^{-12}\) m. Dans les deux cas, la résolution est \textbf{picométrique}, comparable à celle du capteur interférométrique.
+
+\hypertarget{ii.2-perturbation-liuxe9e-uxe0-luxe9coulement-de-lair-entre-les-armatures}{%
+\subsection{II.2 --- Perturbation liée à l'écoulement de l'air entre les armatures}\label{ii.2-perturbation-liuxe9e-uxe0-luxe9coulement-de-lair-entre-les-armatures}}
+
+\textbf{Q30.} Système : le volume ouvert et fixe compris entre \(x\) et \(x+\mathrm dx\), de section \(S\), traversé par l'écoulement \(\vec v=v(x,t)\,\vec u_x\). On fait un bilan de masse entre \(t\) et \(t+\mathrm dt\).
+
+Terme de variation temporelle : la masse contenue vaut \(\rho(x,t)S\,\mathrm dx\) à l'instant \(t\), donc
+\equationajustee{\begin{aligned}
+m(t+\mathrm dt)-m(t)&=\left[\rho(x,t+\mathrm dt)-\rho(x,t)\right]S\,\mathrm dx\\
+&=\frac{\partial\rho}{\partial t}\,S\,\mathrm dx\,\mathrm dt
+\end{aligned}}
+Terme d'échange : le débit massique à travers la section d'abscisse \(x\) vaut \(\rho(x,t)v(x,t)S\). La masse entrée en \(x\) moins la masse sortie en \(x+\mathrm dx\) vaut donc :
+\equationajustee{\begin{aligned}
+\delta m_e-\delta m_s&=\left[\rho(x,t)v(x,t)-\rho(x+\mathrm dx,t)v(x+\mathrm dx,t)\right]S\,\mathrm dt\\
+&=-\frac{\partial(\rho v)}{\partial x}\,S\,\mathrm dx\,\mathrm dt
+\end{aligned}}
+Il n'y a ni création ni destruction de masse, donc \(m(t+\mathrm dt)-m(t)=\delta m_e-\delta m_s\) :
+\equationajustee{\boxed{\frac{\partial\rho}{\partial t}+\frac{\partial(\rho v)}{\partial x}=0}}
+
+\textbf{Q31.} La dérivée particulaire de la masse volumique est
+\equationajustee{\boxed{\frac{\mathrm D\rho}{\mathrm Dt}=\frac{\partial\rho}{\partial t}+\left(\vec v\cdot\overrightarrow{\mathrm{grad}}\right)\rho}}
+D'après le formulaire, \(\mathrm{div}(\rho\vec v)=\rho\,\mathrm{div}\,\vec v+\vec v\cdot\overrightarrow{\mathrm{grad}}\,\rho\). L'équation de conservation devient donc
+\equationajustee{\frac{\mathrm D\rho}{\mathrm Dt}+\rho\,\mathrm{div}\,\vec v=0 .}
+L'écoulement est incompressible si la masse volumique de chaque particule de fluide se conserve au cours de son mouvement, c'est-à-dire \(\mathrm D\rho/\mathrm Dt=0\). Comme \(\rho\neq0\), cela équivaut à
+\equationajustee{\boxed{\mathrm{div}\,\vec v=0}}
+
+\textbf{Q32.} Soit \(\Sigma\) une surface fermée fixe qui délimite un volume \(\mathcal V\). Par définition, le débit volumique sortant est le flux de \(\vec v\) à travers \(\Sigma\). Le théorème de Green-Ostrogradski le transforme en intégrale de volume :
+\equationajustee{\begin{aligned}
+D_V&=\oint_\Sigma\vec v\cdot\mathrm d\vec S\\
+&=\iiint_{\mathcal V}\mathrm{div}\,\vec v\,\mathrm d\tau
+\end{aligned}}
+L'écoulement est incompressible, donc \(\mathrm{div}\,\vec v=0\) en tout point (Q31) :
+\equationajustee{\boxed{D_V=0}}
+
+\textbf{Q33.} Le fluide visqueux a la même vitesse normale que les parois (condition d'imperméabilité, incluse dans l'adhérence). On se place dans le référentiel de l'armature \(O\). L'armature \(O\), en \(x=0\), est fixe :
+\equationajustee{\boxed{v_x(r,0,t)=0}}
+L'armature \(A\), en \(x=\ell(t)\), est mobile, de vitesse \(\dot\ell\,\vec u_x\) :
+\equationajustee{\boxed{v_x(r,\ell,t)=\dot\ell(t)}}
+
+\textbf{Q34.} À l'instant \(t\), on applique Q32 à la surface fermée fixe qui coïncide avec le cylindre de rayon \(r\) et de hauteur \(\ell\). Les flux sortants sont :
+
+\begin{itemize}
+\tightlist
+\item
+  à travers le disque \(x=0\) : nul, puisque \(v_x=0\) ;
+\item
+  à travers le disque \(x=\ell\) : \(\pi r^2\dot\ell\) ;
+\item
+  à travers la surface latérale : \(2\pi r\ell\,u(r,t)\), par définition de \(u\).
+\end{itemize}
+
+Leur somme est nulle, et \(\ell\simeq\ell_0\) au premier ordre en \(\ell_1/\ell_0\) :
+\equationajustee{2\pi r\ell_0\,u+\pi r^2\dot\ell=0}
+\equationajustee{\boxed{u(r,t)\simeq-\frac{r\,\dot\ell(t)}{2\ell_0}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q34-bilan-debit.pdf}
+\caption*{Figure 3 --- Bilan de débit sur le cylindre de rayon r entre les
+armatures (écart exagéré) : l'air chassé par A sort latéralement à la
+vitesse u(r, t)}
+\end{figure}
+
+Ordre de grandeur : \(|\dot\ell|\sim\ell_1\omega\), avec \(\ell_1\sim10^{-9}\) m et \(\omega\sim2\cdot10^2\) rad/s, d'où \(|\dot\ell|\sim2\cdot10^{-7}\) m/s. Alors :
+\equationajustee{|u(R)|\sim\frac{3\cdot10^{-2}\times2\cdot10^{-7}}{2\times5\cdot10^{-5}}\ \text{m/s}\sim6\cdot10^{-5}\ \text{m/s}}
+\equationajustee{\boxed{|u(R)|\sim10^{-4}\ \text{m·s}^{-1}}}
+
+\textbf{Q35.} Échelles caractéristiques : vitesse \(U\sim10^{-4}\) m/s (Q34) et longueur \(\ell_0\), comme l'impose l'énoncé. Le terme convectif est d'ordre \(\rho_aU^2/\ell_0\) et le terme visqueux d'ordre \(\eta_aU/\ell_0^2\). Leur rapport est le nombre de Reynolds :
+\equationajustee{\mathrm{Re}=\frac{\rho_aU\ell_0}{\eta_a}\sim\frac{1\times10^{-4}\times5\cdot10^{-5}}{2\cdot10^{-5}}}
+\equationajustee{\boxed{\mathrm{Re}\sim10^{-4}}}
+\textbf{Le terme convectif \(\rho_a(\vec v\cdot\overrightarrow{\mathrm{grad}})\vec v\) est négligeable} devant le terme visqueux.
+
+\textbf{Q36.} L'échelle de temps est imposée par l'excitation sinusoïdale : c'est \(1/\omega\). L'échelle d'espace du laplacien est \(\ell_0\). Alors \(\rho_a|\partial\vec v/\partial t|\sim\rho_aU\omega\) et \(\eta_a|\Delta\vec v|\sim\eta_aU/\ell_0^2\), d'où :
+\equationajustee{\begin{aligned}
+\frac{\rho_a|\partial\vec v/\partial t|}{\eta_a|\Delta\vec v|}&\sim\frac{\rho_a\omega\ell_0^2}{\eta_a}\\
+&\sim\frac{1\times2\cdot10^2\times2{,}5\cdot10^{-9}}{2\cdot10^{-5}}
+\end{aligned}}
+\equationajustee{\boxed{\frac{\rho_a|\partial\vec v/\partial t|}{\eta_a|\Delta\vec v|}\sim10^{-2}\ll1}}
+\textbf{Le terme instationnaire est négligeable.} Il reste l'équation de Stokes quasi statique :
+\equationajustee{\vec 0=-\overrightarrow{\mathrm{grad}}\,P+\eta_a\Delta\vec v .}
+
+\textbf{Q37.} On lit le formulaire en deux étapes. Pour \(\vec v=v_r(r,x,t)\vec u_r\), on a \(v_\theta=v_x=0\) et rien ne dépend de \(\theta\). Le laplacien vectoriel se réduit à
+\equationajustee{\Delta\vec v=\left(\Delta v_r-\frac{v_r}{r^2}\right)\vec u_r ,}
+et le laplacien scalaire de \(v_r\) vaut
+\equationajustee{\Delta v_r=\frac1r\frac{\partial}{\partial r}\left(r\frac{\partial v_r}{\partial r}\right)+\frac{\partial^2v_r}{\partial x^2} .}
+
+\begin{itemize}
+\tightlist
+\item
+  Projection sur \(\vec u_x\) : \((\Delta\vec v)_x=0\), donc \(\dfrac{\partial P}{\partial x}=0\). \textbf{\(P=P(r,t)\) ne dépend pas de \(x\)}.
+\item
+  Projection sur \(\vec u_r\) :
+\end{itemize}
+
+\equationajustee{\frac{\partial P}{\partial r}=\eta_a\left[\frac1r\frac{\partial}{\partial r}\left(r\frac{\partial v_r}{\partial r}\right)-\frac{v_r}{r^2}+\frac{\partial^2v_r}{\partial x^2}\right]}
+
+\(v_r\) varie sur la distance \(R\) selon \(r\) et sur \(\ell_0\) selon \(x\).
+
+Les deux premiers termes du crochet sont donc d'ordre \(U/R^2\) et le dernier d'ordre \(U/\ell_0^2\). Leur rapport vaut \((\ell_0/R)^2\sim3\cdot10^{-6}\). On néglige les deux premiers :
+\equationajustee{\boxed{\eta_a\frac{\partial^2v_r}{\partial x^2}=\frac{\partial P}{\partial r}}}
+
+\textbf{Q38.} D'après Q37, \(P\) ne dépend pas de \(x\) : le second membre \(\partial P/\partial r\) ne dépend que de \((r,t)\).
+
+À \(r\) et \(t\) fixés, \(\partial^2v_r/\partial x^2\) est donc une constante. On intègre deux fois par rapport à \(x\), les constantes d'intégration étant des fonctions de \((r,t)\) :
+\equationajustee{\boxed{v_r=a(r,t)x^2+b(r,t)x+c(r,t)}}
+avec
+\equationajustee{a=\frac{1}{2\eta_a}\frac{\partial P}{\partial r} .}
+
+\textbf{Q39.} La vitesse moyenne est une moyenne spatiale de \(v_r\) sur la surface latérale \(\Sigma_\ell\) du cylindre, d'aire \(2\pi r\ell_0\) :
+\equationajustee{u(r,t)=\frac{1}{2\pi r\ell_0}\iint_{\Sigma_\ell}v_r\,\mathrm dS .}
+\(v_r\) ne dépend pas de \(\theta\), donc cette moyenne se réduit à une moyenne sur la hauteur :
+\equationajustee{\boxed{u(r,t)=\frac1{\ell_0}\int_0^{\ell_0}v_r(r,x,t)\,\mathrm dx}}
+Les deux armatures n'ont pas de vitesse radiale. Le non-glissement impose donc :
+
+\begin{itemize}
+\tightlist
+\item
+  \(v_r(r,0,t)=0\), soit \(c=0\) ;
+\item
+  \(v_r(r,\ell_0,t)=0\), soit \(b=-a\ell_0\).
+\end{itemize}
+
+Alors \(v_r=-a\,x(\ell_0-x)\), et
+\equationajustee{\begin{aligned}
+u&=-\frac{a}{\ell_0}\int_0^{\ell_0}x(\ell_0-x)\,\mathrm dx\\
+&=-\frac{a}{\ell_0}\cdot\frac{\ell_0^3}{6}\\
+&=-\frac{a\ell_0^2}{6}
+\end{aligned}}
+d'où \(a=-6u/\ell_0^2\) et
+\equationajustee{\boxed{v_r(r,x,t)=\frac{6u(r,t)}{\ell_0}\,x\left(1-\frac{x}{\ell_0}\right)}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q39-profil-poiseuille.pdf}
+\caption*{Figure 4 --- Profil de Poiseuille de v\_r entre les armatures : nul sur
+les parois, de moyenne u et de maximum 3u/2 en ℓ₀/2}
+\end{figure}
+
+\textbf{Q40.} D'après Q37 et Q39, puis Q34 :
+\equationajustee{\begin{aligned}
+\frac{\partial P}{\partial r}&=\eta_a\frac{\partial^2v_r}{\partial x^2}\\
+&=2\eta_aa\\
+&=-\frac{12\eta_au}{\ell_0^2}\\
+&=\frac{6\eta_a\dot\ell}{\ell_0^3}\,r
+\end{aligned}}
+La pression est continue au bord du film : \(P(R,t)=P_0\). On intègre de \(r\) à \(R\) :
+\equationajustee{P_0-P(r,t)=\frac{6\eta_a\dot\ell}{\ell_0^3}\cdot\frac{R^2-r^2}{2}}
+\equationajustee{\boxed{P(r,t)=P_0-\frac{3\eta_a\dot\ell(t)}{\ell_0^3}\left(R^2-r^2\right)}}
+Quand les armatures se rapprochent (\(\dot\ell<0\)), il y a surpression au centre.
+
+\textbf{Q41.} L'air du film est du côté \(x>0\) de l'armature \(O\). Il exerce sur sa face intérieure la force \(-\left(\int_0^RP\,2\pi r\,\mathrm dr\right)\vec u_x\). La face extérieure, soumise à \(P_0\), reçoit \(+P_0\pi R^2\vec u_x\).
+
+La résultante nette fait donc intervenir \(P-P_0\). On calcule l'intégrale :
+\equationajustee{\int_0^R(R^2-r^2)\,2\pi r\,\mathrm dr=\frac{\pi R^4}{2} .}
+La résultante des forces de pression vaut :
+\equationajustee{\boxed{\vec F_v=\frac{3\pi\eta_aR^4}{2\ell_0^3}\,\dot\ell(t)\,\vec u_x}}
+Si l'on ne compte que la face intérieure, il s'y ajoute \(-P_0\pi R^2\vec u_x\). Cette force est proportionnelle à \(\dot\ell\) : c'est un amortissement visqueux dû au film écrasé. L'armature \(A\), solidaire du plan, subit \(-\vec F_v\).
+
+Ordre de grandeur, avec \(|\dot\ell|\sim2\cdot10^{-7}\) m/s :
+\equationajustee{F_v\sim\frac{3\pi\times2\cdot10^{-5}\times8\cdot10^{-7}}{2\times1{,}25\cdot10^{-13}}\times2\cdot10^{-7}\ \text{N}\sim10^{-4}\ \text{N} ,}
+du même ordre que les « plusieurs dizaines de µN » annoncées par l'énoncé.
+
+\textbf{Q42.} La force parasite \(F_v\propto R^4/\ell_0^3\) est très sensible à la distance que l'air doit parcourir pour sortir du film. Les trous percés dans les armatures laissent l'air s'échapper localement : la distance de drainage passe de \(R\) à la demi-distance \(a\) entre trous.
+
+Découpons l'armature en \(N\sim R^2/a^2\) cellules, chacune donnant une force \(\propto a^4/\ell_0^3\). La force totale est alors \(\propto R^2a^2/\ell_0^3\), soit une réduction d'un facteur \((a/R)^2\), de l'ordre de \(10^{-3}\) pour \(a\sim1\) mm. \textbf{Le perçage supprime l'essentiel de la surpression et donc de la force parasite qui perturberait le capteur de force}, au prix d'une légère baisse de la capacité.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q42-armatures-percees.pdf}
+\caption*{Figure 5 --- Armature pleine (drainage sur la distance R) et armature
+percée (drainage sur la demi-distance a entre trous)}
+\end{figure}
+
+\hypertarget{partie-iii-application-uxe0-la-nanorhuxe9ologie}{%
+\section{Partie III --- Application à la nanorhéologie}\label{partie-iii-application-uxe0-la-nanorhuxe9ologie}}
+
+\textbf{Q43.} \(h=h_0-h_1(t)\) donne \(\dot h=-\dot h_1\). La force de Reynolds s'écrit donc
+\equationajustee{\vec F=\frac{6\pi\eta R_0^2}{h_0}\,\dot h_1\,\vec u_x .}
+En complexes, \(\dot{\underline h}_1=j\omega\underline{h_1}e^{j\omega t}\), d'où
+\equationajustee{\underline{F_1}=j\,\frac{6\pi\eta\omega R_0^2}{h_0}\,\underline{h_1} .}
+\equationajustee{\boxed{\underline Z=j\,\frac{6\pi\eta\omega R_0^2}{h_0}}}
+\equationajustee{\boxed{\begin{aligned}
+Z'&=0\\
+Z''&=\frac{6\pi\eta\omega R_0^2}{h_0}
+\end{aligned}}}
+L'impédance est purement imaginaire : la force est en phase avec la vitesse, la réponse est purement visqueuse (dissipative), sans composante élastique.
+
+\textbf{Q44.} Le modèle prévoit \(Z'=0\) et
+\equationajustee{\frac1{Z''}=\frac{h_0}{6\pi\eta\omega R_0^2} ,}
+c'est-à-dire une droite passant par l'origine.
+
+\begin{itemize}
+\tightlist
+\item
+  Figure 12 : \(Z''\) décroît en \(1/h_0\) et \(Z'\) reste très petit devant \(Z''\) (quelques µN/nm au plus, contre 50 à 250 µN/nm aux faibles distances).
+\item
+  Figure 13 : \(1/Z''\) est une droite passant par l'origine, de pente \(\simeq0{,}27/800\simeq3\cdot10^{-4}\) (nm/µN)/nm, et la force statique est nulle.
+\end{itemize}
+
+\textbf{Le modèle de Reynolds est validé de quelques nanomètres (environ 10 nm) jusqu'à 800 nm.}
+
+Il est mis en défaut quand \(h_0\to0\) (\(h_0\lesssim\) quelques nm). \(1/Z''\) ne tend plus vers zéro : \(Z''\) cesse de diverger. En même temps, \(Z'\) n'est plus négligeable et la force statique croît brutalement.
+
+Interprétation : les surfaces entrent en contact ou presque. La surpression du film, qui varie comme \(1/h_0^2\), devient énorme. Les surfaces de Pyrex se déforment alors élastiquement, ce qui donne une composante élastique \(Z'\neq0\) et limite la dissipation. La rugosité nanométrique des surfaces et la taille finie des molécules (quelques Å) rendent aussi caduques, à cette échelle, la description continue et la notion même de distance \(h_0\).
+
+\textbf{Q45.} Avec une longueur de glissement \(b\), tout se passe comme si l'entrefer valait \(h_0+b\). Donc
+\equationajustee{\frac{1}{Z''}=\frac{h_0+b}{6\pi\eta\omega R_0^2} :}
+c'est une droite de même pente, translatée de \(-b\) selon \(h_0\).
+
+Sur la figure 14, les points noirs (Pyrex mouillant) passent par l'origine, donc \(b\simeq0\). Les points gris (Pyrex silanisé) suivent une droite parallèle dont l'extrapolation coupe l'axe en \(h_0\simeq-20\) nm :
+\equationajustee{\boxed{b\simeq2\cdot10^{-8}\ \text{m}}}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q45-longueur-glissement.pdf}
+\caption*{Figure 6 --- Allure de 1/Z″ en fonction de h₀ : le glissement translate
+la droite de −b, l'extrapolation coupe l'axe en −b}
+\end{figure}
+
+La correction relative vaut \(b/h_0\), puisque
+\equationajustee{\frac{Z''_{\text{glissement}}}{Z''_{\text{\text{adhérence}}}}=\frac{1}{1+b/h_0} .}
+Pour un écoulement macroscopique (\(h_0\sim1\) mm), \(b/h_0\sim10^{-5}\) et le glissement est indétectable : la condition d'adhérence est alors excellente. En nanorhéologie (\(h_0\sim10\) à 100 nm), \(b/h_0\) vaut de 0,2 à 2. Le glissement modifie la force d'un facteur allant jusqu'à 3 et ne peut plus être négligé.
+
+\textbf{FIN}
+
+\end{document}

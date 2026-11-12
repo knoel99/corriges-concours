@@ -1,0 +1,833 @@
+% Gabarit pandoc des corrigés publiés (brut et guidé). Contenu sans marque ni nom de site.
+% Compilation : lualatex (latexmk -lualatex).
+% Le Markdown reste la source unique : ne pas éditer ce fichier .tex à la main.
+\documentclass[11pt,a4paper]{article}
+
+% --- Moteur, polices (Latin Modern) et langue ---------------------------------
+\usepackage{iftex}
+\ifLuaTeX\else\errmessage{Ce document se compile avec lualatex}\fi
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{fontspec}
+% mathrm=sym : \mathrm prend ses glyphes dans la police mathématique (ℓ, μ, Ω), comme KaTeX.
+\usepackage[math-style=TeX,bold-style=TeX,mathrm=sym]{unicode-math}
+% Repli pour les glyphes absents de Latin Modern (indices et exposants Unicode,
+% flèches, filets des schémas en texte, symboles) : DejaVu, puis Latin Modern Math
+% (ℓ, lettres mathématiques Unicode des légendes).
+\directlua{
+  luaotfload.add_fallback("repliTexte", {"DejaVuSerif:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+  luaotfload.add_fallback("repliMono", {"DejaVuSansMono:mode=harf;", "DejaVuSans:mode=harf;", "file:latinmodern-math.otf:mode=harf;"})
+}
+\setmainfont{Latin Modern Roman}[RawFeature={fallback=repliTexte}]
+\setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
+\setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
+\setmathfont{Latin Modern Math}
+\usepackage[french]{babel}
+\frenchsetup{SmallCapsFigTabCaptions=false}
+
+% --- Mise en page --------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm,headheight=14pt,footskip=1.2cm]{geometry}
+\usepackage{microtype}
+\setlength{\emergencystretch}{4em}
+\tolerance=1500
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55\baselineskip plus 2pt minus 1pt}
+\usepackage{xcolor}
+% Gris nommés : babel-french rend « ! » actif dans le document.
+\definecolor{gris2}{gray}{0.98}
+\definecolor{gris3}{gray}{0.97}
+\definecolor{gris5}{gray}{0.95}
+\definecolor{gris35}{gray}{0.65}
+\definecolor{gris40}{gray}{0.60}
+\definecolor{gris45}{gray}{0.55}
+\definecolor{gris50}{gray}{0.50}
+\definecolor{gris55}{gray}{0.45}
+\definecolor{gris60}{gray}{0.40}
+\definecolor{gris65}{gray}{0.35}
+\definecolor{gris70}{gray}{0.30}
+\definecolor{gris80}{gray}{0.20}
+\definecolor{gris85}{gray}{0.15}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small,labelformat=empty,justification=centering}
+\usepackage{booktabs,longtable,array,multirow,calc}
+\usepackage{siunitx}
+\sisetup{locale=FR}
+\usepackage[version=4]{mhchem}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\setlist{nosep,leftmargin=*,topsep=2pt}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{bookmark}
+\hypersetup{pdftitle={Agro-Véto TB — SVT 2026},pdfauthor={Rédigé par IA},pdfcreator={LaTeX},pdfsubject={Corrigé brut}}
+\usepackage{xurl}
+
+% --- Pandoc : listes, tableaux, figures ----------------------------------------
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.55\textheight 0.55\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setcounter{secnumdepth}{-\maxdimen}
+\providecommand{\pandocbounded}[1]{#1}
+\usepackage{longtable,booktabs,array}
+
+% --- Code (listings) -----------------------------------------------------------
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  postbreak=\mbox{\textcolor{gris50}{$\hookrightarrow$}\space},
+  frame=single,
+  rulecolor=\color{gris35},
+  framesep=4pt,
+  xleftmargin=5pt,xrightmargin=5pt,
+  backgroundcolor=\color{gris3},
+  keywordstyle=\bfseries,
+  commentstyle=\color{gris65},
+  stringstyle=\color{gris80},
+  showstringspaces=false,
+  tabsize=4,
+  extendedchars=true,
+  aboveskip=6pt,belowskip=6pt,
+}
+
+% --- Macros des corrigés (KaTeX ↔ LaTeX) ---------------------------------------
+% Les corrigés sont écrits pour KaTeX : on définit ici ce que KaTeX connaît et
+% que LaTeX n'a pas, sans jamais retoucher le Markdown.
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\Z}{\mathbb{Z}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\C}{\mathbb{C}}
+\providecommand{\dd}{\mathrm{d}}
+\providecommand{\llbracket}{\lBrack}
+\providecommand{\rrbracket}{\rBrack}
+\providecommand{\lBrace}{\lbrace}
+\providecommand{\rBrace}{\rbrace}
+\providecommand{\Box}{\square}
+\providecommand{\Diamond}{\lozenge}
+\providecommand{\varnothing}{\emptyset}
+\providecommand{\argmax}{\operatorname*{arg\,max}}
+\providecommand{\argmin}{\operatorname*{arg\,min}}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+% Équation hors texte : réduite à la largeur de la ligne si elle déborde.
+\newsavebox{\boiteequation}
+\newcommand{\equationajustee}[1]{%
+  \sbox{\boiteequation}{$\displaystyle #1$}%
+  \ifdim\wd\boiteequation>\linewidth
+    \[\resizebox{\linewidth}{!}{\usebox{\boiteequation}}\]%
+  \else
+    \[#1\]%
+  \fi}
+
+% --- Encadrés pédagogiques (sobres, lisibles en noir et blanc) -----------------
+\tcbset{
+  encadre/.style={
+    enhanced,breakable,sharp corners,
+    colback=white,colframe=gris55,
+    boxrule=0.4pt,leftrule=2.2pt,
+    left=6pt,right=6pt,top=3pt,bottom=3pt,
+    before skip=6pt,after skip=6pt,
+    fonttitle=\bfseries\small,coltitle=black,
+    attach title to upper,after title={\quad},
+    parbox=false,
+  }
+}
+\newtcolorbox{indication}[1]{encadre,colframe=gris45,colback=gris2,title={Indication~#1}}
+\newtcolorbox{methode}{encadre,colframe=gris70,title={Méthode}}
+\newtcolorbox{piege}{encadre,colframe=gris85,boxrule=0.8pt,leftrule=2.2pt,title={Piège}}
+\newtcolorbox{jury}{encadre,colframe=gris60,colback=gris5,title={Jury}}
+\newtcolorbox{encadrenote}{encadre,colframe=gris40}
+
+% --- Titres de section ---------------------------------------------------------
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt plus 4pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 3pt minus 2pt}{4pt}
+\titlespacing*{\subsubsection}{0pt}{8pt plus 2pt minus 2pt}{2pt}
+
+% --- En-tête et pied de page ---------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textsc{Corrigé brut} · Agro-Véto TB}
+\fancyhead[R]{\small SVT 2026}
+\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}
+\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\footnotesize \thepage\,/\,\pageref*{LastPage}}\fancyfoot[L]{\footnotesize Corrigé rédigé par IA, non officiel}\renewcommand{\headrulewidth}{0pt}}
+
+\begin{document}
+\thispagestyle{plain}
+\begin{center}
+  {\small\scshape Corrigé brut}\par\smallskip
+  {\LARGE\bfseries Agro-Véto TB — SVT 2026\par}\medskip
+  {\large Agro-Véto · TB · SVT · 2026\par}
+\end{center}
+\vspace{2pt}\hrule\vspace{8pt}
+
+\emph{Corrigé rédigé par IA, non officiel. Signalez toute erreur.}
+
+\textbf{Le bois face aux changements environnementaux.} Durée 3 h, calculatrice et documents interdits. L'annexe A3 (annexe A1, reproduction du document 1) n'est pas jointe au sujet disponible : la question 1 est traitée sous forme de liste de légendes.
+
+\hypertarget{partie-a-la-croissance-du-bois-en-contexte-de-suxe9cheresse}{%
+\section{Partie A --- La croissance du bois en contexte de sécheresse}\label{partie-a-la-croissance-du-bois-en-contexte-de-suxe9cheresse}}
+
+\hypertarget{question-1}{%
+\subsection{Question 1}\label{question-1}}
+
+Légendes à porter sur l'annexe A1 (coupe transversale de tronc de chêne pubescent).
+
+\textbf{Image A (échelle centimétrique, organe entier) :}
+- au centre, la \textbf{moelle} (point sombre) ;
+- le \textbf{bois = xylème secondaire (xylème II)}, qui occupe presque toute la section ; on y distingue le \textbf{duramen} (bois de cœur, plus foncé, central, non conducteur) et l'\textbf{aubier} (bois périphérique plus clair, conducteur) ;
+- les \textbf{cernes annuels} (cercles concentriques) ;
+- les \textbf{rayons ligneux} (fines lignes radiales claires, larges chez le chêne) ;
+- une \textbf{fente radiale} de dessiccation ;
+- en périphérie, l'\textbf{écorce} : \textbf{suber} (liège, rhytidome) à l'extérieur, \textbf{liber = phloème II} mince à l'intérieur ;
+- le \textbf{cambium} (zone génératrice libéro-ligneuse), à la limite bois/écorce : on le repère à la \textbf{zone de décollement} de l'écorce, visible sur le bord de la section.
+
+\textbf{Image B (zoom du cadre de A) :}
+- \textbf{cernes} annuels successifs ; dans chaque cerne, le \textbf{bois de printemps (bois initial)} marqué par une couronne de \textbf{gros vaisseaux} (pores visibles à l'œil nu : bois à \textbf{zone poreuse}), puis le \textbf{bois d'été (bois final)} dense, à petits vaisseaux groupés en plages ;
+- \textbf{limite de cerne} entre le bois final d'une année et le bois initial de la suivante ;
+- \textbf{rayons ligneux} larges, rectilignes, perpendiculaires aux cernes.
+
+\textbf{Image C (microscope optique, carmin vert d'iode, zoom du cadre de B) :}
+- \textbf{éléments de vaisseaux de xylème II du bois de printemps} (lumière vide de ≈ 0,4 à 0,6 mm à l'échelle indiquée, paroi lignifiée colorée en vert) ;
+- \textbf{éléments de vaisseaux de xylème II du bois d'été}, plus petits, et \textbf{fibres} à paroi épaisse lignifiée (vert) ;
+- \textbf{parenchyme ligneux} et \textbf{rayon ligneux} (cellules vivantes alignées radialement) ;
+- \textbf{limite entre l'année \emph{n} et l'année \emph{n + 1}} (trait net) : à gauche le bois de printemps de l'année \emph{n + 1}, à droite le bois d'été de l'année \emph{n}.
+
+\textbf{Le bois est le xylème secondaire (xylème II)} : tissu conducteur de sève brute et de soutien, à parois lignifiées (colorées en vert par le vert d'iode), produit vers l'intérieur par le cambium.
+
+\hypertarget{question-2}{%
+\subsection{Question 2}\label{question-2}}
+
+Méthode : en climat tempéré, le cambium fonctionne de façon saisonnière. Il produit au printemps un bois clair, à cellules et vaisseaux de grand diamètre, puis en été un bois plus foncé et plus dense, et s'arrête en hiver. Un \textbf{cerne = un couple bois de printemps + bois d'été = une année}. On compte les cernes le long d'un rayon, de la moelle (bord inférieur de l'image 2.A) jusqu'à l'écorce.
+
+Sur l'image 2.A on dénombre environ 40 cernes.
+
+\equationajustee{\boxed{\text{\text{âge}} \approx 40\ \text{ans (35 \text{à} 45 ans)}}}
+
+C'est un \textbf{âge minimal} : la coupe a été faite à une certaine hauteur, les premières années de croissance en hauteur ne sont pas enregistrées ; des cernes très fins ou manquants (années sèches) et des faux cernes peuvent fausser le compte, d'où l'intérêt de compter sur plusieurs rayons.
+
+\hypertarget{question-3}{%
+\subsection{Question 3}\label{question-3}}
+
+Les barres « 0,5 mm » des images 1.C et 2.C n'ont pas la même longueur : les grossissements diffèrent et chaque mesure doit être ramenée à sa propre échelle.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1705}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4109}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3886}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Chêne pubescent (1.C)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pin sylvestre (2.C)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Diversité des cellules & grande : gros vaisseaux, petits vaisseaux, fibres, parenchyme, rayons & faible : presque uniquement des \textbf{trachéides}, rayons fins \\
+Type de bois & \textbf{hétéroxylé} & \textbf{homoxylé} \\
+Taille des éléments conducteurs & très hétérogène : vaisseaux du bois de printemps ≈ 0,4--0,6 mm de lumière, entourés de vaisseaux \textbf{≈ 10 fois plus fins} et de fibres ; vaisseaux du bois d'été encore ≈ 2 fois plus fins & homogène : trachéides ≈ 40--70 µm au printemps, \textbf{≈ 2 fois plus larges} que celles du bois d'été \\
+Organisation & bois de printemps hétérogène : gros vaisseaux en couronne au début du cerne (zone poreuse) ; bois d'été plus dense, petits vaisseaux en plages & files radiales régulières ; passage net du bois d'été (petites cellules, parois plus épaisses, vert foncé) au bois de printemps (grandes cellules, parois minces) \\
+\end{longtable}
+
+Les plus gros vaisseaux du chêne sont environ \textbf{dix fois plus larges} que les trachéides du bois de printemps du pin. Le chêne (Angiosperme) répartit les fonctions entre cellules spécialisées (vaisseaux pour la conduction, fibres à paroi épaisse pour le soutien) ; chez le pin (Gymnosperme, conifère), la trachéide assure à la fois conduction et soutien.
+
+\equationajustee{\boxed{\text{\text{chêne} : bois \text{hétéroxylé} \text{à} zone poreuse ; pin : bois \text{homoxylé} \text{à} \text{trachéides}}}}
+
+\hypertarget{question-4}{%
+\subsection{Question 4}\label{question-4}}
+
+La sève brute circule passivement dans les éléments conducteurs morts et lignifiés, sous l'effet du gradient de potentiel hydrique créé par la transpiration.
+
+\begin{itemize}
+\tightlist
+\item
+  Chêne : \textbf{vaisseaux} de grand diamètre (≈ 0,5 mm) formés d'éléments empilés dont les parois transversales sont \textbf{perforées} : tube continu, faible résistance hydraulique.
+\item
+  Pin : \textbf{trachéides} ≈ 10 fois plus étroites et \textbf{closes} (quelques mm de long) ; l'eau passe d'une trachéide à l'autre par les \textbf{ponctuations aréolées}, ce qui ajoute une forte résistance.
+\end{itemize}
+
+D'après la \textbf{loi de Poiseuille}, à gradient de pression égal, le débit d'un conduit cylindrique varie comme \(r^4\) et la vitesse moyenne comme \(r^2\). Un rapport de diamètre ≈ 10 donne donc un rapport de vitesse ≈ \(10^2\) et un rapport de débit par conduit ≈ \(10^4\).
+
+Ce modèle de tube idéal surestime l'écart réel (≈ 5 à 50 entre 10--50 m/h et 1--2 m/h), mais il en donne le sens et explique l'ordre de grandeur.
+
+\textbf{Les gros vaisseaux continus du chêne conduisent la sève beaucoup plus vite (10 à 50 m/h) que les trachéides étroites et cloisonnées du pin (1 à 2 m/h).} En contrepartie, les gros vaisseaux sont plus exposés à la cavitation (embolie) en cas de forte tension.
+
+\hypertarget{question-5}{%
+\subsection{Question 5}\label{question-5}}
+
+Schéma conventionnel (secteur de coupe transversale de tige de jeune chêne), de l'extérieur vers le centre, avec les figurés imposés :
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1594}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5222}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2884}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Position
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tissu
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Figuré
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 (externe) & \textbf{périderme} : \textbf{suber} (assise externe jaune-vert, subérifiée) et \textbf{phellogène} sous-jacent ; restes d'épiderme éventuels & périderme (phellogène) \\
+2 & \textbf{parenchyme cortical} (rose, avec cellules à tanins), \textbf{collenchyme} sous le périderme & parenchyme (blanc) ; collenchyme (+) \\
+3 & \textbf{sclérenchyme} péricyclique en arcs discontinus (plages vert foncé) & sclérenchyme (croix) \\
+4 & phloème I écrasé, puis \textbf{phloème II} en files radiales (rose) & phloème I, phloème II \\
+5 & \textbf{cambium} (fine assise entre phloème II et xylème II) & trait épais \\
+6 & \textbf{xylème II} (vert, gros vaisseaux, rayons), avec ses \textbf{cernes} : chaque couronne de gros vaisseaux marque un début de cerne & xylème II \\
+7 & xylème I, contre la moelle & xylème I (noir) \\
+8 (central) & moelle (parenchyme médullaire) & parenchyme (blanc) \\
+\end{longtable}
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q5-tige-jeune-chene.pdf}
+\caption*{Figure 1 --- Schéma conventionnel d'un quart de coupe transversale de
+tige de jeune chêne pubescent, avec les figurés imposés : périderme
+(suber et phellogène) en périphérie, xylème II (bois) marqué de cernes
+annuels}
+\end{figure}
+
+Comme sur la figure 1, on représente en périphérie le \textbf{périderme} (suber et phellogène, figuré « périderme ») et, dans le xylème II, les \textbf{limites de cerne} visibles sur le document 3 (en nombre conforme au document).
+
+Le schéma porte aussi un titre (« Schéma conventionnel d'une coupe transversale de tige de jeune chêne pubescent en structure secondaire ») et une échelle.
+
+\hypertarget{question-6}{%
+\subsection{Question 6}\label{question-6}}
+
+Sur le schéma, on légende \textbf{« bois = xylème II »} la couronne à figuré « xylème II » comprise entre le xylème I (à l'intérieur) et le cambium (à l'extérieur). C'est le tissu produit vers l'intérieur par le cambium, dont l'accumulation forme le tronc (document 1).
+
+\hypertarget{question-7}{%
+\subsection{Question 7}\label{question-7}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Construction} : charpentes, ossatures, parquets, menuiseries (résistance mécanique).
+\item
+  \textbf{Ameublement et artisanat} : meubles, ébénisterie, tonnellerie (merrains de chêne), tournerie, lutherie.
+\item
+  \textbf{Pâte à papier et carton} (cellulose des parois), panneaux de particules et de fibres.
+\item
+  \textbf{Bois-énergie} : bûches, plaquettes, granulés.
+\end{itemize}
+
+(Autres : outillage, manches d'ustensiles, vaisselle, piquets et clôtures, chimie du bois --- tanins, viscose ---, charbon de bois.)
+
+\hypertarget{question-8}{%
+\subsection{Question 8}\label{question-8}}
+
+\textbf{Description} (cerne de 1976, année très sèche ; valeurs ramenées aux barres d'échelle).
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2543}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2403}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2305}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2450}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Témoin (non irrigué)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Irrigué
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rapport
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Pin, cerne (ANNÉE) & ≈ 0,03 mm, 2 à 3 cellules & ≈ 0,6 mm, ≈ 30 cellules & ≈ × 20 \\
+Pin, PTP / ETE & quelques cellules chacun & ≈ 0,42 / ≈ 0,17 mm & PTP ≈ 2/3 du cerne irrigué \\
+Pin, diamètre des trachéides & ≈ 0,01--0,02 mm & ≈ 0,01--0,02 mm & ≈ × 1 \\
+Chêne, cerne (ANNÉE) & ≈ 0,11 mm & ≈ 0,35 mm & ≈ × 3 \\
+Chêne, PTP / ETE & ≈ 0,08 / ≈ 0,03 mm & ≈ 0,13 / ≈ 0,21 mm & ≈ × 1,6 / ≈ × 7 \\
+\end{longtable}
+
+\begin{itemize}
+\tightlist
+\item
+  Chez les deux espèces, l'irrigation augmente fortement l'épaisseur du cerne de 1976.
+\item
+  Chez le \textbf{pin}, l'effet est massif (≈ × 20) ; le bois de printemps représente ≈ 2/3 du cerne irrigué. La différence tient au \textbf{nombre de cellules} produites (files radiales de 2--3 cellules contre ≈ 30) : le diamètre des trachéides ne change pas de façon visible.
+\item
+  Chez le \textbf{chêne}, l'effet est plus modéré (≈ × 2 à 3) et porte surtout sur le \textbf{bois d'été}, qui devient majoritaire. La couronne de gros vaisseaux du bois de printemps est présente dans les deux cas, avec des vaisseaux de taille comparable : pas d'augmentation évidente du diamètre cellulaire.
+\end{itemize}
+
+\textbf{Limites} : \textbf{une seule mesure par arbre} (une coupe, un arbre par condition, une seule année) ; aucune répétition ni statistique ; échelles différentes d'une image à l'autre (0,1 et 0,2 mm, longueurs de barre variables) ; irrigués et témoins peuvent différer par d'autres facteurs (âge, position, concurrence).
+
+\textbf{Mécanisme cellulaire proposé.} L'épaisseur du cerne dépend du fonctionnement du cambium et de ses dérivées, en trois étapes :
+1. \textbf{mérèse} : divisions périclines des cellules cambiales ;
+2. \textbf{auxèse} : grandissement des cellules filles par entrée d'eau dans la vacuole, la turgescence étirant la paroi primaire ;
+3. \textbf{différenciation} : dépôt de paroi secondaire lignifiée, puis mort cellulaire.
+
+Le document 4 montre des cernes plus épais \textbf{sans cellules plus grandes} : c'est le nombre de cellules qui change. L'hypothèse retenue est donc que \textbf{l'irrigation stimule la mérèse cambiale} (divisions plus nombreuses, ou saison de divisions prolongée en été chez le chêne), fortement chez le pin, plus modérément chez le chêne.
+
+En sécheresse, \(\Psi_{sol}\) baisse et l'arbre absorbe moins d'eau. La turgescence des cellules cambiales diminue et la fermeture des stomates réduit les apports carbonés : les divisions ralentissent.
+
+\equationajustee{\boxed{\begin{aligned}{}&\text{\text{sécheresse}} \Rightarrow \text{turgescence et apports \text{carbonés}}\downarrow \\
+&\Rightarrow \text{moins de divisions cambiales (\text{mérèse})} \\
+&\Rightarrow \text{moins de cellules par file, \text{diamètre} \text{inchangé}} \\
+&\Rightarrow \text{cerne mince}
+\end{aligned}}}
+
+\hypertarget{question-9}{%
+\subsection{Question 9}\label{question-9}}
+
+\textbf{Analyse du document 5} (épaisseur moyenne des cernes, en 1/100 mm).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Jusqu'en 1983}, chez les deux espèces, les arbres irrigués ont une croissance en moyenne \textbf{≈ 2 fois} plus forte que les témoins : chêne irrigué ≈ 100 à 280 contre ≈ 30 à 100 ; pin irrigué ≈ 100 à 200 contre ≈ 50 à 130.
+\item
+  \textbf{Pin} : après l'arrêt de l'irrigation, la courbe des irrigués \textbf{chute rapidement} et rejoint en quelques années celle des témoins (≈ 30 à 60). Les années sèches marquent fortement les témoins (≈ 10 en 1921).
+\item
+  \textbf{Chêne} : la croissance des irrigués \textbf{décroît lentement} (≈ 150 vers 1985, ≈ 100 en 2005) et reste au-dessus de celle des témoins (≈ 50).
+\item
+  Après 1985, les pins (irrigués ou non) ont des cernes comparables ou inférieurs à ceux des chênes \textbf{témoins} (≈ 30 à 70), et nettement inférieurs à ceux des chênes irrigués.
+\end{itemize}
+
+\textbf{Conclusion} : la croissance du pin dépend étroitement de l'humidité du sol de l'année même et ne garde aucun bénéfice de l'irrigation passée ; le chêne est moins sensible, ou plus lentement sensible, au manque d'eau. \textbf{La plantation de chêne pubescent est la plus adaptée à des sécheresses plus fréquentes.}
+
+\textbf{Limites} : courbes \textbf{moyennes sans barres d'erreur} ni effectif, donc significativité des écarts impossible à évaluer ; un seul site (Valais) ; l'épaisseur des cernes diminue naturellement avec l'âge et le diamètre (tendance du siècle non corrigée) ; incertitude sur l'arrêt de l'irrigation des chênes en 1983 (le texte le suggère, la flèche ne concerne que les pins) ; l'épaisseur de cerne mesure la croissance, pas la survie ; l'arrêt d'irrigation n'équivaut pas à un réchauffement (pas de hausse de température).
+
+Comme l'arrêt de l'irrigation n'est indiqué que pour les pins, on peut aussi comparer les seuls arbres non irrigués : avant 1983, les pins non irrigués (≈ 50 à 130) ont des cernes un peu plus épais que les chênes non irrigués (≈ 30 à 100), ce qui plaiderait pour le pin. La conclusion dépend donc de la lecture retenue ; celle fondée sur la réponse à l'arrêt de l'irrigation est la plus directe.
+
+\hypertarget{question-10}{%
+\subsection{Question 10}\label{question-10}}
+
+Le rapport \(\dfrac{\text{\text{diamètre} de la \text{lumière}}}{\text{\text{épaisseur} de la paroi}}\) quantifie le \textbf{grandissement cellulaire (auxèse)} des cellules conductrices : plus la cellule a grandi avant de déposer sa paroi secondaire, plus le rapport est élevé.
+
+\equationajustee{\boxed{\text{\text{auxèse} (grandissement cellulaire)}}}
+
+\hypertarget{question-11}{%
+\subsection{Question 11}\label{question-11}}
+
+\textbf{Description du document 6.}
+- Nombre de cellules produites par an : ≈ 55 à 62 de 1960 à 1973, déclin à ≈ 25--35 de 1976 à 1983 (\textbf{déclin amorcé avant l'arrêt}), puis chute à ≈ 8--15 entre 1986 et 1994 : \textbf{division par 2 à 3} par rapport aux années qui précèdent l'arrêt (÷ 5 à 6 par rapport aux années 1960). Cette chute dépasse nettement les variations interannuelles. Remontée transitoire à ≈ 30 en 2001.
+- Rapport du bois de printemps : ≈ 8 à 11,5 avant 1983, ≈ 9,5 à 17 après (moyenne ≈ 13 contre ≈ 10) : \textbf{hausse modérée} (≈ + 20 à 30 \%), avec une \textbf{variabilité interannuelle bien plus forte}.
+- Rapport du bois d'été : ≈ 1,3 à 2,2 avant 1983 ; ensuite plus variable, avec des pics ponctuels, sans changement net de la valeur moyenne (lecture gênée par la rupture d'axe).
+
+\textbf{Discussion du mécanisme de la question 8.}
+- \textbf{Mérèse} : le nombre de cellules chute fortement quand l'eau manque ; cela suffit à expliquer l'amincissement des cernes (document 5). \textbf{L'hypothèse est validée.}
+- \textbf{Auxèse} : elle n'est pas réduite par le manque d'eau. Le rapport du bois d'été ne change pas en moyenne ; celui du bois de printemps augmente un peu, de façon peu significative au regard de sa variabilité. Le grandissement cellulaire n'explique donc pas la réponse du bois à l'eau.
+
+\textbf{Conclusion : la réponse physiologique du bois de pin à l'irrigation passe principalement par l'activité de division du cambium (mérèse), conformément à l'hypothèse de la question 8.} Limites : un rapport ne dit pas si c'est la lumière ou la paroi qui varie ; pas de barres d'erreur ; déclin commencé avant 1983 (vieillissement, sécheresse de 1976).
+
+\hypertarget{question-12}{%
+\subsection{Question 12}\label{question-12}}
+
+Le PEG est un polymère hydrosoluble de grande taille, \textbf{non absorbé} par les cellules et non toxique. Dissous dans le milieu, il abaisse le potentiel osmotique, donc le \textbf{potentiel hydrique du sol} : \(\Psi_{sol}\) passe de −0,25 MPa (témoin) à −0,7 MPa.
+
+L'eau se déplace dans le sens des potentiels hydriques décroissants. Avec le PEG, elle est davantage retenue par le sol : le gradient sol → racine diminue et l'absorption devient plus difficile, comme dans un sol qui s'assèche. La plante est en \textbf{stress hydrique}.
+
+Le PEG permet d'imposer une contrainte hydrique \textbf{contrôlée, homogène et constante} sans modifier l'aération ni la teneur en eau apparente du milieu.
+
+\hypertarget{question-13}{%
+\subsection{Question 13}\label{question-13}}
+
+\textbf{Analyse} : en présence de PEG, la file de xylème primaire de la racine compte des vaisseaux supplémentaires (flèches rouges), lignifiés (bleu de toluidine). Le nombre moyen de cellules de xylème passe de \textbf{≈ 3,9 à ≈ 4,8} (+ ≈ 25 \%), différence significative (astérisque).
+
+\textbf{Un stress hydrique de 8 jours augmente la formation de xylème primaire dans les jeunes racines}, ce qui traduit une stimulation de la mérèse (une différenciation accrue de cellules du procambium en vaisseaux est aussi compatible avec ce comptage).
+
+\textbf{Comparaison} : dans les troncs (documents 4 à 6), le manque d'eau \textbf{réduit} la production de xylème (cernes minces, chute des divisions). Les conclusions \textbf{divergent}, mais les situations ne sont pas comparables :
+- racine contre tronc ;
+- xylème \textbf{primaire} (issu du procambium) contre xylème \textbf{secondaire} (issu du cambium) ;
+- plantules de 8 jours contre arbres adultes ;
+- stress bref et modéré contre déficit durable.
+
+Dans la racine, davantage de vaisseaux améliore la conduction de l'eau : c'est une réponse d'acclimatation.
+
+\hypertarget{question-14}{%
+\subsection{Question 14}\label{question-14}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{CK} (50 nM) : le nombre de cellules de xylème chute de ≈ 4,1 à ≈ 1,1 (significatif) ; les coupes ne montrent presque plus de cellules lignifiées. Les cytokinines \textbf{inhibent} la formation du xylème.
+\item
+  \textbf{JA} (10 µM) : ≈ 4,1 → ≈ 4,6 (+ ≈ 13 \%, significatif), avec des vaisseaux supplémentaires (flèches rouges). C'est la \textbf{seule augmentation significative}, de même sens que l'effet du PEG (+ ≈ 25 \%).
+\item
+  CK/JA : non quantifié.
+\end{itemize}
+
+\equationajustee{\boxed{\text{l'acide jasmonique (JA) est l'hormone \text{impliquée} : il reproduit l'effet du stress hydrique}}}
+
+La réponse du xylème au stress hydrique serait donc médiée par l'acide jasmonique.
+
+\hypertarget{question-15}{%
+\subsection{Question 15}\label{question-15}}
+
+Données : sous PEG, l'expression de \emph{LOX2} (gène sous contrôle du JA) est multipliée par ≈ 38 ; celle d'\emph{ARR15} (gène sous contrôle des CK) passe de ≈ 1,0 à ≈ 0,37 (÷ ≈ 2,7, soit ≈ 2/3 de baisse).
+
+Ces gènes sont des \textbf{gènes de réponse} : leur expression témoigne de l'activité des voies de signalisation du JA et des CK dans les cellules de xylème, pas de la synthèse des hormones.
+
+Schéma fonctionnel (flèche : stimule ; barre : inhibe) :
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q15-schema-fonctionnel-hormones.pdf}
+\caption*{Figure 2 --- Schéma fonctionnel : le stress hydrique active la voie du
+JA et réprime celle des CK, d'où plus de vaisseaux de xylème primaire}
+\end{figure}
+
+Le stress hydrique active la voie de signalisation du JA (\emph{LOX2} × 38), qui stimule la formation du xylème (doc. 8), et réprime celle des CK (\emph{ARR15} ÷ 2,7), dont l'effet inhibiteur sur le xylème est levé (doc. 8). Les deux effets, antagonistes en temps normal, convergent vers une augmentation du nombre de vaisseaux de xylème (doc. 7). (Une interaction directe CK/JA reste hypothétique, la condition CK/JA n'étant pas quantifiée.)
+
+\hypertarget{partie-b-le-chuxe2taignier-face-aux-changements-environnementaux}{%
+\section{Partie B --- Le châtaignier face aux changements environnementaux}\label{partie-b-le-chuxe2taignier-face-aux-changements-environnementaux}}
+
+\hypertarget{question-16}{%
+\subsection{Question 16}\label{question-16}}
+
+Une espèce dont un même individu porte des fleurs mâles et des fleurs femelles séparées est \textbf{monoïque}.
+
+\hypertarget{question-17}{%
+\subsection{Question 17}\label{question-17}}
+
+Le zoom 10.C montre qu'un élément du chaton porte des organes fertiles d'un seul sexe (étamines) entourés de pièces stériles (périanthe réduit) : c'est \textbf{une fleur unisexuée}. Le chaton (10.A, 10.B) est un axe portant de nombreuses fleurs de ce type. \textbf{Le chaton est donc une inflorescence} (épi souple de petites fleurs unisexuées, sans pétales voyants).
+
+\hypertarget{question-18}{%
+\subsection{Question 18}\label{question-18}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{10.C} : une dizaine d'\textbf{étamines} (filet + anthère jaune) entourées de pièces stériles, aucun pistil : \textbf{fleurs mâles} ; le chaton correspondant (long chaton de 10.A) est un chaton mâle.
+\item
+  \textbf{10.B} : \textbf{styles et stigmates} rouges surmontant des \textbf{ovaires} contenant des ovules (visibles en coupe), entourés d'écailles (cupule), sans étamine : \textbf{fleurs femelles}.
+\end{itemize}
+
+\hypertarget{question-19}{%
+\subsection{Question 19}\label{question-19}}
+
+Un fruit dérive de l'\textbf{ovaire} après fécondation : sa paroi (péricarpe) vient de la paroi ovarienne et il contient la ou les graines issues des ovules. Les documents en apportent les preuves :
+
+\begin{itemize}
+\tightlist
+\item
+  10.B : les fleurs femelles comportent un ovaire contenant des ovules, surmonté des styles et stigmates ; elles sont groupées par 2 ou 3 et enveloppées par une \textbf{cupule} d'écailles.
+\item
+  10.D : la \textbf{châtaigne} porte à son sommet des \textbf{restes de pièces florales} (styles et stigmates desséchés, en pointe) ; sa coque brune est le péricarpe ; la bogue épineuse contient \textbf{2 à 3 châtaignes}, autant que de fleurs femelles dans une cupule, et dérive de la cupule.
+\end{itemize}
+
+\textbf{La châtaigne est issue de l'ovaire de la fleur femelle : c'est un fruit} (fruit sec indéhiscent, akène) ; la bogue n'est pas le fruit mais la cupule accrescente ; la partie comestible est la graine.
+
+\hypertarget{question-20}{%
+\subsection{Question 20}\label{question-20}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Présence (11.A)} : Massif central et ses bordures (Limousin, Périgord, Cévennes, Ardèche), Massif armoricain (Bretagne, Pays de la Loire, Normandie), Île-de-France et Sologne, Picardie et Nord (dispersé), piémonts pyrénéen et vosgien, Corse.
+\item
+  \textbf{Absence} : Champagne, Lorraine, Bourgogne, Jura, Alpes, Charentes, Causses, Provence et Languedoc de plaine, haute montagne.
+\end{itemize}
+
+Croisements :
+- \textbf{Précipitations (11.B)}, facteur de premier ordre : la présence est corrélée aux régions recevant \textbf{plus de ≈ 1 000 mm} par an (Limousin, Cévennes, Bretagne occidentale, piémont pyrénéen, Corse). La corrélation a des exceptions : le \textbf{Jura}, très arrosé, est sans châtaignier ; la \textbf{Sologne} et le Bassin parisien (\textless{} 1 000 mm, ≈ 600--700 mm) en portent. Il existe donc un autre facteur.
+- \textbf{Sols (11.C)}, facteur de second ordre : présence majoritaire sur les \textbf{brunisols d'altération} (brunisols dystriques, alocrisols) des massifs cristallins et sur certains sols sableux décarbonatés (Sologne, Landes) ; \textbf{absence sur les sols des roches calcaires} (rendosols, calcosols, calcisols de Champagne, Bourgogne, Jura, Charentes, Causses, Provence) : \textbf{espèce calcifuge}. Ce facteur explique les exceptions précédentes.
+- \textbf{Températures (11.D)} : \textbf{aucune corrélation} avec la température moyenne ; le châtaignier est présent de ≈ 10 °C (Normandie, Nord) à ≈ 15 °C (Corse, bordure cévenole).
+
+\equationajustee{\boxed{\text{facteurs contraignants : \text{humidité} (\text{précipitations}) et nature du sol (calcaire exclu)}}}
+
+\hypertarget{question-21}{%
+\subsection{Question 21}\label{question-21}}
+
+La théorie de la \textbf{niche écologique} (niche fondamentale ou potentielle, au sens de Hutchinson : ensemble des conditions du milieu dans lesquelles une espèce peut se maintenir).
+
+\hypertarget{question-22}{%
+\subsection{Question 22}\label{question-22}}
+
+Le rectangle (95 \% des relevés) couvre les milieux \textbf{frais à humides} et \textbf{acides}, du très acide jusqu'à la limite de la neutralité. Des points existent en milieu sec (quelques-uns en très sec) et en milieu neutre, mais aucun en milieu basique.
+
+\equationajustee{\boxed{\text{conditions favorables : milieu acide, frais \text{à} humide}}}
+
+Ces conditions \textbf{correspondent} aux conclusions de la question 20 :
+- l'exigence d'humidité retrouve la corrélation avec les précipitations (11.B) ;
+- l'exigence d'acidité se relie à la nature du sol (11.C) : sols calcaires, basiques, exclus.
+
+\hypertarget{question-23}{%
+\subsection{Question 23}\label{question-23}}
+
+\textbf{Lien observé (11.C et 13)} :
+- sur les \textbf{granites et gneiss} des massifs anciens (Massif central, Vosges, Massif armoricain) : sols d'altération peu différenciés (brunisols dystriques, alocrisols), \textbf{acides} : pH \textless{} 5,6 dans le Limousin, la Margeride, les Cévennes, les Vosges ; ≈ 5,8 à 6,1 et localement moins sur le Massif armoricain ;
+- sur les \textbf{sables siliceux} tertiaires (Sologne) ou quaternaires (Landes) : podzosols, arénosols, moyennement acides (pH \textless{} 6) ;
+- sur les \textbf{calcaires secondaires et tertiaires} (Bassin parisien oriental, Charentes, Causses, Provence, Jura) : rendosols, calcosols, calcisols, \textbf{basiques} (pH \textgreater{} 7, souvent \textgreater{} 8).
+
+\textbf{Les sols acides correspondent à des sous-sols riches en silice}, qu'ils soient magmatiques (granites), métamorphiques (gneiss) ou sédimentaires (sables).
+
+\textbf{Explication} : le sol se forme par altération de la roche mère.
+- Les \textbf{silicates} (feldspaths, micas) subissent une \textbf{hydrolyse} lente. Elle libère peu de cations basiques (calcium, magnésium, potassium), que le climat humide \textbf{lessive}.
+- Le complexe argilo-humique se \textbf{désature} : il fixe des ions \(\mathrm{H^+}\) et \(\mathrm{Al^{3+}}\), et le sol s'acidifie.
+- L'acidification a aussi des sources biologiques : l'\textbf{absorption racinaire} des cations, échangés contre des \(\mathrm{H^+}\), et la \textbf{minéralisation de la matière organique} (CO₂, acides organiques, nitrification).
+- Sur roche \textbf{calcaire}, la dissolution des carbonates \textbf{tamponne} cette acidité et sature le complexe en \(\mathrm{Ca^{2+}}\) : le sol reste neutre à basique.
+
+\equationajustee{\mathrm{CaCO_3 + CO_2 + H_2O \rightleftharpoons Ca^{2+} + 2\,HCO_3^-}}
+
+Sur roche siliceuse, sans carbonates, rien ne compense l'acidification.
+
+\equationajustee{\boxed{\text{roche \text{mère}} \rightarrow \text{\text{altération} et lessivage} \rightarrow \text{saturation du complexe} \rightarrow \text{pH} \rightarrow \text{type de sol}}}
+
+\hypertarget{question-24}{%
+\subsection{Question 24}\label{question-24}}
+
+\textbf{Hypothèse} :
+1. Le châtaignier est présent dans des régions chaudes (Cévennes, Corse) et sa répartition n'est pas corrélée à la température (Q20) : la hausse des températures n'est donc pas, en elle-même, la cause attendue.
+2. Le réchauffement actuel augmente surtout l'évapotranspiration et la \textbf{fréquence des sécheresses} estivales.
+3. Le châtaignier exige un milieu frais à humide (Q22) et occupe souvent des sols acides filtrants ou peu profonds, à faible réserve en eau : dans une grande partie de son aire actuelle, il sortirait de sa niche hydrique.
+
+Le stress hydrique répété (moins de croissance, fermeture des stomates, cavitation des gros vaisseaux d'une espèce à zone poreuse, épuisement des réserves) l'affaiblirait et le rendrait plus sensible aux parasites, d'où une \textbf{mortalité excessive}. La remontée de l'espèce vers le nord ou en altitude serait limitée aux stations à sol acide et frais.
+
+\hypertarget{question-25}{%
+\subsection{Question 25}\label{question-25}}
+
+\textbf{Parasitisme}, relation d'exploitation :
+- le champignon (ascomycète) se développe \textbf{au sein de l'arbre}, entre bois et écorce, et en tire habitat et matière organique ; il s'y reproduit (germination des spores sur les blessures) : l'hôte lui est nécessaire (+) ;
+- l'arbre subit la destruction du phloème puis du bois, le dépérissement et parfois la mort : sa survie diminue (−).
+
+Relation durable, à bénéfice unilatéral et au détriment de l'hôte : \emph{C. parasitica} est un \textbf{parasite pathogène}. L'hôte européen, qui n'a pas coévolué avec lui (contrairement à \emph{C. crenata}, tolérant), est très sensible.
+
+\hypertarget{question-26}{%
+\subsection{Question 26}\label{question-26}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bois sain (15.A)} : structure alvéolaire régulière, nombreuses lumières de cellules (vaisseaux et fibres) de tailles variées, séparées par des parois continues et nettes.
+\item
+  \textbf{Bois malade (15.B)} : les lumières ne sont plus visibles, les parois sont fragmentées en fibrilles désordonnées : le tissu a perdu son organisation et sa cohésion.
+\end{itemize}
+
+\textbf{L'infection désorganise et détruit les parois des cellules du bois : les vaisseaux conducteurs ne sont plus distinguables} ; conséquences : arrêt de la conduction de la sève brute et perte de résistance mécanique.
+
+\hypertarget{question-27}{%
+\subsection{Question 27}\label{question-27}}
+
+\hypertarget{a}{%
+\subsubsection{27.a}\label{a}}
+
+Les vaisseaux du bois sont des cellules mortes de xylème II dont il ne reste que les parois. Ces parois sont principalement constituées de \textbf{cellulose} (polymère de glucose β1→4, microfibrilles) et de \textbf{lignine} (polymère phénolique qui imprègne la paroi secondaire).
+
+\hypertarget{b}{%
+\subsubsection{27.b}\label{b}}
+
+Le champignon est hétérotrophe et absorbe de petites molécules : il pratique une \textbf{digestion extracellulaire}. Ses hyphes \textbf{sécrètent des enzymes} (cellulases, enzymes de dégradation de la lignine et des tanins) qui hydrolysent les polymères des parois ; les produits solubles (glucose\ldots) sont \textbf{absorbés} et nourrissent le champignon : les molécules pariétales sont ses ressources nutritives. Les parois, privées de cellulose et de lignine, se délitent : c'est la structure fragmentée du document 15.B.
+
+\hypertarget{question-28}{%
+\subsection{Question 28}\label{question-28}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Cellulase purifiée (16.A)} : \textbf{témoin positif}. Elle montre l'effet cellulolytique maximal attendu (halo de cellulose dégradée), prouve que le milieu et la révélation au rouge Congo fonctionnent, et permet d'estimer par comparaison l'activité cellulolytique du champignon. Le dépôt d'eau distillée est le témoin négatif. Sans ce témoin, une absence de halo serait ininterprétable.
+\item
+  \textbf{ARNm de l'actine (16.B)} : l'actine est codée par un \textbf{gène de ménage}, exprimé de façon constante. Sa détection dans toutes les pistes est un \textbf{témoin de charge} du Northern blot : la même quantité d'ARNm a été déposée dans chaque puits et l'hybridation a fonctionné. Une variation ou une absence de \emph{cbh-1} traduit alors une variation réelle de transcription.
+\end{itemize}
+
+\hypertarget{question-29}{%
+\subsection{Question 29}\label{question-29}}
+
+\textbf{Erreur d'énoncé à signaler.} Sur le document 16.B tel qu'il est imprimé, la bande \emph{cbh-1} apparaît dans la piste légendée « Infectées » (milieu cellulose), et non dans la piste « Non infectées ». Cette lecture contredit le document 16.A (halo autour de la seule colonie non infectée) et le texte (souches infectées peu agressives). On en conclut que les légendes « Infectées » et « Non infectées » du document 16.B sont \textbf{inversées}, et l'on raisonne avec les légendes rétablies.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{16.A} : la colonie non infectée est entourée d'un large halo, comme la cellulase purifiée (pas de halo avec l'eau) : elle \textbf{sécrète une activité cellulasique} qui dégrade la cellulose du milieu.
+\item
+  \textbf{16.B} (légendes rétablies) : en milieu cellulose, l'ARNm \emph{cbh-1} (1,8 kb) est abondant ; en milieu cellulose + glucose, il est \textbf{absent}, alors que l'actine est présente.
+\end{itemize}
+
+\textbf{Le champignon utilise la cellulose comme source de carbone grâce à des cellulases sécrétées ; le gène \emph{cbh-1} est induit par la cellulose et réprimé par le glucose} : il ne dégrade la cellulose (polymère de glucose) que si aucune source de glucose directement assimilable n'est disponible. C'est une économie de moyens, par régulation transcriptionnelle.
+
+\hypertarget{question-30}{%
+\subsection{Question 30}\label{question-30}}
+
+(Légendes du document 16.B rétablies, voir Q29.)
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{16.A} : la colonie infectée ne produit \textbf{aucun halo}, comme l'eau distillée : pas d'activité cellulasique.
+\item
+  \textbf{16.B} : pas d'ARNm \emph{cbh-1}, \textbf{même en présence de cellulose seule}, alors que l'actine est exprimée.
+\end{itemize}
+
+Le virus \textbf{empêche la transcription} du gène de cellulase induite par la cellulose : le champignon infecté ne répond plus à la présence de cellulose et ne produit plus de cellulase. Il ne peut plus dégrader la cellulose des parois : il ne progresse plus dans le bois, le chancre reste superficiel et l'arbre survit (\textbf{hypovirulence}). De plus, les souches infectées ne se reproduisent plus sexuellement, ce qui limite leur dissémination. L'infection virale est donc un moyen de \textbf{lutte biologique} : elle ne tue pas le champignon, elle le rend peu pathogène.
+
+\hypertarget{question-31}{%
+\subsection{Question 31}\label{question-31}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+& Sans acide gallique & Avec acide gallique \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(K_m\) (mM) & 0,94 ± 0,12 & 12,7 ± 0,05 \\
+\(V_{max}\) (u/mL) & 10,5 ± 0,61 & 10,9 ± 0,81 \\
+\end{longtable}
+
+\begin{itemize}
+\tightlist
+\item
+  \(K_m\) est multiplié par \(12{,}7 / 0{,}94 \approx 13{,}5\), écart très supérieur aux écarts types : \textbf{l'affinité apparente de l'enzyme pour son substrat diminue fortement}.
+\item
+  \(V_{max}\) varie de 0,4 u/mL, moins que les écarts types : \textbf{\(V_{max}\) est inchangée}.
+\end{itemize}
+
+\textbf{L'acide gallique diminue l'affinité de la tannase pour son substrat sans modifier sa vitesse maximale.}
+
+\hypertarget{question-32}{%
+\subsection{Question 32}\label{question-32}}
+
+L'acide gallique est un \textbf{inhibiteur compétitif} de la tannase.
+
+La tannase hydrolyse les tanins galliques en libérant de l'acide gallique. L'acide gallique, \textbf{produit} de la réaction et analogue structural du motif galloyle du substrat, se fixe sur le \textbf{site actif} et entre en compétition avec le substrat.
+
+Il faut alors plus de substrat pour atteindre la demi-saturation : le \(K_m\) apparent augmente.
+
+\equationajustee{K_m^{app} = K_m\left(1 + \frac{[I]}{K_i}\right)}
+
+Quand le substrat est en large excès sur l'inhibiteur, il le déplace du site actif et la vitesse maximale est atteinte : \(V_{max}\) est inchangée.
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q32-inhibition-competitive.pdf}
+\caption*{Figure 3 --- Cinétique de la tannase sans et avec acide gallique
+(paramètres du document 17) : Km accru, Vmax inchangée}
+\end{figure}
+
+\hypertarget{question-33}{%
+\subsection{Question 33}\label{question-33}}
+
+\textbf{Piste} : apporter de l'\textbf{acide gallique} (inhibiteur) au niveau des chancres, ou sélectionner des châtaigniers dont l'écorce est riche en acide gallique libre, pour bloquer la tannase du champignon, ralentir sa croissance et améliorer la survie de l'arbre. Limites : l'inhibition compétitive est levée par un excès de substrat (les tanins sont abondants dans le bois) ; la tannase n'est qu'une des enzymes du champignon (les cellulases ne sont pas visées) ; résultat obtenu \emph{in vitro}.
+
+\hypertarget{question-34}{%
+\subsection{Question 34}\label{question-34}}
+
+L'activité de la tannase dépend de la température et du pH, avec pour chaque facteur une gamme d'activité maximale. Elle repose sur la fixation du substrat au site actif, dont la forme dépend de la \textbf{structure tridimensionnelle} de l'enzyme, maintenue par des \textbf{liaisons faibles} (liaisons hydrogène, liaisons ioniques, interactions hydrophobes).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Température} : l'activité augmente jusqu'à 30 °C (agitation thermique, rencontres enzyme--substrat plus fréquentes), puis diminue ; au-delà de 45--50 °C, la \textbf{dénaturation thermique} (rupture des liaisons faibles, déformation du site actif) l'annule ; en dessous de 10 °C, l'agitation est trop faible et l'activité minimale.
+\item
+  \textbf{pH} : le pH modifie l'\textbf{ionisation} des acides aminés du site actif et du substrat, donc les liaisons ioniques et hydrogène indispensables à la liaison et à la catalyse ; optimum à pH 5,5 ; aux pH extrêmes (\textless{} 2,5 ou \textgreater{} 8,5), la protéine est dénaturée.
+\end{itemize}
+
+L'enzyme est adaptée à un milieu tempéré chaud et légèrement acide (tissus de l'hôte, qui vit sur sols acides) ; un réchauffement rapproche les températures estivales de son optimum et favorise l'activité du champignon.
+
+\hypertarget{question-35}{%
+\subsection{Question 35}\label{question-35}}
+
+\textbf{Description} : les premiers signalements (avant 1996) se situent dans le \textbf{sud-ouest} (Périgord, Quercy, Pays basque, Landes), le sud-ouest du Massif central, les \textbf{Cévennes}, la région lyonnaise et la \textbf{Corse} ; entre 1996 et 2006, ils gagnent le \textbf{Centre}, le Limousin, la Bourgogne, les Pays de la Loire et surtout la \textbf{Bretagne} ; de 2007 à 2017, les nouveaux signalements sont surtout dans le \textbf{nord-ouest} (Bretagne, Pays de la Loire, Normandie), en Île-de-France, dans le Nord, en Alsace et en Rhône-Alpes. \textbf{La maladie progresse du sud vers le nord en une soixantaine d'années.}
+
+\textbf{Explications} :
+- la hausse des températures moyennes rapproche les régions du nord, autrefois trop froides, de l'optimum thermique des enzymes fongiques comme la tannase (30 °C, doc. 18) : le champignon y survit et y progresse ;
+- dispersion de proche en proche des spores (pluie, vent, insectes, blessures de l'écorce) et transport humain (plants, bois, outils) pour les foyers éloignés ;
+- hôtes affaiblis par les sécheresses ; absence de résistance du châtaignier européen.
+
+Biais : il s'agit de \textbf{signalements} (dépendant de l'effort de surveillance, plus fort dans les régions castanéicoles) et de la présence de l'hôte.
+
+\hypertarget{question-36}{%
+\subsection{Question 36}\label{question-36}}
+
+\textbf{Prédictions 20.A (1961--1990)} : prévalence forte (jaune à rouge) dans le sud-ouest, le pourtour méditerranéen, la vallée du Rhône et la Corse ; bande verte (0,1--0,2) au centre ; bleu (≤ 0,1) sur toute la moitié nord, la Bretagne et les reliefs.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Accords} : les signalements anciens (avant 1996, période la plus proche de 1961--1990) sont tous dans la moitié sud, dans les zones prédites favorables (sud-ouest, Cévennes, Corse) ; aucun signalement ancien dans le nord, prédit en bleu.
+\item
+  \textbf{Désaccords} : forte prévalence prédite sur le littoral méditerranéen et en Provence, où il n'y a pas de signalement ; mais il n'y a pas non plus de châtaigniers (doc. 11.A) : le modèle décrit la niche du champignon, pas la présence de l'hôte.
+\item
+  \textbf{Limites de la comparaison} : les signalements postérieurs à 1996 (Bretagne, Normandie, Centre) ne peuvent pas être opposés à un modèle calé sur le climat 1961--1990, le climat ayant changé depuis ; le document 19 donne des dates de premier signalement, pas une proportion d'arbres malades ; effort de surveillance inégal ; maladie en expansion, pas à l'équilibre.
+\end{itemize}
+
+\textbf{Pour sa période, le modèle reproduit bien la répartition observée de la maladie (moitié sud seulement) : il est globalement satisfaisant}, sous réserve de croiser ses prédictions avec la présence de l'hôte et de ne pas l'appliquer au-delà de son climat de référence.
+
+\hypertarget{question-37}{%
+\subsection{Question 37}\label{question-37}}
+
+Informations utilisables pour un modèle fondé sur la survie et la reproduction du champignon selon la température :
+- \textbf{Doc. 11.A} : carte de répartition du châtaignier, \textbf{hôte obligatoire} du champignon : là où le modèle doit s'appliquer.
+- \textbf{Doc. 18} (et 17) : température et pH optimaux de l'activité enzymatique de la tannase (optimum 30 °C et pH 5,5, gamme 20--45 °C et pH 4--7,5) : réponse du champignon à la température.
+- \textbf{Doc. 11.D} : carte des températures moyennes actuelles, à combiner avec le doc. 18 et avec les projections du scénario climatique.
+- \textbf{Doc. 13} : carte du pH des sols, à combiner avec l'optimum de pH du doc. 18.
+- \textbf{Doc. 19} : carte de répartition des signalements du champignon pathogène depuis 1956 : vitesse de propagation, calibration et validation du modèle.
+
+Compléments plus indirects : doc. 14 (infection par les blessures, destruction du phloème puis du bois : définition de l'arbre malade), doc. 15 et 16 (dégradation du bois, hypovirulence et absence de reproduction sexuée des souches infectées : virulence et dissémination), doc. 12 (humidité et acidité favorables à l'hôte).
+
+\hypertarget{question-38}{%
+\subsection{Question 38}\label{question-38}}
+
+\textbf{20.B (2070--2099)} : prévalence \textgreater{} 0,6 sur la plus grande partie du sud, de l'ouest et du centre (Aquitaine, Massif central, vallée du Rhône, Languedoc, Corse entière, Alsace) ; 0,2 à 0,6 sur le sud et l'est de la Bretagne, les Pays de la Loire, le Centre et le Bassin parisien. La prévalence reste \textbf{faible (0,1 à 0,2, vert)} :
+- aux \textbf{hautes latitudes} : la \textbf{pointe occidentale et le nord de la Bretagne}, la \textbf{Normandie}, la Picardie, le Nord, le nord de l'Île-de-France, les Ardennes, une partie de la Champagne et de la Lorraine ;
+- aux \textbf{hautes altitudes} : un îlot des \textbf{hauteurs du Massif central} (vert et bleu), les \textbf{Vosges}, les reliefs alpins (≤ 0,1 localement) et quelques points des Pyrénées.
+
+\textbf{Croisement avec 11.A} : régions où le châtaignier est présent et la prévalence prédite faible, grâce à des températures basses et une humidité suffisante :
+
+\equationajustee{\boxed{\text{hautes latitudes (Bretagne occidentale, Normandie, Picardie, Nord) et hautes altitudes (Massif central, Vosges)}}}
+
+Les grandes régions castanéicoles actuelles du sud (Limousin, Périgord, Cévennes de basse altitude, Corse) seraient fortement touchées. Prédiction d'un modèle validé seulement pour le climat 1961--1990 (Q36), pour un seul scénario climatique.
+
+\hypertarget{question-39}{%
+\subsection{Question 39}\label{question-39}}
+
+\textbf{Atténuer les effets du chancre} (Q30, Q33, Q35) :
+- \textbf{traitements} par souches hypovirulentes (lutte biologique) et par acide gallique, appliqués surtout aux \textbf{arbres isolés des forêts nouvellement contaminées}, pour freiner le front de propagation ; ils sont peu utiles dans les zones déjà entièrement contaminées ;
+- \textbf{surveillance et prophylaxie} : réseau national de signalement à effort homogène ; contrôle de la circulation des plants et du bois ; désinfection des outils, limitation des blessures (doc. 14) ; élimination des arbres à chancres actifs dans les nouveaux foyers.
+
+\textbf{S'adapter aux changements climatiques, chancre compris} (Q20--Q24, Q38) :
+- \textbf{choix des stations} : planter le châtaignier sur sols acides et frais (sols sableux ou d'altération), dans le \textbf{nord} de la France et dans les forêts d'\textbf{altitude} du Massif central et des Vosges, régions prédites préservées ; éviter les stations séchantes ;
+- \textbf{matériel végétal} (Q25) : maintenir une \textbf{diversité génétique} élevée ; sélectionner des châtaigniers tolérants, des hybrides avec \emph{C. crenata}, des arbres riches en composés inhibiteurs ;
+- \textbf{sylviculture} : peuplements mélangés plutôt que monocultures, éclaircies pour limiter la concurrence pour l'eau, suivi à long terme de la croissance et de la mortalité.
+
+\hypertarget{question-40}{%
+\subsection{Question 40}\label{question-40}}
+
+Schéma bilan (flèches = « entraîne ») :
+
+\begin{figure}[H]
+\centering
+\includegraphics{figures/q40-schema-bilan.pdf}
+\caption*{Figure 4 --- Schéma bilan des effets des sécheresses plus fréquentes sur
+les forêts de France métropolitaine et conséquences pour la gestion}
+\end{figure}
+
+Le schéma part de la variable modifiée par le réchauffement (température, fréquence des sécheresses) et parcourt toutes les échelles :
+- \textbf{moléculaire} : voies hormonales JA et CK, cellulases et gène \emph{cbh-1}, optimum de la tannase ;
+- \textbf{cellulaire} : divisions cambiales (mérèse) ;
+- \textbf{tissulaire} : cernes, xylème, destruction des parois du bois ;
+- \textbf{population} : répartition du châtaignier, progression du chancre, mortalité.
+
+\textbf{Le réchauffement agit directement sur la croissance (effet abiotique : déficit hydrique, cambium) et indirectement par les pathogènes (effet biotique : chancre favorisé par la chaleur et par l'affaiblissement des arbres) ; la gestion doit adapter le choix des essences et des stations et surveiller la santé des forêts.}
+
+\end{document}
