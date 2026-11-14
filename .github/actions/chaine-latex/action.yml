@@ -1,0 +1,12 @@
+name: Chaîne LaTeX
+description: pandoc, latexmk, lualatex et rsvg-convert pour scripts/exporter
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        sudo apt-get update -q
+        sudo apt-get install -y -q --no-install-recommends \
+          pandoc latexmk texlive-luatex texlive-latex-extra texlive-lang-french \
+          texlive-science texlive-fonts-recommended fonts-lmodern librsvg2-bin > /dev/null
+        pandoc --version | head -1

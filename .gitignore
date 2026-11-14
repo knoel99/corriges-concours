@@ -1,3 +1,8 @@
 __pycache__/
 *.pyc
 .DS_Store
+# Exports régénérés depuis le Markdown (scripts/exporter) : jamais versionnés.
+*.pdf
+*.tex
+.construction/
+bilan-pdf.md
