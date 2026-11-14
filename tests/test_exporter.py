@@ -172,7 +172,6 @@ def _pandoc(markdown: str) -> str:
             "latex",
             "--lua-filter",
             str(FILTRE),
-            "--shift-heading-level-by=-1",
         ],
         input=normaliser_maths(markdown),
         text=True,

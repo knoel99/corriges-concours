@@ -93,7 +93,7 @@ def generer_tex(markdown: str, meta: dict, nature: str, sortie: Path) -> Path:
     commande = [
         "pandoc", "-f", FORMAT_ENTREE, "-t", "latex", "--standalone",
         "--template", str(GABARIT), "--lua-filter", str(FILTRE), "--listings",
-        "--shift-heading-level-by=-1", "--wrap=preserve", "-o", str(sortie),
+        "--wrap=preserve", "-o", str(sortie),
     ]
     for cle, valeur in variables_gabarit(meta, nature, titre).items():
         commande += ["-V", f"{cle}={valeur}"]

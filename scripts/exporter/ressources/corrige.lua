@@ -1,8 +1,11 @@
 -- Filtre pandoc des corrigés publiés : Markdown KaTeX → LaTeX.
 --
 -- * alertes `> [!INDICATION|METHODE|PIEGE|JURY]` → encadrés tcolorbox titrés,
---   indications numérotées par question (remise à zéro à chaque titre de niveau ≤ 2
---   après décalage, soit `###` et au-dessus dans le Markdown) ;
+--   indications numérotées par question (remise à zéro à chaque titre `###` ou
+--   au-dessus dans le Markdown) ;
+-- * titres remontés d'un niveau (`##` → \section) par ce filtre, pas par
+--   `--shift-heading-level-by` : selon la version de pandoc, ce décalage s'applique avant
+--   ou après les filtres, et le compteur d'indications ne se remettait plus à zéro ;
 -- * figures `figures/<slug>/<nom>.svg` → PDF vectoriel (converti en amont par
 --   rsvg-convert), centrées, largeur ≤ \linewidth, légende = texte alt ;
 -- * équations hors texte → \equationajustee{…} (réduite si elle déborde) ;
@@ -208,8 +211,9 @@ local function BlockQuote(bq)
 end
 
 local function Header(h)
-  if h.level <= 2 then indication = 0 end
-  return nil
+  if h.level <= 3 then indication = 0 end
+  h.level = math.max(1, h.level - 1)
+  return h
 end
 
 -- Parcours dans l'ordre du document (le compteur d'indications en dépend).
