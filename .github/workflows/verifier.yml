@@ -13,3 +13,60 @@ jobs:
       # Python système du runner, aucune dépendance : forme des corrigés et
       # absence de fichiers revue*, rapport* ou sujet*.
       - run: python3 scripts/verifier.py
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -q pandoc > /dev/null && pip install -q pytest
+      - run: python3 -m pytest -q tests
+
+  # Compile le PDF des épreuves modifiées par la PR (ou un échantillon si seul
+  # l'exporteur change). Les PDF sont joints au run pour relecture.
+  compilation:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: ./.github/actions/chaine-latex
+      - name: Compiler les épreuves modifiées
+        run: |
+          python3 scripts/exporter/exporter.py --pdf --depuis "origin/$GITHUB_BASE_REF" \
+            --bilan bilan-pdf.md
+      - name: Bilan
+        if: always()
+        run: '[ -f bilan-pdf.md ] && cat bilan-pdf.md >> "$GITHUB_STEP_SUMMARY" || true'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pdf
+          path: |
+            20*/*/*/*.pdf
+          if-no-files-found: ignore
+          retention-days: 14
+
+  # Après une fusion sur master : demande au dépôt du site de publier (compilation
+  # complète et envoi des fichiers). Sans le secret PREPA_DISPATCH_TOKEN (jeton
+  # GitHub limité à knoel99/prepa, droit « Actions : écriture » ou « Contents :
+  # écriture »), l'étape est sautée et la publication du site part la nuit suivante.
+  publier:
+    if: github.event_name == 'push'
+    needs: [forme, tests]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Déclencher la publication sur le site
+        env:
+          JETON: ${{ secrets.PREPA_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$JETON" ]; then
+            echo "PREPA_DISPATCH_TOKEN absent : publication à la prochaine exécution planifiée."
+            exit 0
+          fi
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $JETON" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/knoel99/prepa/dispatches \
+            -d "{\"event_type\":\"corriges-publies\",\"client_payload\":{\"sha\":\"$GITHUB_SHA\"}}"

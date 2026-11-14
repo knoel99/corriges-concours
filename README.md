@@ -15,15 +15,28 @@ Chaque épreuve a son dossier `<année>/<banque>/<slug>/` :
 
 | Fichier | Contenu |
 |---|---|
-| `brut.md` · `brut.pdf` | **Corrigé brut** : les réponses complètes, question par question |
-| `guide.md` · `guide.pdf` | **Corrigé guidé** : présentation, indications graduées, solution, méthode, pièges, bilan |
-| `brut.tex` · `guide.tex` | Source LaTeX des PDF (générée depuis le Markdown) |
-| `figures/` | Figures en SVG (et PDF pour LaTeX) |
+| `brut.md` | **Corrigé brut** : les réponses complètes, question par question |
+| `guide.md` | **Corrigé guidé** : présentation, indications graduées, solution, méthode, pièges, bilan |
+| `figures/` | Figures en SVG |
 | `meta.json` | Épreuve, nombre de questions, liste des figures |
 
-La liste complète est dans [INDEX.md](INDEX.md). Le Markdown est la source : les maths sont
+La liste complète est dans [INDEX.md](INDEX.md). Le Markdown est la **seule source** : les maths sont
 en LaTeX (`$…$`, `$$…$$`), rendues par KaTeX sur le site. Les encadrés
 `> [!INDICATION]`, `> [!METHODE]`, `> [!PIEGE]` et `> [!JURY]` sont des alertes.
+
+## PDF et LaTeX
+
+Les PDF ne sont pas versionnés : ils se téléchargent sur la fiche de chaque épreuve du site, où
+ils sont recompilés depuis ce dépôt à chaque publication. Pour les produire chez soi
+(pandoc, latexmk, lualatex et rsvg-convert requis) :
+
+```bash
+python3 scripts/exporter/exporter.py --pdf                 # tous les corrigés
+python3 scripts/exporter/exporter.py --pdf <slug> [...]    # quelques épreuves
+```
+
+Le `.tex` et le `.pdf` sont écrits à côté du Markdown, et ignorés par git. La compilation est
+incrémentale : une épreuve inchangée n'est pas recompilée.
 
 Les **sujets** et les **rapports de jury** ne sont pas dans ce dépôt : ils appartiennent aux
 banques de concours. Chaque fiche du site renvoie vers le document officiel.
@@ -31,13 +44,14 @@ banques de concours. Chaque fiche du site renvoie vers le document officiel.
 ## Contribuer
 
 Voir [CONTRIBUTING.md](CONTRIBUTING.md). En bref : fork, modification du `.md`, `python3
-scripts/verifier.py`, pull request. Les PDF et `.tex` sont régénérés par le mainteneur.
+scripts/verifier.py`, pull request. La CI compile le PDF des épreuves modifiées et le joint au
+run ; après fusion, le site republie la correction.
 
 ## Licences
 
 - Corrigés, figures et documents : [CC BY 4.0](LICENSE). Citez « Corrigés de concours,
   sujet-corriges.ai » avec un lien vers ce dépôt.
-- Scripts (`scripts/`) : [MIT](LICENSE-CODE).
+- Scripts (`scripts/`, `tests/`) : [MIT](LICENSE-CODE).
 
 Les courtes citations des rapports de jury qu'on trouve dans les encadrés `[!JURY]` restent la
 propriété de leurs auteurs ; elles sont reproduites au titre du droit de courte citation.

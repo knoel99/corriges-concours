@@ -6,7 +6,9 @@ Merci de relire ! Toute correction est bienvenue, d'une coquille à une démonst
    va pas (idéalement avec la référence au sujet ou au rapport du jury).
 2. **Corriger** : forkez le dépôt, modifiez `brut.md` et/ou `guide.md` de l'épreuve (gardez les
    deux cohérents), lancez `python3 scripts/verifier.py <slug>`, puis ouvrez une pull request.
-   Ne modifiez ni les `.pdf` ni les `.tex` : ils sont régénérés depuis le Markdown.
+   Il n'y a ni `.pdf` ni `.tex` à modifier : ils sont produits depuis le Markdown. La CI de la
+   pull request compile le PDF des épreuves touchées (artefact `pdf` du run) ; pour le voir
+   avant, `python3 scripts/exporter/exporter.py --pdf <slug>`.
 
 Règles de forme :
 
@@ -19,4 +21,4 @@ Règles de forme :
 
 En contribuant, vous acceptez que votre contribution soit publiée sous CC BY 4.0 (corrigés) ou
 MIT (scripts). Le mainteneur relit et fusionne les pull requests ; les corrections fusionnées
-sont reportées sur le site.
+sont publiées sur le site (Markdown et PDF recompilés) sans autre manipulation.
