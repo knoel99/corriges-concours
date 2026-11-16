@@ -406,3 +406,54 @@ def test_slugs_modifies(tmp_path):
     git("commit", "-qm", "modif")
     assert ex.slugs_modifies("HEAD~1", tmp_path) == ([META["slug"]], True)
 
+
+
+@pandoc
+def test_lualatex_seulement_si_le_tex_change(tmp_path, monkeypatch):
+    """L'outillage invalide toutes les empreintes d'entrée, mais seuls les `.tex` qui
+    changent vraiment repassent par lualatex."""
+    dossier = _depot(tmp_path)
+    compiles: list[str] = []
+
+    def faux_compiler(tex, delai=600):
+        tex = Path(tex).resolve()
+        journal = ex.journal_de(tex)
+        journal.parent.mkdir(parents=True, exist_ok=True)
+        journal.write_text("Output written on x.pdf (2 pages)", encoding="utf-8")
+        tex.with_suffix(".pdf").write_bytes(b"%PDF")
+        compiles.append(tex.stem)
+        return tex.with_suffix(".pdf"), ex.lire_diagnostic(tex), ""
+
+    monkeypatch.setattr(ex, "compiler_pdf", faux_compiler)
+    monkeypatch.setattr(ex, "convertir_figure", lambda svg, pdf: None)
+
+    messages: list[str] = []
+
+    def passe() -> list[str]:
+        compiles.clear()
+        resultats = ex.exporter(racine=tmp_path, pdf=True, taches=1)
+        assert all(r.ok for r in resultats), [r.message for r in resultats]
+        messages[:] = [r.message for r in resultats]
+        return sorted(compiles)
+
+    def outillage_modifie(contenu: str) -> None:
+        outil = tmp_path / "outil.txt"
+        outil.write_text(contenu, encoding="utf-8")
+        monkeypatch.setattr(ex, "OUTILLAGE", (*ex.OUTILLAGE[:4], outil))
+
+    assert passe() == ["brut", "guide"]
+    outillage_modifie("v2")  # même .tex produit : aucun lualatex
+    assert passe() == []
+    assert messages == ["PDF inchangé (.tex identique)"] * 2
+    (dossier / "guide.md").write_text(CORPS.replace("NATURE", "guidé") + "\nFin.\n")
+    assert passe() == ["guide"]
+    (dossier / "figures" / "q1.svg").write_text(SVG.replace("#ccc", "#000"), encoding="utf-8")
+    assert passe() == ["brut", "guide"]  # même .tex, figure changée
+    # Cache d'avant les marques de sortie : le .tex précédent sert de référence.
+    for marque in dossier.glob(".construction/*.sortie"):
+        marque.unlink()
+    outillage_modifie("v3")
+    assert passe() == []
+    assert messages == ["PDF inchangé (.tex identique)"] * 2
+    assert len(list(dossier.glob(".construction/*.sortie"))) == 2
+    assert passe() == []  # marques réécrites au passage
