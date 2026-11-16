@@ -87,6 +87,19 @@ def convertir_figure(svg: Path, pdf: Path) -> None:
     )
 
 
+def convertir_figures(dossiers: list[Path]) -> None:
+    """Convertit une seule fois chaque SVG cité par brut.md ou guide.md."""
+    svgs: set[Path] = set()
+    for dossier in dossiers:
+        for nature in NATURES:
+            source = dossier / f"{nature}.md"
+            if source.exists():
+                svgs.update(dossier / f for f in figures_citees(source.read_text(encoding="utf-8")))
+    for svg in sorted(svgs):
+        if svg.exists():
+            convertir_figure(svg, svg.with_suffix(".pdf"))
+
+
 def generer_tex(markdown: str, meta: dict, nature: str, sortie: Path) -> Path:
     """Markdown → `.tex` (pandoc + filtre + gabarit)."""
     titre, corps = preparer_markdown(markdown)
@@ -209,6 +222,10 @@ def exporter(
 ) -> list[Resultat]:
     dossiers = [d for d in dossiers_corriges(racine) if not slugs or d.name in slugs]
     travaux = [(d, n) for d in dossiers for n in NATURES]
+    if pdf:
+        # brut et guide citent souvent les mêmes figures : convertir avant le pool évite
+        # que deux threads écrivent le même PDF (ou qu'un lualatex le lise à moitié écrit).
+        convertir_figures(dossiers)
 
     def un(travail: tuple[Path, str]) -> Resultat:
         dossier, nature = travail

@@ -93,6 +93,13 @@ def test_figures_citees_sans_doublon():
     assert figures_citees(md) == ["figures/s/a.svg", "figures/s/b-c.svg"]
 
 
+def test_figures_citees_avec_titre_ou_crochet_echappe():
+    """Mêmes images que celles acceptées par `verifier.py` : sinon le SVG n'est ni
+    converti ni compté dans l'empreinte."""
+    md = '![Triangle](figures/s/a.svg "Triangle ABC")\n\n![Cas \\[1\\]](figures/s/b.svg)'
+    assert figures_citees(md) == ["figures/s/a.svg", "figures/s/b.svg"]
+
+
 def test_echapper_latex():
     assert echapper_latex("A&B_1 50% #x {y} ~^\\") == (
         "A\\&B\\_1 50\\% \\#x \\{y\\} \\textasciitilde{}\\textasciicircum{}\\textbackslash{}"
@@ -103,6 +110,9 @@ def test_variables_gabarit():
     v = variables_gabarit(META, "guide", "CCINP MP — Physique 2026 · Corrigé guidé")
     assert v["nature"] == "Corrigé guidé"
     assert v["titre"] == "CCINP MP — Physique 2026"
+    # Douze brut.md finissent par « · Corrigé » seul : retiré lui aussi.
+    seul = variables_gabarit(META, "brut", "CCINP MP — Physique 2026 · Corrigé")
+    assert seul["titre"] == "CCINP MP — Physique 2026"
     # Contenu agnostique : ni URL ni nom de site dans le PDF.
     assert "url" not in v
     assert (v["concours"], v["filiere"], v["matiere"], v["annee"]) == (
