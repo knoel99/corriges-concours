@@ -17,7 +17,9 @@ Les sorties sont écrites à côté du Markdown et ne sont pas versionnées (.gi
 
 La compilation est incrémentale : un document dont le Markdown, les figures citées, le gabarit,
 le filtre et ces scripts n'ont pas changé depuis la dernière compilation n'est pas recompilé
-(empreinte SHA-256 dans `.construction/<nature>.empreinte`). `--forcer` recompile tout.
+(empreinte SHA-256 dans `.construction/<nature>.empreinte`). Quand l'outillage change, tous
+les `.tex` sont régénérés (pandoc, rapide), mais lualatex ne repasse que sur ceux dont le `.tex`
+ou une figure diffère vraiment (`.construction/<nature>.sortie`). `--forcer` recompile tout.
 """
 
 from __future__ import annotations
@@ -52,6 +54,7 @@ RACINE = ICI.parent.parent
 OUTILLAGE = (GABARIT, FILTRE, ICI / "pur.py", ICI / "exporter.py")
 # Épreuves compilées en CI quand seul l'outillage change (aucun corrigé modifié).
 ECHANTILLON = 3
+OPTIONS_LATEXMK = ("-lualatex", "-interaction=nonstopmode", "-f")
 
 
 def dossiers_corriges(racine: Path = RACINE) -> list[Path]:
@@ -77,6 +80,22 @@ def empreinte(dossier: Path, nature: str, pdf: bool) -> str:
     return h.hexdigest()
 
 
+def empreinte_sortie(tex: Path, dossier: Path, markdown: str) -> str:
+    """SHA-256 de ce que lualatex lit : le `.tex` produit, les SVG cités, ses options.
+
+    Une modification de l'outillage invalide toutes les empreintes d'entrée, mais seuls les
+    documents dont le `.tex` change vraiment repassent par lualatex (le coûteux).
+    Les SVG, pas leurs PDF : rsvg-convert date ses sorties, leurs octets changent à chaque run.
+    """
+    h = hashlib.sha256(" ".join(OPTIONS_LATEXMK).encode())
+    h.update(tex.read_bytes())
+    for fig in figures_citees(markdown):
+        svg = dossier / fig
+        h.update(fig.encode())
+        h.update(svg.read_bytes() if svg.exists() else b"<absent>")
+    return h.hexdigest()
+
+
 def convertir_figure(svg: Path, pdf: Path) -> None:
     """SVG → PDF vectoriel (rsvg-convert), seulement si le PDF manque ou est plus ancien."""
     if pdf.exists() and pdf.stat().st_mtime >= svg.stat().st_mtime:
@@ -85,6 +104,19 @@ def convertir_figure(svg: Path, pdf: Path) -> None:
     subprocess.run(
         ["rsvg-convert", "-f", "pdf", "-o", str(pdf), str(svg)], check=True, capture_output=True
     )
+
+
+def convertir_figures(dossiers: list[Path]) -> None:
+    """Convertit une seule fois chaque SVG cité par brut.md ou guide.md."""
+    svgs: set[Path] = set()
+    for dossier in dossiers:
+        for nature in NATURES:
+            source = dossier / f"{nature}.md"
+            if source.exists():
+                svgs.update(dossier / f for f in figures_citees(source.read_text(encoding="utf-8")))
+    for svg in sorted(svgs):
+        if svg.exists():
+            convertir_figure(svg, svg.with_suffix(".pdf"))
 
 
 def generer_tex(markdown: str, meta: dict, nature: str, sortie: Path) -> Path:
@@ -120,10 +152,7 @@ def compiler_pdf(tex: Path, delai: int = 600) -> tuple[Path | None, Diagnostic, 
     tex = Path(tex).resolve()
     construction = journal_de(tex).parent
     construction.mkdir(parents=True, exist_ok=True)
-    commande = [
-        "latexmk", "-lualatex", "-interaction=nonstopmode", "-f",
-        f"-outdir={construction}", tex.name,
-    ]
+    commande = ["latexmk", *OPTIONS_LATEXMK, f"-outdir={construction}", tex.name]
     message = ""
     try:
         subprocess.run(
@@ -167,6 +196,7 @@ def exporter_document(dossier: Path, nature: str, pdf: bool, forcer: bool = Fals
             continue
         if pdf:
             convertir_figure(svg, dossier / Path(fig).with_suffix(".pdf"))
+    ancien_tex = tex.read_bytes() if tex.exists() else None
     try:
         generer_tex(markdown, meta, nature, tex)
     except subprocess.CalledProcessError as exc:
@@ -174,9 +204,27 @@ def exporter_document(dossier: Path, nature: str, pdf: bool, forcer: bool = Fals
         return res
     res.tex = tex
     if pdf:
-        res.pdf, res.diagnostic, msg = compiler_pdf(tex)
-        if msg:
-            res.message = msg
+        marque_sortie = dossier / ".construction" / f"{nature}.sortie"
+        sortie = empreinte_sortie(tex, dossier, markdown)
+        deja = tex.with_suffix(".pdf")
+        if marque_sortie.exists():
+            identique = marque_sortie.read_text() == sortie
+        else:
+            # Cache antérieur aux marques de sortie : le `.tex` du run précédent en tient lieu.
+            # Il ignore un SVG modifié dans le même run ; la marque écrite ensuite le couvre.
+            identique = ancien_tex is not None and ancien_tex == tex.read_bytes()
+        if not forcer and deja.exists() and identique:
+            res.pdf, res.diagnostic = deja, lire_diagnostic(tex)
+            res.message = res.message or "PDF inchangé (.tex identique)"
+            marque_sortie.parent.mkdir(parents=True, exist_ok=True)
+            marque_sortie.write_text(sortie)
+        else:
+            res.pdf, res.diagnostic, msg = compiler_pdf(tex)
+            if msg:
+                res.message = msg
+            if res.pdf:
+                marque_sortie.parent.mkdir(parents=True, exist_ok=True)
+                marque_sortie.write_text(sortie)
     if res.tex and (res.pdf or not pdf):
         marque.parent.mkdir(parents=True, exist_ok=True)
         marque.write_text(voulue)
@@ -209,6 +257,10 @@ def exporter(
 ) -> list[Resultat]:
     dossiers = [d for d in dossiers_corriges(racine) if not slugs or d.name in slugs]
     travaux = [(d, n) for d in dossiers for n in NATURES]
+    if pdf:
+        # brut et guide citent souvent les mêmes figures : convertir avant le pool évite
+        # que deux threads écrivent le même PDF (ou qu'un lualatex le lise à moitié écrit).
+        convertir_figures(dossiers)
 
     def un(travail: tuple[Path, str]) -> Resultat:
         dossier, nature = travail

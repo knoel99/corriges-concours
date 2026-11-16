@@ -36,7 +36,8 @@ python3 scripts/exporter/exporter.py --pdf <slug> [...]    # quelques épreuves
 ```
 
 Le `.tex` et le `.pdf` sont écrits à côté du Markdown, et ignorés par git. La compilation est
-incrémentale : une épreuve inchangée n'est pas recompilée.
+incrémentale : une épreuve inchangée n'est pas recompilée, et une modification de l'exporteur ne
+recompile en PDF que les documents dont le `.tex` produit change.
 
 Les **sujets** et les **rapports de jury** ne sont pas dans ce dépôt : ils appartiennent aux
 banques de concours. Chaque fiche du site renvoie vers le document officiel.

@@ -58,6 +58,10 @@ def verifier(dossier: Path) -> list[str]:
         meta = json.loads((dossier / "meta.json").read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         return [f"{dossier.name} : meta.json illisible ({exc})"]
+    if meta.get("slug") != dossier.name:
+        err.append(
+            f"{dossier.name} : meta.json « slug » = {meta.get('slug')!r}, attendu le nom du dossier"
+        )
     declarees = {f.get("fichier") for f in meta.get("figures", [])}
     citees: set[str] = set()
     for nature in ("brut", "guide"):

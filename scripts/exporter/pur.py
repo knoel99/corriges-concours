@@ -18,7 +18,8 @@ NATURES: dict[str, str] = {"brut": "Corrigé brut", "guide": "Corrigé guidé"}
 # LaTeX ni HTML brut (le site les neutralise : le PDF doit montrer la même chose).
 FORMAT_ENTREE = "markdown+tex_math_single_backslash-raw_tex-raw_html-raw_attribute"
 
-_FIGURE_MD = re.compile(r"!\[[^\]]*\]\((figures/[^)\s]+\.svg)\)")
+# Même motif que `verifier.IMAGE` : texte alternatif à crochets échappés, titre optionnel.
+_FIGURE_MD = re.compile(r'!\[(?:\\.|[^\]\\])*\]\((figures/[^)\s]+\.svg)(?:\s+"[^"]*")?\)')
 
 
 # ---------------------------------------------------------------------------
@@ -396,12 +397,11 @@ def variables_gabarit(meta: dict, nature: str, titre: str) -> dict[str, str]:
     ep = meta.get("epreuve") or {}
     libelle = NATURES[nature]
     # La nature est déjà affichée au-dessus du titre : « … · Corrigé guidé » ferait doublon.
-    titre = re.sub(r"\s*·\s*Corrigé\s+(brut|guidé)\s*$", "", titre, flags=re.I)
+    titre = re.sub(r"\s*·\s*Corrigé(?:\s+(?:brut|guidé))?\s*$", "", titre, flags=re.I)
     titre = titre or f"{ep.get('concours', '')} {ep.get('filiere', '')} — {ep.get('matiere', '')}"
     return {
         "nature": libelle,
         "titre": echapper_latex(titre),
-        "titre-pdf": echapper_latex(f"{titre}"),
         "concours": echapper_latex(str(ep.get("concours", ""))),
         "filiere": echapper_latex(str(ep.get("filiere", ""))),
         "matiere": echapper_latex(str(ep.get("matiere", ""))),
