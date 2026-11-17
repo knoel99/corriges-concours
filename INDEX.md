@@ -2,6 +2,22 @@
 
 | Année | Concours | Filière | Épreuve | Brut | Guidé |
 |---|---|---|---|---|---|
+| 2025 | Agrégation | Chimie | Composition de chimie | [md](2025/agregation/agregation_chimie_composition-de-chimie_2025/brut.md) | [md](2025/agregation/agregation_chimie_composition-de-chimie_2025/guide.md) |
+| 2026 | Agrégation | Chimie | Composition de chimie | [md](2026/agregation/agregation_chimie_composition-de-chimie_2026/brut.md) | [md](2026/agregation/agregation_chimie_composition-de-chimie_2026/guide.md) |
+| 2025 | Agrégation | Chimie | Composition de physique | [md](2025/agregation/agregation_chimie_composition-de-physique_2025/brut.md) | [md](2025/agregation/agregation_chimie_composition-de-physique_2025/guide.md) |
+| 2026 | Agrégation | Chimie | Composition de physique | [md](2026/agregation/agregation_chimie_composition-de-physique_2026/brut.md) | [md](2026/agregation/agregation_chimie_composition-de-physique_2026/guide.md) |
+| 2025 | Agrégation | Chimie | Problème de chimie | [md](2025/agregation/agregation_chimie_probleme-de-chimie_2025/brut.md) | [md](2025/agregation/agregation_chimie_probleme-de-chimie_2025/guide.md) |
+| 2026 | Agrégation | Chimie | Problème de chimie | [md](2026/agregation/agregation_chimie_probleme-de-chimie_2026/brut.md) | [md](2026/agregation/agregation_chimie_probleme-de-chimie_2026/guide.md) |
+| 2025 | Agrégation | Maths | Analyse et probabilités | [md](2025/agregation/agregation_maths_analyse-et-probabilites_2025/brut.md) | [md](2025/agregation/agregation_maths_analyse-et-probabilites_2025/guide.md) |
+| 2026 | Agrégation | Maths | Analyse et probabilités | [md](2026/agregation/agregation_maths_analyse-et-probabilites_2026/brut.md) | [md](2026/agregation/agregation_maths_analyse-et-probabilites_2026/guide.md) |
+| 2025 | Agrégation | Maths | Mathématiques générales | [md](2025/agregation/agregation_maths_mathematiques-generales_2025/brut.md) | [md](2025/agregation/agregation_maths_mathematiques-generales_2025/guide.md) |
+| 2026 | Agrégation | Maths | Mathématiques générales | [md](2026/agregation/agregation_maths_mathematiques-generales_2026/brut.md) | [md](2026/agregation/agregation_maths_mathematiques-generales_2026/guide.md) |
+| 2025 | Agrégation | Physique | Composition de chimie | [md](2025/agregation/agregation_physique_composition-de-chimie_2025/brut.md) | [md](2025/agregation/agregation_physique_composition-de-chimie_2025/guide.md) |
+| 2026 | Agrégation | Physique | Composition de chimie | [md](2026/agregation/agregation_physique_composition-de-chimie_2026/brut.md) | [md](2026/agregation/agregation_physique_composition-de-chimie_2026/guide.md) |
+| 2025 | Agrégation | Physique | Composition de physique | [md](2025/agregation/agregation_physique_composition-de-physique_2025/brut.md) | [md](2025/agregation/agregation_physique_composition-de-physique_2025/guide.md) |
+| 2026 | Agrégation | Physique | Composition de physique | [md](2026/agregation/agregation_physique_composition-de-physique_2026/brut.md) | [md](2026/agregation/agregation_physique_composition-de-physique_2026/guide.md) |
+| 2025 | Agrégation | Physique | Problème de physique | [md](2025/agregation/agregation_physique_probleme-de-physique_2025/brut.md) | [md](2025/agregation/agregation_physique_probleme-de-physique_2025/guide.md) |
+| 2026 | Agrégation | Physique | Problème de physique | [md](2026/agregation/agregation_physique_probleme-de-physique_2026/brut.md) | [md](2026/agregation/agregation_physique_probleme-de-physique_2026/guide.md) |
 | 2026 | Agro-Véto | BCPST | Anglais | [md](2026/agro-veto/agro-veto_bcpst_anglais_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_anglais_2026/guide.md) |
 | 2026 | Agro-Véto | BCPST | Biologie | [md](2026/agro-veto/agro-veto_bcpst_biologie_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_biologie_2026/guide.md) |
 | 2026 | Agro-Véto | BCPST | Chimie | [md](2026/agro-veto/agro-veto_bcpst_chimie_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_chimie_2026/guide.md) |
@@ -87,9 +103,29 @@
 | 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
 | 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
+| 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
+| 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
+| 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2025 | BEL | BL | Mathématiques (oral) | [md](2025/bel/bel_bl_mathematiques-oral_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques-oral_2025/guide.md) |
+| 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
+| 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
+| 2026 | CAPES | Maths | Épreuve d'admissibilité 1 (bac+3) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-1-bac-3_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-1-bac-3_2026/guide.md) |
+| 2026 | CAPES | Maths | Épreuve d'admissibilité 2 (bac+3) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-2-bac-3_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-2-bac-3_2026/guide.md) |
+| 2025 | CAPES | Maths | Épreuve disciplinaire appliquée (bac+5) | [md](2025/capes/capes_maths_epreuve-disciplinaire-appliquee-bac-5_2025/brut.md) | [md](2025/capes/capes_maths_epreuve-disciplinaire-appliquee-bac-5_2025/guide.md) |
+| 2026 | CAPES | Maths | Épreuve disciplinaire appliquée (bac+5) | [md](2026/capes/capes_maths_epreuve-disciplinaire-appliquee-bac-5_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-disciplinaire-appliquee-bac-5_2026/guide.md) |
+| 2025 | CAPES | Maths | Épreuve disciplinaire (bac+5) | [md](2025/capes/capes_maths_epreuve-disciplinaire-bac-5_2025/brut.md) | [md](2025/capes/capes_maths_epreuve-disciplinaire-bac-5_2025/guide.md) |
+| 2026 | CAPES | Maths | Épreuve disciplinaire (bac+5) | [md](2026/capes/capes_maths_epreuve-disciplinaire-bac-5_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-disciplinaire-bac-5_2026/guide.md) |
+| 2026 | CAPES | Physique | Épreuve d'admissibilité 1 (bac+3) | [md](2026/capes/capes_physique_epreuve-d-admissibilite-1-bac-3_2026/brut.md) | [md](2026/capes/capes_physique_epreuve-d-admissibilite-1-bac-3_2026/guide.md) |
+| 2026 | CAPES | Physique | Épreuve d'admissibilité 2 (bac+3) | [md](2026/capes/capes_physique_epreuve-d-admissibilite-2-bac-3_2026/brut.md) | [md](2026/capes/capes_physique_epreuve-d-admissibilite-2-bac-3_2026/guide.md) |
+| 2025 | CAPES | Physique | Épreuve disciplinaire appliquée (bac+5) | [md](2025/capes/capes_physique_epreuve-disciplinaire-appliquee-bac-5_2025/brut.md) | [md](2025/capes/capes_physique_epreuve-disciplinaire-appliquee-bac-5_2025/guide.md) |
+| 2026 | CAPES | Physique | Épreuve disciplinaire appliquée (bac+5) | [md](2026/capes/capes_physique_epreuve-disciplinaire-appliquee-bac-5_2026/brut.md) | [md](2026/capes/capes_physique_epreuve-disciplinaire-appliquee-bac-5_2026/guide.md) |
+| 2025 | CAPES | Physique | Épreuve disciplinaire (bac+5) | [md](2025/capes/capes_physique_epreuve-disciplinaire-bac-5_2025/brut.md) | [md](2025/capes/capes_physique_epreuve-disciplinaire-bac-5_2025/guide.md) |
+| 2026 | CAPES | Physique | Épreuve disciplinaire (bac+5) | [md](2026/capes/capes_physique_epreuve-disciplinaire-bac-5_2026/brut.md) | [md](2026/capes/capes_physique_epreuve-disciplinaire-bac-5_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Anglais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Français-philosophie | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/guide.md) |
 | 2026 | CCINP | MP | Informatique | [md](2026/ccinp/ccinp_mp_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_informatique_2026/guide.md) |
@@ -177,12 +213,35 @@
 | 2026 | ECRICOME | ECT | Management | [md](2026/ecricome/ecricome_ect_management_2026/brut.md) | [md](2026/ecricome/ecricome_ect_management_2026/guide.md) |
 | 2025 | ECRICOME | ECT | Maths technologiques | [md](2025/ecricome/ecricome_ect_maths-technologiques_2025/brut.md) | [md](2025/ecricome/ecricome_ect_maths-technologiques_2025/guide.md) |
 | 2026 | ECRICOME | ECT | Maths technologiques | [md](2026/ecricome/ecricome_ect_maths-technologiques_2026/brut.md) | [md](2026/ecricome/ecricome_ect_maths-technologiques_2026/guide.md) |
+| 2025 | ENM | Auditeurs | Cas pratique de droit civil (2e-3e concours) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-civil-2e-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-civil-2e-3e-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | Cas pratique de droit pénal (2e-3e concours) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-penal-2e-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-penal-2e-3e-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | Note de synthèse (1er-2e-3e concours) | [md](2025/enm/enm_auditeurs_note-de-synthese-1er-2e-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_note-de-synthese-1er-2e-3e-concours_2025/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Chimie | [md](2026/g2e/g2e_bcpst_chimie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_chimie_2026/guide.md) |
 | 2026 | G2E | BCPST | Composition française | [md](2026/g2e/g2e_bcpst_composition-francaise_2026/brut.md) | [md](2026/g2e/g2e_bcpst_composition-francaise_2026/guide.md) |
 | 2026 | G2E | BCPST | Géologie | [md](2026/g2e/g2e_bcpst_geologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_geologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Maths | [md](2026/g2e/g2e_bcpst_maths_2026/brut.md) | [md](2026/g2e/g2e_bcpst_maths_2026/guide.md) |
 | 2026 | G2E | BCPST | Physique | [md](2026/g2e/g2e_bcpst_physique_2026/brut.md) | [md](2026/g2e/g2e_bcpst_physique_2026/guide.md) |
+| 2025 | IEP | 1A | Allemand | [md](2025/iep/iep_1a_allemand_2025/brut.md) | [md](2025/iep/iep_1a_allemand_2025/guide.md) |
+| 2026 | IEP | 1A | Allemand | [md](2026/iep/iep_1a_allemand_2026/brut.md) | [md](2026/iep/iep_1a_allemand_2026/guide.md) |
+| 2025 | IEP | 1A | Anglais | [md](2025/iep/iep_1a_anglais_2025/brut.md) | [md](2025/iep/iep_1a_anglais_2025/guide.md) |
+| 2026 | IEP | 1A | Anglais | [md](2026/iep/iep_1a_anglais_2026/brut.md) | [md](2026/iep/iep_1a_anglais_2026/guide.md) |
+| 2025 | IEP | 1A | Espagnol | [md](2025/iep/iep_1a_espagnol_2025/brut.md) | [md](2025/iep/iep_1a_espagnol_2025/guide.md) |
+| 2026 | IEP | 1A | Espagnol | [md](2026/iep/iep_1a_espagnol_2026/brut.md) | [md](2026/iep/iep_1a_espagnol_2026/guide.md) |
+| 2025 | IEP | 1A | Histoire | [md](2025/iep/iep_1a_histoire_2025/brut.md) | [md](2025/iep/iep_1a_histoire_2025/guide.md) |
+| 2026 | IEP | 1A | Histoire | [md](2026/iep/iep_1a_histoire_2026/brut.md) | [md](2026/iep/iep_1a_histoire_2026/guide.md) |
+| 2025 | IEP | 1A | Italien | [md](2025/iep/iep_1a_italien_2025/brut.md) | [md](2025/iep/iep_1a_italien_2025/guide.md) |
+| 2026 | IEP | 1A | Italien | [md](2026/iep/iep_1a_italien_2026/brut.md) | [md](2026/iep/iep_1a_italien_2026/guide.md) |
+| 2025 | INSP | Externe | Cas pratique | [md](2025/insp/insp_externe_cas-pratique_2025/brut.md) | [md](2025/insp/insp_externe_cas-pratique_2025/guide.md) |
+| 2026 | INSP | Externe | Cas pratique | [md](2026/insp/insp_externe_cas-pratique_2026/brut.md) | [md](2026/insp/insp_externe_cas-pratique_2026/guide.md) |
+| 2025 | INSP | Externe | Droit public | [md](2025/insp/insp_externe_droit-public_2025/brut.md) | [md](2025/insp/insp_externe_droit-public_2025/guide.md) |
+| 2026 | INSP | Externe | Droit public | [md](2026/insp/insp_externe_droit-public_2026/brut.md) | [md](2026/insp/insp_externe_droit-public_2026/guide.md) |
+| 2025 | INSP | Externe | Économie | [md](2025/insp/insp_externe_economie_2025/brut.md) | [md](2025/insp/insp_externe_economie_2025/guide.md) |
+| 2026 | INSP | Externe | Économie | [md](2026/insp/insp_externe_economie_2026/brut.md) | [md](2026/insp/insp_externe_economie_2026/guide.md) |
+| 2025 | INSP | Externe | Question contemporaine | [md](2025/insp/insp_externe_question-contemporaine_2025/brut.md) | [md](2025/insp/insp_externe_question-contemporaine_2025/guide.md) |
+| 2026 | INSP | Externe | Question contemporaine | [md](2026/insp/insp_externe_question-contemporaine_2026/brut.md) | [md](2026/insp/insp_externe_question-contemporaine_2026/guide.md) |
+| 2025 | INSP | Externe | Questions à réponses courtes | [md](2025/insp/insp_externe_questions-a-reponses-courtes_2025/brut.md) | [md](2025/insp/insp_externe_questions-a-reponses-courtes_2025/guide.md) |
+| 2026 | INSP | Externe | Questions à réponses courtes | [md](2026/insp/insp_externe_questions-a-reponses-courtes_2026/brut.md) | [md](2026/insp/insp_externe_questions-a-reponses-courtes_2026/guide.md) |
 | 2026 | Mines-Ponts | MP-MPI-PC-PSI | Français | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_francais_2026/guide.md) |
 | 2026 | Mines-Ponts | MP-MPI-PC-PSI | Langue vivante | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_langue-vivante_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_langue-vivante_2026/guide.md) |
 | 2026 | Mines-Ponts | MP-PC-PSI | Informatique commune | [md](2026/mines-ponts/mines-ponts_mp-pc-psi_informatique-commune_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp-pc-psi_informatique-commune_2026/guide.md) |
