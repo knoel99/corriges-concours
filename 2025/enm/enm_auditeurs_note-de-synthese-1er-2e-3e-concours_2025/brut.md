@@ -1,0 +1,45 @@
+# ENM Auditeurs — Note de synthèse (1er-2e-3e concours) 2025 · Corrigé brut
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Problématique** : quel régime permet au référé pénal environnemental de prévenir les atteintes à l’environnement et quelles limites affectent son effectivité ?
+
+La prévention des dommages environnementaux suppose une intervention rapide, leur réparation se heurtant notamment à leur possible irréversibilité. Les procédures d’urgence constituent à cet égard un instrument essentiel, mais leur diversité et leurs conditions de mise en œuvre peuvent en limiter l’efficacité (docs 7 et 11). Parmi elles, le référé pénal environnemental permet au juge des libertés et de la détention, saisi par le procureur de la République, de prescrire des mesures utiles en présence de certains manquements environnementaux. Lorsqu’une information est ouverte, le juge d’instruction dispose des mêmes pouvoirs (docs 5 et 8).
+
+Le dossier présente ainsi une procédure conservatoire dont le régime et les garanties ont été précisés par les juges, mais dont l’utilisation demeure confrontée à des limites qui invitent à mieux articuler les voies de protection de l’environnement.
+
+* * *
+
+L’article L. 216-13 du code de l’environnement autorise le juge à ordonner toute mesure utile, notamment la suspension ou l’interdiction des opérations concernées, pour une durée maximale d’un an. Il ne s’agit pas de prononcer une peine, mais de limiter ou de faire cesser un dommage environnemental. La Cour de cassation a précisé, le 28 janvier 2020, que ces mesures supposent un manquement aux prescriptions énumérées par le texte, sans qu’il soit nécessaire de caractériser une faute pénale de la personne à laquelle elles sont imposées (docs 2 et 8). Le commentaire d’Evelyne Monteiro souligne la portée de cette distinction et rappelle l’allongement, en 2016, de la durée maximale des mesures, auparavant fixée à trois mois (doc. 5).
+
+Le dispositif s’applique également aux installations classées. Son champ d’intervention est défini par renvois. Il comprend le non-respect des prescriptions de l’autorisation environnementale prévues à l’article L. 181-12, des dispositions relatives à l’eau expressément visées, des mesures prises sur le fondement de l’article L. 171-7 et de l’interdiction de certaines techniques minières résultant de l’article L. 111-13 du code minier (doc. 8). Les règles relatives à l’eau portent notamment sur sa qualité, sa répartition et les installations, ouvrages, travaux ou activités soumis à autorisation ou déclaration (doc. 3). Pour la recherche et l’exploitation des hydrocarbures liquides ou gazeux, le texte minier prohibe les forages suivis de fracturation hydraulique et certaines autres techniques recourant à une pression supérieure à la pression lithostatique, sous réserve des opérations de maintenance ou de sécurité visées par le texte (doc. 4).
+
+Il faut distinguer ces pouvoirs judiciaires de la police administrative. L’article L. 171-7 organise notamment la mise en demeure de régulariser une activité exercée sans le titre requis, ainsi que des mesures conservatoires, la suspension, la consignation ou l’exécution d’office dans les conditions qu’il prévoit. L’article L. 181-12 concerne les prescriptions de l’autorisation environnementale (doc. 1). Le renvoi opéré par l’article L. 216-13 permet leur articulation avec le référé pénal ; il ne transforme pas toutes les mesures administratives en une liste exhaustive des pouvoirs du juge.
+
+* * *
+
+La saisine du JLD appartient au procureur de la République, qui peut agir d’office ou à la demande de l’autorité administrative, de la victime ou d’une association agréée de protection de l’environnement. Ces dernières ne saisissent donc pas directement ce juge. La personne concernée est entendue ou convoquée à comparaître dans les quarante-huit heures ; l’administration, la victime ou l’association est entendue si elle le demande. Les mesures sont exécutoires par provision et cessent sur décision du juge ou lorsque la décision au fond devient définitive (doc. 8).
+
+Cette célérité ne supprime pas les garanties procédurales. Par sa décision du 15 novembre 2024, le Conseil constitutionnel distingue la personne qui n’est pas mise en cause pénalement de celle qui est déjà suspectée ou poursuivie pour les faits sur lesquels elle est entendue. Dans cette seconde situation, elle doit être informée de son droit de se taire : ses déclarations sont susceptibles de contribuer à sa propre incrimination. La conformité des dispositions contestées est subordonnée à cette réserve (doc. 6). La chambre criminelle en tire les conséquences le 28 janvier 2025, en précisant que cette protection bénéficie également à la personne morale par l’intermédiaire de son représentant (doc. 9).
+
+Le procureur et la personne concernée peuvent faire appel dans les dix jours. L’appel n’est pas suspensif ; toutefois, le président de la chambre de l’instruction ou de la cour d’appel, saisi dans les vingt-quatre heures, peut suspendre les mesures jusqu’à la décision d’appel, sans que le délai de suspension puisse excéder vingt jours (doc. 8). Dans son arrêt du 18 mars 2025, la Cour de cassation rappelle que ce droit d’appel n’est pas ouvert aux victimes ni aux associations de protection de l’environnement, même lorsqu’elles ont demandé au procureur de mettre en œuvre la procédure (doc. 10).
+
+Ainsi précisé, le régime du référé pénal permet une intervention précoce sans attendre une condamnation. Son efficacité concrète reste toutefois liée à son domaine d’application et à son articulation avec les autres procédures.
+
+* * *
+
+La suspension d’une installation classée non conforme illustre l’utilité du dispositif. L’article de Laurent Radisson rapporte la confirmation, en mai 2024, d’une suspension de dix mois concernant une installation de traitement de déchets à Strasbourg. Les manquements constatés et l’absence d’autorisation requise justifient l’intervention judiciaire, alors même que l’autorité préfectorale n’avait pas elle-même suspendu l’activité (doc. 12). Le référé pénal peut ainsi assurer une protection complémentaire de celle exercée par l’administration.
+
+Cette efficacité ne doit cependant pas être généralisée. L’article de Richard Schittly relate l’engagement, par la métropole de Lyon, d’un référé civil destiné à obtenir une expertise indépendante sur une pollution aux PFAS. Cette démarche intervient après l’échec, en novembre 2023, d’un référé pénal contre Arkema, le manquement réglementaire requis n’ayant pas été établi. Elle vise notamment à documenter les responsabilités en vue de l’indemnisation des préjudices (doc. 13). Cet exemple montre à la fois les limites du référé pénal et l’intérêt d’autres voies judiciaires pour constituer les preuves nécessaires.
+
+La mission parlementaire de 2021 constate plus largement la complexité d’un ensemble de référés administratifs, civils et pénaux dont les conditions ne sont pas toujours adaptées à l’environnement. Les dommages peuvent être différés, diffus et difficiles à établir scientifiquement, tandis que les exigences procédurales imposent de démontrer rapidement l’urgence ou le manquement invoqué (doc. 7). L’étude de Michael Koskas souligne également le faible usage des référés pénaux, la place prépondérante du référé-suspension administratif et le rôle complémentaire des référés civils (doc. 11).
+
+* * *
+
+Les adaptations jurisprudentielles améliorent les possibilités de protection sans faire disparaître leurs conditions. Michael Koskas relève ainsi que le Conseil d’État a reconnu en 2022 le droit de vivre dans un environnement équilibré et respectueux de la santé comme liberté fondamentale invocable en référé-liberté. La décision ne dispense cependant pas les requérants d’établir l’urgence particulière ainsi qu’une atteinte grave et manifestement illégale. La rapidité de cette procédure peut convenir à des dommages imminents et irréversibles, sans en faire une réponse universelle (doc. 11).
+
+Les propositions étudiées tendent donc à améliorer la cohérence des procédures. La mission parlementaire reprend la nécessité d’un bilan et d’une homogénéisation des instruments existants (doc. 7). Michael Koskas présente notamment la proposition d’élargir le champ des référés pénaux environnementaux, dont la rédaction par renvois nuit à la lisibilité, et les réflexions sur un référé pénal unique ou sur l’élargissement de la saisine. Ces orientations demeurent des propositions, distinctes du droit applicable exposé par les textes et les décisions du dossier (doc. 11).
+
+Enfin, l’auteur montre que la prévention ne repose pas seulement sur les référés. Le traitement accéléré des affaires et les réflexions sur une responsabilité davantage tournée vers la prévention complètent les mesures provisoires. Le référé pénal prend ainsi place dans un ensemble de mécanismes dont l’articulation doit permettre une protection rapide, tout en conservant les conditions et les garanties propres à chaque voie de droit (doc. 11).
+
+*(1378 mots)*

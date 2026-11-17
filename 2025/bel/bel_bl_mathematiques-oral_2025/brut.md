@@ -669,7 +669,7 @@ La dernière question porte sur $A^TA^2=I_n$.
 
 ### Question (1)
 
-$\det(M\,{}^tM\,M)=(\det M)^2\det M=(\det M)^3=\det I_n=1$, d'où $\det M=1\ne0$ : $M$ est **inversible**.
+Si $Mx=0$, l'identité $MM^TM=I_n$ donne $x=MM^TMx=0$. Le noyau de $M$ est donc nul. Par le théorème du rang, l'endomorphisme de $\mathbb R^n$ associé est bijectif : **$M$ est inversible**.
 
 ### Question (2)
 
@@ -687,7 +687,7 @@ Diagonalisable avec unique valeur propre $1$ : $M=I_n$.
 
 ### Question (4)
 
-$\det({}^tA\,A^2)=(\det A)^3=1\Rightarrow\det A=1$ : $A$ inversible.
+Si $Ax=0$, alors $A^2x=0$ et l'identité $A^TA^2=I_n$ donne $x=A^TA^2x=0$. Le noyau de $A$ est nul ; le théorème du rang en dimension finie montre donc que **$A$ est inversible**.
 
 De ${}^tA\,A^2=I_n$ : ${}^tA=A^{-2}$.
 
