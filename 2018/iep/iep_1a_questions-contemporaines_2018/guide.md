@@ -1,0 +1,312 @@
+# IEP 1A — Questions contemporaines 2018 · Corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+## Présentation générale
+
+Concours commun du Réseau ScPo, entrée en première année, **samedi 26 mai 2018**, de **8h30 à 11h30** : **trois heures, coefficient 3**, aucun document autorisé. Le candidat devait choisir **un seul** des deux sujets. Les copies modèles A et B ci-dessous sont alternatives ; il ne fallait pas les traiter toutes les deux pendant l’épreuve.
+
+Les repères officiels **A/B** sont conservés. Les thèmes de 2018 sont **Radicalités** et **La ville**, confirmés par le rapport de jury de la même session, quatorze pages, section Questions contemporaines pp. 11–13. Les indications de ce rapport éclairent les attentes sans imposer une seule problématique ni un seul plan.
+
+Chaque proposition est une dissertation entièrement rédigée. Le guide reprend les introductions, les trois parties et les conclusions sans omission. Les faits et références sont antérieurs au 26 mai 2018. Aucune longueur chiffrée n’est prescrite dans le sujet. Répartition du temps suggérée : environ quarante-cinq minutes pour définir, problématiser et organiser le sujet choisi ; deux heures de rédaction ; quinze minutes de relecture.
+
+## Sujet A — Peut-on être à la fois radical et démocrate ?
+
+### Présentation du sujet
+
+Le sujet A porte sur le thème **Radicalités**, associé en 2018 à **La ville**. La question met en relation deux qualifications d’un acteur, *radical* et *démocrate*. Elle ne demande ni une histoire exhaustive des partis radicaux ni une dissertation limitée aux radicalités religieuses. Elle oblige à distinguer les objectifs d’une transformation, l’attitude envers les adversaires et les moyens de l’action.
+
+La réponse proposée établit une compatibilité sous conditions. Elle prend principalement appui sur l’histoire française et sur les droits civiques américains. Le plan ne distribue pas des auteurs entre un oui et un non : il suit le passage d’une exigence d’égalité à ses risques de confiscation, puis à ses garanties démocratiques.
+
+### Analyse du sujet
+
+> [!INDICATION]
+> Distinguez la profondeur d’un changement et l’usage de la violence. Le mot radical peut-il avoir plusieurs significations dans une même argumentation ?
+
+> [!INDICATION]
+> Demandez-vous ce qu’un acteur doit reconnaître à ses adversaires pour rester démocrate, même lorsqu’il est convaincu de l’injustice de l’ordre existant.
+
+##### Solution
+
+**Radical.** Le terme peut désigner la profondeur d’un projet, qui cherche les causes d’un problème, ou l’intransigeance d’une méthode. Ne pas confondre changement profond, radicalité doctrinale, extrémisme et violence. Le sens historique du radicalisme républicain montre que le mot n’a pas toujours la connotation qu’il prend dans l’actualité.
+
+**Démocrate.** La souveraineté populaire n’épuise pas la définition : égalité des membres, pluralisme, droits des opposants et possibilité de l’alternance en sont des conditions. Une majorité ne rend pas légitime tout usage du pouvoir.
+
+**À la fois.** Il faut tester une coexistence dans la conduite d’un même acteur, et non seulement établir que des radicaux ont contribué historiquement à la démocratie. Le devoir doit expliquer comment une conviction forte traite le désaccord, la loi et les personnes qu’elle veut émanciper.
+
+**Introduction rédigée**
+
+En 1901, la fondation du Parti républicain radical et radical-socialiste associe dans un même nom une volonté de transformation politique et l’attachement à la République. Ce rapprochement peut surprendre aujourd’hui, tant le mot radical évoque souvent le refus du compromis, voire le recours à la violence. Pourtant, l’élargissement des droits démocratiques a souvent été porté par des acteurs qui contestaient profondément l’ordre établi. La radicalité paraît alors tantôt une menace pour la démocratie, tantôt l’énergie qui lui permet de tenir ses promesses.
+
+Être radical peut signifier vouloir remonter à la racine d’un problème et transformer ses causes, plutôt qu’en corriger seulement les effets. Le terme peut aussi désigner une attitude intransigeante quant aux objectifs ou aux moyens d’une action. Être démocrate suppose de reconnaître l’égale capacité des membres d’une communauté à participer à son gouvernement, mais aussi d’accepter leur pluralité et la possibilité de perdre le pouvoir. La difficulté ne se réduit donc pas à choisir entre modération et violence : une réforme profonde peut emprunter des moyens pacifiques, tandis qu’une défense apparemment modérée de l’ordre peut maintenir des exclusions.
+
+Peut-on poursuivre une transformation radicale tout en reconnaissant aux autres le droit de la contester et de la refuser ? La radicalité peut d’abord exprimer une exigence constitutive de la démocratie. Elle devient cependant incompatible avec elle lorsqu’elle prétend soustraire ses fins ou ses méthodes à toute discussion. La conciliation tient alors à une distinction : être exigeant sur l’égalité démocratique, sans se croire autorisé à confisquer la décision collective au nom de cette exigence.
+
+### Problématique
+
+> [!INDICATION]
+> Faites apparaître une difficulté qui permette de progresser dans le raisonnement, au lieu de reprendre simplement la question du sujet.
+
+##### Solution
+
+Peut-on poursuivre une transformation radicale tout en reconnaissant aux autres le droit de la contester et de la refuser ?
+
+Variante possible : à quelles conditions une exigence d’émancipation radicale respecte-t-elle la pluralité des personnes qu’elle veut libérer ? Cette variante doit encore examiner les objectifs et les moyens concrets de l’acteur.
+
+### Plan détaillé
+
+Un plan en trois parties est proposé, sans caractère obligatoire : établir le problème, en préciser les limites, puis dégager les conditions d’une réponse. Les transitions appartiennent à la démonstration ; la partie finale ne doit pas être un inventaire de solutions sans rapport avec le diagnostic.
+
+#### Partie I — Une exigence radicale peut faire progresser la démocratie
+
+> [!INDICATION]
+> Cherchez des principes démocratiques qui mettent en cause l’ordre établi à sa racine.
+
+> [!INDICATION]
+> Comparez la profondeur d’une revendication et les moyens de sa défense : une transformation exigeante doit-elle être violente ?
+
+##### Solution
+
+La démocratie est elle-même porteuse d’une contestation radicale de certains principes d’ordre. Faire reposer la légitimité du pouvoir sur les citoyens revient à nier qu’un groupe puisse gouverner par un privilège de naissance ou par la possession d’une vérité dont il serait seul dépositaire. La Déclaration des droits de l’homme et du citoyen de 1789 rompt ainsi avec la légitimité des distinctions héréditaires en affirmant une égalité de droits et une souveraineté dont aucune autorité ne peut disposer comme d’un bien privé. Cette rupture ne produit pas immédiatement une démocratie inclusive, mais son principe permet de mettre en cause les exclusions que le nouvel ordre conserve.
+
+Dans *Du contrat social*, en 1762, Rousseau refuse que la souveraineté soit aliénée et pense une association politique dont les membres soient auteurs de la loi. On peut discuter les difficultés de sa théorie, notamment le rapport entre volonté générale et pluralité des opinions ; elle montre néanmoins qu’une exigence démocratique peut transformer jusqu’au fondement de l’obéissance. Le citoyen ne doit pas seulement bénéficier d’un bon gouvernement. Il doit pouvoir se reconnaître dans l’autorité qui s’exerce sur lui. Une telle ambition ne se contente pas d’améliorer le fonctionnement du pouvoir existant : elle en change le principe.
+
+Les combats pour l’extension de la citoyenneté confirment cette dimension transformatrice. Le suffrage universel masculin de 1848, puis l’accès des femmes au vote en France en 1944, déplacent les frontières du peuple autorisé à participer. Ces changements ont rencontré la résistance d’intérêts et de représentations qui les faisaient paraître excessifs à leurs adversaires. Le fait qu’ils soient devenus des acquis n’efface pas le caractère profond de la rupture. Juger une revendication radicale à partir de sa seule distance avec les habitudes dominantes reviendrait à faire de l’ordre existant la mesure définitive de la démocratie.
+
+La radicalité peut aussi consister à rendre effective une égalité que les institutions proclament déjà. Le mouvement américain pour les droits civiques, dans les années 1950 et 1960, met en cause une ségrégation qui prive une partie de la population de l’exercice réel de ses droits. Dans sa lettre de la prison de Birmingham, en 1963, Martin Luther King explique pourquoi l’attente du moment jugé opportun par les détenteurs du pouvoir peut perpétuer l’injustice. Son engagement associe une transformation exigeante des rapports sociaux à une stratégie non violente. Il permet de distinguer la profondeur des objectifs de la brutalité des moyens : radical n’est pas nécessairement violent.
+
+Enfin, une démocratie peut s’affaiblir lorsqu’elle réduit la politique à la gestion de ce qui paraît possible dans l’ordre présent. Des rapports économiques, sociaux ou culturels limitent la participation bien avant l’entrée dans un bureau de vote. Une critique qui interroge ces obstacles à leur racine peut donc enrichir la vie démocratique, au lieu de se réduire à une menace extérieure. Les luttes syndicales, féministes ou anticoloniales ont, dans des contextes différents, rendu discutables des relations auparavant présentées comme naturelles. Elles ne sont pas toutes démocratiques par définition ; leur apport tient à leur capacité à faire reconnaître la parole de personnes qui en étaient privées.
+
+Ainsi, renoncer à toute radicalité pourrait conduire le démocrate à accepter des inégalités incompatibles avec ses propres principes. Mais la certitude de combattre une injustice ne résout pas la question de la façon d’agir, ni celle de l’autorité qui décidera de l’ordre nouveau. L’exigence d’émancipation peut se retourner contre la démocratie si ses défenseurs s’attribuent le droit exclusif d’en définir le sens.
+
+> [!METHODE]
+> Distinguer histoire et argument : les exemples de suffrage et de droits civiques établissent une possibilité de compatibilité, pas une innocence générale de toutes les radicalités.
+
+#### Partie II — La confiscation du vrai et de la volonté du peuple détruit cette compatibilité
+
+> [!INDICATION]
+> À quel moment une conviction cesse-t-elle de traiter l’opposant comme un interlocuteur ?
+
+> [!INDICATION]
+> Examinez les pouvoirs que l’acteur s’accorde au nom de ses fins. Comment les conditions de la démocratie limitent-elles aussi une majorité ?
+
+##### Solution
+
+La contradiction apparaît d’abord lorsque la radicalité devient la certitude de détenir une réponse définitive. La démocratie suppose que les citoyens puissent se tromper, changer d’avis et soumettre leurs projets à l’examen d’autres points de vue. L’acteur qui considère toute objection comme une trahison ne traite plus ses interlocuteurs comme des égaux. Même s’il affirme agir au nom du peuple, il transforme progressivement le désaccord en faute. La frontière décisive ne passe donc pas seulement entre projets modérés et projets extrêmes, mais entre convictions discutables et vérités imposées.
+
+Cette tentation peut s’appuyer sur une représentation homogène du peuple. Une partie de la population ou une organisation prétend alors incarner la totalité de la communauté et exclut ses adversaires de cette appartenance. La pluralité réelle devient un obstacle qu’il faudrait éliminer pour rendre le peuple conforme à son image. Dans ses travaux réunis dans *Essais sur le politique*, en 1986, Claude Lefort insiste sur l’impossibilité pour un pouvoir démocratique de s’approprier durablement la place du pouvoir ou de donner un corps définitif au peuple. Une organisation qui se présente comme l’unique interprète de sa volonté abolit précisément cette ouverture.
+
+Les expériences révolutionnaires montrent le danger d’une radicalité qui cesse de reconnaître des limites à l’action menée au nom de l’émancipation. Durant la Terreur de 1793-1794, les contraintes de la guerre et de la lutte contre les adversaires de la République contribuent à une politique d’exception qui réprime aussi les oppositions intérieures. Il ne suffit ni de condamner toute la Révolution à partir de cette période, ni de justifier la répression par les principes invoqués. Le problème est celui d’un pouvoir qui réduit toujours davantage l’espace de la contestation au motif qu’il défend la liberté. La finalité proclamée ne peut tenir lieu de garantie démocratique.
+
+L’intransigeance majoritaire peut produire une autre confiscation. Une majorité électorale ne détient pas un droit illimité sur les minorités, sur l’opposition ou sur les conditions des élections à venir. Tocqueville, dans *De la démocratie en Amérique*, publié en 1835 et 1840, analyse le risque d’une tyrannie de la majorité. Une décision populaire peut donc contredire certaines conditions de la liberté démocratique. Celui qui se dit radicalement attaché à la volonté majoritaire doit encore accepter que cette volonté soit encadrée par des droits et par des procédures qui empêchent sa transformation en domination définitive.
+
+Les moyens employés doivent enfin être examinés pour eux-mêmes. Une action violente peut prétendre hâter l’avènement d’une société plus juste tout en détruisant les possibilités de participation de ceux qu’elle prétend libérer. La peur, la clandestinité imposée et l’élimination physique des adversaires ne préparent pas spontanément une communauté d’égaux. Inversement, il serait trop simple de réserver toute violence aux contestataires et toute légitimité à l’ordre établi : des institutions peuvent réprimer les mobilisations ou refuser durablement des droits. L’appréciation démocratique demande donc de juger la nécessité des moyens, leurs destinataires et les possibilités de contestation qu’ils laissent subsister, et non le seul statut officiel de celui qui agit.
+
+La radicalité devient ainsi incompatible avec la démocratie lorsqu’elle se donne pour mission d’en finir avec le conflit en imposant un ordre incontestable. Cela n’oblige pas à renoncer aux transformations profondes. Il faut plutôt comprendre comment une conviction exigeante peut accepter de ne jamais devenir propriétaire de la décision collective.
+
+> [!METHODE]
+> Le contexte de la Terreur est rappelé sans en faire une justification générale ; la critique porte sur les conditions de contestation et sur les limites du pouvoir, pas sur la seule distance d’un projet à l’ordre établi.
+
+#### Partie III — Une radicalité démocratique doit préserver le désaccord et les droits
+
+> [!INDICATION]
+> Quelles garanties permettent à des personnes de refuser le projet qui prétend les émanciper ?
+
+> [!INDICATION]
+> Discutez le compromis et la désobéissance à partir de critères, sans en faire des vertus ou des fautes par définition.
+
+##### Solution
+
+Une première condition est de distinguer l’intransigeance sur l’égalité des personnes et la prétention à posséder seul les solutions. On peut refuser de transiger sur le droit des autres à prendre part à la vie politique tout en acceptant de discuter les institutions et les politiques qui rendront ce droit effectif. Les objectifs démocratiques ne se traduisent pas en une seule organisation possible de la société. La radicalité porte alors sur le refus de l’exclusion, et non sur l’interdiction faite à autrui de proposer une autre voie.
+
+Cette attitude exige de reconnaître la valeur politique du compromis sans en faire une vertu absolue. Un compromis peut aménager une injustice et devenir un moyen de différer indéfiniment sa suppression. Il peut aussi permettre à des adversaires de continuer à vivre et à décider ensemble, au lieu de choisir entre domination et rupture. Le démocrate doit donc pouvoir distinguer ce qui relève d’une négociation sur les moyens et ce qui priverait certains de la qualité même d’interlocuteur. Ce jugement ne se réduit pas à une formule ; il suppose d’expliquer publiquement ce qui est accepté, refusé et susceptible d’être révisé.
+
+La désobéissance civile rend cette difficulté particulièrement visible. Refuser une règle peut sembler contredire le respect démocratique de la loi. Mais une action publique, argumentée et non violente peut aussi chercher à rappeler à une communauté les principes qu’elle viole. Les campagnes des droits civiques en offrent un exemple : elles ne visent pas simplement à substituer la décision privée de quelques militants à celle de tous, mais à rendre possible la participation de ceux qui sont exclus. La désobéissance ne devient pas démocratique par le seul fait que ses auteurs l’affirment. Sa justification dépend du tort dénoncé, des moyens choisis et de l’ouverture d’une discussion qui ne confisque pas la parole des autres.
+
+Il faut également donner une forme durable à la participation que les mobilisations rendent possible. Le passage d’une protestation à des droits, à des contrôles et à des institutions accessibles empêche que l’émancipation dépende indéfiniment de la présence d’un chef ou d’une organisation. L’alternance, la liberté de la presse, l’indépendance de la justice et la possibilité de constituer de nouvelles associations ne sont pas de simples obstacles formels à un projet transformateur. Elles permettent à ceux qui seront gouvernés par ce projet de l’évaluer, de le contester et, le cas échéant, d’en proposer un autre.
+
+Enfin, la démocratie gagne à accueillir une critique qui ne considère pas ses institutions présentes comme achevées. Les débats sur la représentation des femmes, sur la place des minorités ou sur la participation entre deux scrutins montrent que la citoyenneté ne se limite pas à défendre des procédures existantes. Un acteur radical peut ouvrir ces questions et obliger les pouvoirs à répondre de leurs exclusions. Il reste démocrate s’il admet que les personnes qu’il souhaite émanciper ne penseront pas nécessairement comme lui et ne lui devront pas une obéissance définitive. La transformation de la société peut être profonde sans que la pluralité cesse d’en être une condition.
+
+> [!METHODE]
+> La dernière partie énonce des conditions concrètes : égalité des interlocuteurs, justification des moyens, libertés, alternance et institutions contestables. Elle ne se limite pas à conseiller une radicalité moins radicale.
+
+### Références et exemples
+
+| Référence ou exemple | Apport et limite | Emplacement |
+|---|---|---|
+| Parti républicain radical et radical-socialiste, fondation en 1901 | Historicité du sens de radical ; aucune preuve automatique de la conduite démocratique d’un parti | Introduction |
+| Déclaration des droits de l’homme et du citoyen, 1789 ; Rousseau, *Du contrat social*, 1762 | Rupture avec le privilège et question du fondement de l’obéissance | I |
+| Suffrage universel masculin, 1848 ; vote des femmes, 1944 | Transformation des frontières de la participation | I |
+| Martin Luther King, lettre de Birmingham, 1963 ; droits civiques américains | Transformation profonde par une action non violente ; justification de la désobéissance | I, III |
+| Claude Lefort, *Essais sur le politique*, 1986 | Impossibilité de s’approprier le pouvoir et de représenter définitivement tout le peuple | II |
+| Terreur, 1793–1794 | Risques de la politique d’exception ; contexte et limites distingués | II |
+| Tocqueville, *De la démocratie en Amérique*, 1835 et 1840 | La majorité peut elle-même porter atteinte aux conditions de la démocratie | II |
+
+> [!JURY]
+> Le rapport 2018 (p. 11) précise : « Il ne s’agissait donc pas de se laisser enfermer dans la seule connotation contemporaine du terme radical liée aux radicalités religieuses. » Le traitement doit articuler principes et comportements politiques.
+
+> [!PIEGE]
+> Assimiler radicalité et violence ; qualifier toute contestation du pouvoir d’antidémocratique ; réduire la démocratie au résultat d’un vote ; transformer l’exemple révolutionnaire en justification de tous les moyens.
+
+### Bilan
+
+**Conclusion rédigée**
+
+##### Solution
+
+On peut donc être à la fois radical et démocrate, à condition de préciser ce sur quoi porte la radicalité. La démocratie a besoin d’acteurs capables de mettre en cause les racines de l’exclusion et de rendre effectifs des principes que les habitudes ou les intérêts établis affaiblissent. La profondeur d’un objectif ne commande ni la violence ni le refus de toute procédure.
+
+La conciliation cesse toutefois lorsque l’acteur se croit autorisé à imposer seul le sens de l’émancipation, à supprimer l’opposition ou à gouverner sans limites au nom du peuple. La radicalité démocratique consiste plutôt à pousser l’exigence d’égalité jusqu’à reconnaître aux autres le droit de contester le projet qui prétend les servir. Sa force se mesure alors autant à l’ampleur des transformations qu’elle rend possibles qu’à la liberté qu’elle laisse à ceux qui devront en vivre les effets.
+
+Retenir la distinction entre fins, moyens et rapport au désaccord. Un critère de compatibilité doit dire ce qu’un acteur s’interdit de faire même lorsqu’il juge son projet juste. Cette méthode se transpose aux sujets reliant une exigence politique et une forme de vie collective.
+
+## Sujet B — Les villes sont-elles en crise ?
+
+### Présentation du sujet
+
+Le sujet B porte sur le thème **La ville**. Son pluriel interdit de transformer une situation locale en diagnostic universel. Le terme *crise* doit être défini : déclin, saturation, rupture d’équilibre ou contradiction durable entre attractivité et conditions de vie ? Le cœur du devoir est le rapport entre ces sens et les trajectoires concrètes des villes.
+
+La réponse proposée combine géographie, sociologie, économie et analyse politique. Le point de vue est arrêté au **26 mai 2018** : Detroit en 2013, les banlieues françaises en 2005, les analyses de Sassen, Jacobs ou Lefebvre sont disponibles ; la pandémie de 2020 et les transformations ultérieures ne sont pas utilisées.
+
+### Analyse du sujet
+
+> [!INDICATION]
+> Comparez une ville qui perd des habitants et une ville dont les prix augmentent rapidement. Le mot crise explique-t-il la même chose dans les deux cas ?
+
+> [!INDICATION]
+> Interrogez le pluriel : quelles échelles, quels habitants et quelles fonctions urbaines permettent d’évaluer le diagnostic sans le généraliser abusivement ?
+
+##### Solution
+
+**Villes.** Retenir densité, diversité des fonctions et inscription dans des réseaux sans imposer un seuil unique à tous les pays. Distinguer la commune, l’agglomération et la métropole ; le sujet ne s’arrête pas aux seules très grandes villes.
+
+**Crise.** Identifier ce qui est perturbé et pour qui. Une ville peut attirer les capitaux tout en perdant en accessibilité pour ses habitants. Le même mot ne recouvre pas exactement le déclin d’une ancienne ville industrielle et la saturation d’un espace en expansion.
+
+**Sont-elles.** Il faut construire un diagnostic argumenté avant d’examiner des réponses. Éviter le catalogue logement/transports/pollution : chaque exemple doit éclairer la relation entre production de l’espace, avantages urbains et possibilités d’habiter.
+
+**Introduction rédigée**
+
+En 2013, Detroit se déclare en faillite, donnant une image spectaculaire du déclin d’une ancienne capitale industrielle. Pourtant, au même moment, l’urbanisation se poursuit à l’échelle mondiale et les grandes métropoles concentrent activités, investissements et populations. La ville paraît à la fois un lieu recherché et un espace où s’accumulent les difficultés de logement, de déplacement et de coexistence. Ce contraste interdit de comprendre la crise urbaine comme une simple disparition de la puissance des villes.
+
+Une ville se caractérise notamment par la concentration de population et d’activités, la diversité des fonctions et la place qu’elle occupe dans des réseaux. Mais le pluriel du sujet empêche d’en faire un modèle unique : une métropole mondiale, une ancienne cité industrielle et une ville en croissance rapide ne rencontrent pas les mêmes difficultés. La crise désigne une perturbation profonde des équilibres et des capacités d’une organisation, dont l’issue reste incertaine. Appliquée aux villes, elle peut renvoyer à un déclin économique, mais aussi à l’incapacité de transformer leur développement en conditions de vie acceptables pour leurs habitants.
+
+Comment expliquer que les villes attirent toujours davantage tout en paraissant moins capables d’assurer une vie commune accessible et soutenable ? Leurs difficultés révèlent d’abord des contradictions économiques, sociales et environnementales importantes. Elles ne doivent cependant pas masquer la diversité des trajectoires ni les ressources propres à la vie urbaine. La crise invite finalement à interroger moins l’existence des villes que les formes de leur production et les choix politiques qui organisent l’accès à leurs avantages.
+
+### Problématique
+
+> [!INDICATION]
+> Faites apparaître une difficulté qui permette de progresser dans le raisonnement, au lieu de reprendre simplement la question du sujet.
+
+##### Solution
+
+Comment expliquer que les villes attirent toujours davantage tout en paraissant moins capables d’assurer une vie commune accessible et soutenable ?
+
+Variante possible : les crises urbaines traduisent-elles l’échec de la ville ou celui de certains modes de développement et de gouvernement ? Cette question suppose de distinguer les trajectoires et de ne pas annoncer d’emblée une réponse uniforme.
+
+### Plan détaillé
+
+Un plan en trois parties est proposé, sans caractère obligatoire : établir le problème, en préciser les limites, puis dégager les conditions d’une réponse. Les transitions appartiennent à la démonstration ; la partie finale ne doit pas être un inventaire de solutions sans rapport avec le diagnostic.
+
+#### Partie I — Des contradictions urbaines qui affectent les conditions d’habiter
+
+> [!INDICATION]
+> Cherchez comment une proximité géographique peut coexister avec des possibilités d’accès très inégales.
+
+> [!INDICATION]
+> Reliez logement, travail et mobilité. La création de richesse garantit-elle la possibilité de demeurer dans la ville ?
+
+##### Solution
+
+Les difficultés urbaines sont d’abord celles d’un accès inégal à l’espace et à ses ressources. La proximité géographique ne signifie pas l’égalité de situation : des quartiers voisins peuvent disposer de logements, d’équipements et de possibilités d’emploi très différents. Le coût du sol et des loyers éloigne certains habitants des lieux où ils travaillent, tandis que la concentration de populations défavorisées dans des espaces moins bien desservis accroît leurs contraintes. La ville rassemble, mais elle peut aussi organiser une séparation qui devient visible dans les parcours quotidiens.
+
+La métropolisation renforce parfois cette contradiction. Dans *The Global City*, en 1991, Saskia Sassen analyse le rôle de certaines grandes villes comme centres de commandement d’une économie mondialisée. Leur intégration aux réseaux internationaux s’accompagne d’une polarisation entre emplois très qualifiés et activités de service moins rémunérées. La création de richesse ne garantit donc pas une distribution égale de ses bénéfices. Une ville peut être prospère selon certains indicateurs tout en devenant moins habitable pour une partie des personnes qui la font fonctionner.
+
+La crise du logement révèle particulièrement ce décalage. La demande de localisation, les usages du logement comme placement et les inégalités de revenus peuvent faire monter les prix sans améliorer l’accès de tous à un toit. La crise financière de 2008 a montré, notamment aux États-Unis, les effets de l’articulation entre crédit, immobilier et vulnérabilité des ménages. Les quartiers touchés par les saisies et les logements vacants rappellent que construire ou valoriser le parc immobilier ne suffit pas à répondre au besoin d’habiter. La ville risque alors d’être produite pour les anticipations de rendement plus que pour la continuité des vies.
+
+Les villes en croissance rapide connaissent d’autres formes de désajustement. Lorsque les équipements et l’offre de logement ne suivent pas l’arrivée de nouveaux habitants, des quartiers se développent dans des conditions précaires. Dans *Planet of Slums*, en 2006, Mike Davis met en évidence la place de l’habitat informel dans l’urbanisation des pays du Sud. Il ne faut pas réduire ces quartiers à une absence d’organisation : ils comportent des activités et des solidarités. Leur existence révèle néanmoins la difficulté à garantir l’accès à l’eau, aux services ou à la sécurité résidentielle. La croissance de la ville peut ainsi coexister avec une insuffisance de la protection de ses habitants.
+
+À ces tensions s’ajoutent les effets environnementaux et les contraintes de déplacement. Les pollutions atmosphériques, la congestion, l’artificialisation des sols ou l’exposition aux risques touchent des espaces et des populations différents. L’éloignement résidentiel peut imposer une dépendance à l’automobile, tandis que les ménages les plus modestes ne choisissent pas toujours leur proximité avec des infrastructures nuisantes. Il ne s’agit pas d’accuser la densité en elle-même : elle peut aussi réduire certaines distances et rendre efficaces des transports collectifs. Le problème est celui d’une organisation urbaine qui produit des coûts collectifs sans répartir équitablement les moyens de les éviter.
+
+Enfin, les tensions urbaines atteignent les relations entre groupes et institutions. Les émeutes de 2005 dans des banlieues françaises ne s’expliquent pas par une cause unique et ne permettent pas de déclarer toutes les villes en guerre. Elles ont cependant rendu visibles des sentiments de relégation, des discriminations et une défiance envers les autorités. La ville peut alors cesser d’apparaître comme un espace commun où les promesses d’égalité deviennent concrètes. Ces crises sont réelles ; elles ne prouvent pourtant ni un déclin uniforme ni l’épuisement de la capacité des villes à produire de la vie collective.
+
+> [!METHODE]
+> Les exemples ne sont pas juxtaposés : ils expliquent le décalage entre les bénéfices de la concentration et leur accès socialement différencié.
+
+#### Partie II — Des trajectoires diverses et des ressources propres à la ville
+
+> [!INDICATION]
+> Comparez les mécanismes du déclin et de la saturation ; pourquoi le même diagnostic ne suffit-il pas ?
+
+> [!INDICATION]
+> Cherchez ce qui attire encore dans les villes et ce que la diversité urbaine permet de produire. Comment en discuter les ambivalences ?
+
+##### Solution
+
+La première raison de nuancer le diagnostic tient à la diversité des trajectoires. Detroit ne représente pas l’ensemble des villes américaines, pas plus qu’une métropole dynamique ne garantit la prospérité de toutes les autres. Le déclin industriel peut réduire les ressources fiscales et conduire à la vacance de logements, tandis qu’ailleurs la croissance pose surtout des problèmes de prix et de saturation. Utiliser le même mot de crise pour ces deux situations n’est pas nécessairement illégitime ; il faut toutefois préciser ce qui se dégrade et pour qui. Sans cette distinction, le constat perd sa capacité d’explication.
+
+L’attractivité persistante des villes montre aussi qu’elles offrent des possibilités importantes. La concentration favorise l’accès à des emplois diversifiés, à des services spécialisés, à des établissements de formation et à des réseaux de relations. Les activités peuvent bénéficier de leur proximité, de la circulation des savoirs et de l’existence d’infrastructures partagées. Ces avantages ne sont pas accessibles à tous de la même manière, mais ils expliquent pourquoi la ville ne peut être décrite seulement à partir de ses nuisances. Certaines difficultés naissent précisément du succès de lieux où beaucoup souhaitent s’installer.
+
+La diversité urbaine constitue également une ressource sociale et politique. Dans *The Death and Life of Great American Cities*, en 1961, Jane Jacobs défend l’importance de la diversité des usages, des activités et des rythmes dans la vitalité des quartiers. Sa critique des opérations qui prétendent reconstruire la ville en effaçant cette complexité invite à distinguer le désordre apparent et le dysfonctionnement réel. Une rue vivante n’est pas nécessairement moins organisée qu’un espace entièrement séparé selon ses fonctions. Les usages ordinaires peuvent produire des formes d’attention, d’échange et de sécurité qu’un plan abstrait ne remplace pas facilement.
+
+L’expérience de la grande ville comporte aussi une ambivalence à l’échelle individuelle. Dans son essai de 1903 sur les grandes villes et la vie de l’esprit, Georg Simmel analyse les effets des sollicitations et des relations impersonnelles caractéristiques de la vie métropolitaine. Ces relations peuvent produire distance et indifférence ; elles peuvent aussi desserrer le contrôle des appartenances locales. La ville ouvre ainsi des possibilités d’anonymat, d’autonomie et de rencontre. On ne saurait en déduire que chacun y est libre ou isolé de la même manière. La tension révèle plutôt que certains traits jugés pathologiques sont aussi les conditions de nouvelles libertés.
+
+Enfin, les villes peuvent transformer leurs modes de fonctionnement. La reconversion de quartiers, le développement des transports collectifs ou la récupération d’espaces publics montrent qu’elles ne sont pas des organisations figées. Ces transformations n’ont rien d’automatiquement juste : elles peuvent déplacer les difficultés ou renchérir le coût de la vie. Mais elles interdisent de confondre une situation de crise avec une incapacité définitive à agir. La concentration des acteurs, des connaissances et des mobilisations crée aussi des ressources pour inventer des solutions.
+
+La ville n’est donc ni un espace naturellement harmonieux qu’une crise viendrait soudain détruire, ni une forme condamnée par sa propre croissance. Les contradictions qui la traversent appellent un examen des choix qui les produisent. La question devient celle des pouvoirs capables de faire de l’urbanisation une amélioration des conditions d’existence plutôt qu’une simple accumulation de population et de valeur.
+
+> [!METHODE]
+> Simmel et Jacobs aident à comprendre des mécanismes ; ils ne démontrent pas que toutes les villes sont heureuses ou spontanément sûres.
+
+#### Partie III — Agir sur la production et le gouvernement de l’espace urbain
+
+> [!INDICATION]
+> Demandez-vous qui bénéficie d’une amélioration de quartier et qui risque d’être déplacé.
+
+> [!INDICATION]
+> À quelle échelle doit-on décider lorsque logement, emploi et transports dépassent les frontières d’une commune ?
+
+##### Solution
+
+Une première orientation consiste à replacer l’habiter au centre des politiques urbaines. Dans *Le Droit à la ville*, en 1968, Henri Lefebvre ne réduit pas la ville à un ensemble de bâtiments : il interroge la possibilité pour les habitants de participer à sa vie et à sa transformation. Cette perspective conduit à juger les projets selon leurs effets sur les usages, les liens et les possibilités d’accès, et non seulement selon les investissements attirés. Le logement, la mobilité et les espaces de rencontre ne sont pas des avantages séparés ; ils composent les conditions d’une présence durable dans la ville.
+
+La protection de cette présence suppose d’éviter que l’amélioration d’un quartier entraîne systématiquement le départ de ses habitants les moins favorisés. Des équipements rénovés et des espaces publics plus agréables peuvent accroître les prix et rendre le quartier moins accessible à ceux qui y vivaient. La lutte contre la dégradation ne se confond donc pas avec la seule montée en gamme. L’offre de logements abordables, la préservation de services et la possibilité pour les habitants de faire entendre leurs besoins doivent accompagner les transformations. Il faut traiter simultanément l’amélioration du lieu et les conditions sociales de son usage.
+
+La participation peut contribuer à cette orientation, à condition de ne pas devenir une simple consultation après décision. L’expérience des budgets participatifs engagée à Porto Alegre à partir de 1989 montre que les habitants peuvent être associés à la discussion de priorités d’investissement. Elle ne supprime ni les contraintes financières ni les inégalités de mobilisation ; elle modifie néanmoins les interlocuteurs et les informations qui entrent dans l’arbitrage. Une réponse à la crise urbaine suppose de reconnaître les compétences de ceux qui vivent les distances, les manques d’équipements et les risques, tout en préservant une décision qui ne favorise pas uniquement les groupes les mieux organisés.
+
+Il faut également agir à l’échelle des interdépendances réelles. Les limites administratives d’une commune ne correspondent pas nécessairement aux déplacements domicile-travail, aux réseaux de transport ou aux marchés du logement. Une politique locale peut déplacer ailleurs ce qu’elle présente comme une solution : éloigner des ménages sans améliorer leur accès aux emplois, par exemple. La coopération entre collectivités et la coordination avec l’État deviennent donc essentielles. La création de la Métropole du Grand Paris en 2016 illustre la recherche d’une échelle de gouvernement adaptée à un espace urbain qui dépasse les frontières communales, sans garantir à elle seule la résolution de ses déséquilibres.
+
+Enfin, la ville soutenable doit articuler les objectifs environnementaux et sociaux. Développer les transports collectifs, réduire les nuisances ou limiter l’étalement n’a de sens que si les alternatives sont réellement accessibles. Les technologies peuvent aider à connaître les flux ou à organiser des services ; elles ne décident pas de la répartition des efforts et des bénéfices. Une ville dite intelligente ne devient pas juste par la seule accumulation de données. L’enjeu reste politique : quelles vies rend-on possibles, quelles contraintes réduit-on, et qui participe aux choix ?
+
+> [!METHODE]
+> Une solution est évaluée selon ses effets et ses limites : participation réelle, logements abordables, coordination des échelles et accessibilité des alternatives environnementales.
+
+### Références et exemples
+
+| Référence ou exemple | Apport et limite | Emplacement |
+|---|---|---|
+| Detroit, faillite municipale en 2013 | Une trajectoire de déclin, sans en faire le modèle universel de la crise | Introduction, II |
+| Saskia Sassen, *The Global City*, 1991 | Polarisation et commandement économique dans certaines métropoles | I |
+| Crise immobilière et financière de 2008, États-Unis | Le rendement immobilier ne se confond pas avec le besoin d’habiter | I |
+| Mike Davis, *Planet of Slums*, 2006 | Habitat informel et insuffisance des services ; ne pas réduire les quartiers à un vide social | I |
+| Jane Jacobs, *The Death and Life of Great American Cities*, 1961 | Diversité d’usages et vitalité des quartiers | II |
+| Georg Simmel, essai sur les grandes villes et la vie de l’esprit, 1903 | Relations impersonnelles : distance et autonomie, pas un jugement univoque | II |
+| Henri Lefebvre, *Le Droit à la ville*, 1968 | Participation à la vie et à la transformation urbaines, au-delà du seul logement | III |
+| Porto Alegre, budgets participatifs à partir de 1989 ; Métropole du Grand Paris, 2016 | Participation et échelle des décisions ; limites financières et institutionnelles | III |
+
+> [!JURY]
+> Le rapport 2018 (p. 12) explique que la crise ne se confond pas avec le déclin et situe l’enjeu dans l’attractivité des villes confrontée aux difficultés de la qualité de vie. Il attend diversité des modèles urbains, polysémie de crise, comparaisons d’échelles et démarche interdisciplinaire. Ce passage est ici paraphrasé, sans lui attribuer un plan obligatoire.
+
+> [!PIEGE]
+> Confondre crise et déclin ; traiter toutes les villes comme une seule métropole ; réduire la ville à ses limites communales ; promettre que rénovation ou technologie supprimeraient mécaniquement les inégalités ; employer des faits postérieurs à mai 2018.
+
+### Bilan
+
+**Conclusion rédigée**
+
+##### Solution
+
+Les villes connaissent des crises réelles, mais celles-ci ne se résument pas à un même déclin. Certaines perdent des emplois et des habitants ; d’autres concentrent toujours davantage de ressources tout en rendant l’habiter plus difficile. Les difficultés de logement, de mobilité, d’environnement et de coexistence révèlent moins la disparition de l’attractivité urbaine que l’incapacité à convertir ses bénéfices en possibilités également partagées.
+
+Le pluriel du sujet impose donc un diagnostic différencié et une attention à ceux qui éprouvent la crise. Les ressources des villes, leur diversité et leurs capacités de transformation empêchent une condamnation de la vie urbaine en elle-même. Sortir de la crise suppose de discuter les modes de production et de gouvernement de l’espace, afin que l’amélioration des lieux accroisse aussi la capacité de leurs habitants à y vivre. La ville ne saurait être jugée seulement à ce qu’elle attire : elle doit aussi l’être à ceux auxquels elle permet de rester et de prendre part à son devenir.
+
+Retenir la comparaison des trajectoires, la distinction entre l’attractivité et l’habitabilité, et l’attention aux groupes concernés. Une réponse à une crise doit préciser à quelle échelle elle agit et comment ses bénéfices deviennent accessibles.
