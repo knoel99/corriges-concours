@@ -214,8 +214,14 @@
 | 2025 | ECRICOME | ECT | Maths technologiques | [md](2025/ecricome/ecricome_ect_maths-technologiques_2025/brut.md) | [md](2025/ecricome/ecricome_ect_maths-technologiques_2025/guide.md) |
 | 2026 | ECRICOME | ECT | Maths technologiques | [md](2026/ecricome/ecricome_ect_maths-technologiques_2026/brut.md) | [md](2026/ecricome/ecricome_ect_maths-technologiques_2026/guide.md) |
 | 2025 | ENM | Auditeurs | Cas pratique de droit civil (2e-3e concours) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-civil-2e-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-civil-2e-3e-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | Cas pratique de droit pénal (1er concours) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-penal-1er-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-penal-1er-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Cas pratique de droit pénal (2e-3e concours) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-penal-2e-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_cas-pratique-de-droit-penal-2e-3e-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | Composition de droit civil (1er concours) | [md](2025/enm/enm_auditeurs_composition-de-droit-civil-1er-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_composition-de-droit-civil-1er-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | Droit public (1er concours) | [md](2025/enm/enm_auditeurs_droit-public-1er-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_droit-public-1er-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Note de synthèse (1er-2e-3e concours) | [md](2025/enm/enm_auditeurs_note-de-synthese-1er-2e-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_note-de-synthese-1er-2e-3e-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
+| 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Chimie | [md](2026/g2e/g2e_bcpst_chimie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_chimie_2026/guide.md) |
 | 2026 | G2E | BCPST | Composition française | [md](2026/g2e/g2e_bcpst_composition-francaise_2026/brut.md) | [md](2026/g2e/g2e_bcpst_composition-francaise_2026/guide.md) |
