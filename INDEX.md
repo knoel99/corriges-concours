@@ -37,6 +37,56 @@
 | 2026 | Banque PT | PT | Sciences industrielles A | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-a_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles C | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/guide.md) |
+| 2025 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/brut.md) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/guide.md) |
+| 2026 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/brut.md) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/guide.md) |
+| 2025 | BCE | ECG | Culture générale (emlyon-HEC) | [md](2025/bce/bce_ecg_culture-generale-emlyon-hec_2025/brut.md) | [md](2025/bce/bce_ecg_culture-generale-emlyon-hec_2025/guide.md) |
+| 2026 | BCE | ECG | Culture générale (emlyon-HEC) | [md](2026/bce/bce_ecg_culture-generale-emlyon-hec_2026/brut.md) | [md](2026/bce/bce_ecg_culture-generale-emlyon-hec_2026/guide.md) |
+| 2025 | BCE | ECG | ESH (ESCP-SKEMA) | [md](2025/bce/bce_ecg_esh-escp-skema_2025/brut.md) | [md](2025/bce/bce_ecg_esh-escp-skema_2025/guide.md) |
+| 2026 | BCE | ECG | ESH (ESCP-SKEMA) | [md](2026/bce/bce_ecg_esh-escp-skema_2026/brut.md) | [md](2026/bce/bce_ecg_esh-escp-skema_2026/guide.md) |
+| 2025 | BCE | ECG | ESH (ESSEC-HEC) | [md](2025/bce/bce_ecg_esh-essec-hec_2025/brut.md) | [md](2025/bce/bce_ecg_esh-essec-hec_2025/guide.md) |
+| 2026 | BCE | ECG | ESH (ESSEC-HEC) | [md](2026/bce/bce_ecg_esh-essec-hec_2026/brut.md) | [md](2026/bce/bce_ecg_esh-essec-hec_2026/guide.md) |
+| 2025 | BCE | ECG | HGGMC (ESCP) | [md](2025/bce/bce_ecg_hggmc-escp_2025/brut.md) | [md](2025/bce/bce_ecg_hggmc-escp_2025/guide.md) |
+| 2026 | BCE | ECG | HGGMC (ESCP) | [md](2026/bce/bce_ecg_hggmc-escp_2026/brut.md) | [md](2026/bce/bce_ecg_hggmc-escp_2026/guide.md) |
+| 2025 | BCE | ECG | HGGMC (ESSEC) | [md](2025/bce/bce_ecg_hggmc-essec_2025/brut.md) | [md](2025/bce/bce_ecg_hggmc-essec_2025/guide.md) |
+| 2026 | BCE | ECG | HGGMC (ESSEC) | [md](2026/bce/bce_ecg_hggmc-essec_2026/brut.md) | [md](2026/bce/bce_ecg_hggmc-essec_2026/guide.md) |
+| 2025 | BCE | ECG | Maths 2 appliquées (ESSEC) | [md](2025/bce/bce_ecg_maths-2-appliquees-essec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-2-appliquees-essec_2025/guide.md) |
+| 2026 | BCE | ECG | Maths 2 appliquées (ESSEC) | [md](2026/bce/bce_ecg_maths-2-appliquees-essec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-2-appliquees-essec_2026/guide.md) |
+| 2025 | BCE | ECG | Maths 2 approfondies (ESCP-HEC) | [md](2025/bce/bce_ecg_maths-2-approfondies-escp-hec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-2-approfondies-escp-hec_2025/guide.md) |
+| 2026 | BCE | ECG | Maths 2 approfondies (ESCP-HEC) | [md](2026/bce/bce_ecg_maths-2-approfondies-escp-hec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-2-approfondies-escp-hec_2026/guide.md) |
+| 2025 | BCE | ECG | Maths appliquées (EDHEC) | [md](2025/bce/bce_ecg_maths-appliquees-edhec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-appliquees-edhec_2025/guide.md) |
+| 2026 | BCE | ECG | Maths appliquées (EDHEC) | [md](2026/bce/bce_ecg_maths-appliquees-edhec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-appliquees-edhec_2026/guide.md) |
+| 2025 | BCE | ECG | Maths appliquées (emlyon) | [md](2025/bce/bce_ecg_maths-appliquees-emlyon_2025/brut.md) | [md](2025/bce/bce_ecg_maths-appliquees-emlyon_2025/guide.md) |
+| 2026 | BCE | ECG | Maths appliquées (emlyon) | [md](2026/bce/bce_ecg_maths-appliquees-emlyon_2026/brut.md) | [md](2026/bce/bce_ecg_maths-appliquees-emlyon_2026/guide.md) |
+| 2025 | BCE | ECG | Maths appliquées (ESSEC-HEC) | [md](2025/bce/bce_ecg_maths-appliquees-essec-hec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-appliquees-essec-hec_2025/guide.md) |
+| 2026 | BCE | ECG | Maths appliquées (ESSEC-HEC) | [md](2026/bce/bce_ecg_maths-appliquees-essec-hec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-appliquees-essec-hec_2026/guide.md) |
+| 2025 | BCE | ECG | Maths approfondies (EDHEC) | [md](2025/bce/bce_ecg_maths-approfondies-edhec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-approfondies-edhec_2025/guide.md) |
+| 2026 | BCE | ECG | Maths approfondies (EDHEC) | [md](2026/bce/bce_ecg_maths-approfondies-edhec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-approfondies-edhec_2026/guide.md) |
+| 2025 | BCE | ECG | Maths approfondies (emlyon) | [md](2025/bce/bce_ecg_maths-approfondies-emlyon_2025/brut.md) | [md](2025/bce/bce_ecg_maths-approfondies-emlyon_2025/guide.md) |
+| 2026 | BCE | ECG | Maths approfondies (emlyon) | [md](2026/bce/bce_ecg_maths-approfondies-emlyon_2026/brut.md) | [md](2026/bce/bce_ecg_maths-approfondies-emlyon_2026/guide.md) |
+| 2025 | BCE | ECG | Maths approfondies (ESSEC-HEC) | [md](2025/bce/bce_ecg_maths-approfondies-essec-hec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-approfondies-essec-hec_2025/guide.md) |
+| 2026 | BCE | ECG | Maths approfondies (ESSEC-HEC) | [md](2026/bce/bce_ecg_maths-approfondies-essec-hec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-approfondies-essec-hec_2026/guide.md) |
+| 2025 | BCE | ECG | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ecg_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ecg_synthese-de-textes-escp-hec_2025/guide.md) |
+| 2026 | BCE | ECG | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2025 | BCE | ECT | Culture générale (Audencia) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/brut.md) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/guide.md) |
+| 2026 | BCE | ECT | Culture générale (Audencia) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/brut.md) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/guide.md) |
+| 2025 | BCE | ECT | Culture générale (Excelia) | [md](2025/bce/bce_ect_culture-generale-excelia_2025/brut.md) | [md](2025/bce/bce_ect_culture-generale-excelia_2025/guide.md) |
+| 2026 | BCE | ECT | Culture générale (Excelia) | [md](2026/bce/bce_ect_culture-generale-excelia_2026/brut.md) | [md](2026/bce/bce_ect_culture-generale-excelia_2026/guide.md) |
+| 2025 | BCE | ECT | Économie-droit (ESSEC) | [md](2025/bce/bce_ect_economie-droit-essec_2025/brut.md) | [md](2025/bce/bce_ect_economie-droit-essec_2025/guide.md) |
+| 2026 | BCE | ECT | Économie-droit (ESSEC) | [md](2026/bce/bce_ect_economie-droit-essec_2026/brut.md) | [md](2026/bce/bce_ect_economie-droit-essec_2026/guide.md) |
+| 2025 | BCE | ECT | Économie-droit (SCBS) | [md](2025/bce/bce_ect_economie-droit-scbs_2025/brut.md) | [md](2025/bce/bce_ect_economie-droit-scbs_2025/guide.md) |
+| 2026 | BCE | ECT | Économie-droit (SCBS) | [md](2026/bce/bce_ect_economie-droit-scbs_2026/brut.md) | [md](2026/bce/bce_ect_economie-droit-scbs_2026/guide.md) |
+| 2025 | BCE | ECT | Management (HEC) | [md](2025/bce/bce_ect_management-hec_2025/brut.md) | [md](2025/bce/bce_ect_management-hec_2025/guide.md) |
+| 2026 | BCE | ECT | Management (HEC) | [md](2026/bce/bce_ect_management-hec_2026/brut.md) | [md](2026/bce/bce_ect_management-hec_2026/guide.md) |
+| 2025 | BCE | ECT | Management (INSEEC) | [md](2025/bce/bce_ect_management-inseec_2025/brut.md) | [md](2025/bce/bce_ect_management-inseec_2025/guide.md) |
+| 2026 | BCE | ECT | Management (INSEEC) | [md](2026/bce/bce_ect_management-inseec_2026/brut.md) | [md](2026/bce/bce_ect_management-inseec_2026/guide.md) |
+| 2025 | BCE | ECT | Maths T (BSB) | [md](2025/bce/bce_ect_maths-t-bsb_2025/brut.md) | [md](2025/bce/bce_ect_maths-t-bsb_2025/guide.md) |
+| 2026 | BCE | ECT | Maths T (BSB) | [md](2026/bce/bce_ect_maths-t-bsb_2026/brut.md) | [md](2026/bce/bce_ect_maths-t-bsb_2026/guide.md) |
+| 2025 | BCE | ECT | Maths T (ESCP) | [md](2025/bce/bce_ect_maths-t-escp_2025/brut.md) | [md](2025/bce/bce_ect_maths-t-escp_2025/guide.md) |
+| 2026 | BCE | ECT | Maths T (ESCP) | [md](2026/bce/bce_ect_maths-t-escp_2026/brut.md) | [md](2026/bce/bce_ect_maths-t-escp_2026/guide.md) |
+| 2025 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2025/bce/bce_ect_resume-de-texte-icn-isc_2025/brut.md) | [md](2025/bce/bce_ect_resume-de-texte-icn-isc_2025/guide.md) |
+| 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
+| 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
+| 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Anglais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Français-philosophie | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/guide.md) |
 | 2026 | CCINP | MP | Informatique | [md](2026/ccinp/ccinp_mp_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_informatique_2026/guide.md) |
@@ -105,6 +155,25 @@
 | 2026 | e3a-Polytech | PC | Physique-chimie | [md](2026/e3a-polytech/e3a-polytech_pc_physique-chimie_2026/brut.md) | [md](2026/e3a-polytech/e3a-polytech_pc_physique-chimie_2026/guide.md) |
 | 2026 | e3a-Polytech | PSI | Maths | [md](2026/e3a-polytech/e3a-polytech_psi_maths_2026/brut.md) | [md](2026/e3a-polytech/e3a-polytech_psi_maths_2026/guide.md) |
 | 2026 | e3a-Polytech | PSI | Physique-chimie | [md](2026/e3a-polytech/e3a-polytech_psi_physique-chimie_2026/brut.md) | [md](2026/e3a-polytech/e3a-polytech_psi_physique-chimie_2026/guide.md) |
+| 2025 | ECRICOME | ECG | Culture générale | [md](2025/ecricome/ecricome_ecg_culture-generale_2025/brut.md) | [md](2025/ecricome/ecricome_ecg_culture-generale_2025/guide.md) |
+| 2026 | ECRICOME | ECG | Culture générale | [md](2026/ecricome/ecricome_ecg_culture-generale_2026/brut.md) | [md](2026/ecricome/ecricome_ecg_culture-generale_2026/guide.md) |
+| 2025 | ECRICOME | ECG | ESH | [md](2025/ecricome/ecricome_ecg_esh_2025/brut.md) | [md](2025/ecricome/ecricome_ecg_esh_2025/guide.md) |
+| 2026 | ECRICOME | ECG | ESH | [md](2026/ecricome/ecricome_ecg_esh_2026/brut.md) | [md](2026/ecricome/ecricome_ecg_esh_2026/guide.md) |
+| 2025 | ECRICOME | ECG | HGGMC | [md](2025/ecricome/ecricome_ecg_hggmc_2025/brut.md) | [md](2025/ecricome/ecricome_ecg_hggmc_2025/guide.md) |
+| 2026 | ECRICOME | ECG | HGGMC | [md](2026/ecricome/ecricome_ecg_hggmc_2026/brut.md) | [md](2026/ecricome/ecricome_ecg_hggmc_2026/guide.md) |
+| 2025 | ECRICOME | ECG | Maths appliquées | [md](2025/ecricome/ecricome_ecg_maths-appliquees_2025/brut.md) | [md](2025/ecricome/ecricome_ecg_maths-appliquees_2025/guide.md) |
+| 2026 | ECRICOME | ECG | Maths appliquées | [md](2026/ecricome/ecricome_ecg_maths-appliquees_2026/brut.md) | [md](2026/ecricome/ecricome_ecg_maths-appliquees_2026/guide.md) |
+| 2025 | ECRICOME | ECG | Maths approfondies | [md](2025/ecricome/ecricome_ecg_maths-approfondies_2025/brut.md) | [md](2025/ecricome/ecricome_ecg_maths-approfondies_2025/guide.md) |
+| 2026 | ECRICOME | ECG | Maths approfondies | [md](2026/ecricome/ecricome_ecg_maths-approfondies_2026/brut.md) | [md](2026/ecricome/ecricome_ecg_maths-approfondies_2026/guide.md) |
+| 2026 | ECRICOME | ECG | Résumé de texte | [md](2026/ecricome/ecricome_ecg_resume-de-texte_2026/brut.md) | [md](2026/ecricome/ecricome_ecg_resume-de-texte_2026/guide.md) |
+| 2025 | ECRICOME | ECT | Culture générale | [md](2025/ecricome/ecricome_ect_culture-generale_2025/brut.md) | [md](2025/ecricome/ecricome_ect_culture-generale_2025/guide.md) |
+| 2026 | ECRICOME | ECT | Culture générale | [md](2026/ecricome/ecricome_ect_culture-generale_2026/brut.md) | [md](2026/ecricome/ecricome_ect_culture-generale_2026/guide.md) |
+| 2025 | ECRICOME | ECT | Économie-droit | [md](2025/ecricome/ecricome_ect_economie-droit_2025/brut.md) | [md](2025/ecricome/ecricome_ect_economie-droit_2025/guide.md) |
+| 2026 | ECRICOME | ECT | Économie-droit | [md](2026/ecricome/ecricome_ect_economie-droit_2026/brut.md) | [md](2026/ecricome/ecricome_ect_economie-droit_2026/guide.md) |
+| 2025 | ECRICOME | ECT | Management | [md](2025/ecricome/ecricome_ect_management_2025/brut.md) | [md](2025/ecricome/ecricome_ect_management_2025/guide.md) |
+| 2026 | ECRICOME | ECT | Management | [md](2026/ecricome/ecricome_ect_management_2026/brut.md) | [md](2026/ecricome/ecricome_ect_management_2026/guide.md) |
+| 2025 | ECRICOME | ECT | Maths technologiques | [md](2025/ecricome/ecricome_ect_maths-technologiques_2025/brut.md) | [md](2025/ecricome/ecricome_ect_maths-technologiques_2025/guide.md) |
+| 2026 | ECRICOME | ECT | Maths technologiques | [md](2026/ecricome/ecricome_ect_maths-technologiques_2026/brut.md) | [md](2026/ecricome/ecricome_ect_maths-technologiques_2026/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Chimie | [md](2026/g2e/g2e_bcpst_chimie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_chimie_2026/guide.md) |
 | 2026 | G2E | BCPST | Composition française | [md](2026/g2e/g2e_bcpst_composition-francaise_2026/brut.md) | [md](2026/g2e/g2e_bcpst_composition-francaise_2026/guide.md) |
