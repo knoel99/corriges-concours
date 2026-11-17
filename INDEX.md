@@ -87,6 +87,9 @@
 | 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
 | 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2025 | BEL | BL | Mathématiques (oral) | [md](2025/bel/bel_bl_mathematiques-oral_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques-oral_2025/guide.md) |
+| 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Anglais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Français-philosophie | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/guide.md) |
 | 2026 | CCINP | MP | Informatique | [md](2026/ccinp/ccinp_mp_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_informatique_2026/guide.md) |
