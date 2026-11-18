@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" font-family="DejaVu Sans, sans-serif" stroke-linejoin="round" stroke-linecap="round">
+<title>Circuit série et conventions de tension</title>
+<defs><marker id="fleche" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L6 3 L0 6 Z" fill="#192b47"/></marker></defs>
+<path d="M127 113 H256 M276 113 H355 M456 113 H630 V221 H409 M351 221 H127 V113" fill="none" stroke="#192b47" stroke-width="2"/>
+<path d="M256 93 V133 M276 93 V133" fill="none" stroke="#192b47" stroke-width="3"/>
+<rect x="355" y="96" width="101" height="34" fill="#eef4f8" stroke="#192b47" stroke-width="2"/>
+<circle cx="380" cy="221" r="29" fill="#fff" stroke="#192b47" stroke-width="2"/>
+<path d="M393 221 H367" fill="none" stroke="#192b47" stroke-width="2" marker-end="url(#fleche)"/>
+<path d="M150 88 H210" fill="none" stroke="#067467" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M307 66 H224" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M464 66 H348" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M562 168 H191" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+<text x="180" y="80" text-anchor="middle" font-size="17" fill="#067467">I</text>
+<text x="265" y="55" text-anchor="middle" font-size="17" fill="#1b5685">uC</text>
+<text x="406" y="55" text-anchor="middle" font-size="17" fill="#1b5685">uR</text>
+<text x="265" y="153" text-anchor="middle" font-size="17" fill="#192b47">C₀</text>
+<text x="406" y="119" text-anchor="middle" font-size="17" fill="#192b47">R₀</text>
+<text x="380" y="158" text-anchor="middle" font-size="17" fill="#1b5685">U</text>
+<text x="380" y="275" text-anchor="middle" font-size="15" fill="#192b47">Source de courant</text>
+</svg>

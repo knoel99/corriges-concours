@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 256" font-family="DejaVu Sans, sans-serif" stroke-linejoin="round" stroke-linecap="round">
+<title>Tension V L2 pendant une période de découpage</title>
+<defs><marker id="fleche" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L6 3 L0 6 Z" fill="#192b47"/></marker></defs>
+<path d="M98 117 H692" fill="none" stroke="#192b47" stroke-width="2" marker-end="url(#fleche)"/>
+<path d="M154 213 V31" fill="none" stroke="#192b47" stroke-width="2" marker-end="url(#fleche)"/>
+<path d="M154 60 H640 M154 174 H640" fill="none" stroke="#7b8798" stroke-width="1.3" stroke-dasharray="5 5"/>
+<path d="M342 53 V188 M640 53 V188" fill="none" stroke="#7b8798" stroke-width="1.3" stroke-dasharray="5 5"/>
+<path d="M154 174 H342 V60 H640 V174 H680" fill="none" stroke="#1b5685" stroke-width="4"/>
+<path d="M342 113 V121 M640 113 V121" fill="none" stroke="#192b47" stroke-width="2"/>
+<text x="148" y="28" text-anchor="middle" font-size="17" fill="#192b47">V(L₂) (V)</text>
+<text x="136" y="65" text-anchor="end" font-size="17" fill="#192b47">+Vₛ</text>
+<text x="136" y="181" text-anchor="end" font-size="17" fill="#192b47">−Vₑ</text>
+<text x="139" y="139" text-anchor="end" font-size="17" fill="#192b47">0</text>
+<text x="342" y="210" text-anchor="middle" font-size="17" fill="#192b47">αT</text>
+<text x="640" y="210" text-anchor="middle" font-size="17" fill="#192b47">T</text>
+<text x="692" y="142" text-anchor="end" font-size="17" fill="#192b47">t (s)</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="690" height="470" viewBox="0 0 690 470" role="img" aria-labelledby="titre">
+  <title id="titre">Interféromètre de Michelson avec éclairage collimaté et photodiode au foyer</title>
+  <defs>
+    <marker id="aller" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#245887"/></marker>
+    <marker id="retour" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#9d3420"/></marker>
+    <marker id="lentille" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto-start-reverse"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#333"/></marker>
+  </defs>
+  <rect width="690" height="470" fill="white"/>
+  <path d="M272 230L342 160" stroke="#526c78" stroke-width="7" opacity=".55"/>
+  <g fill="none" stroke="#333" stroke-width="4"><path d="M535 157V234"/><path d="M266 60H343"/></g>
+  <g fill="none" stroke="#245887" stroke-width="2" marker-end="url(#aller)">
+    <path d="M55 185H484"/><path d="M55 207H484"/><path d="M317 185V89"/><path d="M295 207V89"/>
+  </g>
+  <g fill="none" stroke="#9d3420" stroke-width="2" marker-end="url(#retour)">
+    <path d="M534 185H432"/><path d="M534 207H432"/><path d="M317 61V119"/><path d="M295 61V119"/>
+    <path d="M317 185V315L306 395"/><path d="M295 207V315L306 395"/>
+  </g>
+  <path d="M263 315H350" fill="none" stroke="#333" stroke-width="2" marker-start="url(#lentille)" marker-end="url(#lentille)"/>
+  <circle cx="306" cy="395" r="5" fill="#222"/>
+  <g fill="#222" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <text x="48" y="160">Source collimatée</text>
+    <text x="235" y="45">Miroir M₁</text><text x="550" y="199">Miroir M₂</text>
+    <text x="350" y="157">Séparatrice à 45°</text>
+    <text x="363" y="321">Lentille convergente</text>
+    <text x="326" y="401">F′ : photodiode</text>
+    <text x="48" y="431" fill="#245887">Aller vers les miroirs</text>
+    <text x="405" y="431" fill="#9d3420">Retour vers la détection</text>
+  </g>
+</svg>

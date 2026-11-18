@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 447" font-family="DejaVu Sans, sans-serif" stroke-linejoin="round" stroke-linecap="round">
+<title>Carte du champ rotorique dans l’entrefer</title>
+<defs><marker id="fleche" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L6 3 L0 6 Z" fill="#192b47"/></marker></defs>
+<g transform="translate(379 223)">
+<circle r="168" fill="#e2e8ef" stroke="#192b47" stroke-width="2"/>
+<circle r="151" fill="#f5e4d9" stroke="#192b47" stroke-width="1.6"/>
+<circle r="123" fill="#fff" stroke="#192b47" stroke-width="1.6"/>
+<circle r="94" fill="#e2e8ef" stroke="#192b47" stroke-width="2"/>
+<path d="M-188 0 H187 M0 188 V-187" fill="none" stroke="#7b8798" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M-107 -107 L-87 -87 M107 -107 L87 -87 M-107 107 L-87 87 M107 107 L87 87" fill="none" stroke="#192b47" stroke-width="2"/>
+<g transform="scale(1 1)">
+<path d="M35 -128 L23 -87 Q20 -20 87 -23 L159 -43 A165 165 0 0 0 43 -159 Z" fill="none" stroke="#1b5685" stroke-width="2.3"/>
+<path d="M34 -126 L26 -96" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M96 -26 L125 -34" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+</g>
+<g transform="scale(-1 1)">
+<path d="M35 -128 L23 -87 Q20 -20 87 -23 L159 -43 A165 165 0 0 0 43 -159 Z" fill="none" stroke="#1b5685" stroke-width="2.3"/>
+<path d="M34 -126 L26 -96" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M96 -26 L125 -34" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+</g>
+<g transform="scale(1 -1)">
+<path d="M35 -128 L23 -87 Q20 -20 87 -23 L159 -43 A165 165 0 0 0 43 -159 Z" fill="none" stroke="#1b5685" stroke-width="2.3"/>
+<path d="M34 -126 L26 -96" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M96 -26 L125 -34" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+</g>
+<g transform="scale(-1 -1)">
+<path d="M35 -128 L23 -87 Q20 -20 87 -23 L159 -43 A165 165 0 0 0 43 -159 Z" fill="none" stroke="#1b5685" stroke-width="2.3"/>
+<path d="M34 -126 L26 -96" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M96 -26 L125 -34" fill="none" stroke="#1b5685" stroke-width="2.5" marker-end="url(#fleche)"/>
+</g>
+<text x="0" y="-130" text-anchor="middle" font-size="18" fill="#192b47">N</text>
+<text x="0" y="142" text-anchor="middle" font-size="18" fill="#192b47">N</text>
+<text x="-136" y="6" text-anchor="middle" font-size="18" fill="#192b47">S</text>
+<text x="136" y="6" text-anchor="middle" font-size="18" fill="#192b47">S</text>
+<text x="0" y="-8" text-anchor="middle" font-size="16" fill="#192b47">stator</text>
+<text x="193" y="5" text-anchor="start" font-size="17" fill="#192b47">x</text>
+<text x="0" y="-193" text-anchor="middle" font-size="17" fill="#192b47">y</text>
+</g>
+<path d="M124 86 H239 L264 104" fill="none" stroke="#7b8798" stroke-width="1.5"/>
+<path d="M640 118 H531 L499 153" fill="none" stroke="#7b8798" stroke-width="1.5"/>
+<path d="M675 278 H553 L482 251" fill="none" stroke="#7b8798" stroke-width="1.5"/>
+<text x="123" y="91" text-anchor="end" font-size="15" fill="#192b47">rotor</text>
+<text x="644" y="123" text-anchor="start" font-size="15" fill="#192b47">aimants</text>
+<text x="676" y="283" text-anchor="start" font-size="15" fill="#192b47">entrefer</text>
+<text x="379" y="425" text-anchor="middle" font-size="15" fill="#192b47">Pôles N et S désignés du côté de l’entrefer.</text>
+</svg>
