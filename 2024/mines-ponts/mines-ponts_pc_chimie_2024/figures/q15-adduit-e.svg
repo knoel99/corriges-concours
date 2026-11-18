@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 270" width="570" height="270" role="img" aria-labelledby="titre description">
+  <title id="titre">Adduit de Diels–Alder 16</title>
+  <desc id="description">Le nouveau cycle partage une double liaison avec le macrocycle. Le cycle porte deux groupes OTMS et un pont saturé à deux carbones, dont un carbone géminé diméthylé. À droite, les deux branches carbonées partent de part et d’autre de l’axe de l’alcène préexistant, de configuration E.</desc>
+  <g fill="none" stroke="#17212b" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Macrocycle. Les deux carbones voisins de l’alcène sont de côtés opposés. -->
+    <path d="M182 118L214 82L238 76 M258 76L278 76L331 75L374 119H425L468 156L458 194L415 219L372 228L327 222L274 195L208 169L182 118"/>
+    <path d="M186 117L211 165 M216 82L214 54 M210 84L208 54"/>
+    <path d="M377 125H422"/>
+    <!-- Diène cyclique et liaisons issues de la cycloaddition. -->
+    <path d="M182 118L128 97L79 118L79 174L129 194L208 169 M85 123V169 M128 97L113 141L113 159L129 194"/>
+    <path d="M113 159L147 142 M113 159L142 169"/>
+    <path d="M128 97L135 65 M79 174L50 191"/>
+    <!-- Acétonide et silyléther hérités du macrocycle. -->
+    <path d="M516 145L532 166L515 189 M532 166L549 140 M532 166L557 177 M327 222L323 243"/>
+    <!-- Méthyle du stéréoisomère représenté dans le schéma 4 du sujet. -->
+    <path d="M279 80l2 -1 M281 85l4 -2 M284 90l5 -3 M286 95l7 -4 M289 100l8 -5 M292 105l9 -6" stroke-width="1.3"/>
+  </g>
+  <g fill="#17212b">
+    <path d="M468 156L494 143L496 150Z"/>
+    <path d="M458 194L493 189L493 197Z"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#17212b">
+    <text x="204" y="50">O</text>
+    <text x="241" y="82">O</text>
+    <text x="498" y="150">O</text>
+    <text x="498" y="198">O</text>
+    <text x="115" y="59">OTMS</text>
+    <text x="5" y="202">TMSO</text>
+    <text x="300" y="261">OTBS</text>
+    <text x="395" y="148" font-weight="bold">E</text>
+  </g>
+</svg>

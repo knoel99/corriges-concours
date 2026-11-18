@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 208" width="620" height="208" role="img" aria-labelledby="titre desc">
+  <title id="titre">Réseau thermique du spa ouvert</title>
+  <desc id="desc">L’eau et l’extérieur forment deux nœuds reliés par trois branches parallèles. La branche latérale comporte trois résistances en série, le tapis est dans la branche inférieure et la convection en surface dans la branche supérieure.</desc>
+  <g fill="none" stroke="#253748" stroke-width="2" stroke-linecap="round">
+    <path d="M96 64V160 M524 64V160 M96 64H155 M217 64H273 M335 64H391 M453 64H524 M96 112H279 M341 112H524 M96 160H279 M341 160H524"/>
+    <rect x="155" y="53" width="62" height="22"/>
+    <rect x="273" y="53" width="62" height="22"/>
+    <rect x="391" y="53" width="62" height="22"/>
+    <rect x="279" y="101" width="62" height="22"/>
+    <rect x="279" y="149" width="62" height="22"/>
+    <path d="M75 112H96 M524 112H545"/>
+  </g>
+  <g fill="#253748">
+    <circle cx="96" cy="112" r="4"/>
+    <circle cx="524" cy="112" r="4"/>
+  </g>
+  <g fill="#253748" font-family="Arial, Helvetica, sans-serif" font-size="15" text-anchor="middle">
+    <text x="310" y="24">Paroi latérale</text>
+    <text x="186" y="47">R<tspan baseline-shift="sub" font-size="10">pc</tspan></text>
+    <text x="304" y="47">R<tspan baseline-shift="sub" font-size="10">p</tspan></text>
+    <text x="422" y="47">R<tspan baseline-shift="sub" font-size="10">ℓ,a</tspan></text>
+    <text x="310" y="95">Fond · R<tspan baseline-shift="sub" font-size="10">t</tspan></text>
+    <text x="310" y="144">Surface · R<tspan baseline-shift="sub" font-size="10">s</tspan></text>
+    <text x="48" y="117">Eau</text>
+    <text x="576" y="117">Extérieur</text>
+  </g>
+</svg>
