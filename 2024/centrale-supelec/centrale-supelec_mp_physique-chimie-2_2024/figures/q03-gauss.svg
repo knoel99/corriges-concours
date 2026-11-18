@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 330" role="img" aria-label="Surface de Gauss et normale extérieure" font-family="sans-serif">
+<title>Surface de Gauss et normale extérieure</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="670" height="330" fill="white"/>
+<circle cx="240" cy="164" r="110" fill="#ecf5fc" stroke="#185aa1" stroke-width="2"/>
+<circle cx="240" cy="164" r="70" fill="none" stroke="#aa3f18" stroke-width="2" stroke-dasharray="6 5"/>
+<circle cx="240" cy="164" r="3" fill="#17283e"/>
+<text x="229" y="184" fill="#17283e" font-size="16" text-anchor="end">O</text>
+<path d="M240 164 L295 121" fill="none" stroke="#17283e" stroke-width="2" />
+<circle cx="295" cy="121" r="3" fill="#17283e"/>
+<text x="266" y="136" fill="#17283e" font-size="15" text-anchor="start">r</text>
+<path d="M295 121 L354 75" fill="none" stroke="#aa3f18" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="363" y="76" fill="#aa3f18" font-size="16" text-anchor="start">normale extérieure n</text>
+<path d="M240 164 L240 274" fill="none" stroke="#185aa1" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="252" y="260" fill="#185aa1" font-size="15" text-anchor="start">a₀</text>
+<path d="M357 176 L392 176" fill="none" stroke="#185aa1" stroke-width="2" />
+<text x="404" y="182" fill="#185aa1" font-size="16" text-anchor="start">Sphère chargée uniformément</text>
+<path d="M335 218 L392 218" fill="none" stroke="#aa3f18" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="404" y="224" fill="#aa3f18" font-size="16" text-anchor="start">Surface de Gauss de rayon r</text>
+</svg>
