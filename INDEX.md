@@ -142,6 +142,7 @@
 | 2026 | CCINP | PC | Informatique | [md](2026/ccinp/ccinp_pc_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_pc_informatique_2026/guide.md) |
 | 2026 | CCINP | PC | Maths | [md](2026/ccinp/ccinp_pc_maths_2026/brut.md) | [md](2026/ccinp/ccinp_pc_maths_2026/guide.md) |
 | 2026 | CCINP | PC | Modélisation de systèmes physiques ou chimiques | [md](2026/ccinp/ccinp_pc_modelisation-de-systemes-physiques-ou-chimiques_2026/brut.md) | [md](2026/ccinp/ccinp_pc_modelisation-de-systemes-physiques-ou-chimiques_2026/guide.md) |
+| 2024 | CCINP | PC | Physique | [md](2024/ccinp/ccinp_pc_physique_2024/brut.md) | [md](2024/ccinp/ccinp_pc_physique_2024/guide.md) |
 | 2026 | CCINP | PC | Physique | [md](2026/ccinp/ccinp_pc_physique_2026/brut.md) | [md](2026/ccinp/ccinp_pc_physique_2026/guide.md) |
 | 2026 | CCINP | PSI | Informatique | [md](2026/ccinp/ccinp_psi_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_psi_informatique_2026/guide.md) |
 | 2026 | CCINP | PSI | Maths | [md](2026/ccinp/ccinp_psi_maths_2026/brut.md) | [md](2026/ccinp/ccinp_psi_maths_2026/guide.md) |
@@ -169,6 +170,7 @@
 | 2026 | Centrale-Supélec | MPI | Informatique | [md](2026/centrale-supelec/centrale-supelec_mpi_informatique_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mpi_informatique_2026/guide.md) |
 | 2026 | Centrale-Supélec | MPI | Physique-chimie 1 | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | MPI | Physique-chimie 2 | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-2_2026/guide.md) |
+| 2024 | Centrale-Supélec | PC | Chimie | [md](2024/centrale-supelec/centrale-supelec_pc_chimie_2024/brut.md) | [md](2024/centrale-supelec/centrale-supelec_pc_chimie_2024/guide.md) |
 | 2026 | Centrale-Supélec | PC | Chimie | [md](2026/centrale-supelec/centrale-supelec_pc_chimie_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_chimie_2026/guide.md) |
 | 2026 | Centrale-Supélec | PC | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_pc_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_maths-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | PC | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_pc_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_maths-2_2026/guide.md) |
