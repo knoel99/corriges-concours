@@ -146,7 +146,9 @@
 | 2026 | CCINP | PSI | Informatique | [md](2026/ccinp/ccinp_psi_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_psi_informatique_2026/guide.md) |
 | 2026 | CCINP | PSI | Maths | [md](2026/ccinp/ccinp_psi_maths_2026/brut.md) | [md](2026/ccinp/ccinp_psi_maths_2026/guide.md) |
 | 2026 | CCINP | PSI | Modélisation et ingénierie numérique | [md](2026/ccinp/ccinp_psi_modelisation-et-ingenierie-numerique_2026/brut.md) | [md](2026/ccinp/ccinp_psi_modelisation-et-ingenierie-numerique_2026/guide.md) |
+| 2025 | CCINP | PSI | Physique-chimie | [md](2025/ccinp/ccinp_psi_physique-chimie_2025/brut.md) | [md](2025/ccinp/ccinp_psi_physique-chimie_2025/guide.md) |
 | 2026 | CCINP | PSI | Physique-chimie | [md](2026/ccinp/ccinp_psi_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_psi_physique-chimie_2026/guide.md) |
+| 2025 | CCINP | PSI | Sciences industrielles de l’ingénieur | [md](2025/ccinp/ccinp_psi_sciences-industrielles_2025/brut.md) | [md](2025/ccinp/ccinp_psi_sciences-industrielles_2025/guide.md) |
 | 2026 | CCINP | PSI | Sciences industrielles | [md](2026/ccinp/ccinp_psi_sciences-industrielles_2026/brut.md) | [md](2026/ccinp/ccinp_psi_sciences-industrielles_2026/guide.md) |
 | 2026 | CCINP | TPC | Chimie | [md](2026/ccinp/ccinp_tpc_chimie_2026/brut.md) | [md](2026/ccinp/ccinp_tpc_chimie_2026/guide.md) |
 | 2026 | CCINP | TPC | Informatique | [md](2026/ccinp/ccinp_tpc_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_tpc_informatique_2026/guide.md) |
@@ -283,6 +285,7 @@
 | 2026 | Mines-Ponts | PSI | Maths 1 | [md](2026/mines-ponts/mines-ponts_psi_maths-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_maths-1_2026/guide.md) |
 | 2026 | Mines-Ponts | PSI | Maths 2 | [md](2026/mines-ponts/mines-ponts_psi_maths-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_maths-2_2026/guide.md) |
 | 2026 | Mines-Ponts | PSI | Physique 1 | [md](2026/mines-ponts/mines-ponts_psi_physique-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_physique-1_2026/guide.md) |
+| 2025 | Mines-Ponts | PSI | Physique 2 | [md](2025/mines-ponts/mines-ponts_psi_physique-2_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_psi_physique-2_2025/guide.md) |
 | 2026 | Mines-Ponts | PSI | Physique 2 | [md](2026/mines-ponts/mines-ponts_psi_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_physique-2_2026/guide.md) |
 | 2026 | Mines-Ponts | PSI | Sciences industrielles | [md](2026/mines-ponts/mines-ponts_psi_sciences-industrielles_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_sciences-industrielles_2026/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 174" role="img" aria-labelledby="titre">
+<title id="titre">Circuit thermique d'une fenêtre à double vitrage</title>
+<defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 8 4 L 0 8 z" fill="#182b3b"/></marker></defs>
+<rect width="770" height="174" fill="#ffffff"/>
+<g font-family="DejaVu Sans, sans-serif">
+<path d="M 38 100 H 732" fill="none" stroke="#182b3b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="38" y="72" text-anchor="middle" fill="#182b3b" font-size="16">Tₑₓₜ</text>
+<text x="732" y="72" text-anchor="middle" fill="#182b3b" font-size="16">Tᵢₙₜ</text>
+<text x="180" y="129" text-anchor="middle" fill="#182b3b" font-size="16">Tₛₑₓₜ</text>
+<text x="590" y="129" text-anchor="middle" fill="#182b3b" font-size="16">Tₛᵢₙₜ</text>
+<text x="38" y="150" text-anchor="start" fill="#526779" font-size="16">Air extérieur</text>
+<text x="732" y="150" text-anchor="end" fill="#526779" font-size="16">Air intérieur</text>
+<rect x="74" y="87" width="76" height="26" rx="3" fill="#f3f8fd" stroke="#245b92" stroke-width="2"/>
+<text x="112" y="75" text-anchor="middle" fill="#182b3b" font-size="16">1/(hₑ S_f)</text>
+<text x="112" y="42" text-anchor="middle" fill="#526779" font-size="16">Interface</text>
+<rect x="208" y="87" width="76" height="26" rx="3" fill="#f3f8fd" stroke="#245b92" stroke-width="2"/>
+<text x="246" y="75" text-anchor="middle" fill="#182b3b" font-size="16">e/(λ_V S_f)</text>
+<text x="246" y="42" text-anchor="middle" fill="#526779" font-size="16">Verre</text>
+<rect x="347" y="87" width="76" height="26" rx="3" fill="#f3f8fd" stroke="#245b92" stroke-width="2"/>
+<text x="385" y="75" text-anchor="middle" fill="#182b3b" font-size="16">e/(λ_Ar S_f)</text>
+<text x="385" y="42" text-anchor="middle" fill="#526779" font-size="16">Argon</text>
+<rect x="486" y="87" width="76" height="26" rx="3" fill="#f3f8fd" stroke="#245b92" stroke-width="2"/>
+<text x="524" y="75" text-anchor="middle" fill="#182b3b" font-size="16">e/(λ_V S_f)</text>
+<text x="524" y="42" text-anchor="middle" fill="#526779" font-size="16">Verre</text>
+<rect x="620" y="87" width="76" height="26" rx="3" fill="#f3f8fd" stroke="#245b92" stroke-width="2"/>
+<text x="658" y="75" text-anchor="middle" fill="#182b3b" font-size="16">1/(hᵢ S_f)</text>
+<text x="658" y="42" text-anchor="middle" fill="#526779" font-size="16">Interface</text>
+<circle cx="38" cy="100" r="3.3" fill="#182b3b"/>
+<circle cx="180" cy="100" r="3.3" fill="#182b3b"/>
+<circle cx="590" cy="100" r="3.3" fill="#182b3b"/>
+<circle cx="732" cy="100" r="3.3" fill="#182b3b"/>
+</g>
+</svg>
