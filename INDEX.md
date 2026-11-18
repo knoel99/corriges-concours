@@ -136,6 +136,7 @@
 | 2026 | CCINP | MP | Sciences industrielles | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/brut.md) | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/guide.md) |
 | 2026 | CCINP | MPI | Informatique | [md](2026/ccinp/ccinp_mpi_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_informatique_2026/guide.md) |
 | 2026 | CCINP | MPI | Maths 1 | [md](2026/ccinp/ccinp_mpi_maths-1_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_maths-1_2026/guide.md) |
+| 2024 | CCINP | MPI | Maths 2 | [md](2024/ccinp/ccinp_mpi_maths-2_2024/brut.md) | [md](2024/ccinp/ccinp_mpi_maths-2_2024/guide.md) |
 | 2026 | CCINP | MPI | Maths 2 | [md](2026/ccinp/ccinp_mpi_maths-2_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_maths-2_2026/guide.md) |
 | 2026 | CCINP | MPI | Physique-chimie | [md](2026/ccinp/ccinp_mpi_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_physique-chimie_2026/guide.md) |
 | 2026 | CCINP | PC | Chimie | [md](2026/ccinp/ccinp_pc_chimie_2026/brut.md) | [md](2026/ccinp/ccinp_pc_chimie_2026/guide.md) |
@@ -160,6 +161,7 @@
 | 2026 | CCINP | TSI | Sciences industrielles | [md](2026/ccinp/ccinp_tsi_sciences-industrielles_2026/brut.md) | [md](2026/ccinp/ccinp_tsi_sciences-industrielles_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI-PC-PSI | Anglais | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_anglais_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_anglais_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI-PC-PSI | Rédaction | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_redaction_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_redaction_2026/guide.md) |
+| 2024 | Centrale-Supélec | MP-MPI | Maths 1 | [md](2024/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2024/brut.md) | [md](2024/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2024/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP | Informatique | [md](2026/centrale-supelec/centrale-supelec_mp_informatique_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp_informatique_2026/guide.md) |
@@ -174,7 +176,9 @@
 | 2026 | Centrale-Supélec | PC | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_pc_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_maths-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | PC | Physique 1 | [md](2026/centrale-supelec/centrale-supelec_pc_physique-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_physique-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | PC | Physique 2 | [md](2026/centrale-supelec/centrale-supelec_pc_physique-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_physique-2_2026/guide.md) |
+| 2024 | Centrale-Supélec | PSI | Maths 1 | [md](2024/centrale-supelec/centrale-supelec_psi_maths-1_2024/brut.md) | [md](2024/centrale-supelec/centrale-supelec_psi_maths-1_2024/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_psi_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_maths-1_2026/guide.md) |
+| 2024 | Centrale-Supélec | PSI | Maths 2 | [md](2024/centrale-supelec/centrale-supelec_psi_maths-2_2024/brut.md) | [md](2024/centrale-supelec/centrale-supelec_psi_maths-2_2024/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_psi_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_maths-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Physique-chimie 1 | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Physique-chimie 2 | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-2_2026/guide.md) |
