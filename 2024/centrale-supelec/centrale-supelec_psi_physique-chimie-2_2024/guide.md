@@ -6,13 +6,11 @@
 
 Cette épreuve de quatre heures utilise plusieurs modèles pour étudier l'intérieur de la Terre. Les cinq parties associent calculs, ordres de grandeur et exploitation de documents.
 
-| Partie | Questions | Travail principal |
-|---|---|---|
-| I | Q1–Q15 | Établir les célérités par linéarisation, étudier une dispersion puis interpréter PREM. |
-| II | Q16–Q22 | Utiliser Gauss en gravitation et retrouver un profil de masse volumique. |
-| III | Q23–Q27 | Étudier une maille compacte, puis comparer les mesures du fer pur au modèle terrestre. |
-| IV | Q28–Q33 | Calculer un transfert thermique sphérique et relier le flux de solidification à la croissance de la graine. |
-| V | Q34–Q40 | Faire un bilan de matière, interpréter Monte-Carlo et lire des frontières de régime volcanique. |
+- **Partie I (Q1–Q15).** Établir les célérités par linéarisation, étudier une dispersion puis interpréter PREM.
+- **Partie II (Q16–Q22).** Utiliser Gauss en gravitation et retrouver un profil de masse volumique.
+- **Partie III (Q23–Q27).** Étudier une maille compacte, puis comparer les mesures du fer pur au modèle terrestre.
+- **Partie IV (Q28–Q33).** Calculer un transfert thermique sphérique et relier le flux de solidification à la croissance de la graine.
+- **Partie V (Q34–Q40).** Faire un bilan de matière, interpréter Monte-Carlo et lire des frontières de régime volcanique.
 
 Les parties peuvent être abordées séparément en repérant les données communes de la figure 1. Les dérivations de Q1–Q6, le champ de Q17–Q19 et le flux de Q28–Q30 donnent des points d'entrée. Pour les questions ouvertes, citer la figure, donner les valeurs lues et annoncer quelle comparaison permet de conclure.
 

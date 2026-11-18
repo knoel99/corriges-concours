@@ -243,12 +243,15 @@ Après la réaction totale et le dégazage, l’espèce introduite dans l’équ
 
 ### Question 28
 
-| Entrée 1 | Entrée 2 | NAND |
-|---:|---:|---:|
-| 0 | 0 | 1 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
+$$
+\begin{array}{ccc}
+\text{Entrée 1} & \text{Entrée 2} & \text{NAND} \\ \hline
+0 & 0 & 1 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0 \\
+\end{array}
+$$
 
 Avec les entrées reliées, $\overline{x\land x}=\overline x$. **La porte devient un inverseur.**
 

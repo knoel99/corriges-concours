@@ -6,14 +6,12 @@
 
 L’épreuve dure quatre heures, calculatrice autorisée. Les 39 questions constituent six parties indépendantes. L’excursion dans les Landes sert de cadre à des bilans de transport, à des lectures graphiques, à la mécanique, à l’électronique et à la chimie des solutions.
 
-| Questions | Travail demandé |
-|---|---|
-| Q1–Q7 | Construire l’analogie entre circulation de sève et courant électrique, puis chiffrer la masse échangée. |
-| Q8–Q13 | Lire un diagramme de phases et les pressions saturantes pour étudier l’hydrodistillation. |
-| Q14–Q22 | Étudier les phases du pas et comparer le modèle avec et sans échasses. |
-| Q23–Q27 | Expliquer le dégagement de dioxyde de carbone et le pH final du mélange. |
-| Q28–Q35 | Suivre un oscillateur à portes logiques et lire la commande d’arrosage. |
-| Q36–Q39 | Déterminer la pureté d’une poudre par dosage en retour du diiode. |
+- **Q1–Q7.** Construire l’analogie entre circulation de sève et courant électrique, puis chiffrer la masse échangée.
+- **Q8–Q13.** Lire un diagramme de phases et les pressions saturantes pour étudier l’hydrodistillation.
+- **Q14–Q22.** Étudier les phases du pas et comparer le modèle avec et sans échasses.
+- **Q23–Q27.** Expliquer le dégagement de dioxyde de carbone et le pH final du mélange.
+- **Q28–Q35.** Suivre un oscillateur à portes logiques et lire la commande d’arrosage.
+- **Q36–Q39.** Déterminer la pureté d’une poudre par dosage en retour du diiode.
 
 Commencez par les parties dont vous connaissez bien les lois de base. Les transitions entre exercices permettent de reprendre ailleurs si une lecture bloque. Gardez la figure 5 pour retrouver les trois pressions de la partie II, et la figure 9 à côté du brouillon pendant l’étude de l’oscillateur. Le jury insiste sur la conservation du débit, les moments projetés, les conventions des tensions et la différence entre équivalence et équilibre.
 
@@ -509,12 +507,15 @@ La tension du condensateur relie les états successifs malgré les sauts des sor
 
 #### Solution
 
-| Entrée 1 | Entrée 2 | NAND |
-|---:|---:|---:|
-| 0 | 0 | 1 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
+$$
+\begin{array}{ccc}
+\text{Entrée 1} & \text{Entrée 2} & \text{NAND} \\ \hline
+0 & 0 & 1 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 0 \\
+\end{array}
+$$
 
 Avec les entrées reliées, $\overline{x\land x}=\overline x$. **La porte devient un inverseur.**
 

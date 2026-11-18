@@ -6,11 +6,9 @@
 
 L'épreuve dure quatre heures, sans calculatrice. La partie algébrique étudie les matrices d'adjacence d'étoiles et de graphes reliés par une arête. La suite étudie à partir de quelle échelle de probabilité les graphes aléatoires contiennent une arête, puis une copie d'un graphe fixé.
 
-| Partie | Questions | Objectif et outils |
-|---|---|---|
-| I | Q1–Q10 | Changement de base, rang et polynôme caractéristique. Q10 introduit la probabilité des graphes à arêtes indépendantes. |
-| II | Q11–Q16 | Utiliser l'espérance et la variance pour trouver la fonction de seuil de présence d'une arête. |
-| III | Q17–Q27 | Compter les copies candidates, puis les couples de copies selon le nombre de sommets communs. |
+- **Partie I (Q1–Q10).** Changement de base, rang et polynôme caractéristique. Q10 introduit la probabilité des graphes à arêtes indépendantes.
+- **Partie II (Q11–Q16).** Utiliser l'espérance et la variance pour trouver la fonction de seuil de présence d'une arête.
+- **Partie III (Q17–Q27).** Compter les copies candidates, puis les couples de copies selon le nombre de sommets communs.
 
 Les parties probabilistes peuvent être abordées sans réaliser les calculs de matrices. Q1–Q4 et Q10–Q16 sont des points d'entrée. Prévoir du temps pour la décomposition du déterminant en Q8 et pour le calcul du second moment en Q21–Q25.
 
