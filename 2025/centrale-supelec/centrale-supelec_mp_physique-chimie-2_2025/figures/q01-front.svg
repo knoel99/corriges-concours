@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 300" role="img" aria-label="Projection de la séparation entre les fentes sur la propagation" font-family="sans-serif">
+<title>Projection de la séparation entre les fentes sur la propagation</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="690" height="300" fill="white"/>
+<path d="M55 174 L631 174" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="635" y="179" fill="#657489" font-size="16" text-anchor="start">z</text>
+<path d="M250 41 L250 264" fill="none" stroke="#17283e" stroke-width="2" />
+<path d="M242 49 L250 41 L258 49 M242 256 L250 264 L258 256" fill="none" stroke="#17283e" stroke-width="2" />
+<text x="250" y="30" fill="#17283e" font-size="16" text-anchor="middle">L₁</text>
+<text x="243" y="193" fill="#17283e" font-size="16" text-anchor="end">O₁</text>
+<circle cx="79" cy="130" r="4" fill="#aa3f18"/>
+<text x="76" y="116" fill="#aa3f18" font-size="16" text-anchor="middle">S_A</text>
+<path d="M79 130 L250 63" fill="none" stroke="#185aa1" stroke-width="2" />
+<path d="M79 130 L250 127" fill="none" stroke="#185aa1" stroke-width="2" />
+<path d="M79 130 L250 174" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M250 174 L427 220" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M250 63 L560 142" fill="none" stroke="#185aa1" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M250 127 L560 206" fill="none" stroke="#185aa1" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M578 72 L528 266" fill="none" stroke="#aa3f18" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="499" y="45" fill="#aa3f18" font-size="15" text-anchor="start">front d’onde</text>
+<circle cx="560" cy="142" r="4" fill="#17283e"/>
+<circle cx="560" cy="206" r="4" fill="#17283e"/>
+<text x="570" y="142" fill="#17283e" font-size="16" text-anchor="start">T₁</text>
+<text x="570" y="212" fill="#17283e" font-size="16" text-anchor="start">T₂</text>
+<path d="M624 144 L624 204" fill="none" stroke="#657489" stroke-width="1" />
+<path d="M620 144 H628 M620 204 H628" fill="none" stroke="#657489" stroke-width="1" />
+<text x="634" y="180" fill="#657489" font-size="16" text-anchor="start">a</text>
+<path d="M546 202 L559 205" fill="none" stroke="#aa3f18" stroke-width="3" />
+<text x="493" y="224" fill="#aa3f18" font-size="15" text-anchor="start">δsource</text>
+</svg>
