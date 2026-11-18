@@ -1,0 +1,33 @@
+{
+  "slug": "x-ens_mp_physique_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2024
+  },
+  "questions": 44,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q21-spectres.svg",
+      "question": "21",
+      "legende": "Figure 1 — Spectres de Planck et de Rayleigh–Jeans sur les mêmes axes réduits, avec la fréquence rapportée à la fréquence thermique."
+    },
+    {
+      "fichier": "figures/q27-photocourant.svg",
+      "question": "27",
+      "legende": "Figure 2 — Photocourant en fonction de la tension appliquée pour trois puissances croissantes à fréquence fixée. Les plateaux diffèrent et le seuil est commun."
+    },
+    {
+      "fichier": "figures/q29-thermique.svg",
+      "question": "29",
+      "legende": "Figure 3 — Probabilités d’un mode thermique pour une moyenne de 4 photons et flèche de longueur égale à l’écart-type."
+    },
+    {
+      "fichier": "figures/q35-statistiques.svg",
+      "question": "35",
+      "legende": "Figure 4 — Lois thermique et de Poisson à même moyenne de 10 photons. Les symboles marquent les comptes entiers."
+    }
+  ]
+}
