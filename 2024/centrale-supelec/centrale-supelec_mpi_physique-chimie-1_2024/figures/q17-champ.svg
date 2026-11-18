@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="345" viewBox="0 0 620 345" role="img" aria-labelledby="titre">
+<title id="titre">Rayon limite et champ géométrique</title>
+<defs><marker id="fleche" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#a44328"/></marker><marker id="cote" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#315676"/></marker></defs>
+<rect width="620" height="345" fill="white"/>
+<path d="M30 145H575" stroke="#95a9bb" stroke-dasharray="6 5"/>
+<path d="M170 96V194M510 55V124M510 166V285" fill="none" stroke="#315676" stroke-width="5"/>
+<path d="M510 124V166" stroke="#437852" stroke-width="5"/>
+<g font-family="DejaVu Sans, sans-serif" font-size="17" fill="#183655">
+<text x="32" y="135">Axe optique</text><text x="98" y="78">Secondaire</text><text x="465" y="36">Primaire</text>
+<text x="526" y="106">Capteur</text>
+<path d="M170 194L510 124M170 194L510 264" stroke="#a44328" stroke-width="2.5" fill="none"/>
+<path d="M313 223.4L251 210.7" stroke="#a44328" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M310 165.2L384 149.9" stroke="#a44328" stroke-width="2.5" marker-end="url(#fleche)"/>
+<path d="M170 194H564" stroke="#8295aa" stroke-dasharray="5 4" fill="none"/>
+<path d="M219 194A49 49 0 0 0 218 184" stroke="#315676" fill="none"/>
+<text x="233" y="169">θ</text>
+<path d="M170 309H510" stroke="#315676" marker-start="url(#cote)" marker-end="url(#cote)"/>
+<path d="M556 124V194" stroke="#315676" marker-start="url(#cote)" marker-end="url(#cote)"/>
+<text x="335" y="333">D</text><text x="550" y="218">R₂ + R₃</text>
+</g>
+</svg>
