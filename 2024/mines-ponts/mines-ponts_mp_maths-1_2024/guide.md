@@ -6,12 +6,10 @@
 
 Cette épreuve de trois heures, sans calculatrice, calcule une intégrale de Dirichlet généralisée puis utilise sa valeur pour déterminer l'espérance de la distance à l'origine d'une marche aléatoire symétrique.
 
-| Partie | Questions | Outils et objectif |
-|---|---|---|
-| I | Q1–Q7 | Étudier une intégrale à paramètre complexe, en déduire une valeur exacte par convergence dominée. |
-| II | Q8–Q12 | Développer une fraction en série géométrique et obtenir une expression du sinus utile pour le calcul suivant. |
-| III | Q13–Q18 | Calculer l'intégrale de Dirichlet par intégration par parties, regroupement d'intervalles et développement du cosinus. |
-| IV | Q19–Q25 | Utiliser l'indépendance et la parité pour obtenir un moment absolu d'une somme de signes. |
+- **Partie I (Q1–Q7).** Étudier une intégrale à paramètre complexe, en déduire une valeur exacte par convergence dominée.
+- **Partie II (Q8–Q12).** Développer une fraction en série géométrique et obtenir une expression du sinus utile pour le calcul suivant.
+- **Partie III (Q13–Q18).** Calculer l'intégrale de Dirichlet par intégration par parties, regroupement d'intervalles et développement du cosinus.
+- **Partie IV (Q19–Q25).** Utiliser l'indépendance et la parité pour obtenir un moment absolu d'une somme de signes.
 
 Les majorations décisives se trouvent en Q2, Q6 et Q15. Q9–Q10 demandent une autre méthode, fondée sur le contrôle du reste de la somme finie. La partie IV repart de résultats élémentaires de probabilités. On peut travailler Q19–Q22 sans avoir achevé le calcul des parties précédentes.
 

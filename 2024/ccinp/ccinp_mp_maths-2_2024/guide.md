@@ -6,12 +6,10 @@
 
 L’épreuve dure quatre heures, sans calculatrice. Elle propose deux exercices et un problème indépendants qui couvrent la réduction des matrices, les permutations en Python et les matrices symétriques définies positives.
 
-| Questions | Travail demandé |
-|---|---|
-| Q1–Q2 | Diagonaliser une matrice, puis étudier une récurrence vectorielle dans la base propre. |
-| Q3–Q7 | Coder les permutations en Python, composer, inverser et reconnaître ou construire des sous-groupes. |
-| Q8–Q14 | Caractériser la définie-positivité par le spectre et en déduire un test par trace et déterminant en dimension deux. Appliquer ce test à une hessienne. |
-| Q15–Q22 | Prouver le critère de Sylvester et l’utiliser sur des matrices et des formes quadratiques, jusqu’au cas d’une famille tridiagonale. |
+- **Q1–Q2.** Diagonaliser une matrice, puis étudier une récurrence vectorielle dans la base propre.
+- **Q3–Q7.** Coder les permutations en Python, composer, inverser et reconnaître ou construire des sous-groupes.
+- **Q8–Q14.** Caractériser la définie-positivité par le spectre et en déduire un test par trace et déterminant en dimension deux. Appliquer ce test à une hessienne.
+- **Q15–Q22.** Prouver le critère de Sylvester et l’utiliser sur des matrices et des formes quadratiques, jusqu’au cas d’une famille tridiagonale.
 
 Les outils du programme MP sont la réduction, le théorème spectral, les déterminants, les sous-groupes et la formule de Taylor-Young à deux variables. Le code relève de l’informatique commune et mobilise les listes et les boucles. Le rapport juge le sujet abordable et de longueur raisonnable. Dans les deux exercices, sécurisez d’abord la base propre et le sens de composition. Dans le problème, réservez du temps à la récurrence de Q17–Q18 et aux deux développements de déterminant de Q22. Si ce dernier calcul vous arrête, la vérification directe d’une forme quadratique reste envisageable.
 
