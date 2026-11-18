@@ -239,15 +239,13 @@ Les fonctions Q11–Q16 utilisent les flottants demandés. Le test de capacité 
 
 Dans $D$, on lit la préférence de $u_2$ comme $v_2>_{u_2} v_1>_{u_2}v_3$. Les propositions et les couplages provisoires sont les suivants.
 
-| Tour | Proposition | Décision | Couples après le tour |
-|---|---|---|---|
-| 1 | $(v_1,u_2)$ | Acceptée | $(v_1,u_2)$ |
-| 2 | $(v_2,u_1)$ | Acceptée | $(v_1,u_2),(v_2,u_1)$ |
-| 3 | $(v_3,u_1)$ | Remplace $v_2$ | $(v_1,u_2),(v_3,u_1)$ |
-| 4 | $(v_2,u_2)$ | Remplace $v_1$ | $(v_2,u_2),(v_3,u_1)$ |
-| 5 | $(v_1,u_1)$ | Remplace $v_3$ | $(v_1,u_1),(v_2,u_2)$ |
-| 6 | $(v_3,u_2)$ | Refusée | $(v_1,u_1),(v_2,u_2)$ |
-| 7 | $(v_3,u_3)$ | Acceptée | $(v_1,u_1),(v_2,u_2),(v_3,u_3)$ |
+- **Tour 1.** Proposition $(v_1,u_2)$. Acceptée. Couples après le tour $(v_1,u_2)$.
+- **Tour 2.** Proposition $(v_2,u_1)$. Acceptée. Couples après le tour $(v_1,u_2),(v_2,u_1)$.
+- **Tour 3.** Proposition $(v_3,u_1)$. Remplace $v_2$. Couples après le tour $(v_1,u_2),(v_3,u_1)$.
+- **Tour 4.** Proposition $(v_2,u_2)$. Remplace $v_1$. Couples après le tour $(v_2,u_2),(v_3,u_1)$.
+- **Tour 5.** Proposition $(v_1,u_1)$. Remplace $v_3$. Couples après le tour $(v_1,u_1),(v_2,u_2)$.
+- **Tour 6.** Proposition $(v_3,u_2)$. Refusée. Couples après le tour $(v_1,u_1),(v_2,u_2)$.
+- **Tour 7.** Proposition $(v_3,u_3)$. Acceptée. Couples après le tour $(v_1,u_1),(v_2,u_2),(v_3,u_3)$.
 
 **Le résultat est le couplage diagonal.**
 
@@ -350,10 +348,8 @@ On considère des circuits simples à rotation du point de départ près, comme 
 
 Selon la définition d'un couplage, on ajoute uniquement les arcs du circuit qui vont de $V$ vers $U$. On reprend l'ordre corrigé de $u_2$ indiqué en Q17.
 
-| Étape | Arcs issus de $V$ | Arcs issus de $U$ | Circuit |
-|---|---|---|---|
-| 1 | $v_1\to u_2,\ v_2\to u_1,\ v_3\to u_1$ | $u_1\to v_1,\ u_2\to v_2,\ u_3\to v_2$ | $v_1\to u_2\to v_2\to u_1\to v_1$ |
-| 2 | $v_3\to u_3$ | $u_3\to v_3$ | $v_3\to u_3\to v_3$ |
+- **Étape 1.** Les arcs issus de $V$ sont $v_1\to u_2,\ v_2\to u_1,\ v_3\to u_1$. Les arcs issus de $U$ sont $u_1\to v_1,\ u_2\to v_2,\ u_3\to v_2$. Le circuit est $v_1\to u_2\to v_2\to u_1\to v_1$.
+- **Étape 2.** Les arcs issus de $V$ sont $v_3\to u_3$. Les arcs issus de $U$ sont $u_3\to v_3$. Le circuit est $v_3\to u_3\to v_3$.
 
 Après la première étape, on a $A=\{(v_1,u_2),(v_2,u_1)\}$. Ces quatre sommets ayant été retirés, seuls $v_3,u_3$ restent. La seconde étape donne
 

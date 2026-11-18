@@ -6,11 +6,9 @@
 
 L'épreuve dure quatre heures, sans calculatrice, et comporte trois parties indépendantes. La première étudie une grammaire non contextuelle, la deuxième analyse une heuristique de rangement et la troisième compare deux algorithmes de couplage. Le rangement est programmé en OCaml. Les couplages et les manipulations de graphes sont programmés en C.
 
-| Partie | Questions | Travail principal |
-|---|---|---|
-| I | Q1–Q5 | Dériver un mot, lire des arbres et décomposer un langage en blocs de lettres. |
-| II | Q6–Q16 | Justifier une appartenance à NP et une réduction, borner l'heuristique, puis programmer des opérations sur les listes de boîtes. |
-| III | Q17–Q38 | Prouver la stabilité et l'optimalité du côté des proposants, puis manipuler les préférences et les listes d'adjacence en C. |
+- **Partie I (Q1–Q5).** Dériver un mot, lire des arbres et décomposer un langage en blocs de lettres.
+- **Partie II (Q6–Q16).** Justifier une appartenance à NP et une réduction, borner l'heuristique, puis programmer des opérations sur les listes de boîtes.
+- **Partie III (Q17–Q38).** Prouver la stabilité et l'optimalité du côté des proposants, puis manipuler les préférences et les listes d'adjacence en C.
 
 Les questions de code Q11–Q16 et Q32–Q38 sont accessibles après lecture des types et des conventions d'indices. Le cœur des preuves réside dans Q9–Q10 pour le volume des boîtes et dans Q23–Q25 pour les rejets. On peut réserver environ une demi-heure à la grammaire, une heure au rangement et deux heures quinze aux couplages, puis utiliser le dernier quart d'heure pour vérifier les signatures et les indices.
 
@@ -413,15 +411,13 @@ Les deux algorithmes utilisent les mêmes listes de préférences mais des règl
 
 Dans $D$, on lit la préférence de $u_2$ comme $v_2>_{u_2} v_1>_{u_2}v_3$. Les propositions et les couplages provisoires sont les suivants.
 
-| Tour | Proposition | Décision | Couples après le tour |
-|---|---|---|---|
-| 1 | $(v_1,u_2)$ | Acceptée | $(v_1,u_2)$ |
-| 2 | $(v_2,u_1)$ | Acceptée | $(v_1,u_2),(v_2,u_1)$ |
-| 3 | $(v_3,u_1)$ | Remplace $v_2$ | $(v_1,u_2),(v_3,u_1)$ |
-| 4 | $(v_2,u_2)$ | Remplace $v_1$ | $(v_2,u_2),(v_3,u_1)$ |
-| 5 | $(v_1,u_1)$ | Remplace $v_3$ | $(v_1,u_1),(v_2,u_2)$ |
-| 6 | $(v_3,u_2)$ | Refusée | $(v_1,u_1),(v_2,u_2)$ |
-| 7 | $(v_3,u_3)$ | Acceptée | $(v_1,u_1),(v_2,u_2),(v_3,u_3)$ |
+- **Tour 1.** Proposition $(v_1,u_2)$. Acceptée. Couples après le tour $(v_1,u_2)$.
+- **Tour 2.** Proposition $(v_2,u_1)$. Acceptée. Couples après le tour $(v_1,u_2),(v_2,u_1)$.
+- **Tour 3.** Proposition $(v_3,u_1)$. Remplace $v_2$. Couples après le tour $(v_1,u_2),(v_3,u_1)$.
+- **Tour 4.** Proposition $(v_2,u_2)$. Remplace $v_1$. Couples après le tour $(v_2,u_2),(v_3,u_1)$.
+- **Tour 5.** Proposition $(v_1,u_1)$. Remplace $v_3$. Couples après le tour $(v_1,u_1),(v_2,u_2)$.
+- **Tour 6.** Proposition $(v_3,u_2)$. Refusée. Couples après le tour $(v_1,u_1),(v_2,u_2)$.
+- **Tour 7.** Proposition $(v_3,u_3)$. Acceptée. Couples après le tour $(v_1,u_1),(v_2,u_2),(v_3,u_3)$.
 
 **Le résultat est le couplage diagonal.**
 
@@ -618,10 +614,8 @@ On considère des circuits simples à rotation du point de départ près, comme 
 
 Selon la définition d'un couplage, on ajoute uniquement les arcs du circuit qui vont de $V$ vers $U$. On reprend l'ordre corrigé de $u_2$ indiqué en Q17.
 
-| Étape | Arcs issus de $V$ | Arcs issus de $U$ | Circuit |
-|---|---|---|---|
-| 1 | $v_1\to u_2,\ v_2\to u_1,\ v_3\to u_1$ | $u_1\to v_1,\ u_2\to v_2,\ u_3\to v_2$ | $v_1\to u_2\to v_2\to u_1\to v_1$ |
-| 2 | $v_3\to u_3$ | $u_3\to v_3$ | $v_3\to u_3\to v_3$ |
+- **Étape 1.** Les arcs issus de $V$ sont $v_1\to u_2,\ v_2\to u_1,\ v_3\to u_1$. Les arcs issus de $U$ sont $u_1\to v_1,\ u_2\to v_2,\ u_3\to v_2$. Le circuit est $v_1\to u_2\to v_2\to u_1\to v_1$.
+- **Étape 2.** Les arcs issus de $V$ sont $v_3\to u_3$. Les arcs issus de $U$ sont $u_3\to v_3$. Le circuit est $v_3\to u_3\to v_3$.
 
 Après la première étape, on a $A=\{(v_1,u_2),(v_2,u_1)\}$. Ces quatre sommets ayant été retirés, seuls $v_3,u_3$ restent. La seconde étape donne
 
