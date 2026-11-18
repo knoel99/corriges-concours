@@ -6,13 +6,11 @@
 
 L'épreuve dure trois heures, sans calculatrice. Le problème montre que les normes d'ordre $p$ d'une somme de variables de Rademacher se comparent à sa norme d'ordre deux avec des constantes qui dépendent seulement de $p$. Une variable de Rademacher prend les valeurs $-1$ et $1$ avec la même probabilité.
 
-| Partie | Questions | Objectif |
-|---|---|---|
-| Inégalité de Hölder | Q1–Q3 | Passer d'une inégalité sur des nombres à une inégalité entre espérances. |
-| Une inégalité de déviation | Q4–Q7 | Factoriser une espérance exponentielle, puis appliquer Markov et optimiser la borne obtenue. |
-| Inégalités de Khintchine | Q8–Q16 | Écrire un moment à l'aide des probabilités de queue et comparer les normes par interpolation. |
-| Une première conséquence | Q17–Q19 | Montrer la conservation d'un produit scalaire et l'équivalence des normes sur les sommes finies. |
-| Une deuxième conséquence | Q20–Q21 | Construire dans $\mathbb R^n$ un sous-espace où les normes d'ordre un et deux se comparent avec un facteur d'échelle $\sqrt n$. |
+- **Partie Inégalité de Hölder (Q1–Q3).** Passer d'une inégalité sur des nombres à une inégalité entre espérances.
+- **Partie Une inégalité de déviation (Q4–Q7).** Factoriser une espérance exponentielle, puis appliquer Markov et optimiser la borne obtenue.
+- **Partie Inégalités de Khintchine (Q8–Q16).** Écrire un moment à l'aide des probabilités de queue et comparer les normes par interpolation.
+- **Partie Une première conséquence (Q17–Q19).** Montrer la conservation d'un produit scalaire et l'équivalence des normes sur les sommes finies.
+- **Partie Une deuxième conséquence (Q20–Q21).** Construire dans $\mathbb R^n$ un sous-espace où les normes d'ordre un et deux se comparent avec un facteur d'échelle $\sqrt n$.
 
 Q1–Q5, Q10 et Q17–Q18 reposent sur des méthodes de cours. Le passage de Q8 à Q11 puis l'interpolation de Q14–Q15 demandent plus de suivi des exposants. Pour les deux dernières questions, commencer par repérer comment une moyenne sur les signes devient une somme de coordonnées. Le passage à une famille infinie en Q18 est incompatible avec la finitude de l'espace probabilisé fixée au début du sujet. La solution précise le cadre dans lequel les preuves de Q18–Q19 s'appliquent.
 
