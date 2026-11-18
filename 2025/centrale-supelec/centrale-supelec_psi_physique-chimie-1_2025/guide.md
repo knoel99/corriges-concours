@@ -283,7 +283,7 @@ $$
 
 Dans le sens $A\to B\to C\to D\to E$, $AB$ est une détente presque verticale, $BC$ suit l’isobare $30\,\mathrm{bar}$ et $CD$, puis $DE$, évoluent vers une entropie plus élevée en perdant de l’enthalpie. Les points imposent les extrémités des détentes, tandis que leurs trajets intermédiaires restent qualitatifs.
 
-![Placement sur le plan de Mollier et sens des détentes](figures/q11-mollier.svg)
+![Figure 1 — Placement sur le plan de Mollier et sens des détentes](figures/q11-mollier.svg)
 
 > [!JURY]
 > Le rapport attend le point de sortie sur la saturation sèche et des trajets orientés. Conservez une précision réaliste pour les lectures.
@@ -671,7 +671,7 @@ La réactance domine la résistance, mais $R/X\simeq0{,}43$. Négliger $R$ donne
 
 On prend $\underline U=U_n$ réelle et $\underline I=I_n(\cos\varphi_n-\mathrm j\sin\varphi_n)$, avec $\varphi_n>0$. Le vecteur $R\underline I$ a l’orientation du courant et $\mathrm jX\underline I$ est en avance de $\pi/2$ sur lui. On additionne les trois vecteurs bout à bout.
 
-![Somme de Fresnel de la tension aux bornes et des deux chutes internes](figures/q30-fresnel.svg)
+![Figure 2 — Somme de Fresnel de la tension aux bornes et des deux chutes internes](figures/q30-fresnel.svg)
 
 Dans cette convention, les composantes de $\underline E$ sont
 
@@ -743,7 +743,7 @@ Le point inductif $M$ du même modèle sans $R$ donnerait $E\simeq32{,}0\,\mathr
 
 Sur la courbe $P=P_n$ de la figure 2 du document réponse, l’horizontale $I/I_n=1$ coupe la branche gauche vers $I_e/I_{en}=2{,}2$ et la branche droite vers $3{,}0$. On place $M'$ à gauche et $M$ à droite.
 
-![Les deux intersections de la courbe de Mordey nominale avec le courant réduit unité](figures/q33-mordey.svg)
+![Figure 3 — Les deux intersections de la courbe de Mordey nominale avec le courant réduit unité](figures/q33-mordey.svg)
 
 Comme $kI_{en}\simeq U_n$, les lectures donnent **$E'\simeq28\,\mathrm{kV}$** et **$E\simeq38\,\mathrm{kV}$**. Elles dépassent les valeurs du modèle sans résistance en Q32.
 
@@ -766,7 +766,7 @@ Les phases vérifient toujours $\cos\varphi'= \cos\varphi=P_n/(2U_nI_n)$ et sont
 
 Sans puissance mécanique et sans pertes, $P=0$. Si $I\ne0$, alors $\cos\varphi=0$, donc **$\varphi=\pm \pi/2$**. Dans le diagramme de Fresnel, $\mathrm jX\underline I$ est horizontal et $\underline E$ est sur l’axe réel.
 
-![Diagrammes de Fresnel pour les deux signes de la puissance réactive](figures/q34-compensateur.svg)
+![Figure 4 — Diagrammes de Fresnel pour les deux signes de la puissance réactive](figures/q34-compensateur.svg)
 
 Pour $I=I_n/10$ et $X=2{,}3\,\Omega$, on trouve
 
