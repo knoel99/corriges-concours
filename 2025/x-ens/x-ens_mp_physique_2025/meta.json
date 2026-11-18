@@ -1,0 +1,28 @@
+{
+  "slug": "x-ens_mp_physique_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2025
+  },
+  "questions": 34,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q7-rappel.svg",
+      "question": "7",
+      "legende": "Figure 1 — Pour chaque signe de la position lente, les deux phases du champ et la force sur la trajectoire montrent un rappel moyen vers l’origine."
+    },
+    {
+      "fichier": "figures/q20-temperature.svg",
+      "question": "20",
+      "legende": "Figure 2 — Exemple de montée en température suivie d’oscillations périodiques, pour une pulsation de modulation telle que le produit avec le temps thermique vaut 2."
+    },
+    {
+      "fichier": "figures/q34-stabilite.svg",
+      "question": "34",
+      "legende": "Figure 3 — Le domaine stable est du côté où la pulsation de rotation dépasse strictement la pulsation de courbure."
+    }
+  ]
+}
