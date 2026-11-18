@@ -132,6 +132,7 @@
 | 2026 | CCINP | MP | Maths 1 | [md](2026/ccinp/ccinp_mp_maths-1_2026/brut.md) | [md](2026/ccinp/ccinp_mp_maths-1_2026/guide.md) |
 | 2026 | CCINP | MP | Maths 2 | [md](2026/ccinp/ccinp_mp_maths-2_2026/brut.md) | [md](2026/ccinp/ccinp_mp_maths-2_2026/guide.md) |
 | 2026 | CCINP | MP | Physique-chimie | [md](2026/ccinp/ccinp_mp_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_mp_physique-chimie_2026/guide.md) |
+| 2024 | CCINP | MP | Physique | [md](2024/ccinp/ccinp_mp_physique_2024/brut.md) | [md](2024/ccinp/ccinp_mp_physique_2024/guide.md) |
 | 2026 | CCINP | MP | Physique | [md](2026/ccinp/ccinp_mp_physique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_physique_2026/guide.md) |
 | 2026 | CCINP | MP | Sciences industrielles | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/brut.md) | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/guide.md) |
 | 2026 | CCINP | MPI | Informatique | [md](2026/ccinp/ccinp_mpi_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_informatique_2026/guide.md) |
@@ -139,6 +140,7 @@
 | 2026 | CCINP | MPI | Maths 2 | [md](2026/ccinp/ccinp_mpi_maths-2_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_maths-2_2026/guide.md) |
 | 2026 | CCINP | MPI | Physique-chimie | [md](2026/ccinp/ccinp_mpi_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_physique-chimie_2026/guide.md) |
 | 2026 | CCINP | PC | Chimie | [md](2026/ccinp/ccinp_pc_chimie_2026/brut.md) | [md](2026/ccinp/ccinp_pc_chimie_2026/guide.md) |
+| 2024 | CCINP | PC | Informatique | [md](2024/ccinp/ccinp_pc_informatique_2024/brut.md) | [md](2024/ccinp/ccinp_pc_informatique_2024/guide.md) |
 | 2026 | CCINP | PC | Informatique | [md](2026/ccinp/ccinp_pc_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_pc_informatique_2026/guide.md) |
 | 2026 | CCINP | PC | Maths | [md](2026/ccinp/ccinp_pc_maths_2026/brut.md) | [md](2026/ccinp/ccinp_pc_maths_2026/guide.md) |
 | 2026 | CCINP | PC | Modélisation de systèmes physiques ou chimiques | [md](2026/ccinp/ccinp_pc_modelisation-de-systemes-physiques-ou-chimiques_2026/brut.md) | [md](2026/ccinp/ccinp_pc_modelisation-de-systemes-physiques-ou-chimiques_2026/guide.md) |
@@ -275,7 +277,9 @@
 | 2026 | Mines-Ponts | MPI | Physique 1 | [md](2026/mines-ponts/mines-ponts_mpi_physique-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_physique-1_2026/guide.md) |
 | 2026 | Mines-Ponts | MPI | Physique 2 | [md](2026/mines-ponts/mines-ponts_mpi_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_physique-2_2026/guide.md) |
 | 2026 | Mines-Ponts | PC | Chimie | [md](2026/mines-ponts/mines-ponts_pc_chimie_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_chimie_2026/guide.md) |
+| 2024 | Mines-Ponts | PC | Maths 1 | [md](2024/mines-ponts/mines-ponts_pc_maths-1_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_pc_maths-1_2024/guide.md) |
 | 2026 | Mines-Ponts | PC | Maths 1 | [md](2026/mines-ponts/mines-ponts_pc_maths-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_maths-1_2026/guide.md) |
+| 2024 | Mines-Ponts | PC | Maths 2 | [md](2024/mines-ponts/mines-ponts_pc_maths-2_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_pc_maths-2_2024/guide.md) |
 | 2026 | Mines-Ponts | PC | Maths 2 | [md](2026/mines-ponts/mines-ponts_pc_maths-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_maths-2_2026/guide.md) |
 | 2026 | Mines-Ponts | PC | Physique 1 | [md](2026/mines-ponts/mines-ponts_pc_physique-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_physique-1_2026/guide.md) |
 | 2026 | Mines-Ponts | PC | Physique 2 | [md](2026/mines-ponts/mines-ponts_pc_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_physique-2_2026/guide.md) |
