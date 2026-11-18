@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 625 180" width="625" height="180" role="img" aria-labelledby="titre desc">
+  <title id="titre">Cycle NAD⁺ / NADH</title>
+  <desc id="desc">À gauche, l’oxydation du glucose produit le dioxyde de carbone et réduit le NAD⁺. À droite, le dioxygène régénère le NAD⁺ en donnant de l’eau.</desc>
+  <defs>
+    <marker id="pointe" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#183a4c"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke="#183a4c" stroke-width="2.2" marker-end="url(#pointe)">
+    <path d="M286 45C218 52 216 123 286 132"/>
+    <path d="M338 132C408 123 408 54 338 45"/>
+    <path d="M110 57V115"/>
+    <path d="M517 115V57"/>
+  </g>
+  <g fill="#17212b" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="17">
+    <text x="312" y="38" font-weight="bold">12 NAD⁺</text>
+    <text x="312" y="149" font-weight="bold">12 NADH</text>
+    <text x="110" y="46">C₆H₁₂O₆ + 6 H₂O</text>
+    <text x="110" y="135">6 CO₂ + 12 H⁺</text>
+    <text x="517" y="135">6 O₂ + 12 H⁺</text>
+    <text x="517" y="46">12 H₂O</text>
+    <text x="172" y="95" font-size="14">oxydation</text>
+    <text x="455" y="95" font-size="14">régénération</text>
+  </g>
+</svg>

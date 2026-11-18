@@ -1,0 +1,144 @@
+{
+  "slug": "mines-ponts_pc_chimie_2024",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PC",
+    "matiere": "Chimie",
+    "annee": 2024
+  },
+  "questions": 45,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "question": "1",
+      "legende": "Figure 1 — Projections de Fischer des quatre stéréoisomères du 2-désoxyribose.",
+      "fichier": "figures/q01-fischer.svg"
+    },
+    {
+      "question": "2",
+      "legende": "Figure 2 — Anomères α et β du 2-désoxy-D-ribofuranose en projection de Haworth.",
+      "fichier": "figures/q02-haworth.svg"
+    },
+    {
+      "question": "3",
+      "legende": "Figure 3 — Mécanisme de l’hémiacétalisation du 2-désoxy-D-ribose.",
+      "fichier": "figures/q03-hemiacetalisation.svg"
+    },
+    {
+      "question": "5",
+      "legende": "Figure 4 — Acylation de l’alcool de 4 par le chlorure de pivaloyle.",
+      "fichier": "figures/q05-acylation.svg"
+    },
+    {
+      "question": "8",
+      "legende": "Figure 5 — Addition de l’organozincique et hydrolyse.",
+      "fichier": "figures/q08-organozinc.svg"
+    },
+    {
+      "question": "15",
+      "legende": "Figure 6 — Connectivité de l’adduit 16 et configuration E de la double liaison préexistante.",
+      "fichier": "figures/q15-adduit-e.svg"
+    },
+    {
+      "question": "19",
+      "legende": "Figure 7 — Fermeture de 21 en cycle à six chaînons et élimination de l’éthanolate.",
+      "fichier": "figures/q19-cyclisation.svg"
+    },
+    {
+      "question": "23",
+      "legende": "Figure 8 — Protection d’un hydroxyle phénolique par le groupe MOM.",
+      "fichier": "figures/q23-mom.svg"
+    },
+    {
+      "question": "37",
+      "legende": "Figure 9 — Cycle des accepteurs NAD⁺ et NADH associé à l’oxydation du glucose.",
+      "fichier": "figures/q37-cycle-nad.svg"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T17:27:02+01:00",
+      "modifications": false,
+      "perimetre": "Rapport de la session 2024, annexe O"
+    },
+    {
+      "phase": "redaction",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T17:38:46+01:00",
+      "modifications": true,
+      "perimetre": "Brut et guidé, questions 1 à 45"
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T17:43:44+01:00",
+      "modifications": true,
+      "perimetre": "Figures, vérification du schéma 6 et présentation des équations"
+    },
+    {
+      "phase": "autocontrole",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T17:46:27+01:00",
+      "modifications": false,
+      "perimetre": "Contrôles de forme, présence des 45 questions dans les deux PDF et rendu de la Q15"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:49:57+01:00",
+      "modifications": false,
+      "perimetre": "Brut et guidé, 45 questions, rapport officiel. Défauts consignés dans la revue interne."
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T20:49:57+01:00",
+      "modifications": true,
+      "perimetre": "Q3, Q5, Q8, Q19 et Q23. Schémas de mécanismes et flèches courbes. Q9, Q12, Q21, Q33 et Q37. Précisions et mise en cohérence de la figure NAD. Q15 confirmée, configuration E."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": false,
+      "perimetre": "Deux versions et figures, contrôle indépendant des retouches et défauts résiduels."
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": true,
+      "perimetre": "Q3, Q5, Q8, Q19 et Q23. Rendus, doublets, structures cycliques et notations des oxoniums."
+    },
+    {
+      "phase": "verification_gel",
+      "tour": 2,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": false,
+      "perimetre": "Gel final vérifié et jugé publiable sur les deux versions et les figures."
+    }
+  ]
+}

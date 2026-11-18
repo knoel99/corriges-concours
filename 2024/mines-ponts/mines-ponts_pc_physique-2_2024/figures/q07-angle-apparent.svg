@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 572 214" width="572" height="214" role="img" aria-labelledby="titre desc">
+  <title id="titre">Diamètre apparent d’un astre</title>
+  <desc id="desc">Depuis l’observateur, deux rayons tangents au disque forment un angle total alpha. Le rayon qui rejoint le centre forme un angle alpha sur deux avec chacune des tangentes.</desc>
+  <g fill="none" stroke="#233348" stroke-width="2">
+    <circle cx="480" cy="104" r="72" fill="#edf3f8"/>
+    <path d="M44 104L468 33 M44 104L468 175"/>
+    <path d="M44 104H480" stroke-dasharray="5 4"/>
+    <path d="M480 104L468 33" stroke="#8b421e"/>
+    <path d="M144 87Q149 104 144 121" stroke="#305c82"/>
+  </g>
+  <circle cx="44" cy="104" r="4" fill="#233348"/>
+  <circle cx="480" cy="104" r="3" fill="#233348"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#233348">
+    <text x="10" y="135">Observateur</text>
+    <text x="158" y="98">α</text>
+    <text x="467" y="72" text-anchor="end" fill="#8b421e">R</text>
+    <text x="278" y="122" text-anchor="middle">D</text>
+    <text x="480" y="200" text-anchor="middle">Astre</text>
+  </g>
+</svg>

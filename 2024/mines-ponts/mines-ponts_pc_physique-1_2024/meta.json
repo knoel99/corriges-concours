@@ -1,0 +1,95 @@
+{
+  "slug": "mines-ponts_pc_physique-1_2024",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PC",
+    "matiere": "Physique 1",
+    "annee": 2024
+  },
+  "questions": 22,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q10-reseau-thermique.svg",
+      "question": "10",
+      "legende": "Figure 1 — Les trois chemins des pertes thermiques, du spa à l’extérieur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18",
+      "modifications": false,
+      "perimetre": "Rapport de la session 2024, annexe J"
+    },
+    {
+      "phase": "redaction",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T18:02:22+01:00",
+      "modifications": true,
+      "perimetre": "Brut et guidé, questions 1 à 22"
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T18:40:57+01:00",
+      "modifications": true,
+      "perimetre": "Aération des formules et mise en page du brut et du guidé avant relecture"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:49:57+01:00",
+      "modifications": false,
+      "perimetre": "Brut et guidé, 22 questions, rapport officiel. Défauts consignés dans la revue interne."
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T20:49:57+01:00",
+      "modifications": true,
+      "perimetre": "Q9, Q11 et Q12. Aire extérieure pour le fond, la toile et le modèle de couverture. Gain 3,9 et puissance de maintien 120 W. Q7, Q15, Q20 et Q22. Justifications complétées. Indications et remarques du jury précisées."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": false,
+      "perimetre": "Deux versions et figures, contrôle indépendant des retouches et défauts résiduels."
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": true,
+      "perimetre": "Q17. Définition de la vitesse de l’eau côté cuve et lien avec la surface en vidange libre."
+    },
+    {
+      "phase": "verification_gel",
+      "tour": 2,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": false,
+      "perimetre": "Gel final vérifié et jugé publiable sur les deux versions et les figures."
+    }
+  ]
+}

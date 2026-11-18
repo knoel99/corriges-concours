@@ -1,0 +1,105 @@
+{
+  "slug": "mines-ponts_pc_physique-2_2024",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PC",
+    "matiere": "Physique 2",
+    "annee": 2024
+  },
+  "questions": 39,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "question": "7",
+      "fichier": "figures/q07-angle-apparent.svg",
+      "legende": "Figure 1 — Les deux tangentes définissent le diamètre apparent d’un astre."
+    },
+    {
+      "question": "7",
+      "fichier": "figures/q07-vitesse-ombre.svg",
+      "legende": "Figure 2 — Déplacement de l’axe de l’ombre et vitesse relative au sol."
+    },
+    {
+      "question": "38",
+      "fichier": "figures/q38-reflexion.svg",
+      "legende": "Figure 3 — Réflexion totale sous la fréquence de coupure, puis décroissance de la réflectance."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18",
+      "modifications": false,
+      "perimetre": "Rapport de la session 2024, annexe K"
+    },
+    {
+      "phase": "redaction",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T18:10:05+01:00",
+      "modifications": true,
+      "perimetre": "Brut et guidé, questions 1 à 39"
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T18:40:57+01:00",
+      "modifications": true,
+      "perimetre": "Aération des formules et mise en page du brut et du guidé avant relecture"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:49:57+01:00",
+      "modifications": false,
+      "perimetre": "Brut et guidé, 39 questions, rapport officiel. Défauts consignés dans la revue interne."
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T20:49:57+01:00",
+      "modifications": true,
+      "perimetre": "Q17. Séparer les dérivées eulérienne et matérielle. Q7, Q19, Q25, Q27, Q33, Q35 et Q37–38. Données, calculs et deux figures clarifiés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": false,
+      "perimetre": "Deux versions et figures, contrôle indépendant des retouches et défauts résiduels."
+    },
+    {
+      "phase": "retouches",
+      "modele": "GPT-6.2 Sol",
+      "vitesse": "Standard",
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": true,
+      "perimetre": "Q17–19, Q25, Q33 et Q37. Notations, arrondi et distinction des dérivées."
+    },
+    {
+      "phase": "verification_gel",
+      "tour": 2,
+      "modele": "GPT-6.2 Sol",
+      "vitesse": null,
+      "effort": "high",
+      "date": "2026-11-18T20:58:16+01:00",
+      "modifications": false,
+      "perimetre": "Gel final vérifié et jugé publiable sur les deux versions et les figures."
+    }
+  ]
+}

@@ -358,6 +358,7 @@
 | 2024 | Mines-Ponts | MPI | Physique 2 | [md](2024/mines-ponts/mines-ponts_mpi_physique-2_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_mpi_physique-2_2024/guide.md) |
 | 2025 | Mines-Ponts | MPI | Physique 2 | [md](2025/mines-ponts/mines-ponts_mpi_physique-2_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_mpi_physique-2_2025/guide.md) |
 | 2026 | Mines-Ponts | MPI | Physique 2 | [md](2026/mines-ponts/mines-ponts_mpi_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_physique-2_2026/guide.md) |
+| 2024 | Mines-Ponts | PC | Chimie | [md](2024/mines-ponts/mines-ponts_pc_chimie_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_pc_chimie_2024/guide.md) |
 | 2025 | Mines-Ponts | PC | Chimie | [md](2025/mines-ponts/mines-ponts_pc_chimie_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_pc_chimie_2025/guide.md) |
 | 2026 | Mines-Ponts | PC | Chimie | [md](2026/mines-ponts/mines-ponts_pc_chimie_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_chimie_2026/guide.md) |
 | 2024 | Mines-Ponts | PC | Maths 1 | [md](2024/mines-ponts/mines-ponts_pc_maths-1_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_pc_maths-1_2024/guide.md) |
@@ -366,8 +367,10 @@
 | 2024 | Mines-Ponts | PC | Maths 2 | [md](2024/mines-ponts/mines-ponts_pc_maths-2_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_pc_maths-2_2024/guide.md) |
 | 2025 | Mines-Ponts | PC | Maths 2 | [md](2025/mines-ponts/mines-ponts_pc_maths-2_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_pc_maths-2_2025/guide.md) |
 | 2026 | Mines-Ponts | PC | Maths 2 | [md](2026/mines-ponts/mines-ponts_pc_maths-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_maths-2_2026/guide.md) |
+| 2024 | Mines-Ponts | PC | Physique 1 | [md](2024/mines-ponts/mines-ponts_pc_physique-1_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_pc_physique-1_2024/guide.md) |
 | 2025 | Mines-Ponts | PC | Physique 1 | [md](2025/mines-ponts/mines-ponts_pc_physique-1_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_pc_physique-1_2025/guide.md) |
 | 2026 | Mines-Ponts | PC | Physique 1 | [md](2026/mines-ponts/mines-ponts_pc_physique-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_physique-1_2026/guide.md) |
+| 2024 | Mines-Ponts | PC | Physique 2 | [md](2024/mines-ponts/mines-ponts_pc_physique-2_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_pc_physique-2_2024/guide.md) |
 | 2025 | Mines-Ponts | PC | Physique 2 | [md](2025/mines-ponts/mines-ponts_pc_physique-2_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_pc_physique-2_2025/guide.md) |
 | 2026 | Mines-Ponts | PC | Physique 2 | [md](2026/mines-ponts/mines-ponts_pc_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_physique-2_2026/guide.md) |
 | 2025 | Mines-Ponts | PSI | Chimie | [md](2025/mines-ponts/mines-ponts_psi_chimie_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_psi_chimie_2025/guide.md) |

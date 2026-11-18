@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 658 210" width="658" height="210" role="img" aria-labelledby="titre desc">
+  <title id="titre">Dérive de l’ombre et rotation terrestre</title>
+  <desc id="desc">Deux positions de la Lune donnent deux axes d’ombre parallèles. Leur intersection avec le plan tangent terrestre se décale. Le sol se déplace dans le même sens avec une vitesse plus faible.</desc>
+  <defs><marker id="fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+    <path d="M0 0L10 5L0 10Z" fill="#2d5270"/>
+  </marker></defs>
+  <g fill="none" stroke="#2d5270" stroke-width="2">
+    <path d="M72 62H462 M72 136H462" stroke-dasharray="7 4"/>
+    <path d="M462 39V160" stroke="#202d3b" stroke-width="3"/>
+    <path d="M482 64V132" marker-end="url(#fleche)"/><path d="M593 66V101" marker-end="url(#fleche)"/>
+  </g>
+  <g fill="#202d3b">
+    <circle cx="172" cy="62" r="7"/>
+    <circle cx="172" cy="136" r="7"/>
+    <circle cx="462" cy="62" r="4"/>
+    <circle cx="462" cy="136" r="4"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#202d3b">
+    <text x="40" y="30">Du Soleil</text>
+    <text x="159" y="52">L₁</text>
+    <text x="158" y="162">L₂</text>
+    <text x="317" y="50">Axe de l’ombre à t₁</text>
+    <text x="317" y="127">Axe de l’ombre à t₂</text>
+    <text x="469" y="184" text-anchor="middle">Plan tangent terrestre</text>
+    <text x="493" y="119">Ombre</text>
+    <text x="604" y="92">Sol</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 222" width="515" height="222" role="img" aria-labelledby="titre desc">
+  <title id="titre">Réflectance ionosphérique</title>
+  <desc id="desc">Réflectance égale à un avant le seuil plasma, puis décroissante et tendant vers zéro après le seuil.</desc>
+  <defs><marker id="fleche" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <path d="M0 0L10 5L0 10Z" fill="#283949"/>
+  </marker></defs>
+  <g fill="none" stroke="#283949" stroke-width="2">
+    <path d="M51 181H474" marker-end="url(#fleche)"/><path d="M52 181V29" marker-end="url(#fleche)"/>
+    <path d="M202 60V181" stroke="#61798b" stroke-dasharray="5 5"/>
+    <path d="M52 60H202C207 102 227 144 273 161C314 174 377 178 454 179" stroke="#1b6d75" stroke-width="3"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#283949">
+    <text x="37" y="34">R</text>
+    <text x="31" y="67">1</text>
+    <text x="31" y="187">0</text>
+    <text x="193" y="206">ωₚ</text>
+    <text x="480" y="187">ω</text>
+  </g>
+</svg>
