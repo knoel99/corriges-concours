@@ -131,6 +131,7 @@
 | 2026 | CCINP | MP | Informatique | [md](2026/ccinp/ccinp_mp_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_informatique_2026/guide.md) |
 | 2026 | CCINP | MP | Maths 1 | [md](2026/ccinp/ccinp_mp_maths-1_2026/brut.md) | [md](2026/ccinp/ccinp_mp_maths-1_2026/guide.md) |
 | 2026 | CCINP | MP | Maths 2 | [md](2026/ccinp/ccinp_mp_maths-2_2026/brut.md) | [md](2026/ccinp/ccinp_mp_maths-2_2026/guide.md) |
+| 2025 | CCINP | MP | Physique-Chimie | [md](2025/ccinp/ccinp_mp_physique-chimie_2025/brut.md) | [md](2025/ccinp/ccinp_mp_physique-chimie_2025/guide.md) |
 | 2026 | CCINP | MP | Physique-chimie | [md](2026/ccinp/ccinp_mp_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_mp_physique-chimie_2026/guide.md) |
 | 2026 | CCINP | MP | Physique | [md](2026/ccinp/ccinp_mp_physique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_physique_2026/guide.md) |
 | 2026 | CCINP | MP | Sciences industrielles | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/brut.md) | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/guide.md) |
@@ -163,6 +164,7 @@
 | 2026 | Centrale-Supélec | MP-MPI | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP | Informatique | [md](2026/centrale-supelec/centrale-supelec_mp_informatique_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp_informatique_2026/guide.md) |
+| 2025 | Centrale-Supélec | MP | Physique-chimie 1 | [md](2025/centrale-supelec/centrale-supelec_mp_physique-chimie-1_2025/brut.md) | [md](2025/centrale-supelec/centrale-supelec_mp_physique-chimie-1_2025/guide.md) |
 | 2026 | Centrale-Supélec | MP | Physique-chimie 1 | [md](2026/centrale-supelec/centrale-supelec_mp_physique-chimie-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp_physique-chimie-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP | Physique-chimie 2 | [md](2026/centrale-supelec/centrale-supelec_mp_physique-chimie-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp_physique-chimie-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP | Sciences industrielles | [md](2026/centrale-supelec/centrale-supelec_mp_sciences-industrielles_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp_sciences-industrielles_2026/guide.md) |
@@ -272,7 +274,9 @@
 | 2026 | Mines-Ponts | MPI | Informatique 2 | [md](2026/mines-ponts/mines-ponts_mpi_informatique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_informatique-2_2026/guide.md) |
 | 2026 | Mines-Ponts | MPI | Maths 1 | [md](2026/mines-ponts/mines-ponts_mpi_maths-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_maths-1_2026/guide.md) |
 | 2026 | Mines-Ponts | MPI | Maths 2 | [md](2026/mines-ponts/mines-ponts_mpi_maths-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_maths-2_2026/guide.md) |
+| 2025 | Mines-Ponts | MPI | Physique 1 | [md](2025/mines-ponts/mines-ponts_mpi_physique-1_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_mpi_physique-1_2025/guide.md) |
 | 2026 | Mines-Ponts | MPI | Physique 1 | [md](2026/mines-ponts/mines-ponts_mpi_physique-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_physique-1_2026/guide.md) |
+| 2025 | Mines-Ponts | MPI | Physique 2 | [md](2025/mines-ponts/mines-ponts_mpi_physique-2_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_mpi_physique-2_2025/guide.md) |
 | 2026 | Mines-Ponts | MPI | Physique 2 | [md](2026/mines-ponts/mines-ponts_mpi_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mpi_physique-2_2026/guide.md) |
 | 2026 | Mines-Ponts | PC | Chimie | [md](2026/mines-ponts/mines-ponts_pc_chimie_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_chimie_2026/guide.md) |
 | 2026 | Mines-Ponts | PC | Maths 1 | [md](2026/mines-ponts/mines-ponts_pc_maths-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_maths-1_2026/guide.md) |

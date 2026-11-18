@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-labelledby="titre">
+  <title id="titre">Champ et forces sur A et B, dans le plan transverse</title>
+  <defs>
+    <marker id="axe" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#333"/></marker>
+    <marker id="champ" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#245887"/></marker>
+    <marker id="force" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#9d3420"/></marker>
+  </defs>
+  <rect width="560" height="300" fill="white"/>
+  <g stroke="#333" stroke-width="1.4" marker-end="url(#axe)"><path d="M65 150H510"/><path d="M270 275V25"/></g>
+  <g fill="#333"><circle cx="270" cy="75" r="4"/><circle cx="270" cy="225" r="4"/><circle cx="270" cy="150" r="3"/></g>
+  <g stroke="#245887" stroke-width="3" marker-end="url(#champ)"><path d="M270 75H385"/><path d="M270 225H155"/></g>
+  <g stroke="#9d3420" stroke-width="3" marker-end="url(#force)"><path d="M270 75V128"/><path d="M270 225V172"/></g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <g fill="#333"><text x="520" y="157">x</text><text x="280" y="29">y</text><text x="251" y="70">A</text><text x="282" y="236">B</text><text x="251" y="168">O</text><text x="359" y="267">⊙ v vers l’observateur</text></g>
+    <g fill="#245887"><text x="330" y="65">B(A)</text><text x="177" y="214">B(B)</text></g>
+    <g fill="#9d3420"><text x="281" y="112">F(A)</text><text x="281" y="196">F(B)</text></g>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+{
+  "slug": "centrale-supelec_mp_physique-chimie-1_2025",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP",
+    "matiere": "Physique-chimie 1",
+    "annee": 2025,
+    "code_sujet": "P084",
+    "titre_sujet": "Observation et protection côtières"
+  },
+  "questions": 45,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q19-filtre-rlc.svg",
+      "question": "19",
+      "legende": "Figure 1 — Filtre passe-bas RLC série avec sortie aux bornes du condensateur",
+      "sha256": "5f431c0694f7f994e36c5cd987fa6a5e95b91125e3848f5078d2166bccae1bb5"
+    },
+    {
+      "fichier": "figures/q22-rampe.svg",
+      "question": "22",
+      "legende": "Figure 2 — Fréquence émise en dents de scie sur deux périodes",
+      "sha256": "265530bfcbcbff6664c205eb83d6e4d52ea92b342f118751690cedce48b02212"
+    },
+    {
+      "fichier": "figures/q23-rampe-retard.svg",
+      "question": "23",
+      "legende": "Figure 3 — Fréquences émise et reçue en deux couleurs, avec un retard de Tₘ/10",
+      "sha256": "ccb3789e17cc2a4ee3b6f795d900f14de5c15f69f517e968ff1be2b826278fe4"
+    },
+    {
+      "fichier": "figures/q38-palier.svg",
+      "question": "38",
+      "legende": "Figure 4 — Allure du courant cathodique à deux concentrations de dioxygène",
+      "sha256": "908b168e29ffd629597fb360c4b7576ffcb6b2974b1bf89d4f8785420ede57e3"
+    },
+    {
+      "fichier": "figures/q41-cellule.svg",
+      "question": "41",
+      "legende": "Figure 5 — Cellule d’électrolyse, polarités, sens du courant et réactions",
+      "sha256": "a4c8134c55420b5c54dde38422cfccacac31abb33adcd211cb235f1ce19bbe55"
+    },
+    {
+      "fichier": "figures/q42-carbonate.svg",
+      "question": "42",
+      "legende": "Figure 6 — Formule de Lewis du carbonate avec les doublets et les charges formelles",
+      "sha256": "67e77072987cff3231d17309f1e211afd0197cc949a37745ceb5902cd6ebb8cf"
+    }
+  ]
+}

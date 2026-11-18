@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 365" role="img" aria-label="Courant cathodique pour deux concentrations d’oxygène" font-family="sans-serif">
+<title>Courant cathodique pour deux concentrations d’oxygène</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="700" height="365" fill="white"/>
+<path d="M75 304 L657 304" fill="none" stroke="#17283e" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M75 304 L75 83" fill="none" stroke="#17283e" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M75 115 L638 115" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="4 5"/>
+<path d="M300 115 L300 304" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="4 5"/>
+<path d="M114 285 C153 265 175 193 242 181 C278 174 311 174 357 174 H515 C565 174 591 156 602 115" fill="none" stroke="#185aa1" stroke-width="3" />
+<path d="M114 248 C153 228 175 157 242 144 C278 138 311 138 357 138 H515 C565 138 591 130 602 115" fill="none" stroke="#aa3f18" stroke-width="3" />
+<path d="M111 51 L148 51" fill="none" stroke="#185aa1" stroke-width="3" />
+<text x="157" y="57" fill="#185aa1" font-size="16" text-anchor="start">O₂ initial</text>
+<path d="M300 51 L337 51" fill="none" stroke="#aa3f18" stroke-width="3" />
+<text x="345" y="57" fill="#aa3f18" font-size="16" text-anchor="start">Moins de O₂</text>
+<text x="74" y="75" fill="#17283e" font-size="16" text-anchor="start">j cathodique</text>
+<text x="64" y="121" fill="#17283e" font-size="16" text-anchor="end">0</text>
+<text x="300" y="329" fill="#17283e" font-size="16" text-anchor="middle">−1,00 V</text>
+<text x="653" y="348" fill="#17283e" font-size="16" text-anchor="end">U (E − Eref)</text>
+</svg>

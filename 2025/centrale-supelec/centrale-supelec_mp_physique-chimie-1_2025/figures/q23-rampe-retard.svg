@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 675 297" role="img" aria-label="Fréquences émise et reçue avec un retard" font-family="sans-serif">
+<title>Fréquences émise et reçue avec un retard</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="675" height="297" fill="white"/>
+<path d="M80 228 L625 228" fill="none" stroke="#17283e" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M80 228 L80 82" fill="none" stroke="#17283e" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M80 110 L607 110" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="3 5"/>
+<text x="638" y="232" fill="#17283e" font-size="16" text-anchor="start">t</text>
+<text x="67" y="115" fill="#17283e" font-size="16" text-anchor="end">f₀ + B</text>
+<text x="67" y="233" fill="#17283e" font-size="16" text-anchor="end">f₀</text>
+<text x="338" y="255" fill="#17283e" font-size="16" text-anchor="middle">Tₘ</text>
+<text x="596" y="255" fill="#17283e" font-size="16" text-anchor="middle">2Tₘ</text>
+<text x="80" y="255" fill="#17283e" font-size="16" text-anchor="middle">0</text>
+<path d="M80 228 L338 110" fill="none" stroke="#185aa1" stroke-width="3" />
+<path d="M338 110 L338 228" fill="none" stroke="#185aa1" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M338 228 L596 110" fill="none" stroke="#185aa1" stroke-width="3" />
+<path d="M596 110 L596 228" fill="none" stroke="#185aa1" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M110 52 L149 52" fill="none" stroke="#185aa1" stroke-width="3" />
+<text x="156" y="58" fill="#185aa1" font-size="16" text-anchor="start">Émission f(t)</text>
+<path d="M80 121.8 L105.8 110" fill="none" stroke="#aa3f18" stroke-width="3" />
+<path d="M105.8 110 L105.8 228" fill="none" stroke="#aa3f18" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M105.8 228 L363.8 110.0" fill="none" stroke="#aa3f18" stroke-width="3" />
+<path d="M363.8 110 L363.8 228" fill="none" stroke="#aa3f18" stroke-width="1.5" stroke-dasharray="4 4"/>
+<path d="M363.8 228 L596 121.80000000000001" fill="none" stroke="#aa3f18" stroke-width="3" />
+<path d="M336 52 L375 52" fill="none" stroke="#aa3f18" stroke-width="3" />
+<text x="382" y="58" fill="#aa3f18" font-size="16" text-anchor="start">Réception fᵣ(t)</text>
+<text x="105.8" y="280" fill="#aa3f18" font-size="13" text-anchor="middle">τ = Tₘ/10</text>
+</svg>
