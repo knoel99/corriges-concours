@@ -89,7 +89,7 @@ $$
 
 En régime stationnaire, sans accumulation ni branchement extérieur à la chaîne, le débit total sortant des racines traverse successivement le tronc, les feuilles et l’interface. Le **même débit** traverse donc les quatre résistances, qui sont en série. La résistance de l’arbre vaut $R_p=R_N+R_t+R_f$.
 
-![Circuit hydraulique équivalent avec débit commun du sol vers l’atmosphère](figures/q04-circuit.svg)
+![Figure 1 — Circuit hydraulique équivalent avec débit commun du sol vers l’atmosphère](figures/q04-circuit.svg)
 
 > [!JURY]
 > Le rapport demande de caractériser une association en série par le débit commun. L’ordre des éléments sur le dessin ne suffit pas.
@@ -157,7 +157,7 @@ L’hydrodistillation exploite deux pressions partielles. Une lecture à pressio
 
 Dans le diagramme $(T,p)$, $T$ est en abscisse et $p$ en ordonnée. Les courbes de sublimation, fusion et vaporisation se rejoignent au **point triple**. La vaporisation s’arrête au **point critique**, au-delà duquel la distinction liquide–gaz disparaît. Pour l’eau, la courbe de fusion de la glace ordinaire a une pente négative.
 
-![Diagramme de phases schématique de l’eau pure avec point triple et point critique](figures/q08-phases.svg)
+![Figure 2 — Diagramme de phases schématique de l’eau pure avec point triple et point critique](figures/q08-phases.svg)
 
 > [!JURY]
 > Le jury relève des axes inversés et des domaines incohérents. Une isotherme ou une isobare permet de vérifier l’ordre des domaines.
@@ -640,7 +640,7 @@ La tension $u_2=u+u_c$ suit donc la même courbure exponentielle que $u_c$ entre
 
 Le seuil $V_b$ est atteint juste avant chaque saut de $u_2$.
 
-![Chronogrammes de u, de la tension u_c aux bornes de C et de l’entrée u₂](figures/q33-chronogrammes.svg)
+![Figure 3 — Chronogrammes de u, de la tension u_c aux bornes de C et de l’entrée u₂](figures/q33-chronogrammes.svg)
 
 > [!METHODE]
 > Alignez les dates de basculement sur les trois tracés. Marquez le seuil sur la courbe de l’entrée qui provoque chaque commutation.
