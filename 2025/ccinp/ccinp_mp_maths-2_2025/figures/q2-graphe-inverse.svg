@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388" height="322" viewBox="0 0 388 322" role="img" aria-labelledby="titre">
+  <title id="titre">Graphe inverse de l’exemple de l’énoncé</title>
+  <defs>
+    <marker id="pointe" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0L8 4L0 8Z" fill="#14538b"/>
+    </marker>
+  </defs>
+  <rect width="388" height="322" fill="#fff"/>
+  <g fill="none" stroke="#14538b" stroke-width="2" marker-end="url(#pointe)">
+    <path d="M108 96V63"/>
+    <path d="M262 45H126"/>
+    <path d="M108 198V132"/>
+    <path d="M267 124L124 205"/>
+    <path d="M262 216H126"/>
+    <path d="M280 96V63"/>
+    <path d="M126 114H262"/>
+    <path d="M108 234V268"/>
+  </g>
+  <g fill="#f4f8fc" stroke="#17304a" stroke-width="2">
+    <circle cx="108" cy="45" r="17"/>
+    <circle cx="108" cy="114" r="17"/>
+    <circle cx="108" cy="216" r="17"/>
+    <circle cx="280" cy="45" r="17"/>
+    <circle cx="280" cy="114" r="17"/>
+    <circle cx="280" cy="216" r="17"/>
+    <circle cx="108" cy="286" r="17"/>
+  </g>
+  <g fill="#17304a" font-family="Arial, Helvetica, sans-serif" font-size="17" text-anchor="middle">
+    <text x="108" y="51">0</text>
+    <text x="108" y="120">1</text>
+    <text x="108" y="222">2</text>
+    <text x="280" y="51">3</text>
+    <text x="280" y="120">4</text>
+    <text x="280" y="222">5</text>
+    <text x="108" y="292">6</text>
+  </g>
+</svg>

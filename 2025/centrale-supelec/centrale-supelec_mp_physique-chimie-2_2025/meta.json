@@ -1,0 +1,45 @@
+{
+  "slug": "centrale-supelec_mp_physique-chimie-2_2025",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP",
+    "matiere": "Physique-chimie 2",
+    "annee": 2025,
+    "code_sujet": "P078",
+    "titre_sujet": "Faire l’image d’une exoplanète"
+  },
+  "questions": 40,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-front.svg",
+      "question": "1",
+      "legende": "Figure 1 — Collimation de la source haute et projection sur la direction de l’onde plane",
+      "sha256": "f17cdd5b3a088815677a409299892c4951ed99c086ab36184863a857e6ad7feb"
+    },
+    {
+      "fichier": "figures/q05-coherence.svg",
+      "question": "5",
+      "legende": "Figure 2 — Intensité détectée pour les facteurs de cohérence 1 et 0",
+      "sha256": "c0847c2f34e3233850ee31424bcd65045507039c31a2291d9a9ab1cb69ef74a6"
+    },
+    {
+      "fichier": "figures/q09-contraste.svg",
+      "question": "9",
+      "legende": "Figure 3 — Position du point de contraste et de ses barres d’incertitude sur la courbe du modèle",
+      "sha256": "40af186e35e0547b688c223324a27014d9a58f2d8e7c39fa5defcb0bcb785889"
+    },
+    {
+      "fichier": "figures/q17-foyers.svg",
+      "question": "17",
+      "legende": "Figure 4 — Foyer unique d’une lentille mince et alignement de foyers pour la lentille gravitationnelle",
+      "sha256": "90e5602002f8cb1763830a3f66570403a8ec7ba8ae92336b25a24cff075ce11f"
+    },
+    {
+      "fichier": "figures/q31-potentiel.svg",
+      "question": "31",
+      "legende": "Figure 5 — Puits de potentiel effectif dans le régime de force centrale attractive",
+      "sha256": "e18a4903537ee084701263ef76cc4e38479c559ba12185d26ca431e621b03689"
+    }
+  ]
+}

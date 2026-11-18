@@ -1,0 +1,33 @@
+{
+  "slug": "mines-ponts_psi_physique-2_2025",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "PSI",
+    "matiere": "Physique 2",
+    "annee": 2025
+  },
+  "questions": 33,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q5-longueur.svg",
+      "question": "5",
+      "legende": "Figure 1 — Longueur sinusoïdale autour de la longueur d’équilibre, tracée pour une longueur initiale supérieure à celle d’équilibre."
+    },
+    {
+      "fichier": "figures/q13-potentiels.svg",
+      "question": "13",
+      "legende": "Figure 2 — Potentiels normalisés pour trois distances au guidage, avec deux puits quand la distance est inférieure à la longueur à vide."
+    },
+    {
+      "fichier": "figures/q23-diodes.svg",
+      "question": "23",
+      "legende": "Figure 3 — La diode seule présente un seuil positif. Le dipôle tête-bêche présente deux seuils et une zone centrale de courant nul."
+    },
+    {
+      "fichier": "figures/q25-caracteristique.svg",
+      "question": "25",
+      "legende": "Figure 4 — Caractéristique affine par morceaux en unités de la tension seuil, avec les deux extrema et les trois zéros."
+    }
+  ]
+}

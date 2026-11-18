@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 275" width="560" height="275" role="img">
+<title>Projection de la séparation des sources virtuelles</title>
+<defs><marker id="fleche" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#176891"/></marker></defs>
+<rect width="560" height="275" fill="#fff"/>
+<g fill="#152d41" font-family="sans-serif" font-size="17">
+<path d="M76 186 H477 M194 93 L257 198" stroke="#607b8e" stroke-width="1.5" stroke-dasharray="6 5" fill="none"/>
+<g stroke="#176891" stroke-width="2" fill="none" marker-end="url(#fleche)"><path d="M90 186 L370 18"/><path d="M250 186 L484 46"/></g>
+<path d="M90 186 L207.6 115.4 M250 186 L207.6 115.4" stroke="#765727" stroke-width="2.4" fill="none"/>
+<path d="M220 108 L227 120 L215 127 M134 186 A44 44 0 0 0 128 163" stroke="#607b8e" stroke-width="1.5" fill="none"/>
+<circle cx="90" cy="186" r="4"/><circle cx="250" cy="186" r="4"/><circle cx="207.6" cy="115.4" r="4"/>
+<text x="79" y="210">S₁</text><text x="239" y="210">S₂</text><text x="203" y="99">H</text>
+<text x="145" y="176">i</text><text x="395" y="208">Normale</text>
+<text x="90" y="251">S₁S₂ = 2 |Δz|</text><text x="290" y="251">S₁H = 2 |Δz| cos i</text>
+</g>
+</svg>

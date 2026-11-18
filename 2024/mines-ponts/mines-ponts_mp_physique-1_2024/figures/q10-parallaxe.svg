@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img">
+<title>Parallaxe de Mars avec une base transverse</title>
+<rect width="640" height="300" fill="#fff"/>
+<g fill="none" stroke-width="1.5">
+<circle cx="257" cy="132" r="53" stroke="#a5bccc"/>
+<path d="M57 132 H560" stroke="#7b8a99" stroke-dasharray="5 5"/>
+<path d="M283 86 L560 132 L283 178 Z" stroke="#176891" stroke-width="2"/>
+<path d="M479 118.6 Q476 132 479 145.4" stroke="#88622f"/>
+<path d="M57 208 V270 M257 190 V237 M560 198 V270 M57 220 H257 M57 261 H560" stroke="#7b8a99"/>
+</g>
+<g fill="#176891">
+<circle cx="57" cy="132" r="4"/><circle cx="257" cy="132" r="4"/>
+<circle cx="283" cy="86" r="4"/><circle cx="283" cy="178" r="4"/><circle cx="560" cy="132" r="4"/>
+</g>
+<g fill="#152d41" font-family="sans-serif" font-size="16">
+<text x="36" y="114">Soleil S</text><text x="178" y="137">Terre T</text><text x="568" y="137">Mars M</text>
+<text x="290" y="80">Paris</text><text x="290" y="192">Cayenne</text><text x="290" y="126">ℓ</text>
+<text x="489" y="138">α</text><text x="150" y="214">a₀</text><text x="302" y="255">a₁</text>
+</g>
+</svg>

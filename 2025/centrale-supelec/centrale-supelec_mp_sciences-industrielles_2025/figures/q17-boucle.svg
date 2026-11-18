@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 695 380" width="695" height="380" role="img" aria-labelledby="titre">
+<title id="titre">Commande de B appliquée au modèle linéaire couplé</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#273b52"/></marker></defs>
+<rect width="695" height="380" fill="#fff"/>
+<rect x="72" y="104" width="100" height="40" rx="4" fill="#edf2f6" stroke="#273b52"/>
+<text x="122.0" y="129.0" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">K_P/(τ_i p)</text>
+<rect x="278" y="104" width="90" height="40" rx="4" fill="#edf2f6" stroke="#273b52"/>
+<text x="323.0" y="129.0" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">Gain 1</text>
+<rect x="398" y="104" width="123" height="40" rx="4" fill="#edf2f6" stroke="#273b52"/>
+<text x="459.5" y="129.0" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">H_B couplé</text>
+<rect x="398" y="177" width="123" height="40" rx="4" fill="#edf2f6" stroke="#273b52"/>
+<text x="459.5" y="202.0" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">H_BC couplé</text>
+<rect x="398" y="249" width="123" height="40" rx="4" fill="#edf2f6" stroke="#273b52"/>
+<text x="459.5" y="274.0" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">H_BE couplé</text>
+<rect x="131" y="234" width="78" height="34" rx="4" fill="#edf2f6" stroke="#273b52"/>
+<text x="170.0" y="256.0" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">K_P</text>
+<rect x="197" y="296" width="78" height="34" rx="4" fill="#edf2f6" stroke="#273b52"/>
+<text x="236.0" y="318.0" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">K₁ p</text>
+<circle cx="47" cy="124" r="12" fill="white" stroke="#273b52"/>
+<text x="47" y="129" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">Σ</text>
+<circle cx="195" cy="124" r="12" fill="white" stroke="#273b52"/>
+<text x="195" y="129" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">Σ</text>
+<circle cx="253" cy="124" r="12" fill="white" stroke="#273b52"/>
+<text x="253" y="129" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">Σ</text>
+<circle cx="563" cy="124" r="12" fill="white" stroke="#273b52"/>
+<text x="563" y="129" text-anchor="middle" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">Σ</text>
+<polyline points="17.00,124.00 35.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="59.00,124.00 72.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="172.00,124.00 183.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="207.00,124.00 241.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="265.00,124.00 278.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="368.00,124.00 398.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="521.00,124.00 551.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="575.00,124.00 665.00,124.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="15" y="101" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="13" fill="#273b52">δθ_Bc</text>
+<text x="217" y="106" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="13" fill="#273b52">Ω_Bc</text>
+<text x="370" y="105" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="12" fill="#273b52">δC_B</text>
+<text x="620" y="106" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="13" fill="#273b52">δθ_B</text>
+<polyline points="355.00,197.00 398.00,197.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="359" y="190" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="12" fill="#273b52">δC_C</text>
+<polyline points="355.00,269.00 398.00,269.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="359" y="262" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="12" fill="#273b52">δC_E</text>
+<polyline points="521.00,197.00 541.00,197.00 541.00,153.00 563.00,153.00 563.00,136.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="521.00,269.00 582.00,269.00 582.00,142.00 569.00,142.00 569.00,134.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="543" y="109" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="13" fill="#273b52">+</text>
+<text x="570" y="153" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="13" fill="#273b52">+</text>
+<text x="590" y="151" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="13" fill="#273b52">+</text>
+<circle cx="610" cy="124" r="3" fill="#273b52"/>
+<polyline points="610.00,124.00 610.00,350.00 47.00,350.00 47.00,136.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<circle cx="610" cy="313" r="3" fill="#273b52"/>
+<polyline points="610.00,313.00 275.00,313.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="197.00,313.00 105.00,313.00 105.00,156.00 253.00,156.00 253.00,136.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<circle cx="610" cy="338" r="3" fill="#273b52"/>
+<polyline points="610.00,338.00 315.00,338.00 315.00,251.00 209.00,251.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<polyline points="131.00,251.00 123.00,251.00 123.00,164.00 195.00,164.00 195.00,136.00" fill="none" stroke="#273b52" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="56" y="153" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">−</text>
+<text x="204" y="153" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">−</text>
+<text x="262" y="153" text-anchor="start" font-family="DejaVu Sans,sans-serif" font-size="15" fill="#273b52">−</text>
+</svg>

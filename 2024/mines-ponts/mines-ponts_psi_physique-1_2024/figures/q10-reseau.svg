@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="670" height="285" viewBox="0 0 670 285" role="img" aria-labelledby="titre">
+<title id="titre">Réseau à trois branches pour les échanges thermiques du spa</title>
+<rect width="670" height="285" fill="#fff"/>
+<g fill="none" stroke="#294c65" stroke-width="2">
+<path d="M104 205V63H566V205H104M104 134H566"/>
+</g>
+<g fill="#eef5f8" stroke="#294c65">
+<rect x="155" y="47" width="86" height="32" rx="4"/>
+<rect x="270" y="47" width="105" height="32" rx="4"/>
+<rect x="402" y="47" width="117" height="32" rx="4"/>
+<rect x="270" y="118" width="105" height="32" rx="4"/>
+<rect x="270" y="189" width="105" height="32" rx="4"/>
+</g>
+<g fill="#263c50" font-family="DejaVu Sans,sans-serif" font-size="14" text-anchor="middle">
+<text x="198" y="68">Rₚc</text><text x="323" y="68">Rₚ</text><text x="460" y="68">R lat. air</text>
+<text x="323" y="139">Rₜ</text><text x="323" y="210">Rₛ</text>
+<text x="326" y="33">Paroi latérale : résistances en série</text>
+<text x="323" y="104">Fond</text><text x="323" y="175">Surface libre</text>
+<text x="104" y="238">Eau</text><text x="104" y="259">T intérieure</text>
+<text x="566" y="238">Air et sol</text><text x="566" y="259">T extérieure</text>
+</g>
+<g fill="#294c65"><circle cx="104" cy="63" r="4"/><circle cx="104" cy="205" r="4"/><circle cx="104" cy="134" r="4"/><circle cx="566" cy="63" r="4"/><circle cx="566" cy="205" r="4"/><circle cx="566" cy="134" r="4"/></g>
+</svg>

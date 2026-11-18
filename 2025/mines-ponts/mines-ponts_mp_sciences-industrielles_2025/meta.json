@@ -1,0 +1,28 @@
+{
+  "slug": "mines-ponts_mp_sciences-industrielles_2025",
+  "epreuve": {
+    "concours": "Mines-Ponts",
+    "filiere": "MP",
+    "matiere": "Sciences industrielles",
+    "annee": 2025
+  },
+  "questions": 31,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q19-bode.svg",
+      "question": "19",
+      "legende": "Figure 1 — Les cassures du gain et les trois plateaux de phase correspondent au pôle réel puis à la paire de pôles complexes."
+    },
+    {
+      "fichier": "figures/q28-phases.svg",
+      "question": "28",
+      "legende": "Figure 2 — Dans chaque cycle, la position augmente en adhérence et reste pratiquement constante pendant le retour en glissement."
+    },
+    {
+      "fichier": "figures/q30-reponse.svg",
+      "question": "30",
+      "legende": "Figure 3 — La bande à 5 % encadre la valeur finale. Le temps de réponse se mesure au dernier franchissement du bord inférieur."
+    }
+  ]
+}
