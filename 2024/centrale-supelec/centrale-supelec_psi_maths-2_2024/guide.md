@@ -6,12 +6,10 @@
 
 Le sujet « Autour de la série harmonique et de la constante d’Euler » comporte 48 questions en quatre heures, calculatrice autorisée. Le fil conducteur est la limite de la différence entre somme harmonique et logarithme. Le problème enchaîne une application probabiliste, des représentations intégrales, une approximation avec contrôle d’erreur et l’étude d’une série entière.
 
-| Parties | Travail demandé |
-|---|---|
-| I–II | Établir l’existence de la constante d’Euler, puis étudier l’attente de nouvelles vignettes et la concentration du temps de collecte. |
-| III–IV | Obtenir deux intégrales par interversion série-intégrale, puis par convergence dominée. |
-| V–VI | Étudier la fonction Gamma, déplacer une borne de coupure et donner un encadrement d’erreur pour une approximation. |
-| VII | Exploiter une série entière auxiliaire pour analyser les deux limites au bord de l’intervalle de convergence. |
+- **I–II.** Établir l’existence de la constante d’Euler, puis étudier l’attente de nouvelles vignettes et la concentration du temps de collecte.
+- **III–IV.** Obtenir deux intégrales par interversion série-intégrale, puis par convergence dominée.
+- **V–VI.** Étudier la fonction Gamma, déplacer une borne de coupure et donner un encadrement d’erreur pour une approximation.
+- **VII.** Exploiter une série entière auxiliaire pour analyser les deux limites au bord de l’intervalle de convergence.
 
 Les notions mobilisées relèvent des programmes PCSI et PSI. Commencez par les questions courtes de calcul et par celles qui débloquent plusieurs étapes, notamment Q1–Q2, Q12–Q13, Q19–Q21 et Q27. Le jury relève en particulier la difficulté de Q11 et les hypothèses souvent omises dans les applications des théorèmes de convergence. Avant d’invoquer un théorème, identifiez l’objet étudié et l’intervalle sur lequel il est défini. Q17 et Q37 comportent des erreurs signalées dans le rapport. La solution de Q17 donne la limite attendue et une écriture intégrale possible. Celle de Q37 explicite et démontre l’inégalité corrigée.
 

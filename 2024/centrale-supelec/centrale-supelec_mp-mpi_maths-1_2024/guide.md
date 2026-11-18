@@ -6,11 +6,9 @@
 
 Le problème dure quatre heures et porte sur l'inégalité de Carleman, qui contrôle la somme des moyennes géométriques successives d'une suite positive. Les trois parties proposent deux preuves puis une borne plus fine. Elles se travaillent en grande partie indépendamment.
 
-| Partie | Questions | Objectif et outils |
-|---|---|---|
-| I | Q1–Q10 | Prouver l'analogue intégral de Knopp, puis revenir aux suites par une fonction en escalier. Convexité, convergence dominée et intégration par parties. |
-| II | Q11–Q22 | Construire des maxima sur des simplexes et exploiter leurs conditions de stationnarité. Compacité, dérivées partielles et homogénéité. |
-| III | Q23–Q29 | Développer une fonction en série entière, puis améliorer la borne de Carleman en pondérant les termes. Séries entières et télescopage. |
+- **Partie I (Q1–Q10).** Prouver l'analogue intégral de Knopp, puis revenir aux suites par une fonction en escalier. Convexité, convergence dominée et intégration par parties.
+- **Partie II (Q11–Q22).** Construire des maxima sur des simplexes et exploiter leurs conditions de stationnarité. Compacité, dérivées partielles et homogénéité.
+- **Partie III (Q23–Q29).** Développer une fonction en série entière, puis améliorer la borne de Carleman en pondérant les termes. Séries entières et télescopage.
 
 Q2–Q4, Q7–Q8, Q11–Q16 et Q23–Q24 permettent d'avancer par des méthodes de cours. Les questions Q10, Q20 et Q29 demandent de contrôler une construction ou une récurrence dans son ensemble. En cas de blocage, il est possible de commencer II sans avoir terminé I, ou III.A indépendamment des deux premières. III.B utilise en revanche l'inégalité arithmético-géométrique de II.A.
 
