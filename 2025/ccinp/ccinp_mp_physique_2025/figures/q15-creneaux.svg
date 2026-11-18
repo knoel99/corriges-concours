@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="270" viewBox="0 0 640 270" role="img">
+<title>Créneaux et recouvrement</title>
+<rect x="0" y="0" width="640" height="270" fill="#fff"/>
+<g font-family="sans-serif" font-size="15">
+<rect x="240" y="37" width="60" height="190" fill="#e8eefa"/>
+<polyline points="48.00,107.00 577.00,107.00" fill="none" stroke="#26394d" stroke-width="1.7" /><polyline points="569.00,103.00 577.00,107.00 569.00,111.00" fill="none" stroke="#26394d" stroke-width="1.7" />
+<polyline points="48.00,208.00 577.00,208.00" fill="none" stroke="#26394d" stroke-width="1.7" /><polyline points="569.00,204.00 577.00,208.00 569.00,212.00" fill="none" stroke="#26394d" stroke-width="1.7" />
+<text x="580" y="111" fill="#26394d">ξ</text>
+<text x="580" y="212" fill="#26394d">ξ</text>
+<text x="66" y="29" fill="#176893">A(ξ − t)</text>
+<text x="66" y="150" fill="#a54d16">A(ξ − tᵣ)</text>
+<polyline points="52.00,107.00 80.00,107.00 80.00,59.00 300.00,59.00 300.00,107.00 567.00,107.00" fill="none" stroke="#176893" stroke-width="1.7" />
+<polyline points="52.00,208.00 240.00,208.00 240.00,160.00 460.00,160.00 460.00,208.00 567.00,208.00" fill="none" stroke="#a54d16" stroke-width="1.7" />
+<text x="57" y="65" fill="#26394d">A₀</text>
+<text x="220" y="165" fill="#26394d">A₀</text>
+<text x="174" y="100" fill="#26394d">t</text>
+<text x="339" y="200" fill="#26394d">tᵣ</text>
+<text x="60" y="130" fill="#26394d">t − τ/2</text>
+<text x="275" y="130" fill="#26394d">t + τ/2</text>
+<text x="204" y="235" fill="#26394d">tᵣ − τ/2</text>
+<text x="428" y="235" fill="#26394d">tᵣ + τ/2</text>
+<text x="311" y="253" fill="#66788a">bande ombrée : recouvrement</text>
+</g>
+</svg>

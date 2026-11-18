@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 310" role="img" aria-label="Plaque de mica et déviation de la vitesse de sortie" font-family="sans-serif">
+<title>Plaque de mica et déviation de la vitesse de sortie</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="700" height="310" fill="white"/>
+<rect x="216" y="56" width="241" height="179" fill="#eaf2f9" stroke="#657489" stroke-width="2"/>
+<path d="M46 187 H216 Q343 187 457 151" fill="none" stroke="#185aa1" stroke-width="3" />
+<path d="M73 187 L163 187" fill="none" stroke="#185aa1" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="98" y="171" fill="#185aa1" font-size="16" text-anchor="start">v₀</text>
+<path d="M457 151 L621 99" fill="none" stroke="#185aa1" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="630" y="97" fill="#185aa1" font-size="16" text-anchor="start">vsortie</text>
+<path d="M457 151 L638 151" fill="none" stroke="#657489" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="648" y="154" fill="#17283e" font-size="16" text-anchor="start">x</text>
+<text x="638" y="179" fill="#657489" font-size="14" text-anchor="end">parallèle à Ox</text>
+<path d="M515 151 A58 58 0 0 0 512.2 133.6" fill="none" stroke="#aa3f18" stroke-width="2" />
+<text x="505" y="173" fill="#aa3f18" font-size="16" text-anchor="start">θd</text>
+<path d="M307 134 L307 84" fill="none" stroke="#17283e" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M369 134 L369 84" fill="none" stroke="#17283e" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="316" y="103" fill="#17283e" font-size="15" text-anchor="start">E⊥</text>
+<text x="339" y="214" fill="#657489" font-size="16" text-anchor="middle">Mica</text>
+<path d="M216 260 L457 260" fill="none" stroke="#657489" stroke-width="1.5" />
+<path d="M216 253 V267 M457 253 V267" fill="none" stroke="#657489" stroke-width="1.5" />
+<text x="336" y="285" fill="#17283e" font-size="16" text-anchor="middle">L</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 625 310" role="img" aria-labelledby="titre">
+  <title id="titre">Coupe méridienne et projections des forces sur la calotte</title>
+  <desc>Les tractions tangentielles plongent symétriquement aux deux bords. La poussée de pression nette est vers le haut.</desc>
+  <defs>
+    <marker id="fl" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <rect width="625" height="310" fill="#fff"/>
+  <g stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M137 115A155 155 0 0 1 347 115L137 115Z" fill="#e9f4fc" stroke="#477d9b"/>
+    <path d="M137 115q-32 40-42 92m252-92q32 40 42 92" stroke="#a2afba" stroke-dasharray="5 6"/>
+    <path d="M242 225V36" stroke="#a2afba" stroke-dasharray="5 6"/>
+    <path d="M242 228L347 115m-105 0H347" stroke="#477d9b"/>
+    <path d="M242 191q15 0 25 10" stroke="#477d9b"/>
+    <path d="M137 115L86 162" stroke="#9b542d" marker-end="url(#fl)"/>
+    <path d="M347 115L398 162" stroke="#9b542d" marker-end="url(#fl)"/>
+    <path d="M242 102V38" stroke="#29654c" marker-end="url(#fl)"/>
+    <path d="M447 237v-43" stroke="#477d9b" marker-end="url(#fl)"/>
+  </g>
+  <g fill="#17394f" font-family="sans-serif" font-size="17">
+    <text x="246" y="215">θ</text>
+    <text x="285" y="105">r</text>
+    <text x="305" y="178">R</text>
+    <text x="251" y="247">O</text>
+    <text x="262" y="48" fill="#29654c">Résultante de pression</text>
+    <text x="39" y="189" fill="#9b542d">Traction</text>
+    <text x="377" y="186" fill="#9b542d">Traction</text>
+    <text x="458" y="213">Verticale</text>
+    <text x="203" y="287">Coupe par l’axe du ballon</text>
+  </g>
+</svg>

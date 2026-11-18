@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="270" viewBox="0 0 500 270" role="img" aria-labelledby="titre">
+  <title id="titre">Composition des vitesses en émission transverse</title>
+  <defs>
+    <marker id="axe" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#333"/></marker>
+    <marker id="vecteur" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#245887"/></marker>
+  </defs>
+  <rect width="500" height="270" fill="white"/>
+  <g stroke="#333" stroke-width="1.4" marker-end="url(#axe)"><path d="M70 209H455"/><path d="M100 238V28"/></g>
+  <g stroke="#74828a" stroke-width="1.5" stroke-dasharray="5 4" fill="none"><path d="M100 79H340"/><path d="M340 79V209"/></g>
+  <g stroke="#245887" stroke-width="3" marker-end="url(#vecteur)"><path d="M100 209H332"/><path d="M100 209V82"/><path d="M100 209L336 81"/></g>
+  <path d="M163 209A63 63 0 0 0 155 179" fill="none" stroke="#9d3420" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <g fill="#333"><text x="465" y="215">x</text><text x="110" y="32">y</text><text x="80" y="228">O</text></g>
+    <g fill="#245887"><text x="216" y="234">v</text><text x="73" y="135">vₚ</text><text x="233" y="125">v′ₚ</text></g>
+    <text x="170" y="193" fill="#9d3420">θ′</text>
+  </g>
+</svg>

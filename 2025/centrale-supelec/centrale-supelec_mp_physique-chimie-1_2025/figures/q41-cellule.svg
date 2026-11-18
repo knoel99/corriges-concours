@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 433" role="img" aria-label="Cellule électrolytique et sens conventionnel du courant" font-family="sans-serif">
+<title>Cellule électrolytique et sens conventionnel du courant</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="900" height="433" fill="white"/>
+<rect x="131" y="211" width="638" height="150" fill="#eaf2f9"/>
+<path d="M131 183 V361 H769 V183" fill="none" stroke="#657489" stroke-width="2" />
+<rect x="211" y="165" width="29" height="143" rx="4" fill="#185aa1"/>
+<rect x="660" y="165" width="29" height="143" rx="4" fill="#aa3f18"/>
+<path d="M225 165 V87 H402 M498 87 H675 V165" fill="none" stroke="#17283e" stroke-width="2.6" />
+<rect x="402" y="58" width="96" height="58" rx="8" fill="white" stroke="#17283e" stroke-width="2"/>
+<text x="415" y="93" fill="#17283e" font-size="22" text-anchor="start">+</text>
+<text x="473" y="93" fill="#17283e" font-size="22" text-anchor="start">−</text>
+<text x="450" y="45" fill="#17283e" font-size="16" text-anchor="middle">Générateur</text>
+<path d="M391 87 L313 87" fill="none" stroke="#17283e" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M621 87 L538 87" fill="none" stroke="#17283e" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M292 265 L598 265" fill="none" stroke="#17283e" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="450" y="252" fill="#17283e" font-size="16" text-anchor="middle">courant conventionnel</text>
+<text x="225" y="143" fill="#185aa1" font-size="17" text-anchor="middle">Anode (+)</text>
+<text x="675" y="143" fill="#aa3f18" font-size="17" text-anchor="middle">Cathode (−)</text>
+<text x="450" y="332" fill="#657489" font-size="16" text-anchor="middle">Eau de mer</text>
+<text x="34" y="393" fill="#185aa1" font-size="17" text-anchor="start">2 H₂O → O₂ + 4 H⁺ + 4 e⁻</text>
+<text x="34" y="419" fill="#185aa1" font-size="17" text-anchor="start">2 Cl⁻ → Cl₂ + 2 e⁻</text>
+<text x="551" y="393" fill="#aa3f18" font-size="17" text-anchor="start">O₂ + 2 H₂O + 4 e⁻ → 4 HO⁻</text>
+<text x="551" y="419" fill="#aa3f18" font-size="17" text-anchor="start">Dépôt de CaCO₃ près de la cathode</text>
+</svg>

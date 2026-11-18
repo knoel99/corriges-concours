@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="530" height="260" viewBox="0 0 530 260" role="img" aria-labelledby="titre">
+<title id="titre">Trajets entre deux orifices du microphone</title>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#20517d"/></marker></defs>
+<rect width="530" height="260" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" font-size="15" fill="#173657" stroke-linecap="round"><path d="M60 198H481M60 207H481" stroke="#536b80" stroke-width="2"/>
+<path d="M60 202H181M222 202H383" stroke="#20517d" stroke-width="3" marker-start="url(#arr)"/>
+<path d="M364 98L210 187M464 156L410 187" stroke="#20517d" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M360 100L410 187" stroke="#8295a5" stroke-width="1.5" stroke-dasharray="5 4"/>
+<path d="M209 228H410" stroke="#20517d" marker-start="url(#arr)" marker-end="url(#arr)"/>
+<circle cx="210" cy="189" r="4" fill="#20517d"/><circle cx="410" cy="189" r="4" fill="#20517d"/>
+<text x="37" y="207">M</text><text x="194" y="182">1</text><text x="415" y="182">2</text>
+<text x="303" y="248">d</text><text x="116" y="107">d cos θ</text>
+<path d="M211 170L355 85" fill="none" stroke="#20517d" marker-start="url(#arr)" marker-end="url(#arr)"/>
+<text x="366" y="66">Front d’onde</text><path d="M400 73L378 127" stroke="#8295a5"/>
+<text x="16" y="25">Propagation dans le tube : des orifices vers M</text></g>
+</svg>

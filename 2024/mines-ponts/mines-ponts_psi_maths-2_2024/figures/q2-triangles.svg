@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="265" viewBox="0 0 630 265" role="img">
+<title>Triangles disjoints du contre-exemple de la question 2</title>
+<desc>Deux triangles se succèdent au-dessus de l’axe horizontal. Le triangle de droite, de rang k, est centré en 1/k et atteint k². Celui de rang k+1 est à gauche et plus haut.</desc>
+<rect width="630" height="265" fill="white"/>
+<defs><marker id="fleche" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#28363d"/></marker></defs>
+<g fill="none" stroke="#28363d" stroke-width="1.5" marker-end="url(#fleche)">
+<path d="M56 177 H598"/>
+<path d="M57 181 V31"/>
+</g>
+<g stroke="#8799a3" stroke-dasharray="4 4">
+<path d="M57 89 H400"/>
+<path d="M400 89 V178"/>
+</g>
+<path d="M142 177 H164 L199 60 L234 177 H330 L400 89 L470 177 H495" fill="none" stroke="#1b658d" stroke-width="2.7"/>
+<g stroke="#28363d" stroke-width="1.3">
+<path d="M56 177 v7 M330 177 v7 M400 177 v7 M470 177 v7 M574 177 v7 M52 89 h7"/>
+</g>
+<g font-family="sans-serif" font-size="15" fill="#243b46" text-anchor="middle">
+<text x="46" y="24">f(t)</text>
+<text x="606" y="183">t</text>
+<text x="57" y="205">0</text>
+<text x="574" y="205">1</text>
+<text x="330" y="205">a<tspan baseline-shift="sub" font-size="10">k</tspan></text>
+<text x="400" y="205">1/k</text>
+<text x="470" y="205">b<tspan baseline-shift="sub" font-size="10">k</tspan></text>
+<text x="36" y="94">k²</text>
+<text x="104" y="164">⋯</text>
+<text x="531" y="164">⋯</text>
+<text x="199" y="48">Rang k + 1</text>
+<text x="445" y="76">Rang k</text>
+<path d="M330 222 v7 H470 v-7" fill="none" stroke="#8799a3" stroke-width="1.4"/>
+<text x="400" y="251">Largeur 2⁻ᵏ</text>
+</g>
+</svg>

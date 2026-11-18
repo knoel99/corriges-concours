@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 292" font-family="DejaVu Sans, sans-serif" stroke-linejoin="round" stroke-linecap="round">
+<title>Surface de Gauss d’un plan uniformément chargé</title>
+<defs><marker id="fleche" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L6 3 L0 6 Z" fill="#192b47"/></marker></defs>
+<path d="M350 26 L440 66 L440 222 L350 182 Z" fill="#e4f1f6" stroke="#1b5685" stroke-width="2"/>
+<ellipse cx="215" cy="124" rx="30" ry="61" fill="none" stroke="#192b47" stroke-width="2"/>
+<ellipse cx="575" cy="124" rx="30" ry="61" fill="#f0f7fc" fill-opacity=".55" stroke="#192b47" stroke-width="2"/>
+<path d="M215 63 H575 M215 185 H575" fill="none" stroke="#192b47" stroke-width="2"/>
+<path d="M213 124 H127" fill="none" stroke="#1b5685" stroke-width="3" marker-end="url(#fleche)"/>
+<path d="M575 124 H655" fill="none" stroke="#1b5685" stroke-width="3" marker-end="url(#fleche)"/>
+<path d="M100 233 H678" fill="none" stroke="#7b8798" stroke-width="1.5" marker-end="url(#fleche)"/>
+<path d="M215 229 V237 M394 229 V237 M575 229 V237" fill="none" stroke="#192b47" stroke-width="2"/>
+<text x="685" y="239" text-anchor="start" font-size="17" fill="#192b47">x</text>
+<text x="215" y="263" text-anchor="middle" font-size="17" fill="#192b47">xₚ − d</text>
+<text x="394" y="263" text-anchor="middle" font-size="17" fill="#192b47">xₚ</text>
+<text x="575" y="263" text-anchor="middle" font-size="17" fill="#192b47">xₚ + d</text>
+<text x="396" y="45" text-anchor="middle" font-size="17" fill="#192b47">plan +σ</text>
+<text x="144" y="109" text-anchor="middle" font-size="14" fill="#192b47">E et n sortants</text>
+<text x="626" y="109" text-anchor="middle" font-size="14" fill="#192b47">E et n sortants</text>
+<text x="555" y="205" text-anchor="middle" font-size="14" fill="#192b47">aire Aᵍ</text>
+</svg>

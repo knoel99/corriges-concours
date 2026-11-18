@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" role="img" aria-label="Projection sur la direction d’observation" font-family="sans-serif">
+<title>Projection sur la direction d’observation</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="720" height="330" fill="white"/>
+<path d="M65 149 L638 149" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="5 5"/>
+<text x="647" y="154" fill="#657489" font-size="15" text-anchor="start">normale</text>
+<path d="M195 57 L195 260" fill="none" stroke="#17283e" stroke-width="2" />
+<text x="181" y="51" fill="#17283e" font-size="16" text-anchor="end">Réseau</text>
+<rect x="191" y="101" width="8" height="9" fill="white"/>
+<rect x="191" y="183" width="8" height="9" fill="white"/>
+<path d="M66 105 L195 105" fill="none" stroke="#657489" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M66 187 L195 187" fill="none" stroke="#657489" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M195 105 L575 33" fill="none" stroke="#185aa1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M195 187 L575 115" fill="none" stroke="#185aa1" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M195 187 L366 187" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="5 4"/>
+<path d="M183 43 L228 282" fill="none" stroke="#aa3f18" stroke-width="2" stroke-dasharray="6 5"/>
+<path d="M255 187 A60 60 0 0 0 254 176" fill="none" stroke="#aa3f18" stroke-width="2" />
+<text x="250" y="165" fill="#aa3f18" font-size="16" text-anchor="start">θ</text>
+<path d="M195 187 L210 184.1" fill="none" stroke="#aa3f18" stroke-width="4" />
+<circle cx="210" cy="184.1" r="3" fill="#aa3f18"/>
+<text x="230" y="240" fill="#aa3f18" font-size="16" text-anchor="start">a sin θ</text>
+<text x="238" y="269" fill="#aa3f18" font-size="16" text-anchor="start">Front d’onde sortant</text>
+<path d="M149 105 L149 187" fill="none" stroke="#657489" stroke-width="1" />
+<path d="M144 105 H154 M144 187 H154" fill="none" stroke="#657489" stroke-width="1" />
+<text x="141" y="151" fill="#657489" font-size="15" text-anchor="end">a</text>
+<text x="592" y="108" fill="#185aa1" font-size="16" text-anchor="start">direction</text>
+<text x="592" y="129" fill="#185aa1" font-size="16" text-anchor="start">observée</text>
+</svg>

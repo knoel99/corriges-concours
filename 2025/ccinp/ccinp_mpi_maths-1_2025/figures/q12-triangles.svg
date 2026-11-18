@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="685" height="180" viewBox="0 0 685 180" role="img" aria-labelledby="titre">
+  <title id="titre">Enveloppe des triangles des trois premiers entiers</title>
+  <rect width="685" height="180" fill="white"/>
+  <g fill="none" stroke="#444" stroke-width="1.2">
+    <path d="M36 135H576l-7-4m7 4-7 4M45 141V24l-4 7m4-7 4 7"/>
+    <path d="M39 42h12M245 132v9M445 132v9"/>
+  </g>
+  <g fill="none" stroke="#888" stroke-dasharray="5 4" stroke-width="1.5">
+    <path d="M195 135L245 42M45 42L245 135"/>
+  </g>
+  <path d="M45 42L205 116.4L245 42L295 135H422.78L445 42L467.22 135H566" fill="none" stroke="#14538b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#1a1a1a" font-family="Arial, Helvetica, sans-serif" font-size="16">
+    <text x="23" y="47">1</text>
+    <text x="42" y="158">1</text>
+    <text x="242" y="158">2</text>
+    <text x="442" y="158">3</text>
+    <text x="579" y="142">x</text>
+    <text x="51" y="26">f(x)</text>
+  </g>
+  <g fill="#14538b">
+    <circle cx="45" cy="42" r="3"/>
+    <circle cx="245" cy="42" r="3"/>
+    <circle cx="445" cy="42" r="3"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_mpi_physique-chimie-2_2025",
+  "epreuve": {
+    "concours": "CentraleSupélec",
+    "filiere": "MPI",
+    "matiere": "Physique-Chimie 2",
+    "annee": 2025
+  },
+  "questions": 46,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q12-diode.svg",
+      "question": "12",
+      "legende": "Figure 1 — Caractéristique de la diode idéale avec ses branches bloquée et passante."
+    },
+    {
+      "fichier": "figures/q18-charge.svg",
+      "question": "18",
+      "legende": "Figure 2 — Droite de charge, point de fonctionnement et variations le long de la caractéristique de la diode."
+    },
+    {
+      "fichier": "figures/q30-saturation.svg",
+      "question": "30",
+      "legende": "Figure 3 — Caractéristique avec plafonnement au courant thermoïonique fourni côté anode."
+    },
+    {
+      "fichier": "figures/q33-continu.svg",
+      "question": "33",
+      "legende": "Figure 4 — Circuit équivalent en continu, après ouverture des condensateurs."
+    }
+  ]
+}

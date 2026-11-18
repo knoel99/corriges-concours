@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" role="img" aria-label="Comparaison d’une lentille mince et de la lentille solaire" font-family="sans-serif">
+<title>Comparaison d’une lentille mince et de la lentille solaire</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17283e"/></marker></defs>
+<rect width="900" height="280" fill="white"/>
+<text x="223" y="39" fill="#17283e" font-size="16" text-anchor="middle">Lentille mince</text>
+<text x="668" y="39" fill="#17283e" font-size="16" text-anchor="middle">Lentille gravitationnelle</text>
+<path d="M37 141 L422 141" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M461 141 L861 141" fill="none" stroke="#657489" stroke-width="1" stroke-dasharray="5 5"/>
+<path d="M188 72 L188 209" fill="none" stroke="#17283e" stroke-width="2" />
+<path d="M180 80 L188 72 L196 80 M180 201 L188 209 L196 201" fill="none" stroke="#17283e" stroke-width="2" />
+<path d="M52 92 H188 L310 141 L403 178 M52 190 H188 L310 141 L403 104" fill="none" stroke="#185aa1" stroke-width="2" />
+<path d="M52 116 H188 L310 141 L403 160 M52 166 H188 L310 141 L403 122" fill="none" stroke="#aa3f18" stroke-width="2" />
+<circle cx="310" cy="141" r="3" fill="#17283e"/>
+<text x="310" y="167" fill="#17283e" font-size="16" text-anchor="middle">F′</text>
+<circle cx="566" cy="141" r="27" fill="#f4ab54" stroke="#17283e"/>
+<path d="M463 107 H566 L709 141 L849 174 M463 175 H566 L709 141 L849 108" fill="none" stroke="#185aa1" stroke-width="2" />
+<path d="M463 82 H566 L817 141 L849 148 M463 200 H566 L817 141 L849 134" fill="none" stroke="#aa3f18" stroke-width="2" />
+<circle cx="709" cy="141" r="3" fill="#17283e"/>
+<circle cx="817" cy="141" r="3" fill="#17283e"/>
+<text x="709" y="167" fill="#17283e" font-size="16" text-anchor="middle">F₁</text>
+<text x="821" y="166" fill="#17283e" font-size="16" text-anchor="middle">F₂</text>
+<text x="566" y="241" fill="#17283e" font-size="16" text-anchor="middle">Soleil</text>
+<text x="768" y="233" fill="#17283e" font-size="14" text-anchor="middle">F₁, F₂ : deux croisements</text>
+</svg>

@@ -1,0 +1,30 @@
+{
+  "slug": "centrale-supelec_mp_sciences-industrielles_2025",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP",
+    "matiere": "Sciences industrielles",
+    "annee": 2025,
+    "option": "S2I",
+    "code_sujet": "S023"
+  },
+  "questions": 23,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q01-commandes.svg",
+      "question": "1",
+      "legende": "Figure 1 — Trois chaînes de commande indépendantes, chacune alimentée par la consigne, la position et la vitesse de son articulation."
+    },
+    {
+      "fichier": "figures/q13-bode.svg",
+      "question": "13",
+      "legende": "Figure 2 — Asymptotes du modèle découplé et comparaison avec la lecture du modèle couplé dans la bande utile."
+    },
+    {
+      "fichier": "figures/q17-boucle.svg",
+      "question": "17",
+      "legende": "Figure 3 — Commande de B et sommation des trois contributions du modèle linéaire couplé, avec retour tachymétrique sur la sortie totale."
+    }
+  ]
+}

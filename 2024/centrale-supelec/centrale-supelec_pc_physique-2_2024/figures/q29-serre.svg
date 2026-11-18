@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 390" role="img">
+<title>Flux radiatifs du modèle de serre</title>
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 0 L8 4 L0 8 Z" fill="#26384a"/>
+  </marker>
+</defs>
+<rect width="720" height="390" fill="#fff"/>
+<g font-family="sans-serif" font-size="16" fill="#26384a">
+
+<rect x="30" y="131" width="658" height="57" fill="#e3f0f4"/>
+<rect x="30" y="317" width="658" height="47" fill="#e9d6c3"/>
+<text x="52" y="163">Atmosphère</text>
+<text x="52" y="346">Sol martien</text>
+<g fill="none" stroke-width="2.2" marker-end="url(#arrow)">
+  <path stroke="#aa7431" d="M205 38 V313"/>
+  <path stroke="#aa7431" d="M302 316 V41"/>
+  <path stroke="#ad3c53" d="M435 315 V190"/>
+  <path stroke="#ad3c53" d="M435 128 V41" stroke-dasharray="6 4"/>
+  <path stroke="#ad3c53" d="M588 189 V313"/>
+  <path stroke="#ad3c53" d="M588 129 V41"/>
+</g>
+<text x="106" y="28">Solaire incident pₘ,ᵢ</text>
+<text x="265" y="28">α pₘ,ᵢ</text>
+<text x="209" y="283">(1 − α) pₘ,ᵢ</text>
+<text x="209" y="304">absorbé</text>
+<text x="446" y="245">pₘ,ₑ</text>
+<text x="421" y="163">ε pₘ,ₑ absorbé</text>
+<text x="390" y="28">(1 − ε) pₘ,ₑ</text>
+<text x="598" y="76">εσTₐ⁴</text>
+<text x="596" y="246">εσTₐ⁴</text>
+<text x="596" y="268">absorbé</text>
+
+</g>
+</svg>

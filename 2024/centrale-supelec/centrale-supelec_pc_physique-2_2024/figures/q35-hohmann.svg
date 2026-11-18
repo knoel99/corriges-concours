@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 525" role="img">
+<title>Orbites martienne et de Patientia et transfert de Hohmann</title>
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+    <path d="M0 0 L8 4 L0 8 Z" fill="#26384a"/>
+  </marker>
+</defs>
+<rect width="720" height="525" fill="#fff"/>
+<g font-family="sans-serif" font-size="16" fill="#26384a">
+
+<circle cx="360" cy="258" r="235" fill="none" stroke="#697b90" stroke-width="1.7"/>
+<circle cx="360" cy="258" r="116.48" fill="none" stroke="#29729a" stroke-width="1.7"/>
+<path d="M125 258 A175.74 165.44727256742553 0 0 1 476.48 258" fill="none" stroke="#ad3c53" stroke-width="3.2"/>
+<path d="M125 258 H476.48" fill="none" stroke="#aab3bd" stroke-dasharray="6 5"/>
+<circle cx="360" cy="258" r="7" fill="#aa7431"/>
+<circle cx="125" cy="258" r="5"/><circle cx="476.48" cy="258" r="5"/>
+<text x="114" y="283">A</text>
+<text x="485" y="283">P</text>
+<text x="354" y="285">S</text>
+<text x="525" y="74" fill="#697b90">Orbite de Patientia</text>
+<text x="308" y="330" fill="#29729a">Orbite de Mars</text>
+<text x="207" y="130" fill="#ad3c53">Demi-ellipse de transfert</text>
+
+</g>
+</svg>

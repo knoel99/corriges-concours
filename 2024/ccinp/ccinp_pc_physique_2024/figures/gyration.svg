@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" role="img">
+<defs>
+<marker id="tip" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#155a86"/></marker>
+<marker id="red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#a13e25"/></marker>
+</defs>
+<rect width="660" height="300" fill="#fff"/>
+<g font-family="sans-serif" font-size="17" fill="#182835">
+<path d="M153 184 A124 124 0 0 1 270 102 A124 124 0 0 1 394 226" fill="none" stroke="#586c79" stroke-width="3"/>
+<path d="M270 102H382" fill="none" stroke="#155a86" stroke-width="3" marker-end="url(#tip)"/>
+<path d="M270 102V183" fill="none" stroke="#155a86" stroke-width="3" marker-end="url(#tip)"/>
+<path d="M270 102H328" fill="none" stroke="#a13e25" stroke-width="2" marker-end="url(#red)"/>
+<path d="M270 102V145" fill="none" stroke="#a13e25" stroke-width="2" marker-end="url(#red)"/>
+<path d="M270 183V226" stroke="#586c79" stroke-dasharray="4 6"/>
+<circle cx="270" cy="102" r="5" fill="#182835"/><circle cx="270" cy="226" r="4" fill="#586c79"/>
+<text x="390" y="99">v</text><text x="323" y="89">t</text><text x="289" y="145">n</text><text x="238" y="181">Fₘ</text>
+<text x="203" y="252">centre de courbure</text><text x="453" y="98" font-size="22">⊙ B₀ sortant</text>
+</g>
+</svg>
