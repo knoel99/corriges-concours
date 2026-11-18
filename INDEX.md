@@ -169,6 +169,7 @@
 | 2026 | Centrale-Supélec | MPI | Informatique | [md](2026/centrale-supelec/centrale-supelec_mpi_informatique_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mpi_informatique_2026/guide.md) |
 | 2026 | Centrale-Supélec | MPI | Physique-chimie 1 | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | MPI | Physique-chimie 2 | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mpi_physique-chimie-2_2026/guide.md) |
+| 2025 | Centrale-Supélec | PC | Chimie | [md](2025/centrale-supelec/centrale-supelec_pc_chimie_2025/brut.md) | [md](2025/centrale-supelec/centrale-supelec_pc_chimie_2025/guide.md) |
 | 2026 | Centrale-Supélec | PC | Chimie | [md](2026/centrale-supelec/centrale-supelec_pc_chimie_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_chimie_2026/guide.md) |
 | 2026 | Centrale-Supélec | PC | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_pc_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_maths-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | PC | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_pc_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_pc_maths-2_2026/guide.md) |
@@ -261,6 +262,7 @@
 | 2026 | Mines-Ponts | MP-MPI-PC-PSI | Français | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_francais_2026/guide.md) |
 | 2026 | Mines-Ponts | MP-MPI-PC-PSI | Langue vivante | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_langue-vivante_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp-mpi-pc-psi_langue-vivante_2026/guide.md) |
 | 2026 | Mines-Ponts | MP-PC-PSI | Informatique commune | [md](2026/mines-ponts/mines-ponts_mp-pc-psi_informatique-commune_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp-pc-psi_informatique-commune_2026/guide.md) |
+| 2025 | Mines-Ponts | MP | Chimie | [md](2025/mines-ponts/mines-ponts_mp_chimie_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_mp_chimie_2025/guide.md) |
 | 2026 | Mines-Ponts | MP | Chimie | [md](2026/mines-ponts/mines-ponts_mp_chimie_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_chimie_2026/guide.md) |
 | 2026 | Mines-Ponts | MP | Informatique | [md](2026/mines-ponts/mines-ponts_mp_informatique_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_informatique_2026/guide.md) |
 | 2026 | Mines-Ponts | MP | Maths 1 | [md](2026/mines-ponts/mines-ponts_mp_maths-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_maths-1_2026/guide.md) |
@@ -279,6 +281,7 @@
 | 2026 | Mines-Ponts | PC | Maths 2 | [md](2026/mines-ponts/mines-ponts_pc_maths-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_maths-2_2026/guide.md) |
 | 2026 | Mines-Ponts | PC | Physique 1 | [md](2026/mines-ponts/mines-ponts_pc_physique-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_physique-1_2026/guide.md) |
 | 2026 | Mines-Ponts | PC | Physique 2 | [md](2026/mines-ponts/mines-ponts_pc_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_pc_physique-2_2026/guide.md) |
+| 2025 | Mines-Ponts | PSI | Chimie | [md](2025/mines-ponts/mines-ponts_psi_chimie_2025/brut.md) | [md](2025/mines-ponts/mines-ponts_psi_chimie_2025/guide.md) |
 | 2026 | Mines-Ponts | PSI | Chimie | [md](2026/mines-ponts/mines-ponts_psi_chimie_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_chimie_2026/guide.md) |
 | 2026 | Mines-Ponts | PSI | Maths 1 | [md](2026/mines-ponts/mines-ponts_psi_maths-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_maths-1_2026/guide.md) |
 | 2026 | Mines-Ponts | PSI | Maths 2 | [md](2026/mines-ponts/mines-ponts_psi_maths-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_psi_maths-2_2026/guide.md) |
