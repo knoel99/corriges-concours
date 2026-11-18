@@ -37,7 +37,7 @@ Traiter $\mathrm{PhCOCH_2Ph}$ par le diisopropylamidure de lithium (LDA) en mili
 
 Le doublet de l’azote de la base capte un proton en alpha du carbonyle. Les électrons de C–H forment la liaison pi de l’énolate en même temps que ceux de C=O se déplacent vers O. La forme mésomère carbanionique porte le doublet nucléophile sur le carbone alpha. Ce doublet attaque le carbone carbonylé de l’éthanal pendant que le doublet pi de C=O rejoint son oxygène. L’alcoolate ainsi obtenu est protoné lors du traitement aqueux et donne $\mathrm{PhCOCH(Ph)CH(OH)CH_3}$. L’aldolisation s’arrête à la bêta-hydroxycétone.
 
-![Figure 1](figures/q3-mecanisme.svg)
+![Figure 1 — Flèches courbes du mécanisme de l’aldolisation croisée](figures/q3-mecanisme.svg)
 
 ### Question 4
 
@@ -48,7 +48,7 @@ Le doublet de l’azote de la base capte un proton en alpha du carbonyle. Les é
 
 Le borohydrure réduit la cétone en alcool secondaire. Le diol 3 possède le squelette $\mathrm{Ph{-}CH(OH){-}CH(Ph){-}CH(OH){-}CH_3}$. Les deux liaisons C–O simples correspondent à deux fonctions alcool.
 
-![Figure 2](figures/q4-diol.svg)
+![Figure 2 — Formule topologique du diol 3 sans spécification stéréochimique](figures/q4-diol.svg)
 
 ### Question 5
 
@@ -68,7 +68,7 @@ On fait réagir séparément 3a et 3b avec la propanone, en excès, sous catalys
 
 En ouvrant l’acétal, chaque oxygène lié à la chaîne carbonée devient un OH. Dans la projection ci-dessous, les deux phényles pointent vers l’observateur pour les deux composés. Le méthyle pointe vers l’arrière pour 3a et vers l’observateur pour 3b. À chaque centre, H est opposé au substituant dessiné en perspective. Les éventuels énantiomères correspondants s’obtiennent en inversant toutes les liaisons en perspective.
 
-![Figure 3](figures/figure-01.svg)
+![Figure 3 — Projections de Cram des deux diols après ouverture de l’acétal](figures/figure-01.svg)
 
 ### Question 7
 
@@ -123,7 +123,7 @@ Le site nucléophile est l’azote pyridinique. Son doublet, dans le plan du cyc
 
 Avec $\mathrm{Ar}=4\text{-méthoxyphényle}$, 7 s’écrit $\mathrm{Ar{-}CH(Ph){-}CH(Ph){-}CH(OH){-}CH_3}$. L’hydroxyde attaque le carbone acyle de l’acétate de 6 et la liaison pi migre vers O. L’oxyanion rétablit C=O, ce qui expulse l’alcoolate de 7. L’alcoolate déprotone l’acide éthanoïque formé, donnant l’alcool 7 et l’éthanoate. La formation du carboxylate rend la saponification pratiquement quantitative.
 
-![Figure 4](figures/q11-mecanisme.svg)
+![Figure 4 — Flèches courbes de l’addition-élimination puis transfert de proton](figures/q11-mecanisme.svg)
 
 ### Question 12
 
@@ -530,7 +530,7 @@ Le rapport $A_E/A_B$ vaut $(k_E/k_B)(C_{m,E}/C_{m,B})$. Les solutions sont prép
 
 L’espèce $\mathrm{GH_2^+}$ domine sous 2,2, puis le zwitterion $\mathrm{GH}$ entre 2,2 et 9,6, puis l’anion $\mathrm{G^-}$ au-dessus de 9,6. Au premier seuil le groupe COOH est déprotoné, au second le groupe ammonium. À chaque seuil, les deux formes adjacentes sont en quantités égales dans le modèle des solutions idéales diluées.
 
-![Figure 5](figures/figure-02.svg)
+![Figure 5 — Domaines de prédominance et structures topologiques des trois formes de la glycine](figures/figure-02.svg)
 
 ### Question 45
 
