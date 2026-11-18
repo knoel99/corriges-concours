@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="230" viewBox="0 0 270 230" role="img" aria-labelledby="titre">
+  <title id="titre">Cycle à quatre sommets</title>
+  <rect width="270" height="230" fill="#fff"/>
+  <path d="M72 54H198V176H72Z" fill="none" stroke="#234f76" stroke-width="2.5"/>
+  <g fill="#f3f8fc" stroke="#234f76" stroke-width="2.5">
+    <circle cx="72" cy="54" r="17"/>
+    <circle cx="198" cy="54" r="17"/>
+    <circle cx="198" cy="176" r="17"/>
+    <circle cx="72" cy="176" r="17"/>
+  </g>
+  <g fill="#172e43" font-family="Arial, Helvetica, sans-serif" font-size="17" text-anchor="middle">
+    <text x="72" y="60">1</text>
+    <text x="198" y="60">2</text>
+    <text x="198" y="182">3</text>
+    <text x="72" y="182">4</text>
+  </g>
+</svg>
