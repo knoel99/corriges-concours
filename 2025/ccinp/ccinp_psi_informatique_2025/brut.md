@@ -124,7 +124,9 @@ def alt_glissante(liste_alt, p):
     n = len(liste_alt)
     resultat = []
     for i in range(n):
-        fin = min(i + p, n)
+        fin = i + p
+        if fin > n:
+            fin = n
         total = 0.0
         for j in range(i, fin):
             total = total + liste_alt[j]
