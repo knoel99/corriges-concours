@@ -128,6 +128,7 @@
 | 2026 | CAPES | Physique | Épreuve disciplinaire (bac+5) | [md](2026/capes/capes_physique_epreuve-disciplinaire-bac-5_2026/brut.md) | [md](2026/capes/capes_physique_epreuve-disciplinaire-bac-5_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Anglais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Français-philosophie | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/guide.md) |
+| 2024 | CCINP | MP | Informatique | [md](2024/ccinp/ccinp_mp_informatique_2024/brut.md) | [md](2024/ccinp/ccinp_mp_informatique_2024/guide.md) |
 | 2026 | CCINP | MP | Informatique | [md](2026/ccinp/ccinp_mp_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_informatique_2026/guide.md) |
 | 2026 | CCINP | MP | Maths 1 | [md](2026/ccinp/ccinp_mp_maths-1_2026/brut.md) | [md](2026/ccinp/ccinp_mp_maths-1_2026/guide.md) |
 | 2026 | CCINP | MP | Maths 2 | [md](2026/ccinp/ccinp_mp_maths-2_2026/brut.md) | [md](2026/ccinp/ccinp_mp_maths-2_2026/guide.md) |
@@ -144,6 +145,7 @@
 | 2026 | CCINP | PC | Modélisation de systèmes physiques ou chimiques | [md](2026/ccinp/ccinp_pc_modelisation-de-systemes-physiques-ou-chimiques_2026/brut.md) | [md](2026/ccinp/ccinp_pc_modelisation-de-systemes-physiques-ou-chimiques_2026/guide.md) |
 | 2026 | CCINP | PC | Physique | [md](2026/ccinp/ccinp_pc_physique_2026/brut.md) | [md](2026/ccinp/ccinp_pc_physique_2026/guide.md) |
 | 2026 | CCINP | PSI | Informatique | [md](2026/ccinp/ccinp_psi_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_psi_informatique_2026/guide.md) |
+| 2024 | CCINP | PSI | Maths | [md](2024/ccinp/ccinp_psi_maths_2024/brut.md) | [md](2024/ccinp/ccinp_psi_maths_2024/guide.md) |
 | 2026 | CCINP | PSI | Maths | [md](2026/ccinp/ccinp_psi_maths_2026/brut.md) | [md](2026/ccinp/ccinp_psi_maths_2026/guide.md) |
 | 2026 | CCINP | PSI | Modélisation et ingénierie numérique | [md](2026/ccinp/ccinp_psi_modelisation-et-ingenierie-numerique_2026/brut.md) | [md](2026/ccinp/ccinp_psi_modelisation-et-ingenierie-numerique_2026/guide.md) |
 | 2026 | CCINP | PSI | Physique-chimie | [md](2026/ccinp/ccinp_psi_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_psi_physique-chimie_2026/guide.md) |
@@ -178,6 +180,7 @@
 | 2026 | Centrale-Supélec | PSI | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_psi_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_maths-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Physique-chimie 1 | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Physique-chimie 2 | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_physique-chimie-2_2026/guide.md) |
+| 2024 | Centrale-Supélec | PSI | Sciences industrielles | [md](2024/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2024/brut.md) | [md](2024/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2024/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Sciences industrielles | [md](2026/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2026/guide.md) |
 | 2026 | Centrale-Supélec | TSI | Anglais | [md](2026/centrale-supelec/centrale-supelec_tsi_anglais_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_anglais_2026/guide.md) |
 | 2026 | Centrale-Supélec | TSI | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_tsi_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_maths-1_2026/guide.md) |
@@ -265,6 +268,7 @@
 | 2026 | Mines-Ponts | MP | Informatique | [md](2026/mines-ponts/mines-ponts_mp_informatique_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_informatique_2026/guide.md) |
 | 2026 | Mines-Ponts | MP | Maths 1 | [md](2026/mines-ponts/mines-ponts_mp_maths-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_maths-1_2026/guide.md) |
 | 2026 | Mines-Ponts | MP | Maths 2 | [md](2026/mines-ponts/mines-ponts_mp_maths-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_maths-2_2026/guide.md) |
+| 2024 | Mines-Ponts | MP | Physique 1 | [md](2024/mines-ponts/mines-ponts_mp_physique-1_2024/brut.md) | [md](2024/mines-ponts/mines-ponts_mp_physique-1_2024/guide.md) |
 | 2026 | Mines-Ponts | MP | Physique 1 | [md](2026/mines-ponts/mines-ponts_mp_physique-1_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_physique-1_2026/guide.md) |
 | 2026 | Mines-Ponts | MP | Physique 2 | [md](2026/mines-ponts/mines-ponts_mp_physique-2_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_physique-2_2026/guide.md) |
 | 2026 | Mines-Ponts | MP | Sciences industrielles | [md](2026/mines-ponts/mines-ponts_mp_sciences-industrielles_2026/brut.md) | [md](2026/mines-ponts/mines-ponts_mp_sciences-industrielles_2026/guide.md) |

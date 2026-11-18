@@ -1,0 +1,33 @@
+{
+  "slug": "centrale-supelec_psi_sciences-industrielles_2024",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2024
+  },
+  "questions": 33,
+  "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
+  "figures": [
+    {
+      "fichier": "figures/q6-reponse.svg",
+      "question": "6",
+      "legende": "Figure 1 — Retour à la trajectoire à partir d’un écart positif. Le premier minimum reste dans la bande à 5 %. Les axes normalisés permettent d’utiliser le tracé pour toutes les valeurs de L et de v₀ du modèle."
+    },
+    {
+      "fichier": "figures/q12-graphe.svg",
+      "question": "12",
+      "legende": "Figure 2 — Graphe de structure du droïde. Les pivots et couples moteurs relient le châssis aux roues. Les contacts relient le sol aux roues et à la roulette arrière incluse dans le châssis."
+    },
+    {
+      "fichier": "figures/q20-bode.svg",
+      "question": "20",
+      "legende": "Figure 3 — Diagrammes de Bode asymptotiques de la boucle de lacet. Les cassures sont à 4,72 et 10 rad/s. Les axes repèrent les niveaux 0 dB et 0°. La phase exacte figure en pointillés."
+    },
+    {
+      "fichier": "figures/q24-couple.svg",
+      "question": "24",
+      "legende": "Figure 4 — Couple perturbateur signé en fonction du temps. Le couple saute à sa valeur résistante au premier contact et revient linéairement à zéro."
+    }
+  ]
+}
