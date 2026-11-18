@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 275" width="560" height="275" role="img">
+<title>Trajets optiques dans un interféromètre de Michelson</title>
+<defs><marker id="fleche" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#176891"/></marker></defs>
+<rect width="560" height="275" fill="#fff"/>
+<g fill="#152d41" font-family="sans-serif" font-size="17">
+<path d="M198 30 H318 M120 121 V191" stroke="#152d41" stroke-width="5"/>
+<text x="326" y="36">Miroir mobile</text><text x="21" y="113">Miroir fixe</text>
+<path d="M224 68 L268 112 L276 104 L232 60 Z M222 134 L274 186 L282 178 L230 126 Z" fill="#dcebf5" stroke="#607b8e" stroke-width="1.8"/>
+<path d="M230 126 L282 178" stroke="#765727" stroke-width="3"/>
+<g fill="none" stroke="#176891" stroke-width="2">
+<path d="M501 156 H126 M260 36 V231"/>
+<path d="M447 156 H393" marker-end="url(#fleche)"/>
+<path d="M235 156 H196" marker-end="url(#fleche)"/>
+<path d="M137 150 H169" marker-end="url(#fleche)"/>
+<path d="M260 80 V49" marker-end="url(#fleche)"/>
+<path d="M254 53 V78" marker-end="url(#fleche)"/>
+<path d="M260 196 V224" marker-end="url(#fleche)"/>
+</g>
+<path d="M408 207 H293 L276 173 M362 85 H273" fill="none" stroke="#607b8e" stroke-width="1.5"/>
+<text x="369" y="90">L₂ compensatrice</text><text x="365" y="229">Couche de L₁</text>
+<text x="397" y="144">Source</text><text x="221" y="252">Oculaire</text>
+<text x="22" y="225" font-size="14">Bras fixe : 3 × L₁</text><text x="22" y="247" font-size="14">Bras mobile : 1 × L₁ + 2 × L₂</text>
+</g>
+</svg>
