@@ -6,11 +6,9 @@
 
 La série de terme général $n$ diverge au sens usuel. Le problème étudie deux développements asymptotiques dans lesquels apparaît le même terme constant, puis définit une manière de comparer une somme partielle à une intégrale. Il termine par la formule d'Euler-Boole pour les sommes alternées.
 
-| Partie | Questions | Objectif et outils |
-|---|---|---|
-| A | Q1–Q20 | Extraire le terme constant d'abord par une série géométrique et des développements limités, puis par des sommes de Riemann et Taylor avec reste intégral. |
-| B | Q21–Q29 | Construire la formule d'Euler-Maclaurin par intégrations par parties, puis étudier les restes à l'infini et la constante de Ramanujan. |
-| C | Q30–Q44 | Construire une famille de polynômes normalisés par une forme linéaire continue, déterminer sa série génératrice et établir la formule d'Euler-Boole. |
+- **Partie A (Q1–Q20).** Extraire le terme constant d'abord par une série géométrique et des développements limités, puis par des sommes de Riemann et Taylor avec reste intégral.
+- **Partie B (Q21–Q29).** Construire la formule d'Euler-Maclaurin par intégrations par parties, puis étudier les restes à l'infini et la constante de Ramanujan.
+- **Partie C (Q30–Q44).** Construire une famille de polynômes normalisés par une forme linéaire continue, déterminer sa série génératrice et établir la formule d'Euler-Boole.
 
 Sur cette épreuve de quatre heures, Q1–Q2, Q5–Q9 et Q21–Q25 mobilisent des outils familiers. Il est possible de commencer la partie B sans avoir fini A. En C, Q30 et Q31 donnent un point d'entrée indépendant. Garder du temps pour vérifier les signes en Q15–Q20 et les valeurs aux bornes en Q24–Q26 et Q43–Q44.
 

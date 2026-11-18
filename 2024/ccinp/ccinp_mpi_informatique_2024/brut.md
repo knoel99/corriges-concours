@@ -12,11 +12,9 @@ On affecte chaque document au centre qui minimise sa distance $\delta$, puis on 
 
 À la troisième, ils sont $(5,1)$, $(5/3,5)$, $(5/3,5)$, $(3,1)$, $(4/3,4)$.
 
-| Itération | $c_1$ | $c_2$ | $A_1$ | $A_2$ |
-|---|---|---|---|---|
-| 1 | $(2,1,0)$ | $(1,0,1)$ | $\{d_2,d_3\}$ | $\{d_1,d_4,d_5\}$ |
-| 2 | $(1,1,0)$ | $(1,2,5/3)$ | $\{d_2,d_3,d_5\}$ | $\{d_1,d_4\}$ |
-| 3 | $(1,2/3,1/3)$ | $(1,3,2)$ | $\{d_2,d_3,d_5\}$ | $\{d_1,d_4\}$ |
+- Itération 1. Centres $c_1=(2,1,0)$ et $c_2=(1,0,1)$. Classes $A_1=\{d_2,d_3\}$ et $A_2=\{d_1,d_4,d_5\}$.
+- Itération 2. Centres $c_1=(1,1,0)$ et $c_2=(1,2,5/3)$. Classes $A_1=\{d_2,d_3,d_5\}$ et $A_2=\{d_1,d_4\}$.
+- Itération 3. Centres $c_1=(1,2/3,1/3)$ et $c_2=(1,3,2)$. Classes $A_1=\{d_2,d_3,d_5\}$ et $A_2=\{d_1,d_4\}$.
 
 **Les classes sont stabilisées à la troisième itération.**
 
@@ -24,12 +22,10 @@ On affecte chaque document au centre qui minimise sa distance $\delta$, puis on 
 
 On initialise $A_1=\{d_1\}$ et $c_1=(1,3,3)$. Le minimum de l’étape (iii) porte sur les $j$ centres existants. La borne $k<i$ engloberait des centres inexistants dès que $j<i-1$.
 
-| Document | Distances aux centres avant l’affectation | Toutes $>5$ ? | Classe après l’affectation | Nouveau centre de cette classe |
-|---|---|---|---|---|
-| $d_2$ | $6$ | Oui | $A_2=\{d_2\}$ (création) | $(2,1,0)$ |
-| $d_3$ | $6,2$ | Non | $A_2=\{d_2,d_3\}$ | $(1,1,0)$ |
-| $d_4$ | $2,3$ | Non | $A_1=\{d_1,d_4\}$ | $(1,3,2)$ |
-| $d_5$ | $4,2$ | Non | $A_2=\{d_2,d_3,d_5\}$ | $(1,2/3,1/3)$ |
+- $d_2$. Distances avant affectation $6$. Toutes strictement supérieures à 5 ? Oui. Classe $A_2=\{d_2\}$ (création), nouveau centre $(2,1,0)$.
+- $d_3$. Distances avant affectation $6,2$. Toutes strictement supérieures à 5 ? Non. Classe $A_2=\{d_2,d_3\}$, nouveau centre $(1,1,0)$.
+- $d_4$. Distances avant affectation $2,3$. Toutes strictement supérieures à 5 ? Non. Classe $A_1=\{d_1,d_4\}$, nouveau centre $(1,3,2)$.
+- $d_5$. Distances avant affectation $4,2$. Toutes strictement supérieures à 5 ? Non. Classe $A_2=\{d_2,d_3,d_5\}$, nouveau centre $(1,2/3,1/3)$.
 
 **Chaque ligne modifie uniquement la classe indiquée et son centre.**
 
@@ -197,12 +193,10 @@ $$
 
 Les autres classes sont les singletons des mots suivants.
 
-| Nombre de $c$ | Mots dont la classe est un singleton |
-|---|---|
-| $0$ | $aaa,bbb$ |
-| $1$ | $aac,bbc,caa,cbb,aca,acb,bca,bcb$ |
-| $2$ | $acc,bcc,cac,cbc,cca,ccb$ |
-| $3$ | $ccc$ |
+- Nombre de lettres $c$ égal à $0$ · $aaa,bbb$.
+- Nombre de lettres $c$ égal à $1$ · $aac,bbc,caa,cbb,aca,acb,bca,bcb$.
+- Nombre de lettres $c$ égal à $2$ · $acc,bcc,cac,cbc,cca,ccb$.
+- Nombre de lettres $c$ égal à $3$ · $ccc$.
 
 On compte ainsi **21 classes et 27 mots**.
 
@@ -246,11 +240,9 @@ On part de $A$. Les états finaux sont $A$ et $B$.
 
 L’état $A$ signifie que le bloc courant ne contient pas de $b$, $B$ qu’on a vu un $b$ dans ce bloc, et $P$ qu’une inversion a été rencontrée.
 
-| État | $a$ | $b$ | $c$ |
-|---|---|---|---|
-| $A$ (initial et final) | $A$ | $B$ | $A$ |
-| $B$ (final) | $P$ | $B$ | $A$ |
-| $P$ | $P$ | $P$ | $P$ |
+- $A$ (initial et final). Sur `a`, $A$. Sur `b`, $B$. Sur `c`, $A$.
+- $B$ (final). Sur `a`, $P$. Sur `b`, $B$. Sur `c`, $A$.
+- $P$. Sur `a`, $P$. Sur `b`, $P$. Sur `c`, $P$.
 
 **L’automate est déterministe, complet et accepte exactement $L$.**
 
@@ -360,10 +352,8 @@ Le test des suites nulles doit précéder l’application du théorème 1. Dans 
 
 Sur $[5]$, considérons les ensembles d’arêtes suivants, en notant $ij$ l’arête $\{i,j\}$.
 
-| Graphe | Arêtes |
-|---|---|
-| $G_1$ | $12,13,15,24,34$ |
-| $G_2$ | $12,13,14,23,45$ |
+- $G_1$ a pour arêtes $12,13,15,24,34$.
+- $G_2$ a pour arêtes $12,13,14,23,45$.
 
 Dans chaque graphe, les sommets $1$ à $5$ ont respectivement les degrés **$(3,2,2,2,1)$**. Le premier graphe ne contient aucun triangle, le second contient le triangle $1,2,3$. Ils sont donc même non isomorphes.
 
@@ -492,16 +482,14 @@ Ces deux règles sont inverses l’une de l’autre et la différence d’une un
 
 #### Question 34
 
-Pour chaque colonne de $\mathcal B_G$, on insère $v_i$ et on utilise les coordonnées de la case effectivement créée en bout de course, puis on place $u_i$ dans la case opposée. Dans la dernière colonne du tableau suivant, chaque liste représente une ligne du tableau de Young.
+Pour chaque colonne de $\mathcal B_G$, on insère $v_i$ et on utilise les coordonnées de la case effectivement créée en bout de course, puis on place $u_i$ dans la case opposée. Pour chaque étape ci-dessous, les listes entre crochets représentent les lignes du tableau de Young.
 
-| $i$ | $(u_i,v_i)$ | Valeurs déplacées, dans l’ordre | Case créée | Case opposée | Lignes du tableau après les deux ajouts |
-|---|---|---|---|---|---|
-| 1 | $(2,1)$ | aucune | $(1,1)$ | $(2,1)$ | `[1] [2]` |
-| 2 | $(4,1)$ | aucune | $(1,2)$ | $(3,1)$ | `[1,1] [2] [4]` |
-| 3 | $(5,3)$ | aucune | $(1,3)$ | $(4,1)$ | `[1,1,3] [2] [4] [5]` |
-| 4 | $(5,2)$ | $3$ | $(2,2)$ | $(3,2)$ | `[1,1,2] [2,3] [4,5] [5]` |
-| 5 | $(6,5)$ | aucune | $(1,4)$ | $(5,1)$ | `[1,1,2,5] [2,3] [4,5] [5] [6]` |
-| 6 | $(6,3)$ | $5$ | $(2,3)$ | $(4,2)$ | `[1,1,2,3] [2,3,5] [4,5] [5,6] [6]` |
+- Étape 1, couple $(2,1)$. Valeurs déplacées dans l’ordre · aucune. Case créée $(1,1)$, case opposée $(2,1)$. Lignes du tableau après les deux ajouts · `[1] [2]`.
+- Étape 2, couple $(4,1)$. Valeurs déplacées dans l’ordre · aucune. Case créée $(1,2)$, case opposée $(3,1)$. Lignes du tableau après les deux ajouts · `[1,1] [2] [4]`.
+- Étape 3, couple $(5,3)$. Valeurs déplacées dans l’ordre · aucune. Case créée $(1,3)$, case opposée $(4,1)$. Lignes du tableau après les deux ajouts · `[1,1,3] [2] [4] [5]`.
+- Étape 4, couple $(5,2)$. Valeurs déplacées dans l’ordre · $3$. Case créée $(2,2)$, case opposée $(3,2)$. Lignes du tableau après les deux ajouts · `[1,1,2] [2,3] [4,5] [5]`.
+- Étape 5, couple $(6,5)$. Valeurs déplacées dans l’ordre · aucune. Case créée $(1,4)$, case opposée $(5,1)$. Lignes du tableau après les deux ajouts · `[1,1,2,5] [2,3] [4,5] [5] [6]`.
+- Étape 6, couple $(6,3)$. Valeurs déplacées dans l’ordre · $5$. Case créée $(2,3)$, case opposée $(4,2)$. Lignes du tableau après les deux ajouts · `[1,1,2,3] [2,3,5] [4,5] [5,6] [6]`.
 
 **Le dernier tableau coïncide avec celui de l’énoncé.**
 
