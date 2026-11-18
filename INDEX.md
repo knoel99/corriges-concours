@@ -134,8 +134,11 @@
 | 2026 | CCINP | MP | Physique-chimie | [md](2026/ccinp/ccinp_mp_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_mp_physique-chimie_2026/guide.md) |
 | 2026 | CCINP | MP | Physique | [md](2026/ccinp/ccinp_mp_physique_2026/brut.md) | [md](2026/ccinp/ccinp_mp_physique_2026/guide.md) |
 | 2026 | CCINP | MP | Sciences industrielles | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/brut.md) | [md](2026/ccinp/ccinp_mp_sciences-industrielles_2026/guide.md) |
+| 2025 | CCINP | MPI | Informatique | [md](2025/ccinp/ccinp_mpi_informatique_2025/brut.md) | [md](2025/ccinp/ccinp_mpi_informatique_2025/guide.md) |
 | 2026 | CCINP | MPI | Informatique | [md](2026/ccinp/ccinp_mpi_informatique_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_informatique_2026/guide.md) |
+| 2025 | CCINP | MPI | Maths 1 | [md](2025/ccinp/ccinp_mpi_maths-1_2025/brut.md) | [md](2025/ccinp/ccinp_mpi_maths-1_2025/guide.md) |
 | 2026 | CCINP | MPI | Maths 1 | [md](2026/ccinp/ccinp_mpi_maths-1_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_maths-1_2026/guide.md) |
+| 2025 | CCINP | MPI | Maths 2 | [md](2025/ccinp/ccinp_mpi_maths-2_2025/brut.md) | [md](2025/ccinp/ccinp_mpi_maths-2_2025/guide.md) |
 | 2026 | CCINP | MPI | Maths 2 | [md](2026/ccinp/ccinp_mpi_maths-2_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_maths-2_2026/guide.md) |
 | 2026 | CCINP | MPI | Physique-chimie | [md](2026/ccinp/ccinp_mpi_physique-chimie_2026/brut.md) | [md](2026/ccinp/ccinp_mpi_physique-chimie_2026/guide.md) |
 | 2026 | CCINP | PC | Chimie | [md](2026/ccinp/ccinp_pc_chimie_2026/brut.md) | [md](2026/ccinp/ccinp_pc_chimie_2026/guide.md) |
@@ -160,6 +163,7 @@
 | 2026 | CCINP | TSI | Sciences industrielles | [md](2026/ccinp/ccinp_tsi_sciences-industrielles_2026/brut.md) | [md](2026/ccinp/ccinp_tsi_sciences-industrielles_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI-PC-PSI | Anglais | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_anglais_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_anglais_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI-PC-PSI | Rédaction | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_redaction_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi_redaction_2026/guide.md) |
+| 2025 | Centrale-Supélec | MP-MPI | Maths 1 | [md](2025/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2025/brut.md) | [md](2025/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2025/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP-MPI | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi_maths-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | MP | Informatique | [md](2026/centrale-supelec/centrale-supelec_mp_informatique_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp_informatique_2026/guide.md) |
