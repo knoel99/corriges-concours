@@ -1,0 +1,42 @@
+{
+  "slug": "douanes_agent-de-constatation-externe-surveillance_cas-pratique---concours-commun-de-categorie-c_2025",
+  "epreuve": {
+    "concours": "Douanes",
+    "filiere": "Agent de constatation externe surveillance",
+    "matiere": "Cas pratique - Concours commun de catégorie C",
+    "annee": 2025
+  },
+  "questions": 14,
+  "redaction": "IA, Codex (OpenAI), rédaction et autocontrôle.",
+  "figures": [
+    {
+      "fichier": "figures/apprentissage.svg",
+      "question": "II.1 a",
+      "legende": "Nouveaux contrats d’apprentissage, ensemble des trois versants."
+    },
+    {
+      "fichier": "figures/recrutements.svg",
+      "question": "II.2 a",
+      "legende": "Effectifs inscrits et présents, et postes offerts en 2021 et 2022."
+    }
+  ],
+  "sujet_url": "https://www.economie.gouv.fr/files/files/directions_services/rejoignez-nous/DGFiP/recrutement-par-concours/categorie-C_brevet/Concours_Commun_C/2026_05_ccc_admissibilite_metropole2025.pdf",
+  "code_sujet": "J. 25 1262",
+  "revision": {
+    "date": "2026-11-21",
+    "modele": "Codex",
+    "verification": "Lecture des onze documents du fonds et du rapport de jury 2025 de la branche surveillance, inspection visuelle des graphiques et tableaux du document 2, recalcul indépendant des écarts et des quotients.",
+    "relecture_independante": {
+      "date": "2026-11-21",
+      "modele": "Codex",
+      "verification": "Un deuxième agent a comparé les deux graphiques originaux et leurs axes, légendes, sources et valeurs aux figures des pages 7 et 8 du sujet. Pour les deux copies, il a recalculé indépendamment les écarts relatifs entre les extrêmes des trois catégories en II.2 c, avec le minimum puis le maximum pour dénominateur."
+    }
+  },
+  "rapport_jury_url": "https://www.economie.gouv.fr/files/files/directions_services/rejoignez-nous/DGFiP/recrutement-par-concours/categorie-C_brevet/Concours_Commun_C/2026_05_ccc_rapport_jury_2025_surveillance.pdf",
+  "source_pages": {
+    "consignes": "3–4",
+    "documents": "6–20",
+    "rapport_jury": "7–8"
+  },
+  "sujet_sha256": "39ae46e8c1611a5a570fe3ec2fcd25aff190795ac43905f5cce48d715ef244b2"
+}
