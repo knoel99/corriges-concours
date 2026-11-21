@@ -11,7 +11,7 @@
     "provider": "codex",
     "model": "GPT-6"
   },
-  "redaction": "Rédaction originale par un agent Codex, famille GPT-6.",
+  "redaction": "Rédaction originale par un agent Codex, famille GPT-6. Relecture indépendante par un second agent IA sur le sujet officiel.",
   "source": {
     "sujet": [
       "https://www.olympiades-chimie.fr/app/uploads/2025/07/epreuve-collaborative-2025-sujet-06.05.25.pdf"
@@ -23,5 +23,6 @@
       "question": "1",
       "legende": "Organisation schématique de la prothèse de course et fonction de ses quatre pièces."
     }
-  ]
+  ],
+  "date_revision": "2026-11-21"
 }
