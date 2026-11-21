@@ -1,0 +1,54 @@
+name: Signaler une erreur
+description: Une coquille, un calcul faux ou une démonstration incomplète dans un corrigé.
+title: "[erreur] "
+labels: ["erreur"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de signaler l'erreur. Le slug de l'épreuve figure dans l'adresse de sa fiche :
+        `https://sujet-corriges.ai/epreuves/<slug>`. Pour corriger vous-même, voir
+        [CONTRIBUTING.md](https://github.com/knoel99/corriges-concours/blob/master/CONTRIBUTING.md).
+  - type: input
+    id: epreuve
+    attributes:
+      label: Épreuve (slug)
+      description: Le slug de l'épreuve, tel qu'il apparaît dans l'adresse de la fiche ou dans INDEX.md.
+      placeholder: ccinp_mp_physique_2026
+    validations:
+      required: true
+  - type: input
+    id: lien
+    attributes:
+      label: Lien vers la fiche
+      description: L'adresse de la fiche sur sujet-corriges.ai.
+      placeholder: https://sujet-corriges.ai/epreuves/ccinp_mp_physique_2026
+    validations:
+      required: false
+  - type: dropdown
+    id: document
+    attributes:
+      label: Document concerné
+      options:
+        - Corrigé brut
+        - Corrigé guidé
+        - Autre
+    validations:
+      required: false
+  - type: input
+    id: question
+    attributes:
+      label: Numéro de question
+      description: La numérotation du sujet (partie, question).
+      placeholder: "II.3.b"
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Ce qui ne va pas
+      description: >-
+        Décrivez l'erreur et, si possible, la correction attendue. Indiquez la référence au
+        sujet ou au rapport du jury (page, question) plutôt que d'en recopier de longs passages.
+    validations:
+      required: true

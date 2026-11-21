@@ -1,0 +1,47 @@
+name: Proposer ou réserver un corrigé
+description: >-
+  Annoncer que vous rédigez ou relisez le corrigé d'une épreuve. Un mainteneur confirme la
+  réservation en vous assignant l'issue ; le dépôt se fait ensuite par pull request, selon
+  CONTRIBUTING.md.
+title: "[corrigé] "
+labels: ["corrigé"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La réservation n'est acquise qu'une fois l'issue **assignée** par un mainteneur, ce qui
+        évite que deux personnes travaillent sur la même épreuve. Le corrigé (`brut.md` et
+        `guide.md`) se dépose ensuite par **pull request**, selon
+        [CONTRIBUTING.md](https://github.com/knoel99/corriges-concours/blob/master/CONTRIBUTING.md).
+  - type: input
+    id: epreuve
+    attributes:
+      label: Épreuve (slug)
+      description: Le slug de l'épreuve, tel qu'il apparaît dans l'adresse de la fiche ou dans INDEX.md.
+      placeholder: ccinp_mp_physique_2026
+    validations:
+      required: true
+  - type: input
+    id: lien
+    attributes:
+      label: Lien vers la fiche
+      description: L'adresse de la fiche sur sujet-corriges.ai.
+      placeholder: https://sujet-corriges.ai/epreuves/ccinp_mp_physique_2026
+    validations:
+      required: false
+  - type: dropdown
+    id: intention
+    attributes:
+      label: Intention
+      options:
+        - Je rédige le corrigé
+        - Je relis le corrigé existant
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Précisions
+      description: Facultatif. Parties couvertes, délai envisagé, questions pour les mainteneurs.
+    validations:
+      required: false
