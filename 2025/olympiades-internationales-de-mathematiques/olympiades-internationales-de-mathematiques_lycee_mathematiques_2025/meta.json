@@ -1,0 +1,48 @@
+{
+  "slug": "olympiades-internationales-de-mathematiques_lycee_mathematiques_2025",
+  "epreuve": {
+    "concours": "Olympiades internationales de mathématiques",
+    "filiere": "Lycée",
+    "matiere": "Mathématiques",
+    "annee": 2025
+  },
+  "questions": 6,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Solutions originales rédigées par des agents GPT-6, avec relecture mathématique croisée sur le sujet officiel français et comparaison avec le recueil officiel des problèmes présélectionnés.",
+  "source": {
+    "sujet": [
+      "https://www.imo-official.org/assets/documents/problems/2025/2025_fre.pdf"
+    ],
+    "solutions_de_reference": [
+      {
+        "url": "https://www.imo-official.org/assets/documents/problems/2025/IMO2025SL.pdf",
+        "problemes": [
+          "C1",
+          "G4",
+          "N7",
+          "N3",
+          "A3",
+          "C8"
+        ]
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/tangence.svg",
+      "question": "2",
+      "legende": "Le point T du parallélogramme AMTN, le rayon OT et la tangente passant par H. Seul le cercle de centre O est représenté.",
+      "outil": "schematic-figure (lgwrightlab), dessin vectoriel calculé à partir de la démonstration"
+    },
+    {
+      "fichier": "figures/pavage-k3.svg",
+      "question": "6",
+      "legende": "Construction pour k = 3 après suppression de la ligne et de la colonne zéro. Les douze tuiles sont numérotées. Les neuf croix marquent les cases libres.",
+      "outil": "schematic-figure (lgwrightlab), dessin vectoriel calculé à partir de la démonstration"
+    }
+  ],
+  "date_revision": "2026-11-21"
+}
