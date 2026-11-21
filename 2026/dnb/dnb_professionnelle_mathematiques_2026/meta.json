@@ -1,0 +1,22 @@
+{
+  "slug": "dnb_professionnelle_mathematiques_2026",
+  "epreuve": {
+    "concours": "DNB",
+    "filiere": "Professionnelle",
+    "matiere": "Mathématiques",
+    "annee": 2026
+  },
+  "questions": 29,
+  "redaction": "IA (Codex GPT-6.2-sol), relue sur le sujet officiel au cours de la rédaction",
+  "figures": [
+    {
+      "fichier": "figures/bassin.svg",
+      "question": "Exercice 2, question 1",
+      "legende": "Coupe du bassin montrant les 2,6 m d’eau et les 0,2 m restants"
+    }
+  ],
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-sol"
+  }
+}
