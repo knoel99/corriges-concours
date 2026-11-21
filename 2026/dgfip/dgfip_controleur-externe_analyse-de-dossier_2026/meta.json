@@ -1,0 +1,39 @@
+{
+  "slug": "dgfip_controleur-externe_analyse-de-dossier_2026",
+  "epreuve": {
+    "concours": "DGFiP",
+    "filiere": "Contrôleur externe",
+    "matiere": "Analyse de dossier",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "IA (Codex, famille GPT-6). Rédaction et confrontation aux sept pièces du sujet et au rapport du jury 2026. Relecture indépendante des trois réponses par un second agent IA, puis vérification des pourcentages dans le graphique de l’ONISR.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6 (variante non identifiée)"
+  },
+  "sources": {
+    "sujet": "https://rejoindrelesfinancespubliques.economie.gouv.fr/files/files/concours/Annales/2026_B_ADM_Epreuve01_AD.pdf",
+    "sujet_pages_pdf": [
+      4,
+      25
+    ],
+    "sujet_sha256": "7ce2712a49bec32f1c047c84ce1d3b39fa136ca451d77c0de5233e94acc30774",
+    "rapport_jury": "https://www.economie.gouv.fr/files/files/directions_services/rejoignez-nous/DGFiP/recrutement-par-concours/categorie-B_bac/controleur-finances-publiques/2026_08_contr_ext_rapp_jury.pdf?v=1786543269",
+    "rapport_pages_pdf": [
+      6
+    ],
+    "rapport_sha256": "75ba628fa06270e567491652798b80a159e382357e02d1c317b6c35724f98dfb"
+  },
+  "consignes": {
+    "duree_minutes": 180,
+    "coefficient": 4,
+    "pages_max_par_reponse": [
+      1,
+      2,
+      2
+    ]
+  },
+  "date_revision": "2026-11-21",
+  "figures": []
+}

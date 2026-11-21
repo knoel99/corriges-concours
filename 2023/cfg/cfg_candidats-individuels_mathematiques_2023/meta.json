@@ -1,0 +1,35 @@
+{
+  "slug": "cfg_candidats-individuels_mathematiques_2023",
+  "epreuve": {
+    "concours": "CFG",
+    "filiere": "Candidats individuels",
+    "matiere": "Mathématiques",
+    "annee": 2023
+  },
+  "questions": 26,
+  "redaction": "IA, Codex (OpenAI), rédaction et autocontrôle.",
+  "figures": [
+    {
+      "fichier": "figures/licencies.svg",
+      "question": "4.3",
+      "legende": "Barre complétée à 660 000 licenciés."
+    },
+    {
+      "fichier": "figures/lancer.svg",
+      "question": "5.2–5.4",
+      "legende": "Construction achevée, sans échelle."
+    }
+  ],
+  "sujet_url": "https://pedagogie.ac-strasbourg.fr/fileadmin/pedagogie/mathematiques/College/Examen/CFG/Sujet_CFG_maths_novembre_2023.pdf",
+  "code_sujet": "2311CFGMAT-1",
+  "revision": {
+    "date": "2026-11-21",
+    "modele": "Codex",
+    "verification": "Contrôle des huit pages du sujet, lecture visuelle du diagramme et du schéma, vérification arithmétique des résultats et des vingt-six réponses.",
+    "relecture_independante": {
+      "date": "2026-11-21",
+      "modele": "Codex",
+      "verification": "Un deuxième agent Codex a repris indépendamment les calculs, les sept exercices et les deux tracés à partir du PDF. La lecture des cinq hauteurs, la mesure approchée de l’angle du dessin et les conversions ont été vérifiées."
+    }
+  }
+}

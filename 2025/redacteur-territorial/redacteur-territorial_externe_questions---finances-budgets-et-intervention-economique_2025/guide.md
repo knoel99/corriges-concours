@@ -1,0 +1,95 @@
+# Rédacteur territorial externe — Finances, budgets et intervention économique 2025 · Corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+## Présentation du sujet
+
+Écrit externe de trois heures, coefficient 1, portant sur le droit budgétaire et financier des collectivités en 2025. Les questions 1 et 2 valent quatre points chacune et appellent une réponse structurée ; les six suivantes valent deux points chacune. Une répartition possible est de réserver environ trente minutes à chacune des deux premières, quinze à dix-huit minutes à chacune des autres et le reste à la relecture. Pour les questions sur la reddition des comptes, raisonner à la date du concours.
+
+### Question 1 (4 points)
+
+> [!INDICATION]
+> Quel document prépare le débat ? Qui le produit, quelles informations doit-il donner et qu’autorise la délibération qui en prend acte ?
+
+#### Solution
+
+**Une étape obligatoire de préparation du budget.** Le débat d’orientation budgétaire permet à l’assemblée délibérante de discuter des priorités, des marges de financement et des engagements futurs avant le vote du budget primitif. L’exécutif en prend l’initiative et remet aux élus un rapport d’orientation budgétaire. En 2025, cette obligation vise notamment les communes d’au moins 3 500 habitants, les départements, les régions et les groupements auxquels s’appliquent ces règles. Une commune de moins de 3 500 habitants peut organiser ce débat volontairement.
+
+**Du rapport à la décision.** Le rapport expose les hypothèses d’évolution des recettes et des dépenses, les engagements pluriannuels envisagés ainsi que la structure et la gestion de la dette. Il permet, par exemple, d’apprécier si l’épargne disponible restera suffisante pour financer un équipement. Dans les communes de plus de 10 000 habitants, il détaille aussi la structure et l’évolution des dépenses et des effectifs, notamment les dépenses de personnel, les rémunérations, les avantages en nature et le temps de travail.
+
+La séance précède celle où le budget est examiné. Pour une commune assujettie appliquant le cadre budgétaire M57, la présentation intervient au cours des **dix semaines précédentes**. L’article L. 2312-1 du CGCT, dans sa rédaction applicable en 2025, fixe à deux mois le délai communal de droit commun ; le régime M57 explique la différence. Le rapport fait l’objet des transmissions et de la publicité prévues. Une délibération spécifique prend acte de la tenue du débat. **Les orientations débattues guident la préparation du budget ; l’autorisation de dépenser résultera du vote du budget lui-même.**
+
+> [!METHODE]
+> Construire la réponse autour du calendrier : rapport communiqué en amont, débat, puis autorisation budgétaire lors d’une autre séance.
+
+### Question 2 (4 points)
+
+> [!INDICATION]
+> Distingue la destination du capital emprunté, la section qui paie les intérêts et les ressources qui serviront à rembourser le capital.
+
+#### Solution
+
+**Financer un investissement.** Une collectivité peut emprunter pour compléter l’autofinancement et les subventions nécessaires à des dépenses d’investissement. Un emprunt peut, par exemple, répartir sur plusieurs exercices le financement d’un bâtiment à longue durée d’utilisation. Son produit constitue une recette de la section d’investissement. La collectivité ne peut donc pas emprunter pour payer les salaires, équilibrer son fonctionnement ou couvrir un déficit courant. Une ligne de trésorerie répond à un décalage momentané d’encaissements et de décaissements et relève d’une autre logique.
+
+**Décider et garantir la soutenabilité.** L’assemblée vote les prévisions budgétaires et décide de l’emprunt. L’exécutif peut contracter dans les limites d’une délégation régulièrement consentie. Il faut comparer le coût total et les risques des offres, notamment sur les taux et la durée, au regard de l’épargne et des engagements existants. Les intérêts constituent une dépense de fonctionnement ; le remboursement du capital est une dépense d’investissement. L’article L. 1612-4 du CGCT exige un équilibre sincère de chaque section et que les ressources propres d’investissement, avec les ressources de fonctionnement transférées et les dotations prévues, couvrent le capital des annuités exigibles, hors produit des emprunts nouveaux. **Une collectivité qui ne dégage plus les ressources requises ne peut rétablir son équilibre réel en inscrivant un nouvel emprunt.** Une opération de refinancement d’une dette existante doit être distinguée du financement ordinaire de l’annuité.
+
+> [!METHODE]
+> Vérifier une réponse sur le budget d’un équipement : emprunt à l’investissement, intérêts au fonctionnement, capital à l’investissement.
+
+### Question 3 (2 points)
+
+> [!INDICATION]
+> Identifie d’abord l’autorité compétente pour le régime d’aide, puis les limites qui s’appliquent à une aide économique.
+
+#### Solution
+
+**Oui.** L’article L. 1511-2 du CGCT confie en principe au conseil régional la définition des régimes d’aides aux entreprises et la décision d’attribution sur son territoire. Une entreprise privée qui satisfait aux conditions du régime peut ainsi recevoir une subvention ou une avance remboursable pour un projet de développement. La décision doit répondre à un intérêt économique public, respecter les règles du dispositif et le droit européen des aides d’État, par exemple un régime d’exemption ou le règlement de minimis lorsqu’il est applicable. Les aides à l’immobilier d’entreprise répondent à une répartition de compétence particulière : le bloc communal en a en principe l’initiative et la région peut participer par convention. Une entreprise ne bénéficie donc pas d’un droit automatique à un versement.
+
+### Question 4 (2 points)
+
+> [!INDICATION]
+> Compare les auteurs et l’objet des comptes. À quelle étape de l’année budgétaire leurs chiffres sont-ils rapprochés ?
+
+#### Solution
+
+Dans le régime à deux comptes encore applicable en 2025 aux collectivités n’ayant pas adopté le compte financier unique, **le compte administratif est dressé par l’ordonnateur**. Il rapproche les prévisions et autorisations du budget des titres de recettes et mandats de dépenses émis, retrace les résultats des sections et présente les restes à réaliser. **Le compte de gestion est établi par le comptable public**. Il reprend à la fois les opérations budgétaires et la comptabilité générale, notamment les comptes de tiers, le patrimoine et la trésorerie. Le comptable transmet son compte au plus tard le 1er juin de l’année suivante. L’assemblée vérifie la concordance des résultats, arrête les comptes au plus tard le 30 juin ; dans la commune, le maire se retire au moment du vote de son compte administratif. Pour les collectivités ayant basculé au CFU, un seul document retrace les informations produites par les deux acteurs. La généralisation vise les comptes de l’exercice 2026.
+
+### Question 5 (2 points)
+
+> [!INDICATION]
+> Qui peut être personnellement sanctionné pour une infraction financière ? Distingue le seuil de gravité applicable à la faute de gestion des autres infractions.
+
+#### Solution
+
+Depuis le 1er janvier 2023, les gestionnaires publics justiciables, notamment les ordonnateurs administratifs et les comptables publics, relèvent d’un régime juridictionnel unifié pour les infractions financières prévues par le code des juridictions financières. Il a remplacé notamment l’ancienne responsabilité personnelle et pécuniaire des comptables et la Cour de discipline budgétaire et financière. Ainsi, une infraction aux règles d’exécution des recettes ou des dépenses ou de gestion des biens devient sanctionnable sur le fondement de l’article L. 131-9 si une **faute grave** a causé un **préjudice financier significatif**. D’autres infractions, comme la gestion de fait, obéissent à leurs propres conditions. Les élus locaux sont en principe exclus pour les actes accomplis dans leurs fonctions. Les exceptions prévues par la loi comprennent notamment la gestion de fait et certaines inexécutions de décisions de justice. La chambre du contentieux de la Cour des comptes peut prononcer une amende personnelle proportionnée. L’appel relève de la Cour d’appel financière et la cassation du Conseil d’État.
+
+### Question 6 (2 points)
+
+> [!INDICATION]
+> Sépare la durée de l’autorisation de payer d’une dépense et la durée du projet auquel elle se rapporte.
+
+#### Solution
+
+**Le budget prévoit et autorise les recettes et dépenses pour un exercice**, du 1er janvier au 31 décembre. L’assemblée renouvelle donc chaque année son autorisation ; chaque exercice donne lieu à une reddition des comptes. Cette règle admet des aménagements. Une autorisation de programme peut fixer le plafond des engagements d’un investissement sur plusieurs années, tandis que les crédits de paiement votés chaque année limitent les paiements de l’exercice. Certains restes à réaliser d’investissement sont repris au budget suivant. Enfin, la journée complémentaire permet, dans des limites précises, de clore en janvier certaines opérations de fonctionnement rattachées à l’exercice écoulé. Elle n’ouvre pas un nouveau mois pour engager librement des dépenses au titre de cet exercice.
+
+### Question 7 (2 points)
+
+> [!INDICATION]
+> Demande-toi si le service possède une personnalité morale distincte et quelle assemblée vote le budget.
+
+#### Solution
+
+**Le budget annexe** isole les opérations d’un service de la même personne morale. Il rend ses coûts et ses recettes identifiables et fait l’objet d’un vote distinct de l’assemblée de rattachement. C’est le cas, par exemple, d’un service d’eau exploité en régie dotée de la seule autonomie financière. **Le budget autonome** appartient à une personne morale distincte, par exemple un centre communal d’action sociale ou une régie personnalisée. Son propre organe délibérant vote le budget. Un financement ou une subvention par la commune ne fait pas disparaître cette personnalité. L’autonomie financière d’un service, à elle seule, ne suffit donc pas à caractériser un budget autonome en ce sens.
+
+### Question 8 (2 points)
+
+> [!INDICATION]
+> Choisis deux dépenses rendues nécessaires par un texte ou une dette exigible et deux actions communales dont la création est laissée à l’initiative des élus.
+
+#### Solution
+
+**Dépenses obligatoires.** La commune doit inscrire les crédits nécessaires au paiement de la rémunération due à ses agents et à l’entretien des écoles élémentaires publiques dont elle a la charge. En cas d’omission ou d’insuffisance, la procédure d’inscription d’office peut être engagée dans les conditions du CGCT. **Dépenses facultatives.** Le conseil municipal peut décider d’organiser un festival culturel communal ou d’accorder une subvention à une association sportive locale pour une action d’intérêt communal. Il conserve au départ la faculté de mettre en place ces actions ; les dépenses doivent demeurer légales, budgétées et justifiées par un intérêt public local. Une dette déjà contractée et devenue exigible doit, elle, être honorée.
+
+## Bilan
+
+Les mêmes distinctions permettent de traiter plusieurs questions : préparation du budget et vote, fonctionnement et investissement, ordonnateur et comptable, autonomie financière et personnalité morale. En cas de réforme, dater le dispositif avant de définir le document ou la juridiction.
