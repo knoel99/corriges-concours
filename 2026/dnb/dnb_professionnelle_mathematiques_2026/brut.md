@@ -26,7 +26,7 @@ $2/5=40/100=40\,\%$.
 
 ### Question 6
 
-**Situation 1**. L’inclinaison descendante est compatible avec un coefficient négatif.
+**Situation 1**. C’est la seule droite qui passe par l’origine. Elle correspond à un coefficient négatif.
 
 ### Question 7
 
@@ -80,7 +80,7 @@ $400/5=80$ m³.
 
 ### Question 5
 
-Les traits de lecture conduisent à 48 m³ versés. Le bassin contient alors $320+48=368$ m³, donc il n’a pas retrouvé ses 400 m³.
+Depuis $(12\,;\,0)$, trace une verticale jusqu’à la droite en $(12\,;\,48)$, puis une horizontale jusqu’à l’axe des volumes en $(0\,;\,48)$. On lit 48 m³ versés. Le bassin contient alors $320+48=368$ m³, donc il n’a pas retrouvé ses 400 m³.
 
 ### Question 6
 

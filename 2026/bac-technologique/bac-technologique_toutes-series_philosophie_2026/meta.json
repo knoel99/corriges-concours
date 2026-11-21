@@ -1,0 +1,25 @@
+{
+  "slug": "bac-technologique_toutes-series_philosophie_2026",
+  "epreuve": {
+    "concours": "Bac technologique",
+    "filiere": "Toutes séries",
+    "matiere": "Philosophie",
+    "annee": 2026
+  },
+  "questions": 11,
+  "detail_questions": "Deux dissertations au choix et neuf questions de l’option 1 du troisième sujet (A1–A4, B1–B3, C1–C2). L’option 2 du troisième sujet, aussi traitée, est une rédaction alternative sur le même texte. Une seule copie est demandée au candidat.",
+  "redaction": "IA (Codex, famille GPT-6). Rédaction puis contrôle sur le PDF candidat officiel par le même agent. Aucun corrigé officiel ni relecture indépendante utilisés.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6 (variante non identifiée)"
+  },
+  "source": {
+    "sujet_officiel": "https://www.education.gouv.fr/sites/default/files/document/baccalaureat-technologique-2026-philosophie-517490.pdf",
+    "code_sujet": "26-PHTEME1",
+    "date_epreuve": "2026-06-15",
+    "pages": "p. 1 : consignes ; p. 2 : trois sujets et texte ; p. 3 : deux modalités et neuf questions",
+    "zone": "Métropole, La Réunion, Mayotte",
+    "sha256": "d29348520cebbeff55ae7b97fcdd94f829cbd33d6e6e79123a874b7a7a77aaac"
+  },
+  "figures": []
+}

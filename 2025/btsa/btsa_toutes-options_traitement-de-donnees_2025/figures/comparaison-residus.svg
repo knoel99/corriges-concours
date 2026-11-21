@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 310" role="img" aria-labelledby="titre description">
+  <title id="titre">Comparaison des résidus</title>
+  <desc id="description">Aux extrémités, les résidus affines sont positifs, et ils sont négatifs entre les deux. Les résidus logarithmiques varient autour de zéro avec une amplitude plus faible.</desc>
+  <rect width="560" height="310" fill="white"/>
+  <g font-family="sans-serif" font-size="14" fill="#182e39">
+    <text x="24" y="24" font-weight="bold">Résidu (g/L)</text>
+    <path d="M 62 234 H 522" stroke="#dde4e7" /><text x="50" y="239" text-anchor="end">-6</text>
+    <path d="M 62 206 H 522" stroke="#dde4e7" /><text x="50" y="211" text-anchor="end">-4</text>
+    <path d="M 62 178 H 522" stroke="#dde4e7" /><text x="50" y="183" text-anchor="end">-2</text>
+    <path d="M 62 150 H 522" stroke="#526772" stroke-dasharray="4 4"/><text x="50" y="155" text-anchor="end">0</text>
+    <path d="M 62 122 H 522" stroke="#dde4e7" /><text x="50" y="127" text-anchor="end">2</text>
+    <path d="M 62 94 H 522" stroke="#dde4e7" /><text x="50" y="99" text-anchor="end">4</text>
+    <path d="M 62 66 H 522" stroke="#dde4e7" /><text x="50" y="71" text-anchor="end">6</text>
+    <text x="80" y="254" text-anchor="middle">2</text>
+    <text x="150" y="254" text-anchor="middle">4</text>
+    <text x="220" y="254" text-anchor="middle">6</text>
+    <text x="290" y="254" text-anchor="middle">8</text>
+    <text x="360" y="254" text-anchor="middle">10</text>
+    <text x="430" y="254" text-anchor="middle">12</text>
+    <text x="500" y="254" text-anchor="middle">14</text>
+    <text x="524" y="276" text-anchor="end">Délai (heures)</text>
+    <circle cx="80" cy="70.50" r="4.8" fill="#246177"/>
+    <circle cx="150" cy="183.00" r="4.8" fill="#246177"/>
+    <circle cx="220" cy="169.50" r="4.8" fill="#246177"/>
+    <circle cx="290" cy="212.00" r="4.8" fill="#246177"/>
+    <circle cx="360" cy="170.50" r="4.8" fill="#246177"/>
+    <circle cx="430" cy="157.00" r="4.8" fill="#246177"/>
+    <circle cx="500" cy="87.50" r="4.8" fill="#246177"/>
+    <path d="M 80 147.29 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/>
+    <path d="M 150 154.17 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/>
+    <path d="M 220 113.54 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/>
+    <path d="M 290 161.05 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/>
+    <path d="M 360 142.17 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/>
+    <path d="M 430 162.42 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/>
+    <path d="M 500 134.36 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/>
+    <circle cx="81" cy="293" r="4.8" fill="#246177"/><text x="94" y="298">Modèle affine</text>
+    <path d="M 275 288 l 5 5 -5 5 -5 -5 z" fill="#ab471e"/><text x="289" y="298">Modèle logarithmique</text>
+  </g>
+</svg>

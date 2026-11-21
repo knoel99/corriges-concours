@@ -1,0 +1,29 @@
+{
+  "slug": "bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024",
+  "epreuve": {
+    "concours": "BMA",
+    "filiere": "Toutes spécialités",
+    "matiere": "Histoire-géographie et enseignement moral et civique",
+    "annee": 2024
+  },
+  "questions": 15,
+  "redaction": "IA (Codex, famille GPT-6). Rédaction et contrôle par le même agent à partir du sujet candidat, avec lecture visuelle des cartes et du sondage. Aucun corrigé officiel ni relecture indépendante utilisés.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6 (variante non identifiée)"
+  },
+  "source": {
+    "sujet_officiel": "https://www.education.gouv.fr/sites/default/files/document/Baccalaur%C3%A9at%20professionnel%202024%20-%20BMA%20%3A%20Histoire-G%C3%A9ographie%20-%20EMC-402231.pdf",
+    "date_epreuve": "2024-06-18",
+    "code_sujet": "2406-FHG HGEMC 1",
+    "sha256": "f766230fc6e056b177906226062f55c93f69cf9113cc6c1d6db20ae99cf84c59",
+    "pages": "p. 2 : histoire ; p. 3 à 8 : géographie et annexe ; p. 9 à 13 : EMC"
+  },
+  "figures": [
+    {
+      "fichier": "figures/saint-nazaire.svg",
+      "legende": "Parc éolien de Saint-Nazaire, raccordement et base de maintenance.",
+      "description": "Croquis pédagogique original schématique, avec les trois figurés à compléter dans l’annexe et les principaux repères fournis."
+    }
+  ]
+}

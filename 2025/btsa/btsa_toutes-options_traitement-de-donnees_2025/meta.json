@@ -1,0 +1,25 @@
+{
+  "slug": "btsa_toutes-options_traitement-de-donnees_2025",
+  "epreuve": {
+    "concours": "BTSA",
+    "filiere": "Toutes options",
+    "matiere": "Traitement de données",
+    "annee": 2025
+  },
+  "questions": 14,
+  "redaction": "IA (Codex), rédaction et autocontrôle du 21 novembre 2026",
+  "figures": [
+    {
+      "fichier": "figures/comparaison-residus.svg",
+      "question": "Exercice 1, 2d",
+      "legende": "Écarts observé moins estimé aux sept délais, pour les ajustements affine et logarithmique."
+    }
+  ],
+  "sujet_url": "https://chlorofil.fr/fileadmin/user_upload/sujets-examens/2025/2025-BTS103-NOR-ME-RE-MA.pdf",
+  "code_sujet": "2025-BTS103-NOR-ME-RE-MA",
+  "revision": {
+    "date": "2026-11-21",
+    "modele": "Codex",
+    "verification": "Vérification de la couverture sur le sujet ministériel, des données sur le scan et des calculs par régression, test du khi-deux, estimation normale et sommation binomiale. Tracé indépendant des résidus des deux modèles."
+  }
+}
