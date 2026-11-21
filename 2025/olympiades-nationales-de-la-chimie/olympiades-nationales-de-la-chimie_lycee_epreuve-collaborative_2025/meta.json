@@ -1,0 +1,27 @@
+{
+  "slug": "olympiades-nationales-de-la-chimie_lycee_epreuve-collaborative_2025",
+  "epreuve": {
+    "concours": "Olympiades nationales de la chimie",
+    "filiere": "Lycée",
+    "matiere": "Épreuve collaborative",
+    "annee": 2025
+  },
+  "questions": 2,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par un agent Codex, famille GPT-6.",
+  "source": {
+    "sujet": [
+      "https://www.olympiades-chimie.fr/app/uploads/2025/07/epreuve-collaborative-2025-sujet-06.05.25.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/prothese-course.svg",
+      "question": "1",
+      "legende": "Organisation schématique de la prothèse de course et fonction de ses quatre pièces."
+    }
+  ]
+}

@@ -23,7 +23,7 @@ Les deux déplacements ont le même effet si et seulement si leur différence, o
 
 ### 2.a
 
-Une reformulation est : **avec une audition intacte, Beethoven aurait été un compositeur de moindre envergure, cela est certain.** L’affirmation porte sur le rôle prêté à sa surdité dans sa grandeur de compositeur.
+Une reformulation est : **la surdité de Beethoven a été une condition nécessaire de sa grandeur de compositeur, cela est certain.** L’affirmation porte sur le rôle prêté à sa surdité dans sa grandeur de compositeur.
 
 ### 2.b
 

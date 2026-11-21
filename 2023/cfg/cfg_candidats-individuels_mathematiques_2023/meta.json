@@ -25,6 +25,11 @@
   "revision": {
     "date": "2026-11-21",
     "modele": "Codex",
-    "verification": "Contrôle des huit pages du sujet, lecture visuelle du diagramme et du schéma, vérification arithmétique des résultats et des vingt-six réponses."
+    "verification": "Contrôle des huit pages du sujet, lecture visuelle du diagramme et du schéma, vérification arithmétique des résultats et des vingt-six réponses.",
+    "relecture_independante": {
+      "date": "2026-11-21",
+      "modele": "Codex",
+      "verification": "Un deuxième agent Codex a repris indépendamment les calculs, les sept exercices et les deux tracés à partir du PDF. La lecture des cinq hauteurs, la mesure approchée de l’angle du dessin et les conversions ont été vérifiées."
+    }
   }
 }
