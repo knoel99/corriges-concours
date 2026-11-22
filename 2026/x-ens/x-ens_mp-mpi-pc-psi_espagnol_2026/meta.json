@@ -1,0 +1,38 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_espagnol_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2026
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Espagnol.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Espagnol%20OK.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/nommer-la-fete.svg",
+      "question": "A",
+      "legende": "Comparer une loi espagnole, une décision argentine et une prise de parole gouvernementale."
+    },
+    {
+      "fichier": "figures/lire-les-images.svg",
+      "question": "A",
+      "legende": "La photographie et la couverture satirique emploient des compositions différentes."
+    },
+    {
+      "fichier": "figures/raisonner-en-opinion.svg",
+      "question": "B",
+      "legende": "Le succès populaire, le vote et les droits ne se mesurent pas de la même façon."
+    }
+  ],
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture des deux compositions espagnoles, du statut de la fête en 1918 et en 1987 et des deux images. Comptages indépendants du titre et des deux textes."
+  }
+}

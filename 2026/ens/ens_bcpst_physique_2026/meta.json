@@ -1,0 +1,72 @@
+{
+  "slug": "ens_bcpst_physique_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "BCPST",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 57,
+  "redaction": "IA (OpenAI Codex, famille GPT-6), avec contre-vérification indépendante des hauteurs et vitesses des gouttes, du bilan de saturation, des constantes de temps et de la grille d’Euler",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/261238_BCPST_PHYSIQUE_2026.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q02-film-deux-faces.svg",
+      "question": "Q2",
+      "legende": "La barre mobile se déplace vers l’intérieur. Chaque interface tire sur toute sa longueur, tandis que la bande balayée a pour aire ℓ dx sur une face."
+    },
+    {
+      "fichier": "figures/q11-colonne-jurin.svg",
+      "question": "Q11",
+      "legende": "Le mouillage d’une longueur supplémentaire du tube remplace du verre sec par du verre mouillé. Le poids de la colonne équilibre la composante verticale de la tension sur son pourtour."
+    },
+    {
+      "fichier": "figures/q19-morphologie-gouttes.svg",
+      "question": "Q19",
+      "legende": "Profils de révolution schématiques. Pour une petite goutte, la hauteur suit le diamètre. Les grandes gouttes stationnaires s’élargissent surtout à l’équateur."
+    },
+    {
+      "fichier": "figures/q22-diagramme-eau.svg",
+      "question": "Q22",
+      "legende": "Diagramme de phases schématique, à échelles non linéaires. La courbe de saturation relie le point triple au point critique. Au-delà de celui-ci, il n’y a plus de frontière liquide-vapeur."
+    },
+    {
+      "fichier": "figures/q30-rosee.svg",
+      "question": "Q30",
+      "legende": "À 14 °C, conserver toute l’eau sous forme de vapeur conduirait à 18,5 mbar. L’eau excédentaire se condense et la pression de vapeur passe à 16 mbar."
+    },
+    {
+      "fichier": "figures/q32-elongation-cheveu.svg",
+      "question": "Q32",
+      "legende": "Lectures approchées de la figure 11 du sujet. Les triangles figurent les valeurs mesurées, le segment pointillé prolonge la tendance jusqu’à la saturation. Une élongation relative de 2,5 % correspond à 7,5 cm pour 3 m."
+    },
+    {
+      "fichier": "figures/q35-circuit-rc.svg",
+      "question": "Q35",
+      "legende": "Le courant circule de la borne positive du générateur vers la plaque positive du condensateur. Les baisses de potentiel uR et uC s’ajoutent pour donner E."
+    },
+    {
+      "fichier": "figures/q37-echantillonnage.svg",
+      "question": "Q37",
+      "legende": "Charge normalisée du condensateur. Avec un pas grossi pour rendre les points visibles, le premier point au-dessus de 0,63 E retarde le temps mesuré de moins d’une période d’échantillonnage."
+    },
+    {
+      "fichier": "figures/q39-charge-decharge.svg",
+      "question": "Q39",
+      "legende": "Sur les deux fronts du créneau, une même durée RC conduit à deux seuils complémentaires. Chaque demi-période peut fournir une mesure de l’humidité."
+    },
+    {
+      "fichier": "figures/q48-vitesse-grelon.svg",
+      "question": "Q48",
+      "legende": "La vitesse verticale mesurée en unités de sa valeur limite suit tanh(t/τ). La pente au départ correspond à g et le régime permanent est presque atteint après quelques τ."
+    },
+    {
+      "fichier": "figures/q51-pas-euler.svg",
+      "question": "Q51",
+      "legende": "Euler suit la tangente calculée au début du pas. L’écart visible à la fin du pas illustre l’erreur locale sur une évolution courbe."
+    }
+  ],
+  "date_revision": "2026-11-22"
+}

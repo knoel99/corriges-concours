@@ -1,0 +1,44 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_anglais_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2026
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6) et relue indépendamment par deux autres agents.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/two-energy-sites.svg",
+      "question": "Partie A",
+      "legende": "How a Chilean power station and a proposed Nevada mine bring out different consequences of site selection"
+    },
+    {
+      "fichier": "figures/solar-survey.svg",
+      "question": "Partie A",
+      "legende": "Two sets of answers to hypothetical questions about a nearby solar farm"
+    },
+    {
+      "fichier": "figures/household-bill.svg",
+      "question": "Partie B",
+      "legende": "A bill discount and an improvement to rented housing can benefit the same tenant in different ways"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Anglais.pdf",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_anglais_xusr_26.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Anglais%20OK.pdf",
+    "exemple_care": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/care-fera-program"
+  },
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Double contre-relecture indépendante des documents de l’épreuve, des chiffres du graphique Pew, des deux compositions, de leur longueur et des trois figures pédagogiques."
+  }
+}
