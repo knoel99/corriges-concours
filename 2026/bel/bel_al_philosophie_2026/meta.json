@@ -8,5 +8,31 @@
   },
   "questions": 0,
   "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/observer-et-conclure.svg",
+      "question": "Étape 1",
+      "legende": "De l’observation de Jupiter aux limites de la conclusion astronomique"
+    },
+    {
+      "fichier": "figures/confiance-et-controle.svg",
+      "question": "Étape 2",
+      "legende": "Le crédit du témoignage dépend du contrôle exercé sur l’enquête"
+    },
+    {
+      "fichier": "figures/expertise-et-decision.svg",
+      "question": "Étape 3",
+      "legende": "Du risque de crue à la décision publique, deux justifications à articuler"
+    }
+  ],
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Comparaison au sujet officiel d’une page et à la section de l’épreuve écrite commune du rapport ENS de Lyon. Vérification de la portée des exemples et de la cohérence entre les deux versions. Contre-relecture indépendante de l’argumentation, des attentes du jury et des trois figures."
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_philo_261107.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Philosophie%202026.pdf"
+  }
 }
