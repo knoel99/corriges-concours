@@ -1,0 +1,38 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_allemand_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2026
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lire-les-objets.svg",
+      "question": "Partie A",
+      "legende": "Les objets choisis par le gouvernement fédéral construisent une image du patrimoine inventif allemand"
+    },
+    {
+      "fichier": "figures/deux-indicateurs.svg",
+      "question": "Partie A",
+      "legende": "L’usage du numérique et la nouveauté régionale mesurent deux propriétés distinctes des créations de 2024"
+    },
+    {
+      "fichier": "figures/de-la-mesure-au-jugement.svg",
+      "question": "Partie B",
+      "legende": "Un exemple de mesure en classe permet de discuter les conditions concrètes de l’apprentissage"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Allemand.pdf",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_allemand_xusr_26.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20Fili%C3%A8res_Allemand%20OK.pdf"
+  },
+  "date_revision": "2026-11-22"
+}
