@@ -1,0 +1,49 @@
+{
+  "slug": "ens_mp_maths-d_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2026
+  },
+  "questions": 42,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA (Codex, famille GPT-6), à partir de l’énoncé officiel. Les 27 questions et leurs subdivisions ont été contrôlées à partir du PDF par un second agent Codex.",
+  "date_revision": "2026-11-22",
+  "modele_revision": "GPT-6 (Codex)",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_maths_d_u_26.pdf",
+    "page_officielle": "https://www.ens.psl.eu/rapports-et-sujets-2026-mp",
+    "rapport": null
+  },
+  "figures": [
+    {
+      "fichier": "figures/q02-queues-poisson.svg",
+      "question": "Q2",
+      "legende": "Deux événements de queue pour une loi de Poisson de paramètre 5. Chaque barre représente une masse ponctuelle. Les seuils représentés sont 2 et 9."
+    },
+    {
+      "fichier": "figures/q07-sommes-centrees.svg",
+      "question": "Q7",
+      "legende": "Dans la formule de la solution de Stein, le centrage permet de choisir les indices d'une queue. À gauche le seuil est 2 et à droite 8, avec une moyenne de 5."
+    },
+    {
+      "fichier": "figures/q12-contre-exemple.svg",
+      "question": "Q12",
+      "legende": "Dans la construction affine modulo un nombre premier, la probabilité de l'événement W = 1 reste loin de celle de Poisson. La borne imprimée tend pourtant vers zéro."
+    },
+    {
+      "fichier": "figures/q22-transposition.svg",
+      "question": "Q22",
+      "legende": "L'échange des images des lignes 2 et 3 déplace deux cases. Les deux autres entrées sélectionnées restent en place."
+    },
+    {
+      "fichier": "figures/q27-points-fixes.svg",
+      "question": "Q27",
+      "legende": "À champ extérieur nul, les intersections donnent les solutions de l'équation de point fixe. Le résidu peut être petit près de plusieurs magnétisations."
+    }
+  ]
+}
