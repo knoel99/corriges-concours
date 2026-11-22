@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="titre description">
+  <title id="titre">Observer et conclure</title>
+  <desc id="description">Comparaison conceptuelle de deux nuits. La mobilité de petits astres auprès de Jupiter établit un autre centre de mouvement mais ne tranche pas à elle seule la question du mouvement terrestre.</desc>
+  <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M1 1 L7 4 L1 7" fill="none" stroke="#182f43" stroke-width="1.2"/></marker></defs>
+  <rect width="900" height="360" fill="#ffffff"/>
+  <g font-family="DejaVu Sans, sans-serif">
+  <text x="24" y="39" font-size="29" fill="#182f43" font-weight="bold" text-anchor="start">Que montrent les observations de Jupiter ?</text>
+  <rect x="24" y="60" width="852" height="102" rx="12" fill="#e9f1f7" stroke="none" stroke-width="2"/>
+  <text x="42" y="90" font-size="22" fill="#182f43" font-weight="bold" text-anchor="start">Série de nuits</text>
+  <text x="42" y="119" font-size="20" fill="#182f43" font-weight="normal" text-anchor="start">De petits astres restent près de Jupiter.</text><text x="42" y="146" font-size="20" fill="#182f43" font-weight="normal" text-anchor="start">Leur position relative change.</text>
+  <path d="M 602 88 H 802" fill="none" stroke="#abb9c4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="687" cy="88" r="10" fill="#6b4261"/>
+  <circle cx="617" cy="88" r="3.8" fill="#182f43"/>
+  <circle cx="641" cy="88" r="3.8" fill="#182f43"/>
+  <circle cx="729" cy="88" r="3.8" fill="#182f43"/>
+  <path d="M 602 119 H 802" fill="none" stroke="#abb9c4" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="687" cy="119" r="10" fill="#6b4261"/>
+  <circle cx="654" cy="119" r="3.8" fill="#182f43"/>
+  <circle cx="717" cy="119" r="3.8" fill="#182f43"/>
+  <circle cx="751" cy="119" r="3.8" fill="#182f43"/>
+  <text x="702" y="149" font-size="15" fill="#182f43" font-weight="normal" text-anchor="middle">Positions schématiques</text>
+  <path d="M 450 164 V 180 H 234 V 196" fill="none" stroke="#182f43" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+  <path d="M 450 180 H 667 V 196" fill="none" stroke="#182f43" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr)"/>
+  <rect x="24" y="202" width="418" height="139" rx="12" fill="#e9f5ef" stroke="none" stroke-width="2"/>
+  <rect x="458" y="202" width="418" height="139" rx="12" fill="#f6edf3" stroke="none" stroke-width="2"/>
+  <text x="44" y="239" font-size="22" fill="#075d63" font-weight="bold" text-anchor="start">Inférence appuyée</text>
+  <text x="44" y="277" font-size="20" fill="#182f43" font-weight="normal" text-anchor="start">Il existe un centre de mouvement</text><text x="44" y="304" font-size="20" fill="#182f43" font-weight="normal" text-anchor="start">céleste distinct de la Terre.</text>
+  <text x="478" y="239" font-size="22" fill="#6b4261" font-weight="bold" text-anchor="start">Question qui reste ouverte</text>
+  <text x="478" y="277" font-size="20" fill="#182f43" font-weight="normal" text-anchor="start">Comment se meut la Terre ?</text><text x="478" y="304" font-size="20" fill="#182f43" font-weight="normal" text-anchor="start">Cette série ne suffit pas à trancher.</text>
+  </g>
+</svg>
