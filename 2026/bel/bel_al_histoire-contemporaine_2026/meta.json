@@ -8,5 +8,33 @@
   },
   "questions": 0,
   "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/sevres-lausanne.svg",
+      "legende": "En 1920–1923, la mobilisation à Ankara modifie le règlement préparé par les Alliés",
+      "question": "Étape 2"
+    },
+    {
+      "fichier": "figures/palestine-institutions.svg",
+      "legende": "Institutions du Yichouv, création d’Israël et expérience des réfugiés palestiniens",
+      "question": "Étape 3"
+    },
+    {
+      "fichier": "figures/egypte-mobilisations.svg",
+      "legende": "En Égypte, trois mobilisations confrontent les pouvoirs publics à des demandes différentes",
+      "question": "Étape 4"
+    }
+  ],
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Comparaison à l’intitulé officiel, à la lettre de cadrage et aux pages 2 à 6 du rapport du jury de la session. Vérification des bornes et des exemples de construction étatique et de transformation sociale."
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_commun_hist.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Histoire%202026.pdf",
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2025-05/Lettre%20de%20cadrage%20programme%20commun%20Histoire%20session%202026.pdf",
+    "refugies_palestiniens": "https://www.un.org/unispal/document/auto-insert-176879/"
+  }
 }

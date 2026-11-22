@@ -6,7 +6,7 @@
 
 **Thème.** *De la topologie dans les ondes : de la matière condensée à El Niño.* Le sujet part d'un objet de cours, la chaîne de masses et de ressorts, et va jusqu'à une notion de recherche : l'**invariant topologique** d'une structure de bandes et la **correspondance volume-bord**, qui prédit le nombre de modes piégés à une interface.
 
-Il transpose ensuite ce schéma aux ondes océaniques équatoriales (ondes de Kelvin et de Yanai), à l'origine du phénomène El Niño. L'épreuve dure 4 heures, **sans calculatrice** et presque sans application numérique. Elle compte **45 questions** (en comptant les sous-questions 7.1–7.5, 13.1–13.4 et 15.1–15.3).
+Il transpose ensuite ce schéma aux ondes océaniques équatoriales (ondes de Kelvin et de Yanai), qui contribuent à l’évolution d’El Niño. L'épreuve dure 4 heures, **sans calculatrice** et presque sans application numérique. Elle compte **45 questions** (en comptant les sous-questions 7.1–7.5, 13.1–13.4 et 15.1–15.3).
 
 - **Partie I.1, chaîne monoatomique (Q1–7.5).** Équation du mouvement, relation de dispersion en $\lvert\sin(ka/2)\rvert$, zone de Brillouin, vitesse du son, vitesse de groupe nulle en bord de zone. Au-dessus de la pulsation de coupure apparaît une onde évanescente à vecteur d'onde complexe. Ce sont des questions de cours.
 - **Partie I.2, chaîne dimérisée SSH (Q8–16).** Deux raideurs alternées donnent une maille de deux masses : problème aux valeurs propres $2\times2$, deux branches (acoustique et optique), bande interdite, modes évanescents dans le gap, lecture d'un diagramme de bandes.
@@ -267,7 +267,7 @@ La puissance moyenne transmise d'une masse à l'autre est nulle, car force et vi
 Une onde **amortie**, au contraire, se propage (sa phase avance avec la position) et perd son amplitude parce que de l'énergie est dissipée en chemin. Ici, la chaîne est sans frottement : la décroissance vient seulement de ce que la pulsation est hors de la bande permise.
 
 $$\boxed{\begin{aligned}
-0\leq\omega\leq2\sqrt{\beta/m}&\ :\ \text{propagatives}\\
+0<\omega<2\sqrt{\beta/m}&\ :\ \text{propagatives}\\
 \omega>2\sqrt{\beta/m}&\ :\ \text{évanescentes}
 \end{aligned}}$$
 
@@ -552,7 +552,7 @@ u_{2n}&=U_0(-1)^ne^{-2k''na}\cos\omega t\\
 u_{2n+1}&=U_1(-1)^ne^{-2k''na}\cos\omega t
 \end{aligned}}$$
 
-avec $U_1/U_0=\dfrac{S-\omega^2}{\omega_1^2-\omega_2^2e^{2k''a}}$ réel.
+Quand le dénominateur est non nul, la première équation de la Q9 donne un rapport réel $U_1/U_0=(S-\omega^2)/(\omega_1^2-\omega_2^2e^{2k''a})$. Si les deux membres se réduisent à zéro, la seconde équation fixe la polarisation ; l’un des sous-réseaux peut rester immobile.
 
 | maille $n$ | $0$ | $1$ | $2$ | $3$ |
 |---|---|---|---|---|
@@ -560,6 +560,10 @@ avec $U_1/U_0=\dfrac{S-\omega^2}{\omega_1^2-\omega_2^2e^{2k''a}}$ réel.
 | $u_{2n+1}/\cos\omega t$ | $U_1$ | $-U_1e^{-\gamma}$ | $U_1e^{-2\gamma}$ | $-U_1e^{-3\gamma}$ |
 
 avec $\gamma=2k''a$. Le profil est celui de la Q7.4 à l'échelle de la maille : le signe s'inverse d'une maille à la suivante et l'enveloppe est exponentielle décroissante. Le tracé est, là encore, fait de points.
+
+Pour le tracé, prenons $\omega_1=2\Omega$, $\omega_2=3\Omega$ et $q=e^{-2k''a}=2/3$. Sur la branche inférieure, $\omega^2=(13-\sqrt{19})\Omega^2$ et $U_1/U_0=-2/\sqrt{19}$. Les masses paires suivent $(-q)^n U_0$, les impaires $(-q)^n U_1$ à $t=0$.
+
+![Figure 4 — Dans la bande interdite, chaque sous-réseau alterne de signe et son amplitude décroît d’une maille à la suivante.](figures/q15-3-evanescence-dimere.svg)
 
 > [!PIEGE]
 > Confondre l'indice de maille et l'indice de masse. Dans l'énoncé, $n$ numérote les masses de la partie I.1, mais les mailles dans l'ansatz de la Q9.
@@ -577,16 +581,18 @@ avec $\gamma=2k''a$. Le profil est celui de la Q7.4 à l'échelle de la maille :
 
 #### Solution
 
-Les deux droites qui se croisent sont $\sqrt2\omega_1$ et $\sqrt2\omega_2$ (Q13.2). La courbe du haut est $\sqrt{2(\omega_1^2+\omega_2^2)}\approx2\omega_0$ (Q13.1).
+Posons $x=\delta\omega/\omega_0$. Les deux limites du gap ont pour pulsations $\sqrt2\,\omega_0(1+x)$ et $\sqrt2\,\omega_0(1-x)$ (Q13.2). Elles sont des droites en $x$. L’abscisse du sujet est le rapport $r=\omega_1/\omega_2$, pour lequel $x=(r-1)/(r+1)$. Les limites se croisent à $r=1$. Le sommet de la bande optique vaut $\sqrt{2(\omega_1^2+\omega_2^2)}=2\omega_0\sqrt{1+x^2}$ (Q13.1).
 
 Justification. Chaque branche varie continûment et de façon monotone entre sa valeur en $k=0$ et sa valeur en bord de zone (Q13–14). Toute pulsation comprise entre ces deux valeurs est donc atteinte pour un $k$ réel : l'onde se propage. Au-dehors, aucun $k$ réel ne convient, et la Q15 montre que $\underline k$ a une partie imaginaire non nulle : l'onde est évanescente.
 
 - **Bandes de propagation (zones grises)** : $[0,\sqrt2\min(\omega_1,\omega_2)]$ (acoustique) et $[\sqrt2\max(\omega_1,\omega_2),\sqrt{2(\omega_1^2+\omega_2^2)}]$ (optique).
-- **Bandes interdites (zones blanches)** : entre les deux droites (ondes évanescentes à $k'=\pi/(2a)$) et au-dessus de la bande optique ($k'=0$).
+- **Bandes interdites (zones blanches)** : entre les deux limites (ondes évanescentes à $k'=\pi/(2a)$) et au-dessus de la bande optique ($k'=0$).
 
 En $\omega_1/\omega_2=1$, le gap central se **ferme** : c'est la chaîne monoatomique.
 
 De part et d'autre, les bords de bande échangent leurs rôles : $\sqrt2\omega_1$ est le haut de la bande acoustique pour $\omega_1<\omega_2$, puis le bas de la bande optique pour $\omega_1>\omega_2$. On ne peut pas passer d'un régime à l'autre sans fermer le gap. Ce point de fermeture annonce une transition topologique.
+
+![Figure 5 — Bandes permises en fonction du contraste des pulsations des ressorts. Elles se rejoignent quand les deux raideurs sont égales.](figures/q16-fermeture-gap.svg)
 
 > [!JURY]
 > Le rapport 2026 prévient qu'« on ne peut se satisfaire d'une phrase du type recopiant simplement l'énoncé » : dire que les bandes grises sont propagatives et les blanches évanescentes, sans élément nouveau de justification, ne suffit pas. Il faut relier chaque zone aux résultats des Q13 et Q15.
@@ -638,7 +644,7 @@ $$\vec d=\begin{pmatrix}-\omega_1^2\\0\end{pmatrix}+\omega_2^2\begin{pmatrix}\co
 
 Sur chaque dessin, on place un point du cercle, le vecteur $\vec d(k)$ issu de $O$ et l'angle $\phi(k)$ mesuré depuis $(Ox)$.
 
-![Figure 4 — Trajectoire de d(k) : cercle de centre (−ω1², 0) et de rayon ω2², parcouru dans le sens trigonométrique, origine extérieure si ω1 > ω2 et intérieure si ω1 < ω2](figures/q18-trajectoire-vecteur-d.svg)
+![Figure 6 — Trajectoire de d(k) : cercle de centre (−ω1², 0) et de rayon ω2², parcouru dans le sens trigonométrique, origine extérieure si ω1 > ω2 et intérieure si ω1 < ω2](figures/q18-trajectoire-vecteur-d.svg)
 
 > [!PIEGE]
 > Oublier le sens de parcours. Il se lit sur un point intermédiaire : pour $\theta=-\pi/2$, $\vec d=(-\omega_1^2,\omega_2^2)$, au-dessus du centre, juste après le point de départ situé à droite.
@@ -684,37 +690,15 @@ C'est la correspondance volume-bord : des invariants de chaînes infinies prédi
 > La fréquence est dans le gap des deux chaînes. Quelle est, de chaque côté, la forme de la solution trouvée en Q15 ?
 
 > [!INDICATION]
-> Pour aller plus loin, lire la fréquence du mode sur la figure (elle ne dépend pas de $\omega_1^g/\omega_2^g$) et reporter $\omega^2=\omega_1^2+\omega_2^2$ dans les équations de la Q8.
+> Pour passer du profil de la demi-chaîne à celui de la jonction, quel signe de $k''$ faut-il retenir à gauche puis à droite ?
 
 #### Solution
 
-De chaque côté, la solution est évanescente avec $k'=\pi/(2a)$. Elle décroît vers $+\infty$ à droite ($k''>0$) et vers $-\infty$ à gauche.
+Pour $\omega_1^g/\omega_2^g=0{,}7$, la ligne isolée du diagramme est dans la bande interdite des deux chaînes. La Q15 donne, de chaque côté, $k'=\pi/(2a)$ : d’une maille à la suivante, les déplacements d’un même sous-réseau changent de signe. L’enveloppe décroît à partir de la jonction comme $e^{-|x|/\ell}$, avec $k''<0$ à gauche et $k''>0$ à droite. Chaque demi-chaîne possède sa propre longueur $\ell=1/|k''|$. La vibration est ainsi concentrée près de la jonction : c’est un **mode de bord**.
 
-Le mode est donc maximal au voisinage de l'interface et décroît exponentiellement des deux côtés, avec des longueurs différentes. Son signe alterne d'une maille à la suivante.
+On peut illustrer ce profil par le cas particulier où les deux demi-chaînes ont le même centre de gap en pulsation carrée, $\omega^2=d_0=\omega_1^2+\omega_2^2$, avec un raccord qui préserve le mode sur les sites impairs. La première équation de la Q8 devient alors $u_{2n+1}=-(\omega_2/\omega_1)^2u_{2n-1}$. En s’éloignant de la jonction, les amplitudes impaires sont multipliées par $-(0{,}7)^2=-0{,}49$ à gauche et par $-(\omega_2^d/\omega_1^d)^2$ à droite. Les sites pairs sont immobiles dans cet exemple. Les constantes de jonction ne sont pas précisées par l’énoncé : le profil demandé est qualitatif.
 
-Plus précisément, la ligne de la figure est horizontale, au milieu du gap : $\omega^2=d_0=\omega_1^2+\omega_2^2$. Les équations de la Q8 deviennent alors
-
-$$\begin{aligned}
-\text{masses paires}&\ :\ \omega_1^2u_{2n+1}+\omega_2^2u_{2n-1}=0\\
-\text{masses impaires}&\ :\ \omega_2^2u_{2n+2}+\omega_1^2u_{2n}=0
-\end{aligned}$$
-
-- À droite ($\omega_1^d>\omega_2^d$), la seule solution décroissante n'occupe que les masses impaires : $u_{2n+1}=-(\omega_2^d/\omega_1^d)^2u_{2n-1}$.
-- À gauche ($\omega_1^g/\omega_2^g=0{,}7$), la solution décroissante vers $-\infty$ occupe aussi les masses impaires, avec le facteur $-0{,}49$ par maille.
-
-Les deux solutions vivent sur le même sous-réseau et se raccordent. Les **masses paires restent immobiles**.
-
-Allure du mode (masses $n=-5$ à $5$), avec $\rho=(\omega_2^d/\omega_1^d)^2<1$ et $r>0$ qui dépend du ressort de jonction :
-
-| masse | −5 | −4 | −3 | −2 | −1 | 0 | 1 | 2 | 3 | 4 | 5 |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| allure | −0,24 | 0 | +0,49 | 0 | −1 | 0 | +r | 0 | −rρ | 0 | +rρ² |
-
-Si $\omega_1^g>\omega_2^g$, la solution décroissante de gauche vivrait sur les masses paires et ne pourrait pas se raccorder à celle de droite. Il n'y a pas de mode, comme l'annonçait la Q20.
-
-![Figure 5 — Mode de bord pour ω1g/ω2g = 0,7 : seules les masses impaires bougent, avec une amplitude alternée qui décroît de part et d'autre de l'interface](figures/q21-mode-de-bord.svg)
-
-On parle de **mode de bord** parce que l'énergie est confinée sur quelques mailles autour de la jonction. Sa fréquence est interdite dans les deux milieux, si bien qu'il ne peut pas rayonner dans le volume. Son existence, imposée par des entiers, résiste à toute perturbation qui ne ferme pas le gap.
+![Figure 7 — Exemple de mode d’interface au centre commun des bandes interdites en pulsation carrée. Les masses impaires ont des amplitudes alternées et localisées.](figures/q21-mode-de-bord.svg)
 
 > [!PIEGE]
 > Tracer une simple exponentielle décroissante sans alternance, ou un profil qui ne décroît que d'un côté. Les deux côtés sont évanescents, et le profil est discret.
@@ -867,7 +851,7 @@ C'est la célérité des ondes de gravité en eau peu profonde.
 - **Les tracés pour $f_0=1$ et $f_0=-1$ sont identiques**, car seul $f_0^2$ intervient.
 - $f_0=0$ : les droites $\omega=\pm ck_x$ et $\omega=0$ concourent à l'origine.
 
-![Figure 6 — Les trois branches (+), (0) et (−) dans le plan (kx, ω) pour f0 = ±1 (bandes interdites 0 < |ω| < 1) et pour f0 = 0 (branches concourantes)](figures/q29-dispersion-kelvin.svg)
+![Figure 8 — Les trois branches (+), (0) et (−) dans le plan (kx, ω) pour f0 = ±1 (bandes interdites 0 < |ω| < 1) et pour f0 = 0 (branches concourantes)](figures/q29-dispersion-kelvin.svg)
 
 > [!METHODE]
 > Comme pour la Q11, deux systèmes distincts (les deux hémisphères) ont le même spectre. Seul un invariant topologique les distingue, ce que l'énoncé introduit juste après.
@@ -913,7 +897,7 @@ $$\boxed{\Delta\mathscr C^{(\pm)}=\left|\mathscr C^{(\pm)}_{\text{nord}}-\mathsc
 
 et $\Delta\mathscr C^{(0)}=0$.
 
-**Conséquence** : par correspondance volume-bord, il existe des modes piégés près de l'équateur, dont les fréquences traversent les bandes interdites. Leur nombre est fixé par le saut d'invariant, et ils sont robustes. Le décompte est fait en Q33.
+**Conséquence.** Le changement d’invariant signale des ondes localisées à l’équateur. En appliquant aux valeurs données la règle de la Q20, le rapport du jury attend **quatre modes associés à la bande $(+)$ et quatre à la bande $(-)$**. La Q33 permet de confronter cette prédiction au diagramme fourni.
 
 > [!PIEGE]
 > Prendre $\lvert\mathscr C^{(\pm)}\rvert=2$ comme nombre de modes : c'est l'invariant d'un seul milieu. Comme en Q20, c'est la **différence** entre les deux milieux qui compte.
@@ -958,18 +942,17 @@ La racine $\omega=-ck_x$ est parasite. Les deux autres sont les branches de Yana
 
 $$\omega=\frac12\left(ck_x\pm\sqrt{c^2k_x^2+4\beta c}\right)$$
 
-On compte donc **2 modes par gap**, soit **4 modes de bord au total**. Tous ont une vitesse de groupe positive, c'est-à-dire vers l'Est.
+Une horizontale située dans le gap supérieur coupe Kelvin et Yanai une fois chacune. Une horizontale dans le gap inférieur donne également deux intersections. Cela fait **deux traversées par gap** sur le diagramme. La même branche de Kelvin contribue dans les deux intervalles. Les pentes de toutes ces branches sont positives : l’énergie se propage vers l’est.
 
-Compatibilité. Comme en Q20, le nombre de modes est fixé par le saut d'invariant entre les deux hémisphères. Avec les valeurs de l'énoncé, $\Delta\mathscr C^{(\pm)}=4$ (Q31), à comparer aux 4 modes de bord comptés au total. Les modes topologiques recherchés sont **l'onde de Kelvin et l'onde de Yanai**.
+La différence d’invariants de la Q31 et le diagramme prédisent qualitativement des modes équatoriaux dans les deux intervalles. Le comptage numérique présente une difficulté du sujet. Les invariants fournis donnent un saut de module 4 pour chaque bande de Poincaré, tandis que la figure de Matsuno montre deux traversées par gap. Additionner les intersections des deux intervalles ne donne pas un saut par bande. Le rapport 2026 retient quatre modes par bande à la Q31 et y a aussi accordé tous les points aux copies proposant quatre modes au total. Les ondes à identifier à la Q33 sont **Kelvin et Yanai**.
+
+![Figure 9 — À fréquence fixée dans chacun des deux intervalles, une horizontale coupe une branche de Kelvin et une de Yanai.](figures/q33-modes-kelvin-yanai.svg)
 
 > [!METHODE]
 > Un mode « topologique » se reconnaît sur un diagramme de bandes à ce qu'il relie continûment deux bandes en traversant le gap qui les sépare. Une branche qui reste dans une bande (Rossby, Poincaré) ne compte pas.
 
 > [!PIEGE]
 > Compter les ondes de Rossby comme modes de gap. Elles restent collées à $\omega\approx0$ : elles forment la bande géostrophique déformée et ne traversent pas le gap.
-
-> [!PIEGE]
-> Un décompte « un mode par unité de saut, dans chaque gap » donnerait 4 modes dans chaque gap, alors que la figure n'en montre que 2. L'invariant calculé directement sur un seul hémisphère vaut $\mp\,\mathrm{signe}(f_0)$ pour les bandes $(\pm)$, soit un saut de 2 par gap, en accord avec la figure : les valeurs $\pm2$ de l'énoncé comptent déjà l'écart entre hémisphères. Le jury a accepté « 4 modes de bord au total » (Q31).
 
 ### Question 34
 
@@ -1002,6 +985,8 @@ $$\boxed{\lambda_c=2\pi\sqrt{\frac{c}{\beta(2n+1)}}}$$
 
 Pour $\lambda>\lambda_c$, $v_g<0$ : les paquets **longs** vont vers l'**Ouest**. Pour $\lambda<\lambda_c$, $v_g>0$ : les paquets **courts** vont vers l'**Est**, en sens inverse de leur phase.
 
+![Figure 10 — Les crêtes de Rossby se déplacent vers l’ouest. Le sens de propagation d’un paquet dépend de sa longueur d’onde.](figures/q35-vitesses-rossby.svg)
+
 > [!JURY]
 > Le rapport 2026 rappelle que « toute formule manifestement incorrecte du point de vue de l'homogénéité ou des ordres de grandeur devrait conduire le candidat à porter un regard critique sur son résultat ».
 >
@@ -1019,13 +1004,9 @@ Pour $\lambda>\lambda_c$, $v_g<0$ : les paquets **longs** vont vers l'**Ouest**.
 
 #### Solution
 
-L'onde de Kelvin est non dispersive ($v_\varphi=v_g=c$), piégée à l'équateur et **unidirectionnelle vers l'Est** : c'est un mode topologique.
+Les alizés entretiennent normalement une accumulation d’eau chaude dans l’ouest du Pacifique tropical. Lorsqu’ils faiblissent ou que survient un coup de vent d’ouest, une perturbation de hauteur peut exciter une **onde équatoriale de Kelvin d’enfoncement**. Sa loi $\omega=ck_x$ donne $v_g=c>0$ : elle transmet le long de l’équateur, vers la côte sud-américaine, une élévation du niveau de la mer et un approfondissement de la thermocline.
 
-En temps normal, les alizés accumulent les eaux chaudes de surface à l'Ouest du Pacifique, et un upwelling froid règne au large du Pérou.
-
-Lors d'El Niño, les alizés faiblissent. L'excédent d'eau chaude, qui forme une bosse de $\eta$ avec une thermocline enfoncée, est alors emporté par l'onde de Kelvin, qui ne peut aller que vers l'Est.
-
-Elle traverse le Pacifique sans se déformer ni s'étaler en latitude et bute sur la côte américaine : l'eau chaude **s'accumule au large du Pérou**. La thermocline s'y approfondit, l'upwelling est bloqué et la surface se réchauffe anormalement.
+Au large du Pérou, la couche d’eau chaude s’épaissit. Une remontée d’eau côtière peut subsister, mais elle puise alors dans des eaux plus chaudes, ce qui favorise le réchauffement de surface. C’est la **perturbation** qui traverse le bassin à la célérité $c$ : les particules d’eau ne parcourent pas toutes cette distance avec l’onde.
 
 ## Bilan
 
