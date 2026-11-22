@@ -10,9 +10,19 @@
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
   "figures": [
     {
+      "fichier": "figures/q4b-encadrement.svg",
+      "question": "Q4b",
+      "legende": "Les deux fonctions continues encadrent l’indicatrice de x < y. Leur écart avec elle est contenu dans deux intervalles de longueur η."
+    },
+    {
       "fichier": "figures/q7-valeurs-propres-demi-cercle.svg",
       "question": "Q7",
       "legende": "Valeurs propres 2cos θ_k de T_8 : projections d'angles équirépartis sur le demi-cercle de rayon 2, et densité de l'arcsinus sur le même axe"
+    },
+    {
+      "fichier": "figures/q8b-conjugaison.svg",
+      "question": "Q8b",
+      "legende": "Exemple de conjugaison pour b = −3 et c = −2. La surdiagonale devient bc = 6 et la sous-diagonale devient 1."
     },
     {
       "fichier": "figures/q10b-pn-vers-echelon.svg",
@@ -22,7 +32,27 @@
     {
       "fichier": "figures/q12-echelons-et-bandes.svg",
       "question": "Q12",
-      "legende": "La fonction f, l'escalier Φ et le polynôme F_n : F_n ne s'écarte de Φ que dans les bandes disjointes de largeur 2η centrées en c_i, d'au plus un saut a_i"
+      "legende": "L’escalier Φ approche f. Hors des bandes, chaque échelon est approché uniformément. Dans chaque bande, un seul terme peut contribuer à hauteur d’un saut."
+    },
+    {
+      "fichier": "figures/q13b-densites.svg",
+      "question": "Q13b",
+      "legende": "La densité du demi-cercle et celle de l’arcsinus sur le même axe. Elles ont chacune une aire de 1 et se comportent différemment aux bords."
+    },
+    {
+      "fichier": "figures/q13c-paires-symetriques.svg",
+      "question": "Q13c",
+      "legende": "Le carré d’un coefficient diagonal intervient une fois dans la trace de X₃². Le carré d’un coefficient hors diagonale y intervient deux fois."
     }
-  ]
+  ],
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Relecture des trente questions et sous-questions des deux versions avec le sujet MP-MPI et le rapport 2026. Vérification des changements de variable et de base, des cas limites, des moments et des schémas."
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20B.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Maths%20B%20OK.pdf"
+  }
 }

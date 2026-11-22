@@ -1,0 +1,52 @@
+{
+  "slug": "ens_mp-mpi_maths-c_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-MPI",
+    "matiere": "Maths C",
+    "annee": 2026
+  },
+  "questions": 29,
+  "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture indépendante sur le sujet officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_mpi_maths_c_ulsr_26.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q02-segment.svg",
+      "question": "Q2",
+      "legende": "Lorsque λ tend vers zéro, le point test xλ reste dans C et rejoint x* en suivant le segment qui mène à x."
+    },
+    {
+      "fichier": "figures/q04-saut-monotone.svg",
+      "question": "Q4",
+      "legende": "Le saut de −1 à +1 conserve la monotonie. L’origine est solution faible. La valeur retenue au saut, σ(0) = 1, exclut une solution forte en zéro."
+    },
+    {
+      "fichier": "figures/q06-deux-projetes.svg",
+      "question": "Q6",
+      "legende": "Deux projections sur une même face plane. La variation parallèle à la face est conservée et la composante normale disparaît."
+    },
+    {
+      "fichier": "figures/q10-minimax.svg",
+      "question": "Q10",
+      "legende": "Pour la matrice diagonale de coefficients 2 et 1, le maximum de l’enveloppe inférieure et le minimum de l’enveloppe supérieure valent tous deux 2/3."
+    },
+    {
+      "fichier": "figures/q12-oscillation.svg",
+      "question": "Q12",
+      "legende": "Pour F(x) = −x et x₁ = 1, l’itération directe alterne entre −1 et 1. Avec θ = 1/4, l’itération moyennée multiplie chaque terme par 1/2."
+    },
+    {
+      "fichier": "figures/q19-majorant.svg",
+      "question": "Q19",
+      "legende": "Pour f(x) = √(1+x²) − 1, un majorant quadratique touche la courbe en x = 1,6. Le minimum du majorant donne le pas de descente utilisé dans la preuve."
+    },
+    {
+      "fichier": "figures/q22-descente.svg",
+      "question": "Q22",
+      "legende": "Pour f(x,y) = (x² + 3y²)/2 et L = 4, chaque pas multiplie la première coordonnée par 3/4 et la seconde par 1/4. Les courbes grises représentent les niveaux de f."
+    }
+  ],
+  "date_revision": "2026-11-22"
+}

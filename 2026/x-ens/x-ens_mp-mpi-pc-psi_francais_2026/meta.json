@@ -1,0 +1,45 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_francais_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Français",
+    "annee": 2026
+  },
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6) et relue indépendamment par un second agent.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/sens-et-habitude.svg",
+      "question": "Analyse du sujet",
+      "legende": "Chez Condillac, la mémoire relie deux moments de la conduite"
+    },
+    {
+      "fichier": "figures/paroi-du-nautilus.svg",
+      "question": "Partie II",
+      "legende": "Le changement d’hypothèse d’Aronnax explique comment une expérience corrige une habitude intellectuelle"
+    },
+    {
+      "fichier": "figures/partage-de-lair.svg",
+      "question": "Partie III",
+      "legende": "Le partage de l’air distingue le besoin que tous éprouvent de la valeur qui motive le don"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Fran%C3%A7ais.pdf",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_francais_xusr_26.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20Filieres_Fran%C3%A7ais%20OK.pdf",
+    "programme": "https://www.education.gouv.fr/bo/2025/Hebdo23/MENS2514209A"
+  },
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-relecture indépendante du sujet commun, du rapport 2026, du plan et de la dissertation. Vérification du thème et du recours aux trois œuvres prescrites."
+  }
+}

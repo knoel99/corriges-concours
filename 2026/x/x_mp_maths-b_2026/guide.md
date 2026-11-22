@@ -1,4 +1,4 @@
-# X MP — Mathématiques B 2026 · Corrigé guidé
+# X MP-MPI — Mathématiques B 2026 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
@@ -10,9 +10,9 @@ $$S_f(M)=\frac1n\sum_{(\lambda,m_\lambda)\in\mathrm{Sp}(M)}m_\lambda f(\lambda),
 
 moyenne de $f$ sur le spectre. Deux lois limites apparaissent.
 
-Pour la matrice tridiagonale déterministe $T_n$ (et ses variantes $T_n(a,b,c)$), c'est la **loi de l'arcsinus**, de densité $\frac{1}{\pi\sqrt{4-x^2}}$ sur $]-2,2[$.
+Pour la matrice tridiagonale $T_n$, c’est la **loi de l’arcsinus**, de densité $\frac{1}{\pi\sqrt{4-x^2}}$ sur $]-2,2[$. Pour $T_n(a,b,c)$ avec $bc>0$, on obtient son image par $x\mapsto a+\sqrt{bc}\,x$.
 
-Pour une matrice symétrique aléatoire $X_n$ à coefficients indépendants normalisés par $\sqrt n$ (matrice de Wigner), c'est la **loi du demi-cercle**, de densité $\frac{\sqrt{4-x^2}}{2\pi}$. On démontre, sous une hypothèse sur les moments $(H_k)$, que $S_n(f)$ se concentre autour de $\Sigma(f)$.
+Pour une matrice symétrique aléatoire $X_n$ dont les coefficients sur et au-dessus de la diagonale sont indépendants et divisés par $\sqrt n$ (matrice de Wigner), c'est la **loi du demi-cercle**, de densité $\frac{\sqrt{4-x^2}}{2\pi}$. On démontre, sous une hypothèse sur les moments $(H_k)$, que $S_n(f)$ se concentre autour de $\Sigma(f)$.
 
 Au passage, la partie III donne une preuve du **théorème de Weierstrass**.
 
@@ -23,9 +23,9 @@ Au passage, la partie III donne une preuve du **théorème de Weierstrass**.
 | Partie | Questions | Contenu | Outils |
 |---|---|---|---|
 | Préliminaire | 1 | suite récurrente linéaire d'ordre 2 à paramètre | équation caractéristique |
-| I | 2 à 4b | sommes de Riemann décalées, intégrale de l'arcsinus, moments $\binom{2m}m$, limite d'une loi uniforme discrète | uniforme continuité, changement de variable, intégrales généralisées |
+| I | 2 à 4b | sommes de Riemann décalées, intégrale de l'arcsinus, moments $\binom{2m}m$, limite d'une loi uniforme discrète | continuité uniforme, changement de variable, intégrales généralisées |
 | II | 5a à 9b | polynôme caractéristique de $T_n$, valeurs propres $2\cos\frac{k\pi}{n+1}$, matrices $T_n(a,b,c)$, comptage des valeurs propres | déterminants, similitude, formule du binôme |
-| III | 10a à 12 | théorème de Weierstrass par les polynômes $(1-X^n)^{2^n}$ | convergence uniforme, uniforme continuité |
+| III | 10a à 12 | théorème de Weierstrass par les polynômes $(1-X^n)^{2^n}$ | convergence uniforme, continuité uniforme |
 | IV | 13a à 17b | matrices de Wigner, moments de Catalan, inégalités de queue, concentration, conclusion | théorème spectral, Markov, Bienaymé-Tchebychev |
 
 **Notions du programme mobilisées.** Suites récurrentes linéaires d'ordre 2, théorème de Heine, sommes de Riemann, intégrales généralisées et changement de variable, déterminants tridiagonaux, matrices semblables et polynôme caractéristique, théorème spectral, convergence uniforme, espérance et variance, inégalités de Markov et de Bienaymé-Tchebychev.
@@ -96,7 +96,7 @@ $$\boxed{u_n=(-1)^{n+1}\,n.}$$
 
 ## Première Partie — loi de l'arcsinus
 
-On identifie la limite de moyennes du type $\frac1n\sum_kf\big(2\cos\frac{k\pi}{n+1}\big)$ : c'est l'intégrale de $f$ contre la densité de l'arcsinus. Outils : sommes de Riemann, uniforme continuité, changement de variable dans une intégrale généralisée.
+On identifie la limite de moyennes du type $\frac1n\sum_kf\big(2\cos\frac{k\pi}{n+1}\big)$ : c'est l'intégrale de $f$ contre la densité de l'arcsinus. Outils : sommes de Riemann, continuité uniforme, changement de variable dans une intégrale généralisée.
 
 ### Question 2
 
@@ -128,7 +128,7 @@ Donc $v_n-R_n\to0$ et $w_n-R_n\to0$. Les deux suites convergent, et
 $$\boxed{\lim_{n\to\infty}v_n=\lim_{n\to\infty}w_n=\int_0^1f(t)\,\mathrm dt.}$$
 
 > [!METHODE]
-> Pour une somme de Riemann « décalée », on se ramène à la somme usuelle par uniforme continuité dès que le décalage des points tend vers $0$ uniformément en $k$. Ce schéma resservira en 4a.
+> Pour une somme de Riemann « décalée », on se ramène à la somme usuelle par continuité uniforme dès que le décalage des points tend vers $0$ uniformément en $k$. Ce schéma resservira en 4a.
 
 > [!PIEGE]
 > Écrire « $v_n$ est une somme de Riemann » ne suffit pas. Les points $\frac{k}{n+1}$ ne sont pas ceux d'une subdivision régulière de pas $\frac1n$, et le facteur $\frac1n$ ne correspond pas au pas $\frac1{n+1}$ : c'est précisément ce qu'il faut justifier.
@@ -167,7 +167,7 @@ $$\boxed{I(f)=\frac1\pi\int_0^\pi f(2\cos\theta)\,\mathrm d\theta.}$$
 > Majorer $\left|\int f(x)/\sqrt{4-x^2}\,\mathrm dx\right|$ puis conclure « donc l'intégrale converge » ne prouve rien : on ne majore la valeur absolue d'une intégrale qu'une fois son existence acquise. Le rapport 2026 cite une rédaction de ce type et précise : « c'est la majoration de l'intégrale de valeur absolue qui permet de montrer la convergence, et pas de la valeur absolue de l'intégrale ».
 
 > [!JURY]
-> Rapport 2026 : « les hypothèses sur le changement de variables sont rarement vérifiées ». Il rappelle qu'« un changement de variables dans une intégrale généralisée doit être bijectif, strictement monotone et de classe $\mathcal C^1$ ». Le jury signale aussi un argument plus rapide que la preuve séparée de la convergence : un tel changement de variable préserve la nature de l'intégrale.
+> Rapport 2026 : « les hypothèses sur le changement de variables sont rarement vérifiées ». La bijection $\theta\mapsto2\cos\theta$ est strictement décroissante et de classe $\mathcal C^1$ sur $]0,\pi[$. Le rapport signale qu’on pouvait également déduire la convergence de l’intégrale en $x$ de celle de l’intégrale en $\theta$.
 
 ### Question 3b
 
@@ -279,6 +279,8 @@ Notons $Z_n=2\cos\frac{\pi U_n}{n+1}$. Notons aussi $F(y)=\frac1\pi\int_{-2}^y\f
 **Cas $y\in\,]-2,2[$.** Soit $\eta>0$ avec $[y-\eta,y+\eta]\subset[-2,2]$. On définit deux fonctions continues sur $[-2,2]$, affines par morceaux :
 - $\phi^-$ vaut $1$ sur $[-2,y-\eta]$, $0$ sur $[y,2]$, et est affine sur $[y-\eta,y]$ ;
 - $\phi^+$ vaut $1$ sur $[-2,y]$, $0$ sur $[y+\eta,2]$, et est affine sur $[y,y+\eta]$.
+
+![Figure 1 — Les deux fonctions continues encadrent l’indicatrice de x < y. Leur écart avec elle est contenu dans deux intervalles de longueur η.](figures/q4b-encadrement.svg)
 
 Sur $[-2,2]$, on a $0\le\phi^-\le\mathbf 1_{]-\infty,y[}\le\phi^+\le1$. Par croissance de l'espérance,
 
@@ -537,7 +539,7 @@ Par 4a, cette quantité converge, et
 
 $$\boxed{\lim_{n\to+\infty}S_f(T_n)=\frac1\pi\int_{-2}^2\frac{f(x)}{\sqrt{4-x^2}}\,\mathrm dx.}$$
 
-![Figure 1 — Valeurs propres 2cos θ_k de T_8 : projections d'angles équirépartis sur le demi-cercle de rayon 2, et densité de l'arcsinus sur le même axe](figures/q7-valeurs-propres-demi-cercle.svg)
+![Figure 2 — Valeurs propres 2cos θ_k de T_8 : projections d'angles équirépartis sur le demi-cercle de rayon 2, et densité de l'arcsinus sur le même axe](figures/q7-valeurs-propres-demi-cercle.svg)
 
 ### Question 8a
 
@@ -594,6 +596,8 @@ Pour $M=T_n(0,b,c)$, les coefficients non nuls sont $b$ en $(i,i+1)$ et $c$ en $
 Ils deviennent respectivement $bc$ et $c\cdot c^{-1}=1$. Donc $D^{-1}T_n(0,b,c)D=T_n(0,bc,1)$.
 
 Ces matrices sont semblables : elles ont le même polynôme caractéristique, donc le même spectre réel avec multiplicités.
+
+![Figure 3 — Exemple de conjugaison pour b = −3 et c = −2. La surdiagonale devient bc = 6 et la sous-diagonale devient 1.](figures/q8b-conjugaison.svg)
 
 Si $c=0$, les matrices $T_n(0,b,0)$ et $T_n(0,0,1)$ sont strictement triangulaires, de polynôme caractéristique $X^n$. Leurs spectres sont tous deux $\{(0,n)\}$.
 
@@ -770,17 +774,17 @@ $$\boxed{\begin{aligned}&Q_n\to1\ \text{uniformément sur }[0,\kappa]\\ &Q_n\to0
 
 #### Solution
 
-Soit $\eta\in\,]0,1]$ et $\kappa=\frac{1-\eta}2\in\left[0,\frac12\right[$. L'application $x\mapsto t=\frac{1-x}2$ envoie $[-1,1]$ sur $[0,1]$, et $P_n(x)=Q_n(t)$.
+Pour $\eta=1$, l’ensemble de convergence est vide et la condition de convergence uniforme est satisfaite. Supposons désormais $0<\eta<1$ et posons $\kappa=\frac{1-\eta}2\in\left[0,\frac12\right[$. L'application $x\mapsto t=\frac{1-x}2$ envoie $[-1,1]$ sur $[0,1]$, et $P_n(x)=Q_n(t)$.
 - Si $x\in[\eta,1]$, alors $t\in[0,\kappa]$ et $H(x)=1$. Donc $\sup_{[\eta,1]}|P_n-H|\le\sup_{[0,\kappa]}|Q_n-1|$.
 - Si $x\in[-1,-\eta]$, alors $t\in\left[\frac{1+\eta}2,1\right]=[1-\kappa,1]$ et $H(x)=0$. Donc $\sup_{[-1,-\eta]}|P_n-H|\le\sup_{[1-\kappa,1]}Q_n$.
 
-Comme $[-1,1]\setminus[-\eta,\eta]\subset[-1,-\eta]\cup[\eta,1]$, 10a donne :
+Pour $0<\eta<1$, l’inclusion $[-1,1]\setminus[-\eta,\eta]\subset[-1,-\eta]\cup[\eta,1]$ et la question 10a donnent
 
 $$\boxed{\sup_{x\in[-1,1]\setminus[-\eta,\eta]}|P_n(x)-H(x)|\xrightarrow[n\to\infty]{}0.}$$
 
 On note aussi que $0\le P_n\le1$ sur $[-1,1]$.
 
-![Figure 2 — Graphes de P_2, P_4, P_8 : convergence vers l'échelon H hors de la bande −η ≤ x ≤ η, et correspondance x ↔ t = (1 − x)/2 avec les intervalles de 10a](figures/q10b-pn-vers-echelon.svg)
+![Figure 4 — Graphes de P_2, P_4, P_8 : convergence vers l'échelon H hors de la bande −η ≤ x ≤ η, et correspondance x ↔ t = (1 − x)/2 avec les intervalles de 10a](figures/q10b-pn-vers-echelon.svg)
 
 ### Question 11
 
@@ -800,7 +804,7 @@ $$a_i=f(c_i)-f(c_{i-1}),$$
 
 pour $1\le i\le N$.
 
-Comme $|c_i-c_{i-1}|\le\delta$, on a $|a_i|\le\varepsilon$. Soit $\Phi=\sum_{i=1}^Na_iH(\cdot-c_i)$.
+Comme $|c_i-c_{i-1}|\le\delta$, on a $|a_i|\le\varepsilon$. Pour interpréter les translations sur tout le segment, prolongeons $H$ à $\mathbb R$ par $H(t)=\mathbf 1_{[0,+\infty[}(t)$. Posons $\Phi=\sum_{i=1}^Na_iH(\cdot-c_i)$.
 
 Pour $x\in[c_j,c_{j+1}[$, avec $0\le j\le N$, on a $H(x-c_i)=1$ exactement pour $i\le j$. La somme télescope, et $f(c_0)=f(-1)=0$ :
 
@@ -838,7 +842,7 @@ avec $a_i=f(c_i)-f(c_{i-1})\in[-\varepsilon,\varepsilon]$.
 
 **Remarque sur l'indication.** Pour $x\in[-1,1]$ et $c_i>0$, le réel $x-c_i$ peut être $<-1$.
 
-Alors $\frac{1-(x-c_i)}2>1$, et $P_n(x-c_i)$ est une valeur de $Q_n$ hors de $[0,1]$, où $(1-t^n)^{2^n}\to+\infty$.
+Dans ce cas, $t=(1-x+c_i)/2>1$. Pour ce $t$ fixé, $t^n-1$ tend vers $+\infty$ et $Q_n(t)=(t^n-1)^{2^n}$ dès $n\ge1$. Ainsi $P_n(x-c_i)$ diverge.
 
 On utilise donc $P_n\!\left(\frac{X-c_i}2\right)$, ce qui garde l'argument dans $[-1,1]$ sans changer la position du saut.
 
@@ -876,7 +880,7 @@ $$\begin{aligned}
 &\le\frac\varepsilon3+\frac{2\varepsilon}3=\varepsilon.
 \end{aligned}$$
 
-![Figure 3 — La fonction f, l'escalier Φ et le polynôme F_n : F_n ne s'écarte de Φ que dans les bandes disjointes de largeur 2η centrées en c_i, d'au plus un saut a_i](figures/q12-echelons-et-bandes.svg)
+![Figure 5 — L’escalier Φ approche f. Hors des bandes, chaque échelon est approché uniformément. Dans chaque bande, un seul terme peut contribuer à hauteur d’un saut.](figures/q12-echelons-et-bandes.svg)
 
 **Conclusion.** Pour $n$ assez grand, le polynôme
 
@@ -885,7 +889,7 @@ $$\boxed{P=f(-1)+\sum_{i=1}^Na_iP_n\!\left(\frac{X-c_i}2\right)}$$
 vérifie $|f-P|\le\varepsilon$ sur $[-1,1]$. Ici, $a_i$ et $c_i$ sont construits pour $f-f(-1)$.
 
 > [!PIEGE]
-> L'indication de l'énoncé, prise au pied de la lettre, évalue $P_n$ hors de $[-1,1]$ dès qu'un $c_i$ est positif, et la convergence de 10b n'y dit plus rien : les $P_n$ y explosent (par exemple $P_7(-1{,}4)\approx6\cdot10^{52}$). Un correcteur attentif sanctionnera une preuve qui applique 10b en dehors de son domaine.
+> L'indication de l'énoncé, prise au pied de la lettre, évalue $P_n$ hors de $[-1,1]$ dès qu'un $c_i$ est positif, et la convergence de 10b n'y dit plus rien : les $P_n$ y explosent (par exemple $P_7(-1{,}4)\approx6\cdot10^{52}$). Le changement d’échelle rétablit l’hypothèse de 10b pour chaque translation.
 
 > [!METHODE]
 > Schéma « approximation en deux étapes » : une approximation grossière par des fonctions simples (ici des échelons), puis l'approximation de chaque fonction simple. L'erreur se répartit en $\frac\varepsilon3+\frac\varepsilon3+\frac\varepsilon3$, et la zone de mauvaise approximation est contrôlée par la petitesse des sauts.
@@ -961,6 +965,8 @@ $$\boxed{\begin{aligned}\Sigma(f_{2m+1})&=0\\ \Sigma(f_{2m})&=\frac{1}{m+1}\bino
 
 Ce sont les nombres de Catalan $1,1,2,5,14,\dots$
 
+![Figure 6 — La densité du demi-cercle et celle de l’arcsinus sur le même axe. Elles ont chacune une aire de 1 et se comportent différemment aux bords.](figures/q13b-densites.svg)
+
 > [!METHODE]
 > Relier la nouvelle intégrale à une intégrale déjà calculée évite de refaire un calcul de Wallis. Contrôle : $\Sigma(f_0)=1$, c'est bien une densité de probabilité.
 
@@ -990,6 +996,8 @@ Donc $\mathbb E(\operatorname{Tr}(X_n)^2)=1$, et $\frac1{n^2}\mathbb E(\operator
 **$k=2$.** On a $\operatorname{Tr}(X_n^2)=\sum_{i,j}(X_n)_{i,j}^2=\frac1nY$, où
 
 $$Y=\sum_{i}W_{i,i}^2+2\sum_{i<j}W_{i,j}^2.$$
+
+![Figure 7 — Le carré d’un coefficient diagonal intervient une fois dans la trace de X₃². Le carré d’un coefficient hors diagonale y intervient deux fois.](figures/q13c-paires-symetriques.svg)
 
 Comme $\mathbb E(W^2)=1$, on a $\mathbb E(Y)=n+n(n-1)=n^2$. D'où $\frac1n\mathbb E(\operatorname{Tr}X_n^2)=1=\Sigma(f_2)$.
 
@@ -1029,7 +1037,7 @@ $$\boxed{(H_0),\ (H_1),\ (H_2)\ \text{sont vraies.}}$$
 
 On a $g_{k,B}\ge0$, donc $S_n(g_{k,B})=\frac1n\sum m_\lambda g_{k,B}(\lambda)\ge0$ : la variable est **positive**.
 
-Pour $|x|>B$, on a $|x|^k>B^k$, donc
+Pour $|x|>B$, on a $|x|^k\ge B^k>0$, avec égalité quand $k=0$. Ainsi
 
 $$|x|^k=\frac{x^{2k}}{|x|^k}\le\frac{x^{2k}}{B^k}.$$
 
@@ -1223,7 +1231,7 @@ $$\boxed{\lim_{n\to+\infty}\mathbb P\big(|S_n(f)-\Sigma(f)|\ge\varepsilon\big)=0
 
 **Méthodes à retenir.**
 - Suites récurrentes linéaires d'ordre 2 à paramètre, y compris complexe, et leur lien avec les déterminants tridiagonaux (relation à trois termes).
-- Sommes de Riemann à points décalés : se ramener à la somme usuelle par uniforme continuité.
+- Sommes de Riemann à points décalés : se ramener à la somme usuelle par continuité uniforme.
 - Calcul de $\int_0^{2\pi}\cos^n$ par les exponentielles et le binôme. Moments de l'arcsinus : $\binom{2m}m$ ; du demi-cercle : $\frac1{m+1}\binom{2m}m$.
 - Passage d'une convergence testée sur les fonctions continues à une convergence de probabilités $\mathbb P(Z_n<y)$ par encadrement de l'indicatrice.
 - Similitude diagonale pour symétriser une matrice tridiagonale : seul le produit des coefficients symétriques compte.

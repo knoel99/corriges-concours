@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="222" viewBox="0 0 600 222" role="img" aria-labelledby="titre description">
+<title id="titre">Conjugaison diagonale pour n = 3</title>
+<desc id="description">D multiplie la surdiagonale de A par c et divise sa sous-diagonale par c. Ici b = −3 et c = −2.</desc>
+<rect width="600" height="222" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif">
+<text x="132" y="26" text-anchor="middle" font-size="16" fill="#172432" font-weight="bold">A = T₃(0, −3, −2)</text>
+<text x="461" y="26" text-anchor="middle" font-size="16" fill="#172432" font-weight="bold">D⁻¹ A D = T₃(0, 6, 1)</text>
+<rect x="69" y="44" width="40" height="32" fill="white"/>
+<text x="89" y="65" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="111" y="44" width="40" height="32" fill="#d6eaf3"/>
+<text x="131" y="65" text-anchor="middle" font-size="17" fill="#172432">−3</text>
+<rect x="153" y="44" width="40" height="32" fill="white"/>
+<text x="173" y="65" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="69" y="78" width="40" height="32" fill="#fae4d7"/>
+<text x="89" y="99" text-anchor="middle" font-size="17" fill="#172432">−2</text>
+<rect x="111" y="78" width="40" height="32" fill="white"/>
+<text x="131" y="99" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="153" y="78" width="40" height="32" fill="#d6eaf3"/>
+<text x="173" y="99" text-anchor="middle" font-size="17" fill="#172432">−3</text>
+<rect x="69" y="112" width="40" height="32" fill="white"/>
+<text x="89" y="133" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="111" y="112" width="40" height="32" fill="#fae4d7"/>
+<text x="131" y="133" text-anchor="middle" font-size="17" fill="#172432">−2</text>
+<rect x="153" y="112" width="40" height="32" fill="white"/>
+<text x="173" y="133" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<path d="M 69 43 h -7 v 102 h 7" stroke="#172432" stroke-width="1.6" fill="none"/>
+<path d="M 193 43 h 7 v 102 h -7" stroke="#172432" stroke-width="1.6" fill="none"/>
+<rect x="399" y="44" width="40" height="32" fill="white"/>
+<text x="419" y="65" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="441" y="44" width="40" height="32" fill="#d6eaf3"/>
+<text x="461" y="65" text-anchor="middle" font-size="17" fill="#172432">6</text>
+<rect x="483" y="44" width="40" height="32" fill="white"/>
+<text x="503" y="65" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="399" y="78" width="40" height="32" fill="#fae4d7"/>
+<text x="419" y="99" text-anchor="middle" font-size="17" fill="#172432">1</text>
+<rect x="441" y="78" width="40" height="32" fill="white"/>
+<text x="461" y="99" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="483" y="78" width="40" height="32" fill="#d6eaf3"/>
+<text x="503" y="99" text-anchor="middle" font-size="17" fill="#172432">6</text>
+<rect x="399" y="112" width="40" height="32" fill="white"/>
+<text x="419" y="133" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<rect x="441" y="112" width="40" height="32" fill="#fae4d7"/>
+<text x="461" y="133" text-anchor="middle" font-size="17" fill="#172432">1</text>
+<rect x="483" y="112" width="40" height="32" fill="white"/>
+<text x="503" y="133" text-anchor="middle" font-size="17" fill="#172432">0</text>
+<path d="M 399 43 h -7 v 102 h 7" stroke="#172432" stroke-width="1.6" fill="none"/>
+<path d="M 523 43 h 7 v 102 h -7" stroke="#172432" stroke-width="1.6" fill="none"/>
+<text x="297" y="70" text-anchor="middle" font-size="14" fill="#172432">D = diag(1, −2, 4)</text>
+<line x1="232" y1="91" x2="357" y2="91" stroke="#62717b" stroke-width="1.6"/>
+<path d="M 349 85 L 357 91 L 349 97" stroke="#62717b" stroke-width="1.6" fill="none"/>
+<text x="299" y="174" text-anchor="middle" font-size="15" fill="#175774">Surdiagonale  (−3) × (−2) = 6</text>
+<text x="299" y="202" text-anchor="middle" font-size="15" fill="#974114">Sous-diagonale  (−2) ÷ (−2) = 1</text></g>
+</svg>

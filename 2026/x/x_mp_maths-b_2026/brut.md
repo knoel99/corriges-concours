@@ -1,4 +1,4 @@
-# X MP — Mathématiques B 2026 · Corrigé brut
+# X MP-MPI — Mathématiques B 2026 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
@@ -145,6 +145,8 @@ Notons $Z_n=2\cos\frac{\pi U_n}{n+1}$. Notons aussi $F(y)=\frac1\pi\int_{-2}^y\f
 **Cas $y\in\,]-2,2[$.** Soit $\eta>0$ avec $[y-\eta,y+\eta]\subset[-2,2]$. On définit deux fonctions continues sur $[-2,2]$, affines par morceaux :
 - $\phi^-$ vaut $1$ sur $[-2,y-\eta]$, $0$ sur $[y,2]$, et est affine sur $[y-\eta,y]$ ;
 - $\phi^+$ vaut $1$ sur $[-2,y]$, $0$ sur $[y+\eta,2]$, et est affine sur $[y,y+\eta]$.
+
+![Figure 1 — Les deux fonctions continues encadrent l’indicatrice de x < y. Leur écart avec elle est contenu dans deux intervalles de longueur η.](figures/q4b-encadrement.svg)
 
 Sur $[-2,2]$, on a $0\le\phi^-\le\mathbf 1_{]-\infty,y[}\le\phi^+\le1$. Par croissance de l'espérance,
 
@@ -318,7 +320,7 @@ Par 4a, cette quantité converge, et
 
 $$\boxed{\lim_{n\to+\infty}S_f(T_n)=\frac1\pi\int_{-2}^2\frac{f(x)}{\sqrt{4-x^2}}\,\mathrm dx.}$$
 
-![Figure 1 — Valeurs propres 2cos θ_k de T_8 : projections d'angles équirépartis sur le demi-cercle de rayon 2, et densité de l'arcsinus sur le même axe](figures/q7-valeurs-propres-demi-cercle.svg)
+![Figure 2 — Valeurs propres 2cos θ_k de T_8 : projections d'angles équirépartis sur le demi-cercle de rayon 2, et densité de l'arcsinus sur le même axe](figures/q7-valeurs-propres-demi-cercle.svg)
 
 ### Question 8a
 
@@ -350,6 +352,8 @@ Pour $M=T_n(0,b,c)$, les coefficients non nuls sont $b$ en $(i,i+1)$ et $c$ en $
 Ils deviennent respectivement $bc$ et $c\cdot c^{-1}=1$. Donc $D^{-1}T_n(0,b,c)D=T_n(0,bc,1)$.
 
 Ces matrices sont semblables : elles ont le même polynôme caractéristique, donc le même spectre réel avec multiplicités.
+
+![Figure 3 — Exemple de conjugaison pour b = −3 et c = −2. La surdiagonale devient bc = 6 et la sous-diagonale devient 1.](figures/q8b-conjugaison.svg)
 
 Si $c=0$, les matrices $T_n(0,b,0)$ et $T_n(0,0,1)$ sont strictement triangulaires, de polynôme caractéristique $X^n$. Leurs spectres sont tous deux $\{(0,n)\}$.
 
@@ -456,17 +460,17 @@ $$\boxed{\begin{aligned}&Q_n\to1\ \text{uniformément sur }[0,\kappa]\\ &Q_n\to0
 
 ### Question 10b
 
-Soit $\eta\in\,]0,1]$ et $\kappa=\frac{1-\eta}2\in\left[0,\frac12\right[$. L'application $x\mapsto t=\frac{1-x}2$ envoie $[-1,1]$ sur $[0,1]$, et $P_n(x)=Q_n(t)$.
+Pour $\eta=1$, l’ensemble de convergence est vide et la condition de convergence uniforme est satisfaite. Supposons désormais $0<\eta<1$ et posons $\kappa=\frac{1-\eta}2\in\left[0,\frac12\right[$. L'application $x\mapsto t=\frac{1-x}2$ envoie $[-1,1]$ sur $[0,1]$, et $P_n(x)=Q_n(t)$.
 - Si $x\in[\eta,1]$, alors $t\in[0,\kappa]$ et $H(x)=1$. Donc $\sup_{[\eta,1]}|P_n-H|\le\sup_{[0,\kappa]}|Q_n-1|$.
 - Si $x\in[-1,-\eta]$, alors $t\in\left[\frac{1+\eta}2,1\right]=[1-\kappa,1]$ et $H(x)=0$. Donc $\sup_{[-1,-\eta]}|P_n-H|\le\sup_{[1-\kappa,1]}Q_n$.
 
-Comme $[-1,1]\setminus[-\eta,\eta]\subset[-1,-\eta]\cup[\eta,1]$, 10a donne :
+Pour $0<\eta<1$, l’inclusion $[-1,1]\setminus[-\eta,\eta]\subset[-1,-\eta]\cup[\eta,1]$ et la question 10a donnent
 
 $$\boxed{\sup_{x\in[-1,1]\setminus[-\eta,\eta]}|P_n(x)-H(x)|\xrightarrow[n\to\infty]{}0.}$$
 
 On note aussi que $0\le P_n\le1$ sur $[-1,1]$.
 
-![Figure 2 — Graphes de P_2, P_4, P_8 : convergence vers l'échelon H hors de la bande −η ≤ x ≤ η, et correspondance x ↔ t = (1 − x)/2 avec les intervalles de 10a](figures/q10b-pn-vers-echelon.svg)
+![Figure 4 — Graphes de P_2, P_4, P_8 : convergence vers l'échelon H hors de la bande −η ≤ x ≤ η, et correspondance x ↔ t = (1 − x)/2 avec les intervalles de 10a](figures/q10b-pn-vers-echelon.svg)
 
 ### Question 11
 
@@ -478,7 +482,7 @@ $$a_i=f(c_i)-f(c_{i-1}),$$
 
 pour $1\le i\le N$.
 
-Comme $|c_i-c_{i-1}|\le\delta$, on a $|a_i|\le\varepsilon$. Soit $\Phi=\sum_{i=1}^Na_iH(\cdot-c_i)$.
+Comme $|c_i-c_{i-1}|\le\delta$, on a $|a_i|\le\varepsilon$. Pour interpréter les translations sur tout le segment, prolongeons $H$ à $\mathbb R$ par $H(t)=\mathbf 1_{[0,+\infty[}(t)$. Posons $\Phi=\sum_{i=1}^Na_iH(\cdot-c_i)$.
 
 Pour $x\in[c_j,c_{j+1}[$, avec $0\le j\le N$, on a $H(x-c_i)=1$ exactement pour $i\le j$. La somme télescope, et $f(c_0)=f(-1)=0$ :
 
@@ -499,7 +503,7 @@ avec $a_i=f(c_i)-f(c_{i-1})\in[-\varepsilon,\varepsilon]$.
 
 **Remarque sur l'indication.** Pour $x\in[-1,1]$ et $c_i>0$, le réel $x-c_i$ peut être $<-1$.
 
-Alors $\frac{1-(x-c_i)}2>1$, et $P_n(x-c_i)$ est une valeur de $Q_n$ hors de $[0,1]$, où $(1-t^n)^{2^n}\to+\infty$.
+Dans ce cas, $t=(1-x+c_i)/2>1$. Pour ce $t$ fixé, $t^n-1$ tend vers $+\infty$ et $Q_n(t)=(t^n-1)^{2^n}$ dès $n\ge1$. Ainsi $P_n(x-c_i)$ diverge.
 
 On utilise donc $P_n\!\left(\frac{X-c_i}2\right)$, ce qui garde l'argument dans $[-1,1]$ sans changer la position du saut.
 
@@ -537,7 +541,7 @@ $$\begin{aligned}
 &\le\frac\varepsilon3+\frac{2\varepsilon}3=\varepsilon.
 \end{aligned}$$
 
-![Figure 3 — La fonction f, l'escalier Φ et le polynôme F_n : F_n ne s'écarte de Φ que dans les bandes disjointes de largeur 2η centrées en c_i, d'au plus un saut a_i](figures/q12-echelons-et-bandes.svg)
+![Figure 5 — L’escalier Φ approche f. Hors des bandes, chaque échelon est approché uniformément. Dans chaque bande, un seul terme peut contribuer à hauteur d’un saut.](figures/q12-echelons-et-bandes.svg)
 
 **Conclusion.** Pour $n$ assez grand, le polynôme
 
@@ -592,6 +596,8 @@ $$\boxed{\begin{aligned}\Sigma(f_{2m+1})&=0\\ \Sigma(f_{2m})&=\frac{1}{m+1}\bino
 
 Ce sont les nombres de Catalan $1,1,2,5,14,\dots$
 
+![Figure 6 — La densité du demi-cercle et celle de l’arcsinus sur le même axe. Elles ont chacune une aire de 1 et se comportent différemment aux bords.](figures/q13b-densites.svg)
+
 ### Question 13c
 
 **$k=0$.** $X_n^0=I_n$ et $\operatorname{Tr}(I_n)=n$. Donc $\frac1n\mathbb E(n)=1=\Sigma(f_0)$, et $\frac1{n^2}\mathbb E(n^2)=1=\Sigma(f_0)^2$.
@@ -607,6 +613,8 @@ Donc $\mathbb E(\operatorname{Tr}(X_n)^2)=1$, et $\frac1{n^2}\mathbb E(\operator
 **$k=2$.** On a $\operatorname{Tr}(X_n^2)=\sum_{i,j}(X_n)_{i,j}^2=\frac1nY$, où
 
 $$Y=\sum_{i}W_{i,i}^2+2\sum_{i<j}W_{i,j}^2.$$
+
+![Figure 7 — Le carré d’un coefficient diagonal intervient une fois dans la trace de X₃². Le carré d’un coefficient hors diagonale y intervient deux fois.](figures/q13c-paires-symetriques.svg)
 
 Comme $\mathbb E(W^2)=1$, on a $\mathbb E(Y)=n+n(n-1)=n^2$. D'où $\frac1n\mathbb E(\operatorname{Tr}X_n^2)=1=\Sigma(f_2)$.
 
@@ -630,7 +638,7 @@ $$\boxed{(H_0),\ (H_1),\ (H_2)\ \text{sont vraies.}}$$
 
 On a $g_{k,B}\ge0$, donc $S_n(g_{k,B})=\frac1n\sum m_\lambda g_{k,B}(\lambda)\ge0$ : la variable est **positive**.
 
-Pour $|x|>B$, on a $|x|^k>B^k$, donc
+Pour $|x|>B$, on a $|x|^k\ge B^k>0$, avec égalité quand $k=0$. Ainsi
 
 $$|x|^k=\frac{x^{2k}}{|x|^k}\le\frac{x^{2k}}{B^k}.$$
 
