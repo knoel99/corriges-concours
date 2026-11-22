@@ -117,6 +117,7 @@
 | 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
+| 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
@@ -328,6 +329,7 @@
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
+| 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENSATT | Administration du spectacle vivant | Cas pratique | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/brut.md) | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Chimie | [md](2026/g2e/g2e_bcpst_chimie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_chimie_2026/guide.md) |

@@ -1,0 +1,38 @@
+{
+  "slug": "bel_bl_sciences-sociales_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sciences sociales",
+    "annee": 2024
+  },
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA (Codex, famille GPT-6) à partir des sept documents du sujet et du rapport de jury 2024. Relecture indépendante du brut, du guidé et des trois figures par un second agent Codex.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_sciences_sociales.pdf",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/doc7-indices-entraide.svg",
+      "question": "Partie I",
+      "legende": "Indices de revenu avant et après entraide familiale pour deux classes d’âge et deux groupes professionnels (document 7)."
+    },
+    {
+      "fichier": "figures/doc6-donation-logement.svg",
+      "question": "Partie II",
+      "legende": "Donation ou héritage et accès à la propriété selon la personne qui reçoit le transfert (document 6)."
+    },
+    {
+      "fichier": "figures/doc2-montants-heritages.svg",
+      "question": "Partie II",
+      "legende": "Répartition des montants d’héritage par profession des bénéficiaires (document 2)."
+    }
+  ],
+  "date_revision": "2026-11-22",
+  "modele_revision": "GPT-6 (Codex)"
+}

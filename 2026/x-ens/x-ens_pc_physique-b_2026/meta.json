@@ -25,6 +25,16 @@
       "legende": "Relation de dispersion de la chaîne dimérisée pour ω1/ω2 = 2/3 (bande interdite entre √2ω1 et √2ω2) et pour ω1/ω2 = 1 (branches raccordées en bord de zone)"
     },
     {
+      "fichier": "figures/q15-3-evanescence-dimere.svg",
+      "question": "Q15.3",
+      "legende": "Dans la bande interdite, chaque sous-réseau alterne de signe et son amplitude décroît d’une maille à la suivante."
+    },
+    {
+      "fichier": "figures/q16-fermeture-gap.svg",
+      "question": "Q16",
+      "legende": "Bandes permises en fonction du contraste des pulsations des ressorts. Elles se rejoignent quand les deux raideurs sont égales."
+    },
+    {
       "fichier": "figures/q18-trajectoire-vecteur-d.svg",
       "question": "Q18",
       "legende": "Trajectoire de d(k) : cercle de centre (−ω1², 0) et de rayon ω2², parcouru dans le sens trigonométrique, origine extérieure si ω1 > ω2 et intérieure si ω1 < ω2"
@@ -32,12 +42,33 @@
     {
       "fichier": "figures/q21-mode-de-bord.svg",
       "question": "Q21",
-      "legende": "Mode de bord pour ω1g/ω2g = 0,7 : seules les masses impaires bougent, avec une amplitude alternée qui décroît de part et d'autre de l'interface"
+      "legende": "Exemple de mode d’interface au centre commun des bandes interdites en pulsation carrée. Les masses impaires ont des amplitudes alternées et localisées."
     },
     {
       "fichier": "figures/q29-dispersion-kelvin.svg",
       "question": "Q29",
       "legende": "Les trois branches (+), (0) et (−) dans le plan (kx, ω) pour f0 = ±1 (bandes interdites 0 < |ω| < 1) et pour f0 = 0 (branches concourantes)"
+    },
+    {
+      "fichier": "figures/q33-modes-kelvin-yanai.svg",
+      "question": "Q33",
+      "legende": "À fréquence fixée dans chacun des deux intervalles, une horizontale coupe une branche de Kelvin et une de Yanai."
+    },
+    {
+      "fichier": "figures/q35-vitesses-rossby.svg",
+      "question": "Q35",
+      "legende": "Les crêtes de Rossby se déplacent vers l’ouest. Le sens de propagation d’un paquet dépend de sa longueur d’onde."
     }
-  ]
+  ],
+  "date_revision": "2026-11-22",
+  "revision": {
+    "modele": "OpenAI Codex (GPT-6)",
+    "objet": "Relecture des 45 questions et sous-questions sur le sujet et le rapport 2026. Tracé discret de la question 15.3 et comparaison des comptages aux questions 31 et 33. Contre-vérification indépendante du tracé de la question 15.3 et des comptages des questions 31–33."
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20B.pdf",
+    "sujet_sha256": "70606db70a3ca6e6f4cb021eee7844df9a463903fa47541b2ff8bca545bff09b",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/PC_Physique%20B%20OK.pdf",
+    "rapport_sha256": "982c99b5c5b001d91090577f02c51fd342f04fa2ccccedc1a52dc995501e64fd"
+  }
 }
