@@ -21,7 +21,14 @@
 \setsansfont{Latin Modern Sans}[RawFeature={fallback=repliTexte}]
 \setmonofont{Latin Modern Mono}[RawFeature={fallback=repliMono}]
 \setmathfont{Latin Modern Math}
+$if(arabe)$
+\usepackage[bidi=basic,french]{babel}
+\babelprovide[import,onchar=ids fonts]{arabic}
+\babelfont[arabic]{rm}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Naskh Arabic}
+\babelfont[arabic]{sf}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Naskh Arabic}
+$else$
 \usepackage[french]{babel}
+$endif$
 \frenchsetup{SmallCapsFigTabCaptions=false}
 
 % --- Mise en page --------------------------------------------------------------
@@ -56,6 +63,9 @@
 \usepackage[version=4]{mhchem}
 \usepackage{listings}
 \usepackage{fancyhdr}
+$if(arabe)$
+\fancyhfinit{\selectlanguage{french}}
+$endif$
 \usepackage{lastpage}
 \usepackage[most]{tcolorbox}
 \usepackage{enumitem}

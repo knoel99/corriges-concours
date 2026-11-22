@@ -1,0 +1,89 @@
+{
+  "slug": "x-ens_psi_modelisation_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2026
+  },
+  "questions": 52,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par deux agents IA de la famille GPT-6 d'après l'énoncé officiel, ses figures et l'annexe. Chaque agent a contre-relu les questions de l'autre.",
+  "date_revision": "2026-11-22",
+  "modele_revision": "GPT-6 (Codex)",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_modelisation_xusr_26_allege.pdf",
+    "page_officielle": "https://www.ens.psl.eu/rapports-et-sujets-2026-psi",
+    "rapport": null
+  },
+  "figures": [
+    {
+      "fichier": "figures/q02-vitesse-mission.svg",
+      "question": "Q2",
+      "legende": "La loi de montée calculée plafonne à 135,7 m/s avec les données du tableau. La vitesse de palier prescrite vaut 153 m/s."
+    },
+    {
+      "fichier": "figures/q05-bilan-energetique.svg",
+      "question": "Q5",
+      "legende": "Travaux utiles du profil de vol avec la donnée de montée imposée. Le palier de 2 h 30 représente presque 90 % du total."
+    },
+    {
+      "fichier": "figures/q07-energie-et-masse.svg",
+      "question": "Q7",
+      "legende": "L'énergie des batteries disponibles part de zéro pour 29,4 t. Elle reste inférieure aux besoins lus sur la courbe du sujet, y compris sur la partie extrapolée."
+    },
+    {
+      "fichier": "figures/q15-debit-par-moteur.svg",
+      "question": "Q15",
+      "legende": "Tranche de la figure 11 à 6 500 m. Le débit de 19 kg/s se lit à Mach 0,5. Les 15 kg/s de l'annexe correspondent à Mach 0,4."
+    },
+    {
+      "fichier": "figures/q18-detente-et-puissance.svg",
+      "question": "Q18",
+      "legende": "La turbine fournit du travail à l'arbre. La tuyère accélère les gaz. Le compresseur et l'hélice se partagent la puissance d'arbre."
+    },
+    {
+      "fichier": "figures/q23-puissances-en-croisiere.svg",
+      "question": "Q23",
+      "legende": "Lectures approchées sur les figures 14 et 15 à la même altitude. L'excédent de puissance à Mach 0,4 devient un déficit à Mach 0,6."
+    },
+    {
+      "fichier": "figures/q26-masselotte.svg",
+      "question": "Q26",
+      "legende": "Coupe de la masselotte dans le plan perpendiculaire au pivot. Le distributeur exerce au contact A₃ un effort vertical descendant sur la masselotte."
+    },
+    {
+      "fichier": "figures/q33-pas-electromecanique.svg",
+      "question": "Q33",
+      "legende": "Dans le moyeu, une vis tourne et l'écrou est guidé en translation. Une biellette et une manivelle font pivoter la pale autour de son axe radial."
+    },
+    {
+      "fichier": "figures/q37-regresseurs.svg",
+      "question": "Q37",
+      "legende": "Trois mesures pour un polynôme de degré deux. Une ligne décrit un courant mesuré et une colonne suit une puissance de ce courant dans les trois mesures."
+    },
+    {
+      "fichier": "figures/q42-impedance-cellule.svg",
+      "question": "Q42",
+      "legende": "Impédance interne vue depuis les bornes de la cellule lorsque la source constante est neutralisée. À basse fréquence le courant traverse toutes les résistances. À haute fréquence le condensateur dérive la branche Ra + Rc."
+    },
+    {
+      "fichier": "figures/q43-bode-cellule.svg",
+      "question": "Q43",
+      "legende": "Exemple de tracé lorsque Ri vaut 2 Ω, Ra + Rc vaut 18 Ω et le rapport des pulsations de cassure vaut 10. Traits pleins pour les asymptotes et pointillés pour la réponse exacte."
+    },
+    {
+      "fichier": "figures/q46-tensions-en-quadrature.svg",
+      "question": "Q46",
+      "legende": "Diagramme de Fresnel avec le courant pris pour référence de phase. La tension inductive et la force contre-électromotrice forment les côtés perpendiculaires du triangle des tensions."
+    },
+    {
+      "fichier": "figures/q48-champs-entre-conducteurs.svg",
+      "question": "Q48",
+      "legende": "L’axe du cylindre positif est en −R et celui du cylindre négatif en L + R. Au point d’abscisse x entre les deux surfaces, les deux champs s’additionnent dans le même sens."
+    }
+  ]
+}

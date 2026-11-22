@@ -28,6 +28,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -127,6 +128,9 @@ def generer_tex(markdown: str, meta: dict, nature: str, sortie: Path) -> Path:
         "--template", str(GABARIT), "--lua-filter", str(FILTRE), "--listings",
         "--wrap=preserve", "-o", str(sortie),
     ]
+    # Babel choisit la police et la direction des passages arabes dans ces copies bilingues.
+    if re.search(r"[ء-يٱ-ۓ]", corps):
+        commande += ["-M", "arabe=true"]
     for cle, valeur in variables_gabarit(meta, nature, titre).items():
         commande += ["-V", f"{cle}={valeur}"]
     subprocess.run(commande, input=corps, text=True, check=True, capture_output=True)
