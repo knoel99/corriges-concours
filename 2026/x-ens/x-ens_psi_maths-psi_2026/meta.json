@@ -1,0 +1,47 @@
+{
+  "slug": "x-ens_psi_maths-psi_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2026
+  },
+  "questions": 17,
+  "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture indépendante des solutions sur le sujet officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_maths_xusr_26.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-corde-tangente.svg",
+      "question": "Q1",
+      "legende": "Pour f(t) = t², la courbe est au-dessus de sa tangente en x et au-dessous de la corde entre x et y."
+    },
+    {
+      "fichier": "figures/q02-penalisation.svg",
+      "question": "Q2",
+      "legende": "Exemple f(x) = exp(−x), avec ε = 0,65. La fonction pénalisée atteint son minimum en xε, où les deux dérivées se compensent."
+    },
+    {
+      "fichier": "figures/q04-signes-derivee.svg",
+      "question": "Q4",
+      "legende": "Pour R égal au carré de la distance au segment de −1 à 1, g′ vaut −√R à gauche du segment, zéro sur le segment et +√R à droite."
+    },
+    {
+      "fichier": "figures/q06-image-noyau.svg",
+      "question": "Q6",
+      "legende": "Pour M = diag(2,0) et B = (2,0), f(x,y) = x² − 2x. L’ensemble des minima est la droite U + ker M, avec U = (1,0)."
+    },
+    {
+      "fichier": "figures/q08-racine-spectrale.svg",
+      "question": "Q8",
+      "legende": "Pour A = diag(4,4,1), toute racine symétrique positive agit par 2 sur le plan propre de 4 et par 1 sur la droite propre de 1."
+    },
+    {
+      "fichier": "figures/q15-trajectoires.svg",
+      "question": "Q15",
+      "legende": "Pour M = diag(1,2) et B = (1,0), les coordonnées centrées décroissent comme exp(−t) et exp(−2t). Chaque trajectoire tend vers (1,0)."
+    }
+  ],
+  "date_revision": "2026-11-22"
+}

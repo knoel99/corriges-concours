@@ -1,0 +1,242 @@
+# BEL B/L — Mathématiques 2022 · Corrigé brut
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+Écrit commun aux ENS Ulm, Lyon et Paris-Saclay, à l'ENSAE et à l'ENSAI. Durée de quatre heures, sans calculatrice.
+
+## Problème A
+
+### Question 1
+
+À chaque lancer les deux gains $11$ et $-10$ sont équiprobables. La formule de l'espérance donne $\boxed{\mathbb E[X_i]=(11-10)/2=1/2}$.
+
+### Question 2
+
+**(2a)** Chaque lancer ajoute son gain au capital précédent, donc $S_n=S_{n-1}+X_n$. En sommant ces accroissements on obtient $\boxed{S_n=100+\sum_{i=1}^n X_i}$.
+
+**(2b)** Avec deux piles, le capital atteint $122$. Avec deux faces, il tombe à $80$. Avec une pièce de chaque sorte, dans l'un ou l'autre ordre, il vaut $101$. Les quatre suites ordonnées ont chacune probabilité $1/4$ par indépendance. Ainsi
+$$
+\mathbb P(S_2=k)=\begin{cases}1/4&k=80\ \text{ou}\ k=122,\\1/2&k=101,\\0&\text{sinon}.\end{cases}
+$$
+
+**(2c)** Par linéarité de l'espérance, $\boxed{\mathbb E[S_n]=100+n/2}$. La formule inclut $n=0$.
+
+### Question 3
+
+**(3a)** Après dix lancers, même dix pertes consécutives laissent $100-10\times10=0$. Ainsi $S_{10}$ est positive ou nulle, intégrable car bornée, et $160>0$. L'inégalité de Markov et (2c) donnent
+$$
+\mathbb P(S_{10}\ge160)\le\frac{\mathbb E[S_{10}]}{160}=\frac{105}{160}=\frac{21}{32}\le\frac23.
+$$
+
+**(3b)** Posons $\overline X_n=(S_n-100)/n$ pour $n\ge1$. Les $X_i$ sont indépendantes, de même loi et bornées. La loi faible des grands nombres donne $\overline X_n\to1/2$ en probabilité. Or $\{\overline X_n<1/4\}\subset\{|\overline X_n-1/2|\ge1/4\}$, de probabilité tendant vers zéro. Par complément,
+$$
+\boxed{\mathbb P(S_n\ge100+n/4)\longrightarrow1.}
+$$
+
+### Question 4
+
+Écrivons $P$ pour pile et $F$ pour face. L'arrêt a lieu à la première sortie de l'intervalle ouvert $]89,105[$.
+
+**(4a)** Avec $P$ on atteint $111$ et on s'arrête. Avec $F$ on reste en jeu à $90$. Ainsi $\boxed{\mathbb P(T=1)=1/2}$.
+
+**(4b)** Après $F$, un second $F$ mène à $80$ et un $P$ à $101$. Seule la suite $FF$ donne $T=2$, donc $\boxed{\mathbb P(T=2)=1/4}$.
+
+**(4c)** Avoir $T\ge3$ impose donc $FP$ aux deux premiers lancers, d'où $\boxed{S_2=101}$.
+
+**(4d)** Parmi les arrêts au plus tard au troisième lancer, les chemins terminaux sont $P$, $FF$ et $FPP$ (qui mène à $112$). Le chemin $FPF$ reste en jeu à $91$. Les chemins terminaux sont disjoints et de probabilités $1/2$, $1/4$, $1/8$. Seuls le premier et le troisième donnent un capital supérieur à $100$. Ainsi
+$$
+\boxed{\mathbb P(S_T>100\mid T\le3)=\frac{1/2+1/8}{1/2+1/4+1/8}=\frac57.}
+$$
+
+**(4e)** Depuis $100+j$, pour $0\le j\le4$, un pile arrête à $111+j$. Une face donne $90+j$, puis une seconde face arrête à $80+j$. L'unique prolongement pouvant atteindre exactement $105$ est donc $FP$, qui mène à $101+j$. Pour $j=0,1,2,3$, ce dernier capital est intérieur. Pour $j=4$, il vaut $105$. L'événement cherché est exactement la suite de cinq paires $FP$, de probabilité $\boxed{(1/4)^5=1/1024}$.
+
+![Figure 1 — Branches jusqu'au troisième lancer. Chaque branche a une probabilité de moitié. Les cases pleines correspondent aux arrêts.](figures/q04-arbre-arret.svg)
+
+### Question 5
+
+Le multiplicateur $Y_i$ prend les valeurs $1{,}11$ et $0{,}90$ avec probabilité $1/2$ chacune. Donc $\boxed{\mathbb E[Y_i]=(1{,}11+0{,}90)/2=1{,}005}$.
+
+### Question 6
+
+**(6a)** À chaque étape $\Pi_i=Y_i\Pi_{i-1}$. Comme $\Pi_0=100$, une récurrence donne $\boxed{\Pi_n=100\prod_{i=1}^nY_i}$.
+
+**(6b)** Les multiplicateurs sont indépendants et bornés. L'espérance de leur produit est le produit de leurs espérances. Il vient $\boxed{\mathbb E[\Pi_n]=100(1{,}005)^n}$, également vraie au rang zéro.
+
+### Question 7
+
+**(7a)** Les deux multiplicateurs sont strictement positifs. Les règles du logarithme donnent
+$$
+\alpha=-\tfrac12\bigl(\ln(1{,}11)+\ln(0{,}90)\bigr)=-\tfrac12\ln(0{,}999)>0,
+$$
+car $0<0{,}999<1$.
+
+**(7b)** Les variables $\ln Y_i$ sont indépendantes, de même loi et bornées. Leur moyenne $Z_n=\frac1n\sum_{i=1}^n\ln Y_i$ converge en probabilité vers $-\alpha$. Si $Z_n>-\alpha/2$, alors $|Z_n+\alpha|>\alpha/2$. Ainsi $\mathbb P(Z_n\le-\alpha/2)\to1$. Or $\Pi_n=100e^{n Z_n}$ par (6a), et l'exponentielle est strictement croissante. Finalement
+$$
+\boxed{\mathbb P(\Pi_n\le100e^{-\alpha n/2})\longrightarrow1.}
+$$
+
+### Question 8
+
+**(8a)** D'après (6b), $\mathbb E[\Pi_n]\to+\infty$. Pourtant, pour tout $\varepsilon>0$, la borne $100e^{-\alpha n/2}$ est inférieure à $\varepsilon$ pour $n$ assez grand. La question (7b) entraîne donc $\mathbb P(\Pi_n>\varepsilon)\to0$. Le capital tend vers zéro en probabilité alors que son espérance tend vers l'infini. Les trajectoires qui produisent des gains exceptionnellement élevés pèsent lourd dans la moyenne.
+
+**(8b)** Pour un grand nombre fixé de lancers, je choisirais le premier jeu si je cherche une forte probabilité d'améliorer ma mise. Sans la règle d'arrêt de (4), (3b) garantit avec probabilité tendant vers un un capital d'au moins $100+n/4$. Dans le second jeu, (7b) donne au contraire un capital proche de zéro avec forte probabilité. Si l'on retient la variante arrêtée du premier jeu, il conserve au moins $80$ à l'arrêt par l'analyse de (4e), tandis que le second devient inférieur à cette somme avec probabilité tendant vers un.
+
+## Problème B
+
+### Question 9
+
+**(9a)** Avec $A=(0,-1)$, $B=(b,1)$ et $M=(x,0)$, le théorème de Pythagore donne $\boxed{AM=\sqrt{1+x^2},\quad MB=\sqrt{1+(x-b)^2}}$.
+
+**(9b)** Ainsi $L(x)=AM+MB$ est **la longueur du chemin brisé** qui va de $A$ à $B$ en passant par $M$.
+
+### Question 10
+
+**(10a)** L'ordonnée à l'origine est celle de $A$, donc $\beta=-1$. La condition en $B$ s'écrit $\alpha b-1=1$, d'où $\boxed{\alpha=2/b,\quad\beta=-1}$ puisque $b>0$.
+
+**(10b)** Sur l'axe horizontal, l'ordonnée est nulle. L'équation $2x/b-1=0$ a pour seule solution $x=b/2$. Comme $0<b/2<b$, l'intersection appartient au segment et $\boxed{I=(b/2,0)}$.
+
+### Question 11
+
+Par l'inégalité triangulaire $AM+MB\ge AB$, avec égalité exactement quand $M\in[AB]$. L'axe des abscisses rencontre ce segment au seul point $I$ trouvé en (10b). Le minimum est atteint **uniquement en $M=I$** et vaut $AB=\sqrt{b^2+4}$.
+
+![Figure 2 — Pour $b=3$, le trajet par $M$ est plus long que le segment direct $AB$, qui coupe l'axe en $I$.](figures/q11-chemin-direct.svg)
+
+### Question 12
+
+Pour $V>0$, le temps pondéré est $T(x)=\sqrt{1+x^2}/V+\sqrt{1+(x-b)^2}$.
+
+**(12a)** Les deux polynômes sous les radicaux prennent leurs valeurs dans $[1,+\infty[$. La racine carrée est dérivable en tout réel strictement positif. Par composition et combinaison linéaire, $T$ est dérivable sur $\mathbb R$.
+
+**(12b)** La règle de la chaîne donne
+$$
+\boxed{T'(x)=\frac{x}{V\sqrt{1+x^2}}+\frac{x-b}{\sqrt{1+(x-b)^2}}.}
+$$
+
+**(12c)** Dans l'expression de $T''$ donnée par le sujet, les deux termes sont strictement positifs puisque $V>0$. Donc $T'$ est strictement croissante sur $\mathbb R$.
+
+**(12d)** La fonction $T'$ est continue et
+$$T'(0)=-\frac b{\sqrt{1+b^2}}<0,\qquad T'(b)=\frac b{V\sqrt{1+b^2}}>0.$$
+Le théorème des valeurs intermédiaires fournit un zéro sur $]0,b[$. La stricte croissance sur $\mathbb R$ prouve son unicité sur toute la droite.
+
+**(12e)** Les signes stricts aux bornes obtenus en (12d) donnent même $\boxed{0<x_0<b}$, donc bien $x_0\in[0,b]$.
+
+### Question 13
+
+Dans cette question, écrivons $s=x_0(V)$. La condition $T'(s)=0$ est
+$$
+\frac{s}{\sqrt{1+s^2}}=V\,\frac{b-s}{\sqrt{1+(b-s)^2}}.
+$$
+
+**(13a)** Comme $0\le s\le b$, le carré conserve cet ordre, puis la racine carrée est croissante. Ainsi $\boxed{1\le\sqrt{1+s^2}\le\sqrt{1+b^2}}$.
+
+**(13b)** Dans l'identité précédente, isolons $s$. Le numérateur $b-s$ est au plus $b$ et $\sqrt{1+(b-s)^2}\ge1$. Avec (13a) il vient
+$$
+0\le s=V\sqrt{1+s^2}\,\frac{b-s}{\sqrt{1+(b-s)^2}}\le Vb\sqrt{1+b^2}.
+$$
+
+**(13c)** À droite de zéro, les deux bornes de (13b) tendent vers zéro. Par encadrement $\boxed{\lim_{V\to0^+}x_0(V)=0}$.
+
+**(13d)** Isolons plutôt $b-s$. Puisque $0\le b-s\le b$ et $0\le s/\sqrt{1+s^2}\le1$,
+$$
+0\le b-s=\frac1V\sqrt{1+(b-s)^2}\,\frac{s}{\sqrt{1+s^2}}\le\frac{\sqrt{1+b^2}}{V}.
+$$
+Par encadrement $b-s\to0$ quand $V\to+\infty$. Ainsi $\boxed{\lim_{V\to+\infty}x_0(V)=b}$.
+
+### Question 14
+
+**(14a)** Le prolongement vérifie $x_0(0)=0$. Pour $V>0$ son taux d'accroissement en zéro vaut, avec $s=x_0(V)$,
+$$
+\frac{x_0(V)-x_0(0)}{V}=\frac{(b-s)\sqrt{1+s^2}}{\sqrt{1+(b-s)^2}}.
+$$
+Par (13c), $s\to0$ quand $V\to0^+$. Le quotient à droite a pour limite $b/\sqrt{1+b^2}$, son dénominateur restant positif. La dérivée sur le domaine $[0,+\infty[$ est donc la dérivée à droite $\boxed{x_0'(0)=b/\sqrt{1+b^2}}$.
+
+**(14b)** Par définition de la dérivabilité à droite,
+$$\boxed{x_0(V)=\frac b{\sqrt{1+b^2}}\,V+o(V)\quad(V\to0^+).}$$
+
+## Problème C
+
+Pour une matrice carrée réelle $M$, la propriété **O** signifie que ses colonnes sont deux à deux orthogonales. La propriété **I** s'écrit $M^TM=I_n$, où $I_n$ désigne la matrice identité.
+
+### Question 15
+
+**(15a)** Les colonnes de $G$ sont $(1,0,1)^T$, $0$ et $(1,0,-1)^T$. Le produit scalaire des deux colonnes non nulles vaut $1-1=0$. Ainsi $G$ vérifie **O**. Leurs normes au carré donnent $G^TG=\operatorname{diag}(2,0,2)\ne I_3$. Elle ne vérifie donc pas **I**.
+
+**(15b)** On a $G(u,v,w)^T=(u+w,0,u-w)^T$. Les deux équations du noyau imposent $u=w=0$ et laissent $v$ libre. Donc $\boxed{\ker G=\operatorname{Vect}((0,1,0)^T)}$.
+
+**(15c)** Posons $H=\left(\begin{smallmatrix}1&1\\1&-1\end{smallmatrix}\right)$. Pour $\lambda\ne0$, si $(u,v,w)^T$ est un vecteur propre de $G$ pour $\lambda$, la deuxième ligne donne $0=\lambda v$, donc $v=0$. Le couple $(u,w)$ est non nul et vérifie $H(u,w)^T=\lambda(u,w)^T$. Réciproquement, à tout vecteur propre $(u,w)^T$ de $H$ pour $\lambda$ correspond le vecteur non nul $(u,0,w)^T$ de $G$ pour la même valeur propre.
+
+**(15d)** Écrivons $H(u,w)^T=\lambda(u,w)^T$. La première ligne donne $w=(\lambda-1)u$. Pour un vecteur propre, il faut $u\ne0$, sinon les deux coordonnées s'annulent. La seconde ligne devient $u=(\lambda+1)w=(\lambda^2-1)u$, donc $\lambda^2=2$. Réciproquement, pour chacune des deux solutions, $(1,\lambda-1)^T$ vérifie les deux lignes. Les valeurs propres sont $\boxed{-\sqrt2,\ \sqrt2}$.
+
+**(15e)** Le noyau non trivial donne la valeur propre $0$. Par (15c) et (15d), $G$ admet en outre $-\sqrt2$ et $\sqrt2$. Trois valeurs propres réelles distinctes en dimension trois donnent une base de vecteurs propres. **$G$ est diagonalisable.**
+
+### Question 16
+
+Par la règle du produit matriciel, pour tous $i,j$,
+$$
+(M^TM)_{ij}=\sum_{k=1}^n(M^T)_{ik}M_{kj}=\sum_{k=1}^n M_{ki}M_{kj}=\boxed{C_i^TC_j}.
+$$
+
+### Question 17
+
+**(17a)** Sous l'hypothèse **O**, (16) donne $(M^TM)_{ij}=0$ pour tout $i\ne j$. Ainsi $M^TM$ est diagonale.
+
+**(17b)** Sur la diagonale, $(M^TM)_{jj}=C_j^TC_j=\sum_{k=1}^n M_{kj}^2=\|C_j\|^2\ge0$.
+
+**(17c)** Si ce coefficient est nul, chacun des carrés de la somme est nul. Tous les coefficients de $C_j$ sont nuls, donc $\boxed{C_j=0}$.
+
+**(17d)** Une colonne nulle donne $Me_j=0$ avec $e_j\ne0$ et empêche l'inversibilité. Réciproquement, si toutes les colonnes sont non nulles, considérons une relation $\sum_j a_jC_j=0$. Le produit scalaire avec $C_i$ la réduit à $a_i\|C_i\|^2=0$. Chaque norme étant non nulle, tous les $a_i$ s'annulent. Les $n$ colonnes forment alors une base de $\mathbb R^n$, donc $M$ est inversible.
+
+### Question 18
+
+**(18a)** Si $M^TM=I_n$, alors $Mu=0$ entraîne $u=M^TMu=0$. L'endomorphisme de $\mathbb R^n$ de matrice $M$ est injectif, donc bijectif. On a $\boxed{M^{-1}=M^T}$.
+
+**(18b)** De même $P^{-1}=P^T$, d'où $PP^T=I_n$. Pour $N=P^TMP$,
+$$
+N^TN=P^TM^TPP^TMP=P^T(M^TM)P=P^TP=I_n.
+$$
+**$P^TMP$ vérifie I.**
+
+### Question 19
+
+On reprend les vecteurs $x,y,z$ et la matrice $A$ du sujet, avec $x_3\ne0$, $y$ non colinéaire à $x$ et $\|x\|=\|y\|$.
+
+**(19a)** En écrivant $y$ en colonne, le produit $Ay$ a pour composantes $-x_3y_2+x_2y_3$, $x_3y_1-x_1y_3$ et $-x_2y_1+x_1y_2$. C'est exactement $z$. La norme euclidienne s'annule uniquement sur le vecteur nul. Ainsi $\|z\|=0\ \Longleftrightarrow\ z=0\ \Longleftrightarrow\ Ay=0$.
+
+**(19b)** Les deux images demandées sont les colonnes correspondantes de $A$,
+$$
+\boxed{Ae_1=(0,x_3,-x_2)^T,\qquad Ae_2=(-x_3,0,x_1)^T.}
+$$
+
+**(19c)** Si $aAe_1+cAe_2=0$, les deux premières coordonnées donnent $-cx_3=0$ et $ax_3=0$. Comme $x_3\ne0$, on a $a=c=0$. Ces images sont indépendantes, donc $\operatorname{rg}A\ge2$. Par le théorème du rang, $\boxed{\dim\ker A=3-\operatorname{rg}A\le1}$.
+
+**(19d)** Le calcul de (19a) avec $y=x$ donne $Ax=0$. Puisque $x_3\ne0$, le vecteur $x$ est non nul et (19c) entraîne $\ker A=\operatorname{Vect}(x)$. Par hypothèse $y$ n'appartient pas à cette droite. Donc $\boxed{z=Ay\ne0}$.
+
+### Question 20
+
+**(20a)** En développant,
+$$
+\langle x,z\rangle=x_1x_2y_3-x_1x_3y_2+x_2x_3y_1-x_1x_2y_3+x_1x_3y_2-x_2x_3y_1=0.
+$$
+De même
+$$
+\langle y,z\rangle=x_2y_1y_3-x_3y_1y_2+x_3y_1y_2-x_1y_2y_3+x_1y_2y_3-x_2y_1y_3=0.
+$$
+Par bilinéarité, $\boxed{\langle x+y,z\rangle=\langle x-y,z\rangle=0}$.
+
+**(20b)** On a aussi $\langle x+y,x-y\rangle=\|x\|^2-\|y\|^2=0$. Les vecteurs $x+y$ et $x-y$ sont non nuls car $y$ n'est pas colinéaire à $x$. Le troisième, $z$, est non nul par (19d). Ces trois vecteurs non nuls deux à deux orthogonaux sont indépendants. Ils forment donc une **base de $\mathbb R^3$**.
+
+### Question 21
+
+**(21a)** Notons $u=(x+y)/\|x+y\|$, $v=(x-y)/\|x-y\|$ et $w=z/\|z\|$. D'après la définition de $\ell$ et par linéarité, $\ell(u)=u$, $\ell(v)=-v$, $\ell(w)=w$. Dans la base $(u,v,w)$ sa matrice est $\boxed{L=\operatorname{diag}(1,-1,1)}$.
+
+**(21b)** $P$ a pour colonnes les coordonnées canoniques des vecteurs $u,v,w$ de cette base orthonormale. Donc $P^TP=I_3$ et $P^{-1}=P^T$. Pour une colonne canonique $h$, ses coordonnées dans la nouvelle base sont $P^Th$. Après application de $L$, on revient à la base canonique en multipliant par $P$. La matrice demandée est $\boxed{PLP^T}$.
+
+### Question 22
+
+Prenons $M=PLP^T$, matrice canonique de $\ell$. On a $L^TL=I_3$ et $P^TP=PP^T=I_3$, donc
+$$
+M^TM=PL^TP^TPLP^T=P(L^TL)P^T=I_3.
+$$
+Enfin $x=\tfrac12((x+y)+(x-y))$ et $y=\tfrac12((x+y)-(x-y))$. L'application $\ell$ fixe $x+y$ et change le signe de $x-y$. Ainsi $\boxed{Mx=y,\quad My=x}$. Géométriquement, c'est la symétrie orthogonale par rapport au plan engendré par $x+y$ et $z$.
+
+![Figure 3 — Coupe dans le plan de $x$ et $y$. La réflexion fixe la direction de leur somme et inverse celle de leur différence. La direction de $z$, perpendiculaire à cette coupe, est également fixe.](figures/q22-reflexion.svg)

@@ -1,0 +1,48 @@
+{
+  "slug": "bel_bl_mathematiques_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Mathématiques",
+    "annee": 2022
+  },
+  "questions": 55,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA (Codex, famille GPT-6), à partir du sujet et du rapport de jury 2022. Relecture indépendante des 55 réponses et des cinq schémas par un second agent Codex.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/bl_22_mathematiques.pdf",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2022_bl_rapport_ecrit_mathematiques.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q04-arbre-arret.svg",
+      "question": "Q4",
+      "legende": "Branches jusqu'au troisième lancer. Chaque branche a une probabilité de moitié. Les cases pleines correspondent aux arrêts."
+    },
+    {
+      "fichier": "figures/q08-capital-moyenne.svg",
+      "question": "Q8",
+      "legende": "Dans le jeu multiplicatif, la fortune moyenne augmente. Pour un nombre pair de lancers et autant de piles que de faces, le capital vaut $100(0{,}999)^{n/2}$ et diminue."
+    },
+    {
+      "fichier": "figures/q11-chemin-direct.svg",
+      "question": "Q11",
+      "legende": "Pour $b=3$, le trajet par $M$ est plus long que le segment direct $AB$, qui coupe l'axe en $I$."
+    },
+    {
+      "fichier": "figures/q14-position-optimale.svg",
+      "question": "Q14",
+      "legende": "Pour $b=2$, la position optimale part de zéro avec une pente $2/\\sqrt{5}$ et tend vers $2$. À vitesses égales, le point optimal est le milieu."
+    },
+    {
+      "fichier": "figures/q22-reflexion.svg",
+      "question": "Q22",
+      "legende": "Coupe dans le plan de $x$ et $y$. La réflexion fixe la direction de leur somme et inverse celle de leur différence. La direction de $z$, perpendiculaire à cette coupe, est également fixe."
+    }
+  ],
+  "date_revision": "2026-11-22",
+  "modele_revision": "GPT-6 (Codex)"
+}

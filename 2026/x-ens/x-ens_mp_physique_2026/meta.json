@@ -15,9 +15,29 @@
       "legende": "Déplacement u(x) en compression homogène : une droite de 0 à −ΔL, de pente −ΔL/L (compression exagérée)"
     },
     {
+      "fichier": "figures/q11-fibres-flexion.svg",
+      "question": "Q11",
+      "legende": "À angle égal, la longueur des fibres augmente avec leur distance au centre de courbure."
+    },
+    {
+      "fichier": "figures/q19-pentes-dispersion.svg",
+      "question": "Q19",
+      "legende": "Sur la courbe de dispersion, la tangente a deux fois la pente de la sécante qui joint le point à l’origine."
+    },
+    {
       "fichier": "figures/q23-anneau-premier-mode.svg",
       "question": "Q23",
-      "legende": "Premier mode (n = 1) de la flûte vu de dessus : l'anneau se translate en bloc de 2aZ, d'un côté puis de l'autre (pointillés : repos)"
+      "legende": "Premier mode (n = 1) de la flûte vu de dessus : le contour se décale de 2aZ au premier ordre, alternativement de chaque côté (pointillés : repos)"
+    },
+    {
+      "fichier": "figures/q30-temps-arrivee-glace.svg",
+      "question": "Q30",
+      "legende": "Temps d’arrivée d’une composante dans la glace et lecture de la pente après linéarisation (schéma théorique)."
+    },
+    {
+      "fichier": "figures/q32-bilan-amplitudes.svg",
+      "question": "Q32",
+      "legende": "Trajets et amplitudes de champ après chaque séparatrice. Les deux ondes atteignent la photodiode avec la même amplitude."
     },
     {
       "fichier": "figures/q36-q38-signal-contact-quadrature.svg",
@@ -39,5 +59,16 @@
       "question": "Q55",
       "legende": "Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)"
     }
-  ]
+  ],
+  "date_revision": "2026-11-22",
+  "revision": {
+    "modele": "OpenAI Codex (GPT-6)",
+    "objet": "Relecture des 56 questions à partir du sujet et du rapport 2026. Révision des explications et des schémas."
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20MP_0.pdf",
+    "sujet_sha256": "fbd27b5f1b7ae9d62adcd798e0fa4b406998bb66ac49d7b3453f28aafc5a064b",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP_Physique%20OK%20.pdf",
+    "rapport_sha256": "c1f5eee94057881b14a46a35262255bd2e0b2770205f2a00511e51d2ac5f1512"
+  }
 }

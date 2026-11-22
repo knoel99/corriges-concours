@@ -18,9 +18,9 @@ Le $n$-ième ressort relie les molécules $n$ et $n+1$, de positions au repos $n
 
 $$\delta_n=u\big((n+1)a,t\big)-u(na,t)$$
 
-On somme sur les ressorts dont l'extrémité gauche est au repos dans $[0,\lambda[$, soit $\lambda/a$ ressorts :
+On compte les ressorts dont l’extrémité gauche est au repos dans $[0,\lambda[$, soit $n=0,\ldots,N-1$ avec $N=\lceil\lambda/a\rceil$. L’écart de bord est inférieur à une maille et $N\simeq\lambda/a$ dans la limite continue.
 
-$$\boxed{\begin{aligned}E_p^{\lambda}&=\sum_{n=1}^{\lambda/a}\tfrac12\,\kappa\,\delta_n^{2}\\&=\sum_{n=1}^{\lambda/a}\tfrac12\,\kappa\,\big[u((n+1)a,t)-u(na,t)\big]^2\end{aligned}}$$
+$$\boxed{\begin{aligned}E_p^{\lambda}&=\sum_{n=0}^{N-1}\tfrac12\,\kappa\,\delta_n^{2}\\&=\sum_{n=0}^{N-1}\tfrac12\,\kappa\,\big[u((n+1)a,t)-u(na,t)\big]^2\end{aligned}}$$
 
 ### Question 3
 
@@ -130,6 +130,8 @@ $$\boxed{\Delta L(r)=\frac{r\,L}{R_C}}$$
 
 Elle est positive pour $r>0$ (extension) et négative pour $r<0$ (compression).
 
+![Figure 2 — À angle égal, la longueur des fibres augmente avec leur distance au centre de courbure.](figures/q11-fibres-flexion.svg)
+
 ### Question 12
 
 L'élément compris entre $r$ et $r+\mathrm{d}r$ est une plaque d'épaisseur $\mathrm{d}r$, de même largeur $l$ et de même longueur $L$ que la tranche.
@@ -224,6 +226,8 @@ et de même $v_g\propto\sqrt f$ : **les deux vitesses croissent comme la racine 
 
 Un paquet d'ondes se déforme et s'étale au cours de la propagation : ses composantes de haute fréquence prennent de l'avance sur les basses. L'énergie du paquet avance à $v_g$, deux fois plus vite que les crêtes.
 
+![Figure 3 — Sur la courbe de dispersion, la tangente a deux fois la pente de la sécante qui joint le point à l’origine.](figures/q19-pentes-dispersion.svg)
+
 ### Question 20
 
 Pour une OPPH, $\omega^2Z=-\partial_t^2Z$ et $k^4Z=\partial_x^4Z$. On remplace donc $\omega^2$ par $-\partial^2/\partial t^2$ et $k^4$ par $\partial^4/\partial x^4$.
@@ -245,7 +249,7 @@ Commentaire des termes :
 
 ### Question 21
 
-Une condition aux limites périodique quantifie aussi le nombre d'onde dans le **modèle de Bohr** de l'atome d'hydrogène : l'onde de de Broglie de l'électron sur son orbite circulaire doit se refermer sur elle-même, soit $2\pi r=n\lambda$. Cela quantifie le moment cinétique et l'énergie. On peut citer aussi un électron confiné sur un anneau (molécule cyclique) ou les conditions de Born–von Kármán dans un cristal.
+Une particule quantique libre sur un anneau de circonférence $P$ possède une fonction d’onde périodique, $\psi(s+P)=\psi(s)$. Pour une onde $\psi(s)\propto e^{iks}$, cela impose $e^{ikP}=1$, soit $kP=2\pi n$ avec $n\in\mathbb Z$.
 
 ### Question 22
 
@@ -269,9 +273,9 @@ $$Z=2a_Z\cos\varphi\cos\omega t$$
 
 Un côté s'écarte de $2a_Z$ pendant que le côté opposé se rapproche de $2a_Z$.
 
-![Figure 2 — Premier mode (n = 1) de la flûte vu de dessus : l'anneau se translate en bloc de 2aZ, d'un côté puis de l'autre (pointillés : repos)](figures/q23-anneau-premier-mode.svg)
+![Figure 4 — Premier mode (n = 1) de la flûte vu de dessus : le contour se décale de 2aZ au premier ordre, alternativement de chaque côté (pointillés : repos)](figures/q23-anneau-premier-mode.svg)
 
-Au premier ordre en $a_Z$, un déplacement radial $2a_Z\cos\varphi$ décrit le même cercle translaté de $2a_Z$ selon la direction $\varphi=0$ (figure 2). Le verre oscille donc **en bloc**, d'un côté puis de l'autre, sans se déformer. Pour un anneau réel, ce mouvement ne met en jeu aucune élasticité. Il n'émet pas le son de flexion et il est bloqué par le pied du verre. C'est pourquoi le premier mode de vibration réelle est le mode $n=2$ de la figure 5 du sujet.
+À l’instant $t$, posons $b=2a_Z\cos\omega t$. Un cercle de rayon $R_0$ dont le centre est translaté de $b$ présente, au premier ordre, le contour polaire $R_0+b\cos\varphi$. Le contour apparent oscille donc latéralement en gardant sa forme. La description radiale donne la forme de l’anneau. Pour suivre une translation rigide de chacun de ses points, il faudrait aussi compter la composante tangentielle du déplacement. Le pied du verre empêche la libre translation de l’ensemble.
 
 ### Question 24
 
@@ -292,7 +296,7 @@ $$\begin{aligned}f_2&=\frac{5\times10^{-4}\times5{,}3\times10^{3}}{\pi\sqrt3\tim
 Discussion :
 - $f_2\approx1$ kHz est une fréquence audible et aiguë, compatible avec le « chant » d'un verre, qui sonne entre quelques centaines de hertz et le kilohertz ;
 - le modèle ne fait pas intervenir la hauteur $h$, puisque la déformation est supposée uniforme verticalement. Il ignore aussi l'encastrement au pied et la forme conique réelle ;
-- il traite l'anneau comme une plaque plane : la courbure de l'anneau abaisse la fréquence d'un facteur de l'ordre de l'unité ;
+- la relation de dispersion a été établie pour une plaque plane, alors que l’anneau est déjà courbe au repos ;
 - $f_2\propto e/R_0^2$ : un verre plus fin ou plus large chante plus grave, et un liquide ajouté (masse en plus) abaisse aussi la fréquence.
 
 L'ordre de grandeur est le bon.
@@ -307,7 +311,7 @@ $$\begin{aligned}c&=\sqrt{\frac{K}{\rho}}=\sqrt{\frac{10^{11}}{2{,}8\times10^{3}
 
 La vitesse des ondes P (6 km/s) est **cohérente** avec ce résultat. Les ondes P sont des ondes de compression longitudinales : le modèle des parties I et II les décrit par une équation de d'Alembert, donc sans dispersion. Leur vitesse ne dépend alors ni de la fréquence ni de l'épaisseur $e$ de la croûte, seulement du matériau ($K$, $\rho$), ce qui donne un sens à « une » vitesse des ondes P.
 
-L'accord à quelques pour cent près ne doit pas être surinterprété : $K$ et $\rho$ ne sont donnés qu'à un chiffre et varient avec la profondeur, et le modèle de ressorts selon un seul axe ignore le couplage avec les directions transverses. On retient l'accord en ordre de grandeur, ce qui valide l'usage de ce modèle simple pour la croûte.
+L'accord à quelques pour cent près ne doit pas être surinterprété : les propriétés de la croûte varient avec la profondeur, et le modèle de ressorts selon un seul axe ignore le couplage avec les directions transverses. On retient l'accord en ordre de grandeur, ce qui valide l'usage de ce modèle simple pour la croûte.
 
 ### Question 27
 
@@ -333,8 +337,8 @@ Dans les deux cas $\lambda$ n'est que quelques fois $e$ : l'hypothèse de plaque
 
 ### Question 29
 
-Description de la figure 6 :
-- on voit deux signaux de même allure, un par impact, séparés d'environ 1,1 s (le premier commence vers 0,5 s, le second vers 1,7 s). Leurs durées sont voisines, donc les deux impacts sont à des distances voisines du micro ;
+Lecture de la figure 6 du sujet :
+- on voit deux signaux de même allure, un par impact, séparés d'environ 1,1 s (le premier commence vers 0,5 s, le second vers 1,7 s). La similitude de leurs durées suggère des distances d’impact comparables si les deux impacts émettent la même bande de fréquences ;
 - dans chaque signal, les hautes fréquences (environ 2 kHz) arrivent les premières, puis la fréquence reçue décroît vers quelques dizaines de hertz en environ 0,5 s : c'est un balayage descendant (« chirp ») ;
 - la puissance la plus forte est reçue aux basses fréquences, en fin de signal (traînée claire au voisinage de $f\approx0$).
 
@@ -352,7 +356,7 @@ La composante de fréquence $f$, émise à l'instant $t_0$ de l'impact situé à
 
 $$t(f)=t_0+\frac{x}{\beta\sqrt f}.$$
 
-L'origine des temps étant arbitraire, $t_0$ est inconnu. On relève sur la figure 6 plusieurs couples $(t,f)$ le long d'une branche et on trace $t$ en fonction de $1/\sqrt f$. On obtient une droite de pente $x/\beta$.
+L'origine des temps étant arbitraire, $t_0$ est inconnu. On relève sur la figure 6 du sujet plusieurs couples $(t,f)$ le long d'une branche et on trace $t$ en fonction de $1/\sqrt f$. On obtient une droite de pente $x/\beta$.
 
 On peut aussi utiliser une différence de temps, qui élimine $t_0$ :
 
@@ -361,6 +365,8 @@ $$t(f_1)-t(f_2)=\frac{x}{\beta}\left(f_1^{-1/2}-f_2^{-1/2}\right)$$
 Connaissant la distance $x$ de l'impact au micro et la célérité $c=\sqrt{K/\rho}$ de la glace, on obtient $\beta$, puis
 
 $$\boxed{e=\frac{\sqrt3\,\beta^2}{4\pi c}}$$
+
+![Figure 5 — Temps d’arrivée d’une composante dans la glace et lecture de la pente après linéarisation (schéma théorique).](figures/q30-temps-arrivee-glace.svg)
 
 ### Question 31
 
@@ -391,6 +397,8 @@ Un miroir à 45° placé en $S_1$ enverrait directement le faisceau de référen
 $$\frac{2a_1a_2}{a_1^2+a_2^2}=0{,}8$$
 
 La séparatrice impose **$a_1=a_2$, donc un contraste maximal égal à 1**. Elle permet aussi d'insérer le bras $S_1M_1$, dont le miroir monté sur vis micrométrique sert à régler finement le chemin optique de référence ($\epsilon$) et à équilibrer les deux bras.
+
+![Figure 6 — Trajets et amplitudes de champ après chaque séparatrice. Les deux ondes atteignent la photodiode avec la même amplitude.](figures/q32-bilan-amplitudes.svg)
 
 ### Question 33
 
@@ -428,7 +436,7 @@ d'où $I\propto a^2\left[1+\cos\left(4\pi\dfrac{z-\epsilon}{\lambda_l}\right)\ri
 
 $$\boxed{U(t)=U_0\left(1+\cos\left(4\pi\,\frac{z(t)-\epsilon}{\lambda_l}\right)\right)}$$
 
-Au maximum, $U=2U_0$ : les amplitudes s'ajoutent ($2a$), et l'intensité vaut quatre fois celle d'une seule onde d'amplitude $a$, ce qui n'a rien de paradoxal (l'énergie manque aux franges sombres).
+Au maximum, $U=2U_0$ : les amplitudes s'ajoutent ($2a$), et l'intensité vaut quatre fois celle d'une seule onde d'amplitude $a$, ce qui n'a rien de paradoxal (l’interférence redistribue la puissance entre les sorties du montage).
 
 ### Question 36
 
@@ -436,7 +444,7 @@ Avec $\epsilon=0$, $z=a_z\sin\omega t$ et $4\pi a_z/\lambda_l\ll1$, on développ
 
 $$\begin{aligned}U(t)&\simeq2U_0-\frac{8\pi^2a_z^2}{\lambda_l^2}U_0\sin^2\omega t\\&=2U_0-\frac{4\pi^2a_z^2}{\lambda_l^2}U_0\big(1-\cos2\omega t\big)\end{aligned}$$
 
-![Figure 3 — Tension U(t) pour de très faibles vibrations : au contact optique (ϵ = 0), creux du second ordre à fréquence double ; en quadrature (ϵ = λl/8), sinusoïde à la fréquence f](figures/q36-q38-signal-contact-quadrature.svg)
+![Figure 7 — Tension U(t) pour de très faibles vibrations : au contact optique (ϵ = 0), creux du second ordre à fréquence double ; en quadrature (ϵ = λl/8), sinusoïde à la fréquence f](figures/q36-q38-signal-contact-quadrature.svg)
 
 La tension reste presque constante, égale à $2U_0$ (frange brillante), avec de minuscules creux, du second ordre en $a_z/\lambda_l$, à la fréquence double $2f$.
 
@@ -462,7 +470,7 @@ Avec $\epsilon=\lambda_l/8$ :
 
 $$\begin{aligned}U&=U_0\left(1+\cos\left(\frac{4\pi z}{\lambda_l}-\frac{\pi}{2}\right)\right)\\&=U_0\left(1+\sin\frac{4\pi z}{\lambda_l}\right)\\&\simeq U_0\left(1+\frac{4\pi a_z}{\lambda_l}\sin\omega t\right)\end{aligned}$$
 
-Voir la figure 3, courbe du bas.
+Voir la figure 7, courbe du bas.
 
 C'est une sinusoïde de fréquence $f$ (celle de la vibration) centrée sur $U_0$, d'amplitude $4\pi a_zU_0/\lambda_l$ proportionnelle à $a_z$. La réponse est linéaire et de sensibilité maximale.
 
@@ -476,7 +484,7 @@ avec $4\pi a_z/\lambda_l\gg1$. La phase balaie un grand nombre de franges. $U$ o
 
 $$f_{\text{fr}}(t)=\frac{2|\dot z|}{\lambda_l}=\frac{2a_z\omega|\cos\omega t|}{\lambda_l}$$
 
-![Figure 4 — Signal U(t) pour az ≫ λl : franges serrées aux passages par z = 0, étirées aux rebroussements z = ±az](figures/q39-franges-grande-amplitude.svg)
+![Figure 8 — Signal U(t) pour az ≫ λl : franges serrées aux passages par z = 0, étirées aux rebroussements z = ±az](figures/q39-franges-grande-amplitude.svg)
 
 Les oscillations sont très serrées aux passages par $z=0$ (instants $0$, $T/2$ et $T$), où la vitesse est maximale.
 
@@ -488,7 +496,7 @@ Sur une période on compte $8a_z/\lambda_l$ franges, soit environ 2 500 pour $a_
 
 Entre deux rebroussements, $z$ passe de $-a_z$ à $+a_z$ pendant une demi-période, et la phase $4\pi z/\lambda_l$ varie de $8\pi a_z/\lambda_l$.
 
-On compte donc $\mathcal N=4a_z/\lambda_l$ franges, une par déplacement de $\lambda_l/2$ (aller-retour). À l'oscilloscope, on compte le nombre $\mathcal N$ de maxima de $U$ entre deux instants où les franges s'arrêtent :
+Entre deux rebroussements, la plaque parcourt $2a_z$. La variation de phase représente $\mathcal N=4a_z/\lambda_l$ périodes de frange. Le comptage des maxima estime $\mathcal N$ à une frange près si les rebroussements tombent entre deux maxima.
 
 $$\boxed{a_z=\frac{\mathcal N\,\lambda_l}{4}}$$
 
@@ -540,7 +548,7 @@ Avec $\epsilon=0$ et $D=d$, l'onde de référence parcourt $6d$ à la fréquence
 
 L'onde sonde parcourt $3d$ (trajet $OS_0S_2M_2$) à la fréquence $f_l$, puis $3d$ (trajet $M_2S_2S_3P$) à $f_l+f_D$ après réflexion.
 
-La phase Doppler, acquise à la réflexion sur $M_2$ avec $z(0)=0$, est retardée de $3d/c_0$ :
+Pour une vitesse supposée constante, la phase Doppler s’accumule linéairement au miroir. Le trajet de retour la retarde de $3d/c_0$. Avec une phase initiale nulle, on obtient
 
 $$\boxed{\varphi_1=2\pi f_l\Big(t-\frac{6d}{c_0}\Big)}$$
 
@@ -564,27 +572,29 @@ En pratique $\tau_{\text{int}}$ est le temps de réponse de la photodiode, 5 ns,
 
 ### Question 47
 
-Après moyenne, $I\propto a^2\left[1+\cos(\varphi_2-\varphi_1)\right]$ avec $\varphi_2-\varphi_1=2\pi f_D(t-3d/c_0)$. La tension étant proportionnelle à l'intensité moyenne :
+À vitesse constante, la différence des phases de la Q45 vaut $2\pi f_D(t-\tau)$. La photodiode enregistre
 
-$$\boxed{U(t)=U_0\Big(1+\cos\big[2\pi f_D(t)\,(t-\tau)\big]\Big)}$$
+$$\boxed{U(t)=U_0\left[1+\cos\big(2\pi f_D(t-\tau)\big)\right]},\qquad \boxed{\tau=\frac{D+2d}{c_0}=\frac{3d}{c_0}}.$$
 
-$$\boxed{\tau=\frac{D+2d}{c_0}=\frac{3d}{c_0}}$$
+Le retard $\tau$ est le temps de vol entre $M_2$ et la photodiode. En traitant $f_D(t)$ comme une valeur fixée pendant le calcul du battement, on retrouve l’expression demandée dans l’énoncé :
 
-$\tau$ est le temps de vol de la lumière entre la plaque $M_2$, où elle acquiert le décalage Doppler, et la photodiode.
+$$U(t)\simeq U_0\left[1+\cos\big(2\pi f_D(t)\,(t-\tau)\big)\right].$$
+
+Cette écriture à fréquence figée ne donne pas la phase cumulée sur une vibration entière. Sur celle-ci, la fréquence instantanée est la dérivée de la phase divisée par $2\pi$. Avec $z(0)=0$, la phase de battement est donc
+
+$$\Phi_D(t)=2\pi\int_0^{t-\tau} f_D(s)\,\mathrm ds=-\frac{4\pi}{\lambda_l}z(t-\tau).$$
+
+On retrouve ainsi la dépendance en déplacement de la Q35 au contact optique.
 
 ### Question 48
 
 $$\begin{aligned}\tau&=\frac{3\times10^{-2}}{3\times10^{8}}\\&=1\times10^{-10}\ \mathrm{s}=0{,}1\ \mathrm{ns}\end{aligned}$$
 
-$\tau$ est négligeable devant le temps de réponse de la photodiode (5 ns), devant la période minimale du battement (250 ns) et devant la période de vibration (1 ms). Le déphasage $2\pi f_D\tau\lesssim2{,}5\times10^{-3}$ rad est négligeable, donc $U(t)\simeq U_0\left(1+\cos(2\pi f_Dt)\right)$ : la mesure est quasi instantanée.
+$\tau$ est négligeable devant le temps de réponse de la photodiode (5 ns), devant la période minimale du battement (250 ns) et devant la période de vibration (1 ms). Le déphasage $2\pi f_D\tau\lesssim2{,}5\times10^{-3}$ rad est négligeable, ce qui permet de négliger le retard de propagation dans la phase.
 
 ### Question 49
 
-$U$ ne dépend de $v$ qu'à travers $\cos(2\pi f_D(t-\tau))$, et le cosinus est pair.
-
-Changer $f_D$ en $-f_D$, c'est-à-dire $v$ en $-v$, donne donc le même signal.
-
-On mesure $|f_D|$, c'est-à-dire $|v|$, mais **pas le signe de la vitesse** : on ne sait pas si la plaque s'approche ou s'éloigne.
+Inverser le mouvement change le signe de $f_D$, donc celui de la phase accumulée $\Phi_D$. Le cosinus étant pair, la tension est identique pour ces deux mouvements au contact optique. L’espacement des franges renseigne sur $|f_D|$, donc sur $|v|$. Le sens du déplacement reste indéterminé.
 
 ### Question 50
 
@@ -594,9 +604,11 @@ $$f_D'=-2(f_l+f_B)\frac{v}{c_0}\simeq f_D\quad\text{car } f_B\ll f_l.$$
 
 La référence reste à $f_l$. Le battement se fait donc à $f_B+f_D$ :
 
-$$\boxed{U(t)=U_0\Big(1+\cos\big[2\pi\big(f_B+f_D(t)\big)t+\psi_0\big]\Big)}$$
+En négligeant le retard de la Q48, la phase du battement vérifie $\Phi'(t)=2\pi[f_B+f_D(t)]$. Ainsi
 
-où $\psi_0$ est une phase constante due aux chemins optiques.
+$$\boxed{U(t)=U_0\left[1+\cos\left(2\pi f_B t+2\pi\int_0^t f_D(s)\,\mathrm ds+\psi_0\right)\right]},$$
+
+où $\psi_0$ regroupe les phases constantes du montage.
 
 Comme $f_B=40$ MHz dépasse $|f_D|_{\max}\approx4$ MHz, la fréquence du battement $f_B+f_D$ reste toujours positive, entre 36 et 44 MHz.
 
@@ -612,7 +624,7 @@ L'information (le signal modulant $v(t)$, à 1 kHz) est codée dans la fréquenc
 
 ### Question 52
 
-![Figure 5 — Signal U(t) modulé en fréquence : amplitude constante, oscillations resserrées quand v < 0 et espacées quand v > 0 (modulation exagérée)](figures/q52-signal-modulation-frequence.svg)
+![Figure 9 — Signal U(t) modulé en fréquence : amplitude constante, oscillations resserrées quand v < 0 et espacées quand v > 0 (modulation exagérée)](figures/q52-signal-modulation-frequence.svg)
 
 La sinusoïde reste comprise entre $0$ et $2U_0$, avec une amplitude constante : ce n'est pas une modulation d'amplitude.
 
@@ -632,7 +644,7 @@ $$\boxed{\frac{\mathrm{d}U}{\mathrm{d}t}=\frac{U_s}{RC}+\frac{\mathrm{d}U_s}{\ma
 
 On a $U_s\simeq RC\,\dfrac{\mathrm{d}U}{\mathrm{d}t}$ si $\left|\dfrac{\mathrm{d}U_s}{\mathrm{d}t}\right|\ll\dfrac{|U_s|}{RC}$. En régime sinusoïdal à la pulsation $\Omega$, cela s'écrit $RC\,\Omega\ll1$. La fonction de transfert $\underline H=\dfrac{jRC\Omega}{1+jRC\Omega}$ se réduit alors à $jRC\Omega$.
 
-Le signal contient des fréquences jusqu'à $f_B+|f_D|_{\max}=44$ MHz, il faut donc
+La fréquence instantanée atteint $f_B+|f_D|_{\max}=44$ MHz. À cette échelle, la vibration à 1 kHz module lentement la porteuse. Pour que le filtre dérive le signal sur sa bande utile, on impose
 
 $$RC\ll\frac1{2\pi\times44\times10^{6}}\approx3{,}6\ \mathrm{ns}.$$
 
@@ -642,7 +654,7 @@ $$\boxed{R=10\ \Omega}$$
 
 $$\boxed{C=10\ \mathrm{pF}}$$
 
-soit $RC=0{,}1$ ns. Cela donne $RC\Omega\le0{,}03$ et une erreur relative inférieure à $10^{-3}$ sur la pente. On ne peut pas descendre beaucoup plus bas, car l'amplitude de sortie, $\sim2\pi fRCU_0\approx0{,}03\,U_0$, diminue avec $RC$, et les capacités parasites sont de l'ordre du picofarad.
+soit $RC=0{,}1$ ns. Cela donne $RC\Omega\le0{,}03$ et une erreur relative inférieure à $10^{-3}$ sur le module du gain par rapport au dérivateur idéal. On ne peut pas descendre beaucoup plus bas, car l'amplitude de sortie, $\sim2\pi fRCU_0\approx0{,}03\,U_0$, diminue avec $RC$, et les capacités parasites sont de l'ordre du picofarad.
 
 ### Question 55
 
@@ -650,7 +662,7 @@ $U=U_0(1+\cos\Phi)$ avec $\Phi'(t)=2\pi(f_B+f_D(t))$, donc
 
 $$\begin{aligned}U_s&\simeq RC\frac{\mathrm{d}U}{\mathrm{d}t}\\&=-2\pi RC\,U_0\big(f_B+f_D(t)\big)\sin\Phi(t)\end{aligned}$$
 
-![Figure 6 — Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)](figures/q55-sortie-derivateur.svg)
+![Figure 10 — Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)](figures/q55-sortie-derivateur.svg)
 
 On obtient une porteuse à environ 40 MHz, centrée sur zéro (la composante continue $U_0$ est éliminée), dont l'**amplitude** est proportionnelle à la fréquence instantanée.
 
@@ -672,4 +684,4 @@ $$\boxed{a_z=\frac{\lambda_l\,m\,f_B}{4\pi f}}$$
 
 Contrôle : $m=0{,}1$ donne $a_z=\dfrac{3{,}15\times10^{-7}\times4\times10^{6}}{4\pi\times10^{3}}\approx1{,}0\times10^{-4}$ m, ce qui redonne bien $100\ \mu$m.
 
-On peut aussi intégrer numériquement $v(t)$ pour reconstruire $z(t)$, à une constante près (le signe de $v$ est connu grâce au décalage $f_B$). Cette méthode fonctionne quelle que soit l'amplitude, sans le réglage critique de $\epsilon$ ni le comptage de franges.
+On peut aussi intégrer numériquement $v(t)$ pour reconstruire $z(t)$, à une constante près (le signe de $v$ est connu grâce au décalage $f_B$). Cette mesure évite le comptage des franges tant que $|f_D|_{\max}<f_B$ et que la bande passante couvre le battement.
