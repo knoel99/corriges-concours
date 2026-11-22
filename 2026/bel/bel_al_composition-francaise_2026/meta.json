@@ -8,5 +8,27 @@
   },
   "questions": 0,
   "redaction": "IA (gpt-6), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/voyage-pelerinage.svg",
+      "question": "Étape 1",
+      "legende": "La formule de Viegnes étend à chaque voyage un trait qui définit ordinairement le pèlerinage."
+    },
+    {
+      "fichier": "figures/lery-jean-nian.svg",
+      "question": "Étape 3",
+      "legende": "Au chapitre XVIII de Léry, trois voix interviennent dans la formation du nom par lequel le voyageur se fait reconnaître."
+    }
+  ],
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Relecture sur le sujet commun de six heures et la partie écrite du rapport du jury, contrôle du chapitre XVIII de Léry et de la cohérence des deux versions. Contre-relecture indépendante de l’écrit, des micro-analyses et des deux figures."
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_commun_francais.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202026_0.pdf",
+    "texte_lery": "https://fr.wikisource.org/wiki/Histoire_d%E2%80%99un_voyage_faict_en_la_terre_du_Br%C3%A9sil/18"
+  }
 }
