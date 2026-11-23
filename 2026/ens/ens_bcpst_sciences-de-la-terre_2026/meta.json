@@ -1,0 +1,62 @@
+{
+  "slug": "ens_bcpst_sciences-de-la-terre_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "BCPST",
+    "matiere": "Sciences de la Terre",
+    "annee": 2026
+  },
+  "questions": 28,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/domaines-isostatiques.svg",
+      "question": "1.1",
+      "legende": "La racine continentale et la faible épaisseur de croûte océanique expliquent les deux domaines d’altitude. Échelles schématiques."
+    },
+    {
+      "fichier": "figures/largeur-des-isochrones.svg",
+      "question": "1.6",
+      "legende": "À âge égal et à même échelle de distance, des bandes plus larges indiquent une expansion plus rapide. Schéma de principe."
+    },
+    {
+      "fichier": "figures/profils-pression-temperature-celerite.svg",
+      "question": "2.1",
+      "legende": "Exemples de profils illustrant la hausse de pression, la thermocline et le minimum de célérité."
+    },
+    {
+      "fichier": "figures/rais-du-canal.svg",
+      "question": "2.3",
+      "legende": "Deux rais idéalisés oscillent autour de l’axe lent du canal, sans réflexion sur le fond."
+    },
+    {
+      "fichier": "figures/projection-discovery.svg",
+      "question": "3.5",
+      "legende": "Le glissement relatif horizontal allonge la ligne oblique entre P5 et C2. Noms des stations repris de la figure 5 du sujet."
+    },
+    {
+      "fichier": "figures/trajets-thermometrie.svg",
+      "question": "4.4",
+      "legende": "Des trajets acoustiques traversant des anomalies distinctes peuvent enregistrer des variations de temps différentes."
+    },
+    {
+      "fichier": "figures/echantillons-tas.svg",
+      "question": "5.1",
+      "legende": "Extrait simplifié du diagramme TAS dans le domaine subalcalin utile aux deux échantillons."
+    },
+    {
+      "fichier": "figures/coupe-de-subduction.svg",
+      "question": "5.3",
+      "legende": "La plaque Pacifique plonge vers l’ouest. Les fluides libérés dans le coin mantellique favorisent la genèse de magmas sous l’arc."
+    }
+  ],
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/261242_BCPST_SCIENCES_DE_LA_TERRE_2026_corr.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-bcpst/les-annales-et-rapports-des-jurys/"
+  },
+  "date_revision": "2026-11-22"
+}

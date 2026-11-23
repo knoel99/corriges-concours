@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_arabe_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2026
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6) et relue indépendamment par un second agent.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/image-et-legende.svg",
+      "question": "Partie A",
+      "legende": "Distinguer le geste visible, l’information donnée par la légende et l’interprétation"
+    },
+    {
+      "fichier": "figures/examen-dossier.svg",
+      "question": "Partie A",
+      "legende": "Le contrôle initial et la décision finale dans la démarche hybride rapportée par le document 3"
+    },
+    {
+      "fichier": "figures/remises-successives.svg",
+      "question": "Partie B",
+      "legende": "Le changement de base entre deux remises permet de vérifier ce que l’élève a compris"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Arabe.pdf",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_arabe_xusr_26.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Arabe%20OK.pdf"
+  },
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-relecture indépendante des deux compositions et des sources officielles. Vérification du décompte, de la lecture du document iconographique et des positions individuelles rapportées dans l’éditorial."
+  }
+}

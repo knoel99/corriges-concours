@@ -1,0 +1,67 @@
+{
+  "slug": "ens_mp-mpi_informatique-fondamentale_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-MPI",
+    "matiere": "Informatique fondamentale",
+    "annee": 2026
+  },
+  "questions": 48,
+  "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture indépendante sur le sujet officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_mpi_info_fond_ulsr_26.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/i02-ordre.svg",
+      "question": "I.2",
+      "legende": "Nombre de voisins antérieurs dans un ordre du graphe officiel. Le maximum vaut 3 et le degré minimum du graphe entier vaut également 3."
+    },
+    {
+      "fichier": "figures/i12-triangle.svg",
+      "question": "I.12",
+      "legende": "Ajouter trois sommets isolés ramène le degré moyen à 1, tout en laissant les trois couleurs du triangle entièrement bloquées."
+    },
+    {
+      "fichier": "figures/ii01-colorations.svg",
+      "question": "II.1",
+      "legende": "Les trois carrés des colorations du chemin et les trois changements possibles de la couleur centrale."
+    },
+    {
+      "fichier": "figures/ii06-carre.svg",
+      "question": "II.6–7",
+      "legende": "À gauche, les deux recolorations commutent. À droite, donner une même couleur libre aux deux extrémités d’une arête interdit le quatrième état."
+    },
+    {
+      "fichier": "figures/iii11-couplage.svg",
+      "question": "III.11",
+      "legende": "Probabilité exacte qu’il reste un sommet non tiré pour 32 sommets isolés. Le seuil imprimé laisse une probabilité supérieure à 1/n."
+    },
+    {
+      "fichier": "figures/iv02-biclique.svg",
+      "question": "IV.2",
+      "legende": "Si trois itérations laissaient six sommets dans Y, on pourrait y trouver trois sommets distincts de S et obtenir les neuf arêtes de K₃,₃."
+    },
+    {
+      "fichier": "figures/iv06-extensions.svg",
+      "question": "IV.6",
+      "legende": "Exemple pour k = 3. Remplacer v par u peut faire perdre un élément. Deux complétions de l’image sont adjacentes et conservent la domination du cœur."
+    },
+    {
+      "fichier": "figures/v04-kempe.svg",
+      "question": "V.4–6",
+      "legende": "Échange sur une chaîne de quatre arêtes. La couleur disponible change à chacune des extrémités, et les sommets intérieurs conservent leurs deux couleurs présentes."
+    },
+    {
+      "fichier": "figures/v07-couplage.svg",
+      "question": "V.7",
+      "legende": "Une recherche part d’un voisin libre de u, suit une couleur offerte, puis revient à son partenaire. Une offre vers une couleur libre augmente la taille du couplage."
+    },
+    {
+      "fichier": "figures/v09-impair.svg",
+      "question": "V.9",
+      "legende": "Le graphe obtenu à partir de K₅ pour Δ = 3 possède sept arêtes. Chaque couleur en couvre au plus deux."
+    }
+  ],
+  "date_revision": "2026-11-22"
+}

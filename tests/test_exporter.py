@@ -409,6 +409,17 @@ def test_slugs_modifies(tmp_path):
 
 
 @pandoc
+def test_export_arabe_et_francais_dans_la_meme_copie(tmp_path):
+    source = "# Titre\n\nالكتاب نافذة على العالم.\n\nLa phrase العربية reste lisible.\n"
+    tex = ex.generer_tex(source, META, "brut", tmp_path / "arabe.tex").read_text()
+    assert r"\babelfont[arabic]{rm}" in tex
+    assert r"\begin{otherlanguage}{arabic}" in tex
+    assert tex.index(r"\end{otherlanguage}") < tex.index("La phrase")
+    francais = ex.generer_tex("# Titre\n\nDu texte.\n", META, "guide", tmp_path / "fr.tex")
+    assert "Noto Naskh Arabic" not in francais.read_text()
+
+
+@pandoc
 def test_lualatex_seulement_si_le_tex_change(tmp_path, monkeypatch):
     """L'outillage invalide toutes les empreintes d'entrée, mais seuls les `.tex` qui
     changent vraiment repassent par lualatex."""

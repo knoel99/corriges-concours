@@ -216,6 +216,22 @@ local function Header(h)
   return h
 end
 
+-- Dans une copie bilingue, la première lettre détermine le sens du paragraphe.
+-- Babel garde la ponctuation, les chiffres et les passages latins dans leur sens.
+local function paragraphe_arabe(p)
+  for _, code in utf8.codes(pandoc.utils.stringify(p.content)) do
+    if (code >= 0x621 and code <= 0x64A) or (code >= 0x671 and code <= 0x6D3) then
+      return {
+        pandoc.RawBlock("latex", "\\begin{otherlanguage}{arabic}"),
+        p,
+        pandoc.RawBlock("latex", "\\end{otherlanguage}"),
+      }
+    end
+    if (code >= 65 and code <= 90) or (code >= 97 and code <= 122)
+        or (code >= 0xC0 and code <= 0x2AF) then return nil end
+  end
+end
+
 -- Parcours dans l'ordre du document (le compteur d'indications en dépend).
 function Pandoc(doc)
   doc = doc:walk({ Math = Math, Image = Image, Code = Code, Table = Table, Str = Str })
@@ -233,5 +249,6 @@ function Pandoc(doc)
     end
   end
   doc.blocks = blocs
+  if doc.meta.arabe then doc = doc:walk({ Para = paragraphe_arabe }) end
   return doc
 end
