@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Notations
 
@@ -16,7 +18,9 @@ Les parties III et IV utilisent leurs propres espaces et notations. Dans la dern
 
 ### Question 1a
 
-L’énoncé donne une base de $H$ comme espace vectoriel réel. La table de produits de $I,J,K$, jointe au fait que $E$ est l’unité de $M_2(\mathbb C)$, assure par bilinéarité que $H$ est stable par produit et contient l’unité. De plus $E^*=E$ et la lecture des trois matrices donne $I^*=-I$, $J^*=-J$, $K^*=-K$. L’adjonction est réelle-linéaire, donc elle préserve $H$.
+L’énoncé donne une base de $H$ comme espace vectoriel réel. La table de produits de $I,J,K$, jointe au fait que $E$ est l’unité de $M_2(\mathbb C)$, assure par bilinéarité que $H$ est stable par produit et contient l’unité. De plus $E^*=E$ et la lecture des trois matrices donne $I^*=-I$, $J^*=-J$, $K^*=-K$. L’adjonction est réelle-linéaire, donc elle préserve $H$. Dans les coordonnées complexes du sujet, le calcul donne directement
+$$Z(z_1,z_2)^*=Z(\overline{z_1},-z_2).$$
+Le signe porte sur la seconde coordonnée entière. La conjugaison complexe porte sur la première.
 
 ### Question 1b
 
@@ -32,7 +36,7 @@ Un multiple réel de l’identité commute avec tout élément. Réciproquement,
 
 Par Q1b et l’ordre renversé dans l’adjoint d’un produit,
 $$N(ZZ')E=(ZZ')(ZZ')^*=Z(Z'Z'^*)Z^*=N(Z')ZZ^*=N(Z')N(Z)E.$$
-Comparer les coefficients de $E$ donne la multiplicativité attendue.
+Comparer les coefficients de $E$ donne la multiplicativité attendue. On peut aussi la contrôler directement par le déterminant. La forme matricielle donne $\det Z(z_1,z_2)=z_1\overline{z_1}+z_2\overline{z_2}=N(Z)$, et le déterminant est multiplicatif même lorsque les deux matrices ne commutent pas.
 
 ### Question 2b
 
@@ -205,7 +209,7 @@ Pour les vecteurs unitaires de $V$ on retrouve l’hypothèse du théorème A. E
 
 Par multiplicativité et $\|1\|>0$, $\|1\|=1$. Pour $x$ non réel, la norme sur $V=\mathbb R+\mathbb Rx$ est euclidienne par Q25. Écrivons $x=a+y$ avec $a=\langle x,1\rangle$ et $y\perp1$ dans ce plan. On a $\|1+y\|=\|1-y\|=\sqrt{1+\|y\|^2}$. La multiplicativité entraîne
 $$\|1-y^2\|=\|1+y\|\|1-y\|=1+\|y\|^2=\|1\|+\|-y^2\|.$$
-Si $y^2$ n’était pas réel, le plan engendré par $1$ et $y^2$ serait lui aussi euclidien, toujours par Q25. L’égalité triangulaire affichée y imposerait que $1$ et $-y^2$ soient positivement colinéaires, contradiction. Donc $y^2$ est réel et $x^2=(a+y)^2=2ax+(y^2-a^2)\in\mathbb R+\mathbb Rx$. Pour $x\in\mathbb R$ l’appartenance est immédiate.
+Si $y^2$ n’était pas réel, le plan engendré par $1$ et $y^2$ serait lui aussi euclidien, toujours par Q25. L’égalité triangulaire affichée y imposerait que $1$ et $-y^2$ soient positivement colinéaires, contradiction. Donc $y^2$ est réel. Dans la droite des scalaires, $|1-y^2|=1+|y^2|$ impose $y^2\le0$. Comme $\|y^2\|=\|y\|^2$, on obtient même $y^2=-\|y\|^2$. Il vient $x^2=2ax-(a^2+\|y\|^2)\in\mathbb R+\mathbb Rx$. Pour $x\in\mathbb R$ l’appartenance est immédiate.
 
 ![Figure 7 — Le terme y est la composante de x perpendiculaire à l’unité. Les deux vecteurs 1 + y et 1 − y ont alors la même norme.](figures/q26-decomposition.svg)
 
