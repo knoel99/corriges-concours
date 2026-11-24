@@ -1,0 +1,44 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-oral-1_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire (oral 1)",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oral_1.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_jury_sil_-_histoire_2026.pdf",
+    "sujet_sha256": "029c392e5f686943537173deda94ec5b7e41cafa336e2e0231ddd3efdb157223",
+    "contexte_refugies": "https://www.histoire-immigration.fr/programmation/l-univercite/les-refugies-europeens",
+    "contexte_emploi": "https://www.histoire-immigration.fr/sites/default/files/musee-numerique/documents/fashionmix_recueil-accptlitt.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Comment Delage fait accepter les émigrés"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Présentation et commentaire de l’extrait de presse de Delage du 13 novembre 1929, critique de son argument policier et de sa représentation de l’entraide, préparation à l’entretien et schéma."
+    }
+  ]
+}
