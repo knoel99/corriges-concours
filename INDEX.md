@@ -220,6 +220,7 @@
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
 | 2026 | BEL | BL | Philosophie | [md](2026/bel/bel_bl_philosophie_2026/brut.md) | [md](2026/bel/bel_bl_philosophie_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
+| 2026 | BEL | BL | Philosophie (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
@@ -480,6 +481,7 @@
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
+| 2019 | ENS de Lyon | Second concours | Chimie | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/guide.md) |
 | 2020 | ENS de Lyon | Second concours | Chimie | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Chimie | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/guide.md) |
 | 2022 | ENS de Lyon | Second concours | Chimie | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/guide.md) |
@@ -501,6 +503,7 @@
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Portugais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/guide.md) |

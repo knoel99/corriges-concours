@@ -1,0 +1,139 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2015",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2015
+  },
+  "questions": 48,
+  "redaction": "Dix questions de culture générale et vingt questions de mécanique, détaillées en 48 réponses. Neuf schémas ou graphes accompagnent les questions de montage et de tracé.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/06/15_2clyon_sujet_phy.pdf",
+    "nature": "Sujet du second concours universitaire de l’ENS de Lyon. Aucun rapport de cette épreuve n’est référencé dans la banque consultée.",
+    "sujet_sha256": "e9b8795433c00a6f649b0a6fe31cd7725ca4a4c9a4a77ffec71a7c1e6fbc5a55"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A3",
+      "fichier": "figures/passe-bas.svg",
+      "legende": "Filtre RC à vide. Les tensions sont orientées depuis le conducteur commun vers les bornes supérieures."
+    },
+    {
+      "numero": 2,
+      "question": "A6",
+      "fichier": "figures/michelson.svg",
+      "legende": "Les deux rayons partagent une séparatrice à 45°. Leur séparation sur le dessin permet de suivre les allers et retours."
+    },
+    {
+      "numero": 3,
+      "question": "B4",
+      "fichier": "figures/coulomb.svg",
+      "legende": "Effort tangent signé dans le domaine du sujet. À vitesse relative nulle, le segment vertical donne les efforts compatibles avec l’adhérence."
+    },
+    {
+      "numero": 4,
+      "question": "B9a",
+      "fichier": "figures/mouvement-et-tapis.svg",
+      "legende": "Le glissement finit au point inférieur marqué. La droite d’adhérence rejoint le seuil supérieur. Le point matériel du tapis part de zéro avec la même pente que les segments collés."
+    },
+    {
+      "numero": 5,
+      "question": "B10b",
+      "fichier": "figures/intersections.svg",
+      "legende": "Les trois points noirs sont les intersections. La solution de recollement est le point strictement intérieur, postérieur à π."
+    },
+    {
+      "numero": 6,
+      "question": "B10d",
+      "fichier": "figures/trois-cadrans.svg",
+      "legende": "Construction sur les trois cadrans. Le point repère relie α = 1, V/(ω₀D) = 1 et θ = 3π/2. La vitesse croît vers le bas dans les deux cadrans inférieurs."
+    },
+    {
+      "numero": 7,
+      "question": "B11",
+      "fichier": "figures/deux-regimes.svg",
+      "legende": "Deux périodes de chaque régime, avec les mêmes unités réduites. À faible vitesse les remontées rectilignes sont longues, à forte vitesse elles deviennent courtes."
+    },
+    {
+      "numero": 8,
+      "question": "B13b",
+      "fichier": "figures/portraits-de-phase.svg",
+      "legende": "Même repère pour les deux cycles. Le segment horizontal est parcouru vers la droite. L’arc de glissement revient par le bas."
+    },
+    {
+      "numero": 9,
+      "question": "B20",
+      "fichier": "figures/patins-couples.svg",
+      "legende": "Reconstruction indicative sur deux périodes. Les amplitudes et la pulsation sont lues sur la figure 3. Le premier patin reste en glissement, le second présente une courte montée à vitesse constante."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Dix questions de culture générale et vingt questions de mécanique, détaillées en 48 réponses. Neuf schémas ou graphes accompagnent les questions de montage et de tracé.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8a",
+      "B8b",
+      "B9a",
+      "B9b",
+      "B9c",
+      "B9d",
+      "B10a",
+      "B10b",
+      "B10c",
+      "B10d",
+      "B11",
+      "B12",
+      "B13a",
+      "B13b",
+      "B14a",
+      "B14b",
+      "B14c",
+      "B14d",
+      "B15a",
+      "B15b",
+      "B16",
+      "B17a",
+      "B17b",
+      "B17c",
+      "B18a",
+      "B18b",
+      "B18c",
+      "B19a",
+      "B19b",
+      "B19c",
+      "B20"
+    ]
+  }
+}
