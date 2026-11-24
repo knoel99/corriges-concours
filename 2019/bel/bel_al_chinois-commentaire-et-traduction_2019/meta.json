@@ -1,0 +1,47 @@
+{
+  "slug": "bel_al_chinois-commentaire-et-traduction_2019",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (commentaire et traduction)",
+    "annee": 2019
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Commentaire%20et%20traduction%20en%20LVE.pdf#page=6",
+    "sujet_sha256": "2bd23d0dbb0cf0decbef400bf4f915dcdf3e0ee739454679f39f79836660887c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Ce qui se transmet dans la cuisine"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire en chinois de l’ensemble du texte de Zhang Jie et version des lignes 1 à 9, avec distinction des voix, de l’après-maladie et du souvenir de la Révolution culturelle, schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "L’épreuve commune présente un extrait de 沉重的翅膀 de Zhang Jie (1981). La version se limite aux lignes 1 à 9, depuis l’odeur de la soupe jusqu’à la discrète sollicitude de Mo Zheng. Le commentaire porte sur l’ensemble du passage."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
