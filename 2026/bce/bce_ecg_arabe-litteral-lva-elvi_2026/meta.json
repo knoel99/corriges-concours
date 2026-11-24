@@ -1,0 +1,40 @@
+{
+  "slug": "bce_ecg_arabe-litteral-lva-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Arabe littéral LVA (ELVi)",
+    "annee": 2026
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/75%20AR%20-%20LANGUE_VIVANTE_A_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=2",
+    "sujet_sha256": "15c3ad1a28070ed3e4cc51677da9e62c38d2a07d29e3303ae0d1f790769e12e2"
+  },
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "precision": "Résumé sur les articles de 2021 et 2020, essai sur les quatre documents et l’histoire sociale tunisienne, traduction des quatre paragraphes entre crochets, page 6. Les courbes distinguent stocks observés et projections conditionnelles."
+  },
+  "figures": [
+    {
+      "fichier": "figures/population-observee-et-projections.svg",
+      "question": "Essai",
+      "legende": "Population égyptienne, en millions. Les deux projections dépendent des hypothèses de fécondité indiquées dans le document 4, page 7."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Résumé sur les articles de 2021 et 2020, essai sur les quatre documents et l’histoire sociale tunisienne, traduction des quatre paragraphes entre crochets, page 6. Les courbes distinguent stocks observés et projections conditionnelles."
+    }
+  ]
+}
