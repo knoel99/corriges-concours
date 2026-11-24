@@ -29,6 +29,13 @@ $if(arabe)$
 $else$
 \usepackage[french]{babel}
 $endif$
+$if(chinois)$
+% Identifie les caractères han et autorise les coupures entre idéogrammes, y compris
+% dans une phrase bilingue. Les groupes de chiffres et la ponctuation restent liés.
+\babelprovide[import,onchar=ids fonts,hyphenrules=unhyphenated]{chinese-simplified}
+\babelfont[chinese-simplified]{rm}[Renderer=HarfBuzz]{Noto Serif CJK SC}
+\babelfont[chinese-simplified]{sf}[Renderer=HarfBuzz]{Noto Sans CJK SC}
+$endif$
 \frenchsetup{SmallCapsFigTabCaptions=false}
 
 % --- Mise en page --------------------------------------------------------------
