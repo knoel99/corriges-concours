@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -74,6 +76,10 @@ En 1919, une convention franco-polonaise encadre le recrutement de travailleurs.
 | Convention internationale de 1919 sur la durée du travail dans l’industrie | Représentants des États, des employeurs et des travailleurs | La circulation d’une revendication peut aboutir à une norme internationale dont l’application doit être vérifiée. |
 | Crise des années 1930 | Employeurs, administrations, ménages licenciés | Une frontière plus sélective produit aussi des retours et transforme les revenus des familles. |
 
+### Lire la pièce historique
+
+Comment interpréter une série de laissez-passer sans confondre démographie et emploi ? Le dossier est individuel, y compris pour un enfant. Le chiffre des pièces ne donne donc pas directement celui des ouvriers effectivement présents en plantation. La durée de l’engagement et les possibilités de retour intéressent plus directement la liberté du travail.
+
 ## Pièges à éviter
 
 > [!PIEGE]
@@ -100,6 +106,10 @@ Dans l’Atlantique, les navires à vapeur raccourcissent et régularisent des t
 
 Cette construction d’un marché du travail à longue distance n’a pas partout pour centre une destination européenne ou américaine. En Asie, des hommes et des femmes venus du sud de l’Inde rejoignent les plantations de Ceylan et de Malaisie britannique. Les recruteurs du système *kangani*, souvent eux-mêmes employés des plantations, recrutent dans des villages qu’ils connaissent, réunissent des équipes et servent d’intermédiaires avec le planteur. La plantation, tournée vers la vente sur des marchés lointains, n’a pas à chercher isolément chaque travailleur. En revanche, les avances, la dépendance envers l’intermédiaire et l’inégalité d’information réduisent les possibilités de quitter l’emploi dans de bonnes conditions. Il faut distinguer cette forme de recrutement de l’engagement sous contrat de durée déterminée qui lie, par exemple, des Indiens recrutés pour les plantations sucrières de Fidji. Le terme « circulation » décrit ici un trajet ; il ne mesure à lui seul ni la liberté de le choisir ni celle d’en revenir.
 
+L’Inde et les Fidji fournissent une autre échelle d’observation. Dans cette colonie britannique du Pacifique, les plantations, en particulier sucrières, recrutent une main-d’œuvre sous contrat en Inde. La série des laissez-passer d’émigration, ouverte en 1879 et close en 1916, couvre presque toute la première phase du sujet. Les archives identifient quarante navires ayant effectué au total quatre-vingt-sept voyages. Un document individuel est établi jusque pour les nourrissons. Classer ces dossiers par âge, parenté ou navire fait apparaître des circulations familiales là où le seul chiffre des départs suggérerait une série de travailleurs interchangeables. Mais une rubrique remplie au port ne dit pas si le migrant savait quelle tâche et quelle discipline l’attendaient. Le contrat assure aux planteurs une main-d’œuvre régulière en limitant la possibilité pour l’engagé de quitter son employeur. La comparaison avec les traversées saisonnières de l’Atlantique révèle ce qui différencie deux flux contemporains de travailleurs, la faculté de choisir son retour ou de proposer ailleurs ses compétences. [Laissez-passer de l’émigration indienne, Archives nationales fidjiennes et Bibliothèque nationale d’Australie](https://www.library.gov.au/research/family-history/family-history-research-guide/indian-emigration-passes-fiji-1879-1916)
+
+![Le contrat organise la circulation de la main-d’œuvre. Les laissez-passer individuels rendent aussi visibles les enfants. Les 87 voyages comptés entre 1879 et 1916 ne sont pas 87 navires distincts.](figures/engagement-inde-fidji.svg)
+
 Les distinctions de nationalité, de sexe et de métier organisent aussi la sélection dans les pays qui célèbrent le travail libre. Aux États-Unis, le *Chinese Exclusion Act* de 1882 vise l’entrée des travailleurs chinois. L’origine du voyageur et la catégorie dans laquelle il est rangé déterminent son aptitude à franchir la frontière. Au Canada, la taxe de 1885 suit l’emploi d’une main-d’œuvre chinoise sur les chantiers ferroviaires. Ces mesures coexistent avec l’arrivée de très nombreux Européens en Amérique du Nord. Tous les emplois ne laissent d’ailleurs pas les mêmes traces. Les femmes qui émigrent pour occuper des places de domestiques dans les villes américaines prennent pleinement part à la formation de ces marchés. Elles sont embauchées dans des ménages, dont le besoin de personnel se transmet par annonces et par connaissances, et non au portail d’une grande usine. Si l’on ne comptait que les ouvriers des chantiers, on prendrait la visibilité de certains migrants pour la mesure de la mobilité de tous.
 
 ### II. Du début du XXe siècle à la guerre, entreprises et États organisent les routes du recrutement
@@ -123,3 +133,6 @@ La crise issue de 1929 fait éprouver aux migrants le caractère révocable de l
 ### Conclusion
 
 Les circulations du travail ont contribué à la mondialisation en reliant des activités de production à des foyers de recrutement, puis en diffusant compétences, procédés et exigences de protection. Depuis les années 1880, l’ampleur de ces liaisons a tenu à des institutions très diverses : familles, intermédiaires de plantation, compagnies, administrations impériales, accords entre États et organisations ouvrières. Aucune phase de la période ne réalise une mobilité également accessible à tous. La guerre intensifie le recrutement là où elle interrompt d’autres passages ; les années de crise réduisent les possibilités d’entrée tandis que s’étend la discussion internationale sur la manière dont on travaille. Le chantier canadien de 1885 et les retours de familles de mineurs un demi-siècle plus tard éclairent finalement le même paradoxe. La mise en relation des économies a été édifiée par des hommes et des femmes dont la faculté de franchir les frontières, de s’établir ou de refuser un emploi demeurait profondément inégale.
+
+
+[Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20d%27histoire.pdf) · [Rapport de composition](https://www.ens-lyon.fr/sites/default/files/2024-11/Histoire%202024%20OK.pdf)
