@@ -48,10 +48,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -75,6 +74,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante des deux sources chinoises, des dates distinctes et des 1 673 créations / 1 670 suppressions de formations. Les deux PDF ont été contrôlés par extraction et comparaison de chaque paragraphe chinois.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux commentaires avec les deux articles et le lexique (p. 14–18). Date de publication et date des entretiens, dénominateur des diplômés en 2023, échelle de la coopération entre universités et entreprises.",
       "fournisseur": "codex"
     }
   ]
