@@ -1,0 +1,74 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2023
+  },
+  "redaction": "Écriture des deux éditions, lecture de l’original et du rapport 2023, cinq planches A3 de recherche et de projet avec plan et coupe à l’échelle. Double perception route/piéton et programme de dix places.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/Sujet%20design%20d%27espace%202023.pdf",
+    "sujet_sha256": "e89c2484a3333b57d162dfbe91baf6800c4fe3731d96479002dce24f12ecf9ee",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=583",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_oral_Projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-vitesses.svg",
+      "question": "Projet, planche 1",
+      "legende": "Trois vues d’approche et un croquis de situation distinguent la route et l’accès piéton."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-partis.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois recherches font varier le seuil, l’acoustique et l’arrivée de lumière."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-plan.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le plan coté dispose neuf sièges, une place libre et une tablette pour le livre d’or."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-coupe.svg",
+      "question": "Projet, planche 4",
+      "legende": "Une coupe au 1:25 explique le retrait du vitrage, le banc et la lumière réfléchie."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-seuil.svg",
+      "question": "Projet, planche 5",
+      "legende": "Trois vues racontent le seuil, la pause et la consultation du livre d’or."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Écriture des deux éditions, lecture de l’original et du rapport 2023, cinq planches A3 de recherche et de projet avec plan et coupe à l’échelle. Double perception route/piéton et programme de dix places."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 5,
+    "parties": [
+      "Deux vitesses pour une halte",
+      "Chercher une forme du silence",
+      "Dix places et un livre ouvert",
+      "Une coupe qui capte le ciel",
+      "Du parking à la dernière phrase"
+    ]
+  }
+}

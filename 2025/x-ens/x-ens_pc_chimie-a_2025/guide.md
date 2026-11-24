@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Couverture.** Les Q1, 7, 8 et 26 à 66 sont intégralement traitées (44 questions sur 66). La Q18 se limite à la lecture de l’excès énantiomérique et au principe de la sélectivité. Les Q2 à 6, 9 à 17 et 19 à 25, qui relèvent de la voie de construction des alcaloïdes du curare, restent hors périmètre.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture.** 45 questions intégralement traitées, 3 partiellement et 18 hors couverture. Les Q1, 7, 8, 17 et 26 à 66 sont entièrement traitées. La Q17 identifie le noyau indole. Les Q12, 18 et 19 couvrent les contraintes de conformation, l’excès énantiomérique et les principes de distinction des stéréoisomères. Les autres questions de construction des alcaloïdes restent hors couverture.
 
 ## I — Notions indépendantes de chimie organique
 
@@ -39,6 +41,26 @@ L’acide diphénylphosphorique s’écrit $(\mathrm{PhO})_2\mathrm P(=O)OH$. Le
 
 Le symbole $(\pm)$ indique un racémate, mélange équimolaire des deux énantiomères. Dans les mêmes conditions, leurs pouvoirs rotatoires sont opposés et se compensent. On ne peut déduire du signe de rotation lequel est de configuration $R$ ou $S$.
 
+### Question 12 — Géométrie locale des cycles à six, partie générale
+
+> [!INDICATION]
+> Une forme chaise suppose des liaisons assez libres pour adopter une série d’angles dièdres alternés.
+
+#### Solution
+
+Dans le cyclohexane saturé, six centres tétraédriques permettent la conformation chaise. Un atome trigonal et ses trois liaisons sont localement coplanaires. Une double liaison, une conjugaison ou une arête partagée avec un cycle rigide restreignent les angles dièdres et peuvent aplatir un cycle à six. L’application aux atomes précis du composé intermédiaire reste hors couverture.
+
+### Question 17 — Reconnaître le noyau 1H-indole
+
+> [!INDICATION]
+> Le préfixe 1H situe le proton sur le N pyrrolique. Retirer la chaîne nommée comme substituant pour isoler le noyau.
+
+#### Solution
+
+Le noyau **1H-indole** est un benzène fusionné à un pyrrole par une liaison C–C commune. Sa formule est C₈H₇N ; le N du cycle à cinq porte H. Le doublet de ce N participe au système aromatique de dix électrons π. Dans « indol-3-yl », le point d’attache se trouve au carbone 3 du cycle à cinq, à deux liaisons du N par C2. Une écriture structurale compacte de l’indole libre est `c1ccc2[nH]ccc2c1`.
+
+![Noyau 1H-indole, avec le N pyrrolique et les positions 2 et 3 du cycle à cinq.](figures/noyau-indole.svg)
+
 ### Question 18 — éléments de réponse
 
 > [!INDICATION]
@@ -47,6 +69,15 @@ Le symbole $(\pm)$ indique un racémate, mélange équimolaire des deux énantio
 #### Solution
 
 Un mélange 80 % $R$, 20 % $S$ présente un excès énantiomérique de $80-20=60\,\%$ en faveur de $R$. Pour une catalyse asymétrique générique, les chemins qui conduisent aux deux énantiomères passent dans un environnement chiral par des états de transition diastéréoisomères. Leurs énergies libres d’activation peuvent différer. La proportion 80:20 caractérise la sélectivité et ne renseigne pas sur le rendement total. La réponse se limite ici à la lecture de cette proportion.
+
+### Question 19 — Séparer des stéréoisomères, principe général
+
+> [!INDICATION]
+> Identifier la relation stéréochimique avant de discuter la nature de la phase stationnaire.
+
+#### Solution
+
+Deux énantiomères ont les mêmes propriétés de partage dans un environnement achiral. Une phase stationnaire chirale peut former avec eux des associations transitoires diastéréoisomères, donc de stabilités et de temps de rétention différents. Deux diastéréoisomères peuvent en revanche déjà présenter des rétentions différentes sur phase achirale. Cette discussion couvre le principe de la discrimination ; elle ne détermine pas une méthode de résolution pour l’intermédiaire de la synthèse.
 
 ## II.1 — Enthalpie de la conversion du quadricyclane
 

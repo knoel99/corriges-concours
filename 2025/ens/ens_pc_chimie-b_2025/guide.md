@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Couverture.** 47 questions sont intégralement traitées (1–35, 37, 39–42, 46, 51–53, 58, 61 et 62). Les questions 43 et 64 sont limitées aux lois cinétiques génériques et aux conventions électriques. Les questions 36, 38, 44–45 et 47–50 sur l’étude de l’enzyme, ainsi que 54–57, 59–60, 63 et 65–85 sur la synthèse du composé cytotoxique, ne sont pas traitées.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture.** 51 questions intégralement traitées, 2 partiellement et 32 hors couverture. La lecture et l’écriture du programme d’ajustement sont traitées intégralement aux Q47, 49 et 50. La Q66 explique l’origine possible des bulles à la contre-électrode. Les Q43 et 64 restent partielles. Les questions encore absentes de l’étude enzymatique et de la voie de synthèse sont énumérées dans les métadonnées.
 
 ## États rédox et acido-basiques de la FMN
 
@@ -415,6 +417,64 @@ Pour le modèle simple, $v_0$ tend vers $v_{\max}$ lorsque $[S]_0$ augmente. Ave
 
 Pour deux formes $X\to Y$ et une constante apparente $k$, $[X](t)=[X]_0e^{-kt}$ et $[Y](t)=[X]_0-[X](t)$ si $Y$ est initialement absent. Comme $A=l(\varepsilon_X[X]+\varepsilon_Y[Y])$, on obtient $A(t)=A_\infty+(A_0-A_\infty)e^{-kt}$. Il s’agit du plateau de la seule transformation modélisée.
 
+### Question 47 — Tracer les données et le modèle
+
+> [!INDICATION]
+> Employer les noms des paramètres déjà déballés à la ligne 18 et évaluer le modèle sur une grille indépendante.
+
+#### Solution
+
+Avec les variables définies dans la figure 9a, on peut compléter le programme ainsi :
+
+```python
+t_courbe = np.linspace(0.0, 1000.0, 501)
+plt.plot(texp, aexp, "o", label="Mesures")
+plt.plot(t_courbe, funtofit(t_courbe, D_opt, E_opt, k_opt),
+         "-", label="Modèle ajusté")
+plt.xlabel("Temps (s)")
+plt.ylabel("Absorbance")
+plt.legend()
+plt.show()
+```
+
+Les abscisses expérimentales accompagnent les seuls symboles. Les 501 points calculés servent à représenter la fonction continue entre 0 et 1000 s.
+
+### Question 49 — Écrire une somme de deux exponentielles
+
+> [!INDICATION]
+> Distinguer les deux amplitudes et les deux temps caractéristiques tout en conservant un seul niveau initial.
+
+#### Solution
+
+L’ordre des cinq paramètres doit être explicite puisqu’il sera aussi celui du résultat de l’ajustement.
+
+```python
+def funtofit(t, a0, a1, k1, a2, k2):
+    phase1 = a1 * (1.0 - np.exp(-k1 * t))
+    phase2 = a2 * (1.0 - np.exp(-k2 * t))
+    return a0 + phase1 + phase2
+```
+
+Cette fonction accepte un tableau NumPy. On vérifie A(0) = a0 et, si k1 et k2 sont positives, A(∞) = a0+a1+a2.
+
+![Exemple mathématique indépendant. La somme des deux composantes retrouve le niveau initial a₀ et une limite finie.](figures/somme-deux-exponentielles.svg)
+
+### Question 50 — Extraire les deux constantes de vitesse
+
+> [!INDICATION]
+> Le tableau renvoyé par curve_fit suit l’ordre de la signature de la fonction, sans inclure le temps.
+
+#### Solution
+
+Après l’ajustement par la fonction de la Q49, les deux lignes deviennent :
+
+```python
+a0_opt, a1_opt, k1_opt, a2_opt, k2_opt = popt
+print(f"k1 = {k1_opt:.4g} s^-1, k2 = {k2_opt:.4g} s^-1")
+```
+
+Les constantes occupent les indices 2 et 4. L’échange des couples amplitude–constante laisse inchangée la courbe calculée. Les indices seuls ne désignent donc pas intrinsèquement la phase rapide. Un ajustement effectif gagne à partir de deux constantes initiales distinctes et positives pour éviter une dégénérescence numérique.
+
 ## Stéréochimie et nomenclature
 
 ### Question 51 — Repérage des centres stéréogènes
@@ -500,3 +560,12 @@ Les méthyles portés par Si sont fortement blindés. La liaison Si–C est pola
 Dans une cellule électrolytique, la borne positive alimente l’anode où s’effectue l’oxydation. Dans le circuit extérieur, le courant conventionnel va de la borne positive à l’anode et de la cathode à la borne négative. Dans la solution, les ions assurent le transport de charge de l’anode vers la cathode au sens du courant total. Un électrolyte support accroît la conductivité et limite la chute ohmique. Cette réponse porte sur les conventions électriques générales.
 
 ![Principe d’une cellule électrolytique. Le courant dans l’électrolyte a pour sens celui de l’anode vers la cathode.](figures/courant-electrolyse.svg)
+
+### Question 66 — Interpréter les bulles à la contre-électrode
+
+> [!INDICATION]
+> Une réduction doit consommer les électrons qui traversent le circuit.
+
+#### Solution
+
+Des bulles à la cathode sont compatibles avec une réduction des protons du milieu en dihydrogène. En écriture acide, 2 H⁺ + 2 e⁻ → H₂(g). En milieu protique peu acide, on peut écrire avec le donneur de protons HA : 2 HA + 2 e⁻ → H₂(g) + 2 A⁻. Cette contre-réaction rend compte du sens du transfert électronique. L’apparition de bulles ne suffit pas à identifier expérimentalement le gaz.

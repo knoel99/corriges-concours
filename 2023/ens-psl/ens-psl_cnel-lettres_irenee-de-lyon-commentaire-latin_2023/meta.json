@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_irenee-de-lyon-commentaire-latin_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Irénée de Lyon — commentaire latin",
+    "annee": 2023
+  },
+  "intitule": "Irénée, Contre les hérésies I, 11, 3-4 : explication du latin",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-1.pdf",
+    "sujet_sha256": "f3e289e9ccf68e1bb4c99bdae2dfc33e4964f39db6434fd7574403f80cfee3b5",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/parodier-la-tetrade.svg",
+      "question": "Argumentation",
+      "legende": "Ce que la parodie remplace et ce qu’elle conserve"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication du latin du sujet 1 et de la parodie ; usage des fragments grecs limité à l’éclairage du latin."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}
