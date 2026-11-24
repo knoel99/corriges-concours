@@ -64,9 +64,44 @@
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "Claude Opus 5.5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-06T13:30:19",
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "Claude Opus 5.5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-10",
+      "modifications": null,
+      "perimetre": "Révision avec le rapport du jury.",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Confrontation des 34 questions et sous-questions au sujet officiel MP-MPI et aux observations du jury. Contrôle des identités de compression, du signe de polarisation et des bornes sur les valeurs numériques. Contre-relecture indépendante des questions 1 à 17 et 18 à 30-b, et vérification des cinq nouveaux schémas.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 2
+    }
+  ]
 }

@@ -77,15 +77,42 @@
   "provenance": {
     "redaction": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "physique_psi"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Vérification de la numérotation des deux parties, calculs de tension, changement de variable, pentes de la figure 2 et sens des deux trajets visibles sur la figure 4. Contre-calcul indépendant des questions 11, 16, 19 et 23 à 26 du problème, avec relecture des deux graphiques et de la chronophotographie. La remarque préliminaire du rapport discordante avec le thème du sujet est signalée dans la présentation guidée.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    }
+  ]
 }

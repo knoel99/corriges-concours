@@ -41,15 +41,41 @@
   "provenance": {
     "redaction": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Contre-lecture indépendante des six pièces dans le livret. Vérification du statut de Job, de la perspective du correspondant à Washington et des bases distinctes des 82 % et 54 % en 2021.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    }
+  ]
 }

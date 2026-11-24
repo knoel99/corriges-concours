@@ -2,9 +2,11 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · Modèle : Claude Code (claude-opus-5-5) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
 
-**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Épreuve de 3 heures, calculatrice interdite. Les codes à compléter suivent le cadre fourni aux candidats. [Document réponse officiel](https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI5IN_DR.pdf). Convention : la case $(i, j)$ est celle de la ligne $i$ et de la colonne $j$.
 

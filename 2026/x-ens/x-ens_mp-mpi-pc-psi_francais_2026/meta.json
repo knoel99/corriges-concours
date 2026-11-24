@@ -45,15 +45,41 @@
   "provenance": {
     "redaction": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Contre-relecture indépendante du sujet commun, du rapport 2026, du plan et de la dissertation. Vérification du thème et du recours aux trois œuvres prescrites.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    }
+  ]
 }

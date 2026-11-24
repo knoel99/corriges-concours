@@ -51,15 +51,42 @@
   "provenance": {
     "redaction": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "physique_psi"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Lecture visuelle des équations sur les pages numérisées. Vérification du signe de la phase du plasma, des cinq fonctions de transfert et de l’égalité entre le moment cinétique mécanique final et le moment initial du champ.\nContre-lecture indépendante des deux signes de dispersion, du seuil du facteur de qualité et des moments transférés aux cylindres.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    }
+  ]
 }

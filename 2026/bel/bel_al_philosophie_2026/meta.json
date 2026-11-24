@@ -44,9 +44,44 @@
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "Claude Opus 4.8",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17T11:23:50+00:00",
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "GPT-6",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17",
+      "modifications": true,
+      "perimetre": "relecture indépendante effectuée ; corrections de fond et de forme appliquées",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Comparaison au sujet officiel d’une page et à la section de l’épreuve écrite commune du rapport ENS de Lyon. Vérification de la portée des exemples et de la cohérence entre les deux versions. Contre-relecture indépendante de l’argumentation, des attentes du jury et des trois figures.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 2
+    }
+  ]
 }

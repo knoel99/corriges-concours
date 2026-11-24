@@ -2,9 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte est extrait d’un discours prononcé à Stockholm par Annie Ernaux en 2022. La compréhension comporte quatre questions pour dix points. Le bref essai libre vaut également dix points.
 

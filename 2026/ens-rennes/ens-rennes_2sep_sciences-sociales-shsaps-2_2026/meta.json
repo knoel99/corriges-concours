@@ -44,15 +44,41 @@
   "provenance": {
     "redaction": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Contre-lecture indépendante de la composition face au sujet et aux trois pages du rapport. Définition de l’innovation, acteurs, bornes, appropriation sociale et distinction entre pratiques et usages contrôlées.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    }
+  ]
 }

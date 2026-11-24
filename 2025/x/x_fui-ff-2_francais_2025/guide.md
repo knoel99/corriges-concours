@@ -2,9 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 La formation francophone du concours universitaire international propose une épreuve de deux heures. Le texte est un extrait d’une conférence de Jean-Michel Maulpoix donnée à Aoste en 2020. Les trois réponses de compréhension sont suivies d’un bref essai libre sans limite de mots imposée.
 

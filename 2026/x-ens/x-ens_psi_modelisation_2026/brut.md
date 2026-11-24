@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Épreuve du 17 avril 2026, cinq heures sans calculatrice. Le sujet étudie la propulsion d’un ATR 72 puis l’alimentation d’un avion hybride ou électrique. Les lectures du graphe de débit et les valeurs de l’aide numérique sont distinguées aux questions 15, 21 et 22.
 

@@ -2,9 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · Modèle : OpenAI Codex (gpt-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · GPT-6 · effort non renseigné · vitesse non renseignée
 
-**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Révision (tour 1)** · GPT-6 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 ## Présentation du sujet
 

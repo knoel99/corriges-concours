@@ -40,9 +40,54 @@
     },
     "revision": {
       "provider": "codex",
-      "model": "GPT-6 (famille)",
+      "model": null,
       "effort": null,
-      "service_tier": null
+      "service_tier": null,
+      "famille_modele": "GPT-6"
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "GPT-6",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17T15:25:01+00:00",
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "GPT-6",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17",
+      "modifications": null,
+      "perimetre": "aucun défaut bloquant ou majeur identifié",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "GPT-6",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17",
+      "modifications": true,
+      "perimetre": "relecture indépendante effectuée ; corrections de fond et de forme appliquées",
+      "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Relecture sur le sujet commun de six heures et la partie écrite du rapport du jury, contrôle du chapitre XVIII de Léry et de la cohérence des deux versions. Contre-relecture indépendante de l’écrit, des micro-analyses et des deux figures.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 3
+    }
+  ]
 }

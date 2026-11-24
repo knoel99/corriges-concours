@@ -37,6 +37,24 @@ Règles de forme :
   son paragraphe : `![Figure N — légende](figures/<nom>.svg)`, et déclarée dans `meta.json` ;
 - ne pas recopier de longs passages des sujets ou des rapports de jury (droits des banques).
 
+### Signer une rédaction ou une révision par IA
+
+Ajoutez chaque intervention à la fin de `contributions` dans `meta.json`. Conservez les
+entrées précédentes. Le journal consigne la phase (`redaction`, `relecture_corrige` ou
+`retouches`, par exemple), le modèle et sa déclinaison dans `modele`, l’effort de
+raisonnement dans `effort` et le mode de vitesse dans `vitesse`. Renseignez également
+`date`, `modifications` et `perimetre` d’après le travail effectué. Un numéro de
+`tour` permet de distinguer plusieurs passes.
+
+Dans `brut.md` et `guide.md`, placez la signature après l’avertissement, sur une ligne
+par intervention. L’ordre de lecture est modèle, effort, vitesse. Ainsi, la rédaction
+Mines-Ponts de chimie PC 2024 donne **Rédaction** · GPT-6.2 Sol High standard.
+Conservez la valeur de vitesse enregistrée, y compris la distinction entre `standard`,
+`priority` et `ultrafast`. Pour une nouvelle session, relevez les réglages effectifs
+au moment de l’intervention. Pour une reprise d’archive, une valeur manquante reste
+`null` et apparaît comme « non renseigné » ou « non renseignée ». Si seule la famille
+est attestée, précisez-la dans `famille_modele` et laissez `modele` à `null`.
+
 En contribuant, vous acceptez que votre contribution soit publiée sous CC BY 4.0 (corrigés) ou
 MIT (scripts). Le mainteneur relit et fusionne les pull requests ; les corrections fusionnées
 sont publiées sur le site (Markdown et PDF recompilés) sans autre manipulation.

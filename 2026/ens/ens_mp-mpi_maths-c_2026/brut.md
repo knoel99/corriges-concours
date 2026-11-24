@@ -2,9 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 On travaille dans l'espace euclidien $\mathbb R^n$. Pour un fermé convexe non vide $C$, $\Pi_C$ désigne la projection sur $C$. On note $I$ l'application identité. Un point $s\in C$ est solution forte si $\langle G(s),x-s\rangle\geq0$ pour tout $x\in C$, et solution faible si $\langle G(x),x-s\rangle\geq0$ pour tout $x\in C$. La monotonie de $G$ signifie que $\langle G(v)-G(u),v-u\rangle\geq0$ pour tous $u,v$.
 

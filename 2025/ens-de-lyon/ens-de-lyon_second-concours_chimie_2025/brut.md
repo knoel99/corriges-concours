@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 **Couverture de l’épreuve (64 questions).** Les questions 1 à 45, 51, 56 et 60 reçoivent une réponse intégrale (48 questions). Les questions 46, 49, 52 et 53 reçoivent une réponse partielle, limitée aux propriétés des réactifs ou à la lecture du spectre. La voie de synthèse de la zéaralénone, qui concerne les questions 47–48, 50, 54–55, 57–59 et 61–64, reste hors du corrigé (12 questions).
 
