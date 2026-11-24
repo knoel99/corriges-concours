@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet s'intitule *Étude des ondes mécaniques dans une plaque élastique*. Il construit, par une démarche **entièrement énergétique**, la physique des ondes de flexion d'une plaque mince, puis l'applique à des situations concrètes (verre qui chante, séismes, lac gelé). Il se termine par une méthode optique de mesure de ces vibrations, la vibrométrie laser. L'épreuve dure 4 heures, la calculatrice est **interdite**, et le sujet compte **56 questions** en six parties, dont certaines sont indépendantes.
@@ -142,7 +144,7 @@ $$\boxed{c=a\sqrt{\frac{\kappa}{m}}}$$
 $c$ est une vitesse. C'est la célérité des ondes de compression (vitesse du son) dans la chaîne, égale à la vitesse de phase $\omega/k$, la même pour toutes les fréquences.
 
 > [!METHODE]
-> Pour une onde progressive non dispersive, les énergies cinétique et potentielle sont égales **à chaque instant et en chaque point**, pas seulement en moyenne. Égaler les deux énergies est une façon rapide d'obtenir une relation de dispersion.
+> Dans cette chaîne, une onde progressive $u=F(x-ct)$ vérifie $\partial_tu=-c\partial_xu$. Avec $c^2=\kappa a^2/m$, les deux densités d’énergie de Q3 et Q4 sont alors égales en chaque point. Pour une onde stationnaire, elles peuvent différer localement.
 
 ### Question 6
 
@@ -165,7 +167,7 @@ $$\boxed{\frac{\partial^2u}{\partial t^2}=c^2\,\frac{\partial^2u}{\partial x^2}}
 C'est l'équation de d'Alembert. Elle est **linéaire** (on peut superposer les solutions), **réversible** (invariante par $t\to-t$, sans dissipation) et **non dispersive** ($v_\varphi=v_g=c$) : un signal quelconque se propage sans se déformer.
 
 > [!METHODE]
-> Dictionnaire OPPH ↔ opérateurs : en notation $e^{j(\omega t-kx)}$, on a $\partial_t\leftrightarrow j\omega$ et $\partial_x\leftrightarrow-jk$. Il ne faut retenir que les puissances paires pour obtenir une équation réelle et réversible. Ce dictionnaire sert de nouveau en Q20.
+> Dictionnaire OPPH ↔ opérateurs : en notation $e^{j(\omega t-kx)}$, on a $\partial_t\leftrightarrow j\omega$ et $\partial_x\leftrightarrow-jk$. Ici la dispersion relie $\omega^2$ et $k^2$, d’où deux dérivées secondes. En Q20, le terme en $k^4$ donnera une dérivée quatrième.
 
 > [!JURY]
 > Le rapport 2026 : « Les meilleurs raisonnements remplaçaient proprement ω² et k² par les opérateurs temporel et spatial correspondants. » (p. 3)
@@ -454,7 +456,7 @@ Pour l'OPPH, $\omega^2Z=-\partial_t^2Z$ et $k^4Z=+\partial_x^4Z$, donc
 
 $$\boxed{\frac{\partial^2Z}{\partial t^2}+\frac{e^2c^2}{12}\frac{\partial^4Z}{\partial x^4}=0}$$
 
-Le premier terme est l'inertie de la plaque (masse linéique $\rho el$). Le second est la force de rappel de flexion, proportionnelle à la dérivée seconde de la courbure ; son coefficient $Ke^2/(12\rho)$ croît vite avec l'épaisseur.
+Le premier terme est l'inertie de la plaque (masse linéique $\rho el$). La force de rappel de flexion par unité de longueur vaut $-(Kle^3/12)\,\partial_x^4Z$. En divisant cette force par la masse linéique $\rho el$, on retrouve le coefficient $Ke^2/(12\rho)$ et le signe de l’accélération.
 
 L'ordre 4 en espace contre l'ordre 2 en temps rend la propagation dispersive. L'équation est linéaire et réversible, sans dissipation. C'est l'équation d'Euler–Bernoulli.
 
@@ -592,7 +594,7 @@ L'accord à quelques pour cent est un accord d'ordre de grandeur : les propriét
 
 Les ondes de flexion sont dispersives : $v_\varphi$ et $v_g$ dépendent de la fréquence. Une vitesse sismique est obtenue à partir des **temps d'arrivée** d'un train d'ondes à des stations éloignées.
 
-On mesure donc la vitesse de propagation de l'énergie, c'est-à-dire de l'enveloppe, et non celle des crêtes, qu'un chronométrage ne permet pas de mesurer. L'affirmation n'a de sens que pour la **vitesse de groupe**, à la fréquence dominante du train.
+Pour un paquet à bande étroite, ce temps de parcours de l’enveloppe donne la **vitesse de groupe** à la fréquence centrale. Mesurer la vitesse de phase demanderait de suivre une même phase entre stations.
 
 > [!JURY]
 > Le rapport 2026 : « La distinction entre vitesse de phase et vitesse de groupe était indispensable pour donner un sens à une vitesse de propagation d'un signal ou d'un paquet d'ondes. » (p. 4)
@@ -614,10 +616,10 @@ $$k\approx\frac{1{,}73\times4\times10^3}{1{,}8\times10^8}\approx3{,}9\times10^{-
 
 $$\boxed{\lambda\approx1{,}6\times10^{2}\ \mathrm{km}}$$
 
-Avec une vitesse de phase, on trouverait $\lambda\approx80$ km. Dans les deux cas $\lambda$ n'est que quelques fois $e$ : l'hypothèse de plaque mince est à la limite. La période associée, de l'ordre de la minute, est bien plus longue que celle des ondes S usuelles. L'assimilation est bien « abusive ».
+Si les 4 km/s désignaient la vitesse de phase, la longueur d’onde serait de 80 km. Avec l’interprétation retenue, $ke\simeq1{,}16$ et $T=\lambda/v_\varphi\simeq81\ \mathrm{s}$. Le critère de plaque mince $ke\ll1$ n’est donc pas satisfait. Une onde S de volume est une onde de cisaillement. L’énoncé ne l’assimile à une onde de flexion que pour ce calcul.
 
 > [!METHODE]
-> Une fois un résultat obtenu, tester les hypothèses du modèle ($\lambda\gg e$ pour une plaque mince). C'est la discussion attendue quand l'énoncé parle lui-même d'assimilation « abusive ».
+> Une fois un résultat obtenu, tester les hypothèses du modèle ($ke=2\pi e/\lambda\ll1$ pour une plaque mince). C'est la discussion attendue quand l'énoncé parle lui-même d'assimilation « abusive ».
 
 ### Question 29
 
@@ -670,7 +672,7 @@ $$\boxed{e=\frac{\sqrt3\,\beta^2}{4\pi c}}$$
 ![Figure 5 — Temps d’arrivée d’une composante dans la glace et lecture de la pente après linéarisation (schéma théorique).](figures/q30-temps-arrivee-glace.svg)
 
 > [!PIEGE]
-> Écrire $t=x/v_g$ en oubliant $t_0$ : l'énoncé précise que l'origine des temps est arbitraire. Il faut donc des **différences** de temps.
+> Écrire $t=x/v_g$ en oubliant $t_0$ : l'énoncé précise que l'origine des temps est arbitraire. On peut prendre des différences de temps ou ajuster la droite avec une ordonnée à l’origine libre.
 
 ### Question 31
 
@@ -686,7 +688,7 @@ L'écart d'arrivée entre deux fréquences est proportionnel à la distance :
 
 $$\Delta t=x\left(\frac{1}{v_g(f_2)}-\frac{1}{v_g(f_1)}\right)$$
 
-À 50 m, les fréquences arrivent presque ensemble et l'on entend un claquement bref. À 500 m, le balayage dure dix fois plus longtemps et l'on entend un sifflement descendant étalé.
+À bande de fréquences identique, le balayage descendant dure dix fois plus longtemps à 500 m qu’à 50 m. Sa durée absolue dépend aussi de l’épaisseur de glace et des fréquences émises.
 
 Le son lointain est aussi plus faible, même sans dissipation : l'énergie de l'impact se répartit sur un front de plus en plus grand et sur une durée de plus en plus longue. Une atténuation réelle, plus forte en général aux hautes fréquences, peut s'y ajouter, mais elle sort du modèle.
 
@@ -746,18 +748,18 @@ $$\boxed{\varphi_2=2\pi f_lt-\frac{2\pi}{\lambda_l}\big(4d+2D+2z(t)\big)}$$
 ### Question 34
 
 > [!INDICATION]
-> Deux ondes issues d'une même source n'interfèrent que si leur différence de marche est inférieure à une longueur caractéristique du laser : laquelle ?
+> Quelle propriété spectrale du laser détermine la différence de marche compatible avec un bon contraste ?
 
 > [!INDICATION]
 > La condition porte sur $D$ comparé à $d$, pas sur $D$ seul.
 
 #### Solution
 
-La différence de marche vaut $\delta=2(D-d)+2z-2\epsilon$. Il faut qu'elle reste inférieure à la longueur de cohérence $\ell_c=c_0/\Delta f_l$ :
+La différence de marche vaut $\delta=2(D-d)+2z-2\epsilon$. Le contraste reste appréciable si $|\delta|\lesssim\ell_c$, avec $\ell_c\sim c_0/\Delta f_l$ pour une largeur spectrale $\Delta f_l$. Lorsque $|z|$ et $|\epsilon|$ sont petits devant $\ell_c$, on obtient
 
 $$\boxed{2|D-d|\lesssim\ell_c}$$
 
-$\ell_c$ va d'environ 1 cm (diode multimode) à environ 1 m (laser à gaz usuel), et jusqu'à des centaines de mètres pour un laser monomode stabilisé. Pour un vibromètre, $D$ peut donc aller de quelques centimètres au mètre autour de $d$.
+Par exemple, une largeur spectrale de $1\ \mathrm{GHz}$ donne $\ell_c\sim0{,}3\ \mathrm{m}$ et un écart $|D-d|$ de l’ordre de 15 cm ou moins. L’énoncé ne fixe pas la largeur spectrale du laser.
 
 ### Question 35
 
@@ -773,7 +775,7 @@ Avec $a_1=a_2=a$ :
 
 $$(s_1+s_2)^2=a^2\left[\cos^2\varphi_1+\cos^2\varphi_2+\cos(\varphi_1+\varphi_2)+\cos(\varphi_1-\varphi_2)\right].$$
 
-On moyenne sur les 5 ns de la photodiode, durée très grande devant la période optique et très petite devant 1 ms. On a $\langle\cos^2\rangle=\frac12$, et $\langle\cos(\varphi_1+\varphi_2)\rangle=0$ car ce terme oscille à $2f_l$.
+La photodiode intègre sur 5 ns, soit plusieurs millions de périodes optiques. Pendant ce temps, $z$ varie d’au plus $2\pi f a_z\times5\ \mathrm{ns}\simeq3\ \mathrm{nm}$, très peu devant le déplacement $\lambda_l/2$ correspondant à une frange. On a $\langle\cos^2\rangle=\frac12$, et $\langle\cos(\varphi_1+\varphi_2)\rangle=0$ car ce terme oscille à $2f_l$.
 
 Le terme $\cos(\varphi_1-\varphi_2)$, qui ne dépend que de $z(t)$, survit. Avec $D=d$, $\varphi_2-\varphi_1=-\frac{4\pi}{\lambda_l}(z-\epsilon)$, d'où
 
@@ -783,7 +785,7 @@ $$\boxed{U(t)=U_0\left(1+\cos\left(4\pi\frac{z(t)-\epsilon}{\lambda_l}\right)\ri
 > Il faut toujours dire **sur quelle durée** on moyenne et pourquoi : le temps de réponse du détecteur doit être grand devant la période optique et petit devant le temps d'évolution du signal utile.
 
 > [!JURY]
-> Le maximum $U=2U_0$ vaut quatre fois l'intensité d'une seule onde, ce qui a surpris plusieurs copies. Le rapport 2026 rappelle que « l'interférence constructive peut doubler l'amplitude du champ lorsque les amplitudes sont égales, ce qui quadruple l'intensité par rapport à une seule onde de même amplitude » (p. 5). Il faut distinguer amplitude du champ et intensité.
+> La tension maximale $2U_0$ correspond à une intensité quatre fois plus élevée qu’avec un seul des deux faisceaux. Le rapport 2026 rappelle que « l'interférence constructive peut doubler l'amplitude du champ lorsque les amplitudes sont égales, ce qui quadruple l'intensité par rapport à une seule onde de même amplitude » (p. 5). Il faut distinguer amplitude du champ et intensité.
 
 ### Question 36
 
@@ -848,7 +850,7 @@ On obtient une sinusoïde à la fréquence $f$ de la vibration, centrée sur $U_
 
 #### Solution
 
-$U=U_0\left(1+\cos\left(\frac{4\pi a_z}{\lambda_l}\sin\omega t\right)\right)$ oscille entre 0 et $2U_0$ avec la fréquence instantanée $2|\dot z|/\lambda_l$.
+Pour le réglage $\epsilon=0$ illustré ci-dessous, $U=U_0\left(1+\cos\left(\frac{4\pi a_z}{\lambda_l}\sin\omega t\right)\right)$ oscille entre 0 et $2U_0$ avec la fréquence instantanée $2|\dot z|/\lambda_l$.
 
 ![Figure 8 — Signal U(t) pour az ≫ λl : franges serrées aux passages par z = 0, étirées aux rebroussements z = ±az](figures/q39-franges-grande-amplitude.svg)
 
@@ -1085,11 +1087,11 @@ $$\boxed{\frac{\mathrm{d}U}{\mathrm{d}t}=\frac{U_s}{RC}+\frac{\mathrm{d}U_s}{\ma
 > Quel terme de l'équation précédente faut-il négliger pour obtenir un dérivateur ? Traduire cette condition en régime sinusoïdal.
 
 > [!INDICATION]
-> Quelle est la plus haute fréquence présente dans $U(t)$ ?
+> Jusqu’à quelle fréquence instantanée la porteuse monte-t-elle pendant une vibration ?
 
 #### Solution
 
-On néglige $\mathrm{d}U_s/\mathrm{d}t$ devant $U_s/(RC)$, ce qui revient à $RC\,\Omega\ll1$ pour toutes les pulsations du signal. La fréquence instantanée atteint $f_B+|f_D|_{\max}=44$ MHz. À cette échelle, la vibration à 1 kHz module lentement la porteuse. Pour que le filtre dérive le signal sur sa bande utile, on impose
+On néglige $\mathrm{d}U_s/\mathrm{d}t$ devant $U_s/(RC)$, ce qui revient à $RC\,\Omega\ll1$ sur la bande utile de la porteuse modulée. La fréquence instantanée atteint $f_B+|f_D|_{\max}=44$ MHz. À cette échelle, la vibration à 1 kHz module lentement la porteuse. Pour que le filtre dérive le signal sur sa bande utile, on impose
 
 $$RC\ll\frac1{2\pi\times44\times10^6}\approx3{,}6\ \mathrm{ns}.$$
 
@@ -1099,13 +1101,13 @@ $$\boxed{R=10\ \Omega}$$
 
 $$\boxed{C=10\ \mathrm{pF}}$$
 
-soit $RC=0{,}1$ ns et $RC\Omega\le0{,}03$. Il faut un compromis, car la sortie $\sim2\pi fRCU_0\approx0{,}03\,U_0$ diminue avec $RC$, et les capacités parasites sont de l'ordre du picofarad.
+soit $RC=0{,}1$ ns et $RC\Omega\le0{,}03$. À la fréquence centrale de la porteuse, l’amplitude de sortie vaut environ $2\pi f_BRCU_0\simeq0{,}025\,U_0$. Elle diminue avec $RC$.
 
 > [!PIEGE]
 > Prendre $RC$ seulement quelques fois plus petit que la période, par exemple $RC=1$ ns : à 44 MHz, $RC\Omega\approx0{,}28$ n'est pas « très petit devant 1 ». La sortie n'est alors plus proportionnelle à la fréquence instantanée, et l'erreur sur la vitesse atteint quelques pour cent.
 
 > [!METHODE]
-> Un filtre CR passe-haut se comporte en dérivateur loin **sous** sa fréquence de coupure. On vérifie la condition pour la composante de **plus haute** fréquence du signal.
+> Un filtre CR passe-haut se comporte en dérivateur loin **sous** sa fréquence de coupure. On vérifie la condition pour les fréquences les plus élevées de la bande utile.
 
 > [!JURY]
 > Le rapport 2026 : « Les valeurs proposées pour R et C devaient être cohérentes avec les fréquences en jeu, et non choisies arbitrairement. » (p. 5). On justifie donc le choix par la fréquence de 44 MHz, pas par la vibration à 1 kHz.
@@ -1121,7 +1123,7 @@ $$\begin{aligned}U_s&\simeq RC\dot U\\&=-2\pi RCU_0\big(f_B+f_D(t)\big)\sin\Phi(
 
 ![Figure 10 — Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)](figures/q55-sortie-derivateur.svg)
 
-On obtient une porteuse à environ 40 MHz, sans composante continue, dont l'**enveloppe** est proportionnelle à $f_B+f_D(t)$. Elle varie de $\pm10\,\%$ au rythme de $v(t)$. La dérivation a converti la modulation de fréquence en modulation d'amplitude.
+On obtient une porteuse à environ 40 MHz, sans composante continue, dont l'**enveloppe** est proportionnelle à $f_B+f_D(t)$. Elle varie de $\pm10\,\%$ au rythme de $v(t)$. La porteuse reste modulée en fréquence. Son enveloppe restitue aussi la variation de vitesse.
 
 ### Question 56
 
@@ -1158,7 +1160,7 @@ On peut aussi intégrer $v(t)$ pour reconstruire $z(t)$, à une constante près.
 - La chaîne énergie → relation de dispersion → équation d'onde : on calcule $E_c$ et $E_p$ sur une longueur d'onde, on les égale, puis on traduit $\omega^2\leftrightarrow-\partial_t^2$ et $k^2\leftrightarrow-\partial_x^2$ (donc $k^4\leftrightarrow\partial_x^4$). On vérifie toujours le signe en reportant une OPPH.
 - Le passage du discret au continu : $\sum_n\to\frac1a\int\mathrm{d}x$, et une raideur microscopique devient un module d'Young $K=\kappa/a$.
 - La flexion : élongation $rL/R_C$ d'une fibre, intégrale symétrique sur l'épaisseur, rigidité en $e^3$, $1/R_c=\partial_x^2Z$.
-- Les milieux dispersifs : $\omega\propto k^n$ donne $v_g=nv_\varphi$. Un chronométrage mesure $v_g$. Un spectrogramme en balayage de fréquence est une signature de la dispersion.
+- Les milieux dispersifs : $\omega\propto k^n$ donne $v_g=nv_\varphi$. Le temps d’arrivée de l’enveloppe d’un paquet à bande étroite donne $v_g$. Pour un impact qui excite les fréquences simultanément, leur étalement à l’arrivée révèle la dispersion.
 - L'interféromètre à deux ondes : amplitudes ($1/\sqrt2$ par séparatrice), contraste maximal si $a_1=a_2$, différence de marche $2z$ en réflexion, frange tous les $\lambda/2$, réglage en quadrature pour un signal linéaire.
 - L'effet Doppler sur un miroir mobile ($f_D=-2v/\lambda$), le battement entre deux fréquences voisines, la hiérarchie des temps de moyennage, la levée d'ambiguïté de signe par une fréquence porteuse, et la démodulation de fréquence par dérivation suivie d'une détection d'enveloppe.
 

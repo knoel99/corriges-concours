@@ -60,7 +60,7 @@
       "legende": "Les crêtes de Rossby se déplacent vers l’ouest. Le sens de propagation d’un paquet dépend de sa longueur d’onde."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "modele": "OpenAI Codex (GPT-6)",
     "objet": "Relecture des 45 questions et sous-questions sur le sujet et le rapport 2026. Tracé discret de la question 15.3 et comparaison des comptages aux questions 31 et 33. Contre-vérification indépendante du tracé de la question 15.3 et des comptages des questions 31–33."
@@ -118,6 +118,18 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 3,
+      "modifications": true,
+      "perimetre": "Relecture indépendante des 45 questions et sous-questions des deux versions et des dix schémas avec le sujet et le rapport officiels. Corrections des bords de bande, du raccord de la Q21 et de son tracé, du gradient horizontal en Q22, des traversées en Q33 et du cas de nombre d’onde nul en Q34.",
+      "agent": "relecture_astra_physique_2026/verification_pcb",
+      "fournisseur": "codex"
     }
   ]
 }

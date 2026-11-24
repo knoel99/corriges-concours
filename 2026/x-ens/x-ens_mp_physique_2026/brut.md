@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve n° 5, durée 4 h, calculatrice interdite. Sujet : *Étude des ondes mécaniques dans une plaque élastique*.
 
 ## I. Préambule : onde de compression unidimensionnelle
@@ -246,7 +248,7 @@ Vérification : avec $Z=a_Z\sin(kx-\omega t)$, on obtient $(-\omega^2+e^2c^2k^4/
 
 Commentaire des termes :
 - le terme $\partial_t^2Z$ est le terme d'inertie (accélération transverse, associée à la masse linéique $\rho el$) ;
-- le terme en $\partial_x^4Z$ est la force de rappel due à la rigidité de flexion. Il fait intervenir la dérivée seconde de la courbure, et son coefficient $e^2c^2/12=Ke^2/(12\rho)$ croît avec l'épaisseur ;
+- la force de rappel par unité de longueur vaut $-(Kle^3/12)\,\partial_x^4Z$. En la divisant par la masse linéique $\rho el$, on obtient l’accélération transverse ;
 - l'ordre 4 en espace contre l'ordre 2 en temps rend la propagation dispersive. L'équation reste linéaire et réversible, sans terme de dissipation. C'est l'équation des poutres d'Euler–Bernoulli.
 
 ## V. Applications
@@ -317,11 +319,11 @@ $$\begin{aligned}c&=\sqrt{\frac{K}{\rho}}=\sqrt{\frac{10^{11}}{2{,}8\times10^{3}
 
 La vitesse des ondes P (6 km/s) est **cohérente** avec ce résultat. Les ondes P sont des ondes de compression longitudinales : le modèle des parties I et II les décrit par une équation de d'Alembert, donc sans dispersion. Leur vitesse ne dépend alors ni de la fréquence ni de l'épaisseur $e$ de la croûte, seulement du matériau ($K$, $\rho$), ce qui donne un sens à « une » vitesse des ondes P.
 
-L'accord à quelques pour cent près ne doit pas être surinterprété : les propriétés de la croûte varient avec la profondeur, et le modèle de ressorts selon un seul axe ignore le couplage avec les directions transverses. On retient l'accord en ordre de grandeur, ce qui valide l'usage de ce modèle simple pour la croûte.
+La valeur calculée est compatible avec la précision des données. Les propriétés de la croûte varient avec la profondeur et le modèle de ressorts selon un seul axe ignore le couplage avec les directions transverses.
 
 ### Question 27
 
-Les ondes de flexion sont dispersives : $v_\varphi$ et $v_g$ dépendent toutes deux de la fréquence, et $v_g=2v_\varphi$. Une vitesse sismique se mesure par le **temps d'arrivée** d'un train d'ondes entre la source et des stations éloignées. C'est donc la vitesse de propagation de l'énergie (de l'enveloppe du paquet) qui est mesurée, pas celle des crêtes, qui n'est pas accessible par un chronométrage. L'affirmation n'a de sens que pour la **vitesse de groupe**, prise à la fréquence dominante du train d'ondes.
+Dans le modèle de flexion du sujet, $v_g=2v_\varphi$ et les deux vitesses dépendent de la fréquence. Si les 4 km/s proviennent du temps d’arrivée d’un paquet à bande étroite entre deux stations, ils donnent sa **vitesse de groupe** à la fréquence centrale. Mesurer la vitesse de phase demanderait de suivre une même phase entre stations.
 
 ### Question 28
 
@@ -337,7 +339,7 @@ $$\boxed{\lambda\approx1{,}6\times10^{5}\ \mathrm{m}\approx1{,}6\times10^{2}\ \m
 
 Si l'on interprétait 4 km/s comme une vitesse de phase, on obtiendrait $\lambda=2\pi ec/(\sqrt{12}\,v_\varphi)\approx8\times10^{1}$ km.
 
-Dans les deux cas $\lambda$ n'est que quelques fois $e$ : l'hypothèse de plaque mince ($\lambda\gg e$) est à peine vérifiée. La période correspondante, de l'ordre de la minute, est bien plus longue que celle des ondes S usuelles. Cela confirme que l'assimilation est « abusive ».
+Avec $v_g=4\ \mathrm{km\,s^{-1}}$, on trouve $ke\simeq1{,}16$ et $T=\lambda/v_\varphi\simeq81\ \mathrm{s}$. La condition de plaque mince $ke\ll1$ n’est donc pas satisfaite. La longueur d’onde calculée est celle du modèle imposé par l’énoncé. Une onde S de volume est une onde de cisaillement, dont la célérité dépend du module de cisaillement de la roche.
 
 ### Lac gelé
 
@@ -380,7 +382,7 @@ L'écart d'arrivée entre deux fréquences est **proportionnel à la distance** 
 
 $$\Delta t=x\left(\frac1{v_g(f_2)}-\frac1{v_g(f_1)}\right)$$
 
-À 50 m, toutes les fréquences arrivent presque ensemble et l'on entend un claquement bref. À 500 m, le balayage dure environ dix fois plus longtemps et l'on entend un sifflement descendant nettement étalé.
+À bande de fréquences identique, l’écart entre les arrivées est dix fois plus grand à 500 m qu’à 50 m. À chaque distance, l’aigu arrive en premier. Le son à 50 m est plus bref, mais sa durée absolue dépend de l’épaisseur de la glace et des fréquences émises.
 
 Le son lointain est aussi plus faible, sans qu'il faille invoquer une dissipation : le modèle est dispersif mais non dissipatif. L'énergie de l'impact se répartit sur un front de plus en plus grand (onde à deux dimensions sur la glace) et sur une durée de plus en plus longue (étalement dû à la dispersion). Une atténuation réelle (frottements internes, rayonnement dans l'air), plus forte en général aux hautes fréquences, peut s'y ajouter, mais elle sort du modèle. Le timbre et la durée du son diffèrent donc selon la distance.
 
@@ -422,15 +424,15 @@ Le retard de propagation dans $z$ (de l'ordre de 0,1 ns) est négligeable devant
 
 ### Question 34
 
-Les deux ondes viennent de la même source. Elles n'interfèrent que si la différence de marche $\delta=2(D-d)+2z-2\epsilon$ reste inférieure à la longueur de cohérence temporelle du laser, $\ell_c=c_0/\Delta f_l$. Comme $z$ et $\epsilon$ sont microscopiques :
+Les deux trajets partent de la même source. Pour observer des franges de bon contraste, la valeur absolue de la différence de marche $\delta=2(D-d)+2z-2\epsilon$ doit rester de l’ordre de la longueur de cohérence temporelle du laser ou plus petite. Pour une largeur spectrale $\Delta f_l$, cette longueur est de l’ordre de $\ell_c\sim c_0/\Delta f_l$. Si $|z|$ et $|\epsilon|$ sont petits devant $\ell_c$, cela donne
 
 $$\boxed{2\,|D-d|\lesssim\ell_c}$$
 
-Ordres de grandeur : environ 1 mm à 1 cm pour une diode laser multimode, environ 10 cm à 1 m pour un laser à gaz usuel, et jusqu'à des centaines de mètres pour un laser monomode stabilisé ($\Delta f_l\sim1$ MHz). Avec un laser de vibrométrie, la distance $D$ peut aller de quelques centimètres au mètre autour de $d$. Le réglage $D=d$ annule la différence de marche géométrique.
+La largeur spectrale du laser n’est pas donnée. À titre d’exemple, pour $\Delta f_l=1\ \mathrm{GHz}$, on trouve $\ell_c\sim0{,}3\ \mathrm{m}$, soit $|D-d|\lesssim0{,}15\ \mathrm{m}$. Le réglage $D=d$ égalise les chemins au repos pour $\epsilon=0$.
 
 ### Question 35
 
-L'intensité reçue est $I\propto\langle(s_1+s_2)^2\rangle$, moyennée sur le temps de réponse de la photodiode $\tau_d=5$ ns. Cette durée est très grande devant la période optique ($\sim10^{-15}$ s) et très petite devant la période de vibration (1 ms). Avec $a_1=a_2=a$ et la formule rappelée :
+L'intensité reçue est $I\propto\langle(s_1+s_2)^2\rangle$, moyennée sur le temps de réponse de la photodiode $\tau_d=5$ ns. Cette durée est très grande devant la période optique ($\sim10^{-15}$ s) et courte devant le temps de défilement d’une frange. La phase $4\pi z/\lambda_l$ varie d’au plus $4\pi (2\pi f a_z)\tau_d/\lambda_l\simeq0{,}13$ rad pendant la mesure. Avec $a_1=a_2=a$ et la formule rappelée :
 
 $$(s_1+s_2)^2=a^2\left[\cos^2\varphi_1+\cos^2\varphi_2+\cos(\varphi_1+\varphi_2)+\cos(\varphi_1-\varphi_2)\right].$$
 
@@ -574,7 +576,7 @@ $$\frac1{f_l}\ \ll\ \tau_{\text{int}}\ \ll\ \frac1{|f_D|}$$
 
 avec $1/f_l\sim10^{-15}$ s et $1/|f_D|\gtrsim2{,}5\times10^{-7}$ s.
 
-En pratique $\tau_{\text{int}}$ est le temps de réponse de la photodiode, 5 ns, qui convient. Les termes à $2f_l$ se moyennent à zéro. Le terme de battement à $f_D$, $10^7$ à $10^8$ fois plus lent, n'est pas moyenné. Les deux rayons, de fréquences voisines et issus de la même source (donc cohérents entre eux), produisent un **battement** : l'intensité moyenne varie à la fréquence $|f_D|$.
+En pratique $\tau_{\text{int}}$ est le temps de réponse de la photodiode, 5 ns, qui convient. Les termes à $2f_l$ se moyennent à zéro. Le terme de battement varie au plus à 4 MHz, soit sur une durée d’au moins 250 ns. Il subsiste après cette moyenne. Les deux rayons, de fréquences voisines et issus de la même source (donc cohérents entre eux), produisent un **battement** : l'intensité moyenne varie à la fréquence $|f_D|$.
 
 ### Question 47
 
@@ -660,7 +662,7 @@ $$\boxed{R=10\ \Omega}$$
 
 $$\boxed{C=10\ \mathrm{pF}}$$
 
-soit $RC=0{,}1$ ns. Cela donne $RC\Omega\le0{,}03$ et une erreur relative inférieure à $10^{-3}$ sur le module du gain par rapport au dérivateur idéal. On ne peut pas descendre beaucoup plus bas, car l'amplitude de sortie, $\sim2\pi fRCU_0\approx0{,}03\,U_0$, diminue avec $RC$, et les capacités parasites sont de l'ordre du picofarad.
+soit $RC=0{,}1$ ns. Cela donne $RC\Omega\le0{,}03$ et une erreur relative inférieure à $10^{-3}$ sur le module du gain par rapport au dérivateur idéal. À la fréquence centrale $f_B=40\ \mathrm{MHz}$, l’amplitude de sortie vaut environ $2\pi f_BRCU_0\simeq0{,}025\,U_0$. Réduire $RC$ la diminue encore.
 
 ### Question 55
 
@@ -672,7 +674,7 @@ $$\begin{aligned}U_s&\simeq RC\frac{\mathrm{d}U}{\mathrm{d}t}\\&=-2\pi RC\,U_0\b
 
 On obtient une porteuse à environ 40 MHz, centrée sur zéro (la composante continue $U_0$ est éliminée), dont l'**amplitude** est proportionnelle à la fréquence instantanée.
 
-L'enveloppe varie entre $2\pi RCU_0(f_B-|f_D|_{\max})$ et $2\pi RCU_0(f_B+|f_D|_{\max})$, soit $\pm10\,\%$ autour de sa valeur moyenne, au rythme de $v(t)$. Le dérivateur a converti la modulation de fréquence en modulation d'amplitude.
+L'enveloppe varie entre $2\pi RCU_0(f_B-|f_D|_{\max})$ et $2\pi RCU_0(f_B+|f_D|_{\max})$, soit $\pm10\,\%$ autour de sa valeur moyenne, au rythme de $v(t)$. La fréquence instantanée de la porteuse continue de varier. La dérivation fait aussi apparaître cette variation dans son enveloppe, que l’on peut mesurer en Q56.
 
 ### Question 56
 
