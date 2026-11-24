@@ -1,0 +1,43 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-dora-bruder-de-patrick-modiano-oral_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Dora Bruder de Patrick Modiano (oral)",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-oral-sil2022.pdf",
+    "sujet_sha256": "c1183333e4dfd30123fb36dcecf26e5395a4426b0f318b11ee8f2c3faae8fcea",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-litterature-sil_2022.pdf",
+    "rapport_sha256": "6ce585f789f749c79b2b0ecd46c75a73101b99148ceed18f2d4807ad66e4d50b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois seuils et trois rapports au passé"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire du début du deuxième chapitre de Dora Bruder, selon les lignes du sujet, avec proposition d’exposé, six questions d’entretien et leurs réponses, organisation d’une heure de préparation et figure."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
