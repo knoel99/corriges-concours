@@ -218,11 +218,17 @@ end
 
 -- Dans une copie bilingue, la première lettre détermine le sens du paragraphe.
 -- Babel garde la ponctuation, les chiffres et les passages latins dans leur sens.
-local function paragraphe_arabe(p)
+local function paragraphe_droite_gauche(p)
   for _, code in utf8.codes(pandoc.utils.stringify(p.content)) do
+    local langue
     if (code >= 0x621 and code <= 0x64A) or (code >= 0x671 and code <= 0x6D3) then
+      langue = "arabic"
+    elseif code >= 0x5D0 and code <= 0x5EA then
+      langue = "hebrew"
+    end
+    if langue then
       return {
-        pandoc.RawBlock("latex", "\\begin{otherlanguage}{arabic}"),
+        pandoc.RawBlock("latex", "\\begin{otherlanguage}{" .. langue .. "}"),
         p,
         pandoc.RawBlock("latex", "\\end{otherlanguage}"),
       }
@@ -249,6 +255,8 @@ function Pandoc(doc)
     end
   end
   doc.blocks = blocs
-  if doc.meta.arabe then doc = doc:walk({ Para = paragraphe_arabe }) end
+  if doc.meta.arabe or doc.meta.hebreu then
+    doc = doc:walk({ Para = paragraphe_droite_gauche })
+  end
   return doc
 end

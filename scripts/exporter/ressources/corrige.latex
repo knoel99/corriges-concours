@@ -23,11 +23,20 @@
 \setmathfont{Latin Modern Math}
 $if(arabe)$
 \usepackage[bidi=basic,french]{babel}
+$elseif(hebreu)$
+\usepackage[bidi=basic,french]{babel}
+$else$
+\usepackage[french]{babel}
+$endif$
+$if(arabe)$
 \babelprovide[import,onchar=ids fonts]{arabic}
 \babelfont[arabic]{rm}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Naskh Arabic}
 \babelfont[arabic]{sf}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Naskh Arabic}
-$else$
-\usepackage[french]{babel}
+$endif$
+$if(hebreu)$
+\babelprovide[import,onchar=ids fonts]{hebrew}
+\babelfont[hebrew]{rm}[Renderer=HarfBuzz]{Noto Serif Hebrew}
+\babelfont[hebrew]{sf}[Renderer=HarfBuzz]{Noto Sans Hebrew}
 $endif$
 $if(chinois)$
 % Identifie les caractères han et autorise les coupures entre idéogrammes, y compris
