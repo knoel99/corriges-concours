@@ -1,0 +1,41 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_linguistique_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Linguistique",
+    "annee": 2023
+  },
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/linguistique-ecrit-sil2023.pdf",
+    "sujet_sha256": "cdfc0ee45663e314c33ce37d82b7bca246ec55a32d7ac674e5c8ca73719c269b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Exercices",
+      "legende": "Deux morphèmes /na/, deux dérivations"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Résolution des trois exercices (dix questions, bonus phonologique compris), avec dérivations ordonnées, traitement des clitiques et du morphème nul, indices de coréférence et parenthésages morphologiques, schéma et démarches guidées. Une analyse cyclique explicite compatible avec les données est présentée."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

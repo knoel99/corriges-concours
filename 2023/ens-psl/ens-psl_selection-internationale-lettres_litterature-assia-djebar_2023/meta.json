@@ -1,0 +1,41 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-assia-djebar_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Assia Djebar",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-sujet3-sil2023.pdf",
+    "sujet_sha256": "7a7ab18ce611bc542778f00379e510cdc72013b3423e784035da08e5e7a90cf6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "De l’obligation de parler à la limite de la parole"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire organisé de l’extrait d’Écrivain/Écrivaine sur la trace et le silence, avec lectures de L’Amour, la fantasia, de Marguerite Duras et de Georges Perec, préparation et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

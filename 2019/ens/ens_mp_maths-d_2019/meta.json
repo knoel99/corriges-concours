@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-d_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2019
+  },
+  "questions": 51,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/19_mpi_mathd_sujet.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/19_mp_rap_emathd_u.pdf",
+    "sha256_sujet": "9a03f786e67b6a3e37bf051624c26c8f1acc46995736b0a1d157367ec4cb8829"
+  },
+  "figures": [
+    {
+      "fichier": "figures/hyperbole-diviseurs.svg",
+      "question": "I.3",
+      "legende": "Pour x = 12 et y = 3, les deux bandes couvrent tous les points entiers sous l’hyperbole. Les points violets appartiennent aux deux bandes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des questions 1 à 25 et de toutes leurs sous-questions. Contrôle des signes et des conjugaisons sur le fac-similé, des hypothèses corrigées par le jury et du rôle de la coprimalité en 24b. Schéma de la méthode de l’hyperbole.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
