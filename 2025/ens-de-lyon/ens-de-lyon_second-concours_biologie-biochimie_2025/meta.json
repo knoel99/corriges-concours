@@ -10,7 +10,9 @@
   "questions": 32,
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_bio.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eBio.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eBio.pdf",
+    "sujet_sha256": "8ebbc2f8a7deaa838f07e1e17a61de195f0cf4f18a4f5800748568c70ec8a6f7",
+    "rapport_sha256": "ba2687dacf6c109eb8460bc3c299af710a11156430028b7d7ceafb8993ddc318"
   },
   "figures": [
     {
@@ -43,18 +45,18 @@
   "couverture": {
     "statut": "partiel",
     "questions_entierement_traitees": [
-      1,
       7,
-      9,
       18,
-      21,
       23,
       31,
       32
     ],
     "questions_partiellement_traitees": [
+      1,
       3,
       8,
+      9,
+      21,
       26,
       30
     ],
@@ -79,7 +81,8 @@
       27,
       28,
       29
-    ]
+    ],
+    "precision": "5 questions indépendantes intégralement traitées et 7 partielles sur des principes généraux. Ni les résultats expérimentaux sur le facteur de virulence ni leurs applications à la souche ne sont analysés."
   },
   "provenance": {
     "redaction": {
@@ -101,6 +104,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle de la portée des 32 questions sur le sujet et le rapport de 2025. Relecture des deux éditions dans le périmètre des notions de cours indépendantes : biochimie des acides aminés, lecture générique des immunotransferts et expression eucaryote. Aucune analyse des expériences sur la régulation de la virulence. Cinq réponses intégrales et sept partielles."
     }
   ]
 }
