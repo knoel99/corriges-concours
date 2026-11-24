@@ -213,6 +213,9 @@
 | 2012 | Castor informatique | Défi individuel | Découpe | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | La chute | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | Ranger ses photos | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Italien | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_italien_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_italien_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Portugais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_portugais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_portugais_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Russe | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_russe_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_russe_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Anglais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Français-philosophie | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/guide.md) |
 | 2024 | CCINP | MP | Informatique | [md](2024/ccinp/ccinp_mp_informatique_2024/brut.md) | [md](2024/ccinp/ccinp_mp_informatique_2024/guide.md) |
