@@ -1,0 +1,44 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-donnees-et-modeles-oral_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — données et modèles (oral)",
+    "annee": 2026
+  },
+  "intitule": "Données et modèles en prévision économique.",
+  "questions": 1,
+  "redaction": "Rédaction des deux éditions de l’exposé d’économie à partir du sujet individuel imprimé page 2 du rapport du jury. Dates de disponibilité, données en temps réel, estimation du présent, surprises, validation chronologique, risque de rupture et pertes asymétriques. Quatre relances argumentées.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf#page=2",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf",
+    "rapport_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150",
+    "nature": "Intitulé individuel de l’oral reproduit page 2 du rapport officiel, candidat 3.",
+    "references": [
+      "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists",
+      "https://www.atlantafed.org/cqer/research/gdpnow",
+      "https://doi.org/10.1016/j.jmoneco.2008.05.010"
+    ]
+  },
+  "figures": [],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de l’exposé d’économie à partir du sujet individuel imprimé page 2 du rapport du jury. Dates de disponibilité, données en temps réel, estimation du présent, surprises, validation chronologique, risque de rupture et pertes asymétriques. Quatre relances argumentées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé oral"
+    ]
+  }
+}
