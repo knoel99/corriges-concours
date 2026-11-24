@@ -1,0 +1,58 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-microeconomique_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse microéconomique",
+    "annee": 2026
+  },
+  "intitule": "Concurrence, entrée et information sur les coûts",
+  "gabarit": "questions",
+  "questions": 44,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2026/2026_EG1_Analyse_Microeconomique.pdf",
+    "sujet_sha256": "3f2b8d15745471189b52c187a639b42844a661b3946d9118f7646d30a4e596fd"
+  },
+  "figures": [
+    {
+      "fichier": "figures/quantites-equilibre.svg",
+      "question": "1.3 à 1.5",
+      "legende": "Quantités offertes selon la forme de concurrence"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des facteurs de surplus, du seuil d’entrée et des solutions de coin. Vérification des profits avec les deux types du suiveur en information complète."
+    }
+  ]
+}
