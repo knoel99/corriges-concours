@@ -1,0 +1,60 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-25-juin-sujet-4_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — 25 juin, sujet 4",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Sociologie (oral à option) — 25 juin, sujet 4",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/marx_face.pdf",
+    "sujet_sha256": "c25d32b4f1934640b08201f16e57e9417c86692609a064844ff328fc0e3865f3",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_option_sociologie.pdf",
+    "rapport_sha256": "a3b53be611e155391ec6690e098d6c26cec39ca3ee37c9ee0c18d14490010ded"
+  },
+  "figures": [
+    {
+      "fichier": "figures/face.svg",
+      "question": "sujet A",
+      "legende": "Observer la réparation d’un incident dans une interaction"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux exposés au choix, de la préparation à la discussion et du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux intitulés à la planche et au rapport. Vérification des concepts, du sens des exemples et des consignes d’oral."
+    }
+  ]
+}
