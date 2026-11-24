@@ -11,7 +11,14 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_chimie.pdf",
     "thermochimie": "https://webbook.nist.gov/chemistry/",
-    "article": "https://doi.org/10.1021/jacs.9b05818"
+    "article": "https://doi.org/10.1021/jacs.9b05818",
+    "sujet_sha256": "3d867ebb6691d6b29dce0ed48df5c64651e5dd77bb8425a5f899bf5ea89c4a23",
+    "annales": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "nist_methane": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C74828&Units=SI&Mask=1#Thermo-Gas",
+    "nist_eau": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Units=SI&Mask=1#Thermo-Gas",
+    "nist_monoxyde_de_carbone": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C630080&Units=SI&Mask=1#Thermo-Gas",
+    "nist_dihydrogene": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Units=SI&Mask=1#Thermo-Gas",
+    "nist_dioxyde_de_carbone": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C124389&Units=SI&Mask=1#Thermo-Gas"
   },
   "figures": [
     {
@@ -83,6 +90,11 @@
       "fichier": "figures/q57-ouverture-lactone.svg",
       "question": "Q57",
       "legende": "Le réactif de Collins oxyde les trois alcools. Le produit 12 comporte un aldéhyde, une cétone cyclique et une seconde cétone conjuguée."
+    },
+    {
+      "question": "Q14",
+      "fichier": "figures/q14-cellules-en-serie.svg",
+      "legende": "Le même courant traverse les cellules en série. La quantité de combustible consommée s’additionne et les tensions s’additionnent."
     }
   ],
   "date_revision": "2026-11-24",
@@ -106,6 +118,84 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le sujet officiel, et des données complémentaires de thermochimie du NIST. Contrôle du diagramme Fe–Ti, de la pile, de la cinétique enzymatique et des structures de chimie organique. Q55 hors périmètre, 56 questions entièrement couvertes. Aucun rapport écrit correspondant sur la ligne 2026 de la banque."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      56,
+      57
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      55
+    ],
+    "precision": "Q1 à Q54, Q56 et Q57 sont traitées. La préparation du triflate de méthyle demandée en Q55 est hors périmètre."
+  }
 }
