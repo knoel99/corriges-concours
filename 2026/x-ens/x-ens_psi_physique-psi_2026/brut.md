@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve du 15 avril 2026, quatre heures sans calculatrice. Les 47 questions portent sur la traction ferroviaire, le dimensionnement de l’entrefer et la physique des jonctions PN. Les valeurs estimées par le candidat sont explicitées aux questions 5, 23 et 31.
 
 ## I. Ondes transversales sur la caténaire
@@ -26,7 +28,7 @@ La masse du tronçon est $\mu dx$. La projection verticale du bilan dynamique do
 
 ### Question 5
 
-Pour que les perturbations puissent s'éloigner vers l'avant du pantographe, on impose $c>v$. Le seuil est $T_{\min}=\mu v^2=\rho_{\rm Cu}\pi R_c^2v^2$. Estimons une section de fil de contact à $1,0$ cm$^2$, soit $R_c\simeq5,6$ mm et $\mu\simeq0,90$ kg/m. À $300$ km/h, $v\simeq83$ m/s, ce qui place le seuil vers **$6\,10^3$ N**. La tension en exploitation doit être supérieure à ce seuil. Le résultat varie comme le carré du rayon choisi.
+Pour que les perturbations puissent s'éloigner vers l'avant du pantographe, on impose $c>v$. Le seuil est $T_{\min}=\mu v^2=\rho_{\rm Cu}\pi R_c^2v^2$. Estimons une section de fil de contact à $1,0$ cm$^2$, soit $R_c\simeq5,6$ mm et $\mu\simeq0,90$ kg/m. À $300$ km/h, $v\simeq83$ m/s, ce qui place le seuil vers **$6\,10^3$ N**. La tension en exploitation doit être supérieure à ce seuil. À ce seuil, la perturbation dirigée vers l’avant est immobile par rapport au pantographe. Avec une tension supérieure, elle le précède à la vitesse $c-v$ dans le référentiel du train. Le seuil varie comme le carré du rayon choisi.
 
 ### Question 6
 
@@ -125,7 +127,7 @@ Comme $u/r=a+b/r^2$, on a $\tau=2\eta b/r^2$. Le couple transmis vaut $2\pi Lr^2
 La puissance cédée par la paroi mobile est $\Gamma\omega$, soit
 $$P_{\rm rotor/air}=\frac{4\pi\eta L\omega^2 R^2(R+e)^2}{(R+e)^2-R^2}
 \simeq\frac{2\pi\eta L R^3\omega^2}{e}\quad(e\ll R).$$
-Prenons à titre d'estimation $R=L=1$ m, $\omega=100$ rad/s (environ $950$ tr/min), $e=3$ mm et $\eta=1,7\,10^{-5}$ Pa·s. Il vient environ $4\,10^2$ W, soit quelques dix-millièmes de la puissance utile de 1 MW. Le rotor alimente la dissipation visqueuse en chaleur dans l'air. L'estimation correspond au régime laminaire idéal et ignore les effets d'extrémité.
+Prenons à titre d'estimation $R=L=1$ m, $\omega=100$ rad/s (environ $950$ tr/min), $e=3$ mm et $\eta=1,7\,10^{-5}$ Pa·s. Il vient environ $4\,10^2$ W, soit quelques dix-millièmes de la puissance utile de 1 MW. Le rotor alimente la dissipation visqueuse en chaleur dans l'air. Le couple correspondant est d’environ $3{,}6\,\mathrm{N\,m}$. La paroi du stator reçoit un couple de même norme mais sa vitesse angulaire est nulle. La puissance mécanique fournie par le rotor se retrouve donc entièrement en chaleur dans ce modèle. Les dimensions typiques données, $L\sim R$, ne réalisent pas la limite $L\gg R$ utilisée en question 19. Cette estimation du cisaillement latéral laisse de côté les écoulements d’extrémité.
 
 ## II.C. Échauffement et dilatation du rotor
 
@@ -157,7 +159,7 @@ Au centre, le premier excès de température sur l'air provient de la convection
 
 ### Question 29
 
-Posons $\kappa=\beta p_{\rm th}/(4\lambda_{\rm Fe})$. La masse s'écrit dans l'état de référence $m=\pi L\rho_0R_0^2$, tandis que dans l'état chaud elle vaut
+Pour retrouver l’équation (4), il faut retenir la même longueur $L$ pour les deux états du rotor. Une variation de longueur introduirait un facteur $L_0/L$ dans la relation sur les rayons. Posons $\kappa=\beta p_{\rm th}/(4\lambda_{\rm Fe})$. La masse s'écrit dans l'état de référence $m=\pi L\rho_0R_0^2$, tandis que dans l'état chaud elle vaut
 $$m=2\pi L\rho_0 e^{-\beta(C-T_0)}\int_0^R e^{\kappa r^2}r\,dr
 =\pi L\rho_0e^{-\beta(C-T_0)}\frac{e^{\kappa R^2}-1}{\kappa}.$$
 En égalant ces deux expressions, on retrouve $\kappa R_0^2e^{\beta(C-T_0)}=e^{\kappa R^2}-1$.
@@ -199,7 +201,7 @@ En N, le départ d'électrons laisse à découvert les donneurs ionisés, fixés
 
 ### Question 36
 
-Par symétrie plane, le champ est perpendiculaire à l'interface. Il va des charges positives du côté N vers les charges négatives du côté P, donc selon $-\vec e_x$. La densité de courant de conduction étant $\sigma\vec E$ avec $\sigma>0$, ce courant va aussi vers $-x$ pour l'ensemble des porteurs. Il s'oppose au courant de diffusion. À l'équilibre, leurs sommes se compensent.
+Par symétrie plane, le champ est perpendiculaire à l'interface. Il va des charges positives du côté N vers les charges négatives du côté P, donc selon $-\vec e_x$. La densité de courant de conduction étant $\sigma\vec E$ avec $\sigma>0$, ce courant va aussi vers $-x$ pour l'ensemble des porteurs. Il s'oppose au courant de diffusion. À l’équilibre, le courant de dérive des électrons compense leur propre courant de diffusion. La même compensation vaut séparément pour les trous. Chacune des deux espèces a alors un courant net nul.
 
 ### Question 37
 

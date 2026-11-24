@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+[Sujet officiel](https://www.banquept.fr/documents/2026/ph_b_ch_2026_pt.pdf) · [Rapport de chimie, trois premières pages du PDF](https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_b_ecrit_2026.pdf#page=1)
+
 ## Présentation du sujet
 
 Malgré son intitulé, l'épreuve est entièrement consacrée à la chimie. Elle dure 2 heures, **sans calculatrice**, et comporte 28 questions réparties en trois parties indépendantes. Le fil directeur est la **cellule solaire à colorant** (cellule de Grätzel), dont on étudie successivement les trois constituants.
@@ -21,9 +29,9 @@ Malgré son intitulé, l'épreuve est entièrement consacrée à la chimie. Elle
 **Questions discriminantes selon le rapport 2026** : le jury juge très bien traitées Q6, Q7, Q9, Q16 et Q17. Il signale en revanche comme mal traitées ou rarement bien menées Q12 (caractère total de la transformation), Q14 (usage de Van't Hoff), Q18 (application numérique et regard critique), Q23 (potentiel standard), Q26 (constante d'équilibre redox) et Q27 (facteur 2) ; Q20 et Q28 ont été peu traitées. Ce sont des questions de cours : elles font la différence.
 
 > [!JURY]
-> Rapport 2026, remarques générales : « seule une réponse correctement justifiée et argumentée permet d'obtenir l'intégralité des points attribués à une question. Tout résultat numérique doit être accompagné de son unité et, lorsque cela est pertinent, faire l'objet d'une analyse critique. » Le jury apprécie aussi les expressions littérales encadrées et les résultats numériques mis en évidence.
+> Le rapport valorise les réponses argumentées, les unités et la discussion de la plausibilité des résultats numériques.
 
-**Gestion du temps** : sans calculatrice, préparer des calculs simples (les données sont choisies pour cela : $0{,}30/2{,}7\times10^{-4} = 10^4/9$, $0{,}92/0{,}06 \approx 15$). Compter environ 15 min pour la partie I, 55 min pour la partie II (dont un schéma soigné en Q16) et 40 min pour la partie III, en gardant 10 min de relecture.
+**Gestion du temps** : sans calculatrice, préparer des calculs simples (les données sont choisies pour cela : $0{,}30/(2{,}7\times10^{-4})=10^4/9$, $0{,}92/0{,}06 \approx 15$). Compter environ 15 min pour la partie I, 55 min pour la partie II (dont un schéma soigné en Q16) et 40 min pour la partie III, en gardant 10 min de relecture.
 
 ## Partie I — Autour du colorant
 
@@ -35,7 +43,7 @@ On commence par la structure électronique du ligand thiocyanate, puis on exploi
 > Repérer chaque élément dans le tableau périodique fourni en fin de sujet.
 
 > [!INDICATION]
-> Pour un élément du bloc p, le numéro de colonne donne directement le nombre d'électrons de valence.
+> Pour C, N et S, retirer 10 au numéro de colonne du tableau à 18 colonnes.
 
 #### Solution
 
@@ -108,14 +116,14 @@ $$\boxed{\lambda_{\max,\text{vis}} \approx 530\ \text{nm}}$$
 ### Question 4
 
 > [!INDICATION]
-> Une solution colorée prend la couleur complémentaire de celle qu'elle absorbe.
+> Comparer la transmission dans le rouge à celle des bandes absorbées.
 
 > [!INDICATION]
 > Regarder aussi dans quel domaine de longueurs d'onde l'absorbance devient quasi nulle.
 
 #### Solution
 
-Le colorant absorbe dans le vert (vers 530 nm) et un peu dans le violet (vers 400 nm), tandis que son absorbance est quasi nulle au-delà de 620 nm environ : les radiations rouges sont transmises. Le complémentaire du vert est le rouge (magenta) sur le cercle chromatique. **Le colorant apparaît donc rouge.**
+Dans le visible, l’absorbance présente une bande dans le vert et reste appréciable du côté du violet. Elle décroît fortement du jaune vers le rouge et devient très faible aux grandes longueurs d’onde. Sous lumière blanche, les radiations rouges sont donc mieux transmises, ce qui explique la teinte rouge observée. La position du seul maximum vert ne suffit pas à distinguer le rouge du magenta.
 
 > [!METHODE]
 > Pour justifier une couleur à partir d'un spectre, donner les deux arguments : le domaine absorbé (et sa complémentaire) et le domaine transmis.
@@ -160,16 +168,16 @@ On étudie la transformation allotropique rutile = anatase. Toute la sous-partie
 > Relier $K^\circ$ à l'enthalpie libre standard de réaction.
 
 > [!INDICATION]
-> Supposer ensuite $\Delta_r H^\circ$ et $\Delta_r S^\circ$ indépendants de $T$ pour écrire $\Delta_r G^\circ$ en fonction de $\Delta_r H^\circ$ et $\Delta_r S^\circ$.
+> Écrire la différence entre l’enthalpie standard de réaction et le produit de la température par l’entropie standard de réaction.
 
 #### Solution
 
-$\Delta_r G^\circ_1(T) = -RT\ln K^\circ_1(T)$ et, avec $\Delta_r H^\circ_1$ et $\Delta_r S^\circ_1$ indépendants de $T$, $\Delta_r G^\circ_1(T) = \Delta_r H^\circ_1 - T\,\Delta_r S^\circ_1$ :
+À chaque température, $\Delta_r G^\circ_1(T)=-RT\ln K^\circ_1(T)=\Delta_r H^\circ_1(T)-T\Delta_r S^\circ_1(T)$. L’identité est exacte. Si l’on emploie les valeurs de 298 K à une autre température, on suppose alors que les grandeurs de réaction varient peu dans l’intervalle étudié.
 
 $$\boxed{K^\circ_1(T) = \exp\left(\frac{\Delta_r S^\circ_1}{R} - \frac{\Delta_r H^\circ_1}{RT}\right)}$$
 
-> [!JURY]
-> Il faut énoncer l'hypothèse utilisée : $\Delta_r H^\circ$ et $\Delta_r S^\circ$ indépendants de la température.
+> [!METHODE]
+> Évaluer les trois fonctions thermodynamiques à la même température.
 
 ### Question 7
 
@@ -207,7 +215,7 @@ $$\begin{aligned}
 
 $$\boxed{\Delta_r S^\circ_1 = 0\ \text{J·K}^{-1}\text{·mol}^{-1}}$$
 
-L'entropie standard de réaction mesure la variation de désordre. Ici, un solide cristallisé se transforme en un autre solide de même formule, sans gaz consommé ni produit, chaque espèce restant seule dans sa phase : le désordre varie très peu. L'entropie de réaction est donc très faible, nulle à la précision des données.
+Les deux formes sont cristallines et aucune phase gazeuse n’apparaît. Les vibrations de leurs réseaux peuvent néanmoins différer. C’est l’égalité des deux valeurs tabulées à la précision du sujet qui donne une différence nulle.
 
 Vérification :
 
@@ -216,10 +224,10 @@ $$\ln K^\circ_1 = -\frac{5{,}0\times10^3}{8{,}31\times298} \approx -2{,}0$$
 donc $K^\circ_1 \approx e^{-2} \approx 0{,}13$, valeur annoncée par l'énoncé.
 
 > [!METHODE]
-> Le signe et l'ordre de grandeur de $\Delta_r S^\circ$ se prévoient par la variation de la quantité de gaz : quasi nul sans gaz, de l'ordre de $\pm 100$ à $200\ \text{J·K}^{-1}\text{·mol}^{-1}$ par mole de gaz créée ou consommée.
+> La formation ou la disparition d’un gaz est souvent un indice d’une variation importante d’entropie. Pour comparer deux cristaux, utiliser les entropies tabulées.
 
 > [!JURY]
-> Selon le rapport 2026, le calcul est réussi dans la majorité des copies, mais « l'interprétation de la valeur nulle de ∆rS°1 a donné lieu à des explications confuses dans de nombreux cas ». Un argument suffit, s'il est net : deux phases condensées, aucune variation de la quantité de gaz.
+> Le jury relève que le calcul de la différence est souvent réussi, tandis que son interprétation mérite une justification. Préciser la nature cristalline des deux phases et la précision du tableau.
 
 ### Question 9
 
@@ -286,13 +294,13 @@ $$\boxed{n(\mathrm A)_f = 0}$$
 
 $$\boxed{n(\mathrm R)_f = 2\ \text{mol}}$$
 
-**L'état final n'est pas un état d'équilibre** : la transformation est totale et s'arrête par disparition d'une phase (rupture d'équilibre).
+Le rutile seul est l’état stable à 298 K. Le minimum de l’enthalpie libre est atteint à la limite des compositions possibles, $n(\mathrm A)=0$. La condition $Q_r=K^\circ_1$ caractériserait la coexistence des deux phases, impossible ici. Cette disparition de l’anatase est appelée rupture d’équilibre.
 
 > [!METHODE]
 > Lorsqu'une réaction ne fait intervenir que des solides purs (ou des espèces d'activité fixée), $Q_r$ est constant : soit $Q_r = K^\circ$ et le système est à l'équilibre quelles que soient les quantités, soit la transformation est totale.
 
 > [!PIEGE]
-> Confondre état final et état d'équilibre. Un état final n'est un état d'équilibre que si $Q_r = K^\circ$ y est vérifié avec toutes les espèces présentes.
+> L’égalité des potentiels chimiques des deux formes est le critère de coexistence. Si une seule phase subsiste, sa stabilité se juge en demandant si former un peu de l’autre ferait baisser l’enthalpie libre.
 
 > [!JURY]
 > Rapport 2026 : « L'aspect total de la transformation a rarement été correctement justifié, et la transformation a souvent été écrite dans le mauvais sens. » Rappeler le sens trouvé en Q10 (anatase consommée, rutile formé) et justifier le caractère total par l'impossibilité d'atteindre $Q_r = K^\circ_1$.
@@ -310,7 +318,7 @@ $$\boxed{K^\circ_1 = 1}$$
 
 ce qui équivaut à $\Delta_r G^\circ_1 = 0$.
 
-Cette égalité n'est réalisée qu'à une température particulière, la température de transition entre les deux variétés.
+À pression fixée, une température de transition éventuelle doit satisfaire cette égalité.
 
 ### Question 14
 
@@ -324,7 +332,7 @@ Cette égalité n'est réalisée qu'à une température particulière, la tempé
 
 $$\boxed{\frac{\mathrm d \ln K^\circ}{\mathrm d T} = \frac{\Delta_r H^\circ}{RT^2}}$$
 
-$\Delta_r H^\circ_1 > 0$ : $K^\circ_1$ croît avec $T$. Pour faire passer $K^\circ_1$ de 0,13 à 1, **il faut augmenter la température.**
+Comme $\Delta_r H^\circ_1>0$, il faut **augmenter la température** pour que $K^\circ_1$ se rapproche de 1 à partir de 0,13. La dérivée à 298 K indique le sens de variation, sans garantir le franchissement de 1.
 
 Remarque : avec $\Delta_r S^\circ_1 = 0$, $K^\circ_1 = \exp\left(-\dfrac{\Delta_r H^\circ_1}{RT}\right) < 1$ pour toute température finie : $K^\circ_1$ tend vers 1 sans l'atteindre. Avec les données arrondies, le modèle ne fournit donc qu'un sens de variation, pas une température de coexistence.
 
@@ -344,9 +352,9 @@ Remarque : avec $\Delta_r S^\circ_1 = 0$, $K^\circ_1 = \exp\left(-\dfrac{\Delta_
 
 #### Solution
 
-La cellule utilise l'anatase, produit de (R1) dans le sens direct, qui est endothermique. Une élévation de température augmente $K^\circ_1$ et favorise le sens direct, donc la formation d'anatase. **La cellule doit être élaborée à haute température.**
+La réponse qualitative attendue est de **chauffer**. Si l’on maintient les valeurs arrondies de $\Delta_r H^\circ_1$ et $\Delta_r S^\circ_1$ constantes, $K^\circ_1$ augmente avec $T$ mais reste inférieur à 1. Comme $Q_r=1$ tant que les deux solides coexistent, la conversion spontanée demeure alors dirigée vers le rutile.
 
-Avec les données de l'énoncé, $K^\circ_1$ reste inférieur à 1 à toute température : l'anatase est seulement moins défavorisée à haute température. Sa conservation à l'issue de l'élaboration relève de la cinétique (forme métastable), aspect que le sujet ne demande pas d'approfondir.
+Ce calcul ne fixe donc aucune température de préparation qui garantirait un dépôt d’anatase. La cinétique de formation et de conservation du solide peut intervenir dans le procédé réel.
 
 > [!PIEGE]
 > Parler de « proportion d'anatase à l'équilibre » : pour deux solides purs non miscibles, il n'existe pas d'équilibre de composition variable (voir Q12).
@@ -425,7 +433,7 @@ Regard critique : la valeur est plusieurs fois celle de l'eau et du même ordre 
 > Les conversions : $1\ \text{pm} = 10^{-12}\ \text{m} = 10^{-10}\ \text{cm}$. Une erreur se répercute au cube, et la masse molaire en $\text{g·mol}^{-1}$ ne se combine qu'avec des centimètres pour donner des $\text{g·cm}^{-3}$.
 
 > [!JURY]
-> Rapport 2026 : l'application numérique a souvent été absente ou erronée par erreur de conversion. « Le jury rappelle que les candidats et candidates doivent avoir un regard critique sur les valeurs numériques obtenues et être capables d'identifier une valeur incohérente, ce qui n'a quasiment jamais été fait. » Une phrase de commentaire sur l'ordre de grandeur suffit.
+> Le jury attire l’attention sur les conversions avant le calcul et sur le contrôle de plausibilité de la masse volumique obtenue.
 
 ### Question 19
 
@@ -533,12 +541,12 @@ Vérification sur la figure : $\dfrac{0{,}26 - 0{,}60}{14 - 8{,}4} \approx -0{,}
 
 $$\mathrm{I_3^-} + 2\,e^- = 3\,\mathrm{I^-}$$
 
-$$E = E^\circ + \frac{0{,}06}{2}\log\frac{[\mathrm{I_3^-}]}{[\mathrm{I^-}]^3}$$
+$$E = E^\circ + \frac{0{,}06}{2}\log\frac{[\mathrm{I_3^-}](c^\circ)^2}{[\mathrm{I^-}]^3}$$
 
 Sur la frontière, $[\mathrm{I_3^-}] = [\mathrm{I^-}] = C_t = 10^{-1}\ \text{mol·L}^{-1}$, donc :
 
 $$\begin{aligned}
-\log\frac{C_t}{C_t^3} &= 2 \\
+2\log\!\left(\frac{c^\circ}{C_t}\right) &= \log(10^2)=2 \\
 0{,}60 &= E^\circ + 0{,}06
 \end{aligned}$$
 
@@ -548,7 +556,9 @@ $$\boxed{E^\circ(\mathrm{I_3^-/I^-}) = 0{,}54\ \text{V}}$$
 > Répondre 0,60 V en lisant directement le diagramme : le potentiel de frontière n'est égal au potentiel standard que si le terme logarithmique s'annule.
 
 > [!JURY]
-> Rapport 2026 : « Cette question a globalement été mal traitée dans la plupart des copies, en assimilant directement la valeur du potentiel de la frontière horizontale au potentiel standard du couple. » C'est l'une des questions les plus discriminantes de la partie III.
+> Le jury relève des confusions entre le potentiel horizontal lu sur la figure et le potentiel standard recherché.
+
+![Figure 4 — La convention de tracé décale de 0,06 V le potentiel de la frontière par rapport au potentiel standard.](figures/q23-potentiel-frontiere.svg)
 
 ### Question 24
 
@@ -564,7 +574,7 @@ $$\boxed{E^\circ(\mathrm{I_3^-/I^-}) = 0{,}54\ \text{V}}$$
 > Une éprouvette graduée n'est pas assez précise pour un prélèvement qui sert ensuite au calcul d'une concentration.
 
 > [!JURY]
-> Rapport 2026 : « Cette question d'apparence simple a été moyennement réussie, traduisant un manque de connaissance des éléments de verrerie classiques. » Nommer précisément : pipette jaugée, burette graduée.
+> Le jury relève des confusions dans le choix de la verrerie.
 
 ### Question 25
 
@@ -611,7 +621,7 @@ $K^\circ \gg 10^4$ : réaction quantitative, donc adaptée à un titrage (elle e
 > Pour une réaction redox échangeant $n$ électrons, $\log K^\circ = \dfrac{n\,(E^\circ_1 - E^\circ_2)}{0{,}06}$, où $E^\circ_1$ est le potentiel standard du couple dont l'oxydant est réactif et $E^\circ_2$ celui du couple dont le réducteur est réactif. Le résultat de Q23 sert directement ici : une erreur en Q23 se répercute.
 
 > [!JURY]
-> Rapport 2026 : « La formule de la constante d'équilibre pour une transformation redox n'est pas connue dans la plupart des cas et les tentatives de la redémontrer aboutissent peu. » La formule est à connaître ; la démonstration ci-dessus (égalité des potentiels à l'équilibre) tient en deux lignes.
+> Le jury relève des difficultés à relier l’écart des potentiels standard à la constante de la réaction.
 
 ### Question 27
 
@@ -634,7 +644,7 @@ $$\boxed{[\mathrm{I_3^-}] \approx 2{,}0\times10^{-2}\ \text{mol·L}^{-1}}$$
 > Oublier le facteur 2 de la stœchiométrie : on trouverait une concentration deux fois trop grande.
 
 > [!JURY]
-> Rapport 2026 : « Question globalement mal traitée, la plupart des copies oublient le facteur 2 correspondant au coefficient stoechiométrique. » Écrire la relation à l'équivalence en quantités de matière avant de passer aux concentrations.
+> Le jury signale des oublis du coefficient 2. Écrire le bilan en moles avant d’introduire les volumes.
 
 ### Question 28
 
@@ -659,7 +669,7 @@ $$[\mathrm{I^-}] \approx 0{,}48\ \text{mol·L}^{-1}$$
 Quotient de réaction de la dissolution $\mathrm{AgI_{(s)} = Ag^+ + I^-}$ :
 
 $$\begin{aligned}
-Q &= [\mathrm{Ag^+}][\mathrm{I^-}] \\
+Q &= [\mathrm{Ag^+}][\mathrm{I^-}]/(c^\circ)^2 \\
 &\approx 2{,}5\times10^{-3}\times0{,}48 \\
 &\approx 1{,}2\times10^{-3}
 \end{aligned}$$
@@ -670,17 +680,17 @@ $Q \gg K_s = 8{,}52\times10^{-17}$ : la solution serait sursaturée, et la disso
 > Test de précipitation : calculer le quotient de réaction de la dissolution comme si le solide n'existait pas. Si $Q > K_s$, le solide se forme ; si $Q < K_s$, il n'apparaît pas.
 
 > [!PIEGE]
-> Inverser le critère en confondant précipitation et dissolution : $K_s$ est la constante de la **dissolution**. $Q > K_s$ signifie que la dissolution est impossible et que le solide se forme.
+> Le test compare à $K_s$ le produit d’activités avant toute précipitation. Si le solide apparaît, les concentrations évoluent jusqu’à saturation ou épuisement d’un réactif.
 
 > [!JURY]
-> Rapport 2026 : « Question très peu traitée et ayant donné lieu à des raisonnements erronés, notamment en confondant la précipitation et la dissolution. » Énoncer l'hypothèse (absence de précipité), l'approximation (dilution négligée) et le critère de comparaison avant de conclure.
+> Le jury relève des confusions entre précipitation et dissolution. Donner le sens de l’évolution après avoir écrit le quotient de dissolution.
 
 ## Bilan
 
 **Méthodes à retenir**
 
 - Schéma de Lewis : compter les électrons de valence de l'édifice (charge comprise), placer les doublets, vérifier l'octet, conclure par les charges formelles.
-- Spectre d'absorption : la couleur perçue est la complémentaire de la couleur absorbée et correspond au domaine transmis ; $A = k\,c$ avec $k = \varepsilon\,\ell$.
+- Spectre d'absorption : la couleur perçue dépend de l’ensemble des longueurs d’onde transmises ; $A = k\,c$ avec $k = \varepsilon\,\ell$.
 - Solides purs : activité égale à 1, donc $Q_r$ constant. Soit équilibre indifférent aux quantités ($Q_r = K^\circ$), soit **transformation totale par rupture d'équilibre**.
 - Van't Hoff : le signe de $\Delta_r H^\circ$ donne le sens de variation de $K^\circ$ avec $T$.
 - Structure NaCl : anions en CFC, cations dans tous les sites octaédriques, 4 motifs par maille, contact anion-cation sur l'arête, coordinence 6-6.
@@ -688,7 +698,7 @@ $Q \gg K_s = 8{,}52\times10^{-17}$ : la solution serait sursaturée, et la disso
 - Titrage : équation bilan, $K^\circ$ pour valider le caractère quantitatif, relation à l'équivalence avec les coefficients stœchiométriques.
 - Précipitation : comparer $Q$ et $K_s$.
 
-**Questions discriminantes** : d'après le rapport 2026, la différence s'est faite sur Q12, Q14, Q18, Q23, Q26, Q27 et Q28, toutes proches du cours. Les erreurs relevées sont des réflexes non acquis : sens et caractère total d'une transformation, exploitation de Van't Hoff, regard critique sur une valeur numérique, terme logarithmique non nul sur une frontière, formule de $K^\circ$ redox, coefficient stœchiométrique à l'équivalence.
+**Points de vigilance.** Le rapport 2026 relève des difficultés aux questions Q12, Q14, Q18, Q23, Q26, Q27 et Q28, toutes proches du cours. Les erreurs relevées sont des réflexes non acquis : sens et caractère total d'une transformation, exploitation de Van't Hoff, regard critique sur une valeur numérique, terme logarithmique non nul sur une frontière, formule de $K^\circ$ redox, coefficient stœchiométrique à l'équivalence.
 
 **Prérequis à revoir** : électrons de valence et tableau périodique, charges formelles, hypothèse $\Delta_r H^\circ$ et $\Delta_r S^\circ$ indépendants de $T$, cristallographie des solides ioniques (sites interstitiels, conditions de contact et de non-contact), formule de Nernst avec coefficients stœchiométriques différents.
 

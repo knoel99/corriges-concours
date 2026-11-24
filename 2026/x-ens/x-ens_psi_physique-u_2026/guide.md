@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 À partir d’un même phénomène, ce sujet de six heures sans calculatrice fait passer de la propagation sonore à la détection de l’azimut et de l’élévation, puis au son que peut émettre la cochlée. La convention temporelle du sujet est $e^{-i\omega t}$.
@@ -89,7 +91,7 @@ La conservation locale donne $\partial_t(\rho_0+\rho)+\nabla\cdot[(\rho_0+\rho)\
 
 #### Solution
 
-Les deux forces orthogonales à $x$ ont une résultante $[P(x)-P(x+\mathrm dx)]\mathrm dy\mathrm dz\simeq-\partial_xp\,\mathrm dV$. Les autres faces donnent les deux autres dérivées. La masse du petit volume matériel est $\rho_0\mathrm dV$ au premier ordre dans son accélération. Le terme convectif $(\vec v\cdot\nabla)\vec v$ est quadratique. Le bilan de quantité de mouvement devient $\rho_0\partial_t\vec v=-\nabla p$.
+La pression agit suivant la normale à chaque face. Les deux forces sur les faces perpendiculaires à $x$ sont ainsi parallèles à cet axe. Leur résultante projetée sur $x$ vaut $[P(x)-P(x+\mathrm dx)]\mathrm dy\mathrm dz\simeq-\partial_xp\,\mathrm dV$. Les autres faces donnent les deux autres dérivées. La masse du petit volume matériel est $\rho_0\mathrm dV$ au premier ordre dans son accélération. Le terme convectif $(\vec v\cdot\nabla)\vec v$ est quadratique. Le bilan de quantité de mouvement devient $\rho_0\partial_t\vec v=-\nabla p$.
 
 ### Question 8
 
@@ -275,7 +277,11 @@ La conduction agit sur $T$, qui n'est plus proportionnelle à la seule surpressi
 
 Fixons $\omega>0$, $k_0=\omega/c$ et $b=\kappa\rho_0/(c_PT_0)$. Au premier ordre en $\varepsilon$, le terme en $(\det B)'$ s'annule car il est multiplié par $\det A(k_0)$. On a
 $$0=-b\omega^2k_0^2+\varepsilon\big[(\partial_k\det A)_{k_0}\det B(k_0)-2b\omega^2k_0\big]+O(\varepsilon^2).$$
-En isolant $\varepsilon$, on obtient l'expression (9), avec au numérateur $b(k_0\omega)^2$. La dérivée nécessaire à l'étape suivante vaut $-2\rho_0k_0$.
+En isolant le déplacement du nombre d’onde, on obtient
+
+$$\varepsilon\simeq\frac{b(k_0\omega)^2}{(\partial_k\det A)_{k_0}\det B(\omega,k_0)-2b\omega^2k_0},\qquad (\partial_k\det A)_{k_0}=-2\rho_0k_0.$$
+
+Le déterminant du bloc thermique se calcule au nombre d’onde acoustique $k_0$. Il ne s’annule pas sur cette branche.
 
 ### Question 27
 
@@ -297,7 +303,7 @@ La partie imaginaire est positive pour $e^{i(kz-\omega t)}$. L'amplitude décro�
 
 #### Solution
 
-Avec les valeurs du formulaire, $\omega_{\rm th}\simeq2{,}85\times10^{10}\,\mathrm{s^{-1}}$. À $1\,\mathrm{kHz}$, $\omega\simeq6{,}28\times10^3\,\mathrm{s^{-1}}$. On obtient $\delta\simeq1{,}2\times10^5\,\mathrm m$, soit environ **120 km**. L'effet de la seule conduction est très faible à l'échelle d'une salle. Cette distance concerne une onde plane et exclut la dilution géométrique, la viscosité et les autres mécanismes d'absorption de l'air.
+Avec les valeurs du formulaire, $\omega_{\rm th}\simeq2{,}85\times10^{10}\,\mathrm{s^{-1}}$. À $1\,\mathrm{kHz}$, $\omega\simeq6{,}28\times10^3\,\mathrm{s^{-1}}$. On obtient $\delta\simeq1{,}2\times10^5\,\mathrm m$, soit environ **120 km**. Après $10\,\mathrm m$, la perte relative d’intensité due à la seule conduction est $1-\exp(-10/\delta)\simeq8\times10^{-5}$. Cette distance concerne une onde plane et exclut la dilution géométrique, la viscosité et les autres mécanismes d'absorption de l'air.
 
 ## II.1 · Rayonnement d’une sphère pulsante
 
@@ -477,7 +483,7 @@ Un seul clic peut arriver aux deux oreilles avec une différence allant jusqu'à
 
 Pour la branche frontale de la reconstruction en champ lointain, $\theta_{\rm perçu}=\arcsin(c_{\rm air}\Delta t/D)$. Si le retard réel provient d'une propagation dans l'eau,
 $$\theta_{\rm perçu}=\arcsin\!\left(\frac{c_{\rm air}}{c_{\rm eau}}\sin\theta\right).$$
-Avec le rapport $343{,}5/1500\simeq0{,}23$, une source réellement à $90^\circ$ est ainsi ramenée à environ $13^\circ$. L'ITD seule confond avant et arrière. La mention d'une distance égale à $D$ dans la question déroge à l'hypothèse $R\gg D$ posée pour cette partie. Si elle est prise à la lettre, on utilise $r_{d,g}=\sqrt{R^2+D^2/4\mathbin{\pm}RD\sin\theta}$ et $\Delta t=(r_d-r_g)/c$, En posant $d=c\Delta t$, on a alors $\sin\theta=d\sqrt{4R^2+D^2-d^2}/(2RD)$. Cette formule permet de traiter séparément le retard réel et son interprétation lorsque $R$ est connu. La loi en arcsinus simple est celle de l'approximation annoncée.
+Avec le rapport $343{,}5/1500\simeq0{,}23$, une source réellement à $90^\circ$ est ainsi ramenée à environ $13^\circ$. L'ITD seule confond avant et arrière. La mention d'une distance égale à $D$ dans la question déroge à l'hypothèse $R\gg D$ posée pour cette partie. Si elle est prise à la lettre, on utilise $r_{d,g}=\sqrt{R^2+D^2/4\mathbin{\pm}RD\sin\theta}$ et $\Delta t=(r_d-r_g)/c$. En posant $d=c\Delta t$, on a alors $\sin\theta=d\sqrt{4R^2+D^2-d^2}/(2RD)$. Pour $R=D$ et une source latérale, le retard réel dans l’eau reste $D/c_{\rm eau}$. Si le cerveau reconstruit aussi à $R=D$, il emploie $d/D=c_{\rm air}/c_{\rm eau}$ dans cette formule, ce qui donne environ $15^\circ$. La loi en arcsinus simple est celle de l'approximation annoncée.
 
 ### Question 46
 
@@ -745,7 +751,7 @@ La figure 5A nomme $f_1=3164\,\mathrm{Hz}$ et $f_2=3828\,\mathrm{Hz}$, dans l'or
 
 #### Solution
 
-Dans la figure 5B, une excitation primaire d'environ **65 à 70 dB SPL** fait ressortir nettement l'émission au-dessus du bruit et du critère de 3 dB. Augmenter encore les primaires élève aussi le plancher de bruit et s'accompagne d'une saturation du signal. Le graphe donne une plage de fonctionnement, sans imposer un optimum unique. Pour une exposition brève avec un matériel de mesure étalonné, ce niveau n'est habituellement pas considéré comme dangereux ; une évaluation de l'exposition tient aussi compte de sa durée. Le pic effectivement utilisé sur la figure est le produit **inférieur**, malgré la dernière mention de $\Omega_{s1}$, défini comme supérieur à la Q67. Une émission détectée témoigne du fonctionnement des cellules ciliées externes testées et contribue au dépistage, sans suffire à établir seule une audition normale à tous les niveaux de la voie auditive.
+Dans la figure 5B, une excitation primaire d'environ **65 à 70 dB SPL** fait ressortir nettement l'émission au-dessus du bruit et du critère de 3 dB. À $65\,\mathrm{dB\ SPL}$, la courbe donne environ $11$ à $12\,\mathrm{dB\ SPL}$ pour l’émission, tandis que le sommet des hachures est voisin de $-5\,\mathrm{dB\ SPL}$. La marge dépasse ainsi largement les $3\,\mathrm{dB}$ de la légende. Augmenter encore les primaires élève aussi le plancher de bruit et s'accompagne d'une saturation du signal. Le graphe donne une plage de fonctionnement, sans imposer un optimum unique. Pour une exposition brève avec un matériel de mesure étalonné, ce niveau n'est habituellement pas considéré comme dangereux ; une évaluation de l'exposition tient aussi compte de sa durée. Le pic effectivement utilisé sur la figure est le produit **inférieur**, malgré la dernière mention de $\Omega_{s1}$, défini comme supérieur à la Q67. Une émission détectée témoigne du fonctionnement des cellules ciliées externes testées et contribue au dépistage, sans suffire à établir seule une audition normale à tous les niveaux de la voie auditive.
 
 ## Bilan
 

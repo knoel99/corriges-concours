@@ -1,0 +1,56 @@
+{
+  "slug": "x_fui-ff-1_physique_2021",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Physique",
+    "annee": 2021
+  },
+  "questions": 27,
+  "redaction": "Corrigés originaux rédigés par IA.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20S1%20SUJET%20ECRIT%20DE%20PHYSIQUE_0.pdf",
+    "sujet_sha256": "602df86612d4e7c9ef3a8326653fd5d2b17d7a43f317ccc95b85330c5cab8dba",
+    "rapport_jury": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2.9",
+      "fichier": "figures/resistances-vitrage.svg",
+      "legende": "Le flux traverse six résistances. Le nœud central représente toute la zone d’air brassé à température uniforme."
+    },
+    {
+      "numero": 2,
+      "question": "4.1",
+      "fichier": "figures/huygens-fresnel.svg",
+      "legende": "Au point M, la transparence multiplie l’amplitude de l’onde incidente. L’ondelette parcourt la distance MP jusqu’au point d’observation."
+    },
+    {
+      "numero": 3,
+      "question": "4.2",
+      "fichier": "figures/diffraction-fente.svg",
+      "legende": "Coupe du profil d’intensité dans le plan focal. Les premiers zéros encadrent le maximum central aux abscisses réduites −1 et +1."
+    },
+    {
+      "numero": 4,
+      "question": "4.7",
+      "fichier": "figures/intensite-axiale.svg",
+      "legende": "Pour une demi-largeur relative de 0,12, le facteur géométrique incline légèrement l’enveloppe du profil. Les zéros ne bougent pas."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 27 réponses du brut et du guidé, des 27 indications et de quatre schémas. Traitement des deux conventions imprimées pour la phase de la pupille circulaire.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_version-grecque-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version grecque (Lyon)",
+    "annee": 2026
+  },
+  "intitule": "Comment Thésée réunit l’Attique",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=5",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-11/Grec%202026.pdf#page=2",
+    "rapport_sha256": "ca41d85c1286b1f06d0f316a7336a601d533ecd56cc8d961a08cfaaadd41ecb2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/periode-thesee.svg",
+      "question": "Version",
+      "legende": "Les deux partages de la période de Plutarque"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport écrit, p. 2–4, et examen de la date sur le fac-similé de la p. 5. Repérage des deux classements et de la chronologie des institutions."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « Comment Thésée réunit l’Attique » et du schéma « Les deux partages de la période de Plutarque »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle personnel de la date au fac-similé et de l’analyse du rapport. Ajustement de la traduction de πειθόμενοι pour garder le rappel de la persuasion."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

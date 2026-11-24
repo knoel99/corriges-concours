@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
 ## Présentation du sujet
 
@@ -339,7 +341,7 @@ $$\mathbb E T=\sum_{j=0}^{n-1}\frac{n}{n-j}=n\sum_{s=1}^n\frac1s
 
 #### Solution
 
-Fixer les deux états à l'instant $t$, avec $i$ désaccords. Pour créer un désaccord, la proposition doit être acceptée dans un état et refusée dans l'autre. Il faut donc choisir le voisin d'un sommet en désaccord et proposer l'une des deux couleurs de ce dernier. Cela représente au plus $2i\Delta$ couples parmi $nk$. Le même majorant $2i\Delta/(nk)$ subsiste en moyennant conditionnellement à $X_t=i$.
+Fixer les deux états à l'instant $t$, avec $i$ désaccords. Pour créer un désaccord, la proposition doit être acceptée dans un état et refusée dans l'autre. Le sommet choisi doit être un sommet d’accord. Dans la coloration où la proposition est refusée, un de ses voisins porte la couleur proposée. Dans l’autre coloration, aucun voisin ne la porte. Ce voisin est donc un sommet en désaccord. Pour chacun des $i$ désaccords, il y a au plus $\Delta$ voisins à sélectionner et deux couleurs à proposer. Cela représente au plus $2i\Delta$ couples parmi $nk$. Le même majorant $2i\Delta/(nk)$ subsiste en moyennant conditionnellement à $X_t=i$.
 
 ### Question III.8
 
@@ -390,7 +392,12 @@ Posons $a=(k-4\Delta)/(kn)>0$. Deux états égaux restent égaux, donc la borne 
 $$\mathbb P(T>t)=\mathbb P(X_t\geq1)\leq\mathbb E X_t\leq n e^{-at}.$$
 À $t\geq a^{-1}\ln(2n)$, cela donne $1/2$. Le seuil corrigé $t\geq a^{-1}\ln(n^2)$ donne $1/n$. En particulier, pour $t_n=\lceil a^{-1}\ln(n^2)\rceil$, on a $\mathbb P(T\leq t_n)\to1$.
 
-Pour réfuter l'affirmation imprimée elle-même, prendre $n$ sommets isolés, $k=2$, et les deux colorations initiales constantes différentes. Le couplage a lieu au premier instant où tous les sommets ont été tirés. À $t=\lceil n\ln(2n)\rceil$, le nombre $Z$ de sommets encore inconnus vérifie
+Pour un contre-exemple, prendre $n$ sommets isolés, $k=2$, et les deux colorations initiales constantes différentes. Le couplage a lieu au premier instant où tous les sommets ont été tirés. Pour $n=4$, le premier entier au-dessus du seuil est $9$. Par inclusion-exclusion sur les quatre événements « ce sommet n’a jamais été tiré »,
+$$\mathbb P(T>9)=4(3/4)^9-6(2/4)^9+4(1/4)^9
+=\frac{4729}{16384}>\frac14.$$
+Cela contredit la première borne dès quatre sommets.
+
+Pour la conclusion asymptotique, à $t=\lceil n\ln(2n)\rceil$, le nombre $Z$ de sommets encore inconnus vérifie
 $$\mathbb E Z=n(1-1/n)^t\longrightarrow\tfrac12,\qquad
 \mathbb E Z^2=\mathbb E Z+n(n-1)(1-2/n)^t\longrightarrow\tfrac34.$$
 En effet, les indicatrices de deux sommets distincts valent toutes deux $1$ lorsque les $t$ tirages ont évité ces deux sommets. Les limites résultent de $\ln(1-x)=-x+O(x^2)$. Cauchy–Schwarz appliqué à $Z\mathbf1_{\{Z>0\}}$ donne $\mathbb P(T>t)=\mathbb P(Z>0)\geq(\mathbb E Z)^2/\mathbb E Z^2$, de limite inférieure au moins $1/3$. La probabilité d'échec ne tend donc pas vers zéro au temps annoncé.
@@ -414,7 +421,7 @@ Un ensemble $D$ domine $X$ lorsque $X\subseteq\bigcup_{v\in D}N[v]$, et le quasi
 
 #### Solution
 
-Chaque sommet couvre au plus $\lfloor|X|/k\rfloor-1$ éléments de $X$. Pour tout ensemble de taille au plus $k$, l'union en couvre au plus $k(\lfloor|X|/k\rfloor-1)\leq |X|-k$. Au moins deux éléments échappent à l'union. Cela exclut la quasi-domination et, a fortiori, la domination. Si le graphe est non vide, l'hypothèse impose $\lfloor|X|/k\rfloor\geq1$.
+Chaque sommet couvre au plus $\lfloor|X|/k\rfloor-1$ éléments de $X$. Pour tout ensemble de taille au plus $k$, l'union en couvre au plus $k(\lfloor|X|/k\rfloor-1)\leq |X|-k$. Au moins deux éléments échappent à l'union. Cela exclut la quasi-domination et, a fortiori, la domination. Ce raisonnement porte sur un graphe non vide, où l’hypothèse impose $\lfloor|X|/k\rfloor\geq1$. Si le graphe vide est admis, l’hypothèse universelle est vraie par vacuité et $D=X=\varnothing$ est dominant. Il faut alors exclure ce cas de l’énoncé de IV.1.
 
 ### Question IV.2
 

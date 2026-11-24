@@ -88,6 +88,20 @@
       "modifications": null,
       "perimetre": "Vérification des cinq réponses sur le cas officiel et les attendus du jury de la session. Contrôle des unités, des valeurs observées et des distinctions entre réponses aiguës, adaptations chroniques et données hypothétiques.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des cinq questions dans les deux éditions, du sujet R26-324, du rapport SVSAPS 2 et des six figures. Précisions sur le couplage excitation–contraction, le sang veineux mêlé du bilan de Fick, les limites des mesures ventilatoires et thermiques et la concentration de sodium dans la sueur après acclimatation.",
+      "tour": 2,
       "fournisseur": "codex"
     }
   ]

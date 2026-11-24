@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 h, calculatrice interdite, une feuille de papier millimétré à rendre avec la copie.
 
 ## Préambule
@@ -643,10 +645,10 @@ $$\boxed{\sum_{n=2}^N\Big|\ln\Big(1+\frac{(-1)^n}n\Big)\Big|=O(N)}$$
 
 On obtient même $O(\ln N)$, puisque $\sum_{n=2}^N\frac2n\le2\ln N$.
 
-**Insuffisance.** La minoration de $\varphi$ ne fournit que des **majorations** de $|u_n|$, au mieux par $\frac2n$, terme général d'une série divergente.
+**Que permet de conclure le $O(N)$ ?** Cette estimation sur les sommes partielles laisse les deux possibilités ouvertes. Par exemple, les sommes partielles de $\sum 1/n^2$ et de $\sum 1/n$ sont toutes deux en $O(N)$, alors que seule la première série converge. C’est la conclusion attendue de l’estimation demandée.
 
-Les sommes partielles de $\sum|u_n|$ sont ainsi majorées par une quantité qui tend vers $+\infty$, en $O(N)$ ou en $O(\ln N)$.
-
-Une telle majoration ne permet de conclure ni à la convergence, qui demanderait des sommes partielles bornées, ni à la divergence, qui demanderait un minorant. La nature de $\sum|u_n|$ ne peut donc pas se déduire de la question 4. C'est l'équivalent $|u_n|\sim\frac1n$ de la partie I (question 6) qui établit la divergence.
-
-$$\boxed{\text{La minoration de }\varphi\text{ ne suffit pas à étudier la convergence de }\sum|u_n|}$$
+**Précision sur la dernière phrase du sujet.** La minoration globale de $\varphi$ porte en réalité davantage d’information que le seul $O(N)$. Appliquons $(\star)$ à $1/r$ avec $r>1$. Comme $\ln(1/r)=-\ln r$, on obtient
+$$\ln r\ge\frac{1-r^{-2}}2.$$
+Pour $n$ pair, prenons $r=1+1/n$. Il vient
+$$|u_n|=\ln(1+1/n)\ge\frac{2n+1}{2(n+1)^2}\ge\frac1{2(n+1)}.$$
+En sommant sur les seuls indices pairs $n=2k$, on obtient un minorant divergent, puisque $1/(2(2k+1))\ge1/(6k)$ pour $k\ge1$. La minoration de $\varphi$ permet donc bien de prouver la divergence lorsqu’on l’applique aussi au réciproque. L’équivalent de la question I.6 donne la même conclusion.

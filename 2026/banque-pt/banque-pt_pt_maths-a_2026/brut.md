@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 h, calculatrice interdite, une feuille de papier millimétré à rendre avec la copie.
 
 ## Partie A : Quelques matrices
@@ -503,8 +505,8 @@ $$\overline{K_N}=\frac{21\,357}{100\,000}=0{,}21357.$$
 
   **Avec une probabilité au moins égale à $0{,}975$, l'intervalle aléatoire $[\overline{K_N}-0{,}01\,;\,\overline{K_N}+0{,}01]$ contient $I$.**
 
-  Pour cette simulation, il vaut $[0{,}20357\,;\,0{,}22357]$ : c'est un intervalle de confiance de $I$ au niveau $97{,}5\,\%$. Arrondi vers l'extérieur, il devient $[0{,}203\,;\,0{,}224]$.
-- Pour $\varepsilon=10^{-3}$ : $\frac{1}{4N\varepsilon^2}=2{,}5$, et le minorant $1-2{,}5=-1{,}5$ est négatif. Une probabilité est toujours positive : **l'inégalité ne donne aucune information.**
+  Pour cette simulation, il vaut $[0{,}20357\,;\,0{,}22357]$ : Sur des répétitions indépendantes de la simulation, la procédure produit un intervalle contenant le paramètre fixe $I$ avec une probabilité d’au moins $97{,}5\,\%$. Après observation, les deux bornes sont fixées. Arrondi vers l'extérieur, il devient $[0{,}203\,;\,0{,}224]$.
+- Pour $\varepsilon=10^{-3}$ : $\frac{1}{4N\varepsilon^2}=2{,}5$, et le minorant $1-2{,}5=-1{,}5$ est négatif. Toute probabilité appartient à $[0,1]$ : **l'inégalité ne donne aucune information.**
 
 À titre de contrôle, la valeur calculée en 6(b) est $I\approx0{,}21171$ ; elle appartient bien au premier intervalle.
 
@@ -537,7 +539,7 @@ Le cas $n=1$ est à part : $Q=(1)$, et la seule valeur propre est $1$. On suppos
   $$\lambda^2x=\mathrm{tr}(Q)\,\lambda x.$$
 
   Comme $x\neq0$, il vient $\lambda\big(\lambda-\mathrm{tr}(Q)\big)=0$ : **les seules valeurs propres possibles sont $0$ et $\mathrm{tr}\,Q$**.
-- $Q$ est trigonalisable dans $\mathcal{M}_n(\mathbb{C})$, donc sa trace est la somme de ses valeurs propres complexes comptées avec multiplicité ; cette somme vaut $\mathrm{tr}\,Q$, d'où $\chi_Q=X^{n-1}\big(X-\mathrm{tr}\,Q\big)$.
+- Complétons $\alpha$ en une base de $\mathbb R^n$. Puisque $Qx=(\beta^\top x)\alpha$ pour tout $x$, toutes les colonnes de la matrice dans cette base sont nulles à partir de la deuxième ligne. La première colonne commence par $\beta^\top\alpha=\mathrm{tr}\,Q$. Cette matrice est triangulaire supérieure, de diagonale $(\mathrm{tr}\,Q,0,\ldots,0)$. Ainsi $\chi_Q=X^{n-1}(X-\mathrm{tr}\,Q)$, y compris lorsque la trace est nulle.
 
 $$\boxed{\begin{aligned}
 &\text{si } \mathrm{tr}\,Q\neq0 :\ 0 \text{ de multiplicité } n-1 \text{ et } \mathrm{tr}\,Q \text{ de multiplicité } 1\ ;\\
@@ -546,7 +548,7 @@ $$\boxed{\begin{aligned}
 
 ### 1. (c)
 
-Ici $\mathrm{tr}\,Q=\sum_i\alpha_i\beta_i$, avec $\alpha_i>0$ pour tout $i$, et les $\beta_i$ positifs de somme $1$.
+Ici $\mathrm{tr}\,Q=\sum_i\alpha_i\beta_i$, avec $\alpha_i>0$ pour tout $i$, et les $\beta_i$ positifs ou nuls de somme $1$.
 
 Il existe donc $i_0$ tel que $\beta_{i_0}>0$, ce qui donne $\mathrm{tr}\,Q\geqslant\alpha_{i_0}\beta_{i_0}>0$.
 
@@ -575,7 +577,7 @@ $X$ suit la loi uniforme sur $\{1,2\}$ et $Y$ la loi uniforme sur $\{3,4\}$, don
 
 $$Q=\frac14\begin{pmatrix}0&0&1&1\\0&0&1&1\\0&0&0&0\\0&0&0&0\end{pmatrix}.$$
 
-Ses coefficients sont positifs, de somme $1$ : c'est bien la matrice d'une loi conjointe, et elle est de rang $1$.
+Ses coefficients sont positifs ou nuls, de somme $1$ : c'est bien la matrice d'une loi conjointe, et elle est de rang $1$.
 
 On a $\mathrm{tr}\,Q=0$, donc $Q^2=\mathrm{tr}(Q)\,Q=0$ et $0$ est la seule valeur propre. Si $Q$ était diagonalisable, elle serait semblable à la matrice nulle, donc nulle. Comme $Q\neq0$, **$Q$ n'est pas diagonalisable.**
 

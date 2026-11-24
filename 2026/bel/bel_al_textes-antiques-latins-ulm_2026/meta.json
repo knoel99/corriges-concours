@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_textes-antiques-latins-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Textes antiques latins (Ulm)",
+    "annee": 2026
+  },
+  "intitule": "L’amitié chez Ovide et le récit de Tacite",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/textes_antiques_261101.pdf",
+    "sujet_sha256": "261979dd5fb5d9fab8373df50d3493f85b9ca369b1565db4eaf7740522bc13a8",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_latin_ecrit_textes_antiques.pdf",
+    "rapport_sha256": "70b226a6f5e266a46efc67ea271aca829cd00527e4be448dfe855840c7da13a6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/amitie-distique.svg",
+      "question": "I. Commentaire",
+      "legende": "Les changements de relation dans la lettre d’Ovide"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification des deux exercices sur le fascicule, de la section du rapport consacrée à Tacite et des observations sur l’élégie épistolaire, ses exempla et ses dernières antithèses."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « L’amitié chez Ovide et le récit de Tacite » et du schéma « Les changements de relation dans la lettre d’Ovide »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Collation de la version contre les présents et infinitifs narratifs de Tacite, et des 58 vers de l’élégie contre le commentaire. Précisions sur la lecture comme don et sur l’opposition finale dans la figure."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

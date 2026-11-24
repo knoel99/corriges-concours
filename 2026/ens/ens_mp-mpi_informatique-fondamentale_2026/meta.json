@@ -63,7 +63,7 @@
       "legende": "Le graphe obtenu à partir de K₅ pour Δ = 3 possède sept arêtes. Chaque couleur en couvre au plus deux."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -101,7 +101,25 @@
       "modifications": null,
       "perimetre": "Relecture des corrigés brut et guidé.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "48 réponses sur le sujet officiel et dix figures. Dégénérescence, mouvements de recoloration, reconstruction locale et couplage, domination et chaînes de Kempe. Vérification exhaustive sur petits graphes et calcul exact au seuil imprimé de III.11. Ajout des détails de désaccord en III.7, du contre-exemple fini et du cas vide en IV.1.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "tour": 2
     }
-  ]
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "48 réponses sur le sujet officiel et dix figures. Dégénérescence, mouvements de recoloration, reconstruction locale et couplage, domination et chaînes de Kempe. Vérification exhaustive sur petits graphes et calcul exact au seuil imprimé de III.11. Ajout des détails de désaccord en III.7, du contre-exemple fini et du cas vide en IV.1."
+  }
 }

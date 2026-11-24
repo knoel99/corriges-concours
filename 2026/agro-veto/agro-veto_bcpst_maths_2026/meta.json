@@ -12,12 +12,12 @@
     {
       "fichier": "figures/q7c-bornes-markov-chernoff.svg",
       "question": "Q7.c",
-      "legende": "Bornes de Markov (Q5) et de Q7.b pour une loi de Poisson de paramètre λ = 2, en échelle logarithmique : égales à 1 en a = λ, elles se séparent ensuite très vite"
+      "legende": "Pour la loi de Poisson de paramètre 2, Markov donne le plus petit majorant à a = 3. À a = 4, la borne exponentielle passe en dessous et décroît ensuite plus vite."
     },
     {
       "fichier": "figures/q8-domination-seuil-m.svg",
       "question": "Q8",
-      "legende": "Exemple P(s) = s³ et ν = 1, en échelle logarithmique : la majoration de Q8 est fausse pour 1,23 < s < 17,0 et ne devient vraie qu'au-delà du seuil M ≈ 17"
+      "legende": "Pour P(s) = s³ et ν = 1, les courbes se coupent vers 1,227 et 16,999. La majoration échoue entre les deux intersections. Prendre M = 17 assure la domination sur toute la queue."
     },
     {
       "fichier": "figures/q24-mutations-cultures.svg",
@@ -77,6 +77,23 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 37 questions et sous-questions des éditions brute et guidée au regard du sujet et du rapport de méthodes de calcul et raisonnement. Contrôle des moments, du commutant et des bornes de concentration. En Q7.c, distinction entre la fenêtre où Markov donne le meilleur majorant et le régime asymptotique. En Q8, les deux seuils et le sens des inégalités sont précisés dans les légendes.",
+      "tour": 3,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
-  ]
+  ],
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0426_sp.pdf",
+    "rapport": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-mcr-cpge-bcpst-2026.pdf"
+  }
 }

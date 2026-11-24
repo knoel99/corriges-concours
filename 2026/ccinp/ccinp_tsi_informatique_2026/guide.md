@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** « Autour de jeux » : le sujet résout trois fois le problème des $n$ reines (placer $n$ reines sur une grille $n \times n$ sans qu'aucune n'en contrôle une autre), par des méthodes de coût très différent, puis propose un court exercice de bases de données sur un site de jeux en ligne.
@@ -392,7 +394,7 @@ def recherche_aleatoire(n, N):
 
 Chaque tirage est une permutation de $\{0, \dots, n-1\}$ : (a) et (d) sont automatiquement vérifiées, le test porte en pratique sur les diagonales. La fonction renvoie la première solution trouvée, `[]` après $N$ échecs. Coût au pire $O(nN)$.
 
-Ordre de grandeur : pour $n = 8$, il y a 92 solutions parmi $8! = 40\,320$ permutations, soit environ une chance sur 438 par tirage ; $100\,000$ tirages suffisent largement.
+Si $s_n$ des $n!$ permutations sont gagnantes, un tirage réussit avec la probabilité $s_n/n!$. Chaque appel à `sample` repart de la liste initiale. Deux essais peuvent donc donner la même permutation. Pour $N$ essais indépendants, la probabilité de renvoyer `[]` vaut $(1-s_n/n!)^N$. Pour huit reines, $s_8=92$ et $8!=40\,320$. Avec $N=100\,000$, la probabilité d’échec est d’environ $6{,}2\times10^{-100}$. Un échec reste possible.
 
 > [!PIEGE]
 > Tirer la permutation avant la boucle (on teste $N$ fois la même liste), ou renvoyer `False` ou `-1` au lieu de la liste vide imposée.
@@ -405,7 +407,7 @@ Ordre de grandeur : pour $n = 8$, il y a 92 solutions parmi $8! = 40\,320$ permu
 
 ## I.5 — Déterminer toutes les permutations de L = [0, 1, …, n-1]
 
-On construit les permutations de $\{0, \dots, n-1\}$ par insertions successives, puis on filtre celles qui sont des solutions. La méthode est exhaustive mais son coût croît comme $n!$.
+On construit les permutations de $\{0, \dots, n-1\}$ par insertions successives, puis on filtre celles qui sont des solutions. La dernière étape écrit $n!$ listes de longueur $n$. La construction demande $\Theta(n\,n!)$ opérations.
 
 ### Question 14
 
@@ -449,7 +451,7 @@ Seule une fonction d'insertion toute faite (comme `L.insert`) est interdite : le
 
 $$\boxed{P = [[2, 0, 1],\ [0, 2, 1],\ [0, 1, 2]]}$$
 
-(Si l'on comprend « premier passage » comme le premier tour de la boucle interne, `P` vaut alors `[[2, 0, 1]]`.) Le second passage (`l1 = [1, 0]`) ajoute `[2, 1, 0]`, `[1, 2, 0]`, `[1, 0, 2]`. Après exécution complète :
+Le second passage (`l1 = [1, 0]`) ajoute `[2, 1, 0]`, `[1, 2, 0]`, `[1, 0, 2]`. Après exécution complète :
 
 $$\boxed{P = [[2, 0, 1],\ [0, 2, 1],\ [0, 1, 2],\ [2, 1, 0],\ [1, 2, 0],\ [1, 0, 2]]}$$
 

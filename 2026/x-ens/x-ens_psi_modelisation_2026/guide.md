@@ -4,6 +4,10 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve du 17 avril 2026 dure cinq heures, sans calculatrice. Le modèle de référence est un avion régional ATR 72 doté de deux turbopropulseurs. La partie A relie les forces, les débits d’un moteur et les réglages des deux hélices. La partie B étudie une source électrique et les contraintes d’un entraînement électrique en altitude.
@@ -56,12 +60,14 @@ La masse vaut $M_t=29\,850$ kg. La projection du bilan des forces sur la traject
 $$
 V(t)=V_*\tanh\!\left(\frac{\sqrt{KF}}{M_t}(t-T_d)+\operatorname{argth}(V_d/V_*)\right).
 $$
-La fin de la montée satisfait $H=\sin\theta\int_{T_d}^{T_m}V(t)\,dt$.
+Pour dater la fin de montée, posons $u_d=\operatorname{argth}(V_d/V_*)$, $\omega=\sqrt{KF}/M_t$ et $u_m=u_d+\omega(T_m-T_d)$. Intégrer $V\sin\theta$ jusqu’à l’altitude $H$ donne
+$$\ln\frac{\cosh u_m}{\cosh u_d}=\frac{\omega H}{V_*\sin\theta}.$$
+On en déduit $T_m\simeq647$ s depuis le départ et $V(T_m)\simeq135{,}6$ m/s.
 - Palier : $V=V_p=153$ m/s par prescription, avec $T_u=KV_p^2/2$.
 
 Les constantes imprimées donnent $T_d=34,2$ s et $V_*=135,7$ m/s. La figure 4 indique $26$ s et une montée vers $153$ m/s. Sans transition supplémentaire ni modification des constantes, la loi de montée et le palier tracé ne se raccordent pas. Pour lire les énergies aux questions 4 et 5, on emploie les durées prescrites sur la figure.
 
-![Figure 1 — La loi de montée calculée plafonne à 135,7 m/s avec les données du tableau. La vitesse de palier prescrite vaut 153 m/s.](figures/q02-vitesse-mission.svg)
+![Figure 1 — La figure 4 place le début du palier à 559 s. Avec les forces et les masses de la figure 3, la montée atteint 6 500 m à 647 s et à 135,6 m/s.](figures/q02-vitesse-mission.svg)
 
 > [!PIEGE]
 > Contrôler la vitesse limite avant de supposer que la vitesse de croisière peut être atteinte.
@@ -114,7 +120,7 @@ Le membre de droite additionne l'accroissement d'énergie cinétique, le gain d'
 
 Avec $T_p-T_m=9\,000$ s, on obtient respectivement $0,349$ GJ d'énergie cinétique, $1,90$ GJ d'énergie potentielle, $0,0027$ GJ contre la traînée en montée (valeur imposée) et $19,66$ GJ contre celle du palier. Le total vaut $21,92$ GJ, dont environ 90 % pour le palier.
 
-La valeur imprimée pour la montée ne peut toutefois pas être l'intégrale annoncée. Sur les $559-26=533$ s de la figure 4, la vitesse est au moins $55$ m/s, donc $K\int V^3\,dt\ge1,22\times55^3\times533=108$ MJ, déjà quarante fois les $2,7$ MJ indiqués. Le total précédent suit la consigne numérique. La précision est également limitée par la masse et le coefficient de traînée supposés constants dans chaque phase, par la transition de vitesse et par l'absence de rendement de conversion.
+La valeur imprimée pour la montée ne peut toutefois pas être l'intégrale annoncée. Sur les $559-26=533$ s de la figure 4, la vitesse est au moins $55$ m/s, donc $K\int V^3\,dt\ge1,22\times55^3\times533=108$ MJ, déjà quarante fois les $2,7$ MJ indiqués. Le bilan de la montée fournit un contrôle indépendant. Le long de la trajectoire, la distance parcourue est $H/\sin\theta$. En multipliant $M_t\dot V=F-KV^2$ par $V$ puis en intégrant, on obtient $K\int V^3\,dt=FH/\sin\theta-\tfrac12 M_t[V(T_m)^2-V_d^2]\simeq1{,}45$ GJ avec la vitesse de Q2. Le total de $21{,}92$ GJ utilise la valeur imposée. La précision est également limitée par la masse et le coefficient de traînée supposés constants dans chaque phase, par la transition de vitesse et par l'absence de rendement de conversion.
 
 ![Figure 2 — Travaux utiles du profil de vol avec la donnée de montée imposée. Le palier de 2 h 30 représente presque 90 % du total.](figures/q05-bilan-energetique.svg)
 

@@ -1,0 +1,72 @@
+{
+  "slug": "bel_al_explication-de-documents-historiques-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Explication de documents historiques (Lyon)",
+    "annee": 2026
+  },
+  "intitule": "L’ordonnance-testament de Philippe Auguste selon Rigord",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=8",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Histoire%202026.pdf#page=7",
+    "rapport_sha256": "dd4c76955e661404a219fc77bc251ff30f8a82199893b443177f57351c1c3381",
+    "precision_sujet": "Énoncé et édition traduite du texte de Rigord aux pages 8–9 ; rapport de spécialité à partir de la p. 7."
+  },
+  "figures": [
+    {
+      "fichier": "figures/gouverner-en-absence.svg",
+      "question": "Justice et finances",
+      "legende": "Les rythmes du gouvernement en l’absence du roi"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la partie écrite du rapport d’histoire, à partir de la p. 7. Contrôle des lignes 1–60, de la transmission par Rigord et des obligations royales."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « L’ordonnance-testament de Philippe Auguste selon Rigord » et du schéma « Les rythmes du gouvernement en l’absence du roi »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 60 lignes, des quatre, deux et six hommes requis et des trois rythmes. Précision sur l’auteur de l’acte, indépendamment de la vacance de la chancellerie."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

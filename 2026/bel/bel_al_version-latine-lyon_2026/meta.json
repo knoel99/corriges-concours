@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_version-latine-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine (Lyon)",
+    "annee": 2026
+  },
+  "intitule": "Les feux du ciel selon Manilius",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=4",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Latin%202026.pdf#page=2",
+    "rapport_sha256": "6bccf618145cd52431fb48256c328841c65a8f740c1a736f1d71f5f7a88d32c0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/presages-exemples.svg",
+      "question": "Version",
+      "legende": "Du signe céleste aux deux exemples historiques"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport écrit, p. 2–4, et des dix notes de la p. 4 du sujet. Vérification des deux exemples historiques, de la portée de talia et de la reprise finale."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « Les feux du ciel selon Manilius » et du schéma « Du signe céleste aux deux exemples historiques »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Collation des 28 vers de Manilius et des dix notes avec les deux éditions. Correction de l’objet animé de populata, colonos, et vérification de la personnification de la Germanie."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
