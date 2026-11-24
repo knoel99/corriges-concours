@@ -143,9 +143,12 @@
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2026 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/brut.md) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (oral option Calderón, vers 445 à 542) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (oral option Calderón, vers 782 à 921) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-782-a-921_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-782-a-921_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (thème Lyon) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (version et thème Ulm) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
+| 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
@@ -215,8 +218,11 @@
 | 2022 | BEL | AL | Espagnol (thème Lyon) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Italien (commentaire et traduction) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Italien (thème Lyon) | [md](2022/bel/bel_al_italien-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_italien-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Polonais (commentaire et traduction) | [md](2022/bel/bel_al_polonais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_polonais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (commentaire et traduction) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (thème Lyon) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Russe (commentaire et traduction) | [md](2022/bel/bel_al_russe-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_russe-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Russe (thème Lyon) | [md](2022/bel/bel_al_russe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_russe-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
@@ -564,9 +570,12 @@
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
+| 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Composition d’ordre économique | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Droit civil | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Droit civil | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit civil | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit commercial | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit public | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/guide.md) |
@@ -716,6 +725,7 @@
 | 2026 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/guide.md) |
 | 2026 | X-ENS | MP-MPI-PC-PSI | Français | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2019 | X-ENS | MP | Informatique A | [md](2019/x-ens/x-ens_mp_informatique-a_2019/brut.md) | [md](2019/x-ens/x-ens_mp_informatique-a_2019/guide.md) |
 | 2020 | X-ENS | MP | Informatique A | [md](2020/x-ens/x-ens_mp_informatique-a_2020/brut.md) | [md](2020/x-ens/x-ens_mp_informatique-a_2020/guide.md) |
 | 2021 | X-ENS | MP | Informatique A | [md](2021/x-ens/x-ens_mp_informatique-a_2021/brut.md) | [md](2021/x-ens/x-ens_mp_informatique-a_2021/guide.md) |
 | 2022 | X-ENS | MP | Informatique A | [md](2022/x-ens/x-ens_mp_informatique-a_2022/brut.md) | [md](2022/x-ens/x-ens_mp_informatique-a_2022/guide.md) |
@@ -746,6 +756,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2019 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2019/x-ens/x-ens_psi_modelisation_2019/brut.md) | [md](2019/x-ens/x-ens_psi_modelisation_2019/guide.md) |
 | 2020 | X-ENS | PSI | Modélisation | [md](2020/x-ens/x-ens_psi_modelisation_2020/brut.md) | [md](2020/x-ens/x-ens_psi_modelisation_2020/guide.md) |
 | 2021 | X-ENS | PSI | Modélisation | [md](2021/x-ens/x-ens_psi_modelisation_2021/brut.md) | [md](2021/x-ens/x-ens_psi_modelisation_2021/guide.md) |
 | 2022 | X-ENS | PSI | Modélisation | [md](2022/x-ens/x-ens_psi_modelisation_2022/brut.md) | [md](2022/x-ens/x-ens_psi_modelisation_2022/guide.md) |

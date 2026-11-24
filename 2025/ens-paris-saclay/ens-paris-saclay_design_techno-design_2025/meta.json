@@ -1,0 +1,108 @@
+{
+  "slug": "ens-paris-saclay_design_techno-design_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Techno-design",
+    "annee": 2025
+  },
+  "redaction": "Rédaction des deux éditions et de 8 planches A3 autonomes et anonymes, analyse de toutes les photographies et de chaque production du sujet. Les croquis et les trois hypothèses sont originaux. Les essais à conduire sont explicités.",
+  "questions": 2,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Sujets/BAT-Techno%20design.pdf",
+    "sujet_sha256": "76f743bc8aa19aad7aede8e48868d1d38c039c3aeeec7f29e65fe43653a69bea",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=602",
+    "nature": "Sujet original, consignes, six ensembles de documents et références des auteurs.",
+    "references": {
+      "Notice du pavillon d’Arte Sella": "https://kkaa.co.jp/en/project/kodama-pavilion/",
+      "Projet Tatu, Park Associati": "https://parkassociati.com/en/projects/tatu",
+      "Arbres du Tokyo Edition, KKAA": "https://kkaa.co.jp/en/project/tokyo-edition-ginzatoranomon-christmas-tree/",
+      "Présentation par les auteurs, Atelier Faber": "https://www.archdaily.com/985055/rausa-pavilion-atelier-faber",
+      "Affiches de La Comédie, Fanette Mellier": "https://www.fanettemellier.com/la-comedie-de-clermont-affiches",
+      "Notice de la Fondation Félix González-Torres": "https://www.felixgonzalez-torresfoundation.org/works/untitled-portrait-of-ross-in-l-a"
+    },
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_Techno_Design_ecrit.pdf",
+    "rapport_sha256": "7189762fda62e845dfcf7e07adacbd511ef85c46817b6219b7a0c75d26bb958f"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-bois-et-chanvre.svg",
+      "question": "Analyse 1/8",
+      "legende": "Un cran retient la pièce de bois. Une cale fait tourner le rang de blocs. Les deux assemblages n’ont pas le même lendemain."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-boucles-et-roseaux.svg",
+      "question": "Analyse 2/8",
+      "legende": "Boucles d’un bois lamellé et brassées de roseaux produisent deux expériences de proximité."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-pierre-et-signe.svg",
+      "question": "Analyse 3/8",
+      "legende": "Une forme change de valeur par voisinage et une pierre par déplacement du point d’appui."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-sept-soirs.svg",
+      "question": "Analyse 4/8",
+      "legende": "Un théâtre de quartier reçoit un festival de sept soirs. À la huitième matinée, il doit avoir retrouvé toutes ses pièces."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-lames-retournees.svg",
+      "question": "Esquisse 5/8",
+      "legende": "Le geste du régisseur échange une face colorée contre sa tranche et le fond du foyer grandit d’un jour à l’autre."
+    },
+    {
+      "numero": 6,
+      "fichier": "figures/06-reserve-visible.svg",
+      "question": "Esquisse 6/8",
+      "legende": "Chaque élément quitte un rang et rejoint la boîte ouverte du spectacle. La réserve devient le second tableau."
+    },
+    {
+      "numero": 7,
+      "fichier": "figures/07-ombres.svg",
+      "question": "Esquisse 7/8",
+      "legende": "Un changement de distance entre le mobile et l’écran grandit l’ombre sans augmenter la quantité de matière."
+    },
+    {
+      "numero": 8,
+      "fichier": "figures/08-essais.svg",
+      "question": "Esquisse 8/8",
+      "legende": "Les trois essais confrontent la lecture temporelle, le dernier geste et le retour de tout le matériel."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et de 8 planches A3 autonomes et anonymes, analyse de toutes les photographies et de chaque production du sujet. Les croquis et les trois hypothèses sont originaux. Les essais à conduire sont explicités."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "parties": [
+      "Analyse",
+      "Esquisse"
+    ],
+    "formats_A3": 8,
+    "planches": [
+      "Analyse 1/8",
+      "Analyse 2/8",
+      "Analyse 3/8",
+      "Analyse 4/8",
+      "Esquisse 5/8",
+      "Esquisse 6/8",
+      "Esquisse 7/8",
+      "Esquisse 8/8"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "x-ens_mp_informatique-a_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2019,
+    "duree_heures": 4
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/info/mpinfo/x-ens-mp-info-2019-sujet.pdf",
+    "sujet_sha256": "8eee9980418513001f44785af049e6540e1a0cf91b170a1ca7b586c27bb513b6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-plongements.svg",
+      "question": "Q5",
+      "legende": "Le tableau des préfixes pour ab dans abab se termine par trois plongements. La première ligne compte l’unique plongement du motif vide."
+    },
+    {
+      "fichier": "figures/q11-coupe.svg",
+      "question": "Q11",
+      "legende": "Dans le produit de deux langages, le préfixe peut franchir la frontière des facteurs après avoir déjà rencontré la lettre recherchée."
+    },
+    {
+      "fichier": "figures/q15-couverture.svg",
+      "question": "Q15",
+      "legende": "Pour le mot aba et le langage singleton contenant ab, les cases marquées comprennent la diagonale, les lettres isolées et le premier facteur ab."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 16 questions et sous-questions, lecture du fac-similé du sujet X-ENS, trois figures originales. Validation des programmes OCaml des deux éditions, recoupement des plongements et du plus court sur-mot sur des mots courts, vérification indépendante des résidus et des facteurs par automates non déterministes, démonstration de croissance exponentielle pour la procédure de résidus."
+    }
+  ]
+}
