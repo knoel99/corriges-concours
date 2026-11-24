@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## I — Arbres binaires de recherche
 
 ### Question 1
@@ -177,7 +179,7 @@ Si $z=A$, le peindre en noir donne une racine noire et ajoute un noir sur tous l
 
 Si le parent $P$ et l'oncle $U$ sont rouges, leur parent $G$ est noir. Repeindre $P,U$ en noir et $G$ en rouge conserve sur chaque chemin traversant $G$ l'unité de noir qui y était apportée par $G$. Les enfants de $G$ sont désormais noirs. L'unique défaut possible remonte à $G$, pris comme nouveau $z$. L'invariant est conservé.
 
-Si l'oncle est noir ou absent, les rotations des questions 15 et 16 préservent le parcours infixe et les pointeurs. Dans le cas aligné, le noir initial de $G$ se retrouve sur $P$, nouvelle racine locale. Dans le cas en coude, il se retrouve sur $Z$, nouvelle racine locale. Chaque chemin vers un sous-arbre périphérique conserve ainsi exactement un noir parmi les trois nœuds centraux. Les racines de ces sous-arbres sont noires ou absentes, car elles étaient les enfants d'un nœud rouge ou formaient l'oncle noir. Les deux nouveaux nœuds rouges ont donc des enfants admissibles, et une racine locale noire se rattache à l'extérieur sans conflit. Le cas miroir échange la gauche et la droite. Avec la terminaison de la question 19, ces cas prouvent la correction.
+Si l'oncle est noir ou absent, les rotations des questions 15 et 16 préservent le parcours infixe et les pointeurs. Dans le cas aligné, le noir initial de $G$ se retrouve sur $P$, nouvelle racine locale. Dans le cas en coude, il se retrouve sur $Z$, nouvelle racine locale. Chaque chemin vers un sous-arbre périphérique conserve ainsi exactement un noir parmi les trois nœuds centraux. Les racines de ces sous-arbres sont noires ou absentes, car elles étaient les enfants d'un nœud rouge ou formaient l'oncle noir. Pour vérifier l’égalité des hauteurs noires aussi **à l’intérieur** du sous-arbre transformé, observons qu’avant l’opération chaque chemin de $G$ vers une racine périphérique traverse exactement un noir parmi $G,P,Z$. Les quatre sous-arbres périphériques ont donc la même hauteur noire, en comptant zéro pour un NIL. Ils sont redistribués sous les deux fils rouges de la nouvelle racine locale. Chaque fils a ainsi deux sous-arbres de même hauteur noire et la nouvelle racine conserve la hauteur noire de $G$. Les deux nouveaux nœuds rouges ont donc des enfants admissibles, et une racine locale noire se rattache à l'extérieur sans conflit. Le cas miroir échange la gauche et la droite. Avec la terminaison de la question 19, ces cas prouvent la correction.
 
 ### Question 21
 
