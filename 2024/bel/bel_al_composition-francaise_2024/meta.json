@@ -16,7 +16,10 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202024%20OK.pdf",
-    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf"
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf",
+    "sujet_sha256": "65ec4ad7489248f7863651a63e9634a34e11bb6ec52325e680219bc7734aea03",
+    "rapport_jury_sha256": "60fb2b54dba5700e3e3cdf418fb6ff2b634200506ec747e74bef1f046bf74299",
+    "marivaux": "https://fr.wikisource.org/wiki/La_Dispute"
   },
   "figures": [
     {
@@ -33,6 +36,11 @@
       "fichier": "figures/double-inconstance.svg",
       "question": "Partie III",
       "legende": "La satisfaction des personnages et le jugement du spectateur peuvent diverger."
+    },
+    {
+      "fichier": "figures/le-jeu-de-la-cite.svg",
+      "question": "Analyse du sujet",
+      "legende": "Qui dispose du jeu dans la dernière scène de La Dispute ?"
     }
   ],
   "date_revision": "2026-11-24",
@@ -56,6 +64,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle du fac-similé, notamment de l’italique final, du rapport et de la scène XX de La Dispute. Restitution du libellé, analyse du couple fidèle et d’Hermiane dans les deux copies, schéma du dénouement."
     }
   ]
 }

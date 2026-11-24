@@ -4,7 +4,15 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
+
+« Jeu social, jeu esthétique, jeu critique, jeu figural, jeu d’interaction, le théâtre se situe en effet dans l’espace vide que lui laisse la cité : il est entre les pièces, entre les rouages de la machine, il en figure le *jeu*, et c’est en cela qu’il permet qu’elle fonctionne. »
+
+Christian Biet et Christophe Triau, *Qu’est-ce que le théâtre ?*, « Conclusion », Folio essais, 2006, p. 930.
+
+Vous discuterez cette analyse en vous référant en particulier aux œuvres au programme.
 
 La composition française commune dure six heures. Le sujet de Christian Biet et Christophe Triau porte sur le théâtre et la cité. Le domaine théâtral se croise ici avec la représentation littéraire et les rapports entre littérature et morale. Le jury invite à mobiliser les cinq œuvres, en tenant compte de leurs formes. *Le Cid* de 1637 est une tragi-comédie, *La Double Inconstance* et *La Dispute* sont deux comédies de Marivaux ; *Le Capitaine Fracasse* et *La Vagabonde* sont des romans où le théâtre est un métier et un objet de représentation. [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise.pdf) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202024%20OK.pdf) · [Programme 2024](https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf)
 
@@ -16,6 +24,10 @@ La composition française commune dure six heures. Le sujet de Christian Biet et
 #### Solution
 
 Un acteur joue devant autrui et selon des conventions. Le plaisir et la distance que ce dispositif rend possibles peuvent faire du spectacle un exercice critique. Dans l’image mécanique, le jeu est l’intervalle grâce auquel deux pièces peuvent bouger l’une relativement à l’autre. Le mot « figurer » ajoute une opération : le théâtre rend visibles, sous une forme construite, les relations de ceux qui vivent ensemble. Enfin, le verbe « permet » avance une thèse forte. Le théâtre contribue à l’activité de la cité qui lui a pourtant réservé en apparence un simple espace de loisir. C’est ce retour du jeu sur la société qu’il faut discuter.
+
+![Qui dispose du jeu dans la dernière scène de La Dispute ?](figures/le-jeu-de-la-cite.svg)
+
+**Éprouver le dernier verbe.** Qui « fonctionne » dans la dernière scène de *La Dispute* ? La cour conserve la maîtrise des lieux, le couple fidèle obtient de rester ensemble, Hermiane interrompt le divertissement. Le même dénouement permet donc de distinguer le succès du dispositif, le sort des participants et le jugement qui s’exerce entre spectateurs. [Marivaux, scène XX](https://fr.wikisource.org/wiki/La_Dispute)
 
 ## Problématique
 
@@ -89,6 +101,8 @@ Sur la scène du *Cid*, Rodrigue pourrait se contenter d’accepter de son père
 
 Chez Marivaux, le moyen est différent. Dans *La Double Inconstance*, Silvia veut retrouver Arlequin. Le prince, qui désire qu’elle le choisisse, dispose d’un palais et d’auxiliaires pour agir sur leurs sentiments. Flaminia fait de sa propre proximité avec Arlequin une pièce essentielle de la manœuvre. Elle lui offre une écoute que rendent plus précieuse les contrariétés qu’il subit par ailleurs. Le spectateur à qui les préparatifs ont été révélés entend donc chaque parole deux fois : comme l’ami entendrait la marque de bienveillance, puis comme le témoin d’une stratégie reconnaît le travail qu’elle accomplit. La comédie n’a pas eu besoin de faire proclamer à un personnage que la puissance peut prendre le langage de l’amitié. Elle nous en a fait entendre la possibilité dans une phrase qui continue de paraître aimable. Appeler le théâtre un « jeu figural », c’est lui reconnaître cette puissance d’intelligence indirecte.
 
+La reprise du même substantif cinq fois avant les deux-points fait passer de la pratique sociale aux rapports entre acteurs et spectateurs. Après les deux-points, le mot en italique ne nomme plus seulement leur activité. Une roue ne transmettrait pas correctement son mouvement si elle était soudée à toutes les pièces voisines. Le théâtre peut ainsi représenter un écart entre fonctions et permettre à la cité de se voir fonctionner. Dans les stances, l’intervalle que le vers ouvre entre l’injonction paternelle et la réponse du fils fait précisément entendre cet écart. Reste à savoir pour qui ce jeu est une liberté.
+
 Le roman de Gautier permet d’observer l’opération depuis les coulisses. Quand le baron de Sigognac prend, après la mort de Matamore, l’emploi de capitaine fanfaron, il faut que ses partenaires et lui trouvent des gestes qui rendent ce personnage immédiatement reconnaissable. L’écart est savoureux entre l’assurance bruyante d’un soldat de comédie et la vaillance dont le comédien se montre capable dans le récit. Le lecteur connaît le gentilhomme qui endosse le costume. Les spectateurs des acteurs ambulants, eux, doivent pouvoir rire d’une figure sans connaître celui qui la joue. Le regard du roman passe d’un côté à l’autre de la représentation et fait mesurer ce que suppose son apparente légèreté : un répertoire partagé, une troupe et l’aptitude de chacun à prêter au rôle des moyens qu’il sache ensuite reprendre.
 
 ### II. Qui dispose de l’espace laissé au jeu ?
@@ -102,6 +116,8 @@ Cette dissymétrie devient un enjeu éthique dans *La Dispute*. Églé s’arrê
 ### III. Le fonctionnement de la cité se joue aussi dans le désaccord de ses spectateurs
 
 Dire que le théâtre rend possible le fonctionnement de la société oblige dès lors à préciser ce qu’on attend de celle-ci. Si fonctionner signifie reproduire un ordre en le faisant aimer, le dénouement de *La Double Inconstance* s’y prête. Le prince obtient Silvia, Arlequin a trouvé auprès de Flaminia un nouvel attachement et l’apparente satisfaction des intéressés dispense d’employer ouvertement la force. On peut pourtant quitter la représentation avec un souvenir que ces unions heureuses ne suffisent pas à effacer : au début, la jeune fille avait été séparée d’Arlequin selon la volonté du prince. Toute la différence entre les places tient à ce que le prince pouvait dès le départ organiser les rencontres, tandis que Silvia ne pouvait qu’y répondre. Il n’est nullement indispensable de juger ses nouveaux sentiments faux pour s’interroger sur les conditions qui leur ont permis de naître. Le déroulement de la comédie donne au public de quoi résister à l’interprétation la plus rassurante de son dénouement.
+
+Le dernier échange de *La Dispute* permet de vérifier jusqu’où va ce droit de juger. Lorsque Meslis et Dina apparaissent, Carise invite chacun à se choisir un autre partenaire. Tous deux restent attachés l’un à l’autre. Le prince décide de les placer à part et formule une conclusion générale sur les vertus et les vices des deux sexes. Hermiane refuse pourtant la plaisanterie finale et demande à partir. L’arrivée du couple fidèle retire à l’expérience sa prétention à expliquer universellement l’inconstance. Elle donne aussi au public une décision à apprécier : le prince peut disposer des lieux et tirer sa morale, mais il ne peut régler l’effet de ses paroles ni sur Hermiane ni sur la salle.
 
 La suite historique du *Cid* aide à mesurer ce pouvoir des spectateurs. Chimène demande au roi justice contre celui qu’elle aime. L’autorité peut promettre à Rodrigue l’espoir d’une union à venir ; elle ne décide pas à la place du public si le désir de la jeune femme est compatible avec son devoir. La querelle de 1637 transporte une partie de cette difficulté hors de la salle. La conduite accordée à Chimène, le plaisir éprouvé devant la pièce et les règles au nom desquelles on la juge deviennent matière à controverse. Les spectateurs et les lecteurs ne forment pas spontanément une communauté d’opinion. De leur désaccord naissent au contraire de nouveaux discours sur ce qu’on peut leur montrer et sur la légitimité du plaisir qu’ils y prennent. Le fonctionnement dont le théâtre est ici l’une des conditions est une faculté de discussion. Elle s’exerce d’autant mieux que la pièce ne vient pas mettre fin au différend dont elle a donné l’occasion.
 

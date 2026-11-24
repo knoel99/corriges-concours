@@ -16,7 +16,9 @@
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20de%20philosophie.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Philosophie%202024%20OK.pdf",
-    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf"
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf",
+    "sujet_sha256": "24a84637af9f4bb6bed0332cff50a2857e203f8bacdec65a90bbe205110132d8",
+    "rapport_jury_sha256": "e35fbed7c92ba6335c147e3e87fb2c273178e2b9abd70701c41b6b6d9baf8630"
   },
   "figures": [
     {
@@ -33,6 +35,11 @@
       "fichier": "figures/rumeur-et-depart.svg",
       "question": "Partie III",
       "legende": "L’effet de la croyance renseigne sur sa réalité comme croyance et laisse à vérifier son contenu."
+    },
+    {
+      "fichier": "figures/realite-et-objectivite.svg",
+      "question": "Analyse du sujet",
+      "legende": "Une même situation, trois affirmations à distinguer"
     }
   ],
   "date_revision": "2026-11-24",
@@ -78,7 +85,21 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante des deux compositions et des trois schémas au regard du sujet et des pages 2 à 4 du rapport. Contrôle de l’argument kantien des cent thalers et explicitation du sens d’effectivité.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle du sujet de métaphysique, du rapport et de la référence aux cent thalers. Distinction entre objectivité du diagnostic et réalité du vécu, contre-épreuve et schéma.",
+      "tour": 2
     }
   ]
 }
