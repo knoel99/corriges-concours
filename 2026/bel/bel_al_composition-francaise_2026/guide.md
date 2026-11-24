@@ -10,6 +10,10 @@
 
 **Révision (tour 3)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L'épreuve dure **six heures**. Elle demande de discuter une analyse de Michel Viegnes :
@@ -200,6 +204,8 @@ Dans *Aurélia*, la forme narrative rend de même l'expérience partageable sans
 Les contes de Mme d'Aulnoy rendent le lecteur sensible à une autre médiation : la pluralité des significations d'une même épreuve. Dans *L'Oiseau bleu*, nous savons reconnaître sous l'apparence animale le personnage que la malveillance voudrait isoler ; les métamorphoses éprouvent ainsi notre propre jugement. La lecture apprend à ne pas confondre l'enveloppe visible et la valeur d'un être. Mais *Le Prince lutin* déplace ce bénéfice du merveilleux : l'invisibilité, d'abord instrument de liberté et d'efficacité, n'est pas en elle-même une solution à la relation amoureuse. D'un conte à l'autre, la même promesse de franchissement peut donc servir des réflexions différentes sur le désir et la reconnaissance. Le lecteur ne doit pas convertir chaque histoire en illustration d'une unique maxime. La transformation que lui propose la série naît de cette mobilité du jugement. Les personnages traversent des espaces et des épreuves ; celui qui les lit traverse des configurations qui l'obligent à modifier ses attentes.
 
 Le *Paysan de Paris* pousse enfin cette expérience vers les moyens mêmes de la représentation. Le lecteur doit s'orienter dans un livre qui ne prend pas la forme d'un roman de formation continu. Les changements de ton et de forme empêchent de réduire les lieux à un décor univoque. On passe de ce qui s'offre à l'observation à ce que l'image fait surgir ; les détails ordinaires ne perdent pas leur matérialité au moment où ils deviennent foyers de merveilleux. Le voyage littéraire se produit dans cet écart. Il ne consiste pas à substituer un monde imaginaire à une ville réelle, mais à éprouver combien la réalité excède les classements qui la rendaient familière. La disparition annoncée du passage de l'Opéra ajoute une profondeur temporelle au déplacement : ce qui paraît disponible au regard est déjà menacé de devenir souvenir. L'œuvre peut en préserver l'expérience, mais elle ne rend pas le lieu ni le sujet invulnérables. Le lecteur partage ainsi une attention à ce qui passe, non la certitude d'avoir atteint un terme.
+
+Le passage de l’Opéra donne à cette difficulté une forme concrète. Un passage est fait pour que le piéton le traverse et ressorte ailleurs. Or l’écriture d’Aragon retient son lecteur auprès des enseignes et des objets qui retardent la traversée. On peut parcourir tout le lieu et manquer le voyage que fait le livre, ou rester longtemps sur une page et changer d’orientation. Le pèlerinage que Viegnes reconnaît en tout voyage désignerait alors une transformation du regard dont aucun itinéraire matériel ne garantit le terme.
 
 Dans cette perspective, le pèlerinage reste une figure possible, à condition qu'il n'interdise ni l'incertitude ni la rencontre. Les œuvres ne donnent pas toutes le même sens au départ, au détour et au retour. Elles nous font cependant éprouver qu'une expérience ne se réduit pas à la somme des choses vues. Le voyage devient intérieur lorsqu'il déplace les conditions selon lesquelles un sujet perçoit, juge, désire et raconte ; la lecture, sans reproduire physiquement l'itinéraire, peut mettre ces conditions à son tour en mouvement. Ce pouvoir n'est pas automatique. Un livre de voyage peut être lu comme une confirmation rassurante des préjugés, de même qu'un déplacement peut être accompli sans disponibilité à ce qu'il expose. La littérature ménage une possibilité de transformation ; elle ne dispense pas son destinataire du travail par lequel cette possibilité devient sienne.
 

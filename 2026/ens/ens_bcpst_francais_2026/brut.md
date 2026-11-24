@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Question directrice** — Comment l’activité du vivant introduit-elle des préférences dans une nature indifférente, et jusqu’où ces préférences peuvent-elles justifier nos actes ?
 
 ## Introduction
@@ -23,6 +25,8 @@ L’expérience scientifique elle-même ne rencontre pas spontanément une natur
 ## II. La vie introduit des différences de valeur à même la nature
 
 Canguilhem fournit une manière de préciser les termes du paradoxe dans « Le vivant et son milieu ». Un milieu décrit par un observateur peut être un ensemble de grandeurs physiques. Pour un animal, certains éléments seulement deviennent des signaux décisifs. La tique étudiée par Uexküll, exemple que reprend Canguilhem, réagit à quelques traits qui lui permettent de rencontrer son hôte. Une multitude d’autres phénomènes dont le savant pourrait dresser la liste ne gouvernent pas sa conduite. Cette sélectivité précède toute délibération et tout jugement moral. Elle éclaire le « vouloir » du sujet : vivre, c’est déjà entretenir des rapports privilégiés avec certaines réalités. Une nature envisagée dans la totalité de ses processus n’a pas à choisir entre le mammifère et la tique. Chacun de ces vivants naturels, en revanche, a des conditions propres sous lesquelles il prospère ou dépérit.
+
+L’alternative que formule Nietzsche change ainsi d’échelle en cours de phrase. La nature dite indifférente désigne l’ensemble des événements, qui ne se règlent sur le besoin d’aucun être en particulier. Vivre désigne au contraire une activité pour laquelle certaines différences comptent immédiatement. Appeler la chaleur favorable à tel vivant ne revient donc ni à attribuer une intention au monde ni à expulser le vivant hors de la nature.
 
 Cette remarque transforme la scène de la pêche aux perles. Pour Aronnax, la plongée peut être une rencontre avec des êtres à décrire ; pour le pêcheur, l’accès à une ressource est aussi une nécessité économique. Le requin, lui, trouve là une occasion de se nourrir. Aucune liste de ces perspectives ne confère au requin une obligation de ménager le plongeur. Pourtant Nemo s’interpose et Ned Land intervient dans le combat. Les effets de l’animal sur sa proie donnaient à voir la vulnérabilité des vivants. Le secours ajoute un autre type de préférence. Nemo choisit de protéger un inconnu au risque de sa propre vie, puis lui remet des perles. La nature indifférente ne lui prescrivait rien de tel. Les organes d’un être capable d’agir, l’équipement conçu pour la plongée et la solidarité entre compagnons rendent néanmoins ce choix matériellement possible.
 

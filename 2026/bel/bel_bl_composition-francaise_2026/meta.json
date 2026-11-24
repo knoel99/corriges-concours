@@ -15,7 +15,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf#page=3",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf",
+    "sujet_sha256": "138c111ef34e439678bd31659b711f307a4ee8a68e5ccea65024a0a6f94dfe42",
+    "rapport_sha256": "138c111ef34e439678bd31659b711f307a4ee8a68e5ccea65024a0a6f94dfe42"
   },
   "figures": [
     {
@@ -78,6 +80,30 @@
       "perimetre": "Contre-lecture indépendante face au rapport : les trois enjeux de la citation sont discutés, les trois quatrains de Hugo et la double adresse d’Incendies vérifiés.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du libellé corrigé de la page 3, de l’erratum sur le nom de Mouawad et des distinctions entre émotion de l’auteur, forme et activité du lecteur."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des éditions à la formulation de Mouawad, aux exemples de Sarraute, Perec et Hugo. Précision de lecture sur le double sens de la ligne droite et l’itinéraire chez Hugo."
     }
   ]
 }
