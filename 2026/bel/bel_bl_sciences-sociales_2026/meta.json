@@ -43,7 +43,9 @@
   "sources": {
     "sujet": "https://pe-dm.pages-perso.free.fr/sujets/sujets/ses/2026.pdf",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_sciences_sociales.pdf",
-    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl"
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl",
+    "sujet_sha256": "0afe66914f6647eea47f44c16c959b7f2f2a011993cf266b67d492bce04f2f89",
+    "rapport_sha256": "527fe2a0a4af2464a6e2f22d0ea5cba710914d81c5f410039ea6855b94eab558"
   },
   "date_revision": "2026-11-24",
   "provenance": {
@@ -66,6 +68,30 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport sur les définitions, causalités, asymétries emploi-pauvreté et modalités de mobilisation des six documents."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle des deux versions sur les tableaux du dossier et les consignes. Calcul à partir des taux et des effectifs du document 2 pour distinguer risque conditionnel et composition de la population pauvre."
     }
   ]
 }

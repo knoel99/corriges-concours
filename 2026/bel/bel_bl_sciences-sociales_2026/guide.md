@@ -4,6 +4,10 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **L’emploi contre la pauvreté ?**
 
 ## Lire le dossier avant de rédiger
@@ -36,6 +40,8 @@ Le point d’interrogation porte également sur le rôle que la collectivité do
 > Calculer l’écart. Puis expliquer pourquoi comparer les deux groupes à une même date ne suffit pas pour inférer l’effet causal d’une embauche.
 
 En France métropolitaine, dans le champ de l’enquête Revenus fiscaux et sociaux de 2023 (document 2), 8,3 % des personnes en emploi vivent sous le seuil de pauvreté, contre 36,1 % des chômeurs. L’écart est de 27,8 **points de pourcentage**. Il compare deux risques au sein de deux populations distinctes. Il ne représente pas le gain qu’une personne donnée obtiendrait en signant un contrat, car les caractéristiques et les ressources familiales des deux groupes diffèrent. La comparaison établit néanmoins que le chômage s’accompagne d’une exposition beaucoup plus fréquente à la pauvreté. La situation des retraités, dont 11,1 % sont sous le seuil, précise le mécanisme. On peut avoir cessé d’occuper un emploi et conserver un revenu lié aux périodes antérieures de travail et aux droits à pension acquis.
+
+Le même tableau permet de changer de question. Combien de personnes pauvres occupent un emploi ? On en compte 2,264 millions, pour 796 000 chômeurs pauvres, soit environ 2,84 fois plus. Les personnes en emploi sont en effet beaucoup plus nombreuses dans la population. Ainsi le risque individuel mesuré est plus élevé au chômage, tandis qu’en nombre absolu la pauvreté atteint davantage de personnes en emploi. Une politique qui ne s’adresserait qu’aux chômeurs laisserait donc hors de son champ ces travailleurs pauvres.
 
 Une heure supplémentaire rémunérée modifie d’abord les ressources d’un ménage. À prix inchangés, elle peut permettre de payer un déplacement ou de chauffer une pièce. Avec un revenu stable, la famille peut aussi engager une dépense dont le bénéfice est différé. Pouvoir avancer une caution ouvre l’accès à un logement proche d’un bassin d’emploi. L’emploi protège alors en élargissant les choix futurs. Une prestation qui rend possible le même investissement peut, réciproquement, faciliter l’accès à l’emploi. Le sens de la relation entre emploi et pauvreté mérite d’être établi et non présumé.
 
