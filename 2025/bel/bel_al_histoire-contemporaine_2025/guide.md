@@ -4,9 +4,13 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
+
+Le sujet imprimé porte exactement « Les étrangers dans la vie politique ». Le rapport précise la France comme espace d’étude. Le cadrage du programme, de 1848 à 1986, fournit les bornes de cette composition.
 
 La composition commune d’histoire dure six heures. « Les étrangers dans la vie politique » est le libellé imprimé. Le programme situe l’enquête en France entre 1848 et 1986. Le rapport de la session explicite ces bornes et ajoute « en France » au titre. Pour préparer le devoir, réserver une place réelle aux décennies qui suivent la Libération. Le jury signale que beaucoup de copies ont écourté cette partie. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_histoire.pdf) · [Rapport du jury, p. 2–6](https://www.ens-lyon.fr/sites/default/files/2025-11/Histoire%202025%20OK%20Lyon%20RELU.pdf)
 
@@ -76,6 +80,10 @@ L’ordonnance de novembre 1945 établit un cadre durable pour le recrutement, l
 | 17 octobre 1961 | Des Algériens manifestant contre un couvre-feu discriminatoire sont réprimés à Paris. | Qui les administre avant l’indépendance et que change 1962 ? |
 | 1983, Marche pour l’égalité et contre le racisme | Des marcheurs de nationalités différentes dénoncent violences et discriminations. | Comment parler de l’assignation à l’étrangeté sans la reproduire ? |
 
+### Lire la pièce historique
+
+Qui parle et au nom de qui ? Comparer une circulaire ministérielle, une affiche bilingue et un recours au Conseil d’État. La première règle la conduite des services, la deuxième cherche des soutiens et le troisième donne aux intéressés une possibilité de contester juridiquement l’administration.
+
 ## Pièges à éviter
 
 > [!PIEGE]
@@ -116,6 +124,10 @@ Sous Vichy, la frontière du groupe national fait l’objet d’une politique d�
 
 En 1945, la reconstruction place à nouveau le recrutement de travailleurs étrangers parmi les priorités. L’ordonnance du 2 novembre fixe les conditions d’entrée et de séjour et crée l’Office national d’immigration. La situation d’un travailleur dépend désormais d’une politique dont les objectifs économiques ne se confondent pas avec la conquête de droits dans l’entreprise. Il peut s’organiser avec ses collègues, participer à une grève et faire reconnaître des revendications sans disposer du bulletin de vote qui lui permettrait de peser directement sur les élections nationales. Cette séparation des droits éclaire aussi les conséquences de la décolonisation. Avant 1962, les Algériens venus en métropole ne sont pas juridiquement des étrangers. La répression, à Paris le 17 octobre 1961, d’une manifestation d’Algériens contre un couvre-feu discriminatoire relève encore d’un conflit colonial. L’indépendance modifie ensuite les nationalités et les conditions de circulation. Employer d’un bout à l’autre la catégorie d’immigration étrangère ferait perdre le sens politique de cette rupture.
 
+En 1972, les circulaires Marcellin et Fontanet lient plus étroitement contrat de travail, logement et titre de séjour. Le migrant menacé de perdre ses papiers semble d’abord l’objet d’une décision administrative. À Valence en décembre, des travailleurs tunisiens menacés d’expulsion rendent publique leur contestation. Le 16 mai 1973, cinquante travailleurs immigrés et vingt-huit travailleurs français engagent à leur tour une action commune soutenue par la CFDT. Ils demandent des garanties de travail et des libertés d’expression et d’association. Une affiche de la Mutualité, conservée au Musée national de l’histoire de l’immigration, traduit en arabe les revendications des grévistes. La traduction apprend quelque chose de l’organisation du groupe et du public recherché. Trois travailleurs immigrés saisissent aussi le Conseil d’État. Une même règle devient un enjeu politique de plusieurs façons, devant un préfet, auprès des syndicats, dans un meeting et devant un juge. Les étrangers participent à la définition de la question publique même lorsqu’ils restent exclus du suffrage national. [Affiche et notice du Musée national de l’histoire de l’immigration](https://www.histoire-immigration.fr/collections/manif-mutualite-circulaires-marcellin-fontanet) · [Archives de la mobilisation à Valence](https://www.histoire-immigration.fr/en/node/7510)
+
+![Une mesure administrative suscite des mobilisations locales, des alliances syndicales et un recours en justice. Le schéma distingue les organisateurs, leurs partenaires et les autorités qu’ils interpellent.](figures/papiers-et-mobilisations-1972-1973.svg)
+
 Avec la fin de la croissance rapide, les étrangers deviennent plus visibles comme acteurs portant leurs propres revendications. Dans les foyers de la Sonacotra, la contestation des redevances et des règlements intérieurs se prolonge au cours des années 1970. Les résidents se dotent de comités, coordonnent les refus de paiement et rendent publique la façon dont ils sont logés et surveillés. Leur interlocuteur est un gestionnaire de foyers, mais le conflit atteint aussi l’État, dont dépend l’organisation du logement des travailleurs migrants. D’autres mobilisations portent directement sur les papiers. En 1980, des travailleurs turcs du quartier parisien du Sentier entament une grève de la faim. L’action rend visibles des salariés employés dans la confection que l’absence de titre expose à l’éloignement. Leur démarche appelle une décision des pouvoirs publics et trouve des soutiens au-delà des ateliers. Ces mouvements expliquent pourquoi une histoire de la seule politique gouvernementale manquerait une partie de la transformation.
 
 Les gouvernements interviennent dans un champ désormais fortement disputé. En 1974, la suspension de l’immigration de travail marque un tournant, alors même que les familles et les résidents installés continuent de faire leur vie en France. En 1981, la régularisation de nombreux travailleurs et la levée du régime d’autorisation préalable des associations étrangères modifient les conditions de l’action collective. En 1983, la Marche pour l’égalité et contre le racisme attire l’attention sur les violences racistes et les discriminations. Ses participants ont des nationalités diverses. Réduire les jeunes Français issus de l’immigration au rôle d’étrangers reproduirait précisément l’assignation qu’ils dénoncent. L’essor électoral du Front national, notamment à Dreux en 1983, rend manifeste une autre politisation de la présence immigrée. La carte de résident de dix ans créée en 1984 répond à une demande de stabilité. La loi Pasqua de septembre 1986 renforce les moyens de contrôle et d’éloignement. Assurer le séjour de personnes établies, durcir les conditions d’entrée et discuter de ceux qui devraient participer aux scrutins locaux deviennent des enjeux distincts, sur lesquels les acteurs composent des majorités différentes. À la borne finale, le droit de vote municipal des résidents étrangers demeure une revendication.
@@ -123,3 +135,6 @@ Les gouvernements interviennent dans un champ désormais fortement disputé. En 
 ### Conclusion
 
 La France de 1986 n’est pas simplement passée de l’exclusion des étrangers à leur participation. Dès 1848 et plus encore sous la Commune, des exilés pesaient sur la vie collective. Ce qui a changé est la manière de définir les intéressés, de contrôler leur présence et de rendre leur action visible. Les guerres et la reconstruction ont doté l’État d’instruments d’identification et de recrutement. Le travail, la Résistance, puis les luttes pour le logement ou le séjour ont donné aux étrangers des moyens de politiser une situation qu’ils ne pouvaient ordinairement modifier par le vote. La naturalisation, la fin de l’empire et les usages militants du mot « immigré » déplacent enfin le périmètre du groupe étudié. L’histoire de ces déplacements permet de saisir ce qui se joue dans les controverses de 1986. Elles portent ensemble sur l’autorité de l’État aux frontières et sur le pouvoir de ceux qui vivent déjà en France de prendre part aux décisions communes.
+
+
+[Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_histoire.pdf) · [Rapport de composition](https://www.ens-lyon.fr/sites/default/files/2025-11/Histoire%202025%20OK%20Lyon%20RELU.pdf)

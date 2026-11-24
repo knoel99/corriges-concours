@@ -8,5 +8,115 @@
   },
   "questions": 0,
   "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/droits-et-urnes.svg",
+      "question": "Partie I",
+      "legende": "Une date de loi ne dit ni quand le premier scrutin a lieu ni qui accède aux fonctions de gouvernement."
+    },
+    {
+      "fichier": "figures/herstal-et-defrenne.svg",
+      "question": "Partie II",
+      "legende": "La grève et le procès sont deux moyens d’agir. Le second ne découle pas juridiquement de la première."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_histoire.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_histoire.pdf",
+    "sujet_sha256": "e43fe4b0a1c75b6b1ff1aeb0005278e01cfaa0f95d84dbc3fddc35348cc01212",
+    "rapport_sha256": "89d7a661f1c9497a94c54aad0dce19e21884d0699fc2ce47727cb26c2f9c4a5e",
+    "references_de_revision": [
+      "https://igvm-iefh.belgium.be/sites/default/files/downloads/71%20-%20Biographie%20Marijke%20Van%20Hemeldonck_FR.pdf",
+      "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:61975CJ0043",
+      "https://pdf.bjt.ro/data/Colectie_de_legi_Decrete_Hotariri_si_Dispozitii_1952-1988/Colectie_de_legi_Decrete_Hotariri_si_Dispozitii_1966_septembrie-octombie_39.686.pdf",
+      "https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/keydates/"
+    ],
+    "archives_attribution": [
+      {
+        "commit": "9c60059866ef877f2278b64dd8167548a7792971",
+        "fichier": "data/generated/copies/copie_bel_bl_histoire-contemporaine_2025_opus_jury.meta.json",
+        "controle": "Clés modele et sorties de la copie. Le fichier src/bellecopie/llm/anthropic_provider.py au même commit transmet output_config.effort et consigne speed et effort dans le résultat."
+      },
+      {
+        "commit": "9c60059866ef877f2278b64dd8167548a7792971",
+        "fichier": "data/generated/corriges/corrige_bel_bl_histoire-contemporaine_2025.meta.json"
+      },
+      {
+        "commit": "d4b46c38ec102bb19c0a4ffdf9f99f000b216c72",
+        "fichier": "data/generated/corriges/corrige_bel_bl_histoire-contemporaine_2025.meta.json",
+        "champ": "relecture_2026_11_17"
+      }
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-4-8",
+      "effort": "high",
+      "vitesse": "standard",
+      "date": "2026-11-17",
+      "modifications": true,
+      "perimetre": "Copie source complète avec rapport de jury. Son jumeau lie explicitement opus, modèle, vitesse standard et effort high à une génération en une partie. Le fournisseur consigne la vitesse du chemin utilisé et l’effort transmis à l’API.",
+      "fournisseur": "opus",
+      "source_commit": "9c60059866ef877f2278b64dd8167548a7792971"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "claude-opus-4-8",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-17",
+      "modifications": true,
+      "perimetre": "Production des éditions brute et guidée et revue de la copie source, trois erreurs mineures consignées. Aucune vitesse ni aucun effort indiqués pour cette intervention.",
+      "fournisseur": "claude-code",
+      "source_commit": "9c60059866ef877f2278b64dd8167548a7792971"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-17",
+      "modifications": true,
+      "perimetre": "Contre-lecture indépendante et corrections de fond et de forme consignées dans le jumeau du corrigé sous relecture_2026_11_17.",
+      "fournisseur": "codex",
+      "source_commit": "d4b46c38ec102bb19c0a4ffdf9f99f000b216c72"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle du sujet et des treize pages du rapport, révision des deux éditions. Chronologies du vote et de son exercice, travail agricole et salarié, régimes autoritaires, législation roumaine, égalité de rémunération de Herstal à Defrenne et distinction des mobilisations judiciaires. Deux schémas et neuf questions de méthode ont été composés.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "provenance": {
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    },
+    "redaction": {
+      "provider": "opus",
+      "model": "claude-opus-4-8",
+      "effort": "high",
+      "service_tier": "standard"
+    }
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "gpt-6.2-astra",
+    "verification": "Contrôle du sujet et des treize pages du rapport, révision des deux éditions. Chronologies du vote et de son exercice, travail agricole et salarié, régimes autoritaires, législation roumaine, égalité de rémunération de Herstal à Defrenne et distinction des mobilisations judiciaires. Deux schémas et neuf questions de méthode ont été composés.",
+    "tour": 3
+  },
+  "date_revision": "2026-11-24",
+  "gabarit": "dissertation"
 }
