@@ -63,6 +63,7 @@
 | 2026 | BCE | ECG | Anglais LVB (ELVi) | [md](2026/bce/bce_ecg_anglais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_anglais-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Arabe littéral LVA (ELVi) | [md](2026/bce/bce_ecg_arabe-litteral-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_arabe-litteral-lva-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Arabe littéral LVB (ELVi) | [md](2026/bce/bce_ecg_arabe-litteral-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_arabe-litteral-lvb-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Chinois LVB (ELVi) | [md](2026/bce/bce_ecg_chinois-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_chinois-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Hébreu LVB (ELVi) | [md](2026/bce/bce_ecg_hebreu-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_hebreu-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/brut.md) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/guide.md) |
 | 2025 | BCE | ECG | Culture générale (emlyon-HEC) | [md](2025/bce/bce_ecg_culture-generale-emlyon-hec_2025/brut.md) | [md](2025/bce/bce_ecg_culture-generale-emlyon-hec_2025/guide.md) |
