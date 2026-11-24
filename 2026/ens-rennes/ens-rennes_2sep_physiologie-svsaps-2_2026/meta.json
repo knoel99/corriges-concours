@@ -1,0 +1,54 @@
+{
+  "slug": "ens-rennes_2sep_physiologie-svsaps-2_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "2SEP",
+    "matiere": "Physiologie (SVSAPS 2)",
+    "annee": 2026
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-svsaps-2-physio-2sep-2026_1791303263430-pdf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-svsaps-2-physio-2026_1792574760808-pdf",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026"
+  },
+  "figures": [
+    {
+      "fichier": "figures/fatigue-force.svg",
+      "question": "Q1",
+      "legende": "La force volontaire peut diminuer par une baisse de commande et par une moindre force produite en réponse à la stimulation."
+    },
+    {
+      "fichier": "figures/debit-et-extraction.svg",
+      "question": "Q2",
+      "legende": "Le principe de Fick relie une modification cardiaque et une modification dans les tissus à la consommation d’oxygène."
+    },
+    {
+      "fichier": "figures/ventilation-minute.svg",
+      "question": "Q3",
+      "legende": "Deux exemples illustratifs de 120 L/min si l’espace mort vaut 0,15 L par cycle. Les ventilations alvéolaires sont respectivement de 112,5 et 111 L/min."
+    },
+    {
+      "fichier": "figures/chaleur-et-evaporation.svg",
+      "question": "Q4",
+      "legende": "La vasodilatation cutanée amène la chaleur à la surface. Une partie de la sueur peut ensuite évacuer cette chaleur en s’évaporant."
+    },
+    {
+      "fichier": "figures/hormones-et-eau.svg",
+      "question": "Q4",
+      "legende": "Des pertes sudorales non compensées peuvent activer deux régulations complémentaires, l’une principalement liée à l’osmolalité, l’autre au volume circulant."
+    },
+    {
+      "fichier": "figures/entrainement-et-acclimatation.svg",
+      "question": "Q5",
+      "legende": "Les gains neuromusculaires et aérobies et l’acclimatation à la chaleur dépendent des expositions effectivement répétées."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Vérification des cinq réponses sur le cas officiel et les attendus du jury de la session. Contrôle des unités, des valeurs observées et des distinctions entre réponses aiguës, adaptations chroniques et données hypothétiques."
+  }
+}

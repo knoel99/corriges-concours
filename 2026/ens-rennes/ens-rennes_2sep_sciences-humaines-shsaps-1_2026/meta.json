@@ -1,0 +1,42 @@
+{
+  "slug": "ens-rennes_2sep_sciences-humaines-shsaps-1_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "2SEP",
+    "matiere": "Sciences humaines (SHSAPS 1)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA à partir du sujet officiel.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-1-sciences-humaines-2sep-2026_1791303304026-pdf",
+    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
+    "schmidt_1975": "https://doi.org/10.1037/h0076770",
+    "newell_1986": "https://grants.hhp.uh.edu/clayne/HistoryofMC/Newell1986.pdf",
+    "guadagnoli_lee_2004": "https://pubmed.ncbi.nlm.nih.gov/15130871/",
+    "winstein_schmidt_1990": "https://doi.org/10.1037/0278-7393.16.4.677"
+  },
+  "figures": [
+    {
+      "fichier": "figures/interpreter-un-tir.svg",
+      "question": "Partie I",
+      "legende": "La description de la trajectoire par le tireur et l’observation du partenaire aident à choisir une modification et à en comparer l’effet."
+    },
+    {
+      "fichier": "figures/adapter-la-tache.svg",
+      "question": "Partie II",
+      "legende": "Trois réponses pédagogiques possibles selon ce qu’un groupe d’essais permet d’observer."
+    },
+    {
+      "fichier": "figures/retention-transfert.svg",
+      "question": "Partie III",
+      "legende": "Une épreuve proche de la tâche initiale et une épreuve nouvelle répondent à deux questions différentes sur l’acquisition."
+    }
+  ]
+}

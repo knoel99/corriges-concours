@@ -1,0 +1,89 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 57,
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_chimie.pdf",
+    "thermochimie": "https://webbook.nist.gov/chemistry/",
+    "article": "https://doi.org/10.1021/jacs.9b05818"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q09-circulation-pemfc.svg",
+      "question": "Q9",
+      "legende": "Dans la pile PEMFC, les électrons gagnent la cathode par la charge et les protons traversent la membrane."
+    },
+    {
+      "fichier": "figures/q13-polarisation-electrodes.svg",
+      "question": "Q13",
+      "legende": "Allure des branches actives. Les points à +1 et −1 A/cm² sont imposés par les surtensions données, à pH 1."
+    },
+    {
+      "fichier": "figures/q16-temperature-reformage.svg",
+      "question": "Q16",
+      "legende": "Prédictions avec les capacités calorifiques constantes du sujet et les entropies standards complémentaires à 298 K."
+    },
+    {
+      "fichier": "figures/tife-courbes-de-refroidissement.svg",
+      "question": "Q20",
+      "legende": "Courbes qualitatives pour les trois fractions molaires de fer. Les durées sont schématiques."
+    },
+    {
+      "fichier": "figures/tife-maille-cubique-b2.svg",
+      "question": "Q21",
+      "legende": "Deux réseaux cubiques simples imbriqués, avec un Ti et un Fe par maille."
+    },
+    {
+      "fichier": "figures/tife-sites-octaedriques.svg",
+      "question": "Q25",
+      "legende": "Les cercles bleus marquent les sites, avec le nombre effectif par famille dans une maille."
+    },
+    {
+      "fichier": "figures/rhodium-cycle-de-wilkinson.svg",
+      "question": "Q32",
+      "legende": "Quatre espèces dessinées dans le cycle, avec leurs comptages électroniques."
+    },
+    {
+      "fichier": "figures/q34-dedoublement-cinetique.svg",
+      "question": "Q34",
+      "legende": "L’acétylation sélective convertit une partie du racémique en ester, que l’on sépare de l’alcool restant."
+    },
+    {
+      "fichier": "figures/q42-lecture-michaelis.svg",
+      "question": "Q42",
+      "legende": "À la moitié de la vitesse maximale, la concentration en substrat est égale à la constante de Michaelis."
+    },
+    {
+      "fichier": "figures/q49-regiochemie-cycloaddition.svg",
+      "question": "Q49",
+      "legende": "Les numéros sont ceux du tableau 3 de l’énoncé. Les liaisons D1–A4 et D4–A3 referment le cycle dont D2=D3 est la double liaison interne."
+    },
+    {
+      "fichier": "figures/q52-addition-vinyllithium.svg",
+      "question": "Q52",
+      "legende": "La formation de 6 réunit une addition au formyle et la protection de l’alcoolate en éther méthoxyméthylique."
+    },
+    {
+      "fichier": "figures/q53-elimination-alcool.svg",
+      "question": "Q53",
+      "legende": "Vue locale du squelette de 7. La double liaison de 8 occupe l’arête qui joignait le carbone porteur de OH à son voisin portant le H dessiné."
+    },
+    {
+      "fichier": "figures/q54-carbones-stereogenes.svg",
+      "question": "Q54",
+      "legende": "Les huit pastilles repèrent les centres stéréogènes de 9. Les numéros constituent des repères propres à ce dessin de connectivité."
+    },
+    {
+      "fichier": "figures/q57-ouverture-lactone.svg",
+      "question": "Q57",
+      "legende": "Le réactif de Collins oxyde les trois alcools. Le produit 12 comporte un aldéhyde, une cétone cyclique et une seconde cétone conjuguée."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
