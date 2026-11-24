@@ -38,6 +38,51 @@
       "fichier": "figures/q52-moment-magnetique-spire.svg",
       "question": "Q52",
       "legende": "Spire du rotor vue comme la figure 5 (z vers le bas) : m⃗ pointe vers le haut à droite, à θ de e⃗x, d'où m⃗ = Ir πa² (cos θ e⃗x − sin θ e⃗z)"
+    },
+    {
+      "fichier": "figures/q1-lewis.svg",
+      "question": "Q1",
+      "legende": "Schémas de Lewis du dioxyde de carbone, du méthane et d’une forme mésomère du protoxyde d’azote. Les traits isolés représentent les doublets non liants."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI2PC.pdf",
+    "page_officielle": "https://www.concours-commun-inp.fr/fr/epreuves/annales/annales-tsi.html",
+    "sujet_sha256": "12def540b7f1b21e4a6bb9c8f3cad2e3852f9e748f0a04b267dae55d9af7f789"
+  },
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction initiale, modèle inscrit dans le champ redaction de la fiche publique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Révision antérieure signalée dans la mention de rédaction de la fiche. Modèle et périmètre précis non renseignés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 69 questions des deux éditions avec le sujet écrit 2026, ses tableaux et ses figures. Reprise du synchronisme et du signe de la puissance, des bornes stœchiométriques de la batterie, des comparaisons climatiques et du rôle des hypothèses. Les annales officielles TSI ne proposent aucun lien vers un rapport de cet écrit au 24 novembre 2026."
     }
   ]
 }

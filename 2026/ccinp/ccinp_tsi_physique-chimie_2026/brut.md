@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 heures, calculatrice interdite. « Changement climatique et influence humaine » : trois parties indépendantes, 69 questions.
 
 **Incohérences d'énoncé signalées** (consigne liminaire) :
@@ -33,6 +39,8 @@ $$\begin{aligned}
 
   Dans les deux schémas, l'azote central fait 4 liaisons sans doublet non liant : il porte la charge formelle $+1$ (4 électrons attribués pour 5 de valence). La charge $-1$ est portée soit par l'oxygène (une liaison et trois doublets, 7 électrons pour 6), soit par l'azote terminal (deux liaisons et deux doublets, 6 électrons pour 5).
 
+![Schémas de Lewis du dioxyde de carbone, du méthane et d’une forme mésomère du protoxyde d’azote. Les traits isolés représentent les doublets non liants.](figures/q1-lewis.svg)
+
 ### Q2
 
 On reproduit la figure 1 (échelle des pressions logarithmique) et on la complète :
@@ -51,7 +59,7 @@ Sur l'isobare $P_{\text{atm}}=1$ bar, on place le **point de fusion** $F$ sur la
 
 ### Q3
 
-Dans un mélange, l'état physique d'une espèce dépend de sa **pression partielle** $p_i=x_iP$, pas de la pression totale. CO₂, CH₄ et N₂O sont minoritaires : $x_{\text{CO}_2}\approx4\cdot10^{-4}$, et quelques ppm pour les deux autres. Comme $P\le P_{\text{atm}}=1$ bar, on a $p_i\lesssim10^{-3}$ bar.
+Dans un mélange, l'état physique d'une espèce dépend de sa **pression partielle** $p_i=x_iP$, pas de la pression totale. CO₂, CH₄ et N₂O sont minoritaires : $x_{\text{CO}_2}\approx4\cdot10^{-4}$, et des fractions molaires encore plus faibles pour les deux autres. Comme $P\le P_{\text{atm}}=1$ bar, on a $p_i\lesssim10^{-3}$ bar.
 
 Sur la figure 2, dans la plage atmosphérique $[T_{\min},T_{\max}]=[188\ \text{K},288\ \text{K}]$, les courbes de coexistence sont croissantes. Leurs valeurs minimales, atteintes à 188 K, sont environ 0,6 bar pour CO₂ (sublimation), 1 bar pour N₂O et 10 bar pour CH₄.
 
@@ -87,7 +95,7 @@ C'est la valeur annoncée.
 
 À 298 K sous 1 bar, le point représentatif est entre $F$ (273 K) et $V$ (373 K) sur la figure 1 : l'eau pure est **liquide**.
 
-Dans l'air, l'eau n'est pas seule : c'est sa pression partielle qui compte, pas la pression totale. Tant que $p_{\text{eau}}<p_{\text{sat}}(T)=0{,}04$ bar, la phase vapeur est stable et l'eau liquide s'évapore. L'évaporation s'arrête quand $p_{\text{eau}}=p_{\text{sat}}$ (air saturé). Il y a donc toujours de la vapeur d'eau dans l'air, jusqu'à 4 % en fraction molaire à 25 °C.
+Dans l'air, l'eau n'est pas seule : c'est sa pression partielle qui compte, pas la pression totale. Tant que $p_{\text{eau}}<p_{\text{sat}}(T)=0{,}04$ bar, la phase vapeur est stable et l'eau liquide s'évapore. L’évaporation nette cesse quand $p_{\text{eau}}=p_{\text{sat}}$ (air saturé). En présence d’eau liquide, l’air peut ainsi contenir de la vapeur jusqu’à environ 4 % en fraction molaire à 25 °C et 1 bar, avec les données arrondies du sujet.
 
 ### I.2 — Enjeux radiatifs du changement climatique
 
@@ -181,7 +189,7 @@ Avec $\sigma=5{,}67\cdot10^{-8}$ W·m⁻²·K⁻⁴, on retrouve $T_S\approx2{,}
 
 ### Q17
 
-$T_S=257$ K, soit $-16\ ^\circ$C. La température moyenne observée au sol est d'environ 288 K (15 °C, valeur de $T_{\max}$). L'atmosphère **réchauffe la surface d'environ 30 K** : c'est l'effet de serre naturel, qui rend la Terre habitable. Les gaz à effet de serre absorbent une partie du rayonnement infrarouge terrestre et en renvoient une partie vers le sol.
+$T_S=257$ K, soit $-16\ ^\circ$C. La moyenne observée à la surface de la Terre est de l’ordre de 288 K. Le sujet emploie aussi 288 K comme maximum du profil atmosphérique simplifié. L'atmosphère **réchauffe la surface d'environ 30 K** : c'est l'effet de serre naturel, qui rend la Terre habitable. Les gaz à effet de serre absorbent une partie du rayonnement infrarouge terrestre et en renvoient une partie vers le sol.
 
 ### Q18
 
@@ -195,7 +203,7 @@ En pointillés, la figure 4 montre le spectre d'émission de la surface sans atm
 - vers 5,5–7,5 µm : bande de H₂O (6,2 µm), puis bandes de CH₄ et de N₂O vers 7,7 µm ;
 - creux profond entre 13 et 17 µm : large bande de CO₂ centrée sur 15 µm, renforcée par l'absorption continue de H₂O et par la raie de N₂O à 16,8 µm.
 
-Entre 8 et 13 µm, les deux spectres coïncident : aucun gaz n'y absorbe fortement (H₂O seulement faiblement). C'est la **fenêtre atmosphérique**, par laquelle le rayonnement terrestre s'échappe directement vers l'espace.
+Entre environ 8 et 13 µm, particulièrement au voisinage de 10 µm, les deux courbes se rapprochent. Les gaz représentés laissent passer une fraction plus grande du rayonnement. C'est la **fenêtre atmosphérique**, par laquelle le rayonnement terrestre s'échappe directement vers l'espace.
 
 La puissance qui manque au sommet a été absorbée par l'atmosphère, qui la réémet dans toutes les directions, donc en partie vers le sol : c'est l'effet de serre.
 
@@ -251,7 +259,7 @@ $40\ \text{km}=5H$, donc
 $$\frac{n_v(40\ \text{km})}{n_v(0)}=e^{-5}\approx7\cdot10^{-3}$$
 La fraction de la colonne d'air située au-dessus de 40 km vaut
 $$\frac{\int_{5H}^\infty e^{-z/H}\,\mathrm dz}{\int_0^\infty e^{-z/H}\,\mathrm dz}=e^{-5}<1\ \%$$
-**Plus de 99 % des molécules absorbantes sont sous 40 km** : les tranches supérieures ne changent pas le résultat, et les calculer ne ferait qu'alourdir le programme.
+Dans le modèle isotherme à composition uniforme, plus de 99 % de la colonne d’air se trouve sous cette limite. Négliger le reste est une approximation dont la précision radiative dépend aussi de l’absorption à chaque longueur d’onde.
 
 ### Q25
 
@@ -289,7 +297,7 @@ La modélisation est **satisfaisante pour la grandeur visée**, mais ses hypoth�
 
 Les transferts thermiques n'ont lieu que pendant les deux isochores :
 
-- **source chaude** : la combustion du mélange (étape $2\to3$), qui fournit $Q_c$. Sa température est au moins égale à la température maximale du cycle, $T_c=T_3=1800$ K ;
+- **source chaude** : la combustion du mélange (étape $2\to3$), qui fournit $Q_c$. Pour la comparaison de Carnot, on prend $T_c=T_3=1800$ K, température maximale du gaz ;
 - **source froide** : l'atmosphère ambiante, qui reçoit la chaleur à l'ouverture de la soupape (étape $4\to1$), à $T_f=T_1=300$ K.
 
 ### Q29
@@ -413,7 +421,7 @@ Pour quatre points sur cinq, l'incertitude relative sur $v_0^3$ est 2 à 13 fois
 
 **Remarque sur l'énoncé.** Avec $v_0$ en m·s⁻¹, $\kappa=0{,}0103$ donnerait à 50 km·h⁻¹
 $$\mathcal P\approx0{,}0103\times13{,}9^3\ \text{W}\approx28\ \text{W}$$
-au lieu des 1300 W mesurés. La valeur a donc été obtenue avec $v_0$ en km·h⁻¹ ; une régression refaite sur le tableau 2 donne bien une pente de 0,0103 W·(km·h⁻¹)⁻³.
+au lieu des 1300 W mesurés. La valeur a donc été obtenue avec $v_0$ en km·h⁻¹ ; une régression affine non pondérée du tableau 2 donne, à l’arrondi, une pente de 0,0103 W·(km·h⁻¹)⁻³.
 
 En SI, $\kappa=3{,}6^3\times0{,}0103\approx0{,}48$ kg·m⁻¹, avec $u(\kappa)\approx0{,}02$ kg·m⁻¹.
 
@@ -464,7 +472,7 @@ m_{\text{oct}}&=10^{-2}\ \text{m}^3\times700\ \text{kg·m}^{-3}=7{,}0\ \text{kg}
 n_{\text{oct}}&=\frac{7000}{114}\ \text{mol}\approx61\ \text{mol}\\
 m_{\text{CO}_2}&=8\times61\times44\ \text{g}\approx22\ \text{kg pour 100 km}
 \end{aligned}$$
-On obtient environ 21 kg si l'on ne compte que 95 % d'octane.
+Le calcul assimile tout le carburant à l’octane. Le nombre 95 du SP95 est un indice d’octane caractérisant la résistance au cliquetis. Il ne fixe pas un pourcentage d’octane dans le carburant commercial.
 
 **Commentaire.** Sur 12 000 km par an, soit 120 fois 100 km, la chaîne idéale donne environ $0{,}5$ t de CO₂ par an. C'est déjà 22 % de l'objectif de 2,3 t par habitant, toutes activités confondues. Avec la consommation annoncée, on obtient environ $2{,}6$ t par an, **plus que l'objectif à elle seule**. L'écart d'un facteur 5 vient du modèle : rendement idéal de 0,59 (contre environ 0,3 pour un moteur réel), traînée seule à vitesse constante, aucune accélération ni aucun accessoire. Dans tous les cas, la voiture thermique est difficilement compatible avec l'objectif.
 
@@ -517,7 +525,7 @@ La spire, d'aire $\pi a^2$, contient l'axe $(Oy)$ : sa normale est dans le plan 
 
 Sur la vue de droite de la figure 5, $\vec e_z$ pointe vers le bas et $\vec e_y$ sort du plan. Le courant sort en haut à gauche et entre en bas à droite. La règle de la main droite donne une normale dirigée vers le haut à droite, celle que repère $\theta$ à partir de $\vec e_x$ :
 $$\boxed{\vec m=I_r\pi a^2\left(\cos\theta\,\vec e_x-\sin\theta\,\vec e_z\right)}$$
-(L'expression (11) de l'énoncé correspond à $\vec m=I_r\pi a^2(\cos\theta\,\vec e_x+\sin\theta\,\vec e_z)$, voir Q56.)
+Le signe de la puissance moyenne sera comparé à la relation (11) en Q56.
 
 ![Figure 6 — Spire du rotor vue comme la figure 5 (z vers le bas) : m⃗ pointe vers le haut à droite, à θ de e⃗x, d'où m⃗ = Ir πa² (cos θ e⃗x − sin θ e⃗z)](figures/q52-moment-magnetique-spire.svg)
 
@@ -538,9 +546,9 @@ $$\boxed{\vec\Gamma(t)=\mu_0nI_sI_r\pi a^2\cos(\omega t)\sin(\omega_st+\theta_0)
 
 D'après le formulaire,
 $$\cos(\omega t)\sin(\omega_st+\theta_0)=\frac12\left[\sin\left((\omega+\omega_s)t+\theta_0\right)-\sin\left((\omega-\omega_s)t-\theta_0\right)\right].$$
-Si $\omega\neq\omega_s$, les deux termes sont des sinusoïdes de pulsations non nulles, donc de moyenne nulle : $\boxed{\langle\vec\Gamma\rangle=\vec0}$.
+Pour le sens de marche étudié, $\omega>0$ et $\omega_s>0$. Si $\omega_s\ne\omega$, les deux pulsations sont non nulles et leur moyenne à long terme vaut zéro. Ainsi $\langle\vec\Gamma\rangle=\vec0$. Si l’on autorise une vitesse algébrique dans l’autre sens, le champ alternatif de ce modèle à une bobine permet aussi un terme constant pour $\omega_s=-\omega$.
 
-Un couple moyen non nul, seul capable d'entretenir la rotation, n'existe que si le rotor tourne exactement à la pulsation du courant statorique. Le rotor tourne donc **en synchronisme** avec le champ du stator, d'où le nom de moteur **synchrone**. Un tel moteur ne démarre pas seul.
+Pour la rotation dans le sens choisi, un couple moyen peut donc subsister au synchronisme. Sa valeur dépend alors de la phase initiale.
 
 ### Q56
 
@@ -553,18 +561,15 @@ $$\begin{aligned}
 Le terme en $2\omega_s$ est de moyenne nulle. On obtient
 $$\langle\mathcal P_L\rangle=+\frac{I_sI_r\pi a^2\mu_0n\omega_s\sin\theta_0}2$$
 
-**Incohérence d'énoncé** : ce résultat est l'opposé de (11). L'expression (11) s'obtient exactement par le même calcul avec
-$$\vec m=I_r\pi a^2(\cos\theta\,\vec e_x+\sin\theta\,\vec e_z)$$
-c'est-à-dire avec $\theta$ compté de $\vec e_x$ vers $+\vec e_z$. On a alors
-$$\vec\Gamma=-\mu_0nI_sI_r\pi a^2\cos(\omega t)\sin\theta\,\vec e_y$$
-On retient l'expression de l'énoncé pour la suite :
-$$\boxed{\langle\mathcal P_L\rangle=-\frac{I_sI_r\pi a^2\mu_0n\omega_s\sin\theta_0}2}$$
+**Comparaison avec (11).** La figure 5 et la relation (9) donnent le signe positif ci-dessus. Pour obtenir le signe imprimé dans (11), on pourrait inverser le courant du rotor à géométrie inchangée, ou ajouter $\pi$ à la phase initiale. Inverser seulement le sens de mesure de l’angle inverse aussi le sens de $\vec\Omega$ associé à $\dot\theta$ et ne suffit pas à modifier le signe physique de la puissance.
+
+Pour poursuivre avec la formule imprimée, on adopte en Q57 $\langle\mathcal P_L\rangle=-I_s I_r\pi a^2\mu_0 n\omega_s\sin\theta_0/2$.
 
 ### Q57
 
 Le système est un moteur si les actions de Laplace fournissent en moyenne de la puissance au rotor, $\langle\mathcal P_L\rangle>0$. Avec (11), c'est le cas si et seulement si
 $$\boxed{\sin\theta_0<0,\ \text{soit}\ \theta_0\in\left]-\pi,0\right[\ (\text{modulo }2\pi)}$$
-Sinon, $\langle\mathcal P_L\rangle<0$ : le rotor doit être entraîné de l'extérieur, et la machine convertit de l'énergie mécanique en énergie électrique. C'est le **régime générateur** (fonctionnement en alternateur).
+Pour $\sin\theta_0>0$, la puissance mécanique moyenne est négative dans cette convention. La machine reçoit du travail et fonctionne en **génératrice**. Pour $\sin\theta_0=0$, il n’y a aucun transfert mécanique moyen. Avec le signe déduit de la figure, les deux intervalles de fonctionnement s’échangent.
 
 ### Q58
 
@@ -593,7 +598,7 @@ Le milieu poreux **sépare les deux électrodes** : il est isolant électronique
 
 L'anode est le siège de l'oxydation, la cathode celui de la réduction. En décharge :
 
-- au graphite lithié, $\text{LiC}_6\to\text{Li}^++\text{C}_6+e^-$ est une perte d'électrons (Li passe de 0 à +I), donc une oxydation : c'est l'**anode** (pôle $-$) ;
+- au graphite lithié, $\text{LiC}_6\to\text{Li}^++\text{C}_6+e^-$ libère un électron lors de la désinsertion d’un ion lithium du graphite, donc une oxydation : c'est l'**anode** (pôle $-$) ;
 - à l'oxyde de cobalt, $\text{Li}^++e^-+\text{CoO}_2\to\text{LiCoO}_2$ est un gain d'électrons (Co passe de +IV à +III), donc une réduction : c'est la **cathode** (pôle $+$).
 
 Les noms sont attribués pour le fonctionnement en pile (décharge). En charge, les rôles s'inversent, mais on garde ces noms par convention.
@@ -628,22 +633,15 @@ $$\begin{aligned}
 I_{\text{bat}}&=\frac{\mathcal P}{U_{\text{bat}}}=\frac{2{,}0\cdot10^4}{400}\ \text{A}\\
 &=\boxed{50\ \text{A}}
 \end{aligned}$$
-Chaque lithium transféré fait circuler un électron. Une cellule contient $n(\text{Li})=42/7{,}0=6{,}0$ mol de lithium, soit une charge $Q=n\mathcal F=6{,}0\cdot10^5$ C.
+La réaction de Q62 transfère un électron par unité de $\mathrm{LiC_6}$ et par unité de $\mathrm{CoO_2}$. Pour un avancement accessible $\xi$ dans chaque cellule, $Q=\mathcal F\xi$ et $\Delta t=Q/I_{\mathrm{bat}}$. En série, le même courant traverse les 100 cellules.
 
-Les cellules sont en série et sont traversées par le même courant, donc $Q$ est la charge débitée par la batterie :
-$$\begin{aligned}
-\Delta t&=\frac{Q}{I_{\text{bat}}}=\frac{6{,}0\cdot10^5}{50}\ \text{s}\\
-&=\boxed{1{,}2\cdot10^4\ \text{s}\approx3\ \text{h}\ 20\ \text{min}}
-\end{aligned}$$
-L'énergie correspondante vaut $U_{\text{bat}}Q\approx67$ kWh, ce qui est plausible.
+**Hypothèse de mobilisation des 42 g de lithium.** Les 6,0 mol de lithium par cellule donneraient $Q=6{,}0\cdot10^5$ C et $\Delta t=1{,}2\cdot10^4$ s, soit **3 h 20 min**. C’est une estimation fondée sur le seul inventaire de lithium.
 
-*Remarque* : on suit l'énoncé en prenant le lithium comme réserve de charge. Strictement, les masses de carbone (environ 3,5 mol de sites LiC₆) et de cobalt (environ 0,95 mol de CoO₂) du document 3 ne permettraient pas d'insérer tout ce lithium.
+**Vérification des matériaux hôtes.** Les 251 g de carbone offrent au plus $251/(6\times12)=3{,}49$ mol de sites dans le graphite. Avec la masse molaire tabulée du cobalt, $M_{\mathrm{Co}}\simeq59$ g·mol⁻¹, les 56 g de cobalt offrent au plus $56/59\simeq0{,}95$ mol de sites dans l’oxyde. Si les hôtes ont les compositions du document 4, le cobalt limite donc $\xi$ à 0,95 mol. Même en exploitant tous ces sites, la cellule ne débite qu’environ $9{,}5\cdot10^4$ C, soit **32 min** à 50 A. Le document ne précise ni l’état de charge initial ni la fraction effectivement cyclable. Les deux estimations reposent ainsi sur des hypothèses différentes.
 
 ### Q66
 
-Une décharge permet de parcourir $d=v_0\Delta t=100\times3{,}33\approx3{,}3\cdot10^2$ km. Sur 1000 cycles :
-$$\boxed{D=1000\,d\approx3{,}3\cdot10^5\ \text{km}}$$
-À 12 000 km par an, cela représente une trentaine d'années.
+À 100 km·h⁻¹ et pour 1 000 cycles complets identiques, on a $D=1000\,v_0\Delta t$. Avec l’hypothèse des six moles de lithium cyclables, on obtient environ 333 km par charge et **$3{,}3\cdot10^5$ km** en tout. En respectant aussi la stœchiométrie des matériaux hôtes du tableau 4, le plafond devient environ 53 km par charge et **$5{,}3\cdot10^4$ km** sur 1 000 cycles.
 
 ### Q67
 
@@ -656,13 +654,13 @@ Les droites se coupent en $D_p\approx(5{,}0-3{,}8)/(0{,}12-0{,}012)\approx11$, e
 $$\boxed{D_p^*\approx1\cdot10^4\ \text{km}}$$
 Au-delà, la Zoé a émis moins que la Clio. Cela correspond à environ une année d'usage.
 
-**Conclusion.** Pour la voiture électrique, la **production domine** : environ 5 t, dont 2 t pour la batterie, soit plus que la Clio. En revanche, l'**usage** émet environ 10 fois moins par kilomètre, ce qui est cohérent avec Q59. Pour la Clio, c'est l'usage qui domine. Sur la durée de vie de la batterie (plus de $3\cdot10^5$ km), la voiture électrique est donc nettement plus sobre en carbone, à condition de rouler suffisamment pour amortir la dette carbone de sa fabrication.
+Sur les 200 000 km représentés, la Zoé passe d’environ 5 à 7,5 t. Sa fabrication, dont 2 t pour la batterie, représente ainsi encore près des deux tiers du total. Sur la Clio, la majeure partie des quelque 27,5 t cumulées à cette distance vient de l’usage. La lecture de la figure est indépendante des hypothèses de capacité de Q65.
 
 ### Q68
 
 Le Cybertruck part d'environ 22,5 t, soit 4,5 fois la Zoé, pour une pente d'usage comparable. Il ne passe sous la Clio que vers $D_p\approx(22{,}5-3{,}8)/(0{,}12-0{,}0125)\approx1{,}8\cdot10^5$ km, soit environ 15 ans d'usage moyen. Jusque-là, il émet davantage qu'une citadine thermique. Sa seule fabrication représente environ 10 ans du budget de 2,3 t d'un habitant.
 
-**Développer des SUV électriques n'est donc pas une réponse pertinente** aux enjeux climatiques. L'électrification ne profite au climat que si l'empreinte de fabrication reste faible, c'est-à-dire avec des véhicules légers et des batteries de taille modérée. La sobriété (masse, autonomie, kilomètres parcourus) reste le premier levier.
+Dans le scénario du graphique, le SUV atteint environ 25 t à 200 000 km, contre 27,5 t pour la Clio et 7,5 t pour la Zoé. Son intérêt climatique dépend du véhicule qu’il remplace et du kilométrage réellement parcouru. Pour l’usage représenté, une citadine électrique fournit un avantage plus précoce avec une empreinte de fabrication bien moindre.
 
 ### III.3 — Des batteries au lithium
 
