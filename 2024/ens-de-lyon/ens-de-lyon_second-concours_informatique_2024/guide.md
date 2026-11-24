@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 Les deux premières parties cherchent des chemins de poids minimal dans un graphe orienté, d’abord avec des poids positifs puis en autorisant des arcs de poids négatif. La dernière partie étudie un modèle d’éboulement de grains sur un graphe.
@@ -181,6 +183,34 @@ Si un cycle négatif est accessible depuis $s$, des tours supplémentaires sur c
 Pour le contrat « détecter un cycle absorbant **partout** », commencer par une passe de détection globale de Bellman–Ford. Initialiser $B[v]=0$ pour **tout** sommet, ce qui équivaut à ajouter une super-source de poids d'accès nul. Effectuer $n-1$ balayages des arcs, puis tester si un arc est encore améliorant. Si oui, répondre « cycle absorbant ». En l'absence de cycle négatif, tout meilleur chemin depuis un point de départ libre peut être simplifié en au plus $n-1$ arcs du graphe initial, donc le test ne signale rien. En présence d'un cycle négatif, aucun potentiel fini ne peut respecter toutes ses inégalités, donc le test réussit.
 
 Si aucun cycle n'est signalé, réinitialiser les distances à $+\infty$ sauf $D[s]=0$, puis appliquer la question 12 pour renvoyer les distances demandées depuis $s$. Les deux phases restent en $O(n+nm)$. Si le graphe entier est accessible depuis $s$, le simple test d'un arc encore améliorant après les passes depuis $s$ suffit.
+
+Voici une implémentation pour des sommets numérotés de $0$ à $n-1$. La liste `arcs` contient les triplets (origine, destination, poids). Une passe sans amélioration permet de s’arrêter plus tôt.
+
+```python
+def distances_ou_cycle(n, arcs, s):
+    def balayer(d):
+        for _ in range(n - 1):
+            change = False
+            for u, v, poids in arcs:
+                candidat = d[u] + poids
+                if candidat < d[v]:
+                    d[v] = candidat
+                    change = True
+            if not change:
+                break
+
+    potentiel = [0] * n
+    balayer(potentiel)
+    if any(potentiel[u] + p < potentiel[v] for u, v, p in arcs):
+        return "cycle absorbant"
+
+    distances = [float("inf")] * n
+    distances[s] = 0
+    balayer(distances)
+    return distances
+```
+
+Par exemple, si $s$ est isolé et que les deux autres sommets forment un circuit de poids total $-1$, la première phase signale le cycle. Si ce poids total vaut zéro, la seconde phase renvoie $0$ pour $s$ et $+\infty$ pour ses deux destinations inaccessibles.
 
 ![Figure 4 — Les arcs verts de poids nul relient q à tous les sommets. Le cycle x–y échappe à une recherche lancée depuis s seulement.](figures/q13-super-source.svg)
 
