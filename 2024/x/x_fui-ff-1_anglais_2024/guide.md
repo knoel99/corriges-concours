@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 360 à 440 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20D'ANGLAIS.pdf)
@@ -26,7 +28,7 @@ A shared programme protects access to basic learning, helps pupils continue afte
 > [!INDICATION]
 > Distinguer l’examen de sa propre pensée des capacités transversales. Quel usage commercial l’auteur critique-t-il ?
 
-Metacognition involves examining how one reaches a judgement, including the habits or assumptions that might distort it. Broader abilities such as curiosity, collaboration and readiness to try an unfamiliar approach can help someone learn across different settings. Monbiot presents these transferable capacities as valuable beyond a particular job; he questions attempts to value empathy chiefly through its commercial usefulness. (Monbiot, lines 60–75).
+Metacognition involves examining how one reaches a judgement, including the habits or assumptions that might distort it. Making this habit explicit could help a pupil notice susceptibility to misleading information. Broader abilities such as curiosity, collaboration and readiness to try an unfamiliar approach can help someone learn across different settings. Monbiot presents these transferable capacities as valuable beyond a particular job; he objects when a Scottish skills agency presents corporate performance as the reason for valuing empathy. (Monbiot, lines 60–75).
 
 ### 3. How testing can narrow learning
 
@@ -40,9 +42,11 @@ High-stakes assessments reward children for mastering narrow routines at an age 
 > [!INDICATION]
 > Expliquer pourquoi des interactions peuvent produire une évolution qui surprend. Relier réponse éducative et risques évoqués.
 
-Many urgent problems involve interacting parts whose combined behaviour cannot be predicted by studying each separately. A food supply network or an ecosystem can cross a threshold and change abruptly. Monbiot believes pupils need tools for recognising such risks across disciplines, especially when familiar institutions may themselves be weakened by environmental pressures that pupils will face as adults. (Monbiot, lines 48–59).
+Many urgent problems involve interacting parts whose combined behaviour cannot be predicted by studying each separately. A car engine may contain many components whose functions can be traced separately. Food supply networks and ecosystems can instead cross a threshold and change abruptly. Monbiot believes pupils need tools for recognising such risks across disciplines, especially when familiar institutions may themselves be weakened by environmental pressures that pupils will face as adults. (Monbiot, lines 48–59).
 
 ![Reasoning across school subjects](figures/systems.svg)
+
+Pour la quatrième réponse, l’exemple du moteur sert de comparaison. Le danger que Monbiot veut faire comprendre vient d’un seuil qui peut transformer le fonctionnement d’un système entier. Pour l’essai, l’exemple personnel doit ensuite éprouver la place à accorder à l’examen de ses propres raisonnements.
 
 ## Essay
 
@@ -65,4 +69,4 @@ This is where I hesitate to give self-awareness first place among school subject
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 59, 59, 57 et 58 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 59, 77, 57 et 70 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

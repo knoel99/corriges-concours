@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Age, assets and class
@@ -18,11 +20,13 @@ The expression describes moving assets to relatives during the giver’s lifetim
 
 ### 3. Financial effects of the pandemic
 
-Older residents accounted for much of the unusually high mortality during the pandemic. Some younger relatives consequently received property or savings much earlier than anticipated, and the Treasury collected more inheritance tax. Hunt stresses that bereavement came first and that the financial effect was uneven: people whose relatives had few assets did not receive comparable help. (Hunt, lines 17–34 and 40–45).
+Older residents accounted for much of the unusually high mortality during the pandemic. Some younger relatives consequently received property or savings much earlier than anticipated, and inheritance-tax receipts rose. The Treasury reported £7.1 billion for its latest tax year, following £6.1 billion a year earlier. Hunt stresses that bereavement came first and that the financial effect was uneven: people whose relatives had few assets did not receive comparable help. (Hunt, lines 17–34 and 40–45).
 
 ### 4. Why home ownership became harder
 
-Scarce housing and high prices have kept many younger adults in rented accommodation for longer than earlier cohorts. Among people aged twenty-five to thirty-four, the proportion owning their home was appreciably smaller in 2017 than two decades previously. Many urban tenants therefore approach middle age without expecting that purchase will soon become possible, although their individual circumstances vary. (Hunt, lines 1–15).
+Scarce housing and high prices have kept many younger adults in rented accommodation for longer than earlier cohorts. For adults between twenty-five and thirty-four, ownership fell from fifty-five per cent in 1997 to thirty-five per cent by 2017. Many urban tenants therefore approach middle age without expecting that purchase will soon become possible, although their individual circumstances vary. (Hunt, lines 1–15).
+
+![When family assets reach another generation](figures/estate-transfers.svg)
 
 ## Essay
 

@@ -49,10 +49,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -76,6 +75,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante de la compréhension, des lignes citées et de l’essai face aux originaux de Monbiot ou Hunt. Longueurs et reformulation contrôlées.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé sur George Monbiot ; métacognition et aptitudes transversales, illustration de l’argument sur l’empathie, distinction entre machine compliquée et système complexe, contrôle de l’essai.",
       "fournisseur": "codex"
     }
   ]
