@@ -1,0 +1,111 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2026,
+    "modalite": "pratique"
+  },
+  "intitule": "Campagne de sensibilisation sur les affections post-Covid",
+  "questions": 0,
+  "planches_a3": 7,
+  "cartes_numeriques": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_sujet_1A_design_graphique.pdf",
+    "sujet_sha256": "c6048de2189c3a2179e9ac743f8f8efff2d88ffbcbbeaaabd7e24b7f15bd1e6d",
+    "references": [
+      "https://www.metmuseum.org/art/collection/search/334197",
+      "https://collections.reading.ac.uk/art-collections/collections/arntz-gerd/",
+      "https://www.has-sante.fr/jcms/p_3507843/fr/parcours-de-soins-de-l-adulte-avec-des-symptomes-prolonges-de-la-covid-19",
+      "https://www.apresj20.fr/",
+      "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/affiche-pauses.svg",
+      "question": "Affichage",
+      "legende": "Affiche A3 · Pauses"
+    },
+    {
+      "fichier": "figures/carte-pauses.svg",
+      "question": "Numérique",
+      "legende": "Carte du carrousel · Pauses"
+    },
+    {
+      "fichier": "figures/affiche-dialogue.svg",
+      "question": "Affichage",
+      "legende": "Affiche A3 · Dialogue"
+    },
+    {
+      "fichier": "figures/carte-dialogue.svg",
+      "question": "Numérique",
+      "legende": "Carte du carrousel · Dialogue"
+    },
+    {
+      "fichier": "figures/affiche-serenite.svg",
+      "question": "Affichage",
+      "legende": "Affiche A3 · Sérénité"
+    },
+    {
+      "fichier": "figures/carte-serenite.svg",
+      "question": "Numérique",
+      "legende": "Carte du carrousel · Sérénité"
+    },
+    {
+      "fichier": "figures/planche-01.svg",
+      "question": "Dossier A3",
+      "legende": "Planche 01 · Laisser une place"
+    },
+    {
+      "fichier": "figures/planche-02.svg",
+      "question": "Dossier A3",
+      "legende": "Planche 02 · Trois essais de signe"
+    },
+    {
+      "fichier": "figures/planche-06.svg",
+      "question": "Dossier A3",
+      "legende": "Planche 06 · Du mur au téléphone"
+    },
+    {
+      "fichier": "figures/planche-07.svg",
+      "question": "Dossier A3",
+      "legende": "Planche 07 · Préparer la diffusion"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Conception des sept planches A3 anonymes et numérotées, dont trois affiches, et de trois cartes 4:5. Rédaction du dossier et des indications pédagogiques."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation à la commande, aux témoignages et aux trois bonnes pratiques. Contrôle des dimensions, des sources et de la lisibilité des dix compositions rendues."
+    }
+  ]
+}
