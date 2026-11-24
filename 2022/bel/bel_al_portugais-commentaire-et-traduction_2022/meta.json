@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_portugais-commentaire-et-traduction_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Portugais (commentaire et traduction)",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=18",
+    "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Portugais%202022.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "De uma lapela ao céu da fábrica"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire en portugais de la chronique intégrale de Rubem Braga, version française du début au passage sur Pierina et la mort, guidage et schéma sur les emblèmes du pouvoir."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Rubem Braga, chronique de février 1935, reprise dans *200 Crônicas Escolhidas*, Rio de Janeiro, Record, 1983. Le commentaire porte sur les deux pages, la version se termine à la ligne 22."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}

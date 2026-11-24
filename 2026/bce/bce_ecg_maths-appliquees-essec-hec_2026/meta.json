@@ -8,5 +8,63 @@
   },
   "questions": 27,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/blocs-par-taille.svg",
+      "question": "25",
+      "legende": "Pour k = 2, chaque bloc complet contient quatre coefficients. Les deux valeurs égales à 4 peuvent se trouver de part et d’autre de la coupure."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Rédaction initiale des deux éditions, modèle indiqué dans les métadonnées publiques et le commit de rédaction.",
+      "source": "https://github.com/knoel99/prepa/commit/d218454"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Correction de la distinction entre valeur mathématique et affichage flottant à la question 2 dans les deux éditions. Identité de l’agent ayant réalisé la relecture indépendante non documentée.",
+      "source": "https://github.com/knoel99/prepa/commit/341bb2d",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Reformulation de l’indication 20.b et retrait d’une répétition dans les notations du guidé. Le commit d’intégration est cosigné par Claude Opus 5.5, sans identification séparée de l’agent de relecture.",
+      "source": "https://github.com/knoel99/prepa/commit/7620824",
+      "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 27 questions et de leurs subdivisions dans les deux éditions, sujet natif et quatre pages du rapport. Contre-exemple explicite à la terminaison de la simulation sans hypothèse de dimension, égalités de coefficients, bloc final nul, indice zéro de la série exponentielle et figure de la preuve de récupération.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/288%20-%20MATHEMATIQUES_APPLIQUEES_ESSEC_BS_HEC_PARIS%20-%20ESSEC%20Business%20School%20I%20HEC%20Paris.pdf",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/288%20-%20Maths%20appli%20ESSEC%20BS.HEC%20Paris%202026.pdf",
+    "sha256_sujet": "690e1d2b5640da491e2565c30a58a21630f8d10861b4bb463d59abf4ce47a2ef",
+    "sha256_rapport": "e8c36871db8137b3c898f4f049b2f6056dfc6c19da4d1d0c0db92e058d891762"
+  }
 }

@@ -8,5 +8,63 @@
   },
   "questions": 22,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/bonus-ucb.svg",
+      "question": "19",
+      "legende": "À horizon 80, une action peu essayée peut obtenir l’indice le plus élevé malgré sa moyenne empirique inférieure."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Rédaction initiale des deux éditions, modèle indiqué dans les métadonnées publiques et le commit de rédaction.",
+      "source": "https://github.com/knoel99/prepa/commit/e4bb560"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": false,
+      "perimetre": "Première relecture indépendante des deux éditions. Aucune correction demandée. Identité de l’agent non documentée.",
+      "source": "https://github.com/knoel99/prepa/commit/341bb2d",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Seconde relecture et ajustements du code de la question 19 et des notations. Le commit d’intégration est cosigné par Claude Opus 5.5, sans identification séparée de l’agent de relecture.",
+      "source": "https://github.com/knoel99/prepa/commit/7620824",
+      "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 22 questions, de leurs subdivisions, des deux éditions, du sujet et des quatre pages du rapport. Correction SQL au compteur nul, portée de Hoeffding sous choix adaptatif, script exécutable UCB, ordres des majorants du regret et figure des bonus.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/287%20-%20MATHEMATIQUES_2_APPLIQUEES_ESSEC_BS.pdf",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/287%20-%20Maths%202%20appli%20ESSEC%20BS-HEC%20Paris%202026.pdf",
+    "sha256_sujet": "7e37eb2bcd34688796e304b8369dfbab235ac66c33075a92c04a78aaf902ec8e",
+    "sha256_rapport": "c8eb88d06578c1521df853fe66f5afa52605215a0989eb0a731e0a4e55690f0c"
+  }
 }

@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 heures, sans calculatrice ni document. On note $\|X\|$ la norme euclidienne de $X\in\mathcal M_{d,1}(\mathbb R)$. La matrice $A$ est une $(\varepsilon,\mathcal X)$-isométrie si, pour tout $X\in\mathcal X$, $(1-\varepsilon)\|X\|^2\le\|AX\|^2\le(1+\varepsilon)\|X\|^2$.
 
 Remarque utile tout au long du sujet : les normes sont positives et la racine carrée est croissante. Pour $\varepsilon\in\,]0,1[$, la condition d'isométrie équivaut donc à
@@ -257,6 +265,8 @@ def Isom(LX, m, eps):
 
 Les tirages sont indépendants. Dès que $m>\frac{8\ln(2r)}{\varepsilon^2}$, chacun réussit avec une probabilité $p>0$ (question 9.c) : le nombre de tirages suit alors une loi géométrique de paramètre $p$, et la boucle s'arrête presque sûrement.
 
+Une boucle infinie est possible pour certaines données. Prenons $m=1$, $n=2$, $0<\varepsilon<1/2$ et les quatre vecteurs $e_1,e_2,e_1+e_2,e_1-e_2$. Si la ligne $(a,b)$ convenait, les deux premiers tests donneraient $|ab|\ge 1-\varepsilon$. Les deux derniers imposeraient $(a+b)^2,(a-b)^2\in[2(1-\varepsilon),2(1+\varepsilon)]$. En soustrayant, on obtiendrait $4|ab|\le4\varepsilon$, ce qui est impossible.
+
 ## ε-isométries pour les ensembles sporadiques de $\mathcal M_{n,1}(\mathbb R)$
 
 ### Question 11
@@ -478,7 +488,7 @@ $$\binom nk=\frac{n(n-1)\cdots(n-k+1)}{k!}.$$
 
 Chacun des $k$ facteurs du numérateur est compris entre $1$ et $n$, donc $\boxed{\binom nk\le\frac{n^k}{k!}.}$
 
-**b)** Pour tout réel $x$, $e^x=\sum_{j=0}^{+\infty}\frac{x^j}{j!}$. Avec $x=k\ge1$, tous les termes sont positifs. Donc $e^k$ est supérieur à la somme des deux termes d'indices $j=k-1$ et $j=k$, qui sont distincts et d'indices positifs :
+**b)** Pour tout réel $x$, $e^x=\sum_{j=0}^{+\infty}\frac{x^j}{j!}$. Avec $x=k\ge1$, tous les termes sont positifs. Donc $e^k$ est supérieur à la somme des deux termes d'indices $j=k-1$ et $j=k$, qui sont distincts et d’indices entiers positifs ou nuls :
 
 $$e^k\ge\frac{k^{k-1}}{(k-1)!}+\frac{k^k}{k!}.$$
 
@@ -604,11 +614,15 @@ $$\boxed{\|Z_S\|\ge\frac1{\sqrt k}|Z_S|\ge\frac1{\sqrt k}|Z_{\overline S}|.}$$
 
 Remarque préalable : $\langle Z_S\rangle\le k$ et $\langle Z\rangle\ge3k+1$, donc $\langle Z_{\overline S}\rangle\ge2k+1$ et $r\ge1$.
 
+Ordonnons les coefficients non nuls hors de $S$ par valeur absolue décroissante, en départageant librement les ex æquo. Les indices dont le coefficient est nul peuvent être rangés dans le dernier ensemble. Si le nombre de coefficients non nuls est multiple de $2k$, le dernier vecteur est nul. On convient aussi que la restriction à un ensemble vide est le vecteur nul.
+
+![Figure 1 — Pour k = 2, chaque bloc complet contient quatre coefficients. Les deux valeurs égales à 4 peuvent se trouver de part et d’autre de la coupure.](figures/blocs-par-taille.svg)
+
 **a)** Soit $i\in[\![1,r]\!]$. Le vecteur $Z_{T_i}$ a exactement $2k$ composantes non nulles, chacune de valeur absolue au moins $\alpha_i$. Donc
 
 $$|Z_{T_i}|\ge2k\alpha_i=\sqrt{2k}\sqrt{2k\alpha_i^2}.$$
 
-Les composantes non nulles de $Z_{T_{i+1}}$ sont, en valeur absolue, inférieures à toutes celles de $Z_{T_i}$, donc à $\alpha_i$, et il y en a au plus $2k$. Ainsi $\|Z_{T_{i+1}}\|^2\le2k\alpha_i^2$ et, la racine étant croissante :
+Les composantes non nulles de $Z_{T_{i+1}}$ sont, en valeur absolue, inférieures ou égales à toutes celles de $Z_{T_i}$, donc à $\alpha_i$, et il y en a au plus $2k$. Ainsi $\|Z_{T_{i+1}}\|^2\le2k\alpha_i^2$ et, la racine étant croissante :
 
 $$\boxed{|Z_{T_i}|\ge\sqrt{2k}\sqrt{2k\alpha_i^2}\ge\sqrt{2k}\,\|Z_{T_{i+1}}\|.}$$
 

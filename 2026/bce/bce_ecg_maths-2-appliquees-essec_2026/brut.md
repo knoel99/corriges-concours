@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 heures, sans calculatrice ni document.
 
 Notations du modèle : $I_j$ est la $j$-ème action réalisée et $X_{i,j}$ la récompense de l'action $i$ lors de sa $j$-ème exécution.
@@ -167,12 +175,12 @@ SELECT COUNT(*) FROM Bandit WHERE Action = 1 AND Numero <= 100;
 **d)** $\hat X_{2,n}(\omega)$ est la moyenne des récompenses obtenues lors des exécutions de l'action 2 :
 
 ```sql
-SELECT AVG(Recompense) FROM Bandit WHERE Action = 2;
+SELECT COALESCE(AVG(Recompense), 0) FROM Bandit WHERE Action = 2;
 ```
 
-(Si l'action 2 n'a jamais été réalisée, la requête renvoie `NULL` alors que $\hat X_{2,n}=0$ par convention.)
-
-Si $N_{2,n}(\omega)\ge100$, $\hat X_{2,n}(\omega)$ est la moyenne d'au moins 100 récompenses indépendantes de loi de Bernoulli de paramètre $p_2$ : **c'est une bonne estimation de $p_2$** (loi faible des grands nombres, ou inégalités de Hoeffding des questions 5 et 6).
+`COALESCE` renvoie zéro lorsque le filtre ne sélectionne aucune ligne, conformément à la définition de $\hat X_{2,n}$. Après au moins cent essais de l’action 2, la moyenne estime son paramètre $p_2$. Si le nombre d’essais dépend des récompenses passées, on doit tenir compte de cette sélection. Par exemple, pour tout $\varepsilon>0$, une union sur les tailles fixes donne
+$$P\big(N_{2,n}\ge100,\ |\hat X_{2,n}-p_2|\ge\varepsilon\big)\le\sum_{k=100}^n 2e^{-2k\varepsilon^2}.$$
+Cette borne porte sur l’événement conjoint. Pour un nombre fixé $k$ d’essais on dispose directement de $2e^{-2k\varepsilon^2}$.
 
 ## La stratégie ETC et une majoration de son regret moyen
 
@@ -196,7 +204,7 @@ En sommant sur $k$, les événements $[I_j=i]\cap[N_{i,j}=k]$ formant une partit
 
 Avec a), $\boxed{E(Y_j)=\sum_{i=1}^rp_iP(I_j=i).}$
 
-(Pour une stratégie adaptative comme ETC ou UCB, les $I_j$ dépendent des récompenses déjà observées. Le résultat reste vrai, car l'événement $[I_j=i]\cap[N_{i,j}=k]$ ne dépend que des récompenses obtenues avant $X_{i,k}$ ; on suit ici l'hypothèse de l'énoncé.) Comme $p_i\le p^*$ et $\sum_iP(I_j=i)=1$ : $\boxed{E(Y_j)\le p^*.}$
+Pour ETC ou UCB, les actions ultérieures sont déterminées par les récompenses passées : l’indépendance globale des deux familles, imprimée au début du modèle, doit alors être remplacée par l’indépendance de la récompense à venir. Plus précisément, pour déterminer si l’action $i$ est choisie pour la $k$-ième fois à l’étape $j$, on peut rejouer la stratégie en modifiant arbitrairement $X_{i,k}$ : le choix de l’étape qui révèle cette variable ne change jamais. L’événement considéré est donc déterminé par les autres récompenses et par l’aléa indépendant utilisé pour choisir les actions. Cela justifie la même factorisation pour ces stratégies. Comme $p_i\le p^*$ et $\sum_iP(I_j=i)=1$ : $\boxed{E(Y_j)\le p^*.}$
 
 ### Question 10
 
@@ -345,7 +353,7 @@ En additionnant, $E(\Delta_n)\le2\sqrt{2n\alpha\beta}+\alpha$, c'est-à-dire
 
 $$\boxed{E(\Delta_n)\le\sqrt{8\alpha\beta}\,\sqrt n+\alpha.}$$
 
-Le regret moyen de la stratégie ETC croît comme $\sqrt n$, et non plus linéairement.
+La question donne un majorant d’ordre $\sqrt n$ pour le regret moyen de cette stratégie ETC.
 
 ## La stratégie UCB et une majoration de son regret
 
@@ -391,26 +399,31 @@ def maj(hatX,N,i,P):
 Les lignes complétées sont : `range(r,n)`, `Max=val`, `I[j]=k+1` et `N[I[j]-1]=N[I[j]-1]+1`.
 
 ```python
-def Actions(P,n):
-  r=np.shape(P)[0]; I=np.zeros(n)
-  I[0:r]=[k+1 for k in range(r)];N=np.ones(r)
-  hatX=np.array([Bernoulli(P[i]) for i in range(r)])
-  for j in range(r,n):
-      Max=hatX[0]+np.sqrt(np.log(n)/N[0])
-      I[j]=1
-      for k in range(1,r):
-         val=hatX[k]+np.sqrt(np.log(n)/N[k])
-         if val>Max:
-             Max=val
-             I[j]=k+1
-      hatX[I[j]-1]=maj(hatX[I[j]-1],N[I[j]-1],I[j],P)
-      N[I[j]-1]=N[I[j]-1]+1
-  return I
+def Actions(P, n):
+    r = len(P)
+    I = np.zeros(n, dtype=int)
+    I[:r] = np.arange(1, r + 1)
+    N = np.ones(r, dtype=int)
+    hatX = np.array([Bernoulli(p) for p in P], dtype=float)
+    for j in range(r, n):
+        meilleur = 0
+        maximum = hatX[0] + np.sqrt(np.log(n) / N[0])
+        for k in range(1, r):
+            valeur = hatX[k] + np.sqrt(np.log(n) / N[k])
+            if valeur > maximum:
+                maximum = valeur
+                meilleur = k
+        I[j] = meilleur + 1
+        hatX[meilleur] = maj(hatX[meilleur], N[meilleur], I[j], P)
+        N[meilleur] += 1
+    return I
 ```
 
 L'élément d'indice Python `j` de `I` est l'action $I_{j+1}$ ; au début du tour `j`, `N` et `hatX` contiennent les $N_{k,j}$ et $\hat X_{k,j}$, et la boucle sur `k` cherche le plus petit indice qui maximise $U_{k,j}$.
 
-Remarque : tel que l'énoncé l'écrit, `I=np.zeros(n)` est un tableau de flottants, et `hatX[I[j]-1]` provoque une erreur d'indice en Python. Il faut écrire `I=np.zeros(n,dtype=int)`, ou indexer par `int(I[j])-1`, et créer `hatX` en flottants. Avec ces corrections, la fonction a été exécutée : pour $P=(0{,}3\,;\,0{,}5\,;\,0{,}7)$ et $n=5000$, l'action 3 est choisie 4 764 fois.
+Le tableau des actions a un type entier pour indexer les compteurs. Les moyennes sont de type flottant dès leur initialisation, y compris si les premières récompenses valent toutes zéro ou un. Le premier maximum rencontré est conservé en cas d’égalité.
+
+![Figure 1 — À horizon 80, une action peu essayée peut obtenir l’indice le plus élevé malgré sa moyenne empirique inférieure.](figures/bonus-ucb.svg)
 
 ### Question 20
 
@@ -515,4 +528,4 @@ E(\Delta_n)&=\sum_{\delta_i\neq0}\delta_iE(N_{i,n})\\
 &=\boxed{4\beta\ln(n)+3\alpha.}
 \end{aligned}$$
 
-Le regret moyen de la stratégie UCB ne croît plus que comme $\ln n$.
+La question donne un majorant d’ordre $\ln n$ pour le regret moyen de la stratégie UCB, à paramètres des actions fixés.
