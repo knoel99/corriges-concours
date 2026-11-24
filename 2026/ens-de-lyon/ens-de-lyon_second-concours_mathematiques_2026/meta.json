@@ -1,0 +1,53 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_math.pdf",
+    "page_officielle": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
+  },
+  "figures": [
+    {
+      "fichier": "figures/espaces-propres-opposes.svg",
+      "question": "Exercice 2a",
+      "legende": "L’automorphisme u échange les espaces propres associés à des valeurs opposées et son inverse réalise le trajet réciproque."
+    },
+    {
+      "fichier": "figures/cercle-et-carre.svg",
+      "question": "Problème 1b",
+      "legende": "Dans le plan, un vecteur porté par un axe et le sommet du carré réalisent respectivement les deux cas d’égalité."
+    },
+    {
+      "fichier": "figures/sommes-orthogonales.svg",
+      "question": "Problème 3c",
+      "legende": "À partir des deux vecteurs de base du plan, les quatre choix de signes donnent tous une norme égale à la racine carrée de deux."
+    },
+    {
+      "fichier": "figures/minimum-exponentiel.svg",
+      "question": "Problème 4c",
+      "legende": "Le meilleur majorant exponentiel de la queue positive s’obtient au minimum de la parabole."
+    },
+    {
+      "fichier": "figures/droite-dans-le-cube.svg",
+      "question": "Problème 8c",
+      "legende": "Pour un sous-espace de dimension un, un sommet de la section du cube sature au moins une coordonnée."
+    },
+    {
+      "fichier": "figures/signes-dyadiques.svg",
+      "question": "Problème 14",
+      "legende": "Sur les huit intervalles dyadiques, les trois premières fonctions réalisent les huit triplets de signes."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Les trente réponses suivent le sujet du second concours scientifique. La question 14 est traitée dans sa version publiée et dans sa variante à signes symétriques. L’index de la session présente un rapport de mathématiques oral uniquement."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2026
+  },
+  "questions": 63,
+  "redaction": "Proposition non officielle de plusieurs agents IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf",
+    "page_officielle": "https://sti.eduscol.education.fr/concours_examens/concours-cpge-2026-x-ens-epreuve-de-sciences-industrielles-filiere-psi-systemes"
+  },
+  "figures": [
+    {
+      "fichier": "figures/pince-parallelogramme.svg",
+      "question": "Q1.1",
+      "legende": "Les extrémités E et F du parallélogramme ont la même vitesse, perpendiculaire à CE et DF."
+    },
+    {
+      "fichier": "figures/harnais-bras-de-levier.svg",
+      "question": "Q1.6",
+      "legende": "Le couple au pivot est le produit de la force par la distance perpendiculaire à sa droite d’action."
+    },
+    {
+      "fichier": "figures/inclinaison-pression.svg",
+      "question": "Q1.13",
+      "legende": "Deux créneaux de rotation opposés, de même durée, donnent une inclinaison triangulaire et une pression proportionnelle au cosinus de cette inclinaison."
+    },
+    {
+      "fichier": "figures/basculement-au-bord.svg",
+      "question": "Q2.4",
+      "legende": "Les tensions des boulons s’opposent au moment du poids et de la force d’inertie autour du bord K."
+    },
+    {
+      "fichier": "figures/graphe-fixation.svg",
+      "question": "Q2.7",
+      "legende": "Le piston, la cage et la platine exercent chacun une réaction sur toute bille. Les six branches du graphe sont identiques."
+    },
+    {
+      "fichier": "figures/trois-normales-bille.svg",
+      "question": "Q2.8",
+      "legende": "Les trois réactions d’une bille sont normales aux surfaces. Leur projection radiale élimine l’effort exercé par la cage."
+    },
+    {
+      "fichier": "figures/seuil-pression-verrouillage.svg",
+      "question": "Q2.10",
+      "legende": "Le seuil calculé croît comme le carré de la vitesse. À 69 degrés par seconde, il reste sous la pression minimale de service."
+    },
+    {
+      "fichier": "figures/deux-positions-du-coude.svg",
+      "question": "Q3.7",
+      "legende": "Deux positions du coude pour un même poignet et une même orientation de l’effecteur."
+    },
+    {
+      "fichier": "figures/p4-boucle-courant.svg",
+      "question": "Q4.2",
+      "legende": "L’adaptateur et le capteur ont le même gain. Le comparateur soustrait le courant mesuré après conversion en tension."
+    },
+    {
+      "fichier": "figures/p4-bode-vitesse-reglee.svg",
+      "question": "Q4.7",
+      "legende": "Les deux gains du PI sont augmentés dans le même rapport. La phase demeure identique et le gain coupe 0 dB à 40 rad/s."
+    },
+    {
+      "fichier": "figures/p4-inertie-configurations.svg",
+      "question": "Q4.9",
+      "legende": "Le segment pointillé donne la distance à l’axe d’épaule de la charge représentée en rouge."
+    },
+    {
+      "fichier": "figures/p4-bode-inerties.svg",
+      "question": "Q4.10",
+      "legende": "Les deux tracés asymptotiques ont le même plateau de gain. Une inertie dix fois plus forte déplace chaque cassure d’une décade vers la gauche."
+    },
+    {
+      "fichier": "figures/frein-contact-sectoriel.svg",
+      "question": "Q6.3",
+      "legende": "Le contact d’une couronne se décompose en éléments de surface. Chacun produit un couple proportionnel au carré du rayon par unité de rayon et d’angle."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Comparaison des 63 réponses aux six parties et aux annexes A à F du sujet. Vérifications des unités, des courbes de commande et de l’incompatibilité du torseur en 1.12. Test numérique du programme de cycle."
+  }
+}

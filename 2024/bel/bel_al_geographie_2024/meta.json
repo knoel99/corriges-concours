@@ -1,0 +1,45 @@
+{
+  "slug": "bel_al_geographie_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Géographie",
+    "annee": 2024
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20de%20g%C3%A9ographie.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/G%C3%A9ographie%202024_0.pdf",
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/Cadrage%20pour%20la%20nouvelle%20question%20Union%20europ%C3%A9enne.pdf",
+    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson"
+  },
+  "figures": [
+    {
+      "fichier": "figures/frontieres-en-europe.svg",
+      "question": "Partie I",
+      "legende": "Des frontières qui changent de fonction en Europe, en avril 2024."
+    },
+    {
+      "fichier": "figures/gare-du-nord.svg",
+      "question": "Partie III",
+      "legende": "La gare du Nord à Paris, un contrôle qui dépend de la destination du voyageur."
+    },
+    {
+      "fichier": "figures/guyane-et-maroni.svg",
+      "question": "Partie III",
+      "legende": "Le Maroni relie deux rives tout en formant une frontière extérieure de l’Union européenne."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante du sujet et du rapport, p. 2 à 7. Distinction des statuts européens à la date de l’épreuve, vérification des exemples transfrontaliers et contrôle cartographique."
+  }
+}

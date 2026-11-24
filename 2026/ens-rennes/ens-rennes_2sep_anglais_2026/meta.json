@@ -1,0 +1,34 @@
+{
+  "slug": "ens-rennes_2sep_anglais_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "2SEP",
+    "matiere": "Anglais",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix-et-attribution.svg",
+      "question": "A",
+      "legende": "Les trois voix du passage imposent des verbes introducteurs et des guillemets distincts."
+    },
+    {
+      "fichier": "figures/admission-en-competition.svg",
+      "question": "B1",
+      "legende": "Choisir qui est concerné permet de formuler une mesure précise avant de la défendre dans la copie."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-anglais-e-crit-2sep-2026_1791303325200-pdf",
+    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
+    "regles_paris_2024": "https://stillmed.olympics.com/media/Documents/News/2023/12/principles-of-participation-for-individual-neutral-athletes.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "relecture": "Passage à traduire et consignes confrontés au sujet officiel, comptages des deux productions vérifiés indépendamment."
+}
