@@ -6,9 +6,13 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’écrit commun du 15 avril 2026 dure quatre heures. La synthèse se rédige en espagnol, avec un titre, en 600 à 675 mots. Elle croise les documents 1 à 4, dont le dernier comprend **deux images**. Le texte d’opinion répond en espagnol à la chronique de Nuria Labari, en 500 à 600 mots. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Espagnol.pdf)
+
+La couverture d’*El Jueves* date d’octobre 2024, la photographie madrilène d’octobre 2025. Un rapprochement avec la vidéo de 2025 peut éclairer le contraste de points de vue. Présenter la couverture comme une réponse du dessinateur à cette vidéo inverserait la chronologie.
 
 ## Construire la synthèse
 
@@ -48,9 +52,9 @@ Labari rapproche les discours sur l’immigration et les gestes d’accueil de l
 
 ¿Cómo puede el Día de la Hispanidad, celebrado el 12 de octubre, dividir a los vecinos de una misma ciudad cuando aspira a reunir a los hablantes de una misma lengua? Tres artículos publicados en octubre de 2025 y dos imágenes reunidas en un cuarto documento sitúan esa pregunta entre España y América Latina. La llegada de Colón a Guanahaní proporciona una referencia común. La distancia entre las distintas formas de recordarla revela quién tiene autoridad para contar la historia y quién queda fuera del relato.
 
-Adrián Roque recuerda en elDiario.es que en 1918 se instauró en España el Día de la Raza, nombre que fundaba la comunidad en una supuesta ascendencia común. La ley de 1987 conservó el rango de la celebración y fijó el nombre de Fiesta Nacional de España. La historia argentina que reconstruye La Arena permite apreciar el alcance de estos cambios de vocabulario. Allí, la decisión de 2010 de dedicar la jornada al respeto a la diversidad cultural hizo visibles a los pueblos originarios y a la población afrodescendiente como parte de la nación. Desde esa perspectiva, la llegada de los europeos pierde su condición de origen absoluto. Para Roque, reconocer el coste de la colonización resulta compatible con apreciar la lengua y las creaciones culturales compartidas por ambas orillas.
+Según Adrián Roque, Alfonso XIII declaró fiesta nacional el Día de la Raza en 1918. La ley de 1987 mantuvo la fecha bajo el nombre de Fiesta Nacional de España. Así, una celebración de alcance hispanoamericano coincide con la fiesta de un solo Estado. La historia argentina que reconstruye La Arena permite apreciar el alcance de estos cambios de vocabulario. Allí, la decisión de 2010 de dedicar la jornada al respeto a la diversidad cultural hizo visibles a los pueblos originarios y a la población afrodescendiente como parte de la nación. Desde esa perspectiva, la llegada de los europeos pierde su condición de origen absoluto. Para Roque, reconocer el coste de la colonización resulta compatible con apreciar la lengua y las creaciones culturales compartidas por ambas orillas.
 
-Sin embargo, cambiar el calendario oficial tampoco resuelve quién encarna esa comunidad. Según La Arena, la Casa Rosada ha vuelto a emplear la antigua denominación sin que se haya anunciado una modificación legal. El vídeo de la administración de Javier Milei presenta a Colón como portador de instituciones y como respuesta a un desorden previo. Al describir como barbarie las prácticas de los pueblos americanos, ese discurso les niega toda capacidad de organizar una sociedad antes de la expedición. La portada satírica de El Jueves pone a prueba esa jerarquía mediante la composición de la escena. Quienes se atribuyen la tarea de civilizar aparecen diminutos al pie de una monumental construcción americana. La imagen permite medir la distancia entre lo que proclaman los personajes y lo que ya tienen delante de los ojos.
+Sin embargo, cambiar el calendario oficial tampoco resuelve quién encarna esa comunidad. Según La Arena, la Casa Rosada ha vuelto a emplear la antigua denominación sin que se haya anunciado una modificación legal. En el vídeo difundido por la Casa Rosada, la voz en off atribuye a Colón las primeras instituciones basadas en el derecho y la fe cristiana. Al describir como barbarie las prácticas de los pueblos americanos, ese discurso les niega toda capacidad de organizar una sociedad antes de la expedición. La portada de El Jueves, publicada ya en 2024, pone a prueba esa jerarquía mediante la composición de la escena. Quienes se atribuyen la tarea de civilizar aparecen diminutos al pie de una monumental construcción americana. La imagen permite medir la distancia entre lo que proclaman los personajes y lo que ya tienen delante de los ojos.
 
 En Madrid, la fotografía de Diego Radamés reúne a Isabel Díaz Ayuso, presidenta de la Comunidad, con participantes vestidos con trajes tradicionales y rodeados de banderas. El encuadre ofrece una imagen de diversidad en torno a la representante política. A pocas paradas de metro de los actos institucionales, los colectivos entrevistados por Lucía Franco en El País organizan su propia programación. En una exposición de La Parcería, las fotografías, los recortes y hasta los insultos reapropiados por artistas documentan cómo se ha mirado a quienes llegaron de América Latina. Frente a la visibilidad festiva que ofrece el retrato colectivo, el archivo permite a algunos de los retratados escoger las palabras y las imágenes con las que se cuentan.
 
@@ -58,7 +62,7 @@ El desacuerdo alcanza así a la vida cotidiana. Para los responsables de la expo
 
 La pluralidad de memorias atraviesa, por tanto, cada una de las dos orillas. En Argentina se enfrentan dos maneras de definir la nación y en la propia capital española conviven el escenario del homenaje y el espacio de la protesta. La posibilidad de un legado común depende, según las voces reunidas en el dossier, del lugar que cada relato concede a quienes han recibido sus beneficios y a quienes todavía reconocen en él la huella de una exclusión.
 
-*654 mots hors titre, 661 avec le titre.*
+*659 mots hors titre, 666 avec le titre.*
 
 ## Partie B — Texte d’opinion
 
