@@ -803,7 +803,10 @@
 | 2019 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2019/x-ens/x-ens_psi_modelisation_2019/brut.md) | [md](2019/x-ens/x-ens_psi_modelisation_2019/guide.md) |
 | 2020 | X-ENS | PSI | Modélisation | [md](2020/x-ens/x-ens_psi_modelisation_2020/brut.md) | [md](2020/x-ens/x-ens_psi_modelisation_2020/guide.md) |
 | 2021 | X-ENS | PSI | Modélisation | [md](2021/x-ens/x-ens_psi_modelisation_2021/brut.md) | [md](2021/x-ens/x-ens_psi_modelisation_2021/guide.md) |
+| 2022 | X-ENS | MP-PC-PSI | Allemand | [md](2022/x-ens/x-ens_mp-pc-psi_allemand_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_allemand_2022/guide.md) |
 | 2022 | X-ENS | MP-PC-PSI | Anglais | [md](2022/x-ens/x-ens_mp-pc-psi_anglais_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_anglais_2022/guide.md) |
+| 2022 | X-ENS | MP-PC-PSI | Arabe | [md](2022/x-ens/x-ens_mp-pc-psi_arabe_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_arabe_2022/guide.md) |
+| 2022 | X-ENS | MP-PC-PSI | Espagnol | [md](2022/x-ens/x-ens_mp-pc-psi_espagnol_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_espagnol_2022/guide.md) |
 | 2022 | X-ENS | MP-PC-PSI | Français | [md](2022/x-ens/x-ens_mp-pc-psi_francais_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_francais_2022/guide.md) |
 | 2022 | X-ENS | PSI | Modélisation | [md](2022/x-ens/x-ens_psi_modelisation_2022/brut.md) | [md](2022/x-ens/x-ens_psi_modelisation_2022/guide.md) |
 | 2023 | X-ENS | PSI | Modélisation | [md](2023/x-ens/x-ens_psi_modelisation_2023/brut.md) | [md](2023/x-ens/x-ens_psi_modelisation_2023/guide.md) |

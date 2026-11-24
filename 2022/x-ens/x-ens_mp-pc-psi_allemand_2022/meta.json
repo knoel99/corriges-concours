@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20D'ALLEMAND%20(XEULSR)_0.pdf",
+    "sujet_sha256": "007fd9db4b6bd27600235baeca620f06291a79126e30b26b95fca0186e7f3064",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC%20RAPPORT%20ECRIT%20ALLEMAND%20(XEULSR)_0.pdf",
+    "rapport_sha256": "7b7b3379bce31bc1ceaa9a8b500f68a341a77755ecc9df2a562d57b18c15ba41"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "Trois dates pour lire le départ d’Angela Merkel"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (610 mots hors titre) et réaction personnelle au document 5 (507 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

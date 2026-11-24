@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20D'ESPAGNOL%20(XEULSR).pdf",
+    "sujet_sha256": "cf4d3da7287e0c40589f97307a0fa093f07041130adebd65d1bb05809e3b8ff2",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC%20RAPPORT%20ECRIT%20ESPAGNOL%20(XEULSR).pdf",
+    "rapport_sha256": "3683d98469d051a0104fbb7b1ba073280cc41f535dae8dc01f954e8a11917379"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "Cuba en 2021, trois questions à distinguer"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (629 mots hors titre) et réaction personnelle au document 5 (526 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
