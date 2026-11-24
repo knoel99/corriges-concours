@@ -1,0 +1,170 @@
+{
+  "slug": "x-ens_pc_chimie-a_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2024
+  },
+  "questions": 69,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20PC%20SUJET%20CHIMIE%20A%20(XEULS).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20PC%20RAPPORT%20ECRIT%20CHIMIE%20A%20(XEULS).pdf",
+    "sujet_sha256": "ce4759dbabb8af0afca5d325a26fe637460c2bb9f16a1768a4a7de67ab026fe9",
+    "rapport_sha256": "1097b17832b7555fad9eab5e84b22e0f19b75b5956db991a9e7da4864afe1e82"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 69 questions des quatre parties sont traitées. La lecture des courbes distingue le domaine mesuré des extrapolations. La question 56 explicite le bilan du silicium entre les structures B et D de l’énoncé."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/orbitales-fragment-o2.svg",
+      "legende": "Deux orientations orthogonales, chacune avec une combinaison liante et une antiliante du fragment O₂.",
+      "question": "Q2"
+    },
+    {
+      "fichier": "figures/orbitales-pi-co2.svg",
+      "legende": "Trois niveaux de CO₂ pour une direction transverse. Le niveau πg ne porte pas de coefficient sur le carbone.",
+      "question": "Q3"
+    },
+    {
+      "fichier": "figures/distribution-carbonates.svg",
+      "legende": "Fractions calculées avec pKa₁ = 6,4 et pKa₂ = 10,3. Les trois repères signalent les croisements et le maximum du bicarbonate.",
+      "question": "Q10"
+    },
+    {
+      "fichier": "figures/fluide-calcifiant.svg",
+      "legende": "Les mesures de pH et de sursaturation se rapportent à deux compartiments. Les flèches représentent le sens des échanges du modèle.",
+      "question": "Q15"
+    },
+    {
+      "fichier": "figures/calcite-aragonite.svg",
+      "legende": "L’intersection se lit vers x = 0,80. La bande colorée indique l’intervalle des eaux océaniques fourni dans le sujet.",
+      "question": "Q26"
+    },
+    {
+      "fichier": "figures/profils-concentration.svg",
+      "legende": "La concentration à la surface vaut presque la solubilité dans le régime diffusif et presque la concentration de volume dans le régime de réaction lente.",
+      "question": "Q32"
+    },
+    {
+      "fichier": "figures/chronomal-et-fraction.svg",
+      "legende": "Lecture approchée de l’expérience 6.1. La droite du chronomal décrit les mesures jusqu’à environ quinze minutes.",
+      "question": "Q40"
+    },
+    {
+      "fichier": "figures/pentes-de-la-sonde.svg",
+      "legende": "Tendances redessinées sur le domaine affine. Le premier point de chaque expérience témoigne d’un régime initial distinct.",
+      "question": "Q45"
+    },
+    {
+      "fichier": "figures/alcools-b-c.svg",
+      "legende": "Configurations relatives de B et C. Un coin plein pointe vers le lecteur, un coin hachuré vers l’arrière.",
+      "question": "Q52"
+    },
+    {
+      "fichier": "figures/structures-e-f-g.svg",
+      "legende": "Une même projection relie E, F et G. Pour E′, F′ et G′, remplacer le O–Si de chaque dessin par OH.",
+      "question": "Q58"
+    },
+    {
+      "fichier": "figures/geometries-j2-j3.svg",
+      "legende": "Structures de J2 et J3 avec les mêmes fragments R et V. La branche carbonyle de C5 est prioritaire sur la branche vers C1.",
+      "question": "Q65"
+    },
+    {
+      "fichier": "figures/newman-elimination.svg",
+      "legende": "Le H bleu de C5 et le groupe vert OX du carbone arrière sont anti. L’échange de R et H à l’arrière distingue les deux produits.",
+      "question": "Q67"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet original de l’École polytechnique, de ses quinze figures et de ses annexes, et du rapport du jury commun de chimie A. Vérification numérique des équilibres et des pentes, des attributions IR et RMN, du bilan du silicium et des conformations anti. Douze figures originales."
+    }
+  ]
+}
