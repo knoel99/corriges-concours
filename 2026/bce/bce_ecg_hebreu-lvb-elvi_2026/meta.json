@@ -1,0 +1,50 @@
+{
+  "slug": "bce_ecg_hebreu-lvb-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Hébreu LVB (ELVi)",
+    "annee": 2026,
+    "date": "2026-04-29",
+    "duree_heures": 4
+  },
+  "questions": 3,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=8",
+    "sujet_sha256": "29a08b157bd5022c73a429363d249d2ec90840123c908135e667cd27cf018c98",
+    "pages_sujet": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "references": [
+      "https://he.wikisource.org/wiki/%D7%90%D7%9C_%D7%90%D7%A8%D7%A6%D7%99_(%D7%A8%D7%97%D7%9C)"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/enquete-eleves.svg",
+      "question": "Q1",
+      "legende": "Données déclaratives du document 2. À gauche, usage et formation dans l’ensemble interrogé. À droite, part déclarant une formation dans chaque secteur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction du résumé comparatif de 242 mots, de l’essai de 340 mots et du thème complet en hébreu. Lecture des pages 8 à 15 du PDF, vérification des chiffres et de la photographie générée, des bornes de traduction, des exemples culturels et du sens de lecture des PDF."
+    }
+  ]
+}
