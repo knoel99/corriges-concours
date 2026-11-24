@@ -1,0 +1,42 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives-oral_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives (oral)",
+    "annee": 2026
+  },
+  "questions": 6,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/cogsci_sujet-oral-sil-2026-1.pdf",
+    "sujet_sha256": "5ef24d4268873177131f40f2a914defebf383f0abdf47681205826a59dc714d1",
+    "article": "https://doi.org/10.1111/phpe.12201",
+    "prepublication": "https://philpapers.org/archive/CAPIMA.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison-premiere-tierce-personne.svg",
+      "question": "Q3",
+      "legende": "Comparaison proposée pour la discussion orale. Le système et un observateur voient les mêmes indices publics. On compare ensuite le pouvoir prédictif de leurs jugements."
+    },
+    {
+      "fichier": "figures/confiance-et-discrimination.svg",
+      "question": "Q6",
+      "legende": "Exemple fictif avec deux groupes de même taille. Le taux total est de 70 % dans les deux cas. Le jugement de droite distingue les groupes dont les taux de réussite diffèrent."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Lecture du sujet bilingue et de la prépublication intégrale de Cappelen et Dever, comparaison avec la notice éditoriale et son DOI. Rédaction des six réponses en français, du guide et de deux schémas originaux. Distinction des objections des auteurs, de leur thèse comparative et des propositions critiques personnelles."
+    }
+  ]
+}
