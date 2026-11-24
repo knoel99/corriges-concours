@@ -49,7 +49,12 @@
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
-    "verification": "Relecture des trente questions et sous-questions des deux versions avec le sujet MP-MPI et le rapport 2026. Vérification des changements de variable et de base, des cas limites, des moments et des schémas."
+    "verification": "Relecture des trente questions et sous-questions des deux versions avec le sujet MP-MPI et le rapport 2026. Vérification des changements de variable et de base, des cas limites, des moments et des schémas.",
+    "relecture_independante": {
+      "date": "2026-11-24",
+      "modele": "GPT-6.2 Astra (effort Ultra)",
+      "verification": "Troisième tour de relecture des 30 réponses des corrigés brut et guidé et de leurs sept schémas. Voir l’entrée de ce tour dans contributions."
+    }
   },
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20B.pdf",
