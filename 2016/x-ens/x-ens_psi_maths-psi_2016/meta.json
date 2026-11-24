@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_psi_maths-psi_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2016
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2016_Sujet_1C_PSI_Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "6c458b0c9a4635396423287a3e3dd64bf998f0388e3ba4e2723d4c3c91ee536c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rotations-et-reflexions.svg",
+      "question": "4",
+      "legende": "Dans chaque exemple, la rotation envoie le vecteur positif sur son symétrique par rapport à un axe de coordonnées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet original de sept pages. Distinction des quantificateurs en 2, demi-tour en 4, rectification des signes en 17 avec contre-exemple, fermeture de la récurrence et exclusivité de Farkas. Schéma des rotations et réflexions.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
