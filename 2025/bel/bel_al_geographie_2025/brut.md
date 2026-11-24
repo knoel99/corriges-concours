@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 **Problématique** — À quelles conditions l’aménagement qui rend l’eau disponible aujourd’hui peut-il préserver les milieux et les droits d’accès dont dépend sa disponibilité future ?
 
@@ -32,6 +34,10 @@ Un volume prélevé dans une rivière n’est pas entièrement consommé au sens
 
 En Asie centrale, les prélèvements opérés dans les bassins de l’Amou-Daria et du Syr-Daria pour l’irrigation, notamment du coton, ont réduit les apports à la mer d’Aral. L’augmentation des surfaces mises en valeur en amont s’est accompagnée d’une contraction considérable du plan d’eau, d’une augmentation de la salinité et de la perte de ressources halieutiques pour des riverains. Des surfaces de l’ancien fond lacustre sont devenues des sources de poussières chargées en sels. Le mot de ressource change ici de sens selon le lieu d’observation. L’eau détournée soutenait un système agricole, alors que l’eau laissée au milieu lacustre soutenait une pêche et des activités littorales. La comparaison des deux rives dans le temps oblige à intégrer des usagers qu’un calcul de rendement au champ laissait hors du périmètre de décision.
 
+Le delta du Colorado a fait l’objet d’une expérience qui permet de mesurer ce que « ménager » signifie en aval. En application de la Minute 319 conclue entre les États-Unis et le Mexique, environ 132 millions de mètres cubes ont été libérés entre le 23 mars et le 18 mai 2014. Environ 102 millions sont passés par le barrage de Morelos, les autres lâchers ayant eu lieu plus en aval. Le front de l’eau a progressé sur plus de 120 kilomètres jusqu’à l’estuaire. En chemin, les infiltrations ont rechargé temporairement la nappe. Depuis la prise d’irrigation, cette infiltration peut apparaître comme une perte de débit. Pour une ripisylve, elle peut maintenir de l’eau accessible aux racines. Le résultat serait donc différent selon que la collectivité mesure un volume écoulé à l’embouchure, la durée de recharge ou la réponse de la végétation. Une arrivée ponctuelle au golfe ne garantit pas un débit durable. Affecter une partie du stock au milieu suppose aussi un accord entre pays et entre usages concurrents. [Reconstitution hydrologique des huit semaines, USGS](https://pubs.usgs.gov/publication/70177847) · [Réponse mesurée de la nappe, USGS](https://pubs.usgs.gov/publication/70177951) · [Commission internationale des eaux et des frontières, rapport de suivi](https://www.ibwc.gov/wp-content/uploads/2023/06/Minute_319_Monitoring_Report_112818_FINAL.pdf)
+
+![Bas Colorado en 2014. Les lâchers du barrage et des points aval alimentent un même corridor jusqu’au golfe de Californie. Des infiltrations relient le lit et la nappe.](figures/delta-colorado-pulsion-2014.svg)
+
 La qualité fait également circuler les effets d’un aménagement. Une eau restituée immédiatement en aval d’une ville peut rester physiquement présente tout en exigeant un traitement supplémentaire pour l’usage suivant. Inversement, épurer une eau usée peut améliorer les conditions de vie aquatique et réduire le coût du captage en aval. Mais l’assainissement suppose des raccordements, une maintenance et des financements durables. Dans un quartier insuffisamment équipé, élargir effectivement l’accès à l’eau domestique et à l’évacuation des eaux usées relève aussi du ménagement. Une injonction générale à diminuer la consommation y risquerait de peser sur des besoins essentiels. Après les économies d’eau annoncées, il faut donc demander à qui la ressource est rendue, à quel prix et dans quel état.
 
 ## III. Ménager l’eau engage parfois à aménager autrement, parfois à défaire un ouvrage
@@ -47,3 +53,6 @@ En mer d’Aral, un nouvel ouvrage a au contraire servi un objectif de restaurat
 ## Conclusion
 
 Ménager l’eau revient à préserver les relations hydrologiques et sociales qui transforment une eau présente en ressource effectivement accessible. Un aménagement peut remplir cette fonction en sécurisant un approvisionnement ou en rendant une eau réutilisable. Il peut aussi déplacer vers l’aval des coûts qu’une mesure locale d’efficacité n’enregistre pas. Les choix du Cap, de Singapour, de la Loire et de l’Aral ont des effets différents parce que les usages, les milieux, les institutions et les périmètres de décision diffèrent. Dans un bassin confronté à des apports plus irréguliers, juger du succès d’une politique suppose finalement de pouvoir répondre à une question concrète. Après plusieurs saisons sèches, quels ménages, quelles activités et quels milieux disposent encore d’une eau utilisable ?
+
+
+[Sujet officiel avec fond de carte](https://www.ens-lyon.fr/sites/default/files/2025-07/Composition%20de%20g%C3%A9ographie.pdf) · [Rapport du jury de géographie](https://www.ens-lyon.fr/sites/default/files/2025-11/G%C3%A9ographie%202025%20RELU.pdf)

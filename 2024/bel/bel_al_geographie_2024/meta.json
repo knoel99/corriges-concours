@@ -17,7 +17,14 @@
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20de%20g%C3%A9ographie.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/G%C3%A9ographie%202024_0.pdf",
     "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/Cadrage%20pour%20la%20nouvelle%20question%20Union%20europ%C3%A9enne.pdf",
-    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson"
+    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson",
+    "sujet_sha256": "a9143cde7a379af6851e13464a9e977f205b40174465b2e8670fedd556598e30",
+    "rapport_sha256": "8a51b44107bc44f2fbf267a7c8fa22d0fec26336273117173ffd856851851f47",
+    "etude_de_cas": [
+      "https://commission.europa.eu/about/departments-and-executive-agencies/regional-and-urban-policy/green-line-regulation_en",
+      "https://unficyp.unmissions.org/en/about-unficyp",
+      "https://commission.europa.eu/news-and-media/news/commission-launches-new-eu-one-stop-shop-boost-green-line-trade-cyprus-2023-11-20_en"
+    ]
   },
   "figures": [
     {
@@ -34,13 +41,19 @@
       "fichier": "figures/guyane-et-maroni.svg",
       "question": "Partie III",
       "legende": "Le Maroni relie deux rives tout en formant une frontière extérieure de l’Union européenne."
+    },
+    {
+      "fichier": "figures/chypre-ligne-verte.svg",
+      "question": "Partie II",
+      "legende": "À Chypre, une ligne de contrôle à l’intérieur de l’Union traverse le centre de Nicosie. Le tracé est généralisé et ne représente pas la largeur de la zone tampon."
     }
   ],
   "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-24",
-    "modele": "Codex (GPT-6)",
-    "verification": "Contre-lecture indépendante du sujet et du rapport, p. 2 à 7. Distinction des statuts européens à la date de l’épreuve, vérification des exemples transfrontaliers et contrôle cartographique."
+    "modele": "gpt-6.2-astra",
+    "verification": "Révision des deux éditions sur le sujet et le rapport écrits. Qualification de la ligne verte, suspension territoriale de l’acquis, passage de Ledra, asymétrie voyageurs et marchandises, croquis de Chypre et consigne de transcription sur le fond officiel.",
+    "tour": 2
   },
   "provenance": {
     "redaction": {
@@ -52,10 +65,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -79,6 +91,19 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante du sujet et du rapport, p. 2 à 7. Distinction des statuts européens à la date de l’épreuve, vérification des exemples transfrontaliers et contrôle cartographique.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions sur le sujet et le rapport écrits. Qualification de la ligne verte, suspension territoriale de l’acquis, passage de Ledra, asymétrie voyageurs et marchandises, croquis de Chypre et consigne de transcription sur le fond officiel.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
