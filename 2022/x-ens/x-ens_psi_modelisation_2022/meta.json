@@ -1,0 +1,61 @@
+{
+  "slug": "x-ens_psi_modelisation_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2022,
+    "date": "2022-04-29"
+  },
+  "questions": 50,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_Modelisation.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_mod%C3%A9lisation.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q06-modele-hill.svg",
+      "question": "Q6",
+      "legende": "Une branche série réunit le ressort ES et l’élément contractile EC. Le ressort EP partage les deux extrémités de cette branche."
+    },
+    {
+      "fichier": "figures/q18-paroi-ventriculaire.svg",
+      "question": "Q18",
+      "legende": "Coupe normale à l’axe du ventricule. La résultante de pression vers le haut équilibre les deux tractions aux lèvres de la coupe."
+    },
+    {
+      "fichier": "figures/q24-profil-poiseuille.svg",
+      "question": "Q24",
+      "legende": "La vitesse est maximale au centre et nulle à la paroi. La pente radiale négative sur le demi-rayon positif rend le cisaillement résistant."
+    },
+    {
+      "fichier": "figures/q31-reponses-creneau.svg",
+      "question": "Q31",
+      "legende": "Réponses périodiques du Windkessel. Le débit est rapporté à son maximum et la surpression à Ra Qmax. Chaque fenêtre contient deux périodes."
+    },
+    {
+      "fichier": "figures/q40-voies-sigmoides.svg",
+      "question": "Q40",
+      "legende": "Changer le signe de T inverse la pente. Modifier le seuil déplace horizontalement le point de demi-réponse."
+    },
+    {
+      "fichier": "figures/q44-retard-fractionnaire.svg",
+      "question": "Q44",
+      "legende": "Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre X[2] et X[3]."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction des 50 questions sur la mécanique musculaire et ventriculaire, la circulation, le filtre barométrique et la simulation du SNA. Lecture des 25 pages du PDF et du rapport, confrontation des graphes et équations aux rendus de pages, six illustrations et vérification des programmes et des valeurs numériques."
+    }
+  ]
+}
