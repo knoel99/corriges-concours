@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp_informatique-a_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2017,
+    "duree_heures": 4
+  },
+  "questions": 18,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2017_Info_sujet_infoA.pdf",
+    "sujet_sha256": "6a98cb8ac882b6094aa81fc440286d76219e670467bed621d049f4392c533b90",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2017_Info_rap_eInfoA.pdf",
+    "rapport_sha256": "a7cc454297772190e2a875cf19327a27bfff32f0bfaeb5deab0d06b5f3296e32"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q03-deux-blocs.svg",
+      "question": "Q3",
+      "legende": "Deux blocs de trois coups conservent l’information du choix dans le résidu modulo 4. La première branche donne le résidu 1, la seconde le résidu 0."
+    },
+    {
+      "fichier": "figures/q15-tuile.svg",
+      "question": "Q15",
+      "legende": "La tuile 12 se déplace vers la gauche. Le vide se déplace vers la droite. La destination finale de 12 est la case (3,0), donc sa contribution à h passe de 2 à 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 18 questions sur la recherche optimale et le taquin. Lecture du sujet intégral et du rapport de jury. Deux figures originales. Compilation Caml Light des programmes des deux éditions, vérification indépendante par BFS, contrôle des profondeurs, de la restauration du plateau et du calcul incrémental de la distance de Manhattan."
+    }
+  ]
+}
