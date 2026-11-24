@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de printemps de la formation francophone, trois heures sans calculatrice. Les estimations suivent la précision demandée dans le sujet.
 
 ## Présentation du sujet
@@ -265,6 +267,8 @@ La branche circulaire stable satisfait $r_1>6b$ (voir 14). Si $r_0=\ell^2/(GMm^2
 
 ![Figure 4 — Allure formelle pour ℓ/(mcb) égal à 4. Le comportement à très petit rayon se situe hors du régime de champ faible du sujet.](figures/potentiel-relativiste-formel.svg)
 
+Le cas limite des deux extrema permet de préciser le domaine de stabilité. À $r_0=12b$, leur rayon commun est $r=6b$ et la dérivée du potentiel comporte une racine double. Elle conserve son signe de part et d’autre, si bien que le point stationnaire est une inflexion horizontale. La pulsation radiale calculée à la question 14 s’y annule. La branche stable de ce potentiel est celle des rayons strictement supérieurs à $6b$.
+
 ### Question 13
 
 > [!INDICATION]
@@ -318,6 +322,8 @@ La courbe se décale à chaque révolution au lieu de retracer une ellipse fixe.
 Un siècle contient environ $100\times365/88\simeq415$ tours. Dans l’approximation quasi circulaire avec les valeurs fournies,
 $$\Delta\varpi_{100}\simeq415\times360^\circ\times7{,}7\times10^{-8}\simeq0{,}0115^\circ\simeq41''.$$
 À la précision visée, $0{,}0115^\circ$ s’arrondit à **$0{,}012^\circ$**, soit environ **$43''$** si l’on convertit la valeur arrondie. L’orbite réelle de Mercure est légèrement excentrique. Dans le calcul relativiste elliptique, le demi-latus rectum $a_{\rm ell}(1-e^2)$ remplace le rayon circulaire. Cette correction explique également le passage d’environ $41''$ à la valeur physique voisine de $43''$ par siècle.
+
+Le remplacement du rayon par le paramètre orbital se démontre directement avec le potentiel du sujet. Posons $u=1/r$ et $p=\ell^2/(GMm^2)$. L’équation de Binet devient $u''+u=1/p+3bu^2$ (dérivées en angle polaire). Dans la correction du premier ordre on insère $u_0=(1+e\cos\theta)/p$. La composante résonante du second membre est $(6be/p^2)\cos\theta$. Elle produit le terme $(3be/p^2)\theta\sin\theta$, c’est-à-dire le premier développement de $(e/p)\cos[(1-3b/p)\theta]$. La précession vaut donc $6\pi b/p$ par révolution. Pour une ellipse $p=a(1-e^2)$, ce qui justifie le facteur de correction cité pour Mercure.
 
 ## Bilan
 

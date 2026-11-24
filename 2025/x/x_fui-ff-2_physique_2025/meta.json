@@ -16,7 +16,8 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-%20FF%202%202025%20Phys.pdf",
-    "rapport_jury": null
+    "rapport_jury": null,
+    "sujet_sha256": "2909e64ea49d9418348221c139e8594dfdf88c5df24a3dc4517d0ea6cea2f91d"
   },
   "revision": {
     "date": "2026-11-24",
@@ -99,6 +100,18 @@
       "modifications": null,
       "perimetre": "Garde officielle contrôlée. Vérifications de la puissance 2/3, des quadratures et de la charge induite totale. Contre-calcul indépendant des questions 5.e, 6.c, C et D.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Révision des deux éditions à partir du fac-similé du sujet. Recalcul des solutions ouverte, fermée et critique du modèle cosmologique, des singularités et du champ électrostatique près du plan conducteur.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
