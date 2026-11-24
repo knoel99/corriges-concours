@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_pc_maths-pc_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2020
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_PC_sujet_Math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_PC_rap_eMath.pdf",
+    "sha256_sujet": "eb1d4fc7525fc6b9e95d69e00c749a1e79cc7958955903daa4e5c49a8c410ef9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/interpolation-gaussienne.svg",
+      "question": "18",
+      "legende": "Les trois gaussiennes pondérées en tirets donnent par addition l’unique interpolante minimale passant par les points."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des questions et sous-questions, contrôle de la continuité du convolué et des constantes, indépendance des gaussiennes et strict caractère défini positif de leur matrice de Gram, figure numérique d’interpolation.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
