@@ -1,0 +1,55 @@
+{
+  "slug": "bel_bl_chinois_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Chinois",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=14"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-decisions.svg",
+      "question": "Document 1",
+      "legende": "Trois décisions à distinguer"
+    },
+    {
+      "fichier": "figures/carte-argument.svg",
+      "question": "Plan",
+      "legende": "Évaluer la réforme des formations"
+    },
+    {
+      "fichier": "figures/flux-et-solde.svg",
+      "question": "Documents 1 et 2",
+      "legende": "Que comptent les deux articles ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante des deux sources chinoises, des dates distinctes et des 1 673 créations / 1 670 suppressions de formations. Les deux PDF ont été contrôlés par extraction et comparaison de chaque paragraphe chinois."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

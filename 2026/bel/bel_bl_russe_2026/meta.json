@@ -1,0 +1,46 @@
+{
+  "slug": "bel_bl_russe_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Russe",
+    "annee": 2026
+  },
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=37",
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-mesures.svg",
+      "question": "Indicateurs",
+      "legende": "Три показателя отвечают на разные вопросы. Число рождений за год не равно итоговому числу детей у поколения."
+    },
+    {
+      "fichier": "figures/points-de-vue.svg",
+      "question": "Sources",
+      "legende": "Различия между журналистской проверкой гипотез и политической постановкой целей."
+    },
+    {
+      "fichier": "figures/choix-et-etat.svg",
+      "question": "Argument",
+      "legende": "Государственная цель, реальные возможности семьи и индивидуальное решение."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

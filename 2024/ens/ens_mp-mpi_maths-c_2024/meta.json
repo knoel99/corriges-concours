@@ -1,0 +1,67 @@
+{
+  "slug": "ens_mp-mpi_maths-c_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP/MPI",
+    "matiere": "Maths C",
+    "annee": 2024
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/24_mp_sujet_mathc.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/24_mp_rap_emathc.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/i7-cesaro.svg",
+      "question": "QI.7",
+      "legende": "Les termes de la suite alternée gardent deux valeurs distinctes. Les moyennes de Cesàro, en bleu, convergent vers zéro."
+    },
+    {
+      "fichier": "figures/ii1-secteur.svg",
+      "question": "QII.1e",
+      "legende": "Dans le disque unité, le secteur impose une approche de 1 qui reste à distance angulaire des tangentes au cercle."
+    },
+    {
+      "fichier": "figures/ii5-seuil.svg",
+      "question": "QII.5e",
+      "legende": "Pour x égal à deux à la puissance −1/8, le poids indicateur sélectionne exactement les indices de zéro à huit."
+    },
+    {
+      "fichier": "figures/ii5-enveloppes.svg",
+      "question": "QII.5f",
+      "legende": "La fonction h saute de −2 à 2 au milieu du segment. Les transitions continues du minorant et du majorant se placent de part et d’autre du saut et limitent l’aire de leur écart."
+    },
+    {
+      "fichier": "figures/iii2-moyenne.svg",
+      "question": "QIII.2",
+      "legende": "La fonction sinus continue d’osciller, tandis que sa moyenne intégrale tend vers zéro."
+    },
+    {
+      "fichier": "figures/iii6-dirichlet.svg",
+      "question": "QIII.6",
+      "legende": "Quand la borne supérieure croît, l’intégrale du sinus cardinal oscille autour de π/2 avec une amplitude décroissante."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Comparaison des 39 réponses au sujet officiel et au rapport de jury. Contrôle des constantes uniformes pour les bornes de Hardy, de la position des enveloppes en II.5f et du changement de variable dans la preuve taubérienne continue."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

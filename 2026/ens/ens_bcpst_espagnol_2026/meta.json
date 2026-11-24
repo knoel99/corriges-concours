@@ -1,0 +1,40 @@
+{
+  "slug": "ens_bcpst_espagnol_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "BCPST",
+    "matiere": "Espagnol",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/actores-locales.svg",
+      "question": "I",
+      "legende": "Trois positions du dossier à confronter dans la synthèse."
+    },
+    {
+      "fichier": "figures/tres-plazos.svg",
+      "question": "II",
+      "legende": "Les calendriers d’une décision énergétique n’affectent pas tous les acteurs de la même manière."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=10",
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst"
+  },
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

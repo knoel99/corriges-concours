@@ -1,0 +1,56 @@
+{
+  "slug": "x_fui-ff-2_anglais_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Anglais",
+    "annee": 2024
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/estate-transfers.svg",
+      "question": "2",
+      "legende": "When family assets reach another generation"
+    },
+    {
+      "fichier": "figures/tenure-data.svg",
+      "question": "4",
+      "legende": "Two different denominators in Hunt’s article"
+    },
+    {
+      "fichier": "figures/essay-tenants.svg",
+      "question": "E",
+      "legende": "Using and testing a generational label"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20ANGLAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante de la compréhension, des lignes citées et de l’essai face aux originaux de Monbiot ou Hunt. Longueurs et reformulation contrôlées."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

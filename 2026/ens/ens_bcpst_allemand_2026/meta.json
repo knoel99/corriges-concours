@@ -1,0 +1,40 @@
+{
+  "slug": "ens_bcpst_allemand_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "BCPST",
+    "matiere": "Allemand",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/wege-der-kleidung.svg",
+      "question": "I",
+      "legende": "Drei Eingriffe setzen an verschiedenen Stellen im Lebenslauf eines Kleidungsstücks an."
+    },
+    {
+      "fichier": "figures/umfrage.svg",
+      "question": "II",
+      "legende": "Deux pourcentages du document 3 et leur dénominateur."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=2",
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst"
+  },
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

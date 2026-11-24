@@ -106,9 +106,11 @@
 | 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
 | 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2026 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/brut.md) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/guide.md) |
 | 2024 | BEL | AL | Géographie | [md](2024/bel/bel_al_geographie_2024/brut.md) | [md](2024/bel/bel_al_geographie_2024/guide.md) |
 | 2025 | BEL | AL | Géographie | [md](2025/bel/bel_al_geographie_2025/brut.md) | [md](2025/bel/bel_al_geographie_2025/guide.md) |
 | 2026 | BEL | AL | Géographie | [md](2026/bel/bel_al_geographie_2026/brut.md) | [md](2026/bel/bel_al_geographie_2026/guide.md) |
@@ -120,6 +122,7 @@
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
 | 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
+| 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Composition française | [md](2026/bel/bel_bl_composition-francaise_2026/brut.md) | [md](2026/bel/bel_bl_composition-francaise_2026/guide.md) |
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
@@ -134,6 +137,8 @@
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
 | 2026 | BEL | BL | Philosophie | [md](2026/bel/bel_bl_philosophie_2026/brut.md) | [md](2026/bel/bel_bl_philosophie_2026/guide.md) |
+| 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
+| 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
@@ -367,16 +372,23 @@
 | 2026 | ENS Rennes | 2SEP | Physiologie (SVSAPS 2) | [md](2026/ens-rennes/ens-rennes_2sep_physiologie-svsaps-2_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_physiologie-svsaps-2_2026/guide.md) |
 | 2026 | ENS Rennes | 2SEP | Sciences humaines (SHSAPS 1) | [md](2026/ens-rennes/ens-rennes_2sep_sciences-humaines-shsaps-1_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_sciences-humaines-shsaps-1_2026/guide.md) |
 | 2026 | ENS Rennes | 2SEP | Sciences sociales (SHSAPS 2) | [md](2026/ens-rennes/ens-rennes_2sep_sciences-sociales-shsaps-2_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_sciences-sociales-shsaps-2_2026/guide.md) |
+| 2026 | ENS | BCPST | Allemand | [md](2026/ens/ens_bcpst_allemand_2026/brut.md) | [md](2026/ens/ens_bcpst_allemand_2026/guide.md) |
+| 2026 | ENS | BCPST | Anglais | [md](2026/ens/ens_bcpst_anglais_2026/brut.md) | [md](2026/ens/ens_bcpst_anglais_2026/guide.md) |
 | 2026 | ENS | BCPST | Biologie | [md](2026/ens/ens_bcpst_biologie_2026/brut.md) | [md](2026/ens/ens_bcpst_biologie_2026/guide.md) |
 | 2026 | ENS | BCPST | Chimie | [md](2026/ens/ens_bcpst_chimie_2026/brut.md) | [md](2026/ens/ens_bcpst_chimie_2026/guide.md) |
+| 2026 | ENS | BCPST | Espagnol | [md](2026/ens/ens_bcpst_espagnol_2026/brut.md) | [md](2026/ens/ens_bcpst_espagnol_2026/guide.md) |
+| 2026 | ENS | BCPST | Français | [md](2026/ens/ens_bcpst_francais_2026/brut.md) | [md](2026/ens/ens_bcpst_francais_2026/guide.md) |
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
 | 2026 | ENS | MP-MPI | Informatique fondamentale | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/brut.md) | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/guide.md) |
+| 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
 | 2020 | ENS | MP | Maths C | [md](2020/ens/ens_mp_maths-c_2020/brut.md) | [md](2020/ens/ens_mp_maths-c_2020/guide.md) |
 | 2021 | ENS | MP | Maths C | [md](2021/ens/ens_mp_maths-c_2021/brut.md) | [md](2021/ens/ens_mp_maths-c_2021/guide.md) |
 | 2021 | ENS | MP | Maths D | [md](2021/ens/ens_mp_maths-d_2021/brut.md) | [md](2021/ens/ens_mp_maths-d_2021/guide.md) |
+| 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
+| 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
@@ -532,6 +544,7 @@
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
 | 2022 | X | FUI-FF 1 | Anglais | [md](2022/x/x_fui-ff-1_anglais_2022/brut.md) | [md](2022/x/x_fui-ff-1_anglais_2022/guide.md) |
 | 2023 | X | FUI-FF 1 | Anglais | [md](2023/x/x_fui-ff-1_anglais_2023/brut.md) | [md](2023/x/x_fui-ff-1_anglais_2023/guide.md) |
+| 2024 | X | FUI-FF 1 | Anglais | [md](2024/x/x_fui-ff-1_anglais_2024/brut.md) | [md](2024/x/x_fui-ff-1_anglais_2024/guide.md) |
 | 2022 | X | FUI-FF 1 | Français | [md](2022/x/x_fui-ff-1_francais_2022/brut.md) | [md](2022/x/x_fui-ff-1_francais_2022/guide.md) |
 | 2023 | X | FUI-FF 1 | Français | [md](2023/x/x_fui-ff-1_francais_2023/brut.md) | [md](2023/x/x_fui-ff-1_francais_2023/guide.md) |
 | 2024 | X | FUI-FF 1 | Français | [md](2024/x/x_fui-ff-1_francais_2024/brut.md) | [md](2024/x/x_fui-ff-1_francais_2024/guide.md) |
@@ -540,6 +553,7 @@
 | 2024 | X | FUI-FF 1 | Physique | [md](2024/x/x_fui-ff-1_physique_2024/brut.md) | [md](2024/x/x_fui-ff-1_physique_2024/guide.md) |
 | 2022 | X | FUI-FF 2 | Anglais | [md](2022/x/x_fui-ff-2_anglais_2022/brut.md) | [md](2022/x/x_fui-ff-2_anglais_2022/guide.md) |
 | 2023 | X | FUI-FF 2 | Anglais | [md](2023/x/x_fui-ff-2_anglais_2023/brut.md) | [md](2023/x/x_fui-ff-2_anglais_2023/guide.md) |
+| 2024 | X | FUI-FF 2 | Anglais | [md](2024/x/x_fui-ff-2_anglais_2024/brut.md) | [md](2024/x/x_fui-ff-2_anglais_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Anglais | [md](2025/x/x_fui-ff-2_anglais_2025/brut.md) | [md](2025/x/x_fui-ff-2_anglais_2025/guide.md) |
 | 2022 | X | FUI-FF 2 | Français | [md](2022/x/x_fui-ff-2_francais_2022/brut.md) | [md](2022/x/x_fui-ff-2_francais_2022/guide.md) |
 | 2023 | X | FUI-FF 2 | Français | [md](2023/x/x_fui-ff-2_francais_2023/brut.md) | [md](2023/x/x_fui-ff-2_francais_2023/guide.md) |
