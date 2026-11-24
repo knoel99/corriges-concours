@@ -3,10 +3,40 @@
   "epreuve": {
     "concours": "X-ENS",
     "filiere": "MP",
-    "matiere": "Mathématiques A",
+    "matiere": "Maths A",
     "annee": 2024
   },
   "questions": 44,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/q09-cycles.svg",
+      "question": "9",
+      "legende": "Les onze permutations à deux cycles comprennent huit cycles de longueur trois avec un point fixe et trois produits de deux transpositions disjointes."
+    },
+    {
+      "fichier": "figures/q22c-couples-premiers.svg",
+      "question": "22c",
+      "legende": "Fenêtre sur les couples ordonnés de premiers pour x = 80. Sous l’hyperbole, les deux premiers possèdent un multiple commun inférieur ou égal à 80. La diagonale relève de la question suivante."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI%20SUJET%20MATHS%20A%20%28XLSR%29.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLSR%29.pdf",
+    "sha256_sujet": "5ad912ddec85dbf029db9e9d7d23777c6cde0eea83c1fb927402eb358f115d0f"
+  },
+  "contributions": [
+    {
+      "phase": "revision",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle des 44 réponses, indications et commentaires contre le sujet MP-MPI et le rapport. Vérification des deux moments et du seuil de Markov, dénombrement illustré des cycles dans S4, matérialisation des couples ordonnés et explicitation du coût des parties entières en 22c. Deux figures nouvelles. Le libellé de matière du catalogue est rétabli.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
 }
