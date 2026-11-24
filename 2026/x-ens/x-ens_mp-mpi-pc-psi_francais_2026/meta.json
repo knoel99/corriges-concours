@@ -34,9 +34,11 @@
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Fran%C3%A7ais.pdf",
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_francais_xusr_26.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20Filieres_Fran%C3%A7ais%20OK.pdf",
-    "programme": "https://www.education.gouv.fr/bo/2025/Hebdo23/MENS2514209A"
+    "programme": "https://www.education.gouv.fr/bo/2025/Hebdo23/MENS2514209A",
+    "sujet_sha256": "62c2e80f2038769e6db5600a1712f41b32e8cdaafefd2e21b3766a48cf377b4e",
+    "rapport_sha256": "eae7c0b298ad22652035e6c25ab0431e48d56346a0eac2a0dff0779b761b1581"
   },
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -80,6 +82,30 @@
       "perimetre": "Contre-relecture indépendante du sujet commun, du rapport 2026, du plan et de la dissertation. Vérification du thème et du recours aux trois œuvres prescrites.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la discussion du jury sur le statut de la nature donatrice, l’expérience comme formation du sujet et l’habitude à partir du manque."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la citation de Condillac, du programme et des exemples dans les deux éditions ; développement sur le temps de l’avertissement et celui de l’anticipation chez Haushofer."
     }
   ]
 }

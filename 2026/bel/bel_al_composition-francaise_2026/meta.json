@@ -20,7 +20,7 @@
       "legende": "Au chapitre XVIII de Léry, trois voix interviennent dans la formation du nom par lequel le voyageur se fait reconnaître."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -29,7 +29,9 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/al_commun_francais.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202026_0.pdf",
-    "texte_lery": "https://fr.wikisource.org/wiki/Histoire_d%E2%80%99un_voyage_faict_en_la_terre_du_Br%C3%A9sil/18"
+    "texte_lery": "https://fr.wikisource.org/wiki/Histoire_d%E2%80%99un_voyage_faict_en_la_terre_du_Br%C3%A9sil/18",
+    "sujet_sha256": "8a862dda1f03b41684613944a986497b24863d642a969f9567e2d2b5cd0daff7",
+    "rapport_sha256": "6c0bf330d4bbdbe882ccbcdcea189f9a6f3f52864db51cd2fb687fa910b387dc"
   },
   "provenance": {
     "redaction": {
@@ -88,6 +90,30 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 3
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la section écrite et du commentaire des deux universels, de l’inversion entre genre et espèce et du sens de l’adverbe impunément."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des deux éditions sur Viegnes et les œuvres, distinction du terme matériel et du but intérieur du voyage par une relecture du passage de l’Opéra."
     }
   ]
 }
