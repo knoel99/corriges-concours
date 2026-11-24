@@ -6,7 +6,7 @@ Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir le
 
 - Une session **GPT-6.2 Astra Ultra** a rédigé ou relu sur le fond le corrigé brut et le corrigé guidé en les confrontant au sujet et, s’il existe, au rapport correspondant.
 - Le journal de l’épreuve décrit l’intervention et sa portée. Les deux éditions reprennent sa signature, avec la vitesse enregistrée ou la mention « vitesse non renseignée ». Les rédactions et révisions antérieures conservent leurs propres signatures. [Format des signatures](../../CONTRIBUTING.md#signer-une-rédaction-ou-une-révision-par-ia)
-- Les deux textes disponibles sur le site correspondent aux sources GitHub. La première page de chacun des deux PDF porte la signature attendue.
+- Les deux textes de l’onglet Markdown correspondent aux fichiers GitHub. La signature apparaît dans le corps de chaque corrigé en vue Lecture et sur la première page du PDF accessible depuis cette même vue.
 
 ## Lire le bilan
 

@@ -9,10 +9,12 @@ import json
 import re
 import subprocess
 import sys
+import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
@@ -155,20 +157,77 @@ class SourceHTML(HTMLParser):
             self.blocs[-1].append(texte)
 
 
+class LectureHTML(HTMLParser):
+    """Texte du corrigé effectivement affiché et lien PDF proposé au lecteur."""
+
+    def __init__(self, nature: str):
+        super().__init__()
+        self.nature = nature
+        self.dans_article = False
+        self.paragraphe = None
+        self.paragraphes = []
+        self.documents = set()
+
+    def handle_starttag(self, tag, attrs):
+        attributs = dict(attrs)
+        if tag == "article" and "copie-prose" in attributs.get("class", "").split():
+            self.dans_article = True
+        if tag == "p" and self.dans_article:
+            self.paragraphe = []
+        if tag == "a":
+            lien = attributs.get("href") or ""
+            if re.fullmatch(
+                rf"/api/catalog/documents/corriges/[a-z0-9_-]+/{self.nature}\.pdf", lien
+            ):
+                self.documents.add(lien)
+
+    def handle_data(self, texte):
+        if self.paragraphe is not None:
+            self.paragraphe.append(texte)
+
+    def handle_endtag(self, tag):
+        if tag == "p" and self.paragraphe is not None:
+            self.paragraphes.append(" ".join("".join(self.paragraphe).split()))
+            self.paragraphe = None
+        if tag == "article":
+            self.dans_article = False
+
+    def signatures(self):
+        entetes = set()
+        for texte in self.paragraphes:
+            if " · " in texte:
+                entetes.add(DATE_SIGNATURE.sub("", texte))
+            elif "Corrigé rédigé par IA" not in texte:
+                break
+        return entetes
+
+
 def telecharger(url: str) -> bytes:
     requete = Request(url, headers={"User-Agent": "Verification-corriges-X-ENS/1.0"})
-    with urlopen(requete, timeout=30) as reponse:
-        return reponse.read()
+    for tentative in range(3):
+        try:
+            with urlopen(requete, timeout=25) as reponse:
+                return reponse.read()
+        except (TimeoutError, URLError) as exc:
+            if (
+                tentative == 2
+                or isinstance(exc, HTTPError)
+                and exc.code not in {429, 500, 502, 503, 504}
+            ):
+                raise
+            time.sleep(2**tentative)
 
 
 def site_verifie(dossier: Path, fiche: str, signatures: set[str]) -> bool:
+    libelles = {s.replace("**", "") for s in signatures}
     for nature in ("brut", "guide"):
+        url = f"{SITE}/epreuves/{fiche}?doc=corrige&mode={nature}"
+        lecture = LectureHTML(nature)
+        lecture.feed(telecharger(url).decode())
+        if not libelles <= lecture.signatures() or len(lecture.documents) != 1:
+            return False
         source = SourceHTML()
-        source.feed(
-            telecharger(
-                f"{SITE}/epreuves/{fiche}?doc=corrige&mode={nature}&vue=source"
-            ).decode()
-        )
+        source.feed(telecharger(url + "&vue=source").decode())
         attendu = (dossier / f"{nature}.md").read_text(encoding="utf-8").strip()
         if not any(
             "".join(bloc)
@@ -178,7 +237,7 @@ def site_verifie(dossier: Path, fiche: str, signatures: set[str]) -> bool:
             for bloc in source.blocs
         ):
             return False
-        pdf = telecharger(f"{SITE}/api/catalog/documents/corriges/{fiche}/{nature}.pdf")
+        pdf = telecharger(SITE + lecture.documents.pop())
         if not pdf.startswith(b"%PDF-"):
             return False
         sortie = subprocess.run(
@@ -188,7 +247,7 @@ def site_verifie(dossier: Path, fiche: str, signatures: set[str]) -> bool:
             check=True,
         )
         texte = " ".join(sortie.stdout.decode().split("\f", 1)[0].split())
-        if not all(ligne.replace("**", "") in texte for ligne in signatures):
+        if not all(libelle in texte for libelle in libelles):
             return False
     return True
 
