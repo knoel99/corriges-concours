@@ -1,0 +1,72 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie",
+    "annee": 2026
+  },
+  "intitule": "Hume et la conversion de la peine en plaisir esthétique",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_-_explication_de_texte_si_philosophie_sil_2026.pdf",
+    "sujet_sha256": "65b5cafbe47e93348dc173a62b8e507dc89d0412ba8f76a2427bcf37e98d3e52",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_de_philosophie_sil2026.pdf",
+    "rapport_sha256": "48bc5c089b1ff6293eaa61c52aa9af2121abba90169984b209cf2ed597536433"
+  },
+  "figures": [
+    {
+      "fichier": "figures/mouvements-esthetiques.svg",
+      "question": "Composition",
+      "legende": "La relation entre les deux mouvements chez Hume"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de philosophie et des deux consignes du fascicule, explication puis réflexion personnelle."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de l’ordre des phrases, de la hiérarchie des mouvements et de la distinction entre plaisir et jugement dans la discussion finale."
+    }
+  ]
+}

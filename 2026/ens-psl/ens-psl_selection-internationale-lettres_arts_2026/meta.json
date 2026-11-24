@@ -1,0 +1,78 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_arts_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Arts",
+    "annee": 2026
+  },
+  "intitule": "Écriture et arts visuels dans l’art en Europe au XXe siècle",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_arts_sil_2026_ens_psl.pdf",
+    "sujet_sha256": "1355598b0d0cd97e881153a2b3c0bf45f63d2355379cd7f57696f4121110f02c",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_sil_2026_arts_ens_psl.pdf",
+    "rapport_sha256": "fce958eb420a6e38e64f312203aa2c246de27213ab9dd7774eec3e0554ddff6e",
+    "references": [
+      "https://www.centrepompidou.fr/fr/ressources/oeuvre/cX458y9",
+      "https://collections.lacma.org/object/31931",
+      "https://www.heartfield.adk.de/node/3763",
+      "https://www.moma.org/collection/works/146983"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/regarder-et-lire.svg",
+      "question": "Composition",
+      "legende": "Quatre opérations proposées au spectateur"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Contrôle de l’intitulé et des remarques du jury sur la problématisation et les références concrètes."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des quatre cas aux notices de collection, vérification des supports du livre de 1913 et de l’opération sur Mallarmé en 1969."
+    }
+  ]
+}

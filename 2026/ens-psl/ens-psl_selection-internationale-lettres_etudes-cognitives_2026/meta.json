@@ -1,0 +1,75 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-cognitives_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études cognitives",
+    "annee": 2026
+  },
+  "intitule": "De l’intention à l’expérience d’agir chez Élisabeth Pacherie",
+  "gabarit": "questions",
+  "questions": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/cogsci_sujet-ecrit-sil-2026-1.pdf",
+    "sujet_sha256": "902251a993beaa67c183fa5787a6ef2b3f80a2350f058bafa88eb2c2caf561b7",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_etudes_cognitives_sil_2026.pdf",
+    "rapport_sha256": "0ef10e7a5a9752247b9114a4b8fcbfc9884b1d9c9a9222efb438a8fc7d5a082d",
+    "references": [
+      "https://doi.org/10.1016/j.cognition.2007.09.003"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/intentions-d-p-m.svg",
+      "question": "Questions 2 et 3",
+      "legende": "Trois niveaux de contrôle pendant l’envoi d’un colis"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Le rapport écrit confirme la session 2026, la durée et les six questions sur Élisabeth Pacherie. Confrontation au fascicule bilingue et aux p. 180–190 de l’article."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des six réponses, contrôle de la coexistence des niveaux et des limites de l’expérience. Différenciation entre déclenchement par M et intervention ultérieure de P."
+    }
+  ]
+}

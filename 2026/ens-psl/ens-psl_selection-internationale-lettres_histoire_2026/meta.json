@@ -1,0 +1,78 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire",
+    "annee": 2026
+  },
+  "intitule": "Trois questions d’historiographie",
+  "gabarit": "questions",
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_-_histoire_-_sil_2026.pdf",
+    "sujet_sha256": "013a89340c47c8debf13ae8a9284e884219483c079bba96fcc0417b5eee51aab",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_jury_sil_-_histoire_2026.pdf",
+    "rapport_sha256": "b1d796b27f0c1ab148d68041983c4bcc7c638973e738e28f6100e6e741984219",
+    "references": [
+      "https://www.ofpra.gouv.fr/dossier/nos-fonds-darchives/archives-en-ligne",
+      "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:11957EN04",
+      "https://www.persee.fr/doc/ahess_0395-2649_1987_num_42_4_283428",
+      "https://catalogue.bnf.fr/ark:/12148/cb435327045"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/operations-historiographiques.svg",
+      "question": "Trois sujets individualisés",
+      "legende": "Trois questions, trois tests documentaires"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Confrontation des trois questions personnalisées du sujet aux remarques méthodologiques du rapport."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle de la distinction entre dossiers inconnus et exemples proposés, de la chronologie des exemples et des catégories méthodologiques."
+    }
+  ]
+}
