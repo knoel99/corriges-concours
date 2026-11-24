@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="234" viewBox="0 0 720 234" role="img" aria-labelledby="titre desc">
+<title id="titre">Un groupe d’ordre 81 en dimension sept</title>
+<desc id="desc">Trois plans de coordonnées portent indépendamment les trois puissances d’une matrice C. Une même permutation envoie le premier plan sur le deuxième, le deuxième sur le troisième et le troisième sur le premier. La septième direction reste fixe.</desc>
+<defs><marker id="fleche" viewBox="0 0 9 8" refX="8" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L9 4 0 8z" fill="#14685d"/></marker></defs>
+<rect width="720" height="234" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" text-anchor="middle">
+<g fill="none" stroke="#14685d" stroke-width="2.5" marker-end="url(#fleche)"><path d="M153 103h36"/><path d="M330 103h36"/><path d="M448 80C448 22 97 22 97 75"/></g>
+<text x="274" y="22" font-size="15" fill="#14685d">Permutation cyclique des trois plans</text>
+<g fill="#e6eff6" stroke="#365b76" stroke-width="2"><rect x="20" y="83" width="133" height="64" rx="8"/><rect x="197" y="83" width="133" height="64" rx="8"/><rect x="374" y="83" width="133" height="64" rx="8"/></g>
+<rect x="551" y="83" width="145" height="64" rx="8" fill="#f3f2eb" stroke="#77745f" stroke-width="2"/>
+<g fill="#20384b" font-size="17"><text x="86" y="109">Plan 1</text><text x="263" y="109">Plan 2</text><text x="440" y="109">Plan 3</text><text x="624" y="109">Droite fixe</text></g>
+<g fill="#344650" font-size="15"><text x="86" y="134">e₁, e₂</text><text x="263" y="134">e₃, e₄</text><text x="440" y="134">e₅, e₆</text><text x="624" y="134">e₇</text></g>
+<g fill="#283a4b" font-size="15"><text x="266" y="179">Sur chaque plan, trois choix indépendants : I, C, C².</text><text x="360" y="214" font-size="18" font-weight="bold">3 × 3 × 3 choix diagonaux, puis 3 permutations : 81 matrices.</text></g></g>
+</svg>
