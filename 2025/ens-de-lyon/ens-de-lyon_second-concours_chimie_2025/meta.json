@@ -10,7 +10,9 @@
   "redaction": "IA (OpenAI Codex, famille GPT-6)",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_chimie.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eChi.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eChi.pdf",
+    "sujet_sha256": "b9f416dea1a928cd4b5ab9b57c03181fe937e0de37ae1cf3fd250c447e568cf4",
+    "rapport_sha256": "27eee81112280f78e7852ffea0ae8a33e6f6e3fabaae94897ea538540be4c3b9"
   },
   "figures": [
     {
@@ -62,6 +64,11 @@
       "fichier": "figures/q60-lewis-trifluorure.svg",
       "question": "Q60",
       "legende": "La géométrie trigonale plane du trifluorure de bore laisse une orbitale vacante sur le bore."
+    },
+    {
+      "question": "Q26",
+      "fichier": "figures/q26-bilan-triiodure.svg",
+      "legende": "Le thiosulfate mesure le triiodure restant. La différence avec la quantité apportée donne la quantité de vitamine C."
     }
   ],
   "date_revision": "2026-11-24",
@@ -136,7 +143,8 @@
       62,
       63,
       64
-    ]
+    ],
+    "precision": "48 questions traitées intégralement et 4 partiellement. Q46 et Q49 couvrent les propriétés générales, Q52 la lecture des familles de protons, Q53 les formes de Lewis. La voie de construction de la zéaralénone demeure hors périmètre."
   },
   "provenance": {
     "redaction": {
@@ -158,6 +166,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le sujet et le rapport de jury 2025. Contrôle des orbitales, des courbes tension–courant, du bilan du dosage en retour et des ordres cinétiques. Intégration numérique du modèle du glutathion comparée à la solution analytique. En partie III, seules les notions de chimie indépendantes de la synthèse de la mycotoxine sont couvertes."
     }
   ]
 }
