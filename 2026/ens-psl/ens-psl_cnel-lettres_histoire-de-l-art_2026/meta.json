@@ -1,0 +1,58 @@
+{
+  "slug": "ens-psl_cnel-lettres_histoire-de-l-art_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Histoire de l’art",
+    "annee": 2026,
+    "date": "2026-06-02",
+    "duree_heures": 3
+  },
+  "intitule": "Les mots dans les arts visuels",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
+    "page_sujet": 4,
+    "sujet_sha256": "4f032bb394ecb223ce6827de20caada0c29d10558e4ba4b8cb74b077a11f90d5",
+    "references": [
+      "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/museo-gregoriano-etrusco/sala-xix--emiciclo-inferiore--collezione-dei-vasi--ceramica-atti/anfora-attica-a-figure-nere-firmata-da-exekias.html",
+      "https://www.metmuseum.org/art/collection/search/451802",
+      "https://www.nationalgallery.org.uk/paintings/catalogues/campbell-1998/the-arnolfini-portrait",
+      "https://cep.museepicassoparis.fr/explorer/nature-morte-la-chaise-cannee-mp36",
+      "https://www.museepicassoparis.fr/fr/chefs-d-oeuvre/nature-morte-a-la-chaise-cannee/",
+      "https://www.sammlung.pinakothek.de/de/artwork/jpxe1JnxJ7",
+      "https://www.moma.org/collection/works/81435",
+      "https://www.guggenheim.org/artwork/artist/jenny-holzer",
+      "https://www.publicartfund.org/exhibitions/view/messages-to-the-public/messages-to-the-public-holzer/",
+      "https://www.guggenheim.org/audio/track/introduction-to-jenny-holzer-light-line"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-parcours-de-lecture.svg",
+      "question": "Composition",
+      "legende": "Deux parcours de lecture. Le cercle du bol conduit l’œil le long d’une inscription fixe. Dans la rotonde de Holzer, la ligne défile devant un lecteur lui-même mobile. Schémas de principe."
+    },
+    {
+      "fichier": "figures/picasso-magritte-kosuth.svg",
+      "question": "Composition",
+      "legende": "Trois opérations confiées au spectateur. Un fragment appelle un complément, une légende appelle une vérification, une définition appelle une comparaison."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction de la dissertation et du guide à partir de la page 4 du rapport ENS-PSL. Étude de l’amphore d’Exékias, du bol de Nichapour, de Van Eyck, Picasso, Magritte, Kosuth et Holzer de 1977 à 2024. Contrôle des notices de collection et des archives d’exposition, création de deux schémas de lecture."
+    }
+  ]
+}
