@@ -1,0 +1,60 @@
+{
+  "slug": "bel_bl_sociologie-oral-a-option-26-juin-sujet-3_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral à option) — 26 juin, sujet 3",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Sociologie (oral à option) — 26 juin, sujet 3",
+  "questions": 0,
+  "sujets": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/famille_loyalty.pdf",
+    "sujet_sha256": "fcf1b74ec6b8ce85df97ff9920f98be0930dd7d048c2beeef2035672a244356d",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_option_sociologie.pdf",
+    "rapport_sha256": "a3b53be611e155391ec6690e098d6c26cec39ca3ee37c9ee0c18d14490010ded"
+  },
+  "figures": [
+    {
+      "fichier": "figures/organisation.svg",
+      "question": "sujet B",
+      "legende": "Trois questions pour étudier la réponse à une dégradation"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux exposés au choix, de la préparation à la discussion et du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux intitulés à la planche et au rapport. Vérification des concepts, du sens des exemples et des consignes d’oral."
+    }
+  ]
+}
