@@ -34,7 +34,7 @@
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_allemand_xusr_26.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20Fili%C3%A8res_Allemand%20OK.pdf"
   },
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -42,6 +42,12 @@
       "effort": null,
       "service_tier": null,
       "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -54,6 +60,16 @@
       "modifications": true,
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des deux rédactions et du rapport. Attribution des positions de Huber et Pyka, concours de recherche et prix de la société Konrad-Zuse, montant et période des financements en capital-risque.",
       "fournisseur": "codex"
     }
   ]

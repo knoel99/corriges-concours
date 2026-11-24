@@ -35,7 +35,7 @@
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Anglais%20OK.pdf",
     "exemple_care": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/care-fera-program"
   },
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -51,10 +51,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -78,6 +77,16 @@
       "modifications": null,
       "perimetre": "Double contre-relecture indépendante des documents de l’épreuve, des chiffres du graphique Pew, des deux compositions, de leur longueur et des trois figures pédagogiques.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux compositions, des quatre pièces de synthèse et de la tribune avec le rapport. Portée des estimations sur la réutilisation des sites et des effets miniers selon le procédé, lecture des réponses au graphique de Pew.",
       "fournisseur": "codex"
     }
   ]

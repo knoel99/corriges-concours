@@ -34,7 +34,7 @@
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_arabe_xusr_26.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Arabe%20OK.pdf"
   },
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -50,10 +50,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -77,6 +76,16 @@
       "modifications": null,
       "perimetre": "Contre-relecture indépendante des deux compositions et des sources officielles. Vérification du décompte, de la lecture du document iconographique et des positions individuelles rapportées dans l’éditorial.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des deux compositions arabes contre le sujet et le rapport. Conditions du risque pour l’emploi et attribution à l’Organisation arabe du travail, portée de l’étude des deux chercheurs en Chine et de leur proposition hybride.",
       "fournisseur": "codex"
     }
   ]

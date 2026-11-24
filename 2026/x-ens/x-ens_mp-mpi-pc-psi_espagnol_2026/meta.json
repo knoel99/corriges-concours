@@ -29,7 +29,7 @@
       "legende": "Le succès populaire, le vote et les droits ne se mesurent pas de la même façon."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -45,10 +45,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -72,6 +71,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture des deux compositions espagnoles, du statut de la fête en 1918 et en 1987 et des deux images. Comptages indépendants du titre et des deux textes.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des deux compositions, des quatre pièces et de la chronique avec le rapport. Changement de dénomination de la fête nationale espagnole, distinction du point de vue argentin et des propos rapportés, dates des deux images.",
       "fournisseur": "codex"
     }
   ]

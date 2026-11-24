@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## A — Synthesis of documents 1 to 4
 
 ### The Changing Geography of Clean Power
@@ -14,15 +16,17 @@ At a former diesel power station in Chile, solar panels now feed electricity int
 
 For both China and the United States, energy policy offers a way to limit dependence on other countries while securing customers abroad. The *Times* reports that abundant domestic oil and gas give Washington an incentive to keep foreign buyers using familiar fuels. The Trump administration has pressed Japan and South Korea to invest in shipping American gas to Asia. China, vulnerable to disruption of its oil imports, has built an industry that supplies solar panels, turbines and batteries to much of the world. Its coal consumption remains enormous. Yet the low cost of Chinese equipment has helped countries including India install cleaner technologies. An investment that serves one country's security can thus alter the economic choices open to another.
 
-Those choices also depend on what earlier generations built. At Tamaya in Chile, the solar installation includes storage and inherits a connection to the grid. As *The Economist* explains, developers can face long waits for such connections elsewhere. Existing wells might likewise make geothermal heat accessible without the expense of drilling from scratch. Conversion has physical limits, however. A site designed for a compact fossil fuel plant may be too small to match its former output with solar panels. Policy can compound that constraint. While one Canadian developer secured a permit more quickly for reusing industrial land, American developers can find it cheaper to obtain permission to build on untouched ground.
+Those choices also depend on what earlier generations built. At Tamaya in Chile, the solar installation includes storage and inherits a connection to the grid. As *The Economist* explains, developers can face long waits for such connections elsewhere. Existing wells might likewise make geothermal heat accessible without the expense of drilling from scratch. Conversion has physical limits, however. A site designed for a compact fossil fuel plant may be too small to match its former output with solar panels. Nor is every conversion free of carbon emissions. According to the database cited by the magazine, around 35 percent of projects use at least one technology that still emits carbon, including bioenergy. Policy can compound the constraint on land. While one Canadian developer secured a permit more quickly for reusing industrial land, American developers can find it cheaper to obtain permission to build on untouched ground.
 
-Bernhard's reporting from Nevada shows what can be at stake when development reaches a new site. Lithium supplies the batteries that store renewable electricity, but extracting it can damage habitats and contaminate groundwater. A mining company and two local conservationists dispute the significance of the proposed site's proximity to the Ash Meadows wildlife refuge. The conservationists want federal authorities to identify sensitive places before developers stake claims. An engineer interviewed by Bernhard stresses the environmental damage that continued reliance on fossil fuels would cause. The parties differ over the geographical scale at which to assess harm and over how much the choice of a particular site matters.
+Bernhard's reporting from Nevada shows what can be at stake when development reaches a new site. Batteries for electricity storage and electric vehicles use lithium. Depending on the extraction process, mining can damage habitats or contaminate groundwater. A mining company and two local conservationists dispute the significance of the proposed site's proximity to the Ash Meadows wildlife refuge. The conservationists want federal authorities to identify sensitive places before developers stake claims. Mark Jacobson, an engineering professor interviewed by Bernhard, argues that additional wind and solar power can displace more polluting fossil fuels. The parties differ over the geographical scale at which to assess harm and over how much the choice of a particular site matters.
 
 The June 2024 Pew bar chart gives that question of location a different dimension. Asked about hypothetical developments near their communities, 45 percent of American adults thought a wind farm would make the landscape less attractive. The same share expected that effect from a solar farm. Yet 44 percent thought nearby solar generation would lower the price they paid for electricity, against 37 percent who disagreed. Around a third were unsure whether either technology would bring in more tax revenue. These figures capture expectations about distinct consequences. They cannot establish that electricity bills actually fall or that respondents who anticipate a change in the scenery oppose construction.
 
 Across the dossier, the attractions of cleaner power vary with who supplies the equipment, which infrastructure a developer can reuse and what residents expect to gain or lose. A country may acquire affordable solar technology through trade even as the land and minerals needed for wider deployment become contentious locally. The benefits and burdens of an energy choice can therefore fall in different places, even when those concerned agree on the need to reduce emissions.
 
-*623 words, excluding the title.*
+*665 words, excluding the title.*
+
+![Figure 1 — How a Chilean power station and a proposed Nevada mine bring out different consequences of site selection](figures/two-energy-sites.svg)
 
 ## B — Opinion piece in response to document 5
 
