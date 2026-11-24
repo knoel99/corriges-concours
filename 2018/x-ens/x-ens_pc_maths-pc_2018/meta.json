@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_pc_maths-pc_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2018
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_PC_sujet_Maths.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_PC_rap_eMath.pdf",
+    "sha256_sujet": "115668e98ab0591aa0f644cc790608df4047a6a29203de0279f4733169ab8137"
+  },
+  "figures": [
+    {
+      "fichier": "figures/stirling-integrande.svg",
+      "question": "IV.4",
+      "legende": "Après recentrage au maximum, les intégrandes de la factorielle convergent vers une gaussienne. Les dominations sur les demi-droites permettent d’intégrer cette limite."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des cinq parties et des cas de parité. Contrôle des constantes en concentration, de la domination bilatérale dans Stirling et du choix des signes pour le minimum. Figure de l’intégrale centrée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
