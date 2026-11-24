@@ -1,0 +1,106 @@
+{
+  "slug": "ens-paris-saclay_design_techno-design_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Techno-design",
+    "annee": 2024
+  },
+  "redaction": "Rédaction des deux éditions et de 8 planches A3 autonomes et anonymes, analyse de toutes les photographies et de chaque production du sujet. Les croquis et les trois hypothèses sont originaux. Les essais à conduire sont explicités.",
+  "questions": 2,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_Techno-Design_Design1A.pdf",
+    "sujet_sha256": "ea861d3a4a39aae342aa632396a0b88de5fc465564a57f9a5861c5bd9497ef6b",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=589",
+    "nature": "Sujet original, consignes, six ensembles de documents et références des auteurs.",
+    "references": {
+      "Présentation de l’atelier Coulom": "https://www.balaispaillecoulom.com/a-propos/",
+      "Présentation du designer, Bureau du Design, de la Mode et des Métiers d’Art": "https://www.bdmma.paris/accompagnement/incubateur/antonin-mongin/",
+      "Centre Beautour, Observatoire des CAUE": "https://www.caue-observatoire.fr/ouvrage/centre-beautour-de-decouverte-de-culture-scientifique-de-recherche-lenvironnement-biodiversite/",
+      "Bouquets et objets, Emma Bruschi": "https://emmabruschi.fr/fr/shop",
+      "Présentation du procédé, Séricyne": "https://sericyne.fr/a-propos/",
+      "On Weaving, Fondation Josef et Anni Albers": "https://www.albersfoundation.org/alberses/teaching/anni-albers/on-weaving"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-attaches.svg",
+      "question": "Analyse 1/8",
+      "legende": "Balai et textile associent une zone dense, qui tient, à une zone souple, qui travaille."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-chaume-et-bouquet.svg",
+      "question": "Analyse 2/8",
+      "legende": "Aligner des tiges peut évacuer la pluie, former une limite architecturale ou donner à voir une moisson."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-lettre-et-coque.svg",
+      "question": "Analyse 3/8",
+      "legende": "Une lettre numérique prend sa forme dans un réseau de traits. Une coque de soie la reçoit d’un support."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-transmission.svg",
+      "question": "Analyse 4/8",
+      "legende": "Dans un atelier partagé, transmettre le point où un faisceau devient assez ferme pour brosser sans rayer."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-peigne.svg",
+      "question": "Esquisse 5/8",
+      "legende": "Trois faisceaux sortent du même cadre. La dernière ligature change de place pour rendre la comparaison tangible."
+    },
+    {
+      "numero": 6,
+      "fichier": "figures/06-fenetre.svg",
+      "question": "Esquisse 6/8",
+      "legende": "Un gabarit posé près du pied enregistre un seul mouvement. L’apprenant refait le geste puis compare deux traces."
+    },
+    {
+      "numero": 7,
+      "fichier": "figures/07-coquille.svg",
+      "question": "Esquisse 7/8",
+      "legende": "Deux demi-coquilles s’ouvrent. On découvre l’ordre des brins et on peut le transmettre sans couper l’échantillon."
+    },
+    {
+      "numero": 8,
+      "fichier": "figures/08-reprise.svg",
+      "question": "Esquisse 8/8",
+      "legende": "Du geste montré au geste refait, relever les écarts de sensation, de trace et de temps de reprise."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et de 8 planches A3 autonomes et anonymes, analyse de toutes les photographies et de chaque production du sujet. Les croquis et les trois hypothèses sont originaux. Les essais à conduire sont explicités."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "parties": [
+      "Analyse",
+      "Esquisse"
+    ],
+    "formats_A3": 8,
+    "planches": [
+      "Analyse 1/8",
+      "Analyse 2/8",
+      "Analyse 3/8",
+      "Analyse 4/8",
+      "Esquisse 5/8",
+      "Esquisse 6/8",
+      "Esquisse 7/8",
+      "Esquisse 8/8"
+    ]
+  }
+}
