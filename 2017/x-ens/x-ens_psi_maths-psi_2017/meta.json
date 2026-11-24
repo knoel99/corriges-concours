@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_psi_maths-psi_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2017
+  },
+  "questions": 44,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2017_PSI_sujet_math.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "58d63b2f5064b2b26ea8061e98e912a55e15868604c46ce088eb4ab4a0319424"
+  },
+  "figures": [
+    {
+      "fichier": "figures/paire-legendre.svg",
+      "question": "26",
+      "legende": "Le premier cas autorisé, m égal à deux, fait intervenir les deux polynômes de degrés quatre et trois."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions contre les huit pages natives de CX7611. Contrôle de l’orthogonal ambiant en 14, des espaces de solutions en 15–16, des valeurs aux bords et du rapport explicite des déterminants. Illustration des deux polynômes du premier cas.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
