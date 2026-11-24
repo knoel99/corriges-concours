@@ -225,6 +225,8 @@
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 18 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 19 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 22 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-22-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-22-juin_2026/guide.md) |
+| 2026 | BEL | BL | Philosophie (oral tronc commun, 25 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-25-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-25-juin_2026/guide.md) |
+| 2026 | BEL | BL | Philosophie (oral tronc commun, autres tirages du jury) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/guide.md) |
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
