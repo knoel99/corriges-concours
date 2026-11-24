@@ -1,6 +1,9 @@
 import importlib.util
 import json
+from http.client import IncompleteRead, RemoteDisconnected
+from io import BytesIO
 from pathlib import Path
+from urllib.error import HTTPError
 
 import pytest
 
@@ -9,6 +12,36 @@ spec = importlib.util.spec_from_file_location(
 )
 couverture = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(couverture)
+
+
+@pytest.mark.parametrize("incident", [RemoteDisconnected(), IncompleteRead(b"texte", 12)])
+def test_lecture_interrompue_redemande_le_document_entier(monkeypatch, incident):
+    appels = []
+
+    def ouvrir(requete, timeout):
+        appels.append(requete.full_url)
+        if len(appels) == 1:
+            raise incident
+        return BytesIO(b"document complet")
+
+    monkeypatch.setattr(couverture, "urlopen", ouvrir)
+    monkeypatch.setattr(couverture.time, "sleep", lambda delai: None)
+    url = "https://exemple.fr/document.pdf"
+    assert couverture.telecharger(url) == b"document complet"
+    assert appels == [url, url]
+
+
+def test_document_introuvable_signale_sans_attente(monkeypatch):
+    url = "https://exemple.fr/document.pdf"
+
+    def ouvrir(requete, timeout):
+        raise HTTPError(url, 404, "Not Found", {}, None)
+
+    monkeypatch.setattr(couverture, "urlopen", ouvrir)
+    monkeypatch.setattr(couverture.time, "sleep", lambda delai: pytest.fail("Nouvel essai"))
+    with pytest.raises(HTTPError) as erreur:
+        couverture.telecharger(url)
+    assert erreur.value.code == 404
 
 
 @pytest.mark.parametrize(

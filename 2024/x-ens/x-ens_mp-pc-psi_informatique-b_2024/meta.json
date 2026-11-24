@@ -1,0 +1,44 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2024,
+    "duree_heures": 2
+  },
+  "questions": 14,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI-PC-PSI%20SUJET%20INFORMATIQUE%20B%20(XELSR).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP%20RAPPORT%20ECRIT%20INFORMATIQUE%20B%20(XLSR)_0.pdf",
+    "sujet_sha256": "dd325c3b9cd0c62326d858bf4f90773c806be524d98e2b926ad659642c729e10",
+    "rapport_sha256": "72aaefecae1831662bb373949144528828b0eb1982e079c1d1fe0816f553c6fd",
+    "note": "La garde porte MP-MPI-PC-PSI. Le registre rattache cette épreuve à la banque MP-PC-PSI, conformément à la structure officielle de la banque MPI de 2024."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q06-logimage.svg",
+      "question": "Q6",
+      "legende": "L’unique grille de la figure 1, retrouvée à partir des clés de lignes et de colonnes. Le bleu indique le noir du logimage."
+    },
+    {
+      "fichier": "figures/q12-prefixes.svg",
+      "question": "Q12",
+      "legende": "Table des premiers débuts pour l’exemple qui comporte un blanc en 1 et des noirs en 4 et 9. Les tirets désignent les préfixes impossibles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification des 14 questions Logimage à partir du sujet et du rapport originaux. Deux figures originales. Tests des fonctions Python des deux éditions sur les positions extrêmes, les conflits aux bords, les matrices des préfixes et les déductions de couleurs. Confirmation indépendante de la solution unique de la figure 1. La garde de l’épreuve mentionne également MPI, filière exclue de cette épreuve B par la structure de sa banque 2024."
+    }
+  ]
+}
