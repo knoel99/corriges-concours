@@ -1,0 +1,74 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2023
+  },
+  "redaction": "Rédaction, lecture des annexes et du rapport, cinq planches A3. Gabarit A5 utilisable, trois films et visioconférences, invitation locale, déploiement numérique et papier. Deux éditions signées.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_1A_Design_projet_graphique.pdf",
+    "sujet_sha256": "5990155da21048445c63030fc8d3fc2911002bc7e4d2de3cb01e15674250e0f6",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=583",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_oral_Projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-fenetres.svg",
+      "question": "Projet, planche 1",
+      "legende": "Trois pistes d’identité conduisent à la fenêtre qui associe le salon, l’écran et le réseau des hôtes."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-programme.svg",
+      "question": "Projet, planche 2",
+      "legende": "Un trajet, une ville et un cahier donnent un repère différent à chacun des trois films."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-invitation.svg",
+      "question": "Projet, planche 3",
+      "legende": "Une véritable invitation A5 peut être découpée, complétée à la main et photocopiée."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-calendriers.svg",
+      "question": "Projet, planche 4",
+      "legende": "L’exemple local et le programme des trois visioconférences permettent de vérifier les horaires."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-protocole.svg",
+      "question": "Projet, planche 5",
+      "legende": "Une invitation sur téléphone et un protocole en trois étapes accompagnent le support imprimé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction, lecture des annexes et du rapport, cinq planches A3. Gabarit A5 utilisable, trois films et visioconférences, invitation locale, déploiement numérique et papier. Deux éditions signées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 5,
+    "parties": [
+      "Un festival, cent salons",
+      "Attribuer un signe à chaque film",
+      "Une invitation à remplir",
+      "Faire tenir deux calendriers",
+      "Passer le programme de main en main"
+    ]
+  }
+}
