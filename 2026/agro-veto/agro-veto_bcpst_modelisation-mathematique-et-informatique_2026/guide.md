@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Code, modèle exact non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve de 3 heures, sans calculatrice ni document. Un problème unique, en quatre parties, consacré à la **fonction génératrice** d'une variable aléatoire $X$ à valeurs dans $\mathbb N$ :
@@ -1080,7 +1086,7 @@ En fin de boucle, `aux` contient $\sum_{k=1}^{N_i}D_{i,k}=N_{i+1}$, que la ligne
 
 **Comparaison.** Les deux fonctions renvoient une variable de même loi (l'indicatrice de $N_j=0$).
 
-- `extinction_iter` fait $N_0+N_1+\dots+N_{j-1}$ appels à `simule_D`, moins si l'extinction survient avant : en moyenne de l'ordre de $E(D)^j$ si $E(D)>1$. Sa mémoire est constante.
+- `extinction_iter` fait $N_0+N_1+\dots+N_{j-1}$ appels à `simule_D`. Les effectifs postérieurs à l’extinction sont nuls. Ce total est en moyenne de l’ordre de $E(D)^j$ si $E(D)>1$. Sa mémoire est constante.
 - `extinction_rec` visite au plus les mêmes euglènes, mais s'arrête dès qu'elle a trouvé une euglène vivante au jour $j$ (lignes 18-19). En cas de survie, elle peut conclure après peu d'appels : elle est alors bien plus efficace.
 - En cas d'extinction au jour $j$, les deux visitent tout l'arbre et sont aussi rapides. La version récursive utilise en revanche une pile de profondeur $j$ (risque de dépasser la limite de récursion de Python) et un surcoût par appel.
 
@@ -1166,6 +1172,8 @@ def temps_extinction():
         t2 = temps_extinction()
         return 1 + max(t1, t2)
 ```
+
+Par exemple, si la racine a deux enfants, que le premier n’a pas d’enfant et que le second donne deux descendants sans enfant, les lignées durent respectivement 1 et 2 jours à compter de leur naissance. La fonction renvoie donc $1+\max(1,2)=3$. L’extinction a lieu presque sûrement, mais la profondeur d’une réalisation peut dépasser la limite de récursion de Python. L’ordre des deux appels ne modifie pas la loi simulée.
 
 (Si l'on dispose de `simule_D` de la question 22, la ligne 2 peut s'écrire `if simule_D() == 0:`.)
 
@@ -1560,12 +1568,16 @@ def proba_extinction(epsilon):
     c = 1
     while c - a > epsilon:
         b = (a+c)/2
-        if G_D(b) - b > 0:
+        if b == a or b == c:
+            raise ValueError("La précision demandée dépasse celle du calcul.")
+        if G_D(b) > b:  # équivaut à G_D(b) - b > 0
             a = b
         else:
             c = b
     return c
 ```
+
+La preuve de l’encadrement suppose que le signe de $G_D(b)-b$ est évalué correctement. Dans le cas critique $G_D(t)=(1+t^2)/2$, ce résidu vaut $(1-b)^2/2$. Pour $b=1-2^{-30}$, il est strictement positif, mais le calcul direct en double précision peut donner zéro. Une factorisation telle que $(1-b)^2/2$ conserve ici le signe. Pour des probabilités rationnelles connues, on peut aussi utiliser des fractions exactes pour les coefficients et les bornes, par exemple en initialisant `a, c = Fraction(0), Fraction(1)` après avoir importé `Fraction` de `fractions`.
 
 La boucle effectue $\lceil\log_2(1/\varepsilon)\rceil$ tours. Exemple : pour $G_D(t)=0{,}2+0{,}8t^2$, on obtient $\alpha=0{,}25$.
 
