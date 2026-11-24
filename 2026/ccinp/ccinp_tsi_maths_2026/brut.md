@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 heures, calculatrice interdite. Deux problèmes indépendants.
 
 ---
@@ -605,7 +611,7 @@ Au total, cela fait de l'ordre de $\sum_{k=0}^Nk=\frac{N(N+1)}2$ multiplications
 
 ```python
 def Approx_Sum_bis(N):
-    S, f = 0, 1                     # f vaut k! au début du tour k
+    S, f = 0, 1                     # après le produit du tour k, f vaut k!
     for k in range(N + 1):
         if k > 0:
             f = f * k
@@ -664,6 +670,8 @@ Chaque évaluation de $g(m)$ se fait en tronquant la série :
 
 $$g(m)\simeq1-e^{-2m}\sum_{k=0}^K\frac{m^{2k}}{(k!)^2}.$$
 
-Pour $m\in[0,1]$, l'erreur est majorée par $\sum_{k>K}\frac1{k!}\le\frac e{(K+1)!}$ (comme en Q37 d–e). $K=8$ donne une erreur $<10^{-5}$, et la factorielle est mise à jour par une multiplication (Q37 h). On obtiendrait $\mu\approx0{,}44$.
+La somme partielle donne un majorant $G_K(m)$ de $g(m)$ et, d’après Q37, $G_K(m)-e/(K+1)!\le g(m)\le G_K(m)$. On garde la moitié de l’intervalle indiquée par le signe dès que les deux bornes sont du même côté de $1/2$. Un signe lu sur la seule valeur arrondie pourrait éliminer la solution.
+
+Pour traiter aussi le cas où l’encadrement contient $1/2$, on peut relier la précision sur la valeur à celle sur la racine. Sur $[0,1]$, posons $a_k=m^k/k!$. En dérivant la série entière de Q38, on obtient $g'(m)=2e^{-2m}\sum_{k\ge0}(a_k^2-a_k a_{k+1})$. Or $2\sum_{k\ge0}(a_k^2-a_k a_{k+1})=1+\sum_{k\ge0}(a_k-a_{k+1})^2$, puisque $a_0=1$ et $a_k\to0$. Ainsi $g'(m)\ge e^{-2}$. Le théorème des accroissements finis donne $|m-\mu|\le e^2|g(m)-1/2|$. Si le signe reste indécis, il suffit donc de choisir $K$ avec $e/(K+1)!\le e^{-2}\varepsilon$ pour pouvoir rendre $m$ avec l’erreur demandée.
 
 **FIN**

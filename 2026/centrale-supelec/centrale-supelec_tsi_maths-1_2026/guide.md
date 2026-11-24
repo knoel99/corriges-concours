@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet s'intitule *La méthode des moindres carrés* (4 heures, calculatrice autorisée, 52 questions). Une seule idée le traverse : **minimiser $\|z-u\|$ quand $u$ parcourt un sous-espace de dimension finie, c'est projeter orthogonalement $z$ sur ce sous-espace.** Le sujet la décline cinq fois : distance d'un vecteur de $\mathcal M_{4,1}(\mathbb R)$ à un hyperplan, somme partielle de Fourier, régression polynomiale, équations normales $A^TAx=A^Ty$ et pseudo-inverse issue de la décomposition en valeurs singulières. Il se termine par un algorithme : la méthode du gradient à pas optimal, dont la vitesse dépend du conditionnement $c(A)=\lambda_p/\lambda_1$ (inégalité de Kantorovich).
@@ -831,6 +837,8 @@ Soit $y=Au'+d'$ une autre décomposition du même type. L'unicité de la décomp
 
 **Le vecteur $d$ et le vecteur $Au=p_{\operatorname{Col}(A)}(y)$ sont uniques ; $u$ est unique à un élément de $\ker A$ près.**
 
+Par exemple, prenons $A=\operatorname{Diag}(1,0)$ et $y=(1,2)^T$. Le résidu orthogonal est $d=(0,2)^T$, et tous les vecteurs $u=(1,t)^T$, $t\in\mathbb R$, vérifient $Au+d=y$. L’ensemble des solutions est une droite parallèle au noyau.
+
 *Remarque sur l'énoncé.* L'unicité de $u$ lui-même n'a lieu que si $\ker A=\{0\}$, c'est-à-dire si $\operatorname{rg}A=p$. Sinon, $(u+h,d)$ convient pour tout $h\in\ker A$.
 
 C'est cohérent avec Q30, dont le cas d'égalité « $x-u\in\ker A$ » serait sans objet si $u$ était toujours unique. La suite n'utilise que l'existence et l'unicité de $d$.
@@ -1263,6 +1271,8 @@ $$\begin{aligned}
 \end{aligned}$$
 Cette quantité est strictement positive car $w_k\neq0$ (puisque $d_k\neq0$). En la mettant en facteur :
 $$\boxed{f(x_{k+1})-f(\ell)=\big(f(x_k)-f(\ell)\big)\left(1-\frac{\|d_k\|_2^4}{\langle A^TAd_k,d_k\rangle\langle(A^TA)^{-1}d_k,d_k\rangle}\right).}$$
+
+L’orthogonalité visible sur la figure découle aussi du choix du pas. En effet $d_{k+1}=d_k-t_k S d_k$, donc $\langle d_{k+1},d_k\rangle=\|d_k\|_2^2-t_k\langle S d_k,d_k\rangle=0$. Si $d_{k+1}=0$, l’itéré atteint exactement $\ell$.
 
 ![Figure 5 — gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ](figures/q50-gradient-zigzag.svg)
 

@@ -29,5 +29,45 @@
       "question": "Q39",
       "legende": "Graphe de g : g(0) = 0 et g(1) ≥ 1 − e⁻¹ > 1/2, donc g prend la valeur 1/2 en un μ compris entre 0 et 1"
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI1M.pdf",
+    "rapport": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/Rapport%20Epreuves%20%C3%A9crites%20TSI%202026%20-%20Math%C3%A9matiques%20VF.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "date": "2026-11-06T21:00:00",
+      "modifications": true,
+      "perimetre": "Production des corrigés brut et guidé.",
+      "fournisseur": "claude-code",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Révision avec le rapport du jury, dix corrections de fond documentées dans l’archive de production.",
+      "fournisseur": "claude-code",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "date": "2026-11-24",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "astra_maths",
+      "perimetre": "Vérification des 40 questions et subdivisions dans les deux éditions, du sujet officiel et des remarques du rapport CCINP. Vérification des coefficients de Fourier et des lois de matrices aléatoires. Correction de l’invariant Python de Q37(h) et de la dichotomie de Q40, dont les décisions sont désormais protégées contre l’erreur de troncature."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

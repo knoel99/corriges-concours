@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Notations : $\binom{j}{i}=0$ si $i>j$ (convention de l'énoncé). Deux défauts de l'énoncé sont corrigés en place. En **Q31**, « la matrice introduite en Q25 » désigne la matrice de la figure 4, introduite en **Q26**. En **Q37**, la convention cohérente est **$b_0=1$** et non $b_0=0$.
 
 ## Partie A — Matrices de Pascal
@@ -539,7 +545,9 @@ Autre preuve, explicite. Comme $\sigma=\sigma^{-1}$, on a $Me_j=e_{\sigma(j)}$ p
 - Pour chaque boucle $i$, $Me_i=e_i$.
 - Pour chaque bi-boucle $\{i,j\}$, $M(e_i+e_j)=e_i+e_j$ et $M(e_i-e_j)=-(e_i-e_j)$.
 
-Ces $n$ vecteurs forment une base de vecteurs propres.
+Ces $n$ vecteurs forment une base de vecteurs propres. S’il y a $b$ bi-boucles et $n-2b$ boucles, cette base contient $n-b$ vecteurs pour la valeur propre $1$ et $b$ pour $-1$. Ainsi $\chi_M(X)=(X-1)^{n-b}(X+1)^b$.
+
+Le corps de base intervient ici. Un cycle de longueur trois a pour polynôme caractéristique $X^3-1$. Sur $\mathbb R$, son espace propre pour $1$ est de dimension un et le facteur $X^2+X+1$ n’a aucune racine. Sur $\mathbb C$, le polynôme a trois racines simples et la même matrice est diagonalisable. Le critère en termes de boucles et bi-boucles porte donc sur $\mathbb R$.
 
 **$M(\sigma)$ est diagonalisable**, ce qui achève la preuve du théorème : $M(\sigma)$ est diagonalisable si et seulement si $G(\sigma)$ ne contient que des boucles ou des bi-boucles.
 
