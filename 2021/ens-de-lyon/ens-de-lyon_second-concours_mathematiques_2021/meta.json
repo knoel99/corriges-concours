@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2021",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2021
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2c2021_math_v2.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_2CC_rap_eMath.pdf",
+    "sha256_sujet": "3466cee988c3f7031e496e7905c60d864d1c957b0df50019237f8f5519293585"
+  },
+  "figures": [
+    {
+      "fichier": "figures/seuil-borwein.svg",
+      "question": "1.II.6",
+      "legende": "Le seuil est franchi lors de l’ajout de 1/15, à l’indice 7. Les valeurs de l’intégrale restent exactement égales à π/2 jusqu’à l’indice 6 inclus."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 23 réponses et de leurs indications, du contrôle uniforme des intégrales conditionnelles à la caractérisation de l’égalité pour les sous-algèbres nilpotentes. Vérification sur l’original corrigé signalant l’erratum et le rapport natif du second concours.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
