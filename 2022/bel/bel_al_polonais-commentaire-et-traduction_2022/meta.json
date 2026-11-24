@@ -1,0 +1,47 @@
+{
+  "slug": "bel_al_polonais-commentaire-et-traduction_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (commentaire et traduction)",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=16",
+    "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "À quel moment Kelvin sait-il qu’il tombe ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du commentaire polonais sur les deux pages du fascicule et d’une traduction française originale strictement limitée aux bornes imprimées. Guide du point de vue, des voix et du vocabulaire sensoriel ; figure sur les étapes de la perception de la chute."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Stanisław Lem, *Solaris* (1961), ouverture du chapitre « Przybysz ». Commentaire en polonais du passage entier (lignes 1 à 92). Version française de « Zrozumiałem, że jestem… » jusqu’à la phrase se terminant sur « … ławica ich uleciała w górę » (lignes 24 à 49)."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
