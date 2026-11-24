@@ -8,5 +8,41 @@
   },
   "questions": 117,
   "redaction": "IA (gpt-6), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/p01-ex2-blocs.svg",
+      "question": "Planche 1 du 16 juin, exercice 2, question 1",
+      "legende": "À chaque entier correspondent deux enfants. Une ligne du dessin contient un bloc entier de la somme, dont aucun terme ne figure deux fois."
+    },
+    {
+      "fichier": "figures/p06-ex2-secretariat.svg",
+      "question": "Planche 1 du 20 juin, exercice 2, question 2b",
+      "legende": "Les points sont les probabilités exactes pour trente cartes. La verticale repère la proportion optimale à la limite, environ 36,8 %."
+    },
+    {
+      "fichier": "figures/p11-ex1-factorielle.svg",
+      "question": "Planche 2 du 27 juin, exercice 1, question 2b",
+      "legende": "Deux faibles erreurs sur le terme initial donnent des écarts opposés, multipliés à chaque rang par la factorielle. La suite au seuil tend vers un."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/planches2025.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_mathematiques.pdf",
+    "sha256_sujet": "ea130ca9e5a8ac68bbfb127b1f6cdf3ab168da6a36b48584ec859452e10190c0"
+  },
+  "type_epreuve": "oral",
+  "contributions": [
+    {
+      "phase": "revision",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 117 réponses, des indications et des encadrés des 13 planches contre le sujet et les commentaires du jury. Dénombrement des ordres des cartes et optimalité asymptotique, projection orthogonale calculée avec la matrice, cas de dimension un pour la diagonalisation, dépendance factorielle en la condition initiale. Trois figures nouvelles.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
 }

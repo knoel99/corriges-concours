@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Attribution archivée** · « IA (gpt-6), relue et révisée par IA »
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Le document officiel rassemble **13 planches de deux exercices**, soit 26 exercices et **117 questions ou sous-questions terminales**. Chaque candidat prépare une seule planche pendant 90 minutes ; son oral dure environ 30 minutes, avec une présentation autonome de 15 minutes au maximum, suivie d’une reprise avec le jury. Les deux exercices doivent être présentés, dans l’ordre choisi par le candidat. La calculatrice est interdite.
@@ -139,6 +143,8 @@ $S_k=\sum_{n=2^k}^{2^{k+1}-1}a_n\le c\sum_{n=2^k}^{2^{k+1}-1}(a_{2n}+a_{2n+1})$.
 Lorsque $n$ parcourt $\{2^k,\dots,2^{k+1}-1\}$, les entiers $2n$ (pairs) et $2n+1$ (impairs) parcourent, chacun une fois, $\{2^{k+1},\dots,2^{k+2}-1\}$.
 
 Donc $\sum_{n=2^k}^{2^{k+1}-1}(a_{2n}+a_{2n+1})=\sum_{m=2^{k+1}}^{2^{k+2}-1}a_m=S_{k+1}$, d'où $\boxed{S_k\le cS_{k+1}}$.
+
+![Figure 1 — À chaque entier correspondent deux enfants. Une ligne du dessin contient un bloc entier de la somme, dont aucun terme ne figure deux fois.](figures/p01-ex2-blocs.svg)
 
 ### Question (2)
 
@@ -355,7 +361,6 @@ $$
 
 - Si le premier lancer donne pile, le premier face qui suit produit $PF$ avant tout $FF$ ; la probabilité conditionnelle de succès est $1$.
 
-Succès, probabilité $1$.
 - Si le premier lancer donne face, un deuxième face donne immédiatement $FF$. Un deuxième lancer pile assure en revanche que le prochain face produira $PF$ en premier. La probabilité conditionnelle de succès est donc $p$.
 
 Donc $P(C\mid X_1=F)=p$.
@@ -763,9 +768,9 @@ $$
 
 Pour $k=2$ : $E[X^2]=0$ ou $V(X^2)=0$.
 - Si $E[X^2]=0$ : $X=0$ presque sûrement ($X^2\ge0$), $X$ est **constante**.
-- Si $V(X^2)=0$ : $X^2=E[X^2]=:c^2$ presque sûrement Si $c=0$, $X=0$ constante.
+- Si $V(X^2)=0$ : $X^2=E[X^2]=:c^2$ presque sûrement. Si $c=0$, $X=0$ constante.
 
-Si $c>0$, $X\in\{-c,c\}$ presque sûrement Posons $p=P(X=c)$.
+Si $c>0$, $X\in\{-c,c\}$ presque sûrement. Posons $p=P(X=c)$.
 
 La suite $(Y_k)$ pour $X$ s'écrit $c^k$ fois celle pour $X/c\in\{\pm1\}$ (facteur constant, l'indépendance est inchangée).
 
@@ -829,7 +834,7 @@ Donc $p$ est la projection orthogonale sur $\boxed{\mathscr P:\ x-y+z=0}$.
 
 #### Solution
 
-Le vecteur $u-p(u)$ est la projection de $u$ sur la droite normale au plan. Un vecteur normal est $n=(1,-1,1)$, de norme $\sqrt3$. La distance cherchée vaut donc :
+Le vecteur $u-p(u)$ est la projection de $u$ sur la droite normale au plan. En appliquant la matrice donnée, $u-p(u)=\frac{x-y+z}{3}(1,-1,1)$. Ce vecteur normal a pour longueur la distance au plan. Avec $n=(1,-1,1)$, on retrouve
 $$
 \begin{aligned}
 d(u,\mathscr P) &=\frac{|\langle u,n\rangle|}{\|n\|} \\
@@ -973,7 +978,7 @@ La dernière question porte sur $A^TA^2=I_n$.
 ### Question (1)
 
 > [!INDICATION]
-> Prendre le déterminant dans l’identité matricielle.
+> Appliquer l’identité matricielle à un vecteur du noyau de $M$.
 
 #### Solution
 
@@ -1050,7 +1055,7 @@ Donc $P(E_{n,p,p})=P(M\text{ en position }p+1)=\dfrac1n$.
 
 Pour gagner à la carte $k+1$, il faut d’abord qu’elle porte le maximum global. Il faut aussi qu’aucun record n’apparaisse entre les positions $p+1$ et $k$. Cela signifie exactement que le maximum des $k$ premières cartes figure parmi les $p$ premières.
 
-Sachant $M$ en position $k+1$, les $k$ premières cartes sont une permutation uniforme des autres, et leur maximum est en position uniforme sur $\{1,\dots,k\}$ ; la probabilité qu'il soit dans $\{1,\dots,p\}$ vaut $p/k$.
+Conditionnons à la fois par la position $k+1$ de $M$ et par l’ensemble des $k$ premières cartes. Leurs $k!$ ordres sont équiprobables. Pour chacune des $k$ positions possibles de leur maximum, il y a $(k-1)!$ ordres. La probabilité que ce maximum se trouve parmi les $p$ premières cartes vaut donc $p/k$, quel que soit l’ensemble tiré.
 
 Donc
 $$
@@ -1105,7 +1110,9 @@ Pour $n$ grand, $P(G_{n,p})\approx\frac pn\ln\frac np=-x\ln x$ avec $x=p/n$.
 
 La fonction $x\mapsto-x\ln x$ sur $(0,1)$ a pour dérivée $-(\ln x+1)$, nulle en $x=1/e$ (maximum).
 
-Antiope doit donc choisir $p$ tel que $\dfrac np$ soit le plus proche de $\boxed{e}$, et sa probabilité de gain vaut alors environ $\dfrac1e\cdot\ln e=\boxed{1/e\approx0{,}37}$.
+Choisissons par exemple l’entier le plus proche de $n/e$ pour $n$ assez grand. Alors $p/n\to1/e$, donc le rapport $n/p$ demandé tend vers $\boxed e$. La majoration de (2a) est uniforme en $p$ et donne $P(G_{n,p})\le 1/e+1/n$ pour toute stratégie de cette famille. Notre choix atteint donc asymptotiquement la probabilité optimale $\boxed{1/e\approx0{,}368}$. À taille finie, la formule exacte de (1c) donne les points du graphique.
+
+![Figure 2 — Les points sont les probabilités exactes pour trente cartes. La verticale repère la proportion optimale à la limite, environ 36,8 %.](figures/p06-ex2-secretariat.svg)
 
 > [!METHODE]
 > Conditionner par la position d’un maximum rend souvent uniforme sa place relative parmi les autres cartes. Énoncer précisément le conditionnement avant de multiplier les probabilités.
@@ -1178,7 +1185,7 @@ Comme $(n-1)+1=n$, $\mathbb R^n=\ker K\oplus\ker(K-\tau I_n)$.
 
 #### Solution
 
-$\mathbb R^n$ est somme directe des sous-espaces propres $\ker K$ (valeur $0$) et $\ker(K-\tau I_n)$ (valeur $\tau$) : il existe une base de vecteurs propres, donc $K$ est **diagonalisable**.
+Une base de $\ker K$, complétée par $X$ qui vérifie $KX=\tau X$, est une base de vecteurs propres par (4a). Ainsi $K$ est **diagonalisable**. Cette construction vaut aussi en dimension un, où la première base est vide.
 
 ### Question (5)
 
@@ -1883,7 +1890,9 @@ Avec $u_0=2e-1$, (1a) donne $z_n=2(e-S_n)-\tfrac1{n!}$, donc $u_n=n!z_n=2\,n!(e-
 
 Par (2a), $1\le n!(e-S_n)\le\tfrac n{n-1}\le2$ pour $n\ge2$, donc $u_n\in[2\cdot1-1,\ 2\cdot2-1]=[1,3]$.
 
-La suite est **bornée**.
+Les deux termes $u_0$ et $u_1$ sont finis, donc toute la suite est **bornée**. Plus précisément, $1\le u_n\le 1+2/(n-1)$ pour $n\ge2$, d’où $u_n\to1$. Une perturbation $\delta$ de la valeur initiale change exactement $u_n$ en $u_n+n!\,\delta$, par la récurrence.
+
+![Figure 3 — Deux faibles erreurs sur le terme initial donnent des écarts opposés, multipliés à chaque rang par la factorielle. La suite au seuil tend vers un.](figures/p11-ex1-factorielle.svg)
 
 > [!METHODE]
 > Une factorielle dans la récurrence suggère une normalisation. La valeur initiale exceptionnelle est celle qui annule le terme dominant ; il reste alors à borner le reste.
