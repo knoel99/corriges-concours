@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve de quatre heures relie un trajet de course à la voile, la propagation du son, une faille transformante, la thermométrie du Pacifique et un arc volcanique. Commencez par identifier ce qui est mesuré sur chaque figure. Une durée peut changer sous l’effet de la distance, de la célérité ou des deux. Le document officiel place successivement en annexe les sept figures numérotées, après les 28 questions.
 
 ## Partie 1 · Physiographie et géodynamique de l’océan global
@@ -71,7 +73,7 @@ L’abscisse est la distance parcourue par le bateau. Les fluctuations rapides t
 > [!INDICATION]
 > Choisissez la même couleur sur les deux flancs et comparez sa distance à l’axe. Que représente le quotient distance sur âge ?
 
-Près de 3, le profil montre un relief accidenté et un sommet vers 1 km de profondeur. Près de 5, la remontée est plus arrondie et culmine vers 2,5 km. Ces profondeurs concernent les points de passage du bateau. Sur la carte des âges, des bandes couvrant le même intervalle de temps sont plus serrées de part et d’autre de la SWIR (3) que de la PAR (5). En comparant les largeurs **perpendiculairement aux axes**, on en déduit que l’accrétion est plus rapide en 5. À épaisseur de croûte comparable, davantage de matériau doit être produit par unité de longueur d’axe et de temps. On attend donc en moyenne une alimentation magmatique plus soutenue en 5. La hauteur du sommet sur la coupe ne mesure pas ce débit.
+Près de 3, le profil montre un relief accidenté et un sommet vers 1 km de profondeur. Près de 5, la remontée est plus arrondie et culmine vers 2,5 km. Ces profondeurs concernent les points de passage du bateau. Sur la carte des âges, des bandes couvrant le même intervalle de temps sont plus serrées de part et d’autre de la SWIR (3) que de la PAR (5). En comparant les largeurs **perpendiculairement aux axes**, on en déduit que l’accrétion est plus rapide en 5. À épaisseur de croûte comparable, davantage de matériau doit être produit par unité de longueur d’axe et de temps. On attend donc en moyenne une alimentation magmatique plus soutenue en 5. La hauteur du sommet sur la coupe ne mesure pas ce débit. Pour quantifier une vitesse à partir de cette projection, il faudrait convertir les largeurs cartographiques en distances réelles.
 
 ![Figure 2 — À âge égal et à même échelle de distance, des bandes plus larges indiquent une expansion plus rapide. Schéma de principe.](figures/largeur-des-isochrones.svg)
 
@@ -104,7 +106,7 @@ La figure 4 montre une célérité d’environ 1 550 m/s près de la surface, un
 > [!INDICATION]
 > Dans quel sens tourne un rayon passant obliquement d’une couche lente à une couche plus rapide ?
 
-Dans un milieu stratifié horizontalement, la composante horizontale de la lenteur est conservée. Pour un angle $\theta$ avec l’horizontale, $\cos\theta/c$ reste constant. En s’écartant de la zone du minimum, le rayon pénètre dans une eau plus rapide. Son angle avec l’horizontale diminue jusqu’à un éventuel point de retournement. Il se recourbe vers les vitesses plus faibles et peut franchir plusieurs fois l’axe du canal. Les différentes inclinaisons à l’émission donnent des profondeurs extrêmes et des distances de retour différentes. Le tracé ne nécessite pas une succession de réflexions sur le fond.
+Dans un milieu stratifié horizontalement, la composante horizontale de la lenteur est conservée. Pour un angle $\theta$ avec l’horizontale, $\cos\theta/c$ reste constant. En s’écartant de la zone du minimum, le rayon pénètre dans une eau plus rapide. Son angle avec l’horizontale diminue. Pour un départ à la célérité $c_0$ sous l’angle $\theta_0$, le point de retournement est atteint là où le rai devient horizontal, à $c=c_0/\cos\theta_0$. Les rais initialement les plus inclinés peuvent donc atteindre des couches plus rapides, plus éloignées de l’axe. Il se recourbe vers les vitesses plus faibles et peut franchir plusieurs fois l’axe du canal. Les différentes inclinaisons à l’émission donnent des profondeurs extrêmes et des distances de retour différentes. Le tracé ne nécessite pas une succession de réflexions sur le fond.
 
 ![Figure 4 — Deux rais idéalisés oscillent autour de l’axe lent du canal, sans réflexion sur le fond.](figures/rais-du-canal.svg)
 
@@ -153,7 +155,7 @@ Entre 2008,0 et 2008,5, le temps diminue globalement de quelque 200 à 230 µs, 
 > [!INDICATION]
 > Reportez le sens de la variation de température de 5d sur une coupe à profondeur constante de la figure 3.
 
-Les deux stations enregistrent une hausse globale d’environ 1,66 à 1,73 °C au premier semestre. À profondeur et salinité pratiquement constantes, cette hausse augmente la célérité. Une même distance est alors parcourue en moins de temps. Cet effet est cohérent avec la baisse du temps de trajet en **5c**. La figure 5b citée dans la question donne la géométrie et le sens du mouvement des plaques. L’accélération thermique peut masquer l’allongement tectonique que suggère cette carte.
+Les deux stations enregistrent une hausse globale d’environ 1,66 à 1,73 °C au premier semestre. À profondeur et salinité pratiquement constantes, cette hausse augmente la célérité. Une même distance est alors parcourue en moins de temps. Cet effet est cohérent avec la baisse du temps de trajet en **5c**. La figure 5b citée dans la question donne la géométrie et le sens du mouvement des plaques. Un réchauffement d’environ $0{,}07$ °C, avec une sensibilité de 4 à 5 m/s par degré lue sur la figure 3, donne $\Delta c\simeq0{,}3\ \mathrm{m/s}$. À distance fixe, $\Delta t_{\rm AR}\simeq-t_{\rm AR}\Delta c/c\simeq-0{,}0002\ \mathrm{s}$, soit une baisse d’environ 200 µs. L’effet thermique a donc le signe et l’ordre de grandeur de la baisse mesurée et peut masquer l’allongement tectonique.
 
 **Repère de lecture.** Les deux séries de température ont la même évolution au premier ordre. La carte, la courbe de temps et la courbe thermique ont des rôles distincts.
 
@@ -260,7 +262,7 @@ Un réchauffement cohérent à l’échelle du bassin tendrait à raccourcir les
 > [!INDICATION]
 > Quelle grandeur un hydrophone enregistre-t-il pour chaque chemin ? Comment savoir quelle région est à l’origine d’une anomalie ?
 
-La tomographie sismique compare les temps observés sur de nombreux trajets aux temps prédits par un modèle de référence. Un retard signale, toutes choses égales par ailleurs, un excès intégré de lenteur. L’inversion de trajets qui se recoupent permet de localiser les anomalies avec une résolution qui dépend de la couverture. Ici, les mesures entre sources et hydrophones renseignent de la même façon sur la célérité de l’eau et, sous hypothèses, sur sa température. Les rais de la figure 4 oscillent autour du **canal profond voisin de 1 000 m**. Les profondeurs intermédiaires qu’ils parcourent sont donc particulièrement échantillonnées. Des rais inclinés explorent aussi des eaux plus superficielles ou plus profondes. Le résultat est une moyenne le long des rais, de résolution verticale limitée.
+La tomographie sismique compare les temps observés sur de nombreux trajets aux temps prédits par un modèle de référence. Un retard signale, toutes choses égales par ailleurs, un excès intégré de lenteur. L’inversion de trajets qui se recoupent permet de localiser les anomalies avec une résolution qui dépend de la couverture. Ici, la figure 6 montre deux éventails de trajets, depuis Kauai et depuis Pioneer. Les croisements permettent à plusieurs temps de parcours de contraindre une même zone. Un trajet isolé, tel Kauai–k, fournit une moyenne intégrée et laisse indéterminée la position de la zone réchauffée. Les rais de la figure 4 oscillent autour du **canal profond voisin de 1 000 m**. Les profondeurs intermédiaires qu’ils parcourent sont donc particulièrement échantillonnées. Des rais inclinés explorent aussi des eaux plus superficielles ou plus profondes. Le résultat est une moyenne le long des rais, de résolution verticale limitée.
 
 **Repère de lecture.** Un trajet fournit une contrainte intégrée. Les croisements de trajets et la variété des rayons sont nécessaires pour préciser la localisation.
 
