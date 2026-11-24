@@ -1,0 +1,166 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2023",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2023
+  },
+  "questions": 63,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/2c2023_chimie.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/11/23_2CC_rap_eChi.pdf",
+    "precision_session": "La banque publie ce sujet sous la session 2023. Sa couverture et ses en-têtes portent « 2022 ». Le rapport 2023 identifie les quatre parties consacrées aux thiophènes ; le sujet et le rapport de la session 2022 portent sur l’oxygène. Le millésime retenu est celui de l’archive et du rapport concordant.",
+    "sujet_sha256": "f9473cc5032c45a65fe7b83748421d52fc6046c20498599296fe8961c1f59f5c",
+    "rapport_sha256": "71877b4773a2061eff7d68dcc4153bfc1d8d20836ca507031a6396123fef3b6a"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      8,
+      9,
+      10
+    ],
+    "precision": "Les questions 1 à 7 et 11 à 63 sont traitées (60 questions sur 63). Les questions 8 à 10 sur le réglage d’un réacteur où se forme du sulfure d’hydrogène sont hors de la présente édition."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/cycle-enthalpique.svg",
+      "question": "Q13",
+      "legende": "Le chemin d’atomisation forme d’abord la molécule gazeuse. La condensation intervient avec un signe négatif dans l’enthalpie de formation du liquide."
+    },
+    {
+      "fichier": "figures/bandes.svg",
+      "question": "Q16",
+      "legende": "Schémas de bandes à température nulle. L’intervalle interdit du semi-conducteur permet des excitations à des énergies plus faibles que celui de l’isolant."
+    },
+    {
+      "fichier": "figures/thiophene-lewis.svg",
+      "question": "Q19",
+      "legende": "Une forme de Lewis du thiophène. Un des deux doublets libres du soufre contribue au système π avec les deux doubles liaisons."
+    },
+    {
+      "fichier": "figures/butadiene-phases.svg",
+      "question": "Q20",
+      "legende": "Phases relatives sur une même face du butadiène, du niveau fondamental en bas au plus élevé en haut. Les deux couleurs désignent des phases opposées."
+    },
+    {
+      "fichier": "figures/thiophene-fragments.svg",
+      "question": "Q22",
+      "legende": "Diagramme des fragments. Les OM impaires gardent un nœud sur S. Les trois OM paires sont issues de deux niveaux du butadiène et de 3p du soufre. Les phases reprennent l’allure de l’annexe."
+    },
+    {
+      "fichier": "figures/bithiophene-dix-om.svg",
+      "question": "Q24",
+      "legende": "Chaque niveau du monomère fournit deux combinaisons du dimère. Si le coefficient au point d’attache est pratiquement nul, leur éclatement est lui aussi pratiquement nul."
+    },
+    {
+      "fichier": "figures/spectroelectrochimie.svg",
+      "question": "Q29",
+      "legende": "Le faisceau interroge le film déposé sur le conducteur transparent. Référence et contre-électrode peuvent être décalées pour dégager le trajet optique."
+    },
+    {
+      "fichier": "figures/distillation-vide.svg",
+      "question": "Q31",
+      "legende": "La vapeur atteint la sonde puis le réfrigérant descendant. Le récepteur communique avec la ligne de vide ; l’eau froide entre à l’extrémité basse du réfrigérant."
+    },
+    {
+      "fichier": "figures/tafel.svg",
+      "question": "Q36",
+      "legende": "Les deux droites de polarisation se croisent au potentiel mixte. Leur abscisse commune donne la densité du courant partiel de corrosion."
+    },
+    {
+      "fichier": "figures/montage-reflux.svg",
+      "question": "Q46",
+      "legende": "Le solvant condensé retourne au ballon dans le montage à reflux. L’ampoule d’addition et le contrôle de l’atmosphère remplissent deux fonctions distinctes."
+    },
+    {
+      "fichier": "figures/orbitales-d-et-spins.svg",
+      "question": "Q49",
+      "legende": "Les trois orbitales interaxiales forment t₂g, et les deux axiales e g. Les deux répartitions extrêmes des six électrons de Ru(II) dépendent du champ octaédrique."
+    },
+    {
+      "fichier": "figures/arrhenius.svg",
+      "question": "Q61",
+      "legende": "Chaque droite ajuste les quatre constantes de la colonne correspondante. L’énergie d’activation se déduit de la pente en tenant compte du facteur 1000 de l’abscisse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les quatre parties du sujet des thiophènes, confronté au rapport 2023 et aux archives 2022 pour vérifier le millésime. Lecture des sept tableaux, des schémas de l’annexe et des données orbitalaires, spectrales et cinétiques. Contrôle indépendant par calcul des bilans et des ajustements. Les questions 8 à 10 sont exclues."
+    }
+  ]
+}
