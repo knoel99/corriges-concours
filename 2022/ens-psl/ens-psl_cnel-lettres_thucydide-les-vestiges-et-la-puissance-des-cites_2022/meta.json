@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_cnel-lettres_thucydide-les-vestiges-et-la-puissance-des-cites_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Thucydide — les vestiges et la puissance des cités",
+    "annee": 2022
+  },
+  "intitule": "Thucydide — les vestiges et la puissance des cités",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-cnel2022-6.pdf",
+    "sujet_sha256": "f837e740e9c72744d442117cf1b8fac52555e91480fe3d0c1d3e1c362757d8be",
+    "references": [],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/dsa-rapport-cnel2022.pdf",
+    "rapport_sha256": "29e4f693b88515843f7fea133a19bc7fb5265f26dc81e9580d1fd204e40c2a06"
+  },
+  "figures": [
+    {
+      "fichier": "figures/mesurer-la-puissance.svg",
+      "question": "Explication",
+      "legende": "Que permettent de mesurer les traces ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de deux pages de 2022, particulièrement la section sur les écrits individualisés, le retour au texte et la portée de la consigne propre au candidat."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication du chapitre X et des deux expériences de pensée confrontées aux données homériques."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}
