@@ -535,6 +535,7 @@
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Littérature | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_litterature_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_litterature_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Philosophie | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_philosophie_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_philosophie_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Sciences sociales | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_sciences-sociales_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_sciences-sociales_2026/guide.md) |
 | 2026 | ENSATT | Administration du spectacle vivant | Cas pratique | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/brut.md) | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Chimie | [md](2026/g2e/g2e_bcpst_chimie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_chimie_2026/guide.md) |
