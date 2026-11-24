@@ -2,6 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+
 **Vérification de systèmes concurrents.** Durée 4 h, calculatrice interdite. 24 questions. Langages : OCaml (parties I et II), C (partie III).
 
 ---
@@ -48,7 +55,7 @@ $$\boxed{\text{Seule } P_1 \text{ est une propriété de sûreté.}}$$
 
 Ici $S=\{a,b\}$ sert d'alphabet. Les quatre propriétés sont de la forme « tout préfixe $u$ vérifie $C(u)$ ».
 
-Un mot fini $u$ est alors un préfixe interdit si et seulement si l'un de ses préfixes viole $C$ : dans ce cas, aucun prolongement ne peut être dans $P$. Il est minimal si et seulement si $u$ viole $C$ alors que tous ses préfixes stricts la vérifient.
+Dès qu’un préfixe de $u$ viole $C$, toute continuation est interdite. Pour la réciproque, vérifions qu’un mot fini dont tous les préfixes respectent la contrainte admet une continuation infinie autorisée. Pour $P_1$ et $P_3$, ajouter $b^\omega$ convient. Pour $P_2$, si le déséquilibre $|u|_a-|u|_b$ vaut $1$ ou $-1$, ajouter d’abord respectivement $b$ ou $a$ pour revenir à zéro, puis répéter $ab$. Pour $P_4$, un mot autorisé est un début de $(ba)^\omega$ et se prolonge en ce mot. Ainsi, dans les quatre cas, un préfixe interdit est minimal exactement quand sa dernière lettre produit la première violation.
 
 Pour $P_2$ à $P_4$, on note $d(u)=|u|_a-|u|_b$.
 
@@ -132,7 +139,7 @@ Comme une liste `t.next s` ne répète aucune action, $|\mathcal D(s)|\le|A|$ et
 
 `Array.make` coûte $O(n)$. Chaque état est développé au plus une fois, pour un coût $O(1+|\mathcal D(s)|)$ (appel `t.next s` en temps constant, puis parcours de la liste). Chaque arête provoque au plus un appel. Au total :
 
-$$\boxed{O(n+m)=O(n\,|A|)}$$
+$$\boxed{O(n+m)\subseteq O(n(1+|A|))}$$
 
 ### Question 6
 
@@ -355,12 +362,14 @@ L'argument de Q11 tombe, car Q9 est faux en ordre préfixe : $0$ est énuméré 
 
 ### Question 13
 
+On raisonne dans le modèle d’entrelacement du sujet, où chaque lecture ou écriture de `m` forme une action. En C, ces accès concurrents à un entier non atomique, dont au moins un est une écriture et qui ne sont pas synchronisés, entraînent un comportement indéfini. La correction par verrou de la partie b rend le résultat garanti aussi en C.
+
 **a.** Le thread 1 travaille sur $\{10,20\}$ : $\texttt{m1}=10$, $\texttt{m2}=20$. Le thread 2 travaille sur $\{30,40\}$ : $\texttt{m1}=30$, $\texttt{m2}=40$.
 
 Chacun lit ensuite `m` (ligne 6, notée $L_i$) et l'écrit (ligne 7, notée $E_i$), avec $L_i$ avant $E_i$. Les seules valeurs que peut prendre `m` sont $-1$, puis celles écrites.
 
 - Le thread 2 écrit toujours $\max(40,\texttt m)=40$.
-- Le thread 1 écrit $\max(20,\texttt m)$, qui vaut $20$ s'il a lu $-1$ ou $20$, et $40$ s'il a lu $40$.
+- Le thread 1 écrit $\max(20,\texttt m)$, qui vaut $20$ s'il a lu $-1$, et $40$ s'il a lu $40$.
 
 Après les deux `pthread_join`, `m` contient la dernière valeur écrite.
 
@@ -394,11 +403,9 @@ int main(void) {
     for (int i = 0; i < n; i++)
         array[i] = rand() % max_item;              /* b. */
 
-    pthread_attr_t attr;
-    pthread_attr_init(&attr);
     pthread_t* threads = malloc(nb_threads * sizeof(pthread_t));
     for (int k = 0; k < nb_threads; k++)           /* c. sous-tableau k */
-        pthread_create(&threads[k], &attr, local_max,
+        pthread_create(&threads[k], NULL, local_max,
                        &(array[k * items_per_thread]));
 
     for (int k = 0; k < nb_threads; k++)           /* d. attendre tous les threads */
@@ -417,7 +424,7 @@ $$[\,k\cdot\texttt{items\_per\_thread},\ (k+1)\cdot\texttt{items\_per\_thread}\,
 
 partitionnent $[0,n[$ : chaque case est traitée par exactement un thread.
 
-Chaque bloc contient `items_per_thread` entiers positifs, comme l'exige la précondition de `local_max`. L'affichage suit tous les `pthread_join`. Les deux blocs alloués par `malloc` sont libérés.
+L’argument `NULL` de `pthread_create` sélectionne les attributs par défaut. Chaque bloc contient `items_per_thread` entiers compris entre 0 et `max_item - 1`. L'affichage suit tous les `pthread_join`. Les deux blocs alloués par `malloc` sont libérés.
 
 ---
 
