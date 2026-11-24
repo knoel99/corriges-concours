@@ -1,0 +1,110 @@
+{
+  "slug": "x-ens_psi_modelisation_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2019,
+    "duree_heures": 5
+  },
+  "questions": 49,
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      13,
+      14,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      34
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      4,
+      5,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "precision": "Ce corrigé partiel traite 19 des 49 questions. Il couvre les usages civils et les changements de base (Q1 à Q3), la flottabilité et l’inertie (Q6 à Q8), les nombres sans dimension (Q13 et Q14), la métrologie de laboratoire et les statistiques (Q23 à Q32), ainsi que la perturbation d’un magnétomètre (Q34). Les questions 4, 5, 9 à 12, 15 à 22, 33 et 35 à 49 sont hors du périmètre de cette édition."
+  },
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/19_psi_mod_sujet.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2019_Rapport_Ecrits_PSI_Modelisation.pdf",
+    "sujet_sha256": "049c5a28493c461341181c790c41ae49a07c39ae76b0efb21478c108f543b039"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q07-flotteur.svg",
+      "question": "Q7",
+      "legende": "Flotteur incliné dans l’eau. Lorsque G se trouve sous C à l’équilibre, ces deux forces créent un couple de rappel après une petite inclinaison."
+    },
+    {
+      "fichier": "figures/q26-cascade.svg",
+      "question": "Q26",
+      "legende": "À la pulsation de référence, deux étages identiques donnent −6 dB. Le déplacement des deux pôles permet de conserver −3 dB pour la cascade."
+    },
+    {
+      "fichier": "figures/q27-rejet.svg",
+      "question": "Q27",
+      "legende": "Le gain du réjecteur tend vers zéro décibel aux deux extrémités. Le minimum à la fréquence du mât dépend du rapport des amortissements."
+    },
+    {
+      "fichier": "figures/q31-series.svg",
+      "question": "Q31",
+      "legende": "Chaque étiquette est un indice dans le tableau. Pour la deuxième vitesse, les cinq observations ont pour indices 1, 7, 13, 19 et 25."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction partielle de 19 questions indépendantes : Q1–3, Q6–8, Q13–14, Q23–32 et Q34. Lecture du sujet et du rapport officiels, contrôle sur les figures des repères et des signaux, vérification numérique des changements de bases, des filtres et du regroupement statistique. Quatre figures originales."
+    }
+  ]
+}
