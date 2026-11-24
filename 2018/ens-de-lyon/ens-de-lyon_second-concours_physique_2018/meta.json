@@ -1,0 +1,110 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2018",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2018
+  },
+  "questions": 41,
+  "redaction": "Les dix questions de cours et les trente et une questions de mécanique des fluides sont traitées. Cinq figures accompagnent les schémas et profils demandés. La dissipation de Stokes, la diffusion radiale et la comparaison du roulement des bouteilles sont quantifiées.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/07/18_2c_sujet_phy_lyon.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_2CC_rap_ePhy.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "ae319ae6b3aed62f7e9b0d39e4de647bab500d685ec83e02dfbb9a2e725a532a",
+    "rapport_sha256": "5ffcd3c4969a0cc97fe0e87509b5fbb70f79bd42e72ef5182e1b3dfd382b8bd8"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A2",
+      "fichier": "figures/rlc-serie.svg",
+      "legende": "La résistance, la bobine et le condensateur sont en série. Le courant est maximal lorsque les réactances se compensent."
+    },
+    {
+      "numero": 2,
+      "question": "B7",
+      "fichier": "figures/couette.svg",
+      "legende": "Profil stationnaire entre la plaque mobile en z = 0 et la plaque fixe en z = H."
+    },
+    {
+      "numero": 3,
+      "question": "B12",
+      "fichier": "figures/stokes.svg",
+      "legende": "Les trois profils oscillants s’inscrivent dans une même enveloppe exponentielle. La phase de l’oscillation est retardée en profondeur."
+    },
+    {
+      "numero": 4,
+      "question": "B19",
+      "fichier": "figures/rotation.svg",
+      "legende": "Profil qualitatif vers un dixième du temps de diffusion radial. La courbe transitoire illustre l’allure et ne constitue pas la solution analytique."
+    },
+    {
+      "numero": 5,
+      "question": "B24",
+      "fichier": "figures/roulement.svg",
+      "legende": "Vitesse du cylindre plein pour une pente de 10° avant l’arrivée au bas du plan de 1 m."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix questions de cours et les trente et une questions de mécanique des fluides sont traitées. Cinq figures accompagnent les schémas et profils demandés. La dissipation de Stokes, la diffusion radiale et la comparaison du roulement des bouteilles sont quantifiées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26",
+      "B27",
+      "B28",
+      "B29",
+      "B30",
+      "B31"
+    ]
+  }
+}
