@@ -1,0 +1,44 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-methodes-de-machine-learning_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — méthodes de machine learning",
+    "annee": 2026
+  },
+  "intitule": "Le recours aux méthodes de machine learning améliore-t-il nécessairement la crédibilité des résultats en économie empirique ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf#page=2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf",
+    "page_sujet": 2,
+    "sujet_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150",
+    "references": [
+      "https://doi.org/10.1257/jep.31.2.87",
+      "https://doi.org/10.1111/ectj.12097",
+      "https://doi.org/10.1073/pnas.1510489113"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/resultats-potentiels.svg",
+      "question": "Composition",
+      "legende": "Exemple hypothétique. Les revenus effectivement observés apparaissent sur une diagonale. L’effet sur le groupe fragile requiert de connaître les deux revenus de sa ligne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction de la dissertation et de son guide à partir du sujet individuel écrit du candidat 2 reproduit page 2 du rapport du jury. Vérification des références académiques et institutionnelles, des raisonnements et de la figure originale sur le thème méthodes de machine learning."
+    }
+  ]
+}
