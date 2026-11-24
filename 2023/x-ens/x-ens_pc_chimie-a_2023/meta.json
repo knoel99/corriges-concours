@@ -1,0 +1,153 @@
+{
+  "slug": "x-ens_pc_chimie-a_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2023
+  },
+  "questions": 65,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20SUJET%20DE%20CHIMIE%20A%20(XEULS).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20RAPPORT%20ECRIT%20CHIMIE%20A%20(XEULS).pdf",
+    "sujet_sha256": "7886d22530f536ef661dc6597c831df703aa3f8d53aba63d1140328c2a0bef5b",
+    "rapport_sha256": "ce6d473bb47b7943ec7772de32049dd55956c18883f0cb3f0921efb960a896f8"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      42,
+      47,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65
+    ],
+    "questions_partiellement_traitees": [
+      37
+    ],
+    "questions_non_traitees": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      48,
+      49
+    ],
+    "precision": "Sur 65 questions, 45 sont intégralement traitées : Q1–27, Q42, Q47 et Q50–65. La Q37 présente la convention de projection de Newman, sans application à l’intermédiaire. Les Q28–36, Q38–41, Q43–46 et Q48–49, consacrées aux voies de synthèse et de sélection de l’immucilline H, restent hors couverture."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/eyring-aluminium.svg",
+      "legende": "Les sept mesures portent sur le même processus apparent. La pente du tracé en 1 000/T vaut −10,07, d’où 83,7 kJ/mol.",
+      "question": "Q4"
+    },
+    {
+      "fichier": "figures/more-oferrall.svg",
+      "legende": "Trajectoires schématiques entre les mêmes réactifs et produits. Le coin A est dissociatif et le coin C associatif.",
+      "question": "Q10"
+    },
+    {
+      "fichier": "figures/orbitales-h2.svg",
+      "legende": "Formation des combinaisons symétrique et antisymétrique de deux 1s. La plus haute possède un nœud entre les noyaux.",
+      "question": "Q13"
+    },
+    {
+      "fichier": "figures/donation-et-retrodonation.svg",
+      "legende": "Le même ligand peut donner par son orbitale occupée et accepter dans son orbitale antiliante de symétrie différente.",
+      "question": "Q18"
+    },
+    {
+      "fichier": "figures/distances-ni-b.svg",
+      "legende": "Dans la voie en deux étapes, B se rapproche de Hᵦ avant que H–H ne s’allonge nettement.",
+      "question": "Q23"
+    },
+    {
+      "fichier": "figures/newman-convention.svg",
+      "legende": "Convention de lecture d’une projection de Newman générique, les deux tripodes étant vus le long de la même liaison.",
+      "question": "Q37"
+    },
+    {
+      "fichier": "figures/maille-monoclinique.svg",
+      "legende": "Comptage schématique des six Ti dans le parallélogramme projeté et hauteur b sin γ pour le calcul du volume.",
+      "question": "Q50"
+    },
+    {
+      "fichier": "figures/migration-ions.svg",
+      "legende": "Sommets approximatifs des profils. Les barrières locales s’obtiennent en retranchant l’énergie du minimum de départ.",
+      "question": "Q53"
+    },
+    {
+      "fichier": "figures/gitt-impulsion.svg",
+      "legende": "Une discontinuité suit la variation de courant. Le potentiel évolue ensuite plus lentement, même pendant la relaxation à courant nul.",
+      "question": "Q55"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les questions délimitées dans la couverture, à partir des données et planches du sujet XEULS et du rapport 2023. Vérification numérique de la régression d’Eyring, des distances, de la population de la maille, de sa masse volumique et du bilan de capacité. Neuf figures originales."
+    }
+  ]
+}
