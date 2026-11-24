@@ -1,0 +1,46 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2021",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2021,
+    "duree_heures": 3
+  },
+  "questions": 22,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2c2021_info.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_2CC_rap_eInfo.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-graphe.svg",
+      "question": "Q1",
+      "legende": "Le cycle et sa diagonale ont cinq arêtes. Les degrés successifs sont 3, 2, 3 et 2."
+    },
+    {
+      "fichier": "figures/q16-centres-ligne.svg",
+      "question": "Q16",
+      "legende": "Les centres colorés éclairent chacun leur propre sommet et ses voisins directs. Les trois lignes donnent les trois restes modulo 3."
+    },
+    {
+      "fichier": "figures/q22-chaine-positive.svg",
+      "question": "Q22",
+      "legende": "Exemple de pile. La réponse négative à propos de 4 élimine 3 et 4. La réponse positive suivante prolonge la chaîne avec 5."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 22 questions des deux versions sur les chemins et semi-anneaux, les interrupteurs et l’élimination par paires. Lecture des six pages du sujet et du rapport du jury, vérification des matrices sur l’image native, essais exhaustifs des algorithmes et trois figures."
+    }
+  ]
+}
