@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_espagnol-oral-option-calderon-vers-782-a-921_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (oral option Calderón, vers 782 à 921)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_al-rapport_oral_option_espagnol.pdf#page=1",
+    "sujet_sha256": "c62178930047e47a52653c5e99202d74b890ed4337780c8b761c3b1189a57a16",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al-rapport_oral_option_espagnol.pdf",
+    "rapport_sha256": "c62178930047e47a52653c5e99202d74b890ed4337780c8b761c3b1189a57a16",
+    "documents": [
+      "https://www.cervantesvirtual.com/portales/calderon_de_la_barca/obra-visor/la-dama-duende--0/html/ff22be1e-82b1-11df-acc7-002185ce6064_3.html",
+      "https://www.cervantesvirtual.com/obra-visor/la-dama-duende-comedia-famosa/html/5cb23465-bca9-4315-a4a2-fd8ae4294f6a_2.html"
+    ],
+    "precision": "L’explication va de l’annonce par Isabel d’une chambre vide à l’interrogation de Cosme sur son propre larcin. La transcription de 1640 donne « lo que yo hurto », comme le jury, et Iglesias Feijoo « el que yo hurto »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/escena.svg",
+      "question": "Explication linéaire",
+      "legende": "Un cuarto, dos explicaciones de lo ocurrido"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication linéaire en espagnol, guide français de préparation, entretien en espagnol et schéma scénique. Passage vérifié sur les deux témoins de la Biblioteca Virtual Miguel de Cervantes à partir des bornes données par le jury. L’explication va de l’annonce par Isabel d’une chambre vide à l’interrogation de Cosme sur son propre larcin. La transcription de 1640 donne « lo que yo hurto », comme le jury, et Iglesias Feijoo « el que yo hurto »."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
