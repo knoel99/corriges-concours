@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Attribution archivée** · « IA (gpt-6), relue et révisée par IA »
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Planche 1 — Exercice 1 : Somme de projecteurs
 
 Soit $n\ge1$ un entier.
@@ -631,13 +635,12 @@ Les lignes $2$ à $K$ donnent chacune $x_1+\sum_{i=2}^Kx_i$. Les lignes suivante
 
 Ainsi
 $$
-\begin{aligned}
-Ax &=0 \\
-&\iff x_1 \\
-&=0 \\
-\sum_{i=2}^Kx_i &=0 \\
-\sum_{i=K+1}^nx_i &=0.
-\end{aligned}
+Ax=0\quad\Longleftrightarrow\quad
+\begin{cases}
+x_1=0,\\
+\sum_{i=2}^{K}x_i=0,\\
+\sum_{i=K+1}^{n}x_i=0.
+\end{cases}
 $$
 Ces trois contraintes sont indépendantes.
 
@@ -822,7 +825,9 @@ p^K\sum_{i=n}^{\infty}\binom{i-1}{K-1}q^{i-K}
 $$
 La série converge car elle exprime une probabilité.
 
-La division par $p^K>0$ donne exactement **l’identité demandée**.
+En divisant par $p^K>0$ et en remplaçant $q$ par $1-p$, l’identité demandée devient
+$$\sum_{i=n}^\infty\binom{i-1}{K-1}(1-p)^{i-K}
+=\sum_{i=0}^{K-1}\binom{n-1}{i}p^{i-K}(1-p)^{n-1-i},\qquad n\ge K.$$
 
 ## Planche 6 — Exercice 1 : Moments et norme pour la loi de Laplace
 
@@ -1004,7 +1009,9 @@ Pour $n$ assez grand, $a_nM<\delta$.
 
 L’intégrale sur $[0,M]$ est alors de valeur absolue inférieure à $\varepsilon/2$, puisque l’intégrale de $e^{-u}$ sur ce segment est au plus $1$.
 
-Donc $|I_n-f(0)|<\varepsilon$ pour $n$ assez grand : **$I_n\to f(0)$**.
+Donc $|I_n-f(0)|<\varepsilon$ pour $n$ assez grand : **$I_n\to f(0)$**. Dans la variable initiale $x$, la masse située au-delà de $a_nM$ vaut exactement $e^{-M}$. On peut donc fixer d’abord la précision sur cette masse, puis ramener tout le reste dans un voisinage de continuité de $f$.
+
+![Figure 1 — Les densités exponentielles gardent une aire égale à un. Quand leur échelle diminue, une même fraction de cette aire se rassemble plus près de zéro.](figures/p07-ex1-concentration.svg)
 
 ## Planche 7 — Exercice 2 : Convergence des matrices et de leurs puissances
 
@@ -1283,6 +1290,8 @@ $$
 \boxed{\Delta_2=\frac{19}{8}}.
 $$
 
+![Figure 2 — La distance moyenne diminue jusqu’à k = 2, puis augmente. Commencer à la maison 98 donne la plus petite distance moyenne.](figures/p09-ex1-parking.svg)
+
 ## Planche 9 — Exercice 2 : Renversement des coefficients d’un polynôme
 
 Sur $E=\mathbb R_{2n}[X]$, l’endomorphisme $S$ renverse les $2n+1$ coefficients.
@@ -1526,11 +1535,7 @@ Donc **$A$ est un vecteur propre pour $\lambda_0=0$**.
 
 Comme $\tau\ne0$,
 $$
-\begin{aligned}
-f(M) &=0 \\
-&\iff M \\
-&=\frac{\operatorname{Tr}(M)}{\tau}A.
-\end{aligned}
+f(M)=0\quad\Longleftrightarrow\quad M=\frac{\operatorname{Tr}(M)}{\tau}A.
 $$
 Ainsi **$E_0(f)=\operatorname{Vect}(A)$**, dont une base est la famille à un élément $(A)$.
 
@@ -2092,4 +2097,6 @@ Enfin, pour $\lambda=1$, prenons $X_1=X_2=X_3$ égales à une même variable val
 
 Sa matrice de covariance est $M_1$.
 
-**La condition nécessaire et suffisante est donc bien $-1/2\le\lambda\le1$.**
+**La condition nécessaire et suffisante est donc bien $-1/2\le\lambda\le1$.** À gauche, pour $\lambda=-1/2$, le choix $\alpha=-1/3$ donne $X_1+X_2+X_3=0$. À droite, pour $\lambda=1$, les trois coordonnées peuvent être égales. Ces deux constructions expliquent l’annulation d’une valeur propre sur la figure.
+
+![Figure 3 — La variance dans la direction commune et la variance dans le plan orthogonal doivent toutes deux rester positives ou nulles. La construction atteint aussi les deux bords.](figures/p14-ex2-covariance.svg)
