@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=14",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Espagnol%202026.pdf#page=19"
+  },
+  "figures": [
+    {
+      "fichier": "figures/regards.svg",
+      "legende": "Qui regarde, qui se reproche, qui décide ?",
+      "question": "Thème"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traduction en espagnol des quatre paragraphes de Pierre Lemaitre, guide sur les voix et les temps, schéma sur les regards et la décision."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Pierre Lemaitre, Au revoir là-haut, 2013."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}
