@@ -1,0 +1,74 @@
+{
+  "slug": "bel_al_etude-de-texte-francais-lyon_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Étude de texte français (Lyon)",
+    "annee": 2022
+  },
+  "intitule": "Marceline Desbordes-Valmore, Le Puits de Notre-Dame à Douai",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=4",
+    "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Lettres%20modernes%202022.pdf",
+    "rapport_sha256": "27c4c03afc71647f5fc5eb5c3142233d3e6007fe6fc03257b23890deffaf4b8b",
+    "pages_rapport": "2–9",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/puits-reve-envoi.svg",
+      "question": "Démonstration",
+      "legende": "Trois gestes autour du puits"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la partie consacrée à cet écrit de spécialité, pages 2–9 du rapport."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire littéraire et stylistique complet, guide, vérification du passage et création du schéma sur les deux pages de cet écrit."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    }
+  ]
+}
