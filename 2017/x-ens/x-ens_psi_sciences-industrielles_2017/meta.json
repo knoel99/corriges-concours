@@ -1,0 +1,56 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2017,
+    "duree_heures": 5
+  },
+  "questions": 80,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Physique/2017_Sujet_PSI_SI.pdf",
+    "sujet_sha256": "5c2d48280cd672f2afd75fbcce351a6754291eac4e01488e2b771f91484740bc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q27-roues.svg",
+      "question": "Q2.7",
+      "legende": "Signe rouge : rotation de la roue. Flèche verte : direction du ripage, le sens +y étant vers la gauche. Un point vert indique un ripage nul."
+    },
+    {
+      "fichier": "figures/q318-bode.svg",
+      "question": "Q3.18",
+      "legende": "DR2. Le passage à 0 dB se situe vers 239 rad/s et la phase réelle y vaut −113,5°. Le tracé de phase asymptotique idéalise les deux transitions."
+    },
+    {
+      "fichier": "figures/q41-enveloppe.svg",
+      "question": "Q4.1",
+      "legende": "DR3. Section horizontale du volume accessible pour les deux débattements de ±150°. La zone centrale et une partie du bord arrière sont hors course."
+    },
+    {
+      "fichier": "figures/q45-coudes.svg",
+      "question": "Q4.5",
+      "legende": "DR4. Deux configurations desservent le même point. Chaque segment a une longueur de 0,5 m."
+    },
+    {
+      "fichier": "figures/q57-serrage.svg",
+      "question": "Q5.7",
+      "legende": "La condition tan β ≤ 2 est atteinte au-delà de 82,1 mm. La zone verte indique les configurations géométriquement compatibles avec le maintien sans poussée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 80 questions sur ROBOVOLC à partir du PDF complet de 40 pages téléchargé à l’ENS Paris-Saclay et identique octet pour octet au miroir du registre. Lecture des cinq annexes et des quatre documents réponse. Cinq schémas originaux, contrôle des calculs cinématiques, de frottement, de répartition des couples, des courbes de Bode et des réponses temporelles. Rapport de jury non retrouvé."
+    }
+  ]
+}
