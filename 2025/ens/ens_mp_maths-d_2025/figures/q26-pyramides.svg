@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="245" viewBox="0 0 660 245" role="img" aria-labelledby="title desc">
+<title id="title">Intersection de deux pyramides dans un carré</title>
+<desc id="desc">À gauche, deux triangles de sommet commun x ont deux bases adjacentes et partagent un segment. À droite, les bases sont opposées et le seul point commun est x.</desc>
+<rect width="660" height="245" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#172f3a">
+<text x="165" y="26" text-anchor="middle" font-size="18">Facettes adjacentes</text>
+<text x="495" y="26" text-anchor="middle" font-size="18">Facettes opposées</text>
+<g stroke-linejoin="round" stroke-width="2">
+<path d="M88 47H240V199H88Z" fill="white" stroke="#344b55"/>
+<path d="M88 47H240L154 132Z" fill="#c8e0ea" stroke="#24627a"/>
+<path d="M240 47V199L154 132Z" fill="#f7dfcb" stroke="#985321"/>
+<path d="M154 132L240 47" fill="none" stroke="#142f41" stroke-width="4" stroke-dasharray="6 4"/>
+<path d="M418 47H570V199H418Z" fill="white" stroke="#344b55"/>
+<path d="M418 47H570L484 132Z" fill="#c8e0ea" stroke="#24627a"/>
+<path d="M418 199H570L484 132Z" fill="#f7dfcb" stroke="#985321"/>
+</g>
+<circle cx="154" cy="132" r="4" fill="#142f41"/><circle cx="484" cy="132" r="4" fill="#142f41"/>
+<g font-size="16"><text x="139" y="148">x</text><text x="469" y="130">x</text></g>
+<g font-size="15" text-anchor="middle"><text x="165" y="227">Segment commun en tirets</text><text x="495" y="227">Seul point commun x</text></g>
+</g></svg>

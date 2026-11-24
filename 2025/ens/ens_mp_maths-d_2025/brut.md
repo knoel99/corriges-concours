@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -145,6 +147,8 @@ Fixons $x\in P^\circ$. Pour tout $z\ne x$ dans $P$, la demi-droite de $x$ vers $
 
 Vérifions la propriété de face. Une forme affine $h$ sur le plan de base, non négative sur $F$ et s’annulant exactement sur une face non vide $D$ de $F$, se prolonge uniquement à l’enveloppe affine de la pyramide en imposant $h(x)=0$. Une telle forme existe en sommant les écarts des contraintes définissant $D$. Sur la pyramide, son lieu d’annulation est le cône sur $D$. C’est donc une face : on peut ajouter cette inégalité support à la présentation, qui ne change pas le polytope. L’apex seul est aussi une face, donnée par le paramètre affine de hauteur égal à son maximum. Appliquer ceci à la face commune des bases montre que les intersections décrites sont des faces communes. Les pyramides sont des polytopes par 17, donc forment le complexe annoncé.
 
+![Dans le carré, les pyramides sur deux côtés voisins se coupent le long du segment joignant x au sommet commun. Celles qui reposent sur deux côtés opposés ont seulement x en commun.](figures/q26-pyramides.svg)
+
 ### Question 27
 
 Choisissons une fois pour toutes un point $b_F\in F^\circ$ pour chaque face non vide, par exemple le barycentre de ses sommets. Il est strict pour toute contrainte non identique sur $F$ par 14. Triangulons les faces par dimension croissante. Un sommet est déjà un simplexe. Si toutes les faces propres de $F$ sont triangulées de manière compatible, prenons les cônes issus de $b_F$ sur les simplexes de ses facettes. L’apex est en dehors du plan de chaque facette, donc chaque cône est un simplexe. Les demi-droites de 26 assurent le recouvrement et montrent que l’intersection de deux cônes est leur apex ou le cône sur une face commune de leurs bases. La triangulation obtenue sur $F$ restreint à celle déjà choisie sur toutes ses faces propres, ce qui maintient la compatibilité. Par récurrence on atteint $P$. Les simplexes sont aussi décrits par les chaînes de faces emboîtées et leurs centres.
@@ -246,6 +250,8 @@ Comparons le coefficient d’un $x^z$ pour $z\in\mathbb Z^n$. Si $z\in P$, il ap
 La somme de 43 est rationnelle par 42 et la stabilité de $R$ par combinaison linéaire. En lui appliquant $I$, les termes de dimension positive disparaissent car ils sont de torsion et $\ker I=T$. Les termes restants correspondent aux sommets, dont le signe est positif. On trouve $IE_P=\sum_{v\text{ sommet}}IE_{C_v}$, la formule de Brion. Pour un polytope borné, $E_P$ est d’ailleurs déjà un Laurent de support fini.
 
 ### Question 45
+
+Vérifions d’abord l’hypothèse de rationalité de Brion. Si $P=\operatorname{Conv}(\gamma_1,\ldots,\gamma_k)$ avec des $\gamma_i$ entiers, alors $x\in P$ équivaut à l’existence de poids $s_i\ge0$ tels que $\sum s_i=1$ et $\sum s_i\gamma_i=x$. C’est un système d’inégalités rationnelles en $(x,s)$ après avoir remplacé chaque égalité par deux inégalités. Pour éliminer un poids, on conserve les contraintes où il n’apparaît pas et on impose que chacune de ses bornes inférieures soit au plus chacune de ses bornes supérieures. Ces conditions sont nécessaires et suffisantes, puisqu’il ne reste qu’un intervalle à remplir. En répétant l’élimination puis en chassant les dénominateurs, on obtient la présentation entière de $P$, y compris en dimension affine inférieure à $n$. La même preuve vaut pour $tP$, engendré par les $t\gamma_i$.
 
 Pour $t\geq1$, les sommets de $tP$ sont les $tv$. Les cônes correspondants sont $C_{tv}(tP)=tv+(C_v(P)-v)=(tv-v)+C_v(P)$. Comme tous les sommets de $P$ sont dans la famille entière de départ par 18, $tv-v\in\mathbb Z^n$. Les questions 36, 34 et 44 donnent
 $$IE_{tP}=\sum_{v\text{ sommet}}x^{tv-v}IE_{C_v(P)}.$$

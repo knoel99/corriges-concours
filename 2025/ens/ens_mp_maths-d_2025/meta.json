@@ -58,6 +58,11 @@
       "fichier": "figures/q46-ehrhart.svg",
       "question": "Q46",
       "legende": "Les trois premiers dilatés du triangle unité contiennent 3, 6 et 10 points entiers. La formule générale est (t+1)(t+2)/2."
+    },
+    {
+      "question": "Q26",
+      "fichier": "figures/q26-pyramides.svg",
+      "legende": "Dans le carré, les pyramides sur deux côtés voisins se coupent le long du segment joignant x au sommet commun. Celles qui reposent sur deux côtés opposés ont seulement x en commun."
     }
   ],
   "revision": {
@@ -103,6 +108,17 @@
       "modifications": null,
       "perimetre": "Comparaison des 48 réponses au sujet officiel et au rapport. Relecture croisée des développements suivant un poids, de la projection centrale des faces visibles et du calcul aux hauteurs nulles et positives dans les théorèmes d’Ehrhart.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 48 questions des deux éditions avec le sujet officiel et le rapport. Contrôle des décomptes sur les classes de résidus, des arguments de faces et de triangulation, du produit de convolution, de Brion et des hauteurs d’Ehrhart. Illustration originale sur les deux types d’intersections des pyramides en Q26 et justification des inégalités rationnelles requises avant l’application de Brion en Q45.",
+      "agent": "astra_maths",
       "fournisseur": "codex"
     }
   ]
