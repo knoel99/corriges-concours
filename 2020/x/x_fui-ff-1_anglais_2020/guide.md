@@ -10,6 +10,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20D'ANGLAIS%20Session%201.pdf)
@@ -21,7 +23,7 @@ L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de
 > [!INDICATION]
 > Nommer les trois biais du texte et définir la déviation du jugement propre à chacun.
 
-Robson describes framing: different descriptions of an identical choice can change our preference. Confirmation leads us to seek supporting material while overlooking inconvenient evidence. A sunk-cost error makes us spend again because we spent before, although the next payment promises no benefit. Each produces a predictably distorted decision, and none disappears simply because somebody scores highly on an intelligence test. (Robson, lines 58–68).
+Robson describes framing: different descriptions of an identical choice can change our preference. Confirmation leads us to seek supporting material while overlooking inconvenient evidence. A sunk-cost error makes us spend again because we spent before, although the next payment promises no benefit. Britain and France persisted with Concorde even as losses seemed increasingly likely. Each produces a predictably distorted decision, and none disappears simply because somebody scores highly on an intelligence test. (Robson, lines 58–68).
 
 ![Three ways a judgement can go wrong](figures/choice.svg)
 
@@ -44,9 +46,11 @@ Robson calls for judgement that goes beyond handling an abstract problem quickly
 > [!INDICATION]
 > Expliquer comment sont comparées les générations et ce que les courbes nordiques changent dans l’interprétation.
 
-Flynn identified a historical gain in average results when successive generations were compared using equivalent IQ tasks. In certain countries the gain reached roughly thirty points over a century. Its speed suggests changes in living or learning conditions, although researchers disagree about the precise explanation. Some Nordic populations subsequently recorded lower averages; the earlier rise is an observed pattern, not a law. (Robson, lines 27–38).
+Flynn identified a historical gain in average results when successive generations were compared using equivalent IQ tasks. The increase averaged about three points each decade, adding up to roughly thirty over a century in certain countries. Its speed suggests changes in living or learning conditions, although researchers disagree about the precise explanation. For Finland, Denmark and Norway the trend apparently turned around the middle of the 1990s, then fell by about one fifth of a point annually. (Robson, lines 27–38).
 
 ![Reading a change in average IQ scores](figures/flynn.svg)
+
+Pour d), convertir 0,2 point par an en deux points de baisse sur dix ans. Le texte compare des moyennes obtenues par des générations différentes. Il ne suit pas le score d’une même personne au cours de sa vie.
 
 ## Essay
 
@@ -69,4 +73,4 @@ My test for the transport authority would therefore involve an evening at the bu
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 60, 62, 60 et 62 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 72, 62, 60 et 77 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

@@ -10,11 +10,13 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### a) Cognitive biases and what they share
 
-Robson describes framing: different descriptions of an identical choice can change our preference. Confirmation leads us to seek supporting material while overlooking inconvenient evidence. A sunk-cost error makes us spend again because we spent before, although the next payment promises no benefit. Each produces a predictably distorted decision, and none disappears simply because somebody scores highly on an intelligence test. (Robson, lines 58–68).
+Robson describes framing: different descriptions of an identical choice can change our preference. Confirmation leads us to seek supporting material while overlooking inconvenient evidence. A sunk-cost error makes us spend again because we spent before, although the next payment promises no benefit. Britain and France persisted with Concorde even as losses seemed increasingly likely. Each produces a predictably distorted decision, and none disappears simply because somebody scores highly on an intelligence test. (Robson, lines 58–68).
 
 ### b) What an IQ score can predict
 
@@ -26,7 +28,9 @@ Robson calls for judgement that goes beyond handling an abstract problem quickly
 
 ### d) The Flynn effect
 
-Flynn identified a historical gain in average results when successive generations were compared using equivalent IQ tasks. In certain countries the gain reached roughly thirty points over a century. Its speed suggests changes in living or learning conditions, although researchers disagree about the precise explanation. Some Nordic populations subsequently recorded lower averages; the earlier rise is an observed pattern, not a law. (Robson, lines 27–38).
+Flynn identified a historical gain in average results when successive generations were compared using equivalent IQ tasks. The increase averaged about three points each decade, adding up to roughly thirty over a century in certain countries. Its speed suggests changes in living or learning conditions, although researchers disagree about the precise explanation. For Finland, Denmark and Norway the trend apparently turned around the middle of the 1990s, then fell by about one fifth of a point annually. (Robson, lines 27–38).
+
+![Three ways a judgement can go wrong](figures/choice.svg)
 
 ## Essay
 

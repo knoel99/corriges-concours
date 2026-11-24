@@ -8,6 +8,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Reclaiming a term
@@ -16,15 +18,17 @@ Repeated use in physics might give the disputed noun a new association, so that 
 
 ### 2. Scientific and social arguments for “primacy”
 
-The suggested expression conveys coming first on a particular task, while avoiding both an association with racial domination and the prediction that ordinary computers will become useless. It indicates a substantial computational lead more clearly than a word suggesting a modest benefit. Its ancestry also recalls familiar mathematical vocabulary. Future improvements in conventional methods could change which machine stays ahead. (Durham, Garisto and Wiesner, lines 67–89).
+The suggested expression conveys coming first on a particular task, while avoiding both an association with racial domination and the prediction that ordinary computers will become useless. It indicates a substantial computational lead more clearly than a word suggesting a modest benefit. The Latin *primus* connects this name with primality, a familiar concept in mathematics. Future improvements in conventional methods could change which machine stays ahead. (Durham, Garisto and Wiesner, lines 67–89).
 
 ### 3. Why the context of physics matters
 
-A technical audience has a history as well as a specialist vocabulary. American physics has long offered unequal opportunities, with Black graduates and women still poorly represented in the figures cited. A word strongly associated with racial hierarchy may therefore discourage people whose place in that field already seems insecure. Choosing another label could show professional courtesy. (Durham, Garisto and Wiesner, lines 13–24, 36–45 and 57–60).
+A technical audience has a history as well as a specialist vocabulary. American physics has long offered unequal opportunities, with Black students receiving just two per cent of undergraduate physics degrees in the figures cited. Women also seldom attain full professorships in that field. A word strongly associated with racial hierarchy may therefore discourage people whose place in that field already seems insecure. Choosing another label could show professional courtesy. (Durham, Garisto and Wiesner, lines 13–24, 36–45 and 57–60).
 
 ### 4. English as a shared scientific language
 
 Researchers who grew up speaking different languages often rely on English to exchange findings. For instance, a physicist in China can submit an English abstract to a conference in Europe, and a Brazilian colleague can question her about it without knowing Mandarin. A name selected by a small laboratory may consequently circulate through journals, lectures and international classrooms far beyond its original setting. (Durham, Garisto and Wiesner, lines 15–24).
+
+![What a computational lead means](figures/two-claims.svg)
 
 ## Essay
 

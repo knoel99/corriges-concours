@@ -78,6 +78,16 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "La comparaison des termes « supremacy » et « primacy », l’argument de Pinker, les quatre réponses et l’essai ont été confrontés au sujet."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé sur Durham, Garisto et Wiesner ; étymologie, portée d’une avance quantique et dénominateur du chiffre sur les diplômés, contrôle de l’essai.",
+      "fournisseur": "codex"
     }
   ],
   "provenance": {
@@ -90,10 +100,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   }
 }

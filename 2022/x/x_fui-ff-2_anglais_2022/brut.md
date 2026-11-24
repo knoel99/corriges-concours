@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. The special difficulty of moral reasoning
@@ -14,7 +16,7 @@ Many computing assignments reward students for demonstrating that a particular a
 
 ### 2. What the Facebook discussion revealed
 
-Students condemned an undisclosed experiment in which Facebook altered what users saw to study their feelings. Soon afterwards the same class designed recommendations for an imaginary retailer. Nobody spontaneously considered the moral implications of gathering customer information. Grosz saw that indignation about someone else’s choices did not automatically influence the decisions students made when acting as designers themselves. (Pazzanese, p. 3).
+Students condemned an undisclosed 2014 experiment in which Facebook altered what users saw to study their feelings. Forty-eight hours afterwards, the same class planned a recommendation tool for a fictitious clothing manufacturer. Nobody spontaneously considered the moral implications of gathering customer information. Grosz saw that indignation about someone else’s choices did not automatically influence the decisions students made when acting as designers themselves. (Pazzanese, p. 3).
 
 ### 3. What ethical reasoning involves
 
@@ -22,7 +24,9 @@ It means identifying who could be affected by a decision, examining their intere
 
 ### 4. The distinctive teaching model
 
-Instead of sending future programmers to a single separate seminar, Harvard distributes philosophical questions throughout their technical studies. Specialists from philosophy work with computing instructors so each discussion arises from the design task currently being tackled. Students repeatedly practise noticing consequences at the moment they choose how a system should operate. Other universities have considered adopting this approach. (Pazzanese, pp. 2–3).
+Instead of sending future programmers to a single separate seminar, Harvard distributes philosophical questions throughout their technical studies through its Embedded EthiCS programme. Philosophy doctoral candidates and postdoctoral researchers work with computing instructors so each discussion arises from the design task currently being tackled. Students repeatedly practise noticing consequences at the moment they choose how a system should operate. Other universities have considered adopting this approach. (Pazzanese, pp. 2–3).
+
+![What changed between the two classroom activities?](figures/two-classes.svg)
 
 ## Essay
 

@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux pages du PDF identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20ANGLAIS_0.pdf)
@@ -17,7 +19,7 @@ L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de
 > [!INDICATION]
 > Situer la candidature olympique au moment de l’article, en 2021. Expliquer le public et le marché visés puis identifier le point de vue de la journaliste.
 
-Cricket officials portray Olympic admission as such an obvious opportunity that debate seems unnecessary. Competing there could introduce unfamiliar spectators to the game, particularly Americans whose attention is commercially valuable. It would also give cricket visibility outside places historically connected with Britain. John reports this sales argument with some scepticism, asking why attracting fresh customers should count as an unquestionable good. (John, p. 2).
+Cricket officials portray Olympic admission as such an obvious opportunity that debate seems unnecessary. The article describes an Olympic bid aimed at 2028. Competing there could introduce unfamiliar spectators to the game, particularly Americans whose attention is commercially valuable. It would also give cricket visibility outside places historically connected with Britain. John reports this sales argument with some scepticism, asking why attracting fresh customers should count as an unquestionable good. (John, p. 2).
 
 ![What the Olympic bid promises officials](figures/olympics-and-market.svg)
 
@@ -33,7 +35,7 @@ In Britain both games compete against football for publicity and money. Their le
 > [!INDICATION]
 > Identifier qui toucherait effectivement la prime, puis comparer la justification du dirigeant et le jugement de John.
 
-The board’s chairman says comparable employers, including other sporting organisations, regularly use such payments to attract and retain senior staff. Managers hired from financial or commercial careers already expect this kind of remuneration. John questions the priorities revealed by rewarding a few administrators so generously while colleagues lost jobs and cricketers accepted lower pay during the pandemic. (John, p. 2).
+The board’s chairman says comparable employers, including other sporting organisations, regularly use such payments to attract and retain senior staff. John herself connects that assumption with the executives’ previous careers in finance or business. John questions the priorities revealed by a proposed bonus pool worth £2.1 million for just a few administrators when cuts had already left sixty-two employees jobless and cricketers facing lower wages. (John, p. 2).
 
 ### 4. What expansion can cost
 
@@ -43,6 +45,8 @@ The board’s chairman says comparable employers, including other sporting organ
 New events compete for time in an already crowded season. Exhausted cricketers cannot recover simply because selectors employ additional teammates and switch between them. Supporters may also find their familiar competitions pushed aside for a format they never requested. Judging progress chiefly by receipts encourages organisers to overlook the pleasure that makes people willing to turn up at all. (John, pp. 2–3).
 
 ![How a busy calendar affects participants](figures/crowded-calendar.svg)
+
+Dans la troisième question, attribuer à Ian Watmore la comparaison avec les pratiques d’autres employeurs. Le rapprochement avec le monde bancaire et la mise en regard des licenciements sont des éléments du récit critique d’Emma John.
 
 ## Essay
 
@@ -65,4 +69,4 @@ The deeper issue concerns who is entitled to describe a good season. A broadcast
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 61, 58, 57 et 59 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 70, 58, 65 et 59 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
