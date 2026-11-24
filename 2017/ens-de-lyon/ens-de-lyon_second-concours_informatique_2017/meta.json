@@ -1,0 +1,43 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2017,
+    "duree_heures": 3
+  },
+  "questions": 24,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/2017_2CC_sujet_Info.pdf",
+    "sujet_sha256": "bd7abf88e384ee02ca6bda371a8a832a73e1d06e7b2cfe86380a309f9bf17ef0",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_2CC_rap_eInfo.pdf",
+    "rapport_sha256": "82dfee2f357a695bda3a6cb2b9259bc967504842bc603308793470c6fa4f4c4e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q29-compression.svg",
+      "question": "2.9",
+      "legende": "Les flèches vont de l’enfant vers son parent. Le parent de la racine d est d dans les deux états."
+    },
+    {
+      "fichier": "figures/q312-niveaux.svg",
+      "question": "3.12",
+      "legende": "Sur ce chemin, les trois nœuds verts ont un ascendant strict non racine de même niveau. Chacun perd au moins une unité de potentiel."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 questions numérotées de 2.1 à 4.3 sur les forêts disjointes et la complexité amortie. Lecture du sujet intégral et du rapport officiel ; le PDF original se termine en partie 3 par la question 3.12. Contrôles des programmes des deux éditions, des partitions de référence, des rangs et du potentiel sur les chemins comprimés. Deux figures originales."
+    }
+  ]
+}
