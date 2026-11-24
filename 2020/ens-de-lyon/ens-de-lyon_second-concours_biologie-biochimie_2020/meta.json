@@ -30,6 +30,8 @@
       8,
       9,
       10,
+      13,
+      14,
       15,
       16,
       17,
@@ -44,16 +46,14 @@
       28,
       29
     ],
-    "questions_partiellement_traitees": [],
-    "questions_non_traitees": [
+    "questions_partiellement_traitees": [
       11,
       12,
-      13,
-      14,
       21,
       22
     ],
-    "precision": "Les questions 1 à 10, 15 à 20 et 23 à 29 sont intégralement traitées, soit 23 sur 29. Les questions 11 à 14 et 21 à 22, qui caractérisent expérimentalement des interventions à vecteurs viraux, sont exclues. Les comparaisons thérapeutiques distinguent les niveaux de preuve du dossier de 2020 et ses suites."
+    "questions_non_traitees": [],
+    "precision": "Les 29 questions sont représentées, dont 25 entièrement. Les Q13 et Q14 couvrent les marqueurs de régénération, la fibrose et le suivi de force. Les Q11, Q12, Q21 et Q22 couvrent les témoins, les marqueurs et les limites de lecture, sans caractériser la distribution du vecteur ni quantifier les rendements de transfert ou de modification."
   },
   "date_revision": "2026-11-24",
   "figures": [
@@ -91,6 +91,11 @@
       "fichier": "figures/marche-a-48-semaines.svg",
       "question": "Q27",
       "legende": "Comparaison des variations moyennes à 48 semaines. Les deux valeurs proches de −44 à −45 m sont figurées par leur ordre de grandeur ; les doses de groupe sont exprimées en mg/kg par jour."
+    },
+    {
+      "fichier": "figures/force-et-temoins.svg",
+      "question": "Q14",
+      "legende": "Moyennes approximatives lues sur les quatre courbes de la figure Q14. Les intervalles de confiance, discutés dans le texte, sont représentés sur l’original."
     }
   ],
   "contributions": [
@@ -104,6 +109,18 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction originale des deux éditions à partir du sujet et du rapport de 2020. Lecture des gels, des cadres histologiques, du pedigree, des phases d’exons et des courbes d’essais. Vérification de la décision européenne ultérieure sur l’ataluren. Six questions de caractérisation expérimentale après vectorisation sont exclues."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision ciblée des deux éditions sur les Q11–14 et 21–22, d’après les planches originales 8, 9 et 12 du sujet et le rapport de jury. Étude histologique et fonctionnelle des muscles avec lecture des incertitudes, ajout des témoins et des limites des immunomarquages, des gels et immunoblots."
     }
   ]
 }
