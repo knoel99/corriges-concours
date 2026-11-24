@@ -1,0 +1,76 @@
+{
+  "slug": "bel_al_deuxieme-composition-de-philosophie-lyon_2019",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Deuxième composition de philosophie (Lyon)",
+    "annee": 2019
+  },
+  "intitule": "Où est la mémoire ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=2",
+    "sujet_sha256": "584c45c92277aefe34fd083279dd477990f7568de569a3f8d169bd44313931e2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-11/PHILO_TC_SP_2019_0.pdf",
+    "rapport_sha256": "cab4efc88afa5ea88d5a17813f193f23f67d04654f1db05d288139f8d8146115",
+    "pages_rapport": "9–14",
+    "references": [
+      "https://fr.wikisource.org/wiki/Mati%C3%A8re_et_M%C3%A9moire/Chapitre_II"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/trace-habitude-rappel.svg",
+      "question": "Démonstration",
+      "legende": "Trois localisations possibles"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la partie consacrée à cet écrit de spécialité, pages 9–14 du rapport."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation, du guide et du schéma. Trace, mémoire-habitude, événement et cadres sociaux."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    }
+  ]
+}
