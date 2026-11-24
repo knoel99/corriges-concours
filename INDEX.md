@@ -603,6 +603,9 @@
 | 2023 | ENS-PSL | CNEL Lettres | Pétrone — les ressorts du comique | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-les-ressorts-du-comique_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-les-ressorts-du-comique_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Cicéron — le Pro Archia | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Histoire de l’art | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/guide.md) |
+| 2022 | ENS-PSL | CNEL Lettres | Sénèque — la Lettre 54 | [md](2022/ens-psl/ens-psl_cnel-lettres_seneque-la-lettre-54_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_seneque-la-lettre-54_2022/guide.md) |
+| 2022 | ENS-PSL | CNEL Lettres | Tite-Live — les Bacchanales | [md](2022/ens-psl/ens-psl_cnel-lettres_tite-live-les-bacchanales_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_tite-live-les-bacchanales_2022/guide.md) |
+| 2022 | ENS-PSL | CNEL Lettres | Virgile — la langue poétique des Géorgiques | [md](2022/ens-psl/ens-psl_cnel-lettres_virgile-la-langue-poetique-des-georgiques_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_virgile-la-langue-poetique-des-georgiques_2022/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études cinématographiques | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études théâtrales | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Droit | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/guide.md) |
