@@ -481,3 +481,13 @@ def test_lualatex_seulement_si_le_tex_change(tmp_path, monkeypatch):
     assert messages == ["PDF inchangé (.tex identique)"] * 2
     assert len(list(dossier.glob(".construction/*.sortie"))) == 2
     assert passe() == []  # marques réécrites au passage
+
+
+@pandoc
+def test_export_japonais_kanji_et_kana(tmp_path):
+    meta = {**META, "epreuve": {**META["epreuve"], "matiere": "Japonais (thème Lyon)"}}
+    source = "# Thème\n\n終点でバスを降りた。\n"
+    resultat = ex.generer_tex(source, meta, "brut", tmp_path / "japonais.tex").read_text()
+    assert "hyphenrules=unhyphenated]{japanese}" in resultat
+    assert "Noto Serif CJK JP" in resultat
+    assert "終点でバスを降りた" in resultat

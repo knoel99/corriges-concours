@@ -128,6 +128,8 @@ def generer_tex(markdown: str, meta: dict, nature: str, sortie: Path) -> Path:
         "--template", str(GABARIT), "--lua-filter", str(FILTRE), "--listings",
         "--wrap=preserve", "-o", str(sortie),
     ]
+    if (meta.get("epreuve", {}).get("matiere") or "").partition(" (")[0] == "Japonais":
+        commande += ["-M", "japonais=true"]
     # Babel choisit la police et la direction des passages arabes dans ces copies bilingues.
     if re.search(r"[ء-يٱ-ۓ]", corps):
         commande += ["-M", "arabe=true"]
