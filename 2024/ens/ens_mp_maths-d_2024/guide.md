@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -165,7 +167,10 @@ Un opérateur est une somme finie de termes $R_j(x)\partial^j$ avec $R_j\in\math
 
 #### Solution
 
-Appliquons Leibniz à la dérivée d’ordre $\mu$ du produit $x^mf$. Le terme correspondant à $i$ dérivations de $x^m$ est $\binom\mu i m(m-1)\cdots(m-i+1)x^{m-i} f^{(\mu-i)}$. Il s’annule pour $i>m$. Le terme $i=0$ est $x^mf^{(\mu)}$ et pour $1\leq i\leq\min(\mu,m)$, l’écriture factorielle de $\binom\mu i$ donne exactement le coefficient annoncé.
+Appliquons Leibniz à la dérivée d’ordre $\mu$ du produit $x^mf$. Le terme correspondant à $i$ dérivations de $x^m$ est $\binom\mu i m(m-1)\cdots(m-i+1)x^{m-i} f^{(\mu-i)}$. Il s’annule pour $i>m$. Avec $(a)_{\underline i}=a(a-1)\cdots(a-i+1)$ et $(a)_{\underline0}=1$, on obtient l’identité imprimée sous la forme
+$$\partial^\mu(x^mf)=x^m\partial^\mu f+
+\sum_{i=1}^{\min(\mu,m)}\frac{(m)_{\underline i}(\mu)_{\underline i}}{i!}\,x^{m-i}\partial^{\mu-i}f.$$
+Pour $m=0$ ou $\mu=0$, la somme est vide.
 
 ### Question 12
 
@@ -275,7 +280,7 @@ L’égalité $u_n=\sum_i b_i a_i^n$ donne après transformation $\widehat f(x)=
 
 #### Solution
 
-Par définition, pour $n\geq1$ on a $n v_{n-1}=n!\sum_{i=0}^{n-1}u_i/i!$, donc $v_n-nv_{n-1}=u_n$. Pour $n=0$, $v_0=u_0$ et l’on convient que le terme à indice négatif multiplié par zéro est nul. Les coefficients de l’égalité annoncée coïncident.
+Par définition, pour $n\geq1$ on a $n v_{n-1}=n!\sum_{i=0}^{n-1}u_i/i!$, donc $v_n-nv_{n-1}=u_n$. Pour $n=0$, $v_0=u_0$ et l’on convient que le terme à indice négatif multiplié par zéro est nul. La série cherchée s’écrit donc $\sum_{n\ge0}(v_n-nv_{n-1})x^n=\sum_{n\ge0}u_nx^n=\widehat f(x)$. Dans cette identité formelle, on peut prendre $v_{-1}=0$ pour uniformiser l’écriture.
 
 ### Question 20
 
@@ -379,7 +384,7 @@ Pour $k\geq0$, les $v_n(k)$ sont les coefficients de $Q(x)^k v(x)$ avec $Q(x)=1-
 
 #### Solution
 
-Posons $Q(x)=1-s_1x-\cdots-s_rx^r=\prod_i(1-a_ix)$. Si $Q^k v$ est un polynôme, la série $v$ est rationnelle car $Q(0)=1$. Réciproquement, pour une éventuelle fraction rationnelle $v$, tout pôle fini $c$ est non nul et impose un pôle de $Lv$ par le calcul d’ordre de 22. Par 20 il doit donc figurer parmi les $1/a_i$ avec $a_i\ne0$. Les zéros de $Q$ sont précisément ces points, même si un $a_i$ est nul. Une puissance assez grande de $Q$ annule donc tous les pôles de $v$. La fraction $Q^k v$ n’a plus de pôle fini et est un polynôme. Cette implication sur les pôles complète celle de 21 dans l’autre sens.
+Posons $Q(x)=1-s_1x-\cdots-s_rx^r=\prod_i(1-a_ix)$. Si $Q^k v$ est un polynôme, la série $v$ est rationnelle car $Q(0)=1$. Réciproquement, pour une éventuelle fraction rationnelle $v$, tout pôle fini $c$ est non nul et impose un pôle de $Lv$ par le calcul d’ordre de 22. Par 20 il doit donc figurer parmi les $1/a_i$ avec $a_i\ne0$. Les zéros de $Q$ sont précisément ces points, même si un $a_i$ est nul. En effet, si $c$ était un autre pôle complexe de $v$, écrivons le terme dominant $d(x-c)^{-m}$ avec $d\ne0$. Alors $-x^2v\prime$ aurait pour coefficient dominant $mc^2d$ à l’ordre $m+1$, que $(1-x)v$ ne pourrait compenser. Cela forcerait un pôle de $Lv$ en dehors de la liste fournie en 20. Une puissance assez grande de $Q$ annule donc tous les pôles de $v$. La fraction $Q^k v$ n’a plus de pôle fini et est un polynôme. Cette implication sur les pôles complète celle de 21 dans l’autre sens.
 
 ### Question 28
 
