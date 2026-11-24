@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_espagnol_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2023
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC%20SUJET%20D'ESPAGNOL%20(XEULSR).pdf",
+    "sujet_sha256": "d05c6485d44332d776348eb519653841fbba1ed03ac6623c10237f889a23dde3",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-PC%20RAPPORT%20ECRIT%20ESPAGNOL%20(XEULSR).pdf",
+    "rapport_sha256": "74cd7c43a433378a349ac3d6093f85e77afb1a88ce32e151ee031b51348305c1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "De la mobilisation aux garanties concrètes"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (619 mots hors titre) et réaction personnelle au document 5 (528 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

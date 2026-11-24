@@ -582,6 +582,8 @@
 | 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Composition d’ordre économique | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Composition d’ordre économique | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/guide.md) |
 | 2024 | ENS Rennes | D-E | Droit civil | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Droit civil | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/guide.md) |
@@ -740,6 +742,10 @@
 | 2024 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_allemand_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_allemand_2024/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_arabe_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_arabe_2024/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2024/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2023 | X-ENS | MP-PC-PSI | Informatique B | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/brut.md) | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/guide.md) |
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
@@ -766,6 +772,7 @@
 | 2024 | X-ENS | MP | Physique | [md](2024/x-ens/x-ens_mp_physique_2024/brut.md) | [md](2024/x-ens/x-ens_mp_physique_2024/guide.md) |
 | 2025 | X-ENS | MP | Physique | [md](2025/x-ens/x-ens_mp_physique_2025/brut.md) | [md](2025/x-ens/x-ens_mp_physique_2025/guide.md) |
 | 2026 | X-ENS | MP | Physique | [md](2026/x-ens/x-ens_mp_physique_2026/brut.md) | [md](2026/x-ens/x-ens_mp_physique_2026/guide.md) |
+| 2024 | X-ENS | MPI | Informatique C | [md](2024/x-ens/x-ens_mpi_informatique-c_2024/brut.md) | [md](2024/x-ens/x-ens_mpi_informatique-c_2024/guide.md) |
 | 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |

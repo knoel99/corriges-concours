@@ -1,0 +1,77 @@
+{
+  "slug": "ens-rennes_d-e_composition-dordre-economique_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2024
+  },
+  "intitule": "Les métamorphoses de la politique macroéconomique au cours des 25 dernières années ont-elles rendu la régulation conjoncturelle plus efficace ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2024_1729180713222-pdf",
+    "sujet_sha256": "d974c79f08a7a4ed31a04d9d629ed915b7a27d490c0aadbf612c380dc3b23fbf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-conomie-e-crit-d-e-2024_1730732760028-pdf",
+    "rapport_sha256": "11f8d3313b2082dbd5b172690d7e93cda1b15be1b9c6211159976804b2255dd4",
+    "references": [
+      "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
+      "https://www.ecb.europa.eu/press/pr/date/2020/html/ecb.pr200318_1~3949d6f266.en.html",
+      "https://www.ecb.europa.eu/press/govcdec/otherdec/2012/html/gc120921.en.html"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/efficacite-selon-le-choc.svg",
+      "question": "Composition",
+      "legende": "Quel résultat attendre selon le choc ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Rapport de trois pages, périmètre 1999–2024, stabilisation, évaluations comparées des instruments et crises."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie, du guide de lecture et du schéma. Les métamorphoses de la politique macroéconomique au cours des 25 dernières années ont-elles rendu la régulation conjoncturelle plus efficace ?"
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    }
+  ]
+}
