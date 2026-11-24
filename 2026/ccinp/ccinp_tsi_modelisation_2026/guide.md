@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet suit le robot serpentiforme aquatique NATRIX, qui comprend une tête, un cou, six modules ARIM à deux degrés de liberté et une queue passive. Chaque module porte un flotteur au profil « triangulaire », que l'on peut faire tourner autour de l'axe du module pour corriger le roulis. L'épreuve de « Modélisation » mêle mathématiques et sciences industrielles autour de cet objet unique.
@@ -183,7 +185,7 @@ $$\forall\theta\in\mathbb{R},\qquad\lim_{N\to+\infty}S_N(\theta)=R_e(\theta).$$
 > Le modèle est-il linéaire par rapport aux paramètres inconnus ? Écrivez les $m$ conditions $R_e(\theta_i)\simeq r_i$ sous forme matricielle.
 
 > [!INDICATION]
-> Il y a beaucoup plus d'équations que d'inconnues, et les mesures sont bruitées : il n'y a pas de solution exacte. Quel critère minimiser ?
+> Il y a beaucoup plus d'équations que d'inconnues, et les mesures sont bruitées : il n’y a généralement pas de solution exacte. Quel critère minimiser ?
 
 #### Solution
 
@@ -204,16 +206,18 @@ import numpy as np
 def identifier_profil(theta, r, N):
     theta = np.asarray(theta, dtype=float)
     Phi = np.column_stack([np.cos(k * theta) for k in range(N)])
-    c, *_ = np.linalg.lstsq(Phi, np.asarray(r, dtype=float), rcond=None)
+    c, _, rang, _ = np.linalg.lstsq(Phi, np.asarray(r, dtype=float), rcond=None)
+    if rang < N:
+        raise ValueError("Les angles mesurés ne permettent pas d’identifier tous les coefficients.")
     return c   # a_0, ..., a_{N-1}
 ```
 
-Testé sur 200 points bruités autour du profil de l'énoncé, ce code retrouve les cinq coefficients donnés (de $54{,}42$ à $-1{,}47$).
+Prenons 200 angles $\theta_i=2\pi i/200$, pour $0\leq i<200$, et ajoutons $0{,}05\cos(5\theta_i)$ mm au rayon donné dans l’énoncé. Cette perturbation est orthogonale aux cinq colonnes du modèle discret. L’ajustement retrouve donc $(54{,}42,-1{,}56,-1{,}71,2{,}91,-1{,}47)$ à l’arrondi numérique près. À l’inverse, si tous les angles sont nuls, toutes les colonnes sont identiques. Les mesures déterminent seulement la somme des coefficients.
 
 Dans le cas général, on ajoute les colonnes $\sin(k\theta_i)$, soit $2N-1$ inconnues. Si les angles sont régulièrement répartis sur une période (avec $N-1<m/2$), la solution se réduit aux sommes discrètes qui approchent les intégrales de Q2.
 
 > [!PIEGE]
-> Une interpolation (courbe passant par tous les points) est impossible avec $N\ll m$ paramètres, et elle serait absurde sur des données bruitées.
+> Un ajustement exact est possible lorsque les mesures appartiennent à $\operatorname{Im}\Phi$. Avec du bruit, on minimise en général un résidu non nul.
 
 > [!METHODE]
 > Un modèle linéaire en ses paramètres s'identifie toujours par moindres carrés linéaires. Ce n'est plus le cas si une pulsation inconnue entre dans un cosinus : le problème devient non linéaire.
@@ -506,6 +510,8 @@ La boucle interne, réduite par la formule de Black, donne $\frac{\Theta}{U}=\fr
 
 $$\boxed{\mathrm{FTBO}(p)=\frac{K_{\text{capt}}K_tC_s\,p\,C(p)}{C_sp(R+Lp)(C_fp^2+K_x)+K_eK_t\big[(C_f+C_s)p^2+K_x\big]}}$$
 
+On suppose la boucle fermée asymptotiquement stable pour appliquer le théorème de la valeur finale.
+
 Le dénominateur vaut $K_eK_tK_x\neq0$ en $0$. La FTBO a donc un **zéro à l'origine** :
 
 $$\mathrm{FTBO}(p)\underset{p\to0}{\sim}\frac{K_{\text{capt}}C_s}{K_eK_x}\,p\,C(p).$$
@@ -516,7 +522,7 @@ Si $C$ est de classe $n$, la FTBO est de classe $n-1$. On prend $A=K_{\text{capt
 
 $$\frac{\Theta}{C_r}=\frac{-C_sp(R+Lp)}{C_sp(R+Lp)(C_fp^2+K_x)+K_eK_t[(C_f+C_s)p^2+K_x]+K_{\text{capt}}K_tC_s\,p\,C(p)}$$
 
-**Classe minimale : 2.** Comme un double intégrateur seul ne laisse aucune marge de phase, on propose
+**Classe minimale : 2.** La marge de phase se calcule sur toute la boucle ouverte. Pour ajouter deux zéros réglables au double intégrateur, on propose
 
 $$\boxed{C(p)=\frac{K(1+T_1p)(1+T_2p)}{p^2}}$$
 
@@ -900,7 +906,7 @@ Le champ de pesanteur est uniforme et stationnaire, et $E_p$ ne dépend que de l
 > La tension est portée par $\vec x_1$ : sur quel axe projeter le PFD pour l'isoler ?
 
 > [!INDICATION]
-> La projection fait apparaître $\dot\theta^2$. Pour l'éliminer, cherchez une intégrale première de l'équation (4) en la multipliant par $\dot\theta$. Quelle hypothèse sur $\ddot\lambda$ faut-il pour intégrer ?
+> Au passage par la verticale, deux pendules peuvent avoir des vitesses différentes. Qu’indique alors la composante centripète de l’accélération sur la tension ?
 
 #### Solution
 
@@ -913,11 +919,7 @@ Le champ de pesanteur est uniforme et stationnaire, et $E_p$ ne dépend que de l
 
 $$T=m\big(g\cos\theta+\ell\dot\theta^2-\ddot\lambda\sin\theta\big).$$
 
-On élimine ensuite $\dot\theta$ en multipliant (4) par $\dot\theta$ et en intégrant. Si $\ddot\lambda$ est constant et si le pendule part du repos en $\theta=0$, on obtient $\ell\dot\theta^2=2g(\cos\theta-1)-2\ddot\lambda\sin\theta$, d'où
-
-$$\boxed{T=m\big[g(3\cos\theta-2)-3\ddot\lambda\sin\theta\big]}$$
-
-Pour un $\lambda(t)$ quelconque, on obtient $\dot\theta$ en résolvant (4), numériquement si besoin. Si le mouvement est lent ($\ell\dot\theta^2\ll g$), $T\simeq m(g\cos\theta-\ddot\lambda\sin\theta)$.
+La vitesse angulaire instantanée intervient dans la tension. Par exemple, à $\theta=0$ et pour un support immobile, deux passages à la verticale avec les vitesses $0$ et $v\ne0$ donnent respectivement $mg$ et $mg+m\ell v^2$. Les valeurs de $m,g,\ell,\theta,\ddot\lambda$ sont identiques dans ces deux situations. Pour une trajectoire donnée, on obtient $\dot\theta$ en résolvant (4) avec la loi de mouvement du support et les conditions initiales.
 
 > [!JURY]
 > Rapport 2026 : il s'agissait de donner une démarche, et « il était bien précisé qu'aucune mise en œuvre n'était demandée ». Le jury attendait une réponse rapide et précise : le système isolé, le principe (statique ou dynamique) et l'équation utilisée, projection comprise.
