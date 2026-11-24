@@ -1,6 +1,12 @@
-# X-ENS MP — Informatique A 2025 · Corrigé brut
+# X-ENS MP-MPI — Informatique A 2025 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Sol · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
 ## Partie I — Description probabiliste des plantes
 
@@ -106,6 +112,8 @@ Si la racine teste la couleur, les deux branches restent mixtes. Dans la branche
 Si la racine teste le nombre de pétales, il faut tester la couleur dans la branche cinq. Elle donne bleu avec probabilité $22/25$, avec les poids $5/11$ et $6/11$ pour le lin et le myosotis, puis blanc avec probabilité $3/25$, donnant le myosotis seul.
 
 Dans la branche quatre, on peut s’arrêter au gaillet. On peut aussi tester la couleur, auquel cas blanc mène au même gaillet avec probabilité 1 et bleu est impossible. La condition sur les nœuds s’applique aussi aux états de Dirac. Les hauteurs des deux arbres de racine nombre de pétales valent donc respectivement **$3/2$ et $2$**. Le premier est l’unique optimum.
+
+![Arbre optimal de Q8. Les probabilités inscrites sur les branches sont conditionnelles au nœud de départ.](figures/q08-arbre-petales.svg)
 
 ### Question 9
 
@@ -427,3 +435,7 @@ On calcule la liste de clauses de Q25. Si elle est vide, la probabilité cherch�
 Soit $L=|\phi|$. Les listes de clauses se construisent par sommes et produits de nombres de choix et contiennent au plus $2^L$ clauses. Cette borne suit par récurrence en utilisant $1+\sum_j|\phi_j|\le L$ pour chaque nœud composé. Chaque clause intermédiaire porte sur des caractères déjà mentionnés dans $\phi$ et ses ensembles sont formés à partir des listes initiales ou de leurs intersections.
 
 La transformation et le coût de fusion des clauses peuvent donc être bornés en fonction de $L$ et de $K$ uniquement. L’inclusion-exclusion examine au plus $2^{2^L}$ sous-familles, et Q23 évalue chacune des clauses sans parcourir les caractères absents de la formule. **Le temps total est borné par une fonction de $L$ et $K$, indépendante de $N$.**
+
+Une seconde méthode évite d’énumérer les sous-familles de clauses. Relevons les $d$ indices de caractères qui apparaissent dans les atomes de $\phi$. On énumère les affectations de ces seuls caractères. À chaque affectation satisfaisante, on ajoute le produit des $d$ probabilités correspondantes. Les caractères absents totalisent chacun une masse de 1. Les affectations énumérées sont incompatibles, même si plusieurs clauses de la formule sont vraies pour la même affectation.
+
+Après remplacement des indices initiaux par des positions locales, l’évaluation de $\phi$ prend $O(1+|\phi|)$ opérations par affectation, en parcourant les listes de valeurs de ses atomes. On peut effectuer le remplacement en $O((1+|\phi|)^2)$ par recherche dans la liste locale, sans tableau de longueur $N$. L’énumération pondérée des supports prend alors $O((1+|\phi|)^2+(1+|\phi|)\max(1,K)^d)$ opérations lorsque l’accès aux distributions des caractères est direct. Comme $d\le |\phi|$, cette borne répond à la question. Si $d=0$, il existe une affectation vide, de poids 1.
