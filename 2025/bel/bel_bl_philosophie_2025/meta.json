@@ -8,5 +8,59 @@
   },
   "questions": 0,
   "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/sens.svg",
+      "question": "Analyse du sujet",
+      "legende": "Trois moments pour analyser le verbe « aimer »"
+    },
+    {
+      "fichier": "figures/philia.svg",
+      "question": "Analyse du sujet",
+      "legende": "De la bienveillance à la philia"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_philosophie.pdf",
+    "sujet_sha256": "65c9fa2721c0a394de5783a8aebf58da834d20ce0582525b2d3850214e538691",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_philosophie.pdf",
+    "rapport_jury_sha256": "1867565bb1f28764e1d90b687710c32052202786f06917593d9bbf2114d43ea4"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "claude-code",
+      "modele": "Claude Opus 4.8",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Éditions originales. Le modèle est nommé dans la notice historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "fournisseur": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Relecture et révision par IA mentionnées dans la notice historique. Identité et réglages non documentés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle du sujet « Aimer. » et du rapport, correction d’une citation du jury isolée à contresens, de l’analyse grammaticale et des distinctions sur Platon et Aristote. Deux schémas et cas limites."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

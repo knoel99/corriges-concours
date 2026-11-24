@@ -1,0 +1,47 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2019,
+    "duree_heures": 3
+  },
+  "questions": 14,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_2c_sujet_info.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_2CC_rap_eInfo.pdf",
+    "sujet_sha256": "7f495ed485fcdb4696a3dd4a4e07f52fc515667c71e454a74c6d3726b3495e28"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-parcours.svg",
+      "question": "Q5",
+      "legende": "Les étiquettes sont les noms des nœuds. Entre les premières visites de 14 et 12, le creux à l’indice 21 représente leur ancêtre commun 2."
+    },
+    {
+      "fichier": "figures/q09-blocs.svg",
+      "question": "Q9",
+      "legende": "Sur les indices de 2 à 9, deux lectures aux frontières encadrent un bloc complet. Les minima donnent des indices absolus du tableau."
+    },
+    {
+      "fichier": "figures/q11-cartesien.svg",
+      "question": "Q11",
+      "legende": "Les nœuds blancs portent les indices du tableau. Les neuf feuilles grises représentent les intervalles vides."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 14 questions et de leurs sous-questions sur le PPAC, le minimum en intervalle et les arbres cartésiens. Lecture du sujet et du rapport, reproduction indépendante de l’arbre de la question 11 et trois figures. Contrôle des cas d’égalité, de l’orientation des requêtes, des complexités en moyenne et au pire et des codes des deux éditions sur des familles exhaustives de tableaux."
+    }
+  ]
+}

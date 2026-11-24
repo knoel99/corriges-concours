@@ -1,0 +1,90 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2012",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2012
+  },
+  "questions": 29,
+  "redaction": "Les douze questions sur les arcs-en-ciel et les dix-sept questions sur la chaînette et le caténoïde sont traitées, avec quatre planches et les comparaisons géométriques demandées.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2012/Ecrit_physique2012.pdf",
+    "nature": "Sujet du second concours universitaire de l’ENS de Lyon.",
+    "sujet_sha256": "19f7eed40592cc19e2459553effd62704bf4e7334e4700363f51b0a85327f2c7"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.2",
+      "fichier": "figures/trajets-goutte.svg",
+      "legende": "Trajets stationnaires pour n = 4/3. Les gouttes sont éclairées de la gauche. Les deux dessins utilisent le même hémisphère incident, d’où leurs directions émergentes opposées autour de l’axe de retour."
+    },
+    {
+      "numero": 2,
+      "question": "I.7",
+      "fichier": "figures/minimum-et-intensite.svg",
+      "legende": "Minimum primaire et allure du pic dans son voisinage. Le lissage de la densité angulaire illustre la largeur finie du maximum."
+    },
+    {
+      "numero": 3,
+      "question": "I.9",
+      "fichier": "figures/arcs-et-horizon.svg",
+      "legende": "Vue vers le ciel opposé au Soleil pour une hauteur solaire de 17°. L’horizon sépare les branches visibles des prolongements géométriques."
+    },
+    {
+      "numero": 4,
+      "question": "II.16",
+      "fichier": "figures/chainette-et-tangence.svg",
+      "legende": "Chaînette à extrémités égales, puis construction du col du caténoïde. Chaque droite issue de l’origine représente un rapport R/d."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Les douze questions sur les arcs-en-ciel et les dix-sept questions sur la chaînette et le caténoïde sont traitées, avec quatre planches et les comparaisons géométriques demandées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17"
+    ]
+  }
+}

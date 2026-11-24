@@ -1,0 +1,36 @@
+{
+  "slug": "x_fui-ff-1_mathematiques_2021",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 1",
+    "matiere": "Mathématiques",
+    "annee": 2021
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021FUI-FF%20Session%201%20SUJET%20de%20MATHEMATIQUES.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "dcc02e9669ddd2fb117b51de60645952520851873cd5cf8bbea846e9ece75ae9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/approximation-bernstein.svg",
+      "question": "5",
+      "legende": "Les approximations de Bernstein de la fonction |x − 0,45| lissent son angle. La majoration de la question 4 contrôle simultanément toutes les abscisses."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 19 réponses et de leurs indications à partir du sujet officiel de la session 1. Vérification du degré de Bernstein, de l’encadrement polynomial au saut et de la constante d’Euler dans le produit générateur. Aucun rapport associé au registre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
