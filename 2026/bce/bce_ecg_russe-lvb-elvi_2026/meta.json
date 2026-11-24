@@ -1,0 +1,41 @@
+{
+  "slug": "bce_ecg_russe-lvb-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Russe LVB (ELVi)",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20AR%20-%20LANGUE_VIVANTE_B_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=17",
+    "sujet_sha256": "030bebbf0b7c6cf80e2d621a3d70fa9bbb4babbc1006d90e67823ca6f5e5bcfc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dossier.svg",
+      "question": "Dossier",
+      "legende": "Que mesure-t-on quand on parle de bonheur ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Résumé sur les approches linguistique, sociologique et psychologique du bonheur, essai russe argumenté, thème borné intégral, distinction entre pourcentages, points d’indice et rangs."
+    }
+  ]
+}

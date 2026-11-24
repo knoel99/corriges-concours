@@ -100,6 +100,8 @@
 | 2026 | BCE | ECG | Polonais LVB (ELVi) | [md](2026/bce/bce_ecg_polonais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_polonais-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Portugais LVA (ELVi) | [md](2026/bce/bce_ecg_portugais-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_portugais-lva-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Portugais LVB (ELVi) | [md](2026/bce/bce_ecg_portugais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_portugais-lvb-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Russe LVA (ELVi) | [md](2026/bce/bce_ecg_russe-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_russe-lva-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Russe LVB (ELVi) | [md](2026/bce/bce_ecg_russe-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_russe-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/guide.md) |
 | 2025 | BCE | ECT | Culture générale (Audencia) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/brut.md) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/guide.md) |
 | 2026 | BCE | ECT | Culture générale (Audencia) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/brut.md) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/guide.md) |
