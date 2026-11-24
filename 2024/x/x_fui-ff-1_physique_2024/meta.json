@@ -61,5 +61,29 @@
       "effort": null,
       "service_tier": null
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Lecture des formules dans les figures du PDF. Vérification des champs, des seuils électroniques, de la période du cerceau et de la construction du téléobjectif sur une échelle horizontale graduée.\nContre-lecture indépendante des exercices 1, 2 et 4, avec recalcul du critère de contact, des vitesses des barres de masses inégales et de la profondeur de l’appareil.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    }
+  ]
 }

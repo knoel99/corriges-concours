@@ -2,9 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte vient du livre IV d’Émile ou De l’éducation de Jean-Jacques Rousseau (1762). Le sujet appelle une réponse d’ensemble, deux explications et un essai bref de forme libre sans limite de mots.
 

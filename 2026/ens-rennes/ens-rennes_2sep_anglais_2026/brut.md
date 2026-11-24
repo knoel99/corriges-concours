@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 L’épreuve d’admission dure deux heures trente, sans dictionnaire. La version compte pour le coefficient 0,5 et la production écrite pour 1,5. Deux modèles de production sont proposés ici. Le candidat choisit **un seul** sujet et rédige de 180 à 220 mots en anglais.
 

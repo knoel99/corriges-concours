@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 La numérotation des molécules, des atomes et des figures citées dans les solutions suit l’énoncé. Les lettres DCO et DBO₅ désignent les demandes chimique et biologique en dioxygène, exprimées en masse de dioxygène par litre d’eau initiale.
 

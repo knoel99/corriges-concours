@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Les concentrations entre crochets sont celles des espèces libres sauf indication contraire. La concentration standard est $c^\circ=1\,\mathrm{mol\,L^{-1}}$. Dans la partie organique, la numérotation des composés et des protons est celle des planches du sujet.
 

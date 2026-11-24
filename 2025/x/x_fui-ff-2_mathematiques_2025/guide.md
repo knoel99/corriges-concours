@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Les deux exercices sont indépendants. Le premier fait apparaître une même équation différentielle sous deux intégrales. Le second utilise une norme adaptée pour étudier la stabilité de suites récurrentes.
 

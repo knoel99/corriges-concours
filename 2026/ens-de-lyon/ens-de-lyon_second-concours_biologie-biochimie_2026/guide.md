@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Les trois heures de composition conduisent de la transmission familiale à une application thérapeutique. Pour chaque expérience, distinguer ce qui est manipulé, ce qui est mesuré et ce que le contrôle permet d’exclure.
 

@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 On note $\Psi_n=M^{(n)}\cdots M^{(1)}$ et $\|\cdot\|_{\rm op}$ la norme opérateur induite par la norme euclidienne sur $\mathbb C^d$. Les tirages sont indépendants, de même loi et de support fini contenu dans les matrices inversibles. On convient que $\log0=-\infty$ lorsque des puissances ou des coefficients peuvent s’annuler.
 

@@ -46,5 +46,39 @@
       "effort": null,
       "service_tier": null
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "Claude Opus 4.8",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17T15:48:09+01:00",
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "GPT-6",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17",
+      "modifications": true,
+      "perimetre": "relecture indépendante effectuée ; corrections de fond et de forme appliquées",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Contre-relecture indépendante du libellé de Butor, du rapport, de l’analyse de la cinquième lettre de Mariane et du montage des voix aux comices dans Madame Bovary.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 2
+    }
+  ]
 }

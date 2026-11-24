@@ -84,5 +84,39 @@
       "effort": null,
       "service_tier": null
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "Claude Opus 5.5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-06T13:35:12",
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "Claude Opus 5.5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-10",
+      "modifications": null,
+      "perimetre": "Révision avec le rapport du jury.",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Relecture des corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 2
+    }
+  ]
 }

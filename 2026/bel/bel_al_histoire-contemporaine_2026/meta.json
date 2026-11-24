@@ -50,5 +50,39 @@
       "effort": null,
       "service_tier": null
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "Claude Opus 4.8",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17T12:34:34+01:00",
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "GPT-6",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-17",
+      "modifications": true,
+      "perimetre": "relecture indépendante effectuée ; corrections de fond et de forme appliquées",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Comparaison à l’intitulé officiel, à la lettre de cadrage et aux pages 2 à 6 du rapport du jury de la session. Vérification des bornes et des exemples de construction étatique et de transformation sociale.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 2
+    }
+  ]
 }

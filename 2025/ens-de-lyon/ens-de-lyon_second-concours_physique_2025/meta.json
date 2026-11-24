@@ -73,5 +73,29 @@
       "effort": null,
       "service_tier": null
     }
-  }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Corrigés brut et guidé.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": null,
+      "perimetre": "Numérotations de A1 à A10 et B1 à B26 vérifiées sur le sujet et rapport écrit consulté. Contre-calcul indépendant des deux flux de chaleur, du rapport α/h, de la condition de surface homogène et de la non-séparabilité du champ initial. Contrôle numérique des profils par modes de Bessel.",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    }
+  ]
 }

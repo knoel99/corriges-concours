@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 **Couverture de l’épreuve (32 questions).** Huit réponses intégrales correspondent aux questions 1, 7, 9, 18, 21, 23, 31 et 32. Les questions 3, 8, 26 et 30 reçoivent une réponse partielle, limitée aux principes des témoins, aux propriétés chimiques des résidus, à la mobilité des ARN ou à la comparaison des ribosomes. Les questions 2, 4–6, 10–17, 19–20, 22, 24–25 et 27–29 (20 questions) concernent l’analyse expérimentale de la virulence de Listeria monocytogenes et restent hors de cette sélection.
 

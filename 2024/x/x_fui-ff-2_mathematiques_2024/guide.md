@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 Dans l’exercice, chacun des deux points frontières demande une preuve particulière. Dans le problème, suivre d’abord les colonnes, puis les deux facteurs des matrices de rang un.
 

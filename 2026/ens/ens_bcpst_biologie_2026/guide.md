@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
 L’épreuve dure six heures. Les durées conseillées sont de deux heures pour la synthèse, deux heures et quart pour l’intestin et une heure trois quarts pour l’extravasation. Pour chaque document, repérer d’abord la population observée, le témoin et la grandeur portée en ordonnée.
 
