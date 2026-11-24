@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=9",
+    "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Anglais%202022.pdf#page=20"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Comment le paysage change-t-il de présence ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Thème anglais intégral de Climax, avec travail sur les fragments, l’observateur, les images du glacier et le basculement final au présent."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Thomas Reverdy, *Climax* (2021)."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
