@@ -420,9 +420,10 @@ def test_export_arabe_et_francais_dans_la_meme_copie(tmp_path):
 
 
 @pandoc
-def test_export_chinois_bilingue_et_autres_matieres(tmp_path):
+@pytest.mark.parametrize("matiere", ["Chinois", "Chinois (commentaire et traduction)"])
+def test_export_chinois_bilingue_et_autres_matieres(tmp_path, matiere):
     source = "# Titre\n\nUne comparaison.\n\n大学如何培养人才？\n"
-    meta = {**META, "epreuve": {**META["epreuve"], "matiere": "Chinois"}}
+    meta = {**META, "epreuve": {**META["epreuve"], "matiere": matiere}}
     chinois = ex.generer_tex(source, meta, "brut", tmp_path / "chinois.tex").read_text()
     assert r"hyphenrules=unhyphenated]{chinese-simplified}" in chinois
     assert r"\babelfont[chinese-simplified]{rm}" in chinois
