@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2022,
+    "duree_heures": 2
+  },
+  "questions": 15,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20D'%20INFORMATIQUE%20B%20(XELSR)_0.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20RAPPORT%20ECRIT%20INFORMATIQUE%20B%20-2h%20(XLSR)_0.pdf",
+    "sujet_sha256": "dabd2010f7ed4c1654a8aadd7d306dcc4752b99e543f6398ced10e9e8154d7fc",
+    "rapport_sha256": "4f874ed5b941758866de6e4b62c0495756c851143df84414bc2adaba86088e6d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q9-vallee.svg",
+      "question": "Q9",
+      "legende": "À gauche, les couches horizontales changent de largeur aux profondeurs des plateaux. À droite, chaque pente de hauteur est l’inverse de la largeur en eau."
+    },
+    {
+      "fichier": "figures/q15-debits.svg",
+      "question": "Q15",
+      "legende": "Numéros des rectangles de la figure 4, source au pied du rectangle 7. Les deux segments bleus simultanés reçoivent chacun un demi-débit entre 5 et 7."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 15 réponses sur les profils de grottes, lecture du sujet et du rapport officiels. Deux figures originales. Exécution du code extrait de chaque édition, décompositions comparées à un calcul sur les colonnes, vérification des capacités, des deux ordres de remplissage et des dates de la figure 6."
+    }
+  ]
+}
