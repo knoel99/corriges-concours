@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte est extrait d’un discours prononcé à Stockholm par Annie Ernaux en 2022. La compréhension comporte quatre questions pour dix points. Le bref essai libre vaut également dix points.
 
 ## A1 · La place de la littérature dans sa vie

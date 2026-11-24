@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Notations
 
 On note $E$ l’unité de l’algèbre réelle $H$ des quaternions, $I,J,K$ ses trois vecteurs de base imaginaires, $H_{\rm im}=\mathrm{Vect}_{\mathbb R}(I,J,K)$ et $S=\{u\in H:N(u)=1\}$. Dans la représentation du sujet,

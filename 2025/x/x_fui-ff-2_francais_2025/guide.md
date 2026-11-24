@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 La formation francophone du concours universitaire international propose une épreuve de deux heures. Le texte est un extrait d’une conférence de Jean-Michel Maulpoix donnée à Aoste en 2020. Les trois réponses de compréhension sont suivies d’un bref essai libre sans limite de mots imposée.
 
 La première partie vérifie la lecture de l’extrait. Dans la seconde, le candidat soutient son propre point de vue. [Sujet officiel de la session](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Fran%C3%A7ais.pdf)

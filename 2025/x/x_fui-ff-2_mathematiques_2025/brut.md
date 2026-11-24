@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## I · Deux représentations de l’intégrale de Dirichlet
 
 ### I.1a · Convergence de l’intégrale de Laplace

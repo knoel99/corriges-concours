@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’écrit du 25 avril 2022 dure quatre heures. Ses 15 numéros comprennent 33 questions et sous-questions. Le problème construit une représentation de la grassmannienne orientée, l’ensemble des sous-espaces orientés de dimension fixée, afin d’en étudier la compacité et les chemins. Pour reconstruire la preuve finale, suivre le passage des bases aux volumes, puis des volumes aux formes. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20DE%20MATHS%20A%20%28XLSR%29.pdf)
