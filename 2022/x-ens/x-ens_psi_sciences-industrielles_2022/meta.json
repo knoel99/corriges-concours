@@ -1,0 +1,61 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2022,
+    "date": "2022-04-26"
+  },
+  "questions": 58,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_SI.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_SII.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q16-bode.svg",
+      "question": "Q16",
+      "legende": "Boucle ouverte avec intégrateur. La phase à la coupure est voisine de −178°. Les pointillés donnent les asymptotes du gain."
+    },
+    {
+      "fichier": "figures/q18-bode.svg",
+      "question": "Q18",
+      "legende": "Réponses fréquentielles calculées. Les pointillés de gain donnent les asymptotes. La verticale repère la coupure de la boucle."
+    },
+    {
+      "fichier": "figures/q39-pression-houle.svg",
+      "question": "Q39",
+      "legende": "Sur le flanc du bateau, le diagramme de pression de la bande supplémentaire est triangulaire. La résultante passe à h/3 au-dessus de la flottaison initiale."
+    },
+    {
+      "fichier": "figures/q41-metacentre.svg",
+      "question": "Q41",
+      "legende": "Le poids et la poussée ont des droites d’action verticales décalées. La droite de poussée coupe la ligne médiane du bateau incliné au métacentre M."
+    },
+    {
+      "fichier": "figures/q50-gains-roulis.svg",
+      "question": "Q50",
+      "legende": "Réponses de roulis du modèle linéaire. La verticale repère la houle de période 6 s. Une forte atténuation du roulis doit rester compatible avec la course de précession."
+    },
+    {
+      "fichier": "figures/q55-graphe-des-liaisons.svg",
+      "question": "Q55",
+      "legende": "Les trois pivots concourent en I. Le graphe joint au même axe le mouvement relatif et le couple extérieur ou actionneur correspondant."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction des 58 questions sur le Seakeeper 35, les montages hyperstatiques, les puissances, les boucles de vitesse, le freinage et les équations gyroscopiques. Lecture du sujet et du rapport officiels, contrôle sur les schémas et graphes originaux et calcul numérique des réponses fréquentielles et bilans. Six figures originales."
+    }
+  ]
+}
