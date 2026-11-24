@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée · 13 novembre 2026
+
+**Révision** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée · 13 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve d'économie, sociologie et histoire du monde contemporain (ESH), conception ESSEC BS et HEC Paris, voie générale, jeudi 23 avril 2026, de 8 h à 12 h. Aucun document, aucune calculatrice. Le sujet tient en une question : « Le court terme est-il l'ennemi du long terme ? ». La consigne demande d'éviter tout verbiage, recommande de ne pas dépasser huit pages et prévient qu'il sera tenu compte du plan, de l'exposition et de la correction de la langue.
@@ -70,7 +76,7 @@ Le plan avance du plus favorable au plus conflictuel, puis vers la solution : l'
 
 #### Solution
 
-- **I.1 — Le court terme comme détour vers l'équilibre de long terme.** Marshall : les ajustements de courte période guident l'investissement qui fixe l'équilibre de longue période. Solow (1956) : la production de long terme dépend du capital, de la population et du progrès technique ; les fluctuations sont des écarts temporaires que les prix résorbent. Neutralité de la monnaie à long terme. Le court terme est au pire neutre.
+- **I.1 — Le court terme comme détour vers l'équilibre de long terme.** Marshall : les ajustements de courte période guident l'investissement qui fixe l'équilibre de longue période. Solow (1956) : la production de long terme dépend du capital, de la population et du progrès technique ; une variation ponctuelle du stock de capital peut être résorbée sur le sentier de transition. La neutralité monétaire à long terme relève séparément d’un modèle d’ajustement des prix.
 - **I.2 — Agir vite pour préserver le long terme.** Keynes, *A Tract on Monetary Reform* (1923) : « In the long run we are all dead », reproche fait aux économistes de renvoyer au retour spontané de l'équilibre. Hystérésis (Blanchard et Summers, 1986) : le chômage de court terme devient structurel (perte de compétences, négociation par les *insiders*) ; la chute de l'investissement réduit la croissance potentielle. Aghion et ses coauteurs (Aghion, Hémous et Kharroubi, 2014) : une politique budgétaire contracyclique favorise la croissance des secteurs dépendants du crédit. Exemple : chômage partiel et prêts garantis de 2020, au prix d'une dette accrue et d'entreprises peu productives maintenues en vie.
 - **I.3 — Le court terme comme prix du long terme.** Schumpeter (*Capitalisme, socialisme et démocratie*, 1942), la destruction créatrice : coûts immédiats, gains de productivité futurs. Désinflation Volcker (à partir de 1979) : récession et chômage au-delà de 10 % fin 1982, puis crédibilité monétaire durable. Un arbitrage, pas une hostilité.
 - *Transition* : ces analyses supposent que les agents intègrent l'avenir dans leurs choix ; leurs comportements le démentent souvent.
@@ -91,10 +97,12 @@ Le plan avance du plus favorable au plus conflictuel, puis vers la solution : l'
 
 #### Solution
 
-- **II.1 — Les ménages et la préférence pour le présent.** Revenu permanent (Friedman, 1957) contre actualisation hyperbolique (Laibson, 1997) : sous-épargne pour la retraite, sous-investissement en santé ou en formation. Paradoxe de l'épargne : l'articulation joue dans les deux sens.
+- **II.1 — Les ménages et la préférence pour le présent.** Revenu permanent (Friedman, 1957) contre actualisation quasi hyperbolique (Laibson, 1997) : sous-épargne pour la retraite, sous-investissement en santé ou en formation. Paradoxe de l'épargne : l'articulation joue dans les deux sens.
 - **II.2 — Les entreprises et la finance.** Théorie de l'agence (Jensen et Meckling, 1976), valeur actionnariale, rémunérations indexées, résultats trimestriels ; enquête de Graham, Harvey et Rajgopal (2005) : une majorité de directeurs financiers prêts à sacrifier de la valeur pour tenir l'objectif trimestriel. Keynes, *Théorie générale* (1936), chapitre 12 : le concours de beauté ; Orléan (*Le Pouvoir de la finance*, 1999) : la liquidité détourne de l'engagement. Crise de 2008.
 - **II.3 — L'État et les biens communs.** Nordhaus (1975), cycle électoral ; Kydland et Prescott (1977), incohérence temporelle ; *stop and go* britannique des années 1950-1960. Hardin (*Science*, 1968), tragédie des biens communs ; rapport Meadows (1972). Conflit maximal : irréversibilité et générations futures absentes du marché et du vote. Tragédie des horizons (Carney, 2015).
 - *Transition* : si l'ennemi est l'horizon des décideurs plutôt que le court terme lui-même, la réponse est institutionnelle.
+
+![Calcul illustratif. Pour une utilité linéaire, un biais du présent β = 0,4 et un facteur annuel δ = 0,8, le gain lointain est préféré en date 0. En date 1, le gain plus faible devenu immédiat est préféré. Les valeurs sont calculées du point de vue de chaque date.](figures/preference-et-revision.svg)
 
 > [!PIEGE]
 > Énumérer les biais cognitifs (récompense immédiate, aversion à la perte, illusion monétaire) sans dire en quoi ils sacrifient le long terme. Chaque biais doit déboucher sur une conséquence durable : épargne, capital, environnement.
@@ -112,9 +120,9 @@ Le plan avance du plus favorable au plus conflictuel, puis vers la solution : l'
 
 #### Solution
 
-- **III.1 — Soustraire des décisions au calendrier électoral.** Barro et Gordon (1983), biais inflationniste ; Rogoff (1985), banquier central conservateur ; Banque de France indépendante (1993), mandat de la BCE. Règles budgétaires : Pacte de stabilité et de croissance (1997), Haut Conseil des finances publiques (2012), frein à l'endettement allemand (2009). Limite : la consolidation de la zone euro en 2010-2013 et les multiplicateurs sous-estimés (Blanchard et Leigh, 2013) ; réforme du frein allemand en mars 2025 pour l'investissement et la défense. Il faut des règles qui protègent l'investissement.
+- **III.1 — Soustraire des décisions au calendrier électoral.** Barro et Gordon (1983), biais inflationniste ; Rogoff (1985), banquier central conservateur ; indépendance de la Banque de France, loi de 1993 entrée en vigueur en 1994, mandat de la BCE. Règles budgétaires : Pacte de stabilité et de croissance (1997), Haut Conseil des finances publiques (2012), frein à l'endettement allemand (2009). Limite : la consolidation de la zone euro en 2010-2013 et les multiplicateurs sous-estimés (Blanchard et Leigh, 2013) ; réforme du frein allemand en mars 2025 pour l'investissement et la défense. Il faut des règles qui protègent l'investissement.
 - **III.2 — Une gouvernance et une finance patientes.** Albert (*Capitalisme contre capitalisme*, 1991), modèle rhénan ; Hall et Soskice (*Varieties of Capitalism*, 2001), capital patient ; Freeman (1984), parties prenantes ; loi Pacte (2019), raison d'être et société à mission ; publication extra-financière, prise en compte du risque climatique par les superviseurs.
-- **III.3 — Donner un prix au long terme sans sacrifier le court terme.** Taux d'actualisation : Stern (2006), préférence pure pour le présent quasi nulle, contre Nordhaus, taux fondé sur les rendements observés ; un choix éthique entre générations. Instruments : prix du carbone ; Ostrom (*Governing the Commons*, 1990) ; *nudges* (Thaler et Benartzi, « Save More Tomorrow », 2004). Acceptabilité : gel de la taxe carbone fin 2018 après les gilets jaunes. Réconciliation : *Next Generation EU* (décidé en juillet 2020, 750 milliards d'euros), une réponse de crise qui finance la transition.
+- **III.3 — Donner un prix au long terme sans sacrifier le court terme.** Taux d'actualisation : Stern (2006), préférence pure pour le présent quasi nulle, contre Nordhaus, taux fondé sur les rendements observés ; un choix éthique entre générations. Instruments : prix du carbone ; Ostrom (*Governing the Commons*, 1990) ; *nudges* (Thaler et Benartzi, « Save More Tomorrow », 2004). Acceptabilité : gel de la taxe carbone fin 2018 après les gilets jaunes. Réconciliation : *Next Generation EU* (décidé en juillet 2020, 750 milliards d'euros aux prix de 2018), une réponse de crise qui finance la transition.
 
 > [!METHODE]
 > Une partie « solutions » n'est pas un catalogue de mesures : chaque institution doit répondre à un mécanisme identifié dans la partie précédente (ici, la délégation répond au cycle électoral et à l'incohérence temporelle, la gouvernance à la valeur actionnariale, le prix du carbone à la tragédie des biens communs).
@@ -124,14 +132,14 @@ Le plan avance du plus favorable au plus conflictuel, puis vers la solution : l'
 | Référence ou exemple | Ce qu'elle apporte | Où |
 |---|---|---|
 | Marshall, *Principles of Economics* (1890) | courte et longue période, facteurs fixes et variables | intro, I.1 |
-| Solow (1956) | croissance de long terme déterminée par l'offre, fluctuations transitoires | I.1 |
+| Solow (1956) | accumulation et convergence vers un sentier de croissance sous hypothèses données | I.1 |
 | Keynes, *A Tract on Monetary Reform* (1923) | refus d'attendre le long terme | I.2 |
 | Blanchard et Summers (1986) | hystérésis du chômage | I.2 |
 | Aghion, Hémous et Kharroubi (2014) | politique contracyclique, contraintes de crédit et croissance | I.2 |
 | Chômage partiel et prêts garantis (2020) | stabiliser pour préserver les capacités | I.2 |
 | Schumpeter, *Capitalisme, socialisme et démocratie* (1942) | destruction créatrice, coût immédiat et gain futur | I.3 |
 | Désinflation Volcker (1979-1982) | sacrifice présent, crédibilité durable | I.3 |
-| Friedman (1957) ; Laibson (1997) | revenu permanent, actualisation hyperbolique | II.1 |
+| Friedman (1957) ; Laibson (1997) | revenu permanent, actualisation quasi hyperbolique | II.1 |
 | Jensen et Meckling (1976) ; Graham, Harvey et Rajgopal (2005) | valeur actionnariale, court-termisme des dirigeants | II.2 |
 | Keynes, *Théorie générale* (1936), ch. 12 ; Orléan (1999) | spéculation, liquidité | II.2 |
 | Crise de 2008 | coût durable du rendement immédiat | II.2 |
@@ -183,3 +191,9 @@ Si l'analyse économique conduit à voir dans le court terme la condition du lon
 - **Notions à revoir.** Courte et longue période ; neutralité de la monnaie ; hystérésis ; destruction créatrice ; préférence pour le présent et actualisation ; théorie de l'agence et valeur actionnariale ; cycle électoral et incohérence temporelle ; taux d'actualisation et débat Stern-Nordhaus ; biens communs.
 - **Références à maîtriser.** Keynes (1923, 1936), Blanchard et Summers (1986), Schumpeter (1942), Kydland et Prescott (1977), Hardin (1968), Stern (2006) et Nordhaus, Ostrom (1990), Thaler.
 - **Sujets voisins.** « Faut-il sacrifier le présent à l'avenir ? » ; « La finance est-elle court-termiste ? » ; « Les politiques conjoncturelles sont-elles encore utiles ? » ; « La croissance est-elle compatible avec la soutenabilité ? » ; « Les règles doivent-elles l'emporter sur la discrétion en politique économique ? ».
+
+## Sources
+
+[Sujet BCE, code 245](https://www.concours-bce.com/sites/default/files/2026-04/245%20-%20ESH_%20ESSEC_BS_HEC_PARIS.pdf) · [Rapport du jury 2026](https://www.concours-bce.com/sites/default/files/2026-07/245%20-%20Rapport%20ESH%20ESSEC%20BS-HEC%20Paris%20%202026.pdf)
+
+[David Laibson, actualisation et engagement](https://doi.org/10.1162/003355397555253) · [Graham, Harvey et Rajgopal, enquête auprès des dirigeants financiers](https://doi.org/10.1016/j.jacceco.2005.01.002)

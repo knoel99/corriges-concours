@@ -1,0 +1,88 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2016",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2016
+  },
+  "questions": 19,
+  "redaction": "Les dix-neuf questions du sujet sont traitées. Cinq figures représentent la subduction, le géotherme, les classifications chimiques, les trapps et les effets climatiques. Les photographies originales et le rapport ont été examinés.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/02/16_2c_Geologie.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/10/16_2c_rap_eST.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "9e8abe8aa4d533d1abe2632c353d51b5e227a92bab7da30457160d690505f2b2",
+    "rapport_sha256": "a903ad99af2709c95073485af026b1ff0d88f74f006be8d9e8d96bbae78c1172"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1b",
+      "fichier": "figures/tonga.svg",
+      "legende": "Coupe interprétative d’ouest en est. Le ruban bleu représente l’anomalie de vitesse positive. Les pointillés roux schématisent des isothermes infléchies par la plaque froide. Les trois lettres placent les échantillons de la figure 2 du sujet."
+    },
+    {
+      "numero": 2,
+      "question": "2f",
+      "fichier": "figures/geotherme.svg",
+      "legende": "Profil schématique. Les gradients sont élevés dans les couches limites. Le gradient du manteau convectif reste proche du gradient adiabatique."
+    },
+    {
+      "numero": 3,
+      "question": "3a",
+      "fichier": "figures/deccan-classification.svg",
+      "legende": "Points calculés à partir de l’analyse du sujet. À gauche, extrait schématique du diagramme des alcalins. À droite, les proportions A, F et M totalisent 100 % dans le triangle."
+    },
+    {
+      "numero": 4,
+      "question": "3e",
+      "fichier": "figures/trapps.svg",
+      "legende": "Coupe conceptuelle d’un épisode de volcanisme de plateau. La remontée mantellique, les filons et les coulées superposées relient processus profonds et morphologie de surface."
+    },
+    {
+      "numero": 5,
+      "question": "4b",
+      "fichier": "figures/climat.svg",
+      "legende": "Les processus ont des signes et des durées différents. Les sulfates stratosphériques refroidissent sur quelques années. Le bilan carboné peut changer de signe à l’échelle de l’altération et du dépôt des carbonates."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix-neuf questions du sujet sont traitées. Cinq figures représentent la subduction, le géotherme, les classifications chimiques, les trapps et les effets climatiques. Les photographies originales et le rapport ont été examinés.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "1d",
+      "1e",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "2e",
+      "2f",
+      "3a",
+      "3b",
+      "3c",
+      "3d",
+      "3e",
+      "4a",
+      "4b",
+      "4c"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_italien-commentaire-et-traduction_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (commentaire et traduction)",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=12",
+    "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Italien%202022_0.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Entrare in una lingua, ricordare un luogo"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire italien de tout l’extrait autobiographique d’Edith Bruck, version française des lignes 22 à 49 du fascicule, guidage et schéma sur la voix, le regard et l’acquisition de l’italien."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Edith Bruck, *Il pane perduto*, Milan, La nave di Teseo, 2021. Le commentaire porte sur l’extrait entier, jusqu’à Ischia. La version commence en mai, au milieu du paragraphe sur le jardin, et s’achève à la ligne 49 sur la ville où imagination et chant sont chez eux."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}

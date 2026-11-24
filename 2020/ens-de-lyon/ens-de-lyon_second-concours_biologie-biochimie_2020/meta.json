@@ -1,0 +1,109 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2020",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2020
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2c2020_bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/01/20_2CC_rap_eBio.pdf",
+    "references": [
+      "https://www.ema.europa.eu/fr/medicines/human/EPAR/translarna"
+    ],
+    "sujet_sha256": "b574efd03dca4ba3b651f50fff936a44e0755f023b81064b1d91d2866bb2e6bb",
+    "rapport_sha256": "bac630d4b9d2c6c1c1fb1e976afea8f2049c4d3bad11e6569ef238d34b805d89"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      11,
+      12,
+      13,
+      14,
+      21,
+      22
+    ],
+    "precision": "Les questions 1 à 10, 15 à 20 et 23 à 29 sont intégralement traitées, soit 23 sur 29. Les questions 11 à 14 et 21 à 22, qui caractérisent expérimentalement des interventions à vecteurs viraux, sont exclues. Les comparaisons thérapeutiques distinguent les niveaux de preuve du dossier de 2020 et ses suites."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/gene-a-proteine.svg",
+      "question": "Q2",
+      "legende": "Les exons 1, 2 et 3 sont conservés dans l’ARNm mature. L’export nucléaire sépare les étapes de maturation de la traduction cytoplasmique."
+    },
+    {
+      "fichier": "figures/coupes-du-muscle.svg",
+      "question": "Q3",
+      "legende": "Dessin des deux cadres de la figure Q3.2, chacun large d’environ 75 µm. En mauve foncé, les noyaux ; en rose, les profils de fibres ; en blanc, les espaces clairs."
+    },
+    {
+      "fichier": "figures/carte-deletions.svg",
+      "question": "Q7",
+      "legende": "Un point indique une bande présente et une croix une bande non détectée. La figure ne donne pas les limites exactes entre les marqueurs testés."
+    },
+    {
+      "fichier": "figures/phases-exons.svg",
+      "question": "Q8",
+      "legende": "Les jonctions 50–51 et 52–53 traversent un triplet. La jonction 51–52 tombe à la frontière de deux triplets."
+    },
+    {
+      "fichier": "figures/marche-temoins-historiques.svg",
+      "question": "Q19",
+      "legende": "Lectures arrondies des moyennes de la figure Q19. Le suivi historique comporte des pertes de participants et ne supprime pas les biais entre groupes."
+    },
+    {
+      "fichier": "figures/predictions-translecture.svg",
+      "question": "Q26",
+      "legende": "Prédictions qualitatives de l’hypothèse de translecture. La séquence mutée persiste alors qu’une fraction de protéine de pleine longueur peut être produite."
+    },
+    {
+      "fichier": "figures/marche-a-48-semaines.svg",
+      "question": "Q27",
+      "legende": "Comparaison des variations moyennes à 48 semaines. Les deux valeurs proches de −44 à −45 m sont figurées par leur ordre de grandeur ; les doses de groupe sont exprimées en mg/kg par jour."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions à partir du sujet et du rapport de 2020. Lecture des gels, des cadres histologiques, du pedigree, des phases d’exons et des courbes d’essais. Vérification de la décision européenne ultérieure sur l’ataluren. Six questions de caractérisation expérimentale après vectorisation sont exclues."
+    }
+  ]
+}

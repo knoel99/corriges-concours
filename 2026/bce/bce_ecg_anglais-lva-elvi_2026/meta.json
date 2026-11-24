@@ -1,0 +1,41 @@
+{
+  "slug": "bce_ecg_anglais-lva-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Anglais LVA (ELVi)",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/75%20GB%20-%20LANGUE_VIVANTE_A_ELVI_ALLEMAND_ANGLAIS_ESPAGNOL.pdf#page=8",
+    "sujet_sha256": "355b32ff17b6678d50137ca33444bb91f286d5a2a31fc1b73f310269a7177179"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dossier.svg",
+      "question": "Dossier",
+      "legende": "What stage of enforcement is disputed?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Trois exercices de LVA anglaise sur le dossier officiel, résumé comparatif des articles américain et britannique, essai personnel mobilisant les documents et des exemples historiques, traduction de la seule partie délimitée du document 3, schéma."
+    }
+  ]
+}
