@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_psi_maths-psi_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2019
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/19_psi_math_sujet.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "efa43476b68f8667df25eb2e9ca639e41f7cfab1de038605b530cc7c2cc41c2c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/polynome-spectral.svg",
+      "question": "21",
+      "legende": "Pour des valeurs propres comprises entre 1 et 5, le polynôme de degré trois conserve la valeur un en zéro et oscille entre deux bornes opposées sur l’intervalle grisé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des questions 1 à 26 et des quatre assertions finales. Vérification du rang de stabilisation, de la borne en nombre de condition et de la récurrence de conjugaison avant arrêt. Schéma du polynôme de Tchebychev normalisé.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
