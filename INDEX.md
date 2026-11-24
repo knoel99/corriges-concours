@@ -109,6 +109,7 @@
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2024 | BEL | AL | Géographie | [md](2024/bel/bel_al_geographie_2024/brut.md) | [md](2024/bel/bel_al_geographie_2024/guide.md) |
 | 2024 | BEL | AL | Histoire contemporaine | [md](2024/bel/bel_al_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_al_histoire-contemporaine_2024/guide.md) |
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
@@ -333,7 +334,10 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2026 | ENS de Lyon | Second concours | Informatique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/guide.md) |
+| 2026 | ENS de Lyon | Second concours | Mathématiques | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
+| 2026 | ENS Rennes | 2SEP | Anglais | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/guide.md) |
 | 2026 | ENS | BCPST | Biologie | [md](2026/ens/ens_bcpst_biologie_2026/brut.md) | [md](2026/ens/ens_bcpst_biologie_2026/guide.md) |
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
@@ -487,6 +491,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
 | 2024 | X | MP | Maths B | [md](2024/x/x_mp_maths-b_2024/brut.md) | [md](2024/x/x_mp_maths-b_2024/guide.md) |
 | 2025 | X | MP | Maths B | [md](2025/x/x_mp_maths-b_2025/brut.md) | [md](2025/x/x_mp_maths-b_2025/guide.md) |
 | 2026 | X | MP | Maths B | [md](2026/x/x_mp_maths-b_2026/brut.md) | [md](2026/x/x_mp_maths-b_2026/guide.md) |

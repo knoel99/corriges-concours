@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 410" role="img" aria-labelledby="titre desc">
+<title id="titre">Deux solutions du modèle géométrique inverse dans un plan vertical</title>
+<desc id="desc">Pour une épaule O₂ et un poignet O₅ imposés, deux positions du coude O₃ sont aux intersections des cercles représentant les longueurs constantes. Le segment terminal se superpose dans les deux configurations.</desc>
+<rect width="840" height="410" fill="#fff"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#233743">
+<text x="22" y="32" font-size="22" font-weight="bold">Deux positions du coude pour un seul poignet</text>
+<text x="22" y="58" font-size="16">Les pointillés marquent des arcs centrés sur l’épaule et sur le poignet.</text>
+<g fill="none" stroke="#8e9ca5" stroke-width="2" stroke-dasharray="5 5">
+<path d="M345 74 A265 265 0 0 1 345 361" />
+<path d="M372 68 A216 216 0 0 0 372 366" />
+</g>
+<g stroke-width="6" fill="none" stroke-linejoin="round">
+<path d="M123 217 L354.6 88.2 L528 217" stroke="#22628c"/>
+<path d="M123 217 L354.6 345.8 L528 217" stroke="#a1492c"/>
+<path d="M528 217 H737 V199" stroke="#3c6554"/>
+</g>
+<g fill="#fff" stroke-width="3">
+<circle cx="123" cy="217" r="6" stroke="#233743"/>
+<circle cx="354.6" cy="88.2" r="6" stroke="#22628c"/>
+<circle cx="354.6" cy="345.8" r="6" stroke="#a1492c"/>
+<circle cx="528" cy="217" r="6" stroke="#233743"/>
+<circle cx="737" cy="199" r="6" stroke="#3c6554"/>
+</g>
+<g font-size="17">
+<text x="48" y="242">O₂, épaule</text>
+<text x="387" y="94" fill="#164e71">O₃, coude haut</text>
+<text x="389" y="351" fill="#813b26">O₃′, coude bas</text>
+<text x="523" y="248">O₅, poignet</text>
+<text x="530" y="181" fill="#335b4a">Orientation commune</text>
+<text x="750" y="200">G₆</text>
+</g>
+<g fill="none" stroke="#364a52" stroke-width="2">
+<path d="M53 359 V291 M49 299 L53 291 L57 299 M53 359 H108 M99 355 L108 359 L99 363"/>
+</g>
+<text x="28" y="299" font-size="16">z₀</text><text x="112" y="364" font-size="16">x₀</text>
+<text x="22" y="393" font-size="15">O₃O₅ représente la longueur géométrique résultante du bras et de l’avant-bras.</text>
+</g></svg>

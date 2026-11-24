@@ -1,0 +1,62 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2026
+  },
+  "questions": 17,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA à partir du sujet officiel.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_info.pdf",
+    "index": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ou-et.svg",
+      "question": "2",
+      "legende": "Chaque branche V suit un test vrai, chaque branche F un test faux. Une seule réponse vraie suffit au « ou », tandis qu’une seule réponse fausse suffit au « et »."
+    },
+    {
+      "fichier": "figures/triplets-consecutifs.svg",
+      "question": "4",
+      "legende": "En interrogeant la case commune aux trois fenêtres, on calcule la fonction sur cinq bits avec au plus quatre tests sur tout chemin."
+    },
+    {
+      "fichier": "figures/triangle-ou.svg",
+      "question": "8",
+      "legende": "La frontière du triangle contient trois arêtes et trois sommets. Son intérieur ne figure pas dans le complexe. La face vide n’a pas de point sur ce dessin."
+    },
+    {
+      "fichier": "figures/prefixes-faces.svg",
+      "question": "10",
+      "legende": "Le parcours en largeur de l’arbre des préfixes donne la face vide, les quatre sommets, puis les trois arêtes du complexe des triplets consécutifs."
+    },
+    {
+      "fichier": "figures/hasse-oriente.svg",
+      "question": "12",
+      "legende": "Les flèches vertes montent sur les couples. Toutes les autres descendent. Le graphe contient dix arcs pour huit faces."
+    },
+    {
+      "fichier": "figures/facettes-extension.svg",
+      "question": "13",
+      "legende": "Pour former les facettes de {0, 2, 5}, on conserve le préfixe {0, 2}, puis on ajoute 5 à chacune de ses deux facettes."
+    },
+    {
+      "fichier": "figures/effondrement.svg",
+      "question": "15",
+      "legende": "Quatre effondrements élémentaires enlèvent successivement les couples du diagramme de la question 12. Le dernier effondrement emporte aussi la face vide."
+    },
+    {
+      "fichier": "figures/classes-racine.svg",
+      "question": "16",
+      "legende": "Les seuls arcs entre les deux classes effacent le premier indice testé. Un cycle ne peut donc jamais revenir dans la classe qui le contient."
+    }
+  ]
+}
