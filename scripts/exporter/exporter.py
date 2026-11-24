@@ -128,16 +128,15 @@ def generer_tex(markdown: str, meta: dict, nature: str, sortie: Path) -> Path:
         "--template", str(GABARIT), "--lua-filter", str(FILTRE), "--listings",
         "--wrap=preserve", "-o", str(sortie),
     ]
-    if (meta.get("epreuve", {}).get("matiere") or "").partition(" (")[0] == "Japonais":
-        commande += ["-M", "japonais=true"]
     # Babel choisit la police et la direction des passages arabes dans ces copies bilingues.
     if re.search(r"[ء-يٱ-ۓ]", corps):
         commande += ["-M", "arabe=true"]
     if re.search(r"[א-ת]", corps):
         commande += ["-M", "hebreu=true"]
     matiere = meta.get("epreuve", {}).get("matiere") or ""
-    if matiere.partition(" (")[0] == "Chinois":
-        commande += ["-M", "chinois=true"]
+    langue_cjk = re.fullmatch(r"(Chinois|Japonais)(?: LV[AB])?", matiere.partition(" (")[0])
+    if langue_cjk:
+        commande += ["-M", f"{langue_cjk.group(1).lower()}=true"]
     for cle, valeur in variables_gabarit(meta, nature, titre).items():
         commande += ["-V", f"{cle}={valeur}"]
     subprocess.run(commande, input=corps, text=True, check=True, capture_output=True)
