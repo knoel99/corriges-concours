@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve du 17 avril 2026 dure cinq heures, sans calculatrice. Le modèle de référence est un avion régional ATR 72 doté de deux turbopropulseurs. La partie A relie les forces, les débits d’un moteur et les réglages des deux hélices. La partie B étudie une source électrique et les contraintes d’un entraînement électrique en altitude.

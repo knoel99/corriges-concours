@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Comment la même eau peut-elle monter dans un tube, apparaître en rosée, puis tomber sous forme de glace à vitesse limitée ? Les trois parties sont indépendantes. Pendant cette épreuve de quatre heures sans calculatrice, les bilans de forces, les lectures graphiques et les constantes de temps permettent de contrôler les résultats numériques.

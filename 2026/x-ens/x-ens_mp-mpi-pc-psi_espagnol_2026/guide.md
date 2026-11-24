@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’écrit commun du 15 avril 2026 dure quatre heures. La synthèse se rédige en espagnol, avec un titre, en 600 à 675 mots. Elle croise les documents 1 à 4, dont le dernier comprend **deux images**. Le texte d’opinion répond en espagnol à la chronique de Nuria Labari, en 500 à 600 mots. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Espagnol.pdf)

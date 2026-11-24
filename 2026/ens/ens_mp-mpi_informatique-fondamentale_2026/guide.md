@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Une coloration peut être facile à construire et impossible à modifier sommet par sommet. Le sujet examine ce phénomène avec trois regards différents. La partie I construit des chemins de recoloration, la partie II reconstruit le graphe d’origine à partir de ses colorations et la partie III étudie les pas d’une marche aléatoire. La partie IV remplace les colorations par des ensembles dominants. En partie V, on colore les arêtes et une permutation de deux couleurs débloque la situation.

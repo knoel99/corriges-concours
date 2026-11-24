@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 **Problématique** — Si le plaisir et la douleur orientent nos premiers gestes, qu’ajoute l’expérience à ces avertissements naturels, et jusqu’où peut-elle changer les fins qui nous font agir ?
 
 Dans *Le Mur invisible*, un chemin que la narratrice pouvait jusque-là emprunter s’interrompt en un lieu où ses yeux ne discernent aucun obstacle. Le chien Lynx s’y heurte. La douleur signale immédiatement un danger, mais personne n’est capable de dire ce qui vient d’arriver. Cette scène donne sa force à l’analyse de Condillac. Dans le *Traité des sensations*, la nature dote l’être humain d’organes qui l’orientent vers ce qui lui fait plaisir et l’éloignent de ce qui lui fait mal. Elle lui épargne ainsi d’avoir à apprendre de toutes pièces ce qui importe à sa vie. Elle lui laisse pourtant beaucoup à faire. Entre éprouver une douleur et savoir comment se conduire quand elle revient, il faut que le temps ait passé, que le souvenir se soit formé et qu’une manière d’agir soit devenue disponible. Mais que signifie alors « achever » ce que la nature a commencé ? S’agit-il de trouver, par l’habitude, les meilleurs moyens de poursuivre des fins déjà données ? L’épreuve du monde peut aussi nous amener à désirer une chose dont rien, dans le plaisir ou la peine éprouvés d’abord, ne nous indiquait la valeur. Nous partirons de ce que la sensation rend possible. Nous chercherons ensuite ce que les habitudes lui ajoutent et dans quels cas l’expérience nous engage à les réviser pour des fins que nous pouvons reconnaître comme nôtres.

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Le grain de diamètre $d$ se déplace sur une couche inclinée. Dans le cristal, $M_s$ désigne la norme de l’aimantation à saturation et $B_0$ la composante algébrique du champ extérieur sur un axe fixe. Les deux modèles sont indépendants.
 
 ## I — Un grain au repos sur une pente

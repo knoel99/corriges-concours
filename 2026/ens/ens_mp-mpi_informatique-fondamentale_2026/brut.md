@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Les graphes sont simples, finis, non orientés, avec $n$ sommets et $m$ arêtes. On écrit $\Delta$ pour le degré maximum, $N(v)$ pour le voisinage de $v$ et $N[v]=N(v)\cup\{v\}$. Une $k$-coloration attribue à chaque sommet une couleur parmi $1,\ldots,k$, différente de celles de ses voisins. Le nombre chromatique $\chi(G)$ est le minimum de ces $k$. Dans les trois premières parties, un mouvement change la couleur d'un seul sommet en conservant une coloration valide.
 
 ## Partie I — Dégénérescence et chemins de recoloration

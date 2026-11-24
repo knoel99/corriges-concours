@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Le 15 avril 2026, les quatre filières disposaient de quatre heures pour rédiger les deux compositions en allemand, sans dictionnaire ni traducteur. La première met en relation trois articles et une infographie. La seconde répond à un cinquième document. Les plans et les exemples ci-dessous proposent une manière de traiter chaque exercice.
 
 ## Partie A · Synthèse de documents

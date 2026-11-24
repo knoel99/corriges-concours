@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve de quatre heures part d’une molécule de corail pour étudier la stéréochimie d’un cycle à neuf chaînons. Sa seconde moitié examine les indicateurs de pollution d’une eau et la cinétique de dégradation de nanoparticules d’argent.

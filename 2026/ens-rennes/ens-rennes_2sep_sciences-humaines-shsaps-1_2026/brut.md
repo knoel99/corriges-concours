@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Introduction
 
 En basket-ball scolaire, une élève fait entrer son premier tir presque par hasard. Elle lance une deuxième fois depuis le même repère et la balle n’atteint pas le cercle. Le premier essai comptait comme un panier et le second comme un échec. Il serait pourtant prématuré de dire qu’elle a appris au premier et désappris au second. La performance est le résultat observable d’une tentative. Apprendre une habileté motrice, c’est acquérir par la pratique une capacité de produire et d’adapter une action qui se maintient au-delà de la séance. Celui qui s’y essaie accepte une incertitude sur le résultat et, devant ses camarades, parfois sur le jugement que ce résultat suscitera. À quelles conditions cette incertitude l’aide-t-elle à construire un tir au lieu de le conduire à renoncer ? Suivons une classe de collège depuis les premiers tirs à l’arrêt jusqu’au choix d’un tir dans un jeu réduit.

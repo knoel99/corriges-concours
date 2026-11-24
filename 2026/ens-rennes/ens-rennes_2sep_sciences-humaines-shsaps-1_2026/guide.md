@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve SHSAPS 1 dure deux heures. La formule « Apprendre, c’est prendre le risque d’échouer » appelle une explication à partir des théories de l’apprentissage, puis une proposition de conditions d’apprentissage moteur illustrées dans une ou plusieurs activités physiques, sportives et artistiques (APSA), en milieu scolaire ou fédéral. La copie ci-dessous suit une classe de collège en basket-ball. [Sujet officiel, session 2026](https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-1-sciences-humaines-2sep-2026_1791303304026-pdf)

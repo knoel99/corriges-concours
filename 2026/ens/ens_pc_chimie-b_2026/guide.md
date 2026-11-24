@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve porte sur l’association d’ions en solution puis sur la stéréochimie d’intermédiaires de la quartromicine. Dans la première partie, le dosage et le potentiel rédox révèlent l’association, tandis que l’absorption acoustique permet d’en mesurer les durées. La deuxième partie suit deux voies complémentaires de synthèse d’un spirotétronate.

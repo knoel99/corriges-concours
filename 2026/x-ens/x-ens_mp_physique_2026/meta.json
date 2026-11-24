@@ -70,5 +70,19 @@
     "sujet_sha256": "fbd27b5f1b7ae9d62adcd798e0fa4b406998bb66ac49d7b3453f28aafc5a064b",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP_Physique%20OK%20.pdf",
     "rapport_sha256": "c1f5eee94057881b14a46a35262255bd2e0b2770205f2a00511e51d2ac5f1512"
+  },
+  "provenance": {
+    "redaction": {
+      "provider": null,
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

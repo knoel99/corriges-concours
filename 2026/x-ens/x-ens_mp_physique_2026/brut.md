@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-5-5 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Épreuve n° 5, durée 4 h, calculatrice interdite. Sujet : *Étude des ondes mécaniques dans une plaque élastique*.
 
 ## I. Préambule : onde de compression unidimensionnelle

@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Le sujet étudie les interfaces de l’eau liquide, la saturation de la vapeur et le mouvement de l’eau solide dans l’atmosphère. On note $\rho$ la masse volumique de l’eau liquide, $\rho_a$ celle de l’air, $\gamma$ la tension superficielle eau-air et $g$ l’intensité de la pesanteur.
 
 ## I.A — La tension de surface

@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Partie A · Synthèse sur les tissus épithéliaux des Métazoaires
 
 ### A · Une surface cellulaire qui règle les relations entre compartiments
