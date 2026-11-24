@@ -1,0 +1,73 @@
+{
+  "slug": "bel_bl_version-grecque_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Version grecque",
+    "annee": 2026,
+    "modalite": "écrit"
+  },
+  "intitule": "Faire profil bas",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "texte_de_substitution": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:306-326/",
+    "edition_tei": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0085/tlg003/tlg0085.tlg003.perseus-grc2.xml",
+    "edition_tei_sha256": "21c74dd89473bd9a2c6442a3efb224e61e71941d34c3dfd1b940bd85eba59896",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_et_oral_grec_ancien.pdf",
+    "rapport_sha256": "0610609783bfb93561138ab4a116464e6a1a5e9c2e555ebd7bc86d0e437e049f",
+    "note": "Le jury intitule cette version « Faire profil bas » et identifie les vers 304–324 du *Prométhée enchaîné* du Pseudo-Eschyle. Le fascicule d’épreuve demeure indisponible au lien donné par l’ENS. Le passage est reconstitué à partir des citations grecques et du vocabulaire du rapport. Il va de δέρκου θέαμα à τραχὺς μόναρχος οὐδ’ ὑπεύθυνος κρατεῖ, soit les vers 306–326 dans l’édition de Herbert Weir Smyth (1922). Cette différence de numérotation conserve les vingt et un vers, y compris l’image finale de l’aiguillon."
+  },
+  "figures": [
+    {
+      "fichier": "figures/menace-ocean.svg",
+      "question": "Construction",
+      "legende": "Le conseil d’Océan dépend d’une menace éventuelle"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la section écrite, identification du titre, des bornes, des lemmes, des relatives et de la condition potentielle."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la traduction française, des explications de syntaxe et du schéma de la menace."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Collation des bornes et des citations avec les lignes du texte grec de Smyth. Ajustement de l’expression française du potentiel et de la dernière image."
+    }
+  ]
+}
