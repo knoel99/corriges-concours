@@ -1,0 +1,53 @@
+{
+  "slug": "x-ens_mp_maths-a_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2019
+  },
+  "questions": 43,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPI_sujet_MathA.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_MP_rap_eMathA.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/cercle-degre-deux.svg",
+      "question": "Q6b",
+      "legende": "En degré deux, le cercle contient six racines possibles pour un entier algébrique non réel. Le point de coordonnées (3/5, 4/5) a aussi degré deux, mais son polynôme minimal a un coefficient non entier."
+    },
+    {
+      "fichier": "figures/racines-douziemes.svg",
+      "question": "Q7",
+      "legende": "Les douze racines de l’unité du degré douze se répartissent suivant les six diviseurs de douze."
+    },
+    {
+      "fichier": "figures/blocs-de-sommes.svg",
+      "question": "Q12a",
+      "legende": "Pour le polynôme X² + X + 1, les sommes valent deux aux multiples de trois et moins un aux autres indices. Deux blocs identiques de trois valeurs sont colorés."
+    },
+    {
+      "fichier": "figures/differences-de-racines.svg",
+      "question": "Q14a",
+      "legende": "Pour une racine cinquième donnée, les quatre cordes correspondent aux différences qui interviennent dans la dérivée en ce point."
+    },
+    {
+      "fichier": "figures/salem-quatre-conjugues.svg",
+      "question": "Q18",
+      "legende": "Un exemple de degré quatre a deux racines réelles positives inverses et deux autres conjuguées sur le cercle unité."
+    },
+    {
+      "fichier": "figures/trinome-extremal.svg",
+      "question": "Q24",
+      "legende": "Le trinôme extrémal prend la valeur entière −1 en 2. Sa plus grande racine détermine le nombre de Salem minimal de degré quatre."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Comparaison des 43 réponses au sujet et au rapport du jury de 2019. Vérification du discriminant du polynôme des racines de l’unité, de l’irréductibilité et du nombre de Salem minimal en degré quatre."
+  }
+}

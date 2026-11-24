@@ -1,0 +1,37 @@
+{
+  "slug": "x_fui-ff-2_francais_2025",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Français",
+    "annee": 2025
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/portrait-et-livre.svg",
+      "question": "A2",
+      "legende": "Le portrait rend sensible une époque révolue. La lecture permet d’en retrouver une voix."
+    },
+    {
+      "fichier": "figures/relire-le-voyage.svg",
+      "question": "B",
+      "legende": "Le dénouement oblige à reprendre une première hypothèse et permet d’argumenter un avis personnel."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Fran%C3%A7ais.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante du PDF officiel et des quatre réponses. Citation exacte en A2, personnification et désir du lecteur en A3, interprétation du poème de Hugo et respect de la consigne d’essai vérifiés."
+  }
+}
