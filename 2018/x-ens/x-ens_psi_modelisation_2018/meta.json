@@ -1,0 +1,56 @@
+{
+  "slug": "x-ens_psi_modelisation_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2018,
+    "duree_heures": 5
+  },
+  "questions": 51,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2018_psi_sujet_modelisation.pdf",
+    "sujet_sha256": "d4f20d833bcb16ca2c2ab29706fa1f4b5229021d084d8fde993298b027a144aa"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q13-bode.svg",
+      "question": "Q13",
+      "legende": "Réponse recalculée avec les inertie et frottement du sujet. La bande verte représente ±20 % de gain d’amplitude jusqu’à 10 Hz."
+    },
+    {
+      "fichier": "figures/q22-liaisons.svg",
+      "question": "Q22",
+      "legende": "Chaîne de mobilité du torse à la main. Les articulations du poignet s’enchaînent sur les pièces 4, 5, 6 et 7 et partagent le même centre."
+    },
+    {
+      "fichier": "figures/q28-radial.svg",
+      "question": "Q28",
+      "legende": "Trajectoire rapportée au centre et au rayon du cercle de la figure 9, relevée sur les tracés vectoriels du sujet. La couronne correspond à la tolérance de ±20 %."
+    },
+    {
+      "fichier": "figures/q35-spectre.svg",
+      "question": "Q35",
+      "legende": "Exemples de spectres échantillonnés sur deux périodes de répétition. Le trait interrompu sépare la bande originale de sa première image."
+    },
+    {
+      "fichier": "figures/q48-bobines.svg",
+      "question": "Q48",
+      "legende": "Une bobine excitée au rotor et deux voies de mesure orthogonales au stator. Les orientations positives fixent le signe des amplitudes démodulées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 51 questions sur le bras exosquelette haptique. Lecture du PDF officiel et vérification graphique des réponses fréquentielles, du domaine du poignet, des courbes de trajectoire, des jauges et de la quantification. Cinq figures originales. Vérification de tous les mots du codeur et des conventions contradictoires imprimées. La page ENS de la session présente le rapport de modélisation sans lien."
+    }
+  ]
+}
