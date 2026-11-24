@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve d'histoire, géographie et géopolitique du monde contemporain (HGGMC), conception ESCP BS, voie générale, lundi 27 avril 2026, de 8 h à 12 h, sans calculatrice. Sujet : « Nouvelles convoitises étrangères et reconfigurations des alliances internationales en Afrique ». La consigne demande d'éviter tout verbiage et précise que les trois documents joints sont « essentiellement destinés à aider le candidat dans sa réflexion sur le sujet posé » :
@@ -16,7 +22,7 @@
 
 **Difficulté.** Le sujet est très actuel et très documenté par la presse : le risque est la chronique (coup d'État après coup d'État) ou le catalogue de puissances. Il est double (« convoitises » et « reconfigurations des alliances ») : il faut articuler les deux termes au lieu de les traiter l'un après l'autre. Sa forme n'est pas interrogative : la problématique est entièrement à construire.
 
-**Rapport du jury.** Aucun rapport de cette épreuve n'était paru au 13 novembre 2026 : seules des statistiques ont été publiées (3 525 candidats, moyenne 10,66, écart type 3,66). Ce corrigé ne contient donc aucun encadré `[!JURY]` ; les conseils de méthode sont des exigences générales de la dissertation, formulées sans attribution.
+**Documents de jury.** Le catalogue BCE 2026 consulté le 24 novembre donne pour le code 266 un relevé statistique (3 525 candidats, moyenne 10,66, écart type 3,66). Les indications de méthode qui suivent sont celles du corrigé.
 
 **Ce que propose ce corrigé.** Un plan possible en trois parties : les convoitises (I), les reconfigurations qu'elles provoquent (II), le rôle des États africains et ses limites (III).
 
@@ -76,7 +82,7 @@ Le plan suit la logique du sujet : les convoitises (I), les reconfigurations qu'
 
 #### Solution
 
-- **I.1 — Les ressources.** Document 3 (données 2022) : platinoïdes 78 % (Afrique du Sud), cobalt 70 % (RDC), tantale 70 %, manganèse 51 %, titane 50 %, chrome 40 %, bauxite 22 % (Guinée). Usages : batteries, électronique, catalyseurs, hydrogène. Avance chinoise (cuivre et cobalt du Katanga, bauxite et fer de Guinée) ; réponse américano-européenne tardive (corridor de Lobito, à partir de 2023). Gaz du nord du Mozambique ; terres agricoles convoitées par le Golfe et l'Asie.
+- **I.1 — Les ressources.** Document 3 (publication USGS 2022) : platinoïdes 78 % (Afrique du Sud), cobalt 70 % (RDC), tantale 70 %, manganèse 51 %, titane 50 %, chrome 40 %, bauxite 22 % (Guinée). Usages : batteries, électronique, catalyseurs, hydrogène. Avance chinoise (cuivre et cobalt du Katanga, bauxite et fer de Guinée) ; réponse américano-européenne tardive (corridor de Lobito, à partir de 2023). Gaz du nord du Mozambique ; terres agricoles convoitées par le Golfe et l'Asie.
 - **I.2 — Les marchés.** Environ 1,5 milliard d'habitants, près de 2,5 milliards attendus en 2050 (projections des Nations unies). Chine, premier partenaire commercial à la fin des années 2000 ; infrastructures des nouvelles routes de la soie (Addis-Abeba-Djibouti, Mombasa-Nairobi). Turquie (ambassades, lignes aériennes, BTP) ; Émirats arabes unis (ports, Berbera). Document 1 : blé russe (plus du quart des importations de plusieurs pays), Rosatom (El-Dabaa en Égypte).
 - **I.3 — Les positions et les voix.** Djibouti (bases américaine, française, japonaise, chinoise depuis 2017) ; base turque en Somalie (2017). Plus d'un quart des voix à l'Assemblée générale des Nations unies. Marché de la sécurité : document 1, quarante-six États sur cinquante-quatre coopèrent avec Rosoboronexport (environ 4 milliards de dollars de contrats fin 2025) ; drones turcs.
 - *Transition* : en se concurrençant, ces convoitises bouleversent les alliances héritées des indépendances.
@@ -94,7 +100,7 @@ Le plan suit la logique du sujet : les convoitises (I), les reconfigurations qu'
 
 #### Solution
 
-- **II.1 — La fin du pré carré français.** Accords de défense, bases, franc CFA, réseaux. Serval (janvier 2013), Barkhane (2014-2022), MINUSMA (2013-2023), G5 Sahel (2014, dissous fin 2023). Coups d'État : Mali (2020, 2021), Burkina Faso (2022), Niger (juillet 2023). Rupture de l'accord de défense par le Tchad (novembre 2024), départ des derniers soldats (janvier 2025) ; bases de N'Djamena et de Dakar rétrocédées (2025), Niamey (2023) ; il ne reste qu'une base permanente, à Djibouti, et deux camps partagés, à Abidjan et à Libreville (document 2). Départ américain du Niger (2024).
+- **II.1 — La fin du pré carré français.** Accords de défense, bases, franc CFA, réseaux. Serval (janvier 2013), Barkhane (2014-2022), MINUSMA (2013-2023), G5 Sahel (créé en 2014, démantèlement à la suite des retraits successifs). Coups d'État : Mali (2020, 2021), Burkina Faso (2022), Niger (juillet 2023). Rupture de l'accord de défense par le Tchad (novembre 2024), départ des derniers soldats (janvier 2025) ; bases de N'Djamena et de Dakar rétrocédées (2025), Niamey (2023) ; il ne reste qu'une base permanente, à Djibouti, et deux camps partagés, à Abidjan et à Libreville (document 2). Départ américain du Niger (2024).
 - **II.2 — La Russie, partenaire de sécurité des régimes.** Wagner en Centrafrique (2018), en Libye, au Mali (fin 2021) ; Africa Corps après la mort de Prigojine (août 2023), sous l'autorité du ministère de la Défense (document 1 : Mali, Burkina Faso, Niger, Libye, Centrafrique, Guinée équatoriale). Sommets de Sotchi (2019) et de Saint-Pétersbourg (2023) ; influence numérique ; blé. Une offre politique et sécuritaire, un poids économique faible.
 - **II.3 — Des partenariats spécialisés.** Chine : Forum sur la coopération sino-africaine (depuis 2000), prêts et infrastructures, défaut zambien (2020). Turquie : Somalie, Libye (2020). Golfe : Corne de l'Afrique, Soudan. Occident : Global Gateway (2021, 150 milliards d'euros annoncés pour l'Afrique), minerais critiques, Kenya ; Japon (TICAD depuis 1993). Fragmentation des alliances plutôt que transfert d'un bloc à l'autre.
 - *Transition* : qui conduit cette reconfiguration ?
@@ -112,9 +118,15 @@ Le plan suit la logique du sujet : les convoitises (I), les reconfigurations qu'
 
 #### Solution
 
-- **III.1 — Le multi-alignement.** Vote du 2 mars 2022 à l'ONU : près de la moitié des États africains ne votent pas la résolution ; sanctions non appliquées. Afrique du Sud dans les BRICS et liée à l'Occident ; Égypte et Éthiopie dans les BRICS (2024) ; Kenya allié majeur non membre de l'OTAN (2024) et partenaire de la Chine ; Maroc (reconnaissance américaine sur le Sahara occidental, décembre 2020 ; retour dans l'Union africaine, 2017). Le choix de la Russie par les juntes comme affirmation de souveraineté.
+- **III.1 — Le multi-alignement.** Vote du 2 mars 2022 à l’ONU : sur 54 États, 28 pour, 17 abstentions, 1 contre et 8 absences. L’absence et l’abstention ont des significations différentes. Afrique du Sud dans les BRICS et liée à l'Occident ; Égypte et Éthiopie dans les BRICS (2024) ; Kenya allié majeur non membre de l'OTAN (2024) et partenaire de la Chine ; Maroc (reconnaissance américaine sur le Sahara occidental, décembre 2020 ; retour dans l'Union africaine, 2017). Le choix de la Russie par les juntes comme affirmation de souveraineté.
 - **III.2 — Des cadres collectifs entre affirmation et fragmentation.** Union africaine (2002), membre du G20 (2023) ; Zone de libre-échange continentale (2019) ; transformation locale (lithium brut interdit à l'exportation au Zimbabwe). Fragmentation : Alliance des États du Sahel (septembre 2023), sortie de la CEDEAO (janvier 2025) ; guerre au Soudan (depuis avril 2023) et soutiens extérieurs rivaux ; est de la RDC, prise de Goma par le M23, accord de Washington (juin 2025) assorti d'un volet minier.
 - **III.3 — Une autonomie des régimes plus que des sociétés.** Insécurité persistante au Sahel ; massacre de Moura (mars 2022) attribué par l'ONU à l'armée malienne et à des militaires étrangers. Dépendances déplacées : dette zambienne, exportations brutes (document 3). Liens anciens durables : langue, diasporas, universités, entreprises européennes. Une recomposition plus qu'un renversement.
+
+Deux géographies se distinguent sur la carte. Les principaux exportateurs de cobalt et de platinoïdes cités dans le tableau se situent en Afrique centrale et australe. La confédération de l’Alliance des États du Sahel réunit trois autres pays. La dissociation explique pourquoi une carte des ressources ne prédit pas à elle seule les changements de coalition. L’accès à une route commerciale engage un contrat et des tarifs ; un pacte de défense engage les signataires selon des obligations politiques distinctes.
+
+![Croquis — Les pays du tableau des principaux exportateurs et les trois États de l’AES apparaissent en deux couleurs. Une convoitise minière et un changement d’alliance n’ont ni la même géographie ni la même cause. Sources : documents 2 et 3 du sujet, communiqué de la CEDEAO du 29 janvier 2025 et fond Natural Earth.](figures/ressources-choix-africains.svg)
+
+Pour passer de la carte à l’argument, confronter deux décisions possibles. Une entreprise négocie un contrat d’extraction avec l’autorité concédante, alors que la charte de l’AES engage des gouvernements. En janvier 2025, le retrait effectif du Mali, du Niger et du Burkina Faso de la CEDEAO modifie un cadre régional jusque-là partagé avec leurs voisins côtiers. La circulation des marchandises et les liens familiaux transfrontaliers donnent à cette rupture des conséquences que les producteurs et les habitants ne maîtrisent pas tous.
 
 > [!PIEGE]
 > Présenter le départ français comme une « victoire » de la Russie ou de la Chine décidée à Moscou ou à Pékin : ce sont des gouvernements africains qui ont rompu les accords. À l'inverse, ne pas idéaliser la souveraineté invoquée par des juntes qui ont suspendu les élections.
@@ -169,3 +181,5 @@ On montrera d'abord que l'Afrique est de nouveau convoitée pour ses ressources,
 - **Notions à revoir.** Pré carré et Françafrique ; minerais critiques ; multi-alignement ; sécurité et souveraineté ; dette et nouveaux créanciers ; intégration régionale africaine.
 - **Repères à maîtriser.** 1884-1885, 1960, 2000 (Forum sino-africain), 2002 (Union africaine), 2013 (Serval), 2017 (base chinoise de Djibouti), 2019 (ZLECAf), 2020-2023 (coups d'État sahéliens), 2023 (AES, Union africaine au G20), 2025 (départ du Tchad et du Sénégal).
 - **Sujets voisins.** « L'Afrique, un continent émergent ? » ; « La France est-elle encore une puissance africaine ? » ; « Les ressources, un enjeu géopolitique en Afrique » ; « La Chine en Afrique : partenaire ou prédateur ? » ; « Sécurité et développement au Sahel ».
+
+[Sujet officiel](https://www.concours-bce.com/sites/default/files/2026-04/266%20-%20HGG_ESCP_BS.pdf) · [Relevé statistique du jury](https://www.concours-bce.com/sites/default/files/2026-10/266-2026-Statistiques.pdf) · [Vote de l’Assemblée générale du 2 mars 2022](https://digitallibrary.un.org/record/3959039?ln=en) · [Fond cartographique Natural Earth](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/)
