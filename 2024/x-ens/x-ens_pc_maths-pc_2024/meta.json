@@ -1,0 +1,41 @@
+{
+  "slug": "x-ens_pc_maths-pc_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2024
+  },
+  "questions": 51,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20PC%20SUJET%20MATHS%20(XEULS).pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20PC%20RAPPORT%20ECRIT%20MATHEMATIQUES%20(XEULS).pdf",
+    "sha256_sujet": "b97578666f343e7d7fd84c2d356cb2fc8767090b5ce633ea12ad106d2c1e64c3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/12-centrage.svg",
+      "question": "12b",
+      "legende": "Les segments joignent les mêmes points dans les deux configurations. Après centrage, seule la rotation reste à choisir."
+    },
+    {
+      "fichier": "figures/26-orientation.svg",
+      "question": "26",
+      "legende": "Dans les axes singuliers en dimension deux, inverser le second axe change l’orientation au coût du double de la plus petite valeur singulière dans la trace."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les sous-questions des six parties après lecture du sujet officiel et de son rapport. Action de groupe, passage aux infimums, existence des minimiseurs, décomposition en valeurs singulières, maximisation sous contrainte de déterminant et vérification des deux signes. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
