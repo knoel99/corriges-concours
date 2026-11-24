@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** « Construction d'un bâtiment » : le sujet suit un édifice depuis l'étude du sol jusqu'au confort thermique des pièces. Il compte 52 questions en quatre parties **indépendantes**, avec des données propres à chaque partie. Durée 4 heures, calculatrice autorisée.
@@ -156,11 +162,11 @@ $$\begin{aligned}
 \iff\ &e\ll H\frac{M^2}{(M+m)^2} = 0{,}26\ \mathrm{m}.
 \end{aligned}$$
 
-Numériquement, $(M+m)g/S = 0{,}43$ MPa, et le terme dynamique vaut $1{,}14\times10^{5}/e$ (Pa, $e$ en m). Les enfoncements observés vont de 5 cm (2 coups pour 10 cm) à 2 mm (50 coups) : la condition est toujours vérifiée. L'erreur relative, rapportée à $q_d$ complet, vaut environ 16 % dans la terre meuble, 2,5 % dans les remblais et 1 % au seuil de 40 MPa.
+Numériquement, $(M+m)g/S = 0{,}43$ MPa, et le terme dynamique vaut $1{,}14\times10^{5}/e$ (Pa, $e$ en m). Les enfoncements observés vont de 5 cm (2 coups pour 10 cm) à 2 mm (50 coups), soit de 19 % à moins de 1 % des 26 cm de référence. L'erreur relative, rapportée à $q_d$ complet, vaut environ 16 % dans la terre meuble, 2,5 % dans les remblais et 1 % au seuil de 40 MPa.
 
 **L'approximation est légitime dans les couches où l'on envisage de fonder.** Elle sous-estime $q_d$, ce qui va dans le sens de la sécurité.
 
-> [!JURY]
+> [!METHODE]
 > Une question « est-ce légitime ? » attend une comparaison chiffrée. Affirmer qu'un terme est négligeable sans ordre de grandeur ne suffit pas.
 
 **II — Analyse d'un sol**
@@ -172,7 +178,7 @@ Numériquement, $(M+m)g/S = 0{,}43$ MPa, et le terme dynamique vaut $1{,}14\time
 
 #### Solution
 
-De 0 à 0,5 m, il faut 2 à 5 coups pour 10 cm ; à 0,6 m, il en faut 17. **L'épaisseur de la terre meuble est d'environ 0,5 m**, à ±0,05 m près, puisque le pas de mesure est de 10 cm.
+De 0 à 0,5 m, il faut 2 à 5 coups pour 10 cm ; à 0,6 m, il en faut 17. **L'épaisseur de la terre meuble est d'environ 0,5 m** (le relevé est effectué par pas de 10 cm).
 
 ### Question 8
 
@@ -228,9 +234,9 @@ Le seuil correspond à
 
 $$e_s = \frac{MgH}{S\,q_d}\frac{M}{M+m} = 2{,}9\ \mathrm{mm},$$
 
-soit $N_s\approx35$ coups pour 10 cm (chaque coup par 10 cm « vaut » environ 1,14 MPa). Seul le dernier point dépasse ce seuil : 50 coups à 3,0 m, soit $e = 2{,}0$ mm et $q_d\approx57$ MPa $> 40$ MPa. Juste au-dessus (2,3 à 2,9 m), $q_d$ reste entre 11 et 26 MPa.
+soit $N_s\approx35$ coups pour 10 cm (chaque coup par 10 cm « vaut » environ 1,14 MPa). Il faut au moins 36 coups entiers pour dépasser strictement le seuil. Seul le dernier niveau le dépasse : 50 coups à 3,0 m, soit $e = 2{,}0$ mm et $q_d\approx57$ MPa $> 40$ MPa. Juste au-dessus (2,3 à 2,9 m), $q_d$ reste entre 11 et 26 MPa.
 
-**Oui : vers 3 m de profondeur, dans la roche.** La conclusion repose sur un point unique, obtenu au refus de l'appareil : d'autres sondages seraient nécessaires pour confirmer l'épaisseur et la continuité de la roche.
+**Oui : vers 3 m de profondeur, dans la roche.** La conclusion repose sur un point unique, au dernier niveau sondé : d'autres sondages seraient nécessaires pour confirmer l'épaisseur et la continuité de la roche.
 
 ## Partie B — La chimie du béton
 
@@ -360,7 +366,7 @@ soit
 
 $$\boxed{Q_{1t} = 1{,}84\times10^{9}\ \mathrm{J}}$$
 
-> [!JURY]
+> [!METHODE]
 > Dans un « montrer que », le résultat est connu : seule la justification est évaluée. Ici, il faut citer le caractère monobare pour écrire $Q = \Delta H$, et énoncer l'hypothèse sur la température des réactifs.
 
 ### Question 17
@@ -461,9 +467,9 @@ Les causes plausibles de cette surestimation :
 - un ciment réel n'est pas du clinker pur : il contient des ajouts qui ne libèrent pas de $\mathrm{CO_2}$ ;
 - certains combustibles sont moins carbonés que le méthane.
 
-À l'inverse, le modèle ignore le préchauffage de la farine, le transport et les granulats. Dans tous les cas, la décarbonatation (environ 70 %) reste incompressible : elle est inscrite dans l'équation de réaction.
+À l'inverse, le modèle ignore le préchauffage de la farine, le transport et les granulats. Pour la recette retenue, la stœchiométrie impose environ 174 kg de CO₂ par mètre cube de béton pour la seule décarbonatation. Changer la proportion de clinker changerait cette contribution.
 
-> [!JURY]
+> [!METHODE]
 > « Commenter » un écart demande de l'expliquer par des hypothèses identifiées, pas seulement de le constater.
 
 **II — Corrosion d'un béton armé**
@@ -542,18 +548,14 @@ $$\boxed{E^\circ(\mathrm{Fe^{2+}/Fe}) = -0{,}44\ \mathrm{V}}$$
 
 #### Solution
 
-Au-delà de pH ≈ 9,5, la frontière $\mathrm{Fe_2O_3/Fe}$ passe sous la droite $\mathrm{H^+/H_2}$. À pH 12, elle est à $-0{,}77$ V contre $-0{,}72$ V pour l'eau.
+À pH 12, on lit environ $-0{,}77$ V à la limite $\mathrm{Fe_2O_3/Fe}$ et $-0{,}72$ V à la limite basse du domaine de l’eau. Ces deux droites sont parallèles dans la zone alcaline. Le fer métallique et l’eau ont donc des domaines disjoints. Le bilan d’oxydation par l’eau peut s’écrire
 
-Les domaines du fer et de l'eau sont disjoints : l'eau, et plus encore le dioxygène dissous, oxyde le fer, par exemple selon
+$$2\,\mathrm{Fe}+3\,\mathrm{H_2O}\longrightarrow\mathrm{Fe_2O_3}+3\,\mathrm{H_2}.$$
 
-$$2\mathrm{Fe} + 3\mathrm{H_2O}\to\mathrm{Fe_2O_3} + 3\mathrm{H_2}$$
-
-Mais le produit est un oxyde **solide** qui forme une couche compacte et adhérente, séparant le métal de la solution : c'est la passivation.
-
-**Oui, l'eau agit sur le fer, mais l'acier se passive : la structure n'est pas fragilisée.** C'est le pH élevé du béton qui protège les armatures.
+Dans le béton sain, l’oxyde forme une couche adhérente qui ralentit la poursuite de l’oxydation. **L’acier est passivé**, ce qui protège la résistance de l’armature. Le diagramme prévoit le produit stable. L’effet protecteur dépend aussi de la continuité de la couche.
 
 > [!METHODE]
-> Corrosion, passivation, immunité : on compare le domaine du métal à celui de l'oxydant, puis on regarde si le produit d'oxydation est soluble (corrosion) ou solide (passivation).
+> Une espèce dissoute correspond à une perte de métal. Un solide peut former une couche protectrice si elle est continue et adhérente.
 
 ### Question 26
 
@@ -562,7 +564,7 @@ Mais le produit est un oxyde **solide** qui forme une couche compacte et adhére
 
 #### Solution
 
-Sous pH ≈ 9,5, le domaine du fer devient contigu à celui de $\mathrm{Fe^{2+}}$ : l'oxydation produit alors un ion soluble, qui ne protège plus le métal. L'acier se corrode (dépassivation). La section des armatures diminue, donc la résistance à la traction de l'ouvrage aussi. Les produits de corrosion, plus volumineux que le métal, mettent le béton d'enrobage en traction, ce qui le fissure et ouvre de nouveaux chemins à l'eau : le processus s'auto-entretient.
+La carbonatation abaisse le pH. Sous le point triple voisin de pH 9,5, un domaine de $\mathrm{Fe^{2+}}$ soluble s’ouvre au voisinage du domaine du métal. Selon le potentiel local, la dissolution du fer devient possible et le film protecteur peut perdre sa continuité. La section résistante de l’armature diminue. Des produits de corrosion volumineux peuvent aussi faire fissurer le béton d’enrobage, ce qui facilite l’arrivée d’eau.
 
 ## Partie C — Jauge de contrainte à corde vibrante
 
@@ -588,7 +590,7 @@ Le fil, selon $(Ox)$, est parcouru par le courant induit $i$ et subit la force d
 
 $$\mathrm{d}\vec F = i\,\mathrm{d}x\,\vec e_x\wedge B\vec e_y = iB\,\mathrm{d}x\,\vec e_z$$
 
-**Cette force de Laplace est perpendiculaire au fil et à $\vec B$ : elle est transversale.** Son sens alterne avec le courant, ce qui fait vibrer le fil transversalement.
+**Cette force de Laplace est perpendiculaire au fil et à $\vec B$ : elle est transversale.** Sa composante algébrique est proportionnelle au produit $i(t)B(t)$. Le champ et le courant étant tous deux variables, la direction transversale est déterminée sans imposer leurs phases relatives.
 
 > [!PIEGE]
 > $\vec B$ appartient aux plans d'**antisymétrie** des courants, et il est orthogonal aux plans de symétrie. Inverser les deux donnerait un champ perpendiculaire à l'axe de la bobine.
@@ -659,6 +661,8 @@ $$\boxed{\xi(x,t) = \sum_{p\geq1}A_p\cos(\omega_pt + \varphi_p)\sin\!\left(\frac
 
 Les amplitudes $A_p$ et les phases $\varphi_p$ sont fixées par les conditions initiales. Le mode $p$ présente $p$ ventres et $p-1$ nœuds intérieurs.
 
+![Modes propres du fil à extrémités fixes. Les points marquent les nœuds et les courbes représentent le déplacement à une phase donnée.](figures/q30-modes.svg)
+
 > [!METHODE]
 > Corde fixée à ses deux bouts : un nombre entier de demi-longueurs d'onde tient sur la longueur, $L = p\lambda/2$. C'est un moyen rapide de retrouver $f_p = pc/(2L)$.
 
@@ -720,9 +724,9 @@ On suppose que la masse et la masse volumique du fil ne changent pas, c'est-à-d
 
 $$\boxed{\Delta d\approx-\frac{\varepsilon_0}{2}d = -6{,}7\times10^{-7}\ \mathrm{m} = -0{,}67\ \mu\mathrm{m}}$$
 
-Le fil s'amincit en s'allongeant, mais de moins d'un millième en valeur relative : c'est négligeable, ce qui justifie de garder $d$ constant dans la suite.
+Cette valeur suppose un volume constant. Plus généralement, pour un fil élastique isotrope de coefficient de Poisson $\nu$, on aurait $\Delta d\simeq-\nu d\varepsilon_0$. Le sujet ne donne pas $\nu$. L’estimation à volume constant correspond donc au choix $\nu=1/2$ et situe la variation relative au-dessous de $10^{-3}$.
 
-> [!JURY]
+> [!METHODE]
 > Quand l'énoncé ne fournit pas toutes les données, l'hypothèse ajoutée doit être écrite explicitement, puis exploitée.
 
 ### Question 34
@@ -795,14 +799,9 @@ C'est environ la moitié des 0,35 % que supporte le béton : la jauge sature ava
 
 #### Solution
 
-Une variation $\Delta\theta$ change la longueur à vide du fil, ce qui fausse $\varepsilon$ de $\alpha\Delta\theta$. Pour $\Delta\theta = 10$ K, on obtient $1{,}2\times10^{-4}$, soit 60 % de la déformation maximale du béton en traction. En fréquence, cela fait environ $f_1\alpha\Delta\theta/(2\varepsilon_0)\approx25$ Hz, très au-dessus de la résolution. **Il faut en tenir compte.**
+Une élévation de 10 K donnerait à un fil libre un allongement relatif $\alpha\Delta\theta=1{,}2\times10^{-4}$, à comparer aux $2\times10^{-4}$ de traction maximale du béton. À écartement fixé des coupelles, le fil chauffé se détendrait. La valeur absolue du décalage serait alors d’environ $f_1\alpha\Delta\theta/(2\varepsilon_0)=25$ Hz, largement mesurable.
 
-Deux solutions :
-
-- intégrer un capteur de température (thermistance) à la jauge et corriger la déformation calculée ;
-- placer une jauge de compensation, identique mais libre de contrainte mécanique, à la même température, et retrancher sa mesure.
-
-Le béton se dilatant aussi, avec un coefficient voisin, l'effet est en partie compensé, mais pas exactement.
+Si les points d’ancrage se dilatent aussi librement, la contribution thermique à la déformation élastique du fil devient $(\alpha_{\rm béton}-\alpha_{\rm acier})\Delta\theta$ au premier ordre. On peut **mesurer la température et étalonner une correction** pour l’ensemble jauge-support, ou comparer avec une jauge précontrainte identique fixée sur un témoin du même béton, libre de charge mécanique et à la même température.
 
 ## Partie D — Un mur dans tous ses états
 
@@ -833,7 +832,7 @@ $$\boxed{\rho c\frac{\partial T}{\partial t} = \lambda\frac{\partial^2T}{\partia
 
 La diffusivité vaut $D = \lambda/(\rho c) = 8{,}7\times10^{-7}\ \mathrm{m^2\cdot s^{-1}}$.
 
-> [!JURY]
+> [!METHODE]
 > On attend un schéma de la tranche, le système et les deux instants nommés, la loi de Fourier citée, et des notations cohérentes : flux $\Phi$ en W ou densité de flux en $\mathrm{W\cdot m^{-2}}$, sans mélanger les deux.
 
 ### Question 40
@@ -849,7 +848,7 @@ $$\boxed{\begin{aligned}
 &= 4{,}6\times10^{4}\ \mathrm{s}\approx13\ \mathrm{h}
 \end{aligned}}$$
 
-La canicule dure plus de 72 h, soit plus de cinq fois $\tau$. **Le régime stationnaire est atteint au cours de la canicule.**
+La canicule dure plus de 72 h, soit plus de cinq fois $\tau$. Avec les deux températures de face maintenues constantes, on peut assimiler le profil à son régime stationnaire au cours de cette période.
 
 > [!METHODE]
 > En diffusion, le temps varie comme le carré de la longueur : doubler l'épaisseur quadruple le temps de mise en régime.
@@ -873,7 +872,7 @@ T(x) &= T_{\text{ext}} + (T_{\text{int}} - T_{\text{ext}})\frac xh\\
 
 avec $T$ en °C et $x$ en m.
 
-L'allure est une droite décroissant de 30 °C en $x = 0$ à 20 °C en $x = 200$ mm.
+Le tracé du mur nu, repris sur la figure de Q43, est une droite décroissante de 30 °C en $x = 0$ à 20 °C en $x = 200$ mm.
 
 $$\boxed{\begin{aligned}
 \Phi_{th0} &= \frac{\lambda S(T_{\text{ext}} - T_{\text{int}})}{h}\\
@@ -945,7 +944,7 @@ Chaque profil présente deux zones séparées par un point anguleux $x_0(t)$, qu
 - pour $x_0\leq x\leq h$, la température est uniforme et égale à $T_0 = 20$ °C : **le MCP est encore solide** ;
 - en $x_0$ se trouve le front de fusion, où les deux phases coexistent à $T_0$.
 
-Dans la zone liquide, le profil est affine, donc $\partial^2T/\partial x^2 = 0$ et $\partial T/\partial t = 0$ localement. Dans la zone solide, $T$ est uniforme et constante. **Le régime peut être considéré comme stationnaire dans chaque zone (quasi stationnaire), mais pas globalement, puisque le front se déplace.** C'est raisonnable parce que l'énergie latente ($\rho\ell_f\approx6{,}7\times10^{7}\ \mathrm{J\cdot m^{-3}}$) domine l'énergie sensible de la zone liquide (environ $\rho c\,\Delta T/2\approx1{,}0\times10^{7}\ \mathrm{J\cdot m^{-3}}$).
+Du côté liquide, la pente est presque constante à un instant donné mais elle change quand le front se déplace. Dans le modèle affine, $T(x,t)=T_{\mathrm{ext}}+(T_0-T_{\mathrm{ext}})x/x_0(t)$, donc la température à position fixe varie avec $x_0(t)$. Le qualificatif **quasi stationnaire** signifie que l’on néglige en première approximation la chaleur sensible devant la chaleur de fusion. Du côté solide encore à $T_0$, le flux est nul.
 
 ### Question 45
 
@@ -979,7 +978,7 @@ avec
 
 $$\boxed{K = \frac{2\lambda(T_{\text{ext}} - T_0)}{\rho\ell_f}}$$
 
-Avec $x_0(0) = 0$, on obtient $x_0 = \sqrt{Kt}$ : le front avance en $\sqrt t$, comme tout phénomène diffusif.
+Avec $x_0(0) = 0$, on obtient $x_0 = \sqrt{Kt}$ : le front avance en $\sqrt t$, avec une constante qui dépend de la chaleur de fusion.
 
 > [!METHODE]
 > Problème de Stefan simplifié : on fait un bilan sur la couche qui change d'état, en égalant la chaleur latente absorbée à la différence des flux conductifs de part et d'autre du front.
@@ -997,7 +996,7 @@ soit
 
 $$\boxed{\ell_f\approx2{,}9\times10^{4}\ \mathrm{J\cdot kg^{-1}} = 29\ \mathrm{kJ\cdot kg^{-1}}}$$
 
-C'est environ 7 fois moins que la paraffine, ce qui est normal : seules les billes de MCP fondent, le béton ne change pas d'état. On en déduit une fraction massique de MCP d'environ $29/200\approx15\ \%$, ce qui est réaliste.
+C'est environ 7 fois moins que la paraffine, ce qui est normal : seules les billes de MCP fondent, le béton ne change pas d'état. Si les billes ont la chaleur de fusion de la paraffine citée, leur fraction massique serait d’environ $29/200\approx15\ \%$, ce qui est réaliste.
 
 ### Question 47
 
@@ -1056,7 +1055,7 @@ Pour $t<t_f$, la zone $[x_0, h]$ est isotherme à $T_{\text{int}}$. Le flux sort
 
 Pour $t>t_f$, $\Phi_{th,s} = \Phi_{th2} = 2{,}25$ kW. La courbe (figure 4, tirets) est nulle jusqu'à $t_f\approx21$ h, puis passe par un échelon (lissé en réalité) au palier de 2,25 kW.
 
-**Intérêt : le MCP retarde l'arrivée de la chaleur dans la pièce.** Pendant près d'une journée, la puissance entrante est stockée sous forme latente : le climatiseur n'a rien à compenser. Sur un cycle jour/nuit, le MCP se resolidifie la nuit et écrête les pointes. La puissance en régime permanent, elle, n'est pas réduite.
+**Intérêt : le MCP retarde l'arrivée de la chaleur dans la pièce.** Pendant près d'une journée, la puissance entrante est stockée sous forme latente : le climatiseur n'a rien à compenser. Sur un cycle jour/nuit dont la phase froide permet la resolidification, le MCP peut écrêter une nouvelle pointe le lendemain. La puissance en régime permanent, elle, n'est pas réduite.
 
 > [!PIEGE]
 > L'intérêt principal est un **retard** (et un amortissement), pas une diminution de la puissance finale : Q52 le confirme.
@@ -1093,7 +1092,7 @@ $$\boxed{x_{0,\max} = h\frac{T_{\text{ext}} - T_0}{T_{\text{ext}} - T_{\text{int
 
 Interprétation : à cette position, le flux qui arrive au front par la zone liquide repart intégralement par la zone solide vers la pièce. Plus rien ne sert à fondre le MCP, et la fusion s'arrête. Le profil final est la droite stationnaire de 30 °C à 20 °C, et $x_{0,\max}$ est l'abscisse où elle vaut $T_0 = 24$ °C ($30 - 50\times0{,}120 = 24$). Les 40 % intérieurs du mur restent solides.
 
-> [!JURY]
+> [!METHODE]
 > « Montrer que le front atteint une position limite » demande un argument de convergence (signe de $\mathrm{d}x_0/\mathrm{d}t$ de part et d'autre), et pas seulement la résolution de $\mathrm{d}x_0/\mathrm{d}t = 0$.
 
 ### Question 51

@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème** : « Faire face aux inondations ». L'épreuve dure 4 heures, la calculatrice est autorisée. L'énoncé fait 10 pages, auxquelles s'ajoute un document-réponse (diagramme pression–enthalpie du CO₂) à rendre avec la copie. Il comporte **48 questions** réparties en trois parties **indépendantes**, de poids inégal.
@@ -105,7 +111,7 @@ $$\boxed{\mathcal M_{\text{fluide}}=\frac16\,\rho g\ell\,\frac{h^3}{\sin^2\theta
 
 Ce moment est positif : la poussée tend à relever la plaque. Avec la relation de Q5, la condition $h\le L\sin\theta$ s'écrit $\tan\theta\ge 3m/(\rho\ell L^2)=0{,}20$, soit $\theta\ge11^\circ$. Elle est vraie autour de $\theta_0$.
 
-> [!JURY]
+> [!METHODE]
 > Pour un résultat à démontrer, faites apparaître les bornes, la primitive et la simplification. Terminez par un contrôle d'homogénéité : $\rho g\ell h^3$ s'exprime bien en N·m.
 
 ### Question 4
@@ -214,7 +220,9 @@ $$\begin{aligned}
 - Pour $\theta_e<\theta_0$, $\Gamma'(\theta_e)<0$ : un écart crée un moment de rappel et l'équilibre est stable.
 - Pour $\theta_e>\theta_0$, $\Gamma'(\theta_e)>0$ : un écart $\delta\theta>0$ crée un moment positif qui l'amplifie. **L'équilibre est instable.**
 
-Lecture physique : au-delà de $\theta_0$, une petite augmentation de $\theta$ fait chuter le moment du poids plus vite que celui de l'eau. La poussée l'emporte et la plaque bascule jusqu'à la butée. Sur la figure 4, la courbe 2 est au-dessus de la courbe 1 pour $\theta>\theta_0$ : le moment résultant y est positif et éloigne la plaque de $\theta_0$.
+La figure 4 est tracée à une hauteur particulière, $h=h(\theta_0)$. À cette hauteur, les deux moments sont tangents au seuil et le couple résultant est positif de chaque côté. En effet, si $u=\cos\theta$, le signe de $\Gamma$ est celui de $f(u_0)-f(u)$, où $f(u)=u-u^3$ atteint son maximum en $u_0=1/\sqrt{3}$. Un léger dépassement de $\theta_0$ entraîne donc une augmentation supplémentaire de l’angle, jusqu’à la butée. C’est ce basculement que montre l’expérience.
+
+![Moment résultant au seuil de basculement, à hauteur d’eau fixée. Après un petit écart vers les angles croissants, le couple relève encore la plaque.](figures/q08-seuil.svg)
 
 > [!METHODE]
 > Pour un solide en rotation autour d'un axe fixe, l'équilibre $\theta_e$ est stable si $\mathrm d\Gamma/\mathrm d\theta<0$ en $\theta_e$, c'est-à-dire si le moment est de rappel. C'est l'analogue de la condition $\mathrm d^2E_p/\mathrm d\theta^2>0$.
@@ -229,10 +237,10 @@ Lecture physique : au-delà de $\theta_0$, une petite augmentation de $\theta$ f
 
 #### Solution
 
-- **Avantage** : le fonctionnement est en tout ou rien. Dès que $h$ atteint environ 0,43 m, la barrière passe d'un coup en position verticale, la plus protectrice, rapidement et sans énergie ni intervention humaine. Elle ne reste pas dans une position intermédiaire peu efficace.
+- **Avantage** : le fonctionnement est en tout ou rien. Dès que $h$ atteint environ 0,43 m, la barrière passe d'un coup en position verticale, la plus protectrice, sous l’action de l’eau, sans alimentation externe ni intervention humaine. Elle ne reste pas dans une position intermédiaire peu efficace.
 - **Inconvénient** : le mouvement est brutal et incontrôlé. La plaque de 200 kg frappe la butée, ce qui use la liaison et la butée et met en danger une personne ou un véhicule à proximité. Le seuil de déclenchement est fixé par la construction et n'est pas réglable.
 
-> [!JURY]
+> [!METHODE]
 > Un avantage et un inconvénient suffisent, mais ils doivent être liés à l'instabilité étudiée en Q8, et non à la barrière en général.
 
 ## Partie B – Capteur de niveau d'eau
@@ -297,7 +305,7 @@ $$E(r)\,2\pi rH=\frac Q{\varepsilon_0}$$
 
 $$\boxed{\vec E=\frac{Q}{2\pi\varepsilon_0Hr}\vec e_r}$$
 
-> [!JURY]
+> [!METHODE]
 > Décrivez la surface de Gauss (forme, rayon, hauteur, fermeture par les bases) et justifiez la direction du champ par les symétries avant d'écrire le flux.
 
 ### Question 13
@@ -369,7 +377,7 @@ Le terme de l'air est dans le rapport $\frac{H-h}{\varepsilon_rh}\sim\frac1{80}$
 
 $$\boxed{C_{\text{sonde}}\simeq\frac{2\pi\varepsilon_0\varepsilon_r}{\ln(R_2/R_1)}\,h}$$
 
-Cette approximation, à environ 1 %, est bien moins bonne qu'en Q15 et ne tient plus pour une sonde presque vide.
+Quand les deux hauteurs sont comparables, la correction est de l’ordre de 1 %. Elle est supérieure à celle de Q15 et ne tient plus pour une sonde presque vide.
 
 ### II – Circuit électronique de mesure
 
@@ -395,7 +403,7 @@ R_{\text{sonde}}C_{\text{sonde}}&=\frac{\varepsilon_0\varepsilon_r}{\gamma_{\tex
 &=3{,}5\times10^{-8}\ \text{s},
 \end{aligned}$$
 
-d'où $R_{\text{sonde}}C_{\text{sonde}}\omega\approx2\times10^{-4}$ à 1 kHz (et $1\times10^{-3}$ à 5 kHz). **La sonde se comporte comme la seule résistance $R_{\text{sonde}}$**, quel que soit le niveau d'eau.
+d'où $R_{\text{sonde}}C_{\text{sonde}}\omega\approx2\times10^{-4}$ à 1 kHz (et $1\times10^{-3}$ à 5 kHz). **La sonde se comporte comme la seule résistance $R_{\text{sonde}}$**, pour les niveaux étudiés, avec $h$ du même ordre que $H$.
 
 > [!METHODE]
 > Pour décider si un élément d'une association parallèle est négligeable, on compare les admittances. Une capacité est négligeable devant une résistance en parallèle si $RC\omega\ll1$.
@@ -418,7 +426,7 @@ Les résistances et la sonde dissipent, et le condensateur stocke puis restitue 
 
 La sortie est rebouclée sur l'entrée $+$ : la rétroaction est positive. Le régime linéaire est instable, donc **l'ALI est en régime saturé** (non linéaire), avec $s=\pm V_{\text{sat}}$. Comme $e$ attaque l'entrée $-$, il s'agit d'un **comparateur à hystérésis inverseur** (trigger de Schmitt inverseur).
 
-> [!JURY]
+> [!METHODE]
 > Il y a deux choses à nommer : le régime et le montage. Justifiez le régime par la nature de la rétroaction.
 
 ### Question 20
@@ -553,13 +561,13 @@ h&=\frac{\ln(R_2/R_1)}{2\pi\gamma_{\text{eau}}R_{\text{sonde}}}\\
 
 $$\boxed{h\approx0{,}10\ \text{m}}$$
 
-Une incertitude de $\pm5$ µs sur $T$ donne environ $\pm4$ % sur $h$.
+Comme $h$ est inversement proportionnelle à $T$, une incertitude de lecture de 5 µs, si on l’adopte, représente $5/190\simeq2{,}6\,\%$, soit environ 3 mm sur $h$. Les incertitudes des composants s’y ajouteraient.
 
-> [!JURY]
+> [!METHODE]
 > Pour une question à prise d'initiative, annoncez la démarche avant les calculs, explicitez la lecture (nombre de divisions, calibre) et faites un contrôle de vraisemblance du résultat.
 
 > [!PIEGE]
-> Prendre une demi-période pour la période divise $h$ par deux. Lire « us » comme des millisecondes donne une hauteur absurde.
+> Prendre une demi-période pour la période multiplie $h$ par deux. Lire « us » comme des millisecondes donne une hauteur absurde.
 
 ## Partie C – Gilet de sauvetage
 
@@ -638,7 +646,7 @@ Ce transfert est positif : il est reçu par le système.
 
 #### Solution
 
-*Hypothèses* : le calorimètre est adiabatique et de capacité négligeable, et la transformation est monobare, donc $\Delta H_{\text{tot}}=0$. La capacité thermique de l'eau salée est assimilée à celle de l'eau pure, soit $m_{\text{eau}}c_{\text{eau}}$ :
+*Hypothèses* : le calorimètre est adiabatique et de capacité négligeable, et la transformation est monobare, donc $\Delta H_{\text{tot}}=0$. Pour cette lecture de la consigne, la capacité thermique totale du contenu est assimilée à celle des 200 g d’eau initiaux, soit $m_{\text{eau}}c_{\text{eau}}$ :
 
 $$\begin{aligned}
 10\,Q_1+m_{\text{eau}}c_{\text{eau}}(t_2-t_1)&=0\\
@@ -647,14 +655,14 @@ Q_1&=\frac{0{,}200\times4{,}18\times10^3\times3{,}6}{10}
 
 $$\boxed{Q_1\approx3{,}0\times10^2\ \text{J}}$$
 
-*Comparaison* : la valeur théorique de Q30 est $3{,}3\times10^2$ J. L'écart est d'environ 10 %, ce qui est un accord satisfaisant. Le sens de l'écart est cohérent avec les hypothèses : le calorimètre, dont on néglige la capacité, cède lui aussi de l'énergie, si bien que la baisse de température mesurée sous-estime l'énergie absorbée. S'y ajoutent les fuites et la dépendance de l'enthalpie de dissolution à la concentration (solution à environ 250 g/L).
+La valeur standard de Q30 est de 333 J par pastille, contre 301 J avec cette lecture de la consigne, soit environ 10 % d’écart. Une capacité calorimétrique positive, omise ici, augmenterait l’estimation expérimentale. L’état final est aussi une solution concentrée, avec 50 g de sel pour 200 g d’eau. L’enthalpie intégrale de dissolution peut dès lors différer de la valeur standard.
 
-Si l'on prend la masse de la solution (250 g) avec $c_{\text{eau}}$, on trouve $3{,}8\times10^2$ J (écart de 13 %). La conclusion est la même, à condition d'écrire l'hypothèse choisie.
+Si l’égalité donnée porte sur les **capacités thermiques massiques**, la masse à multiplier par $c_{\rm eau}$ est celle de la solution, soit 250 g. On obtient alors $0{,}250\times4180\times3{,}6/10=376$ J par pastille, environ 13 % au-dessus de 333 J. Les deux lectures donnent donc quelques centaines de joules.
 
 > [!METHODE]
 > Pour un bilan calorimétrique, l'enthalpie est une fonction d'état : on choisit un chemin fictif commode, ici « réaction à $T$ initiale, puis échauffement ou refroidissement des produits ». On écrit que la somme des variations est nulle.
 
-> [!JURY]
+> [!METHODE]
 > « Comparer » demande un écart relatif chiffré et au moins une cause plausible, cohérente avec le sens de l'écart observé.
 
 ### Question 32
@@ -777,7 +785,7 @@ $$P=\frac{nRT}{V_f}=\frac{0{,}75\times8{,}3\times293}{1{,}53\times10^{-2}}$$
 
 $$\boxed{P\approx1{,}2\times10^5\ \text{Pa}=1{,}2\ \text{bar}}$$
 
-*Commentaire* : la pression est légèrement supérieure à la pression atmosphérique. Le boudin souple est tendu sans risque d'éclater, et la charge de 33 g est adaptée au volume. Le modèle du gaz parfait est légitime à cette pression.
+La pression calculée est absolue. Elle dépasse d’environ 0,2 bar la pression atmosphérique près de la surface, ce qui tend l’enveloppe souple du gilet. La tenue mécanique de celle-ci demanderait une donnée supplémentaire.
 
 ### III – Liquéfaction du CO₂
 
@@ -792,7 +800,7 @@ $$\boxed{P\approx1{,}2\times10^5\ \text{Pa}=1{,}2\ \text{bar}}$$
 #### Solution
 
 - **Intérêt pratique** : le liquide (environ 800 kg/m³, sous environ 57 bar à 20 °C) est environ 400 fois plus dense que le gaz du gilet. Les 33 g tiennent dans environ 40 mL, une petite cartouche, au lieu de 15 L, et la vaporisation à l'ouverture fournit rapidement le gaz.
-- **Enjeu écologique** : le CO₂ est le principal gaz à effet de serre anthropique. Son captage et son stockage géologique supposent de le comprimer et de le liquéfier pour le transporter et l'injecter. Le procédé consomme de l'énergie, qu'il faut minimiser.
+- **Enjeu écologique.** Le CO₂ capté peut être liquéfié pour réduire le volume à transporter, par exemple à bord d’un navire. Le bénéfice climatique dépend du bilan énergétique et de la durée du stockage. Un réservoir géologique peut contenir du CO₂ en phase dense ou supercritique. La liquéfaction constitue une étape possible de la chaîne de transport.
 
 ### Question 40
 
@@ -807,7 +815,7 @@ $$\boxed{h_6=h_5}$$
 
 La détente est isenthalpe (mais irréversible).
 
-> [!JURY]
+> [!METHODE]
 > Énoncez le principe utilisé et justifiez chaque terme annulé par une hypothèse de l'énoncé.
 
 ### Question 41
@@ -870,7 +878,7 @@ $$\boxed{\mathcal P_{\text{comp}}\approx14\ \text{kW}}$$
 
 #### Solution
 
-On a $w_u=\int v\,\mathrm dP$, et à pression donnée le volume massique croît avec la température. Le refroidissement intermédiaire (de 85 °C à 0 °C dans $E_1$) diminue $v$ pendant la seconde compression, donc le travail : on se rapproche de la compression isotherme, la moins coûteuse. Une compression directe de 6 à 80 bar sur l'isentrope de 1 mènerait à environ 650 kJ/kg et 210 °C, soit environ 170 kJ/kg au lieu d'environ 138 kJ/kg. L'étagement limite aussi la température de refoulement (lubrifiants, joints) et le rapport de compression de chaque machine.
+On a $w_u=\int v\,\mathrm dP$, et à pression donnée le volume massique croît avec la température. Le refroidissement intermédiaire (de 85 °C à 0 °C dans $E_1$) diminue $v$ pendant la seconde compression, donc le travail : on se rapproche de la compression isotherme, la moins coûteuse. Le point final d’une compression directe sur l’isentrope de 1 se situe au-delà de la plage d’enthalpie du document-réponse. La comparaison du travail repose donc ici sur le volume massique. L'étagement limite aussi la température de refoulement (lubrifiants, joints) et le rapport de compression de chaque machine.
 
 > [!METHODE]
 > Compression étagée avec refroidissement intermédiaire : on gagne sur le travail parce que l'on comprime un gaz plus dense. C'est un argument transposable à tous les cycles industriels.
@@ -899,7 +907,7 @@ $$\mathcal P_F=\frac{\mathcal P_{\text{froid}}}{e_F}=\frac{27}{2{,}0}$$
 
 $$\boxed{\mathcal P_F\approx14\ \text{kW}}$$
 
-La valeur avant arrondi est 13,5 kW, à environ ±1 kW près selon les lectures.
+Avec les valeurs centrales du tableau, la puissance mécanique vaut 13,55 kW avant arrondi. La précision reste celle de la lecture graphique.
 
 > [!PIEGE]
 > Multiplier par $e_F$ au lieu de diviser donnerait une machine qui consomme plus qu'elle ne transfère, ce qui est absurde pour $e_F>1$.
@@ -959,12 +967,12 @@ $$\text{Coût}=1{,}3\times10^2\times0{,}20$$
 
 $$\boxed{\text{coût}\approx25\ \text{€}}$$
 
-Cela fait environ un quart de centime par cartouche, ce qui est négligeable devant son prix de vente. Compte tenu des lectures sur le diagramme, le coût est compris entre 24 et 28 €.
+Le coût électrique est d’environ un quart de centime par cartouche pour l’installation et le tarif étudiés. La lecture de $h_5$ intervient à la fois dans la puissance frigorifique et dans la fraction liquide produite, et limite la précision du coût.
 
 > [!PIEGE]
 > Trois erreurs sont fréquentes : utiliser $D_m$ au lieu de $D_{m1}$ pour la durée, multiplier par le rendement au lieu de diviser, et oublier le compresseur de la machine frigorifique.
 
-> [!JURY]
+> [!METHODE]
 > Annoncez la démarche, gardez des unités cohérentes (kW et h pour obtenir des kWh) et commentez la vraisemblance du coût obtenu.
 
 ## Bilan
