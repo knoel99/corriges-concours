@@ -28,6 +28,51 @@
       "fichier": "figures/q48-q49-flux-entrant-sortant.svg",
       "question": "Q48",
       "legende": "Figure 4 — Allure des puissances thermiques entrante (en 1/√t puis palier) et sortante (nulle puis échelon en tf) du mur à MCP"
+    },
+    {
+      "fichier": "figures/q30-modes.svg",
+      "legende": "Modes propres du fil à extrémités fixes. Les points marquent les nœuds et les courbes représentent le déplacement à une phase donnée.",
+      "question": "Q30"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/P094.pdf",
+    "sujet_sha256": "30e0bde8398ff05b6a49d60b715de1540c28b5cadf17f8022d11393d08afc1ee",
+    "page_officielle": "https://www.concours-centrale-supelec.fr/sujets-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction initiale, modèle inscrit dans le champ redaction de la fiche publique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Révision antérieure signalée dans la mention de rédaction de la fiche. Modèle et périmètre précis non renseignés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Deux éditions relues sur les 52 questions du sujet P094. Relecture des graphes de terrain et de diffusion, des bilans thermochimiques, du domaine de passivation, des modes de la corde et des hypothèses de dilatation. Le dernier rapport TSI relié par la page officielle est celui de 2025 au 24 novembre 2026."
     }
   ]
 }

@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Faire face aux inondations.** Durée 4 h, calculatrice autorisée. Trois parties indépendantes, 48 questions. Questions à prise d'initiative : Q26, Q31, Q48.
 
 ## Partie A – Barrière anti-inondation passive
@@ -64,7 +70,7 @@ Ce moment est négatif : le poids tend à rabattre la plaque. Il est nul pour $\
 
 ### Q5
 
-La plaque est en équilibre et la liaison pivot est parfaite : le moment de la liaison par rapport à (Oz) est nul. La plaque subit donc seulement les forces pressantes et son poids. Le théorème du moment cinétique par rapport à l'axe fixe (Oz) donne à l'équilibre $\mathcal M_{\text{fluide}}+\mathcal M_{\text{poids}}=0$ :
+La plaque est en équilibre et la liaison pivot est parfaite : le moment de la liaison par rapport à (Oz) est nul. Le pivot peut exercer une force de liaison. Seuls le poids et les forces pressantes contribuent au moment autour de son axe. Le théorème du moment cinétique par rapport à l'axe fixe (Oz) donne à l'équilibre $\mathcal M_{\text{fluide}}+\mathcal M_{\text{poids}}=0$ :
 
 $$\begin{aligned}
 \frac16\rho g\ell\frac{h^3}{\sin^2\theta}&=\frac12 mgL\cos\theta\\
@@ -122,11 +128,13 @@ $$\begin{aligned}
 - Si $\theta_e<\theta_0$, alors $\cos^2\theta_e>1/3$ et $\Gamma'(\theta_e)<0$. Un écart $\delta\theta>0$ crée un moment négatif qui ramène la plaque : l'équilibre est stable.
 - Si $\theta_e>\theta_0$, alors $\Gamma'(\theta_e)>0$ : le moment créé a le signe de l'écart et l'amplifie. **L'équilibre est instable.**
 
-Physiquement, au-delà de $\theta_0$, quand $\theta$ augmente, le moment du poids diminue plus vite que celui de l'eau. La poussée l'emporte et fait encore croître $\theta$, jusqu'à la butée verticale. Sur la figure 4, la courbe 2 est au-dessus de la courbe 1 de part et d'autre de $\theta_0$. Pour $\theta>\theta_0$, le moment résultant est donc positif et éloigne la plaque de $\theta_0$.
+La figure 4 est tracée à une hauteur particulière, $h=h(\theta_0)$. À cette hauteur, les deux moments sont tangents au seuil et le couple résultant est positif de chaque côté. En effet, si $u=\cos\theta$, le signe de $\Gamma$ est celui de $f(u_0)-f(u)$, où $f(u)=u-u^3$ atteint son maximum en $u_0=1/\sqrt{3}$. Un léger dépassement de $\theta_0$ entraîne donc une augmentation supplémentaire de l’angle, jusqu’à la butée. C’est ce basculement que montre l’expérience.
+
+![Moment résultant au seuil de basculement, à hauteur d’eau fixée. Après un petit écart vers les angles croissants, le couple relève encore la plaque.](figures/q08-seuil.svg)
 
 ### Q9
 
-- **Avantage** : le déploiement est de type « tout ou rien ». Dès que $h$ atteint le seuil $h(\theta_0)\approx 0{,}43$ m, la barrière se dresse d'un coup jusqu'à la verticale, position la plus protectrice. Ce déploiement est rapide et ne demande ni énergie ni intervention, ce qui est adapté à une crue soudaine.
+- **Avantage** : le déploiement est de type « tout ou rien ». Dès que $h$ atteint le seuil $h(\theta_0)\approx 0{,}43$ m, la barrière se dresse d'un coup jusqu'à la verticale, position la plus protectrice. Ce déploiement est rapide et est entraîné par le travail des forces pressantes et ne demande aucune alimentation externe ni intervention humaine, ce qui est adapté à une crue soudaine.
 - **Inconvénient** : le basculement est brutal et incontrôlé. La plaque de 200 kg vient heurter la butée, ce qui use la liaison et présente un danger pour les personnes ou les véhicules à proximité. Le seuil est fixé par la construction ($m$, $L$, $\ell$) et ne peut pas être réglé.
 
 ## Partie B – Capteur de niveau d'eau
@@ -234,7 +242,7 @@ R_{\text{sonde}}C_{\text{sonde}}&=\frac{\varepsilon_0\varepsilon_r}{\gamma_{\tex
 &=3{,}5\times10^{-8}\ \text{s},
 \end{aligned}$$
 
-et ce produit est indépendant de $h$. Pour $f\sim1$ kHz, $R_{\text{sonde}}C_{\text{sonde}}\,\omega\approx2\times10^{-4}\ll1$ (encore $1\times10^{-3}$ à 5 kHz). **La sonde est équivalente à la seule résistance $R_{\text{sonde}}$.**
+dans l’approximation où les contributions de l’air à la conductance et à la capacité sont négligeables. Pour $f\sim1$ kHz, $R_{\text{sonde}}C_{\text{sonde}}\,\omega\approx2\times10^{-4}\ll1$ (encore $1\times10^{-3}$ à 5 kHz). **La sonde est équivalente à la seule résistance $R_{\text{sonde}}$.**
 
 ### Q18
 
@@ -326,7 +334,7 @@ h&=\frac{\ln(R_2/R_1)}{2\pi\gamma_{\text{eau}}R_{\text{sonde}}}\\
 
 $$\boxed{h\approx0{,}10\ \text{m}}$$
 
-La précision de lecture de $T$ ($\pm5$ µs) donne $h$ à environ 4 % près.
+Comme $h$ est inversement proportionnelle à $T$, une incertitude de lecture de 5 µs, si on l’adopte, représente $5/190\simeq2{,}6\,\%$, soit environ 3 mm sur $h$. Les incertitudes des composants s’y ajouteraient.
 
 ## Partie C – Gilet de sauvetage
 
@@ -374,7 +382,7 @@ Cette énergie est reçue par le système qui se dissout.
 
 ### Q31
 
-*Hypothèses* : le calorimètre est adiabatique et de capacité négligeable, et la transformation est monobare, donc $\Delta H_{\text{tot}}=0$. On décompose en deux étapes fictives : dissolution des 10 pastilles à $t_1$, puis refroidissement de la solution de $t_1$ à $t_2$. La capacité thermique de l'eau salée est assimilée à celle de l'eau pure, soit $m_{\text{eau}}c_{\text{eau}}$ :
+*Hypothèses* : le calorimètre est adiabatique et de capacité négligeable, et la transformation est monobare, donc $\Delta H_{\text{tot}}=0$. On décompose en deux étapes fictives : dissolution des 10 pastilles à $t_1$, puis refroidissement de la solution de $t_1$ à $t_2$. Pour cette lecture de la consigne, la capacité thermique totale du contenu est assimilée à celle des 200 g d’eau initiaux, soit $m_{\text{eau}}c_{\text{eau}}$ :
 
 $$\begin{aligned}
 10\,Q_1+m_{\text{eau}}c_{\text{eau}}(t_2-t_1)&=0\\
@@ -384,9 +392,9 @@ Q_1&=\frac{m_{\text{eau}}c_{\text{eau}}(t_1-t_2)}{10}\\
 
 $$\boxed{Q_1\approx3{,}0\times10^2\ \text{J par pastille}}$$
 
-*Comparaison* : la valeur théorique est $3{,}3\times10^2$ J, et l'écart relatif est d'environ 10 %. L'accord est satisfaisant. Le sens de l'écart s'explique : la capacité thermique du calorimètre est négligée alors qu'il cède lui aussi de l'énergie, ce qui fait que la chute de température mesurée sous-estime l'énergie absorbée. Il faut ajouter les fuites thermiques et la dépendance de l'enthalpie de dissolution à la concentration (solution à 250 g/L).
+La valeur standard de Q30 est de 333 J par pastille, contre 301 J avec cette lecture de la consigne, soit environ 10 % d’écart. Une capacité calorimétrique positive, omise ici, augmenterait l’estimation expérimentale. L’état final est aussi une solution concentrée, avec 50 g de sel pour 200 g d’eau. L’enthalpie intégrale de dissolution peut dès lors différer de la valeur standard.
 
-Si l'on compte la masse totale de la solution (250 g) avec $c_{\text{eau}}$, on obtient $3{,}8\times10^2$ J. L'accord est alors de 13 %, et la conclusion est la même.
+Si l’égalité donnée porte sur les **capacités thermiques massiques**, la masse à multiplier par $c_{\rm eau}$ est celle de la solution, soit 250 g. On obtient alors $0{,}250\times4180\times3{,}6/10=376$ J par pastille, environ 13 % au-dessus de 333 J. Les deux lectures donnent donc quelques centaines de joules.
 
 ### Q32
 
@@ -459,14 +467,14 @@ $$P=\frac{nRT}{V_f}=\frac{0{,}75\times8{,}3\times293}{1{,}53\times10^{-2}}$$
 
 $$\boxed{P\approx1{,}2\times10^5\ \text{Pa}=1{,}2\ \text{bar}}$$
 
-*Commentaire* : la pression est légèrement supérieure à la pression atmosphérique. Une légère surpression suffit à tendre le boudin souple sans risque d'éclatement, et la masse de la cartouche est donc bien dimensionnée pour ce volume. À cette pression, le modèle du gaz parfait est légitime.
+La pression calculée est absolue. Elle dépasse d’environ 0,2 bar la pression atmosphérique près de la surface, ce qui tend l’enveloppe souple du gilet. La tenue mécanique de celle-ci demanderait une donnée supplémentaire.
 
 ### III – Liquéfaction du CO₂
 
 ### Q39
 
 - **Intérêt pratique** : le liquide est environ 400 fois plus dense que le gaz à 1,2 bar. Sa masse volumique est de l'ordre de 800 kg/m³ sous la pression de vapeur saturante, environ 57 bar à 20 °C. Les 33 g tiennent dans environ 40 mL, une petite cartouche, au lieu de 15 L. De plus, la vaporisation à l'ouverture de la cartouche libère rapidement le gaz sous une pression suffisante pour gonfler le gilet.
-- **Enjeu écologique** : le CO₂ est le principal gaz à effet de serre d'origine anthropique. Le captage et le stockage du carbone imposent de le comprimer et de le liquéfier pour le transporter (canalisations, navires) et l'injecter dans des réservoirs géologiques. La liquéfaction réduit le volume de plusieurs centaines de fois, mais elle consomme de l'énergie, d'où l'intérêt d'optimiser le procédé.
+- **Enjeu écologique.** Le CO₂ capté peut être liquéfié pour réduire le volume à transporter, par exemple à bord d’un navire. Le bénéfice climatique dépend du bilan énergétique et de la durée du stockage. Un réservoir géologique peut contenir du CO₂ en phase dense ou supercritique. La liquéfaction constitue une étape possible de la chaîne de transport.
 
 ### Q40
 
@@ -527,7 +535,7 @@ $$\boxed{\mathcal P_{\text{comp}}\approx14\ \text{kW}}$$
 
 Pour une compression isentrope, $w_u=\int v\,\mathrm dP$. À pression donnée, le volume massique du gaz croît avec la température. Refroidir le gaz entre les deux étages (de 85 °C à 0 °C dans $E_1$) diminue $v$ pendant la seconde compression, donc le travail : la compression étagée avec refroidissement intermédiaire se rapproche d'une compression isotherme, la moins coûteuse.
 
-Une compression directe de 6 à 80 bar le long de l'isentrope de 1 conduirait à $h\approx650$ kJ/kg et $T\approx210$ °C. Le travail serait d'environ 170 kJ/kg au lieu d'environ 138 kJ/kg. Les deux étages limitent aussi la température de refoulement, ce qui protège les lubrifiants et les joints, et réduisent le rapport de compression de chaque machine (3,3 puis 4).
+La compression en un seul étage suivrait l’isentrope de l’état 1 jusqu’à 80 bar. Son extrémité déborde de la plage d’enthalpie du document-réponse. Le refroidissement intermédiaire réduit aussi la température de refoulement de la seconde machine.
 
 ### Q45
 
@@ -545,7 +553,7 @@ $$\mathcal P_F=\frac{27}{2{,}0}$$
 
 $$\boxed{\mathcal P_F\approx14\ \text{kW}}$$
 
-La valeur avant arrondi est 13,5 kW, à environ 1 kW près compte tenu des lectures.
+Avec les valeurs centrales du tableau, la puissance mécanique vaut 13,55 kW avant arrondi. La précision reste celle de la lecture graphique.
 
 ### Q46
 
@@ -580,4 +588,4 @@ $$\text{Coût}=1{,}3\times10^2\times0{,}20$$
 
 $$\boxed{\text{coût}\approx25\ \text{€ pour 10 000 cartouches}}$$
 
-Cela fait environ 0,25 centime par cartouche, ce qui est négligeable devant le prix de vente d'une cartouche. Compte tenu des incertitudes de lecture sur le diagramme, le coût est compris entre 24 et 28 €.
+Le coût électrique est d’environ un quart de centime par cartouche pour l’installation et le tarif étudiés. La lecture de $h_5$ intervient à la fois dans la puissance frigorifique et dans la fraction liquide produite, et limite la précision du coût.
