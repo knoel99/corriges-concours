@@ -1,0 +1,41 @@
+{
+  "slug": "x-ens_psi_maths-psi_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2024
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Maths_XUSR.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_PSI_Maths_ECRIT.pdf",
+    "sha256_sujet": "c6b0993a6256f785acabe107218ac3e81d20198860708d85d9823016199128af"
+  },
+  "figures": [
+    {
+      "fichier": "figures/13-hermite.svg",
+      "question": "13",
+      "legende": "Avec deux conditions en 0 et une en 1, le polynôme quadratique d’Hermite partage une tangente et un second point avec l’exponentielle."
+    },
+    {
+      "fichier": "figures/25-fourier.svg",
+      "question": "25d",
+      "legende": "Les quatre racines de X⁴ − 1 sont les nœuds d’interpolation pour la matrice de Fourier. Un nœud absent du spectre peut être conservé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des quatre parties à partir du PDF officiel et des observations question par question du rapport. Preuve attendue et extension complexe de la question 7 neutralisée, interpolation avec multiplicités, projecteurs spectraux, matrices de Fourier et lois génératrices. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
