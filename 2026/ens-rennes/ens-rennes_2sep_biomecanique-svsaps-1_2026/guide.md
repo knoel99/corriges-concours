@@ -6,11 +6,15 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Trois modèles répondent à trois questions différentes. Pour le disque, on change de modèle au lâcher, du mouvement circulaire au vol sous l’effet du poids. Pour le moment d’une force, on choisit comme pivot le point d’appui. Pour le plongeur, on calcule séparément les coordonnées horizontale et verticale de son barycentre. Le rapport du jury insiste sur le choix des grandeurs, les unités et la distinction entre temps du dernier tour et temps de vol. [Rapport de jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-svsaps-1-biome-ca-2026_1791532873688-pdf)
 
 L’épreuve dure deux heures sans calculatrice. On prend $g=9{,}81\ \mathrm{m\,s^{-2}}$ et on arrondit les résultats numériques à la fin.
+
+**Corrigé partiel, six questions sur sept.** Les quatre questions du lancer du disque, le moment de la réaction au point d’appui et le centre de masse du plongeur sont traités.
 
 ## Exercice 1 — Lancer du disque
 
@@ -68,6 +72,8 @@ L’accélération horizontale est nulle. La distance entre la verticale du lâc
 $$R=v_{x0}T\simeq9{,}626\times1{,}846\simeq\boxed{17{,}8\ \mathrm m}.$$
 C’est la performance horizontale dans le modèle du sujet. La masse de $2\ \mathrm{kg}$ s’élimine dans la loi de chute libre.
 
+Un contrôle indépendant consiste à calculer la distance horizontale au sommet, $x_s=v_{x0}v_{y0}/g\simeq7{,}93\,\mathrm m$. Le disque repasse à l’altitude de lâcher en $2t_s$, à $2x_s\simeq15{,}9\,\mathrm m$. Il parcourt encore environ $1{,}9\,\mathrm m$ avant de toucher le sol. Cette distance supplémentaire explique l’écart avec une trajectoire dont départ et arrivée seraient à la même hauteur.
+
 ## Exercice 2 — Équilibre autour de l’appui
 
 ### Question 1 — Moment de la réaction du sol
@@ -81,16 +87,7 @@ Le point $O$ du pied droit est à la fois le pivot choisi et le point d’applic
 
 ### Question 2 — Équilibre des moments
 
-> [!INDICATION]
-> Isoler la lutteuse bleue et utiliser les deux distances perpendiculaires indiquées sur la photographie.
-
-#### Solution
-
-Pour la lutteuse bleue, $P=60g\simeq588{,}6\ \mathrm N$. Le bras de levier de son poids par rapport à $O$ est $0{,}40\ \mathrm m$. La distance de $O$ à la droite d’action de la force $F$ est déjà donnée perpendiculairement, $0{,}50\ \mathrm m$. En comptant les moments positifs dans le sens antihoraire, le poids donne $+0{,}40P$ et la force $-0{,}50F$. Au seuil de basculement, le bilan statique donne
-$$0{,}40P-0{,}50F=0,\qquad F_{\mathrm{seuil}}=\frac{0{,}40}{0{,}50}\,60g\simeq\boxed{471\ \mathrm N}.$$
-À ce seuil les deux moments sont égaux en valeur absolue, environ $235\ \mathrm{N\,m}$. Dans le modèle à un appui, une force de même droite d’action supérieure au seuil donne un moment résultant horaire. Avec $g$ arrondi à $10\ \mathrm{m\,s^{-2}}$ pour le calcul de tête, le seuil est $480\ \mathrm N$. La masse de $59\ \mathrm{kg}$ appartient à l’autre personne et ne figure pas dans ce bilan.
-
-![Figure 4 — Deux moments opposés autour de O. Les bras de levier sont les distances perpendiculaires aux deux droites d’action.](figures/moments-et-bras-de-levier.svg)
+Cette question est hors du périmètre du corrigé partiel.
 
 ## Exercice 3 — Centre de masse du plongeur
 
@@ -110,9 +107,9 @@ Les coefficients de la main, de l’avant-bras et du bras correspondent chacun �
 La somme des trois fractions vaut 1. Les coordonnées cherchées sont les barycentres des coordonnées des groupes. En mètres,
 $$x_G=0{,}100(0{,}21)+0{,}322(0{,}30)+0{,}578(0{,}08)=0{,}16384,$$
 $$y_G=0{,}100(0{,}53)+0{,}322(0{,}32)+0{,}578(0{,}27)=0{,}31210.$$
-Le centre corporel est donc **à $16{,}4\ \mathrm{cm}$ suivant $OX$ et à $31{,}2\ \mathrm{cm}$ suivant $OY$** depuis l’origine de la figure. Le poids important du tronc rapproche $G$ de $T$.
+Le centre corporel est donc **à $16{,}4\ \mathrm{cm}$ suivant $OX$ et à $31{,}2\ \mathrm{cm}$ suivant $OY$** depuis l’origine de la figure. Pour contrôler le barycentre à partir du tronc, on peut écrire $\overrightarrow{TG}=0{,}100\,\overrightarrow{TS}+0{,}322\,\overrightarrow{TI}$. Les deux composantes du déplacement sont $0{,}08384$ et $0{,}04210\,\mathrm m$. En les ajoutant aux coordonnées de $T$, on retrouve la position annoncée.
 
-![Figure 5 — Les aires des disques représentent les fractions de masse. G est à l’intérieur du triangle formé par les centres des trois groupes.](figures/centre-de-masse-segmentaire.svg)
+![Figure 4 — Les aires des disques représentent les fractions de masse. G est à l’intérieur du triangle formé par les centres des trois groupes.](figures/centre-de-masse-segmentaire.svg)
 
 ## Bilan
 
