@@ -1,0 +1,106 @@
+{
+  "slug": "x_mpi_physique-mpi_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MPI",
+    "matiere": "Physique MPI",
+    "annee": 2024
+  },
+  "questions": 39,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MPI%20SUJET%20PHYSIQUE%20MPI%20(X).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MPI%20RAPPORT%20ECRIT%20PHYSIQUE%20(X)_0.pdf",
+    "sujet_sha256": "4076354a4660eaa82c100ba82541a696428155d6944cc41134d46b2e2d7a4d35",
+    "rapport_sha256": "f8ae29d59c7c541684378abb2fa31b1d19d9e33d8c3509ab870c1900073ec9cf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 39 questions sont traitées à partir du sujet et du rapport officiels. Cinq figures illustrent la réflectivité, les projections de trajet, la turbine, l’acceptance classique et la quantification de la hauteur."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "7",
+      "fichier": "figures/coefficient-reflexion.svg",
+      "legende": "Réflexion sur la marche de potentiel, calculée pour un angle critique de 0,010 rad lu dans le sujet."
+    },
+    {
+      "numero": 2,
+      "question": "16",
+      "fichier": "figures/guide-droit-projections.svg",
+      "legende": "Projections du même trajet dans un tube droit à section carrée, avec des composantes initiales transversales distinctes."
+    },
+    {
+      "numero": 3,
+      "question": "26",
+      "fichier": "figures/turbine-trajectoire.svg",
+      "legende": "Dans le référentiel de la turbine, les chocs spéculaires successifs sur le demi-cercle produisent un retournement presque complet de la vitesse."
+    },
+    {
+      "numero": 4,
+      "question": "31",
+      "fichier": "figures/domaine-transmis.svg",
+      "legende": "À densité d’injection uniforme, le débit est proportionnel à l’aire admise dans les coordonnées physiques (z, vz). La normalisation fait apparaître le facteur δ × √δ."
+    },
+    {
+      "numero": 5,
+      "question": "36",
+      "fichier": "figures/etats-au-dessus-du-miroir.svg",
+      "legende": "Densités calculées à partir des fonctions d’Airy. Chaque densité est décalée en abscisse et ramenée au même maximum pour comparer les hauteurs. Les tirets indiquent les points de retournement classiques."
+    }
+  ],
+  "redaction": "Les 39 questions sont traitées à partir du sujet et du rapport officiels. Cinq figures illustrent la réflectivité, les projections de trajet, la turbine, l’acceptance classique et la quantification de la hauteur.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39"
+    ]
+  }
+}

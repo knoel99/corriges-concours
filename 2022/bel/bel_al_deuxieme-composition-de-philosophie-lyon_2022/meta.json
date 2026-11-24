@@ -1,0 +1,76 @@
+{
+  "slug": "bel_al_deuxieme-composition-de-philosophie-lyon_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Deuxième composition de philosophie (Lyon)",
+    "annee": 2022
+  },
+  "intitule": "L’absence de principe",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=2",
+    "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Philosophie%202022.pdf",
+    "rapport_sha256": "b762666335ff95bfe67afca19e2cd428cc54909185bd891aac6f1756bf874337",
+    "pages_rapport": "10–17",
+    "references": [
+      "https://fr.wikisource.org/wiki/Monadologie/%C3%89dition_Nolen_1881"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-diagnostics.svg",
+      "question": "Démonstration",
+      "legende": "Qu’est-ce qui manque à la décision ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la partie consacrée à cet écrit de spécialité, pages 10–17 du rapport."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation, du guide et du schéma. Absence de raison connue, justification pratique et équité."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    }
+  ]
+}
