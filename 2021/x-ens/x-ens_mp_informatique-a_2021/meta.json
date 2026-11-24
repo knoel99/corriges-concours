@@ -1,0 +1,51 @@
+{
+  "slug": "x-ens_mp_informatique-a_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2021,
+    "duree_heures": 4
+  },
+  "questions": 27,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20MP%20Sujet%20d%27Informatique%20A%20%28XULCR%29_0.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20MP%20RAPPORT%20ECRIT%20INFORMATIQUE%20A%20%28XULCR%29.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-arbre.svg",
+      "question": "Q1",
+      "legende": "Les étiquettes donnent les préfixes. Les nœuds foncés sont marqués T, les nœuds clairs F. Chaque arête indique son bit."
+    },
+    {
+      "fichier": "figures/q09-arbre.svg",
+      "question": "Q9",
+      "legende": "Les étiquettes donnent les préfixes. Les nœuds foncés sont marqués T, les nœuds clairs F. Chaque arête indique son bit."
+    },
+    {
+      "fichier": "figures/q18-arbre.svg",
+      "question": "Q18",
+      "legende": "Dernier arbre de l’insertion ascendante des suffixes. Les arêtes portent une lettre. Les nœuds donnent l’intervalle complémentaire puis la marque."
+    },
+    {
+      "fichier": "figures/q27-fenetres-de-bruijn.svg",
+      "question": "Q27",
+      "legende": "Les huit fenêtres successives de taille trois sont 000, 001, 010, 101, 011, 111, 110, 100."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 27 questions à partir du sujet et du rapport officiels, lecture directe des figures 1 et 3, reconstruction progressive de l’arbre des suffixes, quatre schémas et vérification du code OCaml sur des mots binaires et divers ordres d’insertion."
+    }
+  ]
+}
