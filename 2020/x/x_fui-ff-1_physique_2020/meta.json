@@ -1,0 +1,44 @@
+{
+  "slug": "x_fui-ff-1_physique_2020",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Physique",
+    "annee": 2020
+  },
+  "questions": 25,
+  "redaction": "Corrigés originaux rédigés par IA.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20DE%20PHYSIQUE%20Session%201.pdf",
+    "sujet_sha256": "00df9c6b73e471acd371deb2bf740e7110b3ebc7ed99c86b477db6843e456139",
+    "rapport_jury": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A.6.f",
+      "fichier": "figures/pression-altitude.svg",
+      "legende": "Trois hypothèses donnent des altitudes de demi-pression différentes. La formule arrondie du sujet se place près de l’adiabatique sèche."
+    },
+    {
+      "numero": 2,
+      "question": "C.1",
+      "fichier": "figures/cycle-carnot.svg",
+      "legende": "Le moteur suit les flèches. L’aire du rectangle est égale au travail massique qu’il fournit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 25 réponses et des 25 indications sur la pression, les muons, les ondes radio et le cyclone. Calculs du pont résistif et de son amplification, comparaison des trois atmosphères et représentation du cycle de Carnot.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ]
+}
