@@ -1,0 +1,65 @@
+{
+  "slug": "bce_ecg_japonais-lvb-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Japonais LVB (ELVi)",
+    "annee": 2026,
+    "modalite": "écrit"
+  },
+  "intitule": "Absentéisme scolaire au Japon",
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=16",
+    "sujet_sha256": "29a08b157bd5022c73a429363d249d2ec90840123c908135e667cd27cf018c98",
+    "pages": "16–19",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/76%20%20-%20Japonais%20LVB%20Elvi%202026.pdf",
+    "rapport_sha256": "469e7a11601d4c0ebe7bf7479c216bf4c24bb48a0aa6b66d524e7102546af6e1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/frequentation.svg",
+      "question": "Dossier documentaire",
+      "legende": "Fréquentation des écoles alternatives pendant une absence"
+    }
+  ],
+  "decompte": {
+    "resume": 253,
+    "essai": 364,
+    "convention": "Segmentation lexicale ICU japonaise, ponctuation exclue."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des trois réponses en langue cible, du guide et d’un schéma établi à partir du document visuel."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle de la confrontation des deux textes, de la segmentation et des huit pourcentages du thème. Comparaison avec le rapport et les deux graphiques p. 19."
+    }
+  ]
+}

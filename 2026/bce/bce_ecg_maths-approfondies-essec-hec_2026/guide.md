@@ -2,11 +2,19 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve de 4 heures, conception ESSEC BS – HEC Paris, sans document ni calculatrice. Trente questions numérotées (46 en comptant les sous-questions), en quatre parties qui s'enchaînent. Le rapport 2026 indique 2448 copies et une note péréquée moyenne de 10,84.
 
-**Le fil directeur.** Une matrice bistochastique « mélange » les coordonnées d'un vecteur : $BX$ est moins dispersé que $X$. Les fonctions qui décroissent par ce mélange (S-convexes) sont exactement celles qui ne voient que le vecteur trié, et la convexité y suffit. On transporte ensuite tout cela aux matrices symétriques à travers leurs valeurs propres triées : c'est le théorème de Davis (une fonction spectrale est convexe dès que sa trace sur les diagonales l'est) puis l'inégalité de Fan.
+**Le fil directeur.** Une matrice bistochastique « mélange » les coordonnées d'un vecteur : $BX$ est moins dispersé que $X$. Toute fonction S-convexe dépend seulement du vecteur trié. La réciproque exige une hypothèse supplémentaire : la symétrie et la convexité réunies suffisent. On transporte ensuite tout cela aux matrices symétriques à travers leurs valeurs propres triées : c'est le théorème de Davis (une fonction spectrale est convexe dès que sa trace sur les diagonales l'est) puis l'inégalité de Fan.
 
 - **Partie I (Q1–Q6)** : matrices de permutation ($P_\sigma P_\tau=P_{\sigma\circ\tau}$, orthogonalité), existence et unicité du réordonnement décroissant $\hat x$, tri en Python.
 - **Partie II (Q7–Q10)** : matrices bistochastiques et orthostochastiques, théorème de Birkhoff-Von Neumann démontré à la main pour $n=2$ et $n=3$, algorithme de normalisation alternée (Sinkhorn) en Python.
@@ -377,7 +385,7 @@ Positivité : $\beta_1,\beta_2,\beta_3\geqslant0$ par définition du minimum. En
 Dans tous les cas ce sont des coefficients de $S$, donc des réels positifs. **La décomposition existe.**
 
 > [!METHODE]
-> Les matrices de permutation de taille 3 vérifient une relation linéaire (somme des trois permutations paires égale à la somme des trois impaires) : la décomposition n'est pas unique. Le choix $\beta_0=\min S_{i,i}$ annule l'un des $\beta_1,\beta_2,\beta_3$ et garantit la positivité.
+> Les matrices de permutation de taille 3 vérifient une relation linéaire (somme des trois permutations paires égale à la somme des trois impaires) : la décomposition peut varier. Par exemple, la matrice dont toutes les entrées valent $1/3$ est à la fois $(I_3+P_4+P_5)/3$ et $(P_1+P_2+P_3)/3$. Le choix $\beta_0=\min S_{i,i}$ annule l'un des $\beta_1,\beta_2,\beta_3$ et garantit la positivité.
 
 ### Question 9(e)
 
@@ -401,6 +409,9 @@ En sommant la première ligne de $S=\beta_0I_3+\sum_{i=1}^5\beta_iP_i$, chaque m
 ```python
 def bistochastique(n, iter):
     A = rd.random([n, n])            # A(0)
+    while np.any(A == 0):
+        masque = (A == 0)
+        A[masque] = rd.random(np.count_nonzero(masque))
     for k in range(iter):
         for i in range(n):           # A(2k+1) : lignes normalisées
             A[i, :] = A[i, :] / np.sum(A[i, :])
@@ -410,6 +421,10 @@ def bistochastique(n, iter):
 ```
 
 Testée avec `bistochastique(4, 200)` : les sommes de lignes et de colonnes valent $1$ à la précision machine.
+
+On retire les zéros éventuels du générateur pour respecter l’intervalle ouvert. Après un nombre fini de passages, les colonnes ont exactement la somme demandée en arithmétique exacte. Les lignes peuvent encore s’en écarter. Par exemple, partons de $A^{(0)}=\frac14\left(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\right)$. Après la normalisation des lignes puis des colonnes, on obtient
+$$A^{(2)}=\begin{pmatrix}4/7&2/5\\3/7&3/5\end{pmatrix}.$$
+Les sommes des lignes sont $34/35$ et $36/35$. L’admission d’une approximation pour un grand nombre d’itérations intervient précisément ici.
 
 > [!JURY]
 > Le rapport 2026 signale la « Confusion entre indice et puissance » : $A^{(2k)}$ désigne la $2k$-ième matrice de la suite, pas une puissance de $A$. Aucune puissance matricielle n'intervient ici.
@@ -566,6 +581,10 @@ f(BX) &= f\Big(\sum_ka_kP_kX\Big)\\
 \end{aligned}$$
 
 **$f$ est S-convexe.**
+
+La symétrie seule donne l’égalité sur les permutations. Pour $f(x)=-\sum_i x_i^2$ et $X=(1,-1)$, la matrice dont toutes les entrées valent $1/2$ donne $BX=0$. On obtient $f(BX)=0>-2=f(X)$, ce qui exclut la S-convexité. Dans l’autre sens, $h(x)=-(\sum_i x_i)^2$ est S-convexe puisque la somme des coordonnées est préservée. Sa restriction à la droite $x=t e_1$ vaut $-t^2$ et n’est pas convexe.
+
+![Figure 1 — Le mélange de (1, −1) et (−1, 1) donne le vecteur nul à mi-parcours. Les deux courbes ont des extrémités de même hauteur.](figures/melange-et-symetrie.svg)
 
 ### Question 19(a)
 
