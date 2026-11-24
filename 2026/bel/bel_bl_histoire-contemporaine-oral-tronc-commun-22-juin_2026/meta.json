@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-22-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun, 22 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire contemporaine (oral tronc commun, 22 juin)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_histoire_b_l_j3.pdf",
+    "sujet_sha256": "8e6f427e15bf6a7a1855c43168499e4bd75f6b4b391a93748fb95ab86658cc35",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_histoire_contemporaine_v2.pdf",
+    "rapport_sha256": "87ac6f3735d385369b79aa97c667e16ba004647be0bac67ec7559cad14a5390a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/sortir-guerre.svg",
+      "question": "2",
+      "legende": "Trois calendriers de sortie de la Seconde Guerre mondiale"
+    },
+    {
+      "fichier": "figures/droits.svg",
+      "question": "5",
+      "legende": "Du statut pénal aux expériences sociales"
+    },
+    {
+      "fichier": "figures/rigueur.svg",
+      "question": "15",
+      "legende": "Le tournant de 1983 s’inscrit dans une série d’arbitrages"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des douze sujets France et douze sujets monde, des vingt-quatre relances du guide et des trois schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des paires à la feuille de la journée et au relevé du jury. Vérification des dates, de la portée des événements et des questions de relance."
+    }
+  ]
+}
