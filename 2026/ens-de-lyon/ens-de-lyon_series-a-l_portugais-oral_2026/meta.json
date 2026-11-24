@@ -1,0 +1,45 @@
+{
+  "slug": "ens-de-lyon_series-a-l_portugais-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Portugais (oral)",
+    "annee": 2026,
+    "type": "oral"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Portugais%202026.pdf#page=3",
+    "sujet_sha256": "be06f38becd1157f2f7a17b47f4ca597d26338d90fc75bf8b9d3576b51896eb6",
+    "documents": [
+      "https://doi.org/10.36557/2674-8169.2024v6n8p5086-5098"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Oral",
+      "legende": "Interpréter une association"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Proposition pour l’unique référence LV2, à partir de l’article original de Casotti Santi et al., exposé et entretien en portugais, guidage méthodologique, limites du document effectivement distribué."
+    }
+  ]
+}

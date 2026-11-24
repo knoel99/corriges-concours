@@ -1,0 +1,107 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2019
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2c2019_bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_2CC_rap_eBio.pdf",
+    "sujet_sha256": "8a16aae0ab9639543370e640b2d38b8b9d169e289720981ec16aec78279d8f12",
+    "rapport_sha256": "4282e25eae33c6f13858eeeb81ab8502304267f309763cd7dc48aeca5b1b589d"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      27,
+      28,
+      29,
+      30
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      20,
+      26
+    ],
+    "precision": "Les questions 1 à 19, 21 à 25 et 27 à 30 sont traitées, soit 28 sur 30. Les questions 20 et 26 sur les effets expérimentaux de composés oxydants sont exclues. La synthèse du favisme suit ses conséquences cliniques et le rôle protecteur du glutathion."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/hba-cooperation.svg",
+      "legende": "Le point clair situe un hème par sous-unité. Les courbes schématiques illustrent la coopération et un décalage à droite à affinité plus faible.",
+      "question": "Q1"
+    },
+    {
+      "fichier": "figures/cohorte-hematies.svg",
+      "legende": "Illustration linéaire fondée sur la tendance commune des deux volontaires. Le terme de 120 jours est extrapolé au-delà des dernières mesures.",
+      "question": "Q6"
+    },
+    {
+      "fichier": "figures/trajet-du-pigment.svg",
+      "legende": "Parcours de l’hème à la stercobiline et étape de conjugaison hépatique perturbée dans le syndrome de Gilbert.",
+      "question": "Q9"
+    },
+    {
+      "fichier": "figures/crise-hemolytique.svg",
+      "legende": "Valeurs du tableau 1 sur trois axes indépendants. Les deux derniers prélèvements montrent chute de l’hématocrite et réponse réticulocytaire.",
+      "question": "Q10"
+    },
+    {
+      "fichier": "figures/mosaique-erythrocytaire.svg",
+      "legende": "Représentation qualitative des contrastes des quatre panneaux de la figure 10. La proportion dessinée ne constitue pas un comptage du prélèvement.",
+      "question": "Q16"
+    },
+    {
+      "fichier": "figures/transfert-glutathion.svg",
+      "legende": "Le NADPH fournit les électrons nécessaires pour réduire le disulfure du glutathion.",
+      "question": "Q25"
+    },
+    {
+      "fichier": "figures/bilan-favisme.svg",
+      "legende": "Des réserves réductrices à l’hémolyse, puis aux trois grandes conséquences de la crise observée dans le dossier.",
+      "question": "Q27"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions sur le périmètre déclaré, à partir de l’énoncé et du rapport de 2019. Lecture des mesures de marquage, des contrôles de transfusion, des histogrammes par sexe, des frottis et des résultats métaboliques. Deux études sur des composés oxydants sont exclues."
+    }
+  ]
+}

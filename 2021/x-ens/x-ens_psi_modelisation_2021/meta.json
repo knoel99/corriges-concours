@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_modelisation_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2021,
+    "duree_heures": 5
+  },
+  "questions": 57,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_Modelisation.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Rapport_Ecrit_PSI_Modelisation.pdf",
+    "sujet_sha256": "ef3dfc728069993dcdab9af9c938fc94a8bc6d4e087b2d9bdc3436534ed1006b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-normale-surface.svg",
+      "question": "Q5",
+      "legende": "La tangente monte vers la droite. La normale orientée vers l’air a donc une composante horizontale négative."
+    },
+    {
+      "fichier": "figures/q12-orbites.svg",
+      "question": "Q12",
+      "legende": "Dans le modèle linéaire en eau profonde, le rayon orbital décroît exponentiellement avec la profondeur. Aux sommets des orbites, le mouvement suit la propagation de la houle."
+    },
+    {
+      "fichier": "figures/q25-volume-carene.svg",
+      "question": "Q25",
+      "legende": "Pour calculer le centre de carène, couper à la face supérieure du plateau. Les points indiquent les centres des deux volumes d’eau déplacés."
+    },
+    {
+      "fichier": "figures/q45-commande-optimale.svg",
+      "question": "Q45",
+      "legende": "Le retour négatif de l’impédance conjuguée impose une vitesse en phase avec la force de houle. Le point de prélèvement se trouve après le bloc direct."
+    },
+    {
+      "fichier": "figures/q51-bode.svg",
+      "question": "Q51",
+      "legende": "Gain relatif au plateau et phase du capteur de courant. La cassure à ω Ti = 1 sépare le plateau de la décroissance à vingt décibels par décade."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 57 questions sur la houle, la dynamique à deux corps, la commande conjuguée et la mesure de courant. Lecture du sujet de 17 pages et du rapport du jury, contrôle des conventions de signe, des graphes et des circuits sur les pages originales, cinq schémas. Contrôles numériques des équations de dispersion, des bilans, de la commande optimale et de la saturation du capteur."
+    }
+  ]
+}
