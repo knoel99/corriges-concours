@@ -1,0 +1,184 @@
+{
+  "slug": "bel_bl_anglais-oral-tronc-commun_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais (oral tronc commun)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Anglais (oral tronc commun)",
+  "questions": 0,
+  "sujets": 19,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_sujets_oral_anglais_tronc_commun.pdf",
+    "sujet_sha256": "75e79ff14ff294efca884497b4dc85cb83eb24f531b5e1676d0024c9d580fcfb",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_anglais.pdf",
+    "rapport_sha256": "474278f9fc0db7a69a49d0c529565af1b56ed9260ac7d9ed20e9213f0c1feeae"
+  },
+  "documents": [
+    {
+      "pages": [
+        1
+      ],
+      "intitule": "Ted Kennedy and the American claim to speak for Ulster"
+    },
+    {
+      "pages": [
+        2
+      ],
+      "intitule": "Clement Attlee and the price of insecurity"
+    },
+    {
+      "pages": [
+        3
+      ],
+      "intitule": "Jack London audits the civilisation of the East End"
+    },
+    {
+      "pages": [
+        4
+      ],
+      "intitule": "A Liverpool pamphleteer defends West Indian slavery"
+    },
+    {
+      "pages": [
+        5
+      ],
+      "intitule": "The Commons debates Clause 28"
+    },
+    {
+      "pages": [
+        6,
+        7
+      ],
+      "intitule": "Caroline Lucas enters the Commons"
+    },
+    {
+      "pages": [
+        8,
+        9
+      ],
+      "intitule": "Nigel Farage imagines the audience beyond his party"
+    },
+    {
+      "pages": [
+        10,
+        11
+      ],
+      "intitule": "David Lammy and the right to call someone a citizen"
+    },
+    {
+      "pages": [
+        12
+      ],
+      "intitule": "Ellen Wilkinson and the independent worker missing from the electorate"
+    },
+    {
+      "pages": [
+        13
+      ],
+      "intitule": "Charles Darwin tests the testimony of travellers"
+    },
+    {
+      "pages": [
+        14,
+        15
+      ],
+      "intitule": "The Southern Manifesto and the uses of precedent"
+    },
+    {
+      "pages": [
+        16
+      ],
+      "intitule": "Mother Jones asks for an audience"
+    },
+    {
+      "pages": [
+        17,
+        18
+      ],
+      "intitule": "John O'Sullivan writes Texas into the Union"
+    },
+    {
+      "pages": [
+        19
+      ],
+      "intitule": "Bennett Champ Clark and neutrality before the emergency"
+    },
+    {
+      "pages": [
+        20
+      ],
+      "intitule": "Frances Willard's case for doing everything"
+    },
+    {
+      "pages": [
+        21,
+        22
+      ],
+      "intitule": "Philo D. Burke disputes who may carry the flag"
+    },
+    {
+      "pages": [
+        23
+      ],
+      "intitule": "Frederick Douglass claims the Constitution for abolition"
+    },
+    {
+      "pages": [
+        24
+      ],
+      "intitule": "George Wallace takes states' rights to New York"
+    },
+    {
+      "pages": [
+        25,
+        26
+      ],
+      "intitule": "Phyllis Schlafly narrates the defeat of the ERA again"
+    }
+  ],
+  "figures": [
+    {
+      "fichier": "figures/preuve.svg",
+      "question": "Documents jusqu’à la page 5",
+      "legende": "Persuading a public to see an injury"
+    },
+    {
+      "fichier": "figures/representer.svg",
+      "question": "Documents jusqu’à la page 12",
+      "legende": "Who claims to represent whom?"
+    },
+    {
+      "fichier": "figures/autorite.svg",
+      "question": "Documents jusqu’à la page 19",
+      "legende": "From experience and precedent to authority"
+    },
+    {
+      "fichier": "figures/public.svg",
+      "question": "Documents jusqu’à la page 25",
+      "legende": "Making and contesting a public"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des dix-neuf extraits du fascicule officiel (26 pages) et du rapport 2026. Rédaction en anglais de dix-neuf commentaires historiques avec réponse d’entretien. La version guidée ajoute dix-neuf exercices d’analyse et dix-neuf développements individuels. Quatre figures comparent les procédés des documents successifs."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
