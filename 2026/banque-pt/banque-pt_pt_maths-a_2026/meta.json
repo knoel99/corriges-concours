@@ -24,5 +24,19 @@
       "question": "C.7(f)",
       "legende": "Sur les 100 000 tirages du sujet, 21 357 coïncidences donnent la fréquence 0,21357. L’intervalle de rayon 0,01 contient la probabilité calculée par la série."
     }
-  ]
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
 }

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 **Sujet** — Peut-on cesser de croire ?
 
 [Libellé reproduit par le jury, p. 1](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf#page=1) · [Rapport officiel](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf)

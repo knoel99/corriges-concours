@@ -36,5 +36,19 @@
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Histoire%202026.pdf",
     "programme": "https://www.ens-lyon.fr/sites/default/files/2025-05/Lettre%20de%20cadrage%20programme%20commun%20Histoire%20session%202026.pdf",
     "refugies_palestiniens": "https://www.un.org/unispal/document/auto-insert-176879/"
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-4-8",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

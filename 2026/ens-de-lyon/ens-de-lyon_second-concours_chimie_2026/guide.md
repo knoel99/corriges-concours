@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Cette épreuve de trois heures étudie l’hydrogène comme combustible, vecteur d’énergie et réactif. La dernière partie relie résolution enzymatique, lecture d’orbitales frontières et transformations d’intermédiaires d’un alcaloïde à squelette arcutane.

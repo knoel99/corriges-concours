@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Le sujet de trois heures est intitulé « Composition de géologie » sur sa couverture et figure dans les annales de géosciences. Les 15 questions utilisent les données de l’Altiplano pour relier temps de parcours, épaisseur crustale, relief, comportement mécanique, volcanisme et climat. Les mesures précises sont distinguées des lectures graphiques et des hypothèses pétrologiques. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_geologie.pdf) · [Rapport du jury](https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_eST.pdf)

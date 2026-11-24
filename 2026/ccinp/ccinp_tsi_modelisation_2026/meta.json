@@ -39,5 +39,19 @@
       "question": "Q52",
       "legende": "Domaine d'instabilité |Ω − ω| < ω|δ|/4 au voisinage de Ω = ω"
     }
-  ]
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
 }

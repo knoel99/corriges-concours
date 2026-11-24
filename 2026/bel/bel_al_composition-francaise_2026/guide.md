@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (gpt-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L'épreuve dure **six heures**. Elle demande de discuter une analyse de Michel Viegnes :

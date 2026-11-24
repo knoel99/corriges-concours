@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 La composition commune à l’ENS Paris-PSL, l’ENS de Lyon, l’ENS Paris-Saclay, l’ENSAE et l’ENSAI dure quatre heures. La calculatrice est interdite.
 
 ## Problème A — Applications linéaires et projecteurs

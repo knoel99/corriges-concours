@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : Claude Code (claude-opus-5-5) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Épreuve de 3 heures, calculatrice interdite, trois parties indépendantes. Notations : $\vec u\wedge\vec v$ désigne le produit vectoriel, et les angles sont orientés par l'axe indiqué.
 
 ## Partie I — Modélisation et stabilisation d'un flotteur

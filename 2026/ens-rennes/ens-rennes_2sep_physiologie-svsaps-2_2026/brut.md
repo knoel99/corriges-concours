@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Situation étudiée
 
 Lina, 18 ans, prépare un trail de 25 km avec 1 500 m de dénivelé positif. Après dix minutes d’échauffement, son test comporte vingt minutes d’ascension sur une pente moyenne de 10 %. L’épreuve écrite dure deux heures. [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-svsaps-2-physio-2sep-2026_1791303263430-pdf)

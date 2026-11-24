@@ -24,5 +24,19 @@
       "question": "III.4",
       "legende": "Niveaux de φ(x,y) = x² + y² − ln|x − y|. La diagonale sépare les deux composantes du domaine, chacune avec un minimum en (1/2, −1/2) ou (−1/2, 1/2)."
     }
-  ]
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
 }

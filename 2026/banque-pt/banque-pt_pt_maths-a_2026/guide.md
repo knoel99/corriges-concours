@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : Claude Code (claude-opus-5-5) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 heures, **calculatrice interdite**. Une feuille de papier millimétré est à rendre avec la copie. Le sujet compte quatre parties et 41 questions élémentaires en comptant chaque sous-question. Les parties A et B sont indépendantes ; les parties C et D réutilisent leurs résultats.

@@ -30,5 +30,19 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/al_commun_francais.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202026_0.pdf",
     "texte_lery": "https://fr.wikisource.org/wiki/Histoire_d%E2%80%99un_voyage_faict_en_la_terre_du_Br%C3%A9sil/18"
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

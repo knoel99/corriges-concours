@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : Claude Code (claude-opus-4-8) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 La composition commune d’histoire dure six heures. L’énoncé, intégralement publié sur une page, propose un unique sujet sur la construction étatique et les transformations des sociétés au Moyen-Orient de 1920 à 2011. [Sujet de la session](https://www.ens.psl.eu/sites/default/files/al_commun_hist.pdf)

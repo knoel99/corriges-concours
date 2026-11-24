@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 **Problématique** — Comment des habitants inégalement dotés peuvent-ils maintenir ou recomposer leurs liens avec ces campagnes lorsque les ressources et les activités qui les font vivre se déploient sur plusieurs lieux ?
 
 ## Introduction

@@ -24,5 +24,19 @@
       "question": "Q44",
       "legende": "Canal SOFAR : (a) profil de Munk et profondeurs de retournement, où c(z) = c(zₑ)/cos a ; (b) trajectoires calculées pour des sources à 1500 m et 3000 m sous 0,05 rad"
     }
-  ]
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
 }

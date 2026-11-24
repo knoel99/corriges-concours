@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Cette composition de trois heures relie les arbres de décision, les fonctions booléennes positives et les complexes simpliciaux. Les quatre parties forment une démonstration du critère de Kahn–Saks–Sturtevant. Les questions d’algorithme emploient les opérations de l’énoncé et ses coûts, en particulier la consultation d’un dictionnaire en temps constant. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_info.pdf) · [Index des écrits de la banque](https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/)
