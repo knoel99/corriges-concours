@@ -28,19 +28,32 @@
       "fichier": "figures/restaurer-les-cours-eau.svg",
       "question": "Partie III",
       "legende": "Deux moyens de restaurer certaines fonctions dans la Loire et la mer d’Aral du Nord."
+    },
+    {
+      "fichier": "figures/delta-colorado-pulsion-2014.svg",
+      "question": "Partie II",
+      "legende": "Bas Colorado en 2014. Les lâchers du barrage et des points aval alimentent un même corridor jusqu’au golfe de Californie. Des infiltrations relient le lit et la nappe."
     }
   ],
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-07/Composition%20de%20g%C3%A9ographie.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/G%C3%A9ographie%202025%20RELU.pdf",
     "programme": "https://www.ens-lyon.fr/sites/default/files/2024-06/Lettre%20definitive%20de%20cadrage%20BEL%202025%20TC%20Geographie.pdf",
-    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/tree/master/geojson"
+    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/tree/master/geojson",
+    "sujet_sha256": "78f251b841b5f72532842bfd29e1871d1ac8966cb601c77d8f7a507338eb8e6c",
+    "rapport_sha256": "dceadadd2e2788b5b8e7a1c6e3058dd14a9d22e32ae4dbf61241f6b6545fe7d6",
+    "etude_de_cas": [
+      "https://pubs.usgs.gov/publication/70177847",
+      "https://pubs.usgs.gov/publication/70177951",
+      "https://www.ibwc.gov/wp-content/uploads/2023/06/Minute_319_Monitoring_Report_112818_FINAL.pdf"
+    ]
   },
   "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-24",
-    "modele": "Codex (GPT-6)",
-    "verification": "Contre-lecture indépendante du sujet et du rapport écrit. Contrôle du plafond de 2018 au Cap, des ressources de Singapour, de Kok-Aral en 2005, des effacements de 1998 et du calcul des retours à l’échelle du bassin."
+    "modele": "gpt-6.2-astra",
+    "verification": "Révision des deux éditions sur le sujet et le rapport. Étude cartographiée du delta du Colorado, répartition des apports, mesures de nappe et d’arrivée à l’estuaire, échelles de temps et consigne d’utilisation du fond mondial.",
+    "tour": 2
   },
   "provenance": {
     "redaction": {
@@ -52,10 +65,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -79,6 +91,19 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante du sujet et du rapport écrit. Contrôle du plafond de 2018 au Cap, des ressources de Singapour, de Kok-Aral en 2005, des effacements de 1998 et du calcul des retours à l’échelle du bassin.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions sur le sujet et le rapport. Étude cartographiée du delta du Colorado, répartition des apports, mesures de nappe et d’arrivée à l’estuaire, échelles de temps et consigne d’utilisation du fond mondial.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
