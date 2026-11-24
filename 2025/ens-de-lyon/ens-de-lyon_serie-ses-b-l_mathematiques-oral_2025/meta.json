@@ -1,0 +1,48 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_mathematiques-oral_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Mathématiques (oral)",
+    "annee": 2025,
+    "type": "oral"
+  },
+  "questions": 197,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-10/Annexe%20Sujets%20Math%C3%A9matiques%20SES%20session%202025.pdf#page=2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=14",
+    "sha256_sujet": "262639f76968d3049041bc1cfb61240f03db23747a4ee357554049bdbd8a1dc9",
+    "sha256_rapport": "376daf04dd646b0b3fa852e3fb741b66e422a77d5cbe836a9541ca8da0d35c4d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/normale-partie-entiere.svg",
+      "question": "Planche 2, exercice 1, question 3b",
+      "legende": "Deux bandes symétriques portent la même masse alors que leurs parties entières sont respectivement −2 et 1."
+    },
+    {
+      "fichier": "figures/quotient-rayleigh.svg",
+      "question": "Planche 6, exercice 2, question 4c",
+      "legende": "Pour une matrice triangulaire ayant une seule valeur propre, le quotient parcourt tout un intervalle sur le cercle unité."
+    },
+    {
+      "fichier": "figures/saut-repartition.svg",
+      "question": "Planche 12, exercice 2, question 5b",
+      "legende": "La fonction de répartition saute de zéro à un demi à l’origine, puis rejoint un au seuil ln(3/2)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 197 réponses et des indications des deux éditions de l’oral B/L de Lyon, à partir des 13 planches de l’annexe officielle et du rapport du jury. Conservation des numéros de planches du fascicule. Figures et contrôles de calcul détaillés dans les solutions.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
