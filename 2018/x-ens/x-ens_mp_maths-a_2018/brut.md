@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Les 19 numéros de cette épreuve de quatre heures comprennent 36 questions et sous-questions. À partir de la décomposition en valeurs singulières d’une matrice rectangulaire, on détermine sa meilleure approximation de rang inférieur puis les vitesses possibles d’une courbe de rang fixé. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPI_sujet_MathA.pdf)
@@ -91,7 +93,7 @@ On a utilisé 9a et $\lambda_{\ell+1}>0$. Le membre de droite est positif ou nul
 Prenons pour $P$ le projecteur orthogonal sur $\operatorname{Im}M^{\mathsf T}$, espace de dimension $\ell$. Ici $M=MP$, car $M$ annule $(\operatorname{Im}M^{\mathsf T})^\perp$. La même orthogonalité qu’en 8a donne
 $$\|A-M\|_F^2=\|A(I-P)\|_F^2+\|AP-M\|_F^2
 \geq \sum_{h=1}^k\lambda_h-\sum_{h=1}^{\ell}\lambda_h.$$
-En effet $\|A\|_F^2=\operatorname{tr}(A^{\mathsf T}A)=\sum_h\lambda_h$. Il y a égalité exactement si $M=AP$ et si l’on a égalité en 9b. Ainsi $P=V_*V_*^{\mathsf T}$ et $M=U_*\Sigma_*V_*^{\mathsf T}$. Cette matrice de rang $\ell$ atteint effectivement la borne.
+En effet $\|A\|_F^2=\operatorname{tr}(A^{\mathsf T}A)=\sum_h\lambda_h$. Il y a égalité exactement si $M=AP$ et si l’on a égalité en 9b. Ainsi $P=V_*V_*^{\mathsf T}$ et $M=U_*\Sigma_*V_*^{\mathsf T}$. Cette matrice de rang $\ell$ atteint effectivement la borne. Sans l’écart spectral, la valeur minimale peut subsister avec plusieurs minimiseurs. Pour $A=I_2$ et $\ell=1$, chaque $vv^{\mathsf T}$ avec $\|v\|=1$ approche $I_2$ avec une erreur de Frobenius égale à $1$. L’égalité vient de ce que $I_2-vv^{\mathsf T}$ est un projecteur orthogonal de rang un. La décomposition précédente donne une erreur au moins égale à cette valeur pour tout $M$ de rang un.
 
 ![Figure 3 — Pour trois valeurs singulières 4, 3 et 1, la troncature au rang deux conserve les contributions 16 et 9 et laisse une erreur quadratique égale à 1.](figures/troncature.svg)
 
@@ -175,7 +177,7 @@ La projection orthogonale $\pi_A$ sur $T_A$ vérifie $B-\pi_A(B)\in T_A^\perp=N_
 
 ### Question 17
 
-Prenons le rayon de 15b. Si deux matrices $B_1,B_2$ de rang $k$ dans la boule ont même projection $\pi_A$, elles ont même image par $\varphi$ d’après 16b. Les deux matrices $B_iVV^{\mathsf T}$ sont donc égales, de même que les deux matrices $W_i=B_i^{\mathsf T}UU^{\mathsf T}$. Le projecteur oblique est le même pour les deux. Comme toutes deux vérifient (C), 16c restitue $B_1=B_2$, d’où l’injectivité.
+Prenons le rayon de 15b. Si deux matrices $B_1,B_2$ de rang $k$ dans la boule ont même projection $\pi_A$, elles ont même image par $\varphi$ d’après 16b. Les deux matrices $B_iVV^{\mathsf T}$ sont donc égales, de même que les deux matrices $W_i=B_i^{\mathsf T}UU^{\mathsf T}$. Le projecteur oblique est le même pour les deux. Comme toutes deux vérifient (C), 16c restitue $B_1=B_2$, d’où l’injectivité. Cette reconstruction se lit aussi dans des bases orthonormées adaptées à $U$ et $V$. Écrivons $\widetilde A=\bigl(\begin{smallmatrix}B&E\\ C&D\end{smallmatrix}\bigr)$, avec $B=U^{\mathsf T}\widetilde A V$ inversible au voisinage de $A$. Soustraire aux lignes du bas $CB^{-1}$ fois les lignes du haut transforme le bloc inférieur droit en $D-CB^{-1}E$ et le bloc inférieur gauche en zéro. Le rang total vaut donc $k+\operatorname{rg}(D-CB^{-1}E)$. À rang $k$ fixé, le bloc caché est nécessairement $D=CB^{-1}E$. Les trois autres blocs, exactement ceux que conserve $\pi_A$, le déterminent.
 
 ### Question 18a
 
@@ -197,4 +199,4 @@ $$\|\rho_A(\widetilde A)\|_F\leq\sqrt{(n-k)k(p-k)}\;\|\widetilde A-A\|_F\,\|P_{V
 
 ### Question 19
 
-Par 14a, tout élément de $T_A$ est une vitesse de courbe de rang $k$. Pour l’autre inclusion, soit $B(t)$ une telle courbe dérivable en zéro avec $B(0)=A$. Par 15b, (C) vaut près de zéro. Posons $L(t)=B(t)^{\mathsf T}U\Sigma^{-1}$. Ses colonnes engendrent le même espace que celles de $W(t)=B(t)^{\mathsf T}UU^{\mathsf T}$. Or $L(t)\to A^{\mathsf T}U\Sigma^{-1}=V$. La continuité de 12 entraîne donc $P_{V,W(t)}=P_{V,L(t)}\to P_{V,V}$. Enfin $\|B(t)-A\|_F=O(|t|)$ par dérivabilité. La borne de 18d donne $\|\rho_A(B(t))\|_F=o(|t|)$. Comme $\rho_A(A)=0$, la linéarité et la continuité de $\rho_A$ donnent $\rho_A(B'(0))=0$ par passage à la limite dans le taux d’accroissement. Ainsi $B'(0)\in\ker\rho_A=T_A$.
+Par 14a, tout élément de $T_A$ est une vitesse de courbe de rang $k$. Pour l’autre inclusion, soit $B(t)$ une telle courbe dérivable en zéro avec $B(0)=A$. Par 15b, (C) vaut près de zéro. Posons $L(t)=B(t)^{\mathsf T}U\Sigma^{-1}$. Ses colonnes engendrent le même espace que celles de $W(t)=B(t)^{\mathsf T}UU^{\mathsf T}$. Or $L(t)\to A^{\mathsf T}U\Sigma^{-1}=V$. La continuité de 12 entraîne donc $P_{V,W(t)}=P_{V,L(t)}\to P_{V,V}$. Enfin $\|B(t)-A\|_F=O(|t|)$ par dérivabilité. La borne de 18d donne $\|\rho_A(B(t))\|_F=o(|t|)$. Comme $\rho_A(A)=0$, la linéarité et la continuité de $\rho_A$ donnent $\rho_A(B'(0))=0$ par passage à la limite dans le taux d’accroissement. Ainsi $B'(0)\in\ker\rho_A=T_A$. En taille deux, $B(t)=\bigl(\begin{smallmatrix}1&t\\ t&t^2\end{smallmatrix}\bigr)=(1,t)^{\mathsf T}(1,t)$ a toujours rang un. Sa vitesse en zéro, $\bigl(\begin{smallmatrix}0&1\\1&0\end{smallmatrix}\bigr)$, a pourtant rang deux. La condition de tangence porte sur le coefficient inférieur droit de la vitesse : il est bien nul, car le coefficient correspondant de la courbe est $t^2$.

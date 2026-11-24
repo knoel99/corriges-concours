@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 En quatre heures, le sujet explore les bases symplectiques et les conditions sous lesquelles deux formes domptent une même structure complexe. Les 26 numéros correspondent à 35 questions et sous-questions. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathA.pdf)
@@ -156,7 +158,7 @@ Un vecteur de $F_j$ orthogonal à tout $F_j$ pour la restriction de $\omega$ est
 
 ### Question 23
 
-Factorisons le polynôme caractéristique réel comme produit des puissances de ses facteurs irréductibles distincts. Appliquons 20–22 à ces puissances, dont le produit annule $u$ par Cayley-Hamilton. Dans la somme directe obtenue, le polynôme caractéristique de la restriction à un bloc ne peut avoir d’autres racines que celles du facteur associé, qui annule ce bloc à une puissance près. Le produit des polynômes caractéristiques des blocs étant celui de $u$, chacun est exactement la puissance du facteur correspondant. Pour une valeur propre réelle de multiplicité au plus deux, la dimension du bloc est ainsi au plus deux, et nécessairement deux par 4 et 22. Une paire non réelle conjuguée de multiplicité identique un ou deux donne une dimension deux ou quatre. Les orthogonalités et les non-dégénérescences résultent de 21 et 22.
+Factorisons le polynôme caractéristique réel comme produit des puissances de ses facteurs irréductibles distincts. Appliquons 20–22 à ces puissances, dont le produit annule $u$ par Cayley-Hamilton. Dans la somme directe obtenue, le polynôme caractéristique de la restriction à un bloc ne peut avoir d’autres racines que celles du facteur associé, qui annule ce bloc à une puissance près. Le produit des polynômes caractéristiques des blocs étant celui de $u$, chacun est exactement la puissance du facteur correspondant. Pour une valeur propre réelle de multiplicité au plus deux, la dimension du bloc est ainsi au plus deux, et nécessairement deux par 4 et 22. Une paire non réelle conjuguée de multiplicité identique un ou deux donne une dimension deux ou quatre. Les orthogonalités et les non-dégénérescences résultent de 21 et 22. On peut préciser que le bloc d’une paire non réelle a nécessairement dimension quatre. Sur un plan, les deux restrictions symplectiques seraient proportionnelles par 3c et la relation de 13 ferait de $u$ un scalaire réel sur ce bloc. Cela contredirait le choix de la paire non réelle.
 
 ## IV — Deux formes domptant une même structure complexe
 
@@ -189,5 +191,9 @@ Choisissons une base $(e_i)$ de $F$ et des vecteurs $f_j$ avec $\omega(e_i,f_j)=
 Pour $t>0$, la dilatation $D_t=\operatorname{diag}(t I_F,I_H,t^{-1}I_G)$ préserve $\omega$, car les seuls couplages non nuls se trouvent entre $F$ et $G$ et à l’intérieur de $H$. Dans $u_t=D_tuD_t^{-1}$, les trois blocs strictement supérieurs sont multipliés par $t,t^2,t$. Ainsi $u_t$ tend vers la partie diagonale $u_0$. Cet automorphisme conserve la relation de 13 et le spectre de $u$ (triangularité). Ses restrictions à $H$ et à $F\oplus G$ satisfont donc le critère spectral de (F2) donné en 24. Sur $H$, de dimension strictement moindre, la récurrence donne une structure commune pour $\omega$ et $\omega(u_0\cdot,\cdot)$. Sur $F\oplus G$, les blocs diagonaux sont la matrice de $u|_F$ et sa transposée, d’après leur couplage par $-I_k$. Le polynôme caractéristique y est donc le carré d’un irréductible de degré un ou deux. La question 24 s’applique. La somme des deux structures fournit une structure $J_0$ commune sur $E$ pour le couple limite.
 
 Sur la sphère unité, $x\mapsto\omega(u_0x,J_0 x)$ admet un minimum strictement positif, et $\omega(u_tx,J_0x)$ converge uniformément vers cette fonction. Ainsi **le même** $J_0$ convient à $u_t$ lorsque $t>0$ est assez petit. Dès lors $D_t^{-1}J_0D_t$ est une structure commune pour les formes initiales, par invariance de $\omega$ sous $D_t$. La récurrence est close et les propositions (F1) et (F2) sont équivalentes.
+
+La réduction par dilatation se vérifie sur un bloc non diagonalisable. Prenons $N=\bigl(\begin{smallmatrix}1&4\\0&1\end{smallmatrix}\bigr)$ et $U=\operatorname{diag}(N,N^{\mathsf T})$. La relation de 14a est satisfaite. Le déterminant de $(1-s)I+sU$ vaut $1$ pour tout $s$, malgré la multiplicité quatre de la valeur propre $1$. Le choix $J_0=-J_4$ dompte $\omega$ mais, pour $x=(1,-1,0,0)^{\mathsf T}$, on a $\omega_1(x,J_0x)=x^{\mathsf T}U^{\mathsf T}x=-2$.
+
+La matrice symplectique $D=\operatorname{diag}(1/4,1,4,1)$ transforme par conjugaison les deux coefficients $4$ en $1$. La partie symétrique de $DUD^{-1}$ est constituée de deux blocs $\bigl(\begin{smallmatrix}1&1/2\\1/2&1\end{smallmatrix}\bigr)$, de valeurs propres $1/2$ et $3/2$. Pour le couple ainsi transformé, $J_0$ donne donc deux formes quadratiques strictement positives. En revenant aux coordonnées initiales, $D^{-1}J_0D$ est bien dompté par $\omega$ et $\omega_1$.
 
 ![Figure 7 — Dans les trois blocs du drapeau, la conjugaison multiplie chaque bloc supérieur par t ou t² et conserve les blocs diagonaux.](figures/contraction-drapeau.svg)

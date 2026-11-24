@@ -1,0 +1,99 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2014",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2014
+  },
+  "questions": 36,
+  "redaction": "Les 13 questions sur les miroirs et les 23 questions sur la machine sont traitées. Quatre figures décrivent les réflexions et les deux diagrammes thermodynamiques. Les apports de chaleur requis pendant la détente sont explicités.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_suj_phy.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_rap_ephy.pdf",
+    "rapport_sha256": "18ea33194f8b10b9c61aca10dbf483720aff76bccd29330eb13c805f78cf68d1",
+    "nature": "Sujet et rapport du second concours universitaire de l’ENS de Lyon.",
+    "sujet_sha256": "b60bf9b79068e00e0af2d9be930b0e255270e0946c02b923ad7133421afd18de"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.2",
+      "fichier": "figures/miroir-et-normale.svg",
+      "legende": "Construction avec une hauteur finie. Les trois angles sont les inclinaisons des supports AI, CI et A′I sur l’axe."
+    },
+    {
+      "numero": 2,
+      "question": "I.12",
+      "fichier": "figures/deux-reflexions.svg",
+      "legende": "Trajet paraxial pour k = 0,79. Le rayon se réfléchit sur M₁ puis sur M₂ et ressort par l’ouverture centrale de M₁. Le dessin sépare visuellement les miroirs."
+    },
+    {
+      "numero": 3,
+      "question": "II.16",
+      "fichier": "figures/cycle-pt.svg",
+      "legende": "Cycle orienté dans le plan température–pression. Le rapport des pressions a été amplifié pour la lisibilité."
+    },
+    {
+      "numero": 4,
+      "question": "II.17",
+      "fichier": "figures/cycle-pv.svg",
+      "legende": "Cycle orienté dans le plan volume–pression. Les côtés courbes sont des isothermes. Le rapport des pressions a été amplifié pour la lisibilité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Les 13 questions sur les miroirs et les 23 questions sur la machine sont traitées. Quatre figures décrivent les réflexions et les deux diagrammes thermodynamiques. Les apports de chaleur requis pendant la détente sont explicités.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "I.13",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17",
+      "II.18",
+      "II.19",
+      "II.20",
+      "II.21",
+      "II.22",
+      "II.23"
+    ]
+  }
+}

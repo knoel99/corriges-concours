@@ -89,6 +89,18 @@
       "perimetre": "Comparaison des 36 réponses au sujet et au rapport 2018. Vérification des rangs et des tailles, du cas d’égalité de la meilleure approximation et de la limite tangentielle.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 36 réponses et six figures dans les deux éditions. Rôle de l’écart spectral, reconstruction par le bloc inversible, courbe de rang un à vitesse de rang deux et composante normale quadratique.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

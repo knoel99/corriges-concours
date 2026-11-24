@@ -6,13 +6,15 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
-Les 16 numéros de l’épreuve de quatre heures comportent 33 questions et sous-questions. Le problème relie l’entrelacement des valeurs propres d’un bloc principal aux diagonales réalisables sur une orbite orthogonale et en donne une description géométrique en dimension trois. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp_sujet_mathsA_xlcr.pdf)
+Les 16 numéros de l’épreuve de quatre heures comportent 33 questions et sous-questions. Le problème relie l’entrelacement des valeurs propres d’un bloc principal aux diagonales réalisables sur une orbite orthogonale et en donne une description géométrique en dimension trois. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp_sujet_mathsA_xlcr.pdf) · [Rapport du jury reproduit par Bibmath](https://www.bibmath.net/pbs/x/xmp_2015_1_rapport.pdf)
 
 ## Préliminaires — Conjugaison et enlacement
 
-Les matrices symétriques et orthogonales sont réelles. On dit que deux listes décroissantes sont enlacées si $\lambda_j\geq\mu_j\geq\lambda_{j+1}$ pour chaque indice ; l’enlacement est strict si les deux inégalités le sont.
+Les matrices symétriques et orthogonales sont réelles. L’introduction du sujet imprimé emploie le mot « complexes » pour décrire $M_{r,n}(\mathbb R)$. La notation et le théorème spectral invoqué à la question 2 imposent le corps réel. Sur $\mathbb C$, la matrice symétrique $\bigl(\begin{smallmatrix}1&i\\i&-1\end{smallmatrix}\bigr)$ est non nulle et de carré nul. Elle a les mêmes valeurs propres que la matrice nulle, et ne lui est pourtant pas semblable. On dit que deux listes décroissantes sont enlacées si $\lambda_j\geq\mu_j\geq\lambda_{j+1}$ pour chaque indice ; l’enlacement est strict si les deux inégalités le sont.
 
 ### Question 1a
 
@@ -248,7 +250,9 @@ Montrons que le spectre ordonné est continu sur les matrices symétriques réel
 
 #### Solution
 
-Pour le $n$-uplet strictement enlacé fixé, prenons $Q_0=\prod_j(X-\mu_j)$ et $P=\chi_M$. Par 5a et 5c, la décomposition donne un réel $a$ et des $\alpha_j>0$. Formons la matrice symétrique bordée de bloc $\Delta(\mu)$, de dernière colonne $(\sqrt{\alpha_1},\ldots,\sqrt{\alpha_n},a)^{\mathsf T}$. Le calcul de 9b donne exactement $P$ comme polynôme caractéristique. Par 2, cette matrice est orthogonalement semblable à $M$. Le spectre du bloc principal est le $n$-uplet voulu, donc il appartient à $C_M$.
+Pour le $n$-uplet strictement enlacé fixé, prenons $Q_0=\prod_j(X-\mu_j)$ et $P=\chi_M$. Par 5a et 5c, la décomposition donne un réel $a$ et des $\alpha_j>0$. Formons la matrice symétrique bordée de bloc $\Delta(\mu)$, de dernière colonne $(\sqrt{\alpha_1},\ldots,\sqrt{\alpha_n},a)^{\mathsf T}$. Le calcul de 9b donne exactement $P$ comme polynôme caractéristique. Par 2, cette matrice est orthogonalement semblable à $M$. Le spectre du bloc principal est le $n$-uplet voulu, donc il appartient à $C_M$. Prenons $\lambda=(3,1,-2)$ et $\mu=(2,0)$. La trace impose $a=0$. Pour obtenir $P=(X-3)(X-1)(X+2)$, on calcule $\alpha_j=-P(\mu_j)/Q_0'(\mu_j)$, soit $2$ puis $3$. D’où la matrice
+$$\begin{pmatrix}2&0&\sqrt2\\0&0&\sqrt3\\\sqrt2&\sqrt3&0\end{pmatrix}.$$
+Son polynôme caractéristique est bien $X^3-2X^2-5X+6$, et son bloc principal a le spectre choisi.
 
 ### Question 11b
 
@@ -453,6 +457,7 @@ Si $j=1$, les deux valeurs restantes sont $w\geq m_2$ par la seconde inégalité
 
 Les questions 16a, 16b et 16d donnent, après permutation, $D_M=\{m\in H:\lambda_3\leq m_i\leq\lambda_1\ \forall i\}$. C’est la section du cube $[\lambda_3,\lambda_1]^3$ par le plan de trace nulle. Un sommet de cette section doit saturer au moins deux bornes sur des coordonnées distinctes, puisqu’une seule borne laisse une direction de déplacement dans le plan. Deux bornes supérieures sont impossibles car $-2\lambda_1<\lambda_3$, et deux bornes inférieures car $-2\lambda_3>\lambda_1$. Ces inégalités traduisent la stricte séparation des valeurs propres et la trace nulle. Ainsi un sommet a pour coordonnées $\lambda_1$, $\lambda_3$ et la troisième valeur imposée $-\lambda_1-\lambda_3=\lambda_2$. Les six permutations distinctes ont effectivement deux contraintes actives indépendantes, ce sont donc les six sommets. La section a un intérieur relatif (elle contient zéro strictement) et son image par l’isomorphisme $\varphi$ est un hexagone. Ses sommets sont les six vecteurs
 $$(\lambda_{\sigma(1)}-\lambda_{\sigma(2)})\omega_1+(\lambda_{\sigma(2)}-\lambda_{\sigma(3)})\omega_2,\qquad \sigma\in\mathfrak S_3.$$
+Posons $a=\lambda_1-\lambda_2$ et $b=\lambda_2-\lambda_3$. Le sommet $a\omega_1+b\omega_2$ a pour voisins ses images par les deux réflexions de 14. Les distances aux axes étant $b\sin(\pi/3)$ et $a\sin(\pi/3)$, les côtés ont alternativement pour longueurs $\sqrt3\,b$ et $\sqrt3\,a$. L’hexagone est régulier exactement lorsque $a=b$, donc lorsque $\lambda_2=0$ sous l’hypothèse de trace nulle. Sur la figure, les écarts valent $4$ et $1$.
 
 ![Figure 6 — Les six permutations du spectre (3, −1, −2) donnent les sommets de l’hexagone. En vert figure le quadrilatère des diagonales décroissantes.](figures/hexagone.svg)
 

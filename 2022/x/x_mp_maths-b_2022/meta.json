@@ -1,0 +1,51 @@
+{
+  "slug": "x_mp_maths-b_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2022
+  },
+  "questions": 41,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20ECRIT%20DE%20MATHS%20B%20%28X%29.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20MATHS%20B%20%28X%29.pdf",
+    "sha256_sujet": "793338169627c8a6734707005e66ba1d534f36e5030914316fd84e5f7c2ebf6a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/indices-pairs-impairs.svg",
+      "question": "2b",
+      "legende": "Pour N = 2, les deux sommes finies couvrent les indices de −4 à 5. Le dernier indice donne le terme de bord."
+    },
+    {
+      "fichier": "figures/extraction-diagonale.svg",
+      "question": "12c",
+      "legende": "Chaque étape conserve les coordonnées déjà convergentes et fixe celle entourée. Pour une colonne donnée, toutes les étapes suivantes en préservent la limite."
+    },
+    {
+      "fichier": "figures/troncature-premiere.svg",
+      "question": "16",
+      "legende": "Dans 924 = 2² × 3 × 7 × 11, le premier 5 ne change aucun facteur. Après 11, la troncature égale définitivement 924. L’axe vertical est logarithmique."
+    },
+    {
+      "fichier": "figures/probabilite-pgcd-un.svg",
+      "question": "21",
+      "legende": "Pour deux tirages indépendants, les points donnent les probabilités exactes obtenues en comptant les couples. Leur limite est voisine de 0,608."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 41 réponses des quatre parties, des indications distinctes et de quatre figures originales. Vérification sur les six pages de questions et les sept pages du rapport, des sommes finies symétriques à la loi limite du PGCD.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, autres tirages du jury)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, autres tirages du jury)",
+  "questions": 0,
+  "tirages": 5,
+  "sujets": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_philosophie.pdf#page=7",
+    "sujet_sha256": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_philosophie.pdf",
+    "rapport_sha256": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54"
+  },
+  "figures": [
+    {
+      "fichier": "figures/souverainete.svg",
+      "question": "1",
+      "legende": "Qui agit au nom du souverain ?"
+    },
+    {
+      "fichier": "figures/precaution.svg",
+      "question": "3",
+      "legende": "Décider sous incertitude environnementale"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 10 propositions argumentées, de 10 questions et réponses pour l’entretien et de 2 schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des intitulés, de leur groupement et des consignes aux documents du jury. Vérification de la portée des arguments, des exemples et des références philosophiques."
+    }
+  ]
+}

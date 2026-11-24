@@ -9,7 +9,8 @@
   "questions": 33,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp_sujet_mathsA_xlcr.pdf"
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp_sujet_mathsA_xlcr.pdf",
+    "rapport_jury": "https://www.bibmath.net/pbs/x/xmp_2015_1_rapport.pdf"
   },
   "date_revision": "2026-11-24",
   "figures": [
@@ -88,6 +89,18 @@
       "perimetre": "Vérification des 33 réponses sur le sujet officiel. Relecture croisée de la construction par deux mélanges de coordonnées et de la caractérisation de l’hexagone des diagonales. Aucun rapport institutionnel de cette épreuve n’a été identifié dans le catalogue de sources.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 33 réponses et six figures sur le sujet et sur deux copies du rapport du jury. Coquille du corps des scalaires, construction numérique par bordage et longueurs alternées des côtés de l’hexagone.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
