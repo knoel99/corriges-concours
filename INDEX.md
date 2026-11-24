@@ -141,6 +141,8 @@
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2017 | BEL | AL | Allemand (commentaire et traduction) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/guide.md) |
+| 2017 | BEL | AL | Allemand (thème Lyon) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (commentaire et traduction) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (thème Lyon) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
@@ -190,6 +192,7 @@
 | 2024 | BEL | AL | Histoire contemporaine | [md](2024/bel/bel_al_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_al_histoire-contemporaine_2024/guide.md) |
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
+| 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 16 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire de la musique | [md](2026/bel/bel_al_histoire-de-la-musique_2026/brut.md) | [md](2026/bel/bel_al_histoire-de-la-musique_2026/guide.md) |
 | 2026 | BEL | AL | Histoire et théorie des arts | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/brut.md) | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/guide.md) |
 | 2026 | BEL | AL | Italien (commentaire et traduction) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/guide.md) |
@@ -538,6 +541,7 @@
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
+| 2016 | ENS de Lyon | Second concours | Informatique | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/guide.md) |
 | 2017 | ENS de Lyon | Second concours | Informatique | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_informatique_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_informatique_2017/guide.md) |
 | 2018 | ENS de Lyon | Second concours | Informatique | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_informatique_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_informatique_2018/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Informatique | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_informatique_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_informatique_2019/guide.md) |
@@ -599,6 +603,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2022 | ENS | PC | Chimie B | [md](2022/ens/ens_pc_chimie-b_2022/brut.md) | [md](2022/ens/ens_pc_chimie-b_2022/guide.md) |
 | 2023 | ENS | PC | Chimie B | [md](2023/ens/ens_pc_chimie-b_2023/brut.md) | [md](2023/ens/ens_pc_chimie-b_2023/guide.md) |
 | 2024 | ENS | PC | Chimie B | [md](2024/ens/ens_pc_chimie-b_2024/brut.md) | [md](2024/ens/ens_pc_chimie-b_2024/guide.md) |
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
@@ -886,6 +891,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2017 | X-ENS | PSI | Sciences industrielles | [md](2017/x-ens/x-ens_psi_sciences-industrielles_2017/brut.md) | [md](2017/x-ens/x-ens_psi_sciences-industrielles_2017/guide.md) |
 | 2018 | X-ENS | PSI | Sciences industrielles | [md](2018/x-ens/x-ens_psi_sciences-industrielles_2018/brut.md) | [md](2018/x-ens/x-ens_psi_sciences-industrielles_2018/guide.md) |
 | 2019 | X-ENS | PSI | Sciences industrielles | [md](2019/x-ens/x-ens_psi_sciences-industrielles_2019/brut.md) | [md](2019/x-ens/x-ens_psi_sciences-industrielles_2019/guide.md) |
 | 2020 | X-ENS | PSI | Sciences industrielles | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/brut.md) | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/guide.md) |
