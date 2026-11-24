@@ -114,6 +114,7 @@
 | 2026 | BEL | AL | Anglais (version et thème Ulm) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Arabe (commentaire et traduction) | [md](2026/bel/bel_al_arabe-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_arabe-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Arabe (thème Lyon) | [md](2026/bel/bel_al_arabe-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_arabe-theme-lyon_2026/guide.md) |
+| 2026 | BEL | AL | Commentaire de carte géographique (Lyon) | [md](2026/bel/bel_al_commentaire-de-carte-geographique-lyon_2026/brut.md) | [md](2026/bel/bel_al_commentaire-de-carte-geographique-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
@@ -126,9 +127,11 @@
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
+| 2026 | BEL | AL | Explication de documents historiques (Lyon) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/brut.md) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/guide.md) |
 | 2024 | BEL | AL | Géographie | [md](2024/bel/bel_al_geographie_2024/brut.md) | [md](2024/bel/bel_al_geographie_2024/guide.md) |
 | 2025 | BEL | AL | Géographie | [md](2025/bel/bel_al_geographie_2025/brut.md) | [md](2025/bel/bel_al_geographie_2025/guide.md) |
 | 2026 | BEL | AL | Géographie | [md](2026/bel/bel_al_geographie_2026/brut.md) | [md](2026/bel/bel_al_geographie_2026/guide.md) |
+| 2026 | BEL | AL | Géographie (option Ulm) | [md](2026/bel/bel_al_geographie-option-ulm_2026/brut.md) | [md](2026/bel/bel_al_geographie-option-ulm_2026/guide.md) |
 | 2024 | BEL | AL | Histoire contemporaine | [md](2024/bel/bel_al_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_al_histoire-contemporaine_2024/guide.md) |
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
