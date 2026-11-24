@@ -8,11 +8,15 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Montesquieu examine les effets du commerce dans De l’Esprit des lois (1748, livre XX, chapitre II). L’essai personnel est libre, sans limite de mots.
 
 ## A1 · La thèse et ses étapes
 
-Montesquieu déplace l’analyse du commerce d’une échelle à une autre. Entre deux nations, l’intérêt de vendre rencontre l’intérêt d’acheter ; la paix permet de poursuivre l’échange. Entre particuliers, en revanche, l’habitude de fixer le prix de chaque service peut étouffer les gestes de générosité. Le raisonnement se nuance encore : le commerce favorise le respect exact de ce qui est dû, tandis que son absence peut laisser place au vol sans exclure l’hospitalité. Aucune de ces deux organisations ne réunit donc à elle seule toutes les vertus.
+Montesquieu déplace l’analyse du commerce d’une échelle à une autre. Entre deux nations, l’intérêt de vendre rencontre l’intérêt d’acheter ; la paix permet de poursuivre l’échange. Entre particuliers, en revanche, l’habitude de fixer le prix de chaque service peut étouffer les gestes de générosité. Le raisonnement se nuance encore : le commerce favorise le respect exact de ce qui est dû, tandis que les peuples qu’il qualifie de brigands peuvent, selon lui, pratiquer admirablement l’hospitalité. Aucune de ces deux organisations ne réunit donc à elle seule toutes les vertus.
+
+![Deux effets de l’esprit de commerce.](figures/deux-echelles.svg)
 
 ## A2a · L’effet pacificateur du commerce
 
@@ -24,7 +28,7 @@ Des partenaires habitués aux transactions doivent s’accorder sur ce qui revie
 
 ## A3 · Besoins mutuels et formation des nations
 
-La question imprimée parle de « nations », là où le texte évoquait les « unions ». Je répondrais différemment selon que l’on cherche le fondement d’une relation entre deux peuples ou celui d’une nation elle-même. Des besoins partagés peuvent faire durer une alliance et créer des institutions communes, comme lorsque des municipalités voisines doivent se partager un cours d’eau. Mais une langue pratiquée ensemble, la mémoire d’une épreuve ou l’attachement à une constitution peuvent aussi faire tenir un groupe. Je considère l’interdépendance comme un principe important de rapprochement ; elle ne suffit pas à elle seule à expliquer toutes les appartenances nationales.
+La question imprimée parle de « nations », là où le texte évoquait les « unions ». Je répondrais différemment selon que l’on cherche le fondement d’une relation entre deux peuples ou celui d’une nation elle-même. Des besoins réciproques peuvent soutenir des institutions communes à plusieurs nations. Ainsi, des États riverains d’un même fleuve peuvent organiser ensemble le partage de son eau tout en conservant chacun leur identité politique. Mais une langue pratiquée ensemble, la mémoire d’une épreuve ou l’attachement à une constitution peuvent aussi faire tenir un groupe. Je considère l’interdépendance comme un principe important de rapprochement ; elle ne suffit pas à elle seule à expliquer toutes les appartenances nationales.
 
 ## B · Les échanges et l’hospitalité
 

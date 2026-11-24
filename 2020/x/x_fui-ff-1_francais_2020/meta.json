@@ -27,7 +27,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20DE%20FRANCAIS%20Session%201.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "10b18d6eb16186dd8a2564ec440832b5d0a074e124e314caaf675516e9f63928"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -73,6 +74,17 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Texte de Rousseau, consignes de compréhension, argumentation sur le voyage et essai de la seconde partie vérifiés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des cinq réponses de compréhension, des trois formules à expliquer et de l’essai face au texte de Rousseau. Vérification de l’induction, de l’exemple national et de la date réelle de l’épreuve.",
+      "fournisseur": "codex"
     }
   ],
   "provenance": {
@@ -85,10 +97,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   }
 }

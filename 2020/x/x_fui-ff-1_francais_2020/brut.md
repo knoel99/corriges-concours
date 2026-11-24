@@ -8,7 +8,9 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. L’extrait de l’Émile (1762) invite à discuter l’observation des hommes et la lecture des récits de voyage. La compréhension et l’essai de forme libre valent dix points chacun.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. La session d’automne du concours 2020 s’est tenue le 13 septembre 2019. L’extrait de l’Émile (1762) invite à discuter l’observation des hommes et la lecture des récits de voyage. La compréhension et l’essai de forme libre valent dix points chacun.
 
 ## A1 · La fonction éducative des voyages
 
@@ -16,7 +18,9 @@ Voyager sert à confronter ce que l’on croit savoir des autres peuples à des 
 
 ## A2 · Les arguments de Rousseau
 
-Rousseau commence par un paradoxe. Les nombreux livres de voyage imprimés en France ne garantissent pas que leurs lecteurs connaissent mieux les peuples étrangers. Les récits divergent et ses propres observations ont parfois contredit ses lectures. Il change ensuite la manière de poser le problème : celui qui veut connaître les hommes peut-il s’en tenir au seul groupe dans lequel il a grandi ? Enfin, la comparaison peut se faire sur plusieurs cas sans exiger de rencontrer tous les individus de chaque pays. L’auteur appelle induction ce passage des observations particulières à une proposition plus générale. L’exemple des « dix Français » exprime sa confiance dans cette démarche, sans établir un seuil statistique.
+Rousseau commence par un paradoxe. Les nombreux livres de voyage imprimés en France ne garantissent pas que leurs lecteurs connaissent mieux les peuples étrangers. Il dit n’avoir jamais trouvé deux voyageurs qui lui donnent la même idée d’un peuple. La comparaison avec ses propres observations le conduit à délaisser ces récits. Il change ensuite la manière de poser le problème : celui qui veut connaître les hommes peut-il s’en tenir au seul groupe dans lequel il a grandi ? Enfin, la comparaison peut se faire sur plusieurs cas sans exiger de rencontrer tous les individus de chaque pays. L’auteur appelle induction ce passage des observations particulières à une proposition plus générale. La généralisation est particulièrement forte pour les Français. Rousseau en limite aussitôt la portée en faisant une réserve pour les Anglais. Le nombre dix illustre sa maxime sans établir un seuil statistique.
+
+![Comment Rousseau justifie la comparaison.](figures/savoir-et-observer.svg)
 
 ## A3a · L’abus des livres
 

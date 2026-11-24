@@ -27,7 +27,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20S1%20SUJET%20ECRIT%20DE%20FRANCAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "b717e559f382a538bdcb462837232624219ea687ac8a3ae09f56dc9b06a19dbf"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -73,6 +74,17 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Bachelard : consignes de 2021, texte, citation exacte et distinction entre réussite pratique et preuve."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des trois questions de Bachelard et de l’essai, différence entre coïncidence factuelle et justification, chronologie de la session et formation du problème scientifique.",
+      "fournisseur": "codex"
     }
   ],
   "provenance": {
@@ -85,10 +97,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   }
 }

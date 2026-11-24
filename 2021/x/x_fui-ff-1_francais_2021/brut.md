@@ -8,7 +8,9 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le sujet présente un extrait de La Formation de l’esprit scientifique (1938). La compréhension et l’essai de forme libre valent dix points chacun.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. L’épreuve d’automne du concours 2021 a été passée le 19 octobre 2020. Le sujet présente un extrait de La Formation de l’esprit scientifique (1938). La compréhension et l’essai de forme libre valent dix points chacun.
 
 ## A1 · La thèse et une phrase qui la résume
 
@@ -16,7 +18,9 @@ Bachelard oppose deux manières de se rapporter aux choses. L’opinion leur att
 
 ## A2 · Le sens de « en droit »
 
-« En droit » porte sur le titre auquel on prétend savoir. Si je dis qu’un objet lourd tombera parce qu’il me paraît fait pour aller vers le bas, je peux annoncer correctement ce qui se produira lors d’un essai. Cette réussite ne valide pas la raison que je donne. Ainsi, l’opinion peut avoir raison sur le fait et tort de revendiquer le statut de connaissance. Pour Bachelard, le travail scientifique doit reconstruire même un résultat qui nous paraissait aller de soi.
+« En droit » porte sur le titre auquel on prétend savoir. Si je dis qu’un objet lourd tombera parce qu’il me paraît fait pour aller vers le bas, je peux annoncer correctement ce qui se produira lors d’un essai. Cette réussite ne valide pas la raison que je donne. Ainsi, l’opinion peut tomber juste sur le fait. Ce qui lui manque en droit, c’est la justification : si la science confirme le résultat, elle le fait pour d’autres raisons, qui peuvent être exposées et discutées. Pour Bachelard, le travail scientifique doit reconstruire même un résultat qui nous paraissait aller de soi.
+
+![Un résultat juste peut être mal justifié.](figures/reussite-et-preuve.svg)
 
 ## A3 · Les conditions de l’esprit scientifique
 
