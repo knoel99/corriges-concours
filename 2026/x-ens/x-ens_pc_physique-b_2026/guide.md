@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** *De la topologie dans les ondes : de la matière condensée à El Niño.* Le sujet part d'un objet de cours, la chaîne de masses et de ressorts, et va jusqu'à une notion de recherche : l'**invariant topologique** d'une structure de bandes et la **correspondance volume-bord**, qui prédit le nombre de modes piégés à une interface.
@@ -66,7 +68,7 @@ $$\boxed{m\,\ddot u_n=\beta\,(u_{n+1}+u_{n-1}-2u_n)}$$
 > Faire apparaître la longueur à vide dans l'allongement. La position d'équilibre de la masse $n$ est $na$ : la longueur du ressort de droite est $a+u_{n+1}-u_n$, et la longueur à vide $a$ disparaît de l'allongement.
 
 > [!PIEGE]
-> Erreur de signe classique : écrire la force du ressort de gauche $+\beta(u_n-u_{n-1})$. Contrôle immédiat : une translation d'ensemble ($u_n$ tous égaux) ne doit produire aucune force.
+> Pour vérifier le signe des forces, déplacer seulement la masse $n$ vers la droite de $u_n>0$. Le ressort gauche est étiré, le droit comprimé et tous deux rappellent la masse vers la gauche. On doit trouver $-2\beta u_n$.
 
 > [!JURY]
 > Le rapport 2026 note que « Beaucoup trop de candidats se sont révélés incapables d'établir correctement l'expression de l'allongement relatif d'un ressort dans une chaîne discrète. » Il relève des expressions qui dépendent encore de la longueur à vide, signe d'une confusion entre déplacement absolu et variation de longueur.
@@ -170,7 +172,7 @@ Sur $[0,\pi/a]$, $v_g=a\sqrt{\beta/m}\cos(ka/2)$, donc
 
 $$\boxed{v_g\left(\pm\frac{\pi}{a}\right)=0}$$
 
-Les ondes de bord de zone ne transportent pas d'énergie. Pour $\lambda=2a$, deux masses voisines sont en opposition de phase. Les ondes $k=\pi/a$ et $k=-\pi/a$, qui décrivent le même mouvement, se superposent en une **onde stationnaire**.
+Au bord de zone, $e^{i\pi n}=e^{-i\pi n}=(-1)^n$. Les deux écritures désignent un seul mode, de déplacement réel $u_n(t)=(-1)^n U\cos(\omega t)$ après choix de l’origine des temps. Les masses voisines oscillent en opposition. Ce mode est stationnaire et le flux moyen d’énergie est nul.
 
 C'est la condition de Bragg : les ondes réfléchies par chaque maille interfèrent constructivement.
 
@@ -223,7 +225,7 @@ $$\boxed{k''=\pm\frac2a\,\mathrm{argch}\frac\alpha2}$$
 
 Alors $\underline{u_n}=\underline{U_0}(-1)^ne^{-k''na}e^{-i\omega t}$ a pour module $\lvert U_0\rvert e^{-k''na}$.
 
-L'énergie est injectée en $n=0$ : une amplitude qui croît exponentiellement loin de la source n'est pas physique. On garde donc **$k''>0$ pour $n>0$** et **$k''<0$ pour $n<0$**.
+La source impose le déplacement en $n=0$. L’amplitude doit rester bornée de chaque côté de la chaîne, ce qui impose $k''>0$ pour $n>0$ et $k''<0$ pour $n<0$.
 
 > [!METHODE]
 > Devant deux racines $\pm k''$, on choisit toujours par une condition physique à l'infini : solution bornée, ou énergie venant de la source. C'est le même raisonnement que pour l'onde évanescente en réflexion totale ou dans un plasma.
@@ -266,7 +268,7 @@ La solution n'est définie que pour $n$ entier : on trace des **points**, un par
 
 #### Solution
 
-Toutes les masses oscillent en phase ou en opposition de phase avec la source. La phase n'avance pas avec $n$, aucun front d'onde ne se déplace, et l'amplitude décroît exponentiellement.
+En régime harmonique établi, le facteur spatial $(-1)^n e^{-|n|a/\ell}$ est réel. Toutes les masses passent par leur position d’équilibre au même instant, les voisines oscillant en opposition. L’amplitude décroît sur la longueur $\ell$.
 
 La puissance moyenne transmise d'une masse à l'autre est nulle, car force et vitesse sont en quadrature. On parle donc d'onde **évanescente**.
 
@@ -277,7 +279,7 @@ $$\boxed{\begin{aligned}
 \omega>2\sqrt{\beta/m}&\ :\ \text{évanescentes}
 \end{aligned}}$$
 
-La chaîne se comporte en filtre mécanique passe-bas.
+Les bornes appartiennent à la bande des $k$ réels. À $\omega=0$, la chaîne peut subir une translation uniforme statique. À $\omega=2\sqrt{\beta/m}$, on retrouve le mode stationnaire de la Q6.
 
 > [!JURY]
 > Le rapport 2026 est net : « Les définitions précises d'une onde évanescente et d'une onde amortie et la distinction qui en découle devraient être connues. »
@@ -300,7 +302,7 @@ Le ressort $\beta_2$ relie chaque masse paire à la masse impaire qui la précè
 $$\boxed{\begin{aligned}m\,\ddot u_{2n}&=\beta_1(u_{2n+1}-u_{2n})+\beta_2(u_{2n-1}-u_{2n})\\ m\,\ddot u_{2n+1}&=\beta_2(u_{2n+2}-u_{2n+1})+\beta_1(u_{2n}-u_{2n+1})\end{aligned}}$$
 
 > [!PIEGE]
-> Inverser $\beta_1$ et $\beta_2$ ne change pas la relation de dispersion (Q11), mais change le signe de $d_y$ et la valeur de $\nu$ en section 3. Il faut lire la figure.
+> Si on échange les deux raideurs, le coefficient de $-\sin(2ka)$ dans $d_y$ devient $\omega_1^2$ au lieu de $\omega_2^2$. La position de l’origine par rapport au cercle de la Q18 change pour $\omega_1\ne\omega_2$, et avec elle l’indice d’enroulement.
 
 ### Question 9
 
@@ -325,7 +327,7 @@ $$\begin{aligned}\omega^2U_0&=(\omega_1^2+\omega_2^2)U_0-(\omega_1^2+\omega_2^2e
 
 $$\boxed{\mathbf D(k)=\begin{pmatrix}\omega_1^2+\omega_2^2 & -(\omega_1^2+\omega_2^2e^{-2ika})\\ -(\omega_1^2+\omega_2^2e^{2ika}) & \omega_1^2+\omega_2^2\end{pmatrix}}$$
 
-$\mathbf D$ est hermitienne, donc les $\omega^2$ sont réels.
+Pour $k$ réel, les éléments hors diagonale sont conjugués. La matrice $\mathbf D(k)$ est hermitienne et ses valeurs propres $\omega^2$ sont réelles.
 
 ### Question 10
 
@@ -368,12 +370,12 @@ La relation ne dépend que de $\omega_1^2+\omega_2^2$, $\omega_1^4+\omega_2^4$ e
 - À $\omega_2$ fixé, les spectres ne coïncident pas. Le gap vaut environ $]0{,}94\,\omega_2;1{,}41\,\omega_2[$ pour $2/3$.
 - Pour $3/2$, il vaut environ $]1{,}41\,\omega_2;2{,}12\,\omega_2[$. Le second spectre est l'image du premier par une homothétie de rapport $3/2$ : même forme, autre échelle.
 
-Surtout, les deux chaînes sont **physiquement différentes**. Pour $\omega_1/\omega_2=2/3$, le ressort raide $\beta_2$ relie deux mailles ; pour $3/2$, il est à l'intérieur de la maille $(2n,2n+1)$.
+À maille $(2n,2n+1)$ fixée, le ressort fort relie deux mailles pour $\omega_1<\omega_2$ et se trouve à l’intérieur de la maille pour $\omega_1>\omega_2$.
 
 Pour une chaîne infinie, ce n'est qu'un choix de maille : la décaler d'un site échange $\beta_1$ et $\beta_2$, et le spectre de volume ne peut pas faire la différence. Elle se lit sur les vecteurs propres, par la phase du terme non diagonal de $\mathbf D$. Elle devient observable dès que la chaîne a un bord ou une interface, puisque le ressort terminal fixe alors la maille. La section 3 la mesure par l'invariant $\nu$.
 
 > [!PIEGE]
-> Conclure de la symétrie de la formule que « les deux cas sont identiques ». La symétrie dit seulement que le spectre ne distingue pas les deux chaînes ; elle ne dit pas qu'elles sont équivalentes, et la suite du sujet repose sur leur différence.
+> Avec les mêmes deux raideurs échangées, un décalage d’un site superpose les deux chaînes infinies. À une jonction donnée, la position du ressort fort par rapport à l’interface a un effet observable en Q20 et Q21.
 
 > [!JURY]
 > Le rapport 2026 constate que la plupart des candidats ont vu le rôle symétrique de $\omega_1$ et $\omega_2$, mais ajoute qu'« il n'y a aucune raison pour que l'estimation de $\omega_2$ dans le cas où $\omega_1/\omega_2 = 2/3$ donne le même résultat que si $\omega_1/\omega_2 = 3/2$ ». Il faut donc dire précisément ce qui est identique et ce qui ne l'est pas.
@@ -537,10 +539,11 @@ On a $-\pi/(2a)\equiv\pi/(2a)$ dans la zone de Brillouin.
 
 #### Solution
 
-On pose $S=\omega_1^2+\omega_2^2$.
+Posons $A=\omega_1^2$ et $B=\omega_2^2$. Le déterminant de la Q10 donne, pour $k$ réel ou complexe,
 
-- $k'=0$ : $\cos(2\underline ka)=\mathrm{ch}(2k''a)>1$, et le radicande dépasse $S^2$. On obtient $\omega^2<0$ (exclu) ou $\omega^2>2S$ : au-dessus de la bande optique, pas dans le gap.
-- $k'=\pi/(2a)$ : $\cos(2\underline ka)=-\mathrm{ch}(2k''a)<-1$, et le radicande est inférieur à $(\omega_1^2-\omega_2^2)^2$. Donc $\omega^2\in]2\min(\omega_1^2,\omega_2^2),2\max(\omega_1^2,\omega_2^2)[$ : c'est exactement le gap.
+$$1+\cos(2\underline k a)=\frac{(\omega^2-2A)(\omega^2-2B)}{2AB}.$$
+
+Dans la bande interdite, $\omega^2$ est strictement compris entre $2A$ et $2B$. Le produit du numérateur est négatif et $\cos(2\underline k a)<-1$. Pour $k'=0$ on obtiendrait $+\mathrm{ch}(2k''a)$. Pour $k'=\pi/(2a)$ on obtient $-\mathrm{ch}(2k''a)$, qui prend toute valeur inférieure à $-1$ pour une unique valeur de $|k''|>0$.
 
 $$\boxed{\text{seule }k'=\pi/(2a)\text{ convient}}$$
 
@@ -558,7 +561,7 @@ u_{2n}&=U_0(-1)^ne^{-2k''na}\cos\omega t\\
 u_{2n+1}&=U_1(-1)^ne^{-2k''na}\cos\omega t
 \end{aligned}}$$
 
-Quand le dénominateur est non nul, la première équation de la Q9 donne un rapport réel $U_1/U_0=(S-\omega^2)/(\omega_1^2-\omega_2^2e^{2k''a})$. Si les deux membres se réduisent à zéro, la seconde équation fixe la polarisation ; l’un des sous-réseaux peut rester immobile.
+Posons $S=\omega_1^2+\omega_2^2$. Quand le dénominateur est non nul, la première équation de la Q9 donne un rapport réel $U_1/U_0=(S-\omega^2)/(\omega_1^2-\omega_2^2e^{2k''a})$. Si les deux membres se réduisent à zéro, la seconde équation fixe la polarisation ; l’un des sous-réseaux peut rester immobile.
 
 | maille $n$ | $0$ | $1$ | $2$ | $3$ |
 |---|---|---|---|---|
@@ -589,9 +592,9 @@ Pour le tracé, prenons $\omega_1=2\Omega$, $\omega_2=3\Omega$ et $q=e^{-2k''a}=
 
 Posons $x=\delta\omega/\omega_0$. Les deux limites du gap ont pour pulsations $\sqrt2\,\omega_0(1+x)$ et $\sqrt2\,\omega_0(1-x)$ (Q13.2). Elles sont des droites en $x$. L’abscisse du sujet est le rapport $r=\omega_1/\omega_2$, pour lequel $x=(r-1)/(r+1)$. Les limites se croisent à $r=1$. Le sommet de la bande optique vaut $\sqrt{2(\omega_1^2+\omega_2^2)}=2\omega_0\sqrt{1+x^2}$ (Q13.1).
 
-Justification. Chaque branche varie continûment et de façon monotone entre sa valeur en $k=0$ et sa valeur en bord de zone (Q13–14). Toute pulsation comprise entre ces deux valeurs est donc atteinte pour un $k$ réel : l'onde se propage. Au-dehors, aucun $k$ réel ne convient, et la Q15 montre que $\underline k$ a une partie imaginaire non nulle : l'onde est évanescente.
+Sur chaque branche, $\omega$ varie continûment du centre au bord de zone. Les intervalles fermés ci-dessous sont donc exactement ceux où $k$ peut être réel. En dehors, la réponse harmonique décroît exponentiellement en s’éloignant de la source. Aux extrémités des bandes séparées, la translation à $\omega=0$ est statique et les extrema de pulsation non nulle ont une vitesse de groupe nulle.
 
-- **Bandes de propagation (zones grises)** : $[0,\sqrt2\min(\omega_1,\omega_2)]$ (acoustique) et $[\sqrt2\max(\omega_1,\omega_2),\sqrt{2(\omega_1^2+\omega_2^2)}]$ (optique).
+- **Bandes permises (zones grisées)** : $[0,\sqrt2\min(\omega_1,\omega_2)]$ (acoustique) et $[\sqrt2\max(\omega_1,\omega_2),\sqrt{2(\omega_1^2+\omega_2^2)}]$ (optique).
 - **Bandes interdites (zones blanches)** : entre les deux limites (ondes évanescentes à $k'=\pi/(2a)$) et au-dessus de la bande optique ($k'=0$).
 
 En $\omega_1/\omega_2=1$, le gap central se **ferme** : c'est la chaîne monoatomique.
@@ -702,7 +705,7 @@ C'est la correspondance volume-bord : des invariants de chaînes infinies prédi
 
 Pour $\omega_1^g/\omega_2^g=0{,}7$, la ligne isolée du diagramme est dans la bande interdite des deux chaînes. La Q15 donne, de chaque côté, $k'=\pi/(2a)$ : d’une maille à la suivante, les déplacements d’un même sous-réseau changent de signe. L’enveloppe décroît à partir de la jonction comme $e^{-|x|/\ell}$, avec $k''<0$ à gauche et $k''>0$ à droite. Chaque demi-chaîne possède sa propre longueur $\ell=1/|k''|$. La vibration est ainsi concentrée près de la jonction : c’est un **mode de bord**.
 
-On peut illustrer ce profil par le cas particulier où les deux demi-chaînes ont le même centre de gap en pulsation carrée, $\omega^2=d_0=\omega_1^2+\omega_2^2$, avec un raccord qui préserve le mode sur les sites impairs. La première équation de la Q8 devient alors $u_{2n+1}=-(\omega_2/\omega_1)^2u_{2n-1}$. En s’éloignant de la jonction, les amplitudes impaires sont multipliées par $-(0{,}7)^2=-0{,}49$ à gauche et par $-(\omega_2^d/\omega_1^d)^2$ à droite. Les sites pairs sont immobiles dans cet exemple. Les constantes de jonction ne sont pas précisées par l’énoncé : le profil demandé est qualitatif.
+Pour fixer un exemple, prenons un même $S=\omega_1^2+\omega_2^2$ des deux côtés, avec $(\omega_1^g/\omega_2^g)^2=0{,}49$ et $(\omega_2^d/\omega_1^d)^2=0{,}45$. Le ressort de gauche attenant au site $0$ a pour raideur $\beta_2^g$, celui de droite $\beta_1^d$. À $\omega^2=S$, les sites pairs peuvent rester immobiles. La force résultante au site $0$ doit donc être nulle, d’où $u_1/u_{-1}=-\beta_2^g/\beta_1^d=-(1+0{,}45)/(1+0{,}49)$. Aux autres sites pairs, la même condition donne, de proche en proche, un facteur $-0{,}49$ vers la gauche et $-0{,}45$ vers la droite. Le sujet fixe le rapport à gauche et demande uniquement l’allure du profil.
 
 ![Figure 7 — Exemple de mode d’interface au centre commun des bandes interdites en pulsation carrée. Les masses impaires ont des amplitudes alternées et localisées.](figures/q21-mode-de-bord.svg)
 
@@ -731,7 +734,7 @@ On transpose la partie I aux équations de Saint-Venant en rotation : même prob
 - $\partial_th+\mathrm{div}(h\vec u)=0$ : **équation de continuité** (conservation de la masse). Elle a la forme de $\partial_t\rho+\mathrm{div}(\rho\vec v)=0$, avec la hauteur $h$ à la place de $\rho$. C'est le bilan de volume d'une colonne de fluide **incompressible**, intégré sur l'épaisseur ; $h\vec u$ est le débit par unité de largeur.
 - $\partial_t\vec u+(\vec u\cdot\overrightarrow{\mathrm{grad}})\vec u=-g\,\overrightarrow{\mathrm{grad}}\,h+\vec F_c$ : **équation d'Euler** du fluide parfait (Navier-Stokes sans viscosité) dans le référentiel terrestre, où $\vec F_c$ est la force de Coriolis massique.
 
-Le terme $-\frac1\rho\overrightarrow{\mathrm{grad}}\,p$ y est remplacé par $-g\,\overrightarrow{\mathrm{grad}}\,h$. Cela suppose l'**équilibre hydrostatique** sur la verticale, $p=p_0+\rho g(h-z)$, et une vitesse horizontale indépendante de la profondeur.
+Le fond étant horizontal, $h$ repère aussi l’altitude de la surface à une constante près. Si la pression de surface $p_0$ est uniforme, l’équilibre hydrostatique donne $p=p_0+\rho g(h-z)$ pour un fond pris à $z=0$. Le gradient **horizontal**, pris à $z$ fixé, vérifie donc $-\nabla_h p/\rho=-g\nabla_h h$. Sur la verticale, le gradient de pression équilibre le poids. Le modèle prend une vitesse horizontale uniforme sur la profondeur.
 
 Ensemble, ce sont les **équations de Saint-Venant** (eau peu profonde).
 
@@ -860,7 +863,7 @@ C'est la célérité des ondes de gravité en eau peu profonde.
 ![Figure 8 — Les trois branches (+), (0) et (−) dans le plan (kx, ω) pour f0 = ±1 (bandes interdites 0 < |ω| < 1) et pour f0 = 0 (branches concourantes)](figures/q29-dispersion-kelvin.svg)
 
 > [!METHODE]
-> Comme pour la Q11, deux systèmes distincts (les deux hémisphères) ont le même spectre. Seul un invariant topologique les distingue, ce que l'énoncé introduit juste après.
+> À latitudes opposées, les deux spectres coïncident, car ils dépendent de $f_0^2$. Les termes en $if_0$ de la matrice changent de signe. Les polarisations et les invariants de la Q31 permettent de distinguer les hémisphères.
 
 > [!JURY]
 > Le rapport 2026 indique que les Q29–30 ont été très rarement traitées et qu'il fallait avoir la Q27 juste ; « toute réponse même partielle a été largement valorisée ». Un tracé correct des trois branches, asymptotes comprises, rapporte donc beaucoup.
@@ -895,7 +898,7 @@ $$\begin{aligned}
 \text{sud}&\ :\ \{\mathscr C^{(-)},\mathscr C^{(0)},\mathscr C^{(+)}\}=\{-2,0,2\}
 \end{aligned}$$
 
-Les deux hémisphères ont **le même spectre** (Q29) mais des **invariants opposés**. L'équateur, où $f=0$ et où le gap se ferme, est donc une interface entre deux milieux de topologies différentes, comme la jonction des deux chaînes SSH.
+À latitudes opposées, les deux hémisphères ont le même spectre, car $f_0^2$ est identique (Q29). Les invariants ont des signes opposés. L’équateur, où $f$ s’annule et où les bandes se touchent, joue ainsi le rôle d’une interface.
 
 Le saut d'invariant vaut, pour chaque bande de Poincaré :
 
@@ -935,7 +938,7 @@ C'est $\mathbf M$ avec $k_y\to-i\,\mathrm d/\mathrm dy$ et $f_0\to\beta y$. On o
 
 #### Solution
 
-Les modes de Poincaré ($\lvert\omega\rvert\gtrsim\sqrt3\sqrt{\beta c}$) jouent le rôle des bandes $(\pm)$, et les modes de Rossby ($\omega\approx0$) celui de la bande $(0)$. Dans chaque gap, **deux** branches passent d'une bande à l'autre.
+Sur le diagramme de Matsuno, les modes de Poincaré occupent les bandes de pulsations élevées en valeur absolue. Les modes de Rossby restent proches de $\omega=0$. On recherche les branches qui traversent les intervalles entre eux.
 
 - **Gap supérieur** : l'onde de **Kelvin** $\omega=ck_x$ et la branche supérieure de **Yanai**. Celle-ci tend vers $0^+$ (bande de Rossby) quand $k_x\to-\infty$ et rejoint $ck_x$ (Poincaré) quand $k_x\to+\infty$.
 - **Gap inférieur** : l'onde de Kelvin et la branche inférieure de Yanai.
@@ -944,11 +947,11 @@ Les branches de Yanai viennent de l'équation de Matsuno pour $n=0$. Multipliée
 
 $$(\omega+ck_x)(\omega^2-ck_x\omega-\beta c)=0$$
 
-La racine $\omega=-ck_x$ est parasite. Les deux autres sont les branches de Yanai :
+La droite $\omega=-ck_x$ issue du découplage ne constitue pas une branche propre supplémentaire du système. Les deux branches de Yanai sont données par le second facteur, soit
 
 $$\omega=\frac12\left(ck_x\pm\sqrt{c^2k_x^2+4\beta c}\right)$$
 
-Une horizontale située dans le gap supérieur coupe Kelvin et Yanai une fois chacune. Une horizontale dans le gap inférieur donne également deux intersections. Cela fait **deux traversées par gap** sur le diagramme. La même branche de Kelvin contribue dans les deux intervalles. Les pentes de toutes ces branches sont positives : l’énergie se propage vers l’est.
+Prenons les deux niveaux tracés, $W=\omega/\sqrt{\beta c}=\pm0{,}7$, et posons $K=k_x\sqrt{c/\beta}$. À chaque niveau, Kelvin donne $K=W$ et Yanai donne $K=W-1/W$. Les autres modes ($n\geq1$) exigeraient $W^2-K^2-K/W=2n+1\geq3$. Or le membre de gauche, maximal pour $K=-1/(2W)$, vaut au plus $W^2+1/(4W^2)<1{,}01$ ici. Il y a donc exactement **deux traversées par gap**. La même droite de Kelvin traverse les deux intervalles et toutes les pentes comptées sont positives.
 
 La différence d’invariants de la Q31 et le diagramme prédisent qualitativement des modes équatoriaux dans les deux intervalles. Le comptage numérique présente une difficulté du sujet. Les invariants fournis donnent un saut de module 4 pour chaque bande de Poincaré, tandis que la figure de Matsuno montre deux traversées par gap. Additionner les intersections des deux intervalles ne donne pas un saut par bande. Le rapport 2026 retient quatre modes par bande à la Q31 et y a aussi accordé tous les points aux copies proposant quatre modes au total. Les ondes à identifier à la Q33 sont **Kelvin et Yanai**.
 
@@ -971,7 +974,7 @@ Avec $A=\beta(2n+1)/c>0$ :
 
 $$\boxed{v_\varphi=-\frac{\beta}{k_x^2+A}<0}$$
 
-pour tout $k_x$. La phase se propage toujours **vers l'Ouest**, puisque $\vec e_x$ pointe vers l'Est.
+pour $k_x\ne0$. Comme $\vec e_x$ pointe vers l’est, la phase se déplace vers l’ouest. À $k_x=0$, il n’y a aucune variation de phase selon $x$ et le quotient $\omega/k_x$ est indéfini. Sa limite vaut $-\beta/A=-c/(2n+1)$.
 
 ### Question 35
 
@@ -1021,15 +1024,15 @@ Au large du Pérou, la couche d’eau chaude s’épaissit. Une remontée d’ea
 - Relation de dispersion d'un réseau : ansatz $e^{i(kna-\omega t)}$, puis problème aux valeurs propres $\det(\mathbf D-\omega^2\mathbb I)=0$ quand la maille contient plusieurs degrés de liberté.
 - Hors des bandes, le nombre d'onde est complexe. Sa partie réelle est fixée par la réalité de la relation de dispersion, et le signe de sa partie imaginaire par la condition à l'infini (Q7, Q15).
 - Onde évanescente (pas de transport d'énergie, pas de dissipation) et onde amortie (propagation avec dissipation) : deux notions distinctes.
-- Lecture d'une structure de bandes : zone de Brillouin, repliement, valeurs et pentes en $k=0$ et en bord de zone **pour chaque branche**, vitesse de groupe nulle en bord de zone, point anguleux de la branche acoustique.
-- Décomposition d'une matrice $2\times2$ hermitienne sur $(\mathbb I,\sigma_x,\sigma_y)$. Les valeurs propres valent $d_0\pm\lVert\vec d\rVert$, et l'invariant est le nombre de tours de $\vec d$ autour de l'origine.
+- Lecture d'une structure de bandes : zone de Brillouin, repliement, valeurs et pentes en $k=0$ et en bord de zone **pour chaque branche**, vitesse de groupe nulle aux bords non dégénérés, point anguleux de la branche acoustique.
+- Décomposition de la matrice hermitienne $2\times2$ de la Q9, à diagonales égales, sur $(\mathbb I,\sigma_x,\sigma_y)$. Les valeurs propres valent $d_0\pm\lVert\vec d\rVert$, et l'invariant est le nombre de tours de $\vec d$ autour de l'origine.
 - Correspondance volume-bord : le nombre de modes d'interface est fixé par le saut de l'invariant entre les deux milieux. Changer d'invariant impose de fermer le gap.
-- Saint-Venant linéarisé, force de Coriolis $f=2\Omega\sin\hat\ell$, système du premier ordre en temps (racines $\pm\omega$ distinctes), vitesses de phase et de groupe d'une relation de dispersion rationnelle.
+- Saint-Venant linéarisé, paramètre de Coriolis $f=2\Omega\sin\hat\ell$, système du premier ordre en temps (racines $\pm\omega$ distinctes), vitesses de phase et de groupe d'une relation de dispersion rationnelle.
 
 **Ce qui a fait la différence selon le rapport 2026.** Les tracés, d'abord : le jury veut des graphes construits à partir des propriétés établies (symétries, pentes, points remarquables, caractère discret), et non une « image qualitative approximative ». Puis les questions qui demandent de réinvestir un objet déjà construit : les deux branches en Q13, les trois racines en Q27, le saut d'invariant en Q31 et Q33. Le jury conclut que les meilleures copies ne sont pas celles qui abordent le plus de questions, mais celles qui gardent une vision d'ensemble du problème.
 
 **Prérequis à revoir.** Fonctions hyperboliques et $\mathrm{argch}$, calcul de déterminants $3\times3$, produit vectoriel en base locale, linéarisation des équations de la mécanique des fluides, tracé à la main de $\lvert\sin x\rvert$ et d'hyperboles avec leurs asymptotes.
 
-**Questions classiques transposables.** La chaîne monoatomique et sa coupure (Q1–7) reviennent très souvent, de même que la chaîne diatomique (branches acoustique et optique). Les ondes en eau peu profonde ($c=\sqrt{gH}$) et la force de Coriolis à la latitude $\hat\ell$ sont des classiques. Les vitesses de phase et de groupe de signes opposés (Q35) se retrouvent pour les ondes de Rossby ou les ondes de capillarité-gravité.
+**Questions classiques transposables.** La chaîne monoatomique et sa coupure (Q1–7) reviennent très souvent, de même que la chaîne diatomique (branches acoustique et optique). Les ondes en eau peu profonde ($c=\sqrt{gH}$) et la force de Coriolis à la latitude $\hat\ell$ sont des classiques. Pour les ondes de Rossby courtes de la Q35, crêtes et paquet se déplacent en sens opposés.
 
 Le rapport 2026 constate que « La majorité des candidats n'a traité qu'un peu moins de la moitié des questions proposées. » Sur ce sujet, les blocs Q1–13 et Q22–30 constituent un socle sûr à traiter vite.

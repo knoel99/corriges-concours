@@ -60,7 +60,7 @@
       "legende": "Sortie Us(t) du dérivateur : porteuse centrée sur 0 dont l'enveloppe est proportionnelle à fB + fD(t) (modulation exagérée)"
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "modele": "OpenAI Codex (GPT-6)",
     "objet": "Relecture des 56 questions à partir du sujet et du rapport 2026. Révision des explications et des schémas."
@@ -118,6 +118,18 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 3,
+      "modifications": true,
+      "perimetre": "Relecture indépendante des 56 questions du brut et du guidé, des dix schémas, du sujet et du rapport officiels. Corrections sur la force de flexion, le domaine de la plaque mince, la cohérence optique et la mesure du signal modulé.",
+      "agent": "relecture_astra_physique_2026",
+      "fournisseur": "codex"
     }
   ]
 }
