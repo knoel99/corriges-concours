@@ -14,7 +14,8 @@
     "model": "GPT-6"
   },
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/options_francais_philosophie.pdf#page=3"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/options_francais_philosophie.pdf#page=3",
+    "sujet_sha256": "8cd8355b7950385419d65c070f638af59b4eb033e929d84f6f08bbb1b3ba7e11"
   },
   "figures": [
     {
@@ -77,6 +78,18 @@
       "perimetre": "Comparaison au passage officiel (Entretiens, II, 5, traduction de Robert Muller), vérification des deux premiers exemples, de la place du passager et de la dernière comparaison.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des deux éditions face au texte traduit par Robert Muller. Correction grammaticale de l’objection impersonnelle, explication de la condition portant sur le bonheur et description des trois figures."
     }
   ]
 }

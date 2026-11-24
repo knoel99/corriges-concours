@@ -8,6 +8,10 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Composition de philosophie (banque d'épreuves littéraires, filière AL), session 2026 : 6 heures, calculatrice non autorisée. Sujet : « L'autorité de la science ».
 
 **Problématique** : « l'autorité de la science » est-elle une contradiction dans les termes, ou la science détient-elle une forme d'autorité qui lui est propre — et à quelles conditions cette autorité reste-t-elle légitime ?
@@ -30,7 +34,7 @@ Le rapport de droit entre la science et l'autorité se lit d'abord dans la mani�
 
 Ainsi, en janvier 1610, Galilée observe à plusieurs reprises de petits points lumineux près de Jupiter. D’une nuit à l’autre, ils se retrouvent tantôt à l’est, tantôt à l’ouest de la planète tout en l’accompagnant dans son déplacement parmi les étoiles. C’est cette série de positions, et non la seule présence de points dans la lunette, qui lui permet de les interpréter comme des astres tournant autour de Jupiter. L’observation réfute la prétention à faire de la Terre le centre de tous les mouvements célestes. Elle laisse en revanche ouverte la question du mouvement de la Terre elle-même. Le lecteur du *Messager des étoiles* sait ainsi ce qu’il devrait retrouver en observant à son tour, mais aussi ce qu’il n’est pas autorisé à conclure. L’astronome gagne du crédit en permettant de contrôler son propos jusque dans ses limites.
 
-Kant a donné à ce geste sa formule la plus célèbre : *Sapere aude*, « aie le courage de te servir de ton propre entendement ». Les Lumières sont la sortie de la minorité, c'est-à-dire de l'état où l'on s'en remet à l'autorité d'autrui — le livre qui pense à ma place, le directeur de conscience qui décide pour moi. La raison ne reconnaît d'autre tribunal qu'elle-même. S'il faut donc parler d'une autorité de la science, ce ne peut être que celle de la raison et du fait, devant lesquels le savant lui-même s'incline : une autorité sans *auctor*, qui n'appartient à personne parce qu'elle s'impose à tous également. La science n'exercerait pas une autorité, elle en délivrerait.
+Dans sa *Réponse à la question : Qu’est-ce que les Lumières ?* (1784), Kant reprend à Horace la devise *Sapere aude* et l’explicite comme le courage de se servir de son propre entendement. Un astronome qui tient son résultat de collègues peut exercer ce courage en publiant les raisons de le mettre en doute. La possibilité, pour d’autres, de lire ses objections puis d’y répondre fait de l’examen une affaire publique. Les Lumières sont la sortie de la minorité, c'est-à-dire de l'état où l'on s'en remet à l'autorité d'autrui — le livre qui pense à ma place, le directeur de conscience qui décide pour moi. La raison ne reconnaît d'autre tribunal qu'elle-même. S'il faut donc parler d'une autorité de la science, ce ne peut être que celle de la raison et du fait, devant lesquels le savant lui-même s'incline : une autorité sans *auctor*, qui n'appartient à personne parce qu'elle s'impose à tous également. La science n'exercerait pas une autorité, elle en délivrerait.
 
 L’exigence d’autonomie n’abolit pourtant pas les médiations. Pour suivre Galilée, il fallait disposer d’une lunette convenable, savoir la pointer et observer à plusieurs dates. Le destinataire pouvait raisonnablement tenir le résultat pour probable avant d’avoir lui-même réuni ces conditions. Comment cette dépendance envers une compétence reconnue peut-elle contribuer à la connaissance ?
 

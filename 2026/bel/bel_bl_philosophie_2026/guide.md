@@ -6,6 +6,10 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Peut-on cesser de croire ?
 
 [Libellé reproduit par le jury, p. 1](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf#page=1) · [Rapport officiel](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf)
@@ -21,7 +25,7 @@ Le rapport reproduit intégralement le sujet en première page. L’épreuve com
 
 ## Construire le problème
 
-Le même résultat apparent peut avoir des causes différentes. Un appel me convainc que mon ami est rentré. Une information incertaine suffit seulement à me faire suspendre le jugement. Quel pouvoir ai-je sur ces modifications ? Cette première question conduit à celle de l’étendue. Une démarche qui ébranle une conviction localisée pourrait-elle en défaire toutes les autres à la fois ? L’enjeu moral apparaît dès que retirer une croyance revient à retirer à quelqu’un son crédit.
+Le même résultat apparent peut avoir des causes différentes. Mon ami ouvre la porte et entre chez nous. Je constate qu’il est rentré. Une information incertaine suffit seulement à me faire suspendre le jugement. Quel pouvoir ai-je sur ces modifications ? Cette première question conduit à celle de l’étendue. Une démarche qui ébranle une conviction localisée pourrait-elle en défaire toutes les autres à la fois ? L’enjeu moral apparaît dès que retirer une croyance revient à retirer à quelqu’un son crédit.
 
 ![Parcours de la dissertation](figures/plan-cessation.svg)
 
@@ -38,13 +42,15 @@ La première *Méditation* donne un exemple d’intervention volontaire sur les 
 
 ### Introduction
 
-Je croyais mon ami parti. Sa voix au téléphone me détrompe. Je pourrais dater à la seconde près le moment où j’ai cessé de le croire absent. Voici pourtant un autre cas. Un homme découvre, au cours d’une cérémonie religieuse dont il connaît encore tous les gestes, qu’il a perdu la foi. À quand remonte cette perte ? Il serait bien en peine de le dire. Dans le premier cas, une réponse vient prendre la place d’une autre. Dans le second, subsistent des habitudes et des attachements dont une certitude s’est retirée. Les deux hommes ont cessé de croire quelque chose. Aucun ne paraît avoir choisi le moment de la rupture. Et qu’arriverait-il à celui qui prétendrait cesser de croire absolument, sans préciser à quoi ? Pour reconnaître une erreur, il s’est déjà fié à une voix, à des souvenirs, à sa propre capacité de les comparer. Quel pouvoir exerçons-nous donc sur la durée de nos croyances, et à quelles conditions l’exercice de ce pouvoir peut-il être juste ?
+Je croyais mon ami parti. Il entre dans la pièce et s’assied en face de moi. Je pourrais dater à la seconde près le moment où j’ai cessé de le croire absent. Voici pourtant un autre cas. Un homme découvre, au cours d’une cérémonie religieuse dont il connaît encore tous les gestes, qu’il a perdu la foi. À quand remonte cette perte ? Il serait bien en peine de le dire. Dans le premier cas, une réponse vient prendre la place d’une autre. Dans le second, subsistent des habitudes et des attachements dont une certitude s’est retirée. Les deux hommes ont cessé de croire quelque chose. Aucun ne paraît avoir choisi le moment de la rupture. Et qu’arriverait-il à celui qui prétendrait cesser de croire absolument, sans préciser à quoi ? Pour reconnaître une erreur, il s’est déjà fié à une voix, à des souvenirs, à sa propre capacité de les comparer. Quel pouvoir exerçons-nous donc sur la durée de nos croyances, et à quelles conditions l’exercice de ce pouvoir peut-il être juste ?
 
 ### I. Une croyance peut finir sans que nous ayons voulu sa fin
 
-Croire qu’un ami est ailleurs, c’est compter avec son absence. Je choisis de lui écrire au lieu de frapper à sa porte. Il serait vain de chercher, dans les heures qui suivent, une phrase que je me répéterais secrètement pour maintenir ma croyance en vie. Je travaille, je m’endors, je pense à toute autre chose ; demain encore, je lui adresserai un message. Oublier un instant ce que je crois laisse intact mon rapport à cette proposition. En revanche, si, après son appel, je vais à sa rencontre, une attente qui commandait mes actions a pris fin. Pour identifier la cessation, il faut comparer ce que je suis prêt à tenir pour vrai dans deux circonstances similaires. La simple interruption d’une pensée consciente ne suffit pas.
+Croire qu’un ami est ailleurs, c’est compter avec son absence. Je choisis de lui écrire au lieu de frapper à sa porte. Il serait vain de chercher, dans les heures qui suivent, une phrase que je me répéterais secrètement pour maintenir ma croyance en vie. Je travaille, je m’endors, je pense à toute autre chose ; demain encore, je lui adresserai un message. Oublier un instant ce que je crois laisse intact mon rapport à cette proposition. En revanche, si, après l’avoir revu, je vais à sa rencontre, une attente qui commandait mes actions a pris fin. Pour identifier la cessation, il faut comparer ce que je suis prêt à tenir pour vrai dans deux circonstances similaires. La simple interruption d’une pensée consciente ne suffit pas.
 
 La forme de cette fin varie. Si mon ami parle devant moi, je peux passer de l’affirmation à la négation de son absence. Mais quelqu’un m’apprend qu’il aurait changé ses projets, sans avoir de nouvelles sûres. La conduite raisonnable consiste alors à retirer mon assentiment et à laisser la question ouverte. J’ai cessé de tenir son départ pour établi. Il serait aussi imprudent de l’attendre à la gare que de compter avec certitude sur sa présence ici. Je puis enfin n’avoir rencontré aucun démenti déterminé. Les raisons de me fier à une personne perdent peu à peu leur force à la suite d’engagements manqués. Un jour je constate que je ne lui confierais plus ce projet. L’instant de cette constatation arrive après le changement de mes dispositions. Il existe des ruptures sans réfutation et des fins dont le sujet lui-même ne sait fixer la date.
+
+Supposons que mon ami m’appelle de son portable. Sa voix m’apprend qu’il peut me parler. Elle laisse entière la question du lieu d’où il appelle. Si ma seule raison de le croire absent était son silence, cet appel peut cependant me faire cesser de croire à son absence sans me convaincre de sa présence. La même information retire ici sa raison à une croyance sans en donner une suffisante à la croyance contraire.
 
 Ces distinctions font apparaître une limite de notre pouvoir immédiat. Je peux prononcer maintenant une phrase annonçant que je crois mon ami à Paris. Puis-je, en la prononçant, régler la question pour moi-même alors que je viens de le voir entrer ? Je saurais que mon affirmation procède de l’ordre que je me donne et cette origine lui ôterait précisément sa valeur de raison. La volonté dispose de mes paroles, le monde conserve une prise sur mon assentiment. Il reste cependant une différence entre attendre passivement d’être démenti et se mettre en situation de découvrir une erreur. C’est dans cet écart qu’un pouvoir de cesser pourrait trouver à s’exercer.
 

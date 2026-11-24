@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Épictète, Entretiens, II, 5
 
 [Sujet officiel, p. 3](https://www.ens.psl.eu/sites/default/files/options_francais_philosophie.pdf#page=3)
@@ -55,7 +57,7 @@ De là le passage du jeu à la tâche prioritaire dans la vie. Avant de détermi
 
 ### II. Une négligence est un mal précisément lorsque la matière n’en est pas un
 
-Épictète demande ensuite de surveiller les mots employés pour les choses qui dépendent d’autrui. Les appeler un bien ou un dommage, sans autre précision, c’est déjà attribuer à quelqu’un d’autre le pouvoir de faire mon malheur ou de garantir ma vie bonne. On comprend pourtant qu’une telle injonction puisse inquiéter. La chose qui ne mérite même plus d’être dite utile réclame-t-elle encore mes soins ? L’objection à la première personne du pluriel, « Faut-il en user avec négligence ? », porte sur l’inférence décisive. Si elle était légitime, la doctrine recommanderait une imprudence que chacun pourrait ensuite excuser en invoquant la fortune.
+Épictète demande ensuite de surveiller les mots employés pour les choses qui dépendent d’autrui. Les appeler un bien ou un dommage, sans autre précision, c’est déjà attribuer à quelqu’un d’autre le pouvoir de faire mon malheur ou de garantir ma vie bonne. On comprend pourtant qu’une telle injonction puisse inquiéter. La chose qui ne mérite même plus d’être dite utile réclame-t-elle encore mes soins ? La question impersonnelle, « Faut-il en user avec négligence ? », porte sur l’inférence décisive. Si elle était légitime, la doctrine recommanderait une imprudence que chacun pourrait ensuite excuser en invoquant la fortune.
 
 La réponse déplace le prédicat à son véritable sujet. La négligence est une manière pour ma faculté de choix d’user de ce qui est donné ; elle est donc susceptible d’être mauvaise précisément là où le résultat extérieur ne l’est pas. Supposons que je doive choisir le pilote. Je puis m’informer de son expérience, ou négliger de le faire alors que les renseignements me sont accessibles. Que nous arrivions au port dans les deux cas n’abolit pas la différence de conduite. Inversement, si après un choix soigneux le navire périt, cela ne transforme pas rétrospectivement cette conduite en faute. De ce qui ne dépend pas de moi je dois prendre en considération tout ce qui éclaire mon action. Je m’abstiens de lui attribuer le pouvoir de décider ce qu’elle vaut.
 
@@ -66,6 +68,8 @@ La formule sur l’empêchement avance une épreuve supplémentaire. Un autre ho
 ### III. La traversée soumet la règle à l’épreuve d’une perte irréparable
 
 Épictète concède la difficulté de « tenir ensemble » l’attention de celui que les choses affectent et la fermeté de celui qui les tient pour indifférentes. La concession n’efface pas ce que la distinction précédente a établi. On a montré que ces attitudes sont compatibles. Il reste à rendre pensable leur exercice quand je ne peux traiter ce qui arrive comme une partie de dés sans lendemain. Leur réunion engage le bonheur lui-même, car un bonheur dépendant de la permanence de ce que d’autres peuvent m’ôter ne serait jamais assuré, tandis qu’une tranquillité achetée au prix d’un mauvais usage ne serait pas une vie bonne.
+
+« Si l’on n’y arrive pas, c’est le bonheur qui est impossible. » Ce conditionnel donne la mesure de l’enjeu. Il serait circulaire d’en déduire que l’accord des deux attitudes est possible en supposant le bonheur déjà acquis. Le voyage fait le travail qui manque encore. À chaque instant, il fait voir à quoi s’applique l’attention et pourquoi, dans le même instant, celui qui agit peut rester ferme. L’épreuve décisive survient quand un changement de circonstances paraît retirer à l’action tout objet.
 
 L’exemple distribue la responsabilité à mesure que la traversée avance. Il m’appartient de choisir le pilote, l’équipage et le moment de prendre la mer. En me souciant du départ, j’ai donc traité comme pratiquement pertinentes des différences entre plusieurs possibilités. Je n’ai pas choisi la tempête par le même acte que j’ai choisi le jour ; c’est justement ce qu’elle est venue démentir dans l’espoir de tout prévoir. Quand elle survient, la manœuvre incombe au pilote. La formule « ma tâche à moi est accomplie » concerne ce rôle déterminé du passager. Elle ne ferait pas une maxime pour le pilote, dont la responsabilité actuelle est de manœuvrer. La même mer et le même danger sont la matière commune de conduites appropriées différentes.
 
