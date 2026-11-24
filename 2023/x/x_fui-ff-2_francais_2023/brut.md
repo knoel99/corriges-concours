@@ -6,11 +6,15 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. L’extrait est tiré des Deux Sources de la morale et de la religion de Bergson (1932). La compréhension et le bref essai personnel valent chacun dix points. Aucun nombre de mots n’est imposé.
 
 ## A1 · Thèse et question finale
 
-Pour Bergson, l’intelligence humaine a une double contrepartie. Parce qu’il anticipe l’avenir, l’être humain éprouve l’inquiétude. Parce qu’il réfléchit à son intérêt particulier, il peut aussi se détourner du bien commun. Bergson ajoute que l’intelligence est elle-même issue de la nature. Il en conclut que la nature doit avoir prévu des moyens de rétablir l’équilibre que cette faculté menace. L’extrait ne précise pas encore comment ils opèrent.
+Pour Bergson, l’intelligence humaine a une double contrepartie. Parce qu’il anticipe plusieurs avenirs, l’être humain oscille entre l’espoir de réussir et la crainte d’échouer. Parce qu’il réfléchit à son intérêt particulier, il peut aussi se détourner du bien commun. Bergson ajoute que l’intelligence est elle-même issue de la nature. Dans son raisonnement, elle se trouve au terme d’une ligne de l’évolution animale, comme l’instinct au terme d’une autre. Il en conclut que la nature doit avoir prévu des moyens de rétablir l’équilibre que cette faculté menace. L’extrait ne précise pas encore comment ils opèrent.
+
+![Les deux difficultés de l’intelligence chez Bergson.](figures/deux-effets-de-intelligence.svg)
 
 ## A2 · La part d’incertitude dans l’action
 

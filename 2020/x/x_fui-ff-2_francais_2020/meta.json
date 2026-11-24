@@ -27,7 +27,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20FRANCAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "50a9bf4b1937c5f5b6ee4a1ee25d7e73f2013d467cfc126b03c0659691709019"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -73,6 +74,17 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Sujet Montesquieu et réponses vérifiés, notamment la divergence entre « unions » dans l’extrait et « nations » dans la question A3."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux échelles du commerce chez Montesquieu, de la formule de justice et de la variante « nations » dans la question. Précision de l’exemple et de l’attribution de l’hospitalité.",
+      "fournisseur": "codex"
     }
   ],
   "provenance": {
@@ -85,10 +97,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   }
 }

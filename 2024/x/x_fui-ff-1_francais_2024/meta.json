@@ -26,7 +26,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20DE%20FRANCAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "e0dd957f8b38cd0e2c5c87807da929996f04e44cad85dd55249e04271d0aae68"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -44,10 +45,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -71,6 +71,17 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante intégrale au regard du sujet officiel. Trois réponses sur Romilly et essai illustré par Sophocle et Dorothea Lange vérifiés.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des trois réponses et de l’essai sur l’entretien de Jacqueline de Romilly, diagnostic conditionnel, objection de l’intervieweuse et portée des exemples de Sophocle et Lange.",
       "fournisseur": "codex"
     }
   ]

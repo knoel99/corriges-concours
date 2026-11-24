@@ -1,0 +1,46 @@
+{
+  "slug": "ens-de-lyon_series-a-l_arabe-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Arabe (oral)",
+    "annee": 2026,
+    "type": "oral"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arabe%202026.pdf#page=3",
+    "sujet_sha256": "2ef736710fa12e0e33fe3cd8825b6d36da430fc634b50a105b41f325eb5f70b0",
+    "documents": [
+      "https://archive.org/details/AAlexandrina-432084/page/n109/mode/2up",
+      "https://almawqeapost.com/arab-world/50345"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Oral",
+      "legende": "À qui attribuer une parole ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication littéraire au plus près des deux bornes de Rāma wa-l-tinnīn retrouvées dans le fac-similé, analyse de l’article d’Al-Mawqaʿ Post du 9 mai 2020, deux exposés et entretien en arabe."
+    }
+  ]
+}

@@ -6,19 +6,23 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le sujet reproduit un extrait du discours de Victor Hugo au Congrès littéraire international de 1878. La compréhension comporte une question sur la thèse et deux explications de formules. L’essai est libre, sans limite de mots imposée.
 
 ## A1 · La thèse, sa portée et une phrase à retenir
 
-Hugo soutient que la littérature fait progresser les sociétés en mettant les intelligences en mouvement. Les œuvres survivent même aux puissances militaires qui semblaient dominer leur époque. Tout en faisant rayonner la langue d’un peuple, elles s’adressent à d’autres peuples et peuvent les instruire. Je retiendrais la phrase « On peut dire que littérature et civilisation sont identiques. » Elle condense l’ambition du discours, qui confère à la littérature un rôle décisif dans le développement de l’humanité.
+Hugo soutient que la littérature fait progresser les sociétés en mettant les intelligences en mouvement. L’Iliade reste lisible quand l’armée de deux millions d’hommes évoquée par l’orateur a disparu. Tout en faisant rayonner la langue d’un peuple, elles s’adressent à d’autres peuples et peuvent les instruire. Je retiendrais la phrase « On peut dire que littérature et civilisation sont identiques. » Elle condense l’ambition du discours, qui confère à la littérature un rôle décisif dans le développement de l’humanité.
 
 ## A2a · Les écoles et la lumière
 
-Hugo fait de la lumière une image de la connaissance. Les écoles sont les lieux où les livres se transmettent, où l’on apprend à raisonner et où chacun peut exercer son jugement. En les multipliant, une société rend ces possibilités accessibles en un plus grand nombre de lieux. L’image des points lumineux suggère cette diffusion.
+Hugo fait de la lumière une image de la connaissance. Les écoles sont les lieux où les livres se transmettent, où l’on apprend à raisonner et où chacun peut exercer son jugement. En les multipliant, une société rend ces possibilités accessibles en un plus grand nombre de lieux. Les impératifs adressés à l’auditoire, en particulier celui de multiplier les écoles, font de chaque point lumineux une décision concrète d’instruction.
 
 ## A2b · L’éclairage des rues et celui des esprits
 
 L’éclairage d’une rue permet de voir où l’on va et de déceler un danger. Par analogie, l’éducation permet de reconnaître un mensonge ou une superstition qui pourraient tirer profit de l’ignorance. Hugo admet qu’un responsable public doive assurer la sécurité matérielle des habitants. Il demande à ses auditeurs d’accorder une attention plus grande encore à leur formation intellectuelle.
+
+![Comment se construit l’image de la lumière.](figures/lumiere-et-instruction.svg)
 
 ## B · Essai sur la littérature et la société contemporaine
 

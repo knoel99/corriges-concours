@@ -1,0 +1,111 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2018",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2018
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/2018_2CC_sujet_Bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/01/18_2CC_rap_eBio.pdf",
+    "sujet_sha256": "5715afe822ac2b7ad99391a2858c943485ebc553b49aea8143a9a9d1327998c2",
+    "rapport_sha256": "b2d79a3561759ae270e30c4456cdeb741273d44d43c71cb29fad2cf6157e0e18"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 35 questions sont traitées à partir des treize figures du sujet. Les fréquences, seuils et amplitudes lus sur les graphiques sont donnés avec leur précision graphique. Les hypothèses sur les descendants sont distinguées des mesures effectuées."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/repertoires-comparatifs.svg",
+      "legende": "Effectifs donnés dans le sujet. La proportion de pseudogènes se calcule dans le total des deux segments de chaque espèce.",
+      "question": "Q3"
+    },
+    {
+      "fichier": "figures/lots-de-neurones.svg",
+      "legende": "Lecture binaire du gel pour les petits lots. Deux bandes ne signifient pas que deux neurones sur dix-huit expriment I7.",
+      "question": "Q9"
+    },
+    {
+      "fichier": "figures/attribution-des-alleles.svg",
+      "legende": "Lecture des signaux positifs du dot-blot. Le lot 7 porte les deux signaux alors que chacun des six premiers n’en porte qu’un.",
+      "question": "Q13"
+    },
+    {
+      "fichier": "figures/seuil-et-decay.svg",
+      "legende": "À gauche, lecture approchée du nombre de cellules marquées. À droite, décroissance sous l’hypothèse d’une demi-vie de dix minutes.",
+      "question": "Q18"
+    },
+    {
+      "fichier": "figures/chronologie-mesures.svg",
+      "legende": "Les mesures de part et d’autre de l’apprentissage sont comparables au niveau de référence.",
+      "question": "Q23"
+    },
+    {
+      "fichier": "figures/comparaisons-de-lignees.svg",
+      "legende": "Les cohortes F1 et F2 répondent à deux comparaisons distinctes et ne mesurent pas la mémoire individuelle du parent.",
+      "question": "Q27"
+    },
+    {
+      "fichier": "figures/deux-controles-de-transmission.svg",
+      "legende": "Les deux expériences contrôlent des explications alternatives différentes. L’adoption ne sépare pas ovocyte et gestation.",
+      "question": "Q31"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions intégrales sur l’énoncé et le rapport officiels de 2018. Lecture des 18 dépôts de petit effectif, des deux sondes alléliques, des panneaux de suivi cellulaire et des comparaisons F1 et F2. Contrôle de la convention de signe du sursaut et du périmètre des témoins."
+    }
+  ]
+}

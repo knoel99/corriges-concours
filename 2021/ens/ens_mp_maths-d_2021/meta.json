@@ -74,6 +74,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des 40 réponses et sept figures aux pages imprimées 1 à 7 et au rapport. Vérification des deux coquilles signalées en I.6b et II.1a, du second moment de l’échangeur et du saut de son exposant typique au bord. Contrôle des indépendances des demi-produits.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

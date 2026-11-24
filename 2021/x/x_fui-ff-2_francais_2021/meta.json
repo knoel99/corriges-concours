@@ -27,7 +27,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20FRANCAIS_0.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "471e770114230fb8aa2f7d9179c5f7ea92e495fc6ac653ecf2370129d7501402"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -73,6 +74,17 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Bergson : confrontation des consignes, des réponses sur les inventions mécaniques et de la rédaction au texte officiel."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture de Bergson, du contraste entre les énergies et de la note datée sur les machines à vapeur, examen des trois réponses, du schéma du Rhône et de l’attribution finale dans l’essai.",
+      "fournisseur": "codex"
     }
   ],
   "provenance": {
@@ -85,10 +97,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   }
 }

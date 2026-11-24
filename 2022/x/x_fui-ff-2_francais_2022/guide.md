@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le sujet porte sur « Le Loup et l’Agneau » de Jean de La Fontaine (Fables, I, 10, 1668). La compréhension et l’essai valent chacun dix points. La copie traite les quatre demandes de lecture et un essai libre sans limite de mots.
 
 [Sujet officiel de la session 2](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20FRANCAIS.pdf)
@@ -22,7 +24,7 @@ La force permet au coupable de se faire juge et de transformer en procès la rec
 > [!INDICATION]
 > Suivre les changements d’accusation et nommer les faits que l’agneau oppose à chacun.
 
-Le loup change d’accusation chaque fois qu’un fait le contredit. La première accusation se heurte au sens du courant, la deuxième à l’âge de l’accusé, la troisième à l’absence de frère. Le loup en vient alors à un reproche collectif et à un témoignage anonyme dont personne ne peut vérifier l’origine. L’agneau répond au contraire à chaque grief par une raison précise et vérifiable. Sa politesse à l’égard de « Votre Majesté » cherche à rendre ce raisonnement audible auprès d’un juge déjà en colère.
+Le loup change d’accusation chaque fois qu’un fait le contredit. La première accusation se heurte au sens du courant : l’agneau boit plus de vingt pas en aval du loup. La deuxième se heurte à l’âge de l’accusé, la troisième à l’absence de frère. Le loup en vient alors à un reproche collectif et à un témoignage anonyme dont personne ne peut vérifier l’origine. Aux trois premières attaques, l’agneau répond par des raisons précises. Le dernier reproche collectif et l’appel à une rumeur ne lui laissent plus de tour de parole. Sa politesse à l’égard de « Votre Majesté » cherche à rendre ce raisonnement audible auprès d’un juge déjà en colère.
 
 ![Le déplacement des accusations.](figures/proces-du-loup.svg)
 
@@ -31,7 +33,7 @@ Le loup change d’accusation chaque fois qu’un fait le contredit. La premièr
 > [!INDICATION]
 > Justifier chaque adjectif par un comportement ou une parole du texte.
 
-Le loup est impérieux, agressif et de mauvaise foi. Il annonce le châtiment avant même d’avoir entendu la réponse et refuse de reconnaître le moindre démenti. L’agneau est déférent, lucide et sans défense. Il trouve la réplique pertinente à chaque accusation. Sa vulnérabilité physique donne tout son prix à son calme ; une réponse plus insolente l’exposerait davantage, sans lui procurer le pouvoir de faire respecter les faits.
+Le loup est impérieux, agressif et de mauvaise foi. Il annonce le châtiment avant même d’avoir entendu la réponse et refuse de reconnaître le moindre démenti. L’agneau est déférent, lucide et sans défense. Tant que le loup lui laisse la parole, il garde la précision nécessaire pour réfuter des accusations successives. Sa vulnérabilité physique donne tout son prix à son calme ; une réponse plus insolente l’exposerait davantage, sans lui procurer le pouvoir de faire respecter les faits.
 
 ## A4 · Expliquer la morale
 
@@ -55,3 +57,6 @@ Tous les faits ne seront pas faciles à établir. La photographie touche peut-ê
 
 > [!METHODE]
 > Pour terminer, relier la portée de l’exemple à la question posée. La conclusion personnelle doit pouvoir être comprise par quelqu’un qui découvre cet exemple.
+
+> [!METHODE]
+> En repérant les tours de parole, on voit où finit l’échange : après la dénégation concernant le frère, l’agneau ne parle plus. La morale de tête se vérifie aussi par ce silence imposé.

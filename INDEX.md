@@ -221,6 +221,7 @@
 | 2026 | BEL | BL | Philosophie | [md](2026/bel/bel_bl_philosophie_2026/brut.md) | [md](2026/bel/bel_bl_philosophie_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |
+| 2026 | BEL | BL | Philosophie (oral tronc commun, 18 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/guide.md) |
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
@@ -473,6 +474,7 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2018 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2018/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2019/guide.md) |
 | 2020 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2020/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2021/guide.md) |
@@ -493,6 +495,7 @@
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
+| 2020 | ENS de Lyon | Second concours | Informatique | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_informatique_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_informatique_2020/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Informatique | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_informatique_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_informatique_2021/guide.md) |
 | 2022 | ENS de Lyon | Second concours | Informatique | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_informatique_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_informatique_2022/guide.md) |
 | 2023 | ENS de Lyon | Second concours | Informatique | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_informatique_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_informatique_2023/guide.md) |
@@ -503,6 +506,8 @@
 | 2024 | ENS de Lyon | Second concours | Physique | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Portugais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
@@ -738,6 +743,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2021 | X-ENS | PSI | Sciences industrielles | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/brut.md) | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/guide.md) |
 | 2022 | X-ENS | PSI | Sciences industrielles | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/brut.md) | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/guide.md) |
 | 2023 | X-ENS | PSI | Sciences industrielles | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/brut.md) | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/guide.md) |
 | 2024 | X-ENS | PSI | Sciences industrielles | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/brut.md) | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/guide.md) |

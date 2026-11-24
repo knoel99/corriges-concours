@@ -26,7 +26,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20FRANCAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "1d0b91de9d300037ab7f43b0f2eb2d674061fe3ada6f00223a98d3dcd644f90b"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -44,10 +45,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -71,6 +71,17 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante intégrale au regard du sujet officiel. Quatre réponses sur Ernaux et essai illustré par La Fontaine et Flaubert vérifiés.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des quatre questions sur Ernaux et de l’essai, rôle et gestes de la mère, caractère fortuit des lectures, distinction entre la jeune écrivaine et le jugement rétrospectif.",
       "fournisseur": "codex"
     }
   ]

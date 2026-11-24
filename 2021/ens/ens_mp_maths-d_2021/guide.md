@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Le sujet de six heures du 15 avril 2021 établit une version en probabilité du théorème de Furstenberg–Kesten. Pour suivre la preuve principale, on peut relier la question préliminaire aux parties II et IV. La partie I fournit les bornes spectrales, tandis que la partie III permet de calculer explicitement les deux exposants dans des modèles où la structure des matrices est connue. L’épreuve comprend 40 réponses élémentaires avec les subdivisions. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/21_mp_sujet_mathd.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathd.pdf)
@@ -417,7 +419,9 @@ Le produit vide vaut $1$, y compris au cas $p=1/2$ pour deux indices voisins.
 
 On a $\mathbb E\chi_i^2=p$. Pour $0<p<1$, $|a|<1$. En développant le carré et en majorant les termes croisés en valeur absolue, on obtient
 $$0\leq\mathbb E[(H_n/n)^2]\leq\frac{np+2p^2\sum_{h=1}^{n-1}(n-h)|a|^{h-1}}{n^2}\leq\frac1n\left(p+\frac{2p^2}{1-|a|}\right).$$
-La limite est nulle. Le carré porte ici sur la variable avant la prise d'espérance.
+La limite est nulle. Le carré porte ici sur la variable avant la prise d'espérance. On peut contrôler la constante au premier ordre sans valeurs absolues. Avec $h=j-i$, la formule exacte est
+$$\frac{\mathbb E H_n^2}{n}=p+2p^2\sum_{h=1}^{n-1}(1-h/n)a^{h-1}.$$
+À $p$ fixé dans $]0,1[$, les termes prolongés par zéro pour $h\ge n$ sont dominés par la série sommable $|a|^{h-1}$. La limite est donc $p+2p^2/(1-a)=p/(1-p)$. Pour $p=1/2$, seuls les indices consécutifs contribuent et la formule donne exactement $\mathbb E H_n^2=n-1/2$.
 
 ### Question III.3e
 
@@ -461,7 +465,7 @@ La matrice des moyennes des modules est
 $$K=p|D|+(1-p)|R|=\begin{pmatrix}2p&1-p\\1-p&p/2\end{pmatrix}.$$
 Ses valeurs propres sont $(5p\pm\sqrt{25p^2-32p+16})/4$. En effet, sa trace est $5p/2$ et son déterminant $2p-1$. La plus grande valeur propre est positive et son module domine celui de l'autre car la trace est positive. III.3f, II.3c.i et Gelfand donnent
 $$\xi(\mu_p)=\log\rho(K)=\log\!\left(\frac{5p+\sqrt{25p^2-32p+16}}{4}\right).$$
-Par exemple $p=1/2$ donne $\xi=\log(5/4)>0$, alors que la croissance typique de III.3e est nulle.
+Par exemple $p=1/2$ donne $\xi=\log(5/4)>0$, alors que la croissance typique de III.3e est nulle. Plus généralement, le polynôme caractéristique de $K$ prend la valeur $1-5p/2+(2p-1)=-p/2$ en $1$. Sa plus grande racine est donc strictement supérieure à $1$ pour $0<p<1$, d’où $\xi(\mu_p)>0$ sur tout cet intervalle. Lorsque $p$ tend vers $1$ par valeurs inférieures, $\xi(\mu_p)$ tend vers $\log2$. En revanche $\ell(\mu_p)=0$ jusqu’au bord, puis $\ell(\mu_1)=\log2$. Le point isolé du schéma correspond exactement à la disparition des échanges.
 
 ![Figure 5 — Pour la loi de l’échangeur, le logarithme de la moyenne croît à un taux strictement positif lorsque 0 < p < 1, tandis que la moyenne du logarithme a un taux nul.](figures/iii3-courbes-exposants.svg)
 
@@ -519,7 +523,7 @@ La seconde hypothèse donne $\limsup \mathbb EY_n^+\leq\eta$ pour tout $\eta$, d
 
 #### Solution
 
-Appliquons IV.3 à $X_n=n^{-1}\log\|\Psi_n\|_{\rm op}$. Les bornes $\log\alpha\leq X_n\leq\log\beta$ sont celles de II.2a, la convergence de l'espérance vers $\ell(\mu)$ est II.2c et le contrôle de la queue supérieure est IV.2. On a donc bien $X_n\to\ell(\mu)$ en probabilité. Ce résultat concerne la norme du produit.
+Appliquons IV.3 à $X_n=n^{-1}\log\|\Psi_n\|_{\rm op}$. Les bornes $\log\alpha\leq X_n\leq\log\beta$ sont celles de II.2a, la convergence de l'espérance vers $\ell(\mu)$ est II.2c et le contrôle de la queue supérieure est IV.2. On a donc bien $X_n\to\ell(\mu)$ en probabilité. L’argument IV.3 donne également $\mathbb E|n^{-1}\log\|\Psi_n\|_{\rm op}-\ell(\mu)|\to0$. Il utilise les bornes déterministes indépendantes de $n$ obtenues grâce au support fini et à l’inversibilité.
 
 ### Question IV.5a
 

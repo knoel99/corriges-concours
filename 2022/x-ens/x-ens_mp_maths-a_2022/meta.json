@@ -89,6 +89,18 @@
       "perimetre": "Les 33 réponses suivent le sujet, les notations et le rapport du jury du 25 avril 2022. Vérification des déterminants, du rôle du signe et des cas où p vaut 1 ou la dimension de l’espace.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 33 réponses dans les deux éditions à partir du sujet et du rapport officiels. Formule de hauteur, égalité pour le déterminant mixte, développement par mineurs et chemin orienté explicite suivant l’indication de la question 15. Contrôle des six figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
