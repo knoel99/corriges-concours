@@ -1,0 +1,45 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_anglais_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2025
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Anglais%20sujet.pdf",
+    "sujet_sha256": "1a703bf27417d157761a6e9a70f6a61ab55388506852308089dbe60b75b33d5d",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/2025_psi_ep5_anglais_14022025_nb.pdf",
+    "sujet_psi_sha256": "50b6a4b8a501b73f3a91218b323f4ed6a96b9dcbcb75e81e31330497cd867f95",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%2C%20MPI%2C%20PC%20et%20PSI_anglais%20OK.pdf",
+    "rapport_sha256": "e7ae7e8b513614ad74cdcc5bca0f2d8b6cc1495b104f4c3cfb9e4377800d59ad"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "Que mesure chaque document ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les deux fascicules officiels concordants et le rapport du jury. Synthèse des documents 1 à 4 (625 mots hors titre) et réaction personnelle au document 5 (542 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

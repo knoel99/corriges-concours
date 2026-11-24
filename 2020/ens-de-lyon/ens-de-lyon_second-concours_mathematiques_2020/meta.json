@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2020",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2020
+  },
+  "questions": 17,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2c2020_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_2CC_rap_eMath.pdf",
+    "sha256_sujet": "5a9523104b16caa1d58b2f289aba20a6349af28f5adbfd22a57672df55bb0adb"
+  },
+  "figures": [
+    {
+      "fichier": "figures/demi-cercle-convexe.svg",
+      "question": "E.3",
+      "legende": "À gauche, tous les points tiennent dans un demi-cercle ouvert. À droite, leur enveloppe convexe contient l’origine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 17 réponses et indications, vérifiées sur les deux pages du sujet et le rapport de la session. Normalisation des représentations, rectangles de coefficients, contrôle des collisions et justification géométrique de la probabilité du barycentre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

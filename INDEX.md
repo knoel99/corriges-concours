@@ -265,6 +265,7 @@
 | 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 22 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-22-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-22-juin_2026/guide.md) |
+| 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, autres tirages du jury) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -726,6 +727,7 @@
 | 2026 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_arabe_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_arabe_2026/guide.md) |
 | 2026 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/guide.md) |
 | 2026 | X-ENS | MP-MPI-PC-PSI | Français | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/guide.md) |
+| 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
 | 2019 | X-ENS | MP | Informatique A | [md](2019/x-ens/x-ens_mp_informatique-a_2019/brut.md) | [md](2019/x-ens/x-ens_mp_informatique-a_2019/guide.md) |
 | 2020 | X-ENS | MP | Informatique A | [md](2020/x-ens/x-ens_mp_informatique-a_2020/brut.md) | [md](2020/x-ens/x-ens_mp_informatique-a_2020/guide.md) |
@@ -750,9 +752,16 @@
 | 2024 | X-ENS | MP | Physique | [md](2024/x-ens/x-ens_mp_physique_2024/brut.md) | [md](2024/x-ens/x-ens_mp_physique_2024/guide.md) |
 | 2025 | X-ENS | MP | Physique | [md](2025/x-ens/x-ens_mp_physique_2025/brut.md) | [md](2025/x-ens/x-ens_mp_physique_2025/guide.md) |
 | 2026 | X-ENS | MP | Physique | [md](2026/x-ens/x-ens_mp_physique_2026/brut.md) | [md](2026/x-ens/x-ens_mp_physique_2026/guide.md) |
+| 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
+| 2023 | X-ENS | PC | Chimie A | [md](2023/x-ens/x-ens_pc_chimie-a_2023/brut.md) | [md](2023/x-ens/x-ens_pc_chimie-a_2023/guide.md) |
 | 2024 | X-ENS | PC | Chimie A | [md](2024/x-ens/x-ens_pc_chimie-a_2024/brut.md) | [md](2024/x-ens/x-ens_pc_chimie-a_2024/guide.md) |
+| 2025 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_allemand_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_allemand_2025/guide.md) |
+| 2025 | X-ENS | MP-MPI-PC-PSI | Anglais | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_anglais_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_anglais_2025/guide.md) |
+| 2025 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_arabe_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_arabe_2025/guide.md) |
+| 2025 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2025/guide.md) |
+| 2025 | X-ENS | MP-MPI-PC-PSI | Français | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/guide.md) |
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
