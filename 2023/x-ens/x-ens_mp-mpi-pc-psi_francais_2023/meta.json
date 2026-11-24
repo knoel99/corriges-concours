@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_francais_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Français",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC%20SUJET%20DE%20FRANCAIS%20(XEULSR).pdf",
+    "sujet_sha256": "74035b13d5623b368b1ff6cbb0de3cf99e1809545b0ad74322437180cdaa293b",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC-PSI%20RAPPORT%20ECRIT%20FRANCAIS.pdf",
+    "rapport_sha256": "d57da64b4861710a70d99f952cec91cef5df4ab8788dc34021f2df8f077c7510"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qu’est-ce qui peut dédommager du travail ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Dissertation sur le conseil de Condorcet tel qu’il est imprimé dans le sujet remis aux candidats, avec Les Géorgiques, La Condition ouvrière et la version hyper-brève de Par-dessus bord ; guide sur les termes de la comparaison, la variante plus longue du rapport et les décisions qui organisent le travail."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
