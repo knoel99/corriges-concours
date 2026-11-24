@@ -112,6 +112,9 @@
 | 2026 | BEL | AL | Anglais (commentaire et traduction) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (thème Lyon) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (version et thème Ulm) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Chinois (commentaire et traduction) | [md](2026/bel/bel_al_chinois-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_chinois-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Chinois (thème Lyon) | [md](2026/bel/bel_al_chinois-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_chinois-theme-lyon_2026/guide.md) |
+| 2026 | BEL | AL | Chinois (version et thème Ulm) | [md](2026/bel/bel_al_chinois-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_chinois-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |

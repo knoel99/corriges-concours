@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_chinois-commentaire-et-traduction_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (commentaire et traduction)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=8",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Chinois%202026.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-boutiques.svg",
+      "legende": "Le prix de la lecture et du plaisir",
+      "question": "Commentaire"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire en chinois des 28 lignes de Bei Dao, version française des lignes 9 à 15, guide sur la mémoire de la lecture et schéma sur les deux boutiques."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Bei Dao, « Dushu » (读书), dans Chengmen kai (城门开), 2010."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}
