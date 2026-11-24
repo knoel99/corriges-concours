@@ -1,0 +1,41 @@
+{
+  "slug": "x-ens_pc_maths-pc_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2025
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20PC%20sujet.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_PC_Maths%20OK.pdf",
+    "sha256_sujet": "3e76be341381ac895f5726c2b50c6b5bb620d83b4d5a968ae88e9481df15bc90"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q19-entrelacement.svg",
+      "question": "19b",
+      "legende": "Pour les pôles 0, 1,5 et 3, chaque branche située à droite d’un pôle traverse le niveau 1. Les abscisses des intersections donnent les valeurs propres de la matrice perturbée."
+    },
+    {
+      "fichier": "figures/q27-franchissement.svg",
+      "question": "27",
+      "legende": "Exemple avec deux valeurs propres nulles de A. Une valeur propre reste à zéro et la seconde passe au-dessus du seuil. Les autres restent à droite du seuil."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 35 réponses repérées dans les 27 questions des cinq parties à partir du sujet officiel et du rapport détaillé. Preuves des deux sens en 5c et 6, calcul par blocs en 7–8, entrelacement, prolongement polynomial en 22 et franchissement du seuil en 27. Deux figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
