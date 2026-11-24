@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2016",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2016
+  },
+  "questions": 46,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mp_sujets_maths_b.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP_rap_EmathB.pdf",
+    "sha256_sujet": "98f4b91b685be5c5e0223fdcf2cbab1ef0300edf1e81d862f5cdd35b22489a1e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/renouvellement-sur-reseau.svg",
+      "question": "18",
+      "legende": "Accroissement déterministe égal à un et fenêtre de longueur un demi. Le comptage oscille selon la position de la fenêtre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les six pages du sujet natif et le rapport du jury. Vérification des franchissements, de la convergence normale locale, du semi-groupe additif, de la constante de renouvellement et de l’exemple périodique de réseau.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
