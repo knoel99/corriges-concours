@@ -142,6 +142,8 @@
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
+| 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (commentaire et traduction) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (thème Lyon) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/brut.md) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/guide.md) |
