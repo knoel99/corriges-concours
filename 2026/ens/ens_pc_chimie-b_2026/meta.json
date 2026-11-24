@@ -9,7 +9,8 @@
   "questions": 78,
   "redaction": "IA (OpenAI Codex, famille GPT-6)",
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_pc_chim_b_u_26.pdf"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_pc_chim_b_u_26.pdf",
+    "sujet_sha256": "2d59fe1b781e2fe7d6302bd44559ee782e27a190f5149555b237e8a03dd0f8bf"
   },
   "figures": [
     {
@@ -96,6 +97,11 @@
       "fichier": "figures/couplage-alcool-et-enone.svg",
       "question": "Q78",
       "legende": "Structures complètes de 25 et 26. La ligne ondulée de 25 indique le centre carbinolique de configuration indéterminée."
+    },
+    {
+      "question": "Q10",
+      "fichier": "figures/q10-conductivites-initiales.svg",
+      "legende": "À volume de titrant nul, le modèle avec paires rejoint à quelques pour cent la mesure lue sur la courbe."
     }
   ],
   "date_revision": "2026-11-24",
@@ -119,6 +125,105 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le sujet publié par l’ENS, du dosage de sulfate et des spectres de relaxation aux planches de stéréochimie, aux attributions RMN et au couplage des synthons. Calculs et lecture des figures 1, 3, 8 et 9 explicités. En Q71, identification du gaz et de l’ester uniquement. Aucun rapport écrit lié dans le catalogue ENS 2026 pour Chimie B."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "questions_partiellement_traitees": [
+      71
+    ],
+    "questions_non_traitees": [],
+    "precision": "77 questions intégralement traitées. La Q71 couvre l’identification du gaz et la structure de l’ester 18. Le mécanisme de mise en œuvre du diazométhane est hors périmètre."
+  }
 }
