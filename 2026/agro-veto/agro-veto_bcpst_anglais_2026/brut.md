@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique commune** : les deux articles (*Courrier picard*, 20 décembre 2025 ; *The Irish Times*, 10 janvier 2026) exposent les inquiétudes des agriculteurs européens face à l'accord UE-Mercosur. La partie I en restitue la nature, en anglais et avec ses propres mots ; la partie II demande une argumentation personnelle sur l'un des deux sujets au choix, que l'on traite ici tous les deux.
 
 Durée : 2 heures, sans document ni appareil. Barème : partie I sur 10, partie II sur 10. Longueur imposée pour chaque partie : 220 mots ± 10 %, soit 198 à 242 mots, nombre de mots indiqué à la fin. Le candidat ne traite qu'un des deux sujets d'expression et en indique le numéro. Nombre de mots : suites de caractères séparées par des espaces (mot à trait d'union = un mot, nombre = un mot, ponctuation seule non comptée).
@@ -14,13 +20,13 @@ Durée : 2 heures, sans document ni appareil. Barème : partie I sur 10, partie 
 
 Farmers in France and Ireland fear the EU-Mercosur agreement for economic, health and political reasons, as shown by an opinion piece in the Courrier picard (20 December 2025) and a more factual report in The Irish Times (10 January 2026).
 
-Their first concern is price competition. As the Courrier picard notes, the deal will let more South American meat and sugar into Europe. Irish breeders quoted by The Irish Times, who have just enjoyed their first decent margins in decades, fear that 99,000 tonnes of cheaper beef, mostly high-value cuts, will wipe out their fragile profits. The gap in scale is huge: Brazil has 238 million cattle, Ireland six million.
+Their first concern is price competition. As the Courrier picard notes, the deal will let more South American meat and sugar into Europe. Irish farmers fear that a reduced-tariff quota of 99,000 tonnes could erode fragile profits. One expects competition particularly on valuable cuts. For some, 2025 was their first good year in decades. The gap in scale is huge: Brazil has 238 million cattle, Ireland six million.
 
-Farmers also denounce unfair competition. According to these Irish farmers, South American cattle are neither tagged nor traced and are given hormones and antibiotics banned in Europe, while controls there are ineffective. They demand equivalent standards and fear that lower-quality, possibly unsafe meat will reach European consumers.
+Farmers also denounce unfair competition. John Curran questions the identification and traceability of imported cattle, compliance with European rules on hormones and antibiotics, and the effectiveness of inspections. They demand equivalent standards and fear that lower-quality, possibly unsafe meat will reach European consumers.
 
-Finally, both articles suggest that farmers feel sacrificed by their leaders. The deal mainly serves European industry, since Germany hopes to sell more cars and its chemical sector is impatient, while Mercosur countries mostly export farm produce. Despite tractor protests in France and in Brussels, the signature was only postponed in December, and the deal was approved in January although Ireland voted against it. The Courrier picard therefore turns to consumers instead.
+Finally, both articles suggest that farmers feel sacrificed by their leaders. The deal mainly serves European industry, since Germany hopes to sell more cars and its chemical sector is impatient, while Mercosur countries mostly export farm produce. Despite tractor protests in France and in Brussels, the signing was postponed in December. The January report says the EU endorsed the agreement despite Ireland’s opposition. The Courrier picard therefore turns to consumers instead.
 
-**(229 words)**
+**(222 words)**
 
 ## II — Expression écrite
 
@@ -32,7 +38,7 @@ Finally, both articles suggest that farmers feel sacrificed by their leaders. Th
 
 In recent months, French and Irish farmers have protested against the EU-Mercosur agreement, which will bring cheaper South American beef onto European shelves. Since governments seem unable to stop it, an editorial in the Courrier picard urges shoppers to "vote" against the deal with their wallets. Should consumers be held responsible for protecting local agriculture?
 
-To some extent, they should, because demand shapes supply. When shoppers choose local produce, they keep money in rural areas and reward higher animal welfare and environmental standards. In the United Kingdom, the Red Tractor logo, which many supermarkets display, helps consumers identify food produced by British farms. Buying local is therefore a concrete way of supporting farmers.
+To some extent, they should, because demand shapes supply. When shoppers choose local produce, some of their spending stays in rural areas. Independent certification can also help them assess farming standards. In the United Kingdom, the Red Tractor logo, which many supermarkets display, helps consumers identify food produced by British farms. Buying local is therefore a concrete way of supporting farmers.
 
 However, making consumers solely responsible would be unfair. When food prices rose by almost 20 per cent in a year in Britain in 2023, many low-income families simply could not afford to pay more. Moreover, labels are often confusing, and nobody can check where every ingredient in a ready meal comes from.
 
@@ -40,7 +46,7 @@ Responsibility should therefore be shared. Governments can impose the same stand
 
 In short, consumers can help to protect local agriculture, but they cannot carry this burden alone.
 
-**(231 words)**
+**(234 words)**
 
 ### Sujet 2 — Is balancing economic growth with the protection of rural livelihoods possible?
 
@@ -59,3 +65,7 @@ Such a balance, however, depends on political choices. Ireland's National Broadb
 To conclude, the balance is possible, but only if growth is designed to be sustainable and inclusive rather than driven by profitability alone.
 
 **(227 words)**
+
+![Du quota à la marge des éleveurs](figures/lecture-du-dossier.svg)
+
+[Sujet officiel](https://www.concours-agro-veto.fr/sites/default/files/media/2026-05/bcpst_0926_sp_1.pdf) · [Rapport du jury](https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-lvo-anglais-cpge-bcpst-2026.pdf)

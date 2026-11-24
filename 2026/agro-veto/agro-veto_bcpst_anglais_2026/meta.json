@@ -8,5 +8,60 @@
   },
   "questions": 3,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-dossier.svg",
+      "question": "I",
+      "legende": "Du quota à la marge des éleveurs"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-12T12:00:00+00:00",
+      "modifications": true,
+      "perimetre": "Rédaction antérieure des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-12",
+      "modifications": true,
+      "perimetre": "Révision antérieure des deux éditions attestée dans la métadonnée d’origine."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux versions avec les deux articles et le rapport. Attribution à Curran des observations sur les normes, portée du quota de bœuf, calendrier rapporté, et distinction entre origine et certification alimentaire.",
+      "agent": "astra_langues"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2026-05/bcpst_0926_sp_1.pdf",
+    "rapport_jury": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-lvo-anglais-cpge-bcpst-2026.pdf"
+  },
+  "date_revision": "2026-11-24"
 }
