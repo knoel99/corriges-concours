@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_pc_maths-pc_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2019
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_PC_sujet_Maths.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/12/19_PC_rap_eMath.pdf",
+    "sha256_sujet": "a4484e90a085ce8e34ca1e850c7e49c442a0483e724f76dc54055a19d4899e75"
+  },
+  "figures": [
+    {
+      "fichier": "figures/seuil-de-comparaison.svg",
+      "question": "13a",
+      "legende": "Pour p inférieur à q, le milieu des deux paramètres est le seuil de décision. Une égalité de distances compte dans l’événement étudié."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 29 questions ou sous-questions. Vérification de la dilation unitaire, de la normalisation du polynôme sur l’arc et de la borne d’erreur uniforme de reconstruction. Schéma du seuil entre deux paramètres de Bernoulli.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
