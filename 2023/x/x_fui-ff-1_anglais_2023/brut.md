@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Two difficulties in bringing the thylacine back
@@ -14,15 +16,17 @@ Morton raises two difficulties. First comes identity: even an animal resembling 
 
 ### 2. What “ghostlining” means
 
-Morton never uses this word, so its meaning cannot be established from his article alone. Historian Kris Manjapra uses it to describe a society keeping the people harmed by exploitation outside its public account of history, while disregarding their demands for repair. Tasmania provides a possible analogy: a celebrated animal emblem can draw attention away from the persecution behind its disappearance. The analogy is mine. (Manjapra, 2022. Morton, lines 30–35).
+Morton never uses this word, so its meaning cannot be established from his article alone. Historian Kris Manjapra uses it to describe a society keeping the people harmed by exploitation outside its public account of history, while disregarding their demands for repair. My analogy with Tasmania concerns public memory: the state displays the animal on its heraldic shield, although colonial hunters once received payments for killing it. (Manjapra, 2022. Morton, lines 30–35).
 
 ### 3. How conservation and research are funded
 
-The question attributes a stronger claim to Morton than he makes. Other researchers worry that a spectacular experiment attracts attention while vulnerable wildlife receives little protection. Morton accepts that the donations described here represent extra funding. His concern is political: governments celebrate research while permitting habitat destruction and supporting industries whose activities threaten many animals already alive. (Morton, lines 62–77).
+The question attributes a stronger claim to Morton than he makes. Other researchers worry that a spectacular experiment attracts attention while vulnerable wildlife receives little protection. Morton agrees with Ritchie that these private donations add resources. Ritchie contrasts ten million dollars allocated to a hundred threatened species with subsidies worth billions for fossil energy. His concern is political: governments celebrate research while permitting habitat destruction and supporting industries whose activities threaten many animals already alive. (Morton, lines 62–77).
 
 ### 4. A possible ecological role
 
-The proposed return might restore an ecological role left vacant after the animal disappeared. It once hunted other creatures near the top of Tasmania’s food web. Perhaps a successor could again affect prey populations in a similar way. Morton presents that outcome as a possibility. Without observing how such animals behave, nobody can confidently predict their influence upon the landscape. (Morton, lines 36–40 and 46–55).
+The proposed return might restore an ecological role left vacant after the animal disappeared. Australia once had this marsupial as a top predator. Its former ecological position has remained largely vacant, although Morton mentions introduced cats as a qualification. Perhaps a successor could again affect prey populations in a similar way. Morton presents that outcome as a possibility. Without observing how such animals behave, nobody can confidently predict their influence upon the landscape. (Morton, lines 36–40 and 46–55).
+
+![What would count as success?](figures/species-and-population.svg)
 
 ## Essay
 

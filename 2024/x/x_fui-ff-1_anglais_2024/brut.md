@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Shared curriculum, shared constraints
@@ -14,7 +16,7 @@ A shared programme protects access to basic learning, helps pupils continue afte
 
 ### 2. Metacognition and transferable abilities
 
-Metacognition involves examining how one reaches a judgement, including the habits or assumptions that might distort it. Broader abilities such as curiosity, collaboration and readiness to try an unfamiliar approach can help someone learn across different settings. Monbiot presents these transferable capacities as valuable beyond a particular job; he questions attempts to value empathy chiefly through its commercial usefulness. (Monbiot, lines 60–75).
+Metacognition involves examining how one reaches a judgement, including the habits or assumptions that might distort it. Making this habit explicit could help a pupil notice susceptibility to misleading information. Broader abilities such as curiosity, collaboration and readiness to try an unfamiliar approach can help someone learn across different settings. Monbiot presents these transferable capacities as valuable beyond a particular job; he objects when a Scottish skills agency presents corporate performance as the reason for valuing empathy. (Monbiot, lines 60–75).
 
 ### 3. How testing can narrow learning
 
@@ -22,7 +24,9 @@ High-stakes assessments reward children for mastering narrow routines at an age 
 
 ### 4. Why complex systems belong at school
 
-Many urgent problems involve interacting parts whose combined behaviour cannot be predicted by studying each separately. A food supply network or an ecosystem can cross a threshold and change abruptly. Monbiot believes pupils need tools for recognising such risks across disciplines, especially when familiar institutions may themselves be weakened by environmental pressures that pupils will face as adults. (Monbiot, lines 48–59).
+Many urgent problems involve interacting parts whose combined behaviour cannot be predicted by studying each separately. A car engine may contain many components whose functions can be traced separately. Food supply networks and ecosystems can instead cross a threshold and change abruptly. Monbiot believes pupils need tools for recognising such risks across disciplines, especially when familiar institutions may themselves be weakened by environmental pressures that pupils will face as adults. (Monbiot, lines 48–59).
+
+![What a common curriculum makes possible](figures/curriculum-choices.svg)
 
 ## Essay
 

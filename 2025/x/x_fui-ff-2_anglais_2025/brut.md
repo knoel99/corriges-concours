@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Financial pressures on millennials
@@ -16,11 +18,11 @@ From a supervisor’s perspective, frequent departures can look like broken comm
 
 ### 3. The author’s criticism of business practices
 
-Hurst objects to managers who judge success mainly by the next set of financial results. He describes firms reducing what customers receive while collecting additional charges. His technology industry example extends that criticism to pay. A transfer overseas brought one employee a substantial rise, yet his immigration status weakened his bargaining power and helped the firm pay him less than a locally recruited colleague. (Hurst, lines 26–31 and 46–52.)
+Hurst objects to managers who judge success mainly by the next set of financial results. He describes firms reducing what customers receive while collecting additional charges. His technology industry example extends that criticism to pay. A European employee’s transfer to America brought him eighty per cent more pay for unchanged duties, yet his immigration status weakened his bargaining power and helped the firm pay him less than a locally recruited colleague. (Hurst, lines 26–31 and 46–52.)
 
 ### 4. A possible second wave of resignations
 
-The expression predicts another period of unusually widespread voluntary departures. America experienced the earlier wave after pandemic restrictions disrupted working routines. This time Hurst wonders whether European employees might take the lead, particularly when firms withdraw the option of working remotely. Survey respondents increasingly say they would consider moving. Their answers measure intentions, though, and an unhappy employee may lack the savings or permission needed to resign. (Hurst, lines 8–17 and 58–62.)
+The expression predicts another period of unusually widespread voluntary departures. America experienced the earlier wave after pandemic restrictions disrupted working routines. This time Hurst wonders whether European employees might take the lead, particularly when firms withdraw the option of working remotely. Among 31,000 respondents across thirty-one countries, forty-six per cent wanted a change within twelve months; the 2021 comparison stood at forty per cent. Their answers measure intentions, though, and an unhappy employee may lack the savings or permission needed to resign. (Hurst, lines 8–17 and 58–62.)
 
 ![Reported intentions rose by six percentage points. The survey did not count resignations.](figures/survey-intentions.svg)
 
