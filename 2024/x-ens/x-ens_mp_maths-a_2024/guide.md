@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Attribution archivée** · « IA (GPT-6.2 Sol), relue et révisée par IA »
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve commune MP–MPI de quatre heures porte sur deux problèmes indépendants. Dans le premier, on dénombre les permutations selon leur signature, leurs points fixes et leurs cycles, puis on contrôle l’écart du nombre de cycles à ln n. Dans le second, on estime la moyenne et les écarts du nombre de diviseurs premiers distincts.
@@ -17,7 +21,7 @@ Une identité de déterminant encode les signatures et les points fixes. Une aut
 **Repère officiel · 1a.**
 
 > [!INDICATION]
-> Relier la matrice au matrice de rang 1 construite à partir du vecteur de tous les 1.
+> Relier la matrice à la matrice de rang 1 construite à partir du vecteur de tous les 1.
 
 #### Solution
 
@@ -255,6 +259,8 @@ Pour $n=4$, les nombres de cycles se déduisent des cinq types suivants.
 - Six cycles de longueur 4, avec 1 cycle.
 
 Pour le type $3+1$, on choisit le point fixe de 4 façons, puis un cycle sur les trois autres de 2 façons. Pour le type $2+2$, le partenaire du point 1 détermine les deux paires. Les cycles de longueur 4 s’écrivent en commençant par 1 puis en ordonnant les trois autres points. La moyenne vaut $(4+18+22+6)/24=25/12$.
+
+![Figure 1 — Les onze permutations à deux cycles comprennent huit cycles de longueur trois avec un point fixe et trois produits de deux transpositions disjointes.](figures/q09-cycles.svg)
 
 ### Question 17
 
@@ -704,7 +710,9 @@ $$
 &=O\left(\frac{x\ln_2(x)}{\ln x}\right).
 \end{aligned}
 $$
-Par 21a, remplacer chaque partie entière $\lfloor x/(pq)\rfloor$ par $x/(pq)$ coûte au plus une unité par couple admissible. Ce coût est $O(x\ln_2(x))$.
+Par 21a, remplacer chaque partie entière $\lfloor x/(pq)\rfloor$ par $x/(pq)$ coûte au plus une unité par couple admissible. Le coût total est donc $O(x\ln_2(x)/\ln x)$, et en particulier $O(x\ln_2(x))$ comme le demande l’énoncé.
+
+![Figure 2 — Fenêtre sur les couples ordonnés de premiers pour x = 80. Sous l’hyperbole, les deux premiers possèdent un multiple commun inférieur ou égal à 80. La diagonale relève de la question suivante.](figures/q22c-couples-premiers.svg)
 
 Pour la somme pondérée, posons $A_x=\sum_{p\le x}1/p$. Par 20c, $A_x=\ln_2(x)+O(1)$. Si $pq>x$, l’un des premiers est strictement supérieur à $\sqrt x$. Ces couples ont donc un poids total majoré par $2A_x(A_x-A_{\sqrt x})$.
 
