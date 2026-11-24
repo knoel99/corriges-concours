@@ -1,0 +1,74 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2022
+  },
+  "redaction": "Rédaction des deux éditions, lecture du sujet insulaire, du plan, des vues et du rapport. Cinq planches originales avec situation, hypothèses, plan et coupe au 1:50, calcul des surfaces et repli en cas de crue.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Sujet_Ecrit_DESIGN_Projet_Espace.pdf",
+    "sujet_sha256": "922fce0c69e7a25c50d5774f701fa375735bb3439716d2a3cf492b6481b6fb3e",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=572",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Rapport_Oral_DESIGN_Projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-pointe.svg",
+      "question": "Projet, planche 1",
+      "legende": "Le croquis situe le pavillon en aval du pont de Grenelle sur la plate-forme élargie."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-hypotheses.svg",
+      "question": "Projet, planche 2",
+      "legende": "Les hypothèses flottante, verticale et linéaire sont comparées avant le choix de la halle."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-programme.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le plan coté réserve 70 m² à la salle et place les trois services dans la bande latérale."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-coupe.svg",
+      "question": "Projet, planche 4",
+      "legende": "La coupe décrit les portiques, le plancher, le toit et les conditions de retrait avant une crue."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-parcours.svg",
+      "question": "Projet, planche 5",
+      "legende": "Le parcours relie l’échelle de crue, un atelier de réparation et une exposition de pièces réemployées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, lecture du sujet insulaire, du plan, des vues et du rapport. Cinq planches originales avec situation, hypothèses, plan et coupe au 1:50, calcul des surfaces et repli en cas de crue."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 5,
+    "parties": [
+      "Un atelier sur la pointe aval",
+      "Choisir la rive habitée",
+      "La salle des ateliers",
+      "Construire avec des pièces reprises",
+      "Le bâtiment expose ses gestes"
+    ]
+  }
+}

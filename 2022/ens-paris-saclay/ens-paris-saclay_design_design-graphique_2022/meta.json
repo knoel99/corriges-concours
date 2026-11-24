@@ -1,0 +1,74 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2022
+  },
+  "redaction": "Rédaction et lecture de l’original et du rapport. Cinq planches A3 avec recherches, chemin de fer 16 pages, couvertures, doubles pages, six prises de vue schématisées et présentation. Deux essais critiques originaux de 3 000 signes dans les deux éditions.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Sujet_Ecrit_DESIGN_Projet_Graphique.pdf",
+    "sujet_sha256": "0ec0e3b7225037961a9ef87ace11524da0708de1cce7bc66e3fd3ad108f4ad1d",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=572",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Rapport_Oral_DESIGN_Projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-hypotheses.svg",
+      "question": "Projet, planche 1",
+      "legende": "Les essais aboutissent au principe du diptyque, une vue de travail face à une vue d’objet."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-chemin-de-fer.svg",
+      "question": "Projet, planche 2",
+      "legende": "Le chemin de fer affecte les seize pages de la couverture au colophon et à la quatrième."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-couvertures.svg",
+      "question": "Projet, planche 3",
+      "legende": "La première et la quatrième de couverture fixent le titre, le nom de l’artiste et le rôle du CRAFT."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-doubles-pages.svg",
+      "question": "Projet, planche 4",
+      "legende": "Les maquettes montrent les cadrages d’Expansion et la grille de lecture d’un texte critique."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-circulation.svg",
+      "question": "Projet, planche 5",
+      "legende": "Un schéma de présentation associe un exemplaire dressé, un exemplaire ouvert et un petit stock."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et lecture de l’original et du rapport. Cinq planches A3 avec recherches, chemin de fer 16 pages, couvertures, doubles pages, six prises de vue schématisées et présentation. Deux essais critiques originaux de 3 000 signes dans les deux éditions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 5,
+    "parties": [
+      "De la section à la trace",
+      "Distribuer seize pages",
+      "La couverture donne le geste",
+      "Placer le regard dans un vis-à-vis",
+      "Faire circuler un petit livre"
+    ]
+  }
+}
