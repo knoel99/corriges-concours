@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte est extrait d’un discours prononcé à Stockholm par Annie Ernaux en 2022. La compréhension comporte quatre questions pour dix points. Le bref essai libre vaut également dix points.
 
 [Sujet officiel de la session 2](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20FRANCAIS.pdf)
@@ -15,7 +17,7 @@ Cette épreuve de la filière universitaire internationale de formation francoph
 > [!INDICATION]
 > Suivre l’ordre du passage depuis l’enfance jusqu’aux premiers refus des éditeurs.
 
-La littérature accompagne Annie Ernaux depuis l’enfance et organise progressivement sa vie. Sa mère encourage sa passion de lire. Le prix élevé des livres et la méfiance de l’école religieuse contribuent même à les rendre plus désirables. Plus tard, elle choisit ses études pour rester proche des œuvres et commence à écrire. Le refus de son premier roman par des éditeurs ne suffit pas à la détourner de cette ambition.
+La littérature accompagne Annie Ernaux depuis l’enfance et organise progressivement sa vie. Sa mère, qui lit elle-même des romans entre deux clients de la boutique, préfère voir sa fille avec un livre plutôt qu’occupée à des travaux d’aiguille. Le prix élevé des livres et la méfiance de l’école religieuse contribuent même à les rendre plus désirables. Plus tard, elle choisit ses études pour rester proche des œuvres et commence à écrire. Le refus de son premier roman par des éditeurs ne suffit pas à la détourner de cette ambition.
 
 ![Des lectures d’enfance au projet d’écrire.](figures/de-lectrice-a-ecrivaine.svg)
 
@@ -24,7 +26,7 @@ La littérature accompagne Annie Ernaux depuis l’enfance et organise progressi
 > [!INDICATION]
 > Relever ce qui gouverne ses choix de lecture et ce que signifie pour elle entrer dans un roman.
 
-Son rapport aux œuvres est d’abord intime et libre. Elle découvre des livres au gré des circonstances et devient la compagne imaginaire de leurs personnages. Par la suite, elle se projette dans les univers de Flaubert ou de Virginia Woolf. Ces lectures constituent pour elle un autre monde, qu’elle oppose alors, sans en avoir pleinement conscience, au milieu social où elle a grandi.
+Son rapport aux œuvres est d’abord intime et libre. Elle se rappelle des lectures choisies surtout au gré du hasard, des contes de Grimm à La Nausée. Elle dit que les livres lui tenaient compagnie. Par la suite, elle se projette dans les univers de Flaubert ou de Virginia Woolf. Ces lectures constituent pour elle un autre monde, qu’elle oppose alors, sans en avoir pleinement conscience, au milieu social où elle a grandi.
 
 ## A3 · Une manière de vivre
 
@@ -57,3 +59,6 @@ La littérature représente ainsi pour moi une manière de devenir plus attentif
 
 > [!METHODE]
 > Vérifier que chaque exemple est suivi d’une observation personnelle sur son effet. La copie peut être défendue sans supposer que le lecteur connaît déjà toutes les œuvres mentionnées.
+
+> [!METHODE]
+> Pour la quatrième réponse, souligner « seul mérite ». L’adjectif introduit une restriction dans le bilan d’Ernaux, tandis que « recherche » désigne ce que tentait la jeune autrice. Le refus éditorial et le jugement rétrospectif ont des auteurs distincts.

@@ -26,7 +26,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Fran%C3%A7ais.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "e5dcd2bcd60f38864b5cfadaad81e881de5444d58bbeb372e39c1298a8c1e408"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -44,10 +45,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -71,6 +71,17 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante du PDF officiel et des quatre réponses. Citation exacte en A2, personnification et désir du lecteur en A3, interprétation du poème de Hugo et respect de la consigne d’essai vérifiés.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des quatre réponses contre la conférence de Maulpoix, articulation du portrait et des écrits, attribution de la formule de Hugo, rôle du désir, vérification de l’essai et de ses deux schémas.",
       "fournisseur": "codex"
     }
   ]
