@@ -334,11 +334,17 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Informatique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Mathématiques | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/guide.md) |
+| 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
 | 2026 | ENS Rennes | 2SEP | Anglais | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/guide.md) |
+| 2026 | ENS Rennes | 2SEP | Biomécanique (SVSAPS 1) | [md](2026/ens-rennes/ens-rennes_2sep_biomecanique-svsaps-1_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_biomecanique-svsaps-1_2026/guide.md) |
+| 2026 | ENS Rennes | 2SEP | Culture générale | [md](2026/ens-rennes/ens-rennes_2sep_culture-generale_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_culture-generale_2026/guide.md) |
+| 2026 | ENS Rennes | 2SEP | Sciences sociales (SHSAPS 2) | [md](2026/ens-rennes/ens-rennes_2sep_sciences-sociales-shsaps-2_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_sciences-sociales-shsaps-2_2026/guide.md) |
 | 2026 | ENS | BCPST | Biologie | [md](2026/ens/ens_bcpst_biologie_2026/brut.md) | [md](2026/ens/ens_bcpst_biologie_2026/guide.md) |
+| 2026 | ENS | BCPST | Chimie | [md](2026/ens/ens_bcpst_chimie_2026/brut.md) | [md](2026/ens/ens_bcpst_chimie_2026/guide.md) |
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
@@ -474,6 +480,7 @@
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
+| 2021 | X-ENS | MP | Maths A | [md](2021/x-ens/x-ens_mp_maths-a_2021/brut.md) | [md](2021/x-ens/x-ens_mp_maths-a_2021/guide.md) |
 | 2022 | X-ENS | MP | Maths A | [md](2022/x-ens/x-ens_mp_maths-a_2022/brut.md) | [md](2022/x-ens/x-ens_mp_maths-a_2022/guide.md) |
 | 2023 | X-ENS | MP-MPI | Maths A | [md](2023/x-ens/x-ens_mp_maths-a_2023/brut.md) | [md](2023/x-ens/x-ens_mp_maths-a_2023/guide.md) |
 | 2024 | X-ENS | MP | Mathématiques A | [md](2024/x-ens/x-ens_mp_maths-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_maths-a_2024/guide.md) |

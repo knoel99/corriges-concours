@@ -1,0 +1,44 @@
+{
+  "slug": "ens-rennes_2sep_culture-generale_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "2SEP",
+    "matiere": "Culture générale",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-bassin-au-chronometre.svg",
+      "question": "Partie I",
+      "legende": "Un écart observé après l’apprentissage ne permet pas, à lui seul, d’en identifier la cause."
+    },
+    {
+      "fichier": "figures/classer-ou-choregraphier.svg",
+      "question": "Partie II",
+      "legende": "Le basket fauteuil retient des différences fonctionnelles pour composer les équipes ; la chorégraphie travaille des relations entre mouvements."
+    },
+    {
+      "fichier": "figures/comparer-les-maillots.svg",
+      "question": "Partie III",
+      "legende": "Du matériau à l’admissibilité en course, une décision collective intervient dans la comparaison des performances."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-cgaps-2sep-2026_1791303234845-pdf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-cgaps-2026_1791304664652-pdf",
+    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante de la copie à partir de l’extrait et du rapport 2026. Mesure, conditions de production, techniques du corps chez Mauss et rôle de la règle dans les classifications et la natation en bassin contrôlés."
+  }
+}

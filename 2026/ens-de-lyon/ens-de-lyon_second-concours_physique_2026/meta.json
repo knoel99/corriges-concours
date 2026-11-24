@@ -1,0 +1,77 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2026
+  },
+  "questions": 36,
+  "redaction": "Proposition originale non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf"
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Vérification de la numérotation des deux parties, calculs de tension, changement de variable, pentes de la figure 2 et sens des deux trajets visibles sur la figure 4. Contre-calcul indépendant des questions 11, 16, 19 et 23 à 26 du problème, avec relecture des deux graphiques et de la chronophotographie. La remarque préliminaire du rapport discordante avec le thème du sujet est signalée dans la présentation guidée."
+  },
+  "figures": [
+    {
+      "fichier": "figures/interferometre-michelson.svg",
+      "legende": "Trajets aller-retour et recombinaison sur la séparatrice S inclinée à 45°.",
+      "numero": 1
+    },
+    {
+      "fichier": "figures/coin-air-franges.svg",
+      "legende": "Vue en coupe du coin d’air et allure des franges au voisinage du plan des miroirs.",
+      "numero": 2
+    },
+    {
+      "fichier": "figures/element-vertical-au-repos.svg",
+      "legende": "La différence entre les tensions supérieure et inférieure équilibre le poids de l’élément.",
+      "numero": 3
+    },
+    {
+      "fichier": "figures/forces-et-tangentes.svg",
+      "legende": "Les tangentes bleues sont orientées vers les z croissants. Les tensions vertes tirent aux deux extrémités.",
+      "numero": 4
+    },
+    {
+      "fichier": "figures/trajectoires-z-et-z-reduit.svg",
+      "legende": "Trajectoires reconstruites avec z initial de 0,50 m et une pente de 1,45 par seconde, voisine des lectures de la figure 2.",
+      "numero": 5
+    },
+    {
+      "fichier": "figures/boucle-et-entrainement.svg",
+      "legende": "La corde descend sur AB, passe dans l’arc BC, puis remonte sur CD.",
+      "numero": 6
+    },
+    {
+      "fichier": "figures/tension-autour-boucle.svg",
+      "legende": "Tension sur les deux brins et l’arc inférieur. Le raccord en pointillé représente la courte zone de contact avec la roue.",
+      "numero": 7
+    },
+    {
+      "fichier": "figures/celerite-autour-boucle.svg",
+      "legende": "Comparaison de la célérité relative à la corde et de la vitesse d’entraînement.",
+      "numero": 8
+    },
+    {
+      "fichier": "figures/vitesses-signees-brin-descendant.svg",
+      "legende": "Vitesses algébriques dans le laboratoire, axe vertical positif vers le haut. Les deux panneaux ont des origines verticales différentes.",
+      "numero": 9
+    },
+    {
+      "fichier": "figures/chronophotographie-interpretation.svg",
+      "legende": "Trajectoires théoriques illustratives dans les deux brins. L’origine, la durée et les altitudes sont choisies pour illustrer la lecture de la figure 4.",
+      "numero": 10
+    }
+  ]
+}

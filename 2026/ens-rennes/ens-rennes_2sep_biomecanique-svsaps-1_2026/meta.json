@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_2sep_biomecanique-svsaps-1_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "2SEP",
+    "matiere": "Biomécanique (SVSAPS 1)",
+    "annee": 2026
+  },
+  "questions": 7,
+  "redaction": "Corrigé original non officiel, rédigé par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-svsaps-1-biome-canique-2sep-2026_1791303250777-pdf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-svsaps-1-biome-ca-2026_1791532873688-pdf",
+    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026"
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Lecture du sujet et du rapport de jury. Contrôle sur la photographie des deux bras de levier de 0,40 m et 0,50 m, des coefficients de masse bilatéraux et des durées de montée et de descente par deux méthodes. Contre-calcul indépendant sur le sujet des vitesses, de la portée (17,77 m), du seuil en moment (470,88 N) et du barycentre (0,16384 m, 0,31210 m)."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1.1",
+      "fichier": "figures/rotation-et-tangente.svg",
+      "legende": "Dans le plan du dernier tour, la vitesse instantanée est perpendiculaire au rayon."
+    },
+    {
+      "numero": 2,
+      "question": "1.2",
+      "fichier": "figures/composantes-du-lacher.svg",
+      "legende": "Triangle des vitesses au lâcher, dans le plan vertical du vol."
+    },
+    {
+      "numero": 3,
+      "question": "1.3",
+      "fichier": "figures/vol-du-disque.svg",
+      "legende": "Parabole calculée pour une pesanteur de 9,81 m/s². La distance horizontale est mesurée depuis la verticale du lâcher."
+    },
+    {
+      "numero": 4,
+      "question": "2.2",
+      "fichier": "figures/moments-et-bras-de-levier.svg",
+      "legende": "Deux moments opposés autour de O. Les bras de levier sont les distances perpendiculaires aux deux droites d’action."
+    },
+    {
+      "numero": 5,
+      "question": "3",
+      "fichier": "figures/centre-de-masse-segmentaire.svg",
+      "legende": "Les aires des disques représentent les fractions de masse. G est à l’intérieur du triangle formé par les centres des trois groupes."
+    }
+  ]
+}
