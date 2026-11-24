@@ -10,9 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       # Python système du runner, aucune dépendance : forme des corrigés et
       # absence de fichiers revue*, rapport* ou sujet*.
       - run: python3 scripts/verifier.py
+      - name: Vérifier la traçabilité des épreuves X et ENS modifiées
+        if: github.event_name == 'pull_request'
+        run: python3 scripts/couverture_astra.py --depuis "origin/$GITHUB_BASE_REF" --exiger
 
   tests:
     runs-on: ubuntu-latest
