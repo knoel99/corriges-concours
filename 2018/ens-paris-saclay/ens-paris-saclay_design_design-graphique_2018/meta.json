@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2018
+  },
+  "redaction": "Rédaction et lecture des documents de la revue Immersion, quatre planches A3 originales. Promotion en librairie, support imprimé, séquence numérique annotée et stratégie de fidélisation et de recrutement.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Graphique.pdf",
+    "sujet_sha256": "b03962552dde7562fef545da15c8de1b9bf2f3f81738222b0396edba92be7528",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=277",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-identite.svg",
+      "question": "Projet, planche 1",
+      "legende": "La revue devient une question graphique accessible aux joueurs comme aux lecteurs d’art."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-imprime.svg",
+      "question": "Projet, planche 2",
+      "legende": "Une affiche et un triptyque imprimé relient l’analyse critique au geste du lecteur."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-annotation.svg",
+      "question": "Projet, planche 3",
+      "legende": "Trois écrans transforment une image en objet d’analyse et mènent à l’article."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-lectorat.svg",
+      "question": "Projet, planche 4",
+      "legende": "La table de librairie, l’atelier public et l’appel à contributions soutiennent trois objectifs éditoriaux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et lecture des documents de la revue Immersion, quatre planches A3 originales. Promotion en librairie, support imprimé, séquence numérique annotée et stratégie de fidélisation et de recrutement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "La revue se lit par un seuil",
+      "Détacher un fragment imprimé",
+      "Faire de l’écran une annotation",
+      "Publier entre deux numéros"
+    ]
+  }
+}

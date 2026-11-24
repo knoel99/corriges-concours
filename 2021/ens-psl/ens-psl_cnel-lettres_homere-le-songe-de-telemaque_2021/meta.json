@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_homere-le-songe-de-telemaque_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Homère — le songe de Télémaque",
+    "annee": 2021
+  },
+  "intitule": "Homère — le songe de Télémaque",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-5-sujet_epreuve_ecrite.pdf",
+    "sujet_sha256": "218c00732f648cf1f727077c4e2cc3d5e592cea7269fca4f84a3d4d2460d562b",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/formes-de-la-voix.svg",
+      "question": "Explication",
+      "legende": "Ce que l’hexamètre donne à entendre"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Étude des épithètes, de la métrique, des formes grammaticales et de deux écarts entre grec et traduction aux vers 19 et 41."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}

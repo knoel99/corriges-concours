@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_thucydide-les-origines-de-lhistoire-grecque_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Thucydide — les origines de l’histoire grecque",
+    "annee": 2021
+  },
+  "intitule": "Thucydide — les origines de l’histoire grecque",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-2-sujet_epreuve_ecrite.pdf",
+    "sujet_sha256": "cad8b863ee407cff27cc83901807d658001a4f3dc6c273d1684c7778bc4484ec",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/les-traces-des-usages.svg",
+      "question": "Explication",
+      "legende": "Comment remonter des indices au passé ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des chapitres VI à VIII, des notes de l’édition, du raisonnement par analogie et des indices de Délos."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}

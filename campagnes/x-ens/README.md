@@ -10,7 +10,7 @@ Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir le
 
 ## Lire le bilan
 
-Le bilan daté donne les comptes par matière et les liens vers les preuves pour chaque épreuve. [Bilan du 24 novembre 2026](bilans/2026-11-24.md) · [Tableau détaillé](bilans/2026-11-24.tsv)
+Le bilan daté donne les comptes par matière et les liens vers les preuves pour chaque épreuve. [Dernier bilan sur le site](https://sujet-corriges.ai/couverture-x-ens) · [Recherche par épreuve](https://sujet-corriges.ai/couverture-x-ens/epreuves) · [Relevés datés sur GitHub](bilans/)
 
 Depuis la racine du dépôt, cette commande écrit une ligne par épreuve avec son état dans Git, son état sur le site et le lien vers la fiche. Le contrôle des PDF utilise `pdftotext` (paquet `poppler-utils`). L’option `--site` interroge les éditions en ligne des paires portant une signature qualifiante.
 
@@ -39,6 +39,8 @@ Certaines épreuves sont attestées par l’ENS alors que le texte ou les pièce
 Pour les fascicules B/L de Lyon, le relevé distingue les planches intégrales de mathématiques, les intitulés d’exposés, les références de presse et les cartes ou dossiers à retrouver. Les options écrites 2025 présentes aussi dans le recueil de Lyon conservent leur fiche commune. [Pages des sujets et rapports B/L de Lyon](sections-b-l-lyon.tsv)
 
 À l’oral d’espagnol A/L de l’ENS-PSL, le tronc commun est répertorié en un fascicule de 27 références. Pour l’option, le rapport donne séparément cinq passages, deux de Calderón et trois de Saer. Il mentionne successivement quatre et cinq candidats, puis détaille cinq notes et cinq extraits. [Références des oraux d’espagnol](oraux-espagnol-ulm-2026.tsv)
+
+Les oraux de la sélection internationale Lettres de 2016 à 2019 sont identifiés par consigne, y compris lorsque plusieurs candidats recevaient des extraits différents réunis dans le même PDF. Les deux index qui reproduisent le commentaire de Biland en 2016 renvoient à une même épreuve. La page finale du recueil littéraire de 2016 reproduit la consigne de l’écrit sur Modiano. Les feuillets d’histoire de l’art de 2016 et 2018 sont datés au moyen des œuvres et des rapports de session. [Épreuves orales et pages des recueils](ulm-selection-lettres-oraux-2016-2019.tsv)
 
 Pour la sélection internationale Lettres de 2016 à 2019, les sujets et leurs annexes ont été lus ensemble. Les deux feuillets de lettres classiques de 2017 identifient des oraux sur Platon et Sénèque, y compris dans la rubrique « écrits » de l’index. Leurs consignes précisent la durée de l’exposé et de l’entretien. Six écrits du concours normalien étudiant de 2019, 2021 et 2022 complètent le dépouillement. [Sujets, exemplaires et pièces distribuées](ulm-selection-2016-2019-et-cnel-2019-2022.tsv)
 

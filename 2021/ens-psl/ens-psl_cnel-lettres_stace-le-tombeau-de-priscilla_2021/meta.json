@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_stace-le-tombeau-de-priscilla_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Stace — le tombeau de Priscilla",
+    "annee": 2021
+  },
+  "intitule": "Stace — le tombeau de Priscilla",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-7-sujet_epreuve_ecrite.pdf",
+    "sujet_sha256": "bff02926e65ac869a6ea1e7886fd2540f9a9292469d036b74d0be7297de1ff24",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/une-maison-et-la-ville.svg",
+      "question": "Explication",
+      "legende": "Du tombeau privé à la maison flavienne"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Étude du tombeau, des effigies, de la comparaison de Pharos et du rapport entre consolation et culte impérial."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}

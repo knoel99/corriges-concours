@@ -1,0 +1,165 @@
+{
+  "slug": "ens_pc_physique-chimie_2022",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2022
+  },
+  "questions": 66,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/05/22_pc_sujet_phychi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/07/22_pc_rap_phychi_lyon.pdf",
+    "sujet_sha256": "e9d34591d677c4fa8ecb0651ffbe01d68270d8a907d902e0f33ae23b50483d0f",
+    "rapport_sha256": "920b3d0ac8fab208abe2eda8e4bab18b23047437307b38c4463a71cfea1180a8"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "P31",
+      "P32",
+      "P33",
+      "P34",
+      "C1",
+      "C2",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "questions_partiellement_traitees": [
+      "C3",
+      "C7",
+      "C20"
+    ],
+    "questions_non_traitees": [
+      "C19",
+      "C21"
+    ],
+    "precision": "Les 34 questions de physique et 27 des 32 questions de chimie sont traitées intégralement. C3 et C7 exposent les principes d’interactions et de thermodynamique, C20 le raisonnement stéréochimique. Le classement des milieux pour un agent irritant et les étapes ciblées de synthèse ou d’optimisation de C19 et C21 restent hors couverture."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "question": "P1",
+      "fichier": "figures/pression-secteur.svg",
+      "legende": "Les tractions sur les deux faces rectilignes ont la même pression scalaire et des normales distinctes."
+    },
+    {
+      "question": "P5",
+      "fichier": "figures/surface-reduite.svg",
+      "legende": "Les profils ont un point de croisement commun au niveau du liquide au repos."
+    },
+    {
+      "question": "P8",
+      "fichier": "figures/flotteur-rotation.svg",
+      "legende": "La poussée suit la normale locale. La fraction immergée reste fixée par le rapport des masses volumiques."
+    },
+    {
+      "question": "P11",
+      "fichier": "figures/miroir-plan-focal.svg",
+      "legende": "Deux rayons axiaux convergent au foyer. Le rayon de sommet construit l’image paraxiale d’une direction voisine."
+    },
+    {
+      "question": "P24",
+      "fichier": "figures/couronne-couple.svg",
+      "legende": "Les tractions tangentes ont des signes opposés et des rayons d’application différents."
+    },
+    {
+      "question": "P32",
+      "fichier": "figures/vitesse-vorticite.svg",
+      "legende": "Solutions du modèle cylindrique à trois temps réduits. La vorticité du cœur et celle de la couche freinée ont des signes opposés."
+    },
+    {
+      "question": "C9",
+      "fichier": "figures/regioisomeres-lignine.svg",
+      "legende": "Les quatre adduits formels se distinguent par la position du nouvel OH, en vert. O⁻ est indiqué en bleu dans une forme de Lewis de chaque espèce."
+    },
+    {
+      "question": "C17",
+      "fichier": "figures/azeotrope-maximum.svg",
+      "legende": "L’azéotrope est un maximum d’ébullition. Les branches sont schématiques et seules les températures des points remarquables sont représentées quantitativement."
+    },
+    {
+      "question": "C28",
+      "fichier": "figures/pic-espece-adsorbee.svg",
+      "legende": "Le courant atteint son maximum quand la fraction de forme réduite restante vaut 1/e."
+    },
+    {
+      "question": "C31",
+      "fichier": "figures/etalonnage-voltammetrie.svg",
+      "legende": "Exemple d’interpolation sur une droite illustrative. La détermination expérimentale utilise la pente et l’ordonnée à l’origine mesurées avec les étalons."
+    },
+    {
+      "question": "C1",
+      "fichier": "figures/lecture-nonanamide.svg",
+      "legende": "La chaîne acyle comporte le carbone du carbonyle et huit autres carbones. Le cycle porte un hydroxyle et un méthoxy."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions à partir du sujet et du rapport 2022 de l’ENS de Lyon. Bilan des pressions, énergie et diffusion radiale, optique du miroir, thermochimie générale, transformations autonomes de la lignine et dosage électrochimique. Vérification des graphes originaux, du schéma des régioisomères et des signes de la vorticité. Couverture partielle précisée par question."
+    }
+  ]
+}

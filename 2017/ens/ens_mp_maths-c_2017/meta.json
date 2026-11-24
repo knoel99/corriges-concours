@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2017",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2017
+  },
+  "questions": 32,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathC.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_MP_rap_eMathC.pdf",
+    "sha256_sujet": "e612aae931048a5e31b7b1ba5ed7a87d98094b2bead402a0bbfd352767d04e16"
+  },
+  "figures": [
+    {
+      "fichier": "figures/encadrement-periodique.svg",
+      "question": "III.3a",
+      "legende": "Les deux rampes encadrent l’indicatrice. La zone entre elles se concentre près des deux extrémités."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet natif de six pages et du rapport de l’écrit commun. Vérification de chaque item, du dessin périodique en III.3a, des constantes de van der Corput et de la borne diophantienne quantitative.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

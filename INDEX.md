@@ -141,11 +141,15 @@
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2017 | BEL | AL | Anglais (commentaire et traduction) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/guide.md) |
+| 2017 | BEL | AL | Anglais (thème Lyon) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (commentaire et traduction) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (thème Lyon) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/guide.md) |
+| 2019 | BEL | AL | Chinois (commentaire et traduction) | [md](2019/bel/bel_al_chinois-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_chinois-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Chinois (thème Lyon) | [md](2019/bel/bel_al_chinois-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_chinois-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/brut.md) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/guide.md) |
 | 2022 | BEL | AL | Arabe (commentaire et traduction) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Arabe (thème Lyon) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/guide.md) |
@@ -162,7 +166,15 @@
 | 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2017 | BEL | AL | Étude de texte français (Lyon) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/brut.md) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/guide.md) |
+| 2019 | BEL | AL | Espagnol (commentaire et traduction) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Espagnol (thème Lyon) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Étude de texte français (Lyon) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/brut.md) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/guide.md) |
+| 2019 | BEL | AL | Grec moderne (commentaire et traduction) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Italien (commentaire et traduction) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Italien (thème Lyon) | [md](2019/bel/bel_al_italien-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_italien-theme-lyon_2019/guide.md) |
+| 2019 | BEL | AL | Portugais (commentaire et traduction) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Russe (commentaire et traduction) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Russe (thème Lyon) | [md](2019/bel/bel_al_russe-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_russe-theme-lyon_2019/guide.md) |
 | 2022 | BEL | AL | Étude de texte français (Lyon) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/brut.md) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
@@ -590,6 +602,7 @@
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
+| 2022 | ENS | PC | Physique-chimie | [md](2022/ens/ens_pc_physique-chimie_2022/brut.md) | [md](2022/ens/ens_pc_physique-chimie_2022/guide.md) |
 | 2023 | ENS | PC | Physique-chimie | [md](2023/ens/ens_pc_physique-chimie_2023/brut.md) | [md](2023/ens/ens_pc_physique-chimie_2023/guide.md) |
 | 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
@@ -610,9 +623,11 @@
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Entretien (oral) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Apollonios de Rhodes — les Argonautiques | [md](2022/ens-psl/ens-psl_cnel-lettres_apollonios-de-rhodes-les-argonautiques_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_apollonios-de-rhodes-les-argonautiques_2022/guide.md) |
+| 2021 | ENS-PSL | CNEL Lettres | Homère — le songe de Télémaque | [md](2021/ens-psl/ens-psl_cnel-lettres_homere-le-songe-de-telemaque_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_homere-le-songe-de-telemaque_2021/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Hérodote — le débat sur les régimes politiques | [md](2023/ens-psl/ens-psl_cnel-lettres_herodote-le-debat-sur-les-regimes-politiques_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_herodote-le-debat-sur-les-regimes-politiques_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Irénée de Lyon — commentaire latin | [md](2023/ens-psl/ens-psl_cnel-lettres_irenee-de-lyon-commentaire-latin_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_irenee-de-lyon-commentaire-latin_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Irénée de Lyon — polémique et exégèse | [md](2023/ens-psl/ens-psl_cnel-lettres_irenee-de-lyon-polemique-et-exegese_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_irenee-de-lyon-polemique-et-exegese_2023/guide.md) |
+| 2021 | ENS-PSL | CNEL Lettres | Justin de Néapolis — l’Apologie | [md](2021/ens-psl/ens-psl_cnel-lettres_justin-de-neapolis-lapologie_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_justin-de-neapolis-lapologie_2021/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Jérôme — la vie d’Asella | [md](2022/ens-psl/ens-psl_cnel-lettres_jerome-la-vie-dasella_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_jerome-la-vie-dasella_2022/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | La statue de Zeus à Olympie | [md](2023/ens-psl/ens-psl_cnel-lettres_la-statue-de-zeus-a-olympie_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_la-statue-de-zeus-a-olympie_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Le phare antique de Boulogne-sur-Mer | [md](2023/ens-psl/ens-psl_cnel-lettres_le-phare-antique-de-boulogne-sur-mer_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_le-phare-antique-de-boulogne-sur-mer_2023/guide.md) |
@@ -623,9 +638,12 @@
 | 2023 | ENS-PSL | CNEL Lettres | Cicéron — le Pro Archia | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Histoire de l’art | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Procope — la prise d’Antioche | [md](2022/ens-psl/ens-psl_cnel-lettres_procope-la-prise-dantioche_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_procope-la-prise-dantioche_2022/guide.md) |
+| 2021 | ENS-PSL | CNEL Lettres | Quintilien — latin et langues étrangères | [md](2021/ens-psl/ens-psl_cnel-lettres_quintilien-latin-et-langues-etrangeres_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_quintilien-latin-et-langues-etrangeres_2021/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Quintus de Smyrne — la Suite d’Homère | [md](2022/ens-psl/ens-psl_cnel-lettres_quintus-de-smyrne-la-suite-dhomere_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_quintus-de-smyrne-la-suite-dhomere_2022/guide.md) |
+| 2021 | ENS-PSL | CNEL Lettres | Stace — le tombeau de Priscilla | [md](2021/ens-psl/ens-psl_cnel-lettres_stace-le-tombeau-de-priscilla_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_stace-le-tombeau-de-priscilla_2021/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Sénèque — la Lettre 54 | [md](2022/ens-psl/ens-psl_cnel-lettres_seneque-la-lettre-54_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_seneque-la-lettre-54_2022/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Tacite — les peuples de Germanie | [md](2022/ens-psl/ens-psl_cnel-lettres_tacite-les-peuples-de-germanie_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_tacite-les-peuples-de-germanie_2022/guide.md) |
+| 2021 | ENS-PSL | CNEL Lettres | Thucydide — les origines de l’histoire grecque | [md](2021/ens-psl/ens-psl_cnel-lettres_thucydide-les-origines-de-lhistoire-grecque_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_thucydide-les-origines-de-lhistoire-grecque_2021/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Thucydide — les vestiges et la puissance des cités | [md](2022/ens-psl/ens-psl_cnel-lettres_thucydide-les-vestiges-et-la-puissance-des-cites_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_thucydide-les-vestiges-et-la-puissance-des-cites_2022/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Tite-Live — les Bacchanales | [md](2022/ens-psl/ens-psl_cnel-lettres_tite-live-les-bacchanales_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_tite-live-les-bacchanales_2022/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Virgile — la langue poétique des Géorgiques | [md](2022/ens-psl/ens-psl_cnel-lettres_virgile-la-langue-poetique-des-georgiques_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_virgile-la-langue-poetique-des-georgiques_2022/guide.md) |
@@ -796,6 +814,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2017 | X-ENS | MP | Informatique A | [md](2017/x-ens/x-ens_mp_informatique-a_2017/brut.md) | [md](2017/x-ens/x-ens_mp_informatique-a_2017/guide.md) |
 | 2018 | X-ENS | MP | Informatique A | [md](2018/x-ens/x-ens_mp_informatique-a_2018/brut.md) | [md](2018/x-ens/x-ens_mp_informatique-a_2018/guide.md) |
 | 2019 | X-ENS | MP | Informatique A | [md](2019/x-ens/x-ens_mp_informatique-a_2019/brut.md) | [md](2019/x-ens/x-ens_mp_informatique-a_2019/guide.md) |
 | 2020 | X-ENS | MP | Informatique A | [md](2020/x-ens/x-ens_mp_informatique-a_2020/brut.md) | [md](2020/x-ens/x-ens_mp_informatique-a_2020/guide.md) |
@@ -842,6 +861,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2017 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2017/x-ens/x-ens_psi_modelisation_2017/brut.md) | [md](2017/x-ens/x-ens_psi_modelisation_2017/guide.md) |
 | 2018 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2018/x-ens/x-ens_psi_modelisation_2018/brut.md) | [md](2018/x-ens/x-ens_psi_modelisation_2018/guide.md) |
 | 2019 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2019/x-ens/x-ens_psi_modelisation_2019/brut.md) | [md](2019/x-ens/x-ens_psi_modelisation_2019/guide.md) |
 | 2020 | X-ENS | PSI | Modélisation | [md](2020/x-ens/x-ens_psi_modelisation_2020/brut.md) | [md](2020/x-ens/x-ens_psi_modelisation_2020/guide.md) |
