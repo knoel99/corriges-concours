@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2020",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2020
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf",
+    "sha256_sujet": "12ff6602cce05262f2f30aebef0d51605b04fa4f886fc8e9219134511b8fe90e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/zone-stationnaire.svg",
+      "question": "19",
+      "legende": "Pour la phase quadratique, la zone centrale où les oscillations se compensent peu a une largeur proportionnelle à la racine inverse du paramètre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des questions 1 à 20 et de leurs subdivisions. Contrôle des petits indices en 8a, des deux queues pour Stirling et de la condition de bord en 17 avec un contre-exemple explicite, schéma de phase stationnaire.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

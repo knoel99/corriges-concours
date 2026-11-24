@@ -1,0 +1,110 @@
+{
+  "slug": "x_mp_physique-et-si_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Physique et SI",
+    "annee": 2024
+  },
+  "questions": 37,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP%20SUJET%20PHYSIQUE%20ET%20S.I.%20(X).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP%20RAPPORT%20ECRIT%20PHYSIQUE%20ET%20S.I.%20(X).pdf",
+    "sujet_sha256": "3727d5d7dbfbc8dcc959727457b5b20785c6fa15bf9de80eadd765de0ea48bae",
+    "rapport_sha256": "7d120ecac25b232559a755e5321e678db2657e41928e54b65e507423e1f82fab"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 18 questions de physique et les 19 questions de sciences de l’ingénieur sont traitées. Six figures originales reproduisent les constructions demandées, les domaines de stabilité et les liaisons du Delthaptic."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "P.3",
+      "fichier": "figures/durees-de-vol.svg",
+      "legende": "Lecture de l’enregistrement acoustique, au centième près sur l’ordonnée. La pente moyenne est proche de −0,09."
+    },
+    {
+      "numero": 2,
+      "question": "P.15",
+      "fichier": "figures/multiplicateurs-reels.svg",
+      "legende": "Branches des racines pour r = 0,65. La traversée de +1 ou −1 par une racine donne une frontière de stabilité."
+    },
+    {
+      "numero": 3,
+      "question": "P.18",
+      "fichier": "figures/secteur-de-stabilite.svg",
+      "legende": "Secteur de stabilité pour r = 0,70. Les bornes sont exclues pour la stabilité asymptotique stricte."
+    },
+    {
+      "numero": 4,
+      "question": "SI.6",
+      "fichier": "figures/altitude-robot-delta.svg",
+      "legende": "Branche géométrique où la plateforme est au-dessus des coudes. Les extrémités donnent environ 410 et 64 mm."
+    },
+    {
+      "numero": 5,
+      "question": "SI.11",
+      "fichier": "figures/graphe-des-liaisons.svg",
+      "legende": "Graphe fermé. Les deux plateformes a et b sont commandées en translation, la poignée p est reliée à la tige t par la vis."
+    },
+    {
+      "numero": 6,
+      "question": "SI.13",
+      "fichier": "figures/rotations-de-calcul.svg",
+      "legende": "Rotations utilisées dans la fermeture AB = λ zₜ. À gauche, projection dans le plan horizontal. À droite, le plan de rotation autour de yₜ est représenté avec z₀ comme premier axe."
+    }
+  ],
+  "redaction": "Les 18 questions de physique et les 19 questions de sciences de l’ingénieur sont traitées. Six figures originales reproduisent les constructions demandées, les domaines de stabilité et les liaisons du Delthaptic.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "P.5",
+      "P.6",
+      "P.7",
+      "P.8",
+      "P.9",
+      "P.10",
+      "P.11",
+      "P.12",
+      "P.13",
+      "P.14",
+      "P.15",
+      "P.16",
+      "P.17",
+      "P.18",
+      "SI.1",
+      "SI.2",
+      "SI.3",
+      "SI.4",
+      "SI.5",
+      "SI.6",
+      "SI.7",
+      "SI.8",
+      "SI.9",
+      "SI.10",
+      "SI.11",
+      "SI.12",
+      "SI.13",
+      "SI.14",
+      "SI.15",
+      "SI.16",
+      "SI.17",
+      "SI.18",
+      "SI.19"
+    ]
+  }
+}

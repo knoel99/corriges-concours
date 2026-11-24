@@ -1,0 +1,74 @@
+{
+  "slug": "bel_al_etude-de-texte-francais-lyon_2019",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Étude de texte français (Lyon)",
+    "annee": 2019
+  },
+  "intitule": "Fontenelle, Bérénice et Cosme II de Médicis",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=4",
+    "sujet_sha256": "584c45c92277aefe34fd083279dd477990f7568de569a3f8d169bd44313931e2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/LETTRES_MODERNES_2019%20internet.pdf",
+    "rapport_sha256": "e84c652f5526b0be686a169d5125d0baa99151bda0e65f833d5ea4243645ab8d",
+    "pages_rapport": "1–6",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/nom-et-gloire.svg",
+      "question": "Démonstration",
+      "legende": "Comment Bérénice console-t-elle Cosme ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la partie consacrée à cet écrit de spécialité, pages 1–6 du rapport."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire littéraire et stylistique complet, guide, vérification du passage et création du schéma sur les deux pages de cet écrit."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    }
+  ]
+}

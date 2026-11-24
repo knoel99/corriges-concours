@@ -1,0 +1,179 @@
+{
+  "slug": "ens_pc_physique-chimie_2023",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2023
+  },
+  "questions": 67,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/05/23_pc_sujet_phychi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/07/23_pc_rap_phychi_lyon.pdf",
+    "sujet_sha256": "ed0cfb68978ad719db75cd381e5ebdf75a25acd14b1f2e7a2b2edf34a1406dd9",
+    "rapport_sha256": "6a499f84605d7e2e448d0773eb7c92020e75434fc671598ac9dea5d48872eeec"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "P31",
+      "P32",
+      "P33",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "questions_partiellement_traitees": [
+      "P17"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les 33 questions de physique et les 34 de chimie sont représentées. Parmi elles, 66 sont intégralement traitées. P17 est limitée au principe de la dépendance du flux à la masse et à l’exemple hélium–néon. L’optimisation de l’enrichissement et ses applications isotopiques restent hors couverture. La donnée manquante de P12 est conservée comme paramètre."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/echange-ferme.svg",
+      "legende": "Populations normalisées des deux enceintes fermées ; la somme vaut toujours un.",
+      "question": "P3"
+    },
+    {
+      "fichier": "figures/gaussienne-et-moment.svg",
+      "legende": "Les gaussiennes ont même aire, tandis que le poids de uₓ² présente deux maxima et s’annule à l’origine.",
+      "question": "P8"
+    },
+    {
+      "fichier": "figures/volume-balaye.svg",
+      "legende": "Le tube oblique se termine sur le trou. Seule la projection normale du déplacement intervient dans le volume.",
+      "question": "P10"
+    },
+    {
+      "fichier": "figures/trois-fuites.svg",
+      "legende": "Les courbes calculées ont une tangente commune en zéro, puis se séparent selon la taille de la fuite.",
+      "question": "P23"
+    },
+    {
+      "fichier": "figures/deux-temps.svg",
+      "legende": "Pour la petite fuite k = 0,1, le déséquilibre initial se résorbe rapidement. La vidange commune est beaucoup plus lente.",
+      "question": "P24"
+    },
+    {
+      "fichier": "figures/diffusion-enceintes.svg",
+      "legende": "Solutions à bords réfléchissants pour une source initiale à gauche. Un dépassement du plateau dépend de la position d’observation.",
+      "question": "P29"
+    },
+    {
+      "fichier": "figures/analogie-rc.svg",
+      "legende": "Les deux capacités partagent leur référence. Seul le montage avec fuite possède la branche supplémentaire vers cette référence.",
+      "question": "P32"
+    },
+    {
+      "fichier": "figures/geometrie-bf3.svg",
+      "legende": "Pour une même distance B–F de 130,7 pm, le modèle trigonal reproduit la séparation F···F observée.",
+      "question": "C7"
+    },
+    {
+      "fichier": "figures/trois-hydrogenes.svg",
+      "legende": "Coefficients relatifs sur les trois orbitales 1s. Les deux combinaisons de somme nulle ont la même énergie.",
+      "question": "C10"
+    },
+    {
+      "fichier": "figures/correlation-ah3.svg",
+      "legende": "Corrélation qualitative des niveaux de même symétrie. Les niveaux notés e représentent chacun deux composantes dégénérées.",
+      "question": "C14"
+    },
+    {
+      "fichier": "figures/cycle-de-lewis.svg",
+      "legende": "Bilans de charge et transferts dans l’ordre de la figure 4, en tenant compte de la régénération du borane à l’étape B.",
+      "question": "C27"
+    },
+    {
+      "fichier": "figures/dean-stark.svg",
+      "legende": "Les vapeurs atteignent le réfrigérant et l’eau se sépare dans le tube gradué ; le solvant surnageant retourne au ballon.",
+      "question": "C31"
+    },
+    {
+      "fichier": "figures/configuration-du-cycloadduit.svg",
+      "legende": "Vue locale du produit endo retenu. L’orientation du méthyle en arrière permet la lecture de la configuration.",
+      "question": "C34"
+    },
+    {
+      "fichier": "figures/deux-adduits-endo.svg",
+      "legende": "Deux dessins miroirs du même squelette bicyclique ponté. CHO est tourné vers le pont portant la double liaison.",
+      "question": "C32"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions dans la couverture annoncée, à partir de l’original et du rapport 2023 de l’ENS de Lyon. Vérification des équations de bilan, des courbes d’effusion et des limites de diffusion, des calculs cristallographiques, des spectres et de la stéréochimie. Quatorze figures originales."
+    }
+  ]
+}

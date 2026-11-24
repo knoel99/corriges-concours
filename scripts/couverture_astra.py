@@ -15,6 +15,7 @@ import unicodedata
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
+from http.client import IncompleteRead
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -240,7 +241,7 @@ def telecharger(url: str) -> bytes:
         try:
             with urlopen(requete, timeout=25) as reponse:
                 return reponse.read()
-        except (TimeoutError, URLError) as exc:
+        except (TimeoutError, URLError, ConnectionError, IncompleteRead) as exc:
             if (
                 tentative == 2
                 or isinstance(exc, HTTPError)
@@ -344,7 +345,7 @@ def main() -> int:
                     if site_verifie(dossier, fiche, signatures)
                     else "trace à vérifier"
                 )
-            except (OSError, ValueError, subprocess.SubprocessError) as exc:
+            except (OSError, IncompleteRead, ValueError, subprocess.SubprocessError) as exc:
                 site = f"contrôle impossible ({exc})"
         return (
             slug,

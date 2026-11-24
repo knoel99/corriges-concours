@@ -1,0 +1,76 @@
+{
+  "slug": "ens-rennes_d-e_droit-public_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit public",
+    "annee": 2025
+  },
+  "intitule": "Protection diplomatique et responsabilité sans faute, CE, Ass., 24 octobre 2024, n° 465144",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-epreuve-a-options-d-e-2025_1760692424609-pdf#page=7",
+    "sujet_sha256": "0fb9fb1a8b8074e658f82a4da84932837e6757863dd60f861db296bb17767754",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-public-d-e-2025_1768897882955-pdf",
+    "rapport_sha256": "c02c1b93226b2c1f0533e82b14e93e2c135c82bb32dadae4b1ba363dd7696d85",
+    "references": [
+      "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-10-24/465144",
+      "https://conseil-etat.fr/fr/arianeweb/CE/analyse/2024-10-24/465144"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/competence-et-fond.svg",
+      "question": "Commentaire",
+      "legende": "Pourquoi casser l’arrêt puis rejeter la demande ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Rapport de neuf pages, distinction compétence et fond, charge spéciale, qualité du demandeur et causalité."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie, du guide de lecture et du schéma. Protection diplomatique et responsabilité sans faute, CE, Ass., 24 octobre 2024, n° 465144"
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    }
+  ]
+}
