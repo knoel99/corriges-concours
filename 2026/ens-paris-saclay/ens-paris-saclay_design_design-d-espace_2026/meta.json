@@ -1,0 +1,63 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2026,
+    "type": "pratique"
+  },
+  "intitule": "Haltes cyclistes le long du canal",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_sujet_1A_design_d_espace.pdf",
+    "sha256_sujet": "9da0782ab12c2968397e470f7584a508e544a17228c2e6052f1993db77242141"
+  },
+  "figures": [
+    {
+      "fichier": "figures/intentions.svg",
+      "question": "Planche 1",
+      "legende": "Trois pistes confrontées, puis vue axonométrique de la halte ouverte retenue."
+    },
+    {
+      "fichier": "figures/implantations.svg",
+      "question": "Planche 2",
+      "legende": "Implantation schématique à Buzid, à Limure et à Redon, d’après les trois annexes du sujet."
+    },
+    {
+      "fichier": "figures/plan-jour.svg",
+      "question": "Planche 3",
+      "legende": "Plan coté de la halte commune au 1:50 avec cinq usages, leurs dégagements et la ligne de coupe."
+    },
+    {
+      "fichier": "figures/coupe-montage.svg",
+      "question": "Planche 4",
+      "legende": "Coupe A–A au 1:40, trois interfaces démontables et deux modes d’appui au sol."
+    },
+    {
+      "fichier": "figures/extensions.svg",
+      "question": "Planche 5",
+      "legende": "Plans cotés au 1:50 du module de deux couchages et de la consigne urbaine pour vélos et bagages."
+    },
+    {
+      "fichier": "figures/parcours.svg",
+      "question": "Planche 6",
+      "legende": "Quatre moments de la visite, variantes constructives, entretien et fonctionnement des services."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des six pages du sujet et des trois annexes illustrées. Proposition intégrale dans les deux éditions et dessin de six planches A3 originales, avec trois implantations, plans et coupe cotés, détail des appuis, variantes nuit et consigne, et quatre moments du parcours.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
