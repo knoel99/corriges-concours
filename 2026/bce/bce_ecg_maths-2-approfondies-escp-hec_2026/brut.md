@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 h, sans document ni calculatrice. Thème : fonctions de répartition de couples, fonctions 2-croissantes, copules et théorème de Sklar.
 
 Notation utilisée dans tout le corrigé : $\varphi$ désigne la fonction de répartition de la loi uniforme sur $[0,1]$,
@@ -203,10 +211,12 @@ Avec $X\hookrightarrow\mathcal{N}(0,1)$, $W=\Phi(X)$ et $F_2^{-1}(w)=-\ln(1-w)$,
 ```python
 def Nuage1():
     X = rd.normal(0, 1, 100)
-    Y = -np.log(1 - sp.ndtr(X))
+    Y = -sp.log_ndtr(-X)
     plt.plot(X, Y, linestyle='', marker='*')
     plt.show()
 ```
+
+La symétrie normale donne $1-\Phi(x)=\Phi(-x)$. La fonction `sp.log_ndtr` calcule directement $\ln\Phi$. Pour $x=10$, la soustraction `1 - sp.ndtr(10)` est arrondie à zéro, alors que la valeur de $Y$ vaut environ $53{,}23$.
 
 ### 13.
 
@@ -251,7 +261,7 @@ Ici $F_2(y)=\Phi\big(\frac{y-1}2\big)$, donc $F_2^{-1}(p)=1+2\,\Phi^{-1}(p)$, et
 ```python
 def Nuage2():
     X = rd.normal(0, 1, 100)
-    Y = 1 + 2 * sp.ndtri(1 - sp.ndtr(X))
+    Y = 1 - 2 * X
     plt.plot(X, Y, linestyle='', marker='*')
     plt.show()
 ```
@@ -262,6 +272,8 @@ Comme $1-\Phi(x)=\Phi(-x)$, on a en fait $Y=1-2X$ (vérifié numériquement).
 
 - Le graphe **(a)** est une droite décroissante, avec des ordonnées de $-4$ à $6$ : c'est **`Nuage2`**, où $Y=1-2X$ (contra-monotonie).
 - Le graphe **(b)** est une courbe croissante et convexe, à ordonnées positives : c'est **`Nuage1`**, où $Y=-\ln(1-\Phi(X))\geqslant0$ est une fonction croissante de $X$ (comonotonie).
+
+![Figure 2 — Cent tirages par couplage. À gauche, deux marges normales donnent une droite décroissante. À droite, la marge exponentielle impose des ordonnées positives.](figures/deux-couplages.svg)
 
 ## II) Fonctions 2-croissantes et copules 2-dimensionnelles
 
@@ -452,7 +464,7 @@ Par 27.(a), $C$ coïncide sur $[0,1]^2$ avec la fonction de répartition du coup
 
 $C$ est à valeurs réelles et 2-croissante sur $[0,1]^2$. Par définition, $C(1,x)=C(x,1)=x$.
 
-Enfin $C(0,x)=C(x,0)=0$ : c'est le cas « sinon », sauf au point $(0,1)$, où le cas « $y=1$ » donne aussi $0$.
+Enfin $C(0,x)=C(x,0)=0$ : c'est le cas « sinon », sauf aux deux coins $(0,1)$ et $(1,0)$, où les branches $y=1$ et $x=1$ donnent respectivement $0$.
 
 **$C$ est une copule.**
 
@@ -470,7 +482,7 @@ $$C'(u,v)=F_{(X,Y)}(x,y)=C(u,v).$$
 
 Sur le bord de $[0,1]^2$, deux copules coïncident (elles valent $0$, $u$ ou $v$). Donc $C'=C$.
 
-(Dans l'énoncé du théorème admis, il faut lire $C(F_1(x),F_2(y))$ et non $C(F_1(x),F_2(x))$.)
+(Dans le théorème admis imprimé page 6, sous la question 28, il faut lire $C(F_1(x),F_2(y))$ et non $C(F_1(x),F_2(x))$.)
 
 #### 29.
 
@@ -534,6 +546,10 @@ $$g(\theta_*)>1-\frac{4p^2q^2}{4pq}=1-pq .$$
 Or $1+p+q>0$ donne $|p|+|q|<1$, donc $|p|<1$, $|q|<1$ et $pq<1$ : $g(\theta_*)>0$.
 
 **Dans tous les cas, $g$ est positive (et même strictement) sur $[0,1]$.**
+
+On peut aussi lire le signe sans localiser le minimum. Avec $p=\ln u_1<0$ et $q=\ln v_1<0$,
+$$g(\theta)=(1-\theta)+\theta(-p-q)+\theta^2pq.$$
+Les trois termes sont positifs ou nuls. En $\theta=0$, le premier vaut $1$. Pour $0<\theta\leq1$, le deuxième est strictement positif.
 
 #### 33.
 

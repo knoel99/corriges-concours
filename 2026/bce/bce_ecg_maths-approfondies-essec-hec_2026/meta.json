@@ -8,5 +8,63 @@
   },
   "questions": 46,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/melange-et-symetrie.svg",
+      "question": "18",
+      "legende": "Le mélange de (1, −1) et (−1, 1) donne le vecteur nul à mi-parcours. Les deux courbes ont des extrémités de même hauteur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Rédaction initiale des deux éditions, modèle indiqué dans les métadonnées publiques et le commit de rédaction.",
+      "source": "https://github.com/knoel99/prepa/commit/c060e11"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": false,
+      "perimetre": "Première relecture indépendante des deux éditions. Seul le document historique de relecture a été amendé sur la question 9.c. Identité de l’agent ayant réalisé la relecture indépendante non documentée.",
+      "source": "https://github.com/knoel99/prepa/commit/a6bb31b",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Seconde relecture des deux éditions, reprise des solutions du guidé et précisions aux questions 7.b, 9.d et 28.a. Le commit d’intégration est cosigné par Claude Opus 5.5, sans identification séparée de l’agent de relecture.",
+      "source": "https://github.com/knoel99/prepa/commit/bb79fab",
+      "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 30 questions et subdivisions des deux éditions, avec le sujet imprimé et les deux pages du rapport. Rectification de la caractérisation des fonctions S-convexes, deux contre-exemples et graphique du mélange des coordonnées. Précision sur la non-unicité de Birkhoff, la simulation dans l’intervalle ouvert et le défaut de somme après un nombre fini d’itérations.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/282%20-%20MATHEMATIQUES_APPROFONDIES_ESSEC%20BS_HEC_PARIS.pdf",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-10/282%20-%20Maths%20appro%20HEC%20Paris.ESSEC%20BS%202026.pdf",
+    "sha256_sujet": "e6e76345a669a86fc297d132810b8265d6cbbcdcdb904d231bc223a4923aa4f6",
+    "sha256_rapport": "be429523a2ca934e4eb9a309c5180f3243b081393561fb9ca0d7cbb2e259736b"
+  }
 }

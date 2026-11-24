@@ -2,9 +2,17 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
-**Cadre.** Épreuve de 4 heures, conception ESCP BS – HEC Paris, sans document ni calculatrice. Un seul problème de 36 questions numérotées (54 au niveau le plus fin), en trois parties précédées de préliminaires. Selon le rapport 2026, 2836 copies ont été corrigées, avec une note péréquée moyenne de 10,84.
+**Cadre.** Épreuve de 4 heures, conception ESCP BS – HEC Paris, sans document ni calculatrice. Un seul problème de 36 questions numérotées (54 au niveau le plus fin), en trois parties précédées de préliminaires. Selon le rapport 2026, 2836 copies ont été corrigées, avec une note péréquée moyenne de 10,84. Le rapport appelle la question 34 « dernière question » et parle d’une « Partie IV » pour les questions 28 à 32. Les numéros donnés ici suivent le sujet imprimé, qui va jusqu’à la question 36 en partie III.
 
 **Le fil directeur.** Une **copule** est une fonction de répartition de couple dont les deux lois marginales sont uniformes sur $[0,1]$. Le théorème de Sklar dit que la loi d'un couple se décompose en ses deux lois marginales et une copule, qui porte toute la dépendance. Les bornes de Fréchet-Hoeffding $\max(u+v-1,0)$ et $\min(u,v)$ sont les copules extrêmes : elles correspondent aux couples contra-monotones et comonotones.
 
@@ -280,10 +288,12 @@ $g=F_1^{-1}\circ F_2$ est croissante sur $]a_2,b_2[$ et $X=g(Y)$ ps ; symétriqu
 ```python
 def Nuage1():
     X = rd.normal(0, 1, 100)
-    Y = -np.log(1 - sp.ndtr(X))
+    Y = -sp.log_ndtr(-X)
     plt.plot(X, Y, linestyle='', marker='*')
     plt.show()
 ```
+
+La symétrie normale donne $1-\Phi(x)=\Phi(-x)$. La fonction `sp.log_ndtr` calcule directement $\ln\Phi$. Pour $x=10$, la soustraction `1 - sp.ndtr(10)` est arrondie à zéro, alors que la valeur de $Y$ vaut environ $53{,}23$.
 
 Le couple $(F_1^{-1}(W),F_2^{-1}(W))$, avec $W=\Phi(X)$ uniforme, a pour fonction de répartition $\min(F_1(x),F_2(y))$ : c'est bien le couple de l'exemple.
 
@@ -361,7 +371,7 @@ $g:y\mapsto F_1^{-1}(1-F_2(y))$ est décroissante et $X=g(Y)$ ps ; de même $h:x
 ```python
 def Nuage2():
     X = rd.normal(0, 1, 100)
-    Y = 1 + 2 * sp.ndtri(1 - sp.ndtr(X))
+    Y = 1 - 2 * X
     plt.plot(X, Y, linestyle='', marker='*')
     plt.show()
 ```
@@ -379,6 +389,8 @@ Comme $1-\Phi(x)=\Phi(-x)$, on a $Y=1-2X$ : le nuage est porté par une droite d
 
 ---
 
+![Figure 2 — Cent tirages par couplage. À gauche, deux marges normales donnent une droite décroissante. À droite, la marge exponentielle impose des ordonnées positives.](figures/deux-couplages.svg)
+
 ## Partie II — Fonctions 2-croissantes et copules 2-dimensionnelles
 
 ### Partie A : Fonctions 2-croissantes
@@ -386,7 +398,7 @@ Comme $1-\Phi(x)=\Phi(-x)$, on a $Y=1-2X$ : le nuage est porté par une droite d
 On compare la 2-croissance à la croissance par rapport à chaque variable, puis on la caractérise, pour une fonction $\mathcal{C}^2$, par le signe de la dérivée croisée.
 
 > [!METHODE]
-> Lecture des nuages : la dépendance d'un couple se voit sur la forme du nuage, indépendamment des lois marginales. Comonotonie et contra-monotonie sont les cas extrêmes, où le nuage est porté par le graphe d'une fonction monotone ; ils correspondent aux copules $\min(u,v)$ et $\max(u+v-1,0)$, bornes de Fréchet-Hoeffding.
+> Un changement croissant de coordonnées conserve l’ordre des points. Les lois marginales influencent la forme du nuage, comme le montrent la droite et la courbe des questions 16 et 17. Comonotonie et contra-monotonie sont les cas extrêmes, où le nuage est porté par le graphe d'une fonction monotone ; ils correspondent aux copules $\min(u,v)$ et $\max(u+v-1,0)$, bornes de Fréchet-Hoeffding.
 
 ### Question 18(a)
 
@@ -598,7 +610,7 @@ $C$ coïncide sur $[0,1]^2$ avec la fonction de répartition de $(F_X(X),F_Y(Y))
 
 #### Solution
 
-$C(1,x)=C(x,1)=x$ par définition, et $C(0,x)=C(x,0)=0$ (cas « sinon », et cas $y=1$ au point $(0,1)$). Avec 27(b), $C$ est une copule.
+$C(1,x)=C(x,1)=x$ par définition, et $C(0,x)=C(x,0)=0$ (cas « sinon », branche $y=1$ au point $(0,1)$ et branche $x=1$ au point $(1,0)$). Avec 27(b), $C$ est une copule.
 
 ### Question 28
 
@@ -619,7 +631,7 @@ $C(1,x)=C(x,1)=x$ par définition, et $C(0,x)=C(x,0)=0$ (cas « sinon », et cas
 *Unicité* : si $C'$ convient, pour $(u,v)\in\,]0,1[^2$, $C'(u,v)=F_{(X,Y)}(F_X^{-1}(u),F_Y^{-1}(v))=C(u,v)$ ; au bord, $C'=C$ par définition d'une copule.
 
 > [!PIEGE]
-> Dans le théorème admis qui suit, l'énoncé imprime $C(F_1(x),F_2(x))$ : il faut lire $C(F_1(x),F_2(y))$.
+> Dans le théorème admis imprimé page 6, sous la question 28, on lit $C(F_1(x),F_2(x))$ : il faut lire $C(F_1(x),F_2(y))$.
 
 ### Question 29
 
@@ -702,6 +714,10 @@ et $pq<1$ car $|p|+|q|<1$. Donc $g>0$ sur $[0,1]$.
 > [!PIEGE]
 > Le discriminant de $g$ peut être positif (par exemple pour $u_1,v_1$ proches de $1$) : ce n'est pas lui qui conclut, mais la position de $\theta_*$ par rapport à $[0,1]$.
 
+On peut aussi lire le signe sans localiser le minimum. Avec $p=\ln u_1<0$ et $q=\ln v_1<0$,
+$$g(\theta)=(1-\theta)+\theta(-p-q)+\theta^2pq.$$
+Les trois termes sont positifs ou nuls. En $\theta=0$, le premier vaut $1$. Pour $0<\theta\leq1$, le deuxième est strictement positif.
+
 ### Question 33
 
 > [!INDICATION]
@@ -712,7 +728,7 @@ et $pq<1$ car $|p|+|q|<1$. Donc $g>0$ sur $[0,1]$.
 
 #### Solution
 
-Avec $E=\mathrm{e}^{-\theta\ln u\ln v}$ :
+Sur $]0,1[^2$, les logarithmes, le produit et l’exponentielle sont de classe $\mathcal C^2$, donc leur composée $C_\theta$ aussi. Avec $E=\mathrm{e}^{-\theta\ln u\ln v}$ :
 
 $$\begin{aligned}
 \partial_1C_\theta(u,v) &= vE\,(1-\theta\ln v),\\
