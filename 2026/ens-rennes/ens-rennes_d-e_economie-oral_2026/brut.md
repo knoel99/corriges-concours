@@ -6,7 +6,7 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-L’ENS Rennes publie vingt-trois sujets d’économie pour les oraux du concours D–E 2026. Chaque numéro ci-dessous reprend un intitulé, dans l’ordre du document. Chaque candidat tire un sujet distinct.
+L’ENS Rennes publie vingt-trois sujets d’économie pour les oraux du concours D–E 2026. Chaque numéro ci-dessous reprend un intitulé, dans l’ordre du document.
 
 ## 1. Doit-on encore lutter contre l’inflation ?
 
