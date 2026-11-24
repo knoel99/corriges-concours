@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · GPT-6.2 Sol · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Partie 1 — Le piège électrique
 
 ### Question 1
@@ -65,6 +71,8 @@ $$
 $$
 
 La fréquence en hertz vaut $\omega_i/(2\pi)$.
+
+La précision de la séparation des temps peut être contrôlée sur une période de modulation. Posons $v=\Omega t/2$. L’équation de Q3 devient $z''+2q_z\cos(2v)z=0$. On intègre deux solutions ayant pour données $(z,z')=(1,0)$ puis $(0,1)$ de $v=0$ à $v=\pi$. La matrice $M$ formée des deux colonnes finales a déterminant un, car l’équation ne contient pas de dérivée première. Si ses multiplicateurs sont $e^{\pm i\pi\beta}$, alors $\beta=\arccos[\mathrm{tr}(M)/2]/\pi$ et $\omega_{\rm lente}=\beta\Omega/2$. Pour $|q_z|=0{,}1$ et $0{,}3$, on trouve $\beta\simeq0{,}07085$ et $0{,}21606$. La loi de Q6, $\beta\simeq|q_z|/\sqrt2$, sous-estime ces valeurs de respectivement environ 0,2 % et 1,8 %.
 
 ### Question 7
 
@@ -208,6 +216,8 @@ $$
 $$
 
 Le rapport pente sur ordonnée à l’origine vaut $(C_{\rm th}/K)^2$. Comme $K=hS$ est connu, cet ajustement donne $C_{\rm th}$ même sans calibration séparée de la puissance. La pulsation de coupure à laquelle l’amplitude chute d’un facteur $\sqrt2$ donne aussi $C_{\rm th}=K/\omega_c$.
+
+Une mesure de phase fournit un contrôle indépendant de l’ajustement d’amplitude. Le retard de la température sur la modulation vérifie $\tan\phi=\omega_m C_{\rm th}/K$. À la pulsation de coupure, le retard est de $45^\circ$. Avec $\tau\simeq3{,}2\times10^{-4}\ \mathrm s$, on attend $f_c=1/(2\pi\tau)\simeq500\ \mathrm{Hz}$. L’utilisation de la phase nécessite de retrancher le retard propre de la chaîne de détection.
 
 ## Partie 3 — Rotation de la particule
 
