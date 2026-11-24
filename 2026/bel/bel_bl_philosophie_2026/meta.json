@@ -15,7 +15,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf#page=1",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf",
+    "sujet_sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763",
+    "rapport_sha256": "027fc4da8d498a85ea3bbcc09421b2a43e0a53ca124102e7725efc341f572763"
   },
   "figures": [
     {
@@ -78,6 +80,30 @@
       "perimetre": "Contre-lecture indépendante face au rapport : cessation soudaine, suspension et perte de confiance ou de foi ; Descartes, Hume (Enquête, section V) et Wittgenstein (§§ 341–343) vérifiés.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de l’énoncé, des formes temporelles de la cessation et du double sens de la possibilité de cesser, capacité effective et exigence morale."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle des deux éditions et des renvois philosophiques. Correction du contre-exemple téléphonique et distinction entre absence de preuve décisive, suspension et croyance contraire."
     }
   ]
 }

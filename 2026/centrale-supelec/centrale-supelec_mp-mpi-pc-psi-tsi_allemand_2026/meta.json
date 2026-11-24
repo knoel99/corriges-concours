@@ -1,0 +1,41 @@
+{
+  "slug": "centrale-supelec_mp-mpi-pc-psi-tsi_allemand_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP-MPI-PC-PSI-TSI",
+    "matiere": "Allemand",
+    "annee": 2026
+  },
+  "questions": 1,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf#page=6"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la synthèse en allemand des 4 documents sur les pages physiques 6 à 9 du PDF officiel, du guidage et du schéma. Contrôle du titre et du décompte de 464 mots."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/lecture-croisee.svg",
+      "question": "Synthèse",
+      "legende": "Trois mesures de la présence des femmes dans les sciences"
+    }
+  ]
+}

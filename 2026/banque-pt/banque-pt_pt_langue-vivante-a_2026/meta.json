@@ -8,5 +8,82 @@
   },
   "questions": 5,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-allemand.svg",
+      "question": "Allemand",
+      "legende": "De la personne interrogée au lieu cité"
+    },
+    {
+      "fichier": "figures/lecture-anglais.svg",
+      "question": "Anglais",
+      "legende": "Deux questions à poser sur les techniques climatiques"
+    },
+    {
+      "fichier": "figures/lecture-arabe.svg",
+      "question": "Arabe",
+      "legende": "Deux indicateurs de la rareté de l’eau"
+    },
+    {
+      "fichier": "figures/lecture-espagnol.svg",
+      "question": "Espagnol",
+      "legende": "Lire les voix du tourisme espagnol"
+    },
+    {
+      "fichier": "figures/lecture-italien.svg",
+      "question": "Italien",
+      "legende": "Nuitées hôtelières en Italie en 2022"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-12T12:00:00+00:00",
+      "modifications": true,
+      "perimetre": "Rédaction antérieure des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-12",
+      "modifications": true,
+      "perimetre": "Révision antérieure sur le rapport, quatorze corrections de fond enregistrées.",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des cinq dossiers dans les deux éditions, de leurs vingt-cinq documents et des cinq sections du rapport. Correction des unités, des périmètres statistiques, des attributions et des lectures iconographiques, contrôle des cinq décomptes, ajout de cinq schémas.",
+      "agent": "astra_langues",
+      "tour": 2
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/lv_a_2026_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_lv_a_ecrit_2026.pdf"
+  }
 }

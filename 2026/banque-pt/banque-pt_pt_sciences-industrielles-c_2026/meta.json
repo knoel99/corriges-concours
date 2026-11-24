@@ -39,5 +39,64 @@
       "question": "Q3.1",
       "legende": "coupe longitudinale de principe de la vertèbre, repères de la nomenclature (échelle non respectée)"
     }
-  ]
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "date": "2026-11-06T21:00:00",
+      "modifications": true,
+      "perimetre": "Rédaction des deux corrigés.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Révision avec le rapport du jury. 5 corrections de fond déclarées dans la métadonnée d’origine.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 32 questions sur le robot de canalisation à partir du sujet, de ses dessins ressources et du rapport. Vérification de la durée des branches synchronisées du cycle, des angles de rotation relatifs et de l’incertitude du temps de déploiement. Relecture des choix d’industrialisation et de la coupe de la vertèbre.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "revision": {
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "date": "2026-11-24",
+    "verification": "Relecture des 32 questions sur le robot de canalisation à partir du sujet, de ses dessins ressources et du rapport. Vérification de la durée des branches synchronisées du cycle, des angles de rotation relatifs et de l’incertitude du temps de déploiement. Relecture des choix d’industrialisation et de la coupe de la vertèbre."
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/si_c_2026_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_si_c_ecrit_2026.pdf"
+  }
 }

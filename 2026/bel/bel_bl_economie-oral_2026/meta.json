@@ -4,9 +4,78 @@
     "concours": "BEL",
     "filiere": "BL",
     "matiere": "Économie (oral)",
-    "annee": 2026
+    "annee": 2026,
+    "modalite": "oral"
   },
   "questions": 11,
   "redaction": "IA (gpt-6), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/couts-comparatifs.svg",
+      "question": "Dossier 9",
+      "legende": "Voitures et bœuf : comparer des coûts d’opportunité"
+    },
+    {
+      "fichier": "figures/patrimoine-seuils.svg",
+      "question": "Dossier 10",
+      "legende": "Moyenne, médiane et déciles de patrimoine"
+    },
+    {
+      "fichier": "figures/prix-spot-negatif.svg",
+      "question": "Dossier 11",
+      "legende": "Un équilibre de marché sous le prix zéro"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_sujets_economie_tronc_commun.pdf",
+    "sujet_sha256": "1050d8bb2495144f8c8c2e926faf502b5d9b461c067163ec2a19fcbcf4e39eb0",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_economie_tronc_commun.pdf",
+    "rapport_sha256": "85ebfe44ae14e6c440a921da1f5bad1d8130f05ca2a2c0b17453b89d36f7a805"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6",
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction initiale identifiée dans la métadonnée historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Relecture et révision par IA attestées par la mention historique, configuration non renseignée."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture des trois pages, de la durée et de la liste des sujets, y compris le thème évoqué sans dossier publié."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des onze dossiers des deux éditions sur le fascicule de 93 pages, des données et figures, du rapport et des numérotations. Distinction du niveau du PIB et du taux de croissance. Ajout de onze relances corrigées, d’un exemple de coûts comparatifs et de trois schémas quantitatifs."
+    }
+  ]
 }

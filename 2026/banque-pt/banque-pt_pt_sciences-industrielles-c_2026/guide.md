@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le sujet étudie PATHFINDER, un robot d'inspection des réseaux d'eau potable conçu par ACWA Robotics. Le robot se compose de deux modules identiques (MASTER et SLAVE) reliés par une VERTEBRE qui porte quatre vérins électriques. Il avance en rampant : un module s'ancre sur la paroi en déployant trois bras en pantographe, tandis que la vertèbre pousse ou tire l'autre module.
@@ -222,9 +228,11 @@ D &= \frac{3600}{60}\times 0{,}1\ \text{m} \\
 
 $$\boxed{D = 6\ \text{m en 1 h}}$$
 
-Ce résultat découle du modèle cinématique du cycle. Il ne s'obtient pas en reprenant la vitesse de 0,1 m/s du DR I : la question demande de vérifier cette performance, pas de la recopier.
+Le résultat précédent suppose que les contrôles d’appui se terminent avant les autres opérations lancées en parallèle. Si $t_{AV}$ et $t_{AR}$ sont leurs durées en secondes, le diagramme du DR V donne plus généralement
 
-On compare ce résultat aux 360 m/h du DR I. Ces 360 m/h correspondent au mode **hybride** : le robot est porté par le courant (0,1 m/s pour un flux de 0,3 m/s). Les 6 m/h correspondent au mode **automoteur** seul, par avances successives.
+$$T=25+\max\!\left(t_{AV},\;25+\max(t_{AR},10)\right).$$
+
+Le premier bloc de 25 s décrit l’avant. Les 25 s de la seconde branche décrivent l’arrière, suivi du contrôle arrière et de la prise de vues. Le cycle dure 60 s si $t_{AR}\le10$ s et $t_{AV}\le35$ s. Sinon, le temps de cycle augmente et la vitesse moyenne vaut $360/T$ m/h. Le DR I annonce 360 m/h pour un écoulement de 0,3 m/s et indique une locomotion hybride. Le calcul à partir du DR V porte sur l’avance de 100 mm obtenue par le mouvement des vérins.
 
 > [!METHODE]
 > Dans un diagramme d'états, la durée totale se calcule sur le **chemin critique** : on additionne les étapes en série et on prend le maximum des branches parallèles.
@@ -484,7 +492,7 @@ t_d &= \frac{\Delta\alpha}{2\times 2{,}4} \\
 
 $$\boxed{t_d\approx 4{,}4\ \text{s}}$$
 
-Avec une incertitude de lecture de $\pm 0{,}5^\circ$, on obtient un temps compris entre 4,3 et 4,5 s.
+Si l’angle initial est pris à $42^\circ$ et la lecture de l’angle final à $21^\circ\pm0{,}5^\circ$, l’angle relatif varie de $20{,}5^\circ$ à $21{,}5^\circ$. Les durées correspondantes sont $20{,}5/4{,}8\simeq4{,}27$ s et $21{,}5/4{,}8\simeq4{,}48$ s. Si les deux angles sont lus sur le graphe avec la même incertitude, leurs incertitudes absolues s’additionnent dans le cas le plus défavorable. La plage de temps devient alors $[20/4{,}8\,;\,22/4{,}8]$, soit environ $[4{,}17\,;\,4{,}58]$ s.
 
 **Contrôle.** Le déploiement complet ($42^\circ\to 7{,}5^\circ$) dure $34{,}5/4{,}8 \approx 7{,}2$ s. Or dans une conduite de 300 mm, les bras vont en butée sans toucher la paroi ($\rho_{\max} + \delta < 150$ mm). On retrouve donc les 7 s du DR V, ce qui valide la relation $\Delta\alpha = 2\Delta\theta$. Avec $\Delta\theta = \Delta\alpha$, on aurait obtenu 14,4 s.
 

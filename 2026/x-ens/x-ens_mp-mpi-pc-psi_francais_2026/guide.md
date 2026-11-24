@@ -6,6 +6,10 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve commune du 13 avril 2026 dure quatre heures. Elle demande une dissertation discutant un extrait du *Traité des sensations* de Condillac à partir des trois œuvres du programme « Expériences de la nature ». Chez Canguilhem, il s’agit de l’introduction, de la partie I et des chapitres II à V de la partie III de *La Connaissance de la vie*. Les deux romans sont *Vingt mille lieues sous les mers* et *Le Mur invisible*. On peut réserver 45 minutes à l’analyse et au plan, trois heures à la rédaction et quinze minutes à la relecture. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Fran%C3%A7ais.pdf) · [Programme 2025–2026](https://www.education.gouv.fr/bo/2025/Hebdo23/MENS2514209A)
@@ -101,6 +105,8 @@ Canguilhem aide à démêler ce qui se joue dans cet avertissement. Dans « Le v
 Dans le roman de Haushofer, le froid et la faim ne sont pas des découvertes inédites pour la narratrice. Ce qui est nouveau, c’est le délai qui sépare le besoin de sa satisfaction. Là où l’on pouvait hier acheter de la nourriture, il faut désormais prévoir une saison entière. Faire du foin en été pour Bella, c’est agir au moment où l’herbe est abondante en fonction d’une pénurie dont ni la femme ni la vache ne souffrent encore. Un avertissement reçu en hiver arriverait trop tard. L’expérience commence dans cet écart. Retenir les effets d’une saison donne une prise sur les circonstances à venir. L’habitude permet d’agir aujourd’hui au bénéfice d’un vivant qui aura besoin de nous demain. À ce premier titre, elle continue bien l’ouvrage de la nature.
 
 * * *
+
+L’avertissement et la conduite apprise n’occupent pas le même temps. Une douleur interrompt le geste au moment où l’obstacle est déjà rencontré. La narratrice qui prépare son prochain trajet peut, elle, s’arrêter avant le choc, alors même que ses yeux continuent de lui montrer le passage libre. En ce sens précis, « achever » ne consiste pas à ressentir plus vivement la même douleur. Il s’agit de rendre possible une conduite à laquelle l’épreuve pénible n’aura justement plus à donner le signal.
 
 Reste à comprendre la formule selon laquelle la nature « s’arrête là ». Prise à la lettre, elle donnerait l’impression qu’une fois le signal reçu on pourrait se contenter de le répéter. Or une même sensation admet plusieurs interprétations. Chez Verne, Aronnax a cru reconnaître dans les signalements du prétendu monstre une espèce de narval. Quand il se retrouve sur le dos de la chose, le contact d’une paroi dure ne suffit pas à lui faire changer d’avis. Il envisage encore une enveloppe osseuse. Il faut rapprocher la dureté du son métallique, puis de la disposition régulière des plaques, pour identifier une construction humaine. Le naturaliste modifie alors la question qu’il posait à l’objet. Au lieu de chercher à quelle espèce il appartient, il se demande qui a pu le construire. Une expérience marquante peut ainsi défaire une manière de classer que de nombreuses expériences avaient solidement établie.
 

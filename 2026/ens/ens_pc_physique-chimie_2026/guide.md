@@ -8,7 +8,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Périmètre du corrigé partiel.** 60 questions sur 62 sont traitées intégralement, de Q1 à Q51 et de Q54 à Q62. Les questions Q52 et Q53, consacrées au retraitement du combustible nucléaire, sont hors du corrigé. Les questions Q54 à Q62 portent sur le modèle indépendant de dépôt du cuivre en solution de sulfate.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Périmètre du corrigé partiel.** Les questions 1 à 51, 54, 55 et 58 sont traitées intégralement (54 sur 62). En Q62, la réponse décrit les courbes de concentration du cuivre. Les questions 52, 53, 56, 57, 59, 60 et 61 ainsi que la modélisation en Q62 sont hors périmètre. Le sujet rattache le réacteur expérimental au retraitement nucléaire.
 
 ## Présentation du sujet
 
@@ -58,7 +60,7 @@ Les grains subissent leur poids, la réaction verticale du piston et la réactio
 $$
 F_{\mathrm{paroi},\uparrow}=(M_{\rm tot}-M_{\rm eff})g.
 $$
-Dans l’exemple de l’énoncé, $20$ g versés et $7$ g lus correspondent à environ $0{,}13\ \mathrm N$ repris par le tube et par son support.
+Pour les mêmes $20$ g de grains, on lit environ $19$ g à la fin du versement et $7$ g après l’abaissement. La force verticale reprise par le tube passe ainsi d’environ $0{,}01\ \mathrm N$ à $0{,}1\ \mathrm N$ (un chiffre significatif). La masse des grains est conservée au cours du déplacement. Seule la répartition des efforts entre le piston et la paroi change.
 
 ### Question 5
 
@@ -67,7 +69,7 @@ Dans l’exemple de l’énoncé, $20$ g versés et $7$ g lus correspondent à e
 
 #### Solution
 
-Au voisinage de $1\ \mathrm g$, la balance donne encore près de $1\ \mathrm g$. Vers $4$ à $5\ \mathrm g$ versés, elle ne donne déjà plus qu’environ $3$ à $4\ \mathrm g$. L’écart dépasse alors nettement la dispersion des points. On retient $\boxed{M_{\rm tot}\sim5\ \mathrm g}$ comme repère graphique. La transition est progressive et un autre seuil relatif raisonnable déplace cette estimation de quelques grammes.
+Au voisinage de $1\ \mathrm g$, la balance donne encore près de $1\ \mathrm g$. Vers $4$ à $5\ \mathrm g$ versés, elle ne donne déjà plus qu’environ $3$ à $4\ \mathrm g$. Par exemple, pour $5$ g versés, une lecture voisine de $4$ g représente déjà un écart relatif de $20\,\%$. La figure ne donne ni répétitions ni barres d’incertitude permettant un test statistique. On retient $\boxed{M_{\rm tot}\sim5\ \mathrm g}$ comme repère graphique. La transition est progressive et un autre seuil relatif raisonnable déplace cette estimation de quelques grammes.
 
 ![Figure 2 — Points approximativement relevés sur la figure 2 du sujet et droite de référence de pente un.](figures/lecture-des-masses.svg)
 
@@ -82,7 +84,7 @@ Un empilement de verre a une masse volumique apparente de l’ordre de $10^3\ \m
 $$
 H=\frac{M_{\rm tot}}{\rho_{\rm app}S}\simeq1{,}1\ \mathrm{cm},\qquad \frac HD\simeq0{,}5 .
 $$
-La hauteur caractéristique est du même ordre de grandeur que le diamètre du tube.
+La hauteur caractéristique est du même ordre de grandeur que le diamètre du tube. Elle représente plusieurs dizaines de diamètres de bille (environ $35$ pour $d=300\ \mu\mathrm m$).
 
 ## I.2 — Forces de paroi et redirection des contraintes
 
@@ -311,7 +313,7 @@ Aux faibles masses, le développement donne $M_{\rm eff}=M_{\rm tot}-M_{\rm tot}
 
 Comme $M_\infty=\rho_b\pi D^3/(16fk)$,
 $$f=\frac{\rho\phi\pi D^3}{16 k M_\infty}.$$
-Avec $\rho=2500\ \mathrm{kg\,m^{-3}}$, $\phi=0{,}6$, $D=0{,}020\ \mathrm m$, $k=1$ et un plateau de $7{,}5$ à $8{,}0\ \mathrm g$, on obtient $f\simeq0{,}29$ à $0{,}31$, soit **environ 0,30**. Pour $8$ g, $\lambda\simeq1{,}70$ cm. L’ordre de grandeur s’accorde avec $\tan 18^\circ\simeq0{,}325$ obtenu sur le contact verre-verre, compte tenu de l’approximation sur $k$ et de la lecture graphique.
+Avec $\rho=2500\ \mathrm{kg\,m^{-3}}$, $\phi=0{,}6$, $D=0{,}020\ \mathrm m$, $k=1$ et un plateau de $7{,}5$ à $8{,}0\ \mathrm g$, on obtient $f\simeq0{,}29$ à $0{,}31$, soit **environ 0,3** à un chiffre significatif. Le plateau mesure en fait le produit $fk$. Déduire $f$ séparément exige une estimation indépendante de $k$ ou l’hypothèse $k=1$ utilisée ici. Pour $8$ g, $\lambda\simeq1{,}70$ cm. L’ordre de grandeur s’accorde avec $\tan 18^\circ\simeq0{,}325$ obtenu sur le contact verre-verre, compte tenu de l’approximation sur $k$ et de la lecture graphique.
 
 ## I.4 — Déplacement d’un embâcle
 
@@ -425,7 +427,7 @@ En unités $F_* = \phi q\ell\lambda$ et $\lambda$, on trace $F/F_*=e^{L/\lambda}
 
 Prenons $\rho_e=1000\ \mathrm{kg\,m^{-3}}$, $k=1$ (contraintes latérales du même ordre que les contraintes longitudinales), $f=0{,}10$ (hypothèse de frottement modéré pour des surfaces mouillées) et $C_D=0{,}5$ (coefficient d’ordre un dans l’analogie proposée avec une traînée inertielle). Ce sont des **hypothèses illustratives**, et non des données mesurées sur le canal. Avec $\ell=5\ \mathrm m$, $L=30\ \mathrm m$, $U=2\ \mathrm{m\,s^{-1}}$ et $\phi=0{,}8$, on trouve
 $$\lambda=25\ \mathrm m,\quad q=10^3\ \mathrm {Pa},\quad \phi q\ell\lambda=1{,}0\times10^5\ \mathrm N,$$
-soit **$F\simeq2{,}3\times10^5\ \mathrm N$** puisque $e^{1{,}2}-1\simeq2{,}32$. La seule traînée donnerait $1{,}2\times10^5\ \mathrm N$. La loi est linéaire en $C_D$ et très sensible au produit $fk$ par l’exponentielle. Si la face inférieure parallèle au courant relève surtout du frottement de peau, un coefficient effectif plus petit est plausible : à titre de sensibilité, $C_D=0{,}005$ donnerait environ $2{,}3\times10^3\ \mathrm N$ avec les mêmes autres paramètres. Le modèle n’attribue donc pas au canal une force numérique unique.
+soit **$F\sim2\times10^5\ \mathrm N$** à un chiffre significatif puisque $e^{1{,}2}-1\simeq2{,}32$. La seule traînée donnerait $1{,}2\times10^5\ \mathrm N$. La loi est linéaire en $C_D$ et très sensible au produit $fk$ par l’exponentielle. Si la face inférieure parallèle au courant relève surtout du frottement de peau, un coefficient effectif plus petit est plausible : à titre de sensibilité, $C_D=0{,}005$ donnerait environ $2\times10^3\ \mathrm N$ avec les mêmes autres paramètres. Le modèle n’attribue donc pas au canal une force numérique unique.
 
 ## II.1 — Orbitales et coordination de NO
 
@@ -451,7 +453,7 @@ Pour $\mathrm{NO_3^-}$, on compte $5+3\times6+1=24$ électrons. Dans une forme m
 
 #### Solution
 
-Par ordre d'énergie croissante, la figure 6 donne $\phi_1$, $\phi_2$, $(\phi_3,\phi_4)$, $\phi_5$, $(\phi_6,\phi_7)$, puis $\phi_8$. Avec onze électrons, la configuration de valence est $\phi_1^2\phi_2^2\phi_3^2\phi_4^2\phi_5^2\phi_6^0\phi_7^1\phi_8^0$ dans le choix d'axes de l'énoncé. La dernière orbitale doublement occupée est $\phi_5$ et la première entièrement vacante $\phi_6$. L'orbitale simplement occupée $\phi_7$ est dégénérée avec $\phi_6$. Les deux partenaires peuvent échanger leurs noms avant fixation du repère.
+Par ordre d'énergie croissante, la figure 6 donne $\phi_1$, $\phi_2$, $(\phi_3,\phi_4)$, $\phi_5$, $(\phi_6,\phi_7)$, puis $\phi_8$. Avec onze électrons, la configuration de valence est $\phi_1^2\phi_2^2\phi_3^2\phi_4^2\phi_5^2\phi_6^0\phi_7^1\phi_8^0$ dans le choix d'axes de l'énoncé. La dernière orbitale doublement occupée est $\phi_5$ et la première entièrement vacante $\phi_6$. L'orbitale simplement occupée $\phi_7$ est dégénérée avec $\phi_6$. Les deux partenaires peuvent échanger leurs noms avant fixation du repère. Le schéma de la question 37 permet de suivre à la fois le remplissage et la correspondance avec les niveaux atomiques.
 
 ### Question 37
 
@@ -512,7 +514,7 @@ Après une photolyse, la relaxation est observée en absorbance. Les mesures à 
 
 En posant $X(t)=[\mathrm{Mb(NO)}](t)$ et $[\mathrm{Mb(H_2O)}]=c_0-X$, l'absorbance à 409 nm vaut
 $$ A(t)=\ell\big[\epsilon_O c_0+(\epsilon_N-\epsilon_O)X(t)\big]. $$
-La figure 8 montre un saut positif d'absorbance à la photolyse. À cette longueur d'onde, la dissociation de Mb(NO) produit le complexe aquo plus absorbant. Une ligne de base constante indépendante des deux complexes s'élimine par différence.
+La figure 8 montre un saut positif d'absorbance à la photolyse. À cette longueur d'onde, la dissociation de Mb(NO) produit le complexe aquo plus absorbant. On a donc $\epsilon_O>\epsilon_N$ à 409 nm. En prenant la référence juste avant le flash, comme sur la figure, on mesure $\Delta A(t)=\ell(\epsilon_N-\epsilon_O)[X(t)-X(0^-)]$. La photolyse diminue $X$, d’où le saut positif de $\Delta A$. Au retour à l’équilibre initial, $\Delta A$ revient à zéro.
 
 ### Question 42
 
@@ -532,7 +534,7 @@ Ainsi $k_{\rm obs}=k_{\rm on}[\mathrm{NO}]+k_{\rm off}$, en $\mathrm{s^{-1}}$, e
 
 #### Solution
 
-À concentration de NO fixée, la solution s'écrit $X(t)=X_\infty+[X(0^+)-X_\infty]\exp(-k_{\rm obs}t)$. Par la question 41, $A(t)-A_\infty$ est aussi une exponentielle simple. On ajuste la trace après le flash, avec amplitude, ligne de base et taux, pour extraire $k_{\rm obs}$. Sur la figure 8, une amplitude initiale d'environ 0,016 est divisée par $e$ vers $0{,}006$ à $0{,}007$ min, ce qui donne quelques $\mathrm{s^{-1}}$. Il faut convertir les minutes si les constantes sont exprimées en secondes.
+À concentration de NO fixée, la solution s'écrit $X(t)=X_\infty+[X(0^+)-X_\infty]\exp(-k_{\rm obs}t)$. Par la question 41, $A(t)-A_\infty$ est aussi une exponentielle simple. On ajuste la trace après le flash, avec amplitude, ligne de base et taux, pour extraire $k_{\rm obs}$. Sur la figure 8, une amplitude initiale d'environ 0,016 est divisée par $e$ vers $0{,}006$ à $0{,}007$ min, soit une durée de $0{,}36$ à $0{,}42$ s. Puisque $k_{\rm obs}=1/\tau$, on lit $k_{\rm obs}\sim3\ \mathrm{s^{-1}}$ à un chiffre significatif. Cette trace seule fixe une combinaison des deux constantes.
 
 À température, pression et milieu fixés, on recommence avec plusieurs concentrations de NO en excès. La régression de $k_{\rm obs}$ sur $[\mathrm{NO}]$ a pour pente $k_{\rm on}$ et pour ordonnée à l'origine $k_{\rm off}$. Les incertitudes sur l'ordonnée peuvent être importantes si tous les points sont éloignés de l'origine.
 
@@ -547,7 +549,7 @@ Ainsi $k_{\rm obs}=k_{\rm on}[\mathrm{NO}]+k_{\rm off}$, en $\mathrm{s^{-1}}$, e
 
 À pression fixée, mesurer les deux constantes à plusieurs températures. Pour chaque sens $i$, au standard de concentration du sujet,
 $$ \ln\!\left(\frac{k_i h}{k_{\rm B}T(c^\circ)^{\Delta n}}\right)=-\frac{\Delta H_i^\ddagger}{R}\frac1T+\frac{\Delta S_i^\ddagger}{R}. $$
-La pente du tracé en fonction de $1/T$ vaut $-\Delta H_i^\ddagger/R$ et l'ordonnée à l'origine $\Delta S_i^\ddagger/R$. On suppose les grandeurs d'activation suffisamment constantes dans l'intervalle de température. Utiliser le facteur standard approprié rend le logarithme sans dimension.
+La pente du tracé en fonction de $1/T$ vaut $-\Delta H_i^\ddagger/R$ et l'ordonnée à l'origine $\Delta S_i^\ddagger/R$. On suppose les grandeurs d'activation suffisamment constantes dans l'intervalle de température. La constante bimoléculaire de fixation $k_{\rm on}$ est en $\mathrm{L\,mol^{-1}\,s^{-1}}$ et $k_{\rm on}c^\circ$ est en $\mathrm{s^{-1}}$. La constante apparente de dissociation $k_{\rm off}=k_{\rm off}^{\prime}[\mathrm{H_2O}]$ est déjà en $\mathrm{s^{-1}}$. Ainsi, dans chacun des deux tracés, la multiplication du taux standardisé par $h/(k_{\rm B}T)$ fournit un argument sans dimension.
 
 ### Question 45
 
@@ -566,7 +568,7 @@ Pour des estimations indépendantes, rapportons chaque différence entre spectro
 #### Solution
 
 L'écart normalisé en enthalpie d'activation de la dissociation vaut
-$$ E_n=\frac{|83-65|}{\sqrt{2^2+5^2}}=\frac{18}{\sqrt{29}}>3. $$
+$$ E_n=\frac{|83-65|}{\sqrt{2^2+5^2}}=\frac{18}{\sqrt{29}}\simeq3{,}34. $$
 Il dépasse le seuil usuel de 2. Les deux mesures sont incompatibles au regard des incertitudes annoncées. Le tampon diffère entre laboratoires. Une participation du tampon aux échanges de ligands ou à l'environnement du site hémique pourrait modifier les paramètres apparents de dissociation. Une contribution systématique non incluse aux incertitudes constitue également une hypothèse. Le tableau seul ne tranche pas entre ces causes.
 
 ### Question 47
@@ -576,7 +578,7 @@ Il dépasse le seuil usuel de 2. Les deux mesures sont incompatibles au regard d
 
 #### Solution
 
-La spectrophotométrie après flash et le stopped-flow déterminent $k_{\rm off}$ par une ordonnée à l'origine. La méthode de piégeage donne directement la vitesse de libération de NO, donc une mesure indépendante de $k_{\rm off}$. Dans le laboratoire 2, par exemple, $83\pm2$ et $78\pm2\ \mathrm{kJ\,mol^{-1}}$ ont un écart normalisé de $5/\sqrt8\simeq1{,}8$. La comparaison teste les biais de mesure ou d'extrapolation, renseigne sur les précisions accessibles, et aide à distinguer un effet du milieu d'un effet de technique. Seules les deux méthodes de relaxation donnent aussi $k_{\rm on}$.
+La spectrophotométrie après flash et le stopped-flow déterminent $k_{\rm off}$ par une ordonnée à l'origine. La méthode de piégeage donne directement la vitesse de libération de NO, donc une mesure indépendante de $k_{\rm off}$. Dans le laboratoire 2, par exemple, $83\pm2$ et $78\pm2\ \mathrm{kJ\,mol^{-1}}$ ont un écart normalisé de $5/\sqrt8\simeq1{,}8$. Ce calcul suppose des incertitudes non corrélées. Une même calibration ou une même préparation du laboratoire pourrait introduire une covariance. La comparaison teste les biais de mesure ou d’extrapolation, renseigne sur les précisions accessibles, et aide à distinguer un effet du milieu d'un effet de technique. Seules les deux méthodes de relaxation donnent aussi $k_{\rm on}$.
 
 ### Question 48
 
@@ -622,7 +624,7 @@ Dans le mécanisme dissociatif direct, la libération d'une seule molécule d'ea
 
 ## II.3 — Bilan électrochimique d’un bain de sulfate de cuivre
 
-Le bilan couplé des électrons et des ions relie la teneur du bain de cuivre à la densité de courant. L’évolution en temps de passage différencie les régimes de fonctionnement.
+Pour le cuivre, repérer sur la courbe courant-potentiel la branche de réduction et la branche d’oxydation. La neutralité électrique fournit ensuite une relation entre les concentrations des ions.
 
 ### Question 54
 
@@ -646,32 +648,6 @@ Pour $E$ plus petit, le courant négatif croît en valeur absolue puis atteint u
 
 La tension de début d'électrolyse est approximativement $U_{\min}=1{,}55-0{,}31=1{,}24\ \mathrm V$. À courant fini s'ajoutent les pertes ohmiques et les polarisations. En sortie du réacteur, la concentration en cuivre(II) est moindre. Le potentiel d'équilibre du cuivre diminue et la valeur absolue du plateau de courant cathodique baisse. La production d'ions $\mathrm{H^+}$ à l'anode acidifie la solution et décale la vague d'oxydation de l'eau légèrement vers les potentiels plus positifs, toutes choses égales par ailleurs.
 
-### Question 56
-
-> [!INDICATION]
-> Sur une tranche de longueur dx, comparer les flux convectifs de cuivre et la consommation faradique.
-
-#### Solution
-
-Notons $C=C_{\mathrm{Cu^{2+}}}^r$. Le débit volumique est $v h\ell$ et le courant cathodique en valeur absolue sur la tranche vaut $j(x)\ell\,\mathrm dx$. En régime permanent, deux électrons étant nécessaires par ion,
-$$ vh\ell\,[C(x)-C(x+\mathrm dx)]=\frac{j(x)\ell\,\mathrm dx}{2F}. $$
-En divisant par $vh\ell\,\mathrm dx$, puis en passant à la limite,
-$$ \frac{\mathrm dC}{\mathrm dx}+\frac{j(x)}{2Fhv}=0,\qquad \alpha=\frac1{2Fhv}. $$
-Le signe exprime la consommation du cuivre dissous dans le sens de l'écoulement.
-
-![Figure 16 — La différence de débit molaire convectif équilibre le dépôt à la cathode sur la surface de la tranche.](figures/q56-bilan-de-cuivre.svg)
-
-### Question 57
-
-> [!INDICATION]
-> Au palier cathodique, la concentration au contact de l'électrode est presque nulle.
-
-#### Solution
-
-Au plateau d'apport des ions cuivre(II), le modèle de transfert de matière usuel à coefficient $k_m$ constant donne $j_{\lim}=2F k_m(C^r-C^c)\simeq2F k_m C^r$. Dans l'approximation d'une couche de diffusion d'épaisseur constante et d'un électrolyte support abondant, $k_m\simeq D/\delta_c$. On demeure dans l'hypothèse du sujet d'un rendement faradique unitaire pour le dépôt du cuivre.
-
-Avec $\tau=x/v$, le bilan devient $\mathrm dC/\mathrm d\tau=-(k_m/h)C$. On retrouve la loi d'un réacteur piston siège d'une consommation d'ordre 1, $C=C(0)\exp[-(k_m/h)\tau]$. Le coefficient apparent $k_m/h$ a la dimension d'une fréquence.
-
 ### Question 58
 
 > [!INDICATION]
@@ -683,50 +659,13 @@ Dans le modèle macroscopique, l'électroneutralité impose dans chacune des tro
 $$ 2 C_{\mathrm{Cu^{2+}}}^{u}+C_{\mathrm{H^+}}^{u}=2C_{\mathrm{SO_4^{2-}}}^{u}. $$
 Par exemple, à l'entrée, $2\times100+2000=2\times1100$ en $\mathrm{mol\,m^{-3}}$. L'équation s'applique à la solution de part et d'autre des couches limites et à leurs bords, selon la convention du sujet.
 
-### Question 59
+### Question 62 · lecture qualitative
 
 > [!INDICATION]
-> La conductivité d'un mélange d'ions est la somme des contributions individuelles.
+> Comparer les baisses de concentration sur deux intervalles de temps successifs de même largeur. La pente garde-t-elle sa valeur absolue ?
 
-#### Solution
-
-Dans la zone centrale du bain de cuivre, $\kappa(x)=\lambda_{\mathrm{Cu^{2+}}}C^r_{\mathrm{Cu^{2+}}}+\lambda_{\mathrm{H^+}}C^r_{\mathrm{H^+}}+\lambda_{\mathrm{SO_4^{2-}}}C^r_{\mathrm{SO_4^{2-}}}$. La loi d'Ohm locale donne $|E_y|=j/\kappa$. Les concentrations centrales sont uniformes suivant $y$ et la densité de courant est conservée sur cette direction. Ainsi la chute positive de potentiel à travers le cœur vaut
-$$ U_{z2}(x)=\frac{j(x)(h-\delta_a-\delta_c)}{\kappa(x)}\simeq\frac{j(x)h}{\kappa(x)}. $$
-Les concentrations sont en $\mathrm{mol\,m^{-3}}$ lorsque les conductivités molaires ioniques s'expriment en $\mathrm{S\,m^2\,mol^{-1}}$.
-
-### Question 60
-
-> [!INDICATION]
-> À courant fixé, reconnaître la résistance surfacique du bain entre les plaques.
-
-#### Solution
-
-Pour cette cellule de dépôt du cuivre, la chute ohmique est proportionnelle à $jh/\kappa$. À densité de courant imposée, elle diminue si l'on rapproche les deux électrodes ou si l'on augmente la conductivité de la solution avec un électrolyte support inerte dans le domaine choisi. À géométrie et composition fixées, elle diminue aussi lorsque $j$ diminue, au prix d'un plus faible débit de dépôt.
-
-### Question 61
-
-> [!INDICATION]
-> Une fois la composition du cœur fixée, compter les relations disponibles pour les concentrations interfaciales.
-
-#### Solution
-
-Dans le modèle du bain de cuivre, à $x$ donné, $C^r_{\mathrm{Cu^{2+}}}$ est fixé et $C^r_{\mathrm{SO_4^{2-}}}$ est connu par l'équation (6). L'électroneutralité donne $C^r_{\mathrm{H^+}}$. Pour une valeur d'essai de $j$, il reste six concentrations interfaciales, trois à chaque électrode. Les quatre relations de bilan transversal énoncées et les deux électroneutralités interfaciales fournissent six relations pour elles. On peut alors exprimer les trois chutes en solution et, par les courbes courant–potentiel des deux électrodes, les deux chutes interfaciales correspondant à $j$.
-
-La somme des cinq chutes doit être égale à $U$ imposé, ce qui fournit la dernière équation pour $j(x)$. Cette fermeture établit la faisabilité du calcul sur une branche physique admissible. La seule égalité du nombre d'équations et d'inconnues ne prouverait pas l'unicité de toute solution non linéaire.
-
-### Question 62
-
-> [!INDICATION]
-> Comparer les courbes de concentration et de densité de courant à faible tension sur la figure 12.
-
-#### Solution
-
-À $1{,}4\ \mathrm V$, la figure montre que $C^r_{\mathrm{Cu^{2+}}}$ diminue presque linéairement avec le temps de passage sur la plage représentée. Le courant est pratiquement constant. Le même comportement est approché au début de la courbe à $1{,}5\ \mathrm V$. Avec $\tau=x/v$, l'équation de bilan s'écrit
-$$ \frac{\mathrm d C}{\mathrm d\tau}=-\frac{j}{2Fh}. $$
-Un courant voisin d'une constante $j_0$ donne donc $C(\tau)\simeq C(0)-j_0\tau/(2Fh)$, tant qu'il reste du cuivre en solution dans ce régime. La vitesse apparente $j_0/(2Fh)$ est indépendante de $C$, comme pour une réaction d'ordre zéro. À tension plus élevée, les tracés s'incurvent nettement et le courant décroît avec la teneur en cuivre.
-
-![Figure 17 — Schéma des deux régimes du modèle pour le sulfate de cuivre. À courant presque constant, la concentration décroît linéairement.](figures/q62-ordres-apparents.svg)
+Sur la figure terminale, l’une des courbes de concentration du cuivre descend presque en ligne droite. Sur cette plage, des intervalles de temps égaux correspondent à des baisses de concentration voisines. D’autres courbes descendent plus vite au départ puis s’aplatissent. La baisse devient alors plus petite au fil du temps. Cette lecture des pentes est la seule partie de la question couverte ici.
 
 ## Bilan
 
-Dans le silo, une partie du poids est reprise par le frottement de paroi et la masse portée par le fond sature. Dans le canal, les directions de mouvement et de frottement changent la force requise. La relaxation de la myoglobine sépare les constantes de fixation et de dissociation de NO. Dans le bain de cuivre, un courant pratiquement constant produit une décroissance linéaire de la concentration.
+Dans le silo, une partie du poids est reprise par le frottement de paroi et la masse portée par le fond sature. Dans le canal, les directions de mouvement et de frottement changent la force requise. La relaxation de la myoglobine sépare les constantes de fixation et de dissociation de NO. Pour le cuivre, les branches de réduction et d’oxydation définissent le seuil de l’électrolyse. L’électroneutralité permet de vérifier la cohérence des concentrations.

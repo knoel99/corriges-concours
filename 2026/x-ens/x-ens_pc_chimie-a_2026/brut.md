@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 h, calculatrice interdite. Sujet : « Eau et chimie : caractériser, traiter et prévenir la pollution organique ». Deux problèmes indépendants, 59 questions.
 
 # Problème 1 : La baignabilité de la Seine
@@ -38,7 +46,7 @@ La charge formelle d'un atome vaut (électrons de valence) − (électrons non l
 - O pontant : $6-4-2=0$ ;
 - O terminal simplement lié (2 atomes, un par chrome) : $6-6-1=-1$.
 
-Chaque chrome est alors de charge formelle nulle ($6-0-6$). Le fait que les deux chromes aient le même nombre d'oxydation impose que les deux charges négatives se répartissent à raison d'**une par motif CrO$_3$**. Le total vaut bien $-2$. Compte tenu de la mésomérie (question 2), chaque oxygène terminal porte en moyenne une charge de $-1/3$ ; l'oxygène pontant reste neutre.
+Chaque chrome est alors de charge formelle nulle ($6-0-6$). La formule de Lewis choisie possède un oxygène terminal simplement lié sur chacun des deux motifs. Le degré d’oxydation +VI du chrome est obtenu par une convention différente, qui attribue à l’oxygène les deux électrons de chaque liaison Cr–O. Le total vaut bien $-2$. Compte tenu de la mésomérie (question 2), chaque oxygène terminal porte en moyenne une charge de $-1/3$ ; l'oxygène pontant reste neutre.
 
 ### Question 4
 
@@ -91,7 +99,7 @@ $$\boxed{K^\circ\approx\frac{1{,}5\times10^{-2}}{(1{,}0\times10^{-2})^2}\approx1
 
 Contrôle sur la figure 2A ($\approx3{,}8$ et $\approx2{,}2$ mmol/L) : $K^\circ\approx1{,}5\times10^2$.
 
-Signe de $\Delta_rS^\circ$ : la réaction remplace deux particules de soluté par une seule, car la molécule d'eau formée se confond avec le solvant. De plus, l'ion dichromate, doublement chargé, ordonne fortement l'eau qui l'entoure. Le désordre diminue :
+Signe de $\Delta_rS^\circ$ : la réaction remplace deux particules de soluté par une seule, car la molécule d'eau formée se confond avec le solvant. La diminution du nombre de solutés indépendants suggère un terme d’entropie de translation négatif. Les contributions d’hydratation peuvent modifier ce bilan. C’est donc une prévision qualitative du signe attendu :
 
 $$\boxed{\Delta_rS^\circ<0}$$
 
@@ -112,7 +120,7 @@ Le système évolue donc dans le sens direct, celui de la condensation, qui dimi
 
 Vérification : de 2A à 2B ($C_{\text{tot}}\times5$), $[\mathrm{HCrO_4^-}]$ passe de ≈ 4 à ≈ 10 mmol/L (facteur 2,5) et $[\mathrm{Cr_2O_7^{2-}}]$ de ≈ 2 à ≈ 15 mmol/L (facteur ≈ 7). La fraction du chrome sous forme de dimère passe de ≈ 50 % à ≈ 75 %.
 
-![Figure 1 — Part du chrome sous forme Cr₂O₇²⁻ et HCrO₄⁻ à pH ≤ 3 en fonction de Ctot, calculée avec K° = 1,5·10² : environ 50 % (figure 2A), 75 % (figure 2B), 82 % dans les tubes de la DCO](figures/q07-q11-dimerisation-chrome.svg)
+![Fraction du chrome sous forme de dichromate dans le modèle dilué à pH acide. On lit environ 82 % pour la solution mère à 84 mmol/L et 62 % dans le tube dilué à 14 mmol/L.](figures/q07-q11-dimerisation-chrome.svg)
 
 $$\boxed{[\mathrm{Cr_2O_7^{2-}}]\text{ croît plus vite que }C_{\text{tot}}\text{ : la dimérisation est favorisée par la concentration}}$$
 
@@ -138,9 +146,9 @@ C'est un **titrage en retour**. On introduit une quantité connue et excédentai
 
 La solution introduite contient $C_t=42$ mmol/L de $\mathrm{K_2Cr_2O_7}$, soit 84 mmol/L de chrome, plus que dans la figure 2B. Elle est acide, puis très fortement acidifiée dans le tube par $\mathrm{H_2SO_4}$ : $\mathrm{CrO_4^{2-}}$ est absent.
 
-D'après la question 7, la part du dimère augmente avec la concentration. Avec $K^\circ\approx150$, on résout $C_{\text{tot}}=h+2K^\circ h^2/c^\circ$ pour $h=[\mathrm{HCrO_4^-}]$. On trouve environ 82 % du chrome sous forme $\mathrm{Cr_2O_7^{2-}}$ et 18 % sous forme $\mathrm{HCrO_4^-}$, soit un rapport des concentrations voisin de 2,3. Le pH n'y change rien, car la condensation ne fait pas intervenir H$^+$.
+D'après la question 7, la part du dimère augmente avec la concentration. Avec $K^\circ\approx150$, on résout $C_{\text{tot}}=h+2K^\circ h^2/c^\circ$ pour $h=[\mathrm{HCrO_4^-}]$. On trouve environ 82 % du chrome sous forme $\mathrm{Cr_2O_7^{2-}}$ et 18 % sous forme $\mathrm{HCrO_4^-}$, soit un rapport des concentrations voisin de 2,3. Cette proportion est calculée pour la solution mère à pH assez acide pour négliger le chromate. Le modèle emploie des activités assimilées aux concentrations. Une variation de force ionique peut donc modifier sa précision.
 
-Une fois les 5 mL de solution dilués dans les 30 mL du tube, le chrome total tombe à 14 mmol/L et la part du dimère à environ 60 % : l'écart à « tout dimère » s'accroît encore.
+Une fois les 5 mL de solution dilués dans les 30 mL du tube, le chrome total tombe à 14 mmol/L et la part du chrome sous forme dimère à environ 62 % : l'écart à « tout dimère » s'accroît encore.
 
 Au sens strict (critère « 10 fois »), le dimère n'est donc pas la seule forme. L'approximation est pourtant **pertinente pour la DCO** : $\mathrm{HCrO_4^-}$ et $\mathrm{Cr_2O_7^{2-}}$ contiennent du chrome +VI (question 4), réduit en Cr$^{3+}$ avec 3 électrons par atome de chrome dans les deux cas. Le pouvoir oxydant de la solution ne dépend que de la quantité totale de chrome, et compter « $C_t$ en $\mathrm{Cr_2O_7^{2-}}$ » donne le bon nombre d'électrons.
 
@@ -223,8 +231,8 @@ $$\boxed{\text{DCO mesurée} \approx 98\,\%\text{ de la DCO théorique} \geq 95\
 
 ### Question 18
 
-- $S_0$ (non diluée) : $V_{\text{eq}}=0{,}2$ mL, donc presque tout le dichromate a été consommé. Il n'était plus en excès et la matière organique n'a peut-être pas été entièrement oxydée. On ne lit qu'une borne inférieure de la DCO ($8\,000\times0{,}05\times24{,}3/10=972$ mg/L, sous-estimée).
-- $S_3$ (dilution 50) : $V_0-V_m=0{,}2$ mL, de l'ordre de l'incertitude de lecture de la burette (environ 0,05 à 0,1 mL). L'incertitude relative est énorme, amplifiée par le facteur 50 (on trouverait 400 mg/L).
+- $S_0$ (non diluée) : $V_{\text{eq}}=0{,}2$ mL, donc presque tout le dichromate a été consommé. Le très faible volume de titrage traduit un petit excès résiduel, proche de la limite exploitable. Une oxydation incomplète conduirait à sous-estimer la DCO. Le résultat apparent est fragile ($8\,000\times0{,}05\times24{,}3/10=972$ mg/L, sous-estimée).
+- $S_3$ (dilution 50) : $V_0-V_m=0{,}2$ mL, de l'ordre de l'incertitude de lecture de la burette (environ 0,05 à 0,1 mL). Le rapport entre l’incertitude de la différence et la différence elle-même est grand. La multiplication par 50 reporte sur la solution initiale à la fois la valeur et son incertitude absolue. Ce facteur, si on le considère exact, laisse l’incertitude relative inchangée (on trouverait 400 mg/L).
 
 Pour un échantillon inconnu, la DCO n'est pas connue a priori. Une gamme de dilutions garantit qu'au moins une mesure tombe dans le domaine exploitable : dichromate encore en excès, mais consommation nettement mesurable. Les dilutions extrêmes encadrent le résultat.
 
@@ -267,7 +275,7 @@ Limites asymptotiques :
 - à $t=0$ : $[\mathrm{O_2}]=[\mathrm{O_2}]_0$ et $\mathrm{DBO}_0=0$ ;
 - quand $t\to\infty$ : $[\mathrm{O_2}]\to[\mathrm{O_2}]_\infty$ et $\mathrm{DBO}_t\to\mathrm{DBO}_\infty$.
 
-Le palier vaut $\mathrm{DBO}_\infty=[\mathrm{O_2}]_0-[\mathrm{O_2}]_\infty$.
+Le palier vaut $\mathrm{DBO}_\infty=[\mathrm{O_2}]_0-[\mathrm{O_2}]_\infty$ pour le milieu dont on trace les courbes. Pour exprimer une mesure sur le flacon dilué en demande par litre d’eau usée, il faut d’abord retrancher le témoin, puis appliquer la dilution de Q20. Le facteur 30 multiplie aussi le palier et laisse inchangé le rapport $\mathrm{DBO}_t/\mathrm{DBO}_\infty$.
 
 Représentations (figure 2) : $[\mathrm{O_2}]$ décroît exponentiellement vers l'asymptote horizontale $[\mathrm{O_2}]_\infty$. $\mathrm{DBO}_t$ croît de 0 vers le palier $\mathrm{DBO}_\infty$. Les deux courbes sont symétriques, puisque $[\mathrm{O_2}]+\mathrm{DBO}_t=[\mathrm{O_2}]_0$.
 
@@ -301,7 +309,7 @@ Dans CO$_2$, le carbone est au degré d'oxydation +IV, le maximum possible pour 
 
 Chaque étape a une vitesse de la forme $v_i=k_i\,[\mathrm{org}]^a[\mathrm{O_2}]^b$.
 
-Au-delà du point critique, l'eau, la matière organique et le dioxygène forment une **seule phase homogène** (énoncé : ils sont « complètement miscibles »). Il n'y a plus de transfert gaz–liquide limitant : la concentration en dioxygène dissous est fixée par la quantité introduite. Le dioxygène étant en outre en large excès, sa concentration reste pratiquement constante au cours de l'oxydation.
+Au-delà du point critique, l'eau, la matière organique et le dioxygène forment une **seule phase homogène** (énoncé : ils sont « complètement miscibles »). Il n'y a plus de transfert gaz–liquide limitant : la concentration en dioxygène dissous est fixée par la quantité introduite. La miscibilité rend la phase homogène. La dégénérescence d’ordre suppose, en plus, que la consommation d’oxygène reste faible devant la quantité disponible pendant le suivi. On peut alors traiter sa concentration comme constante.
 
 On l'intègre dans une constante apparente $k'_i=k_i[\mathrm{O_2}]_0^b$ : c'est la **dégénérescence de l'ordre**. Les $k'_i$ dépendent alors de la quantité de O$_2$ introduite.
 
@@ -331,6 +339,8 @@ La solution générale vaut $C_{\mathrm{CO}}=\lambda e^{-k'_3t}+\mu e^{-(k'_1+k'
 
 $$\boxed{C_{\mathrm{CO}}=\frac{k'_2C_{\mathrm{COT},0}}{k'_1+k'_2-k'_3}\left(e^{-k'_3t}-e^{-(k'_1+k'_2)t}\right)}\qquad(k'_1+k'_2\neq k'_3)$$
 
+Lorsque les deux taux coïncident, poser $S=k_1^\prime+k_2^\prime=k_3^\prime$. Le facteur intégrant $e^{St}$ donne alors $C_{\mathrm{CO}}(t)=k_2^\prime C_{\mathrm{COT},0}\,t\,e^{-St}$. La solution reste donc finie quand le dénominateur de l’expression précédente tend vers zéro.
+
 ### Question 29
 
 D'après Q28, $\ln(C_{\mathrm{COT}}/C_{\mathrm{COT},0})=-(k'_1+k'_2)t$. La pente de la figure 4 donne seulement la somme :
@@ -341,7 +351,7 @@ Les constantes $k'_1$ et $k'_2$ ne sont pas accessibles séparément par le seul
 
 ### Question 30
 
-On étudie l'étape 3 isolément : on réalise l'oxydation hydrothermale à 450 °C, dans les mêmes conditions (même excès de O$_2$, même pression), d'une solution contenant **du monoxyde de carbone seul**, sans matière organique. Alors $C_{\mathrm{CO}}=C_{\mathrm{CO},0}\,e^{-k'_3t}$. On suit CO par IR, à 2 140 cm⁻¹. La pente de $\ln(C_{\mathrm{CO}}/C_{\mathrm{CO},0})$ en fonction du temps vaut $-k'_3$.
+On peut prolonger le suivi infrarouge de l’effluent initial à 450 °C. On choisit une portion tardive où le COT est devenu suffisamment faible au regard du CO résiduel pour que sa contribution à la formation de CO soit négligeable. À partir d’un instant $t_0$ de cette plage, $\ln[C_{\rm CO}(t)/C_{\rm CO}(t_0)]\simeq-k_3^\prime(t-t_0)$. La pente donne $-k_3^\prime$. On vérifie que la pente reste stable lorsqu’on décale $t_0$ et que le signal de CO dépasse la limite de quantification. Si les deux contributions se recouvrent, un ajustement simultané des suivis de COT et de CO à la loi complète de Q28 permet de les distinguer.
 
 ### Question 31
 
@@ -372,11 +382,11 @@ Commentaire : les deux valeurs sont proches et modérées, typiques d'actes chim
 
 ### Question 33
 
-Si les trois étapes avaient la même énergie d'activation, élever $T$ multiplierait les trois constantes par le même facteur : les courbes se déduiraient les unes des autres par une simple contraction de l'axe des temps, et la hauteur du maximum de CO resterait la même. Or, sur la figure 6, à 400 °C et 425 °C, CO s'accumule sans maximum net sur 20 s (≈ 0,35–0,4 à 20 s). Dès 450 °C, CO passe par un maximum de plus en plus précoce et de plus en plus bas relativement au COT consommé, et il a presque disparu à 20 s à 500 °C, où CO$_2$ tend vers 1. Le rapport $k'_3/(k'_1+k'_2)$ augmente donc avec $T$, ce qui impose :
+Si les trois étapes avaient la même énergie d'activation, élever $T$ multiplierait les trois constantes par le même facteur : les courbes se déduiraient les unes des autres par une simple contraction de l'axe des temps, et la hauteur du maximum de CO resterait la même. Or, sur la figure 6, à 400 °C et 425 °C, CO s'accumule sans maximum net sur 20 s (≈ 0,35–0,4 à 20 s). Dès 450 °C, CO passe par un maximum de plus en plus précoce et de plus en plus bas relativement au COT consommé, et il a presque disparu à 20 s à 500 °C, où CO$_2$ tend vers 1. Le rapport $k'_3/(k'_1+k'_2)$ augmente donc avec $T$, ce qui suggère que la consommation de CO devient plus sensible à la température que la disparition globale du COT. En posant $S=k_1^\prime+k_2^\prime$, l’énergie d’activation apparente de $S$ est une moyenne pondérée :
 
-$$\boxed{E_{a3}>E_{a1}\ \text{et}\ E_{a3}>E_{a2}}$$
+$$E_{a,S}=-R\frac{\mathrm d\ln S}{\mathrm d(1/T)}=\frac{k_1^\prime E_{a1}+k_2^\prime E_{a2}}{k_1^\prime+k_2^\prime},\qquad E_{a3}>E_{a,S}\quad\text{si }k_3^\prime/S\text{ croît avec }T.$$
 
-L'oxydation de CO est l'étape limitante de la minéralisation à basse température.
+Les deux premières énergies valent environ 86 et 92 kJ/mol. La lecture suggère une activation plus élevée pour la troisième étape par rapport à leur valeur effective. Pour établir séparément les deux inégalités, il faudrait ajuster $k_3^\prime$ à plusieurs températures et en évaluer l’incertitude. Aux basses températures, le CO persiste et ralentit la minéralisation.
 
 ### Question 34
 
@@ -395,7 +405,7 @@ valeur atteinte vers 470–475 °C. Pour une minéralisation complète (CO lui a
 
 $$\boxed{T\approx475\text{–}500\ \text{°C}}$$
 
-Conclusion : l'oxydation hydrothermale détruit la matière organique en quelques secondes, contre plusieurs jours pour l'autoépuration biologique (DBO), soit un gain d'un facteur de l'ordre de $10^4$. Elle traite aussi la fraction non biodégradable ($\mathrm{DCO}/\mathrm{DBO_5}\approx5{,}5$ ici). Le prix à payer est élevé : plus de 221 bar et environ 500 °C, d'où un coût énergétique important et des matériaux résistant à la corrosion. Le procédé est réservé aux effluents industriels concentrés ou réfractaires.
+Conclusion : l'oxydation hydrothermale détruit la matière organique en quelques secondes, contre plusieurs jours pour l'autoépuration biologique (DBO), soit un gain d'un facteur de l'ordre de $10^4$. Elle traite aussi la fraction non biodégradable ($\mathrm{DCO}/\mathrm{DBO_5}\approx5{,}5$ ici). Le prix à payer est élevé : plus de 221 bar et environ 500 °C, d'où un coût énergétique important et des matériaux résistant à la corrosion. Le procédé présente ainsi un intérêt particulier pour des effluents industriels concentrés ou réfractaires. La DCO et la DBO donnent deux mesures différentes de la charge oxydable : leur quotient ne démontre pas à lui seul un rendement de traitement.
 
 # Problème 2 : Synthèse de l'énacyloxine IIa
 
@@ -420,8 +430,10 @@ Précautions :
 On note $\mathrm{R^B{-}CO{-}CH_3}$ le fragment B et $\mathrm{R^C{-}CHO}$ le fragment C.
 
 1. Déprotonation : le doublet de l'azote de $i\mathrm{Pr_2N^-}$ arrache un H du méthyle. Le doublet C–H forme la double liaison C=C et le doublet π du C=O passe sur l'oxygène. On obtient l'énolate $\mathrm{R^B{-}C(O^-){=}CH_2}\leftrightarrow\mathrm{R^B{-}C(=O){-}CH_2^-}$ (+ $i\mathrm{Pr_2NH}$).
-2. Addition nucléophile : le doublet π C=C de l'énolate attaque le carbone de l'aldéhyde, et le doublet π C=O de l'aldéhyde passe sur son oxygène. Il se forme la liaison $\mathrm{C_{16}{-}C_{17}}$ et l'alcoolate $\mathrm{R^B{-}CO{-}CH_2{-}CH(O^-){-}R^C}$ (Li$^+$).
+2. Addition nucléophile : dans la forme carbonée de l’énolate, le doublet de C16 forme une liaison avec C17. Le doublet π de l’aldéhyde se déplace vers l’oxygène. Dans la forme oxygénée, on dessine également la reformation du carbonyle de la cétone par un doublet de son oxygène. Il se forme la liaison $\mathrm{C_{16}{-}C_{17}}$ et l'alcoolate $\mathrm{R^B{-}CO{-}CH_2{-}CH(O^-){-}R^C}$ (Li$^+$).
 3. Hydrolyse : l'alcoolate est protoné par NH$_4^+$, ce qui donne la β-hydroxycétone $\mathrm{R^B{-}CO{-}CH_2{-}CH(OH){-}R^C}$.
+
+![Les flèches courbes suivent le doublet de C16 et celui de la liaison π de l’aldéhyde. La liaison formée relie C16 à C17.](figures/q36-aldolisation.svg)
 
 ### Question 37
 
@@ -459,11 +471,11 @@ $$\boxed{\text{produit secondaire : l'énantiomère de }\mathbf{2}}$$
 - le carbone est primaire, exocyclique et peu encombré ;
 - Br$^-$ est un excellent nucléofuge (base faible, polarisable), alors que l'ouverture de l'époxyde non activé (milieu basique, sans acide de Lewis) libère un alcoolate, mauvais nucléofuge, malgré la tension du cycle.
 
-La voie directe conserve la configuration du centre stéréogène, et l'excès énantiomérique de **1** se retrouve dans **2**. L'autre voie, minoritaire, conduit à *ent*-**2** et abaisse l'excès énantiomérique.
+La voie directe conserve la géométrie du centre stéréogène. La composition énantiomérique mesurée pour le produit isolé dépend aussi de la fraction qui emprunte la voie concurrente. L'autre voie, minoritaire, conduit à *ent*-**2** et abaisse l'excès énantiomérique.
 
 ### Question 42
 
-1. $n$-HxLi déprotone le triméthylsilylacétylène : p$K_a$ ≈ 25 contre 40 pour l'hexane, réaction totale. Le sous-produit est l'hexane, liquide et inerte ($n$-HxLi est moins dangereux que $n$-BuLi, qui libère du butane gazeux). Le groupe TMS bloque l'autre extrémité de l'alcyne : il empêche une seconde déprotonation et un double couplage.
+1. $n$-HxLi déprotone le triméthylsilylacétylène : p$K_a$ ≈ 25 contre 40 pour l'hexane, réaction totale. La protonation de l’hexyle donne de l’hexane. Le choix de cet organolithien s’explique d’abord par sa basicité, suffisante pour former l’alcynure. Le groupe TMS bloque l'autre extrémité de l'alcyne : il empêche une seconde déprotonation et un double couplage.
 2. L'alcynure de lithium, nucléophile, ouvre l'époxyde de **2** par S$_\text{N}$2 sur le carbone le moins substitué ($\mathrm{CH_2}$). Le centre stéréogène n'est pas touché, et sa configuration est conservée.
 3. Le milieu doit être anhydre et aprotique (THF, sous atmosphère inerte, à basse température). On peut activer l'époxyde par un acide de Lewis (BF$_3$·OEt$_2$).
 4. Le lavage par $\mathrm{H_2O}$/H$^+$ protone l'alcoolate pour libérer l'alcool **3**. Il doit rester doux, car le PMB n'est stable que pour pH > 1.
@@ -474,7 +486,7 @@ Hydrogénation partielle syn de l'alcyne en alcène Z :
 
 $$\boxed{\mathrm{H_2}\ (1\ \text{bar, 1 équiv.}),\ \text{catalyseur de Lindlar (Pd/CaCO}_3\text{ désactivé par Pb, quinoléine), AcOEt ou MeOH, 25 °C}}$$
 
-D'après la table, l'éther PMB ne craint pas $\mathrm{H_2}$/Pd.
+La sélectivité recherchée est la semi-hydrogénation sur un palladium désactivé. Il faut aussi préserver l’éther benzylique PMB pendant cette opération.
 
 ### Question 44
 
@@ -502,7 +514,7 @@ Premier temps, DDQ dans $\mathrm{CH_2Cl_2}$/H$_2$O tamponné à pH 7,4 : déprot
 
 Second temps, DMP/NaHCO$_3$ : oxydation ménagée de l'alcool primaire en aldéhyde.
 
-Contrôle par la formule : **10** = $\mathrm{C_{13}H_{19}ClO_3}$, soit l'alcool moins 2 H. Contrôle par l'IR : une bande intense à 1 690 cm$^{-1}$ correspond au C=O d'aldéhyde (plage 1 650–1 730 cm$^{-1}$). L'absence de bande au-dessus de 3 000 cm$^{-1}$ signifie qu'il n'y a ni O–H (oxydation complète de l'alcool) ni H aromatique (groupe PMB bien éliminé).
+Contrôle par la formule : **10** = $\mathrm{C_{13}H_{19}ClO_3}$, soit l'alcool moins 2 H. Contrôle par l'IR : une bande intense à 1 690 cm$^{-1}$ correspond au C=O d'aldéhyde (plage 1 650–1 730 cm$^{-1}$). L’absence de bande caractéristique au-dessus de 3 000 cm$^{-1}$ est cohérente avec la disparition de la large bande O–H de l’alcool. L’identification du démasquage du PMB repose aussi sur la transformation indiquée et sur le bilan de formule. À elle seule, l’absence d’une bande C–H faible ne suffirait pas à prouver la disparition d’un cycle aromatique.
 
 $$\boxed{\mathbf{10} : \mathrm{CH_2{=}CH{-}CH_2{-}CH{=}C(Cl){-}CH(CH_3){-}}\text{[dioxolane 2,2-diméthyle]}\mathrm{{-}CHO}}$$
 
@@ -523,7 +535,7 @@ $$\boxed{\begin{aligned}
 
 L'acétonide et le chlorure vinylique ne réagissent pas avec l'organomagnésien, et **10** ne porte plus aucun H acide.
 
-L'hydrolyse doit rester douce, car l'acétonide est un acétal sensible aux acides. Le nouveau centre est obtenu en mélange d'épimères (liaison ondulée de **11**), sans conséquence puisqu'il sera ensuite oxydé en cétone.
+L'hydrolyse doit rester douce, car l'acétonide est un acétal sensible aux acides. La liaison ondulée de **11** laisse la configuration de ce nouveau centre non spécifiée. Les deux épimères sont possibles, sans que leur proportion soit donnée. Cette indétermination est sans conséquence puisqu'il sera ensuite oxydé en cétone.
 
 ### Question 48
 
@@ -623,7 +635,7 @@ Précautions : préserver l'acétal (acétonide) et l'ester, ainsi que le TBS et
 - Pas d'acide fort ni de chaleur (déshydratation E1 classique) : l'acétonide serait hydrolysé, le TBS coupé (pH ≤ 2), et le polyène pourrait s'isomériser ou se polymériser via un carbocation allylique.
 - Pas de base aqueuse forte (soude, potasse) : elle saponifierait l'ester éthylique et couperait le TBS (pH > 12).
 - On active donc l'alcool en bon groupe partant, puis on élimine en E2, en milieu anhydre, avec une base organique non nucléophile qui n'attaque pas l'ester : MsCl, Et$_3$N, CH$_2$Cl$_2$, 0 °C, puis DBU ;
-- Contrôler la stéréochimie : la double liaison $E$ attendue est favorisée thermodynamiquement par la conjugaison.
+- Contrôler la stéréochimie : les deux géométries peuvent être conjuguées. Une élimination E2 exige un H en position β accessible et antipériplanaire au groupe partant. La gêne stérique peut favoriser la géométrie $E$ représentée, dont la sélectivité devrait être vérifiée.
 - Travailler sous atmosphère inerte et à l'abri de la lumière : le polyène est sensible à l'oxydation et à la photo-isomérisation.
 
 ### Question 59

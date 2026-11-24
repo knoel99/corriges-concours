@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 

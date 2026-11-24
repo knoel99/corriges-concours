@@ -6,6 +6,10 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Question directrice** — À quelles conditions le tremblement devient-il une nécessité littéraire ?
 
 ## Introduction
@@ -23,6 +27,8 @@ Le propos de Mouawad se vérifie jusque dans son mouvement verbal. Le terme de t
 ## II. La sincérité d’un texte ne se lit pas dans ses seules marques d’irrégularité
 
 Un lecteur du poème « Demain, dès l’aube… » ne rencontre d’abord aucun désordre. Les trois quatrains d’alexandrins à rimes croisées soutiennent une marche dont le locuteur a prévu le départ et la durée. L’être rejoint demeure assez longtemps un « tu » pour que le lecteur puisse imaginer un rendez-vous entre deux vivants. Lorsque le geste de déposer du houx et de la bruyère sur une tombe révèle le terme du trajet, le futur des verbes précédents s’éclaire autrement. Il promettait la fidélité d’une visite et nous laissait espérer un échange auquel le mort ne pourrait répondre. Hugo fait travailler la justesse du vers contre l’assurance de notre lecture. Briser le mètre à chaque pas pour afficher la douleur eût donné une issue immédiate à ce qui devait rester quelque temps suspendu. Le tracé régulier est ici la condition de l’ébranlement.
+
+La dernière proposition de Mouawad peut alors se lire de deux façons. Une ligne tracée à main levée garde les secousses de la main. Un récit, même écrit d’une main ferme, peut être incapable d’aller droit de ce que son auteur a vécu à ce que le lecteur en comprendra. Le trajet de Hugo est en ce sens exemplaire : le marcheur connaît sa destination dès le premier vers ; c’est le lecteur qui, au dernier quatrain, doit revenir sur la signification de sa marche.
 
 À l’inverse, quelques hésitations savamment disposées peuvent servir une entreprise entièrement calculée. Aux comices agricoles de *Madame Bovary* (deuxième partie, chapitre VIII), Rodolphe mène sa séduction pendant que les discours officiels et la proclamation des récompenses se poursuivent dans l’espace public. L’orateur et le séducteur semblent au départ occuper deux scènes indépendantes. Flaubert rapproche pourtant sur la page leurs fragments de paroles, laisse un prix agricole couper l’élan d’une déclaration qui prétend venir du plus profond de l’âme. La juxtaposition met au jour ce que la parole de Rodolphe partage avec l’éloquence officielle : elle connaît son effet d’avance et sait ramener son auditoire vers les formules que celui-ci désire entendre. Le romancier peut produire une conviction de sincérité chez Emma et, avec les mêmes mots, éveiller le soupçon chez le lecteur. Toute phrase émue serait donc un mauvais certificat de l’émotion de celui qui l’écrit. Ce que nous appelons la sincérité de l’œuvre entière se joue à une autre échelle que la sincérité d’un discours représenté.
 

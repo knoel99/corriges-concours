@@ -34,5 +34,99 @@
       "question": "Q20",
       "legende": "Allure de R_th−eq(e) dans les cas α > 1 et α < 1 (rayon critique)"
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/ph_b_th_2026_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_b_ecrit_2026.pdf",
+    "sujet_sha256": "1512f3a87bbb71513961a916c2764107ebab55e554acbfc7d376794a43367891",
+    "rapport_sha256": "671f0c11055f58b0308a4a0560dd52b20f33c44bea3268dd217fe614084a1a08"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      27,
+      28
+    ],
+    "questions_partiellement_traitees": [
+      26,
+      29,
+      30
+    ],
+    "questions_non_traitees": [
+      16
+    ]
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-07-29",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie de résolution utilisée pour établir le corrigé brut et le corrigé guidé.",
+      "source_commit": "c1121b3bb108e08d4a99da3eec8949ba07bde626",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-06",
+      "modifications": true,
+      "perimetre": "Relecture de la copie de résolution et établissement des éditions brute et guidée, avec revue enregistrée.",
+      "source_commit": "f1ecdbe3f281a2272ff1828f3a298b4947900d31",
+      "fournisseur": "claude-code",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
+      "modifications": null,
+      "perimetre": "Révision des deux éditions à la lumière du rapport de jury.",
+      "source_commit": "27bad2b24ec95ee0a32b66f2b987d41d22c033fe",
+      "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 3,
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé avec le sujet, le diagramme eau-vapeur de la feuille réponse et la partie thermodynamique du rapport commun. 26 questions traitées intégralement et 3 partiellement. Contrôle du titre par enthalpie et entropie, des bilans et du seuil critique d’isolation. Les calculs de dimensionnement et l’évaluation de la propulsion militaire sont exclus.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

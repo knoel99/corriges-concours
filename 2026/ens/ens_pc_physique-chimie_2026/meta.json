@@ -11,7 +11,9 @@
   "sources": {
     "sujet": "https://generation-prepa.com/wp-content/uploads/2026/04/PhysiqueChimie2026-PC-concours-X-ENS.pdf",
     "notice": "https://www.ens-lyon.fr/sites/default/files/2025-12/Notice_interENS_2026_VF_1.pdf",
-    "transcription": "https://www.wikiprepa.fr/concours/data/ens_physique-chimie-l_pc_2026.pdf"
+    "transcription": "https://www.wikiprepa.fr/concours/data/ens_physique-chimie-l_pc_2026.pdf",
+    "sujet_sha256": "2f5af15cc3c9c4ff026095e041adccbe9604af6cf4924cd94dfb85bf2a6c36f7",
+    "transcription_sha256": "2e947b54495962c8018e8fb95967c935fb4957845cdfdf95e70df612e171ca6a"
   },
   "couverture": {
     "statut": "partiel",
@@ -69,19 +71,21 @@
       51,
       54,
       55,
-      56,
-      57,
-      58,
-      59,
-      60,
-      61,
+      58
+    ],
+    "questions_partiellement_traitees": [
       62
     ],
-    "questions_partiellement_traitees": [],
     "questions_non_traitees": [
       52,
-      53
-    ]
+      53,
+      56,
+      57,
+      59,
+      60,
+      61
+    ],
+    "precision": "Q1–51 et Q54, Q55, Q58 sont corrigées intégralement. Q62 couvre la lecture qualitative des courbes de concentration. Le retraitement nucléaire et la modélisation ou le dimensionnement du réacteur de substitution décrit en II.3 sont hors périmètre."
   },
   "figures": [
     {
@@ -158,16 +162,6 @@
       "fichier": "figures/q54-courant-potentiel-cuivre.svg",
       "question": "Q54",
       "legende": "Courbe qualitative du bain de cuivre à l’entrée. La densité de courant est négative sur la branche de réduction et positive sur la branche d’oxydation."
-    },
-    {
-      "fichier": "figures/q56-bilan-de-cuivre.svg",
-      "question": "Q56",
-      "legende": "La différence de débit molaire convectif équilibre le dépôt à la cathode sur la surface de la tranche."
-    },
-    {
-      "fichier": "figures/q62-ordres-apparents.svg",
-      "question": "Q62",
-      "legende": "Schéma des deux régimes du modèle pour le sulfate de cuivre. À courant presque constant, la concentration décroît linéairement."
     }
   ],
   "date_revision": "2026-11-24",
@@ -213,6 +207,18 @@
       "modifications": true,
       "perimetre": "Questions 35 à 51 et 54 à 62 de chimie, assemblage des deux versions.",
       "agent": "physique_sciences"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Les deux éditions ont été relues sur le fac-similé de l’épreuve. Contrôle des bilans mécaniques, des ordres de grandeur, des orbitales et du tableau d’activation. Les réponses de chimie générale portent sur Q35–51 et sur l’électrochimie du cuivre (Q54, Q55, Q58, lecture graphique en Q62). Le procédé nucléaire et la modélisation du réacteur associé sont hors périmètre. Aucun rapport écrit correspondant n’est identifié."
     }
   ]
 }

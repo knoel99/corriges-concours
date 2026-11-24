@@ -10,6 +10,11 @@
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
   "figures": [
     {
+      "fichier": "figures/q02-distance-terre-didymos.svg",
+      "question": "Q2",
+      "legende": "Orbite de la Terre et ellipse de Didymos à la même échelle. Le Soleil est au foyer de l’ellipse. L’alignement dessiné donne la borne supérieure de la distance entre les deux corps."
+    },
+    {
       "fichier": "figures/q09-potentiel-effectif.svg",
       "question": "Q9",
       "legende": "Énergie potentielle effective : minimum en $r_0$ (orbite circulaire), petites oscillations de $r$ autour"
@@ -39,5 +44,61 @@
       "question": "Q33",
       "legende": "Astéroïde double à l'échelle ($R_1\\approx0{,}37\\,D$, $R_2\\approx0{,}08\\,D$) et zone où S est caché vu de la Terre"
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20MPI_0.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MPI_Physique%20OK.pdf",
+    "sujet_sha256": "9d294b9f0a6946724d32c56ef106562711379641be7265e305e989418bfbfbce",
+    "rapport_sha256": "a7217501861ba690a032ea1e0303f64f8a96c9f5234ac594a4a25e200d29d328",
+    "periode_observee_nasa_jpl": "https://www.jpl.nasa.gov/news/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-4-8",
+      "effort": "high",
+      "vitesse": "standard",
+      "date": "2026-07-27",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie de résolution utilisée pour établir le corrigé brut et le corrigé guidé.",
+      "source_commit": "c1121b3bb108e08d4a99da3eec8949ba07bde626",
+      "fournisseur": "opus"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-06",
+      "modifications": true,
+      "perimetre": "Relecture de la copie de résolution et établissement des éditions brute et guidée, avec revue enregistrée.",
+      "source_commit": "35c84db0afd710c9dbfe207b21053ce18bbe526a",
+      "fournisseur": "claude-code",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
+      "modifications": null,
+      "perimetre": "Révision des deux éditions à la lumière du rapport de jury.",
+      "source_commit": "18518cb0bc6a3a6c9bd9ef572216417c3e4105a0",
+      "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 3,
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé avec les 35 questions, les deux graphiques du sujet officiel et le rapport du jury. Vérification des distances et des périodes orbitales, de la solution électrostatique à charge d’espace et des occultations. Correction du calcul de densité, de ses hypothèses et comparaison des périodes du sujet et des observations NASA.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

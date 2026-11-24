@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Support.** Une centrifugeuse de précision (Exail CTR-20) sert à calibrer des accéléromètres. Un double-bras de longueur $L = 1\ \text{m}$ tourne autour d'un axe vertical. Le capteur placé en bout de bras subit une accélération centripète $\Gamma = L\Omega^2$, que l'on veut connaître à **10 ppm** près jusqu'à environ **100 g**.
@@ -968,14 +974,15 @@ Un défaut angulaire du premier ordre ne produit qu'une erreur du second ordre.
 
 #### Solution
 
-$$\boxed{\begin{aligned}
-\frac{\tilde\Gamma - \Gamma}{\Gamma} &= -\frac{\psi^2}{2}\\
-\left|\frac{\tilde\Gamma - \Gamma}{\Gamma}\right| &= \frac{\psi^2}{2}
-\end{aligned}}$$
+En valeur absolue, l’erreur relative exacte et son développement pour un angle en radians sont
 
-La condition $\psi^2/2 \leq 10^{-5}$ donne $\psi \leq \sqrt{20\times10^{-6}} = \sqrt{20}\times10^{-3}$ :
+$$e=1-\cos\psi=2\sin^2(\psi/2)=\frac{\psi^2}{2}+O(\psi^4).$$
 
-$$\boxed{\psi_{max} \approx 4{,}5\times10^{-3}\ \text{rad} \approx 0{,}26^\circ}$$
+Dans le voisinage de l’alignement, l’exigence $e\leqslant10^{-5}$ impose une borne sur la **valeur absolue** de l’angle,
+
+$$\boxed{|\psi|\leqslant 2\arcsin\sqrt{10^{-5}/2}\simeq 0{,}00447214\ \text{rad}\simeq 0{,}2562^\circ.}$$
+
+La borne au second ordre $\sqrt{2\times10^{-5}}$ donne pratiquement le même résultat. Pour un réglage à deux chiffres significatifs qui respecte la tolérance, $4{,}4$ mrad convient. La valeur arrondie vers le haut $4{,}5$ mrad conduit déjà à $10{,}125$ ppm.
 
 ### Question 43
 
@@ -1153,6 +1160,8 @@ La masse se place sous l'axe du bras. Avec $h_m = 100\ \text{mm}$, la position e
 
 > [!METHODE]
 > Exploiter la formule au-delà de l'A.N. : $z_m$ dépend de $\Omega$, il faut donc repositionner la masse à chaque vitesse, ce qui justifie sa motorisation. La condition $|z_m| \leq h_m$ donne ici $\Omega \gtrsim 20\ \text{rad·s}^{-1}$ : en dessous, la correction sort de la course.
+
+Avec ces masses et ces déports, la formule de réglage est $z_m=-0{,}05-19{,}62/\Omega^2$ en mètres. La butée inférieure $z_m=-0{,}100$ m est atteinte à $\Omega=\sqrt{392{,}4}\simeq19{,}81$ rad·s⁻¹. À 15 rad·s⁻¹, il faudrait environ −137 mm, hors course. À 30 rad·s⁻¹, il faut −71,8 mm, dans la course.
 
 ### Question 52
 
