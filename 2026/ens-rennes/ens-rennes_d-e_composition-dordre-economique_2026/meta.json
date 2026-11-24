@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d-e_composition-dordre-economique_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2026
+  },
+  "intitule": "Dans quelle mesure l’environnement économique construit au sein de l’Union européenne se conforme-t-il aux grands principes de l’analyse économique ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2026_1790867553852-pdf",
+    "sujet_sha256": "d012cd551832bee13e5a8ea5c988abe6798429aff199f502f69f8b07958fc03c",
+    "references": [
+      "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:12016E/TXT"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/institutions-europeennes.svg",
+      "question": "Composition",
+      "legende": "De l’institution au critère économique"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture visuelle de la page R 26-330 et confrontation à la question du PDF et vérification des périmètres Union européenne et zone euro, du mécanisme de Viner et des articles 101, 102 et 107 du TFUE."
+    }
+  ]
+}

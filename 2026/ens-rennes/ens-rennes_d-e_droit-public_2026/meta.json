@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d-e_droit-public_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit public",
+    "annee": 2026
+  },
+  "intitule": "La protection du patrimoine archéologique par la police générale",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuves-a-options-d-e-2026_1790867571556-pdf#page=3",
+    "sujet_sha256": "a70d81b253dc60f0d4542adb2e1ada1b9f8ed93c6be71c298019f4af69cdca9a",
+    "references": [
+      "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-09-30/491285"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/polices-archeologie.svg",
+      "question": "Composition",
+      "legende": "Deux polices, deux objets de décision"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des pages physiques 3 et 4, confrontation à la décision 491285 et vérification des acteurs, dates, moyens et dispositif."
+    }
+  ]
+}
