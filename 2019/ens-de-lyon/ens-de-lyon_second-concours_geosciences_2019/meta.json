@@ -1,0 +1,80 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2019
+  },
+  "questions": 23,
+  "redaction": "Les vingt-trois questions et leurs sous-questions sur le Krakatoa et le Tambora sont traitées à partir des figures et tableaux officiels. Le corrigé documente un écart entre la formule de volume imprimée et l’intégration de l’épaisseur des dépôts, puis chiffre les deux lectures.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_2c_sujet_st.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_2CC_rap_eST.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "60c7a5474532b610ef28e4b3d662563e8d3b618ac72727edc96103698444efc9",
+    "rapport_sha256": "287a5260880831b2568101bbdeb8ba7bc1f3b86d284210ac97f0238bc6ecad23"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1.1.1",
+      "fichier": "figures/arc-sonde.svg",
+      "legende": "Schéma régional. La ligne à triangles indique la fosse et le côté chevauchant, les flèches la convergence. Vers Banda la limite dessine un arc au contact de la marge australienne."
+    },
+    {
+      "numero": 2,
+      "question": "2.1.3",
+      "fichier": "figures/epaisseurs.svg",
+      "legende": "Les deux droites sont reconstruites à partir des coefficients imprimés de la figure 6. Une pente plus forte réduit le volume intégré."
+    },
+    {
+      "numero": 3,
+      "question": "2.2.3",
+      "fichier": "figures/flux-radiatifs.svg",
+      "legende": "À chaque aller-retour entre la couche et la surface, le flux est multiplié par le produit de leur réflectivité. Le flux observé au sommet inclut toutes les sorties successives."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les vingt-trois questions et leurs sous-questions sur le Krakatoa et le Tambora sont traitées à partir des figures et tableaux officiels. Le corrigé documente un écart entre la formule de volume imprimée et l’intégration de l’épaisseur des dépôts, puis chiffre les deux lectures.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.3.1",
+      "1.3.2",
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.3.1",
+      "2.3.2",
+      "2.3.3",
+      "2.3.4"
+    ]
+  }
+}
