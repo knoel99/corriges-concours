@@ -1,0 +1,70 @@
+{
+  "slug": "ens-rennes_d-e_droit-oral_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Droit (oral)",
+  "questions": 0,
+  "sujets": 23,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oraux-de-droit-d-e-2026_1790958475414-pdf",
+    "sujet_sha256": "cda4db535e5065b85539b08324a6b2e67a68dc2931c5b22736e72b61bbdc9260",
+    "apercu_sujet_sha256": "90683c5c59ad2f5a59a4f18e263054396546f60b3753cc46a047c0a18adc5d54",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/directive.svg",
+      "question": "1",
+      "legende": "Du droit de l’Union à la demande du couple"
+    },
+    {
+      "fichier": "figures/eau.svg",
+      "question": "8",
+      "legende": "Deux demandes issues d’une même interruption"
+    },
+    {
+      "fichier": "figures/conducteur.svg",
+      "question": "18",
+      "legende": "Qualifier la position de la personne au moment du choc"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des vingt-trois constructions théoriques, cas pratiques et relances et des trois schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la numérotation imprimée et des conditions des recours. Contrôle des décisions publiées sur l’eau, l’indivision, l’indemnisation routière, la réservation de stand et les lingots."
+    }
+  ]
+}
