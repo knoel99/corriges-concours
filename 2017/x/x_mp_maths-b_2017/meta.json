@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2017",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2017
+  },
+  "questions": 31,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathB.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_MP_rap_eMathB.pdf",
+    "sha256_sujet": "9116c6ff93be5d93a0f38002096d29270bc3a1166afc4d38c58efaa09849ef31"
+  },
+  "figures": [
+    {
+      "fichier": "figures/tangente-entropie.svg",
+      "question": "2b",
+      "legende": "La tangente en un donne la minoration de la fonction entropique. En zéro, l’écart vaut un."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète dans les deux éditions sur le sujet de six pages et le rapport de huit pages. Contrôle des 31 items, des limites aux deux bords, de la constante de Sobolev, du passage par Fatou et des deux queues gaussiennes. Figure analytique de la tangente utilisée en 2b.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
