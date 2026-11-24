@@ -1,0 +1,152 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2018",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2018
+  },
+  "questions": 66,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/2018_2CC_sujet_Chimie.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/11/18_2CC_rap_eChi.pdf",
+    "sujet_sha256": "08c5d59afe4f30ba29a2e02320e374cc6c655cf92b1355b74d69b9c952c436ff",
+    "rapport_sha256": "5beacd0aa9ee95cfee8fa98783ae4038cfa91eaa2302bd935d3fd86c61723bb4"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 66 questions sont traitées. Les valeurs de titrage et de points de trouble sont lues sur les figures originales. La différence de pH initial selon le volume retenu et les conventions des corrections calorimétriques sont explicitées."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/distillation.svg",
+      "legende": "La vapeur quitte le ballon et se condense dans le tube central. L’eau froide circule dans la jaquette en sens inverse.",
+      "question": "Q7"
+    },
+    {
+      "fichier": "figures/dispositif-titrage.svg",
+      "legende": "Le titrant est versé depuis la burette. L’électrode et le barreau plongent dans le même mélange homogène.",
+      "question": "Q12"
+    },
+    {
+      "fichier": "figures/lecture-titrage.svg",
+      "legende": "Redessin approché de la courbe de pH de l’annexe. La demi-équivalence et le saut se lisent avec le même axe des volumes.",
+      "question": "Q17"
+    },
+    {
+      "fichier": "figures/montage-reflux.svg",
+      "legende": "La solution est ajoutée par un col et les vapeurs condensent au-dessus de l’autre col.",
+      "question": "Q22"
+    },
+    {
+      "fichier": "figures/emulsion-savon.svg",
+      "legende": "Les molécules de savon orientent leur chaîne vers la goutte d’huile et leur tête chargée vers l’eau.",
+      "question": "Q24"
+    },
+    {
+      "fichier": "figures/cycle-hess.svg",
+      "legende": "Les deux chemins conduisent aux mêmes produits gazeux à partir des éléments. Les corps simples de référence ont une enthalpie de formation nulle.",
+      "question": "Q30"
+    },
+    {
+      "fichier": "figures/trouble-arachide.svg",
+      "legende": "Relevés graphiques approchés à 540 nm. L’inflexion se situe autour de 3 °C.",
+      "question": "Q52"
+    },
+    {
+      "fichier": "figures/diagramme-eutectique.svg",
+      "legende": "Reconstruction qualitative de la figure 7 et ajout de l’isotherme eutectique vers 296 K, avec les phases.",
+      "question": "Q55"
+    },
+    {
+      "fichier": "figures/comparer-les-diols.svg",
+      "legende": "Les deux voies à partir de l’alcène Z mènent à deux couples d’énantiomères différents.",
+      "question": "Q65"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des 14 pages du sujet et du rapport de chimie 2018. Contrôle de la courbe de titrage, de la composition, du dosage en retour, des cycles thermochimiques, des spectres et des données eutectiques. Neuf figures pédagogiques originales."
+    }
+  ]
+}
