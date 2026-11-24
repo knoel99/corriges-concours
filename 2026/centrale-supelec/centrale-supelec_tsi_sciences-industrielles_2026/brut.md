@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 4 heures, calculatrice autorisée, avec un document réponse (DR1 à DR5). Sujet : le télésiège débrayable « Vologne Express » (La Bresse - Hohneck). Les données numériques sont celles du tableau de fin d'énoncé :
 
 - parcours : $L_p=1217$ m, $\alpha=12{,}9^\circ$, $N=72$ nacelles ;
@@ -507,7 +513,7 @@ Pour la MAS, la vitesse est voisine de la vitesse de synchronisme $\Omega_s=2\pi
 
 #### Q31
 
-Le couple maximal d'une MAS est proportionnel au carré du flux, donc à $(U/f)^2$, et ne dépend pas de la fréquence si $U/f$ est constant. Stratégie : **commande à $U/f$ constant**, en démarrant à basse fréquence (vitesse de synchronisme faible, glissement voisin de celui du couple maximal dès l'arrêt), puis en augmentant progressivement la fréquence et la tension en proportion ; on ajoute une légère surtension à basse fréquence pour compenser la chute ohmique statorique. Le moteur développe ainsi son couple maximal pendant tout le démarrage, avec un courant limité par le variateur, bien inférieur à celui d'un démarrage direct.
+À fréquence donnée, le couple dépend du glissement $g=(n_s-n)/n_s$. Pour obtenir un fort couple dès l’arrêt, on démarre à basse fréquence et on augmente la fréquence avec la vitesse du rotor. Dans le modèle usuel de la MAS, le couple maximal disponible est approximativement proportionnel au carré du flux. Garder $U/f$ sensiblement constant maintient ce flux, avec une compensation de la chute de tension statorique à très basse fréquence. Le couple effectivement délivré dépend aussi du glissement et de la limite de courant du variateur. La rampe doit garder la fréquence de glissement $g f$ près de celle du couple maximal si ce maximum est recherché.
 
 ## Partie D — Étude de la sous-exigence « maintenir la vitesse des nacelles la plus régulière possible » de l'exigence 1.2
 
@@ -569,7 +575,7 @@ Le Bode de DR5 le confirme : pente $-20$ puis $-40$ dB/déc, phase de $-90^\circ
 
 $$20\log K_p=6{,}8\ \text{dB}\ \Longrightarrow\ \boxed{K_p\approx2{,}2}.$$
 
-La marge de phase diminue quand $K_p$ augmente : les marges imposent $K_p\leqslant2{,}2$ environ (2,2 à 2,4 selon la précision de lecture). La valeur limite $K_p\approx2{,}2$ est la plus grande valeur admissible, donc le réglage le plus rapide et le plus précis qui respecte $M_\varphi\geqslant60^\circ$.
+La marge de phase diminue lorsque $K_p$ augmente. Les gains admissibles d’après le tracé sont donc $0<K_p\lesssim2{,}2$. La mention « valeur minimale » du sujet ne donne aucun minimum positif. Si l’on recherche la coupure la plus élevée compatible avec la marge imposée, on retient la **borne supérieure**, soit environ $2{,}2$. La précision statique demandée à la question précédente est acquise pour tout gain positif assurant la stabilité.
 
 ## Partie E — Synthèse
 
@@ -583,7 +589,11 @@ La MCC alimente un induit tournant par un **collecteur et des balais** frottants
 
 $$\boxed{\text{GMM2E 355 L 4d : }400\ \text{kW},\ 1490\ \text{tr/min},\ 2563{,}8\ \text{N}\cdot\text{m},\ 710\ \text{A}}.$$
 
-Contrôle en couple : en régime établi d'exploitation, $119\,400/156{,}0=765$ N·m, très en dessous du couple nominal. Au démarrage le plus contraignant (Q26), le couple $k\,i_{\max}\approx3{,}1$ kN·m sur l'arbre actuel devient $\approx3{,}1\times60{,}07/70{,}6\approx2{,}64$ kN·m avec le réducteur adapté du volet (d), soit 3 % au-dessus du couple nominal pendant 10 s. La surcharge transitoire admissible d'une MAS pilotée en $U/f$ le couvre. Un dimensionnement sans aucune surcharge conduirait au GMM 355 L 4e (450 kW, 2884 N·m).
+En régime établi, le couple nécessaire vaut $119\,400/156{,}0\simeq765$ N·m. Au démarrage, le nouveau rotor a une inertie de $7{,}2$ kg·m² contre $23$ kg·m² pour l’ancien. On peut reprendre le modèle de Q26 en posant $r_0=0{,}040$ et $r_1=5{,}08/156{,}0\simeq0{,}0326$ m/rad. Du couple initial de $3100$ N·m, on retranche d’abord $J_0\gamma/r_0$, dû à l’ancien rotor. Le couple restant est celui des charges mécaniques situées après le moteur. Il se ramène au nouvel arbre dans le rapport $r_1/r_0$. On ajoute enfin le terme du nouveau rotor. Avec $\gamma=0{,}5$ m/s², cela donne
+
+$$C_1\simeq\left(3100-\frac{23\gamma}{r_0}\right)\frac{r_1}{r_0}+\frac{7{,}2\gamma}{r_1}\simeq2{,}40\ \text{kN·m}.$$
+
+Cette estimation utilise les valeurs arrondies de Q26, un réducteur parfait d’inertie négligeable et la même accélération du câble. Elle reste inférieure aux $2{,}56$ kN·m du catalogue. Le choix satisfait ainsi également ce contrôle dans le modèle du sujet.
 
 **(b) Couplage.** Moteur 400 V/690 V : chaque enroulement supporte 400 V. Le réseau est en 226 V/391 V. En triangle, chaque enroulement reçoit la tension composée 391 V, soit environ sa tension nominale ; en étoile il ne recevrait que 226 V. $\boxed{\text{Couplage triangle}}$.
 

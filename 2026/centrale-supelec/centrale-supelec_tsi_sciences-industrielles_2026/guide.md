@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** Le télésiège débrayable à six places « Vologne Express » de la station de La Bresse - Hohneck (Vosges) est mû par une machine à courant continu (MCC) de 415 kW placée en gare haute. Le sujet prépare son remplacement par un moteur asynchrone (MAS). Il suit une seule grandeur de bout en bout, la puissance à fournir pour hisser les usagers. On établit d'abord le rapport cinématique $k_{tp}=v/\omega_m$, puis on ramène toutes les inerties et la pesanteur à l'axe moteur, on identifie les paramètres électriques de la MCC, on règle l'asservissement de vitesse et on choisit enfin un moteur sur catalogue.
@@ -728,7 +734,7 @@ La vitesse est réglée par $\psi$ et diminue légèrement avec la charge (chute
 
 #### Solution
 
-Le couple maximal est proportionnel au carré du flux, donc à $(U/f)^2$ : il reste constant si $U/f$ est constant. Stratégie : **commande à $U/f$ constant avec rampe de fréquence**. On démarre à basse fréquence, pour que la vitesse de synchronisme soit faible et que le glissement du rotor à l'arrêt soit voisin de celui du couple maximal. On augmente ensuite progressivement $f$, et $U$ dans le même rapport, en ajoutant une légère surtension à basse fréquence pour compenser la chute ohmique statorique. Le moteur fournit son couple maximal pendant toute la montée en vitesse, avec un courant maîtrisé par le variateur, bien plus faible que lors d'un démarrage direct sur le réseau.
+À fréquence donnée, le couple dépend du glissement $g=(n_s-n)/n_s$. Pour obtenir un fort couple dès l’arrêt, on démarre à basse fréquence et on augmente la fréquence avec la vitesse du rotor. Dans le modèle usuel de la MAS, le couple maximal disponible est approximativement proportionnel au carré du flux. Garder $U/f$ sensiblement constant maintient ce flux, avec une compensation de la chute de tension statorique à très basse fréquence. Le couple effectivement délivré dépend aussi du glissement et de la limite de courant du variateur. La rampe doit garder la fréquence de glissement $g f$ près de celle du couple maximal si ce maximum est recherché.
 
 > [!PIEGE]
 > Le démarrage étoile-triangle limite le courant mais divise le couple de démarrage par trois : c'est l'opposé de ce qui est demandé.
@@ -830,7 +836,7 @@ On y lit, pour $K_p=1$, $K\approx1{,}6$ s⁻¹ et $T_m\approx0{,}18$–$0{,}19$ 
 
 $$20\log K_p=6{,}8\ \text{dB}\ \Longrightarrow\ \boxed{K_p\approx2{,}2}.$$
 
-Comme la marge de phase diminue quand $K_p$ croît, les marges imposent $K_p\leqslant2{,}2$ environ (de 2,2 à 2,4 selon la précision de lecture). La valeur limite, la plus grande admissible, donne la boucle la plus rapide et la plus précise qui respecte l'exigence d'amortissement : on retient $K_p\approx2{,}2$. Pour $K_p=1$, la coupure est vers 1,5 rad/s et $M_\varphi\approx74^\circ$.
+La marge de phase diminue lorsque $K_p$ augmente. Les gains admissibles d’après le tracé sont donc $0<K_p\lesssim2{,}2$. La mention « valeur minimale » du sujet ne donne aucun minimum positif. Si l’on recherche la coupure la plus élevée compatible avec la marge imposée, on retient la **borne supérieure**, soit environ $2{,}2$. La précision statique demandée à la question précédente est acquise pour tout gain positif assurant la stabilité.
 
 > [!PIEGE]
 > L'énoncé parle de valeur « minimale », mais les marges donnent une borne supérieure. Il faut écrire le sens de l'inégalité et justifier la valeur retenue.
@@ -879,7 +885,11 @@ La MCC alimente son induit tournant par un **collecteur et des balais** frottant
 
 $$\boxed{\text{GMM2E 355 L 4d : }400\ \text{kW},\ 1490\ \text{tr/min},\ 2563{,}8\ \text{N}\cdot\text{m}}.$$
 
-Contrôle en couple. En exploitation, $119\,400/156{,}0=765$ N·m, bien en dessous du nominal. Au démarrage le plus contraignant (Q26), $k\,i_{\max}\approx3{,}1$ kN·m sur l'arbre actuel, soit $\approx2{,}64$ kN·m avec le nouveau réducteur du volet (d). Cela dépasse le couple nominal de 3 % pendant 10 s, ce que couvre la surcharge transitoire d'une MAS pilotée en $U/f$. Un dimensionnement sans aucune surcharge au démarrage conduirait au GMM 355 L 4e (450 kW).
+En régime établi, le couple nécessaire vaut $119\,400/156{,}0\simeq765$ N·m. Au démarrage, le nouveau rotor a une inertie de $7{,}2$ kg·m² contre $23$ kg·m² pour l’ancien. On peut reprendre le modèle de Q26 en posant $r_0=0{,}040$ et $r_1=5{,}08/156{,}0\simeq0{,}0326$ m/rad. Du couple initial de $3100$ N·m, on retranche d’abord $J_0\gamma/r_0$, dû à l’ancien rotor. Le couple restant est celui des charges mécaniques situées après le moteur. Il se ramène au nouvel arbre dans le rapport $r_1/r_0$. On ajoute enfin le terme du nouveau rotor. Avec $\gamma=0{,}5$ m/s², cela donne
+
+$$C_1\simeq\left(3100-\frac{23\gamma}{r_0}\right)\frac{r_1}{r_0}+\frac{7{,}2\gamma}{r_1}\simeq2{,}40\ \text{kN·m}.$$
+
+Cette estimation utilise les valeurs arrondies de Q26, un réducteur parfait d’inertie négligeable et la même accélération du câble. Elle reste inférieure aux $2{,}56$ kN·m du catalogue. Le choix satisfait ainsi également ce contrôle dans le modèle du sujet.
 
 **(b) Couplage.** Moteur 400 V/690 V : 400 V par enroulement. En étoile, un enroulement recevrait $391/\sqrt3=226$ V ; en triangle il reçoit 391 V, soit environ sa tension nominale. $\boxed{\text{Couplage triangle}}$.
 
