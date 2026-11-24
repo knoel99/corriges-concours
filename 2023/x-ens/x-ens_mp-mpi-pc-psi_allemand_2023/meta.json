@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_allemand_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2023
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC%20SUJET%20D'ALLEMAND%20(XEULSR).pdf",
+    "sujet_sha256": "9cf389238bef1c1b9a6830f0cacf280d4561e383776607c0010ea35bb56e4fca",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC%20RAPPORT%20ECRIT%20ALLEMAND%20(XEULSR)_0.pdf",
+    "rapport_sha256": "72e7a27d650649c829b70762c990776f09dc447298c81ad8683b176f8ef81716"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "Où se mesure la coopération franco-allemande ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (609 mots hors titre) et réaction personnelle au document 5 (523 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

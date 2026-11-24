@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_arabe_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2023
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC%20SUJET%20D'ARABE%20(XEULSR).pdf",
+    "sujet_sha256": "5bb88c9a4a37cd5f895f95e5946a6dfdfc82cd762da85d1f1acea7f8d3570fdd",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI-PC%20RAPPORT%20ECRIT%20ARABE%20(XEULSR).pdf",
+    "rapport_sha256": "54c4e4c8cfc76cf7e38bbbcf61b789266c790a96d41915589a7b490b75c28e2f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "Qui peut financer les réponses à la crise climatique ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (609 mots hors titre) et réaction personnelle au document 5 (513 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
