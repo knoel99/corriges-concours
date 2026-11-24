@@ -1,0 +1,112 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-autres-tirages-du-jury_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun, autres tirages du jury)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire contemporaine (oral tronc commun, autres tirages du jury)",
+  "questions": 0,
+  "tirages": 33,
+  "sujets": 66,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_histoire_contemporaine_v2.pdf#page=5",
+    "sujet_sha256": "87ac6f3735d385369b79aa97c667e16ba004647be0bac67ec7559cad14a5390a",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_histoire_contemporaine_v2.pdf",
+    "rapport_sha256": "87ac6f3735d385369b79aa97c667e16ba004647be0bac67ec7559cad14a5390a",
+    "pages": "5–7",
+    "nature": "Tableau des tirages dans le rapport du jury, sans dates pour ces 33 paires.",
+    "feuilles_datees": [
+      "https://www.ens.psl.eu/sites/default/files/sujet_oraux_histoire_b_l_j1.pdf",
+      "https://www.ens.psl.eu/sites/default/files/sujet_oraux_histoire_b_l_j2.pdf",
+      "https://www.ens.psl.eu/sites/default/files/sujet_oraux_histoire_b_l_j3.pdf"
+    ],
+    "references": [
+      "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/grands-discours-parlementaires/jules-ferry-28-juillet-1885",
+      "https://www.assemblee-nationale.fr/histoire/7ec.asp",
+      "https://www.who.int/publications/i/item/WHA33-3",
+      "https://www.courdecassation.fr/toutes-les-actualites/2026/07/12/journee-de-commemoration-nationale-de-la-reconnaissance-de"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/ecole-et-empire.svg",
+      "question": "Paire 4",
+      "legende": "Ferry, deux scènes de l’action républicaine"
+    },
+    {
+      "fichier": "figures/installer-la-republique.svg",
+      "question": "Paire 9",
+      "legende": "Trois épreuves de l’installation républicaine"
+    },
+    {
+      "fichier": "figures/deux-francs.svg",
+      "question": "Paire 13",
+      "legende": "Trois opérations monétaires différentes"
+    },
+    {
+      "fichier": "figures/decolonisations-afrique.svg",
+      "question": "Paire 18",
+      "legende": "Les rythmes des indépendances africaines"
+    },
+    {
+      "fichier": "figures/berlin.svg",
+      "question": "Paire 26",
+      "legende": "Berlin, trois changements de statut et de circulation"
+    },
+    {
+      "fichier": "figures/dreyfus.svg",
+      "question": "Paire 32",
+      "legende": "Dreyfus, trois effets juridiques différents"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification des modalités et des lignes du tableau des pages 4 à 7, puis comparaison avec trois feuilles datées."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 66 réponses, des 66 relances avec réponses du guide et des six schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rapprochement des 69 lignes avec les 36 paires déjà publiées, vérification des 33 paires dans leur ordre, de la graphie inhabituelle page 6 et des repères historiques."
+    }
+  ]
+}
