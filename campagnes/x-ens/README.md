@@ -27,3 +27,5 @@ Si une vérification du fond invalide une édition déjà signée, sa version ex
 Les options de langue de la banque Centrale-Supélec qui entrent dans l’admissibilité TSI de l’X sont rattachées à leur sujet commun aux cinq filières. Une fiche orale de l’ENS peut regrouper plusieurs planches ou dossiers d’une même discipline. Certains fascicules littéraires de Lyon réunissent plusieurs matières ou options. Leur PDF et son empreinte sont conservés pour identifier chaque sujet avant de l’ajouter au registre. [Fascicules à dépouiller](fascicules-a-depouiller.tsv)
 
 Les fascicules entièrement dépouillés conservent leur empreinte et le nombre de sujets identifiés. Le registre renvoie à la première page de chaque sujet. [Fascicules dépouillés](fascicules-depouilles.tsv)
+
+Certaines épreuves sont attestées par l’ENS alors que le texte ou les pièces distribuées restent à retrouver. Le relevé précise les documents manquants et la référence de l’organisateur. [Documents manquants](documents-manquants.tsv)
