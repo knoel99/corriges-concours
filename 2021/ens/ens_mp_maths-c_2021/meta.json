@@ -1,0 +1,62 @@
+{
+  "slug": "ens_mp_maths-c_2021",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2021
+  },
+  "questions": 39,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA à partir des documents officiels de la session 2021.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2021_mp_sujet_mathc.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathc.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rolle-zeros.svg",
+      "question": "1",
+      "legende": "Les zéros successifs des dérivées d’un polynôme quartique se placent entre les zéros de la ligne précédente."
+    },
+    {
+      "fichier": "figures/zero-pole.svg",
+      "question": "5a",
+      "legende": "La réflexion par rapport au cercle unité conserve l’argument et inverse le module. Le zéro et le pôle réfléchis ont la même multiplicité."
+    },
+    {
+      "fichier": "figures/racines-approchent-un.svg",
+      "question": "7",
+      "legende": "Les trois racines primitives choisies ont un argument de plus en plus petit et s’approchent de 1."
+    },
+    {
+      "fichier": "figures/terme-dominant.svg",
+      "question": "15a",
+      "legende": "Pour f(x) = x exp(2x) + x² exp(x), le quotient par x exp(2x) tend vers le coefficient dominant, égal à 1."
+    },
+    {
+      "fichier": "figures/segments-retrecis.svg",
+      "question": "21",
+      "legende": "Dans le raisonnement par l’absurde, les zéros de fonctions différentes occupent des segments de longueur tendant vers zéro. Rolle y place aussi des zéros de leurs dérivées d’ordre fixé."
+    },
+    {
+      "fichier": "figures/reste-interpolation.svg",
+      "question": "22b",
+      "legende": "L’interpolateur affine passe par les deux premières valeurs de l’exponentielle. La hauteur du trait vertical donne l’erreur au troisième point."
+    },
+    {
+      "fichier": "figures/denominateurs.svg",
+      "question": "27a",
+      "legende": "Pour d = 4, chaque case indique la puissance de n à appliquer à la ligne de son monôme. Les seize exposants s’additionnent dans le déterminant."
+    },
+    {
+      "fichier": "figures/recouvrement.svg",
+      "question": "29",
+      "legende": "Chaque segment du recouvrement admet sa propre courbe auxiliaire. La même borne sur le nombre d’intersections s’applique à tous les segments."
+    }
+  ]
+}
