@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2022",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2022
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/09/22_mp_sujet_MathC.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/22_mp_rap_emathc.pdf",
+    "sha256_sujet": "2a96cf917bb01fdfd5af1a7f017482cf9c55a84c5c698b29b37fca8bb75ffb9e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/branche-majorante.svg",
+      "question": "12",
+      "legende": "Pour a et b égaux à un, la branche issue de zéro commence par x. La racine du discriminant en délimite le prolongement réel."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 29 questions des sept parties dans les deux éditions, à partir du sujet et du rapport. Vérification de la composition pour une série extérieure constante, des rayons de convergence, des estimations de l’inverse et de la stabilisation en partie G. Figure originale sur la branche majorante.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
