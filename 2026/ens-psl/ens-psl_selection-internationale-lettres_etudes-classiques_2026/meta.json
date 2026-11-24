@@ -1,0 +1,43 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sil2026_rapport_ecrit_etudes_classiques.pdf#page=2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/sil2026_rapport_ecrit_etudes_classiques.pdf",
+    "sujet_sha256": "fa948a2f06ae285190c514b4ac23374e037a2b54db991728628de54c0e17f105",
+    "tablette": "https://romaninscriptionsofbritain.org/inscriptions/TabVindol291"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "D’une lecture à une question actuelle"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Dissertation personnelle modèle rédigée en français sur les trois dimensions du sujet reproduit page 2 du rapport 2026, guidage par des exemples de lecture philologique, littéraire, matérielle et politique, et schéma."
+    }
+  ]
+}
