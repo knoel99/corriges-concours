@@ -1,0 +1,81 @@
+{
+  "slug": "ens-psl_cnel-lettres_droit_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Droit",
+    "annee": 2026,
+    "modalite": "écrit"
+  },
+  "intitule": "Parcours Droit · Projet de recherche, procédure pénale ou État de droit",
+  "gabarit": "dissertation",
+  "questions": 3,
+  "sujets": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_cnel_droit_2026.pdf",
+    "sujet_sha256": "cc3f51ce6b30d09d2cdc0b599f5d2da1cff344ef37496a9b7c92d86da66be010",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_concours_normaliennes_etudiantes_du_parcours_droit_de_lens-psl_-_2026.pdf",
+    "rapport_sha256": "89835bb4bd612d5b1097c045d70aeb9afbadc27668c8115c662b64ad8354d7ff",
+    "references": [
+      "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037670338",
+      "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2012-02-10/356456",
+      "https://hudoc.echr.coe.int/eng?i=001-142672",
+      "https://www.senat.fr/rap/l25-520/l25-5204.html",
+      "https://www.senat.fr/dossier-legislatif/pjl25-456.html",
+      "https://www.tribunal-de-paris.justice.fr/sites/default/files/2025-10/251003-CP%20APPEL%20PNF.pdf",
+      "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006527561/2026-05-09",
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000026813711/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/corpus.svg",
+      "question": "Sujet 1",
+      "legende": "Du droit à l’hébergement à l’enquête"
+    },
+    {
+      "fichier": "figures/accord.svg",
+      "question": "Sujet 2",
+      "legende": "Trois contrôles de l’accord pénal"
+    },
+    {
+      "fichier": "figures/protections.svg",
+      "question": "Sujet 3",
+      "legende": "À qui et à quels actes la protection s’attache-t-elle ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Trois compositions complètes, trois reprises guidées, trois schémas. Projet sur l’hébergement d’urgence explicitement hypothétique."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle des trois options sur le fascicule et le rapport. Vérification de la jurisprudence administrative, européenne et pénale, de la chronologie législative et de la portée de la cassation sans renvoi de 2012."
+    }
+  ]
+}
