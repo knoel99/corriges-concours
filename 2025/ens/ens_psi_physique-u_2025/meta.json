@@ -1,0 +1,127 @@
+{
+  "slug": "ens_psi_physique-u_2025",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PSI",
+    "matiere": "Physique U",
+    "annee": 2025
+  },
+  "questions": 60,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Sujets/2025_PSI_Ep6_Physique_U_14022025_NB.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Rapports/2025_PSI_Rapport_Physique_Ecrit_V2.pdf",
+    "sujet_sha256": "7c2183fd45d8c2d0d296174411d396d44e23f217e997e630297b08349a9d38bd",
+    "rapport_sha256": "c335d783d7c46459082471fd5fe1f1716ee54ee7a23713b7f704529db277ed9f"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir du PDF original et du rapport. Les questions sont résolues dans les trois parties, avec les hypothèses physiques, les signes des charges, les calculs et les lectures de figures contrôlés dans les deux éditions."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Q10",
+      "fichier": "figures/travail-de-dilution.svg",
+      "legende": "À volume d’eau douce fixé, agrandir le réservoir salé permet de se rapprocher progressivement d’une limite finie."
+    },
+    {
+      "numero": 2,
+      "question": "Q22",
+      "fichier": "figures/double-couche-et-ecoulement.svg",
+      "legende": "Deux bains à charge de paroi égale : la profondeur de Debye modifie à la fois le potentiel de surface et sa portée. À droite, chaque vitesse est rapportée à sa propre valeur loin du mur."
+    },
+    {
+      "numero": 3,
+      "question": "Q42",
+      "fichier": "figures/pentes-mesurees.svg",
+      "legende": "Droites de lecture des pentes de la figure 5. Elles représentent des estimations, sans créer de nouveaux points expérimentaux."
+    },
+    {
+      "numero": 4,
+      "question": "Q46",
+      "fichier": "figures/trois-cellules.svg",
+      "legende": "Trois générateurs de Norton couplés en parallèle aux deux mêmes électrodes. La résistance de charge est à droite."
+    },
+    {
+      "numero": 5,
+      "question": "Q54",
+      "fichier": "figures/commutation-et-puissance.svg",
+      "legende": "Courant continu aux instants de commutation pour τ/T = 0,22. La puissance moyenne dépend de la vitesse à laquelle le courant peut rejoindre chaque asymptote."
+    }
+  ],
+  "redaction": "Les questions sont résolues dans les trois parties, avec les hypothèses physiques, les signes des charges, les calculs et les lectures de figures contrôlés dans les deux éditions.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53",
+      "Q54",
+      "Q55",
+      "Q56",
+      "Q57",
+      "Q58",
+      "Q59",
+      "Q60"
+    ]
+  }
+}
