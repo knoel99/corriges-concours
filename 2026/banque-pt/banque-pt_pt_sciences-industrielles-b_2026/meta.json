@@ -34,5 +34,64 @@
       "question": "Q49",
       "legende": "Actions en bout de bras pour l'A.N. de Q51 (zc = 0,1 m, ze = 0, zm ≈ −72 mm) et correspondance des bases : X = x2, Y = z, Z = −y2"
     }
-  ]
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "date": "2026-11-06T21:00:00",
+      "modifications": true,
+      "perimetre": "Rédaction des deux corrigés.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Révision avec le rapport du jury. 2 corrections de fond déclarées dans la métadonnée d’origine.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 56 questions sur le sujet, le cahier réponses, les annexes et le rapport de la Banque PT. Recalcul de la sensibilité d’alignement à 10 ppm, de la course de compensation, du couple et de la résolution du mécanisme de calibration.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "revision": {
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "date": "2026-11-24",
+    "verification": "Relecture des 56 questions sur le sujet, le cahier réponses, les annexes et le rapport de la Banque PT. Recalcul de la sensibilité d’alignement à 10 ppm, de la course de compensation, du couple et de la résolution du mécanisme de calibration."
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/si_b_2026_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_si_b_ecrit_2026.pdf"
+  }
 }
