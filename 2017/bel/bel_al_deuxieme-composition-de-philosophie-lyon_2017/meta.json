@@ -1,0 +1,77 @@
+{
+  "slug": "bel_al_deuxieme-composition-de-philosophie-lyon_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Deuxième composition de philosophie (Lyon)",
+    "annee": 2017
+  },
+  "intitule": "La religion naturelle",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=2",
+    "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/PHILO_TC_SP_2017.pdf",
+    "rapport_sha256": "17d12a0809a391d46c37c5b0f66470e8f94eb45b624f5e3a1ec95a6aaf760e03",
+    "pages_rapport": "5–9",
+    "references": [
+      "https://fr.wikisource.org/wiki/%C3%89mile%2C_ou_De_l%E2%80%99%C3%A9ducation/%C3%89dition_1782/Livre_IV",
+      "https://fr.wikisource.org/wiki/La_Religion_dans_les_limites_de_la_simple_raison/Quatri%C3%A8me_partie"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/croyance-et-raison.svg",
+      "question": "Démonstration",
+      "legende": "À quelle question répond-on ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la partie consacrée à cet écrit de spécialité, pages 5–9 du rapport."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation, du guide et du schéma. Religion naturelle, critique de l’analogie et religion pratique."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux éditions aux pages originales du sujet et au rapport, contrôle des références, des exemples et du schéma."
+    }
+  ]
+}
