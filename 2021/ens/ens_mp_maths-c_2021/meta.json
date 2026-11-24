@@ -79,6 +79,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des 39 réponses et huit figures aux pages imprimées 1 à 7 et au rapport. Un facteur de Blaschke sur le cercle donne un contre-exemple explicite pour les racines de l’unité. Vérifications du facteur deux cyclotomique et du numérateur entier minimal en dimension quatre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

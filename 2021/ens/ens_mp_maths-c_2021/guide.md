@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve inter-ENS du 16 avril 2021 dure quatre heures. Les questions 2 à 13 classent des fractions rationnelles à partir de leurs valeurs sur le cercle puis sur les racines de l’unité. Les questions 14 à 29 bornent le nombre de points d’un réseau sur un graphe transcendant. Ces deux parties sont indépendantes. Les 29 questions de l’énoncé correspondent à 39 réponses avec leurs subdivisions. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2021_mp_sujet_mathc.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathc.pdf)
@@ -262,7 +264,7 @@ Quitte à changer les deux signes, supposons $v>0$ et posons $\ell=\operatorname
 
 #### Solution
 
-Puisque $\zeta\in\mathbb Q(\zeta_N)$, la question 11a entraîne $\mathbb Q(\zeta_\ell)\subseteq\mathbb Q(\zeta_N)$. Le théorème 1 donne $\varphi(\ell)\le\varphi(N)$. Comme $N\mid\ell$, augmenter l'exposant d'un premier $s$ déjà présent multiplie l'indicatrice par une puissance strictement positive de $s$. Ajouter un nouveau premier à l'exposant $e$ la multiplie par $s^{e-1}(s-1)$. Tous ces facteurs sont au moins un. L'inégalité impose qu'ils vaillent un, ce qui permet uniquement l'ajout éventuel du premier $2$ à l'exposant $1$. Ainsi $\ell=N$ ou $\ell=2N$. Comme $v\mid\ell$, on a $2Nq\in\mathbb Z$.
+Puisque $\zeta\in\mathbb Q(\zeta_N)$, la question 11a entraîne $\mathbb Q(\zeta_\ell)\subseteq\mathbb Q(\zeta_N)$. Le théorème 1 donne $\varphi(\ell)\le\varphi(N)$. Comme $N\mid\ell$, augmenter l'exposant d'un premier $s$ déjà présent multiplie l'indicatrice par une puissance strictement positive de $s$. Ajouter un nouveau premier à l'exposant $e$ la multiplie par $s^{e-1}(s-1)$. Tous ces facteurs sont au moins un. L'inégalité impose qu'ils vaillent un, ce qui permet uniquement l'ajout éventuel du premier $2$ à l'exposant $1$. Ainsi $\ell=N$ ou $\ell=2N$. Comme $v\mid\ell$, on a $2Nq\in\mathbb Z$. Le facteur deux est parfois nécessaire. Pour $N=3$, la racine primitive sixième $-\zeta_3^2=e^{2\pi i/6}$ appartient à $\mathbb Q(\zeta_3)$. Alors $Nq=1/2$ tandis que $2Nq=1$.
 
 ### Question 12
 
@@ -287,6 +289,8 @@ Avec $p$ de la question 10, fixons $N_j=\operatorname{ppcm}(p,n_j)$. Les coeffic
 #### Solution
 
 Si $F(\Lambda\setminus\mathcal P(F))\subseteq\Lambda$, les racines de l'unité s'accumulent en $1$ et, le long de celles qui évitent les pôles, les valeurs ont module un. Un pôle en $1$ forcerait leurs modules à tendre vers l'infini. Ainsi $F(1)=\omega\in\Lambda$. La fraction $F/\omega$ vaut un en $1$ et envoie encore les racines de l'unité de son domaine dans $\Lambda$. Il suffit de prendre les $n_j$ successifs assez grands pour éviter les pôles. La question 12 donne $F=\omega X^d$ avec $d\in\mathbb Z$. Réciproquement tout produit d'une racine de l'unité et d'une puissance entière d'une racine de l'unité est encore une racine de l'unité. Toutes ces fractions conviennent.
+
+Le cercle et les racines de l’unité donnent des conditions différentes. Le facteur $B_{1/2}$ de la question 4 conserve le cercle. Pourtant $B_{1/2}(i)=(-4+3i)/5$ n’est pas une racine de l’unité. En effet, pour $w=B_{1/2}(i)$, $t=w+w^{-1}=-8/5$. Les polynômes $S_0=2$, $S_1=X$, $S_{k+1}=XS_k-S_{k-1}$ vérifient $S_k(t)=w^k+w^{-k}$ et sont unitaires à coefficients entiers pour $k\ge1$. Si $w^k=1$, le rationnel $-8/5$ serait racine du polynôme unitaire entier $S_k-2$. Or une racine rationnelle d’un tel polynôme est entière : en substituant une fraction irréductible $a/b$ et en multipliant par $b^k$, on obtient $b\mid a^k$.
 
 ## II. Courbes et fonctions transcendantes
 
@@ -509,7 +513,9 @@ Deux points distincts d'un graphe ont des abscisses distinctes. Les lignes de $B
 
 Écrivons $P_k=(u_k/n,v_k/n)$ avec $u_k,v_k$ entiers. Multiplier chaque ligne $(i,j)$ par $n^{i+j}$ remplace toutes ses entrées par les entiers $u_k^iv_k^j$. Le déterminant de la matrice obtenue est donc entier. Le facteur total vaut $n^E$, où
 $$E=\sum_{0\le i,j<d}(i+j)=2d\frac{d(d-1)}2=d^2(d-1).$$
-On a bien $n^{d^2(d-1)}\det B\in\mathbb Z$.
+On a bien $n^{d^2(d-1)}\det B\in\mathbb Z$. Pour vérifier l’exposant, prenons $d=2$ et les quatre points $(0,0),(1/n,0),(2/n,1/n),(3/n,1/n)$. Sur les lignes $1,x,y,xy$, les multiplicateurs sont $1,n,n,n^2$. La matrice entière obtenue est
+$$\begin{pmatrix}1&1&1&1\\0&1&2&3\\0&0&1&1\\0&0&2&3\end{pmatrix},$$
+de déterminant $1$. Avant multiplication, le déterminant vaut exactement $n^{-4}$. Cette vérification de dénominateurs utilise seulement l’appartenance au réseau.
 
 ![Figure 7 — Pour d = 4, chaque case indique la puissance de n à appliquer à la ligne de son monôme. Les seize exposants s’additionnent dans le déterminant.](figures/denominateurs.svg)
 
