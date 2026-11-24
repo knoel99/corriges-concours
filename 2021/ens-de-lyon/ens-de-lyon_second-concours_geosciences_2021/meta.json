@@ -1,0 +1,71 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2021",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2021
+  },
+  "questions": 14,
+  "redaction": "Les quatorze questions sur les Alpes sont traitées à partir des cinq figures et de l’annexe minéralogique. Les coupes d’Airy et de la chaîne, le trajet pression–température et les estimations d’exhumation explicitent les interprétations.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2c2021_ST.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_2CC_rap_eST.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "e96d6d82501aaa6617255d5480489513dfecfac1bce03af263bdc63ac00e5cef",
+    "rapport_sha256": "129b28b22e8ddc7b57e20d18d7c228125282e7363d6be7a95e0a2bb8a8a80fb3"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "4",
+      "fichier": "figures/airy.svg",
+      "legende": "Dans le modèle d’Airy la hauteur h de relief est compensée par une racine d’épaisseur r qui remplace du manteau."
+    },
+    {
+      "numero": 2,
+      "question": "8",
+      "fichier": "figures/chemin-pt.svg",
+      "legende": "Exemple de trajet après le pic de Dora Maira. Le carré gris reprend le jalon de la figure 3E. Les températures de ce repère et de la fermeture de l’apatite correspondent à deux étapes distinctes."
+    },
+    {
+      "numero": 3,
+      "question": "14",
+      "fichier": "figures/evolution-alpine.svg",
+      "legende": "Coupes conceptuelles ouest–est, sans échelle. À droite, la rupture du panneau est une hypothèse expliquant un apport de chaleur sous les unités en remontée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les quatorze questions sur les Alpes sont traitées à partir des cinq figures et de l’annexe minéralogique. Les coupes d’Airy et de la chaîne, le trajet pression–température et les estimations d’exhumation explicitent les interprétations.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+    ]
+  }
+}

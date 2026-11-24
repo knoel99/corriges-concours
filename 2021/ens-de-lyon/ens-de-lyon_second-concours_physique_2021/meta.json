@@ -1,0 +1,105 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2021",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2021
+  },
+  "questions": 36,
+  "redaction": "Les dix questions de cours et les vingt-six questions d’acoustique sont traitées. Les schémas de loupe et de filtre, les quatre profils modaux et la résolution graphique de la charge capacitive accompagnent les calculs.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/06/21_2c_ephy.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/11/21_2CC_rap_ePhy.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "d446cb33f4dc1b1f291bff26ba520d98bb2802625960c40f99d7414104dbc056",
+    "rapport_sha256": "5541fbd27f419f4d284fa34b1e8533de69876077da333a1c410cc8656ba19a6b"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A1",
+      "fichier": "figures/loupe.svg",
+      "legende": "Un rayon issu du sommet passe par le centre optique, un autre émerge vers le foyer image. Leurs prolongements se rencontrent à gauche de l’objet."
+    },
+    {
+      "numero": 2,
+      "question": "A3",
+      "fichier": "figures/filtre.svg",
+      "legende": "La force appliquée et le déplacement mesuré sont orientés suivant le mouvement de la masse."
+    },
+    {
+      "numero": 3,
+      "question": "B14",
+      "fichier": "figures/modes-ouverts.svg",
+      "legende": "Amplitude de vitesse des modes propres du tube ouvert à son extrémité droite. La valeur absolue donne une amplitude positive."
+    },
+    {
+      "numero": 4,
+      "question": "B16",
+      "fichier": "figures/modes-fermes.svg",
+      "legende": "Amplitude de vitesse des modes propres du tube fermé à son extrémité droite. La valeur absolue donne une amplitude positive."
+    },
+    {
+      "numero": 5,
+      "question": "B23",
+      "fichier": "figures/racines.svg",
+      "legende": "Agrandissements des trois branches à droite de leurs asymptotes. Les intersections de la tangente en bleu et de la droite −10K en orange donnent les trois pulsations réduites."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix questions de cours et les vingt-six questions d’acoustique sont traitées. Les schémas de loupe et de filtre, les quatre profils modaux et la résolution graphique de la charge capacitive accompagnent les calculs.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26"
+    ]
+  }
+}
