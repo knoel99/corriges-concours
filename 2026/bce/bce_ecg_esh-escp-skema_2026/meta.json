@@ -4,9 +4,64 @@
     "concours": "BCE",
     "filiere": "ECG",
     "matiere": "ESH (ESCP-SKEMA)",
-    "annee": 2026
+    "annee": 2026,
+    "date": "2026-04-27",
+    "duree_heures": 4
   },
   "questions": 0,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/solde-primaire-stabilisant.svg",
+      "question": "Composition",
+      "legende": "Calcul illustratif avec une croissance nominale de 3 %. À dette égale, le besoin d’excédent primaire augmente avec l’écart de taux. Les points inférieurs à zéro autorisent un déficit primaire stabilisant."
+    }
+  ],
+  "intitule": "Y a-t-il une limite à l’endettement public ?",
+  "gabarit": "dissertation",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "fournisseur": "claude-code",
+      "perimetre": "Dissertation et guide rédigés à partir du sujet BCE et du rapport 2026. Métadonnées du lot I3 du dépôt historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "fournisseur": "claude-code",
+      "perimetre": "Corrections de la relecture indépendante documentées dans la revue archivée du lot I3 et le commit 3f6bf9c."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "astra_info_si",
+      "perimetre": "Relecture de la copie et du guide sur la dette. Comparaison au rapport et à la première notification Insee disponible en avril, dérivation et calcul du solde stabilisant, portée de la crise des gilts, coûts et rendement des dépenses. Figure originale du solde stabilisant."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/270%20-%20ESH_ESCP_BS_SKEMA_BS.pdf",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/270%20-%20Eco%20Socio%20ESCP.SKEMA%202026.pdf",
+    "sujet_sha256": "dbb0e62adebe71442d61cdea4d7d38ea06308f6e381c919468d44b62bc47ef8a",
+    "rapport_sha256": "a4e392bc747eaddc051efafdfb774843cdb91da2a5c51f43f073dd93ce704cd9",
+    "references": [
+      "https://www.insee.fr/fr/statistiques/8956575",
+      "https://www.bankofengland.co.uk/quarterly-bulletin/2023/2023/financial-stability-buy-sell-tools-a-gilt-market-case-study",
+      "https://doi.org/10.1257/aer.109.4.1197"
+    ]
+  },
+  "date_revision": "2026-11-24"
 }
