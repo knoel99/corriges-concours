@@ -8,5 +8,41 @@
   },
   "questions": 140,
   "redaction": "IA (gpt-6), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/p07-ex1-concentration.svg",
+      "question": "Planche 7, exercice 1, question 3",
+      "legende": "Les densités exponentielles gardent une aire égale à un. Quand leur échelle diminue, une même fraction de cette aire se rassemble plus près de zéro."
+    },
+    {
+      "fichier": "figures/p09-ex1-parking.svg",
+      "question": "Planche 9, exercice 1, question 6",
+      "legende": "La distance moyenne diminue jusqu’à k = 2, puis augmente. Commencer à la maison 98 donne la plus petite distance moyenne."
+    },
+    {
+      "fichier": "figures/p14-ex2-covariance.svg",
+      "question": "Planche 14, exercice 2, question 4",
+      "legende": "La variance dans la direction commune et la variance dans le plan orthogonal doivent toutes deux rester positives ou nulles. La construction atteint aussi les deux bords."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026.bl_.planches.mathematiques.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_rapport_oral_mathematiques.pdf",
+    "sha256_sujet": "b8964b74785620df0435dde83cf3eaa500950913fe6702ab707be0d444185923"
+  },
+  "type_epreuve": "oral",
+  "contributions": [
+    {
+      "phase": "revision",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de 140 réponses et indications des deux éditions contre les 14 planches de l’oral et le rapport de jury. Réparation de deux systèmes et équivalences, explicitation de l’identité de la planche 5, interprétation du noyau exponentiel en planche 7 et des cas limites de la covariance en planche 14. Trois figures nouvelles.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
 }
