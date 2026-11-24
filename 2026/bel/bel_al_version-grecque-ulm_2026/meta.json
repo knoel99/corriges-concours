@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_version-grecque-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version grecque (Ulm)",
+    "annee": 2026
+  },
+  "intitule": "Les derniers adieux d’Œdipe",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_version_lat-grec_261103.pdf#page=3",
+    "sujet_sha256": "1d5b7b233a6060f44662f44fca30784b4afd74a19a16aec7f8d9e15fc25324be",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_ecrit_version_grecque.pdf",
+    "rapport_sha256": "d4ed36d78a95a1705d72c842281154d5dd70ddc54424fe58b66da62a630cefb4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix-messager.svg",
+      "question": "Version",
+      "legende": "Les voix dans le récit du messager"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture des six pages du rapport écrit. Contrôle des voix, des temps, de la consécutive et des datifs du serment sur le fascicule, p. 3."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « Les derniers adieux d’Œdipe » et du schéma « Les voix dans le récit du messager »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Collation personnelle des deux traductions avec les 23 vers et la note sur le duel. Précision de la construction causative de στῆσαι, dont la voix est le sujet, aux vers 14–15."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
