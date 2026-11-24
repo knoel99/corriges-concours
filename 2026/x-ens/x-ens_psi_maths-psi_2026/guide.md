@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -118,7 +120,7 @@ Si $S$ est vide, chaque dérivée est continue et de signe strict constant. Des 
 
 **(b)** Si $S(g)=\varnothing$, $g'$ et $R'$ sont continues, sans zéro, donc chacune garde un signe strict. Si $R$ est croissante, son radical $\sqrt R$ est croissant. L'hypothèse $g'=-\sqrt R$ entraînerait, pour $x\geq 0$, $g(x)\leq g(0)+xg'(0)\to-\infty$. Ainsi $g'=\sqrt R$ est croissante. Si $R$ est décroissante, $g'=\sqrt R$ imposerait $g'(x)\geq g'(0)>0$ pour $x\leq 0$, puis $g(x)\leq g(0)+xg'(0)\to-\infty$ à gauche. Ainsi $g'=-\sqrt R$ est croissante.
 
-**(c)** L'ensemble non vide $S=S(R)$ est un intervalle fermé de minima. La dérivée $R'$ est croissante et nulle sur $S$. Sur la demi-droite située à gauche de $S$, lorsqu'elle existe, $R$ est décroissante et strictement positive. La dérivée $g'$ y garde un signe constant. Si elle était positive, pour tout $a$ dans cette demi-droite on aurait $g'(x)=\sqrt{R(x)}\geq\sqrt{R(a)}>0$ pour $x\leq a$, en contradiction avec la minoration de $g$ à gauche. Ainsi $g'=-\sqrt R$ y est croissante. À droite de $S$, $R$ est croissante et strictement positive. Le choix $g'=-\sqrt R$ donnerait $g'(x)\leq-\sqrt{R(a)}<0$ pour $x\geq a$ et contredirait la minoration à droite. Ainsi $g'=\sqrt R$ y est croissante. Ces branches se raccordent à la valeur zéro sur $S$, donc $g'$ est croissante sur $\mathbb R$. L'argument couvre les demi-droites manquantes et $S=\mathbb R$.
+**(c)** L'ensemble non vide $S=S(R)$ est un intervalle fermé de minima. La dérivée $R'$ est croissante et nulle sur $S$. Sur la demi-droite située à gauche de $S$, lorsqu'elle existe, $R$ est décroissante et strictement positive. La dérivée $g'$ y garde un signe constant. Si elle était positive, pour tout $a$ dans cette demi-droite on aurait $g'(x)=\sqrt{R(x)}\geq\sqrt{R(a)}>0$ pour $x\leq a$, en contradiction avec la minoration de $g$ à gauche. Ainsi $g'=-\sqrt R$ y est croissante. À droite de $S$, $R$ est croissante et strictement positive. Le choix $g'=-\sqrt R$ donnerait $g'(x)\leq-\sqrt{R(a)}<0$ pour $x\geq a$ et contredirait la minoration à droite. Ainsi $g'=\sqrt R$ y est croissante. Ces branches se raccordent à la valeur zéro sur $S$, donc $g'$ est croissante sur $\mathbb R$. L'argument couvre les demi-droites manquantes et $S=\mathbb R$. Dans l’exemple de la figure, $d(x)=\max(|x|-1,0)$ et $g(x)=d(x)^3/3$. Aux deux extrémités du segment, $g'$ et $g''$ se raccordent à zéro. On a $R=d^4$, convexe car $d$ est convexe et la puissance quatrième est croissante et convexe sur $[0,+\infty[$.
 
 **(d)** Pour $x<u<y$, les accroissements finis sur $[x,u]$ et sur $[u,y]$ expriment les deux pentes par $g'(\xi)$ et $g'(\eta)$, avec $\xi<\eta$. Par croissance de $g'$,
 
@@ -126,7 +128,7 @@ $$\frac{g(u)-g(x)}{u-x}\leq\frac{g(y)-g(u)}{y-u}.$$
 
 Après multiplication, $g(u)\leq\frac{y-u}{y-x}g(x)+\frac{u-x}{y-x}g(y)$. Les extrémités donnent l'égalité, ce qui établit la convexité de $g$.
 
-![Figure 3 — Pour R égal au carré de la distance au segment de −1 à 1, g′ vaut −√R à gauche du segment, zéro sur le segment et +√R à droite.](figures/q04-signes-derivee.svg)
+![Figure 3 — Pour g égal au tiers du cube de la distance au segment de −1 à 1, sa dérivée est de classe C¹. Elle vaut −√R à gauche du segment, zéro sur le segment et +√R à droite.](figures/q04-signes-derivee.svg)
 
 > [!PIEGE]
 > Choisir séparément un signe à chaque point perdrait la continuité de $g'$. Sur une composante de $\{R>0\}$, cette continuité impose un seul signe.
@@ -200,7 +202,7 @@ Soit un élément de $\mathcal E_0$ caractérisé par $(M,B)$. D'après 6(e), $M
 ### Question 8
 
 > [!INDICATION]
-> Une somme directe d'espaces propres peut servir de base de comparaison, même lorsque l'on ignore si les deux matrices commutent entre elles.
+> Quelle décomposition de l’espace détermine le carré commun des deux matrices ?
 
 > [!INDICATION]
 > Chaque racine commute avec son carré. Restreindre chaque racine à un même espace propre de ce carré et utiliser son signe.

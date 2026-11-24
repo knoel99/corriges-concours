@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 On note $S(f)=\{x:\nabla f(x)=0\}$. Les majuscules $X,B,\dots$ représentent des colonnes, et $M^{\mathsf T}$ désigne la transposée. Le produit scalaire et la norme sont euclidiens.
 
@@ -28,6 +30,8 @@ $$f(y)-f(x)\geq \langle\nabla f(x),y-x\rangle.$$
 
 **(e)** Le gradient est continu, donc $S(f)=(\nabla f)^{-1}(\{0\})$ est fermé. Pour $x,y\in S(f)$ et $\lambda\in[0,1]$, (d) et la convexité encadrent $f((1-\lambda)x+\lambda y)$ entre le minimum et lui-même. Ce point est un minimum global d'une fonction différentiable sur un ouvert, donc son gradient s'annule. Ainsi $S(f)$ est convexe, y compris lorsqu'il est vide.
 
+![Figure 1 — Pour f(t) = t², la courbe est au-dessus de sa tangente en x et au-dessous de la corde entre x et y.](figures/q01-corde-tangente.svg)
+
 ### Question 2
 
 **(a)** Soit $m$ un minorant de $f$. Pour $\varepsilon>0$, on a $f_\varepsilon(x)\geq m+\varepsilon\sqrt{1+\|x\|^2}$, qui tend vers $+\infty$ quand $\|x\|$ tend vers l'infini. Le sous-niveau $K=\{x:f_\varepsilon(x)\leq f_\varepsilon(0)\}$ est donc borné. Il est fermé par continuité et contient $0$. La fonction continue $f_\varepsilon$ atteint son minimum sur ce compact en un point $x_\varepsilon$. Hors de $K$, ses valeurs dépassent $f_\varepsilon(0)$, donc ce minimum est global.
@@ -37,6 +41,8 @@ $$f(y)-f(x)\geq \langle\nabla f(x),y-x\rangle.$$
 $$\nabla f(x_\varepsilon)=-\varepsilon\frac{x_\varepsilon}{\sqrt{1+\|x_\varepsilon\|^2}},\qquad \|\nabla f(x_\varepsilon)\|\leq\varepsilon.$$
 
 **(c)** L'infimum des normes du gradient est positif ou nul et, d'après (b), inférieur ou égal à tout $\varepsilon>0$. Il vaut donc **zéro**.
+
+![Figure 2 — Exemple f(x) = exp(−x), avec ε = 0,65. La fonction pénalisée atteint son minimum en xε, où les deux dérivées se compensent.](figures/q02-penalisation.svg)
 
 ## Partie II — Le cas monodimensionnel
 
@@ -60,13 +66,15 @@ Si $S$ est vide, chaque dérivée est continue et de signe strict constant. Des 
 
 **(b)** Si $S(g)=\varnothing$, $g'$ et $R'$ sont continues, sans zéro, donc chacune garde un signe strict. Si $R$ est croissante, son radical $\sqrt R$ est croissant. L'hypothèse $g'=-\sqrt R$ entraînerait, pour $x\geq 0$, $g(x)\leq g(0)+xg'(0)\to-\infty$. Ainsi $g'=\sqrt R$ est croissante. Si $R$ est décroissante, $g'=\sqrt R$ imposerait $g'(x)\geq g'(0)>0$ pour $x\leq 0$, puis $g(x)\leq g(0)+xg'(0)\to-\infty$ à gauche. Ainsi $g'=-\sqrt R$ est croissante.
 
-**(c)** L'ensemble non vide $S=S(R)$ est un intervalle fermé de minima. La dérivée $R'$ est croissante et nulle sur $S$. Sur la demi-droite située à gauche de $S$, lorsqu'elle existe, $R$ est décroissante et strictement positive. La dérivée $g'$ y garde un signe constant. Si elle était positive, pour tout $a$ dans cette demi-droite on aurait $g'(x)=\sqrt{R(x)}\geq\sqrt{R(a)}>0$ pour $x\leq a$, en contradiction avec la minoration de $g$ à gauche. Ainsi $g'=-\sqrt R$ y est croissante. À droite de $S$, $R$ est croissante et strictement positive. Le choix $g'=-\sqrt R$ donnerait $g'(x)\leq-\sqrt{R(a)}<0$ pour $x\geq a$ et contredirait la minoration à droite. Ainsi $g'=\sqrt R$ y est croissante. Ces branches se raccordent à la valeur zéro sur $S$, donc $g'$ est croissante sur $\mathbb R$. L'argument couvre les demi-droites manquantes et $S=\mathbb R$.
+**(c)** L'ensemble non vide $S=S(R)$ est un intervalle fermé de minima. La dérivée $R'$ est croissante et nulle sur $S$. Sur la demi-droite située à gauche de $S$, lorsqu'elle existe, $R$ est décroissante et strictement positive. La dérivée $g'$ y garde un signe constant. Si elle était positive, pour tout $a$ dans cette demi-droite on aurait $g'(x)=\sqrt{R(x)}\geq\sqrt{R(a)}>0$ pour $x\leq a$, en contradiction avec la minoration de $g$ à gauche. Ainsi $g'=-\sqrt R$ y est croissante. À droite de $S$, $R$ est croissante et strictement positive. Le choix $g'=-\sqrt R$ donnerait $g'(x)\leq-\sqrt{R(a)}<0$ pour $x\geq a$ et contredirait la minoration à droite. Ainsi $g'=\sqrt R$ y est croissante. Ces branches se raccordent à la valeur zéro sur $S$, donc $g'$ est croissante sur $\mathbb R$. L'argument couvre les demi-droites manquantes et $S=\mathbb R$. Dans l’exemple de la figure, $d(x)=\max(|x|-1,0)$ et $g(x)=d(x)^3/3$. Aux deux extrémités du segment, $g'$ et $g''$ se raccordent à zéro. On a $R=d^4$, convexe car $d$ est convexe et la puissance quatrième est croissante et convexe sur $[0,+\infty[$.
 
 **(d)** Pour $x<u<y$, les accroissements finis sur $[x,u]$ et sur $[u,y]$ expriment les deux pentes par $g'(\xi)$ et $g'(\eta)$, avec $\xi<\eta$. Par croissance de $g'$,
 
 $$\frac{g(u)-g(x)}{u-x}\leq\frac{g(y)-g(u)}{y-u}.$$
 
 Après multiplication, $g(u)\leq\frac{y-u}{y-x}g(x)+\frac{u-x}{y-x}g(y)$. Les extrémités donnent l'égalité, ce qui établit la convexité de $g$.
+
+![Figure 3 — Pour g égal au tiers du cube de la distance au segment de −1 à 1, sa dérivée est de classe C¹. Elle vaut −√R à gauche du segment, zéro sur le segment et +√R à droite.](figures/q04-signes-derivee.svg)
 
 ### Question 5
 
@@ -96,6 +104,8 @@ Sous (ii), choisissons $U$ tel que $MU=B$ grâce à (c). Alors $u\in S(f)$. De p
 
 **(f)** Par le théorème spectral, l'image de $M$ est engendrée par des vecteurs propres orthonormés de valeurs propres strictement positives, car $M$ est positive et le noyau est l'espace propre de valeur zéro lorsqu'il est non trivial. Si l'image est non nulle, prenons pour $\alpha$ la plus petite valeur propre strictement positive. En coordonnées propres, $X^{\mathsf T}MX=\sum_{\lambda_i>0}\lambda_i X_i^2\geq\alpha\|X\|^2$ sur l'image. Si $M=0$, l'image est nulle et $\alpha=1$ convient.
 
+![Figure 4 — Pour M = diag(2,0) et B = (2,0), f(x,y) = x² − 2x. L’ensemble des minima est la droite U + ker M, avec U = (1,0).](figures/q06-image-noyau.svg)
+
 ### Question 7
 
 Soit un élément de $\mathcal E_0$ caractérisé par $(M,B)$. D'après 6(e), $M$ est symétrique positive et $B\in\operatorname{Im}M$. Dans une base orthonormée propre de $M$, définissons $N$ par les valeurs propres $\sqrt{\lambda_i}$ sur les mêmes vecteurs. Alors $N$ est symétrique positive, $N^2=M$, et $\operatorname{Im}N=\operatorname{Im}M$. Il existe un unique $C\in\operatorname{Im}N$ tel que $NC=B$ par 6(d). La fonction caractérisée par $(N,C)$ appartient à $\mathcal E_0$ par 6(e). Son image par $T$ est caractérisée par $(N^2,NC)=(M,B)$. **$T$ est surjective.**
@@ -103,6 +113,8 @@ Soit un élément de $\mathcal E_0$ caractérisé par $(M,B)$. D'après 6(e), $M
 ### Question 8
 
 Notons $A=M_1^2=M_2^2$. Chaque $M_i$ commute avec $A$, donc préserve chaque espace propre $E_\lambda$ de $A$. Sa restriction à $E_\lambda$ est symétrique positive et son carré y vaut $\lambda I$. Elle est diagonalisable dans cet espace et chacune de ses valeurs propres $\mu$ vérifie $\mu\geq0$ et $\mu^2=\lambda$. Elle y vaut donc $\sqrt{\lambda}\,I$, y compris lorsque $\lambda=0$. Comme $A$ est symétrique, ses espaces propres engendrent tout l'espace. Les deux restrictions coïncidant sur chacun d'eux, **$M_1=M_2$**.
+
+![Figure 5 — Pour A = diag(4,4,1), toute racine symétrique positive agit par 2 sur le plan propre de 4 et par 1 sur la droite propre de 1.](figures/q08-racine-spectrale.svg)
 
 ### Question 9
 
@@ -167,6 +179,8 @@ $$\int_0^\infty\|y'(t)\|^2\,dt=h(y(0))-\inf h.$$
 L'hypothèse d'intégrabilité de 14 est donc vérifiée pour cette trajectoire. En appliquant 14(c), on obtient la convergence et
 
 $$\int_0^\infty\frac{\|y(t)\|^2}{1+t^2}\,dt\leq 8\big(h(y(0))-\inf h\big)+\pi\|y(0)\|^2.$$
+
+![Figure 6 — Pour M = diag(1,2) et B = (1,0), les coordonnées centrées décroissent comme exp(−t) et exp(−2t). Chaque trajectoire tend vers (1,0).](figures/q15-trajectoires.svg)
 
 ### Question 16
 
