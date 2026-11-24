@@ -1,0 +1,75 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2017
+  },
+  "questions": 18,
+  "redaction": "Les dix-huit questions sont traitées à partir des figures et du rapport officiels. Trois figures explicitent le fossé rhénan, le foehn et la circulation océanique.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/2017_2CC_sujet_ST.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/09/17_2CC_rap_eST.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "c0f5e7d353201febf516a2aee93183e2fd8362d3df809086c0af558d6a6c5b6f",
+    "rapport_sha256": "0cc5bd7edea49b1f4078459ce9500a3f1a325c9bc83abc1bbc946a0164d10ba2"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2a",
+      "fichier": "figures/fosse-rhenan.svg",
+      "legende": "Interprétation simplifiée du profil sismique. Le remplissage du graben repose sur un socle faillé. Le Moho remonte sous la zone amincie. Les positions horizontales sont schématiques."
+    },
+    {
+      "numero": 2,
+      "question": "3a",
+      "fichier": "figures/foehn.svg",
+      "legende": "Trajectoire d’une masse d’air d’ouest en est. La descente suit une adiabatique sèche après les précipitations sur le versant au vent."
+    },
+    {
+      "numero": 3,
+      "question": "4c",
+      "fichier": "figures/ocean.svg",
+      "legende": "Coupe conceptuelle entre bassins. Les flèches montrent des branches du retournement. Les gyres de surface, le courant circumpolaire et les eaux profondes ont des moteurs et des échelles de temps distincts."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix-huit questions sont traitées à partir des figures et du rapport officiels. Trois figures explicitent le fossé rhénan, le foehn et la circulation océanique.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "1d",
+      "1e",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "2e",
+      "3a",
+      "3b",
+      "3c",
+      "3d",
+      "4a",
+      "4b",
+      "4c",
+      "4d"
+    ]
+  }
+}

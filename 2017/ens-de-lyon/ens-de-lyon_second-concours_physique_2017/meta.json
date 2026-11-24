@@ -1,0 +1,123 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2017
+  },
+  "questions": 36,
+  "redaction": "Les dix questions de cours et les vingt-six questions sur le freinage électromagnétique sont résolues avec huit figures, du diagramme de Bode aux trajectoires limites et à la spire supraconductrice.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/2017_2CC_sujet_Phy.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_2CC_rap_ePhy.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "325f825cce4930e79c3b5b993beb5b45189a9ed5bf27c72ad30bc95598f4e0f3",
+    "rapport_sha256": "e77a278352449907d057e822aa9e1494f11c8b57fccdf274d5f6d969f031cc08"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A2",
+      "fichier": "figures/passe-bande.svg",
+      "legende": "Exemple pour Q = 2 et un gain de crête unitaire. Les diagrammes de Bode décrivent la réponse sinusoïdale. La troisième courbe est la réponse à un échelon unité."
+    },
+    {
+      "numero": 2,
+      "question": "A4",
+      "fichier": "figures/cycle-carnot.svg",
+      "legende": "Cycle moteur d’un gaz parfait. Les flèches indiquent les quatre transformations dans l’ordre du cycle."
+    },
+    {
+      "numero": 3,
+      "question": "B2",
+      "fichier": "figures/dipole.svg",
+      "legende": "Lignes de champ orientées dans une coupe méridienne. Le point et la croix donnent le sens du courant pour la spire qui s’éloigne vers le haut. Au point de droite, la force élémentaire est radiale sortante et dirigée vers le bas."
+    },
+    {
+      "numero": 4,
+      "question": "B3",
+      "fichier": "figures/champ-axial.svg",
+      "legende": "Le champ du dipôle idéal sur son axe est singulier à l’origine."
+    },
+    {
+      "numero": 5,
+      "question": "B4",
+      "fichier": "figures/flux-spire.svg",
+      "legende": "Flux total à travers la spire, rapporté à son maximum. L’étendue finie de la boucle conduit à un maximum régulier."
+    },
+    {
+      "numero": 6,
+      "question": "B18",
+      "fichier": "figures/trajectoire-18.svg",
+      "legende": "Trajectoire calculée depuis Z = 10 avec une vitesse réduite initiale de 1,5 × 10⁻⁷. La pente s’approche d’une constante positive."
+    },
+    {
+      "numero": 7,
+      "question": "B19",
+      "fichier": "figures/trajectoire-19.svg",
+      "legende": "Trajectoire calculée depuis Z = 10 avec une vitesse réduite initiale de 0,5 × 10⁻⁷. La limite horizontale est approchée sans dépassement."
+    },
+    {
+      "numero": 8,
+      "question": "B25",
+      "fichier": "figures/traversee.svg",
+      "legende": "Exemple numérique dans le modèle de flux exact pour une vitesse initiale permettant la traversée. La verticale repère le passage au centre. La vitesse baisse de part et d’autre de ce plan."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix questions de cours et les vingt-six questions sur le freinage électromagnétique sont résolues avec huit figures, du diagramme de Bode aux trajectoires limites et à la spire supraconductrice.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26"
+    ]
+  }
+}
