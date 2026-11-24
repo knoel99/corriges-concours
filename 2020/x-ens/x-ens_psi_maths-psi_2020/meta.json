@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_psi_maths-psi_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2020
+  },
+  "questions": 46,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Sujet_1A_PSI_Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "0b03d6bb3301c9b0c28440a43bae88e76e4732fa04577d5d62b60f065fc117b1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/encadrement-quadratique.svg",
+      "question": "24e",
+      "legende": "L’écart à la tangente du sinus est compris entre deux termes quadratiques de coefficient un demi."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des trois parties. Vérification des majorations d’inf-convolution, de la construction de la normale par projection et de la constante 6K du gradient, figure de l’encadrement quadratique.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
