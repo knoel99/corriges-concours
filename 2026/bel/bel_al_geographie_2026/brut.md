@@ -6,6 +6,10 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique** — Comment des habitants inégalement dotés peuvent-ils maintenir ou recomposer leurs liens avec ces campagnes lorsque les ressources et les activités qui les font vivre se déploient sur plusieurs lieux ?
 
 ## Introduction
@@ -34,7 +38,7 @@ Une route nouvelle change également la place d’un village par rapport à la v
 
 La relation entre îles habitées et îles touristiques des Maldives fait ressortir le rôle du mode de transport. Dans plusieurs atolls, le modèle de l’île-hôtel concentre hébergements et équipements touristiques sur un site spécialisé. Les habitants d’une île voisine peuvent vivre de la pêche, échanger avec d’autres îles ou occuper un emploi dans ce secteur. Les horaires des bateaux et l’organisation des périodes de travail décident de la possibilité de rentrer auprès de leur famille. Depuis 2009, l’autorisation des maisons d’hôtes sur des îles habitées a permis à certains ménages d’accueillir eux-mêmes des voyageurs. Elle a ainsi introduit dans le bourg des usages autrefois davantage séparés, avec de nouveaux revenus possibles et des demandes accrues sur l’eau et les services. Le tourisme ne donne pas le même territoire quotidien à un visiteur de passage, à une famille qui loue une chambre et à un salarié qui passe plusieurs jours sur une île-hôtel.
 
-Le tourisme de montagne au Népal présente une configuration différente de cet habiter temporaire. Dans le Khumbu, région de l’Everest, les sentiers entre villages, hébergements et pâturages sont aussi parcourus par des groupes de trek. Des ménages tirent un revenu du portage, du guidage ou de l’accueil. Une maison bien placée le long d’un itinéraire fréquenté devient une ressource, tandis qu’un hameau en retrait peut recevoir peu de visiteurs. La saison touristique introduit son propre calendrier dans celui des activités domestiques. Comme dans l’atoll, le gain d’accessibilité concerne d’abord certains lieux et certains acteurs. La figure régionale situe ces exemples parmi d’autres manières d’habiter, sans réduire les États à une spécialisation unique.
+Le tourisme de montagne au Népal présente une configuration différente de cet habiter temporaire. Dans le Khumbu, région de l’Everest, les sentiers entre villages, hébergements et pâturages sont aussi parcourus par des groupes de trek. Des ménages tirent un revenu du portage, du guidage ou de l’accueil. Une maison bien placée le long d’un itinéraire fréquenté devient une ressource, tandis qu’un hameau en retrait peut recevoir peu de visiteurs. La saison touristique introduit son propre calendrier dans celui des activités domestiques. À Tengboche, le monastère est à la fois une étape de l’itinéraire vers l’Everest et un lieu de vie religieuse sherpa. Lors de la fête de Mani Rimdu, des habitants font le déplacement pour prendre part aux cérémonies, des visiteurs viennent aussi y assister. Leurs trajets peuvent être identiques sur la carte. Pourtant, pour les premiers, revenir à une date rituelle entretient un lien avec une communauté et un lieu auxquels ils appartiennent au-delà du séjour. L’horaire des étapes et le nombre de nuitées ne suffisent donc pas pour définir qui habite cette vallée. Comme dans l’atoll, le gain d’accessibilité concerne d’abord certains lieux et certains acteurs. La figure régionale situe ces exemples parmi d’autres manières d’habiter, sans réduire les États à une spécialisation unique.
 
 ![Figure 2 — Des possibilités d’habiter diversement distribuées dans les sept États du programme.](figures/pratiquer-les-campagnes.svg)
 

@@ -39,7 +39,9 @@
     "sujet": "https://pe-dm.pages-perso.free.fr/sujets/histoire.html",
     "releve_du_16_avril": "https://major-prepa.com/divers/prepas-litteraires-sujets-de-la-bel-voies-a-l-et-lsh-session-2026-copy/",
     "chronologie_des_sujets": "https://strata-histoire.fr/annales-ens",
-    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl"
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl",
+    "sujet_sha256": "4668a3c1ef63651554df903b064ce962879f04301f66b50eeceea19f9a3aa7c8",
+    "releve_du_16_avril_sha256": "1d18cd23aaf5f2ececcc7659873f223a28c42c26c744d5ade9301599fc873e74"
   },
   "date_revision": "2026-11-24",
   "provenance": {
@@ -62,6 +64,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des deux éditions sur le libellé concordant du relevé du 16 avril et de l’archive de copies. Le fichier de sujet lié par l’organisateur renvoie 404 et son index ne propose pas de rapport écrit. Correction de la chronologie de la citoyenneté en Algérie et des deux collèges."
     }
   ]
 }
