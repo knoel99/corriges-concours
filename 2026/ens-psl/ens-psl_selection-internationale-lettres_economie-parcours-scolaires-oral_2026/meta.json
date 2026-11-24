@@ -1,0 +1,44 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-parcours-scolaires-oral_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — parcours scolaires (oral)",
+    "annee": 2026
+  },
+  "intitule": "Environnement social et contraintes économiques dans les décisions et les résultats scolaires.",
+  "questions": 1,
+  "redaction": "Rédaction des deux éditions de l’exposé d’économie à partir du sujet individuel imprimé page 2 du rapport du jury. Choix de scolarité, fonction de production pédagogique, identification des mécanismes à partir des programmes de construction scolaire, d’information et de mobilité. Quatre relances argumentées.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf#page=2",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf",
+    "rapport_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150",
+    "nature": "Intitulé individuel de l’oral reproduit page 2 du rapport officiel, candidat 1.",
+    "references": [
+      "https://www.nber.org/papers/w7860",
+      "https://doi.org/10.1162/qjec.2010.125.2.515",
+      "https://www.nber.org/papers/w21156"
+    ]
+  },
+  "figures": [],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de l’exposé d’économie à partir du sujet individuel imprimé page 2 du rapport du jury. Choix de scolarité, fonction de production pédagogique, identification des mécanismes à partir des programmes de construction scolaire, d’information et de mobilité. Quatre relances argumentées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exposé oral"
+    ]
+  }
+}
