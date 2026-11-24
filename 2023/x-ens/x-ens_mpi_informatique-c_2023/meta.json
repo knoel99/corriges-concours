@@ -1,0 +1,48 @@
+{
+  "slug": "x-ens_mpi_informatique-c_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MPI",
+    "matiere": "Informatique C",
+    "annee": 2023,
+    "duree_heures": 4
+  },
+  "questions": 27,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MPI%20SUJET%20INFORMATIQUE%20C%20(XULSR).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MPI%20RAPPORT%20ECRIT%20INFORMATIQUE%20C%20(XULSR).pdf",
+    "sujet_sha256": "badb2b9300bb5315307fd19290536ccea614ae5fa2ceca14d1229bffc03581ad",
+    "rapport_sha256": "9b9d91223447e14abf6ab5af9cdf3e6caa625753f30137f6bd26dfd64663a13b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/i6-couches.svg",
+      "question": "I.6",
+      "legende": "Les quatre premières couches. Les flèches orientent les pas du 1-ordre depuis le mot vide en bas à gauche."
+    },
+    {
+      "fichier": "figures/iii4-ordre.svg",
+      "question": "III.4",
+      "legende": "Arbre G₂ enraciné en 0. Les étiquettes intérieures reprennent les sommets du sujet. Les rangs donnent l’ordre de la visite alternée."
+    },
+    {
+      "fichier": "figures/iv5-branches.svg",
+      "question": "IV.5",
+      "legende": "Deux branches lourdes divergent après w. Tout passage du cône de wa à son complément doit remonter au moins jusqu’au niveau de w."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 27 réponses numérotées, lecture du sujet et du rapport officiels, lecture visuelle des graphes, trois figures originales. Exécution des programmes C et OCaml de chaque édition, contrôles des ordres, des listes et des arbres couvrants."
+    }
+  ]
+}
