@@ -1,0 +1,43 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2018",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2018,
+    "duree_heures": 3
+  },
+  "questions": 12,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/2018_2CC_sujet_Info.pdf",
+    "sujet_sha256": "00d580ecc513540a34daab95d6b3593cf10424da03173b84e0a159f481453651",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_2CC_rap_eInfo.pdf",
+    "rapport_sha256": "25a7c7cd8dbf2055e1a72b80620f09214331019bd6184e44dbcea20f39a35c13"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q11-cycle.svg",
+      "question": "1.1",
+      "legende": "Le même graphe est redessiné dans l’ordre du cycle. La suppression de l’arête de poids 2 donne l’arbre de droite."
+    },
+    {
+      "fichier": "figures/q22-frontiere.svg",
+      "question": "2.2",
+      "legende": "À l’extérieur de T, la clé de j vaut 6 et celle de i vaut 9. Extraire i fixe une arête lourde pour la coupe actuelle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 12 questions et de leurs sous-questions sur les arbres couvrants de poids maximal. Lecture du sujet, de la figure pondérée et du rapport. Deux figures originales. Contrôle des programmes des deux éditions par énumération indépendante des arbres et des composantes."
+    }
+  ]
+}
