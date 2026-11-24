@@ -1,0 +1,44 @@
+{
+  "slug": "x_fui-ff-2_physique_2020",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Physique",
+    "annee": 2020
+  },
+  "questions": 40,
+  "redaction": "Corrigés originaux rédigés par IA.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20PHYSIQUE.pdf",
+    "sujet_sha256": "27cfb68747fd642a4818df0bd57e82c6d27bd1f69a4a7a03adebd3c03f3bf322",
+    "rapport_jury": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2.7",
+      "fichier": "figures/dependance-angulaire.svg",
+      "legende": "À distance fixée, le rayon des courbes représente le module du facteur angulaire du potentiel. La couleur et le trait indiquent son signe."
+    },
+    {
+      "numero": 2,
+      "question": "2.14",
+      "fichier": "figures/champ-cavite.svg",
+      "legende": "Enlever la sphère polarisée annule son champ propre. La contribution qui s’ajoute alors au champ macroscopique pointe dans le sens de la polarisation."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 40 réponses et des 40 indications sur les potentiels, la polarisation et le champ d’une charge en mouvement. Vérification des signes, des conditions de jauge et de la limite diluée ; deux figures originales.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ]
+}
