@@ -26,7 +26,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20DE%20FRANCAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "28418678c6ffd49ad1f13d5725fbb220487fed20a0d337c00ff7ae2d006aafdd"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -44,10 +45,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -71,6 +71,17 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante sur le sujet officiel : thèse, questions et sous-questions, références littéraires et argument de l’essai vérifiés.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des trois réponses sur le discours de Hugo, citation vérifiée, circulation universelle du livre, détail de la comparaison des rues et confrontation de l’essai aux exemples littéraires.",
       "fournisseur": "codex"
     }
   ]

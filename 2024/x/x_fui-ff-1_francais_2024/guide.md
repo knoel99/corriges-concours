@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte est un entretien de 2007 avec l’helléniste Jacqueline de Romilly. Trois réponses de compréhension précèdent un bref essai personnel sans limite de mots imposée.
 
 [Sujet officiel de la session 1](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20DE%20FRANCAIS.pdf)
@@ -15,7 +17,7 @@ Cette épreuve de la filière universitaire internationale de formation francoph
 > [!INDICATION]
 > Distinguer le bien que défend l’helléniste du danger qu’elle croit voir dans la société de son époque.
 
-Jacqueline de Romilly défend l’étude des textes anciens, parce qu’elle y voit une école de précision, de raisonnement et de dialogue. Elle porte sur la société moderne un regard inquiet et critique. Le recul des humanités lui paraît révéler une perte de confiance dans la raison et dans la possibilité de construire un monde commun par la parole. Elle redoute que le goût des formules sommaires et le refus des nuances n’ouvrent la voie à la violence.
+Jacqueline de Romilly défend l’étude des textes anciens, parce qu’elle y voit une école de précision, de raisonnement et de dialogue. À la journaliste qui la croit peut-être optimiste parce que son combat est honoré, elle répond que son inquiétude s’étend du grec à la langue française et aux humanités. Le recul des humanités lui paraît révéler une perte de confiance dans la raison et dans la possibilité de construire un monde commun par la parole. Elle redoute que le goût des formules sommaires et le refus des nuances n’ouvrent la voie à la violence, et présente ce danger comme évitable si la société réagit.
 
 ## A2 · Le moyen de sortir de la crise
 
@@ -50,3 +52,6 @@ J’attends donc du passé une occasion de suspendre mes certitudes. Il peut exe
 
 > [!METHODE]
 > Vérifier que chaque exemple est suivi d’une observation personnelle sur son effet. La copie peut être défendue sans supposer que le lecteur connaît déjà toutes les œuvres mentionnées.
+
+> [!METHODE]
+> L’objection finale vient de la journaliste : d’autres pensées que la pensée littéraire existent. Romilly les juge souvent sommaires. Dans la compréhension, attribuer ce jugement à l’helléniste. L’essai peut ensuite en discuter à partir d’une autre œuvre.
