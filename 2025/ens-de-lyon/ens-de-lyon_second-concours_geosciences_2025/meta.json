@@ -1,0 +1,56 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2025
+  },
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "questions": 14,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_ST.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eST.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-trace-du-point-chaud.svg",
+      "question": "Q1",
+      "legende": "Les distances sont des lectures arrondies des centres des ellipses de la figure 1. La pente moyenne entre extrémités vaut environ 40 km/Ma."
+    },
+    {
+      "fichier": "figures/q03-transition-rheologique.svg",
+      "question": "Q3",
+      "legende": "À gauche, enveloppes qualitatives. À droite, l’isotherme 350 °C remonte sous la caldera et borne approximativement le domaine sismogène."
+    },
+    {
+      "fichier": "figures/q08-isochrone-rubidium-strontium.svg",
+      "question": "Q8",
+      "legende": "La régression sur sanidine, biotite et roche totale donne une pente de 6,325 × 10⁻⁶ avec les rapports du tableau."
+    },
+    {
+      "fichier": "figures/q09-trajet-magmatique.svg",
+      "question": "Q9",
+      "legende": "Trajet de remontée et de refroidissement d’un magma granitique hydraté, schématisé à partir de la figure 3. La dernière fraction de liquide disparaît vers 5 km."
+    },
+    {
+      "fichier": "figures/q11-textures-rhyolite-granite.svg",
+      "question": "Q11",
+      "legende": "Croquis de textures, sans échelle de grain imposée : la pâte vitreuse ou microlitique de la rhyolite contraste avec les cristaux jointifs du granite."
+    },
+    {
+      "fichier": "figures/q12-coupe-de-la-croute.svg",
+      "question": "Q12",
+      "legende": "La limite sismogène est superficielle au centre. Les deux anomalies de vitesse sont interprétées comme des régions magmatiques, avec une connexion schématique."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

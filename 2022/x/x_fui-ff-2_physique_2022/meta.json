@@ -1,0 +1,65 @@
+{
+  "slug": "x_fui-ff-2_physique_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Physique",
+    "annee": 2022
+  },
+  "questions": 25,
+  "redaction": "Corrigé original non officiel rédigé par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20PHYSIQUE.pdf",
+    "rapport_jury": null
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Lecture visuelle des équations sur les pages numérisées. Vérification du signe de la phase du plasma, des cinq fonctions de transfert et de l’égalité entre le moment cinétique mécanique final et le moment initial du champ.\nContre-lecture indépendante des deux signes de dispersion, du seuil du facteur de qualité et des moments transférés aux cylindres."
+  },
+  "figures": [
+    {
+      "fichier": "figures/modes-circulaires-du-plasma.svg",
+      "numero": 1,
+      "question": "1.7",
+      "legende": "Trajectoire du champ réel en un point pour la convention exp(iωt). La flèche noire indique la phase de départ."
+    },
+    {
+      "fichier": "figures/traction-et-elongation.svg",
+      "numero": 2,
+      "question": "2.3",
+      "legende": "La différence des déplacements des deux faces fixe l’allongement de la tranche."
+    },
+    {
+      "fichier": "figures/gain-du-sismographe.svg",
+      "numero": 3,
+      "question": "2.7",
+      "legende": "La limite à haute fréquence est commune. Une résonance apparaît au-dessus de Q = 1/√2."
+    },
+    {
+      "fichier": "figures/recouvrement-des-champs.svg",
+      "numero": 4,
+      "question": "3.4",
+      "legende": "Le moment électromagnétique axial est localisé dans la couronne a < r < R, où les deux champs sont présents."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

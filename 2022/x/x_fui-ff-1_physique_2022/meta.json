@@ -1,0 +1,71 @@
+{
+  "slug": "x_fui-ff-1_physique_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Physique",
+    "annee": 2022
+  },
+  "questions": 42,
+  "redaction": "Corrigé original non officiel rédigé par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20DE%20PHYSIQUE.pdf",
+    "rapport_jury": null
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Lecture du scan avec contre-vérification indépendante des sept ordres propagatifs, des longueurs de décroissance des ordres −6 et +2 et de l’application numérique de la couche antireflet. Les deux unités mm (imprimée) et µm (compatible avec une couche quart d’onde visible) sont calculées séparément."
+  },
+  "figures": [
+    {
+      "fichier": "figures/ordres-du-reseau.svg",
+      "numero": 1,
+      "question": "1.4b",
+      "legende": "Ordres n = −5 à 1 pour λ/a = 0,275 et θ₀ = 30°. L’ordre zéro est spéculaire."
+    },
+    {
+      "fichier": "figures/ordres-evanescents.svg",
+      "numero": 2,
+      "question": "1.4c",
+      "legende": "L’amplitude décroît d’un facteur e après environ 0,154 et 0,273 µm selon l’ordre."
+    },
+    {
+      "fichier": "figures/trajets-multiples-dans-la-couche.svg",
+      "numero": 3,
+      "question": "2.3",
+      "legende": "Les trajets sont séparés latéralement pour les distinguer. Le calcul du sujet est à incidence normale."
+    },
+    {
+      "fichier": "figures/transmission-de-la-couche.svg",
+      "numero": 4,
+      "question": "2.8",
+      "legende": "Pour n₀ = 1, n₁ = 1,38 et n₂ = 1,52, la transmission culmine à chaque multiple impair de π."
+    },
+    {
+      "fichier": "figures/raccordement-acoustique.svg",
+      "numero": 5,
+      "question": "3.16",
+      "legende": "Deux impédances identiques transmettent toute la puissance. Un contraste élevé favorise la réflexion."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

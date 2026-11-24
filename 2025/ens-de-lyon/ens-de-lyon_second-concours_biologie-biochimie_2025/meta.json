@@ -1,0 +1,92 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2025
+  },
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "questions": 32,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eBio.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-lecture-arn-bicistronique.svg",
+      "question": "Q1",
+      "legende": "Organisation générique de deux cadres successifs sur un même ARNm. Dans le cytosol eucaryote, le balayage favorise normalement le premier AUG approprié."
+    },
+    {
+      "fichier": "figures/q07-glycine-zwitterion.svg",
+      "question": "Q7",
+      "legende": "La glycine, sous sa forme zwitterionique vers pH 7, porte deux charges opposées et deux H sur le carbone α."
+    },
+    {
+      "fichier": "figures/q09-retard-migration.svg",
+      "question": "Q9",
+      "legende": "Gel natif schématique. Une sonde libre indique la position de référence et un complexe se déplace moins loin."
+    },
+    {
+      "fichier": "figures/q21-transferts-proteines-et-arn.svg",
+      "question": "Q21",
+      "legende": "Le Western blot reconnaît une protéine avec un anticorps ; le Northern blot reconnaît un ARN par complémentarité de séquence."
+    },
+    {
+      "fichier": "figures/q31-regulation-ferritine.svg",
+      "question": "Q31",
+      "legende": "Exemple eucaryote indépendant. La fixation d’une IRP sur une structure IRE en 5′ de l’ARNm diminue la synthèse de ferritine."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      7,
+      9,
+      18,
+      21,
+      23,
+      31,
+      32
+    ],
+    "questions_partiellement_traitees": [
+      3,
+      8,
+      26,
+      30
+    ],
+    "questions_non_traitees": [
+      2,
+      4,
+      5,
+      6,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      22,
+      24,
+      25,
+      27,
+      28,
+      29
+    ]
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

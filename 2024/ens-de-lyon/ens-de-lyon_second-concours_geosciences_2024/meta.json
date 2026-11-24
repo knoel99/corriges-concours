@@ -1,0 +1,61 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2024",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2024
+  },
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "questions": 15,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_ST.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eST.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-atlantique-antilles-afrique.svg",
+      "question": "Q1",
+      "legende": "Coupe schématique à exagération verticale. La marge active des Petites Antilles regarde la fosse à l’est ; le panneau plonge vers l’ouest."
+    },
+    {
+      "fichier": "figures/q04-circulation-hydrothermale.svg",
+      "question": "Q4",
+      "legende": "L’infiltration, la circulation en profondeur et le retour du fluide vers l’océan transportent chaleur et éléments chimiques."
+    },
+    {
+      "fichier": "figures/q05-carotte-inversions.svg",
+      "question": "Q5",
+      "legende": "À gauche, polarité normale en bleu et inverse en beige. À droite, appariement des transitions aux âges du tableau 1."
+    },
+    {
+      "fichier": "figures/q07-ouverture-pacifique.svg",
+      "question": "Q7",
+      "legende": "La distance des deux isochrones homologues comprend la création de plancher sur les deux plaques."
+    },
+    {
+      "fichier": "figures/q09-geothermes-des-plaques.svg",
+      "question": "Q9",
+      "legende": "Géothermes indicatifs d’un demi-espace qui refroidit par conduction. Les âges servent à comparer les profils, sans imposer une température exacte au fond."
+    },
+    {
+      "fichier": "figures/q12-point-triple-chilien.svg",
+      "question": "Q12",
+      "legende": "Schéma de la migration vers le nord de l’intersection ride–fosse. Les positions sont ordonnées chronologiquement, sans échelle cartographique."
+    },
+    {
+      "fichier": "figures/q14-gradient-taitao.svg",
+      "question": "Q14",
+      "legende": "Le point illustratif 690 °C vers 40 km donne un gradient apparent de 17 °C/km. La zone colorée représente un intervalle de lecture et non une frontière de faciès."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

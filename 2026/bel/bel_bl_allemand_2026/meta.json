@@ -1,0 +1,46 @@
+{
+  "slug": "bel_bl_allemand_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Allemand",
+    "annee": 2026
+  },
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_option_allemand.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/montage-in-linden.svg",
+      "question": "Bildanalyse",
+      "legende": "Von der Beobachtung zur begründeten Deutung des Fotos von 1928."
+    },
+    {
+      "fichier": "figures/betrieb-und-vertretung.svg",
+      "question": "Vergleich",
+      "legende": "Die soziale Bedeutung eines Betriebs und die Möglichkeit zum Widerspruch sind zwei verschiedene Fragen."
+    },
+    {
+      "fichier": "figures/drei-fragen.svg",
+      "question": "Plan",
+      "legende": "Die drei Fragen führen von der öffentlichen Reichweite eines Betriebs zum Handlungsspielraum der Beschäftigten."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

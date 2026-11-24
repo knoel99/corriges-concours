@@ -1,0 +1,56 @@
+{
+  "slug": "bel_bl_espagnol_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Espagnol",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=19",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_option_espagnol.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/consentimiento.svg",
+      "question": "Documents 1 et 2",
+      "legende": "¿Qué prueba el documento que se cita?"
+    },
+    {
+      "fichier": "figures/recorrido.svg",
+      "question": "Plan",
+      "legende": "Del consentimiento a las decisiones compartidas"
+    },
+    {
+      "fichier": "figures/vias-de-intercambio.svg",
+      "question": "Documents 3 et 4",
+      "legende": "¿En qué dirección circula la cultura?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante des quatre documents, des dates, de la portée de la législation citée par Maeztu, du budget de l’Institut et des deux expressions employées par Juan Carlos Ier."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

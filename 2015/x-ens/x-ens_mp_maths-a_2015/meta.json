@@ -1,0 +1,66 @@
+{
+  "slug": "x-ens_mp_maths-a_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2015
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp_sujet_mathsA_xlcr.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/enlacement.svg",
+      "question": "Q3",
+      "legende": "Entre deux valeurs consécutives de la première liste se trouve une valeur de la seconde. Les deux lignes indiquent les deux familles."
+    },
+    {
+      "fichier": "figures/signes-aux-noeuds.svg",
+      "question": "Q5b",
+      "legende": "Deux nœuds présentant des signes opposés séparent les trois racines de cet exemple cubique."
+    },
+    {
+      "fichier": "figures/spectres-des-blocs.svg",
+      "question": "Q11b",
+      "legende": "Pour trois valeurs propres 3, 0,75 et −1,5, les deux valeurs du bloc principal varient dans le rectangle fermé indiqué. Un segment part du coin vers un spectre strictement enlacé."
+    },
+    {
+      "fichier": "figures/segment-des-diagonales.svg",
+      "question": "Q12",
+      "legende": "En dimension deux, avec valeurs propres 3 et −1, les couples de coordonnées diagonales ont une somme constante égale à 2."
+    },
+    {
+      "fichier": "figures/quadrilatere-ordonne.svg",
+      "question": "Q15c",
+      "legende": "Pour les valeurs propres 3, −1 et −2, le secteur des diagonales ordonnées se termine au point image du spectre. Les deux axes se coupent sous un angle de 60 degrés."
+    },
+    {
+      "fichier": "figures/hexagone.svg",
+      "question": "Q16e",
+      "legende": "Les six permutations du spectre (3, −1, −2) donnent les sommets de l’hexagone. En vert figure le quadrilatère des diagonales décroissantes."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Vérification des 33 réponses sur le sujet officiel. Relecture croisée de la construction par deux mélanges de coordonnées et de la caractérisation de l’hexagone des diagonales. Aucun rapport institutionnel de cette épreuve n’a été identifié dans le catalogue de sources."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}
