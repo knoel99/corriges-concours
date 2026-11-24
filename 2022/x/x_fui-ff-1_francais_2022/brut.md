@@ -6,11 +6,13 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte vient du livre IV d’Émile ou De l’éducation de Jean-Jacques Rousseau (1762). Le sujet appelle une réponse d’ensemble, deux explications et un essai bref de forme libre sans limite de mots.
 
 ## A1 · La double portée de l’histoire
 
-Rousseau fait de l’histoire un moyen de connaître les êtres humains et signale aussitôt le danger que cette connaissance comporte. Le récit des actes permet de confronter ce que chacun disait vouloir aux conséquences de sa conduite. Mais le récit retient surtout les bouleversements. Une longue période de prospérité paisible lui fournit moins de matière qu’une guerre ou qu’une catastrophe. L’histoire instruit donc à condition de tenir compte de la sélection qui s’opère entre tous les faits possibles. À la lire comme une peinture complète de l’humanité, on risque de trouver les hommes plus mauvais qu’ils ne sont.
+Rousseau fait de l’histoire un moyen de connaître les êtres humains et signale aussitôt le danger que cette connaissance comporte. Le récit des actes permet de confronter les paroles par lesquelles chacun se présente à ce qu’il a effectivement fait. Mais le récit retient surtout les bouleversements. Une longue période de prospérité paisible lui fournit moins de matière qu’une guerre ou qu’une catastrophe. L’histoire instruit donc à condition de tenir compte de la sélection qui s’opère entre tous les faits possibles. À la lire comme une peinture complète de l’humanité, on risque de trouver les hommes plus mauvais qu’ils ne sont.
 
 ## A2a · Observer les hommes en action
 
@@ -18,7 +20,9 @@ Un homme peut choisir l’image qu’il donne de lui dans une conversation. Ses 
 
 ## A2b · Le choix des faits racontés
 
-Un récit cherche volontiers le moment où la situation change. Les années pendant lesquelles une population cultive ses terres, élève ses enfants et prospère paisiblement passent presque inaperçues. Qu’une puissance voisine intervienne, et voici enfin des événements qui semblent dignes d’être racontés. Le défaut porte sur les proportions de la peinture. Ce qui occupe presque tout le récit n’a pas nécessairement occupé presque toute la vie du peuple. Le paradoxe final de Rousseau suggère même qu’un peuple devient célèbre précisément quand le temps de son indépendance heureuse s’achève.
+Un récit cherche volontiers le moment où la situation change. Les années pendant lesquelles une population cultive ses terres, élève ses enfants et prospère paisiblement passent presque inaperçues. C’est lorsque le peuple ne peut plus se suffire à lui-même, intervient chez ses voisins ou les laisse intervenir chez lui que l’historien commence, selon Rousseau, à lui faire une place. Le défaut porte sur les proportions de la peinture. Ce qui occupe presque tout le récit n’a pas nécessairement occupé presque toute la vie du peuple. Le paradoxe final de Rousseau suggère même qu’un peuple devient célèbre précisément quand le temps de son indépendance heureuse s’achève.
+
+![Ce que sélectionne le récit.](figures/faits-et-recit.svg)
 
 ## B · Pourquoi comprendre le passé ?
 

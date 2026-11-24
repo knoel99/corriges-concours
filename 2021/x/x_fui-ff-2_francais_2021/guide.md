@@ -8,6 +8,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. L’extrait vient des Deux Sources de la morale et de la religion (1932). La compréhension comporte trois demandes. L’essai consacré au progrès est libre, sans limite de mots.
 
 [Sujet officiel de la session 2](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20FRANCAIS_0.pdf)
@@ -17,7 +19,7 @@ Cette épreuve de la filière universitaire internationale de formation francoph
 > [!INDICATION]
 > Conserver les deux étapes : l’invention peut précéder la théorie, puis l’appui de la science accroît sa puissance.
 
-Bergson distingue l’aptitude à inventer des machines de la science théorique. Des dispositifs ingénieux ont existé avant la science moderne, et des travailleurs découvrent encore des perfectionnements qui n’avaient pas été déduits par les ingénieurs. Les deux activités peuvent cependant se rencontrer. La science donne alors à l’invention une ampleur qu’elle n’avait pas quand elle se développait seule. La machine à vapeur illustre ce double mouvement : une réalisation pratique peut précéder la théorie qui rend ensuite de nouveaux progrès possibles.
+Bergson distingue l’aptitude à inventer des machines de la science théorique. Des dispositifs ingénieux ont existé avant la science moderne, et des travailleurs découvrent encore des perfectionnements qui n’avaient pas été déduits par les ingénieurs. Les deux activités peuvent cependant se rencontrer. La science donne alors à l’invention une ampleur qu’elle n’avait pas quand elle se développait seule. L’auteur distingue l’exploitation du vent ou d’une chute d’eau de celle de l’énergie accumulée dans la houille ou le pétrole. Selon la note du sujet, les premières machines à vapeur datent d’environ 1690, la théorie expliquant leur fonctionnement de 1824. L’exemple établit donc l’antériorité de l’invention sur cette explication.
 
 ## A2 · Le don d’inventer
 
@@ -44,9 +46,12 @@ Je parlerais de progrès quand une nouveauté augmente une possibilité réelle 
 
 Le même critère fait apparaître des limites. Une bibliothèque qui remplacerait tous ses guichets par une application permettrait peut-être à plusieurs lecteurs de gagner du temps. Elle pourrait aussi priver un habitant sans téléphone de la possibilité de s’inscrire. Une augmentation de la vitesse moyenne du service cacherait alors la disparition de l’accès pour certains. Je voudrais que l’on puisse mesurer ces deux effets et conserver une voie utilisable par ceux qui risquent de se trouver exclus.
 
-Ce qui me paraît dangereux est donc moins la nouveauté que le moment où il devient impossible de la discuter ou de la corriger. Comme le suggère la distinction de Bergson, découvrir comment faire fonctionner un dispositif et savoir à quelles fins l’employer sont deux questions différentes. Une institution progresse aussi lorsqu’elle accepte de laisser des usagers modifier une invention dont les effets leur seront imposés chaque jour.
+Ce qui me paraît dangereux est donc moins la nouveauté que le moment où il devient impossible de la discuter ou de la corriger. Bergson distingue l’invention de la théorie qui l’explique. J’ajouterais une autre question à la sienne : une fois que le dispositif fonctionne, qui décide des fins auxquelles il sera employé ? Une institution progresse aussi lorsqu’elle accepte de laisser des usagers modifier une invention dont les effets leur seront imposés chaque jour.
 
 ![Évaluer un progrès pour ses usagers.](figures/bibliotheque-et-acces.svg)
 
 > [!METHODE]
 > Pour terminer, relier la portée de l’exemple à la question posée. La conclusion personnelle doit pouvoir être comprise par quelqu’un qui découvre cet exemple.
+
+> [!METHODE]
+> Dans l’image finale, la preuve de l’indépendance du Rhône se trouve à la sortie du lac. Le texte dit que l’invention pourrait à la rigueur se séparer de la science ; il ne recommande pas de rompre leur collaboration.
