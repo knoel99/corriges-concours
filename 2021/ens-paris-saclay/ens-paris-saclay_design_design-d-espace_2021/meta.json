@@ -1,0 +1,67 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2021
+  },
+  "redaction": "Rédaction et lecture du sujet et du rapport 2021, quatre planches A3. Trois implantations villageoises, transport sur plateau, séquence de dépose, plan à l’échelle et organisation des usages et des services.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_projet_espace.pdf",
+    "sujet_sha256": "4d11324710fc7c91d9b8793807f2d4f2597f7732b06c82d98a787f329d9fe1bd",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_oral_DESIGN_projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-tournee.svg",
+      "question": "Projet, planche 1",
+      "legende": "Trois implantations répondent à la place de l’église, au carrefour de mairie et à la grande place de Stenay."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-depose.svg",
+      "question": "Projet, planche 2",
+      "legende": "La séquence montre la caisse sur le plateau, sa dépose et son déploiement autonome."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-plan.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le plan de la caisse et du seuil détaille la rampe, le bureau d’entretien et les postes numériques."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-place.svg",
+      "question": "Projet, planche 4",
+      "legende": "Une vue à hauteur de piéton et trois moments de permanence précisent le rôle social du dispositif."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et lecture du sujet et du rapport 2021, quatre planches A3. Trois implantations villageoises, transport sur plateau, séquence de dépose, plan à l’échelle et organisation des usages et des services."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Une adresse qui se déplace",
+      "Transport, dépose, ouverture",
+      "Un bureau protégé, un seuil partagé",
+      "Quand la mairie est à portée de voix"
+    ]
+  }
+}
