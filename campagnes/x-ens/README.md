@@ -24,6 +24,8 @@ Si seules certaines questions sont traitées, renseignez `couverture.statut` ave
 
 Si une vérification du fond invalide une édition déjà signée, sa version exacte est consignée avec le motif et le sujet. Le bilan exclut cette paire tant que le brut ou le guidé contient encore la version retirée. [Rectifications documentées](rectifications.tsv)
 
+Pour les écrits scientifiques de 2025, les gardes identifient l’école et les filières de neuf sujets supplémentaires. En français et dans quatre langues, les 36 pages qui suivent les gardes sont identiques dans le sujet de l’X et dans sa version PSI publiée par l’ENS. Chaque épreuve commune compte une fois. [Sujets et rapports de 2025](ecrits-x-ens-2025.tsv)
+
 Pour le concours Droit-économie de Rennes de 2024 et 2025, chaque option écrite renvoie à sa première page dans le fascicule officiel. Le registre distingue les empreintes des fichiers institutionnels et celles des aperçus PDF consultés. Deux rapports de langue orale de 2025 attestent des épreuves dont les articles restent à retrouver. [Écrits et oraux de Rennes](droit-economie-rennes-2024-2025.tsv)
 
 Les options de langue de la banque Centrale-Supélec qui entrent dans l’admissibilité TSI de l’X sont rattachées à leur sujet commun aux cinq filières. Une fiche orale de l’ENS peut regrouper plusieurs planches ou dossiers d’une même discipline. Certains fascicules littéraires de Lyon réunissent plusieurs matières ou options. Leur PDF et son empreinte sont conservés pour identifier chaque sujet avant de l’ajouter au registre. [Fascicules à dépouiller](fascicules-a-depouiller.tsv)
