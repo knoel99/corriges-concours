@@ -8,5 +8,29 @@
   },
   "questions": 44,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/entrelacement-legendre.svg",
+      "question": "10b",
+      "legende": "Avec un poids constant sur le segment, les trois racines de degré 3 s’intercalent entre les quatre racines de degré 4. Les symboles correspondent aux zéros, sur le même axe."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20B%20MP-MPI%20sujet.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP_Maths%20B%20OK.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 44 réponses et des indications des deux éditions sur le sujet officiel et le rapport. Vérification des restes d’Hermite, de la quadrature, de la récurrence des polynômes orthogonaux et de la conductivité. Formule 3a explicitée, graphique d’entrelacement et exemple concret de la restriction de positivité stricte en 13.",
+      "agent": "astra_maths",
+      "fournisseur": "codex",
+      "tour": 2
+    }
+  ]
 }

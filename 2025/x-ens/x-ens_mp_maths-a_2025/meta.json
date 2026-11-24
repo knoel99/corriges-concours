@@ -13,5 +13,29 @@
   },
   "questions": 41,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/chaines-graduees.svg",
+      "question": "14° c)",
+      "legende": "Les deux systèmes ont les mêmes dimensions et les mêmes rangs individuels. La chaîne qui traverse les trois degrés existe uniquement lorsque la composée est non nulle."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20A%20MP-MPI%20sujet.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%20et%20MPI_Maths%20A%20OK.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 41 réponses et des indications des deux éditions sur le sujet officiel et le rapport. Vérification des prolongements compatibles, de la réduction graduée et des quatre blocs rectangulaires. Exemple et figure en 14° c) distinguant deux systèmes de mêmes rangs individuels mais de composées différentes.",
+      "agent": "astra_maths",
+      "fournisseur": "codex",
+      "tour": 2
+    }
+  ]
 }

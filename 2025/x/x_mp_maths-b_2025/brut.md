@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Attribution archivée** · « IA (GPT-6.2 Sol), relue et révisée par IA »
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Première partie — Interpolation avec multiplicités
 
 ### Question 1 — 1a
@@ -55,7 +59,8 @@ $$
 g(x)=\frac{(x-t_i)^{k_i}}{(k_i-1)!}
 \int_0^1 (1-s)^{k_i-1}g^{(k_i)}(t_i+(x-t_i)s)\,\mathrm ds.
 $$
-Cette formule inclut $x=t_i$, où les deux membres s’annulent. Avec $v=1-s$, on obtient l’expression demandée.
+Cette formule inclut $x=t_i$, où les deux membres s’annulent. Le changement de variable $v=1-s$ fournit explicitement
+$$g(x)=(x-t_i)^{k_i}\int_0^1\frac{v^{k_i-1}}{(k_i-1)!}\,g^{(k_i)}(t_i v+x(1-v))\,\mathrm dv.$$
 
 ### Question 6 — 3b
 
@@ -222,6 +227,8 @@ Il existe donc aussi une racine de chaque côté de la liste des $s_k$.
 
 Le degré impose qu’il y a exactement ces $i$ racines et qu’elles sont simples. Par leur localisation, une et une seule racine de $q_{i-1}$ sépare deux racines successives de $q_i$.
 
+![Avec un poids constant sur le segment, les trois racines de degré 3 s’intercalent entre les quatre racines de degré 4. Les symboles correspondent aux zéros, sur le même axe.](figures/entrelacement-legendre.svg)
+
 ### Question 23 — 10c
 
 Le polynôme $q_{n-j}$ de Q8b a pour plus grande racine $r_{j+1}$.
@@ -281,6 +288,8 @@ Ses coordonnées d’indices $0$ à $d$ dans la base du niveau $j-1$ sont strict
 En poursuivant jusqu’au niveau zéro, on obtient les coefficients strictement positifs pour tous ces indices dans la base $(a_0,\ldots,a_n)$, car $q_{0,i}=a_i$.
 
 **La formulation littérale comporte deux exceptions.** Pour $j\geq1$, les coefficients d’indice supérieur à $n-j$ sont nuls par le degré. Pour $j=0$, le produit est $q_{0,n}=a_n$, donc seul son coefficient d’indice $n$ est non nul. Dans tous les cas les coordonnées sont positives ou nulles. C’est la propriété nécessaire pour la Q21.
+
+Par exemple, pour $n=2$ et le poids constant $1$ sur $[-1,1]$, la base unitaire est $a_0=1$, $a_1=X$, $a_2=X^2-1/3$. On a $r_1=1/\sqrt3$ et $r_2=-1/\sqrt3$. Pour $j=1$, $X-r_2=a_1+a_0/\sqrt3$ a donc pour coordonnées $(1/\sqrt3,1,0)$. Pour $j=0$, le produit vaut $a_2$, de coordonnées $(0,0,1)$.
 
 ## Troisième partie — Développement et orthogonalité
 
