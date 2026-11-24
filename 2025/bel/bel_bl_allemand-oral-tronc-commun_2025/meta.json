@@ -1,0 +1,45 @@
+{
+  "slug": "bel_bl_allemand-oral-tronc-commun_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Allemand (oral, tronc commun)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Allemand (oral, tronc commun)",
+  "questions": 0,
+  "sujets": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_allemand_oral_tc.pdf",
+    "sujet_sha256": "45877eac0375bcc4b721b7a9ec2c1f1290ec2bd0b11703bba37ba2f3836899f3",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_allemand_tc.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Explication",
+      "legende": "Drei Ebenen des politischen Urteils"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication des trois articles du fascicule commun, préparation de vingt minutes par tirage, relances et schéma."
+    }
+  ]
+}
