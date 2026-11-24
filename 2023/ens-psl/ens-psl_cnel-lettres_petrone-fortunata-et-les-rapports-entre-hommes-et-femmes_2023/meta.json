@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_petrone-fortunata-et-les-rapports-entre-hommes-et-femmes_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Pétrone — Fortunata et les rapports entre hommes et femmes",
+    "annee": 2023
+  },
+  "intitule": "Pétrone, Satiricon 67 : Fortunata et les rapports entre hommes et femmes",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-5.pdf",
+    "sujet_sha256": "00586cf891e50765d47ab30025518c63038aa5e4efe8c8387d26046a1947c151",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/qui-regarde.svg",
+      "question": "Argumentation",
+      "legende": "Qui décide du regard posé sur Fortunata ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication littéraire de la distribution des gestes, des voix et des regards dans les rapports de genre, latin et traduction du fascicule."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_ciceron-le-pro-archia_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Cicéron — le Pro Archia",
+    "annee": 2023
+  },
+  "intitule": "Cicéron, Pro Archia 23 : culture grecque, culture latine et fonction de la littérature",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-10.pdf",
+    "sujet_sha256": "94355647fe3746e735875ac7a61dec32e0dd576e8069efa04f656af098e535ad",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/gloire-et-cite.svg",
+      "question": "Argumentation",
+      "legende": "Comment l’exemple grec devient-il un argument à Rome ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire des rapports entre les deux cultures, du parallèle entre les deux Grands et de la place de la littérature dans le plaidoyer."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}

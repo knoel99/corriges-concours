@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_petrone-les-ressorts-du-comique_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Pétrone — les ressorts du comique",
+    "annee": 2023
+  },
+  "intitule": "Pétrone, Satiricon 67 : les ressorts du comique et le lexique",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-13.pdf",
+    "sujet_sha256": "c5574093dc15f64a74803dfe764d97bf07f61447a59226b2f64932f60efa6a99",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/changer-de-registre.svg",
+      "question": "Argumentation",
+      "legende": "Comment un bijou change-t-il de registre ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Analyse du lexique, des voix et du rythme comique demandée par la seconde consigne de Pétrone ; comparaison du latin à la traduction fournie."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}

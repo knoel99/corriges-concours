@@ -599,6 +599,9 @@
 | 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Entretien (oral) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | Pétrone — Fortunata et les rapports entre hommes et femmes | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-fortunata-et-les-rapports-entre-hommes-et-femmes_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-fortunata-et-les-rapports-entre-hommes-et-femmes_2023/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | Pétrone — les ressorts du comique | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-les-ressorts-du-comique_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-les-ressorts-du-comique_2023/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | Cicéron — le Pro Archia | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Histoire de l’art | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études cinématographiques | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études théâtrales | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/guide.md) |
