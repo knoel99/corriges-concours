@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20D'ANGLAIS%20(XEULSR).pdf",
+    "sujet_sha256": "11462eec32cda148740df6a8dc671d24297537e2b34e3d2953e880763e794125",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC%20RAPPORT%20ECRIT%20ANGLAIS%20(XEULSR).pdf",
+    "rapport_sha256": "eb185a52f8e663fb3a4174bdac47736e1d9b548ebc42834ca69e83f3d2f335b4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "What counts as access to education?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (616 mots hors titre) et réaction personnelle au document 5 (527 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

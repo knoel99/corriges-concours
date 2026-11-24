@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_francais_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Français",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20DE%20FRANCAIS%20(XEULSR).pdf",
+    "sujet_sha256": "b04643778b5e6e25c04512c999300ee7f8ac0306f4dca7cd4a8de842939eb51c",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20RAPPORT%20ECRIT%20FRANCAIS%20(XEULSR).pdf",
+    "rapport_sha256": "645654a58486efa792ae4cdcd7b94faaf869428dc5ac6f6e9f4ee99447b39d73"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Qui donne un nom à ce qui arrive ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Dissertation sur la proposition d’Annie Ernaux à partir des livres I et II de l’Émile, des Contes d’Andersen et d’Aké de Wole Soyinka, accompagnée d’une préparation sur les voix, le geste et le récit rétrospectif."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

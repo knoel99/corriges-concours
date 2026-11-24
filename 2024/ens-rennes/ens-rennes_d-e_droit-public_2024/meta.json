@@ -1,0 +1,75 @@
+{
+  "slug": "ens-rennes_d-e_droit-public_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit public",
+    "annee": 2024
+  },
+  "intitule": "Libertés de manifestation et d’expression, CE, ord., 18 octobre 2023, n° 488860",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-epr-a-options-droit-com-droit-public-maths-d-e-2024_1729180742250-pdf#page=5",
+    "sujet_sha256": "611347788e61c3692f52b8e8da7e8a79af6c4ef9300bed9777c833cf6fb2f84b",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-public-e-crit-d-e-2024_1734001947279-pdf",
+    "rapport_sha256": "6dde5edbd3d1be621b047db54b811a35ca98f4f3b71ee432b94b3f81fd7c474b",
+    "references": [
+      "https://conseil-etat.fr/fr/arianeweb/CE/decision/2023-10-18/488860"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/instruction-et-arrete.svg",
+      "question": "Commentaire",
+      "legende": "Qui apprécie le risque pour les libertés ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Rapport de huit pages, référé-liberté contre le télégramme, portée de l’instruction et contrôle local de proportionnalité."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie, du guide de lecture et du schéma. Libertés de manifestation et d’expression, CE, ord., 18 octobre 2023, n° 488860"
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    }
+  ]
+}

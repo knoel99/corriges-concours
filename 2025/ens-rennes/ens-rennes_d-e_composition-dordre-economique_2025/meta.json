@@ -1,0 +1,77 @@
+{
+  "slug": "ens-rennes_d-e_composition-dordre-economique_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2025
+  },
+  "intitule": "Dans quelle mesure les marchés financiers affectent-ils les décisions économiques ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-economie-d-e-2025_1760692386039-pdf",
+    "sujet_sha256": "f421450692029a57839d060cc201b5e27c25cc695c3db35727efab20c7413a65",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-economie-e-crit-d-e-2025_1768897848087-pdf",
+    "rapport_sha256": "a683a4c00b2482f7338760b5b7ec15252ca6f5fb36dedb6f9e13c0aa683c6a42",
+    "references": [
+      "https://www.ecb.europa.eu/mopo/intro/transmission/html/index.en.html",
+      "https://www.federalreserve.gov/newsevents/reform_cpff.htm",
+      "https://www.ecb.europa.eu/press/govcdec/otherdec/2012/html/gc120921.en.html"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/signaux-et-decisions.svg",
+      "question": "Composition",
+      "legende": "Par quel canal le prix d’un titre change-t-il un choix ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Rapport de deux pages, finance directe et intermédiée, arbitrages privés, financement public et dimension internationale."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie, du guide de lecture et du schéma. Dans quelle mesure les marchés financiers affectent-ils les décisions économiques ?"
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    }
+  ]
+}

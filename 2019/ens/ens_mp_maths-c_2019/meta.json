@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2019
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/19_mpi_mathc_sujet.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_MP_rap_eMathC.pdf",
+    "sha256_sujet": "03f7c80d9e84ac7e220f1ec7161e6bf84053b9ff5121d12aeb3ef8e3c7dc4d6d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/directions-frequentielles.svg",
+      "question": "V.3",
+      "legende": "La divergence contrôle la projection parallèle à la fréquence et le rotationnel celle de la seconde suite sur la perpendiculaire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des cinq parties, vérification des résultats sur l’espace de Schwartz et la transformation de Fourier, preuve des estimations de fréquences et du passage à la limite div-rot. Schéma des deux directions fréquentielles.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

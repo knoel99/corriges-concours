@@ -574,6 +574,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2023 | ENS | PC | Chimie B | [md](2023/ens/ens_pc_chimie-b_2023/brut.md) | [md](2023/ens/ens_pc_chimie-b_2023/guide.md) |
 | 2024 | ENS | PC | Chimie B | [md](2024/ens/ens_pc_chimie-b_2024/brut.md) | [md](2024/ens/ens_pc_chimie-b_2024/guide.md) |
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
@@ -582,11 +583,17 @@
 | 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Composition d’ordre économique | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Composition d’ordre économique | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/guide.md) |
 | 2024 | ENS Rennes | D-E | Droit civil | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Droit civil | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit civil | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Droit commercial | [md](2024/ens-rennes/ens-rennes_d-e_droit-commercial_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-commercial_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Droit commercial | [md](2025/ens-rennes/ens-rennes_d-e_droit-commercial_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-commercial_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit commercial | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Droit public | [md](2024/ens-rennes/ens-rennes_d-e_droit-public_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-public_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Droit public | [md](2025/ens-rennes/ens-rennes_d-e_droit-public_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-public_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit public | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
@@ -595,6 +602,9 @@
 | 2026 | ENS-PSL | CNEL Lettres | Études cinématographiques | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études théâtrales | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Droit | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/guide.md) |
+| 2023 | ENS-PSL | Sélection internationale Lettres | Philosophie | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_philosophie_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_philosophie_2023/guide.md) |
+| 2023 | ENS-PSL | Sélection internationale Lettres | Histoire — villes et Révolution | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_histoire-villes-et-revolution_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_histoire-villes-et-revolution_2023/guide.md) |
+| 2023 | ENS-PSL | Sélection internationale Lettres | Histoire — comparaison en histoire coloniale | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_histoire-comparaison-en-histoire-coloniale_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_histoire-comparaison-en-histoire-coloniale_2023/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Arts | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 1) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-1_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-1_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 2) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-2_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-2_2026/guide.md) |
@@ -736,6 +746,11 @@
 | 2024 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_allemand_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_allemand_2024/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_arabe_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_arabe_2024/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2024/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2022 | X-ENS | MP-PC-PSI | Informatique B | [md](2022/x-ens/x-ens_mp-pc-psi_informatique-b_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_informatique-b_2022/guide.md) |
+| 2023 | X-ENS | MP-PC-PSI | Informatique B | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/brut.md) | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/guide.md) |
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
@@ -762,6 +777,8 @@
 | 2024 | X-ENS | MP | Physique | [md](2024/x-ens/x-ens_mp_physique_2024/brut.md) | [md](2024/x-ens/x-ens_mp_physique_2024/guide.md) |
 | 2025 | X-ENS | MP | Physique | [md](2025/x-ens/x-ens_mp_physique_2025/brut.md) | [md](2025/x-ens/x-ens_mp_physique_2025/guide.md) |
 | 2026 | X-ENS | MP | Physique | [md](2026/x-ens/x-ens_mp_physique_2026/brut.md) | [md](2026/x-ens/x-ens_mp_physique_2026/guide.md) |
+| 2023 | X-ENS | MPI | Informatique C | [md](2023/x-ens/x-ens_mpi_informatique-c_2023/brut.md) | [md](2023/x-ens/x-ens_mpi_informatique-c_2023/guide.md) |
+| 2024 | X-ENS | MPI | Informatique C | [md](2024/x-ens/x-ens_mpi_informatique-c_2024/brut.md) | [md](2024/x-ens/x-ens_mpi_informatique-c_2024/guide.md) |
 | 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
@@ -785,6 +802,8 @@
 | 2019 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2019/x-ens/x-ens_psi_modelisation_2019/brut.md) | [md](2019/x-ens/x-ens_psi_modelisation_2019/guide.md) |
 | 2020 | X-ENS | PSI | Modélisation | [md](2020/x-ens/x-ens_psi_modelisation_2020/brut.md) | [md](2020/x-ens/x-ens_psi_modelisation_2020/guide.md) |
 | 2021 | X-ENS | PSI | Modélisation | [md](2021/x-ens/x-ens_psi_modelisation_2021/brut.md) | [md](2021/x-ens/x-ens_psi_modelisation_2021/guide.md) |
+| 2022 | X-ENS | MP-PC-PSI | Anglais | [md](2022/x-ens/x-ens_mp-pc-psi_anglais_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_anglais_2022/guide.md) |
+| 2022 | X-ENS | MP-PC-PSI | Français | [md](2022/x-ens/x-ens_mp-pc-psi_francais_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_francais_2022/guide.md) |
 | 2022 | X-ENS | PSI | Modélisation | [md](2022/x-ens/x-ens_psi_modelisation_2022/brut.md) | [md](2022/x-ens/x-ens_psi_modelisation_2022/guide.md) |
 | 2023 | X-ENS | PSI | Modélisation | [md](2023/x-ens/x-ens_psi_modelisation_2023/brut.md) | [md](2023/x-ens/x-ens_psi_modelisation_2023/guide.md) |
 | 2024 | X-ENS | PSI | Modélisation | [md](2024/x-ens/x-ens_psi_modelisation_2024/brut.md) | [md](2024/x-ens/x-ens_psi_modelisation_2024/guide.md) |

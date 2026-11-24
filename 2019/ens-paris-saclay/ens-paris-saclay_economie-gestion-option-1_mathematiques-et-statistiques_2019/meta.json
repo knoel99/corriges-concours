@@ -1,0 +1,36 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2019",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2019
+  },
+  "questions": 34,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Sujets_Ecrits_D2_Math_et_statistiques.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Ecrits_D2_Maths.pdf",
+    "sha256_sujet": "644027d6af6b7058935611a851f352f6406eb97aa2db0001a887efa288d663b8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/segment-des-contraintes.svg",
+      "question": "II.1a",
+      "legende": "Le segment fermé joint les deux sommets du simplexe. Son milieu est le point d’égalité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des trois problèmes et de toutes leurs sous-questions. Vérification des dénombrements à deux et quatre candidates, de la probabilité des ex æquo et des interprétations de la proportion p. Représentation du simplexe demandée au problème 2.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
