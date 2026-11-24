@@ -1,0 +1,97 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2022
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/2c2022_bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/12/22_2cc_rap_eBio.pdf",
+    "sujet_sha256": "5c0b40072fdd22a966e75e2e4a1a070be9833fe29e91b6529297b752615b7843",
+    "rapport_sha256": "db25e002b480bad8e665e603856711e0e9cfc04b8e777646a519cfd9a7e9fed1"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Q1 est la courte synthèse illustrée sur le cycle des Mammifères. Q2 à Q21 forment l’étude documentaire sur la reconnaissance des gamètes d’Oursins et la polyspermie."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/meiose-et-brassages.svg",
+      "question": "Q1",
+      "legende": "Une paire d’homologues après réplication échange des segments entre chromatides non sœurs. La première division sépare les homologues, la seconde les chromatides. Dans une cellule à plusieurs paires, leur orientation indépendante ajoute le brassage interchromosomique."
+    },
+    {
+      "fichier": "figures/immunomarquage-bindine.svg",
+      "question": "Q2",
+      "legende": "L’anticorps primaire reconnaît la bindine et le secondaire rend sa localisation visible. Les différents stades sont comparés après fixation."
+    },
+    {
+      "fichier": "figures/bindine-fertilite.svg",
+      "question": "Q7",
+      "legende": "L’individu 2 conserve un signal à 35 kDa et la capacité de féconder. Les trois autres ont un signal indétectable et des essais de fécondation négatifs."
+    },
+    {
+      "fichier": "figures/comparaison-gangue.svg",
+      "question": "Q13",
+      "legende": "Lectures approchées des deux premières espèces de la figure 13. Les croisements hétérospécifiques, faibles dans l’essai direct, deviennent plus fréquents dans le panneau B."
+    },
+    {
+      "fichier": "figures/chronologie-potentiel-impose.svg",
+      "question": "Q16",
+      "legende": "Pendant le palier positif, les voisins répondent avant l’œuf enregistré. L’apparition de son enveloppe de fécondation suit le retour à son potentiel de repos."
+    },
+    {
+      "fichier": "figures/noyaux-et-sodium.svg",
+      "question": "Q18",
+      "legende": "Moyennes indiquées sur la figure 19 pour trois lots d’œufs. L’échelle part de zéro pour montrer l’amplitude du changement ; les valeurs individuelles ne sont pas fournies."
+    },
+    {
+      "fichier": "figures/bilan-fecondation.svg",
+      "question": "Q21",
+      "legende": "Les événements précédant la fusion contribuent à la reconnaissance des gamètes. Les réponses électriques et corticales puis l’organisation de l’actine interviennent après l’entrée du premier spermatozoïde."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale de la synthèse et des vingt réponses sur documents dans les deux éditions à partir du sujet et du rapport 2022. Vérification des graphes, de la concordance donneur–protéine et des distinctions d’espèces entre expériences ; sept schémas et graphiques originaux."
+    }
+  ]
+}

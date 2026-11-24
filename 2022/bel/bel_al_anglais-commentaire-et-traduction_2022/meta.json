@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_anglais-commentaire-et-traduction_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (commentaire et traduction)",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=4",
+    "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Anglais%202022.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Quel âge le miroir donne-t-il à Cecilia ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire anglais de tout l'extrait de McEwan, traduction française de la question intérieure au retour dans le couloir, guidage et schéma des miroirs."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Ian McEwan, *Atonement* (2001). Cecilia est revenue de Cambridge au domaine familial dans les années 1930."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}

@@ -189,6 +189,8 @@
 | 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
 | 2022 | BEL | AL | Allemand (commentaire et traduction) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Allemand (thème Lyon) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Anglais (commentaire et traduction) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Anglais (thème Lyon) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
@@ -220,6 +222,7 @@
 | 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 6 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-6_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-6_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 7 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/guide.md) |
 | 2026 | BEL | BL | Économie (oral à option) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/guide.md) |
+| 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -442,6 +445,7 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2022 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2022/guide.md) |
 | 2023 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2023/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
@@ -541,6 +545,8 @@
 | 2026 | IEP | 1A | Italien | [md](2026/iep/iep_1a_italien_2026/brut.md) | [md](2026/iep/iep_1a_italien_2026/guide.md) |
 | 2015 | IEP | 1A | Questions contemporaines | [md](2015/iep/iep_1a_questions-contemporaines_2015/brut.md) | [md](2015/iep/iep_1a_questions-contemporaines_2015/guide.md) |
 | 2016 | IEP | 1A | Questions contemporaines | [md](2016/iep/iep_1a_questions-contemporaines_2016/brut.md) | [md](2016/iep/iep_1a_questions-contemporaines_2016/guide.md) |
+| 2017 | BEL | BL | Version grecque | [md](2017/bel/bel_bl_version-grecque_2017/brut.md) | [md](2017/bel/bel_bl_version-grecque_2017/guide.md) |
+| 2017 | BEL | BL | Version latine | [md](2017/bel/bel_bl_version-latine_2017/brut.md) | [md](2017/bel/bel_bl_version-latine_2017/guide.md) |
 | 2017 | IEP | 1A | Questions contemporaines | [md](2017/iep/iep_1a_questions-contemporaines_2017/brut.md) | [md](2017/iep/iep_1a_questions-contemporaines_2017/guide.md) |
 | 2018 | IEP | 1A | Questions contemporaines | [md](2018/iep/iep_1a_questions-contemporaines_2018/brut.md) | [md](2018/iep/iep_1a_questions-contemporaines_2018/guide.md) |
 | 2019 | IEP | 1A | Questions contemporaines | [md](2019/iep/iep_1a_questions-contemporaines_2019/brut.md) | [md](2019/iep/iep_1a_questions-contemporaines_2019/guide.md) |
@@ -642,6 +648,7 @@
 | 2026 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/guide.md) |
 | 2026 | X-ENS | MP-MPI-PC-PSI | Français | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2022 | X-ENS | MP | Informatique A | [md](2022/x-ens/x-ens_mp_informatique-a_2022/brut.md) | [md](2022/x-ens/x-ens_mp_informatique-a_2022/guide.md) |
 | 2023 | X-ENS | MP-MPI | Informatique A | [md](2023/x-ens/x-ens_mp_informatique-a_2023/brut.md) | [md](2023/x-ens/x-ens_mp_informatique-a_2023/guide.md) |
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
