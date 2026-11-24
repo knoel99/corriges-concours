@@ -1,0 +1,47 @@
+{
+  "slug": "x-ens_mp_informatique-a_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI",
+    "matiere": "Informatique A",
+    "annee": 2023,
+    "code_sujet": "XULSR",
+    "date": "2023-04-18"
+  },
+  "questions": 20,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "figures": [
+    {
+      "fichier": "figures/qii1-cinq-formes.svg",
+      "question": "II.1",
+      "legende": "Les cinq formes planes avec quatre feuilles. Les lettres illustrent une seule des 24 attributions par forme."
+    },
+    {
+      "fichier": "figures/qv1-arbre-canonique.svg",
+      "question": "V.1",
+      "legende": "Trois feuilles au niveau 2 puis deux au niveau 3. L’ordre des étiquettes recommence à chaque profondeur."
+    },
+    {
+      "fichier": "figures/qvii3-fenetre-etat.svg",
+      "question": "VII.3",
+      "legende": "Pour f = 3, diviser 190 par deux suffit pour atteindre la fenêtre admissible avant codage."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20SUJET%20D%27INFORMATIQUE%20A%20%28XULSR%29_0.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20RAPPORT%20ECRIT%20INFORMATIQUE%20A%20%28XULSR%29_0.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction intégrale des 20 questions I.1 à VII.3 dans les deux éditions, indications, trois figures et solutions OCaml. Confrontation aux PDF institutionnels du sujet MP-MPI XULSR et du rapport. Vérification des arbres, des entrées invalides, des profondeurs et des longueurs optimales, du décodage et de la renormalisation rANS."
+    }
+  ]
+}

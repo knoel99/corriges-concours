@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="475.2pt" height="180pt" viewBox="0 0 475.2 180" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 180
+L 475.2 180
+L 475.2 0
+L 0 0
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 181.567059 59.376
+L 352.334118 59.376
+L 352.334118 35.616
+L 181.567059 35.616
+z
+" clip-path="url(#pde2246f248)" style="fill: #d9e9e4; stroke: #426376; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 74.837647 125.376
+L 138.875294 125.376
+L 138.875294 101.616
+L 74.837647 101.616
+z
+" clip-path="url(#pde2246f248)" style="fill: #e9decb; stroke: #426376; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="266.950588" y="50.1275" transform="rotate(-0 266.950588 50.1275)">état x avant codage</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="181.567059" y="71.52" transform="rotate(-0 181.567059 71.52)">128</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="352.334118" y="71.52" transform="rotate(-0 352.334118 71.52)">256 exclu</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle" x="106.856471" y="116.1275" transform="rotate(-0 106.856471 116.1275)">état y pour f = 3</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="74.837647" y="137.52" transform="rotate(-0 74.837647 137.52)">48</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="138.875294" y="137.52" transform="rotate(-0 138.875294 137.52)">96 exclu</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 239.36113 83.718621
+Q 189.43772 91.976129 140.617358 100.051189
+" style="fill: none; stroke: #a4482e; stroke-linecap: round"/>
+    <path d="M 144.462836 101.239589
+L 140.617358 100.051189
+L 143.875366 97.687846
+" style="fill: none; stroke: #a4482e; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #873d29" x="264.282353" y="82.08" transform="rotate(-0 264.282353 82.08)">190 → 95</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="224.258824" y="166.56" transform="rotate(-0 224.258824 166.56)">Exemple : B = 8, N = 8, M = 16</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pde2246f248">
+   <rect x="10.8" y="10.8" width="453.6" height="158.4"/>
+  </clipPath>
+ </defs>
+</svg>
