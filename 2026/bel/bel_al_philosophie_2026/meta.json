@@ -34,5 +34,19 @@
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/al_philo_261107.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Philosophie%202026.pdf"
+  },
+  "provenance": {
+    "redaction": {
+      "provider": null,
+      "model": "claude-opus-4-8",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

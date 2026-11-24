@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Trois modèles répondent à trois questions différentes. Pour le disque, on change de modèle au lâcher, du mouvement circulaire au vol sous l’effet du poids. Pour le moment d’une force, on choisit comme pivot le point d’appui. Pour le plongeur, on calcule séparément les coordonnées horizontale et verticale de son barycentre. Le rapport du jury insiste sur le choix des grandeurs, les unités et la distinction entre temps du dernier tour et temps de vol. [Rapport de jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-svsaps-1-biome-ca-2026_1791532873688-pdf)

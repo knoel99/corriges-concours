@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-5-5 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **Thème.** Le sujet suit le robot serpentiforme aquatique NATRIX, qui comprend une tête, un cou, six modules ARIM à deux degrés de liberté et une queue passive. Chaque module porte un flotteur au profil « triangulaire », que l'on peut faire tourner autour de l'axe du module pour corriger le roulis. L'épreuve de « Modélisation » mêle mathématiques et sciences industrielles autour de cet objet unique.

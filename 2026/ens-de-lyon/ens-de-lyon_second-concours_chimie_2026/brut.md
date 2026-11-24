@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Les pressions standards valent 1 bar. Les renvois aux tableaux et aux numéros de composés reprennent ceux du sujet. La molécule appelée « arcutidine » dans son titre correspond à l’arcutinidine de la publication originale.
 
 ## I.1 — Combustion et pouvoir calorifique

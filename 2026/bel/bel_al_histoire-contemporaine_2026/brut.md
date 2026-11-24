@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-4-8 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Sujet de l’écrit commun de six heures, « Construire l’État, transformer les sociétés au Moyen-Orient 1920-2011 ».
 
 **Problématique** — Comment les pouvoirs qui ont entrepris de transformer les sociétés du Moyen-Orient ont-ils construit leurs moyens d’action, et comment les groupes concernés ont-ils infléchi à leur tour les institutions, de 1920 à 2011 ?

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Le commentaire de culture générale de l’ENS Rennes dure quatre heures. Il porte sur un extrait de 2019 de Caroline Bertron et Julien Vitores, paru dans la revue *Genèses*. L’épreuve demande de le commenter à partir des activités physiques, sportives **et artistiques**. On peut mener toute la démonstration à partir de quelques exemples dont on fait varier les échelles et les points de vue. [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-cgaps-2sep-2026_1791303234845-pdf) · [Rapport de jury 2026](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-cgaps-2026_1791304664652-pdf)

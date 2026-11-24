@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : non renseigné · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Épreuve « Méthodes de calcul et raisonnement », durée 2 h, sans calculatrice. Toutes les parties sont indépendantes, sauf la question 24.
 
 ## Partie I : Approximation de la loi de Poisson

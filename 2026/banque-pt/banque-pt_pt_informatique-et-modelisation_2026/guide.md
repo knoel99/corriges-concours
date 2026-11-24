@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-5-5 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **Thème.** *Étude et modélisation de phénomènes de communication sous-marine.* Le sujet part d'une question concrète : comment communiquer sous l'eau ? Il en tire une progression qui va de la physique (pourquoi le son et pas la radio) à la simulation numérique (trajectoire des rayons sonores, canal SOFAR), puis aux données (base SQL de mesures, classification de sons par $k$ plus proches voisins).

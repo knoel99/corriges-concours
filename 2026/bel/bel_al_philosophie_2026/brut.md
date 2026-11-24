@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-4-8 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Composition de philosophie (banque d'épreuves littéraires, filière AL), session 2026 : 6 heures, calculatrice non autorisée. Sujet : « L'autorité de la science ».
 
 **Problématique** : « l'autorité de la science » est-elle une contradiction dans les termes, ou la science détient-elle une forme d'autorité qui lui est propre — et à quelles conditions cette autorité reste-t-elle légitime ?

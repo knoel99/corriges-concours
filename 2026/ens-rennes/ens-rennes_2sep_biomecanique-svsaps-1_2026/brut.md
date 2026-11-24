@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 L’épreuve dure deux heures sans calculatrice. On prend $g=9{,}81\ \mathrm{m\,s^{-2}}$ et on arrondit les résultats numériques à la fin.
 
 ## Exercice 1 — Lancer du disque

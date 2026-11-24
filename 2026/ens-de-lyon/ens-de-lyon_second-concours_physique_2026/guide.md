@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Cette composition de trois heures sans calculatrice commence par dix questions de cours. Le jury leur attribue 20 % de la note et attend des réponses brèves. Le problème comporte vingt-six questions. Il mène du bilan des forces sur une corde pesante à l’interprétation d’une expérience où la corde se déplace presque aussi vite que l’onde.

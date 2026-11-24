@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : non renseigné · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **Thème.** Le sujet suit l'expérience de Luria et Delbrück (1943), qui a montré que les mutations de résistance apparaissent au hasard au fil des divisions cellulaires, et non en réponse à l'exposition. Mathématiquement, on oppose deux modèles pour le nombre $X$ de bactéries survivantes :

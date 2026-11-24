@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-5-5 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 h, calculatrice interdite, une feuille de papier millimétré à rendre avec la copie (pour le tracé de la question 4 du préambule). L'avertissement insiste sur la présentation et la justification des résultats. Il prévient aussi que les questions mal référencées ne sont pas notées. Il faut donc reprendre exactement la numérotation : Préambule 1 à 9, I.1 à I.7(d), II.1 à II.8, III.1 à III.5.

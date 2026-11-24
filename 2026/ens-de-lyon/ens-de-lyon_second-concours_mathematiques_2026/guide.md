@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve de trois heures de la filière universitaire comporte un exercice sur des endomorphismes complexes et un problème sur les sommes signées de vecteurs. La dernière question présente une contradiction dans le choix des coefficients. Le corrigé traite la formulation imprimée et la variante cohérente avec le reste du problème. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_math.pdf)

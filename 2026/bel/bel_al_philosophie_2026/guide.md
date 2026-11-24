@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-4-8 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **L’épreuve.** La composition commune de philosophie dure six heures. Le sujet officiel tient sur une page et donne un intitulé unique, « L’autorité de la science ». Le domaine du programme est « La science ». [Sujet officiel](https://www.ens.psl.eu/sites/default/files/al_philo_261107.pdf)
