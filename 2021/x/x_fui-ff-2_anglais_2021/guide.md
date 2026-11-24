@@ -8,6 +8,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20D'ANGLAIS_0.pdf)
@@ -26,7 +28,7 @@ Repeated use in physics might give the disputed noun a new association, so that 
 > [!INDICATION]
 > Comparer être en tête sur une tâche précise et rendre obsolète toute une famille de machines.
 
-The suggested expression conveys coming first on a particular task, while avoiding both an association with racial domination and the prediction that ordinary computers will become useless. It indicates a substantial computational lead more clearly than a word suggesting a modest benefit. Its ancestry also recalls familiar mathematical vocabulary. Future improvements in conventional methods could change which machine stays ahead. (Durham, Garisto and Wiesner, lines 67–89).
+The suggested expression conveys coming first on a particular task, while avoiding both an association with racial domination and the prediction that ordinary computers will become useless. It indicates a substantial computational lead more clearly than a word suggesting a modest benefit. The Latin *primus* connects this name with primality, a familiar concept in mathematics. Future improvements in conventional methods could change which machine stays ahead. (Durham, Garisto and Wiesner, lines 67–89).
 
 ![What a computational lead means](figures/two-claims.svg)
 
@@ -35,7 +37,7 @@ The suggested expression conveys coming first on a particular task, while avoidi
 > [!INDICATION]
 > Relier l’histoire des mots à celle des personnes représentées ou écartées dans la discipline.
 
-A technical audience has a history as well as a specialist vocabulary. American physics has long offered unequal opportunities, with Black graduates and women still poorly represented in the figures cited. A word strongly associated with racial hierarchy may therefore discourage people whose place in that field already seems insecure. Choosing another label could show professional courtesy. (Durham, Garisto and Wiesner, lines 13–24, 36–45 and 57–60).
+A technical audience has a history as well as a specialist vocabulary. American physics has long offered unequal opportunities, with Black students receiving just two per cent of undergraduate physics degrees in the figures cited. Women also seldom attain full professorships in that field. A word strongly associated with racial hierarchy may therefore discourage people whose place in that field already seems insecure. Choosing another label could show professional courtesy. (Durham, Garisto and Wiesner, lines 13–24, 36–45 and 57–60).
 
 ### 4. English as a shared scientific language
 
@@ -45,6 +47,8 @@ A technical audience has a history as well as a specialist vocabulary. American 
 Researchers who grew up speaking different languages often rely on English to exchange findings. For instance, a physicist in China can submit an English abstract to a conference in Europe, and a Brazilian colleague can question her about it without knowing Mandarin. A name selected by a small laboratory may consequently circulate through journals, lectures and international classrooms far beyond its original setting. (Durham, Garisto and Wiesner, lines 15–24).
 
 ![How a specialist name reaches different readers](figures/audiences.svg)
+
+Pour la deuxième réponse, préciser la tâche sur laquelle se mesure l’avance. Une amélioration des méthodes classiques peut déplacer la comparaison. Dans la troisième, garder le dénominateur de chaque statistique : les diplômes de premier cycle en physique et les postes de professeur titulaire décrivent deux populations distinctes.
 
 ## Essay
 
@@ -67,4 +71,4 @@ The strongest part of Pinker’s objection concerns misplaced effort. Changing a
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 62, 60, 57 et 63 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 62, 66, 70 et 63 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

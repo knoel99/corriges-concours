@@ -49,10 +49,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -76,6 +75,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante sur le sujet scanné, les quatre réponses, les exemples, les attributions et le décompte de l’essai.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé sur le fac-similé d’Emma John ; projet olympique daté, explication du président distinguée du commentaire journalistique, chiffres des primes, essai et longueurs.",
       "fournisseur": "codex"
     }
   ]

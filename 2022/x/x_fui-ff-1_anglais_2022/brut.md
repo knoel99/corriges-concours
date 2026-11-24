@@ -6,11 +6,13 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Olympic admission as an apparently obvious choice
 
-Cricket officials portray Olympic admission as such an obvious opportunity that debate seems unnecessary. Competing there could introduce unfamiliar spectators to the game, particularly Americans whose attention is commercially valuable. It would also give cricket visibility outside places historically connected with Britain. John reports this sales argument with some scepticism, asking why attracting fresh customers should count as an unquestionable good. (John, p. 2).
+Cricket officials portray Olympic admission as such an obvious opportunity that debate seems unnecessary. The article describes an Olympic bid aimed at 2028. Competing there could introduce unfamiliar spectators to the game, particularly Americans whose attention is commercially valuable. It would also give cricket visibility outside places historically connected with Britain. John reports this sales argument with some scepticism, asking why attracting fresh customers should count as an unquestionable good. (John, p. 2).
 
 ### 2. Why growth pressures bear on rugby and cricket
 
@@ -18,11 +20,13 @@ In Britain both games compete against football for publicity and money. Their le
 
 ### 3. How senior bonuses are defended
 
-The board’s chairman says comparable employers, including other sporting organisations, regularly use such payments to attract and retain senior staff. Managers hired from financial or commercial careers already expect this kind of remuneration. John questions the priorities revealed by rewarding a few administrators so generously while colleagues lost jobs and cricketers accepted lower pay during the pandemic. (John, p. 2).
+The board’s chairman says comparable employers, including other sporting organisations, regularly use such payments to attract and retain senior staff. John herself connects that assumption with the executives’ previous careers in finance or business. John questions the priorities revealed by a proposed bonus pool worth £2.1 million for just a few administrators when cuts had already left sixty-two employees jobless and cricketers facing lower wages. (John, p. 2).
 
 ### 4. What expansion can cost
 
 New events compete for time in an already crowded season. Exhausted cricketers cannot recover simply because selectors employ additional teammates and switch between them. Supporters may also find their familiar competitions pushed aside for a format they never requested. Judging progress chiefly by receipts encourages organisers to overlook the pleasure that makes people willing to turn up at all. (John, pp. 2–3).
+
+![What the Olympic bid promises officials](figures/olympics-and-market.svg)
 
 ## Essay
 

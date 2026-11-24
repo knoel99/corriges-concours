@@ -90,6 +90,16 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Les trois biais cognitifs et l’effet Flynn dans le texte de Robson, les quatre réponses et la discussion de Sternberg dans l’essai ont été vérifiés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé sur les lignes de Robson ; exemples de biais et mesure intergénérationnelle, bornes temporelles, contrôle des quatre réponses et de l’essai.",
+      "fournisseur": "codex"
     }
   ],
   "provenance": {
@@ -102,10 +112,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   }
 }

@@ -90,6 +90,16 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Vérification des trois critiques de Yong sur la pratique scientifique, l’histoire et la reconnaissance des personnes ; discussion de la proposition de Burke dans l’essai."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux versions sur Yong ; cas LIGO, attribution historique de la découverte et rôle du site Nobel, vérification des longueurs et du raisonnement de l’essai.",
+      "fournisseur": "codex"
     }
   ],
   "provenance": {
@@ -102,10 +112,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   }
 }

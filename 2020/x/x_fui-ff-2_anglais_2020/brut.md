@@ -10,6 +10,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. A harmful story about discovery
@@ -18,15 +20,17 @@ Yong challenges the romantic image of a discovery springing from one extraordina
 
 ### 2. Reasons to recognise a larger team
 
-The limit hardly follows literally from Nobel’s instructions: his will described one recipient and envisaged very recent work, whereas current practice permits several recipients and much older discoveries. The peace award already demonstrates that an organisation can receive the distinction. Recognising a whole team would therefore extend an existing practice and would better fit achievements requiring hundreds of participants. (Yong, lines 7–11 and 41–47).
+The limit hardly follows literally from Nobel’s instructions: his will described one recipient and envisaged very recent work, whereas current practice permits several recipients and much older discoveries. The peace award already demonstrates that an organisation can receive the distinction. Recognising a whole team would therefore extend an existing practice and would better fit the LIGO result: hundreds contributed, yet only three leaders received a share. (Yong, lines 7–11 and 41–47).
 
 ### 3. Three criticisms of the awards
 
-Yong argues, first, that choosing a few faces gives outsiders a false picture of research as an individual pursuit. Second, the resulting historical account can assign a finding to a supervisor whose junior colleague actually made it. Third, indispensable participants disappear from public recognition altogether. Delayed awards can exclude researchers who have died, and recurring omissions particularly affect women. (Yong, lines 12–15, 23–33 and 56–73).
+Yong argues, first, that choosing a few faces gives outsiders a false picture of research as an individual pursuit. Second, the resulting history may credit the wrong person: Schatz found streptomycin while working under Waksman, yet the award went to his supervisor. Third, indispensable participants disappear from public recognition altogether. Delayed awards can exclude researchers who have died, and recurring omissions particularly affect women. (Yong, lines 12–15, 23–33 and 56–73).
 
 ### 4. Why a celebration can help science
 
-Here Yong credits the awards with making people eager to hear scientific news. Audiences normally associate that feeling with film or television ceremonies; dismissing it when it draws them towards research would be mean-spirited. Public interest can also lead visitors to historical material available through the organisers. Recognising these benefits allows Yong to criticise how winners are selected without belittling the celebration. (Yong, lines 16–22).
+Here Yong credits the awards with making people eager to hear scientific news. Audiences normally associate that feeling with film or television ceremonies; dismissing it when it draws them towards research would be mean-spirited. Public interest can also lead visitors to accounts on the organisers’ website that recover details normally absent from research articles. Recognising these benefits allows Yong to criticise how winners are selected without belittling the celebration. (Yong, lines 16–22).
+
+![What the names on an award can hide](figures/credit.svg)
 
 ## Essay
 

@@ -8,6 +8,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20S1%20SUJET%20ECRIT%20D'ANGLAIS_1.pdf)
@@ -28,7 +30,7 @@ The emergency showed that some environmentally damaging activities can diminish 
 > [!INDICATION]
 > Associer les mesures qui touchent les déplacements et l’emploi aux exigences de justice sociale explicitées dans l’article.
 
-The writers urge governments to direct recovery spending towards activities that lower emissions while improving livelihoods. Employing people to restore landscapes, protecting public transport and providing safer journeys without cars are possible examples. Assistance should reach disadvantaged workers and countries that contributed little to historic emissions. Otherwise, public money could lock in damaging infrastructure or reward companies already profiting from fossil energy. (Dilworth et al., lines 47–75 and 79–90).
+The writers urge governments to direct recovery spending towards activities that lower emissions while improving livelihoods. Employing people to restore landscapes, protecting public transport and providing safer journeys without cars are possible examples. The authors call for support for vulnerable workers and international assistance reflecting richer economies’ historical responsibility for emissions. Otherwise, public money could lock in damaging infrastructure or reward companies already profiting from fossil energy. (Dilworth et al., lines 47–75 and 79–90).
 
 ![Who bears the costs of a recovery plan?](figures/policy-recovery.svg)
 
@@ -44,7 +46,9 @@ Both groups give immediate economic activity or personal convenience priority ov
 > [!INDICATION]
 > Donner des observations datées et préciser ce qu’elles ne permettent pas de promettre.
 
-After some traffic and production stopped, pollution diminished and animals appeared in urban spaces where they were rarely noticed previously. The rapid response suggested that easing human pressure can allow ecological activity to recover. The authors do not treat every effect as permanent: resuming previous travel habits could soon increase pollution again, as observations from Chinese cities indicated. (Dilworth et al., lines 9–16 and 81–90).
+Quieter streets let wildlife venture into cities, and pandas mated while zoos were closed. Air quality improved too. At publication, an eight per cent annual decline in emissions was still a forecast. The rapid response suggested that easing human pressure can allow ecological activity to recover. The authors do not treat every effect as permanent: resuming previous travel habits could soon increase pollution again, as observations from Chinese cities indicated. (Dilworth et al., lines 9–16 and 81–90).
+
+Pour la quatrième réponse, repérer le changement de temps dans le passage. Les auteurs ont constaté une amélioration de l’air ; le chiffre de 8 % désigne leur source internationale et sa prévision pour l’année en cours.
 
 ## Essay
 
@@ -67,4 +71,4 @@ I find the claim persuasive as an account of a possibility. A crisis can loosen 
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 60, 62, 63 et 58 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 60, 67, 63 et 70 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

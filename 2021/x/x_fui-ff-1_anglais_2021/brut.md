@@ -8,6 +8,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. A lasting climate policy without upheaval
@@ -16,7 +18,7 @@ The emergency showed that some environmentally damaging activities can diminish 
 
 ### 2. Priorities for public policy
 
-The writers urge governments to direct recovery spending towards activities that lower emissions while improving livelihoods. Employing people to restore landscapes, protecting public transport and providing safer journeys without cars are possible examples. Assistance should reach disadvantaged workers and countries that contributed little to historic emissions. Otherwise, public money could lock in damaging infrastructure or reward companies already profiting from fossil energy. (Dilworth et al., lines 47–75 and 79–90).
+The writers urge governments to direct recovery spending towards activities that lower emissions while improving livelihoods. Employing people to restore landscapes, protecting public transport and providing safer journeys without cars are possible examples. The authors call for support for vulnerable workers and international assistance reflecting richer economies’ historical responsibility for emissions. Otherwise, public money could lock in damaging infrastructure or reward companies already profiting from fossil energy. (Dilworth et al., lines 47–75 and 79–90).
 
 ### 3. The comparison with climate scepticism
 
@@ -24,7 +26,9 @@ Both groups give immediate economic activity or personal convenience priority ov
 
 ### 4. Evidence of environmental resilience
 
-After some traffic and production stopped, pollution diminished and animals appeared in urban spaces where they were rarely noticed previously. The rapid response suggested that easing human pressure can allow ecological activity to recover. The authors do not treat every effect as permanent: resuming previous travel habits could soon increase pollution again, as observations from Chinese cities indicated. (Dilworth et al., lines 9–16 and 81–90).
+Quieter streets let wildlife venture into cities, and pandas mated while zoos were closed. Air quality improved too. At publication, an eight per cent annual decline in emissions was still a forecast. The rapid response suggested that easing human pressure can allow ecological activity to recover. The authors do not treat every effect as permanent: resuming previous travel habits could soon increase pollution again, as observations from Chinese cities indicated. (Dilworth et al., lines 9–16 and 81–90).
+
+![Distinguishing an interruption from a transition](figures/two-times.svg)
 
 ## Essay
 
