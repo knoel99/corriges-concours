@@ -428,6 +428,7 @@
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
+| 2023 | ENS de Lyon | Second concours | Chimie | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Chimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
