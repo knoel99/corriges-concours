@@ -76,6 +76,8 @@
 | 2025 | BCE | ECG | HGGMC (ESSEC) | [md](2025/bce/bce_ecg_hggmc-essec_2025/brut.md) | [md](2025/bce/bce_ecg_hggmc-essec_2025/guide.md) |
 | 2026 | BCE | ECG | HGGMC (ESSEC) | [md](2026/bce/bce_ecg_hggmc-essec_2026/brut.md) | [md](2026/bce/bce_ecg_hggmc-essec_2026/guide.md) |
 | 2025 | BCE | ECG | Maths 2 appliquées (ESSEC) | [md](2025/bce/bce_ecg_maths-2-appliquees-essec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-2-appliquees-essec_2025/guide.md) |
+| 2026 | BCE | ECG | Italien LVA (ELVi) | [md](2026/bce/bce_ecg_italien-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_italien-lva-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Italien LVB (ELVi) | [md](2026/bce/bce_ecg_italien-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_italien-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Maths 2 appliquées (ESSEC) | [md](2026/bce/bce_ecg_maths-2-appliquees-essec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-2-appliquees-essec_2026/guide.md) |
 | 2025 | BCE | ECG | Maths 2 approfondies (ESCP-HEC) | [md](2025/bce/bce_ecg_maths-2-approfondies-escp-hec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-2-approfondies-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECG | Maths 2 approfondies (ESCP-HEC) | [md](2026/bce/bce_ecg_maths-2-approfondies-escp-hec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-2-approfondies-escp-hec_2026/guide.md) |
