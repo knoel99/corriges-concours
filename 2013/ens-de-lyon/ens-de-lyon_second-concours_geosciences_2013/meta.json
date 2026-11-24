@@ -1,0 +1,73 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2013",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2013
+  },
+  "questions": 12,
+  "redaction": "Douze questions utilisent les seize figures des dix pages officielles. Quatre planches de synthèse reportent les annotations, le segment de mesure de largeur et le profil Z–W avec ses distances.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/06/13_2c_suj_g%C3%A9oscioences.pdf",
+    "nature": "Sujet du second concours universitaire de l’ENS de Lyon.",
+    "sujet_sha256": "a9f3a97680e495c460f4a00722c11f38c3a93c01598db7de5410691d6d4c3f68"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "II.2",
+      "fichier": "figures/corps-parents.svg",
+      "legende": "Lecture des deux branches de la figure 6. Les impacts qui fragmentent un corps différencié échantillonnent des matériaux de composition différente."
+    },
+    {
+      "numero": 2,
+      "question": "III.2",
+      "fichier": "figures/lame-mince.svg",
+      "legende": "Croquis de repérage dans le même champ. Les macles sont visibles en lumière analysée, les micas bruns en lumière non analysée. Le grand cristal diagonal change fortement d’aspect."
+    },
+    {
+      "numero": 3,
+      "question": "IV.3",
+      "fichier": "figures/largeur-et-coupe.svg",
+      "legende": "Schéma de la figure 15. Le trait transversal de 103 unités de dessin se compare à la barre de 45 unités. Le profil de droite utilise les 10 m annoncés par l’énoncé."
+    },
+    {
+      "numero": 4,
+      "question": "V.1",
+      "fichier": "figures/transect-zw.svg",
+      "legende": "Lecture du trait Z–W de la figure 16 depuis Z. Les distances proviennent de la barre de 50 km. La hauteur est qualitative et exagérée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Douze questions utilisent les seize figures des dix pages officielles. Quatre planches de synthèse reportent les annotations, le segment de mesure de largeur et le profil Z–W avec ses distances.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "II.1",
+      "II.2",
+      "III.1",
+      "III.2",
+      "III.3",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "V.1",
+      "V.2"
+    ]
+  }
+}
