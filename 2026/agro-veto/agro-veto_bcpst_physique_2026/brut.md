@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 3 heures, calculatrice autorisée. Données utilisées :
 
 - lave : $T_i = 1450$ °C, $T_s = 700$ °C, $\eta = 2{,}5$ Pa·s ;
@@ -46,7 +52,7 @@ La seule longueur constructible avec $\gamma$, $\rho_a$ et $u$ est donc, à un f
 
 $$\boxed{r_0 = \frac{\gamma}{\rho_a u^2}}$$
 
-Interprétation : $r_0$ égale la pression capillaire $\gamma/r_0$ à la pression dynamique du vent $\rho_a u^2$.
+À ce rayon, on égale la pression capillaire $\gamma/r_0$ à la pression dynamique du vent $\rho_a u^2$.
 
 ### Question 2
 
@@ -311,7 +317,7 @@ $\tau_{diff}/\tau \approx 0{,}01 \ll 1$ : la température s'homogénéise dans l
 
 ### Question 21
 
-- **Rayonnement négligé.** À 1450 °C la lave est incandescente : le rayonnement thermique est un mode d'échange important. Ordre de grandeur (loi de Stefan, émissivité $\approx 0{,}9$) : $\varepsilon\sigma T_i^4 \approx 4\times10^5$ W·m⁻², supérieur au flux conducto-convectif $h(T_i - T_a) \approx 1{,}4\times10^5$ W·m⁻². En le prenant en compte, $t_{tot}$ serait environ deux fois plus court (de l'ordre de 5 s).
+- **Rayonnement négligé.** Avec une émissivité estimée à $0{,}9$, le flux sortant supplémentaire serait $\varepsilon\sigma(T^4-T_a^4)$, avec les températures en kelvins. Il vaut près de $4{,}5\times10^5\,\mathrm{W\,m^{-2}}$ au départ et $4{,}5\times10^4\,\mathrm{W\,m^{-2}}$ au palier. Si l’on conserve les autres hypothèses, on peut estimer la durée avec $F(T)=h(T-T_a)+\varepsilon\sigma(T^4-T_a^4)$. L’intégrale $(\rho Rc/2)\int_{T_s}^{T_i}\mathrm dT/F(T)$ donne environ $3{,}0\,\mathrm s$, puis $(\rho R\ell_{fus}/2)/F(T_s)$ ajoute $2{,}3\,\mathrm s$. L’ensemble dure environ $5{,}4\,\mathrm s$ dans cette variante.
 - **Forme idéalisée.** Le solide n'est pas un cylindre de section uniforme : la figure 1 montre une larme renflée à la base d'un filament effilé. Les parties fines ($\tau \propto R$) se figent bien plus vite que la larme.
 - **Géométrie fixe.** Le cylindre continue de s'étirer et de s'affiner pendant le refroidissement. Les vrais cheveux, de largeur une fraction de millimètre, se solidifient donc plus vite que prévu.
 - **$h$ constant.** Le coefficient conducto-convectif dépend de la vitesse relative de l'air et du rayon ; il varie pendant le vol.
@@ -366,7 +372,7 @@ $D$ est maximale pour $\sin 2\alpha = 1$, soit $\boxed{\alpha = \pi/4}$. Alors :
 
 $$\boxed{D_{max} = \frac{v_0^2}{g} = 10\ \mathrm{m}}$$
 
-Une telle portée ne présente **aucun risque sanitaire** : les retombées restent à une dizaine de mètres du cratère, dans une zone déjà dangereuse et sans cultures, alors que les cheveux sont observés à plusieurs kilomètres. Le modèle sans vent ne rend pas compte du transport.
+À cette échelle de dix mètres, le modèle sans vent ne peut expliquer la contamination des cultures à plusieurs kilomètres du cratère. La portée calculée ne mesure pas le risque pour une personne exposée à proximité.
 
 ### Question 25
 
@@ -378,7 +384,7 @@ Pour $\alpha = \pi/4$ :
 
 $$\tau_{vol} = \frac{2\times10\times\frac{\sqrt2}{2}}{10}\ \mathrm{s} = \sqrt2\ \mathrm{s} \approx 1{,}4\ \mathrm{s}$$
 
-Commentaire : ce vol est très court. Il est bien plus court que la durée de solidification $t_{tot} \approx 11$ s : sans vent, la particule retomberait encore liquide, en contradiction avec l'hypothèse « cylindre déjà solidifié ». Un vol si bref ne peut pas transporter les cheveux à des kilomètres.
+Le vol jusqu’au retour à l’altitude initiale dure environ $1{,}4\,\mathrm s$, bien moins que le temps de solidification d’une goutte liquide, proche de $11\,\mathrm s$. La partie III fait partir le chronomètre avec un cheveu déjà solide. Une goutte lancée à l’état liquide, dans les conditions thermiques de la partie II, resterait en revanche liquide à cet instant. Dans les deux cas, le calcul sans vent ne rend pas compte des dépôts éloignés.
 
 Il faut donc tenir compte du vent et des frottements de l'air. Leur temps caractéristique de freinage est $1/(kv) \sim 0{,}1$ s avec $k \simeq 1$ m⁻¹ et $v \sim 10$ m·s⁻¹, bien inférieur à $\tau_{vol}$ : les négliger n'est pas justifié.
 
@@ -498,6 +504,6 @@ $$\boxed{u > u_{min} = \frac{1}{p}\sqrt{\frac{g}{k}}}$$
 
 $$u_{min} \approx \frac{3{,}16}{0{,}22}\ \mathrm{m\cdot s^{-1}} \approx 14\ \mathrm{m\cdot s^{-1}} \approx 50\ \mathrm{km\cdot h^{-1}}$$
 
-![Figure 2 — Trajectoire asymptotique du cheveu et flanc du volcan (pente moyenne p) : si u > u_min, l'écart au sol croît et le cheveu dépasse la côte ; si u < u_min, il retombe sur les pentes](figures/q33-trajectoire-flanc.svg)
+![Figure 2 — Comparaison avec un flanc rectiligne de pente moyenne p. Au-dessus du vent seuil, l’écart entre la trajectoire limite et ce plan augmente.](figures/q33-trajectoire-flanc.svg)
 
-Pour $u = 20$ m·s⁻¹ (pente $0{,}16 < 0{,}22$), le cheveu survole le flanc et atteint la côte, à plus de 12 km du cratère : il peut contaminer les zones agricoles. Pour un vent plus faible que 14 m·s⁻¹ environ, il retombe sur les pentes du volcan. Le profil n'étant pas de pente uniforme (replat sommital jusqu'à 1,4 km, tronçon plus raide entre 6 et 8 km, pente douce près de la côte), ce seuil n'est qu'un ordre de grandeur.
+Pour $u=20\,\mathrm{m\,s^{-1}}$, la trajectoire limite descend de $0{,}16\,\mathrm{km}$ par kilomètre horizontal, contre $0{,}22\,\mathrm{km}$ pour le plan moyen. Ce modèle permet donc un transport jusqu’à la côte. Le profil réel de la figure 8 présente un replat près du sommet. Pour établir le survol effectif, il faudrait comparer la hauteur du cheveu à celle du relief sur tout le parcours. Le seuil de $14\,\mathrm{m\,s^{-1}}$ est celui du flanc moyen.
