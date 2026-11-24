@@ -1,4 +1,4 @@
-# X-ENS MP — Mathématiques A 2026 · Corrigé brut
+# X-ENS MP-MPI — Mathématiques A 2026 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
@@ -9,6 +9,8 @@
 - $\mathbb D=\mathbb D(0,1)$ est le disque **fermé**, $\partial\mathbb D$ le cercle unité.
 
 On note $\mathbb S=\{x\in\mathbb C^n:\|x\|=1\}$ la sphère unité et $(e_1,\dots,e_n)$ la base canonique.
+
+La matrice $A^*$ est la transposée conjuguée de $A$, et $\sigma(A)$ désigne le spectre de $A$. Pour $P$ inversible, son conditionnement est $\mathrm{cond}(P)=\vert\!\vert\!\vert P\vert\!\vert\!\vert\,\vert\!\vert\!\vert P^{-1}\vert\!\vert\!\vert$.
 
 ## Préliminaires
 
@@ -313,7 +315,7 @@ $$\boxed{A^*D_{A^*}=D_AA^*\ \text{ et }\ AD_A=D_{A^*}A}$$
 
 ### Question 15
 
-$D_A$ et $D_{A^*}$ étant hermitiennes,
+Pour $U=\begin{pmatrix}A&D_{A^*}\\-D_A&A^*\end{pmatrix}$, puisque $D_A$ et $D_{A^*}$ sont hermitiennes,
 
 $$U^*=\begin{pmatrix}A^*&-D_A\\ D_{A^*}&A\end{pmatrix}.$$
 
@@ -363,7 +365,7 @@ En particulier $W^{(j)}_1=A^jx$ pour $0\le j\le k+1$ et tout $x$. Autrement dit,
 
 Ainsi $\big(p(U_k)E_1x\big)_1=p(A)x$ pour tout $x$ : **le premier bloc diagonal de $p(U_k)$ est $p(A)$**.
 
-![Figure 2 — Blocs de $U_k^jE_1x$ pour $k=3$ : le terme $-D_Ax$ remonte d'un bloc par étape et n'atteint le bloc 1 qu'à l'étape $k+2$ (∗ : bloc quelconque)](figures/q16-blocs-dilatation.svg)
+![Figure 3 — Blocs de $U_k^jE_1x$ pour $k=3$ : le terme $-D_Ax$ remonte d'un bloc par étape et peut contribuer au bloc 1 pour la première fois à l'étape $k+2$ (∗ : bloc quelconque)](figures/q16-blocs-dilatation.svg)
 
 *Conclusion.* Soit $p\in\mathbb C[X]$ et $k=\max(0,\deg p-1)$, avec $k=0$ si $p=0$, de sorte que $\deg p\le k+1$.
 
@@ -387,6 +389,8 @@ $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le\|p\|_{\mathbb D(0,\vert
 
 ## Partie C — Hausdorffien et rayon numérique
 
+Le Hausdorffien est l’ensemble $\mathcal H(A)=\{\langle Ax|x\rangle : x\in\mathbb S\}$. Le rayon numérique est $r(A)=\max\{|z|:z\in\mathcal H(A)\}$. L’existence de ce maximum sera justifiée à la question 22.
+
 ### Question 18
 
 Soit $\lambda\in\sigma(A)$ et $x$ un vecteur propre associé, normalisé : $\|x\|=1$ et $Ax=\lambda x$. Par linéarité à gauche, $\langle Ax|x\rangle=\lambda\langle x|x\rangle=\lambda$. Donc $\lambda\in\mathcal H(A)$ :
@@ -408,6 +412,8 @@ Avec $\alpha_i=|x_i|^2\ge0$, on a $\sum_i\alpha_i=\|x\|^2=1$, donc $\langle Dx|x
 $\supset$ : si $\alpha_i\ge0$ et $\sum_i\alpha_i=1$, le vecteur $x=(\sqrt{\alpha_1},\dots,\sqrt{\alpha_n})$ est unitaire et $\langle Dx|x\rangle=\sum_i\alpha_i\lambda_i$.
 
 $$\boxed{\begin{aligned}\mathcal H(\mathrm{diag}(\lambda_1,\dots,\lambda_n))&=\Big\{\sum_{i=1}^n\alpha_i\lambda_i:\ \alpha_i\in\mathbb R_+,\ \sum_{i=1}^n\alpha_i=1\Big\}\\ &=\mathrm{conv}\{\lambda_1,\dots,\lambda_n\}\end{aligned}}$$
+
+![Figure 4 — Le Hausdorffien d’une matrice diagonale à trois valeurs propres forme leur triangle. Le point intérieur correspond aux poids 0,20, 0,35 et 0,45.](figures/q19-enveloppe.svg)
 
 ### Question 20
 
@@ -450,6 +456,8 @@ Le vecteur $y=(\cos t,\ \sin t\,e^{i\theta})$ est unitaire et $\langle Ay|y\rang
 
 $$\boxed{\mathcal H\begin{pmatrix}0&1\\0&0\end{pmatrix}=\mathbb D\big(0,\tfrac12\big)}$$
 
+![Figure 5 — À module ab fixé, la phase parcourt un cercle. Faire varier ab de 0 à 1/2 remplit le disque du Hausdorffien.](figures/q21-disque-nilpotente.svg)
+
 ### Question 22
 
 L'application $f:x\mapsto\langle Ax|x\rangle=\sum_i(Ax)_i\overline{x_i}$ est continue sur $\mathbb C^n$ : elle est polynomiale en les parties réelles et imaginaires des coordonnées de $x$.
@@ -474,7 +482,9 @@ Si $A=0$, il n'y a rien à montrer. Sinon, soit $x\in\mathbb S$ tel que $\|Ax\|=
 
 $$\langle Ax|y\rangle=\frac{\|Ax\|^2}{\|Ax\|}=\vert\!\vert\!\vert A\vert\!\vert\!\vert .$$
 
-L'identité de polarisation, l'inégalité triangulaire et la remarque donnent
+Pour $Q(u)=\langle Au|u\rangle$, la convention de linéarité à gauche donne la polarisation admise dans le sujet,
+$$4\langle Ax|y\rangle=Q(x+y)-Q(x-y)+iQ(x+iy)-iQ(x-iy).$$
+L'inégalité triangulaire et la majoration de $|Q(u)|$ donnent
 
 $$\begin{aligned}4\vert\!\vert\!\vert A\vert\!\vert\!\vert &=|4\langle Ax|y\rangle|\\ &\le r(A)\big(\|x+y\|^2+\|x-y\|^2+\|x+iy\|^2+\|x-iy\|^2\big).\end{aligned}$$
 
@@ -514,7 +524,7 @@ $$r(AB)=1>\tfrac14=r(A)\,r(B).$$
 
 ### Question 26-a
 
-*Première identité.* Soit $t\in\mathbb C^*$. On évalue l'identité $X^k-1=\prod_{\ell=1}^k(X-\omega_k^\ell)$ en $1/t$ :
+Pour $k\geq1$, on note $\omega_k=e^{2i\pi/k}$. *Première identité.* Soit $t\in\mathbb C^*$. On évalue l'identité $X^k-1=\prod_{\ell=1}^k(X-\omega_k^\ell)$ en $1/t$ :
 
 $$\begin{aligned}\prod_{\ell=1}^k(1-\omega_k^\ell t)&=t^k\prod_{\ell=1}^k\Big(\frac1t-\omega_k^\ell\Big)\\ &=t^k\Big(\frac1{t^k}-1\Big)\\ &=1-t^k.\end{aligned}$$
 
@@ -542,7 +552,7 @@ Pour $k=1$, le produit vide vaut $1$ et l'identité est triviale.
 
 ### Question 26-b
 
-Avec les notations précédentes, $x_j=Q_j(A)x$. Comme
+Fixons $x\in\mathbb S$. Avec les notations précédentes, $x_j=Q_j(A)x$. Comme
 
 $$\begin{aligned}(1-\omega_k^jX)\,Q_j&=\prod_{\ell=1}^k(1-\omega_k^\ell X)\\ &=1-X^k,\end{aligned}$$
 
@@ -599,6 +609,8 @@ $$\boxed{r(A)\le1\ \Longrightarrow\ r(A^k)\le1\qquad(k\ge1)}$$
 $$\boxed{r(A^k)\le r(A)^k\quad\text{pour tout }k\in\mathbb N\text{ et tout }A\in\mathcal M_n(\mathbb C)}$$
 
 ## Partie D — Conjecture de Crouzeix
+
+On examine pour différentes matrices $A$ et différents polynômes $p$ l’inégalité conjecturée (1), $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert\leq 2\|p\|_{\mathcal H(A)}$.
 
 ### Question 27
 
@@ -675,3 +687,5 @@ Il est à distance $\delta+\varepsilon>\delta$ de $c$, donc hors de $S$ : $x\in\
 La question 10 donne alors $\|p\|_{\mathbb D(c,\delta)}=\|p\|_{\mathcal C}$, d'où
 
 $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\,\|p\|_{\mathcal C}\quad\text{pour tout disque de bord }\mathcal C\text{ contenant }\mathcal H(A)}$$
+
+![Figure 7 — Pour une matrice diagonale à trois valeurs propres, la translation par −c recentre le disque contenant le Hausdorffien. Le cercle en pointillé a pour rayon r(A − cI).](figures/q30b-translation.svg)

@@ -7,6 +7,30 @@
     "annee": 2025
   },
   "questions": 0,
-  "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
-  "figures": []
+  "redaction": "Proposition non officielle produite par IA (Claude Opus 4.8), révisée par OpenAI Codex (GPT-6).",
+  "figures": [
+    {
+      "fichier": "figures/lettre-et-rupture.svg",
+      "question": "Partie I",
+      "legende": "Dans la cinquième lettre, l’annonce de la rupture devient une nouvelle adresse"
+    },
+    {
+      "fichier": "figures/deux-voix-aux-comices.svg",
+      "question": "Partie III",
+      "legende": "Le lecteur entend ensemble deux discours que les personnages tiennent séparément"
+    }
+  ],
+  "gabarit": "dissertation",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_francais.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bel_rapport_ecrit_composition_francaise.pdf",
+    "lettres_portugaises": "https://fr.wikisource.org/wiki/Lettres_portugaises_traduites_en_fran%C3%A7ois/Texte_entier",
+    "flaubert": "https://fr.wikisource.org/wiki/Madame_Bovary/Deuxi%C3%A8me_partie/08"
+  },
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-relecture indépendante du libellé de Butor, du rapport, de l’analyse de la cinquième lettre de Mariane et du montage des voix aux comices dans Madame Bovary."
+  }
 }

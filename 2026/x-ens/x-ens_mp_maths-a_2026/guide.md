@@ -1,10 +1,10 @@
-# X-ENS MP — Mathématiques A 2026 · Corrigé guidé
+# X-ENS MP-MPI — Mathématiques A 2026 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
 ## Présentation du sujet
 
-**Thème.** Le sujet compare la norme subordonnée $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert $ d'un polynôme de matrice au maximum de $|p|$ sur un compact du plan lié à $A$ : le spectre, un disque, puis le *Hausdorffien* (ou image numérique) $\mathcal H(A)$. Il culmine sur la **conjecture de Crouzeix** $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\|p\|_{\mathcal H(A)}$, problème ouvert dont on démontre ici l'optimalité de la constante et plusieurs cas particuliers, ainsi qu'une version affaiblie (disque contenant $\mathcal H(A)$) admettant le théorème d'Okubo-Ando.
+**Thème.** Le sujet compare la norme subordonnée $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert $ d'un polynôme de matrice au maximum de $|p|$ sur un compact du plan lié à $A$ : le spectre, un disque, puis le *Hausdorffien* (ou image numérique) $\mathcal H(A)$. Il culmine sur la **conjecture de Crouzeix** $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\|p\|_{\mathcal H(A)}$, dont on démontre ici l'optimalité de la constante et plusieurs cas particuliers, ainsi qu'une version affaiblie (disque contenant $\mathcal H(A)$) admettant le théorème d'Okubo-Ando.
 
 **Format.** 4 heures, calculatrice interdite, 30 questions numérotées, soit 34 questions en comptant les sous-questions 26-a à 26-d et 30-a, 30-b. Le préambule donne les outils autorisés : produit scalaire hermitien, Cauchy-Schwarz, caractérisation des matrices unitaires, et un **théorème de réduction** (matrices unitaires et hermitiennes diagonalisables en base orthonormale) que l'énoncé demande expressément d'utiliser.
 
@@ -26,14 +26,7 @@ Les parties ne sont pas indépendantes : B utilise Q5 et Q11 ; C est presque aut
 
 **À ne pas laisser passer.** Q1–Q4, Q6, Q11, Q14, Q15, Q18–Q22, Q24, Q25, Q27, Q28 : courtes et sûres, à rédiger avec soin.
 
-**Ce que le rapport 2026 juge discriminant.** Le jury note que le sujet était « progressif, mais long » et qu'il n'était pas nécessaire de tout traiter pour obtenir une très bonne note. Ont fait la différence :
-
-- Q1, qui a donné lieu à « un nombre important de réponses incomplètes » (bornes atteintes, passage aux vecteurs non nuls) ;
-- Q16, résolue complètement par « un petit nombre de candidats seulement », et Q17, par « une petite partie des candidats » ;
-- la minoration de Q23 par polarisation, qui « n'a presque jamais été abordée » ;
-- Q26-b et Q26-c, puis Q29 et Q30, très peu traitées.
-
-Le jury valorise les copies qui traitent avec soin les questions de difficulté intermédiaire et regrette les réponses très partielles, « relevant davantage du grappillage que d'un raisonnement complet », en fin de sujet.
+**Lecture du rapport du jury.** La normalisation de Q1 et la récurrence par blocs de Q16 ont laissé de nombreuses réponses incomplètes. Les dernières questions sur le rayon numérique et la conjecture ont été peu traitées. Le jury valorise la justification complète des questions intermédiaires abordées.
 
 **Gestion du temps.** Environ 30 minutes pour les préliminaires, 45 minutes pour A, 60 minutes pour B, 70 minutes pour C, 35 minutes pour D.
 
@@ -44,6 +37,8 @@ Le jury valorise les copies qui traitent avec soin les questions de difficulté 
 - $\mathbb D=\mathbb D(0,1)$ est le disque **fermé**, $\partial\mathbb D$ le cercle unité.
 
 On note $\mathbb S=\{x\in\mathbb C^n:\|x\|=1\}$ la sphère unité et $(e_1,\dots,e_n)$ la base canonique.
+
+La matrice $A^*$ est la transposée conjuguée de $A$, et $\sigma(A)$ désigne le spectre de $A$. Pour $P$ inversible, son conditionnement est $\mathrm{cond}(P)=\vert\!\vert\!\vert P\vert\!\vert\!\vert\,\vert\!\vert\!\vert P^{-1}\vert\!\vert\!\vert$.
 
 ## Préliminaires
 
@@ -86,7 +81,7 @@ Conséquence utilisée constamment : $\|Ax\|\le\vert\!\vert\!\vert A\vert\!\vert
 > Ne pas oublier que la sphère est non vide ($n\ge1$) et dire explicitement que le sup est un **max**, puisque l'énoncé le demande.
 
 > [!JURY]
-> Rapport 2026 : « Il fallait utiliser le théorème des bornes atteintes sur la sphère unité, puis expliquer correctement le passage à la formule avec le maximum pris sur les vecteurs non nuls. » Le jury relève aussi des confusions entre le disque unité et la sphère unité, et entre le maximum atteint sur la sphère et celui demandé sur les vecteurs non nuls.
+> Le jury distingue les deux passages de la question. La compacité de la sphère donne un maximum. La normalisation montre ensuite que le même maximum est atteint parmi les vecteurs non nuls.
 
 ### Question 2
 
@@ -124,7 +119,7 @@ En passant à la borne supérieure sur $\|x\|=1$ :
 $$\boxed{\vert\!\vert\!\vert AB\vert\!\vert\!\vert \le\vert\!\vert\!\vert A\vert\!\vert\!\vert \cdot\vert\!\vert\!\vert B\vert\!\vert\!\vert }$$
 
 > [!PIEGE]
-> Écrire $\frac{\|ABx\|}{\|x\|}=\frac{\|ABx\|}{\|Bx\|}\cdot\frac{\|Bx\|}{\|x\|}$ suppose $Bx\neq0$. Le rapport 2026 signale cette division par une quantité éventuellement nulle : « Une distinction explicite du cas $Bx = 0$ permettait d'éviter cette difficulté. » La majoration directe ci-dessus évite toute division.
+> Écrire $\frac{\|ABx\|}{\|x\|}=\frac{\|ABx\|}{\|Bx\|}\cdot\frac{\|Bx\|}{\|x\|}$ suppose $Bx\neq0$. Le rapport relève cette division par une quantité éventuellement nulle. On peut aussi isoler le cas $Bx=0$. La majoration directe ci-dessus évite toute division.
 
 ### Question 4
 
@@ -187,7 +182,7 @@ $$\boxed{\|p\|_{\sigma(A)}\le\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le\mat
 > Une norme subordonnée majore le module de toute valeur propre : si $Mv=\mu v$ avec $\|v\|=1$, alors $\vert\!\vert\!\vert M\vert\!\vert\!\vert \ge\|Mv\|=|\mu|$.
 
 > [!JURY]
-> Rapport 2026 : « La première inégalité demandait de considérer un vecteur propre unitaire et ne devait pas être omise. » Le jury attend aussi la diagonalisation de $A$, la sous-multiplicativité et la norme d'une matrice diagonale. L'égalité $p(PDP^{-1})=P\,p(D)\,P^{-1}$ se justifie par $(PDP^{-1})^k=PD^kP^{-1}$ et la linéarité.
+> Le rapport attend une justification pour les deux côtés de l’encadrement. Tester un vecteur propre unitaire donne le premier. Pour le second, expliciter la conjugaison du polynôme de matrice avant d’utiliser la sous-multiplicativité.
 
 ## Partie A — Principe du maximum pour les polynômes
 
@@ -222,7 +217,7 @@ Les colonnes de $U$ forment une base orthonormale, donc **$U$ est unitaire** (cr
 > Le produit scalaire est semi-linéaire à droite : $\langle C_1|C_2\rangle=z\bar s+s\,\overline{(-\bar z)}$. Il ne s'annule que parce que $\bar s=s$.
 
 > [!JURY]
-> Le rapport 2026 écrit que ces calculs « ont souvent été trop succincts ou mal expliqués ». Si l'on vérifie $U^*U=I$ directement, « il fallait contrôler soigneusement les coefficients non triviaux de la matrice ». Ici, le seul produit scalaire non trivial est $\langle C_1|C_2\rangle$.
+> Le jury demande d’expliciter le calcul non trivial dans la vérification de l’unitarité. Avec la preuve par colonnes, c’est le produit scalaire de $C_1$ et $C_2$.
 
 ### Question 7
 
@@ -270,7 +265,7 @@ Le calcul vaut pour tout polynôme de degré $\le n-1$.
 > $e_1^*v$ est un scalaire (la première coordonnée de $v$), alors que $e_1e_1^*$ est une matrice, le projecteur sur $\mathbb Ce_1$. Le rapport 2026 relève des égalités incorrectes faisant intervenir $e_1e_1^*$.
 
 > [!JURY]
-> Rapport 2026 : « L'hypothèse de récurrence ne pouvait pas se limiter à l'égalité portant sur le seul coefficient (1, 1) de $U^k$. Il fallait tenir compte de la structure de la première colonne pour justifier correctement le calcul. » D'où la récurrence ci-dessus, qui porte sur toute la colonne $U^ke_1$.
+> Le rapport insiste sur le choix de l’hypothèse de récurrence. La prochaine première coordonnée dépend d’autres composantes. Suivre toute la colonne fournit une hypothèse que l’on peut transmettre.
 
 ### Question 8
 
@@ -297,7 +292,7 @@ La question 5 donne alors $\vert\!\vert\!\vert p(U)\vert\!\vert\!\vert \le\|p\|_
 $$\boxed{|p(z)|\le\vert\!\vert\!\vert p(U)\vert\!\vert\!\vert \le\|p\|_{\partial\mathbb D}}$$
 
 > [!JURY]
-> Rapport 2026 : l'inégalité de droite a été généralement bien traitée, mais pour celle de gauche « l'utilisation de l'inégalité de Cauchy-Schwarz devait être clairement détaillée ». On nomme les deux vecteurs, $p(U)e_1$ et $e_1$, et on utilise $\|e_1\|=1$.
+> Le jury rappelle la justification de la borne inférieure. Dans Cauchy–Schwarz, les deux vecteurs à comparer sont $p(U)e_1$ et $e_1$.
 
 ### Question 9
 
@@ -340,7 +335,7 @@ Le résultat serait faux pour $p$ constant : c'est l'hypothèse $\deg p=n-1\ge1$
 > Invoquer le cas d'égalité de Cauchy-Schwarz pour le produit scalaire hermitien est possible, mais le préambule ne le donne pas : il faudrait le démontrer. Le calcul de Pythagore est plus court et entièrement justifié.
 
 > [!JURY]
-> Le rapport 2026 note que beaucoup de candidats ont cherché des arguments éloignés du sujet : « Les réponses qui ne faisaient aucun lien avec la question 8 ont rarement abouti à une preuve correcte. » Ici, l'inégalité stricte vient d'un maillon de la chaîne de Q8.
+> Le jury attend ici l’exploitation de la question 8. La composante orthogonale non nulle de $p(U)e_1$ rend stricte la première comparaison de normes.
 
 ### Question 10
 
@@ -387,7 +382,7 @@ $$\boxed{\|p\|_S=\|p\|_{\partial S}}$$
 > Q9 suppose $\deg p=n-1$ avec $n\ge2$ : on l'applique en dimension $m=\deg p+1$. Si $p$ est constant, Q9 ne s'applique pas, et il faut montrer $\partial S\neq\emptyset$ (un point de $S$ de module maximal convient).
 
 > [!JURY]
-> Rapport 2026 : « Il fallait utiliser le résultat obtenu sur le disque et raisonner proprement sur le point où le maximum est atteint. » Le jury écarte les arguments intuitifs sur le bord de $S$ qui ne passent pas par le principe du maximum démontré dans la partie.
+> Le rapport demande de relier le maximum atteint sur $S$ au résultat du disque. Le disque inclus en un maximum intérieur permet précisément ce passage.
 
 ## Partie B — Inégalité de Von Neumann
 
@@ -463,7 +458,7 @@ $$\boxed{\begin{aligned}&D_A,\ D_{A^*}\ \text{hermitiennes à valeurs propres}\ 
 > La positivité de $I-AA^*$ n'est pas une conséquence directe de celle de $I-A^*A$. Il faut montrer que $\vert\!\vert\!\vert A^*\vert\!\vert\!\vert \le\vert\!\vert\!\vert A\vert\!\vert\!\vert $, par exemple par Cauchy-Schwarz, ou que $A^*A$ et $AA^*$ ont les mêmes valeurs propres.
 
 > [!JURY]
-> Le rapport 2026 demande de vérifier explicitement le caractère hermitien de $I-A^*A$ et de $I-AA^*$. Il ajoute : « La positivité des valeurs propres de ces matrices a trop souvent été admise ou justifiée trop rapidement. » La partie concernant $AA^*$, parfois laissée de côté, compte dans la note.
+> Le jury relève trois vérifications souvent écourtées. Vérifier le caractère hermitien des deux matrices, puis justifier séparément leur positivité, y compris pour $I-AA^*$.
 
 ### Question 13
 
@@ -519,6 +514,8 @@ $$\boxed{\exists\,q\in\mathbb C[X]\ :\ D_A=q(A^*A)\ \text{ et }\ D_{A^*}=q(AA^*)
 > [!JURY]
 > Rapport 2026 : l'interpolation de Lagrange a souvent été trouvée, mais « il fallait cependant expliquer pourquoi un même polynôme permettait d'obtenir les deux matrices demandées, en tenant compte des valeurs propres correspondantes ». Prendre pour nœuds la réunion des deux spectres répond à cette exigence.
 
+![Figure 2 — Un polynôme peut coïncider avec la racine de 1 − λ sur les trois valeurs propres 0, 1/2 et 1. Ces trois valeurs suffisent pour le calcul matriciel dans cet exemple.](figures/q13-interpolation.svg)
+
 ### Question 14
 
 > [!INDICATION]
@@ -549,7 +546,7 @@ $$\boxed{A^*D_{A^*}=D_AA^*\ \text{ et }\ AD_A=D_{A^*}A}$$
 
 #### Solution
 
-$D_A$ et $D_{A^*}$ étant hermitiennes,
+Pour $U=\begin{pmatrix}A&D_{A^*}\\-D_A&A^*\end{pmatrix}$, puisque $D_A$ et $D_{A^*}$ sont hermitiennes,
 
 $$U^*=\begin{pmatrix}A^*&-D_A\\ D_{A^*}&A\end{pmatrix}.$$
 
@@ -610,7 +607,7 @@ En particulier $W^{(j)}_1=A^jx$ pour $0\le j\le k+1$ et tout $x$. Autrement dit,
 
 Ainsi $\big(p(U_k)E_1x\big)_1=p(A)x$ pour tout $x$ : **le premier bloc diagonal de $p(U_k)$ est $p(A)$**.
 
-![Figure 2 — Blocs de $U_k^jE_1x$ pour $k=3$ : le terme $-D_Ax$ remonte d'un bloc par étape et n'atteint le bloc 1 qu'à l'étape $k+2$ (∗ : bloc quelconque)](figures/q16-blocs-dilatation.svg)
+![Figure 3 — Blocs de $U_k^jE_1x$ pour $k=3$ : le terme $-D_Ax$ remonte d'un bloc par étape et peut contribuer au bloc 1 pour la première fois à l'étape $k+2$ (∗ : bloc quelconque)](figures/q16-blocs-dilatation.svg)
 
 *Conclusion.* Soit $p\in\mathbb C[X]$ et $k=\max(0,\deg p-1)$, avec $k=0$ si $p=0$, de sorte que $\deg p\le k+1$.
 
@@ -629,7 +626,7 @@ $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le\|p\|_{\mathbb D}\quad\t
 > Le bloc 2 de $U_k^jE_1x$ cesse d'être nul à l'étape $k+1$, mais le bloc 1 n'en est affecté qu'à l'étape $k+2$. C'est ce décalage d'une étape qui donne la borne $\deg p\le k+1$, et non $\deg p\le k$.
 
 > [!JURY]
-> Question difficile : le rapport 2026 indique qu'« un petit nombre de candidats seulement » l'a résolue complètement, la plupart s'en tenant à une analogie avec la partie A. « Cela ne suffisait pas : il fallait montrer que les puissances de $U_k$ ont le bloc supérieur gauche attendu, puis en déduire que le bloc supérieur gauche de $p(U_k)$ est égal à $p(A)$. » Il faut aussi citer précisément Q11, Q12 et Q14.
+> D’après le rapport, la difficulté tenait à la récurrence sur les puissances de $U_k$. Il faut établir le bloc supérieur gauche attendu pour chaque puissance, passer au polynôme par linéarité, puis appliquer la borne du cas unitaire.
 
 ### Question 17
 
@@ -653,6 +650,8 @@ $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le\|p\|_{\mathbb D(0,\vert
 > Le rapport 2026 constate que beaucoup de candidats ont eu l'idée de diviser $A$ par sa norme, mais n'ont pas rédigé avec précision la normalisation du polynôme ni le passage au disque de rayon $\vert\!\vert\!\vert A\vert\!\vert\!\vert$. Il faut écrire $\tilde p(X)=p(\rho X)$ et le changement de variable $u=\rho w$.
 
 ## Partie C — Hausdorffien et rayon numérique
+
+Le Hausdorffien est l’ensemble $\mathcal H(A)=\{\langle Ax|x\rangle : x\in\mathbb S\}$. Le rayon numérique est $r(A)=\max\{|z|:z\in\mathcal H(A)\}$. L’existence de ce maximum sera justifiée à la question 22.
 
 On étudie l'image numérique $\mathcal H(A)$ et le rayon numérique $r(A)$. On montre que $r$ est une norme équivalente à $\vert\!\vert\!\vert \cdot\vert\!\vert\!\vert $, qu'elle n'est pas sous-multiplicative, mais qu'elle vérifie l'inégalité des puissances $r(A^k)\le r(A)^k$.
 
@@ -694,6 +693,8 @@ $$\boxed{\begin{aligned}\mathcal H(\mathrm{diag}(\lambda_1,\dots,\lambda_n))&=\B
 > [!PIEGE]
 > Une égalité d'ensembles demande deux inclusions. Ici la seconde, qui consiste à atteindre toute combinaison convexe, est aussi simple que la première, mais il faut l'écrire.
 
+![Figure 4 — Le Hausdorffien d’une matrice diagonale à trois valeurs propres forme leur triangle. Le point intérieur correspond aux poids 0,20, 0,35 et 0,45.](figures/q19-enveloppe.svg)
+
 ### Question 20
 
 > [!INDICATION]
@@ -718,7 +719,7 @@ $$\boxed{\mathcal H(A)=\mathrm{conv}\big(\sigma(A)\big)}$$
 > L'image numérique est invariante par similitude **unitaire**, mais pas par similitude quelconque. C'est pourquoi le théorème de réduction en base orthonormale est indispensable ici.
 
 > [!JURY]
-> Rapport 2026 : après le théorème de réduction, « le passage essentiel consistait ensuite à manipuler correctement le produit scalaire hermitien et à utiliser le fait qu'une matrice unitaire agit bijectivement sur la sphère unité ».
+> Le rapport demande de justifier le changement de vecteur test. Une matrice unitaire préserve les produits scalaires et réalise une bijection de la sphère sur elle-même.
 
 ### Question 21
 
@@ -758,7 +759,9 @@ $$\boxed{\mathcal H\begin{pmatrix}0&1\\0&0\end{pmatrix}=\mathbb D\big(0,\tfrac12
 > Montrer $ab\le\frac12$ ne prouve que l'inclusion $\mathcal H(A)\subset\mathbb D(0,\frac12)$. Il faut aussi justifier que toute valeur de $[0,\frac12]$ est atteinte, par exemple avec $a=\cos t$ et $b=\sin t$.
 
 > [!JURY]
-> Rapport 2026 : « De nombreux candidats se sont limités à effectuer le calcul suggéré par l'indication, sans donner une démonstration complète. » Le jury attend les deux inclusions ; l'indication donne la première et suggère la seconde.
+> Le jury attend les deux inclusions. Après la majoration du module par $1/2$, il reste à produire un vecteur unitaire pour chaque point du disque.
+
+![Figure 5 — À module ab fixé, la phase parcourt un cercle. Faire varier ab de 0 à 1/2 remplit le disque du Hausdorffien.](figures/q21-disque-nilpotente.svg)
 
 ### Question 22
 
@@ -803,7 +806,9 @@ Si $A=0$, il n'y a rien à montrer. Sinon, soit $x\in\mathbb S$ tel que $\|Ax\|=
 
 $$\langle Ax|y\rangle=\frac{\|Ax\|^2}{\|Ax\|}=\vert\!\vert\!\vert A\vert\!\vert\!\vert .$$
 
-L'identité de polarisation, l'inégalité triangulaire et la remarque donnent
+Pour $Q(u)=\langle Au|u\rangle$, la convention de linéarité à gauche donne la polarisation admise dans le sujet,
+$$4\langle Ax|y\rangle=Q(x+y)-Q(x-y)+iQ(x+iy)-iQ(x-iy).$$
+L'inégalité triangulaire et la majoration de $|Q(u)|$ donnent
 
 $$\begin{aligned}4\vert\!\vert\!\vert A\vert\!\vert\!\vert &=|4\langle Ax|y\rangle|\\ &\le r(A)\big(\|x+y\|^2+\|x-y\|^2+\|x+iy\|^2+\|x-iy\|^2\big).\end{aligned}$$
 
@@ -819,7 +824,7 @@ $$\boxed{\tfrac12\vert\!\vert\!\vert A\vert\!\vert\!\vert \le r(A)\le\vert\!\ver
 > L'identité de polarisation permet de reconstruire la forme sesquilinéaire $\langle Ax|y\rangle$ à partir de la forme quadratique $\langle Au|u\rangle$. C'est l'outil standard pour comparer une quantité « diagonale » ($r$) à une quantité « bilinéaire » ($\vert\!\vert\!\vert \cdot\vert\!\vert\!\vert $).
 
 > [!JURY]
-> Question discriminante. Rapport 2026 : la minoration par polarisation « n'a presque jamais été abordée ». « Dans la plupart des copies, seul le sens le plus immédiat a été traité, alors que l'autre constituait le point principal de la question. »
+> Le jury signale que peu de copies ont établi la minoration. C’est le sens qui demande la polarisation, suivie des deux identités du parallélogramme.
 
 ### Question 24
 
@@ -861,7 +866,7 @@ $$r(AB)=1>\tfrac14=r(A)\,r(B).$$
 **L'inégalité $r(AB)\le r(A)r(B)$ est fausse en général.**
 
 > [!JURY]
-> Rapport 2026 : « Il fallait néanmoins justifier que $r(A) = r(A^*)$ », soit directement à partir de la définition (c'est le calcul par conjugaison ci-dessus), soit par un calcul analogue à celui de Q21.
+> Le rapport attend une justification de $r(A^*)=r(A)$. Conjuguer chaque valeur numérique fournit directement cette égalité.
 
 ### Question 26-a
 
@@ -876,7 +881,7 @@ $$r(AB)=1>\tfrac14=r(A)\,r(B).$$
 
 #### Solution
 
-*Première identité.* Soit $t\in\mathbb C^*$. On évalue l'identité $X^k-1=\prod_{\ell=1}^k(X-\omega_k^\ell)$ en $1/t$ :
+Pour $k\geq1$, on note $\omega_k=e^{2i\pi/k}$. *Première identité.* Soit $t\in\mathbb C^*$. On évalue l'identité $X^k-1=\prod_{\ell=1}^k(X-\omega_k^\ell)$ en $1/t$ :
 
 $$\begin{aligned}\prod_{\ell=1}^k(1-\omega_k^\ell t)&=t^k\prod_{\ell=1}^k\Big(\frac1t-\omega_k^\ell\Big)\\ &=t^k\Big(\frac1{t^k}-1\Big)\\ &=1-t^k.\end{aligned}$$
 
@@ -922,7 +927,7 @@ Pour $k=1$, le produit vide vaut $1$ et l'identité est triviale.
 
 #### Solution
 
-Avec les notations précédentes, $x_j=Q_j(A)x$. Comme
+Fixons $x\in\mathbb S$. Avec les notations précédentes, $x_j=Q_j(A)x$. Comme
 
 $$\begin{aligned}(1-\omega_k^jX)\,Q_j&=\prod_{\ell=1}^k(1-\omega_k^\ell X)\\ &=1-X^k,\end{aligned}$$
 
@@ -946,7 +951,7 @@ $$\boxed{\frac1k\sum_{j=1}^k\Big[\|x_j\|^2-\langle\omega_k^jAx_j|x_j\rangle\Big]
 > Le produit scalaire est semi-linéaire à droite. Sortir $\frac1k$ de la seconde place est permis parce que $\frac1k$ est réel ; un coefficient complexe serait conjugué.
 
 > [!JURY]
-> Le rapport 2026 indique que très peu de candidats sont arrivés jusqu'ici. Il s'agissait de « mener à bien des calculs techniques mais élémentaires, en utilisant soigneusement la seconde identité de la question précédente ».
+> Le jury relève le rôle de la seconde identité de 26-a. Elle donne la moyenne exacte des $x_j$, ce qui permet de regrouper les produits scalaires.
 
 ### Question 26-c
 
@@ -991,7 +996,9 @@ $$\boxed{r(A)\le1\ \Longrightarrow\ r(A^k)\le1\qquad(k\ge1)}$$
 > Si $\mathrm{Re}(e^{i\alpha}w)\le1$ pour tout $\alpha$, alors $|w|\le1$. On utilise cette rotation chaque fois qu'on dispose d'une inégalité sur une partie réelle avec une phase libre.
 
 > [!JURY]
-> Rapport 2026 : question résolue par un nombre très réduit de candidats. « Il fallait appliquer la formule précédente à $e^{i\theta}A$, puis exploiter la liberté dans le choix de $\theta$. »
+> Le jury attend les deux opérations successives. Remplacer la matrice par $e^{i\theta}A$, puis choisir la phase qui rend la valeur numérique réelle positive.
+
+![Figure 6 — La liberté du facteur de phase fait tourner w jusqu’au nombre réel |w|. La majoration de sa partie réelle donne alors |w| ≤ 1.](figures/q26c-phase.svg)
 
 ### Question 26-d
 
@@ -1010,6 +1017,8 @@ $$\boxed{r(A)\le1\ \Longrightarrow\ r(A^k)\le1\qquad(k\ge1)}$$
 $$\boxed{r(A^k)\le r(A)^k\quad\text{pour tout }k\in\mathbb N\text{ et tout }A\in\mathcal M_n(\mathbb C)}$$
 
 ## Partie D — Conjecture de Crouzeix
+
+On examine pour différentes matrices $A$ et différents polynômes $p$ l’inégalité conjecturée (1), $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert\leq 2\|p\|_{\mathcal H(A)}$.
 
 On assemble B et C pour obtenir des cas particuliers de la conjecture de Crouzeix, puis une version « disque » en admettant le théorème d'Okubo-Ando.
 
@@ -1032,7 +1041,7 @@ $$\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert =1=2\,\|p\|_{\mathcal H(A)}.$$
 Supposons qu'une constante $c$ vérifie $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le c\,\|p\|_{\mathcal H(A)}$ pour toute matrice et tout polynôme. Ce couple donne $1\le c/2$, soit $c\ge2$. **La constante $2$ ne peut pas être améliorée.**
 
 > [!JURY]
-> Rapport 2026 : « Certaines copies se sont contentées d'indiquer le résultat attendu sans en donner la justification complète. » Il faut calculer les deux membres : $\vert\!\vert\!\vert A\vert\!\vert\!\vert=1$ et $\|X\|_{\mathcal H(A)}=\frac12$ par Q21.
+> Le rapport demande de vérifier l’exemple par le calcul des deux membres. Pour $p=X$, leur rapport vaut exactement $2$.
 
 ### Question 28
 
@@ -1075,7 +1084,7 @@ et (1) est vérifiée pour ce couple $(A,p)$.
 > L'inégalité triangulaire $|\sum a_k|\le\sum|a_k|$ est une égalité lorsque tous les $a_k$ ont le même argument. L'hypothèse de Q29 sert à se placer dans ce cas.
 
 > [!JURY]
-> Question presque jamais traitée selon le rapport 2026 : « Le point essentiel était d'exploiter l'hypothèse sur les arguments des coefficients du polynôme au bon point du Hausdorffien. » Ce point est $z=r(A)e^{i\theta}$.
+> Le jury souligne le choix du point test. Lorsque $z=r(A)e^{i\theta}$, l’argument de $c_k$ compense celui de $z^k$ pour chaque terme non nul.
 
 ### Question 30-a
 
@@ -1104,7 +1113,7 @@ $$\|q\|_{\mathbb D}=\sup_{|w|\le1}|p(r(A)w)|=\|p\|_{\mathbb D(0,r(A))}.$$
 $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\,\|p\|_{\mathbb D(0,r(A))}}$$
 
 > [!JURY]
-> Rapport 2026 : « Il fallait appliquer le résultat d'Okubo-Ando à la matrice normalisée par son rayon numérique, puis utiliser l'inégalité de Von Neumann. » Le cas $r(A)=0$ se traite à part.
+> Le jury indique d’appliquer Okubo–Ando après normalisation par le rayon numérique. La question 16 s’applique ensuite à la contraction obtenue par similitude.
 
 ### Question 30-b
 
@@ -1142,7 +1151,9 @@ $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\,\|p\|_{\mathcal C}\qu
 > Q10 utilise une définition particulière de $\partial S$. Pour l'appliquer au disque $\mathbb D(c,\delta)$, il faut vérifier que les points de $\partial S$ sont exactement ceux du cercle $\mathcal C$ : c'est rapide, mais on ne peut pas l'omettre.
 
 > [!JURY]
-> Question quasiment pas traitée selon le rapport 2026. « Elle supposait de translater le problème au centre du disque considéré, puis d'utiliser le principe du maximum pour passer du disque à son bord. » On cite précisément Q30-a et Q10.
+> Le rapport distingue deux étapes. La translation de la matrice recentre le disque, puis le principe du maximum de Q10 permet de prendre la borne sur le cercle.
+
+![Figure 7 — Pour une matrice diagonale à trois valeurs propres, la translation par −c recentre le disque contenant le Hausdorffien. Le cercle en pointillé a pour rayon r(A − cI).](figures/q30b-translation.svg)
 
 ## Bilan
 

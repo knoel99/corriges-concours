@@ -1,0 +1,42 @@
+{
+  "slug": "bel_al_philosophie_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Philosophie",
+    "annee": 2025
+  },
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/entendre-le-verbe.svg",
+      "question": "Analyse du libellé",
+      "legende": "Trois situations changent la nécessité exprimée par le même verbe"
+    },
+    {
+      "fichier": "figures/retourner-ladresse.svg",
+      "question": "Partie II",
+      "legende": "Le cas du registre permet de dissocier le pouvoir de sanctionner et la raison que l’on peut donner"
+    },
+    {
+      "fichier": "figures/rectifier-publiquement.svg",
+      "question": "Partie III",
+      "legende": "Une rectification peut demander davantage qu’un soulagement de la conscience"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf"
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante de la dissertation et du guide sur le libellé et le rapport. Vérification de la référence kantienne sur la fausse promesse et des trois schémas."
+  }
+}

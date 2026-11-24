@@ -108,7 +108,9 @@
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
+| 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
@@ -473,6 +475,7 @@
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
+| 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2024 | X | MP | Maths B | [md](2024/x/x_mp_maths-b_2024/brut.md) | [md](2024/x/x_mp_maths-b_2024/guide.md) |
 | 2025 | X | MP | Maths B | [md](2025/x/x_mp_maths-b_2025/brut.md) | [md](2025/x/x_mp_maths-b_2025/guide.md) |
 | 2026 | X | MP | Maths B | [md](2026/x/x_mp_maths-b_2026/brut.md) | [md](2026/x/x_mp_maths-b_2026/guide.md) |
