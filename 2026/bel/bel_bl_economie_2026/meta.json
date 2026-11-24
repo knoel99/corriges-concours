@@ -21,7 +21,8 @@
       "https://www.ecb.europa.eu/press/pr/date/2012/html/pr120906_1.en.html",
       "https://www.federalreserve.gov/aboutthefed/section2a.htm",
       "https://www.banque-france.fr/fr/publications-et-statistiques/publications/le-mandat-de-la-bce-vu-travers-le-prisme-de-la-nouvelle-strategie-monetaire"
-    ]
+    ],
+    "sujet_sha256": "e933258e9b0a3bbc2f6ad9f7e03f9c34b887f4b96c745c9ecf8b2ad2d986c1f1"
   },
   "figures": [
     {
@@ -84,6 +85,18 @@
       "perimetre": "Contre-lecture indépendante des mandats de la BCE et de la Fed, des OMT, et du mécanisme du prêteur en dernier ressort. Sujet de dissertation libre.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification du libellé, des deux éditions et des sources de la BCE et de la Réserve fédérale sur les mandats et les OMT. Explicitation chiffrée du taux réel anticipé lorsque baissent simultanément taux nominal et inflation attendue."
     }
   ]
 }

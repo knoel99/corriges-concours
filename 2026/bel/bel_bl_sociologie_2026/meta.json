@@ -23,7 +23,8 @@
       "https://www.nationalarchives.gov.uk/explore-the-collection/stories/letter-by-the-women-workers-at-fords-of-dagenham/",
       "https://www.parliament.uk/about/living-heritage/transformingsociety/tradeindustry/industrycommunity/collections/equal-pay/ford-strike/",
       "https://www.tuc.org.uk/workplace-guidance/case-studies/how-fords-striking-women-drove-equal-pay-act?language=en"
-    ]
+    ],
+    "sujet_sha256": "2c1341ce4252aea829109c66d541f5b67df40b4d4581aed8a99757e93614b128"
   },
   "figures": [
     {
@@ -86,6 +87,18 @@
       "perimetre": "Libellé de la dissertation et enquêtes cités vérifiés. Chronologie de Dagenham comparée aux archives nationales et parlementaires britanniques et à l’historique du TUC.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions au libellé reproduit et aux documents historiques sur Dagenham. Différenciation du taux salarial masculin de référence et du grade de qualification dans l’offre de reprise de 1968."
     }
   ]
 }
