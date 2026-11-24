@@ -1,0 +1,45 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2025
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eMath.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/poincare.svg",
+      "question": "Ex. 4",
+      "legende": "Ces deux fonctions ont la même intégrale du carré. La seconde a une énergie de dérivation quatre fois plus grande. Seule la première réalise ici l’égalité de Poincaré."
+    },
+    {
+      "fichier": "figures/formule-lie.svg",
+      "question": "I.5",
+      "legende": "Pour A et B transposées l’une de l’autre et nilpotentes d’ordre deux, les produits approchent l’exponentielle de la somme. La droite en tirets donne la pente de la borne en 1/k."
+    },
+    {
+      "fichier": "figures/majorant-probabilite.svg",
+      "question": "III.4b",
+      "legende": "Pour ε = 1/4, la borne exponentielle, plafonnée à un, décroît comme une exponentielle de la racine de k."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 25 réponses en deux éditions et de trois figures sur les quatre pages du sujet et le rapport officiel. Correction de l’hypothèse manquante de normalisation en I.2 par un contre-exemple, puis preuve de la formule de Lie sous les hypothèses imprimées. Preuve dyadique de l’inégalité de traces et borne de concentration valable à tout rang.",
+      "agent": "astra_maths",
+      "fournisseur": "codex"
+    }
+  ]
+}
