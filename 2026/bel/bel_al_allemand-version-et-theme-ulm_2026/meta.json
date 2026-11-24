@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_allemand-version-et-theme-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (version et thème Ulm)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_opt_lve_vers-theme_261109.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/regards-cour.svg",
+      "legende": "Les trois regards sur la cour",
+      "question": "I. Version"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_ulm",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Version française de Franz Innerhofer et thème allemand de Béatrice Commengé, explication du discours rapporté, du regard, des plans temporels et du conditionnel irréel, schéma sur la cour."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Franz Innerhofer, Die großen Wörter, 1977.",
+      "Béatrice Commengé, En face du jardin. Six jours dans la vie de Rainer Maria Rilke, 2007."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}
