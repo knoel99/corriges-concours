@@ -1,0 +1,17 @@
+name: Bilan X et ENS en production
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  bilan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -q && sudo apt-get install -y poppler-utils
+      - name: Comparer les textes et les signatures des PDF avec GitHub
+        run: python3 scripts/couverture_astra.py --site --tsv bilan-x-ens.tsv >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bilan-x-ens
+          path: bilan-x-ens.tsv

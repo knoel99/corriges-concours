@@ -24,6 +24,8 @@ La liste complète est dans [INDEX.md](INDEX.md). Le Markdown est la **seule sou
 en LaTeX (`$…$`, `$$…$$`), rendues par KaTeX sur le site. Les encadrés
 `> [!INDICATION]`, `> [!METHODE]`, `> [!PIEGE]` et `> [!JURY]` sont des alertes.
 
+Le suivi Polytechnique et ENS donne, par sujet et par matière, la source et la procédure de vérification de la rédaction ou relecture par GPT-6.2 Astra Ultra sur GitHub et sur le site. [Suivi X et ENS](campagnes/x-ens/)
+
 ## PDF et LaTeX
 
 Les PDF ne sont pas versionnés : ils se téléchargent sur la fiche de chaque épreuve du site, où

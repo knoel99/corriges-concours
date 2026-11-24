@@ -9,7 +9,8 @@
   "questions": 29,
   "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture indépendante sur le sujet officiel",
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_mpi_maths_c_ulsr_26.pdf"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_mpi_maths_c_ulsr_26.pdf",
+    "annales_ens": "https://www.ens.psl.eu/rapports-et-sujets-2026-mp"
   },
   "figures": [
     {
@@ -48,7 +49,7 @@
       "legende": "Pour f(x,y) = (x² + 3y²)/2 et L = 4, chaque pas multiplie la première coordonnée par 3/4 et la seconde par 1/4. Les courbes grises représentent les niveaux de f."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -87,6 +88,18 @@
       "perimetre": "Relecture des corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 22 questions numérotées et de leurs subdivisions dans les deux éditions, des indications, des sept schémas, du minimax et de la preuve de convergence en Q22 sur le sujet officiel MP-MPI. Le tableau ENS ne relie aucun rapport de maths C. Énoncé du résultat en 2a, choix explicite de N avant la construction à pas fixé en 8, identité complète en 14 et rétablissement de quatre figures dans le brut.",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

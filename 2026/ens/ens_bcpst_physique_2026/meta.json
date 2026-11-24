@@ -9,7 +9,8 @@
   "questions": 57,
   "redaction": "IA (OpenAI Codex, famille GPT-6), avec contre-vérification indépendante des hauteurs et vitesses des gouttes, du bilan de saturation, des constantes de temps et de la grille d’Euler",
   "sources": {
-    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/261238_BCPST_PHYSIQUE_2026.pdf"
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/261238_BCPST_PHYSIQUE_2026.pdf",
+    "sujet_sha256": "22cf8d112a298b450eb1053e74a19b9120c60a7056c719b2d7540e6e81eebbe3"
   },
   "figures": [
     {
@@ -68,7 +69,7 @@
       "legende": "Euler suit la tangente calculée au début du pas. L’écart visible à la fin du pas illustre l’erreur locale sur une évolution courbe."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -89,6 +90,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 1,
+      "modifications": true,
+      "perimetre": "Relecture des 57 questions du sujet sur les trois états de l’eau, des deux éditions et de leurs onze figures. Vérification des lectures expérimentales, du travail capillaire, de la condensation, du circuit, des indices du code et du mouvement du grêlon. Précisions sur le seuil de mesure, la conversion en humidité et la courbure du trajet.",
+      "fournisseur": "codex",
+      "agent": "astra_physique"
     }
   ]
 }

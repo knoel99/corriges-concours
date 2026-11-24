@@ -88,6 +88,18 @@
       "perimetre": "Les trente réponses suivent le sujet du second concours scientifique. La question 14 est traitée dans sa version publiée et dans sa variante à signes symétriques. L’index de la session présente un rapport de mathématiques oral uniquement.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 30 réponses et indications de l’exercice et du problème, avec les six figures, sur le sujet officiel. Le rapport répertorié par la banque porte sur l’oral. En Q14 du problème, calcul exact de la norme harmonique des sommes partielles pour chaque choix de signes. Précision des deux restrictions en 3b de l’exercice et ajout au brut des trois figures présentes seulement dans le guidé.",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

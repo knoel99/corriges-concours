@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 On travaille dans l'espace euclidien $\mathbb R^n$. Pour un fermé convexe non vide $C$, $\Pi_C$ désigne la projection sur $C$. On note $I$ l'application identité. Un point $s\in C$ est solution forte si $\langle G(s),x-s\rangle\geq0$ pour tout $x\in C$, et solution faible si $\langle G(x),x-s\rangle\geq0$ pour tout $x\in C$. La monotonie de $G$ signifie que $\langle G(v)-G(u),v-u\rangle\geq0$ pour tous $u,v$.
 
@@ -22,9 +24,11 @@ Comme $x_\ast\in C$, c'est une **solution faible**.
 
 ### Question 2
 
-**a)** Pour $0<\lambda\leq1$, le point $x_\lambda=x_\ast+\lambda(x-x_\ast)$ appartient à $C$ par convexité. L'inégalité faible en ce point s'écrit $0\leq\langle G(x_\lambda),x_\lambda-x_\ast\rangle=\lambda\langle G(x_\lambda),x-x_\ast\rangle$. On divise par $\lambda$.
+**a)** Pour $0<\lambda\leq1$, le point $x_\lambda=x_\ast+\lambda(x-x_\ast)$ appartient à $C$ par convexité. L'inégalité faible en ce point s'écrit $0\leq\langle G(x_\lambda),x_\lambda-x_\ast\rangle=\lambda\langle G(x_\lambda),x-x_\ast\rangle$. Comme $\lambda>0$, on obtient $\langle G(x_\lambda),x-x_\ast\rangle\geq0$.
 
 **b)** Lorsque $\lambda\to0^+$, la continuité donne $G(x_\lambda)\to G(x_\ast)$. L'inégalité de a) devient $\langle G(x_\ast),x-x_\ast\rangle\geq0$ pour tout $x\in C$. Ainsi $x_\ast$ est une **solution forte**.
+
+![Figure 1 — Lorsque λ tend vers zéro, le point test xλ reste dans C et rejoint x* en suivant le segment qui mène à x.](figures/q02-segment.svg)
 
 ### Question 3
 
@@ -38,7 +42,7 @@ Comme $x_\ast\in C$, c'est une **solution faible**.
 
 **b)** Pour tout $n\geq1$, prenons le segment $C=\{te_1:-1\leq t\leq1\}$ et $G(x)=\sigma(x_1)e_1$, où $\sigma(t)=-1$ pour $t<0$ et $\sigma(t)=1$ pour $t\geq0$. Le produit de monotonie vaut $(\sigma(t)-\sigma(u))(t-u)\geq0$. Pour un candidat $se_1$ avec $s<0$, le test $x=e_1$ donne un produit strictement négatif. Si $s\geq0$, le test $x=-e_1$ fait de même. Il n'existe donc **aucune solution forte**.
 
-![Figure 1 — Le saut de −1 à +1 conserve la monotonie. L’origine est solution faible. La valeur retenue au saut, σ(0) = 1, exclut une solution forte en zéro.](figures/q04-saut-monotone.svg)
+![Figure 2 — Le saut de −1 à +1 conserve la monotonie. L’origine est solution faible. La valeur retenue au saut, σ(0) = 1, exclut une solution forte en zéro.](figures/q04-saut-monotone.svg)
 
 ### B — Projection sur un convexe fermé
 
@@ -53,6 +57,8 @@ Posons $x=\Pi_C(y)$, $x'=\Pi_C(y')$, $d=x-x'$ et $E=\|x\|^2-\|x'\|^2-2\langle y'
 Au point $x$ avec test $x'$, on obtient $\langle x-y,d\rangle\leq0$. Or $E=2\langle x-y',d\rangle-\|d\|^2$. Par suite
 
 $$E\leq2\langle y-y',d\rangle-\|d\|^2=\|y-y'\|^2-\|(y-y')-d\|^2\leq\|y-y'\|^2.$$
+
+![Figure 3 — Deux projections sur une même face plane. La variation parallèle à la face est conservée et la composante normale disparaît.](figures/q06-deux-projetes.svg)
 
 ## Partie II — Un cas d'existence de solution et théorème du minimax de von Neumann
 
@@ -70,7 +76,7 @@ Pour $\bar x_N=N^{-1}\sum_{j=1}^Nx_j\in C$ par convexité, sommons 7. La somme d
 
 $$\langle G(x),\bar x_N-x\rangle\leq\frac{R^2+N\eta^2M^2}{2N\eta}.$$
 
-Choisissons $\eta=N^{-1/2}$ dans la construction de la suite. Le membre de droite vaut $(R^2+M^2)/(2\sqrt N)$, indépendamment de $x$. Pour $N$ assez grand, $\widetilde x_\varepsilon=\bar x_N$ convient.
+Choisissons $\eta=N^{-1/2}$ dans la construction de la suite. Le membre de droite vaut $(R^2+M^2)/(2\sqrt N)$, indépendamment de $x$. Pour une tolérance $\varepsilon>0$, choisissons d’abord un entier $N\ge1$ tel que $\sqrt N\ge (R^2+M^2)/(2\varepsilon)$. Construisons ensuite les $N$ itérés avec le même pas $\eta=N^{-1/2}$. Leur moyenne $\widetilde x_\varepsilon=\bar x_N$ satisfait simultanément toutes les inégalités demandées.
 
 ### Question 9
 
@@ -86,7 +92,7 @@ $$P(a,b_\ast)\leq v=P(a_\ast,b_\ast)\leq P(a_\ast,b).$$
 
 Ainsi $\inf_b P(a_\ast,b)=v$ et, pour tout $a$, $\inf_b P(a,b)\leq P(a,b_\ast)\leq v$. Par suite $\sup_a\inf_b P(a,b)=v$. De même $\sup_a P(a,b_\ast)=v$ et, pour tout $b$, $\sup_a P(a,b)\geq P(a_\ast,b)\geq v$. Donc **$\sup_a\inf_b P(a,b)=\inf_b\sup_a P(a,b)=v$**.
 
-![Figure 2 — Pour la matrice diagonale de coefficients 2 et 1, le maximum de l’enveloppe inférieure et le minimum de l’enveloppe supérieure valent tous deux 2/3.](figures/q10-minimax.svg)
+![Figure 4 — Pour la matrice diagonale de coefficients 2 et 1, le maximum de l’enveloppe inférieure et le minimum de l’enveloppe supérieure valent tous deux 2/3.](figures/q10-minimax.svg)
 
 ## Partie III — Itérations de Krasnoselskii–Mann
 
@@ -97,6 +103,8 @@ En dimension un, la translation $F(x)=x+1$ préserve les distances, donc est $1$
 ### Question 12
 
 En dimension un, $F(x)=-x$ préserve les distances et fixe $x_\ast=0$. L'itération directe partant de $x_1=1$ donne $x_k=(-1)^{k-1}$, qui possède les deux valeurs d'adhérence distinctes $1$ et $-1$.
+
+![Figure 5 — Pour F(x) = −x et x₁ = 1, l’itération directe alterne entre −1 et 1. Avec θ = 1/4, l’itération moyennée multiplie chaque terme par 1/2.](figures/q12-oscillation.svg)
 
 ### Question 13
 
@@ -110,7 +118,8 @@ Pour deux vecteurs $u,v$, le développement des carrés scalaires donne
 
 $$\|(1-\theta)u+\theta v\|^2=(1-\theta)\|u\|^2+\theta\|v\|^2-\theta(1-\theta)\|u-v\|^2.$$
 
-En prenant $u=x_k-x_\ast$ et $v=F(x_k)-x_\ast$, le membre de gauche vaut $\|x_{k+1}-x_\ast\|^2$ et $u-v=x_k-F(x_k)$. C'est l'égalité demandée.
+En prenant $u=x_k-x_\ast$ et $v=F(x_k)-x_\ast$, le membre de gauche vaut $\|x_{k+1}-x_\ast\|^2$ et $u-v=x_k-F(x_k)$. En reportant ces expressions puis en regroupant le terme de résidu à gauche, il vient
+$$\|x_{k+1}-x_\ast\|^2+\theta(1-\theta)\|F(x_k)-x_k\|^2=(1-\theta)\|x_k-x_\ast\|^2+\theta\|F(x_k)-x_\ast\|^2.$$
 
 ### Question 15
 
@@ -154,6 +163,8 @@ $$\|w\|^2\leq L\langle w,d\rangle\leq L\|w\|\,\|d\|.$$
 
 Si $w\ne0$, on divise par sa norme. Si $w=0$, la borne cherchée est immédiate. Cela prouve que (P) implique la propriété $L$-lipschitzienne du gradient. L'implication réciproque est a).
 
+![Figure 6 — Pour f(x) = √(1+x²) − 1, un majorant quadratique touche la courbe en x = 1,6. Le minimum du majorant donne le pas de descente utilisé dans la preuve.](figures/q19-majorant.svg)
+
 ### Question 20
 
 Notons $H(x)=\nabla^2 f(x)$. Si (i) est vraie, pour tout vecteur $v$ et tout $t>0$, le quotient $(\nabla f(x+tv)-\nabla f(x))/t$ est de norme au plus $L\|v\|$. Par dérivation, $\|H(x)v\|\leq L\|v\|$. D'après 18, $H(x)$ est symétrique positive. En appliquant la borne à un vecteur propre non nul, on obtient (iii).
@@ -176,4 +187,4 @@ Le point $x_\ast$ annule le gradient, donc est fixe pour $F=I-(2/L)\nabla f$. Av
 
 $$\boxed{x_k\to z,\qquad f(x_k)\to f(z)=\inf_{\mathbb R^n}f.}$$
 
-![Figure 3 — Pour f(x,y) = (x² + 3y²)/2 et L = 4, chaque pas multiplie la première coordonnée par 3/4 et la seconde par 1/4. Les courbes grises représentent les niveaux de f.](figures/q22-descente.svg)
+![Figure 7 — Pour f(x,y) = (x² + 3y²)/2 et L = 4, chaque pas multiplie la première coordonnée par 3/4 et la seconde par 1/4. Les courbes grises représentent les niveaux de f.](figures/q22-descente.svg)

@@ -12,7 +12,7 @@
     "model": "GPT-6"
   },
   "redaction": "Rédaction originale par IA (Codex, famille GPT-6), à partir de l’énoncé officiel. Les 27 questions et leurs subdivisions ont été contrôlées à partir du PDF par un second agent Codex.",
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "modele_revision": "GPT-6 (Codex)",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_mp_maths_d_u_26.pdf",
@@ -66,6 +66,30 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "perimetre": "Contrôle des 27 questions et de leurs subdivisions sur le PDF officiel par un second agent Codex, consigné dans les champs historiques redaction et modele_revision.",
+      "famille_modele": "GPT-6",
+      "tour": 1,
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 27 questions et de leurs subdivisions dans les deux éditions, des indications et des cinq figures sur le sujet ENS MP. Le tableau des annales ENS ne donne pas de lien vers un rapport écrit. Exemple explicite de test sans espérance en 8, calcul du défaut exact de l’identité en 11, contrôle des constantes de concentration en 17, 22 et 27, ajout des deux figures absentes du brut. Report dans le journal de la première relecture déjà attestée par les métadonnées historiques.",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

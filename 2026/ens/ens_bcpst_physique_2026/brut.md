@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet étudie les interfaces de l’eau liquide, la saturation de la vapeur et le mouvement de l’eau solide dans l’atmosphère. On note $\rho$ la masse volumique de l’eau liquide, $\rho_a$ celle de l’air, $\gamma$ la tension superficielle eau-air et $g$ l’intensité de la pesanteur.
 
 ## I.A — La tension de surface
@@ -72,7 +74,7 @@ Pour une ascension, la condition $r\ll h$ équivaut à $r^2\ll2\ell_c^2\cos\thet
 
 ### Question 13
 
-Le flou de mouvement vaut $v_\infty t_{\rm pose}$. Pour une goutte millimétrique à $10\,\mathrm{m\,s^{-1}}$, parcourir $1\,\mathrm{mm}$ prend $10^{-4}\,\mathrm s$. En limitant le flou à $0{,}1\,\mathrm{mm}$, on choisirait par exemple $t_{\rm pose}\sim10^{-5}\,\mathrm s$. Cela reste très inférieur à l’intervalle de $10^{-3}\,\mathrm s$ entre images. La valeur exacte dépend du détail à résoudre.
+Le flou de mouvement vaut $v_\infty t_{\rm pose}$. Pour une goutte millimétrique à $10\,\mathrm{m\,s^{-1}}$, parcourir $1\,\mathrm{mm}$ prend $10^{-4}\,\mathrm s$. En limitant le flou à $0{,}1\,\mathrm{mm}$, on choisirait par exemple $t_{\rm pose}\sim10^{-5}\,\mathrm s$. Avec un temps de pose égal à l’intervalle entre deux vues, le flou atteindrait 1 cm et masquerait la goutte. Ce temps de pose de dix microsecondes reste très inférieur à l’intervalle de $10^{-3}\,\mathrm s$ entre images. La valeur exacte dépend du détail à résoudre.
 
 ### Question 14
 
@@ -104,7 +106,7 @@ $$\boxed{v_\infty=\sqrt{\frac{4\rho gh}{3\rho_a C}}.}$$
 
 ### Question 19
 
-Aux petits diamètres, les disques pleins suivent approximativement la droite $h=D$ de la figure 8. Avec la symétrie de révolution, ceci correspond à des gouttes quasi sphériques. Quand $D$ augmente, $h$ reste de quelques millimètres tandis que $D$ continue de croître. Les points des grandes gouttes stationnaires se dispersent grossièrement entre $5$ et $9\,\mathrm{mm}$. On peut retenir une hauteur caractéristique de $5$ à $6\,\mathrm{mm}$, comme le suggère aussi l’épaisseur de la goutte (c) rapportée à la barre de $10\,\mathrm{mm}$ de la figure 7. L’estimation ne définit pas une hauteur unique.
+Aux petits diamètres, les disques pleins suivent approximativement la droite $h=D$ de la figure 8. Avec la symétrie de révolution, ceci correspond à des gouttes quasi sphériques. Quand $D$ augmente, $h$ reste de quelques millimètres tandis que $D$ continue de croître. Les points des grandes gouttes stationnaires se dispersent grossièrement entre $5$ et $9\,\mathrm{mm}$. On peut retenir une hauteur caractéristique de $5$ à $6\,\mathrm{mm}$, comme le suggère aussi l’épaisseur de la goutte (c) rapportée à la barre de $10\,\mathrm{mm}$ de la figure 7. La plage horizontale des disques noirs contraste avec la branche des symboles creux qui continue à monter vers $h=D$. Retenir ces symboles ajouterait au modèle des gouttes dont la forme varie pendant la chute.
 
 ![Figure 3 — Profils de révolution schématiques. Pour une petite goutte, la hauteur suit le diamètre. Les grandes gouttes stationnaires s’élargissent surtout à l’équateur.](figures/q19-morphologie-gouttes.svg)
 
@@ -162,7 +164,7 @@ Pour une vapeur saturante à l’équilibre, $P_{\rm H_2O}=P_{\rm sat}(T)$. L’
 
 ### Question 30
 
-Initialement $P_{\rm H_2O}=0{,}60\times32=19{,}2\,\mathrm{mbar}$. À volume fixé, si toute la vapeur restait gazeuse dans l’air fermé, sa pression finale vaudrait $19{,}2\times287/298\simeq18{,}5\,\mathrm{mbar}$. Le rapport à la pression de saturation de $16\,\mathrm{mbar}$ serait donc d’environ $1{,}16$, au-dessus de un. De l’eau se condense jusqu’à $P_{\rm H_2O}'=16\,\mathrm{mbar}$, si bien que $\boxed{\varphi'=100\,\%}$. On peut observer de la rosée sur une surface froide ou des gouttelettes de brouillard en suspension.
+Initialement $P_{\rm H_2O}=0{,}60\times32=19{,}2\,\mathrm{mbar}$. À volume fixé, si toute la vapeur restait gazeuse dans l’air fermé, sa pression finale vaudrait $19{,}2\times287/298\simeq18{,}5\,\mathrm{mbar}$. Le rapport à la pression de saturation de $16\,\mathrm{mbar}$ serait donc d’environ $1{,}16$, au-dessus de un. De l’eau se condense jusqu’à $P_{\rm H_2O}'=16\,\mathrm{mbar}$, si bien que $\boxed{\varphi'=100\,\%}$. À cette température, la fraction de vapeur initiale qui reste gazeuse est donc voisine de $16/18{,}5$. Environ 14 % de la masse d’eau initialement à l’état de vapeur s’est condensée. On peut observer de la rosée sur une surface froide ou des gouttelettes de brouillard en suspension.
 
 ![Figure 5 — À 14 °C, conserver toute l’eau sous forme de vapeur conduirait à 18,5 mbar. L’eau excédentaire se condense et la pression de vapeur passe à 16 mbar.](figures/q30-rosee.svg)
 
@@ -198,7 +200,7 @@ Pour $R=3\,\mathrm{M\Omega}$ et $C=200\,\mathrm{pF}$, $RC=3\times10^6\times200\t
 
 ### Question 37
 
-On relève $u_k=u_C(kT_e)$ et on retient le premier entier $k$ tel que $u_k\geq0{,}63E$. L’instant de franchissement se trouve entre $(k-1)T_e$ et $kT_e$. Au seuil exact $(1-e^{-1})E$, il vaut $RC$, donc $C\simeq kT_e/R$, à la précision du seuil et de l’échantillonnage près. Pour environ cent intervalles en $0{,}60\,\mathrm{ms}$, il faut $T_e\simeq6\,\mathrm{\mu s}$ et $f_e=1/T_e\simeq1{,}7\times10^5\,\mathrm{Hz}$, soit environ $170\,\mathrm{kHz}$.
+On relève $u_k=u_C(kT_e)$ et on retient le premier entier $k$ tel que $u_k\geq0{,}63E$. L’instant de franchissement se trouve entre $(k-1)T_e$ et $kT_e$. Au seuil exact $(1-e^{-1})E$, il vaut $RC$, donc $C\simeq kT_e/R$, à la précision du seuil et de l’échantillonnage près. Avec le seuil programmé à $0{,}63E$, le franchissement réel a lieu à $t_*=-RC\ln(0{,}37)\simeq0{,}994\,RC$. La lecture discrète ajoute ensuite un retard compris entre zéro et une période d’échantillonnage. Pour environ cent intervalles en $0{,}60\,\mathrm{ms}$, il faut $T_e\simeq6\,\mathrm{\mu s}$ et $f_e=1/T_e\simeq1{,}7\times10^5\,\mathrm{Hz}$, soit environ $170\,\mathrm{kHz}$.
 
 ![Figure 8 — Charge normalisée du condensateur. Avec un pas grossi pour rendre les points visibles, le premier point au-dessus de 0,63 E retarde le temps mesuré de moins d’une période d’échantillonnage.](figures/q37-echantillonnage.svg)
 
@@ -208,7 +210,7 @@ Avec un créneau de rapport cyclique moitié, on demande par exemple $T/2\gtrsim
 
 ### Question 39
 
-À chaque front descendant, remettre le chronomètre à zéro et détecter aussi le premier échantillon pour lequel $u_C\leq E/e\simeq0{,}37E$. Pendant la décharge depuis $E$, $u_C(t)=Ee^{-t/(RC)}$, de sorte que ce second délai estime encore $RC$. On obtient une mesure de $C$ et de l’humidité à chaque demi-période, à condition que chaque plateau soit assez long et que l’humidité varie peu pendant la mesure.
+À chaque front descendant, remettre le chronomètre à zéro et détecter aussi le premier échantillon pour lequel $u_C\leq E/e\simeq0{,}37E$. Pendant la décharge depuis $E$, $u_C(t)=Ee^{-t/(RC)}$, de sorte que ce second délai estime encore $RC$. Pour un délai mesuré $t_d$ au seuil $E/e$, le microcontrôleur calcule $C=t_d/R$, puis $\varphi=(C/C_0-1)/a$ avec l’étalonnage de Q34. On obtient ainsi une valeur d’humidité à chaque demi-période, à condition que chaque plateau soit assez long et que l’humidité varie peu pendant la mesure.
 
 ![Figure 9 — Sur les deux fronts du créneau, une même durée RC conduit à deux seuils complémentaires. Chaque demi-période peut fournir une mesure de l’humidité.](figures/q39-charge-decharge.svg)
 
@@ -327,7 +329,7 @@ Le commentaire de l’énoncé annonce $N+1$ éléments alors que le code initia
 
 ### Question 55
 
-Si $\Delta t$ est trop grand, l’accélération peut beaucoup varier pendant un seul pas. L’approximation par la tangente accumule alors de fortes erreurs sur les vitesses, puis sur les positions. Le sommet et la descente peuvent être mal placés. On peut même obtenir des oscillations ou une inversion artificielle de $v_x$, qui garde son signe dans l’équation continue. Une vérification pratique consiste à diviser le pas par deux à durée totale égale et à comparer les courbes obtenues.
+Si $\Delta t$ est trop grand, l’accélération peut beaucoup varier pendant un seul pas. L’approximation par la tangente accumule alors de fortes erreurs sur les vitesses, puis sur les positions. Le sommet et la descente peuvent être mal placés. En unités du programme, $v_{x,i+1}=(1-\Delta t\,v_i)v_{x,i}$, où $v_i$ est la norme de la vitesse. Si $\Delta t\,v_i>1$, le calcul inverse artificiellement le sens du mouvement horizontal. Dans le système continu, la traînée horizontale freine le grêlon et $v_x$ conserve son signe. Une vérification pratique consiste à diviser le pas par deux à durée totale égale et à comparer les courbes obtenues.
 
 ### Question 56
 
