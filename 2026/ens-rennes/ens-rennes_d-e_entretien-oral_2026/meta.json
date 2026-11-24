@@ -1,0 +1,70 @@
+{
+  "slug": "ens-rennes_d-e_entretien-oral_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Entretien (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Entretien (oral)",
+  "questions": 0,
+  "sujets": 23,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-entretien-d-e-2026_1790958443479-pdf",
+    "sujet_sha256": "7889eb1ac7665a90a4c964dfee5aebf872f7900fa31167a5adec642fd2b788f2",
+    "apercu_sujet_sha256": "00f35a1076362b5b4aa75d0418d4743a532e8426de76a952f05a41dcee56cbfd",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/nominations.svg",
+      "question": "2",
+      "legende": "Un recrutement paritaire dans vingt directions"
+    },
+    {
+      "fichier": "figures/precarites.svg",
+      "question": "18",
+      "legende": "Trois rapports au temps dans la typologie de Pierret"
+    },
+    {
+      "fichier": "figures/vigilance.svg",
+      "question": "21",
+      "legende": "Du signal enregistré à la décision professionnelle"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des vingt-trois argumentations personnelles, des vingt-trois relances et de trois schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison au fascicule de 69 pages et contrôle des numéros, des dénominateurs, de la décision Gravier, de la distinction entre COMPAS et l’imagerie et des liens au document."
+    }
+  ]
+}
