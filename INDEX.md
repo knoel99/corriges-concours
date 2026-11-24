@@ -167,6 +167,7 @@
 | 2026 | BEL | BL | Anglais (oral à option) — Bamford et Peterloo | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/brut.md) | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/guide.md) |
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
 | 2025 | BEL | BL | Allemand | [md](2025/bel/bel_bl_allemand_2025/brut.md) | [md](2025/bel/bel_bl_allemand_2025/guide.md) |
+| 2025 | BEL | BL | Allemand (oral, option) | [md](2025/bel/bel_bl_allemand-oral-option_2025/brut.md) | [md](2025/bel/bel_bl_allemand-oral-option_2025/guide.md) |
 | 2025 | BEL | BL | Anglais | [md](2025/bel/bel_bl_anglais_2025/brut.md) | [md](2025/bel/bel_bl_anglais_2025/guide.md) |
 | 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
 | 2025 | BEL | BL | Chinois | [md](2025/bel/bel_bl_chinois_2025/brut.md) | [md](2025/bel/bel_bl_chinois_2025/guide.md) |
