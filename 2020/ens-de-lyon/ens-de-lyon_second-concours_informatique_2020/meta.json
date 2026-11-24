@@ -1,0 +1,47 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2020",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2020,
+    "duree_heures": 3
+  },
+  "questions": 24,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2c2020_info.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/01/20_2CC_rap_eInfo.pdf",
+    "sujet_sha256": "c281d2b16190a1245493ddba172f80903c94dee8f681559852a6d2c2df7f2acd"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q09-confluence.svg",
+      "question": "Q9",
+      "legende": "À gauche les deux chemins rejoignent la feuille n. À droite, les réducteurs X et X − 1 donnent deux feuilles depuis X. La terminaison seule ne garantit pas leur unicité."
+    },
+    {
+      "fichier": "figures/q12-poids-binaire.svg",
+      "question": "Q12",
+      "legende": "La réduction de X³ par X³ − X² − X − 1 remplace le poids binaire 1000 par 0111. Même le gain maximal aux rangs inférieurs ne compense pas la perte du bit dominant."
+    },
+    {
+      "fichier": "figures/q17-jonction-translation.svg",
+      "question": "Q17",
+      "legende": "Pour f = X − 1, la réduction 2X → 2 est translatée par deux polynômes h. Dans le second cas, le sommet de gauche est déjà le descendant commun."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 solutions et de leurs indications sur les polynômes et les graphes de réduction. Lecture du PDF de six pages et du rapport du jury, preuve avec annulations à la question 17, examen de la borne de sortie à la question 2, trois illustrations. Exécution du code sur des familles exhaustives de polynômes et vérification des décisions par division euclidienne exacte."
+    }
+  ]
+}
