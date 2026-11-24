@@ -1,0 +1,41 @@
+{
+  "slug": "centrale-supelec_mp-mpi-pc-psi-tsi_chinois_2026",
+  "epreuve": {
+    "concours": "Centrale-Supélec",
+    "filiere": "MP-MPI-PC-PSI-TSI",
+    "matiere": "Chinois",
+    "annee": 2026
+  },
+  "questions": 1,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf#page=30"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la synthèse en chinois des 10 documents sur les pages physiques 30 à 33 du PDF officiel, du guidage et du schéma. Contrôle du titre et du décompte de 499 caractères chinois."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/lecture-croisee.svg",
+      "question": "Synthèse",
+      "legende": "De l’information à l’interprétation"
+    }
+  ]
+}
