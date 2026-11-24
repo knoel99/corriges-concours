@@ -1,0 +1,55 @@
+{
+  "slug": "ens_bcpst_anglais_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "BCPST",
+    "matiere": "Anglais",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/three-sources.svg",
+      "question": "Synthèse",
+      "legende": "Three levels of vaccination policy"
+    },
+    {
+      "fichier": "figures/school-exemptions.svg",
+      "question": "Synthèse",
+      "legende": "Two entries from the January 2026 NBC map"
+    },
+    {
+      "fichier": "figures/argument-clinic.svg",
+      "question": "Essai",
+      "legende": "Who decides what an evening clinic should achieve?"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=6"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante sur les trois documents et la consigne. Les dérogations en Oregon et Californie, la chronologie, les deux longueurs et les articulations de la version ont été vérifiées."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

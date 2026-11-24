@@ -1,0 +1,56 @@
+{
+  "slug": "bel_al_commentaire-philosophique-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Commentaire philosophique (Ulm)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "commentaire",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/options_francais_philosophie.pdf#page=3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/de-matiere-usage.svg",
+      "question": "Premier mouvement",
+      "legende": "Ce qui tombe et la manière de jouer"
+    },
+    {
+      "fichier": "figures/objet-attention.svg",
+      "question": "Deuxième mouvement",
+      "legende": "La même traversée, deux questions"
+    },
+    {
+      "fichier": "figures/traversee-epictete.svg",
+      "question": "Troisième mouvement",
+      "legende": "La tâche se déplace au cours de la traversée"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Comparaison au passage officiel (Entretiens, II, 5, traduction de Robert Muller), vérification des deux premiers exemples, de la place du passager et de la dernière comparaison."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

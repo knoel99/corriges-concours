@@ -1,0 +1,56 @@
+{
+  "slug": "ens_bcpst_francais_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "BCPST",
+    "matiere": "Français",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-perspectives.svg",
+      "question": "Introduction",
+      "legende": "Qui fait l’expérience du même milieu ?"
+    },
+    {
+      "fichier": "figures/carte-nietzsche.svg",
+      "question": "Plan",
+      "legende": "Du monde sans intentions au jugement sur l’action"
+    },
+    {
+      "fichier": "figures/limites-de-la-preuve.svg",
+      "question": "Méthode",
+      "legende": "Deux questions à poser à un exemple biologique"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/261239_bcpst_francais_2026.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "gabarit": "dissertation",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante sur le sujet, les trois œuvres, la plongée à Ceylan et la distinction des normes vitales et des règles morales."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

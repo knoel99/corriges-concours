@@ -1,0 +1,82 @@
+{
+  "slug": "ens_mp_maths-d_2025",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2025
+  },
+  "questions": 48,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025.mathsd.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/11/Rapport_ECRIT_Maths_D_2025.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/q9-residus.svg",
+      "question": "Q9",
+      "legende": "Pour les parties 2 et 3, chaque classe modulo 6 suit une progression de raison un quand le second membre augmente de six."
+    },
+    {
+      "fichier": "figures/q17-polaire.svg",
+      "question": "Q17",
+      "legende": "Les quatre sommets du carré définissent les quatre côtés du losange polaire. Les axes des deux dessins ont la même échelle."
+    },
+    {
+      "fichier": "figures/q23-tranche.svg",
+      "question": "Q23",
+      "legende": "À une hauteur strictement comprise entre les valeurs extrêmes, le relatif intérieur du polygone coupe la droite en un intervalle ouvert, figuré en vert."
+    },
+    {
+      "fichier": "figures/q27-triangulation.svg",
+      "question": "Q27",
+      "legende": "Le barycentre du polygone est relié aux sommets et aux milieux des arêtes. Les triangles voisins possèdent ainsi les mêmes subdivisions sur leur frontière."
+    },
+    {
+      "fichier": "figures/q32-cycle.svg",
+      "question": "Q32",
+      "legende": "Sur ce cycle à six arêtes, chaque ligne et chaque colonne reçoit une perturbation positive et une négative. Les sommes restent constantes."
+    },
+    {
+      "fichier": "figures/q37-parallelepipede.svg",
+      "question": "Q37",
+      "legende": "Les vecteurs (2,0) et (1,2) délimitent une cellule fondamentale. Les côtés opposés en pointillés sont exclus du parallélogramme semi-ouvert."
+    },
+    {
+      "fichier": "figures/q40-visible.svg",
+      "question": "Q40",
+      "legende": "La partie du bord visible depuis y est en rouge. Sa projection sur la droite H conserve l’ordre des faces et a une réalisation convexe."
+    },
+    {
+      "fichier": "figures/q44-segment.svg",
+      "question": "Q44",
+      "legende": "Les deux cônes de l’intervalle entier de 1 à 5 s’étendent dans des directions opposées. Le théorème additionne leurs fractions rationnelles."
+    },
+    {
+      "fichier": "figures/q46-ehrhart.svg",
+      "question": "Q46",
+      "legende": "Les trois premiers dilatés du triangle unité contiennent 3, 6 et 10 points entiers. La formule générale est (t+1)(t+2)/2."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Comparaison des 48 réponses au sujet officiel et au rapport. Relecture croisée des développements suivant un poids, de la projection centrale des faces visibles et du calcul aux hauteurs nulles et positives dans les théorèmes d’Ehrhart."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

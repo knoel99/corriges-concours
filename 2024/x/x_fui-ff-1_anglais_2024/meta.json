@@ -1,0 +1,56 @@
+{
+  "slug": "x_fui-ff-1_anglais_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Anglais",
+    "annee": 2024
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/curriculum-choices.svg",
+      "question": "1",
+      "legende": "What a common curriculum makes possible"
+    },
+    {
+      "fichier": "figures/systems.svg",
+      "question": "4",
+      "legende": "Reasoning across school subjects"
+    },
+    {
+      "fichier": "figures/essay-cancelled-exam.svg",
+      "question": "E",
+      "legende": "Checking an appealing school announcement"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20D'ANGLAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante de la compréhension, des lignes citées et de l’essai face aux originaux de Monbiot ou Hunt. Longueurs et reformulation contrôlées."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "bel_al_deuxieme-composition-de-philosophie-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Deuxième composition de philosophie (Lyon)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=3",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Philosophie%202026.pdf#page=11"
+  },
+  "figures": [
+    {
+      "fichier": "figures/registre-usages.svg",
+      "question": "Introduction",
+      "legende": "Trois histoires d’un registre"
+    },
+    {
+      "fichier": "figures/hypothese-trace.svg",
+      "question": "Partie II",
+      "legende": "Ce qu’un document permet de conclure"
+    },
+    {
+      "fichier": "figures/haiti-actions.svg",
+      "question": "Partie III",
+      "legende": "Saint-Domingue et Haïti : des actes de portées différentes"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Comparaison au sujet et au rapport de spécialité. Relecture de la distinction action/connaissance, de Marx, de Trouillot et de la chronologie de Saint-Domingue."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

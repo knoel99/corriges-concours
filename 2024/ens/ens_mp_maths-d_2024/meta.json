@@ -1,0 +1,72 @@
+{
+  "slug": "ens_mp_maths-d_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2024
+  },
+  "questions": 45,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/24_mp_sujet_mathd.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/24_mp_rap_emathd.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/q08-carres.svg",
+      "question": "Q8",
+      "legende": "Les coefficients non nuls sont aux rangs carrés. Les intervalles de zéros qui les précèdent deviennent arbitrairement longs."
+    },
+    {
+      "fichier": "figures/q10-fermat.svg",
+      "question": "Q10",
+      "legende": "Les deux sommes de puissances de 2 et de 3 aux indices m et 7m ont toujours le même reste modulo 7."
+    },
+    {
+      "fichier": "figures/q18-transformee.svg",
+      "question": "Q18",
+      "legende": "La transformation envoie l’exponentielle de x/2 sur une fraction dont l’unique pôle est en x égal à deux."
+    },
+    {
+      "fichier": "figures/q35-factorielle.svg",
+      "question": "Q35",
+      "legende": "La factorielle dépasse toute puissance géométrique fixée. Les deux logarithmes décimaux sont représentés pour la base six."
+    },
+    {
+      "fichier": "figures/q36-bande.svg",
+      "question": "Q36",
+      "legende": "Pour r égal à deux, la zone bleue regroupe les indices kr à 10kr. Après un seuil en k, c’est sur cette bande que la divisibilité impose la première annulation."
+    },
+    {
+      "fichier": "figures/q44-bessel.svg",
+      "question": "Q44",
+      "legende": "La fonction de Bessel vaut un à l’origine. Les six zéros non nuls représentés sont des traversées de l’axe horizontal."
+    },
+    {
+      "fichier": "figures/q45-division.svg",
+      "question": "Q45",
+      "legende": "Dans cet exemple, le facteur x − 1 s’annule en un et le quotient exponentiel s’y prolonge analytiquement."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Contrôle des 45 solutions sur le sujet et le rapport de la session. Vérification de la congruence des sommes de puissances, du sens des implications sur les pôles, de la divisibilité et du domaine entier des indices de propagation."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}
