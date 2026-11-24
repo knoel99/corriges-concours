@@ -12,8 +12,8 @@
     "model": "GPT-6"
   },
   "redaction": "Rédaction originale par deux agents IA de la famille GPT-6 d'après l'énoncé officiel, ses figures et l'annexe. Chaque agent a contre-relu les questions de l'autre.",
-  "date_revision": "2026-11-22",
-  "modele_revision": "GPT-6 (Codex)",
+  "date_revision": "2026-11-24",
+  "modele_revision": "gpt-6.2-astra",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_modelisation_xusr_26_allege.pdf",
     "page_officielle": "https://www.ens.psl.eu/rapports-et-sujets-2026-psi",
@@ -23,7 +23,7 @@
     {
       "fichier": "figures/q02-vitesse-mission.svg",
       "question": "Q2",
-      "legende": "La loi de montée calculée plafonne à 135,7 m/s avec les données du tableau. La vitesse de palier prescrite vaut 153 m/s."
+      "legende": "La figure 4 place le début du palier à 559 s. Avec les forces et les masses de la figure 3, la montée atteint 6 500 m à 647 s et à 135,6 m/s."
     },
     {
       "fichier": "figures/q05-bilan-energetique.svg",
@@ -106,6 +106,35 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-22",
+      "modifications": null,
+      "tour": 1,
+      "perimetre": "Relecture croisée des questions de chaque rédacteur par l’autre, attestée dans la métadonnée d’origine.",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Q1 à Q52 dans les deux éditions sur le sujet officiel, figures et annexe. Recalcul indépendant de la fin de montée et du travail de traînée, correction du graphique Q2. Bilans thermodynamiques et cinématiques, rang du modèle polynomial, impédance et unités électriques contrôlés.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
     }
-  ]
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Q1 à Q52 dans les deux éditions sur le sujet officiel, figures et annexe. Recalcul indépendant de la fin de montée et du travail de traînée, correction du graphique Q2. Bilans thermodynamiques et cinématiques, rang du modèle polynomial, impédance et unités électriques contrôlés."
+  }
 }
