@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 4.8 High standard
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet suit la mission DART (2021–2022) : dévier un astéroïde en le percutant avec une sonde. Il mêle mécanique céleste, électrostatique avec charge d'espace et exploitation de données réelles (deux figures tirées d'articles). Il compte **35 questions** courtes ; l'énoncé demande explicitement des « réponses courtes ».
@@ -68,9 +76,9 @@ Le vecteur $\vec L_O=\vec r\wedge m\vec v$ est donc constant. Le vecteur positio
 
 La trajectoire de Didymos est une ellipse dont le Soleil occupe un **foyer** (et non le centre). Les distances au Soleil au périhélie et à l'aphélie sont $r_{\min}$ et $r_{\max}$, et le grand axe vaut leur somme.
 
-La distance Terre–Didymos $d$ est maximale quand Didymos est à son aphélie et que la Terre est de l'autre côté du Soleil, alignée avec lui :
+À tout instant, l’inégalité triangulaire donne $d\leq r_{\mathrm{Didymos}}+r_0\leq r_{\max}+r_0$. La borne supérieure correspond à un alignement avec le Soleil entre la Terre et Didymos, lorsque Didymos se trouve à l’aphélie. Sur les cinquante années représentées, les plus hauts maxima ont presque la même valeur. On les utilise comme une estimation de cette borne.
 
-$$d_{\max}=r_{\max}+r_0 .$$
+![Figure 1 — Orbite de la Terre et ellipse de Didymos à la même échelle. Le Soleil est au foyer de l’ellipse. L’alignement dessiné donne la borne supérieure de la distance entre les deux corps.](figures/q02-distance-terre-didymos.svg)
 
 La figure donne $d_{\max}\simeq3{,}25\,r_0$, donc $r_{\max}\simeq2{,}25\,r_0$. Le demi-grand axe est la demi-somme des distances extrêmes au Soleil :
 
@@ -262,7 +270,7 @@ C'est un minimum, donc un équilibre stable.
 
 Allure (figure 1) : $E_{p,\text{eff}}\to+\infty$ en $r\to0$ et $E_{p,\text{eff}}\to0^-$ à l'infini.
 
-![Figure 1 — Énergie potentielle effective : minimum en $r_0$ (orbite circulaire), petites oscillations de $r$ autour](figures/q09-potentiel-effectif.svg)
+![Figure 2 — Énergie potentielle effective : minimum en $r_0$ (orbite circulaire), petites oscillations de $r$ autour](figures/q09-potentiel-effectif.svg)
 
 > [!PIEGE]
 > Écrire $E_{p,\text{eff}}(r_0)=0$. Le rapport 2026 (p. 3–4) : « Une erreur fréquente a été de considérer que l'énergie potentielle effective devait elle-même s'annuler » en $r_0$. L'équilibre se lit sur la dérivée, pas sur la valeur ; d'ailleurs $E_{p,\text{eff}}(r_0)=-\frac12mv_0^2<0$.
@@ -358,7 +366,7 @@ Entre l'impulsion et l'impact s'écoulent 3/4 d'année, soit $\frac34T_{\text{DA
 - Si $v_1>0$ (vers l'extérieur), $A>0$ : le maximum est atteint à $\omega t=\pi/2$, soit $t=T/4$.
 - Si $v_1<0$ (vers le Soleil), $A<0$ : $r_1$ devient d'abord négatif (périhélie à $T/4$), et le maximum est atteint à $\omega t=3\pi/2$, soit $t=3T/4$.
 
-![Figure 2 — Écart radial $r_1(t)$ : l'aphélie est atteint à $T/4$ si $v_1>0$, à $3T/4$ si $v_1<0$](figures/q14-oscillation-radiale.svg)
+![Figure 3 — Écart radial $r_1(t)$ : l'aphélie est atteint à $T/4$ si $v_1>0$, à $3T/4$ si $v_1<0$](figures/q14-oscillation-radiale.svg)
 
 L'aphélie est atteint $3T/4$ après l'impulsion, donc $A<0$ et $v_1<0$ : **l'impulsion était dirigée vers le Soleil.**
 
@@ -428,7 +436,7 @@ $$\boxed{\vec T=\vec 0}$$
 
 #### Solution
 
-![Figure 3 — Orbite elliptique : Soleil au foyer, sens de parcours, $\vec v_P$, $\vec v_A$ et $\vec T$ porté par le petit axe](figures/q17-orbite-vecteur-t.svg)
+![Figure 4 — Orbite elliptique : Soleil au foyer, sens de parcours, $\vec v_P$, $\vec v_A$ et $\vec T$ porté par le petit axe](figures/q17-orbite-vecteur-t.svg)
 
 Le Soleil occupe le **foyer** proche du périhélie $P$ ; l'aphélie $A$ est le sommet opposé ; l'orbite est parcourue dans le sens trigonométrique.
 
@@ -609,7 +617,7 @@ En régime stationnaire, les ions situés entre les plaques reçoivent par unit�
 
 **La poussée vaut $F(d)$ et est dirigée selon $-\vec u_x$**, à l'opposé de l'éjection des ions.
 
-![Figure 4 — Moteur ionique : ions accélérés de $x=0$ à $x=d$ puis éjectés vers $+x$, poussée $F(d)$ selon $-\vec u_x$](figures/q25-moteur-ionique.svg)
+![Figure 5 — Moteur ionique : ions accélérés de $x=0$ à $x=d$ puis éjectés vers $+x$, poussée $F(d)$ selon $-\vec u_x$](figures/q25-moteur-ionique.svg)
 
 > [!PIEGE]
 > Se tromper de sens : les ions positifs vont vers le potentiel le plus bas ($V_0<0$ en $x=d$), donc sont éjectés vers $+x$ ; la sonde est poussée vers $-x$.
@@ -731,6 +739,8 @@ Cette forme vérifie $V(0)=0$, $V(d)=V_0$ et $V'(0)=0$, donc $E(0)=0$, cohérent
 > [!METHODE]
 > Pour vérifier une solution en loi de puissance, on identifie les exposants puis les coefficients ; le second point donne souvent une relation physique intéressante (ici le courant maximal transportable).
 
+Le modèle explique aussi la condition singulière à l’entrée. Comme $v\propto\sqrt{-V}\propto x^{2/3}$, la densité de charge $j/v$ varie comme $x^{-2/3}$. Sa divergence est intégrable. Une tranche d’épaisseur $\ell$ près de l’entrée contient une charge par unité de surface proportionnelle à $\ell^{1/3}$.
+
 ### Question 31
 
 > [!INDICATION]
@@ -745,7 +755,7 @@ Sans charge d'espace, $V''=0$ : $V=V_0\,x/d$ (droite, champ uniforme). Avec char
 | $V/V_0$ (charge d'espace) | 0 | 0,16 | 0,40 | 0,68 | 1 |
 | $V/V_0$ (vide) | 0 | 0,25 | 0,50 | 0,75 | 1 |
 
-![Figure 5 — Potentiel $V(x)$ : charge d'espace ($V_0(x/d)^{4/3}$, tangente horizontale en 0) et condensateur vide (droite)](figures/q31-potentiel-child-langmuir.svg)
+![Figure 6 — Potentiel $V(x)$ : charge d'espace ($V_0(x/d)^{4/3}$, tangente horizontale en 0) et condensateur vide (droite)](figures/q31-potentiel-child-langmuir.svg)
 
 Comme $V_0<0$ et $(x/d)^{4/3}<x/d$ sur $]0,d[$, la courbe avec charge d'espace reste **au-dessus** de la droite.
 
@@ -801,9 +811,9 @@ $$\boxed{\frac{R_1}{D}\approx0{,}35\ \text{à}\ 0{,}4}$$
 
 On obtient aussi $R_2/D\approx0{,}08$, soit $R_2/R_1\approx0{,}2$, cohérent avec Q32.
 
-Dessin à l'échelle (figure 6, avec $R_1\approx0{,}37\,D$ et $R_2\approx0{,}08\,D$) : Didymos occupe plus du tiers du rayon orbital.
+Dessin à l'échelle (figure 7, avec $R_1\approx0{,}37\,D$ et $R_2\approx0{,}08\,D$) : Didymos occupe plus du tiers du rayon orbital.
 
-![Figure 6 — Astéroïde double à l'échelle ($R_1\approx0{,}37\,D$, $R_2\approx0{,}08\,D$) et zone où S est caché vu de la Terre](figures/q33-asteroide-double-echelle.svg)
+![Figure 7 — Astéroïde double à l'échelle ($R_1\approx0{,}37\,D$, $R_2\approx0{,}08\,D$) et zone où S est caché vu de la Terre](figures/q33-asteroide-double-echelle.svg)
 
 > [!METHODE]
 > Utiliser les deux largeurs (contacts extérieurs et fond plat) donne à la fois $R_1/D$ et $R_2/D$, et un contrôle de cohérence avec Q32. Une approximation linéaire $\Delta t/P\approx R_1/(\pi D)$ est acceptable mais doit être signalée, car $R_1/D$ n'est pas petit.
@@ -826,16 +836,17 @@ Dessin à l'échelle (figure 6, avec $R_1\approx0{,}37\,D$ et $R_2\approx0{,}08\
 
 Les deux creux correspondent à S devant puis derrière Didymos. Sur une orbite circulaire, ils sont séparés d'une demi-révolution : $\Delta t=P/2$ (creux centrés vers $0{,}25$ et $0{,}75$ sur la figure).
 
-La masse de S est négligeable devant $M_1=\frac43\pi R_1^3\rho_1$, puisque $(R_2/R_1)^3\approx10^{-2}$. Pour S en orbite circulaire autour de Didymos :
+Pour tenir compte des deux corps, appliquons la loi de Kepler à leur séparation $D$ :
 
-$$\begin{aligned}
-\left(\frac{2\pi}{P}\right)^2D&=\frac{GM_1}{D^2}\\
-&=\frac{4\pi G\rho_1}{3}\,\frac{R_1^3}{D^2}
-\end{aligned}$$
+$$\frac{4\pi^2D^3}{P^2}=G(M_1+M_2),\qquad
+\rho_1+\rho_2\left(\frac{R_2}{R_1}\right)^3
+=\frac{3\pi}{G P^2}\left(\frac{D}{R_1}\right)^3.$$
 
-$$\boxed{\rho_1=\frac{3\pi}{GP^2}\left(\frac{D}{R_1}\right)^3=\frac{3\pi}{4G\,\Delta t^2}\left(\frac{D}{R_1}\right)^3}$$
+La photométrie donne les rapports des rayons. Elle fixe donc exactement la combinaison des densités au membre de gauche. Dans l’approximation du sujet, Dimorphos est un satellite de masse négligeable. Si les deux densités ont le même ordre de grandeur, le rapport des masses vaut environ $0{,}204^3\simeq0{,}0085$. On obtient alors
 
-$R_1/D$ venant de Q33, **$\rho_1$ est déterminée par la seule mesure de $\Delta t$.** Avec une période d'environ 12 h et $R_1/D\approx0{,}33$, on trouve $\rho_1\sim2\times10^3$ kg·m$^{-3}$, valeur typique d'un astéroïde rocheux poreux.
+$$\boxed{\rho_1\simeq\frac{3\pi}{4G\,\Delta t^2}\left(\frac{D}{R_1}\right)^3}.$$
+
+À titre d’illustration, avec $P=12$ h et $R_1/D=0{,}37$ lu à la question 33, on obtient $1{,}49\times10^3\ \mathrm{kg\,m^{-3}}$. La fourchette de lecture $0{,}35$ à $0{,}40$ donne environ $1{,}2$ à $1{,}8\times10^3\ \mathrm{kg\,m^{-3}}$. L’incertitude du rayon intervient au cube.
 
 > [!METHODE]
 > Les longueurs absolues ($R_1$, $D$) sont inconnues, mais seul leur rapport intervient : c'est ce qui rend la mesure possible depuis la Terre.
@@ -869,7 +880,9 @@ $$\begin{aligned}
 
 $$\boxed{\frac{\Delta v}{v}=+1{,}6\,\%}$$
 
-La vitesse de S a augmenté sans changer de direction : DART, de vitesse parallèle à celle de S, **a percuté S dans le sens de son mouvement**. Si la période avait diminué (cas de la mission réelle), on aurait conclu à un impact de face.
+La vitesse de S a augmenté sans changer de direction : DART, de vitesse parallèle à celle de S, **a percuté S dans le sens de son mouvement**. Avec les données de l’énoncé, la loi de Kepler exacte donne $a'/D=(1{,}048)^{2/3}=1{,}03175$. La conservation de la position à cet instant donne $v'/v=\sqrt{2-D/a'}=1{,}01527$, ce qui contrôle les deux développements au premier ordre.
+
+Les observations de la mission ont donné un raccourcissement de la période de 32 min 42 s immédiatement après l’événement, puis de 33 min 15 s après quelques semaines, pour une période initiale proche de 11 h 55 min. L’augmentation de 4,8 % est donc une hypothèse propre à l’exercice. [Mesures de la période par le JPL, NASA](https://www.jpl.nasa.gov/news/nasa-study-asteroids-orbit-shape-changed-after-dart-impact/)
 
 > [!PIEGE]
 > Utiliser $v^2=GM_1/a$, valable seulement sur une orbite circulaire : on trouverait une vitesse qui diminue, donc le mauvais sens d'impact. Après l'impact, l'orbite n'est plus circulaire ; la relation de l'orbite circulaire ne sert que pour l'état d'avant l'impact, et il faut écrire l'énergie au point de l'impact.
