@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve écrite de sciences sociales appliquées aux activités physiques et sportives dure deux heures. Il faut caractériser et expliquer les innovations intervenues depuis les années 1970. Le rapport du jury invite à étudier ensemble les modalités de pratique, les usages de ces activités et les groupes qui les transforment. [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-2-sciences-sociales-2sep-2026_1791303280103-pdf) · [Rapport de jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-shsaps-2-ss-2026_1791304672348-pdf)

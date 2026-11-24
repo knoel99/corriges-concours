@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : Claude Code (claude-opus-5-5) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Épreuve n° 1 de la filière PC, durée 4 h, calculatrice interdite. Notations du sujet : $\operatorname{ch},\operatorname{sh},\operatorname{th}$, le produit scalaire usuel $x\cdot y$ de $\mathbb R^d$, et $\phi(\lambda)=\ln E[e^{\lambda\cdot X}]$.
 
 **Erratum de l'énoncé (question 21).** Avec la fonction $I$ de l'énoncé, la limite de la question 21 vaut $I(x)+\ln 2$, et non $I(x)$ : il manque un terme constant en $\ln 2$, ce que confirme le rapport du jury. De même, la convergence admise après la question 22 s'écrit en toute rigueur

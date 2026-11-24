@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : Claude Code (claude-opus-5-5) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **Thème.** Le sujet étudie deux modèles jouets du ferromagnétisme : des « spins » $\sigma_i=\pm1$ indépendants et uniformes, pondérés par l'exponentielle d'une énergie. On veut calculer l'**énergie libre** (limite de $\frac1N\ln$ d'une espérance) et l'**aimantation** (dérivée de l'énergie libre par rapport au champ $h$).

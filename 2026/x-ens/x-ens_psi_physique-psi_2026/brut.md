@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Épreuve du 15 avril 2026, quatre heures sans calculatrice. Les 47 questions portent sur la traction ferroviaire, le dimensionnement de l’entrefer et la physique des jonctions PN. Les valeurs estimées par le candidat sont explicitées aux questions 5, 23 et 31.
 
 ## I. Ondes transversales sur la caténaire

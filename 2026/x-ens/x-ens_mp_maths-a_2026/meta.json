@@ -54,5 +54,19 @@
     "date": "2026-11-22",
     "modele": "OpenAI Codex (famille GPT-6)",
     "verification": "Confrontation des 34 questions et sous-questions au sujet officiel MP-MPI et aux observations du jury. Contrôle des identités de compression, du signe de polarisation et des bornes sur les valeurs numériques. Contre-relecture indépendante des questions 1 à 17 et 18 à 30-b, et vérification des cinq nouveaux schémas."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

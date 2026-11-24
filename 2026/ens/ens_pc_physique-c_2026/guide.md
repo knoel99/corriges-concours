@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Un tas de grains peut conserver une pente sur laquelle des grains déjà en mouvement continuent de couler. De même, un aimant peut conserver son orientation après le renversement du champ extérieur. Cette épreuve de six heures, sans calculatrice, étudie les seuils qui rendent ces deux comportements possibles et le coût énergétique des retournements magnétiques.

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Une forêt possède quatre espèces : combien de photos faut-il pour les rencontrer toutes ? Si la quatrième est très rare, un échantillon paraît rapidement bien rempli alors qu'il reste loin d'être complet. Le sujet étudie cet écart entre le nombre d'espèces déjà vues et le temps nécessaire pour finir le recensement.

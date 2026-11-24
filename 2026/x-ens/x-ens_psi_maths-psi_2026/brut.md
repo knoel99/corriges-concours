@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 On note $S(f)=\{x:\nabla f(x)=0\}$. Les majuscules $X,B,\dots$ représentent des colonnes, et $M^{\mathsf T}$ désigne la transposée. Le produit scalaire et la norme sont euclidiens.
 
 Le gradient $\nabla f(x)$ est écrit en ligne. La classe $\mathcal E$ comprend les fonctions $f(x)=X^{\mathsf T}MX/2-B^{\mathsf T}X$, avec $M$ symétrique. Sa sous-classe $\mathcal E_0$ regroupe les fonctions minorées. La transformation étudiée est

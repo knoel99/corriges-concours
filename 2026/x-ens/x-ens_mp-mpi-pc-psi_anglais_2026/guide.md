@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Le 15 avril 2026, les candidats de MP, MPI, PC et PSI disposaient de quatre heures pour rédiger deux textes en anglais, sans dictionnaire ni traducteur. La synthèse porte sur les documents 1 à 4 et compte entre 600 et 675 mots, avec un titre obligatoire. Le second exercice demande un texte d’opinion de 500 à 600 mots en réponse au document 5. Le jury précise que chacune des deux parties compte pour la moitié de la note. Un partage possible consiste à réserver deux heures à chaque partie, décompte et relecture compris. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Anglais.pdf) · [Rapport du jury 2026](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Anglais%20OK.pdf)

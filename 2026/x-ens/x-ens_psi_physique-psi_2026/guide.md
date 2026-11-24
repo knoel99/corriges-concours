@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve du 15 avril 2026 dure quatre heures sans calculatrice. Elle suit trois éléments d’une installation de traction électrique. La caténaire conduit le courant jusqu’au train, le circuit magnétique assure la conversion électromécanique et les jonctions de puissance permettent de commander le moteur.

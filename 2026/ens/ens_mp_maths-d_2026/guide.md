@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve de six heures du concours de l’ENS Ulm porte sur l’approximation en loi et les inégalités de concentration. Les parties 1 et 2 sont indépendantes. Les trois applications de la partie 3 réutilisent l’outil de la partie 2 et peuvent être abordées séparément. Les 27 questions numérotées comprennent 42 items en comptant les subdivisions.

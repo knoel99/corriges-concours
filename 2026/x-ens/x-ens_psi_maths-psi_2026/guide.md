@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 En connaissant uniquement la longueur d'un gradient, peut-on retrouver la fonction, à une constante près ? Le sujet établit ce résultat dans trois situations, en dimension un, pour des quadratiques minorées, puis pour des fonctions dont la somme est quadratique. On dispose de quatre heures, sans calculatrice.

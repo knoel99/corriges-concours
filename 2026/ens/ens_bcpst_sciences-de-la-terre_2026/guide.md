@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 L’épreuve de quatre heures relie un trajet de course à la voile, la propagation du son, une faille transformante, la thermométrie du Pacifique et un arc volcanique. Commencez par identifier ce qui est mesuré sur chaque figure. Une durée peut changer sous l’effet de la distance, de la célérité ou des deux. Le document officiel place successivement en annexe les sept figures numérotées, après les 28 questions.
 
 ## Partie 1 · Physiographie et géodynamique de l’océan global

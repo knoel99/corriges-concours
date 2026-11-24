@@ -70,5 +70,19 @@
     "sujet_sha256": "70606db70a3ca6e6f4cb021eee7844df9a463903fa47541b2ff8bca545bff09b",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/PC_Physique%20B%20OK.pdf",
     "rapport_sha256": "982c99b5c5b001d91090577f02c51fd342f04fa2ccccedc1a52dc995501e64fd"
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

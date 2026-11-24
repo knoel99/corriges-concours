@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Les tirages $(X_r)$ sont indépendants et de même loi $p=(p_1,\ldots,p_N)^{\mathsf T}$. Le compteur $S_{n,i}$ donne le nombre d'observations de l'espèce $i$ en $n$ tirages, $Y_n$ le nombre d'espèces distinctes observées et $T_k$ le premier instant où ce nombre vaut $k$. On pose naturellement $Y_0=0$. Le domaine $\{p_i\in(0,1),\,\sum_i p_i=1\}$ suppose $N\geq2$. Les résultats pour la loi uniforme s'étendent à $N=1$ en prenant $p_1=1$.
 
 ## Partie I — Questions préliminaires

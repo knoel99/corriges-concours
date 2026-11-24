@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Un jeu matriciel et une méthode de descente numérique mènent ici à deux questions d’existence : trouver un point où aucun joueur ne gagne à changer seul de stratégie et trouver un minimiseur en répétant un pas de gradient. Le sujet donne deux chemins de preuve. Les parties I et II utilisent la projection sur un convexe, les parties III et IV utilisent les points fixes des applications qui ne dilatent pas les distances.
