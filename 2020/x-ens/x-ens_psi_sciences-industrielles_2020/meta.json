@@ -1,0 +1,67 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2020,
+    "duree_heures": 5
+  },
+  "questions": 68,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Sujet_1A_PSI_ScIndus.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2020/2020_Rapport_Ecrit_PSI_SI.pdf",
+    "sujet_sha256": "92144aa50150920b90dcda62fbb05981ae9e3b712da7dd3eaff1b4280d6f1a18"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q112-domaine.svg",
+      "question": "Q1.12",
+      "legende": "Reconstitution de DR1. Les sept limites sont numérotées comme dans le sujet. Le point de l’annexe A se trouve à l’intérieur de l’intersection colorée."
+    },
+    {
+      "fichier": "figures/q206-butee.svg",
+      "question": "Q2.6",
+      "legende": "Exemple de butée après le point mort. La patte d’un bras rencontre l’épaulement de l’autre, sous la droite joignant les attaches."
+    },
+    {
+      "fichier": "figures/q302-bistable.svg",
+      "question": "Q3.2",
+      "legende": "Deux bras de même longueur, avec une longueur libre de 1,7 l. Les minima symétriques sont séparés par la configuration alignée."
+    },
+    {
+      "fichier": "figures/q307-liaisons.svg",
+      "question": "Q3.7",
+      "legende": "Une chaîne de contrefiches est représentée. La seconde reproduit les mêmes liaisons entre le même bâti et la même jambe. Le verrou agit sur l’articulation des biellettes."
+    },
+    {
+      "fichier": "figures/q406-energies.svg",
+      "question": "Q4.6",
+      "legende": "Lecture approchée de DR2. L’aire totale sous le trait noir est la somme de l’énergie emmagasinée dans le gaz et de l’énergie dissipée par laminage."
+    },
+    {
+      "fichier": "figures/q507-bode-bo.svg",
+      "question": "Q5.7",
+      "legende": "DR3. Les trois cassures du module de la boucle ouverte sont à 0,1, 10 et 20 rad/s. Les transitions individuelles de phase se superposent."
+    },
+    {
+      "fichier": "figures/q511-bode-bf.svg",
+      "question": "Q5.11",
+      "legende": "Identification de la réponse en boucle fermée de DR4 et construction asymptotique. La pente terminale vaut −60 dB par décade."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 68 questions du train d’atterrissage A350-900, à partir du sujet, des cinq annexes, des quatre documents réponse et du rapport officiel. Sept figures originales. Vérifications numériques de la répartition des charges, du choix des pneus, de la cinématique et de l’énergie, des marges du PI et de la réponse indicielle. Identification du DR4 sur les courbes originales en gain et phase et comparaison au modèle complet du sujet."
+    }
+  ]
+}
