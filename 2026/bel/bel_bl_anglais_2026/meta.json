@@ -49,10 +49,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -76,6 +75,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante des cinq sources et de leur articulation avec Novak. L’accroche distingue le détenu mort à Halifax du fermier retourné chez sa mère dans le document de Dix.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux commentaires aux cinq documents et au rapport. Rectification du cadre temporel du témoignage de Halifax, de l’analogie historique de Martineau et de la mise en cause du récit de Louis Hartz.",
       "fournisseur": "codex"
     }
   ]
