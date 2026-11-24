@@ -1,0 +1,46 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-oral_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques (oral)",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_oral_etudes_classiques_dsa_sil_2026.pdf#page=1",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_oral_etudes_classiques_dsa_sil_2026.pdf",
+    "sujet_sha256": "984ea4f92fa5d0e580f454c19028330dc259b9d614597d9e67dcdeb416ddce14",
+    "thucydide": "https://beta.perseus.tufts.edu/urn%3Acts%3AgreekLit%3Atlg0003.tlg001.perseus-eng6/chapter%3A2.41/",
+    "lysias": "https://github.com/PerseusDL/canonical-greekLit/blob/master/data/tlg0540/tlg002/tlg0540.tlg002.perseus-grc2.xml",
+    "ciceron_orateur": "https://www.attalus.org/cicero/deoratore2E.html#342",
+    "ciceron_caton": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cicero/Cato_Maior_de_Senectute/text%2A.html#12"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Cinq textes, cinq gestes de la louange"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture comparative et diachronique des cinq textes décrits par le rapport, confrontation du grec édité de Lysias aux indices du texte 2 sans attribuer de bornes certaines au feuillet, examen de Thucydide II, 41, Lysias 70, Cicéron De oratore II, 342-348 et Caton majeur 12, questions et schéma."
+    }
+  ]
+}

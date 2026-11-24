@@ -1,0 +1,70 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sciences-sociales_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sciences sociales",
+    "annee": 2026,
+    "modalite": "écrit"
+  },
+  "intitule": "Quelle place donner à l’historicisation de son objet dans une recherche en sciences sociales ?",
+  "questions": 1,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_de_jury_sil2026_departement_de_sciences_sociales.pdf",
+    "rapport_sha256": "cd1445976bbbe1da4e0fbe8898829df4ddbc2a2aa4c339a6eebc8fe338c6268b",
+    "provenance_sujet": "Libellé reproduit par le jury, page 4. Attentes aux pages 3 à 5.",
+    "references": [
+      "https://catalogue.bnf.fr/ark:/12148/cb348671773",
+      "https://www.fayard.fr/livre/retour-sur-la-condition-ouvriere-9782213603384/",
+      "https://cup.columbia.edu/book/time-and-the-other/9780231537483/",
+      "https://www.insee.fr/fr/statistiques/5402123"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/categories.svg",
+      "question": "Dissertation",
+      "legende": "Trois descriptions d’une interruption du travail"
+    },
+    {
+      "fichier": "figures/composition.svg",
+      "question": "Dissertation",
+      "legende": "Un effet de composition sur un exemple fictif"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Dissertation, reprise de méthode, exemple comparatif chiffré et deux figures."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle du sujet exact dans le rapport, des indications territoriales et bibliographiques, de la portée des cas et du calcul sur les données fictives."
+    }
+  ]
+}
