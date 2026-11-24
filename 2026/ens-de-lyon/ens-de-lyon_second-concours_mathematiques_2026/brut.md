@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -20,6 +22,8 @@ Le déterminant de $fu=-uf$ donne $\det(f)\det(u)=(-1)^n\det(u)\det(f)$. Les deu
 
 Si $f(x)=\lambda x$, alors $f(u(x))=-u(f(x))=-\lambda u(x)$. Ainsi $u$ envoie $E_\lambda=\ker(f-\lambda I)$ dans $E_{-\lambda}$. Son inverse anticommute aussi avec $f$, car $u^{-1}f=-fu^{-1}$. Sa restriction envoie donc $E_{-\lambda}$ dans $E_\lambda$. Les deux restrictions sont des isomorphismes réciproques, d’où l’égalité des dimensions, y compris pour $\lambda=0$.
 
+![Figure 1 — L’automorphisme u échange les espaces propres associés à des valeurs opposées et son inverse réalise le trajet réciproque.](figures/espaces-propres-opposes.svg)
+
 ### Question 2b
 
 La diagonalisabilité donne $\operatorname{Im}f=\bigoplus_{\lambda\ne0}E_\lambda$, somme sur les valeurs propres non nulles. Celles-ci se répartissent en paires distinctes $\{\lambda,-\lambda\}$, chacune contribuant $2\dim E_\lambda$ au rang d’après 2a. Leur somme est paire. Le noyau, dont la dimension est libre, ne contribue pas au rang.
@@ -30,7 +34,7 @@ Posons $F=\operatorname{Im} f$, $K=\ker f$ et $r=\dim F$. Par le théorème du r
 
 ### Question 3b
 
-L’image $F$ est stable par $u$ car $u(f(x))=-f(u(x))$. La restriction $u_{|F}$ est injective, donc bijective sur $F$. Ses restrictions et celles de $f$ à $F$ sont ainsi deux automorphismes qui anticommutent. En appliquant la question 1 sur $F$, on obtient $r=\dim F$ pair. Si $F=\{0\}$, le résultat est immédiat.
+L’image $F$ est stable par $u$ car $u(f(x))=-f(u(x))$. La restriction $u_{|F}$ est injective, donc bijective sur $F$. Les restrictions de $u$ et de $f$ à $F$ sont ainsi deux automorphismes qui anticommutent. En appliquant la question 1 sur $F$, on obtient $r=\dim F$ pair. Si $F=\{0\}$, le résultat est immédiat.
 
 ## Problème — Préliminaires
 
@@ -41,6 +45,8 @@ Chaque carré $|v_i|^2$ est au plus $\|v\|_\infty^2$ et l’un d’eux atteint c
 ### Question 1b
 
 Pour $v=e_1$, les deux normes valent $1$. Pour $w=(1,\ldots,1)$, la norme infinie vaut $1$ et la norme euclidienne $\sqrt d$. Ces exemples restent valables en dimension un.
+
+![Figure 2 — Dans le plan, un vecteur porté par un axe et le sommet du carré réalisent respectivement les deux cas d’égalité.](figures/cercle-et-carre.svg)
 
 ### Question 2a
 
@@ -82,6 +88,8 @@ Pour $\lambda>0$, l’événement $Z>\alpha$ entraîne $e^{\lambda Z}>e^{\lambda
 ### Question 4c
 
 Le minimum du trinôme $n\lambda^2/2-\lambda\alpha$ sur $\lambda>0$ est atteint en $\lambda=\alpha/n$ et vaut $-\alpha^2/(2n)$. La variable $-Z$ a la même loi que $Z$, par symétrie de la famille de signes. Additionner les deux queues donne $\mathbb P(|Z|>\alpha)\le2e^{-\alpha^2/(2n)}$.
+
+![Figure 4 — Le meilleur majorant exponentiel de la queue positive s’obtient au minimum de la parabole.](figures/minimum-exponentiel.svg)
 
 ### Question 5a
 
@@ -155,6 +163,8 @@ En particulier les sommes de blocs entiers forment une série absolument converg
 
 Avec les signes $\{-1,1\}$ des questions 11 à 13, considérons les fonctions en escalier $r_k(t)=(-1)^{\lfloor 2^{k+1}t\rfloor}$ sur $[0,1[$, prolongées en $1$ par leur valeur à gauche, puis $f_k=r_k/(k+1)$. Elles sont continues par morceaux et $\|f_k\|_\infty=1/(k+1)\to0$. Sur les $2^{N+1}$ intervalles dyadiques de longueur $2^{-(N+1)}$, le vecteur $(r_0,\ldots,r_N)$ prend toutes les suites de $N+1$ signes. En effet $r_k$ dépend du $(k+1)$-ième chiffre binaire du numéro de l’intervalle, écrit sur $N+1$ chiffres depuis la gauche.
 
-Pour tout choix de signes et tous $m\le N$, il existe donc un intervalle où $r_k=\varepsilon_k$ pour $m\le k\le N$. La norme uniforme de la somme sur ce bloc vaut exactement $\sum_{k=m}^N1/(k+1)$, par réalisation de la borne triangulaire. Ces sommes ne tendent pas uniformément vers zéro quand $m,N\to\infty$ (prendre par exemple $N=2m+1$). Le critère de Cauchy uniforme est violé pour tout choix de signes.
+Fixons maintenant une suite de signes $(\varepsilon_k)$. Pour chaque $N$, l’un des intervalles dyadiques réalise exactement $(\varepsilon_0,\ldots,\varepsilon_N)$. Sur cet intervalle, les $N+1$ termes de la somme partielle $S_N=\sum_{k=0}^N\varepsilon_k f_k$ sont positifs. En combinant cette observation avec l’inégalité triangulaire, on obtient
+$$\|S_N\|_\infty=\sum_{k=0}^N\frac1{k+1}\longrightarrow+\infty.$$
+Toute suite uniformément convergente de fonctions bornées est bornée pour la norme uniforme. La série ne converge donc pas en norme uniforme, quel que soit le choix des signes.
 
 ![Figure 6 — Sur les huit intervalles dyadiques, les trois premières fonctions réalisent les huit triplets de signes.](figures/signes-dyadiques.svg)
