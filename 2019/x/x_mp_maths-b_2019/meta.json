@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2019",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2019
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPI_sujet_MathB.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MP_rap_eMathB.pdf",
+    "sha256_sujet": "a32a80ba69621ad4a2f5b410370f91a69397435e8ef5d188c84e11ee297dcbca"
+  },
+  "figures": [
+    {
+      "fichier": "figures/limite-viscosite.svg",
+      "question": "18b",
+      "legende": "Les solutions régulières ont une tangente horizontale au centre, le profil limite présente une pointe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification de toutes les sous-questions, continuité du maximum courant, comparaison par doublement des variables et convergence uniforme de la régularisation elliptique, figure des profils exacts.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
