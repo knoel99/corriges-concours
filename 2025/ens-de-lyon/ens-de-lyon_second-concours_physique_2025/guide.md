@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Cette composition de trois heures autorise la calculatrice. Le rapport du jury attribue 20 % de la note au questionnaire et demande des réponses concises. Le problème suit l’énergie de l’air et du cylindre jusqu’à la surface humide, puis étudie le délai nécessaire pour que le refroidissement atteigne le centre.
@@ -356,6 +358,8 @@ $D=0{,}6/(1000\times4200)=1{,}43\times10^{-7}\,\mathrm{m^2\,s^{-1}}$. En néglig
 La dépendance radiale vérifie $(rf')'+(K/D)rf=0$. Avec $X=r/R$ et $Q(X)=f(r)$, on obtient
 $$Q''+\frac1XQ'+\frac{KR^2}{D}Q=0\quad(0<X\le1),\qquad Q(0)=1,\quad Q'(0)=0.$$
 C’est l’équation de Bessel d’ordre zéro à argument $\sqrt{KR^2/D}\,X$. La condition de surface sélectionne les valeurs admissibles de $K$.
+
+Le temps du mode le plus lent peut être calculé dans le cas du tissu sans stockage thermique. La solution régulière de l’équation de Bessel est $Q(X)=J_0(\mu X)$ avec $\mu^2=KR^2/D$. En $X=1$, la condition d’échange conduit à $\mu J_1(\mu)=\mathrm{Bi}\,J_0(\mu)$ où $\mathrm{Bi}=hR/\lambda$. Les données du sujet donnent $\mathrm{Bi}=5$. La plus petite racine positive est $\mu_1\simeq1{,}990$, d’où $1/K_1\simeq19{,}4/1{,}990^2\simeq4{,}9\ \mathrm h$. Les 19 h demandées à la question 24 représentent l’échelle diffusive brute. Le mode de 4,9 h décrit la pente de fin de refroidissement du modèle, quand les autres modes se sont amortis.
 
 #### Question 26
 
