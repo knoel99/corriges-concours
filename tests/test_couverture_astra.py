@@ -64,3 +64,21 @@ def test_lien_vers_fiche_simple_ou_filiere_administrative():
     assert (
         couverture.fiche_site("x_fui-ff-1_physique_2021") == "x_fui-ff-1_physique_2021"
     )
+
+
+def test_signature_dans_le_corrige_visible_et_pdf_de_la_fiche_simple():
+    page = couverture.LectureHTML("brut")
+    page.feed("""
+      <div>Révision · GPT-6.2 Astra Ultra standard</div>
+      <article class="copie-prose"><p><i>Corrigé rédigé par IA, non officiel.</i></p>
+      <p><strong>Rédaction</strong> · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026</p>
+      <p>Question 1</p><p>Révision · GPT-6.2 Astra Ultra standard</p></article>
+      <a href="/api/catalog/documents/corriges/x-ens_mp_info_2026/brut.pdf">PDF</a>
+      <a href="/api/catalog/documents/corriges/x-ens_mp_info_2026/guide.pdf">PDF guidé</a>
+    """)
+    assert page.signatures() == {
+        "Rédaction · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    }
+    assert page.documents == {
+        "/api/catalog/documents/corriges/x-ens_mp_info_2026/brut.pdf"
+    }
