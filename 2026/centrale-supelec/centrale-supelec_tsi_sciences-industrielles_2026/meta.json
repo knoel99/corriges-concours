@@ -34,5 +34,63 @@
       "question": "Q35",
       "legende": "Réglage de Kp sur le Bode : φ = −120° en ω60 ≈ 3 rad/s, gain relevé de 6,8 dB"
     }
-  ]
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "date": "2026-11-06T13:21:11",
+      "modifications": true,
+      "perimetre": "Rédaction des deux corrigés.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Aération des corrigés et deux corrections de fond déclarées dans la métadonnée d’origine.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 37 questions, de la feuille de données et des documents réponse DR1 à DR5 du sujet officiel S026. Vérification du conditionnement des mesures, du filtre discret, des marges de stabilité, de la commande du moteur et du couple lors du remplacement du rotor et du réducteur. La rubrique officielle TSI ne propose pas encore le rapport de 2026.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "revision": {
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "date": "2026-11-24",
+    "verification": "Relecture des 37 questions, de la feuille de données et des documents réponse DR1 à DR5 du sujet officiel S026. Vérification du conditionnement des mesures, du filtre discret, des marges de stabilité, de la commande du moteur et du couple lors du remplacement du rotor et du réducteur. La rubrique officielle TSI ne propose pas encore le rapport de 2026."
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/S026.pdf"
+  }
 }
