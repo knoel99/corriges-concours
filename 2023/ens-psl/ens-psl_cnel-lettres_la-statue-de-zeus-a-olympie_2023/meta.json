@@ -1,0 +1,62 @@
+{
+  "slug": "ens-psl_cnel-lettres_la-statue-de-zeus-a-olympie_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "La statue de Zeus à Olympie",
+    "annee": 2023
+  },
+  "intitule": "La statue de Zeus à Olympie : Pausanias et la coupe de Victor Laloux",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-2.pdf",
+    "sujet_sha256": "e7662524a258dccaa00d392a830d9e7164fa90dbfc18e835af0a711d782caf36",
+    "references": [
+      "https://catzarts.beauxartsparis.fr/fr/notice/env-73-01-altis-d-olympie-a7c479a5-91ea-434c-9563-837385b37114",
+      "https://whc.unesco.org/en/list/517"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/dieu-et-regard.svg",
+      "question": "Argumentation",
+      "legende": "Zeus assis, attributs et position du visiteur"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire des deux pièces, lecture de la planche réorientée, description de Pausanias et projet d’étude des restitutions."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}
