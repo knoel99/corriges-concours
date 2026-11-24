@@ -34,5 +34,45 @@
       "question": "Q50",
       "legende": "gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ"
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/M085.pdf",
+    "annales_organisateur": "https://www.concours-centrale-supelec.fr/sujets-rapports"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "date": "2026-11-06T21:00:00",
+      "modifications": true,
+      "perimetre": "Production des corrigés brut et guidé.",
+      "fournisseur": "claude-code",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Aération des deux éditions, sans correction de fond déclarée dans l’archive de production.",
+      "fournisseur": "claude-code",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "date": "2026-11-24",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "agent": "astra_maths",
+      "perimetre": "Vérification des 52 réponses, des indications et des cinq figures sur le sujet officiel M085. En Q29, contre-exemple explicite à l’unicité de la préimage. En Q50, dérivation de l’orthogonalité des directions successives. Aucun rapport TSI 2026 dans la rubrique Rapports du jury de l’organisateur à la date de la relecture."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

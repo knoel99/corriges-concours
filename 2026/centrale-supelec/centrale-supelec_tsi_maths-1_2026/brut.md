@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Sujet : *La méthode des moindres carrés* (4 heures, calculatrice autorisée). Notations de l'énoncé : $\langle\cdot,\cdot\rangle$ et $\|\cdot\|_2$ désignent les produits scalaires et normes canoniques.
 
 Pour un sous-espace $F$ de dimension finie, $p_F$ désigne la projection orthogonale sur $F$.
@@ -494,6 +500,8 @@ Soit $y=Au'+d'$ une autre décomposition du même type. L'unicité de la décomp
 
 **Le vecteur $d$ et le vecteur $Au=p_{\operatorname{Col}(A)}(y)$ sont uniques ; $u$ est unique à un élément de $\ker A$ près.**
 
+Par exemple, prenons $A=\operatorname{Diag}(1,0)$ et $y=(1,2)^T$. Le résidu orthogonal est $d=(0,2)^T$, et tous les vecteurs $u=(1,t)^T$, $t\in\mathbb R$, vérifient $Au+d=y$. L’ensemble des solutions est une droite parallèle au noyau.
+
 *Remarque sur l'énoncé.* L'unicité de $u$ lui-même n'a lieu que si $\ker A=\{0\}$ : sinon $(u+h,d)$ convient pour tout $h\in\ker A$. C'est cohérent avec Q30, et seules l'existence et l'unicité de $d$ servent dans la suite.
 
 ### Question 30
@@ -733,6 +741,8 @@ Donc, avec $t_k=\frac{\|d_k\|_2^2}{\langle Sd_k,d_k\rangle}$,
 $$f(x_{k+1})-f(\ell)=\Phi(w_k,w_k)-\frac{\|d_k\|_2^4}{\langle Sd_k,d_k\rangle}.$$
 Enfin $\Phi(w_k,w_k)=\langle Sw_k,w_k\rangle=\langle d_k,S^{-1}d_k\rangle=f(x_k)-f(\ell)$. Cette quantité est strictement positive, car $w_k\neq0$ puisque $d_k\neq0$. En factorisant :
 $$\boxed{f(x_{k+1})-f(\ell)=\big(f(x_k)-f(\ell)\big)\left(1-\frac{\|d_k\|_2^4}{\langle A^TAd_k,d_k\rangle\langle(A^TA)^{-1}d_k,d_k\rangle}\right).}$$
+
+L’orthogonalité visible sur la figure découle aussi du choix du pas. En effet $d_{k+1}=d_k-t_k S d_k$, donc $\langle d_{k+1},d_k\rangle=\|d_k\|_2^2-t_k\langle S d_k,d_k\rangle=0$. Si $d_{k+1}=0$, l’itéré atteint exactement $\ell$.
 
 ![Figure 5 — gradient à pas optimal pour AᵀA = Diag(1, 4) : lignes de niveau de f elliptiques centrées en ℓ, pas consécutifs orthogonaux, trajectoire en zigzag vers ℓ](figures/q50-gradient-zigzag.svg)
 
