@@ -1,0 +1,72 @@
+{
+  "slug": "bel_al_commentaire-de-carte-geographique-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Commentaire de carte géographique (Lyon)",
+    "annee": 2026
+  },
+  "intitule": "Moûtiers et les vallées de Tarentaise",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Sp%C3%A9cialit%C3%A9%20g%C3%A9ographie%202026.pdf",
+    "sujet_sha256": "6d96c15faf688379e9d1ca15f192e7acc6d5bcc0ddf8ff9a2511d0d2c77831c2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/G%C3%A9ographie%202026.pdf#page=10",
+    "rapport_sha256": "9cbbb205072807aee1142a638abf77dcf4be49b0d87ecf7075277acd30b26fbd",
+    "precision_sujet": "L’archive publique de quatre pages comprend les consignes, la carte de situation, les statistiques et la légende. Les détails du SCAN 25 distribué séparément sont documentés par le rapport écrit, p. 10–18."
+  },
+  "figures": [
+    {
+      "fichier": "figures/reseaux-tarentaise.svg",
+      "question": "Lecture des localisations",
+      "legende": "De Moûtiers aux pôles de la Tarentaise"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture des p. 10–18 du rapport et des quatre pages de l’archive, incluant les deux annexes et la légende. Identification des observations attribuables au rapport en l’absence de la planche A2."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « Moûtiers et les vallées de Tarentaise » et du schéma « De Moûtiers aux pôles de la Tarentaise »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture visuelle des tableaux et de la carte régionale, recalcul du parc de résidences secondaires et des écarts de pauvreté, distinction des renvois au rapport pour la planche A2. Révision des fonctions urbaines et du schéma de situation."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

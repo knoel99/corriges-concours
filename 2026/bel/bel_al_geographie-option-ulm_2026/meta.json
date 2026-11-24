@@ -1,0 +1,68 @@
+{
+  "slug": "bel_al_geographie-option-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Géographie (option Ulm)",
+    "annee": 2026
+  },
+  "intitule": "Les échelles de la décroissance",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_opt_geo_261106.pdf",
+    "sujet_sha256": "3222e4de6d923cfdac598d239e9a7414a40e709c8601989446882eab53bbc4c7",
+    "precision_sujet": "Énoncé en page 1 ; planisphère facultatif du fascicule B. Aucun rapport propre à cette option n’est lié par l’archive de la session.",
+    "references": [
+      "https://www.stat.go.jp/english/info/news/20211228.html",
+      "https://www.census.gov/quickfacts/fact/table/detroitcitymichigan/RHI225224",
+      "https://www.census.gov/quickfacts/fact/table/oaklandcountymichigan/POP010220",
+      "https://detroitmi.gov/node/57346",
+      "https://halle.de/leben-in-halle/stadtentwicklung/stadtteile-und-stadtviertel/stadtviertel",
+      "https://konservatorium.halle.de/VeroeffentlichungenBinaries/778/1175/wohnungsmarktbericht_2018.pdf",
+      "https://www.ens.psl.eu/sites/default/files/lettre_de_cadrage_-_geographie.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparer-perimetres.svg",
+      "question": "I. Mesurer la décroissance",
+      "legende": "Deux changements d’échelle, deux types de comparaison"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « Les échelles de la décroissance » et du schéma « Deux changements d’échelle, deux types de comparaison »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des deux recensements américains, des données préfectorales japonaises et du programme Stadtumbau Ost. Recalcul des taux, distinction des deux territoires voisins et des territoires emboîtés. Conception du graphique comparatif."
+    }
+  ],
+  "gabarit": "dissertation",
+  "date_revision": "2026-11-24"
+}
