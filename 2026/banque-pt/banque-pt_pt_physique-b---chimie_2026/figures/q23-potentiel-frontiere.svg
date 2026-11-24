@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="245" viewBox="0 0 700 245" role="img" aria-labelledby="titre desc">
+  <title id="titre">Du potentiel de frontière au potentiel standard</title>
+  <desc id="desc">Sur la frontière du couple triiodure et iodure, la valeur lue est 0,60 volt. L’égalité des concentrations à 0,10 mole par litre donne un quotient d’activités de 100 dans la relation de Nernst, soit une correction positive de 0,06 volt. Le potentiel standard est donc 0,54 volt.</desc>
+  <rect width="700" height="245" fill="#fff"/>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="17" y="31" font-size="20" font-weight="bold" fill="#253945">Deux potentiels pour le couple triiodure / iodure</text>
+    <path d="M140 62 V185 M133 74 H151 M133 164 H151" fill="none" stroke="#344756" stroke-width="2"/>
+    <path d="M136 70 L140 62 L144 70" fill="none" stroke="#344756" stroke-width="2"/>
+    <text x="17" y="79" fill="#25665c" font-size="18" font-weight="bold">0,60 V</text>
+    <text x="17" y="170" fill="#795326" font-size="18" font-weight="bold">0,54 V</text>
+    <circle cx="140" cy="74" r="4" fill="#25665c"/>
+    <circle cx="140" cy="164" r="4" fill="#795326"/>
+    <text x="167" y="78" font-size="17" font-weight="bold" fill="#25665c">Frontière lue sur le diagramme à 298 K</text>
+    <text x="167" y="103" font-size="15" fill="#354751">Les deux concentrations valent 0,10 mol/L.</text>
+    <text x="167" y="129" font-size="15" fill="#354751">Le quotient d’activités dans la formule de Nernst vaut 100.</text>
+    <text x="167" y="170" font-size="17" font-weight="bold" fill="#795326">Potentiel standard du couple</text>
+    <text x="167" y="195" font-size="15" fill="#354751">0,60 V − (0,06 V / 2) × log₁₀(100) = 0,54 V</text>
+    <text x="17" y="229" font-size="14" fill="#354751">Le facteur 2 au dénominateur correspond aux deux électrons échangés.</text>
+  </g>
+</svg>

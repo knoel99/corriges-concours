@@ -23,6 +23,52 @@
       "fichier": "figures/q19-contact-face-nio.svg",
       "question": "Q19",
       "legende": "Face de la maille de NiO : contact anion-cation sur l'arête, anions séparés sur la demi-diagonale"
+    },
+    {
+      "fichier": "figures/q23-potentiel-frontiere.svg",
+      "question": "Q23",
+      "legende": "La convention de tracé décale de 0,06 V le potentiel de la frontière par rapport au potentiel standard."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/ph_b_ch_2026_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_b_ecrit_2026.pdf#page=1",
+    "sujet_sha256": "e5705ee0cccfc93afb9770e79b1fb0fbcbb9556f4b24b057dbf6af72997c8b76",
+    "rapport_sha256": "671f0c11055f58b0308a4a0560dd52b20f33c44bea3268dd217fe614084a1a08"
+  },
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction initiale, modèle inscrit dans le champ redaction de la fiche publique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Révision antérieure signalée dans la mention de rédaction de la fiche. Modèle et périmètre précis non renseignés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 28 réponses du brut et du guidé avec le sujet 053, ses figures et les trois premières pages du fichier du jury. Reprise de la couleur transmise, de la stabilité du rutile, des limites des données thermodynamiques et du bilan de Nernst. Recalcul des applications numériques et ajout du schéma de potentiel."
     }
   ]
 }
