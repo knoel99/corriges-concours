@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 h, calculatrice interdite, une feuille de papier millimétré à rendre avec la copie (pour le tracé de la question 4 du préambule). L'avertissement insiste sur la présentation et la justification des résultats. Il prévient aussi que les questions mal référencées ne sont pas notées. Il faut donc reprendre exactement la numérotation : Préambule 1 à 9, I.1 à I.7(d), II.1 à II.8, III.1 à III.5.
@@ -922,11 +924,13 @@ $$\begin{aligned}
 
 et même $O(\ln N)$.
 
-**Insuffisance.** La question 4 ne fournit que des majorations de $|u_n|$, au mieux par $\frac2n$, terme d'une série divergente.
+**Que permet de conclure le $O(N)$ ?** Cette estimation sur les sommes partielles laisse les deux possibilités ouvertes. Par exemple, les sommes partielles de $\sum 1/n^2$ et de $\sum 1/n$ sont toutes deux en $O(N)$, alors que seule la première série converge. C’est la conclusion attendue de l’estimation demandée.
 
-Pour prouver la convergence de $\sum|u_n|$, il faudrait des sommes partielles bornées, ou un majorant sommable. Pour prouver sa divergence, il faudrait un minorant non sommable. Aucun des deux n'est obtenu : une majoration en $O(N)$ est vraie pour toute suite bornée et ne dit rien de la nature de la série. C'est l'équivalent $|u_n|\sim\frac1n$ (I.6) qui donne la divergence.
-
-$$\boxed{\text{La minoration de }\varphi\text{ ne suffit pas à étudier la convergence de }\sum|u_n|}$$
+**Précision sur la dernière phrase du sujet.** La minoration globale de $\varphi$ porte en réalité davantage d’information que le seul $O(N)$. Appliquons $(\star)$ à $1/r$ avec $r>1$. Comme $\ln(1/r)=-\ln r$, on obtient
+$$\ln r\ge\frac{1-r^{-2}}2.$$
+Pour $n$ pair, prenons $r=1+1/n$. Il vient
+$$|u_n|=\ln(1+1/n)\ge\frac{2n+1}{2(n+1)^2}\ge\frac1{2(n+1)}.$$
+En sommant sur les seuls indices pairs $n=2k$, on obtient un minorant divergent, puisque $1/(2(2k+1))\ge1/(6k)$ pour $k\ge1$. La minoration de $\varphi$ permet donc bien de prouver la divergence lorsqu’on l’applique aussi au réciproque. L’équivalent de la question I.6 donne la même conclusion.
 
 > [!PIEGE]
 > Croire qu'un majorant en $O(N)$, ou un majorant terme à terme non sommable, prouve la divergence. Un majorant ne prouve jamais une divergence.
@@ -935,7 +939,7 @@ $$\boxed{\text{La minoration de }\varphi\text{ ne suffit pas à étudier la conv
 > Question jugée « plus délicate » par le rapport 2026, selon lequel « il fallait déjà montrer que le minimum local $\varphi(x_0, y_0)$ était un minimum global », par exemple en étudiant les limites de $\varphi$ aux bords du domaine. Seules de très bonnes copies l'ont fait. L'inégalité $\varphi\ge\frac12$ établie en question 4 répond à cette exigence.
 
 > [!METHODE]
-> L'inégalité $(\star)$ est une inégalité de convexité du même type que $\ln r\le r-1$. Elle est souvent utile pour encadrer $\ln(1+\varepsilon)$, mais elle ne donne qu'une borne d'un seul côté.
+> L'inégalité $(\star)$ est une inégalité de convexité du même type que $\ln r\le r-1$. En l’appliquant successivement à $r$ et à $1/r$, on obtient les deux côtés d’un encadrement de $\ln r$.
 
 ## Bilan
 

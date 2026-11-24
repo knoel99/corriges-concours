@@ -72,6 +72,23 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 32 réponses, des indications et des trois figures à partir du sujet et du rapport du jury. En III.5, distinction entre l’insuffisance du O(N) et la minoration globale elle-même, qui fournit en fait un minorant harmonique des termes pairs en appliquant l’inégalité au réciproque. Vérification du calcul de l’intégrale à paramètre et du minimum global.",
+      "tour": 3,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
-  ]
+  ],
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/math_c_2026_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_math_c_ecrit_2026.pdf"
+  }
 }
