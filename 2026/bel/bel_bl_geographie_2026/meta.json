@@ -1,0 +1,153 @@
+{
+  "slug": "bel_bl_geographie_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Géographie",
+    "annee": 2026
+  },
+  "banque_officielle": "Banque Lettres et sciences économiques et sociales (BLSES), voie B/L",
+  "intitule": "Les paysages de la décroissance",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "sources": {
+    "index_officiel": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl",
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_geographie.pdf",
+    "precision_sujet": "Intitulé reproduit à la page 1 du rapport de la session. Le fond de carte distribué en salle n’a pas été retrouvé.",
+    "notice_banque": "https://www.ens-lyon.fr/sites/default/files/2026-02/notice_interens_2026_mise_en_ligne_vf260212_0.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_geographie.pdf",
+    "programme": "https://www.ens.psl.eu/sites/default/files/lettre_de_cadrage_-_geographie.pdf",
+    "references": [
+      "https://museodelsalitre.cl/patrimonio-mundial/humberstone/",
+      "https://museodelsalitre.cl/recorrido/plaza/",
+      "https://museodelsalitre.cl/recorrido/maestranza/",
+      "https://whc.unesco.org/fr/list/1178/",
+      "https://whc.unesco.org/fr/soc/957/",
+      "https://www.census.gov/programs-surveys/decennial-census/decade/1950/census-records.html",
+      "https://www.census.gov/quickfacts/detroitcitymichigan",
+      "https://press.princeton.edu/books/paperback/9780691162553/the-origins-of-the-urban-crisis",
+      "https://www.heidelberg.org/history",
+      "https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/heidelberg-project",
+      "https://www.insee.fr/fr/statistiques/3698339",
+      "https://www.insee.fr/fr/statistiques/8581709?geo=COM-48155",
+      "https://destination.cevennes-parcnational.fr/fr/trek/37916-Saint-Germain-de-Calberte",
+      "https://www.comune.venezia.it/it/content/serie-storiche",
+      "https://doi.org/10.18778/1231-1952.30.1.06"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/humberstone.svg",
+      "question": "Partie I",
+      "legende": "À Humberstone, les vestiges du camp et de l’usine gardent la trace d’activités autrefois solidaires."
+    },
+    {
+      "fichier": "figures/saint-germain-de-calberte.svg",
+      "question": "Partie II",
+      "legende": "Dans la vallée de Saint-Germain-de-Calberte, l’entretien inégal des parcelles rend la déprise sélectivement visible."
+    },
+    {
+      "fichier": "figures/heidelberg-street.svg",
+      "question": "Partie III",
+      "legende": "Dans Heidelberg Street à Détroit, les terrains délaissés deviennent des lieux de création au sein d’une rue habitée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "perimetre": "Examen du libellé, du rapport de géographie B/L, de la notice BLSES et du programme.",
+      "source_configuration": "Lancement de la session de rédaction par Codex avec modèle et effort explicites ; aucun niveau de service exposé.",
+      "modifications": false
+    },
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "perimetre": "Composition des corrigés brut et guidé, recherche documentaire et dessin du croquis de Saint-Germain-de-Calberte.",
+      "source_configuration": "Lancement de la session de rédaction par Codex avec modèle et effort explicites ; aucun niveau de service exposé.",
+      "modifications": true
+    },
+    {
+      "phase": "production_figures",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "perimetre": "Recherche documentaire, dessin et contrôle visuel des croquis d’Humberstone et de Heidelberg Street.",
+      "source_configuration": "Lancement par fork complet depuis la session de rédaction, avec héritage du modèle et de l’effort. Niveau de service non exposé.",
+      "modifications": true
+    },
+    {
+      "phase": "relecture_corrige",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "perimetre": "Contre-lecture indépendante des deux textes et des trois croquis face au rapport et aux sources des exemples.",
+      "source_configuration": "Lancement par fork complet depuis la session de rédaction, avec héritage du modèle et de l’effort. Niveau de service non exposé.",
+      "modifications": false,
+      "tour": 1
+    },
+    {
+      "phase": "retouches",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "perimetre": "Distinction entre diminution d’effectifs et départs individuels à Détroit. Mesure du recul historique à Saint-Germain-de-Calberte, précision sur la comparabilité des recensements. Renvoi à la notice inter-ENS de 2026 (p. 31) et distinction entre dispositions de l’épreuve et suggestions de plan.",
+      "source_configuration": "Lancement de la session de rédaction par Codex avec modèle et effort explicites ; aucun niveau de service exposé.",
+      "modifications": true,
+      "tour": 1
+    },
+    {
+      "phase": "verification_gel",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "perimetre": "Vérification des deux HTML avec le moteur des fiches, des signatures, des trois croquis et des PDF compilés (5 et 8 pages). Vérification du rapport 2026, de la notice inter-ENS p. 31 et des données de population.",
+      "source_configuration": "Lancement de la session de rédaction par Codex avec modèle et effort explicites ; aucun niveau de service exposé.",
+      "modifications": false,
+      "tour": 1
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "gpt-6.2-astra",
+    "verification": "Contre-lecture des textes et des croquis. Mesures historiques et attribution des observations au rapport et aux sources des terrains."
+  }
+}

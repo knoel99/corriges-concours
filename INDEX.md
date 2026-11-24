@@ -106,6 +106,9 @@
 | 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
 | 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2026 | BEL | AL | Anglais (commentaire et traduction) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Anglais (thème Lyon) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/guide.md) |
+| 2026 | BEL | AL | Anglais (version et thème Ulm) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
@@ -121,6 +124,8 @@
 | 2024 | BEL | AL | Histoire contemporaine | [md](2024/bel/bel_al_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_al_histoire-contemporaine_2024/guide.md) |
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
+| 2026 | BEL | AL | Histoire de la musique | [md](2026/bel/bel_al_histoire-de-la-musique_2026/brut.md) | [md](2026/bel/bel_al_histoire-de-la-musique_2026/guide.md) |
+| 2026 | BEL | AL | Histoire et théorie des arts | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/brut.md) | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/guide.md) |
 | 2024 | BEL | AL | Philosophie | [md](2024/bel/bel_al_philosophie_2024/brut.md) | [md](2024/bel/bel_al_philosophie_2024/guide.md) |
 | 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
@@ -132,6 +137,7 @@
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
 | 2026 | BEL | BL | Économie | [md](2026/bel/bel_bl_economie_2026/brut.md) | [md](2026/bel/bel_bl_economie_2026/guide.md) |
 | 2026 | BEL | BL | Espagnol | [md](2026/bel/bel_bl_espagnol_2026/brut.md) | [md](2026/bel/bel_bl_espagnol_2026/guide.md) |
+| 2026 | BEL | BL | Géographie | [md](2026/bel/bel_bl_geographie_2026/brut.md) | [md](2026/bel/bel_bl_geographie_2026/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine | [md](2026/bel/bel_bl_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine_2026/guide.md) |
 | 2026 | BEL | BL | Italien | [md](2026/bel/bel_bl_italien_2026/brut.md) | [md](2026/bel/bel_bl_italien_2026/guide.md) |

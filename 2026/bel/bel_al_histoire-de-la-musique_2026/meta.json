@@ -1,0 +1,120 @@
+{
+  "slug": "bel_al_histoire-de-la-musique_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire de la musique",
+    "annee": 2026
+  },
+  "intitule": "Rousseau, le style national et l’Essai en forme d’ouverture de François Couperin",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_spe_arts.pdf#page=5",
+    "precision_sujet": "Énoncé p. 5, partition complète de l’extrait p. 6–8.",
+    "sujet_sha256": "db3822ea9560c1743146b55b0a4953d351af8e862714cd84c2d5153b16d75374",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts-%20Musique%202026.pdf",
+    "rapport_sha256": "2b93f2b07f673b7d15b9614ac3e24625862b821fce6bab145d5cc8a1888701ac",
+    "references": [
+      "https://gallica.bnf.fr/ark:/12148/btv1b525026456",
+      "https://catalogue.bnf.fr/ark:/12148/cb429248524",
+      "https://www.rousseauonline.ch/pdf/rousseauonline-0061.pdf",
+      "https://catalogue.bnf.fr/ark:/12148/cb444804772",
+      "https://www.bachvereniging.nl/en/bwv/bwv-971"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-cles.svg",
+      "question": "Partie II",
+      "legende": "Deux clés, une hauteur entendue dans l’attaque initiale."
+    },
+    {
+      "fichier": "figures/retour-mesure.svg",
+      "question": "Partie II",
+      "legende": "Les trois repères métriques et le retour d’une phrase de clôture."
+    },
+    {
+      "fichier": "figures/deux-clavecins.svg",
+      "question": "Partie III",
+      "legende": "La distribution des trois parties du trio entre deux clavecinistes."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "gpt-6.2-astra",
+    "verification": "Comparaison indépendante de la citation, des trois pages gravées et du rapport avec les deux textes et les trois schémas. Clés, hauteurs, imitation, métrique, agréments et effectifs."
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "arts_al_2026_astra",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification du sujet, lecture visuelle des trois pages gravées et lecture du rapport écrit, p. 2–3."
+    },
+    {
+      "phase": "redaction",
+      "session": "arts_al_2026_astra",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation et du guide. Conception et réalisation des trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "geo_bl_2026_astra/contrelecture",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Comparaison indépendante de la citation, des trois pages gravées et du rapport avec les deux textes et les trois schémas. Clés, hauteurs, imitation, métrique, agréments et effectifs."
+    },
+    {
+      "phase": "retouches",
+      "session": "arts_al_2026_astra",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Correction du repérage rythmique au quatrième système de la p. 7 dans les deux versions, précision sur la différence entre intervalles et attaques. Distinction entre le premier silence commenté par Rousseau et le phrasé de l’impératif dans Armide."
+    }
+  ]
+}

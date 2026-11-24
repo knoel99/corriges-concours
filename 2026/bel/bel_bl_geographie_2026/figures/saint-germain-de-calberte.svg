@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 490" width="780" height="490" role="img" aria-labelledby="titre description">
+  <title id="titre">Saint-Germain-de-Calberte : le bois gagne du terrain, des jardins restent cultivés</title>
+  <desc id="description">Deux vues de synthèse d'après le sentier du Parc national des Cévennes. À l'échelle du versant les feuillages masquent d'anciennes terrasses. Aux Calquières, sur le versant exposé au sud-est, les jardins forment toujours des replats soutenus par des murets de pierre sèche. Les vues obliques ne partagent pas d'échelle métrique.</desc>
+  <defs>
+    <clipPath id="panneau-gauche"><rect x="20" y="110" width="356" height="204" rx="3"/></clipPath>
+    <clipPath id="panneau-droit"><rect x="403" y="110" width="356" height="204" rx="3"/></clipPath>
+    <g id="arbre" stroke="#2e5549" stroke-width="1.6" stroke-linecap="round">
+      <path d="M0 0V-15m0 6-6-8m6 6 6-8" fill="none"/>
+      <path d="M-11-12c-7-1-6-10-1-12-3-8 5-13 10-9 2-8 13-7 14 0 8 0 11 9 6 13 5 8-4 13-10 10-3 4-8 4-11 0-4 2-8 1-8-2z" fill="currentColor"/>
+    </g>
+    <pattern id="pierre" width="27" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(-9)">
+      <rect width="27" height="14" fill="#a99c84"/>
+      <path d="M0 2h13l2 4h12M0 8h6l3 4h13l3-3h2M13 2l3-2M15 6l-2 6M4 2 2 8M21 12l2 2" stroke="#645a4c" stroke-width="1" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="780" height="490" fill="#fff"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#192e32">
+    <text x="20" y="32" font-size="25" font-weight="700">Saint-Germain-de-Calberte · Cévennes, Lozère</text>
+    <text x="20" y="60" font-size="18">Déprise agricole et maintien des terrasses dans la vallée du Gardon</text>
+    <text x="20" y="95" font-size="19" font-weight="700">À l’échelle d’un versant</text>
+    <text x="403" y="95" font-size="19" font-weight="700">Aux jardins des Calquières</text>
+    <g clip-path="url(#panneau-gauche)">
+      <rect x="20" y="110" width="356" height="204" fill="#e6edef"/>
+      <path d="M15 182Q51 157 75 161t49-17q22-14 45-5t48 15q25 6 43-7t51-11q38-2 77-23v86H15Z" fill="#a9beb5"/>
+      <path d="M14 209q40-31 75-19t64-8q26-22 60-16t64-11q37-26 57-24t56-19v125H14Z" fill="#728f7f"/>
+      <path d="M13 228q77-10 134-28t99-23q64-7 140-44v186H13Z" fill="#b7bd97"/>
+      <path d="M26 281q58-20 116-21t90-20m-108 43q62 6 121-16t104-23M40 241q56 0 90-16" fill="none" stroke="#706d58" stroke-width="4"/>
+      <path d="M27 278q58-20 116-21m-17 23q62 6 119-15M40 238q56 0 90-16" fill="none" stroke="#e1d6b2" stroke-width="2"/>
+      <g color="#557d66">
+        <use href="#arbre" transform="translate(43 221) scale(.9)"/><use href="#arbre" transform="translate(69 212) scale(.72)"/><use href="#arbre" transform="translate(93 213) scale(.8)"/><use href="#arbre" transform="translate(121 207) scale(.83)"/><use href="#arbre" transform="translate(150 196) scale(.72)"/><use href="#arbre" transform="translate(175 191) scale(.74)"/><use href="#arbre" transform="translate(199 191) scale(.72)"/><use href="#arbre" transform="translate(220 185) scale(.75)"/><use href="#arbre" transform="translate(240 183) scale(.8)"/><use href="#arbre" transform="translate(266 177) scale(.83)"/><use href="#arbre" transform="translate(290 173) scale(.87)"/><use href="#arbre" transform="translate(315 166) scale(.75)"/><use href="#arbre" transform="translate(338 162) scale(.82)"/><use href="#arbre" transform="translate(367 156) scale(.8)"/>
+      </g>
+      <g color="#6e916f">
+        <use href="#arbre" transform="translate(27 256) scale(1.2)"/><use href="#arbre" transform="translate(63 244)"/><use href="#arbre" transform="translate(91 246)"/><use href="#arbre" transform="translate(112 230)"/><use href="#arbre" transform="translate(145 230) scale(1.1)"/><use href="#arbre" transform="translate(175 217)"/><use href="#arbre" transform="translate(203 219)"/><use href="#arbre" transform="translate(230 218)"/><use href="#arbre" transform="translate(256 217)"/><use href="#arbre" transform="translate(284 206)"/><use href="#arbre" transform="translate(309 203)"/><use href="#arbre" transform="translate(333 195)"/><use href="#arbre" transform="translate(361 193)"/>
+      </g>
+      <g color="#4b7259">
+        <use href="#arbre" transform="translate(33 297) scale(1.35)"/><use href="#arbre" transform="translate(72 288) scale(1.2)"/><use href="#arbre" transform="translate(252 252) scale(1.12)"/><use href="#arbre" transform="translate(285 245) scale(1.15)"/><use href="#arbre" transform="translate(320 237) scale(1.2)"/><use href="#arbre" transform="translate(354 228) scale(1.15)"/><use href="#arbre" transform="translate(361 286) scale(1.55)"/><use href="#arbre" transform="translate(327 288) scale(1.35)"/><use href="#arbre" transform="translate(91 325) scale(1.25)"/>
+      </g>
+    </g>
+    <g clip-path="url(#panneau-droit)">
+      <rect x="403" y="110" width="356" height="204" fill="#e6edef"/>
+      <path d="M391 167q60-44 94-15t73-7q19-15 54-5t67-9q48-23 89-6v74H391Z" fill="#839c89"/>
+      <path d="M390 175q93 2 165-16t98-21q51-3 115-17v203H391Z" fill="#a9b487"/>
+      <path d="M398 196q72-2 131-18t107-22 133-20v9q-73 14-132 21t-109 22-130 19z" fill="url(#pierre)" stroke="#645a4c" stroke-width="1"/>
+      <path d="M396 226q96-4 163-25t87-20q59-11 125-29v11q-62 17-125 29t-87 21-163 25z" fill="url(#pierre)" stroke="#645a4c" stroke-width="1"/>
+      <path d="M393 266q84 1 152-20t116-37 115-22v16q-49 5-115 23t-116 37-152 18z" fill="url(#pierre)" stroke="#645a4c" stroke-width="1"/>
+      <path d="M394 304q109-1 176-20t126-38q27-9 71-14v16q-45 5-71 13t-126 40-176 20z" fill="url(#pierre)" stroke="#645a4c" stroke-width="1"/>
+      <g fill="none" stroke="#5b7649" stroke-width="2">
+        <path d="M424 217q53-4 88-11m18-4 36-10m32-9q49-11 77-15M427 249q58-1 106-14m41-13 39-11m30-8 57-17"/>
+        <path d="M422 213q53-4 88-11m86-21q49-11 75-14M427 245q56 0 104-15m111-32 56-15"/>
+        <path d="M482 290q41-6 84-19m14-5 67-23m21-6 47-14"/>
+      </g>
+      <g stroke="#544d43" stroke-width="1.6">
+        <path d="M458 174v-20l19-4 12 5v14l-12 4z" fill="#d1bda4"/><path d="m452 157 12-16 13-3 16 14-15-4z" fill="#706c65"/><path d="M469 172v-10l5-1v10" fill="#544d43"/>
+      </g>
+      <use href="#arbre" transform="translate(722 152) scale(.85)" color="#638269"/>
+    </g>
+    <g fill="none" stroke="#697b79"><rect x="20" y="110" width="356" height="204" rx="3"/><rect x="403" y="110" width="356" height="204" rx="3"/></g>
+    <g font-size="17">
+      <circle cx="31" cy="348" r="10" fill="#54765f"/><text x="49" y="354" font-weight="700">Taillis et bois</text>
+      <text x="20" y="379">La végétation masque des replats</text><text x="20" y="402">dont l’entretien a cessé.</text>
+      <rect x="404" y="339" width="22" height="16" fill="url(#pierre)" stroke="#645a4c"/><text x="436" y="354" font-weight="700">Murets de pierre sèche</text>
+      <text x="403" y="379">Les jardins toujours travaillés</text><text x="403" y="402">dessinent des lignes ouvertes.</text>
+    </g>
+    <path d="M20 425h739" stroke="#c6cecb"/>
+    <g font-size="15" fill="#344e50">
+      <text x="20" y="449">Deux vues de synthèse. À droite, détail du versant exposé au sud-est. Plans sans échelle commune.</text>
+      <text x="20" y="472">D’après les notices du sentier de Saint-Germain-de-Calberte, Parc national des Cévennes.</text>
+    </g>
+  </g>
+</svg>
