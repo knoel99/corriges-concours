@@ -29,5 +29,64 @@
       "question": "Q32.4",
       "legende": "Sortie de trace1 simulée pour X de loi binomiale ℬ(2, 1/2), p = 5, ε = 0,1 : la courbe de G_X coupe les p + 1 segments verticaux de longueur 2ε"
     }
-  ]
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-06T13:34:21",
+      "modifications": true,
+      "perimetre": "Rédaction des corrigés brut et guidé. La métadonnée d’origine identifie le fournisseur Claude Code.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Révision des deux corrigés avec le rapport du jury. Huit corrections de fond déclarées dans la métadonnée d’origine.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Reprise des 81 sous-questions des deux versions sur le sujet et les éléments de correction du jury. Vérification des lois de floraison, des parcours d’arbres, des temps d’extinction, des encadrements de la dichotomie et du tracé des fonctions génératrices.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": null,
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "date": "2026-11-24",
+    "verification": "Reprise des 81 sous-questions des deux versions sur le sujet et les éléments de correction du jury. Vérification des lois de floraison, des parcours d’arbres, des temps d’extinction, des encadrements de la dichotomie et du tracé des fonctions génératrices."
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0226_sp.pdf",
+    "rapport": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-mmi-cpge-bcpst-2026.pdf"
+  }
 }
