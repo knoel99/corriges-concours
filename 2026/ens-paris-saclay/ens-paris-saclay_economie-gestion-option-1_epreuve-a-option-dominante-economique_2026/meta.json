@@ -1,0 +1,62 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Épreuve à option — dominante économique",
+    "annee": 2026
+  },
+  "intitule": "Dans quelle mesure peut-on parler de décolonisation économique au vingtième siècle ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2026/2026_EG1_Option_gestion_ou_Eco.pdf#page=2",
+    "sujet_sha256": "b7232381cd384b1619bae3e318708eec1ba3ca0dd83d734fe7489b0d6891905d",
+    "references": [
+      "https://digitallibrary.un.org/record/218450",
+      "https://unctad.org/about/history"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/degres-maitrise.svg",
+      "question": "Composition",
+      "legende": "Trois degrés de maîtrise économique"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation à la page 2 du fascicule et vérification des chronologies indienne, algérienne, égyptienne et multilatérale."
+    }
+  ]
+}

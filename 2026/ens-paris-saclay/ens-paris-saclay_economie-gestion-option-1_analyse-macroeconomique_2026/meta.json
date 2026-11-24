@@ -1,0 +1,62 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-macroeconomique_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse macroéconomique",
+    "annee": 2026
+  },
+  "intitule": "L’Europe face au retour du protectionnisme",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2026/2026_EG1_Analyse_Macroeconomique.pdf",
+    "sujet_sha256": "52d0469564c838501352b2d87bb5f8cf070269909a1b2cd1186718478c886df5",
+    "references": [
+      "https://eur-lex.europa.eu/eli/reg/2023/956/oj",
+      "https://eur-lex.europa.eu/eli/reg_impl/2024/2754/oj"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/canaux-commerciaux.svg",
+      "question": "Composition",
+      "legende": "Trois canaux du choc commercial"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des dates à la date d’épreuve, de la distinction entre incidence et perception du droit et des institutions compétentes."
+    }
+  ]
+}
