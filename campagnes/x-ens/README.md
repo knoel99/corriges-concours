@@ -40,6 +40,8 @@ Pour les fascicules B/L de Lyon, le relevé distingue les planches intégrales d
 
 À l’oral d’espagnol A/L de l’ENS-PSL, le tronc commun est répertorié en un fascicule de 27 références. Pour l’option, le rapport donne séparément cinq passages, deux de Calderón et trois de Saer. Il mentionne successivement quatre et cinq candidats, puis détaille cinq notes et cinq extraits. [Références des oraux d’espagnol](oraux-espagnol-ulm-2026.tsv)
 
+Au concours normalien étudiant de sciences de l’Antiquité, onze fichiers de 2021 correspondent à cinq sujets et quinze fichiers de 2022 à onze sujets. Les consignes, les passages, les annexes et leurs différentes présentations sont réunis par sujet. [Exemplaires et sujets de 2021 et 2022](ulm-cnel-antiquite-2021-2022.tsv)
+
 À Ulm en 2023, onze sujets distincts de sciences de l’Antiquité du concours normalien étudiant et douze écrits de la sélection internationale Lettres ont été rapprochés de leurs documents. Les deux questions d’histoire individuelle sont distinguées. Les exemplaires de Stace et de Valéry qui posent la même question sont regroupés. Les ressources distribuées en géographie et en études cognitives accompagnent les consignes. [Registre des sujets et des pièces](ulm-lettres-cnel-selection-2023.tsv)
 
 Le concours normalien étudiant Lettres de l’ENS-PSL comprend des épreuves propres aux départements. Les sujets identifiés dans les rapports indiquent leur page et les documents restant à retrouver. [Sujets et rapports du CNEL 2026](cnel-lettres-2026.tsv)
