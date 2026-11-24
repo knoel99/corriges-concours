@@ -1,0 +1,44 @@
+{
+  "slug": "ens-psl_cnel-lettres_etudes-theatrales_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Études théâtrales",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf#page=3",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
+    "sujet_sha256": "4f032bb394ecb223ce6827de20caada0c29d10558e4ba4b8cb74b077a11f90d5",
+    "dossier_spectacle": "https://www.odyssud.com/sites/default/files/dp-ca-ira-1-fin-de-louis_0.pdf",
+    "notice_spectacle": "https://www.nanterre-amandiers.com/saison/saison-2015-2016/ca-ira-1-fin-de-louis-joel-pommerat-2015"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Une même parole, plusieurs effets de scène"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire intégral de la citation de Pommerat reproduite dans le rapport, guidage, schéma et analyse de cinq exemples historiques de dramaturgie."
+    }
+  ]
+}
