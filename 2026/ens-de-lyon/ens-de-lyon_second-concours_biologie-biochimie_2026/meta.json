@@ -21,7 +21,7 @@
     {
       "fichier": "figures/affinites-foetale-maternelle.svg",
       "question": "3.2",
-      "legende": "Courbes illustratives. À pression partielle commune, l’hémoglobine fœtale a une saturation supérieure dans la zone intermédiaire."
+      "legende": "À pression partielle commune, les hématies fœtales ont une saturation plus élevée dans la zone intermédiaire. Les courbes illustrent l’allure de la figure 6."
     },
     {
       "fichier": "figures/repression-de-hbf.svg",
@@ -47,7 +47,9 @@
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_biologie.pdf",
     "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_eBio.pdf",
-    "notice_casgevy": "https://www.ema.europa.eu/en/medicines/human/EPAR/casgevy"
+    "notice_casgevy": "https://www.ema.europa.eu/en/medicines/human/EPAR/casgevy",
+    "sujet_sha256": "6db61f18c1ea886f09d4e6c5b1365093e264a3af603ef2136a14d68d136985ee",
+    "rapport_sha256": "16faf25ad1a213ec4a25e929a83c3a626899624338fb811e0bc2070e59ba129d"
   },
   "date_revision": "2026-11-24",
   "provenance": {
@@ -70,6 +72,57 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le sujet de biologie-biochimie 2026 et son rapport. Contrôle des génotypes, des figures 3 à 11, de la portée des comparaisons et des six schémas du corrigé. Vingt-neuf questions traitées intégralement. Pour 6.1, seule la finalité thérapeutique et physiologique est couverte."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5",
+      "5.6",
+      "5.7",
+      "5.8",
+      "6.2"
+    ],
+    "questions_partiellement_traitees": [
+      "6.1"
+    ],
+    "questions_non_traitees": [],
+    "precision": "La question 6.1 couvre l’effet thérapeutique recherché sur la composition de l’hémoglobine. La réalisation de la modification de cellules souches n’est pas développée."
+  }
 }
