@@ -1,0 +1,98 @@
+{
+  "slug": "x-ens_mpi_physique-mpi_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MPI",
+    "matiere": "Physique MPI",
+    "annee": 2025
+  },
+  "questions": 37,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20MPI.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MPI_Physique%20OK.pdf",
+    "sujet_sha256": "c50515c87bd0913af87c2036ff87adb60b7c7cbeff85709ebe500cc98cd7c7ac",
+    "rapport_sha256": "2bc4d63abd3845d0bade17be9c20877d50c6cbc16320978a7682910c6eccaf5d"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 37 questions sont traitées, dont l’élimination complète de la question 29 et les champs réels de part et d’autre de la surface. Quatre figures originales accompagnent les deux éditions."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "9",
+      "fichier": "figures/champ-de-la-sphere.svg",
+      "legende": "Coupe méridienne. Le champ uniforme passe vers le bas dans la sphère. Les lignes externes d’un dipôle émergent de l’hémisphère positif et retournent vers le négatif."
+    },
+    {
+      "numero": 2,
+      "question": "30",
+      "fichier": "figures/transmission-tm.svg",
+      "legende": "Rayon sans réflexion pour ε = 0,42. Le vecteur transmis est perpendiculaire à la direction de réflexion géométrique."
+    },
+    {
+      "numero": 3,
+      "question": "34",
+      "fichier": "figures/dispersion-et-profondeurs.svg",
+      "legende": "Branche guidée du plasma idéal et longueurs de décroissance rapportées à la longueur d’onde selon x."
+    },
+    {
+      "numero": 4,
+      "question": "37",
+      "fichier": "figures/lignes-du-plasmon.svg",
+      "legende": "Lignes de champ à t = 0 pour ε = −2,5. Les inclinaisons sont constantes sur une verticale dans chaque milieu. La composante normale change de signe au passage de l’interface."
+    }
+  ],
+  "redaction": "Les 37 questions sont traitées, dont l’élimination complète de la question 29 et les champs réels de part et d’autre de la surface. Quatre figures originales accompagnent les deux éditions.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37"
+    ]
+  }
+}
