@@ -751,6 +751,7 @@
 | 2026 | X-ENS | MP | Physique | [md](2026/x-ens/x-ens_mp_physique_2026/brut.md) | [md](2026/x-ens/x-ens_mp_physique_2026/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
+| 2023 | X-ENS | PC | Chimie A | [md](2023/x-ens/x-ens_pc_chimie-a_2023/brut.md) | [md](2023/x-ens/x-ens_pc_chimie-a_2023/guide.md) |
 | 2024 | X-ENS | PC | Chimie A | [md](2024/x-ens/x-ens_pc_chimie-a_2024/brut.md) | [md](2024/x-ens/x-ens_pc_chimie-a_2024/guide.md) |
 | 2025 | X-ENS | MP-MPI-PC-PSI | Anglais | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_anglais_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_anglais_2025/guide.md) |
 | 2025 | X-ENS | MP-MPI-PC-PSI | Français | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/guide.md) |
