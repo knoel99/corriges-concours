@@ -89,6 +89,18 @@
       "perimetre": "Manuscrit vérifié sur les 30 questions et sur le rapport 2020, y compris la racine nulle, la distinction entre positivité rationnelle et réelle, et la matrice de similitude rationnelle par blocs de la dernière question.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 30 réponses et des six figures face au sujet et au rapport. Une réalisation minimale de racine de trois en dimension trois précise l’obstruction modulo trois. Vérification de la positivité et du polynôme caractéristique de la construction finale.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

@@ -92,6 +92,18 @@
       "perimetre": "Relecture des corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 46 réponses et des sept schémas face au sujet et au rapport. Monotonie du minimum pénalisé et de la violation, contre-exemple à la qualification, estimation quantitative d’Uzawa et calcul du cas scalaire illustré.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
