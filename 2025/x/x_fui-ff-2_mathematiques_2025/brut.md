@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I · Deux représentations de l’intégrale de Dirichlet
 
 ### I.1a · Convergence de l’intégrale de Laplace
@@ -25,6 +27,10 @@ Pour $x>0$, l’addition des intégrandes compense le dénominateur : $f(x)+f''(
 Sur $[0,1]$, il n’y a pas de singularité pour $x>0$ et $\sin t/t\to1$ si $x=0$. Pour $R>T>0$, l’intégration par parties donne
 $$\int_T^R \frac{\sin t}{t+x}\,\mathrm dt=\left[-\frac{\cos t}{t+x}\right]_T^R-\int_T^R\frac{\cos t}{(t+x)^2}\,\mathrm dt.$$
 Le terme de bord en $R$ tend vers zéro et l’intégrale restante converge absolument. Ceci justifie l’existence de $g(x)$ pour tout $x\geq0$, sans majorer $|\sin t|/(t+x)$ par une fonction intégrable à l’infini.
+
+La même intégration par parties fournit une borne uniforme sur la queue. En faisant tendre $R$ vers l’infini, on obtient
+$$\left|\int_T^\infty\frac{\sin t}{t+x}\,\mathrm dt\right|\le\frac1{T+x}+\int_T^\infty\frac{\mathrm dt}{(t+x)^2}=\frac2{T+x}\le\frac2T.$$
+Elle vaut pour tout $x\ge0$ et tout $T>0$.
 
 ### I.2b · Déplacer la borne inférieure
 
@@ -125,5 +131,7 @@ Notons $A_n$ la matrice compagnon de dernière ligne $(b_0(n),\ldots,b_{d-1}(n))
 ### II.12 · Maîtriser les indices intermédiaires
 
 Choisir $0<\varepsilon<1-\sigma(A)$ et poser $r=\sigma(A)+\varepsilon<1$. Pour chaque reste $j\in\{0,\ldots,q-1\}$, itérer II.11 à partir de $n_0+j$ donne $\|V_{n_0+j+kq}\|_\infty\leq r^{kq}\|V_{n_0+j}\|_\infty\to0$. Il n’y a qu’un nombre fini de restes, donc toute la suite $V_n$ tend vers zéro, et sa première composante $v_n$ aussi.
+
+On peut rendre la vitesse uniforme en posant $C=\max_{0\le j<q}r^{-j}\|V_{n_0+j}\|_\infty$. Pour $n=n_0+j+kq$, la borne précédente donne $\|V_n\|_\infty\le C r^{n-n_0}$. Ainsi même les indices intermédiaires bénéficient d’une majoration géométrique.
 
 ![Exemple de majorants pour q = 3 et r = 0,9. Chaque classe d’indices a sa propre valeur initiale et décroît au même rythme géométrique.](figures/classes-restes.svg)

@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -411,7 +413,7 @@ Tout sommet du cube unité a norme au plus $\sqrt N$, donc $q(x,A)\le\sqrt N$ d�
 
 #### Solution
 
-Comme $R_A(x)\subset P_A(x)$, le minimum sur $\Gamma(P_A(x))$ est au plus celui sur $\Gamma(R_A(x))$. Pour l’autre sens, en écrivant $v=\sum_j\theta_jz_j$ avec $z_j\in P_A(x)$, choisissons selon II.2a un $r_j\in R_A(x)$ vérifiant $r_j\le z_j$. Alors $w=\sum_j\theta_jr_j$ appartient à $\Gamma(R_A(x))$ et $0\le w\le v$ coordonnée par coordonnée. D’où $|w|\le|v|$. En prenant les infimums on obtient (51), avec $|z|$ sous l’infimum.
+Comme $R_A(x)\subset P_A(x)$, le minimum sur $\Gamma(P_A(x))$ est au plus celui sur $\Gamma(R_A(x))$. Pour l’autre sens, en écrivant $v=\sum_j\theta_jz_j$ avec $z_j\in P_A(x)$, choisissons selon II.2a un $r_j\in R_A(x)$ vérifiant $r_j\le z_j$. Alors $w=\sum_j\theta_jr_j$ appartient à $\Gamma(R_A(x))$ et $0\le w\le v$ coordonnée par coordonnée. D’où $|w|\le|v|$. En prenant les infimums on obtient (51), avec $|z|$ sous l’infimum. La lettre est importante. Par exemple, pour $x=e_1$ et $A=\{e_1\}$, le masque exact est zéro, donc $q(x,A)=0$. En gardant littéralement $|x|$ comme dans la formule imprimée, l’infimum vaudrait toujours $|e_1|=1$.
 
 ![Figure 6 — Pour les masques exacts (1,0) et (0,1), le triangle est l’enveloppe des masques autorisés. Son point le plus proche de l’origine est le milieu du segment des masques exacts.](figures/ii2-distance.svg)
 
@@ -488,7 +490,7 @@ $$
 q(x,A)^2\le|\lambda u+(1-\lambda)v|^2+(1-\lambda)^2
 \le \lambda q(x',A_s)^2+(1-\lambda)q(x',B)^2+(1-\lambda)^2.
 $$
-Si $A\ne\varnothing$ mais $A_s=\varnothing$, le point $(v,1)$ donne $q(x,A)^2\le 1+q(x',B)^2$. Cette borne est au plus le membre droit de (60) car la différence vaut $\lambda\{4(N-1)^2-q(x',B)^2-2+\lambda\}\ge0$, avec $q(x',B)^2\le N-1$ et $N\ge2$. Pour $A=\varnothing$, la conclusion (53) est immédiate et se traite séparément de (60).
+Si $A\ne\varnothing$ mais $A_s=\varnothing$, le point $(v,1)$ donne $q(x,A)^2\le 1+q(x',B)^2$. Cette borne est au plus le membre droit de (60) car la différence vaut $\lambda\{4(N-1)^2-q(x',B)^2-2+\lambda\}\ge0$, avec $q(x',B)^2\le N-1$ et $N\ge2$. L’hypothèse sur la section à la question précédente implique que $A$ est non vide. Si l’on étend (60) à tous les convexes, le cas $A=\varnothing$ fournit un contre-exemple. Sa projection et toutes ses sections sont alors vides. Pour $\lambda=1$, la convention sur les distances transformerait (60) en $4N^2\le4(N-1)^2$. Il faut traiter ce cas directement dans (53). La probabilité du vide est nulle et l’exponentielle vaut la constante finie $e^{4\gamma_0N^2}$, donc le produit vaut zéro.
 
 ### Question II.3d
 

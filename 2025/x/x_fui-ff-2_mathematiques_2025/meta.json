@@ -64,6 +64,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 26 réponses des deux éditions et de leurs cinq figures sur les quatre pages du sujet, y compris les deux coquilles I.2c et II.7. Ajout d’une borne uniforme sur la queue de l’intégrale oscillante et d’une majoration géométrique commune à toutes les classes de restes en II.12.",
+      "agent": "astra_maths",
+      "fournisseur": "codex",
+      "tour": 1
     }
   ]
 }

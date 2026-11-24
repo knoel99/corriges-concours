@@ -81,7 +81,20 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "II.3c, II.3d et II.3i.",
-      "agent": "principal"
+      "agent": "principal",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 40 réponses des deux éditions sur le sujet et le rapport, dont le choix du moment pair I.6b, les trois enveloppes II.2f et le passage conditionnel II.3d–i. Ajout de contre-exemples en II.2i pour la variable sous l’infimum et en II.3c pour l’ensemble vide, avec traitement indépendant de l’inégalité finale.",
+      "agent": "astra_maths",
+      "fournisseur": "codex",
+      "tour": 2
     }
   ]
 }
