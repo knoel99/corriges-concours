@@ -17,7 +17,7 @@
     {
       "fichier": "figures/q20-resonance-amplitude.svg",
       "question": "Q20",
-      "legende": "Amplitude |Z0(ω)| calculée pour ω0τ = 20 et ω0τ = 5 : pic en ω0 de hauteur Fτ/(mω0) et de largeur 2/τ à |Z0|max/√2"
+      "legende": "Amplitude du déplacement au voisinage de la résonance. Les points repèrent les maxima locaux exacts et le segment horizontal mesure la largeur à mi-puissance du pic le plus étroit."
     },
     {
       "fichier": "figures/q22-deux-champs-tournants.svg",
@@ -39,5 +39,44 @@
       "question": "Q40",
       "legende": "Réciprocité : configuration réelle (ion q en y0, électrodes 1 et 2 reliées au potentiel nul, excitation selon x) et configuration auxiliaire (électrodes à ∓V/2, potentiel affine, V′0 = Vy0/d)"
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20A.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/PC_Physique%20A%20OK.pdf",
+    "sujet_sha256": "bee306fdbd71e97b07090452672721c62cbb4792f73cf6acc49585a23d7a7dcd",
+    "rapport_sha256": "859a6fa65e8284075531d13944605d744f491259d662eb200bf4a96234566488"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Identifiant conservé dans la mention historique de rédaction."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Révision historique attestée par les métadonnées du corrigé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture du sujet, du rapport, des 43 réponses et des six schémas des deux éditions. Recalcul du décalage du pic, de sa largeur, du facteur de qualité et de la correction magnétron, remplacement de la courbe de résonance et vérification de la gamme de fréquences mesurées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24"
 }
