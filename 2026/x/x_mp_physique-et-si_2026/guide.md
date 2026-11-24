@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 4.8 High standard
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Cadre.** Cette épreuve de 4 heures est réservée à une partie des candidats MP, les autres composant en Informatique A. La calculatrice est interdite. Les applications numériques se font avec au plus deux chiffres significatifs, et les ordres de grandeur avec un seul. Le sujet compte **37 questions**, dont beaucoup ont des sous-questions, en deux parties indépendantes. L'énoncé conseille d'y consacrer au plus deux heures chacune. Le fil conducteur est la mission SMILE d'étude du vent solaire.
@@ -560,7 +568,7 @@ $$\boxed{\rho_T\simeq\alpha^{1/3}=1\times10^{-2}}$$
 
 $$\boxed{r_T=\rho_T\,R\simeq10^{-2}\times1{,}5\times10^{11}=1{,}5\times10^{9}\ \mathrm m}$$
 
-soit environ $1{,}5$ million de kilomètres, quatre fois la distance Terre–Lune : c'est la position de SoHO, WIND et SMILE.
+soit environ $1{,}5$ million de kilomètres, quatre fois la distance Terre–Lune. Ce résultat situe le point $L_1$, autour duquel évoluent SoHO et WIND. SMILE suit une orbite terrestre fortement elliptique. Son altitude va d’environ 5 000 à 121 000 km. [Orbite scientifique de SMILE, ESA](https://www.esa.int/media/smile-reaches-science-orbit)
 
 > [!METHODE]
 > Le rayon de la sphère de Hill, $r\simeq R\,(M_T/3M_S)^{1/3}$, est un ordre de grandeur à connaître : c'est la taille de la zone d'influence gravitationnelle d'une planète.
@@ -676,7 +684,7 @@ ce qui redonne bien l'équation (10).
 
 $$\Lambda^2+\Lambda+\frac{27}4\mu_T(1-\mu_T)=0 .$$
 
-Le mouvement (9) reste borné si et seulement si les quatre $\lambda_k$ sont imaginaires purs et distincts. En effet, une partie réelle positive donne une divergence exponentielle, et une racine double donne des termes séculaires en $\tau\,\mathrm e^{\lambda\tau}$. Il faut donc deux racines $\Lambda$ réelles, strictement négatives et distinctes.
+Pour que toutes les solutions du système linéarisé restent bornées, il faut deux valeurs de $\Lambda$ réelles négatives. Des racines distinctes suffisent alors. À la limite du critère, les valeurs $\lambda=\pm i/\sqrt2$ sont doubles. Pour chacune, les amplitudes $X,Y$ satisfont la relation $(\lambda^2-U_{xx})X-(2\lambda+U_{xy})Y=0$ et la seconde équation de Q15. La matrice à deux lignes est singulière, mais $\lambda^2-U_{xx}=-1/2-3/4\ne0$. Son noyau est de dimension un. La valeur propre double admet donc un seul vecteur propre indépendant, d’où une solution en $\tau e^{\lambda\tau}$ et une croissance séculaire. Il faut ici un discriminant strictement positif.
 
 - Elles sont réelles et distinctes si le discriminant est strictement positif : $1-27\mu_T(1-\mu_T)>0$.
 - Leur somme vaut $-1<0$ et leur produit $\frac{27}4\mu_T(1-\mu_T)>0$ : si elles sont réelles, elles sont toutes deux négatives.
@@ -1169,7 +1177,13 @@ Il produit des efforts impulsionnels dans la charnière et sur la structure du s
 
 Pour le réduire, on ajoute aux charnières un **amortisseur** (visqueux ou par courants de Foucault, ou frein de fin de course) qui dissipe l'énergie cinétique avant la butée.
 
-**Oui, cela peut compromettre le cahier des charges** : l'amortisseur exerce un couple résistant qui ralentit le déploiement. La durée, déjà proche de 8 s, risque de dépasser la limite. Il faut alors raidir les ressorts ou dimensionner l'amortissement pour qu'il n'agisse qu'en fin de course. La trajectoire de $M_3$ est aussi modifiée, ce qui oblige à revérifier l'encombrement. (À titre d'ordre de grandeur, un choc rigide sur le bras ferait chuter $\dot\alpha_3$ par conservation du moment cinétique de 3 en $O_3$, et retarderait sensiblement la fin du déploiement.)
+**Oui, cela peut compromettre le cahier des charges** : l'amortisseur exerce un couple résistant qui ralentit le déploiement. La durée, déjà proche de 8 s, risque de dépasser la limite. Il faut alors raidir les ressorts ou dimensionner l'amortissement pour qu'il n'agisse qu'en fin de course. La trajectoire de $M_3$ est aussi modifiée, ce qui oblige à revérifier l'encombrement.
+
+On peut tester l’effet du choc sur le modèle. En intégrant (54) avec les deux angles initiaux $\pi/2$ et $-\pi$, sans vitesse initiale, le bras atteint sa butée à $t_b=6{,}75\,\mathrm s$. On trouve alors $\alpha_3=-0{,}867\,\mathrm{rad}$, $\dot\alpha_2^-=-0{,}469\,\mathrm{rad/s}$ et $\dot\alpha_3^-=0{,}893\,\mathrm{rad/s}$. La figure 6 est reproduite si on garde cette dernière vitesse après blocage.
+
+Pour une butée instantanée parfaitement inélastique du bras, sans couple impulsionnel dans la charnière libre du panneau, on intègre la seconde équation (54) pendant le choc. Les angles restent continus et les termes bornés donnent une intégrale nulle à la limite. Il reste $F\Delta\dot\alpha_3+G\Delta\dot\alpha_2=0$. Or $\dot\alpha_2^+=0$ et $G/F\simeq1{,}49$, d’où $\dot\alpha_3^+=\dot\alpha_3^-+(G/F)\dot\alpha_2^-\simeq0{,}197\,\mathrm{rad/s}$. Après la butée, $\alpha_3$ vérifie $F\ddot\alpha_3+K_3\alpha_3=0$. Son premier passage à zéro a lieu à $7{,}72\,\mathrm s$ dans le tracé continu et à $10{,}66\,\mathrm s$ dans ce modèle de choc. La durée avec un amortisseur réel dépendrait de son couple et de sa course.
+
+![Figure 6 — Évolution de l’angle du panneau calculée par les équations (54), avec deux lois de passage au verrouillage du bras. Les temps de déploiement obtenus sont de 7,72 s et 10,66 s.](figures/q30-verrouillage.svg)
 
 > [!METHODE]
 > Un critère de cahier des charges validé « avec une faible marge » est fragile : toute modification de conception (amortisseur, frottement réel) doit être revérifiée sur tous les critères.
