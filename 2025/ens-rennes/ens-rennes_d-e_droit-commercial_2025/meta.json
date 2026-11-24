@@ -1,0 +1,76 @@
+{
+  "slug": "ens-rennes_d-e_droit-commercial_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit commercial",
+    "annee": 2025
+  },
+  "intitule": "Clause d’exclusion et droit de vote, Com., 29 mai 2024, n° 22-13.158",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-epreuve-a-options-d-e-2025_1760692424609-pdf#page=3",
+    "sujet_sha256": "0fb9fb1a8b8074e658f82a4da84932837e6757863dd60f861db296bb17767754",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-commercial-d-e-2025_1768897872505-pdf",
+    "rapport_sha256": "2189c96cd1f6f1dc9a66241093f314ff2f19531fbf178eacb3ac0d32d54db591",
+    "references": [
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049640994",
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000027702300"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/clause-et-vote.svg",
+      "question": "Commentaire",
+      "legende": "Que reste-t-il de la clause d’exclusion ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Rapport de deux pages, droit de vote et évolution du périmètre du réputé non écrit."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie, du guide de lecture et du schéma. Clause d’exclusion et droit de vote, Com., 29 mai 2024, n° 22-13.158"
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions aux pages du sujet, au rapport du jury et aux références primaires. Empreintes des aperçus vérifiées séparément des empreintes des originaux institutionnels."
+    }
+  ]
+}
