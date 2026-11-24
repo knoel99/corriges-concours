@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Attribution archivée** · « IA (GPT-6.2 Sol), relue et révisée par IA »
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 L’épreuve commune aux filières MP et MPI dure quatre heures, sans calculatrice. Le sujet démontre la décomposition des nilpotents en chaînes de Jordan, puis étudie des couples d’applications linéaires. Les 18 numéros du sujet donnent 41 réponses élémentaires. Chaque rubrique indique le repère original.
@@ -559,6 +563,10 @@ b_{33}&=d_3-r_2 .
 \end{aligned}
 $$
 
+L’exemple suivant isole l’information portée par $r_{21}$. Prenons $(d_1,d_2,d_3)=(1,2,1)$ et $u_1(t)=(t,0)$. Si $u_2(x,y)=x$, la composée est de rang un. On a une chaîne $[1,3]$ et un vecteur isolé en degré 2. Si $u_2(x,y)=y$, la composée est nulle. On a alors les chaînes $[1,2]$ et $[2,3]$. Dans les deux exemples, $r_1=r_2=1$.
+
+![Les deux systèmes ont les mêmes dimensions et les mêmes rangs individuels. La chaîne qui traverse les trois degrés existe uniquement lorsque la composée est non nulle.](figures/chaines-graduees.svg)
+
 ## Partie VI — Classification des couples de matrices rectangulaires
 
 Construisez un seul couple d’endomorphismes sur la somme des deux espaces. Les deux espaces propres de l’involution retrouvent les espaces de départ.
@@ -642,7 +650,7 @@ Par 16° a), $HM^rH^{-1}=(-1)^r M^r$ et $HQ(M)H^{-1}=Q(M)$. Ces identités montr
 
 #### Solution
 
-Par 16° a), le couple $(M,H)$ satisfait les hypothèses de 13° b) avec $N=2$ et $\zeta=-1$. Chaque chaîne de Jordan alterne donc les signes de $H$.
+Sous l’hypothèse de nilpotence de $M$, les deux identités de 16° a) montrent que le couple $(M,H)$ satisfait les hypothèses de 13° b) avec $N=2$ et $\zeta=-1$. Chaque chaîne de Jordan alterne donc les signes de $H$.
 
 Dans une chaîne donnée, notons $e_i$ les vecteurs positifs dans leur ordre d’apparition et $f_i$ les vecteurs négatifs dans leur ordre d’apparition. Dans la base $(e_1,\ldots,e_r,f_1,\ldots,f_s)$, les matrices sont
 $$
