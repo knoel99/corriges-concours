@@ -33,7 +33,10 @@
   "sources": {
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-2-sciences-sociales-2sep-2026_1791303280103-pdf",
     "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-shsaps-2-ss-2026_1791304672348-pdf",
-    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026"
+    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
+    "apercu_sujet_sha256": "ed25a361bd523072e127d7ef747dda4d2d0c174f759d9edbb65c3fe813825464",
+    "apercu_rapport_sha256": "f5286d6e674e5f9cc607b173e352a11f1e704e6853c0e41f6a1bc8204a8bd1e7",
+    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse."
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -79,6 +82,30 @@
       "perimetre": "Contre-lecture indépendante de la composition face au sujet et aux trois pages du rapport. Définition de l’innovation, acteurs, bornes, appropriation sociale et distinction entre pratiques et usages contrôlées.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport sur l’innovation chez Norbert Alter, la diffusion sociale, l’inégale participation aux changements et l’importance des innovations abandonnées."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle de la consigne sur le document officiel et des deux éditions. Ajout du ski-ballet à Calgary et Albertville pour éprouver la relation entre reconnaissance institutionnelle et diffusion."
     }
   ]
 }
