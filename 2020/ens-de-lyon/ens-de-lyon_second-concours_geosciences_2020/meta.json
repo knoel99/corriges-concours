@@ -1,0 +1,73 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2020",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2020
+  },
+  "questions": 22,
+  "redaction": "Les vingt-deux questions numérotées et toutes leurs sous-questions sont traitées, de la chimie des ignimbrites aux stations sismiques. Les quinze figures, le tableau et le rapport du jury ont été confrontés aux calculs et aux deux illustrations originales.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2c2020_geol.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_2CC_rap_eST.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "d31b25a82df446b83d67a6c9feee9d8d100526a28a1b12afc2d8ef26c0321e6b",
+    "rapport_sha256": "66283330d7fa04265698e7f749b2faf20760145fa85df2759ed08ca72f995e91"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "3.1.3",
+      "fichier": "figures/prisme-cadix.svg",
+      "legende": "Coupe interprétative ouest–est du golfe. Les sédiments se raccourcissent au-dessus d’un décollement pendant que la lithosphère froide plonge vers l’est. Échelles schématiques."
+    },
+    {
+      "numero": 2,
+      "question": "3.3.2",
+      "fichier": "figures/distances.svg",
+      "legende": "La distance se lit avec la différence entre les deux temps de parcours. La seconde lecture requiert une extrapolation du graphe local."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les vingt-deux questions numérotées et toutes leurs sous-questions sont traitées, de la chimie des ignimbrites aux stations sismiques. Les quinze figures, le tableau et le rapport du jury ont été confrontés aux calculs et aux deux illustrations originales.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.2.1",
+      "1.2.2",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5",
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.3.1",
+      "3.3.2"
+    ]
+  }
+}
