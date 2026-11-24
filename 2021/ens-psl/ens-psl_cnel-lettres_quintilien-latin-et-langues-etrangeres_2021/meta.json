@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_quintilien-latin-et-langues-etrangeres_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Quintilien — latin et langues étrangères",
+    "annee": 2021
+  },
+  "intitule": "Quintilien — latin et langues étrangères",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-3-sujet_epreuve_ecrite.pdf",
+    "sujet_sha256": "af6b6fd758422244838758eb596efce2983b3e6266409bc4f36ffd775edce8b8",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/choisir-une-forme.svg",
+      "question": "Explication",
+      "legende": "Comment juger un mot venu d’ailleurs ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication de l’origine des mots, des exemples grecs, de l’analogie et du jugement de convenance."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}
