@@ -163,10 +163,12 @@
 | 2026 | BEL | AL | Version latine (Ulm) | [md](2026/bel/bel_al_version-latine-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-latine-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Version latine et court thème (Ulm) | [md](2026/bel/bel_al_version-latine-et-court-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-latine-et-court-theme-ulm_2026/guide.md) |
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
+| 2026 | BEL | BL | Allemand (oral, tronc commun) — 23 juin | [md](2026/bel/bel_bl_allemand-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_bl_allemand-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
 | 2026 | BEL | BL | Anglais (oral à option) — Bamford et Peterloo | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/brut.md) | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/guide.md) |
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
 | 2025 | BEL | BL | Allemand | [md](2025/bel/bel_bl_allemand_2025/brut.md) | [md](2025/bel/bel_bl_allemand_2025/guide.md) |
+| 2025 | BEL | BL | Allemand (oral, option) | [md](2025/bel/bel_bl_allemand-oral-option_2025/brut.md) | [md](2025/bel/bel_bl_allemand-oral-option_2025/guide.md) |
 | 2025 | BEL | BL | Allemand (oral, tronc commun) | [md](2025/bel/bel_bl_allemand-oral-tronc-commun_2025/brut.md) | [md](2025/bel/bel_bl_allemand-oral-tronc-commun_2025/guide.md) |
 | 2025 | BEL | BL | Anglais | [md](2025/bel/bel_bl_anglais_2025/brut.md) | [md](2025/bel/bel_bl_anglais_2025/guide.md) |
 | 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
@@ -208,6 +210,13 @@
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 2 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-2_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 3 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-3_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 22 juin, sujet 4 | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-4_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-22-juin-sujet-4_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 1 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-1_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-1_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 2 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-2_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-2_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 3 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-3_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-3_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 4 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-4_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-4_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 5 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-5_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-5_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 6 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-6_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-6_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 7 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -430,6 +439,7 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2023 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2023/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
@@ -658,6 +668,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2023 | X-ENS | PSI | Sciences industrielles | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/brut.md) | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/guide.md) |
 | 2024 | X-ENS | PSI | Sciences industrielles | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/brut.md) | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/guide.md) |
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
 | 2020 | X | FUI-FF 1 | Anglais | [md](2020/x/x_fui-ff-1_anglais_2020/brut.md) | [md](2020/x/x_fui-ff-1_anglais_2020/guide.md) |

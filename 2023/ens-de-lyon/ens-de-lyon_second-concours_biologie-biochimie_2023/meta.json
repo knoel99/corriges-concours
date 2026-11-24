@@ -1,0 +1,103 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2023",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2023
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/2c2023_bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/08/23_2CC_rap_eBio.pdf",
+    "sujet_sha256": "60486631cc231fb6f5995a9186ba8ffdb6f92ed713ced8dc7a5a204db3924ebf",
+    "rapport_sha256": "39292657ba3595891d2ed78f31792813bb52a7be244a76c89707be14f9121526"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II.1a",
+      "II.1b",
+      "II.1c",
+      "II.2a",
+      "II.2b",
+      "II.3",
+      "II.4",
+      "II.5a",
+      "II.5b",
+      "II.5c",
+      "II.5d",
+      "II.6a",
+      "II.6b",
+      "II.6c",
+      "II.6d",
+      "II.7a",
+      "II.7b",
+      "II.8a",
+      "II.8b",
+      "II.9a",
+      "II.9b",
+      "II.9c",
+      "II.9d",
+      "II.10a",
+      "II.10b",
+      "II.11"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Une synthèse illustrée (I) et vingt-six questions ou sous-questions sur documents (II.1a à II.11), soit 27 réponses."
+  },
+  "figures": [
+    {
+      "fichier": "figures/interfaces-membranaires.svg",
+      "question": "I",
+      "legende": "Trois interfaces rapprochent les membranes de cellules voisines. Leurs protéines et leurs fonctions diffèrent : étanchéité, cohésion mécanique et échanges entre cytosols."
+    },
+    {
+      "fichier": "figures/densite-et-replication.svg",
+      "question": "1b",
+      "legende": "Lecture approximative de la figure 2. Le signal est rapporté à la boîte ensemencée avec 10 000 cellules ; il diminue quand la densité initiale augmente."
+    },
+    {
+      "fichier": "figures/gene-rapporteur.svg",
+      "question": "5a",
+      "legende": "Le rapporteur traduit l’activité de la séquence régulatrice en signal lumineux. Sa valeur est normalisée sur la condition témoin."
+    },
+    {
+      "fichier": "figures/lecture-immunoprecipitation.svg",
+      "question": "6b",
+      "legende": "Deux lectures du même extrait distinguent l’expression des protéines et leur présence commune dans le précipité anti-Flag."
+    },
+    {
+      "fichier": "figures/premier-modele.svg",
+      "question": "6d",
+      "legende": "Lats2 peut modifier YAP dans le système isolé. Les pointillés indiquent le lien mécanistique proposé entre l’état phosphorylé et la rétention cytosolique."
+    },
+    {
+      "fichier": "figures/replication-et-cadherine.svg",
+      "question": "8b",
+      "legende": "Lecture approximative de la figure 9A. La baisse de marquage associée aux billes cadhérine E dépend de l’état des deux relais étudiés."
+    },
+    {
+      "fichier": "figures/modele-contact-mecanique.svg",
+      "question": "11",
+      "legende": "La densité agit par le contact et la géométrie tissulaire. Les documents relient ces entrées à YAP ; le point de jonction exact des relais mécanique et biochimique reste ouvert."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale de la synthèse sur le contact direct et des 26 réponses documentaires dans les deux éditions ; lecture des figures 1 à 11 du sujet, confrontation au rapport et production des sept illustrations."
+    }
+  ]
+}

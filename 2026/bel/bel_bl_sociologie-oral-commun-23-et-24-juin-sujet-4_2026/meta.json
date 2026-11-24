@@ -1,0 +1,60 @@
+{
+  "slug": "bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-4_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie (oral commun) — 23 et 24 juin, sujet 4",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Sobriété et classes sociales",
+  "questions": 0,
+  "documents": 7,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dossier_sobriete.pdf",
+    "sujet_sha256": "fa131ed752cc224d0f756e4c6ae9b3e83b4f30640757ad0206922d2f95c12774",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_sociologie.pdf",
+    "rapport_sha256": "88b3a9510314fc1f3cf54db5e06e186c8ea84f8439184be0d0e8719150de817d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-des-donnees.svg",
+      "question": "Lecture du dossier",
+      "legende": "Faire attention à toute sa consommation d’énergie et d’eau"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de l’exposé sur les sept documents, des questions de discussion et du graphique."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation au dossier original et au rapport du jury. Contrôle des valeurs reportées, des champs, des dénominateurs et des limites de l’interprétation."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "x-ens_pc_maths-pc_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2023
+  },
+  "questions": 32,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20SUJET%20DE%20MATHEMATIQUES%20(XEULS).pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20RAPPORT%20ECRIT%20MATHEMATIQUES%20(XEULS).pdf",
+    "sha256_sujet": "b0f57ab7585fbf9d9608ed9b1a3ec4432e18d6c2e9e00582f8716ebbc2aa0ee1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/contraction.svg",
+      "question": "7",
+      "legende": "Deux lois initiales pour la transition dont les premières probabilités de ligne valent 0,7 et 0,2."
+    },
+    {
+      "fichier": "figures/classes-age.svg",
+      "question": "12c",
+      "legende": "Proportions des trois classes pour une matrice de Leslie, en partant de la première classe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des quatre parties et de chaque sous-question des deux éditions à partir de l’énoncé XEULS et de son rapport. Vérification des normalisations, du conditionnement de 15a, des indices de 20b et de la convergence presque sûre. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
