@@ -187,6 +187,8 @@
 | 2025 | BEL | BL | Italien | [md](2025/bel/bel_bl_italien_2025/brut.md) | [md](2025/bel/bel_bl_italien_2025/guide.md) |
 | 2025 | BEL | BL | Mathématiques (oral) | [md](2025/bel/bel_bl_mathematiques-oral_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques-oral_2025/guide.md) |
 | 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
+| 2022 | BEL | AL | Allemand (commentaire et traduction) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Allemand (thème Lyon) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
