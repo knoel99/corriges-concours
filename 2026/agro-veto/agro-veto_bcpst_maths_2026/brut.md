@@ -106,7 +106,7 @@ On vérifie les hypothèses de l'inégalité de Markov pour $Z_t$ :
 - elle admet une espérance, puisque $\psi(t)=\ln\mathbb E(Z_t)$ est définie ;
 - le seuil $e^{ta}$ est strictement positif.
 
-(La question 5 a été démontrée pour une variable discrète. Si $X$ est discrète, $Z_t$ l'est aussi, ce qui suffit pour la question 7.) La question 5 donne alors :
+Pour toute variable positive $Z$, discrète ou non, l’inégalité ponctuelle $Z\ge b\,\mathbf{1}_{\{Z>b\}}$ donne $\mathbb E(Z)\ge b\,\mathbb P(Z>b)$ pour $b>0$. La question 5 donne alors :
 
 $$\begin{aligned}
 \mathbb P(X>a)&=\mathbb P(Z_t>e^{ta})\\
@@ -174,7 +174,7 @@ $$\ln\frac{B_7(a)}{B_5(a)}\underset{a\to+\infty}{\sim}-a\ln a .$$
 
 Ce logarithme tend vers $-\infty$, donc $B_7(a)/B_5(a)\to0$.
 
-**Lorsque $a\to+\infty$, la borne de la question 7.b est la meilleure : $B_7(a)=o(B_5(a))$.** Elle décroît comme $e^{-a\ln a}$, alors que la borne de Markov décroît seulement en $1/a$.
+**Lorsque $a\to+\infty$, la borne de la question 7.b est la meilleure : $B_7(a)=o(B_5(a))$.** Plus précisément, $\ln B_7(a)\sim-a\ln a$, ce qui entraîne $B_7(a)=o(e^{-ca})$ pour tout $c>0$.
 
 ![Figure 1 — Bornes de Markov (Q5) et de Q7.b pour une loi de Poisson de paramètre λ = 2, en échelle logarithmique : égales à 1 en a = λ, elles se séparent ensuite très vite](figures/q7c-bornes-markov-chernoff.svg)
 
@@ -624,6 +624,8 @@ Les deux modèles se distinguent par l'indice de dispersion $\mathbb V(X)/\mathb
 - la moyenne empirique $\bar x=\frac1n\sum x_i$, qui estime $\mathbb E(X)$ par la loi faible des grands nombres ;
 - la variance empirique $s^2=\frac1{n-1}\sum(x_i-\bar x)^2$, estimation usuelle de $\mathbb V(X)$ ;
 - puis l'indice empirique $\widehat D=s^2/\bar x$.
+
+Le calcul demande $n\ge 2$ et $\bar x>0$. Si toutes les observations valent zéro, l’indice est indéfini et cette comparaison ne permet pas de départager les modèles.
 
 **Règle :** si $\widehat D$ est proche de $1$, on privilégie le modèle de la partie I (mutations induites par l'exposition). Si $\widehat D$ est nettement supérieur à $1$ (sur-dispersion), on privilégie le modèle de la partie V (mutations spontanées transmises à la descendance). « Nettement » s'apprécie en fonction de la taille de l'échantillon.
 

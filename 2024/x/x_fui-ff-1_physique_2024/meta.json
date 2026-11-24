@@ -1,0 +1,51 @@
+{
+  "slug": "x_fui-ff-1_physique_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Physique",
+    "annee": 2024
+  },
+  "questions": 22,
+  "redaction": "Corrigé original non officiel rédigé par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20DE%20PHYSIQUE.pdf",
+    "rapport_jury": null
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Lecture des formules dans les figures du PDF. Vérification des champs, des seuils électroniques, de la période du cerceau et de la construction du téléobjectif sur une échelle horizontale graduée.\nContre-lecture indépendante des exercices 1, 2 et 4, avec recalcul du critère de contact, des vitesses des barres de masses inégales et de la profondeur de l’appareil."
+  },
+  "figures": [
+    {
+      "fichier": "figures/trajectoires-cyclotron.svg",
+      "numero": 1,
+      "question": "1.2",
+      "legende": "Deux trajectoires circulaires émises radialement vers l’intérieur à partir du cylindre extérieur."
+    },
+    {
+      "fichier": "figures/barres-et-freinage.svg",
+      "numero": 2,
+      "question": "2.1",
+      "legende": "Les deux forces de Laplace sont opposées entre elles et tendent à réduire l’écartement."
+    },
+    {
+      "fichier": "figures/cerceau-echange-energies.svg",
+      "numero": 3,
+      "question": "3.5",
+      "legende": "Aux deux points de retournement, le mouvement de rotation porte toute l’énergie cinétique."
+    },
+    {
+      "fichier": "figures/teleobjectif-construction-a-echelle.svg",
+      "numero": 4,
+      "question": "4.6",
+      "legende": "Les rayons convergeraient en B₁ sans la seconde lentille. Après réfraction ils se rencontrent en B′, à environ 110 mm de O₁."
+    }
+  ]
+}

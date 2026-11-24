@@ -1,0 +1,43 @@
+{
+  "slug": "x_fui-ff-1_anglais_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Anglais",
+    "annee": 2023
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/species-and-population.svg",
+      "question": "1",
+      "legende": "What would count as success?"
+    },
+    {
+      "fichier": "figures/two-budget-questions.svg",
+      "question": "3",
+      "legende": "Two decisions that Morton distinguishes"
+    },
+    {
+      "fichier": "figures/essay-wildlife-choices.svg",
+      "question": "E",
+      "legende": "Making the argument about public choices"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20D'ANGLAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "vocabulaire": "https://now.tufts.edu/2022/06/15/how-slavery-ended-slowly-and-emancipation-laws-often-kept-enslaved-bondage-and-rewarded"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante des quatre réponses face aux articles et aux consignes, contrôle des limites de longueur et de la reformulation."
+  }
+}

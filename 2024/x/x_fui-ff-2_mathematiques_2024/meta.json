@@ -1,0 +1,47 @@
+{
+  "slug": "x_fui-ff-2_mathematiques_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Mathématiques",
+    "annee": 2024
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "question": "E.4",
+      "fichier": "figures/bords-de-convergence.svg",
+      "legende": "Les courbes sont calculées à l’intérieur du disque de convergence. À droite, celles de paramètres 0,5 et 1 divergent, tandis que celle de paramètre 2 admet une limite finie."
+    },
+    {
+      "question": "E.6",
+      "fichier": "figures/secondes-differences.svg",
+      "legende": "Pour a = 1/2, le coefficient de la série dérivée initiale grandit. Après multiplication par (1 − x)², le coefficient de la dérivée décroît comme une constante fois n puissance −3/2."
+    },
+    {
+      "question": "P.2",
+      "fichier": "figures/image-de-rang-un.svg",
+      "legende": "Une transformation de rang un envoie chaque point sur la même droite. Le facteur de droite calcule un scalaire, le facteur de gauche fixe la direction."
+    },
+    {
+      "question": "P.6c",
+      "fichier": "figures/colonnes-propres.svg",
+      "legende": "Pour la multiplication à gauche, les colonnes d’une matrice propre appartiennent indépendamment au même espace propre de A."
+    },
+    {
+      "question": "P.11",
+      "fichier": "figures/deux-parallelismes.svg",
+      "legende": "La conservation du rang de la somme et l’injectivité de la transformation imposent exactement une des deux possibilités."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20MATHEMATIQUES_0.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24"
+}

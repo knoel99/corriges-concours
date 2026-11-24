@@ -460,6 +460,8 @@ $$\boxed{\begin{aligned}
 > [!JURY]
 > Rapport 2026 : « Une justification minimale était attendue. » Le jury ajoute que les candidats « ne devraient pas encadrer » $\mathrm{tr}(C)=\frac4{12}$ : on encadre la fraction irréductible.
 
+![Figure 2 — Loi conjointe multipliée par 12. Les marges donnent les lois de X et Y et les trois cases foncées totalisent 4/12 pour X = Y.](figures/b6-loi-conjointe.svg)
+
 ## Partie C — Des variables aléatoires dans une matrice
 
 Les coefficients $a$ et $b$ deviennent des variables aléatoires.
@@ -921,6 +923,8 @@ La valeur calculée en 6(b), $I\approx0{,}21171$, appartient bien au premier int
 
 > [!JURY]
 > Rapport 2026 : l'application numérique est souvent incomplète ou erronée, et l'interprétation « se limite souvent à une paraphrase de la formule ». Pour $\varepsilon=10^{-3}$, il suffit de constater que la borne est triviale. Remettre en cause ses calculs ou réclamer plus de simulations va au-delà de la question.
+
+![Figure 3 — Sur les 100 000 tirages du sujet, 21 357 coïncidences donnent la fréquence 0,21357. L’intervalle de rayon 0,01 contient la probabilité calculée par la série.](figures/c7f-intervalle-frequence.svg)
 
 ## Partie D — Un deuxième couple de variables aléatoires
 

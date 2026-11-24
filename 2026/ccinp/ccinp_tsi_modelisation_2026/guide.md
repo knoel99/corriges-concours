@@ -1216,14 +1216,14 @@ Les valeurs propres sont réelles et opposées, $\pm r$ avec $r=\sqrt{(\omega\de
 
 $$X(\tau)=c_+e^{r\tau}V_++c_-e^{-r\tau}V_- .$$
 
-Pour toute condition initiale hors de $\operatorname{Vect}(V_-)$, $\|X\|$ **croît exponentiellement** : c'est la résonance paramétrique, et le roulis diverge jusqu'au chavirement.
+Pour toute condition initiale hors de $\operatorname{Vect}(V_-)$, $\|X\|$ **croît exponentiellement** : c'est la résonance paramétrique, et le modèle prévoit une perte de stabilité aux petits angles.
 
-Dans le cas d'égalité ($M\neq0$), un calcul direct donne $M^2=(u^2-v^2)I_2=0$ ; la solution est alors $(I_2+\tau M)X(0)$ (elle vérifie (10), et l'on conclut par unicité de la solution du problème de Cauchy) et croît linéairement : c'est encore instable.
+À la frontière $|u|=|v|$, on a $M^2=(u^2-v^2)I_2=0$, donc $X(\tau)=X(0)+\tau MX(0)$. Si $M\neq0$, les données initiales dans $\ker M$ donnent des solutions constantes et les autres une croissance linéaire. L’existence de ces dernières rend l’équilibre instable. Si $M=0$ ($\delta=0$ et $\Omega=\omega$), toutes les enveloppes sont constantes : l’oscillateur homogène est stable.
 
 > [!PIEGE]
 > Le taux de croissance vaut $r$ dans la variable dont (9) donne la dérivée. L'énoncé appelle cette variable $\tau=\delta t$, mais $M$ contient déjà les pulsations $\omega\delta/4$ et $\Omega-\omega$.
 >
-> Ne cherchez pas à en déduire un « temps de divergence » physique sans lever cette ambiguïté (une simulation directe de (6) montre que le taux réel, en temps $t$, est $r$).
+> Ne cherchez pas à en déduire un « temps de divergence » physique sans lever cette ambiguïté.
 
 ### Question 52
 
@@ -1235,11 +1235,11 @@ Dans le cas d'égalité ($M\neq0$), un calcul direct donne $M^2=(u^2-v^2)I_2=0$ 
 
 #### Solution
 
-Le robot est stable si et seulement si $|\Omega-\omega|>\frac{\omega|\delta|}4$ :
+Pour $\delta\ne0$, toutes les solutions du système linéarisé restent bornées si et seulement si $|\Omega-\omega|>\frac{\omega|\delta|}4$ :
 
 $$\boxed{\Omega\in\Big]0\,;\,\omega\big(1-\tfrac{|\delta|}4\big)\Big[\cup\Big]\omega\big(1+\tfrac{|\delta|}4\big)\,;\,+\infty\Big[}$$
 
-Ce résultat vaut au voisinage de $\omega$, dans le cadre de l'étude. Dans la bande $\big]\omega(1-\frac{|\delta|}4),\omega(1+\frac{|\delta|}4)\big[$, le roulis croît exponentiellement. **Le robot ne peut donc pas être utilisé passivement en toutes situations de navigation.** La bande se rétrécit avec $\delta$ mais ne disparaît pas. Il faut éviter les houles de pulsation voisine de $\omega$, ou stabiliser activement le roulis grâce aux flotteurs motorisés et à l'asservissement de la partie I.3.
+Ce résultat vaut au voisinage de $\omega$, dans le cadre de l'étude. Dans la bande $\big]\omega(1-\frac{|\delta|}4),\omega(1+\frac{|\delta|}4)\big[$, le roulis croît exponentiellement. **Le robot ne peut donc pas être utilisé passivement en toutes situations de navigation.** La largeur de la bande de croissance exponentielle vaut $\omega|\delta|/2$ et tend vers zéro avec $\delta$. Il faut éviter les houles de pulsation voisine de $\omega$, ou stabiliser activement le roulis grâce aux flotteurs motorisés et à l'asservissement de la partie I.3.
 
 ![Figure 6 — Domaine d'instabilité |Ω − ω| < ω|δ|/4 au voisinage de Ω = ω](figures/q52-bande-instabilite.svg)
 

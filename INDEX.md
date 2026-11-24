@@ -337,6 +337,7 @@
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
+| 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Informatique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/guide.md) |
@@ -508,10 +509,16 @@
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
+| 2023 | X | FUI-FF 1 | Anglais | [md](2023/x/x_fui-ff-1_anglais_2023/brut.md) | [md](2023/x/x_fui-ff-1_anglais_2023/guide.md) |
+| 2023 | X | FUI-FF 1 | Français | [md](2023/x/x_fui-ff-1_francais_2023/brut.md) | [md](2023/x/x_fui-ff-1_francais_2023/guide.md) |
 | 2024 | X | FUI-FF 1 | Français | [md](2024/x/x_fui-ff-1_francais_2024/brut.md) | [md](2024/x/x_fui-ff-1_francais_2024/guide.md) |
+| 2024 | X | FUI-FF 1 | Physique | [md](2024/x/x_fui-ff-1_physique_2024/brut.md) | [md](2024/x/x_fui-ff-1_physique_2024/guide.md) |
+| 2023 | X | FUI-FF 2 | Anglais | [md](2023/x/x_fui-ff-2_anglais_2023/brut.md) | [md](2023/x/x_fui-ff-2_anglais_2023/guide.md) |
 | 2025 | X | FUI-FF 2 | Anglais | [md](2025/x/x_fui-ff-2_anglais_2025/brut.md) | [md](2025/x/x_fui-ff-2_anglais_2025/guide.md) |
+| 2023 | X | FUI-FF 2 | Français | [md](2023/x/x_fui-ff-2_francais_2023/brut.md) | [md](2023/x/x_fui-ff-2_francais_2023/guide.md) |
 | 2024 | X | FUI-FF 2 | Français | [md](2024/x/x_fui-ff-2_francais_2024/brut.md) | [md](2024/x/x_fui-ff-2_francais_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Français | [md](2025/x/x_fui-ff-2_francais_2025/brut.md) | [md](2025/x/x_fui-ff-2_francais_2025/guide.md) |
+| 2024 | X | FUI-FF 2 | Mathématiques | [md](2024/x/x_fui-ff-2_mathematiques_2024/brut.md) | [md](2024/x/x_fui-ff-2_mathematiques_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Mathématiques | [md](2025/x/x_fui-ff-2_mathematiques_2025/brut.md) | [md](2025/x/x_fui-ff-2_mathematiques_2025/guide.md) |
 | 2024 | X | FUI-FF 2 | Physique | [md](2024/x/x_fui-ff-2_physique_2024/brut.md) | [md](2024/x/x_fui-ff-2_physique_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Physique | [md](2025/x/x_fui-ff-2_physique_2025/brut.md) | [md](2025/x/x_fui-ff-2_physique_2025/guide.md) |

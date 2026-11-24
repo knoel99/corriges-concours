@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-Épreuve de 3 heures, calculatrice interdite. Le Document Réponse (DR), qui porte les codes à trous des Q5, Q12, Q16, Q22 et Q23, n'est pas reproduit ici : ces fonctions sont donc écrites en entier, avec les noms, paramètres et valeurs de retour imposés par l'énoncé. Convention : la case $(i, j)$ est celle de la ligne $i$ et de la colonne $j$.
+Épreuve de 3 heures, calculatrice interdite. Les codes à compléter suivent le cadre fourni aux candidats. [Document réponse officiel](https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI5IN_DR.pdf). Convention : la case $(i, j)$ est celle de la ligne $i$ et de la colonne $j$.
 
 ## Partie I — Des algorithmes pour résoudre le problème des n reines
 
@@ -144,21 +144,24 @@ def est_solution(L, n):
 
 ### I.4 — Une première approche par recherche aléatoire
 
-**Q12.** Méthode 1, import du module :
+**Q12.** Les trois lignes d’importation, dans l’ordre du document réponse, correspondent aux trois formes d’appel déjà imprimées.
 
 ```python
-import random
-P = random.sample(L, len(L))
+import random as rd
+rd.sample(L, len(L))
 ```
-
-Méthode 2, import de la seule fonction, appel direct (celle utilisée ensuite, puisque l'énoncé écrit `sample(L, len(L))` sans préfixe) :
 
 ```python
 from random import sample
-P = sample(L, len(L))
+sample(L, len(L))
 ```
 
-(Troisième forme au programme : `import random as rd`, puis `rd.sample(L, len(L))`.)
+```python
+import random
+random.sample(L, len(L))
+```
+
+Chaque appel produit une nouvelle liste tirée sans remise parmi les éléments de `L`.
 
 **Q13.**
 
@@ -209,25 +212,21 @@ Il n'y a ni oubli ni doublon : en retirant le 2 d'une permutation de $\{0, 1, 2\
 
 ![Figure 3 — Q15 : chaque permutation l1 de {0, 1} donne trois listes insertion(v, l1, i) avec v = 2, rangées dans P dans l'ordre](figures/q15-insertion-permutations.svg)
 
-**Q16.** On répète le procédé de la Q15 pour $v = 2, 3, \dots, n-1$, en repartant chaque fois de la liste obtenue à l'étape précédente.
+**Q16.** Le document réponse commence avec `L = [[0]]`. À chaque étape, `P` reçoit les permutations obtenues en insérant `v` dans les listes de l’étape précédente.
 
 ```python
 def permutations(n):
-    P = [[0, 1], [1, 0]]
-    for v in range(2, n):
-        Q = []
-        for l1 in P:
+    L = [[0]]
+    for v in range(1, n):
+        P = []
+        for l1 in L:
             for i in range(v + 1):
-                Q.append(insertion(v, l1, i))
-        P = Q
-    return P
+                P.append(insertion(v, l1, i))
+        L = P
+    return L
 ```
 
-Par récurrence sur $v$ : avant le tour d'indice $v$, `P` contient sans répétition les $v!$ permutations de $\{0, \dots, v-1\}$. L'argument de la Q15 montre qu'après le tour, `P` contient les $(v+1)!$ permutations de $\{0, \dots, v\}$.
-
-En sortie, `P` contient donc les $n!$ permutations de $\{0, \dots, n-1\}$. Pour $n = 2$, la boucle est vide et la fonction renvoie `[[0, 1], [1, 0]]`.
-
-`permutations(3)` renvoie `[[2, 0, 1], [0, 2, 1], [0, 1, 2], [2, 1, 0], [1, 2, 0], [1, 0, 2]]`. Coût $\Theta(n \cdot n!)$.
+Avant le tour d’indice $v$, `L` contient les $v!$ permutations de $\{0,\ldots,v-1\}$. Chaque permutation de $\{0,\ldots,v\}$ s’obtient une seule fois : enlever $v$ restitue la liste de départ et sa position d’insertion. Après le dernier tour, `L` contient donc les $n!$ permutations demandées. Par exemple, `permutations(2)` renvoie `[[1, 0], [0, 1]]`. L’ordre des listes est libre. La construction explicite demande $\Theta(n\,n!)$ opérations.
 
 **Q17.**
 
@@ -303,48 +302,47 @@ La similarité est une relation d'équivalence (les rotations et symétries du c
 
 ### I.7 — Des graphes pour aller plus vite et plus loin
 
-**Q22.** Les sommets du graphe sont les configurations partielles (listes de longueur $k$ au niveau $k$) ; on le parcourt en profondeur, récursivement, en élaguant dès qu'une configuration partielle est invalide. La liste courante sert de pile (`append` pour poser une reine, `pop` pour revenir en arrière). La signature `explore(L, n)` est une hypothèse, le DR n'étant pas disponible.
+**Q22.** Le premier test du document réponse élimine les configurations partielles déjà incompatibles. Le second reconnaît une solution complète. Les trois cases à compléter contiennent successivement `-1`, `n` et `-1`.
 
 ```python
 def explore(L, n):
+    if not est_possible(L):
+        return -1
     if len(L) == n:
         return L
-    for j in range(n):
-        L.append(j)
-        if est_possible(L):
-            R = explore(L, n)
-            if R != -1:
-                return R
-        L.pop()
+    for i in range(n):
+        res = explore(L + [i], n)
+        if res != -1:
+            return res
     return -1
 
 def resout_graphe(n):
-    return explore([], n)
+    rep = explore([], n)
+    return rep
 ```
 
-Correction (récurrence sur $n - \texttt{len(L)}$) : si `L` est une configuration partielle valide, `explore(L, n)` renvoie une solution prolongeant `L` s'il en existe, et $-1$ sinon, en laissant `L` intacte en cas d'échec. En effet, toute solution prolongeant `L` commence par `L + [j]` pour un $j$, et `L + [j]` est alors valide (un préfixe d'une configuration valide est valide) : la boucle examine tous les $j$, l'élagage ne supprime aucune solution, et chaque `append` est défait par un `pop` en cas d'échec. Terminaison : $n - \texttt{len(L)}$ décroît strictement à chaque appel, la profondeur est au plus $n$. On obtient `resout_graphe(4) = [1, 3, 0, 2]` et `resout_graphe(8) = [0, 4, 7, 5, 2, 6, 1, 3]`.
+Si le préfixe est invalide, toute configuration qui le prolonge contient le même conflit. Si le préfixe est valide et complet, il constitue une solution. Dans le dernier cas, chaque prolongement place sa prochaine reine dans l’une des colonnes explorées par la boucle. Par récurrence sur $n-\mathrm{len}(L)$, l’appel renvoie donc le premier prolongement gagnant ou $-1$ si tous échouent. Chaque appel reçoit une nouvelle liste et la profondeur est au plus $n$. On trouve `resout_graphe(4) = [1, 3, 0, 2]` et `resout_graphe(8) = [0, 4, 7, 5, 2, 6, 1, 3]`.
 
-![Figure 5 — Q22 : configurations partielles visitées par explore pour n = 4, colonnes rejetées par l'élagage, arrêt à la première solution](figures/q22-retour-sur-trace.svg)
+![Figure 5 — Configurations partielles visitées pour n = 4, rejet des branches incompatibles et première solution.](figures/q22-retour-sur-trace.svg)
 
-**Q23.** On ne s'arrête plus à la première solution : on renvoie 1 pour une configuration complète et on additionne les résultats des sous-arbres.
+**Q23.** Une branche invalide contribue zéro solution. Une feuille valide contribue une solution. À un sommet intérieur, on additionne les nombres de solutions de **tous** les enfants.
 
 ```python
 def explore2(L, n):
+    if not est_possible(L):
+        return 0
     if len(L) == n:
         return 1
-    total = 0
-    for j in range(n):
-        L.append(j)
-        if est_possible(L):
-            total = total + explore2(L, n)
-        L.pop()
-    return total
+    nb_sol = 0
+    for i in range(n):
+        nb_sol = nb_sol + explore2(L + [i], n)
+    return nb_sol
 
 def compte(n):
     return explore2([], n)
 ```
 
-Par la même récurrence, `explore2(L, n)` renvoie le nombre de solutions prolongeant la configuration partielle valide `L` : ces prolongements se répartissent, sans recouvrement, selon la colonne $j$ de la reine suivante. On obtient `compte(4) = 2`, `compte(5) = 10`, `compte(8) = 92`, en accord avec la Q17.
+Les prolongements obtenus pour deux colonnes différentes sont disjoints. Cette partition justifie la somme par récurrence sur le nombre de lignes à remplir. On obtient `compte(4) = 2`, `compte(5) = 10` et `compte(8) = 92`.
 
 ## Partie II — Base de données d'un serveur de jeu en ligne
 
@@ -374,23 +372,23 @@ Une ligne par achat du client.
 **Q26.** On groupe par la clé primaire du client (deux homonymes ne doivent pas être confondus).
 
 ```sql
-SELECT Clients.nom, Clients.email, SUM(Factures.montant) AS total
+SELECT Clients.nom, Clients.email, COALESCE(SUM(Factures.montant), 0) AS total
 FROM Clients
-JOIN Factures ON Clients.id_client = Factures.id_client
+LEFT JOIN Factures ON Clients.id_client = Factures.id_client
 GROUP BY Clients.id_client, Clients.nom, Clients.email;
 ```
 
-La jointure interne ne fait apparaître que les clients ayant au moins un achat ; un client sans facture, dont le total serait nul, n'est pas listé.
+La jointure externe garde aussi le client sans facture. Pour lui, `SUM` donne `NULL` et `COALESCE` inscrit un total de zéro.
 
 **Q27.**
 
 ```sql
 SELECT Jeux.nom_jeu, MAX(Records.score) AS meilleur_score
 FROM Jeux
-JOIN Records ON Jeux.id_jeu = Records.id_jeu
+LEFT JOIN Records ON Jeux.id_jeu = Records.id_jeu
 GROUP BY Jeux.id_jeu, Jeux.nom_jeu;
 ```
 
-Une ligne par jeu ayant au moins un record, avec le score maximal enregistré pour ce jeu.
+Chaque jeu apparaît. Sans record, `MAX` renvoie `NULL`, ce qui distingue l’absence de score d’un record de zéro.
 
 **FIN**

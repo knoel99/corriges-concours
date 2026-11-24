@@ -381,7 +381,7 @@ Un tel angle existe si et seulement si le second membre est au plus égal à 1, 
 - Si $c_2 \le c_1$ : la condition est toujours vérifiée ; un rayon transmis existe pour tout angle d'incidence.
 - Si $c_2 > c_1$ : on a $c_1/c_2 \in\ ]0, 1[$. Comme le sinus est strictement croissant sur $[0, \pi/2]$, la condition équivaut à $\theta_i \le \arcsin(c_1/c_2)$. Le cas d'égalité donne un rayon rasant ($\theta_t = \pi/2$) : c'est la limite de la réflexion totale.
 
-Il existe donc un rayon transmis si et seulement si
+Le rayon transmis **pénètre dans la couche suivante** si et seulement si
 
 $$\boxed{\theta_i < \theta_c = \arcsin\left(\frac{c_1}{c_2}\right)}$$
 
@@ -449,35 +449,58 @@ Après une réflexion, `direction` est inversée avant la mise à jour de `z` : 
 
 ### Question 36
 
-Convention : `angle_emission` est compté par rapport à l'horizontale, positivement vers le fond, et supposé non nul ; `y_emission` est la profondeur d'émission, traitée comme un dioptre.
+La profondeur $z$ augmente vers le fond. On prend $h>0$, une distance horizontale positive ou nulle et un rayon dirigé vers la droite, d’angle $-\pi/2<\alpha<\pi/2$. Chaque couche a une célérité évaluée à mi-profondeur. Le premier segment part du point d’émission, même s’il se situe entre deux interfaces. À la surface et au fond, le rayon se réfléchit dans la même couche. La dernière couche peut avoir une épaisseur inférieure à $h$.
 
 ```python
 def trajet_rayon(x_emission, y_emission, angle_emission, h, distance_x_max):
-    rayon = [(x_emission, y_emission)]          # initialisation de la liste
-    x_I, z = x_emission, y_emission             # z : profondeur du dioptre courant
-    if angle_emission > 0:
-        direction = 1                           # le rayon descend
-        theta1 = pi / 2 - angle_emission        # angle par rapport à la verticale
-    else:
-        direction = -1                          # le rayon remonte
-        theta1 = pi / 2 + angle_emission
-    direction = conditions_limites(z, h, direction)
-    while x_I < x_emission + distance_x_max:
-        c1, c2 = calculer_celerite(z, h, direction)
-        if theta1 < angle_critique(c1, c2):     # CONDITION_1
-            theta2, x_B, z_B = refraction(x_I, z, theta1, h, c1, c2, direction)
+    from math import asin, ceil, floor, pi, sin, tan
+
+    fond = 5000
+    x, z = x_emission, y_emission
+    fin = x + distance_x_max
+    rayon = [(x, z)]
+    if x == fin:
+        return rayon
+    if angle_emission == 0:
+        return rayon + [(fin, z)]
+
+    sens = 1 if angle_emission > 0 else -1
+    if (z == 0 and sens == -1) or (z == fond and sens == 1):
+        sens = -sens
+    couche = floor(z / h) if sens == 1 else ceil(z / h) - 1
+    theta = pi / 2 - abs(angle_emission)
+
+    def vitesse(j):
+        haut = j * h
+        bas = min(fond, (j + 1) * h)
+        return celerite((haut + bas) / 2)
+
+    while x < fin:
+        interface = min(fond, (couche + 1) * h) if sens == 1 else couche * h
+        avance = abs(interface - z) * tan(theta)
+        if x + avance >= fin:
+            fraction = (fin - x) / avance
+            rayon.append((fin, z + fraction * (interface - z)))
+            break
+        x, z = x + avance, interface
+        rayon.append((x, z))
+        if z == 0 or z == fond:
+            sens = -sens
         else:
-            theta2, x_B, z_B = reflexion_totale(x_I, z, theta1, h, direction)
-            direction = -direction
-        rayon.append((x_B, z_B))
-        x_I = x_B
-        z = z + direction * h                   # vaut z_B dans les deux cas
-        theta1 = theta2
-        direction = conditions_limites(z, h, direction)
+            voisine = couche + sens
+            sinus_transmis = vitesse(voisine) * sin(theta) / vitesse(couche)
+            if sinus_transmis < 1:
+                theta = asin(sinus_transmis)
+                couche = voisine
+            elif sinus_transmis > 1:
+                sens = -sens
+            else:
+                rayon.append((fin, z))
+                break
     return rayon
 ```
 
-Avec `celerite = munk`, $h = 10$ m et une émission à 1500 m sous $0{,}05$ rad, le rayon reste entre 920 et 1770 m, comme le prévoit l'invariant $\sin\theta/c$. Émis à 3000 m, il oscille entre 350 et 3110 m (figure 7). Sous $0{,}3$ rad, il se réfléchit en surface et au fond (figure 4).
+Avec le profil de Munk, $h=10$ m et une portée de 1 000 km, le calcul donne, pour une émission à 1 500 m sous $0{,}05$ rad, des profondeurs entre 920 et 1 780 m. À 3 000 m sous le même angle, elles vont de 350 à 3 120 m. Les profondeurs de retournement dépendent de la discrétisation. Le dernier segment est interpolé jusqu’à la portée demandée.
 
 ### 2.3 Choix d'une loi d'évolution de la célérité
 

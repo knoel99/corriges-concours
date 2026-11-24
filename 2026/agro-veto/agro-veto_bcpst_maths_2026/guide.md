@@ -145,7 +145,7 @@ Ce rapport ne dépend pas du paramètre, ce qui en fait une signature de la loi 
 
 ## Partie II — Inégalités de concentration
 
-On démontre l'inégalité de Markov, puis on l'applique à $e^{tX}$ pour obtenir une famille de bornes, qu'on optimise en $t$ (méthode de Chernoff). Le cas de la loi de Poisson montre que la seconde borne est bien meilleure.
+On démontre l'inégalité de Markov, puis on l'applique à $e^{tX}$ pour obtenir une famille de bornes, qu'on optimise en $t$ (méthode de Chernoff). Dans le cas de la loi de Poisson, la seconde borne devient plus précise aux grands seuils.
 
 ### Question 5
 
@@ -203,7 +203,7 @@ Dans les deux cas :
 
 $$\boxed{\forall t\ge0,\quad\mathbb P(X>a)\le e^{\psi(t)-ta}.}$$
 
-La question 5 n'a été démontrée que pour une variable discrète. Si $X$ est discrète, $Z_t$ l'est aussi, ce qui suffit pour la question 7.
+Le même argument vaut pour toute variable positive $Z$. L’inégalité $Z\ge b\,\mathbf{1}_{\{Z>b\}}$, puis la croissance de l’espérance, donnent $\mathbb E(Z)\ge b\,\mathbb P(Z>b)$ pour $b>0$.
 
 > [!METHODE]
 > L'inégalité vaut pour **tout** $t\ge0$. On peut donc ensuite choisir le $t$ qui rend la borne la plus petite. C'est exactement ce que fait la question 7.b.
@@ -293,7 +293,7 @@ $$\begin{aligned}
 
 car $a-\lambda=o(a\ln a)$. Il tend vers $-\infty$, donc $B_7(a)/B_5(a)\to0$.
 
-**La borne de la question 7.b est la meilleure quand $a\to+\infty$**, et $B_7(a)=o(B_5(a))$. Elle décroît comme $e^{-a\ln a}$, plus vite que toute exponentielle, alors que la borne de Markov ne décroît qu'en $1/a$.
+**La borne de la question 7.b est la meilleure quand $a\to+\infty$**, et $B_7(a)=o(B_5(a))$. En effet, $\ln B_7(a)=-a\ln a+a(1+\ln\lambda)-\lambda$ : pour tout $c>0$, $\ln B_7(a)+ca\to-\infty$, donc $B_7(a)=o(e^{-ca})$.
 
 Par exemple, pour $\lambda=2$ et $a=14$, on trouve $B_5\approx0{,}14$ et $B_7\approx2{,}4\times10^{-7}$. Les deux bornes valent $1$ en $a=\lambda$.
 
@@ -994,6 +994,8 @@ On observe $n$ cultures indépendantes, menées dans les mêmes conditions, et o
 - la moyenne empirique $\bar x=\frac1n\sum x_i$, qui estime $\mathbb E(X)$ par la loi des grands nombres ;
 - la variance empirique $s^2=\frac1{n-1}\sum(x_i-\bar x)^2$, qui estime $\mathbb V(X)$ ;
 - puis $\widehat D=s^2/\bar x$.
+
+Le calcul demande $n\ge 2$ et $\bar x>0$. Si toutes les observations valent zéro, l’indice est indéfini et cette comparaison ne permet pas de départager les modèles.
 
 **Si $\widehat D$ est proche de $1$, on privilégie le modèle de la partie I. S'il est nettement supérieur à $1$ (sur-dispersion), on privilégie le modèle de la partie V.** L'écart à $1$ s'apprécie selon la taille de l'échantillon.
 

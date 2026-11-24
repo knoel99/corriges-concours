@@ -543,6 +543,8 @@ $$\boxed{\sum_{n=2}^{+\infty}u_n=0}$$
 > [!JURY]
 > Moins d'un cinquième de réussite selon le rapport 2026, qui note de nombreuses réponses justes appuyées sur des justifications fausses, comme $S_{2N-1}=-S_{2N}$. Le résultat seul ne rapporte rien.
 
+![Figure 2 — Les termes successifs s’annulent par paires. Aux indices impairs, la somme vaut déjà zéro. Aux indices pairs, le dernier terme reste positif et tend vers zéro.](figures/i7-sommes-paires-impaires.svg)
+
 ## Partie II
 
 On étudie une famille d'intégrales à paramètre : convergence, régularité par domination, puis calcul exact par une relation de récurrence. On termine en reliant le résultat à la partie I.
@@ -879,6 +881,8 @@ Donc $\varphi(x,y)\ge\frac{s^2}2-\ln s\ge\frac12$, la dernière inégalité vena
 
 > [!JURY]
 > Le rapport 2026 dit que très peu de candidats ont réussi. Souvent la hessienne était fausse, « Ou alors, la réponse n'est pas finalisée (pas de calcul du déterminant et de la trace de la matrice). » Le jury salue les copies qui ont utilisé un développement limité d'ordre $2$ au voisinage du point.
+
+![Figure 3 — Niveaux de φ(x,y) = x² + y² − ln|x − y|. La diagonale sépare les deux composantes du domaine, chacune avec un minimum en (1/2, −1/2) ou (−1/2, 1/2).](figures/iii4-minima-phi.svg)
 
 ### Question 5
 

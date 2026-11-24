@@ -1,0 +1,37 @@
+{
+  "slug": "x_fui-ff-2_francais_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Français",
+    "annee": 2023
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-effets-de-intelligence.svg",
+      "question": "A1",
+      "legende": "Les deux difficultés de l’intelligence chez Bergson."
+    },
+    {
+      "fichier": "figures/irrigation-et-lac.svg",
+      "question": "B",
+      "legende": "Changer d’échelle pour apprécier une maîtrise technique."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20FRANCAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante sur le sujet officiel : thèse, questions et sous-questions, références littéraires et argument de l’essai vérifiés."
+  }
+}

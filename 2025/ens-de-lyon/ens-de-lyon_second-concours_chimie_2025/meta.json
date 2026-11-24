@@ -1,0 +1,141 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2025
+  },
+  "questions": 64,
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_chimie.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eChi.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q02-lewis-h2s.svg",
+      "question": "Q2",
+      "legende": "Les deux doublets libres du soufre complètent les deux liaisons de la molécule coudée."
+    },
+    {
+      "fichier": "figures/q06-occupation-orbitales.svg",
+      "question": "Q6",
+      "legende": "Huit électrons remplissent les quatre niveaux de valence les plus bas. Les hauteurs relatives suivent le diagramme du sujet."
+    },
+    {
+      "fichier": "figures/q07-phases-orbitales-frontieres.svg",
+      "question": "Q7",
+      "legende": "Les signes indiquent des phases orbitalaires. La BV possède deux contributions 1s de même phase sur les hydrogènes."
+    },
+    {
+      "fichier": "figures/q18-domaines-et-eau.svg",
+      "question": "Q18",
+      "legende": "Les frontières du soufre sont reportées en rouge. Entre les deux droites de l’eau, le domaine F reste accessible en milieu réducteur."
+    },
+    {
+      "fichier": "figures/q25-pic-equivalence.svg",
+      "question": "Q25",
+      "legende": "La longueur du segment de polarisation passe par un maximum près de l’équivalence. A, D, B et C reprennent les panneaux de la figure 5 du sujet."
+    },
+    {
+      "fichier": "figures/acides-amines-glutathion.svg",
+      "question": "Q29",
+      "legende": "Projections de Fischer des trois acides aminés libres. Les liaisons horizontales sont dirigées vers le lecteur."
+    },
+    {
+      "fichier": "figures/ajustement-vitesses-initiales.svg",
+      "question": "Q34",
+      "legende": "Les cinq mesures du tableau 4 se placent sur la droite de pente k."
+    },
+    {
+      "fichier": "figures/glutathion-euler-cinetique.svg",
+      "question": "Q37",
+      "legende": "Intégration du système dans les conditions du sujet. À 200 s, il reste du peroxyde malgré la faible pente."
+    },
+    {
+      "fichier": "figures/masses-dimere-et-disulfure.svg",
+      "question": "Q42",
+      "legende": "Repérage des deux pics proches de 614 pour des ions de charge +1. Les hauteurs sont schématiques."
+    },
+    {
+      "fichier": "figures/q60-lewis-trifluorure.svg",
+      "question": "Q60",
+      "legende": "La géométrie trigonale plane du trifluorure de bore laisse une orbitale vacante sur le bore."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      51,
+      56,
+      60
+    ],
+    "questions_partiellement_traitees": [
+      46,
+      49,
+      52,
+      53
+    ],
+    "questions_non_traitees": [
+      47,
+      48,
+      50,
+      54,
+      55,
+      57,
+      58,
+      59,
+      61,
+      62,
+      63,
+      64
+    ]
+  }
+}
