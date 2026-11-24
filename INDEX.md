@@ -221,6 +221,7 @@
 | 2026 | BEL | BL | Philosophie | [md](2026/bel/bel_bl_philosophie_2026/brut.md) | [md](2026/bel/bel_bl_philosophie_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |
+| 2026 | BEL | BL | Philosophie (oral tronc commun, 18 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/guide.md) |
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
