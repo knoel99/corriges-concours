@@ -4,6 +4,10 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve de six heures du concours de l’ENS Ulm porte sur l’approximation en loi et les inégalités de concentration. Les parties 1 et 2 sont indépendantes. Les trois applications de la partie 3 réutilisent l’outil de la partie 2 et peuvent être abordées séparément. Les 27 questions numérotées comprennent 42 items en comptant les subdivisions.
@@ -208,7 +212,7 @@ $$
 |\mathbb P(X\in A)-\mathbb P(Z_\lambda\in A)|
 =e\max_{\varepsilon=\pm1}\mathbb E[\mathcal L_\lambda(\varepsilon f_A)(X)].
 $$
-Le supremum sur les tests de norme au plus $1$, puis sur $A$, donne **l'inégalité voulue**. Pour $X$ intégrable, toutes les espérances du membre droit existent par (4c). Pour $X$ arbitraire comme l'autorise le libellé, il faut y prendre les tests dont l'espérance est définie, par exemple les tests dont $\mathcal L_\lambda f(X)$ est intégrable. Les deux tests construits ci-dessus sont toujours admissibles. En effet, un $X$ non intégrable peut rendre $\mathbb E[\mathcal L_\lambda f(X)]$ indéfinie pour certains autres tests bornés.
+Le supremum sur les tests de norme au plus $1$, puis sur $A$, donne **l'inégalité voulue**. Pour $X$ intégrable, toutes les espérances du membre droit existent par (4c). Pour $X$ arbitraire comme l'autorise le libellé, il faut y prendre les tests dont l'espérance est définie, par exemple les tests dont $\mathcal L_\lambda f(X)$ est intégrable. Les deux tests construits ci-dessus sont toujours admissibles. Par exemple, prenons $\mathbb P(X=k)=1/[k(k+1)]$ pour $k\ge1$ et $f(k)=(-1)^k$. Ces masses ont pour somme un par télescopage. Or $\mathcal L_\lambda f(k)=(-1)^{k+1}(\lambda+k)$. Les indices impairs et les indices pairs apportent chacun, en valeur absolue, une série divergente comparable à la série harmonique. L’espérance de ce test est donc indéfinie.
 
 > [!PIEGE]
 > Être à valeurs entières n'implique pas avoir une espérance finie. Vérifier l'existence de chaque espérance qui intervient.
@@ -289,7 +293,9 @@ $$
 =\sum_i\Bigl\{p_i\mathbb E[f(W+1)-f(S_i+1)]
 -\mathbb E[X_i(f(S_i+T_i+1)-f(S_i+1))]\Bigr\}.
 $$
-Le contre-exemple montre précisément pourquoi l'indépendance deux à deux utilisée pour définir les voisins ne garantit pas la factorisation.
+Sans l’hypothèse ajoutée, le membre de gauche de (11) moins son membre de droite vaut exactement
+$$-\sum_i\operatorname{Cov}\bigl(X_i,f(S_i+1)\bigr).$$
+Les indépendances deux à deux ne suffisent pas à annuler ces covariances, puisque $S_i$ dépend de plusieurs coordonnées.
 
 > [!PIEGE]
 > L'indépendance de $X_i$ avec chacun des termes séparément n'entraîne pas son indépendance avec leur somme. Une hypothèse locale conjointe rétablit la preuve.

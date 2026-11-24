@@ -4,6 +4,10 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve du 16 avril 2026, six heures sans calculatrice. Les questions 11 et 12 comportent une difficulté d’énoncé. On donne les contre-exemples puis la démonstration sous l’hypothèse d’indépendance suffisante.
 
 ## Partie préliminaire — Lois de Poisson et inégalités
@@ -27,6 +31,8 @@ $$
 Pour $r=\lambda$, le majorant vaut $1$.
 
 **(2c)** Pour $0<r<\lambda$, prendre $u=\ln(r/\lambda)<0$. Sur $\{Z_\lambda\le r\}$, on a cette fois $e^{uZ_\lambda}\ge e^{ur}$. La même application de Markov fournit $\boxed{\mathbb P(Z_\lambda\le r)\le e^{-r\ln(r/\lambda)+r-\lambda}}$. Au point $r=\lambda$, c'est encore la majoration par $1$.
+
+![Figure 1 — Deux événements de queue pour une loi de Poisson de paramètre 5. Chaque barre représente une masse ponctuelle. Les seuils représentés sont 2 et 9.](figures/q02-queues-poisson.svg)
 
 ### Question 3
 
@@ -97,6 +103,8 @@ $$
 $$
 Avec $h_g(0)=0$, ces cas donnent même $\boxed{\|h_g\|_\infty\le2\|g\|_\infty\le e\|g\|_\infty}$.
 
+![Figure 2 — Dans la formule de la solution de Stein, le centrage permet de choisir les indices d'une queue. À gauche le seuil est 2 et à droite 8, avec une moyenne de 5.](figures/q07-sommes-centrees.svg)
+
 ### Question 8
 
 Pour $A\subset\mathbb N$, posons $g_A(k)=\mathbf1_A(k)-\mathbb P(Z_\lambda\in A)$. Alors $g_A$ est centrée sous la loi de Poisson et $\|g_A\|_\infty\le1$. Posons $f_A=h_{g_A}/e$. Par (7), $\|f_A\|_\infty\le1$, et $\mathcal L_\lambda f_A=g_A/e$ est bornée. Ainsi
@@ -104,7 +112,7 @@ $$
 |\mathbb P(X\in A)-\mathbb P(Z_\lambda\in A)|
 =e\max_{\varepsilon=\pm1}\mathbb E[\mathcal L_\lambda(\varepsilon f_A)(X)].
 $$
-Le supremum sur les tests de norme au plus $1$, puis sur $A$, donne **l'inégalité voulue**. Pour $X$ intégrable, toutes les espérances du membre droit existent par (4c). Pour $X$ arbitraire comme l'autorise le libellé, il faut y prendre les tests dont l'espérance est définie, par exemple les tests dont $\mathcal L_\lambda f(X)$ est intégrable. Les deux tests construits ci-dessus sont toujours admissibles. En effet, un $X$ non intégrable peut rendre $\mathbb E[\mathcal L_\lambda f(X)]$ indéfinie pour certains autres tests bornés.
+Le supremum sur les tests de norme au plus $1$, puis sur $A$, donne **l'inégalité voulue**. Pour $X$ intégrable, toutes les espérances du membre droit existent par (4c). Pour $X$ arbitraire comme l'autorise le libellé, il faut y prendre les tests dont l'espérance est définie, par exemple les tests dont $\mathcal L_\lambda f(X)$ est intégrable. Les deux tests construits ci-dessus sont toujours admissibles. Par exemple, prenons $\mathbb P(X=k)=1/[k(k+1)]$ pour $k\ge1$ et $f(k)=(-1)^k$. Ces masses ont pour somme un par télescopage. Or $\mathcal L_\lambda f(k)=(-1)^{k+1}(\lambda+k)$. Les indices impairs et les indices pairs apportent chacun, en valeur absolue, une série divergente comparable à la série harmonique. L’espérance de ce test est donc indéfinie.
 
 ## 1.2. Sommes de variables aléatoires et approximation poissonienne
 
@@ -148,7 +156,9 @@ $$
 =\sum_i\Bigl\{p_i\mathbb E[f(W+1)-f(S_i+1)]
 -\mathbb E[X_i(f(S_i+T_i+1)-f(S_i+1))]\Bigr\}.
 $$
-Le contre-exemple montre précisément pourquoi l'indépendance deux à deux utilisée pour définir les voisins ne garantit pas la factorisation.
+Sans l’hypothèse ajoutée, le membre de gauche de (11) moins son membre de droite vaut exactement
+$$-\sum_i\operatorname{Cov}\bigl(X_i,f(S_i+1)\bigr).$$
+Les indépendances deux à deux ne suffisent pas à annuler ces covariances, puisque $S_i$ dépend de plusieurs coordonnées.
 
 ### Question 12
 
@@ -167,7 +177,7 @@ $$
 $$
 Les trois sommes valent respectivement $B_1$, $B_2=\sum_i\sum_{j\in D_i}p_ip_j$ et $B_3=\sum_i\sum_{j\in D_i}\mathbb E[X_iX_j]$. En appliquant (8), on obtient bien $2e(B_1+B_2+B_3)$ pour cette version de la question.
 
-![Figure 1 — Dans la construction affine modulo un nombre premier, la probabilité de l'événement W = 1 reste loin de celle de Poisson. La borne imprimée tend pourtant vers zéro.](figures/q12-contre-exemple.svg)
+![Figure 3 — Dans la construction affine modulo un nombre premier, la probabilité de l'événement W = 1 reste loin de celle de Poisson. La borne imprimée tend pourtant vers zéro.](figures/q12-contre-exemple.svg)
 
 ## 2. Inégalités de concentration
 
@@ -320,7 +330,7 @@ $$
 \boxed{\mathbb P(|S_N-\mu|\ge t)\le2\exp\!\left(-\frac{t^2}{4\mu+2t}\right).}
 $$
 
-![Figure 2 — L'échange des images des lignes 2 et 3 déplace deux cases. Les deux autres entrées sélectionnées restent en place.](figures/q22-transposition.svg)
+![Figure 4 — L'échange des images des lignes 2 et 3 déplace deux cases. Les deux autres entrées sélectionnées restent en place.](figures/q22-transposition.svg)
 
 ### Question 23
 
@@ -364,4 +374,4 @@ $$
 \le2\exp\!\left(-\frac{t^2}{4(1+\beta)}\right).}
 $$
 
-![Figure 3 — À champ extérieur nul, les intersections donnent les solutions de l'équation de point fixe. Le résidu peut être petit près de plusieurs magnétisations.](figures/q27-points-fixes.svg)
+![Figure 5 — À champ extérieur nul, les intersections donnent les solutions de l'équation de point fixe. Le résidu peut être petit près de plusieurs magnétisations.](figures/q27-points-fixes.svg)

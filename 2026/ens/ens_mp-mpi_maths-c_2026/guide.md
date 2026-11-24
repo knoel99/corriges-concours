@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -46,7 +48,7 @@ Comme $x_\ast\in C$, c'est une **solution faible**.
 
 #### Solution
 
-**a)** Pour $0<\lambda\leq1$, le point $x_\lambda=x_\ast+\lambda(x-x_\ast)$ appartient à $C$ par convexité. L'inégalité faible en ce point s'écrit $0\leq\langle G(x_\lambda),x_\lambda-x_\ast\rangle=\lambda\langle G(x_\lambda),x-x_\ast\rangle$. On divise par $\lambda$.
+**a)** Pour $0<\lambda\leq1$, le point $x_\lambda=x_\ast+\lambda(x-x_\ast)$ appartient à $C$ par convexité. L'inégalité faible en ce point s'écrit $0\leq\langle G(x_\lambda),x_\lambda-x_\ast\rangle=\lambda\langle G(x_\lambda),x-x_\ast\rangle$. Comme $\lambda>0$, on obtient $\langle G(x_\lambda),x-x_\ast\rangle\geq0$.
 
 **b)** Lorsque $\lambda\to0^+$, la continuité donne $G(x_\lambda)\to G(x_\ast)$. L'inégalité de a) devient $\langle G(x_\ast),x-x_\ast\rangle\geq0$ pour tout $x\in C$. Ainsi $x_\ast$ est une **solution forte**.
 
@@ -151,7 +153,7 @@ Pour $\bar x_N=N^{-1}\sum_{j=1}^Nx_j\in C$ par convexité, sommons 7. La somme d
 
 $$\langle G(x),\bar x_N-x\rangle\leq\frac{R^2+N\eta^2M^2}{2N\eta}.$$
 
-Choisissons $\eta=N^{-1/2}$ dans la construction de la suite. Le membre de droite vaut $(R^2+M^2)/(2\sqrt N)$, indépendamment de $x$. Pour $N$ assez grand, $\widetilde x_\varepsilon=\bar x_N$ convient.
+Choisissons $\eta=N^{-1/2}$ dans la construction de la suite. Le membre de droite vaut $(R^2+M^2)/(2\sqrt N)$, indépendamment de $x$. Pour une tolérance $\varepsilon>0$, choisissons d’abord un entier $N\ge1$ tel que $\sqrt N\ge (R^2+M^2)/(2\varepsilon)$. Construisons ensuite les $N$ itérés avec le même pas $\eta=N^{-1/2}$. Leur moyenne $\widetilde x_\varepsilon=\bar x_N$ satisfait simultanément toutes les inégalités demandées.
 
 > [!PIEGE]
 > Les constantes majorantes doivent convenir à tous les points tests. La compacité permet de les choisir avant le point x.
@@ -234,7 +236,8 @@ Pour deux vecteurs $u,v$, le développement des carrés scalaires donne
 
 $$\|(1-\theta)u+\theta v\|^2=(1-\theta)\|u\|^2+\theta\|v\|^2-\theta(1-\theta)\|u-v\|^2.$$
 
-En prenant $u=x_k-x_\ast$ et $v=F(x_k)-x_\ast$, le membre de gauche vaut $\|x_{k+1}-x_\ast\|^2$ et $u-v=x_k-F(x_k)$. C'est l'égalité demandée.
+En prenant $u=x_k-x_\ast$ et $v=F(x_k)-x_\ast$, le membre de gauche vaut $\|x_{k+1}-x_\ast\|^2$ et $u-v=x_k-F(x_k)$. En reportant ces expressions puis en regroupant le terme de résidu à gauche, il vient
+$$\|x_{k+1}-x_\ast\|^2+\theta(1-\theta)\|F(x_k)-x_k\|^2=(1-\theta)\|x_k-x_\ast\|^2+\theta\|F(x_k)-x_\ast\|^2.$$
 
 ### Question 15
 
