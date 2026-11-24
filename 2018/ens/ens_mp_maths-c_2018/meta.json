@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2018
+  },
+  "questions": 52,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2018_mpi_sujet_mathc.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/18_mp_rap_emathc.pdf",
+    "sha256_sujet": "26034cca029b26f8aae8dcbab3e50ef15e86c7805bd5324a7366499345cf7014"
+  },
+  "figures": [
+    {
+      "fichier": "figures/decroissance-variance.svg",
+      "question": "3.9b",
+      "legende": "Après centrage, la variance relative reste sous la courbe exp(−2t). L’estimation provient de la dissipation de l’énergie gaussienne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 52 items du sujet. Vérification des sommes et intégrales paramétrées, de la lacune de bornitude signalée en 1.6c et d’une preuve valable sur un espace dénombrable, puis de la décroissance de variance. Figure de la borne exponentielle.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
