@@ -1,0 +1,36 @@
+{
+  "slug": "x_fui-ff-2_mathematiques_2020",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 2",
+    "matiere": "Mathématiques",
+    "annee": 2020
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20MATHEMATIQUES.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "cce6bf131b7253c9232c516cd9e953b53c96f52d302659576c59c225e1ea770c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/appariement-spectral.svg",
+      "question": "13",
+      "legende": "Pour les spectres (1, 3) et (2, 5), une rotation fait passer la trace de 17 à 11."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 questions et sous-questions, cas d’égalité avec multiplicités, correction de l’indice en 14 et preuve de la décomposition singulière incluant les rangs déficients.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
