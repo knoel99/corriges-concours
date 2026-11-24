@@ -1,0 +1,41 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2024
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_Maths_EcoG1.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2024_D2_maths_stats_ecrit_v2.pdf",
+    "sha256_sujet": "dbd757baa98fc75fcccbf4f26a3091537bfb21319f78c4547dac3112dca4dc57"
+  },
+  "figures": [
+    {
+      "fichier": "figures/p2-variances.svg",
+      "question": "Problème 2, question 4",
+      "legende": "Après multiplication par n/d², la variance de la moyenne corrigée reste constante et celle du maximum corrigé tend vers zéro."
+    },
+    {
+      "fichier": "figures/p3-minimum.svg",
+      "question": "Problème 3, question 4c",
+      "legende": "Sur le quadrant positif, les courbes de niveau entourent la diagonale des minima."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification des 27 questions contre les quatre pages du sujet et le corrigé du rapport de jury. Matrice, changement de base, puissances, variances des deux estimateurs et gradient recalculés. Deux erreurs numériques du rapport, pages 8 et 10, expliquées aux questions 2c et 4 du problème 2. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
