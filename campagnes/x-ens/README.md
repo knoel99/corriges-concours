@@ -8,6 +8,8 @@ Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir le
 - Le journal de l’épreuve décrit l’intervention et sa portée. Les deux éditions reprennent sa signature, avec la vitesse enregistrée ou la mention « vitesse non renseignée ». Les rédactions et révisions antérieures conservent leurs propres signatures. [Format des signatures](../../CONTRIBUTING.md#signer-une-rédaction-ou-une-révision-par-ia)
 - Les deux textes de l’onglet Markdown correspondent aux fichiers GitHub. La signature apparaît dans le corps de chaque corrigé en vue Lecture et sur la première page du PDF accessible depuis cette même vue.
 
+Les sujets d’informatique et de mathématiques-informatique des ENS depuis 2003, ainsi que les compositions B communes depuis 2011, sont distingués par la garde de chaque cahier. En 2010, l’épreuve des trois ENS sur les programmes manipulant des mots diffère de celle de Polytechnique sur le plus proche ancêtre commun. En 2011, la bonne épreuve B sur les permutations est dans la rubrique MP. La banque déclare l’épreuve B supprimée en 2020. Les rapports sont rattachés après lecture de leur en-tête. [Sujets, rapports et empreintes des fichiers](informatique-ecrits-2003-2025.tsv) · [Annales officielles de la banque PC](https://banques-ecoles.fr/cms/filiere-pc/les-annales-et-rapports-des-jurys/)
+
 ## Lire le bilan
 
 Le bilan daté donne les comptes par matière et les liens vers les preuves pour chaque épreuve. [Dernier bilan sur le site](https://sujet-corriges.ai/couverture-x-ens) · [Recherche par épreuve](https://sujet-corriges.ai/couverture-x-ens/epreuves) · [Relevés datés sur GitHub](bilans/)
