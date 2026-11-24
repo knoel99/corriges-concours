@@ -1,0 +1,201 @@
+{
+  "slug": "ens_pc_chimie-b_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2024
+  },
+  "questions": 85,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_pc_sujet_ChiB.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_pc_rap_eChiB.pdf",
+    "sujet_sha256": "ad1a3ca456adce67de381351796ae6ead2ad5d22df5e6b34b7e740e50d685314",
+    "rapport_sha256": "80c0611c0cbab0602f5a32d70d53923b815f2ecfa6cf4cbabe0bbefa989ffd26"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 85 questions sont traitées. Les décalages de numérotation des figures 6 et 9, les hypothèses de population des conformères en Q31 et les conventions cinétiques des Q65 et 75–78 sont explicités. Les masses molaires sont estimées par lecture graphique."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/priorites-spiro.svg",
+      "legende": "Les mêmes quatre liaisons que dans la vue de la question, avec les priorités CIP et la profondeur des deux liaisons du cycle F.",
+      "question": "Q2"
+    },
+    {
+      "fichier": "figures/fermeture-oxirane.svg",
+      "legende": "Formation du tosylate sur l’alcool secondaire puis fermeture de l’oxirane par substitution intramoléculaire.",
+      "question": "Q4"
+    },
+    {
+      "fichier": "figures/deux-alcools.svg",
+      "legende": "Les deux configurations du carbone issu du CHO, dans une même orientation du squelette bicyclique B et de la chaîne ajoutée.",
+      "question": "Q18"
+    },
+    {
+      "fichier": "figures/jonction-cyclopropane.svg",
+      "legende": "Constitution locale de la cyclopenténone et deux faces possibles du pont méthylène. Les segments à gauche se rejoignent via le squelette de 14.",
+      "question": "Q22"
+    },
+    {
+      "fichier": "figures/barrieres-des-conformeres.svg",
+      "legende": "Les niveaux absolus les plus bas et les plus petites barrières mesurées depuis chaque conformère ne se trouvent pas sur la même voie.",
+      "question": "Q31"
+    },
+    {
+      "fichier": "figures/orbitales-o2.svg",
+      "legende": "Niveaux de valence, occupation du triplet et schémas de phase. Les niveaux de cœur 1s sont analogues aux deux niveaux 2s et totalement occupés.",
+      "question": "Q38"
+    },
+    {
+      "fichier": "figures/triades-pmma.svg",
+      "legende": "Quatre triades dans la convention d’une même chaîne en zigzag. Le coin plein pointe vers le lecteur et le hachuré vers l’arrière.",
+      "question": "Q45"
+    },
+    {
+      "fichier": "figures/bernoulli-triades.svg",
+      "legende": "Courbes du modèle de Bernoulli et fractions déduites des aires, au voisinage de p = 0,30.",
+      "question": "Q53"
+    },
+    {
+      "fichier": "figures/osmometrie-extrapolation.svg",
+      "legende": "À gauche, écart à la droite de dilution idéale. À droite, extrapolation des valeurs lues sur le graphe corrigé.",
+      "question": "Q58"
+    },
+    {
+      "fichier": "figures/exclusion-sterique.svg",
+      "legende": "Parcours schématiques dans la colonne. Une petite chaîne échange avec le liquide des pores et élue plus tard.",
+      "question": "Q60"
+    },
+    {
+      "fichier": "figures/singulet-triplet.svg",
+      "legende": "Déclin exponentiel du singulet et alimentation transitoire du triplet. La durée du triplet sert ici uniquement d’illustration.",
+      "question": "Q76"
+    },
+    {
+      "fichier": "figures/coumarine-absorbance.svg",
+      "legende": "Étalonnage dans une cuve de 2 cm avec les quatre points de mesure du sujet.",
+      "question": "Q85"
+    },
+    {
+      "fichier": "figures/ouverture-cyclopropane.svg",
+      "legende": "Les trois flèches courbes indiquent l’attaque au méthylène du pont et la délocalisation de la liaison rompue jusque sur l’oxygène.",
+      "question": "Q27"
+    },
+    {
+      "fichier": "figures/sec-integration.svg",
+      "legende": "Échantillonnage schématique du pic du PMMA et lecture de la masse au même volume. Le calcul utilise le signal relatif comme poids.",
+      "question": "Q62"
+    },
+    {
+      "fichier": "figures/chaises-aldoliques.svg",
+      "legende": "Vue locale des deux chaises proches en énergie. La liaison en pointillé devient la liaison Cα–Cβ de l’aldol ; l’oxygène fixé à Cβ devient son OH.",
+      "question": "Q31"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des 29 pages numérotées du sujet original de l’ENS Ulm et du rapport de chimie B 2024. Lecture des structures, spectres, courbes de cinétique, d’osmométrie et d’exclusion stérique, vérification des bilans stéréochimiques et photophysiques. Quinze figures originales."
+    }
+  ]
+}
