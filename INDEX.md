@@ -145,6 +145,7 @@
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (thème Lyon) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (version et thème Ulm) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
@@ -738,6 +739,7 @@
 | 2026 | X-ENS | MP | Physique | [md](2026/x-ens/x-ens_mp_physique_2026/brut.md) | [md](2026/x-ens/x-ens_mp_physique_2026/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
+| 2024 | X-ENS | PC | Chimie A | [md](2024/x-ens/x-ens_pc_chimie-a_2024/brut.md) | [md](2024/x-ens/x-ens_pc_chimie-a_2024/guide.md) |
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
@@ -752,6 +754,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2020 | X-ENS | PSI | Sciences industrielles | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/brut.md) | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/guide.md) |
 | 2021 | X-ENS | PSI | Sciences industrielles | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/brut.md) | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/guide.md) |
 | 2022 | X-ENS | PSI | Sciences industrielles | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/brut.md) | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/guide.md) |
 | 2023 | X-ENS | PSI | Sciences industrielles | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/brut.md) | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/guide.md) |

@@ -1,0 +1,41 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2021
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_Sujet_1A_D2-1_Maths.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2021_rapport_ecrit_D2_maths_statistiques.pdf",
+    "sha256_sujet": "652adfc5724bec72d0ddc6a4ba4d30521ad4099b98f7824d2552dab3da15040d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/loi-maximum.svg",
+      "question": "2.5",
+      "legende": "Pour trois tirages sans remise parmi dix numéros, le maximum vaut au moins 3. La probabilité qu’il vaille 10 est 36/120, soit 0,3."
+    },
+    {
+      "fichier": "figures/cotangente.svg",
+      "question": "3.1c",
+      "legende": "La cotangente de πx décroît de +∞ à −∞ entre les asymptotes x = 0 et x = 1. La courbe passe par (1/2, 0)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification des 30 questions et sous-questions au regard de l’énoncé original et des trois pages de rapport. Indications distinctes, distribution du maximum, graphe de la cotangente, limites aux bords et cas d’égalité dans l’inégalité de Poincaré.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

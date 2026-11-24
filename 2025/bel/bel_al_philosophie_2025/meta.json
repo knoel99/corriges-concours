@@ -28,11 +28,18 @@
       "fichier": "figures/rectifier-publiquement.svg",
       "question": "Partie III",
       "legende": "Une rectification peut demander davantage qu’un soulagement de la conscience"
+    },
+    {
+      "fichier": "figures/attribuer-une-obligation.svg",
+      "question": "Analyse du sujet",
+      "legende": "Trois énoncés devant le même registre"
     }
   ],
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf",
+    "sujet_sha256": "f8f5d5d0bc0b86998141630591f023e34d9a9fdb938bdf55f4c1d518d88f0a62",
+    "rapport_jury_sha256": "609faef752ae27903edc94ff1cd67781e17f465944d426e043cbd4a8ed108cdc"
   },
   "revision": {
     "date": "2026-11-24",
@@ -76,7 +83,22 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante de la dissertation et du guide sur le libellé et le rapport. Vérification de la référence kantienne sur la fausse promesse et des trois schémas.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification du libellé entre guillemets, du rapport et de l’analyse de Kant. Comparaison raisonnée des formes impersonnelle, deuxième et première personnes sur un même cas ; schéma et exercice corrigé.",
+      "tour": 2
     }
-  ]
+  ],
+  "date_revision": "2026-11-24"
 }

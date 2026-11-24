@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -20,6 +22,10 @@ L’épreuve commune dure six heures. La question « Qu’est-ce que la réalit�
 Le singulier « la réalité » peut aussi désigner la totalité de ce qui est. La copie choisit de demander ce qui fait la réalité de chaque chose, autrement dit en quoi consiste son effectivité. Une simple énumération des êtres contenus dans le monde ne trancherait pas cette question.
 
 La première affirmation porte sur l’événement mental. La seconde porte sur la rencontre qu’il représentait. Distinguer le vécu, le contenu de ce vécu et l’état de choses auquel le contenu prétend correspondre évite d’opposer en bloc réalité et apparence. De même, la possibilité d’un objet décrit de manière cohérente laisse ouverte la question de son existence effective. Enfin, une croyance fausse peut être réellement entretenue : qualifier une assertion de vraie et dire que quelqu’un l’a formulée sont deux actes différents.
+
+![Une même situation, trois affirmations à distinguer](figures/realite-et-objectivite.svg)
+
+**Varier une condition.** Si l’examen écarte une fracture, que peut-on nier ? Une lésion osseuse particulière. Que reste-t-il possible d’affirmer ? Le fait que la personne souffre, indépendamment de son hypothèse sur l’origine de la douleur. Une preuve objective peut donc corriger le diagnostic sans abolir le vécu dont il essayait de rendre compte.
 
 ## Problématique
 
@@ -100,6 +106,8 @@ Cette différence se retrouve dans l’usage de la vérité, sans faire des deux
 Il serait tentant d’accorder la réalité à ce que la main rencontre et de laisser à l’œil le domaine de l’illusion. Ce partage se défend mal. Le visiteur pourrait voir la paroi obliquement et découvrir, sans la toucher, la continuité du badigeon au bord de la fausse porte. À l’inverse, les reliefs d’une porte condamnée pourraient lui donner sous les doigts une impression très persuasive. Ce qui compte dans l’expérience n’est donc ni son intensité ni le prestige d’un sens particulier. Dans la première position, le reflet peint et le reflet d’un métal véritable pouvaient donner lieu à une même attente. Lorsqu’on se déplace, ils se comportent différemment. Le visiteur a trouvé un moyen de mettre à l’épreuve ce que sa première perception lui promettait au-delà de ce qu’elle lui donnait.
 
 On comprend dès lors en quel sens une apparence a elle-même une réalité. Le reflet peint, le point de vue du visiteur, son geste et son erreur composent un événement qu’il est possible de décrire. L’impossibilité d’ouvrir la porte n’en rend aucun élément fictif. Ce qu’elle retire est plus précis : le rapport présumé entre la couleur observée et une poignée accessible. Il y a bien une peinture et une méprise, et il n’y a pas de passage. Distinguer ces affirmations revient à reconnaître qu’un phénomène peut être déterminé de plusieurs façons, et que toutes ces façons n’ont pas des suites également compatibles avec la situation. C’est en ce sens que la réalité résiste. La résistance n’a pas besoin de prendre la forme d’un obstacle matériel. Elle peut consister dans l’échec d’une conséquence que nous étions pourtant autorisés à attendre de notre hypothèse.
+
+Une douleur que personne d’autre ne peut éprouver à ma place permet de distinguer la réalité et l’objectivité. Si je souffre du bras alors que l’examen écarte la fracture que je soupçonnais, l’inexistence de cette fracture n’annule pas la réalité de la douleur. Un tiers peut en examiner les manifestations et m’en demander une description, sans que son propre accès du dehors devienne une condition d’existence de ce que je vis. Inversement, l’unanimité de plusieurs témoins placés devant le même décor ne rendrait pas la porte praticable. La possibilité d’accord entre observateurs constitue une norme de certaines enquêtes. Elle ne définit pas, à elle seule, l’effectivité de tout ce dont on parle.
 
 Encore faut-il éviter de définir la chose réelle par la réussite actuelle de nos vérifications. Une digue rompue pendant la nuit peut avoir inondé un village abandonné. L’événement n’a pas attendu le premier témoin pour avoir lieu. Les traces par lesquelles on le reconstituera supposent précisément qu’une eau a coulé selon une histoire dont l’enquête ne choisit pas l’issue. D’autre part, une hypothèse fausse peut longtemps s’accorder avec tout ce que nous avons vérifié. Nous avons donc des raisons de distinguer la réalité et l’objectivité de nos jugements. L’objectivité qualifie un effort pour soumettre ces jugements à des épreuves communicables et susceptibles d’être corrigées. La réalité désigne ce dont il peut y avoir encore quelque chose à apprendre, même contre l’accord de tous à un instant donné. Reste une difficulté. S’il faut que la réalité puisse nous donner tort, doit-elle, pour cela, être absolument indépendante de toute activité humaine ?
 
