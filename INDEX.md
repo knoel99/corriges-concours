@@ -878,6 +878,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2016 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2016/x-ens/x-ens_psi_modelisation_2016/brut.md) | [md](2016/x-ens/x-ens_psi_modelisation_2016/guide.md) |
 | 2017 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2017/x-ens/x-ens_psi_modelisation_2017/brut.md) | [md](2017/x-ens/x-ens_psi_modelisation_2017/guide.md) |
 | 2018 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2018/x-ens/x-ens_psi_modelisation_2018/brut.md) | [md](2018/x-ens/x-ens_psi_modelisation_2018/guide.md) |
 | 2019 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2019/x-ens/x-ens_psi_modelisation_2019/brut.md) | [md](2019/x-ens/x-ens_psi_modelisation_2019/guide.md) |

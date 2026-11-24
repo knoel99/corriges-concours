@@ -1,0 +1,53 @@
+{
+  "slug": "x-ens_psi_modelisation_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2016,
+    "duree_heures": 5
+  },
+  "questions": 46,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2016_Sujet_1C_PSI_Modelisation.pdf",
+    "sujet_sha256": "cc13d567e62b71f781cebb129b895a0f469dcaee35f97e5728aa811e69d133cb",
+    "document_reponse": "https://wikiprepa.fr/concours/data/x-ens_modelisation_psi_2016.pdf",
+    "document_reponse_sha256": "3c7e44475b7252b745817bbe3a96eda370ea503aa2a1d3ac27b089c6638d84b1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-visibilite.svg",
+      "question": "Q5",
+      "legende": "Quatre pseudo-distances contiennent le même biais d’horloge. Les quatre directions de visée doivent fournir quatre lignes indépendantes dans le modèle tridimensionnel."
+    },
+    {
+      "fichier": "figures/q27-modulation.svg",
+      "question": "Q27",
+      "legende": "Produit NRZ et porteuse sur les vingt et une divisions de la figure A. La phase initiale est celle du segment imposé sur le document-réponse."
+    },
+    {
+      "fichier": "figures/q31-correlation.svg",
+      "question": "Q31",
+      "legende": "La bande représente les valeurs de −2 à 2. Le pic en zéro est permis. Les retards 4, 8, 12 et 16 dépassent la borne annoncée pour le code court."
+    },
+    {
+      "fichier": "figures/q37-dispersion.svg",
+      "question": "Q37",
+      "legende": "Les vitesses de phase et de groupe tendent vers c à haute fréquence. L’enveloppe se propage à la vitesse de groupe, inférieure à c."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 46 questions à partir du sujet Saclay et du document-réponse original retrouvé dans le fac-similé complet. Contrôle du signe du biais horaire, de la linéarisation, du maximum des marées, du gradient zonal, du chronogramme et des 20 décalages de corrélation. Q31 et Q32 explicitent les contradictions des données raccourcies avec P4/P5. Quatre schémas originaux. Aucun rapport de jury rattaché à la page de session pour cette discipline."
+    }
+  ]
+}
