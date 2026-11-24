@@ -6,11 +6,13 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve de quatre heures part d’une molécule de corail pour étudier la stéréochimie d’un cycle à neuf chaînons. Sa seconde moitié examine les indicateurs de pollution d’une eau et la cinétique de dégradation de nanoparticules d’argent.
 
-**Périmètre du corrigé.** Les questions 19 à 53 sur l’analyse de l’eau sont corrigées intégralement, ainsi que les questions 1, 2, 5 à 8, 10 et 16 sur la structure et l’analyse des molécules (43 questions sur 53). En Q13, seule l’analogie entre deux fonctions est étudiée. Les étapes de préparation de l’inhibiteur des questions 3, 4, 9, 11, 12, 14, 15, 17 et 18 sont hors périmètre.
+**Couverture.** 44 questions intégralement traitées, 0 partiellement et 9 hors couverture. Le dossier sur l’eau (Q19–53) est complet. Les Q1, 2, 5–8, 10, 13 et 16 sont également traitées. La Q13 explique la formation indépendante du 1,3-dithiane à partir d’un carbonyle et d’un dithiol ; les étapes de construction et d’assemblage du produit naturel restent hors couverture.
 
 La numérotation des molécules, des atomes et des figures citées dans les solutions suit l’énoncé. Les lettres DCO et DBO₅ désignent les demandes chimique et biologique en dioxygène, exprimées en masse de dioxygène par litre d’eau initiale.
 
@@ -107,12 +109,14 @@ Les valeurs de Pauling sont $\chi(\mathrm C)=2{,}55$, $\chi(\mathrm{Mg})=1{,}31$
 
 La partie $\mathrm{O{=}C{-}C_\alpha{=}C_\beta}$ du cycle fournit deux sites principaux. Le **carbone du carbonyle** est électrophile par polarisation de C=O. Le **carbone β** (C2 dans la numérotation RMN) l’est aussi, comme le montre la forme limite $\mathrm{^-O{-}C{=}C_\alpha{-}C_\beta^+}$. Une attaque en 1,2 ou une attaque conjuguée en 1,4 sont a priori envisageables. Le carbone du carbonyle et le carbone β peuvent ainsi porter un déficit de densité électronique dans deux représentations limites du même système conjugué.
 
-### Question 13 · analogie fonctionnelle
+### Question 13 · formation d’un thioacétal cyclique
 
 > [!INDICATION]
 > Examiner le nombre d’hétéroatomes directement liés au même carbone dans le cycle.
 
-Le 1,3-dithiane est un thioacétal cyclique. Le carbone situé entre les deux atomes de soufre porte deux liaisons C–S, analogues aux deux liaisons C–O du carbone acétal d’un 1,3-dioxane. Cette réponse couvre l’identification fonctionnelle.
+Le 1,3-dithiane est un thioacétal cyclique. Le carbone situé entre les deux atomes de soufre porte deux liaisons C–S, analogues aux deux liaisons C–O du carbone acétal d’un 1,3-dioxane. Pour obtenir le **1,3-dithiane non substitué**, le carbonyle correspondant est le méthanal HCHO, et le partenaire bifonctionnel est le propane-1,3-dithiol HS–(CH₂)₃–SH. En catalyse acide, l’addition d’un premier thiol sur le carbonyle donne un hémithioacétal. La perte d’eau après activation du OH, suivie de la capture intramoléculaire par le second soufre, ferme le cycle à six. La déprotonation régénère le catalyseur. Le bilan est HCHO + HS–(CH₂)₃–SH ⇌ 1,3-dithiane + H₂O. Une élimination de l’eau favorise le thioacétal.
+
+![Deux hétérocycles à six sommets. Le carbone supérieur se lie aux deux hétéroatomes et provient du méthanal.](figures/acetals-six-sommets.svg)
 
 ### Question 16
 

@@ -79,6 +79,11 @@
       "fichier": "figures/q63-cycle-site.svg",
       "question": "Q63",
       "legende": "Cycle proposé par l’intermédiaire I₁ de plus basse énergie. Les barrières des quatre voies ne sont pas fournies."
+    },
+    {
+      "fichier": "figures/noyau-indole.svg",
+      "question": "Q17",
+      "legende": "Noyau 1H-indole, avec le N pyrrolique et les positions 2 et 3 du cycle à cinq."
     }
   ],
   "date_revision": "2026-11-24",
@@ -88,6 +93,7 @@
       1,
       7,
       8,
+      17,
       26,
       27,
       28,
@@ -131,7 +137,9 @@
       66
     ],
     "questions_partiellement_traitees": [
-      18
+      12,
+      18,
+      19
     ],
     "questions_non_traitees": [
       2,
@@ -142,13 +150,10 @@
       9,
       10,
       11,
-      12,
       13,
       14,
       15,
       16,
-      17,
-      19,
       20,
       21,
       22,
@@ -156,7 +161,7 @@
       24,
       25
     ],
-    "precision": "44 questions intégralement traitées : 1, 7, 8 et 26 à 66. Q18 limitée à l’excès énantiomérique et au principe de la sélectivité. Les 21 autres questions portent sur la voie de construction des alcaloïdes du curare et sont hors périmètre."
+    "precision": "45 questions intégralement traitées, 3 partiellement et 18 hors couverture. Les Q1, 7, 8, 17 et 26 à 66 sont entièrement traitées. La Q17 identifie le noyau indole. Les Q12, 18 et 19 couvrent les contraintes de conformation, l’excès énantiomérique et les principes de distinction des stéréoisomères. Les autres questions de construction des alcaloïdes restent hors couverture."
   },
   "contributions": [
     {
@@ -169,6 +174,18 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux éditions sur le sujet et le rapport officiels. Chimie générale de Q1, 7, 8 et lecture partielle de Q18. Partie indépendante sur le stockage solaire entièrement traitée à partir des figures 11 à 21 et de l’annexe 3, avec vérifications numériques des bilans thermiques et cinétiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision ciblée des deux éditions. Q12, Q17 et Q19. Vérification de la nomenclature de l’indole dans l’énoncé, de la géométrie d’un cycle à six et des principes de séparation des stéréoisomères. La construction et la résolution d’un intermédiaire de la voie des alcaloïdes ne sont pas reconstituées."
     }
   ]
 }
