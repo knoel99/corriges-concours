@@ -1,0 +1,41 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-lucia-de-leone_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Lucía De Leone",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit4-sil2023.pdf",
+    "sujet_sha256": "6841128061b92a28f9b5cf1dce421a62578317f85ce6d15ead375e3289b630dc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois lectures d’un même espace"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire organisé du propos de Lucía De Leone à partir de Distancia de rescate, de la première Bucolique de Virgile et de La Mare au diable de George Sand, avec préparation et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
