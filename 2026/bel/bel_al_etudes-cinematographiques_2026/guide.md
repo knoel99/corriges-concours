@@ -10,7 +10,7 @@
 
 **Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Relecture des corrigés** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 **Sujet** — Jean Epstein et la première vision d’un univers qui peut se mouvoir à rebours
 

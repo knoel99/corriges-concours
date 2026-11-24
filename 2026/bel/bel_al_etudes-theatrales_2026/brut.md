@@ -8,7 +8,7 @@
 
 **Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Relecture des corrigés** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 **Sujet** — Jerzy Grotowski, le don de soi et la discipline formelle
 
