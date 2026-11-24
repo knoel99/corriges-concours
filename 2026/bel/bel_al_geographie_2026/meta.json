@@ -1,0 +1,45 @@
+{
+  "slug": "bel_al_geographie_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Géographie",
+    "annee": 2026
+  },
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/partager-eau-terai.svg",
+      "question": "Partie I",
+      "legende": "Dans le Téraï népalais, le canal et la répartition de l’eau déterminent l’accès à la ressource."
+    },
+    {
+      "fichier": "figures/pratiquer-les-campagnes.svg",
+      "question": "Partie II",
+      "legende": "Des possibilités d’habiter diversement distribuées dans les sept États du programme."
+    },
+    {
+      "fichier": "figures/decider-eau-polder.svg",
+      "question": "Partie III",
+      "legende": "Gérer une vanne pour la crevetticulture, la riziculture et les usages des ménages."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Composition%20de%20g%C3%A9ographie%202026.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/G%C3%A9ographie%202026.pdf",
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2025-05/Lettre%20de%20cadrage_Mondes%20indiens_Concours%20BEL.pdf",
+    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/tree/master/geojson"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante au regard du sujet et des pages 2 à 9 du rapport. Périmètre des sept États, rapport des exemples à l’habiter, droits d’usage, mobilités et attachements vérifiés."
+  }
+}

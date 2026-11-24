@@ -1,0 +1,53 @@
+{
+  "slug": "x-ens_mp_maths-a_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2020
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20MATHEMATIQUES%20A%20%28XLCR%29.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLCR%29.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/sommes-de-carres-modulo-trois.svg",
+      "question": "Q2c",
+      "legende": "Les neuf couples de résidus possibles ne donnent une somme de carrés nulle modulo trois que pour deux résidus nuls."
+    },
+    {
+      "fichier": "figures/conjugues-cubiques.svg",
+      "question": "Q4b",
+      "legende": "Le polynôme minimal de la racine cubique de deux possède aussi deux racines non réelles."
+    },
+    {
+      "fichier": "figures/projection-du-cycle.svg",
+      "question": "Q5",
+      "legende": "Pour le cycle de longueur sept, la moyenne de deux racines conjuguées est l’abscisse commune des deux points."
+    },
+    {
+      "fichier": "figures/coefficients-de-newton.svg",
+      "question": "Q8b",
+      "legende": "Le calcul d’un coefficient de la réciproque utilise les coefficients précédents et les sommes de puissances des racines."
+    },
+    {
+      "fichier": "figures/orthogonalisation-rationnelle.svg",
+      "question": "Q15a",
+      "legende": "Pour la forme de matrice de lignes (1, 1) et (1, 3), les vecteurs rationnels (1, 0) et (−1, 1) sont orthogonaux pour B."
+    },
+    {
+      "fichier": "figures/construction-par-blocs.svg",
+      "question": "Q18",
+      "legende": "L’agrandissement préserve la valeur propre et fournit le changement de base rationnel qui rend la matrice symétrique."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Manuscrit vérifié sur les 30 questions et sur le rapport 2020, y compris la racine nulle, la distinction entre positivité rationnelle et réelle, et la matrice de similitude rationnelle par blocs de la dernière question."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2026
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/transmission-conditionnelle.svg",
+      "question": "1.5",
+      "legende": "Le conditionnement sur un frère ou une sœur saine d’un malade donne un risque de transmission de s égal à un tiers par futur parent."
+    },
+    {
+      "fichier": "figures/affinites-foetale-maternelle.svg",
+      "question": "3.2",
+      "legende": "Courbes illustratives. À pression partielle commune, l’hémoglobine fœtale a une saturation supérieure dans la zone intermédiaire."
+    },
+    {
+      "fichier": "figures/repression-de-hbf.svg",
+      "question": "4.3",
+      "legende": "La teneur relative en HbF augmente dans les deux conditions qui réduisent BCL11A, et davantage avec le shRNA 1."
+    },
+    {
+      "fichier": "figures/capture-gata1.svg",
+      "question": "5.1",
+      "legende": "Une bille anti-FLAG retient GATA-1-FLAG. L’apparition de BCL11A-V5 dans la fraction capturée révèle une association."
+    },
+    {
+      "fichier": "figures/sites-enrichis-chip.svg",
+      "question": "5.6",
+      "legende": "Moyennes approximatives lues sur la figure 11. Le sujet signale un enrichissement à HS3, Gγ +3 kb et δ −1 kb."
+    },
+    {
+      "fichier": "figures/reactivation-de-hbf.svg",
+      "question": "6.1",
+      "legende": "La diminution ciblée d’un répresseur dans la lignée érythroïde réactive la production de l’hémoglobine fœtale."
+    }
+  ],
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_biologie.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_eBio.pdf",
+    "notice_casgevy": "https://www.ema.europa.eu/en/medicines/human/EPAR/casgevy"
+  },
+  "date_revision": "2026-11-24"
+}
