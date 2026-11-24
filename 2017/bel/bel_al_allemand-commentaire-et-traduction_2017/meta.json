@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_allemand-commentaire-et-traduction_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (commentaire et traduction)",
+    "annee": 2017
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=2",
+    "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ALLEMAND_2017.pdf#page=1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Ce qui est dit, entendu et interrompu"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire allemand du dialogue de Pröckl et Tüverlin chez Feuchtwanger, version française depuis la sommation de l’ingénieur jusqu’aux tas de neige du bord de la route, guide sur les voix et le dénouement interrompu, figure."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "L’extrait d’Erfolg de Lion Feuchtwanger (1930) se déroule en Bavière au début des années 1920. Le commentaire examine le débat entier et son interruption. La version commence à la demande de Pröckl et inclut le retour du narrateur à la route enneigée."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
