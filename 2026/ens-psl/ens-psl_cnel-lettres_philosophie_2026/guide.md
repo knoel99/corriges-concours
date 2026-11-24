@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’écrit d’admission demande d’exposer les articulations du passage et son problème en deux pages au plus, puis de développer une réflexion personnelle en quatre à cinq pages au plus. L’extrait vient de l’*Essai sur l’entendement humain*, IV, XV, § 5, dans la traduction de Pierre Coste.
 
 ## I. Articulations du texte et formulation du problème
@@ -40,3 +42,7 @@ Cette distinction fait apparaître une dernière exigence de rationalité. Juger
 > Le jury distingue la règle de l’assentiment proportionné et la description des réactions individuelles. Le paragraphe sur le roi s’appuie sur cette distinction pour discuter la portée précise de son accusation.
 
 [Consigne et texte de Locke, pages 2 et 3](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_philosophie_cnel_2026_ens-psl.pdf#page=2) · [Observations du jury, pages 3 et 4](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_philosophie_cnel_2026_ens-psl.pdf#page=3)
+
+## Schéma de lecture
+
+![Figure 1 — Un même fait, quatre situations de jugement et deux questions distinctes sur la vérité du récit et l’intention de son auteur.](figures/experience-et-temoignage.svg)

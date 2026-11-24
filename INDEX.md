@@ -191,6 +191,10 @@
 | 2022 | BEL | AL | Allemand (thème Lyon) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (commentaire et traduction) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (thème Lyon) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Espagnol (commentaire et traduction) | [md](2022/bel/bel_al_espagnol-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_espagnol-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Espagnol (thème Lyon) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Italien (commentaire et traduction) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Italien (thème Lyon) | [md](2022/bel/bel_al_italien-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_italien-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (commentaire et traduction) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (thème Lyon) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
@@ -225,6 +229,7 @@
 | 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 7 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/guide.md) |
 | 2026 | BEL | BL | Économie (oral à option) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/guide.md) |
+| 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -535,6 +540,9 @@
 | 2026 | ENS-PSL | Sélection internationale Lettres | Études classiques | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Études classiques (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-oral_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Études cognitives | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Économie — choix résidentiels | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-choix-residentiels_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-choix-residentiels_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Économie — méthodes de machine learning | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-methodes-de-machine-learning_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-methodes-de-machine-learning_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Économie — prévisions économiques | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-previsions-economiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-previsions-economiques_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Études cognitives (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives-oral_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Littérature | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_litterature_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_litterature_2026/guide.md) |
@@ -698,6 +706,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2022 | X-ENS | PSI | Sciences industrielles | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/brut.md) | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/guide.md) |
 | 2023 | X-ENS | PSI | Sciences industrielles | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/brut.md) | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/guide.md) |
 | 2024 | X-ENS | PSI | Sciences industrielles | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/brut.md) | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/guide.md) |
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |

@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’écrit d’admission demande d’exposer les articulations du passage et son problème en deux pages au plus, puis de développer une réflexion personnelle en quatre à cinq pages au plus. L’extrait vient de l’*Essai sur l’entendement humain*, IV, XV, § 5, dans la traduction de Pierre Coste.
 
 ## I. Articulations du texte et formulation du problème
@@ -27,3 +29,7 @@ Revenons alors à l’accusation royale. Locke rend intelligible le moment où l
 Cette distinction fait apparaître une dernière exigence de rationalité. Juger à partir de ce que l’on sait aujourd’hui laisse à décider ce qu’il serait raisonnable de chercher demain. Le roi pourrait demander au voyageur si une faible couche de glace porte déjà un homme, si cette couche s’épaissit à mesure que le froid dure et si d’autres voyageurs en ont éprouvé la résistance. Ces questions distingueraient le témoignage direct, l’inférence et l’exagération éventuelle. Elles donneraient au roi des raisons qu’il ne possède pas encore, sans l’obliger à croire d’avance ce qu’on lui dit. Le jugement raisonnable peut ainsi manquer son objet à un instant donné. Il conserve son orientation vers le vrai si sa fermeté traduit ce que les preuves permettent et si l’esprit sait reconnaître quelle observation pourrait lui donner lieu de réviser son jugement.
 
 [Consigne et texte de Locke, pages 2 et 3](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_philosophie_cnel_2026_ens-psl.pdf#page=2) · [Observations du jury, pages 3 et 4](https://www.ens.psl.eu/sites/default/files/rapport_du_jury_philosophie_cnel_2026_ens-psl.pdf#page=3)
+
+## Schéma de lecture
+
+![Figure 1 — Un même fait, quatre situations de jugement et deux questions distinctes sur la vérité du récit et l’intention de son auteur.](figures/experience-et-temoignage.svg)

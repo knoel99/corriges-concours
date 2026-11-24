@@ -1,0 +1,35 @@
+{
+  "slug": "x_fui-ff-1_mathematiques_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 1",
+    "matiere": "Mathématiques",
+    "annee": 2022
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20DE%20MATHEMATIQUES.pdf",
+    "sha256_sujet": "b48aad028464674b9b767eb2cc698154d7b29a6f53f198548a69532728cd3090"
+  },
+  "figures": [
+    {
+      "fichier": "figures/transformation-gauss.svg",
+      "question": "8",
+      "legende": "Les branches décroissent de 1 exclu à 0 inclus. Elles s’accumulent vers zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 17 questions et de leurs subdivisions dans les deux éditions, soit 22 réponses. Lecture directe des trois pages imprimées du problème. Contrôle du premier pas de la suite des dénominateurs, figure des branches de la transformation de Gauss et sommation de la dernière couverture.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
