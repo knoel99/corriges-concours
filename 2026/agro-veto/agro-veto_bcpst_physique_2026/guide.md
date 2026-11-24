@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** « Les cheveux de Pélé » : ces fibres de verre volcanique naissent quand une goutte de lave projetée est étirée par le vent, puis figée par le refroidissement, avant d'être transportée parfois à des kilomètres. Épreuve de 3 heures, calculatrice autorisée, 11 pages, 33 questions. Les données numériques sont regroupées en page 3 ; trois documents (photographies, simulations, profil topographique) sont à exploiter.
@@ -595,7 +601,7 @@ Remarque (hors exigence) : on retrouve ce résultat avec le nombre de Biot $hR/\
 
 #### Solution
 
-- **Rayonnement négligé.** C'est la critique la plus forte : la lave incandescente rayonne. Avec la loi de Stefan (émissivité $\approx 0{,}9$), $\varepsilon\sigma T_i^4 \approx 4\times10^5$ W·m⁻² à 1450 °C, contre $h(T_i - T_a) \approx 1{,}4\times10^5$ W·m⁻² pour la conducto-convection. Le rayonnement diminue fortement en refroidissant ($T^4$), mais en le prenant en compte $t_{tot}$ serait environ deux fois plus court (de l'ordre de 5 s).
+- **Rayonnement négligé.** Avec une émissivité estimée à $0{,}9$, le flux sortant supplémentaire serait $\varepsilon\sigma(T^4-T_a^4)$, avec les températures en kelvins. Il vaut près de $4{,}5\times10^5\,\mathrm{W\,m^{-2}}$ au départ et $4{,}5\times10^4\,\mathrm{W\,m^{-2}}$ au palier. Si l’on conserve les autres hypothèses, on peut estimer la durée avec $F(T)=h(T-T_a)+\varepsilon\sigma(T^4-T_a^4)$. L’intégrale $(\rho Rc/2)\int_{T_s}^{T_i}\mathrm dT/F(T)$ donne environ $3{,}0\,\mathrm s$, puis $(\rho R\ell_{fus}/2)/F(T_s)$ ajoute $2{,}3\,\mathrm s$. L’ensemble dure environ $5{,}4\,\mathrm s$ dans cette variante.
 - **Forme idéalisée.** Le solide n'est pas un cylindre de section uniforme : la figure 1 montre une larme renflée à la base d'un filament effilé. Comme $\tau \propto R$, les parties fines se figent bien avant la larme.
 - **Géométrie fixe.** Le cylindre continue de s'étirer et de s'affiner ; un vrai cheveu (largeur d'une fraction de millimètre) se solidifie donc plus vite.
 - **$h$ constant.** Il dépend de la vitesse relative de l'air et du rayon, qui varient pendant le vol.
@@ -682,7 +688,7 @@ $D$ est maximale pour $\sin 2\alpha = 1$, soit $\boxed{\alpha = \pi/4}$. Alors :
 
 $$\boxed{D_{max} = \frac{v_0^2}{g} = 10\ \mathrm{m}}$$
 
-**Pas de risque sanitaire** : les retombées restent à une dizaine de mètres du cratère, dans une zone déjà dangereuse et sans cultures, alors que l'introduction parle de kilomètres. Le modèle sans vent ne peut pas expliquer la catastrophe décrite.
+À cette échelle de dix mètres, le modèle sans vent ne peut expliquer la contamination des cultures à plusieurs kilomètres du cratère. La portée calculée ne mesure pas le risque pour une personne exposée à proximité.
 
 > [!PIEGE]
 > La question contient quatre demandes : l'expression de $D$, l'angle optimal, la valeur de $D_{max}$ et la discussion sanitaire. La dernière est facile à oublier.
@@ -703,7 +709,7 @@ Pour $\alpha = \pi/4$ :
 
 $$\tau_{vol} = \frac{2\times10\times\frac{\sqrt2}{2}}{10}\ \mathrm{s} = \sqrt2\ \mathrm{s} \approx 1{,}4\ \mathrm{s}$$
 
-Commentaire : le vol est très court, bien plus court que la durée de solidification $t_{tot} \approx 11$ s. Sans vent, la particule retomberait encore liquide, ce qui contredit l'hypothèse « déjà solidifié ». Un vol d'une seconde ne peut pas transporter un cheveu à des kilomètres.
+Le vol jusqu’au retour à l’altitude initiale dure environ $1{,}4\,\mathrm s$, bien moins que le temps de solidification d’une goutte liquide, proche de $11\,\mathrm s$. La partie III fait partir le chronomètre avec un cheveu déjà solide. Une goutte lancée à l’état liquide, dans les conditions thermiques de la partie II, resterait en revanche liquide à cet instant. Dans les deux cas, le calcul sans vent ne rend pas compte des dépôts éloignés.
 
 De plus, avec $k \simeq 1$ m⁻¹ et $v \sim 10$ m·s⁻¹, le temps caractéristique du freinage par l'air est $1/(kv) \sim 0{,}1$ s, bien inférieur à $\tau_{vol}$ : négliger l'air n'est pas justifié.
 
@@ -915,9 +921,9 @@ $$\boxed{u > u_{min} = \frac{1}{p}\sqrt{\frac{g}{k}}}$$
 
 $$u_{min} \approx \frac{3{,}16}{0{,}22}\ \mathrm{m\cdot s^{-1}} \approx 14\ \mathrm{m\cdot s^{-1}} \approx 50\ \mathrm{km\cdot h^{-1}}$$
 
-![Figure 2 — Trajectoire asymptotique du cheveu et flanc du volcan (pente moyenne p) : si u > u_min, l'écart au sol croît et le cheveu dépasse la côte ; si u < u_min, il retombe sur les pentes](figures/q33-trajectoire-flanc.svg)
+![Figure 2 — Comparaison avec un flanc rectiligne de pente moyenne p. Au-dessus du vent seuil, l’écart entre la trajectoire limite et ce plan augmente.](figures/q33-trajectoire-flanc.svg)
 
-Pour $u = 20$ m·s⁻¹ (pente 0,16 inférieure à 0,22), le cheveu survole le flanc jusqu'à la côte, à plus de 12 km du cratère : il atteint les zones agricoles. Sous 14 m·s⁻¹ environ, il retombe sur les pentes du volcan. Le profil n'est pas de pente uniforme (replat sommital jusqu'à 1,4 km, tronçon plus raide entre 6 et 8 km, pente douce près de la côte) : ce seuil n'est qu'un ordre de grandeur, à 10 ou 20 % près.
+Pour $u=20\,\mathrm{m\,s^{-1}}$, la trajectoire limite descend de $0{,}16\,\mathrm{km}$ par kilomètre horizontal, contre $0{,}22\,\mathrm{km}$ pour le plan moyen. Ce modèle permet donc un transport jusqu’à la côte. Le profil réel de la figure 8 présente un replat près du sommet. Pour établir le survol effectif, il faudrait comparer la hauteur du cheveu à celle du relief sur tout le parcours. Le seuil de $14\,\mathrm{m\,s^{-1}}$ est celui du flanc moyen.
 
 > [!PIEGE]
 > Le sens de l'inégalité : le cheveu va loin si sa trajectoire est **moins** pentue que le sol, donc si $u$ est **grand**. Trouver $u < u_{min}$ contredirait le document 2.
@@ -943,3 +949,7 @@ Pour $u = 20$ m·s⁻¹ (pente 0,16 inférieure à 0,22), le cheveu survole le f
 **Prérequis à revoir.** Loi de Newton et signe d'un flux reçu ; solution de $\tau\dot T + T = T_\infty$ ; chaleur latente ; tir balistique ; nombre de Reynolds et types de frottement ; écriture d'un pas d'Euler en Python.
 
 **Questions transposables.** Le refroidissement d'un objet par conducto-convection suivi d'un changement d'état (Q11–Q18) et la validation de l'uniformité de la température par un temps de diffusion (Q20) se retrouvent dans de nombreux sujets. La chute dans un fluide avec vitesse limite (Q31) est un classique. La lecture de la condition d'arrêt d'une boucle de simulation (Q29) est une compétence de plus en plus demandée.
+
+## Sources
+
+Les remarques du jury sur la lecture de la portée et le choix du nombre de Reynolds figurent aux commentaires des questions 24 à 33. [Sujet officiel](https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0826_sp.pdf) · [Rapport du jury](https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-physique-cpge-bcpst-2026.pdf)

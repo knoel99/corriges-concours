@@ -17,7 +17,46 @@
     {
       "fichier": "figures/q33-trajectoire-flanc.svg",
       "question": "Q33",
-      "legende": "Trajectoire asymptotique du cheveu et flanc du volcan (pente moyenne p) : si u > u_min, l'écart au sol croît et le cheveu dépasse la côte ; si u < u_min, il retombe sur les pentes"
+      "legende": "Comparaison avec un flanc rectiligne de pente moyenne p. Au-dessus du vent seuil, l’écart entre la trajectoire limite et ce plan augmente."
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0826_sp.pdf",
+    "rapport_jury": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-physique-cpge-bcpst-2026.pdf",
+    "sujet_sha256": "db861a373f37e43ccfbdf8ea5e242e9f7e2bb65cd5fe85a787b39c0d68c41c73",
+    "rapport_sha256": "5dd68d7054849d2536f554b4156beb71ec1641f0e912d3dd8d3d2cde1898c1a4"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Révision antérieure attestée par la mention historique du corrigé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Contrôle des 33 questions et des deux illustrations dans les deux éditions avec le sujet et le rapport du jury. Recalcul du refroidissement radiatif, confrontation des risques et du survol du relief aux hypothèses, distinction entre chronomètre du vol solide et temps de solidification.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24"
 }
