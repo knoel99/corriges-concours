@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_pc_maths-pc_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2016
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_pc_sujet_maths.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/11/16_pc_rap_emath.pdf",
+    "sha256_sujet": "61c267432021cd324e9ad33c43eb8115afa20bdfd3c2aaab0dd87e293ac55a00"
+  },
+  "figures": [
+    {
+      "fichier": "figures/loi-exponentielle.svg",
+      "question": "19b",
+      "legende": "Pour deux issues de scores zéro et thêta, la masse de la seconde issue augmente tandis que l’entropie est maximale pour deux masses égales."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction sur le sujet original et le rapport commun des deux éditions, des exemples d’entropie infinie, de la condition tangentielle, de la Hessienne et de l’unicité sous contraintes. Graphique de la famille exponentielle à deux issues.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
