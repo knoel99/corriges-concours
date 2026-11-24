@@ -1,0 +1,99 @@
+{
+  "slug": "x_mp_physique-et-si_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Physique et SI",
+    "annee": 2023
+  },
+  "questions": 26,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP%20SUJET%20DE%20PHYSIQUE%20ET%20S.I.%20(X).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP%20RAPPORT%20ECRIT%20PHYSIQUE%20ET%20S.I.%20(X).pdf",
+    "sujet_sha256": "e9b425764135a6216eada6f2a8ea98e13f6ee58d018732147c5f8821735ffe80",
+    "rapport_sha256": "57be5ece75b38f2ae454fba3570993b4dfe132a53a36c6b2d6df73ffb5300069"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 26 questions et leurs sous-questions sont traitées. Six figures couvrent les deux boucles optiques, les modes longitudinaux et quantiques, la cavité avec pertes, la dispersion et la boucle de régulation."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/boucles-optiques.svg",
+      "legende": "Un tour de l’anneau comporte un passage amplifié. Dans la cavité linéaire les blocs de gain représentent les deux traversées et la propagation est incluse dans chaque trajet."
+    },
+    {
+      "numero": 2,
+      "question": "3",
+      "fichier": "figures/modes-de-la-cavite.svg",
+      "legende": "Trois fonctions spatiales réelles de la cavité idéale. Les décalages verticaux séparent les modes et les miroirs fixent les nœuds aux deux bords."
+    },
+    {
+      "numero": 3,
+      "question": "6",
+      "fichier": "figures/pics-de-la-cavite.svg",
+      "legende": "Résonances périodiques et agrandissement d’un pic pour T = 0,04 et les pertes du sujet."
+    },
+    {
+      "numero": 4,
+      "question": "12",
+      "fichier": "figures/etats-du-puits.svg",
+      "legende": "États propres du puits infini centré. Le premier et le troisième sont pairs, le deuxième est impair."
+    },
+    {
+      "numero": 5,
+      "question": "19",
+      "fichier": "figures/dispersion-et-amplification.svg",
+      "legende": "Parties imaginaire et réelle de la susceptibilité d’un milieu inversé. La saturation élargit la résonance et diminue son gain central."
+    },
+    {
+      "numero": 6,
+      "question": "21",
+      "fichier": "figures/boucle-de-regulation.svg",
+      "legende": "Retour négatif à travers le capteur K. La perturbation Q est injectée après le correcteur et avant le procédé."
+    }
+  ],
+  "redaction": "Les 26 questions et leurs sous-questions sont traitées. Six figures couvrent les deux boucles optiques, les modes longitudinaux et quantiques, la cavité avec pertes, la dispersion et la boucle de régulation.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26"
+    ]
+  }
+}
