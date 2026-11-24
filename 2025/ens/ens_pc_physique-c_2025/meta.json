@@ -1,0 +1,137 @@
+{
+  "slug": "ens_pc_physique-c_2025",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique C",
+    "annee": 2025
+  },
+  "questions": 62,
+  "redaction": "Les soixante-deux questions sont démontrées dans les deux éditions. Le sens de variation corrigé par le jury, la comparaison des champs de part et d’autre des surfaces, la réciprocité magnétique, l’énergie de dérive et sa borne collective sont explicités et vérifiés.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_physique_c_2025_1.pdf",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/rapport_jury_ecrit_physique_pc_2025.pdf",
+    "nature": "Énoncé et rapport du jury du concours.",
+    "sujet_sha256": "559a418bdb32839dd144e43c5285ed77ac5b652e5da131664a4115e85d0a3d95",
+    "rapport_sha256": "7c56ec25ce6d2dceebccfc651bd165c324abc4a7f0cfd59ad7ac8b3766ba5fc0"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "13",
+      "fichier": "figures/nivellement.svg",
+      "legende": "Les flèches indiquent des charges ponctuelles signées. Une même fenêtre centrée sur chaque charge l’étale dans un volume fini. Les densités s’additionnent."
+    },
+    {
+      "numero": 2,
+      "question": "21",
+      "fichier": "figures/interaction-nivelee.svg",
+      "legende": "Trait plein pour des boules uniformes, tireté pour des points. Au-delà de deux rayons les courbes de chaque signe coïncident."
+    },
+    {
+      "numero": 3,
+      "question": "23",
+      "fichier": "figures/champ-coquille.svg",
+      "legende": "Pour une coquille positive, le champ du petit élément change de sens, tandis que celui du reste traverse continûment la surface."
+    },
+    {
+      "numero": 4,
+      "question": "32",
+      "fichier": "figures/ruban-oriente.svg",
+      "legende": "La croix indique une normale entrant dans la page. Le parallélogramme est engendré dans l’ordre déplacement puis élément de fil."
+    },
+    {
+      "numero": 5,
+      "question": "38",
+      "fichier": "figures/champ-solenoide.svg",
+      "legende": "Chaque flèche représente B₀/2 en module. Les champs s’additionnent à l’intérieur et s’annulent à l’extérieur."
+    },
+    {
+      "numero": 6,
+      "question": "51",
+      "fichier": "figures/tube-champ.svg",
+      "legende": "La paroi latérale est tangente au champ. Le produit B ds est constant le long du tube, ce qui permet de faire apparaître une circulation dans l’intégrale d’énergie."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur l’énoncé et le rapport de jury. Les soixante-deux questions sont démontrées dans les deux éditions. Le sens de variation corrigé par le jury, la comparaison des champs de part et d’autre des surfaces, la réciprocité magnétique, l’énergie de dérive et sa borne collective sont explicités et vérifiés.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62
+    ]
+  }
+}
