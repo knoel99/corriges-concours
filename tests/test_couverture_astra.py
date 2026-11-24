@@ -82,3 +82,29 @@ def test_signature_dans_le_corrige_visible_et_pdf_de_la_fiche_simple():
     assert page.documents == {
         "/api/catalog/documents/corriges/x-ens_mp_info_2026/brut.pdf"
     }
+
+
+def test_rectification_exige_le_remplacement_des_deux_editions(tmp_path, monkeypatch):
+    import hashlib
+
+    slug = "ens-rennes_d-e_mathematiques-appliquees_2026"
+    dossier = tmp_path / slug
+    dossier.mkdir()
+    entree = {"phase": "redaction", "modele": "gpt-6.2-astra", "effort": "ultra"}
+    (dossier / "meta.json").write_text(json.dumps({"contributions": [entree]}))
+    signature = "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    ancienne = f"# Épreuve\n\n{signature}\n\n## Ancien exercice\n"
+    empreinte = hashlib.sha256(ancienne.encode()).hexdigest()
+    monkeypatch.setattr(
+        couverture,
+        "editions_retirees",
+        lambda: {slug: [("brut", empreinte), ("guide", empreinte)]},
+    )
+    for nom in ("brut", "guide"):
+        (dossier / f"{nom}.md").write_text(ancienne)
+    for nom in ("brut", "guide"):
+        assert not couverture.verifier_paire(dossier)[1]
+        (dossier / f"{nom}.md").write_text(
+            ancienne.replace("Ancien exercice", "Sujet vérifié")
+        )
+    assert couverture.verifier_paire(dossier)[1] == {signature}
