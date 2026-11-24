@@ -49,10 +49,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -76,6 +75,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante des quatre documents, des dates, de la portée de la législation citée par Maeztu, du budget de l’Institut et des deux expressions employées par Juan Carlos Ier.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des quatre documents, du rapport du jury et des deux commentaires. Dates de la proclamation de Santana et du décret, lecture du possessif chez Maeztu et rapprochement des deux usages du 12 octobre.",
       "fournisseur": "codex"
     }
   ]
