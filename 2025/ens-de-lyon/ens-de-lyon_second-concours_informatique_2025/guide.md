@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 Une recherche dans un arbre de hauteur h peut demander h + 1 comparaisons. Les arbres rouge-noir contrôlent cette hauteur, puis un entier ajouté à chaque nœud permet de sélectionner une clé par son rang et de compter les intersections de cordes sur un cercle.
@@ -299,7 +301,7 @@ Si $z=A$, le peindre en noir donne une racine noire et ajoute un noir sur tous l
 
 Si le parent $P$ et l'oncle $U$ sont rouges, leur parent $G$ est noir. Repeindre $P,U$ en noir et $G$ en rouge conserve sur chaque chemin traversant $G$ l'unité de noir qui y était apportée par $G$. Les enfants de $G$ sont désormais noirs. L'unique défaut possible remonte à $G$, pris comme nouveau $z$. L'invariant est conservé.
 
-Si l'oncle est noir ou absent, les rotations des questions 15 et 16 préservent le parcours infixe et les pointeurs. Dans le cas aligné, le noir initial de $G$ se retrouve sur $P$, nouvelle racine locale. Dans le cas en coude, il se retrouve sur $Z$, nouvelle racine locale. Chaque chemin vers un sous-arbre périphérique conserve ainsi exactement un noir parmi les trois nœuds centraux. Les racines de ces sous-arbres sont noires ou absentes, car elles étaient les enfants d'un nœud rouge ou formaient l'oncle noir. Les deux nouveaux nœuds rouges ont donc des enfants admissibles, et une racine locale noire se rattache à l'extérieur sans conflit. Le cas miroir échange la gauche et la droite. Avec la terminaison de la question 19, ces cas prouvent la correction.
+Si l'oncle est noir ou absent, les rotations des questions 15 et 16 préservent le parcours infixe et les pointeurs. Dans le cas aligné, le noir initial de $G$ se retrouve sur $P$, nouvelle racine locale. Dans le cas en coude, il se retrouve sur $Z$, nouvelle racine locale. Chaque chemin vers un sous-arbre périphérique conserve ainsi exactement un noir parmi les trois nœuds centraux. Les racines de ces sous-arbres sont noires ou absentes, car elles étaient les enfants d'un nœud rouge ou formaient l'oncle noir. Pour vérifier l’égalité des hauteurs noires aussi **à l’intérieur** du sous-arbre transformé, observons qu’avant l’opération chaque chemin de $G$ vers une racine périphérique traverse exactement un noir parmi $G,P,Z$. Les quatre sous-arbres périphériques ont donc la même hauteur noire, en comptant zéro pour un NIL. Ils sont redistribués sous les deux fils rouges de la nouvelle racine locale. Chaque fils a ainsi deux sous-arbres de même hauteur noire et la nouvelle racine conserve la hauteur noire de $G$. Les deux nouveaux nœuds rouges ont donc des enfants admissibles, et une racine locale noire se rattache à l'extérieur sans conflit. Le cas miroir échange la gauche et la droite. Avec la terminaison de la question 19, ces cas prouvent la correction.
 
 ### Question 21
 
@@ -434,6 +436,17 @@ def nbcroisements(P, Q):
 ```
 
 Deux cordes d'un cercle se coupent à l'intérieur exactement lorsque leurs extrémités alternent en parcourant le cercle. En effet, une corde partage le disque en deux parties, et l'autre la traverse si ses extrémités appartiennent aux deux arcs ouverts opposés. À la fin $q_i$ de la première corde à fermer, les croisements avec les cordes actives correspondent exactement aux cas $p_i<p_j<q_i<q_j$. Les clés strictement supérieures à $p_i$ sont au nombre de $\mathrm{taille}(A)-\mathrm{rang}(A,p_i)$, calculé **avant** la suppression. Chaque paire qui se croise est comptée une fois à la première des deux fermetures. Les hypothèses excluent les égalités d'angles.
+
+Dans l’ordre cyclique du schéma ci-dessous, les quatre débuts sont déjà passés au moment de fermer la corde 1. Le rang dépend de l’ensemble encore actif à chaque fermeture.
+
+| Fin | Débuts actifs dans l’ordre | Rang du début retiré | Croisements ajoutés |
+| --- | --- | ---: | ---: |
+| $Q_1$ | $P_1,P_2,P_3,P_4$ | 1 | $4-1=3$ |
+| $Q_4$ | $P_2,P_3,P_4$ | 3 | $3-3=0$ |
+| $Q_2$ | $P_2,P_3$ | 1 | $2-1=1$ |
+| $Q_3$ | $P_3$ | 1 | $1-1=0$ |
+
+Les quatre contributions totalisent les quatre croisements du dessin.
 
 ![Figure 8 — Les cordes en ordre alterné se croisent. À Q1 on compte trois autres débuts actifs, et à Q2 on en compte un, celui de la corde 3.](figures/q26-balayage-cordes.svg)
 

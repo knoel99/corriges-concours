@@ -62,6 +62,12 @@
       "effort": null,
       "service_tier": null,
       "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -75,6 +81,22 @@
       "modifications": true,
       "perimetre": "Les deux versions de l’épreuve d’informatique.",
       "agent": "physique_sciences"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Questions 1 à 27 du brut et du guidé confrontées au sujet et au rapport. Vérification du contre-exemple à la borne de hauteur avec feuilles réelles, des rotations et des rangs. Preuve locale des hauteurs noires précisée en Q20 et calcul des quatre fermetures détaillé en Q26.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
     }
-  ]
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Questions 1 à 27 du brut et du guidé confrontées au sujet et au rapport. Vérification du contre-exemple à la borne de hauteur avec feuilles réelles, des rotations et des rangs. Preuve locale des hauteurs noires précisée en Q20 et calcul des quatre fermetures détaillé en Q26."
+  }
 }
