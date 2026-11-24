@@ -84,14 +84,14 @@
   "contributions": [
     {
       "phase": "redaction",
-      "modele": null,
-      "vitesse": null,
+      "modele": "claude-opus-5-5",
       "effort": null,
-      "date": null,
+      "vitesse": null,
+      "date": "2026-11-12",
       "modifications": true,
-      "perimetre": "Corrigés brut et guidé.",
-      "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "perimetre": "Rédaction directe des éditions brute et guidée d’après le sujet.",
+      "source_commit": "0e141c6c404d63a2f0133ac7796a4b5bf478a80a",
+      "fournisseur": "claude-code"
     },
     {
       "phase": "relecture_corrige",

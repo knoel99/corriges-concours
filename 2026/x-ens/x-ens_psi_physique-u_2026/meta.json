@@ -94,26 +94,25 @@
   "contributions": [
     {
       "phase": "redaction",
-      "modele": null,
-      "vitesse": null,
+      "modele": "claude-opus-5-5",
       "effort": null,
-      "date": null,
+      "vitesse": null,
+      "date": "2026-11-12",
       "modifications": true,
-      "perimetre": "Corrigés brut et guidé.",
-      "famille_modele": "GPT-6",
-      "fournisseur": "codex",
-      "agent": "physique_psi"
+      "perimetre": "Rédaction directe des éditions brute et guidée d’après le sujet.",
+      "source_commit": "ed17d928b5092188a143af20c1993f79b1c9d184",
+      "fournisseur": "claude-code"
     },
     {
       "phase": "relecture_corrige",
-      "modele": null,
-      "vitesse": null,
+      "modele": "claude-opus-5-5",
       "effort": null,
-      "date": "2026-11-24",
+      "vitesse": null,
+      "date": "2026-11-12",
       "modifications": null,
-      "perimetre": "Confrontation des 70 réponses aux questions du sujet et à ses graphiques. Contre-calcul indépendant de la dissipation thermique, de l’amplitude de la sphère, du coefficient cubique aux fréquences de combinaison et contre-lecture indépendante de la figure 5.",
-      "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "perimetre": "Revue critique initiale enregistrée dans la fiche lors de l’établissement des éditions.",
+      "source_commit": "ed17d928b5092188a143af20c1993f79b1c9d184",
+      "fournisseur": "claude-code"
     },
     {
       "phase": "relecture_corrige",
