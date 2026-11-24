@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2015",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2015
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/06/15_2clyon_sujet_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/10/15_2clyon_rap_emath.pdf",
+    "sha256_sujet": "d359d171ebbfce9ecb9c567276942fc64d6e3648c65879bd844ccb229911bef5"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cotangente.svg",
+      "question": "2.1",
+      "legende": "Entre ses deux asymptotes, la cotangente décroît de plus l’infini à moins l’infini et s’annule au milieu."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux exercices en regard du sujet et du rapport. Unicité de la paire de dés à permutation près, domaine rectifié de 2.4, convergence uniforme et valeurs aux pôles de la différence. Graphe de la cotangente exigé en 2.1.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
