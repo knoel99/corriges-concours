@@ -1,0 +1,95 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2021
+  },
+  "redaction": "Deux éditions et huit planches A3 originales. Cinq affiches individualisées et trois autres visuels, cinq entrées de la brochure officielle vérifiées. Le logotype obligatoire est l’image d’identité officielle de l’annexe 1, reprise sur les supports.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_projet_graphique.pdf",
+    "sujet_sha256": "dea03d32d1dec1f7434c15fada8c882c4d27a5bcf033d4f914a92ea08def432a",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_oral_DESIGN_projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-recherche.svg",
+      "question": "Projet, planche 1",
+      "legende": "Portrait, calendrier et question dessinée confrontent trois modes d’interpellation du public."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-farm-fatale.svg",
+      "question": "Projet, planche 2",
+      "legende": "Affiche pour Farm Fatale, avec date, crédit, accroche et logo du théâtre."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-desordre.svg",
+      "question": "Projet, planche 3",
+      "legende": "Affiche pour Désordre du discours, avec date, crédit, accroche et logo du théâtre."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-pillow-talk.svg",
+      "question": "Projet, planche 4",
+      "legende": "Affiche pour Pillow Talk, avec date, crédit, accroche et logo du théâtre."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-moving-earth.svg",
+      "question": "Projet, planche 5",
+      "legende": "Affiche pour Inside + Moving Earth, avec date, crédit, accroche et logo du théâtre."
+    },
+    {
+      "numero": 6,
+      "fichier": "figures/06-contes.svg",
+      "question": "Projet, planche 6",
+      "legende": "Affiche pour Contes et légendes, avec date, crédit, accroche et logo du théâtre."
+    },
+    {
+      "numero": 7,
+      "fichier": "figures/07-trois-visuels.svg",
+      "question": "Projet, planche 7",
+      "legende": "Trois visuels distincts montrent l’attente à un arrêt, l’écran d’un téléphone et le partage d’une carte."
+    },
+    {
+      "numero": 8,
+      "fichier": "figures/08-diffusion.svg",
+      "question": "Projet, planche 8",
+      "legende": "La série complète met en relation la première lecture dans la rue et l’information de billetterie."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Deux éditions et huit planches A3 originales. Cinq affiches individualisées et trois autres visuels, cinq entrées de la brochure officielle vérifiées. Le logotype obligatoire est l’image d’identité officielle de l’annexe 1, reprise sur les supports."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 8,
+    "parties": [
+      "Ralentir le regard",
+      "Farm Fatale",
+      "Désordre du discours",
+      "Pillow Talk",
+      "Inside + Moving Earth",
+      "Contes et légendes",
+      "Trois images à faire circuler",
+      "De la rue au fauteuil"
+    ]
+  }
+}

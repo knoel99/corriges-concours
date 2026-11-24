@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_cnel-lettres_jerome-la-vie-dasella_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Jérôme — la vie d’Asella",
+    "annee": 2022
+  },
+  "intitule": "Jérôme — la vie d’Asella",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-cnel2022-14.pdf",
+    "sujet_sha256": "30a2d66affaa1f3a86cab4759109a414334dccf916254271e36db7831068ebb9",
+    "references": [],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/dsa-rapport-cnel2022.pdf",
+    "rapport_sha256": "29e4f693b88515843f7fea133a19bc7fb5265f26dc81e9580d1fd204e40c2a06"
+  },
+  "figures": [
+    {
+      "fichier": "figures/montrer-une-retraite.svg",
+      "question": "Explication",
+      "legende": "Comment faire connaître une vie retirée ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de deux pages de 2022, particulièrement la section sur les écrits individualisés, le retour au texte et la portée de la consigne propre au candidat."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture de la lettre XXIV à partir des deux fac-similés, de la chronologie et de la diffusion de l’exemplum."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}

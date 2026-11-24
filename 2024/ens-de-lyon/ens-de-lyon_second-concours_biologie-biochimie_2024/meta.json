@@ -34,6 +34,11 @@
       "question": "Q14",
       "fichier": "figures/arn-et-proteines.svg",
       "legende": "Le dosage plasmatique intègre les apports de plusieurs tissus et la disparition de la protéine. L’ARN mesuré ne concerne que les cellules échantillonnées."
+    },
+    {
+      "question": "Q16",
+      "fichier": "figures/detection-plasma-cohorte.svg",
+      "legende": "Les barres donnent la proportion de personnes avec un ARN détectable dans le plasma. Les pourcentages du panneau 10C ne mesurent ni la quantité moyenne d’ARN ni une probabilité individuelle de forme grave."
     }
   ],
   "date_revision": "2026-11-24",
@@ -42,29 +47,29 @@
     "synthese": "traitee",
     "questions_entierement_traitees": [
       1,
+      5,
       11,
       12,
-      14
-    ],
-    "questions_partiellement_traitees": [
       13,
+      14,
+      15,
+      16,
       17,
       18
+    ],
+    "questions_partiellement_traitees": [
+      6
     ],
     "questions_non_traitees": [
       2,
       3,
       4,
-      5,
-      6,
       7,
       8,
       9,
-      10,
-      15,
-      16
+      10
     ],
-    "precision": "19 exercices en comptant la synthèse et 18 questions numérotées. Synthèse morphologique et génomique générale, principes de fluorescence et analyses cliniques indépendantes des figures 6 à 8. Les expériences sur l’entrée du virus et la réponse antivirale spécifique sont hors périmètre."
+    "precision": "Une synthèse et 18 questions numérotées. La synthèse et les Q1, 5 et 11 à 18 sont traitées. La Q6 couvre les rôles de l’actine et du témoin de comparaison. L’attribution du fragment en Q6 et les expériences des Q2 à 4 et 7 à 10 restent hors couverture."
   },
   "contributions": [
     {
@@ -78,6 +83,18 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction originale des deux éditions sur le sujet et le rapport officiels, avec comparaison directe aux panneaux 6A–E, 7A–B et 8A–B du PDF. Synthèse générale, quatre questions intégrales et trois partielles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision ciblée des deux éditions sur les Q5, 6 et 13 à 18. Lecture des contrôles généraux et des panneaux originaux 7A–C, 9A–C et 10A–C. Distinction entre association clinique, signification statistique, mécanisme et piste thérapeutique."
     }
   ]
 }

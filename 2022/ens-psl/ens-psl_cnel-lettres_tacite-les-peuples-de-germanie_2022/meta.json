@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_cnel-lettres_tacite-les-peuples-de-germanie_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Tacite — les peuples de Germanie",
+    "annee": 2022
+  },
+  "intitule": "Tacite — les peuples de Germanie",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-cnel2022-15.pdf",
+    "sujet_sha256": "180519452646f506cc05a5b95f8e412a87213361c97c391bbc6b5990e85b5031",
+    "references": [],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/dsa-rapport-cnel2022.pdf",
+    "rapport_sha256": "29e4f693b88515843f7fea133a19bc7fb5265f26dc81e9580d1fd204e40c2a06"
+  },
+  "figures": [
+    {
+      "fichier": "figures/traverser-le-rhin.svg",
+      "question": "Explication",
+      "legende": "Cinq critères pour situer un peuple"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de deux pages de 2022, particulièrement la section sur les écrits individualisés, le retour au texte et la portée de la consigne propre au candidat."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Analyse du Rhin, du passé flavien, de la date de l’œuvre et des conditions du rapprochement avec les périodes ultérieures."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_cnel-lettres_orose-les-histoires-contre-les-paiens_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Orose — les Histoires contre les païens",
+    "annee": 2022
+  },
+  "intitule": "Orose — les Histoires contre les païens",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-cnel2022-12.pdf",
+    "sujet_sha256": "634599334ed25a8513ea9af2f41c68f17c922518577eac810da06052561862c3",
+    "references": [],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/dsa-rapport-cnel2022.pdf",
+    "rapport_sha256": "29e4f693b88515843f7fea133a19bc7fb5265f26dc81e9580d1fd204e40c2a06"
+  },
+  "figures": [
+    {
+      "fichier": "figures/les-temps-du-recit.svg",
+      "question": "Explication",
+      "legende": "Comment une épopée devient-elle un argument ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de deux pages de 2022, particulièrement la section sur les écrits individualisés, le retour au texte et la portée de la consigne propre au candidat."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture de la chronologie romaine, de la mémoire scolaire et du raisonnement apologétique."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}

@@ -121,14 +121,14 @@
       44,
       45,
       51,
+      53,
       56,
       60
     ],
     "questions_partiellement_traitees": [
       46,
       49,
-      52,
-      53
+      52
     ],
     "questions_non_traitees": [
       47,
@@ -144,7 +144,7 @@
       63,
       64
     ],
-    "precision": "48 questions traitées intégralement et 4 partiellement. Q46 et Q49 couvrent les propriétés générales, Q52 la lecture des familles de protons, Q53 les formes de Lewis. La voie de construction de la zéaralénone demeure hors périmètre."
+    "precision": "49 questions intégralement traitées, 3 partiellement et 12 hors couverture. La Q53 est entièrement traitée, avec les formes de Lewis du diazométhane, l’origine de son pouvoir alkylant et la fonction ester méthylique. Les Q46, 49 et 52 restent partielles. Les lectures analytiques et les autres questions traitées sont identifiées dans les métadonnées ; la voie de construction de la zéaralénone demeure hors couverture."
   },
   "provenance": {
     "redaction": {
@@ -178,6 +178,18 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Relecture des deux éditions sur le sujet et le rapport de jury 2025. Contrôle des orbitales, des courbes tension–courant, du bilan du dosage en retour et des ordres cinétiques. Intégration numérique du modèle du glutathion comparée à la solution analytique. En partie III, seules les notions de chimie indépendantes de la synthèse de la mycotoxine sont couvertes."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision ciblée des deux éditions. Q53. Relecture du sujet et du rapport, vérification des seize électrons de valence et du lien entre les structures mésomères, le transfert d’un groupe méthyle et la fonction ester, sur une écriture générique."
     }
   ]
 }
