@@ -17,7 +17,13 @@
     "sha256_sujet": "b35249ef3aa6c5f5d7a08cd331dd51b70964840003e5ad2fc7736e0ace856460",
     "sha256_rapport": "b35249ef3aa6c5f5d7a08cd331dd51b70964840003e5ad2fc7736e0ace856460"
   },
-  "figures": [],
+  "figures": [
+    {
+      "fichier": "figures/experience-et-temoignage.svg",
+      "question": "Articulations du passage",
+      "legende": "Un même fait, quatre situations de jugement et deux questions distinctes sur la vérité du récit et l’intention de son auteur."
+    }
+  ],
   "contributions": [
     {
       "phase": "redaction",
@@ -27,6 +33,17 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction des deux mouvements imposés, explication et problème puis réflexion personnelle, dans les deux éditions. Lecture du passage complet de Locke et du commentaire du jury aux pages 2 à 4 du PDF. Indications de lecture propres à l’édition guidée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "retouches",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Ajout d’un schéma de lecture original sur l’évidence et les raisons des trois auditeurs. Distinction explicite entre les exemples de Locke et la question d’interprétation du corrigé. Ajout dans les deux éditions après la copie.",
       "fournisseur": "codex",
       "agent": "astra_maths"
     }
