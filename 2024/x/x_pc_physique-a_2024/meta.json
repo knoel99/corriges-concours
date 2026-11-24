@@ -1,0 +1,124 @@
+{
+  "slug": "x_pc_physique-a_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2024
+  },
+  "questions": 39,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_pc_sujet_PhyA.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_pc_rap_ePhyA.pdf",
+    "sujet_sha256": "9c1d70af7f9690e9996ea302addb51fa6ddd941f22a08c19310586570fbdb182",
+    "rapport_sha256": "f49bdfe60d8622acc03367ffcc69672d2fad608ab905a2b4b65bfb889ec52d19"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 39 questions couvrent les transmissions, la polarisation, le Doppler solaire, les modes propres et l’équation de phase. Huit figures originales rendent les trajets, les extrema et les courbes de dispersion vérifiables."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2",
+      "fichier": "figures/michelson-deplie.svg",
+      "legende": "Michelson déplié. La séparatrice inclinée partage la lumière vers les deux miroirs et recombine les retours."
+    },
+    {
+      "numero": 2,
+      "question": "10",
+      "fichier": "figures/pics-et-lobes.svg",
+      "legende": "Produit des transmissions des deux Michelson. Trois zéros et deux faibles lobes séparent les pics principaux."
+    },
+    {
+      "numero": 3,
+      "question": "12",
+      "fichier": "figures/polarisation-vers-source.svg",
+      "legende": "Sans lame de retour, S et P sont renvoyées vers la source."
+    },
+    {
+      "numero": 4,
+      "question": "14",
+      "fichier": "figures/polarisation-vers-sortie.svg",
+      "legende": "Après le double passage dans chaque quart d’onde, les deux faisceaux rejoignent la même sortie avec des polarisations orthogonales."
+    },
+    {
+      "numero": 5,
+      "question": "20",
+      "fichier": "figures/carte-de-rotation.svg",
+      "legende": "Rotation autour de +Oy. La projection de la vitesse est nulle sur le méridien central et change de signe entre les deux bords."
+    },
+    {
+      "numero": 6,
+      "question": "29",
+      "fichier": "figures/trois-branches.svg",
+      "legende": "Les trois premières branches de la couche uniforme tendent vers la même asymptote oblique."
+    },
+    {
+      "numero": 7,
+      "question": "30",
+      "fichier": "figures/courbe-reduite.svg",
+      "legende": "Tous les modes de la couche uniforme se rabattent sur la même courbe réduite."
+    },
+    {
+      "numero": 8,
+      "question": "34",
+      "fichier": "figures/rayons-solaires.svg",
+      "legende": "Acoustique géométrique, tracés de principe pour les questions 34 et 35. Le rayon stratifié se retourne en douceur. Dans la couche uniforme, il se réfléchit sur le fond."
+    }
+  ],
+  "redaction": "Les 39 questions couvrent les transmissions, la polarisation, le Doppler solaire, les modes propres et l’équation de phase. Huit figures originales rendent les trajets, les extrema et les courbes de dispersion vérifiables.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39"
+    ]
+  }
+}

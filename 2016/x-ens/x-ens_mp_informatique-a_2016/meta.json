@@ -1,0 +1,45 @@
+{
+  "slug": "x-ens_mp_informatique-a_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2016,
+    "duree_heures": 4
+  },
+  "questions": 24,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_mpi_sujet_infoa.pdf",
+    "sujet_sha256": "ed0495f90663ea187bff7e760349dd92a1925ab9b0beb9ab24d56cb5d8861516",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_einfo_a.pdf",
+    "rapport_sha256": "9b32c93924442876839c3464f0e51eea5ae3d6a1bde652cc3cd4030fcec10482",
+    "sujet_distribue": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2016/MP_INFO_X_1_2016.enonce.pdf",
+    "sujet_distribue_sha256": "f8bdf81cbed6f19335dce042011cec6a5b8325f178dcb6f701f5fd440781f438"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q09-fins-dfs.svg",
+      "question": "Q9",
+      "legende": "Sous-graphe de la figure 2. Le sommet 4 atteint 3 par 1, sans retour possible. Quand 1 explore 4 avant 3, la fin de 4 précède celle de 3."
+    },
+    {
+      "fichier": "figures/q23-selecteur.svg",
+      "question": "Q23",
+      "legende": "Pour a ∨ (b ∧ c), les feuilles émettent les clauses (a ∨ x), (b ∨ ¬x) et (c ∨ ¬x). Le sélecteur x est propre à la racine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 questions sur SAT. Lecture du sujet et du rapport officiel, confrontation au fac-similé distribué pour Q9 et vérification du contre-exemple. Deux schémas originaux. Compilation Caml Light des deux éditions et validation exhaustive sur les graphes à trois sommets, les 2-FNC à deux variables et des arbres booléens avec contrôle des extensions."
+    }
+  ]
+}

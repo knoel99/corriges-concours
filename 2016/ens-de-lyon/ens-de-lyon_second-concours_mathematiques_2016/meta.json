@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2016",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2016
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/02/16_2c_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/09/16_2c_rap_eMath.pdf",
+    "sha256_sujet": "aca123566ec97bc89f8b5657749e9526ee2041f8726875215fef853d8e1766f5"
+  },
+  "figures": [
+    {
+      "fichier": "figures/bernstein-angle.svg",
+      "question": "18",
+      "legende": "Deux polynômes de Bernstein approchent la valeur absolue centrée, y compris près de son point anguleux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et contrôle des 19 questions sur les trois pages officielles et consultation du rapport 2016. Vérification des différences finies pour le pas nul, des multiplicités du spectre et de la borne uniforme de Lipschitz, avec un tracé de deux approximants.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
