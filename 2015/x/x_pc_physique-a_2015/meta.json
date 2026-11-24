@@ -1,0 +1,87 @@
+{
+  "slug": "x_pc_physique-a_2015",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2015
+  },
+  "questions": 30,
+  "redaction": "Corrigés brut et guidé élaborés avec le sujet XE et le rapport du jury de la session 2015.",
+  "sources": {
+    "sujet": "https://wikiprepa.fr/concours/data/x_physique-a_pc_2015.pdf",
+    "rapport": "https://wikiprepa.fr/concours/data/x_physique-a_pc_2015_rapport_jury.pdf",
+    "nature": "Fac-similés de l’énoncé de l’École polytechnique et du rapport du jury hébergés par WikiPrépa.",
+    "sujet_sha256": "4955133ce348adc42923f2c40c63b2d4f0d4df924c278a34909aca1cd2912299",
+    "rapport_sha256": "b4b6728b591fec3e4d91527e72306e52b37000015e17853210b24bd7d7f00e00"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "14",
+      "fichier": "figures/faisceaux.svg",
+      "legende": "Chaque trajet fait intervenir une aire de collecte et une aire de tache. Les angles et les distances transverses sont exagérés."
+    },
+    {
+      "numero": 2,
+      "question": "21",
+      "fichier": "figures/courbure-nocturne.svg",
+      "legende": "Lectures approchées sur la planche du 25 mars. La courbure près du minimum intervient dans l’estimation de latitude."
+    },
+    {
+      "numero": 3,
+      "question": "24",
+      "fichier": "figures/extremes-orbite.svg",
+      "legende": "Le grand intervalle entre le creux vers le jour 15 et le sommet vers le jour 56 réduit l’incertitude relative sur la période."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions des 30 questions de télémétrie laser-Lune avec l’énoncé et le rapport du jury, aux pages originales. Dépliage du coin de cube, bilan des photons, lecture graphique de la nuit du 25 mars et des observations de mars-avril, contre-calcul de la décélération et de l’allongement du jour.",
+      "fournisseur": "codex",
+      "agent": "astra_physique"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  }
+}
