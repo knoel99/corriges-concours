@@ -79,6 +79,16 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Questions 1 à 17 des deux corrigés, huit figures et complexités. Arbre complet explicité en Q5, accès par identifiants entiers en Q13.",
+      "agent": "astra_info_si"
     }
   ]
 }
