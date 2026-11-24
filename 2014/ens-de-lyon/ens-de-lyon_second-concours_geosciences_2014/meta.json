@@ -1,0 +1,90 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2014",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2014
+  },
+  "questions": 15,
+  "redaction": "Quinze réponses individualisent les consignes A à E et les annotations demandées dans les documents 6 et 7. Six figures interprètent les documents et les deux lectures possibles de la teneur en molybdène sont distinguées.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_suj_st.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/04/14_2clyon_rap_est.pdf",
+    "rapport_sha256": "9ed4044552525b8e5eed336b4e04c62f4602e06883397ab5c0611f7cfcb6a048",
+    "nature": "Sujet et rapport du second concours universitaire de l’ENS de Lyon.",
+    "sujet_sha256": "e915c85d007ffd9ea365113707d2a39249faf9c53e71bb28e8c2c30d4c6e2ae7"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A1",
+      "fichier": "figures/couleur-et-chromophores.svg",
+      "legende": "Les analyses du document 2 donnent les teneurs en oxydes des deux éléments colorants. Le second panneau distingue les bandes d’absorption et la fenêtre dans le vert, sans inventer de valeurs d’absorbance."
+    },
+    {
+      "numero": 2,
+      "question": "C4",
+      "fichier": "figures/affleurement-et-mineraux.svg",
+      "legende": "Trois croquis de lecture du document 6. A situe la bande claire sécante, B oppose les textures du filon et de son encaissant et C désigne les prismes sombres de tourmaline."
+    },
+    {
+      "numero": 3,
+      "question": "C5",
+      "fichier": "figures/zonation-pegmatites.svg",
+      "legende": "Trois familles de filons du document 7. Les isothermes sont schématiques. Les flèches distinguent les circulations aqueuses du corps de magma silicaté."
+    },
+    {
+      "numero": 4,
+      "question": "D1",
+      "fichier": "figures/coupe-carnaiba.svg",
+      "legende": "Coupe ouest–est au droit de la mine 2, schématique et sans échelle verticale. Les limites en profondeur sont hypothétiques. Les lames vert sombre sont des serpentinites et péridotites."
+    },
+    {
+      "numero": 5,
+      "question": "D2",
+      "fichier": "figures/aureole-et-bilan.svg",
+      "legende": "Organisation générale de l’auréole du document 10 à l’est du filon. Les étoiles signalent les zones productives et les flèches les principales sources d’éléments."
+    },
+    {
+      "numero": 6,
+      "question": "E2",
+      "fichier": "figures/tonnages-et-teneurs.svg",
+      "legende": "À gauche, les masses du document 12. À droite, lecture de Thompson Creek sur des axes logarithmiques. Les droites obliques suivent une masse contenue constante."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Quinze réponses individualisent les consignes A à E et les annotations demandées dans les documents 6 et 7. Six figures interprètent les documents et les deux lectures possibles de la teneur en molybdène sont distinguées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "B1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "D1",
+      "D2",
+      "D3",
+      "E1",
+      "E2",
+      "E3",
+      "E4"
+    ]
+  }
+}
