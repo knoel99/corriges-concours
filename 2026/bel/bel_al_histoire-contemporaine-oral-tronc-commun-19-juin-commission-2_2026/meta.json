@@ -1,0 +1,66 @@
+{
+  "slug": "bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-2_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire contemporaine (oral tronc commun 19 juin commission 2)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire contemporaine (oral tronc commun 19 juin commission 2)",
+  "questions": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/19.06.26_sujets_histoire_2.pdf",
+    "sujet_sha256": "fde487c0270e045eab158bb35f1987a1aa94005666dbfd8022bda91d5c05d443",
+    "references": [
+      "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/les-seuils-de-souverainete.svg",
+      "question": "Comparaison",
+      "legende": "Quatre dates, quatre changements institutionnels"
+    },
+    {
+      "fichier": "figures/lannee-1947.svg",
+      "question": "Comparaison",
+      "legende": "1947 en France et dans l’empire"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de 22 exposés couvrant les deux options de chacun des 11 billets attestés, de leurs relances et des schémas comparatifs."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des intitulés, des paires et de l’ordre contre la totalité du fascicule officiel, puis des points de chronologie, des nuances et des figures."
+    }
+  ]
+}
