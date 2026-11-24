@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Thème.** *Étude et modélisation de phénomènes de communication sous-marine.* Le sujet part d'une question concrète : comment communiquer sous l'eau ? Il en tire une progression qui va de la physique (pourquoi le son et pas la radio) à la simulation numérique (trajectoire des rayons sonores, canal SOFAR), puis aux données (base SQL de mesures, classification de sons par $k$ plus proches voisins).
@@ -514,10 +516,15 @@ def rayon_Euler(x0, xf, dx, z0, a0, A):
     valeurs_a = [a0]
     x, z, a = x0, z0, a0  # Valeurs courantes des variables
     # Schéma d'Euler explicite
+    if dx <= 0:
+        raise ValueError("Le pas dx doit être positif.")
     while x < xf:
-        x_nouveau = x + dx          # Calcul de x{n+1}
-        z_nouveau = z + a * dx      # Calcul de z{n+1}
-        a_nouveau = a - A * z * dx  # Calcul de alpha{n+1}
+        x_nouveau = min(x + dx, xf)
+        pas = x_nouveau - x
+        if pas == 0:
+            raise ValueError("Le pas est trop petit pour modifier l’abscisse.")
+        z_nouveau = z + a * pas
+        a_nouveau = a - A * z * pas
         # Ajout des nouveaux éléments
         valeurs_x.append(x_nouveau)
         valeurs_z.append(z_nouveau)
@@ -526,6 +533,8 @@ def rayon_Euler(x0, xf, dx, z0, a0, A):
         x, z, a = x_nouveau, z_nouveau, a_nouveau
     return valeurs_x, valeurs_z
 ```
+
+Si `xf - x0` n’est pas un multiple de `dx`, le dernier pas est raccourci. Par exemple, de 0 à 1 avec un pas de 0,4, les abscisses sont 0, 0,4, 0,8 et 1. Les deux variables évoluent sur la même distance à chaque étape.
 
 ### Question 25
 
@@ -680,6 +689,8 @@ Avec la convention $\theta_c = \pi/2$ quand $c_1 \ge c_2$, cette seule comparais
 
 > [!PIEGE]
 > Écrire `(c1 <= c2) or theta1 < asin(c1/c2)` inverse les cas. Quand $c_1 > c_2$, `asin(c1/c2)` lève `ValueError`. Quand $c_1 \le c_2$, on force une réfraction impossible, et `asin` de la fonction `refraction` plante à son tour. Il faut tester sa condition sur les deux cas, $c_1 < c_2$ puis $c_1 > c_2$, avant de la recopier dans la synthèse.
+
+Le cas $c_2>c_1$ et $\theta_1=\theta_c$ exige une troisième branche pour suivre le rayon transmis. Il longe le dioptre à profondeur constante jusqu’à la portée finale. Les deux branches du fragment de l’énoncé décrivent les passages stricts. La fonction complète de Q36 traite séparément le rayon rasant.
 
 ### Question 33
 
@@ -912,8 +923,12 @@ On vérifie que cette dérivée vaut $\approx -0{,}11\ \mathrm{s^{-1}}$ en surfa
 ```python
 def dichotomie(dmunk, borne_debut, borne_fin, tolerance):
     a, b = borne_debut, borne_fin       # invariant : dmunk(a) < 0 <= dmunk(b)
+    if tolerance <= 0:
+        raise ValueError("La tolérance doit être positive.")
     while b - a > tolerance:
         m = (a + b) / 2
+        if m == a or m == b:
+            raise ValueError("La précision des flottants est atteinte.")
         if dmunk(m) < 0:
             a = m
         else:
@@ -921,7 +936,7 @@ def dichotomie(dmunk, borne_debut, borne_fin, tolerance):
     return (a + b) / 2
 ```
 
-Il y a $\lceil \log_2((b - a)/\text{tolerance}) \rceil$ itérations, chacune avec un seul appel à `dmunk`.
+Si la largeur initiale dépasse la tolérance, il y a $\lceil \log_2((b - a)/\text{tolerance}) \rceil$ itérations, chacune avec un seul appel à `dmunk`.
 
 > [!METHODE]
 > La dichotomie exige un changement de signe sur l'intervalle de départ. Ici, la croissance de `dmunk` (c est convexe) garantit en plus l'unicité du zéro.
@@ -1049,6 +1064,8 @@ def distance_euclidienne(A, B):
 ```python
 def plus_proches(distances, k):
     n = len(distances)
+    if not 1 <= k <= n:
+        raise ValueError("Il faut entre 1 et n voisins.")
     choisi = [False] * n
     indices = []
     for _ in range(k):
@@ -1060,6 +1077,8 @@ def plus_proches(distances, k):
         indices.append(i_min)
     return indices
 ```
+
+Le test strict garde, en cas d’égalité, le premier indice encore disponible. Ainsi `plus_proches([2, 1, 1], 2)` renvoie `[1, 2]`. Si $k>n$, il est impossible de renvoyer $k$ indices distincts.
 
 C'est un tri par sélection arrêté après $k$ étapes, de complexité $O(kn)$. Par exemple, `plus_proches([5.0, 1.0, 3.0, 0.5, 4.0, 2.0], 3)` renvoie `[3, 1, 5]`.
 

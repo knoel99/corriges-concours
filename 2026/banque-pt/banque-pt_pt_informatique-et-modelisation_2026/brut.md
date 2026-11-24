@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 4 h, calculatrice interdite ; applications numériques à un ou deux chiffres significatifs. Données :
 
 - capteur : $H = 4$ km, $R = 2$ cm, $L = 10$ cm ;
@@ -261,7 +263,7 @@ $$\boxed{\begin{aligned}
 &\approx 10^{-480}
 \end{aligned}}$$
 
-L'onde est totalement absorbée après quelques mètres : **la communication radio avec un sous-marin à 1 km de profondeur est impossible**.
+L’amplitude décroît d’un facteur $e$ par épaisseur de peau. À 1 km, le rapport calculé est de l’ordre de $10^{-480}$. **Le signal radio à la fréquence étudiée est indétectable à cette profondeur.**
 
 ### Question 21
 
@@ -302,10 +304,15 @@ def rayon_Euler(x0, xf, dx, z0, a0, A):
     valeurs_a = [a0]
     x, z, a = x0, z0, a0  # Valeurs courantes des variables
     # Schéma d'Euler explicite
+    if dx <= 0:
+        raise ValueError("Le pas dx doit être positif.")
     while x < xf:
-        x_nouveau = x + dx          # Calcul de x{n+1}
-        z_nouveau = z + a * dx      # Calcul de z{n+1}
-        a_nouveau = a - A * z * dx  # Calcul de alpha{n+1}
+        x_nouveau = min(x + dx, xf)
+        pas = x_nouveau - x
+        if pas == 0:
+            raise ValueError("Le pas est trop petit pour modifier l’abscisse.")
+        z_nouveau = z + a * pas
+        a_nouveau = a - A * z * pas
         # Ajout des nouveaux éléments
         valeurs_x.append(x_nouveau)
         valeurs_z.append(z_nouveau)
@@ -314,6 +321,8 @@ def rayon_Euler(x0, xf, dx, z0, a0, A):
         x, z, a = x_nouveau, z_nouveau, a_nouveau
     return valeurs_x, valeurs_z
 ```
+
+Si `xf - x0` n’est pas un multiple de `dx`, le dernier pas est raccourci. Par exemple, de 0 à 1 avec un pas de 0,4, les abscisses sont 0, 0,4, 0,8 et 1. Les deux variables évoluent sur la même distance à chaque étape.
 
 ### Question 25
 
@@ -409,6 +418,8 @@ theta1 < angle_critique(c1, c2)
 ```
 
 Grâce à la convention $\theta_c = \pi/2$ si $c_1 \ge c_2$, cette condition est toujours vraie dans ce cas (pour $\theta_1 < \pi/2$), et `asin` n'est jamais appelée hors de son domaine.
+
+Le cas $c_2>c_1$ et $\theta_1=\theta_c$ exige une troisième branche pour suivre le rayon transmis. Il longe le dioptre à profondeur constante jusqu’à la portée finale. Les deux branches du fragment de l’énoncé décrivent les passages stricts. La fonction complète de Q36 traite séparément le rayon rasant.
 
 ### Question 33
 
@@ -568,8 +579,12 @@ def dmunk(z):
 ```python
 def dichotomie(dmunk, borne_debut, borne_fin, tolerance):
     a, b = borne_debut, borne_fin       # invariant : dmunk(a) < 0 <= dmunk(b)
+    if tolerance <= 0:
+        raise ValueError("La tolérance doit être positive.")
     while b - a > tolerance:
         m = (a + b) / 2
+        if m == a or m == b:
+            raise ValueError("La précision des flottants est atteinte.")
         if dmunk(m) < 0:
             a = m
         else:
@@ -577,7 +592,7 @@ def dichotomie(dmunk, borne_debut, borne_fin, tolerance):
     return (a + b) / 2
 ```
 
-Le nombre d'itérations est $\left\lceil \log_2\big((b - a)/\text{tolerance}\big)\right\rceil$.
+Si la largeur initiale dépasse la tolérance, le nombre d'itérations est $\left\lceil \log_2\big((b - a)/\text{tolerance}\big)\right\rceil$.
 
 ### Question 42
 
@@ -643,6 +658,8 @@ On effectue $k$ recherches successives du minimum parmi les indices non encore r
 ```python
 def plus_proches(distances, k):
     n = len(distances)
+    if not 1 <= k <= n:
+        raise ValueError("Il faut entre 1 et n voisins.")
     choisi = [False] * n
     indices = []
     for _ in range(k):
@@ -654,6 +671,8 @@ def plus_proches(distances, k):
         indices.append(i_min)
     return indices
 ```
+
+Le test strict garde, en cas d’égalité, le premier indice encore disponible. Ainsi `plus_proches([2, 1, 1], 2)` renvoie `[1, 2]`. Si $k>n$, il est impossible de renvoyer $k$ indices distincts.
 
 (Par exemple, `plus_proches([5.0, 1.0, 3.0, 0.5, 4.0, 2.0], 3)` renvoie `[3, 1, 5]`.)
 
