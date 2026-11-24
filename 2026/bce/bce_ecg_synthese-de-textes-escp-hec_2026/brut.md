@@ -2,12 +2,22 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Problématique** : Faire circuler les langues, est-ce les faire vivre ?
+**Rédaction initiale** · claude-opus-5-5 · configuration complémentaire non renseignée
 
-Pourquoi la pluralité des langues importe-t-elle ? Larsonneur, qui écrit en 2021, la repère jusqu'à l'intérieur d'une même langue, dans des variantes sociales que les outils ne devraient pas tenir pour fautives. Yannic, en 2010, y voit l'expression de // cultures et d'identités, ce que l'Union européenne a reconnu en accordant à ses langues une égale importance. Benjamin, près d'un siècle plus tôt, lui donne une portée plus profonde : chaque langue vise les mêmes choses selon un mode propre, si bien que les langues, loin de se // répéter, se complètent.
+**Relecture antérieure** · configuration non renseignée
 
-La circulation actuelle des langues menace-t-elle cette pluralité ? Benjamin récusait déjà la traduction conçue comme copie fidèle, qui égalise deux langues figées, alors que l'original et la langue du traducteur ne cessent de se transformer. Yannic observe que la mondialisation multiplie les traductions mais les simplifie // au service du commerce, jusqu'à la pidginisation, face à un modèle anglo-saxon unilingue. Larsonneur montre comment le traitement automatique amplifie ce nivellement : entraînés sur une variante dominante et jugés sur l'engagement des usagers, les outils imposent des contenus formatés, et contraignent même les locuteurs à simplifier leurs phrases // pour être compris.
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-À quelles conditions la circulation peut-elle enrichir les langues ? Pour Benjamin, la traduction authentique, toujours provisoire, s'explique avec l'étrangeté des langues sans la résorber, et fait pressentir dans leur complémentarité un langage pur, horizon presque sacré jamais atteint. Larsonneur souligne qu'aucune instance ne régit // aujourd'hui les langues en ligne : quelques géants concentrent le marché et modèrent les contenus selon leurs propres règles, produisant un multilinguisme d'interface aux dépens de la diversité. Yannic mise sur un plurilinguisme d'intercompréhension, appuyé sur la parenté des langues romanes et l'exemple francophone, sans croire que // la seule coexistence des langues suffise à organiser celle des cultures.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-*(311 mots)*
+Quelle place pour la diversité quand les langues circulent ?
+
+Que révèle leur pluralité ? Pour Benjamin, deux langues peuvent viser le même objet selon des modalités différentes. Cette parenté dépasse la ressemblance des mots et des œuvres. Yannic reconnaît dans chaque langue une manière de concevoir le monde, porteuse de valeurs // culturelles et politiques. Larsonneur déplace cette observation vers les usages internes : des groupes parlant une même langue développent des styles distincts, que les outils numériques peuvent méconnaître.
+
+Quels échanges risquent de réduire ces différences ? Selon Benjamin, rechercher une copie fidèle supposerait un original et une langue traductrice immobiles, alors que // les deux se transforment. Yannic observe que les besoins du commerce mondial stimulent une traduction standardisée pour des marchés toujours plus vastes. Larsonneur précise comment les corpus dominants, les objectifs commerciaux des plateformes et les requêtes simplifiées demandées aux utilisateurs privilégient certaines formes, même lorsque davantage de langues deviennent accessibles. // Les mesures de performance récompensent alors le temps passé devant un écran davantage que la fidélité du rendu.
+
+Comment préserver la singularité des langues dans ces relations ? Yannic mise sur la compréhension réciproque des locuteurs de langues apparentées et sur un enseignement qui mobilise les ressources des langues maternelles. Le // français partagé peut ainsi valoriser les langues africaines ou régionales, sans que leur simple coexistence suffise au dialogue des cultures. Pour Benjamin, la rencontre touche une dimension plus profonde : toute traduction demeure provisoire, mais révèle la complémentarité des intentions par lesquelles les langues tendent vers un langage pur hors de // portée de chacune. Larsonneur mesure pour sa part les limites de cette ouverture dans les pratiques numériques : quelques entreprises disposent du pouvoir de sélectionner les contenus et de fixer les conditions de leur visibilité. Multiplier les interfaces donne accès à davantage de messages sans garantir la diversité des voix entendues. //
+
+*(300 mots)*
+
+[Sujet officiel, code 304](https://www.concours-bce.com/sites/default/files/2026-04/304%20-ETUDE_ET_SYNTHESE_DE_TEXTE_ESCP_BS_HEC_Paris.pdf) · [Rapport du jury 2026](https://www.concours-bce.com/sites/default/files/2026-09/304%20-%20Etude%20et%20synthe%CC%80se%20de%20textes%20ESCP%20BS.HEC%20Paris%202026.pdf)
