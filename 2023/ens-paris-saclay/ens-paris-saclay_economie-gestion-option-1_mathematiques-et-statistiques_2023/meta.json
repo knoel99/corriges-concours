@@ -1,0 +1,41 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2023
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_sujet_ecrit_ecoG_maths_mardi_2023.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2023_EcoG1_rapport_ecrit_Maths.pdf",
+    "sha256_sujet": "a88b2ccf4d710eacead460956014f1d97da164f73a19db901175181f7073f90f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/2-attente.svg",
+      "question": "Problème 2, question 5",
+      "legende": "Au septième lancer, la dernière pile est la cinquième et la suivante la neuvième. Les deux longueurs complètent l’intervalle entre piles."
+    },
+    {
+      "fichier": "figures/3-projection.svg",
+      "question": "Problème 3, question 5b",
+      "legende": "Le reste est orthogonal à la somme partielle de Fourier. Le théorème de Pythagore contrôle donc la somme des carrés des coefficients."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la totalité des trois problèmes contre le sujet et le rapport. Matrices et coordonnées vérifiées par multiplication, lois conditionnelles et temps d’attente recalculés y compris pour p égal à zéro et un, normalisation du coefficient constant et inégalité de Bessel vérifiées. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
