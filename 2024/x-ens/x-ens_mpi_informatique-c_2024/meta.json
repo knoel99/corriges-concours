@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mpi_informatique-c_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MPI",
+    "matiere": "Informatique C",
+    "annee": 2024,
+    "duree_heures": 4
+  },
+  "questions": 38,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MPI%20SUJET%20INFORMATIQUE%20C%20(XULSR).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MPI%20RAPPORT%20ECRIT%20INFORMATIQUE%20C%20(XULSR)_0.pdf",
+    "sujet_sha256": "4f9e0858d4910548f75ffe476a542e8aca3a77fe36ae038f45ee8a54a3f0046c",
+    "rapport_sha256": "4cf43af6122ce182b4d67f15995ab651e55e92040ef0988e0380c4a3ff1a3e89"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q04-composantes.svg",
+      "question": "Q4",
+      "legende": "Les littéraux positifs sont verts et leurs négations beiges. Dans chaque graphe, 1 et 6 sont isolés."
+    },
+    {
+      "fichier": "figures/q33-termes.svg",
+      "question": "Q33",
+      "legende": "Les deux expressions partagent le sous-terme de position 3. Les arcs pointillés désignent le premier argument et les arcs pleins le second."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 38 questions, lecture du sujet MPI et du rapport officiel, deux figures originales. Exécution après extraction des fonctions OCaml et C, comparaison à des valuations exhaustives et à une clôture de congruence calculée indépendamment. Contrôle des classes complémentaires, de la borne du retour sur trace et de la propagation aux parents des classes entières."
+    }
+  ]
+}
