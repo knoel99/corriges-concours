@@ -165,6 +165,7 @@
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
 | 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
+| 2025 | BEL | BL | Chinois | [md](2025/bel/bel_bl_chinois_2025/brut.md) | [md](2025/bel/bel_bl_chinois_2025/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Composition française | [md](2026/bel/bel_bl_composition-francaise_2026/brut.md) | [md](2026/bel/bel_bl_composition-francaise_2026/guide.md) |
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
@@ -183,6 +184,7 @@
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
+| 2025 | BEL | BL | Russe | [md](2025/bel/bel_bl_russe_2025/brut.md) | [md](2025/bel/bel_bl_russe_2025/guide.md) |
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie | [md](2026/bel/bel_bl_sociologie_2026/brut.md) | [md](2026/bel/bel_bl_sociologie_2026/guide.md) |
