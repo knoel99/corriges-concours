@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_xenophon-leconomique_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Xénophon — l’Économique",
+    "annee": 2023
+  },
+  "intitule": "Xénophon, Économique IX, 2-10 : la maison, l’ordre et ses gardiens",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-4.pdf",
+    "sujet_sha256": "be6bcf1544e6d18f732590e480a2d3482d75bab81dc68dfef47eee31796bc287",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/objets-et-gardiens.svg",
+      "question": "Argumentation",
+      "legende": "Du lieu approprié à la responsabilité de la garde"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire de l’oikos représenté, classement, temporalité et contrôle social, avec proposition de confrontation archéologique."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}

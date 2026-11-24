@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_cnel-lettres_platon-gorgias_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Platon — Gorgias",
+    "annee": 2023
+  },
+  "intitule": "Platon, Gorgias 447d-448e : l’éloge et la définition",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-7.pdf",
+    "sujet_sha256": "476d41a73a40cfade2c07f5ac2c88cb4031afb696010753b2231d7fc43b9f966",
+    "references": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/questions-et-reponses.svg",
+      "question": "Argumentation",
+      "legende": "À quelle question Polos répond-il ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication de la scène dialoguée, de la substitution de Polos et du décalage entre éloge et identification, avec projet hypothétique."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}
