@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La composition commune à l’ENS Paris-PSL, l’ENS de Lyon, l’ENS Paris-Saclay, l’ENSAE et l’ENSAI dure quatre heures. La calculatrice est interdite.
 
 ## Problème A — Applications linéaires et projecteurs
@@ -57,7 +59,7 @@ Par associativité, $S^2=BRB^{\mathsf T}$ et $S^3=BR^2B^{\mathsf T}$. Or $R^2=R$
 
 ### Question 4b
 
-Toute valeur propre réelle $\lambda$ de $S$ vérifie $\lambda^2(\lambda-1)=0$. Dans une base de diagonalisation, qui existe par hypothèse, $S$ est donc représentée par une diagonale de zéros et de uns. Son carré lui est égal. L’hypothèse de diagonalisation permet précisément d’écarter un bloc nilpotent non nul en 0.
+Toute valeur propre réelle $\lambda$ de $S$ vérifie $\lambda^2(\lambda-1)=0$. Dans une base de diagonalisation, qui existe par hypothèse, $S$ est donc représentée par une diagonale de zéros et de uns. Chaque coefficient diagonal vérifie alors $\lambda^2=\lambda$. En revenant à la base canonique, on obtient $S^2=S$.
 
 ### Question 5a
 
@@ -209,6 +211,8 @@ Le polynôme $t\mapsto -t^2$ est dérivable sur $\mathbb R$, et l’exponentiell
 
 Dans la dérivée de 17b, l’exponentielle est strictement positive. Ainsi $h$ croît strictement de zéro à un sur $]-\infty,0]$, puis décroît strictement de un à zéro sur $[0,+\infty[$, les deux valeurs nulles étant des limites. Son unique maximum vaut $h(0)=1$.
 
+$$\begin{array}{c|ccccc}t&-\infty&&0&&+\infty\\ \hline h'(t)&&+&0&-&\\h(t)&0&\nearrow&1&\searrow&0\end{array}$$
+
 ### Question 17d
 
 On a $h''(t)=(4t^2-2)e^{-t^2}$. Ce produit change de signe en $t=-1/\sqrt2$ et $t=1/\sqrt2$. La fonction est convexe sur les deux intervalles extérieurs et concave entre les deux abscisses. Ses deux points d’inflexion ont pour ordonnée $e^{-1/2}$.
@@ -252,7 +256,9 @@ Soit $H$ une primitive de $h$. Pour $x\ne0$, $xf(x)=H(2x)-H(x)$. Comme $H$ est d
 
 ### Question 20b
 
-Pour $x>0$, l’identité de 20a et la minoration de 19a donnent $xf'(x)\leq e^{-4x^2}-e^{-x^2}<0$. Par parité, $f'$ est de signe opposé sur la demi-droite négative. Ainsi $f$ croît strictement de zéro à un sur $]-\infty,0[$ et décroît strictement de un à zéro sur $]0,+\infty[$. Les quatre valeurs aux extrémités sont ici des limites.
+Pour $x>0$, l’identité de 20a et la minoration de 19a donnent $xf'(x)\leq e^{-4x^2}-e^{-x^2}<0$. Par parité, $f'$ est de signe opposé sur la demi-droite négative. Ainsi $f$ croît strictement de zéro à un sur $]-\infty,0[$ et décroît strictement de un à zéro sur $]0,+\infty[$. Le tableau distingue les deux intervalles du domaine. Les valeurs aux extrémités sont des limites.
+
+$$\begin{array}{c|ccc|ccc}x&-\infty&&0^-&0^+&&+\infty\\ \hline f'(x)&&+&&&-&\\ f(x)&0&\nearrow&1&1&\searrow&0\end{array}$$
 
 ### Question 21a
 
@@ -268,7 +274,7 @@ Pour $x\ne0$, substituer $t=xu$ transforme la quantité à étudier en $\int_1^2
 
 ### Question 21d
 
-L’expression donnée exclut zéro. En prolongeant $f$ par $f(0)=1$, son développement donne $f'(0)=0$ et la tangente $y=1$. De part et d’autre, $f(x)-1\sim-(7/3)x^2<0$, donc la courbe est en dessous. Pour contrôler la courbure elle-même, l’intégrale sur $[1,2]$ de 18b est deux fois dérivable sous le signe intégral au voisinage de zéro, par continuité conjointe sur un compact. On obtient $f''(0)=-2\int_1^2u^2\,\mathrm du=-14/3$, et $f''$ reste négative dans un voisinage de zéro. Il n’y a donc pas d’inflexion en zéro.
+L’expression donnée exclut zéro. En prolongeant $f$ par $f(0)=1$, son développement donne $f'(0)=0$ et la tangente $y=1$. De part et d’autre, $f(x)-1\sim-(7/3)x^2<0$, donc la courbe est en dessous. Pour voir la concavité du prolongement, prenons $|x|<1/(2\sqrt2)$. Pour chaque $u\in[1,2]$, on a $|ux|<1/\sqrt2$. D’après 17d, $x\mapsto h(ux)$ est concave sur cet intervalle en $x$. L’inégalité de concavité se conserve en intégrant en $u$ de 1 à 2. D’après 18b, le prolongement de $f$ est donc concave de part et d’autre de zéro et n’y a aucun point d’inflexion.
 
 ![Au voisinage de zéro, la moyenne gaussienne prolongée et son approximation quadratique restent sous la tangente horizontale.](figures/c21-f-et-tangente.svg)
 

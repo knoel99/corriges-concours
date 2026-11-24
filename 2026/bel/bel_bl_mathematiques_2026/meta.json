@@ -65,6 +65,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 64 réponses des deux éditions, de leurs indications et des cinq figures contre le fac-similé du sujet et le rapport du jury. Tableaux de variations en 17c et 20b, preuve de concavité en 21d par intégration de l’inégalité de concavité, justification de l’idempotence en 4b.",
+      "tour": 1,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
