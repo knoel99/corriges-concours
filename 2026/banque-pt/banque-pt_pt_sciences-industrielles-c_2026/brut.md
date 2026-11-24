@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 6 h, calculatrice interdite. Sujet : robot d'inspection de canalisations PATHFINDER. Les réponses graphiques (cahier réponse, dessin réponse A3) sont décrites en texte de façon précise.
 
 **Données utilisées.**
@@ -131,9 +137,11 @@ D &= \frac{3600}{60}\times 100\ \text{mm} \\
 
 $$\boxed{D = 6\ \text{m en 1 h}}$$
 
-Ce résultat découle du modèle cinématique du cycle (Q1.5 et DR V). Il ne s'obtient pas en reprenant la vitesse de 0,1 m/s du DR I : la question demande de vérifier cette performance, pas de la recopier.
+Le résultat précédent suppose que les contrôles d’appui se terminent avant les autres opérations lancées en parallèle. Si $t_{AV}$ et $t_{AR}$ sont leurs durées en secondes, le diagramme du DR V donne plus généralement
 
-C'est 60 fois moins que les 360 m/h du DR I. Il n'y a pas de contradiction : ces 360 m/h correspondent au mode hybride, porté par le courant (flux à 0,3 m/s), alors que 6 m/h est la performance du mode automoteur seul, par avances successives.
+$$T=25+\max\!\left(t_{AV},\;25+\max(t_{AR},10)\right).$$
+
+Le premier bloc de 25 s décrit l’avant. Les 25 s de la seconde branche décrivent l’arrière, suivi du contrôle arrière et de la prise de vues. Le cycle dure 60 s si $t_{AR}\le10$ s et $t_{AV}\le35$ s. Sinon, le temps de cycle augmente et la vitesse moyenne vaut $360/T$ m/h. Le DR I annonce 360 m/h pour un écoulement de 0,3 m/s et indique une locomotion hybride. Le calcul à partir du DR V porte sur l’avance de 100 mm obtenue par le mouvement des vérins.
 
 ### Question 1.7
 
@@ -297,7 +305,7 @@ t_d &= \frac{\Delta\alpha}{2\,N_c} \\
 
 $$\boxed{t_d \approx 4{,}4\ \text{s}}$$
 
-Avec une incertitude de lecture de $\pm 0{,}5^\circ$, on obtient un temps compris entre 4,3 et 4,5 s.
+Si l’angle initial est pris à $42^\circ$ et la lecture de l’angle final à $21^\circ\pm0{,}5^\circ$, l’angle relatif varie de $20{,}5^\circ$ à $21{,}5^\circ$. Les durées correspondantes sont $20{,}5/4{,}8\simeq4{,}27$ s et $21{,}5/4{,}8\simeq4{,}48$ s. Si les deux angles sont lus sur le graphe avec la même incertitude, leurs incertitudes absolues s’additionnent dans le cas le plus défavorable. La plage de temps devient alors $[20/4{,}8\,;\,22/4{,}8]$, soit environ $[4{,}17\,;\,4{,}58]$ s.
 
 **Contrôle.** Un déploiement complet ($42^\circ \to 7{,}5^\circ$) dure $34{,}5/(2\times 2{,}4) \approx 7{,}2$ s. On retrouve les 7 s du DR V pour une conduite de 300 mm, où les bras arrivent en butée sans toucher la paroi. Cela valide la relation $\Delta\alpha = 2\Delta\theta$ ; avec $\Delta\theta = \Delta\alpha$, on obtiendrait 14,4 s.
 
