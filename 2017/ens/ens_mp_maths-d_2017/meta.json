@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-d_2017",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2017
+  },
+  "questions": 50,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2017_MP_sujet_mathD.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_MP_rap_eMathD.pdf",
+    "sha256_sujet": "220e0d24cad584aebdb650082896f1f59d5ae64cf0daed915f63e8daba27a022"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cubique-transitions.svg",
+      "question": "III.2d",
+      "legende": "Les extrema du cubique et les images des deux bords déterminent les intervalles accessibles depuis chacun des trois plis."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et confrontation des quatre parties, du préliminaire et des deux éditions au sujet de huit pages et au rapport de sept pages. Vérification de la métrique dilatée, de la semi-conjugaison, du comptage par la matrice transposée, des séries latérales et de la formule de Fibonacci.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
