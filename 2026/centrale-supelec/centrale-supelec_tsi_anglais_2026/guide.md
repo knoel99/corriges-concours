@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** L'épreuve dure 4 heures ; calculatrice et tout système électronique sont interdits. Elle comporte un seul exercice :
@@ -138,13 +144,13 @@ In a world of screens, is reading books becoming a thing of the past? Two Americ
 
 First, the articles describe a striking decline. Rothman notes that the share of American adults who read at least one book a year fell from 55 to 48 percent in a decade, while the proportion of thirteen-year-olds reading for fun almost every day was roughly halved. Horowitch adds that even students at elite universities such as Columbia, who can decode texts perfectly well, now feel overwhelmed by the idea of reading several books a semester, so that some professors have shortened their reading lists.
 
-Both journalists blame screens for this change. Smartphones, TikTok or Netflix constantly compete for attention, and, as a psychologist quoted by Horowitch puts it, "being bored has become unnatural". Yet the problem is not only technical: many students choose not to read because they care more about their future careers. Rothman also insists that reading is changing rather than disappearing: some people enjoy a kind of "hyper-literacy", others switch between e-books and audio narration, and theorists even speak of a return to an oral culture of comments, podcasts and memes. The Metaverse advertisement goes further, promising total immersion: a man wearing a headset lies back in his living room while dinosaurs roam the wild landscape around him, under the slogan "It's just the beginning".
+Both journalists examine the competition for attention. Smartphones, TikTok or Netflix constantly compete for attention, and, as a psychologist quoted by Horowitch puts it, "being bored has become unnatural". Yet the problem is not only technical: many students choose not to read because they care more about their future careers. Rothman also insists that reading is changing rather than disappearing: some people enjoy a kind of "hyper-literacy", others switch between e-books and audio narration, and theorists even speak of a return to an oral culture of comments, podcasts and memes. The Metaverse advertisement goes further, promising total immersion: the open walls of a furnished room place a seated headset user face to face with prehistoric creatures, under the slogan "It's just the beginning".
 
-However, the documents suggest that books offer something screens cannot replace. For Horowitch, "deep reading" develops critical thinking, self-reflection and empathy, by transporting readers into other minds, but only if they read whole works rather than excerpts. Elton's novel turns this idea into fiction: in a society where private thought is forbidden, Trafford sees a hidden copy of Wuthering Heights as "a door" to "a thousand universes", a way to escape through "reason and imagination". The advertisement promises a similar escape, yet one delivered by technology rather than built by the reader's own imagination.
+However, the documents suggest that books offer something screens cannot replace. For Horowitch, "deep reading" develops critical thinking, self-reflection and empathy, by transporting readers into other minds, but only if they read whole works rather than excerpts. Elton's novel turns this idea into fiction: in a society where private thought is forbidden, Trafford reveals a copy of Wuthering Heights disguised as a pamphlet and presents it as "a door" to "a thousand universes", a way to escape through "reason and imagination". The advertisement promises a similar escape, yet one delivered by technology rather than built by the reader's own imagination.
 
-In conclusion, the documents agree that sustained reading is losing ground to digital media, even if reading itself is taking new forms. What is at stake is not just an old habit, but our capacity to concentrate, to imagine and to understand others.
+In conclusion, the articles document the decline of sustained reading, even if reading itself is taking new forms. What is at stake is not just an old habit, but our capacity to concentrate, to imagine and to understand others.
 
-**Number of words (title included): 424**
+**Number of words (title included): 425**
 
 > [!METHODE]
 > Les verbes introducteurs varient et situent la position de chaque auteur : *notes*, *adds*, *insists*, *suggest*. Ils évitent la répétition de *says*.
@@ -167,12 +173,12 @@ In conclusion, the documents agree that sustained reading is losing ground to di
 | Titre | 5 |
 | Introduction | 74 |
 | Partie I | 84 |
-| Partie II | 124 |
-| Partie III | 94 |
-| Conclusion | 43 |
-| **Total** | **424** |
+| Partie II | 123 |
+| Partie III | 100 |
+| Conclusion | 39 |
+| **Total** | **425** |
 
-Le total (424 mots) est dans la fourchette 360-440, quelle que soit la convention adoptée pour les traits d'union et les apostrophes (voir la revue).
+Le total (425 mots) est dans la fourchette 360-440, quelle que soit la convention adoptée pour les traits d'union et les apostrophes (voir la revue).
 
 Points de langue vérifiés :
 
@@ -191,3 +197,7 @@ Points de langue vérifiés :
 - **Documents non argumentatifs** : un extrait de roman et une publicité se décrivent puis s'interprètent en lien avec les articles, sans être présentés comme des faits.
 - **Langue utile** : *attention span*, *deep reading*, *to skim*, *to be overwhelmed by*, *reading list*, *literacy*, *audiobook*, *immersive*, *virtual reality headset*, *to escape into*.
 - **Transposable** : les dossiers sur les écrans, l'attention, l'école et la culture numérique se traitent avec la même grille (constat chiffré, causes, nuances, enjeux).
+
+![Deux façons de franchir le décor](figures/lecture-du-dossier.svg)
+
+[Sujet officiel](https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf)

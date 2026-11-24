@@ -8,5 +8,59 @@
   },
   "questions": 1,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-dossier.svg",
+      "question": "Synthèse",
+      "legende": "Deux façons de franchir le décor"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-12T12:00:00",
+      "modifications": true,
+      "perimetre": "Rédaction antérieure des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "vitesse": null,
+      "effort": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Révision antérieure des deux éditions attestée dans la métadonnée d’origine."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux synthèses sur les quatre sources des pages 1 à 4. Comparaison du livre déguisé et du salon ouvert sur le paysage préhistorique, attribution des thèses et nouvelles vérifications des décomptes.",
+      "agent": "astra_langues"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/G078-LV009.pdf"
+  },
+  "date_revision": "2026-11-24"
 }
