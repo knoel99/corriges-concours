@@ -1,0 +1,46 @@
+{
+  "slug": "x-ens_psi_maths-psi_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Mathématiques",
+    "annee": 2025
+  },
+  "questions": 51,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Sujets/2025_PSI_Ep1_Maths_14022025_NB.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Rapports/2025_PSI_RAPPORT_MATHS_Ecrit.pdf",
+    "sha256_sujet": "4308836e9f95f800970ef409bcb0a112050b9dc63f6806a8b40f656ac5b91cf2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q3-pas-explicite.svg",
+      "question": "3b",
+      "legende": "Sur une quadratique, le pas règle le signe et le module du multiplicateur. Au seuil 2, les itérées alternent entre deux valeurs."
+    },
+    {
+      "fichier": "figures/q22-seuillage.svg",
+      "question": "22a",
+      "legende": "Pour la valeur absolue et un pas égal à un, tout point de l’intervalle central a pour image zéro. Les deux branches extérieures se rapprochent de zéro d’une unité."
+    },
+    {
+      "fichier": "figures/q37-entree-sur-sphere.svg",
+      "question": "37",
+      "legende": "Une trajectoire plane démarre à l’intérieur de la boule, rencontre sa frontière, puis s’aligne sur la direction propre dominante présente au départ."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 51 réponses aux 38 questions du sujet XUSR et de leurs indications, confrontation avec le rapport officiel. Traitement des pas limites, de l’annulation des écarts, de la convergence de toute la suite, de la condition au bord et du régime initial dans le noyau. Trois figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
