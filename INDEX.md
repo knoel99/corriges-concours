@@ -61,6 +61,8 @@
 | 2026 | BCE | ECG | Allemand LVB (ELVi) | [md](2026/bce/bce_ecg_allemand-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_allemand-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Anglais LVA (ELVi) | [md](2026/bce/bce_ecg_anglais-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_anglais-lva-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Anglais LVB (ELVi) | [md](2026/bce/bce_ecg_anglais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_anglais-lvb-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Arabe littéral LVA (ELVi) | [md](2026/bce/bce_ecg_arabe-litteral-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_arabe-litteral-lva-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Arabe littéral LVB (ELVi) | [md](2026/bce/bce_ecg_arabe-litteral-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_arabe-litteral-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Chinois LVB (ELVi) | [md](2026/bce/bce_ecg_chinois-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_chinois-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Hébreu LVB (ELVi) | [md](2026/bce/bce_ecg_hebreu-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_hebreu-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/brut.md) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/guide.md) |
@@ -77,6 +79,8 @@
 | 2025 | BCE | ECG | HGGMC (ESSEC) | [md](2025/bce/bce_ecg_hggmc-essec_2025/brut.md) | [md](2025/bce/bce_ecg_hggmc-essec_2025/guide.md) |
 | 2026 | BCE | ECG | HGGMC (ESSEC) | [md](2026/bce/bce_ecg_hggmc-essec_2026/brut.md) | [md](2026/bce/bce_ecg_hggmc-essec_2026/guide.md) |
 | 2025 | BCE | ECG | Maths 2 appliquées (ESSEC) | [md](2025/bce/bce_ecg_maths-2-appliquees-essec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-2-appliquees-essec_2025/guide.md) |
+| 2026 | BCE | ECG | Italien LVA (ELVi) | [md](2026/bce/bce_ecg_italien-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_italien-lva-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Italien LVB (ELVi) | [md](2026/bce/bce_ecg_italien-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_italien-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Maths 2 appliquées (ESSEC) | [md](2026/bce/bce_ecg_maths-2-appliquees-essec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-2-appliquees-essec_2026/guide.md) |
 | 2025 | BCE | ECG | Maths 2 approfondies (ESCP-HEC) | [md](2025/bce/bce_ecg_maths-2-approfondies-escp-hec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-2-approfondies-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECG | Maths 2 approfondies (ESCP-HEC) | [md](2026/bce/bce_ecg_maths-2-approfondies-escp-hec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-2-approfondies-escp-hec_2026/guide.md) |
@@ -97,6 +101,8 @@
 | 2026 | BCE | ECG | Polonais LVB (ELVi) | [md](2026/bce/bce_ecg_polonais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_polonais-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Portugais LVA (ELVi) | [md](2026/bce/bce_ecg_portugais-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_portugais-lva-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Portugais LVB (ELVi) | [md](2026/bce/bce_ecg_portugais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_portugais-lvb-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Russe LVA (ELVi) | [md](2026/bce/bce_ecg_russe-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_russe-lva-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Russe LVB (ELVi) | [md](2026/bce/bce_ecg_russe-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_russe-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/guide.md) |
 | 2025 | BCE | ECT | Culture générale (Audencia) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/brut.md) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/guide.md) |
 | 2026 | BCE | ECT | Culture générale (Audencia) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/brut.md) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/guide.md) |
@@ -717,6 +723,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2021 | X-ENS | PSI | Modélisation | [md](2021/x-ens/x-ens_psi_modelisation_2021/brut.md) | [md](2021/x-ens/x-ens_psi_modelisation_2021/guide.md) |
 | 2022 | X-ENS | PSI | Modélisation | [md](2022/x-ens/x-ens_psi_modelisation_2022/brut.md) | [md](2022/x-ens/x-ens_psi_modelisation_2022/guide.md) |
 | 2023 | X-ENS | PSI | Modélisation | [md](2023/x-ens/x-ens_psi_modelisation_2023/brut.md) | [md](2023/x-ens/x-ens_psi_modelisation_2023/guide.md) |
 | 2024 | X-ENS | PSI | Modélisation | [md](2024/x-ens/x-ens_psi_modelisation_2024/brut.md) | [md](2024/x-ens/x-ens_psi_modelisation_2024/guide.md) |

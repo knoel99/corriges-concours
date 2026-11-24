@@ -66,11 +66,12 @@ def test_lien_vers_fiche_simple_ou_filiere_administrative():
     )
 
 
-def test_signature_dans_le_corrige_visible_et_pdf_de_la_fiche_simple():
+@pytest.mark.parametrize("titre", ["", '<p class="document__titre">Corrigé guidé</p>'])
+def test_signature_dans_le_corrige_visible_et_pdf_de_la_fiche_simple(titre):
     page = couverture.LectureHTML("brut")
-    page.feed("""
+    page.feed(f"""
       <div>Révision · GPT-6.2 Astra Ultra standard</div>
-      <article class="copie-prose"><p><i>Corrigé rédigé par IA, non officiel.</i></p>
+      <article class="copie-prose">{titre}<p><i>Corrigé rédigé par IA, non officiel.</i></p>
       <p><strong>Rédaction</strong> · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026</p>
       <p>Question 1</p><p>Révision · GPT-6.2 Astra Ultra standard</p></article>
       <a href="/api/catalog/documents/corriges/x-ens_mp_info_2026/brut.pdf">PDF</a>
