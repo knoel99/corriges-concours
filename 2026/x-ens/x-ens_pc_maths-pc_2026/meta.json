@@ -25,6 +25,11 @@
       "legende": "(a) g_β → |h| simplement ; (b) les g_β′, continues et nulles en 0, tendent vers ℓ, discontinue en 0 (tracé pour β = 0, 1, 2)"
     },
     {
+      "fichier": "figures/q21-taux-binomial.svg",
+      "question": "Q21",
+      "legende": "Le taux binomial exact se rapproche de J et atteint ln 2 aux deux extrémités."
+    },
+    {
       "fichier": "figures/q25-profil-psi.svg",
       "question": "Q25",
       "legende": "Profil ψ_β,0 : maximum unique en 0 pour β = 0,3 ; pour β = 0,8, 0 devient un minimum local (zone teintée : ψ″ > 0) et les maxima sont en ±x*(β, 0)"
@@ -37,12 +42,7 @@
     {
       "fichier": "figures/q31-point-fixe.svg",
       "question": "Q31",
-      "legende": "Pour h = 0,2, x*(β, h) est l'abscisse de l'intersection positive de y = x et y = th(h + 2βx) ; pour β = 0,8, les deux intersections négatives ne sont pas des maxima"
-    },
-    {
-      "fichier": "figures/q21-taux-binomial.svg",
-      "question": "Q21",
-      "legende": "Le taux binomial exact se rapproche de J et atteint ln 2 aux deux extrémités."
+      "legende": "Pour h = 0,2, l’intersection positive donne le maximum global. Pour β = 0,8, les deux intersections négatives correspondent, de gauche à droite, à un maximum local puis à un minimum local."
     },
     {
       "fichier": "figures/q32-loi-critique.svg",
@@ -107,6 +107,18 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 32 réponses des deux éditions avec le sujet et le rapport de mathématiques PC, des indications et des huit figures. Critère de convexité autonome en Q3, hypothèse de symétrie en Q5, dépendance des poids démontrée par le produit des signes en Q13, grille paire ou impaire en Q21. Distinction des extrema locaux et globaux sur la figure de Q31 et numérotation des huit figures par ordre de lecture.",
+      "tour": 3,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

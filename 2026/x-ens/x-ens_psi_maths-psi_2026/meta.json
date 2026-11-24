@@ -9,7 +9,8 @@
   "questions": 17,
   "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture indépendante des solutions sur le sujet officiel",
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_maths_xusr_26.pdf"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_maths_xusr_26.pdf",
+    "annales_ens": "https://www.ens.psl.eu/rapports-et-sujets-2026-psi"
   },
   "figures": [
     {
@@ -25,7 +26,7 @@
     {
       "fichier": "figures/q04-signes-derivee.svg",
       "question": "Q4",
-      "legende": "Pour R égal au carré de la distance au segment de −1 à 1, g′ vaut −√R à gauche du segment, zéro sur le segment et +√R à droite."
+      "legende": "Pour g égal au tiers du cube de la distance au segment de −1 à 1, sa dérivée est de classe C¹. Elle vaut −√R à gauche du segment, zéro sur le segment et +√R à droite."
     },
     {
       "fichier": "figures/q06-image-noyau.svg",
@@ -43,7 +44,7 @@
       "legende": "Pour M = diag(1,2) et B = (1,0), les coordonnées centrées décroissent comme exp(−t) et exp(−2t). Chaque trajectoire tend vers (1,0)."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -82,6 +83,18 @@
       "perimetre": "Relecture des corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 17 questions et de toutes leurs subdivisions dans les deux éditions sur le sujet XUSR, ainsi que des indications et des six figures. La ligne Mathématiques des annales ENS ne fournit aucun lien de rapport. Remplacement de l’exemple de 4(c) pour que g soit de classe C², précision de l’indication sur les espaces propres en 8 et insertion des six figures dans le brut.",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
