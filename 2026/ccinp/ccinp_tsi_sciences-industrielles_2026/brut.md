@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 6 heures, calculatrice interdite. Unité de traitement plasma robotisée : 7 parties indépendantes, 58 questions. Le document réponse (DR) n'étant pas disponible, les schémas à compléter sont redessinés à part ou décrits en texte.
 
 ## Partie I — Détermination de la relation entre le déplacement du vérin et l'entraxe des bouteilles
@@ -84,6 +90,8 @@ Par ailleurs, $nb\_ech\ge3$ (sinon il n'y a pas de filtrage). Enfin, $nb\_ech$ d
 
 ```python
 def moyenne_glissante(mesure, nb_ech):
+    if nb_ech <= 0 or nb_ech % 2 == 0:
+        raise ValueError("La largeur de la fenêtre doit être positive et impaire.")
     n = len(mesure)
     demi = nb_ech // 2                  # nb_ech = 2*demi + 1
     mesure_filtree = []
@@ -102,15 +110,23 @@ La liste renvoyée a la même longueur que `mesure`, et reste donc synchronisée
 
 ### Q7
 
-Un minimum local est un échantillon inférieur à ses deux voisins. L'inégalité est stricte à gauche et large à droite, pour qu'un palier ne soit compté qu'une fois. La fonction renvoie des indices :
+On compare chaque plateau à ses deux voisins extérieurs et on retient son indice central, arrondi vers le bas en cas de longueur paire. Un plateau en bord de signal a un seul voisin et ne permet pas de conclure. Ainsi `[4, 3, 3, 2]` ne donne aucun minimum intérieur, alors que `[4, 2, 2, 2, 5]` donne l’indice 2. Un minimum isolé est un plateau de longueur 1.
 
 ```python
 def trouver_minimum(mesure_filtree):
-    echantillons_min = []
-    for i in range(1, len(mesure_filtree) - 1):
-        if mesure_filtree[i] < mesure_filtree[i-1] and mesure_filtree[i] <= mesure_filtree[i+1]:
-            echantillons_min.append(i)
-    return echantillons_min
+    indices = []
+    debut = 0
+    n = len(mesure_filtree)
+    while debut < n:
+        fin = debut
+        while fin + 1 < n and mesure_filtree[fin + 1] == mesure_filtree[debut]:
+            fin += 1
+        if debut > 0 and fin + 1 < n:
+            niveau = mesure_filtree[debut]
+            if niveau < mesure_filtree[debut - 1] and niveau < mesure_filtree[fin + 1]:
+                indices.append((debut + fin) // 2)
+        debut = fin + 1
+    return indices
 ```
 
 ### Q8
@@ -729,8 +745,10 @@ On retient donc le **moteur 3056 012 B**, alimenté en 12 V comme le hacheur ($U
 
 $$\omega_m=\frac{2\pi}{k_rp_{vis}}\times0{,}7\approx1649\ \text{rad·s}^{-1}$$
 
-soit **15 750 tr·min⁻¹**. Or le 3056 a une vitesse à vide de 8 800 tr·min⁻¹ seulement. Sous 54 mN·m, sa caractéristique donne
+soit **15 750 tr·min⁻¹**. Or le 3056 a une vitesse à vide de 8 800 tr·min⁻¹ seulement. À vitesse constante, le terme d’inertie de Q56 s’annule. Le couple de frottement ramené au moteur vaut $10\times(1/3)\times0{,}008/(2\pi)\simeq4{,}24$ mN·m. Au point de fonctionnement correspondant, la pente de catalogue donne
 
-$$n\approx8800-87\times54\approx4100\ \text{tr·min}^{-1}$$
+$$n\simeq8800-87\times4{,}24\simeq8430\ \text{tr·min}^{-1}.$$
+
+Les 54 mN·m de Q57 sont nécessaires pendant l’accélération. Même à vide, la vitesse du moteur reste inférieure aux 15 750 tr·min⁻¹ demandés.
 
 **Conclusion.** Le moteur 3056 012 B est le seul choix possible en couple, mais il ne peut pas atteindre la vitesse du palier. **Les cadences de la figure 31 ne peuvent pas être respectées** avec $k_r=1/3$ et $p_{vis}=8$ mm (exigence 1.3.1 non validée), et aucun des deux autres moteurs ne convient non plus. Il faudrait revoir la transmission, par exemple avec un pas de vis plus grand, ou réduire la vitesse de palier.

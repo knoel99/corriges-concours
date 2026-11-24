@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Format.** 6 heures, calculatrice interdite, 58 questions (Q1 à Q58) réparties en sept parties indépendantes. On ne rend que le document réponse (DR, 24 pages), qui n'est pas reproduit ici : les gabarits à compléter (fonction Python de Q6, schéma-bloc de Q38, diagrammes de Bode de Q42) sont donc traités sans eux.
@@ -164,6 +170,8 @@ De plus, $nb\_ech\ge3$, et $nb\_ech$ doit rester petit devant le nombre d'échan
 
 ```python
 def moyenne_glissante(mesure, nb_ech):
+    if nb_ech <= 0 or nb_ech % 2 == 0:
+        raise ValueError("La largeur de la fenêtre doit être positive et impaire.")
     n = len(mesure)
     demi = nb_ech // 2                  # nb_ech = 2*demi + 1
     mesure_filtree = []
@@ -195,14 +203,22 @@ Par exemple, `moyenne_glissante([1, 2, 3, 4, 5, 6, 7], 3)` renvoie `[1, 2.0, 3.0
 
 ```python
 def trouver_minimum(mesure_filtree):
-    echantillons_min = []
-    for i in range(1, len(mesure_filtree) - 1):
-        if mesure_filtree[i] < mesure_filtree[i-1] and mesure_filtree[i] <= mesure_filtree[i+1]:
-            echantillons_min.append(i)
-    return echantillons_min
+    indices = []
+    debut = 0
+    n = len(mesure_filtree)
+    while debut < n:
+        fin = debut
+        while fin + 1 < n and mesure_filtree[fin + 1] == mesure_filtree[debut]:
+            fin += 1
+        if debut > 0 and fin + 1 < n:
+            niveau = mesure_filtree[debut]
+            if niveau < mesure_filtree[debut - 1] and niveau < mesure_filtree[fin + 1]:
+                indices.append((debut + fin) // 2)
+        debut = fin + 1
+    return indices
 ```
 
-L'inégalité stricte d'un côté et large de l'autre évite de compter deux fois un palier.
+On compare chaque plateau à ses deux voisins extérieurs et on retient son indice central, arrondi vers le bas en cas de longueur paire. Un plateau en bord de signal a un seul voisin et ne permet pas de conclure. Ainsi `[4, 3, 3, 2]` ne donne aucun minimum intérieur, alors que `[4, 2, 2, 2, 5]` donne l’indice 2. Un minimum isolé est un plateau de longueur 1.
 
 ### Question 8
 
@@ -1079,9 +1095,11 @@ Au freinage, le frottement aide et $|C_m|\approx45$ mN·m : la phase d'accélér
 
 $$\omega_m=\frac{2\pi\times0{,}7}{k_rp_{vis}}\approx1649\ \text{rad·s}^{-1}$$
 
-soit **15 750 tr·min⁻¹**. Le 3056 ne tourne qu'à 8 800 tr·min⁻¹ à vide. Sous le couple requis, il tourne à environ
+soit **15 750 tr·min⁻¹**. Le 3056 ne tourne qu'à 8 800 tr·min⁻¹ à vide. À vitesse constante, le terme d’inertie de Q56 s’annule. Le couple de frottement ramené au moteur vaut $10\times(1/3)\times0{,}008/(2\pi)\simeq4{,}24$ mN·m. Au point de fonctionnement correspondant, la pente de catalogue donne
 
-$$8800-87\times54\approx4100\ \text{tr·min}^{-1}$$
+$$n\simeq8800-87\times4{,}24\simeq8430\ \text{tr·min}^{-1}.$$
+
+Les 54 mN·m de Q57 sont nécessaires pendant l’accélération. Même à vide, la vitesse du moteur reste inférieure aux 15 750 tr·min⁻¹ demandés.
 
 **Conclusion.** Le 3056 012 B est le seul moteur possible en couple, mais il ne peut pas suivre le palier de vitesse. **La cadence de la figure 31 n'est pas tenue** (exigence 1.3.1 non validée) avec $k_r=1/3$ et $p_{vis}=8$ mm, et aucun autre moteur proposé ne convient. Il faut revoir la transmission (un pas plus grand, par exemple) ou le profil de vitesse.
 

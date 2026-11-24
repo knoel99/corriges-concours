@@ -34,5 +34,64 @@
       "question": "Q42",
       "legende": "Phase de la FTBO pour T > τ, T = τ et T < τ : elle ne coupe jamais −180° et ne reste au-dessus que si T > τ"
     }
-  ]
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "date": "2026-11-06T23:30:00",
+      "modifications": true,
+      "perimetre": "Rédaction des deux corrigés.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Aération des deux éditions. La métadonnée d’origine ne déclare aucune correction de fond.",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 58 questions, des annexes et du document réponse officiels de l’épreuve TSI7SI. Vérification des minima sur plateaux, de l’intégration des vitesses et des critères de couple et de vitesse du choix du moteur. La rubrique officielle 2026 ne relie pas de rapport écrit de SI à la date de relecture.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "revision": {
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "date": "2026-11-24",
+    "verification": "Relecture des 58 questions, des annexes et du document réponse officiels de l’épreuve TSI7SI. Vérification des minima sur plateaux, de l’intégration des vitesses et des critères de couple et de vitesse du choix du moteur. La rubrique officielle 2026 ne relie pas de rapport écrit de SI à la date de relecture."
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI7SI_SUJET.pdf",
+    "document_reponse": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI7SI_DR.pdf?download=true"
+  }
 }
