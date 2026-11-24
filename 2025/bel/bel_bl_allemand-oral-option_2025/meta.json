@@ -1,0 +1,45 @@
+{
+  "slug": "bel_bl_allemand-oral-option_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Allemand (oral, option)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "intitule": "Allemand (oral, option)",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_allemand_oral_option.pdf",
+    "sujet_sha256": "2607c8d832c7e1e06592afe43341471a4fe96cfaf0ac08f6c166c5fcba7e7a09",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_oral_allemandl_option.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Explication",
+      "legende": "Wessen Geschichte wird erzählt?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication historique complète du sujet de Dresden, cinq réponses aux questions consignées par le jury, guidage et schéma."
+    }
+  ]
+}
