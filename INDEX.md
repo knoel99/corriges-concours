@@ -145,6 +145,7 @@
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (thème Lyon) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (version et thème Ulm) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
