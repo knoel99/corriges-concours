@@ -1,0 +1,75 @@
+{
+  "slug": "ens-rennes_d-e_droit-commercial_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit commercial",
+    "annee": 2026
+  },
+  "intitule": "Apport en jouissance d’un fonds de commerce et demande de restitution",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuves-a-options-d-e-2026_1790867571556-pdf#page=2",
+    "sujet_sha256": "a70d81b253dc60f0d4542adb2e1ada1b9f8ed93c6be71c298019f4af69cdca9a",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-option-droit-commercial-d-e-2026_1793640829288-pdf",
+    "rapport_sha256": "3c38502bd641cc2435eb64c643e2171f52206010baa7aad9892ccbecdec3b2f6",
+    "references": [
+      "https://www.legifrance.gouv.fr/juri/id/JURITEXT000007027659"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-conventions.svg",
+      "question": "Composition",
+      "legende": "Les deux transmissions de jouissance"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture des quatre pages sur l’apport, la location-gérance, la garantie de l’apporteur et les limites des interprétations proposées."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification visuelle de la page 2 et de la note, confrontation à la décision officielle, au visa et au renvoi à Caen."
+    }
+  ]
+}
