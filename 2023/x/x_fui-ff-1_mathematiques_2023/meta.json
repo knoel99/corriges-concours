@@ -1,0 +1,41 @@
+{
+  "slug": "x_fui-ff-1_mathematiques_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 1",
+    "matiere": "Mathématiques",
+    "annee": 2023
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20DE%20MATHEMATIQUES.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "bdf4e840b6ac15611ded4b27cc8f3a65fae544183a0f22afdcc809b139202499"
+  },
+  "figures": [
+    {
+      "fichier": "figures/4c-norme-oblique.svg",
+      "question": "4c",
+      "legende": "Sur la tranche réelle de la boule unité de la norme oblique, l’image par D sort de la boule alors que le rayon spectral vaut un demi."
+    },
+    {
+      "fichier": "figures/15-chemins.svg",
+      "question": "15",
+      "legende": "Dans ce cycle à trois sommets, chaque arrivée est accessible en zéro, un ou deux pas. Cela suffit à rendre toutes les entrées de (I + A)² positives."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 27 questions et sous-questions à partir du PDF officiel. Vérification visuelle des formulations de 4c et 11–13. Contre-exemple pour une norme arbitraire, preuve en norme auxiliaire, approximation strictement positive, théorème de Frobenius et figure de chemins. Aucun rapport individuel indiqué dans le registre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

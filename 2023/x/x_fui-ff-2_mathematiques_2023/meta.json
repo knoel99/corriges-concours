@@ -1,0 +1,41 @@
+{
+  "slug": "x_fui-ff-2_mathematiques_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 2",
+    "matiere": "Mathématiques",
+    "annee": 2023
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20MATHEMATIQUES.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "a654f08102c5a57f531068313decf453050e768a48998feb0042747d611a3eda"
+  },
+  "figures": [
+    {
+      "fichier": "figures/6-bosse.svg",
+      "question": "Problème, question 6",
+      "legende": "La fonction exp(−1/(1−x²)²) sur l’intervalle ouvert se raccorde par zéro aux extrémités avec toutes ses dérivées nulles."
+    },
+    {
+      "fichier": "figures/19-moyennes.svg",
+      "question": "Problème, question 19",
+      "legende": "Les moyennes successives lissent le profil initial et élargissent le support, tout en conservant l’aire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 réponses et indications de l’exercice et du problème à partir du PDF officiel. Formule du déterminant circulant, raccord plat, croissance des dérivées, lissage par moyennes, passage aux limites et conservation de la masse. Deux figures originales. Aucun rapport individuel indiqué dans le registre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
