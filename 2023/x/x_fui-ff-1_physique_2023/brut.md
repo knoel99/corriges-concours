@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Formation francophone, session 1 (automne), trois heures sans calculatrice.
 
 ## Exercice 1 — Ballons chargés
@@ -79,6 +81,10 @@ $$B_z(z)=\frac{\mu_0 I R^2}{2}\left(\frac1{[R^2+(z-d/2)^2]^{3/2}}+\frac1{[R^2+(z
 
 Pour $f(u)=(R^2+u^2)^{-3/2}$, $f''(u)=3(4u^2-R^2)/(R^2+u^2)^{7/2}$. La symétrie garantit $B_z'(0)=0$, et $B_z''(0)$ est proportionnel à $d^2-R^2$. Pour **$d=R$**, le premier écart au centre est quartique en $z$. La valeur centrale est $B_z(0)=(4/5)^{3/2}\mu_0 I/R$.
 
+Le premier écart au champ central peut être chiffré. Posons $u=z/R$. À $d=R$ le rapport $B_z(z)/B_z(0)$ est la demi-somme de $[1+4(u^2+u)/5]^{-3/2}$ et de $[1+4(u^2-u)/5]^{-3/2}$. Le terme en $u^2$ s’annule. Au premier ordre non nul,
+$$\frac{B_z(z)}{B_z(0)}=1-\frac{144}{125}u^4+O(u^6).$$
+À $z=R/5$, la diminution relative est ainsi estimée à $0{,}184\,\%$, contre $0{,}176\,\%$ avec la formule exacte de la question 1.
+
 ![Figure 3 — La courbe pour d = R présente un sommet aplati au centre.](figures/uniformite-helmholtz.svg)
 
 ### Question 3
@@ -139,3 +145,5 @@ $$C=\frac{\mu_0m}{p}\left(\frac1R-\frac{R^2}{(R^2+L^2)^{3/2}}\right).$$
 Le pas est la distance entre deux tours successifs (notée $s$ sur le dessin du train). Pour des moments de normes distinctes, on remplace $m$ par $(|m_1|+|m_2|)/2$.
 
 ![Figure 4 — Traits verticaux aux centres des deux aimants. Le moment et le gradient changent de signe ensemble.](figures/champ-et-gradient-du-train.svg)
+
+Le coefficient du train s’écrit $C=(\mu_0m/pR)[1-(1+L^2/R^2)^{-3/2}]$. Pour $L\ll R$, les gradients aux deux bords sont peu marqués et $C\simeq3\mu_0mL^2/(2pR^3)$. Pour $L\gg R$, chaque extrémité se comporte comme celle d’un solénoïde semi-infini et $C$ tend vers $\mu_0m/(pR)$.

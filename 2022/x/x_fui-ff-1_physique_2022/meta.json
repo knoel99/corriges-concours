@@ -15,7 +15,8 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20DE%20PHYSIQUE.pdf",
-    "rapport_jury": null
+    "rapport_jury": null,
+    "sujet_sha256": "5786f6bafd2fe94b7a8fd34732515a229e324e94fe9ffebe8a5f97b1978ac4b3"
   },
   "revision": {
     "date": "2026-11-24",
@@ -92,6 +93,18 @@
       "modifications": null,
       "perimetre": "Lecture du scan avec contre-vérification indépendante des sept ordres propagatifs, des longueurs de décroissance des ordres −6 et +2 et de l’application numérique de la couche antireflet. Les deux unités mm (imprimée) et µm (compatible avec une couche quart d’onde visible) sont calculées séparément.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Révision des deux éditions à partir du fac-similé officiel. 42 rubriques de diffraction, de lame mince et de propagation acoustique. Vérification des limites de la couche antireflet et de l’adaptation par changement de section.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
