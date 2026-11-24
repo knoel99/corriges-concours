@@ -1,0 +1,45 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_francais_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Français",
+    "annee": 2024
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI-PC%20SUJET%20FRANCAIS%20(XEULSR).pdf",
+    "sujet_sha256": "738d10fc059ee6da7630c71b0c6e1c2d2a0bb8c6e164117df55bceafee2f2b15",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP%2C%20MPI%2C%20PC%20RAPPORT%20ECRIT%20DE%20FRANCAIS%20(XEULSR).pdf",
+    "rapport_sha256": "5d4d0b34d36152be831595b690cadb1bd2e80b84ee1858faff5b5f2bbd8c4b66",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/2024_psi_francais_xusr.pdf",
+    "sujet_psi_sha256": "67d3dbad90d9a1587ed5afdba5063bb9fc462ee4bd433fdb5286bdc96bba77ed"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "Comment reconnaître un usage moral de la persuasion ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Dissertation sur Montaigne avec les deux essais de Hannah Arendt, Lorenzaccio de Musset et Les Liaisons dangereuses de Laclos, avec préparation guidée et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
