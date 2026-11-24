@@ -24,7 +24,16 @@ PHASES = {
     "relecture_corrige": "Révision",
     "revision": "Révision",
 }
-BANQUES = {"x", "x-ens", "ens", "ens-de-lyon", "ens-rennes", "bel"}
+BANQUES = {
+    "x",
+    "x-ens",
+    "ens",
+    "ens-de-lyon",
+    "ens-rennes",
+    "ens-paris-saclay",
+    "ens-psl",
+    "bel",
+}
 SLUG = re.compile(r"[a-z0-9-]+_[a-z0-9-]+_[a-z0-9-]+_\d{4}")
 LIGNE_SIGNATURE = re.compile(r"^\*\*[^*\n]+\*\* · .+$")
 
@@ -108,7 +117,20 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
 def fiche_site(slug: str) -> str:
     banque, voie, epreuve = slug.split("_", 2)
     filieres = voie.split("-")
-    if len(filieres) > 1 and set(filieres) <= {"mp", "mpi", "pc", "psi"}:
+    if len(filieres) > 1 and set(filieres) <= {
+        "mp",
+        "mpi",
+        "pc",
+        "psi",
+        "pt",
+        "tsi",
+        "tpc",
+        "tb",
+        "bcpst",
+        "ats",
+        "ect",
+        "ecg",
+    }:
         voie = filieres[0]
     return f"{banque}_{voie}_{epreuve}"
 

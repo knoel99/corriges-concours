@@ -54,3 +54,13 @@ def test_pas_de_relecture_attribuee_par_inference(modification):
     assert not couverture.signatures_qualifiantes(
         {"contributions": [entree | modification]}
     )
+
+
+def test_lien_vers_fiche_simple_ou_filiere_administrative():
+    assert (
+        couverture.fiche_site("ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026")
+        == "ccinp_mp_anglais_2026"
+    )
+    assert (
+        couverture.fiche_site("x_fui-ff-1_physique_2021") == "x_fui-ff-1_physique_2021"
+    )
