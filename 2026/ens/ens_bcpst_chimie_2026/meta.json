@@ -1,0 +1,93 @@
+{
+  "slug": "ens_bcpst_chimie_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "BCPST",
+    "matiere": "Chimie",
+    "annee": 2026
+  },
+  "questions": 53,
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/261240_bcpst_chimie_2026.pdf",
+    "article": "https://doi.org/10.1021/jacs.3c03366"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q02-jonction-cip.svg",
+      "question": "Q2",
+      "legende": "Au carbone étoilé, l’hydrogène est devant le plan. Le classement des trois voisins carbonés conduit à la configuration R."
+    },
+    {
+      "fichier": "figures/q04-deplacements-appel.svg",
+      "question": "Q4",
+      "legende": "Dans l’iodation d’Appel, les flèches courbes indiquent les mouvements de doublets. Im représente la base imidazole."
+    },
+    {
+      "fichier": "figures/q06-aires-chromatographiques.svg",
+      "question": "Q6",
+      "legende": "Aires des deux signaux d’acétate normalisées pour chaque injection. L’excès en 5-R mesure l’enrichissement énantiomérique."
+    },
+    {
+      "fichier": "figures/q11-addition-conjuguee.svg",
+      "question": "Q11",
+      "legende": "La liaison formée avec le dithiane est en β de la cétone. La charge de l’énolate se délocalise entre oxygène et carbone α."
+    },
+    {
+      "fichier": "figures/q15-fermeture-cycle-neuf.svg",
+      "question": "Q15",
+      "legende": "Connectivité du bicycle 11. L’alkylation relie le carbone entre cétone et sulfone au méthylène allylique qui portait le brome."
+    },
+    {
+      "fichier": "figures/o2-diagramme-orbitales.svg",
+      "question": "Q20",
+      "legende": "Occupation des orbitales liantes et antiliantes du dioxygène. L’échelle énergétique est qualitative."
+    },
+    {
+      "fichier": "figures/o2-solubilite-temperature.svg",
+      "question": "Q23",
+      "legende": "Concentration à saturation du dioxygène en fonction de la température, d’après la figure 11 du sujet."
+    },
+    {
+      "fichier": "figures/chrome-domaines-potentiel-ph.svg",
+      "question": "Q28",
+      "legende": "Identification des sept domaines du chrome, pour une concentration totale de 0,01 mol/L, d’après la figure 12."
+    },
+    {
+      "fichier": "figures/ferroine-chelation.svg",
+      "question": "Q31",
+      "legende": "Les trois phénanthrolines bidentates dans l’environnement octaédrique de Fe(II)."
+    },
+    {
+      "fichier": "figures/dco-blanc-et-echantillon.svg",
+      "question": "Q34",
+      "legende": "Bilan qualitatif en équivalents d’électrons. La différence des volumes de retour donne la consommation propre à l’échantillon."
+    },
+    {
+      "fichier": "figures/q37-dilutions-dbo.svg",
+      "question": "Q37",
+      "legende": "Les prélèvements de 30 et 150 mL laissent une réserve mesurable de dioxygène et donnent la même demande après correction de la dilution."
+    },
+    {
+      "fichier": "figures/q40-profil-clark.svg",
+      "question": "Q40",
+      "legende": "Dans le liquide entre platine et membrane, la concentration croît linéairement et le dioxygène diffuse vers le platine."
+    },
+    {
+      "fichier": "figures/q43-seuil-diametre.svg",
+      "question": "Q43",
+      "legende": "Lectures approchées de la figure 16. La quasi-constance de I/d² aux grands diamètres indique la plage compatible avec le modèle plan."
+    },
+    {
+      "fichier": "figures/q45-sensibilite-temperature.svg",
+      "question": "Q45",
+      "legende": "La droite en échelle logarithmique permet de lire le rapport de deux sensibilités et de soustraire la contribution de diffusion."
+    },
+    {
+      "fichier": "figures/q49-ordre-peroxyde.svg",
+      "question": "Q49",
+      "legende": "Pour les essais 7, 6 et 5 réalisés avec la même quantité d’argent, la pente logarithmique est voisine de un."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

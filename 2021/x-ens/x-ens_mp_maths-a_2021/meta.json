@@ -1,0 +1,53 @@
+{
+  "slug": "x-ens_mp_maths-a_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2021
+  },
+  "questions": 44,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_MathA.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_MP_rap_eMathA.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/valuation-factorielle.svg",
+      "question": "Q P.3b",
+      "legende": "Dans 18 !, six facteurs multiples de 3 et deux multiples de 9 donnent une valuation en 3 égale à huit."
+    },
+    {
+      "fichier": "figures/spectres-en-dimension-deux.svg",
+      "question": "Q I.4",
+      "legende": "Les deux racines conjuguées non réelles sont à l’abscisse moitié de la trace. Leurs ordres valent trois, quatre ou six."
+    },
+    {
+      "fichier": "figures/spectre-matrice-divisee.svg",
+      "question": "Q II.1a",
+      "legende": "Les valeurs propres de la matrice divisée sont sur le petit cercle de diamètre deux tiers. Leur module est strictement inférieur à un."
+    },
+    {
+      "fichier": "figures/sommes-des-racines.svg",
+      "question": "Q III.8b",
+      "legende": "Pour p = 3 et r = 2, les six contributions s’annulent quand la racine est d’ordre neuf. Quand elle est d’ordre trois, elles donnent moins trois."
+    },
+    {
+      "fichier": "figures/traces-admissibles.svg",
+      "question": "Q III.10",
+      "legende": "Pour n = 7 et p = 3, le raisonnement impose que la trace appartienne à une progression finie de quatre entiers."
+    },
+    {
+      "fichier": "figures/majoration-des-cardinaux.svg",
+      "question": "Q IV.6b",
+      "legende": "Parmi les premiers, la valeur maximale de la majoration logarithmique est atteinte au premier deux."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Contrôle des 44 réponses face au sujet et au rapport écrit de la banque des ENS. Vérifications de la réduction modulo deux, des sommes de racines de l’unité, de la divisibilité finale et de la borne uniforme."
+  }
+}

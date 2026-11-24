@@ -1,0 +1,57 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2026
+  },
+  "questions": 15,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA à partir des documents officiels de la session 2026.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_geologie.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_eST.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arrivees-sta1.svg",
+      "question": "1",
+      "legende": "Temps depuis la rupture à la station STA1. Les pointés de P et de PmP sont imprimés sur le sismogramme. Le début du train final est estimé."
+    },
+    {
+      "fichier": "figures/regression-vitesses.svg",
+      "question": "3",
+      "legende": "Les huit temps de parcours sont ajustés en fonction de la distance épicentrale. La pente de la droite correspond à une vitesse proche de 6,1 km/s."
+    },
+    {
+      "fichier": "figures/source-image.svg",
+      "question": "6",
+      "legende": "La source image est le symétrique du foyer par rapport au Moho. Le prolongement du second segment de l’onde réfléchie passe par cette source. Les échelles des deux axes diffèrent."
+    },
+    {
+      "fichier": "figures/colonnes-airy.svg",
+      "question": "10",
+      "legende": "La croûte plus épaisse du plateau s’étend au-dessus de la surface de référence et sous le Moho de référence. Les deux colonnes exercent la même pression au niveau de compensation."
+    },
+    {
+      "fichier": "figures/coupe-tomographique.svg",
+      "question": "11",
+      "legende": "Schéma d’interprétation de la coupe ouest–est. Les anomalies lentes sont crustales et le corps rapide H2 se situe plus bas. Le trait plongeant situe la plaque subduite."
+    },
+    {
+      "fichier": "figures/rheologie-crustale.svg",
+      "question": "12",
+      "legende": "Schéma qualitatif de la concurrence entre rupture fragile et fluage ductile. À chaque profondeur, le comportement qui exige la plus faible contrainte gouverne la résistance."
+    },
+    {
+      "fichier": "figures/ombre-pluviometrique.svg",
+      "question": "15",
+      "legende": "Aux latitudes tropicales, l’humidité arrive principalement de l’est. Le versant pacifique abrité combine ombre pluviométrique et influence du courant marin froid."
+    }
+  ]
+}
