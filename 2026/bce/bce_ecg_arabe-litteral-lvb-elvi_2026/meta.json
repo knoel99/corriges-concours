@@ -1,0 +1,40 @@
+{
+  "slug": "bce_ecg_arabe-litteral-lvb-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Arabe littéral LVB (ELVi)",
+    "annee": 2026
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20AR%20-%20LANGUE_VIVANTE_B_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=2",
+    "sujet_sha256": "030bebbf0b7c6cf80e2d621a3d70fa9bbb4babbc1006d90e67823ca6f5e5bcfc"
+  },
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "precision": "Résumé comparatif sur les deux articles algérien et marocain, essai mobilisant les quatre documents et les aflaj omanais, traduction des trois paragraphes délimités en page 6. Lecture de l’infographie saoudienne en page 7."
+  },
+  "figures": [
+    {
+      "fichier": "figures/eau-a-deux-echelles.svg",
+      "question": "Essai",
+      "legende": "Du champ au bassin, deux échelles pour juger du gain d’eau. Exemple hypothétique construit pour l’essai."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Résumé comparatif sur les deux articles algérien et marocain, essai mobilisant les quatre documents et les aflaj omanais, traduction des trois paragraphes délimités en page 6. Lecture de l’infographie saoudienne en page 7."
+    }
+  ]
+}
