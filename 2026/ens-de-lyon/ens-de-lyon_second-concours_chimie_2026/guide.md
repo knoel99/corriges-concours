@@ -1,12 +1,16 @@
-# ENS de Lyon — Second concours · Chimie 2026 · Corrigé guidé
+# ENS de Lyon — Second concours · Chimie 2026 · Corrigé partiel guidé
 
 *Corrigé rédigé par IA, non officiel.*
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Cette épreuve de trois heures étudie l’hydrogène comme combustible, vecteur d’énergie et réactif. La dernière partie relie résolution enzymatique, lecture d’orbitales frontières et transformations d’intermédiaires d’un alcaloïde à squelette arcutane.
+
+**Périmètre du corrigé.** Les questions 1 à 54, 56 et 57 sont traitées dans les deux éditions, soit 56 questions sur 57. La préparation du triflate de méthyle demandée en question 55 est hors périmètre.
 
 Les pressions standards valent 1 bar. Les renvois aux tableaux et aux numéros de composés reprennent ceux du sujet. La molécule appelée « arcutidine » dans son titre correspond à l’arcutinidine de la publication originale.
 
@@ -30,7 +34,7 @@ La combustion complète s’écrit $\mathrm{H_2(g)+\tfrac12 O_2(g)\longrightarro
 
 #### Solution
 
-Le combustible ne contient pas de carbone et sa combustion n’émet directement que de l’eau. Le qualificatif « décarbonée » porte ici sur l’usage. Le bilan de la filière dépend de la production de $\mathrm H_2$, notamment de la source d’électricité ou du recours au méthane pour le reformage.
+Le combustible ne contient pas de carbone et sa combustion n’émet directement que de l’eau. Le qualificatif « décarbonée » porte ici sur l’usage. Le dihydrogène est un vecteur d’énergie. Pour le méthane avec conversion complète du CO, le bilan global contient une mole de dioxyde de carbone par mole de méthane consommée (Q15). Le bilan de la filière dépend de la production de $\mathrm H_2$, notamment de la source d’électricité ou du recours au méthane pour le reformage.
 
 ### Question 3
 
@@ -51,7 +55,7 @@ Prenons des gaz parfaits purs en proportions stœchiométriques à $T_0=298\,\ma
 
 #### Solution
 
-Le calcul place le gaz très au-dessus du domaine de l’incandescence visible. Il explique que le bloc puisse être porté au blanc. En revanche, $T_f$ dépasse largement $T_{\rm fus}(\mathrm{CaO})=2845\,\mathrm K$. Cette température de gaz simplifiée ne peut être identifiée à la température stationnaire d’un bloc restant solide. Le bloc cède de l’énergie par rayonnement et conduction.
+Le calcul place le gaz très au-dessus du domaine de l’incandescence visible. Il explique que le bloc puisse être porté au blanc. En revanche, $T_f$ dépasse largement $T_{\rm fus}(\mathrm{CaO})=2845\,\mathrm K$. Cette température de gaz simplifiée ne peut être identifiée à la température stationnaire d’un bloc restant solide. Le bloc cède de l’énergie par rayonnement et conduction. Son incandescence renseigne donc sur un transfert de chaleur et sa température d’équilibre propre, sans constituer une mesure de la température adiabatique de la flamme.
 
 ### Question 5
 
@@ -74,7 +78,7 @@ Le calcul place le gaz très au-dessus du domaine de l’incandescence visible. 
 
 Avec les données fournies, $-\Delta_rH^\circ\simeq241{,}8+40{,}7=282{,}5\,\mathrm{kJ\,mol^{-1}}$ pour l’eau liquide. Cela emploie la chaleur latente de l’annexe comme approximation à la température de référence. Pour $M(\mathrm H_2)\simeq2{,}0\,\mathrm{g\,mol^{-1}}$, le **PCS massique vaut $141\,\mathrm{MJ\,kg^{-1}}$**. La densité donnée, $0{,}09\times10^{-3}$ par rapport à l’eau, correspond à $\rho\simeq0{,}090\,\mathrm{kg\,m^{-3}}$, soit **$12{,}7\,\mathrm{MJ\,m^{-3}}$** ou $12{,}7\,\mathrm{kJ\,L^{-1}}$.
 
-La table 1 porte « kJ/kg » pour les nombres 45,9, 46,7 et 42,5. Les pouvoirs calorifiques usuels de ces combustibles imposent de lire **MJ/kg**. Avec cette correction, le diesel et l’essence donnent environ 38 et 35 MJ/L, le gaz naturel environ 34 MJ/m³ aux densités indiquées. L’hydrogène est très énergétique par unité de masse, mais son volume à faible pression est élevé pour une énergie donnée.
+La table 1 porte « kJ/kg » pour les nombres 45,9, 46,7 et 42,5. Les pouvoirs calorifiques usuels de ces combustibles imposent de lire **MJ/kg**. Avec cette correction, le diesel et l’essence donnent environ 38 et 35 MJ/L, le gaz naturel environ 34 MJ/m³ aux densités indiquées. Le dihydrogène fournit environ trois fois autant d’énergie que le diesel par kilogramme. Aux densités du tableau, un litre de diesel contient près de $38/0{,}0127\simeq 3{,}0\times10^3$ fois l’énergie d’un litre de dihydrogène. Cette comparaison volumique dépend de la pression du gaz.
 
 ## I.2 — Pile à combustible PEMFC
 
@@ -161,7 +165,9 @@ Une mole d’hydrogène fournit au maximum $W_{\rm el,max}=-\Delta_rG^\circ=2FE^
 
 #### Solution
 
-Le courant par cellule est $I=0{,}700\times258=180{,}6\,\mathrm A$. En une heure, la charge est $I\Delta t=6{,}50\times10^5\,\mathrm C$. Deux électrons sont transférés par molécule de $\mathrm H_2$, d’où $n_{\rm cellule}=I\Delta t/(2F)=3{,}37\,\mathrm{mol}$. Pour les 170 cellules, **$n_{\rm total}\simeq573\,\mathrm{mol}$**, soit environ **$1{,}15\,\mathrm{kg}$** en une heure, si le rendement faradique et l’utilisation du combustible sont unitaires. La tension de 650 mV renseigne sur l’énergie fournie, le bilan de matière dépend de la charge.
+Le courant par cellule est $I=0{,}700\times258=180{,}6\,\mathrm A$. En une heure, la charge est $I\Delta t=6{,}50\times10^5\,\mathrm C$. Deux électrons sont transférés par molécule de $\mathrm H_2$, d’où $n_{\rm cellule}=I\Delta t/(2F)=3{,}37\,\mathrm{mol}$. Pour les 170 cellules, **$n_{\rm total}\simeq573\,\mathrm{mol}$**, soit environ **$1{,}15\,\mathrm{kg}$** en une heure, si le rendement faradique et l’utilisation du combustible sont unitaires. Les cellules montées en série sont parcourues par le même courant, et chacune consomme $I/(2F)$ moles de dihydrogène par seconde. On peut vérifier le bilan électrique séparément : $170\times0{,}650\times180{,}6\simeq20\ \mathrm{kW}$, donc environ 20 kWh fournis pendant l’heure considérée.
+
+![Question 14 — Le même courant traverse les cellules en série. La quantité de combustible consommée s’additionne et les tensions s’additionnent.](figures/q14-cellules-en-serie.svg)
 
 ## II — Reformage du méthane
 
@@ -190,7 +196,7 @@ Le reformage primaire est $\mathrm{CH_4(g)+H_2O(g)\rightleftharpoons CO(g)+3H_2(
 
 $$\Delta_rG^\circ(T)=\Delta_rH^\circ(T_0)+\Delta C_p(T-T_0)-T\,[\Delta_rS^\circ(T_0)+\Delta C_p\ln(T/T_0)].$$
 
-Dans l’ordre de Q15, $\Delta_rH^\circ(T_0)$ vaut $+206{,}2$ et $-41{,}2\,\mathrm{kJ\,mol^{-1}}$, $\Delta C_p$ vaut $+46{,}38$ et $+3{,}21\,\mathrm{J\,mol^{-1}\,K^{-1}}$. Les entropies molaires standards tabulées à 298 K de $\mathrm{CH_4,H_2O(g),CO,H_2,CO_2}$ sont respectivement $186{,}25$, $188{,}84$, $197{,}66$, $130{,}68$ et $213{,}79\,\mathrm{J\,mol^{-1}\,K^{-1}}$. Elles donnent $\Delta_rS^\circ(T_0)=+214{,}6$ et $-42{,}0\,\mathrm{J\,mol^{-1}\,K^{-1}}$. En conservant les $C_p$ constants de l’annexe, **$\Delta_rG^\circ(T)\simeq-41{,}0$ et $+0{,}5\,\mathrm{kJ\,mol^{-1}}$**. À titre de contrôle, l’intégration des capacités calorifiques dépendant de $T$ par les coefficients de Shomate donne environ $-35{,}6$ et $-2{,}0\,\mathrm{kJ\,mol^{-1}}$. La seconde conversion est donc proche de l’équilibre standard à cette température et le signe du petit écart est sensible à l’approximation. [Thermochimie des espèces gazeuses, NIST Chemistry WebBook](https://webbook.nist.gov/chemistry/)
+Dans l’ordre de Q15, $\Delta_rH^\circ(T_0)$ vaut $+206{,}2$ et $-41{,}2\,\mathrm{kJ\,mol^{-1}}$, $\Delta C_p$ vaut $+46{,}38$ et $+3{,}21\,\mathrm{J\,mol^{-1}\,K^{-1}}$. Les entropies molaires standards tabulées à 298 K de $\mathrm{CH_4,H_2O(g),CO,H_2,CO_2}$ sont respectivement $186{,}25$, $188{,}84$, $197{,}66$, $130{,}68$ et $213{,}79\,\mathrm{J\,mol^{-1}\,K^{-1}}$. Elles donnent $\Delta_rS^\circ(T_0)=+214{,}6$ et $-42{,}0\,\mathrm{J\,mol^{-1}\,K^{-1}}$. En conservant les $C_p$ constants de l’annexe, **$\Delta_rG^\circ(T)\simeq-41{,}0$ et $+0{,}5\,\mathrm{kJ\,mol^{-1}}$**. À titre de contrôle, l’intégration des capacités calorifiques dépendant de $T$ par les coefficients de Shomate donne environ $-35{,}6$ et $-2{,}0\,\mathrm{kJ\,mol^{-1}}$. Ces deux évaluations donnent pour la seconde réaction une constante standard voisine de l’unité. Le sens d’évolution d’un mélange donné dépend de $\Delta_rG=\Delta_rG^\circ+RT\ln Q$ et de sa composition. Les deux signes obtenus pour la petite valeur standard illustrent la sensibilité à la variation de $C_p$ avec $T$. [Thermochimie des espèces gazeuses, NIST Chemistry WebBook](https://webbook.nist.gov/chemistry/)
 
 ![Figure 3 — Prédictions avec les capacités calorifiques constantes du sujet et les entropies standards complémentaires à 298 K.](figures/q16-temperature-reformage.svg)
 
@@ -421,7 +427,7 @@ Au carbone porteur de OH de la figure 3, OH est prioritaire, puis vient la branc
 
 #### Solution
 
-Le site actif de la lipase ne reconnaît pas de façon égale les deux énantiomères de l’alcool. L’acétate de vinyle lui permet de transférer l’acétyle préférentiellement à l’un d’eux. On sépare ensuite l’ester formé et l’alcool restant, de polarités différentes. Cet alcool est enrichi en l’énantiomère 1. Il s’agit d’un dédoublement cinétique. Le rendement théorique maximal en un énantiomère d’alcool non transformé est 50 % du racémique. Le rendement de 42 % et l’excès de 99,7 % décrivent deux propriétés différentes.
+Le site actif de la lipase ne reconnaît pas de façon égale les deux énantiomères de l’alcool. L’acétate de vinyle lui permet de transférer l’acétyle préférentiellement à l’un d’eux. On sépare ensuite l’ester formé et l’alcool restant, de polarités différentes. Cet alcool est enrichi en l’énantiomère 1. Il s’agit d’un dédoublement cinétique. Le rendement théorique maximal en un énantiomère d’alcool non transformé est 50 % du racémique. Un rendement isolé de 42 % représente environ $42/50=84\,\%$ du maximum théorique de récupération d’un seul énantiomère. L’excès énantiomérique de 99,7 % correspond à $(100+99{,}7)/2=99{,}85\,\%$ d’énantiomère majoritaire dans l’alcool isolé, à supposer qu’il ne contienne que les deux énantiomères.
 
 ![Figure 8 — L’acétylation sélective convertit une partie du racémique en ester, que l’on sépare de l’alcool restant.](figures/q34-dedoublement-cinetique.svg)
 
@@ -527,7 +533,7 @@ La figure 6 donne les lectures approchées suivantes, en $\mathrm{mmol\,L^{-1}}$
 | Propionate de vinyle (A) | 35 à 40 | 25 à 30 |
 | Butyrate de vinyle (B) | 14 à 16 | 11 à 13 |
 
-Le passage du propionate au butyrate diminue le $K_M$ apparent. Le sel le diminue aussi dans les deux cas. La demi-saturation est atteinte à plus faible concentration en substrat. Chaque courbe étant ramenée à son maximum, ces seules mesures ne permettent pas de comparer entre elles les vitesses maximales absolues.
+Le passage du propionate au butyrate diminue le $K_M$ apparent. Le sel le diminue aussi dans les deux cas. Le $K_M=(k_{-1}+k_2)/k_1$ combine dissociation et catalyse. Une baisse du $K_M$ ne se traduit directement en affinité accrue que si $k_2$ est négligeable devant $k_{-1}$ ou si l’on dispose de mesures cinétiques complémentaires. La demi-saturation est atteinte à plus faible concentration en substrat. Chaque courbe étant ramenée à son maximum, ces seules mesures ne permettent pas de comparer entre elles les vitesses maximales absolues.
 
 ### Question 44
 
@@ -598,7 +604,7 @@ La méthode de Hückel approxime les orbitales $\pi$ par des combinaisons linéa
 
 #### Solution
 
-Puisque $\beta<0$, l’écart HO(diène)–BV(diénophile) est $-0{,}92\beta=0{,}92|\beta|$. L’interaction inverse demande $1{,}42|\beta|$. Le mode à demande électronique normale domine. Dans la HO du diène, $|c_1|=0{,}58$ et $|c_4|=0{,}55$. Dans la BV du diénophile, $|c_4|=0{,}64$ (carbone β) et $|c_3|=0{,}18$ (carbone α du formyle). On privilégie les nouvelles liaisons **C1(diène)–C4(diénophile)** et **C4(diène)–C3(diénophile)**. Les signes respectifs sont compatibles pour les deux recouvrements simultanés. La liaison double restante est **C2(diène)=C3(diène)**. Les groupes formyle, cétal et OTBDPS restent présents. Le tracé de ces six atomes donné en figure définit la connectivité du cycloadduit à partir de 3 et 4. Une approche endo du carbonyle et la face la moins encombrée du diénophile chiral sont attendues sous contrôle cinétique. Les seuls coefficients de Hückel ne quantifient pas l’excès diastéréomérique.
+Puisque $\beta<0$, l’écart HO(diène)–BV(diénophile) est $-0{,}92\beta=0{,}92|\beta|$. L’interaction inverse demande $1{,}42|\beta|$. Le mode à demande électronique normale domine. Dans la HO du diène, $|c_1|=0{,}58$ et $|c_4|=0{,}55$. Dans la BV du diénophile, $|c_4|=0{,}64$ (carbone β) et $|c_3|=0{,}18$ (carbone α du formyle). On privilégie les nouvelles liaisons **C1(diène)–C4(diénophile)** et **C4(diène)–C3(diénophile)**. Les signes respectifs sont compatibles pour les deux recouvrements simultanés. La liaison double restante est **C2(diène)=C3(diène)**. Les groupes formyle, cétal et OTBDPS restent présents. Le tracé de ces six atomes donné en figure définit la connectivité du cycloadduit à partir de 3 et 4. Une approche endo du carbonyle et la face la moins encombrée du diénophile chiral sont attendues sous contrôle cinétique. Les seuls coefficients de Hückel ne quantifient pas l’excès diastéréomérique. Pour comparer les orientations à même écart énergétique, les produits d’amplitudes terminales valent $0{,}58\times0{,}64+0{,}55\times0{,}18\simeq0{,}470$ dans le premier appariement et $0{,}58\times0{,}18+0{,}55\times0{,}64\simeq0{,}456$ dans l’autre. La préférence issue de ce seul critère est modeste.
 
 ![Figure 10 — Les numéros sont ceux du tableau 3 de l’énoncé. Les liaisons D1–A4 et D4–A3 referment le cycle dont D2=D3 est la double liaison interne.](figures/q49-regiochemie-cycloaddition.svg)
 
@@ -655,15 +661,6 @@ L’alcool secondaire de 7 forme d’abord un chlorosulfite avec $\mathrm{SOCl_2
 Le squelette représenté porte **huit centres stéréogènes tétraédriques** : le carbone α de la lactone marqué d’une étoile, le carbone portant OTMS, le carbone portant le H en coin plein au sommet, celui engagé dans la liaison C–O de la lactone, celui portant le méthyle en coin plein, et trois autres jonctions polycycliques dont les chemins du squelette sont différents. Le décompte combinatoire des configurations locales donne $2^8=256$ configurations formelles, sans symétrie interne qui identifierait des formes méso. Les cycles pontés peuvent interdire certaines configurations par contrainte géométrique. **256 est la borne de comptage d’un exercice de stéréochimie**, avant examen de leur réalisabilité.
 
 ![Figure 13 — Les huit pastilles repèrent les centres stéréogènes de 9. Les numéros constituent des repères propres à ce dessin de connectivité.](figures/q54-carbones-stereogenes.svg)
-
-### Question 55
-
-> [!INDICATION]
-> Comparer MeOTf à un ester sulfonique. Identifier sur quel atome d’un anhydride sulfonique un alcool peut attaquer.
-
-#### Solution
-
-MeOTf est le trifluorométhanesulfonate de méthyle, $\mathrm{CH_3O{-}SO_2CF_3}$. Une voie formelle est le transfert de triflyle de l’anhydride triflique $\mathrm{Tf_2O}$ au méthanol en présence d’une base peu nucléophile. Le doublet de O du méthanol attaque le soufre électrophile d’un groupe triflyle, la liaison avec l’oxygène de l’anhydride se rompt avec départ de triflate, puis une base déprotone l’oxygène du produit. Le bilan met en jeu $\mathrm{MeOH+Tf_2O\to MeOTf+TfOH}$, l’acide étant capté par la base. La charge de l’anion triflate est délocalisée et le groupe $\mathrm{CF_3}$ est très attracteur.
 
 ### Question 56
 

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 218" width="620" height="218" role="img" aria-labelledby="t d">
+<title id="t">Bilan d’une pile de 170 cellules</title><desc id="d">Les cellules traversées par le même courant consomment chacune une quantité de combustible déterminée par la loi de Faraday. Le bilan total est 170 fois le bilan individuel.</desc>
+<rect width="620" height="218" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#203645">
+<text x="22" y="30" font-size="22">170 cellules en série</text>
+<text x="22" y="55" font-size="15">Le courant mesuré est le même dans chaque cellule.</text>
+<g fill="#eef5f5" stroke="#276560" stroke-width="2"><rect x="34" y="80" width="133" height="47" rx="5"/><rect x="220" y="80" width="133" height="47" rx="5"/><rect x="445" y="80" width="141" height="47" rx="5"/></g>
+<g fill="none" stroke="#276560" stroke-width="2"><path d="M4 103h30 M167 103h53 M353 103h26 M414 103h31 M586 103h29"/></g>
+<g text-anchor="middle" font-size="17"><text x="100" y="110">Cellule 1</text><text x="286" y="110">Cellule 2</text><text x="395" y="109">…</text><text x="516" y="110">Cellule 170</text></g>
+<g text-anchor="middle" font-size="14" fill="#276560"><text x="100" y="152">3,37 mol de H₂</text><text x="286" y="152">3,37 mol de H₂</text><text x="516" y="152">3,37 mol de H₂</text></g>
+<path d="M27 169H593" stroke="#ccd8dc"/><text x="27" y="193" font-size="16">En une heure, l’ensemble consomme environ 573 mol de H₂.</text>
+</g></svg>
