@@ -10,7 +10,8 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/23_mp_sujet_MathC.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/23_mp_rap_emathc.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/23_mp_rap_emathc.pdf",
+    "sha256_sujet": "ba1bce4bb8fad9d3969df84d1b667b120df312e7993797fa4ebfa0b544be49dc"
   },
   "date_revision": "2026-11-24",
   "figures": [
@@ -76,7 +77,20 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "II.5b à II.6b et IV.3a à IV.3c.",
-      "agent": "principal"
+      "agent": "principal",
+      "tour": 1
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 31 solutions et indications avec les quatre parties du sujet et le rapport. Contrôle des deux erreurs d’énoncé, contre-exemple au passage de II.6a à II.6b même pour un rationnel présent, estimation uniforme du défaut intégral du schéma d’Euler en III.5, vérification des deux interprétations des trajectoires en IV.3. Sept figures contrôlées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

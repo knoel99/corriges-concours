@@ -10,7 +10,8 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/09/23_mp_sujet_MathD.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/23_mp_rap_emathd.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/23_mp_rap_emathd.pdf",
+    "sha256_sujet": "41a8bd100675599545546f898ad0d83c637fc221233557b65dfec022082dea5c"
   },
   "date_revision": "2026-11-24",
   "figures": [
@@ -76,7 +77,20 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "IV.2, V.2a et V.3a.",
-      "agent": "principal"
+      "agent": "principal",
+      "tour": 1
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 37 questions et sous-questions des deux éditions contre les six pages imprimées du sujet scanné et le rapport. Vérification des arguments sur la génération finie, la descente des identités, des formats des matrices et des rangs. Contrôles des cas extrêmes dans Cauchy–Binet en IV.2 et calcul explicite des indices de la forme trace en V.3a. Figures existantes contrôlées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
