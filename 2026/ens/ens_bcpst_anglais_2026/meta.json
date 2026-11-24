@@ -48,10 +48,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -75,6 +74,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante sur les trois documents et la consigne. Les dérogations en Oregon et Californie, la chronologie, les deux longueurs et les articulations de la version ont été vérifiées.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux versions aux pages imprimées 5–8. Portée du calendrier fédéral et de la carte des dispenses, comparaison sur les mêmes mois, attribution de la comparaison internationale dans la version et vérification des deux décomptes.",
       "fournisseur": "codex"
     }
   ]

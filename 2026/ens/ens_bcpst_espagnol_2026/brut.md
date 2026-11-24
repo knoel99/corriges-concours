@@ -4,15 +4,19 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **El cierre de Almaraz**
 
 ## I · Synthèse des trois documents
 
 El cierre de Almaraz enfrenta a quienes deciden sobre el sistema eléctrico con quienes dependen de una central concreta. En Campo Arañuelo, la instalación sostiene empleos directos y contratos que benefician también al comercio y a los municipios próximos. Siete de los diez pueblos extremeños de mayor renta se encuentran en su entorno. Para los vecinos entrevistados, la pérdida de actividad amenaza la posibilidad de seguir viviendo allí. Esa concentración de ingresos explica tanto la defensa de la central como la vulnerabilidad de la comarca (doc. 1).
 
-Las organizaciones ecologistas cuestionan que prolongar la explotación sea la única manera de garantizar suministro y empleo. Destacan la expansión de las renovables y reclaman inversiones en almacenamiento, descontaminación y nuevas actividades. También invocan la antigüedad de los reactores y los incidentes notificados. Sus propuestas obligan a distinguir entre disponer de capacidad renovable en la región y ofrecer un puesto accesible a un contratista de Almaraz en el momento del cierre (doc. 2).
+Las organizaciones ecologistas cuestionan que prolongar la explotación sea la única manera de garantizar suministro y empleo. Aducen que el almacenamiento disponible ya puede estabilizar el sistema y que desmantelar y descontaminar las instalaciones proporcionaría empleo durante décadas. También invocan la antigüedad de los reactores y los incidentes notificados. Sus propuestas obligan a distinguir entre disponer de capacidad renovable en la región y ofrecer un puesto accesible a un contratista de Almaraz en el momento del cierre (doc. 2).
 
-El Gobierno, por tanto, debe responder a varios calendarios. El horizonte de clausura previsto para cada reactor convive con la urgencia de las reivindicaciones locales y las elecciones autonómicas. La viñeta convierte estas últimas en un monstruo que persigue a un político cargado con una bombona de oxígeno. La posible prórroga aparece como un alivio político inmediato, sin que el dibujo demuestre cuál sería la mejor decisión energética (doc. 3). Resolver la contradicción exige precisar quién financiará las alternativas, cuándo estarán disponibles y qué riesgos asumiría cada actor mientras tanto.
+Los dos reactores debían cerrar en 2027 y 2028. Sus propietarios piden seguir hasta 2030. El Gobierno se muestra dispuesto a estudiar una prórroga sin concesiones fiscales, mientras que la presidenta autonómica promete rebajar la ecotasa (doc. 1). La viñeta convierte estas últimas en un monstruo que persigue a un político cargado con una bombona de oxígeno. La posible prórroga aparece como un alivio político inmediato, sin que el dibujo demuestre cuál sería la mejor decisión energética (doc. 3). Resolver la contradicción exige precisar quién financiará las alternativas, cuándo estarán disponibles y qué riesgos asumiría cada actor mientras tanto.
+
+![Trois positions du dossier à confronter dans la synthèse.](figures/actores-locales.svg)
 
 ## II · Expression personnelle
 
@@ -26,4 +30,4 @@ No siempre será posible satisfacer a todos a la vez. Reconocer los conflictos p
 
 ## III · Traduction française
 
-« Si on la ferme, la région deviendra un désert. Il n’y resterait que les retraités. Et ce sera tout », tranche Fernando Muñoz, quarante ans, prestataire de la centrale, en retirant de l’argent à un distributeur sur la place d’Espagne à Almaraz, commune de 1 760 habitants. « Ce serait préjudiciable à tous les villages des environs. Elle procure beaucoup d’emplois directs et indirects. »
+« Si on la ferme, la région deviendra un désert. Il n’y resterait que les retraités. Et puis ce sera fini », tranche Fernando Muñoz, quarante ans, prestataire de la centrale, en retirant de l’argent à un distributeur sur la place d’Espagne à Almaraz, commune de 1 760 habitants. « Ce serait préjudiciable à tous les villages des environs. Elle procure beaucoup d’emplois directs et indirects. »

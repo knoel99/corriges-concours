@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=6)
 
 L’épreuve d’anglais dure trois heures. La synthèse de trois documents et l’expression personnelle valent chacune 8 points ; la version en vaut 4. Les deux productions anglaises demandent de 225 à 275 mots.
@@ -21,13 +23,13 @@ L’épreuve d’anglais dure trois heures. La synthèse de trois documents et l
 
 The American childhood vaccination debate combines three issues: the scope of federal recommendations, their public credibility and the rules families encounter when children start school. The documents show why changing guidance can have different consequences across communities.
 
-In January 2026, federal officials narrowed routine recommendations from seventeen diseases to eleven after a presidential request to compare American practice with that of other wealthy countries (doc. 2). Specialists question whether this comparison allows for gaps in primary care and insurance. Reaching selected patients requires knowing who needs protection and being able to contact them. Continued coverage was promised, but the article questions whether access will remain dependable.
+In January 2026, federal officials reduced the number of diseases covered by universal childhood recommendations from seventeen to eleven. A memorandum responding to a presidential request drew on international comparisons, bypassing the usual expert panel review of the evidence for each vaccine (doc. 2). Specialists point to gaps in American primary care and insurance. Reaching selected patients requires knowing who needs protection and being able to contact them. Continued coverage was promised, but the article questions whether access will remain dependable.
 
-Public messages were already contested. A December 2025 report described an organisation formerly led by the health secretary spreading misleading claims about measles during outbreaks that predominantly affected unvaccinated children in South Carolina (doc. 1). The secretary both supported vaccination and questioned its testing. Meanwhile, researchers found far fewer official social media messages about measles than in earlier comparable periods. This episode illustrates problems of confidence preceding the January decision, which concerned other diseases.
+Public messages were already contested. A December 2025 report described an organisation formerly led by the health secretary spreading misleading claims about measles during a South Carolina outbreak in which most patients were unvaccinated children (doc. 1). The secretary both supported vaccination and questioned its testing. Researchers counted just ten CDC posts on measles from January to August, against an average of almost forty-six over the same months in the preceding four years. This episode illustrates problems of confidence preceding the January decision, which concerned other diseases.
 
 States also differ over school entry requirements. California allows neither of the two nonmedical grounds for exemption mapped by NBC, whereas Oregon allows both personal and religious exemptions (doc. 3). The map describes rules, without measuring uptake or case numbers. Taken together, the sources suggest that uncertain access, contradictory messages and different exemption policies may leave children unevenly protected.
 
-*239 words.*
+*264 words.*
 
 ## Personal essay
 
@@ -49,6 +51,6 @@ I would ask decision makers to publish their reasons, identify disagreements amo
 ## Traduction en français
 
 > [!INDICATION]
-> Rattacher la relative « that often lacks » à la population. Le mot « other » reprend un argument antérieur. Conserver la comparaison entre les situations sanitaires et la conséquence présentée dans le passage.
+> La seconde phrase énumère les raisons avancées par les spécialistes pour le Danemark et le Japon. Rendre le lien porté par « mean » et garder leur point de vue. Rattacher la relative « that often lacks » à la population. Le mot « other » reprend un argument antérieur. Conserver la comparaison entre les situations sanitaires et la conséquence présentée dans le passage.
 
-Selon les spécialistes, les décisions fondées sur une comparaison avec d’autres pays à revenu élevé présentent une autre difficulté : les États-Unis ont une population beaucoup plus nombreuse, en moins bonne santé et qui, souvent, n’a pas accès aux soins de premier recours. Au Danemark et au Japon, la population est en meilleure santé, les systèmes de soins, les dispositifs de surveillance et de dépistage ainsi que le soutien social sont plus solides. Ces pays sont donc moins tributaires de la vaccination.
+Selon les spécialistes, les décisions fondées sur une comparaison avec d’autres pays à revenu élevé présentent une autre difficulté : les États-Unis ont une population beaucoup plus nombreuse, en moins bonne santé et qui, souvent, n’a pas accès aux soins de premier recours. Au Danemark et au Japon, la population est en meilleure santé, les systèmes de soins, les dispositifs de surveillance et de dépistage ainsi que le soutien social sont plus solides. Ces facteurs expliquent, selon les spécialistes, que l’on y dépende moins de la vaccination.

@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Fast Fashion**
 
 L’épreuve dure trois heures. La synthèse et l’expression personnelle valent chacune huit points, la traduction quatre. Les deux réponses en allemand doivent chacune compter entre 225 et 275 mots.
@@ -14,15 +16,15 @@ L’épreuve dure trois heures. La synthèse et l’expression personnelle valen
 > Le premier document ramène les vêtements jetés devant le public de la mode à Berlin. Le deuxième présente des règles de collecte, de financement et d’écoconception. Le troisième donne les réponses à une enquête sur les pratiques déclarées. Construire des liens entre ces échelles.
 
 > [!INDICATION]
-> Dans le graphique, 77 % désigne la part de tous les répondants qui donnent ou offrent leurs vêtements triés. La part atteint 87 % chez les plus de soixante ans. Les réponses peuvent se cumuler. Elles ne révèlent ni le tonnage ni la destination finale de chaque don.
+> Lire les motifs des barres à l’aide de la légende. Pour la vente en ligne, la valeur de 34 % se retrouve chez les 18–29 ans et les 30–44 ans. Dans le graphique, 77 % désigne la part de tous les répondants qui donnent ou offrent leurs vêtements triés. La part atteint 87 % chez les plus de soixante ans. Les réponses peuvent se cumuler. Elles ne révèlent ni le tonnage ni la destination finale de chaque don.
 
 ![Drei Eingriffe setzen an verschiedenen Stellen im Lebenslauf eines Kleidungsstücks an.](figures/wege-der-kleidung.svg)
 
 Vor einem Berliner Modepublikum bekommt ein ausrangiertes Kleidungsstück eine andere Bedeutung als in einer europäischen Sammelstelle. Greenpeace ließ in Ghana eingesammelte Textilien nach Europa zurückbringen. So machte die Organisation sichtbar, dass eine Spende das Abfallproblem verlagern kann, wenn die Ware am Zielort nicht mehr tragbar ist. Die Aktion fordert vor allem diejenigen zum Umdenken auf, die von ständig wechselnden Kollektionen profitieren (doc. 1).
 
-Die Verbraucher verfügen bereits über mehrere Wege, Kleidung weiterzugeben. In der Umfrage nennen insgesamt 77 Prozent der Befragten das Spenden oder Verschenken. Bei den über Sechzigjährigen sind es 87 Prozent. Unter den jüngsten Befragten spielt dagegen der Verkauf im Internet eine größere Rolle als unter den ältesten. Die Zahlen geben Auskunft über angegebene Praktiken. Ob ein gespendetes Hemd tatsächlich wieder getragen wird, lässt sich daraus nicht ablesen (doc. 3). Gerade hier berühren sich die Umfrage und der Protest in Berlin.
+Die Verbraucher verfügen bereits über mehrere Wege, Kleidung weiterzugeben. In der Umfrage nennen insgesamt 77 Prozent der Befragten das Spenden oder Verschenken. Bei den über Sechzigjährigen sind es 87 Prozent. 34 Prozent der 18- bis 29-Jährigen verkaufen Kleidung online, gegenüber zehn Prozent der über Sechzigjährigen. Die Zahlen geben Auskunft über angegebene Praktiken. Ob ein gespendetes Hemd tatsächlich wieder getragen wird, lässt sich daraus nicht ablesen (doc. 3). Gerade hier berühren sich die Umfrage und der Protest in Berlin.
 
-Für tragbare und beschädigte Textilien sind unterschiedliche Lösungen nötig. Die getrennte Sammlung soll eine sachgerechte Sortierung erleichtern. Eine Beteiligung der Hersteller an den Kosten der Sammlung, Sortierung und Verwertung verknüpft die Entscheidung über ein Produkt mit seinen späteren Folgen. Anforderungen an Haltbarkeit und Reparierbarkeit setzen noch früher an, nämlich beim Entwurf der Kleidung (doc. 2). Sie könnten dazu beitragen, dass ein Weiterverkauf oder eine Spende tatsächlich eine zweite Nutzung ermöglicht. Entscheidend ist somit das Zusammenspiel: Wer weniger, aber länger tragbare Kleidung anbietet, wer sie pflegt und wer aussortierte Stücke nach ihrer Qualität trennt, beeinflusst jeweils eine andere Etappe desselben Weges.
+Für tragbare und beschädigte Textilien sind unterschiedliche Lösungen nötig. Seit Januar 2025 müssen die Mitgliedstaaten Alttextilien getrennt sammeln. Nach den im September 2025 beschlossenen Regeln sollen die Hersteller die Kosten für Sammlung, Sortierung und Recycling tragen. Das gilt auch für online verkaufte Ware. Anforderungen an Haltbarkeit und Reparierbarkeit setzen noch früher an, nämlich beim Entwurf der Kleidung (doc. 2). Sie könnten dazu beitragen, dass ein Weiterverkauf oder eine Spende tatsächlich eine zweite Nutzung ermöglicht. Wer weniger und haltbarere Stücke anbietet, wer sie pflegt und wer sie nach ihrer Qualität sortiert, beeinflusst jeweils eine andere Etappe desselben Weges.
 
 ## II · Expression personnelle
 
