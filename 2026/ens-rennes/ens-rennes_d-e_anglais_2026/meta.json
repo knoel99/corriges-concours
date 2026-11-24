@@ -1,0 +1,52 @@
+{
+  "slug": "ens-rennes_d-e_anglais_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais",
+    "annee": 2026
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=5",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-e-crit-2026_1793640873886-pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "III",
+      "legende": "Trois échelles pour évaluer les politiques publiques"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète de la version française, du thème en anglais, des deux réponses de 243 et 252 mots, du guidage et du schéma à partir des pages imprimées 4 à 6 du fascicule."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Helen Livingstone, BBC, 3 décembre 2025.",
+      "Caroline Leclert, Forbes, 20 septembre 2025.",
+      "Maria Abi-Habib, The New York Times, 5 décembre 2025."
+    ],
+    "note": "Traductions pédagogiques originales des extraits figurant dans le sujet. Les droits sur les textes sources appartiennent à leurs titulaires."
+  }
+}

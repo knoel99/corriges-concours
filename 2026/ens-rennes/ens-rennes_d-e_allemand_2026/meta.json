@@ -1,0 +1,52 @@
+{
+  "slug": "ens-rennes_d-e_allemand_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand",
+    "annee": 2026
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=2",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-e-crit-2026_1793640863622-pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "III",
+      "legende": "Du questionnaire au service militaire"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète de la version française, du thème en allemand, des deux réponses de 245 et 239 mots, du guidage et du schéma à partir des pages imprimées 1 à 3 du fascicule."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Chiara Swenson, MDR, 19 septembre 2025.",
+      "Le Monde, 9 mai 2025.",
+      "Johanna Hausmann et Daniel Sprenger, NDR, 16 octobre 2025."
+    ],
+    "note": "Traductions pédagogiques originales des extraits figurant dans le sujet. Les droits sur les textes sources appartiennent à leurs titulaires."
+  }
+}

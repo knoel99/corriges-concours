@@ -1,0 +1,52 @@
+{
+  "slug": "ens-rennes_d-e_espagnol_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol",
+    "annee": 2026
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-lve-d-e-2026_1790867583165-pdf#page=8",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-2026_1793640885461-pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "III",
+      "legende": "La coofficialité selon Solozábal"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète de la version française, du thème en espagnol, des deux réponses de 244 et 245 mots, du guidage et du schéma à partir des pages imprimées 7 à 9 du fascicule."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Daniel Domínguez, El País, 16 juillet 2025.",
+      "Charlotte Moge, Le Monde, 22 novembre 2025.",
+      "Juan José Solozábal, El País, 3 octobre 2025."
+    ],
+    "note": "Traductions pédagogiques originales des extraits figurant dans le sujet. Les droits sur les textes sources appartiennent à leurs titulaires."
+  }
+}
