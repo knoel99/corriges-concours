@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · GPT-6.2 Sol · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Cette épreuve de quatre heures sans calculatrice étudie le champ électromagnétique classique, le rayonnement du corps noir et les statistiques de photons. Les trois parties sont indépendantes. L’énoncé officiel passe directement de la question 31 à la question 33.
@@ -559,6 +565,8 @@ $$
 $$
 La courbe expérimentale commence à s’écarter sensiblement de la droite vers $10^7\ \mathrm{Hz}$ et plafonne à quelques $10^7\ \mathrm{Hz}$. Ces ordres de grandeur sont cohérents. À 400 nm, le rapport de Q39 donne environ $10^2\ \mathrm{pW}$ si l’on prend l’inverse du temps de réponse pour seuil. En se fondant sur le début de la perte de linéarité, on vise plutôt **$P\lesssim20\ \mathrm{pW}$**. Le flux d’un laser usuel doit être fortement atténué.
 
+Un modèle simple permet de quantifier la perte de linéarité. Pour des événements de Poisson au taux $\lambda_d=\eta\Phi$ et un temps mort fixe $\tau_d$ qui ne se prolonge pas après un événement manqué, le délai moyen entre deux comptes vaut $\tau_d+1/\lambda_d$. Le taux mesuré est donc $\lambda_d/(1+\lambda_d\tau_d)$. Avec $\tau_d=20\ \mathrm{ns}$, une perte de 10 % correspond déjà à $\lambda_d\simeq5{,}6\times10^6\ \mathrm{s^{-1}}$, bien en dessous de la valeur asymptotique $1/\tau_d$. Ce modèle illustre la différence entre une tolérance de linéarité et une fréquence de saturation.
+
 ### III.C.b — Mesure de la statistique d’émission d’un laser
 
 ### Question 41
@@ -611,6 +619,8 @@ La largeur relative étant de l’ordre de 0,3, cette conversion donne une estim
 #### Solution
 
 Le détecteur répond sur environ $20\ \mathrm{ns}$, soit plus d’un million de temps de cohérence. Les fenêtres de comptage sont encore plus longues. Chaque mesure mélange ainsi un très grand nombre de fluctuations d’intensité faiblement corrélées. Les fortes fluctuations sur une durée $\tau_c$ sont moyennées et difficiles à observer séparément.
+
+On peut séparer la perte de photons du changement de statistique dû au nombre de modes. Si $N$ photons arrivent et que chacun est détecté indépendamment avec probabilité $\eta$, on a $\mathbb E[C\mid N]=\eta N$ et $\mathrm{Var}(C\mid N)=\eta(1-\eta)N$. Par la variance totale, $\mathrm{Var}(C)=\eta(1-\eta)\mathbb E[N]+\eta^2\mathrm{Var}(N)$. Ainsi une source thermique monomode garde après détection une variance $\bar C+\bar C^2$, tandis qu’une source de Poisson garde une variance $\bar C$. L’atténuation réduit le contraste absolu de l’excès thermique.
 
 ### Question 45
 
