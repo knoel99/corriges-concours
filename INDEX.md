@@ -544,6 +544,8 @@
 | 2026 | IEP | 1A | Italien | [md](2026/iep/iep_1a_italien_2026/brut.md) | [md](2026/iep/iep_1a_italien_2026/guide.md) |
 | 2015 | IEP | 1A | Questions contemporaines | [md](2015/iep/iep_1a_questions-contemporaines_2015/brut.md) | [md](2015/iep/iep_1a_questions-contemporaines_2015/guide.md) |
 | 2016 | IEP | 1A | Questions contemporaines | [md](2016/iep/iep_1a_questions-contemporaines_2016/brut.md) | [md](2016/iep/iep_1a_questions-contemporaines_2016/guide.md) |
+| 2017 | BEL | BL | Version grecque | [md](2017/bel/bel_bl_version-grecque_2017/brut.md) | [md](2017/bel/bel_bl_version-grecque_2017/guide.md) |
+| 2017 | BEL | BL | Version latine | [md](2017/bel/bel_bl_version-latine_2017/brut.md) | [md](2017/bel/bel_bl_version-latine_2017/guide.md) |
 | 2017 | IEP | 1A | Questions contemporaines | [md](2017/iep/iep_1a_questions-contemporaines_2017/brut.md) | [md](2017/iep/iep_1a_questions-contemporaines_2017/guide.md) |
 | 2018 | IEP | 1A | Questions contemporaines | [md](2018/iep/iep_1a_questions-contemporaines_2018/brut.md) | [md](2018/iep/iep_1a_questions-contemporaines_2018/guide.md) |
 | 2019 | IEP | 1A | Questions contemporaines | [md](2019/iep/iep_1a_questions-contemporaines_2019/brut.md) | [md](2019/iep/iep_1a_questions-contemporaines_2019/guide.md) |

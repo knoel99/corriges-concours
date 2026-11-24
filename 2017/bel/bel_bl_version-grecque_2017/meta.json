@@ -1,0 +1,41 @@
+{
+  "slug": "bel_bl_version-grecque_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Version grecque",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=5",
+    "sujet_sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Version",
+      "legende": "Qui a autorité sur les enfants ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Version française intégrale de Xénophon d'après la page grecque du fascicule numérisé, avec analyse des sujets des verbes, des deux autorités et du style indirect."
+    }
+  ]
+}
