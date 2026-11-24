@@ -1,0 +1,41 @@
+{
+  "slug": "ens_mp_maths-d_2020",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2020
+  },
+  "questions": 68,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/20_mp_mathd_sujet.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/20_mp_rap_emathd.pdf",
+    "sha256_sujet": "66ba1ced14567a5313ca754e21b1e80e6205596109c843d3df97d12e556933f7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rang-apres-insertion.svg",
+      "question": "III.3d",
+      "legende": "Pour n = 3 et s = k = 1, la tête de rang 3 vient de la coupure 3,5 dans la queue (1, 5, 3)."
+    },
+    {
+      "fichier": "figures/fusion-sous-niveaux.svg",
+      "question": "V.2",
+      "legende": "Le sommet de hauteur 5 est apparié au minimum de hauteur 3. Le sommet de hauteur 7 est apparié au minimum de hauteur 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification de toutes les sous-questions des cinq parties à partir du sujet et du rapport, y compris la bijection aux bords, la période minimale des suites modulo p et la stabilité du code. Schémas de standardisation et de fusion des composantes.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
