@@ -1,0 +1,41 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2023",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2023
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/2c2023_math_V2.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/08/23_2CC_rap_eMath.pdf",
+    "sha256_sujet": "f80f933475b6f3f93df24041e210cda040c2b4ce2a9ffc719929ae2b27602fc3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/1-derivations.svg",
+      "question": "Exercice 1, question 7",
+      "legende": "Pour la première dérivée, la valeur absolue maximale 1/2 est atteinte en zéro. La fonction initiale reste entre −1 et 1."
+    },
+    {
+      "fichier": "figures/2-marche-plane.svg",
+      "question": "Exercice 2, question 4b",
+      "legende": "Les flèches sont les quatre pas du réseau initial. Les étiquettes donnent leurs coordonnées après la transformation (x,y) ↦ (x+y,x−y)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 33 réponses des trois exercices après contrôle du sujet officiel sur le texte et les images des pages, et comparaison avec le rapport. Maximum des dérivées de Smirnov, dernier retour de la marche plane, logarithme tronqué sur les espaces caractéristiques et contre-exemples matriciels. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
