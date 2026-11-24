@@ -41,7 +41,9 @@
     }
   ],
   "sources": {
-    "document_reponse": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI5IN_DR.pdf"
+    "document_reponse": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI5IN_DR.pdf",
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI5IN_SUJET.pdf",
+    "rapport": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/Rapport%20Epreuves%20%C3%A9crites%20TSI%202026%20-%20Informatique%20VF.pdf"
   },
   "provenance": {
     "redaction": {
@@ -90,6 +92,24 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Q1 à Q27 des deux éditions et six figures, sujet officiel, document réponse et rapport. Recherche aléatoire et probabilité d’échec, trace des insertions, coût de la génération. Contrôle des permutations et des solutions jusqu’à huit reines, des classes de symétrie et des quatre requêtes SQL, y compris les groupes sans facture ou sans record.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "tour": 3
     }
-  ]
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Q1 à Q27 des deux éditions et six figures, sujet officiel, document réponse et rapport. Recherche aléatoire et probabilité d’échec, trace des insertions, coût de la génération. Contrôle des permutations et des solutions jusqu’à huit reines, des classes de symétrie et des quatre requêtes SQL, y compris les groupes sans facture ou sans record."
+  }
 }
