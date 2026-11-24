@@ -47,7 +47,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20SUJET%20DE%20MATHEMATIQUES%20A%20%28XLSR%29.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLSR%29.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLSR%29.pdf",
+    "sha256_sujet": "263d74a20aa6552677b4317cdd1e978428eafe103c1633504a4ee79ac11525a2"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -93,7 +94,20 @@
       "modifications": null,
       "perimetre": "Les 41 réponses suivent le sujet du 17 avril 2023 et les observations du jury. Les preuves de la déformation à déterminant maximal et des bissections (Q16–19) et celles du commutant et des algèbres normées (Q23–27) ont fait l’objet de contre-vérifications indépendantes.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 41 réponses et de toutes les indications contre le sujet du 17 avril et le rapport de jury. Calcul explicite de l’adjoint en 1a, contrôle par déterminant en 2a, vérification des bissections et des sous-espaces propres en 18 et 24 puis du signe et de la valeur du carré orthogonal en 26. Sept figures existantes contrôlées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
