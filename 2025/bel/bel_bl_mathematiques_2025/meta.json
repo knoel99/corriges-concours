@@ -1,0 +1,47 @@
+{
+  "slug": "bel_bl_mathematiques_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Mathématiques",
+    "annee": 2025
+  },
+  "questions": 64,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_mathematiques.pdf",
+    "rapport_jury": "https://apml-maths.com/wp-content/uploads/2025/11/2025_bl_rapport_ecrit_mathematiques.pdf",
+    "sha256_sujet": "15b1f78ee527efeec20398a291fba76ac03312b6e0e56570431ac39758efff51"
+  },
+  "note_sources": "Le sujet provient de l’ENS Paris. Le rapport écrit de son jury est conservé dans les annales de l’APML.",
+  "figures": [
+    {
+      "fichier": "figures/q17-courbe-et-tangente.svg",
+      "question": "17b",
+      "legende": "La tangente de pente 1 part de l’origine. La courbe atteint son sommet en 1 et change de concavité en 2."
+    },
+    {
+      "fichier": "figures/q21-sections-niveau.svg",
+      "question": "21b–e",
+      "legende": "À gauche, chaque section à x fixé est une droite de pente positive. À droite, le niveau 1/2 possède deux branches symétriques qui se rencontrent en (0, 1/2)."
+    },
+    {
+      "fichier": "figures/q23-deux-recurrences.svg",
+      "question": "23d",
+      "legende": "Pour deux termes initiaux nuls, la division par n dans la première récurrence entraîne une croissance d’au moins n/e. Dans la seconde, une parité se rapproche de zéro et l’autre diverge."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 64 réponses et indications sur les trois problèmes du sujet natif UHCE 554. Confrontation au rapport écrit 2025 de neuf pages, preuve de la relation de différences en 7b, calcul du conditionnement en 12b, variance du temps de collection et convergence par parité en 23. Trois figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
