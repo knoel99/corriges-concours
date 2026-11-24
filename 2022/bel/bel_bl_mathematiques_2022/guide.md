@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -73,6 +75,8 @@ $$
 $$
 \mathbb P(S_{10}\ge160)\le\frac{\mathbb E[S_{10}]}{160}=\frac{105}{160}=\frac{21}{32}\le\frac23.
 $$
+
+Le capital après dix lancers est exactement $21K$, où $K$ compte les piles et suit la loi binomiale de paramètres $10$ et $1/2$. Le seuil $160$ est franchi à partir de huit piles. Le calcul direct donne $(45+10+1)/2^{10}=7/128$, ce qui vérifie indépendamment la majoration.
 
 **(3b)** Posons $\overline X_n=(S_n-100)/n$ pour $n\ge1$. Les $X_i$ sont indépendantes, de même loi et bornées. La loi faible des grands nombres donne $\overline X_n\to1/2$ en probabilité. Or $\{\overline X_n<1/4\}\subset\{|\overline X_n-1/2|\ge1/4\}$, de probabilité tendant vers zéro. Par complément,
 $$
@@ -305,6 +309,8 @@ Par encadrement $b-s\to0$ quand $V\to+\infty$. Ainsi $\boxed{\lim_{V\to+\infty}x
 > [!PIEGE]
 > L'appartenance à $[0,b]$ donne une borne, mais ne prouve à elle seule aucune convergence. Faire tendre l'écart à la valeur annoncée vers zéro.
 
+On peut vérifier les deux limites par une même symétrie. En échangeant $s$ et $b-s$ dans l’équation de la question 13, on remplace $V$ par $1/V$. L’unicité du zéro donne $x_0(1/V)=b-x_0(V)$, en particulier $x_0(1)=b/2$.
+
 ### Question 14
 
 > [!INDICATION]
@@ -500,7 +506,7 @@ Prenons $M=PLP^T$, matrice canonique de $\ell$. On a $L^TL=I_3$ et $P^TP=PP^T=I_
 $$
 M^TM=PL^TP^TPLP^T=P(L^TL)P^T=I_3.
 $$
-Enfin $x=\tfrac12((x+y)+(x-y))$ et $y=\tfrac12((x+y)-(x-y))$. L'application $\ell$ fixe $x+y$ et change le signe de $x-y$. Ainsi $\boxed{Mx=y,\quad My=x}$. Géométriquement, c'est la symétrie orthogonale par rapport au plan engendré par $x+y$ et $z$.
+Enfin $x=\tfrac12((x+y)+(x-y))$ et $y=\tfrac12((x+y)-(x-y))$. L'application $\ell$ fixe $x+y$ et change le signe de $x-y$. Ainsi $\boxed{Mx=y,\quad My=x}$. Géométriquement, c'est la symétrie orthogonale par rapport au plan engendré par $x+y$ et $z$. En écrivant $v=(x-y)/\|x-y\|$, on a aussi $M=I_3-2vv^T$. En effet $2(x-y)^Tx=\|x-y\|^2$ puisque $x$ et $y$ ont même norme. Cette formule donne directement $Mx=x-(x-y)=y$ et $M^2=I_3$.
 
 ![Figure 5 — Coupe dans le plan de $x$ et $y$. La réflexion fixe la direction de leur somme et inverse celle de leur différence. La direction de $z$, perpendiculaire à cette coupe, est également fixe.](figures/q22-reflexion.svg)
 

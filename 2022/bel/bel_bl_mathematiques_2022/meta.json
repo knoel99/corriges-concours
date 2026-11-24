@@ -14,7 +14,8 @@
   "redaction": "Rédaction originale par IA (Codex, famille GPT-6), à partir du sujet et du rapport de jury 2022. Relecture indépendante des 55 réponses et des cinq schémas par un second agent Codex.",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/bl_22_mathematiques.pdf",
-    "rapport": "https://www.ens.psl.eu/sites/default/files/2022_bl_rapport_ecrit_mathematiques.pdf"
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2022_bl_rapport_ecrit_mathematiques.pdf",
+    "sha256_sujet": "eca57bb2fbb300edc983a059a459f0ca0e72ead2044305a84eb551aa097f1daa"
   },
   "figures": [
     {
@@ -82,7 +83,20 @@
       "modifications": null,
       "perimetre": "Relecture des corrigés brut et guidé.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 55 réponses des deux éditions, des indications et de la numérotation contre les pages imprimées 1 à 5 et le rapport. Ajout du contrôle binomial exact de 3a, de la symétrie des vitesses en 13d et de la formule explicite de la réflexion en 22.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
