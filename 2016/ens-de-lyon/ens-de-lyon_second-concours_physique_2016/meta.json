@@ -1,0 +1,131 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2016",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2016
+  },
+  "questions": 38,
+  "redaction": "Les 32 questions principales et leurs sous-questions donnent 38 réponses individualisées. Neuf figures décrivent les ponts, les créneaux périodiques et les rayons en milieu stratifié.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/02/16_2c_physique.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/10/16_2c_rap_ePhy.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "7a4e5fc1e0964c33e37f3a4043168d5b97a0bb215ac5730cc12f461c68d76721",
+    "rapport_sha256": "9ea6a97dc2a0c366a0ee3aabe06bd081367e8cd63a3cbb55e7e8fcd2533db000"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.5c",
+      "fichier": "figures/bode-rc.svg",
+      "legende": "Le gain est constant. La verticale indique la pulsation de quadrature du pont capacitif."
+    },
+    {
+      "numero": 2,
+      "question": "I.12",
+      "fichier": "figures/bode-rl.svg",
+      "legende": "Le gain est constant. La verticale indique la pulsation de quadrature du pont inductif."
+    },
+    {
+      "numero": 3,
+      "question": "I.9",
+      "fichier": "figures/spectre.svg",
+      "legende": "Spectre unilatéral du créneau à 5 Hz. La verticale marque la pulsation caractéristique convertie en fréquence."
+    },
+    {
+      "numero": 4,
+      "question": "I.10d",
+      "fichier": "figures/creneau-5.svg",
+      "legende": "Deux périodes en régime établi à 5 Hz. La tension de sortie présente un saut opposé à celui de l’entrée puis évolue exponentiellement sur chaque plateau."
+    },
+    {
+      "numero": 5,
+      "question": "I.11b",
+      "fichier": "figures/creneau-500.svg",
+      "legende": "Deux périodes en régime établi à 500 Hz. La tension de sortie présente un saut opposé à celui de l’entrée puis évolue exponentiellement sur chaque plateau."
+    },
+    {
+      "numero": 6,
+      "question": "II.4",
+      "fichier": "figures/construction-snell.svg",
+      "legende": "Les cercles sont de rayons n₁ et n₂. Les deux points construits dans le demi-espace transmis ont la même projection sur l’interface."
+    },
+    {
+      "numero": 7,
+      "question": "II.6",
+      "fichier": "figures/rayons-plaques.svg",
+      "legende": "Les indices sont identiques à une même altitude dans les deux panneaux. Les deux rayons vont vers la droite, l’un en montant et l’autre en descendant."
+    },
+    {
+      "numero": 8,
+      "question": "II.17",
+      "fichier": "figures/deux-rayons.svg",
+      "legende": "Les rayons partent du même point avec deux pentes initiales opposées. Le rayon d’abord descendant se retourne au-dessus du niveau où l’indice s’annulerait."
+    },
+    {
+      "numero": 9,
+      "question": "II.20",
+      "fichier": "figures/ombre.svg",
+      "legende": "Le domaine inférieur hachuré est inaccessible. Les paraboles de différentes pentes initiales restent tangentes ou supérieures à la frontière."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les 32 questions principales et leurs sous-questions donnent 38 réponses individualisées. Neuf figures décrivent les ponts, les créneaux périodiques et les rayons en milieu stratifié.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5a",
+      "I.5b",
+      "I.5c",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10a",
+      "I.10b",
+      "I.10c",
+      "I.10d",
+      "I.11a",
+      "I.11b",
+      "I.12",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17",
+      "II.18",
+      "II.19",
+      "II.20"
+    ]
+  }
+}
