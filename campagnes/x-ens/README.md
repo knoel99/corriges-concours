@@ -1,6 +1,6 @@
 # Relectures Polytechnique et ENS
 
-Le registre recense les sujets identifiés de Polytechnique, de l’ENS-PSL, de l’ENS de Lyon, de l’ENS Paris-Saclay et de l’ENS Rennes. Chaque ligne donne l’identifiant du corrigé, la modalité et le lien vers le sujet. Une épreuve partagée entre plusieurs écoles ou filières compte une fois. Les écrits et les oraux disposent de totaux distincts. L’identification des archives se poursuit. [Registre des sujets](epreuves.tsv)
+Le registre recense les sujets identifiés de Polytechnique, de l’ENS-PSL, de l’ENS de Lyon, de l’ENS Paris-Saclay et de l’ENS Rennes. Chaque ligne donne l’identifiant du corrigé, la modalité et le lien vers le sujet. Une épreuve partagée entre plusieurs écoles ou filières compte une fois. Le bilan distingue les écrits, les oraux et les projets pratiques. L’identification des archives se poursuit. [Registre des sujets](epreuves.tsv)
 
 Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir les éléments suivants.
 
@@ -33,3 +33,5 @@ Certaines épreuves sont attestées par l’ENS alors que le texte ou les pièce
 Pour les fascicules B/L de Lyon, le relevé distingue les planches intégrales de mathématiques, les intitulés d’exposés, les références de presse et les cartes ou dossiers à retrouver. Les options écrites 2025 présentes aussi dans le recueil de Lyon conservent leur fiche commune. [Pages des sujets et rapports B/L de Lyon](sections-b-l-lyon.tsv)
 
 Le concours normalien étudiant Lettres de l’ENS-PSL comprend des épreuves propres aux départements. Les sujets identifiés dans les rapports indiquent leur page et les documents restant à retrouver. [Sujets et rapports du CNEL 2026](cnel-lettres-2026.tsv)
+
+En design à Paris-Saclay, le techno-design est un écrit d’admissibilité. L’épreuve pratique d’admission offre trois sujets au choix. Chaque option dispose de son original et de sa propre fiche. [Article 10 du règlement](https://www.enseignementsup-recherche.gouv.fr/fr/bo/2025/Hebdo32/MENS2523783A) · [Sources des projets de design et des oraux de sélection internationale](design-et-selection-internationale-2026.tsv)
