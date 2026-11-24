@@ -1,0 +1,53 @@
+{
+  "slug": "x-ens_mp_maths-a_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2018
+  },
+  "questions": 36,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPI_sujet_MathA.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MP_rap_eMathA.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/deformation-cercle.svg",
+      "question": "Q7",
+      "legende": "Une matrice diagonale de valeurs singulières 3 et 1 transforme le cercle unité en une ellipse dont les demi-axes mesurent 3 et 1."
+    },
+    {
+      "fichier": "figures/energie-direction.svg",
+      "question": "Q8b",
+      "legende": "En dimension deux, une projection sur une droite inclinée mélange les deux poids propres. L’énergie conservée est maximale sur le premier axe."
+    },
+    {
+      "fichier": "figures/troncature.svg",
+      "question": "Q9c",
+      "legende": "Pour trois valeurs singulières 4, 3 et 1, la troncature au rang deux conserve les contributions 16 et 9 et laisse une erreur quadratique égale à 1."
+    },
+    {
+      "fichier": "figures/projection-oblique.svg",
+      "question": "Q10c",
+      "legende": "Les deux projections aboutissent sur la même droite. La projection oblique suit sa direction de noyau, parallèle à la droite pointillée oblique."
+    },
+    {
+      "fichier": "figures/blocs-tangent-normal.svg",
+      "question": "Q14b",
+      "legende": "Dans les bases adaptées, les trois blocs bleus paramètrent les vitesses tangentes. Le bloc inférieur droit vert paramètre la composante normale."
+    },
+    {
+      "fichier": "figures/courbe-de-rang-un.svg",
+      "question": "Q19",
+      "legende": "Dans cette coupe de matrices symétriques, le coefficient normal varie comme le carré du paramètre. Sa dérivée à l’origine est nulle."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Comparaison des 36 réponses au sujet et au rapport 2018. Vérification des rangs et des tailles, du cas d’égalité de la meilleure approximation et de la limite tangentielle."
+  }
+}

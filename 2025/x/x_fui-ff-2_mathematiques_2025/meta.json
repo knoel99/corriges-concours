@@ -1,0 +1,47 @@
+{
+  "slug": "x_fui-ff-2_mathematiques_2025",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Mathématiques",
+    "annee": 2025
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "question": "I.1b",
+      "fichier": "figures/noyau-laplace.svg",
+      "legende": "La courbe correspondant à x = 0 majore les intégrandes pour tout x positif."
+    },
+    {
+      "question": "I.5",
+      "fichier": "figures/integrale-dirichlet.svg",
+      "legende": "Les lobes successifs de sin(t)/t produisent des oscillations amorties de l’intégrale tronquée autour de π/2."
+    },
+    {
+      "question": "II.4b",
+      "fichier": "figures/changement-echelle.svg",
+      "legende": "Exemple pour r = 0,05. La conjugaison diagonale préserve les valeurs propres et rapproche la norme de ligne du rayon spectral 0,7."
+    },
+    {
+      "question": "II.7",
+      "fichier": "figures/fenetre-compagnon.svg",
+      "legende": "Pour d = 3, deux composantes sont recopiées par décalage. La dernière ligne de la matrice compagnon fournit le terme nouveau, auquel s’ajoute la constante."
+    },
+    {
+      "question": "II.12",
+      "fichier": "figures/classes-restes.svg",
+      "legende": "Exemple de majorants pour q = 3 et r = 0,9. Chaque classe d’indices a sa propre valeur initiale et décroît au même rythme géométrique."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Maths.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24"
+}

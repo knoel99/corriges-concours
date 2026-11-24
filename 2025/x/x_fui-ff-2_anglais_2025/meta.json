@@ -1,0 +1,32 @@
+{
+  "slug": "x_fui-ff-2_anglais_2025",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Anglais",
+    "annee": 2025
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/survey-intentions.svg",
+      "question": "Q4",
+      "legende": "Reported intentions rose by six percentage points. The survey did not count resignations."
+    },
+    {
+      "fichier": "figures/nurse-and-rota.svg",
+      "question": "Essay",
+      "legende": "A nurse can compare offers before accepting a post and later negotiate working arrangements with colleagues."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Anglais.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24"
+}

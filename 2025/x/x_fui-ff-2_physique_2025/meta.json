@@ -1,0 +1,64 @@
+{
+  "slug": "x_fui-ff-2_physique_2025",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Physique",
+    "annee": 2025
+  },
+  "questions": 16,
+  "rubriques_traitees": 28,
+  "redaction": "Proposition originale non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-%20FF%202%202025%20Phys.pdf",
+    "rapport_jury": null
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Garde officielle contrôlée. Vérifications de la puissance 2/3, des quadratures et de la charge induite totale. Contre-calcul indépendant des questions 5.e, 6.c, C et D."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "4",
+      "fichier": "figures/potentiel-du-facteur-echelle.svg",
+      "legende": "L’énergie négative rencontre le potentiel au rayon maximal. Une énergie positive ou nulle reste accessible à tout rayon."
+    },
+    {
+      "numero": 2,
+      "question": "5.e",
+      "fichier": "figures/expansion-et-fonction-inverse.svg",
+      "legende": "Dans des unités de temps réduites, la courbe de gauche est horizontale au départ et la courbe de droite verticale."
+    },
+    {
+      "numero": 3,
+      "question": "6.e",
+      "fichier": "figures/univers-lie-et-retournement.svg",
+      "legende": "La croissance et la contraction sont symétriques autour du retournement à a égal à κ."
+    },
+    {
+      "numero": 4,
+      "question": "8",
+      "fichier": "figures/trois-cosmologies-de-poussiere.svg",
+      "legende": "Les trois solutions représentées ont le même K. Les temps sont comptés depuis le début de chacune."
+    },
+    {
+      "numero": 5,
+      "question": "C",
+      "fichier": "figures/charge-induite-densite-radiale.svg",
+      "legende": "La densité est négative, maximale en valeur absolue sous la charge et tend vers zéro comme l’inverse du cube de la distance."
+    },
+    {
+      "numero": 6,
+      "question": "D",
+      "fichier": "figures/champ-et-plan-conducteur.svg",
+      "legende": "Lignes du champ physique dans une coupe contenant la charge et la normale au plan."
+    }
+  ]
+}

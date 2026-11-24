@@ -1,0 +1,58 @@
+{
+  "slug": "x_fui-ff-2_physique_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Physique",
+    "annee": 2024
+  },
+  "questions": 17,
+  "rubriques_traitees": 29,
+  "redaction": "Proposition originale non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20PHYSIQUE.pdf",
+    "rapport_jury": null
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Garde officielle contrôlée. Vérifications du développement multipolaire, des extrema, de la stabilité et de l’avance de Mercure. Contre-calcul indépendant du quadrupôle en 11.c et de l’avance séculaire en 17."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "6.a",
+      "fichier": "figures/potentiel-effectif-kepler.svg",
+      "legende": "Un niveau d’énergie lié au-dessus du minimum coupe le potentiel à deux rayons, périastre et apoastre."
+    },
+    {
+      "numero": 2,
+      "question": "9.e",
+      "fichier": "figures/ellipse-et-foyer.svg",
+      "legende": "Ellipse pour e égal à 0,48, avec les deux distances extrêmes mesurées depuis le foyer."
+    },
+    {
+      "numero": 3,
+      "question": "10.b",
+      "fichier": "figures/equipotentielle-terrestre.svg",
+      "legende": "L’accélération centrifuge est nulle au pôle et dirigée vers l’extérieur à l’équateur. L’aplatissement est exagéré."
+    },
+    {
+      "numero": 4,
+      "question": "12",
+      "fichier": "figures/potentiel-relativiste-formel.svg",
+      "legende": "Allure formelle pour ℓ/(mcb) égal à 4. Le comportement à très petit rayon se situe hors du régime de champ faible du sujet."
+    },
+    {
+      "numero": 5,
+      "question": "16",
+      "fichier": "figures/avance-du-perihelie.svg",
+      "legende": "Trois cycles radiaux et leurs périhélies. Le décalage angulaire est amplifié pour être visible."
+    }
+  ]
+}

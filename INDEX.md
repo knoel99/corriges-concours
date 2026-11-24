@@ -110,6 +110,7 @@
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2024 | BEL | AL | Géographie | [md](2024/bel/bel_al_geographie_2024/brut.md) | [md](2024/bel/bel_al_geographie_2024/guide.md) |
+| 2025 | BEL | AL | Géographie | [md](2025/bel/bel_al_geographie_2025/brut.md) | [md](2025/bel/bel_al_geographie_2025/guide.md) |
 | 2026 | BEL | AL | Géographie | [md](2026/bel/bel_al_geographie_2026/brut.md) | [md](2026/bel/bel_al_geographie_2026/guide.md) |
 | 2024 | BEL | AL | Histoire contemporaine | [md](2024/bel/bel_al_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_al_histoire-contemporaine_2024/guide.md) |
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
@@ -485,6 +486,8 @@
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
+| 2018 | X-ENS | MP | Maths A | [md](2018/x-ens/x-ens_mp_maths-a_2018/brut.md) | [md](2018/x-ens/x-ens_mp_maths-a_2018/guide.md) |
+| 2019 | X-ENS | MP | Maths A | [md](2019/x-ens/x-ens_mp_maths-a_2019/brut.md) | [md](2019/x-ens/x-ens_mp_maths-a_2019/guide.md) |
 | 2020 | X-ENS | MP | Maths A | [md](2020/x-ens/x-ens_mp_maths-a_2020/brut.md) | [md](2020/x-ens/x-ens_mp_maths-a_2020/guide.md) |
 | 2021 | X-ENS | MP | Maths A | [md](2021/x-ens/x-ens_mp_maths-a_2021/brut.md) | [md](2021/x-ens/x-ens_mp_maths-a_2021/guide.md) |
 | 2022 | X-ENS | MP | Maths A | [md](2022/x-ens/x-ens_mp_maths-a_2022/brut.md) | [md](2022/x-ens/x-ens_mp_maths-a_2022/guide.md) |
@@ -505,6 +508,13 @@
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
+| 2024 | X | FUI-FF 1 | Français | [md](2024/x/x_fui-ff-1_francais_2024/brut.md) | [md](2024/x/x_fui-ff-1_francais_2024/guide.md) |
+| 2025 | X | FUI-FF 2 | Anglais | [md](2025/x/x_fui-ff-2_anglais_2025/brut.md) | [md](2025/x/x_fui-ff-2_anglais_2025/guide.md) |
+| 2024 | X | FUI-FF 2 | Français | [md](2024/x/x_fui-ff-2_francais_2024/brut.md) | [md](2024/x/x_fui-ff-2_francais_2024/guide.md) |
+| 2025 | X | FUI-FF 2 | Français | [md](2025/x/x_fui-ff-2_francais_2025/brut.md) | [md](2025/x/x_fui-ff-2_francais_2025/guide.md) |
+| 2025 | X | FUI-FF 2 | Mathématiques | [md](2025/x/x_fui-ff-2_mathematiques_2025/brut.md) | [md](2025/x/x_fui-ff-2_mathematiques_2025/guide.md) |
+| 2024 | X | FUI-FF 2 | Physique | [md](2024/x/x_fui-ff-2_physique_2024/brut.md) | [md](2024/x/x_fui-ff-2_physique_2024/guide.md) |
+| 2025 | X | FUI-FF 2 | Physique | [md](2025/x/x_fui-ff-2_physique_2025/brut.md) | [md](2025/x/x_fui-ff-2_physique_2025/guide.md) |
 | 2024 | X | MP | Maths B | [md](2024/x/x_mp_maths-b_2024/brut.md) | [md](2024/x/x_mp_maths-b_2024/guide.md) |
 | 2025 | X | MP | Maths B | [md](2025/x/x_mp_maths-b_2025/brut.md) | [md](2025/x/x_mp_maths-b_2025/guide.md) |
 | 2026 | X | MP | Maths B | [md](2026/x/x_mp_maths-b_2026/brut.md) | [md](2026/x/x_mp_maths-b_2026/guide.md) |
