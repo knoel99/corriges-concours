@@ -25,7 +25,7 @@
       "legende": "Du risque de crue à la décision publique, deux justifications à articuler"
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -33,7 +33,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/al_philo_261107.pdf",
-    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Philosophie%202026.pdf"
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Philosophie%202026.pdf",
+    "sujet_sha256": "73a0acde564fd2995251e69c94706ed98eab1a2a5e413e8c5a42191e0d20cb0f",
+    "rapport_sha256": "a580df544e8021e74b84c97a9641bd4b0d28b557af395fcdf892d1f53cb4da18"
   },
   "provenance": {
     "redaction": {
@@ -82,6 +84,30 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la composition commune, sur la spécificité de la reconnaissance de l’autorité, les institutions et la portée morale des avis scientifiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux éditions au sujet et au rapport, examen de Galilée, Kant et de l’exemple d’expertise. Précision sur l’emploi par Kant de la devise latine et sur la publicité de la critique."
     }
   ]
 }
