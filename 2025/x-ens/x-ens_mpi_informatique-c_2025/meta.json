@@ -1,0 +1,48 @@
+{
+  "slug": "x-ens_mpi_informatique-c_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MPI",
+    "matiere": "Informatique C",
+    "annee": 2025,
+    "duree_heures": 4
+  },
+  "questions": 33,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20C%20MPI.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MPI_Info%20C.pdf",
+    "sujet_sha256": "ed9c5a276c1004e196bd581176d8676b285ccbc6634d50daed7f8d1b4a56e6b1",
+    "rapport_sha256": "773b17e66b472dcaa632a7ca5d5b5a1550f0f320ebc28ff2b6010c02ad658fde"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q06-augmentation.svg",
+      "question": "Q6",
+      "legende": "Les arêtes appariées sont épaisses. La bascule sur le chemin 1, 2, 4, 3 remplace une paire par deux et couvre les six sommets."
+    },
+    {
+      "fichier": "figures/q23-adjacence.svg",
+      "question": "Q23",
+      "legende": "Deux sommets et les quatre arcs pondérés de la matrice. Le signe de chaque poids est conservé."
+    },
+    {
+      "fichier": "figures/q26-couches.svg",
+      "question": "Q26",
+      "legende": "Les cinq arcs à ajouter sont en rouge. Les autres figurent déjà sur la planche. Certaines sources de la dernière couche figurent sans chemin depuis s."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 33 questions sur Edmonds, le déterminant de Mahajan–Vinay et le test de Tutte, avec lecture du sujet et du rapport officiels. Trois figures originales, contrôle des arêtes du fac-similé, exécution du code OCaml et C extrait des deux éditions, comparaison de couplages et de déterminants à des oracles indépendants. Précision sur la borne uniforme de Q33 et la possibilité de fermer une boucle en Q28."
+    }
+  ]
+}
