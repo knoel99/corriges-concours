@@ -1,0 +1,49 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_russe-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Russe (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Fascicule%20SES%202026.pdf#page=14",
+    "sujet_sha256": "9af9d457809faa26a8ff73a93ab94300204afcf4089d3d71f0ae109381941358",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Fascicule%20SES%202026.pdf#page=24",
+    "rapport_sha256": "cce2c8b96882ea064fcfcbc3b70755ecb825b5c38973678634991eae4dd71bd3",
+    "documents": {
+      "Andreïev · Нож": "https://knife.media/vylechit-razum-kak-izbavitsya-ot-oshusheniya-degradaczii-uma/"
+    },
+    "precision": "Le fascicule fournit les références de presse. Les éditions du corrigé s’appuient sur les articles publiés par les journaux. Les limites d’une éventuelle coupe dans les exemplaires remis aux candidats restent inconnues."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Analyse de presse",
+      "legende": "От потока сведений к самостоятельной мысли"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions avec explication en langue du concours, questions et réponses d’entretien, préparation en français et figure. Le jury identifie le tirage de la candidate de série SES. Le texte de travail est l’article de Piotr Andreïev publié dans Нож le 10 juin 2026. Le fascicule fournit les références de presse. Les éditions du corrigé s’appuient sur les articles publiés par les journaux. Les limites d’une éventuelle coupe dans les exemplaires remis aux candidats restent inconnues."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
