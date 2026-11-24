@@ -8,5 +8,63 @@
   },
   "questions": 2,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-sujet.svg",
+      "question": "Dissertation",
+      "legende": "Du familier au jugement vérifié"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/2026_FP4.pdf",
+    "rapport_jury": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/Ep%20communes/Rapport%20FP%202026.pdf",
+    "sujet_sha256": "278c5ec51223b968657565e87705bd3ab4a35dadf7dff4d5b0f1f2cf04f76e2b",
+    "rapport_sha256": "64944e2cee511097ccece467be2acd5186e8e80aeb735dc7b1ac51021f8c87b7"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "famille_modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction historique des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Relecture précédemment signalée, détails non renseignés."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport sur la contraction, le mouvement du texte de Kathleen Raine et l’épreuve de la reconnaissance par les trois œuvres."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison du document réponse, du barème et des deux éditions. Recompte du résumé (27, 34 et 44 mots). Distinction du familier et de l’identification savante, illustrée par Aronnax."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }
