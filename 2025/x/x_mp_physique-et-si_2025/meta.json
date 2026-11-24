@@ -1,0 +1,124 @@
+{
+  "slug": "x_mp_physique-et-si_2025",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Physique et SI",
+    "annee": 2025
+  },
+  "questions": 39,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20et%20SI%20MP%20sujet.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP_Physique%20et%20SI%20OK.pdf",
+    "sujet_sha256": "02393837cd8dc1987793f64bf5516133ee63da7172968fd092b2e4793155292c",
+    "rapport_sha256": "554e97e4d1253f7dcc66d08c9992ec96cf7a4195ca2e3d954fb5464ddb07a1ce"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 17 questions de sciences de l’ingénieur et les 22 questions de physique sont traitées. Huit figures originales explicitent le montage, les deux boucles de commande, les branches d’énergie et d’effort, les configurations du film et les mesures du CBOOA."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "SI.3",
+      "fichier": "figures/plateforme-effort.svg",
+      "legende": "Coupe dans le plan vertical. La réaction et le moment sont mesurés en S. Le bras de levier du poids en G₁ se lit sur l’horizontale."
+    },
+    {
+      "numero": 2,
+      "question": "SI.11",
+      "fichier": "figures/boucles-vitesse-position.svg",
+      "legende": "Commande de l’exosquelette. Les deux retours aboutissent à l’entrée négative des sommateurs. La vitesse de la boucle interne provient du codeur."
+    },
+    {
+      "numero": 3,
+      "question": "P.5",
+      "fichier": "figures/energies-compression-flexion.svg",
+      "legende": "Énergies à déplacement fixé. La branche basse change à ε = εs."
+    },
+    {
+      "numero": 4,
+      "question": "P.7",
+      "fichier": "figures/effort-au-seuil.svg",
+      "legende": "Effort normalisé dans le modèle à deux branches. Les deux valeurs unilatérales au seuil se lisent séparément."
+    },
+    {
+      "numero": 5,
+      "question": "P.15",
+      "fichier": "figures/normales-dans-epaisseur.svg",
+      "legende": "Déformation locale. À une même abscisse, les couches et leurs normales changent d’orientation lorsque z varie."
+    },
+    {
+      "numero": 6,
+      "question": "P.17",
+      "fichier": "figures/couches-du-premier-mode.svg",
+      "legende": "Couches du film pour le premier mode vertical. Les déplacements oscillants s’annulent aux plaques et culminent au milieu. L’amplitude est agrandie pour la lecture."
+    },
+    {
+      "numero": 7,
+      "question": "P.18",
+      "fichier": "figures/energie-amplitude.svg",
+      "legende": "Comparaison des polynômes réduits pour les deux signes de S, à même valeur absolue de S et même W. Le minimum se déplace vers une amplitude positive pour S négatif."
+    },
+    {
+      "numero": 8,
+      "question": "P.22",
+      "fichier": "figures/pente-experimentale.svg",
+      "legende": "Points lus sur la figure 8 du sujet, CBOOA à 78 °C, d’après Delaye, Ribotta et Durand (1973). La pente de la droite donne π / λ."
+    }
+  ],
+  "redaction": "Les 17 questions de sciences de l’ingénieur et les 22 questions de physique sont traitées. Huit figures originales explicitent le montage, les deux boucles de commande, les branches d’énergie et d’effort, les configurations du film et les mesures du CBOOA.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "SI.1",
+      "SI.2",
+      "SI.3",
+      "SI.4",
+      "SI.5",
+      "SI.6",
+      "SI.7",
+      "SI.8",
+      "SI.9",
+      "SI.10",
+      "SI.11",
+      "SI.12",
+      "SI.13",
+      "SI.14",
+      "SI.15",
+      "SI.16",
+      "SI.17",
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "P.5",
+      "P.6",
+      "P.7",
+      "P.8",
+      "P.9",
+      "P.10",
+      "P.11",
+      "P.12",
+      "P.13",
+      "P.14",
+      "P.15",
+      "P.16",
+      "P.17",
+      "P.18",
+      "P.19",
+      "P.20",
+      "P.21",
+      "P.22"
+    ]
+  }
+}
