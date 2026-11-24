@@ -143,6 +143,8 @@
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2026 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/brut.md) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (oral option Calderón, vers 445 à 542) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (oral option Calderón, vers 782 à 921) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-782-a-921_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-782-a-921_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (thème Lyon) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (version et thème Ulm) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
