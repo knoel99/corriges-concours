@@ -8,5 +8,64 @@
   },
   "questions": 0,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-sujet.svg",
+      "question": "Synthèse",
+      "legende": "Un même mot, trois échelles de diversité"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/304%20-ETUDE_ET_SYNTHESE_DE_TEXTE_ESCP_BS_HEC_Paris.pdf",
+    "sujet_sha256": "721ab48cbed475e0ec2ae9d7019cfb60e4a2442744f5ae8d8283c6b5785862fe",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/304%20-%20Etude%20et%20synthe%CC%80se%20de%20textes%20ESCP%20BS.HEC%20Paris%202026.pdf",
+    "rapport_sha256": "c996b07a0943aac62978298f756cdd131e051a6e17355e24b84e8779895b70d2"
+  },
+  "date_revision": "2026-11-24",
+  "nombre_mots_synthese": 300,
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "famille_modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction historique des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Relecture précédemment signalée, détails non renseignés."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification du libellé, des consignes de copie et des critères d’évaluation dans le sujet et le rapport BCE."
+    },
+    {
+      "phase": "revision",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Reprise des trois axes de confrontation à partir des pages imagées de l’original. Nouvelle copie de 300 mots, repères toutes les cinquante unités vérifiés dans les deux éditions. Ajout d’un schéma pédagogique."
+    }
+  ]
 }
