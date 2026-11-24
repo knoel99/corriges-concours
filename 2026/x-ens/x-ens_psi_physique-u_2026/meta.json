@@ -1,0 +1,77 @@
+{
+  "slug": "x-ens_psi_physique-u_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique U",
+    "annee": 2026
+  },
+  "questions": 70,
+  "redaction": "Proposition originale non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_physique_u_26.pdf",
+    "rapport_jury": null
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Confrontation des 70 réponses aux questions du sujet et à ses graphiques. Contre-calcul indépendant de la dissipation thermique, de l’amplitude de la sphère, du coefficient cubique aux fréquences de combinaison et contre-lecture indépendante de la figure 5."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q03-fronts-ondes.svg",
+      "question": "Q3",
+      "legende": "Les fronts de pression se déplacent normalement à eux-mêmes de c Δt pendant Δt. Les plans sont vus en coupe."
+    },
+    {
+      "fichier": "figures/q15-flux-thermique.svg",
+      "question": "Q15",
+      "legende": "Bilan sur deux faces opposées. Une augmentation du courant thermique le long de x correspond à une perte de chaleur de la tranche."
+    },
+    {
+      "fichier": "figures/q27-attenuation.svg",
+      "question": "Q27",
+      "legende": "Pour une même onde, le carré de l’amplitude atteint 1/e à la distance δ et l’amplitude à la distance 2δ."
+    },
+    {
+      "fichier": "figures/q39-sphere-pulsante.svg",
+      "question": "Q39",
+      "legende": "À travers des sphères concentriques, le flux surfacique décroît en 1/r² et l’aire croît en r². La puissance se conserve."
+    },
+    {
+      "fichier": "figures/q42-retard-azimut.svg",
+      "question": "Q42",
+      "legende": "Une source à gauche donne un retard droite moins gauche positif. La pente de la courbe de retard est maximale devant la tête."
+    },
+    {
+      "fichier": "figures/q54-effet-de-sol.svg",
+      "question": "Q54",
+      "legende": "À gauche, trajet direct et trajet réfléchi reconstruit avec une source image. À droite, les creux aux demi-entiers correspondent à des ondes en opposition de phase."
+    },
+    {
+      "fichier": "figures/q57-resonance.svg",
+      "question": "Q57",
+      "legende": "Le pic de déplacement se rapproche de la pulsation propre lorsque Q augmente. La phase du phasor pour la convention exp(−iωt) atteint 90° à ωₙ."
+    },
+    {
+      "fichier": "figures/q58-tonotopie.svg",
+      "question": "Q58",
+      "legende": "La loi de raideur exponentielle produit une fréquence propre proportionnelle à exp(−z/(2ℓ)). Le facteur entre base et apex vaut environ douze."
+    },
+    {
+      "fichier": "figures/q65-seuil-oscillation.svg",
+      "question": "Q65",
+      "legende": "Sous le seuil la membrane au repos est stable. Au-dessus, le frottement cubique stabilise une oscillation dont l’amplitude croît en racine carrée de l’excès de gain."
+    },
+    {
+      "fichier": "figures/q69-produits-distortion.svg",
+      "question": "Q69",
+      "legende": "Positions des raies, sans échelle d’amplitude. Le spectre imprimé identifie le produit bas à 2500 Hz. Le produit haut prévu à 4492 Hz se situe en bord de bande."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "x-ens_mp_maths-a_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI",
+    "matiere": "Maths A",
+    "annee": 2023
+  },
+  "questions": 41,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "figures": [
+    {
+      "fichier": "figures/q5-produits-imaginaires.svg",
+      "question": "Q5a",
+      "legende": "Les trois relations cycliques donnent les produits des vecteurs de base imaginaires."
+    },
+    {
+      "fichier": "figures/q8-rotation-angle-double.svg",
+      "question": "Q8b",
+      "legende": "Dans le plan de base (w, vw), la conjugaison tourne w d’un angle double du paramètre de u."
+    },
+    {
+      "fichier": "figures/q10-fixer-unite.svg",
+      "question": "Q10a",
+      "legende": "Une multiplication à gauche ramène l’image de l’unité sur l’unité."
+    },
+    {
+      "fichier": "figures/q16-deformation-ellipse.svg",
+      "question": "Q16a",
+      "legende": "Le disque et l’ellipse déformée ont même aire. L’image par la moyenne des deux matrices possède une aire supérieure. Illustration pour r = 0,55 avec AB égal à l’identité."
+    },
+    {
+      "fichier": "figures/q18-bissections.svg",
+      "question": "Q18",
+      "legende": "Les deux diamètres fournissent quatre arcs. La normalisation des sommes insère leurs milieux, puis ceux des sous-arcs."
+    },
+    {
+      "fichier": "figures/q24-deux-sous-espaces.svg",
+      "question": "Q24a",
+      "legende": "La multiplication à gauche par β échange les deux sous-espaces propres de T."
+    },
+    {
+      "fichier": "figures/q26-decomposition.svg",
+      "question": "Q26",
+      "legende": "Le terme y est la composante de x perpendiculaire à l’unité. Les deux vecteurs 1 + y et 1 − y ont alors la même norme."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20SUJET%20DE%20MATHEMATIQUES%20A%20%28XLSR%29.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20RAPPORT%20ECRIT%20MATHEMATIQUES%20A%20%28XLSR%29.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Les 41 réponses suivent le sujet du 17 avril 2023 et les observations du jury. Les preuves de la déformation à déterminant maximal et des bissections (Q16–19) et celles du commutant et des algèbres normées (Q23–27) ont fait l’objet de contre-vérifications indépendantes."
+  }
+}

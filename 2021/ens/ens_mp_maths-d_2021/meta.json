@@ -1,0 +1,57 @@
+{
+  "slug": "ens_mp_maths-d_2021",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2021
+  },
+  "questions": 40,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par IA à partir des documents officiels de la session 2021.",
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/21_mp_sujet_mathd.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathd.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/i3-chemin-triangulaire.svg",
+      "question": "I.3a",
+      "legende": "Deux hausses et quatre facteurs diagonaux sur un chemin de longueur six."
+    },
+    {
+      "fichier": "figures/i4-bloc-jordan.svg",
+      "question": "I.4",
+      "legende": "Pour le bloc de Jordan de taille deux, la racine n-ième de la norme rejoint le rayon spectral malgré le coefficient hors diagonale égal à n."
+    },
+    {
+      "fichier": "figures/ii3-lois-binomiales.svg",
+      "question": "II.3a",
+      "legende": "Les barres donnent les probabilités du nombre relatif de facteurs égaux à 2. Le taux typique normalisé est 1/2, distinct du taux de la moyenne normalisé par log 2."
+    },
+    {
+      "fichier": "figures/iii3-echange-axes.svg",
+      "question": "III.3b",
+      "legende": "Un quart de tour change l’axe occupé et laisse la longueur inchangée. Le prochain facteur diagonal dilate ou contracte selon cet axe."
+    },
+    {
+      "fichier": "figures/iii3-courbes-exposants.svg",
+      "question": "III.3g",
+      "legende": "Pour la loi de l’échangeur, le logarithme de la moyenne croît à un taux strictement positif lorsque 0 < p < 1, tandis que la moyenne du logarithme a un taux nul."
+    },
+    {
+      "fichier": "figures/iv1-decoupage-blocs.svg",
+      "question": "IV.1",
+      "legende": "Les numéros désignent les tirages dans l’ordre chronologique. La multiplication finale place le bloc le plus récent à gauche."
+    },
+    {
+      "fichier": "figures/iv5-produit-par-blocs.svg",
+      "question": "IV.5c",
+      "legende": "Dans le produit de deux blocs triangulaires, chaque terme hors diagonale associe une colonne à un bloc diagonal."
+    }
+  ]
+}

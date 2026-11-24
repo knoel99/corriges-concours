@@ -1,0 +1,92 @@
+{
+  "slug": "ens_pc_physique-c_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique C",
+    "annee": 2026
+  },
+  "questions": 67,
+  "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture croisée sur l’énoncé officiel",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_pc_phys_c_u_26.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-forces-au-repos.svg",
+      "question": "Q1",
+      "legende": "Dans le repère de la pente, les trois centres forment un triangle équilatéral. Les réactions sont portées par les rayons aux points de contact et le poids est appliqué en O."
+    },
+    {
+      "fichier": "figures/q08-barriere-entre-bosses.svg",
+      "question": "Q8",
+      "legende": "Énergie potentielle en unités mgd, pour une pente de 8°. La ligne d’énergie négative rencontre une barrière. La ligne positive permet le passage de la bosse entière."
+    },
+    {
+      "fichier": "figures/q16-choc-et-projection.svg",
+      "question": "Q16",
+      "legende": "À chaque collision, la tangente tourne de 60°. La vitesse sortante est la projection de la vitesse entrante sur cette nouvelle tangente. Sa norme est divisée par deux."
+    },
+    {
+      "fichier": "figures/q19-convergence-vitesse.svg",
+      "question": "Q19",
+      "legende": "La récurrence divise l’écart au carré de vitesse stationnaire par quatre à chaque choc. Deux conditions initiales illustrent l’approche par excès ou par défaut, tant que le passage reste possible."
+    },
+    {
+      "fichier": "figures/q24-cycle-granulaire.svg",
+      "question": "Q24",
+      "legende": "À la montée, le grain démarre à 30°. À la descente, il ne s’arrête qu’au seuil dynamique voisin de 10°. Parmi les deux états dans l’intervalle, l’histoire détermine celui observé."
+    },
+    {
+      "fichier": "figures/q33-champ-sans-anisotropie.svg",
+      "question": "Q33",
+      "legende": "Sans anisotropie, la projection de l’aimantation change de signe dès que le champ change de signe. Les parcours de montée et de descente ont le même graphe."
+    },
+    {
+      "fichier": "figures/q36-branches-sur-axe.svg",
+      "question": "Q36",
+      "legende": "Orientations stationnaires entre 0 et 2π. Les traits continus sont les orientations axiales stables. Les tirets indiquent les positions instables et les points de disparition de barrière sont en orange."
+    },
+    {
+      "fichier": "figures/q37-profils-energie.svg",
+      "question": "Q37",
+      "legende": "Profils sur un tour pour trois valeurs de h = B₀/Bc. Sous champ fort un seul minimum subsiste. Dans la zone intermédiaire, deux minima locaux de profondeurs différentes coexistent."
+    },
+    {
+      "fichier": "figures/q40-boucle-rectangulaire.svg",
+      "question": "Q40",
+      "legende": "La montée suit la branche basse jusqu’au champ coercitif positif. La descente suit la branche haute jusqu’au champ coercitif négatif. La surface du rectangle vaut 4 Ms Bc en unités physiques."
+    },
+    {
+      "fichier": "figures/q49-basculement-oblique.svg",
+      "question": "Q49",
+      "legende": "À 45° de l’axe facile, l’angle saute à champ constant en quittant une branche stable. Les flèches indiquent le sens du cycle."
+    },
+    {
+      "fichier": "figures/q51-cycle-aimantation-oblique.svg",
+      "question": "Q51",
+      "legende": "Projection de l’aimantation lors du cycle oblique. Les deux sauts ont lieu aux champs réduits −1 et +1."
+    },
+    {
+      "fichier": "figures/q58-energie-paroi.svg",
+      "question": "Q58",
+      "legende": "Une paroi épaisse réduit le coût d’échange et augmente le coût d’anisotropie. Leur égalité fixe l’épaisseur minimisant la somme."
+    },
+    {
+      "fichier": "figures/q65-paroi-reversible.svg",
+      "question": "Q65",
+      "legende": "À l’amplitude de 1 T, seule la branche centrale est parcourue, avec une pente différente aux champs positifs et négatifs."
+    },
+    {
+      "fichier": "figures/q66-sauts-paroi.svg",
+      "question": "Q66",
+      "legende": "Cycles établis de position de la paroi pour deux amplitudes. Les flèches horizontales suivent les sauts à champ constant."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Relectures indépendantes du sujet de 67 questions et des 14 schémas. Contre-calculs des seuils du grain et des chocs, du renversement oblique et des pertes, de l’épaisseur optimale de la paroi et des six sauts du grand cycle de piégeage."
+  }
+}

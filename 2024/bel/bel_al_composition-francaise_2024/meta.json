@@ -1,0 +1,39 @@
+{
+  "slug": "bel_al_composition-francaise_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Composition française",
+    "annee": 2024
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202024%20OK.pdf",
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/honneur-et-stances.svg",
+      "question": "Partie I",
+      "legende": "La variation du vers fait éprouver le coût d’un geste que commande le code de l’honneur."
+    },
+    {
+      "fichier": "figures/regards-dans-la-dispute.svg",
+      "question": "Partie II",
+      "legende": "Le spectateur de la comédie peut voir le dispositif qui demeure caché aux jeunes gens."
+    },
+    {
+      "fichier": "figures/double-inconstance.svg",
+      "question": "Partie III",
+      "legende": "La satisfaction des personnages et le jugement du spectateur peuvent diverger."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

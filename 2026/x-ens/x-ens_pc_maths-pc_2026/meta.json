@@ -38,6 +38,26 @@
       "fichier": "figures/q31-point-fixe.svg",
       "question": "Q31",
       "legende": "Pour h = 0,2, x*(β, h) est l'abscisse de l'intersection positive de y = x et y = th(h + 2βx) ; pour β = 0,8, les deux intersections négatives ne sont pas des maxima"
+    },
+    {
+      "fichier": "figures/q21-taux-binomial.svg",
+      "question": "Q21",
+      "legende": "Le taux binomial exact se rapproche de J et atteint ln 2 aux deux extrémités."
+    },
+    {
+      "fichier": "figures/q32-loi-critique.svg",
+      "question": "Q32",
+      "legende": "Au point critique, la courbe exacte rejoint la loi de puissance de pente un tiers en coordonnées logarithmiques."
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20PC.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/PC_Maths%20OK.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Lecture des 32 questions et du rapport 2026. Vérification uniforme de la constante du taux et de la limite variationnelle après Q22, vérification numérique de la loi critique de Q32. Contre-relecture indépendante des bornes au mode, des cas extrêmes et du passage au maximum continu."
+  }
 }
