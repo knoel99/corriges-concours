@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_cnel-lettres_apollonios-de-rhodes-les-argonautiques_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Apollonios de Rhodes — les Argonautiques",
+    "annee": 2022
+  },
+  "intitule": "Apollonios de Rhodes — les Argonautiques",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/dsa-cnel2022-5.pdf",
+    "sujet_sha256": "311feb719d74e99ef19ced146f8fd64c2e314e98052435186062706ebe10ffa7",
+    "references": [],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/dsa-rapport-cnel2022.pdf",
+    "rapport_sha256": "29e4f693b88515843f7fea133a19bc7fb5265f26dc81e9580d1fd204e40c2a06"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ecouter-orphee.svg",
+      "question": "Explication",
+      "legende": "De la querelle à la libation"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de deux pages de 2022, particulièrement la section sur les écrits individualisés, le retour au texte et la portée de la consigne propre au candidat."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication des deux voix, de la querelle, du chant cosmogonique et de son effet sur les Argonautes."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la progression, des citations et des limites de l’extrait au sujet original bilingue. Vérification du guide, de la figure et du rapport lorsqu’il est disponible."
+    }
+  ]
+}

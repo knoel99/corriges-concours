@@ -4,7 +4,9 @@
 
 **Rédaction (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Périmètre.** La synthèse est traitée. Parmi les 18 questions numérotées, les Q1, 11, 12 et 14 sont traitées intégralement et les Q13, 17 et 18 partiellement. Les Q2 à 10, 15 et 16 sont hors périmètre. Les réponses partielles portent sur les paramètres inflammatoires et hématologiques, leur lecture clinique et les limites de cette cohorte de 2020.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Périmètre.** La synthèse et les Q1, 5 et 11 à 18 sont traitées. La Q6 couvre les rôles de l’actine et du témoin de comparaison. L’attribution du fragment en Q6 et les expériences des Q2 à 4 et 7 à 10 restent hors couverture.
 
 ## I — Synthèse sur la diversité des virus
 
@@ -56,6 +58,28 @@ La GFP émet dans le vert. L’iodure de propidium lié aux acides nucléiques �
 
 ![Après absorption, le fluorophore perd une partie de son énergie avant de réémettre un photon de plus grande longueur d’onde.](figures/excitation-et-emission.svg)
 
+### Question 5
+
+> [!INDICATION]
+> Un Western blot répond à deux questions différentes. Où migre la protéine dans un gel et quelle bande est reconnue par l’anticorps ?
+
+#### Solution
+
+Les protéines de chaque échantillon sont extraites et solubilisées. On les dénature en présence de SDS, puis on les sépare par électrophorèse sur gel de polyacrylamide. La migration, comparée à celle d’un marqueur de masse, renseigne sur leur **masse moléculaire apparente**. On transfère les protéines séparées sur une membrane et l’on bloque les sites de fixation non spécifique. Un anticorps primaire reconnaît la protéine recherchée. Après lavage, un anticorps secondaire marqué permet habituellement de révéler les bandes. Un primaire directement marqué convient aussi. Une référence de charge permet de vérifier la comparabilité des pistes avant de discuter les intensités.
+
+**Vérification.** Un marqueur de masse situe une bande sur l’axe du gel. Une référence de charge renseigne sur la quantité déposée ou transférée.
+
+### Question 6 — éléments de réponse
+
+> [!INDICATION]
+> Pour chaque témoin, identifier la différence entre pistes qu’il permet de contrôler.
+
+#### Solution
+
+L’actine a ici une expression supposée constante. Des bandes d’actine d’intensités comparables étayent la comparabilité de la quantité totale de protéines déposées et du transfert. Le vecteur vide sert de référence pour la contribution du matériel ajouté. Il permet de comparer des conditions qui comprennent un apport analogue de vecteur et de distinguer cet effet de celui du produit supplémentaire étudié. La question sur l’identité du fragment détecté reste hors couverture.
+
+**Vérification.** Une variation importante de la référence de charge rend une comparaison directe des intensités des autres bandes peu fiable.
+
 ### Question 11
 
 > [!INDICATION]
@@ -84,14 +108,14 @@ Pour un ensemble prescrit de gènes, un profil d’expression peut être obtenu 
 
 On normalise les résultats. L’énoncé précise que les profils ont été rapportés à des gènes d’expression stable. Une référence qui varierait elle-même avec la gravité déplacerait artificiellement les rapports. Les cellules comparées doivent aussi être de composition suffisamment proche : un changement de proportion de populations lymphocytaires peut faire varier une moyenne globale, même si chaque cellule d’un type donné conserve son expression. Les unités normalisées et la légende de la figure 7 ne désignent pas une technique unique.
 
-### Question 13 — éléments de réponse
+### Question 13
 
 > [!INDICATION]
-> Sur les panneaux A et B, suivre les moyennes noires de T à C. Les lignes grises ne représentent pas un suivi longitudinal des mêmes patients.
+> Sur les trois panneaux, suivre les moyennes noires de T à C et chercher les changements de sens. Les lignes grises ne représentent pas un suivi longitudinal des mêmes patients.
 
 #### Solution
 
-Sur le panneau 7A, la moyenne d’expression des gènes inflammatoires et immunitaires augmente des témoins jusqu’aux groupes sévère et critique. Sur le panneau 7B, les gènes de cytokines et de réponse aux cytokines montrent aussi une moyenne croissante, avec une progression plus faible entre les deux derniers groupes. Les ordonnées sont normalisées ; il ne s’agit pas de concentrations plasmatiques. La légende demande de lire la moyenne noire et de ne pas interpréter les liaisons grises. La figure ne fournit pas ici de test permettant de qualifier chaque écart comme significatif. Le panneau C est hors du périmètre de cette réponse.
+Sur le panneau 7A, la moyenne d’expression des gènes inflammatoires et immunitaires augmente des témoins jusqu’aux groupes sévère et critique. Sur le panneau 7B, les gènes de cytokines et de réponse aux cytokines montrent aussi une moyenne croissante, avec une progression plus faible entre les deux derniers groupes. Les ordonnées sont normalisées ; il ne s’agit pas de concentrations plasmatiques. La légende demande de lire la moyenne noire et de ne pas interpréter les liaisons grises. La figure ne fournit pas ici de test permettant de qualifier chaque écart comme significatif. En 7C, la moyenne des gènes de réponse à l’interféron monte fortement de T à M, puis s’infléchit de M à S et de S à C. Elle reste au-dessus de celle des témoins. Le maximum en M distingue ce profil de la hausse plus régulière de l’ensemble des gènes inflammatoires en A. Ce sont des comparaisons entre groupes de gravité, pas le devenir successif d’une même personne.
 
 ### Question 14
 
@@ -110,7 +134,35 @@ La protéine plasmatique peut être sécrétée par d’autres cellules sanguine
 
 **Vérification.** Une graduation de 1 à 10 puis de 10 à 100 sur une même distance correspond à des facteurs multiplicatifs. On ne doit donc pas déduire une différence absolue de concentration de la seule hauteur visuelle des barres.
 
-### Question 17 — éléments de réponse
+### Question 15
+
+> [!INDICATION]
+> Lire séparément l’ARN des cellules et la protéine dans le plasma. Repérer les paires de groupes pour lesquelles une différence est indiquée.
+
+#### Solution
+
+En 9B, les valeurs moyennes d’ARNm d’IFNA2 dans les cellules sanguines augmentent de T à C, sans différence signalée comme significative. Le groupe critique ne présente donc pas de diminution établie de cet ARN. En 9C, l’IFN-α2 plasmatique est plus élevé en M qu’en T (***). Il est plus faible en C qu’en M (*), avec un groupe S intermédiaire. L’échelle est logarithmique et les valeurs individuelles se recouvrent.
+
+L’énoncé indique par ailleurs que les gènes de la voie de réponse à l’interféron restent exprimés. C’est donc la **disponibilité de la protéine IFN-α2 circulante**, en amont de la réponse à ce signal, qui paraît surtout affectée chez les patients critiques. Une production ou une sécrétion moins soutenue est compatible avec les observations. Un dosage plasmatique intègre aussi la disparition de la protéine. Ces mesures ne permettent pas d’identifier à elles seules une étape moléculaire défectueuse.
+
+**Vérification.** Le compartiment qui fournit l’ARN et celui dans lequel la protéine est dosée sont différents. Une concentration plasmatique résulte à la fois des apports et de l’élimination.
+
+### Question 16
+
+> [!INDICATION]
+> Comparer les mêmes fenêtres temporelles en A, puis les mêmes groupes de patients en B et C. Le pourcentage écrit au-dessus de C a une signification distincte de la hauteur des barres.
+
+#### Solution
+
+Le panneau 10A apporte une dimension temporelle. Entre les jours 8–10, 11–13 et 14–17, les moyennes plasmatiques d’IFN-α2 restent de l’ordre de quelques milliers de fg/mL chez les patients modérément atteints. Chez les patients sévères, la moyenne diminue de quelques milliers à quelques dizaines de fg/mL. Chez les patients critiques, elle est déjà plus basse dans la première fenêtre. Les dernières fenêtres ne comportent que peu de mesures. Aucun test n’est fourni pour A et ces groupes de points ne démontrent pas la trajectoire individuelle de chaque patient.
+
+Vers le dixième jour, les valeurs nasales de Ct se recouvrent largement entre M, S et C (10B), sans différence significative indiquée. Le panneau 10C présente une observation différente dans le plasma. Un ARN y est détecté chez 0 % des témoins, 60 % des patients M, 76 % des S et 88 % des C. Les concentrations en copies/mL sont plus élevées en S et en C qu’en M dans les comparaisons marquées d’une étoile. Aucune comparaison S–C significative n’est indiquée. La détection d’un ARN dans un prélèvement ne renseigne pas, à elle seule, sur la présence de particules infectieuses.
+
+![Les barres donnent la proportion de personnes avec un ARN détectable dans le plasma. Les pourcentages du panneau 10C ne mesurent ni la quantité moyenne d’ARN ni une probabilité individuelle de forme grave.](figures/detection-plasma-cohorte.svg)
+
+**Vérification.** Le chiffre 88 % a pour dénominateur les patients du groupe critique examinés. Il ne donne pas la probabilité pour une personne dont le dosage est positif d’être en état critique.
+
+### Question 17
 
 > [!INDICATION]
 > Distinguer un paramètre associé à la gravité dans un groupe et un seuil fiable pour une personne.
@@ -119,15 +171,15 @@ La protéine plasmatique peut être sécrétée par d’autres cellules sanguine
 
 Parmi les paramètres inflammatoires et hématologiques étudiés, la numération lymphocytaire absolue et les concentrations plasmatiques d’IL-6 et de TNF méritent d’être explorées en complément de l’état clinique. La concentration totale d’IgG sépare mal les groupes sur la figure 6E. Les quantités d’ARN d’IL-6 mesurées dans les lymphocytes ne remplacent pas les concentrations de cytokines circulantes. La plupart des distributions se recouvrent.
 
-Un marqueur mesuré le même jour que la sévérité peut lui être associé sans prédire une aggravation future. Il faudrait une cohorte indépendante, des prélèvements à des délais comparables et une évaluation de la sensibilité et de la spécificité avant de fixer un seuil individuel. La comparaison des paramètres virologiques et des autres volets de la réponse antivirale est hors périmètre.
+Un marqueur mesuré le même jour que la sévérité peut lui être associé sans prédire une aggravation future. Il faudrait une cohorte indépendante, des prélèvements à des délais comparables et une évaluation de la sensibilité et de la spécificité avant de fixer un seuil individuel. À dix jours des premiers symptômes, une concentration plasmatique plus basse d’IFN-α2 et un ARN plasmatique plus souvent détecté et plus abondant caractérisent les formes graves par comparaison aux formes modérées. Ces mesures peuvent compléter le bilan d’admission. Le Ct nasal ne discrimine guère les trois groupes. La date du prélèvement compte pour l’IFN-α2, dont les valeurs en S évoluent selon la fenêtre considérée.
 
 **Vérification.** Un point de la zone de recouvrement de deux groupes peut appartenir à chacun. Même si le test de comparaison des groupes est significatif, cette observation ne reçoit pas automatiquement une classe de sévérité correcte.
 
-### Question 18 — éléments de réponse
+### Question 18
 
 > [!INDICATION]
 > Une cohorte observationnelle permet de proposer une hypothèse thérapeutique. Un essai comparatif répond à une autre question, celle du bénéfice pour les patients.
 
 #### Solution
 
-L’augmentation des protéines inflammatoires circulantes motive l’hypothèse qu’un traitement diminuant une réponse inflammatoire excessive pourrait bénéficier à certains patients gravement atteints. La comparaison devrait porter sur des groupes comparables recevant les soins usuels, avec ou sans l’intervention étudiée, et des critères cliniques comme le recours à une assistance respiratoire ou la mortalité. Une baisse d’un marqueur isolé ne démontrerait pas à elle seule un bénéfice clinique. La vaccination relève de la prévention avant la maladie. Elle ne répond pas à la même situation que le traitement d’une forme grave déjà déclarée. Cette réponse se limite au versant clinique de l’élargissement demandé.
+L’augmentation des protéines inflammatoires circulantes motive l’hypothèse qu’un traitement diminuant une réponse inflammatoire excessive pourrait bénéficier à certains patients gravement atteints. La comparaison devrait porter sur des groupes comparables recevant les soins usuels, avec ou sans l’intervention étudiée, et des critères cliniques comme le recours à une assistance respiratoire ou la mortalité. Une baisse d’un marqueur isolé ne démontrerait pas à elle seule un bénéfice clinique. La vaccination relève de la prévention avant la maladie. Elle ne répond pas à la même situation que le traitement d’une forme grave déjà déclarée. La baisse de l’IFN-α2 circulant chez certains patients suggère aussi de tester, dans un essai distinct, l’intérêt d’un apport d’interféron. Le délai depuis les premiers symptômes et la gravité initiale devraient être documentés. Ces résultats de cohorte ne fixent ni indication thérapeutique ni moment optimal.

@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_anglais-commentaire-et-traduction_2019",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (commentaire et traduction)",
+    "annee": 2019
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Commentaire%20et%20traduction%20en%20LVE.pdf#page=4",
+    "sujet_sha256": "2bd23d0dbb0cf0decbef400bf4f915dcdf3e0ee739454679f39f79836660887c",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/Anglais_2019.pdf#page=1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois usages du nom dans le récit"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire en anglais sur l’ensemble de l’extrait de John Irving, version française depuis le jugement sportif de Cromwell jusqu’à Dover, guide sur la conjecture et les registres du récit, schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "L’épreuve commune porte sur le premier chapitre de A Prayer for Owen Meany de John Irving (1989). John Wheelwright se souvient de son enfance dans le New Hampshire. Le passage à traduire commence au jugement d’Oliver Cromwell sur le joueur et s’arrête au peuplement de Dover."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}

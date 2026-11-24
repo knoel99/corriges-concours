@@ -1,0 +1,63 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2018,
+    "duree_heures": 5
+  },
+  "questions": 64,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://prepahelp.com/docs/annales/x-ens/psi/prepahelp-x-ens-2018-psi-si-sujet.pdf",
+    "sujet_sha256": "ed384f44a18aa5d16f770c79af7212034d81413afa5f89d2f2ab976695f1a006",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2018_Rapports_Ecrit_PSI_SI.pdf",
+    "rapport_sha256": "b6854c1c24de5d1741546415623c497d037d7341c56eb689857d8936a7f10051"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-bases.svg",
+      "question": "Q1",
+      "legende": "Figures planes de changement de base autour de la normale commune. Les angles sont comptés dans le sens direct."
+    },
+    {
+      "fichier": "figures/q07-graphe.svg",
+      "question": "Q7",
+      "legende": "Liaisons entre les quatre solides. Les deux liaisons arbre–bâti sont indiquées sur la même branche."
+    },
+    {
+      "fichier": "figures/q14-pressions.svg",
+      "question": "Q14",
+      "legende": "Parcours des deux flancs de la spirale mobile pour θ = 0, redessiné d’après le DR1. Les points matérialisent les scellements où change la poche contiguë."
+    },
+    {
+      "fichier": "figures/q38-thermique.svg",
+      "question": "Q38",
+      "legende": "Blocs du bilan thermique. La température du fluide est la somme de celle de la chambre et de la chute thermique RChFl Q."
+    },
+    {
+      "fichier": "figures/q39-moteur.svg",
+      "question": "Q39",
+      "legende": "Retour négatif de force contre-électromotrice. La dernière fonction tient compte du couple résistant proportionnel à Ω."
+    },
+    {
+      "fichier": "figures/q60-bode.svg",
+      "question": "Q60",
+      "legende": "Transmission des perturbations de température. La bande verte se situe entre les pulsations de cassure. Le gain exact dépasse brièvement la limite de 8 %."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 64 questions sur la PAC à compresseur Scroll, d’après le sujet intégral reproduit avec garde officielle, les quatre documents réponse, la table de sélection et le rapport du jury ENS Paris-Saclay. Six dessins originaux. Contrôles des fermetures, des torseurs, des pressions, des lignes catalogue, des équations de transfert et des réponses fréquentielles."
+    }
+  ]
+}
