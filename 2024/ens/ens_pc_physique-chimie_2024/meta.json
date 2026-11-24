@@ -1,0 +1,166 @@
+{
+  "slug": "ens_pc_physique-chimie_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2024
+  },
+  "questions": 65,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/07/24_pc_sujet_phychi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/07/24_pc_rap_phychi_lyon.pdf",
+    "sujet_sha256": "d6b21e1e97819dc70903c9b3e7b5357f6fb5c0f61931902b64c10da2a614cb69",
+    "rapport_sha256": "36f823bfafa199d07206bf4b404256e4c3edf955db2d5a174727fb473a77fb1f"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 28 questions de physique, dont les huit lectures de la question 11, et les 37 questions de chimie sont traitées. Les deux numérotations de l’énoncé sont précédées ici de P et C."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/forces-et-contact.svg",
+      "legende": "La réaction part de I. Sa droite d’action passe par G, où se croisent celles du poids et de la traction.",
+      "question": "P1"
+    },
+    {
+      "fichier": "figures/loi-coulomb.svg",
+      "legende": "La force de frottement s’oppose à la vitesse de glissement. En adhérence, elle s’ajuste dans l’intervalle statique.",
+      "question": "P3"
+    },
+    {
+      "fichier": "figures/lecture-phase-de-glissement.svg",
+      "legende": "Reconstruction avec les paramètres lus. Le trait bleu pointillé indique la position effectivement maintenue après le premier arrêt.",
+      "question": "P11"
+    },
+    {
+      "fichier": "figures/trois-cycles.svg",
+      "legende": "Le premier palier part du repos. Les plateaux suivants sont brefs par rapport au glissement et le tracteur continue de se déplacer.",
+      "question": "P12"
+    },
+    {
+      "fichier": "figures/mode-de-flexion.svg",
+      "legende": "La fibre centrale a une tangente verticale à l’encastrement. Sa vitesse locale est proportionnelle au carré de la distance réduite à cette extrémité.",
+      "question": "P17"
+    },
+    {
+      "fichier": "figures/fibres-et-energie.svg",
+      "legende": "Des fibres opposées ont des allongements de signes contraires. Leurs énergies, proportionnelles au carré de l’allongement, s’additionnent.",
+      "question": "P21"
+    },
+    {
+      "fichier": "figures/palier-anodique.svg",
+      "legende": "Schéma qualitatif des vagues anodiques. Le palier du phénol diminue, puis l’oxydation de l’eau complète le courant imposé.",
+      "question": "C10"
+    },
+    {
+      "fichier": "figures/deux-regimes-depollution.svg",
+      "legende": "Courbes de modèle illustrant le changement de régime lu sur la figure 2. Le trait vertical indique une transition vers 0,8 heure.",
+      "question": "C14"
+    },
+    {
+      "fichier": "figures/conversion-des-reacteurs.svg",
+      "legende": "Les trois expressions théoriques sont comparées à aire et débit identiques. La cascade se rapproche du piston.",
+      "question": "C19"
+    },
+    {
+      "fichier": "figures/dco-de-cellule-en-cellule.svg",
+      "legende": "Lecture approchée de la figure 7. La quantité absolue éliminée dans les dernières cellules devient plus faible.",
+      "question": "C24"
+    },
+    {
+      "fichier": "figures/deux-sites-allyliques.svg",
+      "legende": "L’extrémité qui se lie au carbone de l’aldéhyde détermine si l’alcool formé conserve un alcène interne ou terminal.",
+      "question": "C30"
+    },
+    {
+      "fichier": "figures/deux-entrees-cathode.svg",
+      "legende": "La veine A arrive près de la cathode. Une réduction sélective y précède la rencontre des partenaires à l’interface des deux veines.",
+      "question": "C35"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir du sujet et du rapport de l’ENS de Lyon 2024. Vérification des courbes de glissement, de la géométrie et des mesures de la craie, des données de réacteurs et des signaux RMN. Douze schémas et graphiques originaux."
+    }
+  ]
+}
