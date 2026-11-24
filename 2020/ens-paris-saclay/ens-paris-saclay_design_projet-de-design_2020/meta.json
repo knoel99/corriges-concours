@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_projet-de-design_2020",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Projet de design",
+    "annee": 2020
+  },
+  "redaction": "Rédaction originale dans le champ graphique choisi sur ce sujet commun aux trois spécialités. Lecture de l’énoncé et des vues du square, quatre planches A3 avec recherche, panneaux au 1:5, carte A6 et proposition de vote participatif.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2020/2020_Sujet_1A_Design_Epreuve_Pratique.pdf",
+    "sujet_sha256": "a804ab731d4caf090df8d5c9d16a30d37d3b08cba50dbc05b7e7f9fc619470d0",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=541",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-square.svg",
+      "question": "Projet, planche 1",
+      "legende": "Le schéma situe deux moments de lecture entre l’entrée du square et la fontaine."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-signes.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois signes sont comparés, la bouteille, les strates puis la goutte stratifiée."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-panneaux.svg",
+      "question": "Projet, planche 3",
+      "legende": "Les deux faces de signalétique portent les messages pratiques et un cartouche d’avis à actualiser."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-participation.svg",
+      "question": "Projet, planche 4",
+      "legende": "Le recto et le verso du carton A6 donnent un relais de quartier au projet."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale dans le champ graphique choisi sur ce sujet commun aux trois spécialités. Lecture de l’énoncé et des vues du square, quatre planches A3 avec recherche, panneaux au 1:5, carte A6 et proposition de vote participatif."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Le square avant la fontaine",
+      "Garder un signe que chacun peut tracer",
+      "Deux panneaux de lecture différente",
+      "Une carte de quartier et un vote"
+    ]
+  }
+}
