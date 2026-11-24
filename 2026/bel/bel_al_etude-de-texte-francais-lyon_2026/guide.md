@@ -10,6 +10,10 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Texte étudié** — Claude Simon, *L’Acacia* (1989), la recherche de la tombe du père.
 
 [Sujet officiel, pp. 6–7](https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=6) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2026-10/Lettres%20Modernes%202026.pdf#page=2)
@@ -66,7 +70,7 @@ La veuve, pourtant, dit un nom. Il est communiqué aux deux femmes et retenu pou
 
 Les réponses des habitants font entendre ce que cette différence de position a de social. Les uns se montrent pleins de bonne volonté et parlent de façon décousue, les autres éprouvent l’impatience de gens interrompus dans leur travail. Le récit cherche une expression plus dure encore et s’arrête sur leur hostilité. Est-ce l’impression qu’en ont gardée les voyageuses ? Est-ce un jugement porté sur elles par ceux à qui elles demandent leur chemin ? Le passage d’un regard à l’autre nous prive d’un poste depuis lequel il serait facile de départager les parties. Les démonstratifs qui introduisent l’ennui ou l’impatience font comme si le lecteur savait de quelle expérience commune il s’agit. Il peut reconnaître la gêne de l’interrogateur aussi bien que la lassitude de celui qui a autre chose à faire.
 
-Enfin, les personnes interrogées regardent à leur tour. Elles découvrent des voiles noirs, une main et son diamant, puis un enfant enveloppé de laine chaude. Le deuil est public dans le vêtement, mais la parure et le confort de l’enfant sont aussi des signes de position sociale. Du même coup, celui à qui pourrait appartenir le souvenir devient un détail du tableau offert aux habitants. On ne nous dit pas ce qu’il pense de cette rencontre. Le simple fait de le placer là, à côté d’une main qui brille, donne à mesurer combien le sens vécu de son voyage excède ce que peuvent en recueillir les passants. Ceux-ci reprennent leurs occupations. Leur geste clôt la scène alors que pour la famille la recherche continue.
+Enfin, les personnes interrogées regardent à leur tour. Elles découvrent des voiles noirs, une main et son diamant, puis un enfant enveloppé de laine chaude. Le deuil est public dans le vêtement, mais la parure et le confort de l’enfant sont aussi des signes de position sociale. Du même coup, celui à qui pourrait appartenir le souvenir devient un détail du tableau offert aux habitants. On ne nous dit pas ce qu’il pense de cette rencontre. Le simple fait de le placer là, à côté d’une main qui brille, donne à mesurer combien le sens vécu de son voyage excède ce que peuvent en recueillir les passants. À la ligne 37, « tournant le dos et retournant à leurs occupations » fait réentendre deux fois le même verbe sous deux constructions. Dans le premier mouvement, les habitants cessent de regarder la famille. Dans le second, le préfixe marque le retour vers une tâche momentanément laissée. Les participes prolongent le geste de ceux qui étaient déjà « regardant » à la ligne précédente. Le croisement des automobiles avait reçu les contours d’un événement au passé simple. La fin de la rencontre se fond dans la durée ordinaire du travail : pour les gens interrogés, la famille qui poursuit sa recherche est déjà passée.
 
 * * *
 

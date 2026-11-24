@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/options_francais_philosophie.pdf#page=2",
-    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_ecrit_francais_option.pdf"
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_ecrit_francais_option.pdf",
+    "sujet_sha256": "8cd8355b7950385419d65c070f638af59b4eb033e929d84f6f08bbb1b3ba7e11",
+    "rapport_sha256": "1c9808a4e09975d4f9c32da598916ef91aecbb3af0b6f2abb14ab80c781df519"
   },
   "figures": [
     {
@@ -91,6 +93,30 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Confrontation au sujet de Giono et au rapport, identité des personnages, portrait comme miroir et deux rôles de Saucisse."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de l’option sur la comédie sociale, l’identité du modèle, les places respectives de Saucisse et de Langlois, et les degrés de certitude."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des deux éditions sur le passage de Giono, de la première épaule à la dernière réplique. Analyse du discours indirect de Mme Tim et de la manière dont Saucisse accède à ses paroles et au silence de Langlois."
     }
   ],
   "provenance": {
