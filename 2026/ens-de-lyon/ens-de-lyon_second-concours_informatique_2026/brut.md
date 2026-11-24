@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Dans les programmes, les noms `Leaf`, `Node` et leurs accesseurs désignent les primitives de l’énoncé. La file `deque` est celle de `collections`. Dans les arbres de décision, l’enfant gauche correspond à la valeur vraie.
 
 ## I. Fonctions booléennes
@@ -54,6 +56,9 @@ Tous les triplets admissibles contiennent la case 2. Testons-la d'abord. Si elle
 ### Question 5
 
 Dans l'arbre initial de $\mathrm{cond}$, la racine teste 0. Si la réponse est vraie, testons 1 pour connaître la sortie $b=x[1]$, puis testons 2 en mettant la même feuille $b$ des deux côtés. Si la réponse à la racine est fausse, testons 2 pour obtenir $b=x[2]$, puis testons 1 avec la même feuille $b$ des deux côtés. On a ajouté un test dont le résultat n'influence pas la sortie. Chacun des huit chemins teste maintenant les trois indices une fois et l'arbre complet représente toujours $\mathrm{cond}$.
+
+Avec $N$ et les feuilles $V,F$ de la question 2, posons $D_v(b)=N(v,b,b)$. L'arbre complet s'écrit
+$$N\bigl(0, N(1,D_2(V),D_2(F)), N(2,D_1(V),D_1(F))\bigr).$$
 
 ### Question 6
 
@@ -205,9 +210,7 @@ def makehasse(cmpl, m):
     for lower, upper in m:
         partner[ids[lower]] = ids[upper]
     facets = [[]]
-    adj = {}
-    for face in faces:
-        adj[face] = []
+    outgoing = [[] for face in faces]
     for j in range(1, len(faces)):
         parent, v = parents[j]
         lower_ids = [parent]
@@ -216,13 +219,13 @@ def makehasse(cmpl, m):
         facets.append(lower_ids)
         for i in lower_ids:
             if partner[i] == j:
-                adj[faces[i]].append(faces[j])
+                outgoing[i].append(faces[j])
             else:
-                adj[faces[j]].append(faces[i])
-    return adj
+                outgoing[j].append(faces[i])
+    return {face: outgoing[i] for i, face in enumerate(faces)}
 ```
 
-Soit $S=P\cup\{v\}$ où $v$ est le plus grand sommet. Ses facettes sont $P$ et les $F\cup\{v\}$ pour toutes les facettes $F$ de $P$. Ces extensions de $F$ existent par fermeture du complexe et s'obtiennent par une consultation de dictionnaire sur le sommet $v$. Le parcours initial a créé tous les identifiants par taille croissante. La seconde boucle trouve donc les facettes de $P$ déjà calculées. Elle traite chaque incidence une seule fois et l'oriente vers le haut exactement si elle appartient au couplage. Chaque recherche dans les dictionnaires est de coût constant dans le modèle donné. Créer les tuples coûte au total $O(n\,\#K)$. Il y a au plus $n$ incidences par face et au plus $\#K/2$ couples. Le temps total est ainsi $O(n\,\#K)$ pour un complexe non vide, avec retour immédiat pour le vide.
+Soit $S=P\cup\{v\}$ où $v$ est le plus grand sommet. Ses facettes sont $P$ et les $F\cup\{v\}$ pour toutes les facettes $F$ de $P$. Ces extensions de $F$ existent par fermeture du complexe et s'obtiennent par une consultation de dictionnaire sur le sommet $v$. Le parcours initial a créé tous les identifiants par taille croissante. La seconde boucle trouve donc les facettes de $P$ déjà calculées. Elle traite chaque incidence une seule fois et l'oriente vers le haut exactement si elle appartient au couplage. Dans cette boucle sur les incidences, les accès se font par identifiants entiers. Les listes de voisins contiennent des références aux tuples déjà construits. Le dictionnaire de sortie prend chaque face comme clé une seule fois. Créer les tuples coûte au total $O(n\,\#K)$. Il y a au plus $n$ incidences par face et au plus $\#K/2$ couples. Le temps total est ainsi $O(n\,\#K)$ pour un complexe non vide, avec retour immédiat pour le vide.
 
 ### Question 14
 
