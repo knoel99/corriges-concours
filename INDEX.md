@@ -608,6 +608,7 @@
 | 2026 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/guide.md) |
 | 2026 | X-ENS | MP-MPI-PC-PSI | Français | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2023 | X-ENS | MP-MPI | Informatique A | [md](2023/x-ens/x-ens_mp_informatique-a_2023/brut.md) | [md](2023/x-ens/x-ens_mp_informatique-a_2023/guide.md) |
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
