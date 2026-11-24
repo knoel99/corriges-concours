@@ -15,7 +15,8 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_physique_u_26.pdf",
-    "rapport_jury": null
+    "rapport_jury": null,
+    "sujet_sha256": "3fd60387a0268af16e36e8e83c5b9f9fd01388ab09d505bab48e21e5807f7272"
   },
   "revision": {
     "date": "2026-11-24",
@@ -112,6 +113,18 @@
       "modifications": null,
       "perimetre": "Confrontation des 70 réponses aux questions du sujet et à ses graphiques. Contre-calcul indépendant de la dissipation thermique, de l’amplitude de la sphère, du coefficient cubique aux fréquences de combinaison et contre-lecture indépendante de la figure 5.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture des réponses aux 70 questions et des dix figures des deux éditions, des bilans acoustiques au spectre des otoémissions. Correction de la direction des forces de pression, du calcul de dispersion, de la localisation à distance finie et de la lecture quantitative du test auditif.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
