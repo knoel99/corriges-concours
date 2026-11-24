@@ -450,6 +450,7 @@
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
+| 2022 | ENS de Lyon | Second concours | Chimie | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/guide.md) |
 | 2023 | ENS de Lyon | Second concours | Chimie | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Chimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
@@ -518,6 +519,7 @@
 | 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Entretien (oral) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/guide.md) |
+| 2026 | ENS-PSL | CNEL Lettres | Histoire de l’art | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études cinématographiques | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études théâtrales | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Arts | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/guide.md) |
