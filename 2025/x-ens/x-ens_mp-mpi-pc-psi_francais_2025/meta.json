@@ -1,0 +1,45 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_francais_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Français",
+    "annee": 2025
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Fran%C3%A7ais%20MP%20MPI%20PC%20sujet.pdf",
+    "sujet_sha256": "d1fa1f92707d85c3b313eb312813529d4aae797178a144f422fb47587275d5e6",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/2025_psi_ep2_francais_14022025_nb.pdf",
+    "sujet_psi_sha256": "809b938849bed61fbf06675ee7e745ed3111e2af9a4e3a9c75f38a406839a2e1",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%2C%20MPI%20et%20PC_fran%C3%A7ais%20OK.pdf",
+    "rapport_sha256": "6be81b7625dd77d88e8a20d0cafc9cf52c4d615590ea67b5bb26f21ea4416ccb"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Dissertation",
+      "legende": "La sensibilité commune mise à l’épreuve"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les deux fascicules officiels concordants et le rapport du jury. Dissertation sur Rousseau à partir des deux tragédies d’Eschyle, des chapitres XVI à XX de Spinoza et du roman de Wharton, avec préparation guidée et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
