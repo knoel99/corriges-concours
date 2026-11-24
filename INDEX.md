@@ -589,6 +589,8 @@
 | 2024 | ENS Rennes | D-E | Droit commercial | [md](2024/ens-rennes/ens-rennes_d-e_droit-commercial_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-commercial_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Droit commercial | [md](2025/ens-rennes/ens-rennes_d-e_droit-commercial_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-commercial_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit commercial | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Droit public | [md](2024/ens-rennes/ens-rennes_d-e_droit-public_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-public_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Droit public | [md](2025/ens-rennes/ens-rennes_d-e_droit-public_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-public_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit public | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
