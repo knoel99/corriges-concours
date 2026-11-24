@@ -1,0 +1,36 @@
+{
+  "slug": "x_fui-ff-2_mathematiques_2021",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 2",
+    "matiere": "Mathématiques",
+    "annee": 2021
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20MATHS_0.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "32aa99ce5460ccb5f5f687ab0bcb0d2744aa162429f94ac2163a0eb1e8f8046a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/sommes-de-gauss.svg",
+      "question": "11",
+      "legende": "L’addition successive des termes de la somme de Gauss aboutit à √5 pour N = 5 et à −i√7 pour N = 7."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 réponses, de leurs indications et du schéma des sommes de Gauss à partir du sujet original de la session 2. Vérification des phases de Vandermonde, des multiplicités, de l’inversion et de la normalisation de De Moivre–Laplace. Aucun rapport associé au registre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
