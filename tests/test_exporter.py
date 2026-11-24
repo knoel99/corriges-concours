@@ -420,6 +420,18 @@ def test_export_arabe_et_francais_dans_la_meme_copie(tmp_path):
 
 
 @pandoc
+def test_export_chinois_bilingue_et_autres_matieres(tmp_path):
+    source = "# Titre\n\nUne comparaison.\n\n大学如何培养人才？\n"
+    meta = {**META, "epreuve": {**META["epreuve"], "matiere": "Chinois"}}
+    chinois = ex.generer_tex(source, meta, "brut", tmp_path / "chinois.tex").read_text()
+    assert r"hyphenrules=unhyphenated]{chinese-simplified}" in chinois
+    assert r"\babelfont[chinese-simplified]{rm}" in chinois
+    assert "大学如何培养人才" in chinois
+    francais = ex.generer_tex("# Titre\n\nBonjour.", META, "brut", tmp_path / "fr.tex").read_text()
+    assert "Noto Serif CJK SC" not in francais
+
+
+@pandoc
 def test_lualatex_seulement_si_le_tex_change(tmp_path, monkeypatch):
     """L'outillage invalide toutes les empreintes d'entrée, mais seuls les `.tex` qui
     changent vraiment repassent par lualatex."""
