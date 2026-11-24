@@ -102,6 +102,11 @@
       "question": "Q10",
       "fichier": "figures/q10-conductivites-initiales.svg",
       "legende": "À volume de titrant nul, le modèle avec paires rejoint à quelques pour cent la mesure lue sur la courbe."
+    },
+    {
+      "fichier": "figures/transfert-du-methyle.svg",
+      "question": "Q71",
+      "legende": "Bilan électronique local de l’étape 17 à 18, du transfert de proton à la formation de la liaison O–C."
     }
   ],
   "date_revision": "2026-11-24",
@@ -137,10 +142,22 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Relecture des deux éditions sur le sujet publié par l’ENS, du dosage de sulfate et des spectres de relaxation aux planches de stéréochimie, aux attributions RMN et au couplage des synthons. Calculs et lecture des figures 1, 3, 8 et 9 explicités. En Q71, identification du gaz et de l’ester uniquement. Aucun rapport écrit lié dans le catalogue ENS 2026 pour Chimie B."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision ciblée des deux éditions, Q71. Vérification des structures 17 et 18 de la planche, de la priorité de l’équilibre acide-base stipulée dans l’énoncé et du bilan atomique de l’estérification."
     }
   ],
   "couverture": {
-    "statut": "partiel",
+    "statut": "complet",
     "questions_entierement_traitees": [
       1,
       2,
@@ -212,6 +229,7 @@
       68,
       69,
       70,
+      71,
       72,
       73,
       74,
@@ -220,10 +238,8 @@
       77,
       78
     ],
-    "questions_partiellement_traitees": [
-      71
-    ],
+    "questions_partiellement_traitees": [],
     "questions_non_traitees": [],
-    "precision": "77 questions intégralement traitées. La Q71 couvre l’identification du gaz et la structure de l’ester 18. Le mécanisme de mise en œuvre du diazométhane est hors périmètre."
+    "precision": "Les 78 questions sont traitées. En Q71, les deux étapes électroniques expliquent la méthylation de l’acide et l’identité du gaz libéré."
   }
 }

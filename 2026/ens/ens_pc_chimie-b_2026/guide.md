@@ -1,4 +1,4 @@
-# ENS PC — Chimie B 2026 · Corrigé partiel guidé
+# ENS PC — Chimie B 2026 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel.*
 
@@ -6,11 +6,13 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve porte sur l’association d’ions en solution puis sur la stéréochimie d’intermédiaires de la quartromicine. Dans la première partie, le dosage et le potentiel rédox révèlent l’association, tandis que l’absorption acoustique permet d’en mesurer les durées. La deuxième partie suit deux voies complémentaires de synthèse d’un spirotétronate.
 
-**Périmètre du corrigé.** Les questions 1 à 70 et 72 à 78 sont intégralement traitées. La question 71 précise le gaz dégagé et la structure de l’ester 18. Son mécanisme est hors périmètre.
+**Couverture.** Les 78 questions sont traitées. En Q71, les deux étapes électroniques expliquent la méthylation de l’acide et l’identité du gaz libéré.
 
 Les concentrations entre crochets sont celles des espèces libres sauf indication contraire. La concentration standard est $c^\circ=1\,\mathrm{mol\,L^{-1}}$. Dans la partie organique, la numérotation des composés et des protons est celle des planches du sujet.
 
@@ -841,7 +843,7 @@ Une **oxydation de Pinnick**, à l’aide de chlorite de sodium $\mathrm{NaClO_2
 
 Deux formes limites du diazométhane sont $\mathrm{H_2C=N^+=N^-}$ et $\mathrm{^-CH_2-N^+\equiv N}$. Dans la première, le N terminal porte deux doublets libres. Dans la seconde, le carbone porte un doublet et le N terminal un doublet. L’azote central tétravalent porte $+1$ dans les deux formes. Chaque atome de la deuxième période satisfait l’octet et la molécule est globalement neutre.
 
-### Question 71 — gaz et produit organique
+### Question 71 — estérification et dégagement de diazote
 
 > [!INDICATION]
 > Comparer les fonctions carboxyliques de 17 et de 18, puis suivre les deux atomes d’azote dans le bilan.
@@ -849,6 +851,10 @@ Deux formes limites du diazométhane sont $\mathrm{H_2C=N^+=N^-}$ et $\mathrm{^-
 #### Solution
 
 Le gaz est le diazote $\mathrm{N_2}$. Le groupe carboxyle de 17 devient l’ester méthylique $\mathrm{RCO_2CH_3}$ de **18**. Le carbone du méthyle est le carbone supplémentaire et les deux azotes quittent la partie organique. Les centres stéréogènes du squelette sont conservés.
+
+La forme mésomère ⁻CH₂–N⁺≡N représente le carbone basique du diazométhane. Son carbone prend le proton de RCO₂H et la paire O–H revient sur O. On obtient le carboxylate RCO₂⁻ et le méthyldiazonium CH₃–N⁺≡N. Un doublet de l’oxygène carboxylate attaque alors le groupe méthyle ; les électrons de C–N repartent sur N, qui libère N₂. Cette substitution explique simultanément la liaison O–CH₃ et le gaz observé.
+
+![Bilan électronique local de l’étape 17 à 18, du transfert de proton à la formation de la liaison O–C.](figures/transfert-du-methyle.svg)
 
 ### Question 72
 

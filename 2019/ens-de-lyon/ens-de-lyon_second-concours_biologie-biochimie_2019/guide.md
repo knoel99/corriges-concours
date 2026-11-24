@@ -1,10 +1,12 @@
-# ENS de Lyon — Second concours, Biologie-biochimie 2019 · Corrigé partiel guidé
+# ENS de Lyon — Second concours, Biologie-biochimie 2019 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel.*
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Couverture.** Les questions 1 à 19, 21 à 25 et 27 à 30 sont traitées, soit 28 sur 30. Les questions 20 et 26 sur les effets expérimentaux de composés oxydants sont exclues. La synthèse du favisme suit ses conséquences cliniques et le rôle protecteur du glutathion.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture.** Les 30 questions sont traitées. Les lectures des figures 13 et 16 distinguent les observations microscopiques, les courbes du témoin et les limites de leur interprétation clinique.
 
 ## I. Structure et fonction de l’hémoglobine
 
@@ -205,6 +207,15 @@ L’hémoglobine dénaturée précipite près de la membrane et forme un corps d
 
 Le déficit rend l’hématie plus vulnérable aux altérations oxydatives de l’hémoglobine. Les inclusions rigidifient sa membrane et favorisent une élimination prématurée. Il en résulte une chute de l’hématocrite, une réponse médullaire en réticulocytes et une production accrue de bilirubine, donc une anémie régénérative accompagnée d’ictère. Les deux aspects de la figure 12 situent la déformation de membrane au cours de la crise.
 
+### Question 20 — Lecture des frottis et inclusions
+
+> [!INDICATION]
+> Comparer dans chaque champ la fréquence des ponctuations sombres à l’intérieur des hématies.
+
+#### Solution
+
+Sur la figure 13, les hématies de référence, à gauche, ont en majorité un contour régulier et peu d’inclusions sombres. À droite, davantage d’hématies déficientes en G6PD présentent plusieurs ponctuations périphériques bien visibles. Ces structures sont compatibles avec des corps de Heinz, des précipités d’hémoglobine dénaturée. La comparaison illustre la moindre protection des hématies déficientes face au stress oxydatif. Deux microphotographies sans décompte sur plusieurs champs ni mesures de survie autorisent une conclusion morphologique qualitative.
+
 ## III.C.2. Pouvoir réducteur
 
 ### Question 21 — Nature du NADPH
@@ -253,6 +264,15 @@ Dans A, la courbe des cellules témoins reste élevée tandis que celle des cell
 Le NADPH peut réduire le glutathion disulfure. La glutathion réductase catalyse $\mathrm{GSSG+NADPH+H^+\longrightarrow 2\,GSH+NADP^+}$. La différence des potentiels biochimiques standards est $-230-(-324)=+94\ \mathrm{mV}$. Pour deux électrons, $\Delta_rG^{\circ\prime}=-2F\Delta E^{\circ\prime}\simeq-18\ \mathrm{kJ\,mol^{-1}}$. Le sens proposé est thermodynamiquement favorable dans les conditions standards biochimiques. Le glutathion réduit peut ensuite participer à l’élimination des peroxydes.
 
 ![Le NADPH fournit les électrons nécessaires pour réduire le disulfure du glutathion.](figures/transfert-glutathion.svg)
+
+### Question 26 — Lire ensemble le peroxyde et le glutathion
+
+> [!INDICATION]
+> Repérer les symboles ouverts dans les deux graphes, puis comparer les évolutions opposées des marqueurs.
+
+#### Solution
+
+Sur la figure 16, les symboles ouverts indiquent que le témoin garde peu de peroxyde et conserve l’essentiel du glutathion réduit. Les symboles pleins montrent une hausse du peroxyde jusqu’à un plateau et une baisse concomitante de GSH jusqu’au voisinage de zéro. Le contraste traduit un déséquilibre entre production d’espèces oxydantes et réserve réductrice. Le GSH est notamment consommé lorsque la glutathion peroxydase réduit H₂O₂. Dans une hématie, la régénération de GSH dépend du NADPH. Le montage présenté est acellulaire : il met en évidence un bilan chimique et, à lui seul, ne mesure ni une hémolyse ni sa gravité chez un patient.
 
 ### Question 27 — Synthèse clinique du favisme
 

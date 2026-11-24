@@ -84,10 +84,22 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Relecture des deux éditions sur le sujet de biologie-biochimie 2026 et son rapport. Contrôle des génotypes, des figures 3 à 11, de la portée des comparaisons et des six schémas du corrigé. Vingt-neuf questions traitées intégralement. Pour 6.1, seule la finalité thérapeutique et physiologique est couverte."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision ciblée des deux éditions, question 6.1. Relecture de la question et des données du dossier sur la régulation de l’hémoglobine fœtale, avec vérification du principe clinique de Casgevy dans la documentation de l’EMA."
     }
   ],
   "couverture": {
-    "statut": "partiel",
+    "statut": "complet",
     "questions_entierement_traitees": [
       "1.1",
       "1.2",
@@ -117,12 +129,11 @@
       "5.6",
       "5.7",
       "5.8",
+      "6.1",
       "6.2"
     ],
-    "questions_partiellement_traitees": [
-      "6.1"
-    ],
+    "questions_partiellement_traitees": [],
     "questions_non_traitees": [],
-    "precision": "La question 6.1 couvre l’effet thérapeutique recherché sur la composition de l’hémoglobine. La réalisation de la modification de cellules souches n’est pas développée."
+    "precision": "Les 30 questions sont traitées. La réponse 6.1 relie la réactivation des chaînes γ au principe du traitement autologue ciblant un élément régulateur érythroïde de BCL11A."
   }
 }
