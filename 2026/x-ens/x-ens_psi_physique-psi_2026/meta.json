@@ -13,11 +13,12 @@
   },
   "redaction": "Rédaction originale par deux agents IA de la famille GPT-6 d'après l'énoncé officiel et ses figures. Chaque agent a contre-relu la partie rédigée par l'autre.",
   "modele_revision": "GPT-6 (Codex)",
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_Physique_XSR.pdf",
     "page_officielle": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=285",
-    "rapport": null
+    "rapport": null,
+    "sujet_sha256": "830622a68bbc08c79440f52e6cfa4be93c24949c18efc2c10d9333afba9e1099"
   },
   "figures": [
     {
@@ -90,6 +91,18 @@
       "modifications": true,
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 1,
+      "modifications": true,
+      "perimetre": "Relecture des 47 questions, de la figure de chaque tracé et des deux éditions à partir du PDF officiel. Calculs du seuil de caténaire, du couple et de la puissance visqueuse, de la dilatation et de la caractéristique de la jonction. Corrections des hypothèses du rotor, du bilan des courants et de l’unité de la tension thermique.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
