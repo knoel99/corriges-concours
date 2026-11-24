@@ -1,0 +1,83 @@
+{
+  "slug": "bel_al_anglais-oral-tronc-commun-23-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (oral tronc commun 23 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/anglais_tronc_commun_sujets_tires_le_23_juin.pdf",
+    "sujet_sha256": "316e8ad1b185f64d0ba55e2c34462413725829a721d34083db3922d14720b31e",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_anglais_tc.pdf",
+    "rapport_sha256": "68c198f2905ae8891899e4364652b38aed0092fce531f2750e027d5a8b78adc2",
+    "documents": {
+      "bradstreet": "https://www.poetryfoundation.org/poems/43697/the-author-to-her-book",
+      "browning": "https://www.poetryfoundation.org/poems/46313/porphyrias-lover",
+      "hardy": "https://www.poetryfoundation.org/poems/47266/the-convergence-of-the-twain",
+      "mckay": "https://www.poetryfoundation.org/poems/46463/the-white-city",
+      "sidney": "https://www.poetryfoundation.org/poems/45168/ring-out-your-bells",
+      "keats": "https://www.poetryfoundation.org/poems/44487/to-sleep-56d2239b832a2",
+      "cohen": "https://www.leonardcohenfiles.com/poem.html#genius",
+      "radcliffe": "https://mirror.csclub.uwaterloo.ca/gutenberg/6/4/7/0/64701/64701-0.txt"
+    },
+    "precision": "La feuille officielle donne douze références et leurs dates. Sept poèmes identifiables par leur titre sont analysés sur le texte des poèmes publiés. Le rapport situe l’épisode de Radcliffe au chapitre IV sans en fournir les deux bornes. Les extraits de Kingsley, Okri, Cather et Brontë restent sans repérage. La fiche est partielle."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "2 — Bradstreet",
+      "3 — Browning",
+      "6 — Hardy",
+      "8 — Cohen",
+      "10 — McKay",
+      "11 — Sidney",
+      "12 — Keats"
+    ],
+    "questions_partiellement_traitees": [
+      "9 — Radcliffe, scène identifiée dans le chapitre IV"
+    ],
+    "questions_non_traitees": [
+      "1 — Kingsley",
+      "4 — Okri",
+      "5 — Cather",
+      "7 — Anne Brontë"
+    ],
+    "motif": "La feuille officielle donne douze références et leurs dates. Sept poèmes identifiables par leur titre sont analysés sur le texte des poèmes publiés. Le rapport situe l’épisode de Radcliffe au chapitre IV sans en fournir les deux bornes. Les extraits de Kingsley, Okri, Cather et Brontë restent sans repérage. La fiche est partielle."
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "What changes between the opening and the close?"
+    },
+    {
+      "fichier": "figures/formes.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "Reversals of knowledge and judgment"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale de sept explications de poèmes en anglais et d’une explication de l’épisode identifiable du roman de Radcliffe, avec lectures suggérées, réponses d’entretien et deux figures. Lecture de la fiche du 23 et du rapport 2026, pp. 1–3, 6 et 8–9. La feuille officielle donne douze références et leurs dates. Sept poèmes identifiables par leur titre sont analysés sur le texte des poèmes publiés. Le rapport situe l’épisode de Radcliffe au chapitre IV sans en fournir les deux bornes. Les extraits de Kingsley, Okri, Cather et Brontë restent sans repérage. La fiche est partielle."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
