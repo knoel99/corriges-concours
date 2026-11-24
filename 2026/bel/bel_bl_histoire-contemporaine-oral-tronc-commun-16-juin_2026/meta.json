@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Histoire contemporaine (oral tronc commun, 16 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire contemporaine (oral tronc commun, 16 juin)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_histoire_b_l_j1.pdf",
+    "sujet_sha256": "b3db305d00b084a24bbe31d4e2a3e0df9ea20dd0242d8a0813a0434c1fb68d3b",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_histoire_contemporaine_v2.pdf",
+    "rapport_sha256": "87ac6f3735d385369b79aa97c667e16ba004647be0bac67ec7559cad14a5390a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/presidence.svg",
+      "question": "1",
+      "legende": "Trois mises à l’épreuve de la présidence française"
+    },
+    {
+      "fichier": "figures/marshall.svg",
+      "question": "12",
+      "legende": "Trois décisions distinctes dans l’aide américaine à l’Europe"
+    },
+    {
+      "fichier": "figures/sorties-de-guerre.svg",
+      "question": "24",
+      "legende": "Plusieurs temporalités des sorties de guerre en Europe"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des douze sujets France et douze sujets monde, des vingt-quatre relances du guide et des trois schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des paires à la feuille de la journée et au relevé du jury. Vérification des dates, de la portée des événements et des questions de relance."
+    }
+  ]
+}
