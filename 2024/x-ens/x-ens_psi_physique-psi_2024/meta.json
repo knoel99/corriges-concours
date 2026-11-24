@@ -1,0 +1,110 @@
+{
+  "slug": "x-ens_psi_physique-psi_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2024
+  },
+  "questions": 43,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Physique_XSR.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_PSI_Physique_ECRIT.pdf",
+    "sujet_sha256": "565c93037a56554762cbe6c24d3abfb6c3387922d3435ad4d7d8312d98c1228b",
+    "rapport_sha256": "24ff837a0441bc54d3691b605d7133d1bc51300e0eb09dd224c23ba62e1106dc"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 43 questions incluent le potentiel effectif, le contact de la goutte, l’estimation sur la photographie originale, la flexion, la conduction, l’atome de Thomson et la sélection Doppler. Cinq figures originales accompagnent les deux réponses."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "5",
+      "fichier": "figures/puits-radial.svg",
+      "legende": "Le rayon d’une orbite à énergie fixée reste compris entre les deux intersections de la courbe et de la droite."
+    },
+    {
+      "numero": 2,
+      "question": "11",
+      "fichier": "figures/rayon-jusqu-au-contact.svg",
+      "legende": "La goutte touche le fil quand son centre arrive à deux millimètres de l’axe."
+    },
+    {
+      "numero": 3,
+      "question": "21",
+      "fichier": "figures/modes-plaque-supportee.svg",
+      "legende": "Deux modes calculés pour les bords simplement supportés. Les lignes intérieures représentent les nœuds. Les couleurs indiquent le signe du déplacement."
+    },
+    {
+      "numero": 4,
+      "question": "24",
+      "fichier": "figures/dispersion-flexion.svg",
+      "legende": "Fréquences de la figure 4 et nombres d’onde de la figure 5 du sujet. Tracer la fréquence en fonction de K² permet de comparer les deux pentes."
+    },
+    {
+      "numero": 5,
+      "question": "37",
+      "fichier": "figures/force-radiative.svg",
+      "legende": "Force radiative à intensité fixée. La mi-hauteur est atteinte pour un désaccord égal à plus ou moins Γ/2."
+    }
+  ],
+  "redaction": "Les 43 questions incluent le potentiel effectif, le contact de la goutte, l’estimation sur la photographie originale, la flexion, la conduction, l’atome de Thomson et la sélection Doppler. Cinq figures originales accompagnent les deux réponses.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43"
+    ]
+  }
+}
