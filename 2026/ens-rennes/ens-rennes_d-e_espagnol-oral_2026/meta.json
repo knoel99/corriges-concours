@@ -1,0 +1,46 @@
+{
+  "slug": "ens-rennes_d-e_espagnol-oral_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Espagnol (oral)",
+  "questions": 0,
+  "sujets": 8,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oraux-espagnol-d-e-2026_1793377280812-pdf",
+    "sujet_sha256": "b40548672148a43639845fbbadd42558dc03277915431c2a276232bfb4bc60ce",
+    "apercu_sujet_sha256": "22d8c6e2f6e20e41d3b7d7112596e97de7199b8b17a38386631581c7e10a553d",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Sujet 8",
+      "legende": "Brasil: tres cifras, tres alcances"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "8 exposés en espagnol sur chacun des articles, guidage, schéma et relances d'entraînement."
+    }
+  ]
+}
