@@ -1,0 +1,53 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_mathematiques-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Mathématiques (oral)",
+    "annee": 2026,
+    "type": "oral"
+  },
+  "questions": 214,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Math%C3%A9matiques%20-%20s%C3%A9rie%20Sciences%20%C3%89conomiques%20et%20Sociales%20session%202026.pdf#page=2",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Fascicule%20SES%202026.pdf#page=13",
+    "sha256_sujet": "847171ded9dc9034f643a8c76267b6bd2f559e4c61d0b2cb7f8169517a49dcf8",
+    "sha256_rapport": "cce2c8b96882ea064fcfcbc3b70755ecb825b5c38973678634991eae4dd71bd3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/pics-integrables.svg",
+      "question": "Planche 4, exercice 2, question 3f",
+      "legende": "Pics de hauteur constante et de largeurs géométriques. Les aires sont sommables malgré la hauteur aux sommets."
+    },
+    {
+      "fichier": "figures/interpolation-quadratique.svg",
+      "question": "Planche 8, exercice 2, question 4b",
+      "legende": "L’unique polynôme de degré au plus deux passe par les trois points prescrits."
+    },
+    {
+      "fichier": "figures/point-fixe.svg",
+      "question": "Planche 12, exercice 1, question 2b",
+      "legende": "L’itération issue de zéro se rapproche de l’intersection de la courbe et de la droite identité."
+    },
+    {
+      "fichier": "figures/loi-defauts.svg",
+      "question": "Planche 15, exercice 1, question 5",
+      "legende": "Avec a et p égaux à un demi, compter la dernière pièce change les masses de la loi dès zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 214 réponses et des indications des deux éditions de l’oral B/L de Lyon, à partir des 15 planches de l’annexe officielle et du rapport du jury. Vérification du nœud manquant en planche 8 et de la masse au rang zéro en planche 15. Quatre figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
