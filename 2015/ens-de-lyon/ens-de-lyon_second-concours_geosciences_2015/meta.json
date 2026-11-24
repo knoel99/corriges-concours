@@ -1,0 +1,96 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2015",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2015
+  },
+  "questions": 17,
+  "redaction": "Dix-sept réponses aux questions sur les diamants. Sept schémas originaux interprètent les figures de l’épreuve et matérialisent les annotations demandées.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/06/15_2clyon_sujet_st_def.pdf",
+    "nature": "Sujet du second concours universitaire de l’ENS de Lyon. Aucun rapport de cette épreuve n’est référencé dans la banque consultée.",
+    "sujet_sha256": "971c446d7f4ee5ad13b820a7b6210636b933b296b2e2d17ec7668a1d5734c353"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2",
+      "fichier": "figures/inclusions.svg",
+      "legende": "Deux états possibles du grenat. La transformation de la coésite en un assemblage de quartz de volume supérieur fissure l’hôte. Le diamant peut rester métastable."
+    },
+    {
+      "numero": 2,
+      "question": "3",
+      "fichier": "figures/trajet-pression-temperature.svg",
+      "legende": "Trajet illustratif et limites de stabilité lues sur la figure 2 du sujet. Les étapes montrent l’enfouissement, le pic de haute pression, la décompression et le refroidissement."
+    },
+    {
+      "numero": 3,
+      "question": "5",
+      "fichier": "figures/coupe-et-diamant.svg",
+      "legende": "Coupe de la figure 1 réinterprétée. Les losanges situent deux fenêtres de stabilité possibles, sous le craton et dans la croûte subduite. Les courbes rousses représentent les isothermes étudiées."
+    },
+    {
+      "numero": 4,
+      "question": "9",
+      "fichier": "figures/kimberlite-echantillon.svg",
+      "legende": "Croquis interprétatif de la figure 6. Les différences de taille et de couleur servent à décrire l’échantillon. La composition minéralogique d’un grain isolé demanderait une identification supplémentaire."
+    },
+    {
+      "numero": 5,
+      "question": "10",
+      "fichier": "figures/diatreme.svg",
+      "legende": "Une cheminée évasée recoupe les encaissants. La remontée transporte les fragments profonds. La fragmentation et l’excavation contribuent à l’élargissement du sommet."
+    },
+    {
+      "numero": 6,
+      "question": "12",
+      "fichier": "figures/afrique-australe.svg",
+      "legende": "Schéma de la figure 8. Les chapelets de pipes dessinent plusieurs alignements d’orientation générale sud-ouest–nord-est. Les positions sont schématisées."
+    },
+    {
+      "numero": 7,
+      "question": "14",
+      "fichier": "figures/gondwana.svg",
+      "legende": "Lecture schématique de la reconstruction vers 550 Ma. Les zones déformées contournent les noyaux continentaux. Les positions sont relatives à la configuration ancienne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Dix-sept réponses aux questions sur les diamants. Sept schémas originaux interprètent les figures de l’épreuve et matérialisent les annotations demandées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ]
+  }
+}
