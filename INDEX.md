@@ -552,6 +552,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
