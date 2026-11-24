@@ -2,11 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+**Rédaction** · Claude Opus 4.8 High standard
 
-**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
 
-**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 2)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Épreuve de 4 heures, calculatrice interdite. Deux parties indépendantes : physique (satellites d'étude du Soleil, Q1 à Q17) et sciences de l'ingénieur (déploiement et orientation des panneaux solaires, Q18 à Q37).
 

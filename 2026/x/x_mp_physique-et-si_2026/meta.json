@@ -50,21 +50,37 @@
   "contributions": [
     {
       "phase": "redaction",
-      "modele": "claude-opus-5-5",
-      "effort": null,
-      "vitesse": null,
-      "date": null,
+      "modele": "claude-opus-4-8",
+      "effort": "high",
+      "vitesse": "standard",
+      "date": "2026-07-27",
       "modifications": true,
-      "perimetre": "Identifiant conservé dans la mention historique de rédaction."
+      "perimetre": "Rédaction de la copie de résolution utilisée pour établir le corrigé brut et le corrigé guidé.",
+      "source_commit": "c1121b3bb108e08d4a99da3eec8949ba07bde626",
+      "fournisseur": "opus"
     },
     {
       "phase": "relecture_corrige",
-      "modele": null,
+      "modele": "claude-opus-5-5",
       "effort": null,
       "vitesse": null,
-      "date": null,
+      "date": "2026-11-06",
+      "modifications": true,
+      "perimetre": "Relecture de la copie de résolution et établissement des éditions brute et guidée, avec revue enregistrée.",
+      "source_commit": "3d0b55635f119c3e4b03a8da4835a0d1934dc884",
+      "fournisseur": "claude-code",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
       "modifications": null,
-      "perimetre": "Révision historique attestée par les métadonnées du corrigé."
+      "perimetre": "Révision des deux éditions à la lumière du rapport de jury.",
+      "source_commit": "c709a1ab60a59b945634ebb38dd54fbffebd63c0",
+      "tour": 2
     },
     {
       "phase": "relecture_corrige",
@@ -72,7 +88,7 @@
       "effort": "ultra",
       "vitesse": null,
       "date": "2026-11-24",
-      "tour": 2,
+      "tour": 3,
       "modifications": true,
       "perimetre": "Relecture des 37 questions avec sous-questions, des deux éditions et des schémas. Vérification de la dispersion et de la stabilité de L4, rectification de l’orbite de SMILE avec la source ESA, intégration numérique du mouvement des panneaux avant la butée et comparaison de deux modèles de verrouillage.",
       "agent": "astra_physique",
