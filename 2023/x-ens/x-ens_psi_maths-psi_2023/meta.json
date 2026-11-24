@@ -1,0 +1,41 @@
+{
+  "slug": "x-ens_psi_maths-psi_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2023
+  },
+  "questions": 38,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_MATHS_PSI_001.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_PSI_rapport_ecrit_Maths.pdf",
+    "sha256_sujet": "a8d96329ae21dcc0ace25b5ec7b4d22e815a682fb5cf575357362651b374c9dc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-prefixe.svg",
+      "question": "5c",
+      "legende": "Le code des feuilles 0, 10, 110, 111 remplit tout l’arbre binaire et atteint l’égalité de Kraft."
+    },
+    {
+      "fichier": "figures/iterations-transport.svg",
+      "question": "16d",
+      "legende": "Normalisations alternées des deux marges sur un exemple à deux sites. Le tableau montre les masses après quinze cycles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur toutes les questions du sujet XUSR scanné et confrontation avec le rapport, du point selle aux itérations de Sinkhorn. Traitement du mot vide, de la stricte convexité au bord et de la liberté additive des potentiels. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
