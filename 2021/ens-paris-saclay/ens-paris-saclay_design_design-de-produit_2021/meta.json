@@ -1,0 +1,67 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2021
+  },
+  "redaction": "Rédaction, sujet et rapport 2021 lus. Choix explicite du premier sujet, robot domestique original, quatre planches de recherches, éclaté et plan au 1:2, interactions, limites des capteurs et évaluation d’usage.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_projet_produit.pdf",
+    "sujet_sha256": "fdeba335dac0e22b669c35d4610b3eee0d6415cf97aacc5f1735f7fcc0b20537",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_oral_DESIGN_projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-buanderie.svg",
+      "question": "Projet, planche 1",
+      "legende": "Le robot se place près d’un étendoir domestique et dirige un léger flux vers une zone humide."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-formes.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois formes mettent en regard autonomie de déplacement, intégration et réemploi de l’étendoir."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-module.svg",
+      "question": "Projet, planche 3",
+      "legende": "L’éclaté et le plan au 1:2 montrent le ventilateur, le volet, les protections et la commande."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-dialogue.svg",
+      "question": "Projet, planche 4",
+      "legende": "Le scénario montre le placement des pinces, le choix de direction et l’arrêt décidé par l’habitant."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction, sujet et rapport 2021 lus. Choix explicite du premier sujet, robot domestique original, quatre planches de recherches, éclaté et plan au 1:2, interactions, limites des capteurs et évaluation d’usage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "S’occuper du linge qui sèche",
+      "Trois places possibles",
+      "Une boîte, deux directions",
+      "Faire comprendre la décision"
+    ]
+  }
+}
