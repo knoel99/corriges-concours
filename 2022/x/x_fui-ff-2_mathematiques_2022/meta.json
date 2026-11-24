@@ -1,0 +1,35 @@
+{
+  "slug": "x_fui-ff-2_mathematiques_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 2",
+    "matiere": "Mathématiques",
+    "annee": 2022
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20MATHEMATIQUES.pdf",
+    "sha256_sujet": "9985bdebeb69154a2d202a1ccbf7627052918e2a8a09a3e1ce7d48ac4122a262"
+  },
+  "figures": [
+    {
+      "fichier": "figures/interpolation-runge.svg",
+      "question": "16",
+      "legende": "Sur des nœuds équidistants, les oscillations augmentent près des bords bien que les valeurs aux nœuds soient exactes. L’axe vertical est limité pour montrer les trois profils."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 16 questions et de leurs subdivisions dans les deux éditions, soit 22 réponses. Lecture directe des trois pages imprimées du problème. Calcul de la matrice de Vandermonde inverse et du reste, contrôle de la singularité logarithmique et du choix du point de divergence, figure originale sur le phénomène de Runge.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "ens-psl_cnel-lettres_etudes-cinematographiques_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Études cinématographiques",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf#page=3",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
+    "sujet_sha256": "4f032bb394ecb223ce6827de20caada0c29d10558e4ba4b8cb74b077a11f90d5",
+    "numero_warner_archive": "https://www.youtube.com/watch?v=h6SqoqS9Xrs",
+    "notice_tcm": "https://www.tcm.com/watchtcm/titles/1568",
+    "temoin_visuel_partiel_remonte": "https://vimeo.com/287867070",
+    "etude_choregraphique": "https://pure.roehampton.ac.uk/ws/files/1273433/Re_imagining_the_MGM_musical.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Qui porte, qui dirige, qui regarde ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire de séquence et guidage du numéro dansé de Cyd Charisse chez Stillman, observations des figures collectives et du jeu de genre, schéma, rapport et témoins référencés."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-oral-2_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire (oral 2)",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oral_2.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_jury_sil_-_histoire_2026.pdf",
+    "sujet_sha256": "3e7e3158aa8535f13055ce31c46642233547badd74e51d207ba4d8ccdd03a733",
+    "lettre_espagnole_1962": "https://www.cvce.eu/content/publication/2007/5/10/8a95e26f-e911-42a0-b811-b623b84a93d9/publishable_es.pdf",
+    "renouvellement_1964": "https://www.cvce.eu/content/publication/2007/5/10/7db1935b-d8a9-4c13-8e56-3788d065c73c/publishable_fr.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois dates, trois positions françaises"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire comparé des trois rapports diplomatiques de 1955, 1965 et 1962, distinction entre représentation diplomatique, association et adhésion, schéma et préparation de l’entretien sur le projet."
+    }
+  ]
+}

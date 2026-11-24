@@ -1,0 +1,123 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2022
+  },
+  "questions": 49,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/2c2022_chi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/22_2cc_rap_eChi.pdf",
+    "precision": "Le sujet officiel compte 49 questions numérotées, suivies d’une page de données. Le rapport évoque aussi les spectroscopies RX et RMN. Le document de 15 pages publié pour cette session ne contient pas de questions supplémentaires sur ces spectroscopies.",
+    "sujet_sha256": "4c4a84933613a94f6602392b7d418b062dd361918804ef590b663d6f19756b59",
+    "rapport_sha256": "2045351b0e80efafd89d3f21ef16941a88d64c93e6de4945d34b28e978e5b462"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      47
+    ],
+    "questions_partiellement_traitees": [
+      39
+    ],
+    "questions_non_traitees": [
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      48,
+      49
+    ],
+    "precision": "Les questions 1 à 34 et 47 sont intégralement traitées (35 sur 49). La question 39 est limitée à la définition générale d’un réactif de Grignard. Les questions 35 à 38, 40 à 46 et 48 à 49, portant sur la voie de synthèse de la ritterazine B, sont hors de cette édition."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/oxygene-atomique.svg",
+      "question": "Q2",
+      "legende": "Le niveau 2p contient trois orbitales de même énergie. Deux électrons y restent célibataires avec des spins parallèles."
+    },
+    {
+      "fichier": "figures/orbitales-dioxygene.svg",
+      "question": "Q11",
+      "legende": "Les douze électrons de valence occupent les orbitales moléculaires centrales. Les deux dernières orbitales occupées, πg*, contiennent chacune un électron."
+    },
+    {
+      "fichier": "figures/serie-oxygene.svg",
+      "question": "Q14",
+      "legende": "Les quatre mesures de l’énoncé montrent une liaison plus courte lorsque l’indice de liaison augmente."
+    },
+    {
+      "fichier": "figures/profil-energetique.svg",
+      "question": "Q20",
+      "legende": "La barrière sur le chemin réactionnel rend compte de la lenteur. La différence entre les niveaux d’arrivée et de départ rend compte du bilan exothermique."
+    },
+    {
+      "fichier": "figures/pile-protons.svg",
+      "question": "Q23",
+      "legende": "Le métal extérieur conduit les électrons de l’anode à la cathode. À l’intérieur, les protons rejoignent la cathode à travers la membrane."
+    },
+    {
+      "fichier": "figures/partage-energie.svg",
+      "question": "Q33",
+      "legende": "À 298 K, la diminution d’enthalpie de 286 kJ par mole se répartit entre travail électrique et chaleur dans la limite réversible."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la copie et du guide sur l’oxygène, la bixbyite, les orbitales et le fonctionnement de la pile. Contrôle des notations, valeurs, schémas et annexes sur le PDF original et confrontation au rapport. Analyse de stéréochimie descriptive et de polarité de liaison, et seule notion générale à Q39. Les transformations menant à la ritterazine B sont exclues."
+    }
+  ]
+}

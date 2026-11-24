@@ -1,0 +1,44 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-oral-3_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire (oral 3)",
+    "annee": 2026
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oral_3.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_jury_sil_-_histoire_2026.pdf",
+    "sujet_sha256": "ed2d4c77a3cd1477d68f6668f84e88c7c9307073045b3f0454f2ba17e09f20a4",
+    "source_comparee": "https://www.rm.unina.it/didattica/fonti/frova/sez1/par9.htm",
+    "etude_historique": "https://www.persee.fr/doc/jds_0021-8103_1993_num_3_1_1568"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Ce que protège la constitution Habita"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Présentation et commentaire de la constitution impériale Habita sous la date et dans la forme transmises par le sujet, analyse de la mobilité, des représailles, des sanctions et du for de l’écolier, préparation de l’entretien et schéma."
+    }
+  ]
+}

@@ -56,7 +56,7 @@ def registre() -> dict[str, str]:
     if len(sujets) != len(lignes) or any(not SLUG.fullmatch(s) for s in sujets):
         raise ValueError("Identifiants du registre invalides ou en double.")
     if any(
-        r["modalite"] not in {"écrit", "oral"}
+        r["modalite"] not in {"écrit", "oral", "pratique"}
         or urlsplit(r["source"]).scheme != "https"
         for r in lignes
     ):

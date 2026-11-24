@@ -1,0 +1,81 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2026
+  },
+  "intitule": "Reliefs de table. Collection éditée dans une plaque d’aluminium de réemploi",
+  "questions": 1,
+  "redaction": "Conception et dessin des deux éditions à partir des trois pages officielles. Sept planches anonymes A3 donnent les recherches, les usages, les trois développés, les volumes, les coupes cotées, le calepinage et les essais proposés pour la série numérotée.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_sujet_1A_Design_produit.pdf",
+    "sujet_sha256": "a917c78d6c2ffd4e373bfccc828adec8f3431f57d4526ce5a53252c20d54af36",
+    "nature": "Sujet pratique officiel de trois pages, session 2026."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/recherches.svg",
+      "legende": "Trois esquisses de principe comparées. La troisième rend les objets indépendants du mobilier et laisse voir la transformation de la feuille."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/collection.svg",
+      "legende": "Vues axonométriques avec une estampe sur l’estrade, une double page sur le pupitre et trois séries de cartes dans le râtelier."
+    },
+    {
+      "numero": 3,
+      "question": "3",
+      "fichier": "figures/estrade.svg",
+      "legende": "Développé, coupe et axonométrie du modèle estrade. La coupe représente les intersections théoriques des faces. Les axes de pli et la lumière sont reportés sur le développé."
+    },
+    {
+      "numero": 4,
+      "question": "4",
+      "fichier": "figures/pupitre.svg",
+      "legende": "Développé, coupe et axonométrie du pupitre. La coupe représente les intersections théoriques des faces. Les axes de pli et la lumière sont reportés sur le développé."
+    },
+    {
+      "numero": 5,
+      "question": "5",
+      "fichier": "figures/ratelier.svg",
+      "legende": "Développé, coupe et axonométrie du râtelier. La coupe représente les intersections théoriques des faces. Les axes de pli et la lumière sont reportés sur le développé."
+    },
+    {
+      "numero": 6,
+      "question": "6",
+      "fichier": "figures/calepinage.svg",
+      "legende": "Implantation des trois contours dans le carré utile. Le cadre périphérique montre les 25 mm repris sur chacun des quatre bords de la plaque brute."
+    },
+    {
+      "numero": 7,
+      "question": "7",
+      "fichier": "figures/fabrication.svg",
+      "legende": "Plan d’essai, numérotation et contrôle de série. Les dix plaques restent affectées aux essais et aux préséries."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Conception et dessin des deux éditions à partir des trois pages officielles. Sept planches anonymes A3 donnent les recherches, les usages, les trois développés, les volumes, les coupes cotées, le calepinage et les essais proposés pour la série numérotée.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Projet pratique de design de produit"
+    ]
+  }
+}

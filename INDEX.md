@@ -191,6 +191,8 @@
 | 2022 | BEL | AL | Allemand (thème Lyon) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (commentaire et traduction) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (thème Lyon) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Espagnol (commentaire et traduction) | [md](2022/bel/bel_al_espagnol-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_espagnol-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Espagnol (thème Lyon) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
@@ -223,6 +225,7 @@
 | 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 7 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/guide.md) |
 | 2026 | BEL | BL | Économie (oral à option) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2026/guide.md) |
+| 2026 | BEL | BL | Histoire contemporaine (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -445,12 +448,14 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2021 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2021/guide.md) |
 | 2022 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2022/guide.md) |
 | 2023 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2023/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Chimie | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/guide.md) |
+| 2022 | ENS de Lyon | Second concours | Chimie | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/guide.md) |
 | 2023 | ENS de Lyon | Second concours | Chimie | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Chimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
@@ -469,7 +474,9 @@
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/guide.md) |
+| 2026 | ENS Paris-Saclay | Design | Design graphique | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Philosophie de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2026/guide.md) |
+| 2026 | ENS Paris-Saclay | Design | Techno-design | [md](2026/ens-paris-saclay/ens-paris-saclay_design_techno-design_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_techno-design_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse macroéconomique | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-macroeconomique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-macroeconomique_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse microéconomique | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-microeconomique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-microeconomique_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Économie-gestion option 1 | Épreuve à option — dominante économique | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_epreuve-a-option-dominante-economique_2026/guide.md) |
@@ -519,12 +526,25 @@
 | 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Entretien (oral) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/guide.md) |
+| 2026 | ENS-PSL | CNEL Lettres | Histoire de l’art | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_histoire-de-l-art_2026/guide.md) |
+| 2026 | ENS-PSL | CNEL Lettres | Études cinématographiques | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études théâtrales | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/guide.md) |
+| 2026 | ENS-PSL | CNEL Lettres | Droit | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Arts | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 1) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-1_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-1_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 2) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-2_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-2_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 3) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-3_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-3_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Études classiques | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Études classiques (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-oral_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Études cognitives | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Économie — choix résidentiels | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-choix-residentiels_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-choix-residentiels_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Économie — méthodes de machine learning | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-methodes-de-machine-learning_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-methodes-de-machine-learning_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Économie — prévisions économiques | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-previsions-economiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-previsions-economiques_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Études cognitives (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives-oral_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Littérature | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_litterature_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_litterature_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Philosophie | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_philosophie_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_philosophie_2026/guide.md) |
+| 2026 | ENS-PSL | Sélection internationale Lettres | Sciences sociales | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_sciences-sociales_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_sciences-sociales_2026/guide.md) |
 | 2026 | ENSATT | Administration du spectacle vivant | Cas pratique | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/brut.md) | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Chimie | [md](2026/g2e/g2e_bcpst_chimie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_chimie_2026/guide.md) |
@@ -676,12 +696,14 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2022 | X-ENS | PSI | Modélisation | [md](2022/x-ens/x-ens_psi_modelisation_2022/brut.md) | [md](2022/x-ens/x-ens_psi_modelisation_2022/guide.md) |
 | 2023 | X-ENS | PSI | Modélisation | [md](2023/x-ens/x-ens_psi_modelisation_2023/brut.md) | [md](2023/x-ens/x-ens_psi_modelisation_2023/guide.md) |
 | 2024 | X-ENS | PSI | Modélisation | [md](2024/x-ens/x-ens_psi_modelisation_2024/brut.md) | [md](2024/x-ens/x-ens_psi_modelisation_2024/guide.md) |
 | 2025 | X-ENS | PSI | Modélisation | [md](2025/x-ens/x-ens_psi_modelisation_2025/brut.md) | [md](2025/x-ens/x-ens_psi_modelisation_2025/guide.md) |
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2022 | X-ENS | PSI | Sciences industrielles | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/brut.md) | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/guide.md) |
 | 2023 | X-ENS | PSI | Sciences industrielles | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/brut.md) | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/guide.md) |
 | 2024 | X-ENS | PSI | Sciences industrielles | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/brut.md) | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/guide.md) |
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
