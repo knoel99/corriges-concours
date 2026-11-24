@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_pc_maths-pc_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2017
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_PC_sujet_Math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_PC_rap_eMath.pdf",
+    "sha256_sujet": "053a5e4316348a30352c219bb4a3900fcb6f4d823b4e0daaa0dd8c3a9e4d303c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/projection-perron.svg",
+      "question": "18c",
+      "legende": "Pour la dernière matrice de la question 6, les itérés normalisés de deux vecteurs de base convergent vers le même point."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet natif de quatre pages et du rapport commun. Calcul des cinq rayons spectraux, vérification des assertions 7.i–v, preuve des multiplicités algébriques, calcul et tracé de deux orbites normalisées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
