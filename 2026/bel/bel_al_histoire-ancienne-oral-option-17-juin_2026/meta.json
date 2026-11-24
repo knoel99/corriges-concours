@@ -1,0 +1,95 @@
+{
+  "slug": "bel_al_histoire-ancienne-oral-option-17-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire ancienne (oral option 17 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_option_histoire_ancienne_opt_lcl_sujets_17_juin_2026.pdf",
+    "sujet_sha256": "a883020acc716104838188d40b30481107477ab7e064016b149f0977692dd7a2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_histoire_ancienne.pdf",
+    "rapport_sha256": "132746f73cbe727f57c1e8387fea7e371b0af68e47d5a28b890723ab35df4f69",
+    "documents": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecon-1.svg",
+      "question": "1",
+      "legende": "Ce qui transforme une distance en relation"
+    },
+    {
+      "fichier": "figures/lecon-2.svg",
+      "question": "2",
+      "legende": "Du conflit politique au mot mémorable"
+    },
+    {
+      "fichier": "figures/lecon-3.svg",
+      "question": "3",
+      "legende": "Les liens familiaux à l’épreuve des institutions"
+    },
+    {
+      "fichier": "figures/lecon-4.svg",
+      "question": "4",
+      "legende": "À qui et devant qui offre-t-on ?"
+    },
+    {
+      "fichier": "figures/lecon-5.svg",
+      "question": "5",
+      "legende": "Trois frontières qui ne se confondent pas"
+    },
+    {
+      "fichier": "figures/lecon-6.svg",
+      "question": "6",
+      "legende": "Une décision n’acquiert son sens qu’avec le temps"
+    },
+    {
+      "fichier": "figures/lecon-7.svg",
+      "question": "7",
+      "legende": "Qu’est-ce qui fait reconnaître le chevalier ?"
+    },
+    {
+      "fichier": "figures/lecon-8.svg",
+      "question": "8",
+      "legende": "Un sacerdoce, une compétence et une trajectoire"
+    },
+    {
+      "fichier": "figures/lecon-9.svg",
+      "question": "9",
+      "legende": "Reconnaître une adresse aux dieux ou aux hommes"
+    },
+    {
+      "fichier": "figures/lecon-10.svg",
+      "question": "10",
+      "legende": "Trois changements légitimés par le passé"
+    },
+    {
+      "fichier": "figures/lecon-11.svg",
+      "question": "11",
+      "legende": "Comment une minorité s’approprie-t-elle la décision ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux versions des 11 sujets distincts du 17 juin sur le fascicule original, avec sources anciennes, entretien, figures et lecture du rapport d’histoire ancienne."
+    }
+  ]
+}
