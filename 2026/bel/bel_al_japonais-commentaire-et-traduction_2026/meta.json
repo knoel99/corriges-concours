@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_japonais-commentaire-et-traduction_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Japonais (commentaire et traduction)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=14"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-regards.svg",
+      "legende": "Quand la silhouette devient-elle visible ?",
+      "question": "Commentaire"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire en japonais et traduction française de l’intégralité des lignes 1 à 21 de Furui Yoshikichi, guide sur la topographie, les modalités de perception et la fin interrogative."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Furui Yoshikichi (古井由吉), Yōko (杳子), 1970."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}

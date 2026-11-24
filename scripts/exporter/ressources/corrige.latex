@@ -36,6 +36,12 @@ $if(chinois)$
 \babelfont[chinese-simplified]{rm}[Renderer=HarfBuzz]{Noto Serif CJK SC}
 \babelfont[chinese-simplified]{sf}[Renderer=HarfBuzz]{Noto Sans CJK SC}
 $endif$
+$if(japonais)$
+% La locale japonaise traite ensemble les kana, les kanji et la ponctuation.
+\babelprovide[import,onchar=ids fonts,hyphenrules=unhyphenated]{japanese}
+\babelfont[japanese]{rm}[Renderer=HarfBuzz]{Noto Serif CJK JP}
+\babelfont[japanese]{sf}[Renderer=HarfBuzz]{Noto Sans CJK JP}
+$endif$
 \frenchsetup{SmallCapsFigTabCaptions=false}
 
 % --- Mise en page --------------------------------------------------------------
