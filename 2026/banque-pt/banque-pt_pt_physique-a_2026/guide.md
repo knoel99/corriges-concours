@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 heures, **calculatrice interdite**, 12 pages d'énoncé et **50 questions**, plus une annexe à rendre obligatoirement (la reproduction de la figure 3, à compléter à la question 6). Les résultats numériques sans unité ou avec une unité fausse ne sont pas comptés, et les résultats non justifiés non plus.
@@ -256,7 +262,7 @@ $$\begin{aligned}
 &\approx\boxed{2\times10^{-6}}
 \end{aligned}$$
 
-Quand les sables sont tous déposés, les argiles n'ont quasiment pas bougé (les limons non plus : fraction $0{,}3/450\approx7\times10^{-4}$). **Les dépôts se font successivement, sans se mélanger : la sédimentation fractionnée sépare efficacement les particules.**
+Quand les sables sont tous déposés, les argiles n'ont quasiment pas bougé (les limons non plus : fraction $0{,}3/450\approx7\times10^{-4}$). Les couches se forment principalement par familles de taille. Si les particules fines étaient initialement réparties uniformément dans la colonne, seule une fraction de l’ordre de $\epsilon/p$ des argiles aurait déjà atteint le fond avec les sables.
 
 > [!PIEGE]
 > Ne pas confondre $\tau_s^{\text s}\approx0{,}3$ s (temps de dépôt des sables) et $\tau_c^{\text s}=0{,}9$ s (temps caractéristique des sables). Et une valeur de $\epsilon/p$ sans phrase de conclusion ne répond pas à la question.
@@ -273,7 +279,7 @@ Quand les sables sont tous déposés, les argiles n'ont quasiment pas bougé (le
 
 Le dépôt le plus lent est celui des argiles, $\tau_s\approx1{,}6\times10^5$ s, soit environ 44 h, inférieur à $72\ \mathrm h\approx2{,}6\times10^5$ s.
 
-**Attendre 72 h garantit que toutes les particules minérales, argiles comprises, sont déposées** : on peut alors mesurer les épaisseurs des strates. La marge (facteur 1,6) couvre la dispersion des tailles : une argile plus fine que le micromètre retenu met beaucoup plus longtemps, car $\tau_s\propto r^{-2}$.
+Le délai de 72 heures laisse aux argiles de rayon $1\,\mu\mathrm m$ environ 28 heures de marge pour traverser la hauteur du bocal. Le rayon minimal auquel correspond ce délai dans le modèle se déduit de $\tau_s\propto r^{-2}$ et vaut $1\,\mu\mathrm m\times\sqrt{44/72}\simeq0{,}78\,\mu\mathrm m$. Des particules plus fines peuvent encore rester en suspension lors de la lecture des strates.
 
 ### 2. Teneur en eau d'un sol
 
@@ -463,17 +469,13 @@ R_{\max}&=\frac{c\rho_0}{ab}\exp\Big(\frac\alpha{Hr_{\min}}+\beta\Big)
 > Le sol humide conduit grâce à des ions. Que font des ions soumis à un champ constant pendant longtemps, au voisinage d'électrodes métalliques ?
 
 > [!INDICATION]
-> Pensez à l'accumulation de charges près des électrodes (que devient la neutralité ?) et aux réactions électrochimiques. Puis : pourquoi l'alternatif supprime-t-il ces effets, et pourquoi 200 Hz plutôt qu'une très haute fréquence ?
+> Pensez à l'accumulation de charges près des électrodes (que devient la neutralité ?) et aux réactions électrochimiques. Puis : comment l'alternatif limite-t-il ces effets, et pourquoi 200 Hz plutôt qu'une très haute fréquence ?
 
 #### Solution
 
-Sous tension **continue**, les ions migrent toujours dans le même sens et s'accumulent au voisinage des électrodes. Il se forme des couches chargées : le sol n'est plus neutre près des électrodes, et l'équation de Laplace, le champ uniforme et l'expression de $R$ (Q13 à Q16) ne s'appliquent plus. La polarisation des électrodes fait dériver la mesure dans le temps, et l'électrolyse (réactions d'oxydoréduction aux électrodes) corrode les électrodes et modifie le sol.
+Dans les pores remplis d’eau, les ions transportent le courant. Sous tension continue, leur migration maintient une polarisation aux interfaces entre le sol et les électrodes. Des doubles couches et, selon le potentiel, des réactions d’oxydoréduction peuvent alors modifier la tension mesurée. Le volume du sol peut conserver sa quasi-neutralité pendant que la charge varie fortement à proximité immédiate des électrodes.
 
-Sous tension **sinusoïdale**, le sens de migration s'inverse toutes les 2,5 ms : les ions oscillent sur une distance infime, aucune charge ne s'accumule, le sol reste neutre et le modèle ohmique reste valable à chaque instant.
-
-La fréquence de 200 Hz reste basse : l'approximation des régimes quasi stationnaires s'applique (longueur d'onde d'environ $10^6$ m) et le courant de déplacement est négligeable devant le courant de conduction. Le sol se comporte donc en résistance pure.
-
-**L'excitation alternative préserve l'électroneutralité du sol, sur laquelle repose le calcul de $R$, et protège les électrodes.**
+Sous tension sinusoïdale à $200\,\mathrm{Hz}$, le champ change de sens toutes les $2{,}5\,\mathrm{ms}$. Pour un ion de mobilité $u$ dans le champ $E_0\cos(\omega t)$, l’intégrale de la vitesse de dérive $uE_0\cos(\omega t)$ s’annule sur une période. L’excitation limite ainsi la polarisation durable. Elle laisse subsister une réponse capacitive des interfaces. Dans le volume, le rapport des amplitudes des courants de déplacement et de conduction vaut $\omega\varepsilon/\gamma_{\rm sol}$. Le modèle de résistance de Q16 s’applique lorsque ce rapport est petit et que la chute de tension aux interfaces reste faible devant celle à travers le sol.
 
 > [!JURY]
 > Rapport 2026 : « La question 20 appelait un recul certain. Le jury a fait preuve de bienveillance sur sa notation lorsque la proposition de réponse du candidat faisait scientifiquement sens. » L'énoncé demande en outre de discuter l'électroneutralité : on relie le choix de l'alternatif à la validité du modèle des questions 13 à 16.
@@ -668,7 +670,7 @@ R_2&=\frac{R_1}{\alpha}=\boxed{8{,}0\ \mathrm{k\Omega}}\\
 R_4&=2R_5=\boxed{2{,}0\ \mathrm{k\Omega}}
 \end{aligned}$$
 
-Avec l'autre lecture ($R_2=1$ kΩ fixé), $R_1=125\ \Omega$ ; $R_4$ ne change pas. Contrôle : le centre du cycle $(1+\alpha)V_C=4{,}5$ V est bien la moyenne de 3 V et 6 V.
+Le rapport du jury confirme que $R_2$ était la résistance à calculer. Les valeurs obtenues donnent bien un milieu de cycle $(1+\alpha)V_C=4{,}5\,\mathrm V$ et une largeur $2\alpha V_0=3\,\mathrm V$.
 
 > [!JURY]
 > Rapport 2026 : « La question 28 présentait une erreur d'énoncé. R_1 étant fourni, c'est le calcul de R_2 qui était attendu. » Et : « Le jury a accepté comme correcte toute réponse adaptée. » L'en-tête du sujet le prévoit : on signale l'erreur sur la copie et on explique la lecture retenue.
@@ -1157,7 +1159,7 @@ Confrontation chiffrée :
 - pompe allumée : $3{,}75$ min $<4$ min, **respecté** ;
 - entre deux allumages : la période vaut $\tau_1+\tau_2=6{,}25$ min $>6$ min, **respecté**.
 
-**Les préconisations sont respectées, de justesse.** Si la seconde préconisation visait la seule durée d'arrêt ($2{,}5$ min), elle ne le serait pas ; il est prudent de le signaler.
+La marche de la pompe dure 15 secondes de moins que le maximum prescrit. Deux allumages sont espacés de 6 minutes et 15 secondes, soit 15 secondes de plus que le minimum demandé.
 
 > [!PIEGE]
 > Oublier que l'arrosage continue pendant le remplissage donne $\tau_1=1500/1000=1{,}5$ min, et la conclusion est fausse.
