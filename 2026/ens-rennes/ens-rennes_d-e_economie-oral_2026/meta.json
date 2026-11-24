@@ -1,0 +1,70 @@
+{
+  "slug": "ens-rennes_d-e_economie-oral_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Économie (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Économie (oral)",
+  "questions": 0,
+  "sujets": 23,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oraux-d-e-conomie-d-e-2026_1790958162018-pdf",
+    "sujet_sha256": "73d321233c65fe54fbb740719055f1e69a122092f02d442b17a9880bbef534b8",
+    "apercu_sujet_sha256": "b876924dd4c5b99dbb65b2940948ae39ebf3ffdda8eab5f863a374f9168c56c5",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cooperation.svg",
+      "question": "7",
+      "legende": "Coopérer quand l’interaction se répète"
+    },
+    {
+      "fichier": "figures/dette.svg",
+      "question": "8",
+      "legende": "Trois composantes de la variation du ratio de dette"
+    },
+    {
+      "fichier": "figures/compte-courant.svg",
+      "question": "22",
+      "legende": "Deux lectures du même solde courant"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des réponses aux vingt-trois sujets, des relances du guide et des trois schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison aux vingt-trois intitulés sur la page de l’ENS, contrôle des équations, des hypothèses, de la date des comptes français et des références institutionnelles."
+    }
+  ]
+}
