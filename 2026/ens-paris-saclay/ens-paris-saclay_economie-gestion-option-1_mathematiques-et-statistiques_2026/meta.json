@@ -1,0 +1,51 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2026
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2026/2026_EG1_Maths_et_stats.pdf",
+    "page_officielle": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id[]=289&field_year_target_id[]=605"
+  },
+  "note_sources": "Le sujet officiel contient trois problèmes. La page officielle de cette voie et de cette session ne fournit pas de rapport propre à cette épreuve.",
+  "figures": [
+    {
+      "fichier": "figures/repartition.svg",
+      "question": "3.2b",
+      "legende": "Entre −1 et 1, la répartition est concave, affine ou convexe suivant le signe du paramètre. Les trois courbes ont les mêmes extrémités."
+    },
+    {
+      "fichier": "figures/densites.svg",
+      "question": "3.4a",
+      "legende": "Le segment pivote autour du point (0, 1/2). Une pente positive donne davantage de poids aux bonnes notes."
+    },
+    {
+      "fichier": "figures/scores-independants.svg",
+      "question": "3.4b",
+      "legende": "Un point représente un client. Les empilements comptent les notes égales dans chaque échantillon indépendant."
+    },
+    {
+      "fichier": "figures/scores-apparies.svg",
+      "question": "3.5a",
+      "legende": "Chaque numéro désigne un même vacancier dans les deux centres. Au-dessus de la diagonale, sa note est supérieure au centre 2."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 39 réponses en brut et guidé à partir des cinq pages de problèmes du sujet officiel. Calcul matriciel, dérivées et bord du carré, contrôles numériques des statistiques descriptives, quatre graphiques et test exact de signes sur les paires.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
