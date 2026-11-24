@@ -1,0 +1,148 @@
+{
+  "slug": "ens_pc_physique-chimie_2025",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2025
+  },
+  "questions": 66,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/05/25_pc_suj_phychi_ls.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/06/25_pc_rap_phychi_ls.pdf",
+    "sujet_sha256": "b52c7222124cf9a7fdca7908d9887f6ed20188058e7c5bfffa95038a4b7715cb",
+    "rapport_sha256": "9781393f3d08da78e63e3314d4a8c5fb9a29b33067e899ec26f7b48cf6021b2a"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "precision": "Les 30 questions du volet physique portent sur un lanceur magnétique et sont hors de la présente édition. Dans le volet chimie, C1 à C6 et C11 à C36 sont intégralement traitées (32 questions). C7 à C10, qui étudient la décomposition et la surpression d’un gaz confiné, sont hors périmètre."
+  },
+  "figures": [
+    {
+      "fichier": "figures/bilan-enthalpique.svg",
+      "question": "C3",
+      "legende": "Deux apports entrent dans le bilan périphérique. La chaleur sensible du CO chaud s’ajoute à la chaleur de son oxydation ; le diazote participe à l’échauffement final."
+    },
+    {
+      "fichier": "figures/sites-insertion.svg",
+      "question": "C14",
+      "legende": "Avec la tolérance retenue, les sites tétraédriques du fer α et octaédriques du fer γ accueillent H. Reste à compter les sites admissibles par atome de fer."
+    },
+    {
+      "fichier": "figures/potentiel-ph-fer.svg",
+      "question": "C16",
+      "legende": "Les domaines du fer reprennent la numérotation du sujet. Les deux points à pH 5 servent aux lectures en eau désoxygénée et en présence de dioxygène."
+    },
+    {
+      "fichier": "figures/potentiel-mixte.svg",
+      "question": "C19",
+      "legende": "Au potentiel mixte, les deux courants partiels ont la même valeur absolue. Les courbes d’allure donnent la construction ; l’axe des courants du sujet ne porte aucune valeur numérique."
+    },
+    {
+      "fichier": "figures/montage-trois-electrodes.svg",
+      "question": "C22",
+      "legende": "Le potentiostat impose le potentiel entre travail et référence. Le courant circule entre l’électrode de travail et la contre-électrode."
+    },
+    {
+      "fichier": "figures/centre-stereogene.svg",
+      "question": "C25",
+      "legende": "Autour du carbone stéréogène, N a la première priorité. Les substituants carbonés se départagent à la sphère suivante. Le groupe de priorité quatre pointe vers l’arrière."
+    },
+    {
+      "fichier": "figures/dedoublement.svg",
+      "question": "C31",
+      "legende": "Un réactif énantiopur transforme le racémique en deux diastéréoisomères. Une fois la séparation faite, l’hydrolyse restitue un alcool enrichi en un énantiomère."
+    },
+    {
+      "fichier": "figures/alcene-epoxyde-aminoalcool.svg",
+      "question": "C35",
+      "legende": "Le méthylène exocyclique de 10 forme l’époxyde spiro 11. L’ouverture sur le carbone terminal place NH₂ sur le méthylène et conserve OH sur le carbone du cycle dans 12."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet et le rapport officiels ENS Lyon et Paris-Saclay ; couverture de 32 questions de chimie, schémas originaux du bilan thermique, de l’insertion des atomes, de la corrosion, de la configuration et des transformations organiques. Le volet physique et les questions C7 à C10 ne sont pas traités."
+    }
+  ]
+}
