@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_etudes-theatrales_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Études théâtrales",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": null,
+    "famille_modele": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_spe_arts.pdf#page=3",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Th%C3%A9%C3%A2tre%202026.pdf",
+    "references": [
+      "https://grotowski.net/en/media/galleries/ksiaze-niezlomny-3",
+      "https://www.pinabausch.org/en/work/cafe"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/prince-partition.svg",
+      "question": "Partie I",
+      "legende": "La source personnelle et la forme reçue dans Le Prince constant."
+    },
+    {
+      "fichier": "figures/comparaison-jeux.svg",
+      "question": "Partie II",
+      "legende": "Trois conceptions de l’exactitude du geste."
+    },
+    {
+      "fichier": "figures/cafe-muller.svg",
+      "question": "Partie III",
+      "legende": "Responsabilités distinctes des partenaires dans un déplacement."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "verification": "Contre-lecture face au livret et au rapport écrit ; Grotowski, Cieślak, Weigel, Clairon et Café Müller contrôlés."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Composition, guide de méthode et trois schémas originaux.",
+      "agent": "couverture"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Contre-lecture indépendante de la composition avec le libellé et le rapport écrit du jury.",
+      "agent": "lettres_reprise"
+    }
+  ]
+}

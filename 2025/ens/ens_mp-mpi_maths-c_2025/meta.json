@@ -1,0 +1,87 @@
+{
+  "slug": "ens_mp-mpi_maths-c_2025",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP/MPI",
+    "matiere": "Maths C",
+    "annee": 2025
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://cpge-paradise.com/Concours2025/XENS/MP/MathC2025.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/11/Rapport_ECRIT_Maths_C_2025.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/i4-parite.svg",
+      "question": "QI.4c",
+      "legende": "Les quatre sommets verts portent chacun une probabilité de 1/4. Leur projection sur deux coordonnées donne toujours les quatre couples possibles."
+    },
+    {
+      "fichier": "figures/i6-ordre-du-moment.svg",
+      "question": "QI.6b",
+      "legende": "La courbe bleue détermine le plus grand ordre pair admissible, tracé en escalier. La hauteur perdue par l’arrondi est inférieure à deux."
+    },
+    {
+      "fichier": "figures/ii1-sous-niveau.svg",
+      "question": "QII.1a",
+      "legende": "Pour la norme euclidienne, les sous-niveaux sont des disques. La distance du point extérieur au petit disque dépasse la différence des rayons."
+    },
+    {
+      "fichier": "figures/ii2-masques.svg",
+      "question": "QII.2c",
+      "legende": "Le sommet rouge est le masque exact de l’exemple. Les quatre sommets de la face verte sont les masques autorisés."
+    },
+    {
+      "fichier": "figures/ii2-enveloppes.svg",
+      "question": "QII.2f",
+      "legende": "Le triangle est dans la face inférieure. Le sommet supplémentaire donne un tétraèdre. Les huit sommets engendrent le cube plein."
+    },
+    {
+      "fichier": "figures/ii2-distance.svg",
+      "question": "QII.2i",
+      "legende": "Pour les masques exacts (1,0) et (0,1), le triangle est l’enveloppe des masques autorisés. Son point le plus proche de l’origine est le milieu du segment des masques exacts."
+    },
+    {
+      "fichier": "figures/ii3-section.svg",
+      "question": "QII.3b",
+      "legende": "La coupe horizontale sélectionne les témoins de même dernière coordonnée. La projection bleue permet toutes les hauteurs."
+    },
+    {
+      "fichier": "figures/ii3-supremum.svg",
+      "question": "QII.3i",
+      "legende": "Le supremum cesse de décroître lorsque le maximum de la parabole atteint la borne zéro de l’intervalle des poids."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Les 40 items ont été rapprochés du fac-similé et du rapport officiel. Contrôle visuel du choix de l’ordre pair I.6b et de la variable sous l’infimum (51). Contre-lecture indépendante des fibres vides et de la loi conditionnelle (II.3c–d), ainsi que du calcul du supremum (II.3i)."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des solutions et du guidage.",
+      "agent": "maths_archives"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "II.3c, II.3d et II.3i.",
+      "agent": "principal"
+    }
+  ]
+}

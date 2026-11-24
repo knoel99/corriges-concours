@@ -1,0 +1,94 @@
+{
+  "slug": "x_fui-ff-1_francais_2020",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Français",
+    "annee": 2020
+  },
+  "questions": 6,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": null,
+    "famille": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/savoir-et-observer.svg",
+      "question": "A2",
+      "legende": "Comment Rousseau justifie la comparaison."
+    },
+    {
+      "fichier": "figures/marche-et-regards.svg",
+      "question": "B",
+      "legende": "Trois accès à la vie d’une même place."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20DE%20FRANCAIS%20Session%201.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": null,
+    "famille_modele": "GPT-6",
+    "agent": "agent principal",
+    "verification": "Texte de Rousseau, consignes de compréhension, argumentation sur le voyage et essai de la seconde partie vérifiés."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des versions brute et guidée après lecture du sujet officiel et réalisation des schémas du guidé."
+    },
+    {
+      "phase": "autocontrole",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification de la structure des deux Markdown, du dossier de schémas et de la compilation des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "agent principal",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Texte de Rousseau, consignes de compréhension, argumentation sur le voyage et essai de la seconde partie vérifiés."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    }
+  }
+}

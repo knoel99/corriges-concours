@@ -1,0 +1,112 @@
+{
+  "slug": "bel_al_etude-de-texte-francais-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Étude de texte français (Lyon)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "commentaire",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": null,
+    "famille": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=6",
+    "rapport": "https://www.ens-lyon.fr/sites/default/files/2026-10/Lettres%20Modernes%202026.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/echelles.svg",
+      "question": "Premier mouvement",
+      "legende": "Des informations de trois échelles"
+    },
+    {
+      "fichier": "figures/temps.svg",
+      "question": "Deuxième mouvement",
+      "legende": "Des gestes répétés au croisement singulier"
+    },
+    {
+      "fichier": "figures/regards.svg",
+      "question": "Troisième mouvement",
+      "legende": "Les regards à la fin du passage"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": null,
+    "famille_modele": "GPT-6",
+    "agent": "couverture",
+    "verification": "Confrontation aux pages 6 et 7 de l’épreuve et aux observations du jury. Distinction de la voix narrative et de l’enfant, échelles du paysage, repère « Une fois », nom retenu et déplacement final du regard vérifiés."
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport officiel de l’épreuve écrite sur l’extrait et les critères de correction."
+    },
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des versions brute et guidée après lecture du sujet officiel et réalisation des schémas du guidé."
+    },
+    {
+      "phase": "autocontrole",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification de la structure des deux Markdown, du dossier de schémas et de la compilation des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "couverture",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Confrontation aux pages 6 et 7 de l’épreuve et aux observations du jury. Distinction de la voix narrative et de l’enfant, échelles du paysage, repère « Une fois », nom retenu et déplacement final du regard vérifiés."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    }
+  }
+}

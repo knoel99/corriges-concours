@@ -1,0 +1,82 @@
+{
+  "slug": "ens_mp_maths-d_2023",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2023
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/09/23_mp_sujet_MathD.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/23_mp_rap_emathd.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/ii3-sous-groupe.svg",
+      "question": "QII.3a",
+      "legende": "Le sous-groupe de ℤ² est engendré par (2,1) et (0,2). Sur la verticale figurent les éléments de son noyau de projection."
+    },
+    {
+      "fichier": "figures/ii5-exposants.svg",
+      "question": "QII.5b",
+      "legende": "Pour les générateurs X, XY et XY², les exposants possibles sont sous la droite j = 2i. Le monôme XY³ est hors de la région."
+    },
+    {
+      "fichier": "figures/iii2-descente.svg",
+      "question": "QIII.2c",
+      "legende": "Les coefficients des matrices appartiennent au sous-anneau C. L’évaluation sur C est surjective, ce qui y transporte les identités polynomiales."
+    },
+    {
+      "fichier": "figures/iii3-matrices.svg",
+      "question": "QIII.3b",
+      "legende": "Pour deux générateurs et trois coordonnées au but, la complétion ajoute une colonne nulle à M et une ligne nulle à N. Le produit serait l’identité si la surjection existait."
+    },
+    {
+      "fichier": "figures/iv3-reseaux.svg",
+      "question": "QIV.3",
+      "legende": "À gauche, tous les points entiers sont atteints. À droite, seuls ceux dont les deux coordonnées sont paires sont dans l’image. Les pgcd des entrées distinguent les matrices."
+    },
+    {
+      "fichier": "figures/v2-blocs.svg",
+      "question": "QV.2a",
+      "legende": "Le mineur bordé impose d’abord la nullité du bloc inférieur droit. Une fois cette nullité acquise, il impose celle du produit des deux blocs hors diagonale."
+    },
+    {
+      "fichier": "figures/v4-saturation.svg",
+      "question": "QV.4b",
+      "legende": "Pour quatre lignes, trois colonnes et un rang limité à deux, les huit entrées des deux premières colonnes sont libres et la troisième est nulle."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex, famille GPT-6",
+    "verification": "37 réponses comparées au scan officiel et au rapport du jury. Contre-lecture indépendante de la double formule de Cauchy-Binet sur les mineurs (IV.2), du signe du coefficient sous-dominant (V.2a) et de l’annulateur des formes traces (V.3a)."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des solutions et du guidage.",
+      "agent": "maths_archives"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "IV.2, V.2a et V.3a.",
+      "agent": "principal"
+    }
+  ]
+}

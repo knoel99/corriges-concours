@@ -1,0 +1,99 @@
+{
+  "slug": "x_fui-ff-1_anglais_2021",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Anglais",
+    "annee": 2021
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": null,
+    "famille": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/two-times.svg",
+      "question": "1",
+      "legende": "Distinguishing an interruption from a transition"
+    },
+    {
+      "fichier": "figures/policy-recovery.svg",
+      "question": "2",
+      "legende": "Who bears the costs of a recovery plan?"
+    },
+    {
+      "fichier": "figures/essay-storm.svg",
+      "question": "E",
+      "legende": "What a storm reveals about cooperation"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20S1%20SUJET%20ECRIT%20D'ANGLAIS_1.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": null,
+    "famille_modele": "GPT-6",
+    "agent": "couverture",
+    "verification": "La relance économique, les réponses politiques et sociales aux crises, les quatre réponses et l’essai ont été confrontés aux demandes officielles."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des versions brute et guidée après lecture du sujet officiel et réalisation des schémas du guidé."
+    },
+    {
+      "phase": "autocontrole",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification des quatre réponses et de l’essai : compte des mots, recherche de reprises littérales et compilation des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "couverture",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "La relance économique, les réponses politiques et sociales aux crises, les quatre réponses et l’essai ont été confrontés aux demandes officielles."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    }
+  }
+}

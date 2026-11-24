@@ -1,0 +1,75 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2024",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2024
+  },
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "questions": 19,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_info.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_2cc_rap_eInfo.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-contre-exemple-dijkstra.svg",
+      "question": "Q5",
+      "legende": "Avec l’arc négatif, la meilleure étiquette de a arrive après l’extraction de a. Le chemin vert de s à t a le poids 1."
+    },
+    {
+      "fichier": "figures/q06-cycle-negatif.svg",
+      "question": "Q6",
+      "legende": "Un tour de plus sur le cycle abaisse d’une unité le poids du chemin vers t."
+    },
+    {
+      "fichier": "figures/q08-graphe-pondere.svg",
+      "question": "Q8",
+      "legende": "Les dix arcs de la figure 3 du sujet. Le chemin minimal vers c a pour poids 7 − 3 − 2 − 4 = −2."
+    },
+    {
+      "fichier": "figures/q13-super-source.svg",
+      "question": "Q13",
+      "legende": "Les arcs verts de poids nul relient q à tous les sommets. Le cycle x–y échappe à une recherche lancée depuis s seulement."
+    },
+    {
+      "fichier": "figures/q14-losange.svg",
+      "question": "Q14",
+      "legende": "Le carré de commutation se referme parce que seul le sommet éboulé peut perdre des grains."
+    },
+    {
+      "fichier": "figures/q15-grille-confluence.svg",
+      "question": "Q15",
+      "legende": "Chaque petite case applique le losange à des transitions ou à des pas d’identité. Les bords droit et inférieur rejoignent le même état."
+    },
+    {
+      "fichier": "figures/q18-chemin-vers-puits.svg",
+      "question": "Q18",
+      "legende": "Un sommet qui s’éboulerait infiniment souvent enverrait infiniment de grains jusqu’au puits. Le stock total reste pourtant fini."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Les deux versions de l’épreuve d’informatique.",
+      "agent": "physique_sciences"
+    }
+  ]
+}
