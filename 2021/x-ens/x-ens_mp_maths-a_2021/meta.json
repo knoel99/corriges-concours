@@ -43,6 +43,11 @@
       "fichier": "figures/majoration-des-cardinaux.svg",
       "question": "Q IV.6b",
       "legende": "Parmi les premiers, la valeur maximale de la majoration logarithmique est atteinte au premier deux."
+    },
+    {
+      "fichier": "figures/groupe-ordre-81.svg",
+      "question": "Q IV.5b",
+      "legende": "En dimension sept, trois blocs entiers d’ordre trois et une permutation cyclique des blocs engendrent un groupe d’ordre 81."
     }
   ],
   "revision": {
@@ -89,6 +94,18 @@
       "perimetre": "Contrôle des 44 réponses face au sujet et au rapport écrit de la banque des ENS. Vérifications de la réduction modulo deux, des sommes de racines de l’unité, de la divisibilité finale et de la borne uniforme.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 44 réponses et des six illustrations existantes dans les deux éditions face aux originaux. Exemple au module deux, distinction des deux types de facteurs premiers en III.7, noyau tensoriel et réalisation explicite de la borne 3⁴ en dimension sept. Ajout du schéma des trois blocs.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

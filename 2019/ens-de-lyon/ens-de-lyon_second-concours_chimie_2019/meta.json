@@ -1,0 +1,144 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2019
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "questions": 66,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_2c_sujet_chi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_2CC_rap_eChi.pdf",
+    "sujet_sha256": "3e516676542decb1c0e4450b7f0d27ab02a3f4595d1e924fde37dfb160739121",
+    "rapport_sha256": "545691c36fcb2a327a14d0b2fc3168018e1c4db6f79c3df9de964ea373b110d5"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A10",
+      "A11",
+      "A14",
+      "A15",
+      "A16",
+      "A17",
+      "A18",
+      "A19",
+      "A20",
+      "A21",
+      "A22",
+      "A23",
+      "A24",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "questions_partiellement_traitees": [
+      "A9"
+    ],
+    "questions_non_traitees": [
+      "A8",
+      "A12",
+      "A13"
+    ],
+    "precision": "Sur les 66 questions, 62 sont entièrement traitées. A9 expose la définition générale de la constante d’équilibre. A8, A12 et A13 relatives au procédé de séparation isotopique sont exclues."
+  },
+  "figures": [
+    {
+      "fichier": "figures/orbitales-angulaires.svg",
+      "legende": "Formes angulaires schématiques sans nœuds radiaux. Deux teintes distinguent les phases opposées, le tore équatorial de d z² est vu de profil.",
+      "question": "A6"
+    },
+    {
+      "fichier": "figures/ph-dilution.svg",
+      "legende": "À 25 °C, la dilution d’un monoacide fort tend vers le pH de l’eau neutre.",
+      "question": "A22"
+    },
+    {
+      "fichier": "figures/tensions-electrolyse.svg",
+      "legende": "Deux tensions réversibles selon la donnée entropique employée, comparées aux 1,9 V du sujet.",
+      "question": "B7"
+    },
+    {
+      "fichier": "figures/population-de-la-maille.svg",
+      "legende": "Positions fractionnaires schématiques du type rutile. Les sommets bleus sont partagés entre huit mailles et les H orange de face entre deux.",
+      "question": "B13"
+    },
+    {
+      "fichier": "figures/pile-a-protons.svg",
+      "legende": "Les électrons traversent la charge extérieure et les protons traversent la membrane. Les deux flux aboutissent à la cathode.",
+      "question": "B19"
+    },
+    {
+      "fichier": "figures/barrieres-energetiques.svg",
+      "legende": "La voie catalysée possède un intermédiaire et des barrières plus faibles, avec les mêmes niveaux initial et final.",
+      "question": "C3"
+    },
+    {
+      "fichier": "figures/cycle-wilkinson.svg",
+      "legende": "Le degré d’oxydation change seulement lors de l’addition oxydante de H₂ et de l’élimination réductrice de l’alcane.",
+      "question": "C10"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du texte, des schémas de la maille et des hydrogénations, des données numériques et du rapport de 2019. Les données d’entropie incohérentes sont signalées et leurs effets chiffrés. Le procédé de séparation isotopique est omis."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

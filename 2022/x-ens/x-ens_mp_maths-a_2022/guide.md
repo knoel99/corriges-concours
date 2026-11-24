@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’écrit du 25 avril 2022 dure quatre heures. Ses 15 numéros comprennent 33 questions et sous-questions. Le problème construit une représentation de la grassmannienne orientée, l’ensemble des sous-espaces orientés de dimension fixée, afin d’en étudier la compacité et les chemins. Pour reconstruire la preuve finale, suivre le passage des bases aux volumes, puis des volumes aux formes. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20DE%20MATHS%20A%20%28XLSR%29.pdf)
@@ -267,7 +269,9 @@ La matrice de Gram d’une famille orthonormée est l’identité de taille $p$.
 
 #### Solution
 
-Décomposons $e_1=h+v$, où $h=\operatorname{pr}(e_1)$ et $v\in\operatorname{Vect}(e_2,\ldots,e_p)$. Enlever $v$ à $e_1$ revient à lui retrancher une combinaison des autres vecteurs. La matrice de cette opération sur les lignes a déterminant $1$. Par Q7a et Q6b, le déterminant de Gram de la famille avec elle-même ne change pas (le facteur intervient dans chacun des deux arguments). Pour $(h,e_2,\ldots,e_p)$, la matrice de Gram est diagonale par blocs, les blocs étant $\|h\|^2$ et $\operatorname{Gram}((e_2,\ldots,e_p),(e_2,\ldots,e_p))$. On prend les racines positives. La preuve couvre aussi les familles liées et les projections nulles.
+Décomposons $e_1=h+v$, où $h=\operatorname{pr}(e_1)$ et $v\in\operatorname{Vect}(e_2,\ldots,e_p)$. Enlever $v$ à $e_1$ revient à lui retrancher une combinaison des autres vecteurs. La matrice de cette opération sur les lignes a déterminant $1$. Par Q7a et Q6b, le déterminant de Gram de la famille avec elle-même ne change pas (le facteur intervient dans chacun des deux arguments). Pour $(h,e_2,\ldots,e_p)$, la matrice de Gram est diagonale par blocs, les blocs étant $\|h\|^2$ et $\operatorname{Gram}((e_2,\ldots,e_p),(e_2,\ldots,e_p))$. En prenant les racines positives, on obtient
+$$\operatorname{vol}_p(e_1,\ldots,e_p)
+=\|\operatorname{pr}(e_1)\|\,\operatorname{vol}_{p-1}(e_2,\ldots,e_p).$$ La preuve couvre aussi les familles liées et les projections nulles.
 
 ![Figure 3 — Dans le plan, le volume du parallélogramme est le produit de la base par la longueur de la composante orthogonale.](figures/q8-volume-hauteur.svg)
 
@@ -308,6 +312,9 @@ Notons $P=P_b^e$ la matrice des colonnes $e_j$ dans la base orthonormée $b$. Al
 #### Solution
 
 Si une famille est liée, la symétrie de Q6b et Q7b annulent le membre de gauche et un des volumes. Sinon, choisir pour les deux espaces engendrés les bases orthonormées principales $u,u'$ de la partie I. Par Q7a et Q6b, le déterminant mixte des deux familles est celui de ces deux bases multiplié par les deux déterminants des changements de base. Les modules de ces déterminants sont les volumes cherchés par Q9a. Reste $|\Omega_p(u)(u')|=\prod_k\cos\theta_k\leq1$, d’après Q4.
+Ainsi, pour deux familles libres $e,e'$, le rapport
+$$\frac{|\Omega_p(e)(e')|}{\operatorname{vol}_p(e)\operatorname{vol}_p(e')}=\prod_{k=1}^{p}\cos\theta_k$$
+vaut $1$ exactement lorsque leurs sous-espaces engendrés coïncident (Q4c). Pour une famille liée, les deux membres de l’inégalité non divisée valent zéro. Cela couvre en particulier $p>d$, cas où toute famille de $p$ vecteurs de $E$ est liée.
 
 ## III — Produit scalaire sur les formes alternées
 
@@ -324,6 +331,9 @@ Les valeurs d’une forme sur des vecteurs de base d’indices croissants suffis
 #### Solution
 
 Pour deux multi-indices croissants $\alpha,\beta$, $\Omega_p(e_\alpha)(e_\beta)=\delta_{\alpha\beta}$. En effet, si les listes diffèrent, un vecteur d’une liste est orthogonal à toute l’autre ; si elles coïncident, la matrice est l’identité. Ainsi la forme $\sum_\alpha\omega(e_\alpha)\Omega_p(e_\alpha)$ donne les mêmes valeurs que $\omega$ sur chaque $e_\beta$. L’alternance détermine leurs valeurs sur les listes permutées et annule les répétitions. Enfin la multilinéarité détermine les formes sur tous les vecteurs par développement dans la base de $E$.
+Plus explicitement, si $v_j=\sum_{i=1}^d x_{ij}e_i$, les termes d’indices répétés s’annulent et chaque liste croissante $i_1<\cdots<i_p$ regroupe les $p!$ permutations de ses indices. La signature de chacune vient de l’alternance. Leur somme donne
+$$\omega(v_1,\ldots,v_p)=\sum_{i_1<\cdots<i_p}\omega(e_{i_1},\ldots,e_{i_p})\det(x_{i_k j})_{1\le k,j\le p}.$$
+Ce mineur est précisément $\Omega_p(e_{i_1},\ldots,e_{i_p})(v_1,\ldots,v_p)$.
 
 ![Figure 4 — Pour p = 2 et d = 3, les trois formes de base valent un sur leur propre paire et zéro sur les autres.](figures/q10-formes-de-base.svg)
 
@@ -435,17 +445,18 @@ L’ensemble $\mathcal F$ des familles orthonormées de $p$ vecteurs est compact
 > Quand p=d, combien de points l’application atteint-elle ?
 
 > [!INDICATION]
-> Quand p<d, compléter les deux bases en bases de même orientation totale, puis relier l’isométrie directe à l’identité par rotations planes.
+> Utiliser Q3d pour faire tourner simultanément chaque paire de vecteurs principaux dans son propre plan. S’il manque le signe de l’orientation d’arrivée, chercher un vecteur unitaire hors de l’espace d’arrivée, orthogonal à celui-ci.
 
 #### Solution
 
 Si $p=d$, le seul sous-espace est $E$. Ses deux orientations donnent deux points opposés distincts sur la sphère des formes, donc une partie non connexe par arcs.
 
-Supposons $p<d$. Choisissons pour chacun des deux sous-espaces orientés à relier une base orthonormée correspondant à son orientation. On peut compléter chacune en une base orthonormée de $E$ avec la **même orientation totale** : pour ajuster le signe, il reste au moins un vecteur de complément à changer. L’isométrie $Q$ envoyant la première base complète sur la seconde a déterminant $1$.
+Supposons $p<d$. Pour relier $(V,C)$ à $(V',C')$, prenons les bases principales $(u_i)$ et $(u'_i)$ de Q3. En changeant simultanément le signe des deux premiers vecteurs $u_1,u'_1$ au besoin, on place $(u_i)$ dans $C$ tout en conservant les produits scalaires. Dans chaque $W_i=\operatorname{Vect}(u_i,u'_i)$, construisons un arc $b_i(t)$, pour $0\leq t\leq1$. Si $\theta_i=0$, les deux vecteurs sont égaux et l’arc est constant. Sinon, posons
+$$n_i=\frac{u'_i-\cos(\theta_i)u_i}{\sin(\theta_i)},\qquad
+b_i(t)=\cos(t\theta_i)u_i+\sin(t\theta_i)n_i.$$
+Le vecteur $n_i$ est unitaire et orthogonal à $u_i$. L’arc va donc de $u_i$ à $u'_i$ sur le cercle unité de $W_i$. Les $W_i$ étant deux à deux orthogonaux par Q3d, la famille $(b_i(t))$ est orthonormée à chaque instant. Par Q13b et Q14b, $t\mapsto\Omega_p(b_1(t),\ldots,b_p(t))$ est un chemin continu dans l’image de $\Psi$.
 
-Justifions que $Q$ se relie à l’identité. En dimension un, une isométrie directe est l’identité. En dimension $d\geq2$, fixons un vecteur unitaire $e$. Une rotation plane $R$ envoie $Qe$ sur $e$ (pour $Qe=-e$, utiliser une rotation d’angle $\pi$ dans un plan contenant $e$). Si $Qe=e$, prendre $R=\mathrm{id}$. En faisant varier continûment l’angle de $R$ de zéro à sa valeur finale, on relie $Q$ à $RQ$. Ce dernier fixe $e$, et sa restriction à $e^\perp$ est directe. Par récurrence, on la relie à l’identité sur $e^\perp$, en gardant $e$ fixe. En renversant le chemin complet on obtient $Q_t$ de $\mathrm{id}$ à $Q$.
-
-Pour la première base orthonormée $(b_1,\ldots,b_p)$, $t\mapsto\Omega_p(Q_t b_1,\ldots,Q_t b_p)$ est un chemin continu dans l’image de $\Psi$ (Q14b) entre les deux points choisis. La condition cherchée est exactement $p\leq d-1$.
+Si la base d’arrivée appartient à $C'$, le chemin est complet. Sinon, choisissons un vecteur unitaire $w\in (V')^\perp$, disponible puisque $p<d$. Un seul demi-tour suffit : remplaçons $u'_1$ par $\cos(\pi t)u'_1+\sin(\pi t)w$ en gardant $u'_2,\ldots,u'_p$ fixes. La famille reste orthonormée et aboutit à $(-u'_1,u'_2,\ldots,u'_p)$, qui représente $C'$. La concaténation donne le chemin voulu. En particulier, elle relie aussi les deux orientations d’un même sous-espace lorsque sa codimension est positive.
 
 ![Figure 6 — Deux orientations sur une même droite se relient par un demi-tour dans le plan ambiant.](figures/q15-chemin-oriente.svg)
 

@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve du 12 avril 2021 dure quatre heures. Elle étudie les sous-groupes finis de matrices entières inversibles sur les entiers. Elle aboutit à une borne sur leur cardinal qui dépend de la dimension et à une meilleure borne pour les groupes de cardinal une puissance première. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_MathA.pdf)
@@ -103,7 +105,7 @@ Une racine de l’unité réelle vaut $1$ ou $-1$. Comme $g$ est diagonalisable,
 > Le polynôme caractéristique a des coefficients réels et ses deux racines ne sont pas réelles.
 
 > [!INDICATION]
-> Sa trace est un entier et le produit de ses racines est un module au carré.
+> La trace de la matrice est entière. Le produit des deux valeurs propres conjuguées est un module au carré.
 
 #### Solution
 
@@ -173,7 +175,7 @@ La réduction modulo trois distingue les éléments de tout sous-groupe fini san
 
 #### Solution
 
-Si $g=S\operatorname{diag}(\zeta_j)S^{-1}$, alors $A=(g-I_n)/m$ est diagonalisée par la même base et a pour valeurs propres $(\zeta_j-1)/m$. Chacune a pour module au plus $2/m<1$ puisque $m\ge3$.
+Si $g=S\operatorname{diag}(\zeta_j)S^{-1}$, alors $A=(g-I_n)/m$ est diagonalisée par la même base et a pour valeurs propres $(\zeta_j-1)/m$. Chacune a pour module au plus $2/m<1$ puisque $m\ge3$. Le seuil est exact : pour $m=2$, $g=-I_n$ vérifie $g\equiv I_n\pmod2$ avec $g\ne I_n$ et $A=-I_n$. Ses puissances gardent une valeur propre de module un.
 
 ![Figure 3 — Les valeurs propres de la matrice divisée sont sur le petit cercle de diamètre deux tiers. Leur module est strictement inférieur à un.](figures/spectre-matrice-divisee.svg)
 
@@ -347,7 +349,7 @@ Les traces entières de $g$ et $g^\ell$ ont chacune pour module au plus $n$ par 
 
 #### Solution
 
-Soit $q\le2n$ un nombre premier. Si $q$ ne divise pas $k$, il figure dans le produit définissant $m$ et $m\equiv k\not\equiv0\pmod q$. Si $q\mid k$, alors $q\ne p$ puisque $p\nmid k$ et $q$ ne figure pas dans ce produit. L’additif $p^r\prod\ell$ est donc premier à $q$, ce qui interdit encore $q\mid m$. Ainsi tous les facteurs premiers de $m$ dépassent $2n$.
+Soit $q\le2n$ un nombre premier. Si $q$ ne divise pas $k$, il figure dans le produit définissant $m$ et $m\equiv k\not\equiv0\pmod q$. Si $q\mid k$, alors $q\ne p$ puisque $p\nmid k$ et $q$ ne figure pas dans ce produit. L’additif $p^r\prod\ell$ est donc premier à $q$, ce qui interdit encore $q\mid m$. Ainsi tous les facteurs premiers de $m$ dépassent $2n$. Par exemple, pour $n=2$, $p=3$, $r=2$ et $k=2$, les petits premiers sont $2,3$ et seul $3$ intervient dans le produit. On obtient $m=2+9\cdot3=29$. On a bien $g^{29}=g^2$ dans un groupe d’ordre neuf, puisque les deux exposants diffèrent de $27$.
 
 ### Question III.7b
 
@@ -527,7 +529,7 @@ $$\sum_{g\in G}(\operatorname{Tr}g)^s=|G\cap\ker\varphi_s|\sum_{h\in\varphi_s(G)
 
 #### Solution
 
-Le groupe $\varphi_s(G)$ est un sous-groupe fini de $\mathrm{GL}_{n^s}(\mathbb C)$. Par 1b, la somme de ses traces est un multiple entier de $|\varphi_s(G)|$. Or $|G\cap\ker\varphi_s|\cdot|\varphi_s(G)|=|G|$ par 3b. La somme des puissances considérée est donc un multiple entier de $|G|$. Pour $s=0$, on a directement $\sum_{g\in G}1=|G|$.
+Le groupe $\varphi_s(G)$ est un sous-groupe fini de $\mathrm{GL}_{n^s}(\mathbb C)$. Par 1b, la somme de ses traces est un multiple entier de $|\varphi_s(G)|$. Or $|G\cap\ker\varphi_s|\cdot|\varphi_s(G)|=|G|$ par 3b. La somme des puissances considérée est donc un multiple entier de $|G|$. Pour $s=0$, on a directement $\sum_{g\in G}1=|G|$. Le facteur de taille des fibres peut être indispensable. Pour $G=\{I_n,-I_n\}$ et $s=2$, les deux matrices ont la même image $I_{n^2}$. La somme des carrés des traces initiales vaut bien $2n^2$ et la somme des traces dans l’image vaut $n^2$.
 
 ### Question IV.5a
 
@@ -552,6 +554,10 @@ Comme $P\in\mathbb Z[X]$, la question 4b appliquée à chaque monôme (et la rem
 #### Solution
 
 On a $P(n)=\prod_{j=1}^a(n-(n-pj))=p^a a!$. Comme $p^r\mid P(n)$, prendre la valuation en $p$ donne $r\le a+v_p(a!)$.
+
+Pour $n=7$ et $p=3$, la borne donne $r\le3+v_3(3!)=4$. Elle est atteinte. Soit $C=\bigl(\begin{smallmatrix}0&-1\\1&-1\end{smallmatrix}\bigr)$, de polynôme caractéristique $X^2+X+1$ et d’ordre trois. Dans trois plans de coordonnées indépendants, les matrices $\operatorname{diag}(C^i,C^j,C^k,1)$ forment un sous-groupe $D$ d’ordre $27$, avec $0\le i,j,k<3$. Soit $T$ la matrice qui permute cycliquement les trois plans en respectant leurs bases et fixe le septième vecteur. Elle normalise $D$ en permutant ses trois exposants. Ni $T$ ni $T^2$ ne préserve chaque plan, donc les trois classes $D,DT,DT^2$ sont disjointes. Leur réunion est le groupe engendré par $D$ et $T$, de cardinal $81$. Les quatre traces de III.10 se lisent déjà sur $D$ : chaque bloc $C$ ou $C^2$ remplace une trace $2$ par $-1$, ce qui enlève trois.
+
+![Figure — En dimension sept, trois blocs entiers d’ordre trois et une permutation cyclique des blocs engendrent un groupe d’ordre 81.](figures/groupe-ordre-81.svg)
 
 ### Question IV.6a
 
