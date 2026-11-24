@@ -1,0 +1,64 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2021,
+    "date": "2021-04-13",
+    "duree_heures": 5
+  },
+  "questions": 74,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_ScIndus_v2.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Rapport_ecrit_PSI_SI.pdf",
+    "documents_reponse": "https://sciencesindustrielles.com/Annales/2021%20PSI%20SI%20XENS%20S.pdf#page=35",
+    "sujet_sha256": "c7e2494bc6e39c23863fa91fea0b1b72d6fa955af9dcda7b4ff0f6dba5def88a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q06-dr1-points-morts.svg",
+      "question": "Q6",
+      "legende": "Construction DR1. Le trait bleu dans la roue est un diamètre matériel. K et M désignent les contacts instantanés situés à la cote de C."
+    },
+    {
+      "fichier": "figures/q13-dr2-reglage.svg",
+      "question": "Q13",
+      "legende": "Construction DR2. Dans chaque paire la commande verte descend tandis que la tête rouge monte. Le centre de roue ne bouge pas entre les deux réglages du même point mort."
+    },
+    {
+      "fichier": "figures/q49-dr3-chaine.svg",
+      "question": "Q49",
+      "legende": "Complément du DR3. Le débit massique est intégré avant le bloc mécanique. Le gain du capteur intervient sur la consigne et dans le retour."
+    },
+    {
+      "fichier": "figures/q57-dr4-bode-ferme.svg",
+      "question": "Q57",
+      "legende": "DR4. Modèle fermé réglé pour un amortissement de 0,75. La cassure se situe à environ 55 rad/s."
+    },
+    {
+      "fichier": "figures/q64-dr5-correcteur.svg",
+      "question": "Q64",
+      "legende": "DR5. La faible avance de phase aux extrêmes croît jusqu’à 30 degrés au centre de la bande du correcteur."
+    },
+    {
+      "fichier": "figures/q67-dr6-marges.svg",
+      "question": "Q67",
+      "legende": "Reconstruction du DR6 et asymptotes pour le gain chiffré. Les deux segments de phase illustrent les marges lues sur le document à environ 230 rad/s. Ils sont décalés en abscisse pour être distingués."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 74 questions du moteur automobile MCE-5. Vérification des figures, de la date, des cotes et des consignes dans le sujet ENS Paris-Saclay ainsi que du rapport institutionnel et des documents réponse DR1 à DR6 dans une copie complète. Six schémas indépendants et calculs de contrôle des courses, efforts, inerties, réponse indicielle et marges. Les hypothèses de lecture des données sont précisées aux questions graphiques."
+    }
+  ]
+}
