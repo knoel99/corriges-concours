@@ -143,6 +143,8 @@
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/brut.md) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/guide.md) |
+| 2022 | BEL | AL | Chinois (commentaire et traduction) | [md](2022/bel/bel_al_chinois-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_chinois-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Chinois (thème Lyon) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2022/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2022/brut.md) | [md](2022/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2022/guide.md) |
 | 2026 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/brut.md) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |

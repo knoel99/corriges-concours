@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_chinois-commentaire-et-traduction_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (commentaire et traduction)",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=8",
+    "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Chinois%202022.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "De la rue à la fenêtre"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire en chinois de l’ensemble du passage de Zhang Kangkang, version française limitée aux lignes 1 à 11, explication des deux données numériques et du motif lumineux, schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "L’extrait de Zhang Kangkang, « 把灯光调亮 » (2016), fait voir une rue commerçante depuis la fenêtre de la librairie de Lu Na. Le commentaire porte sur tout le texte. La traduction s’arrête à la fin de la ligne 11."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
