@@ -2,6 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+
 Sujet : « Cycles et unification ». Durée 2 h, calculatrice interdite. Notations : $s\rightsquigarrow t$ signifie qu'il existe un chemin (éventuellement vide) de $s$ à $t$ ; on note `époque`, `sortie`, `présent`, `compteur` les variables globales de l'énoncé.
 
 Rappel du graphe de la figure 1 (listes d'adjacence, l'étiquette d'un arc est son indice) :
@@ -63,6 +70,8 @@ La valeur de `compteur` croît strictement à chaque affectation de `sortie`. Co
 - Si $\texttt{époque}[v]=\texttt{présent}$, alors `pp(v)` a déjà commencé pendant cet appel, peut-être hors de `pp(u)`, par un chemin de $s$ à $v$ qui ne passe pas par $u$. Supposons que `pp(v)` ne soit pas terminée. Alors `pp(u)` a été appelée, directement ou non, depuis `pp(v)`. La pile d'appels fournit un chemin $v\rightsquigarrow u$, qui forme un cycle avec l'arc $u\to v$, ce qu'exclut A1. Donc `pp(v)` est terminée. Sa sortie a reçu une valeur de `compteur` strictement inférieure à celle que recevra `sortie[u]`.
 
 Dans les deux cas, $\boxed{\texttt{sortie}[u]>\texttt{sortie}[v]}$, donc a fortiori $\texttt{sortie}[u]\ge\texttt{sortie}[v]$.
+
+La question 4 s’appuie ici sur l’époque fraîche de la question 3. Pour un appel isolé, les seuls invariants A1–A4 ne suffisent pas. Prenons un unique arc $s\to v$, les deux époques égales à `présent = 0`, les deux sorties égales à 1 et `compteur = 0`. Ces valeurs vérifient les invariants initiaux. Un appel direct à `pp(s)` saute $v$ et donne à $s$ la sortie 0, tandis que celle de $v$ reste 1.
 
 ### Question 5
 
@@ -203,7 +212,7 @@ Si $s$ est libre, $T(s)=1$, car le seul chemin est le chemin vide. Sinon, un che
 
 $$T(s)=\sum_{s\to t}T(t).$$
 
-La récursion termine par Q9. Le sujet n'exige pas d'efficacité, et la récursion directe suffirait. On mémoïse quand même, pour un coût linéaire :
+La récursion termine par Q9. Le sujet n'exige pas d'efficacité, et la récursion directe suffirait. On mémorise chaque nombre de chemins déjà calculé.
 
 ```python
 def taille(s):
@@ -223,7 +232,7 @@ def taille(s):
     return aux(s)
 ```
 
-Vérification sur la figure 1 : $T(a)=T(c)+T(d)=2+2=4$, et $T(W)=T(Z)=1$. **Complexité $O(|S|)$** grâce à la mémoïsation. Sans elle, le coût serait exponentiel sur l'exemple de Q10.
+Vérification sur la figure 1 : $T(a)=T(c)+T(d)=2+2=4$, et $T(W)=T(Z)=1$. La mémoïsation effectue $O(|S|)$ opérations arithmétiques. En comptant les bits, un résultat peut demander $O(|S|)$ bits puisque le nombre de choix de chemins double au plus à chaque niveau. L’algorithme prend alors au plus $O(|S|^2)$ opérations sur les bits.
 
 ### Question 13
 
@@ -239,10 +248,9 @@ Ainsi $\mathrm{fn}_H(c)\neq\mathrm{fn}_H(X)$, quelle que soit l'extension $H$, q
 
 ### Question 14
 
-Ligne 17, on complète par :
+À la ligne 17, dans le bloc déjà ouvert par le `elif` de la ligne 16, insérer les deux lignes suivantes.
 
 ```python
-        elif len(G[s]) == 0:
             if s != t and not lier(s, t):
                 return False
 ```
@@ -259,6 +267,8 @@ En effet, les cas « $t$ lié » et « $s,t$ internes » sont traités avant. La
   - Sinon, `lier` ajoute l'arc $s\to t$, étiqueté 0 puisque $s$ était libre. Les extensions du nouveau $G$ sont exactement les extensions de l'ancien qui contiennent $s\to t$. On poursuit la boucle avec $P'$, déjà privé de $(s,t)$ par `P.pop()`.
 
 On ne renvoie pas le résultat de `lier` quand il vaut `True` : la boucle doit continuer à traiter les autres paires de $P$. Par exemple, sur la figure 1, `unif([('c', 'X'), ('Y', 'Z')])` lie `Y` à `Z`, puis doit encore découvrir que $(c,X)$ n'a pas de solution (Q13) et renvoyer `False`.
+
+## Partie III. Représentation relationnelle
 
 ### Question 15
 

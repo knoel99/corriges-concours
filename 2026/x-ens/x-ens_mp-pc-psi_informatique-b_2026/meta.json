@@ -24,5 +24,64 @@
       "question": "Q16",
       "legende": "Les deux motifs cherchés par la requête de la Q16 : sommet lié et sa cible, deux internes de mêmes fils, arcs nommés par leurs alias SQL"
     }
-  ]
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-06T13:22:20",
+      "modifications": true,
+      "perimetre": "Production des deux corrigés à partir de la copie source.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Révision des corrigés avec le rapport du jury.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 16 questions du brut et du guidé avec le sujet MP-PC-PSI et le rapport MP. Vérification des invariants, de la mémoïsation, de la boucle d’unification et des deux requêtes SQL. Condition d’époque fraîche précisée en Q4, coût des grands entiers en Q12 et remplissage exact de la ligne 17 en Q14.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Relecture des 16 questions du brut et du guidé avec le sujet MP-PC-PSI et le rapport MP. Vérification des invariants, de la mémoïsation, de la boucle d’unification et des deux requêtes SQL. Condition d’époque fraîche précisée en Q4, coût des grands entiers en Q12 et remplissage exact de la ligne 17 en Q14."
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20B.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP_Info%20B%20OK.pdf"
+  }
 }

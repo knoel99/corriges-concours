@@ -2,6 +2,13 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+
 ## Présentation du sujet
 
 **Thème.** Le sujet s'intitule « Cycles et unification ». On manipule un graphe orienté acyclique $G$, codé en Python par un dictionnaire de listes d'adjacence : l'étiquette d'un arc est son indice dans la liste. Le fil conducteur est simple : on veut ajouter des arcs à $G$ sans jamais créer de cycle. On se sert ensuite de cette opération pour résoudre des problèmes d'**unification**, c'est-à-dire rendre égales les « formes normales » de plusieurs paires de sommets.
@@ -22,7 +29,7 @@ La partie II peut se traiter sans la partie I, à l'exception de Q14, qui utilis
 
 **Difficulté.** Le sujet demande peu de code : trois questions de Python (Q11, Q12, Q14) et deux de SQL (Q15, Q16). Le cœur est l'analyse d'algorithmes de graphes. Les preuves de la partie I sont courtes, mais elles demandent de la rigueur : il faut dire quels invariants sont vrais à quel moment, et à quelle étape sert A1. Le rapport 2026 prévient : « Il est très facile d'avoir des intuitions fausses (par exemple, s'il existe un chemin s--->u->v alors tout chemin de s à v passe par u), d'où l'importance de raisonner très rigoureusement. » Il ajoute que « La grande majorité des questions se résolvent par des réponses très courtes. »
 
-**Questions discriminantes.** D'après les statistiques du rapport 2026 (moyenne sur 1 point, parmi les copies qui ont traité la question) :
+**Questions discriminantes.** D'après les statistiques du rapport 2026 de la filière MP (moyenne sur 1 point, parmi les copies qui ont traité la question) :
 
 | Question | Copies l'ayant traitée | Moyenne |
 |---|---|---|
@@ -34,7 +41,7 @@ La partie II peut se traiter sans la partie I, à l'exception de Q14, qui utilis
 
 À l'opposé, Q8 (0,98), Q3 (0,91) et Q5 (0,85) sont très bien réussies. La Q16 est la plus sélective : il faut d'abord trouver une caractérisation locale, car le SQL au programme ne permet pas de calculer `fn`.
 
-**À ne pas laisser passer.** Q1, Q2, Q3, Q5 et Q8 sont rapides et sûres. Q11 (mémoïsation), Q12 et Q15 (une double jointure) rapportent beaucoup pour peu d'effort. Près de la moitié des copies n'ont pas abordé Q15 : c'est un signe de temps mal géré plus que de difficulté.
+**À ne pas laisser passer.** Q1, Q2, Q3, Q5 et Q8 sont rapides et sûres. Q11 (mémoïsation), Q12 et Q15 (une double jointure) rapportent beaucoup pour peu d'effort.
 
 **Gestion du temps.** Prévoir environ 50 minutes pour la partie I, 45 minutes pour la partie II et 20 minutes pour la partie III, en gardant 5 minutes pour relire le code. Ne pas laisser la partie III pour les toutes dernières minutes.
 
@@ -139,6 +146,8 @@ On se place dans le contexte de Q3 et d'`accessible` : l'appel `pp(s)` suit `pr�
 - **$v$ a l'époque courante.** Alors `pp(v)` a commencé pendant cet appel, peut-être hors de `pp(u)`. Supposons qu'elle ne soit pas terminée. Alors `pp(u)` a été déclenchée, directement ou non, par `pp(v)`, et la pile d'appels fournit un chemin $v\rightsquigarrow u$. Avec l'arc $u\to v$, cela forme un cycle, ce qu'exclut A1. Donc `pp(v)` est terminée, et `sortie[v]` est strictement inférieur à la valeur que recevra `sortie[u]`.
 
 Dans les deux cas, $\texttt{sortie}[u]>\texttt{sortie}[v]$, donc **$\texttt{sortie}[u]\ge\texttt{sortie}[v]$**.
+
+La question 4 s’appuie ici sur l’époque fraîche de la question 3. Pour un appel isolé, les seuls invariants A1–A4 ne suffisent pas. Prenons un unique arc $s\to v$, les deux époques égales à `présent = 0`, les deux sorties égales à 1 et `compteur = 0`. Ces valeurs vérifient les invariants initiaux. Un appel direct à `pp(s)` saute $v$ et donne à $s$ la sortie 0, tandis que celle de $v$ reste 1.
 
 > [!METHODE]
 > C'est la propriété classique de l'ordre de fin dans un parcours en profondeur d'un graphe sans cycle : un sommet finit après tous ses successeurs. L'acyclicité sert à exclure exactement un cas, l'arc vers un sommet dont la visite est encore en cours (un « arc arrière »).
@@ -401,7 +410,7 @@ def taille(s):
     return aux(s)
 ```
 
-Vérification sur la figure 1 : $T(a)=T(c)+T(d)=2+2=4$, et $T(W)=T(Z)=1$. **Complexité $O(|S|)$.**
+Vérification sur la figure 1 : $T(a)=T(c)+T(d)=2+2=4$, et $T(W)=T(Z)=1$. La mémoïsation effectue $O(|S|)$ opérations arithmétiques. En comptant les bits, un résultat peut demander $O(|S|)$ bits puisque le nombre de choix de chemins double au plus à chaque niveau. L’algorithme prend alors au plus $O(|S|^2)$ opérations sur les bits.
 
 > [!JURY]
 > Le rapport 2026 attend « Un code très simple » et précise qu'« il n'est pas demandé que la fonction soit efficace » : la récursion directe, sans `memo`, est acceptée. Passer par le résultat de `fn(s)` est possible, mais pas facile ; il ne faut pas alors appliquer `len` à ce résultat, qui n'est pas toujours un couple.
@@ -452,7 +461,6 @@ Donc $\mathrm{fn}_H(c)\neq\mathrm{fn}_H(X)$ pour toute extension $H$. **Le probl
 #### Solution
 
 ```python
-        elif len(G[s]) == 0:
             if s != t and not lier(s, t):
                 return False
 ```
