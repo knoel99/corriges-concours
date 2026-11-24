@@ -1,0 +1,36 @@
+{
+  "slug": "x_fui-ff-1_mathematiques_2020",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI FF 1",
+    "matiere": "Mathématiques",
+    "annee": 2020
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20DE%20MATHEMATIQUES%20Session%201.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "f5e94c0e31aacf97fc2db0ca0373a1d11c72f8f3596ab62bf3a17649260efd89"
+  },
+  "figures": [
+    {
+      "fichier": "figures/periode-amplitude.svg",
+      "question": "17",
+      "legende": "La période normalisée et son approximation quadratique coïncident près de l’amplitude nulle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 23 questions et sous-questions, contrôle de la monotonie imprimée en 1 et des raccords du pendule, figure calculée par la moyenne arithmético-géométrique.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
