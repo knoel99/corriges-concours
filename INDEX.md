@@ -146,6 +146,8 @@
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (commentaire et traduction) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (thème Lyon) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/guide.md) |
+| 2019 | BEL | AL | Chinois (commentaire et traduction) | [md](2019/bel/bel_al_chinois-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_chinois-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Chinois (thème Lyon) | [md](2019/bel/bel_al_chinois-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_chinois-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/brut.md) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/guide.md) |
 | 2022 | BEL | AL | Arabe (commentaire et traduction) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Arabe (thème Lyon) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/guide.md) |
@@ -169,6 +171,8 @@
 | 2019 | BEL | AL | Italien (commentaire et traduction) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Italien (thème Lyon) | [md](2019/bel/bel_al_italien-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_italien-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Portugais (commentaire et traduction) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Russe (commentaire et traduction) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/guide.md) |
+| 2019 | BEL | AL | Russe (thème Lyon) | [md](2019/bel/bel_al_russe-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_russe-theme-lyon_2019/guide.md) |
 | 2022 | BEL | AL | Étude de texte français (Lyon) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/brut.md) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
@@ -854,6 +858,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2017 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2017/x-ens/x-ens_psi_modelisation_2017/brut.md) | [md](2017/x-ens/x-ens_psi_modelisation_2017/guide.md) |
 | 2018 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2018/x-ens/x-ens_psi_modelisation_2018/brut.md) | [md](2018/x-ens/x-ens_psi_modelisation_2018/guide.md) |
 | 2019 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2019/x-ens/x-ens_psi_modelisation_2019/brut.md) | [md](2019/x-ens/x-ens_psi_modelisation_2019/guide.md) |
 | 2020 | X-ENS | PSI | Modélisation | [md](2020/x-ens/x-ens_psi_modelisation_2020/brut.md) | [md](2020/x-ens/x-ens_psi_modelisation_2020/guide.md) |

@@ -1,0 +1,56 @@
+{
+  "slug": "x-ens_psi_modelisation_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2017,
+    "duree_heures": 5
+  },
+  "questions": 48,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2017_PSI_sujet_modelisation.pdf",
+    "sujet_sha256": "8473b75c6880fc52685a9e324483b87e24ed7d147a49241f0610079d820a17f9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q04-puissance.svg",
+      "question": "Q4",
+      "legende": "Courbe de puissance de la membrane du prototype. Les deux extrémités correspondent à un débit nul ou à une différence de pression hydraulique nulle."
+    },
+    {
+      "fichier": "figures/q28-essais.svg",
+      "question": "Q28",
+      "legende": "Raccordements simplifiés. V désigne la voie de mesure de tension, A celle d’intensité et N le neutre. À vide seule la voie de tension ferme le circuit à très haute impédance."
+    },
+    {
+      "fichier": "figures/q38-bode.svg",
+      "question": "Q38",
+      "legende": "Courbes non corrigées relevées sur le graphe du sujet et effet du PI calculé. Le trait vertical repère 40 rad/s."
+    },
+    {
+      "fichier": "figures/q39-cascade.svg",
+      "question": "Q39",
+      "legende": "Le courant mesuré ferme la boucle la plus rapide. Une seconde boucle régule la vitesse en commandant le courant admissible."
+    },
+    {
+      "fichier": "figures/q48-plans.svg",
+      "question": "Q48",
+      "legende": "Deux plans distincts d’usinage selon les cotes textuelles. Les premiers moments de chaque correction règlent à la fois la résultante et le couple de balourd."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 48 questions sur la centrale osmotique de Tofte. Lecture du PDF original ENS et de ses schémas, mesure des courbes de la figure 17, bilan des puissances, essais de phase, équations de Park, contrôles numériques des fonctions Python et du calcul des masses à enlever. Cinq figures originales. La page officielle de la session présente la mention rapport de modélisation sans lien de téléchargement."
+    }
+  ]
+}

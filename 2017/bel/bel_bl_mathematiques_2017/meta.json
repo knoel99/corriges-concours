@@ -1,0 +1,36 @@
+{
+  "slug": "bel_bl_mathematiques_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Mathématiques",
+    "annee": 2017
+  },
+  "questions": 50,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=3",
+    "rapport_jury": "",
+    "sha256_sujet": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/courbe-tangente.svg",
+      "question": "E.1e",
+      "legende": "La courbe et sa tangente au point d’abscisse e. Le cercle vide indique la limite en zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir de la couverture et des six pages numérisées de la composition. Vérification des 50 items, du tracé de la tangente, du seuil des urnes, des points fixes et des cas dégénérés des matrices compagnes.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
