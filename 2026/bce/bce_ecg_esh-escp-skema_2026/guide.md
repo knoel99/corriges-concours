@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée · 13 novembre 2026
+
+**Révision** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée · 13 novembre 2026
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Cadre.** Épreuve d'économie, sociologie et histoire du monde contemporain (ESH), conception ESCP BS et SKEMA BS, voie générale, lundi 27 avril 2026, de 8 h à 12 h. Aucun document, aucune calculatrice. Le sujet tient en une question : « Y a-t-il une limite à l'endettement public ? ». La consigne demande d'éviter tout verbiage, recommande de ne pas dépasser huit pages et prévient qu'il sera tenu compte du plan, de l'exposition et de la correction de la langue.
@@ -24,7 +30,7 @@
 
 #### Solution
 
-- **Dette publique.** Stock des engagements financiers bruts de l'ensemble des administrations publiques (État, organismes divers d'administration centrale, collectivités locales, administrations de sécurité sociale), au sens du traité de Maastricht, en valeur nominale. Elle résulte des déficits passés. Ne pas la confondre avec le déficit (un flux) ni avec la charge d'intérêts (son coût annuel).
+- **Dette publique.** Dette brute consolidée, en dépôts, titres de créance et crédits, de l'ensemble des administrations publiques (État, organismes divers d'administration centrale, collectivités locales, administrations de sécurité sociale), au sens du traité de Maastricht, en valeur nominale. Elle reflète aussi les acquisitions d’actifs et les ajustements entre flux et stocks. Ne pas la confondre avec le déficit (un flux) ni avec la charge d'intérêts (son coût annuel).
 - **Limite.** Trois sens : un plafond juridique (plafond de la dette américaine, critères de Maastricht, frein allemand) ; un seuil économique (au-delà duquel la croissance serait freinée) ; une limite de soutenabilité.
 - **Soutenabilité.** Terme flou : capacité à payer les intérêts, à refinancer, à rembourser ou à racheter sa dette. Le ratio dette/PIB se justifie surtout pour la capacité à payer les intérêts, car le PIB est l'assiette des recettes fiscales ; d'autres indicateurs existent (charge d'intérêts sur PIB ou sur recettes, montant absolu, maturité, part détenue par les non-résidents).
 - **La forme du sujet.** « Y a-t-il » est une question d'existence : il faut répondre oui ou non, et dire quelle limite. La réponse nuancée attendue est qu'une limite existe, mais qu'elle n'est pas un seuil fixe.
@@ -67,7 +73,7 @@ Le plan va de la limite la plus mécanique à la plus politique : il existe une 
 
 #### Solution
 
-- **I.1 — L'arithmétique de la dette.** En niveau, $D_{t+1} = (1+r)\,D_t - SP_{t+1}$ ; on divise par $Y_{t+1} = (1+g)\,Y_t$ :
+- **I.1 — L'arithmétique de la dette.** Sans ajustement entre flux et stocks, en niveau $D_{t+1} = (1+r)\,D_t - SP_{t+1}$ ; on divise par $Y_{t+1} = (1+g)\,Y_t$ :
 
   $$d_{t+1} = d_t \, \frac{1+r}{1+g} - sp_{t+1}$$
 
@@ -75,10 +81,12 @@ Le plan va de la limite la plus mécanique à la plus politique : il existe une 
 
   $$sp^{*} = d \, \frac{r-g}{1+g}$$
 
-  Si $r > g$, effet boule de neige. Ordre de grandeur : $d = 113\,\%$ et $r - g = 1$ point donnent $sp^{*} \approx 1{,}1\,\%$ du PIB. Solde total stabilisant (intérêts compris) : $s^{*} = -\,g\,d/(1+g)$, soit environ $-3{,}3\,\%$ du PIB pour $d = 113\,\%$ et $g = 3\,\%$ : un déficit total de cet ordre stabilise le ratio. Contrainte budgétaire intertemporelle : la dette doit être couverte par la valeur actuelle des excédents primaires futurs (pas de jeu de Ponzi).
-- **I.2 — La limite fixée par les créanciers.** Prime de risque, hausse de $r$ ; équilibres multiples (Calvo, 1988) ; fragilité des États d'une union monétaire (De Grauwe, 2011). Grèce : crise à partir de 2010, restructuration de mars 2012, rachat de décembre 2012. Royaume-Uni, septembre 2022 : budget Truss, envolée des taux, intervention de la Banque d'Angleterre. *Debt intolerance* des émergents (Reinhart, Rogoff et Savastano, 2003), défaut argentin de 2001.
-- **I.3 — La limite économique.** Effet d'éviction ; équivalence ricardienne (Barro, 1974), qui fait de la dette une charge neutre et limite l'efficacité du déficit plutôt que la croissance ; seuil de 90 % (Reinhart et Rogoff, 2010) contesté (Herndon, Ash et Pollin, 2013 ; causalité inverse). Mécanisme robuste : la charge d'intérêts évince les dépenses productives.
+  Si $r > g$, effet boule de neige. Ordre de grandeur : $d = 113\,\%$ et $r - g = 1$ point donnent $sp^{*} \approx 1{,}1\,\%$ du PIB. Solde total stabilisant (intérêts compris) : $s^{*} = -\,g\,d/(1+g)$, soit environ $-3{,}3\,\%$ du PIB pour $d = 113\,\%$ et $g = 3\,\%$ : un déficit total de cet ordre stabilise le ratio. Contrainte budgétaire intertemporelle : dans la représentation usuelle hors financement monétaire, la condition de non-Ponzi conduit à égaler la dette initiale à la valeur actuelle des excédents primaires futurs.
+- **I.2 — La limite fixée par les créanciers.** Prime de risque, hausse de $r$ ; équilibres multiples (Calvo, 1988) ; fragilité des États d'une union monétaire (De Grauwe, 2011). Grèce : crise à partir de 2010, restructuration de mars 2012, rachat de décembre 2012. Royaume-Uni, septembre 2022 : projet de budget Truss, hausse des rendements amplifiée par les ventes forcées des fonds à levier, achats temporaires pour rétablir la liquidité du marché. *Debt intolerance* des émergents (Reinhart, Rogoff et Savastano, 2003), défaut argentin de 2001.
+- **I.3 — La limite économique.** Effet d'éviction ; équivalence ricardienne (Barro, 1974), qui fait de la dette une charge neutre et limite l'efficacité du déficit plutôt que la croissance ; seuil de 90 % (Reinhart et Rogoff, 2010) contesté (Herndon, Ash et Pollin, 2013 ; causalité inverse). À enveloppe budgétaire donnée, la hausse des intérêts réduit la place disponible pour d’autres dépenses.
 - *Transition* : le Japon et l'Argentine montrent que la limite n'est pas un seuil : de quoi dépend-elle ?
+
+![Calcul illustratif avec une croissance nominale de 3 %. À dette égale, le besoin d’excédent primaire augmente avec l’écart de taux. Les points inférieurs à zéro autorisent un déficit primaire stabilisant.](figures/solde-primaire-stabilisant.svg)
 
 > [!METHODE]
 > Une équation se présente : on dit d'où elle vient (dette en niveau, division par le PIB), on définit chaque terme, puis on en tire une conclusion (le solde stabilisant, le rôle de $r-g$). Une équation posée sans commentaire n'apporte rien.
@@ -102,9 +110,9 @@ Le plan va de la limite la plus mécanique à la plus politique : il existe une 
 
 #### Solution
 
-- **II.1 — La croissance et l'écart $r - g$.** Domar (1944) : avec un déficit total (intérêts compris) constant en part du PIB et une croissance positive, le ratio converge vers $b(1+g)/g$, quel que soit $r$ ; Maastricht : 3 % de déficit et 5 % de croissance nominale stabilisent la dette autour de 60 %. Si de plus $r < g$, même un déficit primaire constant laisse le ratio converger. Blanchard, « Public Debt and Low Interest Rates » (2019) : aux États-Unis, $r < g$ en moyenne depuis les années 1950 ; la dette peut alors n'avoir aucun coût budgétaire. Royaume-Uni après 1815 et après 1945 ; liquidation de la dette par l'inflation et la répression financière (Reinhart et Sbrancia, 2015). Japon : a longtemps financé plus de 200 % du PIB à taux quasi nuls, dette détenue par des résidents et largement par la Banque du Japon ; la remontée des taux depuis la sortie des taux négatifs (mars 2024) montre que la limite se déplace.
-- **II.2 — La banque centrale.** Draghi, 26 juillet 2012, « whatever it takes », puis l'annonce du programme OMT : les primes refluent. PEPP (2020, porté à 1 850 milliards d'euros). Théorie monétaire moderne (Kelton, *The Deficit Myth*, 2020) : pas de défaut possible en monnaie propre, la limite est l'inflation. Sargent et Wallace (1981) : dominance budgétaire. Retour de l'inflation et hausse des taux de la BCE à partir de juillet 2022.
-- **II.3 — L'usage des fonds.** Lerner (1943), finances fonctionnelles. Dette d'investissement (éducation, recherche, infrastructures) qui relève $g$ ; Aghion, croissance par l'innovation ; rapport Draghi (septembre 2024, 750 à 800 milliards d'euros par an d'investissement supplémentaire). Règle d'or ; emprunt commun de *Next Generation EU* (2020).
+- **II.1 — La croissance et l'écart $r - g$.** Domar (1944) : avec un déficit total (intérêts compris) constant en part du PIB et une croissance positive, le ratio converge vers $b(1+g)/g$, quel que soit $r$ ; Maastricht : 3 % de déficit et 5 % de croissance nominale stabilisent la dette à 63 % dans cette convention annuelle, environ 60 % en temps continu. Si de plus $r < g$, même un déficit primaire constant laisse le ratio converger. Blanchard, « Public Debt and Low Interest Rates » (2019) : aux États-Unis, $r < g$ en moyenne depuis les années 1950 ; le refinancement peut alors, sous certaines conditions, éviter de nouvelles hausses d’impôts. Royaume-Uni après 1815 et après 1945 ; liquidation de la dette par l'inflation et la répression financière (Reinhart et Sbrancia, 2015). Japon : a longtemps financé plus de 200 % du PIB à taux quasi nuls, dette détenue par des résidents et largement par la Banque du Japon ; la remontée des taux depuis la sortie des taux négatifs (mars 2024) montre que la limite se déplace.
+- **II.2 — La banque centrale.** Draghi, 26 juillet 2012, « whatever it takes », puis l'annonce du programme OMT : les primes refluent. PEPP (2020, porté à 1 850 milliards d'euros). Théorie monétaire moderne (Kelton, *The Deficit Myth*, 2020) : l’émission dans sa monnaie réduit le risque de pénurie nominale de liquidités. L’inflation, le mandat de la banque centrale et la décision politique de payer demeurent déterminants. Sargent et Wallace (1981) : dominance budgétaire. Retour de l'inflation et hausse des taux de la BCE à partir de juillet 2022.
+- **II.3 — L'usage des fonds.** Lerner (1943), finances fonctionnelles. Dette d'investissement (éducation, recherche, infrastructures) qui relève $g$ ; Aghion, croissance par l'innovation ; rapport Draghi (septembre 2024, 750 à 800 milliards d'euros par an d'investissement supplémentaire, public et privé). Règle d'or ; emprunt commun de *Next Generation EU* (2020).
 - *Transition* : la limite dépend surtout de la capacité à dégager des excédents primaires, donc d'un choix politique.
 
 > [!JURY]
@@ -120,9 +128,9 @@ Le plan va de la limite la plus mécanique à la plus politique : il existe une 
 
 #### Solution
 
-- **III.1 — Les limites que les États se donnent.** Maastricht (1992), 3 % et 60 % ; Pacte de stabilité et de croissance (1997) ; clause dérogatoire générale (2020) ; réforme de 2024 (trajectoires de dépenses par pays). Frein à l'endettement allemand (2009, déficit structurel fédéral de 0,35 % du PIB), assoupli en mars 2025 (fonds d'infrastructures, défense). Plafond de la dette américaine : relevé régulièrement, il ne limite rien mais provoque des crises (perte du AAA chez S&P en 2011).
+- **III.1 — Les limites que les États se donnent.** Maastricht (1992), 3 % et 60 % ; Pacte de stabilité et de croissance (1997) ; clause dérogatoire générale (2020) ; réforme de 2024 (trajectoires de dépenses par pays). Frein à l'endettement allemand (2009, déficit structurel fédéral de 0,35 % du PIB), assoupli en mars 2025 (fonds d'infrastructures, défense). Plafond de la dette américaine : relevé régulièrement, il peut bloquer de nouvelles émissions et provoquer une crise de trésorerie même quand des dépenses ont déjà été votées (perte du AAA chez S&P en 2011).
 - **III.2 — Le consentement à l'impôt.** Bohn (1998) : soutenabilité si l'excédent primaire augmente avec la dette. La limite est le refus de l'effort nécessaire. Grèce : un quart du PIB perdu entre 2008 et 2013 ; multiplicateurs sous-estimés (Blanchard et Leigh, 2013). France : censure du gouvernement Barnier (décembre 2024), chute du gouvernement Bayrou (septembre 2025).
-- **III.3 — Franchir la limite : une question de répartition.** Reinhart et Rogoff, *This Time Is Different* (2009) : défauts, restructurations et inflation reviennent ; la perte est supportée par les créanciers, les épargnants ou les contribuables. Équité entre générations : une dette d'investissement transmet un capital, une dette de consommation ne transmet qu'une charge.
+- **III.3 — Franchir la limite : une question de répartition.** Reinhart et Rogoff, *This Time Is Different* (2009) : défauts, restructurations et inflation reviennent ; la perte est supportée par les créanciers, les épargnants ou les contribuables. Équité entre générations : les générations héritent d’actifs, d’institutions et de créances aussi bien que de la charge fiscale. Évaluer l’usage réel des fonds et la distribution des coûts.
 
 > [!PIEGE]
 > Présenter le plafond américain ou les critères de Maastricht comme « la » limite de la dette. Ce sont des règles politiques, que l'on révise ; elles servent la partie III, pas la définition.
@@ -137,7 +145,7 @@ Le plan va de la limite la plus mécanique à la plus politique : il existe une 
 | Reinhart, Rogoff et Savastano (2003) | intolérance à la dette | I.2 |
 | Barro (1974) | équivalence ricardienne | I.3 |
 | Reinhart et Rogoff (2010) ; Herndon, Ash et Pollin (2013) | seuil de 90 % et sa critique | I.3 |
-| Domar (1944) ; Blanchard (2019) | déficit total constant et ratio fini ; $r < g$, dette sans coût budgétaire | II.1 |
+| Domar (1944) ; Blanchard (2019) | déficit total constant et ratio fini ; $r < g$, coût budgétaire conditionnellement faible | II.1 |
 | Reinhart et Sbrancia (2015) ; Royaume-Uni après 1815 et 1945 ; Japon | réduction de la dette par la croissance et l'inflation | II.1 |
 | Draghi (2012) ; PEPP (2020) | banque centrale et primes de risque | II.2 |
 | Kelton (2020) ; Sargent et Wallace (1981) | théorie monétaire moderne, dominance budgétaire | II.2 |
@@ -152,7 +160,7 @@ Le plan va de la limite la plus mécanique à la plus politique : il existe une 
 
 **Introduction.** À la fin de 2024, la dette publique française atteint environ 113 % du PIB, pour un déficit public de 5,8 % du PIB. Le Japon dépasse depuis longtemps 200 % du PIB sans crise de financement, alors que l'Argentine a fait défaut en décembre 2001 avec une dette bien moindre. Le même ratio peut donc être supportable pour un pays et fatal pour un autre.
 
-La dette publique est le stock des engagements financiers bruts de l'ensemble des administrations publiques, et non de l'État seul ; son coût annuel est la charge d'intérêts. Une limite peut être un plafond juridique, un seuil économique ou une limite de soutenabilité, terme flou qui peut désigner la capacité à payer les intérêts, à refinancer, à rembourser ou à racheter la dette. Le ratio de la dette au PIB se justifie surtout pour la première acception, puisque le PIB est l'assiette des recettes fiscales, et un État refinance sa dette plus qu'il ne la rembourse.
+La dette publique est la dette brute consolidée en valeur nominale des administrations publiques, au sens de Maastricht. Elle couvre les dépôts, les titres de créance et les crédits de ces administrations. Sa charge annuelle d’intérêts est un flux. Une limite peut être un plafond juridique, un seuil économique ou une limite de soutenabilité, terme flou qui peut désigner la capacité à payer les intérêts, à refinancer, à rembourser ou à racheter la dette. Le ratio de la dette au PIB se justifie surtout pour la première acception, puisque le PIB est l'assiette des recettes fiscales, et un État refinance sa dette plus qu'il ne la rembourse.
 
 Dès lors, la dette publique se heurte-t-elle à un seuil objectif au-delà duquel elle devient insoutenable, ou sa limite dépend-elle de conditions économiques et institutionnelles qui en font une limite mobile et, en dernier ressort, politique ?
 
@@ -180,3 +188,9 @@ L'arithmétique de la dette et le jugement des marchés imposent bien une limite
 - **Notions à revoir.** Dette au sens de Maastricht ; déficit, solde primaire et charge d'intérêts ; taux apparent ; contrainte budgétaire intertemporelle ; solde stabilisant ; effet d'éviction ; équivalence ricardienne ; dominance budgétaire ; règles budgétaires européennes.
 - **Références à maîtriser.** Domar (1944), Barro (1974), Sargent et Wallace (1981), Bohn (1998), Reinhart et Rogoff (2009, 2010), Blanchard (2019), Blanchard et Leigh (2013).
 - **Sujets voisins.** « Faut-il craindre la dette publique ? » ; « La politique budgétaire est-elle encore efficace ? » ; « Faut-il des règles budgétaires ? » ; « L'indépendance des banques centrales est-elle menacée ? » ; « Peut-on financer la transition écologique par la dette ? ».
+
+## Sources
+
+[Sujet BCE, code 270](https://www.concours-bce.com/sites/default/files/2026-04/270%20-%20ESH_ESCP_BS_SKEMA_BS.pdf) · [Rapport du jury 2026](https://www.concours-bce.com/sites/default/files/2026-09/270%20-%20Eco%20Socio%20ESCP.SKEMA%202026.pdf)
+
+[Insee, première estimation des finances publiques de 2025](https://www.insee.fr/fr/statistiques/8956575) · [Banque d’Angleterre, crise des gilts de 2022](https://www.bankofengland.co.uk/quarterly-bulletin/2023/2023/financial-stability-buy-sell-tools-a-gilt-market-case-study) · [Olivier Blanchard, dette et taux bas](https://doi.org/10.1257/aer.109.4.1197)

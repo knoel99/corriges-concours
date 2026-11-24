@@ -4,9 +4,63 @@
     "concours": "BCE",
     "filiere": "ECG",
     "matiere": "ESH (ESSEC-HEC)",
-    "annee": 2026
+    "annee": 2026,
+    "date": "2026-04-23",
+    "duree_heures": 4
   },
   "questions": 0,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/preference-et-revision.svg",
+      "question": "Composition",
+      "legende": "Calcul illustratif. Pour une utilité linéaire, un biais du présent β = 0,4 et un facteur annuel δ = 0,8, le gain lointain est préféré en date 0. En date 1, le gain plus faible devenu immédiat est préféré. Les valeurs sont calculées du point de vue de chaque date."
+    }
+  ],
+  "intitule": "Le court terme est-il l’ennemi du long terme ?",
+  "gabarit": "dissertation",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "fournisseur": "claude-code",
+      "perimetre": "Dissertation et guide rédigés à partir du sujet BCE et du rapport 2026. Métadonnées du lot I3 du dépôt historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "fournisseur": "claude-code",
+      "perimetre": "Corrections de la relecture indépendante documentées dans la revue archivée du lot I3 et le commit 3f6bf9c."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "fournisseur": "codex",
+      "agent": "astra_info_si",
+      "perimetre": "Relecture de la copie et du guide sur les horizons de décision, contrôle des citations du jury, correction des attributions à Solow et Laibson, des inférences sur la crise et des unités de prix. Figure originale sur l’inversion d’une préférence."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/245%20-%20ESH_%20ESSEC_BS_HEC_PARIS.pdf",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-07/245%20-%20Rapport%20ESH%20ESSEC%20BS-HEC%20Paris%20%202026.pdf",
+    "sujet_sha256": "0c85ebdb42ba7dfa2526fd36af6ebb9bb34aece5c7a7311628f676124d759f7e",
+    "rapport_sha256": "db109294d02fdedc57d962575e8b06670984de8520de8416e4ea26f433ae7e66",
+    "references": [
+      "https://doi.org/10.1162/003355397555253",
+      "https://doi.org/10.1016/j.jacceco.2005.01.002"
+    ]
+  },
+  "date_revision": "2026-11-24"
 }
