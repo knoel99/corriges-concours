@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les algorithmes sont en pseudo-code, avec des indices commençant à 1 et des bornes incluses. Chaque lecture de case, comparaison ou échange coûte un temps constant. La croissance vaut sur toutes les lignes et toutes les colonnes, conformément à l’hypothèse en toutes lettres.
 
 ## Partie I — Recherche dans une matrice partiellement ordonnée

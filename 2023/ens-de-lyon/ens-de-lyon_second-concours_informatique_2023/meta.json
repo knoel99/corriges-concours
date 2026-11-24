@@ -58,6 +58,16 @@
       "modifications": true,
       "perimetre": "Les deux versions de l’épreuve d’informatique.",
       "agent": "redaction_astra"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Contre-lecture indépendante des 22 réponses dont le cas limite de II.2 et le successeur en III.2.",
+      "agent": "redaction_astra/relecture"
     }
   ]
 }

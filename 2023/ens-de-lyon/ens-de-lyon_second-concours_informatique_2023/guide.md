@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Un tableau à deux dimensions peut être croissant dans chaque direction sans être trié quand on lit ses cases ligne par ligne. Les parties I et II exploitent cette différence, d’abord pour chercher, puis pour insérer et extraire. La partie III est indépendante. Elle demande de construire la partition suivante d’un entier, d’abord en laissant varier le nombre de parts, puis en le fixant.
@@ -353,8 +355,4 @@ $$
 
 ## Bilan
 
-Pour la recherche, préciser ce qu’un test élimine donne directement la complexité. Le milieu d’un vecteur retire environ la moitié de ses cases. Dans une matrice carrée, le pivot central laisse trois blocs, tandis que le coin supérieur droit permet d’enlever une ligne ou une colonne entière.
-
-Pour le tri, écrire séparément les deux invariants : les valeurs sont croissantes suivant les deux axes et les rangs occupés vont de 1 à $k$. La case libérée par une extraction est fixée par le second invariant. Le choix du voisin qui se déplace est fixé par le premier.
-
-Pour les partitions, la première différence commande l’ordre. Retarder cette différence, la rendre minimale et construire ensuite le plus grand suffixe admissible fournit une preuve de succession immédiate. Pour le dénombrement, séparer les deux familles selon la présence d’un 1 conduit à une récurrence, puis à une majoration par une suite de type Fibonacci.
+La dichotomie et la recherche au coin se justifient par la région éliminée à chaque pas. Pour le tri, contrôler à la fois les comparaisons avec les voisins et la forme du préfixe occupé. Pour les partitions, retenir la première différence admissible en partant de la droite, puis maximiser le suffixe sous les contraintes de somme et de longueur.
