@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 3 heures, calculatrice interdite. Les codes à compléter suivent le cadre fourni aux candidats. [Document réponse officiel](https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI5IN_DR.pdf). Convention : la case $(i, j)$ est celle de la ligne $i$ et de la colonne $j$.
 
 ## Partie I — Des algorithmes pour résoudre le problème des n reines
@@ -183,7 +185,7 @@ def recherche_aleatoire(n, N):
     return []
 ```
 
-Le tirage est fait **dans** la boucle (sinon on testerait $N$ fois la même liste) ; la valeur d'échec est `[]` comme imposé. Coût au pire $O(nN)$.
+Le tirage est fait **dans** la boucle (sinon on testerait $N$ fois la même liste) ; la valeur d'échec est `[]` comme imposé. Coût au pire $O(nN)$. Si $s_n$ est le nombre de solutions, le modèle de tirages uniformes indépendants donne une probabilité d’échec $(1-s_n/n!)^N$. Pour quatre reines, $s_4=2$ et cette probabilité vaut $(11/12)^N$.
 
 ### I.5 — Déterminer toutes les permutations de L = [0, 1, …, n-1]
 
@@ -208,7 +210,7 @@ Seule une fonction d'insertion toute faite (comme `L.insert`) est interdite : le
 
 $$\boxed{P = [[2, 0, 1],\ [0, 2, 1],\ [0, 1, 2]]}$$
 
-(Si l'on comprend « premier passage » comme le premier tour de la boucle interne, `P` vaut alors `[[2, 0, 1]]`.) Après exécution complète, le second passage (`l1 = [1, 0]`) ajoute trois listes :
+Après exécution complète, le second passage (`l1 = [1, 0]`) ajoute trois listes :
 
 $$\boxed{P = [[2, 0, 1],\ [0, 2, 1],\ [0, 1, 2],\ [2, 1, 0],\ [1, 2, 0],\ [1, 0, 2]]}$$
 

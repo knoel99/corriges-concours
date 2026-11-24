@@ -112,6 +112,8 @@
 | 2026 | BEL | AL | Anglais (commentaire et traduction) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (thème Lyon) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (version et thème Ulm) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Arabe (commentaire et traduction) | [md](2026/bel/bel_al_arabe-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_arabe-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Arabe (thème Lyon) | [md](2026/bel/bel_al_arabe-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_arabe-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
@@ -132,10 +134,15 @@
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
 | 2026 | BEL | AL | Histoire de la musique | [md](2026/bel/bel_al_histoire-de-la-musique_2026/brut.md) | [md](2026/bel/bel_al_histoire-de-la-musique_2026/guide.md) |
 | 2026 | BEL | AL | Histoire et théorie des arts | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/brut.md) | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/guide.md) |
+| 2026 | BEL | AL | Italien (commentaire et traduction) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Italien (thème Lyon) | [md](2026/bel/bel_al_italien-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_italien-theme-lyon_2026/guide.md) |
+| 2026 | BEL | AL | Italien (version et thème Ulm) | [md](2026/bel/bel_al_italien-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_italien-version-et-theme-ulm_2026/guide.md) |
 | 2024 | BEL | AL | Philosophie | [md](2024/bel/bel_al_philosophie_2024/brut.md) | [md](2024/bel/bel_al_philosophie_2024/guide.md) |
 | 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
 | 2026 | BEL | AL | Portugais (commentaire et traduction) | [md](2026/bel/bel_al_portugais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_portugais-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Textes antiques grecs (Ulm) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/brut.md) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Textes antiques latins (Ulm) | [md](2026/bel/bel_al_textes-antiques-latins-ulm_2026/brut.md) | [md](2026/bel/bel_al_textes-antiques-latins-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Version grecque (Lyon) | [md](2026/bel/bel_al_version-grecque-lyon_2026/brut.md) | [md](2026/bel/bel_al_version-grecque-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Version grecque (Ulm) | [md](2026/bel/bel_al_version-grecque-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-grecque-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Version latine (Lyon) | [md](2026/bel/bel_al_version-latine-lyon_2026/brut.md) | [md](2026/bel/bel_al_version-latine-lyon_2026/guide.md) |

@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_italien-version-et-theme-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (version et thème Ulm)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_opt_lve_vers-theme_261109.pdf#page=10"
+  },
+  "figures": [
+    {
+      "fichier": "figures/points-de-vue.svg",
+      "legende": "À qui appartient chaque conclusion ?",
+      "question": "I. Version"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_ulm",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Version intégrale de Sciascia des pages 10 et 11, thème de Stendhal et guide sur l’attribution des jugements, les pronoms, les conditionnels et la rhétorique."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Leonardo Sciascia, La scomparsa di Majorana, 1975.",
+      "Stendhal, L’Abbesse de Castro, 1839."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}
