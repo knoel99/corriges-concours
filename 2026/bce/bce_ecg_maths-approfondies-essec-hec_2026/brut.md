@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 h, sans document ni calculatrice. Thème : théorème de Birkhoff-Von Neumann, fonctions S-convexes, théorèmes de Davis et de Fan.
 
 Dans tout le corrigé, pour $x=(x_1,\dots,x_n)\in\mathbb{R}^n$ et $\sigma\in\mathscr{P}_n$, on rappelle que $x_\sigma=(x_{\sigma(1)},\dots,x_{\sigma(n)})$, et l'on identifie $\mathbb{R}^n$ et $\mathcal{M}_{n,1}(\mathbb{R})$.
@@ -145,7 +153,7 @@ Soit
 
 $$S=\frac12\begin{pmatrix}1&1&0\\0&1&1\\1&0&1\end{pmatrix}.$$
 
-Ses coefficients sont positifs et chaque ligne, chaque colonne a pour somme $1$ : $S$ est bistochastique. Supposons $S_{i,j}=Q_{i,j}^2$ avec $Q\in\mathscr{O}_n$. Alors $Q_{1,3}=Q_{2,1}=0$ et les autres coefficients des deux premières lignes valent $\pm\frac{1}{\sqrt2}$.
+Ses coefficients sont positifs et chaque ligne, chaque colonne a pour somme $1$ : $S$ est bistochastique. Supposons $S_{i,j}=Q_{i,j}^2$ avec $Q\in\mathscr{O}_3$. Alors $Q_{1,3}=Q_{2,1}=0$ et les autres coefficients des deux premières lignes valent $\pm\frac{1}{\sqrt2}$.
 
 Le coefficient $(1,2)$ de $Q\,{}^tQ$ vaut
 
@@ -284,6 +292,9 @@ Avec la question 8(b) pour $n=2$ (combinaison de $I_2$ et $J$, coefficients $\al
 ```python
 def bistochastique(n, iter):
     A = rd.random([n, n])            # A(0) : coefficients uniformes sur [0,1[
+    while np.any(A == 0):
+        masque = (A == 0)
+        A[masque] = rd.random(np.count_nonzero(masque))
     for k in range(iter):
         for i in range(n):           # A(2k+1) : chaque ligne divisée par sa somme
             A[i, :] = A[i, :] / np.sum(A[i, :])
@@ -293,6 +304,10 @@ def bistochastique(n, iter):
 ```
 
 La division d'une ligne ne modifie que cette ligne et sa somme est calculée avant la modification : on obtient bien $A^{(2k+1)}$, puis de même $A^{(2k+2)}$. Essai : `bistochastique(4, 200)` donne une matrice dont les sommes de lignes et de colonnes valent $1$ à la précision machine.
+
+On retire les zéros éventuels du générateur pour respecter l’intervalle ouvert. Après un nombre fini de passages, les colonnes ont exactement la somme demandée en arithmétique exacte. Les lignes peuvent encore s’en écarter. Par exemple, partons de $A^{(0)}=\frac14\left(\begin{smallmatrix}2&1\\1&1\end{smallmatrix}\right)$. Après la normalisation des lignes puis des colonnes, on obtient
+$$A^{(2)}=\begin{pmatrix}4/7&2/5\\3/7&3/5\end{pmatrix}.$$
+Les sommes des lignes sont $34/35$ et $36/35$. L’admission d’une approximation pour un grand nombre d’itérations intervient précisément ici.
 
 ## Partie III : fonctions symétriques et fonctions S-convexes
 
@@ -412,6 +427,10 @@ f(BX) &= f\Big(\sum_{k=1}^m a_k\,P_kX\Big)\\
 \end{aligned}$$
 
 **$f$ est S-convexe.**
+
+La symétrie seule donne l’égalité sur les permutations. Pour $f(x)=-\sum_i x_i^2$ et $X=(1,-1)$, la matrice dont toutes les entrées valent $1/2$ donne $BX=0$. On obtient $f(BX)=0>-2=f(X)$, ce qui exclut la S-convexité. Dans l’autre sens, $h(x)=-(\sum_i x_i)^2$ est S-convexe puisque la somme des coordonnées est préservée. Sa restriction à la droite $x=t e_1$ vaut $-t^2$ et n’est pas convexe.
+
+![Figure 1 — Le mélange de (1, −1) et (−1, 1) donne le vecteur nul à mi-parcours. Les deux courbes ont des extrémités de même hauteur.](figures/melange-et-symetrie.svg)
 
 ### 19. (a)
 
