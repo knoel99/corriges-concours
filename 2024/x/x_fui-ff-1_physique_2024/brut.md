@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Formation francophone, session 1 (automne), trois heures sans calculatrice.
 
 ## Exercice 1 — Confinement électronique
@@ -53,6 +55,10 @@ Avec un circuit initialement sans courant, $i(0)=w(0)=0$. En dérivant la premi�
 $$\mathcal L\ddot i+2R\dot i+\frac{(B\ell)^2}{\mu}i=2gB\ell.$$
 Le courant ne s’établit plus instantanément. Le transitoire est d’ordre deux, apériodique ou oscillant amorti selon $R^2-\mathcal L(B\ell)^2/\mu$. Les valeurs asymptotiques sont les mêmes que précédemment, $i_\infty=2\mu g/(B\ell)$ et $w_\infty=2g\tau$.
 
+Un bilan de puissance contrôle les signes de l’induction. Multiplions les équations mécaniques par $u$ et $u'$ puis l’équation électrique par $i$. Les termes d’échange $B\ell i(u+u')$ se compensent. Il vient
+$$\frac{d}{dt}\left(\frac{mu^2+m'u'^2+\mathcal Li^2}{2}\right)=mgu+m'gu'-2Ri^2.$$
+La puissance gravitationnelle alimente ainsi les énergies cinétique et magnétique et les pertes Joule dans les deux barres. Dans le régime sous-amorti, le courant part avec une pente nulle. En posant $\gamma=R/\mathcal L$ et $\omega^2=(B\ell)^2/(\mu\mathcal L)-\gamma^2$, on vérifie $i/i_\infty=1-e^{-\gamma t}[\cos(\omega t)+(\gamma/\omega)\sin(\omega t)]$.
+
 ## Exercice 3 — Cerceau chargé dans un champ magnétique
 
 ### Question 1
@@ -85,6 +91,8 @@ La vitesse prend le signe de la branche parcourue. Aux deux altitudes extrêmes 
 ### Question 6
 
 Sur le premier quart de période, $dt=dz/(|v_0|\sqrt{1-(z/z_M)^4})$. Avec $u=z/z_M$, $T/4=\alpha z_M/|v_0|$ et **$T=4\alpha z_M/|v_0|\simeq5{,}24 z_M/|v_0|$**. La période dépend de l’amplitude, contrairement à celle d’un oscillateur harmonique.
+
+La dépendance de la période est vérifiable par un second calcul. La dérivée de la relation énergétique donne $\ddot z=-2v_0^2z^3/z_M^4$, une force de rappel cubique. Comme $z_M^2\propto|v_0|$, le coefficient de $z^3$ reste fixe et $T\propto1/z_M$. Le mouvement devient donc plus lent pour une plus petite amplitude.
 
 ## Exercice 4 — Appareil photographique
 

@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_polonais-commentaire-et-traduction_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Polonais (commentaire et traduction)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=16",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Polonais%202026.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ressemblances.svg",
+      "legende": "Qui reconnaît qui dans le récit ?",
+      "question": "Commentaire"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire composé en polonais des 77 lignes d’Anna Kańtoch et version française des seules lignes 24 à 34 ; indices du double, point de vue et choix spatiaux et verbaux vérifiés contre le sujet et le rapport."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Anna Kańtoch, *Diabeł w maszynie* (2019)."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}

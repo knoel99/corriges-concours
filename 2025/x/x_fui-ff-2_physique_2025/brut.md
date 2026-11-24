@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de printemps de la formation francophone, trois heures sans calculatrice. Les estimations suivent la précision demandée dans le sujet.
 
 ## Problème — Cosmologie newtonienne
@@ -94,6 +96,8 @@ Entre $t'_*$ et $t_c$, la courbe de $a$ est une arche concave vers le bas, symé
 
 ![Figure 3 — La croissance et la contraction sont symétriques autour du retournement à a égal à κ.](figures/univers-lie-et-retournement.svg)
 
+Une paramétrisation contrôle la quadrature et sa symétrie. Pour $E<0$, posons $a=\kappa(1-\cos\eta)/2$ avec $0\leq\eta\leq2\pi$. On obtient $\sqrt{2|E|}(t-t'_*)=\kappa(\eta-\sin\eta)/2$. Le maximum correspond à $\eta=\pi$ et le retour à zéro à $2\pi$. Pour $E>0$, les formules correspondantes sont $a=\kappa(\cosh\eta-1)/2$ et $\sqrt{2E}(t-t_*)=\kappa(\sinh\eta-\eta)/2$. Dans les deux cas, $a$ est quadratique en $\eta$ et le temps écoulé cubique au voisinage de zéro, ce qui contrôle indépendamment la puissance $2/3$.
+
 ## Solution critique
 
 ### Question 7.a
@@ -163,6 +167,8 @@ $$E_x(0^+,r)=-\frac{2qa}{4\pi\varepsilon_0(a^2+r^2)^{3/2}},\qquad
 La distribution est circulaire et négative, minimale à $r=0$ avec $\sigma(0)=-q/(2\pi a^2)$. Elle remonte vers zéro comme $-qa/(2\pi r^3)$ au loin.
 
 ![Figure 5 — La densité est négative, maximale en valeur absolue sous la charge et tend vers zéro comme l’inverse du cube de la distance.](figures/charge-induite-densite-radiale.svg)
+
+Un contrôle local de la normalisation consiste à intégrer la densité jusqu’à un rayon $R$. On obtient $Q(R)=-q[1-a/\sqrt{a^2+R^2}]$. La moitié de la valeur absolue de la charge induite est donc contenue dans le disque $R=\sqrt3\,a$. Cela relie la largeur spatiale de la distribution à la hauteur de la charge au-dessus du plan.
 
 ### Question D
 

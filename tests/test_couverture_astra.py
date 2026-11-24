@@ -91,7 +91,14 @@ def test_rectification_exige_le_remplacement_des_deux_editions(tmp_path, monkeyp
     dossier = tmp_path / slug
     dossier.mkdir()
     entree = {"phase": "redaction", "modele": "gpt-6.2-astra", "effort": "ultra"}
-    (dossier / "meta.json").write_text(json.dumps({"contributions": [entree]}))
+    (dossier / "meta.json").write_text(
+        json.dumps(
+            {
+                "contributions": [entree],
+                "epreuve": {"matiere": "Mathématiques appliquées"},
+            }
+        )
+    )
     signature = "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
     ancienne = f"# Épreuve\n\n{signature}\n\n## Ancien exercice\n"
     empreinte = hashlib.sha256(ancienne.encode()).hexdigest()
@@ -108,3 +115,26 @@ def test_rectification_exige_le_remplacement_des_deux_editions(tmp_path, monkeyp
             ancienne.replace("Ancien exercice", "Sujet vérifié")
         )
     assert couverture.verifier_paire(dossier)[1] == {signature}
+
+
+def test_libelle_de_matiere_change_l_adresse_de_publication(tmp_path):
+    dossier = tmp_path / "x-ens_pc_maths-pc_2025"
+    dossier.mkdir()
+    signature = "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    for edition in ("brut", "guide"):
+        (dossier / f"{edition}.md").write_text(f"# Maths\n\n{signature}\n")
+    meta = {
+        "contributions": [
+            {"phase": "redaction", "effort": "ultra", "modele": "gpt-6.2-astra"}
+        ],
+        "epreuve": {"matiere": "Mathématiques"},
+    }
+    fichier = dossier / "meta.json"
+    fichier.write_text(json.dumps(meta))
+    assert couverture.verifier_paire(dossier) == (
+        "identité de matière à corriger pour publier sur la fiche",
+        set(),
+    )
+    meta["epreuve"]["matiere"] = "Maths PC"
+    fichier.write_text(json.dumps(meta))
+    assert couverture.verifier_paire(dossier) == ("signature présente", {signature})

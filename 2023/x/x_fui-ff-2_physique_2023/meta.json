@@ -15,7 +15,8 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20PHYSIQUE.pdf",
-    "rapport_jury": null
+    "rapport_jury": null,
+    "sujet_sha256": "eb36ecd23bfcd690499dc862cb25693fa59b2d76c980c2287b8a4695995668d9"
   },
   "revision": {
     "date": "2026-11-24",
@@ -92,6 +93,18 @@
       "modifications": null,
       "perimetre": "Lecture visuelle des énoncés et recalcul du transfert avec les valeurs imprimées. Contre-lecture indépendante du taux de croissance paramétrique et des températures de l’élastique ; distinction du relâchement libre et du retour adiabatique réversible.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Révision des deux éditions à partir du fac-similé officiel. 28 questions sur la résonance paramétrique, le transfert interplanétaire, l’élastique et le coaxial. Calcul de la bande de résonance et vérification énergétique du flux axial.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]

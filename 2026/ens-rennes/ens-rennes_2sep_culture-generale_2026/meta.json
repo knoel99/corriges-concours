@@ -33,7 +33,10 @@
   "sources": {
     "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-cgaps-2sep-2026_1791303234845-pdf",
     "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-cgaps-2026_1791304664652-pdf",
-    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026"
+    "index_banque": "https://www.ens-rennes.fr/admission/concours1a/2sep/concours-2sep-2026",
+    "apercu_sujet_sha256": "9bdcaf630f245066a1c419c47c20666b5f328cc07da315dc910155be218f43cd",
+    "apercu_rapport_sha256": "131718954ca23267f1025ec454caa08b631b8daf4e9edfb39209818bc41586d1",
+    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse."
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -79,6 +82,30 @@
       "perimetre": "Contre-lecture indépendante de la copie à partir de l’extrait et du rapport 2026. Mesure, conditions de production, techniques du corps chez Mauss et rôle de la règle dans les classifications et la natation en bassin contrôlés.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture des trois pages du rapport de CGAPS sur la naturalisation, les critères de classement et les rapports entre sciences biologiques et sociales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des éditions au texte de Bertron et Vitores sur l’image de la page 2. Application de la règle internationale du basket en fauteuil à deux compositions de cinq joueurs."
     }
   ]
 }

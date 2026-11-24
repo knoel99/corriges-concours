@@ -149,6 +149,8 @@
 | 2024 | BEL | AL | Philosophie | [md](2024/bel/bel_al_philosophie_2024/brut.md) | [md](2024/bel/bel_al_philosophie_2024/guide.md) |
 | 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
+| 2026 | BEL | AL | Polonais (commentaire et traduction) | [md](2026/bel/bel_al_polonais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_polonais-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Polonais (thème Lyon) | [md](2026/bel/bel_al_polonais-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_polonais-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Portugais (commentaire et traduction) | [md](2026/bel/bel_al_portugais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_portugais-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Russe (commentaire et traduction) | [md](2026/bel/bel_al_russe-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_russe-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Russe (thème Lyon) | [md](2026/bel/bel_al_russe-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_russe-theme-lyon_2026/guide.md) |
@@ -184,6 +186,7 @@
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie | [md](2026/bel/bel_bl_sociologie_2026/brut.md) | [md](2026/bel/bel_bl_sociologie_2026/guide.md) |
+| 2026 | BEL | BL | Version grecque | [md](2026/bel/bel_bl_version-grecque_2026/brut.md) | [md](2026/bel/bel_bl_version-grecque_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -213,6 +216,9 @@
 | 2012 | Castor informatique | Défi individuel | Découpe | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | La chute | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | Ranger ses photos | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Allemand | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_allemand_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_allemand_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Arabe | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_arabe_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_arabe_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Espagnol | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_espagnol_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_espagnol_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Italien | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_italien_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_italien_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Portugais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_portugais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_portugais_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Russe | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_russe_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_russe_2026/guide.md) |

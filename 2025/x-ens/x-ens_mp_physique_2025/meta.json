@@ -24,5 +24,44 @@
       "question": "34",
       "legende": "Figure 3 — Le domaine stable est du côté où la pulsation de rotation dépasse strictement la pulsation de courbure."
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Physique%20MP.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP_Physique%20OK.pdf",
+    "sujet_sha256": "ccc38a3c666559b9bc2ee5dbcaa0e382514c9ff1e3d5fde317e7980f21223a25",
+    "rapport_sha256": "271c18bab3184561bc7ea630a2afa8c2acdb5a9d90b27109091c0758fc77e054"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-sol",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction historique des deux éditions, nom du modèle conservé dans la notice publique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Révision historique signalée dans la notice publique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Révision des éditions brute et guidée avec le sujet et le rapport du jury. Relecture des 34 questions et sous-questions sur la particule piégée. Contre-calcul de la pulsation lente dans l’équation de Mathieu, du temps thermique et de la phase mesurable, des couples et de la stabilité de la selle en rotation.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

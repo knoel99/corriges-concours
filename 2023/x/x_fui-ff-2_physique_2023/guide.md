@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Formation francophone, session 2 (printemps), trois heures sans calculatrice.
 
 ## Présentation du sujet
@@ -76,6 +78,10 @@ $$\frac{\dot E_m}{E_m}\simeq\frac{\varepsilon\Omega}{2}\sin(\Omega t)-\frac{3\va
 Pour $\Omega\ne2\omega_0$, la moyenne longue des trois sinus est nulle au premier ordre à phase fixée (hors voisinage résonnant de largeur d’ordre $\varepsilon\omega_0$). Pour **$\Omega=2\omega_0$**, le dernier terme devient constant. Le taux moyen est $\gamma=(3\varepsilon\Omega/4)\sin(2\phi)$. L’enveloppe énergétique varie donc comme $E_m(0)e^{\gamma t}$ dans cette approximation. La phase amplifiée $\phi=\pi/4$ modulo $\pi$ donne $\gamma=3\varepsilon\omega_0/2$ et l’amplitude croît avec le taux $\gamma/2$. La quadrature opposée s’atténue. Le travail fourni par la modulation est à l’origine de cette résonance paramétrique.
 
 ![Figure 2 — À la fréquence double, le signe du travail moyen dépend de la phase de l’oscillation.](figures/gain-de-phase.svg)
+
+La largeur de la résonance découle de l’équation linéarisée, sans imposer de phase fixe. Posons $w=l\theta$. On a $\ddot w+(g/l-\ddot l/l)w=0$. Près de $\Omega=2\omega_0$, le coefficient vaut $\omega_0^2+3\varepsilon\omega_0^2\cos\Omega t$ au premier ordre. En projetant sur $e^{\pm i\Omega t/2}$ et en gardant les amplitudes lentes proportionnelles à $e^{st}$, leur déterminant donne
+$$s^2=\left(\frac{3\varepsilon\omega_0}{4}\right)^2-\left(\frac{\Omega-2\omega_0}{2}\right)^2.$$
+La croissance exponentielle est donc possible pour $|\Omega-2\omega_0|<3|\varepsilon|\omega_0/2$, dans ce modèle sans amortissement. Au centre, $s=3|\varepsilon|\omega_0/4$ est le taux d’amplitude trouvé par le bilan énergétique pour la phase amplifiée.
 
 ## Exercice 2 — Trajectoires interplanétaires
 
@@ -311,6 +317,8 @@ Comme $\langle\cos^2(\omega t-kz)\rangle=1/2$, l’intensité du flux électroma
 L’élément d’aire est $r\,dr\,d\theta$. La puissance moyenne dans le sens $+z$ est donc
 $$\overline P=\int_a^b\frac{E_a^2a^2}{2Zr^2}\,2\pi r\,dr=\frac{\pi E_a^2a^2}{Z}\ln\frac ba.$$
 La puissance instantanée vaut $2\overline P\cos^2(\omega t-kz)$. Le logarithme provient de la décroissance radiale de l’énergie combinée à la surface croissante des anneaux.
+
+Un bilan d’énergie par unité de longueur contrôle le flux axial. Les énergies électrique et magnétique moyennes sont égales car $B_0=E_0/v$. Leur somme volumique est $\varepsilon_0\varepsilon E_0(r)^2/2$. L’intégrale sur l’anneau donne $\overline{\mathcal U}=\pi\varepsilon_0\varepsilon E_a^2a^2\ln(b/a)$ en joules par mètre. Le résultat de la question 9 vérifie $\overline P=v\overline{\mathcal U}$ puisque $1/Z=v\varepsilon_0\varepsilon$.
 
 ## Bilan
 

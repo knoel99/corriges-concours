@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Dans l’exercice, chacun des deux points frontières demande une preuve particulière. Dans le problème, suivre d’abord les colonnes, puis les deux facteurs des matrices de rang un.
 
 ## Exercice · Régularité d’une série entière
@@ -50,7 +52,9 @@ Si $0<a\leq1$, fixons un réel $L>0$. On peut choisir $N$ tel que $\sum_{n=1}^N 
 > [!INDICATION]
 > Multiplier la série par un polynôme qui ne s’annule pas en −1 et qui fait décroître davantage ses coefficients. Que devient une seconde différence ?
 
-Pour tout $a>0$, posons $c_n=n^{-a}$ pour $n\ge1$ et $c_0=c_{-1}=0$. Sur $]-1,1[$, le produit $h(x)=(1-x)^2 f_a(x)$ a pour coefficients $b_n=c_n-2c_{n-1}+c_{n-2}$. Pour $n\ge3$, deux applications du théorème des accroissements finis (ou l’intégrale de la dérivée seconde sur deux intervalles unités) donnent $|b_n|\le a(a+1)(n-2)^{-a-2}$. Par suite $\sum n|b_n|<\infty$. La série de $h$ et celle de sa dérivée convergent uniformément sur $[-1,1]$, et $h$ a une dérivée à droite en $-1$. Comme $(1-x)^2$ y vaut 4 et que $f_a$ y est continue d’après E.5, le quotient fournit la dérivée à droite de $f_a$. Ainsi $E'_{-1}=]0,+\infty[$. Dériver directement la série initiale au bord laisserait échapper le cas $0<a\le1$.
+Pour tout $a>0$, posons $c_n=n^{-a}$ pour $n\ge1$ et $c_0=c_{-1}=0$. Sur $]-1,1[$, le produit $h(x)=(1-x)^2 f_a(x)$ a pour coefficients $b_n=c_n-2c_{n-1}+c_{n-2}$. Pour $n\ge3$, écrivons $v(t)=t^{-a}$. Le théorème fondamental appliqué deux fois donne
+$$b_n=\int_0^1\!\int_0^1 v''(n-2+s+t)\,ds\,dt.$$
+Comme $v''(t)=a(a+1)t^{-a-2}$, on obtient $0\le b_n\le a(a+1)(n-2)^{-a-2}$. Par suite $\sum n|b_n|<\infty$. La série de $h$ et celle de sa dérivée convergent uniformément sur $[-1,1]$, et $h$ a une dérivée à droite en $-1$. Comme $(1-x)^2$ y vaut 4 et que $f_a$ y est continue d’après E.5, le quotient fournit la dérivée à droite de $f_a$. Ainsi $E'_{-1}=]0,+\infty[$. Dériver directement la série initiale au bord laisserait échapper le cas $0<a\le1$.
 
 ![Pour a = 1/2, le coefficient de la série dérivée initiale grandit. Après multiplication par (1 − x)², le coefficient de la dérivée décroît comme une constante fois n puissance −3/2.](figures/secondes-differences.svg)
 
@@ -225,7 +229,7 @@ Si $W_2=cW$, alors $\varphi(UV_2^T)=cY_2W^T$. Choisir $U_0=A^{-1}(cY_2)$. P.13 d
 > [!INDICATION]
 > Introduire une application du second facteur pour chaque premier vecteur fixé. Comparer ensuite deux premiers vecteurs indépendants et leur somme.
 
-Pour chaque $U\ne0$, P.14b et la linéarité dans la direction initiale $V$ permettent d’écrire, pour tout $Z$, $\varphi(UZ^T)=(AU)(C_U Z)^T$ avec un unique vecteur $C_U Z$. L’unicité donne une application linéaire $C_U$, injective par P.10, donc inversible. Si $U,U'$ sont indépendants, écrire la même identité pour $U+U'$ puis développer par linéarité. La comparaison des coefficients devant les deux vecteurs indépendants $AU,AU'$ donne $C_U Z=C_{U+U'} Z=C_{U'} Z$ pour tout $Z$. Pour deux vecteurs proportionnels, l’égalité résulte directement de l’homogénéité. Tous les $C_U$ coïncident donc avec une matrice inversible $C$. En posant $B=C^T$, on obtient $\varphi(UZ^T)=AUZ^TB$ pour tous $U,Z$, y compris $U=0$.
+Pour chaque $U\ne0$, P.14b et la linéarité dans la direction initiale $V$ permettent d’écrire, pour tout $Z$, $\varphi(UZ^T)=(AU)(C_U Z)^T$ avec un unique vecteur $C_U Z$. L’unicité donne une application linéaire $C_U$, injective par P.10, donc inversible. Si $U,U'$ sont indépendants, écrire la même identité pour $U+U'$ puis développer par linéarité. Pour voir cette comparaison colonne par colonne, fixons $j$ et posons $v=C_{U+U'}Z-C_UZ$, $w=C_{U+U'}Z-C_{U'}Z$. La colonne $j$ de l’identité est $v_j AU+w_j AU'=0$. L’inversibilité de $A$ conserve l’indépendance de $U,U'$, donc $v_j=w_j=0$. Comme ceci vaut pour chaque $j$, on a $C_UZ=C_{U+U'}Z=C_{U'}Z$. Pour deux vecteurs proportionnels, l’égalité résulte directement de l’homogénéité. Tous les $C_U$ coïncident donc avec une matrice inversible $C$. En posant $B=C^T$, on obtient $\varphi(UZ^T)=AUZ^TB$ pour tous $U,Z$, y compris $U=0$.
 
 ### P.16 · Étendre la formule à tout rang
 

@@ -15,7 +15,8 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20PHYSIQUE.pdf",
-    "rapport_jury": null
+    "rapport_jury": null,
+    "sujet_sha256": "cac5e39f37b15ad5331f257bb3af44a4cc53063ecc75891679565221f377d54d"
   },
   "revision": {
     "date": "2026-11-24",
@@ -86,6 +87,18 @@
       "modifications": null,
       "perimetre": "Lecture visuelle des équations sur les pages numérisées. Vérification du signe de la phase du plasma, des cinq fonctions de transfert et de l’égalité entre le moment cinétique mécanique final et le moment initial du champ.\nContre-lecture indépendante des deux signes de dispersion, du seuil du facteur de qualité et des moments transférés aux cylindres.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Révision des deux éditions à partir du fac-similé officiel. 25 questions sur le plasma, la sismologie et le moment électromagnétique. Comparaison quantitative des deux amortissements usuels et conservation instantanée du moment cinétique.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]

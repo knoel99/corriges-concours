@@ -2,11 +2,61 @@
   "slug": "x-ens_mp_informatique-a_2024",
   "epreuve": {
     "concours": "X-ENS",
-    "filiere": "MP",
+    "filiere": "MP-MPI",
     "matiere": "Informatique A",
-    "annee": 2024
+    "annee": 2024,
+    "code_sujet": "XULSR"
   },
   "questions": 22,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/q22-face-concave.svg",
+      "question": "Q22",
+      "legende": "Face intérieure et intervalle extérieur de la même tranche entre deux arêtes."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI%20SUJET%20INFORMATIQUE%20A%20%28XULSR%29_0.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP%20RAPPORT%20ECRIT%20INFORMATIQUE%20A%20%28XULSR%29.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-sol",
+      "modifications": true,
+      "perimetre": "Rédaction des deux versions attestée dans la métadonnée publique de la livraison historique.",
+      "effort": null,
+      "vitesse": null,
+      "date": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "modifications": null,
+      "perimetre": "Première révision déclarée dans la métadonnée publique historique.",
+      "effort": null,
+      "vitesse": null,
+      "date": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Lecture des 22 questions MP-MPI XULSR et du rapport. Contrôle des invariants de jointure AVL, des suppressions, du choix de tranche aux bornes et des réponses sur une face concave. Schéma et exemple du contre-exemple du jury, étiquetage des faces incidentes à partir des contours orientés."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Lecture des 22 questions MP-MPI XULSR et du rapport. Contrôle des invariants de jointure AVL, des suppressions, du choix de tranche aux bornes et des réponses sur une face concave. Schéma et exemple du contre-exemple du jury, étiquetage des faces incidentes à partir des contours orientés."
+  },
+  "date_revision": "2026-11-24"
 }

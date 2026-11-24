@@ -15,7 +15,8 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20DE%20PHYSIQUE.pdf",
-    "rapport_jury": null
+    "rapport_jury": null,
+    "sujet_sha256": "0eacd069aac2ff9db6df17f1e82d04b98b9801b2a6a872a6918f1b518faeeddf"
   },
   "revision": {
     "date": "2026-11-24",
@@ -86,6 +87,18 @@
       "modifications": null,
       "perimetre": "Lecture des formules dans les figures du PDF. Vérification des champs, des seuils électroniques, de la période du cerceau et de la construction du téléobjectif sur une échelle horizontale graduée.\nContre-lecture indépendante des exercices 1, 2 et 4, avec recalcul du critère de contact, des vitesses des barres de masses inégales et de la profondeur de l’appareil.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Révision des deux éditions à partir du fac-similé du sujet. Contrôle des quatre exercices de confinement électronique, induction, mouvement du cerceau et optique. Vérifications énergétiques, transitoire RLC et loi non linéaire de période du cerceau.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]

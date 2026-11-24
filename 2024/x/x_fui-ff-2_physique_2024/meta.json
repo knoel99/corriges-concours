@@ -16,7 +16,8 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20PHYSIQUE.pdf",
-    "rapport_jury": null
+    "rapport_jury": null,
+    "sujet_sha256": "ee588bd7b6d6c8e803ed774adb1ffd7162f99204fd2c5a368f82204d951c0646"
   },
   "revision": {
     "date": "2026-11-24",
@@ -93,6 +94,18 @@
       "modifications": null,
       "perimetre": "Garde officielle contrôlée. Vérifications du développement multipolaire, des extrema, de la stabilité et de l’avance de Mercure. Contre-calcul indépendant du quadrupôle en 11.c et de l’avance séculaire en 17.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Révision des deux éditions à partir du fac-similé du sujet. Relecture des dix-sept questions et sous-questions sur les orbites et la précession. Dérivation du passage du rayon circulaire au paramètre de l’ellipse et contrôle de la correction pour Mercure.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]

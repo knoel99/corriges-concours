@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Couverture de l’épreuve (58 questions).** Les questions 1–38, 47, 49, 51–54 et 57 sont corrigées intégralement (45 questions). Les questions 39, 42, 44–46, 50, 55–56 et 58 sont traitées partiellement (9 questions) sous l’angle des familles de réactions, de la spectroscopie et de la stéréochimie. Les questions 40, 41, 43 et 48, consacrées à la construction d’intermédiaires de l’achaetolide, restent hors du corrigé. Le sujet ne précise pas le volume de prise nécessaire à la valeur numérique unique demandée en Q15.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture de l’épreuve (58 questions).** Les questions 1 à 6, 9 à 38, 47, 49, 51 à 54 et 57 sont traitées intégralement (43 questions). Les Q7 et Q8 présentent la démarche générale de thermodynamique. Les Q39, 42, 44 à 46, 50, 55, 56 et 58 traitent les principes indépendants de chimie et de stéréochimie (11 questions partielles au total). Les Q40, 41, 43 et 48 restent hors périmètre. En Q15, le volume de prise absent du sujet laisse la teneur en azote sous forme littérale.
 
 ## I.1 — Phosphore solide et thermochimie
 
@@ -34,18 +36,13 @@ Une réaction chimique forme $\mathrm{PO^*}$ dans un état électronique excité
 
 L’équation de formation est $\mathrm{C(graphite,s)+\tfrac12 O_2(g)\rightarrow CO(g)}$. À 298 K, $\Delta_fH^\circ(\mathrm{CO})=-110\ \mathrm{kJ\,mol^{-1}}$ avec les données arrondies du tableau 6.
 
-### Question 7
+### Question 7 — éléments de réponse
 
-On suit les états de l’équation imprimée. Le passage de l’oxyde solide à la molécule gazeuse ajoute $92\ \mathrm{kJ\,mol^{-1}}$. La figure 1 comporte douze liaisons P–O simples et quatre P=O, contre six liaisons P–P pour le tétraèdre élémentaire. Le cycle de Hess à 298 K donne, en $\mathrm{kJ\,mol^{-1}}$,
-$$\Delta_rH^\circ_{298}=92+12(335)+4(535)-6(209)-5(497)+10(-110)=1413.$$
-Les entropies donnent $\Delta_rS^\circ_{298}=280+10(198)-229-10(5{,}7)=1974\ \mathrm{J\,mol^{-1}\,K^{-1}}$. De même $\Delta_rC_p^\circ=67+10(29)-212-10(8{,}5)=60\ \mathrm{J\,mol^{-1}\,K^{-1}}$. En prenant ces capacités constantes et en gardant les états du bilan, les relations de Kirchhoff donnent
-$$\Delta_rH^\circ_{1000}=1413+0{,}060(1000-298)\simeq1455\ \mathrm{kJ\,mol^{-1}},$$
-$$\Delta_rS^\circ_{1000}=1974+60\ln(1000/298)\simeq2047\ \mathrm{J\,mol^{-1}\,K^{-1}}.$$
-Cette extrapolation à état solide imposé est une convention de l’exercice. La température de fusion annoncée pour l’oxyde est inférieure à 1000 K et les données de changement de phase nécessaires à un calcul avec les phases stables sont incomplètes.
+À une température de référence $T_0$, la loi de Hess donne $\Delta_rH^\circ(T_0)=\sum_i\nu_i\Delta_fH_i^\circ(T_0)$ et les entropies tabulées donnent $\Delta_rS^\circ(T_0)=\sum_i\nu_i S_i^\circ(T_0)$. Sans changement d’état, on ajoute respectivement $\int_{T_0}^T\Delta_r C_p^\circ\,dT$ et $\int_{T_0}^T\Delta_r C_p^\circ\,dT/T$. Si un constituant change de phase sur cet intervalle, on découpe l’intégration et on ajoute ses contributions de transition avec son coefficient stœchiométrique. La question est traitée ici pour la méthode.
 
-### Question 8
+### Question 8 — éléments de réponse
 
-Pour le modèle de Q7, $\Delta_rG^\circ_{1000}=\Delta_rH^\circ-1000\Delta_rS^\circ\simeq-5{,}92\times10^2\ \mathrm{kJ\,mol^{-1}}$. Ainsi $\ln K^\circ=-\Delta_rG^\circ/(RT)\simeq71{,}2$ et $K^\circ\simeq8\times10^{30}$, sans dimension. La précision est celle d’un calcul à partir d’énergies de liaison moyennes et de capacités thermiques constantes.
+Pour une transformation quelconque à température $T$, $\Delta_rG^\circ=\Delta_rH^\circ-T\Delta_rS^\circ$ et $\ln K^\circ=-\Delta_rG^\circ/(RT)$. Avec la constante des gaz en joules, il faut convertir l’enthalpie en joules par mole. La constante se définit avec les activités et ne porte pas d’unité. L’application numérique de cette transformation est hors périmètre.
 
 ## I.2 — Analyse d’un engrais
 
@@ -69,7 +66,9 @@ Le point $(6{,}0\ \mathrm{mmol\,L^{-1}},0{,}80)$ fixe une pente d’environ $0{,
 
 ### Question 13
 
-La masse de P trouvée est $0{,}0075\times31\simeq0{,}23\ \mathrm g$. Sa fraction massique est $0{,}23/2{,}5\simeq9{,}3\,\%$. Cela correspondrait à environ $21\,\%$ de $\mathrm{P_2O_5}$ équivalent, bien au-dessus des $7\,\%$ de l’étiquette. Le facteur d’environ trois dépasse l’incertitude de lecture. La composition annoncée et les données expérimentales de l’exercice ne concordent pas ; ces seules données ne permettent pas d’en identifier la cause.
+La masse de P trouvée est $0{,}0075\times31\simeq0{,}23\ \mathrm g$. Sa fraction massique est $0{,}23/2{,}5\simeq9{,}3\,\%$. Cela correspondrait à environ $21\,\%$ de $\mathrm{P_2O_5}$ équivalent, bien au-dessus des $7\,\%$ de l’étiquette. Pour comparer à la lecture du spectrophotomètre, on peut aussi partir de l’étiquette. Elle prévoit environ $2{,}5\times0{,}0306/31=2{,}47\ \mathrm{mmol}$ de P dans l’échantillon. Après les deux dilutions, on attendrait $1{,}85\ \mathrm{mmol\,L^{-1}}$ dans la cuve et une absorbance voisine de $0{,}25$, contre $0{,}75$ mesuré. Le facteur d’environ trois dépasse l’incertitude de lecture. La composition annoncée et les données expérimentales de l’exercice ne concordent pas ; ces seules données ne permettent pas d’en identifier la cause.
+
+![Question 13 — Pour 100 g d’engrais, convertir l’étiquette et le résultat de l’analyse en masse de phosphore élémentaire permet de les comparer.](figures/q13-teneurs-en-phosphore.svg)
 
 ### Question 14
 
@@ -171,7 +170,7 @@ Le bromure de tétrabutylammonium apporte le cation amphiphile $\mathrm{Bu_4N^+}
 
 ### Question 25
 
-Le nombre de rotations est $\mathrm{TON}=n(\text{biphényle formé})/n(\text{Pd introduit})=2941$. Cela représente en moyenne 2941 molécules de biphényle par atome de Pd initialement engagé. La vitesse de ces cycles serait décrite par une fréquence de rotation, qui nécessite une durée.
+Le nombre de rotations est $\mathrm{TON}=n(\text{biphényle formé})/n(\text{Pd introduit})=2941$. Cela représente en moyenne 2941 molécules de biphényle par atome de Pd initialement engagé. En l’absence de pertes de catalyseur, le rapport molaire Pd introduit / biphényle isolé vaut donc environ $1/2941=3{,}4\times10^{-4}$. La vitesse de ces cycles serait décrite par une fréquence de rotation, qui nécessite une durée.
 
 ## II.3 — Chélation, RMN et cinétique
 
@@ -231,7 +230,7 @@ Posons $A=\mathrm{[Pd(dba)(DIOP)]}$, $B=\mathrm{[Pd(DIOP)]}$ et $X=\mathrm{PhI}$
 $$0\simeq k_1[A]-(k_{-1}[\mathrm{dba}]+k_2[X])[B],\qquad [B]\simeq\frac{k_1[A]}{k_{-1}[\mathrm{dba}]+k_2[X]}.$$
 En additionnant les deux contributions à $v=k_0[A][X]+k_2[B][X]=k_{\rm app}[A]$, il vient
 $$\boxed{k_{\rm app}=k_0[X]+\frac{k_2k_1[X]}{k_{-1}[\mathrm{dba}]+k_2[X]}}.$$
-À [dba] fixé, la seconde contribution tend vers $k_1$ quand [X] devient grand, tandis que la première continue à augmenter.
+La demi-saturation de la voie passant par le complexe dissocié se produit pour $[X]=k_{-1}[\mathrm{dba}]/k_2$. À cette concentration, recombinaison et capture de l’intermédiaire ont la même vitesse. À [dba] fixé, la seconde contribution tend vers $k_1$ quand [X] devient grand, tandis que la première continue à augmenter.
 
 ![Figure 9 — À concentration de dba fixée, le modèle associe un terme linéaire et un terme saturable. Les échelles sont qualitatives.](figures/q36-voies-paralleles.svg)
 

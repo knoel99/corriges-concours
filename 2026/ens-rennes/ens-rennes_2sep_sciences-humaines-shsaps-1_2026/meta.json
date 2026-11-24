@@ -20,7 +20,9 @@
     "schmidt_1975": "https://doi.org/10.1037/h0076770",
     "newell_1986": "https://grants.hhp.uh.edu/clayne/HistoryofMC/Newell1986.pdf",
     "guadagnoli_lee_2004": "https://pubmed.ncbi.nlm.nih.gov/15130871/",
-    "winstein_schmidt_1990": "https://doi.org/10.1037/0278-7393.16.4.677"
+    "winstein_schmidt_1990": "https://doi.org/10.1037/0278-7393.16.4.677",
+    "apercu_sujet_sha256": "58f8a937964fc74be13fb3855bf5cb2a03cc15316e6d04430bc9233353cdf47d",
+    "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse."
   },
   "figures": [
     {
@@ -59,6 +61,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture de la page unique du sujet écrit et vérification des deux réponses, du rôle du risque et de l’exemple scolaire de tir au panier. Comparaison raisonnée d’une performance de séance et d’un test de rétention."
     }
   ]
 }

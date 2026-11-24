@@ -1,12 +1,16 @@
-# ENS PC — Chimie B 2026 · Corrigé guidé
+# ENS PC — Chimie B 2026 · Corrigé partiel guidé
 
 *Corrigé rédigé par IA, non officiel.*
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve porte sur l’association d’ions en solution puis sur la stéréochimie d’intermédiaires de la quartromicine. Dans la première partie, le dosage et le potentiel rédox révèlent l’association, tandis que l’absorption acoustique permet d’en mesurer les durées. La deuxième partie suit deux voies complémentaires de synthèse d’un spirotétronate.
+
+**Périmètre du corrigé.** Les questions 1 à 70 et 72 à 78 sont intégralement traitées. La question 71 précise le gaz dégagé et la structure de l’ester 18. Son mécanisme est hors périmètre.
 
 Les concentrations entre crochets sont celles des espèces libres sauf indication contraire. La concentration standard est $c^\circ=1\,\mathrm{mol\,L^{-1}}$. Dans la partie organique, la numérotation des composés et des protons est celle des planches du sujet.
 
@@ -87,7 +91,7 @@ Pour le sens de précipitation de Q2, $K_{\rm préc}=1/(a_{\rm Ba}a_{\rm S})=(c^
 
 #### Solution
 
-Les deux ions ont $z^2=4$. Ainsi $\log_{10}\gamma=-0{,}509\times4\times0{,}24=-0{,}49$, d’où $\gamma_{\rm Ba}=\gamma_{\rm S}\simeq0{,}32$. À saturation, $[\mathrm{Ba^{2+}}][\mathrm{SO_4^{2-}}]\simeq1{,}0\times10^{-9}\,\mathrm{mol^2\,L^{-2}}$. Avec $10^{-2}\,\mathrm{mol\,L^{-1}}$ de sulfate libre, il reste environ $10^{-7}\,\mathrm{mol\,L^{-1}}$ de baryum. La précipitation reste quantitative loin de l’équivalence. Cette correction thermodynamique ne rend compte ni de la hausse initiale ni, à elle seule, du déficit de conductivité. Les activités interviennent dans l’équilibre, les concentrations et mobilités dans le transport du courant.
+À partir des quatre teneurs de Q4, la force ionique analytique $I=\tfrac12\sum z_i^2 c_i$ vaut $0{,}0593\ \mathrm{mol\,L^{-1}}$, en première estimation avant de tenir compte des paires. Les deux ions ont $z^2=4$. Ainsi $\log_{10}\gamma=-0{,}509\times4\times0{,}24=-0{,}49$, d’où $\gamma_{\rm Ba}=\gamma_{\rm S}\simeq0{,}32$. À saturation, $[\mathrm{Ba^{2+}}][\mathrm{SO_4^{2-}}]\simeq1{,}0\times10^{-9}\,\mathrm{mol^2\,L^{-2}}$. Avec $10^{-2}\,\mathrm{mol\,L^{-1}}$ de sulfate libre, il reste environ $10^{-7}\,\mathrm{mol\,L^{-1}}$ de baryum. La précipitation reste quantitative loin de l’équivalence. Cette correction thermodynamique ne rend compte ni de la hausse initiale ni, à elle seule, du déficit de conductivité. Les activités interviennent dans l’équilibre, les concentrations et mobilités dans le transport du courant.
 
 ### Question 8
 
@@ -96,7 +100,7 @@ Les deux ions ont $z^2=4$. Ainsi $\log_{10}\gamma=-0{,}509\times4\times0{,}24=-0
 
 #### Solution
 
-La paire $\mathrm{CaSO_4}_{(aq)}$ est neutre. Dans l’eau initiale, une fraction du calcium et du sulfate ne conduit donc plus le courant sous forme de deux ions libres. À l’ajout du baryum, le sulfate précipite et l’équilibre de dissociation des paires se déplace. Du calcium redevient libre et conducteur, ce qui produit une hausse avant l’équivalence.
+La paire $\mathrm{CaSO_4}_{(aq)}$ est neutre. Dans l’eau initiale, une fraction du calcium et du sulfate ne conduit donc plus le courant sous forme de deux ions libres. À l’ajout du baryum, le sulfate précipite et l’équilibre de dissociation des paires se déplace. Du calcium redevient libre et conducteur, ce qui produit une hausse avant l’équivalence. On peut estimer la concentration de paires avec la conductivité initiale : chaque paire retire au transport une contribution $\lambda_{\rm Ca}+\lambda_{\rm S}$. En attribuant tout le déficit à cette seule association, on obtient $(0{,}415-0{,}235)/0{,}028\simeq6{,}4\ \mathrm{mol\,m^{-3}}$, soit environ la moitié du calcium analytique.
 
 ### Question 9
 
@@ -118,7 +122,9 @@ Dans le modèle idéal des espèces libres, prendre les coefficients d’activit
 
 #### Solution
 
-Pour $V=0$, on lit environ $2{,}3$ à $2{,}4\,\mathrm{mS\,cm^{-1}}$, soit $0{,}23$ à $0{,}24\,\mathrm{S\,m^{-1}}$. La prévision avec paires, $0{,}228\,\mathrm{S\,m^{-1}}$, rend compte de cette valeur à quelques pour cent, tandis que le modèle entièrement dissocié donnait $0{,}415\,\mathrm{S\,m^{-1}}$. C’est un argument en faveur d’une population de paires en solution.
+Pour $V=0$, on lit environ $2{,}3$ à $2{,}4\,\mathrm{mS\,cm^{-1}}$, soit $0{,}23$ à $0{,}24\,\mathrm{S\,m^{-1}}$. La prévision avec paires, $0{,}228\,\mathrm{S\,m^{-1}}$, rend compte de cette valeur à quelques pour cent, tandis que le modèle entièrement dissocié donnait $0{,}415\,\mathrm{S\,m^{-1}}$. Au milieu de la plage de lecture, le modèle avec paires sous-estime la conductivité d’environ $3\,\%$ et celui des ions libres la surestime d’environ $77\,\%$. Ces écarts sont rapportés à la mesure. La comparaison favorise la présence de paires, sous l’hypothèse que les mobilités tabulées décrivent la solution.
+
+![Question 10 — À volume de titrant nul, le modèle avec paires rejoint à quelques pour cent la mesure lue sur la courbe.](figures/q10-conductivites-initiales.svg)
 
 ## I.2 — Association de Bjerrum et équilibres rédox
 
@@ -147,7 +153,7 @@ Avec la définition et les unités choisies dans le sujet, et pour $a<d$,
 
 $$K_A=\frac{4\pi N_Ac_i}{1000}\int_a^d r^2\exp\!\left(\frac{2d}{r}\right)\,dr.$$
 
-La borne $a$ représente la plus petite distance accessible et $d$ la séparation seuil issue de Q11. Cette grandeur, définie ici comme une probabilité intégrée, contient la concentration $c_i$.
+La borne $a$ représente la plus petite distance accessible et $d$ la séparation seuil issue de Q11. Cette grandeur, définie ici comme une probabilité intégrée, contient la concentration $c_i$. Le facteur $N_Ac_i/1000$ est une densité en nombre par centimètre cube si $c_i$ est en moles par litre. Il faut alors exprimer le volume radial $4\pi r^2dr$ en centimètres cubes. En Q21, la même notation désigne une constante thermodynamique définie à partir des activités.
 
 ![Figure 2 — Le minimum de densité radiale fixe la borne supérieure de la zone associée. La région ombrée illustre a/d = 0,5.](figures/q12-densite-bjerrum.svg)
 
@@ -230,7 +236,7 @@ $$E=E^{\circ\prime}+\frac{RT}{F}\ln\!\frac{[\mathrm O]}{[\mathrm R^{\bullet-}]+[
 
 #### Solution
 
-Dans le sens écrit, $\Delta_rG^\circ=-F(E^\circ_{\rm BzPh}-E^\circ_{\rm Per})$. Sans électrolyte, la différence vaut $-2{,}55-(-2{,}38)=-0{,}17\,\mathrm V$ et l’équilibre standard favorise le sens inverse. Avec $\mathrm{NaBPh_4}$, les potentiels apparents donnent $-2{,}01-(-2{,}17)=+0{,}16\,\mathrm V$ et favorisent le sens direct. L’association stabilise davantage le radical de la benzophénone, ce qui inverse l’ordre des deux couples. Hors conditions standards le sens spontané se détermine avec le quotient réactionnel initial.
+Dans le sens écrit, $\Delta_rG^\circ=-F(E^\circ_{\rm BzPh}-E^\circ_{\rm Per})$. Sans électrolyte, la différence vaut $-2{,}55-(-2{,}38)=-0{,}17\,\mathrm V$ et l’équilibre standard favorise le sens inverse. Avec $\mathrm{NaBPh_4}$, les potentiels apparents donnent $-2{,}01-(-2{,}17)=+0{,}16\,\mathrm V$ et favorisent le sens direct. L’association stabilise davantage le radical de la benzophénone, ce qui inverse l’ordre des deux couples. À 298 K, ces deux différences correspondent, pour un électron, à $\Delta_rG^\circ\simeq+16{,}4\ \mathrm{kJ\,mol^{-1}}$ et $\Delta_rG^{\circ\prime}\simeq-15{,}4\ \mathrm{kJ\,mol^{-1}}$, respectivement. La constante conditionnelle en présence de sel est donc de l’ordre de $5\times10^2$, contre $1{,}3\times10^{-3}$ sans sel. Hors conditions standards le sens spontané se détermine avec le quotient réactionnel initial.
 
 ![Figure 3 — L’association au sodium relève les deux potentiels et inverse leur classement.](figures/q20-potentiels-redox.svg)
 
@@ -392,7 +398,7 @@ $$K=\frac{a_{\rm CIP}}{a_{\rm Sc}a_{\rm S}}=\frac{\gamma_{\rm CIP}}{\gamma_\pm^2
 
 #### Solution
 
-$\ln K=\mathrm{constante}+\ln\delta-2\ln(1-\delta)$, d’où $d\ln K/d\delta=\Gamma(\delta)=1/\delta+2/(1-\delta)=(1+\delta)/(\delta(1-\delta))$. La règle de la chaîne donne $(\partial_PK)_T=K\Gamma(\delta)(\partial_P\delta)_T$.
+À coefficients d’activité et concentration analytique de référence fixés, $\ln K=\mathrm{constante}+\ln\delta-2\ln(1-\delta)$, d’où $d\ln K/d\delta=\Gamma(\delta)=1/\delta+2/(1-\delta)=(1+\delta)/(\delta(1-\delta))$. La règle de la chaîne donne $(\partial_PK)_T=K\Gamma(\delta)(\partial_P\delta)_T$.
 
 ### Question 34
 
@@ -417,7 +423,7 @@ Les questions 33 et 34 donnent $(\partial_P\delta)_T=-\Delta_rV^\circ/(RT\Gamma)
 
 $$\chi_r=\frac{C_0(\Delta_rV^\circ)^2}{RT\Gamma(\delta)}.$$
 
-L’expression est positive même si $\Delta_rV^\circ<0$. Avec $C_0$ en $\mathrm{mol\,m^{-3}}$ et $\Delta_rV^\circ$ en $\mathrm{m^3\,mol^{-1}}$, elle s’exprime en $\mathrm{Pa^{-1}}$.
+À $C_0$ et $\Delta_rV^\circ$ fixés, la dépendance en composition est $1/\Gamma=\delta(1-\delta)/(1+\delta)$. Son maximum vérifie $1-2\delta-\delta^2=0$, soit $\delta=\sqrt2-1\simeq0{,}414$. Aux deux extrémités il reste trop peu de l’une des formes pour que l’équilibre se déplace sensiblement. L’expression est positive même si $\Delta_rV^\circ<0$. Avec $C_0$ en $\mathrm{mol\,m^{-3}}$ et $\Delta_rV^\circ$ en $\mathrm{m^3\,mol^{-1}}$, elle s’exprime en $\mathrm{Pa^{-1}}$.
 
 ![Figure 6 — La réponse de l’équilibre à la pression est maximale lorsque les ions libres et les paires coexistent en proportions appréciables.](figures/q35-compressibilite.svg)
 
@@ -492,7 +498,7 @@ En posant $S=a+b+c+d$ et $P=ac+ad+bd$, on trouve $\det(\lambda I-A)=\lambda(\lam
 
 $$\frac{1}{\tau_2}=\frac{S+\sqrt{S^2-4P}}2,\qquad \frac{1}{\tau_3}=\frac{S-\sqrt{S^2-4P}}2.$$
 
-Le discriminant $(a+b-c-d)^2+4bc$ est positif. La troisième valeur propre est zéro, soit formellement $\tau_1=\infty$. Elle correspond à un changement du bilan total. Une perturbation à quantité de matière constante ne crée que les deux modes de relaxation finis.
+Le discriminant $(a+b-c-d)^2+4bc$ est positif. Pour calculer le mode lent lorsque les deux temps sont très différents, la forme équivalente $1/\tau_3=2P/(S+\sqrt{S^2-4P})$ évite la soustraction de deux nombres voisins. La troisième valeur propre est zéro, soit formellement $\tau_1=\infty$. Elle correspond à un changement du bilan total. Une perturbation à quantité de matière constante ne crée que les deux modes de relaxation finis.
 
 ### Question 42
 
@@ -563,7 +569,7 @@ Sur les points où elle est résolue, $\tau'_1$ reste voisine de $5{,}6\times10^
 
 $$\tau'_2\simeq S_0^{-1},\qquad \tau'_3\simeq\frac{S_0}{k_{-3}k_{-2}[1+K_2(1+K_3)c_0/c^\circ]}.$$
 
-La durée lente diminue lorsque $c_0$ croît, conformément au tableau.
+Les tirets du tableau pour $\tau_1^{\prime}$ signalent une composante non résolue. Ils ne fixent ni sa durée ni la concentration des paires correspondantes. La durée lente diminue lorsque $c_0$ croît, conformément au tableau.
 
 ### Question 48
 
@@ -724,7 +730,7 @@ Les groupes sont classés par déplacement chimique croissant. Les lettres sont 
 | 5,70 | 1 H, s | h, probable | Proton vinylique isolé du cyclohexène. |
 | 7,25–7,60 | 10 H, m | o, p | Les deux phényles du TBDPS. |
 
-L’intégration totale vaut 54 H. Le spectre unidimensionnel ne sépare pas de façon certaine b et c, les deux phényles, ni chacun des méthyles du massif de 24 H. Une corrélation à longue portée vers le carbonyle lactonique confirmerait l’attribution proposée pour l.
+L’intégration totale vaut 54 H. La paire d’alcène $\mathrm e$ et $\mathrm f$ se reconnaît d’abord à son couplage mutuel de 15 Hz. Le couplage de 5,2 Hz relie ensuite $\mathrm e$ au méthylène $\mathrm d$, ce qui distingue les deux extrémités de cette chaîne. Le spectre unidimensionnel ne sépare pas de façon certaine b et c, les deux phényles, ni chacun des méthyles du massif de 24 H. Une corrélation à longue portée vers le carbonyle lactonique confirmerait l’attribution proposée pour l.
 
 ### Question 61
 
@@ -759,7 +765,7 @@ La figure 9 donne **exo/endo = 7/1**. L’auxiliaire chiral encombre différemme
 
 #### Solution
 
-La première voie donne un rapport **endo/exo de 96/4** avec l’α-bromoacroléine. Le diène, le diénophile et le catalyseur étant achiraux, les deux faces énantiotopiques donnent les deux énantiomères en proportions égales. La deuxième voie utilise un auxiliaire chiral. Elle favorise l’adduit exo de 20 (7/1) et enrichit la série exo dans un antipode (78 % d’excès). Les étapes de transformation de l’auxiliaire donnent alors accès à la série absolue nécessaire pour 11 avec moins de matière de configuration indésirable à séparer. Les deux rapports se rapportent à des **diénophiles différents** et ne sont pas des rendements isolés de 11.
+La première voie donne un rapport **endo/exo de 96/4** avec l’α-bromoacroléine. Le diène, le diénophile et le catalyseur étant achiraux, les deux faces énantiotopiques donnent les deux énantiomères en proportions égales. La deuxième voie utilise un auxiliaire chiral. Elle favorise l’adduit exo de 20 (7/1) et enrichit la série exo dans un antipode (78 % d’excès). Les étapes de transformation de l’auxiliaire donnent alors accès à la série absolue nécessaire pour 11 avec moins de matière de configuration indésirable à séparer. En combinant le rapport et l’excès, la fraction de l’ensemble des cycloadduits correspondant à l’antipode exo recherché après départ de l’auxiliaire s’estime à $(7/8)\times0{,}89\simeq0{,}78$. Ce calcul porte sur la composition du mélange de cycloaddition avant les transformations ultérieures. Les deux rapports se rapportent à des **diénophiles différents** et ne sont pas des rendements isolés de 11.
 
 ### Question 64
 
@@ -835,14 +841,14 @@ Une **oxydation de Pinnick**, à l’aide de chlorite de sodium $\mathrm{NaClO_2
 
 Deux formes limites du diazométhane sont $\mathrm{H_2C=N^+=N^-}$ et $\mathrm{^-CH_2-N^+\equiv N}$. Dans la première, le N terminal porte deux doublets libres. Dans la seconde, le carbone porte un doublet et le N terminal un doublet. L’azote central tétravalent porte $+1$ dans les deux formes. Chaque atome de la deuxième période satisfait l’octet et la molécule est globalement neutre.
 
-### Question 71
+### Question 71 — gaz et produit organique
 
 > [!INDICATION]
-> Commencer par le transfert du proton acide, puis reconnaître un très bon groupe partant.
+> Comparer les fonctions carboxyliques de 17 et de 18, puis suivre les deux atomes d’azote dans le bilan.
 
 #### Solution
 
-La forme à carbone nucléophile du diazométhane capte le proton de $\mathrm{RCO_2H}$. On obtient la paire $\mathrm{RCO_2^-}$ et $\mathrm{CH_3-N^+\equiv N}$. Un oxygène du carboxylate attaque ensuite le méthyle dans une substitution bimoléculaire. La rupture de la liaison C–N libère le **diazote** $\mathrm{N_2(g)}$. Le produit **18** est l’ester $\mathrm{RCO_2CH_3}$, avec les mêmes protections et configurations que 17.
+Le gaz est le diazote $\mathrm{N_2}$. Le groupe carboxyle de 17 devient l’ester méthylique $\mathrm{RCO_2CH_3}$ de **18**. Le carbone du méthyle est le carbone supplémentaire et les deux azotes quittent la partie organique. Les centres stéréogènes du squelette sont conservés.
 
 ### Question 72
 

@@ -11,6 +11,7 @@ import re
 import subprocess
 import sys
 import time
+import unicodedata
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
@@ -128,6 +129,15 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
     signatures = signatures_qualifiantes(meta)
     if not signatures:
         return "intervention Astra Ultra à effectuer ou documenter", set()
+    if SLUG.fullmatch(dossier.name):
+        # La publication du site construit la clé des textes et PDF à partir de la matière.
+        matiere = str(meta.get("epreuve", {}).get("matiere", ""))
+        ascii_matiere = (
+            unicodedata.normalize("NFKD", matiere).encode("ascii", "ignore").decode()
+        )
+        segment = re.sub(r"[^\w.-]+", "-", ascii_matiere.lower()).strip("-")
+        if segment != dossier.name.split("_")[2]:
+            return "identité de matière à corriger pour publier sur la fiche", set()
     for md in fichiers[1:]:
         if not signatures <= entete(md.read_text(encoding="utf-8")):
             return "signature à vérifier dans les deux éditions", set()

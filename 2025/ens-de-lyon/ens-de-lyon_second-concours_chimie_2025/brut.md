@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Couverture de l’épreuve (64 questions).** Les questions 1 à 45, 51, 56 et 60 reçoivent une réponse intégrale (48 questions). Les questions 46, 49, 52 et 53 reçoivent une réponse partielle, limitée aux propriétés des réactifs ou à la lecture du spectre. La voie de synthèse de la zéaralénone, qui concerne les questions 47–48, 50, 54–55, 57–59 et 61–64, reste hors du corrigé (12 questions).
 
 ## I.1 — Structure de H₂S et combustion
@@ -145,7 +147,9 @@ Le tracé commence avec une petite différence de potentiel, présente un pic au
 
 ### Question 26
 
-$n_0(\mathrm{I_3^-})=0{,}100\times0{,}0100=1{,}00\ \mathrm{mmol}$. Le titrage donne $n_{\rm reste}(\mathrm{I_3^-})=C_SV_E/2=0{,}360\ \mathrm{mmol}$. Le kiwi contenait donc $0{,}640\ \mathrm{mmol}$ de vitamine C, soit une concentration dans les 100 mL d’extrait de $\boxed{6{,}4\times10^{-3}\ \mathrm{mol\,L^{-1}}}$. Avec $M=176{,}1\ \mathrm{g\,mol^{-1}}$, cela représente environ 113 mg pour 100 g, du même ordre que 90 mg et environ 25 % au-dessus. La référence est une moyenne. D’autres réducteurs du fruit peuvent aussi majorer le dosage iodométrique.
+$n_0(\mathrm{I_3^-})=0{,}100\times0{,}0100=1{,}00\ \mathrm{mmol}$. Le titrage donne $n_{\rm reste}(\mathrm{I_3^-})=C_SV_E/2=0{,}360\ \mathrm{mmol}$. Le kiwi contenait donc $0{,}640\ \mathrm{mmol}$ de vitamine C, soit une concentration dans les 100 mL d’extrait de $\boxed{6{,}4\times10^{-3}\ \mathrm{mol\,L^{-1}}}$. Avec $M=176{,}1\ \mathrm{g\,mol^{-1}}$, cela représente environ 113 mg pour 100 g, du même ordre que 90 mg et environ 25 % au-dessus. La référence est une moyenne. D’autres réducteurs du fruit peuvent aussi majorer le dosage iodométrique. Une erreur sur le volume équivalent se répercute avec le signe opposé sur la teneur en vitamine C : $n_{\rm vit\ C}=n_{\rm I_3^-,apporté}-C_SV_E/2$. Une surestimation de $V_E$ de $0{,}10\ \mathrm{mL}$ à cette concentration diminuerait le résultat de $0{,}005\ \mathrm{mmol}$, soit environ $0{,}9\ \mathrm{mg}$ dans l’extrait.
+
+![Question 26 — Le thiosulfate mesure le triiodure restant. La différence avec la quantité apportée donne la quantité de vitamine C.](figures/q26-bilan-triiodure.svg)
 
 ### Question 27
 
@@ -226,7 +230,7 @@ Cette méthode d’Euler explicite conserve algébriquement les deux combinaison
 
 ### Question 37
 
-Les conditions initiales sont stœchiométriques, donc $[\mathrm{GSH}]=2[\mathrm{H_2O_2}]$ à tout instant. Si $P=[\mathrm{H_2O_2}]$, alors $\dot P=-2kP^2$ et $P(t)=P_0/(1+2kP_0t)$. À $t=200\ \mathrm s$, le dénominateur vaut $1+2(0{,}84)(0{,}05)(200)=17{,}8$. Il reste environ $0{,}0028\ \mathrm{mM}$ de peroxyde et $0{,}0056\ \mathrm{mM}$ de GSH. Le GSSG atteint $0{,}0472\ \mathrm{mM}$ sur un maximum de $0{,}050\ \mathrm{mM}$. Le calcul d’Euler et la figure donnent ainsi **environ 94 % de conversion**. La réaction se poursuit à une vitesse devenue faible.
+Les conditions initiales sont stœchiométriques, donc $[\mathrm{GSH}]=2[\mathrm{H_2O_2}]$ à tout instant. Si $P=[\mathrm{H_2O_2}]$, alors $\dot P=-2kP^2$ et $P(t)=P_0/(1+2kP_0t)$. À $t=200\ \mathrm s$, le dénominateur vaut $1+2(0{,}84)(0{,}05)(200)=17{,}8$. Il reste environ $0{,}0028\ \mathrm{mM}$ de peroxyde et $0{,}0056\ \mathrm{mM}$ de GSH. Le GSSG atteint $0{,}0472\ \mathrm{mM}$ sur un maximum de $0{,}050\ \mathrm{mM}$. Le calcul d’Euler et la figure donnent ainsi **environ 94 % de conversion**. Le temps de demi-consommation du peroxyde est $1/(2kP_0)\simeq11{,}9\ \mathrm s$. La décroissance est hyperbolique. À chaque instant, le temps supplémentaire nécessaire pour diviser de nouveau la concentration par deux augmente. En appliquant effectivement les 2 000 pas de 0,1 s du sujet, on obtient $[\mathrm{H_2O_2}]_{200}\simeq0{,}002805\ \mathrm{mM}$, contre $0{,}002809\ \mathrm{mM}$ avec la solution analytique.
 
 ![Figure 8 — Intégration du système dans les conditions du sujet. À 200 s, il reste du peroxyde malgré la faible pente.](figures/glutathion-euler-cinetique.svg)
 
@@ -263,11 +267,11 @@ Le pic du monomère est à $m/z=308{,}09$ pour $z=1$, compatible avec $[\mathrm{
 Avec $v_7=k_7[\mathrm{GSH}]^2\simeq k_8[C]=v_8$, on obtient $[C]/[\mathrm{GSH}]^2\simeq k_7/k_8$. Pour $2\mathrm{GSH}\rightleftharpoons C$, la constante thermodynamique en milieu dilué est
 $$K^\circ=\frac{a_C}{a_{\mathrm{GSH}}^2}\simeq c^\circ\frac{[C]}{[\mathrm{GSH}]^2}
 = c^\circ\frac{k_7}{k_8}\simeq\frac{1{,}3}{9\times10^{-4}}\simeq1{,}4\times10^3,$$
-en utilisant $c^\circ=1\ \mathrm{mol\,L^{-1}}$ et les constantes en unités molaires. Pour estimer la validité du prééquilibre en présence de peroxyde, comparons les deux pertes de C. Vers $5{,}3\ \mathrm{mM}$ de peroxyde, $k_{12}[\mathrm{H_2O_2}]\simeq5{,}3\times10^{-6}\ \mathrm{s^{-1}}$, beaucoup plus petit que $k_8=9\times10^{-4}\ \mathrm{s^{-1}}$. La dissociation domine la consommation irréversible du dimère. L’égalité des vitesses est alors une approximation plausible après le transitoire, et suppose que les concentrations libres varient lentement sur le temps de relaxation de C.
+en utilisant $c^\circ=1\ \mathrm{mol\,L^{-1}}$ et les constantes en unités molaires. Pour estimer la validité du prééquilibre en présence de peroxyde, comparons les deux pertes de C. Vers $5{,}3\ \mathrm{mM}$ de peroxyde, $k_{12}[\mathrm{H_2O_2}]\simeq5{,}3\times10^{-6}\ \mathrm{s^{-1}}$, beaucoup plus petit que $k_8=9\times10^{-4}\ \mathrm{s^{-1}}$. La dissociation domine la consommation irréversible du dimère. Le rapport des vitesses de ces deux voies vaut environ $0{,}0059$. La concentration du dimère disparaît de ce rapport car les deux voies en dépendent au premier ordre. L’égalité des vitesses d’association et de dissociation est alors une approximation plausible après le transitoire, et suppose que les concentrations libres varient lentement sur le temps de relaxation de C.
 
 ### Question 44
 
-Deux thiols du GSH cèdent ensemble deux électrons pour former le disulfure GSSG. Dans le bilan, ces électrons permettent au peroxyde de devenir de l’eau. Le pool de GSH contribue ainsi à limiter le peroxyde disponible pour des réactions capables d’endommager les constituants cellulaires. La glutathion réductase peut ensuite régénérer GSH à partir de GSSG en utilisant le NADPH, ce qui entretient le cycle antioxydant.
+Deux thiols du GSH cèdent ensemble deux électrons pour former le disulfure GSSG. Dans le bilan, ces électrons permettent au peroxyde de devenir de l’eau. Le pool de GSH contribue ainsi à limiter le peroxyde disponible pour des réactions capables d’endommager les constituants cellulaires. La glutathion réductase peut ensuite régénérer GSH à partir de GSSG en utilisant le NADPH, ce qui entretient le cycle antioxydant. Sur un tour complet, le glutathion revient à son état initial et le pouvoir réducteur consommé provient du NADPH. Le bilan est $\mathrm{H_2O_2+NADPH+H^+\rightarrow 2H_2O+NADP^+}$.
 
 ## III — Questions indépendantes de chimie générale et de spectroscopie
 
@@ -293,7 +297,7 @@ La figure 12 montre un ensemble A vers $7{,}3\ \mathrm{ppm}$ intégrant quatre p
 
 ### Question 53 — éléments de réponse
 
-Deux formules de Lewis du diazométhane sont $\mathrm{H_2C{=}N^+{=}N^-\leftrightarrow {}^-CH_2{-}N^+{\equiv}N}$. Dans la première, le N terminal porte deux doublets libres ; dans la seconde, le carbone et le N terminal portent chacun un doublet libre. La seconde forme rend compte de la protonation sur le carbone. L’ion méthyldiazonium ainsi formé peut transférer un méthyle à un nucléophile, avec départ de $\mathrm{N_2}$. Cette propriété générale explique le pouvoir alkylant du diazométhane.
+Deux formules de Lewis du diazométhane sont $\mathrm{H_2C{=}N^+{=}N^-\leftrightarrow {}^-CH_2{-}N^+{\equiv}N}$. Dans la première, le N terminal porte deux doublets libres ; dans la seconde, le carbone et le N terminal portent chacun un doublet libre. Les deux structures ont seize électrons de valence et une charge totale nulle. Cette réponse porte sur les formes de Lewis.
 
 ### Question 56
 
