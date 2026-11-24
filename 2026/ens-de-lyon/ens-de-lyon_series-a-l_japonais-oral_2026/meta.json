@@ -1,0 +1,46 @@
+{
+  "slug": "ens-de-lyon_series-a-l_japonais-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Japonais (oral)",
+    "annee": 2026,
+    "type": "oral"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Japonais%202026.pdf#page=3",
+    "sujet_sha256": "a70361b08d3b9d1b2e03882055229f8a8608acb6d147b774dd7b918674925dca",
+    "documents": [
+      "https://www.aozora.gr.jp/cards/000158/files/1502_24633.html",
+      "https://www.nikkei.com/article/DGXZQODK2718W0X21C25A2000000/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Oral",
+      "legende": "Du lieu décrit à la position défendue"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication littéraire de Hakai entre les deux bornes vérifiées, analyse en japonais de l’éditorial original du Nihon Keizai Shinbun daté du 8 janvier 2026, entretien pour chaque exercice et distinction entre texte et interprétation."
+    }
+  ]
+}
