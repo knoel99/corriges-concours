@@ -1,10 +1,17 @@
-# ENS de Lyon, second concours — Biologie-biochimie 2026 · Corrigé guidé
+# ENS de Lyon, second concours — Biologie-biochimie 2026 · Corrigé partiel guidé
 
 *Corrigé rédigé par IA, non officiel.*
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Les trois heures de composition conduisent de la transmission familiale à une application thérapeutique. Pour chaque expérience, distinguer ce qui est manipulé, ce qui est mesuré et ce que le contrôle permet d’exclure.
+
+**Périmètre.** Les 28 questions des parties 1 à 5 et la question 6.2 sont corrigées intégralement, soit 29 réponses sur 30. En 6.1, la réponse explique la finalité physiologique du traitement. Sa réalisation par modification de cellules souches sort du périmètre de cette édition.
+
+> [!JURY]
+> Le rapport porte sur deux copies. Il demande de donner le sens et l’ordre de grandeur d’un changement, puis de préciser ce que démontre le contrôle. Pour les figures 4 et 6, choisir une même pression partielle pour les deux populations permet de respecter cette démarche.
 
 ## Partie 1 · Transmission familiale
 
@@ -80,7 +87,7 @@ Des cellules allongées, incurvées en forme de faucille, remplacent une partie 
 > [!INDICATION]
 > Choisir une pression commune aux deux bandes avant de comparer les saturations.
 
-À pression donnée dans la zone intermédiaire, les hématies des patients ont généralement une saturation plus faible que les témoins. La plage de l’HbS est décalée vers les hautes pressions et certaines valeurs se recouvrent. Il faut donc, dans cet essai, davantage de dioxygène pour obtenir une même saturation. Vers 35–40 mmHg, une fraction importante est désoxygénée, ce qui favorise la polymérisation de l’HbS et la falciformation dans les territoires veineux ou mal perfusés. Moindre capacité globale de transport en cas d’anémie et occlusion peuvent aggraver l’hypoxie tissulaire. Un déplacement de courbe à droite, pris isolément, n’implique pas que l’hémoglobine libère moins facilement son oxygène.
+À pression donnée dans la zone intermédiaire, les hématies des patients ont généralement une saturation plus faible que les témoins. Vers 40 mmHg, on lit approximativement 60 à 70 % chez les témoins et 20 à 45 % chez les patients. Les plages représentent la variabilité entre individus. La mesure porte sur la saturation des hématies dans leurs conditions de mesure. Il faut donc, dans cet essai, davantage de dioxygène pour obtenir une même saturation. Vers 35–40 mmHg, une fraction importante est désoxygénée, ce qui favorise la polymérisation de l’HbS et la falciformation dans les territoires veineux ou mal perfusés. Moindre capacité globale de transport en cas d’anémie et occlusion peuvent aggraver l’hypoxie tissulaire. Un déplacement de courbe à droite, pris isolément, n’implique pas que l’hémoglobine libère moins facilement son oxygène.
 
 ### 2.6 · Proposer des pistes à partir des données
 
@@ -103,16 +110,16 @@ Au début du développement, des chaînes embryonnaires ζ et ε sont transitoir
 > [!INDICATION]
 > Suivre une molécule d’oxygène depuis le sang maternel jusqu’au sang fœtal.
 
-La courbe fœtale est à gauche de la courbe maternelle : vers 5 kPa, la saturation fœtale est plus élevée et sa pression de demi-saturation est plus basse. Aux environs de 13 kPa, les deux sont proches du plateau. Le dioxygène diffusant sous l’effet d’un gradient de pression partielle entre circulations séparées, l’HbF fixe efficacement l’oxygène disponible du côté fœtal au placenta pendant que l’HbA maternelle en cède. L’HbF contribue à maintenir le gradient en fixant le gaz entré dans le sang fœtal. Les sangs ne se mélangent normalement pas et l’HbF doit à son tour pouvoir délivrer l’oxygène aux tissus du fœtus.
+La courbe fœtale est à gauche de la courbe maternelle : vers 5 kPa, on lit environ 70 à 75 % de saturation pour les hématies fœtales contre 50 à 55 % pour les maternelles. La pression nécessaire à une saturation de 50 % est ainsi plus basse du côté fœtal. Aux environs de 13 kPa, les deux sont proches du plateau. Le dioxygène diffusant sous l’effet d’un gradient de pression partielle entre circulations séparées, l’HbF fixe efficacement l’oxygène disponible du côté fœtal au placenta pendant que l’HbA maternelle en cède. L’HbF contribue à maintenir le gradient en fixant le gaz entré dans le sang fœtal. Les sangs ne se mélangent normalement pas et l’HbF doit à son tour pouvoir délivrer l’oxygène aux tissus du fœtus.
 
-![Courbes illustratives. À pression partielle commune, l’hémoglobine fœtale a une saturation supérieure dans la zone intermédiaire.](figures/affinites-foetale-maternelle.svg)
+![À pression partielle commune, les hématies fœtales ont une saturation plus élevée dans la zone intermédiaire. Les courbes illustrent l’allure de la figure 6.](figures/affinites-foetale-maternelle.svg)
 
 ### 3.3 · Comparer les groupes sans confondre moyenne et diagnostic
 
 > [!INDICATION]
 > Conserver la légende UA, le nom des groupes et les dispersions.
 
-Pour les porteurs, patients et témoins respectivement, le tableau rapporte HbA = 11,2 ± 3,8 ; 7,9 ± 2,6 ; 14,0 ± 1,7 UA. HbF vaut 8,2 ± 2,8 ; 8,4 ± 2,9 ; 1,1 ± 0,5 UA. L’HbF moyenne est donc élevée et très proche chez les porteurs et patients étudiés, nettement moindre chez les témoins. Le paramètre noté HbA est en moyenne le plus bas chez les patients. On restitue les libellés et unités du document ; ces moyennes seules ne définissent ni le génotype individuel ni la proportion réelle d’HbA dans tous les génotypes drépanocytaires.
+Pour les porteurs, patients et témoins respectivement, le tableau rapporte HbA = 11,2 ± 3,8 ; 7,9 ± 2,6 ; 14,0 ± 1,7 UA. HbF vaut 8,2 ± 2,8 ; 8,4 ± 2,9 ; 1,1 ± 0,5 UA. La moyenne d’HbF est voisine de huit fois celle des témoins dans les deux premiers groupes. L’écart de 0,2 UA entre leurs moyennes est petit devant leurs écarts-types, proches de 3 UA. Le tableau seul ne fournit pas de test de différence. Le paramètre noté HbA est en moyenne le plus bas chez les patients. On restitue les libellés et unités du document ; ces moyennes seules ne définissent ni le génotype individuel ni la proportion réelle d’HbA dans tous les génotypes drépanocytaires.
 
 ### 3.4 · Lire l’association entre crises et HbF
 
@@ -142,7 +149,7 @@ Sur acétate de cellulose, les hémoglobines natives migrent avec une mobilité 
 > [!INDICATION]
 > Confronter la perte de BCL11A aux trois pourcentages d’HbF.
 
-L’actine est détectée à des niveaux comparables. La bande BCL11A est abondante chez le témoin et fortement diminuée après shRNA 1, plus modérément après shRNA 2. Après différenciation, la proportion d’HbF passe de 6 % chez le témoin à 45 % ou 26 %, respectivement. Plus la diminution de BCL11A est forte dans cette comparaison, plus l’HbF augmente. BCL11A limite donc l’expression d’HbF dans ce modèle. Il s’agit d’un effet fonctionnel qui ne démontre pas encore une fixation directe à l’ADN.
+L’actine est détectée à des niveaux comparables. La bande BCL11A est abondante chez le témoin et fortement diminuée après shRNA 1, plus modérément après shRNA 2. Après différenciation, la proportion d’HbF passe de 6 % chez le témoin à 45 % ou 26 %, respectivement. Les hausses de la **proportion** d’HbF sont donc de 39 et 20 points par rapport au contrôle. Pour en déduire des variations de quantité absolue d’HbF par cellule, il faudrait également connaître la quantité totale d’hémoglobine. BCL11A limite donc l’expression d’HbF dans ce modèle. Il s’agit d’un effet fonctionnel qui ne démontre pas encore une fixation directe à l’ADN.
 
 ![La teneur relative en HbF augmente dans les deux conditions qui réduisent BCL11A, et davantage avec le shRNA 1.](figures/repression-de-hbf.svg)
 
@@ -218,9 +225,9 @@ Les deux délétions font perdre β et δ dans le modèle du sujet. La délétio
 ### 5.8 · Distinguer occupation, répression et interaction
 
 > [!INDICATION]
-> Faire varier l’abondance du répresseur puis mesurer distinctement occupation du locus et production de γ.
+> Que peut-on comparer chez des personnes portant des délétions différentes ? Quelle lecture renseigne sur la transcription, et quelle autre sur le contact entre deux régions ?
 
-Comparer, à stade de différenciation identique, l’expression des transcrits γ, l’HbF, l’acétylation des histones et l’occupation des sites dans des cellules ayant un niveau normal ou diminué de BCL11A. Une restauration de BCL11A devrait rétablir au moins partiellement la répression si cet effet lui est spécifique. Comparer les régions régulatrices intactes à celles manquant dans les deux délétions teste leur contribution ; une région sans enrichissement et l’IgG contrôlent le signal de fond. Une mesure de contact entre régions testerait séparément le modèle de boucle chromatinienne. Ces résultats distinguent la présence d’un complexe d’un effet sur la transcription.
+On peut comparer les échantillons de personnes portant naturellement les deux types de délétions. À stade érythroïde comparable, mesurer l’ARN de globine γ en plus de la proportion d’HbF permet de distinguer une variation des transcrits d’une modification de la composition protéique. Les échantillons à région intacte servent de référence. Une mesure de proximité entre la région de contrôle et les gènes de globines testerait séparément l’hypothèse de contacts à distance. Une différence concordante entre génotypes soutiendrait le modèle, tout en laissant possible l’intervention d’autres éléments perdus dans les délétions.
 
 ## Partie 6 · Principe thérapeutique
 
@@ -229,7 +236,7 @@ Comparer, à stade de différenciation identique, l’expression des transcrits 
 > [!INDICATION]
 > Le rôle souhaité est-il identique dans tous les descendants d’une cellule souche hématopoïétique ?
 
-Le raisonnement conduit à réduire l’expression de BCL11A dans la lignée érythroïde afin de lever la répression des gènes γ. Les hématies produisent alors davantage d’HbF, ce qui limite les conséquences de l’HbS. Le principe du Casgevy consiste à modifier ex vivo des cellules souches hématopoïétiques autologues au niveau d’un élément régulateur érythroïde de BCL11A, puis à les réadministrer. Leurs descendants érythroïdes expriment plus d’HbF. Cette approche préserve les fonctions de BCL11A dans d’autres lignées ; elle agit sur le programme d’expression sans corriger la mutation βS elle-même.
+L’effet recherché est une diminution de l’expression de BCL11A dans la lignée érythroïde. Le frein sur la production des chaînes γ est ainsi atténué. Les hématies peuvent contenir davantage d’HbF (α₂γ₂), dont la présence limite les conséquences de la polymérisation de l’HbS. La stratégie vise la composition en hémoglobines sans rétablir la séquence normale de la chaîne β. Cette réponse couvre la finalité et la justification du traitement.
 
 ![La diminution ciblée d’un répresseur dans la lignée érythroïde réactive la production de l’hémoglobine fœtale.](figures/reactivation-de-hbf.svg)
 
