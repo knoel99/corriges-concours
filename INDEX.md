@@ -497,6 +497,7 @@
 | 2024 | ENS de Lyon | Second concours | Physique | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Design graphique | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/guide.md) |

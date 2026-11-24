@@ -1,0 +1,47 @@
+{
+  "slug": "ens-de-lyon_series-a-l_chinois-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Chinois (oral)",
+    "annee": 2026,
+    "type": "oral"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Chinois%202026.pdf#page=3",
+    "sujet_sha256": "e788ba587a5ab7c64d9862cfef7079d597811c2bf72f65c14df8c4fc5d0f3ffd",
+    "documents": [
+      "https://t.me/RFI_Cn/26040",
+      "https://fortune.com/asia/2025/02/11/ne-zha-2-first-movie-break-billion-single-market-china/",
+      "https://zqb.cyol.com/pc/content/202505/27/content_411475.html"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Oral",
+      "legende": "Attribuer une interprétation"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Deux analyses LV2 en chinois. Pour le cinéma, commentaire du titre et du chapeau RFI attestés, éclairés par une dépêche AFP publiée séparément ; pour le second sujet, commentaire de l’article original intégral, en signalant les bornes inconnues de l’extrait d’examen."
+    }
+  ]
+}
