@@ -1,0 +1,52 @@
+{
+  "slug": "ens-psl_cnel-lettres_musicologie_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Musicologie",
+    "annee": 2026
+  },
+  "intitule": "Commentaire stylistique d’un « Air russe » attribué à Weber et analyse harmonique des mesures 1 à 26",
+  "gabarit": "probleme",
+  "questions": 2,
+  "redaction": "Rédaction partielle des éditions brute et guidée. Lecture directe du rapport et comparaison avec la gravure de l’op. 10b no 3 et les catalogues de l’op. 13 et de l’op. 40. Le commentaire est documenté partiellement. Les mesures 1 à 26 de l’examen restent sans chiffrage faute de concordance avec la partition distribuée.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf#page=2",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/rapport_du_jury_du_departement_arts_cnel_2026_ens-psl.pdf",
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-concours-normalien-etudiant-lettres-2026",
+    "nature": "Consignes et attendus attestés par le rapport du jury pp. 2–3. La partition et l’enregistrement distribués ne figurent pas sur la page officielle.",
+    "rapport_sha256": "4f032bb394ecb223ce6827de20caada0c29d10558e4ba4b8cb74b077a11f90d5",
+    "references_comparatives": [
+      "https://flaminioonline.it/Biografie/Weber-catalogo-opus.html",
+      "https://www.henle.de/6-Violin-Sonatas-op.-10-b/HN-182",
+      "https://thecellist.ru/wp-content/uploads/2021/01/weber-c.m.-6-sonatas-for-violin-and-piano.pdf#page=15",
+      "https://repozytorium.nifc.pl/islandora/pl-wnifc-mfc-m-1447?display=list"
+    ]
+  },
+  "date_revision": "2026-11-24",
+  "figures": [],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction partielle des éditions brute et guidée. Lecture directe du rapport et comparaison avec la gravure de l’op. 10b no 3 et les catalogues de l’op. 13 et de l’op. 40. Le commentaire est documenté partiellement. Les mesures 1 à 26 de l’examen restent sans chiffrage faute de concordance avec la partition distribuée.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "1"
+    ],
+    "questions_non_traitees": [
+      "2"
+    ],
+    "motif": "Une méthode et une illustration indépendante sont proposées pour la question 2. La partition exacte du concours fait défaut pour attribuer un relevé harmonique aux mesures demandées."
+  }
+}
