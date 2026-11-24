@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_italien-theme-lyon_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (thème Lyon)",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=13",
+    "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Italien%202022_0.pdf#page=8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Le regard du narrateur sur les Grangier"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traduction italienne intégrale de l’extrait du Diable au corps sur la rencontre à la gare, analyse de la concordance des temps et des jugements du narrateur, guidage et schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Raymond Radiguet, *Le Diable au corps*, 1923. Le sujet de l’ENS de Lyon demande de traduire l’extrait entier en italien. La note de l’énoncé précise le nom et l’adjectif italiens relatifs à l’albinisme."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
