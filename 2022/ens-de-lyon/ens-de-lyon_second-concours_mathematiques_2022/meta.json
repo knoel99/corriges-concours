@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2022
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/2c2022_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/22_2cc_rap_eMath.pdf",
+    "sha256_sujet": "96cb0fd01f6fede50bd7b7d4c6d500a5044464258aaecc8f37b37e70f6b813b1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/fourier-supports.svg",
+      "question": "I.4c",
+      "legende": "Un signal soutenu sur 4, 8, 12 et ses quatre fréquences non nulles réalisent le produit minimal 12."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et contrôle des 25 questions et sous-questions dans les deux éditions, d’après les pages 2 à 5 du sujet et le rapport. Vérification des différences de normes, du signe dans la transformée, des conditions d’égalité et des constantes de concentration. Figure originale sur les supports de Fourier.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
