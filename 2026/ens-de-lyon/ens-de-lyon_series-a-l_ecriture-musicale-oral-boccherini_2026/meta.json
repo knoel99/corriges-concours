@@ -1,0 +1,64 @@
+{
+  "slug": "ens-de-lyon_series-a-l_ecriture-musicale-oral-boccherini_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Écriture musicale (oral Boccherini)",
+    "annee": 2026
+  },
+  "intitule": "Minuetto, Affettuoso, d’après Luigi Boccherini",
+  "gabarit": "probleme",
+  "questions": 1,
+  "redaction": "Rédaction intégrale des éditions brute et guidée. Lecture directe des pages 16–17, transcription du violon I, composition du violon II, de l’alto et du violoncelle jusqu’à la mesure 16, gravure et vérification des rythmes de chaque pupitre.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=16",
+    "sujet_sha256": "2a7f074fb3a471a12b3b5eca1afb7535f44fdcba7416cca4f561ee10babf394e",
+    "nature": "Fascicule officiel des épreuves orales d’arts, pages 16 et 17. La première portée est donnée. La réalisation des trois autres pupitres est originale."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Réalisation pour quatuor",
+      "fichier": "figures/systeme-1.svg",
+      "legende": "Levée et mesures 1 à 4 de la réalisation à quatre parties."
+    },
+    {
+      "numero": 2,
+      "question": "Réalisation pour quatuor",
+      "fichier": "figures/systeme-2.svg",
+      "legende": "Mesures 5 à 8 de la réalisation à quatre parties."
+    },
+    {
+      "numero": 3,
+      "question": "Réalisation pour quatuor",
+      "fichier": "figures/systeme-3.svg",
+      "legende": "Mesures 9 à 12 de la réalisation à quatre parties."
+    },
+    {
+      "numero": 4,
+      "question": "Réalisation pour quatuor",
+      "fichier": "figures/systeme-4.svg",
+      "legende": "Mesures 13 à 16 de la réalisation à quatre parties."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée. Lecture directe des pages 16–17, transcription du violon I, composition du violon II, de l’alto et du violoncelle jusqu’à la mesure 16, gravure et vérification des rythmes de chaque pupitre.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
