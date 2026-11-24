@@ -1,0 +1,168 @@
+{
+  "slug": "ens_pc_chimie-b_2025",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2025
+  },
+  "questions": 85,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2025/PC_CHIMIE_ENS_1_2025.enonce.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/11/Rapport_jury_Ecrit_Chimie_B_U_PC_2025.pdf",
+    "sujet_sha256": "d89c8c9757805cddca41af312ceaf782b56bddce036ece951e639f7c5adb1554",
+    "rapport_sha256": "33c0e89c0744acedc766e9ffe2ddee9cb959184e913859b60044e2ade27781fb"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      37,
+      39,
+      40,
+      41,
+      42,
+      46,
+      51,
+      52,
+      53,
+      58,
+      61,
+      62
+    ],
+    "questions_partiellement_traitees": [
+      43,
+      64
+    ],
+    "questions_non_traitees": [
+      36,
+      38,
+      44,
+      45,
+      47,
+      48,
+      49,
+      50,
+      54,
+      55,
+      56,
+      57,
+      59,
+      60,
+      63,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "precision": "47 questions sont intégralement traitées (1–35, 37, 39–42, 46, 51–53, 58, 61 et 62). Les questions 43 et 64 sont limitées aux lois cinétiques génériques et aux conventions électriques. Les questions 36, 38, 44–45 et 47–50 sur l’étude de l’enzyme, ainsi que 54–57, 59–60, 63 et 65–85 sur la synthèse du composé cytotoxique, ne sont pas traitées."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/frontieres-fmn.svg",
+      "legende": "La bande colorée est l’intervalle de potentiel où la semiquinone peut prédominer. Les courbes sont calculées avec les données thermodynamiques du sujet.",
+      "question": "Q9"
+    },
+    {
+      "fichier": "figures/fluorescence-saturation.svg",
+      "legende": "Reconstitution théorique de la titration. Les droites de forte concentration deviennent parallèles une fois la protéine saturée.",
+      "question": "Q16"
+    },
+    {
+      "fichier": "figures/trois-affinites.svg",
+      "legende": "Les deux échelles de la figure 4 ont été ramenées à une seule échelle. La pente de la troisième série est environ vingt fois plus petite que celle de la première.",
+      "question": "Q21"
+    },
+    {
+      "fichier": "figures/plateau-absorbance.svg",
+      "legende": "À concentration totale de flavine fixée, la demi-variation apparaît quand la concentration en protéine vaut C°/Kf.",
+      "question": "Q25"
+    },
+    {
+      "fichier": "figures/signes-orbitale-b.svg",
+      "legende": "Les signes relatifs de trois coefficients de la HO expliquent les deux variations de distance observées lors de l’oxydation.",
+      "question": "Q28"
+    },
+    {
+      "fichier": "figures/hydroperoxyde-4a.svg",
+      "legende": "Formule topologique du 4a-hydroperoxyde. Le nouveau lien C–O est indiqué en vert, les deux oxygènes du groupe ajouté sont représentés.",
+      "question": "Q31"
+    },
+    {
+      "fichier": "figures/trois-attributions-cip.svg",
+      "legende": "Configurations des trois centres sans hydrogène. Les listes de priorités sont détaillées dans la solution.",
+      "question": "Q52"
+    },
+    {
+      "fichier": "figures/courant-electrolyse.svg",
+      "legende": "Principe d’une cellule électrolytique. Le courant dans l’électrolyte a pour sens celui de l’anode vers la cathode.",
+      "question": "Q64"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions dans le périmètre indiqué. Lecture du fac-similé du sujet et du rapport de la banque PC inter-ENS 2025, avec vérification des tracés potentiel–pH, des axes de fluorescence, des orbitales, de la stéréochimie et des signaux RMN. Huit figures originales."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "x-ens_psi_maths-psi_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2022
+  },
+  "questions": 32,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Sujet_Ecrit_PSI_Math%C3%A9matiques.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2022_Rapport_Ecrit_PSI_Maths.pdf",
+    "sha256_sujet": "bd6258cc2580cba543693e5ea7c102c93226fe5af125335624625b93b19589e0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/quatre-projections.svg",
+      "question": "4iv",
+      "legende": "Dans le plan, la flèche relie un point extérieur à son projeté. La projection sur le carré peut atteindre un sommet."
+    },
+    {
+      "fichier": "figures/extremaux-non-fermes.svg",
+      "question": "11",
+      "legende": "Les deux sommets et le cercle horizontal, à l’exception de l’origine, sont extrémaux. L’origine est au milieu du segment vertical."
+    },
+    {
+      "fichier": "figures/extremaux-support.svg",
+      "question": "26",
+      "legende": "Pour la contrainte x₁ + x₂ = 1, le segment orange minimise la norme ℓ¹. Ses deux extrémités ont chacune une seule coordonnée non nulle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 32 réponses et des indications de résolution. Vérification des preuves de séparation en dimension affine, de fermeture du cône engendré, de dualité et de parcimonie sur l’énoncé original et le rapport. Trois figures originales dont les quatre projections sur une même planche.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

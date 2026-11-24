@@ -1,0 +1,88 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2013",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2013
+  },
+  "questions": 27,
+  "redaction": "Les huit questions de mécanique et les dix-neuf de propagation sont traitées, avec quatre tracés et la distinction capacité-admittance de la figure finale.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/06/13_2c_suj_physique.pdf",
+    "nature": "Sujet du second concours universitaire de l’ENS de Lyon.",
+    "sujet_sha256": "65b560bf76df23d0fa597f9a387a5b10cc09c1ed0645f56f55ce19a01beb6d3e"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.5",
+      "fichier": "figures/parabole.svg",
+      "legende": "Trajectoire pour a = 2. La particule arrive au sommet par le bas puis monte pour V₀ positif."
+    },
+    {
+      "numero": 2,
+      "question": "II.7",
+      "fichier": "figures/bande-et-vitesses.svg",
+      "legende": "Ligne discrète. À gauche, dispersion et tangente à l’origine. À droite, les deux vitesses en fonction de la pulsation."
+    },
+    {
+      "numero": 3,
+      "question": "II.11",
+      "fichier": "figures/chaine-mecanique.svg",
+      "legende": "Les déplacements sont longitudinaux. Le ressort s’allonge lorsque le déplacement de son extrémité droite excède celui de son extrémité gauche."
+    },
+    {
+      "numero": 4,
+      "question": "II.17",
+      "fichier": "figures/ligne-modifiee.svg",
+      "legende": "Ligne continue à condensateur série. La vitesse de phase diverge à droite du seuil, la vitesse de groupe y tend vers zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Les huit questions de mécanique et les dix-neuf de propagation sont traitées, avec quatre tracés et la distinction capacité-admittance de la figure finale.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17",
+      "II.18",
+      "II.19"
+    ]
+  }
+}

@@ -1,17 +1,17 @@
 {
-  "date": "2026-11-24T21:52:52+01:00",
-  "revision": "35f9bba3383d3d8681d30e9d5d4969b006a2baa3",
+  "date": "2026-11-24T22:13:03+01:00",
+  "revision": "c2867e49f8d12116fab2236aa912ae768b18d48b",
   "fichier": "2026-11-24.tsv",
   "perimetres": [
     {
       "nom": "Écrits, toutes sessions",
-      "recenses": 795,
-      "paires": 398,
-      "complets": 347,
-      "production": 334,
-      "partiels": 24,
-      "partiels_production": 23,
-      "schemas": 1080
+      "recenses": 803,
+      "paires": 406,
+      "complets": 373,
+      "production": 359,
+      "partiels": 25,
+      "partiels_production": 24,
+      "schemas": 1201
     },
     {
       "nom": "Écrits 2026",
@@ -25,17 +25,17 @@
     },
     {
       "nom": "Oraux et fascicules",
-      "recenses": 193,
-      "paires": 55,
-      "complets": 54,
-      "production": 49,
+      "recenses": 199,
+      "paires": 62,
+      "complets": 61,
+      "production": 57,
       "partiels": 1,
       "partiels_production": 1,
-      "schemas": 89
+      "schemas": 108
     },
     {
       "nom": "Projets pratiques, sujets au choix",
-      "recenses": 3,
+      "recenses": 29,
       "paires": 3,
       "complets": 3,
       "production": 3,
@@ -47,7 +47,7 @@
   "matieres": [
     {
       "nom": "Arts",
-      "recenses": 14,
+      "recenses": 22,
       "paires": 10,
       "complets": 9,
       "production": 9,
@@ -68,29 +68,29 @@
     {
       "nom": "Biologie et géologie",
       "recenses": 28,
-      "paires": 16,
-      "complets": 14,
-      "production": 13,
+      "paires": 17,
+      "complets": 15,
+      "production": 14,
       "partiels": 2,
       "partiels_production": 2,
-      "schemas": 71
+      "schemas": 77
     },
     {
       "nom": "Chimie",
       "recenses": 49,
-      "paires": 12,
-      "complets": 1,
-      "production": 1,
-      "partiels": 11,
-      "partiels_production": 10,
-      "schemas": 4
+      "paires": 14,
+      "complets": 2,
+      "production": 2,
+      "partiels": 12,
+      "partiels_production": 11,
+      "schemas": 13
     },
     {
       "nom": "Chimie + Biologie et géologie",
       "recenses": 24,
       "paires": 9,
       "complets": 3,
-      "production": 2,
+      "production": 3,
       "partiels": 6,
       "partiels_production": 6,
       "schemas": 21
@@ -109,11 +109,11 @@
       "nom": "Français et philosophie",
       "recenses": 47,
       "paires": 36,
-      "complets": 25,
-      "production": 19,
+      "complets": 30,
+      "production": 30,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 50
+      "schemas": 60
     },
     {
       "nom": "Français et philosophie + Arts",
@@ -129,21 +129,21 @@
       "nom": "Histoire et géographie",
       "recenses": 27,
       "paires": 15,
-      "complets": 10,
-      "production": 10,
+      "complets": 15,
+      "production": 12,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 19
+      "schemas": 37
     },
     {
       "nom": "Informatique",
       "recenses": 45,
-      "paires": 16,
-      "complets": 16,
-      "production": 16,
+      "paires": 18,
+      "complets": 18,
+      "production": 18,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 72
+      "schemas": 78
     },
     {
       "nom": "Informatique + Sciences de l'ingénieur",
@@ -168,12 +168,12 @@
     {
       "nom": "Mathématiques",
       "recenses": 143,
-      "paires": 69,
-      "complets": 60,
-      "production": 58,
+      "paires": 70,
+      "complets": 70,
+      "production": 63,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 223
+      "schemas": 286
     },
     {
       "nom": "Mathématiques + Informatique + Sciences de l'ingénieur",
@@ -188,12 +188,12 @@
     {
       "nom": "Physique",
       "recenses": 113,
-      "paires": 40,
-      "complets": 39,
-      "production": 38,
+      "paires": 41,
+      "complets": 40,
+      "production": 39,
       "partiels": 1,
       "partiels_production": 1,
-      "schemas": 230
+      "schemas": 234
     },
     {
       "nom": "Physique + Biologie et géologie",
@@ -228,12 +228,12 @@
     {
       "nom": "Sciences de l'ingénieur",
       "recenses": 30,
-      "paires": 17,
-      "complets": 17,
-      "production": 15,
+      "paires": 18,
+      "complets": 18,
+      "production": 16,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 113
+      "schemas": 118
     },
     {
       "nom": "Économie, droit et sciences sociales",
@@ -271,11 +271,11 @@
       "nom": "BEL",
       "recenses": 169,
       "paires": 99,
-      "complets": 86,
-      "production": 86,
+      "complets": 91,
+      "production": 88,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 151
+      "schemas": 169
     },
     {
       "nom": "Banque PT",
@@ -310,16 +310,16 @@
     {
       "nom": "ENS",
       "recenses": 77,
-      "paires": 28,
-      "complets": 20,
-      "production": 20,
-      "partiels": 5,
+      "paires": 29,
+      "complets": 23,
+      "production": 22,
+      "partiels": 6,
       "partiels_production": 5,
-      "schemas": 127
+      "schemas": 148
     },
     {
       "nom": "ENS Paris-Saclay",
-      "recenses": 70,
+      "recenses": 78,
       "paires": 12,
       "complets": 12,
       "production": 12,
@@ -340,12 +340,12 @@
     {
       "nom": "ENS de Lyon",
       "recenses": 155,
-      "paires": 51,
-      "complets": 37,
-      "production": 34,
+      "paires": 55,
+      "complets": 41,
+      "production": 39,
       "partiels": 14,
-      "partiels_production": 13,
-      "schemas": 192
+      "partiels_production": 14,
+      "schemas": 214
     },
     {
       "nom": "ENS-PSL",
@@ -360,22 +360,22 @@
     {
       "nom": "X",
       "recenses": 74,
-      "paires": 48,
-      "complets": 43,
-      "production": 37,
+      "paires": 49,
+      "complets": 49,
+      "production": 48,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 138
+      "schemas": 152
     },
     {
       "nom": "X-ENS",
       "recenses": 144,
-      "paires": 54,
-      "complets": 47,
-      "production": 43,
+      "paires": 56,
+      "complets": 55,
+      "production": 48,
       "partiels": 1,
       "partiels_production": 1,
-      "schemas": 241
+      "schemas": 287
     }
   ]
 }

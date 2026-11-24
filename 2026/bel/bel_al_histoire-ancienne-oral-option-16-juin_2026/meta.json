@@ -1,0 +1,100 @@
+{
+  "slug": "bel_al_histoire-ancienne-oral-option-16-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire ancienne (oral option 16 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_option_histoire_ancienne_opt_lcl_sujets_16_juin_2026.pdf",
+    "sujet_sha256": "dac172769a7378875f1a34ea4963fbd3d337f089a2782c209e5645882082855a",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_histoire_ancienne.pdf",
+    "rapport_sha256": "132746f73cbe727f57c1e8387fea7e371b0af68e47d5a28b890723ab35df4f69",
+    "documents": []
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecon-1.svg",
+      "question": "1",
+      "legende": "Habiter une même cité à des titres différents"
+    },
+    {
+      "fichier": "figures/lecon-2.svg",
+      "question": "2",
+      "legende": "Trois transmissions après mars 44"
+    },
+    {
+      "fichier": "figures/lecon-3.svg",
+      "question": "3",
+      "legende": "L’orateur, le lieu et la seconde audience"
+    },
+    {
+      "fichier": "figures/lecon-4.svg",
+      "question": "4",
+      "legende": "Fortune, travail et citoyenneté"
+    },
+    {
+      "fichier": "figures/lecon-5.svg",
+      "question": "5",
+      "legende": "Du chargement à l’approvisionnement civique"
+    },
+    {
+      "fichier": "figures/lecon-6.svg",
+      "question": "6",
+      "legende": "Trois échelles du pouvoir athénien"
+    },
+    {
+      "fichier": "figures/lecon-7.svg",
+      "question": "7",
+      "legende": "Tâche, durée et sortie de la dictature"
+    },
+    {
+      "fichier": "figures/lecon-8.svg",
+      "question": "8",
+      "legende": "Lire la ville par ses usages"
+    },
+    {
+      "fichier": "figures/lecon-9.svg",
+      "question": "9",
+      "legende": "Des rives dominées à une capitale approvisionnée"
+    },
+    {
+      "fichier": "figures/lecon-10.svg",
+      "question": "10",
+      "legende": "Trois publics réunis à Delphes"
+    },
+    {
+      "fichier": "figures/lecon-11.svg",
+      "question": "11",
+      "legende": "Trois géographies successives du nom gaulois"
+    },
+    {
+      "fichier": "figures/lecon-12.svg",
+      "question": "12",
+      "legende": "Trois façons de lire le Pirée"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux versions des 12 sujets distincts du 16 juin sur le fascicule original, avec sources anciennes, entretien, figures et lecture du rapport d’histoire ancienne."
+    }
+  ]
+}

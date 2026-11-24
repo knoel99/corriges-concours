@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -23,6 +25,10 @@ Une conjecture porte sur ce qu’on croit arrivé. Une condition de réussite re
 
 > [!JURY]
 > Le jury relève deux confusions. Grammaticalement, « dois » est ici à l’indicatif présent. La portée d’une injonction dépend des circonstances et de la relation entre les personnes. Le rapport invite aussi à tirer une conséquence philosophique de la deuxième personne du singulier. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf) · [Rapport du jury 2025](https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf)
+
+![Trois énoncés devant le même registre](figures/attribuer-une-obligation.svg)
+
+**Reformuler sans changer le fait.** Le registre doit être rectifié dans les trois cas. Dire « il faut » laisse l’auteur du geste ouvert, dire « tu dois » attribue une responsabilité et dire « je dois » la reprend en son nom. Vérifier qui a qualité pour attribuer cette responsabilité évite de prendre le simple fait d’interpeller pour une preuve de légitimité.
 
 ## Construire la difficulté
 
@@ -46,13 +52,15 @@ Un supérieur et la personne qu’il dirige peuvent prononcer l’un comme l’a
 
 ## Introduction
 
-« Tu dois. » La phrase peut être prononcée à voix basse, sans que personne ait donné d’ordre. Celui qui hésite à honorer une promesse interroge un ami. Deux mots lui reviennent en réponse. Ils lui indiquent que la décision lui appartient encore et que pourtant il ne peut pas tenir toutes les issues pour également bonnes. L’étrangeté de la formule tient à cette conjonction. Le verbe est à l’indicatif. Il semble constater quelque chose au sujet de celui que l’on tutoie. Mais il s’adresse à lui précisément parce que son action demeure à faire. Les guillemets invitent à entendre cette parole, le pronom à se demander qui parle à qui, l’absence de complément à chercher d’où viendrait la détermination de ce qui est dû. À quelles conditions un autre peut-il me dire « tu dois » en me laissant la responsabilité d’agir ? Il faut examiner ce que la formule prétend constater, puis le titre auquel quelqu’un peut l’adresser à autrui, pour comprendre enfin ce qui demeure de cette adresse lorsque je me parle à moi-même.
+« Tu dois » : la phrase peut être prononcée à voix basse, sans que personne ait donné d’ordre. Celui qui hésite à honorer une promesse interroge un ami. Deux mots lui reviennent en réponse. Ils lui indiquent que la décision lui appartient encore et que pourtant il ne peut pas tenir toutes les issues pour également bonnes. L’étrangeté de la formule tient à cette conjonction. Le verbe est à l’indicatif. Il semble constater quelque chose au sujet de celui que l’on tutoie. Mais il s’adresse à lui précisément parce que son action demeure à faire. Les guillemets invitent à entendre cette parole, le pronom à se demander qui parle à qui, l’absence de complément à chercher d’où viendrait la détermination de ce qui est dû. À quelles conditions un autre peut-il me dire « tu dois » en me laissant la responsabilité d’agir ? Il faut examiner ce que la formule prétend constater, puis le titre auquel quelqu’un peut l’adresser à autrui, pour comprendre enfin ce qui demeure de cette adresse lorsque je me parle à moi-même.
 
 ## I. Adresser une nécessité à quelqu’un qui peut s’y soustraire
 
 Supposons qu’un voyageur doive prendre le premier train pour arriver avant midi. La phrase qu’on lui adresse condense un raisonnement. L’heure du rendez-vous et celle du départ sont déjà fixées. Il peut contester le choix de la fin ou découvrir un autre moyen. Supposons maintenant qu’un ami lui ait confié un objet et réclame sa restitution. Il ne suffit plus que le voyageur change de projet pour que cesse d’avoir un sens la parole « tu dois ». L’obligation engage sa relation à quelqu’un qui a compté sur lui. Le verbe est le même dans les deux cas. Il reste donc à déterminer de quelle nécessité il s’agit avant d’accorder à la formule l’autorité d’un jugement moral.
 
 Une autre différence apparaît si l’on compare « tu dois être arrivé » et « tu dois revenir ». Dans le premier cas, à partir de l’heure qu’il est, je forme une conjecture sur un événement peut-être accompli. Dans le second, je peux te rappeler une obligation que tu es précisément sur le point de négliger. Si le fait de ne pas revenir suffisait à réfuter mon jugement, ce jugement n’aurait pas eu la force d’un reproche. L’obligation survit à sa violation. Inversement, si je te ramène par force, ton mouvement ne montrera pas que tu as reconnu une obligation. La personne du verbe importe parce que j’attends de toi une action dont tu puisses répondre.
+
+Essayons de remplacer « tu dois » par « il faut ». Devant un registre erroné, « il faut rectifier » peut énoncer une raison d’agir que chacun approuvera, tout en laissant ouverte la question de l’agent. « Tu dois rectifier » demande à cet interlocuteur de répondre du rapport qu’il entretient à l’erreur. Le témoin et l’auteur de l’inscription peuvent reconnaître le même tort sans être tenus au même geste. Inversement, celui qui dit « je dois » assume déjà en son nom une exigence qu’un autre peut encore discuter. L’énoncé entre guillemets isole ainsi un moment fragile, celui où une nécessité prétend atteindre quelqu’un avant qu’il l’ait reprise à la première personne.
 
 Le silence qui suit la formule ne la rend donc pas immédiatement absolue. Entre deux personnes qui savent qu’une restitution est en jeu, ces seuls mots sont tout à fait déterminés. Prononcés devant quelqu’un qui ignore ce que l’on veut de lui, ils peuvent au contraire obtenir son acquiescement avant même que le contenu de l’exigence ait été révélé. Cette seconde possibilité rend suspecte l’assurance de celui qui parle. En présentant une nécessité à l’indicatif, ne risque-t-il pas de faire passer sa propre volonté pour une raison que son interlocuteur posséderait déjà ?
 

@@ -18,6 +18,11 @@
       "fichier": "figures/deux-voix-aux-comices.svg",
       "question": "Partie III",
       "legende": "Le lecteur entend ensemble deux discours que les personnages tiennent séparément"
+    },
+    {
+      "fichier": "figures/preuve-dans-la-fiction.svg",
+      "question": "Analyse du sujet",
+      "legende": "À quel niveau les ruines font-elles preuve ?"
     }
   ],
   "gabarit": "dissertation",
@@ -25,9 +30,12 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_francais.pdf",
     "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bel_rapport_ecrit_composition_francaise.pdf",
     "lettres_portugaises": "https://fr.wikisource.org/wiki/Lettres_portugaises_traduites_en_fran%C3%A7ois/Texte_entier",
-    "flaubert": "https://fr.wikisource.org/wiki/Madame_Bovary/Deuxi%C3%A8me_partie/08"
+    "flaubert": "https://fr.wikisource.org/wiki/Madame_Bovary/Deuxi%C3%A8me_partie/08",
+    "sujet_sha256": "2ce122351cc55b555a603303708ab33501110fcfcfc9ca0622b2b05675ccc8e3",
+    "rapport_jury_sha256": "e345af15d95cc3c27d81d52f5200a9f117cb25e962858e4bb90f3500ea46e066",
+    "bernardin": "https://fr.wikisource.org/wiki/Paul_et_Virginie/Texte_entier"
   },
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -80,6 +88,19 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation du texte de Butor et du rapport aux Comices chez Flaubert et à l’ouverture de Paul et Virginie. Rectification de l’attribution d’un imparfait, du régime de témoignage chez Duras et du statut des ruines ; schéma de lecture.",
+      "tour": 3
     }
   ]
 }

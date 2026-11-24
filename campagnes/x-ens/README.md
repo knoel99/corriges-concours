@@ -32,6 +32,8 @@ Certaines épreuves sont attestées par l’ENS alors que le texte ou les pièce
 
 Pour les fascicules B/L de Lyon, le relevé distingue les planches intégrales de mathématiques, les intitulés d’exposés, les références de presse et les cartes ou dossiers à retrouver. Les options écrites 2025 présentes aussi dans le recueil de Lyon conservent leur fiche commune. [Pages des sujets et rapports B/L de Lyon](sections-b-l-lyon.tsv)
 
+À l’oral d’espagnol A/L de l’ENS-PSL, le tronc commun est répertorié en un fascicule de 27 références. Pour l’option, le rapport donne séparément cinq passages, deux de Calderón et trois de Saer. Il mentionne successivement quatre et cinq candidats, puis détaille cinq notes et cinq extraits. [Références des oraux d’espagnol](oraux-espagnol-ulm-2026.tsv)
+
 Le concours normalien étudiant Lettres de l’ENS-PSL comprend des épreuves propres aux départements. Les sujets identifiés dans les rapports indiquent leur page et les documents restant à retrouver. [Sujets et rapports du CNEL 2026](cnel-lettres-2026.tsv)
 
 En design à Paris-Saclay, le techno-design est un écrit d’admissibilité. L’épreuve pratique d’admission offre trois sujets au choix. Chaque option dispose de son original et de sa propre fiche. [Article 10 du règlement](https://www.enseignementsup-recherche.gouv.fr/fr/bo/2025/Hebdo32/MENS2523783A) · [Sources des projets de design et des oraux de sélection internationale](design-et-selection-internationale-2026.tsv)
@@ -43,3 +45,5 @@ L’ENS Paris-Saclay utilise les admissibilités HEC Paris, ESSEC ou ESCP pour s
 Les annales orales A/L de Lyon donnent des listes par série, des sujets accompagnés de planches et une sélection de textes espagnols. Le tableau identifie les quinze fascicules, les cinq épreuves de cinéma, les trois sujets d’histoire des arts et les deux exercices distincts d’écriture musicale. [Fascicules et pages des sujets de Lyon](oraux-lettres-lyon-2026.tsv)
 
 À Ulm, 70 fascicules d’oraux A/L de 2026 ont été contrôlés sur les originaux. Un même fichier lié depuis plusieurs dates ne compte qu’une fois. Le registre signale les désaccords entre dates ou commissions et les passages dont seules les références ont été publiées. [Sources des oraux A/L à Ulm](oraux-lettres-ulm-2026.tsv)
+
+Pour le concours design de Cachan puis de Paris-Saclay, le registre distingue les écrits d’admissibilité, les projets pratiques et les sujets connus par le seul rapport du jury. En 2015, l’expression graphique, chromatique ou volumique est un écrit. En 2020, les candidats choisissaient leur champ d’intervention à partir du même dossier sur la fontaine à l’Albien. [Sources du design de 2015 à 2025](design-archives.tsv)

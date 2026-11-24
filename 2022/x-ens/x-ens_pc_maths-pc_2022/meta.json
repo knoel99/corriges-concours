@@ -1,0 +1,41 @@
+{
+  "slug": "x-ens_pc_maths-pc_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2022
+  },
+  "questions": 36,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20PC%20SUJET%20ECRIT%20DE%20MATHEMATIQUES%20(XEULS).pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20PC%20RAPPORT%20ECRIT%20MATHEMATIQUES%20(XEULS).pdf",
+    "sha256_sujet": "1f8988a604a87d58bb50d2374bda200408d3ff00e8a2e256af856479b8614449"
+  },
+  "figures": [
+    {
+      "fichier": "figures/point-fixe-croissance.svg",
+      "question": "I.6",
+      "legende": "Cette application croissante présente un saut et deux points fixes. Le plus grand, 0,78, est la borne supérieure des x qui vérifient x ≤ g(x)."
+    },
+    {
+      "fichier": "figures/secante-et-racine.svg",
+      "question": "IV.1",
+      "legende": "Pour f(x) = x² − 2 et les abscisses 0,6 et 2, la sécante coupe l’axe en x₂, à gauche de la racine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 36 réponses et des indications de chaque question à partir du sujet original et des quatre pages de rapport. Contrôle des changements de norme, du prolongement en classe C², du cas de la tangente, des exposants de Fibonacci et de la condition d’existence de l’itéré.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
