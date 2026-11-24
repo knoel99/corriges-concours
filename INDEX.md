@@ -331,6 +331,9 @@
 | 2024 | Centrale-Supélec | PSI | Sciences industrielles | [md](2024/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2024/brut.md) | [md](2024/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2024/guide.md) |
 | 2025 | Centrale-Supélec | PSI | Sciences industrielles | [md](2025/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2025/brut.md) | [md](2025/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2025/guide.md) |
 | 2026 | Centrale-Supélec | PSI | Sciences industrielles | [md](2026/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_psi_sciences-industrielles_2026/guide.md) |
+| 2026 | Centrale-Supélec | MP-MPI-PC-PSI-TSI | Allemand | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi-tsi_allemand_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi-tsi_allemand_2026/guide.md) |
+| 2026 | Centrale-Supélec | MP-MPI-PC-PSI-TSI | Arabe | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi-tsi_arabe_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi-tsi_arabe_2026/guide.md) |
+| 2026 | Centrale-Supélec | MP-MPI-PC-PSI-TSI | Espagnol | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi-tsi_espagnol_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_mp-mpi-pc-psi-tsi_espagnol_2026/guide.md) |
 | 2026 | Centrale-Supélec | TSI | Anglais | [md](2026/centrale-supelec/centrale-supelec_tsi_anglais_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_anglais_2026/guide.md) |
 | 2026 | Centrale-Supélec | TSI | Maths 1 | [md](2026/centrale-supelec/centrale-supelec_tsi_maths-1_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_maths-1_2026/guide.md) |
 | 2026 | Centrale-Supélec | TSI | Maths 2 | [md](2026/centrale-supelec/centrale-supelec_tsi_maths-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_maths-2_2026/guide.md) |
