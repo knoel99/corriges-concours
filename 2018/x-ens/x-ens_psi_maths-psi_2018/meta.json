@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_psi_maths-psi_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2018
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2018_psi_sujet_math.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "7b17aed8aa72488dd263a72d10f57ca51e7901b543cce79d32edb196d68fa340"
+  },
+  "figures": [
+    {
+      "fichier": "figures/barriere-parabolique.svg",
+      "question": "24",
+      "legende": "La parabole de charge unité est exacte aux nœuds. Son maximum contrôle l’inverse discret et transforme aussi une borne de courbure en borne uniforme pour l’erreur continue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les questions des cinq parties. Vérification des signes du principe du maximum, des valeurs propres du laplacien discret, des constantes de stabilité et des estimations de Bernstein. Schéma de la barrière parabolique.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
