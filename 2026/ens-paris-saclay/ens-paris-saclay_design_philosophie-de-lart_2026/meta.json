@@ -1,0 +1,62 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2026
+  },
+  "intitule": "Qu’est-ce qu’un design écologique ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_SUJET_1A_Design_Philosophie_de_l_art.pdf",
+    "sujet_sha256": "492de053accc54f8f41f1bf42d49a4ac17a89dcbd1d65cc3ab62ca0b3fd8d78c",
+    "references": [
+      "https://www.fairphone.com/resources/pdf/Fairphone5_LCA_Report_2024.pdf",
+      "https://observatoire-reemploi-reutilisation.ademe.fr/actualites/etude-consigne-emballages"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/objet-usages-service.svg",
+      "question": "Composition",
+      "legende": "La promesse écologique à trois échelles"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture de l’argument, distinction entre objet réemployable et réemploi effectif, vérification des références à l’ADEME et à l’analyse du Fairphone 5."
+    }
+  ]
+}
