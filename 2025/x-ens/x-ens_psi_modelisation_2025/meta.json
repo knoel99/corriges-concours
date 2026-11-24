@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_modelisation_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2025,
+    "code_sujet": "XUSR",
+    "date": "2025-04-18"
+  },
+  "questions": 53,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "figures": [
+    {
+      "fichier": "figures/q19-profil-initial.svg",
+      "question": "Q19",
+      "legende": "Demi-période du profil initial sur les trois mètres du stockage."
+    },
+    {
+      "fichier": "figures/q22-mode-cosinus.svg",
+      "question": "Q22",
+      "legende": "Décroissance du premier mode pour le profil initial en cosinus."
+    },
+    {
+      "fichier": "figures/q26-modes-echelons.svg",
+      "question": "Q26",
+      "legende": "Cinq premiers modes de la thermocline idéale. La troisième amplitude est négative."
+    },
+    {
+      "fichier": "figures/q43-bode-derive.svg",
+      "question": "Q43",
+      "legende": "Bode corrigé par le dérivateur. La lecture graphique du croisement donne environ 175 rad/s."
+    },
+    {
+      "fichier": "figures/q45-flux-et-derivee.svg",
+      "question": "Q45",
+      "legende": "Flux triangulaire et dérivée par morceaux. La pente est exprimée en unités de flux maximal par largeur d’aimant."
+    }
+  ],
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Sujets/2025_PSI_Ep8_Modelisation_14022025_NB.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Rapports/2025_PSI_Rapport_Mod%C3%A9lisation_Ecrit.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction intégrale des 53 réponses des deux éditions, des indications et de cinq figures d’après les 17 pages du sujet XUSR et les dix pages du rapport du jury. Vérification du schéma explicite, des séries de Fourier, de la fonction de transfert, du réglage par Bode et de la somme triphasée."
+    }
+  ]
+}
