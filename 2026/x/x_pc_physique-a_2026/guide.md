@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** *Techniques modernes de spectrométrie de masse de molécules complexes.* Le sujet suit les deux étapes d'une mesure de masse moléculaire. On produit d'abord des ions multichargés par électronébulisation (ESI). On mesure ensuite leur rapport $m/z$ par résonance cyclotronique ionique à transformée de Fourier (FT-ICR). L'épreuve dure 4 heures, **sans calculatrice**, et compte **43 questions**. L'énoncé prévient que la plupart se traitent de façon concise, et c'est vrai : beaucoup tiennent en trois lignes.
@@ -122,7 +128,7 @@ $$\frac{Q^2}{32\pi^2\varepsilon_0R^4}>\frac\gamma R ,$$
 
 soit
 
-$$\boxed{Q>Q_{\lim}=4\pi\sqrt{2\varepsilon_0\gamma R^3}}$$
+$$\boxed{|Q|>Q_{\lim}=4\pi\sqrt{2\varepsilon_0\gamma R^3}}$$
 
 Une goutte qui s'évapore à charge constante voit $Q_{\lim}\propto R^{3/2}$ diminuer : elle finit par se fragmenter, et le processus recommence sur les gouttes filles.
 
@@ -433,15 +439,15 @@ $$\boxed{Z_0=\frac{F}{m\omega\left(\omega_0-\omega-\frac i\tau\right)}}$$
 
 $$|Z_0|=\frac{F}{m\omega\sqrt{(\omega_0-\omega)^2+\tau^{-2}}} .$$
 
-Si $\omega_0\tau\gg1$, le dénominateur est minimal en $\omega\simeq\omega_0$, où $|Z_0|\simeq F\tau/(m\omega_0)$. Cette valeur est grande devant la valeur hors résonance, $\sim F/(m\omega_0^2)$ : il y a résonance.
+Pour $\omega_0\tau\gg1$, le facteur $1/\omega$ varie peu sur l’intervalle $|\omega-\omega_0|\lesssim1/\tau$. L’amplitude y est approximativement lorentzienne après élévation au carré. Elle atteint environ $F\tau/(m\omega_0)$ et descend d’un facteur $\sqrt 2$ pour $|\omega-\omega_0|\simeq1/\tau$. La largeur totale à mi-puissance est ainsi $\Delta\omega\simeq2/\tau$. Avec cette convention, le facteur de qualité vaut $\omega_{\rm pic}/\Delta\omega\simeq\omega_0\tau/2$.
 
-$|Z_0|$ chute d'un facteur $\sqrt2$ pour $|\omega-\omega_0|=1/\tau$, donc
+Le maximum local exact se calcule en minimisant $\omega^2[(\omega_0-\omega)^2+\tau^{-2}]$ près de $\omega_0$. En excluant $\omega=0$, l’équation stationnaire est $2\omega^2-3\omega_0\omega+\omega_0^2+\tau^{-2}=0$. Sa racine haute donne
 
-$$\boxed{\Delta\omega\sim\frac1\tau}$$
+$$\omega_{\rm pic}=\frac{3\omega_0+\sqrt{\omega_0^2-8/\tau^2}}4\simeq\omega_0-\frac{1}{\omega_0\tau^2}.$$
 
-Le facteur de qualité vaut $\omega_0\tau$.
+Le décalage du maximum est donc bien plus petit que la largeur du pic quand le frottement est faible.
 
-![Figure 2 — Amplitude |Z0(ω)| calculée pour ω0τ = 20 et ω0τ = 5 : pic en ω0 de hauteur Fτ/(mω0) et de largeur 2/τ à |Z0|max/√2](figures/q20-resonance-amplitude.svg)
+![Figure 2 — Amplitude du déplacement au voisinage de la résonance. Les points repèrent les maxima locaux exacts et le segment horizontal mesure la largeur à mi-puissance du pic le plus étroit.](figures/q20-resonance-amplitude.svg)
 
 > [!JURY]
 > Le rapport 2026 note que la condition $\omega\simeq\omega_0$ a été facilement obtenue, mais pas la largeur en $1/\tau$. Les copies efficaces exhibent la résonance en deux lignes. Les autres s'enlisent dans de longs calculs, surtout quand l'hypothèse $\tau$ grand n'est utilisée qu'à la fin : posez $\omega_0\tau\gg1$ dès le départ.
@@ -735,7 +741,7 @@ Le décalage relatif de la résonance, $\frac{\omega_p^2}{2\omega_0^2}\ll1$, est
 
 $$\boxed{\omega_-\simeq\frac{q\alpha/m}{qB/m}=\frac\alpha B}$$
 
-Cette pulsation est **indépendante de $m/q$**.
+Cette pulsation est indépendante de $m/q$ au premier ordre. En gardant un terme de plus dans le développement de Q35, on trouve $\omega_-=\alpha/B+\alpha^2 m/(qB^3)+\cdots$. La dépendance en masse réapparaît donc au terme suivant.
 
 ![Figure 5 — Mouvement dans le plan avec piégeage : boucles rapides à ω+ dont le centre tourne lentement à ω−, dans le même sens horaire (rapport ω+/ω− exagéré)](figures/q36-cyclotron-magnetron.svg)
 
@@ -817,7 +823,7 @@ $$\boxed{\Delta q=-\frac{2q\,y_0}{d}}$$
 
 $\Delta q$ suit l'ordonnée de l'ion. Celui-ci tourne à $\omega_+\simeq\omega_0$, donc $\Delta q(t)$ oscille à cette pulsation.
 
-Avec $q_1+q_2=-q$ (influence totale), le courant dans le fil de liaison vaut $i=\frac{\mathrm dq_2}{\mathrm dt}=-\frac qd\dot y_0$. **L'analyse en fréquence de ce courant donne $\omega_0$, donc $m/z$**, sans capter l'ion.
+Avec $q_1+q_2=-q$ (influence totale), le courant dans le fil de liaison vaut $i=\frac{\mathrm dq_2}{\mathrm dt}=-\frac qd\dot y_0$. Le pic rapide du courant est à $\omega_+$. En piégeage faible, $\omega_+\simeq\omega_0$ donne $m/z\simeq eB/\omega_+$. Si les deux modes sont résolus, Q35 donne exactement $\omega_0=\omega_++\omega_-$ dans ce modèle.
 
 ![Figure 6 — Réciprocité : configuration réelle (ion q en y0, électrodes 1 et 2 reliées au potentiel nul, excitation selon x) et configuration auxiliaire (électrodes à ∓V/2, potentiel affine, V′0 = Vy0/d)](figures/q39-q41-electrodes-detection.svg)
 
@@ -864,6 +870,8 @@ f_{\max}&\simeq\frac{7\times10^8}{2\pi\times900}\\
 Le critère de Shannon donne
 
 $$\boxed{f_{e,\min}=2f_{\max}\simeq2{,}5\times10^5\ \mathrm{Hz}}$$
+
+Cette estimation prend le premier grand pic annoté, vers $m/z=898$. Pour acquérir aussi tout le bord gauche du graphe, qui commence vers $830$, le même calcul conduit à $2f_{\max}\simeq2{,}7\times10^5\,\mathrm{Hz}$.
 
 > [!PIEGE]
 > Les erreurs classiques consistent à prendre le plus grand $m/z$, qui correspond à la fréquence la plus basse, à confondre $\omega$ et $f$ (facteur $2\pi$), ou à oublier le facteur 2 de Shannon.

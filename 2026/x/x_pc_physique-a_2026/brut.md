@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 *Techniques modernes de spectrométrie de masse de molécules complexes.* Durée 4 h, calculatrice interdite. 43 questions, deux parties indépendantes.
 
 ## I — Ionisation par électronébuliseur
@@ -61,7 +67,7 @@ $$\begin{aligned}
 \iff Q^2&>32\pi^2\varepsilon_0\gamma R^3 .
 \end{aligned}$$
 
-$$\boxed{Q>Q_{\lim}=4\pi\sqrt{2\,\varepsilon_0\gamma R^3}}$$
+$$\boxed{|Q|>Q_{\lim}=4\pi\sqrt{2\,\varepsilon_0\gamma R^3}}$$
 
 Comme $Q_{\lim}\propto R^{3/2}$, une goutte qui s'évapore à charge constante finit par devenir instable.
 
@@ -254,17 +260,15 @@ Homogénéité : $F/m$ est une accélération, divisée par le carré d'une puls
 
 $$|Z_0|=\frac{F}{m\omega\sqrt{(\omega_0-\omega)^2+1/\tau^2}} .$$
 
-Supposons le frottement faible, au sens $\omega_0\tau\gg1$. Le facteur $1/\sqrt{(\omega_0-\omega)^2+1/\tau^2}$ présente alors un pic aigu en $\omega=\omega_0$, de hauteur $\tau$ et de largeur $\sim1/\tau\ll\omega_0$. Sur cet intervalle, le facteur $1/\omega$ varie peu.
+Pour $\omega_0\tau\gg1$, le facteur $1/\omega$ varie peu sur l’intervalle $|\omega-\omega_0|\lesssim1/\tau$. L’amplitude y est approximativement lorentzienne après élévation au carré. Elle atteint environ $F\tau/(m\omega_0)$ et descend d’un facteur $\sqrt 2$ pour $|\omega-\omega_0|\simeq1/\tau$. La largeur totale à mi-puissance est ainsi $\Delta\omega\simeq2/\tau$. Avec cette convention, le facteur de qualité vaut $\omega_{\rm pic}/\Delta\omega\simeq\omega_0\tau/2$.
 
-$|Z_0|$ présente donc une résonance en $\omega\simeq\omega_0$, où il atteint $F\tau/(m\omega_0)$. Cette valeur est grande devant la valeur hors résonance, $\sim F/(m\omega_0^2)$.
+Le maximum local exact se calcule en minimisant $\omega^2[(\omega_0-\omega)^2+\tau^{-2}]$ près de $\omega_0$. En excluant $\omega=0$, l’équation stationnaire est $2\omega^2-3\omega_0\omega+\omega_0^2+\tau^{-2}=0$. Sa racine haute donne
 
-$|Z_0|$ vaut $|Z_0|_{\max}/\sqrt2$ pour $|\omega-\omega_0|=1/\tau$. On en déduit
+$$\omega_{\rm pic}=\frac{3\omega_0+\sqrt{\omega_0^2-8/\tau^2}}4\simeq\omega_0-\frac{1}{\omega_0\tau^2}.$$
 
-$$\boxed{\Delta\omega\sim\frac1\tau}$$
+Le décalage du maximum est donc bien plus petit que la largeur du pic quand le frottement est faible.
 
-La largeur à mi-hauteur de $|Z_0|^2$ vaut exactement $2/\tau$. Le facteur de qualité est $\omega_0\tau$.
-
-![Figure 2 — Amplitude |Z0(ω)| calculée pour ω0τ = 20 et ω0τ = 5 : pic en ω0 de hauteur Fτ/(mω0) et de largeur 2/τ à |Z0|max/√2](figures/q20-resonance-amplitude.svg)
+![Figure 2 — Amplitude du déplacement au voisinage de la résonance. Les points repèrent les maxima locaux exacts et le segment horizontal mesure la largeur à mi-puissance du pic le plus étroit.](figures/q20-resonance-amplitude.svg)
 
 #### Question 21
 
@@ -276,7 +280,7 @@ Deux espèces ne sont séparées que si leurs pulsations diffèrent d'au moins $
 
 $$\frac{\delta m}{m}\sim\frac{1}{\omega_0\tau}=\frac{m}{zeB\tau}.$$
 
-Pour un $\tau$ fixé par le gaz résiduel, **elle est d'autant plus petite que la charge et le champ magnétique sont grands**. En effet, $\omega_0$ croît comme $zB$ alors que la largeur du pic reste de l'ordre de $1/\tau$. Autrement dit, le facteur de qualité $\omega_0\tau$ augmente.
+Pour un $\tau$ fixé par le gaz résiduel, **elle est d'autant plus petite que la charge et le champ magnétique sont grands**. En effet, $\omega_0$ croît comme $zB$ alors que la largeur du pic reste de l'ordre de $1/\tau$. Autrement dit, le facteur de qualité augmente.
 
 #### Question 22
 
@@ -449,7 +453,7 @@ La seconde solution décrit un mouvement de rotation dans le plan à la pulsatio
 
 $$\boxed{\omega_-\simeq\frac{\alpha}{B}}$$
 
-Cette pulsation est **indépendante de $m/q$**.
+Cette pulsation est indépendante de $m/q$ au premier ordre. En gardant un terme de plus dans le développement de Q35, on trouve $\omega_-=\alpha/B+\alpha^2 m/(qB^3)+\cdots$. La dépendance en masse réapparaît donc au terme suivant.
 
 ![Figure 5 — Mouvement dans le plan avec piégeage : boucles rapides à ω+ dont le centre tourne lentement à ω−, dans le même sens horaire (rapport ω+/ω− exagéré)](figures/q36-cyclotron-magnetron.svg)
 
@@ -511,7 +515,7 @@ i&=\frac{\mathrm dq_2}{\mathrm dt}=\frac12\frac{\mathrm d\Delta q}{\mathrm dt}\\
 &=-\frac qd\,\dot y_0 .
 \end{aligned}$$
 
-Ce courant est sinusoïdal à la pulsation $\omega_0$. **Mesurer sa fréquence donne $\omega_0$, donc $m/z=eB/\omega_0$**, sans capter l'ion (la détection est non destructive).
+Le pic rapide du courant est à $\omega_+$. En piégeage faible, $\omega_+\simeq\omega_0$ donne $m/z\simeq eB/\omega_+$. Si les deux modes sont résolus, Q35 donne exactement $\omega_0=\omega_++\omega_-$ dans ce modèle.
 
 ![Figure 6 — Réciprocité : configuration réelle (ion q en y0, électrodes 1 et 2 reliées au potentiel nul, excitation selon x) et configuration auxiliaire (électrodes à ∓V/2, potentiel affine, V′0 = Vy0/d)](figures/q39-q41-electrodes-detection.svg)
 
@@ -540,6 +544,8 @@ Le critère de Shannon-Nyquist impose une fréquence d'échantillonnage supérie
 $$\boxed{f_{e,\min}\simeq2{,}5\times10^5\ \mathrm{Hz}}$$
 
 (environ 250 kHz). La correction $\omega_+<\omega_0$ est négligeable.
+
+Cette estimation prend le premier grand pic annoté, vers $m/z=898$. Pour acquérir aussi tout le bord gauche du graphe, qui commence vers $830$, le même calcul conduit à $2f_{\max}\simeq2{,}7\times10^5\,\mathrm{Hz}$.
 
 #### Question 43
 
