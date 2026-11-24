@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_russe-version-et-theme-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Russe (version et thème Ulm)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_opt_lve_vers-theme_261109.pdf#page=14"
+  },
+  "figures": [
+    {
+      "fichier": "figures/table.svg",
+      "legende": "Comment gagner sa place à table ?",
+      "question": "I. Version"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Version française intégrale du journal de Zalizniak et thème intégral d’Indiana de Sand, guide sur les coutumes de table, les niveaux de discours et le rapport entre éloquence et passion."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Andreï Anatolievitch Zalizniak, Прогулки по Европе, 2018.",
+      "George Sand, Indiana, 1832."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}
