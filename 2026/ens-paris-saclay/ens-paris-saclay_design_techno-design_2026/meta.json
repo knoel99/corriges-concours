@@ -1,0 +1,92 @@
+{
+  "slug": "ens-paris-saclay_design_techno-design_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Techno-design",
+    "annee": 2026
+  },
+  "intitule": "Analyse et exploitation créative en design de systèmes et procédés technologiques",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_Sujet_1A_Design_Techno_design.pdf",
+    "sujet_sha256": "9661e934040b15282335713c9a21855a03ef54734f075a14bababd6be3f41bd9",
+    "references": [
+      "https://www.serpentinegalleries.org/whats-on/serpentine-gallery-pavilion-2013-sou-fujimoto/",
+      "https://www.stageone.co.uk/project/serpentine-gallery-pavilion-2013/",
+      "https://muirmcneil.com/project/mtc/",
+      "https://oliviervanherpt.com/blue-and-white-porcelain/",
+      "https://simonepheulpin.com/bio/",
+      "https://azambourg.com/portfolio/lampes-bouclette-baguette/",
+      "https://studiodumbar.com/work/entropy",
+      "https://www.sfmoma.org/exhibition/otl-aicher/",
+      "https://www.albersfoundation.org/alberses/teaching/on-weaving"
+    ]
+  },
+  "couverture": {
+    "statut": "complet",
+    "precision": "Deux parties non numérotées. Les six réalisations du dossier sont analysées et croisées avec deux références disciplinaires. Quatre planches d’analyse et cinq planches d’esquisse explorent trois hypothèses de repérage et un protocole d’essai. Les neuf planches SVG sont conçues au format physique A3 paysage."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/01-maille-et-lettre.svg",
+      "question": "Analyse 1/9",
+      "legende": "Le treillis architectural et deux lettres d’étude montrent comment une même règle peut soutenir un corps ou guider le regard."
+    },
+    {
+      "fichier": "figures/02-depot-et-pli.svg",
+      "question": "Analyse 2/9",
+      "legende": "Les tracés opposent un cordon céramique déposé à des bandes de coton pliées puis maintenues."
+    },
+    {
+      "fichier": "figures/03-fibre-et-variations.svg",
+      "question": "Analyse 3/9",
+      "legende": "À gauche, la conduction de la lumière est dessinée en coupe de principe. À droite, trois essais originaux gardent un mot stable."
+    },
+    {
+      "fichier": "figures/04-deux-distances.svg",
+      "question": "Analyse 4/9",
+      "legende": "Dans le hall d’une médiathèque, le visiteur cherche la salle tandis que la personne qui prépare l’atelier doit pouvoir modifier le panneau."
+    },
+    {
+      "fichier": "figures/05-hall-et-seuil.svg",
+      "question": "Esquisse 5/9",
+      "legende": "Un plan et une élévation situent le panneau avant la bifurcation, puis à portée de la personne qui prépare l’atelier."
+    },
+    {
+      "fichier": "figures/06-hypothese-optique.svg",
+      "question": "Esquisse 6/9",
+      "legende": "Trois flèches originales sur la même grille font varier le diamètre apparent. Leur lecture à distance reste à éprouver."
+    },
+    {
+      "fichier": "figures/07-hypothese-relief.svg",
+      "question": "Esquisse 7/9",
+      "legende": "Le dessin éclaté et la coupe distinguent le cadre, la plaque à fentes, le pli textile et la clé de retenue."
+    },
+    {
+      "fichier": "figures/08-hypothese-ombre.svg",
+      "question": "Esquisse 8/9",
+      "legende": "Les trois coupes d’étude montrent comment l’éclairage peut déplacer ou atténuer les ombres sur la même série de plis."
+    },
+    {
+      "fichier": "figures/09-essais-et-arbitrages.svg",
+      "question": "Esquisse 9/9",
+      "legende": "Le protocole garde distinctes la lecture lointaine, l’exploration proche et la remise en état du panneau."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale de la copie, du guide et des neuf planches A3 originales. Lecture des huit pages du sujet officiel, examen visuel de toutes les reproductions et vérification des références choisies sur les sites des auteurs, constructeurs et institutions. Les essais proposés demeurent spéculatifs."
+    }
+  ]
+}
