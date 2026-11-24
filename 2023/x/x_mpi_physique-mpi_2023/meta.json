@@ -1,0 +1,98 @@
+{
+  "slug": "x_mpi_physique-mpi_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MPI",
+    "matiere": "Physique MPI",
+    "annee": 2023
+  },
+  "questions": 37,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MPI%20SUJET%20PHYSIQUE%20MPI%20(X).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MPI%20RAPPORT%20ECRIT%20PHYSIQUE%20(X).pdf",
+    "sujet_sha256": "fdd3850d432d38124af4d58c3bc6b47209b59020d81f25d04bc38869d71696ed",
+    "rapport_sha256": "ea3eb5175f67f638c2c3a4ebf86c73a3d078d3988112778fb1ef70df81509ee6"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 37 questions sont traitées. Quatre figures originales suivent les modes de vibration, la largeur d’absorption, la relation température–pression et l’intégration du tracé MODTRAN du sujet."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "13",
+      "fichier": "figures/vibrations-co2.svg",
+      "legende": "Déplacements instantanés schématiques des trois modes. L’étirement antisymétrique et la flexion peuvent produire un dipôle variable."
+    },
+    {
+      "numero": 2,
+      "question": "19",
+      "fichier": "figures/absorption-resonante.svg",
+      "legende": "Pouvoir absorbant du modèle visqueux. Augmenter l’amortissement élargit la résonance et abaisse son maximum."
+    },
+    {
+      "numero": 3,
+      "question": "30",
+      "fichier": "figures/temperature-et-pression.svg",
+      "legende": "Profil du modèle hydrostatique à gradient thermique constant. La température réduite varie comme la pression réduite à la puissance 0,16."
+    },
+    {
+      "numero": 4,
+      "question": "36",
+      "fichier": "figures/integration-du-spectre.svg",
+      "legende": "Spectre numérisé à partir du tracé vectoriel de la figure 1 du sujet, calcul MODTRAN pour une surface à 288 K. Les séparations verticales découpent les huit aires intégrées."
+    }
+  ],
+  "redaction": "Les 37 questions sont traitées. Quatre figures originales suivent les modes de vibration, la largeur d’absorption, la relation température–pression et l’intégration du tracé MODTRAN du sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37"
+    ]
+  }
+}
