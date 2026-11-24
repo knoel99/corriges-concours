@@ -1,0 +1,76 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-a-quoi-sert-leducation-oral_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — à quoi sert l’éducation (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Économie — à quoi sert l’éducation (oral)",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/eco-oraux-sil2022.pdf",
+    "sujet_sha256": "81e4c3711bc3ca3aea68e18099096b96348fc55febdccad8668ce7ef52d037ad",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2022.pdf",
+    "rapport_sha256": "1b9a6d63573a1182deabd81fbdd13d2eee886168f10ed913e6ff968074ceac73",
+    "references": [
+      "https://doi.org/10.1257/aer.91.4.795"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/ecoles-indonesiennes.svg",
+      "question": "Explication",
+      "legende": "Ce que mesure le programme scolaire indonésien"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire librement publié et identification de la portée de la feuille en 2022."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet individuel ou préparé, avec son schéma et ses références : Économie — à quoi sert l’éducation (oral)."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    }
+  ]
+}
