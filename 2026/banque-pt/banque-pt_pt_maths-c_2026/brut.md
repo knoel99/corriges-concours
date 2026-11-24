@@ -341,6 +341,8 @@ S_{2N-1}&=S_{2N}-u_{2N}\\
 
 $$\boxed{\sum_{n=2}^{+\infty}u_n=0}$$
 
+![Figure 2 — Les termes successifs s’annulent par paires. Aux indices impairs, la somme vaut déjà zéro. Aux indices pairs, le dernier terme reste positif et tend vers zéro.](figures/i7-sommes-paires-impaires.svg)
+
 ## Partie II
 
 Pour $n\ge1$ et $x>1$, avec $\ln x>0$ :
@@ -610,6 +612,8 @@ donc $\varphi(x,y)\ge\frac{s^2}{2}-\ln s$.
 La fonction $s\mapsto\frac{s^2}2-\ln s$ a pour dérivée $s-\frac1s$, négative sur $]0,1]$ et positive sur $[1,+\infty[$. Elle atteint donc son minimum $\frac12$ en $s=1$. Ainsi
 
 $$\varphi(x,y)\ge\frac12\quad\text{pour tout }(x,y)\in U.$$
+
+![Figure 3 — Niveaux de φ(x,y) = x² + y² − ln|x − y|. La diagonale sépare les deux composantes du domaine, chacune avec un minimum en (1/2, −1/2) ou (−1/2, 1/2).](figures/iii4-minima-phi.svg)
 
 ### Question 5
 

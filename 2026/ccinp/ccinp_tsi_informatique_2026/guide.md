@@ -6,7 +6,7 @@
 
 **Thème.** « Autour de jeux » : le sujet résout trois fois le problème des $n$ reines (placer $n$ reines sur une grille $n \times n$ sans qu'aucune n'en contrôle une autre), par des méthodes de coût très différent, puis propose un court exercice de bases de données sur un site de jeux en ligne.
 
-**Format.** 3 heures, calculatrice interdite, 27 questions. Les réponses se rédigent sur un Document Réponse (DR) qui contient les codes à trous des Q5, Q12, Q16, Q22 et Q23. Ce DR n'est pas reproduit ici : les fonctions correspondantes sont écrites en entier, avec les noms, paramètres et valeurs de retour imposés par l'énoncé. L'annexe 2 rappelle la syntaxe Python utile et les coûts des opérations élémentaires (dictionnaire en $O(1)$, `x in L` en $O(\texttt{len(L)})$).
+**Format.** 3 heures, calculatrice interdite, 27 questions. Les réponses se rédigent sur le document réponse, qui fixe les cadres des questions 5, 12, 16, 22 et 23. [Document réponse officiel](https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI5IN_DR.pdf). L'annexe 2 rappelle la syntaxe Python utile et les coûts des opérations élémentaires (dictionnaire en $O(1)$, `x in L` en $O(\texttt{len(L)})$).
 
 **Découpage.**
 
@@ -339,34 +339,28 @@ On tire des permutations au hasard jusqu'à en trouver une valide. La méthode e
 ### Question 12
 
 > [!INDICATION]
-> Selon la forme de l'import, l'appel s'écrit avec ou sans le nom du module devant `sample`.
-
-> [!INDICATION]
-> L'énoncé indique que, avec la méthode 2, on écrit directement `sample(L, len(L))`.
+> Associez le préfixe de chaque appel préimprimé au nom qu’il faut introduire dans le programme.
 
 #### Solution
 
-Méthode 1 : on importe le module, l'appel est préfixé.
+Les trois lignes d’importation, dans l’ordre du document réponse, correspondent aux trois formes d’appel déjà imprimées.
 
 ```python
-import random
-P = random.sample(L, len(L))
+import random as rd
+rd.sample(L, len(L))
 ```
-
-Méthode 2 : on importe la seule fonction, l'appel est direct. C'est celle utilisée dans la suite.
 
 ```python
 from random import sample
-P = sample(L, len(L))
+sample(L, len(L))
 ```
 
-Troisième forme au programme : `import random as rd`, puis `rd.sample(L, len(L))`.
+```python
+import random
+random.sample(L, len(L))
+```
 
-> [!PIEGE]
-> `from random import sample` suivi de `random.sample(...)` provoque une erreur : le nom `random` n'est alors pas défini. Inversement, après `import random`, un appel `sample(...)` sans préfixe échoue.
-
-> [!JURY]
-> Rapport 2026 : « Savoir importer correctement des modules Python est une compétence de base. » Cette question, qui aurait dû être très facile, a pourtant reçu un nombre assez important de réponses partiellement ou totalement fausses.
+Chaque appel produit une nouvelle liste tirée sans remise parmi les éléments de `L`.
 
 ### Question 13
 
@@ -465,41 +459,25 @@ Il n'y a ni oubli ni doublon : en retirant le 2 d'une permutation de $\{0, 1, 2\
 ### Question 16
 
 > [!INDICATION]
-> Le code de la Q15 fait passer de $\{0, 1\}$ à $\{0, 1, 2\}$. Comment passer de $\{0, \dots, v-1\}$ à $\{0, \dots, v\}$ ?
-
-> [!INDICATION]
-> Répétez ce passage pour $v$ allant de 2 à $n - 1$, en rangeant chaque nouvelle génération dans une liste auxiliaire.
+> Partez de la seule permutation de {0}. Gardez deux listes distinctes pour le tour courant et le tour suivant.
 
 #### Solution
 
+Le document réponse commence avec `L = [[0]]`. À chaque étape, `P` reçoit les permutations obtenues en insérant `v` dans les listes de l’étape précédente.
+
 ```python
 def permutations(n):
-    P = [[0, 1], [1, 0]]
-    for v in range(2, n):
-        Q = []
-        for l1 in P:
+    L = [[0]]
+    for v in range(1, n):
+        P = []
+        for l1 in L:
             for i in range(v + 1):
-                Q.append(insertion(v, l1, i))
-        P = Q
-    return P
+                P.append(insertion(v, l1, i))
+        L = P
+    return L
 ```
 
-Récurrence sur $v$ : avant le tour d'indice $v$, `P` contient sans répétition les $v!$ permutations de $\{0, \dots, v-1\}$ (vrai pour $v = 2$).
-
-Le tour construit toutes les insertions de $v$ à l'une des $v + 1$ positions. Comme en Q15, chaque permutation de $\{0, \dots, v\}$ est obtenue exactement une fois, d'où $(v+1)!$ listes.
-
-En sortie, `P` contient les $n!$ permutations de $\{0, \dots, n-1\}$. Pour $n = 2$, la boucle est vide.
-
-`permutations(3)` renvoie `[[2, 0, 1], [0, 2, 1], [0, 1, 2], [2, 1, 0], [1, 2, 0], [1, 0, 2]]`, les six listes attendues dans un autre ordre, ce que l'énoncé autorise. Coût $\Theta(n \cdot n!)$.
-
-> [!PIEGE]
-> Ajouter directement dans `P` pendant qu'on le parcourt : une boucle `for` visite aussi les éléments ajoutés en cours de route, la liste grossit sans fin et la boucle ne termine pas. D'où la liste auxiliaire `Q`.
-
-> [!METHODE]
-> Une version récursive est aussi recevable : `permutations(n)` appelle `permutations(n - 1)` et insère $n - 1$ à toutes les positions, avec un cas de base explicite.
-
-> [!JURY]
-> Rapport 2026 : question assez facile pour qui avait compris la Q15, et pourtant « Peu de bonnes réponses ont été observées. » Le code de la Q15 est exactement le corps de la boucle sur `v` : il suffit de le généraliser.
+Avant le tour d’indice $v$, `L` contient les $v!$ permutations de $\{0,\ldots,v-1\}$. Chaque permutation de $\{0,\ldots,v\}$ s’obtient une seule fois : enlever $v$ restitue la liste de départ et sa position d’insertion. Après le dernier tour, `L` contient donc les $n!$ permutations demandées. Par exemple, `permutations(2)` renvoie `[[1, 0], [0, 1]]`. L’ordre des listes est libre. La construction explicite demande $\Theta(n\,n!)$ opérations.
 
 ### Question 17
 
@@ -667,85 +645,58 @@ On parcourt en profondeur l'arbre des placements partiels (figure 7) en abandonn
 ### Question 22
 
 > [!INDICATION]
-> Un sommet du graphe est une configuration partielle ; ses successeurs s'obtiennent en plaçant une reine sur la ligne suivante, dans l'une des $n$ colonnes.
-
-> [!INDICATION]
-> Structure récursive : cas d'arrêt (configuration complète), boucle sur les colonnes, test de validité partielle, appel récursif, retour arrière.
-
-> [!INDICATION]
-> La liste courante peut servir de pile : quelle opération défait un `append` ? Quand doit-elle être exécutée ?
+> Testez d’abord le conflit dans le préfixe. Un appel qui échoue doit rendre la valeur sentinelle prévue par le cadre.
 
 #### Solution
 
-Le DR n'étant pas disponible, on adopte la signature `explore(L, n)`, où `L` est la configuration partielle courante.
+Le premier test du document réponse élimine les configurations partielles déjà incompatibles. Le second reconnaît une solution complète. Les trois cases à compléter contiennent successivement `-1`, `n` et `-1`.
 
 ```python
 def explore(L, n):
+    if not est_possible(L):
+        return -1
     if len(L) == n:
         return L
-    for j in range(n):
-        L.append(j)
-        if est_possible(L):
-            R = explore(L, n)
-            if R != -1:
-                return R
-        L.pop()
+    for i in range(n):
+        res = explore(L + [i], n)
+        if res != -1:
+            return res
     return -1
 
 def resout_graphe(n):
-    return explore([], n)
+    rep = explore([], n)
+    return rep
 ```
 
-**Correction.** Par récurrence sur $n - \texttt{len(L)}$ : si `L` est une configuration partielle valide, `explore(L, n)` renvoie une solution prolongeant `L` s'il en existe une, $-1$ sinon, et laisse `L` intacte en cas d'échec.
+Si le préfixe est invalide, toute configuration qui le prolonge contient le même conflit. Si le préfixe est valide et complet, il constitue une solution. Dans le dernier cas, chaque prolongement place sa prochaine reine dans l’une des colonnes explorées par la boucle. Par récurrence sur $n-\mathrm{len}(L)$, l’appel renvoie donc le premier prolongement gagnant ou $-1$ si tous échouent. Chaque appel reçoit une nouvelle liste et la profondeur est au plus $n$. On trouve `resout_graphe(4) = [1, 3, 0, 2]` et `resout_graphe(8) = [0, 4, 7, 5, 2, 6, 1, 3]`.
 
-- Si `len(L) == n`, `L` est une solution et elle est renvoyée.
-- Sinon, toute solution prolongeant `L` commence par `L + [j]` pour un certain $j$, et `L + [j]` est valide (un préfixe d'une configuration valide est valide) : l'élagage de la ligne `if est_possible(L)` ne supprime aucune solution. Si un appel réussit, la solution est remontée sans `pop` ; sinon chaque `append` est défait par le `pop`, et l'on renvoie $-1$.
-
-**Terminaison.** $n - \texttt{len(L)}$ décroît strictement à chaque appel : la profondeur de récursion est au plus $n$.
-
-On obtient `resout_graphe(4) = [1, 3, 0, 2]` et `resout_graphe(8) = [0, 4, 7, 5, 2, 6, 1, 3]`.
-
-![Figure 5 — Q22 : configurations partielles visitées par explore pour n = 4, colonnes rejetées par l'élagage, arrêt à la première solution](figures/q22-retour-sur-trace.svg)
-
-> [!PIEGE]
-> Placer le `pop` à l'intérieur du `if` : après un test d'élagage raté, la reine n'est pas retirée et la liste grossit indûment. Autre faute : tester avec `est_solution`, dont la condition (d) est fausse pour toute configuration partielle, si bien que le parcours ne dépasse jamais le niveau 1.
-
-> [!METHODE]
-> Schéma général du retour sur trace : choisir (`append`), vérifier, explorer récursivement, défaire (`pop`). L'efficacité vient de l'élagage, qui évite de visiter des sous-arbres entiers.
-
-> [!JURY]
-> Rapport 2026 : il s'agissait de compléter une fonction récursive de parcours du graphe des coups, et « En observant les codes des questions Q22 et Q23, on pouvait déjà déduire une partie des réponses. » Lisez les deux codes à trous ensemble : ce qui est imprimé dans l'un éclaire les pointillés de l'autre. Même remarque pour la Q23.
+![Figure 5 — Configurations partielles visitées pour n = 4, rejet des branches incompatibles et première solution.](figures/q22-retour-sur-trace.svg)
 
 ### Question 23
 
 > [!INDICATION]
-> Partez d'`explore` : qu'est-ce qui doit être remonté maintenant, à la place d'une solution ?
-
-> [!INDICATION]
-> Que renvoie le cas d'arrêt ? Faut-il encore interrompre la boucle après un succès ?
+> Quel nombre chaque feuille valide apporte-t-elle à la somme ? Que vaut cette contribution dès que deux reines se menacent ?
 
 #### Solution
 
+Une branche invalide contribue zéro solution. Une feuille valide contribue une solution. À un sommet intérieur, on additionne les nombres de solutions de **tous** les enfants.
+
 ```python
 def explore2(L, n):
+    if not est_possible(L):
+        return 0
     if len(L) == n:
         return 1
-    total = 0
-    for j in range(n):
-        L.append(j)
-        if est_possible(L):
-            total = total + explore2(L, n)
-        L.pop()
-    return total
+    nb_sol = 0
+    for i in range(n):
+        nb_sol = nb_sol + explore2(L + [i], n)
+    return nb_sol
 
 def compte(n):
     return explore2([], n)
 ```
 
-Par la même récurrence qu'en Q22, `explore2(L, n)` renvoie le nombre de solutions prolongeant la configuration partielle valide `L`, et laisse `L` inchangée : les prolongements se répartissent sans recouvrement selon la colonne $j$ de la reine suivante, ceux dont le préfixe `L + [j]` est invalide sont en nombre nul, les autres sont comptés par l'appel récursif. On obtient `compte(4) = 2`, `compte(5) = 10`, `compte(8) = 92`, en accord avec la Q17.
-
-> [!PIEGE]
-> Garder un `return` dans la boucle (on s'arrête à la première solution), ou mal indenter le `return total` (seule la première colonne est explorée).
+Les prolongements obtenus pour deux colonnes différentes sont disjoints. Cette partition justifie la somme par récurrence sur le nombre de lignes à remplir. On obtient `compte(4) = 2`, `compte(5) = 10` et `compte(8) = 92`.
 
 ## Partie II — Base de données d'un serveur de jeu en ligne
 
@@ -801,13 +752,13 @@ Le résultat comporte une ligne par achat de ce client.
 #### Solution
 
 ```sql
-SELECT Clients.nom, Clients.email, SUM(Factures.montant) AS total
+SELECT Clients.nom, Clients.email, COALESCE(SUM(Factures.montant), 0) AS total
 FROM Clients
-JOIN Factures ON Clients.id_client = Factures.id_client
+LEFT JOIN Factures ON Clients.id_client = Factures.id_client
 GROUP BY Clients.id_client, Clients.nom, Clients.email;
 ```
 
-Chaque groupe rassemble les factures d'un même client et `SUM` en additionne les montants. On regroupe sur la clé primaire `id_client` ; `nom` et `email`, projetés sans agrégation, figurent aussi dans le `GROUP BY`. La jointure interne ne fait apparaître que les clients ayant au moins un achat.
+Chaque groupe rassemble les factures d'un même client et `SUM` en additionne les montants. On regroupe sur la clé primaire `id_client` ; `nom` et `email`, projetés sans agrégation, figurent aussi dans le `GROUP BY`. La jointure externe garde aussi le client sans facture. Pour lui, `SUM` donne `NULL` et `COALESCE` inscrit un total de zéro.
 
 > [!PIEGE]
 > Regrouper sur le seul `nom` : deux homonymes verraient leurs dépenses additionnées.
@@ -825,11 +776,11 @@ Chaque groupe rassemble les factures d'un même client et `SUM` en additionne le
 ```sql
 SELECT Jeux.nom_jeu, MAX(Records.score) AS meilleur_score
 FROM Jeux
-JOIN Records ON Jeux.id_jeu = Records.id_jeu
+LEFT JOIN Records ON Jeux.id_jeu = Records.id_jeu
 GROUP BY Jeux.id_jeu, Jeux.nom_jeu;
 ```
 
-Chaque groupe rassemble les records d'un même jeu, tous joueurs confondus, et `MAX` en extrait le meilleur score. On obtient une ligne par jeu ayant au moins un record.
+Chaque groupe rassemble les records d'un même jeu, tous joueurs confondus, et `MAX` en extrait le meilleur score. Chaque jeu apparaît, avec `NULL` pour le meilleur score lorsqu’aucun record n’a encore été enregistré.
 
 > [!PIEGE]
 > Oublier le `GROUP BY` : on obtient une seule ligne, le meilleur score tous jeux confondus. Projeter en plus `Clients.nom` à côté de `MAX(score)` ne donne pas le nom du détenteur du record ; il faudrait une requête imbriquée, que la question ne demande pas.

@@ -746,16 +746,16 @@ et de même pour $y$. **Les solutions réelles $(x,y)$ de (9) sont bornées.** E
 
 $$X(\tau)=c_+e^{r\tau}V_++c_-e^{-r\tau}V_- .$$
 
-Dès que $c_+\neq0$, c'est-à-dire pour toute condition initiale hors de la droite $\operatorname{Vect}(V_-)$, $\|X(\tau)\|\to+\infty$ exponentiellement. **Les solutions ne sont pas bornées : l'amplitude du roulis croît exponentiellement, c'est la résonance paramétrique.** Le robot finit par dépasser l'angle de chavirement.
+Dès que $c_+\neq0$, c'est-à-dire pour toute condition initiale hors de la droite $\operatorname{Vect}(V_-)$, $\|X(\tau)\|\to+\infty$ exponentiellement. **Les solutions ne sont pas bornées : l'amplitude du roulis croît exponentiellement, c'est la résonance paramétrique.** La croissance sort du domaine des petits angles. Elle indique un risque de chavirement dont le modèle linéarisé ne calcule pas le seuil.
 
-Dans le cas limite $|u|=|v|$, avec $M\neq0$, un calcul direct donne $M^2=(u^2-v^2)I_2=0$. Alors $\tau\mapsto(I_2+\tau M)X(0)$ vérifie (10) et la condition initiale : par unicité de la solution du problème de Cauchy, c'est la solution, qui croît linéairement. Ce cas est lui aussi instable.
+À la frontière $|u|=|v|$, on a $M^2=(u^2-v^2)I_2=0$, donc $X(\tau)=X(0)+\tau MX(0)$. Si $M\neq0$, les données initiales dans $\ker M$ donnent des solutions constantes et les autres une croissance linéaire. L’existence de ces dernières rend l’équilibre instable. Si $M=0$ ($\delta=0$ et $\Omega=\omega$), toutes les enveloppes sont constantes : l’oscillateur homogène est stable.
 
-**Q52.** D'après Q50 et Q51, le robot est stable si et seulement si $|\Omega-\omega|>\frac{\omega|\delta|}4$ :
+**Q52.** Pour une modulation non nulle ($\delta\ne0$), Q50 et Q51 donnent la stabilité de toutes les solutions si et seulement si $|\Omega-\omega|>\frac{\omega|\delta|}4$ :
 
 $$\boxed{\Omega\in\Big]0\,;\,\omega\Big(1-\frac{|\delta|}4\Big)\Big[\ \cup\ \Big]\omega\Big(1+\frac{|\delta|}4\Big)\,;\,+\infty\Big[,\quad\text{avec }\omega=\sqrt{\frac g\ell}}$$
 
 Ce résultat vaut au voisinage de $\omega$, dans le cadre $\Omega-\omega=O(\delta)$ de l'étude. Il existe une **bande d'instabilité** $\big]\omega(1-\frac{|\delta|}4),\omega(1+\frac{|\delta|}4)\big[$ autour de $\omega$.
 
-**Le robot NATRIX ne peut donc pas être utilisé passivement en toutes situations de navigation.** Une houle dont la pulsation tombe dans cette bande excite une résonance paramétrique qui fait croître le roulis jusqu'au chavirement. Cette bande ne disparaît pas quand $\delta$ diminue : elle se rétrécit seulement. Il faut donc soit éviter ces états de mer, soit recourir à la stabilisation active du roulis par les flotteurs motorisés (partie I.3).
+**Le robot NATRIX ne peut donc pas être utilisé passivement en toutes situations de navigation.** Une houle dont la pulsation tombe dans cette bande excite une résonance paramétrique et crée un risque de chavirement. La largeur de la bande de croissance exponentielle vaut $\omega|\delta|/2$ et tend vers zéro avec $\delta$. Il faut donc soit éviter ces états de mer, soit recourir à la stabilisation active du roulis par les flotteurs motorisés (partie I.3).
 
 ![Figure 6 — Domaine d'instabilité |Ω − ω| < ω|δ|/4 au voisinage de Ω = ω](figures/q52-bande-instabilite.svg)

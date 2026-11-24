@@ -247,6 +247,8 @@ $$\boxed{\begin{aligned}
 &=\tfrac13
 \end{aligned}}$$
 
+![Figure 2 — Loi conjointe multipliée par 12. Les marges donnent les lois de X et Y et les trois cases foncées totalisent 4/12 pour X = Y.](figures/b6-loi-conjointe.svg)
+
 ## Partie C : Des variables aléatoires dans une matrice
 
 ### 1. (a)
@@ -499,6 +501,8 @@ $$\overline{K_N}=\frac{21\,357}{100\,000}=0{,}21357.$$
 - Pour $\varepsilon=10^{-3}$ : $\frac{1}{4N\varepsilon^2}=2{,}5$, et le minorant $1-2{,}5=-1{,}5$ est négatif. Une probabilité est toujours positive : **l'inégalité ne donne aucune information.**
 
 À titre de contrôle, la valeur calculée en 6(b) est $I\approx0{,}21171$ ; elle appartient bien au premier intervalle.
+
+![Figure 3 — Sur les 100 000 tirages du sujet, 21 357 coïncidences donnent la fréquence 0,21357. L’intervalle de rayon 0,01 contient la probabilité calculée par la série.](figures/c7f-intervalle-frequence.svg)
 
 ## Partie D : Un deuxième couple de variables aléatoires
 

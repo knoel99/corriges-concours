@@ -1,0 +1,37 @@
+{
+  "slug": "x_fui-ff-1_francais_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Français",
+    "annee": 2023
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lumiere-et-instruction.svg",
+      "question": "A2b",
+      "legende": "Comment se construit l’image de la lumière."
+    },
+    {
+      "fichier": "figures/lire-et-enqueter.svg",
+      "question": "B",
+      "legende": "Ce que fait le roman, ce que complète le document."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20DE%20FRANCAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante sur le sujet officiel : thèse, questions et sous-questions, références littéraires et argument de l’essai vérifiés."
+  }
+}
