@@ -720,6 +720,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2021 | X-ENS | PSI | Modélisation | [md](2021/x-ens/x-ens_psi_modelisation_2021/brut.md) | [md](2021/x-ens/x-ens_psi_modelisation_2021/guide.md) |
 | 2022 | X-ENS | PSI | Modélisation | [md](2022/x-ens/x-ens_psi_modelisation_2022/brut.md) | [md](2022/x-ens/x-ens_psi_modelisation_2022/guide.md) |
 | 2023 | X-ENS | PSI | Modélisation | [md](2023/x-ens/x-ens_psi_modelisation_2023/brut.md) | [md](2023/x-ens/x-ens_psi_modelisation_2023/guide.md) |
 | 2024 | X-ENS | PSI | Modélisation | [md](2024/x-ens/x-ens_psi_modelisation_2024/brut.md) | [md](2024/x-ens/x-ens_psi_modelisation_2024/guide.md) |
