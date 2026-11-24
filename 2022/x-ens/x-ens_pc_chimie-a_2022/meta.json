@@ -1,0 +1,175 @@
+{
+  "slug": "x-ens_pc_chimie-a_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2022
+  },
+  "questions": 64,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20PC%20SUJET%20ECRIT%20DE%20CHIMIE%20A%20(XEULS).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20PC%20RAPPORT%20ECRIT%20CHIMIE%20A%20(XEULS).pdf",
+    "sujet_sha256": "5dd5046199060ff845dfc49592bfe672246634f475b94c5b0be6ada75e7167ae",
+    "rapport_sha256": "ae432c65c4ccb20bcf8533eefe002d164ab06a8f0a0b4b547b34e90d17718846"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 64 questions sont traitées. La différence de descripteur en Q3, les deux comptages en Q5, le caractère approché des lectures spectrales et la distinction entre induction chirale et réduction en Q50 sont explicités."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/centres-quinuclidine.svg",
+      "legende": "Correspondance entre les quatre centres du nom et les numéros de la figure 4. Le doublet du N de tête de pont est immobilisé par la cage.",
+      "question": "Q3"
+    },
+    {
+      "fichier": "figures/six-conformeres.svg",
+      "legende": "Attribution des dessins et séparation énergétique des familles 1 à 3 dans le vide.",
+      "question": "Q11"
+    },
+    {
+      "fichier": "figures/newman-des-alcaloides.svg",
+      "legende": "Le carbone avant C12 porte C10, H et OH en vert. Le carbone arrière C14 porte N15, C17 et H en bleu.",
+      "question": "Q13"
+    },
+    {
+      "fichier": "figures/trois-formes.svg",
+      "legende": "Structures des trois formes dominantes de la quinine ; la première déprotonation libère le N de la quinoline.",
+      "question": "Q20"
+    },
+    {
+      "fichier": "figures/flux-excites.svg",
+      "legende": "Bilan des flux qui alimentent et dépeuplent S₁. Les voies autres que la fluorescence sont regroupées.",
+      "question": "Q25"
+    },
+    {
+      "fichier": "figures/decrue-fluorescence.svg",
+      "legende": "Lecture de la pente du déclin logarithmique, environ −0,051 par nanoseconde.",
+      "question": "Q28"
+    },
+    {
+      "fichier": "figures/dosage-tonic.svg",
+      "legende": "Interpolation du signal de la boisson diluée. La concentration de la boisson se déduit en multipliant par cent.",
+      "question": "Q33"
+    },
+    {
+      "fichier": "figures/droite-riboflavine.svg",
+      "legende": "Deux lectures sur la série mesurée à 307 K déterminent la stœchiométrie et un ordre de grandeur de Kf.",
+      "question": "Q36"
+    },
+    {
+      "fichier": "figures/deux-bras.svg",
+      "legende": "De l’amine dialkylée aux deux aldéhydes. En C le dernier sommet carboné est le CH₂OH terminal.",
+      "question": "Q48"
+    },
+    {
+      "fichier": "figures/deux-aldols.svg",
+      "legende": "Les aldols partagent la configuration du carbone porteur du formyle. Après réduction et protection du bras, l’oxydation réunit les deux voies en G.",
+      "question": "Q50"
+    },
+    {
+      "fichier": "figures/olefination-peterson.svg",
+      "legende": "Isomères E et Z de l’ester exocyclique, puis amine cis après réduction et hydrogénolyse.",
+      "question": "Q53"
+    },
+    {
+      "fichier": "figures/couplage-vinylique.svg",
+      "legende": "Deux H opposés donnent le couplage trans caractéristique du produit majoritaire K.",
+      "question": "Q57"
+    },
+    {
+      "fichier": "figures/fermeture-du-pont.svg",
+      "legende": "L’azote attaque le carbone proximal avec inversion. L’oxygène reste lié au carbone distal portant Ar.",
+      "question": "Q59"
+    },
+    {
+      "fichier": "figures/deux-alcools.svg",
+      "legende": "Destinées du bras primaire et du carbinol quinolinique lors de la protection sélective et de la méthylénation.",
+      "question": "Q60"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions à partir des 22 pages du sujet et du rapport de chimie A PC 2022. Vérification des structures, des six conformères, des projections de Newman, des annexes et des quatre séquences de synthèse. Calculs du dosage de la quinine, de l’inhibition par la riboflavine et du potentiel redox. Quatorze figures originales."
+    }
+  ]
+}
