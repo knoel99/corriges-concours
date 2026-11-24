@@ -1,0 +1,45 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-previsions-economiques_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — prévisions économiques",
+    "annee": 2026
+  },
+  "intitule": "À quoi servent les prévisions économiques ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf#page=2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf",
+    "page_sujet": 2,
+    "sujet_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150",
+    "references": [
+      "https://www.atlantafed.org/research-and-data/data/gdpnow",
+      "https://www.philadelphiafed.org/surveys-and-data/real-time-data-research/real-time-data-set-for-macroeconomists",
+      "https://www.ecb.europa.eu/stats/ecb_surveys/survey_of_professional_forecasters/html/index.en.html",
+      "https://www.bankofengland.co.uk/independent-evaluation-office/forecasting-for-monetary-policy-making-and-communication-at-the-bank-of-england-a-review"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/quantile-et-cout.svg",
+      "question": "Composition",
+      "legende": "Exemple illustratif, demande uniforme entre 0 et 100. Une unité manquante coûte trois fois plus qu’une place excédentaire. Le coût espéré est minimal à 75."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction de la dissertation et de son guide à partir du sujet individuel écrit du candidat 3 reproduit page 2 du rapport du jury. Vérification des références académiques et institutionnelles, des raisonnements et de la figure originale sur le thème prévisions économiques."
+    }
+  ]
+}

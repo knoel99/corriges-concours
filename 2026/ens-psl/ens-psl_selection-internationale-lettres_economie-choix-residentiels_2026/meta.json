@@ -1,0 +1,45 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-choix-residentiels_2026",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — choix résidentiels",
+    "annee": 2026
+  },
+  "intitule": "Choix résidentiels et inégalités sociales et économiques.",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf#page=2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2026.pdf",
+    "page_sujet": 2,
+    "sujet_sha256": "de2de7badfe0c93897c67d74c736111ab7182145ccedc81aad6b505ae000b150",
+    "references": [
+      "https://www.insee.fr/fr/statistiques/6680439",
+      "https://doi.org/10.1086/522381",
+      "https://www.nber.org/papers/w21156",
+      "https://doi.org/10.1257/aer.20200407"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/accompagnement-et-mobilite.svg",
+      "question": "Composition",
+      "legende": "Essai de Bergman et al. (2024) auprès de familles bénéficiaires d’un bon de logement. Les pourcentages mesurent le changement d’adresse vers les secteurs visés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction de la dissertation et de son guide à partir du sujet individuel écrit du candidat 1 reproduit page 2 du rapport du jury. Vérification des références académiques et institutionnelles, des raisonnements et de la figure originale sur le thème choix résidentiels."
+    }
+  ]
+}
