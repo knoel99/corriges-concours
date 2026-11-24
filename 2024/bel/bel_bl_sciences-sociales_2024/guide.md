@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -54,6 +56,10 @@ Une autre entrée consiste à demander à quelles conditions les ressources d’
 
 ![Figure 1 — Position du revenu moyen de chaque groupe avant et après prise en compte du solde des aides familiales. La référence 1 est la moyenne de tous les ménages pour la définition du revenu considérée. Calcul d’après le document 7.](figures/doc7-indices-entraide.svg)
 
+![Comparer deux écarts entre classes d’âge. France métropolitaine, enquête Budget de famille 2000–2001, document 7.](figures/ecarts-ages-avant-apres.svg)
+
+Le calcul se lit verticalement à chaque étape. Avant entraide, 1,26 moins 0,44 donne 0,82. Après entraide, 1,24 moins 0,51 donne 0,73. L’écart entre les deux indices passe de 0,82 à 0,73. Chaque colonne prend pour base le revenu moyen calculé sur son propre périmètre. On ne peut donc pas convertir les neuf centièmes de réduction en euros en les multipliant par un revenu moyen choisi arbitrairement.
+
 **Transition.** Dans ce même document, le solde d’entraide change très peu l’indice des groupes professionnels. Un jeune peut se rapprocher du revenu moyen de tous les ménages tout en continuant à disposer de beaucoup moins de possibilités qu’un jeune d’un autre milieu.
 
 ### Partie II — Certains transferts font franchir un seuil et enclenchent une accumulation
@@ -89,6 +95,8 @@ Une autre entrée consiste à demander à quelles conditions les ressources d’
 
 **III.3. Les règles du partage et de la solidarité font varier l’avantage net.** Au document 4, relever la législation simulée, la ligne de parenté et l’unité du taux. Le chiffre de 37,5 % est un taux effectif moyen pour les héritages des 90e à 95e centiles en ligne indirecte. Un abattement accroît la différence entre le taux affiché sur la dernière tranche et le poids de l’impôt sur la transmission entière. Le financement collectif d’une bourse peut, de son côté, permettre à une étudiante de poursuivre une formation même quand sa famille finance surtout la reprise d’une entreprise par un autre enfant. Dans l’analyse de l’entraide du document 7, les ressources sociales et les prélèvements doivent être suivis séparément.
 
+**Pourquoi ne pas calculer 37,5 % de 213 000 euros ?** Le document 4 donne au bas de l’axe la valeur moyenne des héritages de la tranche C90–95. Le taux de la courbe supérieure concerne la seule ligne indirecte. Les deux moyennes n’ont pas le même champ. Même sur un champ identique, le produit du taux moyen et du montant moyen exige de connaître la pondération avant de pouvoir le lire comme un impôt moyen.
+
 ## Références et exemples
 
 | Document | Information à utiliser | Limite à préciser |
@@ -120,3 +128,5 @@ En définitive, une aide qui finance une dépense immédiate peut lisser les res
 ## Bilan
 
 Avant de conclure à un accroissement des inégalités, nommer le groupe comparé, le moment observé et la ressource mesurée. Suivre ensuite le trajet de l’avantage initial. Le dossier permet de montrer, sur un même sujet, le lissage du revenu courant, la formation d’un patrimoine et la répartition inégale du pouvoir de décider de son usage.
+
+[Sujet officiel](https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_sciences_sociales.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf)

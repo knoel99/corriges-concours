@@ -8,5 +8,51 @@
   },
   "questions": 0,
   "redaction": "IA (gpt-6), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/prix-intervention-excedent.svg",
+      "question": "Analyse du dossier",
+      "legende": "Marché d’un produit laitier stockable au prix d’intervention. Courbes théoriques, sans échelle numérique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Éditions originales. La notice historique dit « IA (gpt-6) »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Relecture et révision antérieures mentionnées dans la notice historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Deux éditions et huit documents, comparaison graphique des budgets, calcul du prix de lot et disposition à payer, mécanisme du prix garanti et rapport du jury."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_sciences_sociales.pdf",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf",
+    "sujet_sha256": "4f0de3d7667321c3fd8c72833471a142ad07dcba56118d370627f3d77ea9fc90"
+  }
 }

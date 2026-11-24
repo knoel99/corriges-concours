@@ -14,7 +14,9 @@
   "redaction": "Rédaction originale par IA (Codex, famille GPT-6) à partir des sept documents du sujet et du rapport de jury 2024. Relecture indépendante du brut, du guidé et des trois figures par un second agent Codex.",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2024_blses_sujet_composition_sciences_sociales.pdf",
-    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf"
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2024_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf",
+    "sujet_sha256": "3e9cafae72e5f16f898945b1d42483a0737d1aff35293fc3528fdfeb7dda3fa2",
+    "rapport_sha256": "2ced0acae59909c608ae668c9c3c9d46d389a3ed4a15e79b716cb976e2ad82f9"
   },
   "figures": [
     {
@@ -31,10 +33,15 @@
       "fichier": "figures/doc2-montants-heritages.svg",
       "question": "Partie II",
       "legende": "Répartition des montants d’héritage par profession des bénéficiaires (document 2)."
+    },
+    {
+      "fichier": "figures/ecarts-ages-avant-apres.svg",
+      "question": "Analyse du dossier",
+      "legende": "Comparer deux écarts entre classes d’âge. France métropolitaine, enquête Budget de famille 2000–2001, document 7."
     }
   ],
-  "date_revision": "2026-11-22",
-  "modele_revision": "GPT-6 (Codex)",
+  "date_revision": "2026-11-24",
+  "modele_revision": "GPT-6.2 Astra Ultra (Codex)",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -45,8 +52,8 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
       "service_tier": null,
       "famille_modele": "GPT-6"
     }
@@ -72,7 +79,20 @@
       "modifications": null,
       "perimetre": "Relecture des corrigés brut et guidé.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Deux éditions, dossier et rapport du jury, calcul et représentation des écarts de revenus par âge, interprétation du taux effectif et de ses champs."
     }
   ]
 }
