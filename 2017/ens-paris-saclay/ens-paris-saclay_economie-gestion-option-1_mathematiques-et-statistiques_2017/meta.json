@@ -1,0 +1,36 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2017
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2017_SE_D2-1_Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "666de611cd5e049494793f1e41ce6b9115811d450c93a1b2e2d8a07584df3acb"
+  },
+  "figures": [
+    {
+      "fichier": "figures/points-contact.svg",
+      "question": "II.9",
+      "legende": "Le cercle unité touche la courbe aux quatre points situés sur les axes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification sur les trois pages du sujet C1792 des deux éditions et des 33 items. Changement de base, étude complète des extrema avec figure des quatre contacts, identification et loi conditionnelle des deux dés.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
