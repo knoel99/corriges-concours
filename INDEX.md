@@ -132,6 +132,8 @@
 | 2024 | BEL | AL | Philosophie | [md](2024/bel/bel_al_philosophie_2024/brut.md) | [md](2024/bel/bel_al_philosophie_2024/guide.md) |
 | 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
+| 2026 | BEL | AL | Textes antiques grecs (Ulm) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/brut.md) | [md](2026/bel/bel_al_textes-antiques-grecs-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Textes antiques latins (Ulm) | [md](2026/bel/bel_al_textes-antiques-latins-ulm_2026/brut.md) | [md](2026/bel/bel_al_textes-antiques-latins-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Version grecque (Ulm) | [md](2026/bel/bel_al_version-grecque-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-grecque-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Version latine (Ulm) | [md](2026/bel/bel_al_version-latine-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-latine-ulm_2026/guide.md) |
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
