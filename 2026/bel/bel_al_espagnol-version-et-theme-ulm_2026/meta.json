@@ -1,0 +1,50 @@
+{
+  "slug": "bel_al_espagnol-version-et-theme-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (version et thème Ulm)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_opt_lve_vers-theme_261109.pdf#page=8",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_espagnol_ecrit_version_theme_option.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/phrase-du-souvenir.svg",
+      "legende": "Les deux amorces de la phrase du souvenir",
+      "question": "II. Thème"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_ulm",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traductions originales intégrales de Rosa Montero et Nathalie Sarraute, guide des gradations, des temps et du rythme, schéma syntaxique du thème."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Rosa Montero, La loca de la casa, 2003.",
+      "Nathalie Sarraute, Tropismes, Les Éditions de Minuit, 1957."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}

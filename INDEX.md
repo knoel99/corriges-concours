@@ -115,6 +115,9 @@
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2026 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/brut.md) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (thème Lyon) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (version et thème Ulm) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
