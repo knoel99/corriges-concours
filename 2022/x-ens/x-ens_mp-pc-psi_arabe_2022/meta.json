@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC-PSI%20SUJET%20ECRIT%20D'ARABE%20(XEULSR).pdf",
+    "sujet_sha256": "830987ebae54833cf5c5ee65cd2700beaf2db8fe9f75a12ef4ee123ced58a9ac",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP-PC%20RAPPORT%20ECRIT%20ARABE%20(XEULSR).pdf",
+    "rapport_sha256": "d821ab2392e3d810efbcde5a5a4dfb2ffdf4e4db4d01f10187e1b7a62746cef0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "Comment juger une politique de gestion de crise ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet officiel et le rapport du jury. Synthèse des documents 1 à 4 (612 mots hors titre) et réaction personnelle au document 5 (513 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
