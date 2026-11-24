@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_arabe-theme-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (thème Lyon)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=12"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lucien.svg",
+      "legende": "Du regard sur la ville au regard sur soi",
+      "question": "Thème"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Thème en arabe littéral de tout l’extrait de Balzac, guide des changements de point de vue, de la valeur sociale et de la dernière période, avec schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Honoré de Balzac, Illusions perdues, millésime du livret 1874."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}
