@@ -10,7 +10,9 @@
   "redaction": "IA (OpenAI Codex, famille GPT-6)",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_chi.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eChi.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eChi.pdf",
+    "sujet_sha256": "4cd105a4dc9f394ed75f533fde95c687e207253d39a221e0c4d259d77798a6b9",
+    "rapport_sha256": "e92785f893855b5d055352a650eba7f60ddf6636df476c8344a54a9e3465fe0e"
   },
   "figures": [
     {
@@ -57,6 +59,11 @@
       "fichier": "figures/q36-voies-paralleles.svg",
       "question": "Q36",
       "legende": "À concentration de dba fixée, le modèle associe un terme linéaire et un terme saturable. Les échelles sont qualitatives."
+    },
+    {
+      "question": "Q13",
+      "fichier": "figures/q13-teneurs-en-phosphore.svg",
+      "legende": "Pour 100 g d’engrais, convertir l’étiquette et le résultat de l’analyse en masse de phosphore élémentaire permet de les comparer."
     }
   ],
   "date_revision": "2026-11-24",
@@ -69,8 +76,6 @@
       4,
       5,
       6,
-      7,
-      8,
       9,
       10,
       11,
@@ -110,6 +115,8 @@
       57
     ],
     "questions_partiellement_traitees": [
+      7,
+      8,
       39,
       42,
       44,
@@ -125,7 +132,8 @@
       41,
       43,
       48
-    ]
+    ],
+    "precision": "43 questions intégrales, 11 partielles et 4 hors périmètre. Q7–8 limitées à la démarche thermodynamique générale. En partie III, couverture des principes chimiques indépendants, sans reconstitution de la voie vers l’achaetolide. Q15 exprime la teneur en azote en fonction du volume de prélèvement absent du sujet."
   },
   "provenance": {
     "redaction": {
@@ -147,6 +155,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Étude du sujet et du rapport de jury 2024, relecture des deux éditions dans les limites indiquées. Vérification du calcul des teneurs élémentaires et du volume de prise manquant, du schéma de coordination et du modèle de cinétique à deux voies. Q7–8 limitées à la méthode thermodynamique générale. Construction de l’achaetolide hors périmètre."
     }
   ]
 }
