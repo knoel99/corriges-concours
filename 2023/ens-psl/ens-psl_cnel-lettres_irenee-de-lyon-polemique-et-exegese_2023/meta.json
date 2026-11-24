@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_cnel-lettres_irenee-de-lyon-polemique-et-exegese_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Irénée de Lyon — polémique et exégèse",
+    "annee": 2023
+  },
+  "intitule": "Irénée, Contre les hérésies I, 11, 3-4 : voix et transmission",
+  "gabarit": "commentaire",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-11.pdf",
+    "sujet_sha256": "b3244b63d12e6e1cd7e679b4fda3938f760a26a14db35dcaae1880dfafa6bffe",
+    "references": [
+      "https://www.ens.psl.eu/sites/default/files/sc.antiquite-cnel-6.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix-et-temoins.svg",
+      "question": "Argumentation",
+      "legende": "Qui parle et que transmet chaque témoin ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire étendu des sujets 6 et 11, confrontation des deux fragments grecs et du latin continu, écriture polémique et exégèse."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}
