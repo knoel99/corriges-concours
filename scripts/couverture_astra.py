@@ -204,7 +204,8 @@ class LectureHTML(HTMLParser):
         if tag == "article" and "copie-prose" in attributs.get("class", "").split():
             self.dans_article = True
         if tag == "p" and self.dans_article:
-            self.paragraphe = []
+            classes = (attributs.get("class") or "").split()
+            self.paragraphe = None if "document__titre" in classes else []
         if tag == "a":
             lien = attributs.get("href") or ""
             if re.fullmatch(
