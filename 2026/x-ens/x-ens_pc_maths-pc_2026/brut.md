@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve n° 1 de la filière PC, durée 4 h, calculatrice interdite. Notations du sujet : $\operatorname{ch},\operatorname{sh},\operatorname{th}$, le produit scalaire usuel $x\cdot y$ de $\mathbb R^d$, et $\phi(\lambda)=\ln E[e^{\lambda\cdot X}]$.
 
 **Erratum de l'énoncé (question 21).** Avec la fonction $I$ de l'énoncé, la limite de la question 21 vaut $I(x)+\ln 2$, et non $I(x)$ : il manque un terme constant en $\ln 2$, ce que confirme le rapport du jury. De même, la convergence admise après la question 22 s'écrit en toute rigueur
@@ -58,7 +60,7 @@ $$f_n'(x)=\frac{x}{\sqrt{x^2+\frac1{n+1}}}$$
 et
 $$f_n''(x)=\frac{\frac1{n+1}}{\big(x^2+\frac1{n+1}\big)^{3/2}}>0 .$$
 
-*Convexité.* La hessienne de $f_n$ (matrice $1\times1$ égale à $f_n''(x)$) est symétrique positive en tout point. Par Q6 avec $d=1$, **$f_n$ est convexe** ; elle est dérivable.
+*Convexité.* La dérivée seconde est strictement positive. Ainsi $f_n'$ est croissante et, par le critère usuel de convexité en une variable, $f_n$ est convexe sur $\mathbb R$.
 
 *Convergence.* Pour $x$ fixé, $x^2+\frac1{n+1}\to x^2$ et la racine carrée est continue sur $[0,+\infty[$, donc $f_n(x)\to\sqrt{x^2}=|x|$.
 
@@ -218,7 +220,7 @@ qui est $\exp(H_N(\beta,h,a))$.
 
 $X^{(N)}$ est uniforme sur $\{-1,1\}^N$ : par indépendance, chaque configuration $a$ a la probabilité $2^{-N}$. Par la formule de transfert et Q12,
 $$Z_N(\beta,h)=2^{-N}\sum_{a\in\{-1,1\}^N}\Big(\prod_{i=1}^{N-1}B_{a_i,a_{i+1}}\Big)B_{a_N,a_1}.$$
-(Les facteurs $B_{\sigma_i,\sigma_{i+1}}$ ne sont pas indépendants : on ne factorise pas l'espérance, on la développe en somme sur les configurations.)
+Les poids des liens ne sont en général pas mutuellement indépendants. Par exemple, pour $h=0$, $\beta>0$ et $N\ge2$, posons $L_i=\sigma_i\sigma_{i+1}$ avec $\sigma_{N+1}=\sigma_1$. Chaque $L_i$ prend les deux signes avec la même probabilité, mais $\prod_i L_i=1$ puisque chaque spin intervient deux fois. Les signes des liens, donc leurs poids $e^{\beta L_i}$, ne peuvent être mutuellement indépendants.
 
 Indexons lignes et colonnes par $(-1,+1)$, dans cet ordre. La matrice $B=(B_{s,t})$ vaut
 $$B=\begin{pmatrix}e^{\beta-h}&e^{-\beta-h}\\e^{-\beta+h}&e^{\beta+h}\end{pmatrix}={}^tA .$$
@@ -355,12 +357,12 @@ donc
 $$\boxed{\lim_{N\to+\infty}-\frac1N\ln P[S_N=u_N]=I(x)+\ln2}$$
 **L'énoncé, qui annonce $I(x)$, comporte une erreur de constante.**
 
-Contrôle en $x=0$ (avec $u_N\in\{0,\frac1N\}$) : $P[S_N=u_N]$ est de l'ordre de $\sqrt{2/(\pi N)}$ et ne décroît pas exponentiellement.
+Contrôle en $x=0$. Prenons $u_N=0$ si $N$ est pair et $u_N=1/N$ si $N$ est impair, de sorte que $u_N\in\mathscr M_N$. Alors $P[S_N=u_N]$ est de l'ordre de $\sqrt{2/(\pi N)}$ et ne décroît pas exponentiellement.
 
 La limite vaut donc $0=I(0)+\ln2$, alors que $I(0)=-\ln2$. Le résultat annoncé serait exact avec
 $$J(x)=I(x)+\ln2=\frac{1+x}2\ln(1+x)+\frac{1-x}2\ln(1-x).$$
 
-![Figure 7 — Le taux binomial exact se rapproche de J et atteint ln 2 aux deux extrémités.](figures/q21-taux-binomial.svg)
+![Figure 4 — Le taux binomial exact se rapproche de J et atteint ln 2 aux deux extrémités.](figures/q21-taux-binomial.svg)
 
 ### Question 22
 
@@ -460,7 +462,7 @@ Ainsi $\psi_{\beta,0}$ est strictement croissante sur $[0,c]$ et strictement dé
 
 Par parité, sur $[-1,1]$, **le maximum est atteint exactement en $x_*(\beta,0):=c\in\,]0,1[$ et en $-x_*(\beta,0)$.**
 
-![Figure 4 — Profil ψ_β,0 : maximum unique en 0 pour β = 0,3 ; pour β = 0,8, 0 devient un minimum local (zone teintée : ψ″ > 0) et les maxima sont en ±x*(β, 0)](figures/q25-profil-psi.svg)
+![Figure 5 — Profil ψ_β,0 : maximum unique en 0 pour β = 0,3 ; pour β = 0,8, 0 devient un minimum local (zone teintée : ψ″ > 0) et les maxima sont en ±x*(β, 0)](figures/q25-profil-psi.svg)
 
 ### Question 26
 
@@ -520,7 +522,7 @@ Par la continuité admise en $0$, la dérivée à droite en $0$ existe et vaut $
 Donc $g(\beta,\cdot)$ est dérivable en $0$ si et seulement si $x_*(\beta,0)=0$, c'est-à-dire, par Q25, si et seulement si $\beta\leqslant\frac12$ :
 $$\boxed{h\mapsto g(\beta,h)\text{ est dérivable sur }\mathbb R\iff\beta\in\big[0,\tfrac12\big]}$$
 
-![Figure 5 — Dérivée ∂g/∂h (β, h) en fonction de h : continue pour β = 0,3, saut de −x*(β, 0) à x*(β, 0) en h = 0 pour β = 0,8](figures/q29-aimantation-saut.svg)
+![Figure 6 — Dérivée ∂g/∂h (β, h) en fonction de h : continue pour β = 0,3, saut de −x*(β, 0) à x*(β, 0) en h = 0 pour β = 0,8](figures/q29-aimantation-saut.svg)
 
 ### Question 30
 
@@ -554,7 +556,7 @@ $$\begin{aligned}
 Avec $t=h+2\beta x_*$ :
 $$\boxed{x_*(\beta,h)=\operatorname{th}\big(h+2\beta x_*(\beta,h)\big)}$$
 
-![Figure 6 — Pour h = 0,2, x*(β, h) est l'abscisse de l'intersection positive de y = x et y = th(h + 2βx) ; pour β = 0,8, les deux intersections négatives ne sont pas des maxima](figures/q31-point-fixe.svg)
+![Figure 7 — Pour h = 0,2, l’intersection positive donne le maximum global. Pour β = 0,8, les deux intersections négatives correspondent, de gauche à droite, à un maximum local puis à un minimum local.](figures/q31-point-fixe.svg)
 
 ### Question 32
 

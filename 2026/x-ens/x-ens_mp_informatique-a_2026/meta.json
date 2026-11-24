@@ -2,7 +2,7 @@
   "slug": "x-ens_mp_informatique-a_2026",
   "epreuve": {
     "concours": "X-ENS",
-    "filiere": "MP",
+    "filiere": "MP-MPI",
     "matiere": "Informatique A",
     "annee": 2026
   },
@@ -12,7 +12,7 @@
     {
       "fichier": "figures/i8-file-fenetre-glissante.svg",
       "question": "I.8",
-      "legende": "Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent 2 triplets, puis t_j est enfilé"
+      "legende": "Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent deux couples candidats, puis t_j est enfilé"
     },
     {
       "fichier": "figures/ii4-chemin-inverse-skip-list.svg",
@@ -29,5 +29,64 @@
       "question": "III.7",
       "legende": "Quantification de produit avec m = 3 paquets et k = 4 : la distance approchée D′ij est la somme des lectures d1(2, 1), d2(0, 0) et d3(3, 2) dans les tables des paquets"
     }
-  ]
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-06T13:24:40",
+      "modifications": true,
+      "perimetre": "Production des deux corrigés à partir de la copie source.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Révision des corrigés avec le rapport du jury.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 25 questions MP-MPI, des deux versions et des figures avec le sujet et le rapport. En I.7–8, calcul du cardinal ensembliste en présence de réalisations répétées et comparaison avec le décompte attendu par le jury. Vérification des histogrammes de I.9, du bord gauche en II.4, des codes OCaml et des distances de produit.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Relecture des 25 questions MP-MPI, des deux versions et des figures avec le sujet et le rapport. En I.7–8, calcul du cardinal ensembliste en présence de réalisations répétées et comparaison avec le décompte attendu par le jury. Vérification des histogrammes de I.9, du bord gauche en II.4, des codes OCaml et des distances de produit."
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20A_0.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Info%20A_1.pdf"
+  }
 }

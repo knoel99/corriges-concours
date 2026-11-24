@@ -1,6 +1,13 @@
-# X-ENS MP — Informatique A 2026 · Corrigé guidé
+# X-ENS MP-MPI — Informatique A 2026 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 
 ## Présentation du sujet
 
@@ -192,86 +199,76 @@ Si $x<y$, alors $x$ est plus petit que tous les éléments de $b$ (tri stricteme
 
 #### Solution
 
-**(a)**
+**(a)** Deux couples d’occurrences peuvent produire le même triplet. Pour ne le garder qu’une fois, on mémorise les triplets déjà rencontrés dans un arbre binaire de préfixes. Le chemin d’un triplet est la concaténation des 62 bits utiles de chacun de ses trois entiers naturels, dans un ordre fixe. Tous les chemins ont donc la même longueur. La première insertion doit créer au moins une arête.
 
 ```ocaml
+type prefixe = { fils : prefixe option array }
+let vide () = { fils = Array.make 2 None }
+
+let nouveau racine (a, b, c) =
+  let courant = ref racine and cree = ref false in
+  let suivre entier =
+    for i = 61 downto 0 do
+      let bit = (entier lsr i) land 1 in
+      match (!courant).fils.(bit) with
+      | Some suite -> courant := suite
+      | None ->
+          let suite = vide () in
+          (!courant).fils.(bit) <- Some suite;
+          courant := suite;
+          cree := true
+    done
+  in
+  suivre a; suivre b; suivre c; !cree
+
 let tosignature (sp : sparse) (delta : int) : signature =
   let a = Array.of_list sp in
-  let n = Array.length a in
-  let res = ref [] in
-  for i = 0 to n - 1 do
-    let (f1, t1) = a.(i) in
-    for j = 0 to n - 1 do
-      let (f2, t2) = a.(j) in
-      let d = t2 - t1 in
-      if 0 < d && d <= delta then res := (f1, f2, d) :: !res
-    done
-  done;
-  !res
+  let vus = vide () and resultat = ref [] in
+  Array.iter (fun (f, t) ->
+    Array.iter (fun (g, u) ->
+      let ecart = u - t in
+      if 0 < ecart && ecart <= delta then
+        let cle = (f, g, ecart) in
+        if nouveau vus cle then resultat := cle :: !resultat
+    ) a
+  ) a;
+  !resultat
 ```
 
-On ajoute $(f_1,f_2,\delta)$ exactement lorsqu'il existe deux occurrences $(f_1,t)$ et $(f_2,t+\delta)$ avec $0<\delta\le\Delta$ : c'est la définition (1). Un même triplet réalisé à plusieurs instants figure plusieurs fois dans la liste. Supprimer les doublons demanderait un tri, ce qui ferait perdre la borne $O(n^2)$. C'est d'ailleurs le nombre de couples que la question I.8 compte.
-
-**(b)** `Array.of_list` coûte $O(n)$, et les deux boucles font $n^2$ tours en $O(1)$. Le total est $\boxed{O(n^2)}$.
-
-> [!PIEGE]
-> L'écart doit être strictement positif : $\delta=0$ est exclu par la définition. Testez donc `0 < d` et non `0 <= d`.
+**(b)** Chaque paire autorisée par (1) propose sa clé et chaque clé apparaît une seule fois dans la liste finale. Sur les entiers OCaml à 63 bits de l’énoncé, une consultation de l’arbre examine $3\times62$ bits, indépendamment de $n$. Les deux parcours du tableau coûtent donc $O(n^2)$ dans le pire cas. Pour $U$ triplets distincts, l’arbre contient au plus $1+186U$ nœuds.
 
 ### Question I.8
 
 > [!INDICATION]
-> Le temps étant croissant le long de la liste, quels instants passés peuvent encore former un triplet avec l'instant courant ?
-
-> [!INDICATION]
-> Gardez dans une file les instants récents « encore utiles ». À l'arrivée d'un nouvel instant, que faut-il retirer de la tête, et que vous donne ensuite la longueur de la file ?
-
-> [!INDICATION]
-> Pour la complexité, ne comptez pas les tours de la boucle intérieure instant par instant : comptez combien de fois, au total, chaque élément peut quitter la file.
+> Après avoir enlevé les temps trop anciens, quels couples la file représente-t-elle ? Deux couples issus d’instants distincts peuvent-ils donner la même clé ?
 
 #### Solution
 
-**(a)**
+**(a)** Le jury attend le balayage par une file d’instants. Avant d’enfiler $t$, on retire les instants $u$ tels que $t-u>\Delta$. Le nombre d’éléments restants est exactement le nombre de **couples d’occurrences** qui se terminent en $t$. La taille de l’**ensemble** défini par (1) peut être plus petite. Par exemple, avec `[(1,0); (1,1); (1,2)]` et $\Delta=1$, les temps sont distincts, mais les deux couples donnent le seul triplet $(1,1,1)$.
+
+Pour respecter la définition ensembliste, gardons les fréquences dans la file et mémorisons les triplets avec `nouveau` de I.7.
 
 ```ocaml
 let signature_size (sp : sparse) (delta : int) : int =
-  let q = Queue.create () in
-  let count = ref 0 in
-  List.iter (fun (_, t) ->
-      while Queue.length q > 0 && t - Queue.peek q > delta do
-        Queue.drop q
-      done;
-      count := !count + Queue.length q;
-      Queue.push t q)
-    sp;
-  !count
+  let q = Queue.create () and vus = vide () in
+  let total = ref 0 in
+  List.iter (fun (g, t) ->
+    while Queue.length q > 0 && t - snd (Queue.peek q) > delta do
+      Queue.drop q
+    done;
+    Queue.iter (fun (f, u) ->
+      if nouveau vus (f, g, t - u) then incr total
+    ) q;
+    Queue.push (g, t) q
+  ) sp;
+  !total
 ```
 
-Exemples de l'énoncé : avec `[(1,1); (5,5)]` et $\Delta=3$, on obtient 0. Avec les cinq couples et $\Delta=10$, on obtient $0+1+2+3+4=10$.
+**(b)** Au moment du parcours de la file, ses entrées sont exactement les occurrences antérieures telles que $0<t-u\le\Delta$. Les dates sont strictement croissantes, donc un élément retiré restera trop ancien. Chaque réalisation d’un triplet se présente à sa date de fin. `nouveau` augmente le compteur uniquement à la première réalisation. Les deux exemples de l’énoncé donnent respectivement 0 et 10.
 
-**(b)** *Correction.* Les temps sont distincts et croissants. Pour $i<j$, on a donc $t_j-t_i>0$, et le couple $(i,j)$ donne un triplet si et seulement si $t_j-t_i\le\Delta$.
+![Figure 1 — Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent deux couples candidats, puis t_j est enfilé](figures/i8-file-fenetre-glissante.svg)
 
-Invariant : avant le traitement de $t_j$, la file contient, dans l'ordre croissant, les $t_i$ ($i<j$) tels que $t_{j-1}-t_i\le\Delta$.
-
-- La boucle `while` retire de la tête les $t_i$ trop anciens, ceux tels que $t_j-t_i>\Delta$. Ils forment un préfixe de la file, et ils ne serviront plus jamais, car les temps suivants sont encore plus grands.
-- Il reste exactement les partenaires valides de $t_j$. On ajoute leur nombre au compteur, puis on enfile $t_j$.
-
-![Figure 1 — Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent 2 triplets, puis t_j est enfilé](figures/i8-file-fenetre-glissante.svg)
-
-En sommant sur $j$, on obtient $|S_\Delta(M)|$.
-
-*Complexité.* La liste est parcourue une seule fois. Chaque instant est enfilé une fois et défilé au plus une fois : la boucle `while` fait donc au plus $n$ tours **au total** sur tout le parcours. Toutes les opérations de file, `Queue.length` comprise, sont en $O(1)$ d'après l'énoncé. La complexité est amortie linéaire : $\boxed{O(n)}$.
-
-> [!METHODE]
-> C'est la technique de la **fenêtre glissante** sur une suite triée. Une boucle intérieure dont le nombre total de tours est borné par le nombre d'éléments (chacun entre et sort une fois) donne un coût **amorti** linéaire.
-
-> [!PIEGE]
-> `Queue.length` est en temps constant : l'énoncé le rappelle. Le rapport 2026 note pourtant que « Certains candidats croient toutefois que Queue.length est en temps $O(n)$ alors qu’on rappelle dans le sujet que cette fonction s’exécute en temps $O(1)$ ». Avec cette erreur, on conclut à tort à un coût quadratique.
-
-> [!JURY]
-> Pour la complexité, le rapport 2026 donne l'argument attendu : « chaque élément a été inséré une fois et défilé une fois donc la complexité est amortie linéaire ». La question est jugée « plus difficile » : 64 % des MP l'ont traitée, avec 41 % des points en moyenne.
-
-> [!PIEGE]
-> L'énoncé ne rappelle pas `Queue.is_empty`. On teste donc `Queue.length q > 0` avant `Queue.peek`, qui lève `Queue.Empty` sur une file vide. L'ordre du `&&`, évalué de gauche à droite, protège cet appel.
+Si $P$ est le nombre de couples qui satisfont la borne temporelle, les enfilements et défilements coûtent $O(n)$ en tout et le traitement des couples coûte $O(P)$. Le coût total est $O(n+P)$, avec $P\le n\min(n,\Delta)$ puisque les temps sont des entiers distincts. Il est donc linéaire en $n$ pour $\Delta$ fixé. Pour compter seulement les couples, la variante du jury remplace le parcours de la file par l’addition de `Queue.length q`. Son coût reste $O(n)$ même si $\Delta$ varie. Ce dernier compteur fournit directement le cardinal de la signature lorsque chaque triplet n’a qu’une réalisation.
 
 ### Question I.9
 
@@ -280,20 +277,9 @@ En sommant sur $j$, on obtient $|S_\Delta(M)|$.
 
 #### Solution
 
-**C'est $A$.** Les deux musiques partagent trois triplets avec $M$ : l'indice de Jaccard ne les départage pas.
+**La musique $A$ correspond le mieux à l’extrait.** Les trois écarts temporels de la figure 2 sont concentrés près d’une même valeur pour $A$. Pour $B$, ils se répartissent autour de 3, 8 et 11. Une translation de l’extrait dans la musique produit un décalage constant, quelle que soit son amplitude. L’histogramme de $A$ est donc le plus compatible avec cette hypothèse.
 
-Pour $A$, l'histogramme des écarts $t'^{(A)}_i-t_i$ est concentré sur une seule valeur, environ 1. Les triplets communs se retrouvent dans $A$ avec le même décalage temporel, ce qui veut dire que $M$ est un morceau de $A$ translaté dans le temps.
-
-Pour $B$, les écarts sont dispersés, vers 3, 8 et 11 environ. Aucun décalage commun n'explique les correspondances, qui sont donc fortuites.
-
-> [!METHODE]
-> Pour aligner un extrait sur un morceau, on ne compte pas seulement les correspondances : on vérifie leur **cohérence géométrique**, ici un décalage constant. C'est le principe des empreintes acoustiques.
-
-> [!PIEGE]
-> Ne pas justifier le choix de $A$ par la petitesse de l'écart. Un décalage commun de 100 serait tout aussi probant : l'extrait commencerait simplement plus loin dans le morceau.
-
-> [!JURY]
-> Le rapport 2026 est explicite : « ce qui était important n’était pas que l’écart soit petit, mais que l’histogramme soit concentré autour d’une seule valeur, indiquant la cohérence temporelle des correspondances ».
+Le texte annonce des écarts en valeur absolue. Des amplitudes égales constituent un indice de cohérence. Pour confirmer la translation, on vérifierait que les trois écarts signés sont égaux. Les trois correspondances dans chaque musique donnent le numérateur de Jaccard. Les tailles des unions seraient nécessaires pour comparer les deux indices.
 
 ### Question I.10
 
@@ -408,6 +394,8 @@ let search (skl : skip_list) (v : int) : skip_node option =
   descend skl.init_node skl.init_level
 ```
 
+Si $v\le0$, toutes les clés réelles sont strictement positives. Le programme descend jusqu’à l’étage 0 puis rend `None`. Supposons désormais $v>0$.
+
 **(b)** *Invariant* : `node.value` $<v$, et `node` est présent à l'étage `level`. Ce point est vrai au départ, puisque le nœud factice vaut $0<v$, et on n'avance que vers des valeurs $<v$.
 
 *Terminaison* : le couple (`level`, nombre de nœuds après `node` à l'étage 0) décroît strictement pour l'ordre lexicographique.
@@ -451,7 +439,7 @@ En un point $(x,i)$ du chemin inversé, la recherche directe est arrivée de l'u
 
 Sachant que $x$ est présent à l'étage $i$, il l'est aussi à l'étage supérieur avec probabilité $p$ : c'est un tirage indépendant de plus dans `random_level`.
 
-Chaque pas coûte 1. Avec probabilité $p$, il reste $\ell-1$ étages à monter ; avec probabilité $1-p$, il en reste toujours $\ell$. On a $C_0=0$ et, pour $\ell\geq1$,
+Dans le modèle sans bord gauche, chaque pas coûte 1. Avec probabilité $p$, il reste $\ell-1$ étages à monter ; avec probabilité $1-p$, il en reste toujours $\ell$. On a $C_0=0$ et, pour $\ell\geq1$,
 
 $$\begin{aligned}
 C_\ell&=1+p\,C_{\ell-1}+(1-p)\,C_\ell\\
@@ -461,7 +449,9 @@ C_\ell&=C_{\ell-1}+\frac1p.
 
 Par récurrence,
 
-$$\boxed{C_\ell=\frac{\ell}{p}.}$$
+$$\boxed{C_\ell=\frac{\ell}{p}\quad\text{dans le modèle sans bord}.}$$
+
+Cette égalité décrit le modèle où tout essai de promotion est une Bernoulli indépendante, avec une réserve de prédécesseurs illimitée à gauche. Sur le chemin fini, si l’on atteint la sentinelle, on monte immédiatement, sans tirage. Les descentes ajoutées sous un nœud trouvé haut deviennent aussi des montées immédiates au retour. Ces cas raccourcissent le trajet. Le calcul donne alors une **majoration** par $\ell/p$ pour les niveaux effectivement parcourus, ce qui suffit en II.5. Par exemple, pour une recherche en deçà de la plus petite clé, le chemin emprunte uniquement la sentinelle et un étage franchi coûte exactement un pas.
 
 > [!METHODE]
 > **Analyse au premier pas** : on conditionne sur le premier pas, et l'espérance cherchée apparaît des deux côtés de l'équation. C'est la même technique que pour l'espérance d'une loi géométrique, qui vaut $1/p$. On retrouve d'ailleurs $1/p$ pas en moyenne par étage monté.

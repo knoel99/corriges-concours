@@ -56,9 +56,10 @@
   ],
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/261242_BCPST_SCIENCES_DE_LA_TERRE_2026_corr.pdf",
-    "index_banque": "https://banques-ecoles.fr/cms/filiere-bcpst/les-annales-et-rapports-des-jurys/"
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-bcpst/les-annales-et-rapports-des-jurys/",
+    "sujet_sha256": "fe29ee2221a7a81d8fc94b3bc9f08136329038756f8b732ecc29e69df986f3a3"
   },
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -79,6 +80,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 1,
+      "modifications": true,
+      "perimetre": "Relecture des 28 questions des cinq parties, du brut et du guidé, des huit schémas et des sept figures du sujet. Vérification de la bathymétrie, des temps aller-retour à Discovery, de la projection du glissement et de la thermométrie à Kauai. Précisions sur les points de retournement des rais, le biais thermique à Discovery et la couverture tomographique.",
+      "fournisseur": "codex",
+      "agent": "astra_physique"
     }
   ]
 }

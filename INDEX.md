@@ -106,6 +106,9 @@
 | 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
 | 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2026 | BEL | AL | Allemand (commentaire et traduction) | [md](2026/bel/bel_al_allemand-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_allemand-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Allemand (thème Lyon) | [md](2026/bel/bel_al_allemand-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_allemand-theme-lyon_2026/guide.md) |
+| 2026 | BEL | AL | Allemand (version et thème Ulm) | [md](2026/bel/bel_al_allemand-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_allemand-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (commentaire et traduction) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (thème Lyon) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_anglais-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (version et thème Ulm) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_anglais-version-et-theme-ulm_2026/guide.md) |
@@ -133,8 +136,11 @@
 | 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
 | 2026 | BEL | AL | Portugais (commentaire et traduction) | [md](2026/bel/bel_al_portugais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_portugais-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Version grecque (Lyon) | [md](2026/bel/bel_al_version-grecque-lyon_2026/brut.md) | [md](2026/bel/bel_al_version-grecque-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Version grecque (Ulm) | [md](2026/bel/bel_al_version-grecque-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-grecque-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Version latine (Lyon) | [md](2026/bel/bel_al_version-latine-lyon_2026/brut.md) | [md](2026/bel/bel_al_version-latine-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Version latine (Ulm) | [md](2026/bel/bel_al_version-latine-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-latine-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Version latine et court thème (Ulm) | [md](2026/bel/bel_al_version-latine-et-court-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_version-latine-et-court-theme-ulm_2026/guide.md) |
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
 | 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |

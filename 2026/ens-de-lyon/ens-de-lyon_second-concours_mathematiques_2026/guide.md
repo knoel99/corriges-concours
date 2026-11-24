@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -74,7 +76,7 @@ Posons $F=\operatorname{Im} f$, $K=\ker f$ et $r=\dim F$. Par le théorème du r
 
 #### Solution
 
-L’image $F$ est stable par $u$ car $u(f(x))=-f(u(x))$. La restriction $u_{|F}$ est injective, donc bijective sur $F$. Ses restrictions et celles de $f$ à $F$ sont ainsi deux automorphismes qui anticommutent. En appliquant la question 1 sur $F$, on obtient $r=\dim F$ pair. Si $F=\{0\}$, le résultat est immédiat.
+L’image $F$ est stable par $u$ car $u(f(x))=-f(u(x))$. La restriction $u_{|F}$ est injective, donc bijective sur $F$. Les restrictions de $u$ et de $f$ à $F$ sont ainsi deux automorphismes qui anticommutent. En appliquant la question 1 sur $F$, on obtient $r=\dim F$ pair. Si $F=\{0\}$, le résultat est immédiat.
 
 ## Problème — Préliminaires
 
@@ -411,7 +413,9 @@ En particulier les sommes de blocs entiers forment une série absolument converg
 
 Avec les signes $\{-1,1\}$ des questions 11 à 13, considérons les fonctions en escalier $r_k(t)=(-1)^{\lfloor 2^{k+1}t\rfloor}$ sur $[0,1[$, prolongées en $1$ par leur valeur à gauche, puis $f_k=r_k/(k+1)$. Elles sont continues par morceaux et $\|f_k\|_\infty=1/(k+1)\to0$. Sur les $2^{N+1}$ intervalles dyadiques de longueur $2^{-(N+1)}$, le vecteur $(r_0,\ldots,r_N)$ prend toutes les suites de $N+1$ signes. En effet $r_k$ dépend du $(k+1)$-ième chiffre binaire du numéro de l’intervalle, écrit sur $N+1$ chiffres depuis la gauche.
 
-Pour tout choix de signes et tous $m\le N$, il existe donc un intervalle où $r_k=\varepsilon_k$ pour $m\le k\le N$. La norme uniforme de la somme sur ce bloc vaut exactement $\sum_{k=m}^N1/(k+1)$, par réalisation de la borne triangulaire. Ces sommes ne tendent pas uniformément vers zéro quand $m,N\to\infty$ (prendre par exemple $N=2m+1$). Le critère de Cauchy uniforme est violé pour tout choix de signes.
+Fixons maintenant une suite de signes $(\varepsilon_k)$. Pour chaque $N$, l’un des intervalles dyadiques réalise exactement $(\varepsilon_0,\ldots,\varepsilon_N)$. Sur cet intervalle, les $N+1$ termes de la somme partielle $S_N=\sum_{k=0}^N\varepsilon_k f_k$ sont positifs. En combinant cette observation avec l’inégalité triangulaire, on obtient
+$$\|S_N\|_\infty=\sum_{k=0}^N\frac1{k+1}\longrightarrow+\infty.$$
+Toute suite uniformément convergente de fonctions bornées est bornée pour la norme uniforme. La série ne converge donc pas en norme uniforme, quel que soit le choix des signes.
 
 ![Figure 6 — Sur les huit intervalles dyadiques, les trois premières fonctions réalisent les huit triplets de signes.](figures/signes-dyadiques.svg)
 
