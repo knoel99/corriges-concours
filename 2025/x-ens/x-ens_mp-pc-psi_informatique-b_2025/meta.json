@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2025,
+    "duree_heures": 2
+  },
+  "questions": 15,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20B%20MP%20PC.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%20et%20PC_info%20B%20OK.pdf",
+    "sujet_sha256": "e38213f2c8c26988033718acef6562b9da62b67d17564eeead22b41be678334a",
+    "rapport_sha256": "ddcd9dfb9db77bebae3d90460ab847a937ed55eac987b1db76ddb617fd2e48a0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q08-horizons.svg",
+      "question": "Q8",
+      "legende": "À gauche, la recherche manque le bonus. À droite, le passage par la case verte débloque les deux sauts verticaux successifs."
+    },
+    {
+      "fichier": "figures/q12-masques.svg",
+      "question": "Q12",
+      "legende": "Inclusion pour trois bonus, code affiché avec le bit de poids fort à gauche. La file visite les quatre niveaux du haut vers le bas."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 15 questions du jeu de Röckse, y compris les sept blancs de Q14 et la reconstruction. Vérification sur le PDF et le rapport officiels, deux figures originales. Exécution des programmes Python des deux éditions, comparaison de la recherche et de la programmation dynamique à un énumérateur indépendant, vérification des horizons gloutons et du cas des pénalités négatives près d’une impasse."
+    }
+  ]
+}
