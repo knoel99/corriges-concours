@@ -1,0 +1,57 @@
+{
+  "slug": "bel_bl_sciences-sociales_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sciences sociales",
+    "annee": 2026
+  },
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "figures": [
+    {
+      "question": "I",
+      "fichier": "figures/risques-par-statut.svg",
+      "legende": "En 2023, le taux de pauvreté est de 6,6 % parmi les salariés et de 19,2 % parmi les indépendants. Chaque pourcentage se rapporte à son propre groupe. Source : document 2, ERFS 2023."
+    },
+    {
+      "question": "II",
+      "fichier": "figures/duree-de-lemploi.svg",
+      "legende": "En 2019, la présence salariée toute l’année est moins fréquente de 38,9 points dans le groupe à bas revenus salariaux. Source : document 4, panel Tous salariés, traitement Dares."
+    },
+    {
+      "question": "III",
+      "fichier": "figures/trappe-et-mobilite.svg",
+      "legende": "Exemple d’une contrainte de ressources : une dépense de transport ou de garde à avancer peut conditionner l’accès à une offre réellement disponible. Schéma de lecture du document 3."
+    },
+    {
+      "question": "Méthode",
+      "fichier": "figures/du-contrat-au-menage.svg",
+      "legende": "Le statut d’emploi se mesure pour une personne et le niveau de vie tient compte de toutes les ressources et de la composition de son ménage."
+    },
+    {
+      "question": "Évaluation",
+      "fichier": "figures/criteres-evaluation.svg",
+      "legende": "Suivre successivement le retour à l’emploi, sa qualité et les ressources du foyer donne trois critères différents pour évaluer une politique."
+    }
+  ],
+  "sources": {
+    "sujet": "https://pe-dm.pages-perso.free.fr/sujets/sujets/ses/2026.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_sciences_sociales.pdf",
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl"
+  },
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

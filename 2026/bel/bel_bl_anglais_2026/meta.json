@@ -1,0 +1,56 @@
+{
+  "slug": "bel_bl_anglais_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=9",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/fait_2026_bl_rapport_ecrit_option_anglais.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/public-et-prive.svg",
+      "question": "Documents 2 et 3",
+      "legende": "Who bears the cost of care?"
+    },
+    {
+      "fichier": "figures/carte-argument.svg",
+      "question": "Plan",
+      "legende": "Following the argument across the five documents"
+    },
+    {
+      "fichier": "figures/recits-historiques.svg",
+      "question": "Documents 4 et 5",
+      "legende": "Two speakers use the past to persuade"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante des cinq sources et de leur articulation avec Novak. L’accroche distingue le détenu mort à Halifax du fermier retourné chez sa mère dans le document de Dix."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

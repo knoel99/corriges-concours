@@ -1,0 +1,65 @@
+{
+  "slug": "bel_bl_sociologie_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Sociologie",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://pe-dm.pages-perso.free.fr/sujets/sociologie.html",
+    "notice": "https://www.ens.psl.eu/sites/default/files/vf_ens_presentation_blses_bl_2026.pdf",
+    "references": [
+      "https://ld-es.fr/catalogue/la-dispute/les-aides-a-domicile-un-monde-populaire",
+      "https://press.uchicago.edu/ucp/books/book/chicago/M/bo23899991.html",
+      "https://www.editionsladecouverte.fr/chantier_interdit_au_public-9782707158420",
+      "https://www.nationalarchives.gov.uk/explore-the-collection/stories/letter-by-the-women-workers-at-fords-of-dagenham/",
+      "https://www.parliament.uk/about/living-heritage/transformingsociety/tradeindustry/industrycommunity/collections/equal-pay/ford-strike/",
+      "https://www.tuc.org.uk/workplace-guidance/case-studies/how-fords-striking-women-drove-equal-pay-act?language=en"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/temps-revenus.svg",
+      "question": "Partie I",
+      "legende": "Travail domestique, durée d’emploi et revenus futurs"
+    },
+    {
+      "fichier": "figures/chantier-employeurs.svg",
+      "question": "Partie II",
+      "legende": "Coopération sur un chantier et pluralité des employeurs"
+    },
+    {
+      "fichier": "figures/dagenham-reclassement.svg",
+      "question": "Partie III",
+      "legende": "Dagenham, de la paie au reclassement"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Libellé de la dissertation et enquêtes cités vérifiés. Chronologie de Dagenham comparée aux archives nationales et parlementaires britanniques et à l’historique du TUC."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

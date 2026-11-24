@@ -1,0 +1,77 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2025
+  },
+  "questions": 36,
+  "redaction": "Corrigé original non officiel rédigé par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_phys.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_ePhy.pdf"
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Numérotations de A1 à A10 et B1 à B26 vérifiées sur le sujet et rapport écrit consulté. Contre-calcul indépendant des deux flux de chaleur, du rapport α/h, de la condition de surface homogène et de la non-séparabilité du champ initial. Contrôle numérique des profils par modes de Bessel."
+  },
+  "figures": [
+    {
+      "fichier": "figures/spectre-par-longueur-onde.svg",
+      "numero": 1,
+      "question": "A2",
+      "legende": "Enveloppe de Planck à 5 780 K, par unité de longueur d’onde. Les raies solaires ne sont pas représentées."
+    },
+    {
+      "fichier": "figures/profil-radial-et-flux.svg",
+      "numero": 2,
+      "question": "B3",
+      "legende": "Profil qualitatif à un instant intermédiaire. Les flèches indiquent les flux de chaleur sensible."
+    },
+    {
+      "fichier": "figures/retard-thermique-du-centre.svg",
+      "numero": 3,
+      "question": "B4",
+      "legende": "Réponse normalisée pour hR/λ = 5, avec un tissu sans stockage sensible. Les deux courbes tendent vers le même palier."
+    },
+    {
+      "fichier": "figures/bilan-sur-bague.svg",
+      "numero": 4,
+      "question": "B8",
+      "legende": "Les aires des surfaces qui échangent de l’énergie sont 2πr dz et 2π(r + dr) dz."
+    },
+    {
+      "fichier": "figures/echanges-de-la-surface.svg",
+      "numero": 5,
+      "question": "B11",
+      "legende": "Puissances par unité de surface. Au régime stationnaire, l’apport du cylindre s’annule."
+    },
+    {
+      "fichier": "figures/modes-radiaux.svg",
+      "numero": 6,
+      "question": "B26",
+      "legende": "Les modes vérifient la condition d’échange pour hR/λ = 5. Leur somme pondérée reconstitue le profil uniforme initial."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

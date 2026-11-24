@@ -1,0 +1,63 @@
+{
+  "slug": "bel_bl_economie_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://pe-dm.pages-perso.free.fr/sujets/economie.html",
+    "notice": "https://www.ens.psl.eu/sites/default/files/vf_ens_presentation_blses_bl_2026.pdf",
+    "references": [
+      "https://www.ecb.europa.eu/press/pr/date/2021/html/ecb.pr210708~dc78cc4b0d.fr.html",
+      "https://www.ecb.europa.eu/press/pr/date/2012/html/pr120906_1.en.html",
+      "https://www.federalreserve.gov/aboutthefed/section2a.htm",
+      "https://www.banque-france.fr/fr/publications-et-statistiques/publications/le-mandat-de-la-bce-vu-travers-le-prisme-de-la-nouvelle-strategie-monetaire"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/reglement-virement.svg",
+      "question": "Partie I",
+      "legende": "Un virement entre clients de deux banques"
+    },
+    {
+      "fichier": "figures/deux-chocs.svg",
+      "question": "Partie II",
+      "legende": "Demande en recul et offre renchérie"
+    },
+    {
+      "fichier": "figures/liquidite-fonds-propres.svg",
+      "question": "Partie II",
+      "legende": "Distinguer un manque de liquidité et un déficit de fonds propres"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante des mandats de la BCE et de la Fed, des OMT, et du mécanisme du prêteur en dernier ressort. Sujet de dissertation libre."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

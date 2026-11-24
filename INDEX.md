@@ -118,11 +118,16 @@
 | 2024 | BEL | AL | Philosophie | [md](2024/bel/bel_al_philosophie_2024/brut.md) | [md](2024/bel/bel_al_philosophie_2024/guide.md) |
 | 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
+| 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
+| 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Composition française | [md](2026/bel/bel_bl_composition-francaise_2026/brut.md) | [md](2026/bel/bel_bl_composition-francaise_2026/guide.md) |
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
+| 2026 | BEL | BL | Économie | [md](2026/bel/bel_bl_economie_2026/brut.md) | [md](2026/bel/bel_bl_economie_2026/guide.md) |
+| 2026 | BEL | BL | Espagnol | [md](2026/bel/bel_bl_espagnol_2026/brut.md) | [md](2026/bel/bel_bl_espagnol_2026/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine | [md](2026/bel/bel_bl_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine_2026/guide.md) |
+| 2026 | BEL | BL | Italien | [md](2026/bel/bel_bl_italien_2026/brut.md) | [md](2026/bel/bel_bl_italien_2026/guide.md) |
 | 2025 | BEL | BL | Mathématiques (oral) | [md](2025/bel/bel_bl_mathematiques-oral_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques-oral_2025/guide.md) |
 | 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
@@ -131,6 +136,8 @@
 | 2026 | BEL | BL | Philosophie | [md](2026/bel/bel_bl_philosophie_2026/brut.md) | [md](2026/bel/bel_bl_philosophie_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
 | 2025 | BEL | BL | Sciences sociales | [md](2025/bel/bel_bl_sciences-sociales_2025/brut.md) | [md](2025/bel/bel_bl_sciences-sociales_2025/guide.md) |
+| 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
+| 2026 | BEL | BL | Sociologie | [md](2026/bel/bel_bl_sociologie_2026/brut.md) | [md](2026/bel/bel_bl_sociologie_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -340,13 +347,18 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Chimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
+| 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
+| 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Informatique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_informatique_2026/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Mathématiques | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/guide.md) |
+| 2024 | ENS de Lyon | Second concours | Physique | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/guide.md) |
+| 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
 | 2026 | ENS Rennes | 2SEP | Anglais | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/guide.md) |
@@ -493,6 +505,7 @@
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
+| 2015 | X-ENS | MP | Maths A | [md](2015/x-ens/x-ens_mp_maths-a_2015/brut.md) | [md](2015/x-ens/x-ens_mp_maths-a_2015/guide.md) |
 | 2016 | X-ENS | MP | Maths A | [md](2016/x-ens/x-ens_mp_maths-a_2016/brut.md) | [md](2016/x-ens/x-ens_mp_maths-a_2016/guide.md) |
 | 2017 | X-ENS | MP | Maths A | [md](2017/x-ens/x-ens_mp_maths-a_2017/brut.md) | [md](2017/x-ens/x-ens_mp_maths-a_2017/guide.md) |
 | 2018 | X-ENS | MP | Maths A | [md](2018/x-ens/x-ens_mp_maths-a_2018/brut.md) | [md](2018/x-ens/x-ens_mp_maths-a_2018/guide.md) |
@@ -522,6 +535,7 @@
 | 2022 | X | FUI-FF 1 | Français | [md](2022/x/x_fui-ff-1_francais_2022/brut.md) | [md](2022/x/x_fui-ff-1_francais_2022/guide.md) |
 | 2023 | X | FUI-FF 1 | Français | [md](2023/x/x_fui-ff-1_francais_2023/brut.md) | [md](2023/x/x_fui-ff-1_francais_2023/guide.md) |
 | 2024 | X | FUI-FF 1 | Français | [md](2024/x/x_fui-ff-1_francais_2024/brut.md) | [md](2024/x/x_fui-ff-1_francais_2024/guide.md) |
+| 2022 | X | FUI-FF 1 | Physique | [md](2022/x/x_fui-ff-1_physique_2022/brut.md) | [md](2022/x/x_fui-ff-1_physique_2022/guide.md) |
 | 2023 | X | FUI-FF 1 | Physique | [md](2023/x/x_fui-ff-1_physique_2023/brut.md) | [md](2023/x/x_fui-ff-1_physique_2023/guide.md) |
 | 2024 | X | FUI-FF 1 | Physique | [md](2024/x/x_fui-ff-1_physique_2024/brut.md) | [md](2024/x/x_fui-ff-1_physique_2024/guide.md) |
 | 2022 | X | FUI-FF 2 | Anglais | [md](2022/x/x_fui-ff-2_anglais_2022/brut.md) | [md](2022/x/x_fui-ff-2_anglais_2022/guide.md) |
@@ -533,6 +547,7 @@
 | 2025 | X | FUI-FF 2 | Français | [md](2025/x/x_fui-ff-2_francais_2025/brut.md) | [md](2025/x/x_fui-ff-2_francais_2025/guide.md) |
 | 2024 | X | FUI-FF 2 | Mathématiques | [md](2024/x/x_fui-ff-2_mathematiques_2024/brut.md) | [md](2024/x/x_fui-ff-2_mathematiques_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Mathématiques | [md](2025/x/x_fui-ff-2_mathematiques_2025/brut.md) | [md](2025/x/x_fui-ff-2_mathematiques_2025/guide.md) |
+| 2022 | X | FUI-FF 2 | Physique | [md](2022/x/x_fui-ff-2_physique_2022/brut.md) | [md](2022/x/x_fui-ff-2_physique_2022/guide.md) |
 | 2023 | X | FUI-FF 2 | Physique | [md](2023/x/x_fui-ff-2_physique_2023/brut.md) | [md](2023/x/x_fui-ff-2_physique_2023/guide.md) |
 | 2024 | X | FUI-FF 2 | Physique | [md](2024/x/x_fui-ff-2_physique_2024/brut.md) | [md](2024/x/x_fui-ff-2_physique_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Physique | [md](2025/x/x_fui-ff-2_physique_2025/brut.md) | [md](2025/x/x_fui-ff-2_physique_2025/guide.md) |

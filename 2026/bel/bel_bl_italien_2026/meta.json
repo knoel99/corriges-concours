@@ -1,0 +1,56 @@
+{
+  "slug": "bel_bl_italien_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Italien",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=27",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_option_italien.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/criteri-di-appartenenza.svg",
+      "question": "Documents 1, 5 et 6",
+      "legende": "Tre domande sull’appartenenza"
+    },
+    {
+      "fichier": "figures/percorso-del-commento.svg",
+      "question": "Plan",
+      "legende": "Dalla definizione alla partecipazione"
+    },
+    {
+      "fichier": "figures/due-posizioni.svg",
+      "question": "Documents 4 et 6",
+      "legende": "Una riserva sul paese, due posizioni diverse"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante des six documents du livret, du rapport, du statut de la narratrice de Scego et des deux voix de la vignette d’Altan."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2024",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2024
+  },
+  "questions": 35,
+  "redaction": "Corrigé original non officiel rédigé par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/07/24_2c_lyon_sujet_phy.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_2cc_rap_ePhy.pdf"
+  },
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Sujet et rapport lus. Contre-calcul indépendant du choix des longueurs de référence, des déformations maximales, de la pente de coexistence, de la lecture des courbes de la figure 4 et du gradient de température aux deux phases."
+  },
+  "figures": [
+    {
+      "fichier": "figures/phasors-circuit-serie.svg",
+      "numero": 1,
+      "question": "A10",
+      "legende": "La direction du courant est l’axe réel. L’exemple illustre un circuit à réactance totale inductive."
+    },
+    {
+      "fichier": "figures/profil-glace-a-pression-constante.svg",
+      "numero": 2,
+      "question": "B3",
+      "legende": "Trois positions successives du front dans l’approximation quasi stationnaire. Le liquide est à 0 °C."
+    },
+    {
+      "fichier": "figures/avance-du-front.svg",
+      "numero": 3,
+      "question": "B7",
+      "legende": "La première moitié de la longueur gèle en un quart de la durée totale du modèle."
+    },
+    {
+      "fichier": "figures/trois-etats-mecaniques.svg",
+      "numero": 4,
+      "question": "B15",
+      "legende": "L’état intermédiaire à P₀ s’allonge. Le retour à la longueur imposée comprime les deux phases. Déformations amplifiées."
+    },
+    {
+      "fichier": "figures/surpression-mecanique.svg",
+      "numero": 5,
+      "question": "B18",
+      "legende": "La pression augmente plus vite à mesure que le liquide, plus compressible, disparaît."
+    },
+    {
+      "fichier": "figures/equilibre-des-deux-branches.svg",
+      "numero": 6,
+      "question": "B24",
+      "legende": "La branche thermique décroît et la branche mécanique croît. Valeurs du sujet avec a = 10 MPa/K."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
+  }
+}
