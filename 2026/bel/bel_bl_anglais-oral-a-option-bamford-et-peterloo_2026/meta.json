@@ -1,0 +1,45 @@
+{
+  "slug": "bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais (oral à option) — Bamford et Peterloo",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Anglais (oral à option) — Bamford et Peterloo",
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_option_anglais.pdf#page=2",
+    "sujet_sha256": "625085707e7b823d9e86bd49b9eb8e419bc8775604566f314567d0ea58f9e38b",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_option_anglais.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Explication",
+      "legende": "Who can speak, and when?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Explication historique de l’intégralité de l’exemple Bamford en annexe du rapport (p. 2–3), guidage pour vingt minutes, six relances et schéma."
+    }
+  ]
+}
