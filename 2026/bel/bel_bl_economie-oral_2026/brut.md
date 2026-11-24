@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction initiale** · GPT-6 · effort et vitesse non renseignés
+
+**Relecture antérieure** · configuration non renseignée
+
+**Lecture du rapport du jury et relecture des corrigés** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Onze dossiers de la banque officielle de 93 pages, dans leur ordre de publication. Pour chaque tirage : 1 h 30 de préparation, puis 30 minutes devant le jury, dont 15 minutes d’exposé et 15 minutes d’entretien. Chaque texte ci-dessous propose un exposé complet ; les réponses possibles de l’entretien dépendent des questions du jury.
 
 ## Dossier 1 — Les échanges économiques empêchent-ils la guerre ?
@@ -38,7 +44,7 @@ $$
 \end{aligned}
 $$
 
-soit environ **600 milliards d'euros d'écart sur une année de production**, pour cet exemple hypothétique. Le coût cumulé dépendrait ensuite de la trajectoire de reprise : il ne faut pas confondre perte de PIB annuelle, coût budgétaire et richesse détruite. Le document 2 corrobore ce chiffrage par le graphique : la croissance de la production, proche de sa moyenne les années précédant le conflit, chute brutalement l'année du déclenchement (de l'ordre de −7 points de pourcentage par rapport à la moyenne du pays) et reste le plus souvent inférieure à la moyenne ensuite, avec un retour près de zéro à la deuxième année ; dans le même temps, l’inflation augmente après le déclenchement, jusqu’à environ +11 points à la deuxième année. La guerre apparaît ainsi comme un **choc de stagflation** pour le pays concerné.
+soit environ **600 milliards d'euros d'écart sur une année de production**, pour cet exemple hypothétique. Le coût cumulé dépendrait ensuite de la trajectoire de reprise : il ne faut pas confondre perte de PIB annuelle, coût budgétaire et richesse détruite. Le document 2 mesure une autre grandeur. Son graphique ne chiffre pas la perte de PIB en niveau. Il montre que la croissance de la production, proche de sa moyenne les années précédant le conflit, chute brutalement l'année du déclenchement (de l'ordre de −7 points de pourcentage par rapport à la moyenne du pays) et reste le plus souvent inférieure à la moyenne ensuite, avec un retour près de zéro à la deuxième année ; dans le même temps, l’inflation augmente après le déclenchement, jusqu’à environ +11 points à la deuxième année. La guerre apparaît ainsi comme un **choc de stagflation** pour le pays concerné.
 
 Le document 1 ajoute une lecture géographique : les principaux points d'étranglement du transport maritime « sont devenus des zones de conflit armé principalement lorsque le commerce mondial était faible » ; à l'inverse, en période de forte mondialisation, les grandes puissances, qui ont « des intérêts en jeu », veillent à ce que les routes maritimes restent sûres et accessibles. **Plus les échanges sont intenses, plus la guerre est coûteuse pour les belligérants, et plus elle est évitée.**
 
@@ -64,7 +70,9 @@ La paix apparaît alors comme un **bien public** : non rivale et non exclusive �
 
 * * *
 
-Les échanges économiques n'« empêchent » pas mécaniquement la guerre : ils en modifient le calcul. En élevant le coût d'opportunité d'un conflit — massif, de l'ordre de 20 % du PIB (documents 1 et 2) — l'interdépendance *bilatérale* exerce un effet pacificateur réel, conforme à l'intuition de Montesquieu et de Kant. Mais cet effet est conditionnel : l'ouverture *multilatérale* peut au contraire désinhiber (document 3) ; la causalité est incertaine (1914, Ukraine) ; et le commerce échoue lorsque les décideurs ne supportent pas le coût social de la guerre. **Le commerce pacifie donc conditionnellement et partiellement — jamais à lui seul.** La montée des guerres commerciales et des rivalités sur les routes stratégiques illustre la fragilité d’une paix fondée sur les seuls échanges et l’importance des institutions qui les encadrent.
+Les échanges économiques n'« empêchent » pas mécaniquement la guerre : ils en modifient le calcul. En augmentant les gains d’échange auxquels il faudrait renoncer, l’interdépendance *bilatérale* peut réduire le risque de conflit. La perte de production rapportée par le document 1 inclut aussi des dommages étrangers à ce mécanisme. Cette interprétation est conforme à l'intuition de Montesquieu et de Kant. Mais cet effet est conditionnel : l'ouverture *multilatérale* peut au contraire désinhiber (document 3) ; la causalité est incertaine (1914, Ukraine) ; et le commerce échoue lorsque les décideurs ne supportent pas le coût social de la guerre. **Le commerce pacifie donc conditionnellement et partiellement — jamais à lui seul.** La montée des guerres commerciales et des rivalités sur les routes stratégiques illustre la fragilité d’une paix fondée sur les seuls échanges et l’importance des institutions qui les encadrent.
+
+**Relance d’entretien.** Deux voisins qui échangent beaucoup se font-ils moins souvent la guerre en raison du commerce ? Une comparaison brute mêle causalité inverse et facteurs communs comme la stabilité des institutions. Suivre les mêmes couples de pays et examiner des variations du coût des échanges indépendantes de la relation politique améliore l’identification, sous réserve que ces variations n’agissent pas directement sur les conflits.
 
 ## Dossier 2 — Écologie : les nudges (« coups de pouce ») peuvent-ils remplacer les politiques contraignantes ?
 
@@ -103,6 +111,8 @@ Cette combinaison doit être socialement et démocratiquement soutenable. Une ta
 La critique de Wagener attire l'attention sur l'influence des intérêts économiques dans la décision collective. On peut en retenir la question de la capture des politiques sans adopter comme une loi démontrée l'impossibilité de toute transition dans une démocratie de marché. Des règles publiques peuvent précisément changer les rendements privés et les rapports de force. Leur qualité se juge à leurs effets, à leur répartition et à leur légitimité, non à l'étiquette douce ou dure qui leur est attachée.
 
 Enfin, l'évaluation doit mesurer les émissions réellement évitées, leur permanence, le coût et les effets redistributifs, en comparant si possible des groupes soumis ou non au dispositif. Une hausse des intentions déclarées ne vaut pas réduction d'émissions. Les nudges **ne remplacent donc pas les politiques contraignantes** : ils constituent un instrument utile lorsque le problème tient au contexte du choix, au sein d'une politique qui traite aussi les externalités, les infrastructures et les inégalités.
+
+**Relance d’entretien.** Une taxe et un quota donnent-ils le même résultat ? Si le décideur connaît la demande de permis, il peut fixer une taxe égale au prix d’équilibre du plafond. En présence d’incertitude, la taxe stabilise le prix payé et le quota, la quantité. Les recettes ou la valeur des droits dépendent en outre de la mise aux enchères ou de l’allocation gratuite.
 
 ## Dossier 3 — Changement climatique et inégalités
 
@@ -144,6 +154,8 @@ Un signal-prix reste utile pour internaliser le dommage climatique, mais ses rec
 
 Enfin, la participation des populations concernées améliore la connaissance des contraintes et la légitimité des choix. Réduire les inégalités peut renforcer la coopération, la confiance et l'accès aux innovations sobres. Le climat et les inégalités forment donc **une relation à double sens** : une transition efficace doit répartir justement les efforts, et la réduction de certaines inégalités constitue elle-même une condition de sa réussite.
 
+**Relance d’entretien.** Une baisse des émissions territoriales prouve-t-elle qu’un ménage a réduit son empreinte ? Non. Une production délocalisée réduit les émissions du territoire producteur initial mais peut rester incorporée dans la consommation de ses résidents. Le calcul d’empreinte rattache les émissions aux biens et services consommés.
+
 ## Dossier 4 — Les géants du numérique menacent-ils la concurrence ou révèlent-ils la nécessité de la régulation publique des marchés ?
 
 **Problématique** : comment préserver les gains d'efficacité des plateformes numériques tout en empêchant leurs avantages de se transformer en pouvoir durable d'exclusion ?
@@ -183,6 +195,8 @@ Une régulation mal conçue peut toutefois renforcer les acteurs installés. Des
 Enfin, soutenir la recherche, les compétences et les infrastructures peut élargir les possibilités d'entrée ; subventionner durablement un acteur sans condition ne garantit pas une concurrence effective. Il faut évaluer les effets sur l'accès, la qualité, les coûts de changement et l'innovation, et pas seulement sur le nombre de fournisseurs nationaux.
 
 Les géants du numérique **menacent la concurrence lorsqu'ils convertissent leurs avantages en possibilités d'exclusion**. Ils montrent aussi que le marché concurrentiel n'est pas un état naturel qu'il suffirait de laisser agir. La bonne régulation doit rendre les positions contestables, protéger les utilisateurs et préserver les économies utiles, plutôt que choisir abstraitement entre gigantisme privé et suppression du marché.
+
+**Relance d’entretien.** Les parts de marché permettent-elles de calculer exactement un indice de concentration ? Le graphique donne seulement les principaux fournisseurs. On peut sommer leurs parts et les carrés de leurs parts, mais pour un Herfindahl-Hirschman complet il manquerait la distribution entre tous les autres acteurs.
 
 ## Dossier 5 — Qui paie le coût de la dette ?
 
@@ -224,6 +238,8 @@ Pour les ménages, prévenir le crédit abusif, rendre les frais lisibles et org
 
 Ainsi **le débiteur n'est pas toujours le seul payeur, et un paiement n'est pas toujours un coût social net**. La question décisive porte sur l'usage initial des fonds, la capacité de remboursement et les règles d'ajustement. Une politique responsable cherche à préserver les financements utiles tout en empêchant que leur charge soit transférée silencieusement vers les populations les moins protégées.
 
+**Relance d’entretien.** Une dette extérieure de 60 pour un PIB de 200 représente 30 % du PIB. Un service annuel de 6 pour des exportations de 30 représente 20 % des exportations. Dépasser le seuil de 15 % du dossier signale une vulnérabilité de paiement en devises ; il ne démontre pas à lui seul l’insolvabilité.
+
 ## Dossier 6 — Plateformes collaboratives type Airbnb : risques et opportunités
 
 **Problématique** : comment conserver les gains de mise en relation et d'utilisation du parc procurés par les plateformes de location tout en limitant leurs effets sur l'accès au logement ?
@@ -263,6 +279,8 @@ L'effectivité dépend des données, des moyens de contrôle et des sanctions. L
 Les pouvoirs publics doivent aussi agir sur l'offre résidentielle, l'accès au foncier et les besoins des habitants. Interdire une plateforme ne construirait pas les logements manquants. Inversement, demander seulement de construire davantage négligerait les effets immédiats de l'arbitrage touristique sur un parc existant rare. La transparence fiscale et la contribution aux charges locales permettent enfin de mieux rapprocher bénéfices privés et coûts collectifs.
 
 Les plateformes collaboratives **créent des possibilités réelles mais répartissent inégalement leurs gains et leurs risques**. Leur régulation doit préserver la location occasionnelle et les gains d'appariement, tout en empêchant que l'exploitation touristique permanente d'un parc contraint dégrade durablement l'accès au logement. L'indicateur décisif n'est pas seulement le nombre de réservations, mais aussi l'évolution du parc résidentiel, des prix et des conditions de vie locales.
+
+**Relance d’entretien.** Comment tester l’effet d’une limitation ? Comparer les variations d’offre résidentielle et de loyers dans une zone traitée et une zone comparable avant et après l’entrée en vigueur, vérifier leurs tendances antérieures et les reports d’annonces sur les zones voisines.
 
 ## Dossier 7 — De la dénatalité au déclin économique ?
 
@@ -306,6 +324,8 @@ La politique familiale, enfin, peut rendre possibles les naissances souhaitées 
 
 La dénatalité **ne conduit donc pas mécaniquement au déclin économique**. Elle transforme les contraintes de production, de solidarité et d'investissement. Le critère pertinent demeure le niveau de vie et sa distribution, dans une société capable d'adapter ses institutions et de prendre en compte également ses ressources naturelles.
 
+**Relance d’entretien.** Si le nombre d’emplois par habitant diminue de 1 % tandis que la production par emploi augmente de 2 %, le PIB par habitant est multiplié par 0,99 × 1,02 = 1,0098. Il croît donc d’environ 0,98 %. Ce petit calcul explique pourquoi dénatalité et déclin ne sont pas synonymes.
+
 ## Dossier 8 — Supprimer un jour férié
 
 **Problématique** : à quelles conditions un jour travaillé supplémentaire accroît-il réellement la production et les ressources collectives, plutôt que de déplacer l'activité et d'en faire porter le coût à certains salariés ?
@@ -342,6 +362,8 @@ Le loisir a lui-même une valeur, même s'il n'entre pas directement dans le PIB
 
 Une décision cohérente doit préciser son objectif : financer l'autonomie, réduire le déficit ou augmenter les capacités productives. Elle doit ensuite comparer cette mesure à d'autres prélèvements ou à d'autres organisations du travail, avec leurs effets redistributifs. Les gains annoncés doivent être confrontés aux comportements réels, à la demande et aux emplois financés. **Supprimer un jour férié n'est ni une recette gratuite ni nécessairement une perte collective** : son résultat dépend du dispositif concret et de la manière dont sont partagés le travail, le revenu et le temps libre.
 
+**Relance d’entretien.** Le salaire mensuel restant constant, qui finance la mesure ? Le temps travaillé augmente pour le salarié concerné et le salaire horaire moyen baisse. L’employeur peut gagner un supplément de production, mais supporter une cotisation. Les clients ou les travailleurs peuvent ensuite en supporter une partie selon la réaction des prix et des salaires.
+
 ## Dossier 9 — L’accord UE-Mercosur
 
 **Problématique** : comment apprécier les gains d'un accord commercial lorsque ses effets sectoriels, sociaux et environnementaux sont beaucoup plus contrastés que son effet macroéconomique moyen ?
@@ -353,6 +375,8 @@ Le document 1 est une prise de position d'Antoine Bouët, directeur du CEPII, pu
 * * *
 
 Un accord commercial réduit des obstacles à l'échange entre partenaires. Dans le raisonnement des avantages comparatifs, chaque pays peut gagner en développant les productions dont le coût d'opportunité est relativement faible, même s'il n'est pas le plus productif dans toutes les activités. Il faut comparer des coûts relatifs et non déduire mécaniquement une spécialisation d'une seule ressource abondante.
+
+Prenons un exemple pédagogique en heures de travail par unité, indépendant des statistiques du dossier. En Europe il faut 10 heures pour produire une voiture et 2 pour une unité de bœuf. Au Mercosur, respectivement 18 et 2. Une voiture coûte donc 5 unités de bœuf sacrifiées dans l’UE et 9 dans le Mercosur. L’Europe dispose de l’avantage comparatif automobile et le Mercosur de l’avantage comparatif en bœuf. À un prix international de 7 unités de bœuf par voiture, produire et exporter la voiture procure à l’Europe deux unités de bœuf supplémentaires par rapport à la transformation de ses heures chez elle. Importer la voiture économise au Mercosur deux unités par rapport à son coût domestique. Cela explique une possibilité de gain mutuel, sans supposer que les économies réelles se spécialisent intégralement dans deux biens.
 
 Les données agricoles éclairent néanmoins des différences de dotation. En 2023, le dossier donne environ 389 millions d'hectares de surface agricole au Mercosur contre 161 dans l'UE ; l'écart porte particulièrement sur les prairies. À l'inverse, le stock de capital agricole présenté est d'environ 1 117 milliards de dollars dans l'UE contre 186 au Mercosur. Ces ordres de grandeur suggèrent des intensités productives différentes. Ils ne mesurent pas directement la productivité par travailleur ni les coûts complets.
 
@@ -381,6 +405,8 @@ Des contrôles traçables, des moyens douaniers et une évaluation environnement
 La diversification commerciale possède enfin une valeur stratégique. Réduire une dépendance excessive à un seul débouché ou fournisseur peut renforcer la résilience. Ce bénéfice ne supprime pas l'exigence d'évaluation des impacts sectoriels et ne rend pas souhaitable n'importe quelle ouverture.
 
 L'accord UE-Mercosur **ne se juge ni au seul volume des échanges ni à un affrontement simplifié entre deux produits**. Son intérêt dépend des gains d'accès au marché, de la répartition de l'ajustement, du contrôle des engagements et de la protection des biens collectifs. La question économique centrale est de rendre compatibles ouverture, transition productive et capacité des sociétés à en partager les bénéfices.
+
+**Relance d’entretien.** Si l’Europe est plus productive en niveau, peut-elle encore gagner à importer ? Oui. C’est le rapport entre temps nécessaires aux deux productions dans chaque zone qui détermine les possibilités d’échange. Dans l’exemple, passer de cinq à sept unités de bœuf pour une voiture représente un gain pour l’Europe même si elle produit chaque bien avec au moins autant d’efficacité.
 
 ## Dossier 10 — Le patrimoine des ménages français
 
@@ -419,6 +445,8 @@ Un droit à pension n'est toutefois ni librement vendable ni transmissible comme
 Le travail de la BCE éclaire enfin le comportement d'épargne. Une meilleure retraite attendue peut réduire le besoin d'accumuler des actifs privés. Les auteurs estiment en moyenne une baisse de 53 centimes du patrimoine financier pour un dollar supplémentaire de richesse retraite, mais soulignent l'hétérogénéité entre pays et groupes. Il ne s'agit ni d'une substitution euro pour euro ni d'une règle individuelle certaine ; des complémentarités apparaissent même dans certains déciles inférieurs.
 
 Le patrimoine des ménages français est donc **à la fois très concentré, hétérogène dans sa composition et incomplet si l'on ignore les ressources sociales futures**. L'action publique doit articuler accès au logement, fiscalité des transmissions, protection contre les risques et retraite, en distinguant richesse nette, liquidité et sécurité économique. Une seule moyenne ne suffit pas à mesurer ces dimensions.
+
+**Relance d’entretien.** Classer les ménages d’après le patrimoine brut puis soustraire la dette du « ménage médian » donne-t-il la médiane du patrimoine net ? Non. La dette modifie l’ordre entre ménages. Il faut calculer le patrimoine net de chacun puis les reclasser.
 
 ## Dossier 11 — Les prix négatifs de l’énergie sont-ils anormaux ?
 
@@ -460,3 +488,6 @@ La dépêche Reuters rappelle cette nécessité d'un bilan complet pour les cent
 
 Les prix négatifs ne sont ainsi **ni économiquement impossibles ni, par eux-mêmes, la preuve d'un système optimal**. Ils peuvent constituer un signal rationnel d'excédent temporaire dans un environnement contraint. L'enjeu est de développer la flexibilité et des règles de financement adaptées, afin que l'abondance bas carbone d'une période bénéficie aux utilisateurs sans compromettre la fiabilité du système.
 
+**Relance d’entretien.** Pourquoi une batterie ne fait-elle pas immédiatement disparaître tous les prix négatifs ? Il faut qu’elle soit accessible au bon nœud, qu’elle dispose encore de capacité de charge et qu’une revente ultérieure couvre pertes et coût du cycle. Si toutes les batteries locales sont déjà pleines, la contrainte persiste.
+
+[Énoncé officiel](https://www.ens.psl.eu/sites/default/files/2026_sujets_economie_tronc_commun.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_economie_tronc_commun.pdf)
