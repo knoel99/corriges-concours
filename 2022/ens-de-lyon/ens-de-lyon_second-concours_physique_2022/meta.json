@@ -1,0 +1,99 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2022
+  },
+  "questions": 42,
+  "redaction": "Les dix questions de cours et les trente-deux du problème sont traitées, avec schéma RC, densité quantique et énergie de détachement. Le préfacteur du seuil capillaire, les deux temps de fonte et le déplacement vertical sont calculés.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/2c2022_phy.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/10/22_2c_rap_ephy.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "b24c9e681d2709e05f84ec6f22ff2f643c597d31cd3409b73b1e123d91117b6a",
+    "rapport_sha256": "5758163a8da7dfa879d0121fa460c4f2573b74ebab7d67261846412dbcbf06ce"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A1",
+      "fichier": "figures/filtre-rc.svg",
+      "legende": "Le condensateur est branché entre la sortie et la référence de potentiel."
+    },
+    {
+      "numero": 2,
+      "question": "A10",
+      "fichier": "figures/densite-puits.svg",
+      "legende": "L’aire sous le profil normalisé vaut 1. La densité est nulle aux deux parois et dans les régions extérieures."
+    },
+    {
+      "numero": 3,
+      "question": "B16",
+      "fichier": "figures/energie-goutte.svg",
+      "legende": "La compétition entre une énergie de surface quadratique et une contribution gravitaire en puissance quatre crée un maximum."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix questions de cours et les trente-deux du problème sont traitées, avec schéma RC, densité quantique et énergie de détachement. Le préfacteur du seuil capillaire, les deux temps de fonte et le déplacement vertical sont calculés.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26",
+      "B27",
+      "B28",
+      "B29",
+      "B30",
+      "B31",
+      "B32"
+    ]
+  }
+}
