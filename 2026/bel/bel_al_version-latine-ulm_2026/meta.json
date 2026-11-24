@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_version-latine-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine (Ulm)",
+    "annee": 2026
+  },
+  "intitule": "La rencontre de Thalestris et d’Alexandre",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_version_lat-grec_261103.pdf#page=2",
+    "sujet_sha256": "1d5b7b233a6060f44662f44fca30784b4afd74a19a16aec7f8d9e15fc25324be",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_ecrit_version_latine.pdf",
+    "rapport_sha256": "6bb53c4c18b5286730d61e3d583c999391f5b686a299bd9013838e02b23052a4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/discours-reine.svg",
+      "question": "Version",
+      "legende": "Suivre les sujets du discours indirect"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture des dix pages du rapport écrit. Vérification des ablatifs absolus, du portrait ethnographique, des discours indirects et des deux destinations au regard du sujet, p. 2."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « La rencontre de Thalestris et d’Alexandre » et du schéma « Suivre les sujets du discours indirect »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Collation personnelle de la version et du guide avec le texte intégral. Précision du repère spatial haud procul, contrôle des deux emplois de subsistere, de la durée et du départ."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
