@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -90,7 +92,7 @@ Le sous-ensemble $K\cap\mathbb Q$ est au plus dénombrable. L’énumérer dans 
 
 ### Question II.6b
 
-Pour un compact quelconque, la seule convergence sur $K\cap\mathbb Q$ ne suffit pas à justifier la conclusion imprimée. Par exemple, pour $K=\{\sqrt2\}$ et $g_n(\sqrt2)=(-1)^n$, (P2) est satisfaite et la convergence sur $K\cap\mathbb Q=\varnothing$ est automatique, alors que la suite a deux valeurs d’adhérence au point de $K$. Le rapport du jury signale cette erreur.
+Pour un compact quelconque, la seule convergence sur $K\cap\mathbb Q$ ne suffit pas à justifier la conclusion imprimée. Par exemple, pour $K=\{\sqrt2\}$ et $g_n(\sqrt2)=(-1)^n$, (P2) est satisfaite et la convergence sur $K\cap\mathbb Q=\varnothing$ est automatique, alors que la suite a deux valeurs d’adhérence au point de $K$. Le rapport du jury signale cette erreur. Le même défaut peut apparaître avec un rationnel dans le compact. Sur $K=\{0,\sqrt2\}$, prenons $g_n(0)=0$ et $g_n(\sqrt2)=(-1)^n$. Cette famille est uniformément équicontinue puisque les deux points sont isolés et séparés. La convergence en $0$ ne fournit aucune information en $\sqrt2$.
 
 Utilisons l’extraction renforcée de II.6a. Pour $x\in K$ et $\varepsilon>0$, l’équicontinuité en $x$ donne un rayon $r$ tel que $\|g_n(y)-g_n(x)\|<\varepsilon/3$ pour $y\in K\cap B(x,r)$ et tout $n$. Prenons-y $y\in D$. La convergence en $y$ rend $\|g_n(y)-g_m(y)\|<\varepsilon/3$ pour $n,m$ assez grands. L’inégalité triangulaire rend alors $(g_n(x))$ de Cauchy. Dans $\mathbb R^d$ elle converge vers un unique $g(x)$, qui est sa seule valeur d’adhérence. Si $K$ est un intervalle non dégénéré, $D=K\cap\mathbb Q$ convient directement.
 
@@ -140,7 +142,9 @@ La somme télescope par le schéma d’Euler. Pour $t=T$, on conserve les $N$ in
 
 ### Question III.5
 
-Sur le $n$-ième intervalle, $\|\psi_N(t)-\varphi_N(t)\|=|t-t_n|\|F(y_n)\|\le M\Delta t$, et l’écart vaut zéro en $T$. Ainsi $\|\psi_{N_j}-\varphi\|_\infty\le MT/N_j+\|\varphi_{N_j}-\varphi\|_\infty\to0$. La limite uniforme recherchée est la même $\varphi$.
+Sur le $n$-ième intervalle, $\|\psi_N(t)-\varphi_N(t)\|=|t-t_n|\|F(y_n)\|\le M\Delta t$, et l’écart vaut zéro en $T$. Ainsi $\|\psi_{N_j}-\varphi\|_\infty\le MT/N_j+\|\varphi_{N_j}-\varphi\|_\infty\to0$. La limite uniforme recherchée est la même $\varphi$. On peut aussi mesurer directement le défaut de l’équation intégrale pour le polygone entier. Sur la boule compacte, notons $\omega(\eta)=\sup_{\|x-y\|\le\eta}\|F(x)-F(y)\|$, où les deux points appartiennent à $B_r$. Par III.4 et la borne précédente,
+$$\sup_{t\in[0,T]}\left\|\varphi_N(t)-y_{\rm init}-\int_0^t F(\varphi_N(s))\,ds\right\|\le T\omega(MT/N).$$
+La continuité uniforme donne $\omega(MT/N)\to0$, y compris lorsque $M=0$.
 
 ### Question III.6
 

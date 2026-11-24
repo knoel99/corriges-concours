@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -393,7 +395,7 @@ Pour des listes croissantes $I,J$ de $k$ indices de lignes et de colonnes, écri
 $$
 \det N_{I,J}=\sum_{|H|=|L|=k}\det U_{I,H}\,\det M_{H,L}\,\det V_{L,J}.
 $$
-En effet, dans un produit $PQ$, chaque colonne restreinte aux lignes $I$ est une combinaison des colonnes de $P$ restreintes à $I$. Par multilinéarité du déterminant, les $k$-uplets d’indices répétés donnent zéro. Pour un même ensemble ordonné $H$ sans répétition, les $k!$ permutations apportent, avec leurs signes, exactement le coefficient $\det Q_{H,J}$ de $\det P_{I,H}$. On obtient la formule de Cauchy-Binet, ici appliquée deux fois.
+En effet, dans un produit $PQ$, chaque colonne restreinte aux lignes $I$ est une combinaison des colonnes de $P$ restreintes à $I$. Par multilinéarité du déterminant, les $k$-uplets d’indices répétés donnent zéro. Pour un même ensemble ordonné $H$ sans répétition, les $k!$ permutations apportent, avec leurs signes, exactement le coefficient $\det Q_{H,J}$ de $\det P_{I,H}$. On obtient la formule de Cauchy-Binet, ici appliquée deux fois. Par exemple pour $k=1$, la formule redonne $N_{ij}=\sum_{h,l}U_{ih}M_{hl}V_{lj}$. Pour $k$ maximal dans le cas carré, elle redonne la multiplicativité du déterminant. Ces deux cas vérifient le rôle distinct des ensembles de lignes $H$ et de colonnes $L$.
 
 Chaque mineur de $N$ est donc combinaison linéaire entière des mineurs de $M$. L’idéal de $\mathbb Z$ qu’ils engendrent est inclus dans celui des mineurs de $M$. L’équivalence étant symétrique et $U^{-1},V^{-1}$ étant encore entières, l’inclusion inverse vaut également. Les générateurs positifs ou nuls des deux idéaux sont égaux, donc $m_k(M)=m_k(N)$, y compris lorsque tous les mineurs sont nuls.
 
@@ -469,7 +471,7 @@ $\varphi$ garde les $r$ premières lignes. Dans $W\subset V$, seul le bloc $B_{2
 
 #### Solution
 
-Soit $E=M_{r,m}(\mathbb C)$ et $s=\dim W$. Si $B\in W$ est tel que $\psi(B)=0$, on a $\operatorname{Tr}(B_{21}D)=0$ pour toute matrice $D\in M_{r,m-r}(\mathbb C)$. En choisissant une unique entrée $1$ dans $D$, on lit successivement chaque coefficient de $B_{21}$, donc $B_{21}=0$ et $B=0$. Ainsi $\psi$ est injective et $\dim\psi(W)=s$.
+Soit $E=M_{r,m}(\mathbb C)$ et $s=\dim W$. Si $B\in W$ est tel que $\psi(B)=0$, on a $\operatorname{Tr}(B_{21}D)=0$ pour toute matrice $D\in M_{r,m-r}(\mathbb C)$. Plus précisément, le coefficient de $D_{ji}$ dans la trace est $(B_{21})_{ij}$ car $\operatorname{Tr}(B_{21}D)=\sum_{i=1}^{m-r}\sum_{j=1}^{r}(B_{21})_{ij}D_{ji}$. Avec l’unité matricielle d’indice $(j,i)$, la nullité de cette forme donne chaque coefficient de $B_{21}$, donc $B_{21}=0$ et $B=0$. Ainsi $\psi$ est injective et $\dim\psi(W)=s$.
 
 Pour $B\in W$ et $C\in V$, V.2b donne $B_{21}C_{12}=0$ puisque $B_{12}=0$. D’où $\psi(B)(\varphi(C))=0$. Ainsi $\varphi(V)\subset\psi(W)^\perp\subset E$. L’annulateur de $s$ formes linéaires indépendantes sur $E$ a dimension $\dim E-s=mr-s$, par prolongement en une base du dual. On obtient $\dim\varphi(V)\le mr-s$.
 
