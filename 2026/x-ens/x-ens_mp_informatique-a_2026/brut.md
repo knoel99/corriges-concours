@@ -1,6 +1,13 @@
-# X-ENS MP — Informatique A 2026 · Corrigé brut
+# X-ENS MP-MPI — Informatique A 2026 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 
 *Bases de données de vecteurs.* Durée 4 h, calculatrice interdite, langage OCaml. On note $[n]=\{0,\dots,n-1\}$ et $\log$ le logarithme en base 2.
 
@@ -104,76 +111,77 @@ Si $x<y$, alors $x$ est plus petit que tous les éléments de $b$, donc $x\notin
 
 ### Question I.7
 
-**(a)**
+**(a)** Deux couples d’occurrences peuvent produire le même triplet. Pour ne le garder qu’une fois, on mémorise les triplets déjà rencontrés dans un arbre binaire de préfixes. Le chemin d’un triplet est la concaténation des 62 bits utiles de chacun de ses trois entiers naturels, dans un ordre fixe. Tous les chemins ont donc la même longueur. La première insertion doit créer au moins une arête.
 
 ```ocaml
+type prefixe = { fils : prefixe option array }
+let vide () = { fils = Array.make 2 None }
+
+let nouveau racine (a, b, c) =
+  let courant = ref racine and cree = ref false in
+  let suivre entier =
+    for i = 61 downto 0 do
+      let bit = (entier lsr i) land 1 in
+      match (!courant).fils.(bit) with
+      | Some suite -> courant := suite
+      | None ->
+          let suite = vide () in
+          (!courant).fils.(bit) <- Some suite;
+          courant := suite;
+          cree := true
+    done
+  in
+  suivre a; suivre b; suivre c; !cree
+
 let tosignature (sp : sparse) (delta : int) : signature =
   let a = Array.of_list sp in
-  let n = Array.length a in
-  let res = ref [] in
-  for i = 0 to n - 1 do
-    let (f1, t1) = a.(i) in
-    for j = 0 to n - 1 do
-      let (f2, t2) = a.(j) in
-      let d = t2 - t1 in
-      if 0 < d && d <= delta then res := (f1, f2, d) :: !res
-    done
-  done;
-  !res
+  let vus = vide () and resultat = ref [] in
+  Array.iter (fun (f, t) ->
+    Array.iter (fun (g, u) ->
+      let ecart = u - t in
+      if 0 < ecart && ecart <= delta then
+        let cle = (f, g, ecart) in
+        if nouveau vus cle then resultat := cle :: !resultat
+    ) a
+  ) a;
+  !resultat
 ```
 
-Un triplet $(f_1,f_2,\delta)$ est ajouté si et seulement s'il existe deux occurrences $(f_1,t)$ et $(f_2,t+\delta)$ dont l'écart vérifie
-
-$$0<\delta\le\Delta.$$
-
-C'est exactement la définition (1). Si le même triplet est réalisé à plusieurs instants $t$, il figure plusieurs fois dans la liste. Le supprimer en double ferait perdre la borne $O(n^2)$, et la question I.8 compte précisément les couples d'occurrences.
-
-**(b)** `Array.of_list` coûte $O(n)$. Les deux boucles imbriquées font $n^2$ tours, chacun en $O(1)$ : accès au tableau, test, ajout en tête. Le total est $\boxed{O(n^2)}$.
+**(b)** Chaque paire autorisée par (1) propose sa clé et chaque clé apparaît une seule fois dans la liste finale. Sur les entiers OCaml à 63 bits de l’énoncé, une consultation de l’arbre examine $3\times62$ bits, indépendamment de $n$. Les deux parcours du tableau coûtent donc $O(n^2)$ dans le pire cas. Pour $U$ triplets distincts, l’arbre contient au plus $1+186U$ nœuds.
 
 ### Question I.8
 
-**(a)**
+**(a)** Le jury attend le balayage par une file d’instants. Avant d’enfiler $t$, on retire les instants $u$ tels que $t-u>\Delta$. Le nombre d’éléments restants est exactement le nombre de **couples d’occurrences** qui se terminent en $t$. La taille de l’**ensemble** défini par (1) peut être plus petite. Par exemple, avec `[(1,0); (1,1); (1,2)]` et $\Delta=1$, les temps sont distincts, mais les deux couples donnent le seul triplet $(1,1,1)$.
+
+Pour respecter la définition ensembliste, gardons les fréquences dans la file et mémorisons les triplets avec `nouveau` de I.7.
 
 ```ocaml
 let signature_size (sp : sparse) (delta : int) : int =
-  let q = Queue.create () in
-  let count = ref 0 in
-  List.iter (fun (_, t) ->
-      while Queue.length q > 0 && t - Queue.peek q > delta do
-        Queue.drop q
-      done;
-      count := !count + Queue.length q;
-      Queue.push t q)
-    sp;
-  !count
+  let q = Queue.create () and vus = vide () in
+  let total = ref 0 in
+  List.iter (fun (g, t) ->
+    while Queue.length q > 0 && t - snd (Queue.peek q) > delta do
+      Queue.drop q
+    done;
+    Queue.iter (fun (f, u) ->
+      if nouveau vus (f, g, t - u) then incr total
+    ) q;
+    Queue.push (g, t) q
+  ) sp;
+  !total
 ```
 
-Sur les exemples : avec `[(1,1); (5,5)]` et $\Delta=3$, on obtient 0. Avec les cinq couples et $\Delta=10$, on obtient $0+1+2+3+4=10$.
+**(b)** Au moment du parcours de la file, ses entrées sont exactement les occurrences antérieures telles que $0<t-u\le\Delta$. Les dates sont strictement croissantes, donc un élément retiré restera trop ancien. Chaque réalisation d’un triplet se présente à sa date de fin. `nouveau` augmente le compteur uniquement à la première réalisation. Les deux exemples de l’énoncé donnent respectivement 0 et 10.
 
-**(b)** *Correction.* La liste `sp` est triée par temps croissant, et les temps sont distincts. Pour $i<j$, on a donc $t_j-t_i>0$. Le couple d'occurrences $(i,j)$ fournit alors un triplet si et seulement si $t_j-t_i\le\Delta$.
+![Figure 1 — Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent deux couples candidats, puis t_j est enfilé](figures/i8-file-fenetre-glissante.svg)
 
-Invariant : juste avant le traitement de $t_j$, la file contient, dans l'ordre croissant, les $t_i$ ($i<j$) tels que $t_{j-1}-t_i\le\Delta$.
-
-- À l'arrivée de $t_j$, la boucle `while` retire de la tête les temps $t_i$ tels que $t_j-t_i>\Delta$. La file est croissante, donc ces temps forment un préfixe. Si $t_j-t_i>\Delta$, alors $t_{j'}-t_i>\Delta$ pour tout $j'>j$ : un temps retiré ne pourra plus jamais servir.
-- La file contient alors exactement les partenaires valides de $t_j$. On ajoute leur nombre au compteur, puis on enfile $t_j$, ce qui rétablit l'invariant.
-
-![Figure 1 — Un pas de signature_size avec Δ = 4 : à l'arrivée de t_j = 10, les instants 4 et 5 sont défilés, les deux instants restants donnent 2 triplets, puis t_j est enfilé](figures/i8-file-fenetre-glissante.svg)
-
-En sommant sur $j$, on obtient le nombre de triplets, c'est-à-dire $|S_\Delta(M)|$.
-
-*Complexité.* La liste est parcourue une seule fois. Chaque temps est enfilé une fois et défilé au plus une fois : la boucle `while` fait donc au plus $n$ tours **au total** sur tout le parcours, et non $n$ tours par élément.
-
-Toutes les opérations de file, `Queue.length` comprise, sont en $O(1)$ d'après l'énoncé. La complexité est amortie linéaire : $\boxed{O(n)}$.
+Si $P$ est le nombre de couples qui satisfont la borne temporelle, les enfilements et défilements coûtent $O(n)$ en tout et le traitement des couples coûte $O(P)$. Le coût total est $O(n+P)$, avec $P\le n\min(n,\Delta)$ puisque les temps sont des entiers distincts. Il est donc linéaire en $n$ pour $\Delta$ fixé. Pour compter seulement les couples, la variante du jury remplace le parcours de la file par l’addition de `Queue.length q`. Son coût reste $O(n)$ même si $\Delta$ varie. Ce dernier compteur fournit directement le cardinal de la signature lorsque chaque triplet n’a qu’une réalisation.
 
 ### Question I.9
 
-**C'est la musique $A$.** Les deux musiques partagent chacune trois triplets avec $M$ : l'indice de Jaccard ne les départage pas, il faut regarder les temps.
+**La musique $A$ correspond le mieux à l’extrait.** Les trois écarts temporels de la figure 2 sont concentrés près d’une même valeur pour $A$. Pour $B$, ils se répartissent autour de 3, 8 et 11. Une translation de l’extrait dans la musique produit un décalage constant, quelle que soit son amplitude. L’histogramme de $A$ est donc le plus compatible avec cette hypothèse.
 
-Pour $A$, l'histogramme des écarts $t'^{(A)}_i-t_i$ est concentré sur une seule valeur : les trois écarts valent environ 1. Les triplets communs apparaissent donc dans $A$ avec un **même décalage temporel**, ce qui veut dire que $M$ est un morceau de $A$ translaté dans le temps.
-
-Ce qui compte est cette concentration, et non la petitesse de l'écart : un décalage commun de 100 serait tout aussi probant, l'extrait commençant alors plus loin dans le morceau.
-
-Pour $B$, les écarts sont dispersés, vers 3, 8 et 11 environ. Aucun décalage commun n'explique les correspondances, qui sont donc fortuites, par exemple dues à du bruit.
+Le texte annonce des écarts en valeur absolue. Des amplitudes égales constituent un indice de cohérence. Pour confirmer la translation, on vérifierait que les trois écarts signés sont égaux. Les trois correspondances dans chaque musique donnent le numérateur de Jaccard. Les tailles des unions seraient nécessaires pour comparer les deux indices.
 
 ### Question I.10
 
@@ -251,6 +259,8 @@ let search (skl : skip_list) (v : int) : skip_node option =
   descend skl.init_node skl.init_level
 ```
 
+Si $v\le0$, toutes les clés réelles sont strictement positives. Le programme descend jusqu’à l’étage 0 puis rend `None`. Supposons désormais $v>0$.
+
 **(b)** *Invariant* de chaque appel `descend node level` : `node.value` $<v$ (le nœud factice vaut $0<v$), et `node` est présent à l'étage `level`. Le premier point vient de ce qu'on n'avance que vers des valeurs $<v$.
 
 *Terminaison.* Le couple (`level`, nombre de nœuds de l'étage 0 situés après `node`) décroît strictement pour l'ordre lexicographique à chaque appel. Quand on avance, le niveau reste le même et le nœud recule d'au moins un rang. Quand on descend, le niveau diminue.
@@ -263,7 +273,7 @@ Elle est atteinte, par exemple, quand la plus petite valeur est présente jusqu'
 
 ### Question II.4
 
-On parcourt le chemin à l'envers. Soit $(x,i)$ une position du chemin inversé qui n'est pas encore à l'étage visé. Dans le sens direct, on est arrivé en $(x,i)$ de l'une des deux façons suivantes :
+Calculons d’abord dans le modèle sans bord gauche utilisé pour obtenir la formule demandée. On parcourt le chemin à l’envers. Soit $(x,i)$ une position du chemin inversé qui n'est pas encore à l'étage visé. Dans le sens direct, on est arrivé en $(x,i)$ de l'une des deux façons suivantes :
 
 - en **descendant** depuis $(x,i+1)$, si $x$ est présent à l'étage $i+1$. À l'envers, on monte d'un étage ;
 - **horizontalement** depuis le prédécesseur de $x$ à l'étage $i$, sinon. À l'envers, on reste à l'étage $i$.
@@ -288,7 +298,9 @@ C_\ell&=C_{\ell-1}+\frac1p.
 
 Par récurrence immédiate,
 
-$$\boxed{C_\ell=\frac{\ell}{p}.}$$
+$$\boxed{C_\ell=\frac{\ell}{p}\quad\text{dans le modèle sans bord}.}$$
+
+Cette égalité décrit le modèle où tout essai de promotion est une Bernoulli indépendante, avec une réserve de prédécesseurs illimitée à gauche. Sur le chemin fini, si l’on atteint la sentinelle, on monte immédiatement, sans tirage. Les descentes ajoutées sous un nœud trouvé haut deviennent aussi des montées immédiates au retour. Ces cas raccourcissent le trajet. Le calcul donne alors une **majoration** par $\ell/p$ pour les niveaux effectivement parcourus, ce qui suffit en II.5. Par exemple, pour une recherche en deçà de la plus petite clé, le chemin emprunte uniquement la sentinelle et un étage franchi coûte exactement un pas.
 
 ### Question II.5
 
@@ -430,7 +442,7 @@ Le nouveau centroïde $j$ est la moyenne des vecteurs qui lui sont affectés. Un
 
 ### Question III.5
 
-**Oui.** Le centroïde $j$ n'est pas mis à jour lorsqu'aucun vecteur ne lui est affecté, c'est-à-dire lorsque `counts.(j) = 0`. Exemple : $db=(0,0,1)$ en dimension 1 et $k=2$. L'initialisation sur les deux premiers vecteurs donne deux centroïdes égaux à $0$. `pick` affecte alors les trois vecteurs au centroïde 0, à cause de l'inégalité stricte (le 1 est à égale distance des deux centroïdes). Le centroïde 1 n'est le plus proche d'aucun vecteur, et un seul centroïde est mis à jour. Plus généralement, un groupe peut se vider au cours des itérations, lorsqu'un centroïde est partout « battu » par d'autres.
+**Oui.** Le centroïde $j$ n'est pas mis à jour lorsqu'aucun vecteur ne lui est affecté, c'est-à-dire lorsque `counts.(j) = 0`. Exemple : $db=(0,0,1)$ en dimension 1 et $k=2$. L'initialisation sur les deux premiers vecteurs donne deux centroïdes égaux à $0$. `pick` affecte alors les trois vecteurs au centroïde 0, à cause de l'inégalité stricte (le 1 est à égale distance des deux centroïdes). Aucun vecteur n’est affecté au centroïde 1, et un seul centroïde est mis à jour. Plus généralement, un groupe peut se vider au cours des itérations, lorsqu'un centroïde est partout « battu » par d'autres.
 
 Si l'on entend « mis à jour » au sens de « modifié », la réponse reste oui : un centroïde dont le groupe ne change pas d'une itération à l'autre est recalculé à l'identique, ce qui arrive dès que l'algorithme a convergé.
 
