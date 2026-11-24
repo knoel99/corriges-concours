@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le sujet reproduit un extrait du discours de Victor Hugo au Congrès littéraire international de 1878. La compréhension comporte une question sur la thèse et deux explications de formules. L’essai est libre, sans limite de mots imposée.
 
 ## A1 · La thèse, sa portée et une phrase à retenir

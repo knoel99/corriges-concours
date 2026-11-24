@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. L’extrait est tiré des Deux Sources de la morale et de la religion de Bergson (1932). La compréhension et le bref essai personnel valent chacun dix points. Aucun nombre de mots n’est imposé.
 
 [Sujet officiel de la session 2](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20FRANCAIS.pdf)

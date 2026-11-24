@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le sujet porte sur « Le Loup et l’Agneau » de Jean de La Fontaine (Fables, I, 10, 1668). La compréhension et l’essai valent chacun dix points. La copie traite les quatre demandes de lecture et un essai libre sans limite de mots.
 
 ## A1 · Idée principale et récit de la rencontre

@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Le sujet propose une tribune d’Alexander Hurst, adaptée de *The Guardian* du 6 janvier 2025. L’épreuve dure deux heures. Chaque réponse de compréhension demande au moins 50 mots. Pour l’essai, la plage admise va de 360 à 440 mots. Les barres marquent chaque groupe de cinquante mots.
 
 ## Reading comprehension

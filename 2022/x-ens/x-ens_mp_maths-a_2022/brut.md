@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Notations
 
 Dans l’espace euclidien réel $E$ de dimension $d$, pour deux familles $a,b$ de $p$ vecteurs, on écrit $\operatorname{Gram}(a,b)_{ij}=\langle a_i,b_j\rangle$ et $\Omega_p(a)(b)=\det\operatorname{Gram}(a,b)$. Le volume est $\operatorname{vol}_p(a)=\sqrt{\Omega_p(a)(a)}$. L’espace $\mathcal A_p(E,\mathbb R)$ est celui des formes réelles $p$-linéaires alternées. Les familles orthonormées de la partie I sont notées $u$ et $u'$.

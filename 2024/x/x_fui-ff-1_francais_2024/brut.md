@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte est un entretien de 2007 avec l’helléniste Jacqueline de Romilly. Trois réponses de compréhension précèdent un bref essai personnel sans limite de mots imposée.
 
 ## A1 · La thèse et le diagnostic
