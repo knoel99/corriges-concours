@@ -1,0 +1,42 @@
+{
+  "slug": "x_fui-ff-2_anglais_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Anglais",
+    "annee": 2022
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/two-classes.svg",
+      "question": "2",
+      "legende": "What changed between the two classroom activities?"
+    },
+    {
+      "fichier": "figures/embedded-ethics.svg",
+      "question": "4",
+      "legende": "How the programme connects ethics with design"
+    },
+    {
+      "fichier": "figures/essay-school.svg",
+      "question": "E",
+      "legende": "Deciding whether a school needs an application"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20ANGLAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante sur le sujet scanné, les quatre réponses, les exemples, les attributions et le décompte de l’essai."
+  }
+}

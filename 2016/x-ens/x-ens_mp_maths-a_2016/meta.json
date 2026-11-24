@@ -1,0 +1,58 @@
+{
+  "slug": "x-ens_mp_maths-a_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2016
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mp_sujet_maths_a.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP_rap_EmathA.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/maille-reseau.svg",
+      "question": "Q2b",
+      "legende": "La première maille ne contient que ses sommets entiers. La seconde, de déterminant deux, contient deux points entiers supplémentaires sur son bord."
+    },
+    {
+      "fichier": "figures/triangle-bande.svg",
+      "question": "Q8a",
+      "legende": "Un triangle de hauteur entière un et de base sept a une aire de 7/2. Aucun point intérieur n’a d’ordonnée entière."
+    },
+    {
+      "fichier": "figures/sections-reeve.svg",
+      "question": "Q8b",
+      "legende": "À une hauteur intermédiaire du tétraèdre de Reeve, le triangle de section ne contient aucun point de coordonnées horizontales entières."
+    },
+    {
+      "fichier": "figures/symetrie-triangle.svg",
+      "question": "Q9c",
+      "legende": "Le triangle bleu est centré sur son barycentre. Son opposé, réduit de moitié, est inscrit dans le triangle initial et touche ses trois côtés."
+    },
+    {
+      "fichier": "figures/differences-opposees.svg",
+      "question": "Q10c",
+      "legende": "Quand le point de départ minimise la projection horizontale, les différences non nulles sont toutes à droite et leurs opposées toutes à gauche."
+    },
+    {
+      "fichier": "figures/tiroirs-fractionnaires.svg",
+      "question": "Q16a",
+      "legende": "Dans neuf cases du carré unité, dix couples de parties fractionnaires ne peuvent tous occuper des cases différentes. Deux points de la même case sont en rouge."
+    },
+    {
+      "fichier": "figures/simplexe-reflechi.svg",
+      "question": "Q18c",
+      "legende": "Dans cet exemple plan, les images des trois sommets par la symétrie de centre x suivie d’une réduction de rapport un tiers appartiennent au simplexe initial."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Vérification des 40 réponses du sujet et de son complément. Confrontation de la question 6 au rapport. Relecture croisée des constantes de la récurrence et de la construction de points entiers supplémentaires aux questions 17 à 19."
+  }
+}

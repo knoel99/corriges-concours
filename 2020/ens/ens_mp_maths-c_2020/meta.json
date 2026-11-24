@@ -1,0 +1,57 @@
+{
+  "slug": "ens_mp_maths-c_2020",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2020
+  },
+  "questions": 46,
+  "redaction": "Rédaction originale par IA, contre-lecture indépendante des démonstrations de Farkas et d’Uzawa.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/20_mp_mathc_sujet.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/20_mp_rap_emathc.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/support-quadratique.svg",
+      "question": "I.3a",
+      "legende": "Une fonction 1-convexe domine en chaque point sa tangente augmentée de la moitié du carré du déplacement."
+    },
+    {
+      "fichier": "figures/projection-disque.svg",
+      "question": "I.6b",
+      "legende": "Au projeté P du point extérieur x, la direction vers x forme avec toute direction admissible Py un angle droit ou obtus."
+    },
+    {
+      "fichier": "figures/minimiseurs-penalises.svg",
+      "question": "II.6",
+      "legende": "Pour f(x) = (x − 1,5)² et K = ]−∞, 0], la pénalité k max(0,x)² déplace le minimiseur 1,5/(k + 1) vers le bord."
+    },
+    {
+      "fichier": "figures/farkas-separation.svg",
+      "question": "III.2b",
+      "legende": "Le vecteur w = P − v donne un produit scalaire négatif avec v et positif ou nul avec chaque générateur du cône."
+    },
+    {
+      "fichier": "figures/direction-admissible.svg",
+      "question": "III.5",
+      "legende": "À l’origine de y ≥ x², la droite tangente sort du domaine. Les cordes de directions (1,t) atteignent les points (t,t²) et tendent vers la direction (1,0)."
+    },
+    {
+      "fichier": "figures/objectif-dual.svg",
+      "question": "IV.5a",
+      "legende": "Pour f(x) = (x − 1)² et x ≤ 0, le dual G(μ) = μ − μ²/4 atteint son maximum au multiplicateur 2, où xμ vaut zéro."
+    },
+    {
+      "fichier": "figures/iterations-uzawa.svg",
+      "question": "IV.6d",
+      "legende": "Avec ρ = 1 et μ₀ = 0, la mise à jour projetée conduit simultanément xₖ vers 0 et μₖ vers 2."
+    }
+  ]
+}

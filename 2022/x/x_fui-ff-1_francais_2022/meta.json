@@ -1,0 +1,37 @@
+{
+  "slug": "x_fui-ff-1_francais_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Français",
+    "annee": 2022
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/faits-et-recit.svg",
+      "question": "A2b",
+      "legende": "Ce que sélectionne le récit."
+    },
+    {
+      "fichier": "figures/histoire-et-scrutin.svg",
+      "question": "B",
+      "legende": "Le raisonnement de l’essai."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20DE%20FRANCAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante sur le sujet scanné, les réponses, les exemples précis et la portée de l’essai personnel."
+  }
+}

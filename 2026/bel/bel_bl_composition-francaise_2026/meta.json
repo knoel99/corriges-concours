@@ -1,0 +1,43 @@
+{
+  "slug": "bel_bl_composition-francaise_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Composition française",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf#page=3",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-geste-a-la-vision.svg",
+      "question": "Lecture du sujet",
+      "legende": "Le trajet de la formule de Mouawad"
+    },
+    {
+      "fichier": "figures/carte-du-raisonnement.svg",
+      "question": "Plan",
+      "legende": "Ce que change chaque étape de la discussion"
+    },
+    {
+      "fichier": "figures/deux-lettres.svg",
+      "question": "Partie III",
+      "legende": "Pourquoi deux lettres dans Incendies ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante face au rapport : les trois enjeux de la citation sont discutés, les trois quatrains de Hugo et la double adresse d’Incendies vérifiés."
+  }
+}
