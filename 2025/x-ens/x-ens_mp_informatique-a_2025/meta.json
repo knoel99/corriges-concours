@@ -2,11 +2,61 @@
   "slug": "x-ens_mp_informatique-a_2025",
   "epreuve": {
     "concours": "X-ENS",
-    "filiere": "MP",
+    "filiere": "MP-MPI",
     "matiere": "Informatique A",
-    "annee": 2025
+    "annee": 2025,
+    "code_sujet": "XULSR"
   },
   "questions": 26,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/q08-arbre-petales.svg",
+      "question": "Q8",
+      "legende": "Arbre optimal avec test des pétales à la racine et probabilités conditionnelles."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20A%20MP-MPI%20sujet.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%20et%20MPI_Info%20A%20OK.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-sol",
+      "modifications": true,
+      "perimetre": "Rédaction des deux versions attestée dans la métadonnée publique de la livraison historique.",
+      "effort": null,
+      "vitesse": null,
+      "date": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "modifications": null,
+      "perimetre": "Première révision déclarée dans la métadonnée publique historique.",
+      "effort": null,
+      "vitesse": null,
+      "date": null
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Confrontation des deux éditions et des 26 questions au sujet MP-MPI XULSR et au rapport. Vérification des décisions probabilistes, de l’élagage, du cas d’égalité au seuil, des formules vides et de la marginalisation des caractères absents. Schéma de l’arbre optimal, calcul direct par supports locaux."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Confrontation des deux éditions et des 26 questions au sujet MP-MPI XULSR et au rapport. Vérification des décisions probabilistes, de l’élagage, du cas d’égalité au seuil, des formules vides et de la marginalisation des caractères absents. Schéma de l’arbre optimal, calcul direct par supports locaux."
+  },
+  "date_revision": "2026-11-24"
 }

@@ -1,6 +1,12 @@
-# X-ENS MP — Informatique A 2025 · Corrigé guidé
+# X-ENS MP-MPI — Informatique A 2025 · Corrigé guidé
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Sol · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
 ## Présentation du sujet
 
@@ -180,6 +186,8 @@ Dans la branche quatre, on peut s’arrêter au gaillet. On peut aussi tester la
 
 > [!PIEGE]
 > Une feuille de hauteur zéro est autorisée en état certain, mais les contraintes des nœuds ne l’imposent pas. Une question supplémentaire a un coût strictement positif.
+
+![Arbre optimal de Q8. Les probabilités inscrites sur les branches sont conditionnelles au nœud de départ.](figures/q08-arbre-petales.svg)
 
 ### Question 9
 
@@ -657,6 +665,10 @@ La transformation et le coût de fusion des clauses peuvent donc être bornés e
 
 > [!JURY]
 > Le rapport propose de calculer les probabilités des intersections après mise sous forme disjonctive. Le coût peut être très grand, même s’il ne dépend pas du nombre total de caractères.
+
+Une seconde méthode évite d’énumérer les sous-familles de clauses. Relevons les $d$ indices de caractères qui apparaissent dans les atomes de $\phi$. On énumère les affectations de ces seuls caractères. À chaque affectation satisfaisante, on ajoute le produit des $d$ probabilités correspondantes. Les caractères absents totalisent chacun une masse de 1. Les affectations énumérées sont incompatibles, même si plusieurs clauses de la formule sont vraies pour la même affectation.
+
+Après remplacement des indices initiaux par des positions locales, l’évaluation de $\phi$ prend $O(1+|\phi|)$ opérations par affectation, en parcourant les listes de valeurs de ses atomes. On peut effectuer le remplacement en $O((1+|\phi|)^2)$ par recherche dans la liste locale, sans tableau de longueur $N$. L’énumération pondérée des supports prend alors $O((1+|\phi|)^2+(1+|\phi|)\max(1,K)^d)$ opérations lorsque l’accès aux distributions des caractères est direct. Comme $d\le |\phi|$, cette borne répond à la question. Si $d=0$, il existe une affectation vide, de poids 1.
 
 ## Bilan
 
