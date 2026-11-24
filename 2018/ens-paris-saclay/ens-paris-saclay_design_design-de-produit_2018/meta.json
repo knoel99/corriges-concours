@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2018
+  },
+  "redaction": "Rédaction des deux éditions et de quatre planches A3, à partir de l’appel quimpérois de 2018. Scénarios, trois pistes, organisation de la tournée et objet dessiné en plan au 1:4.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Produit.pdf",
+    "sujet_sha256": "f468fa6b6f15b18a691be2f653fa639986ca9a6b793a75f83f41994032f639c1",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=277",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-valise.svg",
+      "question": "Projet, planche 1",
+      "legende": "La valise transporte trois échantillons et devient leur petit espace de présentation en centre-ville."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-options.svg",
+      "question": "Projet, planche 2",
+      "legende": "Les recherches comparent vitrine, marché ponctuel et valise déployable."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-semaine.svg",
+      "question": "Projet, planche 3",
+      "legende": "Un storyboard attribue les quatre moments du service à l’artisan, à la médiatrice, à l’hôte et au visiteur."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-mecanisme.svg",
+      "question": "Projet, planche 4",
+      "legende": "Le plan au 1:4 et la coupe ouverte montrent les trois casiers, les échantillons et les compas."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et de quatre planches A3, à partir de l’appel quimpérois de 2018. Scénarios, trois pistes, organisation de la tournée et objet dessiné en plan au 1:4."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Faire voyager des savoir-faire",
+      "Comparer trois dispositifs",
+      "Une semaine avec la valise",
+      "Ouvrir sur un comptoir"
+    ]
+  }
+}
