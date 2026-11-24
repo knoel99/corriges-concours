@@ -1,0 +1,80 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2022
+  },
+  "questions": 17,
+  "redaction": "Les dix-sept questions réparties en cinq parties sont traitées. La carte, les trajets réfléchis, les onze forages et le profil de Soultz sont représentés. Le temps obtenu avec la diffusivité imposée est distingué de celui fourni par une diffusivité rocheuse usuelle.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/2c2022_ST.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/22_2cc_rap_eST.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "41805c5976bc3a2e90c697621af96741330e49e1c038ed3e20562d0f764aae2b",
+    "rapport_sha256": "bd64056fdfdf40695813e0c0849cafadaf371d51530df67a75c78767049a92c7"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.1",
+      "fichier": "figures/schema-structural.svg",
+      "legende": "Les deux traits sombres figurent les faisceaux de failles bordières. Le remplissage du graben et les alluvions du Rhin séparent les deux épaulements."
+    },
+    {
+      "numero": 2,
+      "question": "II.1",
+      "fichier": "figures/reflexion-moho.svg",
+      "legende": "Le reflet se situe à mi-distance pour un foyer et une station en surface, une croûte homogène et un Moho horizontal."
+    },
+    {
+      "numero": 3,
+      "question": "III.1",
+      "fichier": "figures/forages.svg",
+      "legende": "Les onze forages du tableau sont placés à leur température mesurée. La droite illustre un gradient de 30 °C/km depuis 10 °C en surface."
+    },
+    {
+      "numero": 4,
+      "question": "III.2",
+      "fichier": "figures/profil-soultz.svg",
+      "legende": "Profil schématique reconstruit à partir des trois pentes lues sur les pointillés de la figure 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix-sept questions réparties en cinq parties sont traitées. La carte, les trajets réfléchis, les onze forages et le profil de Soultz sont représentés. Le temps obtenu avec la diffusivité imposée est distingué de celui fourni par une diffusivité rocheuse usuelle.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "II.1",
+      "II.2",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "IV.1",
+      "IV.2",
+      "V.1",
+      "V.2",
+      "V.3",
+      "V.4",
+      "V.5"
+    ]
+  }
+}
