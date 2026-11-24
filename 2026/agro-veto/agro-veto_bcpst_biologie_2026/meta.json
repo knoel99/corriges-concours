@@ -12,32 +12,73 @@
     {
       "fichier": "figures/partie1-site-de-liaison.svg",
       "question": "I.1",
-      "legende": "Site de liaison : l'eau ordonnée de la poche libre est remplacée par le ligand, retenu par des interactions ioniques (Asp⁻, Lys⁺), une liaison hydrogène (Ser) et des contacts apolaires (Leu, Phe)"
+      "legende": "Exemple schématique de complémentarité entre un site et son ligand. Les contacts de charges opposées, la liaison hydrogène et les surfaces apolaires sont localisés."
     },
     {
       "fichier": "figures/partie1-courbes-saturation-o2.svg",
-      "question": "I.4",
+      "question": "I.2",
       "legende": "Courbes de saturation en O₂ de la myoglobine et de l'hémoglobine ; l'effet Bohr décale la sigmoïde vers la droite et augmente l'O₂ délivré aux tissus"
     },
     {
       "fichier": "figures/partie2-cinetique-inhibiteurs.svg",
       "question": "II.1",
-      "legende": "Cinétique michaélienne : un inhibiteur compétitif augmente le KM apparent sans changer Vmax, un inhibiteur non compétitif abaisse Vmax sans changer KM"
+      "legende": "La compétition déplace la demi-vitesse vers les fortes concentrations de substrat. Une inhibition non compétitive pure diminue la vitesse limite à demi-saturation inchangée."
     },
     {
       "fichier": "figures/partie2-cycle-myosine.svg",
-      "question": "II.3",
-      "legende": "Cycle des têtes de myosine : la fixation de l'ATP détache la tête, la libération de Pᵢ déclenche le coup de rame ; le cycle exige le Ca²⁺ fixé sur la troponine C"
+      "question": "II.2",
+      "legende": "Cycle actine–myosine du muscle strié squelettique. Le calcium se lie à la troponine C et la fixation de l’ATP détache la myosine de l’actine."
     },
     {
       "fichier": "figures/partie2-operon-lactose.svg",
-      "question": "II.3",
-      "legende": "Opéron lactose : sans lactose, LacI occupe l'opérateur ; avec lactose et sans glucose, LacI–allolactose se détache et CAP–AMPc favorise la transcription"
+      "question": "III.2",
+      "legende": "Expression naturelle de l’opéron lactose. L’allolactose réduit l’affinité de LacI pour l’opérateur. CAP associé à l’AMP cyclique favorise la transcription."
     },
     {
       "fichier": "figures/partie3-cascade-transduction.svg",
       "question": "III.1",
-      "legende": "Cascade de transduction d'un récepteur couplé aux protéines G dans l'hépatocyte : amplification jusqu'au glucose-1-P et mécanismes d'extinction"
+      "legende": "Dans l’hépatocyte, le glucagon active une cascade à AMP cyclique qui stimule la libération de glucose-1-phosphate à partir du glycogène."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2026-04/bcpst_0126_sp.pdf",
+    "rapport_jury": "https://concours-agro-veto.fr/sites/default/files/media/2026-09/rapport-biologie%2C-epreuve-de-synthese-cpge-bcpst-2026.pdf",
+    "sujet_sha256": "7f140a99b64b4cf35dbafdf5d2cc44ff2ea92b7a2dfc735bc6ff6ac73436d539",
+    "rapport_sha256": "39100d74f5a6b79280ee434ccb6525973a51de6986dd74085caedf4f24885e4e"
+  },
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction initiale signalée dans la fiche, sans modèle identifié."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Révision antérieure indiquée dans la mention de rédaction, sans modèle identifié."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision des deux éditions et des six illustrations au regard du sujet 0126, du formulaire et du rapport de l’écrit de synthèse 2026. Réécriture de la composition autour de la fixation réversible, de la catalyse, du transport, du développement et de la régulation, avec des exemples physiologiques, métaboliques et végétaux. Le sujet comporte un intitulé sans sous-question imposée."
     }
   ]
 }
