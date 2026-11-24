@@ -1,0 +1,41 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2025
+  },
+  "questions": 34,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/Sujets/2025_EG1_Ep2_Maths_Stats_14022025_NB.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2025/rapports/2025_EcoG1_Rapport_maths_stats_ecrit.pdf",
+    "sha256_sujet": "ae5783d03bf1240e24e5b3ba23764019f5a5c84f901e96883b495343ec42da4c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/p2-tangence.svg",
+      "question": "2.2e",
+      "legende": "Pour des exposants égaux et des prix unitaires, la droite de coût est tangente à la courbe d’égale production au couple optimal. Les deux programmes d’optimisation y décrivent le même choix."
+    },
+    {
+      "fichier": "figures/p3-biais-attente.svg",
+      "question": "3.3c",
+      "legende": "Le biais de la fréquence estimée par l’inverse du premier temps d’attente est positif. Son maximum intérieur atteint environ 0,216."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 34 réponses des deux éditions et de leurs indications sur le sujet officiel. Vérification des puissances par deux méthodes, des deux programmes de Cobb–Douglas, du maximum du biais et du cas r=1. Deux figures et confrontation au rapport de jury 2025.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
