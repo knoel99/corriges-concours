@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-19-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, 19 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, 19 juin)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_bl_19_juin.pdf",
+    "sujet_sha256": "d838c443fb0b8b66926c90b96b33f3d1ae5998689c8ef1cb3131f0b1c9dfaa79",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_philosophie.pdf",
+    "rapport_sha256": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54"
+  },
+  "figures": [
+    {
+      "fichier": "figures/souvenir.svg",
+      "question": "1",
+      "legende": "À quel moment intervient le choix dans la mémoire ?"
+    },
+    {
+      "fichier": "figures/domination.svg",
+      "question": "2",
+      "legende": "Une dépendance est-elle une domination ?"
+    },
+    {
+      "fichier": "figures/decision.svg",
+      "question": "24",
+      "legende": "Quand faut-il clore la délibération ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 propositions argumentées, de 24 questions et réponses pour l’entretien et de 3 schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des intitulés, de leur groupement et des consignes aux documents du jury. Vérification de la portée des arguments, des exemples et des références philosophiques."
+    }
+  ]
+}
