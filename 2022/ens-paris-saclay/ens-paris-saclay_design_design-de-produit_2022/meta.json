@@ -1,0 +1,67 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2022
+  },
+  "redaction": "Rédaction originale, énoncé photographique et rapport lus, quatre planches A3. Deux objets complémentaires, coupe et plan au 1:2, dimensionnement du stockage et de la couronne de sable, protocole d’essai du rafraîchissement.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Sujet_Ecrit_DESIGN_Projet_Produit.pdf",
+    "sujet_sha256": "dc0a74c9f1586514313e4c1d1c5c565a86b54493c6049db1f8b2e3f483cbe9da",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=572",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Rapport_Oral_DESIGN_Projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-marche.svg",
+      "question": "Projet, planche 1",
+      "legende": "La gamme associe un pot principal et deux petites unités de service sur un emplacement ventilé."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-gamme.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois esquisses confrontent la jarre haute, le pot bas et la paire de service."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-coupe.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le plan et la coupe à l’échelle montrent le sable humide isolé du compartiment alimentaire."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-atelier.svg",
+      "question": "Projet, planche 4",
+      "legende": "La séquence de fabrication et un protocole d’essai renseignent la diffusion domestique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale, énoncé photographique et rapport lus, quatre planches A3. Deux objets complémentaires, coupe et plan au 1:2, dimensionnement du stockage et de la couronne de sable, protocole d’essai du rafraîchissement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Le frais au retour du marché",
+      "Du pot enterré à la paire sur table",
+      "La couronne d’eau",
+      "Vérifier le transfert et le poids"
+    ]
+  }
+}
