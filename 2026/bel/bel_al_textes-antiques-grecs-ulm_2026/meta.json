@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_textes-antiques-grecs-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Textes antiques grecs (Ulm)",
+    "annee": 2026
+  },
+  "intitule": "Alceste chez Euripide et les guerriers de Plutarque",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_textes_antiques_grec_261102.pdf",
+    "sujet_sha256": "7da91d912d80bd24c70cbb7f709a9e5300163c75bd174f1cb18736ff41359615",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_ecrit_tronc_commun_grec_textes_antiques.pdf",
+    "rapport_sha256": "ba5e65a3dd720d754bfad04557b07e0f1a60cfe59bd6009516b43ff7347cb6ad"
+  },
+  "figures": [
+    {
+      "fichier": "figures/paroles-alceste.svg",
+      "question": "I. Commentaire",
+      "legende": "Qui voit, qui parle et à qui ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport écrit sur la version de Plutarque et sur le commentaire, confrontation aux trois pages de texte, de traduction fournie et de notes."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « Alceste chez Euripide et les guerriers de Plutarque » et du schéma « Qui voit, qui parle et à qui ? »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Collation des dix lignes de Plutarque et des changements de voix dans les 64 vers numérotés d’Euripide. Correction du détail des préparatifs et contrôle des citations et du renvoi à la numérotation du fascicule."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
