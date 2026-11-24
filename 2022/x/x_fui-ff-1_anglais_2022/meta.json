@@ -1,0 +1,42 @@
+{
+  "slug": "x_fui-ff-1_anglais_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Anglais",
+    "annee": 2022
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/olympics-and-market.svg",
+      "question": "1",
+      "legende": "What the Olympic bid promises officials"
+    },
+    {
+      "fichier": "figures/crowded-calendar.svg",
+      "question": "4",
+      "legende": "How a busy calendar affects participants"
+    },
+    {
+      "fichier": "figures/essay-club.svg",
+      "question": "E",
+      "legende": "How to judge a new fixture"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20ANGLAIS_0.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante sur le sujet scanné, les quatre réponses, les exemples, les attributions et le décompte de l’essai."
+  }
+}

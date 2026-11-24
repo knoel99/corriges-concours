@@ -1,0 +1,48 @@
+{
+  "slug": "bel_bl_mathematiques_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Mathématiques",
+    "annee": 2026
+  },
+  "questions": 64,
+  "redaction": "Rédaction originale par IA, à partir du sujet et du rapport officiel de la session 2026.",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "annales_ens": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl",
+    "sujet": "https://pe-dm.pages-perso.free.fr/sujets/sujets/maths/2026.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_mathematiques.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/projection-q.svg",
+      "question": "3a",
+      "legende": "À hauteur z fixée, Q projette orthogonalement (x, y) sur la droite x + y = 0. La coordonnée z est conservée."
+    },
+    {
+      "fichier": "figures/parite-binomiale.svg",
+      "question": "13c",
+      "legende": "Pour sept lancers, la somme des barres foncées donne la probabilité d’un nombre pair de succès."
+    },
+    {
+      "fichier": "figures/maxima-pareto.svg",
+      "question": "16c",
+      "legende": "Les répartitions des maxima divisés par n approchent la fonction nulle pour x ≤ 0 et égale à exp(−1/x) pour x > 0."
+    },
+    {
+      "fichier": "figures/c17-gaussienne.svg",
+      "question": "17e",
+      "legende": "La tangente au sommet est horizontale. Les deux points marqués sont les points d’inflexion."
+    },
+    {
+      "fichier": "figures/c21-f-et-tangente.svg",
+      "question": "21d",
+      "legende": "Au voisinage de zéro, la moyenne gaussienne prolongée et son approximation quadratique restent sous la tangente horizontale."
+    }
+  ]
+}

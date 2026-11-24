@@ -1,0 +1,130 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2024",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2024
+  },
+  "questions": 58,
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_chi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eChi.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-emission-photon.svg",
+      "question": "Q5",
+      "legende": "Une réaction forme un oxyde excité. La différence d’énergie entre les niveaux de PO est émise sous forme d’un photon."
+    },
+    {
+      "fichier": "figures/q12-etalonnage-phosphate.svg",
+      "question": "Q12",
+      "legende": "Les cinq étalons du document 3 permettent de lire environ 5,6 mmol/L pour la solution colorée."
+    },
+    {
+      "fichier": "figures/q14-ruptures-conductivite.svg",
+      "question": "Q14",
+      "legende": "Allure qualitative si les deux neutralisations sont résolues. La première rupture correspond principalement à l’ammonium."
+    },
+    {
+      "fichier": "figures/q18-phases-ligands.svg",
+      "question": "Q18",
+      "legende": "Combinaisons des quatre orbitales σ du fragment plan carré, en vue de dessus. x est horizontal, y vertical et la phase globale est arbitraire."
+    },
+    {
+      "fichier": "figures/q21-occupation-et-haute-occupee.svg",
+      "question": "Q21",
+      "legende": "Les neuf premières OM sont doublement occupées. Dans OM9, chaque contribution de ligand s’oppose au lobe de Pd qui lui fait face."
+    },
+    {
+      "fichier": "figures/q23-cycle-palladium.svg",
+      "question": "Q23",
+      "legende": "États d’oxydation et nombres d’électrons autour du cycle. L représente une triphénylphosphine."
+    },
+    {
+      "fichier": "figures/q30-deux-doublets-phosphore.svg",
+      "question": "Q30",
+      "legende": "Positions centrales lues sur la figure 8. L’écartement des composantes est schématique, égal dans les deux doublets."
+    },
+    {
+      "fichier": "figures/q33-vagues-oxydation.svg",
+      "question": "Q33",
+      "legende": "À 0,60 V, seul le réactif contribue de manière appréciable au courant. Les hauteurs et la position de la première vague sont schématiques."
+    },
+    {
+      "fichier": "figures/q36-voies-paralleles.svg",
+      "question": "Q36",
+      "legende": "À concentration de dba fixée, le modèle associe un terme linéaire et un terme saturable. Les échelles sont qualitatives."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      47,
+      49,
+      51,
+      52,
+      53,
+      54,
+      57
+    ],
+    "questions_partiellement_traitees": [
+      39,
+      42,
+      44,
+      45,
+      46,
+      50,
+      55,
+      56,
+      58
+    ],
+    "questions_non_traitees": [
+      40,
+      41,
+      43,
+      48
+    ]
+  }
+}

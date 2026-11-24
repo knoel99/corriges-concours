@@ -1,0 +1,43 @@
+{
+  "slug": "bel_bl_philosophie_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie",
+    "annee": 2026
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf#page=1",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-issues.svg",
+      "question": "Partie I",
+      "legende": "Que devient mon assentiment ?"
+    },
+    {
+      "fichier": "figures/plan-cessation.svg",
+      "question": "Plan",
+      "legende": "Parcours de la dissertation"
+    },
+    {
+      "fichier": "figures/deux-temps-du-doute.svg",
+      "question": "Partie II",
+      "legende": "Ce qu’une mise à l’épreuve peut interrompre"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante face au rapport : cessation soudaine, suspension et perte de confiance ou de foi ; Descartes, Hume (Enquête, section V) et Wittgenstein (§§ 341–343) vérifiés."
+  }
+}

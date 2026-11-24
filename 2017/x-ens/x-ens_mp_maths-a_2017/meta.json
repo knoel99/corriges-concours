@@ -1,0 +1,58 @@
+{
+  "slug": "x-ens_mp_maths-a_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2017
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathA.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP_rap_eMathA.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/quart-tour-domptant.svg",
+      "question": "Q6",
+      "legende": "Sur le plan de matrice de forme J₂, le quart de tour horaire envoie x sur Jx et rend le couplage positif."
+    },
+    {
+      "fichier": "figures/permutation-symplectique.svg",
+      "question": "Q9",
+      "legende": "En dimension six, le regroupement des trois premiers partenaires et des trois seconds transforme les blocs J₂ en la matrice J₆."
+    },
+    {
+      "fichier": "figures/droite-evitement.svg",
+      "question": "Q12",
+      "legende": "Une droite reliant un point a du lieu des zéros à un point b extérieur ne peut rester dans ce lieu au voisinage de a."
+    },
+    {
+      "fichier": "figures/deux-rotations.svg",
+      "question": "Q19",
+      "legende": "À l’intérieur des deux plans réels, le signe choisi devant le dernier vecteur de base donne deux rotations d’angles opposés après le choix de la base de 16."
+    },
+    {
+      "fichier": "figures/angle-intermediaire.svg",
+      "question": "Q24",
+      "legende": "Les angles φ et θ + φ entourent symétriquement zéro. Leurs cosinus sont égaux et strictement positifs."
+    },
+    {
+      "fichier": "figures/racines-intercalees.svg",
+      "question": "Q25",
+      "legende": "Pour un polynôme cubique à trois racines simples, les zéros de sa dérivée s’intercalent strictement. Les cinq racines de leur produit sont distinctes."
+    },
+    {
+      "fichier": "figures/contraction-drapeau.svg",
+      "question": "Q26",
+      "legende": "Dans les trois blocs du drapeau, la conjugaison multiplie chaque bloc supérieur par t ou t² et conserve les blocs diagonaux."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Comparaison des 35 réponses au sujet et au rapport 2017. Relecture croisée des signes des blocs symplectiques, de la densité et de la démonstration supplémentaire de l’équivalence à la question 26."
+  }
+}
