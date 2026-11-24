@@ -8,5 +8,59 @@
   },
   "questions": 0,
   "redaction": "IA (claude-opus-4-8), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/instrument.svg",
+      "question": "Analyse du sujet",
+      "legende": "Du livre offert au lecteur de soi"
+    },
+    {
+      "fichier": "figures/memoire.svg",
+      "question": "Analyse du sujet",
+      "legende": "Dans « Combray », deux moments à distinguer"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_francaise.pdf",
+    "sujet_sha256": "f872e5cf8fc65a29f1fe5d8d006f6f5f541a0a6ae60128a6ae1c156019143ec9",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_francais.pdf",
+    "rapport_jury_sha256": "70fc893ee1f15e9ddba0596f33a80f381b57030ac7c346a4fdb3ab72ba828a41"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "claude-code",
+      "modele": "Claude Opus 4.8",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Éditions originales. Le modèle est nommé dans la notice historique."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "fournisseur": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Relecture et révision par IA mentionnées dans la notice historique. Identité et réglages non documentés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture du fac-similé et du rapport, correction de la situation de la citation, de la confusion entre l’incipit et la madeleine, du rôle de « peut-être » et du minutage. Deux schémas et relances."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }
