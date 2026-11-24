@@ -846,6 +846,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2018 | X-ENS | PSI | Sciences industrielles | [md](2018/x-ens/x-ens_psi_sciences-industrielles_2018/brut.md) | [md](2018/x-ens/x-ens_psi_sciences-industrielles_2018/guide.md) |
 | 2019 | X-ENS | PSI | Sciences industrielles | [md](2019/x-ens/x-ens_psi_sciences-industrielles_2019/brut.md) | [md](2019/x-ens/x-ens_psi_sciences-industrielles_2019/guide.md) |
 | 2020 | X-ENS | PSI | Sciences industrielles | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/brut.md) | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/guide.md) |
 | 2021 | X-ENS | PSI | Sciences industrielles | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/brut.md) | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/guide.md) |
