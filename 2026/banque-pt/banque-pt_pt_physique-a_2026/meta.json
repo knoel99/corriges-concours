@@ -39,5 +39,44 @@
       "question": "Q50",
       "legende": "Volume d'eau dans le vase d'expansion : remplissage en $\\tau_1=3{,}75$ min, vidange en $\\tau_2=2{,}5$ min, période $6{,}25$ min"
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/ph_a_2026_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_a_ecrit_2026.pdf",
+    "sujet_sha256": "6f3707497bd73b929b3a6c10135db6d6bec418a22300af2c6dcfd83f87fd04ef",
+    "rapport_sha256": "709698b64a171fd01af4295c2b3f85597778f20e48a92ee2b79cbb2ed2dd3d29"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Identifiant conservé dans la mention historique de rédaction."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Révision historique attestée par les métadonnées du corrigé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture du sujet officiel, du rapport du jury et des 50 questions dans les deux éditions. Vérification des six schémas, du tri granulométrique et de la taille limite après 72 heures, de la polarisation de la sonde et des durées de fonctionnement de la pompe.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24"
 }
