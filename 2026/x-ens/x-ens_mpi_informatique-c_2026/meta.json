@@ -29,5 +29,64 @@
       "question": "Q22 b",
       "legende": "États de T< accessibles depuis (s₀, ∅) : seule B reçoit Z = {t₁¹}, et la transition B → D étiquetée t₁¹ disparaît"
     }
-  ]
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "claude-code",
+      "model": "claude-opus-5-5",
+      "effort": null,
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-06T13:41:23",
+      "modifications": true,
+      "perimetre": "Production des deux corrigés à partir de la copie source.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
+      "modifications": true,
+      "perimetre": "Révision des corrigés avec le rapport du jury.",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 24 questions MPI avec le sujet et le rapport. Prolongements infinis explicites pour les quatre langages de Q3, vérification des parcours OCaml et des preuves en ordre postfixe. Distinction entre le modèle mathématique et les garanties du C en Q13, gestion des attributs POSIX en Q14, contrôle des ordres partiels et des ensembles de veille.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "Relecture des 24 questions MPI avec le sujet et le rapport. Prolongements infinis explicites pour les quatre langages de Q3, vérification des parcours OCaml et des preuves en ordre postfixe. Distinction entre le modèle mathématique et les garanties du C en Q13, gestion des attributs POSIX en Q14, contrôle des ordres partiels et des ensembles de veille."
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Info%20C.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MPI_Info%20C%20OK.pdf"
+  }
 }
