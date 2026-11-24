@@ -4,11 +4,13 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Arrivées sismiques et vitesse crustale
 
 ### Question 1
 
-La rupture est repérée à 01 h 12 min 07,74 s. Le bruit initial est faible. Le premier pointé, P, est à 01 h 12 min 15,58 s, soit $7{,}84$ s après la rupture. Il inaugure un train de faible amplitude dont l'enveloppe augmente puis décroît. PmP est pointée à 01 h 12 min 31,54 s, soit $23{,}80$ s après la rupture et $15{,}96$ s après P. Elle se lit dans un train plus ample qui se prolonge en coda. Le dernier paquet, le plus ample par endroits, débute vers 01 h 12 min 48 s, soit environ 40 s après la rupture. Ce dernier instant est une lecture approchée par interpolation de l'abscisse, car aucune heure n'y est imprimée. Sans étalonnage vertical, les amplitudes ne peuvent être comparées qu'en valeur relative.
+La rupture est repérée à 01 h 12 min 07,74 s. Le bruit initial est faible. Le premier pointé, P, est à 01 h 12 min 15,58 s, soit $7{,}84$ s après la rupture. Il inaugure un train de faible amplitude dont l'enveloppe augmente puis décroît. PmP est pointée à 01 h 12 min 31,54 s, soit $23{,}80$ s après la rupture et $15{,}96$ s après P. Elle se lit dans un train plus ample qui se prolonge en coda. Le dernier paquet, le plus ample par endroits, débute vers 01 h 12 min 48 s, soit environ 40 s après la rupture. Pour lire ce dernier instant, on prolonge l’échelle définie par les deux pointés P et PmP. Du pointé PmP au début du dernier paquet, la distance horizontale vaut approximativement celle qui sépare P de PmP, soit encore 16 à 17 s. Sans étalonnage vertical, les amplitudes ne peuvent être comparées qu'en valeur relative.
 
 Pour un foyer à 10 km et une distance épicentrale de 20,3 km, le trajet rectiligne vaut $\sqrt{20{,}3^2+10^2}=22{,}6$ km. Dans un matériau à 6 km/s il prendrait environ 3,8 s. La première arrivée est tardive et correspond à une vitesse apparente moyenne de $22{,}6/7{,}84\simeq2{,}9$ km/s. Des formations sédimentaires meubles ou des dépôts volcaniques poreux tels que des tufs et ignimbrites peuvent ralentir la traversée près de la station. Ce temps isolé ne permet pas de fixer à la fois la vitesse et l'épaisseur de la couche lente.
 
@@ -20,13 +22,13 @@ Le Moho sépare les roches crustales de celles du manteau supérieur et s'accomp
 
 Pour STA1, on insère le temps de parcours $7{,}84$ s dans la colonne numérique du tableau. En représentant les huit temps $t$ depuis la rupture en fonction de la distance épicentrale $\Delta$, la régression affine donne
 $$t\ (\mathrm{s})\simeq4{,}59+0{,}1652\,\Delta\ (\mathrm{km}),\qquad V_P\simeq\frac{1}{0{,}1652}=6{,}05\ \mathrm{km/s}.$$
-Une pente tracée à la règle donne environ $6{,}1\ \mathrm{km/s}$. L'ordonnée à l'origine est le temps extrapolé du modèle ajusté. Elle englobe les effets de la géométrie du foyer, de la structure des premiers kilomètres et de l'ajustement affine. Ce n'est pas une nouvelle heure de rupture. Forcer la droite par l'origine biaiserait la pente. La vitesse obtenue sur le réseau et celle déduite du seul temps STA1 décrivent deux mesures différentes.
+Une pente tracée à la règle donne environ $6{,}1\ \mathrm{km/s}$. L'ordonnée à l'origine est le temps extrapolé du modèle ajusté. Elle englobe les effets de la géométrie du foyer, de la structure des premiers kilomètres et de l'ajustement affine. Ce n'est pas une nouvelle heure de rupture. Forcer la droite par l'origine biaiserait la pente. On peut vérifier la pente à la main avec les stations extrêmes : $(26{,}07-7{,}84)/(130-20{,}3)\simeq0{,}166\ \mathrm{s\,km^{-1}}$. Cette pente mesure la variation du temps avec la distance. Le quotient de la longueur d’un seul trajet par son temps à STA1 reste sensible à tout retard local.
 
 ![Figure 2 — Les huit temps de parcours sont ajustés en fonction de la distance épicentrale. La pente de la droite correspond à une vitesse proche de 6,1 km/s.](figures/regression-vitesses.svg)
 
 ### Question 4
 
-Les trajets directs entre le foyer à 10 km de profondeur et le réseau contraignent en premier lieu la croûte supérieure qu'ils traversent. $V_P\simeq6{,}1\ \mathrm{km/s}$ tombe dans les intervalles du granite compact (6,0 à 6,2) et des andésites massives (6,0 à 6,5). Une croûte supérieure consolidée, avec des roches magmatiques plutoniques ou volcaniques d'arc, est donc compatible avec la mesure. Les tufs ou les sédiments isolés de l'annexe B ont des vitesses trop faibles pour rendre compte à eux seuls de cette pente, mais peuvent exister localement au-dessus du substrat. Une vitesse ne distingue pas granite et andésite et ces rais directs restent au-dessus de la base crustale.
+Les trajets directs entre le foyer à 10 km de profondeur et le réseau contraignent en premier lieu la croûte supérieure qu'ils traversent. $V_P\simeq6{,}1\ \mathrm{km/s}$ tombe dans les intervalles du granite compact (6,0 à 6,2) et des andésites massives (6,0 à 6,5). Une croûte supérieure consolidée, avec des roches magmatiques plutoniques ou volcaniques d'arc, est donc compatible avec la mesure. Les tufs ou les sédiments isolés de l'annexe B ont des vitesses trop faibles pour rendre compte à eux seuls de cette pente, mais peuvent exister localement au-dessus du substrat. Une vitesse ne distingue pas granite et andésite et ces rais directs restent au-dessus de la base crustale. Si « dix derniers kilomètres » désigne la tranche juste au-dessus du Moho, sa composition reste indéterminée par cette mesure. Les enclaves de la question 13 fournissent un indice indépendant sur sa nature mafique.
 
 ## Géométrie des rais et profondeur du Moho
 
@@ -52,7 +54,7 @@ $$H=\frac{h+\sqrt{\left(V_P\delta t+\sqrt{h^2+\Delta^2}\right)^2-\Delta^2}}{2}.$
 
 Avec $h=10$ km, $\Delta=20{,}3$ km, $V_P=6{,}05$ km/s et $\delta t=15{,}96$ s, on a $A\simeq119{,}2$ km et $H\simeq63{,}7$ km, soit environ **64 km sous la surface du plateau**. C'est une croûte continentale épaissie, proche du double d'une valeur de référence de 30 à 35 km. Cette valeur donne la profondeur du Moho, discontinuité crustomantellique, et donc l'épaisseur de la croûte locale. La durée de traversée de la discontinuité elle-même n'est pas mesurée.
 
-Les pointés des deux phases et l'estimation de $V_P$ interviennent directement. Avec la même géométrie, modifier un pointé de 0,5 s ferait varier l'estimation d'environ 1,5 km. La vitesse varie avec la lithologie et la température, la surface et le réflecteur présentent du relief, les rais peuvent être réfractés et ne suivent pas intégralement le même trajet près de la station. Une différence des temps réduit l'effet d'un retard commun, sans éliminer toutes ces incertitudes.
+Les pointés des deux phases et l'estimation de $V_P$ interviennent directement. Avec la même géométrie, modifier un pointé de 0,5 s ferait varier l'estimation d'environ 1,5 km. La vitesse varie avec la lithologie et la température, la surface et le réflecteur présentent du relief, les rais peuvent être réfractés et ne suivent pas intégralement le même trajet près de la station. Avec $H\simeq64$ km, le modèle donne $t_P\simeq3{,}7$ s et $t_{PmP}\simeq19{,}7$ s. Les deux phases sont observées environ 4 s plus tard. Un retard commun s’élimine dans leur différence, mais des retards différents sur les deux trajets se reportent sur $H$.
 
 ## Compensation du relief et racine crustale
 
@@ -64,7 +66,7 @@ Dans le modèle local d'Airy, la croûte est de masse volumique uniforme $\rho_c
 
 Prenons une colonne continentale de référence d'altitude zéro et d'épaisseur crustale $H_0=35$ km. Pour le plateau, notons $z$ l'altitude et $r$ la profondeur supplémentaire du Moho sous le niveau du Moho de référence. La masse du relief $\rho_c z$ par unité de surface est compensée par le déficit de masse $(\rho_m-\rho_c)r$ de la racine. Géométriquement, $H=H_0+z+r$. Ainsi
 $$z=(H-H_0)\frac{\rho_m-\rho_c}{\rho_m},\qquad r=(H-H_0)\frac{\rho_c}{\rho_m}.$$
-Pour $H\simeq64$ km et les densités de 9, il vient $z\simeq4{,}4$ km et $r\simeq24{,}6$ km. Les figures 1 et 4 montrent un plateau voisin de 4 km avec des édifices plus élevés. La racine explique donc l'ordre de grandeur du relief par compensation isostatique. L'épaisseur de référence, la densité à la base de la croûte et les variations locales contrôlent les écarts. La convergence andine a pu construire et entretenir l'épaississement. Cet accord ne requiert pas de force verticale tectonique supplémentaire pour soutenir tout le plateau, et ne démontre pas un équilibre exact en chaque point.
+Pour $H\simeq64$ km et les masses volumiques de la question 9, il vient $z\simeq4{,}4$ km et $r\simeq24{,}6$ km. Les figures 1 et 4 montrent un plateau voisin de 4 km avec des édifices plus élevés. La racine explique donc l'ordre de grandeur du relief par compensation isostatique. L'épaisseur de référence, la densité à la base de la croûte et les variations locales contrôlent les écarts. La convergence andine a pu construire et entretenir l'épaississement. Cet accord ne requiert pas de force verticale tectonique supplémentaire pour soutenir tout le plateau, et ne démontre pas un équilibre exact en chaque point.
 
 ![Figure 4 — La croûte plus épaisse du plateau s’étend au-dessus de la surface de référence et sous le Moho de référence. Les deux colonnes exercent la même pression au niveau de compensation.](figures/colonnes-airy.svg)
 

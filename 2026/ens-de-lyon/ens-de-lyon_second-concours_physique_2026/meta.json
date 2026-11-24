@@ -15,7 +15,9 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/08/26_2cc_sujet_physique.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2026/07/26_2cc_rap_ePhy.pdf",
+    "sujet_sha256": "715f04c4511e299582b35cce176514d41b173ac90d3e8533a651ce13da9fa126",
+    "rapport_sha256": "ca2b1a88a83e6ee613d664654c55ed3a1fb488936d3654153ed2cbe7d6d6da89"
   },
   "revision": {
     "date": "2026-11-24",
@@ -112,6 +114,19 @@
       "modifications": null,
       "perimetre": "Vérification de la numérotation des deux parties, calculs de tension, changement de variable, pentes de la figure 2 et sens des deux trajets visibles sur la figure 4. Contre-calcul indépendant des questions 11, 16, 19 et 23 à 26 du problème, avec relecture des deux graphiques et de la chronophotographie. La remarque préliminaire du rapport discordante avec le thème du sujet est signalée dans la présentation guidée.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture des 10 questions de cours et des 26 questions du problème, du brut, du guidé et de leurs dix figures avec le sujet et le rapport. Vérification des deux approximations de l’équation de la corde, des pentes expérimentales, des vitesses signées et de la trajectoire près du bas de la boucle.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
