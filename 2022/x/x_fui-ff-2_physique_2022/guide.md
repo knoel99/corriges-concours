@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Formation francophone, session 2 (printemps), trois heures sans calculatrice.
 
 ## Présentation du sujet
@@ -193,6 +195,8 @@ Avec $\xi=1/u$, $Y=[(1-\xi^2)^2+\xi^2/Q^2]^{-1}$. Le dénominateur est $1+(Q^{-2
 
 Pour $\omega\gg\omega_0$, $\underline X/Z_0\simeq-1$. L’enregistrement relatif reproduit donc le déplacement du sol en amplitude, avec un signe connu à inverser. Il faut placer la pulsation propre suffisamment en dessous de la bande sismique visée. Pour un compromis entre bande passante plate, absence de pic et amortissement du transitoire, le choix usuel est $Q=1/\sqrt2$. Un critère différent, celui du retour libre le plus rapide **sans oscillation**, privilégie l’amortissement critique $Q=1/2$. Le choix numérique optimal dépend du critère retenu ; un grand $Q$ allonge le transitoire.
 
+Le choix de l’amortissement se vérifie en chiffrant la fidélité près du plateau. Pour $Q=1/\sqrt2$, le module se réduit à $[1+(\omega_0/\omega)^4]^{-1/2}$. À $\omega=2\omega_0$, le gain est $4/\sqrt{17}\simeq0{,}970$. Pour l’amortissement critique $Q=1/2$, il vaut $u^2/(1+u^2)=0{,}800$ à la même pulsation. La réponse libre du premier choix décroît comme $e^{-\omega_0 t/\sqrt2}$ avec oscillation, celle du second comme $(A+Bt)e^{-\omega_0t}$, ce qui explicite le compromis évoqué.
+
 ## Exercice 3 — Moment cinétique du champ électromagnétique
 
 ### Question 1
@@ -275,6 +279,8 @@ Pour $r<R$, $\Phi_B=\mu_0nI\pi r^2$ et $E_\phi=-\mu_0nr\dot I/2$. Pour $r>R$, $\
 Sur le cylindre intérieur, $dL_{a,z}/dt=QaE_\phi(a)=-\mu_0nQa^2\dot I/2$. Sur l’extérieur, $dL_{b,z}/dt=-QbE_\phi(b)=+\mu_0nQR^2\dot I/2$. Pour une coupure de $I$ à zéro,
 $$\mathbf L_a=\tfrac12\mu_0nIQa^2\mathbf e_z,\qquad \mathbf L_b=-\tfrac12\mu_0nIQR^2\mathbf e_z.$$
 La somme est $-\mu_0nIQ(R^2-a^2)\mathbf e_z/2$, égale au moment du champ initial. Le moment cinétique total est conservé dans le modèle quasi statique.
+
+La conservation peut se vérifier à tout instant de la coupure. Les deux couples ont pour somme $\mu_0 nQ(R^2-a^2)\dot I/2$, tandis que $dL_{\mathrm{champ},z}/dt=-\mu_0 nQ(R^2-a^2)\dot I/2$. Les variations s’annulent instantanément dans l’approximation quasi statique, même pour une rampe de courant non linéaire.
 
 ## Bilan
 
