@@ -1,0 +1,41 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2024",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2024
+  },
+  "questions": 28,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eMaths.pdf",
+    "sha256_sujet": "c8aec6b7f7704744477059aecbdc2ce2692f7e3dafcd407a5ce620427826c70a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ex1-transformee.svg",
+      "question": "Ex. 1, 8",
+      "legende": "Les deux demi-courbes exponentielles se rejoignent en zéro avec des pentes opposées. La différentiation démontrée sur chaque demi-droite ne se prolonge pas au sommet."
+    },
+    {
+      "fichier": "figures/ex3-simplexe.svg",
+      "question": "Ex. 3, I.4d",
+      "legende": "Les trois rayons unitaires font des angles de 120 degrés. Après une même homothétie, leurs extrémités forment un triangle dont chaque côté a pour longueur un."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de 28 réponses et indications après confrontation des quatre pages officielles au rapport du jury. Convergence des dérivées de l’intégrale régularisée, double série des moments, construction par récurrence du simplexe régulier et congruence du déterminant. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
