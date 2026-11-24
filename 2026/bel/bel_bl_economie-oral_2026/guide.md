@@ -6,7 +6,9 @@
 
 **Relecture antérieure** · configuration non renseignée
 
-**Lecture du rapport du jury et relecture des corrigés** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 

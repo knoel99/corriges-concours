@@ -6,7 +6,9 @@
 
 **Relecture antérieure** · configuration non renseignée
 
-**Lecture du rapport du jury et relecture des corrigés** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Onze dossiers de la banque officielle de 93 pages, dans leur ordre de publication. Pour chaque tirage : 1 h 30 de préparation, puis 30 minutes devant le jury, dont 15 minutes d’exposé et 15 minutes d’entretien. Chaque texte ci-dessous propose un exposé complet ; les réponses possibles de l’entretien dépendent des questions du jury.
 
