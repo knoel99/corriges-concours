@@ -131,7 +131,8 @@ def generer_tex(markdown: str, meta: dict, nature: str, sortie: Path) -> Path:
     # Babel choisit la police et la direction des passages arabes dans ces copies bilingues.
     if re.search(r"[ء-يٱ-ۓ]", corps):
         commande += ["-M", "arabe=true"]
-    if meta.get("epreuve", {}).get("matiere") == "Chinois":
+    matiere = meta.get("epreuve", {}).get("matiere") or ""
+    if matiere.partition(" (")[0] == "Chinois":
         commande += ["-M", "chinois=true"]
     for cle, valeur in variables_gabarit(meta, nature, titre).items():
         commande += ["-V", f"{cle}={valeur}"]
