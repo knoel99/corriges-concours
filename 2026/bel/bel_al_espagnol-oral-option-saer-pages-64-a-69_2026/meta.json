@@ -1,0 +1,49 @@
+{
+  "slug": "bel_al_espagnol-oral-option-saer-pages-64-a-69_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (oral option Saer, pages 64 à 69)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_al-rapport_oral_option_espagnol.pdf#page=1",
+    "sujet_sha256": "c62178930047e47a52653c5e99202d74b890ed4337780c8b761c3b1189a57a16",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al-rapport_oral_option_espagnol.pdf",
+    "rapport_sha256": "c62178930047e47a52653c5e99202d74b890ed4337780c8b761c3b1189a57a16",
+    "documents": [
+      "https://studylib.es/doc/5092388/seix-barral-biblioteca-breve",
+      "https://analfa.wordpress.com/2020/11/17/juan-jose-saer-la-rotunda-y-bella-prosa-de-el-entenado/"
+    ],
+    "precision": "La pagination est celle du concours. Le passage suit le réveil avant l’aube, le débarquement, la mort du capitaine et la course du survivant jusqu’à l’étrangeté du paysage au repos. Les deux transcriptions consultées ajoutent le pronom « me » au début de la phrase que cite le jury."
+  },
+  "figures": [
+    {
+      "fichier": "figures/parcours.svg",
+      "question": "Explication linéaire",
+      "legende": "De la orientación común a la mirada del superviviente"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions, explication linéaire et entretien en espagnol, méthode de préparation et schéma. Lecture continue de l’extrait repéré dans la transcription Seix Barral, Buenos Aires, 2002, d’après les deux bornes du rapport, p. 1. Collation complémentaire des bornes dans le témoin de Kalais. Le passage suit le réveil avant l’aube, le débarquement, la mort du capitaine et la course du survivant jusqu’à l’étrangeté du paysage au repos. Les deux transcriptions consultées ajoutent le pronom « me » au début de la phrase que cite le jury."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
