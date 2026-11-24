@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_allemand-commentaire-et-traduction_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Allemand (commentaire et traduction)",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=2",
+    "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Allemand%202022_0.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Où peut-on voir le visage des autres ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire allemand du passage entier et version française de la rue en pente aux trois hypothèses de destination, avec lecture du rapport et schéma des regards."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Emine Sevgi Özdamar, *Die Brücke vom goldenen Horn* (1998)."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}

@@ -169,6 +169,7 @@
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
 | 2025 | BEL | BL | Allemand | [md](2025/bel/bel_bl_allemand_2025/brut.md) | [md](2025/bel/bel_bl_allemand_2025/guide.md) |
 | 2025 | BEL | BL | Allemand (oral, option) | [md](2025/bel/bel_bl_allemand-oral-option_2025/brut.md) | [md](2025/bel/bel_bl_allemand-oral-option_2025/guide.md) |
+| 2025 | BEL | BL | Allemand (oral, tronc commun) | [md](2025/bel/bel_bl_allemand-oral-tronc-commun_2025/brut.md) | [md](2025/bel/bel_bl_allemand-oral-tronc-commun_2025/guide.md) |
 | 2025 | BEL | BL | Anglais | [md](2025/bel/bel_bl_anglais_2025/brut.md) | [md](2025/bel/bel_bl_anglais_2025/guide.md) |
 | 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
 | 2025 | BEL | BL | Chinois | [md](2025/bel/bel_bl_chinois_2025/brut.md) | [md](2025/bel/bel_bl_chinois_2025/guide.md) |
@@ -186,6 +187,8 @@
 | 2025 | BEL | BL | Italien | [md](2025/bel/bel_bl_italien_2025/brut.md) | [md](2025/bel/bel_bl_italien_2025/guide.md) |
 | 2025 | BEL | BL | Mathématiques (oral) | [md](2025/bel/bel_bl_mathematiques-oral_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques-oral_2025/guide.md) |
 | 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
+| 2022 | BEL | AL | Allemand (commentaire et traduction) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_allemand-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Allemand (thème Lyon) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (commentaire et traduction) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (thème Lyon) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
@@ -218,6 +221,7 @@
 | 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 5 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-5_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-5_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 6 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-6_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-6_2026/guide.md) |
 | 2026 | BEL | BL | Sociologie (oral commun) — 23 et 24 juin, sujet 7 | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/brut.md) | [md](2026/bel/bel_bl_sociologie-oral-commun-23-et-24-juin-sujet-7_2026/guide.md) |
+| 2026 | BEL | BL | Économie (oral à option) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral-a-option_2026/guide.md) |
 | 2025 | BIA | Facultatif | Anglais | [md](2025/bia/bia_facultatif_anglais_2025/brut.md) | [md](2025/bia/bia_facultatif_anglais_2025/guide.md) |
 | 2022 | BIMer | Toutes séries | Questionnaire | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/brut.md) | [md](2022/bimer/bimer_toutes-series_questionnaire_2022/guide.md) |
 | 2024 | BMA | Toutes spécialités | Histoire-géographie et enseignement moral et civique | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/brut.md) | [md](2024/bma/bma_toutes-specialites_histoire-geographie-et-enseignement-moral-et-civique_2024/guide.md) |
@@ -664,6 +668,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2023 | X-ENS | PSI | Modélisation | [md](2023/x-ens/x-ens_psi_modelisation_2023/brut.md) | [md](2023/x-ens/x-ens_psi_modelisation_2023/guide.md) |
 | 2024 | X-ENS | PSI | Modélisation | [md](2024/x-ens/x-ens_psi_modelisation_2024/brut.md) | [md](2024/x-ens/x-ens_psi_modelisation_2024/guide.md) |
 | 2025 | X-ENS | PSI | Modélisation | [md](2025/x-ens/x-ens_psi_modelisation_2025/brut.md) | [md](2025/x-ens/x-ens_psi_modelisation_2025/guide.md) |
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |

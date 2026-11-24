@@ -1,0 +1,61 @@
+{
+  "slug": "x-ens_psi_modelisation_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2023
+  },
+  "questions": 50,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_MODELISATION_PSI_001.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_PSI_rapport_ecrit_Modelisation.pdf",
+    "documents_reponse": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2023/PSI_PHYSIQUE_X_2_2023.enonce.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q10-bode.svg",
+      "question": "Q10",
+      "legende": "Amplitude et phase de la commande thermique. Les cassures proches de 1/202 et 1/154 rad/s se compensent en partie."
+    },
+    {
+      "fichier": "figures/q13-reglages-pi.svg",
+      "question": "Q13",
+      "legende": "Réponse normalisée en boucle ouverte et réponses fermées pour les deux constantes imprimées, à gain proportionnel 0,15."
+    },
+    {
+      "fichier": "figures/q18-puissance-maximale.svg",
+      "question": "Q18",
+      "legende": "Le rectangle grisé mesure VI. L’hyperbole de même puissance touche la caractéristique au point de puissance maximale."
+    },
+    {
+      "fichier": "figures/q20-etats.svg",
+      "question": "Q20",
+      "legende": "Deux exemples du cycle commuté. Les largeurs des bandes représentent les durées, et le bord droit rejoint la première bande."
+    },
+    {
+      "fichier": "figures/q21-chronogrammes.svg",
+      "question": "Q21",
+      "legende": "Chronogrammes à α = 0,7 en régime établi. Les ondulations sont centrées sur les valeurs moyennes et chaque commande est décalée verticalement pour la lecture."
+    },
+    {
+      "fichier": "figures/q46-commande-predictive.svg",
+      "question": "Q46",
+      "legende": "La sortie du bâtiment referme la boucle négative. Le modèle, alimenté par la même commande, fournit le terme ajouté au second sommateur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction des 50 questions des éditions brute et guidée d’après le sujet institutionnel, les documents-réponses et le rapport du jury. Construction de six figures. Contrôles des requêtes, transferts thermiques et réglages PI, cycles du convertisseur, commande par Lyapunov, discrétisation retardée et rappels de classification."
+    }
+  ]
+}
