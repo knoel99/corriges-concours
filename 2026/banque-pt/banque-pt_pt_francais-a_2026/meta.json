@@ -8,5 +8,63 @@
   },
   "questions": 1,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-sujet.svg",
+      "question": "Dissertation",
+      "legende": "Deux fonctions d’un même terrain"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/fr_a_2026_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_fra_a_ecrit_2026.pdf",
+    "sujet_sha256": "4ddc38fd01e4988ce0a9524ab6f6cf94015f870fc3b8e07e25fdba759f4a89c1",
+    "rapport_sha256": "51a787fd5bf9d6f53bcb9eb49886edd3a4232e4688cd6a7fe6e285edfe88384a"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "famille_modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction historique des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Relecture précédemment signalée, détails non renseignés."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de français A sur le passage du concept d’objet à celui de sol et sur les deux nuances de « pas tout à fait »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions à Merleau-Ponty et au programme. Précision de la lecture des pieds du promeneur et du milieu du vivant ; schéma de l’observateur et de son appui."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }
