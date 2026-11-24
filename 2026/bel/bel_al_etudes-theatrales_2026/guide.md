@@ -6,6 +6,10 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Jerzy Grotowski, le don de soi et la discipline formelle
 
 [Citation et consigne officielles, p. 3](https://www.ens.psl.eu/sites/default/files/al_spe_arts.pdf#page=3) · [Rapport de la composition écrite](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Th%C3%A9%C3%A2tre%202026.pdf)
@@ -60,6 +64,8 @@ La « transe » demande dès lors une lecture prudente. Elle peut désigner le f
 ### III. Un don théâtral suppose des partenaires libres et peut prendre la forme d’une réserve
 
 Si cette lecture donne sa force à l’exigence de Grotowski, le vocabulaire de la totalité rencontre une limite. Une relation de travail lie aussi l’acteur au metteur en scène et à l’institution qui l’engage. Demander que disparaisse toute défense peut ouvrir une recherche consentie entre partenaires ; la même formule peut devenir une injonction à exposer ce que l’un d’eux souhaite garder. Un don exigible ne serait plus un don. Il importe donc de préciser ce qu’une direction d’acteurs peut légitimement demander : une action déterminée, une écoute, la reprise d’une partition convenue. Le degré de dévoilement intime ne saurait être un critère extérieur de réussite à mesurer à chaque répétition.
+
+Les deux dernières phrases de Grotowski changent de sujet grammatical. Après les verbes qui engagent celui qui joue, c’est « cet acte » qui atteint un sommet et qui apporte l’apaisement. Le bénéficiaire de cet apaisement reste sans nom. En faire d’emblée la catharsis du spectateur importerait une théorie de la réception dans une proposition qui vient de décrire le travail de l’interprète. Une représentation peut ainsi mener l’acteur au terme exact de son action tout en laissant la salle dans l’inquiétude.
 
 Un autre spectacle permet de saisir l’importance active des limites. Dans *Café Müller* (Pina Bausch, 1978), une interprète avance les yeux fermés au milieu des chaises. Un partenaire dégage précipitamment le passage. Le risque que perçoit le spectateur n’aurait pas la même qualité si l’espace était vide, ni si la personne pouvait contrôler du regard le déplacement de chaque obstacle. L’abandon apparent se compose de deux travaux au moins : confier le trajet à l’autre et dégager le trajet à temps. Le bruit des chaises heurtées ou déplacées rend audible la responsabilité de celui qui veille. La confiance annoncée par Grotowski trouve là une condition objective. Elle a lieu dans une relation réglée qui rend possible un risque partagé. Rechercher l’accident réel pour prouver que l’interprète s’est « donné totalement » détruirait la forme de coopération grâce à laquelle le danger devient perceptible sur scène.
 

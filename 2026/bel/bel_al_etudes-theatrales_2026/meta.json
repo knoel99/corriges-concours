@@ -20,7 +20,9 @@
     "references": [
       "https://grotowski.net/en/media/galleries/ksiaze-niezlomny-3",
       "https://www.pinabausch.org/en/work/cafe"
-    ]
+    ],
+    "sujet_sha256": "db3822ea9560c1743146b55b0a4953d351af8e862714cd84c2d5153b16d75374",
+    "rapport_sha256": "8a0093638554c219c81a24cf16088220eca4ef44a263d4c13b97b1cedc204c7c"
   },
   "figures": [
     {
@@ -66,6 +68,30 @@
       "modifications": false,
       "perimetre": "Contre-lecture indépendante de la composition avec le libellé et le rapport écrit du jury.",
       "agent": "lettres_reprise"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la section écrite sur le don, la discipline formelle, le sens de la transe et la distinction entre apaisement et catharsis."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions à la page 3 du fascicule et au rapport écrit. Précision sur le sujet grammatical de l’apaisement et sur la place distincte du spectateur. Vérification des trois représentations du jeu."
     }
   ]
 }

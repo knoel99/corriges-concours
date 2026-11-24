@@ -20,7 +20,9 @@
     "references": [
       "https://www.bfi.org.uk/lists/10-great-natural-history-films",
       "https://www.moma.org/calendar/exhibitions/76"
-    ]
+    ],
+    "sujet_sha256": "db3822ea9560c1743146b55b0a4953d351af8e862714cd84c2d5153b16d75374",
+    "rapport_sha256": "730388b7f4aba950624b0488baf7d89bee67962b726233f59530dd2c47127fbb"
   },
   "figures": [
     {
@@ -77,6 +79,30 @@
       "modifications": true,
       "perimetre": "Ajout de la fantasmagorie de Robertson et élargissement des exemples filmiques après la contre-lecture.",
       "agent": "couverture"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la section écrite sur les cadences, le rebours, la fantasmagorie et la puissance du verbe « voir »."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions à la citation d’Epstein, vérification du sens des cadences et des opérations de montage. Comparaison chiffrée de deux projections et description des trois schémas."
     }
   ]
 }

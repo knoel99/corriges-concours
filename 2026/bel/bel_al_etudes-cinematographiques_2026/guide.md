@@ -8,6 +8,10 @@
 
 **Retouches** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Jean Epstein et la première vision d’un univers qui peut se mouvoir à rebours
 
 [Citation et consigne officielles, p. 2](https://www.ens.psl.eu/sites/default/files/al_spe_arts.pdf#page=2) · [Rapport de la composition écrite](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Cin%C3%A9ma%202026.pdf)
@@ -49,7 +53,7 @@ Cette comparaison des échelles peut porter sur des activités dont les particip
 
 Le ralenti effectue l’opération temporelle opposée, sans produire un effet esthétique simplement inverse. En enregistrant davantage d’images dans la durée d’un geste, puis en les projetant à une cadence plus faible que celle de la prise de vue, il rend perceptibles des phases que l’œil réunissait dans un seul élan. Dans *Le Tempestaire* (Jean Epstein, 1947), l’écume et le mouvement des vagues cessent par moments de donner simplement la mesure de la force du vent. Une crête prend le temps de se former, de se suspendre et de s’étirer. Bien que le spectateur sache ce qu’est une vague, il ne peut rapporter ce mouvement à une allure familière de la mer. L’expérience commence donc avant l’inversion. Une matière pourtant enregistrée dans le monde visible acquiert, du fait de la durée de sa présentation, des propriétés sensibles que nous n’avions pas prises pour siennes.
 
-En ce sens, le terme « première » doit être examiné. Des récits de retour dans le passé et des spectacles d’apparitions ont précédé le cinématographe. À la fin du XVIIIe siècle, les fantasmagories de Robertson font grandir des figures spectrales en déplaçant la lanterne de projection. L’effroi collectif devant un mouvement qui paraît impossible est donc plus ancien que la pellicule. La chronophotographie de Marey avait déjà décomposé des mouvements trop rapides pour l’œil. La nouveauté engagée par le propos d’Epstein tient à une vision que l’on peut projeter et répéter : c’est le mouvement d’apparences photographiquement enregistrées qui se reforme devant nous à une autre allure. Cette différence devient décisive lorsque la machine ne se contente plus de faire varier la vitesse.
+En ce sens, le terme « première » doit être examiné. Des récits de retour dans le passé et des spectacles d’apparitions ont précédé le cinématographe. À la fin du XVIIIe siècle, les fantasmagories de Robertson font grandir des figures spectrales en déplaçant la lanterne de projection. L’effroi collectif devant un mouvement qui paraît impossible est donc plus ancien que la pellicule. La chronophotographie de Marey avait déjà décomposé des mouvements trop rapides pour l’œil. La nouveauté engagée par le propos d’Epstein tient à une vision que l’on peut projeter et répéter : c’est le mouvement d’apparences photographiquement enregistrées qui se reforme devant nous à une autre allure. Cette différence devient décisive lorsque la machine ne se contente plus de faire varier la vitesse. Prenons quatre secondes de mouvement filmées à 48 images par seconde. Les 192 images projetées à 24 images par seconde occupent huit secondes, même si on les projette dans l’ordre inverse. La première opération détermine combien de temps nous regardons la vague ; la seconde, si nous la voyons se former ou se défaire. Aucune coupe entre deux plans n’est nécessaire pour les obtenir.
 
 ### II. La marche arrière donne une évidence sensible à ce qui contredit notre expérience des causes
 
