@@ -1,0 +1,124 @@
+{
+  "slug": "x_mp_physique-et-si_2022",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Physique et SI",
+    "annee": 2022
+  },
+  "questions": 51,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20ECRIT%20DE%20PHYSIQUE%20ET%20S.I.%20(X).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20PHYSIQUE%20ET%20SCIENCES%20DE%20L'INGENIEUR%20(X).pdf",
+    "sujet_sha256": "46bec0f48c7be7556655ddc662e4875862d40f9f83efb971cd0f4aabbc6f35e2",
+    "rapport_sha256": "4d56dbef5d327e9e729f84d3035da0d1be078de44439d1fab96959148051f499"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 51 questions et leurs applications numériques sont traitées. Six figures originales présentent les profils électroniques, la jonction, la construction de polarisation, le schéma électrique et l’équilibre thermique."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "5",
+      "fichier": "figures/occupation-fermi.svg",
+      "legende": "Occupation électronique à température finie. À l’énergie μ l’occupation vaut un demi."
+    },
+    {
+      "numero": 2,
+      "question": "15",
+      "fichier": "figures/profils-de-la-jonction.svg",
+      "legende": "Jonction abrupte à dopages égaux. Le champ est négatif dans la zone déplétée et le potentiel de référence est nul à la frontière centrale."
+    },
+    {
+      "numero": 3,
+      "question": "33",
+      "fichier": "figures/profil-dans-la-base.svg",
+      "legende": "Diffusion des électrons de l’émetteur vers le collecteur. Le courant conventionnel est dirigé en sens opposé."
+    },
+    {
+      "numero": 4,
+      "question": "35",
+      "fichier": "figures/construction-du-point-de-repos.svg",
+      "legende": "Réseau idéalisé des trois quadrants utiles, pour les valeurs de la question 36. Les points orangés sont trois projections du même état de repos."
+    },
+    {
+      "numero": 5,
+      "question": "37",
+      "fichier": "figures/quadripole-hybride.svg",
+      "legende": "Modèle hybride à émetteur commun. Les losanges sont des sources commandées, de tension à gauche et de courant à droite."
+    },
+    {
+      "numero": 6,
+      "question": "50",
+      "fichier": "figures/equilibre-thermique.svg",
+      "legende": "Pour A = 1,2 et a = 0,5, les courbes se coupent en Y voisin de 0,149. L’ordonnée commune est X, l’élévation relative de température."
+    }
+  ],
+  "redaction": "Les 51 questions et leurs applications numériques sont traitées. Six figures originales présentent les profils électroniques, la jonction, la construction de polarisation, le schéma électrique et l’équilibre thermique.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51"
+    ]
+  }
+}
