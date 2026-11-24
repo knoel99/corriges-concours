@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Un tas de grains peut conserver une pente sur laquelle des grains déjà en mouvement continuent de couler. De même, un aimant peut conserver son orientation après le renversement du champ extérieur. Cette épreuve de six heures, sans calculatrice, étudie les seuils qui rendent ces deux comportements possibles et le coût énergétique des retournements magnétiques.
@@ -268,7 +270,7 @@ Un régime stationnaire de vitesse moyenne non nulle exige $\dot\phi_\infty^{(i)
 
 $$\frac{\sin\alpha}{3}>1-\cos(\alpha-\pi/6).$$
 
-À l’égalité, le temps de passage diverge. Le sujet admet que l’inégalité équivaut à $\alpha>\alpha_d$ sur le domaine considéré.
+À l’égalité, le temps de passage diverge. Le seuil vérifie $(\sqrt3/2)\cos\alpha_d+(5/6)\sin\alpha_d=1$. En posant $t=\tan(\alpha_d/2)$, on obtient $(6+3\sqrt3)t^2-10t+(6-3\sqrt3)=0$. La seule racine compatible avec $0\leq\alpha_d\leq\pi/6$ est $t=(2-\sqrt3)/3$. Le mouvement stationnaire est ainsi possible au-dessus de $\alpha_d\simeq10{,}2^\circ$, alors que le seuil de départ d’un grain immobile vaut $30^\circ$.
 
 > [!PIEGE]
 > Une limite mathématique de la récurrence ne garantit pas le passage de la bosse suivante. Il faut aussi tester la barrière d’énergie.
@@ -729,7 +731,7 @@ Les domaines uniformément alignés dans l’une des deux directions faciles ont
 
 #### Solution
 
-Puisque $a=\delta/n$, on obtient $\gamma^{(\mathrm{an})}\simeq(K\delta/\pi)\int_0^\pi\sin^2\varphi\,d\varphi=K\delta/2$. L’anisotropie **amincit** la paroi en réduisant le volume de matériau dont les moments sont inclinés par rapport à l’axe facile. Elle s’oppose donc à l’échange.
+Puisque $a=\delta/n$, on obtient $\gamma^{(\mathrm{an})}\simeq(K\delta/\pi)\int_0^\pi\sin^2\varphi\,d\varphi=K\delta/2$. La somme discrète peut même être évaluée pour tout entier $n\geq2$. En écrivant $2\sin^2(i\pi/n)=1-\cos(2i\pi/n)$, la somme des cosinus est la partie réelle de la somme des $n$ racines de l’unité, donc zéro. La somme des carrés des sinus vaut exactement $n/2$ pour le profil angulaire choisi, et l’énergie d’anisotropie vaut exactement $K\delta/2$. L’anisotropie **amincit** la paroi en réduisant le volume de matériau dont les moments sont inclinés par rapport à l’axe facile. Elle s’oppose donc à l’échange.
 
 ### Question 58
 
@@ -750,7 +752,7 @@ $$\delta_*=\pi\sqrt{\frac{J\mu^2}{aK}},\qquad \gamma_*=K\delta_*=\pi\sqrt{\frac{
 | Aimant au néodyme | $9{,}1$ nm | $1{,}1\times10^{-2}\ \mathrm{J/m^2}$ | $13$ |
 | Alliage de fer | $44$ nm | $2{,}2\times10^{-3}\ \mathrm{J/m^2}$ | $148$ |
 
-La condition de nombreuses couches est particulièrement bonne pour le fer. Pour le néodyme, l’angle entre voisines vaut environ $\pi/13\simeq0{,}24$ rad, ce qui rend le développement du cosinus raisonnable.
+La condition de nombreuses couches est particulièrement bonne pour le fer. Pour le néodyme, l’angle entre voisines vaut environ $\pi/13\simeq0{,}24$ rad, soit un écart relatif d’environ $0{,}49\,\%$ entre $1-\cos(\pi/n)$ et son approximation quadratique. Pour le fer, l’écart tombe à $0{,}0038\,\%$. Ces ordres s’obtiennent en divisant le terme correctif $(\pi/n)^4/24$ par le terme dominant $(\pi/n)^2/2$.
 
 ![Figure 12 — Une paroi épaisse réduit le coût d’échange et augmente le coût d’anisotropie. Leur égalité fixe l’épaisseur minimisant la somme.](figures/q58-energie-paroi.svg)
 
@@ -861,7 +863,7 @@ Les coordonnées ci-dessous sont $(x_p\ \mathrm{en\ cm},B_0\ \mathrm{en\ T})$. P
 
 #### Solution
 
-Sur un cycle fermé, Q46 donne $e_{\rm perte}=\oint B_0\,dM=(2M_s/L)\oint B_0\,dx_p$. Avec $x_p$ horizontal et $B_0$ vertical, on parcourt la boucle dans le sens horaire, de sorte que cette intégrale est son aire **positive** multipliée par $2M_s/L$. Il faut exprimer $x_p$ en mètres pour obtenir des J/m³. Les segments parcourus de façon identique en sens opposés s’annulent. L’amplitude 1 T donne zéro, 3 T enferme une première aire, et 5 T une aire plus grande car des branches de piégeage supplémentaires sont franchies. Les pertes sont donc croissantes au sens large dans cette succession de cycles. Entre deux nouveaux seuils de saut, prolonger une branche parcourue aller et retour peut laisser l’aire inchangée.
+Sur un cycle fermé, Q46 donne $e_{\rm perte}=\oint B_0\,dM=(2M_s/L)\oint B_0\,dx_p$. Avec $x_p$ horizontal et $B_0$ vertical, on parcourt la boucle dans le sens horaire, de sorte que cette intégrale est son aire **positive** multipliée par $2M_s/L$. Il faut exprimer $x_p$ en mètres pour obtenir des J/m³. Les segments parcourus de façon identique en sens opposés s’annulent. L’amplitude 1 T donne zéro, 3 T enferme une première aire, et 5 T une aire plus grande car des branches de piégeage supplémentaires sont franchies. Pour vérifier quantitativement la lecture de la figure 9, un segment joignant $(x_i,B_i)$ à $(x_{i+1},B_{i+1})$ contribue de $(B_i+B_{i+1})(x_{i+1}-x_i)/2$. En additionnant les segments des cycles établis de Q65–66, sauts compris, on obtient respectivement $0$, $12{,}8$ et $34{,}3\ \mathrm{T\,cm}$ pour $B_{\max}=1$, $3$ et $5\ \mathrm T$. La conversion en $\mathrm{T\,m}$ multiplie ces valeurs par $10^{-2}$ avant application du facteur $2M_s/L$. Les pertes augmentent dans cette succession de cycles. Entre deux nouveaux seuils de saut, prolonger une branche parcourue aller et retour peut laisser l’aire inchangée.
 
 ## Bilan
 
