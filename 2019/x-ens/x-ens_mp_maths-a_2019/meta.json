@@ -89,6 +89,18 @@
       "perimetre": "Comparaison des 43 réponses au sujet et au rapport du jury de 2019. Vérification du discriminant du polynôme des racines de l’unité, de l’irréductibilité et du nombre de Salem minimal en degré quatre.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 43 réponses et six figures dans les deux éditions. Borne commune sur les ordres, contrôle du signe du discriminant, comportement des racines de la famille et conditions d’égalité au minimum de degré quatre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve de quatre heures caractérise les valeurs propres possibles des matrices symétriques à coefficients rationnels. En dimension arbitraire, ce sont exactement les nombres totalement réels. Les 18 numéros du sujet comprennent 30 questions et sous-questions. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20MATHEMATIQUES%20A%20%28XLCR%29.pdf)
@@ -77,7 +79,10 @@ L’équation impose $x^2+y^2\equiv0\pmod3$. Parmi les sommes de deux résidus d
 
 #### Solution
 
-Puisque $\operatorname{Tr}M=0$, on peut écrire $M=\bigl(\begin{smallmatrix}a&b\\b&-a\end{smallmatrix}\bigr)$ avec $a,b\in\mathbb Q$. Son déterminant vaut $-a^2-b^2=-3$. En mettant les deux rationnels au même dénominateur et en simplifiant le triplet obtenu, on aurait des entiers premiers entre eux dans leur ensemble vérifiant $x^2+y^2=3z^2$. La question 2c exclut cette matrice.
+Puisque $\operatorname{Tr}M=0$, on peut écrire $M=\bigl(\begin{smallmatrix}a&b\\b&-a\end{smallmatrix}\bigr)$ avec $a,b\in\mathbb Q$. Son déterminant vaut $-a^2-b^2=-3$. En mettant les deux rationnels au même dénominateur et en simplifiant le triplet obtenu, on aurait des entiers premiers entre eux dans leur ensemble vérifiant $x^2+y^2=3z^2$. La question 2c exclut cette matrice. L’obstruction disparaît dès la dimension trois. Par exemple,
+$$T=\begin{pmatrix}0&1&1\\1&1&0\\1&0&-1\end{pmatrix},\qquad
+\det(XI_3-T)=X(X-1)(X+1)-(X+1)-(X-1)=X(X^2-3).$$
+Sa symétrie et ses coefficients entiers donnent donc une réalisation de $\sqrt3$ et de $-\sqrt3$. La taille trois est minimale puisque toute matrice rationnelle de taille un a une valeur propre rationnelle et que la taille deux vient d’être exclue.
 
 ### Question 3a
 
@@ -335,7 +340,7 @@ Si $S$ était singulière, son système homogène à coefficients rationnels adm
 
 #### Solution
 
-La matrice $S$ est symétrique, donc $B$ est bilinéaire symétrique. Pour $X\in\mathbb R^d$, approcher $X$ par des vecteurs rationnels ; la continuité de la forme quadratique et 13a donnent $B(X,X)\ge0$. C’est ici seulement une inégalité large. Par le théorème spectral, les valeurs propres réelles de $S$ sont alors positives ou nulles ; son inversibilité en 13b élimine zéro. Dans une base orthonormée de diagonalisation, la forme est donc strictement positive sur tout vecteur non nul. C’est un produit scalaire réel.
+La matrice $S$ est symétrique, donc $B$ est bilinéaire symétrique. Pour $X\in\mathbb R^d$, approcher $X$ par des vecteurs rationnels ; la continuité de la forme quadratique et 13a donnent $B(X,X)\ge0$. C’est ici seulement une inégalité large. Par exemple, $(u-\sqrt2\,v)^2$ est strictement positif sur les couples rationnels non nuls, mais s’annule en $(\sqrt2,1)$. La densité seule ne suffit donc pas. Dans la question, la rationalité de $S$ a déjà permis d’exclure cette dégénérescence en 13b. Par le théorème spectral, les valeurs propres réelles de $S$ sont alors positives ou nulles ; son inversibilité en 13b élimine zéro. Dans une base orthonormée de diagonalisation, la forme est donc strictement positive sur tout vecteur non nul. C’est un produit scalaire réel.
 
 ### Question 15a
 
@@ -411,7 +416,7 @@ On a $S=R^{\mathsf T}R$, où $R=\operatorname{diag}(\sqrt{q_i})P$ est réelle in
 
 Pour obtenir des coefficients **rationnels**, la question 3c fournit des matrices symétriques rationnelles $H_i$ de même taille $N$ avec $H_i^2=q_i I_N$. Elles sont inversibles puisque $q_i>0$. Pour une matrice rationnelle $K=(k_{ij})$, notons $K\otimes I_N$ la matrice des blocs $k_{ij}I_N$. Posons
 $$\widehat M=M\otimes I_N,\quad D=\operatorname{diag}(H_1,\ldots,H_d),\quad T=D(P\otimes I_N).$$
-Le produit par blocs donne $T^{\mathsf T}T=S\otimes I_N$. D’après 17a, $(T^{\mathsf T}T)\widehat M=(SM)\otimes I_N$ est symétrique. Le calcul de 17b appliqué à $T$ et $\widehat M$ montre que $A=T\widehat M T^{-1}$ est symétrique. Toutes ses matrices constitutives, y compris les inverses utilisés, sont rationnelles. Enfin $M$ admet $z$ pour valeur propre par 16 ; si $Mv=zv$ et $w\ne0$, le vecteur de blocs $v_iw$ est un vecteur propre de $\widehat M$ de valeur $z$. Par similitude, $z$ est valeur propre de $A$. Le cas $z=0$, écarté en début de partie, se réalise par la matrice nulle de taille un.
+Le produit par blocs donne $T^{\mathsf T}T=S\otimes I_N$. D’après 17a, $(T^{\mathsf T}T)\widehat M=(SM)\otimes I_N$ est symétrique. Le calcul de 17b appliqué à $T$ et $\widehat M$ montre que $A=T\widehat M T^{-1}$ est symétrique. Toutes ses matrices constitutives, y compris les inverses utilisés, sont rationnelles. Enfin $M$ admet $z$ pour valeur propre par 16 ; si $Mv=zv$ et $w\ne0$, le vecteur de blocs $v_iw$ est un vecteur propre de $\widehat M$ de valeur $z$. Par similitude, $z$ est valeur propre de $A$. On peut contrôler tout le spectre de cette construction. Pour chacun des $N$ vecteurs $w$ de la base canonique, les blocs $v_iw$ décrivent une copie stable de l’espace de départ sur laquelle $\widehat M$ agit par $M$. Ces copies sont en somme directe et épuisent la dimension $dN$. Ainsi $\chi_A=\chi_{\widehat M}=Z^N$ et chaque racine de $Z$ est conservée avec sa multiplicité multipliée par $N$. Le cas $z=0$, écarté en début de partie, se réalise par la matrice nulle de taille un.
 
 ![Figure 6 — L’agrandissement préserve la valeur propre et fournit le changement de base rationnel qui rend la matrice symétrique.](figures/construction-par-blocs.svg)
 

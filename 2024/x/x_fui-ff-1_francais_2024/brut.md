@@ -6,15 +6,19 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte est un entretien de 2007 avec l’helléniste Jacqueline de Romilly. Trois réponses de compréhension précèdent un bref essai personnel sans limite de mots imposée.
 
 ## A1 · La thèse et le diagnostic
 
-Jacqueline de Romilly défend l’étude des textes anciens, parce qu’elle y voit une école de précision, de raisonnement et de dialogue. Elle porte sur la société moderne un regard inquiet et critique. Le recul des humanités lui paraît révéler une perte de confiance dans la raison et dans la possibilité de construire un monde commun par la parole. Elle redoute que le goût des formules sommaires et le refus des nuances n’ouvrent la voie à la violence.
+Jacqueline de Romilly défend l’étude des textes anciens, parce qu’elle y voit une école de précision, de raisonnement et de dialogue. À la journaliste qui la croit peut-être optimiste parce que son combat est honoré, elle répond que son inquiétude s’étend du grec à la langue française et aux humanités. Le recul des humanités lui paraît révéler une perte de confiance dans la raison et dans la possibilité de construire un monde commun par la parole. Elle redoute que le goût des formules sommaires et le refus des nuances n’ouvrent la voie à la violence, et présente ce danger comme évitable si la société réagit.
 
 ## A2 · Le moyen de sortir de la crise
 
 À ses yeux, il faut apprendre à formuler clairement une pensée, à choisir ses mots, à écouter ce que l’autre veut dire et à corriger son propre raisonnement. C’est ainsi que devient possible le dialogue, qu’elle présente comme le seul moyen d’endiguer la violence. L’étude de la littérature grecque est, à ses yeux, un moyen privilégié de se former à cette pratique.
+
+![De la précision des mots à la possibilité du dialogue.](figures/les-conditions-du-dialogue.svg)
 
 ## A3 · Comprendre la métaphore du rempart
 

@@ -94,6 +94,18 @@
       "perimetre": "Comparaison des 35 réponses au sujet et au rapport 2017. Relecture croisée des signes des blocs symplectiques, de la densité et de la démonstration supplémentaire de l’équivalence à la question 26.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 35 réponses et sept figures dans les deux éditions sur l’énoncé et le rapport. Dimension des blocs primaires non réels et vérification calculée de la dilatation symplectique sur un bloc non diagonalisable à valeur propre quadruple.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

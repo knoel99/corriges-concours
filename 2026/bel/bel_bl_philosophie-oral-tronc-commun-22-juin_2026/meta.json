@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-22-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, 22 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, 22 juin)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_22_juin_b.pdf",
+    "sujet_sha256": "77d28872ce2b0fcc4cd28f334a0f4f80d268a81dfe12b4223dd0dd297e6401a1",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_philosophie.pdf",
+    "rapport_sha256": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54"
+  },
+  "figures": [
+    {
+      "fichier": "figures/raisonnement.svg",
+      "question": "6",
+      "legende": "Contrôler deux formes de raisonnement"
+    },
+    {
+      "fichier": "figures/urgence.svg",
+      "question": "10",
+      "legende": "Quand la priorité devient-elle justifiable ?"
+    },
+    {
+      "fichier": "figures/negociation.svg",
+      "question": "20",
+      "legende": "Au-delà des demandes affichées"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 propositions argumentées, de 24 questions et réponses pour l’entretien et de 3 schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des intitulés, de leur groupement et des consignes aux documents du jury. Vérification de la portée des arguments, des exemples et des références philosophiques."
+    }
+  ]
+}

@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le sujet reproduit un extrait du discours de Victor Hugo au Congrès littéraire international de 1878. La compréhension comporte une question sur la thèse et deux explications de formules. L’essai est libre, sans limite de mots imposée.
 
 [Sujet officiel de la session 1](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20DE%20FRANCAIS.pdf)
@@ -15,14 +17,14 @@ Cette épreuve de la filière universitaire internationale de formation francoph
 > [!INDICATION]
 > Quel rapport le discours établit-il entre la survie des œuvres et le progrès des peuples ? Choisir une seule phrase exacte.
 
-Hugo soutient que la littérature fait progresser les sociétés en mettant les intelligences en mouvement. Les œuvres survivent même aux puissances militaires qui semblaient dominer leur époque. Tout en faisant rayonner la langue d’un peuple, elles s’adressent à d’autres peuples et peuvent les instruire. Je retiendrais la phrase « On peut dire que littérature et civilisation sont identiques. » Elle condense l’ambition du discours, qui confère à la littérature un rôle décisif dans le développement de l’humanité.
+Hugo soutient que la littérature fait progresser les sociétés en mettant les intelligences en mouvement. L’Iliade reste lisible quand l’armée de deux millions d’hommes évoquée par l’orateur a disparu. Tout en faisant rayonner la langue d’un peuple, elles s’adressent à d’autres peuples et peuvent les instruire. Je retiendrais la phrase « On peut dire que littérature et civilisation sont identiques. » Elle condense l’ambition du discours, qui confère à la littérature un rôle décisif dans le développement de l’humanité.
 
 ## A2a · Les écoles et la lumière
 
 > [!INDICATION]
 > Quel est le sens intellectuel de la lumière et comment le pluriel des écoles permet-il de le préciser ?
 
-Hugo fait de la lumière une image de la connaissance. Les écoles sont les lieux où les livres se transmettent, où l’on apprend à raisonner et où chacun peut exercer son jugement. En les multipliant, une société rend ces possibilités accessibles en un plus grand nombre de lieux. L’image des points lumineux suggère cette diffusion.
+Hugo fait de la lumière une image de la connaissance. Les écoles sont les lieux où les livres se transmettent, où l’on apprend à raisonner et où chacun peut exercer son jugement. En les multipliant, une société rend ces possibilités accessibles en un plus grand nombre de lieux. Les impératifs adressés à l’auditoire, en particulier celui de multiplier les écoles, font de chaque point lumineux une décision concrète d’instruction.
 
 ## A2b · L’éclairage des rues et celui des esprits
 
@@ -50,3 +52,6 @@ Je suis donc Hugo lorsqu’il demande de rendre les livres largement accessibles
 
 > [!METHODE]
 > Vérifier que chaque exemple est suivi d’une observation personnelle sur son effet. La copie peut être défendue sans supposer que le lecteur connaît déjà toutes les œuvres mentionnées.
+
+> [!METHODE]
+> À la deuxième explication, suivre la concession « soit » puis la reprise « surtout ». L’orateur accepte l’utilité des réverbères et déplace la priorité vers l’instruction de ceux qui circulent dans ces rues.

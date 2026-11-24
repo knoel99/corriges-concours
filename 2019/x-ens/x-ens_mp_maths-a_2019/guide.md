@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve du 18 avril 2019 dure quatre heures. Ses 24 numéros contiennent 43 questions et sous-questions. Elle étudie les conjugués des entiers algébriques, les racines de l’unité et les nombres de Salem, pour calculer le plus petit de ces nombres en degré quatre. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPI_sujet_MathA.pdf)
@@ -291,7 +293,7 @@ Pour un monôme $F(X)=X^h$, $0\le h\le n$, la somme demandée est $a_{l+h}-a_{k+
 
 #### Solution
 
-L’irréductibilité de $P$ et 3b en font le minimal de chacune de ses racines, et 4b les rend simples. Pour un indice $i$, prendre $F_i(X)=\prod_{j\ne i}(X-z_j)/(z_i-z_j)$. Il vaut un en $z_i$ et zéro aux autres racines. La question 12b donne $z_i^l=z_i^k$ ; comme $z_i\ne0$, on a $z_i^{l-k}=1$. Toutes les racines de $P$ sont des racines de l’unité.
+L’irréductibilité de $P$ et 3b en font le minimal de chacune de ses racines, et 4b les rend simples. Pour un indice $i$, prendre $F_i(X)=\prod_{j\ne i}(X-z_j)/(z_i-z_j)$. Il vaut un en $z_i$ et zéro aux autres racines. La question 12b donne $z_i^l=z_i^k$ ; comme $z_i\ne0$, on a $z_i^{l-k}=1$. Toutes les racines de $P$ sont des racines de l’unité. Le même exposant convient simultanément à toutes les racines. Plus précisément, parmi les $(2n+1)^{n+1}+1$ premiers blocs, deux coïncident. On peut ainsi choisir $m=l-k$ avec $1\le m\le(2n+1)^{n+1}$. Alors $P$ divise $X^m-1$ : chacun de ses facteurs linéaires, tous distincts, divise ce dernier polynôme.
 
 Dans les questions 13 et 14, $z$ est primitive d’ordre $n$ et $p$ est premier, avec $p\nmid n$.
 
@@ -342,7 +344,7 @@ L’évaluation de 13b en $z$ donne $\Pi_z(z^p)/p=F(z)$. L’entier algébrique 
 #### Solution
 
 Écrivons $P=X^n-1$ et $P'(z_i)=\prod_{j\ne i}(z_i-z_j)=n z_i^{n-1}$. Le produit sur $i$ vaut d’une part $(-1)^{n(n-1)/2}\prod_{i<j}(z_i-z_j)^2$, d’autre part $n^n(\prod_i z_i)^{n-1}=(-1)^{n-1}n^n$ puisque $\prod_i z_i=(-1)^{n+1}$. Ainsi
-$$\prod_{i<j}(z_i-z_j)^2=(-1)^{(n-1)(n+2)/2}n^n.$$
+$$\prod_{i<j}(z_i-z_j)^2=(-1)^{(n-1)(n+2)/2}n^n.$$ Le signe est positif pour $n\equiv1,2\pmod4$ et négatif pour $n\equiv0,3\pmod4$. Par exemple, pour $n=3$, la différence des deux racines conjuguées est imaginaire pure de carré $-3$ ; les deux autres différences ont pour produit $3$, donnant $-27$.
 
 ![Figure 4 — Pour une racine cinquième donnée, les quatre cordes correspondent aux différences qui interviennent dans la dérivée en ce point.](figures/differences-de-racines.svg)
 
@@ -548,7 +550,9 @@ Une factorisation non triviale sur $\mathbb Q$ sans facteur linéaire serait un 
 
 #### Solution
 
-Puisque $s_n<2$, $t_n=n+6-s_n>n+4$. Or $\alpha_n=t_n-1/\alpha_n>t_n-1$ car $\alpha_n>1$. Donc $\alpha_n>n+3$, ce qui prouve la divergence vers l’infini.
+Puisque $s_n<2$, $t_n=n+6-s_n>n+4$. Or $\alpha_n=t_n-1/\alpha_n>t_n-1$ car $\alpha_n>1$. Donc $\alpha_n>n+3$, ce qui prouve la divergence vers l’infini. On peut situer cette racine plus précisément. La petite racine du trinôme est $s_n=(n+6-\sqrt{(n+4)^2-12})/2$, soit
+$$s_n-1=\frac{6}{n+4+\sqrt{(n+4)^2-12}}\longrightarrow0.$$
+Comme $\alpha_n=n+6-s_n-1/\alpha_n$, il vient $\alpha_n-n\to5$.
 
 ### Question 24
 
@@ -564,7 +568,7 @@ Soit $\alpha\in S$ de degré quatre. Les racines de son minimal sont $\alpha,\al
 $$1\le(t-2)(2-s)=(t-2)(t+2-A)\le(t-2)(t+1).$$
 Ainsi $t^2-t-3\ge0$, soit $t\ge t_0=(1+\sqrt{13})/2$. La fonction $\alpha\mapsto\alpha+1/\alpha$ est strictement croissante sur $]1,+\infty[$.
 
-Pour atteindre la borne, choisissons $Q(Y)=Y^2-Y-3$. Ses racines $t_0$ et $s_0=(1-\sqrt{13})/2\in]-2,2[$ sont irrationnelles. On obtient
+L’égalité exige simultanément $A=1$ et $Q(2)=-1$. Puisque $Q(2)=4-2A+B$, cela force $B=-3$. Le seul trinôme qui puisse atteindre la borne est donc $Q(Y)=Y^2-Y-3$. Ses racines $t_0$ et $s_0=(1-\sqrt{13})/2\in]-2,2[$ sont irrationnelles. On obtient
 $$H(X)=X^2Q(X+X^{-1})=X^4-X^3-X^2-X+1.$$
 Ce quartique n’a pas de racine rationnelle : les seuls candidats $\pm1$ ne l’annulent pas. Si l’on pouvait le factoriser en deux quadratiques rationnels, la paire complexe conjuguée provenant de $s_0$ formerait un facteur $X^2-s_0X+1$ non rationnel, contradiction. $H$ est donc irréductible. Ses racines forment une paire réelle inverse, dont le plus grand élément est supérieur à un, et une paire non réelle de module un. Il réalise le minimum cherché, à savoir
 $$\boxed{\min T=\frac{t_0+\sqrt{t_0^2-4}}{2}=\frac{1+\sqrt{13}+\sqrt{2\sqrt{13}-2}}4\simeq1{,}72208.}$$

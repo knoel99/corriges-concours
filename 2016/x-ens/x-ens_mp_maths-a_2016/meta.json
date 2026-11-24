@@ -94,6 +94,18 @@
       "perimetre": "Vérification des 40 réponses du sujet et de son complément. Confrontation de la question 6 au rapport. Relecture croisée des constantes de la récurrence et de la construction de points entiers supplémentaires aux questions 17 à 19.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 40 réponses et sept figures sur le sujet et le rapport, y compris le complément explicitement hors concours. Classes de volume non borné sans point entier intérieur, coefficient exact de symétrie du simplexe et vérification en dimension un.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

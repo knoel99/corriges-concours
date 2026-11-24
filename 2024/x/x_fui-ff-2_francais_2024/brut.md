@@ -6,15 +6,19 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Cette épreuve de la filière universitaire internationale de formation francophone dure deux heures. Le texte est extrait d’un discours prononcé à Stockholm par Annie Ernaux en 2022. La compréhension comporte quatre questions pour dix points. Le bref essai libre vaut également dix points.
 
 ## A1 · La place de la littérature dans sa vie
 
-La littérature accompagne Annie Ernaux depuis l’enfance et organise progressivement sa vie. Sa mère encourage sa passion de lire. Le prix élevé des livres et la méfiance de l’école religieuse contribuent même à les rendre plus désirables. Plus tard, elle choisit ses études pour rester proche des œuvres et commence à écrire. Le refus de son premier roman par des éditeurs ne suffit pas à la détourner de cette ambition.
+La littérature accompagne Annie Ernaux depuis l’enfance et organise progressivement sa vie. Sa mère, qui lit elle-même des romans entre deux clients de la boutique, préfère voir sa fille avec un livre plutôt qu’occupée à des travaux d’aiguille. Le prix élevé des livres et la méfiance de l’école religieuse contribuent même à les rendre plus désirables. Plus tard, elle choisit ses études pour rester proche des œuvres et commence à écrire. Le refus de son premier roman par des éditeurs ne suffit pas à la détourner de cette ambition.
+
+![Des lectures d’enfance au projet d’écrire.](figures/de-lectrice-a-ecrivaine.svg)
 
 ## A2 · Son rapport personnel aux œuvres
 
-Son rapport aux œuvres est d’abord intime et libre. Elle découvre des livres au gré des circonstances et devient la compagne imaginaire de leurs personnages. Par la suite, elle se projette dans les univers de Flaubert ou de Virginia Woolf. Ces lectures constituent pour elle un autre monde, qu’elle oppose alors, sans en avoir pleinement conscience, au milieu social où elle a grandi.
+Son rapport aux œuvres est d’abord intime et libre. Elle se rappelle des lectures choisies surtout au gré du hasard, des contes de Grimm à La Nausée. Elle dit que les livres lui tenaient compagnie. Par la suite, elle se projette dans les univers de Flaubert ou de Virginia Woolf. Ces lectures constituent pour elle un autre monde, qu’elle oppose alors, sans en avoir pleinement conscience, au milieu social où elle a grandi.
 
 ## A3 · Une manière de vivre
 

@@ -1,0 +1,68 @@
+{
+  "slug": "bel_al_histoire-ancienne-oral-option-19-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire ancienne (oral option 19 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_option_histoire_ancienne_opt_lcl_sujets_19_juin_2026.pdf",
+    "sujet_sha256": "62e0ee7b3b9cc1b67c59bc3517d3e8f0a5c674c72938b2b3e01eb2297510b49e",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_histoire_ancienne.pdf",
+    "rapport_sha256": "132746f73cbe727f57c1e8387fea7e371b0af68e47d5a28b890723ab35df4f69",
+    "documents": [
+      "https://digital.library.cornell.edu/catalog/ss%3A8294784",
+      "https://lugdunum.grandlyon.com/Oeuvre/1209-Table-claudienne-discours-prononce-en-faveur-des-Gaulois-par-l-empereur-Claude"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecon-1.svg",
+      "question": "1",
+      "legende": "Rendre une filiation politiquement efficace"
+    },
+    {
+      "fichier": "figures/lecon-2.svg",
+      "question": "2",
+      "legende": "Une règle, trois opérations civiques"
+    },
+    {
+      "fichier": "figures/lecon-3.svg",
+      "question": "3",
+      "legende": "À quelles étapes le peuple intervient-il ?"
+    },
+    {
+      "fichier": "figures/lecon-4.svg",
+      "question": "4",
+      "legende": "Classer les citoyens, administrer la collectivité"
+    },
+    {
+      "fichier": "figures/lecon-5.svg",
+      "question": "5",
+      "legende": "Avec quelles traces écrire l’histoire de Sparte ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux versions des 5 sujets distincts du 19 juin sur le fascicule original, avec sources anciennes, entretien, figures et lecture du rapport d’histoire ancienne."
+    }
+  ]
+}

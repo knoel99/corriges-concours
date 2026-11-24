@@ -26,7 +26,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20FRANCAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "4efa7d741c42948f136484fc4d8cf6dbea42b189a0d0a27c07ecb41a868093e9"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -44,10 +45,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -71,6 +71,17 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante sur le sujet officiel : thèse, questions et sous-questions, références littéraires et argument de l’essai vérifiés.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture de Bergson et de l’essai sur les milieux, statut de l’instinct dans le raisonnement final, crainte et espérance, distinction entre les deux difficultés de l’intelligence.",
       "fournisseur": "codex"
     }
   ]

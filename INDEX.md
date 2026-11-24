@@ -145,6 +145,7 @@
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (thème Lyon) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (version et thème Ulm) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/guide.md) |
+| 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
@@ -222,6 +223,8 @@
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 16 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 17 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2026 | BEL | BL | Philosophie (oral tronc commun, 18 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-18-juin_2026/guide.md) |
+| 2026 | BEL | BL | Philosophie (oral tronc commun, 19 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-19-juin_2026/guide.md) |
+| 2026 | BEL | BL | Philosophie (oral tronc commun, 22 juin) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-22-juin_2026/brut.md) | [md](2026/bel/bel_bl_philosophie-oral-tronc-commun-22-juin_2026/guide.md) |
 | 2026 | BEL | BL | Portugais | [md](2026/bel/bel_bl_portugais_2026/brut.md) | [md](2026/bel/bel_bl_portugais_2026/guide.md) |
 | 2026 | BEL | BL | Russe | [md](2026/bel/bel_bl_russe_2026/brut.md) | [md](2026/bel/bel_bl_russe_2026/guide.md) |
 | 2024 | BEL | BL | Sciences sociales | [md](2024/bel/bel_bl_sciences-sociales_2024/brut.md) | [md](2024/bel/bel_bl_sciences-sociales_2024/guide.md) |
@@ -483,6 +486,7 @@
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
+| 2018 | ENS de Lyon | Second concours | Chimie | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Chimie | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/guide.md) |
 | 2020 | ENS de Lyon | Second concours | Chimie | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Chimie | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/guide.md) |
@@ -707,6 +711,7 @@
 | 2026 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/guide.md) |
 | 2026 | X-ENS | MP-MPI-PC-PSI | Français | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2020 | X-ENS | MP | Informatique A | [md](2020/x-ens/x-ens_mp_informatique-a_2020/brut.md) | [md](2020/x-ens/x-ens_mp_informatique-a_2020/guide.md) |
 | 2021 | X-ENS | MP | Informatique A | [md](2021/x-ens/x-ens_mp_informatique-a_2021/brut.md) | [md](2021/x-ens/x-ens_mp_informatique-a_2021/guide.md) |
 | 2022 | X-ENS | MP | Informatique A | [md](2022/x-ens/x-ens_mp_informatique-a_2022/brut.md) | [md](2022/x-ens/x-ens_mp_informatique-a_2022/guide.md) |
 | 2023 | X-ENS | MP-MPI | Informatique A | [md](2023/x-ens/x-ens_mp_informatique-a_2023/brut.md) | [md](2023/x-ens/x-ens_mp_informatique-a_2023/guide.md) |

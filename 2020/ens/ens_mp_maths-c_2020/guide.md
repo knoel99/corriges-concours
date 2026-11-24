@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve commune à Ulm, Lyon, Paris-Saclay et Rennes, durée 4 h. Les contraintes sont écrites $g_i(x)\le0$ et les multiplicateurs sont positifs ou nuls.
 
 Les deux premières parties expliquent comment projeter et comment approcher un minimiseur admissible par des minimisations sur l’espace entier. La partie III construit les multiplicateurs à partir des directions admissibles. La partie IV en fait les inconnues de l’algorithme d’Uzawa.
@@ -286,7 +288,7 @@ Par II.4, tous les $x_k$ sont dans le sous-niveau $\{f\le f(x^\star)\}$, fermé 
 
 #### Solution
 
-Les inégalités $f(x_k)\le f_k(x_k)\le f(x^\star)$ de II.4 et la convergence $f(x_k)\to f(x^\star)$ donnent $f_k(x_k)\to f(x^\star)$. On en tire aussi $k\beta(x_k)\to0$ par différence.
+Les inégalités $f(x_k)\le f_k(x_k)\le f(x^\star)$ de II.4 et la convergence $f(x_k)\to f(x^\star)$ donnent $f_k(x_k)\to f(x^\star)$. On en tire aussi $k\beta(x_k)\to0$ par différence. La valeur minimale monte vers cette limite : $f_{k+1}\ge f_k$ point par point entraîne $\min f_{k+1}\ge\min f_k$. La violation $\beta(x_k)$ décroît. En effet, ajoutons $f_k(x_k)\le f_k(x_{k+1})$ et $f_{k+1}(x_{k+1})\le f_{k+1}(x_k)$ et simplifions. Il reste $\beta(x_{k+1})\le\beta(x_k)$.
 
 ## III. Théorème de Karush–Kuhn–Tucker
 
@@ -386,7 +388,7 @@ Pour $h\in A_K(x)$ et $i\in I_x$, $g_i(x+t_kh_k)\le0=g_i(x)$. Diviser le dévelo
 
 #### Solution
 
-Pour un $h$ vérifiant toutes les inégalités de III.4, posons $h_k=h+v/(k+1)$ avec $v$ donné par (H). Pour chaque $k$ fixé et chaque contrainte active, $\langle\nabla g_i(x^\star),h_k\rangle<0$. La différentiabilité donne donc $g_i(x^\star+t h_k)<0$ pour $t>0$ assez petit. Les contraintes inactives restent strictement satisfaites par continuité. Leur nombre total étant fini, choisir un $t_k\in]0,1/(k+1)]$ qui convient à toutes simultanément. Alors $t_k\to0$ et $h_k\to h$ prouvent l’admissibilité. L’inclusion inverse est III.4. S’il n’y a aucune contrainte active, un voisinage entier est admissible.
+Pour un $h$ vérifiant toutes les inégalités de III.4, posons $h_k=h+v/(k+1)$ avec $v$ donné par (H). Pour chaque $k$ fixé et chaque contrainte active, $\langle\nabla g_i(x^\star),h_k\rangle<0$. La différentiabilité donne donc $g_i(x^\star+t h_k)<0$ pour $t>0$ assez petit. Les contraintes inactives restent strictement satisfaites par continuité. Leur nombre total étant fini, choisir un $t_k\in]0,1/(k+1)]$ qui convient à toutes simultanément. Alors $t_k\to0$ et $h_k\to h$ prouvent l’admissibilité. L’inclusion inverse est III.4. S’il n’y a aucune contrainte active, un voisinage entier est admissible. L’hypothèse (H) peut être décisive. Sur la droite, la contrainte $g(x)=x^2\le0$ donne $K=\{0\}$ et $A_K(0)=\{0\}$. Comme $g'(0)=0$, son inégalité linéarisée admet tous les réels. Pour $f(x)=x$, le point $0$ minimise bien $f$ sur $K$, mais $f'(0)+\mu g'(0)=1$ pour tout $\mu$. On voit ici exactement pourquoi la qualification intervient dans la construction des multiplicateurs.
 
 ![À l’origine de y ≥ x², la droite tangente sort du domaine. Les cordes de directions (1,t) atteignent les points (t,t²) et tendent vers la direction (1,0).](figures/direction-admissible.svg)
 
@@ -578,7 +580,9 @@ IV.5a donne $\langle g(x_{\mu^\star}),\mu-\mu^\star\rangle\le0$ pour tout $\mu$ 
 
 Posons $d_k=x_{\mu_k}-x^\star$, $e_k=\mu_k-\mu^\star$. Par I.6c, l’itération et IV.6c donnent $\|e_{k+1}\|^2\le\|e_k+\rho A d_k\|^2$. Or $\langle e_k,A d_k\rangle=-\langle\nabla f(x_{\mu_k})-\nabla f(x^\star),d_k\rangle\le-\alpha\|d_k\|^2$ par IV.6a et I.3b. L’hypothèse donnée est $\|A d_k\|^2\le(\alpha/\rho)\|d_k\|^2$. En développant le carré,
 $$\|e_{k+1}\|^2\le\|e_k\|^2-\rho\alpha\|d_k\|^2.$$
-Sommer de 0 à $N$ donne $\rho\alpha\sum_{k=0}^N\|d_k\|^2\le\|e_0\|^2$. Ainsi $\|d_k\|\to0$ et $x_{\mu_k}\to x^\star$.
+Sommer de 0 à $N$ donne $\rho\alpha\sum_{k=0}^N\|d_k\|^2\le\|e_0\|^2$. Ainsi $\|d_k\|\to0$ et $x_{\mu_k}\to x^\star$. La somme fournit aussi une estimation à un rang fini :
+$$\min_{0\le k\le N}\|x_{\mu_k}-x^\star\|\le\frac{\|\mu_0-\mu^\star\|}{\sqrt{\rho\alpha(N+1)}}.$$
+Dans l’exemple du schéma, $f(x)=(x-1)^2$, $g(x)=x$, $\rho=1$ et $\mu_0=0$. La stationnarité donne $x_{\mu_k}=1-\mu_k/2$. La projection conserve ici $1+\mu_k/2\ge0$, donc $\mu_k=2(1-2^{-k})$ et $x_{\mu_k}=2^{-k}$.
 
 ![Avec ρ = 1 et μ₀ = 0, la mise à jour projetée conduit simultanément xₖ vers 0 et μₖ vers 2.](figures/iterations-uzawa.svg)
 

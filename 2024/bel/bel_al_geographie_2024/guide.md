@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -70,6 +72,10 @@ Les circuits de la gare du Nord rendent visible le rôle des infrastructures dan
 
 Les sources juridiques permettent de dater les exemples. Le fond des deux cartes est généralisé à partir des géométries du domaine public de Natural Earth. [Article 49 du traité sur l’Union européenne](https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:12016M049) · [Décision du Conseil sur l’espace Schengen en Bulgarie et Roumanie](https://eur-lex.europa.eu/eli/dec/2024/210/oj) · [Déclaration UE–Turquie du 18 mars 2016](https://www.consilium.europa.eu/fr/press/press-releases/2016/03/18/eu-turkey-statement/) · [Fond Natural Earth au 1 : 50 millions](https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson)
 
+### Exploiter le fond de carte remis au concours
+
+Reporter sur le fond européen un point à Chypre, puis agrandir Nicosie dans un encadré. Choisir un trait propre à la ligne de cessez-le-feu. Lui appliquer le même figuré que la frontière extérieure de l’UE entre la Pologne et l’Ukraine contredirait le protocole no 10. La suspension territoriale de l’acquis et l’adhésion d’un État sont deux faits différents.
+
 ## Pièges à éviter
 
 - La Suisse appartient à Schengen et conserve sa frontière douanière avec l’Union. Préciser ce que l’on transporte et qui contrôle.
@@ -108,6 +114,10 @@ La coopération peut même déplacer le centre d’un service public. Le plateau
 
 Ces espaces intégrés distribuent inégalement les bénéfices du passage. Près du Luxembourg, franchir la frontière pour occuper un emploi peut procurer un avantage de rémunération, tandis que le logement se trouve dans une commune française, belge ou allemande. Une commune résidentielle peut ainsi devoir aménager des accès, des écoles ou des services pour une population dont une grande part de l’activité se déroule dans l’État voisin. Les trains de l’axe Thionville–Luxembourg et les encombrements routiers soulignent la profondeur de cet espace frontalier. Elle ne se mesure pas par une bande de largeur constante le long du tracé. Elle dépend de la localisation des emplois, des loyers, des liaisons et des horaires. Au sein d’une même famille, le travailleur qui traverse quotidiennement et un proche dépendant de services locaux ne vivent donc pas la même frontière.
 
+À Nicosie, la ligne contrôlée traverse une ville de l’Union. Depuis l’adhésion de la République de Chypre en 2004, le protocole no 10 suspend l’application de l’acquis dans les zones où son gouvernement n’exerce pas de contrôle effectif. Le règlement européen no 866/2004 organise certaines conditions de franchissement par les personnes et les marchandises. La ligne verte ne constitue donc pas une frontière extérieure de l’Union. Sur la rue commerçante Ledra, le passage piéton ouvert en avril 2008 a reconnecté deux portions du centre ancien. Des clients peuvent traverser, tandis qu’un entrepreneur qui veut vendre des produits de l’autre côté doit satisfaire aux règles de circulation des marchandises. Le guichet ouvert par la Commission en 2023 aide les opérateurs à les comprendre. Sur une seule rue, le droit de passer, la possibilité de commercer et la continuité d’un quartier ont ainsi des géographies distinctes. [Régime juridique de la ligne verte](https://commission.europa.eu/about/departments-and-executive-agencies/regional-and-urban-policy/green-line-regulation_en) · [Ouverture de la rue Ledra, mission des Nations unies](https://unficyp.unmissions.org/en/about-unficyp) · [Convention du guichet commercial de 2023](https://commission.europa.eu/news-and-media/news/commission-launches-new-eu-one-stop-shop-boost-green-line-trade-cyprus-2023-11-20_en)
+
+![À Chypre, une ligne de contrôle à l’intérieur de l’Union traverse le centre de Nicosie. Le tracé est généralisé et ne représente pas la largeur de la zone tampon.](figures/chypre-ligne-verte.svg)
+
 Le cas irlandais révèle le coût politique d’un passage redevenu difficile. Le retrait britannique a fait de la limite entre la République d’Irlande et l’Irlande du Nord une frontière extérieure de l’UE. Matérialiser de nouveau cette ligne aurait perturbé des voisinages et des activités économiques tout en remettant en jeu la portée symbolique du passage dans une île marquée par le conflit nord-irlandais. Les arrangements négociés, remaniés par le cadre de Windsor en 2023, organisent des formalités différenciées sur les marchandises arrivant en Irlande du Nord depuis la Grande-Bretagne. La ligne terrestre demeure ouverte et une partie des contrôles se reporte sur les flux maritimes. L’épaisseur frontalière s’étend ici jusqu’aux ports. Sa localisation résulte d’un compromis politique dont les effets diffèrent suivant la destination finale des produits.
 
 ### III. Les contrôles forment des espaces discontinus, jusque dans les villes et au-delà de l’Europe
@@ -125,3 +135,6 @@ Enfin, on ne peut ramener les limites de l’UE à une enveloppe continentale. E
 ### Conclusion
 
 L’intégration européenne sélectionne et redistribue les fonctions des frontières. Elle rapproche les lieux auxquels donnent accès un emploi, un tramway ou un hôpital commun, tout en maintenant des différences juridiques et sociales dont dépendent ces mêmes échanges. Ailleurs, la surveillance du passage s’étend à une gare de centre-ville, à un port ou à des îles où l’attente peut durer. Le territoire frontalier se reconnaît finalement aux relations qu’y produit la limite. Il faut examiner ensemble qui règle le passage, qui s’en sert et jusqu’où ses effets réorganisent la vie des habitants.
+
+
+[Sujet officiel avec fond de carte](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20de%20g%C3%A9ographie.pdf) · [Rapport du jury de géographie](https://www.ens-lyon.fr/sites/default/files/2024-11/G%C3%A9ographie%202024_0.pdf)
