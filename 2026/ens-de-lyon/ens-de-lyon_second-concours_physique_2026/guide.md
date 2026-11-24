@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -236,7 +238,7 @@ $$
 \partial_z y=\frac{Y_Z}{2LZ},\qquad
 \partial_z^2y=\frac{Y_{ZZ}}{4L^2Z^2}-\frac{Y_Z}{4L^2Z^3}.
 $$
-L’équation approchée de la question 10 devient $Y_{tt}=[g/(4L)](Y_{ZZ}-Y_Z/Z)$. Si $|Y_Z|\ll Z|Y_{ZZ}|$, le second terme est négligeable. Une bosse de largeur $\Delta Z$ vérifie cette condition pour $\Delta Z\ll Z$, soit $\Delta Z/Z\simeq\lambda/(2z)\ll1$. On obtient **$Y_{tt}\simeq c_0^2Y_{ZZ}$**, avec **$c_0=\tfrac12\sqrt{g/L}$**.
+L’équation approchée de la question 10 devient $Y_{tt}=[g/(4L)](Y_{ZZ}-Y_Z/Z)$. Si $|Y_Z|\ll Z|Y_{ZZ}|$, le second terme est négligeable. Une bosse de largeur $\Delta Z$ vérifie cette condition pour $\Delta Z\ll Z$, soit $\Delta Z/Z\simeq\lambda/(2z)\ll1$. Si l’on transforme directement l’équation complète de la question 9, le terme du premier ordre apparaît avec le signe opposé, $Y_{tt}=[g/(4L)](Y_{ZZ}+Y_Z/Z)$. Il reste du même petit ordre dans le régime retenu. On obtient **$Y_{tt}\simeq c_0^2Y_{ZZ}$**, avec **$c_0=\tfrac12\sqrt{g/L}$**.
 
 ### Question 12
 
@@ -263,7 +265,7 @@ Avec $L=1\ \mathrm m$, **$c_0=\sqrt{9{,}81}/2\simeq1{,}57\ \mathrm{s^{-1}}$**, s
 
 #### Solution
 
-L’opérateur s’écrit $(\partial_t-c_0\partial_Z)(\partial_t+c_0\partial_Z)$. Les fonctions d’une coordonnée caractéristique restent donc des solutions. La solution générale est **$Y(Z,t)=F(Z-c_0t)+G(Z+c_0t)$**. Le premier profil se déplace vers les $Z$ croissants, le second vers les $Z$ décroissants.
+L’opérateur s’écrit $(\partial_t-c_0\partial_Z)(\partial_t+c_0\partial_Z)$. Avec $u=Z-c_0t$ et $w=Z+c_0t$, l’équation donne $Y_{uw}=0$. Une intégration en $u$, puis en $w$, donne la solution générale **$Y(Z,t)=F(Z-c_0t)+G(Z+c_0t)$**. Le premier profil se déplace vers les $Z$ croissants, le second vers les $Z$ décroissants.
 
 ### Question 15
 
@@ -398,7 +400,7 @@ L’équation d’onde a deux familles de caractéristiques, ce qui permet à un
 
 #### Solution
 
-Les clichés sont juxtaposés à pas de temps égal. La trace inférieure jaune s’élève depuis le point d’impact et sa pente augmente légèrement en valeur absolue. C’est le trajet lent sur AB, vers des tensions croissantes. La trace supérieure verte descend à partir de la roue. Sa pente diminue en valeur absolue, en accord avec $c-v$ décroissant vers le bas sur CD. La portion rapide à environ $20\ \mathrm{m\,s^{-1}}$ est trop brève pour dessiner une trajectoire comparable dans la série. La projection superpose les deux brins. Le rapprochement des courbes sur l’image ne nécessite aucune collision des ondes sur un même brin.
+Les clichés sont juxtaposés à pas de temps égal. La trace inférieure jaune s’élève depuis le point d’impact et sa pente augmente légèrement en valeur absolue. C’est le trajet lent sur AB, vers des tensions croissantes. La trace supérieure verte descend à partir de la roue. Sa pente diminue en valeur absolue, en accord avec $c-v$ décroissant vers le bas sur CD. Près du bas, $c-v=gz/(\sqrt{v^2+gz}+v)\simeq gz/(2v)$. Sur CD la branche lente suit donc $dz/dt\simeq-gz/(2v)$ et s’approche de B–C avec un temps caractéristique $2v/g\simeq2{,}0\ \mathrm{s}$. Cela explique l’aplatissement de la trace descendante. La portion rapide à environ $20\ \mathrm{m\,s^{-1}}$ est trop brève pour dessiner une trajectoire comparable dans la série. La projection superpose les deux brins. Le rapprochement des courbes sur l’image ne nécessite aucune collision des ondes sur un même brin.
 
 ![Figure 10 — Trajectoires théoriques illustratives dans les deux brins. L’origine, la durée et les altitudes sont choisies pour illustrer la lecture de la figure 4.](figures/chronophotographie-interpretation.svg)
 
