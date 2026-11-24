@@ -3,37 +3,32 @@
   "epreuve": {
     "concours": "ENS Rennes",
     "filiere": "D-E",
-    "matiere": "Mathématiques appliquées",
+    "matiere": "Mathématiques appliquées et statistiques",
     "annee": 2026
   },
-  "questions": 15,
+  "questions": 46,
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
-    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuves-a-options-d-e-2026_1790867571556-pdf#page=8",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuves-a-options-d-e-2026_1790867571556-pdf#page=5",
     "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
-    "rapport_autre_enonce": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-option-mathe-matiques-d-e-2026_1793640842009-pdf"
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-option-mathe-matiques-d-e-2026_1793640842009-pdf"
   },
-  "note_sources": "Le rapport officiel intitulé Option Mathématiques porte sur la régression, les séries et les probabilités. Il ne couvre pas les trois exercices des pages 8 à 10 du fascicule 2026.",
+  "note_sources": "Pages physiques 5 à 10 du fascicule des options, incluant consignes et table normale. Le rapport traite des mêmes trois exercices.",
   "figures": [
     {
-      "fichier": "figures/ex1-droites-et-courbe.svg",
-      "question": "1.1a",
-      "legende": "La courbe de f approche l’axe horizontal par en dessous. Deux droites de pente 1 et 1/3 illustrent la position des droites du sujet."
+      "fichier": "figures/ex1-tarif-regression.svg",
+      "question": "1.2a–d",
+      "legende": "Les seize points donnent le tarif journalier de 2010 à 2025. La droite ajustée conserve le même repère que le nuage."
     },
     {
-      "fichier": "figures/ex1-dichotomie.svg",
-      "question": "1.2c",
-      "legende": "La fonction H change de signe. À chaque étape de dichotomie, les deux extrémités conservées encadrent sa racine."
+      "fichier": "figures/ex2-sommes-adjacentes.svg",
+      "question": "2.II.4",
+      "legende": "Les sommes paires descendent et les sommes impaires montent. La distance entre deux termes de parités successives tend vers zéro."
     },
     {
-      "fichier": "figures/ex2-amortissement.svg",
-      "question": "2.1d",
-      "legende": "Pour a = 0,2, les extrema alternent et leur amplitude diminue. Les pointillés donnent les enveloppes exponentielles."
-    },
-    {
-      "fichier": "figures/ex3-points-fixes.svg",
-      "question": "3.2",
-      "legende": "Pour a = 0,5, deux zéros apparaissent sur la droite réelle, dont un seul à un prix positif. Pour a = 1 et a = 1,3, la courbe reste au-dessus de zéro."
+      "fichier": "figures/ex3-arbre-files.svg",
+      "question": "3.I.4",
+      "legende": "Le premier embranchement donne le choix de la file. Les branches suivantes portent les probabilités conditionnelles d’une attente de moins de quinze minutes et de son complément."
     }
   ],
   "contributions": [
@@ -44,9 +39,16 @@
       "vitesse": null,
       "date": "2026-11-24",
       "modifications": true,
-      "perimetre": "Rédaction des 15 réponses des deux éditions sur le fac-similé des trois exercices, et des quatre graphiques. Contrôle direct du rapport publié et mise en évidence de sa discordance. Rectification de l’identité 2.1g par dérivation et contre-exemple.",
+      "perimetre": "Rédaction des 46 réponses numérotées et des indications dans les deux éditions à partir des pages physiques 5 à 10 du fascicule. Recoupement du rapport officiel avec les trois exercices, recalcul des séries statistiques, lecture de la table normale et tracé de trois figures. La question 3.I.4 distingue attente strictement supérieure et complément de T.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    }
+  ],
+  "rectifications": [
+    {
+      "date": "2026-11-24",
+      "origine": "https://github.com/knoel99/corriges-concours/pull/88",
+      "motif": "La première publication traitait un autre énoncé et associait à tort le rapport à une autre épreuve. Ses deux éditions et quatre figures ont été remplacées après lecture des pages du fascicule."
     }
   ]
 }

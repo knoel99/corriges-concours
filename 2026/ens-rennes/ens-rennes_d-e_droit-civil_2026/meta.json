@@ -1,0 +1,75 @@
+{
+  "slug": "ens-rennes_d-e_droit-civil_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit civil",
+    "annee": 2026
+  },
+  "intitule": "La valeur en droit civil",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-d-e-2026_1790867563170-pdf",
+    "sujet_sha256": "bccb2a01b4b804ac8a3a1f0e817f7f3792c3fbdec67e8d7fa1b6c2635a49aa24",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-d-e-2026_1793640809565-pdf",
+    "rapport_sha256": "1f783994547e4cf8e0dfbc38a43dadc29575f0298c7a4f98ce955f3defad4508",
+    "references": [
+      "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2026-04-14/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/fonctions-valeur.svg",
+      "question": "Composition",
+      "legende": "Quel rôle la valeur joue-t-elle ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de trois pages, des deux approches admises et des exigences sur les définitions, les textes et la longueur de l’introduction."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture visuelle de la page R 26-331, confrontation du libellé à l’énoncé et au rapport et vérification des dates d’évaluation, du seuil strict et des règles de restitution."
+    }
+  ]
+}

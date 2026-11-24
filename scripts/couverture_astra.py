@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import subprocess
@@ -12,6 +13,7 @@ import sys
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
+from functools import lru_cache
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
@@ -99,10 +101,29 @@ def signatures_qualifiantes(meta: dict) -> set[str]:
     return signatures
 
 
+@lru_cache(maxsize=1)
+def editions_retirees() -> dict[str, list[tuple[str, str]]]:
+    """Empreintes des éditions invalidées par une rectification documentée."""
+    chemin = RACINE / "campagnes/x-ens/rectifications.tsv"
+    editions: dict[str, list[tuple[str, str]]] = {}
+    with chemin.open(encoding="utf-8") as fichier:
+        for ligne in csv.DictReader(fichier, delimiter="\t"):
+            editions.setdefault(ligne["slug"], []).extend(
+                (nom, ligne[nom]) for nom in ("brut", "guide")
+            )
+    return editions
+
+
 def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
     fichiers = [dossier / f for f in ("meta.json", "brut.md", "guide.md")]
     if not all(f.is_file() for f in fichiers):
         return "paire absente ou incomplète", set()
+    for nom, empreinte in editions_retirees().get(dossier.name, []):
+        if (
+            hashlib.sha256((dossier / f"{nom}.md").read_bytes()).hexdigest()
+            == empreinte
+        ):
+            return "édition retirée du bilan après contrôle du sujet", set()
     meta = json.loads(fichiers[0].read_text(encoding="utf-8"))
     signatures = signatures_qualifiantes(meta)
     if not signatures:

@@ -450,6 +450,10 @@
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
+| 2026 | ENS Rennes | D-E | Composition d’ordre économique | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/guide.md) |
+| 2026 | ENS Rennes | D-E | Droit civil | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/guide.md) |
+| 2026 | ENS Rennes | D-E | Droit commercial | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/guide.md) |
+| 2026 | ENS Rennes | D-E | Droit public | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Arts | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Études cognitives | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/guide.md) |
