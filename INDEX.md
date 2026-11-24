@@ -67,6 +67,8 @@
 | 2025 | BCE | ECG | ESH (ESSEC-HEC) | [md](2025/bce/bce_ecg_esh-essec-hec_2025/brut.md) | [md](2025/bce/bce_ecg_esh-essec-hec_2025/guide.md) |
 | 2026 | BCE | ECG | ESH (ESSEC-HEC) | [md](2026/bce/bce_ecg_esh-essec-hec_2026/brut.md) | [md](2026/bce/bce_ecg_esh-essec-hec_2026/guide.md) |
 | 2025 | BCE | ECG | HGGMC (ESCP) | [md](2025/bce/bce_ecg_hggmc-escp_2025/brut.md) | [md](2025/bce/bce_ecg_hggmc-escp_2025/guide.md) |
+| 2026 | BCE | ECG | Espagnol LVA (ELVi) | [md](2026/bce/bce_ecg_espagnol-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_espagnol-lva-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Espagnol LVB (ELVi) | [md](2026/bce/bce_ecg_espagnol-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_espagnol-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | HGGMC (ESCP) | [md](2026/bce/bce_ecg_hggmc-escp_2026/brut.md) | [md](2026/bce/bce_ecg_hggmc-escp_2026/guide.md) |
 | 2025 | BCE | ECG | HGGMC (ESSEC) | [md](2025/bce/bce_ecg_hggmc-essec_2025/brut.md) | [md](2025/bce/bce_ecg_hggmc-essec_2025/guide.md) |
 | 2026 | BCE | ECG | HGGMC (ESSEC) | [md](2026/bce/bce_ecg_hggmc-essec_2026/brut.md) | [md](2026/bce/bce_ecg_hggmc-essec_2026/guide.md) |
