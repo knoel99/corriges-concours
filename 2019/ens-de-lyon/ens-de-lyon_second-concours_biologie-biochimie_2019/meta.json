@@ -15,7 +15,7 @@
     "rapport_sha256": "4282e25eae33c6f13858eeeb81ab8502304267f309763cd7dc48aeca5b1b589d"
   },
   "couverture": {
-    "statut": "partiel",
+    "statut": "complet",
     "questions_entierement_traitees": [
       1,
       2,
@@ -36,22 +36,21 @@
       17,
       18,
       19,
+      20,
       21,
       22,
       23,
       24,
       25,
+      26,
       27,
       28,
       29,
       30
     ],
     "questions_partiellement_traitees": [],
-    "questions_non_traitees": [
-      20,
-      26
-    ],
-    "precision": "Les questions 1 à 19, 21 à 25 et 27 à 30 sont traitées, soit 28 sur 30. Les questions 20 et 26 sur les effets expérimentaux de composés oxydants sont exclues. La synthèse du favisme suit ses conséquences cliniques et le rôle protecteur du glutathion."
+    "questions_non_traitees": [],
+    "precision": "Les 30 questions sont traitées. Les lectures des figures 13 et 16 distinguent les observations microscopiques, les courbes du témoin et les limites de leur interprétation clinique."
   },
   "date_revision": "2026-11-24",
   "figures": [
@@ -102,6 +101,18 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction intégrale des deux éditions sur le périmètre déclaré, à partir de l’énoncé et du rapport de 2019. Lecture des mesures de marquage, des contrôles de transfusion, des histogrammes par sexe, des frottis et des résultats métaboliques. Deux études sur des composés oxydants sont exclues."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Révision ciblée des deux éditions sur les questions 20 et 26, confrontées aux figures 13 et 16 du sujet et au rapport. Comparaison morphologique des frottis et interprétation du bilan redox en distinguant le contrôle et le système cellulaire."
     }
   ]
 }

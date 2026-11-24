@@ -4,7 +4,9 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Couverture.** Les questions 1 à 10, 15 à 20 et 23 à 29 sont intégralement traitées, soit 23 sur 29. Les questions 11 à 14 et 21 à 22, qui caractérisent expérimentalement des interventions à vecteurs viraux, sont exclues. Les comparaisons thérapeutiques distinguent les niveaux de preuve du dossier de 2020 et ses suites.
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture.** Les 29 questions sont représentées, dont 25 entièrement. Les Q13 et Q14 couvrent les marqueurs de régénération, la fibrose et le suivi de force. Les Q11, Q12, Q21 et Q22 couvrent les témoins, les marqueurs et les limites de lecture, sans caractériser la distribution du vecteur ni quantifier les rendements de transfert ou de modification.
 
 ## Dystrophine et myopathie de Duchenne
 
@@ -121,6 +123,44 @@ Chez les patients Duchenne, on n’observe pas de bande nette de dystrophine. L�
 
 ## Remplacement de la protéine
 
+### Question 11 — Témoins de l’immunohistochimie
+
+> [!INDICATION]
+> Partir des deux références, chien sain et chien GRMD non traité, avant de discuter la signification du marquage.
+
+#### Solution
+
+Le panneau B du muscle sain montre des contours de fibres régulièrement marqués, ce qui localise la dystrophine sous la membrane. Dans le muscle GRMD non traité (A), le marquage est presque absent. Ces deux références contrôlent le contraste entre présence normale et déficit. L’anticorps reconnaît les deux formes de la dystrophine : la couleur d’une fibre seule n’identifie ni la masse de la protéine ni sa fonction. La comparaison du marquage entre les différents sites soumis à l’intervention reste hors de cette réponse.
+
+### Question 12 — Masse des protéines et contrôle de charge
+
+> [!INDICATION]
+> Comparer les pistes de référence puis suivre la bande du contrôle de charge sous chaque piste.
+
+#### Solution
+
+Dans la piste A, la dystrophine musculaire normale donne une bande vers 427 kDa ; dans la piste B du chien GRMD sans traitement, cette grande bande est absente ou indétectable. La forme raccourcie est repérée à 138 kDa sur le panneau supérieur. La GAPDH est le contrôle de quantité déposée et du transfert : des bandes de charge comparables permettent de prendre au sérieux une différence de dystrophine entre pistes. Malgré le « 138 kDa » imprimé à côté de son nom, la bande de GAPDH du panneau inférieur migre entre les repères 31 et 41 kDa. Le cœur (E) et le diaphragme (F) sont deux autres muscles cliniquement importants dans la myopathie. La réponse s’arrête à la justification de ces contrôles et au principe de lecture.
+
+### Question 13 — Régénération et fibrose musculaires
+
+> [!INDICATION]
+> Comparer A à B pour la myosine, puis C à D pour le collagène.
+
+#### Solution
+
+Dans A on observe de nombreuses fibres positives pour la myosine de régénération. Elles sont plus rares dans B, le muscle traité. Dans C, les travées riches en collagène sont épaisses et nombreuses ; dans D elles sont plus fines et occupent moins d’espace. Par rapport au muscle de comparaison, ces deux indices vont dans le sens d’une moindre succession de lésions et de régénération, et d’une fibrose moins marquée. Ils complètent l’observation d’une protéine par un changement tissulaire. Quatre champs illustratifs ne donnent pas à eux seuls un taux de correction pour l’ensemble du muscle.
+
+### Question 14 — Évolution de la force sur trois mois
+
+> [!INDICATION]
+> Suivre les mêmes séries de J0 à J90, en tenant compte des effectifs et des intervalles de confiance.
+
+#### Solution
+
+Le membre traité (courbe C) passe d’environ 0,023 à 0,031 puis 0,036 N·m/kg entre J0, J45 et J90, et rejoint en moyenne le groupe sain. Le membre opposé D varie d’environ 0,025 à 0,029 puis 0,026, proche des chiens GRMD non traités. La différence de trajectoire est compatible avec une amélioration fonctionnelle locale. Les effectifs sont faibles (quatre chiens pour C et D), les intervalles à 95 % se recouvrent et les deux membres d’un animal sont appariés. Ces données demandent une comparaison statistique appariée pour conclure à un effet, puis un suivi plus long pour juger de sa durée.
+
+![Moyennes approximatives lues sur les quatre courbes de la figure Q14. Les intervalles de confiance, discutés dans le texte, sont représentés sur l’original.](figures/force-et-temoins.svg)
+
 ### Question 15 — Apport et limites du remplacement d’une protéine
 
 > [!INDICATION]
@@ -182,6 +222,24 @@ Les témoins ont été suivis antérieurement, sans affectation contemporaine al
 Le traitement vise à rétablir un cadre de lecture compatible avec une dystrophine raccourcie dans les cellules dont la mutation s’y prête. Il agit sur la maturation de l’ARN et laisse intacte la séquence de l’ADN du patient. Les données montrent un effet sur une fraction des transcrits et un signal protéique restauré. L’approche ne convient qu’aux configurations de mutation compatibles avec le saut considéré. La protéine reste partielle, l’effet doit être entretenu à mesure que les ARN se renouvellent et l’essai présenté implique des administrations répétées. Le faible effectif, l’absence de contrôle contemporain pour le suivi prolongé et la différence entre critère moléculaire et critère de marche limitent la conclusion clinique.
 
 ## Comparaison des interventions sur l’ADN et l’ARN
+
+### Question 21 — Lectures distinctes de l’ADN et de l’ARN
+
+> [!INDICATION]
+> Interpréter la mobilité relative des fragments avant de confondre proportion d’ADN et abondance d’un transcrit.
+
+#### Solution
+
+La PCR du panneau gauche porte sur l’ADN, tandis que la RT-PCR du panneau droit porte sur les ARN après transcription inverse. Une bande haute contient un fragment plus long, une basse un fragment plus court : ici l’exon étudié est respectivement conservé ou absent du produit. La référence négative montre surtout la forme longue. Une bande peu intense impose de vérifier le fond et la charge. Les intensités des deux techniques ne sont pas directement comparables entre elles : la transcription et la stabilité des ARN interviennent aussi. Les rendements du système de modification ne sont pas établis dans cette lecture.
+
+### Question 22 — Contrôles de l’immunoblot de dystrophine
+
+> [!INDICATION]
+> Comparer les bandes de myosine et expliquer la série de dilutions du témoin.
+
+#### Solution
+
+La piste du muscle malade non traité ne montre pas de bande nette de dystrophine, malgré la présence de myosine, ce qui écarte une absence totale de protéines dans cette piste. Le témoin normal présente la dystrophine vers 427 kDa ; ses dilutions successives sont des repères d’intensité. Le signal observé dans le prélèvement traité est compatible avec une récupération partielle de protéine. La myosine sert à contrôler les quantités déposées. Un immunoblot semi-quantitatif ne mesure à lui seul ni la force musculaire ni la fraction de cellules fonctionnellement corrigées. L’estimation d’efficacité de l’intervention reste hors de cette lecture.
 
 ### Question 23 — Comparer une intervention sur l’ADN au saut d’exon
 

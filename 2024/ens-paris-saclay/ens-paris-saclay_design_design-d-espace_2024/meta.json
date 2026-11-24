@@ -1,0 +1,80 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2024
+  },
+  "redaction": "Rédaction originale des deux éditions, lecture du scan et de sa carte, six planches A3 dessinées et cotées. Comparaison de trois configurations, capacité, section, démontage et autonomie pour quatre personnes.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_sujet%20design%201A_Espaces.pdf",
+    "sujet_sha256": "cabf7d74970fd60a41e9bbbc8d159860f11a2909248af735c3abcc873f99b28d",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=589",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-lisiere.svg",
+      "question": "Projet, planche 1",
+      "legende": "Le module regarde le lac depuis un replat desservi par le chemin."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-essais.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois esquisses confrontent la hauteur, la cour et le panorama assis."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-plan.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le plan coté place quatre couchages, les toilettes, la cuisine et la table dans 19,20 m²."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-coupe.svg",
+      "question": "Projet, planche 4",
+      "legende": "La coupe à l’échelle place la baie basse et l’ouvrant haut aux deux extrémités du toit."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-demontage.svg",
+      "question": "Projet, planche 5",
+      "legende": "L’éclaté sépare les grands éléments et le détail montre un appui entièrement démontable."
+    },
+    {
+      "numero": 6,
+      "fichier": "figures/06-flux.svg",
+      "question": "Projet, planche 6",
+      "legende": "Les circuits d’eau potable, d’eaux grises et d’électricité sont séparés et dimensionnés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions, lecture du scan et de sa carte, six planches A3 dessinées et cotées. Comparaison de trois configurations, capacité, section, démontage et autonomie pour quatre personnes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 6,
+    "parties": [
+      "Une chambre au bord du regard",
+      "Essayer trois façons de regarder",
+      "Un plan pour deux à quatre",
+      "Du matelas à la ligne d’eau",
+      "Démonter jusqu’au dernier appui",
+      "Habiter trois nuits hors réseau"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2024
+  },
+  "redaction": "Rédaction originale des deux éditions et de cinq planches A3. Lecture des photographies, tracé manuel du lettrage et des motifs vectoriels, simulation frontale, repérage des ouvrants et du retour libre rue Vian.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_sujet%20design%201A_Graphique.pdf",
+    "sujet_sha256": "aad7aad27b32b96f7d18fba59c57dea59e728e578d8327a9565448387afb516d",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=589",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-releve.svg",
+      "question": "Projet, planche 1",
+      "legende": "Le relevé repère l’entrée, le bandeau, la petite baie cintrée et le second retrait."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-essais.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois recherches graphiques confrontent fumée, rythme du service et pellicule du raisin."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-lettres.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le mot Livingston est tracé lettre par lettre et testé à deux tailles."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-facade.svg",
+      "question": "Projet, planche 4",
+      "legende": "Le projet final montre le mural et l’enseigne sur la façade de la rue Crudère."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-report.svg",
+      "question": "Projet, planche 5",
+      "legende": "La grille de report et la vue depuis le trottoir rendent le projet exécutable et testable."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions et de cinq planches A3. Lecture des photographies, tracé manuel du lettrage et des motifs vectoriels, simulation frontale, repérage des ouvrants et du retour libre rue Vian."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 5,
+    "parties": [
+      "Lire le mur à hauteur de rue",
+      "Trois écritures pour une rue",
+      "Un alphabet de petites entailles",
+      "La façade de la rue Crudère",
+      "Du pochoir au service du soir"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-frederique-leichter-flack_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Frédérique Leichter-Flack",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-sujet5-sil2023.pdf",
+    "sujet_sha256": "19f8c1097854d24c123477fadfafe91dd59ce17b73597ea377630adbcf5f9431"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Trois épreuves du jugement"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire organisé de la proposition de Frédérique Leichter-Flack, avec lecture de la comparution de Champmathieu chez Hugo, des récits de Billy Budd et du conflit des morts chez Sophocle, préparation méthodique et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
