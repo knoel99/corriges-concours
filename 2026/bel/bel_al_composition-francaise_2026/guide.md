@@ -2,7 +2,7 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
-**Rédaction** · Modèle : gpt-6 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+**Rédaction** · Modèle : OpenAI Codex (gpt-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
 
 **Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
 
