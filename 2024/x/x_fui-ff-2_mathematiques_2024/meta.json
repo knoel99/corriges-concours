@@ -41,7 +41,8 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20MATHEMATIQUES_0.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sha256_sujet": "53fc7e29eb944459f7becd1821159f1bb57cbadf8b46580b40f203a5b28a0d43"
   },
   "date_revision": "2026-11-24",
   "provenance": {
@@ -64,6 +65,18 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "revision",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Les 30 réponses et indications ont été vérifiées sur le PDF officiel FUI-FF du printemps. En E.6, identité intégrale de seconde différence pour la dérivée au bord alterné. En P.15, comparaison explicite des colonnes pour rendre le facteur droit indépendant du facteur gauche. Vérification des cinq figures. Aucun rapport individuel dans le registre de la banque.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }
