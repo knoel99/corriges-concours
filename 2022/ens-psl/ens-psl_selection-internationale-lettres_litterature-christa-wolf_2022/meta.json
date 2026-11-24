@@ -1,0 +1,43 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-christa-wolf_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Christa Wolf",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-sil2022-3.pdf",
+    "sujet_sha256": "8c45b3b882798ab09cafa3c1dc3f4478037261e17dc6c3fe92d52c0cc606a1e2",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-litterature-sil_2022.pdf",
+    "rapport_sha256": "6ce585f789f749c79b2b0ecd46c75a73101b99148ceed18f2d4807ad66e4d50b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Ce que conserve et déplace une réécriture"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire organisé sur le cadre mythique et la liberté d’interpréter, avec analyses de Cassandre et de Médée de Christa Wolf, d’Euripide et d’Antigone de Jean Anouilh, discussion de la pluralité des traditions, préparation et figure."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
