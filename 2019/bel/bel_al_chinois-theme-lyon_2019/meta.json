@@ -1,0 +1,47 @@
+{
+  "slug": "bel_al_chinois-theme-lyon_2019",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (thème Lyon)",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=10",
+    "sujet_sha256": "584c45c92277aefe34fd083279dd477990f7568de569a3f8d169bd44313931e2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Comment une pensée arrive dans la nasse"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traduction chinoise intégrale de l’extrait d’Amours au Palais Wilson de Pierre Girard, avec traitement du contraste des souvenirs, des nasses à langoustes et de l’image finale, figure."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Le thème chinois de quatre heures, avec dictionnaire bilingue autorisé, est un extrait d’Amours au Palais Wilson de Pierre Girard (1942)."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
