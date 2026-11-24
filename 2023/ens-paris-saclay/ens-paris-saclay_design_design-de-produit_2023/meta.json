@@ -1,0 +1,74 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2023
+  },
+  "redaction": "Rédaction des deux éditions avec lecture du sujet et du rapport 2023, cinq planches A3 originales. Trois objets en liège haute densité, plans et coupes à 1:1, contrôles de sections, gabarits d’usinage et masse brute.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/maquette-sujet-projet-design-objet.pdf",
+    "sujet_sha256": "a35a207884cfe539bfed28408ed77730f588f5570fb99ef2360e23d2e5050d23",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=583",
+    "nature": "Sujet original",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_oral_Projet.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-poseroir.svg",
+      "question": "Projet, planche 1",
+      "legende": "Les trois objets en liège noir répondent aux gestes de poser, porter et isoler."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-recherches.svg",
+      "question": "Projet, planche 2",
+      "legende": "Chaque recherche isole un contact ou un effet mesurable du liège."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-navette.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le plan et la coupe de la navette fixent deux logements de 72 mm dans une pièce de 235 mm."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-profils.svg",
+      "question": "Projet, planche 4",
+      "legende": "La coupe du manchon et celle de la pastille fournissent la matière résiduelle, les jeux et les dimensions."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-serie.svg",
+      "question": "Projet, planche 5",
+      "legende": "Le schéma de débit et le bilan matière donnent une base à la fabrication en moyenne série."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions avec lecture du sujet et du rapport 2023, cinq planches A3 originales. Trois objets en liège haute densité, plans et coupes à 1:1, contrôles de sections, gabarits d’usinage et masse brute."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 5,
+    "parties": [
+      "Poser le verre en silence",
+      "Trois essais de matière",
+      "La navette",
+      "Le manchon et la pastille",
+      "De la matière à la série"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2022
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Commentaire%20et%20traduction.pdf#page=6",
+    "sujet_sha256": "3b5f7ae138200d4e4a49340049c68031521a44c93c0adbf783058761d9d91b6b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Comment mettre une définition à l’épreuve ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire arabe de l’ensemble de l’extrait d’al-Kawakibi et traduction française des deux paragraphes allant du degré suprême du despotisme aux affaires françaises, avec explication des critères de responsabilité et schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "L’extrait de Ṭabāʾiʿ al-istibdād, d’Abd al-Rahman al-Kawakibi, est donné dans l’édition arabe de 2011. Le commentaire couvre l’extrait entier. La version porte uniquement sur les lignes 25 à 31, de la concentration des pouvoirs aux affaires de Panama et Dreyfus."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2018",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2018
+  },
+  "questions": 31,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MP_sujet_eMathB_2.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/11/18_MP_rap_eMathB.pdf",
+    "sha256_sujet": "7d37a54d527c70ac9512464939e101d9d3947a849414414647ecc03d4e0bf9a9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cercle-des-distances.svg",
+      "question": "10c",
+      "legende": "Le cercle de rapport K passe par les deux extrémités du segment. Sur la corde ouverte, le rapport des distances à w et y dépasse K, sauf en y où il est indéfini."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 31 questions ou sous-questions de la composition de remplacement du 5 mai 2018. Concordance vérifiée avec le rapport, y compris la chronologie p. 4. Vérification des normes de Legendre, des cercles et des cas d’égalité, du minimiseur et de la valeur du minimum. Figure de la question 10c.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

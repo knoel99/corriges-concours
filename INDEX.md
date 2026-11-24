@@ -143,6 +143,10 @@
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/brut.md) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/guide.md) |
+| 2022 | BEL | AL | Arabe (commentaire et traduction) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Arabe (thème Lyon) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Chinois (commentaire et traduction) | [md](2022/bel/bel_al_chinois-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_chinois-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Chinois (thème Lyon) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2022/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2022/brut.md) | [md](2022/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2022/guide.md) |
 | 2026 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/brut.md) | [md](2026/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
@@ -599,6 +603,9 @@
 | 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Entretien (oral) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | Hérodote — le débat sur les régimes politiques | [md](2023/ens-psl/ens-psl_cnel-lettres_herodote-le-debat-sur-les-regimes-politiques_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_herodote-le-debat-sur-les-regimes-politiques_2023/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | La statue de Zeus à Olympie | [md](2023/ens-psl/ens-psl_cnel-lettres_la-statue-de-zeus-a-olympie_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_la-statue-de-zeus-a-olympie_2023/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | Le phare antique de Boulogne-sur-Mer | [md](2023/ens-psl/ens-psl_cnel-lettres_le-phare-antique-de-boulogne-sur-mer_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_le-phare-antique-de-boulogne-sur-mer_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Pétrone — Fortunata et les rapports entre hommes et femmes | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-fortunata-et-les-rapports-entre-hommes-et-femmes_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-fortunata-et-les-rapports-entre-hommes-et-femmes_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Pétrone — les ressorts du comique | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-les-ressorts-du-comique_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_petrone-les-ressorts-du-comique_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Cicéron — le Pro Archia | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_ciceron-le-pro-archia_2023/guide.md) |
@@ -606,6 +613,8 @@
 | 2026 | ENS-PSL | CNEL Lettres | Études cinématographiques | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-cinematographiques_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Études théâtrales | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_etudes-theatrales_2026/guide.md) |
 | 2026 | ENS-PSL | CNEL Lettres | Droit | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/brut.md) | [md](2026/ens-psl/ens-psl_cnel-lettres_droit_2026/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | Platon — Gorgias | [md](2023/ens-psl/ens-psl_cnel-lettres_platon-gorgias_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_platon-gorgias_2023/guide.md) |
+| 2023 | ENS-PSL | CNEL Lettres | Xénophon — l’Économique | [md](2023/ens-psl/ens-psl_cnel-lettres_xenophon-leconomique_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_xenophon-leconomique_2023/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Linguistique | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_linguistique_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_linguistique_2023/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Littérature — Assia Djebar | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar_2023/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Littérature — Frédérique Leichter-Flack | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-frederique-leichter-flack_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-frederique-leichter-flack_2023/guide.md) |
@@ -656,6 +665,7 @@
 | 2018 | IEP | 1A | Questions contemporaines | [md](2018/iep/iep_1a_questions-contemporaines_2018/brut.md) | [md](2018/iep/iep_1a_questions-contemporaines_2018/guide.md) |
 | 2019 | IEP | 1A | Questions contemporaines | [md](2019/iep/iep_1a_questions-contemporaines_2019/brut.md) | [md](2019/iep/iep_1a_questions-contemporaines_2019/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Littérature — Christa Wolf | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-christa-wolf_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-christa-wolf_2022/guide.md) |
+| 2022 | ENS-PSL | Sélection internationale Lettres | Littérature — Dora Bruder de Patrick Modiano (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-dora-bruder-de-patrick-modiano-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-dora-bruder-de-patrick-modiano-oral_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Littérature — Erich Auerbach | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-erich-auerbach_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-erich-auerbach_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Littérature — Jean-Michel Maulpoix | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-jean-michel-maulpoix_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_litterature-jean-michel-maulpoix_2022/guide.md) |
 | 2022 | IEP | 1A | Questions contemporaines | [md](2022/iep/iep_1a_questions-contemporaines_2022/brut.md) | [md](2022/iep/iep_1a_questions-contemporaines_2022/guide.md) |
@@ -812,6 +822,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2018 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2018/x-ens/x-ens_psi_modelisation_2018/brut.md) | [md](2018/x-ens/x-ens_psi_modelisation_2018/guide.md) |
 | 2019 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2019/x-ens/x-ens_psi_modelisation_2019/brut.md) | [md](2019/x-ens/x-ens_psi_modelisation_2019/guide.md) |
 | 2020 | X-ENS | PSI | Modélisation | [md](2020/x-ens/x-ens_psi_modelisation_2020/brut.md) | [md](2020/x-ens/x-ens_psi_modelisation_2020/guide.md) |
 | 2021 | X-ENS | PSI | Modélisation | [md](2021/x-ens/x-ens_psi_modelisation_2021/brut.md) | [md](2021/x-ens/x-ens_psi_modelisation_2021/guide.md) |
