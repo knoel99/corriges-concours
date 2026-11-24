@@ -1,0 +1,41 @@
+{
+  "slug": "ens_mp_maths-d_2022",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2022
+  },
+  "questions": 67,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/22_mp_sujet_mathd.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/22_mp_rap_emathd.pdf",
+    "sha256_sujet": "0c1773179e8bfdbe910392d63c8dba6138e0fe9a4a6fb34690f128cdc2b6712b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/couronnes-dyadiques.svg",
+      "question": "6.6",
+      "legende": "Le pas radial est constant en distance hyperbolique. Le nombre de points double à chaque couronne."
+    },
+    {
+      "fichier": "figures/boules-du-disque.svg",
+      "question": "8.8",
+      "legende": "Le rayon euclidien décroît à l’approche du bord. Le point marqué est l’image du centre hyperbolique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale et contrôle des 67 questions des huit parties, du sujet original et du rapport. Deux schémas. Contre-exemples aux conditions imprimées de 8.3 et 8.5, puis démonstration indépendante des estimations finales par comptage de fractions gaussiennes primitives.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
