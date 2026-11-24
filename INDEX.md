@@ -106,6 +106,7 @@
 | 2026 | BCE | ECT | Résumé de texte (ICN-ISC) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/brut.md) | [md](2026/bce/bce_ect_resume-de-texte-icn-isc_2026/guide.md) |
 | 2025 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ect_synthese-de-textes-escp-hec_2025/guide.md) |
 | 2026 | BCE | ECT | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ect_synthese-de-textes-escp-hec_2026/guide.md) |
+| 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
@@ -336,7 +337,9 @@
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
 | 2026 | ENS | MP-MPI | Informatique fondamentale | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/brut.md) | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2021 | ENS | MP | Maths D | [md](2021/ens/ens_mp_maths-d_2021/brut.md) | [md](2021/ens/ens_mp_maths-d_2021/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2026 | ENSATT | Administration du spectacle vivant | Cas pratique | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/brut.md) | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
 | 2026 | G2E | BCPST | Chimie | [md](2026/g2e/g2e_bcpst_chimie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_chimie_2026/guide.md) |
@@ -462,6 +465,7 @@
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
+| 2023 | X-ENS | MP-MPI | Maths A | [md](2023/x-ens/x-ens_mp_maths-a_2023/brut.md) | [md](2023/x-ens/x-ens_mp_maths-a_2023/guide.md) |
 | 2024 | X-ENS | MP | Mathématiques A | [md](2024/x-ens/x-ens_mp_maths-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_maths-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Maths A | [md](2025/x-ens/x-ens_mp_maths-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_maths-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Maths A | [md](2026/x-ens/x-ens_mp_maths-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_maths-a_2026/guide.md) |
@@ -476,6 +480,7 @@
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
+| 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
 | 2024 | X | MP | Maths B | [md](2024/x/x_mp_maths-b_2024/brut.md) | [md](2024/x/x_mp_maths-b_2024/guide.md) |
 | 2025 | X | MP | Maths B | [md](2025/x/x_mp_maths-b_2025/brut.md) | [md](2025/x/x_mp_maths-b_2025/guide.md) |
 | 2026 | X | MP | Maths B | [md](2026/x/x_mp_maths-b_2026/brut.md) | [md](2026/x/x_mp_maths-b_2026/guide.md) |

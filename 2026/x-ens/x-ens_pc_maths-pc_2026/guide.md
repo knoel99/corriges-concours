@@ -638,6 +638,8 @@ $$J(x)=I(x)+\ln2=\frac{1+x}2\ln(1+x)+\frac{1-x}2\ln(1-x).$$
 > [!PIEGE]
 > « Démontrer » le résultat de l'énoncé en perdant le terme $-N\ln2$ venant de $2^{-N}$. Quand un calcul honnête contredit l'énoncé, il faut vérifier sur un cas simple, écrire ce que l'on obtient, le signaler en une phrase, puis continuer.
 
+![Figure 7 — Le taux binomial exact se rapproche de J et atteint ln 2 aux deux extrémités.](figures/q21-taux-binomial.svg)
+
 ### Question 22
 
 > [!INDICATION]
@@ -662,6 +664,14 @@ Compte tenu de Q21, la convergence admise est exacte sous la forme $G_N(\beta,h)
 > Pour $x\in\,]-1,1[$ et une suite $u_N\in\mathscr M_N$ tendant vers $x$, Q21 et la continuité de $y\mapsto\beta y^2+hy$ minorent asymptotiquement $G_N$ par $\beta x^2+hx-I(x)-\ln2$.
 >
 > La majoration (non demandée) vient de ce que la somme compte au plus $N+1$ termes.
+
+**Vérification de la limite admise après Q22.** Pour tout entier $0\leq k\leq N$, posons $p=k/N$ et $x=2p-1$. Si $0<k<N$, les probabilités $b_j$ de la loi binomiale de paramètres $N,p$ vérifient
+$$\frac{b_{j+1}}{b_j}=\frac{N-j}{j+1}\frac{p}{1-p}.$$
+Cette suite croît jusqu’à $k$ puis décroît. Le terme $b_k$ est donc entre $1/(N+1)$ et $1$. Pour $k=0$ ou $k=N$, la loi est concentrée en $k$. Comme $P[S_N=x]=b_k\exp[-NJ(x)]$ avec $J=I+\ln 2$ (Q21), les mêmes bornes valent **uniformément sur la grille** :
+$$\frac{e^{-NJ(x)}}{N+1}\leq P[S_N=x]\leq e^{-NJ(x)}.$$
+Notons $M_N$ le maximum sur cette grille de $x\mapsto\beta x^2+hx-J(x)$. Une contribution maximisante minore la somme, et ses $N+1$ termes la majorent. Ainsi
+$$M_N-\frac{\ln(N+1)}{N}\leq G_N(\beta,h)\leq M_N+\frac{\ln(N+1)}{N}.$$
+La fonction est continue sur le segment. En approchant un maximiseur par un point de la grille à distance au plus $1/N$, on obtient $M_N\to g(\beta,h)-\ln 2$. Cela confirme la correction y compris lorsque les points utilisés tendent vers une extrémité.
 
 ### Question 23
 
@@ -1012,6 +1022,8 @@ $$\boxed{\lim_{\substack{h\to0\\h>0}}\frac{x_*(\frac12,h)}{(3h)^{1/3}}=1}$$
 > Au point critique $\beta=\frac12$, le terme linéaire de l'équation se compense exactement et l'aimantation varie comme $h^{1/3}$ (exposant critique $\frac13$). Pour $\beta<\frac12$, elle varie au contraire comme $\frac{h}{1-2\beta}$.
 
 ---
+
+![Figure 8 — Au point critique, la courbe exacte rejoint la loi de puissance de pente un tiers en coordonnées logarithmiques.](figures/q32-loi-critique.svg)
 
 ## Bilan
 

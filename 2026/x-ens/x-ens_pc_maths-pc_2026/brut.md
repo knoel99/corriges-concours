@@ -354,6 +354,8 @@ Contrôle en $x=0$ (avec $u_N\in\{0,\frac1N\}$) : $P[S_N=u_N]$ est de l'ordre de
 La limite vaut donc $0=I(0)+\ln2$, alors que $I(0)=-\ln2$. Le résultat annoncé serait exact avec
 $$J(x)=I(x)+\ln2=\frac{1+x}2\ln(1+x)+\frac{1-x}2\ln(1-x).$$
 
+![Figure 7 — Le taux binomial exact se rapproche de J et atteint ln 2 aux deux extrémités.](figures/q21-taux-binomial.svg)
+
 ### Question 22
 
 Soit $x\in\mathscr M_N$. $S_N$ prend ses valeurs dans l'ensemble fini $\mathscr M_N$, donc, par la formule de transfert,
@@ -363,6 +365,14 @@ $$Y_N(\beta,h)\geqslant P[S_N=x]\,e^{N(\beta x^2+hx)}.$$
 Comme $P[S_N=x]>0$ (Q20), on prend le logarithme (croissant) et on divise par $N$ :
 $$\boxed{G_N(\beta,h)\geqslant\beta x^2+hx+\frac1N\ln P[S_N=x]}$$
 Compte tenu de Q21, la convergence admise est exacte sous la forme $G_N(\beta,h)\to g(\beta,h)-\ln2$, avec $g$ défini comme dans l'énoncé ; seule cette forme sert en Q30.
+
+**Vérification de la limite admise après Q22.** Pour tout entier $0\leq k\leq N$, posons $p=k/N$ et $x=2p-1$. Si $0<k<N$, les probabilités $b_j$ de la loi binomiale de paramètres $N,p$ vérifient
+$$\frac{b_{j+1}}{b_j}=\frac{N-j}{j+1}\frac{p}{1-p}.$$
+Cette suite croît jusqu’à $k$ puis décroît. Le terme $b_k$ est donc entre $1/(N+1)$ et $1$. Pour $k=0$ ou $k=N$, la loi est concentrée en $k$. Comme $P[S_N=x]=b_k\exp[-NJ(x)]$ avec $J=I+\ln 2$ (Q21), les mêmes bornes valent **uniformément sur la grille** :
+$$\frac{e^{-NJ(x)}}{N+1}\leq P[S_N=x]\leq e^{-NJ(x)}.$$
+Notons $M_N$ le maximum sur cette grille de $x\mapsto\beta x^2+hx-J(x)$. Une contribution maximisante minore la somme, et ses $N+1$ termes la majorent. Ainsi
+$$M_N-\frac{\ln(N+1)}{N}\leq G_N(\beta,h)\leq M_N+\frac{\ln(N+1)}{N}.$$
+La fonction est continue sur le segment. En approchant un maximiseur par un point de la grille à distance au plus $1/N$, on obtient $M_N\to g(\beta,h)-\ln 2$. Cela confirme la correction y compris lorsque les points utilisés tendent vers une extrémité.
 
 ### Question 23
 
@@ -561,3 +571,5 @@ Comme $x_h\to0$, on peut composer : $h=\Phi(x_h)\sim\frac{x_h^3}3$, soit $\frac{
 
 Par continuité de $t\mapsto t^{1/3}$ en $1$ :
 $$\boxed{\lim_{\substack{h\to0\\h>0}}\frac{x_*(\frac12,h)}{(3h)^{1/3}}=1}$$
+
+![Figure 8 — Au point critique, la courbe exacte rejoint la loi de puissance de pente un tiers en coordonnées logarithmiques.](figures/q32-loi-critique.svg)
