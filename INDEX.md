@@ -218,6 +218,7 @@
 | 2022 | BEL | AL | Espagnol (thème Lyon) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Italien (commentaire et traduction) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Italien (thème Lyon) | [md](2022/bel/bel_al_italien-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_italien-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Japonais (commentaire et traduction) | [md](2022/bel/bel_al_japonais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_japonais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Polonais (commentaire et traduction) | [md](2022/bel/bel_al_polonais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_polonais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (commentaire et traduction) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (thème Lyon) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/guide.md) |
@@ -566,6 +567,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2024 | ENS | PC | Chimie B | [md](2024/ens/ens_pc_chimie-b_2024/brut.md) | [md](2024/ens/ens_pc_chimie-b_2024/guide.md) |
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
@@ -766,6 +768,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2019 | X-ENS | PSI | Sciences industrielles | [md](2019/x-ens/x-ens_psi_sciences-industrielles_2019/brut.md) | [md](2019/x-ens/x-ens_psi_sciences-industrielles_2019/guide.md) |
 | 2020 | X-ENS | PSI | Sciences industrielles | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/brut.md) | [md](2020/x-ens/x-ens_psi_sciences-industrielles_2020/guide.md) |
 | 2021 | X-ENS | PSI | Sciences industrielles | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/brut.md) | [md](2021/x-ens/x-ens_psi_sciences-industrielles_2021/guide.md) |
 | 2022 | X-ENS | PSI | Sciences industrielles | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/brut.md) | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/guide.md) |

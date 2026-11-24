@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2019,
+    "duree_heures": 5
+  },
+  "questions": 57,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://prepahelp.com/docs/annales/x-ens/psi/prepahelp-x-ens-2019-psi-si-sujet.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2019_Rapport_Ecrits_PSI_SI.pdf",
+    "sujet_sha256": "c2236fda0b70b41e3bb24855a9b3b47f0b69291c6ea7ae1a80a49e95d7715465"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-portee.svg",
+      "question": "Q1",
+      "legende": "Frontière extérieure côté travail sur la fenêtre de DR1. Le bras maximal et la flèche horizontale sont représentés en bleu. Le pendulaire est libre en D dans cette construction théorique."
+    },
+    {
+      "fichier": "figures/q17-bode.svg",
+      "question": "Q17",
+      "legende": "DR2. Gains réels et asymptotes en pointillés, phases réelles et seuil de 60 dB. Les deux lois ont le même pôle résonant."
+    },
+    {
+      "fichier": "figures/q31-capteur.svg",
+      "question": "Q31",
+      "legende": "Mesure du panier dans le repère de la pesanteur. Une perturbation de la flèche agit sur le bloc mécanique."
+    },
+    {
+      "fichier": "figures/q41-pression.svg",
+      "question": "Q41",
+      "legende": "DR3 complété avec le signe du comparateur imprimé. La branche basse se lit de droite à gauche."
+    },
+    {
+      "fichier": "figures/q56-ech.svg",
+      "question": "Q56",
+      "legende": "Réponses en boucle fermée au même échelon de position. La valeur finale vaut la moitié de la consigne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 57 questions de la nacelle HA41RTJPro sur le sujet original, ses quatre annexes, les documents réponse et le rapport du jury. Cinq figures originales. Vérifications des limites de basculement, des singularités cinématiques, des deux lois vibratoires de la page 7, des volumes de compensation et de la boucle de position. Lecture des curseurs des trois configurations de l’annexe 4."
+    }
+  ]
+}

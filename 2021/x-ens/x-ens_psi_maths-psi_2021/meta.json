@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_psi_maths-psi_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2021
+  },
+  "questions": 47,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Sujet_1A_PSI_Maths.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2021_Rapport_Ecrit_PSI_Maths.pdf",
+    "sha256_sujet": "71e60e22fb7c424175e3331752b0f0f2f5c356db2aa135ba4ba3731cf5500d63"
+  },
+  "figures": [
+    {
+      "fichier": "figures/triangle-fubini.svg",
+      "question": "2c",
+      "legende": "Le même triangle se parcourt verticalement à t fixé, entre 0 et t, ou horizontalement à u fixé, entre u et a."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 47 réponses et indications sur le sujet officiel et les quatre pages de rapport. Justification des intégrales, de l’injectivité de Laplace, du calcul terme à terme des dérivées, précisions sur les valeurs en zéro et sur le cas divergent de la série de Mittag-Leffler d’ordre nul.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
