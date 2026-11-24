@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Ce problème de quatre heures porte sur les matrices entières et les simplexes du réseau. Les 14 numéros donnés au concours établissent une finitude à équivalence entière près. Le PDF officiel ajoute cinq numéros hors concours démontrant les théorèmes admis. Les deux ensembles sont traités ici, soit 40 questions et sous-questions. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mp_sujet_maths_a.pdf)
@@ -375,7 +377,7 @@ Translatons $s_0$ à l’origine et formons la matrice entière $M$ de colonnes 
 
 #### Solution
 
-Pour un nombre fixé $k>0$ de points entiers intérieurs, le théorème 2 donne $\operatorname{Vol}(S)\leq C(n,k)$. D’après 13, chaque classe possède un représentant dont les sommets sont des points entiers du cube $[0,n!C(n,k)]^n$. Cet ensemble de points est fini, donc il n’y a qu’un nombre fini de choix de $n+1$ sommets, et a fortiori un nombre fini de classes.
+Pour un nombre fixé $k>0$ de points entiers intérieurs, le théorème 2 donne $\operatorname{Vol}(S)\leq C(n,k)$. D’après 13, chaque classe possède un représentant dont les sommets sont des points entiers du cube $[0,n!C(n,k)]^n$. Cet ensemble de points est fini, donc il n’y a qu’un nombre fini de choix de $n+1$ sommets, et a fortiori un nombre fini de classes. L’hypothèse $k>0$ intervient réellement. Les tétraèdres de 8b n’ont aucun point entier intérieur, alors que leurs volumes $m/6$ sont distincts quand $m$ varie. Une équivalence a un déterminant de valeur absolue un et conserve le volume. Ces tétraèdres appartiennent donc à une infinité de classes pour $k=0$.
 
 ## IV — Complément publié hors concours
 
@@ -521,7 +523,9 @@ Supposons $1>\sum_i t_i>1-\alpha(k,n)$. La question 17 fournit $p_i,q$ et nous p
 
 #### Solution
 
-Il faut vérifier que $-\delta(S-x)\subset S-x$. Pour chaque sommet $s_j$, translatons $s_j$ à l’origine, avec $s_0=0$. Le simplexe translaté est encore entier avec les mêmes $k$ points intérieurs entiers et $x-s_j$ est l’un d’eux. La question 18b appliquée dans cette configuration donne $\delta(x-s_j)\in(S-s_j)-(x-s_j)=S-x$. Ainsi les images des sommets de $S-x$ par la multiplication par $-\delta$ appartiennent à $S-x$. Par convexité, toute leur enveloppe y appartient. On obtient $a(S-x)\geq\delta$.
+Il faut vérifier que $-\delta(S-x)\subset S-x$. Pour chaque sommet $s_j$, translatons $s_j$ à l’origine, avec $s_0=0$. Le simplexe translaté est encore entier avec les mêmes $k$ points intérieurs entiers et $x-s_j$ est l’un d’eux. La question 18b appliquée dans cette configuration donne $\delta(x-s_j)\in(S-s_j)-(x-s_j)=S-x$. Ainsi les images des sommets de $S-x$ par la multiplication par $-\delta$ appartiennent à $S-x$. Par convexité, toute leur enveloppe y appartient. On obtient $a(S-x)\geq\delta$. On peut aussi calculer ce coefficient exactement. Soient $b_0,\ldots,b_n$ les poids barycentriques du point intérieur $x$. Pour que $-\lambda(S-x)\subset S-x$, il suffit et il faut que chaque sommet $s_i$ ait son image $(1+\lambda)x-\lambda s_i$ dans $S$. Ses poids valent $(1+\lambda)b_j$ pour $j\ne i$ et $(1+\lambda)b_i-\lambda$ pour $j=i$. Le dernier est le seul susceptible de devenir négatif. Par conséquent,
+$$a(S-x)=\min_{0\le i\le n}\frac{b_i}{1-b_i}.$$
+Au barycentre, tous les poids valent $1/(n+1)$ et le coefficient exact est $1/n$.
 
 ![Figure 7 — Dans cet exemple plan, les images des trois sommets par la symétrie de centre x suivie d’une réduction de rapport un tiers appartiennent au simplexe initial.](figures/simplexe-reflechi.svg)
 
@@ -537,7 +541,7 @@ Il faut vérifier que $-\delta(S-x)\subset S-x$. Pour chaque sommet $s_j$, trans
 
 Prenons un point intérieur entier $x$ d’un simplexe entier possédant exactement $k>0$ tels points. Après translation d’un sommet entier, 18c s’applique. Le simplexe $S-x$ contient zéro dans son intérieur et possède encore $k$ points intérieurs entiers. Les questions 10c et 18c donnent
 $$k\geq\operatorname{Vol}(S)\left(\frac{a(S-x)}{2}\right)^n\geq\operatorname{Vol}(S)\left(\frac{\alpha(k,n)}{2(1-\alpha(k,n))}\right)^n.$$
-Il suffit donc de choisir $C(n,k)=k[2(1-\alpha(k,n))/\alpha(k,n)]^n$, qui dépend uniquement de $n$ et de $k$.
+Il suffit donc de choisir $C(n,k)=k[2(1-\alpha(k,n))/\alpha(k,n)]^n$, qui dépend uniquement de $n$ et de $k$. En dimension un, tout segment à extrémités entières ayant exactement $k$ points entiers intérieurs a pour longueur $k+1$. C’est la constante optimale dans cette dimension. La formule obtenue, avec $\alpha(k,1)=1/(k+1)$, donne $2k^2$, qui majore bien $k+1$ pour tout entier $k\geq1$.
 
 ## Bilan
 
