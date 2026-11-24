@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2018",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2018
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/2018_2CC_sujet_Math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_2CC_rap_eMath.pdf",
+    "sha256_sujet": "cb7ad454a949cfba6fe4718c6585ee3e8ba5c2d9fad54b7d8c2194542c186336"
+  },
+  "figures": [
+    {
+      "fichier": "figures/modes-de-floquet.svg",
+      "question": "2.7a",
+      "legende": "Les deux enveloppes exponentielles de Floquet décroissent à des extrémités opposées. Chaque solution porte en outre un facteur périodique borné."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des deux problèmes et des 26 items. Vérification des bornes sur les racines, des parités aux premiers rangs, des signes du wronskien et des estimations de la solution forcée. Schéma des deux modes de Floquet.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
