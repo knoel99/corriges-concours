@@ -6,7 +6,9 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Couverture de l’épreuve (64 questions).** Les questions 1 à 45, 51, 56 et 60 reçoivent une réponse intégrale (48 questions). Les questions 46, 49, 52 et 53 reçoivent une réponse partielle, limitée aux propriétés des réactifs ou à la lecture du spectre. La voie de synthèse de la zéaralénone, qui concerne les questions 47–48, 50, 54–55, 57–59 et 61–64, reste hors du corrigé (12 questions).
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture.** 49 questions intégralement traitées, 3 partiellement et 12 hors couverture. La Q53 est entièrement traitée, avec les formes de Lewis du diazométhane, l’origine de son pouvoir alkylant et la fonction ester méthylique. Les Q46, 49 et 52 restent partielles. Les lectures analytiques et les autres questions traitées sont identifiées dans les métadonnées ; la voie de construction de la zéaralénone demeure hors couverture.
 
 ## I.1 — Structure de H₂S et combustion
 
@@ -575,7 +577,7 @@ Le composé 6 est une **lactone**. On reconnaît le motif ester $\mathrm{{-}C(=O
 
 La figure 12 montre un ensemble A vers $7{,}3\ \mathrm{ppm}$ intégrant quatre protons aromatiques, compatible avec un benzène disubstitué. Le signal E vers $2{,}3\ \mathrm{ppm}$ intègre trois protons et correspond au méthyle porté par un noyau aromatique. B, vers $4{,}8\ \mathrm{ppm}$, intègre deux protons d’un méthylène fortement déblindé, tandis que F, vers $1{,}8\ \mathrm{ppm}$, est compatible avec un méthylène aliphatique. Les intégrations du spectre ne suffisent pas, à elles seules, à distinguer tous les méthylènes. Cette lecture s’en tient aux familles de protons.
 
-### Question 53 — éléments de réponse
+### Question 53 — structure et pouvoir alkylant
 
 > [!INDICATION]
 > Dénombrer seize électrons de valence pour le squelette C–N–N et proposer deux formes mésomères respectant l’octet.
@@ -585,7 +587,7 @@ La figure 12 montre un ensemble A vers $7{,}3\ \mathrm{ppm}$ intégrant quatre p
 
 #### Solution
 
-Deux formules de Lewis du diazométhane sont $\mathrm{H_2C{=}N^+{=}N^-\leftrightarrow {}^-CH_2{-}N^+{\equiv}N}$. Dans la première, le N terminal porte deux doublets libres ; dans la seconde, le carbone et le N terminal portent chacun un doublet libre. Les deux structures ont seize électrons de valence et une charge totale nulle. Cette réponse porte sur les formes de Lewis.
+Deux formules de Lewis du diazométhane sont $\mathrm{H_2C{=}N^+{=}N^-\leftrightarrow {}^-CH_2{-}N^+{\equiv}N}$. Dans la première, le N terminal porte deux doublets libres ; dans la seconde, le carbone et le N terminal portent chacun un doublet libre. Les deux structures ont seize électrons de valence et une charge totale nulle. Avec un acide carboxylique générique RCO₂H, la forme à carbone riche en électrons explique la fixation du proton sur C et la formation de CH₃–N⁺≡N. Un doublet de l’oxygène du carboxylate forme ensuite O–CH₃, tandis que la liaison C–N se rompt vers le diazote stable. Le groupe alkyle transféré est ainsi un méthyle et la fonction formée un **ester méthylique**, RCO₂CH₃.
 
 ### Question 56
 
