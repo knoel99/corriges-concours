@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_chinois-theme-lyon_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (thème Lyon)",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=11",
+    "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Chinois%202022.pdf#page=5"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Le parcours de la dilatation"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traduction chinoise du titre et des deux paragraphes de Jean-Louis Chrétien, justification des déictiques, du gué et de l’inchoation, schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Le thème chinois de quatre heures porte sur deux paragraphes de Jean-Louis Chrétien, La Joie spacieuse, essais sur la dilatation (2007). La coupure de l’extrait est respectée."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
