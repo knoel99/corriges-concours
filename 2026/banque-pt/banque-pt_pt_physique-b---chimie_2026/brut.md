@@ -2,7 +2,15 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 2 h, calculatrice interdite, 28 questions réparties en trois parties indépendantes. Les applications numériques sont menées à la main, comme le jour du concours. On note $\dfrac{RT\ln 10}{F} = 0{,}06\ \text{V}$ à 298 K (donnée de l'énoncé).
+
+[Sujet officiel](https://www.banquept.fr/documents/2026/ph_b_ch_2026_pt.pdf) · [Rapport de chimie, trois premières pages du PDF](https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_phys_b_ecrit_2026.pdf#page=1)
 
 ## Partie I - Autour du colorant
 
@@ -48,7 +56,7 @@ $$\boxed{\lambda_{\max,\text{vis}} \approx 530\ \text{nm}}$$
 
 ### Q4.
 
-Le colorant absorbe essentiellement autour de 530 nm, dans le vert, et un peu dans le violet vers 400 nm. En revanche, son absorbance est quasi nulle au-delà de 620 nm environ : les radiations rouges sont transmises. La couleur perçue est la couleur complémentaire de la couleur absorbée ; le complémentaire du vert sur le cercle chromatique est le rouge (magenta). **Le colorant absorbe le vert et transmet le rouge : il apparaît rouge.**
+Dans le visible, l’absorbance présente une bande dans le vert et reste appréciable du côté du violet. Elle décroît fortement du jaune vers le rouge et devient très faible aux grandes longueurs d’onde. Sous lumière blanche, les radiations rouges sont donc mieux transmises, ce qui explique la teinte rouge observée. La position du seul maximum vert ne suffit pas à distinguer le rouge du magenta.
 
 ### Q5.
 
@@ -71,7 +79,7 @@ Par la loi de Beer-Lambert, $k = \varepsilon\,\ell$ : avec une cuve de $\ell = 1
 
 ### Q6.
 
-$\Delta_r G^\circ_1(T) = -RT\ln K^\circ_1(T)$ et, en supposant $\Delta_r H^\circ_1$ et $\Delta_r S^\circ_1$ indépendants de $T$ (hypothèse du programme), $\Delta_r G^\circ_1(T) = \Delta_r H^\circ_1 - T\,\Delta_r S^\circ_1$. D'où :
+À chaque température, $\Delta_r G^\circ_1(T)=-RT\ln K^\circ_1(T)=\Delta_r H^\circ_1(T)-T\Delta_r S^\circ_1(T)$. L’identité est exacte. Si l’on emploie les valeurs de 298 K à une autre température, on suppose alors que les grandeurs de réaction varient peu dans l’intervalle étudié.
 
 $$\boxed{K^\circ_1(T) = \exp\left(-\frac{\Delta_r G^\circ_1}{RT}\right) = \exp\left(\frac{\Delta_r S^\circ_1}{R} - \frac{\Delta_r H^\circ_1}{RT}\right)}$$
 
@@ -94,9 +102,9 @@ $$\Delta_r S^\circ_1 = S^\circ_m(\mathrm A) - S^\circ_m(\mathrm R) = 50 - 50$$
 
 $$\boxed{\Delta_r S^\circ_1 = 0\ \text{J·K}^{-1}\text{·mol}^{-1}}$$
 
-Commentaire : l'entropie standard de réaction mesure la variation de désordre entre produits et réactifs. Ici, un solide cristallisé se transforme en un autre solide de même formule, sans gaz consommé ni produit, et chaque espèce reste seule dans sa phase : les deux états sont aussi ordonnés l'un que l'autre. D'où une entropie standard de réaction très faible, nulle à la précision des données.
+Les deux formes sont cristallines et la conversion conserve la composition sans former de gaz. Une faible différence d’entropie est plausible. Les entropies des deux réseaux peuvent néanmoins différer, notamment par leurs vibrations.
 
-La valeur exactement nulle tient à l'arrondi des données. Seul l'ordre de grandeur est significatif : il est très petit devant les quelque $100\ \text{J·K}^{-1}\text{·mol}^{-1}$ d'une réaction qui produit une mole de gaz.
+Le tableau fournit les deux entropies sous la même valeur arrondie. Il ne donne pas le signe d’un éventuel écart plus petit que sa résolution.
 
 Cohérence avec la valeur annoncée :
 
@@ -142,7 +150,7 @@ $$\boxed{n(\mathrm A)_f = 0}$$
 
 $$\boxed{n(\mathrm R)_f = 2n_0 = 2\ \text{mol}}$$
 
-**L'état final n'est pas un état d'équilibre chimique** : la transformation est totale et s'arrête par disparition d'une phase (rupture d'équilibre). Le système final, réduit au seul rutile, ne vérifie pas $Q_r = K^\circ_1$, la grandeur $Q_r$ n'étant même plus définie faute d'anatase.
+Le rutile seul est l’état stable à 298 K. Le minimum de l’enthalpie libre est atteint à la limite des compositions possibles, $n(\mathrm A)=0$. La condition $Q_r=K^\circ_1$ caractériserait la coexistence des deux phases, impossible ici. Cette disparition de l’anatase est appelée rupture d’équilibre.
 
 ### Q13.
 
@@ -150,7 +158,7 @@ La coexistence des deux phases à l'équilibre impose $Q_r = K^\circ_1$ avec $Q_
 
 $$\boxed{K^\circ_1 = 1}$$
 
-ce qui équivaut à $\Delta_r G^\circ_1 = 0$. Les deux variétés ne coexistent à l'équilibre qu'à une température bien précise (température de transition).
+ce qui équivaut à $\Delta_r G^\circ_1 = 0$. À pression fixée, une température de transition éventuelle doit satisfaire cette égalité.
 
 ### Q14.
 
@@ -158,15 +166,15 @@ Relation de Van't Hoff :
 
 $$\boxed{\frac{\mathrm d \ln K^\circ}{\mathrm d T} = \frac{\Delta_r H^\circ}{RT^2}}$$
 
-Ici $\Delta_r H^\circ_1 > 0$ : $K^\circ_1$ est une fonction croissante de $T$. Pour faire passer $K^\circ_1$ de 0,13 à 1, **il faut augmenter la température à partir de 298 K.**
+Comme $\Delta_r H^\circ_1>0$, il faut **augmenter la température** pour que $K^\circ_1$ se rapproche de 1 à partir de 0,13. La dérivée à 298 K indique le sens de variation, sans garantir le franchissement de 1.
 
 Remarque : avec les données arrondies ($\Delta_r S^\circ_1 = 0$), $K^\circ_1 = \exp\left(-\dfrac{\Delta_r H^\circ_1}{RT}\right)$ reste strictement inférieur à 1 pour toute température finie et ne fait que tendre vers 1 quand $T$ augmente. Le modèle ne donne donc qu'un sens d'évolution ; la température de coexistence $T = \Delta_r H^\circ_1/\Delta_r S^\circ_1$ n'est définie que si $\Delta_r S^\circ_1 > 0$.
 
 ### Q15.
 
-La cellule utilise l'anatase. Dans le modèle, (R1) est endothermique : une élévation de température augmente $K^\circ_1$ et réduit l'écart entre $Q_r = 1$ et $K^\circ_1$, donc déplace l'équilibre dans le sens de formation de l'anatase. **La cellule doit être élaborée à haute température** pour favoriser l'anatase.
+La réponse qualitative attendue est de **chauffer**. Si l’on maintient les valeurs arrondies de $\Delta_r H^\circ_1$ et $\Delta_r S^\circ_1$ constantes, $K^\circ_1$ augmente avec $T$ mais reste inférieur à 1. Comme $Q_r=1$ tant que les deux solides coexistent, la conversion spontanée demeure alors dirigée vers le rutile.
 
-Avec les données de l'énoncé, $K^\circ_1$ reste inférieur à 1 à toute température : l'anatase n'est jamais rigoureusement la phase stable, la haute température ne fait que la défavoriser moins. Sa présence effective relève alors d'un blocage cinétique (forme métastable), point que le sujet ne demande pas de développer.
+Ce calcul ne fixe donc aucune température de préparation qui garantirait un dépôt d’anatase. La cinétique de formation et de conservation du solide peut intervenir dans le procédé réel.
 
 ### II.2 - L'oxyde de nickel
 
@@ -217,7 +225,7 @@ $$\begin{aligned}
 
 $$\boxed{\rho \approx 6{,}8\ \text{g·cm}^{-3} = 6{,}8\times10^{3}\ \text{kg·m}^{-3}}$$
 
-Regard critique : la valeur est plusieurs fois supérieure à celle de l'eau et du même ordre que celle des métaux de transition et de leurs oxydes (quelques $\text{g·cm}^{-3}$ ; la valeur tabulée pour NiO est voisine de $6{,}7\ \text{g·cm}^{-3}$). Elle est donc cohérente. Une erreur de conversion du picomètre décalerait le résultat d'un facteur $10^{6}$ au moins, ce qui donnerait une valeur absurde pour un solide.
+Regard critique : la valeur est plusieurs fois supérieure à celle de l'eau et du même ordre que celle des métaux de transition et de leurs oxydes (quelques $\text{g·cm}^{-3}$ ; la valeur tabulée pour NiO est voisine de $6{,}7\ \text{g·cm}^{-3}$). Elle est donc cohérente. Une erreur d’un facteur dix sur le paramètre de maille produirait un facteur mille sur sa masse volumique.
 
 ### Q19.
 
@@ -291,13 +299,15 @@ $$E = E^\circ(\mathrm{I_3^-/I^-}) + \frac{0{,}06}{2}\log\frac{[\mathrm{I_3^-}]\,
 Sur la frontière, $[\mathrm{I_3^-}] = [\mathrm{I^-}] = C_t = 1{,}0\times10^{-1}\ \text{mol·L}^{-1}$. Les coefficients stœchiométriques étant différents, le terme logarithmique ne s'annule pas :
 
 $$\begin{aligned}
-\log\frac{C_t}{C_t^{3}} &= -2\log C_t = 2 \\
+2\log\!\left(\frac{c^\circ}{C_t}\right) &= \log(10^2)=2 \\
 0{,}60 &= E^\circ + 0{,}03\times2
 \end{aligned}$$
 
 $$\boxed{E^\circ(\mathrm{I_3^-/I^-}) = 0{,}60 - 0{,}06 = 0{,}54\ \text{V}}$$
 
 Le potentiel de la frontière horizontale (0,60 V) n'est donc pas le potentiel standard du couple.
+
+![Figure 4 — La convention de tracé décale de 0,06 V le potentiel de la frontière par rapport au potentiel standard.](figures/q23-potentiel-frontiere.svg)
 
 ### Q24.
 
