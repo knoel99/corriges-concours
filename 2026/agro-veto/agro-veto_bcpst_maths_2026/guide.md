@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet suit l'expérience de Luria et Delbrück (1943), qui a montré que les mutations de résistance apparaissent au hasard au fil des divisions cellulaires, et non en réponse à l'exposition. Mathématiquement, on oppose deux modèles pour le nombre $X$ de bactéries survivantes :
@@ -303,7 +305,9 @@ car $a-\lambda=o(a\ln a)$. Il tend vers $-\infty$, donc $B_7(a)/B_5(a)\to0$.
 
 Par exemple, pour $\lambda=2$ et $a=14$, on trouve $B_5\approx0{,}14$ et $B_7\approx2{,}4\times10^{-7}$. Les deux bornes valent $1$ en $a=\lambda$.
 
-![Figure 1 — Bornes de Markov (Q5) et de Q7.b pour une loi de Poisson de paramètre λ = 2, en échelle logarithmique : égales à 1 en a = λ, elles se séparent ensuite très vite](figures/q7c-bornes-markov-chernoff.svg)
+L’ordre des deux bornes change près de $a=\lambda$. Ainsi, pour $\lambda=2$ et $a=3$, Markov donne $2/3$, tandis que la borne exponentielle vaut $8e/27>2/3$. Pour $a=4$, elle vaut $e^2/16<1/2$, la borne de Markov. La comparaison demandée concerne bien la limite $a\to+\infty$.
+
+![Figure 1 — Pour la loi de Poisson de paramètre 2, Markov donne le plus petit majorant à a = 3. À a = 4, la borne exponentielle passe en dessous et décroît ensuite plus vite.](figures/q7c-bornes-markov-chernoff.svg)
 
 > [!PIEGE]
 > Constater que $B_7(a)\to0$ ne suffit pas, puisque $B_5(a)\to0$ aussi. C'est la comparaison des vitesses qui répond à la question.
@@ -331,7 +335,7 @@ Par définition de la limite (avec $\varepsilon=1$), il existe $M\ge0$ tel que $
 
 $$\boxed{\forall s>M,\quad|P(s)|e^{-s/\nu}\le e^{-s/(2\nu)}.}$$
 
-![Figure 2 — Exemple P(s) = s³ et ν = 1, en échelle logarithmique : la majoration de Q8 est fausse pour 1,23 < s < 17,0 et ne devient vraie qu'au-delà du seuil M ≈ 17](figures/q8-domination-seuil-m.svg)
+![Figure 2 — Pour P(s) = s³ et ν = 1, les courbes se coupent vers 1,227 et 16,999. La majoration échoue entre les deux intersections. Prendre M = 17 assure la domination sur toute la queue.](figures/q8-domination-seuil-m.svg)
 
 La fonction $s\mapsto P(s)e^{-s/\nu}$ est **continue** sur $[0,+\infty[$ : l'intégrale n'est généralisée qu'en $+\infty$.
 

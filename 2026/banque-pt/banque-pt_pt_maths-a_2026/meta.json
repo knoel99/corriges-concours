@@ -72,6 +72,23 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 41 réponses et des indications A à D contre le sujet et le rapport du jury 2026, y compris le tracé des cinq ensembles, les produits de matrices et la simulation. Preuve du polynôme caractéristique en base adaptée en D.1(b), probabilités nulles de D.1(d), interprétation fréquentiste de la couverture en C.7(f).",
+      "tour": 3,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
-  ]
+  ],
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/math_a_2026_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_math_a_ecrit_2026.pdf"
+  }
 }

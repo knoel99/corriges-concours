@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 4 heures, **calculatrice interdite**. Une feuille de papier millimétré est à rendre avec la copie. Le sujet compte quatre parties et 41 questions élémentaires en comptant chaque sous-question. Les parties A et B sont indépendantes ; les parties C et D réutilisent leurs résultats.
@@ -919,8 +921,8 @@ $$\overline{K_N}=\frac{21\,357}{100\,000}=0{,}21357.$$
 
   **L'intervalle aléatoire $[\overline{K_N}-0{,}01\,;\,\overline{K_N}+0{,}01]$ contient $I$ avec une probabilité au moins égale à $0{,}975$.**
 
-  Pour la simulation réalisée, il vaut $[0{,}20357\,;\,0{,}22357]$ : c'est un intervalle de confiance de $I$ au niveau $97{,}5\,\%$.
-- Pour $\varepsilon=10^{-3}$ : $\frac1{4N\varepsilon^2}=2{,}5$. Le minorant $1-2{,}5=-1{,}5$ est négatif, alors qu'une probabilité est toujours positive : **l'inégalité ne donne aucune information**.
+  Pour la simulation réalisée, il vaut $[0{,}20357\,;\,0{,}22357]$ : Sur des répétitions indépendantes de la simulation, la procédure produit un intervalle contenant le paramètre fixe $I$ avec une probabilité d’au moins $97{,}5\,\%$. Après observation, les deux bornes sont fixées.
+- Pour $\varepsilon=10^{-3}$ : $\frac1{4N\varepsilon^2}=2{,}5$. Le minorant $1-2{,}5=-1{,}5$ est négatif, alors qu'une probabilité appartient à $[0,1]$ : **l'inégalité ne donne aucune information**.
 
 La valeur calculée en 6(b), $I\approx0{,}21171$, appartient bien au premier intervalle.
 
@@ -978,7 +980,7 @@ Si $n=1$, alors $Q=(1)$ et la seule valeur propre est $1$. On suppose désormais
   $$\lambda^2x=\mathrm{tr}(Q)\,\lambda x.$$
 
   Comme $x\neq0$, $\lambda\big(\lambda-\mathrm{tr}(Q)\big)=0$ : **toute valeur propre vaut $0$ ou $\mathrm{tr}\,Q$**.
-- $Q$ est trigonalisable dans $\mathcal{M}_n(\mathbb{C})$ et sa trace est la somme de ses valeurs propres complexes comptées avec multiplicité (propriété du programme) ; cette somme vaut $\mathrm{tr}\,Q$, d'où $\chi_Q=X^{n-1}\big(X-\mathrm{tr}\,Q\big)$.
+- Complétons $\alpha$ en une base de $\mathbb R^n$. Puisque $Qx=(\beta^\top x)\alpha$ pour tout $x$, toutes les colonnes de la matrice dans cette base sont nulles à partir de la deuxième ligne. La première colonne commence par $\beta^\top\alpha=\mathrm{tr}\,Q$. Cette matrice est triangulaire supérieure, de diagonale $(\mathrm{tr}\,Q,0,\ldots,0)$. Ainsi $\chi_Q=X^{n-1}(X-\mathrm{tr}\,Q)$, y compris lorsque la trace est nulle.
 
 $$\boxed{\begin{aligned}
 &\text{si }\mathrm{tr}\,Q\neq0 :\ 0 \text{ (multiplicité } n-1) \text{ et } \mathrm{tr}\,Q \text{ (simple)}\ ;\\
@@ -1003,7 +1005,7 @@ $$\boxed{\begin{aligned}
 
 #### Solution
 
-On a $\mathrm{tr}\,Q=\sum_i\alpha_i\beta_i$, avec tous les $\alpha_i$ strictement positifs et les $\beta_i$ positifs de somme $1$.
+On a $\mathrm{tr}\,Q=\sum_i\alpha_i\beta_i$, avec tous les $\alpha_i$ strictement positifs et les $\beta_i$ positifs ou nuls de somme $1$.
 
 Il existe donc $i_0$ tel que $\beta_{i_0}>0$, d'où $\mathrm{tr}\,Q\ge\alpha_{i_0}\beta_{i_0}>0$.
 
@@ -1039,7 +1041,7 @@ $X$ suit la loi uniforme sur $\{1,2\}$ et $Y$ la loi uniforme sur $\{3,4\}$ : au
 
 $$Q=\frac14\begin{pmatrix}0&0&1&1\\0&0&1&1\\0&0&0&0\\0&0&0&0\end{pmatrix}.$$
 
-Ses coefficients sont positifs, de somme $1$ : c'est bien la matrice d'une loi conjointe, et elle est de rang $1$. On a $\mathrm{tr}\,Q=0$, donc $Q^2=\mathrm{tr}(Q)\,Q=0$.
+Ses coefficients sont positifs ou nuls, de somme $1$ : c'est bien la matrice d'une loi conjointe, et elle est de rang $1$. On a $\mathrm{tr}\,Q=0$, donc $Q^2=\mathrm{tr}(Q)\,Q=0$.
 
 $0$ est la seule valeur propre de $Q$. Si $Q$ était diagonalisable, elle serait semblable à la matrice nulle, donc nulle. Comme $Q\neq0$, **$Q$ n'est pas diagonalisable.**
 

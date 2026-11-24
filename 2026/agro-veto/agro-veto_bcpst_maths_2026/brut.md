@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve « Méthodes de calcul et raisonnement », durée 2 h, sans calculatrice. Toutes les parties sont indépendantes, sauf la question 24.
 
 ## Partie I : Approximation de la loi de Poisson
@@ -182,7 +184,9 @@ Ce logarithme tend vers $-\infty$, donc $B_7(a)/B_5(a)\to0$.
 
 **Lorsque $a\to+\infty$, la borne de la question 7.b est la meilleure : $B_7(a)=o(B_5(a))$.** Plus précisément, $\ln B_7(a)\sim-a\ln a$, ce qui entraîne $B_7(a)=o(e^{-ca})$ pour tout $c>0$.
 
-![Figure 1 — Bornes de Markov (Q5) et de Q7.b pour une loi de Poisson de paramètre λ = 2, en échelle logarithmique : égales à 1 en a = λ, elles se séparent ensuite très vite](figures/q7c-bornes-markov-chernoff.svg)
+L’ordre des deux bornes change près de $a=\lambda$. Ainsi, pour $\lambda=2$ et $a=3$, Markov donne $2/3$, tandis que la borne exponentielle vaut $8e/27>2/3$. Pour $a=4$, elle vaut $e^2/16<1/2$, la borne de Markov. La comparaison demandée concerne bien la limite $a\to+\infty$.
+
+![Figure 1 — Pour la loi de Poisson de paramètre 2, Markov donne le plus petit majorant à a = 3. À a = 4, la borne exponentielle passe en dessous et décroît ensuite plus vite.](figures/q7c-bornes-markov-chernoff.svg)
 
 ## Partie III : Étude d'un endomorphisme
 
@@ -198,7 +202,7 @@ Par définition de la limite, appliquée avec $\varepsilon=1$, il existe un rée
 
 $$\boxed{\exists M\ge0,\ \forall s>M,\quad |P(s)|\,e^{-s/\nu}\le e^{-s/(2\nu)}.}$$
 
-![Figure 2 — Exemple P(s) = s³ et ν = 1, en échelle logarithmique : la majoration de Q8 est fausse pour 1,23 < s < 17,0 et ne devient vraie qu'au-delà du seuil M ≈ 17](figures/q8-domination-seuil-m.svg)
+![Figure 2 — Pour P(s) = s³ et ν = 1, les courbes se coupent vers 1,227 et 16,999. La majoration échoue entre les deux intersections. Prendre M = 17 assure la domination sur toute la queue.](figures/q8-domination-seuil-m.svg)
 
 La fonction $f:s\mapsto P(s)e^{-s/\nu}$ est continue sur $[0,+\infty[$. Le seul problème de convergence est donc en $+\infty$.
 
