@@ -72,6 +72,28 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 3,
+      "perimetre": "50 réponses des deux versions, sujet et rapport du jury. Vérification des relations d’onde, de l’intégrateur d’Euler sur un intervalle quelconque, des interfaces critiques, des tables SQL et des k plus proches voisins. Contrôle des bornes, des ex æquo et de la trajectoire dans un profil constant et dans le canal de Munk.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
     }
-  ]
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "verification": "50 réponses des deux versions, sujet et rapport du jury. Vérification des relations d’onde, de l’intégrateur d’Euler sur un intervalle quelconque, des interfaces critiques, des tables SQL et des k plus proches voisins. Contrôle des bornes, des ex æquo et de la trajectoire dans un profil constant et dans le canal de Munk."
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/info_mod_2026_pt.pdf",
+    "rapport": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_info_model_ecrit_2026.pdf"
+  }
 }
