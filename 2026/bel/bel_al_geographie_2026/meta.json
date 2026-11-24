@@ -34,7 +34,9 @@
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Composition%20de%20g%C3%A9ographie%202026.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/G%C3%A9ographie%202026.pdf",
     "programme": "https://www.ens-lyon.fr/sites/default/files/2025-05/Lettre%20de%20cadrage_Mondes%20indiens_Concours%20BEL.pdf",
-    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/tree/master/geojson"
+    "fond_cartographique": "https://github.com/nvkelso/natural-earth-vector/tree/master/geojson",
+    "sujet_sha256": "95f0c56f8243790edca707f7835053a417958789b10ac9b946cfac5ca29f8a3a",
+    "rapport_sha256": "9cbbb205072807aee1142a638abf77dcf4be49b0d87ecf7075277acd30b26fbd"
   },
   "date_revision": "2026-11-24",
   "revision": {
@@ -80,6 +82,30 @@
       "perimetre": "Contre-lecture indépendante au regard du sujet et des pages 2 à 9 du rapport. Périmètre des sept États, rapport des exemples à l’habiter, droits d’usage, mobilités et attachements vérifiés.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la composition écrite, du fond régional et du rapport sur les mobilités, les attachements symboliques et l’articulation des échelles."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des deux éditions, de la couverture des sept pays et des trois figures. Développement de l’exemple du monastère de Tengboche pour distinguer fréquentation touristique, pratiques rituelles et saisonnalité."
     }
   ]
 }

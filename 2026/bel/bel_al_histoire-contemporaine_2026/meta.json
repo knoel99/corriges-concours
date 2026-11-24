@@ -25,7 +25,7 @@
       "question": "Étape 4"
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -35,7 +35,9 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/al_commun_hist.pdf",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Histoire%202026.pdf",
     "programme": "https://www.ens-lyon.fr/sites/default/files/2025-05/Lettre%20de%20cadrage%20programme%20commun%20Histoire%20session%202026.pdf",
-    "refugies_palestiniens": "https://www.un.org/unispal/document/auto-insert-176879/"
+    "refugies_palestiniens": "https://www.un.org/unispal/document/auto-insert-176879/",
+    "sujet_sha256": "6fc44c1af10886647a72004776f56b677d356a619d6b63ed4f173d72ae2a52bf",
+    "rapport_sha256": "dd4c76955e661404a219fc77bc251ff30f8a82199893b443177f57351c1c3381"
   },
   "provenance": {
     "redaction": {
@@ -84,6 +86,30 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture de la partie écrite commune, notamment bornes de 1920 et 2011, héritages politiques, Yichouv, sociétés palestiniennes et diversité régionale."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux dissertations aux bornes communes et au rapport. Comparaison de l’administration des réfugiés palestiniens en Cisjordanie et à Gaza après 1948, distinction entre nationalité et recours à l’UNRWA."
     }
   ]
 }
