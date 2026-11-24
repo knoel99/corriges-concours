@@ -1,0 +1,83 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2024",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2024
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_Bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/11/24-2cc-rap-eBio.pdf",
+    "sujet_sha256": "a1f6a99c18d2b8b320f8273152423e889b273f045fba2ae5590f879a9320e166",
+    "rapport_sha256": "80abccd77f183d65c69c8262094d3196e522d640d9b210726fe50f1b6bfb8021"
+  },
+  "figures": [
+    {
+      "question": "Synthèse",
+      "fichier": "figures/diversite-architectures.svg",
+      "legende": "Les dessins présentent la forme des particules. La longueur ou le diamètre de chacune est indiqué séparément."
+    },
+    {
+      "question": "Q1",
+      "fichier": "figures/excitation-et-emission.svg",
+      "legende": "Après absorption, le fluorophore perd une partie de son énergie avant de réémettre un photon de plus grande longueur d’onde."
+    },
+    {
+      "question": "Q11",
+      "fichier": "figures/comptage-et-proportions.svg",
+      "legende": "Dans cet exemple fictif, le nombre de cellules B reste à 100 alors que leur proportion double quand le nombre total de lymphocytes diminue de moitié."
+    },
+    {
+      "question": "Q14",
+      "fichier": "figures/arn-et-proteines.svg",
+      "legende": "Le dosage plasmatique intègre les apports de plusieurs tissus et la disparition de la protéine. L’ARN mesuré ne concerne que les cellules échantillonnées."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "couverture": {
+    "statut": "partiel",
+    "synthese": "traitee",
+    "questions_entierement_traitees": [
+      1,
+      11,
+      12,
+      14
+    ],
+    "questions_partiellement_traitees": [
+      13,
+      17,
+      18
+    ],
+    "questions_non_traitees": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      15,
+      16
+    ],
+    "precision": "19 exercices en comptant la synthèse et 18 questions numérotées. Synthèse morphologique et génomique générale, principes de fluorescence et analyses cliniques indépendantes des figures 6 à 8. Les expériences sur l’entrée du virus et la réponse antivirale spécifique sont hors périmètre."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions sur le sujet et le rapport officiels, avec comparaison directe aux panneaux 6A–E, 7A–B et 8A–B du PDF. Synthèse générale, quatre questions intégrales et trois partielles."
+    }
+  ]
+}
