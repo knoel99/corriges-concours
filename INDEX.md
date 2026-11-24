@@ -398,6 +398,8 @@
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
+| 2026 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/guide.md) |
+| 2026 | ENS Paris-Saclay | Design | Philosophie de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2026/guide.md) |
 | 2026 | ENS Rennes | 2SEP | Anglais | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_anglais_2026/guide.md) |
 | 2026 | ENS Rennes | 2SEP | Biomécanique (SVSAPS 1) | [md](2026/ens-rennes/ens-rennes_2sep_biomecanique-svsaps-1_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_biomecanique-svsaps-1_2026/guide.md) |
 | 2026 | ENS Rennes | 2SEP | Culture générale | [md](2026/ens-rennes/ens-rennes_2sep_culture-generale_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_2sep_culture-generale_2026/guide.md) |

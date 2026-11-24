@@ -1,0 +1,63 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2026",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2026
+  },
+  "intitule": "Le matériau fixe peut-il remplacer le matériau naturel ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2026/2026_SUJET_1A_Design_Histoire_de_l_art.pdf",
+    "sujet_sha256": "fe6cc1837aef5c85a9ca0af06f89261b18407b71ac79eadbe5daba57d6fa178c",
+    "references": [
+      "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-cite-fruges-pessac-france-1924-1926/",
+      "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-les-maisons-jaoul-neuilly-sur-seine-france-1951-1955/",
+      "https://www.boisbuchet.org/exhibitions/learning-from-vernacular/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/matiere-chantier-maquette.svg",
+      "question": "Composition",
+      "legende": "Trois façons d’éprouver une technique de construction"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction du corrigé complet, du guide et de la figure."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de l’extrait à la consigne ; vérification du module, du chantier et des techniques des maisons Jaoul sur les notices de la Fondation. Précision des dates et du nombre de maquettes de Boisbuchet."
+    }
+  ]
+}
