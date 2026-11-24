@@ -1,0 +1,43 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2016",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2016,
+    "duree_heures": 3
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/10/16_2c_informatique-1.pdf",
+    "sujet_sha256": "835d76bd3fb2f59e03995ba3bde2df9c995fa2fb7a226857a99cad2f7f4f6cc9",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/09/16_2c_rap_eInfo.pdf",
+    "rapport_sha256": "be0eb69e244dc9245c7040f80dcdd02e1881ad4a33d4fcadeee4e5b67238910e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q10-couverture.svg",
+      "question": "10",
+      "legende": "Le premier choix couvre quatre objets. Les deux autres familles, disjointes entre elles, couvrent à elles seules les six objets."
+    },
+    {
+      "fichier": "figures/q13-biparti.svg",
+      "question": "13",
+      "legende": "Exemple du sujet. Les sommets gauches 2 et 4, en vert, ont à eux deux les quatre sommets inférieurs pour voisins."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 16 questions sur la maximisation de fonctions sous-modulaires après lecture du sujet intégral et du rapport de jury. Deux figures originales ; tests de toutes les coupes de référence et de tous les graphes bipartis de petite taille, vérification des garanties du glouton et de l’algorithme de coupe."
+    }
+  ]
+}
