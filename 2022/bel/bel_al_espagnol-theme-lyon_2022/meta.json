@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=12",
+    "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Espagnol%202022.pdf#page=11"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Le temps de Don Juan dans le portrait"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Thème espagnol intégral des deux paragraphes de Barbey d’Aurevilly au programme du thème lyonnais 2022, commentaire des difficultés de voix, de temps et de métaphores, et schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Jules Barbey d’Aurevilly, *Les Diaboliques*, édition citée par le sujet, Paris, 1882, p. 100-101. Le thème de spécialité dure quatre heures et porte sur l’intégralité du passage donné à la page 12 du fascicule."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}

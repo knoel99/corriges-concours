@@ -191,6 +191,8 @@
 | 2022 | BEL | AL | Allemand (thème Lyon) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_allemand-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (commentaire et traduction) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_anglais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Anglais (thème Lyon) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_anglais-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Espagnol (commentaire et traduction) | [md](2022/bel/bel_al_espagnol-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_espagnol-commentaire-et-traduction_2022/guide.md) |
+| 2022 | BEL | AL | Espagnol (thème Lyon) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
 | 2026 | BEL | BL | Mathématiques | [md](2026/bel/bel_bl_mathematiques_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques_2026/guide.md) |
 | 2025 | BEL | BL | Philosophie | [md](2025/bel/bel_bl_philosophie_2025/brut.md) | [md](2025/bel/bel_bl_philosophie_2025/guide.md) |
