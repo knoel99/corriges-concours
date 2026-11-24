@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -193,11 +195,15 @@ Dans la forêt A, les quatre probabilités valent $1/4$. L'indice $\mathrm{GS}$ 
 ### Question II.6
 
 > [!INDICATION]
-> Quel nombre d’espèces est certain à la fin de la campagne ? Pour savoir quand le recensement devient exact, examiner la probabilité d’absence de chaque espèce.
+> Quelle borne inférieure de $N$ peut-on déduire directement de l’échantillon ? Pour savoir quand le recensement devient exact, examiner la probabilité d’absence de chaque espèce.
 
 #### Solution
 
-On peut estimer $N$ par le nombre observé $Y_n\leq N$. Le déficit moyen vaut exactement $\sum_i(1-p_i)^n$. Il est minimal pour la loi uniforme par II.4 et décroît alors comme $N(1-1/N)^n$ (égalité exacte). Une espèce rare contribue un terme lent à décroître. À $N$ et $p$ fixés, chaque $p_i>0$. La probabilité qu'une espèce donnée ne soit jamais observée est $\lim_n(1-p_i)^n=0$. En réunissant ces $N$ événements négligeables, on voit que $Y_n=N$ à partir d'un rang aléatoire fini presque sûrement.
+On peut estimer $N$ par le nombre observé $Y_n\leq N$. Le déficit moyen vaut exactement $\sum_i(1-p_i)^n$. Il est minimal pour la loi uniforme par II.4 et vaut alors exactement $N(1-1/N)^n$. Pour mesurer aussi le risque de sous-estimation, notons $p_{\min}=\min_i p_i$. Si l’espèce la plus rare manque, le recensement est incomplet. Réciproquement, pour qu’il soit incomplet, au moins une des $N$ espèces doit manquer. Par sous-additivité des probabilités,
+$$
+(1-p_{\min})^n\leq \mathbb P(Y_n<N)\leq\sum_{i=1}^N(1-p_i)^n.
+$$
+Dans la forêt B, le risque de sous-estimer $N$ reste donc au moins égal à $0{,}99^n$, contre un majorant $4(3/4)^n$ dans A. À $N$ et $p$ fixés, chaque $p_i>0$. La probabilité qu'une espèce donnée ne soit jamais observée est $\lim_n(1-p_i)^n=0$. En réunissant ces $N$ événements négligeables, on voit que $Y_n=N$ à partir d'un rang aléatoire fini presque sûrement.
 
 ## Partie III — Temps nécessaire pour observer toutes les espèces
 
@@ -387,7 +393,7 @@ $$\mathbb P(T_N>n)=\sum_{\ell=1}^N(-1)^{\ell+1}\binom N\ell(1-\ell/N)^n.$$
 
 $$\mathbb P(B_J^{(n)}\mid A_J^{(n)})=1-\sum_{\ell=1}^k(-1)^{\ell+1}\binom k\ell(1-\ell/k)^n.$$
 
-**(c)** Il existe $\binom Nk$ choix équiprobables pour l'ensemble exactement observé. En multipliant les probabilités de (b) et en sommant sur $J$, on obtient, après le changement $r=k-\ell$,
+**(c)** La loi uniforme est invariante par permutation des étiquettes. Les $\binom Nk$ événements disjoints où l’ensemble observé est un ensemble $J$ fixé de cardinal $k$ ont donc la même probabilité. En multipliant les probabilités de (b) et en sommant sur $J$, on obtient, après le changement $r=k-\ell$,
 
 $$\mathbb P(Y_n=k)=\frac{\binom Nk}{N^n}\sum_{r=0}^k(-1)^{k-r}\binom kr r^n=\boxed{\frac{N!}{N^n(N-k)!}S(n,k)}.$$
 

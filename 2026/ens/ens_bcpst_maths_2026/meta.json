@@ -9,7 +9,8 @@
   "questions": 22,
   "redaction": "IA (OpenAI Codex, famille GPT-6), avec relecture indépendante sur le sujet officiel",
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/261241_bcpst_mathematiques_2026.pdf"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/261241_bcpst_mathematiques_2026.pdf",
+    "annales_ens": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst"
   },
   "figures": [
     {
@@ -48,7 +49,7 @@
       "legende": "Les cinq positions sont groupées selon leur étiquette. Oublier les noms des trois espèces laisse une partition en trois classes non vides."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -87,6 +88,18 @@
       "perimetre": "Relecture des corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 22 questions, de leurs subdivisions, des indications et des sept figures sur le sujet officiel, y compris sa page 4 numérisée. La ligne Mathématiques des annales ENS ne donne aucun lien vers un rapport. Encadrement du risque de sous-estimer le nombre d’espèces en II.6, justification de l’équiprobabilité en V.2(c), ajout des quatre schémas qui figuraient seulement dans le guidé au corrigé brut.",
+      "tour": 2,
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

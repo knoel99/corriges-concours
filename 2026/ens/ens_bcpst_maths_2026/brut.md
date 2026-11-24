@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Les tirages $(X_r)$ sont indépendants et de même loi $p=(p_1,\ldots,p_N)^{\mathsf T}$. Le compteur $S_{n,i}$ donne le nombre d'observations de l'espèce $i$ en $n$ tirages, $Y_n$ le nombre d'espèces distinctes observées et $T_k$ le premier instant où ce nombre vaut $k$. On pose naturellement $Y_0=0$. Le domaine $\{p_i\in(0,1),\,\sum_i p_i=1\}$ suppose $N\geq2$. Les résultats pour la loi uniforme s'étendent à $N=1$ en prenant $p_1=1$.
 
@@ -15,6 +17,8 @@ Les tirages $(X_r)$ sont indépendants et de même loi $p=(p_1,\ldots,p_N)^{\mat
 La fonction $t\mapsto t^{-a}$ est décroissante sur $]0,+\infty[$. Sur $[k,k+1]$ elle est majorée par $k^{-a}$, et sur $[k-1,k]$ elle est minorée par $k^{-a}$. Les intervalles sont de longueur un et $k\geq 2$. Ainsi
 
 $$\int_k^{k+1}\frac{dt}{t^a}\leq\frac1{k^a}\leq\int_{k-1}^{k}\frac{dt}{t^a}.$$
+
+![Figure 1 — Sur chaque intervalle de longueur un, la même hauteur 1/3 donne une borne inférieure à gauche de 3 et supérieure à droite pour l’intégrale de 1/t.](figures/i01-comparaison-integrale.svg)
 
 ### Question I.2
 
@@ -82,6 +86,8 @@ Cette covariance est strictement négative. Les deux compteurs ne sont donc pas 
 
 **(iii)** Une base de vecteurs propres est donnée par $\mathbf1$ puis $e_i-e_N$ pour $1\leq i<N$. Ces différences constituent une base de $H$, car les $N-1$ premières coordonnées paramètrent tout vecteur de $H$. Cela prouve la diagonalisabilité et donne les multiplicités $1$ et $N-1$ pour $\Sigma_n$. Si $N=1$, seul subsiste l'espace de $\mathbf1$ et $\Sigma_n=0$.
 
+![Figure 2 — Dans le cas uniforme à quatre espèces, la diagonale de la matrice de covariance divisée par n vaut 3/16 et les autres coefficients −1/16. Chaque ligne a pour somme zéro.](figures/ii03-covariances.svg)
+
 ### Question II.4
 
 **(a)** L'espèce $i$ est absente avec probabilité $(1-p_i)^n$. L'espérance de l'indicatrice de sa présence est donc $1-(1-p_i)^n$. Par linéarité,
@@ -100,11 +106,15 @@ La loi uniforme réalise cette borne. Lorsque $n=1$, toutes les lois donnent $\m
 
 Dans la forêt A, les quatre probabilités valent $1/4$. L'indice $\mathrm{GS}$ vaut $0{,}75$ et la richesse moyenne vaut $4(1-0{,}75^n)$. Dans B, les probabilités sont $0{,}33$, $0{,}33$, $0{,}33$, $0{,}01$. On obtient $\mathrm{GS}=0{,}6732$ et $\mathbb E Y_n=4-3(0{,}67)^n-(0{,}99)^n$. Les deux moyennes valent un au premier tirage, puis A domine par II.4. Sa courbe atteint rapidement le voisinage de quatre. Dans B, les trois espèces communes sont vite représentées, mais l'absence de l'espèce rare reste probable, à hauteur de $0{,}99^n$. Les deux limites valent quatre. La trace vaut respectivement $0{,}75n$ et $0{,}6732n$, conformément à la plus grande diversité des tirages dans A.
 
-![Figure 1 — Courbes exactes des scénarios A et B. Dans la forêt asymétrique, les trois espèces courantes apparaissent vite et la quatrième ne se révèle que progressivement.](figures/ii05-richesse-observee.svg)
+![Figure 3 — Courbes exactes des scénarios A et B. Dans la forêt asymétrique, les trois espèces courantes apparaissent vite et la quatrième ne se révèle que progressivement.](figures/ii05-richesse-observee.svg)
 
 ### Question II.6
 
-On peut estimer $N$ par le nombre observé $Y_n\leq N$. Le déficit moyen vaut exactement $\sum_i(1-p_i)^n$. Il est minimal pour la loi uniforme par II.4 et décroît alors comme $N(1-1/N)^n$ (égalité exacte). Une espèce rare contribue un terme lent à décroître. À $N$ et $p$ fixés, chaque $p_i>0$. La probabilité qu'une espèce donnée ne soit jamais observée est $\lim_n(1-p_i)^n=0$. En réunissant ces $N$ événements négligeables, on voit que $Y_n=N$ à partir d'un rang aléatoire fini presque sûrement.
+On peut estimer $N$ par le nombre observé $Y_n\leq N$. Le déficit moyen vaut exactement $\sum_i(1-p_i)^n$. Il est minimal pour la loi uniforme par II.4 et vaut alors exactement $N(1-1/N)^n$. Pour mesurer aussi le risque de sous-estimation, notons $p_{\min}=\min_i p_i$. Si l’espèce la plus rare manque, le recensement est incomplet. Réciproquement, pour qu’il soit incomplet, au moins une des $N$ espèces doit manquer. Par sous-additivité des probabilités,
+$$
+(1-p_{\min})^n\leq \mathbb P(Y_n<N)\leq\sum_{i=1}^N(1-p_i)^n.
+$$
+Dans la forêt B, le risque de sous-estimer $N$ reste donc au moins égal à $0{,}99^n$, contre un majorant $4(3/4)^n$ dans A. À $N$ et $p$ fixés, chaque $p_i>0$. La probabilité qu'une espèce donnée ne soit jamais observée est $\lim_n(1-p_i)^n=0$. En réunissant ces $N$ événements négligeables, on voit que $Y_n=N$ à partir d'un rang aléatoire fini presque sûrement.
 
 ## Partie III — Temps nécessaire pour observer toutes les espèces
 
@@ -126,7 +136,7 @@ $$\boxed{\mathbb E T_N=\sum_{\varnothing\ne J\subset\{1,\ldots,N\}}(-1)^{|J|+1}\
 
 $$\mathbb E T_N=\int_0^\infty\left[1-\prod_{i=1}^N(1-e^{-p_it})\right]dt.$$
 
-![Figure 2 — Pour le mot A, C, A, B, C, B, D, les premières apparitions sont 1, 2, 4 et 7. Le dernier de ces quatre rangs est le temps de couverture.](figures/iii01-premieres-apparitions.svg)
+![Figure 4 — Pour le mot A, C, A, B, C, B, D, les premières apparitions sont 1, 2, 4 et 7. Le dernier de ces quatre rangs est le temps de couverture.](figures/iii01-premieres-apparitions.svg)
 
 ### Question III.2
 
@@ -139,6 +149,8 @@ $$\mathbb E T_N=\int_0^\infty\left[1-\prod_{i=1}^N(1-e^{-p_it})\right]dt.$$
 ### Question III.3
 
 $T_N\geq M_i$ implique $\mathbb E T_N\geq1/p_i$ pour chaque $i$. En choisissant une espèce de probabilité minimale, on obtient $\boxed{\mathbb E T_N\geq1/\min_i p_i}$. Quand cette probabilité tend vers zéro, le temps moyen nécessaire diverge.
+
+![Figure 5 — Dans une famille de forêts à quatre espèces, les trois premières ont la même probabilité. Lorsque la quatrième devient très rare, l’attente de sa première observation explique presque toute l’attente de la collection complète.](figures/iii03-attente-rarete.svg)
 
 ### Question III.4
 
@@ -166,7 +178,7 @@ $$\operatorname{Var}(T_N)=\sum_{j=1}^N\left(\frac{N^2}{j^2}-\frac Nj\right)=N^2 
 
 Il vient $\operatorname{Var}(V_N)=C_N-H_N/N\to\pi^2/6$, car $H_N\sim\ln N$.
 
-![Figure 3 — Avec douze espèces équiprobables, l’attente entre deux découvertes passe de 1 à 12 tirages. Additionner les hauteurs donne l’effort moyen pour la collection complète.](figures/iv01-attentes-successives.svg)
+![Figure 6 — Avec douze espèces équiprobables, l’attente entre deux découvertes passe de 1 à 12 tirages. Additionner les hauteurs donne l’effort moyen pour la collection complète.](figures/iv01-attentes-successives.svg)
 
 ### Question IV.2
 
@@ -206,7 +218,7 @@ $$\mathbb P(T_N>n)=\sum_{\ell=1}^N(-1)^{\ell+1}\binom N\ell(1-\ell/N)^n.$$
 
 $$\mathbb P(B_J^{(n)}\mid A_J^{(n)})=1-\sum_{\ell=1}^k(-1)^{\ell+1}\binom k\ell(1-\ell/k)^n.$$
 
-**(c)** Il existe $\binom Nk$ choix équiprobables pour l'ensemble exactement observé. En multipliant les probabilités de (b) et en sommant sur $J$, on obtient, après le changement $r=k-\ell$,
+**(c)** La loi uniforme est invariante par permutation des étiquettes. Les $\binom Nk$ événements disjoints où l’ensemble observé est un ensemble $J$ fixé de cardinal $k$ ont donc la même probabilité. En multipliant les probabilités de (b) et en sommant sur $J$, on obtient, après le changement $r=k-\ell$,
 
 $$\mathbb P(Y_n=k)=\frac{\binom Nk}{N^n}\sum_{r=0}^k(-1)^{k-r}\binom kr r^n=\boxed{\frac{N!}{N^n(N-k)!}S(n,k)}.$$
 
@@ -217,6 +229,8 @@ En effet $S(n,k)$ compte les partitions des $n$ positions en $k$ classes non vid
 $$\mathbb P(T_k=n)=\mathbb P(Y_{n-1}=k-1)\frac{N-k+1}N=\boxed{\frac{N!}{N^n(N-k)!}S(n-1,k-1)}.$$
 
 En effet, on partitionne les $n-1$ premières positions en $k-1$ classes, on affecte $k-1$ étiquettes distinctes à ces classes, puis on choisit une étiquette restante pour la dernière position. Toutes les suites de $n$ tirages ont probabilité $N^{-n}$. Avec $S(0,0)=1$ et $S(m,0)=0$ pour $m>0$, on retrouve notamment $T_1=1$.
+
+![Figure 7 — Les cinq positions sont groupées selon leur étiquette. Oublier les noms des trois espèces laisse une partition en trois classes non vides.](figures/v02-partitions.svg)
 
 ### Question V.3
 
