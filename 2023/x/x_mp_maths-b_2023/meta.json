@@ -1,0 +1,41 @@
+{
+  "slug": "x_mp_maths-b_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-MPI",
+    "matiere": "Maths B",
+    "annee": 2023
+  },
+  "questions": 34,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20SUJET%20DE%20MATHEMATIQUES%20B%20%28X%29.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP-MPI%20RAPPORT%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf",
+    "sha256_sujet": "7aa21c5b9e03dc99a604d3650c92e5d2cce1dbfa26d279d3ec227cf9f73a7d41"
+  },
+  "figures": [
+    {
+      "fichier": "figures/9-chevauchement.svg",
+      "question": "9b",
+      "legende": "Après division par X³, les degrés du reste et ceux du quotient décalé sont disjoints. La norme pondérée se partage exactement sur les deux blocs."
+    },
+    {
+      "fichier": "figures/26-croisement.svg",
+      "question": "26",
+      "legende": "Pour diag(t,−t), les deux branches analytiques se croisent à zéro. Les ranger par taille produirait une branche |t| non dérivable."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les questions de l’écrit du 18 avril et comparaison avec le rapport. Contrôle des normes à la frontière, choix successif des rayons en 11, convergence des deux facteurs, normalisation du coefficient en 16, réflexions sur les dimensions en 22 et arrêt du traitement scalaire en 26. Deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
