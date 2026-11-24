@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet compare la norme subordonnée $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert $ d'un polynôme de matrice au maximum de $|p|$ sur un compact du plan lié à $A$ : le spectre, un disque, puis le *Hausdorffien* (ou image numérique) $\mathcal H(A)$. Il culmine sur la **conjecture de Crouzeix** $\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le2\|p\|_{\mathcal H(A)}$, dont on démontre ici l'optimalité de la constante et plusieurs cas particuliers, ainsi qu'une version affaiblie (disque contenant $\mathcal H(A)$) admettant le théorème d'Okubo-Ando.
@@ -19,7 +21,7 @@
 | Partie | Questions | Contenu | Outils |
 |---|---|---|---|
 | Préliminaires | Q1–Q5 | existence de $\vert\!\vert\!\vert A\vert\!\vert\!\vert $, cas diagonal, sous-multiplicativité, invariance unitaire, encadrement par $\mathrm{cond}(P)$ | compacité, bornes atteintes |
-| A. Principe du maximum | Q6–Q10 | une matrice unitaire « compagnon » $U$ réalise $p(z)=e_1^*p(U)e_1$ ; on en tire $\lvert p(z)\rvert<\lVert p\rVert_{\partial\mathbb D}$ puis le principe du maximum sur un compact | calcul matriciel, récurrence, Pythagore |
+| A. Principe du maximum | Q6–Q10 | une matrice unitaire « compagnon » $U$ réalise $p(z)=e_1^*p(U)e_1$ ; pour $p$ non constant et $\lvert z\rvert<1$, on en tire $\lvert p(z)\rvert<\lVert p\rVert_{\partial\mathbb D}$, puis le principe du maximum sur un compact | calcul matriciel, récurrence, Pythagore |
 | B. Inégalité de Von Neumann | Q11–Q17 | dilatation unitaire d'une contraction : $D_A$, $D_{A^*}$, matrice $U_k$ | réduction hermitienne, interpolation de Lagrange, calcul par blocs |
 | C. Hausdorffien et rayon numérique | Q18–Q26 | $\mathcal H(A)$, $r(A)$, équivalence $\frac12\vert\!\vert\!\vert \cdot\vert\!\vert\!\vert \le r\le\vert\!\vert\!\vert \cdot\vert\!\vert\!\vert $, inégalité $r(A^k)\le r(A)^k$ | convexité, polarisation, racines de l'unité |
 | D. Conjecture de Crouzeix | Q27–Q30 | optimalité de 2, monômes, polynômes « alignés », version disque | assemblage des parties B et C |
@@ -607,6 +609,8 @@ $$\begin{aligned}W^{(j+1)}_1&=AW^{(j)}_1+D_{A^*}W^{(j)}_2\\ &=A^{j+1}x.\end{alig
 
 Pour $2\le i\le k+1-j$, on a $3\le i+1\le k+2-j$, donc $W^{(j+1)}_i=W^{(j)}_{i+1}=0$. C'est la propriété au rang $j+1$.
 
+Au rang $1$, le dernier bloc vaut $-D_Ax$. Après $k$ décalages, le deuxième bloc de $W^{(k+1)}$ vaut donc $-D_Ax$. Au rang $k+2$, le premier bloc vaut $A^{k+2}x-D_{A^*}D_Ax$. Le terme correctif peut être nul, par exemple si $A$ est unitaire.
+
 En particulier $W^{(j)}_1=A^jx$ pour $0\le j\le k+1$ et tout $x$. Autrement dit, **le bloc en haut à gauche de $U_k^j$ est $A^j$** pour $0\le j\le k+1$.
 
 *Bloc en haut à gauche de $p(U_k)$.* Si $\deg p\le k+1$, écrivons $p=\sum_{j=0}^{k+1}a_jX^j$. Le bloc en haut à gauche dépend linéairement de la matrice, donc celui de $p(U_k)=\sum_ja_jU_k^j$ est $\sum_ja_jA^j=p(A)$.
@@ -629,7 +633,7 @@ $$\boxed{\vert\!\vert\!\vert p(A)\vert\!\vert\!\vert \le\|p\|_{\mathbb D}\quad\t
 > Dilatation unitaire : une contraction est le « coin » d'une matrice unitaire plus grande. Pour transférer une inégalité vraie pour les unitaires, on vérifie que le coin de $p(U_k)$ est $p(A)$, puis on utilise $\|p(A)x\|\le\|p(U_k)E_1x\|$.
 
 > [!PIEGE]
-> Le bloc 2 de $U_k^jE_1x$ cesse d'être nul à l'étape $k+1$, mais le bloc 1 n'en est affecté qu'à l'étape $k+2$. C'est ce décalage d'une étape qui donne la borne $\deg p\le k+1$, et non $\deg p\le k$.
+> La première étape où le bloc 2 peut être non nul est $j=k+1$. Sa contribution au bloc 1 se calcule à l’étape suivante. La compression est donc garantie pour tous les monômes jusqu’au degré $k+1$ inclus.
 
 > [!JURY]
 > D’après le rapport, la difficulté tenait à la récurrence sur les puissances de $U_k$. Il faut établir le bloc supérieur gauche attendu pour chaque puissance, passer au polynôme par linéarité, puis appliquer la borne du cas unitaire.

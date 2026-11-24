@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 heures, calculatrice interdite. Notations du sujet :
 
 - $\langle x|y\rangle=\sum_i x_i\overline{y_i}$, linéaire à gauche et semi-linéaire à droite, et $\|x\|=\sqrt{\langle x|x\rangle}$ ;
@@ -307,6 +309,8 @@ Le lemme donne $q(A^*A)=D_A$. Le même raisonnement avec $AA^*$, dont les valeur
 
 $$\boxed{\exists\,q\in\mathbb C[X]\ :\ D_A=q(A^*A)\ \text{ et }\ D_{A^*}=q(AA^*)}$$
 
+![Figure 2 — Un polynôme peut coïncider avec la racine de 1 − λ sur les trois valeurs propres 0, 1/2 et 1. Ces trois valeurs suffisent pour le calcul matriciel dans cet exemple.](figures/q13-interpolation.svg)
+
 ### Question 14
 
 Montrons par récurrence que $A(A^*A)^k=(AA^*)^kA$ pour tout $k\in\mathbb N$. C'est vrai pour $k=0$. Si c'est vrai au rang $k$,
@@ -364,6 +368,8 @@ $$\begin{aligned}&W^{(j)}_1=A^jx,\\ &W^{(j)}_i=0\qquad\text{pour }2\le i\le k+2-
 $$\begin{aligned}W^{(j+1)}_1&=AW^{(j)}_1+D_{A^*}W^{(j)}_2\\ &=A^{j+1}x.\end{aligned}$$
 
 Pour $2\le i\le k+1-j$, on a $3\le i+1\le k+2-j$, donc $W^{(j+1)}_i=W^{(j)}_{i+1}=0$. C'est la propriété au rang $j+1$.
+
+Au rang $1$, le dernier bloc vaut $-D_Ax$. Après $k$ décalages, le deuxième bloc de $W^{(k+1)}$ vaut donc $-D_Ax$. Au rang $k+2$, le premier bloc vaut $A^{k+2}x-D_{A^*}D_Ax$. Le terme correctif peut être nul, par exemple si $A$ est unitaire.
 
 En particulier $W^{(j)}_1=A^jx$ pour $0\le j\le k+1$ et tout $x$. Autrement dit, **le bloc en haut à gauche de $U_k^j$ est $A^j$** pour $0\le j\le k+1$.
 
@@ -605,6 +611,8 @@ Alors $e^{ik\theta}w=|w|$, donc $1-|w|\ge0$. Si $w=0$, on a aussi $|w|\le1$.
 Ainsi $|\langle A^kx|x\rangle|\le1$ pour tout $x\in\mathbb S$ :
 
 $$\boxed{r(A)\le1\ \Longrightarrow\ r(A^k)\le1\qquad(k\ge1)}$$
+
+![Figure 6 — La liberté du facteur de phase fait tourner w jusqu’au nombre réel |w|. La majoration de sa partie réelle donne alors |w| ≤ 1.](figures/q26c-phase.svg)
 
 ### Question 26-d
 
