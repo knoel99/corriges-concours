@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_version-latine-et-court-theme-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine et court thème (Ulm)",
+    "annee": 2026
+  },
+  "intitule": "Le règne de Numa et l’Hélène d’Euripide",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_opt_vers_lat_261104.pdf",
+    "sujet_sha256": "6a0b263d283237494fb5d1e884e5fe9d8986eeed69432a8b053a2f134df4ded9",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/fait_2026_al_rapport_option_ecrit_version_latine_court_theme.pdf",
+    "rapport_sha256": "685285f560760a7b0b92f6959901e048c945c067697401bff69f4f6b4a2aad44"
+  },
+  "figures": [
+    {
+      "fichier": "figures/racine-infinitives.svg",
+      "question": "II. Court thème",
+      "legende": "Le passage au discours indirect dans le thème"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification des deux exercices et des remarques du jury sur les pronoms, les compléments de lieu et le style indirect. Relecture de la construction de la phrase initiale de Tite-Live."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de « Le règne de Numa et l’Hélène d’Euripide » et du schéma « Le passage au discours indirect dans le thème »."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture du discours indirect, des trois compléments de lieu et des formes du thème. Précision de iunxisset animos et contrôle de la chronologie de la version."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
