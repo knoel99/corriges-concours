@@ -1,0 +1,78 @@
+{
+  "slug": "bel_al_anglais-commentaire-et-traduction_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (commentaire et traduction)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_lve_commun_commentaire_traduction_2026.pdf#page=4",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-gestes.svg",
+      "question": "Commentaire",
+      "legende": "Le geste répété à la fenêtre"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "anglais_al_2026_astra",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire des lignes 1 à 59, version des lignes 22 à 36 et guide de lecture."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "anglais_al_2026_astra",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation de la version aux lignes 22 à 36 et aux remarques du jury sur la chute des bras. Reprise de l’écho des deux débarquements et vérification du lieu indiqué par Victor. Contrôle de la figure et des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "relecture_anglais_bel",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Relecture par une session indépendante de la rédaction et de l’autocontrôle. Comparaison des deux corrigés avec les lignes 1 à 59 du sujet, des deux versions françaises avec les 35 segments du rapport, du plan avec les exigences de la page 4 et du schéma des deux gestes avec les lignes 51 à 56."
+    },
+    {
+      "phase": "retouches",
+      "session": "relecture_anglais_bel",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Réorganisation thématique du commentaire et du tableau de méthode. Rectification de l’identité des témoins, de la syntaxe des citations, de la recherche en barque et des formulations de la version sur le départ d’Elizabeth, le cri, la perception du sang et le récit de la perte. Harmonisation du brut et du guidé."
+    }
+  ]
+}

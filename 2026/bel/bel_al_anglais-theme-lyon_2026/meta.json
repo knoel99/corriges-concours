@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=11",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Anglais%202026.pdf#page=24"
+  },
+  "figures": [
+    {
+      "fichier": "figures/chronologie.svg",
+      "question": "Thème",
+      "legende": "La soirée comme point de repère"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "anglais_al_2026_astra",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traduction en anglais des deux paragraphes de Dugain et guide de traduction."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "anglais_al_2026_astra",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification du discours transmis par la télévision, du point de vue de l’enfant, des temps et du rattachement de la clinique au lieu. Ajustement de la chronologie graphique et contrôle des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "relecture_astra_anglais_bel",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux paragraphes de Dugain avec le livret de Lyon et Paris-Saclay (p. 11) et les observations du jury (p. 24 à 31). Vérification de la consigne, des deux rendus et de la chronologie. Révision du rattachement de la clinique, des sujets féminins et de la crainte de perdre l’enfant."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Marc Dugain, Ils vont tuer Robert Kennedy, 2017."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}

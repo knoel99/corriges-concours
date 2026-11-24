@@ -1,0 +1,123 @@
+{
+  "slug": "bel_al_histoire-et-theorie-des-arts_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire et théorie des arts",
+    "annee": 2026
+  },
+  "intitule": "L’artiste est-il indissociable de son atelier ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_spe_arts.pdf#page=4",
+    "precision_sujet": "Énoncé p. 4, sans dossier iconographique pour cette option.",
+    "sujet_sha256": "db3822ea9560c1743146b55b0a4953d351af8e862714cd84c2d5153b16d75374",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Histoire%20des%20arts%202026.pdf",
+    "rapport_sha256": "65d22bc892cadb2c19a427274cbe4c582f3cf2588d3e63cc1b15e00ba51d7b01",
+    "references": [
+      "https://blog.metmuseum.org/artofillumination/the-artists-herman-paul-and-jean-de-limbourg/",
+      "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0900739845",
+      "https://nmwa.org/exhibitions/sofonisba-anguissola-a-renaissance-woman/",
+      "https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927",
+      "https://hughlane.ie/arts_artists/francis-bacons-studio/",
+      "https://diaart.org/visit/visit-our-locations-sites/robert-smithson-spiral-jetty/main/spiraljetty",
+      "https://massmoca.org/event/walldrawing51/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/anguissola-deux-peintres.svg",
+      "question": "Partie I",
+      "legende": "Les deux niveaux de l’acte de peindre dans le tableau de Sofonisba Anguissola."
+    },
+    {
+      "fichier": "figures/courbet-regards.svg",
+      "question": "Partie II",
+      "legende": "Les groupes et le tableau dans le tableau organisent l’atelier de Courbet."
+    },
+    {
+      "fichier": "figures/lewitt-points.svg",
+      "question": "Partie III",
+      "legende": "Une même règle appliquée aux points de deux murs de géométrie différente."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "gpt-6.2-astra",
+    "verification": "Comparaison indépendante des deux textes et des trois schémas avec la question, le rapport et les notices des collections. Contrôle des attributions, de la chronologie et de la présentation des œuvres."
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "arts_al_2026_astra",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification de la question et de la portée des exemples au regard du rapport écrit, p. 2–4."
+    },
+    {
+      "phase": "redaction",
+      "session": "arts_al_2026_astra",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation et du guide. Conception et réalisation des trois figures originales."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "geo_bl_2026_astra/contrelecture",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Comparaison indépendante des deux textes et des trois schémas avec la question, le rapport et les notices des collections. Contrôle des attributions, de la chronologie et de la présentation des œuvres."
+    },
+    {
+      "phase": "retouches",
+      "session": "arts_al_2026_astra",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Précisions sur les deux réalisations turinoises de Wall Drawing 51 et sur la reconstitution de l’atelier de Bacon, présentée au passé dans les deux versions."
+    }
+  ]
+}

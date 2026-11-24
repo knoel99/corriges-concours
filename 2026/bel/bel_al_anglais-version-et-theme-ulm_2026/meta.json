@@ -1,0 +1,76 @@
+{
+  "slug": "bel_al_anglais-version-et-theme-ulm_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (version et thème Ulm)",
+    "annee": 2026
+  },
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/al_opt_lve_vers-theme_261109.pdf#page=4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/vision.svg",
+      "question": "I. Version",
+      "legende": "Du rocher au visage"
+    },
+    {
+      "fichier": "figures/marche.svg",
+      "question": "II. Thème",
+      "legende": "Les deux temps de la reconnaissance"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "anglais_al_2026_astra",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Version de Dickey, thème de Quignard et guide de traduction."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "anglais_al_2026_astra",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle des quatre paragraphes de Dickey et de la fin du dialogue de Quignard. Révision du tour comparatif avec le miroir et de l’apparition sans surprise de la bague. Contrôle des deux figures et des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "relecture_astra_anglais_bel",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison complète de la version de Dickey et du thème de Quignard avec le livret Ulm (p. 4 et 5) dans les deux rendus. Révision du registre de la voix intérieure, du rapport au miroir, des reprises dans les commandes et des regards. Vérification de la consigne et correction des légendes des deux figures."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "James Dickey, Deliverance, 1970.",
+      "Pascal Quignard, Les Solidarités mystérieuses, 2011."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires. La licence du corrigé ne vaut pas autorisation de leur part."
+  }
+}
