@@ -1,0 +1,77 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-la-fin-de-la-croissance_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — la fin de la croissance",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Économie — la fin de la croissance",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/eco-ecrits-sil2022.pdf",
+    "sujet_sha256": "74f889dae22ae867bc5a50fc834917450f7f36aa6ae14175773aae6beb93189a",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2022.pdf",
+    "rapport_sha256": "1b9a6d63573a1182deabd81fbdd13d2eee886168f10ed913e6ff968074ceac73",
+    "references": [
+      "https://www.insee.fr/fr/statistiques/fichier/1374366/HISTO14_b_D1_eco.pdf",
+      "https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/croissance-francaise.svg",
+      "question": "Explication",
+      "legende": "Deux régimes de croissance en France"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire librement publié et identification de la portée de la feuille en 2022."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet individuel ou préparé, avec son schéma et ses références : Économie — la fin de la croissance."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    }
+  ]
+}

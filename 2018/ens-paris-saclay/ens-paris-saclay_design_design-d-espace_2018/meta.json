@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2018
+  },
+  "redaction": "Quatre planches A3 originales, deux éditions et lecture de l’ensemble des sources iconographiques de 2018. Comparaison de références, programme ludique et paysager, plan au 1:100 et parcours saisonniers.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Espace.pdf",
+    "sujet_sha256": "dc8445f694890a94ea0202efc33d92ec4f2de30b1d00178d1ed7fb0c235ee4b8",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=277",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-jardin.svg",
+      "question": "Projet, planche 1",
+      "legende": "Une petite parcelle de quartier devient un espace de jeux et d’observation de la pluie."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-variantes.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois variantes associent progressivement niveaux bas, tracé d’eau et jardin partagé."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-parcelle.svg",
+      "question": "Projet, planche 3",
+      "legende": "Le plan à l’échelle situe les trois reliefs, le chemin de 1,80 m, les bancs et la noue."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-pluie.svg",
+      "question": "Projet, planche 4",
+      "legende": "Trois scènes rendent perceptibles le jeu libre et les transformations du sol avec les saisons."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Quatre planches A3 originales, deux éditions et lecture de l’ensemble des sources iconographiques de 2018. Comparaison de références, programme ludique et paysager, plan au 1:100 et parcours saisonniers."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Une aire de jeu devient jardin de pluie",
+      "Essayer trois terrains",
+      "Un plan pour courir ou longer",
+      "Du soleil à l’averse"
+    ]
+  }
+}
