@@ -1,0 +1,102 @@
+{
+  "slug": "ens_pc_chimie-b_2026",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2026
+  },
+  "questions": 78,
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/vpubliee_pc_chim_b_u_26.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-dosage-conductimetrique.svg",
+      "question": "Q5",
+      "legende": "La conductivité mesurée monte dès les premiers ajouts. Les carrés sont des lectures approchées du graphe du sujet."
+    },
+    {
+      "fichier": "figures/q12-densite-bjerrum.svg",
+      "question": "Q12",
+      "legende": "Le minimum de densité radiale fixe la borne supérieure de la zone associée. La région ombrée illustre a/d = 0,5."
+    },
+    {
+      "fichier": "figures/q20-potentiels-redox.svg",
+      "question": "Q20",
+      "legende": "L’association au sodium relève les deux potentiels et inverse leur classement."
+    },
+    {
+      "fichier": "figures/q21-solvatation.svg",
+      "question": "Q21",
+      "legende": "L’expulsion successive de l’eau interposée conduit à la paire de contact. Seules les molécules entre les ions sont dessinées."
+    },
+    {
+      "fichier": "figures/q29-relaxation-unique.svg",
+      "question": "Q29",
+      "legende": "Une relaxation isolée absorbe le plus par longueur d’onde lorsque sa durée égale l’inverse de la pulsation."
+    },
+    {
+      "fichier": "figures/q35-compressibilite.svg",
+      "question": "Q35",
+      "legende": "La réponse de l’équilibre à la pression est maximale lorsque les ions libres et les paires coexistent en proportions appréciables."
+    },
+    {
+      "fichier": "figures/q46-trois-relaxations.svg",
+      "question": "Q46",
+      "legende": "Les trois pics sont normalisés séparément. Les temps du tableau donnent les fréquences où lire chaque relaxation de la figure 3."
+    },
+    {
+      "fichier": "figures/q48-ajustement-affine.svg",
+      "question": "Q48",
+      "legende": "Le quotient de la pente par l’ordonnée à l’origine isole la combinaison de constantes recherchée à partir de quatre concentrations."
+    },
+    {
+      "fichier": "figures/q49-classement-cip.svg",
+      "question": "Q49",
+      "legende": "Le classement des quatre branches du carbone étoilé conduit à S après prise en compte du méthyle en avant du plan."
+    },
+    {
+      "fichier": "figures/diels-alder-huit-adduits.svg",
+      "question": "Q51",
+      "legende": "Adduits du diène A et de l’acroléine B en représentation de Cram."
+    },
+    {
+      "fichier": "figures/orbitales-diene-acroleine.svg",
+      "question": "Q52",
+      "legende": "Appariement des coefficients terminaux et réduction de l’écart énergétique par complexation."
+    },
+    {
+      "fichier": "figures/alcool-enolate-alcool-allylique.svg",
+      "question": "Q58",
+      "legende": "Structures de 7, de l’énolate 8, de l’énal 9 et de l’éther silylé 10."
+    },
+    {
+      "fichier": "figures/cyclisation-dieckmann.svg",
+      "question": "Q59",
+      "legende": "Origine des atomes du cycle et intermédiaire tétraédrique de la condensation intramoléculaire."
+    },
+    {
+      "fichier": "figures/diels-alder-auxiliaire-chiral.svg",
+      "question": "Q62",
+      "legende": "Quatre diastéréoisomères de 20 avec l’auxiliaire de configuration fixée."
+    },
+    {
+      "fichier": "figures/epoxyde-vers-aldehyde.svg",
+      "question": "Q67",
+      "legende": "Structures de 12 à 16 avec la stéréochimie des branches transformées."
+    },
+    {
+      "fichier": "figures/q68-rearrangement-pummerer.svg",
+      "question": "Q68",
+      "legende": "L’activation du sulfoxyde donne un ion thionium. La fixation de l’acétate sur son carbone installe la nouvelle liaison C–O en position α du soufre."
+    },
+    {
+      "fichier": "figures/couplage-alcool-et-enone.svg",
+      "question": "Q78",
+      "legende": "Structures complètes de 25 et 26. La ligne ondulée de 25 indique le centre carbinolique de configuration indéterminée."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

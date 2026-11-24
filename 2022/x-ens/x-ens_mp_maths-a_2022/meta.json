@@ -1,0 +1,53 @@
+{
+  "slug": "x-ens_mp_maths-a_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2022
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "figures": [
+    {
+      "fichier": "figures/q3-variation.svg",
+      "question": "Q3b",
+      "legende": "La courbe de vecteurs unitaires a pour vecteur tangent uₗ au point uₖ."
+    },
+    {
+      "fichier": "figures/q4-angle-principal.svg",
+      "question": "Q4a",
+      "legende": "Sur deux droites, le maximum du produit scalaire des vecteurs unitaires est le cosinus de leur angle aigu ou droit."
+    },
+    {
+      "fichier": "figures/q8-volume-hauteur.svg",
+      "question": "Q8b",
+      "legende": "Dans le plan, le volume du parallélogramme est le produit de la base par la longueur de la composante orthogonale."
+    },
+    {
+      "fichier": "figures/q10-formes-de-base.svg",
+      "question": "Q10a",
+      "legende": "Pour p = 2 et d = 3, les trois formes de base valent un sur leur propre paire et zéro sur les autres."
+    },
+    {
+      "fichier": "figures/q13-noyau-orthogonal.svg",
+      "question": "Q13a",
+      "legende": "Les entrées de la première colonne de Gram ne dépendent que de la projection de z sur V."
+    },
+    {
+      "fichier": "figures/q15-chemin-oriente.svg",
+      "question": "Q15",
+      "legende": "Deux orientations sur une même droite se relient par un demi-tour dans le plan ambiant."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20DE%20MATHS%20A%20%28XLSR%29.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20MATHS%20A%20%28XLSR%29.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Les 33 réponses suivent le sujet, les notations et le rapport du jury du 25 avril 2022. Vérification des déterminants, du rôle du signe et des cas où p vaut 1 ou la dimension de l’espace."
+  }
+}

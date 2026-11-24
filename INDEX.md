@@ -109,8 +109,10 @@
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
+| 2024 | BEL | AL | Histoire contemporaine | [md](2024/bel/bel_al_histoire-contemporaine_2024/brut.md) | [md](2024/bel/bel_al_histoire-contemporaine_2024/guide.md) |
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
+| 2024 | BEL | AL | Philosophie | [md](2024/bel/bel_al_philosophie_2024/brut.md) | [md](2024/bel/bel_al_philosophie_2024/guide.md) |
 | 2025 | BEL | AL | Philosophie | [md](2025/bel/bel_al_philosophie_2025/brut.md) | [md](2025/bel/bel_al_philosophie_2025/guide.md) |
 | 2026 | BEL | AL | Philosophie | [md](2026/bel/bel_al_philosophie_2026/brut.md) | [md](2026/bel/bel_al_philosophie_2026/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
@@ -332,13 +334,16 @@
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
+| 2026 | ENS | BCPST | Biologie | [md](2026/ens/ens_bcpst_biologie_2026/brut.md) | [md](2026/ens/ens_bcpst_biologie_2026/guide.md) |
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
 | 2026 | ENS | MP-MPI | Informatique fondamentale | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/brut.md) | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2021 | ENS | MP | Maths C | [md](2021/ens/ens_mp_maths-c_2021/brut.md) | [md](2021/ens/ens_mp_maths-c_2021/guide.md) |
 | 2021 | ENS | MP | Maths D | [md](2021/ens/ens_mp_maths-d_2021/brut.md) | [md](2021/ens/ens_mp_maths-d_2021/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2026 | ENSATT | Administration du spectacle vivant | Cas pratique | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/brut.md) | [md](2026/ensatt/ensatt_administration-du-spectacle-vivant_cas-pratique_2026/guide.md) |
 | 2026 | G2E | BCPST | Biologie | [md](2026/g2e/g2e_bcpst_biologie_2026/brut.md) | [md](2026/g2e/g2e_bcpst_biologie_2026/guide.md) |
@@ -465,6 +470,7 @@
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Informatique A | [md](2025/x-ens/x-ens_mp_informatique-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_informatique-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Informatique A | [md](2026/x-ens/x-ens_mp_informatique-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_informatique-a_2026/guide.md) |
+| 2022 | X-ENS | MP | Maths A | [md](2022/x-ens/x-ens_mp_maths-a_2022/brut.md) | [md](2022/x-ens/x-ens_mp_maths-a_2022/guide.md) |
 | 2023 | X-ENS | MP-MPI | Maths A | [md](2023/x-ens/x-ens_mp_maths-a_2023/brut.md) | [md](2023/x-ens/x-ens_mp_maths-a_2023/guide.md) |
 | 2024 | X-ENS | MP | Mathématiques A | [md](2024/x-ens/x-ens_mp_maths-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_maths-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Maths A | [md](2025/x-ens/x-ens_mp_maths-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_maths-a_2025/guide.md) |

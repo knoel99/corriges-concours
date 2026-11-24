@@ -1,0 +1,45 @@
+{
+  "slug": "bel_al_histoire-contemporaine_2024",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire contemporaine",
+    "annee": 2024
+  },
+  "questions": 0,
+  "gabarit": "dissertation",
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20d%27histoire.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2024-11/Histoire%202024%20OK.pdf",
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf",
+    "cadrage": "https://www.ens-lyon.fr/sites/default/files/2024-11/Lettre%20cadrage%20tronc%20commun%20Histoire.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/routes-du-travail.svg",
+      "question": "Partie I",
+      "legende": "Des produits destinés au marché mondial peuvent mobiliser une main-d’œuvre régionale ou intercontinentale."
+    },
+    {
+      "fichier": "figures/guerre-et-recrutement.svg",
+      "question": "Partie II",
+      "legende": "Une même guerre réoriente des recrutements internationaux et des migrations intérieures."
+    },
+    {
+      "fichier": "figures/normes-et-frontieres.svg",
+      "question": "Partie III",
+      "legende": "La fermeture de certaines routes migratoires et la diffusion de normes communes peuvent être simultanées."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "Codex (GPT-6)",
+    "verification": "Contre-lecture indépendante du sujet et du rapport. Bornes, travail indépendant, travail contraint, exemples de la Grande Guerre, quotas et conventions internationales vérifiés dans les deux versions."
+  }
+}
