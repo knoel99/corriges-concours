@@ -1,0 +1,41 @@
+{
+  "slug": "bel_bl_anglais_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Anglais",
+    "annee": 2025
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_anglais.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_anglais_option.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/parcours.svg",
+      "legende": "Par quel moyen une autorité se maintient-elle ?",
+      "question": "Commentaire"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire composé en anglais des 5 documents du sujet officiel de six heures, guidage et schéma comparatif."
+    }
+  ]
+}

@@ -8,5 +8,49 @@
   },
   "questions": 2,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-sujet.svg",
+      "question": "Dissertation",
+      "legende": "La corneille blanche de Haushofer"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-centrale-supelec.fr/sites/default/files/documents/R132.pdf",
+    "sujet_sha256": "73f9056b2c119b4a77b581cc444e3df130f7aaa76c030216466255f642408b48"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "famille_modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction historique des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Relecture précédemment signalée, détails non renseignés."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des deux pages de l’épreuve. Recompte des trois tranches de cinquante mots et contrôle du plafond de 1 800 mots pour la dissertation. Explication de la pluralité du sens d’un jardin à partir de la corneille de Haushofer."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

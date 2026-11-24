@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
 
@@ -42,6 +44,8 @@ Le produit de Cauchy a pour terme $c_n=\sum_{k=0}^n a_kb_{n-k}$ et $C_n=\sum_{k=
 
 Écrivons $A_j=\sum_{i=0}^j a_i$ et $B_j=\sum_{i=0}^j b_i$. Dans la somme finie $\sum_{j=0}^n A_jB_{n-j}$, le terme $a_i b_h$ apparaît pour $i\leq j\leq n-h$, soit $n-i-h+1$ fois si $i+h\leq n$ et zéro fois sinon. Son coefficient dans $\sum_{k=0}^n C_k$ est le même car ce produit est dans $c_{i+h}$ et donc dans chaque $C_k$ pour $k\geq i+h$. Les deux sommes sont ainsi égales. Appliquons I.5 aux sommes partielles $A_j\to A$ et $B_j\to B$. Après division par $n$, la limite vaut $AB$.
 
+![Figure 7 — Pour n = 4, chaque case indique le nombre de fois où le produit des deux termes apparaît dans la somme des sommes partielles. La multiplicité est constante sur chaque diagonale i + h.](figures/i06-multiplicites.svg)
+
 ### Question I.7
 
 Pour $u_n=(-1)^n$, les deux sous-suites de parités opposées donnent des limites distinctes. Cependant la somme des $n+1$ premiers termes est un si $n$ est pair et zéro sinon. La moyenne tend donc vers zéro.
@@ -70,7 +74,7 @@ $$|u_n-\ell|\leq C\log\frac{m-1}{n-1}+\frac{m+1}{m-n}(|\sigma_m-\ell|+|\sigma_n-
 
 ### Question I.10c
 
-Fixons $\alpha>1$ et posons $m=1+\lfloor\alpha n\rfloor$. Le facteur $(m+1)/(m-n)$ tend vers $\alpha/(\alpha-1)$ et multiplie une quantité tendant vers zéro. Le logarithme tend vers $\log\alpha$. On en déduit $\limsup_{n\to\infty}|u_n-\ell|\leq C\log\alpha$ pour chaque $\alpha>1$. Faire décroître $\alpha$ vers un donne la convergence de $u_n$ vers $\ell$.
+Fixons $\alpha>1$ et posons $m=1+\lfloor\alpha n\rfloor$. Le facteur $(m+1)/(m-n)$ tend vers $\alpha/(\alpha-1)$ et multiplie une quantité tendant vers zéro. En effet, $(m-1)/(n-1)=\lfloor\alpha n\rfloor/(n-1)\to\alpha$. Le logarithme tend donc vers $\log\alpha$. On en déduit $\limsup_{n\to\infty}|u_n-\ell|\leq C\log\alpha$ pour chaque $\alpha>1$. Faire décroître $\alpha$ vers un donne la convergence de $u_n$ vers $\ell$.
 
 ## II — Théorème d’Abel et réciproques taubériennes
 
@@ -99,7 +103,7 @@ $$|f(z)-S|\leq |z-1|\sum_{n=0}^{N_0}|R_n|+\varepsilon\frac{|z-1|}{1-|z|}.$$
 
 Écrivons $z=1-\rho e^{i\theta}$ dans le secteur $|\theta|\leq\theta_0<\pi/2$. Comme $1-|z|^2=2\rho\cos\theta-\rho^2$, on a
 $$\frac{|z-1|}{1-|z|}=\frac{1+|z|}{2\cos\theta-\rho}\leq\frac2{\cos\theta_0}$$
-pour $0<\rho\leq\cos\theta_0$ et $|z|<1$. Dans II.1d, le terme fini tend vers zéro lorsque $z\to1$ et la limite supérieure de l’écart est au plus $2\varepsilon/\cos\theta_0$. La liberté de $\varepsilon$ donne la limite d’Abel.
+pour $0<\rho\leq\cos\theta_0$ et $|z|<1$. Dans II.1d, le terme fini tend vers zéro lorsque $z\to1$ et la limite supérieure de l’écart est au plus $2\varepsilon/\cos\theta_0$. La liberté de $\varepsilon$ donne la limite d’Abel. Le contrôle du quotient utilise le secteur fixé. Sur la demi-droite réelle $z\uparrow1$, ce quotient est exactement égal à un, tandis qu’une approche tangente au cercle ne fournit plus de borne par cet argument.
 
 ![Figure 2 — Dans le disque unité, le secteur impose une approche de 1 qui reste à distance angulaire des tangentes au cercle.](figures/ii1-secteur.svg)
 

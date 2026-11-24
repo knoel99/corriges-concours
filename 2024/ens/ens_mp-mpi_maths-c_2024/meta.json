@@ -10,7 +10,8 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/24_mp_sujet_mathc.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/24_mp_rap_emathc.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/24_mp_rap_emathc.pdf",
+    "sha256_sujet": "8edc04cba71beb6062f64def99fcb5206f198d9228d21f014b257c1c3f4b234b"
   },
   "date_revision": "2026-11-24",
   "figures": [
@@ -43,6 +44,11 @@
       "fichier": "figures/iii6-dirichlet.svg",
       "question": "QIII.6",
       "legende": "Quand la borne supérieure croît, l’intégrale du sinus cardinal oscille autour de π/2 avec une amplitude décroissante."
+    },
+    {
+      "fichier": "figures/i06-multiplicites.svg",
+      "question": "QI.6",
+      "legende": "Pour n = 4, chaque case indique le nombre de fois où le produit des deux termes apparaît dans la somme des sommes partielles. La multiplicité est constante sur chaque diagonale i + h."
     }
   ],
   "revision": {
@@ -88,7 +94,20 @@
       "modifications": null,
       "perimetre": "Comparaison des 39 réponses au sujet officiel et au rapport de jury. Contrôle des constantes uniformes pour les bornes de Hardy, de la position des enveloppes en II.5f et du changement de variable dans la preuve taubérienne continue.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des 39 réponses et des indications sur les trois parties avec le sujet et le rapport. Vérification des deux normalisations des moyennes, des limites successives de Hardy et de la preuve taubérienne continue. Figure des multiplicités du produit de Cauchy en I.6 et précision sur la géométrie du secteur d’Abel.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

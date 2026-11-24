@@ -165,6 +165,9 @@
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
 | 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
+| 2025 | BEL | BL | Allemand | [md](2025/bel/bel_bl_allemand_2025/brut.md) | [md](2025/bel/bel_bl_allemand_2025/guide.md) |
+| 2025 | BEL | BL | Anglais | [md](2025/bel/bel_bl_anglais_2025/brut.md) | [md](2025/bel/bel_bl_anglais_2025/guide.md) |
+| 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Composition française | [md](2026/bel/bel_bl_composition-francaise_2026/brut.md) | [md](2026/bel/bel_bl_composition-francaise_2026/guide.md) |
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
@@ -175,6 +178,7 @@
 | 2025 | BEL | BL | Histoire contemporaine | [md](2025/bel/bel_bl_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | BL | Histoire contemporaine | [md](2026/bel/bel_bl_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_bl_histoire-contemporaine_2026/guide.md) |
 | 2026 | BEL | BL | Italien | [md](2026/bel/bel_bl_italien_2026/brut.md) | [md](2026/bel/bel_bl_italien_2026/guide.md) |
+| 2025 | BEL | BL | Hébreu | [md](2025/bel/bel_bl_hebreu_2025/brut.md) | [md](2025/bel/bel_bl_hebreu_2025/guide.md) |
 | 2025 | BEL | BL | Italien | [md](2025/bel/bel_bl_italien_2025/brut.md) | [md](2025/bel/bel_bl_italien_2025/guide.md) |
 | 2025 | BEL | BL | Mathématiques (oral) | [md](2025/bel/bel_bl_mathematiques-oral_2025/brut.md) | [md](2025/bel/bel_bl_mathematiques-oral_2025/guide.md) |
 | 2026 | BEL | BL | Mathématiques (oral) | [md](2026/bel/bel_bl_mathematiques-oral_2026/brut.md) | [md](2026/bel/bel_bl_mathematiques-oral_2026/guide.md) |
@@ -218,6 +222,12 @@
 | 2012 | Castor informatique | Défi individuel | Découpe | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | La chute | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | Ranger ses photos | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Allemand | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_allemand_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_allemand_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Arabe | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_arabe_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_arabe_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Espagnol | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_espagnol_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_espagnol_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Italien | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_italien_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_italien_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Portugais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_portugais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_portugais_2026/guide.md) |
+| 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Russe | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_russe_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_russe_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Anglais | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_anglais_2026/guide.md) |
 | 2026 | CCINP | MP-MPI-PC-PSI-TPC-TSI | Français-philosophie | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/brut.md) | [md](2026/ccinp/ccinp_mp-mpi-pc-psi-tpc-tsi_francais-philosophie_2026/guide.md) |
 | 2024 | CCINP | MP | Informatique | [md](2024/ccinp/ccinp_mp_informatique_2024/brut.md) | [md](2024/ccinp/ccinp_mp_informatique_2024/guide.md) |
@@ -405,6 +415,7 @@
 | 2025 | ENM | Auditeurs | QRC de droit civil (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-civil-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | QRC de droit pénal (3e concours) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_qrc-de-droit-penal-3e-concours_2025/guide.md) |
 | 2025 | ENM | Auditeurs | Question de société (1er-2e concours) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/brut.md) | [md](2025/enm/enm_auditeurs_question-de-societe-1er-2e-concours_2025/guide.md) |
+| 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Chimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/guide.md) |
@@ -466,6 +477,7 @@
 | 2026 | ENS Rennes | D-E | Droit civil | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit commercial | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit public | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/guide.md) |
+| 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Arts | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_arts_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Études cognitives | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_etudes-cognitives_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire_2026/guide.md) |
@@ -621,6 +633,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2024 | X-ENS | PSI | Sciences industrielles | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/brut.md) | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/guide.md) |
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
 | 2020 | X | FUI-FF 1 | Anglais | [md](2020/x/x_fui-ff-1_anglais_2020/brut.md) | [md](2020/x/x_fui-ff-1_anglais_2020/guide.md) |
 | 2021 | X | FUI-FF 1 | Anglais | [md](2021/x/x_fui-ff-1_anglais_2021/brut.md) | [md](2021/x/x_fui-ff-1_anglais_2021/guide.md) |

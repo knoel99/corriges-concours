@@ -1,0 +1,105 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2023",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2023
+  },
+  "questions": 48,
+  "redaction": "Les dix questions de cours et les trente-huit questions du problème sont traitées. Les flux orientés, le diagramme à quatre quadrants, le vrai courant à la connexion et le bilan énergétique du véhicule sont explicités.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/06/23_2c_sujet_physique.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/23_2CC_rap_ePhy.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "49dbddcf51a5fcc2a829658ff71338a41b0e63163155749f7f7362cfe0320903",
+    "rapport_sha256": "2c9a43a9248125457b915afe7da4f61933a9ff5af9325d7ea1678088da3280fb"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "B9",
+      "fichier": "figures/circuit.svg",
+      "legende": "À gauche, le courant positif converge vers l’axe par les deux bras. À droite, les deux sources induites ont le même pôle positif côté bague. R et L sont les éléments équivalents de la figure 1."
+    },
+    {
+      "numero": 2,
+      "question": "B24",
+      "fichier": "figures/quatre-quadrants.svg",
+      "legende": "Droites qualitatives du convertisseur et de la source pour un couple positif. Les tiretés violets reportent les coordonnées entre les quadrants."
+    },
+    {
+      "numero": 3,
+      "question": "B32",
+      "fichier": "figures/courbes-moteur.svg",
+      "legende": "À gauche, la puissance normalisée culmine au milieu de la plage. À droite, un couple de frottement égal à 10 % du couple de blocage abaisse le rendement utile."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les pages et figures originales ainsi que sur le rapport du jury. Les dix questions de cours et les trente-huit questions du problème sont traitées. Les flux orientés, le diagramme à quatre quadrants, le vrai courant à la connexion et le bilan énergétique du véhicule sont explicités.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26",
+      "B27",
+      "B28",
+      "B29",
+      "B30",
+      "B31",
+      "B32",
+      "B33",
+      "B34",
+      "B35",
+      "B36",
+      "B37",
+      "B38"
+    ]
+  }
+}

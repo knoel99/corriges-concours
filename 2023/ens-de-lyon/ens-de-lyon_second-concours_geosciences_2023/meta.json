@@ -1,0 +1,76 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2023",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2023
+  },
+  "questions": 13,
+  "redaction": "Les treize questions sont traitées avec une coupe, un tracé des onze analyses, deux esquisses de lames et un diagramme thermique. Les bornes de la datation et l’attribution du dépôt de Lemptégy au Puy Chopine sont justifiées.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/2c2023_ST.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/23_2CC_rap_eST.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "47411bd63dec43856f1b851364c436627c014f8d6120057de079889f66d02d5a",
+    "rapport_sha256": "77b4adc4bce73ca6d3c6d2ec7d279db2f0f30b8db0f56697d58fe48400aacc58"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/coupe-limagne.svg",
+      "legende": "Le socle affleure sur le compartiment ouest et s’enfonce sous le remplissage du compartiment est. Le relief volcanique est exagéré."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/silice-alcalins.svg",
+      "legende": "Les lettres reprennent les onze analyses du tableau 1. Les traits gris reprennent les principales limites du diagramme du sujet."
+    },
+    {
+      "numero": 3,
+      "question": "4",
+      "fichier": "figures/lames-minces.svg",
+      "legende": "Schémas interprétatifs en LPA. Ol, olivine ; Px, pyroxène ; Qz, quartz ; Fsp, feldspath. Les bâtonnets clairs figurent les microlites, le fond sombre une pâte à verre."
+    },
+    {
+      "numero": 4,
+      "question": "12",
+      "fichier": "figures/geotherme.svg",
+      "legende": "Extrapolation locale des deux points mesurés à 30 km. Sous Clermont, le croisement avec le solidus sec est d’ordre 40 à 45 km."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les pages et figures originales ainsi que sur le rapport du jury. Les treize questions sont traitées avec une coupe, un tracé des onze analyses, deux esquisses de lames et un diagramme thermique. Les bornes de la datation et l’attribution du dépôt de Lemptégy au Puy Chopine sont justifiées.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ]
+  }
+}

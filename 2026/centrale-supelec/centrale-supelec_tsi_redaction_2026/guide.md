@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction initiale** · claude-opus-5-5 · configuration complémentaire non renseignée
+
+**Relecture antérieure** · configuration non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Cadre.** 4 heures, sans calculatrice ni appareil électronique. Deux exercices obligatoires, **notés à parité** et formant « un ensemble indissociable » : un résumé (partie A), puis une dissertation (partie B), à présenter dans cet ordre en écrivant une ligne sur deux. La présentation, l'orthographe et la netteté de l'expression entrent dans la note.
@@ -163,7 +169,7 @@ Cette question met en tension les termes mêmes du thème : une « expérience �
 | II. L'harmonie ne se donne pas | Le sens dépend d'un regard et d'un dispositif, et l'ordre se paie | Trois regards devant la même vitre (Conseil, Ned Land, Aronnax) ; baleines épargnées, cachalots massacrés | Milieu propre, environnement géographique et univers de la science ne coïncident pas ; « L'expérimentation en biologie animale » : connaître, c'est intervenir et altérer | Tuer pour manger (chevreuils) ; le mur inexpliqué ; le vieil homme pétrifié près de sa fontaine |
 | III. La troisième proposition, déplacée | « Rien de vivant n'est insignifiant » vaut comme exigence du regard, non comme constat | Nemo et la mer « où l'homme n'est jamais seul », affirmée contre le désert ; Atlantide ; Maelström | « La monstruosité et le monstrueux » : la monstruosité, contre-valeur vitale ; « Machine et organisme » ; « la pensée du vivant » (Introduction) | La corneille blanche nourrie ; la mort de Lynx et du taureau ; le récit écrit pour personne |
 
-Budget indicatif : introduction 250 mots, chaque partie 400 à 450 mots, conclusion 150 mots, soit environ 1600 mots.
+Budget indicatif : introduction 250 mots, chaque partie 400 à 450 mots, conclusion 150 mots, soit environ 1 700 mots.
 
 > [!METHODE]
 > Le tableau « parties × œuvres » est le meilleur outil de brouillon pour une dissertation sur programme : une case vide signale une partie où une œuvre ne serait pas confrontée.
@@ -217,11 +223,15 @@ Reste la troisième proposition, et c'est elle que les œuvres valident, mais en
 
 Haushofer en donne l'image la plus juste avec la corneille blanche. Rejetée par les siennes, sans fonction dans aucune économie naturelle, elle ne sert à rien ; la narratrice la nourrit pourtant chaque jour. L'oiseau n'est pas significatif en soi : l'attention le rend tel. De même, la fin du récit, où un inconnu tue à coups de hache le taureau puis Lynx avant d'être abattu par la narratrice, est insoutenable parce que ces vies-là n'étaient pas interchangeables ; c'est le lien tissé, non l'ordre du monde, qui interdit de les tenir pour rien. Le récit lui-même, écrit pour personne, est l'acte par lequel elle arrache à l'oubli ce que nul ne viendra compter.
 
+La corneille blanche permet de rendre toute sa rigueur au « rien de vivant n’est insignifiant » de Feertchak. Le plumage qui attire l’attention de la narratrice expose l’oiseau dans le groupe de ses semblables. Pour le lecteur, cette singularité donne au récit une figure de la solitude ; pour l’oiseau, elle affecte une possibilité de vivre avec les siens. Aucun point de vue unique ne transforme ces deux sens en harmonie. Il revient à la narratrice de reconnaître une vie qui compte aussi lorsqu’elle trouble l’ordre qu’on aurait voulu célébrer.
+
+![La corneille blanche de Haushofer](figures/lecture-du-sujet.svg)
+
 Verne opère le même déplacement. Quand Nemo affirme que la mer est l'immense désert où l'homme n'est jamais seul, car il sent frémir la vie à ses côtés, il ne constate pas une plénitude : il l'affirme contre l'apparence du désert, en homme qui a rompu avec la société. Les ruines de l'Atlantide, entrevues à la lueur d'un volcan sous-marin, montrent d'ailleurs que la nature recouvre les ordres humains sans les commenter, et le Maelström final, où le Nautilus disparaît aux yeux du narrateur, rappelle que l'ordre déborde toujours celui qui l'observe. Le dernier mot peut revenir à Canguilhem : la pensée du vivant doit tenir du vivant l'idée du vivant. Reconnaître qu'aucun vivant n'est insignifiant, ce n'est pas lire une harmonie dans les choses, c'est se savoir soi-même vivant parmi les vivants, ce que Feertchak appelle, à la fin de son texte, l'humilité.
 
 Des trois affirmations, la première n'est donc vraie qu'en partie : la nature fait sens pour un vivant, non en soi. La deuxième ne résiste pas : l'harmonie ne se donne pas, elle se conquiert par un dispositif, une attention, et parfois une violence assumée. La troisième est vraie, mais comme exigence et non comme description. L'expérience de la nature n'est pas le spectacle d'un ordre ; elle est le travail par lequel un vivant en reconnaît d'autres et se découvre situé parmi eux. Le jardinier de Feertchak, le professeur Aronnax et la femme du *Mur invisible* font, chacun à son échelle, cette même expérience, à ceci près que le jardinier peut refermer la barrière derrière lui.
 
-**Total : environ 1600 mots** (élisions comptées), sous le plafond de 1800.
+**Total : environ 1 700 mots** (élisions comptées), sous le plafond de 1800.
 
 > [!METHODE]
 > Chaque partie s'ouvre sur une phrase qui reprend un terme de la citation (« révélation d'ordre », « se donne à voir », « troisième proposition ») : le correcteur suit ainsi le fil de la réponse sans annonce lourde.

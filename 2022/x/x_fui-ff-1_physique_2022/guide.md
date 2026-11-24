@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Formation francophone, session 1 (automne), trois heures sans calculatrice.
 
 ## Présentation du sujet
@@ -262,6 +264,8 @@ La couche est quart d’onde pour $\lambda_\star=4n_1e\simeq0{,}550\,\mu\mathrm 
 $$R\simeq R_{\min}=\left(\frac{n_0n_2-n_1^2}{n_0n_2+n_1^2}\right)^2\simeq0{,}0126,$$
 soit **$1{,}26\,\%$**. L’application est le traitement antireflet des surfaces optiques à la longueur d’onde de conception.
 
+L’épaisseur de la couche peut aussi se contrôler par deux limites. Pour $e\to0$, les deux interfaces se confondent et $U_R=(r_{01}+r_{12})/(1+r_{01}r_{12})=(n_0-n_2)/(n_0+n_2)$. À la phase opposée, $e=\lambda/(4n_1)$, on obtient $U_R=(n_0n_2-n_1^2)/(n_0n_2+n_1^2)$. Le premier résultat explique pourquoi les données imprimées en millimètres restituent presque la réflexion du verre nu.
+
 ## Exercice 3 — Propagation d’ondes acoustiques
 
 ### Question 1
@@ -443,6 +447,8 @@ Pour un élargissement ($S_2>S_1$), la pression réfléchie est en opposition de
 #### Solution
 
 Pour $S_1=S_2=S$, $Z_2/Z_1=R_2/R_1$. Le facteur $1/S$ se simplifie dans les quatre coefficients. On retrouve donc exactement les résultats en pression et en puissance des questions 12 et 13 pour les milieux de natures différentes.
+
+L’adaptation en pression impose $Z_1=Z_2$. Avec deux fluides différents elle exige donc $S_2/S_1=R_2/R_1$. Pour une même section, on peut contrôler le calcul air-eau en écrivant $\mathcal T=4q/(1+q)^2$ avec $q=R_1/R_2$. Le premier terme $4q$ donne déjà $1{,}29\times10^{-3}$ et la prochaine correction relative est $-2q$, inférieure à un millième.
 
 ## Bilan
 
