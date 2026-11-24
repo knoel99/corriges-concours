@@ -1,0 +1,47 @@
+{
+  "slug": "x-ens_mp_informatique-a_2022",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2022,
+    "code_sujet": "XULSR",
+    "date": "2022-04-26"
+  },
+  "questions": 28,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20SUJET%20ECRIT%20D%27INFORMATIQUE%20A%20%28XULSR%29_0.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20MP%20RAPPORT%20ECRIT%20INFORMATIQUE%20A%20%28XULSR%29_0.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/qiv1-graphe.svg",
+      "question": "IV.1",
+      "legende": "Le graphe partage le cosinus entre le carré et le cube. Les deux branches inférieures alimentent le produit."
+    },
+    {
+      "fichier": "figures/qv1-triangulations-ponderees.svg",
+      "question": "V.1",
+      "legende": "Deux parenthésages de quatre matrices vus depuis le côté de base (0,4). Chaque triangle correspond à une multiplication."
+    },
+    {
+      "fichier": "figures/qv7-triangulation-monotone.svg",
+      "question": "V.7",
+      "legende": "Les cinq diagonales partagent le polygone monotone à huit sommets en six triangles. Leur ordre suit le balayage du haut vers le bas."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction intégrale des 28 questions des cinq parties et de leurs indices. Confrontation au PDF du sujet et au rapport. Vérifications des coûts de parenthésage, de l’ordre des jacobiennes, des tangentes et des triangulations avec angles plats. Trois schémas originaux."
+    }
+  ]
+}
