@@ -1,0 +1,40 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2022
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/2c2022_info.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/11/22_2cc_rap_eInfo.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q05-ordre-des-indices.svg",
+      "question": "Q5",
+      "legende": "Chaque ligne va de la page la moins récente à la plus récente. Les deux demandes partent de la ligne initiale."
+    },
+    {
+      "fichier": "figures/q16-fusion-trois-voies.svg",
+      "question": "Q16",
+      "legende": "Exemple avec quatre pages disponibles. Le minimum est choisi parmi les têtes des trois flux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des Q1 à Q16 dans les deux éditions, indications, deux schémas et simulations. Vérification sur les sept pages du PDF du sujet et le rapport du jury. Contrôle des traces FIFO/LRU/OPT, des cas limites de la chaîne, de la borne compétitive et du nombre de transferts avec un tampon réservé en sortie."
+    }
+  ]
+}
