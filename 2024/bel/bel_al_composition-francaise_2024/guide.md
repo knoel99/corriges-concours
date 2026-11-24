@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 La composition française commune dure six heures. Le sujet de Christian Biet et Christophe Triau porte sur le théâtre et la cité. Le domaine théâtral se croise ici avec la représentation littéraire et les rapports entre littérature et morale. Le jury invite à mobiliser les cinq œuvres, en tenant compte de leurs formes. *Le Cid* de 1637 est une tragi-comédie, *La Double Inconstance* et *La Dispute* sont deux comédies de Marivaux ; *Le Capitaine Fracasse* et *La Vagabonde* sont des romans où le théâtre est un métier et un objet de représentation. [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise.pdf) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20fran%C3%A7aise%20et%20explication%20texte%202024%20OK.pdf) · [Programme 2024](https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf)

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Introduction
 
 « Tu dois. » La phrase peut être prononcée à voix basse, sans que personne ait donné d’ordre. Celui qui hésite à honorer une promesse interroge un ami. Deux mots lui reviennent en réponse. Ils lui indiquent que la décision lui appartient encore et que pourtant il ne peut pas tenir toutes les issues pour également bonnes. L’étrangeté de la formule tient à cette conjonction. Le verbe est à l’indicatif. Il semble constater quelque chose au sujet de celui que l’on tutoie. Mais il s’adresse à lui précisément parce que son action demeure à faire. Les guillemets invitent à entendre cette parole, le pronom à se demander qui parle à qui, l’absence de complément à chercher d’où viendrait la détermination de ce qui est dû. À quelles conditions un autre peut-il me dire « tu dois » en me laissant la responsabilité d’agir ? Il faut examiner ce que la formule prétend constater, puis le titre auquel quelqu’un peut l’adresser à autrui, pour comprendre enfin ce qui demeure de cette adresse lorsque je me parle à moi-même.

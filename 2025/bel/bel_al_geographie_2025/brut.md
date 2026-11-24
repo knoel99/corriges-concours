@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 **Problématique** — À quelles conditions l’aménagement qui rend l’eau disponible aujourd’hui peut-il préserver les milieux et les droits d’accès dont dépend sa disponibilité future ?
 
 ## Introduction

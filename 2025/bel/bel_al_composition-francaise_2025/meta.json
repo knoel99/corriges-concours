@@ -32,5 +32,19 @@
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
     "verification": "Contre-relecture indépendante du libellé de Butor, du rapport, de l’analyse de la cinquième lettre de Mariane et du montage des voix aux comices dans Madame Bovary."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "claude-code",
+      "model": "claude-opus-4-8",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

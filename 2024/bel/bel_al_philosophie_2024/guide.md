@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve commune dure six heures. La question « Qu’est-ce que la réalité ? » appartient au domaine de la métaphysique. Elle demande de préciser le sens de la réalité en le mettant à l’épreuve de situations choisies. Le rapport recommande de distinguer cette enquête des questions voisines sur l’existence d’un monde extérieur, la vérité ou les moyens d’acquérir un savoir objectif. [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20de%20philosophie.pdf) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2024-11/Philosophie%202024%20OK.pdf) · [Programme 2024](https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf)

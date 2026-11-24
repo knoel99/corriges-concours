@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Les 19 numéros de cette épreuve de quatre heures comprennent 36 questions et sous-questions. À partir de la décomposition en valeurs singulières d’une matrice rectangulaire, on détermine sa meilleure approximation de rang inférieur puis les vitesses possibles d’une courbe de rang fixé. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPI_sujet_MathA.pdf)

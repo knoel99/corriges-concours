@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 En quatre heures, le sujet explore les bases symplectiques et les conditions sous lesquelles deux formes domptent une même structure complexe. Les 26 numéros correspondent à 35 questions et sous-questions. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MP_sujet_MathA.pdf)

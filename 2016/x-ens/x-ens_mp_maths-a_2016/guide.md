@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Ce problème de quatre heures porte sur les matrices entières et les simplexes du réseau. Les 14 numéros donnés au concours établissent une finitude à équivalence entière près. Le PDF officiel ajoute cinq numéros hors concours démontrant les théorèmes admis. Les deux ensembles sont traités ici, soit 40 questions et sous-questions. [Sujet officiel](https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mp_sujet_maths_a.pdf)

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 « Les transferts intergénérationnels de capitaux : des accélérateurs des inégalités ? » L’écrit commun à Ulm, Lyon, Paris-Saclay et ENSAE/INSEE/ENSAI dure six heures. Le candidat dispose d’un dossier de sept documents. Aucun document personnel n’est autorisé. La composition n’impose pas de nombre de mots. Il faut soutenir une réponse qui articule économie et sociologie, en utilisant aussi bien les données statistiques que l’enquête de terrain.

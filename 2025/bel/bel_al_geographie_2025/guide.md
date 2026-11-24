@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’ENS de Lyon propose une composition de géographie de cinq heures sans atlas. Le sujet associe l’eau douce, sa construction comme ressource et sa préservation. Le fond de carte mondial fournit les frontières étatiques et les grands fleuves. Les pages 2 à 8 du rapport reviennent notamment sur l’articulation entre **aménager** et **ménager**, ainsi que sur la nécessité de raisonner à plusieurs échelles. [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2025-07/Composition%20de%20g%C3%A9ographie.pdf) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2025-11/G%C3%A9ographie%202025%20RELU.pdf) · [Cadrage du programme](https://www.ens-lyon.fr/sites/default/files/2024-06/Lettre%20definitive%20de%20cadrage%20BEL%202025%20TC%20Geographie.pdf)

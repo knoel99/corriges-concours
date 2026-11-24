@@ -84,5 +84,19 @@
     "date": "2026-11-24",
     "modele": "OpenAI Codex",
     "verification": "Comparaison des 63 réponses aux six parties et aux annexes A à F du sujet. Vérifications des unités, des courbes de commande et de l’incompatibilité du torseur en 1.12. Test numérique du programme de cycle."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

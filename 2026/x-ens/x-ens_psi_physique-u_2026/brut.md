@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Épreuve du 16 avril 2026, six heures. Les amplitudes complexes ci-dessous sont des amplitudes crêtes. Leurs parties réelles représentent les champs physiques.
 
 ## I.1 · Propagation sans dissipation

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : Claude Code (claude-opus-4-8) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Sujet (session 2025, épreuve écrite du tronc commun de la Banque d'épreuves littéraires — ENS Paris-Saclay, ENS de Lyon, ENS Paris ; durée 6 heures, coefficient 3) : « Alors que le récit véridique a toujours l'appui, la ressource d'une évidence extérieure, le roman doit suffire à susciter ce dont il nous entretient. C'est pourquoi il est le domaine phénoménologique par excellence, le lieu par excellence où étudier de quelle façon la réalité nous apparaît ou peut nous apparaître ; c'est pourquoi le roman est le laboratoire du récit. » (Michel Butor, « Le roman comme recherche », 1955, dans *Essais sur le roman*, Paris, Gallimard, coll. « Tel », 1992, p. 9.) Vous discuterez cette proposition, en vous appuyant plus particulièrement sur les œuvres au programme.
 
 **Problématique** : comment le roman peut-il expérimenter les manières dont la réalité nous apparaît, alors qu’il dépend lui-même de formes de témoignage et d’expériences partagées ?

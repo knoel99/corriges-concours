@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’écrit de tronc commun dure six heures. Le domaine au programme est la morale. Les seuls mots sur lesquels composer sont « Tu dois », placés entre guillemets. Le rapport lyonnais traite cet écrit commun au début du fascicule, avant les épreuves de spécialité. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf) · [Rapport du jury 2025](https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf)
