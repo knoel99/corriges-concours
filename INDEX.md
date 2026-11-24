@@ -217,6 +217,7 @@
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
 | 2026 | BEL | BL | Allemand (oral, tronc commun) — 23 juin | [md](2026/bel/bel_bl_allemand-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_bl_allemand-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
+| 2026 | BEL | BL | Anglais (oral tronc commun) | [md](2026/bel/bel_bl_anglais-oral-tronc-commun_2026/brut.md) | [md](2026/bel/bel_bl_anglais-oral-tronc-commun_2026/guide.md) |
 | 2026 | BEL | BL | Anglais (oral à option) — Bamford et Peterloo | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/brut.md) | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/guide.md) |
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
 | 2025 | BEL | BL | Allemand | [md](2025/bel/bel_bl_allemand_2025/brut.md) | [md](2025/bel/bel_bl_allemand_2025/guide.md) |
