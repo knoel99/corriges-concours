@@ -1,0 +1,121 @@
+{
+  "slug": "x-ens_psi_physique-psi_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2025
+  },
+  "questions": 54,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Sujets/2025_PSI_Ep4_Physique_XSR_14022025_NB.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Rapports/2025_PSI_Rapport_Physique_XSR_Ecrit.pdf",
+    "sujet_sha256": "89e29ef375e812d67735f345759c9cbd0f903743b81660de27b41a20ff36181a",
+    "rapport_sha256": "5b996727e3b863c0c09cf5e7febaa8622aec4ef5a3df4c340a66618252a53205"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir du PDF original et du rapport. Les 54 questions sont résolues avec leurs conventions de signe, les lectures des figures, les estimations numériques et cinq planches de calcul. Le rapport du jury a été confronté à chaque partie."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Q8",
+      "fichier": "figures/charge-et-neutralite.svg",
+      "legende": "La forme près de l’origine et la relaxation à long terme demandent des échelles distinctes. Q = 300 pour la représentation."
+    },
+    {
+      "numero": 2,
+      "question": "Q11",
+      "fichier": "figures/effet-de-peau.svg",
+      "legende": "Profils harmoniques calculés pour un cylindre uniforme. À courant total fixé, la densité près de la surface croît avec la pulsation."
+    },
+    {
+      "numero": 3,
+      "question": "Q27",
+      "fichier": "figures/temperature-et-entropie.svg",
+      "legende": "À gauche, les températures passent vers leur moyenne initiale. À droite, l’entropie totale créée est invariante par échange des réservoirs."
+    },
+    {
+      "numero": 4,
+      "question": "Q33",
+      "fichier": "figures/onde-thermique.svg",
+      "legende": "Solution de diffusion à 0,1 Hz avec une extrémité imposée à 50 °C. Le modèle semi-infini surestime l’amplitude près de cette extrémité."
+    },
+    {
+      "numero": 5,
+      "question": "Q49",
+      "fichier": "figures/comparaison-des-capteurs.svg",
+      "legende": "Prédictions pour E = 10 V et R = R₀, en l’absence de saturation. Le signe du pont passif suit la flèche de la figure 6."
+    }
+  ],
+  "redaction": "Les 54 questions sont résolues avec leurs conventions de signe, les lectures des figures, les estimations numériques et cinq planches de calcul. Le rapport du jury a été confronté à chaque partie.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40",
+      "Q41",
+      "Q42",
+      "Q43",
+      "Q44",
+      "Q45",
+      "Q46",
+      "Q47",
+      "Q48",
+      "Q49",
+      "Q50",
+      "Q51",
+      "Q52",
+      "Q53",
+      "Q54"
+    ]
+  }
+}

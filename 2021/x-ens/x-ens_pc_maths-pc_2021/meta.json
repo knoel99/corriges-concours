@@ -1,0 +1,41 @@
+{
+  "slug": "x-ens_pc_maths-pc_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2021
+  },
+  "questions": 44,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_PC_sujet_Math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_PC_rap_eMath.pdf",
+    "sha256_sujet": "6fd429376fc79a3c67802ec65bc851504cbdb148dc54550307c51d8a2c56f660"
+  },
+  "figures": [
+    {
+      "fichier": "figures/demi-cercles.svg",
+      "question": "3.26",
+      "legende": "Les racines de l’unité sont réparties entre les facteurs suivant leur demi-cercle. Chaque facteur est évalué au point réel le plus éloigné de ses racines."
+    },
+    {
+      "fichier": "figures/alternance-tchebychev.svg",
+      "question": "4.44",
+      "legende": "Pour n = 3 et m = 2, les racines des deux facteurs sont séparées. Le produit normalisé atteint alternativement −1 et +1 entre elles et aux extrémités."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale et vérification sur le sujet et le rapport des 44 questions. Mesure de Mahler, comparaison des arcs, constante du disque et optimalité, perturbations des racines, oscillation et constante exacte sur un segment. Indications distinctes et deux figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
