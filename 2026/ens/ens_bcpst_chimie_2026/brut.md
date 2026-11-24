@@ -1,8 +1,12 @@
-# ENS BCPST — Chimie 2026 · Corrigé brut
+# ENS BCPST — Chimie 2026 · Corrigé partiel brut
 
 *Corrigé rédigé par IA, non officiel.*
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Périmètre du corrigé.** Les questions 19 à 53 sur l’analyse de l’eau sont corrigées intégralement, ainsi que les questions 1, 2, 5 à 8, 10 et 16 sur la structure et l’analyse des molécules (43 questions sur 53). En Q13, seule l’analogie entre deux fonctions est étudiée. Les étapes de préparation de l’inhibiteur des questions 3, 4, 9, 11, 12, 14, 15, 17 et 18 sont hors périmètre.
 
 La numérotation des molécules, des atomes et des figures citées dans les solutions suit l’énoncé. Les lettres DCO et DBO₅ désignent les demandes chimique et biologique en dioxygène, exprimées en masse de dioxygène par litre d’eau initiale.
 
@@ -18,17 +22,7 @@ Les priorités de Cahn–Ingold–Prelog se départagent dès la deuxième couch
 
 ![Figure 1 — Au carbone étoilé, l’hydrogène est devant le plan. Le classement des trois voisins carbonés conduit à la configuration R.](figures/q02-jonction-cip.svg)
 
-## I.1 — Préparer et assembler les deux fragments
-
-### Question 3
-
-Le motif $\mathrm{-C(O)OEt}$ de l’ester devient $\mathrm{-CH_2OH}$. C’est une **réduction d’ester en alcool primaire**. On peut proposer une réduction par un excès d’hydrure de diisobutylaluminium (DIBAL-H), poussée au-delà de l’aldéhyde, puis hydrolyse des alcoolates. La liaison double est conservée sur le dessin de 2. Un réactif qui s’arrêterait à l’aldéhyde devrait être suivi d’une seconde réduction, par exemple au borohydrure de sodium.
-
-### Question 4
-
-Notons $\mathrm{RCH_2OH}$ la partie alcool allylique de 2 et $\mathrm{ImH}$ l’imidazole. Le doublet du phosphore de $\mathrm{PPh_3}$ attaque un atome I et la liaison I–I se rompt vers l’autre iode, ce qui forme $\mathrm{[Ph_3P{-}I]^+I^-}$. Le doublet de l’oxygène de l’alcool attaque P. Le doublet libre de l’imidazole prélève le proton de l’oxygène et la rupture P–I donne l’**alkoxyphosphonium** $\mathrm{[RCH_2{-}O{-}PPh_3]^+}$. Ces opérations peuvent s’écrire avec un intermédiaire phosphorane à cinq ligands. Enfin, $\mathrm{I^-}$ attaque le carbone primaire par l’arrière. Le doublet de la liaison C–O revient sur l’oxygène et le groupe sort sous forme de $\mathrm{Ph_3P{=}O}$. On obtient **3**, $\mathrm{RCH_2I}$, ainsi qu’un sel d’imidazolium. La dernière substitution conserve la géométrie de l’alcène voisin. Le schéma donne les déplacements de doublets.
-
-![Figure 2 — Dans l’iodation d’Appel, les flèches courbes indiquent les mouvements de doublets. Im représente la base imidazole.](figures/q04-deplacements-appel.svg)
+## I.1 — Chromatographie, spectroscopie et structure des molécules
 
 ### Question 5
 
@@ -38,9 +32,9 @@ Le polysaccharide fonctionnalisé est **chiral**. Les associations réversibles 
 
 Dans le mélange enrichi, le premier pic (95,42 % de l’aire) correspond à **5-R**, avec $t_R=16{,}150\,\mathrm{min}$ (16,25 min sur l’injection racémique). Son excès énantiomérique est $95{,}42-4{,}58=90{,}84\,\%$. Si la « conversion de 5-S en 5-R » de la question est interprétée comme une interconversion conservant la quantité totale de 5, la fraction initiale S est 50,911 % et la fraction finale S 4,579 %. Le rendement de conversion ainsi **calculé sous cette hypothèse** est $(50{,}911-4{,}579)/50{,}911\simeq91\,\%$.
 
-Les chromatogrammes seuls établissent l’enrichissement, sans prouver cette interconversion. Pour un dédoublement cinétique par lipase où R est conservé et S quitte le mélange des deux acétates, c’est le rapport $S/R$ qu’il faut comparer. La fraction de S disparue vaut alors $1-(4{,}579/95{,}421)/(50{,}911/49{,}089)\simeq95{,}4\,\%$. Les aires relatives ne donnent pas à elles seules le rendement isolé en 5-R.
+Chaque chromatogramme fournit des fractions d’aire dont la somme vaut 100 %. Une différence de quantité injectée change l’aire totale. Sans étalon interne ni mise à l’échelle des injections, les fractions seules établissent l’enrichissement, sans prouver cette interconversion. Pour un dédoublement cinétique par lipase où R est conservé et S quitte le mélange des deux acétates, c’est le rapport $S/R$ qu’il faut comparer. La fraction de S disparue vaut alors $1-(4{,}579/95{,}421)/(50{,}911/49{,}089)\simeq95{,}4\,\%$. Les aires relatives ne donnent pas à elles seules le rendement isolé en 5-R.
 
-![Figure 3 — Aires des deux signaux d’acétate normalisées pour chaque injection. L’excès en 5-R mesure l’enrichissement énantiomérique.](figures/q06-aires-chromatographiques.svg)
+![Figure 2 — Aires des deux signaux d’acétate normalisées pour chaque injection. L’excès en 5-R mesure l’enrichissement énantiomérique.](figures/q06-aires-chromatographiques.svg)
 
 ### Question 7
 
@@ -62,55 +56,17 @@ Les deux singulets E et F ont même intégration et leur ordre se fonde sur les 
 
 Les valeurs de Pauling sont $\chi(\mathrm C)=2{,}55$, $\chi(\mathrm{Mg})=1{,}31$, $\chi(\mathrm{Li})=0{,}98$. Les liaisons C–Mg et C–Li sont toutes deux polarisées $\mathrm{C^{\delta-}{-}M^{\delta+}}$. Le carbone a un caractère carbanionique, ce qui explique les propriétés nucléophiles et fortement basiques des deux familles. La différence d’électronégativité est plus grande avec le lithium.
 
-### Question 9
-
-Le $n$-butyllithium arrache un H du **carbone C2 entre les deux soufres**. Le doublet de la liaison C–H reste sur C2 et le butyle est protoné en butane. Le produit est le **2-lithio-1,3-dithiane**, représenté comme le carbanion cyclique $\mathrm{S{-}CH^-{-}S}$ associé à $\mathrm{Li^+}$. Les deux soufres voisins stabilisent ce centre par leur polarisabilité et leur effet inductif. Les valeurs comparatives de la figure 20 donnent environ 39 pour le dithiane non substitué, contre environ 45 pour un exemple thioéther simple. Les sites du cycle contigus à un seul soufre sont moins favorables.
-
 ### Question 10
 
-La partie $\mathrm{O{=}C{-}C_\alpha{=}C_\beta}$ du cycle fournit deux sites principaux. Le **carbone du carbonyle** est électrophile par polarisation de C=O. Le **carbone β** (C2 dans la numérotation RMN) l’est aussi, comme le montre la forme limite $\mathrm{^-O{-}C{=}C_\alpha{-}C_\beta^+}$. Une attaque en 1,2 ou une attaque conjuguée en 1,4 sont a priori envisageables. Le squelette observé en 7 signe l’attaque conjuguée.
+La partie $\mathrm{O{=}C{-}C_\alpha{=}C_\beta}$ du cycle fournit deux sites principaux. Le **carbone du carbonyle** est électrophile par polarisation de C=O. Le **carbone β** (C2 dans la numérotation RMN) l’est aussi, comme le montre la forme limite $\mathrm{^-O{-}C{=}C_\alpha{-}C_\beta^+}$. Une attaque en 1,2 ou une attaque conjuguée en 1,4 sont a priori envisageables. Le carbone du carbonyle et le carbone β peuvent ainsi porter un déficit de densité électronique dans deux représentations limites du même système conjugué.
 
-### Question 11
+### Question 13 · analogie fonctionnelle
 
-Le carbone du dithiane lithié attaque le carbone β de 6. Les électrons de $\mathrm{C_\alpha=C_\beta}$ sont déplacés vers la liaison entre carbone carbonylé et carbone α, et ceux de C=O vers O. Il se forme l’**énolate de lithium** de la cétone cyclique portant $\mathrm{(1,3\!{-}dithian\!{-}2\!{-}yle)}$ en β. Si $D$ désigne ce groupe, son motif est $\mathrm{^-O{-}C{=}C_\alpha H{-}C_\beta H(D)}$, avec $\mathrm{Li^+}$ et les autres liaisons du cycle inchangées. La face d’addition place $D$ sur la face observée en 7. Sa forme carbanionique en α attaque ensuite le $\mathrm{CH_2I}$ de 3 par substitution, ce qui rétablit la cétone et installe la chaîne portant le boronate en α. HMPA solvate le cation.
-
-![Figure 4 — La liaison formée avec le dithiane est en β de la cétone. La charge de l’énolate se délocalise entre oxygène et carbone α.](figures/q11-addition-conjuguee.svg)
-
-### Question 12
-
-L’iodure 3 porte un bon groupe partant et permet l’alkylation en α de l’énolate par $\mathrm{S_N2}$. En 2, le groupe OH serait un très mauvais groupe partant sous ces conditions basiques. Son proton risquerait aussi de neutraliser le nucléophile ou l’énolate. La conversion de l’alcool en iodure rend possible la formation de la liaison C–C.
-
-### Question 13
-
-Le 1,3-dithiane est un **thioacétal cyclique**, analogue soufré d’un 1,3-dioxane. Le carbone entre les soufres porte deux H, son précurseur carbonylé est donc le méthanal. Une condensation de $\mathrm{HCHO}$ avec le propane-1,3-dithiol $\mathrm{HS(CH_2)_3SH}$, sous catalyse acide et avec élimination de l’eau, fournit le cycle à six chaînons. Le bilan produit un équivalent d’eau. Une première addition du thiol sur le carbonyle activé précède la fermeture intramoléculaire par le second soufre.
-
-### Question 14
-
-Une séquence en trois opérations conduit de 9 à 10. **1.** Oxyder l’alcool secondaire libre adjacent au groupe sulfone en cétone, par exemple par oxydation de Swern. Le groupe $\mathrm{CH_2OTBS}$ est protégé pendant cette opération. **2.** Déprotéger l’éther silylé au TBAF pour libérer l’alcool primaire allylique. **3.** Remplacer ce OH par Br par une bromation d’Appel ($\mathrm{PPh_3/CBr_4}$). On retrouve en 10 le motif β-cétosulfone et l’halogénure allylique terminal. Le sujet autorise à conserver OPMB et OTf dans ces transformations.
-
-## I.2 — Fermer le cycle et achever la chaîne latérale
-
-### Question 15
-
-Dans 10, le carbone étoilé est le $\mathrm{CH_2}$ entre cétone et sulfone dans $\mathrm{-C(=O)-CH_2-SO_2Ph}$. Le carbonate prélève un proton. La paire d’électrons de la liaison C–H produit un anion dont la charge est délocalisée vers le carbonyle et le sulfonyle. Par sa forme nucléophile carbonée, cet anion attaque par l’arrière le $\mathrm{CH_2Br}$ allylique **terminal** de la chaîne portée par l’autre carbone de jonction. La liaison C–Br se rompt vers $\mathrm{Br^-}$. Il s’agit d’une alkylation intramoléculaire de type $\mathrm{S_N2}$ formant une nouvelle liaison C–C et un **cycle à neuf chaînons**. Le traitement final neutralise les espèces basiques. La structure de 11 est celle de 10 refermée par la liaison $\mathrm{C^*-CH_2}$, avec $\mathrm{SO_2Ph}$ et un H sur $\mathrm C^*$. Les liaisons doubles et les liaisons aux deux carbones de jonction conservent leur géométrie. Le dessin représente un des produits de la fermeture.
-
-![Figure 5 — Connectivité du bicycle 11. L’alkylation relie le carbone entre cétone et sulfone au méthylène allylique qui portait le brome.](figures/q15-fermeture-cycle-neuf.svg)
+Le 1,3-dithiane est un thioacétal cyclique. Le carbone situé entre les deux atomes de soufre porte deux liaisons C–S, analogues aux deux liaisons C–O du carbone acétal d’un 1,3-dioxane. Cette réponse couvre l’identification fonctionnelle.
 
 ### Question 16
 
-La double liaison trans du nouveau cycle à neuf chaînons est contrainte. Deux orientations spatiales de cette unité alcène par rapport aux deux hydrogènes de jonction peuvent correspondre à des conformères dont l’interconversion est assez lente pour que leurs signaux se distinguent. Comme la molécule contient déjà des centres chiraux, ces **atropisomères** peuvent avoir des spectres RMN voisins mais distincts. Cette interprétation concilie configuration identique du carbone étoilé et absence de changement $E/Z$. C’est celle retenue pour ces intermédiaires dans l’étude de synthèse. [Article des auteurs](https://doi.org/10.1021/jacs.3c03366)
-
-### Question 17
-
-Écrivons $\mathrm{R-CH=CH_2}$ pour l’alcène terminal de 12, $\mathrm R$ désignant le reste de la molécule y compris le méthylène allylique éventuel. Le partenaire est l’**acétate de méthallyle**, $\mathrm{CH_2=C(CH_3)-CH_2-OAc}$, où $\mathrm{Ac=C(O)CH_3}$. Dans la métathèse croisée, les deux méthylènes terminaux forment de l’éthylène. Le bilan est
-
-$$\mathrm{R{-}CH{=}CH_2+CH_2{=}C(CH_3){-}CH_2OAc\ \longrightarrow\ R{-}CH{=}C(CH_3){-}CH_2OAc+CH_2{=}CH_2}.$$
-
-L’adduit ayant la géométrie dessinée en figure 8 est la waixenicine A. Le catalyseur de Grubbs–Hoveyda indiqué dans le sujet est régénéré au cours du cycle.
-
-### Question 18
-
-Notons $\mathrm{R-CH=CH_2}$ et $\mathrm{CH_2=C(Me)CH_2OAc}$ les partenaires de Q17. L’autométathèse du premier peut donner $\mathrm{R-CH=CH-R}$ et de l’éthylène. Celle du second pourrait donner $\mathrm{AcOCH_2-C(Me)=C(Me)-CH_2OAc}$ et de l’éthylène. Une autre géométrie $E/Z$ du produit croisé est également envisageable. Les autres doubles liaisons du substrat offrent des sites concurrents de métathèse. Ces voies possibles réduisent la sélectivité, sans que le seul rendement de 24 % permette de déterminer quels sous-produits se sont effectivement accumulés.
+La double liaison trans du nouveau cycle à neuf chaînons est contrainte. Deux orientations spatiales de cette unité alcène par rapport aux deux hydrogènes de jonction peuvent correspondre à des conformères dont l’interconversion est assez lente pour que leurs signaux se distinguent. Comme la molécule contient déjà des centres chiraux, ces **atropisomères** peuvent avoir des spectres RMN voisins mais distincts. Cette interprétation concilie configuration identique du carbone étoilé et absence de changement $E/Z$. Deux orientations deviennent alors diastéréoisomères dans l’environnement déjà chiral. Une RMN à température variable pourrait révéler un échange entre elles si celui-ci devenait suffisamment rapide sur l’échelle de temps de la mesure.
 
 ## II.1 — Le dioxygène dans l’eau
 
@@ -133,7 +89,7 @@ L’axe internucléaire est $Oz$. Les orbitales de type $\sigma$ ont une symétr
 
 Le plan médiateur $Oxy$ est un plan nodal supplémentaire pour les orbitales antiliantes. Une orbitale $\pi$ liante possède donc un plan nodal contenant $Oz$ et garde de la densité en dehors de cet axe dans le plan médiateur.
 
-![Figure 6 — Occupation des orbitales liantes et antiliantes du dioxygène. L’échelle énergétique est qualitative.](figures/o2-diagramme-orbitales.svg)
+![Figure 3 — Occupation des orbitales liantes et antiliantes du dioxygène. L’échelle énergétique est qualitative.](figures/o2-diagramme-orbitales.svg)
 
 ### Question 21
 
@@ -145,9 +101,9 @@ Les deux modèles donnent une **liaison double**. En orbitales moléculaires, le
 
 ### Question 23
 
-À $1\ \mathrm{bar}$, la figure 11 donne environ $1{,}25\ \mathrm{mmol\,L^{-1}}$ vers $300\ \mathrm K$, puis $0{,}9\ \mathrm{mmol\,L^{-1}}$ vers $330\ \mathrm K$. Chauffer déplace donc l’équilibre $\mathrm{O_2(g)\rightleftharpoons O_2(aq)}$ vers le gaz. Pour la dissolution écrite de gauche à droite, $K$ diminue lorsque $T$ augmente. La relation de Van ’t Hoff $\mathrm d\ln K/\mathrm dT=\Delta_{\mathrm{diss}}H^\circ/(RT^2)$ donne **$\Delta_{\mathrm{diss}}H^\circ<0$**. La dissolution est exothermique sur l’intervalle étudié.
+À $1\ \mathrm{bar}$, la figure 11 donne environ $1{,}25\ \mathrm{mmol\,L^{-1}}$ vers $300\ \mathrm K$, puis $0{,}9\ \mathrm{mmol\,L^{-1}}$ vers $330\ \mathrm K$. Chauffer déplace donc l’équilibre $\mathrm{O_2(g)\rightleftharpoons O_2(aq)}$ vers le gaz. Pour la dissolution écrite de gauche à droite, $K$ diminue lorsque $T$ augmente. La relation de Van ’t Hoff $\mathrm d\ln K/\mathrm dT=\Delta_{\mathrm{diss}}H^\circ/(RT^2)$ donne **$\Delta_{\mathrm{diss}}H^\circ<0$**. La dissolution est exothermique sur l’intervalle étudié. Avec un gaz assimilé à un gaz parfait et une solution diluée, $K^\circ=(C_{\rm sat}/c^\circ)/(p_{\rm O_2}/p^\circ)$. À pression partielle constante, la baisse de solubilité se traduit directement par une baisse de $K^\circ$.
 
-![Figure 7 — Concentration à saturation du dioxygène en fonction de la température, d’après la figure 11 du sujet.](figures/o2-solubilite-temperature.svg)
+![Figure 4 — Concentration à saturation du dioxygène en fonction de la température, d’après la figure 11 du sujet.](figures/o2-solubilite-temperature.svg)
 
 ### Question 24
 
@@ -183,7 +139,7 @@ Les domaines de la figure 12 s’attribuent comme suit.
 
 Les frontières verticales des espèces de Cr(VI) sont à $\mathrm{pH}=0{,}91$ et $6{,}29$ pour la concentration totale du sujet. L’équilibre $\mathrm{Cr_2O_7^{2-}+H_2O\rightleftharpoons 2CrO_4^{2-}+2H^+}$ explique le passage de 6 à 7 quand le pH augmente. Les pointillés des couples de l’eau sont des repères et ne séparent pas deux espèces du chrome.
 
-![Figure 8 — Identification des sept domaines du chrome, pour une concentration totale de 0,01 mol/L, d’après la figure 12.](figures/chrome-domaines-potentiel-ph.svg)
+![Figure 5 — Identification des sept domaines du chrome, pour une concentration totale de 0,01 mol/L, d’après la figure 12.](figures/chrome-domaines-potentiel-ph.svg)
 
 ### Question 29
 
@@ -201,7 +157,7 @@ La prise d’essai contient $C_{S1}V_{S1}$ moles de dichromate. À l’équivale
 
 La ferroïne est $\mathrm{[Fe(phen)_3]^{2+}}$, où phen désigne la 1,10-phénanthroline. Chacun des trois ligands est **bidentate** et coordonne le métal par ses deux azotes. L’indice de coordination vaut donc **6**, avec un environnement approximativement octaédrique. La formation de trois chélates favorise la stabilité du complexe. Chaque ligand est rigide et préorganisé, et la coordination de ses deux sites empêche sa dissociation complète dès la rupture d’une seule liaison Fe–N.
 
-![Figure 9 — Les trois phénanthrolines bidentates dans l’environnement octaédrique de Fe(II).](figures/ferroine-chelation.svg)
+![Figure 6 — Les trois phénanthrolines bidentates dans l’environnement octaédrique de Fe(II).](figures/ferroine-chelation.svg)
 
 ### Question 32
 
@@ -228,7 +184,7 @@ $$
 $$
 Le rapport des volumes étant sans dimension, les trois volumes peuvent tous être exprimés en mL. Le blanc, soumis aux mêmes ajouts, au même chauffage et au même titrage, corrige la consommation de fond des réactifs et du mode opératoire. La différence de volume isole ainsi la matière oxydable apportée par l’échantillon.
 
-![Figure 10 — Bilan qualitatif en équivalents d’électrons. La différence des volumes de retour donne la consommation propre à l’échantillon.](figures/dco-blanc-et-echantillon.svg)
+![Figure 7 — Bilan qualitatif en équivalents d’électrons. La différence des volumes de retour donne la consommation propre à l’échantillon.](figures/dco-blanc-et-echantillon.svg)
 
 ## II.3 — Demande biologique en oxygène
 
@@ -238,13 +194,13 @@ La masse de dioxygène consommée est $(C_0-C_5)V_{\rm tot}$ si les concentratio
 
 ### Question 36
 
-Pour $V_1=1\,\mathrm{mL}$, l’écart de $0{,}1\,\mathrm{mg\,L^{-1}}$ est du même ordre que l’incertitude-type sur chaque lecture. Si les erreurs sont indépendantes, l’incertitude-type sur leur différence est $0{,}14\,\mathrm{mg\,L^{-1}}$, avant même la multiplication par 300. À $V_1=300\,\mathrm{mL}$, $C_5=0{,}1\,\mathrm{mg\,L^{-1}}$ est pratiquement nul. Le dioxygène disponible peut avoir limité l’oxydation avant le cinquième jour. La première mesure est imprécise et la seconde risque de sous-estimer la demande.
+Pour $V_1=1\,\mathrm{mL}$, l’écart de $0{,}1\,\mathrm{mg\,L^{-1}}$ est du même ordre que l’incertitude-type sur chaque lecture. Si les erreurs sont indépendantes, l’incertitude-type sur leur différence est $0{,}14\,\mathrm{mg\,L^{-1}}$, avant même la multiplication par 300. À $V_1=300\,\mathrm{mL}$, $C_5=0{,}1\,\mathrm{mg\,L^{-1}}$ est pratiquement nul. Le dioxygène disponible peut avoir limité l’oxydation avant le cinquième jour. La première mesure est imprécise et la seconde risque de sous-estimer la demande. Avec 1 mL prélevé, le facteur de dilution 300 amplifierait l’incertitude absolue à environ $42\ \mathrm{mg\,L^{-1}}$, supérieure à la demande estimée par les dilutions intermédiaires.
 
 ### Question 37
 
-Pour $30\,\mathrm{mL}$, la dilution est d’un facteur 10 et la chute vaut $8{,}2-7{,}2=1{,}0\,\mathrm{mg\,L^{-1}}$, d’où $\mathrm{DBO}_5=10\,\mathrm{mg\,L^{-1}}$. Pour $150\,\mathrm{mL}$, on trouve $2(8{,}2-3{,}2)=10\,\mathrm{mg\,L^{-1}}$ également. Les deux dilutions concordent. Si l’incertitude de concentration domine et si les lectures sont indépendantes, les incertitudes-types propagées sont respectivement $1{,}4$ et $0{,}28\,\mathrm{mg\,L^{-1}}$. Le prélèvement de 150 mL est ici le plus précis.
+Pour $30\,\mathrm{mL}$, la dilution est d’un facteur 10 et la chute vaut $8{,}2-7{,}2=1{,}0\,\mathrm{mg\,L^{-1}}$, d’où $\mathrm{DBO}_5=10\,\mathrm{mg\,L^{-1}}$. Pour $150\,\mathrm{mL}$, on trouve $2(8{,}2-3{,}2)=10\,\mathrm{mg\,L^{-1}}$ également. Les deux dilutions concordent. Si l’incertitude de concentration domine et si les lectures sont indépendantes, les incertitudes-types propagées sont respectivement $1{,}4$ et $0{,}28\,\mathrm{mg\,L^{-1}}$. Le prélèvement de 150 mL est ici le plus précis. Une moyenne pondérée supposerait en outre de connaître les éventuelles corrélations introduites par l’oxymètre et par la valeur initiale commune.
 
-![Figure 11 — Les prélèvements de 30 et 150 mL laissent une réserve mesurable de dioxygène et donnent la même demande après correction de la dilution.](figures/q37-dilutions-dbo.svg)
+![Figure 8 — Les prélèvements de 30 et 150 mL laissent une réserve mesurable de dioxygène et donnent la même demande après correction de la dilution.](figures/q37-dilutions-dbo.svg)
 
 ### Question 38
 
@@ -260,7 +216,7 @@ Prenons $z=0$ au platine et $z=\delta$ à la membrane. La première loi de Fick 
 
 En régime stationnaire, sans réaction dans l’espace entre platine et membrane, $dj_z/dz=0$ et $d^2C/dz^2=0$ si $D$ est constant. La réduction instantanée impose $C(0)=0$. En notant $C_\delta$ la concentration dans le liquide au contact de la membrane, on obtient $C(z)=C_\delta z/\delta$ et $j_z=-DC_\delta/\delta$. L’affinité du dioxygène pour la membrane peut donner une concentration différente à l’intérieur de celle-ci.
 
-![Figure 12 — Dans le liquide entre platine et membrane, la concentration croît linéairement et le dioxygène diffuse vers le platine.](figures/q40-profil-clark.svg)
+![Figure 9 — Dans le liquide entre platine et membrane, la concentration croît linéairement et le dioxygène diffuse vers le platine.](figures/q40-profil-clark.svg)
 
 ### Question 41
 
@@ -274,7 +230,7 @@ Pour $i=m$ (membrane) ou $s$ (solution), le dioxygène est un soluté dilué de 
 
 Pour un disque, $A=\pi d^2/4$. L’équation (4) donne $I/d^2$ constant à concentration, membrane et température fixées. Sur le graphique inférieur de la figure 16, ce rapport diminue d’abord fortement puis approche un plateau pour les diamètres de quelques centaines de micromètres. Un seuil pratique est **environ $400\,\mathrm{\mu m}$** (transition vers $250$–$400\,\mathrm{\mu m}$). On travaille **au-dessus** de cet ordre de grandeur pour limiter les contributions diffusives au bord et employer le modèle plan. Les données ne fixent pas une coupure exacte.
 
-![Figure 13 — Lectures approchées de la figure 16. La quasi-constance de I/d² aux grands diamètres indique la plage compatible avec le modèle plan.](figures/q43-seuil-diametre.svg)
+![Figure 10 — Lectures approchées de la figure 16. La quasi-constance de I/d² aux grands diamètres indique la plage compatible avec le modèle plan.](figures/q43-seuil-diametre.svg)
 
 ### Question 44
 
@@ -286,9 +242,9 @@ La figure 17 donne cette pente dès qu’on prend le logarithme du rapport de de
 
 ### Question 45
 
-On peut lire environ $\tau_1=1{,}5$ à $10^4/T_1=33$ et $\tau_2=0{,}49$ à $10^4/T_2=35$ (sensibilités dans la même unité). Cela donne une pente $\ln(0{,}49/1{,}5)/(2\times10^{-4})\simeq-5{,}6\times10^3\,\mathrm K$. On obtient $E_a+\Delta_rH^\circ\simeq47\,\mathrm{kJ\,mol^{-1}}$. En retranchant $E_a=23\,\mathrm{kJ\,mol^{-1}}$, il vient **$\Delta_rH^\circ\simeq+24\,\mathrm{kJ\,mol^{-1}}$** à quelques $\mathrm{kJ\,mol^{-1}}$ près. Le transfert vers la membrane est endothermique selon ces mesures.
+On peut lire environ $\tau_1=1{,}5$ à $10^4/T_1=33$ et $\tau_2=0{,}49$ à $10^4/T_2=35$ (sensibilités dans la même unité). Cela donne une pente $\ln(0{,}49/1{,}5)/(2\times10^{-4})\simeq-5{,}6\times10^3\,\mathrm K$. On obtient $E_a+\Delta_rH^\circ\simeq47\,\mathrm{kJ\,mol^{-1}}$. En retranchant $E_a=23\,\mathrm{kJ\,mol^{-1}}$, il vient **$\Delta_rH^\circ\simeq+24\,\mathrm{kJ\,mol^{-1}}$** à quelques $\mathrm{kJ\,mol^{-1}}$ près. Le transfert vers la membrane est endothermique selon ces mesures. La sensibilité combine deux effets. Assimiler directement les $47\ \mathrm{kJ\,mol^{-1}}$ à une enthalpie de partage compterait aussi l’énergie d’activation de la diffusion.
 
-![Figure 14 — La droite en échelle logarithmique permet de lire le rapport de deux sensibilités et de soustraire la contribution de diffusion.](figures/q45-sensibilite-temperature.svg)
+![Figure 11 — La droite en échelle logarithmique permet de lire le rapport de deux sensibilités et de soustraire la contribution de diffusion.](figures/q45-sensibilite-temperature.svg)
 
 ## II.5 — Oxydation des nanoparticules d’argent
 
@@ -306,13 +262,13 @@ En notant $H_T$ la concentration analytique en peroxyde, en excès, $v=k_{\rm ob
 
 ### Question 49
 
-Dans les expériences 5, 6 et 7, $[\mathrm{Ag}^0]_0=0{,}05\,\mathrm{mmol\,L^{-1}}$. Lorsque $H_T$ est successivement divisé par dix, $k_{\rm app}$ passe de $0{,}133$ à $0{,}0126$ puis $0{,}00119$, soit une division par environ $10{,}6$ à chaque fois. Le calcul sur les extrêmes donne $n_2=\ln(0{,}133/0{,}00119)/\ln(10/0{,}1)\simeq1{,}02$. L’ordre partiel en peroxyde est **un** dans la précision des données. L’ordre global vaut donc deux.
+Dans les expériences 5, 6 et 7, $[\mathrm{Ag}^0]_0=0{,}05\,\mathrm{mmol\,L^{-1}}$. Lorsque $H_T$ est successivement divisé par dix, $k_{\rm app}$ passe de $0{,}133$ à $0{,}0126$ puis $0{,}00119$, soit une division par environ $10{,}6$ à chaque fois. Le calcul sur les extrêmes donne $n_2=\ln(0{,}133/0{,}00119)/\ln(10/0{,}1)\simeq1{,}02$. L’ordre partiel en peroxyde est **un** dans la précision des données. L’ordre global vaut donc deux dans cette gamme de mesure. Les deux rapports adjacents donnent respectivement $\ln(0{,}133/0{,}0126)/\ln 10\simeq 1{,}02$ et $\ln(0{,}0126/0{,}00119)/\ln 10\simeq 1{,}02$. L’accord des deux estimations vérifie la cohérence des trois essais.
 
-![Figure 15 — Pour les essais 7, 6 et 5 réalisés avec la même quantité d’argent, la pente logarithmique est voisine de un.](figures/q49-ordre-peroxyde.svg)
+![Figure 12 — Pour les essais 7, 6 et 5 réalisés avec la même quantité d’argent, la pente logarithmique est voisine de un.](figures/q49-ordre-peroxyde.svg)
 
 ### Question 50
 
-Les essais 1 à 5 testent l’effet de la quantité initiale d’argent, à $10\,\mathrm{mmol\,L^{-1}}$ de peroxyde. Malgré un facteur 50 en argent, $k_{\rm app}$ reste entre $0{,}122$ et $0{,}133$. La constante apparente d’un suivi d’ordre un est donc indépendante de $[\mathrm{Ag}^0]_0$, tandis que la **vitesse initiale** est, elle, proportionnelle à cette concentration. Pour un solide réactif, cette proportionnalité à la quantité totale peut surprendre car l’oxydation débute à la surface. Des particules de tailles et formes comparables, dont on fait varier le nombre par dilution, ont une surface totale accessible proportionnelle à la quantité d’argent introduite. C’est une explication compatible avec les mesures.
+Les essais 1 à 5 testent l’effet de la quantité initiale d’argent, à $10\,\mathrm{mmol\,L^{-1}}$ de peroxyde. Malgré un facteur 50 en argent, $k_{\rm app}$ reste entre $0{,}122$ et $0{,}133$. La constante apparente d’un suivi d’ordre un est donc indépendante de $[\mathrm{Ag}^0]_0$, tandis que la **vitesse initiale** est, elle, proportionnelle à cette concentration. Pour un solide réactif, cette proportionnalité à la quantité totale peut surprendre car l’oxydation débute à la surface. Des particules de tailles et formes comparables, dont on fait varier le nombre par dilution, ont une surface totale accessible proportionnelle à la quantité d’argent introduite. C’est une explication compatible avec les mesures. Un même échantillon de particules dilué conserve une distribution de tailles comparable. Changer leur diamètre moyen à quantité totale d’argent constante permettrait de tester séparément l’hypothèse de surface accessible.
 
 ### Question 51
 
