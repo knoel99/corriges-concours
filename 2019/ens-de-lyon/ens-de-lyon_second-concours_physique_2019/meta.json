@@ -1,0 +1,102 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2019
+  },
+  "questions": 39,
+  "redaction": "Les dix questions de cours et les vingt-neuf questions sur le pendule de Newton sont traitées avec quatre figures. Le développement de la loi de Hertz, le profil du soliton et sa vitesse sont confrontés aux graphiques du sujet.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_2c_sujet_phy.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_2CC_rap_ePhy.pdf",
+    "nature": "Sujet et rapport du jury de la banque officielle.",
+    "sujet_sha256": "0d83e1b613733feceab393f2163c10d19b1fef56cdc3ff3a99a5e0e2f1c5f673",
+    "rapport_sha256": "f896ea8b2d9eec880255ef739db889bf0f34f598bcabba00126fc51871fa1496"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A2",
+      "fichier": "figures/michelson.svg",
+      "legende": "Les deux miroirs physiques occupent des bras perpendiculaires. Dans le bras vertical, M₂ et l’image de M₁ sont parallèles et délimitent la lame d’air équivalente."
+    },
+    {
+      "numero": 2,
+      "question": "A3",
+      "fichier": "figures/bode.svg",
+      "legende": "Fonction de transfert normalisée au gain statique. Les deux asymptotes du gain se coupent à la pulsation de coupure."
+    },
+    {
+      "numero": 3,
+      "question": "B18",
+      "fichier": "figures/profil-temporel.svg",
+      "legende": "Profils normalisés de vitesse et déplacement à position fixée pendant le passage de l’impulsion."
+    },
+    {
+      "numero": 4,
+      "question": "B19",
+      "fichier": "figures/profil-spatial.svg",
+      "legende": "Profils normalisés de vitesse et déplacement à temps fixé, du sillage à la région encore immobile."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des pages et figures de l’épreuve et du rapport du jury. Les dix questions de cours et les vingt-neuf questions sur le pendule de Newton sont traitées avec quatre figures. Le développement de la loi de Hertz, le profil du soliton et sa vitesse sont confrontés aux graphiques du sujet.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B23",
+      "B24",
+      "B25",
+      "B26",
+      "B27",
+      "B28",
+      "B29"
+    ]
+  }
+}
