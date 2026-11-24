@@ -35,8 +35,8 @@ $if(arabe)$
 $endif$
 $if(hebreu)$
 \babelprovide[import,onchar=ids fonts]{hebrew}
-\babelfont[hebrew]{rm}[Renderer=HarfBuzz]{Noto Serif Hebrew}
-\babelfont[hebrew]{sf}[Renderer=HarfBuzz]{Noto Sans Hebrew}
+\babelfont[hebrew]{rm}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Serif Hebrew}
+\babelfont[hebrew]{sf}[Renderer=HarfBuzz,RawFeature={fallback=repliTexte}]{Noto Sans Hebrew}
 $endif$
 $if(chinois)$
 % Identifie les caractères han et autorise les coupures entre idéogrammes, y compris

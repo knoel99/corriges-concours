@@ -497,7 +497,9 @@ def test_export_japonais_kanji_et_kana(tmp_path):
 def test_export_hebreu_sens_des_paragraphes(tmp_path):
     source = "# Écrit bilingue\n\nUne indication en français.\n\nשתי שפות בכיתה אחת.\n"
     tex = ex.generer_tex(source, META, "brut", tmp_path / "hebreu.tex").read_text()
-    assert r"\babelfont[hebrew]{rm}" in tex
+    for famille in ("rm", "sf"):
+        ligne = next(l for l in tex.splitlines() if l.startswith(r"\babelfont[hebrew]{" + famille + "}"))
+        assert "fallback=repliTexte" in ligne
     assert r"\begin{otherlanguage}{hebrew}" in tex
     assert tex.index("Une indication") < tex.index(r"\begin{otherlanguage}{hebrew}")
     assert "שתי שפות בכיתה אחת." in tex
