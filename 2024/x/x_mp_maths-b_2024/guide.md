@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Attribution archivée** · « IA (GPT-6.2 Sol), relue et révisée par IA »
+
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve de Mathématiques B de l’École polytechnique est commune aux filières MP et MPI. Elle dure quatre heures, sans calculatrice. Les 22 numéros officiels donnent 39 réponses élémentaires, chacune accompagnée de son repère d’origine.
@@ -317,6 +321,10 @@ $$
 P(z)=\det\bigl(zM_1+(1-z)M_2\bigr)
 $$
 est non nul puisque $P(0)=\det M_2\ne0$. Il a donc un nombre fini de racines. L’injectivité de 10a montre que chaque racine appartient à au plus un arc ouvert $Z_a(]0,1[)$, donc seuls un nombre fini de réels $a$ sont interdits. Aux extrémités, $Z_a(0)=0$ et $Z_a(1)=1$ ne sont pas des racines.
+
+Par exemple, pour $M_1=1$ et $M_2=-1$, on a $P(z)=2z-1$. Seul $a=0$ fait passer l’arc par la racine $1/2$. Les extrémités sont inchangées.
+
+![Figure 1 — Pour les matrices scalaires −1 et 1, le déterminant s’annule au milieu du segment réel. Chacun des deux arcs non rectilignes évite ce point.](figures/q10b-arcs.svg)
 
 On choisit un réel $a$ permis. Alors $M(t)$ est une combinaison linéaire de $M_1,M_2$, inversible pour tout $t$, donc appartient à $(\mathbb C[A])^*$ d’après 8b.
 
@@ -647,6 +655,8 @@ En dimension $n\geq2$, une matrice complexe constante possède une droite propre
 
 Une solution d’une équation scalaire constante $X'=aX$ a la forme $ce^{at}$, et sa périodicité avec $c\ne0$ impose $|e^{aT'}|=1$, donc $\operatorname{Re}a=0$.
 
+Cette seconde possibilité est effective. Fixons $T=2\pi$, $A(t)=i\sqrt2$, $M(t)=e^{i\sqrt2 t}$ et $B=i\sqrt2$. La solution non nulle a pour période $2\pi/\sqrt2$, tandis que $e^{TB}$ n’est pas une racine de l’unité. Le théorème 2 du rapport se place dès le départ en dimension au moins deux.
+
 > [!PIEGE]
 > Le rapport présente le critère dans le cas $n\geq2$. Le sujet autorise aussi $n=1$. Pour $A=i\sqrt{2}$ et $T=2\pi$, la solution $e^{i\sqrt{2}t}$ est périodique alors que son multiplicateur sur $T$ n’est pas une racine de l’unité.
 
@@ -694,6 +704,10 @@ $$
 \boxed{\binom{x(t)}{y(t)}=e^t Q(t)\binom{x(0)}{y(0)}.}
 $$
 Une forme normale pour cette matrice fondamentale est **$M(t)=Q(t)e^{tB}$ avec $B=I_2$ et $T=2\pi$**.
+
+Pour une donnée initiale réelle, le rayon est multiplié par $e^t$ pendant que l’angle augmente de $\sin t$. En particulier $M(2\pi)=e^{2\pi}I_2$ et les deux multiplicateurs de monodromie coïncident.
+
+![Figure 2 — Pour la donnée initiale (1, 0), enlever la croissance exponentielle laisse un vecteur unitaire qui tourne puis revient sur ses pas pendant une période.](figures/q22-coordonnees.svg)
 
 ## Bilan
 

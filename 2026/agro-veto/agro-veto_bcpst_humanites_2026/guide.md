@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction initiale** · modèle non renseigné · configuration complémentaire non renseignée
+
+**Relecture antérieure** · configuration non renseignée
+
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Nature de l'épreuve.** Dissertation de 3 heures sur programme, sans document ni calculatrice. Le sujet tient en une page : une citation de François Ost, suivie d'une question unique. Aucune contrainte de longueur n'est imposée ; la copie que le jury reproduit dans son rapport 2026 comme excellente occupe près de onze pages manuscrites.
@@ -226,6 +234,10 @@ C'est ce paradoxe que formule le juriste et philosophe du droit François Ost da
 La première phrase s'ouvre sur une subordonnée de valeur concessive : « si » n'y introduit pas une hypothèse, il accorde un fait pour mieux affirmer ce qui suit. Ce fait est d'ordre biologique. La nature, sujet des verbes, y apparaît comme une puissance qui a sa vie propre : elle « a produit l'espèce humaine », et le complément « au terme de son évolution », d'inspiration darwinienne, fait de l'homme un résultat tardif plutôt que le centre du monde. L'adverbe « journellement » ajoute que la dépendance ne tient pas seulement à l'origine : elle se renouvelle chaque jour, et elle porte sur la « survie », non sur l'abondance.
 
 La principale déplace alors le point de vue vers l'homme et y pose une limite. La nature est « “tout autre” » : d'une autre sorte que lui, et les guillemets signalent une expression forte, qui évoque le tout autre du vocabulaire religieux. Elle est aussi « étrangère », c'est-à-dire extérieure, venue du dehors. Les deux mots ne se confondent pas : l'étranger peut me ressembler par certains traits, et l'autre n'est pas forcément du dehors. Les adverbes « tout » et « absolument » radicalisent l'un et l'autre, mais aucun de ces termes ne dit que la nature soit hostile.
+
+La façon de découvrir chacune des deux vitres précise ce que signifie ici « étrangère absolument ». Dans le salon du sous-marin, les panneaux s’ouvrent à l’initiative de l’équipage. L’obstacle transparent est aménagé pour qu’Aronnax voie des êtres auxquels il ne peut se mêler. Chez Haushofer, le jour est déjà là quand la narratrice rencontre le mur. C’est au contraire parce que la vue ne lui a rien appris de l’obstacle qu’elle doit tâter l’air devant elle. Une séparation connue autorise la première expérience ; la découverte douloureuse d’une séparation inconnue ouvre la seconde. L’altérité que les deux personnages éprouvent n’a donc ni la même origine ni le même sens.
+
+![Deux surfaces transparentes, deux expériences](figures/lecture-du-sujet.svg)
 
 La seconde phrase noue le paradoxe. « Avoir partie liée », c'est être engagé solidairement avec quelqu'un dans une même affaire : on ne lie que ce qui est distinct, et la locution suppose une solidarité réciproque, que la simple subsistance ne suffit pas à définir. Une nouvelle concession, « sans pour autant », ramène pourtant l'accent sur la limite : on ne peut « ramener l'un à l'autre ». Ramener la nature à l'homme, ce serait l'anthropomorphisme, qui lui prête des traits, des intentions ou des valeurs humaines. Ramener l'homme à la nature, ce serait le naturalisme, qui prétend tirer de la nature les normes de la vie humaine et nie ce que la culture a de propre. La solidarité que suppose « partie liée » exclut de son côté le vieux dualisme qui ne voit dans la nature qu'un moyen. Ni séparés, ni confondus : telle est la thèse, et c'est sur la frontière que porte l'accent.
 

@@ -13,5 +13,35 @@
   },
   "questions": 39,
   "redaction": "IA (GPT-6.2 Sol), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/q10b-arcs.svg",
+      "question": "10b",
+      "legende": "Pour les matrices scalaires −1 et 1, le déterminant s’annule au milieu du segment réel. Chacun des deux arcs non rectilignes évite ce point."
+    },
+    {
+      "fichier": "figures/q22-coordonnees.svg",
+      "question": "22",
+      "legende": "Pour la donnée initiale (1, 0), enlever la croissance exponentielle laisse un vecteur unitaire qui tourne puis revient sur ses pas pendant une période."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP-MPI%20SUJET%20MATHS%20B%20%28X%29_0.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20MP%2C%20MPI%20RAPPORT%20ECRIT%20DE%20MATHS%20B%20%28X%29.pdf",
+    "sha256_sujet": "ce144658d6f22a38a7039bdb3700a68802841096a76097442668cd29d6970729"
+  },
+  "contributions": [
+    {
+      "phase": "revision",
+      "tour": 1,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle des 39 réponses et indications avec le sujet et le rapport MP-MPI. Relecture de l’inversion locale pour une norme quelconque, de la surjectivité de l’exponentielle et du critère de Floquet. Exemple scalaire pour le cas de dimension un autorisé par le sujet et lecture des multiplicateurs de monodromie en 22. Deux figures nouvelles.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
 }

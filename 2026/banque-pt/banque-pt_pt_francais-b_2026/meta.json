@@ -8,5 +8,63 @@
   },
   "questions": 2,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-sujet.svg",
+      "question": "Dissertation",
+      "legende": "De l’origine d’un produit à sa valeur"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2026/fr_b_2026_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2026/rapport_fra_b_ecrit_2026.pdf",
+    "sujet_sha256": "2ebd79a29192bfb51887b1ba0676fa834c9a8d4cef9f34a275b75d17daabbe33",
+    "rapport_sha256": "5e755f8a3834f8d36554d8ce28b797d0b64b45aa41e69875b99ec94b14b61d00"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "famille_modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction historique des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Relecture précédemment signalée, détails non renseignés."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport sur Dagognet, l’alternative entre décroissance et réparation, le plan du résumé, le décompte et la demande de dissertation."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne imprimée (180 à 220 mots), des dix repères de vingt mots et du total de 209. Précision de la lecture de la religiosité du consommateur et construction du schéma correspondant."
+    }
+  ],
+  "date_revision": "2026-11-24"
 }

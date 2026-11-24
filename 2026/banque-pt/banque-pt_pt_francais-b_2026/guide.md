@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction initiale** · claude-opus-5-5 · configuration complémentaire non renseignée
+
+**Relecture antérieure** · configuration non renseignée
+
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **L'épreuve.** Quatre heures, sans document ni dictionnaire ni appareil électronique, pour deux exercices notés séparément : un **résumé** de texte (8 points) en 200 mots, avec une marge de ± 10 % (180 à 220 mots), une barre oblique tous les vingt mots et le total inscrit à la fin ; une **dissertation** (12 points) sur une citation tirée du même texte, à traiter à partir des trois œuvres au programme. Les « questions » de ce corrigé guidé sont les étapes du travail : trois pour le résumé, cinq pour la dissertation.
@@ -119,6 +127,8 @@ Convention de décompte : est compté pour un mot tout ensemble de lettres sépa
 > Or la nature n'est ni pure ni sûre : l'eau de source / (180) doit être assainie, l'eau minérale exige machines et commerce, la terre laissée à elle-même s'épuise. Il faut partout / (200) intervenir : renonçons au mythe d'un âge d'or.
 >
 > **209 mots**
+
+La consigne imprimée autorise 180 à 220 mots. Le rapport propose lui-même un modèle à 218 mots, puis indique 180 à 200 dans ses remarques générales. Le décompte suivi ici est celui de l’énoncé.
 
 Contrôle : 209 mots avec la convention annoncée ; 211 si le trait d'union sépare aussi ; 190 si l'apostrophe ne sépare pas. Le résumé est donc dans la fourchette (180 à 220) quelle que soit la règle appliquée par le correcteur.
 
@@ -301,6 +311,10 @@ Mais si le rapport à la nature est tout entier opératoire, comment distinguer 
 **C. Le désastre ne vient pas de la technique, mais de la violence.** La fin du *Mur invisible* tranche par un fait. Après des années où la forêt n'a jamais fait à la narratrice que ce qu'une forêt fait, un homme surgit sur l'alpage et tue à la hache le jeune taureau et Lynx, sans raison ni profit ; elle l'abat d'un coup de fusil. Ce n'est pas la nature qui détruit le monde qu'elle a construit, c'est le dernier homme. La naïveté n'est pas seulement de croire la nature bonne ; elle est aussi de croire l'homme innocent dès lors qu'il cesse de la sacraliser. Verne conclut de même : le voyage s'achève lorsque Nemo, cessant d'être savant pour redevenir vengeur, éperonne un navire de guerre et le regarde sombrer, avant de s'agenouiller en pleurs devant le portrait d'une femme et de deux enfants ; Aronnax, jusque-là fasciné, prend la fuite. Le *Nautilus* n'est pas condamné par sa technique, mais par la haine qu'il sert. La défiance envers la technique n'est donc pas toujours naïve : la narratrice soupçonne que le mur lui-même est l'effet d'une arme nouvelle, qui a figé les vivants de l'autre côté, et l'éperon du *Nautilus* montre qu'une machine faite pour connaître peut servir à tuer. Mais ce que l'on redoute alors n'est pas l'artifice comme tel : c'est une puissance qui s'affranchit de toute norme de vie. Canguilhem, enfin, rappelle dès son introduction que la pensée du vivant doit tenir du vivant l'idée du vivant : le savoir ne s'exerce pas d'un point de vue extérieur au monde qu'il transforme, et c'est pourquoi il engage une responsabilité.
 
 **Conclusion**
+
+La préférence que Dagognet met en cause suppose un raisonnement dont l’étiquette dispense l’acheteur. Un produit lui est présenté comme plus proche de son origine ; il en déduit que ce produit lui sera meilleur. Le second jugement ne découle pourtant pas du premier. Une eau restée chimiquement inchangée peut convenir à des espèces vivant dans la mare et rendre malade le marcheur qui la boirait. Pour Canguilhem, demander à quelle vie une eau convient est une question de relation au milieu. Le mot « naturel » gomme justement cette relation quand il prétend répondre à lui seul.
+
+![De l’origine d’un produit à sa valeur](figures/lecture-du-sujet.svg)
 
 Il fallait accorder à Dagognet ce qu'il a de solide : une dévotion à l'originel travaille bien notre rapport à la nature, et elle est naïve, puisqu'elle prend pour donné ce qui est déjà cultivé, fauché, sélectionné, et qu'elle prête à la nature une bienveillance que la vallée de Haushofer et la mer de Verne démentent. Mais on ne caractérise pas un rapport par son illusion. Notre rapport premier à la nature est opératoire : il connaît en analysant, il transforme en travaillant, et cette transformation, phénomène vital selon Canguilhem, n'est pas une infraction contre la vie. L'opposition de l'incréé et des « combinaisons humaines » ne résiste donc pas ; seulement, en la retournant au lieu de la quitter, Dagognet laisse son injonction finale sans mesure. Cette mesure, la normativité vitale la fournit : ce qui importe n'est pas l'origine de ce que nous faisons, mais les normes de vie que nous instituons et la marge que nous laissons aux vivants, nous compris. **La religiosité naïve ne caractérise pas le rapport de l'homme à la nature : elle en est le symptôme, la forme confuse d'une exigence de valeur privée de critère.** Reste à savoir si cette mesure peut se déduire d'un savoir. La narratrice du *Mur invisible*, qui continue d'écrire et de soigner ses bêtes après le meurtre, suggère qu'elle s'apprend plutôt dans la charge que l'on accepte d'un autre vivant.
 

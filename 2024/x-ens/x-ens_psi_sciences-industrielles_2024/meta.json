@@ -1,0 +1,73 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2024,
+    "code_sujet": "XSR",
+    "date": "2024-04-16"
+  },
+  "questions": 58,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "figures": [
+    {
+      "fichier": "figures/q06-plateau-en-charge.svg",
+      "question": "Q6",
+      "legende": "Bilan du pot et du plateau à l’arrêt. La distance d est mesurée à partir du support."
+    },
+    {
+      "fichier": "figures/q10-graphe-de-serrage.svg",
+      "question": "Q10",
+      "legende": "Graphe du modèle arrêté avec pot en adhérence. Les deux pas sont opposés."
+    },
+    {
+      "fichier": "figures/q12-liaison-des-arbres.svg",
+      "question": "Q12",
+      "legende": "Transmission du couple entre les arbres et rôle de guidage du roulement."
+    },
+    {
+      "fichier": "figures/q16-contact-roue-vis.svg",
+      "question": "Q16",
+      "legende": "Décomposition de l’action sur la roue pour les deux sens de transfert. Le segment de frottement est porté par le filet."
+    },
+    {
+      "fichier": "figures/q21-blocs-verrouillage.svg",
+      "question": "Q21",
+      "legende": "DR2 à DR4. Retour de la force contre-électromotrice et déplacements de sens contraires."
+    },
+    {
+      "fichier": "figures/q31-ajustement-bruite.svg",
+      "question": "Q31",
+      "legende": "Exemple construit avec sept mesures bruitées. L’interpolant oscille et son extrapolation est sensible aux mesures."
+    },
+    {
+      "fichier": "figures/q35-surface-libre.svg",
+      "question": "Q35",
+      "legende": "Surface à 100 tr/min et plan de même volume pour le calcul d’inertie approché."
+    },
+    {
+      "fichier": "figures/q38-balourd.svg",
+      "question": "Q38",
+      "legende": "Efforts sur le pot excentré. La réaction verticale du support équilibre le poids."
+    }
+  ],
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Sciences_Industrielles_XSR.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_ecrit_SII.pdf",
+    "document_reponse": "https://sti.eduscol.education.fr/sites/eduscol.education.fr.sti/files/concours-examens/17171/17171-document-reponse-x-ens-psi-2024-sii.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction intégrale des 58 solutions des deux éditions et de huit figures à partir du livret de 24 pages XSR, des quatre documents-réponses et du rapport du jury. Décomposition des liaisons, contrôle de la fermeture et des efforts de roulement, stabilité, calcul des efforts tangentiels, bilans d’énergie et validation de la régression."
+    }
+  ]
+}

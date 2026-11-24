@@ -10,7 +10,8 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/24_mp_sujet_mathd.pdf",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/24_mp_rap_emathd.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/24_mp_rap_emathd.pdf",
+    "sha256_sujet": "1d07359673c398fabe4a6dcb6bb266a3565e9bcfa67b4047bf1dfd10b896ea56"
   },
   "date_revision": "2026-11-24",
   "figures": [
@@ -93,7 +94,20 @@
       "modifications": null,
       "perimetre": "Contrôle des 45 solutions sur le sujet et le rapport de la session. Vérification de la congruence des sommes de puissances, du sens des implications sur les pôles, de la divisibilité et du domaine entier des indices de propagation.",
       "famille_modele": "GPT-6",
-      "fournisseur": "codex"
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "revision",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des 45 réponses et indications des sept parties contre le sujet et le rapport. Explicitation des opérations sur les séries formelles en 11 et 19, contrôle local du sens de l’implication sur les pôles complexes en 27, vérification de la propagation des coefficients nuls et des bornes arithmétiques des fonctions E. Relecture des sept figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
     }
   ]
 }

@@ -2,6 +2,14 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction initiale** · claude-opus-5-5 · configuration complémentaire non renseignée
+
+**Relecture antérieure** · configuration non renseignée
+
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve FP4 (mutualisée avec e3a-Polytech), 4 heures, sans document ni machine. Texte : Kathleen Raine, *Le monde vivant de l'imagination* (trad. C. Garnier-Tardieu et M. Duclos, Éditions du Rocher, 1998, p. 86-90). Thème de l'année : l'expérience de la nature. Œuvres au programme : Jules Verne, *Vingt mille lieues sous les mers* ; Georges Canguilhem, *La Connaissance de la vie* ; Marlen Haushofer, *Le Mur invisible*. Barème : résumé 1/3 (20 points), dissertation 2/3 (40 points).
 
 ## Résumé de texte (20 points)
@@ -39,6 +47,8 @@ Loin de livrer la réalité, la perception immédiate est d'abord le règne de l
 Ce que la réaction spontanée prend pour le réel, seul un savoir patient peut le rectifier. Canguilhem le montre dans « La monstruosité et le monstrueux » : comme le « monstre » de 1866, le monstre biologique suscite d'emblée une réaction totale, faite de fascination et d'effroi, parce qu'il semble contredire l'ordre même de la vie. Cette réaction est une évaluation spontanée du vivant par le vivant ; elle n'est pas une connaissance. C'est le travail de la tératologie, avec les Geoffroy Saint-Hilaire, que de soustraire la monstruosité au monstrueux en montrant qu'elle relève des mêmes lois du développement que la forme normale. Le savoir acquis, ici, ne recouvre pas le réel : il le dégage de l'imaginaire qui l'enveloppait. De même, le chapitre « L'expérimentation en biologie animale » établit qu'on ne connaît le vivant qu'au prix d'un détour, isoler, provoquer, faire varier, détour d'autant plus délicat que l'organisme est un individu et que l'intervention le modifie, mais dont aucune contemplation ne dispense.
 
 Habiter la nature, enfin, ne relève pas d'un don mais d'un apprentissage, et *Le Mur invisible* ne raconte rien d'autre. La narratrice ne survit pas parce qu'elle reconnaît la nature, mais parce qu'elle apprend, lentement et maladroitement, à planter des pommes de terre et des haricots, à faucher et rentrer le foin, à traire et soigner la vache Bella, à chasser pour nourrir le chien et se nourrir elle-même, à prévoir les réserves de l'hiver. Chaque erreur se paie en fatigue, en récoltes compromises, en bêtes perdues. La montagne n'est pas pour elle un livre ouvert, mais un milieu opaque dont il faut patiemment déchiffrer les saisons, les orages, les dangers. Rien d'inné ne la sauve : c'est une compétence construite, jour après jour, qui lui permet d'habiter ce qu'elle se contentait autrefois de traverser. Le roman répond ainsi à Raine par sa forme même : la réalité de la nature s'y livre dans la durée, saison après saison, et non dans l'instant d'une révélation.
+
+Quand Aronnax croit reconnaître un grand animal marin dans ce qu’il observe au large, le geste a d’abord la forme même de la reconnaissance. Pourtant, ce qu’il traite comme un corps vivant est une construction métallique. Le contact avec la coque oblige à modifier jusqu’à la catégorie d’être dont on cherchait à connaître l’espèce. L’expérience première a donc bien mis l’observateur en rapport avec quelque chose de réel ; elle ne rendait pas, par sa seule intensité, cet objet entièrement intelligible.
 
 La formule de Raine semble donc démentie : loin d'être un écran, le savoir acquis est souvent la condition pour voir ce qui est. Faut-il pour autant renvoyer l'intuition à l'illusion ?
 
