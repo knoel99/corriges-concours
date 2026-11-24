@@ -1,6 +1,12 @@
-# X-ENS MP — Informatique A 2024 · Corrigé brut
+# X-ENS MP-MPI — Informatique A 2024 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Sol · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · modèle non renseigné · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
 ## Partie I — Préliminaires
 
@@ -312,3 +318,9 @@ let find_avec_faces interieur_au_dessus slabs p =
 ```
 
 En effet, l’intervalle entre les arêtes trouvées appartient à la face qui borde l’arête inférieure par le dessus. S’il manque une arête, l’intervalle est non borné verticalement, donc extérieur à tout polygone. La dichotomie puis la descente dans l’AVL prennent chacune $O(\log(N+1))$. Une consultation d’étiquette en temps constant, ou même en $O(\log(N+1))$, conserve cette borne.
+
+Dans le polygone de la figure, la droite $x=3$ rencontre successivement les arêtes aux ordonnées $0,1,4,5$. Le point $B=(3,2{,}5)$ est entre deux arêtes et pourtant extérieur. Les points $A=(3,0{,}5)$ et $C=(3,4{,}5)$ appartiennent aux deux bras. Les sommets s’obtiennent en appliquant le cisaillement $(x,y)\mapsto(x+y/16,y)$ au contour $(0,0),(6,0),(6,1),(1,1),(1,4),(6,4),(6,5),(0,5)$, ce qui respecte l’hypothèse des abscisses distinctes.
+
+![Tranche verticale d’un polygone concave. Les trois points testent deux intervalles intérieurs et un extérieur.](figures/q22-face-concave.svg)
+
+Pour construire la table de Q22, orienter chaque contour simple dans le sens trigonométrique. Son intérieur reste à gauche de son parcours. Lorsqu’une arête est parcourue vers la droite, sa face du dessus appartient au polygone. Lorsqu’elle est parcourue vers la gauche, c’est celle du dessous. Une arête partagée conserve les deux incidences. Comme chaque segment du sujet va d’une abscisse à une autre, cette règle traite tous ses segments. La canonisation géométrique et le tri de Q20 permettent de rattacher l’étiquette au segment en $O(N\log N)$ avant les recherches.
