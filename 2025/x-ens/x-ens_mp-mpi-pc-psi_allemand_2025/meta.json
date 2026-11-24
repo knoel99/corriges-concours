@@ -1,0 +1,47 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_allemand_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2025
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Allemand%20sujet.pdf",
+    "sujet_sha256": "bf3fa130f7e774ede6674c59d44d46add603495b86b159fb34f683dae15b306c",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/2025_psi_ep5_allemand_14022025_nb.pdf",
+    "sujet_psi_sha256": "2e4e537779c78313f003835908fbd855743e886c05297623b8bf5df3770dace5",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%2C%20MPI%2C%20PC%20et%20PSI_allemand%20OK.pdf",
+    "rapport_sha256": "e74aafb5d9aa90f7dbe1d8baf9feec88dcd4b91dc7f3cc24694491e1cc21812a",
+    "rapport_psi": "https://www.ens.psl.eu/sites/default/files/2025_psi_rapport_allemand_ecrit.pdf",
+    "rapport_psi_sha256": "af06a3be4eb9f677f294d213fd0d3691d90dd967162bc25847234d1ee8a8d8fa"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "À quelle question les chiffres répondent-ils ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les deux fascicules officiels concordants et le rapport du jury. Synthèse des documents 1 à 4 (620 mots hors titre) et réaction personnelle au document 5 (524 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

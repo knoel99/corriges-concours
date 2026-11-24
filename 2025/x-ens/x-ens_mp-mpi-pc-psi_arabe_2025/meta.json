@@ -1,0 +1,47 @@
+{
+  "slug": "x-ens_mp-mpi-pc-psi_arabe_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-MPI-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2025
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Arabe%20sujet.pdf",
+    "sujet_sha256": "4e40fe3220d6a305e18f81439e3a916123fe540584a95b856ccfe8a5e5351917",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/2025_psi_ep5_arabe_14022025_nb.pdf",
+    "sujet_psi_sha256": "667046cc21144f8513b01095ed92dc54d90c52f509f7eaa846db8587f007ee06",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Ecrits_MP%2C%20MPI%2C%20PC%20et%20PSI_arabe%20OK.pdf",
+    "rapport_sha256": "b0477ca98df4a29bdf138213abb14225883aecbf02c8839668baaba950e14e58",
+    "rapport_psi": "https://www.ens.psl.eu/sites/default/files/2025_psi_rapport_arabe_ecrit.pdf",
+    "rapport_psi_sha256": "7c5b59f71eb4519e9d832b48e5cc3b6bba7ab4cd99b58701a788099c09e61b73"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "A",
+      "legende": "De la reconnaissance à l’accès effectif"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les deux fascicules officiels concordants et le rapport du jury. Synthèse des documents 1 à 4 (613 mots hors titre) et réaction personnelle au document 5 (521 mots), avec guidage et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}
