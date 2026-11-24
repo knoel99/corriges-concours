@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 3 heures, calculatrice interdite, trois parties indépendantes. Notations : $\vec u\wedge\vec v$ désigne le produit vectoriel, et les angles sont orientés par l'axe indiqué.
 
 ## Partie I — Modélisation et stabilisation d'un flotteur
@@ -67,7 +69,7 @@ $$\boxed{\forall\theta\in\mathbb{R},\qquad \lim_{N\to+\infty}S_N(\theta)=R_e(\th
 
 $$\Phi=\begin{pmatrix}1&\cos\theta_1&\cdots&\cos((N-1)\theta_1)\\ \vdots&\vdots&&\vdots\\ 1&\cos\theta_m&\cdots&\cos((N-1)\theta_m)\end{pmatrix}\in\mathcal M_{m,N}(\mathbb{R}).$$
 
-On note $r=(r_1,\dots,r_m)^\top$ le vecteur des rayons mesurés. Le système $\Phi c=r$ est surdéterminé ($m\gg N$) et bruité : il n'a pas de solution exacte. On cherche donc $c$ qui minimise l'écart quadratique
+On note $r=(r_1,\dots,r_m)^\top$ le vecteur des rayons mesurés. Le système $\Phi c=r$ est surdéterminé ($m\gg N$) et bruité : il n’a donc en général aucune solution exacte. On cherche donc $c$ qui minimise l'écart quadratique
 
 $$J(c)=\sum_{i=1}^m\big(R_e(\theta_i)-r_i\big)^2 .$$
 
@@ -86,11 +88,13 @@ def identifier_profil(theta, r, N):
     """Coefficients a_0..a_{N-1} de R_e(t) = a_0 + sum a_k cos(k t), au sens des moindres carrés."""
     theta = np.asarray(theta, dtype=float)
     Phi = np.column_stack([np.cos(k * theta) for k in range(N)])
-    c, *_ = np.linalg.lstsq(Phi, np.asarray(r, dtype=float), rcond=None)
+    c, _, rang, _ = np.linalg.lstsq(Phi, np.asarray(r, dtype=float), rcond=None)
+    if rang < N:
+        raise ValueError("Les angles mesurés ne permettent pas d’identifier tous les coefficients.")
     return c
 ```
 
-Sur 200 points tirés au hasard autour du profil de l'énoncé (bruit d'écart-type $0{,}05$ mm), ce code retrouve les cinq coefficients de l'énoncé (de $54{,}42$ à $-1{,}47$) à $10^{-2}$ près.
+Prenons 200 angles $\theta_i=2\pi i/200$, pour $0\leq i<200$, et ajoutons $0{,}05\cos(5\theta_i)$ mm au rayon donné dans l’énoncé. Cette perturbation est orthogonale aux cinq colonnes du modèle discret. L’ajustement retrouve donc $(54{,}42,-1{,}56,-1{,}71,2{,}91,-1{,}47)$ à l’arrondi numérique près. À l’inverse, si tous les angles sont nuls, toutes les colonnes sont identiques. Les mesures déterminent seulement la somme des coefficients.
 
 Si les $\theta_i$ sont régulièrement répartis sur une période et si $N-1<m/2$, les colonnes de $\Phi$ sont orthogonales. La solution se réduit alors aux sommes discrètes
 
@@ -264,6 +268,8 @@ La boucle interne, réduite par la formule de Black, donne
 
 $$\frac{\Theta}{U}=\frac{MG_m}{1+MG_mH}.$$
 
+Pour l’étude des erreurs permanentes, on suppose la boucle fermée asymptotiquement stable.
+
 On multiplie par $C(p)$ et par $K_{\text{capt}}$ :
 
 $$\boxed{\mathrm{FTBO}(p)=\frac{K_{\text{capt}}\,K_t\,C_s\,p\;C(p)}{C_sp\,(R+Lp)(C_fp^2+K_x)+K_eK_t\big[(C_f+C_s)p^2+K_x\big]}}$$
@@ -280,7 +286,7 @@ $$\frac{\Theta}{C_r}=\frac{-C_sp\,(R+Lp)}{C_sp(R+Lp)(C_fp^2+K_x)+K_eK_t[(C_f+C_s
 
 Pour $C_r=c_0/p$, le théorème de la valeur finale donne $\theta(\infty)=0$ dès la classe 0, grâce au facteur $p$ du numérateur. Cette exigence est donc moins forte que celle sur la consigne.
 
-**Classe minimale du correcteur : 2.** Un double intégrateur seul déphase de $-180^\circ$ et ne laisse aucune marge de phase. On propose donc
+**Classe minimale du correcteur : 2.** La marge de phase dépend de toute la boucle ouverte. Les deux intégrateurs introduisent un déphasage de $-180^\circ$ dans le correcteur. Pour disposer de deux zéros réglables, on propose
 
 $$\boxed{C(p)=\frac{K\,(1+T_1p)(1+T_2p)}{p^2},\qquad K,T_1,T_2>0}$$
 
@@ -549,19 +555,7 @@ $$m\big(\ddot\lambda\sin\theta-\ell\dot\theta^2\big)=mg\cos\theta-T .$$
 
 $$T=m\big(g\cos\theta+\ell\dot\theta^2-\ddot\lambda\sin\theta\big).$$
 
-Pour exprimer $T$ avec $m,g,\ell,\theta,\ddot\lambda$ seulement, il faut éliminer $\dot\theta$ grâce à une intégrale première de (4). On multiplie (4) par $\dot\theta$ et on intègre. Si $\ddot\lambda=\gamma$ est constant, cela donne
-
-$$\frac12\dot\theta^2+\frac\gamma\ell\sin\theta-\frac g\ell\cos\theta=\text{cste}.$$
-
-Pour un départ au repos en $\theta=0$, on obtient
-
-$$\ell\dot\theta^2=2g(\cos\theta-1)-2\gamma\sin\theta .$$
-
-$$\boxed{T=m\big[g\,(3\cos\theta-2)-3\,\ddot\lambda\sin\theta\big]}$$
-
-Cette expression suppose $\ddot\lambda$ constant et un départ au repos en $\theta=0$.
-
-Pour un $\lambda(t)$ quelconque, $\dot\theta$ s'obtient en résolvant (4), numériquement si nécessaire. Si le mouvement est lent ($\ell\dot\theta^2\ll g$), on a simplement $T\simeq m(g\cos\theta-\ddot\lambda\sin\theta)$.
+La vitesse angulaire instantanée intervient dans la tension. Par exemple, à $\theta=0$ et pour un support immobile, deux passages à la verticale avec les vitesses $0$ et $v\ne0$ donnent respectivement $mg$ et $mg+m\ell v^2$. Les valeurs de $m,g,\ell,\theta,\ddot\lambda$ sont identiques dans ces deux situations. Pour une trajectoire donnée, on obtient $\dot\theta$ en résolvant (4) avec la loi de mouvement du support et les conditions initiales.
 
 **Q37.** On dérive deux fois $\lambda(t)=X\sin(\Omega t)$ :
 

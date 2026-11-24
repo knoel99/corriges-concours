@@ -87,6 +87,28 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des 52 réponses, des deux éditions et des six figures au sujet et au rapport du jury. Vérification de l’identifiabilité du profil, de la boucle de roulis et de sa marge, de la tension du pendule, des rotations et des trois régimes de stabilité du système lent.",
+      "agent": "astra_info_si",
+      "fournisseur": "codex"
     }
-  ]
+  ],
+  "revision": {
+    "modele": "GPT-6.2 Astra (effort Ultra)",
+    "date": "2026-11-24",
+    "verification": "Confrontation des 52 réponses, des deux éditions et des six figures au sujet et au rapport du jury. Vérification de l’identifiabilité du profil, de la boucle de roulis et de sa marge, de la tension du pendule, des rotations et des trois régimes de stabilité du système lent."
+  },
+  "date_revision": "2026-11-24",
+  "sources": {
+    "sujet": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/2026_TSI3MO.pdf",
+    "rapport": "https://www.concours-commun-inp.fr/_resource/annales%20%C3%A9crits/2026/TSI/Rapport%20Epreuves%20%C3%A9crites%20TSI%202026%20-%20Mod%C3%A9lisation%20VF.pdf"
+  }
 }
