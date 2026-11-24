@@ -1,0 +1,41 @@
+{
+  "slug": "x_fui-ff-1_mathematiques_2024",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 1",
+    "matiere": "Mathématiques",
+    "annee": 2024
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20DE%20MATHEMATIQUES.pdf",
+    "sha256_sujet": "f42f3b381bf44f18ea47cf98190c1820c14936b9bcdc15173f393c64e2b53515",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q12-phases.svg",
+      "question": "12",
+      "legende": "Le premier sinus vaut toujours un. Les points donnent les phases du second sinus modulo un tour. La densité des phases permet de s’approcher de la ligne pointillée aussi près que souhaité."
+    },
+    {
+      "fichier": "figures/q22-reponse.svg",
+      "question": "22",
+      "legende": "Avec δ = 1,2, chaque fréquence du forçage donne une oscillation atténuée et déphasée. Les deux fréquences restent présentes dans la solution bornée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 27 réponses et de leurs indications sur le fascicule officiel FUI-FF automne. Démonstration élémentaire de densité des phases, précision de l’intégrabilité locale manquante en 17, preuve du transfert de presque-périodicité et deux figures. Aucun rapport individuel dans le registre de la banque.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
