@@ -1,0 +1,41 @@
+{
+  "slug": "bce_ecg_chinois-lvb-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Chinois LVB (ELVi)",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=2",
+    "sujet_sha256": "29a08b157bd5022c73a429363d249d2ec90840123c908135e667cd27cf018c98"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dossier.svg",
+      "question": "Dossier",
+      "legende": "Qui accompagne qui ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Résumé comparatif en chinois des deux services de compagnie, essai personnel en chinois, thème complet de l’extrait de 20 Minutes, illustration des deux niveaux d’analyse et décompte en caractères."
+    }
+  ]
+}
