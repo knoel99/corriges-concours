@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2017
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/2017_2CC_sujet_Math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_2CC_rap_emath.pdf",
+    "sha256_sujet": "ba7ab7b978295417946bfb12f9b8553fdcdbe08d9ddbf16b6694a7ff2c4c66cb"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cadre-quatre-paves.svg",
+      "question": "2.1",
+      "legende": "Deux bandes horizontales et deux bandes latérales pavent le cadre. Deux des quatre points marqués ne peuvent appartenir au même pavé de ce cadre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et contrôle des 22 items des deux problèmes sur les quatre pages du sujet et consultation du rapport de Denis Serre. Dessin obligatoire du cadre, récurrence par découpage et contre-exemple vérifié à la quarrabilité générale de II.8.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
