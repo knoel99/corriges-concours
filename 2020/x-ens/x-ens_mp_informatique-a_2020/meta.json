@@ -1,0 +1,47 @@
+{
+  "slug": "x-ens_mp_informatique-a_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2020,
+    "duree_heures": 4
+  },
+  "questions": 20,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20SUJET%20ECRIT%20INFORMATIQUE%20A%20%28XULCR%29_0.pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20MP%20RAPPORT%20ECRIT%20INFORMATIQUE%20A%20%28XULCR%29.pdf",
+    "sujet_sha256": "64434a206004b91e984ed414dda216be20a76094a2f7aa2e7fc5da9f7f0d64ca"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q12-frontiere-eller.svg",
+      "question": "Q12",
+      "legende": "Exemple de coupe avant la dernière ligne. Toute composante du préfixe supérieur possède une descente dans l’arbre cible. En bas, ajouter 9–10 et 10–11 avant de considérer 8–9 conserve cet arbre."
+    },
+    {
+      "fichier": "figures/q17-cycle-cinq.svg",
+      "question": "Q17",
+      "legende": "Sans monstre, la branche verte peut être intégralement explorée avant le sommet 1. Le chemin supérieur de deux arêtes aurait pourtant suffi."
+    },
+    {
+      "fichier": "figures/q18-chemin-optimal.svg",
+      "question": "Q18",
+      "legende": "Les cases teintées portent un monstre. Le chemin vert atteint 11 en cinq arêtes en passant seulement par le monstre en 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 20 questions sur les arbres couvrants, les files circulaires et les plus courts chemins lexicographiques. Lecture du fac-similé et du rapport du jury, reproduction indépendante de la trace demandée sur les 16 sommets, trois schémas et tests des programmes OCaml et des critères de correction sur des petits graphes exhaustifs."
+    }
+  ]
+}
