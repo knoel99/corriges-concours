@@ -586,7 +586,11 @@
 | 2024 | ENS Rennes | D-E | Droit civil | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Droit civil | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit civil | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-civil_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Droit commercial | [md](2024/ens-rennes/ens-rennes_d-e_droit-commercial_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-commercial_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Droit commercial | [md](2025/ens-rennes/ens-rennes_d-e_droit-commercial_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-commercial_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit commercial | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-commercial_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Droit public | [md](2024/ens-rennes/ens-rennes_d-e_droit-public_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-public_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Droit public | [md](2025/ens-rennes/ens-rennes_d-e_droit-public_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-public_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit public | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-public_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Économie (oral) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_economie-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
@@ -736,6 +740,10 @@
 | 2024 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_allemand_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_allemand_2024/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_arabe_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_arabe_2024/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2024/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2023 | X-ENS | MP-PC-PSI | Informatique B | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/brut.md) | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/guide.md) |
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
@@ -765,9 +773,8 @@
 | 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
-| 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
-| 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
-| 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Anglais | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_anglais_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_anglais_2023/guide.md) |
+| 2023 | X-ENS | MP-MPI-PC-PSI | Français | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_francais_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_francais_2023/guide.md) |
 | 2023 | X-ENS | PC | Chimie A | [md](2023/x-ens/x-ens_pc_chimie-a_2023/brut.md) | [md](2023/x-ens/x-ens_pc_chimie-a_2023/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Anglais | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_anglais_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_anglais_2024/guide.md) |
 | 2024 | X-ENS | MP-MPI-PC-PSI | Français | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_francais_2024/brut.md) | [md](2024/x-ens/x-ens_mp-mpi-pc-psi_francais_2024/guide.md) |
