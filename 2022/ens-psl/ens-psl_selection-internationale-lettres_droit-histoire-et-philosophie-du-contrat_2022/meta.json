@@ -1,0 +1,79 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_droit-histoire-et-philosophie-du-contrat_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Droit — histoire et philosophie du contrat",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Droit — histoire et philosophie du contrat",
+  "gabarit": "dissertation",
+  "questions": 4,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/droit-ecrit.pdf",
+    "sujet_sha256": "c79219670fc2899c4eddb05839577fdd2cf2924cae5448c99321a9f209214bc6",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport-droit-sil2022.pdf",
+    "rapport_sha256": "ec8e74a595755bcb8cc36a10e1a525ea06b778ca99626ea83437a413d75ee10c",
+    "references": [
+      "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2022-06-01",
+      "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000032004939",
+      "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:31993L0013",
+      "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32011L0083"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/garanties-du-consentement.svg",
+      "question": "Explication",
+      "legende": "À quel moment le droit intervient-il ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire librement publié et identification de la portée de la feuille en 2022."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet individuel ou préparé, avec son schéma et ses références : Droit — histoire et philosophie du contrat."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de la modalité sur la feuille officielle, de la portée du rapport et des raisonnements et exemples des deux éditions."
+    }
+  ]
+}
