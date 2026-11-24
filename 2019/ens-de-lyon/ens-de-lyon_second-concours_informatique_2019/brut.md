@@ -154,7 +154,7 @@ def mti_blocs(tab, b, minima, i, j):
 
 On peut aussi prétraiter **tous les intervalles du tableau des $K$ minima de blocs** par Q7. Une requête couvrant plusieurs blocs devient alors constante. Le triplet moyen est $\langle O(m+K^2),O(m+K^2),O(1+m/K^2)\rangle$. Pour $K\asymp\sqrt m$, on obtient une préparation et un espace linéaires et un temps **moyen** constant. Une requête intérieure à un bloc peut encore coûter $\Theta(\sqrt m)$ dans le pire cas.
 
-![Sur l’intervalle [2,9], deux lectures aux frontières encadrent un bloc complet. Les minima donnent des indices absolus du tableau.](figures/q09-blocs.svg)
+![Sur les indices de 2 à 9, deux lectures aux frontières encadrent un bloc complet. Les minima donnent des indices absolus du tableau.](figures/q09-blocs.svg)
 
 ### Question 10 · Table des longueurs puissances de deux
 
