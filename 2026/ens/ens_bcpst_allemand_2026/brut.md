@@ -4,15 +4,19 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Fast Fashion**
 
 ## I · Synthèse des trois documents
 
 Vor einem Berliner Modepublikum bekommt ein ausrangiertes Kleidungsstück eine andere Bedeutung als in einer europäischen Sammelstelle. Greenpeace ließ in Ghana eingesammelte Textilien nach Europa zurückbringen. So machte die Organisation sichtbar, dass eine Spende das Abfallproblem verlagern kann, wenn die Ware am Zielort nicht mehr tragbar ist. Die Aktion fordert vor allem diejenigen zum Umdenken auf, die von ständig wechselnden Kollektionen profitieren (doc. 1).
 
-Die Verbraucher verfügen bereits über mehrere Wege, Kleidung weiterzugeben. In der Umfrage nennen insgesamt 77 Prozent der Befragten das Spenden oder Verschenken. Bei den über Sechzigjährigen sind es 87 Prozent. Unter den jüngsten Befragten spielt dagegen der Verkauf im Internet eine größere Rolle als unter den ältesten. Die Zahlen geben Auskunft über angegebene Praktiken. Ob ein gespendetes Hemd tatsächlich wieder getragen wird, lässt sich daraus nicht ablesen (doc. 3). Gerade hier berühren sich die Umfrage und der Protest in Berlin.
+Die Verbraucher verfügen bereits über mehrere Wege, Kleidung weiterzugeben. In der Umfrage nennen insgesamt 77 Prozent der Befragten das Spenden oder Verschenken. Bei den über Sechzigjährigen sind es 87 Prozent. 34 Prozent der 18- bis 29-Jährigen verkaufen Kleidung online, gegenüber zehn Prozent der über Sechzigjährigen. Die Zahlen geben Auskunft über angegebene Praktiken. Ob ein gespendetes Hemd tatsächlich wieder getragen wird, lässt sich daraus nicht ablesen (doc. 3). Gerade hier berühren sich die Umfrage und der Protest in Berlin.
 
-Für tragbare und beschädigte Textilien sind unterschiedliche Lösungen nötig. Die getrennte Sammlung soll eine sachgerechte Sortierung erleichtern. Eine Beteiligung der Hersteller an den Kosten der Sammlung, Sortierung und Verwertung verknüpft die Entscheidung über ein Produkt mit seinen späteren Folgen. Anforderungen an Haltbarkeit und Reparierbarkeit setzen noch früher an, nämlich beim Entwurf der Kleidung (doc. 2). Sie könnten dazu beitragen, dass ein Weiterverkauf oder eine Spende tatsächlich eine zweite Nutzung ermöglicht. Entscheidend ist somit das Zusammenspiel: Wer weniger, aber länger tragbare Kleidung anbietet, wer sie pflegt und wer aussortierte Stücke nach ihrer Qualität trennt, beeinflusst jeweils eine andere Etappe desselben Weges.
+Für tragbare und beschädigte Textilien sind unterschiedliche Lösungen nötig. Seit Januar 2025 müssen die Mitgliedstaaten Alttextilien getrennt sammeln. Nach den im September 2025 beschlossenen Regeln sollen die Hersteller die Kosten für Sammlung, Sortierung und Recycling tragen. Das gilt auch für online verkaufte Ware. Anforderungen an Haltbarkeit und Reparierbarkeit setzen noch früher an, nämlich beim Entwurf der Kleidung (doc. 2). Sie könnten dazu beitragen, dass ein Weiterverkauf oder eine Spende tatsächlich eine zweite Nutzung ermöglicht. Wer weniger und haltbarere Stücke anbietet, wer sie pflegt und wer sie nach ihrer Qualität sortiert, beeinflusst jeweils eine andere Etappe desselben Weges.
+
+![Drei Eingriffe setzen an verschiedenen Stellen im Lebenslauf eines Kleidungsstücks an.](figures/wege-der-kleidung.svg)
 
 ## II · Expression personnelle
 

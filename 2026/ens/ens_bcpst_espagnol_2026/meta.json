@@ -36,6 +36,12 @@
       "effort": null,
       "service_tier": null,
       "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -48,6 +54,16 @@
       "modifications": true,
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux versions aux pages imprimées 9–12. Acteurs et dates de la demande de prolongation, position des associations sur le stockage, lecture de la vignette, vérification de l’essai et des limites de la version.",
       "fournisseur": "codex"
     }
   ]
