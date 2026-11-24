@@ -49,10 +49,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -76,6 +75,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante des six documents du livret, du rapport, du statut de la narratrice de Scego et des deux voix de la vignette d’Altan.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des six pièces, du rapport et des deux commentaires. Distinction entre les citations de Caproni et la glose de Di Gesù, interprétation des deux emplois de « aspetta » et référence exacte à Croce chez Mattarella.",
       "fournisseur": "codex"
     }
   ]

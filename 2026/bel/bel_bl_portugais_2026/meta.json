@@ -48,10 +48,9 @@
     },
     "revision": {
       "provider": "codex",
-      "model": null,
-      "effort": null,
-      "service_tier": null,
-      "famille_modele": "GPT-6"
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
     }
   },
   "contributions": [
@@ -75,6 +74,16 @@
       "modifications": null,
       "perimetre": "Contre-lecture indépendante des six pièces dans le livret. Vérification du statut de Job, de la perspective du correspondant à Washington et des bases distinctes des 82 % et 54 % en 2021.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture des six documents et des deux commentaires. Correction de l’attribution et de la portée des inventaires du XVIIe siècle, datation de l’usage de la couleur dans le témoignage de presse, attribution des statistiques au Reuters Institute.",
       "fournisseur": "codex"
     }
   ]
