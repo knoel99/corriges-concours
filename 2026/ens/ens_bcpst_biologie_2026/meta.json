@@ -41,7 +41,7 @@
     {
       "fichier": "figures/tension-et-actine.svg",
       "question": "C6",
-      "legende": "Ordres de grandeur des moyennes lues sur la figure 6C. La comparaison porte sur l’effet du même stimulus avec et sans inhibition de la polymérisation de l’actine."
+      "legende": "Signal moyen de tension membranaire dans les cellules témoins du panneau 6C. Les hauteurs des trois barres sont des lectures approximatives en unités arbitraires."
     },
     {
       "fichier": "figures/permeabilite-au-dextran.svg",
@@ -52,11 +52,18 @@
       "fichier": "figures/extravasation.svg",
       "question": "C8",
       "legende": "Du contact leucocytaire à la transmigration. L’augmentation de tension, le signal calcique et la phosphorylation sont mesurés dans des expériences distinctes."
+    },
+    {
+      "fichier": "figures/transport-epithelial.svg",
+      "question": "A",
+      "legende": "Deux flux à travers un épithélium intestinal polarisé. Le gradient de sodium alimente le cotransport du glucose du côté luminal. La pompe consomme de l’ATP du côté interstitiel."
     }
   ],
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/261237_bcpst_biologie_2026_compresse.pdf",
-    "index_banque": "https://banques-ecoles.fr/cms/filiere-bcpst/les-annales-et-rapports-des-jurys/"
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-bcpst/les-annales-et-rapports-des-jurys/",
+    "sujet_sha256": "368efbe5479090293f85375aa440af991e74675a6b5dc39f276bf008d6673fbc",
+    "index_ens": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst"
   },
   "date_revision": "2026-11-24",
   "provenance": {
@@ -79,6 +86,47 @@
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "astra_physiologie_chimie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur les données et les figures du sujet officiel de biologie : composition sur les épithéliums, analyses B1–B11 et C1–C8. Les parties C6b et C7b relatives au traitement par mycotoxine sont exclues. Les index ENS et Banque BCPST consultés le 24 novembre 2026 ne relient aucun rapport écrit 2026 de biologie."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8"
+    ],
+    "questions_partiellement_traitees": [
+      "C6",
+      "C7"
+    ],
+    "questions_non_traitees": [],
+    "precision": "La synthèse A, les 11 questions de B et les questions C1 à C5 et C8 sont traitées intégralement. C6 et C7 couvrent les témoins et les comparaisons physiologiques indépendantes. Les comparaisons sous mycotoxine des sous-questions C6b et C7b sont hors périmètre."
+  }
 }
