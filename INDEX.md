@@ -218,6 +218,7 @@
 | 2022 | BEL | AL | Espagnol (thème Lyon) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_espagnol-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Italien (commentaire et traduction) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_italien-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Italien (thème Lyon) | [md](2022/bel/bel_al_italien-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_italien-theme-lyon_2022/guide.md) |
+| 2022 | BEL | AL | Japonais (commentaire et traduction) | [md](2022/bel/bel_al_japonais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_japonais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (commentaire et traduction) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_portugais-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Portugais (thème Lyon) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_portugais-theme-lyon_2022/guide.md) |
 | 2022 | BEL | BL | Mathématiques | [md](2022/bel/bel_bl_mathematiques_2022/brut.md) | [md](2022/bel/bel_bl_mathematiques_2022/guide.md) |
