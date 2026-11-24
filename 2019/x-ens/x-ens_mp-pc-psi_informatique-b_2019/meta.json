@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2019,
+    "duree_heures": 2
+  },
+  "questions": 19,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_InfoB.pdf",
+    "sujet_sha256": "05bdd37235a2c08d0c7346320c965be5240e35039013ccf95f1688b04f16a668",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_PC_rap_eInfoB.pdf",
+    "rapport_sha256": "664cf05c35520e54c727ac8acd4f3dca9115b619cdc1a19d627ecca170fcfb42"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q08-tours.svg",
+      "question": "Q8",
+      "legende": "Grilles après tassement. Les lettres en gras appartiennent à un alignement du tour courant. Deux tours rapportent quatre points chacun."
+    },
+    {
+      "fichier": "figures/q15-retour.svg",
+      "question": "Q15",
+      "legende": "Depuis la case inférieure gauche, le chemin vers la case supérieure gauche exige un retour horizontal. Le balayage du sujet ne réalise pas ce retour."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des dix-neuf questions à partir du sujet et du rapport de la banque. Reconstruction de la grille de Q8 et vérification du contre-exemple Q15. Contrôles Python par un oracle de triplets, de gravité et de régions, et exécution des quatre requêtes SQL sur des scores avec ex æquo. Deux figures originales."
+    }
+  ]
+}
