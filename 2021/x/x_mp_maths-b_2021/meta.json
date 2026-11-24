@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2021",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2021
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_MathB.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20MP%20RAPPORT%20ECRIT%20MATHEMATIQUES%20B%20%28X%29.pdf",
+    "sha256_sujet": "4cab2db1d1b6919fa40ea741885b3fdaa9b5bb0990b5f670a76f56dd884a8c00"
+  },
+  "figures": [
+    {
+      "fichier": "figures/secante-coefficients.svg",
+      "question": "19b",
+      "legende": "Les dérivées paires en zéro déterminent à la fois le polynôme de Taylor de la sécante et les valeurs de la série bêta aux entiers impairs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 39 réponses et des indications de chaque sous-question, vérifiées sur le sujet natif et les sept pages du rapport. Contre-exemple au minorant imprimé en 11b et rétablissement de la limite, preuve de l’intégrale bêta et traitement du coefficient conditionnellement sommable de la sécante.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
