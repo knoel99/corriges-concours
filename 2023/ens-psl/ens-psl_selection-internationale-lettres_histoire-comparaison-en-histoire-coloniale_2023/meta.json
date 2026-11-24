@@ -1,0 +1,63 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-comparaison-en-histoire-coloniale_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — comparaison en histoire coloniale",
+    "annee": 2023
+  },
+  "intitule": "Qu’est-ce qu’une approche comparative peut apporter à l’histoire coloniale ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-ecrit-sil2023.pdf",
+    "sujet_sha256": "35cbc7469230b824d3af92a3b5c2fa0ced9e5131594ff1d84b1d47b54dbbb78e",
+    "references": [
+      "https://mjp.univ-perp.fr/france/loi1946-940.htm",
+      "https://discovery.ucl.ac.uk/1543203/1/Britain-France-and-the-Decolonization-of-Africa.pdf",
+      "https://cdn.nationalarchives.gov.uk/documents/migratedarchives-2.guidance.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison-et-frontiere.svg",
+      "question": "Argumentation",
+      "legende": "Soumettre une comparaison coloniale à la critique"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traitement du deuxième sujet individuel, méthodes comparatives, travail, droits et mobilités en Afrique occidentale."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}
