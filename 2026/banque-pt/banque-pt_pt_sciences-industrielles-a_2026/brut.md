@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 5 h, calculatrice interdite. Support : exosquelette d'assistance du poignet.
 
 Notations de l'énoncé (annexe C) : $\alpha=(\vec x_0,\vec x_1)$ autour de $\vec z_0=\vec z_1$ (flexion-extension). L'angle $\beta=(\vec z_1,\vec z_2)=(\vec x_1,\vec x_2)$ est pris autour de $\vec y_1=\vec y_2$ (déviation radio-ulnaire).
@@ -327,17 +333,27 @@ $$\boxed{\beta_{n+1}=\beta_n-\frac{f(\beta_n)}{f'(\beta_n)}}$$
 
 ```python
 def newton(f, fp, beta_0, eps=10**-8):
+    from math import isfinite
+
+    if eps <= 0:
+        raise ValueError("La tolérance doit être positive.")
     beta = beta_0
-    n = 0
-    while abs(f(beta)) > eps and n < 100:   # garde-fou sur le nombre d'itérations
-        beta = beta - f(beta) / fp(beta)
-        n = n + 1
-    return beta
+    for n in range(101):
+        residu = f(beta)
+        if isfinite(residu) and abs(residu) <= eps:
+            return beta
+        if n == 100:
+            break
+        pente = fp(beta)
+        if pente == 0 or not isfinite(pente) or not isfinite(residu):
+            raise ValueError("Le pas de Newton est indéfini.")
+        beta -= residu / pente
+    raise ValueError("Aucune racine vérifiant la tolérance après 100 itérations.")
 ```
 
 Application avec les valeurs de l'énoncé ($R_v=30$ mm, $L_g=100$ mm, $L_b=193$ mm), en partant de $\beta_0=0{,}4$ rad.
 
-On obtient $\beta^\ast\approx0{,}445$ rad, soit $25{,}5^\circ$, et $\lambda_2\approx0{,}300$ m.
+On obtient $\beta^\ast\approx0{,}445$ rad, soit $25{,}5^\circ$, et $\lambda_2\approx0{,}300$ m. À ce point, $f'(\beta^\ast)=-\sqrt{8790^2+18400^2}<0$ en mm² par radian. Comme $2f$ est la dérivée de $\lambda_2^2$, cette racine correspond bien à un maximum local. Le code vérifie le résidu avant toute division, y compris si la valeur initiale est déjà une racine.
 
 ### Question 17
 
@@ -399,24 +415,30 @@ $$\boxed{F_{c0}\ \text{en m}^2\ (\mathrm{N\,Pa^{-1}}),\qquad K\ \text{en m}\ (\m
 
 ### Question 21
 
-Lignes 1 à 15 conservées telles que fournies ; complément :
+Le fichier de l’énoncé contient une mesure par ligne, avec la force en première colonne et la contraction en deuxième colonne. On corrige aussi la ligne 7 du cahier réponses pour superposer les deux courbes dans ce repère.
 
 ```python
-P_exp = 2 * 10**5                  # 2 bar = 2.10^5 Pa
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.loadtxt("donnees.txt", ndmin=2)
+force, contraction = data[:, 0], data[:, 1]
+Fc0, K = 1, 1     # valeurs arbitraires fournies dans le cahier réponses
+P_exp = 2e5       # 2 bar, en Pa
 
 def F_c(x, P):
-    """Force théorique linéarisée F = P.(Fc0 - K.x)"""
     return P * (Fc0 - K * x)
 
-x = np.linspace(min(data[0, :]), max(data[0, :]), 100)   # même plage que l'essai
-plt.plot(x, F_c(x, P_exp), label='Théorique')
-plt.xlabel('Contraction du muscle (m)')
-plt.ylabel('Force (N)')
+x = np.linspace(contraction.min(), contraction.max(), 100)
+plt.plot(contraction, force, label="Expérimentale")
+plt.plot(x, F_c(x, P_exp), label="Théorique")
+plt.xlabel("Contraction du muscle (m)")
+plt.ylabel("Force (N)")
+plt.legend()
+plt.show()
 ```
 
-suivi des lignes 30 et 31 (`plt.legend()`, `plt.show()`).
-
-Remarques. Le `plt.show()` de la ligne 12 affiche la courbe expérimentale seule ; pour superposer les deux courbes sur une même figure, il faut le supprimer. L'énoncé place la force en première colonne alors que le code fourni utilise `data[0, :]` comme contraction : on suit le code imposé.
+Avec les lignes `120 0.012`, `100 0.018` et `80 0.024`, les trois abscisses expérimentales sont 0,012, 0,018 et 0,024 m. La courbe théorique est tracée entre les deux contractions extrêmes. Les paramètres numériques arbitraires du cahier illustrent la méthode de tracé.
 
 ### Question 22
 

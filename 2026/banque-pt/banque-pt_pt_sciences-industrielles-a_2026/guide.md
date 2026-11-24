@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 ## Présentation du sujet
 
 **Format.** Épreuve de 5 heures, **calculatrice interdite**, aucun document. Les réponses se rédigent uniquement dans le cahier réponses. Le sujet compte **48 questions** et six annexes : diagramme d'états du compresseur, diagrammes d'exigences, paramétrages, catalogue des muscles FESTO DMSP, abaques du second ordre, catalogue des manodétendeurs VEAB.
@@ -452,15 +458,25 @@ $$\boxed{\beta_{n+1}=\beta_n-\frac{f(\beta_n)}{f'(\beta_n)}}$$
 
 ```python
 def newton(f, fp, beta_0, eps=10**-8):
+    from math import isfinite
+
+    if eps <= 0:
+        raise ValueError("La tolérance doit être positive.")
     beta = beta_0
-    n = 0
-    while abs(f(beta)) > eps and n < 100:   # garde-fou
-        beta = beta - f(beta) / fp(beta)
-        n = n + 1
-    return beta
+    for n in range(101):
+        residu = f(beta)
+        if isfinite(residu) and abs(residu) <= eps:
+            return beta
+        if n == 100:
+            break
+        pente = fp(beta)
+        if pente == 0 or not isfinite(pente) or not isfinite(residu):
+            raise ValueError("Le pas de Newton est indéfini.")
+        beta -= residu / pente
+    raise ValueError("Aucune racine vérifiant la tolérance après 100 itérations.")
 ```
 
-Avec les valeurs numériques de l'énoncé et $\beta_0=0{,}4$ rad, on obtient $\beta^\ast\approx0{,}445$ rad, soit $25{,}5^\circ$.
+Avec les valeurs numériques de l'énoncé et $\beta_0=0{,}4$ rad, on obtient $\beta^\ast\approx0{,}445$ rad, soit $25{,}5^\circ$. À ce point, $f'(\beta^\ast)=-\sqrt{8790^2+18400^2}<0$ en mm² par radian. Comme $2f$ est la dérivée de $\lambda_2^2$, cette racine correspond bien à un maximum local. Le code vérifie le résidu avant toute division, y compris si la valeur initiale est déjà une racine.
 
 > [!PIEGE]
 > Arrêter sur $|\beta_{n+1}-\beta_n|$ alors que l'énoncé impose un critère sur $|f(\beta)|$, ou oublier la valeur par défaut `eps=10**-8`.
@@ -569,25 +585,30 @@ Droite décroissante, dont le point d'annulation $\delta\lambda=F_{c0}/K$ ne dé
 
 #### Solution
 
+Le fichier de l’énoncé contient une mesure par ligne, avec la force en première colonne et la contraction en deuxième colonne. On corrige aussi la ligne 7 du cahier réponses pour superposer les deux courbes dans ce repère.
+
 ```python
-P_exp = 2 * 10**5                  # 2 bar = 2.10^5 Pa
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = np.loadtxt("donnees.txt", ndmin=2)
+force, contraction = data[:, 0], data[:, 1]
+Fc0, K = 1, 1     # valeurs arbitraires fournies dans le cahier réponses
+P_exp = 2e5       # 2 bar, en Pa
 
 def F_c(x, P):
-    """Force théorique linéarisée F = P.(Fc0 - K.x)"""
     return P * (Fc0 - K * x)
 
-x = np.linspace(min(data[0, :]), max(data[0, :]), 100)
-plt.plot(x, F_c(x, P_exp), label='Théorique')
-plt.xlabel('Contraction du muscle (m)')
-plt.ylabel('Force (N)')
+x = np.linspace(contraction.min(), contraction.max(), 100)
+plt.plot(contraction, force, label="Expérimentale")
+plt.plot(x, F_c(x, P_exp), label="Théorique")
+plt.xlabel("Contraction du muscle (m)")
+plt.ylabel("Force (N)")
+plt.legend()
+plt.show()
 ```
 
-puis `plt.legend()` et `plt.show()` (lignes 30 et 31).
-
-Le `plt.show()` de la ligne 12 ferme la première figure ; pour superposer les courbes, il faut le retirer. L'énoncé annonce la force en première colonne alors que le code fourni prend `data[0, :]` comme contraction : on suit le code et on signale l'ambiguïté.
-
-> [!PIEGE]
-> Écrire `P_exp = 2` : la courbe théorique est $10^5$ fois trop petite.
+Avec les lignes `120 0.012`, `100 0.018` et `80 0.024`, les trois abscisses expérimentales sont 0,012, 0,018 et 0,024 m. La courbe théorique est tracée entre les deux contractions extrêmes. Les paramètres numériques arbitraires du cahier illustrent la méthode de tracé.
 
 ### Question 22
 
