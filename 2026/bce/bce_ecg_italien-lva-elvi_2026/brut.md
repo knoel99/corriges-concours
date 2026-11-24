@@ -1,0 +1,37 @@
+# BCE ECG — Italien LVA (ELVi) 2026 · Corrigé brut
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+[Sujet officiel, option Italien LVA (ELVi)](https://www.concours-bce.com/sites/default/files/2026-04/75%20AR%20-%20LANGUE_VIVANTE_A_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=8)
+
+Le dossier va de l’unification aux pratiques du cinéma et des séries. Le résumé compare l’entretien de Paolo Balboni et l’article du Post. L’essai peut aussi utiliser l’histoire linguistique de Christian Bec et la carte des variétés parlées en Italie. Le thème s’arrête au début du XXe siècle.
+
+## Résumé analytique comparatif · 329 mots
+
+Per Paolo Balboni la storia dell’italiano comune ha due calendari. Già nel Trecento gli intellettuali disponevano di una lingua condivisa, mentre per gran parte della popolazione la svolta sarebbe arrivata soltanto dopo la metà del Novecento. Al momento dell’unificazione, fuori dalla Toscana e dal Lazio, secondo lo studioso appena il due e mezzo per cento degli abitanti conosceva l’italiano. La subordinazione delle altre parlate nella gerarchia ufficiale rispecchia l’esito di una storia politica, non una loro minore capacità espressiva.
+
+Il cinema, al centro dell’articolo del Post, permette di osservare come quella gerarchia abbia inciso sull’uso. Sotto il fascismo lo schermo contribuì intenzionalmente a diffondere un modello nazionale. Anche in seguito un personaggio poteva avere un lieve accento riconoscibile senza che la sua parlata riproducesse fedelmente quella locale. Il rapporto tra finzione e vita quotidiana funzionava anche in direzione inversa. Dalla lingua dei film passarono nel vocabolario comune parole come «paparazzo». Balboni, dal canto suo, attribuisce al romanesco e al napoletano del neorealismo un ruolo nell’arricchimento dell’italiano.
+
+L’affermazione dell’idioma nazionale non ha dunque cancellato la capacità di alternare registri. Balboni distingue la lingua che serve ad agire da quella in cui si pensa o si esprimono gli affetti. Per alcuni l’italiano assolve entrambe le funzioni, per altri la seconda spetta al dialetto. La varietà siciliana costruita da Camilleri rende accessibili i pensieri di Montalbano anche quando il commissario si rivolge al questore in italiano corrente.
+
+Nelle produzioni audiovisive più recenti il Post rileva una nuova attenzione proprio alle differenze tra voci, legate anche all’ambiente sociale e all’epoca. Dagli anni Duemila la ricerca del parlato locale si è accentuata soprattutto dove gli autori godono di maggiore autonomia. In *Gomorra* può prevalere la fedeltà alla cadenza effettiva anche a costo di una comprensione meno immediata. La televisione generalista continua invece a privilegiare la comprensibilità per tutti, mentre un film come *C’è ancora domani* adotta una soluzione intermedia. La pluralità sopravvive così anche nelle forme in cui viene rappresentata a un pubblico nazionale.
+
+## Essai argumenté · 459 mots
+
+Qualche anno fa un insegnante avrebbe potuto sentire una parola dialettale durante un’interrogazione e segnarla senz’altro come errore. Oggi mi sembrerebbe più istruttivo chiedere all’alunno di ripetere il concetto in italiano e di spiegare che cosa cambia nella seconda versione. È precisamente questa facoltà di passare da un interlocutore all’altro, senza perdere l’esperienza che ciascuna lingua racchiude, che l’Italia dovrebbe trasmettere a chi cresce nel suo territorio.
+
+La conquista di un italiano comune ha avuto un valore sociale enorme. Una paziente calabrese che consulta un medico a Torino ha diritto a capire la diagnosi, quale che sia la lingua parlata a casa da entrambi. Saper presentare una domanda, leggere un contratto o intervenire in un’assemblea permette di partecipare a istituzioni che operano su scala nazionale. Anche per questo sarebbe ingiusto riservare una scuola ricca di registri ai figli di laureati e dire agli altri che basta custodire le radici. L’accesso all’italiano scritto e argomentativo deve essere garantito a tutti.
+
+Ma chi parla bene la lingua comune può avere ottime ragioni per sceglierne un’altra. Nelle *Poesie a Casarsa* il giovane Pasolini fa del friulano una lingua di poesia, capace di affidare alla pagina un mondo solitamente ascoltato dalla viva voce. Per leggerlo oggi un adolescente di Palermo avrà magari bisogno di una traduzione. Il tempo impiegato a confrontare due versi gli farà scoprire che una tradizione locale può interessargli anche quando non gli appartiene per nascita. Lo stesso vale per chi incontra sottotitolati i dialoghi di una serie ambientata a Napoli. La traduzione allarga la comunità di chi ascolta.
+
+Occorre però chiedersi chi abbia il potere di riconoscere una voce come autentica. Una ragazza cresciuta a Venezia da genitori albanesi può conoscere il veneziano meglio di un turista italiano e sentirsi ugualmente chiedere da dove venga «davvero». Se il dialetto diventa una prova di discendenza, chi vorrebbe impararlo si ritrova escluso. La carta del dossier, che disegna anche piccole aree di lingua albanese nel Mezzogiorno, ricorda del resto quanto sia antica la presenza di più tradizioni sullo stesso territorio. I colori di una carta non possono decidere quale debba essere l’identità di una persona.
+
+Immagino quindi una scuola in cui gli alunni raccolgano, con il consenso degli interessati, racconti di famiglia, li trascrivano e ne preparino insieme una versione italiana annotata. Chi ha un nonno sardo e chi ha una zia arrivata da poco avrebbero un compito ugualmente impegnativo. Una biblioteca comunale potrebbe conservare le registrazioni accanto alle trascrizioni, lasciando che le generazioni successive le ascoltino e le discutano. Così si insegnerebbe insieme l’esattezza dell’italiano e il rispetto di differenze che non si lasciano sempre tradurre parola per parola. Il futuro dei dialetti dipenderà anche dal numero di occasioni in cui un giovane potrà usarli per dire qualcosa di nuovo.
+
+## Thème
+
+La penisola non ha mai conosciuto alcuna centralizzazione. I numerosi dialetti sono parlati da tutte le classi sociali e in ogni occasione. Gli abitanti della penisola che nella prima metà dell’Ottocento ricorrono all’italiano sono scrittori di professione o uomini d’affari. La loro prosa è astratta, rigida, rimasta pressoché immutata dal Medioevo. Alla vigilia dell’Unità gli italiani che parlano italiano sono circa seicentomila, ma va sottolineato che il numero di coloro che sanno non solo parlare, ma anche leggere e scrivere correntemente e correttamente la lingua «nazionale» è estremamente esiguo. Eppure l’unificazione resta, sul piano linguistico come su molti altri, l’avvenimento più importante della storia dell’Italia moderna, perché comporta la creazione di un nuovo apparato statale, con un unico potere centrale, un unico esercito e un’unica scuola. I primi provvedimenti a favore dell’italianizzazione risalgono al 1859, quando la scuola elementare diventa gratuita. Ma poiché la scolarizzazione e la capacità di leggere e scrivere in italiano all’età di dieci anni non comportano automaticamente l’uso quotidiano della lingua nazionale, all’inizio del Novecento questa rimane una lingua imposta alla maggioranza degli italiani.
+
+![Schéma — Langue commune et usages locaux](figures/dossier.svg)

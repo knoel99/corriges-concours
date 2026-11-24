@@ -1,0 +1,37 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2022
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Sujet_Ecrit_Economie_Gestion_Option1_Maths.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2022_Rapport_Ecrit_Economie_Gestion_Option1_Math%C3%A9matiques.pdf",
+    "sha256_sujet": "0251cf5fc87dfd6ba6d2a458af8f8c358cf653064635bd632e1f65e6812e347e",
+    "sha256_rapport": "a20479519bd933fbf8bb8e842a4e456e03df7999ee94ba67b118cb53969f8575"
+  },
+  "figures": [
+    {
+      "fichier": "figures/tangente-hyperbolique.svg",
+      "question": "1.1",
+      "legende": "La courbe est impaire, de pente 1 à l’origine et admet deux asymptotes horizontales."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 30 réponses et des indications associées dans les deux éditions à partir du sujet officiel et du rapport du jury. Classification des solutions, cas limites des temps de détection, généralisation du nombre de relecteurs, isomorphisme de commutants et tracé de la tangente hyperbolique.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

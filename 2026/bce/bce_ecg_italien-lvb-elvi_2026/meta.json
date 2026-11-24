@@ -1,0 +1,41 @@
+{
+  "slug": "bce_ecg_italien-lvb-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Italien LVB (ELVi)",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20AR%20-%20LANGUE_VIVANTE_B_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=8",
+    "sujet_sha256": "030bebbf0b7c6cf80e2d621a3d70fa9bbb4babbc1006d90e67823ca6f5e5bcfc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dossier.svg",
+      "question": "Dossier",
+      "legende": "Le prix d’une réputation"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Résumé comparatif sur le poids économique du made in Italy, essai sur la transmission et les conditions de travail, traduction bornée du reportage d’Olivier Bonnel et schéma des niveaux d’analyse."
+    }
+  ]
+}
