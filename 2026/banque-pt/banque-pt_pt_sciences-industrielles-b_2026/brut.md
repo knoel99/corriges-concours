@@ -2,6 +2,12 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
+
 Épreuve de 6 h, sans calculatrice ni document. Support : centrifugeuse de précision Exail CTR-20 pour la calibration d'accéléromètres. Données de l'annexe N utilisées :
 
 | Grandeur | Valeur | Grandeur | Valeur |
@@ -447,14 +453,15 @@ $$\boxed{\tilde\Gamma \approx \Gamma\left(1 - \frac{\psi^2}{2}\right)}$$
 
 **Question 42.** On en déduit l'erreur relative et sa valeur absolue :
 
-$$\boxed{\begin{aligned}
-\frac{\tilde\Gamma - \Gamma}{\Gamma} &= -\frac{\psi^2}{2}\\
-\left|\frac{\tilde\Gamma - \Gamma}{\Gamma}\right| &= \frac{\psi^2}{2}
-\end{aligned}}$$
+En valeur absolue, l’erreur relative exacte et son développement pour un angle en radians sont
 
-La condition $\frac{\psi^2}{2} \leq 10^{-5}$ donne $\psi \leq \sqrt{2\times10^{-5}} = \sqrt{20}\times10^{-3}$, soit
+$$e=1-\cos\psi=2\sin^2(\psi/2)=\frac{\psi^2}{2}+O(\psi^4).$$
 
-$$\boxed{\psi_{max} \approx 4{,}5\times10^{-3}\ \text{rad} \approx 0{,}26^\circ}$$
+Dans le voisinage de l’alignement, l’exigence $e\leqslant10^{-5}$ impose une borne sur la **valeur absolue** de l’angle,
+
+$$\boxed{|\psi|\leqslant 2\arcsin\sqrt{10^{-5}/2}\simeq 0{,}00447214\ \text{rad}\simeq 0{,}2562^\circ.}$$
+
+La borne au second ordre $\sqrt{2\times10^{-5}}$ donne pratiquement le même résultat. Pour un réglage à deux chiffres significatifs qui respecte la tolérance, $4{,}4$ mrad convient. La valeur arrondie vers le haut $4{,}5$ mrad conduit déjà à $10{,}125$ ppm.
 
 **Question 43.** Chaque masse $m_i$ ($i \in \{m, e, c\}$), de centre $G_i$ tel que $\vec{H^+G_i} = z_i\vec z$, subit $m_iL\Omega^2\vec x_2 - m_ig\,\vec z$.
 
@@ -538,6 +545,8 @@ z_m &\approx -\frac{2{,}87}{40}
 $$\boxed{z_m \approx -7{,}2\times10^{-2}\ \text{m} = -72\ \text{mm}}$$
 
 La masse doit être placée sous l'axe du bras. Avec une demi-course $h_m = 100\ \text{mm}$ (course $z_m \in [-100, 100]\ \text{mm}$), la position est **réalisable**, avec 28 mm de marge. Comme $z_m$ dépend de $\Omega$, la masse doit être repositionnée à chaque vitesse ; la condition $|z_m| \leq 0{,}1\ \text{m}$ impose ici $\Omega \gtrsim 20\ \text{rad·s}^{-1}$.
+
+Avec ces masses et ces déports, la formule de réglage est $z_m=-0{,}05-19{,}62/\Omega^2$ en mètres. La butée inférieure $z_m=-0{,}100$ m est atteinte à $\Omega=\sqrt{392{,}4}\simeq19{,}81$ rad·s⁻¹. À 15 rad·s⁻¹, il faudrait environ −137 mm, hors course. À 30 rad·s⁻¹, il faut −71,8 mm, dans la course.
 
 **Question 52.** Une relation par étage de la chaîne :
 
