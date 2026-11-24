@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="475.2pt" height="180pt" viewBox="0 0 475.2 180" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 180 
+L 475.2 180 
+L 475.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 40.563312 76.752531 
+L 98.972688 76.752531 
+Q 102.972688 76.752531 102.972688 72.752531 
+L 102.972688 50.223469 
+Q 102.972688 46.223469 98.972688 46.223469 
+L 40.563312 46.223469 
+Q 36.563312 46.223469 36.563312 50.223469 
+L 36.563312 72.752531 
+Q 36.563312 76.752531 40.563312 76.752531 
+z
+" style="fill: #edf3f4; stroke: #446774; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(40.563312 59.475031)">État corrigé</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(48.618781 70.672844)">au pas k</text>
+   </g>
+   <g id="text_2">
+    <g id="patch_3">
+     <path d="M 196.55 75.925969 
+L 278.65 75.925969 
+Q 282.65 75.925969 282.65 71.925969 
+L 282.65 51.050031 
+Q 282.65 47.050031 278.65 47.050031 
+L 196.55 47.050031 
+Q 192.55 47.050031 192.55 51.050031 
+L 192.55 71.925969 
+Q 192.55 75.925969 196.55 75.925969 
+z
+" style="fill: #edf3f4; stroke: #446774; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(212.763281 58.648469)">Prédiction</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(196.55 69.846281)">modèle, courant</text>
+   </g>
+   <g id="text_3">
+    <g id="patch_4">
+     <path d="M 373.733562 76.752531 
+L 437.130437 76.752531 
+Q 441.130437 76.752531 441.130437 72.752531 
+L 441.130437 50.223469 
+Q 441.130437 46.223469 437.130437 46.223469 
+L 373.733562 46.223469 
+Q 369.733562 46.223469 369.733562 50.223469 
+L 369.733562 72.752531 
+Q 369.733562 76.752531 373.733562 76.752531 
+z
+" style="fill: #edf3f4; stroke: #446774; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(376.227312 59.475031)">État corrigé</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'" transform="translate(373.733562 70.672844)">au pas k + 1</text>
+   </g>
+   <g id="text_4">
+    <g id="patch_5">
+     <path d="M 195.523438 152.695063 
+L 279.676563 152.695063 
+Q 283.676563 152.695063 283.676563 148.695063 
+L 283.676563 139.016938 
+Q 283.676563 135.016938 279.676563 135.016938 
+L 195.523438 135.016938 
+Q 191.523438 135.016938 191.523438 139.016938 
+L 191.523438 148.695063 
+Q 191.523438 152.695063 195.523438 152.695063 
+z
+" style="fill: #edf3f4; stroke: #446774; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="237.6" y="146.615375" transform="rotate(-0 237.6 146.615375)">Tension mesurée</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 118.036256 61.488 
+Q 148.24141 61.488 177.328529 61.488 
+" style="fill: none; stroke: #35516c; stroke-linecap: round"/>
+    <path d="M 173.328529 59.488 
+L 177.328529 61.488 
+L 173.328529 63.488 
+" style="fill: none; stroke: #35516c; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 300.832682 61.488 
+Q 326.050216 61.488 350.149717 61.488 
+" style="fill: none; stroke: #35516c; stroke-linecap: round"/>
+    <path d="M 346.149717 59.488 
+L 350.149717 61.488 
+L 346.149717 63.488 
+" style="fill: none; stroke: #35516c; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 295.95698 141.14689 
+Q 335.126167 114.550529 373.370397 88.582224 
+" style="fill: none; stroke: #35516c; stroke-linecap: round"/>
+    <path d="M 368.93767 89.174616 
+L 373.370397 88.582224 
+L 371.184674 92.483841 
+" style="fill: none; stroke: #35516c; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="353.268" y="126.432" transform="rotate(-0 353.268 126.432)">innovation × gain</text>
+   </g>
+  </g>
+ </g>
+</svg>

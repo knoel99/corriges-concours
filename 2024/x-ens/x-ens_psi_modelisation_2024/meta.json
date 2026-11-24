@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_modelisation_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2024,
+    "code_sujet": "XUSR",
+    "date": "2024-04-19"
+  },
+  "questions": 57,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "figures": [
+    {
+      "fichier": "figures/q02-positions-extremes.svg",
+      "question": "Q2",
+      "legende": "Positions de la manivelle avec les dimensions retenues. Le centre C et le guide vertical restent fixes."
+    },
+    {
+      "fichier": "figures/q08-cout-sur-maillage.svg",
+      "question": "Q8",
+      "legende": "Écart à la cible sinusoïdale. La zone sombre contient les réglages proches du minimum."
+    },
+    {
+      "fichier": "figures/q12-acceleration-periodique.svg",
+      "question": "Q12",
+      "legende": "Seconde différence sur un cycle sans doubler l’échantillon de raccord."
+    },
+    {
+      "fichier": "figures/q18-domaine-moteur.svg",
+      "question": "Q18",
+      "legende": "Points de fonctionnement du moteur et intersections retenues pour une puissance utile de 4 W."
+    },
+    {
+      "fichier": "figures/q33-prediction-et-innovation.svg",
+      "question": "Q33",
+      "legende": "Une mesure est comparée à la tension prédite au même pas de temps."
+    }
+  ],
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_PSI_Mod%C3%A9lisation_XUSR.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2024_Rapport_%C3%A9crit_mod%C3%A9lisation.pdf"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction intégrale des 57 questions numérotées de XUSR, de leurs indications et de cinq figures, sur les PDF du sujet et du rapport de jury. Recalcul du domaine moteur et des extrema, vérification des différences périodiques, des prévisions et des mises à jour de Kalman sans NumPy, lecture des essais de lacet et tangage."
+    }
+  ]
+}
