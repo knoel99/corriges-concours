@@ -6,6 +6,8 @@
 
 **Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Le questionnaire demande dix réponses courtes et le problème étudie une même solidification sous deux contraintes. La garde annonce un poids supérieur pour la première partie, tandis que le rapport officiel indique que le questionnaire a compté pour 20 % de la note finale. La calculatrice était autorisée durant les trois heures.
@@ -222,6 +224,8 @@ L’hypothèse quasi stationnaire requiert $\tau_{\rm diff}\ll\tau_s$. Avec $\ta
 $$\frac{\tau_{\rm diff}}{\tau_s}\sim\frac A{D_s}=\frac{2c_s\Delta T}{\Delta H^0}\ll1.$$
 Avec la convention locale $s/\dot s$, le facteur deux disparaît. Dans les deux cas, la chaleur sensible nécessaire pour faire varier la température de la glace doit être petite devant la chaleur latente de fusion.
 
+On peut mesurer l’erreur du profil quasi stationnaire dans le modèle à une phase. Pour un front $s=2\eta\sqrt{D_st}$, l’équation de diffusion admet dans la glace $T=T_f+(T_c-T_f)\,\mathrm{erf}(x/(2\sqrt{D_st}))/\mathrm{erf}(\eta)$. Le bilan latent à l’interface impose $\eta e^{\eta^2}\mathrm{erf}(\eta)=\mathrm{Ste}/\sqrt\pi$, où $\mathrm{Ste}=c_s(T_c-T_f)/\Delta H^0$. Ici $\mathrm{Ste}=0{,}0629$ et $\eta\simeq0{,}1755$. Le rapport entre l’épaisseur exacte et l’épaisseur quasi stationnaire de Q6 vaut $\sqrt2\,\eta/\sqrt{\mathrm{Ste}}\simeq0{,}990$. Le front approché est ainsi trop avancé d’environ 1 % dans ce modèle.
+
 #### Question 12
 
 > [!INDICATION]
@@ -375,6 +379,8 @@ La température du front est donc voisine de $-8{,}6\,{}^\circ\mathrm C$. Plus d
 La relation donnée conduit à
 $$a=-\frac{dP}{dT}=\frac{\Delta H^0}{T(1/\rho_s-1/\rho_l)}=\frac{334\,000}{273{,}15(1/920-1/1000)}\simeq1{,}4\times10^7\,\mathrm{Pa\,K^{-1}}.$$
 La pente de la ligne de fusion est négative, de valeur absolue voisine de $10\,\mathrm{MPa\,K^{-1}}$. Cela concorde à un chiffre significatif avec l’estimation graphique. La pente issue de Clapeyron est plus précise que la différence de deux températures très voisines et arrondies.
+
+La position d’équilibre est sensible à la pente de coexistence. Avec $\alpha=4{,}65$, $k=0{,}92$, $\beta=2{,}2/0{,}6$ et $a=10\ \mathrm{MPa\,K^{-1}}$ lu à la question 22, résoudre $Y_1=Y_2$ donne $u=0{,}375$ et $\Delta P/E_s=0{,}00924$, en accord avec la figure. Avec $a=14{,}1\ \mathrm{MPa\,K^{-1}}$ obtenu par Clapeyron, le même modèle donne $u\simeq0{,}455$ et $\Delta P/E_s\simeq0{,}0123$. Les valeurs du dessin correspondent donc à la première estimation de pente.
 
 ## Bilan
 

@@ -15,7 +15,9 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/07/24_2c_lyon_sujet_phy.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_2cc_rap_ePhy.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_2cc_rap_ePhy.pdf",
+    "sujet_sha256": "3d705d4bf7da1720fe70633b32a87361a33cb3a05011d003f2be70479769e361",
+    "rapport_sha256": "1714e7d4904da2aebd617a0dae98be224271e56764e16c5a56b92e0f266a4c79"
   },
   "revision": {
     "date": "2026-11-24",
@@ -98,6 +100,18 @@
       "modifications": null,
       "perimetre": "Sujet et rapport lus. Contre-calcul indépendant du choix des longueurs de référence, des déformations maximales, de la pente de coexistence, de la lecture des courbes de la figure 4 et du gradient de température aux deux phases.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé. Comparaison des dix réponses de cours et des vingt-cinq questions sur la solidification avec les pages et figures originales et le rapport du jury. Test du modèle quasi stationnaire par la solution autosimilaire de Stefan. Vérification numérique de la pression et de la position du front pour deux lectures de la pente de Clapeyron.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]

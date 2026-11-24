@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 De l’Atlantique central à la côte du Chili, les cartes et les échantillons suivent une lithosphère océanique depuis sa formation jusqu’à son entrée en subduction. Les âges magnétiques, les épaisseurs et les signatures des éléments traces répondent à des questions distinctes.
@@ -86,6 +88,8 @@ La vitesse moyenne de sédimentation conservée dans la carotte est $v_s=8000\ \
 
 ![Figure 3 — À gauche, polarité normale en bleu et inverse en beige. À droite, appariement des transitions aux âges du tableau 1.](figures/q05-carotte-inversions.svg)
 
+Les limites successives permettent de tester l’hypothèse de vitesse constante. Entre 0 et 0,7 Ma, les 1,90 m supérieurs donnent environ $2{,}7\ \mathrm{mm/ka}$. Entre 0,9 et 1,0 Ma, les 10 cm de la bande de Jaramillo donnent environ $1\ \mathrm{mm/ka}$. La valeur de $2{,}16\ \mathrm{mm/ka}$ doit être calculée par épaisseur totale divisée par durée totale. Une moyenne arithmétique non pondérée des vitesses de chaque bande surreprésenterait les courts épisodes.
+
 ### Question 6
 
 > [!INDICATION]
@@ -146,6 +150,8 @@ Pour 45 Ma, $t=45\times10^6\times365{,}25\times86400\simeq1{,}42\times10^{15}\ \
 ## D — Du prisme d’accrétion à la subduction de la ride
 
 Les zircons témoignent de la provenance des sédiments. Le point triple de Taitao modifie le régime thermique et les sources du volcanisme.
+
+Le demi-espace conducteur donne un sens précis à la profondeur calculée. Pour une plaque initialement à $T_m$ et une surface maintenue à $T_s$, $(T-T_s)/(T_m-T_s)=\mathrm{erf}[z/(2\sqrt{\kappa t})]$. À la profondeur $h=\sqrt{\kappa t}$ demandée par le sujet, ce rapport vaut $\mathrm{erf}(0{,}5)\simeq0{,}52$. L’isotherme correspondant à 90 % de l’écart thermique se trouve à $z\simeq2{,}33h$, soit près de 88 km à 45 Ma. Les 38 km calculés et une épaisseur lithosphérique définie par une isotherme élevée correspondent donc à deux conventions de profondeur.
 
 ### Question 10
 

@@ -10,7 +10,9 @@
   "questions": 15,
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_sujet_ST.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eST.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_2cc_rap_eST.pdf",
+    "sujet_sha256": "3edff4e867f21f0ed0ee2d91726f9e1364c79d2d9ffb0cc44bedfd5c3a4ffadd",
+    "rapport_sha256": "f0a61c5872882db3006e29c87cb97819f9990e65e6219d1a480f1c1d451bb5a3"
   },
   "figures": [
     {
@@ -69,6 +71,18 @@
       "modifications": true,
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 1,
+      "modifications": true,
+      "perimetre": "Relecture du brut et du guidé. Comparaison des quinze questions et des annexes cartographiques, paléomagnétiques, métamorphiques et géochimiques avec les deux éditions et le rapport. Contre-calcul des taux d’enregistrement des polarités et des profondeurs des isothermes du modèle de refroidissement.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
