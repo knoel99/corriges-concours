@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2019
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_2c_sujet_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_2CC_rap_eMath.pdf",
+    "sha256_sujet": "7f5a3d6d2348631f8e852c0e5f55ec4baf940d706f2075ea1661615fc1a807a9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/coefficients-binome-deforme.svg",
+      "question": "P.11",
+      "legende": "Le polynôme de la ligne 4 en colonne 2 a pour coefficients 1, 1, 2, 1 et 1. Leur somme vaut le coefficient binomial 6."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet et du rapport, vérification du coefficient 1/30, des deux factorisations par blocs et de la récurrence des coefficients du binôme déformé, figure des coefficients.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
