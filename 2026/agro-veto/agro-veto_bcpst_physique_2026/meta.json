@@ -30,20 +30,35 @@
     {
       "phase": "redaction",
       "modele": null,
-      "vitesse": null,
       "effort": null,
-      "date": null,
+      "vitesse": null,
+      "date": "2026-08-07",
       "modifications": true,
-      "perimetre": null
+      "perimetre": "Rédaction de la copie de résolution utilisée pour établir le corrigé brut et le corrigé guidé.",
+      "source_commit": "c1121b3bb108e08d4a99da3eec8949ba07bde626",
+      "fournisseur": "claude-code"
     },
     {
       "phase": "relecture_corrige",
       "modele": null,
-      "vitesse": null,
       "effort": null,
-      "date": null,
+      "vitesse": null,
+      "date": "2026-11-06",
+      "modifications": true,
+      "perimetre": "Relecture de la copie de résolution et établissement des éditions brute et guidée, avec revue enregistrée.",
+      "source_commit": "90261c696552594fdb72607c616c3830b4718a93",
+      "fournisseur": "claude-code"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-10",
       "modifications": null,
-      "perimetre": "Révision antérieure attestée par la mention historique du corrigé."
+      "perimetre": "Révision des deux éditions à la lumière du rapport de jury.",
+      "source_commit": "f1a9ae473fe686456f92088c3db22586a8c41e7e",
+      "tour": 1
     },
     {
       "phase": "relecture_corrige",

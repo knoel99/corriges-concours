@@ -6,6 +6,8 @@
 
 **Révision** · modèle non renseigné · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · Claude Opus 5.5 · effort non renseigné · vitesse non renseignée
+
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 ## Présentation du sujet
