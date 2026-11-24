@@ -1,0 +1,80 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2025
+  },
+  "redaction": "IA (OpenAI Codex, famille GPT-6)",
+  "questions": 27,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_info.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_eInfo.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-hauteurs.svg",
+      "question": "Q1",
+      "legende": "Les mêmes cinq clés forment un arbre de hauteur 2 ou une chaîne de hauteur 4."
+    },
+    {
+      "fichier": "figures/q07-arbre-bicolore.svg",
+      "question": "Q7",
+      "legende": "Les lettres N et R rappellent les couleurs de la figure 3 du sujet."
+    },
+    {
+      "fichier": "figures/q08-feuilles-externes.svg",
+      "question": "Q8",
+      "legende": "À gauche, la branche unique compte deux noirs. À droite, les chemins vers les NIL comptent un ou deux noirs réels."
+    },
+    {
+      "fichier": "figures/q11-rotation.svg",
+      "question": "Q11",
+      "legende": "Le sous-arbre gd passe du fils droit de x au fils gauche de y. L’ordre infixe est conservé."
+    },
+    {
+      "fichier": "figures/q15-cas-aligne.svg",
+      "question": "Q15",
+      "legende": "Dans le cas aligné, une rotation droite place le noir sur P. D et U peuvent être absents."
+    },
+    {
+      "fichier": "figures/q16-cas-en-coude.svg",
+      "question": "Q16",
+      "legende": "Dans le cas en coude, l’objet Z est le pivot commun aux deux rotations. Après la ligne 26, la variable z désigne P."
+    },
+    {
+      "fichier": "figures/q23-selection-rang.svg",
+      "question": "Q23",
+      "legende": "Cadres ocre, le parcours pour sélectionner le cinquième élément visite 8, 3 puis 6."
+    },
+    {
+      "fichier": "figures/q26-balayage-cordes.svg",
+      "question": "Q26",
+      "legende": "Les cordes en ordre alterné se croisent. À Q1 on compte trois autres débuts actifs, et à Q2 on en compte un, celui de la corde 3."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Les deux versions de l’épreuve d’informatique.",
+      "agent": "physique_sciences"
+    }
+  ]
+}

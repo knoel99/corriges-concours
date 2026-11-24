@@ -1,0 +1,82 @@
+{
+  "slug": "ens_mp-mpi_maths-c_2023",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP/MPI",
+    "matiere": "Maths C",
+    "annee": 2023
+  },
+  "questions": 31,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/23_mp_sujet_MathC.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/23_mp_rap_emathc.pdf"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/i3-croissance.svg",
+      "question": "QI.3b",
+      "legende": "Pour a et θ égaux à 1 et un niveau initial de 0,13, les solutions de paramètres positifs approchent la courbe en pointillés."
+    },
+    {
+      "fichier": "figures/ii5-diagonale.svg",
+      "question": "QII.5b",
+      "legende": "Chaque ligne conserve une partie des indices de la ligne précédente. Le point bleu de la ligne de rang n occupe la position n, en comptant à partir de zéro."
+    },
+    {
+      "fichier": "figures/ii6-singleton.svg",
+      "question": "QII.6b",
+      "legende": "Sur le singleton irrationnel, les valeurs en son unique point alternent. La convergence sur les rationnels du compact est pourtant acquise puisque cet ensemble est vide."
+    },
+    {
+      "fichier": "figures/iii4-euler.svg",
+      "question": "QIII.4",
+      "legende": "Pour le champ F(y) = y et une valeur initiale égale à 1, le polygone et l’escalier coïncident aux nœuds. La solution exacte est tracée en pointillés."
+    },
+    {
+      "fichier": "figures/iii7-attente.svg",
+      "question": "QIII.7",
+      "legende": "Sur l’équilibre initial, le temps d’attente est libre. Après le départ, chaque solution suit la même courbe cubique décalée dans le temps."
+    },
+    {
+      "fichier": "figures/iv2-glissement.svg",
+      "question": "QIV.2c",
+      "legende": "La trajectoire issue du demi-plan droit atteint l’axe au point (0,2), puis y reste. Les flèches donnent les vitesses de part et d’autre de l’axe."
+    },
+    {
+      "fichier": "figures/iv3-departs.svg",
+      "question": "QIV.3c",
+      "legende": "Avec le segment de vitesses réordonné, les trajectoires progressent sur l’axe, puis peuvent le quitter. Le temps est égal à la seconde coordonnée."
+    }
+  ],
+  "revision": {
+    "date": "2026-11-24",
+    "modele": "OpenAI Codex",
+    "verification": "Vérification des 31 items du sujet officiel et des deux erreurs explicitement confirmées par le jury. Contrôle des constantes uniformes dans Euler. Contre-lecture indépendante de II.5b–6b (extraction diagonale et contre-exemple) et IV.3a–c (intervalle vide et classification avec un temps d’attente)."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des solutions et du guidage.",
+      "agent": "maths_archives"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "II.5b à II.6b et IV.3a à IV.3c.",
+      "agent": "principal"
+    }
+  ]
+}

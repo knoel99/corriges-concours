@@ -1,0 +1,63 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2023",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2023
+  },
+  "redaction": "IA (OpenAI Codex, gpt-6.2-astra, effort ultra)",
+  "questions": 9,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/2c2023_info.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/10/23_2CC_rap_eInfo.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/i3-quadrants.svg",
+      "question": "I.3",
+      "legende": "Pour un côté de cinq cases, les sous-carrés ont trois cases de côté. Quand la cible est inférieure au pivot, les trois contours couvrent tous les candidats."
+    },
+    {
+      "fichier": "figures/i4-escalier.svg",
+      "question": "I.4",
+      "legende": "Recherche de 7 depuis le coin supérieur droit. Les cases visitées portent successivement 10, 8, 4, 5 et 7."
+    },
+    {
+      "fichier": "figures/ii1-insertion.svg",
+      "question": "II.1",
+      "legende": "Insertion de 2 au rang 6. La nouvelle valeur remonte par les anciennes cases de 7 puis de 5."
+    },
+    {
+      "fichier": "figures/ii2-extraction.svg",
+      "question": "II.2",
+      "legende": "Extraction du minimum 1. La valeur 6 du dernier rang passe à la racine, puis échange sa place avec 3."
+    },
+    {
+      "fichier": "figures/iii2-successeurs.svg",
+      "question": "III.2",
+      "legende": "À partir de la même partition de 8, la position à diminuer dépend de la longueur autorisée."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "gpt-6.2-astra",
+      "effort": "ultra",
+      "service_tier": null
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Les deux versions de l’épreuve d’informatique.",
+      "agent": "redaction_astra"
+    }
+  ]
+}

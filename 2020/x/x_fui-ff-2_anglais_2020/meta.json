@@ -1,0 +1,111 @@
+{
+  "slug": "x_fui-ff-2_anglais_2020",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Anglais",
+    "annee": 2020
+  },
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": null,
+    "famille": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/credit.svg",
+      "question": "1",
+      "legende": "What the names on an award can hide"
+    },
+    {
+      "fichier": "figures/precedent.svg",
+      "question": "2",
+      "legende": "Testing the claim that the rules are fixed"
+    },
+    {
+      "fichier": "figures/essay-award.svg",
+      "question": "E",
+      "legende": "What pupils learn from an award ceremony"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20ANGLAIS.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": null,
+    "famille_modele": "GPT-6",
+    "agent": "couverture",
+    "verification": "Vérification des trois critiques de Yong sur la pratique scientifique, l’histoire et la reconnaissance des personnes ; discussion de la proposition de Burke dans l’essai."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des versions brute et guidée après lecture du sujet officiel et réalisation des schémas du guidé."
+    },
+    {
+      "phase": "retouches",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Reformulation après contrôle des suites de trois mots du texte source."
+    },
+    {
+      "phase": "autocontrole",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification des quatre réponses et de l’essai : compte des mots, recherche de reprises littérales et compilation des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "couverture",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification des trois critiques de Yong sur la pratique scientifique, l’histoire et la reconnaissance des personnes ; discussion de la proposition de Burke dans l’essai."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    }
+  }
+}

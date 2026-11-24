@@ -1,0 +1,94 @@
+{
+  "slug": "x_fui-ff-2_francais_2021",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "FUI-FF 2",
+    "matiere": "Français",
+    "annee": 2021
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
+  "modele": {
+    "provider": "codex",
+    "model": null,
+    "famille": "GPT-6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rhone-et-lac.svg",
+      "question": "A3",
+      "legende": "Les trois moments de la comparaison."
+    },
+    {
+      "fichier": "figures/bibliotheque-et-acces.svg",
+      "question": "B",
+      "legende": "Évaluer un progrès pour ses usagers."
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20DE%20FRANCAIS_0.pdf",
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+  },
+  "date_revision": "2026-11-24",
+  "revision": {
+    "date": "2026-11-24",
+    "modele": null,
+    "famille_modele": "GPT-6",
+    "agent": "agent principal",
+    "verification": "Bergson : confrontation des consignes, des réponses sur les inventions mécaniques et de la rédaction au texte officiel."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des versions brute et guidée après lecture du sujet officiel et réalisation des schémas du guidé."
+    },
+    {
+      "phase": "autocontrole",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "lettres_reprise",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification de la structure des deux Markdown, du dossier de schémas et de la compilation des deux PDF."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "agent": "agent principal",
+      "vitesse": null,
+      "effort": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Bergson : confrontation des consignes, des réponses sur les inventions mécaniques et de la rédaction au texte officiel."
+    }
+  ],
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    },
+    "revision": {
+      "provider": "codex",
+      "model": null,
+      "effort": null,
+      "service_tier": null,
+      "famille_modele": "GPT-6"
+    }
+  }
+}
