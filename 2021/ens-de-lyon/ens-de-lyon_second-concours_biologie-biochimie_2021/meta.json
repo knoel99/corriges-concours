@@ -1,0 +1,82 @@
+{
+  "slug": "ens-de-lyon_second-concours_biologie-biochimie_2021",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Biologie-biochimie",
+    "annee": 2021
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2c2021_bio.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/11/21_2CC_rap_eBio.pdf",
+    "sujet_sha256": "04e41a8a4c684afa9469b14e1eceb7655e93ae0de0af8583cef946593b92d91a",
+    "rapport_sha256": "1590fb60fc0cceafb82a1f2bc894c9be83bc7ca3152ce492282e18d0254c0df6"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      1,
+      5,
+      16,
+      17,
+      18,
+      23,
+      24
+    ],
+    "questions_partiellement_traitees": [
+      19
+    ],
+    "questions_non_traitees": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      20,
+      21,
+      22
+    ],
+    "precision": "Les questions 1, 5, 16 à 18, 23 et 24 sont traitées intégralement. La question 19 est limitée à la différence entre moyenne et distribution de fluorescence. Les questions 2 à 4, 6 à 15 et 20 à 22, portant sur les caractérisations détaillées de systèmes de résistance, les manipulations de nucléases et la validation expérimentale de la modification après transfert viral, sont hors de cette édition."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "fichier": "figures/organisation-cellules.svg",
+      "question": "Q1",
+      "legende": "Les deux cellules, dessinées à des échelles différentes, possèdent une membrane plasmique. Une enveloppe nucléaire individualise le génome principal dans la cellule animale."
+    },
+    {
+      "fichier": "figures/memoire-naturelle.svg",
+      "question": "Q16",
+      "legende": "L’acquisition initiale et l’emploi ultérieur de la mémoire sont deux événements distincts de l’immunité bactérienne naturelle."
+    },
+    {
+      "fichier": "figures/expression-marqueurs.svg",
+      "question": "Q23",
+      "legende": "Lectures approchées des moyennes de la figure 7. Les barres d’écart-type du document original se recouvrent entre groupes pour les cinq comparaisons."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur la comparaison cellulaire, la mémoire immunitaire, la lecture du marqueur fluorescent, la réponse des macrophages et les possibilités et limites thérapeutiques. Lecture du PDF de treize pages et du rapport, vérification des cinq comparaisons de la figure 7. Les questions expérimentales hors périmètre sont listées."
+    }
+  ]
+}
