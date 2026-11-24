@@ -1,0 +1,72 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2012",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2012
+  },
+  "questions": 11,
+  "redaction": "Onze consignes sont traitées en A, B et C, dont trois sous-questions de C1. Les huit documents sont exploités, avec quatre planches originales de coupe et d’interprétation.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2012/Ecrit_geosciences2012.pdf",
+    "nature": "Sujet du second concours universitaire de l’ENS de Lyon.",
+    "sujet_sha256": "2ba52bc28478f378f860021ce83ef95b78552aa3d911ab2b290b499fdfd406c2"
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A1",
+      "fichier": "figures/racine-alpine.svg",
+      "legende": "Croquis du tracé en pointillé du document 1 et coupe interpolée entre les isobathes. Le resserrement oriental des courbes forme le flanc raide de la racine."
+    },
+    {
+      "numero": 2,
+      "question": "B2",
+      "fichier": "figures/plis-et-chevauchements.svg",
+      "legende": "Repérage schématique sur la carte, puis coupe de principe des plis de couverture, du socle externe et des nappes internes. Les dents indiquent le compartiment chevauchant."
+    },
+    {
+      "numero": 3,
+      "question": "C2",
+      "fichier": "figures/profils-de-resistance.svg",
+      "legende": "Enveloppe du document 5 et interprétation qualitative du document 7. Les traits de droite situent les deux domaines de sismicité tibétaine sans leur imposer une contrainte mesurée."
+    },
+    {
+      "numero": 4,
+      "question": "C3",
+      "fichier": "figures/experiences-de-plissement.svg",
+      "legende": "Schémas des géométries du document 8 à raccourcissement horizontal. Le niveau stocke la déformation par un fort pli puis de plus en plus par épaississement."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction complète des éditions brute et guidée à partir du sujet et de ses illustrations. Onze consignes sont traitées en A, B et C, dont trois sous-questions de C1. Les huit documents sont exploités, avec quatre planches originales de coupe et d’interprétation.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "B1",
+      "B2",
+      "C1a",
+      "C1b",
+      "C1c",
+      "C2",
+      "C3"
+    ]
+  }
+}
