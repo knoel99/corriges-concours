@@ -1,0 +1,36 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2020",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2020
+  },
+  "questions": 28,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Maths.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_RAPPORT_ECRIT_D2_Maths.pdf",
+    "sha256_sujet": "1e18eb4677af97c332b94eefc54735c1efd0cd99602f5b1198590f39082bdd32"
+  },
+  "figures": [
+    {
+      "fichier": "figures/convexite-entropique.svg",
+      "question": "1.I.3",
+      "legende": "Pour a = ε = 1, la courbe est celle de x ln(x). L’origine est une limite du graphe, le minimum est en 1/e et le second point marqué est son zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 28 réponses et indications sur le sujet et les quatre pages du rapport. Tableau et graphe des variations, minimum contraint, deux formes nilpotentes et comparaison exacte des variances, y compris le cas n = 1.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
