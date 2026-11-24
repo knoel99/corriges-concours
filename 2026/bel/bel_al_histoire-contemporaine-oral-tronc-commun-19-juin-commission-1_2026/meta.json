@@ -1,0 +1,66 @@
+{
+  "slug": "bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-1_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire contemporaine (oral tronc commun 19 juin commission 1)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire contemporaine (oral tronc commun 19 juin commission 1)",
+  "questions": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_commission_histoire_tc_1_19_juin.pdf",
+    "sujet_sha256": "079a931794c9b75603129c19072e7128be90295d0eddf12c4becb87627a30180",
+    "references": [
+      "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/approvisionnements.svg",
+      "question": "Comparaison",
+      "legende": "D’où vient le pouvoir sur le pétrole ?"
+    },
+    {
+      "fichier": "figures/citoyennete.svg",
+      "question": "Comparaison",
+      "legende": "Voter, être représenté, exercer le pouvoir"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de 22 exposés couvrant les deux options de chacun des 11 billets attestés, de leurs relances et des schémas comparatifs."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des intitulés, des paires et de l’ordre contre la totalité du fascicule officiel, puis des points de chronologie, des nuances et des figures."
+    }
+  ]
+}

@@ -162,6 +162,9 @@
 | 2026 | BEL | AL | Espagnol (commentaire et traduction) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_espagnol-commentaire-et-traduction_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (oral option Calderón, vers 445 à 542) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-445-a-542_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (oral option Calderón, vers 782 à 921) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-782-a-921_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-calderon-vers-782-a-921_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (oral option Saer, pages 156 à 159) | [md](2026/bel/bel_al_espagnol-oral-option-saer-pages-156-a-159_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-saer-pages-156-a-159_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (oral option Saer, pages 64 à 69) | [md](2026/bel/bel_al_espagnol-oral-option-saer-pages-64-a-69_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-saer-pages-64-a-69_2026/guide.md) |
+| 2026 | BEL | AL | Espagnol (oral option Saer, pages 71 à 74) | [md](2026/bel/bel_al_espagnol-oral-option-saer-pages-71-a-74_2026/brut.md) | [md](2026/bel/bel_al_espagnol-oral-option-saer-pages-71-a-74_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (thème Lyon) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_espagnol-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Espagnol (version et thème Ulm) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_espagnol-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
@@ -172,6 +175,7 @@
 | 2019 | BEL | AL | Espagnol (thème Lyon) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Étude de texte français (Lyon) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/brut.md) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Grec moderne (commentaire et traduction) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/guide.md) |
+| 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 17 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2019 | BEL | AL | Italien (commentaire et traduction) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Italien (thème Lyon) | [md](2019/bel/bel_al_italien-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_italien-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Portugais (commentaire et traduction) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/guide.md) |
@@ -190,6 +194,7 @@
 | 2025 | BEL | AL | Histoire contemporaine | [md](2025/bel/bel_al_histoire-contemporaine_2025/brut.md) | [md](2025/bel/bel_al_histoire-contemporaine_2025/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 16 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-16-juin_2026/guide.md) |
+| 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 19 juin commission 1) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-1_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-1_2026/guide.md) |
 | 2026 | BEL | AL | Histoire de la musique | [md](2026/bel/bel_al_histoire-de-la-musique_2026/brut.md) | [md](2026/bel/bel_al_histoire-de-la-musique_2026/guide.md) |
 | 2026 | BEL | AL | Histoire et théorie des arts | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/brut.md) | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/guide.md) |
 | 2026 | BEL | AL | Italien (commentaire et traduction) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/guide.md) |
@@ -825,6 +830,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2016 | X-ENS | MP | Informatique A | [md](2016/x-ens/x-ens_mp_informatique-a_2016/brut.md) | [md](2016/x-ens/x-ens_mp_informatique-a_2016/guide.md) |
 | 2017 | X-ENS | MP | Informatique A | [md](2017/x-ens/x-ens_mp_informatique-a_2017/brut.md) | [md](2017/x-ens/x-ens_mp_informatique-a_2017/guide.md) |
 | 2018 | X-ENS | MP | Informatique A | [md](2018/x-ens/x-ens_mp_informatique-a_2018/brut.md) | [md](2018/x-ens/x-ens_mp_informatique-a_2018/guide.md) |
 | 2019 | X-ENS | MP | Informatique A | [md](2019/x-ens/x-ens_mp_informatique-a_2019/brut.md) | [md](2019/x-ens/x-ens_mp_informatique-a_2019/guide.md) |
@@ -855,6 +861,7 @@
 | 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
+| 2021 | X-ENS | PC | Chimie A | [md](2021/x-ens/x-ens_pc_chimie-a_2021/brut.md) | [md](2021/x-ens/x-ens_pc_chimie-a_2021/guide.md) |
 | 2022 | X-ENS | PC | Chimie A | [md](2022/x-ens/x-ens_pc_chimie-a_2022/brut.md) | [md](2022/x-ens/x-ens_pc_chimie-a_2022/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Anglais | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_anglais_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_anglais_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Français | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_francais_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_francais_2023/guide.md) |

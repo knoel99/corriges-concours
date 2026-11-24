@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2016",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2016
+  },
+  "questions": 43,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_sujet_mpi_mathc.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_math_c.pdf",
+    "sha256_sujet": "26b4a522af3c8ff04c90c7fcf2fcb7271a86a621cddd9216d2994ad7075f2c32"
+  },
+  "figures": [
+    {
+      "fichier": "figures/raccordement-gevrey.svg",
+      "question": "4.7",
+      "legende": "La coupure conserve le jet initial du polynôme et annule toutes les dérivées finales."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification sur les six pages du sujet original et le rapport inter-ENS. Vérification des jets, du critère de Kalman, des normes Gevrey, des coefficients complexes et de la commande de Neumann. Graphique du raccordement plat.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

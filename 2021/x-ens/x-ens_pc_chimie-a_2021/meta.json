@@ -1,0 +1,195 @@
+{
+  "slug": "x-ens_pc_chimie-a_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2021
+  },
+  "questions": 79,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_PC_sujet_ChiA.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_PC_rap_eChiA_v2.pdf",
+    "sujet_sha256": "440d95270ce2df69ba8f5f0c4da03816fc1801bf8ca0aed15dfde872aec4cdb0",
+    "rapport_sha256": "52fcf318a3c0464725072985ba9d761ff43c5e29309ba24fc9be69a1f70c3899"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2",
+      "A.I.3",
+      "A.I.4",
+      "A.I.5",
+      "A.I.6",
+      "A.I.7",
+      "A.I.8",
+      "A.I.9",
+      "A.I.10",
+      "A.I.11",
+      "A.I.12",
+      "A.I.13",
+      "A.I.14",
+      "A.I.15",
+      "A.I.16",
+      "A.I.17",
+      "A.I.18",
+      "A.I.19",
+      "A.II.1",
+      "A.II.2",
+      "A.II.3",
+      "A.II.4",
+      "A.II.5",
+      "A.II.6",
+      "A.II.7",
+      "A.II.8",
+      "A.II.9",
+      "A.III.1",
+      "A.III.2",
+      "A.III.3",
+      "A.III.4",
+      "A.III.5",
+      "A.III.6",
+      "A.III.7",
+      "A.III.8",
+      "A.III.9",
+      "A.III.10",
+      "A.III.11",
+      "A.III.12",
+      "A.III.13",
+      "A.III.14",
+      "A.III.15",
+      "A.III.16",
+      "A.IV.1",
+      "A.IV.2",
+      "A.IV.3",
+      "A.IV.4",
+      "A.IV.5",
+      "A.IV.6",
+      "A.IV.7",
+      "A.IV.8",
+      "A.IV.9",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "B.6",
+      "B.7",
+      "B.8",
+      "B.9",
+      "B.10",
+      "B.11",
+      "B.12",
+      "B.13",
+      "B.14",
+      "B.15",
+      "B.16",
+      "B.17",
+      "B.18",
+      "B.19",
+      "B.20",
+      "B.21",
+      "B.22",
+      "B.23",
+      "B.24",
+      "B.25",
+      "B.26"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 79 questions sont traitées dans leur ordre d’origine. Les bilans, les transferts électroniques et les valeurs lues sur les figures sont distingués des hypothèses de calcul."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "question": "A.I.4",
+      "fichier": "figures/trois-etats-benzyliques.svg",
+      "legende": "Le carbone de la carboxylation devient successivement carboxyle, formyle et, en cas de réduction plus poussée, hydroxyméthyle."
+    },
+    {
+      "question": "A.I.8",
+      "fichier": "figures/benzoine-benzile.svg",
+      "legende": "L’oxygène de l’alcool secondaire de E et le carbonyle correspondant de F sont repérés en bleu."
+    },
+    {
+      "question": "A.I.11",
+      "fichier": "figures/anhydride-beta-cetoacide.svg",
+      "legende": "L’anhydride H présente deux groupes acyle différents. Le carboxyle coloré de I est celui qui sera éliminé lors de la décarboxylation."
+    },
+    {
+      "question": "A.I.12",
+      "fichier": "figures/ceto-enol.svg",
+      "legende": "La liaison double et le proton occupent des positions différentes dans la cétone et dans l’énol."
+    },
+    {
+      "question": "A.I.19",
+      "fichier": "figures/origine-oxygene.svg",
+      "legende": "L’oxygène de J, coloré en bleu, constitue une sonde de la conservation du carbonyle dans la tétracyclone."
+    },
+    {
+      "question": "A.II.2",
+      "fichier": "figures/geometries-stilbene.svg",
+      "legende": "Les deux phényles sont trans dans L et cis dans L′. La réduction du nombre de substituants en traits ne change pas la géométrie."
+    },
+    {
+      "question": "A.II.8",
+      "fichier": "figures/deux-sites-du-triyne.svg",
+      "legende": "Le premier produit utilise une extrémité du triyne. Le second utilise sa triple liaison centrale. R représente le groupe terminal Rʲ."
+    },
+    {
+      "question": "A.IV.1",
+      "fichier": "figures/monomere-diethynyle.svg",
+      "legende": "Les deux fonctions éthynyles terminales de U sont en para sur le noyau benzénique. Elles permettent le prolongement du polymère aux deux extrémités."
+    },
+    {
+      "question": "A.II.6",
+      "fichier": "figures/depart-du-pont.svg",
+      "legende": "Les quatre flèches suivent les doublets pendant le départ du pont carbonylé. La liaison C5=C6 demeure dans le noyau aromatique final."
+    },
+    {
+      "question": "A.III.4",
+      "fichier": "figures/transfert-bifonctionnel.svg",
+      "legende": "Dans le transfert bifonctionnel, l’hydrogène du ligand rejoint O et l’hydrure du ruthénium rejoint le carbone de l’aldéhyde."
+    },
+    {
+      "question": "A.III.8",
+      "fichier": "figures/attributions-benzaldehyde.svg",
+      "legende": "Les hauteurs représentent le nombre de protons intégrés. Les quatre bâtons situent les groupes de signaux sans simuler leur structure fine."
+    },
+    {
+      "question": "A.IV.4",
+      "fichier": "figures/titrage-des-sites.svg",
+      "legende": "La capacité de 3,40 mmol·g⁻¹ obtenue par titrage correspond à 92 % de la capacité théorique pour quatre sites par motif."
+    },
+    {
+      "question": "B.10",
+      "fichier": "figures/porteurs-de-charge.svg",
+      "legende": "Les électrons circulent dans les fils métalliques. Dans la solution, cations et anions contribuent au courant en migrant en sens opposés."
+    },
+    {
+      "question": "B.22",
+      "fichier": "figures/vagues-cuivre-indium.svg",
+      "legende": "Les deux marches du cuivre diminuent avec sa concentration. L’augmentation propre à l’indium reste de trois divisions. Les transitions sont schématiques."
+    },
+    {
+      "question": "B.26",
+      "fichier": "figures/deplacement-gallium.svg",
+      "legende": "La complexation diminue le potentiel standard, tandis que la réduction observée sur l’électrode se déplace vers les potentiels plus positifs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 79 réponses et de leurs indications dans les deux éditions, avec lecture des planches, graphes et données des problèmes A et B et du rapport du jury de chimie A 2021. Quinze figures originales, dont les quatre déplacements électroniques de l’extrusion, les courbes courant–potentiel à trois avancements et le déplacement de la vague du gallium."
+    }
+  ]
+}
