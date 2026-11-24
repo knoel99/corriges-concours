@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 **Couverture de l’épreuve (58 questions).** Les questions 1–38, 47, 49, 51–54 et 57 sont corrigées intégralement (45 questions). Les questions 39, 42, 44–46, 50, 55–56 et 58 sont traitées partiellement (9 questions) sous l’angle des familles de réactions, de la spectroscopie et de la stéréochimie. Les questions 40, 41, 43 et 48, consacrées à la construction d’intermédiaires de l’achaetolide, restent hors du corrigé. Le sujet ne précise pas le volume de prise nécessaire à la valeur numérique unique demandée en Q15.
 
 ## I.1 — Phosphore solide et thermochimie

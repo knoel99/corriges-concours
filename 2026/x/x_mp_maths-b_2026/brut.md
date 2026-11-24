@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-5-5 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 Épreuve de 4 heures, calculatrice interdite. Thème : répartition des valeurs propres de matrices tridiagonales (loi de l'arcsinus), théorème de Weierstrass, loi du demi-cercle pour les matrices de Wigner. Trente questions, de 1 à 17b.
 
 Notations utilisées dans tout le corrigé : pour $f$ continue sur $[-2,2]$, $I(f)=\dfrac1\pi\displaystyle\int_{-2}^2\frac{f(x)}{\sqrt{4-x^2}}\,\mathrm dx$, et $f_k(x)=x^k$.

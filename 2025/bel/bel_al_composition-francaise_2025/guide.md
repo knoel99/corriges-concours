@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : claude-opus-4-8 · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 **Nature de l'épreuve.** Composition française, épreuve écrite du tronc commun de la Banque d'épreuves littéraires (BEL — ENS Paris-Saclay, ENS de Lyon, ENS Paris), session 2025. Durée 6 heures, coefficient 3, sans calculatrice. Une citation à discuter, sans document, en s'appuyant « plus particulièrement sur les œuvres au programme » (les *Lettres portugaises* de Guilleragues, *Paul et Virginie* de Bernardin de Saint-Pierre, *Madame Bovary* de Flaubert, *Le Ravissement de Lol V. Stein* de Duras). Le sujet ne fixe pas de longueur.

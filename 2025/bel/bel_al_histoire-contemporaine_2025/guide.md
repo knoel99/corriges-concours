@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 La composition commune d’histoire dure six heures. « Les étrangers dans la vie politique » est le libellé imprimé. Le programme situe l’enquête en France entre 1848 et 1986. Le rapport de la session explicite ces bornes et ajoute « en France » au titre. Pour préparer le devoir, réserver une place réelle aux décennies qui suivent la Libération. Le jury signale que beaucoup de copies ont écourté cette partie. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_histoire.pdf) · [Rapport du jury, p. 2–6](https://www.ens-lyon.fr/sites/default/files/2025-11/Histoire%202025%20OK%20Lyon%20RELU.pdf)

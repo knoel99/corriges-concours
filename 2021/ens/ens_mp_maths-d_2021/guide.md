@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Le sujet de six heures du 15 avril 2021 établit une version en probabilité du théorème de Furstenberg–Kesten. Pour suivre la preuve principale, on peut relier la question préliminaire aux parties II et IV. La partie I fournit les bornes spectrales, tandis que la partie III permet de calculer explicitement les deux exposants dans des modèles où la structure des matrices est connue. L’épreuve comprend 40 réponses élémentaires avec les subdivisions. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/21_mp_sujet_mathd.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathd.pdf)

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L'écrit commun à Ulm, Lyon, Paris-Saclay, l'ENSAE et l'ENSAI dure quatre heures, sans calculatrice. Il comporte trois problèmes indépendants, numérotés de 1 à 22, et 55 réponses en comptant les subdivisions.

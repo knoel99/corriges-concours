@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’épreuve inter-ENS du 16 avril 2021 dure quatre heures. Les questions 2 à 13 classent des fractions rationnelles à partir de leurs valeurs sur le cercle puis sur les racines de l’unité. Les questions 14 à 29 bornent le nombre de points d’un réseau sur un graphe transcendant. Ces deux parties sont indépendantes. Les 29 questions de l’énoncé correspondent à 39 réponses avec leurs subdivisions. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2021_mp_sujet_mathc.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/21_mp_rap_emathc.pdf)

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 **Problématique** : comment un transfert qui rapproche les ressources de parents et d’enfants à un moment de leur vie peut-il, sur une génération, creuser durablement les écarts entre bénéficiaires et non-bénéficiaires d’une même cohorte ?
 
 En 1992, lorsque la boulangère Marcelle Pilon passe la main, sa famille va jusqu’à compter les pains que son fils devra fournir à deux de ses sœurs en compensation de l’entreprise reçue. Pourtant, un fonds de pâtisserie acquis des années auparavant pour le garçon ne figure pas dans les comptes du partage. Un même arrangement assure la continuité d’un commerce et prépare des avenirs différents aux membres d’une fratrie. L’enquête de Céline Bessière et Sibylle Gollac invite à déplacer le regard de l’instant de la succession vers ce qui s’est constitué bien avant et pourra fructifier après elle.

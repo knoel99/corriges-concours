@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 L’ENS de Lyon propose une composition de cinq heures sans atlas. Le sujet « Les frontières et espaces frontaliers de l’Union européenne » est accompagné d’un fond de carte de l’Europe et d’encarts ultramarins. Le rapport traite de cette composition aux pages 2 à 7. Il invite à rendre compte des frontières internes et externes, des différents acteurs et des effets d’échelle. Une production graphique, vivement conseillée, peut être mobilisée à l’endroit précis où elle fait avancer la démonstration.

@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 La composition commune dure six heures. Elle porte sur « Les circulations du travail dans le processus de mondialisation (des années 1880 au milieu des années 1930) ». L’aire est mondiale et les bornes s’imposent à la copie. Les circulations de combattants n’entrent pas en elles-mêmes dans ce sujet, alors que les embauches de travailleurs pour la logistique des belligérants s’y inscrivent pleinement. [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20d%27histoire.pdf) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2024-11/Histoire%202024%20OK.pdf) · [Programme 2024](https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf)

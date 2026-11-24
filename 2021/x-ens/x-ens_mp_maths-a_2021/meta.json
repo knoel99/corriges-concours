@@ -49,5 +49,19 @@
     "date": "2026-11-24",
     "modele": "OpenAI Codex",
     "verification": "Contrôle des 44 réponses face au sujet et au rapport écrit de la banque des ENS. Vérifications de la réduction modulo deux, des sommes de racines de l’unité, de la divisibilité finale et de la borne uniforme."
+  },
+  "provenance": {
+    "redaction": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    },
+    "revision": {
+      "provider": "codex",
+      "model": "GPT-6 (famille)",
+      "effort": null,
+      "service_tier": null
+    }
   }
 }

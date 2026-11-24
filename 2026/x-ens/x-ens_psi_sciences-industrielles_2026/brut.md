@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 Le sujet du 14 avril 2026 étudie le robot industriel KUKA KR 500, depuis ses effecteurs jusqu’au frein de sécurité. Les six parties de cette épreuve de cinq heures comportent 63 questions. Les valeurs tirées des tracés et des vues sans cotes sont indiquées comme des lectures graphiques. [Sujet officiel de l’ENS Paris-Saclay](https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_SI_XSR.pdf)

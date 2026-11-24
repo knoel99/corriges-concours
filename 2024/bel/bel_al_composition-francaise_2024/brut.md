@@ -2,6 +2,8 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 **Problématique** — Comment le théâtre peut-il contribuer à la vie de la cité en ouvrant une distance à l’égard des rôles et des fins que cette même cité lui assigne ?
 
 ## Introduction

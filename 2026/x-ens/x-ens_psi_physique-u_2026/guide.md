@@ -2,6 +2,10 @@
 
 *Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
 
+**Rédaction** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
+**Révision** · Modèle : OpenAI Codex (famille GPT-6) · Effort de raisonnement : non renseigné · Mode de vitesse : non renseigné.
+
 ## Présentation du sujet
 
 À partir d’un même phénomène, ce sujet de six heures sans calculatrice fait passer de la propagation sonore à la détection de l’azimut et de l’élévation, puis au son que peut émettre la cochlée. La convention temporelle du sujet est $e^{-i\omega t}$.
