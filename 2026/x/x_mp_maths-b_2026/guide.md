@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Thème.** Le sujet étudie la répartition des valeurs propres de grandes matrices symétriques à travers la statistique
@@ -612,7 +614,7 @@ Dans tous les cas, avec 8a :
 $$\boxed{\mathrm{Sp}(T_n(a,b,c))=\{(\mu+a,\,m_\mu)\ :\ (\mu,m_\mu)\in\mathrm{Sp}(T_n(0,bc,1))\}.}$$
 
 > [!METHODE]
-> Une matrice tridiagonale ne dépend, à similitude diagonale près, que de la diagonale et des produits $b_ic_i$ des coefficients symétriques. C'est l'outil standard pour symétriser une matrice tridiagonale.
+> Lorsque $c\ne0$, le changement de base ci-dessus normalise la sous-diagonale à $1$. Si $c=0$, la triangularité donne le polynôme caractéristique. Les deux matrices peuvent alors avoir des rangs différents, par exemple pour $b=c=0$.
 
 > [!METHODE]
 > Variante par les récurrences. Le développement de 5b donne $\chi_{T_n(0,b,c)}=X\chi_{T_{n-1}(0,b,c)}-bc\,\chi_{T_{n-2}(0,b,c)}$. La même relation vaut pour $T_n(0,bc,1)$, puisque le produit de ses coefficients symétriques vaut aussi $bc$.
@@ -689,7 +691,7 @@ $$\boxed{\lim_{n\to\infty}S_f(T_n(a,b,c))=\frac1\pi\int_{-2}^2\frac{f(a+\sqrt{bc
 > Écrire la condition $\lambda_k\le y$ comme une condition sur $k$, en utilisant la monotonie de $\cos$ sur $[0,\pi]$.
 
 > [!INDICATION]
-> Selon la position de $y$ par rapport à $a\pm2\sqrt{bc}$, il y a trois régimes. Un équivalent n'a de sens que si la limite de $q_n(y)/n$ est non nulle.
+> Selon la position de $y$ par rapport à $a\pm2\sqrt{bc}$, il y a trois régimes. Une limite $L>0$ pour $q_n(y)/n$ donne l’équivalent $nL$. Au bord inférieur du spectre, calculez directement $q_n(y)$.
 
 #### Solution
 
@@ -708,7 +710,7 @@ $$\begin{aligned}
 &\iff k\ge\frac{(n+1)\varphi}{\pi}.
 \end{aligned}$$
 
-Le nombre d'entiers $k\in\{1,\dots,n\}$ vérifiant cette condition est compris entre $n-\frac{(n+1)\varphi}\pi$ et $n+1-\frac{(n+1)\varphi}\pi$. Donc $\frac{q_n(y)}n\to1-\frac\varphi\pi$, limite strictement positive. Enfin $1-\frac1\pi\arccos\frac z2=\frac12+\frac1\pi\arcsin\frac z2$.
+Comme $0<(n+1)\varphi/\pi<n+1$, on compte exactement $q_n(y)=n+1-\lceil(n+1)\varphi/\pi\rceil$ entiers. Le plafond inclut la valeur propre égale à $y$ lorsque $(n+1)\varphi/\pi$ est entier. Donc $\frac{q_n(y)}n\to1-\frac\varphi\pi$, limite strictement positive. Enfin $1-\frac1\pi\arccos\frac z2=\frac12+\frac1\pi\arcsin\frac z2$.
 
 $$\boxed{\begin{aligned}
 q_n(y)&\underset{n\to\infty}{\sim}n\left(\frac12+\frac1\pi\arcsin\frac{y-a}{2\sqrt{bc}}\right) &&\text{si }|y-a|<2\sqrt{bc},\\
@@ -768,7 +770,7 @@ Comme $2-2\kappa>1$, $(2-2\kappa)^n\to+\infty$. Le majorant, indépendant de $t$
 $$\boxed{\begin{aligned}&Q_n\to1\ \text{uniformément sur }[0,\kappa]\\ &Q_n\to0\ \text{uniformément sur }[1-\kappa,1]\end{aligned}}$$
 
 > [!METHODE]
-> Variante par le logarithme : $\ln\big((1-\kappa^n)^{2^n}\big)=2^n\ln(1-\kappa^n)$, équivalent à $-(2\kappa)^n$. Ce développement limité montre aussi que la borne tend vers $0$.
+> Pour $0<\kappa<1/2$, on a $\ln Q_n(\kappa)=2^n\ln(1-\kappa^n)\sim-(2\kappa)^n\to0$. Ainsi $Q_n(\kappa)\to1$ et la borne $1-Q_n(\kappa)$ tend vers $0$. Lorsque $\kappa=0$, cette borne vaut déjà $0$ pour tout $n\ge1$.
 
 > [!JURY]
 > Le rapport 2026 rappelle le schéma d'une preuve de convergence uniforme : « trouver une majoration indépendante de la variable de la différence entre la fonction et son approximant, puis montrer que cette majoration tend vers 0 ». Il note que « Cette question, pourtant très classique, a révélé un manque de méthode chez la plupart des candidates et candidats. » Taux de réussite : 40 %.
@@ -1146,7 +1148,7 @@ $$\boxed{\lim_{n\to+\infty}\mathbb P\big(|S_n(f_k)-\mathbb E(S_n(f_k))|\ge\varep
 > Approcher $f$ sur $[-B,B]$ par un polynôme grâce à la partie III (on a maintenant le droit), après un changement de variable affine.
 
 > [!INDICATION]
-> Décomposer $f=P-P\mathbf 1_{|x|>B}+(f-P)\mathbf 1_{[-B,B]}$ et écrire $S_n(f)-\Sigma(f)$ comme somme d'un terme de concentration, d'un terme de queue et d'un reste déterministe petit.
+> Décomposer $f=P-P\mathbf 1_{|x|>B}+(f-P)\mathbf 1_{[-B,B]}$ et écrire $S_n(f)-\Sigma(f)$ comme somme d'un terme de concentration, d'un terme de queue et d’un reste aléatoire majoré uniformément en valeur absolue.
 
 > [!INDICATION]
 > Pour le reste, utiliser que $\Sigma$ ne voit que $[-2,2]\subset[-B,B]$, que $S_n$ est une moyenne (poids de somme $1$), et que $\mathbb E(S_n(P))\to\Sigma(P)$ par $(H_j)$.
@@ -1182,7 +1184,7 @@ Enfin, si $P=\sum_{j=0}^dp_jf_j$, alors $\mathbb E(S_n(P))=\sum_jp_j\frac1n\math
 
 Soit $N$ tel que $|\mathbb E(S_n(P))-\Sigma(P)|\le\delta$ pour $n\ge N$.
 
-Alors $|D_n|\le3\delta=\frac\varepsilon2$ pour $n\ge N$.
+Les trois bornes donnent $|D_n(\omega)|\le3\delta=\frac\varepsilon2$ pour tout $\omega$ et tout $n\ge N$. Seul le premier terme de $D_n$ dépend de la réalisation de la matrice.
 
 **Conclusion.** Soit $n\ge N$. Si $|S_n(f)-\Sigma(f)|\ge\varepsilon$, alors $|A_n|+|C_n|\ge\varepsilon-|D_n|\ge\frac\varepsilon2$. Donc $|A_n|\ge\frac\varepsilon4$ ou $|C_n|\ge\frac\varepsilon4$. Par sous-additivité, pour tout $n\ge N$ :
 
@@ -1240,9 +1242,9 @@ $$\boxed{\lim_{n\to+\infty}\mathbb P\big(|S_n(f)-\Sigma(f)|\ge\varepsilon\big)=0
 - Sommes de Riemann à points décalés : se ramener à la somme usuelle par continuité uniforme.
 - Calcul de $\int_0^{2\pi}\cos^n$ par les exponentielles et le binôme. Moments de l'arcsinus : $\binom{2m}m$ ; du demi-cercle : $\frac1{m+1}\binom{2m}m$.
 - Passage d'une convergence testée sur les fonctions continues à une convergence de probabilités $\mathbb P(Z_n<y)$ par encadrement de l'indicatrice.
-- Similitude diagonale pour symétriser une matrice tridiagonale : seul le produit des coefficients symétriques compte.
+- Pour $bc>0$, une similitude diagonale ramène la matrice tridiagonale à $aI_n+\sqrt{bc}\,T_n$.
 - Démonstration du théorème de Weierstrass par approximation de l'échelon : contrôle des sauts et de la zone de mauvaise approximation.
-- Inégalités de Markov et de Bienaymé-Tchebychev, sous-additivité, découpage en terme de concentration, terme de queue et reste déterministe.
+- Inégalités de Markov et de Bienaymé-Tchebychev, sous-additivité, découpage en terme de concentration, terme de queue et reste uniformément majoré.
 
 **Justifications que le jury 2026 a souvent attendues en vain.** Hypothèses du changement de variable (3a), coefficient multiplicatif (3c), décalage d'indice (5c), passage des fonctions polynomiales aux polynômes (5d), $|2\cos\theta_k|<2$ et valeurs propres distinctes (6), multiplicité conservée par translation (8a), théorème de Heine (11), indépendance des $W_{i,i}$ (13c), positivité et croissance pour Markov (14).
 

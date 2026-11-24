@@ -49,7 +49,7 @@
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20A_0.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Maths%20A%20OK.pdf"
   },
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "OpenAI Codex (famille GPT-6)",
@@ -102,6 +102,18 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contre-relecture des 34 réponses et des sept schémas des corrigés brut et guidé avec le sujet MP-MPI et le rapport 2026. Vérification de l’interpolation commune en Q13, de la compression en Q16, de la polarisation en Q23 et du choix de phase en Q26-c. Précision du rang auquel un bloc peut devenir non nul et rétablissement des figures 2 et 6 dans le brut.",
+      "tour": 3,
+      "fournisseur": "codex",
+      "agent": "relecture_astra_maths_2026"
     }
   ]
 }

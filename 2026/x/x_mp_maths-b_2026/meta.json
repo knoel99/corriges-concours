@@ -45,7 +45,7 @@
       "legende": "Le carré d’un coefficient diagonal intervient une fois dans la trace de X₃². Le carré d’un coefficient hors diagonale y intervient deux fois."
     }
   ],
-  "date_revision": "2026-11-22",
+  "date_revision": "2026-11-24",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -102,6 +102,18 @@
       "famille_modele": "GPT-6",
       "fournisseur": "codex",
       "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contre-relecture des 30 réponses et des sept schémas des corrigés brut et guidé avec le sujet MP-MPI et le rapport 2026. Vérification des coefficients en Q5d, de la conjugaison en Q8b, du comptage en Q9b, de l’approximation en Q10–12 et des moments en Q13–17. Correction des indications sur les cas dégénérés, la limite logarithmique et le reste aléatoire en Q17a.",
+      "tour": 3,
+      "fournisseur": "codex",
+      "agent": "relecture_astra_maths_2026"
     }
   ]
 }

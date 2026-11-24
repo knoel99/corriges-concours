@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 heures, calculatrice interdite. Thème : répartition des valeurs propres de matrices tridiagonales (loi de l'arcsinus), théorème de Weierstrass, loi du demi-cercle pour les matrices de Wigner. Trente questions, de 1 à 17b.
 
 Notations utilisées dans tout le corrigé : pour $f$ continue sur $[-2,2]$, $I(f)=\dfrac1\pi\displaystyle\int_{-2}^2\frac{f(x)}{\sqrt{4-x^2}}\,\mathrm dx$, et $f_k(x)=x^k$.
@@ -421,7 +423,7 @@ $$\begin{aligned}
 &\iff k\ge\frac{(n+1)\varphi}{\pi}.
 \end{aligned}$$
 
-Le nombre d'entiers $k\in\{1,\dots,n\}$ vérifiant cette condition est compris entre $n-\frac{(n+1)\varphi}\pi$ et $n+1-\frac{(n+1)\varphi}\pi$. Donc $\frac{q_n(y)}n\to1-\frac\varphi\pi$, limite strictement positive. Enfin $1-\frac1\pi\arccos\frac z2=\frac12+\frac1\pi\arcsin\frac z2$.
+Comme $0<(n+1)\varphi/\pi<n+1$, on compte exactement $q_n(y)=n+1-\lceil(n+1)\varphi/\pi\rceil$ entiers. Le plafond inclut la valeur propre égale à $y$ lorsque $(n+1)\varphi/\pi$ est entier. Donc $\frac{q_n(y)}n\to1-\frac\varphi\pi$, limite strictement positive. Enfin $1-\frac1\pi\arccos\frac z2=\frac12+\frac1\pi\arcsin\frac z2$.
 
 $$\boxed{\begin{aligned}
 q_n(y)&\underset{n\to\infty}{\sim}n\left(\frac12+\frac1\pi\arcsin\frac{y-a}{2\sqrt{bc}}\right) &&\text{si }|y-a|<2\sqrt{bc},\\
@@ -739,7 +741,7 @@ Enfin, si $P=\sum_{j=0}^dp_jf_j$, alors $\mathbb E(S_n(P))=\sum_jp_j\frac1n\math
 
 Soit $N$ tel que $|\mathbb E(S_n(P))-\Sigma(P)|\le\delta$ pour $n\ge N$.
 
-Alors $|D_n|\le3\delta=\frac\varepsilon2$ pour $n\ge N$.
+Les trois bornes donnent $|D_n(\omega)|\le3\delta=\frac\varepsilon2$ pour tout $\omega$ et tout $n\ge N$. Seul le premier terme de $D_n$ dépend de la réalisation de la matrice.
 
 **Conclusion.** Soit $n\ge N$. Si $|S_n(f)-\Sigma(f)|\ge\varepsilon$, alors $|A_n|+|C_n|\ge\varepsilon-|D_n|\ge\frac\varepsilon2$. Donc $|A_n|\ge\frac\varepsilon4$ ou $|C_n|\ge\frac\varepsilon4$. Par sous-additivité, pour tout $n\ge N$ :
 
