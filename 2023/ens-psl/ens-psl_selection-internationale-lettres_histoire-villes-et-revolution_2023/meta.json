@@ -1,0 +1,64 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-villes-et-revolution_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — villes et Révolution",
+    "annee": 2023
+  },
+  "intitule": "En quoi l’histoire urbaine renouvelle notre connaissance de la période révolutionnaire ?",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-ecrit-sil2023.pdf",
+    "sujet_sha256": "35cbc7469230b824d3af92a3b5c2fa0ced9e5131594ff1d84b1d47b54dbbb78e",
+    "references": [
+      "https://carnavalet.paris.fr/le-nouveau-parcours?page=2",
+      "https://www.gadagne-lyon.fr/sites/gadagne/files/medias/documents/2020-11/MHL-Gadagne_FicheTheme_18e-ChronologieRevolution.pdf",
+      "https://www.persee.fr/doc/arcpa_0000-0000_1910_num_76_1_45487_t1_0190_0000_15",
+      "https://books.openedition.org/pur/6428"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lieu-et-preuve.svg",
+      "question": "Argumentation",
+      "legende": "Comment la ville devient-elle une preuve ?"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Traitement du premier sujet individuel, choix de 1789–1799, comparaison Paris et Lyon, critique des sources."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification de la consigne et de ses limites contre le fac-similé officiel, des références et du schéma intégré aux deux éditions."
+    }
+  ]
+}
