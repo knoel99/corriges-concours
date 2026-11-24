@@ -1,0 +1,48 @@
+{
+  "slug": "bel_al_anglais-theme-lyon_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (thème Lyon)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=9",
+    "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ANGLAIS_2017%20.pdf#page=11"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Les regards dans le désert"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Thème anglais intégral de l’extrait de Boussole de Mathias Énard, avec registres du dialogue, longue phrase de souvenir, renversement des points de vue et retour à l’histoire du paysage, schéma."
+    }
+  ],
+  "droits_sources": {
+    "oeuvres": [
+      "Ce thème anglais de quatre heures, sans dictionnaire, provient de Boussole de Mathias Énard (2015). D’une chambre obscure, la voix se transporte vers un trajet entre Palmyre et Deir ez-Zor."
+    ],
+    "note": "Traductions pédagogiques originales. Les droits sur les œuvres sources appartiennent à leurs titulaires."
+  }
+}
