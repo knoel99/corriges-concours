@@ -4,7 +4,9 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
-**Révision** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+**Révision (tour 1)** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
 ## Présentation du sujet
 
@@ -219,11 +221,11 @@ def cycle_valide(OG6, a_max):
 
     Te = 0.01
     facteur = 1e-3 / Te**2
-    points = OG6[:-1]  # le dernier point répète le premier
-    n = len(points)
-    for i, p in enumerate(points):
-        avant = points[(i - 1) % n]
-        apres = points[(i + 1) % n]
+    n = len(OG6) - 1  # le dernier point répète le premier
+    for i in range(n):
+        avant = OG6[(i - 1) % n]
+        p = OG6[i]
+        apres = OG6[(i + 1) % n]
         a2 = sum((facteur * (apres[j] - 2*p[j] + avant[j]))**2
                  for j in range(3))
         if sqrt(a2) > a_max:
@@ -231,7 +233,9 @@ def cycle_valide(OG6, a_max):
     return True
 ```
 
-Les indices périodiques testent le passage de la fin d’un cycle au début du suivant. Les répétitions qui matérialisent un maintien sont conservées. Deux positions identiques successives formant à elles seules le cycle donnent une accélération nulle.
+Les indices périodiques testent le passage de la fin d’un cycle au début du suivant. Les répétitions qui matérialisent un maintien sont conservées. Deux positions identiques formant à elles seules le cycle donnent une accélération nulle. Le parcours prend $O(n)$ opérations et $O(1)$ cases auxiliaires.
+
+Par exemple, pour des abscisses successives $0,1,1,0$ en millimètres et des ordonnées et altitudes nulles, les accélérations centrées valent $+20,-10,-10$ m/s². Au seuil de $15$ m/s², seul le calcul au raccord révèle le dépassement. Au seuil de $20$ m/s², le cycle est accepté. Cette vérification porte sur les différences finies des échantillons. Une garantie entre les instants de mesure suppose une loi d’interpolation ou un modèle de trajectoire.
 
 ### Question 3.6
 
@@ -283,7 +287,7 @@ N_{\rm poids}=n_e n_n+(n_c-1)n_n^2+n_n n_s,\qquad
 $$
 La dernière somme compte un biais par neurone caché ou de sortie. Si l’on modélise les neurones sans biais, seul $N_{\rm poids}$ intervient.
 
-Par comptage, ajuster $N_{\rm par}$ coefficients indépendants exige au moins autant de **contraintes scalaires** indépendantes. Si chaque pose d’apprentissage fournit $n_s$ cibles scalaires indépendantes, cela donne $N_{\rm exemples}\geq\lceil N_{\rm par}/n_s\rceil$ pour ce comptage. Prendre au moins $N_{\rm par}$ exemples complets est une règle plus prudente. Aucun de ces comptages ne garantit la généralisation ni un seuil d’erreur en fonctionnement.
+Par comptage, ajuster $N_{\rm par}$ coefficients indépendants exige au moins autant de **contraintes scalaires** indépendantes. Si chaque pose d’apprentissage fournit $n_s$ cibles scalaires indépendantes, cela donne $N_{\rm exemples}\geq\lceil N_{\rm par}/n_s\rceil$ pour ce comptage. Par exemple, les quatre couches de douze neurones de la configuration 1 comptent $6\times12+3\times12^2+12\times6+4\times12+6=630$ paramètres avec biais, avant le recodage angulaire. Six contraintes indépendantes par pose donneraient le seuil de comptage de $105$ poses. Répéter une pose donne les mêmes équations, quelle que soit la taille du jeu d’entraînement. Aucun de ces comptages ne garantit la généralisation ni un seuil d’erreur en fonctionnement.
 
 Pour coder en sinus et cosinus les six angles **à prédire**, chaque angle cible donne deux valeurs. On aurait alors douze sorties puis une reconstruction avec `atan2(sin, cos)`. La phrase qui suit la question parle d’une couche d’entrée doublée. Avec le sens pose-vers-angles du schéma, le recodage des angles prédits porte sur la sortie. Un recodage distinct des seuls trois angles de la pose d’entrée porterait sa dimension de six à neuf.
 

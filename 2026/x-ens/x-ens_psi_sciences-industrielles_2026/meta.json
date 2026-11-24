@@ -83,7 +83,12 @@
   "revision": {
     "date": "2026-11-24",
     "modele": "OpenAI Codex",
-    "verification": "Comparaison des 63 réponses aux six parties et aux annexes A à F du sujet. Vérifications des unités, des courbes de commande et de l’incompatibilité du torseur en 1.12. Test numérique du programme de cycle."
+    "verification": "Comparaison des 63 réponses aux six parties et aux annexes A à F du sujet. Vérifications des unités, des courbes de commande et de l’incompatibilité du torseur en 1.12. Test numérique du programme de cycle.",
+    "relecture_independante": {
+      "date": "2026-11-24",
+      "modele": "GPT-6.2 Astra (effort Ultra)",
+      "verification": "Q1.1 à Q6.5 des deux éditions, sujet officiel, annexes et documents réponse. Calculs du réducteur, des commandes et du frein, comparaison des cycles au raccord et au seuil, quantification des contraintes scalaires du réseau. Correction de l’algorithme de Q3.5 en espace auxiliaire constant."
+    }
   },
   "provenance": {
     "redaction": {
@@ -122,6 +127,19 @@
       "modifications": null,
       "perimetre": "Comparaison des 63 réponses aux six parties et aux annexes A à F du sujet. Vérifications des unités, des courbes de commande et de l’incompatibilité du torseur en 1.12. Test numérique du programme de cycle.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "tour": 2,
+      "perimetre": "Q1.1 à Q6.5 des deux éditions, sujet officiel, annexes et documents réponse. Calculs du réducteur, des commandes et du frein, comparaison des cycles au raccord et au seuil, quantification des contraintes scalaires du réseau. Correction de l’algorithme de Q3.5 en espace auxiliaire constant.",
+      "agent": "astra_info_si",
       "fournisseur": "codex"
     }
   ]
