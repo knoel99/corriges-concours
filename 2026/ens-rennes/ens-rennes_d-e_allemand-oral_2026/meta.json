@@ -1,0 +1,47 @@
+{
+  "slug": "ens-rennes_d-e_allemand-oral_2026",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Allemand (oral)",
+  "questions": 0,
+  "sujets": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oraux-allemand-d-e-2026_1793377249028-pdf",
+    "sujet_sha256": "70f0336b958d8f80800577d4684e69d9b8e8593ed505a52056e98b29c491a632",
+    "apercu_sujet_sha256": "327990ae18aa7299c1b1b7538c049f826aa2ef0a24fae09625eec2b588a3890f",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2026-1",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-oral-2026_1793640932357-pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Sujet 2",
+      "legende": "Drei Fragen zur Wirkung einer Zuckerabgabe"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "6 exposés en allemand sur chacun des articles, guidage, schéma et relances d'entraînement."
+    }
+  ]
+}
