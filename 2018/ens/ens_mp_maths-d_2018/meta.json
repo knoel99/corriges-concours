@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-d_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2018
+  },
+  "questions": 53,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPI_sujet_MathD.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/18_mp_rap_emathd.pdf",
+    "sha256_sujet": "9ef5fc36b3e587fd9fce109e7157a871f939cd39a93e268c8d59286282b91a16"
+  },
+  "figures": [
+    {
+      "fichier": "figures/alternance-tchebychev.svg",
+      "question": "3.2",
+      "legende": "Le polynôme unitaire de degré cinq atteint alternativement ses deux bornes en six points. Chaque paire consécutive force une racine dans l’argument de comparaison."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification de toutes les questions des sept parties, y compris la construction entière par petites puissances, la caractérisation des racines communes et le passage du théorème de volume à l’approximation simultanée. Figure d’alternance de Tchebychev.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
