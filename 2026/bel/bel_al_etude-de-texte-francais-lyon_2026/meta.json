@@ -16,7 +16,9 @@
   },
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-04/Epreuve%20de%20sp%C3%A9cialit%C3%A9%202026.pdf#page=6",
-    "rapport": "https://www.ens-lyon.fr/sites/default/files/2026-10/Lettres%20Modernes%202026.pdf#page=2"
+    "rapport": "https://www.ens-lyon.fr/sites/default/files/2026-10/Lettres%20Modernes%202026.pdf#page=2",
+    "sujet_sha256": "62fa5ca9c1b2caf4de4b131c5e8e4432d72544a0e0a01930f1ffed7d6e59acc2",
+    "rapport_sha256": "c5170e6a15e274d84cb3e6b79cff50661c59b81560e631769cd13f6641ed0650"
   },
   "figures": [
     {
@@ -91,6 +93,30 @@
       "date": "2026-11-24",
       "modifications": false,
       "perimetre": "Confrontation aux pages 6 et 7 de l’épreuve et aux observations du jury. Distinction de la voix narrative et de l’enfant, échelles du paysage, repère « Une fois », nom retenu et déplacement final du regard vérifiés."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de spécialité lettres modernes sur les épanorthoses, les déplacements du regard et les rapports entre la quête familiale et la description."
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Comparaison des deux éditions aux lignes 1 à 37 de L’Acacia. Précision sur les trois reprises des verbes de la fin et la différence entre le passé simple de la rencontre et les participes de la reprise du travail."
     }
   ],
   "provenance": {
