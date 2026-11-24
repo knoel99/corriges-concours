@@ -10,6 +10,8 @@ Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir le
 
 ## Lire le bilan
 
+Le bilan daté donne les comptes par matière et les liens vers les preuves pour chaque épreuve. [Bilan du 24 novembre 2026](bilans/2026-11-24.md) · [Tableau détaillé](bilans/2026-11-24.tsv)
+
 Depuis la racine du dépôt, cette commande écrit une ligne par épreuve avec son état dans Git, son état sur le site et le lien vers la fiche. Le contrôle des PDF utilise `pdftotext` (paquet `poppler-utils`). L’option `--site` interroge les éditions en ligne des paires portant une signature qualifiante.
 
 ```sh
