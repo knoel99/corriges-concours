@@ -15,7 +15,9 @@
   "date_revision": "2026-11-24",
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_phys.pdf",
-    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_ePhy.pdf"
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_rap_ePhy.pdf",
+    "sujet_sha256": "cc93f13f3c1c01b279a72d9d65864f4f711f3c8875f95c11277fe2bce250d980",
+    "rapport_sha256": "2a497f831446d033d7b1bd237009f98049811a8bc1e9a5ebb3cd22e8109bb592"
   },
   "revision": {
     "date": "2026-11-24",
@@ -98,6 +100,18 @@
       "modifications": null,
       "perimetre": "Numérotations de A1 à A10 et B1 à B26 vérifiées sur le sujet et rapport écrit consulté. Contre-calcul indépendant des deux flux de chaleur, du rapport α/h, de la condition de surface homogène et de la non-séparabilité du champ initial. Contrôle numérique des profils par modes de Bessel.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 2,
+      "modifications": true,
+      "perimetre": "Relecture des éditions brute et guidée. Comparaison des dix questions courtes et des vingt-six questions de thermodynamique avec le sujet et le rapport de jury. Contrôle de la condition de bord du tissu, du temps diffusif et du premier mode cylindrique pour les paramètres de l’énoncé.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]

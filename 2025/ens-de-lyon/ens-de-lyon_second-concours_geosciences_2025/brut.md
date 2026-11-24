@@ -4,6 +4,8 @@
 
 **Rédaction** · modèle exact non renseigné (famille GPT-6) · effort non renseigné · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I — Trace volcanique et déformation régionale
 
 ### Question 1
@@ -71,6 +73,8 @@ C’est l’âge fourni par **les trois valeurs du tableau**, arrondies à cinq 
 
 ![Figure 3 — La régression sur sanidine, biotite et roche totale donne une pente de 6,325 × 10⁻⁶ avec les rapports du tableau.](figures/q08-isochrone-rubidium-strontium.svg)
 
+Peut-on expliquer la discordance par l’arrondi du tableau ? Si chacun des deux rapports de strontium extrêmes est arrondi à $5\times10^{-6}$ près, leur différence est comprise entre $0{,}000240$ et $0{,}000260$. Diviser par l’écart $51{,}2-11{,}7=39{,}5$ des rapports de rubidium puis appliquer $t=\ln(1+m)/\lambda$ donne $0{,}428$ à $0{,}463\ \mathrm{Ma}$. Même en tenant compte du dernier chiffre de rubidium, la valeur cartographique de $0{,}630\ \mathrm{Ma}$ est extérieure à cette plage. Il faudrait des incertitudes analytiques, des données ou des hypothèses géologiques supplémentaires pour rapprocher les deux estimations.
+
 ### Question 9
 
 Le trajet de la figure 3 représente un magma granitique hydraté (5 % d’eau dans le modèle) d’abord entièrement liquide. Pendant la remontée, la pression diminue et le magma échange de la chaleur avec l’encaissant plus froid. Il franchit le **liquidus**, cristallise progressivement dans l’intervalle liquide + cristaux, puis franchit le **solidus** vers 1,5 kbar, soit environ **5 km** sur l’axe de profondeur. La température de fin de cristallisation lue est de l’ordre de $750$–$770\ ^\circ\mathrm C$. Le niveau est cohérent avec l’anomalie S superficielle ; dans un réservoir naturel, des zones déjà cristallisées peuvent voisiner avec du magma encore mobile.
@@ -102,6 +106,8 @@ La coupe d’ouest en est doit associer les failles normales et blocs basculés 
 Le niveau de cendres Lava Creek s’étend de la région de Yellowstone jusqu’au Texas et sur plusieurs millions de kilomètres carrés selon l’échelle de l’annexe A.6. Cette dispersion et les dépôts épais proximaux témoignent d’une éruption explosive majeure avec colonne de cendres, retombées et courants pyroclastiques. Une enveloppe approximativement elliptique de $2100\times1700\ \mathrm{km}$ donne $A\simeq\pi(1050)(850)\simeq2{,}8\times10^6\ \mathrm{km^2}$. Avec une épaisseur moyenne illustrative de 5 cm, soit $5\times10^{-5}\ \mathrm{km}$, on trouve $V\simeq140\ \mathrm{km^3}$ pour cette composante de retombées.
 
 Une moyenne de 3 à 10 cm donne environ 80 à 280 km³. Les épais dépôts proximaux, l’érosion et les dépôts non cartographiés compliquent le passage au total, qui peut atteindre plusieurs centaines de km³, voire l’ordre de $10^3\ \mathrm{km^3}$. Sans isopaques ni densités, on ne peut en déduire un volume précis de magma en équivalent roche dense.
+
+Pour passer des retombées au magma émis, il faudrait une épaisseur $e(x,y)$ et une masse volumique du dépôt. Le volume de dépôts se calcule par $\int e\,dA$. L’équivalent en roche dense se calcule par $\int(\rho_{\rm dépôt}/\rho_{\rm dense})\, e\,dA$, auquel il faut ajouter les dépôts proximaux omis. Le simple produit aire–épaisseur de cette question renseigne donc sur l’ordre de grandeur des retombées recouvrant la carte.
 
 ### Question 14
 

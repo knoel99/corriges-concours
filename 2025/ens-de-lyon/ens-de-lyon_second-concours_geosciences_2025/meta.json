@@ -10,7 +10,9 @@
   "questions": 14,
   "sources": {
     "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/07/25_2cc_sujet_ST.pdf",
-    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eST.pdf"
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2025/09/25_2cc_rap_eST.pdf",
+    "sujet_sha256": "81a8c1ff9f25ff043b54a412b583d9e437e398929ecc554ecd5be3ae8646096b",
+    "rapport_sha256": "df1417efbf28d9a0760a48d25714d1a4180ba0539f0c713398555ee3da32ee10"
   },
   "figures": [
     {
@@ -64,6 +66,18 @@
       "modifications": true,
       "perimetre": "Corrigés brut et guidé.",
       "famille_modele": "GPT-6",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "tour": 1,
+      "modifications": true,
+      "perimetre": "Relecture des éditions brute et guidée. Contrôle des quatorze réponses, des cartes et des coupes avec le sujet et le rapport de jury. Recalcul de la migration apparente, des gradients thermiques, de la datation rubidium-strontium et de la dispersion des retombées de Lava Creek.",
+      "agent": "astra_physique",
       "fournisseur": "codex"
     }
   ]
