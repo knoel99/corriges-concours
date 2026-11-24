@@ -582,6 +582,8 @@
 | 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
+| 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
+| 2025 | ENS Rennes | D-E | Composition d’ordre économique | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Composition d’ordre économique | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/guide.md) |
 | 2024 | ENS Rennes | D-E | Droit civil | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_droit-civil_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Droit civil | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_droit-civil_2025/guide.md) |
