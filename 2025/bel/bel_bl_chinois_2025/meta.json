@@ -1,0 +1,41 @@
+{
+  "slug": "bel_bl_chinois_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Chinois",
+    "annee": 2025
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_epreuve_a_option_sujet_chinois.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_chinois_option.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/parcours.svg",
+      "legende": "Comment les deux articles passent-ils du chiffre à une conclusion ?",
+      "question": "Commentaire"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire composé en chinois des 2 documents du sujet officiel de six heures, guidage et schéma comparatif."
+    }
+  ]
+}
