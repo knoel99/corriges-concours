@@ -1,0 +1,74 @@
+{
+  "slug": "x-ens_psi_physique-psi_2026",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2026
+  },
+  "questions": 47,
+  "modele": {
+    "provider": "codex",
+    "model": "GPT-6"
+  },
+  "redaction": "Rédaction originale par deux agents IA de la famille GPT-6 d'après l'énoncé officiel et ses figures. Chaque agent a contre-relu la partie rédigée par l'autre.",
+  "modele_revision": "GPT-6 (Codex)",
+  "date_revision": "2026-11-22",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2026/2026_PSI_Physique_XSR.pdf",
+    "page_officielle": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=285",
+    "rapport": null
+  },
+  "figures": [
+    {
+      "fichier": "figures/q04-forces-sur-le-fil.svg",
+      "question": "Q4",
+      "legende": "Chaque portion voisine tire le tronçon vers elle, suivant sa propre tangente. La différence des deux composantes verticales accélère le fil."
+    },
+    {
+      "fichier": "figures/q07-deport-du-fil.svg",
+      "question": "Q7",
+      "legende": "Vue de dessus d'une voie droite. Le fil de contact franchit plusieurs fois la ligne médiane, et le point de captage se déplace sur la largeur de l'archet."
+    },
+    {
+      "fichier": "figures/q08-cycles-hysteresis.svg",
+      "question": "Q8",
+      "legende": "Cycles d'aimantation à même échelle d'excitation. Les deux passages par l'aimantation nulle délimitent un intervalle étroit pour le matériau doux et large pour le dur."
+    },
+    {
+      "fichier": "figures/q11-refraction-angulaire.svg",
+      "question": "Q11",
+      "legende": "La loi de passage pour une perméabilité relative de 1 000 maintient le champ de l'air proche de la normale jusqu'au voisinage immédiat de la tangente dans le fer."
+    },
+    {
+      "fichier": "figures/q12-lignes-interface.svg",
+      "question": "Q12",
+      "legende": "À une face polaire, le flux utile traverse l'air presque normalement. Une ligne de fuite d'une face latérale peut au contraire traverser l'air obliquement et rester presque tangente dans le fer."
+    },
+    {
+      "fichier": "figures/q20-profils-couette.svg",
+      "question": "Q20",
+      "legende": "Le champ décroît de la vitesse du rotor à zéro, avec un profil convexe. Deux épaisseurs relatives illustrent l'approximation linéaire en entrefer mince."
+    },
+    {
+      "fichier": "figures/q27-temperature-et-flux.svg",
+      "question": "Q27",
+      "legende": "Avec les données numériques des questions 30 et 31, le centre a un excès thermique voisin de 81 K et la surface de 50 K. Le flux radial croît jusqu'à 5 kW/m²."
+    },
+    {
+      "fichier": "figures/q34-flux-porteurs.svg",
+      "question": "Q34",
+      "legende": "Les électrons et les trous diffusent en sens opposés mais contribuent au courant diffusif dans le même sens, du silicium P vers le silicium N."
+    },
+    {
+      "fichier": "figures/q37-potentiel-champ-charge.svg",
+      "question": "Q37",
+      "legende": "Dans une jonction symétrique abrupte, la charge fixe négative puis positive donne un champ électrique négatif et un potentiel croissant de P vers N."
+    },
+    {
+      "fichier": "figures/q47-diode.svg",
+      "question": "Q47",
+      "legende": "Le courant inverse sature à environ un picoampère. Le même modèle à 25 °C atteint environ 14 mA pour une polarisation directe de 0,60 V."
+    }
+  ]
+}

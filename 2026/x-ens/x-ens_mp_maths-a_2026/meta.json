@@ -15,9 +15,44 @@
       "legende": "Si le maximum $M$ de $|p|$ était atteint en un point $x_0$ avec $\\mathbb D(x_0,\\delta)\\subset S$, le changement de variable et Q9 donneraient sur le cercle un point de $S$ où $|p|>M$"
     },
     {
+      "fichier": "figures/q13-interpolation.svg",
+      "question": "Q13",
+      "legende": "Un polynôme peut coïncider avec la racine de 1 − λ sur les trois valeurs propres 0, 1/2 et 1. Ces trois valeurs suffisent pour le calcul matriciel dans cet exemple."
+    },
+    {
       "fichier": "figures/q16-blocs-dilatation.svg",
       "question": "Q16",
-      "legende": "Blocs de $U_k^jE_1x$ pour $k=3$ : le terme $-D_Ax$ remonte d'un bloc par étape et n'atteint le bloc 1 qu'à l'étape $k+2$ (∗ : bloc quelconque)"
+      "legende": "Blocs de $U_k^jE_1x$ pour $k=3$ : le terme $-D_Ax$ remonte d'un bloc par étape et peut contribuer au bloc 1 pour la première fois à l'étape $k+2$ (∗ : bloc quelconque)"
+    },
+    {
+      "fichier": "figures/q19-enveloppe.svg",
+      "question": "Q19",
+      "legende": "Le Hausdorffien d’une matrice diagonale à trois valeurs propres forme leur triangle. Le point intérieur correspond aux poids 0,20, 0,35 et 0,45."
+    },
+    {
+      "fichier": "figures/q21-disque-nilpotente.svg",
+      "question": "Q21",
+      "legende": "À module ab fixé, la phase parcourt un cercle. Faire varier ab de 0 à 1/2 remplit le disque du Hausdorffien."
+    },
+    {
+      "fichier": "figures/q26c-phase.svg",
+      "question": "Q26-c",
+      "legende": "La liberté du facteur de phase fait tourner w jusqu’au nombre réel |w|. La majoration de sa partie réelle donne alors |w| ≤ 1."
+    },
+    {
+      "fichier": "figures/q30b-translation.svg",
+      "question": "Q30-b",
+      "legende": "Pour une matrice diagonale à trois valeurs propres, la translation par −c recentre le disque contenant le Hausdorffien. Le cercle en pointillé a pour rayon r(A − cI)."
     }
-  ]
+  ],
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Maths%20A_0.pdf",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/MP%2C%20MPI_Maths%20A%20OK.pdf"
+  },
+  "date_revision": "2026-11-22",
+  "revision": {
+    "date": "2026-11-22",
+    "modele": "OpenAI Codex (famille GPT-6)",
+    "verification": "Confrontation des 34 questions et sous-questions au sujet officiel MP-MPI et aux observations du jury. Contrôle des identités de compression, du signe de polarisation et des bornes sur les valeurs numériques. Contre-relecture indépendante des questions 1 à 17 et 18 à 30-b, et vérification des cinq nouveaux schémas."
+  }
 }
