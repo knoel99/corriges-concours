@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp_informatique-a_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2018,
+    "duree_heures": 4
+  },
+  "questions": 19,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2018_mp_sujet_infoa.pdf",
+    "sujet_sha256": "1645788707219ae1681d9b594b27543afc0648590f947e86546a1debbea63af7",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/18_info_rap_einfoa.pdf",
+    "rapport_sha256": "82a410b1faec5e6c0778a90f9e9af4b0b61f31657eacc0d20362f325ece0f390"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q7-petersen.svg",
+      "question": "Q7",
+      "legende": "Même numérotation que la figure 2. Bleu = 0, rouille = 1, vert = 2, violet = 3. Les deux ordres utilisent des palettes de tailles différentes."
+    },
+    {
+      "fichier": "figures/q14-blocs.svg",
+      "question": "Q14",
+      "legende": "Chaque bloc extrait emploie au plus deux couleurs. Les palettes des blocs et du résidu sont disjointes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 19 questions sur la coloration. Lecture du sujet, des figures et du rapport. Deux figures originales. Exécution des programmes de chaque édition et contrôle du 2-coloriage, des deux ordres de Petersen, des sous-graphes et des garanties de Wigderson."
+    }
+  ]
+}

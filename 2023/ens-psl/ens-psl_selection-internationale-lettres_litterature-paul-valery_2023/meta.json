@@ -1,0 +1,43 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-paul-valery_2023",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Paul Valéry",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit1-sil2023.pdf",
+    "sujet_sha256": "171320e9c38db8ce749a8dfe91b397f5e54130578e6b33a46529cd19655e721c",
+    "sujet_2": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit2-sil2023.pdf",
+    "sujet_2_sha256": "b7efec8597eb26ea3a7ff8d55a8fa86e27a902b886ab1d58670da0c600f6561f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Le retour du sens à la forme"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Commentaire organisé de la citation de Paul Valéry, vérifiée dans les deux exemplaires 1 et 2, avec expérience explicite de lecture de Verlaine, Racine et Apollinaire, préparation et schéma."
+    }
+  ],
+  "date_revision": "2026-11-24"
+}

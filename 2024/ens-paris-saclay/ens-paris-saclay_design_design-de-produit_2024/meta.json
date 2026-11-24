@@ -1,0 +1,80 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2024
+  },
+  "redaction": "Rédaction des deux éditions et six planches A3 originales après lecture des pages et neuf annexes. Exploration, cinq créations de révolution, deux plans de détail, essences et diffusion en collaboration.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_sujet%20design%201A_Produits.pdf",
+    "sujet_sha256": "333a4fe16c4eed8c4b445070886c85384677f56a511eda51d80a3a5f18c5284b",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=589",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-collection.svg",
+      "question": "Projet, planche 1",
+      "legende": "Les cinq silhouettes passent du format de la paume à celui du plateau."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-recherches.svg",
+      "question": "Projet, planche 2",
+      "legende": "Les recherches comparent une forme lisse, un collage visible et un profil incisé."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-cinq-coupes.svg",
+      "question": "Projet, planche 3",
+      "legende": "Les cinq objets ont une coupe axiale, une fonction et deux dimensions principales."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-pot.svg",
+      "question": "Projet, planche 4",
+      "legende": "La section et l’élévation du pot sont dessinées à taille réelle sur A3."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-ilot.svg",
+      "question": "Projet, planche 5",
+      "legende": "La coupe à taille réelle du plateau montre son fond de dix millimètres et le retour du pied."
+    },
+    {
+      "numero": 6,
+      "fichier": "figures/06-lancement.svg",
+      "question": "Projet, planche 6",
+      "legende": "Le présentoir et trois circuits relient la matière locale au lancement de la collection."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et six planches A3 originales après lecture des pages et neuf annexes. Exploration, cinq créations de révolution, deux plans de détail, essences et diffusion en collaboration."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 6,
+    "parties": [
+      "Le trait en creux",
+      "Du billon au profil",
+      "Cinq sections de révolution",
+      "Le pot au gabarit",
+      "L’îlot de chutes",
+      "Lancer une collaboration"
+    ]
+  }
+}

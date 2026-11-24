@@ -1,4 +1,4 @@
-# ENS de Lyon, second concours — Biologie-biochimie 2026 · Corrigé partiel brut
+# ENS de Lyon, second concours — Biologie-biochimie 2026 · Corrigé brut
 
 *Corrigé rédigé par IA, non officiel.*
 
@@ -6,7 +6,9 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Périmètre.** Les 28 questions des parties 1 à 5 et la question 6.2 sont corrigées intégralement, soit 29 réponses sur 30. En 6.1, la réponse explique la finalité physiologique du traitement. Sa réalisation par modification de cellules souches sort du périmètre de cette édition.
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture.** Les 30 questions sont traitées. La réponse 6.1 relie la réactivation des chaînes γ au principe du traitement autologue ciblant un élément régulateur érythroïde de BCL11A.
 
 ## Partie 1 · Transmission familiale
 
@@ -144,7 +146,7 @@ On peut comparer les échantillons de personnes portant naturellement les deux t
 
 ### 6.1 · Relier l’inhibition du répresseur à une thérapie
 
-L’effet recherché est une diminution de l’expression de BCL11A dans la lignée érythroïde. Le frein sur la production des chaînes γ est ainsi atténué. Les hématies peuvent contenir davantage d’HbF (α₂γ₂), dont la présence limite les conséquences de la polymérisation de l’HbS. La stratégie vise la composition en hémoglobines sans rétablir la séquence normale de la chaîne β. Cette réponse couvre la finalité et la justification du traitement.
+L’effet recherché est une diminution de l’expression de BCL11A dans la lignée érythroïde. Le frein sur la production des chaînes γ est ainsi atténué. Les hématies peuvent contenir davantage d’HbF (α₂γ₂), dont la présence limite les conséquences de la polymérisation de l’HbS. La stratégie vise la composition en hémoglobines sans rétablir la séquence normale de la chaîne β. Casgevy utilise les cellules souches hématopoïétiques du patient. Une modification ex vivo par CRISPR-Cas9 d’un élément régulateur érythroïde de BCL11A diminue la production de ce répresseur dans la descendance érythroïde. Les cellules autologues sont réadministrées après conditionnement. En se différenciant, elles donnent des précurseurs érythroïdes qui expriment davantage les chaînes γ, puis des hématies enrichies en HbF. Modifier un élément de régulation propre à la lignée permet de préserver les autres rôles de BCL11A. [Fiche clinique de Casgevy, EMA](https://www.ema.europa.eu/en/medicines/human/EPAR/casgevy)
 
 ![La diminution ciblée d’un répresseur dans la lignée érythroïde réactive la production de l’hémoglobine fœtale.](figures/reactivation-de-hbf.svg)
 
