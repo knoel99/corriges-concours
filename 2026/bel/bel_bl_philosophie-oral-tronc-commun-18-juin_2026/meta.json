@@ -1,0 +1,71 @@
+{
+  "slug": "bel_bl_philosophie-oral-tronc-commun-18-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie (oral tronc commun, 18 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun, 18 juin)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_bl_18_juin_philosophie.pdf",
+    "sujet_sha256": "ed65647707948001ac3db41d279247981e74cf6d53ad0afd61da73964318a363",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_tronc_commun_philosophie.pdf",
+    "rapport_sha256": "180bf05d31da83942e012bc27ad2128aa290cd7ed2c7419574cccc52cce61f54"
+  },
+  "figures": [
+    {
+      "fichier": "figures/etat.svg",
+      "question": "1",
+      "legende": "Trois épreuves de la force d’un État"
+    },
+    {
+      "fichier": "figures/sentiments.svg",
+      "question": "9",
+      "legende": "Comment un sentiment peut s’apprendre"
+    },
+    {
+      "fichier": "figures/excuses.svg",
+      "question": "21",
+      "legende": "Quelle réponse donne-t-on après un tort ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 propositions argumentées, de 24 questions et réponses pour l’entretien et de 3 schémas."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des intitulés, de leur groupement et des consignes aux documents du jury. Vérification de la portée des arguments, des exemples et des références philosophiques."
+    }
+  ]
+}
