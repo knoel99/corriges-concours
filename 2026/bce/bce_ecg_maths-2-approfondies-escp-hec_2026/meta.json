@@ -13,6 +13,63 @@
       "fichier": "figures/q10c-ensemble-en-l.svg",
       "question": "10(c)",
       "legende": "L'ensemble des points où la fonction de répartition de (U, V) est comprise entre 1/2 et 2/3 : deux demi-bandes de largeur 1/6 issues du petit carré de sommet (1/2, 1/2), l'une vers le haut, l'autre vers la droite"
+    },
+    {
+      "fichier": "figures/deux-couplages.svg",
+      "question": "17",
+      "legende": "Cent tirages par couplage. À gauche, deux marges normales donnent une droite décroissante. À droite, la marge exponentielle impose des ordonnées positives."
     }
-  ]
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Rédaction initiale des deux éditions, modèle indiqué dans les métadonnées publiques et le commit de rédaction.",
+      "source": "https://github.com/knoel99/prepa/commit/a55fdb6"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Première relecture indépendante et calcul direct de l’accroissement double dans la question 33. Identité de l’agent ayant réalisé la relecture indépendante non documentée.",
+      "source": "https://github.com/knoel99/prepa/commit/a6bb31b",
+      "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Seconde relecture, développement des réponses guidées et travail sur les deux coins de la question 27.c. Le commit d’intégration est cosigné par Claude Opus 5.5, sans identification séparée de l’agent de relecture.",
+      "source": "https://github.com/knoel99/prepa/commit/bb79fab",
+      "tour": 2
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Relecture intégrale des 36 questions et subdivisions des deux éditions, du PDF et du rapport illustré. Vérification sur l’image imprimée de la coquille de la page 6, distinction entre les numérotations du jury et du sujet, traitement des deux coins, simulations stables dans les queues, figure comparant les deux couplages et preuve directe de positivité.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/283%20-%20MATHEMATIQUES_2_APPROFONDIES_ESCP__BS_HEC_PARIS.pdf",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-10/283%20-%20Maths%20appro%202%20HEC%20Paris.ESCP%20BS%202026.pdf",
+    "sha256_sujet": "55d9858873e138313ac766ef91c8d08f9dd334a84c5749a3c0d3b2943556e47c",
+    "sha256_rapport": "ee1f878fbcb4918404df55881df960b355733348fa8c95c57dcc16411445e689"
+  }
 }

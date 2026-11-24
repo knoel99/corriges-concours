@@ -7,6 +7,65 @@
     "annee": 2026
   },
   "questions": 0,
-  "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "redaction": "Rédaction initiale Claude Opus 5.5, revue historique puis révision des deux éditions par GPT-6.2 Astra Ultra.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Dissertation",
+      "fichier": "figures/brics-g7.svg",
+      "legende": "Le G7 et les dix membres des BRICS retenus sur la carte du sujet en avril 2025. L’Arabie saoudite y figure comme invitée et les pays partenaires ont un statut distinct. Source : document 3 du sujet, d’après Géoconfluences, et fond Natural Earth."
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "gabarit": "dissertation",
+  "intitule": "Vers une désoccidentalisation du monde ?",
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/265%20-%20HGG_ESSEC_BS.pdf",
+    "sujet_sha256": "5cdd5e5ddda70f00e4bae07f332d09e1ec26cc36e99cef96ae2924938d990c66",
+    "index": "https://www.concours-bce.com/annales?field_annees%5B0%5D=99",
+    "fond_cartographique": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+    "rapport": "https://www.concours-bce.com/sites/default/files/2026-10/265%20-%20His%20g%C3%A9o%20ESSEC%202026.pdf",
+    "rapport_sha256": "dc01c1c37f7c2110d6859d33f842ea549405d10bc83a7c02076ad77c56f36f15",
+    "nature": "Six documents du sujet et rapport officiel de la même session."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "fournisseur": "claude-code",
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Rédaction initiale des deux éditions, sans copie IA préalable. Modèle attesté dans la métadonnée de génération au commit 00e2a2c6eb07d27333e11b6d79bbc010c7f28f52."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": "2026-11-13",
+      "modifications": true,
+      "perimetre": "Relecture adverse et corrections dans les deux éditions attestées par la revue jointe au commit 00e2a2c6eb07d27333e11b6d79bbc010c7f28f52. Le commit attribue la session d’intégration à Claude Opus 5.5. Le modèle du relecteur adverse n’y est pas individualisé."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "modele": "gpt-6.2-astra",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Confrontation des deux éditions aux six documents imprimés et au rapport du jury. Contrôle de ses citations, des statuts institutionnels et des deux contributions à l’ONU. Nouvelle discussion de la mesure des écarts de niveau de vie, de l’autonomie normative et de la puissance structurelle, avec croquis du G7 et des BRICS."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ]
+  }
 }

@@ -8,5 +8,63 @@
   },
   "questions": 0,
   "redaction": "IA (claude-opus-5-5), relue et révisée par IA",
-  "figures": []
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-sujet.svg",
+      "question": "Dissertation",
+      "legende": "À quel titre ce jugement est-il libre ?"
+    }
+  ],
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/252%20-%20DISSERTATION_DE_CULTURE_GENERALE_EDHEC_BS_ESSEC_BS.pdf",
+    "sujet_sha256": "d2d6cd9e98606d3d4817fd54f7fce44815b30d4d9ca289d37286dd2d14609eab",
+    "rapport_jury": "https://www.concours-bce.com/sites/default/files/2026-09/252%20-%20Diss%20culture%20g%C3%A9n%C3%A9rale%20EDHEC%20BS%20.ESSEC%20BS%202026.pdf",
+    "rapport_sha256": "2f1dd9c5569f62aa8943aa55b82d4e5c9d6f7f813ba07738576bf65c5a045002"
+  },
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "claude-opus-5-5",
+      "famille_modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": true,
+      "perimetre": "Rédaction historique des deux éditions."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": null,
+      "effort": null,
+      "vitesse": null,
+      "date": null,
+      "modifications": null,
+      "perimetre": "Relecture précédemment signalée, détails non renseignés."
+    },
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": false,
+      "perimetre": "Vérification du libellé, des consignes de copie et des critères d’évaluation dans le sujet et le rapport BCE."
+    },
+    {
+      "phase": "revision",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Correction de la portée du jugement réfléchissant et du rôle des raisons et du contradictoire. Révision des cas Zola, Kant et Arendt dans les deux éditions. Ajout d’un schéma pédagogique."
+    }
+  ]
 }

@@ -1,0 +1,63 @@
+{
+  "slug": "bce_ecg_polonais-lvb-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Polonais LVB (ELVi)",
+    "annee": 2026,
+    "modalite": "écrit"
+  },
+  "intitule": "Tradition de la chasse et sécurité publique",
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=20",
+    "sujet_sha256": "29a08b157bd5022c73a429363d249d2ec90840123c908135e667cd27cf018c98",
+    "pages": "20–24"
+  },
+  "figures": [
+    {
+      "fichier": "figures/accidents.svg",
+      "question": "Dossier documentaire",
+      "legende": "Trois saisons françaises, deux mesures"
+    }
+  ],
+  "decompte": {
+    "resume": 242,
+    "essai": 340,
+    "convention": "Mots séparés par des espaces."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des trois réponses en langue cible, du guide et d’un schéma établi à partir du document visuel."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Contrôle des populations et des périodes statistiques et lecture des deux graphiques p. 24. Relecture de la traduction des paragraphes entre crochets et vérification des longueurs."
+    }
+  ]
+}

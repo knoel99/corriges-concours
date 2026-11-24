@@ -57,10 +57,13 @@
 | 2026 | Banque PT | PT | Sciences industrielles B | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-b_2026/guide.md) |
 | 2026 | Banque PT | PT | Sciences industrielles C | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/brut.md) | [md](2026/banque-pt/banque-pt_pt_sciences-industrielles-c_2026/guide.md) |
 | 2025 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/brut.md) | [md](2025/bce/bce_ecg_culture-generale-edhec-essec_2025/guide.md) |
+| 2026 | BCE | ECG | Allemand LVA (ELVi) | [md](2026/bce/bce_ecg_allemand-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_allemand-lva-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Allemand LVB (ELVi) | [md](2026/bce/bce_ecg_allemand-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_allemand-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Anglais LVA (ELVi) | [md](2026/bce/bce_ecg_anglais-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_anglais-lva-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Anglais LVB (ELVi) | [md](2026/bce/bce_ecg_anglais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_anglais-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Arabe littéral LVA (ELVi) | [md](2026/bce/bce_ecg_arabe-litteral-lva-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_arabe-litteral-lva-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Arabe littéral LVB (ELVi) | [md](2026/bce/bce_ecg_arabe-litteral-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_arabe-litteral-lvb-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Hébreu LVB (ELVi) | [md](2026/bce/bce_ecg_hebreu-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_hebreu-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Culture générale (EDHEC-ESSEC) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/brut.md) | [md](2026/bce/bce_ecg_culture-generale-edhec-essec_2026/guide.md) |
 | 2025 | BCE | ECG | Culture générale (emlyon-HEC) | [md](2025/bce/bce_ecg_culture-generale-emlyon-hec_2025/brut.md) | [md](2025/bce/bce_ecg_culture-generale-emlyon-hec_2025/guide.md) |
 | 2026 | BCE | ECG | Culture générale (emlyon-HEC) | [md](2026/bce/bce_ecg_culture-generale-emlyon-hec_2026/brut.md) | [md](2026/bce/bce_ecg_culture-generale-emlyon-hec_2026/guide.md) |
@@ -91,6 +94,8 @@
 | 2025 | BCE | ECG | Maths approfondies (ESSEC-HEC) | [md](2025/bce/bce_ecg_maths-approfondies-essec-hec_2025/brut.md) | [md](2025/bce/bce_ecg_maths-approfondies-essec-hec_2025/guide.md) |
 | 2026 | BCE | ECG | Maths approfondies (ESSEC-HEC) | [md](2026/bce/bce_ecg_maths-approfondies-essec-hec_2026/brut.md) | [md](2026/bce/bce_ecg_maths-approfondies-essec-hec_2026/guide.md) |
 | 2025 | BCE | ECG | Synthèse de textes (ESCP-HEC) | [md](2025/bce/bce_ecg_synthese-de-textes-escp-hec_2025/brut.md) | [md](2025/bce/bce_ecg_synthese-de-textes-escp-hec_2025/guide.md) |
+| 2026 | BCE | ECG | Japonais LVB (ELVi) | [md](2026/bce/bce_ecg_japonais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_japonais-lvb-elvi_2026/guide.md) |
+| 2026 | BCE | ECG | Polonais LVB (ELVi) | [md](2026/bce/bce_ecg_polonais-lvb-elvi_2026/brut.md) | [md](2026/bce/bce_ecg_polonais-lvb-elvi_2026/guide.md) |
 | 2026 | BCE | ECG | Synthèse de textes (ESCP-HEC) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/brut.md) | [md](2026/bce/bce_ecg_synthese-de-textes-escp-hec_2026/guide.md) |
 | 2025 | BCE | ECT | Culture générale (Audencia) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/brut.md) | [md](2025/bce/bce_ect_culture-generale-audencia_2025/guide.md) |
 | 2026 | BCE | ECT | Culture générale (Audencia) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/brut.md) | [md](2026/bce/bce_ect_culture-generale-audencia_2026/guide.md) |
@@ -466,6 +471,7 @@
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
+| 2020 | ENS de Lyon | Second concours | Chimie | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Chimie | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_chimie_2021/guide.md) |
 | 2022 | ENS de Lyon | Second concours | Chimie | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_chimie_2022/guide.md) |
 | 2023 | ENS de Lyon | Second concours | Chimie | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/brut.md) | [md](2023/ens-de-lyon/ens-de-lyon_second-concours_chimie_2023/guide.md) |
@@ -682,6 +688,7 @@
 | 2026 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2026/guide.md) |
 | 2026 | X-ENS | MP-MPI-PC-PSI | Français | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/brut.md) | [md](2026/x-ens/x-ens_mp-mpi-pc-psi_francais_2026/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2021 | X-ENS | MP | Informatique A | [md](2021/x-ens/x-ens_mp_informatique-a_2021/brut.md) | [md](2021/x-ens/x-ens_mp_informatique-a_2021/guide.md) |
 | 2022 | X-ENS | MP | Informatique A | [md](2022/x-ens/x-ens_mp_informatique-a_2022/brut.md) | [md](2022/x-ens/x-ens_mp_informatique-a_2022/guide.md) |
 | 2023 | X-ENS | MP-MPI | Informatique A | [md](2023/x-ens/x-ens_mp_informatique-a_2023/brut.md) | [md](2023/x-ens/x-ens_mp_informatique-a_2023/guide.md) |
 | 2024 | X-ENS | MP | Informatique A | [md](2024/x-ens/x-ens_mp_informatique-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_informatique-a_2024/guide.md) |
