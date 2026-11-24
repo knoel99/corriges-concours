@@ -1,0 +1,75 @@
+{
+  "slug": "bel_bl_economie-oral-a-option_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Économie (oral à option)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Économie (oral à option)",
+  "questions": 0,
+  "sujets": 14,
+  "tirages": 7,
+  "couverture": {
+    "statut": "partiel",
+    "traite": "Quatorze intitulés consignés à la page 3 du rapport du jury.",
+    "manquant": "Documents d’accompagnement du tirage non retrouvés dans le corpus publié."
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_economie_option.pdf#page=3",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_economie_option.pdf",
+    "rapport_sha256": "2702f831bfb4ba3caa724d18296b676438e0ae377725c0432f84f23f9cbc1526"
+  },
+  "figures": [
+    {
+      "fichier": "figures/equilibre.svg",
+      "question": "7",
+      "legende": "Un prix qui rend compatibles offre et demande"
+    },
+    {
+      "fichier": "figures/cout-opportunite.svg",
+      "question": "9",
+      "legende": "Échanger un outil contre une pièce et demie de tissu"
+    },
+    {
+      "fichier": "figures/contrefactuel.svg",
+      "question": "14",
+      "legende": "Comparer les groupes selon le tirage"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des quatorze analyses des intitulés, des exercices chiffrés, des relances et de trois schémas. Documents de tirage indisponibles."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Lecture du rapport et vérification de sa liste, des hypothèses, des calculs et des définitions BCE et Insee. Vérification du prix 2019."
+    }
+  ]
+}
