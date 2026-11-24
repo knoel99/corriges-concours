@@ -1,0 +1,41 @@
+{
+  "slug": "bce_ecg_portugais-lva-elvi_2026",
+  "epreuve": {
+    "concours": "BCE",
+    "filiere": "ECG",
+    "matiere": "Portugais LVA (ELVi)",
+    "annee": 2026
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-bce.com/sites/default/files/2026-04/75%20AR%20-%20LANGUE_VIVANTE_A_ELVI_ARABE_ITALIEN_PORTUGAIS_RUSSE.pdf#page=13",
+    "sujet_sha256": "15c3ad1a28070ed3e4cc51677da9e62c38d2a07d29e3303ae0d1f790769e12e2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dossier.svg",
+      "question": "Dossier",
+      "legende": "Uma escrita coletiva e a sua receção"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des trois exercices de portugais LVA sur les Novas Cartas Portuguesas, comparaison du préfacier et du chroniqueur, essai sur les dominations et traduction des seuls paragraphes entre crochets, schéma."
+    }
+  ]
+}
