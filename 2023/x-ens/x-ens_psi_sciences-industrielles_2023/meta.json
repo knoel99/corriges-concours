@@ -1,0 +1,81 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2023
+  },
+  "questions": 80,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_Sujet_ecrit_SI_PSI.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_PSI_rapport_ecrit_SI.pdf",
+    "documents_reponse": "Inclus dans le PDF du sujet, pages PDF 38 à 41."
+  },
+  "figures": [
+    {
+      "fichier": "figures/q1-02-couette.svg",
+      "question": "Q1.2",
+      "legende": "Coupe locale de l’entrefer. Le profil linéaire relie les deux conditions d’adhérence."
+    },
+    {
+      "fichier": "figures/q2-04-moments-poids.svg",
+      "question": "Q2.4",
+      "legende": "Bras et avant-bras déployés. Chaque flèche représente un poids appliqué à son abscisse propre."
+    },
+    {
+      "fichier": "figures/q2-08-basculement.svg",
+      "question": "Q2.8",
+      "legende": "À la limite, la ligne de poids traverse le bord du socle et la réaction se concentre au même bord."
+    },
+    {
+      "fichier": "figures/q2-11-efforts-dr1.svg",
+      "question": "Q2.11",
+      "legende": "Efforts tangentiels sur les huit positions de DR1, ici dans le sens positif pour équilibrer un couple négatif."
+    },
+    {
+      "fichier": "figures/q3-09-posture-dr2.svg",
+      "question": "Q3.9",
+      "legende": "Posture initiale à la même échelle horizontalement et verticalement. Un carreau mesure 200 mm."
+    },
+    {
+      "fichier": "figures/q3-11-azimut-dr3.svg",
+      "question": "Q3.11",
+      "legende": "Vue en plan de DR3. Les flèches marquent la vitesse locale et les traits pointillés donnent les directions radiales."
+    },
+    {
+      "fichier": "figures/q4-03-commande-dr4.svg",
+      "question": "Q4.3",
+      "legende": "Boucle de position complétée. Le couple résistant est une entrée du bloc moteur et le retour de position est négatif."
+    },
+    {
+      "fichier": "figures/q4-10-inertie-verticale.svg",
+      "question": "Q4.10",
+      "legende": "La distance des masses à l’axe vertical diminue lors du repli, sous réserve des limites géométriques."
+    },
+    {
+      "fichier": "figures/q5-02-graphe-bille.svg",
+      "question": "Q5.2",
+      "legende": "Une branche à bille relie le changeur, le piston et la platine. Cinq autres branches sont réparties sur la couronne."
+    },
+    {
+      "fichier": "figures/q5-10-traction-excentree.svg",
+      "question": "Q5.10",
+      "legende": "Dans la coupe perpendiculaire à y₆, la distance entre M et la ligne de traction est le bras de levier e."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "modifications": true,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "perimetre": "Rédaction des 80 questions, brut et guidé, dix schémas dont les quatre documents-réponses et confrontation au scan du sujet, annexes et rapport du jury. Contrôles des trajectoires, des équilibres, des signes, des valeurs numériques et des écarts entre données de texte et simulations."
+    }
+  ]
+}
