@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## 1. Résumé analytique comparatif
 
 Oba artykuły przedstawiają spór o bezpieczeństwo polowań w Polsce. Pierwszy opisuje skutki wypadków dla rodzin i mieszkańców oraz postuluje skuteczniejszy nadzór. Drugi pokazuje, dlaczego mimo szerokiego społecznego poparcia dla okresowych badań lekarskich i psychologicznych Sejm odrzucił dotyczący ich projekt już w pierwszym czytaniu. Francja pojawia się w pytaniu, lecz żaden z tych dwóch artykułów nie przedstawia francuskich danych pozwalających porównać skalę wypadków ani ich zmiany w czasie.
@@ -47,5 +49,7 @@ L’essai confronte la transmission d’une culture, illustrée par le concert d
 **Longueur des réponses.** Le résumé compte 242 mots et l’essai 340 par séparation aux espaces, titres exclus. Tous deux respectent la tolérance de 10 %.
 
 ![Trois saisons françaises, deux mesures](figures/accidents.svg)
+
+Souligner les expressions temporelles polonaises puis inscrire en regard la saison à laquelle elles renvoient. Six décès pendant deux saisons successives peuvent accompagner des nombres totaux d’accidents différents.
 
 [Fascicule officiel commun, à partir de la page 20](https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=20)
