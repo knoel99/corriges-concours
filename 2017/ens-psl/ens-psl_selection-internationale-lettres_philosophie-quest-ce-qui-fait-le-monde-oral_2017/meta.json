@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-quest-ce-qui-fait-le-monde-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Qu’est-ce qui fait le monde (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Qu’est-ce qui fait le monde (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet3.pdf",
+    "sha256_sujet": "316e370b1b1d6d2684afa33ac5984fc73c8e0c712f8148ba6182f982d67de276",
+    "reperage": "Développer la question « Qu’est-ce qui fait le monde ? »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Qu’est-ce qui fait unité ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-pourquoi-doute-t-on-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Pourquoi doute-t-on (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Pourquoi doute-t-on (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet4.pdf",
+    "sha256_sujet": "6a980d5d9530ca15a7183e9c217dce3a480b928ece92e2fbdfe51b9e9a114796",
+    "reperage": "Développer la question « Pourquoi doute-t-on ? »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Trois questions à poser devant un doute"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    }
+  ]
+}

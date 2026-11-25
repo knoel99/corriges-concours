@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-comment-une-communaute-trouve-t-elle-son-identite-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Comment une communauté trouve-t-elle son identité (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Comment une communauté trouve-t-elle son identité (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet5.pdf",
+    "sha256_sujet": "ac65635922343dfa0300922262f22555c68ccb5be87844101db0f2d2194e2c3b",
+    "reperage": "Développer la question « Comment une communauté trouve-t-elle son identité ? »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Trois manières de se reconnaître"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    }
+  ]
+}
