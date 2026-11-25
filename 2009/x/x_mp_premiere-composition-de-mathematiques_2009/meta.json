@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2009
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2009.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2009_rapport_jury.pdf",
+    "sha256_sujet": "72d2da00e1fd179cd92bc84651a589cf2525b851f8100996ad904aa63b8c5613"
+  },
+  "figures": [
+    {
+      "fichier": "figures/concentration-convolution.svg",
+      "question": "12.b",
+      "legende": "Exemple de densités initiales normales centrées de variance un. Après convolution et changement d’échelle, la masse hors d’un voisinage de zéro diminue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions, contrôle du sujet de quatre pages et du rapport des correcteurs. Convergence des séries intérieures et des familles doubles, rayon des séries de Taylor et concentration par les moments d’ordre deux et quatre. Figure d’une famille de densités concentrées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
