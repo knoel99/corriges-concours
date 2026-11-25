@@ -10,6 +10,8 @@
 
 **Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Les deux exercices portent sur le même extrait de *Frankenstein* de Mary Shelley. Le commentaire en anglais va du débarquement des époux à la dispersion des chercheurs, lignes 1 à 59. La version commence au départ d’Elizabeth, ligne 22, et s’achève sur l’évanouissement de Victor, ligne 36. Dans cette épreuve de six heures avec dictionnaire unilingue autorisé, tracer ces bornes dès la première lecture évite de confondre le réveil de Victor, ligne 37, avec la fin du passage à traduire.
@@ -36,6 +38,8 @@ Victor identifie l’origine du cri, peut imaginer Elizabeth endormie après que
 | Faire partager un souvenir | Les présents du récit (l. 31 et 34), les deux gestes de désignation (l. 51–56), les « we » et le « they » (l. 1 et 56–59). | Pourquoi le geste du témoin convainc-il si mal ses compagnons alors que l’image obsède encore celui qui raconte ? |
 
 ![Figure 1 — Le geste répété à la fenêtre](figures/deux-gestes.svg)
+
+Retrouver le sujet de chacun des deux gestes avant d’identifier les témoins. Le second geste permet à Victor d’indiquer un lieu. Il donne à la foule un point de départ pour ses recherches, sans lui fournir la même expérience qu’au narrateur.
 
 > [!JURY]
 > À la page 4, le jury demande de construire une interprétation en rapprochant des particularités de l’extrait. On peut ainsi étudier ensemble le cri d’Elizabeth et le bruit du coup de feu. Victor accourt à la chambre, puis la foule y accourt à son tour. Dans les deux cas, le bruit conduit au lieu d’un événement dont l’action principale échappe au regard.

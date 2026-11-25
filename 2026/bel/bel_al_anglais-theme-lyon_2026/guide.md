@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Le thème anglais de spécialité, commun à l’ENS de Lyon et à l’ENS Paris-Saclay, demande de traduire en quatre heures, sans dictionnaire, deux paragraphes d’*Ils vont tuer Robert Kennedy* de Marc Dugain (2017). Le 22 novembre 1963, un enfant de neuf ans est témoin d’une scène familiale à Vancouver. Le titre du livre nomme Robert. Le président dont on apprend ici la mort est John Kennedy. Le texte retarde même son nom jusqu’à la scène du salon. La traduction doit ménager ce délai.
@@ -24,6 +26,8 @@ Le thème anglais de spécialité, commun à l’ENS de Lyon et à l’ENS Paris
 La pluie est antérieure à la sortie au jardin. Le père a pris une participation dans la clinique avant d’y être appelé pour une urgence. L’enfant, lui, est en plein jeu lorsque sa mère surgit. Le premier repère justifie le passage du *past perfect* au prétérit simple et au prétérit progressif. Le soir, les présentateurs poursuivent une activité commencée plusieurs heures auparavant. *Since midafternoon* désigne le départ de cette activité. Avec *had been doing*, on fait du retour du père le point d’où sa durée peut se mesurer.
 
 ![Figure 1 — La soirée comme point de repère](figures/chronologie.svg)
+
+Faire varier le repère en anglais. Depuis le présent, on dirait *have been talking*. Racontée depuis la soirée passée, la même durée devient *had been talking*. Le complément introduit par *since* garde le même point de départ.
 
 ### Retrouver qui sait quoi
 
