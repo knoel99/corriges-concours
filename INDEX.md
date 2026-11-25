@@ -185,6 +185,7 @@
 | 2026 | BEL | AL | Français (oral tronc commun 22 juin commission 2) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-2_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 23 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 24 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 25 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-25-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-25-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 26 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 29 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 30 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/guide.md) |
