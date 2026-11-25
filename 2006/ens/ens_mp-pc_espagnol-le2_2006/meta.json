@@ -1,0 +1,72 @@
+{
+  "slug": "ens_mp-pc_espagnol-le2_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LE2)",
+    "annee": 2006,
+    "modalite": "écrit",
+    "duree_heures": 2
+  },
+  "intitule": "La révolte du consommateur",
+  "questions": 2,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=6",
+    "sha256_sujet": "1567a166fd67c04e3d5615d14281c97e16050c7425544c7210420bab2e1d8982",
+    "etablissements_imprimes": "ENS de Paris et de Cachan",
+    "page_version": "6",
+    "texte_support": "D’après El País Semanal, septembre 2004.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=6",
+        "sha256": "1567a166fd67c04e3d5615d14281c97e16050c7425544c7210420bab2e1d8982",
+        "pages": "6",
+        "pages_document": 12,
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf",
+        "date_capture_utc": "sans capture"
+      }
+    ],
+    "code_garde": "61.10PM"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/client-et-citoyen.svg",
+      "question": "1",
+      "legende": "La réclamation individuelle prend une dimension civique lorsqu’elle fait apparaître une difficulté commune et permet d’obtenir des règles accessibles à tous."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « La révolte du consommateur », réponse personnelle en espagnol, indications de traduction et de rédaction, schéma sur La réclamation individuelle prend une dimension civique lorsqu’elle fait apparaître une difficulté commune et permet d’obtenir des règles accessibles à tous."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  },
+  "bareme": {
+    "version": 15,
+    "expression": 5
+  }
+}
