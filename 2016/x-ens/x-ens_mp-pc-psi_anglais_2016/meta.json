@@ -1,0 +1,75 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Intelligence artificielle, travail et reconnaissance de droits aux robots",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "mots_hors_titre": {
+    "A": 613,
+    "B": 515
+  },
+  "sources": {
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2016/",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/06/16_mp_pc_LV_Anglais_XEULCR.pdf",
+    "sujet_sha256": "ea19ce709a78b9e5f7333b3f63a79383d593c2d4c02d9da7af4c4685600909ff",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP-PC_rap_Eang.pdf",
+    "rapport_jury_sha256": "edfc3130ac3e2cf3d343e717885b469718a663b28a1fbdc63952cb570392341a",
+    "sujet_autre_publication": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_mppc_sujet_lve_ang.pdf",
+    "sujet_autre_publication_sha256": "833df47c3a16fa5dd8d227258876dd152325ee5b45ae3522ae5fd2ffdff76397",
+    "rapport_autre_publication": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/16_mppc_rap_eang.pdf",
+    "rapport_autre_publication_sha256": "40fffb64510f9b64dcfe623896fb386482b56cec7720021fcf0e85dc46463c99",
+    "precision": "Le sujet et le rapport du jury distinguent la synthèse, qui exclut le document 5, et l’éditorial personnel en réponse au Washington Times."
+  },
+  "redaction": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Intelligence artificielle, travail et reconnaissance de droits aux robots.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/capacites.svg",
+      "legende": "Le transfert d’une aptitude entre deux domaines reste une question distincte."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/secteurs.svg",
+      "legende": "Distinguer répartition des robots et extrapolation américaine sur le travail."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/droits.svg",
+      "legende": "Reconnaissance d’une voix, protection d’un être sensible et droit de vote n’ont pas le même critère."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_psi_2015_2021",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Intelligence artificielle, travail et reconnaissance de droits aux robots.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
