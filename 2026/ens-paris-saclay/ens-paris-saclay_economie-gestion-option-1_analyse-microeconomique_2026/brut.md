@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Concurrence, entrée et information sur les coûts
 
 On pose $A=a-c>0$ et $K=A^2/b$. Les quantités sont non négatives. Dans la première partie tous les équilibres symétriques calculés sont intérieurs. Les parties suivantes nécessitent parfois de traiter une production nulle.
@@ -37,6 +39,10 @@ L’augmentation des quantités du monopole à la concurrence réduit le prix et
 **1.5.1 à 1.5.5.** Par récurrence à rebours, le suiveur répond $R_2(q_1)=\max(0,(A-bq_1)/(2b))$. Sur la branche positive, le leader maximise $q_1(A-bq_1)/2$. D’où
 $$q_1^S=A/(2b),\quad q_2^S=A/(4b),\quad Q^S=3A/(4b),\quad p^S=c+A/4.$$
 Une production du leader assez forte pour évincer totalement le suiveur donnerait ici un profit nul ou négatif. Les profits sont $\pi_1^S=K/8>K/9$ et $\pi_2^S=K/16<K/9$. Le leader gagne deux fois le profit du suiveur. Le surplus des acheteurs vaut $9K/32$ et le surplus total $15K/32$. Ils dépassent ceux de Cournot et restent en dessous des niveaux concurrentiels. L’engagement crédible du premier producteur incite le second à réduire sa quantité. Cette contraction ne compense qu’en partie l’expansion du leader.
+
+À coûts identiques, l’engagement du meneur porte la quantité totale de $2A/(3b)$ à $3A/(4b)$, soit un gain de $A/(12b)$ par rapport au jeu simultané. Par la demande inverse, cet écart fait baisser le prix de $A/12$. L’écart à la quantité concurrentielle se réduit donc quand le meneur s’engage en premier.
+
+![Figure 1 — Quantités offertes selon la forme de concurrence](figures/quantites-equilibre.svg)
 
 **1.6.1 à 1.6.4.** L’indice $L=(p-c)/p$ mesure la fraction du prix correspondant à la marge sur coût marginal. À un optimum intérieur de prix d’une firme dont la demande propre est $Q(p)$, la condition $Q+(p-c)Q'=0$ donne $L=-1/\varepsilon$. Une demande plus élastique en valeur absolue limite la marge relative soutenable. En oligopole il faut distinguer la demande de marché de celle que perçoit chaque firme compte tenu de sa stratégie et des réactions des autres. Ici $L$ augmente avec $p$ puisque $c>0$. Les valeurs $0,0,A/(a+3c),A/(a+2c),A/(a+c)$ correspondent respectivement à la concurrence parfaite, Bertrand, Stackelberg, Cournot et au monopole. Ainsi $L^{CP}=L^B<L^S<L^C<L^M$.
 

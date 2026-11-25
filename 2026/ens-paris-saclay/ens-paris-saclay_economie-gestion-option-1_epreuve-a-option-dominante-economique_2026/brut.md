@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Dans quelle mesure peut-on parler de décolonisation économique au vingtième siècle ?
 
 L’Inde accède à l’indépendance en 1947. Quatre ans plus tard s’ouvre le premier plan quinquennal indien. L’écart entre ces deux dates est révélateur. La souveraineté politique donne à un gouvernement le pouvoir de définir des priorités économiques, mais la capacité de les financer, de les mettre en œuvre et d’en distribuer les bénéfices se construit dans la durée. L’économie coloniale avait organisé le prélèvement fiscal, les circuits de crédit, les infrastructures et l’accès aux marchés selon des rapports de pouvoir qui survivent parfois au départ de l’administrateur. On entendra par décolonisation économique le transfert effectif du pouvoir de décider de l’usage des ressources, de l’accumulation et des relations extérieures. Comment apprécier l’ampleur de ce transfert au vingtième siècle, sans confondre une dépendance économique ordinaire avec la persistance d’une domination coloniale ?
@@ -25,6 +27,10 @@ La planification indienne privilégie, en particulier à partir du deuxième pla
 D’autres pays cherchent d’abord à maîtriser leurs produits d’exportation. L’Algérie nationalise en 1971 une part décisive de ses intérêts pétroliers et gaziers, afin de financer ses investissements à partir de la rente. La hausse du prix du pétrole dans les années 1970 améliore le rapport de négociation de certains producteurs. Un pays importateur d’énergie qui exporte du café peut, au même moment, voir son pouvoir d’achat extérieur diminuer. Le partage du revenu, la capacité de raffinage, l’accès aux technologies et la volatilité du prix mondial permettent d’apprécier la portée d’une nationalisation plus finement que le seul taux de propriété publique.
 
 Ces stratégies ont une dimension collective. La conférence de Bandung en 1955 exprime une volonté d’action politique commune. La création de la CNUCED en 1964, puis l’appel de l’Assemblée générale de l’ONU à un nouvel ordre économique international en 1974, portent sur les règles du commerce, les matières premières, les transferts techniques et le financement. La critique de Prebisch met l’accent sur la vulnérabilité des économies spécialisées dans certains produits primaires et sur la distribution inégale des gains du progrès technique. La détérioration des termes de l’échange n’est toutefois ni universelle pour tous les produits, ni continue d’une année à l’autre. Un programme revendiqué dans une résolution ne garantit pas davantage sa mise en œuvre. Il atteste que les nouveaux États se présentent collectivement comme auteurs des règles.
+
+La nationalisation d’une ressource permet de distinguer trois transformations. La propriété peut être transférée par un acte juridique. Les recettes disponibles dépendent ensuite du prix mondial, des volumes exportés et des contrats. Leur conversion en capacités productives exige encore des compétences, des équipements et des débouchés. La date d’un transfert de propriété donne ainsi un repère précis pour étudier un processus dont les autres rythmes restent à établir.
+
+![Figure 1 — Trois degrés de maîtrise économique](figures/degres-maitrise.svg)
 
 ### III. La fin du siècle dissocie souveraineté, autonomie financière et transformation productive
 
