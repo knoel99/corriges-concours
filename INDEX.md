@@ -298,7 +298,9 @@
 | 2017 | BEL | AL | Italien (commentaire et traduction) | [md](2017/bel/bel_al_italien-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_italien-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Italien (thème Lyon) | [md](2017/bel/bel_al_italien-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_italien-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Polonais (commentaire et traduction) | [md](2017/bel/bel_al_polonais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_polonais-commentaire-et-traduction_2017/guide.md) |
+| 2017 | BEL | AL | Portugais (commentaire et traduction) | [md](2017/bel/bel_al_portugais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_portugais-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Portugais (thème Lyon) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Russe (commentaire et traduction) | [md](2017/bel/bel_al_russe-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_russe-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Russe (thème Lyon) | [md](2017/bel/bel_al_russe-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_russe-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Version latine (Lyon) | [md](2017/bel/bel_al_version-latine-lyon_2017/brut.md) | [md](2017/bel/bel_al_version-latine-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Étude de texte français (Lyon) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/brut.md) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/guide.md) |

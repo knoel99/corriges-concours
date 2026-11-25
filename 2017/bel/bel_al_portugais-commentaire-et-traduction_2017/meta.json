@@ -1,0 +1,42 @@
+{
+  "slug": "bel_al_portugais-commentaire-et-traduction_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Portugais (commentaire et traduction)",
+    "annee": 2017
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=18",
+    "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/PORTUGAIS_2017.pdf#page=1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Du mur à la maison"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "al_langues_suite",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "José J. Veiga, *Sombras de reis barbudos* (1972). Lucas observe son père, les urubus et la Compagnie. La version commence avec les longues-vues et se termine lorsque la Compagnie se met à pourchasser les oiseaux. Commentaire, version française, guide et schéma."
+    }
+  ]
+}
