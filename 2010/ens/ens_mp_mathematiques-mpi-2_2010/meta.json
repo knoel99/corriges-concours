@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-2_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 2",
+    "annee": 2010
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-maths2.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-maths2.pdf",
+    "sha256_sujet": "34f30aec37120a4740ee3a78e3f4c86a235d4dd716c188b0cb063218fa221c59"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dissipation-des-modes.svg",
+      "question": "V.4",
+      "legende": "Exemple à deux composantes. Une composante initialement invisible par B donne une pente initiale nulle pour les deux fréquences, puis son énergie décroît par couplage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des cinq parties après confrontation des huit pages du sujet et du rapport. Déterminant et indépendance, critère de Kalman, convergence en norme d’opérateur, majoration des séries de Fourier et calcul complet de l’énergie modifiée avec constantes indépendantes du mode. Figure calculée pour deux fréquences.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

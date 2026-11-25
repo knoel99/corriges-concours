@@ -1,0 +1,81 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-25-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 25 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 25 juin)",
+  "questions": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/journee_4francais_2_sujets_jury2.pdf",
+    "sujet_sha256": "17da9a34b007e9f72d2cbfb1dee0638bc88dde74bd702ac827d76427a8b277cc",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/Les_%C5%92uvres_de_Fran%C3%A7ois_Rabelais_(%C3%89ditions_Marty-Laveaux)/Gargantua/23",
+      "https://www.ancre.be/uploads/spectacles/LANCRE_Carnet_Pedagogique_24-25.pdf",
+      "https://fr.wikisource.org/wiki/M%C3%A9moires_(Saint-Simon)/Tome_12/5",
+      "https://oeuvresderonsard.wordpress.com/2020/01/06/helen-268/",
+      "https://fr.wikisource.org/wiki/La_Seconde_Surprise_de_l%E2%80%99amour/Acte_I",
+      "https://fr.wikisource.org/wiki/La_Fille_aux_yeux_d%E2%80%99or",
+      "https://fr.wikisource.org/wiki/La_Duchesse_de_Langeais",
+      "https://ledeuxiemetexte.fr/extrait.php?id=9",
+      "https://fr.wikisource.org/wiki/Monsieur_de_Pourceaugnac,_1894",
+      "https://fr.wikisource.org/wiki/Essais/Livre_I/Chapitre_25",
+      "https://www.reseau-canope.fr/edutheque-theatre-en-acte/fileadmin/user_upload/pdm/2012/pdm_146_un_homme_qui_dort.pdf",
+      "https://fr.wikisource.org/wiki/Gaspard_de_la_nuit_(%C3%A9d._1920)/La_Pluie",
+      "https://www.linguistics.rub.de/ref/pub/texts/F303_anno.pdf",
+      "https://fr.scribd.com/document/372667052/Georges-Perec-Un-Homme-Qui-Dort"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/syllogismes.svg",
+      "question": "5",
+      "legende": "Deux syllogismes, deux conclusions contraires"
+    },
+    {
+      "fichier": "figures/sources.svg",
+      "question": "8",
+      "legende": "Les deux sources dans la mémoire de Colette"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Douze explications linéaires des douze œuvres de la journée, douze réponses de reprise, schémas du syllogisme de Marivaux et des deux sources de Colette."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Collation des coupures avec les témoins littéraires, du texte de Koltès avec le cahier pédagogique du théâtre de l’Ancre et du passage de Perec avec l’extrait autorisé du CRDP et la transcription des paragraphes suivants. Vérification du sonnet de Ronsard par son incipit et du passage de Saint-Simon par l’explicit."
+    }
+  ]
+}
