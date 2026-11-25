@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2004",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2004
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2004.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "00cd45af3490b6616628f461a5536107be896ed098ab27f5b3232b3c993a2576"
+  },
+  "figures": [
+    {
+      "fichier": "figures/meridienne-du-catenoide.svg",
+      "question": "7.d",
+      "legende": "La rotation de la chaînette autour de l’axe vertical engendre le caténoïde. Au col, le rayon est minimal et la tangente de la méridienne est verticale dans ce dessin."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction sur le sujet original de toutes les questions. Orientation des cofacteurs, convention de signe des courbures, rayon et pente prescrits du caténoïde et similitude transposée sous reparamétrage. Schéma de la méridienne et du col.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
