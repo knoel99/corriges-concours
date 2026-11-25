@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Construire la dissertation
 
 Le libellé du 24 avril se termine par un point. Une conséquence est attendue par la construction « à trop… » mais n’est jamais fournie. La copie peut donc examiner successivement ce que l’excès fait à l’objet jugé, au sujet qui juge et à la portée même de la conclusion. Le jury demande un plan intégré à la prose. Les questions de ce guide servent à préparer les transitions.
@@ -26,6 +28,8 @@ Javert exerce une fonction de police et cherche à faire exécuter une décision
 **Du brouillon à la copie.** Pour vérifier une transition, compléter « ce que mon exemple établit avec certitude est… » puis « ce qu’il me laisse encore ignorer est… ». Appliqué à Kafka, le premier énoncé porte sur l’impossibilité pour le protagoniste de connaître une accusation précise ; le second porte sur ce dont ni lui ni le lecteur ne peuvent disposer pour rendre un verdict définitif. La dissymétrie donne au roman sa force argumentative.
 
 ![Où commence l’excès du jugement ?](figures/lecture-du-sujet.svg)
+
+Mettez en regard deux propositions : « il a commis cet acte » et « il agira toujours ainsi ». Seule la seconde engage une prédiction illimitée. Dans la scène avec Javert, demandez quel geste devrait suffire à rouvrir cette prédiction.
 
 ## Dissertation rédigée
 
