@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2006
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2006.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2006_rapport_jury.pdf",
+    "sha256_sujet": "703933fd8229736b9f03fcb5c13a08ac0c7cd63951e320e91a29e499f5eb1628"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rotation-ponderee.svg",
+      "question": "15",
+      "legende": "Dans le premier exemple, la première colonne de l’exponentielle est un vecteur tournant. La pondération de Laplace lui fait décrire une spirale vers zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale d’après le sujet et le rapport. Cas d’égalité de la norme, convergence en norme vers le projecteur, reconstruction et positivité de la matrice, identité de Laplace. Schéma d’une rotation pondérée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
