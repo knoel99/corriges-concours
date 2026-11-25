@@ -177,9 +177,19 @@
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/guide.md) |
+| 2017 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2017/guide.md) |
+| 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Allemand (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_allemand-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_allemand-oral_2022/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Anglais (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_anglais-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_anglais-oral_2017/guide.md) |
+| 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Anglais (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_anglais-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_anglais-oral_2022/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Chinois (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2017/guide.md) |
 | 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Chinois (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2022/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition de géographie (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2017/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Espagnol (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_espagnol-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_espagnol-oral_2017/guide.md) |
+| 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Espagnol (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_espagnol-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_espagnol-oral_2022/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Grec (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_grec-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_grec-oral_2017/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Italien (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2017/guide.md) |
+| 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Italien (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2022/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Latin (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_latin-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_latin-oral_2017/guide.md) |
 | 2015 | ENS Paris-Saclay | Design | Expression graphique, chromatique ou volumique | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/brut.md) | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/guide.md) |
 | 2021 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/guide.md) |
 | 2022 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/guide.md) |
@@ -191,9 +201,15 @@
 | 2023 | ENS Paris-Saclay | Design | Techno-design | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/guide.md) |
 | 2009 | ENS-PSL | PC | Physique PC1 | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/brut.md) | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/guide.md) |
 | 2010 | ENS Paris | PC | Physique PC1 | [md](2010/ens-psl/ens-psl_pc_physique-pc1_2010/brut.md) | [md](2010/ens-psl/ens-psl_pc_physique-pc1_2010/guide.md) |
+| 2022 | ENS-PSL | Sélection internationale Lettres | Cinéma — commentaire de film (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-commentaire-de-film-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-commentaire-de-film-oral_2022/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Cinéma — la caméra-stylo d’Alexandre Astruc | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_cinema-la-camera-stylo-dalexandre-astruc_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_cinema-la-camera-stylo-dalexandre-astruc_2018/guide.md) |
+| 2019 | ENS-PSL | Sélection internationale Lettres | Cinéma — les arts selon Alain Badiou | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_cinema-les-arts-selon-alain-badiou_2019/brut.md) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_cinema-les-arts-selon-alain-badiou_2019/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Cinéma — Stromboli de Rossellini (oral) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_cinema-stromboli-de-rossellini-oral_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_cinema-stromboli-de-rossellini-oral_2018/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Économie — données et modèles (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-donnees-et-modeles-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-donnees-et-modeles-oral_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Économie — évaluation des politiques publiques (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-evaluation-des-politiques-publiques-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-evaluation-des-politiques-publiques-oral_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Économie — parcours scolaires (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-parcours-scolaires-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-parcours-scolaires-oral_2026/guide.md) |
+| 2016 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — art et fin de l’histoire (oral) | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-art-et-fin-de-lhistoire-oral_2016/brut.md) | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-art-et-fin-de-lhistoire-oral_2016/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — la mort (oral) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-la-mort-oral_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-la-mort-oral_2018/guide.md) |
 | 2019 | ENS-PSL | Sélection internationale Lettres | Littérature — André Gide et Thésée (oral) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_litterature-andre-gide-et-thesee-oral_2019/brut.md) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_litterature-andre-gide-et-thesee-oral_2019/guide.md) |
 | 2018 | ENS-PSL | Sélection internationale Lettres | Littérature — Assia Djebar et L’Amour, la fantasia (oral) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar-et-lamour-la-fantasia-oral_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar-et-lamour-la-fantasia-oral_2018/guide.md) |
 | 2019 | ENS-PSL | Sélection internationale Lettres | Littérature — Assia Djebar à l’Académie française (oral) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar-a-lacademie-francaise-oral_2019/brut.md) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar-a-lacademie-francaise-oral_2019/guide.md) |
@@ -1003,6 +1019,7 @@
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
+| 2011 | ENS | MP-PC | Allemand (langue étrangère B) | [md](2011/ens/ens_mp-pc_allemand-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_allemand-langue-etrangere-b_2011/guide.md) |
 | 2009 | ENS | MP-PC | Allemand (LE2) | [md](2009/ens/ens_mp-pc_allemand-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_allemand-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Allemand (LE2) | [md](2010/ens/ens_mp-pc_allemand-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_allemand-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Allemand (LV1) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/guide.md) |
@@ -1105,6 +1122,9 @@
 | 2017 | ENS | PC | Physique C | [md](2017/ens/ens_pc_physique-c_2017/brut.md) | [md](2017/ens/ens_pc_physique-c_2017/guide.md) |
 | 2018 | ENS | PC | Physique C | [md](2018/ens/ens_pc_physique-c_2018/brut.md) | [md](2018/ens/ens_pc_physique-c_2018/guide.md) |
 | 2019 | ENS | PC | Physique C | [md](2019/ens/ens_pc_physique-c_2019/brut.md) | [md](2019/ens/ens_pc_physique-c_2019/guide.md) |
+| 2020 | ENS | PC | Physique C | [md](2020/ens/ens_pc_physique-c_2020/brut.md) | [md](2020/ens/ens_pc_physique-c_2020/guide.md) |
+| 2021 | ENS | PC | Physique C | [md](2021/ens/ens_pc_physique-c_2021/brut.md) | [md](2021/ens/ens_pc_physique-c_2021/guide.md) |
+| 2022 | ENS | PC | Physique C | [md](2022/ens/ens_pc_physique-c_2022/brut.md) | [md](2022/ens/ens_pc_physique-c_2022/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2015 | ENS | PC | Physique-chimie | [md](2015/ens/ens_pc_physique-chimie_2015/brut.md) | [md](2015/ens/ens_pc_physique-chimie_2015/guide.md) |
 | 2016 | ENS | PC | Physique-chimie | [md](2016/ens/ens_pc_physique-chimie_2016/brut.md) | [md](2016/ens/ens_pc_physique-chimie_2016/guide.md) |
@@ -1380,6 +1400,10 @@
 | 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2011 | X-ENS | MP-PC | Allemand | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/guide.md) |
+| 2012 | X-ENS | MP-PC | Allemand | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/brut.md) | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/guide.md) |
+| 2013 | X-ENS | MP-PC | Allemand | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/brut.md) | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/guide.md) |
+| 2014 | X-ENS | MP-PC | Allemand | [md](2014/x-ens/x-ens_mp-pc_allemand_2014/brut.md) | [md](2014/x-ens/x-ens_mp-pc_allemand_2014/guide.md) |
 | 2014 | X-ENS | MP-PC | Composition française | [md](2014/x-ens/x-ens_mp-pc_composition-francaise_2014/brut.md) | [md](2014/x-ens/x-ens_mp-pc_composition-francaise_2014/guide.md) |
 | 2013 | X-ENS | MP-PC | Composition française | [md](2013/x-ens/x-ens_mp-pc_composition-francaise_2013/brut.md) | [md](2013/x-ens/x-ens_mp-pc_composition-francaise_2013/guide.md) |
 | 2012 | X-ENS | MP-PC | Composition française | [md](2012/x-ens/x-ens_mp-pc_composition-francaise_2012/brut.md) | [md](2012/x-ens/x-ens_mp-pc_composition-francaise_2012/guide.md) |
@@ -1474,6 +1498,13 @@
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
+| 2015 | X-ENS | PC | Physique B | [md](2015/x-ens/x-ens_pc_physique-b_2015/brut.md) | [md](2015/x-ens/x-ens_pc_physique-b_2015/guide.md) |
+| 2016 | X-ENS | PC | Physique B | [md](2016/x-ens/x-ens_pc_physique-b_2016/brut.md) | [md](2016/x-ens/x-ens_pc_physique-b_2016/guide.md) |
+| 2017 | X-ENS | PC | Physique B | [md](2017/x-ens/x-ens_pc_physique-b_2017/brut.md) | [md](2017/x-ens/x-ens_pc_physique-b_2017/guide.md) |
+| 2018 | X-ENS | PC | Physique B | [md](2018/x-ens/x-ens_pc_physique-b_2018/brut.md) | [md](2018/x-ens/x-ens_pc_physique-b_2018/guide.md) |
+| 2019 | X-ENS | PC | Physique B | [md](2019/x-ens/x-ens_pc_physique-b_2019/brut.md) | [md](2019/x-ens/x-ens_pc_physique-b_2019/guide.md) |
+| 2020 | X-ENS | PC | Physique B | [md](2020/x-ens/x-ens_pc_physique-b_2020/brut.md) | [md](2020/x-ens/x-ens_pc_physique-b_2020/guide.md) |
+| 2021 | X-ENS | PC | Physique B | [md](2021/x-ens/x-ens_pc_physique-b_2021/brut.md) | [md](2021/x-ens/x-ens_pc_physique-b_2021/guide.md) |
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
