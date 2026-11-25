@@ -33,9 +33,12 @@
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Anglais.pdf",
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_anglais_xusr_26.pdf",
     "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Anglais%20OK.pdf",
-    "exemple_care": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/care-fera-program"
+    "exemple_care": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/electric-costs/care-fera-program",
+    "sujet_sha256": "30a0f1dd7190990f81189bbb38cde41340155f2e52f6b21ed75efe614b3c3e35",
+    "rapport_sha256": "a2cc761c83baffd16c4cf7f9f881721b91f9ec51780e6b994d03b97752ff75b6",
+    "sujet_psi_sha256": "6a489ee22dd9acf0be399f826775540f9617d0e0f5eec30562b4c848aceb8266"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -88,6 +91,17 @@
       "modifications": true,
       "perimetre": "Comparaison des deux compositions, des quatre pièces de synthèse et de la tribune avec le rapport. Portée des estimations sur la réutilisation des sites et des effets miniers selon le procédé, lecture des réponses au graphique de Pew.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation des deux volets du graphique Pew. Différenciation de la pluralité et de la majorité absolue, datation du terrain, estimation mondiale des projets en attente de raccordement et distinction entre tarif, facture et part des revenus."
     }
   ]
 }
