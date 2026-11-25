@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles.
 
 ## Obligations et société
@@ -15,6 +17,10 @@ Un impôt, un repas offert après une invitation et une aide à un parent âgé 
 **L’existence de sanctions révèle les relations.** Durkheim utilise les formes du droit pour analyser la solidarité, en distinguant notamment les sanctions répressives et les sanctions restitutives. Exécuter un contrat vise à rétablir une relation réglée. Cette exécution suppose déjà une institution capable de définir ce qui compte comme promesse et de la faire reconnaître. Une enquête sur des loyers impayés étudierait donc les revenus des parties, le bail, les intermédiaires et les recours possibles. Ceux-ci modifient les arrangements parfois bien avant l’entrée dans un tribunal.
 
 **Une dette peut entretenir le lien.** Dans l’*Essai sur le don*, Mauss analyse l’articulation de donner, recevoir et rendre. L’échange engage les partenaires et peut associer enjeux matériels, moraux et de rang. Transposer directement un terrain historique à toute famille contemporaine serait excessif. Mais on comprend pourquoi rembourser immédiatement à une amie le prix exact d’un dîner peut clore maladroitement une relation que l’invitation devait prolonger. Le délai et la forme du retour font partie de son sens. Les échanges ne sont pas pour autant toujours harmonieux. Recevoir une aide que l’on ne peut rendre peut placer dans une dépendance durable.
+
+Le mode de réclamation permet de comparer ces situations. Un bail fixe la date du loyer. Après un repas entre amis, demander à quelle date l’invitation sera rendue risque déjà de modifier la relation. Dans une famille, une sœur peut prendre chaque semaine le relais auprès d’un parent sans qu’aucune échéance ait jamais été fixée entre les enfants.
+
+![Figure 1 — Trois formes de retour et leurs conditions](figures/obligations.svg)
 
 **Les obligations ont une distribution.** L’aide informelle aux proches apparaît souvent comme l’expression spontanée de l’affection. Qui se rend effectivement disponible, réduit son temps de travail ou organise les rendez-vous ? Une observation des emplois du temps peut révéler une concentration du travail de coordination sur certaines parentes, y compris lorsque le montant des dépenses est partagé. Les obligations publiques de prise en charge modifient à leur tour ces relations privées. Une aide professionnelle peut dégager du temps sans supprimer l’engagement affectif. Ainsi la contrainte sociale n’abolit pas l’attachement, et l’adhésion personnelle n’empêche pas l’inégalité de la charge. C’est leur combinaison située qu’il faut expliquer.
 

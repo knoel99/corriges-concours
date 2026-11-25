@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles.
 
 ## Garder la face
@@ -13,6 +15,10 @@ Le candidat choisit un seul des deux sujets après le tirage de la planche. Le j
 Un enseignant se trompe de prénom, l’élève répond et la classe poursuit la discussion sans souligner l’erreur. Personne n’a grandi en prestige, mais tous ont contribué à rendre l’interaction viable. Chez Erving Goffman, la face désigne la valeur sociale positive qu’une personne revendique implicitement par la ligne de conduite que les autres lui attribuent dans une rencontre. Avoir une réputation en dehors de la salle ne suffit pas à la conserver dans l’échange. Comment une propriété si personnelle dépend-elle du travail des autres, et quelles inégalités règlent ce travail ?
 
 **Une coopération observable.** Dans *Les Rites d’interaction*, Goffman décrit les pratiques par lesquelles les partenaires évitent un incident ou en réparent les conséquences. L’auteur de l’erreur rectifie, un interlocuteur accepte l’explication, les autres reprennent le fil. La réparation se distingue d’un sentiment intérieur de honte. Elle demande des gestes publics et peut réussir même si la gêne persiste. Inversement, insister sur l’importance d’une bévue au moment de présenter des excuses peut la rendre plus visible. On observerait les silences, les changements de sujet et les reprises avant de demander après coup ce que chacun pensait avoir fait.
+
+Au guichet, l’usager qui a oublié un justificatif peut proposer de le rapporter le lendemain. Si l’agent lui donne un nouveau rendez-vous et revient aux autres pièces du dossier, la suite de la conversation atteste que la réparation a été acceptée. Si l’agent continue à lui reprocher l’oubli, le même geste ouvre une autre séquence.
+
+![Figure 1 — Observer la réparation d’un incident dans une interaction](figures/face.svg)
 
 **Les protections sont socialement distribuées.** Un conseiller reçoit un usager qui n’a pas apporté une pièce attendue. Décrire l’incident comme une difficulté réparable préserve la possibilité d’une demande ultérieure. Le qualifier d’irresponsabilité risque de disqualifier la personne et sa requête ensemble. Le conseiller peut agir sur l’accès à une ressource. L’usager dépend davantage de la poursuite courtoise de l’échange. L’étude des guichets de Vincent Dubois permet précisément de relier le face-à-face à la position institutionnelle de ceux qui s’y rencontrent. La réciprocité rituelle ne donne donc pas les mêmes moyens d’exiger une réparation.
 

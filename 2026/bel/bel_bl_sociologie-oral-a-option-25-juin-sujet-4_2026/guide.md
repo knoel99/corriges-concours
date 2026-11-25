@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles. Pour préparer l’exposé, annoncer une question précise, développer chaque mécanisme à partir d’une enquête ou d’une situation et indiquer quelles observations permettraient de départager deux explications. Chaque développement est suivi d’un exercice de préparation et d’une relance.
 
 ## Garder la face
@@ -28,6 +30,8 @@ Décrire une interaction de guichet en conservant l’ordre des tours de parole.
 Observer l’ordre des gestes permet d’identifier une menace précise, un ajustement puis la reprise de l’échange. Comparer les cas où l’ajustement est refusé évite de traiter l’interprétation comme allant de soi.
 
 ![Observer la réparation d’un incident dans une interaction](figures/face.svg)
+
+Relevez les paroles qui suivent la rectification. Un rendez-vous accordé manifeste la reprise de l’activité commune. Un sourire isolé est plus difficile à interpréter, puisqu’il peut aussi accompagner un refus.
 
 ## « Le gouvernement moderne n’est qu’un comité qui gère les affaires communes de toute la classe bourgeoise » (Friedrich Engels et Karl Marx, 1848)
 
