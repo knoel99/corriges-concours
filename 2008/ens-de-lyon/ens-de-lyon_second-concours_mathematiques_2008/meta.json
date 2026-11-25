@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2008",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2008
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2008/sujet-ecrit-2008-second-concours_mathematiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "bfd49698bd611798c1a7baeb8d7f8c630b82d8b971f47b714bcadff84b09708d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/oscillations-variation.svg",
+      "question": "1.3.b",
+      "legende": "Les points choisis sur les deux enveloppes ont des ordonnées de signes alternés. La somme des déplacements verticaux croît comme une somme harmonique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir des cinq pages scannées. Variation d’une fonction oscillante, matrice de Sylvester avec signe exact, factorisation du noyau, contre-exemple à l’indépendance en 2.2.f, rang et signature après retrait du pgcd. Schéma des subdivisions alternées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
