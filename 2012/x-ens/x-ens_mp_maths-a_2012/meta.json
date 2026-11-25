@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_mp_maths-a_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2012
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2012/mp2012_sujet_mathematiques_a.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/12_mp_rap_ecrit_math_a_xlc.pdf",
+    "sha256_sujet": "5b6e205bcd34739e3cf5279c1d1b182f9be88cf847262db8a6465a73a50615a2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/chaine-de-poids.svg",
+      "question": "14.b",
+      "legende": "Pour n = 3, w avance d’un rang et z revient avec le coefficient indiqué. La ligne inférieure donne les valeurs propres de e."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les questions du sujet XLC et confrontation au rapport, y compris le changement de base de déterminant un, le produit des exponentielles tronquées et la preuve de simplicité du quotient. Les signes du crochet et les deux coefficients terminaux de la chaîne ont été recalculés. Figure originale en dimension quatre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
