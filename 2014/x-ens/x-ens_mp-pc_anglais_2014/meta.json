@@ -1,0 +1,67 @@
+{
+  "slug": "x-ens_mp-pc_anglais_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "intitule": "Space exploration in Britain and America ; A One-Way Ticket to Mars",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2014/",
+    "code_garde": "XEULCR",
+    "etablissements_imprimes": "École polytechnique, ESPCI et ENS de Paris, Lyon, Cachan et Rennes",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_lv_ang.pdf",
+    "sujet_sha256": "4a8147d836ee625d4b7b29b7e25bbdb14ae02c95a97aa390b77acdfc46af0348",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_pc_rap_ecrit_lv_anglais.pdf",
+    "rapport_sha256": "17db713446837b026c77573771c1f354a42b7f9b2d986302ceed456f40b6be52"
+  },
+  "redaction": "Synthèse croisée des quatre documents, avec lectures chiffrées du budget à prix constants, et éditorial personnel répondant à Krauss. Explication des différences de perspective britanniques et américaines d’après le rapport du jury.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/regards.svg",
+      "legende": "Les deux perspectives britanniques et le jugement américain de Fred Singer."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/budget.svg",
+      "legende": "Montants approximatifs en milliards de dollars constants de 2007, lus sur le document 4. Trois repères choisis, sans interpolation."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/aller-simple.svg",
+      "legende": "La réduction de la masse au départ laisse ouvertes les questions de protection et de secours."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse croisée des quatre documents, avec lectures chiffrées du budget à prix constants, et éditorial personnel répondant à Krauss. Explication des différences de perspective britanniques et américaines d’après le rapport du jury.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
