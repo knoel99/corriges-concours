@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La transition vers l’âge adulte
@@ -31,6 +33,8 @@ Le document 7 porte sur de jeunes salariés du champ de l’enquête Défis. Dan
 Le passage à l’âge adulte combine ainsi différents pouvoirs, gagner une ressource, en disposer, habiter ailleurs et répondre d’autrui. Une chronologie individuelle, mise en regard des aides reçues et des possibilités de choix, explique davantage qu’un seuil d’âge unique.
 
 ![Trois souhaits professionnels des jeunes salariés](figures/lecture-des-donnees.svg)
+
+Comparez une ligne du tableau à la ligne d’ensemble. Parmi les salariés à temps partiel, 70 % souhaitent trouver un autre emploi ou changer d’entreprise, contre 59 % dans l’ensemble. Les 11 points d’écart décrivent des souhaits, avant toute mobilité effectivement réalisée.
 
 ## Questions du jury
 

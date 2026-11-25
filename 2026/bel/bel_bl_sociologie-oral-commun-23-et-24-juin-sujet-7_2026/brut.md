@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Le travail de plateforme
@@ -23,6 +25,10 @@ La Dares adopte dans Tracov 2 une définition précise (doc. 3). Elle interroge 
 Dans le document 4, 57 % des travailleurs de plateforme sont des hommes, contre 50 % des salariés et 61 % des autres indépendants. La pluriactivité concerne 14 %, 6 % et 12 % de ces groupes respectivement. Ces valeurs se lisent en colonne. La faible part des travailleurs de plateforme dans l’emploi total empêche de déduire du premier chiffre que la plupart des hommes travaillent sur plateforme. L’activité peut compléter d’autres revenus ou en fournir l’essentiel, ce qui modifie le coût d’un refus de mission.
 
 Le document 5 montre que 21 % des travailleurs de plateforme déclarent recevoir des instructions précises sur la manière de travailler, et 20 % un contrôle de la réalisation des tâches. Au total, 34 % subissent au moins une des contraintes relevées et 26 % disposent d’au moins une ressource fournie, comme une formation. Leur union représente 44 %. À l’arrondi près, 16 % des travailleurs connaissent donc à la fois une contrainte et une ressource. Les autres peuvent subir une dépendance économique non captée par les seules instructions. Pour qualifier juridiquement une relation, la seule présence d’une plateforme ne suffirait pas. Sociologiquement, on étudiera aussi fixation des prix, accès aux clients, possibilité de se déconnecter et conséquences concrètes d’un refus.
+
+![Figure 1 — Contraintes et ressources déclarées sur les plateformes](figures/lecture-des-donnees.svg)
+
+Sur cent travailleurs, environ 18 déclarent des contraintes seules, 10 des ressources seules et 16 les deux. Les 56 restants ne déclarent aucun des éléments retenus. Cette décomposition explique comment une même plateforme peut fournir un appui technique tout en encadrant l’exécution des tâches.
 
 ### Qui supporte le coût de la flexibilité ?
 
