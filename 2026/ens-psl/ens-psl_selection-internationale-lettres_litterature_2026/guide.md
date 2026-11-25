@@ -8,11 +8,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Partir d’un mot de la citation
 
 Dans cette épreuve de deux heures, le sujet attend un écrit organisé qui engage une expérience de lecture et dépasse le corpus personnel de recherche. Le mot « orienté » permet d’interroger le lien entre vérité, morale et langage sans transformer Todorov en défenseur d’une morale imposée par chaque texte.
 
 ![Figure 1 — Trois expériences de lecture pour éprouver la citation](figures/formes-verite.svg)
+
+Pour le passage de Levi, nommer ce que fait le témoin au moment de la scène racontée, puis ce qu’il en restitue dans le témoignage. On peut discuter la thèse de Todorov en partant de ce double travail de la forme.
 
 ## Développer une preuve de lecture
 

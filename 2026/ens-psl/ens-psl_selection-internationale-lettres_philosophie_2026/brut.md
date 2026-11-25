@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Hume et la conversion de la peine en plaisir esthétique
 
 ### I. Explication du texte de Hume
@@ -19,6 +21,10 @@ La première phrase nomme les poètes, les orateurs et les musiciens. Leur réun
 La difficulté revient avec les mots « quand l’objet représenté soulève aussi quelque affection ». Si deux sentiments demeuraient simplement côte à côte, on comprendrait qu’une belle interprétation consolât d’un sujet pénible. On ne comprendrait pas que la puissance même de la peine puisse accroître le plaisir. La proposition décisive est celle d’une « conversion ». Un mouvement est dit subordonné et un autre prédominant. Dans le cas décrit, le premier vient de ce qui est représenté et le second de la manière dont la représentation mobilise l’esprit. Parce que le mouvement dominant dispose déjà d’une direction plaisante, l’émotion que l’objet fait naître peut augmenter l’intensité de l’expérience dans cette direction. Il ne s’agit ni d’une addition comptable de doses de plaisir et de peine ni de l’extinction pure et simple de la compassion. Si l’on retirait toute charge affective, on retirerait aussi ce que l’art peut convertir.
 
 La dernière phrase précise les conditions de cette transformation. L’objet est donné dans sa « simple apparence ». La passion n’a donc pas, pour le spectateur, toutes les conséquences pratiques d’un malheur dont il serait la victime ou le témoin appelé à intervenir. Cette distance ne l’abolit pas. Le rythme, l’expression et l’imitation en modifient la qualité ressentie. Les participes « embellie, adoucie et apaisée » indiquent un travail sur la passion et sa véhémence. « Le plus grand plaisir » désigne l’effet de l’ensemble ainsi organisé. On comprend dès lors l’apparente contradiction de la première phrase. Une peine éprouvée en réponse à un événement et cette même espèce de peine intégrée à une conduite esthétique plus large ont des conditions et des effets différents.
+
+La compassion doit demeurer reconnaissable pour que la beauté de la représentation en augmente la force. Si le spectateur cessait entièrement de se soucier de l’événement, le plaisir à entendre de belles paroles ne suffirait plus à expliquer le plaisir propre à cette représentation tragique.
+
+![Figure 1 — La relation entre les deux mouvements chez Hume](figures/mouvements-esthetiques.svg)
 
 ### II. Jusqu’où la conversion peut-elle aller ?
 
