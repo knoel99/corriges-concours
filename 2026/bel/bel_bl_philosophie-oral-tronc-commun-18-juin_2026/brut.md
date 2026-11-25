@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 18 juin réunit 12 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici.
 
 ## Ticket 1
@@ -195,6 +197,10 @@ Cependant l’application d’un principe demande de qualifier la situation. Une
 Je suis en retard parce qu’un train a été annulé. J’explique ce qui s’est passé et je présente mes excuses à ceux qui ont attendu. Est-ce une seule et même démarche ? Donner une excuse peut réduire l’imputation d’une faute, tandis que présenter ses excuses peut reconnaître un tort. La distinction importe particulièrement lorsque les circonstances n’effacent pas la responsabilité.
 
 Dans son travail sur les excuses, J. L. Austin invite à regarder ce que les mots ordinaires distinguent. Une justification défend en substance le bien-fondé de l’action dans ces circonstances. Une excuse reconnaît plus volontiers qu’il y a eu quelque chose de regrettable tout en contestant que la responsabilité pèse entièrement sur l’agent. Une erreur raisonnable et une négligence évitable n’ont pas la même portée. Dire « je ne savais pas » appelle souvent la question de savoir si j’avais le devoir et la possibilité de vérifier.
+
+Celui qui pouvait prévenir de son retard peut avoir une excuse pour le trajet et devoir encore des excuses pour le silence. La première réponse porte sur la maîtrise d’un événement, la seconde sur le tort effectivement laissé à la charge d’autrui.
+
+![Figure 1 — Quelle réponse donne-t-on après un tort ?](figures/excuses.svg)
 
 Les excuses présentées à autrui possèdent aussi une valeur relationnelle. Elles peuvent nommer précisément le tort, reconnaître ses conséquences et ouvrir une réparation. Une formule qui déplore seulement la susceptibilité de l’autre évite justement cette reconnaissance. Même des excuses sincères ne donnent aucun droit immédiat au pardon. Leur valeur se juge à la vérité de l’explication, à la responsabilité reconnue et à ce que leur auteur fait ensuite pour réparer ou empêcher la répétition. Elles permettent alors de répondre de l’action sans prétendre annuler ce qui est arrivé.
 
