@@ -1,0 +1,50 @@
+{
+  "slug": "ens_mp-mpi_informatique-fondamentale_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-MPI",
+    "matiere": "Informatique fondamentale",
+    "annee": 2024,
+    "duree_heures": 4
+  },
+  "questions": 37,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/08/24_mp_sujet_InfoFond.pdf",
+    "sujet_sha256": "40ccaabbf6cf5f68b7060f4cfe14c6c9aa00afbe41302a882ea0b30175b76274",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2024/10/24_mp_rap_eInfoFond.pdf",
+    "rapport_sha256": "cc8476d47cf73cbdb9c630f46d54c0d1e106d9f75b73cf66c0ac8251b4d1f34a",
+    "page_organisateur": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Composition Informatique fondamentale ULSR et rapport de l’épreuve écrite MP-MPI du jury. Six parties et douze pages numérotées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/triangle-et-feuille.svg",
+      "question": "I.1",
+      "legende": "Une couverture minimum est indiquée en vert. Les arêtes ab et cd, disjointes, prouvent qu’un seul sommet ne suffit pas."
+    },
+    {
+      "fichier": "figures/graphe-glouton-g4.svg",
+      "question": "III.3",
+      "legende": "Réalisation de G₄. Le côté droit compte quatre sommets de degré un, deux de degré deux, un de degré trois et un de degré quatre."
+    },
+    {
+      "fichier": "figures/graphe-maison.svg",
+      "question": "VI.1",
+      "legende": "Le bord extérieur forme un cycle de longueur cinq. La traverse ce exclut le troisième vecteur proposé en VI.2. Les trois sommets verts forment la quatrième couverture."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction sur le sujet et le rapport du jury des 37 questions. Lecture visuelle des deux graphes, certificat pour G4, traitement des budgets négatifs, démonstration de la borne inférieure de lecture en IV.4 et du cas de perturbation nulle en VI.8. Tests exhaustifs sur graphes, trois figures originales."
+    }
+  ]
+}
