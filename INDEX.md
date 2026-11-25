@@ -894,6 +894,7 @@
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
+| 2003 | ENS | MP-PC | Mathématiques-informatique | [md](2003/ens/ens_mp-pc_mathematiques-informatique_2003/brut.md) | [md](2003/ens/ens_mp-pc_mathematiques-informatique_2003/guide.md) |
 | 2004 | ENS | MP-PC | Mathématiques-informatique | [md](2004/ens/ens_mp-pc_mathematiques-informatique_2004/brut.md) | [md](2004/ens/ens_mp-pc_mathematiques-informatique_2004/guide.md) |
 | 2005 | ENS | MP-PC | Mathématiques-informatique | [md](2005/ens/ens_mp-pc_mathematiques-informatique_2005/brut.md) | [md](2005/ens/ens_mp-pc_mathematiques-informatique_2005/guide.md) |
 | 2006 | ENS | MP-PC | Mathématiques-informatique | [md](2006/ens/ens_mp-pc_mathematiques-informatique_2006/brut.md) | [md](2006/ens/ens_mp-pc_mathematiques-informatique_2006/guide.md) |
