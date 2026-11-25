@@ -1,0 +1,58 @@
+{
+  "slug": "agro-veto_bcpst_biologie_2022",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Biologie",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_a-bcpst_bio_epreuve_de_synthese_2022.docx.pdf",
+    "rapport_sha256": "d61bc9d4fcc821a1199185a9f11f4e65f16142cce0b192186fa880b0228d4d53",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/biologie_epreuve_synthese_2022.pdf",
+    "sujet_sha256": "c821a942194d4f66e1d029d4309054ab82ec29a587d9123ed7fd3549d8b7cb6f"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Sujet unique de synthèse. Le développement porte sur le sang des mammifères, sa circulation et les relations qu’il établit entre les organes."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "I.2",
+      "fichier": "figures/deux-circuits.svg",
+      "legende": "Les capillaires systémiques relient les deux côtés du cœur par les organes. La couleur traduit l’oxygénation."
+    },
+    {
+      "question": "II.1",
+      "fichier": "figures/saturation.svg",
+      "legende": "Allure de la saturation à pH et température fixés. La pente est forte aux pressions rencontrées dans les tissus et faible au voisinage de la pression alvéolaire."
+    },
+    {
+      "question": "III.1",
+      "fichier": "figures/glycemie.svg",
+      "legende": "Le sang transporte le glucose et distribue l’insuline. La flèche de retour indique la diminution de la perturbation initiale."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "lettres_svt_suite",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de la synthèse sur les mammifères à partir du sujet d’une page et des attendus du jury. Trois schémas originaux de circulation, de transport et de rétrocontrôle."
+    }
+  ]
+}
