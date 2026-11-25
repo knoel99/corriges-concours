@@ -1,0 +1,51 @@
+{
+  "slug": "ens_mp-pc_mathematiques-mpi-2_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques MPI 2",
+    "annee": 2008
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2008/MP/mp_sujet_maths_mpi2.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "0f52138f40d2dc02a86b77c63eacbb459513c1ad306a73ee53b1d7de3099f3b4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/champ-radial.svg",
+      "question": "I.7.a",
+      "legende": "Le champ radial a partout une norme égale à un. Le point blanc indique l’origine où il n’est pas défini."
+    },
+    {
+      "fichier": "figures/trois-rotations.svg",
+      "question": "II.2.c",
+      "legende": "Trois exemples avec vitesse angulaire auxiliaire constante. Après chaque tour, le rayon est multiplié par γ. La flèche indique le sens des temps croissants."
+    },
+    {
+      "fichier": "figures/deux-directions.svg",
+      "question": "III.2",
+      "legende": "Exemple χ(θ) = sin θ et ψ(θ) = −2 cos θ. Les branches vont de la direction réelle positive à la direction réelle négative. Leur distance à l’axe réel croît aux deux infinis."
+    },
+    {
+      "fichier": "figures/cercles-raccordes.svg",
+      "question": "III.4.b",
+      "legende": "Deux boucles possibles pour le champ φ(x) = (x/|x|)². Une solution maximale au sens 1 arrive par l’axe négatif, décrit un nombre fini de boucles et repart par l’axe positif."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir du cahier. Champs radiaux, changement de temps, intervalles maximaux, classification des raccordements et calcul asymptotique. Vérification de l’indexation des passages et contre-exemple à une interprétation affine des asymptotes. Quatre figures de champs et de trajectoires.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
