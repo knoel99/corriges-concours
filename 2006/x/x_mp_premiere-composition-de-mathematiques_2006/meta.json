@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2006
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2006.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2006_rapport_jury.pdf",
+    "sha256_sujet": "eaddf158a91199d9993388ef276d8dc304fb73c0d61cb6cdb115e2facbd109da"
+  },
+  "figures": [
+    {
+      "fichier": "figures/solutions-positives.svg",
+      "question": "5.c",
+      "legende": "Les solutions pour trois valeurs de γ coïncident en zéro avec la même tangente. Sur [−1,+∞), elles sont croissantes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète sur les trois parties du sujet et les points soulignés par le rapport. Contrôle des dérivées mixtes, des séries bilatères aux deux signes et des jets à tous les raccords, puis preuve par approximation polynomiale. Figure des solutions normalisées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
