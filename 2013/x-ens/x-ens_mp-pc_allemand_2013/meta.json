@@ -1,0 +1,72 @@
+{
+  "slug": "x-ens_mp-pc_allemand_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Un inconnu en avion et la frugalité volontaire",
+  "duree": "Version et expression écrite durent chacune une heure trente. Les deux gardes interdisent le dictionnaire.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_version_xeulc.pdf#page=2",
+    "sujet_sha256": "0e95612d3a4fe0813b6dd6751b3c5a0300f37231ada228521cc6fd91a310392c",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2013",
+    "texte_support": "Bernhard Schlink, Sommerlügen (2010). Pascal Bruckner, L’Euphorie perpétuelle (2000), extrait intitulé « Une nouvelle morale de la frugalité ».",
+    "etablissements_imprimes": "École polytechnique, ESPCI et Écoles normales supérieures ; code XEULC",
+    "documents": [
+      {
+        "role": "sujet",
+        "partie": "Version en allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_version_xeulc.pdf#page=2",
+        "pages_document": "6",
+        "sha256_pdf": "0e95612d3a4fe0813b6dd6751b3c5a0300f37231ada228521cc6fd91a310392c"
+      },
+      {
+        "role": "sujet complémentaire",
+        "partie": "Expression écrite commune, réponses en allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_expressionecrite_xeulc.pdf",
+        "pages_document": "2",
+        "sha256_pdf": "90b418bcca94b53f07c545a6c1cad740071b976e98078de58ea3509a11a3f1ca"
+      }
+    ],
+    "rapport": "Aucun rapport écrit propre à cette épreuve allemande dans les archives répertoriées."
+  },
+  "redaction": "Traduction française complète de l’extrait littéraire, synthèse du texte français et prise de position distincte en allemand, avec repères grammaticaux, contrôle des longueurs et schéma de lecture.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/styles-de-parole.svg",
+      "legende": "Un regard identique reçoit deux interprétations avant que Menzel offre son propre récit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "oraux_lyon",
+      "session": "oraux_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction française complète de l’extrait littéraire, synthèse du texte français et prise de position distincte en allemand, avec repères grammaticaux, contrôle des longueurs et schéma de lecture.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_allemand-langue-etrangere-b_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (langue étrangère B)",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Vingt-quatre heures sans médias",
+  "duree": "Deux heures. Version 15 points, question 5 points. Dictionnaire et calculatrice interdits pour l’allemand.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=2",
+    "sujet_sha256": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "texte_support": "Meike Fries, ZEIT.de, 7 janvier 2011, texte abrégé, « Digitale Askese: Einsam ohne Handy und Internet ».",
+    "etablissements_imprimes": "ENS de Paris et de Cachan",
+    "documents": [
+      {
+        "role": "sujet",
+        "partie": "Composition de langue étrangère B",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=2",
+        "pages_document": "12",
+        "sha256_pdf": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b"
+      }
+    ],
+    "rapport": "Aucun rapport écrit propre à cette épreuve allemande dans les archives répertoriées."
+  },
+  "redaction": "Traduction française complète et réponse personnelle en allemand, avec examen du protocole et de ses exceptions.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/telephone-fixe.svg",
+      "legende": "Le téléphone fixe est autorisé, mais la possibilité matérielle d’appeler ne suffit pas à établir un contact."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "oraux_lyon",
+      "session": "oraux_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction française complète et réponse personnelle en allemand, avec examen du protocole et de ses exceptions.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  },
+  "bareme": {
+    "version": 15,
+    "question": 5
+  }
+}
