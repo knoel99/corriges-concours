@@ -1,0 +1,60 @@
+{
+  "slug": "bel_al_grec-oral-textes-antiques-exemple-du-jury-chariton-et-euripide_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Grec (oral Textes antiques, exemple du jury Chariton et Euripide)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Traduction de Chariton, Chairéas et Callirhoé III, 3–4, et commentaire d’Euripide, Hippolyte, vers 439–481",
+  "type_document": "exemple de billet du jury",
+  "date_de_passage": null,
+  "fascicules_associes": [
+    "bel_al_grec-oral-tronc-commun-30-juin_2026"
+  ],
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_grec_tronc_commun_textes_antiques.pdf#page=6",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_grec_tronc_commun_textes_antiques.pdf",
+    "rapport_sha256": "1847e19d1e87f0a2449031004f44d0bb453954f907ea89d8cfd87adfe58f4584",
+    "page": 6,
+    "edition_grecque": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0006/tlg005/tlg0006.tlg005.perseus-grc2.xml",
+    "edition_sha256": "9c17463401444faec352cb74ade85e87092581cc80f38ebb8ffd47d415ef081b",
+    "bornes": "Euripide, Hippolyte, vers 439 à 481 inclus"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction",
+      "Commentaire"
+    ],
+    "precision": "Traduction intégrale du passage de Chariton reproduit par le jury et commentaire des 43 vers d’Euripide précisément délimités au même billet, contrôlés sur le témoin grec de Gilbert Murray. Le rapport présente un exemple de billet sans indiquer un jour de passage ni attester son tirage par un candidat."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Comment la nourrice change-t-elle la question ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale du passage de Chariton reproduit par le jury et commentaire des 43 vers d’Euripide précisément délimités au même billet, contrôlés sur le témoin grec de Gilbert Murray. Rédaction des deux éditions, préparation de la reprise orale et schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
