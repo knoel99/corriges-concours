@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve commune aux ENS de Paris et de Cachan. Durée totale de deux heures. Le dictionnaire est autorisé. La version porte sur un extrait de Tawfiq al-Hakim ; la question d’opinion appelle une réponse en arabe.
 
 ## I. Version française — L’Égypte et la tenue internationale
 
-Je commencerai donc par dire qu’il n’y a pas lieu de s’inquiéter ni de craindre un affaiblissement du sentiment national si l’on ôte le tarbouche. Car ce sentiment réside dans l’ardeur du cœur, et non dans ce cornet rouge. Il y aurait peut-être matière à s’alarmer si nous étions le premier peuple au monde à envisager ce changement. Mais d’autres nations orientales l’ont fait avant nous, et c’est précisément dans la force de leur sentiment national qu’elles ont aujourd’hui ce qu’elles ont de meilleur. Nous n’avons donc aucune raison d’hésiter ni de craindre quoi que ce soit. Qui pourrait prétendre que le Japon, si profondément attaché à ses traditions orientales, a perdu son âme nationale le jour où il a adopté la tenue internationale complète et où son souverain lui-même, pourtant revêtu d’un caractère religieux et sacré, l’a portée ? Qui pourrait prétendre que le Prophète arabe avait un costume qui lui fût propre ? Le vêtement ne distinguait ni le musulman, ni le chrétien, ni le juif…
+Je commencerai donc par dire qu’il n’y a pas lieu de s’inquiéter ni de craindre un affaiblissement du sentiment national si l’on ôte le tarbouche. Car ce sentiment réside dans l’ardeur du cœur, et non dans ce cornet rouge. Il y aurait peut-être matière à s’alarmer si nous étions le premier peuple au monde à envisager ce changement. Mais d’autres nations orientales l’ont fait avant nous, et leur sentiment national est aujourd’hui plus fort que le nôtre. Nous n’avons donc aucune raison d’hésiter ni de craindre quoi que ce soit. Qui pourrait prétendre que le Japon, si profondément attaché à ses traditions orientales, a perdu son âme nationale le jour où il a adopté la tenue internationale complète et où son souverain lui-même, pourtant revêtu d’un caractère religieux et sacré, l’a portée ? Qui pourrait prétendre que le Prophète arabe avait un costume qui lui fût propre ? Le vêtement ne distinguait ni le musulman, ni le chrétien, ni le juif…
 
 Aujourd’hui, nous sentons le besoin de réaliser, à l’intérieur de nos frontières, l’unité et l’égalité en abolissant les distinctions qui divisent la population en deux catégories placées sur un pied d’inégalité. Aujourd’hui encore, alors que nous allons prendre part à la vie internationale en nous intégrant à la communauté des nations civilisées, quel intérêt avons-nous à maintenir entre nous et les autres peuples du monde cette différence si visible qui, à tout instant, proclame que nous seuls sommes restés en arrière, loin des autres nations orientales, musulmanes ou non, qui ont annoncé leur réveil au monde et sont venues siéger aux côtés des pays les plus avancés en civilisation ?…
 

@@ -18,7 +18,8 @@
     "indexes": [
       "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
       "https://www.ens.psl.eu/en/node/825"
-    ]
+    ],
+    "reference_du_texte": "D’après Tawfiq al-Hakim, تحت شمس الفكر, Maktabat Misr, Le Caire."
   },
   "figures": [
     {
@@ -40,6 +41,30 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Traduction française du titre et de tous les paragraphes lus sur le fac-similé arabe, réponse personnelle en arabe, commentaire du lexique du couvre-chef et de l’argument par comparaison."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Collation des deux éditions avec la page 4 du fascicule. Vérification de la question et signalement du comparatif خير منا dans le premier paragraphe."
+    },
+    {
+      "phase": "retouches",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Correction dans les deux éditions du comparatif خير منا : les autres nations ont désormais un sentiment national plus fort que le nôtre."
     }
   ],
   "couverture": {
