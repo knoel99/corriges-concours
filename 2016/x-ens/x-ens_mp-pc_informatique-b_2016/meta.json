@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc_informatique-b_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique B",
+    "annee": 2016,
+    "duree_heures": 2
+  },
+  "questions": 18,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mppc_sujet_Info_2h.pdf",
+    "sujet_sha256": "b0b8b96dd235d451e723e9e7aa5c82277ffabe60bccea51a17094f038f2ff0de",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP_rap_EinfoB.pdf",
+    "rapport_sha256": "a7652379304792187273d60645f8ebb4368f1b8299eed3d786d9fed61f9449c4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q01-reseaux.svg",
+      "question": "Q1",
+      "legende": "Le réseau A comporte cinq arêtes et le réseau B en comporte six. Chacun compte cinq individus, y compris le sommet isolé 4 de A."
+    },
+    {
+      "fichier": "figures/q12-compression.svg",
+      "question": "Q12",
+      "legende": "Une recherche depuis 0 fait pointer les sommets de son ancien chemin directement vers 4. La racine garde sa boucle implicite."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des dix-huit questions à partir du sujet et du rapport de jury. Lecture des graphes et forêts sur le PDF. Vérification des contractions sur tous les graphes à cinq sommets, de la taille de coupe, de la compression et des requêtes SQL. Deux schémas originaux."
+    }
+  ]
+}

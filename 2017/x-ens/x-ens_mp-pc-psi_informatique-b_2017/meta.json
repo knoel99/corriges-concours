@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2017,
+    "duree_heures": 2
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MPPC_sujet_infoB.pdf",
+    "sujet_sha256": "59d21b22b2d57db8d543092d48496f4a8210746ded982bebd0326206b301da7b",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_PC_rap_eInfoB.pdf",
+    "rapport_sha256": "d6d4963011d332fc037b6d4532d54bf24a794becf04986fb81fa561d593c30a3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q12-quadrants.svg",
+      "question": "Q12",
+      "legende": "Les sept cellules vertes forment S₁. Les quatre du carré supérieur droit ont le même préfixe 3 et se regroupent en 34."
+    },
+    {
+      "fichier": "figures/q16-fusion.svg",
+      "question": "Q16",
+      "legende": "Le grand quadrant reste en place pendant que les trois quadrants inclus A, B et C sont émis et que leur curseur avance."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des seize questions à partir du sujet et du rapport de la banque. Contrôle indépendant de la compaction et de la fusion par ensembles explicites de points, du nombre de comparaisons et des trois requêtes SQL. Deux figures originales."
+    }
+  ]
+}

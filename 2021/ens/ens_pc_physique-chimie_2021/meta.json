@@ -1,0 +1,176 @@
+{
+  "slug": "ens_pc_physique-chimie_2021",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2021
+  },
+  "questions": 73,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/05/21_pc_suj_phychi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/06/21_pc_rap_ephychi.pdf",
+    "sujet_sha256": "3d3231495218f4cd9f75daf06170b41b9688b2ade49da6191d2e075f81cabc73",
+    "rapport_sha256": "d5f29579407cb623980cbded7783a58800accc00dcf9513e2be1de5a3d10db8c"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "P31",
+      "P32",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "questions_partiellement_traitees": [
+      "C29",
+      "C30"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les 36 questions de physique sont traitées intégralement. En chimie, 35 questions sont traitées intégralement. C29 explique le rôle du groupe mésylate et C30 la nature acétal du groupe MOM. Les deux mécanismes ciblés de fin de préparation ne sont pas développés."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "question": "C1",
+      "fichier": "figures/sature-cis-trans.svg",
+      "legende": "À même longueur carbonée, une double liaison Z impose un coude tandis que la géométrie E conserve une forme plus étendue. Les carbones de l’insaturation sont repérés."
+    },
+    {
+      "question": "C24",
+      "fichier": "figures/signaux-fragment-neuf.svg",
+      "legende": "Les deux carbones vinyliques sont en bleu, les carbones CH portant O en vert et le silicium du protecteur en rose. La numérotation C1 à C5 part de l’alcène terminal."
+    },
+    {
+      "question": "P2",
+      "fichier": "figures/dipole-et-spire.svg",
+      "legende": "Coupe dans le plan x,y. À l’approche, le courant positif sort de la feuille en P et y entre au point opposé. Quelques lignes extérieures du dipôle sont représentées."
+    },
+    {
+      "question": "P6",
+      "fichier": "figures/courant-force-vitesse.svg",
+      "legende": "Tracés illustratifs cohérents pour un franchissement. Le courant change de signe en O, la force sur la spire a deux lobes négatifs et la vitesse demeure négative."
+    },
+    {
+      "question": "P14",
+      "fichier": "figures/flux-et-force.svg",
+      "legende": "Le flux extérieur a un extremum au centre, où le courant et la force s’annulent. La force à vitesse fixée atteint ses maxima en module pour X égal à ±1/2."
+    },
+    {
+      "question": "P27",
+      "fichier": "figures/anneau-elementaire.svg",
+      "legende": "La distance u relie le centre de l’aimant à l’anneau interne. Elle vaut au minimum s, la distance du centre à la face du bloc."
+    },
+    {
+      "question": "P31",
+      "fichier": "figures/phase-et-contact.svg",
+      "legende": "Trajectoires du modèle avec la valeur théorique de Q et trois vitesses initiales du même ordre que les essais. Le trait vertical marque le contact géométrique à 5 mm."
+    },
+    {
+      "question": "P35",
+      "fichier": "figures/vitesse-critique.svg",
+      "legende": "L’encadrement expérimental du seuil entre les essais voisins de 0,57 et 0,85 m/s est compatible avec la prévision théorique."
+    },
+    {
+      "question": "C8",
+      "fichier": "figures/orbitales-icl.svg",
+      "legende": "Niveaux schématiques des orbitales de valence. Les paires π dégénérées reçoivent quatre électrons chacune. Les niveaux atomiques du chlore se situent plus bas que ceux de l’iode."
+    },
+    {
+      "question": "C15",
+      "fichier": "figures/lectures-de-titrage.svg",
+      "legende": "Le pointillé situe l’équivalence. Les tracés illustrent les trois signaux respectivement mesurés à potentiel imposé, à courant imposé et à faible tension imposée."
+    },
+    {
+      "question": "C27",
+      "fichier": "figures/barrieres-cycloaddition.svg",
+      "legende": "Les différences de hauteur de barrière reproduisent les rapports des quatre produits. Les niveaux finaux sont illustratifs, car les rendements cinétiques ne les déterminent pas."
+    },
+    {
+      "question": "C33",
+      "fichier": "figures/reseau-huile-de-lin.svg",
+      "legende": "Traits ondulés pour les chaînes grasses et traits rouges pour les liaisons entre chaînes. Les pontages réduisent la mobilité à mesure que le film vieillit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions sur le sujet et le rapport de l’ENS de Lyon 2021. Lecture des graphes expérimentaux de freinage et calcul des constantes de couplage, du seuil de collision et des deux échelles. Étude des graisses, calorimétrie, dosage de Wijs, analyse spectrale, stéréochimique et cinétique, vieillissement du film de peinture. Douze figures originales. Couverture partielle délimitée aux questions C29 et C30."
+    }
+  ]
+}

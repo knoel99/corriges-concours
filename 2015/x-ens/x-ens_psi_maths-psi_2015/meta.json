@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_psi_maths-psi_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Maths PSI",
+    "annee": 2015
+  },
+  "questions": 38,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2015_Sujet_1C_PSI_Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "fe1d04bfeb7c5c7776a1efa285bc11a255b1a6c8515c15e4fabe03fb9cd7563c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/courbure-et-torsion.svg",
+      "question": "23",
+      "legende": "Pour lambda égal à un, la courbure reste constante et la torsion traverse zéro à l’origine avant de changer de signe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 38 réponses des deux éditions sur le sujet de six pages. Preuve de la borne stricte de la valeur limite, changement de phase, repère de Frenet et correction du signe de la borne en 22a. Diagramme de la courbure et de la torsion.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "slug": "ens_psi_physique-u_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PSI",
+    "matiere": "Physique U",
+    "annee": 2024
+  },
+  "questions": 74,
+  "sources": {
+    "sujet": "https://cpge-paradise.com/Concours2024/XENS/PSI/PhysUPSI2024bis.pdf",
+    "sujet_sha256": "e986a5af91e5ebd8d4e2f3610860162db48eb32416a049a4a412c491d3804d82",
+    "transcription": "https://www.wikiprepa.fr/concours/tex/ens_physique-u_psi_2024.tex",
+    "transcription_sha256": "a41ed9385773265571c9d0a77569f498349be9f1b27a360fac7ae40f9823d2e8",
+    "index_officiel": "https://www.ens.psl.eu/rapports-et-sujets-2024-psi"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir du scan de l’épreuve. Transcription mathématique contrôlée sur les pages numérisées. Les 74 questions du scan distribué sont traitées, dont les deux moyennes orbitales, la précession, les paramètres de la réponse aux champs, l’exposant sept et la lecture des deux graphiques de blocage. Six figures pédagogiques sont originales. L’index officiel de 2024 pointe vers le rapport 2023 pour cette épreuve. Aucun rapport propre à 2024 n’a été identifié."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "6",
+      "fichier": "figures/potentiel-de-thomson.svg",
+      "legende": "Le potentiel et sa pente se raccordent au bord de la sphère positive."
+    },
+    {
+      "numero": 2,
+      "question": "12",
+      "fichier": "figures/polarisabilite-dynamique.svg",
+      "legende": "Réponse de l’oscillateur non amorti. Les deux côtés de la résonance ont des signes différents."
+    },
+    {
+      "numero": 3,
+      "question": "23",
+      "fichier": "figures/cone-de-focalisation.svg",
+      "legende": "Le rayon marginal du faisceau parallèle définit l’angle du cône de focalisation."
+    },
+    {
+      "numero": 4,
+      "question": "42",
+      "fichier": "figures/ellipse-et-grand-axe.svg",
+      "legende": "Le proton occupe le foyer gauche dans la convention de cette épreuve. Le demi-grand axe relie le centre géométrique à une extrémité."
+    },
+    {
+      "numero": 5,
+      "question": "66",
+      "fichier": "figures/axes-en-precession.svg",
+      "legende": "Dix orientations successives de l’ellipse. Les positions de l’axe majeur se compensent sur un cycle de précession sans champ."
+    },
+    {
+      "numero": 6,
+      "question": "74",
+      "fichier": "figures/niveaux-du-blocage.svg",
+      "legende": "Schéma qualitatif pour un déplacement d’interaction positif. Le même laser n’est plus résonant avec la seconde excitation."
+    }
+  ],
+  "redaction": "Les 74 questions du scan distribué sont traitées, dont les deux moyennes orbitales, la précession, les paramètres de la réponse aux champs, l’exposant sept et la lecture des deux graphiques de blocage. Six figures pédagogiques sont originales. L’index officiel de 2024 pointe vers le rapport 2023 pour cette épreuve. Aucun rapport propre à 2024 n’a été identifié.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74"
+    ]
+  }
+}

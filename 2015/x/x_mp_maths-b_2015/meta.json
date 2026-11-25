@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2015",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2015
+  },
+  "questions": 31,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2015_MP_MB_enonce.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "4c91ea39c3b36b8507e76ed40ab77be40bd71e12cb5181393d2e929fa2cb8028"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-branches-inverses.svg",
+      "question": "3a",
+      "legende": "La fonction présente deux branches monotones de part et d’autre de son minimum. Un niveau strictement positif rencontre chacune d’elles une fois."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des quatre parties dans les deux éditions, à partir du sujet original conservé en miroir. Graphe des branches inverses demandé en 3a, calcul du terme de Stirling, du rang optimal, des poids de la grille et des conditions de résonance.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
