@@ -1,0 +1,52 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2013",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2013,
+    "duree_heures": 4
+  },
+  "questions": 25,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mp_infomath_ulc.pdf",
+    "sujet_sha256": "f5f670cd1f5ab44147fb4806c254e4d9ba7591a006f972a8642e26270915bb2f",
+    "identification": "Banque des ENS, composition informatique-mathématiques ULC, concours informatique MP, sept pages. En 3.7 le signe imprimé devant la racine est bien négatif."
+  },
+  "figures": [
+    {
+      "fichier": "figures/etoile-et-rayon-spectral.svg",
+      "question": "3.6",
+      "legende": "L’étoile orientée dans les deux sens. Les coordonnées positives indiquées auprès des sommets constituent un vecteur propre de valeur propre racine de deux."
+    },
+    {
+      "fichier": "figures/direction-propre-positive.svg",
+      "question": "2.3",
+      "legende": "Exemple pour la matrice dont les lignes sont (2, 1) et (1, 1). Le point fixe intérieur fournit sa direction propre positive."
+    },
+    {
+      "fichier": "figures/alignement-thue-morse.svg",
+      "question": "5.2",
+      "legende": "Une paire identique, ici 22, se trouve à cheval sur deux images. Elle détermine la parité des coupures de toute l’occurrence."
+    },
+    {
+      "fichier": "figures/accroissements-thue-morse.svg",
+      "question": "5.4",
+      "legende": "À partir de k = 3, les plages d’accroissements 4 puis 2 se répètent avec une longueur doublée à chaque échelle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction de 25 questions et de leurs sous-questions sur les graphes, Perron–Frobenius, les substitutions et Thue–Morse. Contrôle visuel de la figure de Fibonacci, des blocs de la matrice et du signe imprimé en 3.7. Comparaison de la formule exacte de Thue–Morse au comptage indépendant pour les 264 premières longueurs. Quatre illustrations originales et discussion des conventions sur la longueur zéro et du logarithme en 3.4."
+    }
+  ]
+}
