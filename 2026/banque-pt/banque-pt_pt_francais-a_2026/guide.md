@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** Dissertation unique, 4 heures, sans dictionnaire ni appareil électronique. Aucune longueur imposée. Le sujet tient en deux phrases : une citation de Maurice Merleau-Ponty et une consigne.
@@ -268,6 +270,8 @@ Les trois œuvres commencent par mettre la nature à distance, pour la connaîtr
 Il est possible de retourner au même endroit pour étudier un terrain sous ses pieds. Le géologue recueille un fragment de roche, le place devant lui et l’examine. Même alors, quelque chose doit porter celui qui examine et la table où repose l’échantillon. Le « sol » change ici de sens sans cesser d’être concret. Une matière prélevée peut devenir objet ; la relation grâce à laquelle un vivant se tient et s’oriente ne se laisse pas tout entière prélever avec elle. C’est ce reste que la répétition de « pas tout à fait » oblige à penser.
 
 ![Deux fonctions d’un même terrain](figures/lecture-du-sujet.svg)
+
+Pour éprouver le mot « sol », garder le même rocher et changer le geste du sujet. L’analyse doit pouvoir dire ce qui demeure support jusque pendant l’acte qui détache un échantillon à observer.
 
 Les œuvres valident donc la première phrase de Merleau-Ponty : la nature peut être mise devant nous, mais elle y reste « énigmatique ». Reste à comprendre pourquoi : si elle échappe à l'objectivation, c'est peut-être que nous ne sommes jamais entièrement en face d'elle.
 

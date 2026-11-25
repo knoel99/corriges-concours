@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Épreuve.** Dissertation, 4 heures, sans dictionnaire ni appareil électronique. Programme des CPGE scientifiques 2025-2026, thème « Expériences de la nature » : Jules Verne, *Vingt mille lieues sous les mers* ; Georges Canguilhem, *La Connaissance de la vie* ; Marlen Haushofer, *Le Mur invisible*.
 
 **Sujet.** « La Nature est un objet énigmatique, un objet qui n'est pas tout à fait objet ; elle n'est pas tout à fait devant nous. Elle est notre sol, non pas ce qui est devant, mais ce qui nous porte. » (Maurice Merleau-Ponty, *La Nature. Notes de cours du Collège de France (1956-1957)*). En quoi cette réflexion vous semble-t-elle valable pour définir notre expérience de la nature telle qu'elle apparaît dans les trois œuvres au programme ?
@@ -41,6 +43,10 @@ Les trois œuvres commencent par mettre la nature à distance, pour la connaîtr
 **C. Où est l'énigme ?** Encore faut-il ne pas se tromper d'énigme. Le « monstre » qui ouvre le roman de Verne, que le naturaliste prend pour un narval géant, se révèle une machine : ce que l'on croyait un phénomène naturel est une production humaine. Le mur de Haushofer est lui aussi une énigme, mais dont l'origine reste en suspens : la narratrice soupçonne une arme humaine, sans jamais pouvoir le vérifier. Ces deux dispositifs ne sont donc pas des énigmes de la nature ; ils en déplacent la question. Derrière la paroi, la narratrice aperçoit un vieil homme figé près d'une fontaine, image d'un monde arrêté ; de son côté, la forêt continue de vivre. Ce qui est énigmatique, ce n'est pas un phénomène étrange posé devant nous, c'est la nature qui persiste sous nos dispositifs et nos savoirs, et dont nous ne pouvons pas sortir pour la regarder du dehors.
 
 Il est possible de retourner au même endroit pour étudier un terrain sous ses pieds. Le géologue recueille un fragment de roche, le place devant lui et l’examine. Même alors, quelque chose doit porter celui qui examine et la table où repose l’échantillon. Le « sol » change ici de sens sans cesser d’être concret. Une matière prélevée peut devenir objet ; la relation grâce à laquelle un vivant se tient et s’oriente ne se laisse pas tout entière prélever avec elle. C’est ce reste que la répétition de « pas tout à fait » oblige à penser.
+
+Le marcheur peut prélever un éclat de la roche qui le porte. Il transforme alors un fragment en objet transportable, tandis que l’opération entière reste rendue possible par le terrain sous ses pieds. Cet exemple donne un sens simultané aux deux rapports au monde qu’introduit la citation.
+
+![Deux fonctions d’un même terrain](figures/lecture-du-sujet.svg)
 
 Les œuvres valident donc la première phrase de Merleau-Ponty : la nature peut être mise devant nous, mais elle y reste « énigmatique ». Reste à comprendre pourquoi : si elle échappe à l'objectivation, c'est peut-être que nous ne sommes jamais entièrement en face d'elle.
 
