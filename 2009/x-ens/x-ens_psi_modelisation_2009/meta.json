@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_modelisation_2009",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2009,
+    "duree_heures": 5
+  },
+  "questions": 50,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://cortial.net/fichiers/ecrits2009/X-ENS09psi-modelisation.pdf",
+    "sujet_sha256": "f72644922902a168916962a135f54b79f367c61ddf730cb2706d637e32512c40",
+    "identification": "Banque commune École polytechnique – ENS de Cachan, session 2009, PSI, cinq heures. Vingt-quatre pages incluant le formulaire de Laplace."
+  },
+  "figures": [
+    {
+      "fichier": "figures/bilan-de-tranche.svg",
+      "question": "3",
+      "legende": "En régime stationnaire et sans perte latérale, les débits de chaleur sont égaux. Les débits d’entropie diffèrent car les températures aux deux faces diffèrent."
+    },
+    {
+      "fichier": "figures/identifications-comparees.svg",
+      "question": "29",
+      "legende": "Reconstruction à partir des paramètres identifiés. Les trois modèles convergent vers 40 °C mais leur amorce diffère."
+    },
+    {
+      "fichier": "figures/tangente-de-strejc.svg",
+      "question": "26",
+      "legende": "Les intersections de la tangente avec les niveaux zéro et un déterminent tᵤ et tᵤ + tₐ. Leur écart est la durée tₐ."
+    },
+    {
+      "fichier": "figures/bode-du-pi.svg",
+      "question": "42",
+      "legende": "Correcteur PI ramené à un gain proportionnel unité. À la pulsation réduite un, la phase vaut −45° et le gain est supérieur de 3 dB à son asymptote haute fréquence."
+    },
+    {
+      "fichier": "figures/branches-du-pid.svg",
+      "question": "46",
+      "legende": "Les trois branches reçoivent la même erreur. Dans le montage filtré, le bloc dérivé est remplacé par Tᴅp / (1 + aTᴅp)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Résolution sur scan des cinquante questions du four industriel. Relecture des lectures graphiques, des coefficients couplés du thermocouple et du montage à quatre amplificateurs. Vérification de l’identification Broïda et Strejc, de la diffusion et des correcteurs. Précision sur les unités de la capacité thermique, les critères de troncature et cinq illustrations originales."
+    }
+  ]
+}
