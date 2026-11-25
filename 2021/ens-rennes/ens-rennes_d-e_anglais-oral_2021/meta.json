@@ -1,0 +1,151 @@
+{
+  "slug": "ens-rennes_d-e_anglais-oral_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais (oral)",
+    "annee": 2021,
+    "modalite": "oral"
+  },
+  "questions": 7,
+  "sujets": 7,
+  "intitules": {
+    "1": "Students in England call for 30% Covid discount on tuition fees",
+    "2": "Work is where your laptop is: meet the globetrotting digital nomads",
+    "3": "Ministers urged not to ‘threaten’ NHS staff over mandatory Covid jab",
+    "4": "King's College apologises for 'harm' caused to staff by photo tribute to Prince Philip",
+    "5": "Age discrimination claims by workers who have lost jobs double in pandemic",
+    "6": "Extending school day to help children catch up will not improve results, Cambridge University says",
+    "7": "Parents in UK prepare for legal action over A-level results"
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf",
+    "sujet_sha256": "a879b37a6cbf77ef35c6e1b238d1368ce0e49333bafc8bb8f08c2d9fda5c0bbf",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "documents": [
+      {
+        "numero": 1,
+        "titre": "Students in England call for 30% Covid discount on tuition fees",
+        "publication": "Rachel Hall, The Guardian, 31 May 2021",
+        "page": 1,
+        "fin_pdf": 2,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf#page=1"
+      },
+      {
+        "numero": 2,
+        "titre": "Work is where your laptop is: meet the globetrotting digital nomads",
+        "publication": "Julia Kollewe, The Guardian, 30 May 2021",
+        "page": 3,
+        "fin_pdf": 4,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf#page=3"
+      },
+      {
+        "numero": 3,
+        "titre": "Ministers urged not to ‘threaten’ NHS staff over mandatory Covid jab",
+        "publication": "Aubrey Allegretti, The Guardian, 30 May 2021",
+        "page": 5,
+        "fin_pdf": 6,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf#page=5"
+      },
+      {
+        "numero": 4,
+        "titre": "King's College apologises for 'harm' caused to staff by photo tribute to Prince Philip",
+        "publication": "Jamie Fullerton, The Telegraph, 30 May 2021",
+        "page": 7,
+        "fin_pdf": 8,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf#page=7"
+      },
+      {
+        "numero": 5,
+        "titre": "Age discrimination claims by workers who have lost jobs double in pandemic",
+        "publication": "Charles Hymas, The Telegraph, 31 May 2021",
+        "page": 9,
+        "fin_pdf": 10,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf#page=9"
+      },
+      {
+        "numero": 6,
+        "titre": "Extending school day to help children catch up will not improve results, Cambridge University says",
+        "publication": "Telegraph Reporters, The Telegraph, 28 May 2021",
+        "page": 11,
+        "fin_pdf": 12,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf#page=11"
+      },
+      {
+        "numero": 7,
+        "titre": "Parents in UK prepare for legal action over A-level results",
+        "publication": "Anna Fazackerley and Michael Savage, The Observer, 30 May 2021",
+        "page": 13,
+        "fin_pdf": 14,
+        "reference": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-anglais-d-e-2021_1652428630096-pdf#page=13"
+      }
+    ],
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-oral-anglais-d-e-2021_1634310546626-pdf",
+    "rapport_sha256": "3284ec3bd2d826c0db711a689992d654d3bff2ed71040861ac24891330c5f9f4",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-oral-anglais-d-e-2021_1634310546626-pdf",
+    "rapport_jury_sha256": "3284ec3bd2d826c0db711a689992d654d3bff2ed71040861ac24891330c5f9f4"
+  },
+  "redaction": "Rédaction en anglais des deux éditions pour les 7 billets du fascicule distribué, avec synthèses, commentaires, relances résolues et indications linguistiques contextualisées.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport 2021, notamment résumé, commentaire de la construction et de l’objectivité de l’article, entretien et précision linguistique."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction en anglais des deux éditions pour les 7 billets du fascicule distribué, avec synthèses, commentaires, relances résolues et indications linguistiques contextualisées.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/rebate-and-repayments.svg",
+      "legende": "The proposal would give the cohort money now while distributing later costs according to graduates’ repayment paths."
+    },
+    {
+      "numero": 2,
+      "question": "5",
+      "fichier": "figures/claim-comparisons.svg",
+      "legende": "A 74% annual rise and a doubling from one quarter to the next refer to different comparisons."
+    },
+    {
+      "numero": 3,
+      "question": "7",
+      "fichier": "figures/assessing-grades.svg",
+      "legende": "Giving teachers discretion, moderating grades and hearing appeals answer three separate questions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
+  }
+}
