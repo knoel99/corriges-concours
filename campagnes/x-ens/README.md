@@ -10,6 +10,8 @@ Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir le
 
 Les sujets d’informatique et de mathématiques-informatique des ENS depuis 2003, ainsi que les compositions B communes depuis 2011, sont distingués par la garde de chaque cahier. En 2010, l’épreuve des trois ENS sur les programmes à compteurs entiers diffère de celle de Polytechnique sur le plus proche ancêtre commun. Le rapport sur les rotations et repliages de mots de 2009 est conservé par l’ENS de Paris. En 2011, la bonne épreuve B sur les permutations est dans la rubrique MP. La banque déclare l’épreuve B supprimée en 2020. Les rapports sont rattachés après lecture de leur en-tête. [Sujets, rapports et empreintes des fichiers](informatique-ecrits-2003-2025.tsv) · [Annales officielles de la banque PC](https://banques-ecoles.fr/cms/filiere-pc/les-annales-et-rapports-des-jurys/)
 
+Les deux concours ont aussi des compositions distinctes avant 2010. Le lycée Faidherbe conserve le cahier de 1997 des ENS de Paris et de Lyon. Les premiers sujets de mathématiques-informatique comprennent les carrés latins, donnés en 2002 au groupe I des filières MP et PC. [Archives antérieures et empreintes des cahiers](informatique-ecrits-1997-2009.tsv)
+
 ## Lire le bilan
 
 Le bilan daté donne les comptes par matière et les liens vers les preuves pour chaque épreuve. [Dernier bilan sur le site](https://sujet-corriges.ai/couverture-x-ens) · [Recherche par épreuve](https://sujet-corriges.ai/couverture-x-ens/epreuves) · [Relevés datés sur GitHub](bilans/)
