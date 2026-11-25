@@ -1,0 +1,112 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2004",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2004
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2004/sujet-ecrit-2004-second-concours_geosciences.pdf",
+    "sujet_sha256": "9ab36dedb86d4987be19dfc1c2ec7f109fb17f6fe74b029bc828408d76023585",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2004/rapport-2004-second-concours_ecrit_geosciences.pdf",
+    "rapport_sha256": "106c8bfa67edc421f2f73ac8439565cf9c591da3cec55d3aac8e22bf8d6436d1"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.8.1",
+      "1.8.2",
+      "1.8.3",
+      "1.8.4",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5",
+      "3.1.6",
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.3",
+      "3.4.1",
+      "3.4.2",
+      "3.4.3",
+      "3.4.4",
+      "3.4.5",
+      "3.4.6",
+      "4.1",
+      "4.2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Épreuve commune aux ENS Ulm et Lyon. Les 40 consignes sont traitées, y compris les deux planches à compléter et la coupe de synthèse. Les quatre sous-questions suivant l’introduction 1.7 portent les numéros 1.8.1 à 1.8.4 dans l’original. La question PREM est également numérotée 1.8. Les profondeurs et températures lues sur les diagrammes sont approximatives."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "1.2",
+      "fichier": "figures/carte-des-grandes-ceintures-sismiques.svg",
+      "legende": "Report schématique des principales ceintures et classes de profondeur du document 1. Les bandes sont élargies pour leur lecture. Trait de côte issu de Natural Earth, domaine public."
+    },
+    {
+      "question": "1.3",
+      "fichier": "figures/coupes-atlantique-et-japon.svg",
+      "legende": "Coupes A–B et C–D dans le sens du planisphère. À la dorsale les foyers demeurent superficiels. Au Japon le plan des foyers descend vers le continent."
+    },
+    {
+      "question": "1.8.3",
+      "fichier": "figures/corde-tangente-et-zone-dombre.svg",
+      "legende": "Le rayon r est perpendiculaire à la corde tangente. Le demi-angle au centre vaut 52° dans l’hypothèse des rais droits."
+    },
+    {
+      "question": "2.10",
+      "fichier": "figures/transitions-sous-slab-et-dorsale.svg",
+      "legende": "Report sur le document 2. Les déflexions ont une amplitude illustrative. La position de la dalle froide se décale vers la gauche avec la profondeur comme sur la coupe originale."
+    },
+    {
+      "question": "3.1.4",
+      "fichier": "figures/geometrie-deratosthene.svg",
+      "legende": "Rayons solaires parallèles et verticales locales de Syène et d’Alexandrie. L’angle est agrandi pour lisibilité. La distance de 800 km suit l’arc terrestre."
+    },
+    {
+      "question": "4.1",
+      "fichier": "figures/coupe-radiale-des-enveloppes.svg",
+      "legende": "Quart de coupe à l’échelle des rayons. Les limites principales sont le Moho, la zone 410–660 km, la limite manteau–noyau vers 2 890 km et la limite de la graine vers 5 150 km."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de l’écrit commun Ulm–Lyon, confrontation au sujet et au rapport écrit. Carte de sismicité, coupes A–B et C–D, transitions du manteau sous dalle et dorsale, coupe de la Terre et schémas géométriques originaux. Recalcul des densités, vitesses, rayons et masses des enveloppes."
+    }
+  ]
+}
