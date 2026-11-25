@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_anglais-le2_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LE2)",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Spirit et Opportunity au-delà de la durée prévue de leur mission martienne",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "61.10PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=3",
+    "sujet_sha256": "1567a166fd67c04e3d5615d14281c97e16050c7425544c7210420bab2e1d8982",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006/rapport-2006-pc_ecrit_langue_etrangere_2_anglais.pdf",
+    "rapport_jury_sha256": "1a22fb0592efce26965e48e4d1a6653a132d319a1cfefdc6ac5fcd326a886ce4",
+    "precision": "Version intégrale du passage du New York Times du 3 janvier 2006, avec ses coupes, et réponse à la question de la page 3. Le rapport sur l’anglais LE2 a été consulté."
+  },
+  "mots_expression": {
+    "1": 136
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/sols.svg",
+      "legende": "Le sol est le jour martien. Le texte distingue objectif initial et pronostics personnels."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/valeur.svg",
+      "legende": "L’intérêt d’une découverte dépend du projet, du coût et des connaissances obtenues."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Spirit et Opportunity au-delà de la durée prévue de leur mission martienne.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
