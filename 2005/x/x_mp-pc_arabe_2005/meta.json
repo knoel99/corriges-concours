@@ -1,0 +1,60 @@
+{
+  "slug": "x_mp-pc_arabe_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Retour au Caire et ambivalence du progrès chez Étienne Klein",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. Retour au Caire et ambivalence du progrès chez Étienne Klein.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=3",
+    "sha256_sujet": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249",
+    "index": "https://web.archive.org/web/20090415070752/http://www.polytechnique.fr:80/concours/sujets/sujet05/sujet05.htm",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=3",
+        "sha256": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://web.archive.org/web/20061125010606id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+        "sha256": "0315993b329ac8a956c2b507bb40ddd56bd2ad4cc1c1a1abaf175d4f1588491f"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Le passage de la ville à l’intimité du salon règle le rythme du récit de Mohammed Berrada."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. Retour au Caire et ambivalence du progrès chez Étienne Klein."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
