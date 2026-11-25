@@ -1,0 +1,157 @@
+{
+  "slug": "ens_pc_physique-chimie_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2019
+  },
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/05/19_pc_phychi_lyon_sujet.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/06/19_pc_rap_ephychi_lyon.pdf",
+    "sujet_sha256": "4f9a1cdbb0084c86994c66bfe81ab1148655b792f0fea9e77c21fdff4f3ca0c1",
+    "rapport_sha256": "1c454c21d61f71e2b76f8a0b3ec7d6f741f7ce6e3e88d6a2ab56c00703c10a61"
+  },
+  "questions": 68,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "P31",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C34"
+    ],
+    "questions_partiellement_traitees": [
+      "C31",
+      "C35"
+    ],
+    "questions_non_traitees": [
+      "C11",
+      "C12",
+      "C18",
+      "C19",
+      "C21",
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "precision": "Le fascicule numérote séparément P1 à P31 pour la physique et C1 à C37 pour la chimie. Les deux éditions corrigent entièrement 58 des 68 questions, dont toute la physique du pendule excité, la structure des ions diatomiques, les propriétés générales des diagrammes de Frost et les mesures du colorant. C31 se limite au transport de l’eau et à l’évolution du titre, C35 à la définition du catalyseur. Les huit questions de chimie hors couverture sont repérées dans les deux textes. Les lectures ont été confrontées au fascicule (18 pages numérotées) et au rapport de l’ENS de Lyon."
+  },
+  "figures": [
+    {
+      "question": "P4",
+      "fichier": "figures/repere-du-pendule-mobile.svg",
+      "legende": "Le pivot A est en translation verticale dans le repère du laboratoire. L’axe z est orienté vers le bas. La réaction axiale est dessinée dans le sens usuel de la tension."
+    },
+    {
+      "question": "P9",
+      "fichier": "figures/phase-et-puissance-moyenne.svg",
+      "legende": "Excitation à deux fois la pulsation propre. Les courbes de gauche utilisent la phase optimale φ = π. À droite, une phase décalée de π inverse le sens du transfert moyen d’énergie."
+    },
+    {
+      "question": "P12",
+      "fichier": "figures/lecture-de-la-croissance-initiale.svg",
+      "legende": "Reconstruction harmonique illustrant le calcul de pente logarithmique. Les points sont des lectures du fascicule et la phase de la reconstruction est illustrative."
+    },
+    {
+      "question": "P26",
+      "fichier": "figures/puits-du-pendule-inverse.svg",
+      "legende": "Potentiel calculé pour Q = 1,8, d’après le profil de l’original. Les deux conditions initiales sont situées de part et d’autre du maximum intermédiaire."
+    },
+    {
+      "question": "P30",
+      "fichier": "figures/courbure-et-pulsation-lente.svg",
+      "legende": "Le mode oscillant près de π apparaît au-delà de Q = 1/2. Une faible courbure conduit à une longue période."
+    },
+    {
+      "question": "C3",
+      "fichier": "figures/orbitales-de-valence-du-dichlore.svg",
+      "legende": "Niveaux schématiques sans mélange s–p et occupation des quatorze électrons de valence. Chaque paire π comporte deux orbitales."
+    },
+    {
+      "question": "C9",
+      "fichier": "figures/comparaison-des-canaux-de-dissociation.svg",
+      "legende": "La valeur indiquée est énergie des fragments moins énergie de la molécule. Une différence négative marque un canal énergétiquement ouvert."
+    },
+    {
+      "question": "C16",
+      "fichier": "figures/lecture-des-pentes-de-frost.svg",
+      "legende": "Schéma général. Le point central au-dessus de la corde donne une pente de gauche supérieure à celle de droite. L’écart vertical exprime l’avantage thermodynamique du mélange des deux états extrêmes."
+    },
+    {
+      "question": "C29",
+      "fichier": "figures/reacteur-et-lecture-de-la-pente.svg",
+      "legende": "Le tracé reproduit la droite de pente 0,00283 par seconde. Les cercles repèrent les trois temps de passage sur la droite ajustée et ne constituent pas une nouvelle série de mesures."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions. Résolution des 31 questions de physique, lecture des enveloppes et des deux trajectoires, potentiel de Kapitza et seuil de stabilisation. Chimie des ions en phase gaz, interprétation géométrique de Frost, analyse des flux et de l’absorbance du bleu E133, comparaison des RMN de l’alcool et de la cétone. Neuf figures originales, 58 réponses intégrales et deux partielles."
+    }
+  ]
+}
