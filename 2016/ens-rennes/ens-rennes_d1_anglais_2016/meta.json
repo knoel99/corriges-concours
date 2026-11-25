@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_anglais_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-anglais-e-crit-d1-2016_1476109326966-pdf#page=1",
+    "sha256_sujet": "ecf77ae94a4d4015f9c6e4dc6c0bdced14968571b118c27a657bd41b3b99d91f",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "Adapté du New Statesman, 3 février 2016",
+    "page": 1,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-anglais-e-crit-d1-2016_1478511444714-pdf#page=1",
+    "sha256_rapport_jury": "5266dbbeba2cba2a585c563d86369b5b1d61820eb06c36dd9bd323e0521b8a33"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Would you say that recent decades have brought significant progress in public behaviour and health? Environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/progress.svg",
+      "legende": "Two measures, two distinct claims"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

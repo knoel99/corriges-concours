@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_allemand_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-allemand-e-crit-d1-2016_1476109339566-pdf#page=1",
+    "sha256_sujet": "2f123a2f3c9b4512417198f4093003a0ed62127193c732c8363a93becde8bc00",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "D’après Der Spiegel, 22 avril 2015",
+    "page": 1,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-allemand-e-crit-d1-2016_1478511418470-pdf#page=1",
+    "sha256_rapport_jury": "28a5fa51f90957bddde09c02196f1ec4bdb3dbaa00b53c20e6320c0eea794b5c"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 98,
+    "regle": "Expliquer les défis que rencontrait alors la politique d’asile et d’accueil des réfugiés de l’Union européenne. Environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/dublin.svg",
+      "legende": "La procédure illustrée dans l’article de 2015"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
