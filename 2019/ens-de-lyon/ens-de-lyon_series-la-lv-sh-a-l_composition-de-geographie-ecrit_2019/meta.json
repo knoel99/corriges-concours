@@ -1,0 +1,44 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de géographie (écrit)",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20composition%20de%20g%C3%A9ographie.pdf",
+    "sha256_sujet": "882683d260b45726ae33f53aca2025a369a87f2b02ba4949485a5e2c3e8a1f80",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-10/GEO_TC_SPE_2019%20internet.pdf#page=1",
+    "sha256_rapport_jury": "f5dff05e3611965b24eab91a3158d1b9a94bbe7f97a41cb785ad3b35dcbeb0c7",
+    "pieces_complementaires": [
+      {
+        "role": "Fond cartographique Natural Earth, domaine public",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+        "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/littoraux-et-mondialisation.svg",
+      "question": "I. Les interfaces les plus puissantes associent des routes maritimes à des territoires terrestres",
+      "legende": "Les littoraux comme lieux de redistribution, de spécialisation touristique et de filtrage des mobilités."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition et croquis originaux rédigés à partir des deux feuillets et du rapport 2019, pages 1 à 3 jusqu’à la section de spécialité. Étude des interfaces commerciales, touristiques, migratoires et environnementales. Deux éditions.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

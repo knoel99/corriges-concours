@@ -1,0 +1,54 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de géographie (écrit)",
+    "annee": 2022
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/VF%20Session-2022_BEL_Composition%20de%20G%C3%A9ographie.pdf",
+    "sha256_sujet": "59aa5bb2ef70bceaac39e1f715018791576aba58f9bbc0af4fa3585fc9025911",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/G%C3%A9ographie%202022.pdf#page=2",
+    "sha256_rapport_jury": "fb9d2647a6771e7a0eadd18cb9d8ef727caa00d901219194871a1b0c0874dc5d",
+    "pieces_complementaires": [
+      {
+        "role": "Fond cartographique Natural Earth, domaine public",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+        "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+      },
+      {
+        "role": "Fond cartographique Natural Earth, domaine public",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_1_states_provinces_lines.geojson",
+        "sha256": "72cca93c850d412628a5da4bc5ebfe21ba4d376eb34611bde6b623ee73f0fdcf"
+      },
+      {
+        "role": "Fond cartographique Natural Earth, domaine public",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_lakes.geojson",
+        "sha256": "d350b75978b26fe839b797c2c529b2fb8f47fb3983c03f4964e36d5df9378a52"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/declins-etats-unis.svg",
+      "question": "I. Identifier des trajectoires dont les indicateurs et les périmètres diffèrent",
+      "legende": "Des trajectoires de déclin et de reconversion différenciées aux États-Unis, exemples étudiés dans la composition."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale à partir des pages 1–2 du sujet et des pages 2–7 du rapport. Comparaison des échelles et indicateurs, cas industriels, ruraux, urbains et post-catastrophe. Croquis sur fond Natural Earth avec frontières et Grands Lacs.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
