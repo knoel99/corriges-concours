@@ -1216,6 +1216,7 @@
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
 | 2009 | X-ENS | PSI | Sciences industrielles | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/brut.md) | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/guide.md) |
 | 2010 | X-ENS | PSI | Sciences industrielles | [md](2010/x-ens/x-ens_psi_sciences-industrielles_2010/brut.md) | [md](2010/x-ens/x-ens_psi_sciences-industrielles_2010/guide.md) |
+| 2011 | X-ENS | PSI | Sciences industrielles | [md](2011/x-ens/x-ens_psi_sciences-industrielles_2011/brut.md) | [md](2011/x-ens/x-ens_psi_sciences-industrielles_2011/guide.md) |
 | 2012 | X-ENS | PSI | Sciences industrielles | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/brut.md) | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/guide.md) |
 | 2013 | X-ENS | PSI | Sciences industrielles | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/brut.md) | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/guide.md) |
 | 2014 | X-ENS | PSI | Sciences industrielles (corrigé partiel) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/brut.md) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/guide.md) |
@@ -1229,6 +1230,7 @@
 | 2022 | X-ENS | PSI | Sciences industrielles | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/brut.md) | [md](2022/x-ens/x-ens_psi_sciences-industrielles_2022/guide.md) |
 | 2023 | X-ENS | PSI | Sciences industrielles | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/brut.md) | [md](2023/x-ens/x-ens_psi_sciences-industrielles_2023/guide.md) |
 | 2024 | X-ENS | PSI | Sciences industrielles | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/brut.md) | [md](2024/x-ens/x-ens_psi_sciences-industrielles_2024/guide.md) |
+| 2025 | X-ENS | PSI | Sciences industrielles | [md](2025/x-ens/x-ens_psi_sciences-industrielles_2025/brut.md) | [md](2025/x-ens/x-ens_psi_sciences-industrielles_2025/guide.md) |
 | 2026 | X-ENS | PSI | Sciences industrielles | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/brut.md) | [md](2026/x-ens/x-ens_psi_sciences-industrielles_2026/guide.md) |
 | 2020 | X | FUI-FF 1 | Anglais | [md](2020/x/x_fui-ff-1_anglais_2020/brut.md) | [md](2020/x/x_fui-ff-1_anglais_2020/guide.md) |
 | 2021 | X | FUI-FF 1 | Anglais | [md](2021/x/x_fui-ff-1_anglais_2021/brut.md) | [md](2021/x/x_fui-ff-1_anglais_2021/guide.md) |
