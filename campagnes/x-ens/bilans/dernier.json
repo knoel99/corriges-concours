@@ -1,47 +1,47 @@
 {
-  "date": "2026-11-25T04:41:05+01:00",
-  "revision": "66628433acd4f6ac6e7a2bf5cae4695150b60b0a",
+  "date": "2026-11-25T04:59:18+01:00",
+  "revision": "c875cd1813ade5b8df794e54a9ba736767c5ba31",
   "fichier": "2026-11-25.tsv",
   "perimetres": [
     {
       "nom": "Toutes les épreuves",
-      "recenses": 1473,
-      "paires": 910,
-      "complets": 854,
-      "production": 803,
-      "partiels": 56,
+      "recenses": 1486,
+      "paires": 932,
+      "complets": 874,
+      "production": 792,
+      "partiels": 58,
       "partiels_production": 50,
-      "schemas": 2441
+      "schemas": 2486
     },
     {
       "nom": "Écrits, toutes sessions",
-      "recenses": 1129,
-      "paires": 743,
-      "complets": 708,
-      "production": 669,
-      "partiels": 35,
+      "recenses": 1139,
+      "paires": 762,
+      "complets": 725,
+      "production": 658,
+      "partiels": 37,
       "partiels_production": 30,
-      "schemas": 2058
+      "schemas": 2097
     },
     {
       "nom": "Écrits 2026",
       "recenses": 221,
       "paires": 221,
       "complets": 213,
-      "production": 209,
+      "production": 198,
       "partiels": 8,
       "partiels_production": 8,
       "schemas": 619
     },
     {
       "nom": "Oraux et fascicules",
-      "recenses": 315,
-      "paires": 138,
-      "complets": 120,
+      "recenses": 318,
+      "paires": 141,
+      "complets": 123,
       "production": 108,
       "partiels": 18,
       "partiels_production": 17,
-      "schemas": 254
+      "schemas": 260
     },
     {
       "nom": "Projets pratiques, sujets au choix",
@@ -88,10 +88,10 @@
     {
       "nom": "Chimie",
       "recenses": 49,
-      "paires": 30,
+      "paires": 32,
       "complets": 12,
       "production": 12,
-      "partiels": 18,
+      "partiels": 20,
       "partiels_production": 13,
       "schemas": 167
     },
@@ -158,12 +158,12 @@
     {
       "nom": "Informatique",
       "recenses": 107,
-      "paires": 58,
-      "complets": 58,
+      "paires": 65,
+      "complets": 65,
       "production": 52,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 174
+      "schemas": 195
     },
     {
       "nom": "Informatique + Sciences de l'ingénieur",
@@ -180,20 +180,20 @@
       "recenses": 203,
       "paires": 162,
       "complets": 162,
-      "production": 148,
+      "production": 137,
       "partiels": 0,
       "partiels_production": 0,
       "schemas": 215
     },
     {
       "nom": "Mathématiques",
-      "recenses": 205,
-      "paires": 160,
-      "complets": 160,
+      "recenses": 207,
+      "paires": 166,
+      "complets": 166,
       "production": 153,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 395
+      "schemas": 405
     },
     {
       "nom": "Mathématiques + Informatique",
@@ -267,13 +267,13 @@
     },
     {
       "nom": "Économie, droit et sciences sociales",
-      "recenses": 110,
-      "paires": 53,
-      "complets": 53,
+      "recenses": 118,
+      "paires": 57,
+      "complets": 57,
       "production": 47,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 93
+      "schemas": 101
     }
   ],
   "banques": [
@@ -302,7 +302,7 @@
       "recenses": 169,
       "paires": 132,
       "complets": 132,
-      "production": 129,
+      "production": 122,
       "partiels": 0,
       "partiels_production": 0,
       "schemas": 229
@@ -340,12 +340,12 @@
     {
       "nom": "ENS",
       "recenses": 156,
-      "paires": 95,
-      "complets": 85,
+      "paires": 96,
+      "complets": 86,
       "production": 71,
       "partiels": 10,
       "partiels_production": 10,
-      "schemas": 384
+      "schemas": 385
     },
     {
       "nom": "ENS Paris-Saclay",
@@ -359,23 +359,23 @@
     },
     {
       "nom": "ENS Rennes",
-      "recenses": 63,
-      "paires": 47,
-      "complets": 46,
+      "recenses": 73,
+      "paires": 53,
+      "complets": 52,
       "production": 42,
       "partiels": 1,
       "partiels_production": 1,
-      "schemas": 85
+      "schemas": 99
     },
     {
       "nom": "ENS de Lyon",
       "recenses": 155,
-      "paires": 92,
-      "complets": 75,
+      "paires": 95,
+      "complets": 76,
       "production": 74,
-      "partiels": 17,
+      "partiels": 19,
       "partiels_production": 12,
-      "schemas": 315
+      "schemas": 316
     },
     {
       "nom": "ENS-PSL",
@@ -390,19 +390,19 @@
     {
       "nom": "X",
       "recenses": 128,
-      "paires": 80,
-      "complets": 80,
+      "paires": 89,
+      "complets": 89,
       "production": 66,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 233
+      "schemas": 256
     },
     {
       "nom": "X-ENS",
       "recenses": 186,
       "paires": 146,
       "complets": 142,
-      "production": 139,
+      "production": 135,
       "partiels": 4,
       "partiels_production": 4,
       "schemas": 546
@@ -443,10 +443,10 @@
       {
         "nom": "Chimie",
         "recenses": 49,
-        "paires": 30,
+        "paires": 32,
         "complets": 12,
         "production": 12,
-        "partiels": 18,
+        "partiels": 20,
         "partiels_production": 13,
         "schemas": 167
       },
@@ -462,7 +462,7 @@
       },
       {
         "nom": "Culture générale et synthèse",
-        "recenses": 12,
+        "recenses": 13,
         "paires": 10,
         "complets": 10,
         "production": 8,
@@ -473,12 +473,12 @@
       {
         "nom": "Français et philosophie",
         "recenses": 196,
-        "paires": 104,
-        "complets": 103,
+        "paires": 107,
+        "complets": 106,
         "production": 103,
         "partiels": 1,
         "partiels_production": 0,
-        "schemas": 173
+        "schemas": 179
       },
       {
         "nom": "Français et philosophie + Arts",
@@ -513,12 +513,12 @@
       {
         "nom": "Informatique",
         "recenses": 107,
-        "paires": 58,
-        "complets": 58,
+        "paires": 65,
+        "complets": 65,
         "production": 52,
         "partiels": 0,
         "partiels_production": 0,
-        "schemas": 174
+        "schemas": 195
       },
       {
         "nom": "Informatique + Sciences de l'ingénieur",
@@ -535,20 +535,20 @@
         "recenses": 290,
         "paires": 205,
         "complets": 189,
-        "production": 167,
+        "production": 156,
         "partiels": 16,
         "partiels_production": 16,
         "schemas": 245
       },
       {
         "nom": "Mathématiques",
-        "recenses": 209,
-        "paires": 164,
-        "complets": 164,
+        "recenses": 211,
+        "paires": 170,
+        "complets": 170,
         "production": 157,
         "partiels": 0,
         "partiels_production": 0,
-        "schemas": 408
+        "schemas": 418
       },
       {
         "nom": "Mathématiques + Informatique",
@@ -622,13 +622,13 @@
       },
       {
         "nom": "Économie, droit et sciences sociales",
-        "recenses": 172,
-        "paires": 89,
-        "complets": 88,
+        "recenses": 182,
+        "paires": 93,
+        "complets": 92,
         "production": 80,
         "partiels": 1,
         "partiels_production": 1,
-        "schemas": 155
+        "schemas": 163
       }
     ],
     "banques": [
@@ -655,12 +655,12 @@
       {
         "nom": "BEL",
         "recenses": 284,
-        "paires": 211,
-        "complets": 201,
-        "production": 198,
+        "paires": 214,
+        "complets": 204,
+        "production": 191,
         "partiels": 10,
         "partiels_production": 9,
-        "schemas": 379
+        "schemas": 385
       },
       {
         "nom": "Banque PT",
@@ -695,12 +695,12 @@
       {
         "nom": "ENS",
         "recenses": 156,
-        "paires": 95,
-        "complets": 85,
+        "paires": 96,
+        "complets": 86,
         "production": 71,
         "partiels": 10,
         "partiels_production": 10,
-        "schemas": 384
+        "schemas": 385
       },
       {
         "nom": "ENS Paris-Saclay",
@@ -714,23 +714,23 @@
       },
       {
         "nom": "ENS Rennes",
-        "recenses": 85,
-        "paires": 65,
-        "complets": 64,
+        "recenses": 98,
+        "paires": 71,
+        "complets": 70,
         "production": 56,
         "partiels": 1,
         "partiels_production": 1,
-        "schemas": 143
+        "schemas": 157
       },
       {
         "nom": "ENS de Lyon",
         "recenses": 225,
-        "paires": 111,
-        "complets": 88,
+        "paires": 114,
+        "complets": 89,
         "production": 87,
-        "partiels": 23,
+        "partiels": 25,
         "partiels_production": 18,
-        "schemas": 343
+        "schemas": 344
       },
       {
         "nom": "ENS-PSL",
@@ -745,24 +745,24 @@
       {
         "nom": "X",
         "recenses": 128,
-        "paires": 80,
-        "complets": 80,
+        "paires": 89,
+        "complets": 89,
         "production": 66,
         "partiels": 0,
         "partiels_production": 0,
-        "schemas": 233
+        "schemas": 256
       },
       {
         "nom": "X-ENS",
         "recenses": 186,
         "paires": 146,
         "complets": 142,
-        "production": 139,
+        "production": 135,
         "partiels": 4,
         "partiels_production": 4,
         "schemas": 546
       }
     ]
   },
-  "blob_tableau": "f0b3598869890ed51c54b3ff3f0f1d4683169a1c"
+  "blob_tableau": "c54c3b60bf566102a801ebc38c0596e3f87442c7"
 }
