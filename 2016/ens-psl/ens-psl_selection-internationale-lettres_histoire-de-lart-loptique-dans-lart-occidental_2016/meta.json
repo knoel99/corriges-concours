@@ -1,0 +1,80 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-de-lart-loptique-dans-lart-occidental_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire de l’art — l’optique dans l’art occidental",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire de l’art — l’optique dans l’art occidental",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/DHTA.pdf",
+    "sujet_sha256": "23af061129b8670cbf2810a26910d3375ed3d130b7ea984a4b6e9a5be755d81a",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/RApport%20jury%20HA%202016.pdf",
+    "rapport_sha256": "b967c3bf39ac6a99b850ab72f4aa37b70c918b38578a4c561690b0fd958ee4a9",
+    "references": [
+      "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/83/92/2020718392/2020718392.pdf",
+      "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait",
+      "https://www.nationalgallery.org.uk/paintings/hans-holbein-the-younger-the-ambassadors",
+      "https://americanhistory.si.edu/ne/collections/object/nmah_1184286",
+      "https://www.centrepompidou.fr/fr/ressources/oeuvre/zS28bfR",
+      "https://www.kulturstiftung-des-bundes.de/de/projekte/detail/zero.html"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/positions.svg",
+      "question": "Dissertation",
+      "legende": "Trois dispositifs, trois positions pour le regard"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Attentes relatives aux instruments, au trompe-l’œil, au mouvement et aux techniques de la lumière."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation et du guide, dessin analytique original à partir des planches regardées."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Identification de la loupe, du détail du miroir, de la coupe du cyclorama et des deux œuvres du XXe siècle. Distinction des dispositifs de dessin et contrôle de la date du brevet de Wollaston. Contrôle du schéma et des deux éditions."
+    }
+  ]
+}
