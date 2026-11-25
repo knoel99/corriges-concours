@@ -1,0 +1,100 @@
+{
+  "slug": "x_pc_physique-a_2012",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2012
+  },
+  "questions": 35,
+  "intitule": "Oscillations d’une bulle",
+  "redaction": "Les 35 questions de I.1 à IV.10 sont traitées. Les deux méthodes de calcul de la pulsation propre, les raccords entre ondes et interface et le gain complexe sont établis. Le pic et le fond ont été lus sur la figure expérimentale du sujet.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2012/PC_PHYSIQUE_X_1_2012.enonce.pdf",
+    "sujet_sha256": "eb90341a8ba6e3d007f5991ec6b95f9f083645d9f1c82e41ca528406198d2221",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/12_pc_rap_ecrit_phy_a_xe.pdf",
+    "rapport_sha256": "5994d582d1acff880728ad9c18aa5c032fedcc2bcaa56952b787d3a0943e81b5"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de Bernard Andrieu, Emmanuel Levêque et Stéphane Nonnenmacher. Travail aux deux surfaces, accélération matérielle, lecture du gain et facteur de qualité."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 35 questions de I.1 à IV.10 sont traitées. Les deux méthodes de calcul de la pulsation propre, les raccords entre ondes et interface et le gain complexe sont établis. Le pic et le fond ont été lus sur la figure expérimentale du sujet."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "II.7",
+      "fichier": "figures/gain.svg",
+      "legende": "Gain mesuré à deux rayons en eau incompressible. L’asymptote verticale est en x = 1, l’annulation en x = √2."
+    },
+    {
+      "numero": 2,
+      "question": "IV.6",
+      "fichier": "figures/lecture.svg",
+      "legende": "Lecture approximative du pic sur l’énoncé. Les trois marques suffisent pour calculer la fréquence centrale et la largeur à mi-puissance."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "IV.8",
+      "IV.9",
+      "IV.10"
+    ]
+  }
+}
