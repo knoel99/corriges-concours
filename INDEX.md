@@ -177,6 +177,8 @@
 | 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
 | 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
 | 2017 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Chinois (oral) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2017/guide.md) |
+| 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Chinois (oral) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2022/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition de géographie (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2017/guide.md) |
 | 2015 | ENS Paris-Saclay | Design | Expression graphique, chromatique ou volumique | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/brut.md) | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/guide.md) |
 | 2021 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/guide.md) |
@@ -1099,6 +1101,7 @@
 | 2016 | ENS | PC | Physique C | [md](2016/ens/ens_pc_physique-c_2016/brut.md) | [md](2016/ens/ens_pc_physique-c_2016/guide.md) |
 | 2017 | ENS | PC | Physique C | [md](2017/ens/ens_pc_physique-c_2017/brut.md) | [md](2017/ens/ens_pc_physique-c_2017/guide.md) |
 | 2018 | ENS | PC | Physique C | [md](2018/ens/ens_pc_physique-c_2018/brut.md) | [md](2018/ens/ens_pc_physique-c_2018/guide.md) |
+| 2019 | ENS | PC | Physique C | [md](2019/ens/ens_pc_physique-c_2019/brut.md) | [md](2019/ens/ens_pc_physique-c_2019/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2015 | ENS | PC | Physique-chimie | [md](2015/ens/ens_pc_physique-chimie_2015/brut.md) | [md](2015/ens/ens_pc_physique-chimie_2015/guide.md) |
 | 2016 | ENS | PC | Physique-chimie | [md](2016/ens/ens_pc_physique-chimie_2016/brut.md) | [md](2016/ens/ens_pc_physique-chimie_2016/guide.md) |
