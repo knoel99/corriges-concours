@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2004",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2004
+  },
+  "questions": 17,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2004.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "631247586b21cc89323d93d7dc4c4d866872ffb8d381d476cab89b364053bd7d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trajectoires-et-equilibres.svg",
+      "question": "9.c",
+      "legende": "Pour ε = 1, les équilibres sont 0 et 1. Les trois données initiales illustrent les branches maximales, dont deux ont un pôle en temps fini."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète sur le sujet original. Compatibilité en résonance et convergence de Fourier, constantes uniformes pour la contraction, premier terme asymptotique, toutes les données initiales de Riccati et graphe des branches maximales, continuation en temps positif.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
