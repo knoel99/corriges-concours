@@ -1,0 +1,157 @@
+{
+  "slug": "x-ens_pc_chimie-a_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2015
+  },
+  "questions": 78,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_pc_sujet_chimieA_xeulc.pdf",
+    "sujet_sha256": "63c875ad9292e04e5793f0a7156530479cffeb2b252c6d2417e63c701ddaf146",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/12/15_pc_rap_echia.pdf",
+    "rapport_sha256": "a1653586ad8627f2110f71ef9b4c3d02bf65b066e5109095ee038514920ef33a"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "P1.1",
+      "P1.2",
+      "P1.3",
+      "P1.4",
+      "P1.5",
+      "P1.6",
+      "P1.7",
+      "P1.8",
+      "P1.9",
+      "P1.10",
+      "P1.11",
+      "P1.12",
+      "P1.13",
+      "P1.14",
+      "P1.15",
+      "P1.16",
+      "P1.17",
+      "P1.18",
+      "P1.19",
+      "P1.20",
+      "P1.21",
+      "P1.22",
+      "P1.25",
+      "P1.26",
+      "P1.27",
+      "P1.28",
+      "P1.29",
+      "P1.30",
+      "P1.31",
+      "P1.32",
+      "P1.33",
+      "P1.34",
+      "P1.35",
+      "P1.36",
+      "P1.37",
+      "P1.38",
+      "P1.39",
+      "P1.40",
+      "P2.2",
+      "P2.13",
+      "P2.14",
+      "P2.38"
+    ],
+    "questions_partiellement_traitees": [
+      "P2.3",
+      "P2.7",
+      "P2.28"
+    ],
+    "questions_non_traitees": [
+      "P1.23",
+      "P1.24",
+      "P2.1",
+      "P2.4",
+      "P2.5",
+      "P2.6",
+      "P2.8",
+      "P2.9",
+      "P2.10",
+      "P2.11",
+      "P2.12",
+      "P2.15",
+      "P2.16",
+      "P2.17",
+      "P2.18",
+      "P2.19",
+      "P2.20",
+      "P2.21",
+      "P2.22",
+      "P2.23",
+      "P2.24",
+      "P2.25",
+      "P2.26",
+      "P2.27",
+      "P2.29",
+      "P2.30",
+      "P2.31",
+      "P2.32",
+      "P2.33",
+      "P2.34",
+      "P2.35",
+      "P2.36",
+      "P2.37"
+    ],
+    "precision": "Sur 78 questions imprimées, 42 sont entièrement corrigées, trois le sont en partie et 33 restent hors couverture. Le problème 1 couvre les questions 1 à 22 et 25 à 40. Le problème 2 couvre les questions 2, 13, 14 et 38. Les réponses partielles portent sur la configuration de la lysine (P2.3), le nombre d’oxydation local du carbone (P2.7) et l’interprétation indépendante du spectre de l’énone (P2.28). Chaque autre question est indiquée à sa place. La rédaction suit les dix-neuf pages du sujet et les commentaires correspondants du jury."
+  },
+  "figures": [
+    {
+      "question": "P1.1",
+      "fichier": "figures/methoxy-et-donation-mesomere.svg",
+      "legende": "Exemple de donation mésomère du méthoxy. Des formes analogues placent la charge en ortho. Les structures sont des formes limites."
+    },
+    {
+      "question": "P1.7",
+      "fichier": "figures/parametres-de-taft.svg",
+      "legende": "Paramètres calculés avec α = 1/2. Les halogènes ont des contributions de signes opposés et l’ammonium est surtout inductif."
+    },
+    {
+      "question": "P1.13",
+      "fichier": "figures/hydroxy-ortho-et-liaison-intramoleculaire.svg",
+      "legende": "Les partenaires voisins forment des interactions intramoléculaires. À gauche, une forme du carboxylate ionisé illustre une liaison hydrogène interne."
+    },
+    {
+      "question": "P1.20",
+      "fichier": "figures/ordre-un-et-mesure-de-la-pente.svg",
+      "legende": "L’absorbance ramenée aux deux valeurs limites mesure la fraction d’aldéhyde résiduel. Les points sont des lectures graphiques arrondies."
+    },
+    {
+      "question": "P1.26",
+      "fichier": "figures/deux-regimes-de-hammett.svg",
+      "legende": "À gauche, corrélation mesurée à pH 1,7. À droite, schéma des deux tendances de la figure 10. Les branches du second panneau sont indicatives."
+    },
+    {
+      "question": "P1.35",
+      "fichier": "figures/potentiels-et-reduction-du-substituant.svg",
+      "legende": "Les droites reprennent les régressions de la figure 12. Les trois points à σ = 0,78 sont les trois étapes observées pour le dérivé nitro."
+    },
+    {
+      "question": "P2.14",
+      "fichier": "figures/chaise-et-attribution-des-couplages.svg",
+      "legende": "Représentation de la chaise B et des orientations déduites des grands couplages trans-diaxiaux. H-2′ est équatorial."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour 42 questions entières et trois réponses partielles. Confrontation des calculs aux figures et aux tableaux du sujet et au rapport. Corrélation de Taft, cinétique apparente, potentiels du dérivé nitro, attribution RMN du carbonate et stéréochimie. Sept figures originales. Les 33 autres questions sont identifiées."
+    }
+  ]
+}
