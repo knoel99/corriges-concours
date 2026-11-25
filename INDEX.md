@@ -251,6 +251,10 @@
 | 2021 | ENS Rennes | D-E | Anglais | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Anglais | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/guide.md) |
 | 2023 | ENS Rennes | D-E | Anglais | [md](2023/ens-rennes/ens-rennes_d-e_anglais_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_anglais_2023/guide.md) |
+| 2020 | ENS Rennes | D-E | Espagnol | [md](2020/ens-rennes/ens-rennes_d-e_espagnol_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_espagnol_2020/guide.md) |
+| 2021 | ENS Rennes | D-E | Espagnol | [md](2021/ens-rennes/ens-rennes_d-e_espagnol_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_espagnol_2021/guide.md) |
+| 2022 | ENS Rennes | D-E | Espagnol | [md](2022/ens-rennes/ens-rennes_d-e_espagnol_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_espagnol_2022/guide.md) |
+| 2023 | ENS Rennes | D-E | Espagnol | [md](2023/ens-rennes/ens-rennes_d-e_espagnol_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_espagnol_2023/guide.md) |
 | 2020 | ENS Rennes | D-E | Italien | [md](2020/ens-rennes/ens-rennes_d-e_italien_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_italien_2020/guide.md) |
 | 2021 | ENS Rennes | D-E | Italien | [md](2021/ens-rennes/ens-rennes_d-e_italien_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_italien_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Italien | [md](2022/ens-rennes/ens-rennes_d-e_italien_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_italien_2022/guide.md) |
@@ -980,6 +984,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2010 | ENS | MP | Physique MPI | [md](2010/ens/ens_mp_physique-mpi_2010/brut.md) | [md](2010/ens/ens_mp_physique-mpi_2010/guide.md) |
 | 2015 | ENS | PC | Chimie B | [md](2015/ens/ens_pc_chimie-b_2015/brut.md) | [md](2015/ens/ens_pc_chimie-b_2015/guide.md) |
 | 2016 | ENS | PC | Chimie B | [md](2016/ens/ens_pc_chimie-b_2016/brut.md) | [md](2016/ens/ens_pc_chimie-b_2016/guide.md) |
 | 2017 | ENS | PC | Chimie B | [md](2017/ens/ens_pc_chimie-b_2017/brut.md) | [md](2017/ens/ens_pc_chimie-b_2017/guide.md) |
