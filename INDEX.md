@@ -973,6 +973,7 @@
 | 2014 | X | PSI-PT | Informatique | [md](2014/x/x_psi-pt_informatique_2014/brut.md) | [md](2014/x/x_psi-pt_informatique_2014/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |
 | 2015 | X-ENS | PSI | Modélisation | [md](2015/x-ens/x-ens_psi_modelisation_2015/brut.md) | [md](2015/x-ens/x-ens_psi_modelisation_2015/guide.md) |
+| 2016 | X-ENS | PSI-PT | Informatique | [md](2016/x-ens/x-ens_psi-pt_informatique_2016/brut.md) | [md](2016/x-ens/x-ens_psi-pt_informatique_2016/guide.md) |
 | 2016 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2016/x-ens/x-ens_psi_modelisation_2016/brut.md) | [md](2016/x-ens/x-ens_psi_modelisation_2016/guide.md) |
 | 2017 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2017/x-ens/x-ens_psi_modelisation_2017/brut.md) | [md](2017/x-ens/x-ens_psi_modelisation_2017/guide.md) |
 | 2018 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2018/x-ens/x-ens_psi_modelisation_2018/brut.md) | [md](2018/x-ens/x-ens_psi_modelisation_2018/guide.md) |
