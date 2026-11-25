@@ -1,0 +1,55 @@
+{
+  "slug": "ens-rennes_d-e_composition-dordre-economique_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "La politique monétaire conventionnelle a-t-elle encore un avenir ?",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-economie-e-crit-2022_1657700483173-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-economie-ecrit-d-e-2022_1668097825151-pdf",
+    "sujet_sha256": "878fa458e9fee6521d4e93ee42fdf59518e602982af510f484768e96b3723ce0",
+    "rapport_sha256": "cc86adfbb23356f329ac2e9447419ef0caa8ea7d53c64996b2a43e57186711cc",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1",
+    "apercu_sujet_sha256": "f6f940fb7b19909de7b1a1cb7691d53403ee1fdbb7a0459cc9fcd6db7f99b257",
+    "apercu_rapport_sha256": "dff711a4fb016a2991d977e8e2ee5a3cf15915ee65c8586c08fb612e50bdfa7b"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/taux-reel-et-anticipations.svg",
+      "legende": "Pour un taux nominal de 2 %, le taux réel approximatif passe de −1 % à +1 % lorsque l’inflation anticipée baisse de 3 % à 1 %. Calcul illustratif."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/instruments-et-transmission.svg",
+      "legende": "Les trois instruments agissent sur des grandeurs différentes. Le financement et les dépenses qui en résultent doivent être observés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « La politique monétaire conventionnelle a-t-elle encore un avenir ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « La politique monétaire conventionnelle a-t-elle encore un avenir ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
