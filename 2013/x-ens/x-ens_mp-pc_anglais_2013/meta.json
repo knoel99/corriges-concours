@@ -1,0 +1,71 @@
+{
+  "slug": "x-ens_mp-pc_anglais_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "intitule": "Lefty and Desdemona et Une nouvelle morale de la frugalité",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II.1",
+      "II.2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2013",
+    "code_garde": "XEULC",
+    "etablissements_imprimes": "École polytechnique, ESPCI et ENS de Paris, Lyon et Cachan",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_version_xeulc.pdf#page=3",
+    "sujet_sha256": "0e95612d3a4fe0813b6dd6751b3c5a0300f37231ada228521cc6fd91a310392c",
+    "sujet_complementaire": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_expressionecrite_xeulc.pdf",
+    "sujet_complementaire_sha256": "90b418bcca94b53f07c545a6c1cad740071b976e98078de58ea3509a11a3f1ca",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mppc_rap_eangexprecr.pdf",
+    "rapport_sha256": "0c0bc43778e6f9276846eb6527af3bf4e53bb9f6ce8d6ef59748467282f004fd",
+    "limites": "Le rapport d’anglais de 2013 cité ici porte sur l’expression écrite. Aucun rapport distinct de version n’a été identifié dans les documents consultés."
+  },
+  "redaction": "Version intégrale du récit de Jeffrey Eugenides. Deux réponses argumentées sur le rapport à l’argent et la frugalité. Explication des termes maritimes, du jeu des personnages et de la lecture recommandée par le jury d’expression.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/croisiere.svg",
+      "legende": "Les témoins découvrent comme une idylle naissante une rencontre dont certains gestes étaient convenus."
+    },
+    {
+      "numero": 2,
+      "question": "II.1",
+      "fichier": "figures/mesure.svg",
+      "legende": "L’auteur passe de l’argent comme fin à la possibilité d’évaluer une vie par d’autres biens."
+    },
+    {
+      "numero": 3,
+      "question": "II.2",
+      "fichier": "figures/reparer.svg",
+      "legende": "Le droit de réparer élargit une liberté que le manque de ressources peut rendre théorique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale du récit de Jeffrey Eugenides. Deux réponses argumentées sur le rapport à l’argent et la frugalité. Explication des termes maritimes, du jeu des personnages et de la lecture recommandée par le jury d’expression.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
