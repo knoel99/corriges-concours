@@ -1,0 +1,43 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2002",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2002,
+    "duree_heures": 4
+  },
+  "questions": 27,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_maths-info_mp-pc_2002.pdf",
+    "index_banque": "https://www.wikiprepa.fr/concours/ecrit/ens_maths-info_mp-pc_2002",
+    "identification": "Sujet UL 220, J. 2035, huit pages numérisées. Quatre heures, filières MP et PC groupe I, ENS de Paris et de Lyon. La fiche de la banque ne référence pas de rapport de jury pour cette session.",
+    "sujet_sha256": "b8c62be05cad51350700d1a6a7434e4687bd2939beac7ff2659d31a146668e1f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/orthogonaux.svg",
+      "question": "2.7",
+      "legende": "Figure 1 — À l’ordre quatre, chaque case d’un carré latin orthogonal apporte un chiffre au nombre magique. Les deux carrés et le résultat sont lus dans le même ordre de lignes et de colonnes."
+    },
+    {
+      "fichier": "figures/tranches.svg",
+      "question": "3.10",
+      "legende": "Figure 2 — Dans la boîte de côtés quinze, dix et six, les trente symboles apparaissent respectivement deux, trois et cinq fois dans chaque tranche selon la coordonnée fixée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Résolution des 27 questions des trois parties. Forme d’Hermite par colonnes, classification en petits ordres, exemples de carrés orthogonaux et magiques, tailles élémentaires et justification de la construction récursive des hyper-rectangles. Aucun rapport de jury répertorié pour cette session."
+    }
+  ]
+}
