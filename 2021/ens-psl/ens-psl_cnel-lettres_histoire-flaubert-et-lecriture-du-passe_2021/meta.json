@@ -1,0 +1,64 @@
+{
+  "slug": "ens-psl_cnel-lettres_histoire-flaubert-et-lecriture-du-passe_2021",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Histoire — Flaubert et l’écriture du passé",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire — Flaubert et l’écriture du passé",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-ecrit-cnel2021.pdf",
+    "sujet_sha256": "76a5374fad23c2df72b81a94ad121a3b15b4e453a8976e3ca4ab3b5965839002",
+    "references": [
+      "https://fr.wikisource.org/wiki/R%C3%A9flexions_d%E2%80%99un_historien_sur_les_fausses_nouvelles_de_la_guerre",
+      "https://www.si.edu/es/object/black-reconstruction-essay-toward-history-part-which-black-folk-played-attempt-reconstruct-democracy%3Asiris_sil_1063033",
+      "https://catalogue.bnf.fr/ark:/12148/cb123807414",
+      "https://cup.columbia.edu/book/vichy-france/9780231124690/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/reprendre.svg",
+      "question": "Dissertation",
+      "legende": "Ce qu’une reprise change et ce qu’elle doit établir"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire historiographique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification des articulations logiques de la lettre, de la portée de la catégorie de Du Bois, du statut de la Donation de Constantin et du renouvellement documentaire chez Paxton. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}

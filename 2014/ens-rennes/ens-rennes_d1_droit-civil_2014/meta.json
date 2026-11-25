@@ -1,0 +1,99 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2014",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Propriété et titre",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2014-d1-droit-civil_1421746998552-pdf",
+    "sujet_sha256": "f9657702b389d6659e20de23dfd52555ec13a26c520738449a89d8dc386917ac",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-droit-civil_1421747236230-pdf",
+    "rapport_sha256": "0a2bb60a2be3e228404d0697ca5ee9e8aa45fbffcb34d48b1965e000c4e344b6",
+    "references_complementaires": {
+      "Code civil au 1er avril 2014": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2014-04-01/"
+    },
+    "articles_session": {
+      "544": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428859/2014-04-01",
+      "550": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428917/2014-04-01",
+      "653": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429978/2014-04-01",
+      "690": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430374/2014-04-01",
+      "691": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430383/2014-04-01",
+      "692": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430389/2014-04-01",
+      "711": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430585/2014-04-01",
+      "712": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430593/2014-04-01",
+      "931": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006433777/2014-04-01",
+      "1138": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436313/2014-04-01",
+      "1141": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436326/2014-04-01",
+      "1317": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437885/2014-04-01",
+      "1319": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437909/2014-04-01",
+      "1322": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437945/2014-04-01",
+      "1341": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438186/2014-04-01",
+      "1583": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006441308/2014-04-01",
+      "2011": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006445338/2014-04-01",
+      "2256": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017173/2014-04-01",
+      "2258": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017143/2014-04-01",
+      "2261": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017202/2014-04-01",
+      "2268": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017187/2014-04-01",
+      "2272": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017157/2014-04-01",
+      "2273": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017376/2014-04-01",
+      "2276": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017163/2014-04-01",
+      "2277": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019017159/2014-04-01",
+      "2284": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006448032/2014-04-01",
+      "2285": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006448042/2014-04-01"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/trois-sens.svg",
+      "legende": "Le même document peut constater un acte et renseigner sur la situation d’un occupant."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/delais-prescription.svg",
+      "legende": "Les deux délais supposent une possession utile. La détention précaire ajoute une question préalable."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Propriété et titre » à partir des pièces distribuées ou conservées par l’ENS Rennes. Distinction des sens du titre, de la vente, de la preuve, de la publicité, de la possession mobilière et de la prescription immobilière en droit de 2014.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des sept pages avec la proposition du jury, notamment juste titre, interversion, servitudes, actes authentiques et conflits de titres. Les articles ont été contrôlés à la date de session."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Propriété et titre » à partir des pièces distribuées ou conservées par l’ENS Rennes. Distinction des sens du titre, de la vente, de la preuve, de la publicité, de la possession mobilière et de la prescription immobilière en droit de 2014."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

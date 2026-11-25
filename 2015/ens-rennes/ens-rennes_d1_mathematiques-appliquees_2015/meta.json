@@ -1,0 +1,47 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2015",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2015
+  },
+  "questions": 49,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-d1-epreuve-a-options-2015_1505898697484-pdf#page=3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/math-d1-rapport-jury-2015_1448641915009-pdf",
+    "sha256_sujet": "87e559756e319b91fe08ec2c0b2c72c206b44fa7929c97ffa4693de73815231a",
+    "sha256_rapport_jury": "e74267e46496bdd1846ea380aff46318b3f66e3ad578346bcbe3bb5bec770cff"
+  },
+  "figures": [
+    {
+      "fichier": "figures/histogramme-et-unite-d-aire.svg",
+      "question": "1.1.b",
+      "legende": "Chaque aire représente une fréquence. Le rectangle témoin à droite représente 1 % de l’effectif."
+    },
+    {
+      "fichier": "figures/ecart-des-salaires.svg",
+      "question": "1.2.a",
+      "legende": "Les quinze écarts relatifs et la droite ajustée. Le rang zéro représente 1995."
+    },
+    {
+      "fichier": "figures/tangente-et-antecedents.svg",
+      "question": "3.III.3",
+      "legende": "La courbe décroissante et sa tangente en 1. Les traits fins situent les deux antécédents construits à la question 3.III.6."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale de l’option, pages physiques 3 à 9 du cahier, avec le rapport de jury. Vérification des pondérations et de l’effet de structure, des deux régressions, des paramètres log-normaux et de la construction réciproque. Histogramme avec unité d’aire, nuage des salaires et tracé de la tangente.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

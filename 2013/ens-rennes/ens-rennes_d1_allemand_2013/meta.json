@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_allemand_2013",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-13d1-lv_1421750182683-pdf#page=2",
+    "sha256_sujet": "92d5a4b46574d7219da366a971ff9dae16bf73660d2dcb402a36eafc0188c75b",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "D’après Der Spiegel · 15 octobre 2012",
+    "page": 2,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a_13d1_allemand_1384770295995.pdf#page=1",
+    "sha256_rapport_jury": "65ea478b2f9971e4128f04de81ce1b61ab31c4fb3dfcda3ef12f006f2a87afc5"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 97,
+    "regle": "Discuter la proposition d’un quota contraignant de 30 % de femmes dans les conseils de surveillance des entreprises cotées · environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/direction.svg",
+      "legende": "Quels périmètres comparent les chiffres ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

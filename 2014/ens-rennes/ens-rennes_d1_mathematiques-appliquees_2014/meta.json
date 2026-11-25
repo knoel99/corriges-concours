@@ -1,0 +1,47 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2014",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2014
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2014-d1-option-mathematiques_1421747191524-pdf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-maths_1421747323570-pdf",
+    "sha256_sujet": "652cfac379827504a8bbaf4bf5560cc093da17e38b25fd7cb6375714f4bbd197",
+    "sha256_rapport_jury": "25dd33b8e873b48d5eea53d0d1ab753380af05251f5258d2cb4fa2e20d69008b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/condamnations-et-rangs.svg",
+      "question": "1.1.a",
+      "legende": "Les condamnations augmentent fortement pendant les premières années puis se stabilisent autour de 55 000."
+    },
+    {
+      "fichier": "figures/histogramme-des-victimes.svg",
+      "question": "1.2.b",
+      "legende": "Les aires donnent les effectifs des victimes. Le rectangle témoin représente dix milliers de victimes."
+    },
+    {
+      "fichier": "figures/courbes-et-tangentes.svg",
+      "question": "2.I.7",
+      "legende": "Les deux courbes ont la même tangente horizontale y = 1/2. Les tangentes en zéro et au croisement positif sont tracées par segments tiretés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale sur les six pages et le rapport de jury. Recalcul de la régression exponentielle, des densités de classes, des tangentes en trois points, de l’aire en cm², du contrat à gain moyen négatif et des lois log-normales. Trois figures dont l’histogramme à unité d’aire.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

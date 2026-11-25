@@ -1,0 +1,47 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2011,
+    "duree_heures": 4
+  },
+  "questions": 30,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2011/2011%20Info_Maths.pdf",
+    "sujet_sha256": "76d9bd084f1f217c395c841332c684539d83ddf1cff14238809e257410735e21",
+    "identification": "Garde Écoles normales supérieures, concours d’admission 2011, MP concours INFO, composition d’informatique-mathématiques (ULC), durée quatre heures. Douze pages numérotées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/boules-du-cube.svg",
+      "question": "1.6",
+      "legende": "Les arêtes changent une seule lettre. Dans le cube binaire, la boule de rayon un centrée en 000 (vert) et celle centrée en 111 (orange) se partagent les huit sommets."
+    },
+    {
+      "fichier": "figures/localisateur-lineaire.svg",
+      "question": "2.6",
+      "legende": "La troisième valeur reçue est 8 au lieu de 5. Le facteur X − 2 annule cette position dans les équations et permet de retrouver le message par division."
+    },
+    {
+      "fichier": "figures/transformee-binaire.svg",
+      "question": "4.1",
+      "legende": "Valeurs des polynômes de Krawtchouk binaires pour n = 4. Le carré de cette matrice vaut 16 fois l’identité, ce qui rend visibles les cinq indices de la formule d’inversion."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des trente questions et de leurs subdivisions sur l’original de la banque. Contrôle des seuils de correction, de la reconstruction rationnelle et des trois restrictions de domaine omises en 4.1fgh. Trois schémas originaux et vérifications exactes du décodage et des identités discrètes."
+    }
+  ]
+}
