@@ -1,0 +1,67 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Robots humanoïdes, relations humaines et contrôle des décisions",
+  "questions": 2,
+  "redaction": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Robots humanoïdes, relations humaines et contrôle des décisions.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/2017_MPPC_sujet_eAll.pdf",
+    "sha256_sujet": "2fe865b6f81569a02008dd1df235d29fb70554ac6d53026adbb4d2bd3b3ae254",
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2017/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP-PC_rap_eAll.pdf",
+    "sha256_rapport_jury": "6fe81c3454a7d4bcbbe7dc653cad93b7d46a9489af49891b95b0512a0deb5000",
+    "pages_sujet": 10,
+    "perimetre_sujet": "A1–A3 p. 2–7, photographie p. 8, B p. 9–10",
+    "precision_rapport": "Le rapport porte sur MP et PC. La garde du sujet inclut également PSI.",
+    "autre_publication_sujet": "https://www.ens.psl.eu/sites/default/files/2017_MPPCPSI_sujet_allemand.pdf",
+    "sha256_autre_publication_sujet": "3b03b3373936619e96964e49e5e653443f9c8a8db0b652f00a6c84264b7e4eb2"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/capacites-robot.svg",
+      "legende": "Du mouvement visible à l’interprétation humaine dans les quatre pièces de la synthèse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des 2 pages du rapport sur les deux productions, la langue et la lecture du dossier."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Robots humanoïdes, relations humaines et contrôle des décisions."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}
