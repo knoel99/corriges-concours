@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2017",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Le contrôle des autorités administratives indépendantes et des autorités publiques indépendantes",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-options-d1-2017_1513242503958-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-droit-public-2017_1515597534415-pdf",
+    "sujet_sha256": "7f3b9a8bf8b00a1df9256dc59fcbe58bd0deb48bf5c57b9be5c5388fc0045734",
+    "rapport_sha256": "fb49749df049ced1dd1d069f22e347bbd0e359c9c2d163ad6bb1e7e2bd49ebf6",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2017",
+    "apercu_sujet_sha256": "3451275d23ae79d16ab5e5b0ce61d9d272954e2d7386f26f41af8d0dc97ef405",
+    "apercu_rapport_sha256": "43d0b140597fb7ce0df2f6395af77bac43cc9fd7441b72b988784b6f737b9515",
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "reference_garde": "R 17 - 83"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/responsabilites-aai.svg",
+      "legende": "Un rapport public ou une audition ne confère pas au Parlement le pouvoir de substituer une instruction à la décision individuelle."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/droit-souple.svg",
+      "legende": "Fairvesta et Numericable, 21 mars 2016. L’effet de l’acte et l’intérêt direct et certain du requérant doivent être établis."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Le contrôle des autorités administratives indépendantes et des autorités publiques indépendantes » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Le contrôle des autorités administratives indépendantes et des autorités publiques indépendantes » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

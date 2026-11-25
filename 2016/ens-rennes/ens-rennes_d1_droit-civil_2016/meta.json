@@ -1,0 +1,77 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Propriété et responsabilité",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-d1-2016_1476109220114-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-droit-civil-e-crit-d1-2016_1478511463550-pdf",
+    "sujet_sha256": "1fc2e97f6b8fc5db89f612d2c52ee0fc96db5d28da906bd94e080a27d760bdb6",
+    "rapport_sha256": "1127947940cc7e8dd3c21ac656bb2afdf30d7f83b70bbaa9def0820973f51582",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2016",
+    "apercu_sujet_sha256": "95f9d65cc91b4428d96a8003f351e0dcf16e3d632bbf84997851ba011b49e9de",
+    "apercu_rapport_sha256": "34d08604017eaf6b844af4fce551b4f3c0855dd5d4cdcbdf551bf4f131a1a1d9",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 16 - 82",
+    "droit_civil_session": {
+      "544": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428859/2016-04-01",
+      "545": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428866/2016-04-01",
+      "546": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428873/2016-04-01",
+      "552": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428953/2016-04-01",
+      "555": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006428978/2016-04-01",
+      "647": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429909/2016-04-01",
+      "653": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006429978/2016-04-01",
+      "674": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430180/2016-04-01",
+      "682": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430276/2016-04-01",
+      "701": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430477/2016-04-01",
+      "702": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006430485/2016-04-01",
+      "1382": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438819/2016-04-01",
+      "1383": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438829/2016-04-01",
+      "1384": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438840/2016-04-01",
+      "1385": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438847/2016-04-01",
+      "1386": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438858/2016-04-01"
+    }
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/abus-et-trouble.svg",
+      "legende": "La victime peut avoir à démontrer la faute ou le dépassement des inconvénients normaux, selon le fondement choisi."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/garde-et-titre.svg",
+      "legende": "Le titre fait présumer la garde. L’arrêt Franck illustre la perte effective des pouvoirs après un vol."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Propriété et responsabilité » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Propriété et responsabilité » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

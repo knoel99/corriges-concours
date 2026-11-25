@@ -1,0 +1,48 @@
+{
+  "slug": "x-ens_mp_informatique-a_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2013,
+    "duree_heures": 4
+  },
+  "questions": 22,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mp_info_a_xulc.pdf",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mpi_rap_einfoa.pdf",
+    "sujet_sha256": "73f85f42f5301fe248d99a465ee85ae7bcc022d397d48efbf816e13ae198eab0",
+    "rapport_sha256": "650d5a3fd27c009a55124052c5e80fbd5a2413d5d484229a392061067750cdd3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/automate-du-dernier-a.svg",
+      "question": "6",
+      "legende": "Automate non déterministe. La branche qui choisit le dernier a interdit ensuite tout nouveau a et exige un b immédiatement suivi de c."
+    },
+    {
+      "fichier": "figures/lecture-des-suffixes.svg",
+      "question": "15",
+      "legende": "Pour le mot bab, les suffixes examinés sont le mot vide, b, ab, puis bab. Une mise à jour ajoute la lettre immédiatement à gauche."
+    },
+    {
+      "fichier": "figures/alternance-et-seuil.svg",
+      "question": "22",
+      "legende": "La parité continue d’alterner après tout seuil. Une formule temporelle sur un alphabet à une lettre finit par garder la même valeur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 22 questions à partir du cahier XULC et du rapport officiel de quatre correcteurs. Exécution des fonctions OCaml 5.3 face à une sémantique quantifiée indépendante sur 38 608 couples mot-formule, contrôle de 304 décisions de satisfiabilité et témoins. Trois illustrations originales et preuve de non-définissabilité de la parité."
+    }
+  ]
+}
