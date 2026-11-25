@@ -1,0 +1,86 @@
+{
+  "slug": "x_mp_informatique-option_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2008,
+    "duree_heures": 4,
+    "modalite": "écrit"
+  },
+  "intitule": "Structure de corde",
+  "questions": 19,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2008.pdf",
+    "sujet_sha256": "013a481842828bb251a4cf0696527526689ffcb18b28629cd258edeb1355581f",
+    "rapport": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2008/MP_INFO_X_1_2008.rapport.pdf",
+    "rapport_sha256": "5b6d1d17a7be517e5c3b4785e7ebfd1854113b4c9f06af2dd89254934c46e0b1",
+    "identification": "École polytechnique, filière MP option informatique, composition 2008 de quatre heures. Cahier de sept pages reproduit par WikiPrépa et rapport de la session reproduit par Doc-Solus.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2008.pdf",
+        "sha256": "013a481842828bb251a4cf0696527526689ffcb18b28629cd258edeb1355581f",
+        "pages": 7
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2008/MP_INFO_X_1_2008.rapport.pdf",
+        "sha256": "5b6d1d17a7be517e5c3b4785e7ebfd1854113b4c9f06af2dd89254934c46e0b1",
+        "pages": 5
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2008/MP_INFO_X_1_2008.enonce.pdf",
+        "sha256": "53d3edaa81dc86cf141054175da124338472dbf0bb0f7eaabb4954d268bce780",
+        "pages": 7
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-fibonacci.svg",
+      "question": "10",
+      "legende": "Figure 1 — L’arbre reconstruit place les quatre premières feuilles à profondeur trois et les deux dernières à profondeur deux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "option_info_2006_2009",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Questions 1 à 19. Opérations sur les mots et les cordes persistantes, trace exacte du rééquilibrage par Fibonacci, borne sur le coût et reconstruction ordonnée de Garsia–Wachs, y compris le suivi des occurrences répétées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "limites": "Les propriétés d’optimalité et d’existence et la fonction phase1 sont admises par le sujet. La file de Fibonacci comporte les 44 cases prescrites et la seconde partie accepte au plus 1 000 feuilles."
+  }
+}
