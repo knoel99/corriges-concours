@@ -10,7 +10,12 @@
   "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex, famille GPT-6).",
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Espagnol.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Espagnol%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Espagnol%20OK.pdf",
+    "sujet_sha256": "0387ac1b668cdc9d1b0c3e222069ded00c3fd34f04b67035c766398aab12ca5f",
+    "rapport_sha256": "08fe19e42ddb0335ee046065812c533a151d8cb04589748f9e8b4da3f55aec31",
+    "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_espagnol_xusr_26.pdf",
+    "calendrier_onu": "https://www.un.org/es/observances/multilingualism",
+    "sujet_psi_sha256": "58e8018b62b43e47fe1632030244d0b3c3bcd059d947dc777007686a83a36e68"
   },
   "figures": [
     {
@@ -29,7 +34,7 @@
       "legende": "Le succès populaire, le vote et les droits ne se mesurent pas de la même façon."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -82,6 +87,17 @@
       "modifications": true,
       "perimetre": "Lecture des deux compositions, des quatre pièces et de la chronique avec le rapport. Changement de dénomination de la fête nationale espagnole, distinction du point de vue argentin et des propos rapportés, dates des deux images.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Lecture des deux images sur l’original. Correction du rapprochement qui confondait les personnes photographiées et celles qui organisent l’exposition. Distinction entre résidents et électeurs en B, contrôle sur le calendrier officiel de l’ONU d’une date erronée dans le document 1."
     }
   ]
 }

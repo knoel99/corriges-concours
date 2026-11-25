@@ -32,9 +32,12 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Allemand.pdf",
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_allemand_xusr_26.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20Fili%C3%A8res_Allemand%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20Fili%C3%A8res_Allemand%20OK.pdf",
+    "sujet_sha256": "5d2bd028f23e60d074c5d9da7d165e81092e794156b565f7c3b877c4fa557d85",
+    "rapport_sha256": "575b414c1597d4b1535ec7b97120e1a9c1366e81e1680d43d093155b3e27bead",
+    "sujet_psi_sha256": "13348556b997d03a5f48424cb36651f278dd65063f5d233eb1038ae917dbf68a"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -71,6 +74,17 @@
       "modifications": true,
       "perimetre": "Vérification des deux rédactions et du rapport. Attribution des positions de Huber et Pyka, concours de recherche et prix de la société Konrad-Zuse, montant et période des financements en capital-risque.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Confrontation de la frise gouvernementale, des trois rangs distincts et des données KfW et EY. Correction de la portée des créations d’activité, financement d’Integral, discussion de la comparaison PISA dans la réaction personnelle."
     }
   ]
 }
