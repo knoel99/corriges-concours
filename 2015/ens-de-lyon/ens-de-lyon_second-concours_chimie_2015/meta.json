@@ -1,0 +1,130 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2015",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2015
+  },
+  "questions": 59,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/06/15_2clyon_sujet_chi.pdf",
+    "sujet_sha256": "fcba648a546f230e357e907ce318a652500ccb90ab2f9baf9db4eb8e0ddf5cf1"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2",
+      "A.I.3",
+      "A.I.4",
+      "A.I.5",
+      "A.I.6",
+      "A.II.1",
+      "A.II.2",
+      "A.II.3",
+      "A.II.4",
+      "A.II.5",
+      "A.II.6",
+      "A.II.7",
+      "A.II.8",
+      "A.II.9",
+      "B.I.1",
+      "B.I.2",
+      "B.I.3",
+      "B.I.4",
+      "B.I.5",
+      "B.I.6",
+      "B.I.7",
+      "B.I.8",
+      "B.I.9",
+      "B.II.1",
+      "B.II.2",
+      "B.II.3",
+      "B.II.4",
+      "B.II.5",
+      "B.II.6",
+      "C.I.1",
+      "C.I.2",
+      "C.I.3",
+      "C.I.5",
+      "C.I.6",
+      "C.I.7",
+      "C.II.1",
+      "C.II.3",
+      "C.II.4",
+      "C.II.5",
+      "C.II.6",
+      "C.II.7",
+      "C.II.8",
+      "C.II.9",
+      "C.II.10",
+      "C.III.1",
+      "C.III.2",
+      "C.III.3",
+      "C.III.4",
+      "C.III.5",
+      "C.III.6",
+      "C.III.7",
+      "C.III.8",
+      "C.III.9",
+      "C.III.10",
+      "C.III.11",
+      "C.III.12"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "C.I.4",
+      "C.II.2"
+    ],
+    "precision": "Ces éditions traitent 57 des 59 questions. Les deux calculs de dimensionnement de gaz comprimé (C.I.4 et C.II.2) sont hors couverture. La stéréochimie de C.II.5 est donnée pour chacune des géométries initiales possibles. Les données de B.II sont ajustées numériquement. L’archive pour cet écrit de 2015 ne rattache pas de rapport de jury."
+  },
+  "figures": [
+    {
+      "question": "A.II.3",
+      "fichier": "figures/deux-profils-reactionnels.svg",
+      "legende": "Profils pour A.II.3 et A.II.9. Un acte élémentaire traverse un seul maximum. L’intermédiaire du chemin catalysé est un minimum local."
+    },
+    {
+      "question": "B.I.2",
+      "fichier": "figures/potentiel-de-lennard-jones.svg",
+      "legende": "Puits de Lennard–Jones. Le potentiel est nul à σ et à distance infinie, et vaut −ε à son minimum."
+    },
+    {
+      "question": "B.I.5",
+      "fichier": "figures/physisorption-et-chimisorption.svg",
+      "legende": "Profil qualitatif d’une adsorption dissociative. Le minimum moléculaire, l’état de transition et le minimum dissocié se distinguent."
+    },
+    {
+      "question": "B.II.3",
+      "fichier": "figures/isotherme-et-linearisation.svg",
+      "legende": "À gauche, isotherme et cinq mesures réelles. À droite, ajustement des inverses qui permet de déterminer la capacité de monocouche et l’affinité."
+    },
+    {
+      "question": "C.II.10",
+      "fichier": "figures/produits-cycliques.svg",
+      "legende": "Deux premiers substrats. À gauche, représentation d’une approche sur la face la moins encombrée. À droite, le motif alcène demeure. Les deux cyclohexanes substitués se lisent avec la même orientation."
+    },
+    {
+      "question": "C.III.1",
+      "fichier": "figures/fischer-asp-phe.svg",
+      "legende": "Les liaisons horizontales des projections de Fischer pointent vers l’observateur. Dans les deux exemples, le centre α possède la configuration S."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour 57 questions sur les 59 imprimées. Vérification de la matrice de mesures, des cinq substrats, des données spectroscopiques et thermodynamiques. Six illustrations, dont le graphe avec régression et les produits cycliques. Les deux calculs portant sur le dimensionnement de gaz comprimé sont hors couverture."
+    }
+  ]
+}
