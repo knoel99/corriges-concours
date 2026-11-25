@@ -1,0 +1,111 @@
+{
+  "slug": "ens-rennes_d-e_allemand-oral_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand (oral)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "questions": 5,
+  "sujets": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-allemand-d-e-2024_1731603701332-pdf",
+    "sujet_sha256": "c2f4b12a6dae6c06857150db8c7783a757fd2a333c45f9f85cbc574740fbb428",
+    "apercu_sujet_sha256": "012e2cc1cb69893e9f9ca592395740442a2f1f449ba42497d8d29a6c5508bd7c",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-oral-d-e-2024_1729181063177-pdf",
+    "rapport_jury_sha256": "a940b2614516731b8db408ffd9eddf4e6a7d58cec1d15b3887cbde0478b93b70",
+    "apercu_rapport_sha256": "278c364d86aee3087fdd737402a062bfe9f9565ae709d1475527eea126c49f1b",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2024",
+    "documents": [
+      {
+        "numero": 1,
+        "titre": "Nach Angriff auf SPD-Politiker: Hunderte bei Demonstration in Dresden",
+        "publication": "Frankfurter Allgemeine Zeitung · 5 mai 2024",
+        "page": 1,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-allemand-d-e-2024_1731603701332-pdf#page=1"
+      },
+      {
+        "numero": 2,
+        "titre": "Nicht nur Politik: Die Macrons sind in Deutschland",
+        "publication": "Christoph Hasselbach · Deutsche Welle · 25 mai 2024",
+        "page": 2,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-allemand-d-e-2024_1731603701332-pdf#page=2"
+      },
+      {
+        "numero": 3,
+        "titre": "Sollen Arbeitgeber vor der AfD warnen?",
+        "publication": "Sven Astheimer · Frankfurter Allgemeine Zeitung · 17 mai 2024",
+        "page": 3,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-allemand-d-e-2024_1731603701332-pdf#page=3"
+      },
+      {
+        "numero": 4,
+        "titre": "Greenlash: In der EU wächst der Widerstand gegen grüne Reformen",
+        "publication": "D’après Jakob Pallinger · Der Standard · 23 février 2024",
+        "page": 4,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-allemand-d-e-2024_1731603701332-pdf#page=4"
+      },
+      {
+        "numero": 5,
+        "titre": "Warum die Politik oft an der Jugend vorbeiregiert",
+        "publication": "Der Spiegel · 25 mai 2024",
+        "page": 5,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-allemand-d-e-2024_1731603701332-pdf#page=5"
+      }
+    ],
+    "precision": "Les cinq coupures distribuées et reproduites dans le fascicule sont commentées."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sujet 1 · Nach Angriff auf SPD-Politiker: Hunderte bei Demonstration in Dresden",
+      "Sujet 2 · Nicht nur Politik: Die Macrons sind in Deutschland",
+      "Sujet 3 · Sollen Arbeitgeber vor der AfD warnen?",
+      "Sujet 4 · Greenlash: In der EU wächst der Widerstand gegen grüne Reformen",
+      "Sujet 5 · Warum die Politik oft an der Jugend vorbeiregiert"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/dresden.svg",
+      "legende": "Wie aus einem Angriff eine öffentliche Frage wird",
+      "question": "Sujet 1"
+    },
+    {
+      "fichier": "figures/kosten.svg",
+      "legende": "Zwei Erwartungen an den Klimaschutz",
+      "question": "Sujet 4"
+    },
+    {
+      "fichier": "figures/jugend.svg",
+      "legende": "Drei Formen politischer Beteiligung",
+      "question": "Sujet 5"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule et du rapport officiels, rédaction des analyses en langue du concours, de deux échanges par entrée, de trois schémas et des exercices du guide. Les cinq coupures distribuées et reproduites dans le fascicule sont commentées."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
