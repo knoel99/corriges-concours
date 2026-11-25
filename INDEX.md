@@ -1281,6 +1281,7 @@
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
 | 2011 | X-ENS | PC | Mathématiques | [md](2011/x-ens/x-ens_pc_mathematiques_2011/brut.md) | [md](2011/x-ens/x-ens_pc_mathematiques_2011/guide.md) |
+| 2012 | X-ENS | PC | Mathématiques | [md](2012/x-ens/x-ens_pc_mathematiques_2012/brut.md) | [md](2012/x-ens/x-ens_pc_mathematiques_2012/guide.md) |
 | 2015 | X-ENS | PC | Chimie A | [md](2015/x-ens/x-ens_pc_chimie-a_2015/brut.md) | [md](2015/x-ens/x-ens_pc_chimie-a_2015/guide.md) |
 | 2016 | X-ENS | PC | Chimie A | [md](2016/x-ens/x-ens_pc_chimie-a_2016/brut.md) | [md](2016/x-ens/x-ens_pc_chimie-a_2016/guide.md) |
 | 2017 | X-ENS | PC | Chimie A | [md](2017/x-ens/x-ens_pc_chimie-a_2017/brut.md) | [md](2017/x-ens/x-ens_pc_chimie-a_2017/guide.md) |

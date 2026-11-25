@@ -1,0 +1,46 @@
+{
+  "slug": "x-ens_pc_mathematiques_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2012,
+    "duree_heures": 4
+  },
+  "questions": 33,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "identification": "Composition de mathématiques, code XEULC, filière PC, cinq pages, quatre heures. École polytechnique, ESPCI et ENS. Rapport officiel des correcteurs consulté.",
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/pc2012_sujet_mathematiques%5B1%5D.pdf",
+    "sujet_sha256": "4c22ac734602aac051069e3f51759f341b5f5d4d9d6e6ea96bfb07632ad177bf",
+    "index_sujet": "https://www.ens.psl.eu/rapports-et-sujets-2012-pc",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012PC%20RapportMathXEULC.pdf",
+    "rapport_sha256": "95ed72e1fd409ab6a09e61ba38a6ad5c5361d95a48a10174190ee1ee47c29a45",
+    "index_rapport": "https://www.ens.psl.eu/rapports-et-sujets-2012-pc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trajectoires-logistiques.svg",
+      "question": "4c",
+      "legende": "Figure 1 — Pour a et b égaux à un, trois données initiales donnent trois solutions entre les deux équilibres."
+    },
+    {
+      "fichier": "figures/rayon-nonlineaire.svg",
+      "question": "13c",
+      "legende": "Figure 2 — Pour un rayon initial égal à un, la norme décroît, reste constante ou diverge selon le signe du paramètre. La branche croissante a pour temps limite 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Tous les items des préliminaires et des trois parties. Solution logistique, évolution linéaire, temps négatifs, variation de la constante, contrôle uniforme et argument de premier contact. Deux schémas quantitatifs."
+    }
+  ]
+}
