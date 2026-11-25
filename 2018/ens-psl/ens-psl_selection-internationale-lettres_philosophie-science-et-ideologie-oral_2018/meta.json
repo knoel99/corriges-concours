@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-science-et-ideologie-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Science et idéologie (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Science et idéologie (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Philo-oral-2.pdf",
+    "sha256_sujet": "b49029e5f0cc1ad21adf663a9396a2536de2a59361e3f42e285581a7a8476e19",
+    "reperage": "Développer et commenter le sujet « Science et idéologie »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "À quelle étape intervient la critique ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    }
+  ]
+}

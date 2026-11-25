@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-quest-ce-quune-analyse-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Qu’est-ce qu’une analyse (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Qu’est-ce qu’une analyse (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Philo-oral-5.pdf",
+    "sha256_sujet": "dff844bd0197ac94a5ab0901a760557209a40a06c4020501568d4bd9b39c9e8a",
+    "reperage": "Développer et commenter le sujet « Qu’est-ce qu’une analyse ? »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Du tout à une distinction que l’on peut contrôler"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    }
+  ]
+}
