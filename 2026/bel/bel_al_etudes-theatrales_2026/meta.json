@@ -41,7 +41,7 @@
       "legende": "Responsabilités distinctes des partenaires dans un déplacement."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "verification": "Contre-lecture face au livret et au rapport écrit ; Grotowski, Cieślak, Weigel, Clairon et Café Müller contrôlés."
@@ -92,6 +92,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions à la page 3 du fascicule et au rapport écrit. Précision sur le sujet grammatical de l’apaisement et sur la place distincte du spectateur. Vérification des trois représentations du jeu."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de l’extrait de Grotowski et du rapport. Lecture de la confiance et de la discipline formelle par la temporalité des gestes dans Café Müller."
     }
   ]
 }

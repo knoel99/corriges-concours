@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Jean Epstein et la première vision d’un univers qui peut se mouvoir à rebours
 
 [Citation et consigne officielles, p. 2](https://www.ens.psl.eu/sites/default/files/al_spe_arts.pdf#page=2) · [Rapport de la composition écrite](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Cin%C3%A9ma%202026.pdf)
@@ -27,6 +29,8 @@ Le sujet demande ce que devient le mouvement lui-même. Isoler trois verbes de t
 Regardez ce qui arrive à la poussière lorsque le mur des Lumière se redresse. Un ouvrier peut marcher en arrière en prise directe. Le nuage qui retourne aux débris fournit un indice différent. Chez Vertov, la reconstitution du bœuf concerne la direction des gestes dans les images et le parcours du spectateur vers l’origine du produit. Distinguer ces deux niveaux permet d’expliquer comment un procédé participe à une idée de cinéma.
 
 ![Trois ordres distincts pour des suites d’images.](figures/inversion-montage.svg)
+
+Regardez la flèche à l’intérieur de chaque plan. Dans le remontage, elle garde sa direction alors que les plans changent de place. Dans la bande inversée, elle change aussi de direction : c’est ce second indice qui rend perceptible une transformation du mouvement lui-même.
 
 ## Discuter l’ambition de la citation
 
