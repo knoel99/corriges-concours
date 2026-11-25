@@ -570,6 +570,7 @@
 | 2024 | ENS de Lyon | Second concours | Chimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_chimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
+| 2005 | ENS de Lyon | Second concours | Géosciences | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2005/guide.md) |
 | 2006 | ENS de Lyon | Second concours | Géosciences | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2006/guide.md) |
 | 2007 | ENS de Lyon | Second concours | Géosciences | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/brut.md) | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/guide.md) |
 | 2008 | ENS de Lyon | Second concours | Géosciences | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/guide.md) |
