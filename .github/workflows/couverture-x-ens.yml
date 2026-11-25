@@ -1,9 +1,20 @@
 name: Bilan X et ENS en production
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      controle:
+        description: Vérification à effectuer en production
+        type: choice
+        default: corriges
+        options:
+          - corriges
+          - tableau
+          - les-deux
 permissions:
   contents: read
 jobs:
   bilan:
+    if: inputs.controle != 'tableau'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -15,3 +26,19 @@ jobs:
         with:
           name: bilan-x-ens
           path: bilan-x-ens.tsv
+  tableau:
+    if: inputs.controle == 'tableau' || inputs.controle == 'les-deux'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install lxml
+      - name: Comparer chaque épreuve et chaque signature au relevé GitHub
+        run: python scripts/verifier_bilan_site.py --json preuves-tableau.json >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preuves-tableau-x-ens
+          path: preuves-tableau.json
