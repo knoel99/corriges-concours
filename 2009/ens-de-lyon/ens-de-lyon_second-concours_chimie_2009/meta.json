@@ -1,0 +1,86 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2009",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2009
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2009/sujet-ecrit-2009-second-concours_chimie.pdf",
+    "sujet_sha256": "95e6737238d96c5a2ef654453af2579579516555dd1d0ef0354e9592bda9729e",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2009/rapport-2009-second-concours_ecrit_chimie.pdf",
+    "rapport_sha256": "ff278335d4f98a8b4e18c0d765fbd7e3adbc8b1b290a49901c2e1cb068c5cf4a"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "I.1.1",
+      "I.1.2",
+      "I.1.3",
+      "I.3.1",
+      "I.3.2",
+      "I.3.3.1",
+      "I.3.3.2",
+      "I.3.4",
+      "I.3.5.1",
+      "I.3.5.2",
+      "I.3.5.3",
+      "I.3.5.4",
+      "II.5.1",
+      "III.2.1"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "I.2",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5.2",
+      "III.1",
+      "III.2.2",
+      "III.2.3"
+    ],
+    "precision": "Les deux éditions traitent 14 des 23 questions ou sous-questions terminales. Elles couvrent les formules de Lewis, les géométries, la mésomérie, les équilibres d’un monoacide avec autoprotolyse de l’eau, les nombres d’oxydation et les deux configurations du stilbène. Les rubriques I.2, II.1 à II.4, II.5.2, III.1, III.2.2 et III.2.3 sont hors couverture. Le sujet original de quatre pages et le passage du rapport de jury consacré à l’écrit ont été consultés."
+  },
+  "figures": [
+    {
+      "question": "I.1.1",
+      "fichier": "figures/formules-de-lewis-et-doublets.svg",
+      "legende": "Une forme de Lewis à charges formelles minimales pour chaque ion. Deux points représentent un doublet libre. Le choix de l’oxygène portant la charge est arbitraire lorsque les oxygènes sont équivalents."
+    },
+    {
+      "question": "I.1.2",
+      "fichier": "figures/geometries-des-oxyanions.svg",
+      "legende": "Liaisons en perspective et géométrie des noyaux. Pour le chlorate, le quatrième domaine électronique est un doublet libre."
+    },
+    {
+      "question": "I.3.5.4",
+      "fichier": "figures/dilution-et-autoprotolyse.svg",
+      "legende": "Courbe théorique pour pKa = 7,5 et pKe = 14, en solution idéale. La limite à dilution infinie provient de l’autoprotolyse de l’eau."
+    },
+    {
+      "question": "III.2.1",
+      "fichier": "figures/stereoisomeres-du-stilbene.svg",
+      "legende": "Ph désigne un groupe phényle. Les phényles occupent le même côté dans Z et des côtés opposés dans E."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour les quatorze questions indépendantes énumérées. Vérification du scan, des doublets de Lewis, de la séparation comptable des oxoniums, du rapport Ke/Ka et de la limite de dissociation de 24 % à dilution infinie. Quatre figures originales. Les neuf questions hors couverture sont identifiées."
+    }
+  ]
+}
