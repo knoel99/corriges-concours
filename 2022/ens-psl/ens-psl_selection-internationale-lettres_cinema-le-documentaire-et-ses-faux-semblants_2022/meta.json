@@ -1,0 +1,66 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_cinema-le-documentaire-et-ses-faux-semblants_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Cinéma — le documentaire et ses faux-semblants",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Cinéma — le documentaire et ses faux-semblants",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets-arts-sil2022._.pdf",
+    "sujet_sha256": "009d57bc8a9ee87bf0899c74f859fb2dcbe1aad98b16bf86958c4d8f49b15eb2",
+    "pages": "1",
+    "references": [
+      "https://www.klincksieck.com/livre/9782252037126/le-documentaire-et-ses-faux-semblants",
+      "https://catalogue-lumiere.com/sortie-dusine-i/",
+      "https://www.idfa.nl/en/film/caa98726-cddc-499b-9b48-61dd6029855a/man-with-a-movie-camera/",
+      "https://cine-tamaris.fr/agnes-varda/les-glaneurs-et-la-glaneuse-2000/",
+      "https://www.criterion.com/films/210-bicycle-thieves"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/photogramme.svg",
+      "question": "Composition",
+      "legende": "Comment une image redevient-elle un mouvement ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la proposition, du guide et du schéma analytique spécifique au sujet."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Distinction des deux verbes de l’extrait et des deux régimes du film. Vérification bibliographique de Niney, des séquences et des notices filmiques. Relecture des deux éditions et du schéma."
+    }
+  ]
+}

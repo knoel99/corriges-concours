@@ -1,0 +1,68 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-de-lart-les-echanges-en-europe-moderne_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire de l’art — les échanges en Europe moderne",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire de l’art — les échanges en Europe moderne",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets-arts-sil2022._.pdf",
+    "sujet_sha256": "009d57bc8a9ee87bf0899c74f859fb2dcbe1aad98b16bf86958c4d8f49b15eb2",
+    "pages": "1",
+    "references": [
+      "https://www.metmuseum.org/exhibitions/listings/2007/venice-and-the-islamic-world",
+      "https://www.metmuseum.org/art/collection/search/461519",
+      "https://www.ngprague.cz/en/event/369/albrecht-durer-ruzencova-slavnost-1506-8211-2006",
+      "https://www.ngprague.cz/en/about/page/history",
+      "https://www.nga.gov/artworks/12206-still-life",
+      "https://collections.louvre.fr/ark:/53355/cl010097375",
+      "https://www.meissen.com/en/geschichte"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/trajets.svg",
+      "question": "Composition",
+      "legende": "Des personnes, des œuvres et des usages en circulation"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la proposition, du guide et du schéma analytique spécifique au sujet."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des quatre siècles, des voyages d’artistes, des déplacements d’œuvres, des collections et de la provenance des deux parties de l’aiguière du Louvre. Relecture des deux éditions et du schéma."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_cinema-les-choix-esthetiques-du-documentaire_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Cinéma — les choix esthétiques du documentaire",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Cinéma — les choix esthétiques du documentaire",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets-arts-sil2022._.pdf",
+    "sujet_sha256": "009d57bc8a9ee87bf0899c74f859fb2dcbe1aad98b16bf86958c4d8f49b15eb2",
+    "pages": "1",
+    "references": [
+      "https://catalogue-lumiere.com/sortie-dusine-i/",
+      "https://www.criterion.com/current/posts/2674-chronicle-of-a-summer-truth-and-consequences",
+      "https://www.documentary.org/column/playback-jean-rouch-and-edgar-morins-chronicle-summer",
+      "https://www.criterion.com/films/210-bicycle-thieves"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/temoignage.svg",
+      "question": "Composition",
+      "legende": "Marceline dans Chronique d’un été"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la proposition, du guide et du schéma analytique spécifique au sujet."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de la version I de la vue Lumière, de la marche de Marceline, de la projection aux participants et des implications distinctes des deux sujets de cinéma. Relecture des deux éditions et du schéma."
+    }
+  ]
+}
