@@ -283,9 +283,11 @@
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2017 | BEL | AL | Espagnol (commentaire et traduction) | [md](2017/bel/bel_al_espagnol-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_espagnol-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Espagnol (thème Lyon) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Grec moderne (commentaire et traduction) | [md](2017/bel/bel_al_grec-moderne-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_grec-moderne-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Histoire et théorie des arts | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/brut.md) | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/guide.md) |
 | 2017 | BEL | AL | Italien (commentaire et traduction) | [md](2017/bel/bel_al_italien-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_italien-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Italien (thème Lyon) | [md](2017/bel/bel_al_italien-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_italien-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Polonais (commentaire et traduction) | [md](2017/bel/bel_al_polonais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_polonais-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Portugais (thème Lyon) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Russe (thème Lyon) | [md](2017/bel/bel_al_russe-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_russe-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Version latine (Lyon) | [md](2017/bel/bel_al_version-latine-lyon_2017/brut.md) | [md](2017/bel/bel_al_version-latine-lyon_2017/guide.md) |
