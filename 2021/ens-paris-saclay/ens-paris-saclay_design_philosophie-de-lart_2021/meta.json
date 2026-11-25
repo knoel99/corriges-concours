@@ -1,0 +1,40 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Peut-on dire du design qu’il est un langage ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "29e44b24454c8246abebf0e6f517295935477628fdd55d422696c105985a5a52",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_ecrit_DESIGN_philo.pdf",
+    "sha256_rapport_jury": "33d4bddfffa6eedc8ab73a314e04accf6f6d7b8dd39d1de4f67af533faf42493"
+  },
+  "figures": [
+    {
+      "fichier": "figures/signe-et-ouverture.svg",
+      "question": "Dissertation",
+      "legende": "Inverser un signe modifie l’instruction sans déplacer l’ouverture."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport 2021, analyse de la valeur du signe et de la limite matérielle de l’analogie, avec études d’Aicher, Baudrillard et Arendt. Figure comparative."
+    }
+  ]
+}
