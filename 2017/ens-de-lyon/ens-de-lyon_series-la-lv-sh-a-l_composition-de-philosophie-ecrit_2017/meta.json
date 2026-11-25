@@ -1,0 +1,50 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de philosophie (écrit)",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Peut-on délimiter l’humain ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-composition-philo_1506585550581_0.pdf",
+    "sha256_sujet": "6a3dede1de5923c1767d8dcf7791fa6562820ccf74e22bf3efa03e57b7eb673d",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/PHILO_TC_SP_2017.pdf",
+    "sha256_rapport_jury": "17d12a0809a391d46c37c5b0f66470e8f94eb45b624f5e3a1ec95a6aaf760e03"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-questions.svg",
+      "question": "Composition",
+      "legende": "Lignée, manière de vivre et reconnaissance répondent à trois questions distinctes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original et du rapport de l’épreuve commune. Composition intégrale et édition guidée, analyse des exemples et schéma comparatif original."
+    },
+    {
+      "phase": "revision",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Conservation de la première rédaction signée lettres_design. Précision de la portée d’une comparaison ethnologique chez Mauss, ajout d’un exercice sur les trois prédicats et contrôle des deux éditions."
+    }
+  ]
+}
