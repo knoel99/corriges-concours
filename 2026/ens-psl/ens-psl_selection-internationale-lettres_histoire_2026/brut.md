@@ -8,9 +8,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Trois questions d’historiographie
 
 L’épreuve attribuait à chaque candidat un seul sujet à traiter en deux heures à partir de son projet. Les trois réponses suivantes emploient des exemples documentés qui peuvent servir de points de comparaison. On ignore les terrains, les langues d’archives et les hypothèses propres aux trois dossiers.
+
+Les trois questions se distinguent par la preuve à fournir. Un passeport peut documenter le statut conféré à un exilé, des versions successives d’une clause les partenaires qui ont pesé sur sa rédaction, et deux livrets les modifications apportées à une œuvre lors de sa reprise. Chacun de ces indices n’a de valeur qu’une fois situé et attribué.
+
+![Figure 1 — Trois questions, trois tests documentaires](figures/operations-historiographiques.svg)
 
 ### Candidat 1 · L’histoire des « Russes blancs » est-elle nationale ?
 
