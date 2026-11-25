@@ -6,11 +6,13 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## L’abstention
 
-Un citoyen qui choisit de ne pas se déplacer, une personne absente des listes et un résident privé du droit de voter peuvent tous manquer dans le résultat final. Seul le premier est un abstentionniste au sens du taux calculé parmi les inscrits. Comment les institutions, les positions sociales et les circonstances du scrutin sélectionnent-elles les personnes dont la voix pourra être comptée ?
+Un électeur inscrit empêché de se déplacer, une personne absente des listes et un résident privé du droit de voter peuvent tous manquer dans le résultat final. Seul le premier entre dans le calcul de l’abstention parmi les inscrits. Ce calcul recense aussi bien les absences contraintes que les abstentions délibérées. Comment les institutions, les positions sociales et les circonstances du scrutin sélectionnent-elles les personnes dont la voix pourra être comptée ?
 
 ### Compter les absences fait partie de l’explication
 
@@ -29,6 +31,8 @@ La consultation citoyenne de 2021 (doc. 6) compare des répondants déclarant n�
 Le document 7 territorialise le problème. Il représente les comportements en pourcentage des inscrits et réunit dans une même catégorie les abstentions et les bulletins blancs ou nuls. La barre correspondante apparaît plus longue dans les quartiers prioritaires que dans l’ensemble du pays. Une partie de l’écart peut tenir aux âges, aux lieux d’inscription et à l’offre électorale. Déduire de la barre qu’un habitant particulier se désintéresse de la politique confondrait son territoire et sa conduite. L’abstention peut signaler un retrait, un obstacle ou une forme de refus. Pour les distinguer, il faudrait relier émargements à plusieurs tours, conditions de participation et récits individuels.
 
 ![Participation aux premiers tours de deux scrutins en 2017](figures/lecture-des-donnees.svg)
+
+Reconstituez les taux d’abstention par complément à 100. Les 29 points de différence sont un solde entre deux mobilisations. Des personnes différentes peuvent être entrées dans la participation et en être sorties.
 
 ## Questions du jury
 

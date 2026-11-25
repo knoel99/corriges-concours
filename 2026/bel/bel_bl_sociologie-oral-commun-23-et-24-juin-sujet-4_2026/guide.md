@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Sobriété et classes sociales
@@ -31,6 +33,8 @@ En 2024, dans le panel ELIPSS de 2 305 adultes de France métropolitaine (doc. 7
 La sobriété devient donc un objet sociologique quand on sépare conditions du choix, classement moral du geste et effet matériel. Un discours public qui félicite seulement le renoncement formulé dans les termes de la protection de l’environnement risque de manquer des économies réelles imposées par le budget, et d’oublier les dépenses qu’une infrastructure rend difficiles à éviter.
 
 ![Faire attention à toute sa consommation d’énergie et d’eau](figures/lecture-des-donnees.svg)
+
+Rapprochez le souvenir de l’enfance du document 4a des scènes domestiques du document 2. Demandez, par exemple, qui surveillait l’éclairage dans le foyer d’origine et qui s’en charge aujourd’hui. Cette comparaison donne un contenu précis à l’hypothèse de transmission.
 
 ## Questions du jury
 

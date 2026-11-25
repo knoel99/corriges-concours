@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La contraception
@@ -17,6 +19,10 @@ Une personne qui dispose du pouvoir de choisir si elle veut une grossesse peut �
 Bajos et Ferrand (doc. 1) montrent que la possibilité de dissocier sexualité et procréation transforme les projets d’études, de travail et de famille. Elle change aussi les jugements sur la « bonne » période pour avoir un enfant et sur la responsabilité qui incomberait à la femme en cas de grossesse non prévue. Les trajectoires d’emploi et les attentes envers les mères ne disparaissent pas avec l’accès à une méthode contraceptive. Thomé et Rouzaud-Cornabas (doc. 2) déplacent l’observation vers le travail quotidien que supposent l’information, le rendez-vous, le renouvellement et la discussion au sein du couple. Même lorsque la décision est annoncée comme commune, ce travail peut rester inégalement réparti.
 
 Les déclarations sur la sexualité changent dans le temps (doc. 3). Dans l’enquête Simon de 1972, 48 % des femmes de 20 à 29 ans déclarent n’avoir eu qu’un partenaire dans leur vie, contre 27 % dans ACSF en 1992. Pour les hommes du même âge, les chiffres sont 16 et 12 %. L’écart entre femmes et hommes passe de 32 à 15 points. L’évolution peut mêler transformations des trajectoires et des normes de déclaration. Plusieurs autres indicateurs du tableau changent de formulation ou de période de référence. On ne peut donc pas attribuer mécaniquement les écarts au seul développement d’une méthode contraceptive.
+
+![Figure 1 — Déclarer un seul partenaire au cours de sa vie](figures/lecture-des-donnees.svg)
+
+Sur vingt ans, la part déclarant un seul partenaire diminue de 21 points chez les femmes de 20 à 29 ans et de 4 points chez les hommes du même âge. Les deux enquêtes interrogent des générations différentes au même âge. L’écart entre ces évolutions invite à interroger les normes de déclaration en même temps que les trajectoires.
 
 ### La diversification des méthodes n’égalise pas toutes les conditions de choix
 

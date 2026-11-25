@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Une nouvelle noblesse d’État ?
@@ -29,6 +31,8 @@ Au 31 décembre 2023 (doc. 6), 49 membres de l’Inspection des finances sur 184
 En 2023, 12 % des avis de la HATVP figurent au total des catégories incompétence, irrecevabilité et non-lieu à statuer (doc. 7b). Ce ne sont pas des taux de manquement. Les documents éclairent donc une recomposition des titres, positions et marchés où l’expertise publique est utile. Pour savoir si ce qui circule est une compétence mise en commun ou une captation au bénéfice d’un client, il faut reconstituer les carrières, les dossiers et les décisions sur lesquelles les anciens collègues peuvent encore intervenir.
 
 ![Emploi en entreprise privée dix ans après la sortie de l’ENA](figures/lecture-des-donnees.svg)
+
+Lisez la note au bas du document 4. En 2010, les colonnes 1 et 3 donnent 9,5 % et 32 %. Soustraire donne 22,5 points entre un sous-groupe et la moyenne de la cohorte. Pour comparer directement grands corps et autres énarques, il faudrait isoler ces derniers.
 
 ## Questions du jury
 
