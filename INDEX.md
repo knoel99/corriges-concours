@@ -1118,6 +1118,7 @@
 | 2003 | X | PSI-PT | Informatique facultative | [md](2003/x/x_psi-pt_informatique-facultative_2003/brut.md) | [md](2003/x/x_psi-pt_informatique-facultative_2003/guide.md) |
 | 2002 | X | PSI-PT | Informatique facultative | [md](2002/x/x_psi-pt_informatique-facultative_2002/brut.md) | [md](2002/x/x_psi-pt_informatique-facultative_2002/guide.md) |
 | 2004 | X | PSI-PT | Informatique | [md](2004/x/x_psi-pt_informatique_2004/brut.md) | [md](2004/x/x_psi-pt_informatique_2004/guide.md) |
+| 2009 | X-ENS | PSI | Modélisation | [md](2009/x-ens/x-ens_psi_modelisation_2009/brut.md) | [md](2009/x-ens/x-ens_psi_modelisation_2009/guide.md) |
 | 2010 | X-ENS | PSI | Modélisation | [md](2010/x-ens/x-ens_psi_modelisation_2010/brut.md) | [md](2010/x-ens/x-ens_psi_modelisation_2010/guide.md) |
 | 2011 | X-ENS | PSI | Modélisation | [md](2011/x-ens/x-ens_psi_modelisation_2011/brut.md) | [md](2011/x-ens/x-ens_psi_modelisation_2011/guide.md) |
 | 2012 | X-ENS | PSI | Modélisation | [md](2012/x-ens/x-ens_psi_modelisation_2012/brut.md) | [md](2012/x-ens/x-ens_psi_modelisation_2012/guide.md) |
