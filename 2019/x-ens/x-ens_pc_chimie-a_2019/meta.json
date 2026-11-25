@@ -1,0 +1,142 @@
+{
+  "slug": "x-ens_pc_chimie-a_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2019
+  },
+  "questions": 63,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_PC_sujet_ChiA.pdf",
+    "sujet_sha256": "dd1c28258da50d53beb108f2a90b6455cf7a1187e385857d4394aab057532233",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/19_PC_rap_eChiA.pdf",
+    "rapport_sha256": "8f463e078b42790ebd6cd31eb948710d8a8633034c4fccdd5af732968575d677"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "22",
+      "24",
+      "25",
+      "37",
+      "38",
+      "41",
+      "43",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63"
+    ],
+    "questions_partiellement_traitees": [
+      "4",
+      "31",
+      "40",
+      "45",
+      "47"
+    ],
+    "questions_non_traitees": [
+      "20",
+      "21",
+      "23",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "39",
+      "42",
+      "44",
+      "46",
+      "56"
+    ],
+    "precision": "Sur les 63 questions de l’épreuve, 40 sont entièrement traitées et cinq en partie. Q4 attribue les huit OM sans détailler le partage du caractère liant entre les deux niveaux σ les plus bas. Q31 porte sur la conversion transmittance–absorbance et Q40, Q45 et Q47 sur les bilans ou transformations de fonctions indiqués. La partie sur les donneurs de CO se limite aux effets physiologiques, à la RMN du ligand libre et à des lectures qualitatives ou générales de spectrophotométrie. Les 18 questions hors couverture sont marquées à leur emplacement. La lecture s’appuie sur le sujet original (11 pages numérotées et feuillets de tête) et le rapport du jury de chimie A."
+  },
+  "figures": [
+    {
+      "question": "2",
+      "fichier": "figures/base-atomique-de-valence.svg",
+      "legende": "Les signes indiquent la phase. La coupe de 2s montre son nœud radial. Chaque 2p possède deux lobes opposés de part et d’autre du noyau."
+    },
+    {
+      "question": "5",
+      "fichier": "figures/niveaux-et-occupations-du-co.svg",
+      "legende": "Niveaux de valence calculés de l’original et remplissage des dix électrons. Les lettres renvoient aux huit dessins de sa figure 1."
+    },
+    {
+      "question": "10",
+      "fichier": "figures/donation-et-retrodonation.svg",
+      "legende": "Les flèches désignent le transfert de densité depuis une orbitale occupée vers une orbitale vacante. Les deux transferts renforcent M–C."
+    },
+    {
+      "question": "14",
+      "fichier": "figures/serie-isoelectronique-et-infrarouge.svg",
+      "legende": "Chaque point représente un hexacarbonyle octaédrique, identifié par son métal et la charge du complexe. La tendance suit le renforcement de la rétrodonation."
+    },
+    {
+      "question": "22",
+      "fichier": "figures/motifs-rmn-du-ligand-libre.svg",
+      "legende": "Positions et séparations en ppm pour 200 MHz. La hauteur des traits est illustrative. Le signal à 7,58 ppm se trouve immédiatement à droite de celui à 7,67 ppm."
+    },
+    {
+      "question": "49",
+      "fichier": "figures/dependance-au-ph-de-la-condensation.svg",
+      "legende": "Les deux branches du profil cinétique renvoient à des étapes limitantes différentes. Le sommet indique un compromis entre nucléophilie et assistance acide."
+    },
+    {
+      "question": "58",
+      "fichier": "figures/fischer-des-enantiomeres-ibuprofene.svg",
+      "legende": "Ar est le 4-isobutylphényle. En projection de Fischer, les liaisons horizontales sont dirigées vers le lecteur. Les deux dessins sont images dans un miroir."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour 40 réponses entières et cinq volets explicitement délimités. Classification des orbitales A à H, vibrations C–O, IR et RMN, lecture des spectres visibles, fonctions organiques et stéréochimie et biochimie de l’ibuprofène. Sept illustrations originales. Dix-huit questions restent hors couverture."
+    }
+  ]
+}
