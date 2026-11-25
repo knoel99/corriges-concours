@@ -1,0 +1,71 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_cinema-la-camera-stylo-dalexandre-astruc_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Cinéma — la caméra-stylo d’Alexandre Astruc",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Écrire avec le cinéma",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20ecrit%20cinema%20SIL.pdf",
+    "sujet_sha256": "36a3b82ebd6ead925ef68167ab5fc1e16889390b3ed87d5672fedf22722db0ef",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "note": "Le sujet d’une page reproduit un extrait de l’article d’Alexandre Astruc publié le 30 mars 1948 dans L’Écran français. La citation introduit une hypothèse historique et esthétique."
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/analyse.svg",
+      "question": "Commentaire",
+      "legende": "Trois opérations à distinguer dans l’argument de la caméra-stylo."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, construction des exemples et du schéma pour « Écrire avec le cinéma ». "
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle du libellé, des données documentaires, des distinctions analytiques et de leur lisibilité dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Cinéma — la caméra-stylo d’Alexandre Astruc"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le sujet d’une page reproduit un extrait de l’article d’Alexandre Astruc publié le 30 mars 1948 dans L’Écran français. La citation introduit une hypothèse historique et esthétique."
+  }
+}
