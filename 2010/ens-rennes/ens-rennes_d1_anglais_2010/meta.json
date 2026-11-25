@@ -1,0 +1,55 @@
+{
+  "slug": "ens-rennes_d1_anglais_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-langues_1421752516799-pdf#page=3",
+    "sha256_sujet": "20166d498a19f572d1ff3a2f315b24bea37fafdedb8a88749760aa88d2c4fcf2",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Adapté de The Guardian · 3 janvier 2010",
+    "page": 3
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Expression en anglais"
+    ],
+    "precision": "Le feuillet ne donne explicitement que la question d’expression. La traduction française complète de l’article est une proposition d’entraînement."
+  },
+  "longueur_expression": {
+    "mots": 89,
+    "regle": "Responsabilité de la télévision dans les risques pour la santé · 100 mots maximum."
+  },
+  "figures": [
+    {
+      "fichier": "figures/publicite.svg",
+      "legende": "Qui fait quelle affirmation ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Le feuillet ne donne explicitement que la question d’expression. La traduction française complète de l’article est une proposition d’entraînement. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

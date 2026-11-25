@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-langues_1421752516799-pdf#page=4",
+    "sha256_sujet": "20166d498a19f572d1ff3a2f315b24bea37fafdedb8a88749760aa88d2c4fcf2",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "D’après El País · 18 janvier 2010",
+    "page": 4,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/reo1a_10d1_espagnol_1280151386872.pdf#page=1",
+    "sha256_rapport_jury": "1d57951f684c2b21cf355bf8af80b4915e6cb4881379f15369093223dfb2d4d9"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en espagnol."
+  },
+  "longueur_expression": {
+    "mots": 128,
+    "regle": "Comparer la situation des services de santé et l’attitude des responsables politiques en Espagne et ailleurs · 100 mots minimum."
+  },
+  "figures": [
+    {
+      "fichier": "figures/attente.svg",
+      "legende": "L’attente de Teófilo en trois temps"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en espagnol. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
