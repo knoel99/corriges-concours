@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_russe_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Russe",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-langues_1421752516799-pdf#page=6",
+    "sha256_sujet": "20166d498a19f572d1ff3a2f315b24bea37fafdedb8a88749760aa88d2c4fcf2",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Pavel Arabov · Izvestia · 29 janvier 2010",
+    "page": 6
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en russe"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en russe."
+  },
+  "longueur_expression": {
+    "mots": 99,
+    "regle": "Donner son avis sur la vente des banques publiques. La version est notée sur 12 et la question sur 8. Aucune longueur imposée."
+  },
+  "figures": [
+    {
+      "fichier": "figures/capital.svg",
+      "legende": "Quelle fraction du capital serait vendue ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en russe. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
