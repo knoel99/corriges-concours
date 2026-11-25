@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Maison Pluvier : coûts, inventaire, financement et transmission
 
 ### Dossier 1. Gestion financière et comptable
@@ -35,6 +37,10 @@ Le tissu, le fil et le kit représentent 41 références communes, chacune imput
 | Résultat / chiffre d’affaires HT | **−3,53 %** | **15,46 %** |
 
 **2. Résultat et profitabilité.** Le chiffre d’affaires HT est la quantité vendue multipliée par le prix TTC divisé par 1,20. Le résultat est la différence entre ce chiffre d’affaires et le coût complet. Les résultats du tableau totalisent 393 210,00 € pour les deux modèles. La Demoiselle absorbe près des neuf dixièmes du budget marketing, alors que le Pébroque dégage la totalité du bénéfice global et couvre la perte de l’autre gamme.
+
+La différence unitaire se calcule avant arrondi. Pour la Demoiselle, le résultat de −132 539,34 euros réparti sur 18 000 pièces donne une perte de 7,36 euros par pièce. Soustraire seulement les deux montants unitaires déjà arrondis, 208,33 et 215,70, ferait apparaître un centime supplémentaire de perte. Pour le Pébroque, le résultat de 525 749,34 euros sur 12 000 pièces représente 43,81 euros par pièce.
+
+![Figure 1 — Du prix de vente au résultat unitaire](figures/marges-pluvier.svg)
 
 **3. Intérêt et limites d’ABC.** Une clé fondée seulement sur les heures de couture attribuerait les dépenses de campagnes et de personnalisation dans des proportions sans rapport avec les observations. ABC rattache les consommations de ressources aux activités puis les activités aux produits. Cela suggère de réexaminer le ciblage des campagnes de la Demoiselle et de tester un tarif de broderie. Les clés du kit, de la formation et des livraisons communes demeurent conventionnelles. Supprimer la Demoiselle ne ferait pas économiser immédiatement la moitié du coût de formation. Une décision d’abandon doit être fondée sur les charges évitables, les effets sur les autres ventes et la capacité libérée.
 

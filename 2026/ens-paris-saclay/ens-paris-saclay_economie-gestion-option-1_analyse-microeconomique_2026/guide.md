@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Passer d’un jeu de concurrence à l’autre
 
 Dessiner la demande inverse décroissante et le coût marginal horizontal. L’écart entre monopole et concurrence parfaite se lit en unités de la quantité concurrentielle. Entre ces deux repères, le duopole simultané puis le leadership augmentent l’offre de façon mesurable.
 
 ![Figure 1 — Quantités offertes selon la forme de concurrence](figures/quantites-equilibre.svg)
+
+Pour retrouver les écarts de prix à partir du dessin, multipliez une différence de quantités par la pente $-b$ de la demande inverse. Entre Cournot et Stackelberg, $3/4-2/3=1/12$ de la quantité concurrentielle, d’où une variation de prix de $-(a-c)/12$.
 
 **Trois calculs qui contrôlent la première partie.** Pour toute quantité totale, le surplus des consommateurs est le triangle $bQ^2/2$. À Cournot intérieur, $p-c=bq_i$ procure immédiatement le profit $bq_i^2$. Au point de concurrence parfaite, le surplus total doit être le plus grand car la dernière unité échangée y vaut exactement son coût.
 

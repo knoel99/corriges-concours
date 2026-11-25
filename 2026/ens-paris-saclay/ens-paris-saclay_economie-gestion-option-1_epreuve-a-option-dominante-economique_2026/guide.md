@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Transformer « dans quelle mesure » en critères d’enquête
 
 Déterminer d’abord ce qui change de mains. En Égypte, le gouvernement prend le contrôle de la compagnie du canal en 1956. Demander ensuite quelles recettes il peut percevoir, ce qu’il peut financer et quelles contraintes restent en place. Ce passage du droit de propriété aux capacités de décision et de production fournit le fil de la dissertation.
 
 ![Figure 1 — Trois degrés de maîtrise économique](figures/degres-maitrise.svg)
+
+Pour chaque étude de cas, cherchez trois pièces de nature différente : un texte fixant les droits de propriété, une source budgétaire retraçant les recettes et un indicateur de transformation productive. Précisez à quelle date et pour quelle branche chaque pièce est probante.
 
 **Comparer deux producteurs plutôt que deux listes de dates.** L’exportateur d’hydrocarbures et l’importateur de pétrole peuvent tous deux être d’anciennes colonies. Une hausse du prix du baril n’a pourtant pas la même incidence sur leurs réserves de change. Calculer mentalement les termes de l’échange comme le rapport du prix des exportations au prix des importations évite de donner un sens unique au « Sud ».
 
