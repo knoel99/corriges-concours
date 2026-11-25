@@ -13,6 +13,11 @@
       "fichier": "figures/prix-intervention-excedent.svg",
       "question": "Analyse du dossier",
       "legende": "Marché d’un produit laitier stockable au prix d’intervention. Courbes théoriques, sans échelle numérique."
+    },
+    {
+      "fichier": "figures/profils-achat-bio.svg",
+      "question": "Partie I",
+      "legende": "Document 3, p. 4. Probabilités prédites d’au moins un achat bio sur douze mois, calculées avec les coefficients arrondis du modèle Kantar 2007. Chaque dimension non modifiée reste à sa catégorie de référence."
     }
   ],
   "contributions": [
@@ -46,10 +51,29 @@
       "vitesse": null,
       "date": "2026-11-24",
       "modifications": true,
-      "perimetre": "Deux éditions et huit documents, comparaison graphique des budgets, calcul du prix de lot et disposition à payer, mécanisme du prix garanti et rapport du jury."
+      "perimetre": "Deux éditions et huit documents, comparaison graphique des budgets, calcul du prix de lot et disposition à payer, mécanisme du prix garanti et rapport du jury.",
+      "session": "astra_lettres",
+      "attestation_session": {
+        "date": "2026-11-25",
+        "source": "https://github.com/knoel99/corriges-concours/pull/357",
+        "attestation": "La session astra_lettres atteste avoir effectué cette relecture et ses retouches. Ses pièces de travail de 2025 comprennent le dépouillement des huit documents, la vérification graphique des budgets et le dessin du mécanisme de prix garanti."
+      }
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Revue du PDF distribué et des deux copies. Calcul de trois probabilités conditionnelles d’achat bio à partir de la constante et des rapports de cotes du document 3. Discussion du revenu, du diplôme, des données Kantar 2007, de leur portée causale et de l’événement observé, avec un graphique original et le calcul dans le guidé.",
+      "session": "astra_physique"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_composition_sciences_sociales.pdf",
     "rapport": "https://www.ens.psl.eu/sites/default/files/2025_bl_rapport_ecrit_sciences_economiques_et_sociales.pdf",
