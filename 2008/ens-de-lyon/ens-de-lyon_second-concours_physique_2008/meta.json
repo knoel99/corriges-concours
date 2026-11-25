@@ -1,0 +1,82 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2008",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2008
+  },
+  "questions": 27,
+  "redaction": "Les 27 questions, de I.1 à III.18, sont traitées à partir des six pages du sujet, avec le bilan des trois brins, les quatre rhéogrammes, les débits des deux fluides sans seuil et le profil à bouchon du fluide à seuil.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2008/sujet-ecrit-2008-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "a009b78178e50e7a45d915caf065c4b4f4e2ab2215ba2d04c13b47ed6d159ca3"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "II.2",
+      "fichier": "figures/brins-porteurs.svg",
+      "legende": "Bilan des trois contributions de tension sur l’ensemble mobile. Le brin fixé directement à la masse compte une fois et la poulie mobile deux fois. Les trois forces de tension sont verticales."
+    },
+    {
+      "numero": 2,
+      "question": "III.3",
+      "fichier": "figures/rheogrammes.svg",
+      "legende": "Allures qualitatives des quatre courbes. Chaque viscosité apparente du panneau droit est calculée en divisant l’ordonnée de gauche par son abscisse. Les couleurs et numéros sont communs."
+    },
+    {
+      "numero": 3,
+      "question": "III.18",
+      "fichier": "figures/profils-de-vitesse.svg",
+      "legende": "Trois profils normalisés séparément. L’exemple du matériau à seuil comporte une couche superficielle de 45 % de la hauteur, qui se déplace à vitesse uniforme."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Les 27 questions, de I.1 à III.18, sont traitées à partir des six pages du sujet, avec le bilan des trois brins, les quatre rhéogrammes, les débits des deux fluides sans seuil et le profil à bouchon du fluide à seuil.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14",
+      "III.15",
+      "III.16",
+      "III.17",
+      "III.18"
+    ]
+  }
+}
