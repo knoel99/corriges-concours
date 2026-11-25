@@ -1,0 +1,78 @@
+{
+  "slug": "bel_bl_geographie_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Géographie",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Géographie",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/ecrits-communs-optionnels-ses-2017_1506587060551.pdf#page=1",
+    "sujet_sha256": "bdc658b34f2b80b696b7a912173f1ab822dae1d52727d0732ab0305166620e41",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_geographie_opt_ecrit.pdf",
+    "lecture_rapport": "Texte du rapport consulté dans la copie indexée du PDF institutionnel.",
+    "references": [
+      "https://www.ecologie.gouv.fr/politiques-publiques/loi-portant-nouvelle-organisation-territoriale-republique-notre",
+      "https://www.communaute-paysbasque.fr/linstitution/nos-missions-et-notre-fonctionnement",
+      "https://www.eurodistrict.eu/fr/histoire",
+      "https://github.com/gregoiredavid/france-geojson"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/regions.svg",
+      "question": "Composition",
+      "legende": "Régions, pouvoirs et revendications en France au printemps 2017"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de l’écrit d’option, de la discussion des échelles, du sens de régionalisme et de la production graphique."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition intégralement rédigée, progression guidée et illustration originale pour les deux éditions."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Comparaison du croquis avec les deux feuilles du fascicule, des sept fusions avec les six limites maintenues et des statuts territoriaux à la date du concours. Vérification du rendu des deux éditions."
+    }
+  ]
+}
