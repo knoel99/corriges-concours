@@ -1,0 +1,48 @@
+{
+  "slug": "x-ens_mp_informatique-a_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2014,
+    "duree_heures": 4
+  },
+  "questions": 19,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_sujet_infoA_MPI.pdf",
+    "sujet_sha256": "46e51c05cf13d7524cb29f07f27117977e8ead72ecee47f6066217b5914d5dc6",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mpi_rap_einfoa.pdf",
+    "rapport_sha256": "d97df0e1c53bb089aaa11b5b1d67178b7f7fd214d35e5decfe84a0ecac53b2ea"
+  },
+  "figures": [
+    {
+      "fichier": "figures/fusion-des-deux-arbres.svg",
+      "question": "4",
+      "legende": "Les racines rencontrées pendant la fusion sont 1, 3 et 4. Les anciens enfants gauches se retrouvent à droite, notamment 2 sous 1 et 5 sous 3."
+    },
+    {
+      "fichier": "figures/allonger-la-branche-droite.svg",
+      "question": "14",
+      "legende": "Une paire d’insertions place l’arbre de départ à droite de la nouvelle racine. On peut répéter la construction en choisissant des minima décroissants et des maxima croissants."
+    },
+    {
+      "fichier": "figures/tournoi-des-fusions.svg",
+      "question": "17",
+      "legende": "Construction sur huit singletons. Chaque rond indique un nombre de nœuds. Le potentiel de chaque résultat intermédiaire est soustrait lors de sa création puis ajouté lors de la fusion suivante."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 19 questions d’après les PDF X-ENS et du jury. Démonstrations de la hauteur, du coût amorti, du maximum exact pour l’insertion et de sa dépendance en la parité. Vérification des programmes en Caml sur 47 583 tableaux, dont les 46 234 permutations de taille au plus huit. Trois figures originales."
+    }
+  ]
+}
