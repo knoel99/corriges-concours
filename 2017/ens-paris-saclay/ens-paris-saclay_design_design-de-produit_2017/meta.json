@@ -1,0 +1,68 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2017
+  },
+  "redaction": "Rédaction du projet ouvert en quatre planches A3. Analyse des usages, trois pistes, plan et détail du joint, volumes, matières, cinématiques et scénario. Le PDF officiel se termine en page 3 par « FIN DE L’ÉPREUVE ». La garde annonce deux pages A4 d’annexe qui ne figurent pas dans ce fichier. La consigne complète, les critères et le choix libre du scénario sont reproduits dans la partie distribuée accessible.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Produit.pdf",
+    "sujet_sha256": "a4b3f6747eccf808221837f90b878f46412abbadd74e836cabfed41003b442a7",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "nature": "Sujet original",
+    "precision": "Le PDF officiel se termine en page 3 par « FIN DE L’ÉPREUVE ». La garde annonce deux pages A4 d’annexe qui ne figurent pas dans ce fichier. La consigne complète, les critères et le choix libre du scénario sont reproduits dans la partie distribuée accessible."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-entre-deux-visites.svg",
+      "question": "Projet, planche 1",
+      "legende": "Bento ouvert et situation de pause mobile."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-trois-cinematiques.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois variantes de fermeture et leurs conséquences pour le geste."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-plan-et-joint.svg",
+      "question": "Projet, planche 3",
+      "legende": "Plan à l’échelle 1, section locale de la fermeture et volume utile visé."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-scenario-et-essais.svg",
+      "question": "Projet, planche 4",
+      "legende": "Séquence complète et essais à réaliser avec l’usager."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction du projet ouvert en quatre planches A3. Analyse des usages, trois pistes, plan et détail du joint, volumes, matières, cinématiques et scénario. Le PDF officiel se termine en page 3 par « FIN DE L’ÉPREUVE ». La garde annonce deux pages A4 d’annexe qui ne figurent pas dans ce fichier. La consigne complète, les critères et le choix libre du scénario sont reproduits dans la partie distribuée accessible."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Manger assise, entre deux visites",
+      "Comparer trois façons d’ouvrir",
+      "Du contenant à la section du joint",
+      "Transporter, servir, laver"
+    ],
+    "precision": "Demande principale et attendus de conception traités. Deux pages A4 annoncées en garde sont absentes du PDF institutionnel."
+  }
+}

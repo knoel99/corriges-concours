@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2017
+  },
+  "redaction": "Lecture des cinq pages de l’original. Quatre planches A3 dont deux finales avec scénario dystopique, recherches, gazette en situation, fiche de retour, moyens graphiques, production et archivage.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Graphique.pdf",
+    "sujet_sha256": "940fc08c266c5c61cb00dbbb965e36fb3a8bca7c6a40dc3a813247a9303e69dc",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-chronologie.svg",
+      "question": "Projet, planche 1",
+      "legende": "Trois dates décrivent la perte progressive des liaisons entre réseaux dans une fiction de projet."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-trois-protocoles.svg",
+      "question": "Projet, planche 2",
+      "legende": "Tableau mural, valise et édition mobile comparés selon leurs usages."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-gazette-finale.svg",
+      "question": "Projet, planche 3",
+      "legende": "Final 1. Spécimen recto d’une gazette dont la correction est visible et dont le porteur peut transmettre la version."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-retour-et-production.svg",
+      "question": "Projet, planche 4",
+      "legende": "Final 2. Fiche réponse et mode de production et de circulation de la gazette."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des cinq pages de l’original. Quatre planches A3 dont deux finales avec scénario dystopique, recherches, gazette en situation, fiche de retour, moyens graphiques, production et archivage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Le jour où une adresse ne mène plus loin",
+      "Choisir un support qui accueille la réponse",
+      "Une feuille publique à lire puis à plier",
+      "Du dépôt à la prochaine version"
+    ]
+  }
+}
