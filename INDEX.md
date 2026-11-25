@@ -204,6 +204,7 @@
 | 2019 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique générale | [md](2019/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2019/guide.md) |
 | 2020 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique générale | [md](2020/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2020/brut.md) | [md](2020/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2020/guide.md) |
 | 2021 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique générale | [md](2021/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2021/guide.md) |
+| 2022 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique générale | [md](2022/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2022/guide.md) |
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique (oral) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-oral_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-oral_2018/guide.md) |
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse monétaire et politique économique | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/guide.md) |
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/guide.md) |
@@ -1430,9 +1431,15 @@
 | 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2015 | X-ENS | MP-PC-PSI | Chinois | [md](2015/x-ens/x-ens_mp-pc-psi_chinois_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_chinois_2015/guide.md) |
+| 2016 | X-ENS | MP-PC-PSI | Chinois | [md](2016/x-ens/x-ens_mp-pc-psi_chinois_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_chinois_2016/guide.md) |
+| 2015 | X-ENS | MP-PC-PSI | Composition française | [md](2015/x-ens/x-ens_mp-pc-psi_composition-francaise_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_composition-francaise_2015/guide.md) |
+| 2016 | X-ENS | MP-PC-PSI | Composition française | [md](2016/x-ens/x-ens_mp-pc-psi_composition-francaise_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_composition-francaise_2016/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Espagnol | [md](2015/x-ens/x-ens_mp-pc-psi_espagnol_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_espagnol_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Espagnol | [md](2016/x-ens/x-ens_mp-pc-psi_espagnol_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_espagnol_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Espagnol | [md](2017/x-ens/x-ens_mp-pc-psi_espagnol_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_espagnol_2017/guide.md) |
+| 2018 | X-ENS | MP-PC-PSI | Espagnol | [md](2018/x-ens/x-ens_mp-pc-psi_espagnol_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_espagnol_2018/guide.md) |
+| 2019 | X-ENS | MP-PC-PSI | Espagnol | [md](2019/x-ens/x-ens_mp-pc-psi_espagnol_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_espagnol_2019/guide.md) |
 | 2011 | X-ENS | MP-PC | Allemand | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/guide.md) |
 | 2012 | X-ENS | MP-PC | Allemand | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/brut.md) | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/guide.md) |
 | 2013 | X-ENS | MP-PC | Allemand | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/brut.md) | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/guide.md) |
