@@ -1,0 +1,56 @@
+{
+  "slug": "ens_mp-pc_grec-langue-etrangere-b_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Grec (langue étrangère B)",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Les trois formes de gouvernement chez Eschine",
+  "questions": 1,
+  "redaction": "Traduction intégrale d’Eschine, des trois formes de gouvernement à l’exhortation aux Athéniens. Explication des parallélismes, des ellipses et des temps des participes.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=11",
+    "sha256_sujet": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b",
+    "page": 11,
+    "code_garde": "UC",
+    "etablissements": "ENS de Paris et de Cachan",
+    "indexes": [
+      "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+      "https://www.ens.psl.eu/rapports-et-sujets-2011-mpi"
+    ],
+    "rapport_jury": null,
+    "precision_rapport": "La ligne de cette option à l’écrit dans l’index MPI ne comporte pas de lien vers le rapport. Aucun rapport propre à cet écrit n’a été retrouvé.",
+    "reference_du_texte": "Eschine, Contre Timarque, extraits des paragraphes 4 et 5. La page 11 donne le nom de l’auteur et l’intitulé « Les trois formes de gouvernement ».",
+    "edition_de_reference": "https://resources.warburg.sas.ac.uk/pdf/hkh595b2478223.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/regimes-et-garanties.svg",
+      "legende": "Les garanties et les dangers qu’Eschine associe aux deux types de régime."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale d’Eschine, des trois formes de gouvernement à l’exhortation aux Athéniens. Explication des parallélismes, des ellipses et des temps des participes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  }
+}
