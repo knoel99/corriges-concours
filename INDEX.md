@@ -201,6 +201,7 @@
 | 2023 | ENS Paris-Saclay | Design | Techno-design | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/guide.md) |
 | 2016 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique générale | [md](2016/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2016/brut.md) | [md](2016/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2016/guide.md) |
 | 2017 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique générale | [md](2017/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2017/brut.md) | [md](2017/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2017/guide.md) |
+| 2019 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique générale | [md](2019/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2019/guide.md) |
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse économique (oral) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-oral_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-economique-oral_2018/guide.md) |
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse monétaire et politique économique | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/guide.md) |
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/guide.md) |
@@ -1427,6 +1428,9 @@
 | 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2015 | X-ENS | MP-PC-PSI | Espagnol | [md](2015/x-ens/x-ens_mp-pc-psi_espagnol_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_espagnol_2015/guide.md) |
+| 2016 | X-ENS | MP-PC-PSI | Espagnol | [md](2016/x-ens/x-ens_mp-pc-psi_espagnol_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_espagnol_2016/guide.md) |
+| 2017 | X-ENS | MP-PC-PSI | Espagnol | [md](2017/x-ens/x-ens_mp-pc-psi_espagnol_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_espagnol_2017/guide.md) |
 | 2011 | X-ENS | MP-PC | Allemand | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/guide.md) |
 | 2012 | X-ENS | MP-PC | Allemand | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/brut.md) | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/guide.md) |
 | 2013 | X-ENS | MP-PC | Allemand | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/brut.md) | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/guide.md) |
@@ -1559,6 +1563,8 @@
 | 2001 | X | MP | Informatique (option) | [md](2001/x/x_mp_informatique-option_2001/brut.md) | [md](2001/x/x_mp_informatique-option_2001/guide.md) |
 | 2002 | X | MP | Informatique (option) | [md](2002/x/x_mp_informatique-option_2002/brut.md) | [md](2002/x/x_mp_informatique-option_2002/guide.md) |
 | 2003 | X | MP | Informatique (option) | [md](2003/x/x_mp_informatique-option_2003/brut.md) | [md](2003/x/x_mp_informatique-option_2003/guide.md) |
+| 2006 | X | MP | Informatique (option) | [md](2006/x/x_mp_informatique-option_2006/brut.md) | [md](2006/x/x_mp_informatique-option_2006/guide.md) |
+| 2007 | X | MP | Informatique (option) | [md](2007/x/x_mp_informatique-option_2007/brut.md) | [md](2007/x/x_mp_informatique-option_2007/guide.md) |
 | 2008 | X | MP | Informatique (option) | [md](2008/x/x_mp_informatique-option_2008/brut.md) | [md](2008/x/x_mp_informatique-option_2008/guide.md) |
 | 2009 | X | MP | Informatique (option) | [md](2009/x/x_mp_informatique-option_2009/brut.md) | [md](2009/x/x_mp_informatique-option_2009/guide.md) |
 | 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
