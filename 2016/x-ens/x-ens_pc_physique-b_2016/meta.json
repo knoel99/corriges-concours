@@ -1,0 +1,150 @@
+{
+  "slug": "x-ens_pc_physique-b_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "ecoles_historiques": "École polytechnique, ESPCI et ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2016
+  },
+  "questions": 54,
+  "intitule": "Histoires d’eau ou quelques aspects de la physique des gouttes",
+  "redaction": "15 questions, 54 sous-questions de 1a à 15f. Données météorologiques et photographies mesurées sur les figures 2 et 5, tracés des régimes de croissance et de propagation.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/04/16_pc_suj_phyb.pdf",
+    "sujet_sha256": "01ffbac8cbf9d58afc10f0e1e40cc765d047833b6546973ae8777306ef0da79e",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/11/16_pc_rap_ephyb.pdf",
+    "rapport_sha256": "e768831aae800ec05aebe7627173c258c799c4ed3a6c823c8005d2d8659c147e",
+    "garde": "XEULC · École polytechnique, ESPCI et ENS · 4 heures",
+    "attribution_du_rapport": "La garde du sujet et le code du rapport portent XEULC. L’en-tête du rapport nomme l’École polytechnique, l’ESPCI, Lyon et Cachan."
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport du jury de physique B PC 2016. Bilans de quantité de mouvement, pente logarithmique, conservation du volume, interprétation des deux branches de fréquence et exploitation des photographies."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "15 questions, 54 sous-questions de 1a à 15f. Données météorologiques et photographies mesurées sur les figures 2 et 5, tracés des régimes de croissance et de propagation."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2b",
+      "fichier": "figures/vitesse-de-chute.svg",
+      "legende": "L’intégrale de la courbe réduite mesure la distance parcourue en unités de hauteur caractéristique."
+    },
+    {
+      "numero": 2,
+      "question": "4a",
+      "fichier": "figures/interception-au-sol.svg",
+      "legende": "Coupe du volume intercepté à l’arrêt. Les flèches suivent la pluie sur une durée dt."
+    },
+    {
+      "numero": 3,
+      "question": "5b",
+      "fichier": "figures/interception-en-vol.svg",
+      "legende": "Coupe du prisme reçu par le pare-brise en vol. La faible composante verticale de la pluie relative est amplifiée pour la lecture."
+    },
+    {
+      "numero": 4,
+      "question": "7b",
+      "fichier": "figures/poids-des-grosses-gouttes.svg",
+      "legende": "Distributions relatives en nombre et en masse. Les deux maxima sont ramenés à un pour comparer leurs positions."
+    },
+    {
+      "numero": 5,
+      "question": "9b",
+      "fichier": "figures/distribution-pluie-faible.svg",
+      "legende": "Comparaison semi-logarithmique avec la courbe e de la figure 2. La droite extrapolée surestime la population à petit rayon."
+    },
+    {
+      "numero": 6,
+      "question": "11b",
+      "fichier": "figures/filet-module.svg",
+      "legende": "À volume conservé, les renflements et les cols redistribuent la surface du filet d’eau."
+    },
+    {
+      "numero": 7,
+      "question": "13a",
+      "fichier": "figures/dispersion-rayleigh-plateau.svg",
+      "legende": "Sous le seuil, une des deux racines imaginaires amplifie la perturbation. Au-dessus, les deux racines réelles décrivent la propagation."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1a",
+      "1b",
+      "1c",
+      "1d",
+      "2a",
+      "2b",
+      "2c",
+      "2d",
+      "3a",
+      "3b",
+      "3c",
+      "4a",
+      "4b",
+      "4c",
+      "5a",
+      "5b",
+      "5c",
+      "5d",
+      "6a",
+      "6b",
+      "6c",
+      "7a",
+      "7b",
+      "7c",
+      "7d",
+      "7e",
+      "8a",
+      "8b",
+      "8c",
+      "9a",
+      "9b",
+      "9c",
+      "9d",
+      "10a",
+      "10b",
+      "10c",
+      "11a",
+      "11b",
+      "11c",
+      "12a",
+      "12b",
+      "13a",
+      "13b",
+      "13c",
+      "13d",
+      "13e",
+      "14a",
+      "14b",
+      "15a",
+      "15b",
+      "15c",
+      "15d",
+      "15e",
+      "15f"
+    ]
+  }
+}
