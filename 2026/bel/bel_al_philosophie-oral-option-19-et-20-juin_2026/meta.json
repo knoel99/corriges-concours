@@ -1,0 +1,62 @@
+{
+  "slug": "bel_al_philosophie-oral-option-19-et-20-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Philosophie (oral option 19 et 20 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral option 19 et 20 juin)",
+  "questions": 0,
+  "tirages": 11,
+  "sujets": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_specialite_philosophie_19_et_20_juin.pdf",
+    "sujet_sha256": "8331d111ce53f67c793ad690572f3e38683ac15eb7e07b4f7d913f12ce5e2f08",
+    "texte_comparaison": "https://hyperspinoza.caute.lautre.net/IMG/pdf/THIQUE_APPUHN.pdf",
+    "texte_comparaison_sha256": "49f10a5d860312ac778d5c0aba1a0b340bf05dde1597739b4766622f5befc64e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/raison.svg",
+      "question": "Passages comparés",
+      "legende": "Trois inférences à examiner"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 11 explications complètes, des relances résolues et de l’atelier de préparation ; création du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de l’ordre, des coupures et des références des 11 passages de la feuille officielle ; lecture des passages correspondants chez Appuhn et contrôle des deux éditions."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-modiano-et-le-lecteur_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Modiano et le lecteur",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Modiano et le lecteur",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/LITTERATURE.pdf",
+    "sujet_sha256": "aa671a0b682f85c87648ee812873e5dcdc321f2ef6e8fcf318fcc191e9e633cd",
+    "references": [
+      "https://www.nobelprize.org/prizes/literature/2014/modiano/25249-conference-nobel/",
+      "https://ctlsites.uga.edu/eberle/wp-content/uploads/sites/78/2017/08/iser_readingProcess.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/developpement.svg",
+      "question": "Dissertation",
+      "legende": "Ce qui change au cours de la lecture"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de la dissertation littéraire, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Confrontation avec la conférence Nobel et les deux images du tirage photographique et de la voix chantée, contrôle du statut des perspectives chez Modiano, Austen et James. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}
