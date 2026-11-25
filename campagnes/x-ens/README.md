@@ -164,3 +164,5 @@ En 2010, les ENS de Paris, Lyon et Cachan partageaient un écrit de français et
 Les compositions communes de physique MP de 2014 et 2019 disposent d’un rapport du jury identifié. Le fac-similé Doc Solus conserve le rapport signé de 2014. En 2019, l’ENS et la banque diffusent respectivement le sujet et le rapport. [Sources de physique, nombre de pages et empreintes](physique-mp-2014-et-2019.tsv)
 
 Pour les écrits scientifiques en PC de 2010, la garde de physique PC1 désigne l’ENS de Paris et celle de physique PC2 les ENS de Lyon et Cachan. Les mathématiques et la chimie sont communes aux trois ENS. L’index de Paris fournit les quatre sujets ainsi que les rapports écrits de physique PC2 et de chimie. [Gardes, durées et rapports](sciences-ens-pc-2010.tsv)
+
+En 2009, la garde de physique PC1 désigne Paris et celle de physique PC2 désigne Lyon et Cachan. La chimie et les mathématiques PC ainsi que la physique MPI portent les trois écoles. Quatre rapports écrits accompagnent les cinq sujets. La rubrique INFO fournit la même épreuve de physique MPI et le même rapport pour Paris et Lyon. [Gardes et rapports de 2009](sciences-ens-mp-pc-2009.tsv)
