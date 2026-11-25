@@ -1,0 +1,41 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-1_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 1",
+    "annee": 2008
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2008/MP/mp_sujet_maths_mpi1.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2008/MP/mp_ecrit_maths_mpi1.pdf",
+    "sha256_sujet": "61a5215261614023d5395041aa22b5b008f64d3bcc8bb88f8ecad61576517f66"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ellipse-et-foyers.svg",
+      "question": "3.2",
+      "legende": "Pour a = 3 et b = 1, les demi-axes valent 2 et 1. Les deux foyers sont les valeurs propres, situées en ±√3."
+    },
+    {
+      "fichier": "figures/triangle-et-bloc.svg",
+      "question": "4.6",
+      "legende": "Le bloc unitaire donne le triangle, le bloc nilpotent le disque de rayon ε/2 (ici ε = 0,76). Leur enveloppe convexe est encore le triangle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des cinq parties des deux éditions à partir du sujet et du rapport du jury. Construction de l’ellipse et de ses foyers, compression aux sommets, preuve de la réciproque en dimension au plus quatre, polarisation unitaire y compris au rang singulier et maximum sur le polydisque. Deux figures géométriques.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
