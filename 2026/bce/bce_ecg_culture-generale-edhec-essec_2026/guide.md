@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Construire la dissertation
 
 La feuille du 22 avril donne un infinitif et un complément de manière. La question centrale porte donc sur ce qui se passe lorsque quelqu’un juge, et sur le degré de liberté avec lequel il le fait. Rédiger la copie sans chiffres, lettres ni titres de parties. Le rapport demande de hiérarchiser les sens de la liberté. Pour établir une hiérarchie, il faut un critère qui départage deux jugements paraissant tous les deux indépendants.
@@ -26,6 +28,8 @@ Dans le premier cas, la règle donne au perdant une prise sur les raisons du jug
 **Lire le retour à Zola.** La conclusion ne vend pas l’indépendance au prix de l’infaillibilité. Qu’une accusation puisse être soumise à contradiction explique à la fois ce qui rend la parole plus libre et ce qui oblige son auteur à en répondre. C’est ce lien que la fin d’une copie doit établir entre l’indépendance initialement revendiquée et l’activité de juger.
 
 ![À quel titre ce jugement est-il libre ?](figures/lecture-du-sujet.svg)
+
+Demandez ce qui change si le vote reste secret et qu’une preuve nouvelle devient accessible. Le juré conserve la même indépendance extérieure. Sa capacité à justifier, voire à réviser, sa décision change avec les raisons qu’il peut désormais examiner.
 
 ## Dissertation rédigée
 

@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Dossier et consigne
 
 L’épreuve du 28 avril 2026 porte le code 304. Sa feuille de garde indique les voies générale et technologique ainsi que les programmes ENS ULM A/L et ENS Lyon. La présente fiche correspond à la voie ECG. La copie doit confronter les trois textes en 300 mots avec une tolérance de 10 %, soit 270 à 330 mots. Les repères se placent tous les cinquante mots et le total figure à la fin. Le rapport inclut la question initiale dans ce décompte et compte le nom de chaque auteur du corpus comme un seul mot, même accompagné de son prénom. La proposition emploie uniquement les patronymes et évite les mots avec traits d’union ou apostrophes, ce qui permet de contrôler les six tranches sans ambiguïté.
@@ -32,6 +34,8 @@ Ce plan mettrait bout à bout les textes. La synthèse suit trois problèmes que
 Au premier passage, relever les idées et leurs auteurs. Au second, suivre le fil d’une phrase à l’autre et enlever tout jugement personnel. Au dernier, recompter la rédaction effectivement copiée. Ici, les six tranches s’achèvent respectivement à « valeurs », « que », « accessibles », « Le », « de » et « entendues ». Les doubles barres et la mention finale sont des repères de contrôle extérieurs au total.
 
 ![Un même mot, trois échelles de diversité](figures/lecture-du-sujet.svg)
+
+Prenez un outil qui propose une langue supplémentaire. Quel changement observerait-on dans la liste des langues proposées, dans les échanges entre locuteurs et dans les façons de dire qu’admet effectivement l’outil ? Ces trois questions aident à confronter les auteurs en gardant un problème commun.
 
 ## Synthèse rédigée
 
