@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Ces cinq paires sont données à la dernière page du rapport. Aucune date individuelle ne leur est attribuée. Les six feuilles datées contiennent 63 paires. Le rapport en énumère 68 pour 69 candidats : ces cinq paires complètent la liste des intitulés attestés. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici. Chaque relance met à l’épreuve une distinction précise. Pour développer oralement les propositions, reprendre l’exemple, en faire varier une condition, puis expliquer comment cette variation modifie la réponse.
 
 ## Ticket 1
@@ -49,6 +51,8 @@ Il faut distinguer la prévention d’un risque identifié et la précaution fac
 On doit également examiner les effets de l’inaction, la possibilité de faire un essai réversible et les populations exposées. Une mesure temporaire qui se prolonge sans réexamen finit par transformer une incertitude en décision permanente. À l’inverse, invoquer l’absence de preuve définitive pour ne jamais enquêter vide le principe de tout effet. La précaution est un principe défendable si elle impose une manière responsable de décider sous incertitude : expliciter la gravité plausible, rechercher des connaissances, répartir les charges et prévoir une révision. Elle ne fournit pas par elle-même une réponse identique à toutes les innovations.
 
 ![Décider sous incertitude environnementale](figures/precaution.svg)
+
+Associer à la mesure une échéance et un résultat susceptible de modifier la décision. Expliquer pourquoi des observations révisables rendent la précaution compatible avec la poursuite de l’enquête.
 
 > [!INDICATION]
 > L’absence de certitude suffit-elle à imposer une interdiction ?

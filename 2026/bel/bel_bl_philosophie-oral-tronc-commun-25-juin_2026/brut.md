@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 25 juin réunit 5 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici.
 
 ## Ticket 1
@@ -51,6 +53,10 @@ Cependant une œuvre sans finalité extérieure imposée s’inscrit encore dans
 Au guichet, dire « j’accepte » peut conclure un engagement. Prononcer les mêmes mots en répétant une pièce de théâtre ne conclut aucun contrat. À quoi tient le pouvoir des mots si les mêmes sons produisent des effets différents ? Il faut distinguer ce qu’un énoncé signifie, l’acte accompli en le prononçant et les conséquences qu’il entraîne pour un auditeur.
 
 Austin montre dans *Quand dire, c’est faire* que certaines paroles réalisent une action sous des conditions appropriées. Une promesse engage parce qu’un usage commun permet d’identifier un locuteur, un destinataire et une conduite future assumée. Une décision prononcée par une personne dépourvue de mandat n’aura pas la même force institutionnelle. Le pouvoir ne réside donc pas dans un son isolé. Il dépend de conventions et d’une distribution de l’autorité.
+
+Deux personnes prononcent la même formule d’ouverture d’une séance. Si seule l’une est habilitée à présider, les mots signifient la même chose dans les deux bouches mais une seule intervention ouvre effectivement la séance. L’échec de l’autre ne tient pas à une erreur de vocabulaire.
+
+![Figure 1 — Trois questions sur le pouvoir d’une parole](figures/mots.svg)
 
 Mais les mots ont également le pouvoir d’ouvrir une manière de voir. Nommer une expérience jusque-là traitée comme un problème privé peut permettre à plusieurs personnes de comparer ce qu’elles vivent, et de formuler une revendication commune. Inversement une étiquette répétée peut enfermer quelqu’un dans une catégorie dont on ne lui permet pas de sortir. Les effets ne sont jamais entièrement assurés : l’interlocuteur peut demander des raisons, refuser une définition ou détourner une injure. Le pouvoir des mots tient ainsi à leur signification partagée, aux institutions qui reconnaissent certains actes et à l’activité d’interprétation de ceux auxquels ils s’adressent.
 
