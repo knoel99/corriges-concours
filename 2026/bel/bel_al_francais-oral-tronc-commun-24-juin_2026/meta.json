@@ -1,0 +1,72 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-24-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 24 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 24 juin)",
+  "questions": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/francais_tc_24_juin.pdf",
+    "sujet_sha256": "8d1ffc3a93db3979482c6b3dd79bafbc2ad3e053248c0aaad6f0ffc715a04dc1",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/Lettres_persanes/Lettre_36",
+      "https://fr.wikisource.org/wiki/Po%C3%A8mes_saturniens_(1866)/Promenade_sentimentale",
+      "https://fr.wikisource.org/wiki/Les_Confessions_(Rousseau)/Livre_II",
+      "https://fr.wikisource.org/wiki/Du_c%C3%B4t%C3%A9_de_chez_Swann/Partie_3",
+      "https://fr.wikisource.org/wiki/Les_Tragiques/%C3%A9d._Read/Livre_I._Mis%C3%A8res"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/le-cercle.svg",
+      "question": "2",
+      "legende": "Les deux parcours de la promenade de Verlaine"
+    },
+    {
+      "fichier": "figures/florence.svg",
+      "question": "4",
+      "legende": "Le nom de Florence se transforme en tableau"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cinq explications linéaires, deux schémas et cinq questions de reprise sur les six références imprimées, dont une répétition exacte."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des bornes dans les cinq œuvres et le fascicule, contrôle du doublon Proust, lecture des recommandations de la commission sur l’explication linéaire."
+    }
+  ]
+}
