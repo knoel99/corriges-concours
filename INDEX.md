@@ -178,6 +178,7 @@
 | 2019 | BEL | AL | Grec moderne (commentaire et traduction) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 17 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 19 juin commission 2) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-2_2026/guide.md) |
+| 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 23 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2019 | BEL | AL | Italien (commentaire et traduction) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Italien (thème Lyon) | [md](2019/bel/bel_al_italien-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_italien-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Portugais (commentaire et traduction) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/guide.md) |
