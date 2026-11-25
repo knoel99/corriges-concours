@@ -38,7 +38,7 @@
     "sujet_sha256": "62c2e80f2038769e6db5600a1712f41b32e8cdaafefd2e21b3766a48cf377b4e",
     "rapport_sha256": "eae7c0b298ad22652035e6c25ab0431e48d56346a0eac2a0dff0779b761b1581"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -106,6 +106,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification de la citation de Condillac, du programme et des exemples dans les deux éditions ; développement sur le temps de l’avertissement et celui de l’anticipation chez Haushofer."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Condillac et Verne, manque d’air commun et distinction entre sensation vitale et choix d’un bénéficiaire."
     }
   ]
 }

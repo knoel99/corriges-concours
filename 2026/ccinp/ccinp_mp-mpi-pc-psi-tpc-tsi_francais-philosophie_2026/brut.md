@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve FP4 (mutualisée avec e3a-Polytech), 4 heures, sans document ni machine. Texte : Kathleen Raine, *Le monde vivant de l'imagination* (trad. C. Garnier-Tardieu et M. Duclos, Éditions du Rocher, 1998, p. 86-90). Thème de l'année : l'expérience de la nature. Œuvres au programme : Jules Verne, *Vingt mille lieues sous les mers* ; Georges Canguilhem, *La Connaissance de la vie* ; Marlen Haushofer, *Le Mur invisible*. Barème : résumé 1/3 (20 points), dissertation 2/3 (40 points).
 
 ## Résumé de texte (20 points)
@@ -33,6 +35,10 @@ Une longue tradition philosophique place l'étonnement au commencement du savoir
 Le premier mérite de la formule est de nommer une expérience que les trois œuvres attestent : celle d'un savoir qui possède tous les mots et ne rencontre rien.
 
 Le savoir des classifications, d'abord, peut se suffire à lui-même au point de ne plus rien voir, et Verne en fait un type romanesque. Dans *Vingt mille lieues sous les mers*, Conseil, le domestique du professeur Aronnax, connaît par cœur la classification des naturalistes, embranchements, classes, ordres, familles, genres, espèces ; mais le narrateur précise d'emblée que cette science est de pure théorie et qu'il ne distinguerait pas un cachalot d'une baleine. Conseil incarne exactement l'« expérience acquise par le savoir » réduite à elle-même : un classement qui tourne à vide. Devant la vitre du salon du *Nautilus*, lorsque les panneaux s'ouvrent sur la mer éclairée, c'est Ned Land, le harponneur, qui reconnaît et nomme les poissons, tandis que Conseil se contente de les ranger. Et Aronnax lui-même, professeur au Muséum, cesse alors d'être un savant qui énumère : il est un spectateur ébloui, qui avoue à plusieurs reprises, devant la forêt sous-marine de l'île Crespo ou les ruines englouties de l'Atlantide, que ses connaissances ne suffisent pas à dire ce qu'il voit. Le roman fait ainsi de l'émerveillement le moment où le réel déborde le savoir.
+
+Une silhouette placée dans la catégorie des grands animaux marins entraîne certaines attentes sur ce qu’Aronnax va rencontrer. Lorsque le contact fournit des indices métalliques, l’écart avec ces attentes rend leur révision possible. L’identification première a ainsi un double rôle. Elle oriente l’observation et rend son propre échec perceptible.
+
+![Du familier au jugement vérifié](figures/lecture-du-sujet.svg)
 
 Il arrive même que la réalité de la nature ne se découvre qu'au moment où le savoir acquis cesse de servir. *Le Mur invisible* fait de cette épreuve son point de départ. La narratrice, une citadine venue passer quelques jours dans un pavillon de chasse des montagnes autrichiennes, se découvre un matin séparée du monde par une paroi transparente. Tout ce qu'elle savait, les usages sociaux, les nouvelles, les compétences d'une vie urbaine, perd d'un coup son objet. Ce qui s'impose alors ne procède d'aucun savoir : la présence de Lynx, le chien, dont l'attachement se donne sans avoir à être appris ; la forêt, la prairie, l'alpage, qui deviennent la totalité de son monde et qu'elle apprend à regarder pour eux-mêmes. Le mur lui-même reste une énigme qu'elle renonce à expliquer : elle écrit son récit non pour comprendre, mais pour tenir. Haushofer donne ici raison à Raine : la perte des savoirs ordinaires rend la narratrice à la présence des êtres.
 

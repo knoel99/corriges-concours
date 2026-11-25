@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique** — Si le plaisir et la douleur orientent nos premiers gestes, qu’ajoute l’expérience à ces avertissements naturels, et jusqu’où peut-elle changer les fins qui nous font agir ?
 
 Dans *Le Mur invisible*, un chemin que la narratrice pouvait jusque-là emprunter s’interrompt en un lieu où ses yeux ne discernent aucun obstacle. Le chien Lynx s’y heurte. La douleur signale immédiatement un danger, mais personne n’est capable de dire ce qui vient d’arriver. Cette scène donne sa force à l’analyse de Condillac. Dans le *Traité des sensations*, la nature dote l’être humain d’organes qui l’orientent vers ce qui lui fait plaisir et l’éloignent de ce qui lui fait mal. Elle lui épargne ainsi d’avoir à apprendre de toutes pièces ce qui importe à sa vie. Elle lui laisse pourtant beaucoup à faire. Entre éprouver une douleur et savoir comment se conduire quand elle revient, il faut que le temps ait passé, que le souvenir se soit formé et qu’une manière d’agir soit devenue disponible. Mais que signifie alors « achever » ce que la nature a commencé ? S’agit-il de trouver, par l’habitude, les meilleurs moyens de poursuivre des fins déjà données ? L’épreuve du monde peut aussi nous amener à désirer une chose dont rien, dans le plaisir ou la peine éprouvés d’abord, ne nous indiquait la valeur. Nous partirons de ce que la sensation rend possible. Nous chercherons ensuite ce que les habitudes lui ajoutent et dans quels cas l’expérience nous engage à les réviser pour des fins que nous pouvons reconnaître comme nôtres.
@@ -17,6 +19,10 @@ Dans *Le Mur invisible*, un chemin que la narratrice pouvait jusque-là emprunte
 * * *
 
 Il suffit de manquer d’air pour comprendre que nos sens donnent à certaines différences du monde un intérêt vital. Dans *Vingt mille lieues sous les mers*, quand le *Nautilus* est prisonnier des glaces, Aronnax éprouve un contraste singulier. À bord, l’air se vicie. Lorsqu’il sort travailler, l’appareil respiratoire lui fournit de l’air pur. Le travail, qui devrait accroître sa fatigue, lui procure donc un soulagement que le repos dans le navire lui refuse. Le plaisir dont il est ici question a un contenu précis. Il distingue deux milieux, en fonction du besoin présent du corps. Le lecteur n’a pas à connaître la composition de l’atmosphère pour comprendre, avec Aronnax, de quel côté se trouve la possibilité de vivre.
+
+Lorsque les compagnons réservent une part d’air au naturaliste, chacun éprouve pourtant le même besoin de respirer. L’exigence vitale rend la décision urgente. Sa seule intensité n’explique pas pourquoi l’air disponible est destiné à un autre que celui qui pourrait le garder. Verne donne ainsi une épreuve précise à la portée du propos de Condillac.
+
+![Figure 1 — Le partage de l’air distingue le besoin que tous éprouvent de la valeur qui motive le don](figures/partage-de-lair.svg)
 
 Canguilhem aide à démêler ce qui se joue dans cet avertissement. Dans « Le vivant et son milieu », il reprend à Uexküll le cas de la tique. Dans cet environnement où l’observateur humain distingue quantité de formes et de couleurs, seuls quelques signaux, dont l’odeur d’un mammifère, importent à l’animal. Que le monde comporte ainsi des différences qui comptent pour un vivant permet de comprendre le privilège que Condillac accorde aux organes. Une connaissance théorique des choses serait impuissante à expliquer pourquoi l’une mérite que cet être s’en approche, l’autre qu’il s’en éloigne. Il serait cependant imprudent d’attribuer à la tique nos sentiments ou de lui prêter une délibération. L’exemple établit qu’une organisation vivante opère une sélection. Il laisse ouverte la question proprement humaine de ce que nous faisons de nos sensations.
 
