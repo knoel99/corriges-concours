@@ -199,6 +199,8 @@
 | 2021 | ENS Paris-Saclay | Design | Techno-design | [md](2021/ens-paris-saclay/ens-paris-saclay_design_techno-design_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_techno-design_2021/guide.md) |
 | 2022 | ENS Paris-Saclay | Design | Techno-design | [md](2022/ens-paris-saclay/ens-paris-saclay_design_techno-design_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_design_techno-design_2022/guide.md) |
 | 2023 | ENS Paris-Saclay | Design | Techno-design | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/guide.md) |
+| 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse monétaire et politique économique | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/guide.md) |
+| 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/guide.md) |
 | 2009 | ENS-PSL | PC | Physique PC1 | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/brut.md) | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/guide.md) |
 | 2010 | ENS Paris | PC | Physique PC1 | [md](2010/ens-psl/ens-psl_pc_physique-pc1_2010/brut.md) | [md](2010/ens-psl/ens-psl_pc_physique-pc1_2010/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Cinéma — commentaire de film (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-commentaire-de-film-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-commentaire-de-film-oral_2022/guide.md) |
@@ -1076,6 +1078,7 @@
 | 2011 | ENS | MP-PC | Portugais (langue étrangère B) | [md](2011/ens/ens_mp-pc_portugais-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_portugais-langue-etrangere-b_2011/guide.md) |
 | 2009 | ENS | MP-PC | Portugais (LE2) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Portugais (LE2) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/guide.md) |
+| 2011 | ENS | MP-PC | Russe (langue étrangère B) | [md](2011/ens/ens_mp-pc_russe-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_russe-langue-etrangere-b_2011/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LE2) | [md](2009/ens/ens_mp-pc_russe-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LE2) | [md](2010/ens/ens_mp-pc_russe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LV1) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/guide.md) |
@@ -1447,6 +1450,9 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2011 | X-ENS | MP-PC | Italien | [md](2011/x-ens/x-ens_mp-pc_italien_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_italien_2011/guide.md) |
+| 2011 | X-ENS | MP-PC | Portugais | [md](2011/x-ens/x-ens_mp-pc_portugais_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_portugais_2011/guide.md) |
+| 2011 | X-ENS | MP-PC | Russe | [md](2011/x-ens/x-ens_mp-pc_russe_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_russe_2011/guide.md) |
 | 2011 | X-ENS | MP | Informatique A | [md](2011/x-ens/x-ens_mp_informatique-a_2011/brut.md) | [md](2011/x-ens/x-ens_mp_informatique-a_2011/guide.md) |
 | 2012 | X-ENS | MP | Informatique A | [md](2012/x-ens/x-ens_mp_informatique-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_informatique-a_2012/guide.md) |
 | 2013 | X-ENS | MP | Informatique A | [md](2013/x-ens/x-ens_mp_informatique-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_informatique-a_2013/guide.md) |
@@ -1534,6 +1540,7 @@
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
+| 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
 | 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
 | 2013 | X | PSI-PT | Informatique | [md](2013/x/x_psi-pt_informatique_2013/brut.md) | [md](2013/x/x_psi-pt_informatique_2013/guide.md) |
 | 2014 | X | PSI-PT | Informatique | [md](2014/x/x_psi-pt_informatique_2014/brut.md) | [md](2014/x/x_psi-pt_informatique_2014/guide.md) |
