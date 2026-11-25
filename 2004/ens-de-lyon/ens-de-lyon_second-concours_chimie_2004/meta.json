@@ -1,0 +1,103 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2004",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2004
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2004/sujet-ecrit-2004-second-concours_chimie.pdf",
+    "sujet_sha256": "fde5a4f9e12197f43b578f9674aa2aa62197727adc096a78b786f53a2af38d2f",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2004/rapport-2004-second-concours_ecrit_chimie.pdf",
+    "rapport_sha256": "a3697f2c7a1d731bc6301745469776cd6416ce6f7edabb49ca07c135fab786d4"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2",
+      "A.I.3",
+      "A.I.4",
+      "A.II.1",
+      "A.II.2",
+      "B.I.2",
+      "B.II.1",
+      "B.II.2.a",
+      "B.II.2.b",
+      "B.II.2.c",
+      "B.II.3.a",
+      "B.II.3.b",
+      "B.II.4",
+      "B.II.5",
+      "B.II.6.a",
+      "B.II.6.b",
+      "B.II.7.a",
+      "B.II.7.b",
+      "C.I.1.a",
+      "C.I.1.b",
+      "C.I.1.c",
+      "C.I.2.a",
+      "C.I.2.b",
+      "C.I.2.c",
+      "C.I.2.d",
+      "C.I.2.e",
+      "C.II.1",
+      "C.II.2",
+      "C.II.3",
+      "C.II.4",
+      "C.II.5"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "B.I.1",
+      "B.I.3.a",
+      "B.I.3.b"
+    ],
+    "precision": "Ces éditions traitent 32 des 35 questions ou sous-questions terminales. Les parties A, B.II et C sont couvertes, ainsi que B.I.2 sur l’orientation aromatique. Les mécanismes et le choix expérimental de catalyseur de B.I.1 et B.I.3.a–b sont hors couverture. Le rapport écrit du jury commun Paris–Lyon confirme les thèmes. La numérotation distingue les lettres a à e lorsqu’elles sont imprimées."
+  },
+  "figures": [
+    {
+      "question": "A.I.4",
+      "fichier": "figures/radical-pentadienyle.svg",
+      "legende": "Trois formes limites du segment C9 à C13. Le point indique la position formelle de l’électron célibataire. La molécule réelle est délocalisée."
+    },
+    {
+      "question": "B.II.2.b",
+      "fichier": "figures/anomeres-du-l-sorbose.svg",
+      "legende": "Deux projections du L-sorbofuranose, dans la même orientation. Les deux formes se distinguent au seul C2, carbone de droite. Les H sur les carbones portant OH sont implicites."
+    },
+    {
+      "question": "B.II.3.b",
+      "fichier": "figures/positions-protegees-du-sucre.svg",
+      "legende": "Repérage des deux ponts isopropylidène sur les carbones numérotés du sucre. Le cycle O5–C2 conserve la connectivité du furanose. Le schéma identifie les positions protégées sans indiquer les angles de liaison."
+    },
+    {
+      "question": "B.II.5",
+      "fichier": "figures/fischer-acide-cetogulonique.svg",
+      "legende": "Projection de Fischer de E dans l’ordre C1 à C6 du haut vers le bas. Le centre carbonylé C2 ne porte pas de H."
+    },
+    {
+      "question": "C.I.2.b",
+      "fichier": "figures/domaines-de-liode.svg",
+      "legende": "Frontières des trois espèces retenues par le sujet avec équipartition de l’élément aux frontières. Le domaine du triiodure se referme près de pH 8."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale pour les 32 questions ou sous-questions terminales identifiées. Lecture des sept pages, des structures, des données thermodynamiques, de la table RMN et du diagramme, ainsi que du rapport commun Paris–Lyon. Cinq illustrations, bilan d’iodure, frontières de Nernst et dosage vérifiés. Trois sous-questions de la voie du BHT sont hors couverture."
+    }
+  ]
+}
