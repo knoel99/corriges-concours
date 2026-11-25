@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2016
+  },
+  "redaction": "Quatre planches A3 originales. Analyse des deux portails de mars 2016 et des références annexées, hypothèses, identité, accès depuis le rayon, parcours mobile et scénario de médiation.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Graphique.pdf",
+    "sujet_sha256": "1f6c477c846d4486bbdc032064ba72ffd484a4ebb10653c57631b4ac3c60dd53",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=281",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-contexte-et-pistes.svg",
+      "question": "Projet, planche 1",
+      "legende": "Une carte imprimée introduit le service numérique dans le rayon physique."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-identite-et-cartes.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois exemples de visuels sans photographie et verso d’une carte de médiation."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-interface-preter.svg",
+      "question": "Projet, planche 3",
+      "legende": "Recherche, notice et confirmation donnent un trajet continu de la découverte à l’EPUB."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-accompagnement.svg",
+      "question": "Projet, planche 4",
+      "legende": "Une interface de lecture adaptable et un circuit d’exploitation réaliste."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Quatre planches A3 originales. Analyse des deux portails de mars 2016 et des références annexées, hypothèses, identité, accès depuis le rayon, parcours mobile et scénario de médiation."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Trouver le numérique au rayon des livres",
+      "Composer des couvertures sans effacer les titres",
+      "Emprunter sans perdre sa place",
+      "Assurer la médiation après le clic"
+    ]
+  }
+}
