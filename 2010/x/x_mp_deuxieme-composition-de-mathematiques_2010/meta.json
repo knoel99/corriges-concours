@@ -1,0 +1,41 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2010
+  },
+  "questions": 34,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2010_MP_M2_enonce.pdf",
+    "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2010/MP_MATHS_X_2_2010.rapport.pdf",
+    "sha256_sujet": "b9f8022e1673e2149f7a16785880173e2eef4f2850e4c97aa6828081d0e38db5"
+  },
+  "figures": [
+    {
+      "fichier": "figures/symetries-triangle.svg",
+      "question": "2a",
+      "legende": "Les trois axes sont les médianes du triangle. La rotation de centre O qui envoie A sur B envoie aussi B sur C."
+    },
+    {
+      "fichier": "figures/classification-groupes.svg",
+      "question": "17",
+      "legende": "La partie commutative donne un groupe cyclique. Dans la partie non commutative, le noyau du déterminant préserve les deux axes et la seconde classe les échange."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, toutes les questions 1 à 18 et sous-questions vérifiées avec l’original et le rapport. Détails du changement de base du triangle, des projecteurs et de la divisibilité du degré, normalisateur, classification et réciproques. Deux figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
