@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d1_allemand_2014",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-allemand-ecrit_1421747223975-pdf#page=3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-allemand-ecrit_1421747223975-pdf",
+    "sha256_rapport_jury": "a8ab5d393abb714e641a43fe1f663261904800a64c0be32a8440d4a9bf2f1d71",
+    "temoin_presse": {
+      "titre": "Focus, 13 mai 2012, section « Nicht jeder ist dafür geschaffen »",
+      "url": "https://www.focus.de/finanzen/karriere/perspektiven/arbeiten-im-ausland/nicht-jeder-ist-dafuer-geschaffen-expatriate_id_2331494.html"
+    }
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "questions_partiellement_traitees": [
+      "Version"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le rapport décrit un texte remanié de 256 mots et en donne une proposition française. Les trois paragraphes qui suivent en reprennent le contenu dans une formulation nouvelle, confrontée aux portraits originaux de Focus. Le feuillet allemand distribué et ses reformulations exactes manquent. La question de composition est reproduite à la page 3."
+  },
+  "longueur_expression": {
+    "mots": 101,
+    "regle": "Environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Deux parcours, deux chronologies"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du rapport officiel et de la publication de presse correspondante, traduction des éléments récupérables, rédaction intégrale de la composition et du guide. Le rapport décrit un texte remanié de 256 mots et en donne une proposition française. Les trois paragraphes qui suivent en reprennent le contenu dans une formulation nouvelle, confrontée aux portraits originaux de Focus. Le feuillet allemand distribué et ses reformulations exactes manquent. La question de composition est reproduite à la page 3."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

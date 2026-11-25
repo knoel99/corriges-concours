@@ -1,0 +1,77 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-le-point-de-vue-de-lhistorien_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — le point de vue de l’historien",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire — le point de vue de l’historien",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20ecrit%20specialite%20histoire%202018.pdf",
+    "sujet_sha256": "ecbdb43a5d8549c0a8cacf47a90a45aa8ee6662e51451b083f08a23c25cf7d14",
+    "references": [
+      "https://catalogue.bnf.fr/ark:/12148/cb42517322n",
+      "https://classiques.uqam.ca/classiques/bloch_marc/rois_thaumaturges/rois_thaumaturges_intro.html",
+      "https://catalogue.bnf.fr/ark:/12148/cb31866731s"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "rapport_sha256": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696"
+  },
+  "figures": [
+    {
+      "fichier": "figures/projection.svg",
+      "question": "Dissertation",
+      "legende": "Un événement commun à deux chronologies ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Lecture des attentes sur l’argumentation, les lectures de plusieurs traditions et la distinction entre une recherche personnelle et un exposé du seul avant-projet.",
+      "modifications": false
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire historiographique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "La double question, l’exemple de Banten, la différence entre silence et ignorance et le transfert de concepts ont été confrontés au sujet et aux lectures. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}

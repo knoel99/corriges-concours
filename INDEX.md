@@ -605,6 +605,8 @@
 | 2009 | ENS de Lyon | Second concours | Chimie | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Chimie | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Chimie | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/guide.md) |
+| 2014 | ENS Rennes | D1 | Allemand | [md](2014/ens-rennes/ens-rennes_d1_allemand_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_allemand_2014/guide.md) |
+| 2014 | ENS Rennes | D1 | Anglais | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Chimie | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Chimie | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/guide.md) |
 | 2017 | ENS de Lyon | Second concours | Chimie | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/guide.md) |
@@ -637,6 +639,10 @@
 | 2011 | ENS de Lyon | Second concours | Informatique | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/guide.md) |
 | 2012 | ENS de Lyon | Second concours | Informatique | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/brut.md) | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/guide.md) |
 | 2013 | ENS de Lyon | Second concours | Informatique | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Allemand | [md](2013/ens-rennes/ens-rennes_d1_allemand_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_allemand_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Anglais | [md](2013/ens-rennes/ens-rennes_d1_anglais_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_anglais_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Espagnol | [md](2013/ens-rennes/ens-rennes_d1_espagnol_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_espagnol_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Italien | [md](2013/ens-rennes/ens-rennes_d1_italien_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_italien_2013/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Informatique | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Informatique | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_informatique_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_informatique_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Informatique | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/guide.md) |
@@ -803,6 +809,8 @@
 | 2026 | ENS Rennes | D-E | Droit (oral) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_droit-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Entretien (oral) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_entretien-oral_2026/guide.md) |
 | 2022 | ENS-PSL | CNEL Lettres | Apollonios de Rhodes — les Argonautiques | [md](2022/ens-psl/ens-psl_cnel-lettres_apollonios-de-rhodes-les-argonautiques_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_apollonios-de-rhodes-les-argonautiques_2022/guide.md) |
+| 2021 | ENS-PSL | CNEL Lettres | Histoire — Flaubert et l’écriture du passé | [md](2021/ens-psl/ens-psl_cnel-lettres_histoire-flaubert-et-lecriture-du-passe_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_histoire-flaubert-et-lecriture-du-passe_2021/guide.md) |
+| 2022 | ENS-PSL | CNEL Lettres | Histoire — l’opération historique | [md](2022/ens-psl/ens-psl_cnel-lettres_histoire-loperation-historique_2022/brut.md) | [md](2022/ens-psl/ens-psl_cnel-lettres_histoire-loperation-historique_2022/guide.md) |
 | 2021 | ENS-PSL | CNEL Lettres | Homère — le songe de Télémaque | [md](2021/ens-psl/ens-psl_cnel-lettres_homere-le-songe-de-telemaque_2021/brut.md) | [md](2021/ens-psl/ens-psl_cnel-lettres_homere-le-songe-de-telemaque_2021/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Hérodote — le débat sur les régimes politiques | [md](2023/ens-psl/ens-psl_cnel-lettres_herodote-le-debat-sur-les-regimes-politiques_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_herodote-le-debat-sur-les-regimes-politiques_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Irénée de Lyon — commentaire latin | [md](2023/ens-psl/ens-psl_cnel-lettres_irenee-de-lyon-commentaire-latin_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_irenee-de-lyon-commentaire-latin_2023/guide.md) |
@@ -839,6 +847,8 @@
 | 2022 | ENS-PSL | Sélection internationale Lettres | Droit — la division du travail social selon Durkheim (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_droit-la-division-du-travail-social-selon-durkheim-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_droit-la-division-du-travail-social-selon-durkheim-oral_2022/guide.md) |
 | 2018 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — collectionner | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-collectionner_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-collectionner_2018/guide.md) |
 | 2016 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — l’optique dans l’art occidental | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-loptique-dans-lart-occidental_2016/brut.md) | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-loptique-dans-lart-occidental_2016/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Histoire — le point de vue de l’historien | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-le-point-de-vue-de-lhistorien_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-le-point-de-vue-de-lhistorien_2018/guide.md) |
+| 2019 | ENS-PSL | Sélection internationale Lettres | Histoire — les figures de l’historien | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_histoire-les-figures-de-lhistorien_2019/brut.md) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_histoire-les-figures-de-lhistorien_2019/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Linguistique | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_linguistique_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_linguistique_2023/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Littérature — Assia Djebar | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar_2023/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Littérature — Frédérique Leichter-Flack | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-frederique-leichter-flack_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-frederique-leichter-flack_2023/guide.md) |
@@ -1016,6 +1026,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2011 | X-ENS | MP | Informatique A | [md](2011/x-ens/x-ens_mp_informatique-a_2011/brut.md) | [md](2011/x-ens/x-ens_mp_informatique-a_2011/guide.md) |
 | 2012 | X-ENS | MP | Informatique A | [md](2012/x-ens/x-ens_mp_informatique-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_informatique-a_2012/guide.md) |
 | 2013 | X-ENS | MP | Informatique A | [md](2013/x-ens/x-ens_mp_informatique-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_informatique-a_2013/guide.md) |
 | 2014 | X-ENS | MP | Informatique A | [md](2014/x-ens/x-ens_mp_informatique-a_2014/brut.md) | [md](2014/x-ens/x-ens_mp_informatique-a_2014/guide.md) |
@@ -1054,6 +1065,7 @@
 | 2015 | X-ENS | PC | Chimie A | [md](2015/x-ens/x-ens_pc_chimie-a_2015/brut.md) | [md](2015/x-ens/x-ens_pc_chimie-a_2015/guide.md) |
 | 2016 | X-ENS | PC | Chimie A | [md](2016/x-ens/x-ens_pc_chimie-a_2016/brut.md) | [md](2016/x-ens/x-ens_pc_chimie-a_2016/guide.md) |
 | 2017 | X-ENS | PC | Chimie A | [md](2017/x-ens/x-ens_pc_chimie-a_2017/brut.md) | [md](2017/x-ens/x-ens_pc_chimie-a_2017/guide.md) |
+| 2018 | X-ENS | PC | Chimie A | [md](2018/x-ens/x-ens_pc_chimie-a_2018/brut.md) | [md](2018/x-ens/x-ens_pc_chimie-a_2018/guide.md) |
 | 2020 | X-ENS | PC | Chimie A | [md](2020/x-ens/x-ens_pc_chimie-a_2020/brut.md) | [md](2020/x-ens/x-ens_pc_chimie-a_2020/guide.md) |
 | 2021 | X-ENS | PC | Chimie A | [md](2021/x-ens/x-ens_pc_chimie-a_2021/brut.md) | [md](2021/x-ens/x-ens_pc_chimie-a_2021/guide.md) |
 | 2022 | X-ENS | PC | Chimie A | [md](2022/x-ens/x-ens_pc_chimie-a_2022/brut.md) | [md](2022/x-ens/x-ens_pc_chimie-a_2022/guide.md) |

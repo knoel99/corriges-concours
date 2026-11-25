@@ -1,0 +1,77 @@
+{
+  "slug": "ens-psl_cnel-lettres_histoire-loperation-historique_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Histoire — l’opération historique",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire — l’opération historique",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-cnel2022.pdf",
+    "sujet_sha256": "d2ae5865e8d28197b4c6c7714dc02e1468b214037d23f924e1522edffbd0fced",
+    "references": [
+      "https://memo.parisnanterre.fr/publications/savoir-et-pouvoir-en-al-andalus-au-xie-siecle",
+      "https://press.jhu.edu/books/title/53948/cheese-and-worms",
+      "https://www.historians.org/perspectives-article/teaching-analytical-thinking-through-the-ahr-forum-and-the-return-of-martin-guerre/"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/histoire-cnel2022-v2.pdf",
+    "rapport_sha256": "241369d7c416d5bbd26b822acb3a3c702c32f9083f9ea886b7743863d43cd87d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/possibles.svg",
+      "question": "Dissertation",
+      "legende": "Trois affirmations à l’épreuve des traces"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Lecture du rapport départemental, spécialement des observations sur la relecture de sources connues, les contraintes méthodologiques et le choix de narrations.",
+      "modifications": false
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire historiographique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification de la portée du contexte andalou, de la fin de la citation, des critères de la périodisation et des degrés de certitude à propos de Bertrande. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}

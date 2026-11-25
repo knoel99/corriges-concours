@@ -1,0 +1,55 @@
+{
+  "slug": "x-ens_mp_informatique-a_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2011,
+    "duree_heures": 4
+  },
+  "questions": 29,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2011/2011%20MP%20SUJET%20ECRIT%20INFORMATIQUE%20A%20-4H-%20-XULC-%20.pdf",
+    "sujet_sha256": "c47578e1aa11aedf67f829c16befa4d8b373c3f0cea5dff70e9e3c6c35d6a50a",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2011/MP/ecrit-info-MP-%20XULC.pdf",
+    "rapport_sha256": "7fe41cc0bff3bdb2414cf7adb65bf7f7241eb062793ae205bb237d56de814e4d",
+    "fac_simile": "https://www.alloschool.com/assets/documents/course-269/x-ens-informatique-2011-mp-option-info-epreuve.pdf",
+    "identification": "Composition XULC A, sept pages. La transcription du cahier de la banque est identique à celle du fac-similé AlloSchool. Rapport des quatre correcteurs Bichot, Filliâtre, Leroux et Mahboubi."
+  },
+  "figures": [
+    {
+      "fichier": "figures/b4-et-c16.svg",
+      "question": "1",
+      "legende": "Arbre binomial B₄ avec les étiquettes des pères du sujet pour C₁₆. Les nœuds externes sont en ocre."
+    },
+    {
+      "fichier": "figures/milieu-diametre.svg",
+      "question": "16",
+      "legende": "Le sommet v rejoint le diamètre en u. La maximalité de d(a,b) borne la hauteur de cette branche des deux côtés."
+    },
+    {
+      "fichier": "figures/ordre-des-appels.svg",
+      "question": "20",
+      "legende": "Exemple où les branches demandent 4, 3, 1 et 0 étapes. Commencer par les branches longues donne une fin globale à l’étape 5."
+    },
+    {
+      "fichier": "figures/premiere-completion.svg",
+      "question": "26",
+      "legende": "Avant le premier échange complet, un message connu de u manque dans toute la composante de v, et réciproquement. Après cet appel, il doit encore s’y propager."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 29 questions sur l’original XULC et vérification au rapport des quatre correcteurs. Programmes OCaml sur les arbres, preuve du diamètre pour toutes les feuilles ex æquo, échange d’appels adjacents, borne universelle de durée par première complétion, borne de trafic par unicité d’une arête appelée une seule fois. Quatre figures originales."
+    }
+  ]
+}
