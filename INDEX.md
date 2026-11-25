@@ -660,7 +660,9 @@
 | 2017 | ENS | MP | Informatique-mathématiques | [md](2017/ens/ens_mp_informatique-mathematiques_2017/brut.md) | [md](2017/ens/ens_mp_informatique-mathematiques_2017/guide.md) |
 | 2018 | ENS | Cycle master mathématiques | Français et culture générale | [md](2018/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2018/brut.md) | [md](2018/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2018/guide.md) |
 | 2018 | ENS | MP | Informatique-mathématiques | [md](2018/ens/ens_mp_informatique-mathematiques_2018/brut.md) | [md](2018/ens/ens_mp_informatique-mathematiques_2018/guide.md) |
+| 2019 | ENS | Cycle master mathématiques | Français et culture générale | [md](2019/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2019/brut.md) | [md](2019/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2019/guide.md) |
 | 2019 | ENS | MP | Informatique-mathématiques | [md](2019/ens/ens_mp_informatique-mathematiques_2019/brut.md) | [md](2019/ens/ens_mp_informatique-mathematiques_2019/guide.md) |
+| 2020 | ENS | Cycle master mathématiques | Français et culture générale | [md](2020/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2020/brut.md) | [md](2020/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2020/guide.md) |
 | 2020 | ENS | MP | Informatique-mathématiques | [md](2020/ens/ens_mp_informatique-mathematiques_2020/brut.md) | [md](2020/ens/ens_mp_informatique-mathematiques_2020/guide.md) |
 | 2020 | ENS | MP | Maths C | [md](2020/ens/ens_mp_maths-c_2020/brut.md) | [md](2020/ens/ens_mp_maths-c_2020/guide.md) |
 | 2021 | ENS | MP | Maths C | [md](2021/ens/ens_mp_maths-c_2021/brut.md) | [md](2021/ens/ens_mp_maths-c_2021/guide.md) |
