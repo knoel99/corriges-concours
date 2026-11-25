@@ -1,0 +1,98 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-22-juin-commission-1_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 22 juin commission 1)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 22 juin commission 1)",
+  "questions": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_francais_tc_1_22_juin_al.pdf",
+    "sujet_sha256": "7e69eb6edc65efcb7e1edf29109e12076eff9149f29641676029c4b408bfe829",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/Sodome_et_Gomorrhe/Texte_entier",
+      "https://fr.wikisource.org/wiki/Le_Rouge_et_le_Noir/Texte_entier",
+      "https://catalogue.bnf.fr/ark:/12148/cb466330716",
+      "https://fr.wikisource.org/wiki/Alcools/La_Chanson_du_mal-aim%C3%A9",
+      "https://fr.wikisource.org/wiki/Le_Lys_dans_la_vall%C3%A9e",
+      "https://fr.wikisource.org/wiki/Les_R%C3%AAveries_du_promeneur_solitaire/Septi%C3%A8me_Promenade",
+      "https://www.dick.wursten.be/marot/marotpoems_dutch.html",
+      "https://web-facstaff.sas.upenn.edu/~cavitch/pdf-library/Ce%CC%81line_Voyage_au_bout_de_la_nuit.pdf",
+      "https://fr.wikisource.org/wiki/B%C3%A9r%C3%A9nice_(Racine,_%C3%A9ditions_Barbou,_1760)",
+      "https://fr.wikisource.org/wiki/La_Femme_de_trente_ans/Chapitre_6",
+      "https://fr.wikisource.org/wiki/Corneille,_Pierre_-_%C5%92uvres,_Marty-Laveaux,_1862,_tome_3/Horace/Acte_IV",
+      "https://jonas.irht.cnrs.fr/consulter/oeuvre/detail_oeuvre.php?oeuvre=24086"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/regards.svg",
+      "question": "1",
+      "legende": "De l’église peinte à la silhouette d’Albertine"
+    },
+    {
+      "fichier": "figures/paroles.svg",
+      "question": "11",
+      "legende": "Deux paroles politiques chez Racine et Corneille"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dix explications et dix reprises sur les onze références. Deux schémas, sur Proust et sur la parole au théâtre. La pièce XI de Lamartine reste à identifier dans le volume Garnier à la page 290."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des bornes dans les œuvres, dont le témoin universitaire de Céline, contrôle des vers 1278–1318, du témoignage éditorial de Stendhal et de la première personne du Lys dans la vallée. Repérage de la limite de pagination pour Lamartine."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_traitees": [
+      "1",
+      "2",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "questions_non_traitees": [
+      "3 — Lamartine, Méditations, XI, page 290 de l’édition Garnier : texte précis à identifier."
+    ],
+    "precision": "Dix œuvres expliquées sur onze, avec la variante de début du Rouge et le Noir et du Lys dans la vallée signalée dans les deux éditions."
+  }
+}

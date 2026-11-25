@@ -31,9 +31,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20D'ANGLAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "ae0f862202c4d6a421ba452caca87020c8631a8309028bc6c58e55480b5811fb"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -86,6 +87,17 @@
       "modifications": true,
       "perimetre": "Relecture du brut et du guidé sur George Monbiot ; métacognition et aptitudes transversales, illustration de l’argument sur l’empathie, distinction entre machine compliquée et système complexe, contrôle de l’essai.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Distinction des observations parentales et de la généralisation sur les examens, précision sur le comportement collectif des systèmes et le caractère interdisciplinaire du risque alimentaire, mise en relation de l’ouverture et de la responsabilité des adultes en clôture."
     }
   ]
 }

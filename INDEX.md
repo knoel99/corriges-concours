@@ -182,6 +182,7 @@
 | 2026 | BEL | AL | Français (oral option 26 juin) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral option 30 juin) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 19 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 22 juin commission 1) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-1_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-1_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 22 juin commission 2) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-2_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 23 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 24 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/guide.md) |
@@ -563,6 +564,7 @@
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
 | 2004 | ENS de Lyon | Second concours | Chimie | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_chimie_2004/brut.md) | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_chimie_2004/guide.md) |
+| 2006 | ENS de Lyon | Second concours | Chimie | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Chimie | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Chimie | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Chimie | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/guide.md) |
@@ -693,6 +695,14 @@
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
 | 1999 | ENS | Ulm-Lyon | Informatique | [md](1999/ens/ens_ulm-lyon_informatique_1999/brut.md) | [md](1999/ens/ens_ulm-lyon_informatique_1999/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 1) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 2) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-2_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-2_2019/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 3) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-3_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-3_2019/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 4) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-4_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-4_2019/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 5) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-5_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-5_2019/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 6) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-6_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-6_2019/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 7) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-7_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-7_2019/guide.md) |
+| 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 8) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-8_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-8_2019/guide.md) |
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique A) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/guide.md) |
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique B) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
@@ -971,7 +981,9 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2013 | X | PSI-PT | Informatique | [md](2013/x/x_psi-pt_informatique_2013/brut.md) | [md](2013/x/x_psi-pt_informatique_2013/guide.md) |
 | 2014 | X | PSI-PT | Informatique | [md](2014/x/x_psi-pt_informatique_2014/brut.md) | [md](2014/x/x_psi-pt_informatique_2014/guide.md) |
+| 2012 | X | PSI-PT | Informatique | [md](2012/x/x_psi-pt_informatique_2012/brut.md) | [md](2012/x/x_psi-pt_informatique_2012/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |
 | 2015 | X-ENS | PSI-PT | Informatique | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/brut.md) | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/guide.md) |
 | 2015 | X-ENS | PSI | Modélisation | [md](2015/x-ens/x-ens_psi_modelisation_2015/brut.md) | [md](2015/x-ens/x-ens_psi_modelisation_2015/guide.md) |

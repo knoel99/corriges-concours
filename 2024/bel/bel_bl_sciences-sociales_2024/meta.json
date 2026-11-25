@@ -38,9 +38,14 @@
       "fichier": "figures/ecarts-ages-avant-apres.svg",
       "question": "Analyse du dossier",
       "legende": "Comparer deux écarts entre classes d’âge. France métropolitaine, enquête Budget de famille 2000–2001, document 7."
+    },
+    {
+      "fichier": "figures/deux-modeles-entree-propriete.svg",
+      "question": "Partie II",
+      "legende": "Document 6, p. 9. Chaque coefficient porte sur le rythme d’entrée dans la propriété. La référence de chaque contraste vaut 1. Les quatre coefficients sont accompagnés de trois étoiles dans le tableau."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "modele_revision": "GPT-6.2 Astra Ultra (Codex)",
   "provenance": {
     "redaction": {
@@ -99,6 +104,19 @@
         "source": "https://github.com/knoel99/corriges-concours/pull/357",
         "attestation": "La session astra_lettres atteste avoir effectué cette relecture et ses retouches. Ses pièces de travail de 2024 comprennent le calcul des écarts normalisés 0,82 et 0,73 entre classes d’âge et le contrôle du champ des droits en ligne indirecte."
       }
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Revue du PDF distribué et des deux copies. Lecture des deux modèles de durée du document 6 et des quatre coefficients de la personne de référence. Distinction entre la part estimée susceptible d’acheter, la vitesse de transition et la probabilité cumulée. Ajout d’une figure et d’un calcul illustratif au guidé.",
+      "session": "astra_physique"
     }
   ]
 }

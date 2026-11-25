@@ -31,9 +31,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20ANGLAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "d296180ac8ca30fd3b82db60da9a6955993e110b118a839095d7c6f2e3c6ffdb"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -86,6 +87,17 @@
       "modifications": true,
       "perimetre": "Relecture des deux versions sur Hunt ; chiffres et dénominateurs de l’accession au logement, recettes successorales et distinction avec un héritage individuel, essai et longueurs.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Réintégration des deux enquêtes sur les transferts, comparaison des bases statistiques des pourcentages de propriété immobilière et restitution de la baisse en points."
     }
   ]
 }
