@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_espagnol_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Espagnol",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en espagnol de 245 et 245 mots. Adaptation climatique des villes, débat sur la laïcité en France, analyse d’un éditorial espagnol sur le vélo, argumentation personnelle sur la politique climatique.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-espagnol-d-e-2023_1682689432627-pdf",
+    "sujet_sha256": "166e41b2d3466392805293656aec34d3020344451be96a35718ec2b9e96c2dc8",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-e-crit-espagnol-d-e-2023_1698422123293-pdf",
+    "rapport_sha256": "a3aadf5489824aec2e471d5c4c818fee83f675fedc111c08c4e463b4fa0a3e6e"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/libertad-y-movilidad.svg",
+      "legende": "La comparación inicial cambia el punto de vista desde el que se juzga cada restricción."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des recommandations sur la visée argumentative du texte de Francisco Bastida, l’ironie et la nécessité de dépasser la mobilité dans la seconde question."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en espagnol de 245 et 245 mots. Adaptation climatique des villes, débat sur la laïcité en France, analyse d’un éditorial espagnol sur le vélo, argumentation personnelle sur la politique climatique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. ¿Cómo está presentado el tema de la transición climática en el artículo?",
+      "III.2. ¿En qué medida le parece a usted que es necesaria una nueva estrategia para luchar contra el cambio climático?"
+    ]
+  }
+}
