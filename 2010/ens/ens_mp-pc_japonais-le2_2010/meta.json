@@ -18,7 +18,8 @@
     "indexes": [
       "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
       "https://www.ens.psl.eu/en/node/825"
-    ]
+    ],
+    "reference_du_texte": "D’après le journal Asahi, 6 octobre 2007."
   },
   "figures": [
     {
@@ -40,6 +41,18 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Traduction intégrale de l’extrait de l’Asahi, dix paragraphes, synthèse japonaise sur les écovoitures, distinction entre émissions au roulage et à la production d’électricité."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Collation de la version avec la page 8 : données, comparaisons, projection à 2015, technologies exposées, date du salon et réponse de synthèse en japonais."
     }
   ],
   "couverture": {

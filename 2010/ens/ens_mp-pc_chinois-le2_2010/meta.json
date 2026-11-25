@@ -20,7 +20,8 @@
       "https://www.ens.psl.eu/en/node/825"
     ],
     "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-chinois-le2.pdf",
-    "sha256_rapport_jury": "975a865115ae36609e03f81260b92983ad1c3cee3f87f9518e8c162a440ddd5c"
+    "sha256_rapport_jury": "975a865115ae36609e03f81260b92983ad1c3cee3f87f9518e8c162a440ddd5c",
+    "reference_du_texte": "Le passage cite le volume 9 de la version abrégée chinoise de l’Encyclopédie britannique. Le fascicule ne donne pas de signature pour le texte de présentation."
   },
   "figures": [
     {
@@ -54,6 +55,18 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Version française de tout le passage, y compris la citation encyclopédique et le XIVe siècle, composition originale en chinois et travail guidé sur le mouvement, la comparaison et le registre."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Collation de la version avec la page 5 : citation, antériorité du jouet chinois et transmission au XIVe siècle. Vérification du caractère personnel et de la longueur de la rédaction chinoise."
     }
   ],
   "couverture": {
