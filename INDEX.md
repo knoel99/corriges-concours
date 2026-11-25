@@ -232,6 +232,8 @@
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition de philosophie (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2017/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition française (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2017/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuve de spécialité version grecque (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/guide.md) |
+| 2022 | ENS Rennes | D-E | Allemand | [md](2022/ens-rennes/ens-rennes_d-e_allemand_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_allemand_2022/guide.md) |
+| 2023 | ENS Rennes | D-E | Allemand | [md](2023/ens-rennes/ens-rennes_d-e_allemand_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_allemand_2023/guide.md) |
 | 2020 | ENS Rennes | D-E | Anglais | [md](2020/ens-rennes/ens-rennes_d-e_anglais_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_anglais_2020/guide.md) |
 | 2021 | ENS Rennes | D-E | Anglais | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Anglais | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/guide.md) |
