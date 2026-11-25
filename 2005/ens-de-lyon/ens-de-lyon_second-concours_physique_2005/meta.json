@@ -1,0 +1,94 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2005",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2005
+  },
+  "questions": 18,
+  "redaction": "Dix-huit questions du fascicule, y compris les trois profils de modes, les vecteurs des ondes planes, les deux angles d’acceptance et les performances numériques des deux capteurs.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2005/sujet-ecrit-2005-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "7b14041c0a3344b8f49ba5aabbd2b0511a2080b04faa2697a7c4e0252c02848c",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2005/rapport-2005-second-concours_ecrit_physique.pdf",
+    "rapport_sha256": "ad8593f40d025ad93e1f9accf1cf1d3f06db47c85be0c7524accd5ff25daaf80"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1.3",
+      "fichier": "figures/profils-transverses.svg",
+      "legende": "Densité d’énergie des trois premiers modes entre les parois. Chaque ventre atteint le même maximum pour l’amplitude fixée."
+    },
+    {
+      "numero": 2,
+      "question": "1.5",
+      "fichier": "figures/vitesses-et-coupure.svg",
+      "legende": "Branche propagative du premier mode. Le tracé de la vitesse de phase est coupé en haut à trois fois la célérité du milieu."
+    },
+    {
+      "numero": 3,
+      "question": "1.7",
+      "fichier": "figures/reflexion-des-vecteurs.svg",
+      "legende": "Les deux vecteurs d’onde ont des composantes longitudinales identiques et des composantes normales opposées."
+    },
+    {
+      "numero": 4,
+      "question": "3.1",
+      "fichier": "figures/frange-et-quadrature.svg",
+      "legende": "Le signal passe par sa valeur moyenne à pente maximale. Une frange brillante est au contraire localement plate."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de Marie-Christine Artru sur les fibres optiques. Le rapport précise le poids de la première partie et la difficulté rencontrée sur les questions numériques et le déphasage de Sagnac.",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Dix-huit questions du fascicule, y compris les trois profils de modes, les vecteurs des ondes planes, les deux angles d’acceptance et les performances numériques des deux capteurs.",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6"
+    ]
+  }
+}
