@@ -1,0 +1,60 @@
+{
+  "slug": "x-ens_mp-pc_arabe_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "intitule": "Mon oncle et une nouvelle morale de la frugalité",
+  "questions": 3,
+  "redaction": "Version intégrale de l’extrait d’Iman Younes Humaydan, deux réponses originales en arabe sur l’argent et la frugalité, explication des parentés et du point de vue narratif.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_version_xeulc.pdf#page=4",
+    "sha256_sujet": "0e95612d3a4fe0813b6dd6751b3c5a0300f37231ada228521cc6fd91a310392c",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2013",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_version_xeulc.pdf#page=4",
+        "sha256": "0e95612d3a4fe0813b6dd6751b3c5a0300f37231ada228521cc6fd91a310392c"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_expressionecrite_xeulc.pdf",
+        "sha256": "90b418bcca94b53f07c545a6c1cad740071b976e98078de58ea3509a11a3f1ca"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/parente.svg",
+      "legende": "Deux branches de la famille restituées par le vocabulaire arabe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale de l’extrait d’Iman Younes Humaydan, deux réponses originales en arabe sur l’argent et la frugalité, explication des parentés et du point de vue narratif."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
