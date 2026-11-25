@@ -1004,6 +1004,7 @@
 | 2010 | X | PSI-PT | Informatique | [md](2010/x/x_psi-pt_informatique_2010/brut.md) | [md](2010/x/x_psi-pt_informatique_2010/guide.md) |
 | 2005 | X | PSI-PT | Informatique | [md](2005/x/x_psi-pt_informatique_2005/brut.md) | [md](2005/x/x_psi-pt_informatique_2005/guide.md) |
 | 2006 | X | PSI-PT | Informatique | [md](2006/x/x_psi-pt_informatique_2006/brut.md) | [md](2006/x/x_psi-pt_informatique_2006/guide.md) |
+| 2007 | X | PSI-PT | Informatique | [md](2007/x/x_psi-pt_informatique_2007/brut.md) | [md](2007/x/x_psi-pt_informatique_2007/guide.md) |
 | 2008 | X | PSI-PT | Informatique | [md](2008/x/x_psi-pt_informatique_2008/brut.md) | [md](2008/x/x_psi-pt_informatique_2008/guide.md) |
 | 2003 | X | PSI-PT | Informatique facultative | [md](2003/x/x_psi-pt_informatique-facultative_2003/brut.md) | [md](2003/x/x_psi-pt_informatique-facultative_2003/guide.md) |
 | 2002 | X | PSI-PT | Informatique facultative | [md](2002/x/x_psi-pt_informatique-facultative_2002/brut.md) | [md](2002/x/x_psi-pt_informatique-facultative_2002/guide.md) |
