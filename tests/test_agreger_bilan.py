@@ -40,3 +40,16 @@ def test_refuse_de_recompter_un_sujet_commun():
     }
     with pytest.raises(ValueError, match="dupliqué"):
         module.agreger([ligne, ligne])
+
+
+def test_signatures_editoriales_conservent_les_attributions_successives():
+    entrees = [
+        {"phase": "redaction", "famille_modele": "GPT-6"},
+        {"phase": "lecture_rapport_jury", "modele": "autre"},
+        {"phase": "relecture_corrige", "modele": "gpt-6.2-astra", "effort": "ultra",
+         "vitesse": "ultrafast", "tour": 2, "session": "lecture", "date": "2026-11-25"},
+    ]
+    assert module.signatures_editoriales({"contributions": entrees}) == [
+        "Rédaction · famille GPT-6 · effort non renseigné · vitesse non renseignée · session non renseignée",
+        "Révision (tour 2) · GPT-6.2 Astra Ultra · vitesse ultrafast · session lecture · 2026-11-25",
+    ]

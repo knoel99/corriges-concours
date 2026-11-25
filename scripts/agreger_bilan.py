@@ -9,6 +9,43 @@ from collections.abc import Iterable
 from pathlib import Path
 
 
+def signatures_editoriales(meta: dict) -> list[str]:
+    """Signatures de rédaction et de révision dans l’ordre du journal source."""
+    phases = {"redaction": "Rédaction", "revision": "Révision", "relecture_corrige": "Révision"}
+    noms = {
+        "gpt-6.2-astra": "GPT-6.2 Astra", "gpt-6.2-sol": "GPT-6.2 Sol",
+        "claude-opus-5-5": "Claude Opus 5.5", "claude-opus-4-8": "Claude Opus 4.8",
+    }
+    signatures = []
+    for entree in meta.get("contributions", []):
+        role = phases.get(entree.get("phase"))
+        if not role:
+            continue
+        if entree.get("tour") is not None:
+            role += f" (tour {entree['tour']})"
+        modele = entree.get("modele")
+        if modele:
+            libelle = noms.get(modele.lower(), modele)
+        elif entree.get("famille_modele"):
+            libelle = "famille " + entree["famille_modele"]
+        else:
+            libelle = "modèle non renseigné"
+        effort = entree.get("effort")
+        if effort:
+            libelle += " " + (effort.capitalize() if libelle == "GPT-6.2 Astra" else effort)
+        vitesse = entree.get("vitesse")
+        elements = [role, libelle]
+        if not effort:
+            elements.append("effort non renseigné")
+        elements.append("vitesse " + vitesse if vitesse else "vitesse non renseignée")
+        auteurs = dict.fromkeys(entree[cle] for cle in ("agent", "session") if entree.get(cle))
+        elements.append("session " + " / ".join(auteurs) if auteurs else "session non renseignée")
+        if entree.get("date"):
+            elements.append(str(entree["date"]))
+        signatures.append(" · ".join(elements))
+    return signatures
+
+
 def agreger(lignes: Iterable[dict[str, str]]) -> dict[str, list[dict]]:
     groupes: dict[str, dict[str, dict]] = {"matieres": {}, "banques": {}}
     identifiants: set[str] = set()
