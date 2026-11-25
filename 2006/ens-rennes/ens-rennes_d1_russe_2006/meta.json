@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_russe_2006",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Russe",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2006-annales-d1_1423060020336-pdf#page=8",
+    "sha256_sujet": "4b67e1f37e613e3ed5ac38bcebfbf0133e96e763f6d150b1663ac23df319af93",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Ekspert, livraison du 12 au 18 septembre 2005",
+    "page": 8
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en russe"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en russe."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Expliquer pourquoi, à son avis, les Russes expriment davantage de confiance envers l’économie nationale dans cette enquête. Répondre en russe en 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/sondage.svg",
+      "legende": "Trois objets de comparaison dans le sondage de 2005"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en russe. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

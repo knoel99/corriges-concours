@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_italien_2006",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Italien",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2006-annales-d1_1423060020336-pdf#page=7",
+    "sha256_sujet": "4b67e1f37e613e3ed5ac38bcebfbf0133e96e763f6d150b1663ac23df319af93",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Giorgio Bocca, « Il disastro annunciato », La Repubblica.it, 8 janvier 2005",
+    "page": 7
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en italien"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en italien."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Présenter en italien, en 100 mots, le problème soulevé par l’article."
+  },
+  "figures": [
+    {
+      "fichier": "figures/chemins-de-fer.svg",
+      "legende": "Du défaut de matériel à la critique des budgets"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en italien. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
