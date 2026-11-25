@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-d_2014",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2014
+  },
+  "questions": 55,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_sujet_mathD_MP.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mp_rap_ecrit_mathD.pdf",
+    "sha256_sujet": "0d72dd035b8033dd4daf15b90a3db8ff4a8ae1345b0902f7c9b1cff9871663a7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycle-des-facteurs.svg",
+      "question": "V.4.a",
+      "legende": "Exemple à trois facteurs. Un tuple fixé est déterminé par sa dernière composante et la contrainte de retour après un tour."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète des deux éditions à partir du sujet d’Ulm et du rapport. Vérification des partitions, des sous-groupes maximaux, des conjugaisons et de la classification en dimension première. Contre-exemple à la condition de commutation stricte de V.4.c et preuve de V.6 indépendante de cette condition. Schéma original du transport cyclique entre facteurs.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
