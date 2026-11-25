@@ -1,0 +1,68 @@
+{
+  "slug": "x-ens_mp-pc-psi_allemand_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Allemand",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Après la chute du Mur, qui transmet les expériences de la RDA ?",
+  "questions": 2,
+  "redaction": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Après la chute du Mur, qui transmet les expériences de la RDA ?.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MPPC_sujet_All.pdf",
+    "sha256_sujet": "171bf3441aec28deb79e6a911adfa70a21aece322bd36141083529e44a447b26",
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2020/",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_MP_PC_rap_eAll-1.pdf",
+    "sha256_rapport_jury": "9d29bfb3b3ff15ca52e1c4ea08e7f3101b153921b426821f8d3ea84aa9bbc967",
+    "pages_sujet": 10,
+    "perimetre_sujet": "A1–A3 p. 3–8, image p. 9, B p. 10",
+    "precision_rapport": "La garde et le rapport concernent les filières MP, PC et PSI. La garde imprime le calendrier initial du 22 avril. L’avis rectificatif MP-PC et le tableau révisé de la banque PSI situent les langues le 24 juin 2020, de 14 h à 18 h.",
+    "calendrier_rectificatif_mp_pc": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000041939780",
+    "calendrier_rectificatif_psi": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/05/Coeffs_ENS_BqSc_2020_PSI.pdf",
+    "sha256_calendrier_rectificatif_psi": "3f777ee3561564cb9e84e6e9f5b59e491143ccd77495d592cf5731b97bc7ed49"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lieu-de-memoire.svg",
+      "legende": "La plaque berlinoise, les souvenirs familiaux et les connaissances scolaires dans le dossier A."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des 2 pages du rapport sur les deux productions, la langue et la lecture du dossier."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse allemande titrée des quatre pièces et réponse en allemand aux arguments de l’éditorial. Après la chute du Mur, qui transmet les expériences de la RDA ?."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}
