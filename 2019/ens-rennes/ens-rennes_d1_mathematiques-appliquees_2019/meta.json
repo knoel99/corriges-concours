@@ -1,0 +1,49 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2019",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2019
+  },
+  "questions": 51,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-e-preuve-a-option-d1-2019_1574759864908-pdf#page=3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-math-d1-2019_1571846340864-pdf",
+    "sha256_sujet": "967a163be64f066c69b9f5b3283ae4a5d6d69b1ec0ed81b6cee97ca064c70147",
+    "sha256_rapport_jury": "765d8cbeb17a63efc31bc0f6af77e132d6ef1846fa3e91c477f8504864d5fd0c",
+    "sha256_apercu_sujet": "ee76fc69186b10b7887499bff134278a01fa730a77ec9c539ea45b45f6df9bed",
+    "sha256_apercu_rapport_jury": "fed3109c9c42b423d83105d00d9f262833f7c846262aa50022e5fb15931fd586"
+  },
+  "figures": [
+    {
+      "fichier": "figures/histogramme-ages.svg",
+      "question": "1.1.b",
+      "legende": "Les largeurs sont les amplitudes réelles des classes. La classe la plus nombreuse possède un rectangle moins haut que la classe modale."
+    },
+    {
+      "fichier": "figures/regression-ventes.svg",
+      "question": "1.2.a",
+      "legende": "Les seize valeurs semestrielles et leur droite de régression. L’indice augmente plus rapidement dans les derniers semestres."
+    },
+    {
+      "fichier": "figures/courbes-et-tangentes.svg",
+      "question": "2.I.10",
+      "legende": "Les lignes pointillées horizontales passent par les minima de C2 et C3. Les tirets donnent les tangentes à C1 et C2 aux mêmes abscisses."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification intégrales des deux éditions sur les pages physiques 3 à 9 et le rapport de jury. Calculs statistiques sur les tableaux, distinction des temps continu et semestriel, pente corrigée en exercice 2.I.9 et trois graphiques demandés, puis vérification de toutes les probabilités.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
