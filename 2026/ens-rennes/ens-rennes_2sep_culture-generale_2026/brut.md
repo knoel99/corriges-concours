@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique** — Comment tenir ensemble l’objectivité d’une performance et l’histoire des conditions dans lesquelles elle a pu être produite, reconnue puis récompensée ?
 
 ## Introduction
@@ -25,6 +27,10 @@ La réussite sportive rend particulièrement tentante une explication par le don
 À ce raisonnement, on peut adresser une objection forte. Sur la dernière ligne droite, c’est le coureur qui doit encore produire l’effort, et deux sportifs ayant reçu des possibilités de pratique analogues n’obtiennent pas nécessairement le même résultat. La conclusion de Bertron et Vitores permet de répondre. Une explication sociologique doit montrer par quels mécanismes une organisation du temps et des possibilités d’entraînement modifie des corps capables de s’adapter. À l’échelle de plusieurs saisons, répéter des efforts d’endurance, bénéficier d’intervalles de récupération et continuer malgré un premier échec peuvent modifier les capacités de soutenir une allure. À l’échelle d’une séance, apprendre à distribuer son effort change la façon d’utiliser ces capacités. La physiologie renseigne sur les transformations possibles et leurs limites. L’enquête sur une carrière établit qui peut les solliciter, dans quelles conditions et durant combien de temps. Chacune apporte une partie de l’explication d’une seule et même performance.
 
 L’analyse vaut aussi pour les sensations par lesquelles le sujet se connaît. Dans son étude des techniques du corps, Marcel Mauss compare les manières apprises de nager. Au bord d’un bassin, un débutant peut avoir le sentiment que le placement de sa tête répond à un mouvement spontané. Un apprentissage progressif de l’expiration dans l’eau et de la rotation du corps lui permet pourtant de découvrir d’autres appuis. Plus le mouvement devient familier, moins il a besoin d’en distinguer consciemment les étapes. Ce qui paraît le plus « naturel » à l’observateur peut ainsi être le résultat le plus achevé de l’apprentissage. Encourager un élève en lui disant qu’il possède le don de nager paraît anodin, mais prive ses camarades d’une information décisive sur ce qu’il est possible d’apprendre. L’histoire sociale du corps change ici la manière d’enseigner un contenu technique concret.
+
+Le chronomètre rassemble ainsi les effets d’une histoire d’accès au bassin et d’un apprentissage du geste. Le résultat de l’épreuve peut ensuite produire une nouvelle différence : si les élèves les plus rapides accèdent seuls au groupe qui s’entraîne davantage, un premier classement modifie les possibilités d’obtenir le suivant. La mesure participe alors à l’histoire de la capacité qu’elle enregistre.
+
+![Figure 1 — Du bassin au chronomètre. Un écart observé après l’apprentissage ne permet pas, à lui seul, d’en identifier la cause.](figures/du-bassin-au-chronometre.svg)
 
 ## II. Qui décide quelles différences feront une catégorie ou un classement ?
 

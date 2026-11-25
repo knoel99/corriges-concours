@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Épreuve de 4 heures, sans calculatrice ni document. Thème 2025-2026 : « Expériences de la nature » ; œuvres au programme : Jules Verne, *Vingt mille lieues sous les mers* ; Georges Canguilhem, *La Connaissance de la vie* (extraits au programme) ; Marlen Haushofer, *Le Mur invisible*.
 
 Convention de décompte retenue : est compté comme un mot toute unité séparée des autres par une espace, un trait d'union ou une apostrophe d'élision (« l'imprévu » = 2 mots, « c'est-à-dire » = 4 mots, « aujourd'hui » = 1 mot).
@@ -38,7 +40,11 @@ Surtout, cet ordre a un prix, que les deux romans font payer. Nemo refuse que Ne
 
 Reste la troisième proposition, et c'est elle que les œuvres valident, mais en la déplaçant. Canguilhem lui donne un fondement dans « La monstruosité et le monstrueux » : la monstruosité, non la mort, est la contre-valeur vitale, car elle révèle que la forme normale était une réussite et non une nécessité ; et si le fantastique est un monde, la vie, elle, est pauvre en monstres. « Machine et organisme » complète l'analyse : la machine exécute un plan qui lui vient du dehors, tandis que l'organisme, polyvalent, improvise et répare. Il n'y a donc de réussite et d'échec, de normal et de monstrueux, que pour le vivant. La formule de Feertchak ne décrit pas un fait de la nature : elle énonce une propriété du vivant comme tel, être de valeur qui ne peut être compté pour rien sans que l'on manque ce qu'il est.
 
-Haushofer en donne l'image la plus juste avec la corneille blanche. Rejetée par les siennes, sans fonction dans aucune économie naturelle, elle ne sert à rien ; la narratrice la nourrit pourtant chaque jour. L'oiseau n'est pas significatif en soi : l'attention le rend tel. De même, la fin du récit, où un inconnu tue à coups de hache le taureau puis Lynx avant d'être abattu par la narratrice, est insoutenable parce que ces vies-là n'étaient pas interchangeables ; c'est le lien tissé, non l'ordre du monde, qui interdit de les tenir pour rien. Le récit lui-même, écrit pour personne, est l'acte par lequel elle arrache à l'oubli ce que nul ne viendra compter.
+Haushofer en donne l'image la plus juste avec la corneille blanche. La narratrice observe qu’elle reste à l’écart des autres corneilles et lui laisse de la nourriture. Elle peut décrire cet isolement sans prétendre connaître la fonction de l’oiseau dans tout son milieu. L'oiseau n'est pas significatif en soi : l'attention le rend tel. De même, la fin du récit, où un inconnu tue à coups de hache le taureau puis Lynx avant d'être abattu par la narratrice, est insoutenable parce que ces vies-là n'étaient pas interchangeables ; c'est le lien tissé, non l'ordre du monde, qui interdit de les tenir pour rien. Le récit lui-même, écrit pour personne, est l'acte par lequel elle arrache à l'oubli ce que nul ne viendra compter.
+
+La blancheur de l’oiseau n’a pas le même effet pour tous ceux qui la perçoivent. Elle distingue un individu dans le groupe, attire l’attention de la narratrice et permet au lecteur de rapprocher deux formes de solitude. Le lecteur peut former cette analogie parce que le récit associe des observations successives, tout en laissant ouverte l’expérience propre de l’oiseau.
+
+![Figure 1 — La corneille blanche de Haushofer](figures/lecture-du-sujet.svg)
 
 La corneille blanche permet de rendre toute sa rigueur au « rien de vivant n’est insignifiant » de Feertchak. Le plumage qui attire l’attention de la narratrice expose l’oiseau dans le groupe de ses semblables. Pour le lecteur, cette singularité donne au récit une figure de la solitude ; pour l’oiseau, elle affecte une possibilité de vivre avec les siens. Aucun point de vue unique ne transforme ces deux sens en harmonie. Il revient à la narratrice de reconnaître une vie qui compte aussi lorsqu’elle trouble l’ordre qu’on aurait voulu célébrer.
 

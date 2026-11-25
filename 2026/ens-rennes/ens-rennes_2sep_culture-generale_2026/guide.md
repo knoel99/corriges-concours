@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 Le commentaire de culture générale de l’ENS Rennes dure quatre heures. Il porte sur un extrait de 2019 de Caroline Bertron et Julien Vitores, paru dans la revue *Genèses*. L’épreuve demande de le commenter à partir des activités physiques, sportives **et artistiques**. On peut mener toute la démonstration à partir de quelques exemples dont on fait varier les échelles et les points de vue. [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-cgaps-2sep-2026_1791303234845-pdf) · [Rapport de jury 2026](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-cgaps-2026_1791304664652-pdf)
@@ -46,6 +48,8 @@ Comment tenir ensemble l’objectivité d’une performance et l’histoire des 
 Le travail de Manuel Schotté sur les coureurs marocains fait comprendre ce que masque un palmarès. Il faut reconstituer les recrutements, les carrières possibles et le temps de pratique, puis se demander ce que cet entraînement change dans la capacité de soutenir une allure. Chez Mauss, la natation permet de passer à une autre échelle, celle d’un geste appris qui devient familier. L’accès au bassin, les corrections successives et l’aisance observable appartiennent à une même explication.
 
 ![Figure 1 — Du bassin au chronomètre. Un écart observé après l’apprentissage ne permet pas, à lui seul, d’en identifier la cause.](figures/du-bassin-au-chronometre.svg)
+
+Pour mettre cette boucle à l’épreuve, relevez les créneaux de pratique avant le test puis les heures effectivement proposées à chaque groupe après le classement. Comparez les progressions en tenant compte du niveau de départ des élèves.
 
 ### II. Choisir les différences pertinentes pour une activité
 

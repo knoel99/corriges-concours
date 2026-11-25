@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le fascicule officiel compte 69 pages. Il comprend vingt-trois textes de trois pages, numérotés de 1 à 22, puis 25. Le candidat dispose de dix minutes au maximum pour construire une réflexion personnelle et critique à partir du texte attribué. Chaque numéro propose ici un argument défendable, une application et une limite à discuter.
 
 ## 1. Enquêter sur les carrières des hauts fonctionnaires
@@ -17,6 +19,10 @@ J’examinerais les trois décisions successives de se porter candidat, d’êtr
 ## 2. Mesurer les inégalités professionnelles
 
 **Une politique peut atteindre son quota et laisser subsister un écart considérable.** La loi Sauvadet de 2012 porte ici sur les premières nominations. Le bilan des personnes en poste reflète plusieurs années d’entrées et de sorties. Supposons 20 directions, dont 4 occupées par des femmes. Deux hommes partent et une femme et un homme les remplacent. La moitié du recrutement est féminine, mais la proportion en poste passe seulement de 20 à 25 %. Il faudrait aussi observer qui quitte ces emplois et au bout de combien de temps.
+
+Une seconde année de recrutement paritaire ne suffit pas à prévoir l’effectif final. Si une femme et un homme quittent leurs fonctions et sont remplacés par une femme et un homme, la proportion demeure cinq sur vingt. La politique des nominations et les conditions de maintien dans les postes peuvent donc faire l’objet de deux enquêtes complémentaires.
+
+![Figure 1 — Un recrutement paritaire dans vingt directions](figures/nominations.svg)
 
 Marion Demonteil rappelle que les femmes représentent 64 % des agents publics et que l’écart de rémunération brute en équivalent temps plein atteignait 12 % dans la fonction publique de l’État en 2021. Le premier chiffre porte sur l’ensemble de la fonction publique, le second sur un de ses versants. Une rémunération en équivalent temps plein neutralise la durée rémunérée au moment de la mesure, mais une carrière antérieure à temps partiel peut avoir pesé sur les promotions. Je publierais des séries sur les candidatures et les durées dans chaque grade, accompagnées d’entretiens sur les choix de mobilité. Le quota rend l’organisation comptable de ses nominations. Il devient trompeur si sa réussite dispense d’examiner le reste.
 

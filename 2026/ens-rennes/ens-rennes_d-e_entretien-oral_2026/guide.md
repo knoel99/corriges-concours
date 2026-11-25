@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le fascicule officiel compte 69 pages. Il comprend vingt-trois textes de trois pages, numérotés de 1 à 22, puis 25. Le candidat dispose de dix minutes au maximum pour construire une réflexion personnelle et critique à partir du texte attribué. Chaque numéro propose ici un argument défendable, une application et une limite à discuter.
 
 Pour préparer un passage, situer en une minute la question de l’auteur. Consacrer environ trois minutes à l’argument du texte, trois à l’exemple choisi et deux à une objection suivie de la réponse que l’on souhaite défendre. Conclure brièvement et garder une marge pour les transitions. Les encadrés proposent des relances pour éprouver le raisonnement. Les numéros renvoient directement aux pages du fascicule.
@@ -30,6 +32,8 @@ Sa définition de la réussite renseigne sur ce qu’elle valorise. Elle permet 
 Marion Demonteil rappelle que les femmes représentent 64 % des agents publics et que l’écart de rémunération brute en équivalent temps plein atteignait 12 % dans la fonction publique de l’État en 2021. Le premier chiffre porte sur l’ensemble de la fonction publique, le second sur un de ses versants. Une rémunération en équivalent temps plein neutralise la durée rémunérée au moment de la mesure, mais une carrière antérieure à temps partiel peut avoir pesé sur les promotions. Je publierais des séries sur les candidatures et les durées dans chaque grade, accompagnées d’entretiens sur les choix de mobilité. Le quota rend l’organisation comptable de ses nominations. Il devient trompeur si sa réussite dispense d’examiner le reste.
 
 ![Un recrutement paritaire dans vingt directions](figures/nominations.svg)
+
+Faites varier seulement le sexe des deux personnes sortantes. En partant de cinq femmes parmi vingt titulaires, deux sorties masculines suivies d’un recrutement paritaire portent leur nombre à six. Une sortie féminine et une masculine maintiennent ce nombre à cinq.
 
 > [!INDICATION]
 > Une hausse de la part des femmes à la direction prouve-t-elle un effet de la loi  ?
