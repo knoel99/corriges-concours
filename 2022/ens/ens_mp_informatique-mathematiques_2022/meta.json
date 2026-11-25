@@ -1,0 +1,41 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2022",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2022
+  },
+  "questions": 59,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/09/22_mp_sujet_InfoMath.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/12/22_mp_rap_eInfoMath.pdf",
+    "sha256_sujet": "d7df2fd75e13c57fb5a213445880d62e979e1dae4d2bf09cf3cd557b2629db3d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycles-deux-et-trois.svg",
+      "question": "3.11",
+      "legende": "Les six couples visités relient chacun des deux états du premier cycle à chacun des trois états du second."
+    },
+    {
+      "fichier": "figures/raffinements-successifs.svg",
+      "question": "4.5",
+      "legende": "Les classes de la partition se séparent en trois étapes, puis la quatrième partition se reproduit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet intégral et du rapport. 51 questions principales, 59 réponses en comptant les sous-questions. Lecture des graphes, traçage des files, preuves des invariants, rectification de trois énoncés, raffinement et quotient. Contrôle par comparaison de trois parcours de couples avec un raffinement indépendant et deux schémas originaux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
