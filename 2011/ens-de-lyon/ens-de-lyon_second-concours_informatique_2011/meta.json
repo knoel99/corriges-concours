@@ -1,0 +1,53 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2011",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2011,
+    "duree_heures": 3
+  },
+  "questions": 32,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2011/sujet_ecrit_2c2011_informatique.pdf",
+    "sujet_sha256": "e1b43506036a273f77319103af741e35610679d44081e592d6dce859318b2161",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "identification": "Garde du second concours ENS Lyon, session 2011, épreuve d’informatique de trois heures. Neuf pages numérotées après la garde. La ligne de la banque pour l’informatique 2011 ne relie pas le libellé de rapport écrit à un document."
+  },
+  "figures": [
+    {
+      "fichier": "figures/files-croissantes.svg",
+      "question": "6",
+      "legende": "Répartition possible de la séquence de neuf termes. Les têtes sont à gauche. La sortie choisit chaque fois la plus petite tête restante."
+    },
+    {
+      "fichier": "figures/cycle-induit.svg",
+      "question": "21",
+      "legende": "Les quatre arêtes colorées forment le cycle induit de la figure 5. Les deux diagonales apparentes passent chacune par le sommet f."
+    },
+    {
+      "fichier": "figures/chemins-et-separateurs.svg",
+      "question": "23",
+      "legende": "Trois chemins intérieurement disjoints entre a et d dans la figure 7. Les arêtes supplémentaires de H sont conservées en gris."
+    },
+    {
+      "fichier": "figures/separateurs-emboites.svg",
+      "question": "24",
+      "legende": "La feuille z peut être isolée par x seul. Pour séparer a et b il faut retirer x et y."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 32 questions depuis l’original du second concours, lecture des figures 5 et 7, tri optimal normal avec dichotomie et fusion, exemple de permutation simple, graphe sans triangle 4-chromatique, certification des séparateurs et récurrence renforcée de l’ordre simplicial. Quatre figures originales."
+    }
+  ]
+}
