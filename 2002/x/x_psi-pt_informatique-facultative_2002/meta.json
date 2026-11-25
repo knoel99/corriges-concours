@@ -1,0 +1,48 @@
+{
+  "slug": "x_psi-pt_informatique-facultative_2002",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique facultative",
+    "annee": 2002,
+    "duree_heures": 2
+  },
+  "questions": 6,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2002.pdf",
+    "sujet_sha256": "fb1334305ceae6099114206ac48672e738d52d6da4af9fab229b4bba16524552",
+    "rapport": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2002.pdf#page=3",
+    "rapport_sha256": "fb1334305ceae6099114206ac48672e738d52d6da4af9fab229b4bba16524552"
+  },
+  "figures": [
+    {
+      "fichier": "figures/duree-et-indices.svg",
+      "question": "3",
+      "legende": "Les trois premières observations de 4 keV s’étendent de la date 0 à la date 7. Le dernier retour à 4 keV ne prolonge pas ce bloc initial."
+    },
+    {
+      "fichier": "figures/quatre-zones.svg",
+      "question": "5",
+      "legende": "Les trois bornes séparent deux préfixes reconnus, une zone inconnue et le suffixe des autres énergies. La zone inconnue perd une case à chaque tour."
+    },
+    {
+      "fichier": "figures/ordre-des-dates.svg",
+      "question": "6",
+      "legende": "Chaque case contient une énergie et sa date. Dans le groupe des mesures de 20 keV, les dates 6 et 5 se retrouvent en ordre décroissant."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des six questions avec lecture du sujet scanné p. 1–2 et du rapport de Marc Pouzet p. 3–6. Vérification exhaustive sur 9 840 séries à trois énergies et de longueur 1 à 8, contrôle des cas constants, des ex æquo et de la conservation des dates. Trois illustrations originales."
+    }
+  ]
+}

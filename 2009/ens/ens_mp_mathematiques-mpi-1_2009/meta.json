@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-1_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 1",
+    "annee": 2009
+  },
+  "questions": 71,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_math_mpi1.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mp2009_ecrit_Math1.pdf",
+    "sha256_sujet": "0d65e270552fef2909d3b255a85db7b20490ec7e2018fe36e59221e5df4f62e1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/progression-propre.svg",
+      "question": "IV.3",
+      "legende": "Une boîte à deux directions. Pour 0 ≤ i ≤ 3 et 0 ≤ j ≤ 2, les douze entiers i + 5j sont distincts. La taille de la boîte coïncide ici avec le cardinal de la progression."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des cinq parties et des deux éditions, d’après les dix pages scannées et le rapport. Contrôle des trois errata officiels, des grandes densités, de la majoration de taille en V.5.c (contre-exemple par sommes de puissances de deux) et du cas singleton. Démonstration du théorème final avec les bornes réparées, illustration d’une progression propre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

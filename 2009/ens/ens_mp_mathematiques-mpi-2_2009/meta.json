@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-2_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 2",
+    "annee": 2009
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_math_mpi2.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mp2009_ecri_mathmpi2.pdf",
+    "sha256_sujet": "e5f81c8746d7baa6906e85381a3a774d999c54e75ed2791d5347904558241356"
+  },
+  "figures": [
+    {
+      "fichier": "figures/penalite-majorante.svg",
+      "question": "4.3.b",
+      "legende": "Chaque pénalité scalaire admet une majorante quadratique tangente au point courant. Ici le point courant vaut 1 et le paramètre de lissage vaut 0,4."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des cinq parties des deux éditions après lecture des huit pages imprimées et du rapport du jury. Condition de pas strictement positif, convergence par les valeurs d’adhérence, forme exacte de la majoration quadratique, preuve par projection de l’égalité minimax. Tracé comparé de la pénalité et de sa majorante.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
