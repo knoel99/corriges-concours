@@ -8,11 +8,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Préparer une dissertation avec le Code civil
 
 Le sujet autorise un Code civil non annoté et non indexé par le candidat. Le sujet tient en cinq mots. Construire néanmoins le devoir en posant trois questions à chaque article mobilisé. Qui demande quoi ? Quel écart économique doit-il démontrer ? À quelle date la chose est-elle évaluée ?
 
 ![Figure 1 — Quel rôle la valeur joue-t-elle ?](figures/fonctions-valeur.svg)
+
+Posez V pour la valeur de l’immeuble et P pour le prix reçu. La condition chiffrée s’écrit $(V-P)/V>7/12$, soit $P<5V/12$. Pour V égal à 240 000 euros, l’inégalité stricte exclut le prix de 100 000 euros. Cette vérification précède l’examen du délai et des autres conditions de l’action.
 
 **Faire travailler deux nombres.** Devant un immeuble valant 240 000 €, placer les prix de 90 000 € et de 100 000 € de part et d’autre de la condition stricte de l’article 1674. Dans un autre paragraphe, faire évoluer la valeur de l’objet entre la vente annulée et la restitution. Le premier exemple évalue une lésion à la vente, le second chiffre l’équivalent dû à un autre moment.
 

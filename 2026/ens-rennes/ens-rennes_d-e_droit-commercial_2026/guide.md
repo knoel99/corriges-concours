@@ -8,11 +8,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reconstituer les deux conventions
 
 Sur une feuille, placer la propriétaire, la société et l’exploitant. Attribuer une date et un objet à chaque relation. Dans le raisonnement de Rouen, souligner l’opération qui ferait naître une obligation directe d’exploiter au profit de la propriétaire. Examiner ensuite si le texte du Code civil opère le renvoi dans ce sens.
 
 ![Figure 1 — Les deux transmissions de jouissance](figures/deux-conventions.svg)
+
+Inscrivez sous chaque convention ses parties, sa date et la prestation transmise. Tracez ensuite séparément la demande de Mme Y. La personne à laquelle le fonds a été remis en 1982 et celle qui a reçu l’apport en 1970 occupent des positions contractuelles distinctes.
 
 **Une difficulté réelle du texte.** L’article 1843-3 contient à la fois une règle de garantie et une règle relative aux biens renouvelables. La première permet d’expliquer simplement la cassation. La seconde offre une discussion sur le sort de certains éléments du fonds. Le rapport de 2026 accepte la discussion de ces lectures et souligne les confusions entre le fonds et le local. La rédaction doit marquer où s’arrête l’énoncé de la décision et où commence l’interprétation.
 

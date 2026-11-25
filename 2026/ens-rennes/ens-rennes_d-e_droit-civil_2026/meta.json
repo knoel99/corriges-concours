@@ -33,7 +33,7 @@
       "legende": "Quel rôle la valeur joue-t-elle ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -70,6 +70,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Lecture visuelle de la page R 26-331, confrontation du libellé à l’énoncé et au rapport et vérification des dates d’évaluation, du seuil strict et des règles de restitution."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation au sujet et au rapport de droit civil. Calcul du seuil strict de la lésion immobilière en proportion de la valeur de référence, puis traduction algébrique dans le guidé."
     }
   ]
 }

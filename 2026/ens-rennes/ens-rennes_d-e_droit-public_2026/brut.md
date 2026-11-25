@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## La protection du patrimoine archéologique par la police générale
 
 La police de l’archéologie autorise ou refuse des recherches. Un rassemblement de loisir peut pourtant présenter un risque pour des vestiges que ses organisateurs n’avaient pas pour objet de rechercher. Par sa décision du 30 septembre 2025, Société La Boutique du Fouilleur et autre, le Conseil d’État précise l’autorité qui peut prévenir ce risque et les conditions de son intervention.
@@ -23,6 +25,10 @@ En l’espèce, l’événement annoncé consistait à retrouver notamment des o
 **B. La police générale conserve une fonction préventive territoriale.** L’article L. 2215-1 du Code général des collectivités territoriales organise notamment la compétence du préfet de département pour les mesures dont le champ excède une commune. Le Conseil d’État indique que le maire ou le préfet de département, selon le cas, peut prévenir des excavations menaçant le patrimoine en raison de leur localisation et éviter la commission d’infractions relatives aux fouilles. Prévenir de tels faits relève ici de la police administrative. L’arrêt n’attribue pas au préfet de département la sanction d’infractions déjà commises.
 
 L’existence d’une police spéciale ne détermine donc pas, à elle seule, une exclusivité en tous points. Il faut identifier le domaine que le législateur a organisé et ce que fait concrètement l’autorité de police générale. Le juge rattache la prévention des atteintes au patrimoine dans ces circonstances à la mission de sûreté. Il serait excessif d’en tirer que le préfet peut substituer son appréciation à celle du préfet de région lorsqu’une véritable demande d’autorisation lui est soumise.
+
+Un même détecteur intervient ainsi dans deux décisions administratives différentes. La demande visant à rechercher des objets présentant un intérêt archéologique appelle une décision sur la finalité des recherches. L’arrêté attaqué règle, pour la durée d’un rallye, un usage collectif susceptible de porter atteinte au patrimoine. Pour en contrôler la légalité, le juge doit encore examiner le territoire touché, les informations dont disposait l’autorité et la durée de la restriction.
+
+![Figure 1 — Deux polices, deux objets de décision](figures/polices-archeologie.svg)
 
 ### II. Une interdiction réglementaire dont le juge vérifie le fondement et la mesure
 

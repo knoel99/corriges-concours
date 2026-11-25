@@ -31,7 +31,7 @@
       "legende": "Deux polices, deux objets de décision"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "redaction",
@@ -56,6 +56,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Lecture des pages physiques 3 et 4, confrontation à la décision 491285 et vérification des acteurs, dates, moyens et dispositif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse de la décision n° 491285 reproduite dans le fascicule des options, pages physiques 3 et 4. Comparaison de la finalité des recherches et du risque particulier du rallye dans les deux éditions."
     }
   ]
 }

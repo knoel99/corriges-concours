@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Lire les sept points de la décision
 
 Le premier point contient les faits et la procédure. Le deuxième qualifie l’acte. Le troisième explique pourquoi la cour a pu retenir un fondement débattu en appel. Les quatrième et cinquième énoncent puis articulent les textes de police. Le sixième contrôle la proportionnalité concrète. Le septième tire les conséquences du rejet. Cette lecture évite de reconstruire l’affaire comme un refus individuel d’autorisation de fouilles.
 
 ![Figure 1 — Deux polices, deux objets de décision](figures/polices-archeologie.svg)
+
+Faites varier la demande. Une personne qui veut prospecter un site à des fins archéologiques sollicite l’autorité de police spéciale. Un événement dont le parcours demeure inconnu soulève une autre question, celle de la prévention du risque par l’autorité territorialement compétente. Une réponse correcte identifie pour chaque décision son objet et son fondement.
 
 **Deux emplois du mot général.** « Acte réglementaire » répond à la question des destinataires de la norme. « Interdiction générale et absolue » caractériserait une restriction trop large dans son objet ou ses effets. Un acte peut avoir des destinataires impersonnels et toutefois ne viser qu’un usage, pendant deux jours, à l’occasion d’un seul événement.
 

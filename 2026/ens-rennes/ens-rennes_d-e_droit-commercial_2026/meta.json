@@ -33,7 +33,7 @@
       "legende": "Les deux transmissions de jouissance"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -70,6 +70,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification visuelle de la page 2 et de la note, confrontation à la décision officielle, au visa et au renvoi à Caen."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la décision du 3 décembre 1991, du sujet commercial p. 2 et du rapport. Distinction entre la circulation de la jouissance et le sens de la garantie invoquée pour obtenir restitution."
     }
   ]
 }
