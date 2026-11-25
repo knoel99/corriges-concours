@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-paris-cachan_2004",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques Paris-Cachan",
+    "annee": 2004
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2004/sujet-2004-ecrit-mp_mathematiques_cachan_paris.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2004/rapport-2004-mp_ecrit_mathematiques_cachan_paris.pdf",
+    "sha256_sujet": "6509c1ab83431fd896ee1c2bb22218947f5673d2d27b262c2c608c69a4d445f7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/triangle-et-sommes-partielles.svg",
+      "question": "I.4",
+      "legende": "Les harmoniques impaires reconstituent le triangle périodique. Les sommes partielles sont lisses et la limite conserve un angle en zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction sur l’original et le rapport. Coefficients du triangle, norme exacte des translations de fréquences, contrôles des permutations de sommes et du facteur de normalisation en III.3.1, passage des données continues aux approximations elliptiques. Graphique des sommes de Fourier.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
