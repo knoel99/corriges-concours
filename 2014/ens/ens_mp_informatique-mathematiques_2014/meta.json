@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2014",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2014,
+    "duree_heures": 4
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mp_suj_infomath.pdf",
+    "sujet_sha256": "c13370695161518a4766719758fb1b02bf7708850fc4616a41cb7286b2d87b7c",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2014/MPI/14_mpi_rap_ecrit_mathinfo.pdf",
+    "rapport_sha256": "db5f8c1fa4358244f4329db00e30e4caa8c8445f5d82a5866db1d85397d405c4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arcs-et-alternance.svg",
+      "question": "3",
+      "legende": "Un arc réalise chaque paire parmi trois points. Sur quatre points dans l’ordre cyclique, un arc qui contient les deux points pleins contient aussi au moins un point blanc."
+    },
+    {
+      "fichier": "figures/paires-de-compression.svg",
+      "question": "5",
+      "legende": "Chaque paire de colonnes montre une configuration avant puis après compression. Une arête haute isolée est déplacée en bas. Le nombre de points pleins est conservé dans chaque paire."
+    },
+    {
+      "fichier": "figures/partition-de-radon.svg",
+      "question": "11",
+      "legende": "Pour un quadrilatère convexe, la partition en paires de sommets opposés a des enveloppes qui se rencontrent au croisement des diagonales."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 16 questions et subdivisions d’après le sujet et le rapport institutionnels. Contrôle de la dimension décalée, des compressions et des restrictions sur les 65 812 hypergraphes de un à quatre sommets. Preuve uniforme de la terminaison touchant aussi les témoins de taille un et deux. Trois dessins originaux."
+    }
+  ]
+}

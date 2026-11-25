@@ -182,6 +182,8 @@
 | 2026 | BEL | AL | Français (oral option 26 juin) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral option 30 juin) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 19 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 22 juin commission 2) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-22-juin-commission-2_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 23 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 24 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 26 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 29 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/guide.md) |
@@ -569,6 +571,7 @@
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
 | 2005 | ENS de Lyon | Second concours | Géosciences | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2005/guide.md) |
+| 2006 | ENS de Lyon | Second concours | Géosciences | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2006/guide.md) |
 | 2007 | ENS de Lyon | Second concours | Géosciences | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/brut.md) | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/guide.md) |
 | 2008 | ENS de Lyon | Second concours | Géosciences | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Géosciences | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/guide.md) |
@@ -577,6 +580,7 @@
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
+| 2014 | ENS de Lyon | Second concours | Informatique | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Informatique | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_informatique_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_informatique_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Informatique | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/guide.md) |
 | 2017 | ENS de Lyon | Second concours | Informatique | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_informatique_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_informatique_2017/guide.md) |
@@ -643,6 +647,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2014 | ENS | MP | Informatique-mathématiques | [md](2014/ens/ens_mp_informatique-mathematiques_2014/brut.md) | [md](2014/ens/ens_mp_informatique-mathematiques_2014/guide.md) |
 | 2015 | ENS | MP | Informatique-mathématiques | [md](2015/ens/ens_mp_informatique-mathematiques_2015/brut.md) | [md](2015/ens/ens_mp_informatique-mathematiques_2015/guide.md) |
 | 2016 | ENS | MP | Informatique-mathématiques | [md](2016/ens/ens_mp_informatique-mathematiques_2016/brut.md) | [md](2016/ens/ens_mp_informatique-mathematiques_2016/guide.md) |
 | 2017 | ENS | MP | Informatique-mathématiques | [md](2017/ens/ens_mp_informatique-mathematiques_2017/brut.md) | [md](2017/ens/ens_mp_informatique-mathematiques_2017/guide.md) |

@@ -1,0 +1,78 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-23-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 23 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 23 juin)",
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/francais_2_sujets_jury23_juin.pdf",
+    "sujet_sha256": "7a4ed5515dbdb1c2e89f1915fac9244cd5b236f03d34b478f0cdff61273589ea",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/Lucien_Leuwen_(ed._Martineau)/Chapitres_2_%C3%A0_10",
+      "https://fr.wikisource.org/wiki/Le_Savetier_et_le_Financier",
+      "https://fr.wikisource.org/wiki/L%E2%80%99Adolescence_Cl%C3%A9mentine/Complainctes",
+      "https://fr.wikisource.org/wiki/Le_Paysan_parvenu",
+      "https://fr.wikisource.org/wiki/Le_Misanthrope/Acte_I",
+      "https://excerpts.numilog.com/books/9782707301482.pdf",
+      "https://fr.wikisource.org/wiki/Julie_ou_la_Nouvelle_H%C3%A9lo%C3%AFse/Premi%C3%A8re_partie",
+      "https://fr.wikisource.org/wiki/Cyrano_de_Bergerac_(Rostand)/Acte_III",
+      "https://fr.wikisource.org/wiki/L%E2%80%99Avare_(Moli%C3%A8re)/%C3%89dition_Louandre,_1910/Acte_I",
+      "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=miami1563891435485933&disposition=inline",
+      "https://pdfs.semanticscholar.org/85bb/de7bcb7b67c38d0ce874777f0c91ef008a9f.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/savetier.svg",
+      "question": "2",
+      "legende": "La valeur du sommeil dans la fable du savetier"
+    },
+    {
+      "fichier": "figures/balcon.svg",
+      "question": "8",
+      "legende": "Rostand partage un rôle entre deux hommes"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dix explications littéraires, dix réponses de reprise, deux schémas sur le savetier et la scène du balcon. Les douze occurrences imprimées comprennent deux doublons."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Collation des extraits avec les témoins des œuvres, du second appel à Gogo page 13 chez Minuit, des deux citations françaises de la fin des Années selon les témoins universitaires, des doublons Molière et Ernaux et des pratiques indiquées au rapport."
+    }
+  ]
+}

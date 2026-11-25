@@ -1,0 +1,77 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-22-juin-commission-2_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 22 juin commission 2)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 22 juin commission 2)",
+  "questions": 9,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_francais_tc_2_al.pdf",
+    "sujet_sha256": "3a5824d5f613f9d8ca5fedc53f1431f08b4b429d18a28385f37caebb4d74cccb",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/Corneille,_Pierre_-_%C5%92uvres,_Marty-Laveaux,_1862,_tome_3/POLYEUCTE/Acte_II",
+      "https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses/Lettre_52",
+      "https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses/Lettre_161",
+      "https://fr.wikisource.org/wiki/L%E2%80%99Heptam%C3%A9ron_des_nouvelles/Extraits_de_Brant%C3%B4me",
+      "https://fr.wikisource.org/wiki/Une_saison_en_enfer_(1873)/Mauvais_sang",
+      "https://www.esgt.cnam.fr/medias/fichier/franc-ais-2022_1666167367668-?ID_FICHE=1276239&INLINE=FALSE",
+      "https://fr.wikisource.org/wiki/La_Fausse_Suivante/Acte_I",
+      "https://fr.wikisource.org/wiki/M%C3%A9moires_d%E2%80%99outre-tombe/Premi%C3%A8re_partie/Livre_III",
+      "https://fr.wikisource.org/wiki/Page:Malherbe_-_%C5%92uvres_po%C3%A9tiques_de_Malherbe,_%C3%A9d._Blanchemain,_1897.djvu/258",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/Po%C3%A9sies_compl%C3%A8tes_de_Malherbe%3B_%28IA_posiescompltesde00malh%29.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/devises.svg",
+      "question": "4",
+      "legende": "Brantôme suit les bijoux et leurs devises"
+    },
+    {
+      "fichier": "figures/grive.svg",
+      "question": "8",
+      "legende": "Les temps du souvenir chez Chateaubriand"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Neuf explications complètes et neuf réponses de reprise. Schémas des devises de Brantôme et des temps du souvenir chez Chateaubriand."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des deux doublons imprimés, des bornes des œuvres et des interlocuteurs de chaque lettre. Texte de Lévi-Strauss confronté au fac-similé du CNAM et attribution du sonnet vérifiée dans les recueils de Malherbe."
+    }
+  ]
+}
