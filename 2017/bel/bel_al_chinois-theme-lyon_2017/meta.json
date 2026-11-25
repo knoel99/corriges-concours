@@ -1,0 +1,55 @@
+{
+  "slug": "bel_al_chinois-theme-lyon_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Chinois (thème Lyon)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=10",
+    "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/CHINOIS_2017.pdf#page=2",
+    "rapport_sha256": "b0cf6c37b98b78fc63613da8c743a2ed1022117510a6becab4f69d5f739651f8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Deux directions du raisonnement"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction pédagogique intégrale originale depuis le scan du fascicule, p. 10, lecture du rapport de spécialité, rédaction du guide et réalisation du schéma. Le comique, les limites du filet de la définition et la méthode inverse."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction du passage délimité par le sujet"
+    ]
+  },
+  "droits_sources": {
+    "oeuvres": [
+      "Henri Bergson, Le Rire. Essai sur la signification du comique (1940, date portée sur le sujet)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte source appartiennent à leurs titulaires."
+  }
+}
