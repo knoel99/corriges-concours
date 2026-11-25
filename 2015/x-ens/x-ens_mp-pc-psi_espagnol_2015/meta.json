@@ -1,0 +1,56 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "Ayotzinapa et les responsabilités de l’État mexicain",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_espagnol_xeulcr.pdf",
+    "sujet_sha256": "f5ca3087ea85f4e7c39dbad532989663942c446857962ec4fc4213762015821f",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2015/%20",
+    "code_garde": "XEULCR"
+  },
+  "redaction": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/iguala-et-disparitions.svg",
+      "legende": "Trois échelles de lecture de l’infographie mexicaine de décembre 2014."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "longueurs_hors_titre": {
+    "synthese_mots": 608,
+    "opinion_mots": 522
+  }
+}
