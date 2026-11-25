@@ -1,0 +1,38 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2020",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Imaginer, anticiper, inventer",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2020/2020_Sujet_1A_Design_Philosophie_de_l_art.pdf",
+    "sha256_sujet": "272c3edaab72380558aebcade3ad5c24fa4ad8d8fe2aa111ac7f4c651a842605",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=541"
+  },
+  "figures": [
+    {
+      "fichier": "figures/boucle-du-prototype.svg",
+      "question": "Dissertation",
+      "legende": "Du dessin au geste observé, un essai peut obliger à reformuler le projet."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition et parcours guidé sur les trois infinitifs, l’hypothèse et l’essai, avec étude de Bergson, Dewey et de l’assise en porte-à-faux. Figure du prototype."
+    }
+  ]
+}
