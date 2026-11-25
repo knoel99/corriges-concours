@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_modelisation_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2013,
+    "duree_heures": 5
+  },
+  "questions": 46,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://prepahelp.com/docs/annales/x-ens/psi/prepahelp-x-ens-2013-psi-modelisation-sujet.pdf",
+    "sujet_sha256": "c7b48bd1f3f89a48153e629746adf15a34d9fc67a295f7f09b78d544b95bf14c",
+    "identification": "CX3612, banque commune École polytechnique – ENS de Cachan, PSI 2013. Fac-similé de 24 pages, garde institutionnelle à la deuxième et deux feuilles-réponses avant la page commerciale finale."
+  },
+  "figures": [
+    {
+      "fichier": "figures/contraction-de-veine.svg",
+      "question": "2",
+      "legende": "Coupe du tube de courant en translation. La conservation du débit associe une accélération vers l’aval à une section plus petite."
+    },
+    {
+      "fichier": "figures/temps-de-parcours.svg",
+      "question": "28",
+      "legende": "L’onde se réfléchit au sol et revient au capteur. Les deux trajets ont été écartés sur le dessin pour rendre leur sens visible."
+    },
+    {
+      "fichier": "figures/retour-de-position.svg",
+      "question": "29",
+      "legende": "Le sonar idéal ferme le retour unitaire. La différence de position traverse d’abord le correcteur, puis le système dont la sortie est l’altitude."
+    },
+    {
+      "fichier": "figures/oscillateur-a-seuils.svg",
+      "question": "34",
+      "legende": "Exemple normalisé de la sortie rectangulaire et de l’entrée exponentielle entre deux seuils. Le courant est proportionnel à la seconde courbe."
+    },
+    {
+      "fichier": "figures/bruit-et-observateur.svg",
+      "question": "44",
+      "legende": "Exemple adimensionné. Le gain de bruit de l’observateur décroît à haute fréquence, tandis que celui de la conversion accélérométrique directe reste constant."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 46 questions de modélisation du prototype universitaire CX3612, à partir du sujet et des deux feuilles-réponses. Contrôle du bilan énergétique, des bilans d’inertie et de la simplification de lacet, des critères de Routh, des courbes temporelles, de l’oscillateur de Schmitt, de l’observateur et du changement de coordonnées. Cinq figures originales et hypothèses de signe et d’identifiabilité documentées."
+    }
+  ]
+}
