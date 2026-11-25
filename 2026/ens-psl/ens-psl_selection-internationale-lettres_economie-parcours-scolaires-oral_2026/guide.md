@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet.** Environnement social et contraintes économiques dans les décisions et les résultats scolaires.
 
 Le rapport du jury attend un plan clairement annoncé, un cadrage empirique et des liens entre théorie et politique publique. Les pistes de préparation proposent un déroulé d’exposé et d’entretien.
@@ -34,6 +36,13 @@ L’école gratuite conserve un coût de trajet, de matériel et de travail dome
 Une fonction de production pédagogique relie un acquis actuel aux connaissances antérieures, au temps d’étude et aux ressources de la classe et du foyer. Le calme pour travailler, les livres, le retour d’un enseignant ou le temps de trajet agissent après l’inscription. Les difficultés s’accumulent lorsqu’un apprentissage initial facilite le suivant. Dans un système d’orientation, les notes influencent ensuite les décisions de filière, qui modifient à leur tour les enseignements reçus. Une différence de résultats peut ainsi précéder et suivre la décision.
 
 Le tri résidentiel et le recrutement scolaire rassemblent souvent des élèves dont les ressources se ressemblent. Un écart de résultats entre deux établissements combine alors affectation, composition sociale et conditions d’enseignement. Une moyenne de classe élevée peut aider par l’entraide, changer les exigences du professeur ou simplement refléter le recrutement. Si les pairs s’influencent simultanément, il existe en plus un problème de réflexion. Comparer deux moyennes ne suffit pas à mesurer un effet propre des camarades. Conditionner l’analyse sur la note après l’orientation peut même effacer une partie de l’effet que l’on cherche à expliquer.
+
+Un calcul fictif mesure l’ampleur du problème. Sans bourse, 40 élèves sur 100 s’inscrivent et obtiennent en moyenne 70 sur 100. Avec une bourse, ces mêmes 40 atteignent 72, tandis que 20 nouveaux inscrits obtiennent en moyenne 55. La moyenne des 60 inscrits est alors de 66,3. La baisse de cette moyenne est compatible avec un progrès des élèves qui se seraient inscrits dans les deux cas. Pour estimer l’effet de l’offre de bourse sur les apprentissages de toute la cohorte, il faudrait notamment pouvoir mesurer les acquis des élèves restés hors de la filière, quel que soit le groupe auquel la bourse a été offerte.
+
+![Figure 1 — La bourse modifie les effectifs et la composition du groupe dont on mesure les notes.](figures/composition-des-inscrits.svg)
+
+> [!INDICATION]
+> Relire les deux situations en comptant qui figure au dénominateur. En pratique, on n’observe pas directement quels bénéficiaires se seraient aussi inscrits sans la bourse. Un tirage de l’offre et un test commun à toute la cohorte permettent d’étudier une autre quantité, l’effet moyen de l’offre.
 
 ## III — Trois variations permettent de départager les mécanismes
 

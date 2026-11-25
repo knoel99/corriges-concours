@@ -20,7 +20,15 @@
       "https://doi.org/10.1016/j.jmoneco.2008.05.010"
     ]
   },
-  "figures": [],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Exposé oral",
+      "section": "II",
+      "fichier": "figures/publications-et-revisions.svg",
+      "legende": "L’évaluation d’une prévision dépend de la version du PIB retenue comme cible."
+    }
+  ],
   "contributions": [
     {
       "phase": "redaction",
@@ -32,9 +40,21 @@
       "perimetre": "Rédaction des deux éditions de l’exposé d’économie à partir du sujet individuel imprimé page 2 du rapport du jury. Dates de disponibilité, données en temps réel, estimation du présent, surprises, validation chronologique, risque de rupture et pertes asymétriques. Quatre relances argumentées.",
       "agent": "astra_physique",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Relecture du rapport et des deux éditions. Ajout d’une chronologie chiffrée distinguant les deux estimations, la surprise et les deux versions de la cible. Vérification des erreurs signées et des pertes de prévision."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "couverture": {
     "statut": "complet",
     "questions_entierement_traitees": [
