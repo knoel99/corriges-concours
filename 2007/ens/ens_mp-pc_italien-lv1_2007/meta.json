@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_italien-lv1_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LV1)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Perception du temps par le cerveau et portée morale du savoir scientifique",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "5",
+    "code_garde": "71.12PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_vivante_1.pdf#page=5",
+    "sujet_sha256": "15f4c97a9eb06e463e4a884fa769e62b3ea7db6a925e0c92fce4dfe70e89da5b",
+    "precision": "L’article anonyme publié par La Repubblica.it le 30 janvier 2007 figure en page 5. Les coupes visibles dans le texte sont conservées. Aucun rapport spécifique à l’option italienne LV1 n’a été retrouvé."
+  },
+  "mots_expression": {
+    "1": 121,
+    "2": 122
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/cercles.svg",
+      "legende": "Le temps écoulé se lit dans l’état présent du milieu."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/jugement.svg",
+      "legende": "L’essai sépare constat, conséquence et responsabilité morale."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Perception du temps par le cerveau et portée morale du savoir scientifique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
