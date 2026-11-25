@@ -1,0 +1,59 @@
+# X · MP-PC · Français 2007 — corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+## Sujet et œuvres
+
+Dans *La Relation critique*, Jean Starobinski récuse une imagination « pure » et la décrit comme un comportement, porté par un « vecteur affectif ou éthique » et orienté relativement à un donné social. Il faut discuter les enjeux de cette définition dans *Don Quichotte*, *De la recherche de la vérité* et *Un amour de Swann*.
+
+## Donner un sens aux trois propositions
+
+Imaginer *à partir de* modèles sociaux, imaginer *en vue de* satisfaire un désir et imaginer *de manière à* modifier une conduite sont trois relations différentes. Pour les réunir, suivre le moment où Don Quichotte choisit le nom de son cheval. Il emprunte un modèle, éprouve le plaisir d’une nouvelle dignité et se rend déjà disponible à des gestes que le nom exigera de lui.
+
+![Figure 1 — Un vocabulaire partagé peut servir à des conduites opposées. La circulation des images ne préjuge pas de leur usage moral.](figures/sens-et-direction.svg)
+
+## Comparer sans confondre les personnages
+
+Swann connaît avec finesse les codes des salons où il circule. Don Quichotte cherche à faire revivre un code dont l’entourage ne partage plus les obligations. Le premier peut employer les ressources d’un milieu qu’il maîtrise au service d’un désir qui l’aveugle. Le second peut, par son décalage, faire apparaître une injustice ordinairement tenue pour négligeable. Dans les deux cas, l’imagination prend position, avec des effets qui demandent à être jugés séparément.
+
+Chez Malebranche, examiner ce qui arrive à l’auditeur d’une parole très assurée. Reçoit-il une preuve ou éprouve-t-il la confiance qu’on lui transmet ? Cet exemple donne une précision concrète à la notion de comportement. Le philosophe fait ici travailler à la fois l’origine d’une croyance et la conduite intellectuelle qui permet de l’examiner.
+
+## Tester la portée du mot « pure »
+
+Supposons qu’une musique surprenne Swann et lui révèle quelque chose qu’il ne cherchait pas. Cet exemple réfute-t-il la thèse ou seulement sa version la plus rigide ? La rencontre a toujours un lieu, une histoire et un auditeur affecté. Mais cette histoire suffisait-elle à prédire ce qui serait entendu ? Une conclusion solide distingue une activité toujours située d’une activité intégralement expliquée par sa situation.
+
+## Dissertation rédigée
+
+Avant d’avoir accompli un seul exploit, Don Quichotte passe un temps considérable à donner des noms. Il faut un nom pour le cheval, un autre pour lui-même et une dame à laquelle il puisse rapporter son service. Dira-t-on qu’il est encore dans sa chambre, occupé à imaginer, et que sa conduite commencera seulement à son premier départ ? Jean Starobinski conteste une telle séparation. L’imagination serait déjà un comportement, animé par un mobile affectif ou moral et tourné, dans un sens ou dans l’autre, vers un monde social donné. La thèse est forte. Dire qu’on emprunte aux autres des images ne prouve pas encore qu’imaginer quelque chose revienne à prendre position envers eux. Inversement, montrer la portée publique d’une fiction ne suffit pas à en expliquer la singularité. Il faudra déterminer ce qui, dans une image encore privée, relève déjà d’une manière d’agir, puis ce qui empêche de ramener entièrement l’invention à l’origine sociale de ses matériaux.
+
+### Commencer à se conduire autrement
+
+Le nouveau nom de Rossinante ne change pas les forces du cheval. Mais le temps que son maître met à le choisir montre qu’un ordre de priorités a déjà changé. Ce qui importe à l’animal de selle, dans l’existence qui se prépare, est d’être le cheval d’un chevalier. Le vocabulaire des romans a fixé ce qui compte comme distinction et comme dignité. Quant au nom que l’hidalgo se donne, il lui assigne une origine à faire connaître, un personnage à soutenir, des actions qu’il ne pourra désormais se permettre de négliger. Ici le pouvoir du nom ne relève pas d’une croyance magique. Il tient à l’engagement de celui qui se prépare à vivre d’une manière qui puisse rendre le nom adéquat. Imaginer est une conduite avant même que quelqu’un d’autre ait aperçu la transformation. Le personnage s’est déjà rendu disponible à certaines occasions et aveugle à d’autres.
+
+Chez Swann, ce changement de conduite est moins spectaculaire parce qu’il emploie des compétences que l’intéressé possédait déjà. Il connaît les milieux aristocratiques et sait circuler entre des cercles qui s’ignorent. Les soirées des Verdurin prennent cependant un sens nouveau à partir du moment où y retrouver Odette devient un impératif. Le monde auquel il consacrera son temps est choisi selon l’image de sa soirée qu’il peut former auprès de la femme aimée. Si elle manque, des démarches qui auraient paru indignes d’un amateur aussi maître de ses occupations lui semblent soudain nécessaires. La jalousie agit déjà quand, seul, il reconstitue l’emploi du temps d’Odette. Il lui suppose des préoccupations, s’imagine des interlocuteurs absents, prépare les questions qu’il osera poser. Le récit romanesque rend particulièrement sensible ce passage continu de la représentation à la manière de se comporter devant quelqu’un.
+
+Malebranche donne une portée générale à cette continuité en étudiant la communication des imaginations fortes. Celui qui est vivement affecté imprime dans le ton de sa voix, dans son maintien et dans le détail d’un récit les signes de la passion qui l’occupe. Ses auditeurs reçoivent ainsi davantage qu’une information. L’assurance sensible de l’orateur peut leur transmettre le degré de confiance qu’ils accordent à son récit, indépendamment de ses preuves. Dès lors, imaginer n’est pas toujours une première étape qu’il nous serait loisible de traduire ou non en actes. Une façon de parler a déjà modifié les dispositions de ceux qui nous écoutent. Le terme de comportement décrit avec précision cette efficacité que l’on perdrait en cherchant l’image exclusivement à l’intérieur du sujet.
+
+### Le même héritage donne plusieurs directions
+
+Le mot « vecteur » invite cependant à se demander vers quoi se dirige cette activité. L’élan affectif et la visée éthique ne se recouvrent pas. Swann peut éprouver une tendre admiration pour la beauté qu’il a appris à voir chez Odette et s’en autoriser ensuite pour surveiller des actes qui ne lui appartiennent pas. Il y a bien continuité entre la préférence et la conduite. Il n’y a aucune garantie que la seconde fasse droit à la liberté de la personne que la première avait distinguée. Dans la scène où il prend une autre fenêtre pour celle de sa maîtresse, l’inquiétude suffit à lui faire mobiliser toutes les ressources d’une enquête. Celui qui maîtrise les codes de la discrétion mondaine est devenu un observateur prêt à transgresser lui-même une frontière privée. L’appartenance sociale de Swann explique les moyens dont il dispose, mais le mobile affectif révèle dans quelle direction il s’en sert.
+
+Don Quichotte se situe tout autrement par rapport aux usages sociaux. Le modèle qui anime son départ a été lu dans des livres disponibles au sein de la collectivité. Mais le code chevaleresque qu’il adopte n’organise plus les rapports quotidiens entre un aubergiste, des voyageurs ou un maître et son valet. L’imitation à laquelle le personnage s’applique devient donc une forme de dissidence. Elle ne l’est pas de la même manière pour tout le monde. Le désir de restaurer la justice lui fait protester lorsqu’il rencontre Andrés aux prises avec son maître. L’image du chevalier justicier lui fait aussi prendre la promesse du maître pour une garantie suffisante une fois qu’il sera reparti. On peut contester une société au nom de principes généreux et manquer les circonstances sociales qui auraient permis à ces principes de servir. L’orientation positive ou négative dont parle Starobinski désigne d’abord un rapport de reprise ou de refus. Elle ne tient pas lieu d’approbation ou de condamnation morale.
+
+Cette distinction fait aussi comprendre l’intérêt de l’étude de Malebranche. Le prestige d’une personne ou d’un auteur peut communiquer la force de ses représentations. Le désir de lui ressembler, la crainte de paraître stupide et le plaisir de reconnaître une formule familière fournissent des relais différents à la contagion. Un même jugement tenu dans des milieux différents peut ainsi naître d’habitudes imaginatives très semblables. Pour s’en libérer, il ne suffit guère de remplacer les images de son groupe par celles d’un autre. Il faut examiner les raisons que la vivacité de la représentation nous engageait à croire superflues. En ce sens, l’œuvre du philosophe demande elle-même de transformer une conduite de lecteur. Il s’agit d’apprendre à suspendre une admiration qui nous a peut-être gagné avant toute réflexion.
+
+### Ce qu’un modèle ne décide pas encore
+
+On risquerait néanmoins de donner à la thèse critique une portée excessive si l’on croyait avoir entièrement expliqué une image dès qu’on en a montré le mobile ou la provenance. Dans la pastorale dont Cervantès fait entendre les discours autour de la mort de Grisóstomo, Marcelle reçoit des bergers un rôle tout préparé. Sa beauté expliquerait l’amour dont elle est l’objet et lui ferait devoir une réponse. Elle prend la parole pour distinguer ce qu’elle a reçu sans l’avoir voulu, sa beauté, de l’engagement auquel on prétend l’astreindre. Le monde pastoral où elle s’est retirée a bien ses modèles littéraires et sociaux. Elle s’en sert cependant pour soutenir une exigence de vie propre, capable de modifier le sens même qu’avaient donné les autres à ce choix. La même figure de bergère peut signifier, au gré de celui qui parle, une promesse faite à l’amant ou le refus d’une vie déjà écrite. Pour comprendre cette bifurcation, il faut prendre au sérieux la nouveauté d’une parole singulière.
+
+Chez Proust, la petite phrase de Vinteuil résiste de façon semblable à l’usage que Swann et Odette en ont fait en la prenant pour l’emblème de leur amour. Lorsqu’elle se fait entendre à la soirée Saint-Euverte, elle ramène à Swann une époque entière de sa vie qu’il ne désirait pas consciemment rappeler. Elle révèle du même coup un pouvoir de la musique qui n’est pas épuisé par les usages d’un salon, ni même par le besoin sentimental qui lui avait donné sa première signification. La découverte se produit bel et bien dans une situation sociale, sur un auditeur dont les affects sont engagés. Son contenu n’en est pas la reproduction prévisible. Pour celui qui écoute, imaginer peut également être recevoir une possibilité dont il n’avait pas lui-même choisi la direction.
+
+Starobinski donne ainsi à la critique une question féconde. Que fait un homme lorsqu’il se représente un autre monde, avec quelles ressources et à l’égard de qui ? Les lectures de Don Quichotte, les habitudes de Swann et les contagions décrites par Malebranche rendent illusoire l’idée d’une activité sans corps, sans affects ni histoire. Pourtant un vecteur indique un mouvement et ne décrit pas à l’avance toutes ses conséquences. Parce qu’ils héritent d’images communes, les êtres peuvent aussi les retourner, les soumettre à l’examen ou découvrir en elles des significations qui restaient à former.
+
+## Sources
+
+La garde X-ESPCI nomme les deux filières MP et PC. Le rapport de cinq pages donne le contexte critique du passage et précise que la phrase proposée commençait bien par « Il n’y a pas ». Il invite à séparer affect, éthique et rapport aux codes sociaux sans exiger la connaissance du contexte théorique antérieur.
+
+[Sujet](https://web.archive.org/web/20090424050904id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ComposFranc.pdf) · [Rapport](https://web.archive.org/web/20090424045408id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Francais_MP_PC_Rap.pdf)
