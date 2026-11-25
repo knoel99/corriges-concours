@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Rendre à « où » ses différents objets
 
 La question compte quatre mots et la feuille accorde cinq heures. Placer devant soi une photographie annotée. À la question « où est la photo ? », une adresse suffit. Pour « où ce repas a-t-il eu lieu ? », il faut identifier la scène représentée. Pour « où est le souvenir de ce repas ? », la réponse dépend de ce que l’on recherche : la trace d’un événement, une disposition corporelle, le vécu d’un participant ou la pratique familiale qui entretient le récit. C’est cette difficulté qui ordonne la copie.
@@ -19,6 +21,8 @@ La question compte quatre mots et la feuille accorde cinq heures. Placer devant 
 **Relire le rapport.** Le jury relève les difficultés d’une juxtaposition du corps, de l’esprit et de la société en trois réponses indépendantes. Il invite à éprouver des distinctions comme actuel et virtuel et à discuter ce qu’un cadre collectif fait au souvenir singulier. Dans la dernière partie, le monument oblige à préciser à qui une mémoire est attribuée lorsque toute personne ayant vécu l’événement a disparu.
 
 ![Trois localisations possibles](figures/trace-habitude-rappel.svg)
+
+Supprimer successivement le cahier et l’occasion de réciter. À chaque étape, distinguer ce qui a disparu, ce qui est conservé et ce dont l’exercice reste momentanément empêché.
 
 ## Où est la mémoire ?
 

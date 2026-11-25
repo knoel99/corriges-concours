@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## La religion naturelle
 
 Deux voyageurs se disent croyants. Chacun a reçu de sa famille un récit de la révélation divine, et chacun découvre que l’autre aurait pu être à sa place s’ils étaient nés dans le même village. De cette dépendance du témoignage à l’égard du lieu de naissance, ils peuvent conclure que chacun doit garder sa confession. Ils peuvent aussi chercher un moyen de juger qui soit accessible à l’un comme à l’autre. C’est à cette seconde exigence que correspond le projet d’une religion naturelle. Mais que restera-t-il de religieux dans ce que chacun pourra admettre par ses seules facultés humaines ?
@@ -17,6 +19,10 @@ Deux voyageurs se disent croyants. Chacun a reçu de sa famille un récit de la 
 ### I. Un titre commun à croire
 
 Lorsqu’une personne croit un fait historique, elle doit ordinairement se fier à des témoins. Rien là d’irrationnel. Mais si mon salut dépend absolument de l’adhésion à la révélation racontée par ces seuls témoins, celui qui n’a pu les rencontrer risque d’être tenu pour coupable d’une ignorance involontaire. La prétention d’une religion à concerner tout homme réclame donc une distinction entre la diffusion contingente d’une croyance et les raisons susceptibles d’être reconnues par chacun. Dans la *Profession de foi du vicaire savoyard*, au livre IV de l’*Émile*, Rousseau prête au vicaire l’examen de cette disproportion. La multiplication des miracles et des témoignages soumettrait la recherche du vrai à un voyage interminable à travers langues et traditions. Le vicaire cherche dans son expérience et sa conscience une règle de jugement qu’aucune institution ne puisse confisquer.
+
+Il est possible d’apprendre une proposition dans un livre et de la justifier ensuite par des raisons accessibles à ceux qui ne l’ont jamais lu. L’histoire de sa transmission et la nature de son autorité peuvent donc recevoir deux réponses différentes. C’est cette différence qui donne un sens exigeant à l’idée de religion naturelle.
+
+![À quelle question répond-on ?](figures/croyance-et-raison.svg)
 
 Une première voie est de regarder le monde visible comme l’indice d’un ordre intelligible. Si plusieurs pièces ajustées entre elles permettent à un outil de fonctionner, je reconnais une disposition qui suppose le travail d’un artisan. Le monde où des organismes se maintiennent et s’ajustent les uns aux autres semble à son tour témoigner d’une intelligence. L’intérêt du raisonnement est son point de départ. Il s’adresse à des personnes qui ne partagent encore aucune Écriture. Une conclusion établie sur un terrain commun pourrait alors tenir lieu de seuil pour toute croyance ultérieure.
 
