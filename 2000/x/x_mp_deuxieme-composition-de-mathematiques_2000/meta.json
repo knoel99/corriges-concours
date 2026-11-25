@@ -1,0 +1,46 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2000",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2000
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2000.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "c4b440976d2ec4d1b9f9f2177aceb9ab39a574720da8b12f75d9aa2c40ebf184"
+  },
+  "figures": [
+    {
+      "fichier": "figures/secteurs-duaux.svg",
+      "question": "2",
+      "legende": "Deux directions indépendantes. Le secteur dual est délimité par les perpendiculaires aux deux bords du secteur primal."
+    },
+    {
+      "fichier": "figures/demi-droite-et-demi-plan.svg",
+      "question": "2",
+      "legende": "Deux générateurs de même sens. À gauche la demi-droite, à droite le demi-plan dual."
+    },
+    {
+      "fichier": "figures/droites-perpendiculaires.svg",
+      "question": "2",
+      "legende": "Deux générateurs opposés. La droite primale et la droite duale sont perpendiculaires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale sur les trois pages de l’original. Trois figures des cônes plans avec leur dual et leur liste de faces, preuves de fermeture et de séparation, frontière relative, et vérification de la convention sur les générateurs non nuls en question 10.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
