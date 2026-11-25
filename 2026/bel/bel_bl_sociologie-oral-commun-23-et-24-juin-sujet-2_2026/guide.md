@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## La contraception
@@ -31,6 +33,8 @@ En 2020, le document 7 compte environ 222 000 IVG en France, dont 72,4 % médica
 Mesurer seulement les méthodes utilisées effacerait donc la négociation qui les rend praticables. Mesurer seulement les issues de grossesse effacerait les préférences et les conditions de recours aux soins. La portée émancipatrice de la contraception se juge aussi à la capacité d’exercer un choix éclairé et d’en partager les contraintes matérielles au sein des relations.
 
 ![Déclarer un seul partenaire au cours de sa vie](figures/lecture-des-donnees.svg)
+
+Formulez d’abord le changement pour un même groupe d’âge, puis identifiez qui répond à chaque date. Une personne âgée de 25 ans en 1972 en a 45 en 1992. Ces proportions n’enregistrent donc pas l’évolution d’un même groupe de personnes.
 
 ## Questions du jury
 

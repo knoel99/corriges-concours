@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Une nouvelle noblesse d’État ?
@@ -19,6 +21,10 @@ Dans *La Noblesse d’État* (doc. 1), Bourdieu rapproche les titres scolaires, 
 ### Comparer des promotions permet d’éprouver la nouveauté annoncée
 
 Luc Rouban (doc. 3) réunit par deux des promotions de la fin des années 1960, 1980 et 1990, soit 195, 220 et 205 élèves. Le poids des grands corps à la sortie est respectivement de 14,9 %, 16,8 % et 18,1 %. La démission immédiate pour le privé concerne 9,2 %, puis 0 %, puis 2,5 %. Cette séquence interdit d’extrapoler une croissance continue de tous les départs. L’emploi occupé environ dix ans après la sortie (doc. 4) fournit une autre mesure. Toutes voies confondues, la part en entreprise privée passe de 8,3 % dans la première cohorte à 14,5 % dans la deuxième et 9,5 % dans la dernière. Pour les seuls membres des grands corps, les proportions correspondantes sont 17,2 %, 40,5 % et 32 %. Un écart entre ces colonnes dit qui circule davantage. La situation à une date ne dit pas combien d’années ont été passées dans chaque secteur.
+
+![Figure 1 — Emploi en entreprise privée dix ans après la sortie de l’ENA](figures/lecture-des-donnees.svg)
+
+Le sommet de la série se situe dans la cohorte observée en 2000. Le tableau permet aussi une comparaison à date fixe. En 2010, 32 % des membres des grands corps de la cohorte travaillent en entreprise privée, pour 9,5 % de l’ensemble de la cohorte. Ce contraste rend visible une concentration des passages observés dans certaines trajectoires administratives.
 
 Le document 5 précise la transformation des formations. Dans les grands corps, la proportion avec diplôme en économie passe de 10 % pour la cohorte 1969 à 49 % pour la cohorte 1999. Les catégories sont cumulables et les effectifs de certaines cases réduits. Une formation économique peut faciliter les circulations professionnelles ou répondre à la transformation des missions publiques elles-mêmes. Pour décider entre ces explications, on croiserait formations, départs et fonctions exercées individuellement, au lieu de comparer seulement les courbes de plusieurs promotions.
 

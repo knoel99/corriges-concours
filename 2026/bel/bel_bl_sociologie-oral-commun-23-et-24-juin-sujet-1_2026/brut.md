@@ -6,11 +6,13 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## L’abstention
 
-Un citoyen qui choisit de ne pas se déplacer, une personne absente des listes et un résident privé du droit de voter peuvent tous manquer dans le résultat final. Seul le premier est un abstentionniste au sens du taux calculé parmi les inscrits. Comment les institutions, les positions sociales et les circonstances du scrutin sélectionnent-elles les personnes dont la voix pourra être comptée ?
+Un électeur inscrit empêché de se déplacer, une personne absente des listes et un résident privé du droit de voter peuvent tous manquer dans le résultat final. Seul le premier entre dans le calcul de l’abstention parmi les inscrits. Ce calcul recense aussi bien les absences contraintes que les abstentions délibérées. Comment les institutions, les positions sociales et les circonstances du scrutin sélectionnent-elles les personnes dont la voix pourra être comptée ?
 
 ### Compter les absences fait partie de l’explication
 
@@ -21,6 +23,10 @@ Le document 5 permet de remonter de la population professionnelle aux votants. P
 ### Le calendrier électoral rend les écarts plus ou moins visibles
 
 En 2017, 78 % des inscrits participent au premier tour de la présidentielle, contre 49 % au premier tour des législatives (doc. 3). L’écart de 29 points montre que l’absence est aussi liée à l’événement. Les résultats agrégés ne disent pas qui sont les individus passés du vote à l’abstention. Dans la même année (doc. 4), l’écart d’abstention entre les 25–29 ans et les 65–69 ans atteint 18,2 points au premier tour présidentiel et 35,1 points au premier tour législatif. L’écart entre ouvriers et cadres atteint respectivement 12,55 et 25,8 points. Les inégalités de ressources pratiques, d’incitation de l’entourage et de familiarité institutionnelle peuvent peser davantage lorsque la mobilisation est moins intense. La comparaison entre scrutins rapproche ces observations, sans mesurer séparément chacun des mécanismes.
+
+![Figure 1 — Participation aux premiers tours de deux scrutins en 2017](figures/lecture-des-donnees.svg)
+
+Les deux premiers tours ont lieu la même année. Le taux d’abstention des inscrits passe de 22 % à la présidentielle à 51 % aux législatives. Ces deux photographies mesurent une différence de mobilisation entre scrutins. Une liste d’émargement suivie dans le temps serait nécessaire pour distinguer participation intermittente et absence aux deux scrutins.
 
 ### Les raisons données et les contextes donnent plusieurs sens à une absence
 
