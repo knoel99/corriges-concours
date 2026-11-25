@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2010,
+    "duree_heures": 2
+  },
+  "questions": 13,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2010.pdf",
+    "sujet_sha256": "6dcdb986e2dfaf836f4a9aaa5a4183b29b92aa01eea958f8bec9bbb86b38605c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-occurrences.svg",
+      "question": "3",
+      "legende": "Les départs 5 et 8 donnent les deux occurrences de bonbon. Les positions 8 à 10 interviennent dans les deux."
+    },
+    {
+      "fichier": "figures/rangs-et-departs.svg",
+      "question": "11",
+      "legende": "Début du tableau trié de l’exemple. Les rangs 2 et 3 forment le bloc des suffixes commençant par bonbon. Leur ordre diffère de celui des départs dans le texte."
+    },
+    {
+      "fichier": "figures/frequences-des-bigrammes.svg",
+      "question": "13",
+      "legende": "Les douze départs possibles pour deux lettres forment sept groupes. Les fréquences totalisent douze."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des treize questions, du dénombrement avec chevauchement au regroupement des k-grammes dans le tableau des suffixes. Lecture du PDF natif, confrontation à la recherche exhaustive pour 15 810 requêtes et 1 275 distributions de fréquences. Trois figures originales."
+    }
+  ]
+}

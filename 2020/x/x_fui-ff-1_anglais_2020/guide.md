@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20D'ANGLAIS%20Session%201.pdf)
@@ -21,9 +23,9 @@ L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de
 ### a) Cognitive biases and what they share
 
 > [!INDICATION]
-> Nommer les trois biais du texte et définir la déviation du jugement propre à chacun.
+> Les deux étiquettes de l’aliment décrivent la même teneur en graisse. Concorde illustre l’effet d’une dépense passée sur un choix futur. Entre ces deux exemples, le biais de confirmation sélectionne l’information qui conforte une conviction. Retrouvez ces trois noms anglais à la lecture des lignes 58 à 68.
 
-Robson describes framing: different descriptions of an identical choice can change our preference. Confirmation leads us to seek supporting material while overlooking inconvenient evidence. A sunk-cost error makes us spend again because we spent before, although the next payment promises no benefit. Britain and France persisted with Concorde even as losses seemed increasingly likely. Each produces a predictably distorted decision, and none disappears simply because somebody scores highly on an intelligence test. (Robson, lines 58–68).
+Three habits can defeat even a strong test taker. Framing bias means that identical food containing five per cent fat sounds more appealing when the label foregrounds its lean proportion. Confirmation bias makes us accept friendly evidence while discounting a genuine challenge to our beliefs. A sunk-cost error tempts us to continue an unpromising venture because of earlier spending, as with Concorde. Each error gives an irrelevant consideration undue influence over judgement. (Robson, lines 58–68).
 
 ![Three ways a judgement can go wrong](figures/choice.svg)
 
@@ -37,9 +39,9 @@ Psychologists use IQ as an estimate of general mental aptitude because success a
 ### c) Essential skills beyond IQ
 
 > [!INDICATION]
-> Relier une compétence, un usage et une manière de la travailler en classe.
+> Les lignes 79 à 87 décrivent deux enseignements. Dans l’histoire, l’étude des erreurs améliore à la fois le raisonnement mesuré et l’apprentissage des faits. Dans la discussion de théories du complot, les élèves apprennent à évaluer les preuves et paraissent ensuite plus sceptiques envers des informations trompeuses.
 
-Robson calls for judgement that goes beyond handling an abstract problem quickly: assessing the quality of a claim, spotting invalid arguments, questioning our first reaction and choosing sensibly under uncertainty. Such abilities matter whenever voters encounter deceptive stories or managers must abandon an unsuccessful investment. Lessons using historical decisions or conspiracy claims suggest that pupils can practise these habits deliberately. (Robson, lines 54–68 and 74–91).
+Robson wants learners to test the quality of evidence and recognise familiar errors before they guide a decision. High scores on abstract puzzles offer limited protection against a misleading story or a disastrous investment. History lessons that explored past errors improved both reasoning and recall of the material. Discussing conspiracy claims also gave students practice challenging unsupported assertions that they might encounter elsewhere. (Robson, lines 54–68 and 74–91).
 
 ### d) The Flynn effect
 
@@ -73,4 +75,4 @@ My test for the transport authority would therefore involve an evening at the bu
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 72, 62, 60 et 77 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 72, 62, 63 et 77 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

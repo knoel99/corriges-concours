@@ -12,11 +12,13 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### a) Cognitive biases and what they share
 
-Robson describes framing: different descriptions of an identical choice can change our preference. Confirmation leads us to seek supporting material while overlooking inconvenient evidence. A sunk-cost error makes us spend again because we spent before, although the next payment promises no benefit. Britain and France persisted with Concorde even as losses seemed increasingly likely. Each produces a predictably distorted decision, and none disappears simply because somebody scores highly on an intelligence test. (Robson, lines 58–68).
+Three habits can defeat even a strong test taker. Framing bias means that identical food containing five per cent fat sounds more appealing when the label foregrounds its lean proportion. Confirmation bias makes us accept friendly evidence while discounting a genuine challenge to our beliefs. A sunk-cost error tempts us to continue an unpromising venture because of earlier spending, as with Concorde. Each error gives an irrelevant consideration undue influence over judgement. (Robson, lines 58–68).
 
 ### b) What an IQ score can predict
 
@@ -24,7 +26,7 @@ Psychologists use IQ as an estimate of general mental aptitude because success a
 
 ### c) Essential skills beyond IQ
 
-Robson calls for judgement that goes beyond handling an abstract problem quickly: assessing the quality of a claim, spotting invalid arguments, questioning our first reaction and choosing sensibly under uncertainty. Such abilities matter whenever voters encounter deceptive stories or managers must abandon an unsuccessful investment. Lessons using historical decisions or conspiracy claims suggest that pupils can practise these habits deliberately. (Robson, lines 54–68 and 74–91).
+Robson wants learners to test the quality of evidence and recognise familiar errors before they guide a decision. High scores on abstract puzzles offer limited protection against a misleading story or a disastrous investment. History lessons that explored past errors improved both reasoning and recall of the material. Discussing conspiracy claims also gave students practice challenging unsupported assertions that they might encounter elsewhere. (Robson, lines 54–68 and 74–91).
 
 ### d) The Flynn effect
 

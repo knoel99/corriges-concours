@@ -12,11 +12,13 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. A harmful story about discovery
 
-Yong challenges the romantic image of a discovery springing from one extraordinary mind. Modern investigations often depend on people with different jobs, spread across laboratories, whose results and equipment must be brought together. Singling out a handful of leaders obscures that dependence. It also helps perpetuate professional rewards that favour already prominent figures while giving junior or technical collaborators little recognition. (Yong, lines 34–40 and 48–55).
+Yong disputes the picture of an exceptional individual creating knowledge alone. The gravitational-wave paper, for instance, needed three pages to list its authors, although only three leaders shared the award. When a collective result becomes a short list of famous people, later readers learn a misleading history. Junior staff lose recognition, while the winners attract speaking invitations and further scholarly attention. (Yong, lines 1–15, 48–55 and 74–82).
 
 ### 2. Reasons to recognise a larger team
 
@@ -24,7 +26,7 @@ The limit hardly follows literally from Nobel’s instructions: his will describ
 
 ### 3. Three criticisms of the awards
 
-Yong argues, first, that choosing a few faces gives outsiders a false picture of research as an individual pursuit. Second, the resulting history may credit the wrong person: Schatz found streptomycin while working under Waksman, yet the award went to his supervisor. Third, indispensable participants disappear from public recognition altogether. Delayed awards can exclude researchers who have died, and recurring omissions particularly affect women. (Yong, lines 12–15, 23–33 and 56–73).
+A prize for individuals first misdescribes collaborative research. It can also change the historical account: Waksman received credit for streptomycin although his student Schatz found it. Third, vital contributors may be excluded altogether. Franklin died before the DNA award, and Meitner never won despite forty-eight nominations. Yong then warns of another consequence: prestige from one discovery can lend credibility to a winner’s unrelated opinions. (Yong, lines 12–15, 23–26 and 56–84).
 
 ### 4. Why a celebration can help science
 

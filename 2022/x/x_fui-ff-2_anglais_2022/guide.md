@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux pages du PDF identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20Session%20Printemps%20SUJET%20ANGLAIS.pdf)
@@ -24,9 +26,9 @@ Many computing assignments reward students for demonstrating that a particular a
 ### 2. What the Facebook discussion revealed
 
 > [!INDICATION]
-> Comparer deux moments du cours. Que dénoncent les étudiants, puis que négligent-ils lorsqu’ils dessinent leur propre dispositif ?
+> Le fait Facebook remonte à 2014. La tâche fictive intervient deux jours après la discussion en classe. Quand Grosz a redonné le cours, une étudiante a dit avoir compris la question éthique sans la croire pertinente. Ce témoignage appartient à une autre occurrence du cours.
 
-Students condemned an undisclosed 2014 experiment in which Facebook altered what users saw to study their feelings. Forty-eight hours afterwards, the same class planned a recommendation tool for a fictitious clothing manufacturer. Nobody spontaneously considered the moral implications of gathering customer information. Grosz saw that indignation about someone else’s choices did not automatically influence the decisions students made when acting as designers themselves. (Pazzanese, p. 3).
+One class protested when it learnt that Facebook had changed users’ feeds without telling them to investigate emotional effects. Two days afterwards no group raised privacy or consent while choosing customer data for an imaginary fashion business. When Grosz repeated the course, one student recalled noticing the issue but dismissing its relevance. These distinct observations explain why the teacher wanted reflection to accompany design decisions. (Pazzanese, p. 3).
 
 ![What changed between the two classroom activities?](figures/two-classes.svg)
 
@@ -40,9 +42,9 @@ It means identifying who could be affected by a decision, examining their intere
 ### 4. The distinctive teaching model
 
 > [!INDICATION]
-> Rattacher la philosophie au contenu et au moment précis d’un exercice de conception.
+> Distinguez trois repères de la page 2, lancement au printemps 2017, plus de trente cours concernés au printemps 2019 et environ 2 750 étudiants inscrits depuis le lancement. Une personne formée en philosophie anime un module ancré dans la difficulté technique du cours.
 
-Instead of sending future programmers to a single separate seminar, Harvard distributes philosophical questions throughout their technical studies through its Embedded EthiCS programme. Philosophy doctoral candidates and postdoctoral researchers work with computing instructors so each discussion arises from the design task currently being tackled. Students repeatedly practise noticing consequences at the moment they choose how a system should operate. Other universities have considered adopting this approach. (Pazzanese, pp. 2–3).
+In 2017 Barbara Grosz launched this Harvard initiative with Alison Simmons. Researchers trained in philosophy teach discussions linked to specific technical tasks within computing classes. This gives a student repeated practice in deciding which data to collect while the design is still open to change. More than thirty courses took part during the 2019 spring term. The broader enrolment figure, roughly 2,750, counts students since the programme began. (Pazzanese, pp. 2–3).
 
 ![How the programme connects ethics with design](figures/embedded-ethics.svg)
 
@@ -69,4 +71,4 @@ I would still expect future programmers to master calculation, testing and the p
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 56, 63, 59 et 66 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 56, 65, 59 et 68 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
