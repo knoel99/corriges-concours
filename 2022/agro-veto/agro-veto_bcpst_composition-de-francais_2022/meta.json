@@ -1,0 +1,38 @@
+{
+  "slug": "agro-veto_bcpst_composition-de-francais_2022",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Composition de français",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Éduquer et préserver une part d’innocence",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://egpc.fr/pdf/9463/agro-veto-2022-composition-de-francais-enonce-9463.pdf",
+    "sha256_sujet": "a804751870fe4e539fe883781ffa879527d65b48c1b8d72bb3b8beab19998c92",
+    "rapport_jury": "https://www.concours-agro-veto.net/IMG/pdf/rapport_a-bcpst_composition_de_francais_2022.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Que devient la première expérience de l’enfant ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Mise au point de la dissertation sur les trois œuvres du programme à partir du brouillon, lecture du rapport de 2022, développement sur l’imitation, édition guidée et schéma comparatif."
+    }
+  ]
+}

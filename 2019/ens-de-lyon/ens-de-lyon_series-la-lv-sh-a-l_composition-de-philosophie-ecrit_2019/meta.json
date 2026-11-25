@@ -1,0 +1,39 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2019",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de philosophie (écrit)",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Peut-il y avoir des expériences métaphysiques ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2019-10/2019%20composition%20de%20philosophie.pdf",
+    "sha256_sujet": "d7e6751bdd8159db200963670c2c1b7b63d5dc011a85e2f68207f0c35f89df4e",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2019-11/PHILO_TC_SP_2019_0.pdf#page=1",
+    "sha256_rapport_jury": "cab4efc88afa5ea88d5a17813f193f23f67d04654f1db05d288139f8d8146115"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Qu’autorise l’épreuve dans chacun des trois cas ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport commun de 2019. Dissertation sur la différence entre observation, épreuve à la première personne et expérience de pensée. Édition guidée, objections et schéma."
+    }
+  ]
+}
