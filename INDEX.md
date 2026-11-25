@@ -243,6 +243,8 @@
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition de philosophie (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-philosophie-ecrit_2017/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition française (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2017/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuve de spécialité version grecque (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/guide.md) |
+| 2020 | ENS Rennes | D-E | Allemand | [md](2020/ens-rennes/ens-rennes_d-e_allemand_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_allemand_2020/guide.md) |
+| 2021 | ENS Rennes | D-E | Allemand | [md](2021/ens-rennes/ens-rennes_d-e_allemand_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_allemand_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Allemand | [md](2022/ens-rennes/ens-rennes_d-e_allemand_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_allemand_2022/guide.md) |
 | 2023 | ENS Rennes | D-E | Allemand | [md](2023/ens-rennes/ens-rennes_d-e_allemand_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_allemand_2023/guide.md) |
 | 2020 | ENS Rennes | D-E | Anglais | [md](2020/ens-rennes/ens-rennes_d-e_anglais_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_anglais_2020/guide.md) |
@@ -1308,6 +1310,7 @@
 | 2011 | X-ENS | MP | Physique | [md](2011/x-ens/x-ens_mp_physique_2011/brut.md) | [md](2011/x-ens/x-ens_mp_physique_2011/guide.md) |
 | 2012 | X-ENS | MP | Physique | [md](2012/x-ens/x-ens_mp_physique_2012/brut.md) | [md](2012/x-ens/x-ens_mp_physique_2012/guide.md) |
 | 2013 | X-ENS | MP | Physique | [md](2013/x-ens/x-ens_mp_physique_2013/brut.md) | [md](2013/x-ens/x-ens_mp_physique_2013/guide.md) |
+| 2014 | X-ENS | MP | Physique | [md](2014/x-ens/x-ens_mp_physique_2014/brut.md) | [md](2014/x-ens/x-ens_mp_physique_2014/guide.md) |
 | 2015 | X-ENS | MP | Physique | [md](2015/x-ens/x-ens_mp_physique_2015/brut.md) | [md](2015/x-ens/x-ens_mp_physique_2015/guide.md) |
 | 2016 | X-ENS | MP | Physique | [md](2016/x-ens/x-ens_mp_physique_2016/brut.md) | [md](2016/x-ens/x-ens_mp_physique_2016/guide.md) |
 | 2017 | X-ENS | MP | Physique | [md](2017/x-ens/x-ens_mp_physique_2017/brut.md) | [md](2017/x-ens/x-ens_mp_physique_2017/guide.md) |
