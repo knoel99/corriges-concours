@@ -32,9 +32,12 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/LVE%20Arabe.pdf",
     "sujet_psi": "https://www.ens.psl.eu/sites/default/files/vpubliee_psi_arabe_xusr_26.pdf",
-    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Arabe%20OK.pdf"
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/All%20filieres_Arabe%20OK.pdf",
+    "sujet_sha256": "aded92b14fb1be2cf906c78249a57afbf70d8359506376025700d18cc12853ae",
+    "rapport_sha256": "e4ebadda7f937c39189ba2350cc9654ccaa117a4d4c3afbe28fb733d6ff61832",
+    "sujet_psi_sha256": "1aa54123dcbe9d3e2872e6c534eb4c0e49fb637d917f24a77d690216abfb5451"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -87,6 +90,17 @@
       "modifications": true,
       "perimetre": "Vérification des deux compositions arabes contre le sujet et le rapport. Conditions du risque pour l’emploi et attribution à l’Organisation arabe du travail, portée de l’étude des deux chercheurs en Chine et de leur proposition hybride.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Attribution de la présentation émiratie au témoin cité par Iman al-Warraqi, identification du logo institutionnel, contrôle du témoignage de Dana sur sa note de 97/100 et de la portée de cet exemple, réconciliation des décomptes du guidé et du brut."
     }
   ]
 }

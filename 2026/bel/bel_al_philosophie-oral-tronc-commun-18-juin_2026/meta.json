@@ -1,0 +1,67 @@
+{
+  "slug": "bel_al_philosophie-oral-tronc-commun-18-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Philosophie (oral tronc commun 18 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun 18 juin)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_tc_al.pdf",
+    "sujet_sha256": "48b9c6ffcb2ab3e68176730d375141c63f2ab1fff5031a081264b65db1d93af1",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+  },
+  "figures": [
+    {
+      "fichier": "figures/commun.svg",
+      "legende": "La source du village, bien de qui ?",
+      "question": "1"
+    },
+    {
+      "fichier": "figures/expliquer.svg",
+      "legende": "Une explication change-t-elle le reproche ?",
+      "question": "9"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de 24 réponses distinctes pour les 12 billets, dans les deux éditions, de deux schémas et des questions de reprise avec leur réponse."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2009,
+    "duree_heures": 2
+  },
+  "questions": 12,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x_info-commune_psi-pt_2009.pdf",
+    "sujet_sha256": "6b85a95d30aca9930af1bb93fc3febe40e9ccd5e047814db274bfedba588a774"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cailloux-du-crible.svg",
+      "question": "4",
+      "legende": "État des dix cases numérotées de 2 à 11 après le passage des cailloux 2, 3 puis 5. Les nombres encore intacts sont premiers."
+    },
+    {
+      "fichier": "figures/factorisation-90.svg",
+      "question": "5",
+      "legende": "Divisions successives du reste 90. Les deux divisions consécutives par 3 fournissent l’exposant deux dans la décomposition."
+    },
+    {
+      "fichier": "figures/carmichael-561.svg",
+      "question": "10",
+      "legende": "Les trois diviseurs premiers de 561 sont distincts. Les trois divisions de 560 par leurs prédécesseurs sont exactes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des douze questions sur les nombres premiers, les puissances et les nombres de Carmichael. Original lu dans les quatre pages du PDF. Contrôle croisé des trois listes de premiers, deux factorisations et sept exposants jusqu’à 500, puis de tous les nombres de Carmichael jusqu’à 30 000 inclus. Preuve de la borne stricte du dernier crible et trois illustrations originales."
+    }
+  ]
+}

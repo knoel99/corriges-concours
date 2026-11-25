@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2018",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "La coopération intercommunale",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-e-preuve-a-option-d1-2018_1563804946515-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-public-d1-2018_1563806698100-pdf",
+    "sujet_sha256": "d5d2974c154a52539de38899a830e0d8f8b46051b7509510448b6708afa1bc6c",
+    "rapport_sha256": "ff601930cb401d291ece343d8ca44f79118f63e7761cac5cb25b797832367c6b",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2018",
+    "apercu_sujet_sha256": "d7a9a68caa7c556dbfd8833a567644b3bd948f02885735037dc838b7f3d4fee6",
+    "apercu_rapport_sha256": "add7b8e22256f9f8254c6bd1d66bbc1a022861bf2b8738b2d1cb754b4a79b100",
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "reference_garde": "R 18 - 83"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/qui-exerce-la-competence.svg",
+      "legende": "Une mutualisation de moyens et un transfert de compétence ne produisent pas les mêmes effets juridiques."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/representation-au-conseil.svg",
+      "legende": "Le fléchage ne constitue pas un scrutin séparé pour élire directement le président de l’EPCI."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « La coopération intercommunale » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « La coopération intercommunale » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

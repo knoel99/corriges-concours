@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2009
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2009.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2009_rapport_jury.pdf",
+    "sha256_sujet": "4a6e7bdda4c75d69ae7739662912ccb33d371c1d5fb58378cb4b057f500e53c2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/modes-periodiques.svg",
+      "question": "4",
+      "legende": "Pour une période de sept, la projection des sept racines de l’unité sur l’axe réel donne quatre valeurs distinctes de λ après multiplication par deux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir des trois pages du sujet et du rapport des correcteurs. Vérification des indices négatifs, des valeurs propres doubles, des modes périodiques, des normes, de la densité de l’image et du multiplicateur de Fourier. Figure des modes de période sept.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
