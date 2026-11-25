@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille associe douze tirages à deux sujets. Avant la préparation de 1 h 30, le candidat choisit entre le sujet sur la France et celui sur le monde. Le rapport prévoit 20 minutes d’exposé et 10 minutes d’entretien. Cette proposition traite les deux possibilités de chaque tirage. Pour construire un passage, justifier les bornes chronologiques, situer les acteurs sur la carte et expliquer la transition entre les périodes au moyen d’un exemple précis. Chaque sujet est suivi d’une question d’entretien et d’une réponse.
 
 ## Tirage 1
@@ -223,6 +225,8 @@ En 1981, le gouvernement de gauche engage une relance, des nationalisations et d
 En mars 1983, la décision de maintenir le franc dans le système monétaire européen après un nouvel ajustement de parité s’accompagne d’un resserrement destiné à restaurer les équilibres et à ralentir l’inflation. L’option européenne est à la fois choix politique et acceptation de contraintes négociées avec les partenaires. Le gouvernement ne renonce pas instantanément à toutes les évolutions sociales ni aux nationalisations antérieures. Il modifie la hiérarchie de ses objectifs et les instruments jugés praticables. La priorité donnée à la compétitivité et à la stabilité des prix pèse sur les négociations salariales et les rapports au sein de la gauche. La notion de tournant devient intelligible si l’on distingue le moment public de l’arbitrage, la série des décisions économiques et les interprétations militantes rétrospectives.
 
 ![Le tournant de 1983 s’inscrit dans une série d’arbitrages](figures/rigueur.svg)
+
+À la date de mars 1983, poser deux questions successives. Le franc reste-t-il dans le mécanisme de change ? Sa parité reste-t-elle identique ? Des réponses différentes expliquent pourquoi le terme de maintien ne suffit pas à résumer la décision.
 
 > [!INDICATION]
 > Fallait-il mécaniquement quitter le système monétaire européen pour poursuivre une autre politique ?

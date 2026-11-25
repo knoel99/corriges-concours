@@ -70,7 +70,7 @@
       "legende": "Dreyfus, trois effets juridiques différents"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "lecture_rapport_jury",
@@ -107,6 +107,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rapprochement des 69 lignes avec les 36 paires déjà publiées, vérification des 33 paires dans leur ordre, de la graphie inhabituelle page 6 et des repères historiques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Affaire Dreyfus, portée et autorités de la grâce de 1899 et de l’annulation de 1906."
     }
   ]
 }

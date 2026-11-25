@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille associe douze tirages à deux sujets. Avant la préparation de 1 h 30, le candidat choisit entre le sujet sur la France et celui sur le monde. Le rapport prévoit 20 minutes d’exposé et 10 minutes d’entretien. Cette proposition traite les deux possibilités de chaque tirage.
 
 ## Tirage 1
@@ -141,6 +143,10 @@ Après 1945, l’ONU articule égalité juridique des États et prérogatives de
 Le mot « tournant » suppose une rupture ; la « rigueur » désigne des choix monétaires, budgétaires et salariaux qu’il faut dater. Pourquoi mars 1983 devient-il le moment emblématique d’un changement engagé plus tôt et dont les effets se prolongent au-delà du premier septennat de François Mitterrand ?
 
 En 1981, le gouvernement de gauche engage une relance, des nationalisations et des réformes sociales dans un contexte international de chômage, d’inflation et de lutte contre la hausse des prix. La consommation supplémentaire soutient aussi des importations, alors que l’économie française est insérée dans le marché européen. Équilibre extérieur et stabilité du franc deviennent des contraintes aiguës. Une première dévaluation en 1981, puis en 1982 une seconde dévaluation et un blocage temporaire des prix et des salaires montrent que les arbitrages précèdent mars 1983. Les partisans d’une poursuite de la relance envisagent des protections accrues et une plus grande liberté de change, avec des coûts propres.
+
+Dans le système monétaire européen, une monnaie peut changer de cours pivot par un réalignement négocié. Maintenir le franc dans le système et en ajuster la parité sont donc deux décisions compatibles. L’arbitrage de 1983 porte aussi sur les mesures intérieures qui doivent rendre la nouvelle parité tenable.
+
+![Figure 1 — Le tournant de 1983 s’inscrit dans une série d’arbitrages](figures/rigueur.svg)
 
 En mars 1983, la décision de maintenir le franc dans le système monétaire européen après un nouvel ajustement de parité s’accompagne d’un resserrement destiné à restaurer les équilibres et à ralentir l’inflation. L’option européenne est à la fois choix politique et acceptation de contraintes négociées avec les partenaires. Le gouvernement ne renonce pas instantanément à toutes les évolutions sociales ni aux nationalisations antérieures. Il modifie la hiérarchie de ses objectifs et les instruments jugés praticables. La priorité donnée à la compétitivité et à la stabilité des prix pèse sur les négociations salariales et les rapports au sein de la gauche. La notion de tournant devient intelligible si l’on distingue le moment public de l’arbitrage, la série des décisions économiques et les interprétations militantes rétrospectives.
 
