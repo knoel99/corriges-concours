@@ -1,0 +1,66 @@
+{
+  "slug": "ens_mp-pc_grec-ancien-le2_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Grec ancien (LE2)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Lysias, Sur le meurtre d’Ératosthène, § 32",
+  "questions": 1,
+  "redaction": "Version complète de Lysias, lecture du fac-similé grec et du rapport. Analyse des deux peines, des propositions infinitives et de la conclusion du plaideur.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-le2.pdf#page=11",
+    "sha256_sujet": "abc85dfcdb7fda6150491a22303fe0eab40a3ce1dab5961ead0b135ae8653512",
+    "page": 11,
+    "etablissements": "ENS de Paris et de Cachan",
+    "indexes": [
+      "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+      "https://www.ens.psl.eu/en/node/825"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/PC/pc-ecrit-grec.pdf",
+    "sha256_rapport_jury": "e5e81578066cc92e0c425276223382d5a1c03424b791bd3543c5794f8a5a7ee5",
+    "reference_du_texte": "Lysias, Sur le meurtre d’Ératosthène, § 32 (référence précisée par le rapport)."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/oppositions.svg",
+      "legende": "Les référents changent d’ordre entre la comparaison initiale et l’explication des peines."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport de David-Artur Daix identifie le paragraphe 32, l’amende portée au double, les deux infinitives et la consécutive. Son explication contrôle notamment le renvoi des pronoms et l’attribut final."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version complète de Lysias, lecture du fac-similé grec et du rapport. Analyse des deux peines, des propositions infinitives et de la conclusion du plaideur."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  }
+}
