@@ -1,0 +1,86 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2006",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2006
+  },
+  "questions": 31,
+  "redaction": "Les six questions sur les éléments optiques, les onze sur le Fabry–Pérot et les quatorze sur le Michelson sont traitées. Le résultat quasi statique demandé pour Virgo est confronté à la largeur de bande déduite des constantes du sujet.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2006/sujet-ecrit-2006-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "1ad05e0e9c5c26385873dada6661e9db7519264d64579392de70aff704cf97b3"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.a.3",
+      "fichier": "figures/onde-stationnaire.svg",
+      "legende": "Champ devant le miroir. Les nœuds fixes séparent des ventres dont les oscillations sont en opposition de phase."
+    },
+    {
+      "numero": 2,
+      "question": "II.4",
+      "fichier": "figures/cavite-intensite-phase.svg",
+      "legende": "Détail du sommet d’un pic du coupleur à 99 %. Le trait pointillé correspond à la mi-hauteur. La phase principale change de branche au centre."
+    },
+    {
+      "numero": 3,
+      "question": "III.4",
+      "fichier": "figures/franges-de-michelson.svg",
+      "legende": "Deux sorties du Michelson. Les points de quadrature donnent la plus grande variation d’intensité pour une petite variation de phase."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Les six questions sur les éléments optiques, les onze sur le Fabry–Pérot et les quatorze sur le Michelson sont traitées. Le résultat quasi statique demandé pour Virgo est confronté à la largeur de bande déduite des constantes du sujet.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.a.1",
+      "I.a.2",
+      "I.a.3",
+      "I.b.1",
+      "I.b.2",
+      "I.b.3",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "III.12",
+      "III.13",
+      "III.14"
+    ]
+  }
+}
