@@ -1,0 +1,59 @@
+{
+  "slug": "ens_mp-pc_anglais-lv1_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LV1)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "The Perfect Way to Slice a Pizza",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-lv1.pdf#page=3",
+    "sujet_sha256": "05dc37885caedddf4858adb064ff462aa7a3a1748ac0b98339edfada8569615a",
+    "page_pdf": 3,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+    "etablissements_imprimes": "ENS de Paris, Lyon et Cachan",
+    "texte_support": "Adaptation de New Scientist, 11 décembre 2009."
+  },
+  "redaction": "Version française du texte complet, avec marques de coupe de l’extrait, puis deux réponses argumentées en anglais sur le portrait des mathématiciens et les finalités de la recherche. Diagramme géométrique fidèle au protocole.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/parts-alternees.svg",
+      "legende": "Exemple de quatre coupes traversantes. Les angles sont égaux au point P, distinct du centre O, et les deux convives alternent leurs choix."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version française du texte complet, avec marques de coupe de l’extrait, puis deux réponses argumentées en anglais sur le portrait des mathématiciens et les finalités de la recherche. Diagramme géométrique fidèle au protocole.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II.1",
+      "II.2"
+    ]
+  }
+}
