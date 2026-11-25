@@ -1,0 +1,113 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2016",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2016
+  },
+  "questions": 45,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/02/16_2c_chimie.pdf",
+    "sujet_sha256": "44ca6e7615959345f7a12030d48caec7020c40ce2145fadf5406126c89cc4ac8",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/11/16_2c_rap_eChimie.pdf",
+    "rapport_sha256": "43f044fe2457fb0ac47c76831d70a1b4910b4d5b297e5a76024954f9e6f60c43"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5",
+      "A.6",
+      "A.7",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.8",
+      "B.9",
+      "B.10",
+      "B.11",
+      "C.1",
+      "C.2",
+      "C.3",
+      "C.4",
+      "C.5",
+      "C.6",
+      "C.7",
+      "C.8",
+      "C.9",
+      "D.1",
+      "D.2",
+      "D.3",
+      "D.4",
+      "D.5",
+      "D.9",
+      "D.12",
+      "D.13",
+      "D.14",
+      "D.15",
+      "D.16"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "B.5",
+      "B.6",
+      "B.7",
+      "D.6",
+      "D.7",
+      "D.8",
+      "D.10",
+      "D.11",
+      "D.17",
+      "D.18"
+    ],
+    "precision": "Ces éditions traitent 35 des 45 questions. Les parties A et C sont entières. En B, les détails de procédé B.5 à B.7 sont hors couverture. En D, les questions D.6 à D.8, D.10, D.11, D.17 et D.18 portant sur des séquences réactionnelles sont hors couverture. La géométrie, la lecture des groupes, la stéréochimie et les propriétés spectroscopiques sont traitées. Le rapport écrit décrit les thèmes et les attendus généraux. La coquille de l’annexe sur la masse molaire de l’aluminium est explicitée en C.4."
+  },
+  "figures": [
+    {
+      "question": "A.2",
+      "fichier": "figures/geometries-autour-du-silicium.svg",
+      "legende": "Projections des sphères de coordination pour quatre, cinq et six ligands. Les segments pointillés désignent des liaisons dirigées vers l’arrière du dessin."
+    },
+    {
+      "question": "A.3",
+      "fichier": "figures/plans-du-diamant.svg",
+      "legende": "Plans de la maille cubique de silicium. Les ronds du réseau CFC et les carrés des sites tétraédriques occupés représentent tous le même élément."
+    },
+    {
+      "question": "C.8",
+      "fichier": "figures/levier-a-1700-degres.svg",
+      "legende": "Lecture isotherme du côté riche en silice. Une extrémité donne la composition du liquide et l’autre celle du solide. Les proportions sont inverses aux bras qui aboutissent à chaque phase."
+    },
+    {
+      "question": "C.9",
+      "fichier": "figures/refroidissement-silice-alumine.svg",
+      "legende": "À 44,9 % massiques d’alumine, une première rupture de pente précède le palier eutectique. Les temps sont schématiques, les températures sont lues sur le diagramme."
+    },
+    {
+      "question": "D.2",
+      "fichier": "figures/priorites-de-lepoxyde.svg",
+      "legende": "Positions des deux configurations dans l’époxyde dessiné. Les liaisons pleines en coin vers O viennent en avant. Les hydrogènes implicites sont en arrière."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les 35 questions identifiées. Lecture du PDF de huit pages, de la figure de phases silice–alumine, des stéréostructures et du rapport de 2016. Calculs cristallographiques, bilans de masses et règles CIP confrontés aux dessins. Cinq figures originales. Les dix questions hors couverture sont identifiées."
+    }
+  ]
+}
