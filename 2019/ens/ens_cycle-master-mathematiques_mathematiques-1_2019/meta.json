@@ -1,0 +1,36 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques-1_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques 1",
+    "annee": 2019
+  },
+  "questions": 45,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2019_SE2C_MATHS_Maths1.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "7836ccf16e44e2573abc99fb15a1aa7e1cdfd77591e96c822c74181bd14a4728"
+  },
+  "figures": [
+    {
+      "fichier": "figures/symbole-difference-seconde.svg",
+      "question": "34",
+      "legende": "Le symbole de la différence seconde parcourt tout le segment de −4 à 0. Aucun de ses niveaux ne contient un ensemble de mesure positive."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 36 questions et de toutes les sous-questions des sections A à C, d’après les huit pages du cahier de mathématiques 1. Vérification des domaines des adjoints, de la normalisation de Fourier, des régularisations et des inverses de multiplicateurs sans recourir à la théorie des distributions. Figure du symbole discret. Aucun rapport associé dans le registre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
