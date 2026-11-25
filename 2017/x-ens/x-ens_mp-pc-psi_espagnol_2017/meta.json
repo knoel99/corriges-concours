@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "La paix colombienne après le plébiscite",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/2017_MPPC_sujet_eEsp.pdf",
+    "sujet_sha256": "d55bb18d1f05833b947d63b0d53b41c474114525ac11104956fc719a6cc9b6e9",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2017/",
+    "code_garde": "XEULCR",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP-PC_rap_eEsp.pdf",
+    "rapport_sha256": "34c48a4c02347e7d17adaf3ea10570f6d7e68852ed69e6697691440b5deaa135",
+    "index_rapport": "https://banques-ecoles.fr/cms/session-2017-5/"
+  },
+  "redaction": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/signature-vote-negociation.svg",
+      "legende": "Le vote sur un accord précis laisse ouvertes les conditions de la paix."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "longueurs_hors_titre": {
+    "synthese_mots": 619,
+    "opinion_mots": 528
+  }
+}
