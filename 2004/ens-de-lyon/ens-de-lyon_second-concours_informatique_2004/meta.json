@@ -1,0 +1,42 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2004",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2004,
+    "duree_heures": 3
+  },
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2004/sujet-ecrit-2004-second-concours_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sujet_sha256": "f3ea654738ae1ad115c5cc17fed1e140d810a432c1a7320f89ea98e469ec2569"
+  },
+  "figures": [
+    {
+      "fichier": "figures/seuil-et-frontiere.svg",
+      "question": "6",
+      "legende": "Figure 1 — Pour trois bits vrais parmi cinq, le dernier seuil vrai a l’indice 3. C’est la seule sortie active du code exact."
+    },
+    {
+      "fichier": "figures/selection-du-couple.svg",
+      "question": "8",
+      "legende": "Figure 2 — Avec huit seuils et cinq bits vrais, le couple numéro 2 contient les seuils 4 et 5. Tous deux sont vrais, ce qui sélectionne la seconde sortie du couple."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Seize questions du sujet commun Ulm–Lyon, générateurs en Python, preuve de la borne inférieure sur les négations et dénombrement exact des portes. Contrôle par évaluation des équations produites."
+    }
+  ]
+}
