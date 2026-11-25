@@ -1,0 +1,52 @@
+{
+  "slug": "agro-veto_bcpst_maths_2022",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2022
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet2022.pdf",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport2022_math_mullaert.pdf",
+    "sha256_sujet": "4a15be04a9cec2f089f955407fc6966ee3f6ee38924a9e0a25ee799d69e930a0",
+    "sha256_rapport_jury": "d19b5fc8697b14aa8da75413959605add8890b28cefc4545ac004c21fe2746df"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-trois-boules.svg",
+      "question": "Exercice 1, 2",
+      "legende": "Arbre pondéré des trajectoires pour une urne de taille trois."
+    },
+    {
+      "fichier": "figures/rectangles-integrales.svg",
+      "question": "Exercice 1, 8a",
+      "legende": "Comparaison de la fonction inverse au rectangle de hauteur 1/3."
+    },
+    {
+      "fichier": "figures/modes-du-maillage.svg",
+      "question": "Exercice 2, 8c",
+      "legende": "Échantillons des trois premiers modes propres pour N = 6."
+    },
+    {
+      "fichier": "figures/amplification-des-erreurs.svg",
+      "question": "Exercice 2, 19",
+      "legende": "Conditionnement euclidien du système pour λ = −1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction indépendante des deux versions des exercices 1 (questions 1–10) et 2 (questions 1–19). Lecture des scans et du rapport associé, justification du facteur de normalisation avec second membre, calcul du conditionnement et quatre figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths_suite"
+    }
+  ]
+}
