@@ -1,0 +1,44 @@
+{
+  "slug": "ens-rennes_d-e_mathematiques-appliquees_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2021
+  },
+  "questions": 44,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-e-preuve-a-options-2021_1631710076477-pdf#page=6",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-math-d-e-2021_1634310361523-pdf",
+    "sha256_sujet": "d8612cee0df50123bdd19622666bb15cfef74d817277e92487eeb9bef86a8170",
+    "sha256_rapport_jury": "504c6509fd6870098a443dabc52fcb7b786c01497561c73069559250862a45cb",
+    "sha256_apercu_sujet": "c3cd2682b4b0192c084fa23d199e24833c38da170509cc7506ec6d9ea6aa00aa",
+    "sha256_apercu_rapport_jury": "367c1b72d773917217cf7588fea0f960f8b9a6396c8b8f7b4e27ca31a046c301"
+  },
+  "figures": [
+    {
+      "fichier": "figures/emissions-francaises.svg",
+      "question": "1.1.a",
+      "legende": "Les neuf points observés et la droite des moindres carrés. Un rang en abscisse occupe deux fois la longueur de 0,1 tonne en ordonnée."
+    },
+    {
+      "fichier": "figures/trois-fonctions-gaussiennes.svg",
+      "question": "2.II.4",
+      "legende": "Les courbes pour n égal à 0, 1 et 2 dans un repère orthonormé. Les trois passent par le même point à l’abscisse 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des trois exercices avec le fascicule officiel pages 6 à 11 et le rapport 2021. Vérification numérique des quartiles, coefficients, seuil annuel et probabilités ; contrôle des hypothèses de la binomiale, des arrondis du sujet et de la convergence des intégrales. Deux figures aux rapports d’échelles demandés.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
