@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2020",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2020,
+    "duree_heures": 4
+  },
+  "questions": 22,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MP_sujet_InfoMath.pdf",
+    "sujet_sha256": "856abf67d717fce3e41d8af5574cc8be8b81ac42e20243117d793bef6ab211e8",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/12/20_MP_rap_eInfoMath.pdf",
+    "rapport_sha256": "937a57eb4fc430eb3501799dd3866e5ee88e238c509d42952c91000d2e5d3f78"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q11-ordres.svg",
+      "question": "Q1.1",
+      "legende": "Dans chacun des types de base, une chaîne qui a quitté le bas conserve définitivement sa valeur."
+    },
+    {
+      "fichier": "figures/q23-factorielle.svg",
+      "question": "Q2.3",
+      "legende": "Les entrées définies progressent d’une colonne à chaque dépliage de la factorielle. L’argument indéfini reste indéfini."
+    },
+    {
+      "fichier": "figures/q45-prefiques.svg",
+      "question": "Q4.5",
+      "legende": "Exemple de prédicat acceptant sur les préfixes F, VF et VV. Toutes les branches sont couvertes après deux bits au plus."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 22 questions et de leurs subdivisions à partir des originaux du sujet et du rapport du jury. Utilisation des clauses de la page 13, construction explicite du quantificateur de Cantor et preuve dans les deux sens. Vérifications finies des approximations et du quantificateur sur les prédicats de préfixes de profondeur trois. Trois figures originales."
+    }
+  ]
+}
