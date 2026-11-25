@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **L'épreuve.** Épreuve FP4, commune aux filières MP, MPI, PC, PSI, TPC et TSI et mutualisée avec e3a-Polytech : 4 heures, sans document ni machine. Deux exercices évalués indépendamment mais « formant un ensemble cohérent » : un **résumé** (20 points, un tiers de la note) et une **dissertation** (40 points, deux tiers). Contraintes matérielles : résumé en **100 mots ± 10 %** (donc de 90 à 110 mots) sur la page 2 du Document Réponse, un mot par trait pointillé, changements de paragraphe marqués par une double barre verticale ; début de la dissertation sur les pages 3 et 4 du Document Réponse ; le mot FIN à la fin de la composition. L'énoncé précise que le respect du nombre de mots « représente une part significative du barème » du résumé et que la présentation, l'orthographe et la clarté comptent pour une part importante dans toute la copie. Le rapport 2026 parle, lui, de 10 points pour le résumé et 20 pour la dissertation : la proportion d'un tiers et deux tiers est la même. Il rappelle aussi l'ordre de travail : « L'exercice du résumé doit donc toujours être traité en premier. » (p. 1), car la citation à discuter s'éclaire de l'ensemble du texte.
@@ -257,6 +259,8 @@ Habiter la nature, enfin, ne relève pas d'un don mais d'un apprentissage, et *L
 Quand Aronnax croit reconnaître un grand animal marin dans ce qu’il observe au large, le geste a d’abord la forme même de la reconnaissance. Pourtant, ce qu’il traite comme un corps vivant est une construction métallique. Le contact avec la coque oblige à modifier jusqu’à la catégorie d’être dont on cherchait à connaître l’espèce. L’expérience première a donc bien mis l’observateur en rapport avec quelque chose de réel ; elle ne rendait pas, par sa seule intensité, cet objet entièrement intelligible.
 
 ![Du familier au jugement vérifié](figures/lecture-du-sujet.svg)
+
+Décrire successivement ce que le naturaliste reconnaît, ce que cette reconnaissance lui fait attendre et le signe qui lui impose de reprendre l’enquête. Ces trois moments appartiennent à la dissertation et laissent intact le décompte du résumé.
 
 La formule de Raine semble donc démentie : loin d'être un écran, le savoir acquis est souvent la condition pour voir ce qui est. Faut-il pour autant renvoyer l'intuition à l'illusion ?
 

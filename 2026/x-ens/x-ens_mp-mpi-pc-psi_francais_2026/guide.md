@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve commune du 13 avril 2026 dure quatre heures. Elle demande une dissertation discutant un extrait du *Traité des sensations* de Condillac à partir des trois œuvres du programme « Expériences de la nature ». Chez Canguilhem, il s’agit de l’introduction, de la partie I et des chapitres II à V de la partie III de *La Connaissance de la vie*. Les deux romans sont *Vingt mille lieues sous les mers* et *Le Mur invisible*. On peut réserver 45 minutes à l’analyse et au plan, trois heures à la rédaction et quinze minutes à la relecture. [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Fran%C3%A7ais.pdf) · [Programme 2025–2026](https://www.education.gouv.fr/bo/2025/Hebdo23/MENS2514209A)
@@ -77,6 +79,8 @@ La progression part d’un contraste sensible dont le corps saisit immédiatemen
 - La technique du *Nautilus* agrandit à la fois les moyens de connaître de Nemo et ceux de poursuivre sa vengeance. La réussite technique laisse ouverte la question de l’usage juste.
 
 ![Figure 3 — Le partage de l’air distingue le besoin que tous éprouvent de la valeur qui motive le don](figures/partage-de-lair.svg)
+
+Identifier le signal commun aux trois hommes et préciser à qui profite le geste de Conseil et de Ned. Ce déplacement du bénéficiaire est ce que l’analyse doit expliquer au-delà de la sensation de manque.
 
 ## Références et exemples
 
