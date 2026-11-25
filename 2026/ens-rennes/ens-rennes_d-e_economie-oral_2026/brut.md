@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’ENS Rennes publie vingt-trois sujets d’économie pour les oraux du concours D–E 2026. Chaque numéro ci-dessous reprend un intitulé, dans l’ordre du document.
 
 ## 1. Doit-on encore lutter contre l’inflation ?
@@ -139,6 +141,10 @@ Les mandats restent des choix institutionnels. La BCE a pour objectif principal 
 Le compte courant regroupe biens, services, revenus primaires et transferts courants. Un pays peut importer davantage de biens qu’il n’en exporte tout en recevant des revenus substantiels d’actifs détenus à l’étranger. Le commerce de marchandises ne détermine donc pas seul le solde. Du point de vue des comptes intérieurs, l’écart entre épargne nationale et investissement permet de retrouver le même solde, en cohérence avec le revenu national disponible.
 
 La démographie, le cycle budgétaire et privé, les investissements en infrastructures et l’accès au financement modifient épargne et investissement. Les prix de l’énergie importée, la qualité de l’offre et le taux de change réel affectent échanges et revenus. Après une dépréciation, les prix en monnaie nationale peuvent réagir avant les volumes prévus par contrat. Le solde peut ainsi se détériorer d’abord. Un diagnostic sépare facteurs temporaires et structurels puis examine le financement et ses risques. Un déficit courant finançant des machines productives n’a pas la même trajectoire probable qu’un déficit accompagné d’engagements courts en devises sans revenus futurs correspondants.
+
+Prenons une économie dont le revenu national disponible est 100, la consommation finale 78 et l’investissement 25, en unités comparables. L’épargne nationale est 22. Le déficit courant de 3 traduit l’écart entre les ressources épargnées et l’investissement réalisé. Deux économies peuvent afficher ce même déficit, l’une parce que ses entreprises investissent davantage, l’autre parce que sa consommation augmente à revenu donné.
+
+![Figure 1 — Deux lectures du même solde courant](figures/compte-courant.svg)
 
 ## 23. La crédibilité d’une banque centrale est-elle son principal instrument ?
 

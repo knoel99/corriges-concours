@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le fascicule publié par l’ENS Rennes comporte vingt-trois fiches. Les numéros imprimés vont de 1 à 21 puis de 23 à 24. Chaque réponse traite la question théorique et le cas pratique de la même page.
 
 Le guide ajoute une relance à chaque cas. Pour la préparer, annoncer la qualification qui commande le résultat, préciser quel fait reste à établir, puis répondre à l’objection. Le sujet 18 est confronté à la décision publiée sur la personne qui descendait de voiture.
@@ -96,6 +98,8 @@ La licéité du récit de la mort et celle d’une photographie exposant le corp
 **Distribution d’eau.** Ordonner une livraison au robinet sans aucune interruption contredirait directement les suspensions prescrites par les arrêtés préfectoraux. L’exécution demandée est juridiquement impossible tant que ces mesures s’appliquent. Le prix est une question distincte. La Cour de cassation a admis, sur un cas analogue, que le créancier peut demander au juge une réduction du prix même s’il n’a pas encore payé tout ou partie de la prestation. Il appartient au juge d’apprécier l’exécution imparfaite et la proportion de la réduction. Les 90 % ne sont donc pas acquis : il faut documenter les périodes de desserte, l’utilité effectivement reçue et ce que rémunère l’abonnement. La demande d’injonction peut échouer alors que la demande sur le prix reçoit examen. [Cass. 1re civ., 18 décembre 2024, n° 24-14.750](https://www.legifrance.gouv.fr/juri/id/JURITEXT000050868568)
 
 ![Deux demandes issues d’une même interruption](figures/eau.svg)
+
+Dressez deux colonnes pour la question 8 : la mesure que le juge devrait ordonner aujourd’hui et la contrepartie financière des services reçus. Une injonction incompatible avec les arrêtés et une réduction proportionnelle du prix appellent deux examens distincts.
 
 > [!INDICATION]
 > L’impossibilité d’assurer le service continu prouve-t-elle que le client a reçu l’intégralité de ce pour quoi il payait  ?
