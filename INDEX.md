@@ -1051,12 +1051,16 @@
 | 2010 | ENS | MP-PC | Allemand (LV1) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/guide.md) |
 | 2011 | ENS | MP-PC | Anglais (langue étrangère B) | [md](2011/ens/ens_mp-pc_anglais-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_anglais-langue-etrangere-b_2011/guide.md) |
 | 2005 | ENS | MP-PC | Anglais (LE2) | [md](2005/ens/ens_mp-pc_anglais-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_anglais-le2_2005/guide.md) |
+| 2006 | ENS | MP-PC | Anglais (LE2) | [md](2006/ens/ens_mp-pc_anglais-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_anglais-le2_2006/guide.md) |
 | 2009 | ENS | MP-PC | Anglais (LE2) | [md](2009/ens/ens_mp-pc_anglais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_anglais-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Anglais (LE2) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/guide.md) |
 | 2005 | ENS | MP-PC | Anglais (LV1) | [md](2005/ens/ens_mp-pc_anglais-lv1_2005/brut.md) | [md](2005/ens/ens_mp-pc_anglais-lv1_2005/guide.md) |
+| 2006 | ENS | MP-PC | Anglais (LV1) | [md](2006/ens/ens_mp-pc_anglais-lv1_2006/brut.md) | [md](2006/ens/ens_mp-pc_anglais-lv1_2006/guide.md) |
 | 2009 | ENS | MP-PC | Anglais (LV1) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Anglais (LV1) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/guide.md) |
 | 2011 | ENS | MP-PC | Arabe (langue étrangère B) | [md](2011/ens/ens_mp-pc_arabe-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_arabe-langue-etrangere-b_2011/guide.md) |
+| 2005 | ENS | MP-PC | Arabe (LE2) | [md](2005/ens/ens_mp-pc_arabe-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_arabe-le2_2005/guide.md) |
+| 2006 | ENS | MP-PC | Arabe (LE2) | [md](2006/ens/ens_mp-pc_arabe-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_arabe-le2_2006/guide.md) |
 | 2009 | ENS | MP-PC | Arabe (LE2) | [md](2009/ens/ens_mp-pc_arabe-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_arabe-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Arabe (LE2) | [md](2010/ens/ens_mp-pc_arabe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_arabe-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Chinois (langue étrangère B) | [md](2011/ens/ens_mp-pc_chinois-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_chinois-langue-etrangere-b_2011/guide.md) |
@@ -1439,6 +1443,9 @@
 | 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2015 | X-ENS | MP-PC-PSI | Allemand | [md](2015/x-ens/x-ens_mp-pc-psi_allemand_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_allemand_2015/guide.md) |
+| 2016 | X-ENS | MP-PC-PSI | Allemand | [md](2016/x-ens/x-ens_mp-pc-psi_allemand_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_allemand_2016/guide.md) |
+| 2017 | X-ENS | MP-PC-PSI | Allemand | [md](2017/x-ens/x-ens_mp-pc-psi_allemand_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_allemand_2017/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Anglais | [md](2015/x-ens/x-ens_mp-pc-psi_anglais_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_anglais_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Anglais | [md](2016/x-ens/x-ens_mp-pc-psi_anglais_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_anglais_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Anglais | [md](2017/x-ens/x-ens_mp-pc-psi_anglais_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_anglais_2017/guide.md) |
@@ -1598,7 +1605,11 @@
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2005 | X | MP-PC | Anglais | [md](2005/x/x_mp-pc_anglais_2005/brut.md) | [md](2005/x/x_mp-pc_anglais_2005/guide.md) |
+| 2005 | X | MP-PC | Arabe | [md](2005/x/x_mp-pc_arabe_2005/brut.md) | [md](2005/x/x_mp-pc_arabe_2005/guide.md) |
+| 2006 | X | MP-PC | Arabe | [md](2006/x/x_mp-pc_arabe_2006/brut.md) | [md](2006/x/x_mp-pc_arabe_2006/guide.md) |
 | 2005 | X | MP-PC | Français | [md](2005/x/x_mp-pc_francais_2005/brut.md) | [md](2005/x/x_mp-pc_francais_2005/guide.md) |
+| 2006 | X | MP-PC | Français | [md](2006/x/x_mp-pc_francais_2006/brut.md) | [md](2006/x/x_mp-pc_francais_2006/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
