@@ -1,0 +1,76 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-29-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 29 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 29 juin)",
+  "questions": 9,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/francais3_29_juin_2026.pdf",
+    "sujet_sha256": "2817724b966883a9a6679d3ff40cf9a593ca9dc664532c26b2efd82d80db75a6",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/Les_Diaboliques/Le_bonheur_dans_le_crime",
+      "https://fr.wikisource.org/wiki/Jacques_le_Fataliste_et_son_ma%C3%AEtre",
+      "https://fr.wikisource.org/wiki/Les_Regrets_(du_Bellay)",
+      "https://fr.wikisource.org/wiki/La_guerre_de_Troie_n%E2%80%99aura_pas_lieu/Acte_I",
+      "https://classiques.uqam.ca/contemporains/leiris_michel/age_dHomme/age_dHomme.html",
+      "https://fr.wikisource.org/wiki/La_Vie_de_Marianne_(%C3%A9d._Duviquet)",
+      "https://fr.wikisource.org/wiki/Histoires_ou_Contes_du_temps_pass%C3%A9_(1697)/Original/Les_F%C3%A9es",
+      "https://fr.wikisource.org/wiki/Les_%C5%92uvres_de_Fran%C3%A7ois_Rabelais_(%C3%89ditions_Marty-Laveaux)/Pantagruel/32",
+      "https://fr.wikisource.org/wiki/Po%C3%A9sies_(Rimbaud)/%C3%A9d._Vanier,_1895/Oraison_du_soir"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/regards.svg",
+      "question": "1",
+      "legende": "Barbey, qui voit quoi devant la cage ?"
+    },
+    {
+      "fichier": "figures/doublelecture.svg",
+      "question": "5",
+      "legende": "Leiris relit son propre projet autobiographique"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Neuf explications linéaires et neuf questions de reprise, deux schémas sur les changements de regard chez Barbey et le retour critique de Leiris sur son livre."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation des neuf entrées aux textes, vérification du titre de Barbey, des variantes de Diderot et de Rabelais, de la préface de Leiris et de la limite du conte de Perrault, lecture du rapport du jury."
+    }
+  ]
+}

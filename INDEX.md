@@ -184,6 +184,7 @@
 | 2026 | BEL | AL | Français (oral tronc commun 19 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 24 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 26 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 29 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 30 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Grec (oral option, exemple du jury Ploutos) | [md](2026/bel/bel_al_grec-oral-option-exemple-du-jury-ploutos_2026/brut.md) | [md](2026/bel/bel_al_grec-oral-option-exemple-du-jury-ploutos_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
@@ -568,6 +569,7 @@
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Géosciences | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/guide.md) |
+| 2010 | ENS de Lyon | Second concours | Géosciences | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Géosciences | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
@@ -635,6 +637,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2017 | ENS | MP | Informatique-mathématiques | [md](2017/ens/ens_mp_informatique-mathematiques_2017/brut.md) | [md](2017/ens/ens_mp_informatique-mathematiques_2017/guide.md) |
 | 2018 | ENS | MP | Informatique-mathématiques | [md](2018/ens/ens_mp_informatique-mathematiques_2018/brut.md) | [md](2018/ens/ens_mp_informatique-mathematiques_2018/guide.md) |
 | 2019 | ENS | MP | Informatique-mathématiques | [md](2019/ens/ens_mp_informatique-mathematiques_2019/brut.md) | [md](2019/ens/ens_mp_informatique-mathematiques_2019/guide.md) |
 | 2020 | ENS | MP | Informatique-mathématiques | [md](2020/ens/ens_mp_informatique-mathematiques_2020/brut.md) | [md](2020/ens/ens_mp_informatique-mathematiques_2020/guide.md) |
@@ -887,6 +890,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2015 | X-ENS | MP | Informatique A | [md](2015/x-ens/x-ens_mp_informatique-a_2015/brut.md) | [md](2015/x-ens/x-ens_mp_informatique-a_2015/guide.md) |
 | 2016 | X-ENS | MP | Informatique A | [md](2016/x-ens/x-ens_mp_informatique-a_2016/brut.md) | [md](2016/x-ens/x-ens_mp_informatique-a_2016/guide.md) |
 | 2017 | X-ENS | MP | Informatique A | [md](2017/x-ens/x-ens_mp_informatique-a_2017/brut.md) | [md](2017/x-ens/x-ens_mp_informatique-a_2017/guide.md) |
 | 2018 | X-ENS | MP | Informatique A | [md](2018/x-ens/x-ens_mp_informatique-a_2018/brut.md) | [md](2018/x-ens/x-ens_mp_informatique-a_2018/guide.md) |
