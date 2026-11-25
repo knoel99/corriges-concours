@@ -1,0 +1,48 @@
+{
+  "slug": "x_psi-pt_informatique-facultative_2003",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique facultative",
+    "annee": 2003,
+    "duree_heures": 2
+  },
+  "questions": 9,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2003.pdf",
+    "sujet_sha256": "14d4de0bac00798034a8ad8b4ce22704750ae0015416cfafd567cd3a3ba94fdb",
+    "rapport": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2003.pdf#page=5",
+    "rapport_sha256": "14d4de0bac00798034a8ad8b4ce22704750ae0015416cfafd567cd3a3ba94fdb"
+  },
+  "figures": [
+    {
+      "fichier": "figures/parite-du-message.svg",
+      "question": "2",
+      "legende": "Le message de l’exemple comporte cinq bits à 1. La case de contrôle reçoit 1 et le total transmis devient pair."
+    },
+    {
+      "fichier": "figures/division-dans-le-corps-binaire.svg",
+      "question": "6",
+      "legende": "Division du message augmenté 01110100 par 101. Chaque ligne retire une copie décalée du générateur et les deux dernières cases de la ligne finale contiennent le reste 11."
+    },
+    {
+      "fichier": "figures/contenu-du-registre.svg",
+      "question": "8",
+      "legende": "États du registre après le mot 00001 et de zéro à cinq bits nuls. Au cinquième décalage, le bit sortant agit sur les trois prises du circuit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des neuf questions, après lecture du sujet p. 1 à 4 et du rapport de Marc Pouzet p. 5 à 8. Division polynomiale, version à registre circulaire, vérification sur tous les petits mots et générateurs de degré au plus sept. Vérification de la discordance entre les quatre zéros du texte et les cinq nécessaires pour le circuit dessiné. Trois illustrations originales."
+    }
+  ]
+}
