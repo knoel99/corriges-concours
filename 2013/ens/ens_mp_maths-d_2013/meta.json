@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-d_2013",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2013
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mp_math_d_u.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mpi_rap_emathd.pdf",
+    "sha256_sujet": "524444d100226f42c0623d665550a0ecb9286f966d0bbabf957e2b5e91e9fcb0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/face-de-newton.svg",
+      "question": "17.a",
+      "legende": "Exemple de support où les points de la droite i + j = 3 fournissent le polynôme initial pondéré."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions de l’épreuve d’Ulm de six heures, avec lecture du sujet et du rapport. Contrôle des multiplicités, du polygone de Newton, de la normalisation de signe, du dénombrement de Weyl et de l’approximation par hyperbolicité stricte. Schéma original de la face de poids minimal.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
