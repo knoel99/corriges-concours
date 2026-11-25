@@ -1,0 +1,79 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2009",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Entreprise individuelle et société unipersonnelle",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/epreuve-a-options-d1_1423059195691-pdf#page=2",
+    "sujet_sha256": "f8bfda7ba3c3b7a4d1c4cfdb9963f6e754fc10641f1a7affc8596985a2e16dab",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/re1a-09d1-droit-commercial-1_1423059225556-pdf",
+    "rapport_sha256": "d40fe821c62445023290b4e2e9b7d566026002567979d1a12d33a72e25c26844",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code de commerce en avril 2009": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379/2009-04-01/",
+      "Loi de modernisation de l’économie du 4 août 2008": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000019283050/2009-04-01/"
+    },
+    "articles_session": {
+      "L223-1": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019291708/2009-04-01",
+      "L223-2": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006222861/2009-04-01",
+      "L223-31": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019291719/2009-04-01",
+      "L227-1": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019291777/2009-04-01",
+      "L227-9": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019291762/2009-04-01"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/titulaire-et-dette.svg",
+      "legende": "En société immatriculée, titres et biens apportés ont des titulaires distincts."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/garanties.svg",
+      "legende": "Chaque obligation éventuelle repose sur une base juridique différente."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Entreprise individuelle et société unipersonnelle » à partir des pièces distribuées ou conservées par l’ENS Rennes. Attribution des biens, immatriculation, transmission, protection déclarative, caution, insuffisance d’actif, portée concrète du capital, fiducie et projet de patrimoine affecté dans le droit de 2009.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport provisoire commerce, deux pages. Comparaison autour du risque entrepreneurial, incidences de la LME et limites de la protection de l’associé unique."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Entreprise individuelle et société unipersonnelle » à partir des pièces distribuées ou conservées par l’ENS Rennes. Attribution des biens, immatriculation, transmission, protection déclarative, caution, insuffisance d’actif, portée concrète du capital, fiducie et projet de patrimoine affecté dans le droit de 2009."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
