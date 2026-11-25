@@ -1,0 +1,58 @@
+{
+  "slug": "ens-psl_cnel-lettres_litterature-germaine-de-stael-et-les-fictions_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Littérature — Germaine de Staël et les fictions",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Germaine de Staël et les fictions",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/cnel_2019_lila_sujet_litterature_francaise.pdf",
+    "sujet_sha256": "6881ffcbaf37e165d9bcaf951c224d81d5c38b294476638bf049a1090776d3dc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix.svg",
+      "legende": "Comment la lecture répond à une solitude",
+      "question": "A et B"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de l’analyse détaillée A, de la réflexion personnelle B en plusieurs paragraphes, de son accompagnement et du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des limites de la citation à analyser, de son insertion dans le passage, des questions distinctes et du barème 5/15 dans les deux éditions."
+    }
+  ]
+}

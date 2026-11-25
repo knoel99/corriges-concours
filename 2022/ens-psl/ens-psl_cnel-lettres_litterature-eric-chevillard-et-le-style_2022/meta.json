@@ -1,0 +1,72 @@
+{
+  "slug": "ens-psl_cnel-lettres_litterature-eric-chevillard-et-le-style_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "CNEL Lettres",
+    "matiere": "Littérature — Éric Chevillard et le style",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Éric Chevillard et le style",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litteratures-cnel-2022.pdf",
+    "sujet_sha256": "5bb3c6c5cbeecbd13adbf0f31402e0cf48bd0b67a24181b4a933a0dbba2ea78b",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/lila-cnel2022-rapport.pdf",
+    "rapport_sha256": "974ad6a484c5875cafd5dc6cd339d0e651701043ac12cffd621482787feb20e2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/demarche.svg",
+      "legende": "À quoi reconnaît-on un style ?",
+      "question": "A et B"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des consignes du rapport de Littératures et langage sur la précision de l’analyse et la réflexion personnelle, sur la première personne et sur la conclusion."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de l’analyse détaillée A, de la réflexion personnelle B en plusieurs paragraphes, de son accompagnement et du schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des limites de la citation à analyser, de son insertion dans le passage, des questions distinctes et du barème 5/15 dans les deux éditions."
+    }
+  ]
+}
