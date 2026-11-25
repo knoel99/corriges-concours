@@ -1,0 +1,45 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2003",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2003,
+    "duree_heures": 4
+  },
+  "questions": 17,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2003/sujet-ecrit-2003-info_mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier ULC 320, J. 5017, neuf pages numérisées. Quatre heures, MP groupe I à Paris, Lyon et Cachan, PC groupe I à Paris et Lyon.",
+    "sujet_sha256": "014a76dbae40477d52d9e395b6256caa45926501d241bea2bd4cb859f55970b5",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2003/rapport-2003-i_ecrit_mathematiques_informatique.pdf",
+    "rapport_sha256": "c8f8c55b94e4f0b2106dd05236d45c27e529f4acbe8b6cf90fe3f788fdbd7d78"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reussite.svg",
+      "question": "1.5",
+      "legende": "Figure 1 — Colonnes finales pour le paquet sept, deux, trois, six, un, cinq, quatre. La sous-suite deux, trois, quatre utilise les trois colonnes et les indices deux, trois, sept dans le paquet."
+    },
+    {
+      "fichier": "figures/tableaux.svg",
+      "question": "2.5",
+      "legende": "Figure 2 — À gauche, le tableau des valeurs et, à droite, le tableau des dates d’insertion. Dans les deux tableaux la ligne la plus longue est en bas."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dix-sept questions, permutation en sept cartes, trace de la réussite et tableaux P et Q, preuve bijective de Robinson–Schensted, comptages et matrices explicites de la représentation du groupe symétrique de degré trois."
+    }
+  ]
+}

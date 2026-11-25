@@ -1020,6 +1020,7 @@
 | 2009 | ENS | MP-PC | Italien (LE2) | [md](2009/ens/ens_mp-pc_italien-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_italien-le2_2009/guide.md) |
 | 2009 | ENS | MP-PC | Japonais (LE2) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/guide.md) |
 | 2009 | ENS | MP-PC | Latin (LE2) | [md](2009/ens/ens_mp-pc_latin-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_latin-le2_2009/guide.md) |
+| 2003 | ENS | MP-PC | Mathématiques-informatique | [md](2003/ens/ens_mp-pc_mathematiques-informatique_2003/brut.md) | [md](2003/ens/ens_mp-pc_mathematiques-informatique_2003/guide.md) |
 | 2004 | ENS | MP-PC | Mathématiques-informatique | [md](2004/ens/ens_mp-pc_mathematiques-informatique_2004/brut.md) | [md](2004/ens/ens_mp-pc_mathematiques-informatique_2004/guide.md) |
 | 2005 | ENS | MP-PC | Mathématiques-informatique | [md](2005/ens/ens_mp-pc_mathematiques-informatique_2005/brut.md) | [md](2005/ens/ens_mp-pc_mathematiques-informatique_2005/guide.md) |
 | 2006 | ENS | MP-PC | Mathématiques-informatique | [md](2006/ens/ens_mp-pc_mathematiques-informatique_2006/brut.md) | [md](2006/ens/ens_mp-pc_mathematiques-informatique_2006/guide.md) |
