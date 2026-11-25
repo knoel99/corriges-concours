@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-1_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 1",
+    "annee": 2007
+  },
+  "questions": 70,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_math_mpi1.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_ecrit_maths_1.pdf",
+    "sha256_sujet": "e1c1fdfe4241828e75df18970493cb21ff12d9c7cc31cda27af3e4b75e67a6b3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arcs-majeurs.svg",
+      "question": "V.11.b",
+      "legende": "Premières familles d’arcs pour d = 2, B = 8, Δ = 1. La ligne q = 1 montre l’arc autour de zéro partagé entre les deux extrémités de [0,1)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des cinq parties d’après les 13 pages imprimées et le rapport du jury. Obstruction rationnelle modulo huit, descente quaternionique des quatre carrés, différences de Weyl et contrôle des sommes, approximation diophantienne et découpage fin des arcs mineurs. Figure des arcs majeurs avec passage au bord du cercle.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

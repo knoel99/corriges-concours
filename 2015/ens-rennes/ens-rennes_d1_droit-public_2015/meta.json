@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2015",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "intitule": "Ordre public et police administrative",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-d1-epreuve-a-options-2015_1505898697484-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/droit-public-d1-rapport-jury-2015_1448642442932-pdf",
+    "sujet_sha256": "87e559756e319b91fe08ec2c0b2c72c206b44fa7929c97ffa4693de73815231a",
+    "rapport_sha256": "eb14cd633e83d9b29c72b1aa2aec06a81b64543abd494efd4b578f682081c407",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2015",
+    "apercu_sujet_sha256": "87e559756e319b91fe08ec2c0b2c72c206b44fa7929c97ffa4693de73815231a",
+    "apercu_rapport_sha256": "eb14cd633e83d9b29c72b1aa2aec06a81b64543abd494efd4b578f682081c407",
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "reference_garde": "R 15 - 83"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/ordre-public-et-competence.svg",
+      "legende": "Les compétences de police spéciale peuvent appeler un régime distinct de celui de la police générale."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/interdictions-de-spectacle.svg",
+      "legende": "Le juge apprécie le spectacle et le risque de chaque litige, ainsi que les mesures moins contraignantes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Ordre public et police administrative » à partir du PDF distribué et des sources effectivement identifiées. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet. Rapport spécifique de la session lu et pris en compte."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Ordre public et police administrative » à partir du PDF distribué et des sources effectivement identifiées. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet. Rapport spécifique de la session lu et pris en compte.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

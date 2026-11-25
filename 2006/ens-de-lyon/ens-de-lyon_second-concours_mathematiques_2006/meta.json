@@ -1,0 +1,41 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2006",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2006
+  },
+  "questions": 14,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2006/sujet-ecrit-2006-second-concours_mathematiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "9847ba7f6be8f8f05ce173946a45a4c51109f8554827a496b55b0ed00850afd4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/convolutions-des-creneaux.svg",
+      "question": "1.2",
+      "legende": "Les deux premières convolutions pour des largeurs 1, 0,6 et 0,3. Le troisième créneau arrondit les angles de la première densité."
+    },
+    {
+      "fichier": "figures/cassini-gershgorin.svg",
+      "question": "2.4",
+      "legende": "Pour deux centres de diagonale, l’ovale de Cassini rempli est contenu dans l’union des deux disques en pointillés. La zone retirée ne peut pas contenir de valeur propre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux exercices du second concours Ulm–Lyon à partir du sujet. Régularité exacte des convolutions finies et convergence de toutes les dérivées. Disques, ovales et contre-exemple de la matrice imprimée, multiplicité des valeurs propres isolées. Deux illustrations.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

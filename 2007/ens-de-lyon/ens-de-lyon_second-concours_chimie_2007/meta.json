@@ -1,0 +1,132 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2007",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2007
+  },
+  "questions": 55,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2007/sujet-ecrit-2007-second-concours_chimie.pdf",
+    "sujet_sha256": "0afb897f6161e98f3b6eed7922888a1bef4e439bff917f6c5e27b74ea0bed394"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "I.A1",
+      "I.A3a",
+      "I.A3b",
+      "I.A4",
+      "I.A5",
+      "I.B1",
+      "I.C1",
+      "I.C2",
+      "I.C3a",
+      "I.C3b",
+      "I.C4",
+      "II.A1",
+      "II.A2",
+      "II.A3a",
+      "II.A3b",
+      "II.A3c",
+      "II.B1",
+      "II.B2a",
+      "II.B2b",
+      "II.B3a",
+      "II.B3b",
+      "III.A1",
+      "III.A2",
+      "III.A3a",
+      "III.A3b",
+      "III.A3c",
+      "III.A3d",
+      "III.A3e",
+      "III.A4a",
+      "III.A4b",
+      "III.A4c",
+      "IV.A1",
+      "IV.A2a",
+      "IV.A2b",
+      "IV.A3a",
+      "IV.A3b",
+      "IV.A3c",
+      "IV.B1c",
+      "V.A1a",
+      "V.A1b",
+      "V.A2a",
+      "V.B3",
+      "V.B4",
+      "V.B5a",
+      "V.B5b"
+    ],
+    "questions_partiellement_traitees": [
+      "V.B2"
+    ],
+    "questions_non_traitees": [
+      "I.A2",
+      "I.B2",
+      "I.B3",
+      "I.B4",
+      "I.C3c",
+      "IV.B1a",
+      "IV.B1b",
+      "V.A2b",
+      "V.B1"
+    ],
+    "precision": "Sur les 55 questions et sous-questions terminales du scan, 45 sont entièrement traitées et une partiellement. Cette dernière, V.B2, couvre le principe du reflux. Les neuf autres rubriques hors couverture sont indiquées individuellement. Les parties sur les carbonates et sur les orbitales du dioxygène sont corrigées intégralement. Les éditions distinguent les intégrales RMN du tableau des déplacements usuels, l’ordre de volatilité ortho/para et les deux valeurs possibles du calcul massique final. Aucun rapport de jury spécifique ne figure dans les sources disponibles."
+  },
+  "figures": [
+    {
+      "question": "I.C1",
+      "fichier": "figures/fuseau-liquide-vapeur.svg",
+      "legende": "Schéma isobare d’un mélange idéal. Les températures aux extrémités sont celles du sujet. La forme intérieure est indicative et l’isotherme relie les deux compositions coexistantes."
+    },
+    {
+      "question": "I.C4",
+      "fichier": "figures/equivalence-des-protons-du-phenol.svg",
+      "legende": "La symétrie du phénol regroupe les deux protons ortho et les deux protons méta. Le proton para et celui de OH sont chacun uniques."
+    },
+    {
+      "question": "II.B3b",
+      "fichier": "figures/solubilite-du-carbonate-de-calcium.svg",
+      "legende": "Solubilité dans le modèle idéal fermé au CO₂, avec pKs = 8. La protonation accroît la quantité totale dissoute."
+    },
+    {
+      "question": "III.A3a",
+      "fichier": "figures/remplissage-des-orbitales-du-dioxygene.svg",
+      "legende": "Niveaux de valence dans l’ordre fourni. Les deux électrons sur les orbitales π* dégénérées sont célibataires."
+    },
+    {
+      "question": "III.A3e",
+      "fichier": "figures/recouvrements-et-phases-des-orbitales.svg",
+      "legende": "Représentation des recouvrements. Les signes et couleurs indiquent la phase. Les points noirs figurent les noyaux et le pointillé un nœud entre eux."
+    },
+    {
+      "question": "IV.A2a",
+      "fichier": "figures/singulet-de-l-acetone.svg",
+      "legende": "Spectre proton schématique. Les deux groupes méthyle équivalents totalisent six hydrogènes pour un seul signal."
+    },
+    {
+      "question": "V.A1b",
+      "fichier": "figures/isomeres-ortho-et-para-du-nitrophenol.svg",
+      "legende": "Les étiquettes A et B suivent le scan. Seul A peut établir la liaison hydrogène intramoléculaire entre les deux groupes voisins."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du scan sur 45 rubriques complètes et le principe thermodynamique de V.B2. Vérification du calcul d’hydrolyse du carbonate, des distances et orbitales du dioxygène, de l’attribution du tableau RMN et des discordances du sujet sur les nitrophénols et la masse molaire. Sept figures originales. Neuf questions hors couverture sont identifiées."
+    }
+  ]
+}

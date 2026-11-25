@@ -1,0 +1,80 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2015",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "intitule": "L’information du cocontractant",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-d1-droit-civil-2015_1459930583860-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/droit-civil-d1-rapport-jury-2015_1453310923879-pdf",
+    "sujet_sha256": "7ddfbd6b7c8b4ef8f74d4e3c1b7e63841767838a5bf613b0f8038599548cdb21",
+    "rapport_sha256": "02693567551f4d73f3d3d66bb8a5514ee9a3c2250e3218415dcb0d51334baf4b",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2015",
+    "apercu_sujet_sha256": "7ddfbd6b7c8b4ef8f74d4e3c1b7e63841767838a5bf613b0f8038599548cdb21",
+    "apercu_rapport_sha256": "02693567551f4d73f3d3d66bb8a5514ee9a3c2250e3218415dcb0d51334baf4b",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 15 - 82",
+    "droit_civil_session": {
+      "1108": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436117/2015-04-01",
+      "1109": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436120/2015-04-01",
+      "1110": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436121/2015-04-01",
+      "1116": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436149/2015-04-01",
+      "1131": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436262/2015-04-01",
+      "1134": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436298/2015-04-01",
+      "1135": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436307/2015-04-01",
+      "1147": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436401/2015-04-01",
+      "1184": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006436635/2015-04-01",
+      "1315": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006437767/2015-04-01",
+      "1382": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006438819/2015-04-01",
+      "1832": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444041/2015-04-01",
+      "1833": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444056/2015-04-01",
+      "1835": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444059/2015-04-01",
+      "1842": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444127/2015-04-01",
+      "1843": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444136/2015-04-01",
+      "1843-2": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444149/2015-04-01",
+      "1844-1": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444158/2015-04-01",
+      "1871": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444461/2015-04-01"
+    }
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/renseignement-conseil-mise-en-garde.svg",
+      "legende": "La spécialité du professionnel, l’usage exprimé et les connaissances du partenaire délimitent la mission."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/temps-et-remedes.svg",
+      "legende": "Le demandeur doit relier le manquement au vice invoqué ou au préjudice dont il demande réparation."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « L’information du cocontractant » à partir du PDF distribué et des sources effectivement identifiées. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet. Rapport spécifique de la session lu et pris en compte."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « L’information du cocontractant » à partir du PDF distribué et des sources effectivement identifiées. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet. Rapport spécifique de la session lu et pris en compte.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

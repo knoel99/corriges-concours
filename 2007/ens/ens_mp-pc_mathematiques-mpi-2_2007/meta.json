@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp-pc_mathematiques-mpi-2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques MPI 2",
+    "annee": 2007
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_math_mpi2.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2007/MP/mp_ecrit_maths_2.pdf",
+    "sha256_sujet": "5be23ed3d8c04e2a718aa0930b616b7454d192d485df98204bdf73314cad5a40"
+  },
+  "figures": [
+    {
+      "fichier": "figures/selection-frequentielle.svg",
+      "question": "IV.3.b",
+      "legende": "Pour b = 2, la fenêtre fréquentielle est positive entre ½ et 2. Parmi les fréquences dilatées 2ⁿ⁻ᴺ, seule la fréquence 1 contribue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des cinq parties des deux éditions après lecture du sujet et du rapport. Estimations höldériennes et des différences secondes, inversion de Fourier, construction de l’ondelette à deux moments nuls, non-dérivabilité y compris à l’exposant un, alternative pour les valeurs réelles et complexes. Schéma du filtrage fréquentiel.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
