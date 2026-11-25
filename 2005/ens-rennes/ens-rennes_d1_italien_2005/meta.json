@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_italien_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Italien",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=10",
+    "sha256_sujet": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Francesca Reboli, « Abbasso i net venduti », L’Espresso, 23 avril 2003",
+    "page": 10
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en italien"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en italien."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Discuter en italien, en 100 mots, de la place et du rôle de la morale dans les nouvelles technologies."
+  },
+  "figures": [
+    {
+      "fichier": "figures/logiciel.svg",
+      "legende": "Quelles libertés le logiciel donne-t-il ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en italien. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

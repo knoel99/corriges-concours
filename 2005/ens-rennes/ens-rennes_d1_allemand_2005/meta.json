@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_allemand_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=7",
+    "sha256_sujet": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "« Karriere statt Kinder, Kopftuch, Koran », Spiegel Online, 14 décembre 2004",
+    "page": 7
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Évaluer en allemand, en 100 mots, l’affirmation selon laquelle les jeunes migrantes seraient mieux préparées au marché du travail que les jeunes Allemands."
+  },
+  "figures": [
+    {
+      "fichier": "figures/etude.svg",
+      "legende": "Trois niveaux de discours sur les aspirations"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
