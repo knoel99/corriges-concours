@@ -1,0 +1,68 @@
+{
+  "slug": "ens_mp-pc_chinois-le2_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois (LE2)",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "Ce que transmet une ligne téléphonique",
+  "questions": 2,
+  "redaction": "Version du passage entier et réponse argumentée en chinois à la question de la page 5.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_etrangere_2.pdf#page=5",
+    "sha256_sujet": "1567a166fd67c04e3d5615d14281c97e16050c7425544c7210420bab2e1d8982",
+    "code_garde": "61.10PM",
+    "ecoles": "ENS de Paris et de Cachan",
+    "page_garde": 1,
+    "page": 5,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "index_mp": "https://banques-ecoles.fr/cms/filiere-mp/annales-de-la-banque-mmpmpi/session-2006",
+    "reference_du_passage": "Aucun auteur ni ouvrage indiqué sur la page de chinois.",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2006/rapport-2006-pc_ecrit_langue_etrangere_2_chinois.pdf",
+    "sha256_rapport_jury": "8a16bc57d0bc23ec29e5d0ccfecfd23659f030bb14d66528d2be2355e688069a",
+    "page_rapport": 1
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/trajet-de-la-voix.svg",
+      "legende": "La voix part du téléphone de la personne qui décroche et arrive chez son ami."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "A. Cheng-Wang distingue deux copies de MP et une de PC. Ses observations portent sur la qualité de l’expression française, la syntaxe chinoise et le tracé des caractères."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français, réponse en chinois, indications de traduction et schéma spécifique au passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}
