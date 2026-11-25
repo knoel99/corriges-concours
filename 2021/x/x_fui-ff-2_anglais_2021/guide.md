@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20D'ANGLAIS_0.pdf)
@@ -19,9 +21,9 @@ L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de
 ### 1. Reclaiming a term
 
 > [!INDICATION]
-> Séparer le mécanisme linguistique de réappropriation et la question des personnes habilitées à l’entreprendre.
+> Le rapport observé de quinze à un compare deux associations du mot avec un adjectif, racial ou judiciaire. Le rapport inversé envisagé plus loin entre le terme de physique et le terme racial est une hypothèse. Le mouvement de réappropriation est encore une autre question, pour laquelle les auteurs disent manquer de sondage.
 
-Repeated use in physics might give the disputed noun a new association, so that listeners would increasingly connect it with a scientific achievement instead of racial hierarchy. The authors recognise the appeal of that argument but ask who gets to make such a decision. Those most affected by exclusion do not appear to have led this attempt to change the word’s associations. (Durham, Garisto and Wiesner, lines 60–66).
+A new scientific usage could eventually alter the associations of a disputed word. The article contrasts that possibility with present evidence. In the American corpus cited, the phrase linking supremacy to racial hierarchy occurs fifteen times as often as its nearest competitor, which concerns judges. Whether a community should attempt such a change also depends on who supports the effort. The authors report impressions about that support, not survey results. (Durham, Garisto and Wiesner, lines 13–23 and 60–66).
 
 ### 2. Scientific and social arguments for “primacy”
 
@@ -42,9 +44,9 @@ A technical audience has a history as well as a specialist vocabulary. American 
 ### 4. English as a shared scientific language
 
 > [!INDICATION]
-> Construire des exemples précis de circulation savante au-delà du laboratoire qui choisit un terme.
+> Prenez les exemples présents dans le feuillet. Le nom proposé en anglais par Preskill circule dans la presse. L’équipe chinoise choisit une autre formulation en raison de la connotation du terme dans sa propre langue. Ces deux faits permettent d’expliquer l’usage international de l’anglais tout en gardant une place aux langues locales.
 
-Researchers who grew up speaking different languages often rely on English to exchange findings. For instance, a physicist in China can submit an English abstract to a conference in Europe, and a Brazilian colleague can question her about it without knowing Mandarin. A name selected by a small laboratory may consequently circulate through journals, lectures and international classrooms far beyond its original setting. (Durham, Garisto and Wiesner, lines 15–24).
+A common language allows researchers educated in different countries to exchange and challenge findings. Preskill’s English label for a computational milestone circulated into popular reporting and an international argument over names. The Chinese research team discussed here avoided that wording because its local equivalent also sounded troubling. English therefore helps a term travel without determining how every laboratory will express or understand it. (Durham, Garisto and Wiesner, lines 1–27 and 44–51).
 
 ![How a specialist name reaches different readers](figures/audiences.svg)
 
@@ -71,4 +73,4 @@ The strongest part of Pinker’s objection concerns misplaced effort. Changing a
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 62, 66, 70 et 63 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 70, 66, 70 et 63 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

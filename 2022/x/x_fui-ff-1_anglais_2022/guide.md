@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux pages du PDF identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20ANGLAIS_0.pdf)
@@ -26,9 +28,9 @@ Cricket officials portray Olympic admission as such an obvious opportunity that 
 ### 2. Why growth pressures bear on rugby and cricket
 
 > [!INDICATION]
-> Partir de la place du football au Royaume-Uni, puis distinguer les intérêts des investisseurs et ceux des joueurs.
+> Les investisseurs de rugby sont présents dans le championnat anglais et auprès de l’équipe de Nouvelle-Zélande. Pour le cricket, John reconnaît que certaines activités doivent être subventionnées par d’autres. Elle conteste que le sport entier soit pour autant menacé de disparition.
 
-In Britain both games compete against football for publicity and money. Their leaders may therefore feel obliged to pursue similar popularity, regardless of supporters’ wishes. Rugby has another source of pressure because investors expect their stakes to pay off. Cricket executives likewise have financial reasons to add events even when the existing programme exhausts those expected to play. (John, pp. 2–3).
+British rugby and cricket operate in football’s shadow, which John thinks makes their leaders unusually eager to prove commercial success. Private investment creates a further incentive in rugby, where investors now have interests ranging from the English Premiership to New Zealand. Cricket administrators defend growth by suggesting the sport might otherwise disappear. John accepts that some competitions need cross-subsidy but disputes that wider claim. (John, pp. 2–3).
 
 ### 3. How senior bonuses are defended
 
@@ -40,9 +42,9 @@ The board’s chairman says comparable employers, including other sporting organ
 ### 4. What expansion can cost
 
 > [!INDICATION]
-> Relier l’ajout des rencontres au temps de repos, puis aux attentes des spectateurs.
+> Nommez The Hundred pour la saturation du calendrier et Ben Stokes pour la limite de la rotation. La chronique ne fournit pas de diagnostic individuel sur son absence. Sa présence dans l’argument sert à discuter l’effet de la réponse choisie par les dirigeants.
 
-New events compete for time in an already crowded season. Exhausted cricketers cannot recover simply because selectors employ additional teammates and switch between them. Supporters may also find their familiar competitions pushed aside for a format they never requested. Judging progress chiefly by receipts encourages organisers to overlook the pleasure that makes people willing to turn up at all. (John, pp. 2–3).
+The Hundred added fixtures despite opposition from many existing supporters. Organisers responded to tired players by selecting larger squads and rotating people rather than cutting matches. John mentions Ben Stokes’s absence at the height of the season as evidence that this response had not solved the problem. If organisers focus on finding new customers, they can damage both players’ working conditions and the recreation current spectators value. (John, pp. 2–3).
 
 ![How a busy calendar affects participants](figures/crowded-calendar.svg)
 
@@ -69,4 +71,4 @@ The deeper issue concerns who is entitled to describe a good season. A broadcast
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 70, 58, 65 et 59 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 70, 64, 65 et 67 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

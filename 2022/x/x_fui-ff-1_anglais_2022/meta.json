@@ -31,9 +31,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2022%20FUI-FF%20S1%20SUJET%20ANGLAIS_0.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "18e24fcbfcf4c2521c3939709f06b1677a384674a1cd3895035a140cb8589871"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -86,6 +87,17 @@
       "modifications": true,
       "perimetre": "Relecture du brut et du guidé sur le fac-similé d’Emma John ; projet olympique daté, explication du président distinguée du commentaire journalistique, chiffres des primes, essai et longueurs.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Vérification sur les deux pages du scan des exemples en rugby, du financement croisé en cricket, du tournoi The Hundred et du statut de l’absence de Ben Stokes."
     }
   ]
 }
