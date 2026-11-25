@@ -1,0 +1,55 @@
+{
+  "slug": "ens-rennes_d-e_droit-commercial_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit commercial",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Commentaire de Cass. com., 10 février 2021, n° 19-10.006 — Contrats conclus avant l’immatriculation d’une EURL",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuve-a-options-droit-commmercial-2023_1682689343621-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-crit-droit-commercial-d-e-2023_1694186006015-pdf",
+    "sujet_sha256": "53043781feb21769ec1063fa5a8ca1544c3e0c0c5de699d6f4f130b272b95841",
+    "rapport_sha256": "af5dfccbaa6d4168197f1127db90d4ec16ae39cb3168370463fd4adcb1b08dbf",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "apercu_sujet_sha256": "91b07760a040d03093c2926bf4f8c9f085f2dfc9a3a600fae05b458ca7a3dd3a",
+    "apercu_rapport_sha256": "144544c9ab49b39621d03d062376d49d1c7681f8db77510f696580a7ad9f17f7"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/chronologie-eurl.svg",
+      "legende": "La date des statuts et celle de l’immatriculation remplissent des fonctions distinctes."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/contrats-et-reprise.svg",
+      "legende": "Les deux premiers cadres présentent le régime dont le troisième explique l’inapplication dans cet arrêt. Le commentaire distingue le revirement de novembre 2023."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Commentaire de Cass. com., 10 février 2021, n° 19-10.006 — Contrats conclus avant l’immatriculation d’une EURL » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Commentaire de Cass. com., 10 février 2021, n° 19-10.006 — Contrats conclus avant l’immatriculation d’une EURL » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
