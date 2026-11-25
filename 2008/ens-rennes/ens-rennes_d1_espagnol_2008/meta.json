@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1langues_1421752176045-pdf#page=5",
+    "sha256_sujet": "cb9e217b941d664b2ef7272786c8e3dfa9e5ab1fbb9e68250888aa1f3a7fa603",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "José Miguel Larraya, « Figurantes », El País, 29 octobre 2006",
+    "page": 5,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_lv1_1404897184762.pdf#page=5",
+    "sha256_rapport_jury": "acf840c7f56950ef7be81f926ac42973f0cb12cfb3c3b42ccc94e288a3c41a55"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Traduction du seul passage de « Apreciamos un deterioro generalizado » à « la solvencia de las noticias ». Discussion de la citation finale à partir de l’ensemble du document."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Discuter le jugement de l’auteur sur les conférences de presse sans questions comme exigence du marché et leurs effets sur le journalisme et les citoyens. 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/preguntas.svg",
+      "legende": "¿Quién puede reducir la calidad de una noticia?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction du seul passage de « Apreciamos un deterioro generalizado » à « la solvencia de las noticias ». Discussion de la citation finale à partir de l’ensemble du document. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

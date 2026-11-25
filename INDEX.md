@@ -608,6 +608,10 @@
 | 2006 | ENS de Lyon | Second concours | Chimie | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/guide.md) |
 | 2007 | ENS de Lyon | Second concours | Chimie | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_chimie_2007/brut.md) | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_chimie_2007/guide.md) |
 | 2008 | ENS de Lyon | Second concours | Chimie | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_chimie_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_chimie_2008/guide.md) |
+| 2008 | ENS Rennes | D1 | Allemand | [md](2008/ens-rennes/ens-rennes_d1_allemand_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_allemand_2008/guide.md) |
+| 2008 | ENS Rennes | D1 | Anglais | [md](2008/ens-rennes/ens-rennes_d1_anglais_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_anglais_2008/guide.md) |
+| 2008 | ENS Rennes | D1 | Espagnol | [md](2008/ens-rennes/ens-rennes_d1_espagnol_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_espagnol_2008/guide.md) |
+| 2008 | ENS Rennes | D1 | Italien | [md](2008/ens-rennes/ens-rennes_d1_italien_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_italien_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Chimie | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Chimie | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Chimie | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/guide.md) |
