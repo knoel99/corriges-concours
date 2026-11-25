@@ -1,0 +1,132 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2017
+  },
+  "questions": 59,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/10/2017_2CC_sujet_Chimie.pdf",
+    "sujet_sha256": "b955182351d4c1abcbc7e1326b65ed16c66763b0b006ef7f55521388c8b36965",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_2CC_rap_eChi.pdf",
+    "rapport_sha256": "fe0da2c3af793cfb3434d29707321cd673253e7281fee221b5987a60f82796b6"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "A11",
+      "A12",
+      "A13",
+      "A14",
+      "B1",
+      "B2",
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C19"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "B20",
+      "B21",
+      "B22",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "precision": "Ces éditions traitent 45 des 59 questions numérotées. La chromatographie, les calculs de Faraday et de cristallographie, la portée des fiches de données de sécurité et le passage du pH à l’activité sont corrigés. En C, les structures, la stéréochimie, la nomenclature de l’ester réellement dessiné, le glucose, le rendement cumulé et le principe de l’hydrolyse d’un acétal sont traités. Les questions B20 à B22, C12 à C18 et C20 à C23 restent hors couverture. Le sujet officiel et le rapport de jury ont été consultés."
+  },
+  "figures": [
+    {
+      "question": "A7",
+      "fichier": "figures/quatre-analytes-oxygenes.svg",
+      "legende": "Les quatre molécules classées selon leur température d’ébullition. Le squelette du phénol porte un OH directement sur le cycle aromatique."
+    },
+    {
+      "question": "A10",
+      "fichier": "figures/chaine-de-mesure-en-cpg.svg",
+      "legende": "De gauche à droite, transport, introduction, séparation, détection et acquisition du chromatogramme."
+    },
+    {
+      "question": "A13",
+      "fichier": "figures/etalonnage-interne-des-trois-esters.svg",
+      "legende": "Les bâtons de gauche codent les aires intégrées aux temps indiqués. Les teneurs à droite sont normalisées sur les trois esters de l’échantillon."
+    },
+    {
+      "question": "B10",
+      "fichier": "figures/maille-du-nickel-et-diagonale.svg",
+      "legende": "La diagonale d’une face joint deux sommets en passant par son centre. Les couleurs distinguent des positions cristallographiques d’un même élément."
+    },
+    {
+      "question": "C1",
+      "fichier": "figures/acetal-cyclique-et-centres-stereogenes.svg",
+      "legende": "Numérotation du cycle initial. Les liaisons hachurées partent vers l’arrière et la liaison en coin plein vers l’avant. Ph désigne un phényle."
+    },
+    {
+      "question": "C10",
+      "fichier": "figures/projection-de-fischer-du-d-glucose.svg",
+      "legende": "Forme ouverte du D-glucose. Les substituants horizontaux se projettent vers le lecteur et la chaîne verticale vers l’arrière."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour 45 des 59 questions. Vérification du chromatogramme, des fractions massiques, de la maille du nickel, du calcul de Faraday et des perspectives du document. Distinction entre ester dessiné et acide libre désigné par le texte. Six figures originales. Les quatorze questions hors couverture sont identifiées."
+    }
+  ]
+}
