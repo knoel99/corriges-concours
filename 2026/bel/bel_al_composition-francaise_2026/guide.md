@@ -14,6 +14,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 5)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L'épreuve dure **six heures**. Elle demande de discuter une analyse de Michel Viegnes :
@@ -98,6 +100,8 @@ Les références sont exploitées sans pagination de mémoire et sans citations 
 > Ne confondez pas personnage et narrateur, auteur et narrateur, ou interprétation d'un rêve et vérité garantie par le texte. Chez Nerval, cette distinction fait partie du problème à traiter.
 
 ![Figure 2 — Au chapitre XVIII de Léry, trois voix interviennent dans la formation du nom par lequel le voyageur se fait reconnaître.](figures/lery-jean-nian.svg)
+
+Attribuer chaque étape de la nouvelle dénomination à son locuteur. La part prise par le truchement puis par Léry permet de discuter la comparaison avec un pèlerinage dont le terme serait connu avant le départ.
 
 > [!JURY]
 > Dans le rapport de l’écrit 2026 (p. 14), le jury souligne la rareté des analyses de détail.
