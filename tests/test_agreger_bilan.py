@@ -53,3 +53,20 @@ def test_signatures_editoriales_conservent_les_attributions_successives():
         "Rédaction · famille GPT-6 · effort non renseigné · vitesse non renseignée · session non renseignée",
         "Révision (tour 2) · GPT-6.2 Astra Ultra · vitesse ultrafast · session lecture · 2026-11-25",
     ]
+
+
+def test_modifications_signees_apres_la_redaction():
+    exemple = {"modele": "gpt-6.2-astra", "effort": "ultra", "session": "session_lettres"}
+    phases = [
+        {"phase": "autocontrole", "modifications": False},
+        {"phase": "autocontrole", "modifications": True},
+        {"phase": "retouches"},
+        {"phase": "production_figures", "modifications": True, "vitesse": "standard"},
+        {"phase": "verification_gel"},
+    ]
+    signatures = module.signatures_editoriales({"contributions": [{**exemple, **p} for p in phases]})
+    assert signatures == [
+        "Autocontrôle avec modifications · GPT-6.2 Astra Ultra · vitesse non renseignée · session session_lettres",
+        "Retouches · GPT-6.2 Astra Ultra · vitesse non renseignée · session session_lettres",
+        "Production de figures · GPT-6.2 Astra Ultra · vitesse standard · session session_lettres",
+    ]
