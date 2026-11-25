@@ -1,0 +1,63 @@
+{
+  "slug": "agro-veto_bcpst_biologie_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Biologie",
+    "annee": 2023
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_a-bcpst_bio_epreuve_de_synthese_2023vr_le.pdf",
+    "rapport_sha256": "70327c45601c703fb5db736ecf733b72b182969b57456b3bc5e474362f866c7f",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/abcpst_sp_0123_biosynthese-1.pdf",
+    "sujet_sha256": "a16ae039fd0a35f39c89bd70e8804aac013943e29281970815dcda0ed2312ea5"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "La synthèse unique est entièrement rédigée. Elle compare les mécanismes, les contrôles, la stabilité et le brassage de l’information, puis les conséquences dans les tissus et les cycles de vie eucaryotes."
+  },
+  "figures": [
+    {
+      "question": "I.1",
+      "fichier": "figures/ploidie-et-adn.svg",
+      "legende": "Comparaison pour un noyau initial diploïde. La synthèse d’ADN double C en conservant le nombre de jeux chromosomiques."
+    },
+    {
+      "question": "II.2",
+      "fichier": "figures/assortiment-independant.svg",
+      "legende": "Schéma avec deux paires. Le choix indépendant de l’orientation de chaque bivalent distribue des homologues différents vers les pôles."
+    },
+    {
+      "question": "II.2",
+      "fichier": "figures/crossing-over.svg",
+      "legende": "Un seul échange réciproque entre A et B produit Ab et aB à partir de AB et ab. La couleur distingue les origines homologues des segments."
+    },
+    {
+      "question": "III.2",
+      "fichier": "figures/cycle-du-polypode.svg",
+      "legende": "La spore et le gamète sont tous deux haploïdes. La première se développe par mitoses, le second intervient dans la fécondation."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale du sujet A BCPST-0123 dans les deux éditions après lecture de la page du sujet et du rapport du jury de douze pages. Quatre figures originales sur ploïdie et quantité d’ADN, les deux brassages et le cycle du Polypode."
+    }
+  ]
+}
