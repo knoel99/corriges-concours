@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_mp_maths-a_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2011
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2011/2011%20MP%20SUJET%20ECRIT%20MATH%20A%20-XLC.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_maths_a_xlc_mp2011.pdf",
+    "sha256_sujet": "3ab5b44855518dac48832488d3a095b9df2cbde65b9fc5bfe6f6a2739a1d00b1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/transfert-sur-quatre-coefficients.svg",
+      "question": "14.b",
+      "legende": "Ajouter et retrancher la même masse aux coins d’un rectangle préserve chaque somme de ligne et de colonne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète du sujet XLC et confrontation au rapport. Vérification des récurrences sur les matrices normales, de l’unicité de la racine positive, de la terminaison du transfert sur une matrice doublement stochastique, puis de la conjugaison optimale. Figure dédiée aux quatre coefficients modifiés dans la question 14.b.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
