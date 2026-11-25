@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2015",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2015
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/sujets/sujet_mpi_mathc2015.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_rap_emathc.pdf",
+    "sha256_sujet": "cf9509ba0d55d816d1be1fd833b058897051f4d12d5106f70ee0fa9301b9bec9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lissage-de-l-indicatrice.svg",
+      "question": "III.6",
+      "legende": "Deux transitions de largeur epsilon encadrent l’indicatrice d’un demi-axe, y compris lorsque la somme possède un atome au seuil."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet de quatre pages et le rapport du jury. Constantes explicites de Stein, troncature uniforme, contrôle du troisième moment par la variance, lissage de l’indicatrice et comparaison des bornes de concentration.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
