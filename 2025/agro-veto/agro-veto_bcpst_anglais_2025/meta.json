@@ -1,0 +1,61 @@
+{
+  "slug": "agro-veto_bcpst_anglais_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Anglais",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0925_sp.pdf",
+    "sujet_sha256": "7cd58685625fec13fcab552905221a653ef52c16f073e333988307bb669f2c7f",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/0-rapport_anglais_bcpst-2025-vdef.pdf",
+    "rapport_jury_sha256": "9d5bb7245059751f513254aa0a2c6699a64b2567930100fe9dfe7d3c6f5553f8",
+    "notice_X": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Notice%20du%20concours%202025%20publi%C3%A9e.pdf#page=19"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I · Compréhension des deux articles",
+      "II · Expression, sujet 1 · Protest and democracy",
+      "II · Expression, sujet 2 · Can growth continue without limits?"
+    ],
+    "precision": "Deux parties. La deuxième invite à choisir un seul essai. Les deux possibilités sont traitées."
+  },
+  "longueurs": {
+    "comparaison": 214,
+    "protest": 227,
+    "growth": 226,
+    "methode": "groupes séparés par un espace",
+    "minimum": 198,
+    "maximum": 242
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-articles.svg",
+      "legende": "D’une même manifestation à deux lectures de la réforme"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet complet, du rapport de jury et de la notice de l’X. Comparaison en anglais et deux essais originaux au choix, décomptes, correction de la date conformément au rapport, explications et schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
