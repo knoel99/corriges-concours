@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 224" width="630" height="224">
+  <title>Temps minimaux en fonction de l’atelier et de la dernière tâche</title>
+  <text x="175" y="33" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">Tâche 1</text>
+  <text x="340" y="33" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">Tâche 2</text>
+  <text x="505" y="33" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="bold">Tâche 3</text>
+  <text x="58" y="88" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">Atelier 1</text>
+  <text x="58" y="168" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">Atelier 2</text>
+  <line x1="175" y1="82" x2="340" y2="82" stroke="#becad0" stroke-width="1.6" />
+  <line x1="175" y1="82" x2="340" y2="159" stroke="#becad0" stroke-width="1.6" />
+  <line x1="175" y1="159" x2="340" y2="82" stroke="#becad0" stroke-width="1.6" />
+  <line x1="175" y1="159" x2="340" y2="159" stroke="#becad0" stroke-width="1.6" />
+  <line x1="340" y1="82" x2="505" y2="82" stroke="#becad0" stroke-width="1.6" />
+  <line x1="340" y1="82" x2="505" y2="159" stroke="#becad0" stroke-width="1.6" />
+  <line x1="340" y1="159" x2="505" y2="82" stroke="#becad0" stroke-width="1.6" />
+  <line x1="340" y1="159" x2="505" y2="159" stroke="#becad0" stroke-width="1.6" />
+  <line x1="175" y1="82" x2="340" y2="159" stroke="#00645d" stroke-width="4" />
+  <line x1="340" y1="159" x2="505" y2="159" stroke="#00645d" stroke-width="4" />
+  <circle cx="175" cy="82" r="20" fill="#dfefeb" stroke="#21394d" stroke-width="1.8" />
+  <text x="175" y="88" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">2</text>
+  <circle cx="175" cy="159" r="20" fill="#faf7ef" stroke="#21394d" stroke-width="1.8" />
+  <text x="175" y="165" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">6</text>
+  <circle cx="340" cy="82" r="20" fill="#faf7ef" stroke="#21394d" stroke-width="1.8" />
+  <text x="340" y="88" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">5</text>
+  <circle cx="340" cy="159" r="20" fill="#dfefeb" stroke="#21394d" stroke-width="1.8" />
+  <text x="340" y="165" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">6</text>
+  <circle cx="505" cy="82" r="20" fill="#faf7ef" stroke="#21394d" stroke-width="1.8" />
+  <text x="505" y="88" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">10</text>
+  <circle cx="505" cy="159" r="20" fill="#dfefeb" stroke="#21394d" stroke-width="1.8" />
+  <text x="505" y="165" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="normal">8</text>
+  <text x="317" y="208" fill="#21394d" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="normal">Les valeurs sont des durées cumulées depuis le début de la pièce.</text>
+</svg>
