@@ -1,0 +1,53 @@
+{
+  "slug": "x_mp_informatique-option_1997",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 1997
+  },
+  "questions": 17,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-1024310950ce7e7a1a40",
+    "rapport_jury": "",
+    "sha256_sujet": "8c17ddd7f5d567ccba1353927ebb31a92aa0cfc3fbd46ce348e4547415736a7d",
+    "corriges_enseignants": [
+      {
+        "auteur": "Schauber",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-d0938c3d739d97da1a4f",
+        "sha256": "b6c345b05241d63945322bf7d56b5b12953fba94946a8fe5be33e284de2aa13b"
+      },
+      {
+        "auteur": "Michel Quercia",
+        "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-26f23fc22c9719b07ab8",
+        "sha256": "5281c55fdc83eec3b238f588e46056f40408d6e36d36d334d5b3fc38c545e5cf"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/profondeur-trois.svg",
+      "question": "1.a",
+      "legende": "Dans les deux univers le dernier partage atteint le niveau 3. À droite, seule la cellule contenant les deux points est subdivisée."
+    },
+    {
+      "fichier": "figures/cellules-ouvertes-a-un-niveau.svg",
+      "question": "6.b",
+      "legende": "Le barycentre G d’une cellule ouverte par le critère est dans le disque en pointillés. Le carré entier tient dans le grand disque."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des huit pages de l’énoncé UPS et confrontation aux corrigés de Schauber et Michel Quercia. Sous-questions de géométrie et branche Caml complète, échelle des flottants, terminaison des insertions, barycentres, forces et coût par niveau. Deux dessins géométriques originaux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
