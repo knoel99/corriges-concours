@@ -14,6 +14,10 @@
 
 **Vérification finale (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La session astra_lettres a révisé les séries communales et leur lecture avec les croquis.
+
 ## Présentation du sujet
 
 « Les paysages de la décroissance » est le sujet de la **composition de géographie, option écrite de la banque Lettres et sciences économiques et sociales (BLSES), voie B/L**. Le rapport du jury reproduit cet intitulé en première page et donne une durée de six heures. La notice inter-ENS situe cette épreuve le 22 avril 2026 et précise les coefficients de l’option, 3 à l’ENS Paris et 1 à l’ENS de Lyon. Le programme « Les territoires de la décroissance » couvrait les villes et les campagnes à l’échelle mondiale. Le fond de carte fourni en salle n’a pas été retrouvé. Son utilisation était facultative. Le jury jugeait peu pertinent le croquis de synthèse sur ce sujet et appréciait les vues paysagères commentées (p. 3). Les trois croquis proposés ici sont des dessins originaux. [Rapport 2026, p. 1–3](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_geographie.pdf) · [Notice inter-ENS, p. 31](https://www.ens-lyon.fr/sites/default/files/2026-02/notice_interens_2026_mise_en_ligne_vf260212_0.pdf) · [Lettre de cadrage](https://www.ens.psl.eu/sites/default/files/lettre_de_cadrage_-_geographie.pdf)
@@ -78,6 +82,12 @@ Dans le dessin, observe-t-on une seule place d’où l’on pourrait voir l’in
 **Un versant boisé peut témoigner du passé.** À Saint-Germain-de-Calberte, les anciennes vues du bourg commentées par le parc national permettent de situer la fermeture progressive des anciens milieux agricoles depuis l’exode rural. En revanche, le total communal est passé de 445 habitants en 1982 à 477 en 2022, avec des fluctuations entre ces dates. On ne pourrait donc pas déduire de la présence des bois une baisse continue de la population actuelle. Une observation rapprochée des Calquières montre par ailleurs des terrasses toujours cultivées et des dispositifs d’irrigation. Leur exposition au sud-est, leur entretien manuel et la présence de nombreux propriétaires expliquent l’intérêt d’observer le site à l’échelle des jardins. La variation entre parcelles et le décalage entre périodes constituent deux arguments différents.
 
 ![Figure 2 — Dans la vallée de Saint-Germain-de-Calberte, l’entretien inégal des parcelles rend la déprise sélectivement visible.](figures/saint-germain-de-calberte.svg)
+
+**Lire ensemble le versant et les recensements.** Sur le croquis des Calquières, suivez un muret visible au milieu des jardins puis cherchez son équivalent dans la vue boisée. À distance, le taillis peut masquer le replat alors que la maçonnerie subsiste. Sur la courbe, choisissez ensuite 1999–2006 (485 puis 444 habitants) et 2016–2022 (441 puis 477). Les signes du changement démographique sont opposés. Pour 2016–2022, le tableau POP T2M donne −0,6 point par an pour le solde naturel et +1,9 point pour les entrées et sorties, soit +1,3 % par an au total. Le solde des entrées et sorties est dit « apparent » car il se déduit de la variation d’effectif et du solde naturel. Aucune de ces séries communales ne donne la date d’abandon d’une terrasse. Cette date demanderait une source parcellaire, par exemple une comparaison de photographies aériennes datées ou un témoignage situé.
+
+![Population recensée à Saint-Germain-de-Calberte de 1968 à 2022.](figures/calberte-population.svg)
+
+[Insee, tableaux POP T1 et POP T2M de la commune](https://www.insee.fr/fr/statistiques/8581709?geo=COM-48155)
 
 > [!METHODE]
 > Pour commenter un paysage rural, partez d’une limite tangible. Si un muret se prolonge dans le bois, que faut-il savoir de l’ancienne parcelle, du dernier entretien et du temps de croissance des arbres pour interpréter cette continuité ?
