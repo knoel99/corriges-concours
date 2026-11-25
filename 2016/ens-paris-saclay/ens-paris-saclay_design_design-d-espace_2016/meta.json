@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2016
+  },
+  "redaction": "Quatre planches A3, analyse du coffret Starck, pistes, construction et diffusion d’une proposition contemporaine, plan et coupe au 1/50. Lecture du sujet et des deux pages annexées.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Espace.pdf",
+    "sujet_sha256": "5ec7f520cc3269e41bab770c58c220586bb0f6d910d4da4b8edca379472faff7",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=281",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-manifeste.svg",
+      "question": "Projet, planche 1",
+      "legende": "L’enveloppe de l’ancienne remise apparaît en traits, le logement intérieur en aplat."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-choix-et-ressources.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois variantes comparées et distribution du travail entre habitants et professionnels."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-plan-coupe.svg",
+      "question": "Projet, planche 3",
+      "legende": "Plan coté et coupe du logement inséré dans la remise existante."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-diffuser-et-entretenir.svg",
+      "question": "Projet, planche 4",
+      "legende": "Du relevé à l’usage, une méthode vérifiable dans chaque nouvelle maison."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Quatre planches A3, analyse du coffret Starck, pistes, construction et diffusion d’une proposition contemporaine, plan et coupe au 1/50. Lecture du sujet et des deux pages annexées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Habiter sous une toiture déjà là",
+      "Du modèle unique à trois façons de réemployer",
+      "Régler un noyau de 36 m²",
+      "Transmettre une méthode de chantier"
+    ]
+  }
+}

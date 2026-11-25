@@ -1,0 +1,67 @@
+{
+  "slug": "ens-paris-saclay_design_design-de-produit_2015",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design de produit",
+    "annee": 2015
+  },
+  "redaction": "Quatre A3 originaux. Analyse, trois hypothèses, scénario sensoriel, élévation technique au 1/10, fabrication, installation et maintenance. Le PDF institutionnel compte deux pages et se termine par la mention de fin. Le texte décrit des images de parcs indicatives qui ne sont pas reproduites dans ce fichier. La demande autorise explicitement à traiter une autre expérience.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2015_Sujet_1A_Design_Produit.pdf",
+    "sujet_sha256": "668dd737c6365acb84aef4b4010c85b6179bf54f7a9ab56dd714cd22b95b771b",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=283",
+    "nature": "Sujet original",
+    "precision": "Le PDF institutionnel compte deux pages et se termine par la mention de fin. Le texte décrit des images de parcs indicatives qui ne sont pas reproduites dans ce fichier. La demande autorise explicitement à traiter une autre expérience."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-rendez-vous.svg",
+      "question": "Projet, planche 1",
+      "legende": "Une station en retrait de l’allée relie la halte et la transformation d’un arbre."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-recherches.svg",
+      "question": "Projet, planche 2",
+      "legende": "Trois réponses comparées et proposition d’un essai de hauteur à l’échelle 1."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-dimensions.svg",
+      "question": "Projet, planche 3",
+      "legende": "Élévation cotée au 1/10 et schéma de l’aire où se croisent les usages."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-production.svg",
+      "question": "Projet, planche 4",
+      "legende": "Détail éclaté du système et responsabilités du fabricant et du gestionnaire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Quatre A3 originaux. Analyse, trois hypothèses, scénario sensoriel, élévation technique au 1/10, fabrication, installation et maintenance. Le PDF institutionnel compte deux pages et se termine par la mention de fin. Le texte décrit des images de parcs indicatives qui ne sont pas reproduites dans ce fichier. La demande autorise explicitement à traiter une autre expérience."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Revenir regarder la même branche",
+      "Choisir comment garder une trace",
+      "Dimensionner la halte",
+      "Produire puis entretenir une petite série"
+    ]
+  }
+}
