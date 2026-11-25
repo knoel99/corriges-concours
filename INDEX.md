@@ -984,6 +984,7 @@
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
+| 2009 | ENS | MP-PC | Allemand (LE2) | [md](2009/ens/ens_mp-pc_allemand-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_allemand-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Allemand (LE2) | [md](2010/ens/ens_mp-pc_allemand-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_allemand-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Allemand (LV1) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Allemand (LV1) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/guide.md) |
@@ -991,13 +992,19 @@
 | 2010 | ENS | MP-PC | Anglais (LE2) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Anglais (LV1) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Anglais (LV1) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/guide.md) |
+| 2009 | ENS | MP-PC | Arabe (LE2) | [md](2009/ens/ens_mp-pc_arabe-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_arabe-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Arabe (LE2) | [md](2010/ens/ens_mp-pc_arabe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_arabe-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Chinois (LE2) | [md](2009/ens/ens_mp-pc_chinois-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_chinois-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Chinois (LE2) | [md](2010/ens/ens_mp-pc_chinois-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_chinois-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Espagnol (LE2) | [md](2009/ens/ens_mp-pc_espagnol-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_espagnol-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LE2) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Espagnol (LV1) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LV1) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/guide.md) |
+| 2009 | ENS | MP-PC | Grec ancien (LE2) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Grec ancien (LE2) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Italien (LE2) | [md](2009/ens/ens_mp-pc_italien-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_italien-le2_2009/guide.md) |
+| 2009 | ENS | MP-PC | Japonais (LE2) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/guide.md) |
+| 2009 | ENS | MP-PC | Latin (LE2) | [md](2009/ens/ens_mp-pc_latin-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_latin-le2_2009/guide.md) |
 | 2006 | ENS | MP-PC | Mathématiques-informatique | [md](2006/ens/ens_mp-pc_mathematiques-informatique_2006/brut.md) | [md](2006/ens/ens_mp-pc_mathematiques-informatique_2006/guide.md) |
 | 2007 | ENS | MP-PC | Mathématiques-informatique | [md](2007/ens/ens_mp-pc_mathematiques-informatique_2007/brut.md) | [md](2007/ens/ens_mp-pc_mathematiques-informatique_2007/guide.md) |
 | 2008 | ENS | MP-PC | Mathématiques-informatique | [md](2008/ens/ens_mp-pc_mathematiques-informatique_2008/brut.md) | [md](2008/ens/ens_mp-pc_mathematiques-informatique_2008/guide.md) |
@@ -1018,7 +1025,9 @@
 | 2010 | ENS | MP-PC | Italien (LV1) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/guide.md) |
 | 2010 | ENS | MP-PC | Japonais (LE2) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Latin (LE2) | [md](2010/ens/ens_mp-pc_latin-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_latin-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Portugais (LE2) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Portugais (LE2) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Russe (LE2) | [md](2009/ens/ens_mp-pc_russe-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LE2) | [md](2010/ens/ens_mp-pc_russe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LV1) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LV1) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/guide.md) |
@@ -1050,6 +1059,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2009 | ENS | MP | Physique MPI | [md](2009/ens/ens_mp_physique-mpi_2009/brut.md) | [md](2009/ens/ens_mp_physique-mpi_2009/guide.md) |
 | 2010 | ENS | MP | Physique MPI | [md](2010/ens/ens_mp_physique-mpi_2010/brut.md) | [md](2010/ens/ens_mp_physique-mpi_2010/guide.md) |
 | 2015 | ENS | PC | Chimie B | [md](2015/ens/ens_pc_chimie-b_2015/brut.md) | [md](2015/ens/ens_pc_chimie-b_2015/guide.md) |
 | 2016 | ENS | PC | Chimie B | [md](2016/ens/ens_pc_chimie-b_2016/brut.md) | [md](2016/ens/ens_pc_chimie-b_2016/guide.md) |
@@ -1063,6 +1073,8 @@
 | 2024 | ENS | PC | Chimie B | [md](2024/ens/ens_pc_chimie-b_2024/brut.md) | [md](2024/ens/ens_pc_chimie-b_2024/guide.md) |
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
+| 2009 | ENS | PC | Mathématiques | [md](2009/ens/ens_pc_mathematiques_2009/brut.md) | [md](2009/ens/ens_pc_mathematiques_2009/guide.md) |
+| 2010 | ENS | PC | Mathématiques | [md](2010/ens/ens_pc_mathematiques_2010/brut.md) | [md](2010/ens/ens_pc_mathematiques_2010/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2015 | ENS | PC | Physique-chimie | [md](2015/ens/ens_pc_physique-chimie_2015/brut.md) | [md](2015/ens/ens_pc_physique-chimie_2015/guide.md) |
 | 2016 | ENS | PC | Physique-chimie | [md](2016/ens/ens_pc_physique-chimie_2016/brut.md) | [md](2016/ens/ens_pc_physique-chimie_2016/guide.md) |
