@@ -171,10 +171,22 @@
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | Agro-Véto | BCPST | Anglais | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/guide.md) |
+| 2017 | BEL | B/L | Allemand | [md](2017/bel/bel_bl_allemand_2017/brut.md) | [md](2017/bel/bel_bl_allemand_2017/guide.md) |
+| 2017 | BEL | B/L | Anglais | [md](2017/bel/bel_bl_anglais_2017/brut.md) | [md](2017/bel/bel_bl_anglais_2017/guide.md) |
+| 2017 | BEL | B/L | Espagnol | [md](2017/bel/bel_bl_espagnol_2017/brut.md) | [md](2017/bel/bel_bl_espagnol_2017/guide.md) |
+| 2017 | BEL | B/L | Italien | [md](2017/bel/bel_bl_italien_2017/brut.md) | [md](2017/bel/bel_bl_italien_2017/guide.md) |
+| 2017 | BEL | B/L | Russe | [md](2017/bel/bel_bl_russe_2017/brut.md) | [md](2017/bel/bel_bl_russe_2017/guide.md) |
+| 2017 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2017/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition de géographie (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2017/guide.md) |
+| 2015 | ENS Paris-Saclay | Design | Expression graphique, chromatique ou volumique | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/brut.md) | [md](2015/ens-paris-saclay/ens-paris-saclay_design_expression-graphique-chromatique-ou-volumique_2015/guide.md) |
 | 2021 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2021/guide.md) |
 | 2022 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2022/guide.md) |
 | 2023 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2023/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2023/guide.md) |
+| 2016 | ENS Paris-Saclay | Design | Techno-design | [md](2016/ens-paris-saclay/ens-paris-saclay_design_techno-design_2016/brut.md) | [md](2016/ens-paris-saclay/ens-paris-saclay_design_techno-design_2016/guide.md) |
+| 2017 | ENS Paris-Saclay | Design | Techno-design | [md](2017/ens-paris-saclay/ens-paris-saclay_design_techno-design_2017/brut.md) | [md](2017/ens-paris-saclay/ens-paris-saclay_design_techno-design_2017/guide.md) |
+| 2021 | ENS Paris-Saclay | Design | Techno-design | [md](2021/ens-paris-saclay/ens-paris-saclay_design_techno-design_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_design_techno-design_2021/guide.md) |
+| 2022 | ENS Paris-Saclay | Design | Techno-design | [md](2022/ens-paris-saclay/ens-paris-saclay_design_techno-design_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_design_techno-design_2022/guide.md) |
+| 2023 | ENS Paris-Saclay | Design | Techno-design | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_design_techno-design_2023/guide.md) |
 | 2009 | ENS-PSL | PC | Physique PC1 | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/brut.md) | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/guide.md) |
 | 2010 | ENS Paris | PC | Physique PC1 | [md](2010/ens-psl/ens-psl_pc_physique-pc1_2010/brut.md) | [md](2010/ens-psl/ens-psl_pc_physique-pc1_2010/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Économie — données et modèles (oral) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-donnees-et-modeles-oral_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_economie-donnees-et-modeles-oral_2026/guide.md) |
@@ -1080,6 +1092,9 @@
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2009 | ENS | PC | Mathématiques | [md](2009/ens/ens_pc_mathematiques_2009/brut.md) | [md](2009/ens/ens_pc_mathematiques_2009/guide.md) |
 | 2010 | ENS | PC | Mathématiques | [md](2010/ens/ens_pc_mathematiques_2010/brut.md) | [md](2010/ens/ens_pc_mathematiques_2010/guide.md) |
+| 2015 | ENS | PC | Physique C | [md](2015/ens/ens_pc_physique-c_2015/brut.md) | [md](2015/ens/ens_pc_physique-c_2015/guide.md) |
+| 2016 | ENS | PC | Physique C | [md](2016/ens/ens_pc_physique-c_2016/brut.md) | [md](2016/ens/ens_pc_physique-c_2016/guide.md) |
+| 2017 | ENS | PC | Physique C | [md](2017/ens/ens_pc_physique-c_2017/brut.md) | [md](2017/ens/ens_pc_physique-c_2017/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2015 | ENS | PC | Physique-chimie | [md](2015/ens/ens_pc_physique-chimie_2015/brut.md) | [md](2015/ens/ens_pc_physique-chimie_2015/guide.md) |
 | 2016 | ENS | PC | Physique-chimie | [md](2016/ens/ens_pc_physique-chimie_2016/brut.md) | [md](2016/ens/ens_pc_physique-chimie_2016/guide.md) |
