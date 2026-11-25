@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-ginzburg-et-les-preuves-de-lhistorien-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Ginzburg et les preuves de l’historien (oral)",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-2.pdf",
+    "sha256_sujet": "392d3486a9d7f2d114e88442740c9c44e54ef9cf4c56a2f976a851eb7cd6d4ca",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Le modèle judiciaire a orienté le choix des objets",
+      "legende": "La Grande Peur distingue l’existence des agresseurs de l’efficacité historique de la croyance."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale à partir de l’extrait de Ginzburg, pages 19–23 de la traduction indiquée. Lecture de Bloch, Lefebvre, Griffet, des deux sens de la preuve et de la critique du scepticisme. Rapport d’oral et schéma contrôlés.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

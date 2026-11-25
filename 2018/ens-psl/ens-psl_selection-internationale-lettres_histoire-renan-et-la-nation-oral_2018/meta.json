@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-renan-et-la-nation-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Renan et la nation (oral)",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-4.pdf",
+    "sha256_sujet": "e4ad6fe631cae49b5b20165f0fdbe66ecda20233996a5741b0c05d8c7b1d5c70",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Oublier la division pour hériter d’un passé commun",
+      "legende": "Du récit des violences aux questions finales de Renan."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire rédigé des pages 7 à 11, vérification de la date, des comparaisons et de la limite exacte de l’extrait. Deux éditions et schéma du raisonnement, rapport 2018 consulté.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
