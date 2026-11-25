@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_anglais-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Saut technologique, téléphonie mobile et inégalités de développement",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "71.10PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=3",
+    "sujet_sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2007/rapport-2007-pc_ecrit_langue_etrangere_2_anglais.pdf",
+    "rapport_jury_sha256": "1beacb0da6a387934c398d3ab19d5cd737f9e1f607868170d23b54cf50807dc8",
+    "precision": "Version de The Economist du 23 septembre 2006, avec ses trois coupes et la note imprimée sur la loi de Moore. Le rapport d’anglais LE2 2007 souligne l’importance de relier la réponse à la question des inégalités."
+  },
+  "mots_expression": {
+    "1": 146
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/rythmes.svg",
+      "legende": "Les exemples organisent le passage d’une métaphore militaire au saut technologique."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/acces.svg",
+      "legende": "Les effets du téléphone varient selon l’infrastructure et les revenus."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Saut technologique, téléphonie mobile et inégalités de développement.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
