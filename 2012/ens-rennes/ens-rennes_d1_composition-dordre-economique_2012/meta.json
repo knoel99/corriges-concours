@@ -1,0 +1,70 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2012",
+  "epreuve": {
+    "concours": "ENS de Cachan",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "La politique budgétaire a-t-elle encore un rôle ?",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_12d1_dis_1336740697530.pdf",
+    "sujet_sha256": "fe3e1e8f2580b22030ee1fa3cf97e28ec202d647af29db8c9072bae3957a977e",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/re1a-12d1-economie_1421750452045-pdf",
+    "rapport_sha256": "97d412639f03200609705281cee93c9d904fe9e0a7e1b0abe516b667150a4fe6",
+    "references_complementaires": {
+      "Traité sur le fonctionnement de l’Union, article 126": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:12008E126"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/transmission-du-change.svg",
+      "legende": "Les résultats du modèle polaire supposent de petites économies, des mouvements de capitaux libres et des prix rigides."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/multiplicateur-et-importations.svg",
+      "legende": "La propension marginale à consommer est fixée à 0,8 et le taux marginal de prélèvement à 25 %. Le point à 0,1 correspond au calcul du devoir."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « La politique budgétaire a-t-elle encore un rôle ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Multiplicateur ouvert chiffré, IS-LM, Mundell-Fleming, soutenabilité, équivalence ricardienne et zone euro.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport aux cinq paragraphes, qui précise les mécanismes et demande de réserver au budget le centre de la démonstration."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « La politique budgétaire a-t-elle encore un rôle ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Multiplicateur ouvert chiffré, IS-LM, Mundell-Fleming, soutenabilité, équivalence ricardienne et zone euro."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
