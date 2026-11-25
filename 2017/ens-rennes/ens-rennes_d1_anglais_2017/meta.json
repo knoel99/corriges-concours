@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_anglais_2017",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-lv-d1-2017_1513242514196-pdf#page=3",
+    "sha256_sujet": "1195212bb4cd9e2c05a6b51b8b002523d9fe683a034faf0ea5c432ce985b9108",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "Adapté du New Statesman, 9 décembre 2016",
+    "page": 3,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-anglais-e-crit-d1-2017_1515597563898-pdf#page=1",
+    "sha256_rapport_jury": "23cfea800ea2ed1800f9217a644b1a34f0fcd7d98a795dec23d01c9491ff45be"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 99,
+    "regle": "To what extent does society as a whole encourage gender differentiation? 100 mots, à 10 % près."
+  },
+  "figures": [
+    {
+      "fichier": "figures/toys.svg",
+      "legende": "What does the poll actually measure?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
