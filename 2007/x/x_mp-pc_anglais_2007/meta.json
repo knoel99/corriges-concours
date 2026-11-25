@@ -1,0 +1,76 @@
+{
+  "slug": "x_mp-pc_anglais_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "William Boyd, Meeting Lucas, et Andréani et Hassner, la morale dans la vie internationale",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "2",
+    "sujet": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=2",
+    "sujet_sha256": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03",
+    "sujet_complementaire": "https://web.archive.org/web/20090424045418id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ExprEcrit.pdf",
+    "sujet_complementaire_sha256": "3480b2ca508e8df2f8d98d5325aef0f68faafb32776b69e2174e40304d224573",
+    "rapport_jury": "https://web.archive.org/web/20090424045355id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Anglais_MP_PC_rap.pdf",
+    "rapport_jury_sha256": "b4b419fe734455c174229460e6dc2764cd4682139355c8bbe7f6347524876160",
+    "rapport_complementaire": "https://web.archive.org/web/20090424045349id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Anglais_Exp_MP_PC_Rap.pdf",
+    "rapport_complementaire_sha256": "9914b748e6990078a61400a3398f9e973ded7a3387648bdbb26f5a151338a292",
+    "precision": "Version de Restless (2006). L’expression porte sur l’extrait de Justifier la guerre ? De l’humanitaire au contre-terrorisme (2005). Les deux cahiers et les rapports distincts sur la version et l’expression sont conservés."
+  },
+  "mots_expression": {
+    "1": 130,
+    "2": 191
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/interruption.svg",
+      "legende": "La tension vient du contraste entre banalité domestique et rendez-vous redouté."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/explications.svg",
+      "legende": "Les auteurs avancent deux raisons qu’il faut rattacher à la fin de la guerre froide."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/assistance.svg",
+      "legende": "Les moyens, le droit applicable et la parole des personnes concernées déterminent la réponse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. William Boyd, Meeting Lucas, et Andréani et Hassner, la morale dans la vie internationale.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
