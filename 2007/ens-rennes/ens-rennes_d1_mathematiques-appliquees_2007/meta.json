@@ -1,0 +1,36 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2007
+  },
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=11",
+    "rapport_jury": null,
+    "sha256_sujet": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/branches-et-point-isole.svg",
+      "question": "1.2",
+      "legende": "Les points blancs sont exclus. À l’abscisse 1, seule l’ordonnée 3 appartient à la courbe. Les extrema des branches extérieures sont aux abscisses −2 et 2."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des quatre exercices à partir des pages 11 à 13 du cahier. Contrôle de la valeur isolée en 1, des deux branches, de la table normale et de la nécessité de la conjugaison des exposants. Figure originale des six branches de variation.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
