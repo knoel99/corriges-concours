@@ -1,0 +1,146 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2011",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2011
+  },
+  "questions": 70,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2011/sujet_ecrit_2c2011_chimie.pdf",
+    "sujet_sha256": "56dc54eb16ff34dab8f8f40addb8b6c7f049fee2136092db97fec6ce59be7ecb"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A.0.1",
+      "A.0.2",
+      "A.0.3",
+      "A.0.4",
+      "A.0.5",
+      "A.0.6",
+      "B.1.1",
+      "B.2.1",
+      "B.2.2",
+      "B.2.5",
+      "B.3.2",
+      "B.3.3",
+      "B.3.6",
+      "B.3.7",
+      "C.1.1",
+      "C.1.2",
+      "C.1.3",
+      "C.1.4",
+      "C.1.5",
+      "C.2.1",
+      "C.2.2",
+      "C.2.3",
+      "C.2.4",
+      "C.2.5",
+      "C.2.6",
+      "C.2.7",
+      "C.2.8",
+      "C.3.1",
+      "C.3.2",
+      "C.3.3",
+      "C.3.4",
+      "C.3.5",
+      "C.3.6",
+      "C.3.7",
+      "C.3.8",
+      "C.3.9",
+      "C.3.10",
+      "C.3.11",
+      "C.3.12",
+      "C.3.13",
+      "C.3.14",
+      "C.3.15",
+      "C.3.16",
+      "D.1.3",
+      "D.1.4",
+      "D.2.1",
+      "D.2.2",
+      "D.2.3",
+      "D.2.4",
+      "D.2.5",
+      "D.3.1",
+      "D.3.2",
+      "D.3.3",
+      "D.3.4",
+      "D.3.5",
+      "D.3.7"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "B.2.3",
+      "B.2.4",
+      "B.2.6",
+      "B.2.7",
+      "B.3.1",
+      "B.3.4",
+      "B.3.5",
+      "D.1.1",
+      "D.1.2",
+      "D.1.5",
+      "D.2.6",
+      "D.3.6",
+      "D.3.8",
+      "D.3.9"
+    ],
+    "precision": "Les deux éditions couvrent 56 des 70 rubriques numérotées du PDF officiel. C.3.13 introduit une série de mesures et C.3.14 à C.3.16 en donnent l’exploitation. Les quatorze rubriques hors couverture concernent des étapes du convertissage, de la lixiviation et de la conduite de l’électrolyse, puis des applications des organométalliques. Elles sont indiquées à leur place. Les deux lectures possibles de la constante de l’oxyde cuivreux sont calculées et illustrées en C.3.1 à C.3.5. Aucun rapport de jury propre à cette épreuve ne figure dans les sources disponibles."
+  },
+  "figures": [
+    {
+      "question": "B.3.3",
+      "fichier": "figures/courbes-des-couples-metalliques.svg",
+      "legende": "Positions relatives des trois couples aux activités standard. Les branches sont schématiques et leur amplitude est en unités arbitraires."
+    },
+    {
+      "question": "C.1.1",
+      "fichier": "figures/maille-cubique-a-faces-centrees.svg",
+      "legende": "Cuivre pur, tous les sites représentés portent Cu. Dans la maille ordonnée du modèle Cu₃Ag, les sommets deviennent Ag."
+    },
+    {
+      "question": "C.2.7",
+      "fichier": "figures/lecture-du-diagramme-cuivre-argent.svg",
+      "legende": "Reconstruction graphique des lignes utiles de la figure 1. La verticale marque Cu₃Ag et le segment bleu l’isotherme à 850 °C. Les lectures sont approximatives."
+    },
+    {
+      "question": "C.3.5",
+      "fichier": "figures/deux-lectures-du-produit-de-solubilite.svg",
+      "legende": "Domaines stables suivant les deux lectures de la constante de dissolution imprimée. Les activités du cuivre(II) dissous sont fixées à 0,01."
+    },
+    {
+      "question": "C.3.10",
+      "fichier": "figures/elongation-jahn-teller-du-cuivre.svg",
+      "legende": "À gauche, les six oxygènes de coordination, avec l’axe vertical allongé. À droite, un remplissage 3d⁹ compatible avec une élongation modérée."
+    },
+    {
+      "question": "C.3.15",
+      "fichier": "figures/absorbance-des-melanges-cuivre-diamine.svg",
+      "legende": "Huit rapports finis de l’énoncé. La solution sans cuivre a une absorbance nulle et un rapport indéfini. Le trait reliant les mesures guide la lecture."
+    },
+    {
+      "question": "D.3.5",
+      "fichier": "figures/coefficients-de-l-orbitale-vacante.svg",
+      "legende": "Coefficients normalisés de la première orbitale vacante dans le modèle de Hückel employé. Une inversion globale des quatre signes décrit la même orbitale."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les 56 rubriques indiquées, à partir des douze pages du sujet. Lecture chiffrée du diagramme cuivre–argent, vérification des deux conventions possibles pour le produit de solubilité, exploitation de la série de complexation, calcul des états propres et des charges du modèle de Hückel. Sept figures originales."
+    }
+  ]
+}
