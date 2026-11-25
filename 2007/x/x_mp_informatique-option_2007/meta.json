@@ -1,0 +1,83 @@
+{
+  "slug": "x_mp_informatique-option_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2007,
+    "duree_heures": 4,
+    "modalite": "écrit"
+  },
+  "intitule": "Codage Reed–Solomon",
+  "questions": 16,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2007.pdf",
+    "sujet_sha256": "209d810109b670b15adb6c564d1b4abbbfc1d02e8cc11f929d0879c6039d0d27",
+    "rapport": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2007/MP_INFO_X_1_2007.rapport.pdf",
+    "rapport_sha256": "bd17e5be91eb62bb9861b113261769fb27c4a4b10094a85d854c522cd2b2252d",
+    "identification": "École polytechnique, filière MP option informatique, composition 2007 de quatre heures. Cahier de huit pages reproduit par WikiPrépa. Rapport de la session reproduit par Doc-Solus.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2007.pdf",
+        "sha256": "209d810109b670b15adb6c564d1b4abbbfc1d02e8cc11f929d0879c6039d0d27",
+        "pages": 8
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2007/MP_INFO_X_1_2007.rapport.pdf",
+        "sha256": "bd17e5be91eb62bb9861b113261769fb27c4a4b10094a85d854c522cd2b2252d",
+        "pages": 4
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2007/MP_INFO_X_1_2007.enonce.pdf",
+        "sha256": "f104f941fea7fe5cde9e759161a85e6c1d96b67f0820fcce7c68934286670923",
+        "pages": 8
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/evaluation-des-restes.svg",
+      "question": "15",
+      "legende": "Figure 1 — Évaluation de 1 + X² en quatre points de F₇. Chaque enfant reçoit le reste de son parent modulo son propre produit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "option_info_2006_2009",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Questions 1 à 16. Codage par Horner, quotient et reste, multiplication de Karatsuba, division récursive aux deux parités, arbres de produits et de restes et preuves de complexité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "limites": "Le codage seul est au programme de cette composition. L’inverse multiplicatif dans le corps premier est la primitive fournie."
+  }
+}
