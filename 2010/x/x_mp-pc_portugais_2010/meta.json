@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp-pc_portugais_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Portugais",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Lúcio Cardoso, la nouvelle venue à la Chácara, et Catherine Bréchignac, le temps de penser",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33548",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "9",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=9",
+    "sujet_sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "sujet_complementaire": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=1",
+    "sujet_complementaire_sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "references_complementaires": [
+      "https://web.archive.org/web/20110519221507/http://www.admission.polytechnique.edu:80/accueil/concours-cycle-polytechnicien/sujets-rapports-et-statistiques/sujets-rapports-et-statistiques-5071.kjsp",
+      "https://www2.espci.fr/enseignement/brochure_concours_2010_polytechnique.pdf#page=20",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=7",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=9"
+    ],
+    "precision": "La version reproduit un extrait de Crônica da casa assassinada de Lúcio Cardoso (1959). La pièce d’expression provient de N’ayons pas peur de la science de Catherine Bréchignac (2009). Les réponses sont écrites en portugais brésilien. La notice de l’ESPCI documente le concours. Aucun rapport spécifique à la composition portugaise n’a été retrouvé."
+  },
+  "mots_expression": {
+    "1": 133,
+    "2": 195
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/casa.svg",
+      "legende": "Le récit part d’un malaise partagé et aboutit au refus explicite d’une règle."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/tempo.svg",
+      "legende": "Bréchignac relie défaut de tri, saturation et perte du temps de réflexion."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/medida.svg",
+      "legende": "Une mesure vérifiable transforme la question posée par des familles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "portugais_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en portugais. Lúcio Cardoso, la nouvelle venue à la Chácara, et Catherine Bréchignac, le temps de penser.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
