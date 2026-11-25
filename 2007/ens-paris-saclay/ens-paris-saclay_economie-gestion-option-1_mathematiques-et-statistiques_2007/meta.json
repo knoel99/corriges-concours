@@ -1,0 +1,36 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2007",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Mathématiques et statistiques",
+    "annee": 2007
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=15",
+    "rapport_jury": null,
+    "sha256_sujet": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-dents-et-leurs-aires.svg",
+      "question": "3.2.b",
+      "legende": "Les triangles ont la même hauteur et des bases différentes. Les segments horizontaux correspondent aux intervalles où h vaut zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des trois exercices du cahier C1792, pages physiques 15 à 19 du fascicule. Contrôle du dernier terme des probabilités postérieures, des traces de tribus, des oscillations, des intégrales et du quotient différentiel. Tracé des deux triangles aux échelles demandées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
