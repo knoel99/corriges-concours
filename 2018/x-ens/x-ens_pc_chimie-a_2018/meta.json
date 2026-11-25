@@ -1,0 +1,154 @@
+{
+  "slug": "x-ens_pc_chimie-a_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2018
+  },
+  "questions": 70,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_PC_sujet_ChiA.pdf",
+    "sujet_sha256": "237485bfd313f7e0192e7e1c50d9e5cb1a3b9e7f0b07f86e53c91f4b68566465",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_PC_rap_eChimieA.pdf",
+    "rapport_sha256": "2f5d092ed2ed3551c917ce55fdc9317c75025df6cfe6e445f20bea124406ae11"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A.I.1",
+      "A.I.2",
+      "A.I.3",
+      "A.I.4",
+      "A.I.5",
+      "A.I.6",
+      "A.I.7",
+      "A.I.8",
+      "A.I.9",
+      "A.I.10",
+      "A.I.11",
+      "A.I.12",
+      "A.I.13",
+      "A.II.2",
+      "A.II.3",
+      "A.II.4",
+      "A.II.5",
+      "A.II.6",
+      "A.II.7",
+      "A.II.8",
+      "A.II.9",
+      "A.II.10",
+      "A.II.11",
+      "A.II.12",
+      "A.II.13",
+      "A.III.1",
+      "A.III.2",
+      "A.III.3",
+      "A.III.4",
+      "A.III.5",
+      "A.III.6",
+      "A.III.7",
+      "A.III.8",
+      "A.III.9",
+      "A.III.10",
+      "A.III.11",
+      "A.III.12",
+      "B.I.1",
+      "B.I.2",
+      "B.I.3",
+      "B.I.4",
+      "B.I.5",
+      "B.I.6",
+      "B.I.7",
+      "B.I.8",
+      "B.I.9",
+      "B.I.11",
+      "B.I.12",
+      "B.II.2",
+      "B.II.3",
+      "B.III.1",
+      "B.III.6"
+    ],
+    "questions_partiellement_traitees": [
+      "B.II.4",
+      "B.III.2"
+    ],
+    "questions_non_traitees": [
+      "A.II.1",
+      "B.I.10",
+      "B.I.13",
+      "B.II.1",
+      "B.II.5",
+      "B.II.6",
+      "B.II.7",
+      "B.II.8",
+      "B.II.9",
+      "B.III.3",
+      "B.III.4",
+      "B.III.5",
+      "B.III.7",
+      "B.III.8",
+      "B.III.9",
+      "B.III.10"
+    ],
+    "precision": "Les deux éditions corrigent intégralement 52 questions sur 70. Toute la partie A est traitée sauf A.II.1, sur les protocoles d’obtention des oxydes d’azote. La partie B couvre la biochimie de l’acide gras, sa spectroscopie et des questions autonomes sur les amines et le soufre. B.II.4 traite les données spectroscopiques et B.III.2 le classement et la molécularité. Les 16 questions hors couverture sont indiquées à leur emplacement. La préparation du depsipeptide et de ses intermédiaires avancés reste hors de ce périmètre. Les résultats ont été confrontés aux 16 pages du sujet et au rapport de la commission de chimie A."
+  },
+  "figures": [
+    {
+      "question": "A.I.3",
+      "fichier": "figures/cycle-de-hess.svg",
+      "legende": "Les deux chemins mènent aux mêmes quantités d’eau liquide et de dioxyde de carbone. Le dioxygène nécessaire aux combustions est implicite sur les deux flèches descendantes."
+    },
+    {
+      "question": "A.I.10",
+      "fichier": "figures/comparaison-des-bilans-thermiques.svg",
+      "legende": "Les écarts d’enthalpie et les températures sont calculés séparément. Les températures utilisent des capacités constantes et la vaporisation de l’eau."
+    },
+    {
+      "question": "A.II.3",
+      "fichier": "figures/orbitales-des-fragments.svg",
+      "legende": "Les signes indiquent la phase et les deux centres sont disposés selon x. Pour pz, le dessin est dans le plan xz afin de montrer les lobes hors du plan moléculaire."
+    },
+    {
+      "question": "A.II.7",
+      "fichier": "figures/niveaux-de-valence-de-no.svg",
+      "legende": "Construction qualitative sans mélange s–p. Deux orbitales distinctes appartiennent à chaque niveau π. La position relative des raies est schématique."
+    },
+    {
+      "question": "A.III.4",
+      "fichier": "figures/polluants-du-sol-a-la-troposphere.svg",
+      "legende": "La durée de vie porte sur toute la famille NOx et dépend de la fraction NO₂ ainsi que de la concentration en radicaux hydroxyle."
+    },
+    {
+      "question": "B.I.1",
+      "fichier": "figures/centres-des-acides-amines.svg",
+      "legende": "En projection de Fischer, les liaisons horizontales pointent vers le lecteur. Les deux H de la glycine rendent son carbone α achiral."
+    },
+    {
+      "question": "B.I.3",
+      "fichier": "figures/addition-du-carbone-de-la-thiamine.svg",
+      "legende": "Flèches électroniques locales de l’addition sur le carbonyle. Les substituants du thiazolium non engagés sont abrégés. Les doublets libres et les charges du centre réactionnel sont détaillés dans le texte."
+    },
+    {
+      "question": "B.I.12",
+      "fichier": "figures/integrales-de-l-alcool-ramifie.svg",
+      "legende": "Chaque barre représente une intégrale du spectre simplifié, indépendamment de la hauteur réelle des raies. Le massif de 18 H est placé au centre de sa plage de déplacements."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour 52 questions entières et deux volets indépendants. Bilans de Hess, températures adiabatiques, structures électroniques, spectroscopie, cycle atmosphérique et durées de vie, lecture des documents de biochimie et du spectre de l’alcool gras. Huit figures pédagogiques. Les seize autres questions sont explicitement repérées."
+    }
+  ]
+}
