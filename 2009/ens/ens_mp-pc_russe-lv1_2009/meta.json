@@ -1,0 +1,59 @@
+{
+  "slug": "ens_mp-pc_russe-lv1_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Russe (LV1)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Путин поощрил науку",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_lv1.pdf#page=6",
+    "sujet_sha256": "4d43a82b835716843169d99f0696b76085c2d34aae975b3aae524ac7e33fd7f2",
+    "page_pdf": 6,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+    "etablissements_imprimes": "Paris, Lyon et Cachan",
+    "texte_support": "« Путин поощрил науку », Новости NEWSru.com, 29 mai 2008."
+  },
+  "redaction": "Version intégrale de l’article, distinction des deux promesses de financement et des deux constats sur l’âge des équipements, réponses personnelles en russe aux deux questions.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/financement-recherche.svg",
+      "legende": "Les deux enveloppes annoncées en 2008 ont des durées et des bénéficiaires différents."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale de l’article, distinction des deux promesses de financement et des deux constats sur l’âge des équipements, réponses personnelles en russe aux deux questions.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ]
+  }
+}
