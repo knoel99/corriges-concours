@@ -1,0 +1,41 @@
+{
+  "slug": "ens_mp_maths-d_2012",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2012
+  },
+  "questions": 45,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/mp2012_sujet_math_d_6h_u%5B1%5D.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/rap_ecrit_mathD_u_mpi2012.pdf",
+    "sha256_sujet": "f7199caa9cc4177d0b1b7b9eb10fe92b4bd75cb000b8d64bd449baa99fdde5e8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/multiples-de-deux-monomes.svg",
+      "question": "III.6.a",
+      "legende": "Les carrés sont les exposants des monômes appartenant à l’idéal engendré par XY³ et X³Y. Les deux exposants minimaux sont entourés."
+    },
+    {
+      "fichier": "figures/projection-sur-invariants.svg",
+      "question": "V.6",
+      "legende": "La projection fixe chaque invariant et permet de remplacer les coefficients d’une relation par des coefficients invariants."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète des cinq parties sur le sujet de six heures et lecture du rapport. Vérification des opérations sur les poids, de la covariance à gauche et à droite, de la projection normalisée et de sa compatibilité avec les invariants inhomogènes. Rectification du domaine de Θ en V.2.c. Figures des multiples de deux monômes et de la projection de V.5–6.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
