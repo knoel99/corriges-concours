@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La première partie relie un déphasage à une mesure de vitesse par pixel. Dans la seconde, le comportement d’un mode au fond et à la surface fixe sa composante verticale. L’acoustique géométrique explique ensuite pourquoi des modes de fréquences différentes peuvent suivre le même rayon.
 
 ## I · Une mesure optique de la photosphère

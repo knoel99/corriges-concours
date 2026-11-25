@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_mp_maths-a_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2014
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mp_suj_math_a.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_rap_ecrit_maths_a.pdf",
+    "sha256_sujet": "e43101b4ce6ae6742a4b0dd276aa511cb2605d413d9406a9265280d4111e7ba5"
+  },
+  "figures": [
+    {
+      "fichier": "figures/hyperboloide-et-nappes.svg",
+      "question": "15",
+      "legende": "Coupe de l’hyperboloïde par le plan x = 0. Le signe de la dernière coordonnée distingue ses deux nappes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions et de leurs 33 réponses. Vérification contre sujet et rapport des isométries, des quatre composantes réelles et de la simplification de Witt. Schéma original de la coupe des deux nappes.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
