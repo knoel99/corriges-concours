@@ -1,0 +1,60 @@
+{
+  "slug": "ens_cycle-master-mathematiques_francais-et-culture-generale_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Français et culture générale",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Français et culture générale",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2019_SE2C_MATHS_Francais_V2.pdf",
+    "sujet_sha256": "ccdc8f21d29fa11206243a49da5f340cde9d73befca40c2c8e9d5907cee15fbc",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2019_RE_2C_MATHS_Francais.pdf",
+    "rapport_sha256": "00a4ffe17da4add5db54ed7e3d60201114ef6098a96657cde3a70265d6de2803"
+  },
+  "figures": [
+    {
+      "fichier": "figures/chopplet.svg",
+      "question": "1",
+      "legende": "Qui écrit la ville intelligente ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résumé original de 360 mots, deux commentaires construits pour les deux citations du feuillet, guide et figure du raisonnement."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation au texte et aux deux questions du sujet, double recomptage du résumé et vérification des exemples et du raisonnement. Lecture du rapport écrit de 2019, disponible sous deux liens au même contenu."
+    }
+  ]
+}
