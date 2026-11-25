@@ -1,0 +1,43 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-billault-et-la-police-a-paris-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Billault et la police à Paris (oral)",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-oral-sil2019-3.pdf",
+    "sha256_sujet": "88b67804333b37e19fadcd57b9953fc09606e02a69dca94f7a6ff80bb50515f3",
+    "rapport_jury": null,
+    "pieces_complementaires": [
+      {
+        "role": "attentes générales du jury, index 2019, page 3",
+        "url": "https://www.ens.psl.eu/IMG/file/internationale/2008/Lettres/Lettres.pdf",
+        "sha256": "3a360c4a7769d5dbf001d43040fcd150dcf10e4ee661a0264586d3fb340a24f4"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Transformer les effectifs en démonstration",
+      "legende": "De l’organisation de quartier à l’argument financier du ministre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des trois pages du rapport de Billault telles que reproduites dans le sujet. Rédaction des deux éditions avec vérification du calcul de disponibilité, des dépenses et de la discordance du total imprimé. Schéma des échelles du projet.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
