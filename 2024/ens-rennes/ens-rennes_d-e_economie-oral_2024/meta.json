@@ -1,0 +1,115 @@
+{
+  "slug": "ens-rennes_d-e_economie-oral_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Économie (oral)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "questions": 23,
+  "sujets": 23,
+  "intitules": {
+    "1": "Le passager clandestin",
+    "2": "Qu’est-ce que le plein emploi ?",
+    "3": "Anti-sélection et risque moral",
+    "4": "Externalités et politiques publiques",
+    "5": "L’efficacité économique",
+    "6": "Assiste-t-on à un retour de la politique monétaire conventionnelle ?",
+    "7": "Faut-il s’inquiéter du retour de l’inflation ?",
+    "8": "Les cycles économiques",
+    "9": "La dette publique est-elle souhaitable ?",
+    "10": "Les limites de la politique économique",
+    "11": "L’indépendance de la Banque centrale",
+    "12": "L’arbitrage inflation / activité",
+    "13": "À quoi sert le modèle de concurrence pure et parfaite ?",
+    "14": "Le plein emploi a-t-il un coût ?",
+    "15": "Le contrôle des risques financiers",
+    "16": "La concurrence imparfaite",
+    "17": "La politique économique en économie ouverte",
+    "18": "Le modèle IS/LM est-il toujours d’actualité ?",
+    "19": "Les anticipations",
+    "20": "Quel est l’intérêt de l’étude du dilemme du prisonnier ?",
+    "21": "Les déséquilibres macroéconomiques externes",
+    "22": "Le chômage peut-il être volontaire ?",
+    "23": "La poursuite de la construction économique de l’Europe nécessite-t-elle une union fiscale ?"
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-e-co-d-e-2024_1731603660290-pdf",
+    "sujet_sha256": "8a5505b98f5c1a9b1374072c9082358e01ccf9f9a3876223f7781f51b05014ca",
+    "apercu_sujet_sha256": "7ea570a9f1d8794b64fc1e57388305d745aa4a0d387dfa77d05bfed70c944b09",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2024",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-conomie-oral-d-e-2024_1730905818017-pdf",
+    "rapport_sha256": "4e4055ce3c46608d3dfa3efe9d311a9f1af7ab30fe9929ef89af6d0a6bacd2b2",
+    "apercu_rapport_sha256": "4573ed0957a67dd8837df6255a696212162ab16ccdbd71c24d33fae13d7d8072"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de l’oral d’économie. Les 23 intitulés du fascicule officiel sont repris dans l’ordre, avec un développement et une relance corrigée par sujet et cinq graphiques de tableau. Les données de conjoncture sont datées de la session. Le rapport du jury oral de 2024 a été lu."
+    }
+  ],
+  "figures": [
+    {
+      "question": "4",
+      "fichier": "figures/externalite-de-production.svg",
+      "legende": "Exemple chiffré de dommage marginal constant égal à 2. Entre la quantité sociale et la quantité privée, le coût social excède le bénéfice marginal. Le triangle représente la perte évitable."
+    },
+    {
+      "question": "12",
+      "fichier": "figures/inflation-et-activite.svg",
+      "legende": "Courbes de Phillips illustratives. Une contraction de la demande déplace le point le long de la courbe. À chômage donné, un choc de coûts relève la courbe. Les valeurs sont hypothétiques."
+    },
+    {
+      "question": "18",
+      "fichier": "figures/equilibre-is-lm.svg",
+      "legende": "Lecture à prix fixes et offre de monnaie réelle inchangée. La dépense décale IS, tandis que le mouvement sur LM fait monter le taux. Les axes décrivent un modèle."
+    },
+    {
+      "question": "20",
+      "fichier": "figures/jeu-de-contribution.svg",
+      "legende": "Le gain du joueur A figure en premier. Dans chaque colonne A préfère s’abstenir, et B fait le même calcul dans chaque ligne. La case colorée est l’équilibre de Nash."
+    },
+    {
+      "question": "2",
+      "fichier": "figures/emplois-vacants-et-chomage.svg",
+      "legende": "Courbe de Beveridge schématique. Une variation conjoncturelle déplace le point le long de la courbe. Un appariement moins efficace peut accroître simultanément chômage et vacances."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions de l’oral d’économie. Les 23 intitulés du fascicule officiel sont repris dans l’ordre, avec un développement et une relance corrigée par sujet et cinq graphiques de tableau. Les données de conjoncture sont datées de la session. Le rapport du jury oral de 2024 a été lu.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23"
+    ]
+  }
+}
