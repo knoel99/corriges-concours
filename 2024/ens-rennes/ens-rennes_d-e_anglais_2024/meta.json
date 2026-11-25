@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d-e_anglais_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais",
+    "annee": 2024
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-toutes-lve-e-crit-d-e-2024_1729180755099-pdf#page=5",
+    "sujet_sha256": "0071be726d8c1ea5c92fce50581c71fe863866dfa597cbb95f55bdd41182eac4",
+    "apercu_sujet_sha256": "57e5ee060dbeba8e4b5cbdcca9fea7a1d51c835aa79b6778d4979f489db44d9a",
+    "pages_sujet": [
+      5,
+      6,
+      7
+    ],
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2024",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-e-crit-d-e-2024_1729181148975-pdf",
+    "rapport_jury_sha256": "9499916de375d87aaea6d6fb7daf33e9cc27300ac77e8b80c8a3c64a5378f84f",
+    "apercu_rapport_sha256": "7a695de48e886ebb8cec1f4a8cd50baf84f7a1669aedabbf7a045b179ab8a68a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/power.svg",
+      "legende": "How is international power distributed?",
+      "question": "III"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des deux traductions et des deux réponses argumentées de 259 et 263 mots à partir du fascicule, pages physiques 5 à 7, et du rapport de langue. Schéma et accompagnement du guidé."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Première réponse argumentée",
+      "III.2. Deuxième réponse argumentée"
+    ]
+  }
+}

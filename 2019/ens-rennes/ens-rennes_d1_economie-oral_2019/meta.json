@@ -1,0 +1,99 @@
+{
+  "slug": "ens-rennes_d1_economie-oral_2019",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Économie (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitules": {
+    "1": "Valeur et prix.",
+    "2": "Produit Intérieur Brut et richesse d’une nation.",
+    "3": "Limiter la flexibilité des prix, est-ce réduire le risque d’instabilité ?",
+    "4": "Le rôle des banques dans la création et la politique monétaires.",
+    "5": "Etre rationnel-le, est-ce ne jamais se tromper ?",
+    "6": "Croissance et innovation.",
+    "7": "Préférences individuelles et choix social.",
+    "8": "La courbe des contrats.",
+    "9": "7% de chômage en France : une utopie ?"
+  },
+  "questions": 9,
+  "sources": {
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2019",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-oral-sujet-e-conomique-et-social-d1-2019_1571908242976-pdf",
+    "sujet_sha256": "ca83c4b0c0bb9630f3013e91ed9c0176154319a71b5190b8e064cee3e83183b5",
+    "sujet_apercu_sha256": "ca83c4b0c0bb9630f3013e91ed9c0176154319a71b5190b8e064cee3e83183b5",
+    "sujet_pages": 3,
+    "page_pdf": 3,
+    "fin_pdf": 3,
+    "source_via_rapport": true,
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-oral-sujet-e-conomique-et-social-d1-2019_1571908242976-pdf",
+    "rapport_sha256": "ca83c4b0c0bb9630f3013e91ed9c0176154319a71b5190b8e064cee3e83183b5",
+    "rapport_apercu_sha256": "ca83c4b0c0bb9630f3013e91ed9c0176154319a71b5190b8e064cee3e83183b5",
+    "rapport_pages": 3,
+    "intitules_feuille": [],
+    "exemples_rapport": [
+      "Valeur et prix.",
+      "Produit Intérieur Brut et richesse d’une nation.",
+      "Limiter la flexibilité des prix, est-ce réduire le risque d’instabilité ?",
+      "Le rôle des banques dans la création et la politique monétaires.",
+      "Etre rationnel-le, est-ce ne jamais se tromper ?",
+      "Croissance et innovation.",
+      "Préférences individuelles et choix social.",
+      "La courbe des contrats.",
+      "7% de chômage en France : une utopie ?"
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "limite_documentaire": "Les exemples du rapport sont corrigés. La feuille exhaustive des tirages de cette session n’a pas été retrouvée.",
+    "numerotation": "Numérotation éditoriale des exemples, dans l’ordre des puces du jury."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, brute et guidée, pour les 9 exemples effectivement imprimés dans le rapport ; la feuille complète des tirages de la session manque. Deux développements par exposé, une relance résolue et une indication propre au guidé ; 3 schémas originaux contrôlés.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "question": "1",
+      "fichier": "figures/prix-et-valeur.svg",
+      "legende": "Le monopole vend 4 unités au prix 6. Au prix concurrentiel de 2, la quantité monte à 8. Le triangle coloré est la perte sèche de 8."
+    },
+    {
+      "question": "8",
+      "fichier": "figures/contrats.svg",
+      "legende": "La diagonale indique les allocations efficaces, la zone verte les améliorations relativement à (2,6), et le segment vert leur intersection. Le panier (4,4) est un équilibre concurrentiel."
+    },
+    {
+      "question": "9",
+      "fichier": "figures/flux-de-chomage.svg",
+      "legende": "Avec 1 % de séparation mensuelle et deux états, un retour mensuel à l’emploi proche de 13,3 % donne un chômage stationnaire de 7 %. Illustration à population active fixe."
+    }
+  ]
+}

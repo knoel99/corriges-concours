@@ -222,6 +222,7 @@
 | 2026 | BEL | AL | Philosophie (oral tronc commun 26 juin commission 2) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-2_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 26 juin commission 3) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-3_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-3_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 30 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun, autres tirages du jury) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
@@ -698,6 +699,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2016 | ENS | PC | Chimie B | [md](2016/ens/ens_pc_chimie-b_2016/brut.md) | [md](2016/ens/ens_pc_chimie-b_2016/guide.md) |
 | 2020 | ENS | PC | Chimie B | [md](2020/ens/ens_pc_chimie-b_2020/brut.md) | [md](2020/ens/ens_pc_chimie-b_2020/guide.md) |
 | 2021 | ENS | PC | Chimie B | [md](2021/ens/ens_pc_chimie-b_2021/brut.md) | [md](2021/ens/ens_pc_chimie-b_2021/guide.md) |
 | 2022 | ENS | PC | Chimie B | [md](2022/ens/ens_pc_chimie-b_2022/brut.md) | [md](2022/ens/ens_pc_chimie-b_2022/guide.md) |
@@ -728,6 +730,10 @@
 | 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 8) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-8_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-8_2019/guide.md) |
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique A) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/guide.md) |
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique B) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Allemand | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Anglais | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Espagnol | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Italien | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Allemand | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/guide.md) |
 | 2025 | ENS Rennes | D-E | Anglais | [md](2025/ens-rennes/ens-rennes_d-e_anglais_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_anglais_2025/guide.md) |
@@ -1023,6 +1029,7 @@
 | 2003 | X | PSI-PT | Informatique facultative | [md](2003/x/x_psi-pt_informatique-facultative_2003/brut.md) | [md](2003/x/x_psi-pt_informatique-facultative_2003/guide.md) |
 | 2002 | X | PSI-PT | Informatique facultative | [md](2002/x/x_psi-pt_informatique-facultative_2002/brut.md) | [md](2002/x/x_psi-pt_informatique-facultative_2002/guide.md) |
 | 2004 | X | PSI-PT | Informatique | [md](2004/x/x_psi-pt_informatique_2004/brut.md) | [md](2004/x/x_psi-pt_informatique_2004/guide.md) |
+| 2012 | X-ENS | PSI | Modélisation | [md](2012/x-ens/x-ens_psi_modelisation_2012/brut.md) | [md](2012/x-ens/x-ens_psi_modelisation_2012/guide.md) |
 | 2013 | X-ENS | PSI | Modélisation | [md](2013/x-ens/x-ens_psi_modelisation_2013/brut.md) | [md](2013/x-ens/x-ens_psi_modelisation_2013/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |
 | 2015 | X-ENS | PSI-PT | Informatique | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/brut.md) | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/guide.md) |

@@ -1,0 +1,111 @@
+{
+  "slug": "ens-rennes_d1_economie-oral_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Économie (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitules": {
+    "1": "Choix économiques et comportements stratégiques",
+    "2": "Déflation : risque ou opportunité ?",
+    "3": "Les avantages comparatifs",
+    "4": "Les externalités et les biens publics",
+    "5": "L’intégration économique européenne depuis le traité de Rome",
+    "6": "Les choix intertemporels de consommation",
+    "7": "Peut-on encore lutter contre le chômage en France aujourd’hui ?",
+    "8": "L’équilibre du consommateur en microéconomie",
+    "9": "La politique budgétaire en économie fermée et en économie ouverte",
+    "10": "Les différentes situations de concurrence imparfaite",
+    "11": "Les instruments conventionnels et non-conventionnels de la politique monétaire",
+    "12": "La courbe de Phillips depuis les années 1950",
+    "13": "Opportunités et risques de la globalisation financière contemporaine"
+  },
+  "questions": 13,
+  "sources": {
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2016",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-e-conomie-oral-d1-2016_1478511511522-pdf",
+    "sujet_sha256": "c0b95d43a15b8165c62da6d02a29d004fe41c76df000192950e6c914fffaa27b",
+    "sujet_apercu_sha256": "c0b95d43a15b8165c62da6d02a29d004fe41c76df000192950e6c914fffaa27b",
+    "sujet_pages": 2,
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "source_via_rapport": true,
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-e-conomie-oral-d1-2016_1478511511522-pdf",
+    "rapport_sha256": "c0b95d43a15b8165c62da6d02a29d004fe41c76df000192950e6c914fffaa27b",
+    "rapport_apercu_sha256": "c0b95d43a15b8165c62da6d02a29d004fe41c76df000192950e6c914fffaa27b",
+    "rapport_pages": 2,
+    "intitules_feuille": [],
+    "exemples_rapport": [
+      "Choix économiques et comportements stratégiques",
+      "Déflation : risque ou opportunité ?",
+      "Les avantages comparatifs",
+      "Les externalités et les biens publics",
+      "L’intégration économique européenne depuis le traité de Rome",
+      "Les choix intertemporels de consommation",
+      "Peut-on encore lutter contre le chômage en France aujourd’hui ?",
+      "L’équilibre du consommateur en microéconomie",
+      "La politique budgétaire en économie fermée et en économie ouverte",
+      "Les différentes situations de concurrence imparfaite",
+      "Les instruments conventionnels et non-conventionnels de la politique monétaire",
+      "La courbe de Phillips depuis les années 1950",
+      "Opportunités et risques de la globalisation financière contemporaine"
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "limite_documentaire": "Les exemples du rapport sont corrigés. La feuille exhaustive des tirages de cette session n’a pas été retrouvée.",
+    "numerotation": "Numérotation éditoriale des exemples, dans l’ordre des puces du jury."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, brute et guidée, pour les 13 exemples effectivement imprimés dans le rapport ; la feuille complète des tirages de la session manque. Deux développements par exposé, une relance résolue et une indication propre au guidé ; 3 schémas originaux contrôlés.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "question": "4",
+      "fichier": "figures/externalite.svg",
+      "legende": "Le marché égalise bénéfice et coût privé à q = 6. L’optimum égalise bénéfice et coût social à q = 4,5 ; la taxe y vaut 2,25 par unité."
+    },
+    {
+      "question": "6",
+      "fichier": "figures/budget-intertemporel.svg",
+      "legende": "Dotation de 100 puis 110. Un euro consommé en plus au présent coûte 1,10 euro futur au taux réel retenu."
+    },
+    {
+      "question": "12",
+      "fichier": "figures/relation-de-phillips.svg",
+      "legende": "À 8 % de chômage, l’inflation passe ici de 1 à 2 % après un choc de coût. Le déplacement de la droite se distingue du parcours d’une droite donnée."
+    }
+  ]
+}
