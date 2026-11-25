@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_italien_2011",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Italien",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_11d1_lve_1304088323768.pdf#page=5",
+    "sha256_sujet": "d4f1c0d10fef77be4c496d250b7039a5414079b3ea0b9b06e14d742cb383dfb6",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Manuela Di Pasqua · Corriere della Sera · 14 janvier 2011",
+    "page": 5,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re-11d1-italien_1421751228454-pdf#page=1",
+    "sha256_rapport_jury": "ab51b2618b2f69b917d6796d3b969c40a6ed5b7fa93071914e4241a6d4b73791"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en italien"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en italien."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Expliquer l’importance des réseaux sociaux dans sa propre vie · 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/wikipedia.svg",
+      "legende": "Trois mesures de Wikipédia en janvier 2011"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en italien. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
