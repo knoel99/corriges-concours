@@ -1,0 +1,93 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2009",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2009
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2009/sujet-ecrit-2009-second-concours_geosciences.pdf",
+    "sujet_sha256": "0563495e935e3e2e7c010ccd17791f3cc398df5dc93764440826899db8d63f90",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2009/rapport-2009-second-concours_ecrit_geosciences.pdf",
+    "rapport_sha256": "96310a49f477d80b3ade6eb5feca7e0e0b2beaecd08a7a82e35b6e66fe31734b"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "4.1",
+      "4.2",
+      "4.3",
+      "5.1",
+      "5.2",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 26 questions sont traitées à partir du scan officiel et du rapport écrit. Les mesures de carte et de photographie sont données avec leur précision de lecture. Le gradient de la bordure à 5 kbar fait l’objet d’une estimation conditionnelle, car l’isoplèthe 0,5 imprimée ne rejoint pas cette pression. La dernière carte porte le numéro 13 dans le document et le numéro 12 dans la consigne."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "1.1",
+      "fichier": "figures/trajet-inde-dans-le-repere-de-la-ride.svg",
+      "legende": "Trajet cumulé d’un point indien dans le repère de la ride. Le départ à 70 Ma fixe l’origine spatiale, les âges proviennent des anomalies successives."
+    },
+    {
+      "question": "1.2",
+      "fichier": "figures/vitesses-entre-anomalies.svg",
+      "legende": "Le point est placé à l’âge moyen, le trait horizontal rappelle la durée sur laquelle chaque vitesse est estimée."
+    },
+    {
+      "question": "2.5",
+      "fichier": "figures/croquis-du-chenal-decale.svg",
+      "legende": "Plan interprétatif du linéament et des bords du paléochenal. Le décalage d est mesuré parallèlement à la faille. Schéma agrandi, sans échelle."
+    },
+    {
+      "question": "3.4",
+      "fichier": "figures/contraintes-pression-temperature.svg",
+      "legende": "Les segments colorés reprennent les domaines lisibles des deux isoplèthes. La droite de pression de la question 3.6 ne coupe pas le segment 0,5 dessiné dans l’original."
+    },
+    {
+      "question": "4.2",
+      "fichier": "figures/racine-crustale-et-altitude.svg",
+      "legende": "Deux colonnes de masse égale au-dessus du niveau de compensation. La multiplication par deux de l’épaisseur de croûte ajoute environ 6,4 km de relief et 28,6 km de racine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de la géodynamique au climat, avec confrontation au scan et au rapport écrit. Relevés des anomalies et des vecteurs GPS, croquis de la terrasse, normalisation des analyses de grenat et lecture critique des figures climatiques. Cinq figures originales."
+    }
+  ]
+}
