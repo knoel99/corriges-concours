@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "La crise vénézuélienne et ses conséquences régionales",
+  "sources": {
+    "code_garde": "XEULCR",
+    "sujet": "https://www.alloschool.com/assets/documents/course-300/x-ens-mp-pc-psi-2019-langues-vivantes-2.pdf#page=20",
+    "sujet_sha256": "a666a4879f0ca4fbe02cd6a4f633b4cdaf372e78d0f91a7a10be2259ed028921",
+    "sujet_pages": "20–29",
+    "sujet_index": "https://www.alloschool.com/element/111258",
+    "garde_officielle": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_Esp.pdf",
+    "garde_officielle_sha256": "553a3da205ba5c368477d9ec9fca0f44702425fbecbf232ae656eb095da08cfa",
+    "garde_officielle_pages": "1",
+    "garde_officielle_index": "https://banques-ecoles.fr/cms/session-2019-pc/",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MPPC_rapport_eEsp.pdf",
+    "rapport_sha256": "5f7cff29a3fe401c37dc367ce15327ef223240ce892c38d428157db35f628102",
+    "rapport_pages": "1–2",
+    "rapport_index": "https://banques-ecoles.fr/cms/session-2019-4/"
+  },
+  "redaction": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/deux-photographies-penuries.svg",
+      "legende": "Du rayon presque vide à la banderole sur les médicaments, deux mises en images du manque."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "longueurs_hors_titre": {
+    "synthese_mots": 625,
+    "opinion_mots": 524
+  }
+}
