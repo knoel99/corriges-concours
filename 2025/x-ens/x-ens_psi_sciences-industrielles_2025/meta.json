@@ -1,0 +1,42 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2025",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2025,
+    "duree_heures": 5
+  },
+  "questions": 54,
+  "couverture": {
+    "statut": "partiel",
+    "perimetre": "La première proposition de la question 26 est traitée comme un exercice de logique binaire. La seconde proposition et les questions 1 à 25 et 27 à 54 sont hors couverture."
+  },
+  "questions_traitees": [
+    "26, première proposition uniquement"
+  ],
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2025/Sujets/2025_PSI_Ep3_SI_14022025_Couleur.pdf",
+    "sujet_sha256": "08fa91dedfa4983830b8011b7b250e628e628eb658c6ab8974894fb18e966a6d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-mots-binaires.svg",
+      "question": "26",
+      "legende": "À chacun des deux états correspond un seul couple de bits complémentaires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Première proposition de la question 26 seulement, information portée par un bit et son complément. Table binaire et figure pédagogique originales. Confrontation à la garde et au texte du cahier original."
+    }
+  ]
+}
