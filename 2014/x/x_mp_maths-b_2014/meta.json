@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2014",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2014
+  },
+  "questions": 27,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mp_suj_math_b.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_rap_ecrit_maths_b.pdf",
+    "sha256_sujet": "9ec9fbb1865f2e60a8cd0bb3395a912cafdb68699b80f4fbac7a10f48c5c0dd2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/profil-sphere-de-carnot.svg",
+      "question": "14",
+      "legende": "Coupe méridienne de la sphère. La hauteur maximale de la nappe supérieure est atteinte au rayon 2/π."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions, vérification des identités non commutatives, du produit limite et des temps de parcours contre le sujet et le rapport. Schéma original de la sphère de Carnot, tangentes et réciproque pour tous les rayons.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

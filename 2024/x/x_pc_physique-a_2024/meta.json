@@ -24,6 +24,17 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 39 questions couvrent les transmissions, la polarisation, le Doppler solaire, les modes propres et l’équation de phase. Huit figures originales rendent les trajets, les extrema et les courbes de dispersion vérifiables."
+    },
+    {
+      "phase": "retouches",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Question 20 des deux éditions. Remplacement de 40 000 cellules SVG par le disque vectoriel à dégradé de la loi de vitesse projetée. Vérification des couleurs, des axes et des deux PDF."
     }
   ],
   "figures": [
