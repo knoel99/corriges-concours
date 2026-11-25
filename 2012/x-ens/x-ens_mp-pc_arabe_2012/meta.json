@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_mp-pc_arabe_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "intitule": "Un interrogatoire au café et les appartenances multiples",
+  "questions": 3,
+  "redaction": "Version intégrale du récit de Mohammed El-Bisatie, deux réponses originales en arabe sur l’identité et la cohésion, explication de la focalisation et prise en compte du rapport du jury.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_version.pdf#page=4",
+    "sha256_sujet": "9f216e5704f726063a29e0313bae0348ecc1c975d6a4bce8b1d80f98fe8f33ab",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2012",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_version.pdf#page=4",
+        "sha256": "9f216e5704f726063a29e0313bae0348ecc1c975d6a4bce8b1d80f98fe8f33ab"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_expression.pdf",
+        "sha256": "b41b3ba045e401759179732cb405779b4019b0d60d9163f3ebff111d22a09312"
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012MP_PCrapportversion%20et%20expressionecrite%20Arabe%20XEULC.pdf",
+        "sha256": "370992a7de95e623618bb0327ae1a97e58c9dd0cbf035f02b8c1f64b9410bc75"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/interrogatoire.svg",
+      "legende": "Comment le policier transforme une observation en soupçon."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale du récit de Mohammed El-Bisatie, deux réponses originales en arabe sur l’identité et la cohésion, explication de la focalisation et prise en compte du rapport du jury."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
