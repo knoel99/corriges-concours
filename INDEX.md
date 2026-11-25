@@ -835,6 +835,7 @@
 | 2004 | ENS de Lyon | Second concours | Informatique | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_informatique_2004/brut.md) | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_informatique_2004/guide.md) |
 | 2005 | ENS de Lyon | Second concours | Informatique | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_informatique_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_informatique_2005/guide.md) |
 | 2006 | ENS de Lyon | Second concours | Informatique | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_informatique_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_informatique_2006/guide.md) |
+| 2007 | ENS de Lyon | Second concours | Informatique | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_informatique_2007/brut.md) | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_informatique_2007/guide.md) |
 | 2008 | ENS de Lyon | Second concours | Informatique | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_informatique_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_informatique_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Informatique | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_informatique_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_informatique_2009/guide.md) |
 | 2010 | ENS de Lyon | Second concours | Informatique | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_informatique_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_informatique_2010/guide.md) |
