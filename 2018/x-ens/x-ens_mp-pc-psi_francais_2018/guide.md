@@ -1,0 +1,65 @@
+# X-ENS · MP-PC-PSI · Composition française 2018 — corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+## Sujet et œuvres
+
+Matthieu Letourneux, dans *Le Roman d’aventure. 1870-1930*, présente le monde de l’aventure comme « indifférent à la question de la loi, de la justice » et aux fondements de la civilisation. Il faut discuter cette affirmation à partir de *L’Odyssée* d’Homère, d’*Au cœur des ténèbres* de Joseph Conrad et de *L’Aventure, l’ennui, le sérieux* de Vladimir Jankélévitch.
+
+## Que veut dire « indifférent » ?
+
+Écrire successivement « enfreindre une loi » et « laisser hors champ la question de la loi ». Dans le premier cas, on sait au moins à quelle règle on s’oppose. Dans le second, l’intérêt pour ce qui arrive peut empêcher de s’interroger sur ce qui devrait arriver. La distinction permet de partir de l’expérience du lecteur avant de juger le comportement du héros.
+
+![Figure 1 — Un même épisode met en jeu trois questions différentes. Le dénouement d’un danger, le droit de l’hôte et le jugement du public ne coïncident pas.](figures/aventure-et-hospitalite.svg)
+
+## Repérer les changements de point de vue
+
+| Moment de la lecture | Détail concret | Test de l’affirmation |
+|---|---|---|
+| Marlow enfant | Une zone blanche sur une carte nourrit son désir de partir. | Le territoire paraît disponible depuis la carte. Quelle place ce regard laisse-t-il aux habitants ? |
+| Ulysse dans la caverne | Il attend un don d’hospitalité au lieu de repartir avec ses compagnons. | La règle sociale accompagne le voyageur dans un lieu où elle ne peut être imposée. |
+| Marlow revenu en Europe | Son récit à la fiancée de Kurtz diffère de ce qu’il raconte sur la Tamise. | À quelles personnes le voyageur doit-il la vérité sur son aventure ? |
+
+La comparaison gagne en précision si l’on distingue l’aventure vécue et l’aventure rétrospectivement mise en forme. Chez Jankélévitch, le moment à venir reste ouvert et le danger pèse de tout son poids. L’auditeur sait au contraire que le narrateur est revenu. Se demander comment cette sécurité transforme l’épisode du Cyclope fournit une transition entre l’analyse de l’aventure et celle du récit.
+
+## Rédiger l’objection décisive
+
+On serait tenté d’opposer tout simplement des Européens injustes à un Ulysse qui défend l’hospitalité. Le héros homérique lui-même complique cette réponse. Il fait connaître son nom alors que ses compagnons voudraient déjà s’éloigner. Expliquer le sens de ce geste pour la gloire du héros, puis son coût pour l’équipage, permet de faire surgir la question morale de l’intérieur de l’aventure.
+
+Pour conclure, interroger le mot « monde ». S’agit-il du monde que voit celui qui part, de celui des gens qui l’accueillent, ou de l’univers construit pour ceux qui lisent ? Une réponse qui identifie les trois négligerait la puissance critique du récit de Conrad et la position singulière des Phéaciens.
+
+## Dissertation rédigée
+
+Dans la caverne de Polyphème, Ulysse attend de l’inconnu qui va rentrer un présent d’hospitalité. Ses compagnons auraient préféré reprendre immédiatement la mer. Nous savons rétrospectivement qu’ils avaient raison de se méfier. Pourtant, si le seul enjeu du récit était de savoir comment un homme se tire d’un mauvais pas, pourquoi Homère prendrait-il le soin de faire naître le danger d’une attente aussi précise ? Matthieu Letourneux caractérise le monde de l’aventure par son indifférence à la loi, à la justice, à ce qui rendrait possible une civilisation. Le mot est plus exigeant qu’il n’y paraît. Transgresser une règle peut encore être une manière de lui reconnaître une importance. Être indifférent à la question de la loi, ce serait se mouvoir dans un ordre où l’on n’a même pas à la poser. L’attente du prochain événement peut certes donner cette impression au voyageur et au lecteur. Reste à savoir qui peut s’offrir cette liberté, à quelles conditions, et ce que devient cette suspension du jugement quand l’aventure est racontée aux autres.
+
+### L’avenir ouvert suspend le jugement
+
+Jankélévitch situe l’aventure dans le rapport d’un sujet à un avenir encore indéterminé. Ce qui adviendra doit avoir un prix assez grand pour nous intéresser, sans que nous sachions déjà ce que ce sera. Une règle de droit se propose, au contraire, de reconnaître d’avance des situations comparables et de leur donner un traitement commun. Voilà pourquoi l’instant aventureux semble lui échapper. Au moment de franchir un seuil, la question qui saisit le voyageur porte sur ce qui va surgir de l’autre côté. S’il possédait déjà la mesure et le nom de tout ce qui l’attend, son déplacement pourrait être utile ou agréable, il aurait perdu une part essentielle de son caractère aventureux. Le jeu avec l’inconnu procure alors une liberté paradoxale. Le voyageur accepte de perdre une partie de sa maîtrise pour pouvoir faire une rencontre dont il ne serait pas lui-même l’auteur.
+
+Cette priorité donnée à l’événement organise aussi notre attention. En lisant le récit du Cyclope, nous pouvons attendre avec la même impatience que les compagnons chaque signe qui rend un retour possible. La question de savoir si Ulysse a bien fait d’entrer et d’attendre passe pour un temps au second plan. Le monde singulier de l’aventure tient donc peut-être moins à une géographie sans lois qu’à une manière de rapporter tous les détails à une issue encore incertaine. Selon l’heure du récit, le seuil de la caverne n’est plus pour nous la limite entre une demeure et le dehors. Il est toute la distance qui sépare les voyageurs de la possibilité de rentrer chez eux.
+
+On retrouve cette puissance du possible dans le désir initial de Marlow chez Conrad. Enfant, il regardait sur les cartes des espaces où il rêvait d’aller. Le blanc lui laissait la liberté de projeter un itinéraire, le tracé du fleuve lui donnait un objet de fascination. Qui habite déjà ces lieux et selon quelles règles y vit-on ? L’attrait exercé par la carte ne fournit pas de réponse et peut même différer indéfiniment la question. À ce titre, Letourneux décrit avec justesse une disposition du regard. Le monde dont l’aventureux a besoin pour s’y projeter se constitue dans son esprit à mesure que les vies déjà organisées des autres en disparaissent. Mais ce que révèle cet exemple est aussi inquiétant. Le lieu vide pour l’imagination d’un enfant européen peut être pour d’autres hommes un monde peuplé, construit, vulnérable.
+
+### Le dehors est déjà habité
+
+Le mot « indifférent » prend alors un tout autre sens. L’homme qui veut faire carrière dans la Compagnie peut considérer le séjour africain comme un épisode dans sa propre histoire. Les effets de ses décisions n’ont pas cette légèreté pour ceux qui les subissent. Marlow rencontre dès son arrivée une organisation du travail qui multiplie les gestes apparemment dépourvus d’utilité, tandis que les hommes qui devaient les accomplir sont abandonnés à leur épuisement. Le vocabulaire de l’administration permet de donner aux responsabilités des noms rassurants. Kurtz lui-même a reçu mission d’écrire pour une société qui revendique des fins civilisatrices. Le contraste entre l’éloquence de son rapport et l’atroce prescription qu’il y ajoute fait comprendre que la civilisation n’a jamais été absente de l’entreprise. Elle était présente dans le titre des institutions, dans les carrières et les profits qu’elle garantissait, dans le crédit accordé à certaines paroles. Ce qui faisait défaut était une justice capable de demander à qui servaient ces apparences de légitimité.
+
+Le détour par Homère permet de mesurer la différence entre loi et justice sans supposer que les deux mots changent indistinctement de sens dès qu’on voyage. Les Cyclopes vivent chacun à la tête des siens. L’absence d’assemblée commune n’équivaut donc pas à l’absence de tout ordre domestique. En invoquant la protection due à l’étranger, Ulysse porte devant un autre maître de maison une demande dont il tient la portée pour plus large que la coutume de sa propre cité. Il essuie un refus. Cela signifie que la règle qu’il reconnaît est précisément au centre de l’épreuve, même si personne ne dispose sur place du pouvoir de la faire respecter. De surcroît, Homère ne donne pas à Ulysse un blanc-seing moral. Au moment où il pourrait s’éloigner, le voyageur tient à faire connaître son nom. L’homme qui revendiquait les droits de l’étranger manifeste alors son désir de gloire, au prix d’un nouveau péril pour ceux dont il a la charge. Il y a plusieurs manières d’être injuste au milieu d’une même aventure. Le fait de repartir vivant ne les départage pas.
+
+Chez Jankélévitch, cette limite du jeu a une traduction immédiatement intelligible. L’aventure vécue ne peut avoir précisément l’agrément que nous trouvons après coup à son récit. Un dénouement néfaste peut enlever à celui qui court le danger toute possibilité de le raconter. Et le risque qu’il accepte pour lui-même ne suffit jamais à établir celui qu’il est en droit de faire courir à d’autres. Il importe alors de demander qui dit « aventure ». Ce qui a le caractère d’un épisode librement inauguré pour l’un peut prendre pour un compagnon, un habitant ou un être aimé la figure d’un dommage définitif. La question de justice naît dès que l’on rend à ces personnes la place que la fascination pour une seule destinée avait provisoirement absorbée.
+
+### À qui le voyageur raconte-t-il ce qu’il a fait ?
+
+Il reste à comprendre pourquoi les récits d’aventure, tout en nous captivant par leurs dangers, peuvent aussi nous apprendre à exercer ce jugement. Ulysse raconte ses errances chez les Phéaciens qui l’ont accueilli, nourri et écouté. Cet auditoire donne déjà une réponse pratique au Cyclope. Le naufragé a reçu sa place dans la collectivité avant que le récit de ses exploits lui fournisse un titre à la reconnaissance. Pour pouvoir retrouver Ithaque, il a besoin d’une assistance qui ne soit pas le prix du plus fort. Le récit oblige ainsi à relire la condition morale de l’aventure que l’on vient d’entendre. L’homme dont nous admirions l’ingéniosité ne saurait rentrer par ses seules ressources. Il faut une société capable de faire confiance à une parole étrangère pour que le retour prenne corps.
+
+Conrad rend ce retour moins rassurant. Marlow raconte à des auditeurs installés sur la Tamise ce qu’il a entendu et vu sur un autre fleuve. L’Europe supposée civilisée devient l’endroit où le sens de l’histoire reste à décider. Il avait déjà dû parler à la fiancée de Kurtz. Désireux de la ménager, il avait remplacé les derniers mots du mourant par ceux qu’elle pouvait souhaiter entendre. L’aventure débouche ici sur une responsabilité envers une personne qui n’a jamais pris part au voyage. Quel souvenir a-t-elle le droit de recevoir ? Que protège la parole consolante, et que permet-elle à une société d’ignorer ? Marlow livre à ses auditeurs le fait même de son mensonge. La forme du récit donne ainsi au lecteur accès à une question de justice que la fiancée, elle, n’a pas eu la possibilité de débattre. On peut entendre l’histoire entière tout en refusant de partager la décision de celui qui la raconte.
+
+Le monde de l’aventure est donc capable de suspendre le souci de la loi, et cette suspension participe à son attrait. Pourtant le passage du danger à la délivrance ne fait jamais de lui-même la preuve d’une justice. La conduite des hôtes, le prix payé par les compagnons, le droit des êtres représentés à ne pas disparaître derrière l’histoire du héros subsistent après le dénouement. La liberté de se rendre disponible à l’inconnu donne une belle définition de l’expérience aventureuse. Elle ne devient une indifférence à la civilisation que si l’on réserve au voyageur le privilège d’avoir un monde.
+
+## Sources
+
+La page unique du sujet commun XEULCR nomme les trois filières. Le rapport de quinze pages porte MP et PC et précise le corpus. Il examine la portée d’« indifférent », les règles de l’hospitalité, la fiction civilisatrice et les transformations produites par la narration.
+
+[Sujet](https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_Fr.pdf) · [Rapport](https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_MPPC_rapport_eFran.pdf)
