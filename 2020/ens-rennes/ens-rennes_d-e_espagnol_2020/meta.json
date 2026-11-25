@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_espagnol_2020",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Espagnol",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en espagnol de 242 et 243 mots. Journée mondiale sans voiture, accès des femmes aux métiers de l’IA, évolution des usages éducatifs de la tablette et discussion de l’apprentissage numérique.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-espagnol-d-e-2020_1601913626913-pdf",
+    "sujet_sha256": "1eafedd66fb37da792b8288c0a47a16ba0957ca83406cdfb84405890b23ac4df",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2020-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lv-espagnol-d-e-2020_1604400155989-pdf",
+    "rapport_sha256": "f0f0d07adfbc4ae304e034d2438c38fdd04165aefc4b57da0d5e066b70c56d63"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/pantallas-y-distincion.svg",
+      "legende": "La difusión de la tableta cambia lo que las familias pueden exhibir como un privilegio."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "La première réponse analyse le renversement du statut social de la tablette, la seconde développe une prise de position originale. La consigne de traduction impose de restituer exactement les affirmations du texte."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en espagnol de 242 et 243 mots. Journée mondiale sans voiture, accès des femmes aux métiers de l’IA, évolution des usages éducatifs de la tablette et discussion de l’apprentissage numérique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. ¿Cómo está presentada la interacción entre las pantallas y la educación?",
+      "III.2. ¿En qué medida le parece positivo educar a un niño de hoy sin pantalla?"
+    ]
+  }
+}
