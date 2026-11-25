@@ -1,0 +1,68 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_chinois-oral_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Chinois (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Chinois — explication et analyse de textes, oraux de 2022",
+  "questions": 9,
+  "redaction": "Neuf préparations distinctes en chinois, traduction d’expressions attestées, enjeux de genre et de voix, réponses à l’entretien et distinction entre ouvrage et découpage d’épreuve.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Chinois2022_0.pdf",
+    "sha256_sujet": "b29199c292cd07a34820db2e1feac5a1f92232fb3232f83bdaf775e16c8eb0a5",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Chinois%202022.pdf",
+    "sha256_rapport_jury": "5dc4ad5a1db90a8f046591a874d1fe7b4c1f336510cb078a28e6f4aa75bcdc77",
+    "archives_complementaires": [
+      "https://www.megbook.com.tw/mall/detail.jsp?proID=1851523",
+      "https://dfiles.jiajiaoban.com/ohr/2020/11/09/202646_5fa93586cf55d.pdf",
+      "https://www.163.com/dy/article/H74FEFB80552H74Z.html",
+      "https://blog.sina.com.cn/s/blog_5487f7d00102zo7e.html",
+      "https://dialogue.earth/zh/3/67248/",
+      "https://dialogue.earth/zh/1/43148/",
+      "https://chinadigitaltimes.net/chinese/636210.html"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Langues vivantes · Explication d’un texte d’auteur (LV1)",
+      "fichier": "figures/temporalites-du-gaokao.svg",
+      "legende": "Dans le billet sur le gaokao, trois années construisent deux expériences du même examen."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Analyse du rapport de Victor Vuilleumier et Romain Graziani et des neuf références relues sur le fac-similé, notamment le quatrième passage littéraire en image. Contrôle de l’intégralité des quatre sources de presse LV1 et des dates divergentes."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Neuf préparations distinctes en chinois, traduction d’expressions attestées, enjeux de genre et de voix, réponses à l’entretien et distinction entre ouvrage et découpage d’épreuve."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "perimetre": "Neuf billets de langues vivantes sont recensés. L’explication de LV1 comporte quatre passages, dont le quatrième, imprimé sous forme d’image, est de Yu Hua. Les quatre adresses des textes hors programme de LV1 ont été consultées. En LV2, seul le titre du journal de Fang Fang est fourni. Aucun candidat en lettres et arts ni en sciences humaines. Le jury fait lire puis traduire cinq ou six lignes de son choix ; les lignes désignées ne sont pas publiées.",
+    "limites": "Bornes officielles des quatre passages littéraires conservées, trois intérieurs de passage de Zhang Yihe non collationnés dans l’édition de l’épreuve. Pour les cinq textes hors programme, coupes inconnues ; pour Fang Fang, entrée du journal inconnue. La page de l’article RUN présente une autre date et un autre crédit que la notice. Toutes les traductions citées sont des exercices portant sur des expressions attestées.",
+    "billets_recenses": 9
+  }
+}
