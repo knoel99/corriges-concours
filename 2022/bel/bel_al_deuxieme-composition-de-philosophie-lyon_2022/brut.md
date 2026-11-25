@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## L’absence de principe
 
 Deux demandes identiques de dérogation à une règle ont reçu des réponses opposées. Si celui qui décide se justifie simplement en disant qu’il n’avait cette fois-là aucune envie de rendre service, le reproche d’agir sans principe semble fondé. Il pourrait pourtant se faire que les situations diffèrent sur un point que la règle écrite n’avait pas prévu et que l’on doive approuver la différence des décisions. Dans les deux cas, on n’a trouvé aucun énoncé préalable qui commande mécaniquement le résultat. Dans un seul, apparemment, on a affaire à l’arbitraire. Que doit-il manquer pour qu’il y ait véritablement absence de principe ?
@@ -25,6 +27,10 @@ On peut toutefois objecter à Leibniz que l’exigence d’expliquer constitue p
 ### II. Une absence locale de règle peut être réelle et parfois féconde
 
 Une décision peut être causalement intelligible et manquer de principe au sens pratique. L’autorité qui favorise son ami agit pour une raison psychologique très reconnaissable. Dire que sa décision est sans principe revient à lui reprocher l’absence d’une raison qu’elle puisse soutenir devant les autres personnes placées dans les mêmes conditions. Il existe bien un ressort constant, la préférence accordée au proche. Ce ressort ne devient pas une norme légitime du seul fait qu’il produit régulièrement les mêmes effets. Le défaut est ici réel parce que l’agent est tenu de justifier publiquement sa conduite et n’offre rien qui satisfasse à cette exigence.
+
+Deux décisions identiques peuvent provenir de raisons très différentes. Si le dossier a disparu, l’enquêteur manque d’une raison documentée. S’il retrouve une règle qui exclut le demandeur à cause de son origine, la raison devient connaissable et la critique porte désormais sur sa légitimité. Le mot « absence » change donc de sens au cours même de l’enquête.
+
+![Qu’est-ce qui manque à la décision ?](figures/trois-diagnostics.svg)
 
 À l’inverse, toute décision différente prise dans un cas particulier ne relève pas du favoritisme. Dans le livre V de l’*Éthique à Nicomaque*, Aristote explique que la loi parle en général d’une matière humaine où des exceptions surviennent. L’équitable corrige ce que la généralité de la formulation laisserait manquer à la justice dans ce cas. Supposons qu’une allocation soit attribuée sur production d’un dossier avant une date et qu’une personne ait perdu ses pièces dans une inondation qui a fermé les services chargés de les délivrer. Accorder un délai peut respecter la raison de la procédure, qui est de départager équitablement des demandes vérifiables. Le refuser au seul motif qu’aucune phrase du règlement ne mentionne l’inondation confondrait la justice de la règle et sa lettre. Le motif précis pourra valoir pour toute personne pareillement empêchée.
 

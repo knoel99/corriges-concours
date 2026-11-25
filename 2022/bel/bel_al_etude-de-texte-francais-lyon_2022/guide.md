@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Lire les ruptures sans perdre le fil de l’eau
 
 Les pages 4 et 5 du fascicule accordent cinq heures à l’étude du poème. Les trois notes permettent d’identifier l’église natale, l’amie Albertine et la fille Ondine. Distinguer dès le départ la personne à laquelle parle la voix, la personne qui se souvient et celle qui peut aujourd’hui se rendre sur place. Le premier destinataire est le puits. L’envoi s’adresse à la fille.
@@ -19,6 +21,8 @@ Les pages 4 et 5 du fascicule accordent cinq heures à l’étude du poème. Les
 **Établir le lien entre les figures et la destinataire.** Le lecteur de légende aurait vu des ondins là où jouaient les fillettes. L’envoi appelle Ondine à voir aujourd’hui son reflet au puits. Le retour d’un nom et des cheveux mouillés ou offerts au miroir permet de rapprocher les deux scènes. Le rapport insiste sur la fonction de transmission de l’envoi et sur la portée collective du puits. Il rappelle également la différence entre le bâtiment religieux indiqué en note et l’objet de l’apostrophe.
 
 ![Trois gestes autour du puits](figures/puits-reve-envoi.svg)
+
+Relire les vers 38 et 39 à voix haute en accentuant les deux verbes. Puis reprendre l’envoi en cherchant ce que la fille peut effectivement recevoir de la parole maternelle.
 
 ## Marceline Desbordes-Valmore, « Le Puits de Notre-Dame à Douai »
 

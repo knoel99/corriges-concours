@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Marceline Desbordes-Valmore, « Le Puits de Notre-Dame à Douai »
 
 Le poème porte le nom d’un lieu assez précis pour qu’on puisse le retrouver à l’angle d’une rue. Pourtant la personne qui parle ne s’y tient plus. Dans ce texte des *Poésies inédites*, publiées en 1860 après la mort de Marceline Desbordes-Valmore, le puits de l’enfance est successivement salué, rêvé et confié à une autre. Un puits est un creux où l’on descend chercher une eau qui remonte. Cette double direction organise les gestes du poème : les petites filles se penchent, le rêve ramène la voix vers elles, la fille de la poète est invitée à porter de la lumière au fond de l’eau. Comment une parole qui reconnaît la disparition des êtres et l’éloignement du lieu parvient-elle à transmettre autre chose que le regret de ce qui fut ?
@@ -25,6 +27,10 @@ L’imparfait déplie ensuite le rendez-vous des fillettes au soleil couchant. L
 La succession d’exclamations au vers 23 ouvre de l’espace dans les alexandrins. Le « mouvant silence » est assez calme pour laisser entendre des voix basses, des battements d’ailes et l’heure qui se balance au clocher. L’enfant cesse de compter cette heure. Le poème introduit pourtant un autre observateur, un lecteur de légende qui aurait cru voir des ondins danser. La construction à l’irréel indique que cette figure est une manière possible de voir la scène. Elle n’installe pas les petites filles dans un monde surnaturel où le temps aurait réellement cessé. L’eau sombre et les cheveux mouillés fournissent à la légende des détails empruntés à la vie du groupe.
 
 À partir du vers 31, ce sont les ailes du rêve qui viennent chercher la voix adulte. L’indication que les enfants sont depuis devenus des demoiselles interrompt le retour à l’enfance. Le mot « absents » et l’image des noms sous les fleurs obligent à reconnaître un écart plus irréparable qu’un simple changement d’âge. Albertine et les sœurs sont nommées, mais le retour onirique ne les ramène pas. L’image de l’envol prolonge le bestiaire heureux des premières séquences en lui donnant un autre sens. La série de négations aboutit à ces deux phrases : « Me ramène plus triste. Il ne m’a rien rendu. » L’alexandrin ménage à la césure une séparation nette entre le mouvement du retour et l’aveu de son échec.
+
+Le déplacement de « rendre » à « donner » change la promesse du poème. Rendre ferait revenir les mêmes êtres dans le même monde. Donner laisse place à ce que le rêve et le vers procurent aujourd’hui. L’adresse finale à Ondine peut dès lors transmettre une façon d’écouter le souvenir sans supposer que les absentes reviendront.
+
+![Trois gestes autour du puits](figures/puits-reve-envoi.svg)
 
 Le vers suivant conteste aussitôt cet arrêt : « Que dis-je ? Il m’a donné de replonger mon âme ». Rendu et donné ne sont pas équivalents. Si restituer revenait à rendre les absentes de nouveau présentes, le rêve a échoué. Mais il peut donner un repos, une manière de s’asseoir et de prier, des gestes que la voix accomplit dans le poème. L’image du banni empêche de transformer ce gain en bonheur retrouvé. Il demande assez d’ombre pour oser dormir, alors que l’invité à la fête est comblé. La comparaison rapproche la perte intime d’une expérience d’exclusion et d’asile. Le titre de Notre-Dame et les bancs de la prière inscrivent la mémoire dans une géographie religieuse. Le texte ne leur fait pas prononcer à eux seuls un jugement sur la Révolution qui a touché l’église. Son argument porte sur la possibilité limitée d’un repos au milieu du manque.
 
