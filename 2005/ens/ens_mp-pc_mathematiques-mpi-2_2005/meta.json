@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp-pc_mathematiques-mpi-2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques MPI 2",
+    "annee": 2005
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_maths-2_mp-pc_2005.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "fbe603a72c3f5df838568f91422048732082c1b67897302397fa661dc8a7eea2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/profils-de-transition.svg",
+      "question": "IV.3.c",
+      "legende": "Sur trois intervalles, les profils tendent vers les plateaux de signes alternés. Chaque morceau comporte deux demi-transitions."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction sur les huit pages du fascicule. Dérivées par morceaux et contre-exemple à I.1.b, première variation, régularité et conservation, énergie exacte des demi-profils, borne et construction optimales pour plusieurs interfaces. Figure de profils à deux échelles.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
