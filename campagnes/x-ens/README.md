@@ -12,6 +12,8 @@ Les sujets d’informatique et de mathématiques-informatique des ENS depuis 200
 
 Les deux concours ont aussi des compositions distinctes avant 2010. Le lycée Faidherbe conserve le cahier de 1997 des ENS de Paris et de Lyon. Les premiers sujets de mathématiques-informatique comprennent les carrés latins, donnés en 2002 au groupe I des filières MP et PC. [Archives antérieures et empreintes des cahiers](informatique-ecrits-1997-2009.tsv)
 
+Pour la modélisation PSI 2016 sur le GPS, le fac-similé de seize pages donne aussi les deux feuilles du document-réponse avec les figures A, B et C. [Cahier officiel et exemplaire avec les feuilles-réponses](modelisation-psi-2016.tsv)
+
 ## Lire le bilan
 
 Le bilan daté donne les comptes par matière et les liens vers les preuves pour chaque épreuve. [Dernier bilan sur le site](https://sujet-corriges.ai/couverture-x-ens) · [Recherche par épreuve](https://sujet-corriges.ai/couverture-x-ens/epreuves) · [Relevés datés sur GitHub](bilans/)
