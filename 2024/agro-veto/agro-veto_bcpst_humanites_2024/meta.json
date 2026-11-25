@@ -1,0 +1,72 @@
+{
+  "slug": "agro-veto_bcpst_humanites_2024",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Humanités",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "Humanités",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet-a-bcpst-humanites-session-2024.pdf",
+    "sujet_sha256": "b32662e49d02078d5efbac25eec154cbd5cc9efc94a56fee0aaf2f4ba30f0f93",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport-cpge-bcpst-humanites-session-2024.pdf",
+    "rapport_sha256": "8905c74f4ebc1d48129a3988b6d2c36b7031b4836da0c5336aadfb82980b490b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/jugement.svg",
+      "question": "Dissertation",
+      "legende": "Comment juger les moyens employés ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport sur la question éthique à la première personne, l’incertitude, les procédés communs à la conviction et à la manipulation et les exemples des quatre œuvres."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation dans les deux éditions, de la préparation pédagogique et du schéma pour les œuvres du programme."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de l’énoncé de Viktorovitch, de la lettre XXI, de l’entretien entre Lorenzo et Philippe et de la fonction distincte des deux essais d’Arendt. Contrôle des deux éditions."
+    }
+  ]
+}
