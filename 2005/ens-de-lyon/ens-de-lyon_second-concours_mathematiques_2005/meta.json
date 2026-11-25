@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2005",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2005
+  },
+  "questions": 26,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2005/sujet-ecrit-2005-second-concours_mathematiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "1c9d1e6e498ad99812fe8ff8e157db8b87854b2ae819cae3a14f116ca3be67a1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/noyau-et-cas-degenere.svg",
+      "question": "IV.10",
+      "legende": "La coupe du noyau tend vers 1 pour α = 1, β = 0. Pour α = 0, β = 1, elle croît sans borne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 26 questions des quatre parties sur le fascicule original. Hypothèse de régularité manquante en I et contre-exemple au cas alpha nul en IV.10. Contrôle des deux sens de récurrence, des restes intégrés et de la dérivation. Figure comparative de deux noyaux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
