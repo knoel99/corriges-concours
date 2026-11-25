@@ -1,0 +1,140 @@
+{
+  "slug": "ens-rennes_d-e_droit-oral_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "sujets": 24,
+  "questions": 48,
+  "sujets_et_pages": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "6": 5,
+    "7": 6,
+    "8": 7,
+    "9": 8,
+    "10": 9,
+    "11": 10,
+    "12": 11,
+    "13": 12,
+    "14": 13,
+    "15": 14,
+    "16": 15,
+    "18": 16,
+    "19": 17,
+    "20": 18,
+    "21": 19,
+    "22": 20,
+    "23": 21,
+    "24": 22,
+    "25": 23,
+    "27": 24
+  },
+  "sources": {
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-e-preuve-orale-de-droit-d-e-2022_1668101846031-pdf",
+    "sujet_sha256": "0cc9c2a21be11fb8443321da3bc5f8bdd9087ff0379640a4bf33e16d70cc0a29",
+    "sujet_apercu_sha256": "6f1e0b99717dd41d373d28714d9c19e6d1abbbc373f659d9e60e8e0ab07ac566",
+    "textes_session": {
+      "Code civil": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2022-06-01/",
+      "Code de procédure civile": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070716/2022-06-01/",
+      "Code de la consommation": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069565/2022-06-01/",
+      "Code pénal": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070719/2022-06-01/",
+      "Code du travail": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050/2022-06-01/",
+      "Code de la santé publique": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072665/2022-06-01/",
+      "Constitution de 1958": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000571356/",
+      "Article 288 TFUE": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A12012E288",
+      "Loi du 5 juillet 1985": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000693454/"
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, après lecture des 24 tirages du fascicule officiel et contrôle de leur numérotation. 48 réponses distinctes de théorie et de cas pratique en droit de la session, indication par tirage en édition guidée et trois schémas originaux. Le scan du sujet 7 est vérifié visuellement pour le décompte des cinq jours travaillés. Aucun rapport de droit oral spécifique retrouvé dans l’index de 2022."
+    }
+  ],
+  "figures": [
+    {
+      "question": "4",
+      "fichier": "figures/maison-edgar.svg",
+      "legende": "Edgar finance son aide par le prix et conserve la jouissance de sa maison."
+    },
+    {
+      "question": "8",
+      "fichier": "figures/effet-direct-directive.svg",
+      "legende": "Le changement de directive ne supprime pas nécessairement une exclusion antérieure."
+    },
+    {
+      "question": "19",
+      "fichier": "figures/jeton-et-maillot.svg",
+      "legende": "L’intégrité d’une inscription ne garantit pas la propriété du bien physique."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions, après lecture des 24 tirages du fascicule officiel et contrôle de leur numérotation. 48 réponses distinctes de théorie et de cas pratique en droit de la session, indication par tirage en édition guidée et trois schémas originaux. Le scan du sujet 7 est vérifié visuellement pour le décompte des cinq jours travaillés. Aucun rapport de droit oral spécifique retrouvé dans l’index de 2022.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1-théorie",
+      "1-pratique",
+      "2-théorie",
+      "2-pratique",
+      "3-théorie",
+      "3-pratique",
+      "4-théorie",
+      "4-pratique",
+      "6-théorie",
+      "6-pratique",
+      "7-théorie",
+      "7-pratique",
+      "8-théorie",
+      "8-pratique",
+      "9-théorie",
+      "9-pratique",
+      "10-théorie",
+      "10-pratique",
+      "11-théorie",
+      "11-pratique",
+      "12-théorie",
+      "12-pratique",
+      "13-théorie",
+      "13-pratique",
+      "14-théorie",
+      "14-pratique",
+      "15-théorie",
+      "15-pratique",
+      "16-théorie",
+      "16-pratique",
+      "18-théorie",
+      "18-pratique",
+      "19-théorie",
+      "19-pratique",
+      "20-théorie",
+      "20-pratique",
+      "21-théorie",
+      "21-pratique",
+      "22-théorie",
+      "22-pratique",
+      "23-théorie",
+      "23-pratique",
+      "24-théorie",
+      "24-pratique",
+      "25-théorie",
+      "25-pratique",
+      "27-théorie",
+      "27-pratique"
+    ],
+    "precision": "Réponses aux deux composantes de chaque tirage effectivement reproduit dans le fascicule."
+  }
+}
