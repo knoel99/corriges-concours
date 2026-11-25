@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-la-publication-du-monologion-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — la publication du Monologion (oral)",
+    "annee": 2016
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAL-HIST2.pdf",
+    "sha256_sujet": "d4199f60159d23e2408488a9d4e39031b880a5800c45b4a8b7eff1a689c5cf71",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Rapport%20S.I.%20Histoire%202016.pdf",
+    "sha256_rapport_jury": "578b8096cbd9e452afff066ccf17a3b2a0e3531dcab79c980deabe2af1ff8317"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Un dialogue sur la manière de prouver",
+      "legende": "Le rôle des trois correspondants dans la circulation du traité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des cinq lettres sur les deux pages numérisées, du rapport et des références d’édition. Rédaction et schéma de la publication manuscrite, des autorités et des titres.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
