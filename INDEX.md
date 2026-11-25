@@ -612,6 +612,7 @@
 | 2008 | ENS de Lyon | Second concours | Chimie | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_chimie_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_chimie_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Chimie | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Chimie | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/guide.md) |
+| 2013 | ENS de Lyon | Second concours | Chimie | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_chimie_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_chimie_2013/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Chimie | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/guide.md) |
 | 2014 | ENS Rennes | D1 | Allemand | [md](2014/ens-rennes/ens-rennes_d1_allemand_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_allemand_2014/guide.md) |
 | 2014 | ENS Rennes | D1 | Anglais | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/guide.md) |
