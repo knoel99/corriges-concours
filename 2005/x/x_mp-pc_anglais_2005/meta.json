@@ -1,0 +1,72 @@
+{
+  "slug": "x_mp-pc_anglais_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Toni Morrison, Portrait, et Étienne Klein, Science et progrès",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://web.archive.org/web/20090415070752/http://www.polytechnique.fr:80/concours/sujets/sujet05/sujet05.htm",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "2",
+    "sujet": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=2",
+    "sujet_sha256": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249",
+    "sujet_complementaire": "https://web.archive.org/web/20061125010606id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+    "sujet_complementaire_sha256": "0315993b329ac8a956c2b507bb40ddd56bd2ad4cc1c1a1abaf175d4f1588491f",
+    "precision": "La version appartient à Love (2003). Le cahier d’expression reproduit « Science et progrès », extrait de La science nous menace-t-elle ? (2003). Les deux sujets sont conservés par captures d’archives des publications du concours. Les rapports d’anglais 2005 ne figurent pas parmi les pièces retrouvées."
+  },
+  "mots_expression": {
+    "1": 129,
+    "2": 189
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/regards.svg",
+      "legende": "Le présent du souvenir interrompt le récit rétrospectif."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/progres.svg",
+      "legende": "Deux époques donnent des sens différents à la promesse du progrès."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/risques.svg",
+      "legende": "Les connaissances permettent de comparer. Les choix engagent des valeurs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Toni Morrison, Portrait, et Étienne Klein, Science et progrès.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
