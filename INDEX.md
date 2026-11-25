@@ -251,6 +251,8 @@
 | 2021 | ENS Rennes | D-E | Allemand | [md](2021/ens-rennes/ens-rennes_d-e_allemand_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_allemand_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Allemand | [md](2022/ens-rennes/ens-rennes_d-e_allemand_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_allemand_2022/guide.md) |
 | 2023 | ENS Rennes | D-E | Allemand | [md](2023/ens-rennes/ens-rennes_d-e_allemand_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_allemand_2023/guide.md) |
+| 2021 | ENS Rennes | D-E | Anglais (oral) | [md](2021/ens-rennes/ens-rennes_d-e_anglais-oral_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_anglais-oral_2021/guide.md) |
+| 2023 | ENS Rennes | D-E | Anglais (oral) | [md](2023/ens-rennes/ens-rennes_d-e_anglais-oral_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_anglais-oral_2023/guide.md) |
 | 2020 | ENS Rennes | D-E | Anglais | [md](2020/ens-rennes/ens-rennes_d-e_anglais_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_anglais_2020/guide.md) |
 | 2021 | ENS Rennes | D-E | Anglais | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Anglais | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/guide.md) |
