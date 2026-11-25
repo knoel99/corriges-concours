@@ -1,0 +1,127 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2006",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2006
+  },
+  "questions": 51,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2006/sujet-ecrit-2006-second-concours_chimie.pdf",
+    "sujet_sha256": "f666f6d7ec45e7a792d7fa47dd56db1956a1ef6dc2392390f9addf2eb4148524"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "1.2.1",
+      "1.2.2",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.2.1",
+      "3.3.1",
+      "3.3.2",
+      "3.4.1",
+      "3.4.2",
+      "3.4.3",
+      "3.5.1",
+      "3.5.2",
+      "3.6.1",
+      "3.6.2",
+      "3.6.3",
+      "3.6.4",
+      "3.6.5",
+      "4.1.1",
+      "4.1.2",
+      "4.1.3",
+      "4.2.1",
+      "4.2.2",
+      "5.1.1",
+      "5.1.2",
+      "5.2.1",
+      "5.4.1",
+      "5.4.2",
+      "6.1.1",
+      "6.2.1",
+      "6.2.2",
+      "6.3.1",
+      "6.3.2",
+      "6.4.1",
+      "6.4.2",
+      "6.5.1",
+      "6.5.2",
+      "6.5.3",
+      "6.6.1",
+      "6.6.2"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "5.3.1",
+      "5.3.2"
+    ],
+    "precision": "Ces éditions traitent 49 des 51 questions du scan. Les questions 5.3.1 et 5.3.2 sur la protection expérimentale du thiol sont hors couverture. Les données du cycle thermodynamique et les quatre valeurs spectrophotométriques sont exploitées avec leurs unités imprimées. Les deux spectres RMN sont lus dans l’annexe. L’archive du second concours ne rattache pas de rapport écrit à cette épreuve."
+  },
+  "figures": [
+    {
+      "question": "1.1.2",
+      "fichier": "figures/projections-de-fischer.svg",
+      "legende": "Les deux projections de série L ont NH₂ à gauche. Les priorités CIP diffèrent pour les chaînes CH₂SH et CH₃."
+    },
+    {
+      "question": "1.1.3",
+      "fichier": "figures/cram-de-la-cysteine.svg",
+      "legende": "Le coin plein vient vers le lecteur et les hachures s’écartent vers l’arrière. Avec H en arrière, NH₂ puis CH₂SH puis COOH dessinent le sens horaire."
+    },
+    {
+      "question": "2.2.2",
+      "fichier": "figures/bilan-du-cycle-de-hess.svg",
+      "legende": "Chemins entre trois états aqueux, en kJ par mole. L’addition des deux étapes doit reproduire le bilan direct déduit des données gazeuses et aqueuses."
+    },
+    {
+      "question": "3.2.1",
+      "fichier": "figures/domaines-de-predominance.svg",
+      "legende": "Les frontières font intervenir des constantes macroscopiques. Le monoanion regroupe deux états différents du soufre et de l’azote."
+    },
+    {
+      "question": "3.5.2",
+      "fichier": "figures/droite-des-quatre-mesures.svg",
+      "legende": "À 240 nm, la transformation de la fraction de dianion rend le signal linéaire en fonction du rapport des concentrations. Les données proviennent de la table 3."
+    },
+    {
+      "question": "5.1.2",
+      "fichier": "figures/plan-peptidique.svg",
+      "legende": "Autour de l’amide, les six atomes indiqués sont approximativement coplanaires. Les carbones α sont représentés en disposition trans."
+    },
+    {
+      "question": "6.6.1",
+      "fichier": "figures/anion-du-pourpre-de-ruhemann.svg",
+      "legende": "Une forme mésomère de l’anion coloré, avec un oxygène chargé et un azote reliant les deux noyaux indaniques. La charge peut se répartir sur le système conjugué."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour 49 questions sur 51. Confrontation avec le scan officiel de neuf pages, les spectres, les tables et les structures. Régression sur les quatre mesures, bilan de Hess et vérification structurale du chromophore. Sept figures originales. Les deux questions de protection du thiol sont hors couverture."
+    }
+  ]
+}
