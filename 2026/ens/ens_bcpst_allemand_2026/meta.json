@@ -26,9 +26,10 @@
   ],
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=2",
-    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst"
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst",
+    "sujet_sha256": "ce0653ccf99a04728fdd7d9ac0ca35ed6fc9d9c2dc329c4651d6dd86b0a4dc30"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -65,6 +66,17 @@
       "modifications": true,
       "perimetre": "Confrontation des deux versions aux pages imprimées 1–4. Contrôle des classes d’âge et des pourcentages du graphique, distinction des obligations de janvier et septembre 2025, vérification de l’essai et du passage à traduire.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Distinction entre revendication de 2024 et règle adoptée en 2025, dénominateur et cumul des réponses de l’enquête de 2022, lien entre dons, textiles collectés et déchets exportés ; restitution du contrefactuel en version."
     }
   ]
 }

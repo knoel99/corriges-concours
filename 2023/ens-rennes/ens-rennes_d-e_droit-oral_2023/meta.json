@@ -1,0 +1,139 @@
+{
+  "slug": "ens-rennes_d-e_droit-oral_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit (oral)",
+    "annee": 2023,
+    "modalite": "oral"
+  },
+  "sujets": 23,
+  "questions": 46,
+  "sujets_et_pages": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "11": 11,
+    "12": 12,
+    "13": 13,
+    "14": 14,
+    "17": 15,
+    "18": 16,
+    "19": 17,
+    "20": 18,
+    "21": 19,
+    "22": 20,
+    "23": 21,
+    "24": 22,
+    "26": 23
+  },
+  "sources": {
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oral-droit-2023_1698744431920-pdf",
+    "sujet_sha256": "8a2da5c41ad3f3a0d3631f7c035cab61870cb2c7591e2804426ce4dfea029301",
+    "sujet_apercu_sha256": "43776912fb883406f7abae519bfdc8eebb0dc0005579a8fd04e5a43afa33c69c",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-oral-droit-d-e-2023_1698421485423-pdf",
+    "rapport_sha256": "4c0f779974f09d4c047f4d39c8f0eb8a99e95e93aa3f29e0a2400e342a1064d8",
+    "rapport_apercu_sha256": "677283bbd5a4ce3ef014bfbfb15100987d5938a78a5e873cce2cff709c9ebe6d",
+    "textes_session": {
+      "Code civil": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2023-06-01/",
+      "Code de procédure civile": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070716/2023-06-01/",
+      "Code de la consommation": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069565/2023-06-01/",
+      "Code pénal": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070719/2023-06-01/",
+      "Code du travail": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072050/2023-06-01/",
+      "Code de la santé publique": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006072665/2023-06-01/",
+      "Constitution de 1958": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000571356/",
+      "Article 288 TFUE": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A12012E288"
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, après lecture des 23 tirages du fascicule officiel et contrôle de leur numérotation. 46 réponses distinctes de théorie et de cas pratique en droit de la session, indication par tirage en édition guidée et trois schémas originaux. Lecture du rapport spécifique et application de son conseil de traiter séparément le cours et le cas."
+    }
+  ],
+  "figures": [
+    {
+      "question": "2",
+      "fichier": "figures/titre-et-creance.svg",
+      "legende": "La preuve d’une perte matérielle et celle de l’extinction d’une dette sont distinctes."
+    },
+    {
+      "question": "8",
+      "fichier": "figures/operateur-et-employeur.svg",
+      "legende": "Deux contrats et deux parties adverses donnent lieu à des prétentions différentes."
+    },
+    {
+      "question": "22",
+      "fichier": "figures/ventiler-le-prix.svg",
+      "legende": "La vente simultanée ne donne pas automatiquement la moitié du prix à chacun."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions, après lecture des 23 tirages du fascicule officiel et contrôle de leur numérotation. 46 réponses distinctes de théorie et de cas pratique en droit de la session, indication par tirage en édition guidée et trois schémas originaux. Lecture du rapport spécifique et application de son conseil de traiter séparément le cours et le cas.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1-théorie",
+      "1-pratique",
+      "2-théorie",
+      "2-pratique",
+      "3-théorie",
+      "3-pratique",
+      "4-théorie",
+      "4-pratique",
+      "5-théorie",
+      "5-pratique",
+      "6-théorie",
+      "6-pratique",
+      "7-théorie",
+      "7-pratique",
+      "8-théorie",
+      "8-pratique",
+      "9-théorie",
+      "9-pratique",
+      "10-théorie",
+      "10-pratique",
+      "11-théorie",
+      "11-pratique",
+      "12-théorie",
+      "12-pratique",
+      "13-théorie",
+      "13-pratique",
+      "14-théorie",
+      "14-pratique",
+      "17-théorie",
+      "17-pratique",
+      "18-théorie",
+      "18-pratique",
+      "19-théorie",
+      "19-pratique",
+      "20-théorie",
+      "20-pratique",
+      "21-théorie",
+      "21-pratique",
+      "22-théorie",
+      "22-pratique",
+      "23-théorie",
+      "23-pratique",
+      "24-théorie",
+      "24-pratique",
+      "26-théorie",
+      "26-pratique"
+    ],
+    "precision": "Réponses aux deux composantes de chaque tirage effectivement reproduit dans le fascicule."
+  }
+}
