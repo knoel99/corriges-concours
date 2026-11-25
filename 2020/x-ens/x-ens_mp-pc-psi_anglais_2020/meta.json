@@ -1,0 +1,71 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Étudier les humanités en Amérique du Nord et leur rôle dans une université technologique",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "mots_hors_titre": {
+    "A": 618,
+    "B": 522
+  },
+  "sources": {
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2020/",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MPPC_sujet_Ang.pdf",
+    "sujet_sha256": "f3c5dd8227ac4c0e56bbd5f3f5bdf4a719dcbf7ca7f000fb49499f683a180572",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_MP_PC_rap_eAng-1.pdf",
+    "rapport_jury_sha256": "0a1c2c5ac084c68263733a74005d9cf8ee9f5736464b3f83e1de8c43f4bcb6c3",
+    "precision": "L’éditorial de Mary A. Papazian ouvre la partie B du cahier. Le rapport annuel confirme la nécessité de confronter l’enquête de la NACE aux trois articles dans la seule partie A."
+  },
+  "redaction": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Étudier les humanités en Amérique du Nord et leur rôle dans une université technologique.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/horizons.svg",
+      "legende": "Comparer les indicateurs de Schmidt, Deming et Kilgour."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/employeurs.svg",
+      "legende": "Enquête NACE 2018. Chaque paire donne le pourcentage jugeant la compétence essentielle, puis le pourcentage jugeant les diplômés compétents."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/conception.svg",
+      "legende": "Projet hypothétique d’attribution de logements accessibles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_psi_2015_2021",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Étudier les humanités en Amérique du Nord et leur rôle dans une université technologique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
