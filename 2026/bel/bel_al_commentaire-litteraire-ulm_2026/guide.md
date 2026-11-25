@@ -14,6 +14,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Texte étudié** — Jean Giono, *Un roi sans divertissement*, visite chez la brodeuse.
 
 [Sujet officiel, p. 2](https://www.ens.psl.eu/sites/default/files/options_francais_philosophie.pdf#page=2) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_al_rapport_ecrit_francais_option.pdf)
@@ -34,6 +36,8 @@ Une notation de la première phrase peut déjà fournir une démonstration. Le n
 Pour commenter le portrait, suivre trois paliers successifs. La forme du cadre est donnée à voir, le sexe de la figure est déduit, le visage est imaginé par Saucisse comme une perception possible de Langlois. Conserver le conditionnement de chaque énoncé. Ainsi, dans le dernier grand paragraphe, l’hypothèse sur les yeux accoutumés à l’ombre appartient à la narratrice.
 
 ![Trois degrés de connaissance du portrait](figures/portrait-degres.svg)
+
+Séparer une phrase qui décrit un détail visible et une phrase qui en propose l’interprétation. Attribuer ensuite l’interprétation à celle ou celui qui regarde. Le doute devient un effet précis de narration.
 
 ## Construire les transitions
 

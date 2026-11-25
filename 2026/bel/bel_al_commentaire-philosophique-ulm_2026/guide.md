@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Épictète, Entretiens, II, 5
 
 [Sujet officiel, p. 3](https://www.ens.psl.eu/sites/default/files/options_francais_philosophie.pdf#page=3)
@@ -17,6 +19,8 @@
 Au brouillon, noter à quels substantifs s’attachent successivement les évaluations. Au commencement, les matières sont indifférentes ; quelques lignes plus loin, la négligence est qualifiée de mal. Pour élaborer le problème, expliquer pourquoi ces deux propositions portent sur une seule situation sans se contredire. La difficulté annoncée est d’être à la fois attentif et ferme.
 
 ![Ce qui tombe et la manière de jouer](figures/de-matiere-usage.svg)
+
+Faire varier la qualité du geste en gardant le coup tiré identique. Reprendre ensuite l’exemple avec une traversée dont l’issue échappe au passager. On peut alors préciser en quel sens une préparation demeure exigible.
 
 ## Suivre la façon dont le maître fait raisonner son interlocuteur
 
