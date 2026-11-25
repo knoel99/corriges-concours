@@ -1,0 +1,89 @@
+{
+  "slug": "ens-de-lyon_series-a-l_italien-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Italien (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 13,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Italien%202026.pdf#page=2",
+    "sujet_sha256": "0d2dceb35c17317d713604b95aea7ea7daa6953186ed16d96905f0868801c39a",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Italien%202026.pdf#page=14",
+    "rapport_sha256": "cd8303b341427a9228b47c92d71e7051d4e5a09a01f6b432854372136906b357",
+    "documents": {
+      "ponzani": "https://www.repubblica.it/cultura/2026/05/03/news/walter_veltroni_nuovo_romanzo_mito_cinecitta_recensione_michela_ponzani-425319644/",
+      "saba": "https://www.itals.it/sites/default/files/docs/musica/Umberto_Saba_Citta_vecchia_di_P._E._Balboni.pdf",
+      "serao": "https://it.wikisource.org/wiki/Il_ventre_di_Napoli_%281906%29/L%27anima_di_Napoli/Guerra_ai_ladri",
+      "franzoni": "https://www.doppiozero.com/giorgia-meloni-gli-angeli",
+      "doppiaggio": "https://www.ilpost.it/2025/10/29/litaliano-lingua-accenti-dialetti-film-serie-cinema/",
+      "roghi": "https://www.internazionale.it/opinione/vanessa-roghi/2025/09/29/educazione-sessuale-scuola",
+      "folchi": "https://www.strisciarossa.it/senza-il-coraggio-delle-donne-non-ci-sarebbe-stata-la-resistenza-contro-il-nazi-fascismo/",
+      "mattarella": "https://www.ilpost.it/2025/11/19/mattarella-meloni-verita-garofani-quirinale/",
+      "coin": "https://www.internazionale.it/notizie/francesca-coin/2025/12/15/data-center-italia-proteste",
+      "scurati": "https://www.repubblica.it/commenti/2026/05/05/news/venezia_il_coraggio_per_salvare_la_citta_antonio_scurati-425323118/",
+      "brando": "https://www.strisciarossa.it/il-medioevo-e-le-radici-della-nostra-ansia-ecologica/",
+      "camp1": "https://www.epfl.ch/labs/lapis/wp-content/uploads/2019/01/VETU18_CIVITAS-SOLIS.pdf#page=10",
+      "camp2": "https://www.epfl.ch/labs/lapis/wp-content/uploads/2019/01/VETU18_CIVITAS-SOLIS.pdf#page=16",
+      "ponzani_foto": "https://www.repstatic.it/content/nazionale/img/2026/05/02/174225180-2d67ce1b-b6d5-4a0e-9939-354bb6e3aead.jpg"
+    },
+    "precision": "Le jury identifie treize billets. Les quatre textes littéraires sont expliqués entre les bornes officielles. Les neuf articles donnent lieu à des analyses de presse. Pour Ponzani et Scurati, seuls les passages consultables et les paratextes du journal ont été vérifiés. Pour les sept autres, le texte publié a été retrouvé. Les coupures de presse et l’illustration exactes du feuillet ne sont pas reproduites par l’ENS."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "2 — Saba, « Città vecchia »",
+      "3 — Serao, début de « Guerra ai ladri »",
+      "4 — Campanella, savoir et gouvernement",
+      "5 — Campanella, les biens communs"
+    ],
+    "questions_partiellement_traitees": [
+      "1 — Ponzani, passages accessibles, photographie du journal, rapport du jury",
+      "6 — Franzoni, LV1",
+      "7 — Il Post, usages de la langue au cinéma, LV1",
+      "8 — Roghi, LV1",
+      "9 — Folchi, LV1",
+      "10 — Il Post, Mattarella et Meloni, LV2",
+      "11 — Coin, LV2",
+      "12 — Scurati, ouverture et présentation consultables, LV2",
+      "13 — Brando, sciences humaines"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le jury identifie treize billets. Les quatre textes littéraires sont expliqués entre les bornes officielles. Les neuf articles donnent lieu à des analyses de presse. Pour Ponzani et Scurati, seuls les passages consultables et les paratextes du journal ont été vérifiés. Pour les sept autres, le texte publié a été retrouvé. Les coupures de presse et l’illustration exactes du feuillet ne sont pas reproduites par l’ENS."
+  },
+  "figures": [
+    {
+      "fichier": "figures/voci.svg",
+      "legende": "Chi parla e quale prova offre?",
+      "question": "Analyse et entretien"
+    },
+    {
+      "fichier": "figures/memoria.svg",
+      "legende": "Che cosa viene reso visibile?",
+      "question": "Analyse et entretien"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule et du rapport de Lyon. Collation des quatre billets littéraires, identification des neuf articles, observation de la photographie publiée avec la recension de Ponzani. Rédaction des deux éditions, des explications et réponses en italien, des exercices et des deux figures. Le jury identifie treize billets. Les quatre textes littéraires sont expliqués entre les bornes officielles. Les neuf articles donnent lieu à des analyses de presse. Pour Ponzani et Scurati, seuls les passages consultables et les paratextes du journal ont été vérifiés. Pour les sept autres, le texte publié a été retrouvé. Les coupures de presse et l’illustration exactes du feuillet ne sont pas reproduites par l’ENS."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
