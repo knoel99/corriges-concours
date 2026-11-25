@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Composition de philosophie (banque d'épreuves littéraires, filière AL), session 2026 : 6 heures, calculatrice non autorisée. Sujet : « L'autorité de la science ».
 
 **Problématique** : « l'autorité de la science » est-elle une contradiction dans les termes, ou la science détient-elle une forme d'autorité qui lui est propre — et à quelles conditions cette autorité reste-t-elle légitime ?
@@ -33,6 +35,10 @@ Nous partirons de ce qui donne sa valeur à une proposition scientifique, pour c
 Le rapport de droit entre la science et l'autorité se lit d'abord dans la manière dont la science moderne s'est constituée : non pas contre des ennemis extérieurs seulement, mais contre l'argument d'autorité lui-même. L'autorité se reconnaît à ceci qu'elle obtient l'obéissance sans démontrer sa légitimité : le père, le magistrat, le prêtre sont obéis en vertu de ce qu'ils sont ou de ce qu'ils représentent, non en vertu des raisons qu'ils exposent. Or le propre de l'énoncé scientifique est inverse : il ne vaut que par les raisons et les expériences qui l'établissent, indépendamment de qui le profère. Un théorème n'est pas plus vrai parce qu'il est énoncé par un prix Nobel ; une mesure n'est pas plus juste parce qu'elle émane d'une autorité prestigieuse. La science relève donc, dans les termes d'Arendt, non de l'autorité mais de la persuasion rationnelle : elle ne commande pas, elle convainc. De ce point de vue, « l'autorité de la science » serait une contradiction dans les termes : la science a raison, elle n'a pas autorité.
 
 Ainsi, en janvier 1610, Galilée observe à plusieurs reprises de petits points lumineux près de Jupiter. D’une nuit à l’autre, ils se retrouvent tantôt à l’est, tantôt à l’ouest de la planète tout en l’accompagnant dans son déplacement parmi les étoiles. C’est cette série de positions, et non la seule présence de points dans la lunette, qui lui permet de les interpréter comme des astres tournant autour de Jupiter. L’observation réfute la prétention à faire de la Terre le centre de tous les mouvements célestes. Elle laisse en revanche ouverte la question du mouvement de la Terre elle-même. Le lecteur du *Messager des étoiles* sait ainsi ce qu’il devrait retrouver en observant à son tour, mais aussi ce qu’il n’est pas autorisé à conclure. L’astronome gagne du crédit en permettant de contrôler son propos jusque dans ses limites.
+
+Comparer deux nuits apprend qu’une disposition des points lumineux a changé. Les observations successives font ensuite apparaître qu’ils accompagnent Jupiter sur le ciel. C’est la combinaison de ces relations qui soutient l’hypothèse de corps tournant autour de Jupiter. Le dessin d’une seule nuit laisserait plusieurs hypothèses ouvertes.
+
+![Figure 1 — De l’observation de Jupiter aux limites de la conclusion astronomique](figures/observer-et-conclure.svg)
 
 Dans sa *Réponse à la question : Qu’est-ce que les Lumières ?* (1784), Kant reprend à Horace la devise *Sapere aude* et l’explicite comme le courage de se servir de son propre entendement. Un astronome qui tient son résultat de collègues peut exercer ce courage en publiant les raisons de le mettre en doute. La possibilité, pour d’autres, de lire ses objections puis d’y répondre fait de l’examen une affaire publique. Les Lumières sont la sortie de la minorité, c'est-à-dire de l'état où l'on s'en remet à l'autorité d'autrui — le livre qui pense à ma place, le directeur de conscience qui décide pour moi. La raison ne reconnaît d'autre tribunal qu'elle-même. S'il faut donc parler d'une autorité de la science, ce ne peut être que celle de la raison et du fait, devant lesquels le savant lui-même s'incline : une autorité sans *auctor*, qui n'appartient à personne parce qu'elle s'impose à tous également. La science n'exercerait pas une autorité, elle en délivrerait.
 

@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Peut-on cesser de croire ?
 
 [Libellé reproduit par le jury, p. 1](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf#page=1) · [Rapport officiel](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_philosophie_v2.pdf)
@@ -22,6 +24,8 @@ Le rapport reproduit intégralement le sujet en première page. L’épreuve com
 > « Je ne pense plus à lui » peut signaler que mon attention est ailleurs. « Je ne le crois plus » indique un changement de ma disposition à accepter sa parole. Imaginer le geste que je ferais demain permet de distinguer les deux cas.
 
 ![Que devient mon assentiment ?](figures/trois-issues.svg)
+
+Faire varier uniquement l’information reçue au téléphone. Préciser à quel moment une raison impose de suspendre le jugement et à quel moment elle permet de le renverser.
 
 ## Construire le problème
 
