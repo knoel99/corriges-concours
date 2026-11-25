@@ -1,0 +1,46 @@
+{
+  "slug": "x-ens_pc_mathematiques_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2011,
+    "duree_heures": 4
+  },
+  "questions": 30,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "identification": "Composition de mathématiques, code XEULC, filière PC, quatre heures. École polytechnique, ESPCI, ENS de Paris, Lyon et Cachan. Le rapport de la banque PC traite de Gamma et des matrices infiniment divisibles ; le lien de l’index de l’ENS mène à une autre composition.",
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2011/PC/pc2011_sujet_maths.pdf",
+    "sujet_sha256": "588fe4838d274fd458066a00a84af316a19037bf50e5ff40ae6fe42410ae996c",
+    "index_sujet": "https://www.ens.psl.eu/rapports-et-sujets-2011-pc",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011/rap_ecrit_math_xeulc_pc2011.pdf",
+    "rapport_sha256": "cab6c431f453aa726725d06df9850c6a780d2d92effe5b3264162e77e2e91864",
+    "index_rapport": "https://banques-ecoles.fr/cms/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011"
+  },
+  "figures": [
+    {
+      "fichier": "figures/approximation-exponentielle.svg",
+      "question": "2a",
+      "legende": "Figure 1 — Les polynômes prolongés par zéro pour m égal à 2 et à 6 restent sous l’exponentielle et l’approchent à x fixé."
+    },
+    {
+      "fichier": "figures/seuil-hadamard.svg",
+      "question": "9b",
+      "legende": "Figure 2 — La forme quadratique sur le vecteur témoin vaut deux puissance r moins deux. Elle change de signe au seuil r égal à 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les 30 questions et sous-questions des quatre parties, avec le rapport PC rectifié, les contrôles de convergence et les deux implications du critère logarithmique. Figures des approximants de la fonction exponentielle et du seuil de positivité."
+    }
+  ]
+}
