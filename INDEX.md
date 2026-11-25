@@ -915,6 +915,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2009 | ENS | MP | Informatique | [md](2009/ens/ens_mp_informatique_2009/brut.md) | [md](2009/ens/ens_mp_informatique_2009/guide.md) |
 | 2010 | ENS | MP | Informatique | [md](2010/ens/ens_mp_informatique_2010/brut.md) | [md](2010/ens/ens_mp_informatique_2010/guide.md) |
+| 2009 | ENS | MP | Mathématiques-informatique | [md](2009/ens/ens_mp_mathematiques-informatique_2009/brut.md) | [md](2009/ens/ens_mp_mathematiques-informatique_2009/guide.md) |
 | 2010 | ENS | MP | Mathématiques-informatique | [md](2010/ens/ens_mp_mathematiques-informatique_2010/brut.md) | [md](2010/ens/ens_mp_mathematiques-informatique_2010/guide.md) |
 | 2023 | ENS | MP-MPI | Informatique fondamentale | [md](2023/ens/ens_mp-mpi_informatique-fondamentale_2023/brut.md) | [md](2023/ens/ens_mp-mpi_informatique-fondamentale_2023/guide.md) |
 | 2024 | ENS | MP-MPI | Informatique fondamentale | [md](2024/ens/ens_mp-mpi_informatique-fondamentale_2024/brut.md) | [md](2024/ens/ens_mp-mpi_informatique-fondamentale_2024/guide.md) |
