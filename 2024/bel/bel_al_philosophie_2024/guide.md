@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve commune dure six heures. La question « Qu’est-ce que la réalité ? » appartient au domaine de la métaphysique. Elle demande de préciser le sens de la réalité en le mettant à l’épreuve de situations choisies. Le rapport recommande de distinguer cette enquête des questions voisines sur l’existence d’un monde extérieur, la vérité ou les moyens d’acquérir un savoir objectif. [Sujet officiel](https://www.ens-lyon.fr/sites/default/files/2024-11/Composition%20de%20philosophie.pdf) · [Rapport du jury](https://www.ens-lyon.fr/sites/default/files/2024-11/Philosophie%202024%20OK.pdf) · [Programme 2024](https://www.ens-lyon.fr/sites/default/files/2024-11/bulletin-officiel-n-30-du-27-juillet-2023-Pg-litteraire-session-2024_0.pdf)
@@ -24,6 +26,8 @@ Le singulier « la réalité » peut aussi désigner la totalité de ce qui est.
 La première affirmation porte sur l’événement mental. La seconde porte sur la rencontre qu’il représentait. Distinguer le vécu, le contenu de ce vécu et l’état de choses auquel le contenu prétend correspondre évite d’opposer en bloc réalité et apparence. De même, la possibilité d’un objet décrit de manière cohérente laisse ouverte la question de son existence effective. Enfin, une croyance fausse peut être réellement entretenue : qualifier une assertion de vraie et dire que quelqu’un l’a formulée sont deux actes différents.
 
 ![Une même situation, trois affirmations à distinguer](figures/realite-et-objectivite.svg)
+
+Séparer dans l’exemple le témoignage, l’hypothèse causale et l’examen. Indiquer à quelle affirmation l’examen apporte une contradiction oblige à préciser la portée de l’objectivité.
 
 **Varier une condition.** Si l’examen écarte une fracture, que peut-on nier ? Une lésion osseuse particulière. Que reste-t-il possible d’affirmer ? Le fait que la personne souffre, indépendamment de son hypothèse sur l’origine de la douleur. Une preuve objective peut donc corriger le diagnostic sans abolir le vécu dont il essayait de rendre compte.
 
