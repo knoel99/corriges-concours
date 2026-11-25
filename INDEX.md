@@ -593,6 +593,7 @@
 | 2026 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Espagnol (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Allemand (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_allemand-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_allemand-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Italien (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/guide.md) |
