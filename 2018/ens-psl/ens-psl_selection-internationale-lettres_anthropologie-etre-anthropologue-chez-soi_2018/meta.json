@@ -1,0 +1,65 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_anthropologie-etre-anthropologue-chez-soi_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Anthropologie — être anthropologue chez soi",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Anthropologie — être anthropologue chez soi",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujets%20SIL%202018%20anthropologie%20ecrit.pdf",
+    "sujet_sha256": "ec4fa353b6b3432be8e8c34db9096f78badeaccdac8a14808959a2bd10923c1c",
+    "references": [
+      "https://academic.oup.com/book/27563"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/anthropologue-chez-soi.svg",
+      "question": "Explication",
+      "legende": "Transformer une proximité supposée en question de recherche"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire de Béteille, exemples de recherches publiées et méthode pour construire la partie personnelle sans témoignage inventé."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ],
+  "limites": [
+    "Le commentaire et la méthode sont rédigés. Le volet d’expérience personnelle demandé par le sujet doit être complété avec les matériaux authentiques du candidat."
+  ]
+}
