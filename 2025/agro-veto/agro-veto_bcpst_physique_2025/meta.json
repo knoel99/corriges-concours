@@ -1,0 +1,114 @@
+{
+  "slug": "agro-veto_bcpst_physique_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Physique",
+    "annee": 2025
+  },
+  "questions": 39,
+  "intitule": "Un peu de physique autour des arbres",
+  "redaction": "Les 39 questions de la banque Agro-Véto, coefficient 4 pour l’admissibilité X BCPST 2025, sont résolues. L’écart normalisé utilise la seule incertitude fournie. La consommation quotidienne dépend de la surface foliaire choisie et de l’hypothèse de flux continu.",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0825_sp.pdf",
+    "sujet_sha256": "42bc2b06a3e7f9716ad9430fdf519be0963f563b8cfe2af977b050a37e4cb1e8",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_2025_a-bcpst_physique_vdf.pdf",
+    "rapport_sha256": "94e7cca3e6319ffc0bc85f1973783949397df4d3f6bacfa2a9d6630f812734b0"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des huit pages du sujet et des quatre pages du rapport, dont les commentaires numérotés sur le régime transitoire, Reynolds, les variations d’énergie interfaciale, le bilan de particules et la dernière application numérique."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions brute et guidée. Les 39 questions de la banque Agro-Véto, coefficient 4 pour l’admissibilité X BCPST 2025, sont résolues. L’écart normalisé utilise la seule incertitude fournie. La consommation quotidienne dépend de la surface foliaire choisie et de l’hypothèse de flux continu."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "9",
+      "fichier": "figures/ressort-horizontal.svg",
+      "legende": "Oscillateur horizontal représenté avec un allongement positif. O désigne la position d’équilibre du centre de la masse."
+    },
+    {
+      "numero": 2,
+      "question": "22",
+      "fichier": "figures/ascension-capillaire.svg",
+      "legende": "Dans un capillaire mouillant, le centre de courbure est dans l’air. La hauteur est mesurée à partir de la surface libre du grand réservoir."
+    },
+    {
+      "numero": 3,
+      "question": "33",
+      "fichier": "figures/profil-vapeur.svg",
+      "legende": "Densité de vapeur depuis la face supérieure jusqu’au-delà de la couche limite. L’exemple tracé correspond à 75 % d’humidité relative."
+    },
+    {
+      "numero": 4,
+      "question": "39",
+      "fichier": "figures/bilan-feuille.svg",
+      "legende": "Bilan de la feuille éclairée à environ 21,9 °C. Les quatre puissances algébriques s’annulent aux arrondis près."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39"
+    ]
+  }
+}
