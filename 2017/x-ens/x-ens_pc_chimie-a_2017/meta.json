@@ -1,0 +1,190 @@
+{
+  "slug": "x-ens_pc_chimie-a_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2017
+  },
+  "questions": 59,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_PC_sujet_Chimie.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_PC_rap_eChiA.pdf",
+    "sujet_sha256": "24dfe0c9eab74afa787b2cefe56e4f793b16856c873da89f891d2c019e1e9d75",
+    "rapport_sha256": "457492d9f778caeb20e9c7a5b0cb4d3dfac8f240dc969f936679447ddbc5f6bc"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5",
+      "2.1.6",
+      "2.1.7",
+      "2.1.8",
+      "2.1.9",
+      "2.1.10",
+      "2.1.11",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "4.1.1",
+      "4.1.2",
+      "4.2.1",
+      "4.2.2",
+      "4.2.3",
+      "4.2.4",
+      "4.2.5",
+      "4.2.6",
+      "4.2.7",
+      "4.2.8",
+      "4.3.1",
+      "4.3.2",
+      "4.3.3",
+      "4.3.4",
+      "4.3.5",
+      "4.3.6",
+      "4.3.7",
+      "4.3.8",
+      "4.3.9",
+      "5.1",
+      "5.2",
+      "5.3",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "6.5",
+      "6.6"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 59 questions des deux problèmes sont traitées. Les valeurs tirées des courbes sont données à la précision de lecture. Pour les protons Ha et Ha′ de la question 2.2.5, les constantes fournies identifient la paire de doublets sans en fixer l’ordre."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "1.2",
+      "fichier": "figures/chaises-du-glucose.svg",
+      "legende": "Quatre chaises du D-glucose. En vert les groupes au-dessus du cycle, en rouille ceux du dessous. Dans les deux colonnes C₁ est le carbone de droite voisin de O."
+    },
+    {
+      "question": "1.4",
+      "fichier": "figures/polarimetre.svg",
+      "legende": "Le blanc et la solution sont observés avec le même critère lumineux. Leur différence de lecture donne le pouvoir rotatoire."
+    },
+    {
+      "question": "2.1.2",
+      "fichier": "figures/intermediaires-benzylidene.svg",
+      "legende": "Squelette du sucre pendant la condensation. Sur l’intermédiaire central, le doublet de O₄ peut former une liaison π avec le carbone benzylique, ce qui place la charge positive sur O₄."
+    },
+    {
+      "question": "1.5",
+      "fichier": "figures/mutarotation.svg",
+      "legende": "Les crochets représentent l’hémiacétal cyclique. Les deux points désignent les doublets qui se déplacent. La reprotonation de la chaîne ouverte précède la fermeture."
+    },
+    {
+      "question": "2.1.4",
+      "fichier": "figures/triol-et-intermediaires.svg",
+      "legende": "Structures en projection de Cram de 1 à 6. Bn représente CH₂Ph et Piv représente C(O)C(CH₃)₃. Les centres du squelette restent fixes."
+    },
+    {
+      "question": "2.1.2",
+      "fichier": "figures/benzylidene.svg",
+      "legende": "O₄ et O₆ appartiennent au même sucre. L’oxygène du benzaldéhyde part dans l’eau et les deux oxygènes du diol sont retenus dans l’acétal."
+    },
+    {
+      "question": "2.1.6",
+      "fichier": "figures/williamson.svg",
+      "legende": "R désigne ici le squelette porteur de l’acétal benzylidène. Les déplacements de doublets de la seconde ligne sont concertés."
+    },
+    {
+      "question": "2.1.7",
+      "fichier": "figures/acylpyridinium.svg",
+      "legende": "Py désigne la pyridine, t le tert-butyle et R le sucre. La formation et la disparition des intermédiaires tétraédriques sont explicitées."
+    },
+    {
+      "question": "2.1.9",
+      "fichier": "figures/adduits-cyclohexeniques.svg",
+      "legende": "B et B′ ont tous deux les substituants en cis. R est le même résidu de sucre chiral dans les trois formules. C porte le méthoxy du second diène."
+    },
+    {
+      "question": "2.1.10",
+      "fichier": "figures/chaise-de-la-copule.svg",
+      "legende": "Chaise de A portant ses trois substituants équatoriaux. Les deux pivaloates participent à l’encombrement près de l’ester de C₃."
+    },
+    {
+      "question": "2.2.3",
+      "fichier": "figures/furanoses-huit-a-dix.svg",
+      "legende": "Perspective de Haworth des trois intermédiaires. Le bord épaissi du furanose est à l’avant. N₃ en C₃ pointe au-dessus du cycle, les deux liaisons du cétal 1,2 vers le bas."
+    },
+    {
+      "question": "2.2.6",
+      "fichier": "figures/newman-couplages.svg",
+      "legende": "Projections décalées centrées sur les angles de couplage. Les liaisons du carbone de devant sont en rouille. Un couple anti est opposé à 180°, un couple gauche à 60°."
+    },
+    {
+      "question": "3.5",
+      "fichier": "figures/traction-et-plastification.svg",
+      "legende": "À gauche, repères approximatifs lus sur la courbe de traction à 25 °C. À droite, baisse de la température vitreuse d’après la loi empirique du papier."
+    },
+    {
+      "question": "4.2.1",
+      "fichier": "figures/concentrations-et-micelle.svg",
+      "legende": "Le bilan se lit sur les deux branches de la première courbe. À droite, les têtes hydratées entourent le cœur hydrocarboné d’une micelle directe."
+    },
+    {
+      "question": "4.3.5",
+      "fichier": "figures/cassure-conductimetrique.svg",
+      "legende": "Les droites expérimentales du SDS se rencontrent vers 8,2 mmol/L. Leur intersection et le rapport de leurs pentes répondent à deux questions distinctes."
+    },
+    {
+      "question": "4.3.9",
+      "fichier": "figures/seuil-optique-du-ttab.svg",
+      "legende": "Points approximatifs relus sur la figure 13B. Le début de l’évolution simultanée des bandes précède leur croisement."
+    },
+    {
+      "question": "5.2",
+      "fichier": "figures/emulsions-de-winsor.svg",
+      "legende": "L’eau est en bleu et l’huile en ocre. Les têtes vertes restent au contact des domaines aqueux pour les trois types de Winsor."
+    },
+    {
+      "question": "6.3",
+      "fichier": "figures/relais-du-wacker.svg",
+      "legende": "Sens du transfert net des électrons dans le procédé Wacker. Le cuivre et le palladium sont régénérés à chaque tour complet."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des 18 pages du sujet et du rapport écrit de chimie A de 2017. Résolution des 59 questions sur le glucose, la synthèse stéréosélective, les polymères et les tensioactifs. Création de 18 figures originales, dont les chaises, les projections de Newman, les mécanismes et les lectures de seuil."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "ens-rennes_d-e_composition-dordre-economique_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "La défense de la concurrence doit-elle être une préoccupation des politiques publiques ?",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-economie-2023_1682689319222-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-crit-e-conomie-d-e-2023_1699435786817-pdf",
+    "sujet_sha256": "52b768523f8d69d4d8b2d46e9de5817e5c5f2e558443c114fdf2b6db234fe82a",
+    "rapport_sha256": "22183eb6f2cee6f5679855bfff6bc73aba616de3e4d7af80455550007dec2773",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "apercu_sujet_sha256": "c3c363823d27183ae0a119c49ea58bbfc8ef00edeca8b436aab3f549ca3046aa",
+    "apercu_rapport_sha256": "6e926e051c2d5ee5f1ccd85e2655134844f5a7a07607752614da7450d60897a2"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/monopole-et-echanges-perdus.svg",
+      "legende": "Les quatre dernières unités ne sont plus échangées sous monopole. Le triangle mesure une perte de 8 unités de surplus total dans cet exemple."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/reseau-et-ouverture.svg",
+      "legende": "La présence d’économies d’échelle sur l’infrastructure n’impose pas un monopole sur tous les services."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « La défense de la concurrence doit-elle être une préoccupation des politiques publiques ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « La défense de la concurrence doit-elle être une préoccupation des politiques publiques ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

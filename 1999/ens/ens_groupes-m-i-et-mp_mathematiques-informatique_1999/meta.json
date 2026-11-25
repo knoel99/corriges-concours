@@ -1,0 +1,41 @@
+{
+  "slug": "ens_groupes-m-i-et-mp_mathematiques-informatique_1999",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Groupes M, I et MP",
+    "matiere": "Mathématiques-informatique",
+    "annee": 1999
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://stephane.gonnord.org/Info/lc99.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "f18b393c0af0ed413b3faa7811dd02b8eddda1d48ace3492c8f5137111efa26c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/chaines-pour-quinze.svg",
+      "question": "2.4.b",
+      "legende": "Chaque nombre est un exposant déjà calculé. Pour obtenir 15 dans la chaîne du bas, on réutilise la puissance d’exposant 3."
+    },
+    {
+      "fichier": "figures/decision-pour-le-signe.svg",
+      "question": "4.5.c",
+      "legende": "Un produit de grande taille conserve son signe s’il domine le coefficient suivant. Dans l’autre cas, sa borne supérieure permet de calculer la somme exacte par réduction modulaire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale et contrôle des trois parties de questions, sur les six pages du cahier LCC 551. Pseudo-code des deux lectures binaires, preuve de la borne de croissance, contrôle polynomial des listes successives, calcul des racines rationnelles, traitement modulaire des compensations et reproduction de la précision 3i−2 en partie 4. Deux schémas originaux. Rapport non rattaché dans le registre.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

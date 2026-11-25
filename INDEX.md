@@ -657,6 +657,7 @@
 | 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
+| 1999 | ENS | Ulm-Lyon | Informatique | [md](1999/ens/ens_ulm-lyon_informatique_1999/brut.md) | [md](1999/ens/ens_ulm-lyon_informatique_1999/guide.md) |
 | 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Composition d’ordre économique | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Composition d’ordre économique | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/guide.md) |
@@ -911,6 +912,7 @@
 | 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
+| 2017 | X-ENS | PC | Chimie A | [md](2017/x-ens/x-ens_pc_chimie-a_2017/brut.md) | [md](2017/x-ens/x-ens_pc_chimie-a_2017/guide.md) |
 | 2020 | X-ENS | PC | Chimie A | [md](2020/x-ens/x-ens_pc_chimie-a_2020/brut.md) | [md](2020/x-ens/x-ens_pc_chimie-a_2020/guide.md) |
 | 2021 | X-ENS | PC | Chimie A | [md](2021/x-ens/x-ens_pc_chimie-a_2021/brut.md) | [md](2021/x-ens/x-ens_pc_chimie-a_2021/guide.md) |
 | 2022 | X-ENS | PC | Chimie A | [md](2022/x-ens/x-ens_pc_chimie-a_2022/brut.md) | [md](2022/x-ens/x-ens_pc_chimie-a_2022/guide.md) |
@@ -949,6 +951,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2015 | X-ENS | PSI | Sciences industrielles | [md](2015/x-ens/x-ens_psi_sciences-industrielles_2015/brut.md) | [md](2015/x-ens/x-ens_psi_sciences-industrielles_2015/guide.md) |
 | 2016 | X-ENS | PSI | Sciences industrielles | [md](2016/x-ens/x-ens_psi_sciences-industrielles_2016/brut.md) | [md](2016/x-ens/x-ens_psi_sciences-industrielles_2016/guide.md) |
 | 2017 | X-ENS | PSI | Sciences industrielles | [md](2017/x-ens/x-ens_psi_sciences-industrielles_2017/brut.md) | [md](2017/x-ens/x-ens_psi_sciences-industrielles_2017/guide.md) |
 | 2018 | X-ENS | PSI | Sciences industrielles | [md](2018/x-ens/x-ens_psi_sciences-industrielles_2018/brut.md) | [md](2018/x-ens/x-ens_psi_sciences-industrielles_2018/guide.md) |
