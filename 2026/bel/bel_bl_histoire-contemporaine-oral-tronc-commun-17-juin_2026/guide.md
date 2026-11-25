@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille associe douze tirages à deux sujets. Avant la préparation de 1 h 30, le candidat choisit entre le sujet sur la France et celui sur le monde. Le rapport prévoit 20 minutes d’exposé et 10 minutes d’entretien. Cette proposition traite les deux possibilités de chaque tirage. Pour construire un passage, justifier les bornes chronologiques, situer les acteurs sur la carte et expliquer la transition entre les périodes au moyen d’un exemple précis. Chaque sujet est suivi d’une question d’entretien et d’une réponse.
 
 ## Tirage 1
@@ -348,6 +350,8 @@ Au début du siècle, les réseaux ferrés et la navigation à vapeur ont déjà
 Après 1945, le camionnage, les navires spécialisés et le transport aérien se combinent. La conteneurisation commerciale engagée dans les années 1950 et la normalisation des dimensions simplifient les ruptures de charge. Elles requièrent des terminaux coûteux et déplacent l’activité de certains quais traditionnels vers des façades mieux équipées. L’avion gagne une place centrale pour les voyageurs internationaux qui peuvent payer et pour certaines marchandises urgentes ou de grande valeur, tandis que la mer domine le transport lourd en volume. Les métropoles connectées bénéficient de liaisons rapides, et certaines régions enclavées supportent des coûts élevés jusqu’au dernier kilomètre. Le raccourcissement de la distance-temps résulte ainsi d’une organisation de l’espace qui en révèle, autant qu’elle les réduit, les inégalités.
 
 ![Le conteneur transforme toute la chaîne de transport](figures/transports.svg)
+
+Tracer le trajet d’une seule boîte jusqu’au destinataire. Identifier au passage du quai ce qui change de véhicule et ce qui reste conditionné à l’identique. Ce test rend concrète la notion d’intermodalité.
 
 > [!INDICATION]
 > Pourquoi distinguer tonnage et valeur des marchandises ?
