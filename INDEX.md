@@ -155,6 +155,7 @@
 | 2026 | BEL | AL | Commentaire de carte géographique (Lyon) | [md](2026/bel/bel_al_commentaire-de-carte-geographique-lyon_2026/brut.md) | [md](2026/bel/bel_al_commentaire-de-carte-geographique-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
+| 2024 | Agro-Véto | BCPST | Anglais | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
@@ -588,6 +589,7 @@
 | 2026 | Centrale-Supélec | TSI | Physique-chimie 2 | [md](2026/centrale-supelec/centrale-supelec_tsi_physique-chimie-2_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_physique-chimie-2_2026/guide.md) |
 | 2026 | Centrale-Supélec | TSI | Rédaction | [md](2026/centrale-supelec/centrale-supelec_tsi_redaction_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_redaction_2026/guide.md) |
 | 2026 | Centrale-Supélec | TSI | Sciences industrielles | [md](2026/centrale-supelec/centrale-supelec_tsi_sciences-industrielles_2026/brut.md) | [md](2026/centrale-supelec/centrale-supelec_tsi_sciences-industrielles_2026/guide.md) |
+| 2023 | Agro-Véto | BCPST | Anglais | [md](2023/agro-veto/agro-veto_bcpst_anglais_2023/brut.md) | [md](2023/agro-veto/agro-veto_bcpst_anglais_2023/guide.md) |
 | 2023 | CFG | Candidats individuels | Mathématiques | [md](2023/cfg/cfg_candidats-individuels_mathematiques_2023/brut.md) | [md](2023/cfg/cfg_candidats-individuels_mathematiques_2023/guide.md) |
 | 2025 | CNG | Directeur d’établissement sanitaire, social et médico-social externe | Économie | [md](2025/cng/cng_directeur-detablissement-sanitaire-social-et-medico-social-externe_economie_2025/brut.md) | [md](2025/cng/cng_directeur-detablissement-sanitaire-social-et-medico-social-externe_economie_2025/guide.md) |
 | 2018 | CNSMD de Lyon | CA de professeur de danse | Commentaire de texte | [md](2018/cnsmd-de-lyon/cnsmd-de-lyon_ca-de-professeur-de-danse_commentaire-de-texte_2018/brut.md) | [md](2018/cnsmd-de-lyon/cnsmd-de-lyon_ca-de-professeur-de-danse_commentaire-de-texte_2018/guide.md) |
