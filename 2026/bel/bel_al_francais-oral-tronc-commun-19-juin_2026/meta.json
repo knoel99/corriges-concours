@@ -1,0 +1,81 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-19-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 19 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 19 juin)",
+  "questions": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_francais_19_juin.pdf",
+    "sujet_sha256": "3a3a04d8fa83a21275c2f65cd9cbfc6824ce9650e6faad18ced0c3f0fcd0ed31",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://www.samizdat.qc.ca/arts/lit/LesTragiques_AD.pdf#page=122",
+      "https://fr.wikisource.org/wiki/Cinna_ou_la_Cl%C3%A9mence_d%E2%80%99Auguste/CINNA/Acte_V",
+      "https://fr.wikisource.org/wiki/Jacques_le_Fataliste_et_son_ma%C3%AEtre",
+      "https://fr.wikisource.org/wiki/Premier_recueil_de_diverses_po%C3%A9sies_tant_du_feu_sieur_de_Sponde_que_des_sieurs_Du_Perron,_de_Bertaud,_de_Porch%C3%A8res_et_autres,_non_encor_imprim%C3%A9es,_recueillies_par_Rapha%C3%ABl_Du_Petit_Val,_1604/Les_Amours/Sonnet_V",
+      "https://fr.wikisource.org/wiki/Albertine_disparue/Chapitre_III",
+      "https://www.ebooksgratuits.com/html/cardinal_retz_memoires_1.html",
+      "https://fr.wikisource.org/wiki/La_Tortue_et_les_deux_Canards",
+      "https://fr.wikisource.org/wiki/Essais/Livre_III/Chapitre_9",
+      "https://fr.wikisource.org/wiki/%C5%92uvres_po%C3%A9tiques_de_Ch%C3%A9nier_(Moland,_1889)/Am%C3%A9rique",
+      "https://fr.wikisource.org/wiki/Le_Fanatisme/%C3%89dition_Garnier/Le_Fanatisme",
+      "https://fr.wikisource.org/wiki/M%C3%A9moires_d%E2%80%99outre-tombe/Troisi%C3%A8me_partie/Livre_IX",
+      "https://presses.ens.psl.eu/media/upload/document/Pamphlet%20en%20France-secure.pdf",
+      "https://www.elianeviennot.fr/Articles/Viennot-MgV-DivorceSatyrique.pdf",
+      "https://dracor.org/fre/voltaire-fanatisme"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/campo.svg",
+      "question": "5",
+      "legende": "Proust, deux promenades autour du même campo"
+    },
+    {
+      "fichier": "figures/clemence.svg",
+      "question": "2",
+      "legende": "Corneille, comment une décision devient un dialogue"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Onze explications linéaires, onze questions et réponses de reprise, figures sur la clémence dans Cinna et sur les deux promenades dans Venise."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des onze références dans leur contexte. Collation des variantes de Princes, du premier et du dernier vers par Bailbé et Viennot, des deux occurrences de clair de lune chez Proust et des vers numérotés de Voltaire. Lecture du rapport de la commission."
+    }
+  ]
+}
