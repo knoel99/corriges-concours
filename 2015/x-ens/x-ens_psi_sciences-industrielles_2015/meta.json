@@ -1,0 +1,65 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2015,
+    "duree_heures": 5
+  },
+  "questions": 48,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://prepahelp.com/docs/annales/x-ens/psi/prepahelp-x-ens-2015-psi-si-sujet.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_PSI_SI.pdf",
+    "fac_simile_avec_reponses": "https://www.upsti.fr/fichiers/corrige/fichiers/5996b545-3729-4b94-815e-3c95183380dd/XENS-PSI-2015-Telescope2Satellites-Sujet.pdf",
+    "document_reponse": "https://sciencesindustrielles.com/Annales/2015%20PSI%20SI%20XENS%20DR.pdf",
+    "sujet_sha256": "529af2d2d10d820c08ce1adca758139267247621bb8fe7872437b81251bbc09c",
+    "rapport_sha256": "82eba409031fc9bd85a2b8b908829041706c8b387d8d842ad6e70525a23f85c8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-souple.svg",
+      "question": "II.23",
+      "legende": "Les deux équations dynamiques sous forme de blocs. Les deux branches vertes réintroduisent la position de l’autre arbre."
+    },
+    {
+      "fichier": "figures/connexions-rotation.svg",
+      "question": "II.25",
+      "legende": "Ajouts au modèle par composants. Les deux capteurs mesurent une position par rapport au bâti, la source résistante agit sur le nœud aval."
+    },
+    {
+      "fichier": "figures/bode-correcteur.svg",
+      "question": "II.35",
+      "legende": "Exemple normalisé avec Ta égal à quatre fois la pulsation du zéro. La droite pointillée prolonge la branche descendante jusqu’à zéro décibel."
+    },
+    {
+      "fichier": "figures/limitation-vitesse.svg",
+      "question": "V.2",
+      "legende": "Boucle interne ajoutée sur le DR 2. La grandeur de retour est la dérivée de la position multipliée par le gain tachymétrique."
+    },
+    {
+      "fichier": "figures/trajectoire-sans-limitation.svg",
+      "question": "V.1",
+      "legende": "Coordonnées relevées sans limitation de vitesse. Les étiquettes donnent l’instant de chaque relevé demandé sur le DR 3."
+    },
+    {
+      "fichier": "figures/trajectoire-avec-limitation.svg",
+      "question": "V.4",
+      "legende": "Coordonnées relevées avec limitation de vitesse. Les étiquettes donnent l’instant de chaque relevé demandé sur le DR 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 48 questions confrontée au fac-similé, aux trois feuilles-réponses et au rapport du jury 2015. Vérification des bilans, des signes et des gains du DR 2, des deux trajectoires par numérisation des courbes et de la garde inaccessible en double défaut dans la figure 28. Six figures originales."
+    }
+  ]
+}
