@@ -1,0 +1,58 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_sociologie-les-inegalites-scolaires_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Sociologie — les inégalités scolaires",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Sociologie — les inégalités scolaires",
+  "questions": 1,
+  "redaction": "Commentaire des deux verbes de la proposition des Héritiers, de la sélection universitaire et de l’attribution des dons. Confrontation à des observations sur le logement et les trajectoires familiales.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sociologie-ecrit-sil2019.pdf",
+    "sha256_sujet": "855e6b52b258c4812ead4e677985b84b07c2e6427d8cd69b84684e645039ae04",
+    "index": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2019-lettres",
+    "pages": [
+      1
+    ],
+    "reference_du_texte": "Pierre Bourdieu et Jean-Claude Passeron, Les Héritiers, 1964. Le sujet donne une seule proposition portant sur la naturalisation des écarts de réussite scolaire.",
+    "rapport_jury": null,
+    "precision_rapport": "Aucun rapport propre à ce sujet n’a été retrouvé dans les archives de la session.",
+    "references_complementaires": [
+      {
+        "intitule": "Enquête de Goux et Maurin sur le logement et les parcours scolaires",
+        "url": "https://doi.org/10.1016/j.jpubeco.2004.06.005"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Commentaire",
+      "fichier": "figures/du-travail-au-don.svg",
+      "legende": "À quelle étape une performance est-elle interprétée comme un don ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire des deux verbes de la proposition des Héritiers, de la sélection universitaire et de l’attribution des dons. Confrontation à des observations sur le logement et les trajectoires familiales."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Commentaire"
+    ]
+  }
+}
