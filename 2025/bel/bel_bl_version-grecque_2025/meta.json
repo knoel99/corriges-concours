@@ -1,0 +1,51 @@
+{
+  "slug": "bel_bl_version-grecque_2025",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Version grecque",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_blses_sujet_version_grecque.pdf#page=2",
+    "sujet_sha256": "df037ca0510d0cac1a44d444786b05b2d6987a94249d0b57b8731a1309170e43",
+    "cahier_lyon": "https://www.ens-lyon.fr/sites/default/files/2025-10/Sujets%20BLSES%20%C3%A9preuves%20optionnelles%202025.pdf#page=50",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_bl_grec_ancien_ecrit_et_oral_option.pdf",
+    "rapport_jury_sha256": "7b6db3e3d188a10e038345417ffc755c7774c5d6702450d69d1eec63b2b63dda"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version grecque"
+    ],
+    "precision": "Traduction complète des sept répliques de Zeus et Héra, analyse syntaxique et satirique."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Comment Zeus déplace-t-il le débat ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la page 2 du sujet commun et du rapport écrit. Traduction complète des sept répliques de Zeus et Héra, analyse syntaxique et satirique. Rédaction du brut, du guidé et de la figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
