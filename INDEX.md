@@ -1017,6 +1017,7 @@
 | 2010 | ENS | MP-PC | Latin (LE2) | [md](2010/ens/ens_mp-pc_latin-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_latin-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Portugais (LE2) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LE2) | [md](2010/ens/ens_mp-pc_russe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Russe (LV1) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LV1) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/guide.md) |
 | 2010 | ENS | MP | Informatique | [md](2010/ens/ens_mp_informatique_2010/brut.md) | [md](2010/ens/ens_mp_informatique_2010/guide.md) |
 | 2010 | ENS | MP | Mathématiques-informatique | [md](2010/ens/ens_mp_mathematiques-informatique_2010/brut.md) | [md](2010/ens/ens_mp_mathematiques-informatique_2010/guide.md) |
