@@ -1,0 +1,77 @@
+{
+  "slug": "x_mp-pc_anglais_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "intitule": "Cormac McCarthy, Stopping over, et Myriam Revault d’Allonnes, De la compassion en politique",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33547",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "5",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=5",
+    "sujet_sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+    "sujet_complementaire": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=1",
+    "sujet_complementaire_sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+    "references_complementaires": [
+      "https://web.archive.org/web/20090606210402/http://www.polytechnique.fr:80/concours/sujets/sujet09.htm",
+      "https://www.education.gouv.fr/bo/2009/08/esrs0900049x.htm",
+      "https://upls.fr/wp-content/uploads/2010/07/f2009514212750.pdf"
+    ],
+    "precision": "Le fac-similé réunit l’expression de Myriam Revault d’Allonnes, extraite de L’Homme compassionnel (2008), aux pages 1 et 2 du PDF, et la version de The Road (2006) à la page 5. Le cahier d’expression est également conservé par l’UPLS. Les rapports d’anglais de cet écrit restent à retrouver."
+  },
+  "mots_expression": {
+    "1": 135,
+    "2": 196
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/maison.svg",
+      "legende": "L’objet matériel relie le présent du garçon au passé inaccessible du père."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/compassion.svg",
+      "legende": "Revault d’Allonnes articule des changements récents et une généalogie plus ancienne."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/gouverner.svg",
+      "legende": "La réponse distingue attention aux personnes, règle de distribution et recours."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_x_espci_2009_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Cormac McCarthy, Stopping over, et Myriam Revault d’Allonnes, De la compassion en politique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
