@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "« La monnaie est une chose trop sérieuse pour la confier aux banquiers centraux » — Milton Friedman, Capitalism and Freedom (1962)",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-conomie-d1-2016_1476109137855-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-e-conomie-e-crit-d1-2016_1478511522326-pdf",
+    "sujet_sha256": "c8bba12dc07c8aaec7a9dea87c7f015f744949f837b25f366de253a0f044942b",
+    "rapport_sha256": "95c8892dc09be6bd9c76c1c5abaceb20a661af5f2b39357180fca080b0e0c9bd",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2016",
+    "apercu_sujet_sha256": "23de0f5af70fbd4bce22f58ff81b0f7d80886522ae6b73ecb002aed327deef96",
+    "apercu_rapport_sha256": "1971867bd6d6077ea1b05fe67f545ce57c58c508be73289ebddb42d5e749ccc1",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 16 - 81"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/quantite-vitesse-et-prix.svg",
+      "legende": "Dans l’identité MV = PY, M augmente de 5 % et Y de 3 %. Une vitesse constante donne exactement 1,94 % d’inflation, contre environ 2 % par approximation."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/mandat-et-instruments.svg",
+      "legende": "L’indépendance dans le choix des taux reste compatible avec un mandat politique et une obligation de justification."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « « La monnaie est une chose trop sérieuse pour la confier aux banquiers centraux » — Milton Friedman, Capitalism and Freedom (1962) » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « « La monnaie est une chose trop sérieuse pour la confier aux banquiers centraux » — Milton Friedman, Capitalism and Freedom (1962) » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

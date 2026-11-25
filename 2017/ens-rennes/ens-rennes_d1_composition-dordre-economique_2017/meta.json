@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2017",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Dans quelle mesure 10 années de crise financière ont-elles affecté la conduite de la politique économique ?",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/economie-sujet-d1-2017_1513242479007-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-e-crit-economie-d1-2017_1515597489541-pdf",
+    "sujet_sha256": "b10a4294eb5995ffe031316d467d3edfaac056ea220021444f9e7c37ffc322ea",
+    "rapport_sha256": "1c787417dcd586236f8e05cb1367b6769777500be8df50cfed59bc9b76031a91",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2017",
+    "apercu_sujet_sha256": "b4e2bb28495f307b9049690a58963ab7f50b7fe618a964c14547c65e2b5414f1",
+    "apercu_rapport_sha256": "fe5ac28b32ad7a8f5a2c3836860e1fe4997aeed1645ff06d725c7ad26712db95",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 17 - 81"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/taux-et-prime.svg",
+      "legende": "Exemple illustratif. La baisse de deux points du taux de référence est plus que compensée par trois points de prime supplémentaire."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/horizons-de-politique.svg",
+      "legende": "Le recours à un financement d’urgence ne remplace ni l’identification des pertes ni la prévention des risques futurs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Dans quelle mesure 10 années de crise financière ont-elles affecté la conduite de la politique économique ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Dans quelle mesure 10 années de crise financière ont-elles affecté la conduite de la politique économique ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
