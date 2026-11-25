@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## La valeur en droit civil
 
 Le propriétaire qui vend un tableau pour 1 000 euros peut découvrir que des collectionneurs en auraient offert dix fois plus. Ainsi rapprochés, les deux nombres désignent des réalités différentes. Le prix est la somme convenue dans la vente. La valeur exprime une estimation de ce que vaut la prestation, au regard du marché, de son usage ou d’une situation que la loi commande de prendre en considération. Elle peut être discutée et varier dans le temps. La question porte sur ses effets juridiques. Le droit civil soumet-il la volonté exprimée en prix à une mesure indépendante de la valeur ? Il laisse en principe chacun apprécier l’intérêt de l’échange, mais donne à l’évaluation une portée contraignante lorsque le consentement, un patrimoine protégé ou la restitution d’un bien le requièrent.
@@ -25,6 +27,10 @@ Le droit s’intéresse également à l’existence d’une véritable contrepar
 ### II. Une référence imposée pour protéger ou reconstituer le patrimoine
 
 **A. L’écart à une valeur de référence peut ouvrir un recours.** La vente immobilière donne un exemple précis de l’exception réservée par l’article 1168. L’article 1674 protège le vendeur lésé de plus de sept douzièmes dans le prix de l’immeuble. L’article 1675 renvoie à l’état du bien et à sa valeur au moment de la vente. Pour un immeuble valant alors 240 000 €, sept douzièmes représentent 140 000 €. Un prix de 100 000 € se trouve exactement au seuil et ne le franchit pas. Un prix de 90 000 € laisse un écart de 150 000 € et satisfait à la condition chiffrée. C’est le vendeur qui agit, dans le délai de deux ans prévu par l’article 1676. L’acquéreur dispose, si l’action est admise, du choix organisé par l’article 1681 entre restituer l’immeuble contre remboursement du prix et le conserver en acquittant le supplément légal. Le régime ne donne donc pas à tout acheteur déçu un droit général de rééquilibrage.
+
+Le rapport pertinent est donc la perte rapportée à la valeur de l’immeuble au moment de la vente. Avec le prix de 90 000 euros, le vendeur a reçu trois huitièmes de cette valeur et perdu cinq huitièmes. Comme cinq huitièmes excèdent sept douzièmes, l’écart franchit le seuil. L’évaluation du bien devient ici une condition d’ouverture de l’action.
+
+![Figure 1 — Quel rôle la valeur joue-t-elle ?](figures/fonctions-valeur.svg)
 
 La valeur devient également un instrument de protection de la personne. En principe, le majeur sous sauvegarde de justice conserve l’exercice de ses droits. Néanmoins, l’article 435 permet dans les conditions qu’il fixe la rescision pour simple lésion ou la réduction en cas d’excès des actes passés pendant la mesure. Le juge doit notamment considérer l’utilité de l’opération pour la personne, la consistance de son patrimoine et la bonne ou mauvaise foi de son cocontractant. Un achat dispendieux s’apprécie ici relativement aux moyens et aux besoins de l’intéressé. Transposer le seuil de sept douzièmes de la vente immobilière méconnaîtrait le but propre de la protection.
 

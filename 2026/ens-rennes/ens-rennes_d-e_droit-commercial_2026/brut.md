@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Apport en jouissance d’un fonds de commerce et demande de restitution
 
 La mise à disposition d’un commerce n’a pas toujours pour contrepartie un loyer. Elle peut rémunérer l’entrée de l’apporteur dans une société. L’arrêt de la chambre commerciale du 3 décembre 1991, publié au Bulletin, tire une conséquence de cette différence lorsque l’exploitation du fonds s’interrompt.
@@ -25,6 +27,10 @@ L’objet doit être identifié à son tour. Le fonds rassemble les éléments a
 **B. Une analogie de garantie qui ne suffit pas à renverser la qualification.** L’article 1843-3 du Code civil oblige l’associé à fournir ce qu’il a promis. Pour l’apport en jouissance, le texte rapproche la garantie due à la société par l’apporteur de celle du bailleur envers son preneur. La lecture extensive adoptée par les juges du fond peut s’expliquer. Un fonds privé d’exploitation perd sa clientèle, de sorte que son propriétaire a intérêt à sa conservation. Les règles impératives de la location-gérance, aujourd’hui rassemblées notamment à l’article L. 144-1 du Code de commerce, invitent d’ailleurs à apprécier la véritable nature du contrat, au-delà du nom choisi.
 
 La difficulté tient au sens du renvoi. Le texte décrit la garantie que **l’apporteur doit à la société**. Pour faire droit à Mme Y, l’arrêt d’appel a suivi le chemin inverse en construisant une obligation de la société envers l’apporteur, puis de M. X envers celui-ci. Comparer deux régimes pour garantir la jouissance promise ne transforme pas automatiquement tout apport en contrat de location-gérance. La cour d’appel avait elle-même constaté le titre auquel la société avait reçu le fonds. C’est précisément cette constatation que la Cour de cassation lui oppose.
+
+En suivant le bien, on va de Mme Y à la société, puis de la société à M. X. En suivant les obligations, il faut repartir de chaque acte et de sa contrepartie. La garantie de jouissance due à la société par son apporteur ne crée pas, par simple inversion de son sens, une obligation de restitution à la charge du dernier exploitant. C’est ce raccourci que la cassation interdit.
+
+![Figure 1 — Les deux transmissions de jouissance](figures/deux-conventions.svg)
 
 ### II. La cassation ferme une voie de restitution sans fixer le sort définitif du fonds
 

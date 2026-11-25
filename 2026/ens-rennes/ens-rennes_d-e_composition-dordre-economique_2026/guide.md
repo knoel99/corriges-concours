@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Tirer parti de la formulation du sujet
 
 Le sujet pose la question « Dans quelle mesure l’environnement économique construit au sein de l’Union européenne se conforme-t-il aux grands principes de l’analyse économique ? ». Le concours demande quatre heures de composition sans document ni calculatrice. Pour le mot « construit », choisir une institution identifiable. Pour « principes », énoncer un mécanisme et les hypothèses dont il dépend. Pour « dans quelle mesure », examiner un cas où les hypothèses manquent et une autre institution susceptible de corriger la difficulté.
 
 ![Figure 1 — De l’institution au critère économique](figures/institutions-europeennes.svg)
+
+Dans cet exemple, distinguez le prix payé par le client du coût en ressources. En achetant à 90 plutôt qu’à 100, le client économise 10 euros. La disparition d’une recette douanière de 20 euros laisse, à quantité inchangée, un coût collectif net de 10 euros dans le modèle du petit pays.
 
 **Un exemple de détournement de commerce.** Un fournisseur extérieur livre pour 90 avant droits, un fournisseur intérieur pour 100. Si un tarif de 20 porte le coût d’importation à 110 et élimine le fournisseur extérieur, l’entreprise européenne gagne le marché alors que davantage de ressources sont mobilisées pour le même bien. Comparer avec le cas où le fournisseur intérieur remplace une production nationale qui coûtait 120.
 
