@@ -840,6 +840,7 @@
 | 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2014 | X-ENS | MP-PC | Informatique B | [md](2014/x-ens/x-ens_mp-pc_informatique-b_2014/brut.md) | [md](2014/x-ens/x-ens_mp-pc_informatique-b_2014/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Informatique B | [md](2017/x-ens/x-ens_mp-pc-psi_informatique-b_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_informatique-b_2017/guide.md) |
 | 2019 | X-ENS | MP-PC-PSI | Informatique B | [md](2019/x-ens/x-ens_mp-pc-psi_informatique-b_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_informatique-b_2019/guide.md) |
 | 2021 | X-ENS | MP-PC-PSI | Informatique B | [md](2021/x-ens/x-ens_mp-pc-psi_informatique-b_2021/brut.md) | [md](2021/x-ens/x-ens_mp-pc-psi_informatique-b_2021/guide.md) |
