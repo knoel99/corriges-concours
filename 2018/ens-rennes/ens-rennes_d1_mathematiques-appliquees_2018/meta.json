@@ -1,0 +1,49 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2018",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2018
+  },
+  "questions": 41,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-e-preuve-a-option-d1-2018_1563804946515-pdf#page=3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-math-d1-2018_1563806711086-pdf",
+    "sha256_sujet": "d5d2974c154a52539de38899a830e0d8f8b46051b7509510448b6708afa1bc6c",
+    "sha256_rapport_jury": "5fc88e271cd17cbe10267972af5748789588c4aa65d5b6544f7d6f18b1cd0517",
+    "sha256_apercu_sujet": "d7a9a68caa7c556dbfd8833a567644b3bd948f02885735037dc838b7f3d4fee6",
+    "sha256_apercu_rapport_jury": "4efc8b0fca4af496e1c756fcd07ae558ff705b8a0a3e027d275d006847bd010b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/nuage-prix-orges.svg",
+      "question": "1.A.1",
+      "legende": "Les douze points associent deux prix de la même année. La droite estime l’indice de brasserie à partir de l’indice de mouture."
+    },
+    {
+      "fichier": "figures/histogramme-exploitations.svg",
+      "question": "1.B.5",
+      "legende": "La dernière classe est fermée à 400 hectares pour cette question. Les aires des rectangles sont proportionnelles aux nombres d’exploitations."
+    },
+    {
+      "fichier": "figures/famille-courbes.svg",
+      "question": "3.I.6",
+      "legende": "Les deux courbes et leurs tangentes horizontales ou obliques. La tangente issue de l’origine touche C1 en un quart."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des trois exercices dans les deux éditions sur les pages physiques 3 à 10 du sujet et le rapport officiel. Double sens de régression, calcul de la surface maximale, probabilités et gains, tangentes et intégrale vérifiés. Trois graphiques originaux avec histogramme de densités, nuage et courbes.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
