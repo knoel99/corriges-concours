@@ -1,0 +1,62 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-le-mepris_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — le mépris",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Philosophie — le mépris",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philosophie-ecrit-sil2019.pdf",
+    "sujet_sha256": "61ed52320ad98818ba0225e62ffd4bbc8c397dd6af0ed8ffeb95e83370efef21",
+    "references": [
+      "https://fr.wikisource.org/wiki/Rh%C3%A9torique_%28trad._Ruelle%29/Livre_II/Chapitre_2",
+      "https://fr.wikisource.org/wiki/Doctrine_de_la_vertu_%28trad._Barni%29/%C3%89l%C3%A9ments_m%C3%A9taphysiques/Partie_2/Chapitre_1/S2/%2439"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/estime.svg",
+      "question": "Dissertation",
+      "legende": "Quel est l’objet du jugement ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire philosophique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification du livre II de la Rhétorique, de la distinction kantienne du respect et de l’estime et des trois usages de la notion dans la copie. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}
