@@ -1,0 +1,72 @@
+{
+  "slug": "ens_mp-pc_espagnol-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LE2)",
+    "annee": 2007,
+    "modalite": "écrit",
+    "duree_heures": 2
+  },
+  "intitule": "L’Espagne, seul pays de l’Union européenne à consacrer moins de 1 % de son PIB à la famille",
+  "questions": 2,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=6",
+    "sha256_sujet": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "etablissements_imprimes": "ENS de Paris et de Cachan",
+    "page_version": "6",
+    "texte_support": "D’après El País, 2 février 2007.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=6",
+        "sha256": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+        "pages": "6",
+        "pages_document": 12,
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf",
+        "date_capture_utc": "sans capture"
+      }
+    ],
+    "code_garde": "71.10PM"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/familles-donnees-et-explication.svg",
+      "question": "1",
+      "legende": "La question invite à discuter un lien de causalité. Les montants d’aide et les indicateurs démographiques sont deux observations différentes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « L’Espagne, seul pays de l’Union européenne à consacrer moins de 1 % de son PIB à la famille », réponse personnelle en espagnol, indications de traduction et de rédaction, schéma sur La question invite à discuter un lien de causalité. Les montants d’aide et les indicateurs démographiques sont deux observations différentes."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  },
+  "bareme": {
+    "version": 15,
+    "expression": 5
+  }
+}
