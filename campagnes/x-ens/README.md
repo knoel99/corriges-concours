@@ -85,6 +85,8 @@ L’ENS Paris-Saclay utilise les admissibilités HEC Paris, ESSEC ou ESCP pour s
 
 Les annales orales A/L de Lyon donnent des listes par série, des sujets accompagnés de planches et une sélection de textes espagnols. Le tableau identifie les quinze fascicules, les cinq épreuves de cinéma, les trois sujets d’histoire des arts et les deux exercices distincts d’écriture musicale. [Fascicules et pages des sujets de Lyon](oraux-lettres-lyon-2026.tsv)
 
+Pour l’histoire et la géographie à Lyon, le relevé des sessions 2017, 2019 et 2022 indique où commence dans le rapport du jury la section consacrée à chaque épreuve recensée. En 2017, le jury de géographie cite notamment les cartes de Nevers et de Pessac. L’école publie les documents qui les accompagnaient, sur l’évolution de la population du Grand Nevers et le vignoble des Graves. [Rapports et documents d’accompagnement par épreuve](histoire-geographie-lyon-2017-2019-2022.tsv)
+
 À Ulm, 70 fascicules d’oraux A/L de 2026 ont été contrôlés sur les originaux. Un même fichier lié depuis plusieurs dates ne compte qu’une fois. Le registre signale les désaccords entre dates ou commissions et les passages dont seules les références ont été publiées. [Sources des oraux A/L à Ulm](oraux-lettres-ulm-2026.tsv)
 
 Pour le concours design de Cachan puis de Paris-Saclay, le registre distingue les écrits d’admissibilité, les projets pratiques et les sujets connus par le seul rapport du jury. En 2015, l’expression graphique, chromatique ou volumique est un écrit. En 2020, les candidats choisissaient leur champ d’intervention à partir du même dossier sur la fontaine à l’Albien. [Sources du design de 2015 à 2025](design-archives.tsv)
@@ -95,7 +97,7 @@ Les gardes des vingt-deux compositions de mathématiques de Polytechnique de 200
 
 Le sujet de sciences industrielles en PSI de 2015 comporte trois feuilles-réponses. Elles figurent aux pages PDF 30 à 32 du cahier et sont également accessibles en fichier séparé. Le rapport du jury porte la session 2015 en première page. [Cahier, feuilles et rapport](sciences-industrielles-psi-2015.tsv)
 
-Le rapport de grec A/L de 2026 reproduit un billet d’Aristophane avec ses coupures et ses notes. L’exemple complète les feuilles où figure l’auteur. La date du passage reste indéterminée et le décompte des fascicules est conservé. [Exemples de billets publiés par les jurys](exemples-de-billets-du-jury.tsv)
+Les jurys de grec A/L de 2026 reproduisent trois exemples de billets. Celui d’option donne un passage du *Ploutos* d’Aristophane avec ses coupures et ses notes. En tronc commun, un rapport donne « Les noces de la veuve » de Plutarque. L’autre présente une traduction de Chariton et un commentaire d’Euripide, deux exercices dont les tirages étaient indépendants. Les rapports laissent la date de passage indéterminée. Chaque exemple renvoie aux fascicules compatibles, déjà comptés dans le registre. [Trois exemples de billets publiés par les jurys](exemples-de-billets-du-jury.tsv)
 
 En 1999, Ulm et Lyon ont donné un sujet d’informatique de quatre heures sur les automates cellulaires. La même année, Lyon et Cachan ont consacré leur composition de mathématiques-informatique aux polynômes creux, en trois heures. Les deux cahiers originaux figurent dans les archives de Stéphane Gonnord. [Cahiers et empreintes](informatique-ecrits-1997-2009.tsv)
 
