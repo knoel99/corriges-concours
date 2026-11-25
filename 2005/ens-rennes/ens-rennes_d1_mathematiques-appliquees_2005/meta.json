@@ -1,0 +1,36 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2005",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2005
+  },
+  "questions": 8,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2005-sujets-d1_1423060647728-pdf#page=4",
+    "rapport_jury": null,
+    "sha256_sujet": "6e722c986780682109dc35cd612f69dd9f54c1674c5c472c52b1da9d33b0e220"
+  },
+  "figures": [
+    {
+      "fichier": "figures/branche-a-seuil.svg",
+      "question": "1.5",
+      "legende": "L’angle à l’origine sépare la demi-droite horizontale de la branche positive. Le sommet est à l’abscisse 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des quatre exercices du cahier C1583 lus sur la page scannée. Contrôle des dérivées latérales, de la somme au rang 1 et du partage au centime. Figure originale du raccord et du maximum.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
