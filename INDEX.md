@@ -989,6 +989,7 @@
 | 2012 | X | PSI-PT | Informatique | [md](2012/x/x_psi-pt_informatique_2012/brut.md) | [md](2012/x/x_psi-pt_informatique_2012/guide.md) |
 | 2009 | X | PSI-PT | Informatique | [md](2009/x/x_psi-pt_informatique_2009/brut.md) | [md](2009/x/x_psi-pt_informatique_2009/guide.md) |
 | 2010 | X | PSI-PT | Informatique | [md](2010/x/x_psi-pt_informatique_2010/brut.md) | [md](2010/x/x_psi-pt_informatique_2010/guide.md) |
+| 2008 | X | PSI-PT | Informatique | [md](2008/x/x_psi-pt_informatique_2008/brut.md) | [md](2008/x/x_psi-pt_informatique_2008/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |
 | 2015 | X-ENS | PSI-PT | Informatique | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/brut.md) | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/guide.md) |
 | 2015 | X-ENS | PSI | Modélisation | [md](2015/x-ens/x-ens_psi_modelisation_2015/brut.md) | [md](2015/x-ens/x-ens_psi_modelisation_2015/guide.md) |
