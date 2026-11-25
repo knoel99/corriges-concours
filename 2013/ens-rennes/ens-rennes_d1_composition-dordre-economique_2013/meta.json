@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2013",
+  "epreuve": {
+    "concours": "ENS de Cachan",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Les limites de l’intervention publique",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-13d1-ecosoc_1421750177175-pdf",
+    "sujet_sha256": "9e2d4ec3fa76df955a178bd4610b4f29ac2119b8083624eb26a38d45d35bdfe8",
+    "references_complementaires": {
+      "FMI, Blanchard et Leigh, janvier 2013": "https://www.imf.org/en/publications/wp/issues/2016/12/31/growth-forecast-errors-and-fiscal-multipliers-40200"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/niveaux-decision.svg",
+      "legende": "La protection de l’environnement fait apparaître à la fois les coûts d’information et le problème des effets qui dépassent les frontières."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/cout-et-dommage.svg",
+      "legende": "Les deux unités de dépollution ont respectivement un effet net de +40 et −30. Le gain de la première unité ne préjuge pas de celui de la suivante."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Les limites de l’intervention publique » à partir des pièces distribuées ou conservées par l’ENS Rennes. Étude de la dépollution marginale, de l’assurance, des stabilisateurs et d’une évaluation avec contrefactuel. Aucun rapport d’économie n’est joint à cette session.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Les limites de l’intervention publique » à partir des pièces distribuées ou conservées par l’ENS Rennes. Étude de la dépollution marginale, de l’assurance, des stabilisateurs et d’une évaluation avec contrefactuel. Aucun rapport d’économie n’est joint à cette session."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
