@@ -209,6 +209,9 @@
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse monétaire et politique économique | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018/guide.md) |
 | 2018 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/brut.md) | [md](2018/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2018/guide.md) |
 | 2019 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2019/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2019/guide.md) |
+| 2021 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2021/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2021/brut.md) | [md](2021/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2021/guide.md) |
+| 2022 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2022/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2022/brut.md) | [md](2022/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2022/guide.md) |
+| 2023 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2023/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2023/brut.md) | [md](2023/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2023/guide.md) |
 | 2024 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2024/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2024/guide.md) |
 | 2025 | ENS Paris-Saclay | Économie-gestion option 1 | Espagnol (oral) | [md](2025/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2025/brut.md) | [md](2025/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2025/guide.md) |
 | 2009 | ENS-PSL | PC | Physique PC1 | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/brut.md) | [md](2009/ens-psl/ens-psl_pc_physique-pc1_2009/guide.md) |
@@ -1047,8 +1050,10 @@
 | 2009 | ENS | MP-PC | Allemand (LV1) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Allemand (LV1) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/guide.md) |
 | 2011 | ENS | MP-PC | Anglais (langue étrangère B) | [md](2011/ens/ens_mp-pc_anglais-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_anglais-langue-etrangere-b_2011/guide.md) |
+| 2005 | ENS | MP-PC | Anglais (LE2) | [md](2005/ens/ens_mp-pc_anglais-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_anglais-le2_2005/guide.md) |
 | 2009 | ENS | MP-PC | Anglais (LE2) | [md](2009/ens/ens_mp-pc_anglais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_anglais-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Anglais (LE2) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/guide.md) |
+| 2005 | ENS | MP-PC | Anglais (LV1) | [md](2005/ens/ens_mp-pc_anglais-lv1_2005/brut.md) | [md](2005/ens/ens_mp-pc_anglais-lv1_2005/guide.md) |
 | 2009 | ENS | MP-PC | Anglais (LV1) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Anglais (LV1) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/guide.md) |
 | 2011 | ENS | MP-PC | Arabe (langue étrangère B) | [md](2011/ens/ens_mp-pc_arabe-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_arabe-langue-etrangere-b_2011/guide.md) |
@@ -1062,6 +1067,8 @@
 | 2010 | ENS | MP-PC | Espagnol (LE2) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/guide.md) |
 | 2009 | ENS | MP-PC | Espagnol (LV1) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LV1) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/guide.md) |
+| 2005 | ENS | MP-PC | Français | [md](2005/ens/ens_mp-pc_francais_2005/brut.md) | [md](2005/ens/ens_mp-pc_francais_2005/guide.md) |
+| 2006 | ENS | MP-PC | Français | [md](2006/ens/ens_mp-pc_francais_2006/brut.md) | [md](2006/ens/ens_mp-pc_francais_2006/guide.md) |
 | 2009 | ENS | MP-PC | Grec ancien (LE2) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Grec ancien (LE2) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Grec (langue étrangère B) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/guide.md) |
@@ -1438,16 +1445,19 @@
 | 2018 | X-ENS | MP-PC-PSI | Anglais | [md](2018/x-ens/x-ens_mp-pc-psi_anglais_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_anglais_2018/guide.md) |
 | 2019 | X-ENS | MP-PC-PSI | Anglais | [md](2019/x-ens/x-ens_mp-pc-psi_anglais_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_anglais_2019/guide.md) |
 | 2020 | X-ENS | MP-PC-PSI | Anglais | [md](2020/x-ens/x-ens_mp-pc-psi_anglais_2020/brut.md) | [md](2020/x-ens/x-ens_mp-pc-psi_anglais_2020/guide.md) |
+| 2021 | X-ENS | MP-PC-PSI | Anglais | [md](2021/x-ens/x-ens_mp-pc-psi_anglais_2021/brut.md) | [md](2021/x-ens/x-ens_mp-pc-psi_anglais_2021/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Arabe | [md](2015/x-ens/x-ens_mp-pc-psi_arabe_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_arabe_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Arabe | [md](2016/x-ens/x-ens_mp-pc-psi_arabe_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_arabe_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Arabe | [md](2017/x-ens/x-ens_mp-pc-psi_arabe_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_arabe_2017/guide.md) |
 | 2018 | X-ENS | MP-PC-PSI | Arabe | [md](2018/x-ens/x-ens_mp-pc-psi_arabe_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_arabe_2018/guide.md) |
 | 2019 | X-ENS | MP-PC-PSI | Arabe | [md](2019/x-ens/x-ens_mp-pc-psi_arabe_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_arabe_2019/guide.md) |
 | 2020 | X-ENS | MP-PC-PSI | Arabe | [md](2020/x-ens/x-ens_mp-pc-psi_arabe_2020/brut.md) | [md](2020/x-ens/x-ens_mp-pc-psi_arabe_2020/guide.md) |
+| 2021 | X-ENS | MP-PC-PSI | Arabe | [md](2021/x-ens/x-ens_mp-pc-psi_arabe_2021/brut.md) | [md](2021/x-ens/x-ens_mp-pc-psi_arabe_2021/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Chinois | [md](2015/x-ens/x-ens_mp-pc-psi_chinois_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_chinois_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Chinois | [md](2016/x-ens/x-ens_mp-pc-psi_chinois_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_chinois_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Chinois | [md](2017/x-ens/x-ens_mp-pc-psi_chinois_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_chinois_2017/guide.md) |
 | 2018 | X-ENS | MP-PC-PSI | Chinois | [md](2018/x-ens/x-ens_mp-pc-psi_chinois_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_chinois_2018/guide.md) |
+| 2019 | X-ENS | MP-PC-PSI | Chinois | [md](2019/x-ens/x-ens_mp-pc-psi_chinois_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_chinois_2019/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Composition française | [md](2015/x-ens/x-ens_mp-pc-psi_composition-francaise_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_composition-francaise_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Composition française | [md](2016/x-ens/x-ens_mp-pc-psi_composition-francaise_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_composition-francaise_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Composition française | [md](2017/x-ens/x-ens_mp-pc-psi_composition-francaise_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_composition-francaise_2017/guide.md) |
@@ -1588,6 +1598,7 @@
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2005 | X | MP-PC | Français | [md](2005/x/x_mp-pc_francais_2005/brut.md) | [md](2005/x/x_mp-pc_francais_2005/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
