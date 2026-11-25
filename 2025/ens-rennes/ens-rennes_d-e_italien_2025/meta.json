@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d-e_italien_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Italien",
+    "annee": 2025
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-lve-d-e-2025_1760692435843-pdf#page=11",
+    "sujet_sha256": "a32bd8c9dbd1fa753838d530842f6053b4a69a2a99ec6f1958425c2d083a0cb6",
+    "apercu_sujet_sha256": "5a6d7af833bcbce6e28017b8dff04cfac196bf4656829c636a75f9b185926a11",
+    "pages_sujet": [
+      11,
+      12,
+      13
+    ],
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2025",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-italien-e-crit-d-e-2025_1768986719926-pdf",
+    "rapport_jury_sha256": "9e5e6249221fa8d492a12bcc74b494e3544ffdf9f0ee12661851c8780836ffad",
+    "apercu_rapport_sha256": "ea8f3b485b8093cb47969c2e02fafedb1d38536bd95dccc138514e9674f90d10"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lavoro.svg",
+      "legende": "A chi si riferiscono i dati sul lavoro?",
+      "question": "III"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des deux traductions et des deux réponses argumentées de 240 et 235 mots à partir du fascicule, pages physiques 11 à 13, et du rapport de langue. Schéma et accompagnement du guidé."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Première réponse argumentée",
+      "III.2. Deuxième réponse argumentée"
+    ]
+  }
+}
