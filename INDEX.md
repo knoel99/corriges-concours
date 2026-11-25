@@ -609,6 +609,9 @@
 | 2014 | ENS Rennes | D1 | Anglais | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Chimie | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Chimie | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/guide.md) |
+| 2016 | ENS Rennes | D1 | Allemand | [md](2016/ens-rennes/ens-rennes_d1_allemand_2016/brut.md) | [md](2016/ens-rennes/ens-rennes_d1_allemand_2016/guide.md) |
+| 2016 | ENS Rennes | D1 | Anglais | [md](2016/ens-rennes/ens-rennes_d1_anglais_2016/brut.md) | [md](2016/ens-rennes/ens-rennes_d1_anglais_2016/guide.md) |
+| 2016 | ENS Rennes | D1 | Espagnol | [md](2016/ens-rennes/ens-rennes_d1_espagnol_2016/brut.md) | [md](2016/ens-rennes/ens-rennes_d1_espagnol_2016/guide.md) |
 | 2017 | ENS de Lyon | Second concours | Chimie | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/guide.md) |
 | 2018 | ENS de Lyon | Second concours | Chimie | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Chimie | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/guide.md) |
