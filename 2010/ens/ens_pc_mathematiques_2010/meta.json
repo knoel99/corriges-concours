@@ -1,0 +1,90 @@
+{
+  "slug": "ens_pc_mathematiques_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "ecoles_historiques": "ENS de Paris, Lyon et Cachan",
+    "filiere": "PC",
+    "matiere": "Mathématiques",
+    "annee": 2010
+  },
+  "questions": 32,
+  "intitule": "Enveloppes convexes, boule circonscrite et prolongements lipschitziens",
+  "redaction": "Toutes les questions et subdivisions du cahier 10.14P. Démonstrations en dimension trois, prise en compte des cas dégénérés et construction du prolongement par densité.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/PC/pc-sujet-maths.pdf",
+    "sujet_sha256": "1035392107f6168b19b8ba73aee7634eac5cc7536f20ef3c7f186f447fb58ba9",
+    "garde": "10.14P · ENS de Paris, Lyon et Cachan",
+    "rapport_jury": null
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Toutes les questions et subdivisions du cahier 10.14P. Démonstrations en dimension trois, prise en compte des cas dégénérés et construction du prolongement par densité."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.5.c",
+      "fichier": "figures/separation-par-projection.svg",
+      "legende": "Coupe plane du compact convexe et du point extérieur. Une droite orthogonale au segment joignant le point à son projeté sépare les deux ensembles."
+    },
+    {
+      "numero": 2,
+      "question": "II.8",
+      "fichier": "figures/intersection-des-boules.svg",
+      "legende": "Dans cette coupe plane à rayons égaux, les trois disques ont un unique point commun au seuil. Une dilatation supplémentaire crée une région commune."
+    },
+    {
+      "numero": 3,
+      "question": "III.4",
+      "fichier": "figures/tetraedre-regulier.svg",
+      "legende": "Quatre sommets équidistants ont leur centre commun pour barycentre. Le segment pointillé représente le rayon circonscrit."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4.a",
+      "I.4.b",
+      "I.4.c",
+      "I.5.a",
+      "I.5.b",
+      "I.5.c",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9.a",
+      "II.9.b",
+      "II.9.c",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "IV.1",
+      "IV.2",
+      "IV.3.a",
+      "IV.3.b",
+      "IV.3.c",
+      "IV.3.d",
+      "IV.4.a",
+      "IV.4.b"
+    ]
+  }
+}
