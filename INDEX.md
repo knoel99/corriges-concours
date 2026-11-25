@@ -974,6 +974,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2012 | X-ENS | MP | Informatique A | [md](2012/x-ens/x-ens_mp_informatique-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_informatique-a_2012/guide.md) |
 | 2013 | X-ENS | MP | Informatique A | [md](2013/x-ens/x-ens_mp_informatique-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_informatique-a_2013/guide.md) |
 | 2014 | X-ENS | MP | Informatique A | [md](2014/x-ens/x-ens_mp_informatique-a_2014/brut.md) | [md](2014/x-ens/x-ens_mp_informatique-a_2014/guide.md) |
 | 2015 | X-ENS | MP | Informatique A | [md](2015/x-ens/x-ens_mp_informatique-a_2015/brut.md) | [md](2015/x-ens/x-ens_mp_informatique-a_2015/guide.md) |
