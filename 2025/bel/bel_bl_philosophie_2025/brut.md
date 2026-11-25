@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Composition de philosophie, épreuve commune (BEL — ENS Ulm, Lyon, Paris-Saclay), filière B/L, session 2025 : 6 heures, coefficient 3, calculatrice non autorisée. Sujet commun : « Aimer. »
 
 **Problématique** : aimer, est-ce subir ou agir — et quelle temporalité et quelle liberté singulières le mixte de passivité et d'activité engage-t-il ?
@@ -49,6 +51,10 @@ On objectera que cette élévation confine à l'illusion : l'amant idéalise, pr
 Tout ce qui précède conçoit aimer comme un rapport d'un sujet à un objet — fût-il une personne ou une valeur. Or le verbe autorise une autre construction : *s'aimer*, aimer et être aimé. En la négligeant, on manque la dimension la plus propre d'aimer quand son objet est un autre sujet : la *réciprocité*. Aimer, alors, n'est pas agir *sur* autrui mais entrer *avec* lui dans une relation.
 
 Aristote en fournit l'analyse dans les livres VIII et IX de l'*Éthique à Nicomaque*, sous le nom de *philia*. L'amitié, dit-il, « est ce qui maintient les cités » (VIII, 1) : elle n'est pas un sentiment privé mais le lien même de la communauté. Aristote en distingue trois espèces selon leur objet : l'amitié utile, l'amitié agréable, et l'amitié par excellence, fondée sur la vertu, où l'on aime l'autre « pour ce qu'il est en lui-même » et non pour l'avantage ou le plaisir qu'il procure (VIII, 3). Or — et c'est capital — la *philia* se distingue de la simple affection par deux traits. Elle suppose d'abord un *choix* : on peut éprouver de l'affection pour un être inanimé, non de l'amitié, car l'amitié veut le bien de l'autre *et* le veut réciproquement, chacun sachant l'autre bienveillant (VIII, 2). Elle suppose ensuite l'*égalité*, décisive dans l'amitié parfaite entre semblables.
+
+Supposons que deux personnes se souhaitent du bien en secret. La réciprocité existe alors pour un observateur qui connaîtrait leurs pensées. Pour devenir une relation d’amitié vécue, il faut encore que chacune reconnaisse la disposition de l’autre et puisse agir avec elle en conséquence.
+
+![De la bienveillance à la philia](figures/philia.svg)
 
 La différence devient nette dans le cas d’une affection sans retour. Je peux continuer à vouloir le bien de quelqu’un qui ne m’aime plus. Je ne peux pas, par le seul exercice de ma volonté, faire que nous soyons amis. Chez Aristote, la bienveillance mutuelle doit être connue des deux parties pour constituer une amitié ; un souhait secret, même partagé par hasard, n’établit pas encore cette relation. Les amitiés entre inégaux demandent aussi une proportion, là où l’amitié de vertu se développe exemplairement entre semblables. Ces précisions évitent de transformer l’égalité stricte en condition de tout lien. La liberté d’aimer comporte alors une limite positive : traiter autrui comme quelqu’un dont le bien compte m’interdit précisément de lui prescrire de répondre à mon affection.
 

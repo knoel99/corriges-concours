@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Nature de l'épreuve.** Composition de philosophie, épreuve commune d'écrit (BEL — ENS Ulm, Lyon, Paris-Saclay), filière B/L, session 2025 : 6 heures, coefficient 3, calculatrice non autorisée. Sujet commun : « Aimer. » — un infinitif, c'est-à-dire une forme verbale, et non le nom « l'amour ».
@@ -109,6 +111,8 @@ Cette limite transforme le sens de l’activité. L’un peut offrir une présen
 > « fil conducteur »
 
 ![De la bienveillance à la philia](figures/philia.svg)
+
+Éprouver l’exemple en ne changeant qu’une donnée. L’un apprend que l’autre lui veut du bien. Demander ensuite ce qui manque encore pour pouvoir dire qu’ils se savent amis.
 
 **Cas limite.** Une personne souhaite sincèrement le bien d’un ami éloigné qui ignore cette affection. Qu’est-ce qui dépend d’elle ? Son attention et ses actes. Qu’est-ce qui lui échappe ? La réponse de l’autre et la connaissance mutuelle qui rendent possible une amitié actuelle. La distinction permet de maintenir le sens du verbe « aimer » même là où l’amitié réciproque manque.
 
