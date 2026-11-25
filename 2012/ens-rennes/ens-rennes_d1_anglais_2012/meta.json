@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_anglais_2012",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_12d1_lv_1336729294135.pdf#page=3",
+    "sha256_sujet": "4442aa3f57fe3292832682719ab65371cef4ea439857a4548b7f26c9600a688b",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Adapté de The Guardian · 8 janvier 2012",
+    "page": 3,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a-12d1-anglais_1421750441295-pdf#page=1",
+    "sha256_rapport_jury": "ede2be691200738aeb55649b92492783d0c2c7e75e7ebb8a0a64ac7c0bbf1099"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 96,
+    "regle": "Discuter du risque et de la responsabilité dans la société contemporaine à partir de cet exemple · environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/plaintes.svg",
+      "legende": "What do the three percentages measure?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

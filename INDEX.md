@@ -367,6 +367,10 @@
 | 2025 | BTSA | Toutes options | Traitement de données | [md](2025/btsa/btsa_toutes-options_traitement-de-donnees_2025/brut.md) | [md](2025/btsa/btsa_toutes-options_traitement-de-donnees_2025/guide.md) |
 | 2025 | CAP | Groupement 1 | Mathématiques, physique-chimie | [md](2025/cap/cap_groupement-1_mathematiques-physique-chimie_2025/brut.md) | [md](2025/cap/cap_groupement-1_mathematiques-physique-chimie_2025/guide.md) |
 | 2012 | CAPa | Toutes options | Mathématiques appliquées | [md](2012/capa/capa_toutes-options_mathematiques-appliquees_2012/brut.md) | [md](2012/capa/capa_toutes-options_mathematiques-appliquees_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Allemand | [md](2012/ens-rennes/ens-rennes_d1_allemand_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_allemand_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Anglais | [md](2012/ens-rennes/ens-rennes_d1_anglais_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_anglais_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Espagnol | [md](2012/ens-rennes/ens-rennes_d1_espagnol_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_espagnol_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Italien | [md](2012/ens-rennes/ens-rennes_d1_italien_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_italien_2012/guide.md) |
 | 2026 | CAPEPS | Externe | Première épreuve écrite (bac+3) | [md](2026/capeps/capeps_externe_premiere-epreuve-ecrite-bac-3_2026/brut.md) | [md](2026/capeps/capeps_externe_premiere-epreuve-ecrite-bac-3_2026/guide.md) |
 | 2026 | CAPES | Maths | Épreuve d'admissibilité 1 (bac+3) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-1-bac-3_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-1-bac-3_2026/guide.md) |
 | 2026 | CAPES | Maths | Épreuve d'admissibilité 2 (bac+3) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-2-bac-3_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-2-bac-3_2026/guide.md) |

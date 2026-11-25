@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2012",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_12d1_lv_1336729294135.pdf#page=4",
+    "sha256_sujet": "4442aa3f57fe3292832682719ab65371cef4ea439857a4548b7f26c9600a688b",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "D’après El País · 5 janvier 2012",
+    "page": 4
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Version depuis « En España hay 17,1 millones » jusqu’à « en buena parte de la sociedad española », et réponse aux deux volets de l’expression."
+  },
+  "longueur_expression": {
+    "mots": 124,
+    "regle": "Analyser l’image du bas prix et discuter son efficacité pour les bas salaires · au moins 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/low-cost.svg",
+      "legende": "Quelle partie du portrait de Juan Carlos traduire ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Version depuis « En España hay 17,1 millones » jusqu’à « en buena parte de la sociedad española », et réponse aux deux volets de l’expression. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
