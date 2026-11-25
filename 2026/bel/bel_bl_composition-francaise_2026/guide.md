@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Question directrice** — À quelles conditions le tremblement devient-il une nécessité littéraire ?
 
 [Libellé reproduit par le jury, p. 3](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf#page=3) · [Rapport officiel](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_tronc_commun_francais.pdf)
@@ -34,6 +36,8 @@ Comparer le dialogue à l’ouverture d’*Enfance* avec l’attente qu’organi
 Au chapitre des comices de *Madame Bovary*, identifier l’auditeur de Rodolphe dans la scène et le lecteur que le montage de Flaubert place à distance de cette scène. Dans *Incendies*, suivre les destinataires que les jumeaux croient devoir trouver. La découverte de leur identité oblige le lecteur à mesurer le sens de deux adresses. Cette distinction donne un contenu vérifiable à la « vision » qui peut naître de l’écriture.
 
 ![Pourquoi deux lettres dans Incendies ?](figures/deux-lettres.svg)
+
+Formuler d’abord en une phrase ce que l’enquête a appris aux jumeaux. Se demander ensuite ce que cette phrase perdrait si elle tenait lieu des deux lettres. La différence éclaire la notion d’imperfection discutée dans la citation.
 
 > [!METHODE]
 > Le rapport examine la place de l’IA et le paradoxe de l’imperfection aux pages 3 à 7. Les pistes des pages 8 à 14 permettent de confronter la spontanéité à la reprise du texte, puis d’éprouver l’effet d’une forme sur ses lecteurs. La dissertation qui suit choisit une progression et des lectures singulières.
