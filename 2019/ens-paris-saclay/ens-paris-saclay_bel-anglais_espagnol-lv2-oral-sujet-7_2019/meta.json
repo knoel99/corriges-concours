@@ -1,0 +1,64 @@
+{
+  "slug": "ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-7_2019",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "BEL anglais",
+    "matiere": "Espagnol LV2 (oral, sujet 7)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_LE_Anglais/2019_Sujet_oraux_LE_Anglais_LV2_Espagnol_07.pdf",
+    "sujet_sha256": "5c5a55e502e8bdee07bf8f955d6dc1ac0e4137f4b83ca6f3bf1983719505d47c",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_LE_Anglais/2019_Rapport_Oraux_LE_Anglais_LV2_Espagnol.pdf",
+    "rapport_sha256": "f9bf5cd605073543b6d9901a9ccd3736e6fff5eddd8e3ab16df0065ff7e9a803",
+    "pages_sujet": [
+      1,
+      2
+    ],
+    "pages_rapport": [
+      1,
+      2
+    ],
+    "meme_document_cycle_master": {
+      "url": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Anglais/2019_Sujet_2Canglais_LV2_Espagnol07.pdf",
+      "sha256": "5c5a55e502e8bdee07bf8f955d6dc1ac0e4137f4b83ca6f3bf1983719505d47c"
+    }
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Compte rendu et commentaire du texte intégralement tel que donné dans les deux pages du sujet",
+      "Échange préparatoire avec trois questions et réponses proposées"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/prueba.svg",
+      "legende": "Del proyecto escolar al voto",
+      "question": "Comentario"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des deux pages du sujet « Formación del espíritu supremacista » et du rapport BEL anglais, compte rendu, commentaire développé et trois échanges proposés en espagnol, préparation en français et schéma original."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

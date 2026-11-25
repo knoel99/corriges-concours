@@ -1,0 +1,60 @@
+{
+  "slug": "ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-3_2019",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "BEL anglais",
+    "matiere": "Espagnol LV2 (oral, sujet 3)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_LE_Anglais/2019_Sujet_oraux_LE_Anglais_LV2_Espagnol_03.pdf",
+    "sujet_sha256": "4073181e7d85ab3b7d4972f3397d959937d4fea913ef42b3cdcb6ee0fccaac4d",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_LE_Anglais/2019_Rapport_Oraux_LE_Anglais_LV2_Espagnol.pdf",
+    "rapport_sha256": "f9bf5cd605073543b6d9901a9ccd3736e6fff5eddd8e3ab16df0065ff7e9a803",
+    "pages_sujet": [
+      1,
+      2
+    ],
+    "pages_rapport": [
+      1,
+      2
+    ]
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Compte rendu et commentaire du texte intégralement tel que donné dans les deux pages du sujet",
+      "Échange préparatoire avec trois questions et réponses proposées"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/dependencias.svg",
+      "legende": "Las relaciones que distingue la tribuna de Borges",
+      "question": "Comentario"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des deux pages du sujet « Cuba tiene secuestrada a Venezuela » et du rapport BEL anglais, compte rendu, commentaire développé et trois échanges proposés en espagnol, préparation en français et schéma original."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
