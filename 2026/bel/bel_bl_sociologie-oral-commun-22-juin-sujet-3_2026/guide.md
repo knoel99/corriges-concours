@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Les pratiques touristiques
@@ -31,6 +33,8 @@ Sur la plage algérienne de Capritour, Jennifer Bidet (doc. 2) compare notamment
 Ainsi, compter les départs permet de repérer une privation sans décrire ce que l’on apprend, affirme ou transmet en voyage. Inversement, les observations sur la plage ou dans un lycée ne permettent pas d’estimer à elles seules la fréquence de ces pratiques dans toute la population. L’intérêt du dossier est de relier l’accès matériel à des usages et à des jugements socialement situés.
 
 ![Hébergement chez des parents ou amis en 1989](figures/lecture-des-donnees.svg)
+
+Le tableau 99 répartit le nombre de séjours. Un ménage qui fait trois séjours peut être compté trois fois. Pour étudier l’accès au départ, il faudrait revenir à une base de personnes ou de ménages qui inclut les non-partants.
 
 ## Questions du jury
 
