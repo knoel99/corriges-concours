@@ -1,0 +1,91 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_italien-oral_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Italien (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=14",
+    "sujet_sha256": "c8ddaa0530f71dbb4dfb4bb32f8373963776602248462be1d250ba5c27b674c5",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=26",
+    "rapport_jury_sha256": "376daf04dd646b0b3fa852e3fb741b66e422a77d5cbe836a9541ca8da0d35c4d",
+    "documents": [
+      {
+        "rang": 1,
+        "reference_repertoire": "“Il femminicidio di Martina e l’arroganza dei giudici”, Andrea Malaguti (01/06/2025)",
+        "publication": "La Stampa",
+        "page_repertoire": 14,
+        "temoins": [
+          {
+            "description": "Titre publié par La Stampa",
+            "url": "https://www.lastampa.it/editoriali/l-editoriale-andrea-malaguti/2025/06/01/news/il_femminicidio_di_martina_e_l_arroganza_dei_giudizi-15172553/"
+          },
+          {
+            "description": "Éditorial reproduit par l’association Martina Rossi",
+            "url": "https://www.associazionemartinarossi.it/2025/06/01/il-femminicidio-di-martina-e-larroganza-dei-giudizi/"
+          }
+        ],
+        "limitation": "Le fascicule et le jury écrivent « giudici ». L’original de La Stampa et la reprise de l’association titrent « giudizi ». Les deux formes sont distinguées."
+      },
+      {
+        "rang": 2,
+        "reference_repertoire": "“Meloni meglio di Garibaldi: quelle vanterie da comizio della premier che fanno a botte con la realtà”, Serenella Mattera (26/10/2024)",
+        "publication": "Repubblica",
+        "page_repertoire": 14,
+        "temoins": [
+          {
+            "description": "Titre et présentation de la rubrique de Serenella Mattera",
+            "url": "https://www.repubblica.it/dossier/politica/la-verit-vi-prego/2024/10/26/news/meloni_comizio_governo_premier_garibaldi_la_verita_vi_prego-423579345/"
+          }
+        ],
+        "limitation": "Le titre, la rubrique et sa présentation sont lisibles. Le corps de l’article et ses vérifications particulières restent inconnus."
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "“Il femminicidio di Martina e l’arroganza dei giudici”, Andrea Malaguti (01/06/2025)",
+      "“Meloni meglio di Garibaldi: quelle vanterie da comizio della premier che fanno a botte con la realtà”, Serenella Mattera (26/10/2024)"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le fascicule de Lyon identifie 2 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+  },
+  "figures": [
+    {
+      "fichier": "figures/giudizi.svg",
+      "legende": "Chi giudica nel testo di Malaguti?",
+      "question": "Référence 1"
+    },
+    {
+      "fichier": "figures/titolo.svg",
+      "legende": "Dal paragone alla verifica",
+      "question": "Référence 2"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du répertoire et du rapport du jury, confrontation aux publications et rédaction des deux éditions avec exemples de prise de parole, relances, entraînements et schémas. Le fascicule de Lyon identifie 2 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
