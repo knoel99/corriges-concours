@@ -1282,6 +1282,8 @@
 | 2024 | X-ENS | MP | Mathématiques A | [md](2024/x-ens/x-ens_mp_maths-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_maths-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Maths A | [md](2025/x-ens/x-ens_mp_maths-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_maths-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Maths A | [md](2026/x-ens/x-ens_mp_maths-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_maths-a_2026/guide.md) |
+| 2016 | X-ENS | MP | Physique | [md](2016/x-ens/x-ens_mp_physique_2016/brut.md) | [md](2016/x-ens/x-ens_mp_physique_2016/guide.md) |
+| 2019 | X-ENS | MP | Physique | [md](2019/x-ens/x-ens_mp_physique_2019/brut.md) | [md](2019/x-ens/x-ens_mp_physique_2019/guide.md) |
 | 2020 | X-ENS | MP | Physique | [md](2020/x-ens/x-ens_mp_physique_2020/brut.md) | [md](2020/x-ens/x-ens_mp_physique_2020/guide.md) |
 | 2021 | X-ENS | MP | Physique | [md](2021/x-ens/x-ens_mp_physique_2021/brut.md) | [md](2021/x-ens/x-ens_mp_physique_2021/guide.md) |
 | 2022 | X-ENS | MP | Physique | [md](2022/x-ens/x-ens_mp_physique_2022/brut.md) | [md](2022/x-ens/x-ens_mp_physique_2022/guide.md) |
