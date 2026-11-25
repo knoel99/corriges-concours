@@ -109,6 +109,16 @@ def test_echapper_latex():
 def test_variables_gabarit():
     v = variables_gabarit(META, "guide", "CCINP MP — Physique 2026 · Corrigé guidé")
     assert v["nature"] == "Corrigé guidé"
+    assert "mesurerentete" not in v
+    litterature = {
+        **META["epreuve"],
+        "filiere": "Sélection internationale Lettres",
+        "matiere": "Philosophie — Littérature et philosophie (oral)",
+    }
+    for nature in ("brut", "guide"):
+        variables = variables_gabarit({"epreuve": litterature}, nature, "Littérature et philosophie")
+        assert variables["mesurerentete"] == "true"
+        assert variables["matiere"] == litterature["matiere"]
     assert v["titre"] == "CCINP MP — Physique 2026"
     # Douze brut.md finissent par « · Corrigé » seul : retiré lui aussi.
     seul = variables_gabarit(META, "brut", "CCINP MP — Physique 2026 · Corrigé")
