@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d-e_allemand_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand",
+    "annee": 2024
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-toutes-lve-e-crit-d-e-2024_1729180755099-pdf#page=2",
+    "sujet_sha256": "0071be726d8c1ea5c92fce50581c71fe863866dfa597cbb95f55bdd41182eac4",
+    "apercu_sujet_sha256": "57e5ee060dbeba8e4b5cbdcca9fea7a1d51c835aa79b6778d4979f489db44d9a",
+    "pages_sujet": [
+      2,
+      3,
+      4
+    ],
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2024",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-allemand-e-crit-d-e-2024_1729181005078-pdf",
+    "rapport_jury_sha256": "0ef75d3dacd00f66438dc331d5910f136bf99edd4a6700718c8db5a7ff1d207f",
+    "apercu_rapport_sha256": "7aa195af270f239e24aacc0c7c91680fbd02261253f1d79f12eb63aaf0aa0616"
+  },
+  "figures": [
+    {
+      "fichier": "figures/einkommen.svg",
+      "legende": "Welche Haushalte vergleicht der Autor?",
+      "question": "III"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des deux traductions et des deux réponses argumentées de 241 et 252 mots à partir du fascicule, pages physiques 2 à 4, et du rapport de langue. Schéma et accompagnement du guidé."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Première réponse argumentée",
+      "III.2. Deuxième réponse argumentée"
+    ]
+  }
+}
