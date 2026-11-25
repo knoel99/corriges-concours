@@ -1,0 +1,36 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques_2020",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques",
+    "annee": 2020
+  },
+  "questions": 48,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2020_Sujet_2C_Maths_Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "3b8ac6bc53b3eb35314a368aa23e7949493ef73286603fb6476dae2f64828a7a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/directions-accessibles.svg",
+      "question": "B.11",
+      "legende": "Exemples en dimension deux à partir de l’origine avec un seul contrôle suivant le premier axe. Lorsque A envoie ce vecteur sur le second axe, les deux directions deviennent accessibles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux problèmes, vérification de la garde et des cinq pages d’énoncé. Contre-exemple à A.7.a dans tout l’espace de matrices, preuve de la version relative, formule de produit et espaces tangents. Contrôles intégrables, passage par densité et critère de rang. Une figure du sous-espace accessible. Aucun rapport de jury associé à cet écrit.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
