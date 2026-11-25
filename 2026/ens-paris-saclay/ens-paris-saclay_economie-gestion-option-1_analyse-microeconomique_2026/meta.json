@@ -28,7 +28,7 @@
       "legende": "Quantités offertes selon la forme de concurrence"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "contributions": [
     {
       "phase": "redaction",
@@ -53,6 +53,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des facteurs de surplus, du seuil d’entrée et des solutions de coin. Vérification des profits avec les deux types du suiveur en information complète."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle des hypothèses de la première partie du sujet officiel. Comparaison chiffrée des quantités et prix de Cournot et Stackelberg par la pente de la demande inverse dans les deux éditions."
     }
   ]
 }

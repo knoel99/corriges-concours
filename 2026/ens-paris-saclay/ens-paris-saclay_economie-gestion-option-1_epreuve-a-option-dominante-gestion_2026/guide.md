@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Lire le cas Maison Pluvier
 
 Commencer par trois feuilles de brouillon. Sur la première, séparer charges directes et activités et conserver tous les décimaux jusqu’aux coûts globaux. Sur la deuxième, disposer les cinq écritures d’inventaire du 31 décembre. Sur la troisième, reprendre les deux colonnes « net » du bilan et repérer les concours bancaires indiqués sous le passif. Le cas figure aux pages imprimées 1/10 à 10/10 après le feuillet de l’option économique.
 
 ![Figure 1 — Du prix de vente au résultat unitaire](figures/marges-pluvier.svg)
+
+Le contrôle le plus sensible porte sur la Demoiselle. Divisez le résultat global par les 18 000 unités avant d’arrondir. La différence entre les prix et coûts unitaires affichés comporte un écart d’arrondi de 0,01 euro.
 
 **Vérifications numériques.** Les coûts des sept activités totalisent 2 014 000 €. Les deux chiffres d’affaires totalisent 7 150 000 € HT. Une bobine de 200 mètres permet de convertir les 270 centimètres de fil en 2,70 mètres. Une heure de service client ne se confond pas avec une heure de couture. Le budget de la campagne mixte est partagé en neuvièmes.
 

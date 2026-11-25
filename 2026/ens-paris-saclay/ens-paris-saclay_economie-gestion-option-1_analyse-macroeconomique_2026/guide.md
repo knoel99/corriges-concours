@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Construire le raisonnement
 
 Une hausse des droits américains et une hausse des droits européens n’ont pas le même point d’entrée dans le circuit économique. Partir d’une commande passée à un équipementier français par un constructeur allemand qui exporte aux États-Unis. La baisse finale des ventes peut affecter les deux pays. Partir ensuite d’une tôle importée achetée par le constructeur. Le droit prélevé en Europe peut dégrader la compétitivité du même exportateur. Préciser dans chaque exemple qui remet la taxe à la douane et qui, après négociation des prix, en supporte le coût.
 
 ![Figure 1 — Trois canaux du choc commercial](figures/canaux-commerciaux.svg)
+
+Suivez le trajet d’une seule machine. Qui acquitte le droit à la frontière et qui peut en supporter le coût après ajustement du prix ? Reprenez le raisonnement pour un composant importé dans l’Union. Le sens du flux commercial permet de situer le choc initial.
 
 **Un calcul au brouillon.** Un bien vendu 100 hors taxe coûte 110 à l’acheteur après un droit de 10 % si l’exportateur garde son prix. Si l’exportateur baisse son prix à 95, le prix à l’entrée devient 104,50. Le droit atteint alors 9,50. L’acheteur et le vendeur se partagent la perte selon les possibilités de substitution. À ce stade, aucune hypothèse ne permet de chiffrer les volumes.
 
