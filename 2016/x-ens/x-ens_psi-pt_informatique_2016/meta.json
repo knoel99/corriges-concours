@@ -1,0 +1,46 @@
+{
+  "slug": "x-ens_psi-pt_informatique_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2016,
+    "duree_heures": 2
+  },
+  "questions": 15,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2016.pdf",
+    "sujet_sha256": "fdc0853f4fa3a02297430ac4dde9285658cc1de8d87f86e410744c56a6810954"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rebonds.svg",
+      "question": "1",
+      "legende": "Un pas des quatre particules du sujet. Les flèches pleines donnent les déplacements retenus. Les pointillés prolongent les vitesses qui rencontreraient une paroi."
+    },
+    {
+      "fichier": "figures/borne-collision.svg",
+      "question": "10",
+      "legende": "Situation d’égalité en une dimension. Les positions initiales A et B encadrent les deux disques tangents au pas suivant."
+    },
+    {
+      "fichier": "figures/fusions-alpha.svg",
+      "question": "15",
+      "legende": "Les cinq blocs maximaux de l’exemple occupent douze positions. Chaque ligne suivante montre une fusion effective, les chiffres indiquent les longueurs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 15 questions du sujet XCR des filières PSI et PT sur la détection de collisions et le tri adaptatif. Vérification des rebonds et contacts à la borne, comparaison du filtrage en abscisse et de la recherche exhaustive sur 5 000 états, tri sur 29 524 listes ternaires. Trois schémas originaux. Le partitionnement de l’exemple p. 7 comporte cinq blocs."
+    }
+  ]
+}
