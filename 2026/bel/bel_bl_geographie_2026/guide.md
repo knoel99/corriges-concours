@@ -6,8 +6,6 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Révision des séries communales et des croquis** · GPT-6.2 Astra Ultra · session astra_lettres · vitesse non renseignée
-
 **Contribution (production figures)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
@@ -15,6 +13,10 @@
 **Retouches (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 **Vérification finale (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+La session astra_lettres a révisé les séries communales et leur lecture avec les croquis.
 
 ## Présentation du sujet
 
