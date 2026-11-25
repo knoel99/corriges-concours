@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## L’épreuve de six heures
 
 Le fascicule présente d’abord le poème à commenter, son latin et une traduction de lecture, puis donne un autre auteur pour la version, à la page 4. Dans le premier exercice, citer de brefs passages d’Ovide pour expliquer le travail de l’élégie. Dans le second, suivre exactement l’extrait de Tacite jusqu’au dernier présent de narration.
@@ -17,6 +19,8 @@ Le fascicule présente d’abord le poème à commenter, son latin et une traduc
 Dans les premiers vers, entourer les pronoms avant d’interpréter les oiseaux ou la météorologie. Le premier *tibi* (v. 1) place l’orateur du côté de celui qui reçoit. Le datif de l’ami et celui du poète sont à nouveau présents dans le dernier distique. Entre les deux, ces pronoms ont reçu un sens plus riche. L’un a acquis la célébrité grâce à son art, l’autre souffre de celle que lui a donnée le sien. Cette observation permet de construire une introduction à partir d’un rapport concret entre deux voix.
 
 ![Figure 1 — Les changements de relation dans la lettre d’Ovide](figures/amitie-distique.svg)
+
+Aux vers 23 à 38, identifier le lien entre les membres du couple cité, puis situer celui qui les admire ou les pleure. Les rôles sont distincts, et cette différence donne son poids à l’exemple.
 
 À la deuxième lecture, demander à chaque exemple mythologique qui apprécie la fidélité de qui. Chacun fait intervenir un personnage extérieur au couple d’amis, parfois son adversaire. L’intérêt du catalogue ne se réduit donc pas à la notoriété des couples. Il fournit à l’ami vivant sous Auguste des précédents qui autorisent sa sympathie pour un relégué.
 
