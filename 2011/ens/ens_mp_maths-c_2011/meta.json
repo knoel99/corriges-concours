@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2011
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2011/2011%20Math_MP_C.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_maths_c_ulc_mp2011.pdf",
+    "sha256_sujet": "58184230245ae19d6c94e4733a74cd593d6b15890f22d5f3bce3d9dd136861db"
+  },
+  "figures": [
+    {
+      "fichier": "figures/temps-suffisants-sur-le-cube.svg",
+      "question": "3.4.b",
+      "legende": "Les deux bornes portent sur la même donnée initiale concentrée et sur la même précision. La différence augmente avec la dimension."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet de sept pages et du rapport commun de Cachan, Lyon et Paris. Simplicité de la valeur propre, compacité dans le sous-espace de moyenne nulle, développement de l’entropie, positivité du semi-groupe, variation totale, transformée sur l’hypercube et comparaison des deux temps suffisants. Figure calculée avec les deux expressions démontrées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
