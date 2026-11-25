@@ -1,0 +1,126 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2003",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2003
+  },
+  "questions": 53,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2003/sujet-ecrit-2003-second-concours_chimie.pdf",
+    "sujet_sha256": "b96d4b8970bf6b590bccaec3b09a1eb82ab5d065fcb112df9658179a661587dd",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2003/rapport-2003-second-concours_ecrit_chimie.pdf",
+    "rapport_sha256": "d97671ebb2f5f6421bf2d043ee385dfff14dae17050bb87982c8785c0787b235"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Intro.i",
+      "Intro.ii",
+      "I.A1",
+      "I.A2",
+      "I.A3",
+      "I.A4",
+      "I.A5",
+      "I.A6",
+      "I.B1.a",
+      "I.B1.b",
+      "I.B1.c",
+      "I.B2.a",
+      "I.B2.b",
+      "II.1.a",
+      "II.1.b",
+      "II.1.c",
+      "II.2.b",
+      "III.A1",
+      "III.A2.a",
+      "III.A2.b",
+      "III.B1",
+      "III.B2",
+      "III.B3.b",
+      "III.B4.a",
+      "III.B4.b",
+      "III.B5",
+      "III.B7",
+      "IV.A1",
+      "IV.A2",
+      "IV.A3.a",
+      "IV.A3.b",
+      "IV.A3.c",
+      "IV.B1",
+      "IV.B2",
+      "IV.B3",
+      "IV.B4",
+      "IV.C1",
+      "IV.C2",
+      "IV.C3",
+      "IV.C4",
+      "IV.C5",
+      "IV.C6",
+      "IV.D1.a",
+      "IV.D1.b",
+      "IV.D2.a",
+      "IV.D2.b",
+      "IV.D2.c"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "II.2.a",
+      "II.2.c",
+      "III.B3.a",
+      "III.B6.a",
+      "III.B6.b",
+      "IV.D2.d"
+    ],
+    "precision": "Ces éditions traitent 47 des 53 questions ou sous-questions terminales. Les deux premières questions sont celles de l’introduction. Les questions II.2.a, II.2.c, III.B3.a, III.B6.a–b et IV.D2.d sont hors couverture. La corrosion du fer, la dureté de l’eau, le champ cristallin, la cinétique, le dosage potentiométrique et la stéréochimie des produits sont développés. L’original et le rapport commun Paris–Lyon ont été consultés."
+  },
+  "figures": [
+    {
+      "question": "I.A2",
+      "fichier": "figures/diagramme-du-fer-et-de-leau.svg",
+      "legende": "Frontières approximatives de l’original à concentration dissoute fixée. Les deux droites de stabilité de l’eau sont ajoutées en pointillés, conformément à I.A5."
+    },
+    {
+      "question": "I.B2.a",
+      "fichier": "figures/anode-de-magnesium.svg",
+      "legende": "Sens opposés des électrons et du courant conventionnel dans la liaison métallique de la pile galvanique."
+    },
+    {
+      "question": "IV.A1",
+      "fichier": "figures/coupes-des-cinq-orbitales-d.svg",
+      "legende": "Lobes de signes opposés dans les plans indiqués. Pour dz², l’ellipse équatoriale évoque le tore en trois dimensions. Une rotation globale du signe des orbitales est sans effet."
+    },
+    {
+      "question": "IV.A3.b",
+      "fichier": "figures/champ-cristallin-octaedrique.svg",
+      "legende": "L’unique électron d de Ti³⁺ occupe le niveau t₂g au repos. Un photon à 493 nm correspond à l’écart Δₒ du modèle."
+    },
+    {
+      "question": "IV.D1.a",
+      "fichier": "figures/profils-catalyse-et-sans-catalyse.svg",
+      "legende": "Deux profils à même enthalpie de réaction positive. Le chemin avec intermédiaire abaisse les barrières. Les tracés illustrent le principe sans fournir de données cinétiques."
+    },
+    {
+      "question": "IV.D2.a",
+      "fichier": "figures/quatre-fischer-apres-addition-syn.svg",
+      "legende": "Les verticales sont dirigées en arrière et les horizontales en avant. Me et Et sont différents. Les deux produits de chaque alcène sont images miroir."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale de 47 sous-questions sur 53 dans les deux éditions. Lecture des huit pages, des données graphiques et du rapport. Calcul de dureté et de titrage, bilan cinétique, domaine du fer et attribution CIP vérifiés. Six figures originales. Six sous-questions hors couverture figurent dans les deux éditions."
+    }
+  ]
+}
