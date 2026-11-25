@@ -1,0 +1,44 @@
+{
+  "slug": "ens-rennes_d-e_mathematiques-appliquees_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2023
+  },
+  "questions": 64,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuve-a-options-math-2023_1682689379085-pdf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-crit-mathe-matiques-d-e-2023_1694186030252-pdf",
+    "sha256_sujet": "3cd488bb7552ca18889f220db5815f4bb6a57819b1badd0f5dbe4e4e3da52ee8",
+    "sha256_rapport_jury": "3a261d971acfc7cb3c153d0fbaa9d68f1d68b84cb4da2c1c918f9d8b34fada5c",
+    "sha256_apercu_sujet": "f5f40bd0a16d6ff8b289b32637ac0bb1b6d94e066d3e43da806c6bf4ea675a67",
+    "sha256_apercu_rapport_jury": "6a405d228384370ae59a89cfa34ab366b25d613fc19fa3f917d7c6d1dad97dfa"
+  },
+  "figures": [
+    {
+      "fichier": "figures/adherents-par-rang.svg",
+      "question": "1.2.a",
+      "legende": "Les neuf effectifs sont représentés par rang, avec la droite calculée à la question 1.2.d. Un rang en abscisse occupe le même espace que 30 adhérents en ordonnée."
+    },
+    {
+      "fichier": "figures/courbes-et-tangentes.svg",
+      "question": "2.II.6.f",
+      "legende": "Les segments pointillés indiquent les tangentes horizontales aux extrémums de C0 et C1. En zéro les tangentes sont y = x et y = 0."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après comparaison des exercices et du rapport de jury 2023. Calculs sur les 26 valeurs et neuf années, régression, limites et dérivées latérales, densité et moments, loi du bénéfice et conditions exactes de satisfaction de toutes les demandes. Nuage et tangentes représentés aux rapports d’échelles demandés.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

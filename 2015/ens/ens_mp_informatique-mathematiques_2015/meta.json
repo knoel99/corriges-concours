@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2015",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2015,
+    "duree_heures": 4
+  },
+  "questions": 17,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/07/15_mp_sujet_infomath.pdf",
+    "sujet_sha256": "ff8879c4e672cf57371b581982c9d4755b3602171bcbc60a4007833bd946a93b",
+    "index_ens": "https://www.ens.psl.eu/rapports-et-sujets-info-2015",
+    "rapport": "La ligne de l’épreuve dans l’index de l’ENS porte le mot « rapport » sans lien vers un document."
+  },
+  "figures": [
+    {
+      "fichier": "figures/bloc-interieur.svg",
+      "question": "2",
+      "legende": "Dans ce mot, le seul bloc de b encadré par deux a a longueur 2. Les deux blocs extérieurs sont plus longs et ont un poids nul sur le chemin représenté."
+    },
+    {
+      "fichier": "figures/transitions-et-poids.svg",
+      "question": "6",
+      "legende": "En partant de l’état écrit à gauche, chaque cellule indique la destination puis le poids. Tous les états sont terminaux et toute lettre b aboutit à l’état 1."
+    },
+    {
+      "fichier": "figures/reduction-modulo-d.svg",
+      "question": "14",
+      "legende": "Sur chaque portion arrêtée au sommet critique h, deux visites du même sommet au même résidu autorisent une suppression. La longueur retirée est un multiple de d, que l’on peut réinsérer en h sans perte de poids."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 17 questions et subdivisions. Lecture native du PDF et vérification visuelle des flèches en pages 2–3 et de la borne erronée en page 6. Confrontation du calcul des moyennes des cycles sur 19 939 matrices, 59 817 comparaisons du programme Python avec un calcul indépendant, 45 vérifications des distributions et du poids moyen de A2. Trois figures explicatives."
+    }
+  ]
+}

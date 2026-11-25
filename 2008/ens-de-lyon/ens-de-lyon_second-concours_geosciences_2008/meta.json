@@ -1,0 +1,89 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2008",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2008
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2008/sujet-ecrit-2008-second-concours_geosciences.pdf",
+    "sujet_sha256": "aa1c766e34230152455a9d55f5b8c96ad4043aee5f91851fd5db48ee2794833f"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1a",
+      "2.1b",
+      "2.1c",
+      "2.2a",
+      "2.2b",
+      "2.2c",
+      "2.2d",
+      "3.1",
+      "3.2a",
+      "3.2b",
+      "3.2c",
+      "3.2d",
+      "3.2e",
+      "3.2f",
+      "3.2g",
+      "3.2h",
+      "3.3a",
+      "3.3b",
+      "3.3c",
+      "3.4a",
+      "3.4b",
+      "3.4c",
+      "4"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 29 consignes sont traitées, y compris la synthèse. Les reports demandés sur les pages 9 et 10 sont restitués sous forme de deux diagrammes originaux. Les pentes de refroidissement sont des estimations établies à partir des plages graphiques de la figure 3.7. L’archive de 2008 ne rattache pas de rapport écrit à cette épreuve."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "1.6",
+      "fichier": "figures/ouverture-deux-flancs.svg",
+      "legende": "Distances moyennes ramenées à un million d’années. La somme des deux flancs donne le taux total. Les intervalles de mesure des deux cartes diffèrent."
+    },
+    {
+      "question": "2.2c",
+      "fichier": "figures/profondeur-et-age-du-plancher.svg",
+      "legende": "Loi de profondeur fournie dans l’énoncé. Les deux points montrent le passage de 15 à environ 38 Ma pour 800 mètres de subsidence."
+    },
+    {
+      "question": "3.2d",
+      "fichier": "figures/report-des-echantillons-dans-la-grille.svg",
+      "legende": "Report schématique sur les domaines de la figure 3.5. Les points du Chenaillet suivent un refroidissement à basse pression. Q et V figurent les deux domaines de haute pression. Les positions sont représentatives de plages."
+    },
+    {
+      "question": "3.3b",
+      "fichier": "figures/droite-des-fractionnements-isotopiques.svg",
+      "legende": "Les cinq valeurs du tableau et la droite ajustée par l’origine. La dispersion, surtout celle du disthène, limite la précision du thermomètre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de l’écrit sur la lithosphère océanique et les ophiolites alpines. Contrôle des onze pages, des barres de distance, du géothermomètre de l’oxygène et des chronomètres. Reports originaux de faciès et d’isotopes, profil de subsidence et comparaison des vitesses d’ouverture."
+    }
+  ]
+}

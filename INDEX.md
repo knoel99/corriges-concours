@@ -569,6 +569,7 @@
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
 | 2007 | ENS de Lyon | Second concours | Géosciences | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/brut.md) | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/guide.md) |
+| 2008 | ENS de Lyon | Second concours | Géosciences | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Géosciences | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/guide.md) |
 | 2010 | ENS de Lyon | Second concours | Géosciences | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Géosciences | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/guide.md) |
@@ -595,6 +596,7 @@
 | 2026 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Espagnol (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Allemand (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_allemand-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_allemand-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Italien (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/guide.md) |
@@ -640,6 +642,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2015 | ENS | MP | Informatique-mathématiques | [md](2015/ens/ens_mp_informatique-mathematiques_2015/brut.md) | [md](2015/ens/ens_mp_informatique-mathematiques_2015/guide.md) |
 | 2016 | ENS | MP | Informatique-mathématiques | [md](2016/ens/ens_mp_informatique-mathematiques_2016/brut.md) | [md](2016/ens/ens_mp_informatique-mathematiques_2016/guide.md) |
 | 2017 | ENS | MP | Informatique-mathématiques | [md](2017/ens/ens_mp_informatique-mathematiques_2017/brut.md) | [md](2017/ens/ens_mp_informatique-mathematiques_2017/guide.md) |
 | 2018 | ENS | MP | Informatique-mathématiques | [md](2018/ens/ens_mp_informatique-mathematiques_2018/brut.md) | [md](2018/ens/ens_mp_informatique-mathematiques_2018/guide.md) |
