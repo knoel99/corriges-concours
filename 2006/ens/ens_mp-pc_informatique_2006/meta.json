@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp-pc_informatique_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2006,
+    "duree_heures": 4
+  },
+  "questions": 37,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2006/sujet-2006-ecrit-mp-i_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 60.20M. MP (groupes MPI et I), Paris, Lyon et Cachan. PC (groupe I), Paris et Lyon. Durée de quatre heures. La banque ne liste pas de rapport écrit pour cette composition.",
+    "sujet_sha256": "bcdd85d0f3967538e4f96d002cdbebb17c448d654f8c4d48a758e55ab729cfec"
+  },
+  "figures": [
+    {
+      "fichier": "figures/fermeture-successeurs.svg",
+      "question": "1.4.2",
+      "legende": "Figure 1 — Dans l’exemple, chaque rang atteint le suivant. Les arcs qui sautent un rang n’ajoutent aucun sommet à la fermeture."
+    },
+    {
+      "fichier": "figures/poids-table.svg",
+      "question": "2.1.1",
+      "legende": "Figure 2 — Les huit tables non affines ont un poids impair. Les deux tables XOR dépendent des deux entrées et ont chacune deux uns."
+    },
+    {
+      "fichier": "figures/premiere-fusion.svg",
+      "question": "3.4.1",
+      "legende": "Figure 3 — Sans bifurcation avant s, les deux variables passent chacune par un seul signal avant de se rencontrer à la porte s."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Trois parties du cahier 60.20M. Tri topologique, fermetures transitives et chaînes, caractérisation des bases complètes, bornes de taille et profondeur, adressage, dénombrement et spécialisation à deux variables."
+    }
+  ]
+}
