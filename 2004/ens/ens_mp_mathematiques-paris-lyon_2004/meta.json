@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-paris-lyon_2004",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques Paris-Lyon",
+    "annee": 2004
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2004/sujet-2004-ecrit-mp_mathematiques_lyon_paris.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2004/rapport-2004-mp_ecrit_mathematiques_lyon_paris.pdf",
+    "sha256_sujet": "4b56e54d76c8a6e5df0c7c12dfd7cb9caf7818acf4ad8f1a60fd76c4471d924f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/classes-de-conjugaison.svg",
+      "question": "V.3.b",
+      "legende": "La classe triviale a un unique antécédent. Les deux homomorphismes non triviaux deviennent conjugués dans le groupe symétrique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des cinq parties sur l’original et contrôle du rapport avec éléments de solution. Arguments local et global pour les carrés, indépendance des caractères, trivialisation matricielle, exactitude et exemples SO₂ et S₃. Diagramme des fibres dans le dernier exemple.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
