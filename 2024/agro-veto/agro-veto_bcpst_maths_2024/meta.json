@@ -1,0 +1,47 @@
+{
+  "slug": "agro-veto_bcpst_maths_2024",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2024
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0424_sp.pdf",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/math_calcul_raisonnement_rapport_2024_relu_le.pdf",
+    "sha256_sujet": "c9fbbdb169cc399cac68926d45e6397bb95a7fb6553431082f040a22a6eab61a",
+    "sha256_rapport_jury": "ce675abddb89aba3c2799055f66e30def0a4465e8774906b6aa316ae0b8f0b3d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/encadrement-integral.svg",
+      "question": "3.a",
+      "legende": "Chacun des deux rectangles a pour aire 1/i. Celui de gauche est sous la courbe, celui de droite au-dessus."
+    },
+    {
+      "fichier": "figures/maximum-centre.svg",
+      "question": "14",
+      "legende": "Les fonctions de répartition des maxima centrés tendent vers la loi de Gumbel de paramètre 1."
+    },
+    {
+      "fichier": "figures/projection-moindres-carres.svg",
+      "question": "22",
+      "legende": "La projection de B sur l’image de A décompose l’erreur en deux composantes orthogonales."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 30 réponses et sous-réponses en deux éditions après lecture des quatre pages du sujet et cinq pages du rapport. Vérification des bornes, des moments, de l’asymptotique de Gumbel, des identités matricielles et du calcul final. Trois figures originales.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
