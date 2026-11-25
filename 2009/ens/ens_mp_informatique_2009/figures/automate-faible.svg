@@ -1,0 +1,112 @@
+<svg width="435pt" height="229pt"
+ viewBox="0.00 0.00 435.44 228.71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(12.96 215.75)">
+<polygon fill="white" stroke="transparent" points="-12.96,12.96 -12.96,-215.75 422.48,-215.75 422.48,12.96 -12.96,12.96"/>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<ellipse fill="#edf4f4" stroke="#315266" cx="1.8" cy="-74.51" rx="1.8" ry="1.8"/>
+</g>
+<!-- S -->
+<g id="node2" class="node">
+<title>S</title>
+<ellipse fill="#d6eae4" stroke="#315266" cx="69.69" cy="-74.51" rx="19.17" ry="19.17"/>
+<ellipse fill="none" stroke="#315266" cx="69.69" cy="-74.51" rx="23.18" ry="23.18"/>
+<text text-anchor="middle" x="69.69" y="-70.71" font-family="DejaVu Sans" font-size="16.00">S</text>
+</g>
+<!-- start&#45;&gt;S -->
+<g id="edge1" class="edge">
+<title>start&#45;&gt;S</title>
+<path fill="none" stroke="#476777" d="M3.94,-74.51C8.29,-74.51 24.3,-74.51 39.31,-74.51"/>
+<polygon fill="#476777" stroke="#476777" points="39.54,-76.96 46.54,-74.51 39.54,-72.06 39.54,-76.96"/>
+</g>
+<!-- S&#45;&gt;S -->
+<g id="edge3" class="edge">
+<title>S&#45;&gt;S</title>
+<path fill="none" stroke="#476777" d="M62.13,-96.39C60.08,-110.73 62.6,-124.6 69.69,-124.6 75.56,-124.6 78.3,-115.08 77.9,-103.67"/>
+<polygon fill="#476777" stroke="#476777" points="80.32,-103.15 77.25,-96.39 75.44,-103.58 80.32,-103.15"/>
+<text text-anchor="middle" x="69.69" y="-128.4" font-family="DejaVu Sans" font-size="14.00">1</text>
+</g>
+<!-- Z -->
+<g id="node4" class="node">
+<title>Z</title>
+<ellipse fill="#edf4f4" stroke="#315266" cx="164.58" cy="-74.51" rx="19.6" ry="19.6"/>
+<text text-anchor="middle" x="164.58" y="-70.71" font-family="DejaVu Sans" font-size="16.00">Z</text>
+</g>
+<!-- S&#45;&gt;Z -->
+<g id="edge2" class="edge">
+<title>S&#45;&gt;Z</title>
+<path fill="none" stroke="#476777" d="M93.18,-74.51C106.5,-74.51 123.44,-74.51 137.36,-74.51"/>
+<polygon fill="#476777" stroke="#476777" points="137.75,-76.96 144.75,-74.51 137.75,-72.06 137.75,-76.96"/>
+<text text-anchor="middle" x="118.78" y="-78.31" font-family="DejaVu Sans" font-size="14.00">0</text>
+</g>
+<!-- G1 -->
+<g id="node3" class="node">
+<title>G1</title>
+<ellipse fill="#d6eae4" stroke="#315266" cx="377.23" cy="-128.51" rx="28.1" ry="28.1"/>
+<ellipse fill="none" stroke="#315266" cx="377.23" cy="-128.51" rx="32.07" ry="32.07"/>
+<text text-anchor="middle" x="377.23" y="-124.71" font-family="DejaVu Sans" font-size="16.00">G1</text>
+</g>
+<!-- G1&#45;&gt;G1 -->
+<g id="edge9" class="edge">
+<title>G1&#45;&gt;G1</title>
+<path fill="none" stroke="#476777" d="M366.65,-159.31C365.27,-174.4 368.8,-187.79 377.23,-187.79 384.29,-187.79 387.91,-178.43 388.1,-166.55"/>
+<polygon fill="#476777" stroke="#476777" points="390.54,-166.21 387.82,-159.31 385.64,-166.4 390.54,-166.21"/>
+<text text-anchor="middle" x="377.23" y="-191.59" font-family="DejaVu Sans" font-size="14.00">1</text>
+</g>
+<!-- G0 -->
+<g id="node5" class="node">
+<title>G0</title>
+<ellipse fill="#edf4f4" stroke="#315266" cx="264.67" cy="-129.51" rx="28.07" ry="28.07"/>
+<text text-anchor="middle" x="264.67" y="-125.71" font-family="DejaVu Sans" font-size="16.00">G0</text>
+</g>
+<!-- G1&#45;&gt;G0 -->
+<g id="edge8" class="edge">
+<title>G1&#45;&gt;G0</title>
+<path fill="none" stroke="#476777" d="M349.01,-112.55C338.24,-108.04 325.66,-104.96 313.95,-107.51 308.13,-108.77 302.16,-110.8 296.5,-113.13"/>
+<polygon fill="#476777" stroke="#476777" points="295.45,-110.91 290.02,-115.97 297.42,-115.4 295.45,-110.91"/>
+<text text-anchor="middle" x="318.95" y="-111.31" font-family="DejaVu Sans" font-size="14.00">0</text>
+</g>
+<!-- Z&#45;&gt;G0 -->
+<g id="edge4" class="edge">
+<title>Z&#45;&gt;G0</title>
+<path fill="none" stroke="#476777" d="M182.22,-83.84C196.12,-91.63 216.3,-102.94 233.09,-112.36"/>
+<polygon fill="#476777" stroke="#476777" points="232.27,-114.71 239.58,-116 234.67,-110.44 232.27,-114.71"/>
+<text text-anchor="middle" x="210.38" y="-105.31" font-family="DejaVu Sans" font-size="14.00">0</text>
+</g>
+<!-- D -->
+<g id="node6" class="node">
+<title>D</title>
+<ellipse fill="#edf4f4" stroke="#315266" cx="264.67" cy="-20.51" rx="20.51" ry="20.51"/>
+<text text-anchor="middle" x="264.67" y="-16.71" font-family="DejaVu Sans" font-size="16.00">D</text>
+</g>
+<!-- Z&#45;&gt;D -->
+<g id="edge5" class="edge">
+<title>Z&#45;&gt;D</title>
+<path fill="none" stroke="#476777" d="M182.22,-65.35C198.09,-56.61 222.15,-43.36 240.01,-33.53"/>
+<polygon fill="#476777" stroke="#476777" points="241.33,-35.6 246.28,-30.08 238.97,-31.31 241.33,-35.6"/>
+<text text-anchor="middle" x="210.38" y="-56.31" font-family="DejaVu Sans" font-size="14.00">1</text>
+</g>
+<!-- G0&#45;&gt;G1 -->
+<g id="edge7" class="edge">
+<title>G0&#45;&gt;G1</title>
+<path fill="none" stroke="#476777" d="M293,-129.26C306.52,-129.14 323.06,-128.99 337.83,-128.85"/>
+<polygon fill="#476777" stroke="#476777" points="337.94,-131.3 344.92,-128.79 337.9,-126.4 337.94,-131.3"/>
+<text text-anchor="middle" x="318.95" y="-132.31" font-family="DejaVu Sans" font-size="14.00">1</text>
+</g>
+<!-- G0&#45;&gt;G0 -->
+<g id="edge6" class="edge">
+<title>G0&#45;&gt;G0</title>
+<path fill="none" stroke="#476777" d="M255.03,-156.24C253.23,-171.1 256.44,-184.79 264.67,-184.79 271.54,-184.79 274.92,-175.23 274.79,-163.41"/>
+<polygon fill="#476777" stroke="#476777" points="277.22,-163.06 274.31,-156.24 272.33,-163.39 277.22,-163.06"/>
+<text text-anchor="middle" x="264.67" y="-188.59" font-family="DejaVu Sans" font-size="14.00">0</text>
+</g>
+<!-- D&#45;&gt;D -->
+<g id="edge10" class="edge">
+<title>D&#45;&gt;D</title>
+<path fill="none" stroke="#476777" d="M255.85,-39.04C252.55,-53.38 255.49,-68.01 264.67,-68.01 272.34,-68.01 275.65,-57.79 274.6,-46.05"/>
+<polygon fill="#476777" stroke="#476777" points="277.01,-45.56 273.48,-39.04 272.17,-46.33 277.01,-45.56"/>
+<text text-anchor="middle" x="264.67" y="-71.81" font-family="DejaVu Sans" font-size="14.00">0,1</text>
+</g>
+</g>
+</svg>
