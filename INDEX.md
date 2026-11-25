@@ -1435,13 +1435,18 @@
 | 2016 | X-ENS | MP-PC-PSI | Anglais | [md](2016/x-ens/x-ens_mp-pc-psi_anglais_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_anglais_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Anglais | [md](2017/x-ens/x-ens_mp-pc-psi_anglais_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_anglais_2017/guide.md) |
 | 2018 | X-ENS | MP-PC-PSI | Anglais | [md](2018/x-ens/x-ens_mp-pc-psi_anglais_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_anglais_2018/guide.md) |
+| 2019 | X-ENS | MP-PC-PSI | Anglais | [md](2019/x-ens/x-ens_mp-pc-psi_anglais_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_anglais_2019/guide.md) |
+| 2020 | X-ENS | MP-PC-PSI | Anglais | [md](2020/x-ens/x-ens_mp-pc-psi_anglais_2020/brut.md) | [md](2020/x-ens/x-ens_mp-pc-psi_anglais_2020/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Arabe | [md](2015/x-ens/x-ens_mp-pc-psi_arabe_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_arabe_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Arabe | [md](2016/x-ens/x-ens_mp-pc-psi_arabe_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_arabe_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Arabe | [md](2017/x-ens/x-ens_mp-pc-psi_arabe_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_arabe_2017/guide.md) |
 | 2018 | X-ENS | MP-PC-PSI | Arabe | [md](2018/x-ens/x-ens_mp-pc-psi_arabe_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_arabe_2018/guide.md) |
+| 2019 | X-ENS | MP-PC-PSI | Arabe | [md](2019/x-ens/x-ens_mp-pc-psi_arabe_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_arabe_2019/guide.md) |
+| 2020 | X-ENS | MP-PC-PSI | Arabe | [md](2020/x-ens/x-ens_mp-pc-psi_arabe_2020/brut.md) | [md](2020/x-ens/x-ens_mp-pc-psi_arabe_2020/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Chinois | [md](2015/x-ens/x-ens_mp-pc-psi_chinois_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_chinois_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Chinois | [md](2016/x-ens/x-ens_mp-pc-psi_chinois_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_chinois_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Chinois | [md](2017/x-ens/x-ens_mp-pc-psi_chinois_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_chinois_2017/guide.md) |
+| 2018 | X-ENS | MP-PC-PSI | Chinois | [md](2018/x-ens/x-ens_mp-pc-psi_chinois_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_chinois_2018/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Composition française | [md](2015/x-ens/x-ens_mp-pc-psi_composition-francaise_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_composition-francaise_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Composition française | [md](2016/x-ens/x-ens_mp-pc-psi_composition-francaise_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_composition-francaise_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Composition française | [md](2017/x-ens/x-ens_mp-pc-psi_composition-francaise_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_composition-francaise_2017/guide.md) |
@@ -1455,6 +1460,7 @@
 | 2018 | X-ENS | MP-PC-PSI | Français | [md](2018/x-ens/x-ens_mp-pc-psi_francais_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_francais_2018/guide.md) |
 | 2019 | X-ENS | MP-PC-PSI | Français | [md](2019/x-ens/x-ens_mp-pc-psi_francais_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_francais_2019/guide.md) |
 | 2020 | X-ENS | MP-PC-PSI | Français | [md](2020/x-ens/x-ens_mp-pc-psi_francais_2020/brut.md) | [md](2020/x-ens/x-ens_mp-pc-psi_francais_2020/guide.md) |
+| 2021 | X-ENS | MP-PC-PSI | Français | [md](2021/x-ens/x-ens_mp-pc-psi_francais_2021/brut.md) | [md](2021/x-ens/x-ens_mp-pc-psi_francais_2021/guide.md) |
 | 2011 | X-ENS | MP-PC | Allemand | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_allemand_2011/guide.md) |
 | 2012 | X-ENS | MP-PC | Allemand | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/brut.md) | [md](2012/x-ens/x-ens_mp-pc_allemand_2012/guide.md) |
 | 2013 | X-ENS | MP-PC | Allemand | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/brut.md) | [md](2013/x-ens/x-ens_mp-pc_allemand_2013/guide.md) |
