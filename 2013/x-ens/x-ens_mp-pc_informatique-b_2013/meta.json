@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc_informatique-b_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique B",
+    "annee": 2013,
+    "duree_heures": 2
+  },
+  "questions": 14,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_info_b_xec.pdf",
+    "sujet_sha256": "bad906459578d576e0e2e8a7198d5f758c3083f351f8171043c898c58fdcdded",
+    "rapport": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2013/MP_INFO_X_2_2013.rapport.pdf",
+    "rapport_sha256": "1c771919cb62bf15125546bc6e755041eff77746974939019f45f2daad57a604"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q07-attracteur.svg",
+      "question": "Q7",
+      "legende": "L’exemple f₁ se termine au sommet 2 depuis tous les départs. La plus longue branche part de 4 et possède trois arêtes."
+    },
+    {
+      "fichier": "figures/q09-diagonale.svg",
+      "question": "Q9",
+      "legende": "Pour l’exemple croissant, le graphe rencontre la diagonale en 5 et en 7. La dichotomie peut s’arrêter à l’un ou à l’autre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des quatorze questions à partir du sujet et du rapport de jury commun MP-PC signé Cassereau, Lozes et Rossin. Exécution des deux éditions sur l’ensemble des applications des domaines de taille 1 à 5, vérification des cycles, convergences, deux monotonies et pgcd, et preuve des bornes inférieures logarithmiques. Deux figures originales."
+    }
+  ]
+}
