@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d-e_espagnol_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol",
+    "annee": 2025
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-lve-d-e-2025_1760692435843-pdf#page=8",
+    "sujet_sha256": "a32bd8c9dbd1fa753838d530842f6053b4a69a2a99ec6f1958425c2d083a0cb6",
+    "apercu_sujet_sha256": "5a6d7af833bcbce6e28017b8dff04cfac196bf4656829c636a75f9b185926a11",
+    "pages_sujet": [
+      8,
+      9,
+      10
+    ],
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2025",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-e-crit-d-e-2025-2_1768897939753-pdf",
+    "rapport_jury_sha256": "d9ab7062dc5b696677e98b8d6582c1e0345df7750024278a8ca9d5d7a1cadc08",
+    "apercu_rapport_sha256": "9941e030a79b33db2c229a30770890215653dbcee38f044191814ec7ec3af204"
+  },
+  "figures": [
+    {
+      "fichier": "figures/economia.svg",
+      "legende": "Tres medidas de la economía ambiental",
+      "question": "III"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des deux traductions et des deux réponses argumentées de 253 et 254 mots à partir du fascicule, pages physiques 8 à 10, et du rapport de langue. Schéma et accompagnement du guidé."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Première réponse argumentée",
+      "III.2. Deuxième réponse argumentée"
+    ]
+  }
+}

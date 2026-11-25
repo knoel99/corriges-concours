@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d-e_anglais_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais",
+    "annee": 2025
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-lve-d-e-2025_1760692435843-pdf#page=5",
+    "sujet_sha256": "a32bd8c9dbd1fa753838d530842f6053b4a69a2a99ec6f1958425c2d083a0cb6",
+    "apercu_sujet_sha256": "5a6d7af833bcbce6e28017b8dff04cfac196bf4656829c636a75f9b185926a11",
+    "pages_sujet": [
+      5,
+      6,
+      7
+    ],
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2025",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-e-crit-d-e-2025_1768897929224-pdf",
+    "rapport_jury_sha256": "0e449bebc7a98f8a78502279ad081aec7e15aa86c886281ebbe6b5a373fd6bbd",
+    "apercu_rapport_sha256": "5ae491c34f5b3e55ab447c8a3f1e852ba75c1420f558350556102da378dd48fd"
+  },
+  "figures": [
+    {
+      "fichier": "figures/energy.svg",
+      "legende": "How a computing contract reaches the power grid",
+      "question": "III"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des deux traductions et des deux réponses argumentées de 249 et 252 mots à partir du fascicule, pages physiques 5 à 7, et du rapport de langue. Schéma et accompagnement du guidé."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Première réponse argumentée",
+      "III.2. Deuxième réponse argumentée"
+    ]
+  }
+}
