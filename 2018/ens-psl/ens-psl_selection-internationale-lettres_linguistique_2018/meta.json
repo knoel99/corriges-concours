@@ -1,0 +1,66 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_linguistique_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Linguistique",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Epreuve_ecrite_linguistique_2018.pdf",
+    "sujet_sha256": "e4c071a36c1f67a4006419516816c442ba5e644357941242a443755d168f4191",
+    "pages": 14
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Expérience de Chemla et Bott · 1. Le problème posé",
+      "Expérience de Chemla et Bott · 2. Deux analyses et leurs prédictions de traitement",
+      "Expérience de Chemla et Bott · 3. L'expérience",
+      "Expérience de Chemla et Bott · 4. Résultats et arbitrage",
+      "Expérience de Chemla et Bott · 5. Discussion proposée",
+      "Mises à jour selon Heim · 1. Si Jean est incompétent, il le sait",
+      "Mises à jour selon Heim · 2. Les quatre mondes et les deux connecteurs",
+      "Phonologie du frioulan · 1. Le dévoisement final et les racines",
+      "Phonologie du frioulan · 2. L'allongement vocalique",
+      "Phonologie du frioulan · 3. Pourquoi l'ordre des règles est décisif"
+    ],
+    "precision": "Cinq questions sur la première expérience de Chemla et Bott, deux calculs de sémantique dynamique dont deux sous-calculs à la question 2, et trois questions de phonologie du frioulan. La discussion retranchée est proposée par le corrigé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/partie-a.svg",
+      "legende": "Deux analyses d’une même phrase négative"
+    },
+    {
+      "fichier": "figures/partie-b.svg",
+      "legende": "Que reçoit la seconde proposition ?"
+    },
+    {
+      "fichier": "figures/partie-c.svg",
+      "legende": "Pourquoi allonger avant de dévoiser ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cinq questions sur la première expérience de Chemla et Bott, deux calculs de sémantique dynamique dont deux sous-calculs à la question 2, et trois questions de phonologie du frioulan. La discussion retranchée est proposée par le corrigé. Rédaction intégrale des deux éditions et des schémas après lecture du fascicule."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
