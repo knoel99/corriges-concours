@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 « Les transferts intergénérationnels de capitaux : des accélérateurs des inégalités ? » L’écrit commun à Ulm, Lyon, Paris-Saclay et ENSAE/INSEE/ENSAI dure six heures. Le candidat dispose d’un dossier de sept documents. Aucun document personnel n’est autorisé. La composition n’impose pas de nombre de mots. Il faut soutenir une réponse qui articule économie et sociologie, en utilisant aussi bien les données statistiques que l’enquête de terrain.
@@ -72,6 +74,10 @@ Le calcul se lit verticalement à chaque étape. Avant entraide, 1,26 moins 0,44
 **II.1. Recevoir assez tôt pour changer de trajectoire.** L’apport personnel peut rendre solvable un ménage auprès du prêteur. L’acquéreur commence à rembourser le principal tandis qu’un ménage comparable cherche encore à constituer l’apport. Séparer l’économie de loyer, les intérêts, les charges, l’endettement et la variation de valeur du logement. La hausse du prix n’est pas acquise d’avance. Le document 6 suggère une association plus forte pour une donation que pour un héritage dans le modèle avec hétérogénéité. La date du don peut elle-même dépendre de la préparation du projet.
 
 ![Figure 2 — Coefficients multiplicatifs d’accès à la propriété parmi les ménages qui souhaitent acheter. Le point de comparaison est l’absence du transfert considéré. Modèle avec hétérogénéité du document 6.](figures/doc6-donation-logement.svg)
+
+**Lire un modèle de durée.** Les deux colonnes du document 6 décrivent des moments d’entrée. Le complément de 4,16 % vaut 95,84 % dans la population modélisée. Ce nombre est une proportion estimée de ménages susceptibles d’acheter, sans horizon de réalisation imposé. Le coefficient 1,81 multiplie le rythme instantané de transition chez ceux encore exposés, à caractéristiques comparables. Pour illustrer, si une probabilité de référence sur une période valait 20 % et si les risques étaient proportionnels avec un rapport de 1,81, la probabilité correspondante serait $1-(1-0{,}20)^{1{,}81}$, soit environ 33,2 %. Multiplier directement 20 % par 1,81 donnerait à tort 36,2 %. La probabilité de référence de 20 % est une hypothèse de calcul. Le tableau ne la fournit pas.
+
+![Document 6, p. 9. Chaque coefficient porte sur le rythme d’entrée dans la propriété. La référence de chaque contraste vaut 1. Les quatre coefficients sont accompagnés de trois étoiles dans le tableau.](figures/deux-modeles-entree-propriete.svg)
 
 **II.2. Relier les montants transmis aux capacités de les faire fructifier.** Au document 2, partir d’une ligne de profession. Les héritages reçus par les employés atteignent ou dépassent 100 000 euros dans 6,7 % des cas renseignés, contre 27,3 % pour les professions libérales. La ligne vaut 100 % en additionnant les tranches de montant, aux arrondis près. Elle ne mesure ni la proportion des employés qui héritent ni la profession de tous les bénéficiaires de gros héritages.
 
