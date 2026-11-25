@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_anglais_2009",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/epreuve-de-l-v-e-d1_1423059201606-pdf#page=3",
+    "sha256_sujet": "1ca28fc3f90cefff51fd6629106ac010d1d983969eff47c49e7ec68f2d7f797e",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Adapté de The Economist, 13 septembre 2008",
+    "page": 3,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a-09d1-anglais_1423059213156-pdf#page=1",
+    "sha256_rapport_jury": "d6130f6230a33b2a6280bef24236d172d3704cfa40fb8799713b0c4f3f9b6274"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "What are the various faces of feminism? 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/ceiling.svg",
+      "legende": "Three questions in the presidential campaign"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
