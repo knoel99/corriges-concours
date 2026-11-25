@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2006",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Le retour au plein-emploi est-il possible en France ?",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2006-annales-d1_1423060020336-pdf#page=13",
+    "sujet_sha256": "4b67e1f37e613e3ed5ac38bcebfbf0133e96e763f6d150b1663ac23df319af93",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Insee, note de conjoncture de mars 2006, pp. 95–96": "https://www.insee.fr/fr/statistiques/fichier/1407600/mars2006_f2.pdf",
+      "OIT, convention n° 122 de 1964, article 1": "https://www.ilo.org/fr/resource/c122-convention-sur-la-politique-de-lemploi-1964",
+      "Conseil européen de Lisbonne, mars 2000, § 30": "https://www.europarl.europa.eu/summits/lis1_fr.htm"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I",
+      "fichier": "figures/emploi-et-participation.svg",
+      "legende": "Deux chemins vers une baisse du taux de chômage, sur une population fictive de 120 personnes en âge de travailler."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "II",
+      "fichier": "figures/courbe-de-beveridge.svg",
+      "legende": "Taux de chômage et d’emplois vacants. Les positions schématisent une récession et une dégradation de l’appariement."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions de la composition. Données disponibles en mars 2006, distinction chômage, emploi et participation, seuil de croissance, diagnostics de demande et d’appariement, politiques françaises et coordination en zone euro.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de la composition. Données disponibles en mars 2006, distinction chômage, emploi et participation, seuil de croissance, diagnostics de demande et d’appariement, politiques françaises et coordination en zone euro."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
