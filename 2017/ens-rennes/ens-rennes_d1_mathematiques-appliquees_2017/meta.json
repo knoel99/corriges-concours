@@ -1,0 +1,44 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2017",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2017
+  },
+  "questions": 41,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-options-d1-2017_1513242503958-pdf#page=3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-math-d1-2017_1515597549976-pdf",
+    "sha256_sujet": "7f3b9a8bf8b00a1df9256dc59fcbe58bd0deb48bf5c57b9be5c5388fc0045734",
+    "sha256_rapport_jury": "60bf8df3a78b14b261ae4e8b59a4a1434ed32e31fddec1b925611b650a5473d8",
+    "sha256_apercu_sujet": "3451275d23ae79d16ab5e5b0ce61d9d272954e2d7386f26f41af8d0dc97ef405",
+    "sha256_apercu_rapport_jury": "091fd155e76033f093a39c50a0cd1374ebc2a3e6e89b0db351332382dedf1ff0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/indice-optique.svg",
+      "question": "1.A.1",
+      "legende": "Nuage des neuf observations et droite de régression. Un point d’indice et un rang d’année occupent la même longueur sur les axes."
+    },
+    {
+      "fichier": "figures/courbes-logarithme.svg",
+      "question": "3.III.1",
+      "legende": "Les courbes se touchent en (1,0), puis atteignent des maxima distincts. La tangente d’inflexion croise C1 en x = exp(3/2)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions après lecture du fascicule, pages physiques 3 à 10, et du rapport de jury. Calculs de statistique, deux conventions log-normales, distinction conditionnement et quantile, dérivées, tangentes et aires. Deux figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

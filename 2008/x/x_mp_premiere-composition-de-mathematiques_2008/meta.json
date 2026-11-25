@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2008
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2008.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2008_rapport_jury.pdf",
+    "sha256_sujet": "ed1a1c777596df616142c592d4e054d88e447241bb06a4bf52ba6ee3d7b8e27d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/zero-bord.svg",
+      "question": "12",
+      "legende": "Pour le potentiel nul, le premier zéro après l’origine arrive en x = 1 quand λ atteint π², puis se déplace vers la gauche. Le tracé est prolongé légèrement au-delà du bord pour visualiser ce passage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions sur les quatre pages du sujet et les trois pages du rapport officiel. Noyaux et facteurs intégrants, théorème de comparaison, perturbation des zéros simples, traversée du bord et énumération complète des valeurs propres. Figure de la traversée du premier zéro pour le potentiel nul.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

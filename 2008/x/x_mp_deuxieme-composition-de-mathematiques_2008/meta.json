@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2008
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2008.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2008_rapport_jury.pdf",
+    "sha256_sujet": "80be31dc6f9614ed2b293eb4e9667d1685c64cc393565a62aa2f1a86c5cf14ea"
+  },
+  "figures": [
+    {
+      "fichier": "figures/taille-image.svg",
+      "question": "3.a",
+      "legende": "Pour quatre éléments au départ et à l’arrivée, les 256 applications se répartissent par taille d’image en quatre classes de 4, 84, 144 et 24 applications."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir des quatre pages du sujet et du rapport. Partition suivant l’image et les fibres, coefficients explicites entre bases, produit et composition de séries en convergence absolue avec justification des doubles sommes. Figure du dénombrement par taille d’image.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

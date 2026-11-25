@@ -1,0 +1,58 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2013,
+    "duree_heures": 5
+  },
+  "questions": 44,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/si/sujet-polytechnique-ens-si-psi-2013.pdf",
+    "sujet_sha256": "33cde19171f03d20e4994da13869cfb206030380392613e14ba0d75796934d69",
+    "identification": "CX3614, banque commune École polytechnique – ENS de Cachan, PSI 2013. Dix-neuf pages numérotées puis DR1 et DR2 sur la vingtième page.",
+    "corrige_enseignant": "https://www.upsti.fr/fichiers/corrige/fichiers/f0267907-6cac-47d9-8a6f-07dbe35e4724/UPSTI-Corrige-XENS-PSI-2013-TourTerreur.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/fonctions-de-service.svg",
+      "question": "1",
+      "legende": "Deux fonctions concourent à la prestation, la création de la trajectoire et la maîtrise du freinage."
+    },
+    {
+      "fichier": "figures/semelle-et-forces.svg",
+      "question": "6",
+      "legende": "Vue en coupe d’une garniture. La pression est radiale et le frottement tangent. Seul le second a un moment autour de O."
+    },
+    {
+      "fichier": "figures/codeur-en-quadrature.svg",
+      "question": "18",
+      "legende": "Dans ce sens, le front montant de A précède celui de B d’un quart de période. Inverser la rotation inverse cet ordre."
+    },
+    {
+      "fichier": "figures/document-reponse-rigide.svg",
+      "question": "25",
+      "legende": "DR1 reconstitué. Le chemin supérieur ramène un effort en couple. Les deux retours inférieurs comparent la position et la force contre-électromotrice."
+    },
+    {
+      "fichier": "figures/document-reponse-elastique.svg",
+      "question": "34",
+      "legende": "Zone de DR2. La différence entre vitesse d’enroulement et vitesse de cabine fournit la dérivée de l’allongement."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 44 questions de CX3614 avec consultation du cahier original et de DR1/DR2. Contrôle numérique du moment, des inerties et de la quantification. Élimination symbolique du modèle élastique et contrôle de sa limite rigide. Lecture des courbes de sécurité et de Black, hypothèse symétrique et variante explicitées pour le support. Cinq figures originales, dont deux schémas-blocs."
+    }
+  ]
+}
