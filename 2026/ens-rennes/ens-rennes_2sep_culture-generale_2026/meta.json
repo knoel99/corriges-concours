@@ -38,7 +38,7 @@
     "apercu_rapport_sha256": "131718954ca23267f1025ec454caa08b631b8daf4e9edfb39209818bc41586d1",
     "verification_apercu": "Comparaison avec les pages rendues du PDF ENS Rennes. Les empreintes d’aperçu désignent les fichiers rendus par la visionneuse."
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -106,6 +106,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Comparaison des éditions au texte de Bertron et Vitores sur l’image de la page 2. Application de la règle internationale du basket en fauteuil à deux compositions de cinq joueurs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation au texte de Bertron et Vitores et au rapport de CGAPS. Exemple de la natation articulant accès à la pratique, chronométrage et possibilités ultérieures d’entraînement."
     }
   ]
 }

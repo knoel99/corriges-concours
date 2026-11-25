@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Cadre.** 4 heures, sans calculatrice ni appareil électronique. Deux exercices obligatoires, **notés à parité** et formant « un ensemble indissociable » : un résumé (partie A), puis une dissertation (partie B), à présenter dans cet ordre en écrivant une ligne sur deux. La présentation, l'orthographe et la netteté de l'expression entrent dans la note.
@@ -221,11 +223,13 @@ Surtout, cet ordre a un prix, que les deux romans font payer. Nemo refuse que Ne
 
 Reste la troisième proposition, et c'est elle que les œuvres valident, mais en la déplaçant. Canguilhem lui donne un fondement dans « La monstruosité et le monstrueux » : la monstruosité, non la mort, est la contre-valeur vitale, car elle révèle que la forme normale était une réussite et non une nécessité ; et si le fantastique est un monde, la vie, elle, est pauvre en monstres. « Machine et organisme » complète l'analyse : la machine exécute un plan qui lui vient du dehors, tandis que l'organisme, polyvalent, improvise et répare. Il n'y a donc de réussite et d'échec, de normal et de monstrueux, que pour le vivant. La formule de Feertchak ne décrit pas un fait de la nature : elle énonce une propriété du vivant comme tel, être de valeur qui ne peut être compté pour rien sans que l'on manque ce qu'il est.
 
-Haushofer en donne l'image la plus juste avec la corneille blanche. Rejetée par les siennes, sans fonction dans aucune économie naturelle, elle ne sert à rien ; la narratrice la nourrit pourtant chaque jour. L'oiseau n'est pas significatif en soi : l'attention le rend tel. De même, la fin du récit, où un inconnu tue à coups de hache le taureau puis Lynx avant d'être abattu par la narratrice, est insoutenable parce que ces vies-là n'étaient pas interchangeables ; c'est le lien tissé, non l'ordre du monde, qui interdit de les tenir pour rien. Le récit lui-même, écrit pour personne, est l'acte par lequel elle arrache à l'oubli ce que nul ne viendra compter.
+Haushofer en donne l'image la plus juste avec la corneille blanche. La narratrice observe qu’elle reste à l’écart des autres corneilles et lui laisse de la nourriture. Elle peut décrire cet isolement sans prétendre connaître la fonction de l’oiseau dans tout son milieu. L'oiseau n'est pas significatif en soi : l'attention le rend tel. De même, la fin du récit, où un inconnu tue à coups de hache le taureau puis Lynx avant d'être abattu par la narratrice, est insoutenable parce que ces vies-là n'étaient pas interchangeables ; c'est le lien tissé, non l'ordre du monde, qui interdit de les tenir pour rien. Le récit lui-même, écrit pour personne, est l'acte par lequel elle arrache à l'oubli ce que nul ne viendra compter.
 
 La corneille blanche permet de rendre toute sa rigueur au « rien de vivant n’est insignifiant » de Feertchak. Le plumage qui attire l’attention de la narratrice expose l’oiseau dans le groupe de ses semblables. Pour le lecteur, cette singularité donne au récit une figure de la solitude ; pour l’oiseau, elle affecte une possibilité de vivre avec les siens. Aucun point de vue unique ne transforme ces deux sens en harmonie. Il revient à la narratrice de reconnaître une vie qui compte aussi lorsqu’elle trouble l’ordre qu’on aurait voulu célébrer.
 
 ![La corneille blanche de Haushofer](figures/lecture-du-sujet.svg)
+
+Pour chaque proposition sur la corneille, indiquez qui peut l’établir. Une conduite observée par la narratrice, une hypothèse sur l’expérience de l’oiseau et un rapprochement formé par le lecteur demandent des justifications différentes.
 
 Verne opère le même déplacement. Quand Nemo affirme que la mer est l'immense désert où l'homme n'est jamais seul, car il sent frémir la vie à ses côtés, il ne constate pas une plénitude : il l'affirme contre l'apparence du désert, en homme qui a rompu avec la société. Les ruines de l'Atlantide, entrevues à la lueur d'un volcan sous-marin, montrent d'ailleurs que la nature recouvre les ordres humains sans les commenter, et le Maelström final, où le Nautilus disparaît aux yeux du narrateur, rappelle que l'ordre déborde toujours celui qui l'observe. Le dernier mot peut revenir à Canguilhem : la pensée du vivant doit tenir du vivant l'idée du vivant. Reconnaître qu'aucun vivant n'est insignifiant, ce n'est pas lire une harmonie dans les choses, c'est se savoir soi-même vivant parmi les vivants, ce que Feertchak appelle, à la fin de son texte, l'humilité.
 
