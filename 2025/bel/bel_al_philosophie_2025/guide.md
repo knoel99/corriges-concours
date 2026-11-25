@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’écrit de tronc commun dure six heures. Le domaine au programme est la morale. Les seuls mots sur lesquels composer sont « Tu dois », placés entre guillemets. Le rapport lyonnais traite cet écrit commun au début du fascicule, avant les épreuves de spécialité. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf) · [Rapport du jury 2025](https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf)
@@ -27,6 +29,8 @@ Une conjecture porte sur ce qu’on croit arrivé. Une condition de réussite re
 > Le jury relève deux confusions. Grammaticalement, « dois » est ici à l’indicatif présent. La portée d’une injonction dépend des circonstances et de la relation entre les personnes. Le rapport invite aussi à tirer une conséquence philosophique de la deuxième personne du singulier. [Sujet officiel](https://www.ens.psl.eu/sites/default/files/2025_al_tronc_commun_philosophie.pdf) · [Rapport du jury 2025](https://www.ens-lyon.fr/sites/default/files/2025-11/Philosophie%202025%20OK%20Lyon%20RELU.pdf)
 
 ![Trois énoncés devant le même registre](figures/attribuer-une-obligation.svg)
+
+Imaginer que la personne à qui l’on s’adresse découvre le faux sans avoir le droit de modifier le registre. L’obligation pourrait alors porter sur l’alerte à donner. L’adresse contribue à déterminer le contenu même du devoir.
 
 **Reformuler sans changer le fait.** Le registre doit être rectifié dans les trois cas. Dire « il faut » laisse l’auteur du geste ouvert, dire « tu dois » attribue une responsabilité et dire « je dois » la reprend en son nom. Vérifier qui a qualité pour attribuer cette responsabilité évite de prendre le simple fait d’interpeller pour une preuve de légitimité.
 

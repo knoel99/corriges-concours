@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Sujet (session 2025, épreuve écrite du tronc commun de la Banque d'épreuves littéraires — ENS Paris-Saclay, ENS de Lyon, ENS Paris ; durée 6 heures, coefficient 3) : « Alors que le récit véridique a toujours l'appui, la ressource d'une évidence extérieure, le roman doit suffire à susciter ce dont il nous entretient. C'est pourquoi il est le domaine phénoménologique par excellence, le lieu par excellence où étudier de quelle façon la réalité nous apparaît ou peut nous apparaître ; c'est pourquoi le roman est le laboratoire du récit. » (Michel Butor, « Le roman comme recherche », 1955, dans *Essais sur le roman*, Paris, Gallimard, coll. « Tel », 1992, p. 9.) Vous discuterez cette proposition, en vous appuyant plus particulièrement sur les œuvres au programme.
 
 **Problématique** : comment le roman peut-il expérimenter les manières dont la réalité nous apparaît, alors qu’il dépend lui-même de formes de témoignage et d’expériences partagées ?
@@ -27,6 +29,10 @@ Nous verrons d'abord que le roman est bien ce laboratoire où le réel ne se don
 ## I. Le roman, laboratoire où le réel apparaît et se réfléchit
 
 Dans les *Lettres portugaises*, la cinquième lettre annonce à l’officier que Mariane cessera de lui écrire. La preuve de la rupture pourrait être matérielle. Le portrait et les bracelets seront renvoyés, et Dona Brites veillera à l’expédition. Pourtant Mariane explique longuement au destinataire pourquoi elle ne mettra même pas son nom sur le paquet. Elle tient à ce qu’il mesure ce que lui coûte le geste. Cette page promise au silence fait encore une place à l’absent, puisqu’il importe toujours qu’il la lise. Où en est Mariane de son amour ? Le lecteur l’apprend dans l’écart entre ce que la lettre annonce et ce que son écriture accomplit. La succession des phrases fait éprouver une hésitation que le seul inventaire des objets renvoyés laisserait échapper.
+
+Le paquet pourrait être renvoyé sans commentaire. Le fait d’en annoncer le retour à l’officier ouvre au contraire une nouvelle durée dans la relation. Le lecteur éprouve cette durée en lisant les phrases nécessaires à l’annonce de la rupture. Le roman produit ainsi son évidence par la forme même de l’acte raconté.
+
+![Figure 1 — Dans la cinquième lettre, l’annonce de la rupture devient une nouvelle adresse](figures/lettre-et-rupture.svg)
 
 Chez Duras, Jacques Hold reconstruit la scène du bal de T. Beach auquel il n’a pas assisté. Il dépend du témoignage de Tatiana Karl et assume une part d’invention. Si l’on y cherchait la déposition d’un témoin unique, cette narration paraîtrait défectueuse. Mais ses hésitations déplacent la question. Que peut-on faire apparaître d’une expérience dont Lol ne fournit pas le récit complet ? Le lecteur suit ainsi la production d’une image du bal et peut distinguer ses sources sans prétendre accéder enfin à un événement délivré de toute médiation.
 

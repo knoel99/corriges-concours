@@ -10,6 +10,8 @@
 
 **Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 4)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Nature de l'épreuve.** Composition française, épreuve écrite du tronc commun de la Banque d'épreuves littéraires (BEL — ENS Paris-Saclay, ENS de Lyon, ENS Paris), session 2025. Durée 6 heures, coefficient 3, sans calculatrice. Une citation à discuter, sans document, en s'appuyant « plus particulièrement sur les œuvres au programme » (les *Lettres portugaises* de Guilleragues, *Paul et Virginie* de Bernardin de Saint-Pierre, *Madame Bovary* de Flaubert, *Le Ravissement de Lol V. Stein* de Duras). Le sujet ne fixe pas de longueur.
@@ -119,6 +121,8 @@ Les quatre œuvres du programme interviennent à des moments différents du rais
 ## Partie III — Rédiger la composition
 
 ![Figure 1 — Dans la cinquième lettre, l’annonce de la rupture devient une nouvelle adresse](figures/lettre-et-rupture.svg)
+
+Distinguer le trajet du paquet et celui de la lettre. Le premier dessaisit Mariane de certains objets. Le second fait encore de l’officier le destinataire d’une parole présente.
 
 ### Étape 6 — Rédiger l'introduction
 
