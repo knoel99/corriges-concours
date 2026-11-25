@@ -1,0 +1,54 @@
+{
+  "slug": "ens_mp-pc_russe-le2_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Russe (LE2)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Выбираем море — Les Russes choisissent la mer",
+  "questions": 3,
+  "redaction": "Version complète contrôlée sur la page cyrillique, deux réponses distinctes en russe, explication de la comparaison de prix et du régime du verbe préférer.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-le2.pdf#page=10",
+    "sha256_sujet": "abc85dfcdb7fda6150491a22303fe0eab40a3ce1dab5961ead0b135ae8653512",
+    "page": 10,
+    "etablissements": "ENS de Paris et de Cachan",
+    "indexes": [
+      "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+      "https://www.ens.psl.eu/en/node/825"
+    ],
+    "reference_du_texte": "Наталья Тимашова, «Новые Известия», 1 февраля 2010 г."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/cout-du-sejour.svg",
+      "legende": "Les postes de dépenses expliquent les choix de destinations décrits en 2009."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version complète contrôlée sur la page cyrillique, deux réponses distinctes en russe, explication de la comparaison de prix et du régime du verbe préférer."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.A",
+      "2.B"
+    ]
+  }
+}
