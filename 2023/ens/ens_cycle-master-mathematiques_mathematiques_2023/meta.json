@@ -1,0 +1,41 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques_2023",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques",
+    "annee": 2023
+  },
+  "questions": 65,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2023_sujet_%C3%A9crit_Maths_2A%20Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "c831e430c6ae465da3e8a0548c1078b3c47c6a6b48459273074ea7cd712b660d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reflexion-d-une-racine.svg",
+      "question": "Algèbre 15.c",
+      "legende": "Le facteur transformé a sa racine en 1 / conj(z), sur la même demi-droite que z. Une racine de module supérieur à 1 passe à l’intérieur du disque unité."
+    },
+    {
+      "fichier": "figures/moyenne-regularisee-hardy.svg",
+      "question": "Analyse 22.b",
+      "legende": "L’erreur atteint 1 à l’origine pour la fonction constante. Lorsque ε diminue, elle se concentre près de zéro et sa norme intégrale tend vers zéro."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les huit pages numérotées du fichier officiel de dix pages. Réduction modulo p avec traitement du premier 3 et contre-exemple au critère sans primitivité, mesure de Mahler et conjugaisons vérifiées, borne des coefficients et recherche des diviseurs ; compacité, résolvante, sous-espaces propres de Hardy et approximation en norme vers Lp. Figure calculée pour les moyennes régularisées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
