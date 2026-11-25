@@ -1,0 +1,83 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2015",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2015
+  },
+  "redaction": "Lecture du sujet et des trois annexes. Deux feuilles de recherche A3, deux planches finales au format raisin, plan au 1/40, inventaire et scénario de direct de cinq minutes pour une année sur Surtsey.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2015_Sujet_1A_Design_Espace.pdf",
+    "sujet_sha256": "977eadd4b597cb508300d5f94f8763917d4045ffed9d104c8bdc5190110de25f",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=283",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-explorer-le-site.svg",
+      "question": "Projet, planche 1",
+      "legende": "Recherche A3. Carte de principe et choix d’une emprise existante dans la fiction.",
+      "format_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-flux-et-parti.svg",
+      "question": "Projet, planche 2",
+      "legende": "Recherche A3. Trois pistes de conception comparées aux conditions islandaises.",
+      "format_mm": [
+        420,
+        297
+      ]
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-finale-raisin-scenario.svg",
+      "question": "Projet, planche 3",
+      "legende": "Finale 1 au format raisin. Vue du camp et conducteur minuté de la brève scientifique en direct.",
+      "format_mm": [
+        650,
+        500
+      ]
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-finale-raisin-technique.svg",
+      "question": "Projet, planche 4",
+      "legende": "Finale 2 au format raisin. Plan au 1/40, organisation des volumes et manifeste logistique.",
+      "format_mm": [
+        650,
+        500
+      ]
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et des trois annexes. Deux feuilles de recherche A3, deux planches finales au format raisin, plan au 1/40, inventaire et scénario de direct de cinq minutes pour une année sur Surtsey."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 2,
+    "parties": [
+      "Observer sans agrandir la trace",
+      "Comparer les abris et les flux",
+      "Quatre personnes, cinq minutes par jour",
+      "Préparer l’arrivée et le retrait"
+    ],
+    "formats_raisin_65x50_cm": 2
+  }
+}
