@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp-pc_italien_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Italien",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Daniele Del Giudice, Viaggio verso l’Antartide, et Catherine Bréchignac, Du bon usage du temps",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://www.alloschool.com/element/33548",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "8",
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=8",
+    "sujet_sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "sujet_complementaire": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2010-langues-vivantes.pdf#page=1",
+    "sujet_complementaire_sha256": "44be9353a9797be2ce331618ae2b484ddd60056a2b192059d7aa698def3e54eb",
+    "references_complementaires": [
+      "https://web.archive.org/web/20110519221507/http://www.admission.polytechnique.edu:80/accueil/concours-cycle-polytechnicien/sujets-rapports-et-statistiques/sujets-rapports-et-statistiques-5071.kjsp",
+      "https://www2.espci.fr/enseignement/brochure_concours_2010_polytechnique.pdf#page=20",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=6",
+      "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/anglais/x-ens-anglais-2010-sujet.pdf#page=9"
+    ],
+    "precision": "Les deux cahiers sont réunis dans le fac-similé, avec l’expression de Catherine Bréchignac aux pages 1 et 2 et la version de Daniele Del Giudice à la page 8 du PDF. La notice de l’ESPCI confirme le format de l’épreuve. Le rapport spécifique de l’écrit italien reste à retrouver."
+  },
+  "mots_expression": {
+    "1": 127,
+    "2": 192
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/rotte.svg",
+      "legende": "Le narrateur fait alterner les repères du vol et les blancs des cartes anciennes."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/durata.svg",
+      "legende": "Le flux d’informations ne laisse pas toujours le temps d’en juger."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/acqua.svg",
+      "legende": "La réponse distingue incertitude mesurable et décisions politiques."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Daniele Del Giudice, Viaggio verso l’Antartide, et Catherine Bréchignac, Du bon usage du temps.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
