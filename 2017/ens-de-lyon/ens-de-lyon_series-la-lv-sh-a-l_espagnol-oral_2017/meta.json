@@ -338,6 +338,16 @@
         "billet_presse": 51,
         "titre": "¿Tiene sentido el olvido histórico? “Las víctimas de ETA no pueden ser los únicos árbitros",
         "statut": "Notice du fascicule officiel ; découpage non conservé."
+      },
+      {
+        "billet_presse": 39,
+        "statut": "Texte publié de José Antonio Román, La Jornada, 29 mai 2017, p. 3",
+        "url": "https://web.jornada.com.mx/2017/05/29/politica/003n1pol"
+      },
+      {
+        "billet_presse": 41,
+        "statut": "Texte publié de Diana Rincón Henao, El Tiempo, mis à jour le 4 mai 2017",
+        "url": "https://www.eltiempo.com/mundo/latinoamerica/ni-una-menos-marcha-en-latinoamerica-50943"
       }
     ],
     "cahier_hors_programme": {
@@ -345,7 +355,105 @@
       "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf",
       "sha256": "edaff2b3ee0e8fe85024c6b15f64274a42ef1f5bcecf0e25b8df956aa28cb3d8",
       "pages": 49
-    }
+    },
+    "feuillets_lv2_bornes": [
+      {
+        "billet_presse": 33,
+        "page_pdf": 21,
+        "debut": "La Real Academia ha anunciado",
+        "fin": "sobre la palabra débil",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=21"
+      },
+      {
+        "billet_presse": 32,
+        "page_pdf": 22,
+        "debut": "Hace un par de años",
+        "fin": "según un sondeo reciente",
+        "ellipse_finale": false,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=22"
+      },
+      {
+        "billet_presse": 30,
+        "page_pdf": 23,
+        "debut": "Cada vez que se comete",
+        "fin": "calla o muere",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=23"
+      },
+      {
+        "billet_presse": 24,
+        "page_pdf": 24,
+        "debut": "Muchos catalanes viven su cotidianidad",
+        "fin": "es alcaldesa de Barcelona",
+        "ellipse_finale": false,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=24"
+      },
+      {
+        "billet_presse": 29,
+        "page_pdf": 25,
+        "debut": "Han pasado 41 años",
+        "fin": "en toda Argentina",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=25"
+      },
+      {
+        "billet_presse": 27,
+        "page_pdf": 26,
+        "debut": "El gobierno municipal de Ahora Madrid",
+        "fin": "calles de referencias franquistas",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=26"
+      },
+      {
+        "billet_presse": 28,
+        "page_pdf": 27,
+        "debut": "España cae a su peor",
+        "fin": "de todos los partidos políticos",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=27"
+      },
+      {
+        "billet_presse": 21,
+        "page_pdf": 28,
+        "debut": "Estoy feliz. ¡Feliz!",
+        "fin": "viajes de vuelta",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=28"
+      },
+      {
+        "billet_presse": 22,
+        "page_pdf": 29,
+        "debut": "Por primera vez, el pleno",
+        "fin": "de la ley», asegura",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=29"
+      },
+      {
+        "billet_presse": 36,
+        "page_pdf": 30,
+        "debut": "España se sobresaltó hace tres años",
+        "fin": "más que lo imprescindible",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=30"
+      },
+      {
+        "billet_presse": 40,
+        "page_pdf": 31,
+        "debut": "Le vi morir delante de mis ojos",
+        "fin": "causas evitables de muertes",
+        "ellipse_finale": true,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=31"
+      },
+      {
+        "billet_presse": 37,
+        "page_pdf": 32,
+        "debut": "Decenas de miles de estudiantes",
+        "fin": "al Palacio de La Moneda",
+        "ellipse_finale": false,
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=32"
+      }
+    ]
   },
   "figures": [
     {
@@ -391,12 +499,29 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Contrôle des cinq rubriques orales du rapport espagnol, des bornes dans les éditions des trois auteurs et des pièges signalés par le jury, notamment le boléro de Farrés et la narration collective. Recoupement individuel des attributions et rectifications signalées sur les articles. Rapprochement individuel de la liste avec les 49 pages du cahier complémentaire, contrôle des 41 coupures présentes et identification des 10 absences."
+    },
+    {
+      "phase": "revision",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation des douze feuillets LV2 avec leurs bornes imprimées, lecture de leurs exemples et de leurs changements de voix, identification des articles publiés des billets 39 et 41. Les dix découpages absents restent signalés.",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "tour": 2
     }
   ],
   "couverture": {
     "statut": "partiel",
     "perimetre": "Soixante-quatre billets figurent dans le corrigé. Treize extraits littéraires sont bornés. Le cahier complémentaire officiel de 49 pages reproduit 41 des 51 textes de presse : 7 en lettres et arts, 13 en LV1, 12 en LV2, 9 en sciences humaines. Pour les dix autres notices de LV2, le découpage exact demeure inconnu.",
-    "limites": "Dix coupes LV2 absentes du cahier complémentaire malgré leur présence dans la liste du concours : 23, 25, 26, 31, 34, 35, 38, 39, 41, 42, suivant la numérotation continue des articles dans les corrigés. Les autres supports ont été confrontés aux feuillets ; dates et titres divergents sont expliqués.",
+    "limites": "Dix coupes LV2 absentes du cahier complémentaire malgré leur présence dans la liste du concours : 23, 25, 26, 31, 34, 35, 38, 39, 41, 42, suivant la numérotation continue des articles dans les corrigés. Les autres supports ont été confrontés aux feuillets ; dates et titres divergents sont expliqués. Les articles de presse publiés sont désormais identifiés pour 39 et 41.",
     "billets_recenses": 64
   }
 }

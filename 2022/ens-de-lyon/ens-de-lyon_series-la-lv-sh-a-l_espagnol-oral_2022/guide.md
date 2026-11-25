@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Soixante-deux billets sont traités dans l’ordre du fascicule. Les dix passages de Storni, García Lorca et Diego de San Pedro sont repérés dans des éditions consultables. Les cinquante-deux notices de presse comprennent l’article sur le sommet des Amériques inscrit dans deux séries. Les coupes de presse ne sont pas reproduites dans les archives de cette session.
 
 ## Letras y artes · Doce análisis de prensa
@@ -398,6 +400,11 @@ _Elmundo.es · 26/06/2022 (fascículo)._
 
 La manifestación madrileña se produjo tras la decisión de la Corte Suprema estadounidense que anuló el precedente federal de *Roe v. Wade*. Los participantes la celebran y la incorporan a su propia movilización. Ello revela una circulación transnacional de argumentos sin que una sentencia estadounidense cambie por sí sola el derecho español. La atribución de la cifra de asistentes y de las expresiones de los convocantes forma parte del análisis de una crónica. [Cobertura de la manifestación](https://www.youtube.com/watch)
 
+**Documento del medio.** El vídeo que publicó El Mundo el 26 de junio de 2022 vincula en su propio título dos acciones: marchar en Madrid y celebrar una resolución de Estados Unidos. Una acontece en la calle, la otra expresa una interpretación política. El artículo «el» antes de «aborto» aparece en el título difundido por el medio. El vídeo permite comprobar la fecha y el encuadre de la noticia. La prueba de Lyon se basaba en un texto de prensa cuyas palabras iniciales y finales siguen sin conocerse. [Vídeo de El Mundo](https://www.youtube.com/watch?v=39BnY8eXP0U)
+
+> [!INDICATION]
+> Distinguir la actividad filmada, el encuadre del título y el soporte escrito del examen. Filmar una manifestación no acredita por sí solo el número de participantes.
+
 **Intercambio.** ¿Qué relación puede afirmarse? Influencia política o simbólica, fundada en la reacción de los manifestantes. El efecto jurídico inmediato corresponde a otra jurisdicción.
 
 ### 40. Colegios de Cataluña que espían los hábitos lingüísticos de sus alumnos los clasifican entre “catalanes” y “españoles
@@ -429,6 +436,11 @@ Libertad Digital cita un conjunto de adjetivos sobre la escuela catalana y los s
 _ABC.es · 30/05/2022 (fascículo)._
 
 En el aniversario de la adhesión a la OTAN, Felipe VI enlaza la integración internacional de España con una valoración elogiosa de la Transición. El discurso conmemorativo selecciona un pasado capaz de sostener una comunidad política presente. La adhesión de 1982 y el referéndum de permanencia de 1986 son acontecimientos diferentes. Recordar el debate y la oposición de la época permite analizar lo que el ceremonial integra o deja en segundo plano. [Intervención de Felipe VI en el archivo de la Casa Real](https://www.casareal.es/ES/ArchivoMultimedia/Paginas/archivo-multimedia_archivos-videos-detalle.aspx)
+
+**Palabras documentadas.** Felipe VI abre la conmemoración presentando la adhesión como un paso histórico posterior a la Transición. El posesivo de la fórmula «nuestra ejemplar Transición» invita al auditorio a compartir una valoración. Poco después, la referencia a la invasión rusa de Ucrania desplaza la mirada de 1982 al peligro de 2022. Así se justifica en el presente la utilidad de la alianza que se conmemora. El titular de ABC aísla la valoración de la Transición de ese discurso más amplio. La transcripción y el vídeo oficiales permiten restituir la voz del rey; las palabras elegidas por el periódico para el resto del artículo de examen siguen sin determinarse. [Discurso pronunciado en Madrid](https://www.casareal.es/ES/Actividades/Paginas/actividades_discursos_detalle.aspx?data=6417) · [Grabación de la Casa Real](https://www.casareal.es/ES/ArchivoMultimedia/Paginas/archivo-multimedia_archivos-videos-detalle.aspx?data=4373)
+
+> [!INDICATION]
+> Distinguir el título del artículo, las palabras del monarca y la interpretación que se propone de la función del aniversario.
 
 **Intercambio.** ¿Qué función tiene el posesivo «nuestra»? Invita al público a compartir una memoria nacional y distribuye el mérito en un nosotros amplio.
 

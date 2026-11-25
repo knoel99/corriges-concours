@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Soixante-quatre billets figurent dans le corrigé. Treize extraits littéraires sont bornés. Le cahier complémentaire officiel de 49 pages reproduit 41 des 51 textes de presse : 7 en lettres et arts, 13 en LV1, 12 en LV2, 9 en sciences humaines. Pour les dix autres notices de LV2, le découpage exact demeure inconnu.
 
 ## Letras y artes · Siete análisis de prensa
@@ -314,6 +316,11 @@ _El País · 21/05/2017._
 
 **En el texto distribuido.** La escena de regreso en Valladolid abre el reportaje con la voz de una persona. Las cifras de viajes de vuelta y los períodos que cubren aparecen después. El tránsito de una escala a otra es parte de la explicación: una emoción ilustra una decisión y una serie estadística pone a prueba una tendencia. [Fascicule des extraits, p. 28](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=28)
 
+**Una precisión del recorte.** Valladolid ofrece ayudas en tres momentos distintos: en la contratación del retornado, al emprender y al instalarse. El cierre distingue los 52.109 retornos de todo 2015 de los casi 28.000 viajes del primer semestre de 2016. Comparar esas dos cifras como si cubrieran años completos invertiría el sentido de la cautela estadística.
+
+> [!INDICATION]
+> La página 28 va desde «Estoy feliz. ¡Feliz!» hasta «viajes de vuelta». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
+
 **Intercambio.** ¿A quién deja fuera la palabra «talento»? Su uso suele privilegiar profesiones muy cualificadas y hace menos visibles otros trabajadores que también emigraron.
 
 ### 22. El Congreso aprueba sacar los restos de Franco del Valle de los Caídos
@@ -323,6 +330,11 @@ _El País · 12/05/2017._
 En mayo de 2017 el Congreso insta al Gobierno a sacar los restos de Franco del Valle de los Caídos. La noticia trata de una decisión parlamentaria cuyo cumplimiento exige trámites y actuaciones posteriores. El emplazamiento de honor de un dictador en un monumento público compromete la manera en que el Estado representa el pasado. Interesa distinguir la situación de Franco de la de las numerosas personas enterradas allí, algunas sin conocimiento de sus familias. [Publicación del medio](https://elpais.com/politica/2017/05/11/actualidad/1494486625_806861.html)
 
 **En el texto distribuido.** La pieza incorpora la discusión sobre la suspensión de hecho de la Ley de Memoria en años de crisis. Es posible contrastar el voto del pleno con el problema material que señala el cierre: sin recursos y actos administrativos una decisión no produce automáticamente su efecto. [Fascicule des extraits, p. 29](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=29)
+
+**Una precisión del recorte.** De las 140 abstenciones no se desprende una oposición homogénea. Los diputados de ERC querían un texto más ambicioso, mientras que el PP había rechazado la iniciativa. El voto formal y la preferencia política no se corresponden necesariamente; la petición socialista de recursos para localizar fosas explica el giro presupuestario del final.
+
+> [!INDICATION]
+> La página 29 va desde «Por primera vez, el pleno» hasta «de la ley», asegura». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
 
 **Intercambio.** ¿Puede decirse que se produjo la exhumación ese día? El voto expresa una voluntad política. La ejecución material pertenece a un momento posterior.
 
@@ -343,6 +355,11 @@ _El País · 02/06/2017._
 Un reportaje en Berga pregunta cómo se vive dentro del Estado español con un horizonte informativo marcadamente catalán. La prensa comarcal y los símbolos del ayuntamiento permiten observar esa experiencia en lo cotidiano. A la vez, el entrevistado que ve programas de La 2 o Eurovisión desmiente un aislamiento absoluto. La aparente paradoja del titular invita a distinguir pertenencia jurídica, identidad política y hábitos culturales. [Publicación del medio](https://elpais.com/ccaa/2017/06/02/catalunya/1496429632_283792.html)
 
 **En el texto distribuido.** El último testimonio de Jordi compara su escaso interés por la secretaría general del PSOE con el que le merece la alcaldía de Barcelona. Es una diferencia de proximidad política y no una separación completa entre dos universos mediáticos. [Fascicule des extraits, p. 24](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=24)
+
+**Una precisión del recorte.** Berga no representa por sí sola la diversidad de Cataluña. Incluso allí el reportero recoge la voz de Abel y de su hijo Eudald, escépticos ante la independencia, que describen una vida cotidiana poco conectada con el resto de España. El contraste con Jordi permite separar el entorno en que uno vive del proyecto político que uno defiende.
+
+> [!INDICATION]
+> La página 24 va desde «Muchos catalanes viven su cotidianidad» hasta «es alcaldesa de Barcelona». No hay puntos suspensivos después de estas palabras. La presencia de cortes interiores se comprueba en el propio impreso.
 
 **Intercambio.** ¿Representa Berga a toda Cataluña? La localidad ofrece un caso elegido por su interés periodístico. Haría falta otro tipo de muestra para generalizar.
 
@@ -374,6 +391,11 @@ El texto de El País identifica a Manuela Carmena y al Ayuntamiento de Madrid. E
 
 **En el texto distribuido.** La página confirma el apellido de la alcaldesa y distingue el programa de 50 placas de otra medida municipal sobre el nombre de 52 calles. Las dos cifras no cuentan la misma actuación. Dar nombre a una víctima y retirar una referencia anterior son intervenciones diferentes en el espacio urbano. [Fascicule des extraits, p. 26](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=26)
 
+**Una precisión del recorte.** Las placas remiten a trayectorias concretas. El texto cuenta que Marcos Ana pasó veintidós años preso y que Julián Besteiro murió en la cárcel de Carmona, en Sevilla. Ese topónimo aparece dentro de una biografía; no designa a quien impulsa la medida desde el Ayuntamiento de Madrid.
+
+> [!INDICATION]
+> La página 26 va desde «El gobierno municipal de Ahora Madrid» hasta «calles de referencias franquistas». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
+
 **Intercambio.** ¿Qué alcance tiene el futuro «colocará»? Describe un compromiso anunciado. Para documentar cada instalación harían falta fechas y emplazamientos efectivos.
 
 ![Figure 1 — Trois annonces de 2017 et leurs effets juridiques ou matériels.](figures/memoria-y-decision.svg)
@@ -389,6 +411,11 @@ La posición 41 entre 176 países corresponde al índice de percepción de la co
 
 **En el texto distribuido.** El artículo termina en la coyuntura de un gobierno en minoría. La apelación a que intervengan varios partidos convierte una comparación internacional en una demanda de acción política española. Así se reconoce cuándo informa el índice y cuándo hablan quienes lo comentan. [Fascicule des extraits, p. 27](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=27)
 
+**Una precisión del recorte.** La nota española se mantiene en 58 puntos, la misma que en 2015, aunque cambia su posición relativa. La petición de proteger a los denunciantes enlaza ese resultado con un mecanismo preciso: sin protección pueden quedar ocultos casos que el público no tendrá cómo valorar. Las siete encuestas del índice no son siete procesos judiciales.
+
+> [!INDICATION]
+> La página 27 va desde «España cae a su peor» hasta «de todos los partidos políticos». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
+
 **Intercambio.** ¿Podría aumentar la percepción al mejorar la investigación? Sí. La revelación pública de casos antes ocultos puede empeorar la percepción aun cuando crezca la capacidad de fiscalización.
 
 ### 29. Miles de argentinos reivindican la cifra oficial de desaparecidos: “Fueron 30.000
@@ -399,6 +426,11 @@ En la manifestación del 24 de marzo el lema «Fueron 30.000» defiende la memor
 
 **En el texto distribuido.** La discusión sobre mantener el 24 de marzo como festivo cierra el reportaje. La memoria de los desaparecidos se hace visible tanto en la manifestación como en una controversia concreta sobre el calendario laboral que afectó a toda la población. [Fascicule des extraits, p. 25](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=25)
 
+**Una precisión del recorte.** El relato atiende a los jóvenes que no vivieron la dictadura y participan en la marcha. La memoria adquiere aquí una dimensión generacional. Los cánticos favorables al regreso de Cristina Fernández de Kirchner muestran, además, que el acto incluye posiciones sobre el presente. La crónica evita atribuirlas a todos los asistentes.
+
+> [!INDICATION]
+> La página 25 va desde «Han pasado 41 años» hasta «en toda Argentina». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
+
 **Intercambio.** ¿Por qué el título cita voces de manifestantes? Sitúa una reivindicación pública y convierte la memoria de los desaparecidos en un asunto político presente.
 
 ### 30. España, país de la UE más castigado por el terrorismo
@@ -408,6 +440,11 @@ _El País · 07/05/2017._
 El titular sobre España como país de la UE más castigado por el terrorismo expresa el resultado de un recuento concreto. Antes de compararlo conviene identificar el período, la unidad contada y el tratamiento de atentados cometidos fuera del territorio. Las trayectorias de ETA y del terrorismo yihadista forman parte de la experiencia española sin confundirse por sus objetivos, cronología ni formas de actuación. [Publicación del medio](https://elpais.com/politica/2017/05/05/actualidad/1494008754_643831.html)
 
 **En el texto distribuido.** La base de datos presentada por Maite Pagazaurtundúa recoge información individual sobre víctimas y atentados y se ofrece a la Comisión Europea para que la compruebe y complete. Esa precisión documental pone límites al superlativo del titular y explica el proyecto de investigación. [Fascicule des extraits, p. 23](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=23)
+
+**Una precisión del recorte.** La base distingue a quienes murieron en la Unión Europea de los europeos asesinados fuera de ella. Cambiar sin aviso de territorio a nacionalidad produciría dos recuentos incomparables. Cuando la eurodiputada aproxima ideologías distintas por su carácter totalitario, formula una interpretación propia después de la exposición de los datos.
+
+> [!INDICATION]
+> La página 23 va desde «Cada vez que se comete» hasta «calla o muere». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
 
 **Intercambio.** ¿Qué error produciría medir el peligro actual solo con un total histórico? El acumulado combina etapas muy distintas y no describe por sí solo el riesgo en 2017.
 
@@ -429,6 +466,11 @@ Las marchas de septiembre de 2016 en México se opusieron al reconocimiento del 
 
 **En el texto distribuido.** El artículo confronta un discurso sobre la familia promovido desde sectores conservadores con la jurisprudencia mexicana sobre matrimonio y un sondeo de opinión. Medir desacuerdo social no determina por sí mismo la constitucionalidad de una restricción. [Fascicule des extraits, p. 22](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=22)
 
+**Una precisión del recorte.** Dos cifras del cierre contestan a preguntas distintas. Alrededor del 40 % de los hogares corresponde al modelo familiar que enarbolan los manifestantes, mientras que el 53 % de las personas encuestadas rechaza el matrimonio igualitario. Una distribución de hogares no puede leerse como una votación sobre los derechos que debe garantizar el Estado.
+
+> [!INDICATION]
+> La página 22 va desde «Hace un par de años» hasta «según un sondeo reciente». No hay puntos suspensivos después de estas palabras. La presencia de cortes interiores se comprueba en el propio impreso.
+
 **Intercambio.** ¿Qué diferencia hay entre libertad religiosa y definición civil del matrimonio? Una confesión regula sus ritos. El Estado debe justificar las condiciones que reconoce a sus ciudadanos.
 
 ### 33. La RAE revisará la definición de “sexo débil
@@ -438,6 +480,11 @@ _El País · 03/03/2016._
 La polémica sobre «sexo débil» distingue el registro lexicográfico de una locución de la aceptación del prejuicio que contiene. Una marca de uso permite documentar la expresión y advertir su intención despectiva. La noticia informa de una revisión prevista. La ficha del concurso dice 2016, pero la reproducción atribuida a Manuel Morales en Fundéu sitúa el texto en marzo de 2017. La discrepancia debe conservarse. [Artículo de Manuel Morales](https://elpais.com/cultura/2017/03/03/actualidad/1488539517_507823.html)
 
 **En el texto distribuido.** La fecha al pie del texto es inequívoca: 3 de marzo de 2017, frente a 2016 en la lista. Soledad Puértolas introduce además la cuestión del propio adjetivo «débil». Su intervención amplía al término definidor una controversia que parecía limitarse a la locución. [Fascicule des extraits, p. 21](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=21)
+
+**Una precisión del recorte.** La petición de Sara Flores coincide con el anuncio público, pero la Academia sitúa en 2015 la decisión de incorporar marcas de uso. Coincidencia y causalidad quedan así separadas. La diferencia entre las marcas previstas para las dos expresiones —desprecio en un caso, ironía en el otro— explica por qué la discusión final sobre la debilidad va más allá de una simple sustitución de palabras.
+
+> [!INDICATION]
+> La página 21 va desde «La Real Academia ha anunciado» hasta «sobre la palabra débil». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
 
 **Intercambio.** ¿Bastaría con borrar la entrada? La desaparición del diccionario no elimina una locución. Una descripción histórica y pragmática puede ayudar al lector a entender qué hace cuando la usa.
 
@@ -469,6 +516,11 @@ El título contrasta el carisma atribuido a Juan Carlos I con la prudencia asoci
 
 **En el texto distribuido.** El artículo parte del sobresalto de la abdicación y cierra valorando la discreción y madurez de Felipe VI. «Carisma» y «prudencia» ordenan así una comparación favorable, no una medición neutra de rasgos personales. El tono del último período permite demostrarlo. [Fascicule des extraits, p. 30](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=30)
 
+**Una precisión del recorte.** Una fotografía en la Escuela Naval de Marín permite reunir a padre e hijo en el presente del artículo. Tres años después de la abdicación, el gesto de Felipe hacia Juan Carlos da a ver continuidad familiar. El articulista lo convierte en un juicio favorable sobre una nueva manera de ejercer la jefatura del Estado.
+
+> [!INDICATION]
+> La página 30 va desde «España se sobresaltó hace tres años» hasta «más que lo imprescindible». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
+
 **Intercambio.** ¿Puede un cambio de estilo transformar por sí solo la institución? Puede modificar la confianza pública, pero las competencias y la sucesión dependen de reglas constitucionales.
 
 ### 37. Jóvenes chilenos vuelven a las calles para exigir educación gratuita y de calidad
@@ -478,6 +530,11 @@ _La Jornada («La Jordana» en el fascículo) · 12/04/2017._
 La Jornada informa sobre jóvenes chilenos que vuelven a manifestarse. «Vuelven» condensa una secuencia larga de movilizaciones y permite discutir la diferencia entre anuncio gubernamental y reforma valorada por los estudiantes. Educación gratuita y de calidad exige definir financiación, acceso y controles sobre centros diversos. Al atribuir opiniones a dirigentes estudiantiles, la crónica vuelve visibles interlocutores concretos de una negociación. [Publicación del medio](https://www.jornada.com.mx/2017/04/12/mundo/024n1mun)
 
 **En el texto distribuido.** La crónica publicada en México cuenta una marcha de Santiago de Chile e introduce las opiniones de dirigentes estudiantiles y de Sebastián Piñera. Las opciones de financiar una plaza con un préstamo, una beca o mediante gratuidad universal distribuyen de manera diferente el riesgo económico. [Fascicule des extraits, p. 32](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=32)
+
+**Una precisión del recorte.** La Confech calcula 90.000 asistentes y la policía, 35.000. Atribuir las dos cifras mantiene a la vista a los actores que compiten por interpretar la movilización. El cierre electoral contrapone la gratuidad universal a la preferencia de Piñera por becas y créditos, condicionada a su regreso al poder.
+
+> [!INDICATION]
+> La página 32 va desde «Decenas de miles de estudiantes» hasta «al Palacio de La Moneda». No hay puntos suspensivos después de estas palabras. La presencia de cortes interiores se comprueba en el propio impreso.
 
 **Intercambio.** ¿Qué cambia respecto del otro billet sobre Chile? Aquí se puede examinar el verbo que enlaza la nueva marcha con protestas anteriores y la voz identificable de los estudiantes organizados.
 
@@ -495,9 +552,14 @@ _La lista oficial identifica este artículo. El cuaderno complementario de LV2 n
 
 _La Jornada («La Jordana» en el fascículo) · 29/05/2017._
 
-El defensor de derechos presenta a México como «primera contención» de migrantes centroamericanos antes de la frontera estadounidense. La expresión desplaza el mapa habitual del control migratorio y llama la atención sobre detenciones, expulsiones y obligaciones de protección dentro de México. El interés del término «ombudsman» es su función: proporciona una evaluación institucional sobre derechos, no dirige por sí mismo los puestos fronterizos. [Contexto previo de La Jornada](https://www.jornada.com.mx/2016/09/21/politica/004n1pol)
+Los responsables centroamericanos de derechos humanos presentan a México como «primera contención» de migrantes centroamericanos antes de la frontera estadounidense. La expresión desplaza el mapa habitual del control migratorio y llama la atención sobre detenciones, expulsiones y obligaciones de protección dentro de México. El interés del término «ombudsman» es su función: proporciona una evaluación institucional sobre derechos, no dirige por sí mismo los puestos fronterizos. [Contexto previo de La Jornada](https://www.jornada.com.mx/2016/09/21/politica/004n1pol)
 
 _La lista oficial identifica este artículo. El cuaderno complementario de LV2 no incluye su recorte._
+
+**En el artículo publicado.** José Antonio Román recoge en Ciudad de México las intervenciones de responsables de derechos humanos de Honduras, Guatemala y El Salvador. Para los cuatro primeros meses de 2017, el comisionado hondureño compara unos nueve mil retornados desde México con unos ocho mil desde Estados Unidos. La frontera relevante para el recuento cambia, aunque el proyecto de muchos migrantes sea llegar al norte. Los interlocutores reconocen a los Estados la facultad de controlar sus fronteras y piden a México que aclare y amplíe las vías de refugio y regularización. La cifra hondureña no puede generalizarse a todo el Triángulo Norte. [Artículo de La Jornada, 29 de mayo, p. 3](https://web.jornada.com.mx/2017/05/29/politica/003n1pol)
+
+> [!INDICATION]
+> Distinguir país de origen y autoridad que devuelve. El total de retornos de nacionales hondureños sólo describe una parte de la región.
 
 **Intercambio.** ¿Por qué importa indicar la dirección del viaje? Permite distinguir la condición de los mexicanos que emigran de la de quienes piden protección o transitan por territorio mexicano.
 
@@ -509,6 +571,11 @@ Público abre su reportaje fronterizo con testimonios de víctimas. Llamar «gue
 
 **En el texto distribuido.** El relato abre con la voz de un testigo del bloqueo de una embarcación y cierra con la atribución a una ONG de una denuncia sobre las devoluciones en el mar. Los cambios de voz señalan cuándo estamos ante una experiencia individual y cuándo se formula una acusación general sobre prácticas fronterizas. [Fascicule des extraits, p. 31](https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf#page=31)
 
+**Una precisión del recorte.** Sylla es la voz individual de la apertura. Caminando Fronteras amplía la escala al documentar muertes y desapariciones entre septiembre de 2015 y diciembre de 2016. Su portavoz, Helena Maleno, relaciona el balance con fallos en la coordinación de los rescates. En el comentario deben conservarse esas atribuciones cuando se pasa del caso narrado a la responsabilidad institucional.
+
+> [!INDICATION]
+> La página 31 va desde «Le vi morir delante de mis ojos» hasta «causas evitables de muertes». El impreso termina con puntos suspensivos: no se puede atribuir al autor un cierre definitivo.
+
 **Intercambio.** ¿Qué efecto tienen las comillas del título? Señalan un modo de interpretar la frontera y convierten esa interpretación en materia de debate.
 
 ### 41. Ni una menos': el grito de las mujeres latinoamericanas
@@ -518,6 +585,11 @@ _El Tiempo · 04/05/2017._
 «Ni una menos» transforma experiencias individuales de violencia machista en una reivindicación colectiva. La consigna nació de una movilización argentina y circuló por América Latina. Su fuerza está en la negación de la pérdida como hecho inevitable y en la primera persona implícita de una comunidad que se organiza. Como las instituciones varían entre países, pueden compartir una consigna sin compartir las mismas demandas legales inmediatas. [Reportaje anterior sobre la misma movilización](https://www.vice.com/es/article/ni-una-menos-el-grito-de-las-latinoamericanas-contra-la-violencia-machista/)
 
 _La lista oficial identifica este artículo. El cuaderno complementario de LV2 no incluye su recorte._
+
+**En el artículo publicado.** Diana Rincón Henao parte de la movilización argentina tras la muerte de Lucía Pérez y amplía la investigación a las leyes, las estadísticas y las respuestas públicas de varios países. El paro de una hora en Argentina convierte el duelo en acción colectiva. El caso colombiano de la Ley Rosa Elvira Cely permite examinar el papel de las organizaciones de mujeres en la tipificación del feminicidio. Cuando los países registran los hechos de manera distinta, comparar cifras exige explicar de antemano las categorías utilizadas. El periódico fecha la primera publicación el 22 de octubre de 2016 y la actualización el 4 de mayo de 2017, día que figura en el fascículo. [Artículo de El Tiempo](https://www.eltiempo.com/mundo/latinoamerica/ni-una-menos-marcha-en-latinoamerica-50943)
+
+> [!INDICATION]
+> Atribuir los datos a la fuente que la periodista identifica. La fecha de actualización explica por qué un artículo sobre las movilizaciones de 2016 figura en la lista de mayo de 2017.
 
 **Intercambio.** ¿Qué ejemplo concreta una demanda? Un acceso efectivo a protección y justicia permite pasar del rechazo general de la violencia a una responsabilidad institucional verificable.
 
