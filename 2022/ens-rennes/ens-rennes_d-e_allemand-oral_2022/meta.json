@@ -1,0 +1,124 @@
+{
+  "slug": "ens-rennes_d-e_allemand-oral_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Épreuve orale d’allemand",
+  "questions": 3,
+  "redaction": "Lecture des trois articles originaux identifiés par titre, date et signature. Trois exposés en allemand, six réponses d’entretien et deux figures. Les coupes, adaptations et éventuelles consignes propres aux billets de concours restent indéterminées.",
+  "sources": {
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-lve-allemand-oral-d-e-2022_1668097981733-pdf",
+    "rapport_sha256": "1141778e6b56d81b8e5ee84773d6886922f0fe628e8207e157db4fe5565fcbf6",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-lve-allemand-oral-d-e-2022_1668097981733-pdf#page=4",
+    "references_complementaires": {
+      "Original 1 · Deutsche Welle": "https://www.dw.com/de/meinung-deutschlands-klare-kante-gegen-putins-russland/a-60934448",
+      "Original 2 · Der Spiegel": "https://www.spiegel.de/politik/deutschland/jugend-und-politik-zukunftsaengste-und-demokratie-verdrossenheit-vodafone-studie-a-cf38ae4d-c338-4ee6-b7a5-cea5e33eebd2",
+      "Original 3 · Der Spiegel": "https://www.spiegel.de/panorama/bildung/bildungsministerin-bettina-stark-watzinger-will-ukrainische-kinder-in-deutsches-schulsystem-integrieren-a-296601a0-dfe6-45a5-9199-652e45e6cf73",
+      "Déclaration de Scholz au Bundestag": "https://www.bundesregierung.de/breg-de/suche/regierungserklaerung-von-bundeskanzler-olaf-scholz-2008606",
+      "Étude Hört uns zu!": "https://www.vodafone-stiftung.de/wp-content/uploads/2022/04/Jugendstudie-2022_Vodafone-Stiftung.pdf"
+    },
+    "precision_sujet": "Le champ sujet pointe vers les titres à la page 4 du rapport. Aucun fascicule distribué n'a été retrouvé."
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "intitule": "Meinung: Deutschlands klare Kante gegen Putins Russland",
+      "pages": [
+        4
+      ],
+      "support": "titre cité par le jury",
+      "url": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-lve-allemand-oral-d-e-2022_1668097981733-pdf#page=4",
+      "original": "https://www.dw.com/de/meinung-deutschlands-klare-kante-gegen-putins-russland/a-60934448",
+      "limites": "Début, fin, coupes et consigne exacte du billet non attestés."
+    },
+    {
+      "numero": 2,
+      "intitule": "Interessiert, engagiert, resigniert",
+      "pages": [
+        4
+      ],
+      "support": "titre cité par le jury",
+      "url": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-lve-allemand-oral-d-e-2022_1668097981733-pdf#page=4",
+      "original": "https://www.spiegel.de/politik/deutschland/jugend-und-politik-zukunftsaengste-und-demokratie-verdrossenheit-vodafone-studie-a-cf38ae4d-c338-4ee6-b7a5-cea5e33eebd2",
+      "limites": "Début, fin, coupes et consigne exacte du billet non attestés. Le jury emploie « nach Sophie Garbe »."
+    },
+    {
+      "numero": 3,
+      "intitule": "Debatte über Unterricht für Geflüchtete: Sollen ukrainische Kinder ins deutsche Schulsystem integriert werden?",
+      "pages": [
+        4
+      ],
+      "support": "titre cité par le jury",
+      "url": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-lve-allemand-oral-d-e-2022_1668097981733-pdf#page=4",
+      "original": "https://www.spiegel.de/panorama/bildung/bildungsministerin-bettina-stark-watzinger-will-ukrainische-kinder-in-deutsches-schulsystem-integrieren-a-296601a0-dfe6-45a5-9199-652e45e6cf73",
+      "limites": "Début, fin, coupes et consigne exacte du billet non attestés."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2",
+      "fichier": "figures/interesse-und-einfluss.svg",
+      "legende": "Ergebnisse verschiedener Fragen an die 14- bis 24-Jährigen im Herbst 2021. Quelle: Hört uns zu!, S. 2."
+    },
+    {
+      "numero": 2,
+      "question": "3",
+      "fichier": "figures/schule-und-rueckkehr.svg",
+      "legende": "Die Lösungen im Spiegel-Artikel beantworten unterschiedliche Bedürfnisse. Stand: 25. März 2022."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Vérification de la liste page 4 et de l’exemple d’introduction du premier billet page 2. Distinction entre le commentaire du jury et les termes de l’article. Le rapport précise les temps, les critères linguistiques et la compétence scolaire des Länder."
+    },
+    {
+      "phase": "lecture_sources",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des textes originaux sur les sites de Deutsche Welle et du Spiegel. Contrôle des métadonnées de publication, du titre et de la signature, puis confrontation avec les pages 2 et 4 du rapport. Lecture des résultats de l’enquête Vodafone / Infratest dimap et de la déclaration du 27 février."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des trois articles originaux identifiés par titre, date et signature. Trois exposés en allemand, six réponses d’entretien et deux figures. Les coupes, adaptations et éventuelles consignes propres aux billets de concours restent indéterminées."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "precision": "Le rapport (p. 4) atteste trois titres. Nous avons retrouvé et lu les trois articles originaux en allemand. Le rapport ne reproduit aucune des feuilles distribuées et ne délimite aucun extrait. Les exposés analysent les publications originales. Les notices indiquent pour chacune ce que l’ENS permet d’attribuer au billet. Les relances sont des exercices proposés.",
+    "questions_partiellement_traitees": [
+      "1",
+      "2",
+      "3"
+    ]
+  }
+}
