@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d-e_droit-civil_2020",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit civil",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "L’information dans la formation du contrat",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-d-e-2020_1601913567141-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-d-e-2020_1604400072742-pdf",
+    "sujet_sha256": "7920150ddf19b58ea3f1a19f4b22176160a10809d5d04737060b0b134f694202",
+    "rapport_sha256": "2c8e8fa532324a72ce9410e5ea463acd399f9bf34719c8d023f9b4b211f83ff1",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2020-1",
+    "apercu_sujet_sha256": "d08a2e8a8dc7dc27c7f2f0382eabb40ba28f464860e85ce8c2b37cca111196c8",
+    "apercu_rapport_sha256": "4ee63e74d35a9201d66847e82a04554d7dee555d3a72e85c7725bda79054917b",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 20 - 331"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/devoir-et-preuve.svg",
+      "legende": "L’article 1112-1 distingue expressément la preuve de l’existence du devoir et celle de la fourniture du renseignement."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/omission-erreur-dol.svg",
+      "legende": "Les qualifications peuvent se cumuler si leurs conditions propres sont démontrées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « L’information dans la formation du contrat » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « L’information dans la formation du contrat » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
