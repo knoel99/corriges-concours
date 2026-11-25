@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2002",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2002
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2002.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "6b30bce19762c59ed32c3f5ec3c4ef9c9b6e58e1234163209efe427b234ea383"
+  },
+  "figures": [
+    {
+      "fichier": "figures/choix-du-pas.svg",
+      "question": "13",
+      "legende": "Avec a = 1 et b = 3, le maximum des deux courbes atteint sa valeur minimale 1/2 pour le pas s = 1/2."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des quatre parties sur le cahier de quatre pages. Calcul du triplet plan, minimum de norme et famille duale, borne spectrale optimale, convergence géométrique, coercivité et complétude dans la dernière partie. Graphique des deux branches au pas optimal.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
