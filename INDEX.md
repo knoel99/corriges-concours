@@ -183,6 +183,7 @@
 | 2026 | BEL | AL | Français (oral option 30 juin) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 19 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 24 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 26 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 30 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Grec (oral option, exemple du jury Ploutos) | [md](2026/bel/bel_al_grec-oral-option-exemple-du-jury-ploutos_2026/brut.md) | [md](2026/bel/bel_al_grec-oral-option-exemple-du-jury-ploutos_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
@@ -567,6 +568,7 @@
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
 | 2010 | ENS de Lyon | Second concours | Géosciences | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/guide.md) |
+| 2011 | ENS de Lyon | Second concours | Géosciences | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
@@ -618,6 +620,7 @@
 | 2026 | ENS Rennes | D-E | Espagnol | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Espagnol (oral) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Italien | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/guide.md) |
+| 1998 | ENS | Groupes C/S, M et I | Informatique | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/brut.md) | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/guide.md) |
 | 2026 | ENS | BCPST | Allemand | [md](2026/ens/ens_bcpst_allemand_2026/brut.md) | [md](2026/ens/ens_bcpst_allemand_2026/guide.md) |
 | 2026 | ENS | BCPST | Anglais | [md](2026/ens/ens_bcpst_anglais_2026/brut.md) | [md](2026/ens/ens_bcpst_anglais_2026/guide.md) |
 | 2026 | ENS | BCPST | Biologie | [md](2026/ens/ens_bcpst_biologie_2026/brut.md) | [md](2026/ens/ens_bcpst_biologie_2026/guide.md) |
@@ -996,6 +999,7 @@
 | 2023 | X | FUI-FF 2 | Physique | [md](2023/x/x_fui-ff-2_physique_2023/brut.md) | [md](2023/x/x_fui-ff-2_physique_2023/guide.md) |
 | 2024 | X | FUI-FF 2 | Physique | [md](2024/x/x_fui-ff-2_physique_2024/brut.md) | [md](2024/x/x_fui-ff-2_physique_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Physique | [md](2025/x/x_fui-ff-2_physique_2025/brut.md) | [md](2025/x/x_fui-ff-2_physique_2025/guide.md) |
+| 1998 | X | MP | Informatique (option) | [md](1998/x/x_mp_informatique-option_1998/brut.md) | [md](1998/x/x_mp_informatique-option_1998/guide.md) |
 | 2024 | X | MP | Maths B | [md](2024/x/x_mp_maths-b_2024/brut.md) | [md](2024/x/x_mp_maths-b_2024/guide.md) |
 | 2025 | X | MP | Maths B | [md](2025/x/x_mp_maths-b_2025/brut.md) | [md](2025/x/x_mp_maths-b_2025/guide.md) |
 | 2026 | X | MP | Maths B | [md](2026/x/x_mp_maths-b_2026/brut.md) | [md](2026/x/x_mp_maths-b_2026/guide.md) |

@@ -1,0 +1,75 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-26-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 26 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 26 juin)",
+  "questions": 8,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/journee_5_francais_sujets_jury_2.pdf",
+    "sujet_sha256": "8c46b1b776f8065c1e290c92a993868d355671920c0e2a2392d9c5e4b12d5cc2",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/La_Surprise_de_l%E2%80%99amour/Acte_I",
+      "https://fr.wikisource.org/wiki/Britannicus_(%C3%A9ditions_Didot,_1854)/Acte_I",
+      "https://fr.wikisource.org/wiki/Le_Rouge_et_le_Noir/Chapitre_IX",
+      "https://fr.wikisource.org/wiki/Lorenzaccio/Acte_III",
+      "https://www.leseditionsdeminuit.fr/images/extrait_1506.pdf",
+      "https://fr.wikisource.org/wiki/Les_Antiquit%C3%A9s_de_Rome",
+      "https://www.alfred-de-musset.com/correspondance/musset-1834-048-george-sand/",
+      "https://fr.wikisource.org/wiki/Les_Regrets_(du_Bellay)"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/auguste.svg",
+      "question": "2",
+      "legende": "Deux lectures du règne de Néron"
+    },
+    {
+      "fichier": "figures/rometibre.svg",
+      "question": "6",
+      "legende": "Du Bellay, que reste-t-il de Rome ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Huit explications linéaires pour onze références dont trois doublons, huit questions avec leurs réponses, schémas sur Auguste dans Britannicus et le Tibre dans les Antiquités."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation des bornes aux huit textes, dont les pages 13 à 15 du feuilletage Minuit pour Beckett, contrôle des trois références répétées, de la datation incertaine de la lettre et des consignes du rapport."
+    }
+  ]
+}

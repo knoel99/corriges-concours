@@ -1,0 +1,44 @@
+{
+  "slug": "x_mp_informatique-option_1998",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 1998,
+    "duree_heures": 3
+  },
+  "questions": 8,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-b363c932686200e0f213",
+    "sujet_sha256": "ccf431d7fc64914a3c3bddf7ffbf0c3322ba56e4afb0df88ff774d33ee7076ba",
+    "corrige_historique": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-07991c09e2088d9bfeb8",
+    "corrige_historique_auteur": "Martine Lannaud",
+    "corrige_historique_sha256": "f3494e43d27ecaaf54c04a592e05086f4d50e8d9894fda14b7ba5c1002002c4c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/automate-du-motif.svg",
+      "question": "2",
+      "legende": "Automate du motif c?ou*cou. La branche instantanée saute le premier c et la boucle lit une lettre quelconque autant de fois que nécessaire."
+    },
+    {
+      "fichier": "figures/edition-une-erreur.svg",
+      "question": "8",
+      "legende": "Fragment de l’automate de distance un pour la prochaine lettre a du motif. Les arcs rouges changent de niveau et consomment l’unique erreur autorisée. Les arcs horizontaux lisent exactement la lettre attendue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des huit questions et de leurs subdivisions, incluant les deux variantes Caml et Pascal du sujet. Lecture de la garde et des sept pages, confrontation avec le corrigé historique de Martine Lannaud. Vérification des deux implémentations sur 1 798 couples par langage et cinq motifs invalides, dont chaînes vides, options imbriquées, chevauchements et distance d’édition. Deux schémas originaux."
+    }
+  ]
+}
