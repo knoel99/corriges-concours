@@ -1,0 +1,41 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2013",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2013
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/06/13_2c_suj_math%C3%A9matiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "3dfbb91c385836f091716d033bdaa4e92d89c34679d366ab81d3a5ce033d9328"
+  },
+  "figures": [
+    {
+      "fichier": "figures/projection-et-appui.svg",
+      "question": "4",
+      "legende": "Le vecteur allant du projeté vers x fait un angle obtus ou droit avec chaque direction admissible vers C."
+    },
+    {
+      "fichier": "figures/separation-par-le-milieu.svg",
+      "question": "12",
+      "legende": "Les droites d’appui aux deux points les plus proches sont parallèles. La médiatrice du segment sépare strictement les deux convexes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 20 questions et sous-questions des deux éditions sur le sujet officiel de quatre pages. Le sommaire institutionnel consulté ne rattache aucun rapport à cet écrit. Deux figures originales pour les questions 4 et 12. Vérification des arguments de compacité, de réduction de Carathéodory, de séparation, de point fixe et de propagation du cocycle dans les deux sens.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
