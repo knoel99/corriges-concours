@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Qui prend la parole ?
 
 Dans *Œdipe à Colone* (v. 1611-1633), un messager raconte des adieux auxquels il a assisté. Les guillemets du sujet donnent successivement la parole au père, au dieu puis au père de nouveau. Le lecteur entend l’appel avant qu’Œdipe en identifie l’origine. Dans cette version de quatre heures, conserver ce temps de découverte évite d’ajouter le nom d’un dieu que Sophocle laisse anonyme.
@@ -27,6 +29,8 @@ L’imparfait ἔκλαιον fait durer les pleurs. Le masculin pluriel πάν�
 La consécutive introduite par ὥστε contient στῆσαι, infinitif aoriste actif à valeur causative. C’est la voix qui fait dresser les cheveux. Le féminin ὀρθίας s’accorde avec τρίχας, tandis que le masculin δείσαντας reprend les témoins saisis de peur. « À tous » conserve la portée de πάντας. Le présent καλεῖ fait ensuite entendre la voix comme si elle retentissait sous nos yeux. La première personne du pluriel dans μέλλομεν associe le dieu et Œdipe au départ. La deuxième personne dans τἀπὸ σοῦ attribue l’attente à Œdipe seul.
 
 ![Figure 1 — Les voix dans le récit du messager](figures/voix-messager.svg)
+
+Relire l’impératif adressé à Thésée, puis le pronom pluriel qui enchaîne l’adresse aux filles. On peut expliciter le vocatif en français pour rendre sensible ce changement sans ajouter un autre locuteur.
 
 ## Vers 19 à 23 · À qui donner la main ?
 
