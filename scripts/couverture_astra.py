@@ -288,6 +288,17 @@ def telecharger(url: str) -> bytes:
             time.sleep(2**tentative)
 
 
+def pdf_signe(pdf: bytes, libelles: set[str]) -> bool:
+    if not pdf.startswith(b"%PDF-"):
+        return False
+    sortie = subprocess.run(
+        ["pdftotext", "-f", "1", "-l", "1", "-layout", "-", "-"],
+        input=pdf, capture_output=True, check=True,
+    )
+    texte = " ".join(sortie.stdout.decode().split())
+    return all(libelle in texte for libelle in libelles)
+
+
 def site_verifie(dossier: Path, fiche: str, signatures: set[str]) -> bool:
     libelles = {s.replace("**", "") for s in signatures}
     for nature in ("brut", "guide"):
@@ -308,16 +319,7 @@ def site_verifie(dossier: Path, fiche: str, signatures: set[str]) -> bool:
         ):
             return False
         pdf = telecharger(SITE + lecture.documents.pop())
-        if not pdf.startswith(b"%PDF-"):
-            return False
-        sortie = subprocess.run(
-            ["pdftotext", "-layout", "-", "-"],
-            input=pdf,
-            capture_output=True,
-            check=True,
-        )
-        texte = " ".join(sortie.stdout.decode().split("\f", 1)[0].split())
-        if not all(libelle in texte for libelle in libelles):
+        if not pdf_signe(pdf, libelles):
             return False
     return True
 
