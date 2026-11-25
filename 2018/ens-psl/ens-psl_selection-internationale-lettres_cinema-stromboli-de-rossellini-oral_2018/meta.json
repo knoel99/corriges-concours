@@ -1,0 +1,75 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_cinema-stromboli-de-rossellini-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Cinéma — Stromboli de Rossellini (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Stromboli de Roberto Rossellini · commenter un extrait",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20cinema%20SIL.pdf",
+    "sujet_sha256": "ca2ceb081648278416ecfbb745c27743619cb349be70fc1b0eb4123015dc529a",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "note": "Le sujet officiel de 2018 nomme le film et fixe les durées. La page pédagogique « Stromboli » et l’étude de la revue Visible documentent la scène de la pêche choisie ici pour l’entraînement. Aucun rapport propre à cet oral ne figure parmi les pièces de la fiche.",
+    "references": {
+      "Extrait pédagogique et commentaire": "https://www.cinemacentansdejeunesse.org/videos/stromboli.html",
+      "Étude de la séquence de la pêche, revue Visible": "https://www.unilim.fr/visible/183"
+    }
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/analyse.svg",
+      "question": "Commentaire",
+      "legende": "Deux types de plans de la scène de la pêche. Le rapprochement explicite l’effet du contrechamp. Les dessins sont des schémas d’analyse."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, construction des exemples et du schéma pour « Stromboli de Roberto Rossellini · commenter un extrait ». Le feuillet identifie Stromboli, mais les pièces conservées ne donnent ni la vidéo ni les bornes du passage projeté. Le commentaire de la scène de la pêche est un exemple de travail dont le choix pour l’oral de 2018 reste inconnu."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle du libellé, des données documentaires, des distinctions analytiques et de leur lisibilité dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Cinéma — Stromboli de Rossellini (oral)"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Le feuillet identifie Stromboli, mais les pièces conservées ne donnent ni la vidéo ni les bornes du passage projeté. Le commentaire de la scène de la pêche est un exemple de travail dont le choix pour l’oral de 2018 reste inconnu."
+  }
+}
