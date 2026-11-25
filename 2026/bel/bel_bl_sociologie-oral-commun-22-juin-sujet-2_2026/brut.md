@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Discriminations
@@ -25,6 +27,10 @@ Le modèle du document 4 compare les modalités à une référence en tenant con
 ### Le testing isole un traitement à une étape précise
 
 Marie-Anne Valfort compare des candidatures fictives à des emplois en comptabilité en France en 2013–2014 (doc. 6). Elles présentent une origine libanaise commune, des études et expériences comparables et signalent des appartenances religieuses différentes. Tous sexes confondus, 20,8 % des candidatures catholiques pratiquantes sont convoquées, contre 15,8 % des juives pratiquantes et 10,4 % des musulmanes pratiquantes. L’écart entre la première et la dernière est de 10,4 points et le rapport de deux. Chez les hommes, les taux correspondants sont 17,9 % et 4,7 %, soit un rapport d’environ 3,8. Le contraste entre profils comparables apporte une information que le seul décompte des plaintes ne pourrait fournir. Il porte sur une convocation, des postes et des profils précis. Il ne mesure ni l’ensemble d’une carrière ni l’intention de chaque recruteur.
+
+![Figure 1 — Convocation en entretien selon le profil expérimental](figures/lecture-des-donnees.svg)
+
+Pour cent candidatures de chaque profil, les taux correspondent à environ 21 convocations du premier profil, 16 du deuxième et 10 du troisième. L’entretien est une étape du recrutement. Les écarts de convocation renseignent sur cette première sélection, dont dépendent les possibilités de défendre ensuite sa candidature.
 
 La confrontation des sept documents fait ainsi apparaître trois objets différents, la décision dans une situation contrôlée, l’inégalité cumulée entre trajectoires et la reconnaissance de l’expérience par les personnes ou les institutions. Chacun appelle une mesure adaptée. Leur accord sur certains résultats renforce l’interprétation, et leurs écarts indiquent où poursuivre l’enquête.
 

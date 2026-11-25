@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Discriminations
@@ -29,6 +31,8 @@ Marie-Anne Valfort compare des candidatures fictives à des emplois en comptabil
 La confrontation des sept documents fait ainsi apparaître trois objets différents, la décision dans une situation contrôlée, l’inégalité cumulée entre trajectoires et la reconnaissance de l’expérience par les personnes ou les institutions. Chacun appelle une mesure adaptée. Leur accord sur certains résultats renforce l’interprétation, et leurs écarts indiquent où poursuivre l’enquête.
 
 ![Convocation en entretien selon le profil expérimental](figures/lecture-des-donnees.svg)
+
+Dans une présentation du testing, nommez le signal envoyé par le CV et la réponse enregistrée par l’enquêteur. Une convocation peut déboucher sur un refus ultérieur. Le protocole présenté ne mesure donc pas les embauches finales.
 
 ## Questions du jury
 

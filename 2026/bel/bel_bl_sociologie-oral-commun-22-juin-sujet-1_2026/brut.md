@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## De la démocratie en entreprise
@@ -15,6 +17,10 @@ Le citoyen vote à égalité avec les autres électeurs, mais passe une partie d
 ### Le travail peut faire apprendre l’initiative ou l’obéissance
 
 Georges Friedmann se demande en 1949 si un travail parcellaire et répétitif affaiblit les dispositions critiques nécessaires à la démocratie (doc. 1). Il formule une hypothèse sur la socialisation quotidienne. Le tableau de la Dares permet d’en préciser la première condition (doc. 3). En 1991, 20,5 % des salariés cadres et professions intellectuelles supérieures disent appliquer strictement les consignes, contre 52,8 % des ouvriers. L’écart de 32,3 points concerne des déclarations de pratique au travail. Une réponse « sans objet » est prévue pour ceux qui ne reçoivent pas de telles consignes. La ranger avec les personnes qui désobéissent confondrait deux situations. L’autonomie déclarée peut résulter d’une position de qualification ou d’une nécessité pratique de s’adapter à un travail impossible à prescrire complètement.
+
+![Figure 1 — Consignes strictement appliquées selon la position au travail](figures/lecture-des-donnees.svg)
+
+Les ordres strictement suivis sont environ 2,6 fois plus fréquents dans les déclarations des ouvriers que dans celles des cadres. Friedmann invite à se demander si cette différence se prolonge hors de l’atelier. Pour le savoir, il faudrait retrouver chez les mêmes personnes les formes de prise de parole et de participation politique.
 
 Pour éprouver l’hypothèse d’un apprentissage politique, il faudrait suivre des personnes avant et après un changement d’organisation du travail. L’origine sociale, les préférences antérieures et le choix du métier peuvent en effet influer ensemble sur le poste occupé et sur la politique. Friedmann donne au dossier une question. Le simple constat d’une différence entre catégories professionnelles ne suffit pas à la trancher.
 

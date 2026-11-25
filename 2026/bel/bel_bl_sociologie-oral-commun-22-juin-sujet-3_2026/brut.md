@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Les pratiques touristiques
@@ -17,6 +19,10 @@ Sur une même plage, on peut rechercher le soleil ou s’en protéger pour manif
 Dans l’enquête Vacances (doc. 3), il faut au moins quatre nuits consécutives hors du domicile pour un motif non professionnel. En 1999, 70 % des moins de 14 ans sont partis, 39 % de l’ensemble de cette classe d’âge ont effectué au moins un séjour à la mer et 29 % ont fréquenté au moins deux types d’environnements. Ces catégories se recouvrent. Une famille qui rend visite à des proches peut entrer dans la mesure, une sortie locale d’une journée ou un week-end de deux nuits en sont exclus. L’écart entre groupes reflète donc des ressources mais aussi les formes d’une mobilité que la définition capture plus ou moins bien.
 
 Le document 4 interroge les non-partants sur l’avenir. Parmi les personnes empêchées par des raisons financières en 1998–1999, 62 % pensent ne pas partir dans les douze mois suivants. L’anticipation d’un empêchement durable peut infléchir les projets formulés. Ce résultat ne renseigne pas sur leur départ effectif l’année suivante. Le document 5 montre aussi la fonction des relations personnelles en 1989. La modalité « chez des parents ou amis » atteint 45,4 % dans l’ensemble, 50,2 % chez les employés et 41,4 % chez les cadres et professions intellectuelles supérieures. Le réseau d’hébergement peut donc réduire la dépense initiale, mais ses possibilités dépendent de la localisation et des conditions de logement des proches. La résidence secondaire figure à 11,7 % chez les cadres, contre 4,5 % chez les ouvriers. C’est une autre manière de pouvoir partir sans payer une chambre au prix du marché.
+
+![Figure 1 — Hébergement chez des parents ou amis en 1989](figures/lecture-des-donnees.svg)
+
+Le tableau classe les séjours selon la catégorie de la personne de référence. Sur cent séjours des ménages d’employés, environ cinquante ont lieu chez des proches, contre quarante et un sur cent séjours des ménages de cadres. Les ménages qui ne partent jamais ne produisent aucun séjour dans cette répartition.
 
 ### Le voyage transmet des dispositions déjà inégalement distribuées
 

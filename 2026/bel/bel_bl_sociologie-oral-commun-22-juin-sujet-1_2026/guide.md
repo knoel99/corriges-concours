@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## De la démocratie en entreprise
@@ -31,6 +33,8 @@ Le document 7 rapproche l’enquête de 2016 sur les conditions de travail des r
 La démocratie en entreprise repose donc sur des moyens concrets de discuter le travail, d’informer ses collègues et de négocier avec un interlocuteur tenu de répondre. Ces pratiques peuvent former des capacités politiques. Les documents montrent mieux leur répartition sociale et leurs conditions institutionnelles qu’ils ne démontrent un effet causal sur le bulletin individuel.
 
 ![Consignes strictement appliquées selon la position au travail](figures/lecture-des-donnees.svg)
+
+Reprenez les deux lignes du document 3 : 52,8 divisé par 20,5 donne environ 2,6. Le rapport compare la fréquence d’une réponse entre catégories professionnelles. Aucune des deux lignes ne contient un comportement électoral.
 
 ## Questions du jury
 
