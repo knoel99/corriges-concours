@@ -1,0 +1,102 @@
+{
+  "slug": "ens-rennes_d1_economie-oral_2017",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Économie (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitules": {
+    "1": "Choix économiques et comportements stratégiques",
+    "2": "Les duopoles",
+    "3": "Les défaillances de marché",
+    "4": "Les anticipations",
+    "5": "Les choix intertemporels de consommation",
+    "6": "Les cycles économiques",
+    "7": "L’équilibre du consommateur en microéconomie",
+    "8": "Les différentes situations de concurrence imparfaite",
+    "9": "Les instruments conventionnels et non-conventionnels de la politique monétaire",
+    "10": "La courbe de Phillips depuis les années 1950"
+  },
+  "questions": 10,
+  "sources": {
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2017",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-oral-e-conomie-d1-2017_1515597631710-pdf",
+    "sujet_sha256": "7918b24b84a05a17d08ce6e0fabd631eecdaeb6185f5c63e279d235fd0435582",
+    "sujet_apercu_sha256": "7918b24b84a05a17d08ce6e0fabd631eecdaeb6185f5c63e279d235fd0435582",
+    "sujet_pages": 2,
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "source_via_rapport": true,
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-oral-e-conomie-d1-2017_1515597631710-pdf",
+    "rapport_sha256": "7918b24b84a05a17d08ce6e0fabd631eecdaeb6185f5c63e279d235fd0435582",
+    "rapport_apercu_sha256": "7918b24b84a05a17d08ce6e0fabd631eecdaeb6185f5c63e279d235fd0435582",
+    "rapport_pages": 2,
+    "intitules_feuille": [],
+    "exemples_rapport": [
+      "Choix économiques et comportements stratégiques",
+      "Les duopoles",
+      "Les défaillances de marché",
+      "Les anticipations",
+      "Les choix intertemporels de consommation",
+      "Les cycles économiques",
+      "L’équilibre du consommateur en microéconomie",
+      "Les différentes situations de concurrence imparfaite",
+      "Les instruments conventionnels et non-conventionnels de la politique monétaire",
+      "La courbe de Phillips depuis les années 1950"
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "limite_documentaire": "Les exemples du rapport sont corrigés. La feuille exhaustive des tirages de cette session n’a pas été retrouvée.",
+    "numerotation": "Numérotation éditoriale des exemples, dans l’ordre des puces du jury."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, brute et guidée, pour les 10 exemples effectivement imprimés dans le rapport ; la feuille complète des tirages de la session manque. Deux développements par exposé, une relance résolue et une indication propre au guidé ; 3 schémas originaux contrôlés.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "question": "2",
+      "fichier": "figures/duopole.svg",
+      "legende": "À l’intersection des deux réactions, chaque firme produit 4. Si la firme 1 s’engage en premier, elle choisit 6 sur la réaction de sa rivale, qui produit 3."
+    },
+    {
+      "question": "7",
+      "fichier": "figures/equilibre-consommateur.svg",
+      "legende": "Le budget est 60 et le prix de y vaut 2. La hausse du prix de x déplace la tangence de (10,15) à (7,5 ; 15). Les deux courbes pointillées sont des indifférences."
+    },
+    {
+      "question": "10",
+      "fichier": "figures/relation-de-phillips.svg",
+      "legende": "À 8 % de chômage, l’inflation passe ici de 1 à 2 % après un choc de coût. Le déplacement de la droite se distingue du parcours d’une droite donnée."
+    }
+  ]
+}
