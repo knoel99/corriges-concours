@@ -1,0 +1,76 @@
+{
+  "slug": "bel_al_anglais-oral-tronc-commun-18-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (oral tronc commun 18 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_anglais_tronc_commun_18_juin.pdf",
+    "sujet_sha256": "5f8644bcb28747c9d8346e631d1550f5c8b68c61f6a66be12c23c83859f2d9a8",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_anglais_tc.pdf",
+    "rapport_sha256": "68c198f2905ae8891899e4364652b38aed0092fce531f2750e027d5a8b78adc2",
+    "documents": {
+      "harjo": "https://worldliteraturetoday.org/2019/autumn/bless-land-joy-harjo",
+      "armitage": "https://resources.finalsite.net/images/v1624887420/skschoolsorg/dgk0y7ua6c4w9pzv6fyt/English10WritingwithPower_Part2.pdf#page=121",
+      "chopin": "https://www.katechopin.org/pdfs/Kate%20Chopin%2C%20A%20Pair%20of%20Silk%20Stockings.pdf"
+    },
+    "precision": "Sur les dix références de la feuille officielle, le poème de Harjo est expliqué en entier. Trois vers attestés du poème d’Armitage permettent un exercice partiel. La nouvelle de Chopin est expliquée à partir de son texte publié, sans identification des bornes de l’extrait du concours. Les sept autres passages ne sont pas délimités par la feuille officielle."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "4 — Harjo"
+    ],
+    "questions_partiellement_traitees": [
+      "5 — Armitage, trois vers du manuel Writing with Power, p. 214",
+      "6 — Chopin, préparation sur la nouvelle publiée, extrait du concours non délimité"
+    ],
+    "questions_non_traitees": [
+      "1 — Hardy",
+      "2 — George Eliot",
+      "3 — Melville",
+      "7 — Shakespeare",
+      "8 — Murdoch",
+      "9 — Roy",
+      "10 — Conrad"
+    ],
+    "motif": "Sur les dix références de la feuille officielle, le poème de Harjo est expliqué en entier. Trois vers attestés du poème d’Armitage permettent un exercice partiel. La nouvelle de Chopin est expliquée à partir de son texte publié, sans identification des bornes de l’extrait du concours. Les sept autres passages ne sont pas délimités par la feuille officielle."
+  },
+  "figures": [
+    {
+      "fichier": "figures/terre.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "Who speaks for the land?"
+    },
+    {
+      "fichier": "figures/temps.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "What can fifteen dollars buy?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la feuille de l’ENS, du rapport et des textes retrouvés. Rédaction des deux éditions avec lecture du poème de Harjo, de trois vers d’Armitage, de la nouvelle de Chopin et création des figures. Sur les dix références de la feuille officielle, le poème de Harjo est expliqué en entier. Trois vers attestés du poème d’Armitage permettent un exercice partiel. La nouvelle de Chopin est expliquée à partir de son texte publié, sans identification des bornes de l’extrait du concours. Les sept autres passages ne sont pas délimités par la feuille officielle."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

@@ -128,6 +128,7 @@
 | 2026 | BEL | AL | Allemand (thème Lyon) | [md](2026/bel/bel_al_allemand-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_allemand-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Allemand (version et thème Ulm) | [md](2026/bel/bel_al_allemand-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_allemand-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (commentaire et traduction) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_anglais-commentaire-et-traduction_2026/guide.md) |
+| 2026 | BEL | AL | Anglais (oral tronc commun 18 juin) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-18-juin_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (oral tronc commun 19 juin) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-19-juin_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (oral tronc commun 22 juin) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-22-juin_2026/brut.md) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-22-juin_2026/guide.md) |
 | 2026 | BEL | AL | Anglais (oral tronc commun 23 juin) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_anglais-oral-tronc-commun-23-juin_2026/guide.md) |
