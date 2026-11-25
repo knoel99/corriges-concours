@@ -8,11 +8,17 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique** : la lecture doit-elle nécessairement être le levier d’une introspection du lecteur, ou l’œuvre excède-t-elle ce retour à soi en ouvrant au monde, à l’autre et à une beauté qui ne sert à rien ?
 
 L’auteur d’une préface peut appeler son destinataire « mon lecteur » avant de savoir si le livre rencontrera quelqu’un. Le possessif traite comme acquise une relation qui dépend pourtant d’un acte futur et libre. Dans *Le Temps retrouvé*, le narrateur met en cause cette désignation : « L’écrivain ne dit que par une habitude prise dans le langage insincère des préfaces et des dédicaces : “mon lecteur”. En réalité, chaque lecteur est quand il lit le propre lecteur de soi-même. L’ouvrage de l’écrivain n’est qu’une espèce d’instrument optique qu’il offre au lecteur afin de lui permettre de discerner ce que sans ce livre il n’eût peut-être pas vu en soi-même. » La comparaison conserve une relation entre l’auteur et autrui, celle du don d’un instrument, alors même qu’elle retire à l’auteur la possession imaginaire de son destinataire.
 
 La phrase se construit sur deux restrictions — « ne dit que », « n'est qu'une espèce » — qui réduisent et déplacent. La première proposition démasque une habitude : l'adresse « mon lecteur », familière des préfaces et des dédicaces, n'est qu'une convention « insincère ». Le mot ne porte pas d'accusation morale : il désigne la distance irréductible entre celui qui écrit et celui qui lira, distance qui fait du destinataire une fiction. La deuxième proposition, introduite par « en réalité », opère le renversement : le véritable objet de la lecture n'est pas autrui mais le lecteur lui-même, qui, lisant, devient « le propre lecteur de soi-même ». La troisième enfin déploie la métaphore de l'« instrument optique » — lunette, microscope, lorgnette : comme tout appareil d'observation, il ne livre pas une image brute mais une perception *ajustée*, à la fois révélée et altérée par le détour.
+
+La comparaison de Proust avec un instrument optique engage deux responsabilités. Il faut que la forme de l’instrument rende quelque chose visible et que quelqu’un s’en serve. Deux lecteurs peuvent donc discerner des choses différentes à travers le même livre, tout en ayant chacun à rendre compte des mots qui ont orienté son regard.
+
+![Du livre offert au lecteur de soi](figures/instrument.svg)
 
 Une tension traverse donc l'affirmation. D'un côté, elle congédie l'idée que l'œuvre communiquerait un auteur à son lecteur ; de l'autre, elle fait du livre le moyen d'une connaissance de soi. Mais cette promesse même inquiète : si l'ouvrage « n'est qu'une espèce d'instrument », s'il ne vaut que par ce qu'il fait voir *en soi*, que reste-t-il de la part du monde, de l'auteur, de l'altérité du texte ? La lecture doit-elle nécessairement être le levier d'une introspection, et l'expérience littéraire se laisse-t-elle réduire à un retour du lecteur sur lui-même ?
 

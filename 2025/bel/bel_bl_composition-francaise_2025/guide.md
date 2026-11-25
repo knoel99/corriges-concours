@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Format.** Épreuve écrite commune du concours BEL (filière B/L, sujet commun ENS Ulm – Lyon), session 2025 : durée 6 heures, coefficient 3. Une seule dissertation sur citation : Marcel Proust, *Le Temps retrouvé* (*À la Recherche du temps perdu*, Pléiade, t. IV, p. 489-490) : « L’écrivain ne dit que par une habitude prise dans le langage insincère des préfaces et des dédicaces : “mon lecteur”. En réalité, chaque lecteur est quand il lit le propre lecteur de soi-même. L’ouvrage de l’écrivain n’est qu’une espèce d’instrument optique qu’il offre au lecteur afin de lui permettre de discerner ce que sans ce livre il n’eût peut-être pas vu en soi-même. » Consigne : « En vous fondant sur des exemples précis, vous analyserez les enjeux et la pertinence d’une telle affirmation. »
@@ -19,6 +21,8 @@
 **Exemple de répartition des six heures.** Lire et analyser la citation pendant 30 minutes ; consacrer 45 minutes au problème et au plan, 30 minutes aux exemples, 3 h 30 à la rédaction et 45 minutes à la relecture. Cette répartition indicative totalise 360 minutes.
 
 ![Du livre offert au lecteur de soi](figures/instrument.svg)
+
+Face à une lecture très personnelle, demander quel passage a fait apparaître ce que le lecteur reconnaît en lui. Ce retour au détail de l’œuvre permet d’éprouver le rôle exact de l’instrument décrit dans la citation.
 
 **Pourquoi le conditionnel passé importe-t-il ?** « Sans ce livre il n’eût peut-être pas vu » compare la lecture à ce qui aurait pu rester inaperçu. Le livre offre une possibilité. Le lecteur peut ne pas la saisir, la retrouver plus tard ou voir autre chose que le souvenir du narrateur. Cette variation donne un sens précis au réglage de l’instrument optique.
 
