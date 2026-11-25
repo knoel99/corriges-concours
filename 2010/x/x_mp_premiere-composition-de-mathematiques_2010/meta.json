@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2010
+  },
+  "questions": 31,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2010_MP_M1_enonce.pdf",
+    "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2010/MP_MATHS_X_1_2010.rapport.pdf",
+    "sha256_sujet": "e1e889f003249e16f9acf3d3ad27dfbb7113376458b1246e0362d3deba19af88"
+  },
+  "figures": [
+    {
+      "fichier": "figures/minimum-sur-les-diagonales.svg",
+      "question": "11.b",
+      "legende": "Pour deux coefficients diagonaux positifs, la contrainte est l’hyperbole de produit 1. Son point le plus proche de l’origine est (1,1)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir de la première composition en quatre pages et du rapport. Dualité, courbes tangentes, existence du minimum sans compacité du groupe, morphismes différentiables et formule complète des commutateurs itérés. Illustration du minimum sur les diagonales en dimension deux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
