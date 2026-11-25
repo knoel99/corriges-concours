@@ -75,3 +75,5 @@ Les gardes de vingt-quatre compositions de mathématiques des ENS de 2003 à 201
 Les gardes des vingt-deux compositions de mathématiques de Polytechnique de 2000 à 2010 donnent l’école, la filière MP, le numéro et la durée. Les deux compositions de 2010 sont désormais rattachées à l’X. Les rapports des correcteurs sont documentés, y compris les rapports B de 2011 et de 2012 et les rapports A et B de 2015. [Compositions et rapports de Polytechnique](mathematiques-polytechnique-2000-2015.tsv)
 
 Le sujet de sciences industrielles en PSI de 2015 comporte trois feuilles-réponses. Elles figurent aux pages PDF 30 à 32 du cahier et sont également accessibles en fichier séparé. Le rapport du jury porte la session 2015 en première page. [Cahier, feuilles et rapport](sciences-industrielles-psi-2015.tsv)
+
+Le rapport de grec A/L de 2026 reproduit un billet d’Aristophane avec ses coupures et ses notes. L’exemple complète les feuilles où figure l’auteur. La date du passage reste indéterminée et le décompte des fascicules est conservé. [Exemples de billets publiés par les jurys](exemples-de-billets-du-jury.tsv)
