@@ -134,9 +134,7 @@ def compte_produit(A, B):
 Pour la colonne $j$, on parcourt exactement les listes $A_k$ de 5. Le premier passage sur une ligne produit une unité, les suivants la trouvent marquée. L’espace auxiliaire est $O(n)$. Notons $r_k(B)$ le nombre de non-zéros de la ligne $k$ de $B$. Le temps vaut
 
 $$
-
 O\left(n+b+T\right),\qquad T=\sum_k |A_k|\,r_k(B).
-
 $$
 
 On a $T\le n\min(a,b)$ et, en pire cas absolu, $T=n^3$ pour deux matrices pleines. Si chaque ligne de $A$ contient $s$ non-zéros et chaque colonne de $B$ en contient $t$, chaque case de sortie reçoit au plus $\min(s,t)$ contributions. Cela donne $T\le n^2\min(s,t)=n\min(a,b)$. Cette borne est atteignable en donnant à chaque ligne de $A$ et chaque colonne de $B$ les mêmes premiers indices intermédiaires, à concurrence de $s$ et $t$. Pour des répartitions arrondies, remplacer $s,t$ par les maximums de ligne et de colonne. La seule équité spécifiée n’impose donc pas $T\approx ab/n$. Cette dernière égalité découlerait, par exemple, d’une répartition uniforme des **colonnes de $A$** ou des **lignes de $B$**, qui portent sur l’indice de sommation $k$.
@@ -239,9 +237,7 @@ Chaque indice de `b_ligne` figure dans `x_ligne`. Chaque destination stricte d�
 Pour $i>j$, la formule du sujet donne la récurrence symbolique
 
 $$
-
  L_{ij}\ne0\iff A_{ij}\ne0\ \text{ou}\ \exists k<j,\ L_{ik}\ne0\ \text{et}\ L_{jk}\ne0.
-
 $$
 
 Le dénominateur $L_{jj}$ ne s’annule pas. Si toutes les contributions sont structurellement nulles, le résultat l’est aussi. Pour garantir que le motif prédit peut être réalisé, prendre tous les coefficients hors diagonale autorisés de $A$ négatifs et les diagonales assez grandes pour que $A$ soit symétrique définie positive (par dominance diagonale stricte). Inductivement les coefficients hors diagonale déjà produits sont négatifs aux positions prédites. Les termes soustraits sont donc positifs lorsqu’ils existent et renforcent tout coefficient direct négatif. Il n’y a aucune annulation dans cet exemple.
@@ -255,12 +251,10 @@ Le dénominateur $L_{jj}$ ne s’annule pas. Si toutes les contributions sont st
 La colonne 0 de $L$ est pleine. Pour toute paire $i>j>0$, les deux coefficients $L_{i0}$ et $L_{j0}$ sont non nuls. Par 12, toute la partie triangulaire inférieure est donc remplie, soit $5+4+3+2+1=15$ positions.
 
 $$
-
 \begin{pmatrix}
  X&0&0&0&0\\ X&X&0&0&0\\ X&X&X&0&0\\
  X&X&X&X&0\\ X&X&X&X&X
 \end{pmatrix}.
-
 $$
 
 ### Question 14 · Choisir l’ordre d’élimination
