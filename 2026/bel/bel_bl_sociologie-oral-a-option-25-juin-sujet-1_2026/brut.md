@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles.
 
 ## Les élites sont-elles rationnelles ?
@@ -23,6 +25,10 @@ Une dirigeante publique qui refuse un poste très rémunéré à l’étranger p
 On dit volontiers que l’on choisit ses amis. Pourtant deux personnes présentant des goûts identiques peuvent ne jamais se rencontrer. La présence régulière dans le même établissement, la possibilité d’inviter chez soi et le temps libre contribuent à déterminer quelles affinités deviendront des relations durables. Une amitié se distingue d’une simple coprésence par une reconnaissance personnelle et une certaine réciprocité. Comment expliquer sa sélectivité sociale sans retirer aux amis le choix dont ils font effectivement l’expérience ?
 
 **L’organisation de la rencontre.** La sociologie des réseaux appelle homophilie la fréquence des liens entre personnes semblables. Une part de cette ressemblance vient de la composition du collège, du quartier ou du métier. Dans une classe presque entièrement issue d’un même milieu, la majorité des amitiés se formera à l’intérieur de celui-ci, même sans préférence. Les travaux de Claire Bidart sur l’amitié suivent l’enchaînement des rencontres et des transformations du lien. On gagne à comparer les amis déclarés aux personnes que chacun avait concrètement l’occasion de fréquenter.
+
+À la rentrée, deux élèves peuvent se revoir chaque jour parce que leur emploi du temps les réunit. Si l’une change de classe, un rendez-vous librement pris ou une invitation chez elle donne une autre indication sur la relation. Suivre le même binôme avant et après le changement permet de distinguer la rencontre imposée par l’établissement du travail nécessaire pour entretenir une amitié.
+
+![Figure 1 — Distinguer rencontres possibles, préférences et relations durables](figures/amities.svg)
 
 **Du camarade à l’ami.** Affronter ensemble une épreuve, se confier ou échanger des visites détache progressivement la relation du cadre où elle est née. Ce passage demande des ressources. Un salarié qui dispose de ses soirées peut répondre régulièrement à une invitation, alors qu’un collègue dont les horaires changent et qui prend soin d’un enfant y renonce. Avec le temps, cette répétition peut être interprétée comme un manque d’affinité. Une enquête sur les emplois du temps donne alors un sens différent à l’entretien où chacun affirme simplement avoir suivi ses préférences.
 

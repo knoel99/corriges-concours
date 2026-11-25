@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles. Pour préparer l’exposé, annoncer une question précise, développer chaque mécanisme à partir d’une enquête ou d’une situation et indiquer quelles observations permettraient de départager deux explications. Chaque développement est suivi d’un exercice de préparation et d’une relance.
 
 ## Les élites sont-elles rationnelles ?
@@ -47,5 +49,7 @@ Pour l’amitié, dessiner deux cercles. Dans le premier, placer tous les camara
 Elle renseigne sur les liens que la personne juge prioritaires au moment de l’enquête. Le plafond peut écarter des proches et l’étiquette « ami » varier selon les milieux. Des questions sur les activités et les aides effectivement échangées complètent la liste.
 
 ![Distinguer rencontres possibles, préférences et relations durables](figures/amities.svg)
+
+Pour comparer deux milieux, rapportez les amitiés observées aux rencontres possibles dans chacun. Dans une classe où presque tous les élèves sont issus du même milieu, beaucoup de liens internes peuvent apparaître même si tous les camarades ont la même probabilité de devenir amis.
 
 [Planche officielle](https://www.ens.psl.eu/sites/default/files/elites_amitie.pdf) · [Rapport du jury](https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_oral_option_sociologie.pdf)
