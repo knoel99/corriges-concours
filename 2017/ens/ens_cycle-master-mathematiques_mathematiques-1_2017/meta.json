@@ -1,0 +1,36 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques-1_2017",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques 1",
+    "annee": 2017
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_SE_2C_Math1.pdf",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_RO_2C_Maths1.pdf",
+    "sha256_sujet": "2850dc34af39f59f66246eeb8b3edca64c7e2bae7a9f6378dd92b206837b2f22"
+  },
+  "figures": [
+    {
+      "fichier": "figures/preimages-puissance.svg",
+      "question": "10",
+      "legende": "Préimages successives de 2 par le carré. Leur rayon décroît vers un tandis que les angles deviennent denses sur le cercle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions après lecture du cahier 2C7121. Produits de Blaschke, puissances, Tchebychev, ensembles de Julia et géométrie du bassin. Justification de l’incompatibilité entre le coefficient unitaire de la question 18 et la normalisation de Tchebychev. Schéma des préimages du carré.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
