@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2012",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2012,
+    "duree_heures": 2
+  },
+  "questions": 13,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2012.pdf",
+    "sujet_sha256": "5bb8b586f05b89c104f5329cd7b5006bd4e7d3ebb03e3b3f617e672e56129d72"
+  },
+  "figures": [
+    {
+      "fichier": "figures/codage-binaire.svg",
+      "question": "6",
+      "legende": "Les cases vraies d’indices 1, 2 et 4 allument les poids 2, 4 et 16. Les poids sont rangés ici du plus fort au plus faible."
+    },
+    {
+      "fichier": "figures/contre-exemple-glouton.svg",
+      "question": "9",
+      "legende": "Chaque colonne représente un élément de l’univers. L’ensemble A en couvre quatre, mais seules les lignes B et C couvrent respectivement les éléments 4 et 5."
+    },
+    {
+      "fichier": "figures/masques-candidats.svg",
+      "question": "13",
+      "legende": "Les huit sous-familles du contre-exemple. Les numéros sont leurs codes et la ligne inférieure indique leurs cardinaux. Les codes couvrants 6 et 7 correspondent à BC et ABC."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des treize questions à partir des quatre pages du fac-similé. Cas de taille nulle, tableaux de longueurs distinctes, codage sans primitive de puissance, exemple glouton indépendant du départage. Contrôle exhaustif de toutes les familles couvrantes ordonnées sur au plus trois éléments et quatre ensembles, et de 2 048 conversions. Trois figures originales."
+    }
+  ]
+}
