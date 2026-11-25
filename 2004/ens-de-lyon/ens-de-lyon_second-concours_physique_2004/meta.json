@@ -1,0 +1,84 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2004",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2004
+  },
+  "questions": 14,
+  "redaction": "Les neuf questions sur les vibrations et les cinq sur le couplage sont traitées, avec les masses réduites, l’application au GaAs et la convention de Fourier imprimée. La distinction entre développement en déplacement et approximation dipolaire de maille est explicitée.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2004/sujet-ecrit-2004-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "c5313c6cabc0e878020a2d5fc8ac5057ed3102db59a6f3ebe26fe494233bd563",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2004/rapport-2004-second-concours_ecrit_physique.pdf",
+    "rapport_sha256": "851a07892c0766b80026fd37243cc29770e732b25ba279cba28d1e0107d87e02"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.5",
+      "fichier": "figures/modes-grande-longueur-onde.svg",
+      "legende": "Déplacements acoustiques et optiques dans quatre mailles à la même phase. Les flèches indiquent les déplacements instantanés, à échelle amplifiée."
+    },
+    {
+      "numero": 2,
+      "question": "I.6",
+      "fichier": "figures/energie-oscillateur.svg",
+      "legende": "Échange périodique entre énergie cinétique relative et énergie potentielle harmonique. Chacune a pour moyenne temporelle la moitié de l’énergie totale."
+    },
+    {
+      "numero": 3,
+      "question": "II.5",
+      "fichier": "figures/dephasage-du-couplage.svg",
+      "legende": "Profils spatiaux à temps fixe. Le sinus a ici une amplitude unité pour montrer la phase. Le signe du potentiel physique dépend du coefficient signé calculé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de R. Ferreira sur l’analyse des chaînes binaires. Les graphiques, les limites physiques et l’emploi des trois formules du fascicule sont commentés dans les deux éditions.",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Les neuf questions sur les vibrations et les cinq sur le couplage sont traitées, avec les masses réduites, l’application au GaAs et la convention de Fourier imprimée. La distinction entre développement en déplacement et approximation dipolaire de maille est explicitée.",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5"
+    ]
+  }
+}
