@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_anglais_2020",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Anglais",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en anglais de 251 et 257 mots. Distinction entre mise en accusation et condamnation, débat sur Global Britain, stratégie de prise de parole des Obama et discussion de la représentation politique.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-anglais-d-e-2020_1601913614866-pdf",
+    "sujet_sha256": "3b43508da3b3d3d4a36e3bc3d28283099a4945a5227dab8b50c35f4ace79e508",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2020-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lv-anglais-d-e-2020_1604400142002-pdf",
+    "rapport_sha256": "57ac597c015bebacb8be256b340cdae6a52006b2d12a7f9140a7c55ab8e681d2"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/words-and-inferences.svg",
+      "legende": "Distinguish a reported remark from the columnist’s interpretation of it."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des remarques du rapport sur les constructions interrogatives, les institutions américaines et le choix d’un verbe idiomatique pour les enjeux du Brexit."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en anglais de 251 et 257 mots. Distinction entre mise en accusation et condamnation, débat sur Global Britain, stratégie de prise de parole des Obama et discussion de la représentation politique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. How are the Obamas re-entering politics?",
+      "III.2. Do you agree with the statement that women are better leaders than men?"
+    ]
+  }
+}
