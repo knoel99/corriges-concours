@@ -1,0 +1,64 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2008",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Le contrat et les tiers",
+  "sources": {
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/r1a_08_d1_droit_civil1_1404897129689.pdf",
+    "rapport_sha256": "68306f6405fef48b3403086dab56626700856d828d9f985e0aaf1990385083a8",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet08d1droit-civil_1421752170812-pdf",
+    "sujet_sha256": "51115a33f756a43f85471c9f71726a7c020634b9860d44ffaa752cfeb6d1b6b5",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code civil en avril 2008": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2008-04-01/"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I",
+      "fichier": "figures/droits-du-tiers.svg",
+      "legende": "Quatre demandes issues d’une même vente ont des fondements différents."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions de la dissertation. Effet relatif, qualité de tiers, opposabilité, porte-fort, stipulation pour autrui, actions oblique et paulienne, responsabilité de tiers, actions dans les chaînes et interdépendance.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de droit civil 2008, page 1, sur l’autonomie de la volonté, l’opposabilité, les actions des créanciers et les ensembles contractuels."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de la dissertation. Effet relatif, qualité de tiers, opposabilité, porte-fort, stipulation pour autrui, actions oblique et paulienne, responsabilité de tiers, actions dans les chaînes et interdépendance."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
