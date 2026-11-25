@@ -1,0 +1,46 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2022",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Vivre avec le climat, à quel prix ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=572",
+    "reperes_documentaires": [
+      "Paul-Jacques Grillo, What Is Design?, Chicago, Theobald, 1960.",
+      "Hassan Fathy, Architecture for the Poor: An Experiment in Rural Egypt, édition anglaise, 1973.",
+      "Ministère de l’Éducation et de la Santé, aujourd’hui Palácio Gustavo Capanema, Rio de Janeiro, chantier de l’entre-deux-guerres et des années 1940."
+    ],
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Sujet_Ecrit_DESIGN_Histoire_de_lArt.pdf",
+    "sha256_sujet": "cb8f63c510164a698924bfe1aae650bd08c7da9fec35bc2aa57fbfc4bf57ec73",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2022_Rapport_Ecrit_DESIGN_histoire%20de%20l%27art.pdf",
+    "sha256_rapport_jury": "5ce4fe8c32f97d2ed1d009fdd56856dd05cb127e5054a33a9cac9b5eb9f38592"
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-projet-au-milieu.svg",
+      "question": "Dissertation",
+      "legende": "Coupe de principe d’un pare-soleil fixe dans l’hémisphère Nord. La hauteur du soleil change l’exposition de la baie.",
+      "provenance": "Dessin analytique original de la campagne, session astra_maths, repris pour cette composition."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après confrontation du sujet au rapport de la session. Mise en relation du dessin analytique conservé, des exemples datés et de l’argumentation historique."
+    }
+  ]
+}

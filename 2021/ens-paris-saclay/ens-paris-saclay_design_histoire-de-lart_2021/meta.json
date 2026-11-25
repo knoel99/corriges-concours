@@ -1,0 +1,46 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2021",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "De la promesse machiniste à la morale de l’environnement",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=545",
+    "reperes_documentaires": [
+      "Le Corbusier, Ville contemporaine pour trois millions d’habitants, Salon d’automne, 1922.",
+      "Margarete Schütte-Lihotzky, cuisine de Francfort, 1926.",
+      "Global Tools, réseau italien d’expérimentation pédagogique, 1973–1975."
+    ],
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_Sujet_1A_Design_histoire_de_l_art.pdf",
+    "sha256_sujet": "e52cbf43c98570249b2e1f022c90f6d914279f692cfe0ee02505224b4b429533",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2021_rapport_ecrit_DESIGN_histoire_de_l_art.pdf",
+    "sha256_rapport_jury": "a8b9c3800127a8085abc737a7ab08de7927d10686a4a813a221b3492344ebe33"
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-projet-au-milieu.svg",
+      "question": "Dissertation",
+      "legende": "Deux économies de trajet à des échelles différentes. Les postes d’une cuisine se rapprochent, les fonctions d’une ville peuvent s’éloigner.",
+      "provenance": "Dessin analytique original de la campagne, session astra_maths, repris pour cette composition."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après confrontation du sujet au rapport de la session. Mise en relation du dessin analytique conservé, des exemples datés et de l’argumentation historique."
+    }
+  ]
+}

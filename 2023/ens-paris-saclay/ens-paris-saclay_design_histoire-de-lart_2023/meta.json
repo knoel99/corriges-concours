@@ -1,0 +1,47 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2023",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Après les combustibles fossiles, quelle architecture ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=583",
+    "reperes_documentaires": [
+      "David Wright, Natural Solar Architecture: A Passive Primer, 1978, traduction française Soleil, Nature, Architecture, 1979.",
+      "Eleanor Raymond, Mária Telkes et Amelia Peabody, Dover Sun House, Massachusetts, 1948.",
+      "Peter Behrens pour AEG, bouilloires électriques, 1909.",
+      "Félix Trombe et Jacques Michel, expérimentations de murs solaires à Odeillo, années 1960."
+    ],
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Sujet_ecrit_HistDeLart_Design.pdf",
+    "sha256_sujet": "7fe7f153115a73016e24b918ca357b1a76ecba63c7882ed5beb092d9a9572af5",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2023_Design_rapport_ecrit_Dissertation_Histoire.pdf",
+    "sha256_rapport_jury": "dc15da370094bf5f3a2c68386a65419dfced9cf56dba0435847369f5de08ff86"
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-projet-au-milieu.svg",
+      "question": "Dissertation",
+      "legende": "À Dover, l’air transporte la chaleur vers les réserves. Dans le mur capteur, une masse maçonnée en assure le stockage.",
+      "provenance": "Dessin analytique original de la campagne, session astra_maths, repris pour cette composition."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après confrontation du sujet au rapport de la session. Mise en relation du dessin analytique conservé, des exemples datés et de l’argumentation historique."
+    }
+  ]
+}
