@@ -1,0 +1,62 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-beauvoir-et-la-liberte-du-lecteur_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Beauvoir et la liberté du lecteur",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Beauvoir et la liberté du lecteur",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-ecrit-sil2019.pdf",
+    "sujet_sha256": "688726c11b2e3b3962287f94bc56badc6f1a13eb8fffccc7442b9a31c55fd43e",
+    "references": [
+      "https://www.folger.edu/explore/shakespeares-works/the-merchant-of-venice/read/3/1/",
+      "https://www.folger.edu/explore/shakespeares-works/the-merchant-of-venice/read/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/credit.svg",
+      "question": "Dissertation",
+      "legende": "À quel niveau porte un refus de lecture ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de la dissertation littéraire, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification de la consigne SIL, des actes III et IV du Marchand de Venise, du changement de voix chez Montesquieu et du déplacement critique qu’opère Achebe à propos de Conrad. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}

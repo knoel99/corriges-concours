@@ -1,0 +1,76 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-todorov-et-le-pouvoir-de-la-litterature_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Todorov et le pouvoir de la littérature",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Littérature — Todorov et le pouvoir de la littérature",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/rapport_sil_litterature_ecrit_2018.pdf",
+    "sujet_sha256": "c903e7cc5bef339649eee9e638012779da3a9a0d281adcc2da812ccc39c339fe",
+    "references": [
+      "https://www.gutenberg.org/files/2814/2814-h/2814-h.htm"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_litterature_ecrit_2018.pdf",
+    "rapport_sha256": "c903e7cc5bef339649eee9e638012779da3a9a0d281adcc2da812ccc39c339fe",
+    "type_sujet": "Citation et consigne attestées par le rapport du jury."
+  },
+  "figures": [
+    {
+      "fichier": "figures/ondes.svg",
+      "question": "Dissertation",
+      "legende": "Comment une dernière scène peut modifier une question"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Lecture du rapport reproduisant le sujet, de la distinction entre proposition et leçon, de la place des émotions et des exemples de lecture demandés.",
+      "modifications": false
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction de la dissertation littéraire, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Confrontation au support du jury, aux étapes de l’argument de Todorov et à la scène finale chez Joyce. Examen des limites du jugement moral dans la fable et la parabole. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}
