@@ -1,0 +1,125 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2006",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2006
+  },
+  "questions": 60,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2006/sujet-ecrit-2006-second-concours_geoscience.pdf",
+    "sujet_sha256": "64360ecb3956e8ccd4ad08ece0b99a058c0213b59821bb5138eef30ea5ea89c8"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "3.14",
+      "3.15",
+      "3.16",
+      "3.17",
+      "3.18",
+      "3.19",
+      "3.20",
+      "3.21",
+      "3.22",
+      "3.23",
+      "3.24",
+      "3.25",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10",
+      "4.11",
+      "4.12",
+      "4.13",
+      "4.14",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5",
+      "5.6",
+      "5.7",
+      "5.8",
+      "5.9"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 60 questions imprimées sont traitées. L’original passe de 3.3 à 3.5. Le renvoi de 4.6 est explicité. Les calculs de transport adoptent les 92 jours de juin à août et distinguent les deux masses volumiques du sujet. Cinq schémas originaux comprennent le report cartographique demandé en 5.6. L’archive de 2006 ne rattache pas de rapport écrit à cette épreuve."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "1.1",
+      "fichier": "figures/cycle-externe-des-roches.svg",
+      "legende": "Cycle externe. L’énergie solaire alimente les circulations, la gravité entraîne les transferts, la tectonique renouvelle reliefs et bassins."
+    },
+    {
+      "question": "3.1",
+      "fichier": "figures/convergence-intertropicale.svg",
+      "legende": "Coupe schématique des basses latitudes. Les vents convergent vers la ceinture pluvieuse, dont la latitude varie au fil des saisons."
+    },
+    {
+      "question": "3.21",
+      "fichier": "figures/denudation-du-bassin-de-la-baspa.svg",
+      "legende": "Taux tirés des matières en suspension pendant 92 jours de mousson. Le transport de fond et les apports torrentiels non mesurés ne figurent pas dans ces valeurs."
+    },
+    {
+      "question": "4.13",
+      "fichier": "figures/reponse-des-deux-bassins.svg",
+      "legende": "Temps de réponse du système alluvial comparés au temps écoulé depuis le dernier maximum glaciaire pris à 18 ka dans l’énoncé."
+    },
+    {
+      "question": "5.6",
+      "fichier": "figures/site-de-carottage-atlantique.svg",
+      "legende": "Report régional sur la province calcaire de l’Atlantique Sud oriental de la carte 2.1. Le relief de la ride favorise la préservation de tests au-dessus de la profondeur de compensation."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions complètes sur la sédimentation et l’érosion. Lecture des cinq parties du scan officiel, reprise des échelles, des courbes de mousson, des débits solides et des deux densités, des registres à grande échelle et des isotopes. Cinq figures originales dont le site de carottage et les deux schémas demandés en parties 1 et 3."
+    }
+  ]
+}
