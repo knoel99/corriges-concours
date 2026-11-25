@@ -1,0 +1,42 @@
+{
+  "slug": "bel_al_espagnol-commentaire-et-traduction_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (commentaire et traduction)",
+    "annee": 2017
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=10",
+    "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ESPAGNOL_2017.pdf#page=1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "Ce qu’un discours transmet à l’autre"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "al_langues_suite",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Almudena Grandes, *Inés y la alegría* (2010). González se souvient de l’exode de février 1939 au moment de s’adresser à ses hommes en Haute-Garonne en juillet 1944. La version va du regard sur les soldats fatigués au cri du narrateur qui couvre le leur. Commentaire, version française, guide et schéma."
+    }
+  ]
+}
