@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2010",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2010
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2010/sujet-ecrit-2010-second-concours_mathematiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "68592d636c506a0cd32838476776b5906eb01cf49c62ea257cd61667dfcd5ab4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/meilleure-droite-convexe.svg",
+      "question": "2.6",
+      "legende": "Pour f(x) égal à x² sur le segment de 0 à 1, la corde y = x est descendue de 1/8. L’erreur prend successivement les valeurs +1/8, −1/8 et +1/8."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction et vérification sur les quatre pages numérisées du sujet. Caractérisation minimax, passage à la limite semi-définie, bornes par intersections, existence et unicité du polynôme optimal. Figure du décalage optimal de la corde avec trois contacts. Aucun rapport de jury indexé pour cet écrit.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
