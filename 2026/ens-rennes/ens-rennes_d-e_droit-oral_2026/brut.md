@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le fascicule publié par l’ENS Rennes comporte vingt-trois fiches. Les numéros imprimés vont de 1 à 21 puis de 23 à 24. Chaque réponse traite la question théorique et le cas pratique de la même page.
 
 ## 1. Droit de l’Union et hiérarchie des normes
@@ -55,6 +57,10 @@ Le fascicule publié par l’ENS Rennes comporte vingt-trois fiches. Les numéro
 **Inexécution.** L’article 1217 ouvre plusieurs sanctions compatibles selon les cas : suspension de sa prestation, exécution en nature, réduction proportionnelle du prix, résolution et réparation. Leurs conditions diffèrent. L’exécution en nature ne peut être imposée si elle est impossible. La réduction répond à une prestation imparfaite ; les dommages-intérêts supposent en outre un préjudice en lien avec le manquement et peuvent rencontrer une cause d’exonération.
 
 **Distribution d’eau.** Ordonner une livraison au robinet sans aucune interruption contredirait directement les suspensions prescrites par les arrêtés préfectoraux. L’exécution demandée est juridiquement impossible tant que ces mesures s’appliquent. Le prix est une question distincte. La Cour de cassation a admis, sur un cas analogue, que le créancier peut demander au juge une réduction du prix même s’il n’a pas encore payé tout ou partie de la prestation. Il appartient au juge d’apprécier l’exécution imparfaite et la proportion de la réduction. Les 90 % ne sont donc pas acquis : il faut documenter les périodes de desserte, l’utilité effectivement reçue et ce que rémunère l’abonnement. La demande d’injonction peut échouer alors que la demande sur le prix reçoit examen. [Cass. 1re civ., 18 décembre 2024, n° 24-14.750](https://www.legifrance.gouv.fr/juri/id/JURITEXT000050868568)
+
+Deux pièces éclaireraient différemment la demande de M. G. Le calendrier des arrêtés permet de situer les périodes pendant lesquelles la livraison continue était interdite. Le contrat, les factures et les relevés des interruptions permettent ensuite d’apprécier quelle part de la prestation promise a effectivement été fournie. Le taux de 90 % demandé doit être justifié au regard de cette seconde comparaison.
+
+![Figure 1 — Deux demandes issues d’une même interruption](figures/eau.svg)
 
 ## 9. Clause limitative et obligation essentielle
 

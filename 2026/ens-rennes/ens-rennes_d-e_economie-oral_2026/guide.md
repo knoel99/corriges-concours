@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’ENS Rennes publie vingt-trois sujets d’économie pour les oraux du concours D–E 2026. Chaque numéro ci-dessous reprend un intitulé, dans l’ordre du document.
 
 Le guide propose, pour chaque exposé, une question de relance suivie d’une réponse. Avant de consulter cette dernière, préciser la population étudiée, l’horizon temporel ou la condition du modèle qui changerait la conclusion.
@@ -252,6 +254,8 @@ Le compte courant regroupe biens, services, revenus primaires et transferts cour
 La démographie, le cycle budgétaire et privé, les investissements en infrastructures et l’accès au financement modifient épargne et investissement. Les prix de l’énergie importée, la qualité de l’offre et le taux de change réel affectent échanges et revenus. Après une dépréciation, les prix en monnaie nationale peuvent réagir avant les volumes prévus par contrat. Le solde peut ainsi se détériorer d’abord. Un diagnostic sépare facteurs temporaires et structurels puis examine le financement et ses risques. Un déficit courant finançant des machines productives n’a pas la même trajectoire probable qu’un déficit accompagné d’engagements courts en devises sans revenus futurs correspondants.
 
 ![Deux lectures du même solde courant](figures/compte-courant.svg)
+
+Faites varier une grandeur à la fois. Si l’investissement passe de 25 à 22 tandis que l’épargne reste à 22, le compte courant s’équilibre. Le même solde nul serait obtenu avec un investissement inchangé de 25 et une épargne portée à 25. La comptabilité ne tranche pas entre ces ajustements.
 
 > [!INDICATION]
 > Une dépréciation suffit-elle à améliorer le solde commercial ?
