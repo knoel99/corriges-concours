@@ -1,0 +1,49 @@
+{
+  "slug": "ens-rennes_d-e_italien_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Italien",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Italien",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en italien de 242 et 234 mots. Titres traduits, résultats scolaires et pollution, étapes diplomatiques du traité du Quirinal, projections sectorielles et projet professionnel personnel développé à titre d’exemple.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-italien-d-e-e-crit-2022_1657700630352-pdf",
+    "sujet_sha256": "85e477baa3fe006f452de006ebacb95405da000f79fa44e6939b254160b0ec1e",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/lavori-e-competenze.svg",
+      "legende": "Una previsione sul settore informa il progetto professionale solo se si considerano le mansioni e le competenze richieste."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en italien de 242 et 234 mots. Titres traduits, résultats scolaires et pollution, étapes diplomatiques du traité du Quirinal, projections sectorielles et projet professionnel personnel développé à titre d’exemple."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Quali settori professionali saranno i più favorevoli all’occupazione nel prossimo decennio?",
+      "III.2. Come immagini la tua situazione professionale ideale nel 2030?"
+    ]
+  }
+}
