@@ -1,0 +1,79 @@
+{
+  "slug": "ens-de-lyon_series-a-l_russe-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Russe (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 8,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Russe%202026.pdf#page=3",
+    "sujet_sha256": "b341bc6fb19d0cbe6a78084849f91c873eaa492742db71aa28d65f631d202f84",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Russe%202026.pdf#page=15",
+    "rapport_sha256": "c78ad40be58f78fd26c5f928da6bec6b286069d150c6a0171859449fb5c96027",
+    "documents": {
+      "tsvetaeva": "https://ru.wikisource.org/wiki/%D0%A4%D0%B5%D0%BD%D0%B8%D0%BA%D1%81_%28%D0%A6%D0%B2%D0%B5%D1%82%D0%B0%D0%B5%D0%B2%D0%B0%29/%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0_%D1%82%D1%80%D0%B5%D1%82%D1%8C%D1%8F",
+      "tolstoy": "https://rvb.ru/tolstoy/01text/vol_3/01text/0021-full.htm",
+      "voloshin1": "https://ru.wikisource.org/wiki/%D0%9F%D0%BE%D0%BB%D1%8B%D0%BD%D1%8C_%28%D0%92%D0%BE%D0%BB%D0%BE%D1%88%D0%B8%D0%BD%29",
+      "voloshin2": "https://rvb.ru/20vek/silver-age/1900-e/05/039-maksimilian-voloshin.html",
+      "kup": "https://gorky.media/context/proval-eto-izmena",
+      "ryb": "https://gorky.media/context/luchshaya-mest-natsistam",
+      "sang": "https://gorky.media/context/logiki-tut-ne-ishchite",
+      "rad": "https://www.psychologies.ru/wellbeing/kak-emocii-formiruyut-nashi-resheniya-i-povedenie-vzglyad-nauki-i-praktiki/",
+      "forbes": "https://www.forbes.ru/forbes-woman/562070-zensiny-rabotali-vsegda-pocemu-v-tazelyh-industriah-vse-ese-susestvuet-neravenstvo"
+    },
+    "precision": "Le fascicule délimite les trois billets littéraires par leurs premiers et derniers mots. Ils sont expliqués intégralement, dont les deux poèmes de Volochine sur un seul billet. Les cinq analyses de presse s’appuient sur les articles originaux publiés. L’ENS ne fournit pas les feuillets des candidats qui permettraient d’en établir les coupes."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1 — Tsvetaeva, du décor de la bibliothèque à la première exclamation « Розина! »",
+      "2 — Tolstoï, chapitre IV, des deux tombes à la dernière phrase",
+      "3 — Volochine, « Полынь » et « Я иду дорогой скорбной… »"
+    ],
+    "questions_partiellement_traitees": [
+      "4 — Kouprianov, Gorky, LV1",
+      "5 — Rybitskaïa, Gorky, LV1",
+      "6 — Sangoulnik, Gorky, LV1",
+      "7 — Radzina, Psychologies, LV2",
+      "8 — Kriatchkova, Forbes Woman, sciences humaines"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le fascicule délimite les trois billets littéraires par leurs premiers et derniers mots. Ils sont expliqués intégralement, dont les deux poèmes de Volochine sur un seul billet. Les cinq analyses de presse s’appuient sur les articles originaux publiés. L’ENS ne fournit pas les feuillets des candidats qui permettraient d’en établir les coupes."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Как меняется точка зрения?",
+      "question": "Lecture et discussion"
+    },
+    {
+      "fichier": "figures/presse.svg",
+      "legende": "На каком основании говорит автор?",
+      "question": "Lecture et discussion"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule et du rapport de russe de Lyon. Collation des trois billets littéraires et des cinq articles contemporains. Rédaction des deux éditions, des huit explications en russe, des réponses aux questions, des aides de préparation et des deux figures. Le fascicule délimite les trois billets littéraires par leurs premiers et derniers mots. Ils sont expliqués intégralement, dont les deux poèmes de Volochine sur un seul billet. Les cinq analyses de presse s’appuient sur les articles originaux publiés. L’ENS ne fournit pas les feuillets des candidats qui permettraient d’en établir les coupes."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
