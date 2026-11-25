@@ -1,0 +1,44 @@
+{
+  "slug": "ens-rennes_d-e_mathematiques-appliquees_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2025
+  },
+  "questions": 55,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-epreuve-a-options-d-e-2025_1760692424609-pdf#page=11",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-math-d-e-2025_1768897897384-pdf",
+    "sha256_sujet": "0fb9fb1a8b8074e658f82a4da84932837e6757863dd60f861db296bb17767754",
+    "sha256_apercu_sujet": "e972069d46659d9a714c67c587b51550bda94282974fd7b4b3a3268477ad6453",
+    "sha256_rapport_jury": "6c4db7339ae04d1f4015ea34c8a720fa5c992250b50f5e0fa36dff1ef00787f3",
+    "sha256_apercu_rapport_jury": "a258669f1c8fd6f149f0892d2aa0f20fb78330454fc4a1d97c89cf9733aa101d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/acheteurs-et-prix.svg",
+      "question": "1.I.1",
+      "legende": "Les neuf observations du boulanger. Les graduations gardent la proportion demandée entre les deux axes."
+    },
+    {
+      "fichier": "figures/graphe-et-diagonale.svg",
+      "question": "2.I.8",
+      "legende": "Les deux intersections avec la diagonale donnent les points fixes. Les asymptotes sont indiquées en pointillés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète sur les pages physiques 11 à 16 du fascicule et les quatre pages du rapport. Lecture graphique des neuf observations et des formules imprimées, recalcul des deux corrélations, du bénéfice, des récurrences et des lois. Nuage à l’échelle relative et tracé des deux points fixes.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
