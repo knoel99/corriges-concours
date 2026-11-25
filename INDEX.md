@@ -577,6 +577,7 @@
 | 2005 | ENS de Lyon | Second concours | Chimie | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_chimie_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_chimie_2005/guide.md) |
 | 2006 | ENS de Lyon | Second concours | Chimie | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/guide.md) |
 | 2008 | ENS de Lyon | Second concours | Chimie | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_chimie_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_chimie_2008/guide.md) |
+| 2009 | ENS de Lyon | Second concours | Chimie | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_chimie_2009/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Chimie | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_chimie_2011/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Chimie | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Chimie | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/guide.md) |
