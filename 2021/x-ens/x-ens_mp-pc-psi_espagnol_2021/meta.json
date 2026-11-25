@@ -1,0 +1,61 @@
+{
+  "slug": "x-ens_mp-pc-psi_espagnol_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Espagnol",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "La monarchie espagnole face aux scandales de Juan Carlos Ier et au débat républicain",
+  "sources": {
+    "code_garde": "XEULCR",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_Esp.pdf",
+    "sujet_sha256": "83f3ac8eb37720864bd095c7d27d05bc0a033ef80057e3a51019edc9609dadd6",
+    "sujet_pages": "1–10",
+    "sujet_index": "https://banques-ecoles.fr/cms/session-2021-3/",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_MPPC_rapport_eEsp.pdf",
+    "rapport_sha256": "756cf76448b2d746018d1e961233bbd8b5b72585e56aa5589f82f274d0307474",
+    "rapport_pages": "1–3",
+    "rapport_index": "https://banques-ecoles.fr/cms/session-2021-4/"
+  },
+  "redaction": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/deux-generations-deux-images.svg",
+      "legende": "La caricature d’août vise la sortie du père, la photographie d’octobre la figure du fils."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse espagnole des quatre documents avec titre, lecture de l’iconographie, texte d’opinion sur le cinquième document, accompagnement pour les deux compositions et contrôle des longueurs.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "longueurs_hors_titre": {
+    "synthese_mots": 609,
+    "opinion_mots": 512
+  }
+}
