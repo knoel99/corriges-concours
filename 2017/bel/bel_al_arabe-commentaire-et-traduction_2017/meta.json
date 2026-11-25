@@ -1,0 +1,42 @@
+{
+  "slug": "bel_al_arabe-commentaire-et-traduction_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Arabe (commentaire et traduction)",
+    "annee": 2017
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-commentaire-et-traduction-lve_1506586192589_0.pdf#page=6",
+    "sujet_sha256": "be2dd53df269e5a7bc4f9f5f2a1836d36ab45404db77ca6cb4d21f19dee44d53",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ARABE_2017.pdf#page=1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Commentaire",
+      "legende": "De l’emprunt au théâtre national"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "al_langues_suite",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Mikhaïl Nouaïmé, *Le Tamis* (*الغربال*, 1923), édition Nawfal, Beyrouth, 1991, p. 29-33. Le commentaire porte sur les deux pages de l’extrait. La traduction s’arrête à l’annonce du théâtre, à la fin de la page 6. Commentaire, version française, guide et schéma."
+    }
+  ]
+}
