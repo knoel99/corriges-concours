@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2016",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2016,
+    "duree_heures": 4
+  },
+  "questions": 13,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mpi_sujet_infomath.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/07/16_info_rap_einfomath.pdf",
+    "sujet_sha256": "5e7dcce5f2ce5cba9dbe9a4c93462854e4d197cf787d3679d38b188f310a5e73",
+    "rapport_sha256": "e28bf287cb99d28cf5b8fe5223fbe4feef5f71b28674972f33d52402d16e212c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/accessibilite-cycles.svg",
+      "question": "2",
+      "legende": "Dans le sens des arcs du sujet, les sommets 3 et 4 constituent I. Le sommet 6, bien que seul dans sa composante et sans boucle, atteint le cycle de 5."
+    },
+    {
+      "fichier": "figures/angles-et-lettres.svg",
+      "question": "9",
+      "legende": "Les rangs 0 à 6 figurent sur le cercle des angles. Les deux extrémités du diamètre séparant les arcs appartiennent à A par la règle d’égalité au seuil."
+    },
+    {
+      "fichier": "figures/seuils-de-melange.svg",
+      "question": "12",
+      "legende": "Pour la matrice de la question 10, la lettre est A quand le paramètre du mélange est inférieur ou égal au seuil du rang. Le choix du seuil de rang 8 donne huit B puis uniquement des A."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 13 questions et subdivisions sur le sujet et le rapport institutionnels. Critère de disparition contrôlé sur 50 978 graphes admissibles, 30 puissances exactes pour les deux exemples, 49 coupures et 408 jeux de coefficients et de rapports pour la classification finale. Examen du pseudo-code imprimé et de ses piles. Trois figures originales."
+    }
+  ]
+}
