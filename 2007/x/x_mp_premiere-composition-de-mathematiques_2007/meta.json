@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2007
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2007.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "224ac8c620bd5b3d0fb1be482b5431c93b4d9b19bb8da7480da59e9eac0c31fd"
+  },
+  "figures": [
+    {
+      "fichier": "figures/noyau-de-poisson.svg",
+      "question": "7",
+      "legende": "Trois profils du noyau de Poisson de même intégrale 2π. La masse se concentre autour de zéro lorsque le paramètre t décroît."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir du sujet. Dérivations normales, noyau de Poisson, convergence uniforme, estimations pondérées avec constantes explicites. Les questions 13.c et 17.b distinguent les représentants continus et les valeurs isolées permises par la continuité par morceaux. Figure des profils du noyau.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
