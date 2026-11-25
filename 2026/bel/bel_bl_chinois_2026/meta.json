@@ -13,7 +13,8 @@
     "model": "GPT-6"
   },
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=14"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=14",
+    "sujet_sha256": "c50027658a30036283b26bd8756ad7af106e5aa71e645272d0eca566c449a276"
   },
   "figures": [
     {
@@ -32,7 +33,7 @@
       "legende": "Que comptent les deux articles ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -85,6 +86,17 @@
       "modifications": true,
       "perimetre": "Comparaison des deux commentaires avec les deux articles et le lexique (p. 14–18). Date de publication et date des entretiens, dénominateur des diplômés en 2023, échelle de la coopération entre universités et entreprises.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le fascicule officiel. Traduire la grandeur avant de calculer. Les 7 % de Harvard concernent les intentions de spécialisation des nouveaux inscrits de 2022. Les vingt établissements au moins du document 1 sont des universités chinoises ayant annoncé des suspensions de recrutement en master pour 2025. Dans le document 2, 万人年 signifie « dix mille personnes-années ». Les 724,1 unités représentent donc 7,241 millions de personnes-années de recherche en 2023, une mesure de travail fourni. Les 2,2 亿, eux, désignent un effectif de 220 millions de personnes. Les diviser donnerait une unité différente d’une proportion de chercheurs."
     }
   ]
 }

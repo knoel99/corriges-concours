@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2005,
+    "duree_heures": 2
+  },
+  "questions": 9,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2005.pdf",
+    "sujet_sha256": "a182edb44c0dd3d3566dac3c87b60dc74a913f879128267e9c7effb400dcd864"
+  },
+  "figures": [
+    {
+      "fichier": "figures/bloc-majoritaire.svg",
+      "question": "2",
+      "legende": "Neuf bulletins triés. Les cinq voix du candidat 2 forment un bloc qui contient la position centrale."
+    },
+    {
+      "fichier": "figures/deux-ex-aequo.svg",
+      "question": "5",
+      "legende": "Deux candidats obtiennent trois voix chacun sur huit, un troisième en obtient deux. Les deux premiers sont ex æquo au deuxième tour et aucun ne possède une majorité stricte."
+    },
+    {
+      "fichier": "figures/elimination-par-paires.svg",
+      "question": "9",
+      "legende": "Sur les bulletins 2, 2, 1, 3, 1, 2, 2, le solde revient à zéro après quatre puis six votes. Le dernier candidat 2 est confirmé par quatre voix sur sept."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des neuf questions du cahier natif de deux pages. Vérification exhaustive des cinq fonctions de dépouillement sur 9 841 scrutins avec trois identifiants et jusqu’à huit votes, y compris résultats ex æquo, moitié exacte et candidat résiduel. Trois illustrations originales."
+    }
+  ]
+}

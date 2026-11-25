@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Question directrice** — How does everyday government change our understanding of the political uses of freedom in Britain and the United States?
 
 [Sujet officiel, p. 9 à 13](https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=9) · [Rapport officiel](https://www.ens.psl.eu/sites/default/files/fait_2026_bl_rapport_ecrit_option_anglais.pdf)
@@ -27,6 +29,10 @@ Le livret commun demande de commenter en anglais les cinq documents des pages 9 
 ![Who bears the cost of care?](figures/public-et-prive.svg)
 
 Dans le deuxième document, les adverbes de temps et le changement d’échelle orientent l’analogie. Les châteaux du passé, le foyer contemporain et la nation constituent trois termes distincts. La coexistence des extrêmes que Martineau veut faire voir concerne la nation de son temps.
+
+### Identifier celui qui entend
+
+Au document 3, distinguez le rédacteur d’un journal cité aux lignes 10 à 18 et le gardien d’Halifax aux lignes 20 à 25. L’un imagine ce que ressentiraient les élus s’ils entendaient les cris. L’autre confesse que la répétition l’a conduit à les ignorer. Dix enchâsse ces voix dans sa pétition. Rapprochez son geste de celui d’Obama qui reprend devant le Congrès la lettre de Kennedy. Chaque texte fait entrer dans l’assemblée une voix venue d’ailleurs.
 
 ## Mettre les sources en relation
 
@@ -59,7 +65,7 @@ Dix’s memorial to the North Carolina legislature (document 3) likewise opens a
 
 ### II. Appeals to responsibility divide reformers who profess to value independence
 
-Dix begins with a concession to those worried about disorder. Some people in distress may indeed need supervision. The concession enables her to challenge the use of a prison for that purpose and to claim care for poor patients on terms comparable to those available to wealthy families. The jailer’s recollection puts a voice beside a sum of money. Legislators who hear the story acquire a responsibility that they could previously leave to county officers. Yet Dix’s account continues to treat confinement as potentially appropriate. Her campaign in a slaveholding state reveals the political possibilities of petition for a woman excluded from the vote, while leaving the much broader exclusions of that society outside its immediate claim. The memorial establishes the scope of one proposed reform. It cannot establish a general equality of rights.
+Dix begins with a concession to those worried about disorder. Some people in distress may indeed need supervision. The concession enables her to challenge the use of a prison for that purpose and to claim care for poor patients on terms comparable to those available to wealthy families. Dix puts two listeners within earshot of a jail. The newspaper editor quoted at lines 10–18 can scarcely bear the sounds from across the street. The Halifax keeper at lines 20–25 hears a familiar cry and takes it for part of the night’s routine. One account reaches Dix in print, the other through the keeper’s own admission. Their opposed responses give the legislators a choice about how they will listen. Like Obama drawing on Kennedy’s letter in Congress, Dix makes a voice from outside the chamber part of its deliberations. Legislators who hear the story acquire a responsibility that they could previously leave to county officers. Yet Dix’s account continues to treat confinement as potentially appropriate. Her campaign in a slaveholding state reveals the political possibilities of petition for a woman excluded from the vote, while leaving the much broader exclusions of that society outside its immediate claim. The memorial establishes the scope of one proposed reform. It cannot establish a general equality of rights.
 
 Keith Joseph, addressing a Birmingham audience as a Conservative opposition spokesman in October 1974 (document 4), also links government to conduct learnt within the family. His question is what public provision teaches its recipients to expect of themselves. Rising incomes and welfare expenditure are set beside a list of social troubles, as if their concurrence disclosed the moral effect of intervention. The arrangement of these lists is a political argument. The excerpt supplies no comparison showing that the policy caused the reported increase in disorder. Joseph’s example of parents choosing to spend on their children’s schooling turns a contested distribution of purchasing power into a question about the freedom to use one’s earnings well. Parents with little disposable income are less visible in that account. A mother with an ill son in Dix’s petition makes a revealing comparison: willingness to care gives her little power to deliver the treatment he requires.
 

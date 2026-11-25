@@ -14,7 +14,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=9",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/fait_2026_bl_rapport_ecrit_option_anglais.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/fait_2026_bl_rapport_ecrit_option_anglais.pdf",
+    "sujet_sha256": "c50027658a30036283b26bd8756ad7af106e5aa71e645272d0eca566c449a276",
+    "rapport_jury_sha256": "e264e298464ed9e72ac65ca76f8e4b300e2a4728b08588ad54ca1b82fd852a5e"
   },
   "figures": [
     {
@@ -33,7 +35,7 @@
       "legende": "Two speakers use the past to persuade"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -86,6 +88,17 @@
       "modifications": true,
       "perimetre": "Comparaison des deux commentaires aux cinq documents et au rapport. Rectification du cadre temporel du témoignage de Halifax, de l’analogie historique de Martineau et de la mise en cause du récit de Louis Hartz.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le fascicule officiel. Identifier celui qui entend. Au document 3, distinguez le rédacteur d’un journal cité aux lignes 10 à 18 et le gardien d’Halifax aux lignes 20 à 25. L’un imagine ce que ressentiraient les élus s’ils entendaient les cris. L’autre confesse que la répétition l’a conduit à les ignorer. Dix enchâsse ces voix dans sa pétition. Rapprochez son geste de celui d’Obama qui reprend devant le Congrès la lettre de Kennedy. Chaque texte fait entrer dans l’assemblée une voix venue d’ailleurs."
     }
   ]
 }

@@ -212,6 +212,8 @@
 | 2022 | BEL | AL | Étude de texte français (Lyon) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/brut.md) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 16 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 17 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun 18 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-18-juin_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun 19 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-19-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
@@ -565,6 +567,7 @@
 | 2024 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2026/guide.md) |
+| 2003 | ENS de Lyon | Second concours | Chimie | [md](2003/ens-de-lyon/ens-de-lyon_second-concours_chimie_2003/brut.md) | [md](2003/ens-de-lyon/ens-de-lyon_second-concours_chimie_2003/guide.md) |
 | 2004 | ENS de Lyon | Second concours | Chimie | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_chimie_2004/brut.md) | [md](2004/ens-de-lyon/ens-de-lyon_second-concours_chimie_2004/guide.md) |
 | 2005 | ENS de Lyon | Second concours | Chimie | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_chimie_2005/brut.md) | [md](2005/ens-de-lyon/ens-de-lyon_second-concours_chimie_2005/guide.md) |
 | 2006 | ENS de Lyon | Second concours | Chimie | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_chimie_2006/guide.md) |
@@ -991,7 +994,10 @@
 | 2012 | X | PSI-PT | Informatique | [md](2012/x/x_psi-pt_informatique_2012/brut.md) | [md](2012/x/x_psi-pt_informatique_2012/guide.md) |
 | 2009 | X | PSI-PT | Informatique | [md](2009/x/x_psi-pt_informatique_2009/brut.md) | [md](2009/x/x_psi-pt_informatique_2009/guide.md) |
 | 2010 | X | PSI-PT | Informatique | [md](2010/x/x_psi-pt_informatique_2010/brut.md) | [md](2010/x/x_psi-pt_informatique_2010/guide.md) |
+| 2005 | X | PSI-PT | Informatique | [md](2005/x/x_psi-pt_informatique_2005/brut.md) | [md](2005/x/x_psi-pt_informatique_2005/guide.md) |
+| 2006 | X | PSI-PT | Informatique | [md](2006/x/x_psi-pt_informatique_2006/brut.md) | [md](2006/x/x_psi-pt_informatique_2006/guide.md) |
 | 2008 | X | PSI-PT | Informatique | [md](2008/x/x_psi-pt_informatique_2008/brut.md) | [md](2008/x/x_psi-pt_informatique_2008/guide.md) |
+| 2004 | X | PSI-PT | Informatique | [md](2004/x/x_psi-pt_informatique_2004/brut.md) | [md](2004/x/x_psi-pt_informatique_2004/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |
 | 2015 | X-ENS | PSI-PT | Informatique | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/brut.md) | [md](2015/x-ens/x-ens_psi-pt_informatique_2015/guide.md) |
 | 2015 | X-ENS | PSI | Modélisation | [md](2015/x-ens/x-ens_psi_modelisation_2015/brut.md) | [md](2015/x-ens/x-ens_psi_modelisation_2015/guide.md) |
