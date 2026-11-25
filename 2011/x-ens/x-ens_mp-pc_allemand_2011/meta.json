@@ -1,0 +1,72 @@
+{
+  "slug": "x-ens_mp-pc_allemand_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Le retour d’Andreas et la bibliothèque de demain",
+  "duree": "Version et expression écrite durent chacune une heure trente. Les deux gardes interdisent le dictionnaire.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=2",
+    "sujet_sha256": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "texte_support": "Peter Stamm, An einem Tag wie diesem (2006), passage intitulé « Heimkehr ». Robert Darnton, Apologie du livre (2011), « L’avenir des bibliothèques ».",
+    "etablissements_imprimes": "École polytechnique, ESPCI et Écoles normales supérieures ; code XEULC",
+    "documents": [
+      {
+        "role": "sujet",
+        "partie": "Version en allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=2",
+        "pages_document": "8",
+        "sha256_pdf": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1"
+      },
+      {
+        "role": "sujet complémentaire",
+        "partie": "Expression écrite commune, réponses en allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20EXPRESSION%20ECRITE_LVA1.pdf",
+        "pages_document": "2",
+        "sha256_pdf": "b4f0b94bd49cfc0bc2707f8f351d07b353230dc049539355b8080371de2781af"
+      }
+    ],
+    "rapport": "Aucun rapport écrit propre à cette épreuve allemande dans les archives répertoriées."
+  },
+  "redaction": "Traduction française complète de l’extrait littéraire, synthèse du texte français et prise de position distincte en allemand, avec repères grammaticaux, contrôle des longueurs et schéma de lecture.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/memoire-du-village.svg",
+      "legende": "Le portillon, la clé et l’arrosoir ne donnent pas à Andreas le même degré de certitude."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "oraux_lyon",
+      "session": "oraux_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction française complète de l’extrait littéraire, synthèse du texte français et prise de position distincte en allemand, avec repères grammaticaux, contrôle des longueurs et schéma de lecture.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}

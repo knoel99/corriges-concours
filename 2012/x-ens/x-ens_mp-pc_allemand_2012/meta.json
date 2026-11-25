@@ -1,0 +1,79 @@
+{
+  "slug": "x-ens_mp-pc_allemand_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Une promenade urbaine et les appartenances multiples",
+  "duree": "Version et expression écrite durent chacune une heure trente. Les deux gardes interdisent le dictionnaire.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_version.pdf#page=2",
+    "sujet_sha256": "9f216e5704f726063a29e0313bae0348ecc1c975d6a4bce8b1d80f98fe8f33ab",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2012",
+    "texte_support": "Wilhelm Genazino, Mittelmäßiges Heimweh (2007). Mona Ozouf, Composition française. Retour sur une enfance bretonne (2009).",
+    "etablissements_imprimes": "École polytechnique, ESPCI et Écoles normales supérieures ; code XEULC",
+    "documents": [
+      {
+        "role": "sujet",
+        "partie": "Version en allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_version.pdf#page=2",
+        "pages_document": "6",
+        "sha256_pdf": "9f216e5704f726063a29e0313bae0348ecc1c975d6a4bce8b1d80f98fe8f33ab"
+      },
+      {
+        "role": "sujet complémentaire",
+        "partie": "Expression écrite commune, réponses en allemand",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_langue_vivante_expression.pdf",
+        "pages_document": "2",
+        "sha256_pdf": "b41b3ba045e401759179732cb405779b4019b0d60d9163f3ebff111d22a09312"
+      },
+      {
+        "role": "rapport",
+        "partie": "Rapport d’allemand",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2012/PC/2012MP_PCrapport_LVAllemand_XEULC.pdf",
+        "pages_document": "3",
+        "sha256_pdf": "5c594a829d709caf70ef2817f63667da4a821ebf72e6766357e2fd2ffa4a3f3e"
+      }
+    ],
+    "portee_rapport": "Rapport de Françoise Dablanc, expression écrite uniquement ; 77 candidats MP et 61 PC."
+  },
+  "redaction": "Traduction française complète de l’extrait littéraire, synthèse du texte français et prise de position distincte en allemand, avec repères grammaticaux, contrôle des longueurs et schéma de lecture.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/temps-de-la-promenade.svg",
+      "legende": "Le récit de la promenade relie quatre repères temporels à des actes distincts."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "oraux_lyon",
+      "session": "oraux_lyon",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction française complète de l’extrait littéraire, synthèse du texte français et prise de position distincte en allemand, avec repères grammaticaux, contrôle des longueurs et schéma de lecture.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
