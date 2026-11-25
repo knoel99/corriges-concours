@@ -1,0 +1,541 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_anglais-oral_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Anglais (oral)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 49,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Fascicule%20SES%202026.pdf#page=10",
+    "sujet_sha256": "9af9d457809faa26a8ff73a93ab94300204afcf4089d3d71f0ae109381941358",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Fascicule%20SES%202026.pdf#page=19",
+    "rapport_sha256": "cce2c8b96882ea064fcfcbc3b70755ecb825b5c38973678634991eae4dd71bd3",
+    "documents": [
+      {
+        "numero": 1,
+        "titre_fascicule": "A Confederate statue is restored as part of Trump’s efforts to reshape how history is told",
+        "publication": "Associated Press News",
+        "date_fascicule": "30/10/2025",
+        "portee": "article publié",
+        "reference": "https://apnews.com/article/3b0e8fd940a6bb6432992bb615b66336"
+      },
+      {
+        "numero": 2,
+        "titre_fascicule": "ABC takes Jimmy Kimmel off air over Charlie Kirk comments",
+        "publication": "BBC",
+        "date_fascicule": "18/09/2025",
+        "portee": "article publié",
+        "reference": "https://www.bbc.com/news/articles/c203n52x1y9o"
+      },
+      {
+        "numero": 3,
+        "titre_fascicule": "Trump orders government to stop using Anthropic in battle over AI use",
+        "publication": "BBC",
+        "date_fascicule": "28/02/2026",
+        "portee": "article publié",
+        "reference": "https://www.bbc.com/news/articles/cn48jj3y8ezo"
+      },
+      {
+        "numero": 4,
+        "titre_fascicule": "Sculpting jaws, giving scores: Inside the world of looksmaxxing",
+        "publication": "BBC",
+        "date_fascicule": "15/03/2026",
+        "portee": "article publié",
+        "reference": "https://www.bbc.com/news/articles/cx28z4zypkno"
+      },
+      {
+        "numero": 5,
+        "titre_fascicule": "’I only talk to my friends on my phone – I don’t meet them’",
+        "publication": "BBC",
+        "date_fascicule": "03/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.bbc.com/news/articles/cdxpkxl5wqgo"
+      },
+      {
+        "numero": 6,
+        "titre_fascicule": "Anti-social: It’s fads, not friends, which now dominate our feeds",
+        "publication": "BBC",
+        "date_fascicule": "22/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.bbc.com/worklife/article/20260520-how-social-media-ceased-to-be-social"
+      },
+      {
+        "numero": 7,
+        "titre_fascicule": "Supreme Court strikes down Trump tariffs, rebuking president’s signature economic policy",
+        "publication": "CNBC",
+        "date_fascicule": "20/02/2026",
+        "portee": "partielle",
+        "reference": "https://www.cnbc.com/2026/02/20/supreme-court-trump-tariffs-ruling.html",
+        "complement": {
+          "Arrêt de la Cour suprême": "https://www.law.cornell.edu/supremecourt/text/24-1287"
+        }
+      },
+      {
+        "numero": 8,
+        "titre_fascicule": "Defense tech companies are dropping Claude after Pentagon’s Anthropic blacklist",
+        "publication": "CNBC",
+        "date_fascicule": "04/03/2026",
+        "portee": "article publié",
+        "reference": "https://longbridge.com/en/news/277793961"
+      },
+      {
+        "numero": 9,
+        "titre_fascicule": "Kennedy Center board votes to rename it ‘Trump Kennedy Center’",
+        "publication": "CNN",
+        "date_fascicule": "18/12/2025",
+        "portee": "article publié",
+        "reference": "https://kesq.com/news/national-politics/cnn-us-politics/2025/12/18/kennedy-center-board-votes-to-rename-it-trump-kennedy-center/"
+      },
+      {
+        "numero": 10,
+        "titre_fascicule": "US overhauls childhood vaccine schedule to recommend fewer shots",
+        "publication": "CNN",
+        "date_fascicule": "06/01/2026",
+        "portee": "article publié",
+        "reference": "https://abc17news.com/cnn-health/2026/01/05/us-overhauls-childhood-vaccine-schedule-to-recommend-fewer-shots/"
+      },
+      {
+        "numero": 11,
+        "titre_fascicule": "Eurovision’s Angela Scanlon ‘scared walking in the dark’ as she makes grim confession",
+        "publication": "Daily Mirror (London, UK)",
+        "date_fascicule": "13/05/2026",
+        "portee": "partielle",
+        "reference": "https://www.mirror.co.uk/3am/celebrity-news/strictly-angela-scanlon-jess-phillips-37145421"
+      },
+      {
+        "numero": 12,
+        "titre_fascicule": "Families say cost of housing means they’ll have fewer or no children",
+        "publication": "NPR",
+        "date_fascicule": "21/10/2026",
+        "portee": "article publié",
+        "reference": "https://www.opb.org/article/2025/10/31/families-say-cost-of-housing-means-they-ll-have-fewer-or-no-children/"
+      },
+      {
+        "numero": 13,
+        "titre_fascicule": "A frog, a lobster and a unicorn walked into a No Kings protest",
+        "publication": "NPR",
+        "date_fascicule": "24/10/2025",
+        "portee": "article publié",
+        "reference": "https://www.vpm.org/npr-news/2025-10-24/a-frog-a-lobster-and-a-unicorn-walked-into-a-no-kings-protest/"
+      },
+      {
+        "numero": 14,
+        "titre_fascicule": "Lockdown drills are a fact of life in U.S. schools. What does that mean for students?",
+        "publication": "NPR",
+        "date_fascicule": "30/10/2025",
+        "portee": "article publié",
+        "reference": "https://www.vpm.org/npr-news/2025-10-28/lockdown-drills-are-a-fact-of-life-in-u-s-schools-what-does-that-mean-for-students/"
+      },
+      {
+        "numero": 15,
+        "titre_fascicule": "Iran strikes were launched without approval from Congress, deeply dividing lawmakers",
+        "publication": "NPR",
+        "date_fascicule": "28/02/2026",
+        "portee": "article publié",
+        "reference": "https://thepublicsradio.org/npr/iran-strikes-were-launched-without-approval-from-congress-deeply-dividing-lawmakers/"
+      },
+      {
+        "numero": 16,
+        "titre_fascicule": "Minneapolis protesters vent their outrage after an ICE officer kills a woman",
+        "publication": "PBS News",
+        "date_fascicule": "28/01/2026",
+        "portee": "article publié",
+        "reference": "https://www.pbs.org/newshour/nation/watch-live-noem-holds-news-conference-after-deadly-shooting-by-ice-in-minneapolis"
+      },
+      {
+        "numero": 17,
+        "titre_fascicule": "U.S. strikes Venezuela and says leader Maduro has been captured and flown out of the country",
+        "publication": "PBS News",
+        "date_fascicule": "03/01/2026",
+        "portee": "article publié",
+        "reference": "https://www.pbs.org/newshour/world/us-strikes-venezuela-and-says-its-leader-maduro-has-been-captured-and-flown-out-of-the-country"
+      },
+      {
+        "numero": 18,
+        "titre_fascicule": "Appeals court approves sweeping abortion pill restrictions, teeing up SCOTUS showdown",
+        "publication": "Politico",
+        "date_fascicule": "01/05/2026",
+        "portee": "partielle",
+        "reference": "https://www.politico.com/news/2026/05/01/appeals-court-approves-sweeping-abortion-pill-restrictions-teeing-up-scotus-showdown-00903298",
+        "complement": {
+          "Dépêche AP sur la décision": "https://apnews.com/article/40d60a9bf6212480e527480757b603c3"
+        }
+      },
+      {
+        "numero": 19,
+        "titre_fascicule": "Number of people who say Britons must be ‘born British’ is rising, study shows",
+        "publication": "The Guardian",
+        "date_fascicule": "29/12/2025",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/uk-news/2025/dec/29/number-people-britons-must-be-born-in-uk-rising-study"
+      },
+      {
+        "numero": 20,
+        "titre_fascicule": "The royal family is edging toward modernity – but in 2026, the public will expect yet more transparency",
+        "publication": "The Guardian",
+        "date_fascicule": "30/12/2025",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/commentisfree/2025/dec/30/charles-cancer-royal-family-finances-monarchy-transparency"
+      },
+      {
+        "numero": 21,
+        "titre_fascicule": "How to win friends and influencers: Labour’s new social media strategy is a step into the future",
+        "publication": "The Guardian",
+        "date_fascicule": "20/02/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/commentisfree/2026/feb/20/labour-no-10-influencers-content-creators-social-media"
+      },
+      {
+        "numero": 22,
+        "titre_fascicule": "Row over tuition fees cut for European students threatens Starmer’s EU reset",
+        "publication": "The Guardian",
+        "date_fascicule": "15/03/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/politics/2026/mar/15/row-tuition-fees-cut-european-students-threatens-starmer-eu-reset"
+      },
+      {
+        "numero": 23,
+        "titre_fascicule": "Why are respected film-makers suddenly embracing AI?",
+        "publication": "The Guardian",
+        "date_fascicule": "21/04/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/film/2026/apr/21/ai-film-soderbergh-aronofsky"
+      },
+      {
+        "numero": 24,
+        "titre_fascicule": "’Pocket-sized symbol of colonial loot’: how New York’s mayor revived Koh-i-noor diamond debate",
+        "publication": "The Guardian",
+        "date_fascicule": "05/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/world/2026/may/05/koh-i-noor-diamond-colonialism-controversy-king-charles-us-visit"
+      },
+      {
+        "numero": 25,
+        "titre_fascicule": "’It’s about recognising our role in history’: Bradford exhibition to revisit live Somali display",
+        "publication": "The Guardian",
+        "date_fascicule": "09/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/uk-news/2026/may/09/bradford-exhibition-to-revisit-live-somali-display"
+      },
+      {
+        "numero": 26,
+        "titre_fascicule": "Don’t let Farage and Reform divide us, Labour’s Sarwar urges Holyrood leaders",
+        "publication": "The Guardian",
+        "date_fascicule": "10/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/politics/2026/may/10/anas-sarwar-labour-scotland-holyrood-farage-reform-snp"
+      },
+      {
+        "numero": 27,
+        "titre_fascicule": "I’ve interviewed Reform UK voters – and they’re much more progressive than you might think",
+        "publication": "The Guardian",
+        "date_fascicule": "18/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/commentisfree/2026/may/18/reform-voters-progressive-post-industrial-northern-england"
+      },
+      {
+        "numero": 28,
+        "titre_fascicule": "The result of normalising Reform’s ideas? Neighbour is turned against neighbour",
+        "publication": "The Guardian",
+        "date_fascicule": "18/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/commentisfree/2026/may/18/reform-uk-neighbours-immigration-ethnic-minorities"
+      },
+      {
+        "numero": 29,
+        "titre_fascicule": "AI ‘art’ is boring, soulless theft – and when I see it as an artist I see red",
+        "publication": "The Guardian",
+        "date_fascicule": "28/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/technology/commentisfree/2026/may/28/ai-art-is-boring-soulless-theft-visual-artist"
+      },
+      {
+        "numero": 30,
+        "titre_fascicule": "Alan Milburn is right, a young generation has been betrayed. Forget Tony Blair: we must attend to this",
+        "publication": "The Guardian",
+        "date_fascicule": "28/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/commentisfree/2026/may/28/alan-milburn-youth-unemployment-labour-tony-blair"
+      },
+      {
+        "numero": 31,
+        "titre_fascicule": "Air conditioning: the wealthy and well can afford it, but disabled people who need it most can’t",
+        "publication": "The Guardian",
+        "date_fascicule": "29/05/2026",
+        "portee": "article publié",
+        "reference": "https://www.theguardian.com/commentisfree/2026/may/29/people-disabilities-heatwaves-uncomfortable-safe-climate-crisis"
+      },
+      {
+        "numero": 32,
+        "titre_fascicule": "The next wave of tech will turn users into spies and voyeurs. So leave it to the psychopaths",
+        "publication": "The Herald (Glasgow, UK)",
+        "date_fascicule": "14/05/2026",
+        "portee": "titre seul"
+      },
+      {
+        "numero": 33,
+        "titre_fascicule": "Trigger warnings: there really is no need for them…",
+        "publication": "The Journal (Newcastle, UK)",
+        "date_fascicule": "04/12/2025",
+        "portee": "titre seul"
+      },
+      {
+        "numero": 34,
+        "titre_fascicule": "Robert F Kennedy Jr: 1 year of failure",
+        "publication": "The Lancet",
+        "date_fascicule": "28/02/2026",
+        "portee": "article publié",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/41763727/",
+        "complement": {
+          "Éditorial de The Lancet repris par Portside": "https://portside.org/node/39088/printable/print"
+        }
+      },
+      {
+        "numero": 35,
+        "titre_fascicule": "The biggest winner of the Bad Bunny Super Bowl halftime show? The NFL",
+        "publication": "The Los Angeles Times",
+        "date_fascicule": "13/02/2026",
+        "portee": "partielle",
+        "reference": "https://www.latimes.com/delos/newsletter/2026-02-13/bad-bunny-super-bowl-halftime-show-nfl-global-expansion"
+      },
+      {
+        "numero": 36,
+        "titre_fascicule": "Zohran Mamdani Is Elected Mayor of New York City",
+        "publication": "The New York Times",
+        "date_fascicule": "04/11/2025",
+        "portee": "partielle",
+        "complement": {
+          "Résultat vérifié par Associated Press": "https://apnews.com/article/070d5b6e5544cfe6809ade6fa8b8b74a"
+        }
+      },
+      {
+        "numero": 37,
+        "titre_fascicule": "Canada Flexes on Global Stage With an Eye to Its Own Survival",
+        "publication": "The New York Times",
+        "date_fascicule": "20/01/2026",
+        "portee": "partielle",
+        "reference": "https://www.derstandard.at/story/3000000305001/canada-flexes-on-global-stage-with-an-eye-to-its-own-survival",
+        "complement": {
+          "Discours de Mark Carney à Davos": "https://www.pm.gc.ca/en/news/speeches/2026/01/20/principled-and-pragmatic-canadas-path-prime-minister-carney-addresses"
+        }
+      },
+      {
+        "numero": 38,
+        "titre_fascicule": "The Trump Administration Is Lying to Our Faces. Congress Must Act",
+        "publication": "The New York Times",
+        "date_fascicule": "25/01/2026",
+        "portee": "article publié",
+        "reference": "https://www.sanjuandailystar.com/post/the-trump-administration-is-lying-to-our-faces-congress-must-act"
+      },
+      {
+        "numero": 39,
+        "titre_fascicule": "The awful truth is that ‘toxic’ men might just have a point",
+        "publication": "The Telegraph",
+        "date_fascicule": "26/03/2026",
+        "portee": "article publié",
+        "reference": "https://www.telegraph.co.uk/news/2026/03/26/awful-truth-toxic-men-might-just-have-point/"
+      },
+      {
+        "numero": 40,
+        "titre_fascicule": "It’s a misogynistic lie that Elizabeth I was trans",
+        "publication": "The Telegraph",
+        "date_fascicule": "01/04/2026",
+        "portee": "article publié",
+        "reference": "https://www.telegraph.co.uk/news/2026/04/01/claiming-elizabeth-i-was-trans-is-misogyny/"
+      },
+      {
+        "numero": 41,
+        "titre_fascicule": "The trouble and strife with the ‘tradwife’ way of living",
+        "publication": "The Telegraph",
+        "date_fascicule": "11/04/2026",
+        "portee": "article publié",
+        "reference": "https://www.telegraph.co.uk/news/2026/04/11/the-trouble-and-strife-with-the-tradwife-way-of-life/"
+      },
+      {
+        "numero": 42,
+        "titre_fascicule": "Western society’s prejudice against masculinity is becoming toxic",
+        "publication": "The Telegraph",
+        "date_fascicule": "18/04/2026",
+        "portee": "article publié",
+        "reference": "https://www.telegraph.co.uk/news/2026/04/18/western-societys-prejudice-against-masculinity-is-becoming/"
+      },
+      {
+        "numero": 43,
+        "titre_fascicule": "How would the UK rejoin the EU?",
+        "publication": "The Times",
+        "date_fascicule": "17/05/2026",
+        "portee": "partielle",
+        "reference": "https://www.thetimes.com/uk/politics/article/how-would-the-uk-rejoin-the-eu-tjx3hldd6",
+        "complement": {
+          "Article 49 du traité sur l’Union européenne": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016M049"
+        }
+      },
+      {
+        "numero": 44,
+        "titre_fascicule": "Higher education’s frozen yogurt moment",
+        "publication": "The Washington Post",
+        "date_fascicule": "19/04/2026",
+        "portee": "article publié",
+        "reference": "https://www.washingtonpost.com/opinions/2026/04/19/yale-report-shows-colleges-universities-face-reckoning/"
+      },
+      {
+        "numero": 45,
+        "titre_fascicule": "’Out of Touch’: Democrats Criticize Trump After He Dismisses Soaring Gas Prices as ‘Peanuts’",
+        "publication": "Time",
+        "date_fascicule": "20/05/2026",
+        "portee": "article publié",
+        "reference": "https://time.com/article/2026/05/20/democrats-criticize-trump-dismissing-soaring-gas-prices-iran-war-fallout/"
+      },
+      {
+        "numero": 46,
+        "titre_fascicule": "’New girls clubs’ took on the old boys. Now Trump wants to ban them",
+        "publication": "USA Today",
+        "date_fascicule": "15/04/2026",
+        "portee": "partielle",
+        "reference": "https://www.usatoday.com/story/money/2026/04/15/trump-dei-crackdown-targets-women-networking/89426934007",
+        "complement": {
+          "Présentation de l’enquête par Jessica Guynn": "https://www.linkedin.com/posts/jessicaguynn_new-girls-clubs-took-on-the-old-boys-now-activity-7450208865066987521-dcIh"
+        }
+      },
+      {
+        "numero": 47,
+        "titre_fascicule": "The rich hate California’s billionaire tax. That’s why we need it",
+        "publication": "USA Today",
+        "date_fascicule": "06/05/2026",
+        "portee": "partielle",
+        "reference": "https://www.usatoday.com/story/opinion/columnist/2026/05/06/california-tax-billionaires-newsom-steyer-election/89879558007/",
+        "complement": {
+          "Début de la chronique référencé par RealClearPolitics": "https://www.realclearpolitics.com/2026/05/06/the_rich_hate_cas_billionaire_tax_thats_why_we_need_it_698954.html"
+        }
+      },
+      {
+        "numero": 48,
+        "titre_fascicule": "Trump is betraying pro-lifers on abortion pills",
+        "publication": "USA Today",
+        "date_fascicule": "19/05/2026",
+        "portee": "partielle",
+        "reference": "https://www.usatoday.com/story/opinion/columnist/2026/05/19/supreme-court-abortion-pill-mifepristone-trump-pro-life/90093273007/",
+        "complement": {
+          "Présentation attribuée à USA Today": "https://ground.news/article/abortion-pill-lawsuit-leaves-trump-silent"
+        }
+      },
+      {
+        "numero": 49,
+        "titre_fascicule": "Trump couldn’t kill Obamacare, so he made it more expensive",
+        "publication": "USA Today",
+        "date_fascicule": "27/05/2026",
+        "portee": "partielle",
+        "reference": "https://www.usatoday.com/story/opinion/columnist/2026/05/27/healthcare-costs-blame-trump-affordable-care-act/90198503007/",
+        "complement": {
+          "Extrait de la chronique": "https://qoshe.com/usa-today/chris-brennan-/republicans-couldn-t-replace-obamacare-so-they-made-it-more-expensive-/188574508"
+        }
+      }
+    ],
+    "precision": "Le fascicule énumère 49 articles aux pages 10 à 12, sans reproduire les feuillets distribués. Les deux éditions commentent 36 textes publiés consultés en entier et proposent 11 préparations limitées aux passages, titres ou sources complémentaires identifiés. Pour les numéros 32 et 33, seule la référence du jury a été retrouvée. Les coupes exactes de l’épreuve restent inconnues."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1 — Restoring the Albert Pike statue",
+      "2 — Jimmy Kimmel leaves the air after comments about Charlie Kirk",
+      "3 — Federal agencies and Anthropic",
+      "4 — Online appearance ratings",
+      "5 — A Bradford social media trial",
+      "6 — A social feed that carries fewer friends",
+      "8 — Contractors react to the Anthropic decision",
+      "9 — A vote to rename the Kennedy Center",
+      "10 — A change to federal childhood vaccination guidance",
+      "12 — Housing costs and plans for a family",
+      "13 — Animal costumes at a No Kings protest",
+      "14 — School drills and the experience of safety",
+      "15 — Military action in Iran and authority in Congress",
+      "16 — Protests after the death of Renee Nicole Good",
+      "17 — Venezuela and the capture of Nicolás Maduro",
+      "19 — Who counts as British?",
+      "20 — The monarchy and transparency",
+      "21 — Labour and political influencers",
+      "22 — Fees for European students",
+      "23 — Film-makers experimenting with AI",
+      "24 — The Koh-i-noor",
+      "25 — Bradford's exhibition and the Somali participants of 1904",
+      "26 — Anas Sarwar after the Holyrood election",
+      "27 — Speaking to Reform voters in Mansfield",
+      "28 — Political rhetoric and local relationships",
+      "29 — An artist at a concert considers AI",
+      "30 — Reading Alan Milburn's report",
+      "31 — Unequal access to cooling",
+      "34 — Testing a health secretary’s record",
+      "38 — Who should establish what happened in Minneapolis?",
+      "39 — Explaining the appeal of the manosphere",
+      "40 — Elizabeth I, fiction and historical evidence",
+      "41 — Tradwife imagery and the missing career",
+      "42 — The public meaning of masculinity",
+      "44 — What can a university reasonably promise?",
+      "45 — A word about fuel prices becomes the story"
+    ],
+    "questions_partiellement_traitees": [
+      "7 — Tariffs and emergency powers — Titre de CNBC et arrêt rendu le 20 février. Article intégral indisponible.",
+      "11 — Angela Scanlon and safety in public space — Titre du fascicule et présentation publique de l’interview.",
+      "18 — An appellate ruling and the prospect of Supreme Court review — Titre de Politico et dépêche AP sur la décision à la date du sujet.",
+      "35 — Who gains from the Super Bowl halftime show? — Passages publics de la chronique du Los Angeles Times.",
+      "36 — Zohran Mamdani’s election in New York City — Titre du fascicule et résultat de l’élection confirmé par Associated Press.",
+      "37 — Canada at Davos — Début de l’article repris par Der Standard, rapport du jury et discours intégral de Davos.",
+      "43 — What would rejoining the EU involve? — Passages publics de l’article et procédure prévue à l’article 49 du traité.",
+      "46 — Workplace networks and a disputed retreat — Présentation publique de Jessica Guynn et identification de son enquête.",
+      "47 — Opposition to California’s proposed billionaire tax — Titre et début de la chronique.",
+      "48 — A columnist challenges a political ally — Titre et présentation attribuée à USA Today.",
+      "49 — The cost of keeping health insurance — Extrait attribué à Chris Brennan."
+    ],
+    "questions_non_traitees": [
+      "32 — Technology and the privacy of people nearby",
+      "33 — The case against trigger warnings"
+    ],
+    "motif": "Le fascicule énumère 49 articles aux pages 10 à 12, sans reproduire les feuillets distribués. Les deux éditions commentent 36 textes publiés consultés en entier et proposent 11 préparations limitées aux passages, titres ou sources complémentaires identifiés. Pour les numéros 32 et 33, seule la référence du jury a été retrouvée. Les coupes exactes de l’épreuve restent inconnues."
+  },
+  "figures": [
+    {
+      "fichier": "figures/institutions.svg",
+      "legende": "What has actually been decided?",
+      "question": "Explication de presse"
+    },
+    {
+      "fichier": "figures/memory.svg",
+      "legende": "Who gives a public object meaning?",
+      "question": "Explication de presse"
+    },
+    {
+      "fichier": "figures/evidence.svg",
+      "legende": "How far can this evidence take us?",
+      "question": "Explication de presse"
+    },
+    {
+      "fichier": "figures/costs.svg",
+      "legende": "Whose budget and which cost?",
+      "question": "Explication de presse"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule et du rapport anglais, recherche des 49 titres, comparaison des articles et de leurs reprises identifiées, explications en anglais, pistes de l’entretien, rédaction de deux éditions et quatre figures. Le fascicule énumère 49 articles aux pages 10 à 12, sans reproduire les feuillets distribués. Les deux éditions commentent 36 textes publiés consultés en entier et proposent 11 préparations limitées aux passages, titres ou sources complémentaires identifiés. Pour les numéros 32 et 33, seule la référence du jury a été retrouvée. Les coupes exactes de l’épreuve restent inconnues."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
