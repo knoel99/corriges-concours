@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp_informatique-a_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2015,
+    "duree_heures": 4
+  },
+  "questions": 23,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/sujets/sujet_mpi_infoa2015.pdf",
+    "sujet_sha256": "26b8532a7f1a740c1bf99e55ba9e47910da74b1f56a4ee0af77fae8c6faaec2c",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_i_rap_einfoa.pdf",
+    "rapport_sha256": "e44295770f933ce1b069bd0df1f7dc8161ec149304ef1985bf7313dfe08e9f20"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-arbres.svg",
+      "question": "14",
+      "legende": "Les deux graphes de la figure 4. Le premier se divise depuis une racine, le second converge vers la tâche i."
+    },
+    {
+      "fichier": "figures/departage-de-hu.svg",
+      "question": "22",
+      "legende": "Le départage des racines de profondeur deux détermine si le deuxième créneau peut occuper les deux processeurs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 23 questions du sujet XULCR confrontée au sujet et au rapport du jury, aux graphes de dépendance et aux signatures de la bibliothèque. Preuve d’optimalité de Hu par seuils de profondeur. Exécution du Caml sur 3297 couples graphe–nombre de processeurs, dont 459 forêts validées par programmation dynamique exhaustive. Deux schémas originaux."
+    }
+  ]
+}
