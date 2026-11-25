@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_informatique-option_1999",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 1999
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-e76368775eb14f5d4e71",
+    "rapport_jury": "",
+    "sha256_sujet": "19d92541ff70e1b7d2a1318adcf61f0ea36992ffbd547f9b1b1f2e4ca2581458"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-politiques.svg",
+      "question": "5.b",
+      "legende": "Dans les deux arbres, le fils vrai est à gauche (trait plein) et le fils faux à droite (pointillés). Les feuilles 1 sont colorées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des six pages de la composition de trois heures. Tables et implications, traduction des cinq règles, arbres réduits des variantes, décomposition par restrictions, programmes en OCaml et preuve de leur correction et de leur terminaison, lignes imprimées et nombre de profils. Schéma de deux arbres complets dans l’ordre du sujet.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
