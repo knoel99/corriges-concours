@@ -1,0 +1,45 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2006,
+    "duree_heures": 4
+  },
+  "questions": 29,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2006/sujet-ecrit-2006-i_mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 60.24M, sept pages. Écrit de quatre heures commun aux ENS de Paris, Lyon et Cachan en MP groupe I, à Paris et Lyon en PC groupe I.",
+    "sujet_sha256": "c7df9a885036b9acb5ff50be768ad44af08fd0973347dfe3453ce458aee35728",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2006/rapport-2006-i_ecrit_mathematiques_informatique.pdf",
+    "rapport_sha256": "f5174c59fb69cb17c73b4bb32f578f29ba709556465c1088519a7fd180b6d2f3"
+  },
+  "figures": [
+    {
+      "fichier": "figures/precision-newton.svg",
+      "question": "1.6",
+      "legende": "Figure 1 — Les premières itérations garantissent respectivement un, deux, quatre et huit coefficients exacts pour la racine de terme constant un."
+    },
+    {
+      "fichier": "figures/quotients-complets.svg",
+      "question": "3.6",
+      "legende": "Figure 2 — Pour D égal à x puissance quatre plus un, les quotients complets reviennent au même état dès le premier rang positif."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les quatre parties sur les séries de Laurent, les convergents, la meilleure approximation et les intégrales pseudo-hyperelliptiques. Pseudo-code, coût, précision, signes et normalisation de la primitive. Le cas des dénominateurs nuls sur un corps général est explicitement distingué."
+    }
+  ]
+}
