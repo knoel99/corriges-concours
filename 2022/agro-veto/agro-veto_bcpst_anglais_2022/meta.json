@@ -1,0 +1,58 @@
+{
+  "slug": "agro-veto_bcpst_anglais_2022",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Anglais",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/a-bcpst_lvo-anglais_sp.pdf",
+    "sujet_sha256": "75445d89071eb649556d11871bc1a437b9729fcb928bca18e690e3b1d0951823",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_a-bcpst_anglais_2022.pdf",
+    "rapport_jury_sha256": "9f3f9d4ed8fe726edb363c9aa0333aa34cd9c2d8f7ef74c49b56e8bb96b0ea75",
+    "bilan_X_BIO": "https://concours-agro-veto.fr/sites/default/files/media/2025-10/bilan-concours-a-bcpst-session-2022.pdf#page=4"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I · Thème · 6 points",
+      "II · Compréhension · 6 points",
+      "III · Expression · 8 points"
+    ],
+    "precision": "Traduction complète du texte sur Mirabel, compréhension de la décision du Beano et de la position de la dermatologue, essai sur la place des sentiments et de l’inclusion."
+  },
+  "longueurs": {
+    "comprehension": 100,
+    "essay": 209,
+    "methode": "groupes séparés par un espace"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Que signifie le changement de nom dans The Beano ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des feuillets et du rapport officiel de cette session. Traduction complète du texte sur Mirabel, compréhension de la décision du Beano et de la position de la dermatologue, essai sur la place des sentiments et de l’inclusion. Rédaction du brut, du guidé et de la figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
