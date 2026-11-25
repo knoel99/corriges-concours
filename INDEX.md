@@ -653,7 +653,9 @@
 | 2014 | ENS | MP | Informatique-mathématiques | [md](2014/ens/ens_mp_informatique-mathematiques_2014/brut.md) | [md](2014/ens/ens_mp_informatique-mathematiques_2014/guide.md) |
 | 2015 | ENS | MP | Informatique-mathématiques | [md](2015/ens/ens_mp_informatique-mathematiques_2015/brut.md) | [md](2015/ens/ens_mp_informatique-mathematiques_2015/guide.md) |
 | 2016 | ENS | MP | Informatique-mathématiques | [md](2016/ens/ens_mp_informatique-mathematiques_2016/brut.md) | [md](2016/ens/ens_mp_informatique-mathematiques_2016/guide.md) |
+| 2017 | ENS | Cycle master mathématiques | Français et culture générale | [md](2017/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2017/brut.md) | [md](2017/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2017/guide.md) |
 | 2017 | ENS | MP | Informatique-mathématiques | [md](2017/ens/ens_mp_informatique-mathematiques_2017/brut.md) | [md](2017/ens/ens_mp_informatique-mathematiques_2017/guide.md) |
+| 2018 | ENS | Cycle master mathématiques | Français et culture générale | [md](2018/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2018/brut.md) | [md](2018/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2018/guide.md) |
 | 2018 | ENS | MP | Informatique-mathématiques | [md](2018/ens/ens_mp_informatique-mathematiques_2018/brut.md) | [md](2018/ens/ens_mp_informatique-mathematiques_2018/guide.md) |
 | 2019 | ENS | MP | Informatique-mathématiques | [md](2019/ens/ens_mp_informatique-mathematiques_2019/brut.md) | [md](2019/ens/ens_mp_informatique-mathematiques_2019/guide.md) |
 | 2020 | ENS | MP | Informatique-mathématiques | [md](2020/ens/ens_mp_informatique-mathematiques_2020/brut.md) | [md](2020/ens/ens_mp_informatique-mathematiques_2020/guide.md) |
