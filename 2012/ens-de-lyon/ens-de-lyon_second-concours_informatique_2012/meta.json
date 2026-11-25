@@ -1,0 +1,48 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2012",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2012,
+    "duree_heures": 3
+  },
+  "questions": 29,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2012/Ecrit_Informatique2012.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2012/rap_2c2012_e_info.pdf",
+    "sujet_sha256": "f328916bb33b13e77193c2a9ca90f5ed1c1abf8ac3f09cbccb6a0373986ff95c",
+    "rapport_sha256": "3316aead710dd4f148ef596264e98a6fe0f9e9a4b3d32582afbdab755f4205fc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycle-des-restes.svg",
+      "question": "I.3",
+      "legende": "Les six restes non nuls apparaissent avant le retour à 1. Cette orbite explique aussi le nombre cyclique 142857."
+    },
+    {
+      "fichier": "figures/poids-et-restes.svg",
+      "question": "II.4",
+      "legende": "Lecture du mot 1101 en commençant par les unités. Les poids alternent entre un et deux. Le nombre représenté est onze, de reste deux."
+    },
+    {
+      "fichier": "figures/propagation-de-retenue.svg",
+      "question": "IV.4",
+      "legende": "Treize s’écrit 111 en ternaire équilibré. Son successeur vaut 27 − 9 − 3 − 1. La retenue traverse les trois chiffres de droite."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 29 questions du sujet et confrontation au rapport officiel. Lecture des flèches de la figure 2 et de la formulation imprimée en III.7, corrigeant la borne, le produit et les restes. Exécution de 1601 conversions et successeurs, de 40 401 additions et différences sur des entrées avec zéros non significatifs, et contrôle des automates. Trois figures originales."
+    }
+  ]
+}
