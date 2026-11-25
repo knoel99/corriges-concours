@@ -9,12 +9,13 @@ on:
         options:
           - corriges
           - tableau
+          - fichiers
           - les-deux
 permissions:
   contents: read
 jobs:
   bilan:
-    if: inputs.controle != 'tableau'
+    if: inputs.controle == 'corriges' || inputs.controle == 'les-deux'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
@@ -42,3 +43,16 @@ jobs:
         with:
           name: preuves-tableau-x-ens
           path: preuves-tableau.json
+  fichiers:
+    if: inputs.controle == 'fichiers'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -q && sudo apt-get install -y poppler-utils
+      - name: Comparer les fichiers téléchargeables des deux éditions
+        run: python3 scripts/verifier_fichiers_site.py --json preuves-fichiers.json >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: preuves-fichiers-x-ens
+          path: preuves-fichiers.json

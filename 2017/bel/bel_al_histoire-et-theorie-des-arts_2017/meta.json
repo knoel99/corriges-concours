@@ -1,0 +1,77 @@
+{
+  "slug": "bel_al_histoire-et-theorie-des-arts_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire et théorie des arts",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire et théorie des arts",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-en-arts_1506586794135_0.pdf#page=4",
+    "sujet_sha256": "8fa2ab57573904dadbdc2026c736ff58ba60169e4660c96e6591c867542cfef7",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/Histoire%20et%20th%C3%A9orie%20des%20arts_2017.pdf#page=1",
+    "rapport_sha256": "9cc1bdf23678cad0ae14e0b858795a3a74555b8df5bf80ad23177f06111cbb61",
+    "references": [
+      "https://museoreinasofia.es/en/collections/artwork/guernica-0/",
+      "https://museejenisch.ch/expositions/ferdinand-hodler-revoir-valentine/",
+      "https://mediation.centrepompidou.fr/education/ressources/ENS-BOLTANSKI/ENS-boltanski.htm"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/douleur.svg",
+      "question": "Dissertation",
+      "legende": "Ce qui souffre, ce qui montre et ce qui porte la trace"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des exigences sur le motif, les sens du verbe incarner, la douleur animale et les transpositions dans les objets et les paysages."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la composition, du guide et du schéma pour le sujet de six heures."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Distinction de la douleur des vivants et de la représentation d’un corps mort, du deuil humain et du sens métaphorique d’un paysage. Vérification des comparaisons et des références muséales. Vérification des deux éditions et du schéma."
+    }
+  ]
+}

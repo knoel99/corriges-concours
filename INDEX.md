@@ -196,6 +196,7 @@
 | 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2017 | BEL | AL | Espagnol (thème Lyon) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Histoire et théorie des arts | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/brut.md) | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/guide.md) |
 | 2017 | BEL | AL | Italien (thème Lyon) | [md](2017/bel/bel_al_italien-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_italien-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Portugais (thème Lyon) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Russe (thème Lyon) | [md](2017/bel/bel_al_russe-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_russe-theme-lyon_2017/guide.md) |
@@ -229,7 +230,9 @@
 | 2026 | BEL | AL | Philosophie (oral tronc commun 30 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun, autres tirages du jury) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
+| 2017 | BEL | AL | Études cinématographiques | [md](2017/bel/bel_al_etudes-cinematographiques_2017/brut.md) | [md](2017/bel/bel_al_etudes-cinematographiques_2017/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
+| 2017 | BEL | AL | Études théâtrales | [md](2017/bel/bel_al_etudes-theatrales_2017/brut.md) | [md](2017/bel/bel_al_etudes-theatrales_2017/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
 | 2026 | BEL | AL | Explication de documents historiques (Lyon) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/brut.md) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/guide.md) |
 | 2024 | BEL | AL | Géographie | [md](2024/bel/bel_al_geographie_2024/brut.md) | [md](2024/bel/bel_al_geographie_2024/guide.md) |
@@ -632,6 +635,10 @@
 | 2026 | ENS de Lyon | Second concours | Mathématiques | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Physique | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Espagnol (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Italien (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/guide.md) |
@@ -641,6 +648,11 @@
 | 2026 | ENS de Lyon | Séries A/L | Anglais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_anglais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_anglais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 1) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-1_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-1_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 2) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-2_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-2_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 3) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-3_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-3_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 4) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-4_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-4_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 5) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-5_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-5_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Espagnol (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Italien (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
@@ -685,6 +697,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2012 | ENS | MP | Informatique-mathématiques | [md](2012/ens/ens_mp_informatique-mathematiques_2012/brut.md) | [md](2012/ens/ens_mp_informatique-mathematiques_2012/guide.md) |
 | 2013 | ENS | MP | Informatique-mathématiques | [md](2013/ens/ens_mp_informatique-mathematiques_2013/brut.md) | [md](2013/ens/ens_mp_informatique-mathematiques_2013/guide.md) |
 | 2014 | ENS | MP | Informatique-mathématiques | [md](2014/ens/ens_mp_informatique-mathematiques_2014/brut.md) | [md](2014/ens/ens_mp_informatique-mathematiques_2014/guide.md) |
 | 2015 | ENS | MP | Informatique-mathématiques | [md](2015/ens/ens_mp_informatique-mathematiques_2015/brut.md) | [md](2015/ens/ens_mp_informatique-mathematiques_2015/guide.md) |
@@ -706,6 +719,7 @@
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
 | 2015 | ENS | PC | Chimie B | [md](2015/ens/ens_pc_chimie-b_2015/brut.md) | [md](2015/ens/ens_pc_chimie-b_2015/guide.md) |
 | 2016 | ENS | PC | Chimie B | [md](2016/ens/ens_pc_chimie-b_2016/brut.md) | [md](2016/ens/ens_pc_chimie-b_2016/guide.md) |
+| 2019 | ENS | PC | Chimie B | [md](2019/ens/ens_pc_chimie-b_2019/brut.md) | [md](2019/ens/ens_pc_chimie-b_2019/guide.md) |
 | 2020 | ENS | PC | Chimie B | [md](2020/ens/ens_pc_chimie-b_2020/brut.md) | [md](2020/ens/ens_pc_chimie-b_2020/guide.md) |
 | 2021 | ENS | PC | Chimie B | [md](2021/ens/ens_pc_chimie-b_2021/brut.md) | [md](2021/ens/ens_pc_chimie-b_2021/guide.md) |
 | 2022 | ENS | PC | Chimie B | [md](2022/ens/ens_pc_chimie-b_2022/brut.md) | [md](2022/ens/ens_pc_chimie-b_2022/guide.md) |
@@ -737,9 +751,11 @@
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique A) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/guide.md) |
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique B) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Allemand | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Allemand (oral) | [md](2024/ens-rennes/ens-rennes_d-e_allemand-oral_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_allemand-oral_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Anglais | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Anglais (oral) | [md](2024/ens-rennes/ens-rennes_d-e_anglais-oral_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_anglais-oral_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Espagnol | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Espagnol (oral) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol-oral_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol-oral_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Italien | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Allemand | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/guide.md) |
@@ -1045,6 +1061,7 @@
 | 2003 | X | PSI-PT | Informatique facultative | [md](2003/x/x_psi-pt_informatique-facultative_2003/brut.md) | [md](2003/x/x_psi-pt_informatique-facultative_2003/guide.md) |
 | 2002 | X | PSI-PT | Informatique facultative | [md](2002/x/x_psi-pt_informatique-facultative_2002/brut.md) | [md](2002/x/x_psi-pt_informatique-facultative_2002/guide.md) |
 | 2004 | X | PSI-PT | Informatique | [md](2004/x/x_psi-pt_informatique_2004/brut.md) | [md](2004/x/x_psi-pt_informatique_2004/guide.md) |
+| 2010 | X-ENS | PSI | Modélisation | [md](2010/x-ens/x-ens_psi_modelisation_2010/brut.md) | [md](2010/x-ens/x-ens_psi_modelisation_2010/guide.md) |
 | 2012 | X-ENS | PSI | Modélisation | [md](2012/x-ens/x-ens_psi_modelisation_2012/brut.md) | [md](2012/x-ens/x-ens_psi_modelisation_2012/guide.md) |
 | 2013 | X-ENS | PSI | Modélisation | [md](2013/x-ens/x-ens_psi_modelisation_2013/brut.md) | [md](2013/x-ens/x-ens_psi_modelisation_2013/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |

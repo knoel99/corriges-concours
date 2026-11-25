@@ -1,0 +1,87 @@
+{
+  "slug": "ens-de-lyon_series-a-l_cinema-oral-2_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Cinéma (oral 2)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Mister Freedom et proposition de scénario",
+  "questions": 2,
+  "couverture": {
+    "statut": "partiel",
+    "questions_traitees": [
+      "II"
+    ],
+    "questions_non_traitees": [
+      "I — déroulement audiovisuel continu ; analyse des bornes et indications attestées fournie."
+    ],
+    "precision": "II intégralement traitée. Pour I, commentaire des deux bornes visuelles, des indications du feuillet et des repères attribuables au rapport. L’extrait audiovisuel continu n’a pas été consulté."
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=4",
+    "sujet_sha256": "2a7f074fb3a471a12b3b5eca1afb7535f44fdcba7416cca4f561ee10babf394e",
+    "pages": "4–6",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Cin%C3%A9ma%202026.pdf#page=6",
+    "rapport_sha256": "730388b7f4aba950624b0488baf7d89bee67962b726233f59530dd2c47127fbb",
+    "references": [
+      "https://aperture.org/editorial/magazine-interview-william-klein/",
+      "https://www.criterion.com/films/903-mr-freedom"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/source.svg",
+      "question": "II",
+      "legende": "Trois places différentes pour la lumière"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des pages 6 à 8 consacrées à l’oral, au poids égal des deux volets et à la distinction entre lecture du scénario et commentaire."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse des éléments attestés de Mister Freedom, présentation de la pièce pour la partie II, scénario original « La Source », guide et schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation aux deux photogrammes, aux minutages du feuillet et au rapport. Visage éclairé par-dessous et récipient au bas de la publicité Tho-Radia. Vérification de la couverture partielle dans les deux éditions."
+    }
+  ]
+}

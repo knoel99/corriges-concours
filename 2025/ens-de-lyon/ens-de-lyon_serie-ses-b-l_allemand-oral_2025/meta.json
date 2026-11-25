@@ -1,0 +1,151 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_allemand-oral_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Allemand (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=9",
+    "sujet_sha256": "c8ddaa0530f71dbb4dfb4bb32f8373963776602248462be1d250ba5c27b674c5",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=16",
+    "rapport_jury_sha256": "376daf04dd646b0b3fa852e3fb741b66e422a77d5cbe836a9541ca8da0d35c4d",
+    "documents": [
+      {
+        "rang": 1,
+        "reference_repertoire": "„Chemnitz strebt Imagewechsel an.“, Michael Köhler (19/01/2025)",
+        "publication": "Deutschlandfunk Kultur",
+        "page_repertoire": 9,
+        "temoins": [
+          {
+            "description": "Présentation de la radio et propos de Schmidtke",
+            "url": "https://www.deutschlandfunkkultur.de/kulturhauptstadt-europas-chemnitz-c-the-unseen-100.html"
+          }
+        ],
+        "limitation": "Présentation et citation de la page de l’émission. La transcription continue et la coupe restent inconnues."
+      },
+      {
+        "rang": 2,
+        "reference_repertoire": "„Schuldenbremse und Sondervermögeninvestitionen für die langfristige Verteidigung“, Sebastian Dullien (16/03/2025)",
+        "publication": "Die Tageszeitung",
+        "page_repertoire": 9,
+        "temoins": [
+          {
+            "description": "Essai de Dullien",
+            "url": "https://taz.de/Schuldenbremse-und-Sondervermoegen/%216072532/"
+          }
+        ],
+        "limitation": "Publication de presse identifiée et lue. La coupe de concours reste inconnue."
+      },
+      {
+        "rang": 3,
+        "reference_repertoire": "„Merz und sein gefährlicher Irrweg in der Migrationspolitik“, Marcel Fratzscher (06/06/2025)",
+        "publication": "Die Zeit",
+        "page_repertoire": 9,
+        "temoins": [
+          {
+            "description": "Publication de Die Zeit",
+            "url": "https://www.zeit.de/wirtschaft/2025-06/zurueckweisungen-grenze-migrationspolitik-friedrich-merz-alexander-dobrindt"
+          },
+          {
+            "description": "Reprise de la chronique par le DIW",
+            "url": "https://www.diw.de/de/diw_01.c.956171.de/nachrichten/merz_und_sein_gefaehrlicher_irrweg_in_der_migrationspolitik.html"
+          }
+        ],
+        "limitation": "Publication de presse identifiée et lue. La coupe de concours reste inconnue."
+      },
+      {
+        "rang": 4,
+        "reference_repertoire": "„F.A.Z.-Konferenz: Söder: „Wir nehmen jeden aus Harvard – und legen noch was drauf““, Nicolas Kurzawa, Johannes Pennekamp (04/06/2025)",
+        "publication": "Frankfurter Allgemeine Zeitung",
+        "page_repertoire": 9,
+        "temoins": [
+          {
+            "description": "Propos comparables, reportage de la Frankfurter Rundschau",
+            "url": "https://www.fr.de/politik/nach-harvard-trump-streit-soeder-wirbt-fuer-exil-campus-zr-93771229.html"
+          },
+          {
+            "description": "Citation de Söder dans le Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/wissen/deutschland-soll-wissenschafts-weltspitze-werden-das-geht--aber-man-muss-es-sich-auch-leisten-wollen-13813837.html"
+          }
+        ],
+        "limitation": "Titre de la FAZ dans le répertoire. Deux publications contemporaines éclairent l’invitation de Söder sans reproduire le reportage de Kurzawa et Pennekamp."
+      },
+      {
+        "rang": 5,
+        "reference_repertoire": "„Neues Verfassungsschutz-Gutachten. Warum die gesamte AfD als “gesichert rechtsextremistisch” gilt“, Markus Balser, Roland Preuß (02/02/2025)",
+        "publication": "Süddeutsche Zeitung",
+        "page_repertoire": 9,
+        "temoins": [
+          {
+            "description": "Reportage de Balser et Preuß",
+            "url": "https://www.sueddeutsche.de/politik/afd-verfassungsschutz-gutachten-gesichert-rechtsextrem-gruende-li.3245705"
+          }
+        ],
+        "limitation": "Le répertoire imprime le 2 février. L’article du même titre et des mêmes auteurs est publié le 2 mai 2025."
+      },
+      {
+        "rang": 6,
+        "reference_repertoire": "„Debatte um Verteidigungsbudget. Hurra, wir rüsten wieder!“, Ilija Trojanow (12/03/2025)",
+        "publication": "Taz.de",
+        "page_repertoire": 9,
+        "temoins": [
+          {
+            "description": "Tribune de Trojanow",
+            "url": "https://taz.de/Debatte-um-Verteidigungsbudget/%216071623/"
+          }
+        ],
+        "limitation": "Publication de presse identifiée et lue. La coupe de concours reste inconnue."
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "„Chemnitz strebt Imagewechsel an.“, Michael Köhler (19/01/2025)",
+      "„Schuldenbremse und Sondervermögeninvestitionen für die langfristige Verteidigung“, Sebastian Dullien (16/03/2025)",
+      "„Merz und sein gefährlicher Irrweg in der Migrationspolitik“, Marcel Fratzscher (06/06/2025)",
+      "„F.A.Z.-Konferenz: Söder: „Wir nehmen jeden aus Harvard – und legen noch was drauf““, Nicolas Kurzawa, Johannes Pennekamp (04/06/2025)",
+      "„Neues Verfassungsschutz-Gutachten. Warum die gesamte AfD als “gesichert rechtsextremistisch” gilt“, Markus Balser, Roland Preuß (02/02/2025)",
+      "„Debatte um Verteidigungsbudget. Hurra, wir rüsten wieder!“, Ilija Trojanow (12/03/2025)"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le fascicule de Lyon identifie 6 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+  },
+  "figures": [
+    {
+      "fichier": "figures/chemnitz.svg",
+      "legende": "Woran wäre die Wirkung des Titels zu erkennen?",
+      "question": "Référence 1"
+    },
+    {
+      "fichier": "figures/einstufung.svg",
+      "legende": "Wer entscheidet über welche Frage?",
+      "question": "Référence 5"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du répertoire et du rapport du jury, confrontation aux publications et rédaction des deux éditions avec exemples de prise de parole, relances, entraînements et schémas. Le fascicule de Lyon identifie 6 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
