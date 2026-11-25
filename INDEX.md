@@ -1507,4 +1507,5 @@
 | 2026 | X | MP | Maths B | [md](2026/x/x_mp_maths-b_2026/brut.md) | [md](2026/x/x_mp_maths-b_2026/guide.md) |
 | 2026 | X | MP | Physique et SI | [md](2026/x/x_mp_physique-et-si_2026/brut.md) | [md](2026/x/x_mp_physique-et-si_2026/guide.md) |
 | 2026 | X | PC | Physique A | [md](2026/x/x_pc_physique-a_2026/brut.md) | [md](2026/x/x_pc_physique-a_2026/guide.md) |
+| 2009 | ENS | MP-PC | Français | [md](2009/ens/ens_mp-pc_francais_2009/brut.md) | [md](2009/ens/ens_mp-pc_francais_2009/guide.md) |
 | 2010 | ENS | MP-PC | Français | [md](2010/ens/ens_mp-pc_francais_2010/brut.md) | [md](2010/ens/ens_mp-pc_francais_2010/guide.md) |
