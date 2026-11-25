@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "La question prioritaire de constitutionnalité",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuve-a-options-droit-commercial-et-droit-public-d1-2016_1476109233660-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-droit-public-e-crit-d1-2016_1478511500405-pdf",
+    "sujet_sha256": "f2140f6aeab31d4c31813626a4fae1df8d582dd5aa835c469eec12d0c5993c24",
+    "rapport_sha256": "e1bc53c672e5a8408a63f69022dcef2a05226c40bea4cbf46374acb16dd174a1",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2016",
+    "apercu_sujet_sha256": "8a498147093bb0046b0655ce40c621eda7a81b9a7f90fc56d06a1b0438596152",
+    "apercu_rapport_sha256": "3f28eda3bc88ebc56eca82078efae234f0cbfbc822cf5cb3ffe8bdcc9feaf6c0",
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "reference_garde": "R 16 - 83"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/parcours-qpc.svg",
+      "legende": "Le Conseil d’État ou la Cour de cassation renvoie une question nouvelle ou sérieuse si les autres conditions sont satisfaites."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/effets-qpc.svg",
+      "legende": "L’article 62 permet au Conseil de différer l’abrogation et d’aménager les effets déjà produits."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « La question prioritaire de constitutionnalité » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « La question prioritaire de constitutionnalité » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
