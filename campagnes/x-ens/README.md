@@ -77,3 +77,7 @@ Les gardes des vingt-deux compositions de mathématiques de Polytechnique de 200
 Le sujet de sciences industrielles en PSI de 2015 comporte trois feuilles-réponses. Elles figurent aux pages PDF 30 à 32 du cahier et sont également accessibles en fichier séparé. Le rapport du jury porte la session 2015 en première page. [Cahier, feuilles et rapport](sciences-industrielles-psi-2015.tsv)
 
 Le rapport de grec A/L de 2026 reproduit un billet d’Aristophane avec ses coupures et ses notes. L’exemple complète les feuilles où figure l’auteur. La date du passage reste indéterminée et le décompte des fascicules est conservé. [Exemples de billets publiés par les jurys](exemples-de-billets-du-jury.tsv)
+
+En 1999, Ulm et Lyon ont donné un sujet d’informatique de quatre heures sur les automates cellulaires. La même année, Lyon et Cachan ont consacré leur composition de mathématiques-informatique aux polynômes creux, en trois heures. Les deux cahiers originaux figurent dans les archives de Stéphane Gonnord. [Cahiers et empreintes](informatique-ecrits-1997-2009.tsv)
+
+Pour Rennes, les deux sessions 2022 et 2023 réunissent huit écrits en économie, droit civil, droit commercial et droit public. Chaque épreuve est associée à son sujet et à son rapport. Le relevé distingue les empreintes de la collecte institutionnelle et celles des fichiers lus en aperçu. [Seize documents du concours Droit-économie](rennes-droit-economie-2022-2023.tsv)
