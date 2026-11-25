@@ -1,0 +1,223 @@
+{
+  "slug": "ens_pc_chimie-b_2020",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2020
+  },
+  "questions": 81,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_PC_sujet_ChiB.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_PC_rap_eChiB.pdf",
+    "sujet_sha256": "44ee07402b4e91310c866d8482151d450b23e333085c8acc4bba9b5914278a41",
+    "rapport_sha256": "fc16cdfee20a1c9ec78ea589a940ab833f7c1dadd66890f1df0aa4840e90e597"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81"
+    ],
+    "questions_partiellement_traitees": [
+      "61"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Le corrigé traite intégralement 80 des 81 questions. La question 61 couvre les degrés d’oxydation, le rôle des réactifs, la demi-équation organique et la structure de 29. La demi-équation conduisant au dichlore et le bilan qui l’inclut restent hors de la couverture."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "54",
+      "fichier": "figures/deux-partenaires-alceniques.svg",
+      "legende": "Pour 18, H et Sn sont cis. Dans 21, I et le bras CH₂OSEM se trouvent du même côté."
+    },
+    {
+      "question": "57",
+      "fichier": "figures/diol-et-acetonide.svg",
+      "legende": "Les oxygènes installés ensemble sur la double liaison voisine de l’ester partagent ensuite le même carbone acétal."
+    },
+    {
+      "question": "59",
+      "fichier": "figures/deux-faces-et-transesterification.svg",
+      "legende": "La dihydroxylation sur chacune des deux faces fournit un syn-diol différent. Le réarrangement conserve les centres stéréogènes du syn-diol retenu."
+    },
+    {
+      "question": "61",
+      "fichier": "figures/aldehyde-vers-acide.svg",
+      "legende": "Le carbone du formyle de 28 reste dans le squelette et devient le carbone carboxylique de 29."
+    },
+    {
+      "question": "65",
+      "fichier": "figures/epoxyde-cis-majoritaire.svg",
+      "legende": "La configuration majoritaire est 2R,3S en numérotant depuis CH₂OPMB. Le cycle est représenté indépendamment de l’orientation du dessin de l’alcool allylique."
+    },
+    {
+      "question": "70",
+      "fichier": "figures/hydrazone-et-aldehyde.svg",
+      "legende": "Le groupe Aux désigne l’azote de la pyrrolidine chirale de la SAMP avec son substituant méthoxyméthyle. La rupture de l’hydrazone donne le formyle sans modifier les deux carbones asymétriques."
+    },
+    {
+      "question": "75",
+      "fichier": "figures/couplage-dithiane-et-cetone.svg",
+      "legende": "Le même centre alcool R relie le cœur de 31 au carbone entre les deux soufres de 44. La déprotection transforme ce dernier en cétone."
+    },
+    {
+      "question": "6",
+      "fichier": "figures/depliement-et-agregation.svg",
+      "legende": "Les points rouges figurent des groupes apolaires. Leur rapprochement entre chaînes expose moins de surface apolaire à l’eau."
+    },
+    {
+      "question": "11",
+      "fichier": "figures/interception-osmometrique.svg",
+      "legende": "Les cinq points sont calculés avec le tableau 1. L’ordonnée à l’origine de la droite ajustée donne la masse molaire moyenne en nombre."
+    },
+    {
+      "question": "15",
+      "fichier": "figures/tailles-des-pelotes.svg",
+      "legende": "À longueur de contour égale, le rayon moyen est plus grand en bon solvant. Les dessins symbolisent deux conformations, sans échelle moléculaire."
+    },
+    {
+      "question": "21",
+      "fichier": "figures/decoupage-chromatogramme.svg",
+      "legende": "Une aire de tranche correspond à une masse relative. La masse molaire attribuée à sa position permet de remonter au nombre de chaînes."
+    },
+    {
+      "question": "23",
+      "fichier": "figures/orbitales-du-cuivre.svg",
+      "legende": "Les coupes sont repérées par les axes inscrits dans chaque case. Les deux couleurs marquent les phases opposées."
+    },
+    {
+      "question": "26",
+      "fichier": "figures/phases-tetraedriques.svg",
+      "legende": "Chaque signe indique la phase du ligand et celle du lobe métallique qui lui fait face dans la combinaison liante. Un changement global de signe laisse cette combinaison équivalente."
+    },
+    {
+      "question": "27",
+      "fichier": "figures/niveaux-tetraedriques.svg",
+      "legende": "Le schéma relie les blocs de même symétrie. L’ordre détaillé des niveaux élevés dépend des paramètres du modèle ; les 17 électrons occupent les quatre niveaux liants et les cinq niveaux à dominante d."
+    },
+    {
+      "question": "37",
+      "fichier": "figures/mobilite-selon-ph.svg",
+      "legende": "L’intersection avec la vitesse nulle est interpolée entre pH 4,60 et 5,20 à partir du tableau 2."
+    },
+    {
+      "question": "42",
+      "fichier": "figures/profils-catalyses.svg",
+      "legende": "Les barrières cinétiques diffèrent, tandis que les deux chemins relient les mêmes états thermodynamiques."
+    },
+    {
+      "question": "49",
+      "fichier": "figures/vitesse-et-inhibition.svg",
+      "legende": "Les courbes du modèle sont construites à partir des deux demi-vitesses lues sur la figure 20. Elles tendent vers la même vitesse limite."
+    },
+    {
+      "question": "53",
+      "fichier": "figures/donation-retrodonation.svg",
+      "legende": "Les deux transferts de densité s’effectuent en sens opposés. La rétrodonation peuple une orbitale antiliante de l’alcyne."
+    },
+    {
+      "question": "71",
+      "fichier": "figures/cycle-chelate-azaenolate.svg",
+      "legende": "Les six sommets du chélate incluent Li. Les prolongements bleus indiquent le parcours de la pyrrolidine. L’alkylation utilise la face du système Li–N–C=C la moins encombrée."
+    },
+    {
+      "question": "66",
+      "fichier": "figures/frontieres-oxirane.svg",
+      "legende": "La phase des deux lobes du doublet de O est opposée. Sur les carbones, la BV change de signe d’un site à l’autre comme π* du fragment éthylène ; seules ses composantes dominantes sont dessinées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, des indications et de vingt figures originales à partir des planches et du rapport de chimie B ENS Ulm PC 2020. Lecture quantitative des thermogramme, courbes d’osmose et d’inhibition, et du gel ; analyse des orbitales et reconstruction des intermédiaires. Question 61 partielle sur les seuls éléments indiqués dans la couverture."
+    }
+  ]
+}
