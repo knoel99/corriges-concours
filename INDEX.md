@@ -644,6 +644,11 @@
 | 2026 | ENS de Lyon | Séries A/L | Anglais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_anglais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_anglais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 1) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-1_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-1_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 2) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-2_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-2_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 3) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-3_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-3_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 4) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-4_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-4_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 5) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-5_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-5_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Espagnol (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Italien (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |

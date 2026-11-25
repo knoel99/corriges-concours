@@ -1,0 +1,86 @@
+{
+  "slug": "ens-de-lyon_series-a-l_cinema-oral-4_2026",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries A/L",
+    "matiere": "Cinéma (oral 4)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Sois belle et tais-toi et proposition de scénario",
+  "questions": 2,
+  "couverture": {
+    "statut": "partiel",
+    "questions_traitees": [
+      "II"
+    ],
+    "questions_non_traitees": [
+      "I — déroulement audiovisuel continu ; analyse des bornes et indications attestées fournie."
+    ],
+    "precision": "II intégralement traitée. Pour I, commentaire des deux bornes visuelles, des indications du feuillet et des repères attribuables au rapport. L’extrait audiovisuel continu n’a pas été consulté."
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=8",
+    "sujet_sha256": "2a7f074fb3a471a12b3b5eca1afb7535f44fdcba7416cca4f561ee10babf394e",
+    "pages": "8–10",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Cin%C3%A9ma%202026.pdf#page=6",
+    "rapport_sha256": "730388b7f4aba950624b0488baf7d89bee67962b726233f59530dd2c47127fbb",
+    "references": [
+      "https://www.splendor-films.com/films/sois-belle-et-tais-toi"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/rives.svg",
+      "question": "II",
+      "legende": "Le trait interrompu et les deux calques"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des pages 6 à 8 consacrées à l’oral, au poids égal des deux volets et à la distinction entre lecture du scénario et commentaire."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse des éléments attestés de Sois belle et tais-toi, présentation de la pièce pour la partie II, scénario original « Les Deux Rives », guide et schéma."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation aux deux photogrammes, aux minutages du feuillet et au rapport. Paumes et traits superposés dans le photogramme de Man Ray. Vérification de la couverture partielle dans les deux éditions."
+    }
+  ]
+}
