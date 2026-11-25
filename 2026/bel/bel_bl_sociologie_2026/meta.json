@@ -43,7 +43,7 @@
       "legende": "Dagenham, de la paie au reclassement"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -99,6 +99,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Confrontation des deux éditions au libellé reproduit et aux documents historiques sur Dagenham. Différenciation du taux salarial masculin de référence et du grade de qualification dans l’offre de reprise de 1968."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation sur la (re)production des rapports sociaux, libellé contrôlé dans les annales enseignantes de Paris-Saclay. Chronologie de Dagenham commentée dans le brut, distinction des trois objets de preuve dans la méthode du guidé."
     }
   ]
 }

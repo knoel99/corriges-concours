@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 La banque officielle contient **onze dossiers**, répartis sur 93 pages. Un candidat ne traite que le dossier tiré ; ce corrigé les couvre tous, dans l’ordre du PDF. Chaque proposition constitue une réponse possible, non un plan imposé. Le rapport de 2026 énumère aussi un thème sur l’intelligence artificielle dont le dossier documentaire ne figure pas dans ce PDF : aucune solution n’en est inventée.
@@ -745,7 +747,7 @@ Le patrimoine des ménages français est donc **à la fois très concentré, hé
 ![Moyenne, médiane et déciles de patrimoine](figures/patrimoine-seuils.svg)
 
 > [!METHODE]
-> Préciser l’unité statistique et le champ avant chaque comparaison. Séparer seuils de décile, moyennes de groupe et parts de masse. Les droits à retraite éclairent la sécurité économique mais ne doivent pas être additionnés à des enquêtes de dates et populations différentes.
+> Au tableau, placez d’abord la médiane de 205 100 euros. Demandez combien de ménages se situent de chaque côté et quelle fraction du patrimoine total ils détiennent. La médiane répond à la première question. La seconde exige des parts de masse, par exemple les 7 % détenus par la moitié la moins dotée. Préciser l’unité statistique et le champ avant chaque comparaison. Séparer seuils de décile, moyennes de groupe et parts de masse. Les droits à retraite éclairent la sécurité économique mais ne doivent pas être additionnés à des enquêtes de dates et populations différentes.
 
 > [!PIEGE]
 > Les ménages classés par patrimoine brut et net ne sont pas identiques. Une coupe par âge mêle cycle de vie, générations et sélection. L’effet moyen de substitution de 53 centimes n’est pas une identité valable pour chaque personne.

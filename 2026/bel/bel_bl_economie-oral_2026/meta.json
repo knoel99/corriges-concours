@@ -26,7 +26,7 @@
       "legende": "Un équilibre de marché sous le prix zéro"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/2026_sujets_economie_tronc_commun.pdf",
     "sujet_sha256": "1050d8bb2495144f8c8c2e926faf502b5d9b461c067163ec2a19fcbcf4e39eb0",
@@ -76,6 +76,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification des onze dossiers des deux éditions sur le fascicule de 93 pages, des données et figures, du rapport et des numérotations. Distinction du niveau du PIB et du taux de croissance. Ajout de onze relances corrigées, d’un exemple de coûts comparatifs et de trois schémas quantitatifs."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dossier 10 du fascicule officiel et rapport d’oral commun. Contrôle des quatre montants du document 1, tableau 3a, et de son champ. Écarts interquantiles calculés dans le brut et exercice de lecture de la médiane dans le guidé."
     }
   ]
 }
