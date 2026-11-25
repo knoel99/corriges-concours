@@ -1,0 +1,50 @@
+{
+  "slug": "ens_mp-pc_mathematiques-informatique_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Mathématiques-informatique",
+    "annee": 2007,
+    "duree_heures": 4
+  },
+  "questions": 38,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2007/sujet-ecrit-2007-i-mathematiques_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filiere-mp/les-annales-et-rapports-des-jurys/",
+    "identification": "Cahier 70.05M, huit pages, quatre heures. MP groupe I pour Paris, Lyon et Cachan. PC groupe I pour Paris et Lyon.",
+    "sujet_sha256": "1ae6704236a5626c9bbb36fa42e8ffcf3522ba7acb82600cc0a37dc9a9ed9c1a",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-i/session-2007/rapport-2007-i_ecrit_mathematiques_informatique.pdf",
+    "rapport_sha256": "0c0808453f5431a07e6c7761e7f1fb2c06d346693857fb9c246dbbc479fe711f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/pile.svg",
+      "question": "2.4",
+      "legende": "Figure 1 — Quatre états de la pile aux coupures du mot de la question 2.1. Une majuscule indique une lettre inverse."
+    },
+    {
+      "fichier": "figures/pliage.svg",
+      "question": "7.1",
+      "legende": "Figure 2 — Les deux arcs de même étiquette issus de la racine se replient. Passer entre leurs extrémités avant le pliage lit un mot qui se réduit au mot vide."
+    },
+    {
+      "fichier": "figures/regions.svg",
+      "question": "8.1",
+      "legende": "Figure 3 — Les quatre régions ouvertes d’action des générateurs sont délimitées par les axes et les diagonales. Les points opposés appartiennent à la même région."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Les huit parties et les 38 items détaillés. Réduction linéaire, rang, conjugaison, bases des sous-groupes par pliages, action matricielle et séries non commutatives. Vérification du mot de la question 2.1 sur la page 2 numérisée."
+    }
+  ]
+}
