@@ -1,0 +1,149 @@
+{
+  "slug": "ens_pc_physique-c_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "ecoles_historiques": "ENS de Paris (Ulm)",
+    "filiere": "PC",
+    "matiere": "Physique C",
+    "annee": 2018
+  },
+  "questions": 60,
+  "intitule": "Détection interférométrique d’ondes gravitationnelles",
+  "redaction": "Questions 1 à 60, développement multipolaire, source binaire, cavités, filtrage et fluctuations, calculs numériques et figures.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_PC_sujet_PhyC.pdf",
+    "sujet_sha256": "c202f19ede000c8e639b147cb0ace0e9d631f7b48cd6e0223fb9acbb89882c65",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/09/18_pc_rap_ePhyC.pdf",
+    "rapport_sha256": "c360365ad92ca7ee38ddc5a24868a720981be8101a4852b14a97e7f7ee093e24",
+    "garde": "U · ENS de Paris (Ulm) · 6 heures"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de physique C Ulm 2018, développement du champ à l’ordre deux, évolution du rayon de la binaire, conventions des miroirs et démonstration des statistiques photoniques."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Questions 1 à 60, développement multipolaire, source binaire, cavités, filtrage et fluctuations, calculs numériques et figures."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/trajet-polaire.svg",
+      "legende": "Projection vue du pôle. Les deux rayons sont des méridiens et l’arc est un quart d’équateur."
+    },
+    {
+      "numero": 2,
+      "question": "19",
+      "fichier": "figures/polarisations.svg",
+      "legende": "Effet de chaque polarisation sur un cercle de points libres dans le plan transverse. Les déformations sont amplifiées."
+    },
+    {
+      "numero": 3,
+      "question": "28",
+      "fichier": "figures/filtre-miroir.svg",
+      "legende": "Réponse du pendule idéal, résonance intermédiaire et isolation aux hautes fréquences."
+    },
+    {
+      "numero": 4,
+      "question": "39",
+      "fichier": "figures/reponse-cavite.svg",
+      "legende": "La tolérance statique en longueur et la bande passante de modulation ont chacune un point de demi-puissance."
+    },
+    {
+      "numero": 5,
+      "question": "51",
+      "fichier": "figures/frange-et-pente.svg",
+      "legende": "Le signal est minimal sur la frange noire et sa pente est maximale à mi-hauteur."
+    },
+    {
+      "numero": 6,
+      "question": "60",
+      "fichier": "figures/limite-quantique.svg",
+      "legende": "Les deux bruits indépendants ont la même variance à la puissance qui minimise leur somme quadratique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60"
+    ]
+  }
+}
