@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Qu’est-ce qu’un design écologique ?
 
 Une bouteille de verre consignée peut porter des traces d’usure, tandis que sa voisine jetable ressort neuve du magasin. La première pourrait pourtant avoir exigé moins de matière pour rendre le même service sur plusieurs années. Le designer qui voudrait faire reconnaître la solution écologique par la seule apparence de l’objet se heurterait à cette difficulté. Or le mot design désigne à la fois une activité de conception et les formes qu’elle propose à l’usage. Que doit-on concevoir pour mériter le qualificatif d’écologique lorsque le jugement porte sur des relations et des conséquences qu’une forme visible ne suffit pas à révéler ?
@@ -31,6 +33,10 @@ On peut objecter que cette conception transfère une charge vers l’utilisateur
 Une difficulté demeure. Si chaque nouveau modèle revendique un gain écologique, le renouvellement accéléré peut annuler une partie du bénéfice. Le dessin d’un objet plus sobre ne suffit pas à justifier le remplacement de celui qui fonctionne déjà. Un design réfléchi doit pouvoir soumettre le projet lui-même à la question de sa nécessité. Cette interrogation prolonge la critique de Victor Papanek dans *Design for the Real World*. À qui répond le besoin que le projet se propose de satisfaire ? Qui décide qu’il appellera une nouvelle marchandise ? Il se peut que la réponse soit un service de réparation, un usage partagé ou la réaffectation d’une pièce disponible.
 
 La bouteille constitue à ce titre un cas exemplaire. Des marques peuvent vouloir chacune une forme unique, immédiatement reconnaissable. Or un parc de formats compatibles facilite la collecte, le tri et le remplissage. La fascination pour la nouveauté individuelle de la bouteille peut entrer en conflit avec la sobriété du système entier. Renoncer à la singularité d’un profil peut devenir un acte exigeant de design si cette décision facilite les usages, raccourcit un circuit et laisse encore à l’usager les informations dont il a besoin. Le dessin de la caisse de transport, de l’ouverture lavable ou de la signalétique du retour prend alors une importance égale à celle de la silhouette en rayon.
+
+Prenons deux réseaux utilisant la même bouteille lavable. Dans l’un, elle revient avec la livraison suivante ; dans l’autre, chaque usager doit faire un trajet spécifique pour la rapporter. La forme et la résistance de la bouteille sont identiques, mais le coût écologique par boisson servie peut différer. La conception engage donc aussi l’organisation de la circulation et du lavage.
+
+![Figure 1 — La promesse écologique à trois échelles](figures/objet-usages-service.svg)
 
 Un design écologique est finalement une conception qui engage sa responsabilité à l’égard des milieux et des personnes sur la durée du service rendu. Elle exige de rendre vérifiables les effets matériels attendus, d’organiser les usages qui les conditionnent et de pouvoir réviser, jusqu’à l’abandonner, le projet d’un objet supplémentaire. L’esthétique retrouve dans cette définition une tâche précise. Rendre sensible la manière de prendre soin d’une chose peut contribuer à sa durée, à condition que la possibilité montrée par la forme soit effectivement offerte à ceux qui l’emploient.
 

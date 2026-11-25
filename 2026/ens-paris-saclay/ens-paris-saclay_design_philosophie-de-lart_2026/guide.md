@@ -6,11 +6,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Définir par un problème
 
 Dans cette composition de quatre heures, l’adjectif « écologique » appelle un critère. Un matériau, un pictogramme vert, une technique de production ou une intention morale peuvent être allégués. L’introduction doit examiner comment départager leurs prétentions. Une bouteille de réemploi plus lourde rend immédiatement intelligible la nécessité de choisir une durée et une unité de comparaison.
 
 ![Figure 1 — La promesse écologique à trois échelles](figures/objet-usages-service.svg)
+
+Choisissez une unité de comparaison stable, par exemple cent boissons servies. Comptez les bouteilles effectivement remplies de nouveau, les trajets et les opérations de lavage nécessaires dans chaque organisation. Précisez quelles données manquent avant de conclure.
 
 ## Construire deux objections
 
