@@ -1,0 +1,47 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2014,
+    "duree_heures": 5
+  },
+  "questions": 53,
+  "couverture": "partielle",
+  "questions_traitees": [
+    "2.1 et 2.8, notions générales",
+    "5.6, intégration seule",
+    "6.10, filtre isolé"
+  ],
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/si/sujet-polytechnique-ens-si-psi-2014.pdf",
+    "sujet_sha256": "a1cfe0da8be4804e5a71d795c1eb633412e37f77956226030e019beaa0a1027a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/hysteresis-thermostat.svg",
+      "question": "2.8",
+      "legende": "Commutation à deux seuils. Dans la bande intermédiaire, la sortie garde son état, ce qui évite des commutations répétées autour d’un seul seuil."
+    },
+    {
+      "fichier": "figures/filtre-coupe-bande.svg",
+      "question": "6.10",
+      "legende": "Deux filtres coupe-bande normalisés. Le creux est centré en pulsation réduite 1. L’augmentation de b, égal à β divisé par la racine de α, élargit la bande atténuée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction partielle sur le fac-similé CX4614, 31 pages. Quatre extraits de notions civiles indépendantes de la mise en œuvre du véhicule, deux diagrammes originaux. Les autres questions et les paramètres de mise en œuvre ne sont pas couverts."
+    }
+  ]
+}
