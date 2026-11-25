@@ -535,6 +535,8 @@
 | 2023 | CFG | Candidats individuels | Mathématiques | [md](2023/cfg/cfg_candidats-individuels_mathematiques_2023/brut.md) | [md](2023/cfg/cfg_candidats-individuels_mathematiques_2023/guide.md) |
 | 2025 | CNG | Directeur d’établissement sanitaire, social et médico-social externe | Économie | [md](2025/cng/cng_directeur-detablissement-sanitaire-social-et-medico-social-externe_economie_2025/brut.md) | [md](2025/cng/cng_directeur-detablissement-sanitaire-social-et-medico-social-externe_economie_2025/guide.md) |
 | 2018 | CNSMD de Lyon | CA de professeur de danse | Commentaire de texte | [md](2018/cnsmd-de-lyon/cnsmd-de-lyon_ca-de-professeur-de-danse_commentaire-de-texte_2018/brut.md) | [md](2018/cnsmd-de-lyon/cnsmd-de-lyon_ca-de-professeur-de-danse_commentaire-de-texte_2018/guide.md) |
+| 2018 | ENS Rennes | D1 | Allemand | [md](2018/ens-rennes/ens-rennes_d1_allemand_2018/brut.md) | [md](2018/ens-rennes/ens-rennes_d1_allemand_2018/guide.md) |
+| 2018 | ENS Rennes | D1 | Italien | [md](2018/ens-rennes/ens-rennes_d1_italien_2018/brut.md) | [md](2018/ens-rennes/ens-rennes_d1_italien_2018/guide.md) |
 | 2026 | CNSMD de Paris | Parcours conjoint DE/DNSPM | Commentaire de texte | [md](2026/cnsmd-de-paris/cnsmd-de-paris_parcours-conjoint-de-dnspm_commentaire-de-texte_2026/brut.md) | [md](2026/cnsmd-de-paris/cnsmd-de-paris_parcours-conjoint-de-dnspm_commentaire-de-texte_2026/guide.md) |
 | 2026 | CPE | Externe | Composition (bac+5) | [md](2026/cpe/cpe_externe_composition-bac-5_2026/brut.md) | [md](2026/cpe/cpe_externe_composition-bac-5_2026/guide.md) |
 | 2026 | CPIP | Externe | Composition | [md](2026/cpip/cpip_externe_composition_2026/brut.md) | [md](2026/cpip/cpip_externe_composition_2026/guide.md) |

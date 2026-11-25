@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d1_italien_2018",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Italien",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2018-italien-ecrit_1563806943584-pdf#page=1",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2018-italien-ecrit_1563806943584-pdf",
+    "sha256_rapport_jury": "185a3765ae26e6f841e27c16af61bc0e81769f9dccf8f14b2adac06f88254913",
+    "temoin_presse": {
+      "titre": "La Repubblica, 13 décembre 2016, article et entretien avec Marta Boneschi",
+      "url": "https://www.repubblica.it/rubriche/passaparola/2016/12/13/news/i_migliori_oggetti_della_nostra_vita-154026740/"
+    }
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "questions_partiellement_traitees": [
+      "Version"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le jury décrit trois paragraphes, donne le titre de la version et en relève quelques expressions précises. L’article intégral de la Repubblica a été retrouvé. Les passages français ci-dessous rendent les éléments repérables, complétés par leur contexte de presse. Le feuillet et ses trois paragraphes exactement délimités manquent. La question de rédaction est donnée intégralement par le jury."
+  },
+  "longueur_expression": {
+    "mots": 96,
+    "regle": "Environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Come passa un oggetto nella vita quotidiana?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du rapport officiel et de la publication de presse correspondante, traduction des éléments récupérables, rédaction intégrale de la composition et du guide. Le jury décrit trois paragraphes, donne le titre de la version et en relève quelques expressions précises. L’article intégral de la Repubblica a été retrouvé. Les passages français ci-dessous rendent les éléments repérables, complétés par leur contexte de presse. Le feuillet et ses trois paragraphes exactement délimités manquent. La question de rédaction est donnée intégralement par le jury."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
