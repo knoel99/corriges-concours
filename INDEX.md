@@ -1073,6 +1073,7 @@
 | 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
+| 2009 | ENS | PC | Physique PC2 | [md](2009/ens/ens_pc_physique-pc2_2009/brut.md) | [md](2009/ens/ens_pc_physique-pc2_2009/guide.md) |
 | 2010 | ENS Lyon et Cachan | PC | Physique PC2 | [md](2010/ens/ens_pc_physique-pc2_2010/brut.md) | [md](2010/ens/ens_pc_physique-pc2_2010/guide.md) |
 | 1999 | ENS | Ulm-Lyon | Informatique | [md](1999/ens/ens_ulm-lyon_informatique_1999/brut.md) | [md](1999/ens/ens_ulm-lyon_informatique_1999/guide.md) |
 | 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 1) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/guide.md) |
