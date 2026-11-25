@@ -1,0 +1,220 @@
+{
+  "slug": "ens_pc_chimie-b_2021",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2021
+  },
+  "questions": 99,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/09/21_pc_sujet_chib.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/11/21_PC_rap_eChiB.pdf",
+    "sujet_sha256": "f010add22f4d6e7d46c63ad79070f12b3b4e4d07f0384754bf1ea8874f9d3cae",
+    "rapport_sha256": "6b6679b63b04b62e46b0df2f63c09b4d21534da1e3ef2dcc9e39dd15f5f5037e"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 99 questions sont traitées. Les expressions du taux effectif et les limites du modèle de fil sont démontrées. Les questions sur le duplex nu sont interprétées dans le cadre physicochimique de l’énoncé. Les deux synthèses sont analysées sur les figures 3 à 8."
+  },
+  "date_revision": "2026-11-24",
+  "figures": [
+    {
+      "question": "Q3",
+      "fichier": "figures/motifs-apres-dissociation.svg",
+      "legende": "Les lettres R marquent les liaisons vers les motifs voisins. Les contre-ions solvatés assurent l’électroneutralité en solution."
+    },
+    {
+      "question": "Q67",
+      "fichier": "figures/bromure-tertiaire.svg",
+      "legende": "Le carbone tertiaire porteur de Br provient du carbone substitué de la double liaison externe. La double liaison conjuguée au formyle demeure."
+    },
+    {
+      "question": "Q76",
+      "fichier": "figures/alcool-mesylate-methyle.svg",
+      "legende": "R désigne le tricycle de 5 avec la configuration de l’attache conservée. Le groupe partant de 7 est coloré en bleu."
+    },
+    {
+      "question": "Q80",
+      "fichier": "figures/melokhanine-centres.svg",
+      "legende": "A en bleu est adjacent à la cétone et au N amidique, B en vert est le CH de jonction et C en rose porte l’éthyle. Les trois configurations sont R pour la structure représentée."
+    },
+    {
+      "question": "Q82",
+      "fichier": "figures/lactone-anthranilate.svg",
+      "legende": "15 conserve la lactone et porte une amine secondaire en ortho du carboxyle. La liaison N–C nouvelle est repérée en bleu."
+    },
+    {
+      "question": "Q85",
+      "fichier": "figures/decarboxylation-spiro.svg",
+      "legende": "L’ouverture du cycle lactone de 16, la décarboxylation et la fermeture en cyclopropane conduisent au squelette de 17. L’hydrolyse ultérieure libère 11."
+    },
+    {
+      "question": "Q90",
+      "fichier": "figures/lactame-enecarbamate.svg",
+      "legende": "Le groupe Boc demeure sur N dans les trois composés. La déshydratation du lactamol 20 place la double liaison du côté du carbone éthylé."
+    },
+    {
+      "question": "Q92",
+      "fichier": "figures/diazoester-lewis.svg",
+      "legende": "Les deux formes mésomères du diazoester ont la même connectivité. Le N central demeure positif. Les charges négatives successives sont entourées."
+    },
+    {
+      "question": "Q6",
+      "fichier": "figures/paa-ionisation.svg",
+      "legende": "Pour le modèle de sites indépendants, la moitié des fonctions sont ionisées au pKa égal à 4,9."
+    },
+    {
+      "question": "Q28",
+      "fichier": "figures/seuil-oosawa.svg",
+      "legende": "La courbe du PS-PSSNa monovalent plafonne vers 0,36. Les deux autres courbes montrent la généralisation à produit des valences double ou triple."
+    },
+    {
+      "question": "Q35",
+      "fichier": "figures/cylindre-et-couronne.svg",
+      "legende": "Le flux du champ et le comptage des contre-ions emploient deux surfaces distinctes. Le facteur radial 2πr intervient dans les deux calculs."
+    },
+    {
+      "question": "Q38",
+      "fichier": "figures/poids-statistique.svg",
+      "legende": "Le poids x élevé à la puissance 1−2ξ est intégrable près du fil pour ξ inférieur à un. À ξ égal à un, il varie en 1/x."
+    },
+    {
+      "question": "Q52",
+      "fichier": "figures/pentes-cryoscopie.svg",
+      "legende": "Ces droites idéales indiquent comment remonter à la fraction effective à partir d’une série de dilutions du polymère synthétique."
+    },
+    {
+      "question": "Q71",
+      "fichier": "figures/quatre-cycloadditions.svg",
+      "legende": "Pour la connectivité du schéma et les centres préexistants fixés, les deux nouveaux centres conduisent à quatre combinaisons de faces."
+    },
+    {
+      "question": "Q77",
+      "fichier": "figures/cycle-syn.svg",
+      "legende": "Les deux atomes d’oxygène s’ajoutent sur la même face. Le bilan redox distingue l’osmium catalytique et le cooxydant consommé."
+    },
+    {
+      "question": "Q97",
+      "fichier": "figures/energies-orbitales.svg",
+      "legende": "Le niveau vacant indiqué pour le cyclopropane est plus bas de 0,515 eV que celui du cyclohexane sur les données du sujet."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions sur le sujet et le rapport du jury spécifiques à l’ENS Ulm 2021. Calcul des seuils coulombiens et cryoscopiques, interprétation documentaire du duplex en solution, lecture de toutes les structures, des isomères et des orbitales sur les planches 3 à 8. Vérification des trois configurations de la melokhanine E sur le dessin et des formules de 15 et 17. Seize figures originales."
+    }
+  ]
+}

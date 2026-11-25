@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2018",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2018,
+    "duree_heures": 2
+  },
+  "questions": 26,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_MPPC_sujet_InfoB.pdf",
+    "sujet_sha256": "d414372acfe4a82f487dbfd98d6c187e8ae27979424a54d37b64cdd6e7a84079",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/11/18_PC_rap_eInfoB.pdf",
+    "rapport_sha256": "2bb98933e0c3912276bcaae179c7ce0428a7024c55c50e3358027616099dc47c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ii03-cles.svg",
+      "question": "QII.3",
+      "legende": "Le filtrage du produit conserve l’identifiant du véhicule dans les deux schémas. La jointure définie dans le sujet omet sa seconde occurrence."
+    },
+    {
+      "fichier": "figures/iii05-index.svg",
+      "question": "QIII.5",
+      "legende": "Un index associe une valeur d’attribut à toutes les positions de ses occurrences. TGV conduit aux lignes 1 et 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 26 questions à partir du sujet et du rapport de la banque. Exécution des opérateurs Python sur des tables incluant doublons, clés manquantes et tables vides. Comparaison des six traductions aux résultats SQL en conservant les multiplicités. Deux schémas originaux."
+    }
+  ]
+}

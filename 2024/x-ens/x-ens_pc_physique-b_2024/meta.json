@@ -1,0 +1,92 @@
+{
+  "slug": "x-ens_pc_physique-b_2024",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2024
+  },
+  "questions": 32,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20PC%20SUJET%20PHYSIQUE%20B%20(XEULS).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20PC%20RAPPORT%20ECRIT%20PHYSIQUE%20B%20(XEULS).pdf",
+    "sujet_sha256": "4e6b84093c823f574dcb511698ea13d9bff0fc6ec0f9e221159c7d0eaec78349",
+    "rapport_sha256": "e8e8adcdcc8746af3675ce8a195d1b09ca046ff37c63c208c1430bcff09f99b1"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction partielle des deux éditions à partir des deux originaux, sujet et rapport du jury. Les questions 1 à 28 et 31 reçoivent une solution intégrale. La question 29 est partielle. Les questions 30 et 32 sur le bâtiment naval sont exclues. Trois schémas pédagogiques concernent la conduction et les rayons dans l’air. Le profil naval n’est pas exploité."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "9",
+      "fichier": "figures/flux-de-chaleur.svg",
+      "legende": "Une crête de température cède de la chaleur aux zones froides voisines. Les flèches donnent le sens du flux de conduction."
+    },
+    {
+      "numero": 2,
+      "question": "18",
+      "fichier": "figures/rayons-dans-les-couches.svg",
+      "legende": "Dans l’air, une augmentation de célérité avec l’altitude accroît l’angle vis-à-vis de la verticale. Les segments droits dessinent le rayon réfracté aux interfaces."
+    },
+    {
+      "numero": 3,
+      "question": "24",
+      "fichier": "figures/famille-de-rayons.svg",
+      "legende": "Paraboles du modèle atmosphérique linéarisé et enveloppe théorique. Les branches éloignées de W = 0 illustrent la géométrie de l’équation approchée."
+    }
+  ],
+  "redaction": "Les questions 1 à 28 et 31 reçoivent une solution intégrale. La question 29 est partielle. Les questions 30 et 32 sur le bâtiment naval sont exclues. Trois schémas pédagogiques concernent la conduction et les rayons dans l’air. Le profil naval n’est pas exploité.",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "31"
+    ],
+    "questions_partiellement_traitees": [
+      "29"
+    ],
+    "questions_non_traitees": [
+      "30",
+      "32"
+    ],
+    "precision": "Les questions 1 à 28 et 31 reçoivent une solution intégrale. La question 29 est partielle. Les questions 30 et 32 sur le bâtiment naval sont exclues. Trois schémas pédagogiques concernent la conduction et les rayons dans l’air. Le profil naval n’est pas exploité."
+  }
+}

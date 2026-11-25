@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc-psi_informatique-b_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Informatique B",
+    "annee": 2021,
+    "duree_heures": 2
+  },
+  "questions": 15,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_InfoB.pdf",
+    "sujet_sha256": "60ce8f7de7ff26a6507c63ae0f16886df2a079601c9955affbc8a9b7e1a75541",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2022/08/21_PC_rap_eInfoB.pdf",
+    "rapport_sha256": "2155f10e89a2740a3fafd6f67c2e4d7e0ccfd8d402da9860d236a9ebac86ac6d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q09-scission.svg",
+      "question": "Q9",
+      "legende": "Avant et après une réservation de deux cases dans une portion libre de taille huit. Les deux nouvelles balises occupent deux des six cases restantes."
+    },
+    {
+      "fichier": "figures/q14-chaine.svg",
+      "question": "Q14",
+      "legende": "L’ordre du chaînage peut différer des adresses croissantes. Pour demander six cases, le parcours de cet exemple passe par r et p avant de choisir q."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des quinze questions à partir du sujet et du rapport de la banque. Vérification des fonctions Python de chaque édition sur des séquences licites de réservation et de libération, avec contrôle de la capacité, des balises, du chaînage, des caractères et de la fusion des portions. Deux schémas originaux."
+    }
+  ]
+}

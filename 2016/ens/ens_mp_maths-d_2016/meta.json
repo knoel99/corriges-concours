@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-d_2016",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2016
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_sujet_mpi_mathd.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/mpi-i/16_mp_rap_emath_d.pdf",
+    "sha256_sujet": "e5bbdfe998c37dc5dbf4900fba993897205c0877eb2c0a8bab7dc047b4854a23"
+  },
+  "figures": [
+    {
+      "fichier": "figures/coupes-par-niveaux.svg",
+      "question": "III.3b",
+      "legende": "Une coupe horizontale sélectionne les premiers sommets. Chaque arête est comptée sur un intervalle de hauteur égal à la différence des valeurs carrées à ses extrémités."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction sur le sujet et le rapport originaux des quatre parties. Détails sur les représentations de A5, les coupes par niveaux, les aires de calottes, le tore de taille deux et les comparaisons modulaires des quatre cisaillements. Figure de coupe par niveaux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

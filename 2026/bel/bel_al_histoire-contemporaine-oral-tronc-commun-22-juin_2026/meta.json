@@ -1,0 +1,66 @@
+{
+  "slug": "bel_al_histoire-contemporaine-oral-tronc-commun-22-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Histoire contemporaine (oral tronc commun 22 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire contemporaine (oral tronc commun 22 juin)",
+  "questions": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_histoire_tc_2_22_juin_al.pdf",
+    "sujet_sha256": "d87c33f6c035cbcd4335ceaf01f3493620aab0252e8d09880fae0a84f9156d8f",
+    "references": [
+      "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-al"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/referendums.svg",
+      "question": "Comparaison",
+      "legende": "Ce que les électeurs décident en France"
+    },
+    {
+      "fichier": "figures/jordanie.svg",
+      "question": "Comparaison",
+      "legende": "Quatre étapes du rapport à la Cisjordanie"
+    }
+  ],
+  "date_revision": "2026-11-24",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction de 24 exposés couvrant les deux options de chacun des 12 billets attestés, de leurs relances et des schémas comparatifs."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Vérification des intitulés, des paires et de l’ordre contre la totalité du fascicule officiel, puis des points de chronologie, des nuances et des figures."
+    }
+  ]
+}

@@ -176,6 +176,7 @@
 | 2019 | BEL | AL | Étude de texte français (Lyon) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/brut.md) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Grec moderne (commentaire et traduction) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 17 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/guide.md) |
+| 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 19 juin commission 2) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-2_2026/guide.md) |
 | 2019 | BEL | AL | Italien (commentaire et traduction) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_italien-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Italien (thème Lyon) | [md](2019/bel/bel_al_italien-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_italien-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Portugais (commentaire et traduction) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/guide.md) |
@@ -195,6 +196,7 @@
 | 2026 | BEL | AL | Histoire contemporaine | [md](2026/bel/bel_al_histoire-contemporaine_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine_2026/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 16 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 19 juin commission 1) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-1_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-19-juin-commission-1_2026/guide.md) |
+| 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 22 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-22-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-22-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire de la musique | [md](2026/bel/bel_al_histoire-de-la-musique_2026/brut.md) | [md](2026/bel/bel_al_histoire-de-la-musique_2026/guide.md) |
 | 2026 | BEL | AL | Histoire et théorie des arts | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/brut.md) | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/guide.md) |
 | 2026 | BEL | AL | Italien (commentaire et traduction) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/guide.md) |
@@ -222,6 +224,7 @@
 | 2026 | BEL | BL | Allemand | [md](2026/bel/bel_bl_allemand_2026/brut.md) | [md](2026/bel/bel_bl_allemand_2026/guide.md) |
 | 2026 | BEL | BL | Allemand (oral, tronc commun) — 23 juin | [md](2026/bel/bel_bl_allemand-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_bl_allemand-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | BL | Anglais | [md](2026/bel/bel_bl_anglais_2026/brut.md) | [md](2026/bel/bel_bl_anglais_2026/guide.md) |
+| 2026 | BEL | BL | Anglais (oral tronc commun) | [md](2026/bel/bel_bl_anglais-oral-tronc-commun_2026/brut.md) | [md](2026/bel/bel_bl_anglais-oral-tronc-commun_2026/guide.md) |
 | 2026 | BEL | BL | Anglais (oral à option) — Bamford et Peterloo | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/brut.md) | [md](2026/bel/bel_bl_anglais-oral-a-option-bamford-et-peterloo_2026/guide.md) |
 | 2026 | BEL | BL | Chinois | [md](2026/bel/bel_bl_chinois_2026/brut.md) | [md](2026/bel/bel_bl_chinois_2026/guide.md) |
 | 2025 | BEL | BL | Allemand | [md](2025/bel/bel_bl_allemand_2025/brut.md) | [md](2025/bel/bel_bl_allemand_2025/guide.md) |
@@ -558,6 +561,8 @@
 | 2024 | ENS de Lyon | Second concours | Physique | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
+| 2026 | ENS de Lyon | Série SES (B/L) | Espagnol (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
@@ -605,6 +610,7 @@
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
+| 2021 | ENS | PC | Chimie B | [md](2021/ens/ens_pc_chimie-b_2021/brut.md) | [md](2021/ens/ens_pc_chimie-b_2021/guide.md) |
 | 2022 | ENS | PC | Chimie B | [md](2022/ens/ens_pc_chimie-b_2022/brut.md) | [md](2022/ens/ens_pc_chimie-b_2022/guide.md) |
 | 2023 | ENS | PC | Chimie B | [md](2023/ens/ens_pc_chimie-b_2023/brut.md) | [md](2023/ens/ens_pc_chimie-b_2023/guide.md) |
 | 2024 | ENS | PC | Chimie B | [md](2024/ens/ens_pc_chimie-b_2024/brut.md) | [md](2024/ens/ens_pc_chimie-b_2024/guide.md) |
@@ -825,6 +831,9 @@
 | 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2019 | X-ENS | MP-PC-PSI | Informatique B | [md](2019/x-ens/x-ens_mp-pc-psi_informatique-b_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_informatique-b_2019/guide.md) |
+| 2021 | X-ENS | MP-PC-PSI | Informatique B | [md](2021/x-ens/x-ens_mp-pc-psi_informatique-b_2021/brut.md) | [md](2021/x-ens/x-ens_mp-pc-psi_informatique-b_2021/guide.md) |
+| 2018 | X-ENS | MP-PC-PSI | Informatique B | [md](2018/x-ens/x-ens_mp-pc-psi_informatique-b_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_informatique-b_2018/guide.md) |
 | 2022 | X-ENS | MP-PC-PSI | Informatique B | [md](2022/x-ens/x-ens_mp-pc-psi_informatique-b_2022/brut.md) | [md](2022/x-ens/x-ens_mp-pc-psi_informatique-b_2022/guide.md) |
 | 2023 | X-ENS | MP-PC-PSI | Informatique B | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/brut.md) | [md](2023/x-ens/x-ens_mp-pc-psi_informatique-b_2023/guide.md) |
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
