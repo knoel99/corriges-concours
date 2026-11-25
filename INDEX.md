@@ -155,10 +155,18 @@
 | 2017 | BEL | AL | Chinois (thème Lyon) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
+| 2007 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2007/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2007/brut.md) | [md](2007/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2007/guide.md) |
 | 2019 | ENS Rennes | D1 | Allemand | [md](2019/ens-rennes/ens-rennes_d1_allemand_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_allemand_2019/guide.md) |
 | 2019 | ENS Rennes | D1 | Anglais | [md](2019/ens-rennes/ens-rennes_d1_anglais_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_anglais_2019/guide.md) |
+| 2011 | ENS de Cachan | D1 | Composition d’ordre économique | [md](2011/ens-rennes/ens-rennes_d1_composition-dordre-economique_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_composition-dordre-economique_2011/guide.md) |
+| 2011 | ENS de Cachan | D1 | Droit civil | [md](2011/ens-rennes/ens-rennes_d1_droit-civil_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_droit-civil_2011/guide.md) |
+| 2011 | ENS de Cachan | D1 | Droit commercial | [md](2011/ens-rennes/ens-rennes_d1_droit-commercial_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_droit-commercial_2011/guide.md) |
+| 2011 | ENS de Cachan | D1 | Droit public | [md](2011/ens-rennes/ens-rennes_d1_droit-public_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_droit-public_2011/guide.md) |
 | 2019 | ENS Rennes | D1 | Espagnol | [md](2019/ens-rennes/ens-rennes_d1_espagnol_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_espagnol_2019/guide.md) |
 | 2019 | ENS Rennes | D1 | Italien | [md](2019/ens-rennes/ens-rennes_d1_italien_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_italien_2019/guide.md) |
+| 2007 | ENS Rennes | D1 | Mathématiques appliquées | [md](2007/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2007/brut.md) | [md](2007/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2007/guide.md) |
+| 2008 | ENS Rennes | D1 | Mathématiques appliquées | [md](2008/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2008/guide.md) |
+| 2009 | ENS Rennes | D1 | Mathématiques appliquées | [md](2009/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2009/brut.md) | [md](2009/ens-rennes/ens-rennes_d1_mathematiques-appliquees_2009/guide.md) |
 | 2019 | ENS Rennes | D1 | Russe | [md](2019/ens-rennes/ens-rennes_d1_russe_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_russe_2019/guide.md) |
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (commentaire et traduction) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/guide.md) |
@@ -1099,6 +1107,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
 | 2013 | X | PSI-PT | Informatique | [md](2013/x/x_psi-pt_informatique_2013/brut.md) | [md](2013/x/x_psi-pt_informatique_2013/guide.md) |
 | 2014 | X | PSI-PT | Informatique | [md](2014/x/x_psi-pt_informatique_2014/brut.md) | [md](2014/x/x_psi-pt_informatique_2014/guide.md) |
 | 2011 | X | PSI-PT | Informatique | [md](2011/x/x_psi-pt_informatique_2011/brut.md) | [md](2011/x/x_psi-pt_informatique_2011/guide.md) |
