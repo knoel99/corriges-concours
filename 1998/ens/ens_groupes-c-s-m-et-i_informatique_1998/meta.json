@@ -1,0 +1,56 @@
+{
+  "slug": "ens_groupes-c-s-m-et-i_informatique_1998",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Groupes C/S, M et I",
+    "matiere": "Informatique",
+    "annee": 1998,
+    "duree_heures": 4
+  },
+  "questions": 15,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-373928d79b341c35e3b7",
+    "sujet_sha256": "28035767b592db18153cc325e90b8e1d07f24b67299b155e4fab4d24f99e13ca"
+  },
+  "figures": [
+    {
+      "fichier": "figures/synchronisation.svg",
+      "question": "1",
+      "legende": "Réseau marqué pour les quatre étapes. Le point de la place A est le jeton initial, les rectangles sont les transitions."
+    },
+    {
+      "fichier": "figures/marquages.svg",
+      "question": "1",
+      "legende": "Graphe des cinq marquages accessibles. Les deux chemins centraux commutent."
+    },
+    {
+      "fichier": "figures/atelier-trois-machines.svg",
+      "question": "2",
+      "legende": "Réseau représenté par ses six cycles. Deux rectangles de même nom désignent une seule transition, qui doit recevoir les jetons des deux lignes. Les points marquent les six jetons initiaux."
+    },
+    {
+      "fichier": "figures/arbre-karp-miller.svg",
+      "question": "6",
+      "legende": "Arbre complet de la figure 4. Chaque étiquette indique l’état de contrôle puis les deux compteurs. Le symbole ω représente la valeur infinie."
+    },
+    {
+      "fichier": "figures/contact-tetris.svg",
+      "question": "14",
+      "legende": "Exemple de poids signé. La pièce touche le sommet de la colonne 1 à la hauteur 4 et forme un sommet de hauteur 3 en colonne 2. Le transfert de 1 vers 2 vaut donc moins un."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 15 questions et subdivisions après lecture du fac-similé UPS de 15 pages. Reconstruction des réseaux et de l’arbre de Karp et Miller, hypothèses manquantes en questions 3, 5 et 6, preuves sur semi-anneaux, réalisation sur les poids naturels du sujet en question 14 et contrôle de 18 200 jeux et mots par comparaison avec les hauteurs géométriques. Cinq schémas originaux."
+    }
+  ]
+}
