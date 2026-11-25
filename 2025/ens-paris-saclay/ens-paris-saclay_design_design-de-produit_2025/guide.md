@@ -2,9 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Couverture partielle.** Le rapport établit le travail sur les briques alvéolaires et l’extrusion. La photographie de la machine, les profils fournis et le cahier des charges industriel distribué restent indisponibles. Les dimensions et paramètres retenus sont des hypothèses de prototype.
-
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture partielle.** Le rapport établit le travail sur les briques alvéolaires et l’extrusion. La photographie de la machine, les profils fournis et le cahier des charges industriel distribué restent indisponibles. Les dimensions et paramètres retenus sont des hypothèses de prototype.
 
 Les porte-traces est une famille de modules en terre cuite à six alvéoles pour l’atelier de dessin. Les 4 planches de la proposition sont au format 420 × 297 mm. Les échelles indiquées valent pour une planche seule imprimée sur A3 à 100 %.
 

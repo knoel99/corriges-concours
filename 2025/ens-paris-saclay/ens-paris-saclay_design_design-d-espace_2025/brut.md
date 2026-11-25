@@ -2,9 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Couverture partielle.** Le rapport décrit le jardin partagé, les abris et un bâtiment collectif. Le plan de la parcelle et les prescriptions originales d’échelle et de matériaux ne figurent pas dans les pièces publiées. Les cotes et les matériaux de ces planches sont ceux du projet pédagogique.
-
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture partielle.** Le rapport décrit le jardin partagé, les abris et un bâtiment collectif. Le plan de la parcelle et les prescriptions originales d’échelle et de matériaux ne figurent pas dans les pièces publiées. Les cotes et les matériaux de ces planches sont ceux du projet pédagogique.
 
 La jauge du jardin transforme une réserve d’eau visible en repère pour un quartier et en prétexte à discuter des cultures. Les 4 planches de la proposition sont au format 420 × 297 mm. Les échelles indiquées valent pour une planche seule imprimée sur A3 à 100 %.
 

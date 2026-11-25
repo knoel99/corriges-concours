@@ -2,9 +2,9 @@
 
 *Corrigé rédigé par IA, non officiel.*
 
-**Couverture partielle.** Le jury confirme une scène nationale du Jura, l’identité existante, deux spectacles, deux affiches abribus et un support social. Les visuels, le nom indiqué dans le dossier et les deux notices de spectacle manquent. Les titres, dates, lieux et disciplines des maquettes sont fictifs.
-
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Couverture partielle.** Le jury confirme une scène nationale du Jura, l’identité existante, deux spectacles, deux affiches abribus et un support social. Les visuels, le nom indiqué dans le dossier et les deux notices de spectacle manquent. Les titres, dates, lieux et disciplines des maquettes sont fictifs.
 
 Le plateau répond est une proposition d’identité pour une scène nationale du Jura. Scène du Plateau est le nom de travail de la maquette. Les 5 planches de la proposition sont au format 420 × 297 mm. Les échelles indiquées valent pour une planche seule imprimée sur A3 à 100 %.
 
