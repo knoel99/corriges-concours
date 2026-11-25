@@ -1,0 +1,47 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2012",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2012
+  },
+  "questions": 40,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_12d1_option_1336729336925.pdf#page=4",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a-12d1-maths_1421750458209-pdf",
+    "sha256_sujet": "01647a6ad7e8d0195f020b29323cdd180076598c5705891e7b83828f03124b5d",
+    "sha256_rapport_jury": "354c5633791d64e0439703c3cbce2ddfdac8072a7655d523ebf28a1dd69ff27f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ages-des-salaries.svg",
+      "question": "3.1.b",
+      "legende": "Chaque rectangle a pour aire la fréquence de sa classe. Une année de largeur et une unité de hauteur représentent 1 % des salariés."
+    },
+    {
+      "fichier": "figures/courbe-et-tangentes-de-f1.svg",
+      "question": "4.I.5",
+      "legende": "La courbe passe par son minimum en x = 1, puis coupe l’axe en e avec une tangente de pente 1."
+    },
+    {
+      "fichier": "figures/quatre-courbes-et-aire.svg",
+      "question": "4.II.7",
+      "legende": "Les tirets repèrent les quatre minima. La zone hachurée est comprise entre la deuxième courbe, l’axe horizontal et les droites x = 1 et x = e."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des quatre exercices et de toutes les sous-questions après contrôle des pages numérisées, de la table et du rapport du jury. Dénombrement des conditions, convolution des retards, histogramme et trois sorties graphiques avec tangentes et aire hachurée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
