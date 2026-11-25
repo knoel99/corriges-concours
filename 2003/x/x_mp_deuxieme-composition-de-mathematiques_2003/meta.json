@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2003",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2003
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2003.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2003_rapport_jury.pdf",
+    "sha256_sujet": "98e00d54adb330873035466ccc7b1274c5c2e35b3c1ea4e60877ab532b332380"
+  },
+  "figures": [
+    {
+      "fichier": "figures/drapeau-invariant.svg",
+      "question": "14",
+      "legende": "En dimension trois, relever la droite fixe du quotient donne le plan stable F₂. Chaque élément agit par l’identité sur les étages successifs, ce qui impose la diagonale unité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète sur original et rapport du jury. Contre-exemple réel, trace séparant les coefficients, action sur quotient et drapeau, choix itératif d’un supplémentaire de colonnes et calcul du projecteur. Schéma du drapeau invariant.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
