@@ -1035,6 +1035,7 @@
 | 2015 | X-ENS | PC | Chimie A | [md](2015/x-ens/x-ens_pc_chimie-a_2015/brut.md) | [md](2015/x-ens/x-ens_pc_chimie-a_2015/guide.md) |
 | 2016 | X-ENS | PC | Chimie A | [md](2016/x-ens/x-ens_pc_chimie-a_2016/brut.md) | [md](2016/x-ens/x-ens_pc_chimie-a_2016/guide.md) |
 | 2017 | X-ENS | PC | Chimie A | [md](2017/x-ens/x-ens_pc_chimie-a_2017/brut.md) | [md](2017/x-ens/x-ens_pc_chimie-a_2017/guide.md) |
+| 2018 | X-ENS | PC | Chimie A | [md](2018/x-ens/x-ens_pc_chimie-a_2018/brut.md) | [md](2018/x-ens/x-ens_pc_chimie-a_2018/guide.md) |
 | 2020 | X-ENS | PC | Chimie A | [md](2020/x-ens/x-ens_pc_chimie-a_2020/brut.md) | [md](2020/x-ens/x-ens_pc_chimie-a_2020/guide.md) |
 | 2021 | X-ENS | PC | Chimie A | [md](2021/x-ens/x-ens_pc_chimie-a_2021/brut.md) | [md](2021/x-ens/x-ens_pc_chimie-a_2021/guide.md) |
 | 2022 | X-ENS | PC | Chimie A | [md](2022/x-ens/x-ens_pc_chimie-a_2022/brut.md) | [md](2022/x-ens/x-ens_pc_chimie-a_2022/guide.md) |
