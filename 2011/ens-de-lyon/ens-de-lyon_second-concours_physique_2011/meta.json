@@ -1,0 +1,80 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2011",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2011
+  },
+  "questions": 25,
+  "redaction": "Sept questions d’hydrodynamique et dix-huit de diffusion thermique, avec les trois volets de II.6, les deux interprétations de flux et la discussion du modèle de glace.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2011/sujet_ecrit_2c2011_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "8b37c1dc8fb633b385f25bdbaf8480588b481872b3b66b23598b2312520f460d"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.7",
+      "fichier": "figures/deux-regimes.svg",
+      "legende": "Débit par unité de largeur en fonction de la hauteur. Les deux points de chaque horizontale convergent vers la profondeur critique lorsque la largeur diminue."
+    },
+    {
+      "numero": 2,
+      "question": "II.6",
+      "fichier": "figures/montages-thermiques.svg",
+      "legende": "Circuits thermiques équivalents. Les bornes portent des températures et chaque branche conduit une puissance."
+    },
+    {
+      "numero": 3,
+      "question": "II.17",
+      "fichier": "figures/profil-thermique.svg",
+      "legende": "Profil à phase temporelle nulle et enveloppes exponentielles. Les traversées successives de la moyenne sont distantes de π fois la longueur de pénétration."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Sept questions d’hydrodynamique et dix-huit de diffusion thermique, avec les trois volets de II.6, les deux interprétations de flux et la discussion du modèle de glace.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17",
+      "II.18"
+    ]
+  }
+}
