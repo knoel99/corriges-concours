@@ -1,0 +1,94 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse économique générale",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Dépenses incompressibles et échange entre deux économies",
+  "gabarit": "probleme",
+  "questions": 25,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2017_SE_D2-1_AnalyseEco.pdf",
+    "sujet_sha256": "4514822d37bee23fe9c5e9ad3421e5e985add6223bef6d8a8e91beae74dd90d4",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=279",
+    "precision": "Aucun rapport distinct de cet écrit n’est identifié sur la page d’annales de la session."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "1.9.1",
+      "1.9.2",
+      "1.10.1",
+      "1.10.2",
+      "1.10.3",
+      "1.10.4",
+      "1.11.1",
+      "1.11.2",
+      "1.11.3",
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.3.1",
+      "2.3.2",
+      "2.3.3",
+      "2.4.1",
+      "2.4.2"
+    ]
+  },
+  "redaction": "Toutes les sous-questions sur les préférences, les demandes et les deux zones sont résolues. Trois droites budgétaires illustrent la substitution compensée, et les deux hypothèses de mobilité sont explicitées.",
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/paniers.svg",
+      "question": "1.2 et 1.9",
+      "legende": "Le point A maximise l’utilité sur le budget. Après obligation, D constitue le meilleur panier admissible, situé sur une courbe plus basse."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/substitution.svg",
+      "question": "1.11.1",
+      "legende": "De A à H, l’utilité est compensée. De H à B, on retire la compensation au nouveau prix relatif."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/marches.svg",
+      "question": "2.1–2.3",
+      "legende": "L’égalité des valeurs dépensées vient du partage du revenu par moitiés. La technologie linéaire fixe une relation entre prix."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/mobilite.svg",
+      "question": "2.4",
+      "legende": "L’ouverture du seul commerce des biens et l’intégration complète des trois marchés donnent des prix du facteur différents."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "saclay_economie_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Toutes les sous-questions sur les préférences, les demandes et les deux zones sont résolues. Trois droites budgétaires illustrent la substitution compensée, et les deux hypothèses de mobilité sont explicitées.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
