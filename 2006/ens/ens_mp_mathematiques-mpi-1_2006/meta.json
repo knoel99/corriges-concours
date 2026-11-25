@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-1_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 1",
+    "annee": 2006
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2006/sujet-2006-ecrit-mp_mathematiques_1.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2006/rapport-2006-mp_ecrit_mathematique_1.pdf",
+    "sha256_sujet": "f418e1e28e829dab9fde55a2fc57ab8176657e6dba05c7fa53a45b2a5c2a8c4a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rotations-du-cube.svg",
+      "question": "13.a",
+      "legende": "Les rotations du cube permutent ses trois axes et peuvent en inverser les orientations. La contrainte de déterminant un conserve 24 des 48 permutations signées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des trois parties après lecture du sujet et du rapport. Réduction constructive par transvections, sous-groupes finis et traces tensorielles, divisibilités, représentation entière de tout groupe fini en dimension exactement son cardinal, endomorphismes surjectifs et quotients finis. Schéma des rotations du cube.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
