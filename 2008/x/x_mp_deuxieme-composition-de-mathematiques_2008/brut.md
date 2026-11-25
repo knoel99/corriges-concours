@@ -1,0 +1,93 @@
+# École polytechnique MP — Deuxième composition de mathématiques 2008 · Corrigé brut
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Le fil directeur est le dénombrement des surjections. On les retrouve dans une inversion binomiale, un changement de base polynomiale, la formule du multinôme et les coefficients d’une composition de séries entières.
+
+## Première partie. Dénombrer par l’image
+
+### Question 1
+
+Pour deux ensembles de même cardinal fini $n$, une injection est surjective et réciproquement. Les deux nombres demandés comptent les permutations de $n$ éléments, donc $j_{n,n}=s_{n,n}=n!$.
+
+### Question 2
+
+Une injection de $k$ éléments dans $n$ a une image de taille $k$, choisie de $\binom nk$ manières. Pour une image fixée, ses images ordonnées forment une bijection, choisie de $k!$ manières. Ces classes sont disjointes et exhaustives, donc $j_{k,n}=k!\binom nk$ pour $k\le n$.
+
+### Question 3.a
+
+Les $n^k$ applications ont toutes une image non vide, de cardinal $q\le n$. Pour chaque $q$ il y a $p_{q,n}$ sous-ensembles images possibles et, pour chacun, $s_{k,q}$ surjections depuis le domaine. Chaque application est comptée une seule fois, d’où $n^k=\sum_{q=1}^n s_{k,q}p_{q,n}$.
+
+![Figure 1 — Pour quatre éléments au départ et à l’arrivée, les 256 applications se répartissent par taille d’image en quatre classes de 4, 84, 144 et 24 applications.](figures/taille-image.svg)
+
+### Question 3.b
+
+Le produit matriciel de 3.a donne $A(r)=S(r)P(r)$. La matrice $S$ est triangulaire inférieure car $s_{k,n}=0$ si $k<n$, avec diagonale $k!$. La matrice $P$ est triangulaire supérieure car $p_{k,n}=0$ si $k>n$, avec diagonale un. Donc $\det A(r)=\prod_{k=1}^r k!$.
+
+## Deuxième partie. Translation et inversion binomiale
+
+### Question 4.a
+
+$T(X^n)=(X+1)^n=\sum_{k=0}^n\binom nk X^k$. Ainsi $T_{k,n}=\binom nk$ pour $k\le n$ et zéro sinon.
+
+### Question 4.b
+
+L’opérateur $U(P)(X)=P(X-1)$ préserve le degré et satisfait $TU=UT=I$. Par développement de $(X-1)^n$, $(T^{-1})_{k,n}=(-1)^{n-k}\binom nk$ si $k\le n$, zéro sinon.
+
+### Question 4.c
+
+Les relations, y compris $a_0=b_0$, disent $a=bT$. Donc $b=aT^{-1}$, soit $b_q=\sum_{n=0}^q(-1)^{q-n}\binom qn a_n$.
+
+### Question 4.d
+
+Fixons $k>0$. Prenons $a_q=q^k$ et $b_q=s_{k,q}$ pour $q>0$, et $a_0=b_0=0$. La relation de 3.a est exactement 4.c. Ainsi $s_{k,n}=\sum_{q=1}^n(-1)^{n-q}\binom nq q^k$. Les coefficients demandés sont $\lambda_{n,q}=(-1)^{n-q}$.
+
+### Question 5
+
+$N_k$ a degré exactement $k$ et coefficient dominant $1/k!$, y compris $N_0=1$. Dans toute relation linéaire non triviale, le terme de degré maximal ne pourrait disparaître. Les $d+1$ polynômes sont donc indépendants et forment une base de l’espace de dimension $d+1$.
+
+### Question 6
+
+Pour $k\ge1$, $N_k(X+1)-N_k(X)$ égale $(X+1)\cdots(X+k-1)[(X+k)-X]/k!=(X+1)\cdots(X+k-1)/(k-1)!=N_{k-1}(X+1)$. Pour $k=1$ le produit vide vaut un. Ainsi $T(N_k)=N_k+T(N_{k-1})$.
+
+### Question 7.a
+
+Comme $T(N_0)=N_0$, la récurrence de 6 donne $T(N_q)=N_q+\cdots+N_0$. Sa matrice a donc coefficient $\widetilde T_{k,q}=1$ pour $0\le k\le q$ et zéro sinon.
+
+### Question 7.b
+
+On trouve $T^{-1}N_q=N_q-N_{q-1}$ pour $q\ge1$ et $T^{-1}N_0=N_0$. La matrice inverse a des un sur la diagonale, des $-1$ immédiatement au-dessus et des zéros ailleurs.
+
+### Question 8
+
+Pour tout entier $m\ge k\ge1$, 3.a donne $m^k=\sum_{q=1}^k s_{k,q}\binom mq$. Les deux côtés étant polynomiaux en $m$ et égaux en une infinité d’entiers, ils coïncident pour toute variable complexe. En $m=-X$ on a $\binom{-X}{q}=(-1)^qN_q(X)$. D’où $X^k=\sum_{q=1}^k(-1)^{k-q}s_{k,q}N_q(X)$ et, pour $k=0$, $X^0=N_0$.
+
+## Troisième partie. Multinôme et fibres des surjections
+
+### Question 9
+
+Dans le développement de $k$ facteurs $x_1+\cdots+x_n$, le monôme de profil $f$ est obtenu en choisissant $f(1)$ places pour $x_1$, puis $f(2)$ parmi ce qui reste, et ainsi de suite. Le produit des binomiaux se simplifie en $k!/\prod_i f(i)!$. Les profils sont exactement les $f\in C_{k,n}$. Leur somme pondérée donne la formule du multinôme. Pour $k=0$, le profil nul contribue un.
+
+### Question 10
+
+Le choix dans le facteur $j$ d’une variable $x_{\varphi(j)}$ détermine une application $\varphi:\{1,\dots,k\}\to\{1,\dots,n\}$ et toute application détermine un unique choix. La distributivité donne donc $(x_1+\cdots+x_n)^k=\sum_{\varphi\in A_{k,n}}\prod_{j=1}^k x_{\varphi(j)}$.
+
+### Question 11
+
+Le profil de $\varphi$ est $f(i)=|\varphi^{-1}(i)|$. L’application est surjective exactement lorsque chacun de ces effectifs est positif, c’est-à-dire lorsque $f\in D_{k,n}$. Par le même choix de places qu’en 9, $k!/\prod_i f(i)!$ applications ont ce profil. Les classes disjointes donnent la somme demandée pour $s_{k,n}$.
+
+## Quatrième partie. Composition de séries entières
+
+### Question 12
+
+Pour $|x|<R_1$, la série $\sum |a_j||x|^j$ converge. Son produit de Cauchy à $n$ facteurs converge aussi absolument. Dans $\varphi(x)^n$, le coefficient de $x^k$ est $\sum_{j_1+\cdots+j_n=k}a_{j_1}\cdots a_{j_n}$. Comme $a_0=0$, seuls les indices positifs subsistent, d’où $\alpha_{n,k}$, nul si $k<n$. Le rayon est donc au moins $R_1$ et la somme vaut $\varphi(x)^n$. Pour $n=0$, la série vaut identiquement un par convention. Si $R_1=\infty$, tout rayon fini convient comme minorant.
+
+### Question 13
+
+Posons $A_*(t)=\sum_{j\ge1}|a_j|t^j$. Elle tend vers zéro quand $t\downarrow0$ car son rayon est $R_1>0$ et son terme constant nul. Choisir $0<r<R_1$ avec $A_*(r)<R_2$. Pour $|x|\le r$, le produit de Cauchy positif donne $\sum_k|\alpha_{n,k}||x|^k\le A_*(r)^n$. Ainsi $\sum_n|b_n|\sum_k|\alpha_{n,k}||x|^k\le\sum_n|b_n|A_*(r)^n<\infty$. On peut donc permuter les deux sommes et obtenir $\sum_k(\sum_n b_n\alpha_{n,k})x^k=\sum_n b_n\varphi(x)^n=\psi(\varphi(x))$. Le rayon est au moins $r>0$.
+
+### Question 14
+
+Ici $\varphi(x)=e^x-1$ a $a_j=1/j!$ pour $j\ge1$, et $\psi(z)=e^z$ a $b_n=1/n!$. Pour $k\ge n\ge1$, la question 11 donne $\alpha_{n,k}=\sum_{f\in D_{k,n}}1/\prod_i f(i)!=s_{k,n}/k!$. Ainsi le terme constant de $\theta$ est un et son coefficient de degré $k\ge1$ vaut $\frac1{k!}\sum_{n=1}^k s_{k,n}/n!$. En particulier $\theta^{(k)}(0)=\sum_{n=1}^k s_{k,n}/n!$. La convergence vaut pour tout $x$, car dans la preuve de 13 on peut choisir $r$ arbitrairement grand.
