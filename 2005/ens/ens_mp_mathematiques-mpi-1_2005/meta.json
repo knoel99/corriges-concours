@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-1_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 1",
+    "annee": 2005
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2005/sujet-2005-ecrit-mp_mathematiques_1.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2005/rapport-2005-mp_ecri_mathematiques_cachan_lyon_paris_1.pdf",
+    "sha256_sujet": "42e0537b6128b6f73ee5f4e34334f36529a22afd2a8487a3bab91f48205edfa2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/comparaison-sur-le-cercle.svg",
+      "question": "III.1.b",
+      "legende": "Au point de rencontre en zéro, la pente de la restriction est bornée par celle du cosinus de comparaison. Le signe fixe la valeur commune."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des six parties après lecture de l’original et du rapport. Calcul des commutateurs à trois indices, signe rectifié de l’angle en III.1.b, réduction au plan, inversion dans l’algèbre du groupe, convergence normale de toutes les dérivées et unicité des fonctions propres. Figure du cosinus de comparaison.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
