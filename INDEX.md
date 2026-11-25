@@ -251,10 +251,15 @@
 | 2021 | ENS Rennes | D-E | Anglais | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_anglais_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Anglais | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_anglais_2022/guide.md) |
 | 2023 | ENS Rennes | D-E | Anglais | [md](2023/ens-rennes/ens-rennes_d-e_anglais_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_anglais_2023/guide.md) |
+| 2021 | ENS Rennes | D-E | Chinois (oral) | [md](2021/ens-rennes/ens-rennes_d-e_chinois-oral_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_chinois-oral_2021/guide.md) |
+| 2021 | ENS Rennes | D-E | Espagnol (oral) | [md](2021/ens-rennes/ens-rennes_d-e_espagnol-oral_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_espagnol-oral_2021/guide.md) |
+| 2023 | ENS Rennes | D-E | Espagnol (oral) | [md](2023/ens-rennes/ens-rennes_d-e_espagnol-oral_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_espagnol-oral_2023/guide.md) |
 | 2020 | ENS Rennes | D-E | Espagnol | [md](2020/ens-rennes/ens-rennes_d-e_espagnol_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_espagnol_2020/guide.md) |
 | 2021 | ENS Rennes | D-E | Espagnol | [md](2021/ens-rennes/ens-rennes_d-e_espagnol_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_espagnol_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Espagnol | [md](2022/ens-rennes/ens-rennes_d-e_espagnol_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_espagnol_2022/guide.md) |
 | 2023 | ENS Rennes | D-E | Espagnol | [md](2023/ens-rennes/ens-rennes_d-e_espagnol_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_espagnol_2023/guide.md) |
+| 2021 | ENS Rennes | D-E | Italien (oral) | [md](2021/ens-rennes/ens-rennes_d-e_italien-oral_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_italien-oral_2021/guide.md) |
+| 2023 | ENS Rennes | D-E | Italien (oral) | [md](2023/ens-rennes/ens-rennes_d-e_italien-oral_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_italien-oral_2023/guide.md) |
 | 2020 | ENS Rennes | D-E | Italien | [md](2020/ens-rennes/ens-rennes_d-e_italien_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_italien_2020/guide.md) |
 | 2021 | ENS Rennes | D-E | Italien | [md](2021/ens-rennes/ens-rennes_d-e_italien_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_italien_2021/guide.md) |
 | 2022 | ENS Rennes | D-E | Italien | [md](2022/ens-rennes/ens-rennes_d-e_italien_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_italien_2022/guide.md) |
@@ -1321,6 +1326,7 @@
 | 2015 | X-ENS | MP | Physique | [md](2015/x-ens/x-ens_mp_physique_2015/brut.md) | [md](2015/x-ens/x-ens_mp_physique_2015/guide.md) |
 | 2016 | X-ENS | MP | Physique | [md](2016/x-ens/x-ens_mp_physique_2016/brut.md) | [md](2016/x-ens/x-ens_mp_physique_2016/guide.md) |
 | 2017 | X-ENS | MP | Physique | [md](2017/x-ens/x-ens_mp_physique_2017/brut.md) | [md](2017/x-ens/x-ens_mp_physique_2017/guide.md) |
+| 2018 | X-ENS | MP | Physique | [md](2018/x-ens/x-ens_mp_physique_2018/brut.md) | [md](2018/x-ens/x-ens_mp_physique_2018/guide.md) |
 | 2019 | X-ENS | MP | Physique | [md](2019/x-ens/x-ens_mp_physique_2019/brut.md) | [md](2019/x-ens/x-ens_mp_physique_2019/guide.md) |
 | 2020 | X-ENS | MP | Physique | [md](2020/x-ens/x-ens_mp_physique_2020/brut.md) | [md](2020/x-ens/x-ens_mp_physique_2020/guide.md) |
 | 2021 | X-ENS | MP | Physique | [md](2021/x-ens/x-ens_mp_physique_2021/brut.md) | [md](2021/x-ens/x-ens_mp_physique_2021/guide.md) |
