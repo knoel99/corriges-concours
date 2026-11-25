@@ -1,0 +1,71 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Empreinte carbone de l’intelligence artificielle et responsabilité des décisions automatisées",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "mots_hors_titre": {
+    "A": 607,
+    "B": 524
+  },
+  "sources": {
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/session-2021-3/",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_Ang.pdf",
+    "sujet_sha256": "2b1a3d7c4cf387739449b7ae500e8f85d2102a24078212a84369b689736ec3bf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_MPPC_rapport_eAng.pdf",
+    "rapport_jury_sha256": "27153ef2fe35db994fe44b7d4efa80e103496c92453751c4210772dbf8605b24",
+    "precision": "Le graphique, les articles et le rapport annuel ont été consultés. Les prévisions et les engagements d’entreprises sont restitués à leur date de publication."
+  },
+  "redaction": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Empreinte carbone de l’intelligence artificielle et responsabilité des décisions automatisées.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/pounds.svg",
+      "legende": "Empreintes en milliers de livres. Le coût de l’entraînement est celui du cas présenté."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/energie.svg",
+      "legende": "Le bilan exige un périmètre et des résultats observés."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/recours.svg",
+      "legende": "Les moyens de contrôle portent sur la décision clinique et l’institution."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_psi_2015_2021",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Empreinte carbone de l’intelligence artificielle et responsabilité des décisions automatisées.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
