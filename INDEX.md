@@ -1546,6 +1546,7 @@
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
+| 2001 | X | MP | Informatique (option) | [md](2001/x/x_mp_informatique-option_2001/brut.md) | [md](2001/x/x_mp_informatique-option_2001/guide.md) |
 | 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
 | 2013 | X | PSI-PT | Informatique | [md](2013/x/x_psi-pt_informatique_2013/brut.md) | [md](2013/x/x_psi-pt_informatique_2013/guide.md) |
 | 2014 | X | PSI-PT | Informatique | [md](2014/x/x_psi-pt_informatique_2014/brut.md) | [md](2014/x/x_psi-pt_informatique_2014/guide.md) |
