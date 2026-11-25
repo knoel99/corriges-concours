@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2012",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2012
+  },
+  "questions": 25,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.vmaths.fr/wp-content/uploads/XENS/MP/X_ENS_2012_MP_MB_enonce.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/12_mp_rap_ecrit_math_b_x.pdf",
+    "sha256_sujet": "38060078130f1dbe3c363d17b574de9106e9ef2b8034df31800f76aaedd3979c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/couronne-de-kronecker.svg",
+      "question": "13.c",
+      "legende": "La distance au centre varie entre la différence et la somme des deux rayons. Le déphasage permet toutes les distances intermédiaires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des trois parties à partir du sujet et du rapport. Vérification des résonances, des noyaux de Fejér et de la construction d’indices positifs dans le théorème de Kronecker. Calcul des rayons et exemple autorisé par Q13.b où un rayon est nul. Figure de la couronne de Q13.c.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
