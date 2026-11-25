@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2001",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2001
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2001.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "a13d3abdfca21179bd441358432e48484be806479cb24bd585f9236722109c94"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reseau-rectangulaire.svg",
+      "question": "11.c",
+      "legende": "Dans le réseau de pas horizontal 2 et vertical 1, les deux vecteurs minimaux sont verticaux. Toute symétrie orthogonale du réseau conserve leur axe."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale sur les trois pages du cahier. Vérification de la séparation uniforme, du dénominateur commun, des changements de base entière, des ordres des matrices et du groupe d’isométries du réseau rectangulaire. Figure des vecteurs minimaux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
