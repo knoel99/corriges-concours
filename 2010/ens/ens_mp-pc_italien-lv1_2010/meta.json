@@ -1,0 +1,74 @@
+{
+  "slug": "ens_mp-pc_italien-lv1_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LV1)",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Newton, la mela e la testimonianza di William Stukeley",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-lv1.pdf#page=5",
+    "sujet_sha256": "05dc37885caedddf4858adb064ff462aa7a3a1748ac0b98339edfada8569615a",
+    "page_pdf": 5,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2010-mpi",
+    "etablissements_imprimes": "ENS de Paris, Lyon et Cachan",
+    "texte_support": "Franco Foresta Martin, Corriere della Sera, 18 janvier 2010. Le support ne porte pas de titre imprimé ; l’intitulé est descriptif.",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-italien-lv1.pdf",
+    "rapport_sha256": "f1cab8485a639f8a05cacb33660b15239025bf2ec5b41a6312900372f0570241",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-italien-lv1.pdf"
+  },
+  "redaction": "Version intégrale en français, deux réponses articulées en italien sur observation et abstraction, lecture critique du témoignage de Stukeley et conseils conformes au rapport de Judith Revel.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/pomme-et-temoignage.svg",
+      "legende": "Du fait observé à sa diffusion en 2010, la chaîne du témoignage distingue le récit documenté des embellissements."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des deux pages du rapport Judith Revel, fidélité au sens en version, argumentation distincte et personnelle dans les deux réponses."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français, deux réponses articulées en italien sur observation et abstraction, lecture critique du témoignage de Stukeley et conseils conformes au rapport de Judith Revel.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.a",
+      "2.b"
+    ]
+  }
+}
