@@ -26,9 +26,10 @@
   ],
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=10",
-    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst"
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2026-bcpst",
+    "sujet_sha256": "ce0653ccf99a04728fdd7d9ac0ca35ed6fc9d9c2dc329c4651d6dd86b0a4dc30"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -65,6 +66,17 @@
       "modifications": true,
       "perimetre": "Confrontation des deux versions aux pages imprimées 9–12. Acteurs et dates de la demande de prolongation, position des associations sur le stockage, lecture de la vignette, vérification de l’essai et des limites de la version.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Correction de l’antécédent erroné qui assimilait les élections aux concessions fiscales dans la vignette, incidences locales et nationales des emplois et des recettes, distinction de deux fiscalités et traduction de la chute familière."
     }
   ]
 }

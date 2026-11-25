@@ -8,17 +8,19 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Document synthesis
 
-The American childhood vaccination debate combines three issues: the scope of federal recommendations, their public credibility and the rules families encounter when children start school. The documents show why changing guidance can have different consequences across communities.
+Federal guidance, public communication and state school rules shape access to childhood vaccination in different ways.
 
 In January 2026, federal officials reduced the number of diseases covered by universal childhood recommendations from seventeen to eleven. A memorandum responding to a presidential request drew on international comparisons, bypassing the usual expert panel review of the evidence for each vaccine (doc. 2). Specialists point to gaps in American primary care and insurance. Reaching selected patients requires knowing who needs protection and being able to contact them. Continued coverage was promised, but the article questions whether access will remain dependable.
 
-Public messages were already contested. A December 2025 report described an organisation formerly led by the health secretary spreading misleading claims about measles during a South Carolina outbreak in which most patients were unvaccinated children (doc. 1). The secretary both supported vaccination and questioned its testing. Researchers counted just ten CDC posts on measles from January to August, against an average of almost forty-six over the same months in the preceding four years. This episode illustrates problems of confidence preceding the January decision, which concerned other diseases.
+Public messages were already contested. A December 2025 report described an organisation formerly led by the health secretary spreading misleading claims about measles during a South Carolina outbreak in which most patients were unvaccinated children (doc. 1). The secretary both supported vaccination and questioned its testing. Researchers counted ten CDC posts about measles across three platforms from January to August 2025. None emphasised routine vaccination, whereas 82% of posts in the earlier comparison promoted routine or catch-up vaccination. This change in messaging preceded the January decision, which concerned other diseases.
 
-States also differ over school entry requirements. California allows neither of the two nonmedical grounds for exemption mapped by NBC, whereas Oregon allows both personal and religious exemptions (doc. 3). The map describes rules, without measuring uptake or case numbers. Taken together, the sources suggest that uncertain access, contradictory messages and different exemption policies may leave children unevenly protected.
+States also differ over school entry requirements. In NBC’s January map, California allows neither personal nor religious exemptions, Oregon allows both, Minnesota allows personal exemptions and Texas religious ones (doc. 3). The map describes legal exceptions to school requirements. It measures neither vaccine uptake nor disease incidence. Taken together, the sources suggest that uncertain access, contradictory messages and different exemption policies may leave children unevenly protected.
 
-*264 words.*
+*253 words.*
 
 ![Three levels of vaccination policy](figures/three-sources.svg)
 
@@ -36,4 +38,4 @@ I would ask decision makers to publish their reasons, identify disagreements amo
 
 ## Traduction en français
 
-Selon les spécialistes, les décisions fondées sur une comparaison avec d’autres pays à revenu élevé présentent une autre difficulté : les États-Unis ont une population beaucoup plus nombreuse, en moins bonne santé et qui, souvent, n’a pas accès aux soins de premier recours. Au Danemark et au Japon, la population est en meilleure santé, les systèmes de soins, les dispositifs de surveillance et de dépistage ainsi que le soutien social sont plus solides. Ces facteurs expliquent, selon les spécialistes, que l’on y dépende moins de la vaccination.
+Selon les spécialistes, les décisions fondées sur une comparaison avec d’autres pays à revenu élevé présentent une autre difficulté : les États-Unis ont une population beaucoup plus nombreuse, en moins bonne santé et qui, souvent, n’a pas accès aux soins de premier recours. Au Danemark et au Japon, le meilleur état de santé de la population, la solidité accrue des systèmes de soins, de la surveillance sanitaire et du dépistage, ainsi que le soutien social, expliquent que l’on y dépende moins de la vaccination.
