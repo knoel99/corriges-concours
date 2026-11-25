@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_anglais_2015",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-d1-langues-vivantes-2015_1459930616550-pdf#page=3",
+    "sha256_sujet": "2a6b3ae1c1792fa4d58a3f962ea24813665cd89072415497e710acbcb11ca52e",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "Adapté du Guardian, 14 octobre 2014",
+    "page": 3,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/anglais-e-crit-d1-rapport-jury-2015_1448641891115-pdf#page=1",
+    "sha256_rapport_jury": "555b1172e4828c86e2ea2d98cf4ce675ec5351ec092f517e25e5fde19734307e"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 99,
+    "regle": "Do you agree with the article? Environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/solitude.svg",
+      "legende": "How does the writer explain loneliness?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
