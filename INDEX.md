@@ -633,6 +633,10 @@
 | 2011 | ENS de Lyon | Second concours | Informatique | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/guide.md) |
 | 2012 | ENS de Lyon | Second concours | Informatique | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/brut.md) | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/guide.md) |
 | 2013 | ENS de Lyon | Second concours | Informatique | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Allemand | [md](2013/ens-rennes/ens-rennes_d1_allemand_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_allemand_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Anglais | [md](2013/ens-rennes/ens-rennes_d1_anglais_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_anglais_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Espagnol | [md](2013/ens-rennes/ens-rennes_d1_espagnol_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_espagnol_2013/guide.md) |
+| 2013 | ENS Rennes | D1 | Italien | [md](2013/ens-rennes/ens-rennes_d1_italien_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_italien_2013/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Informatique | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Informatique | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_informatique_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_informatique_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Informatique | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_informatique_2016/guide.md) |
