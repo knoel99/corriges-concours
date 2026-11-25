@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## De quel manque parle-t-on ?
 
 La deuxième composition de 2022 dure six heures. Le sujet porte sur « l’absence de principe ». L’expression laisse ouverte la nature de ce qui manque. Si l’on écrit dès l’introduction « l’absence du principe », on a déjà supposé un principe unique et concentré le problème sur sa disparition. Le rapport réserve un développement à ce changement d’article, ainsi qu’à la diversité des sens de l’absence.
@@ -19,6 +21,8 @@ La deuxième composition de 2022 dure six heures. Le sujet porte sur « l’abse
 **Relire le jury.** Le rapport invite à examiner aussi le domaine pratique et les situations où les principes doivent être recherchés, décidés ou institués. Sa remarque permet de construire la transition de l’absence d’une règle préalable à la responsabilité de juger. Le cas de l’équité fournit alors une difficulté véritable à résoudre, au lieu d’aligner successivement métaphysique, connaissance et morale.
 
 ![Qu’est-ce qui manque à la décision ?](figures/trois-diagnostics.svg)
+
+Avant de qualifier une décision de dépourvue de principe, dire quelle découverte serait susceptible de modifier ce diagnostic. Une archive peut lever une ignorance sans rendre juste ce qu’elle explique.
 
 ## L’absence de principe
 
