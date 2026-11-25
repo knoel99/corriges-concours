@@ -1,0 +1,82 @@
+{
+  "slug": "bel_al_anglais-oral-tronc-commun-16-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (oral tronc commun 16 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/anglais_tronc_commun_listes-sujets-16-juin.pdf",
+    "sujet_sha256": "5551346ecb887f9259506d982fb372fcb37fe14f23b90998628ece04d625081b",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_anglais_tc.pdf",
+    "rapport_sha256": "68c198f2905ae8891899e4364652b38aed0092fce531f2750e027d5a8b78adc2",
+    "documents": {
+      "solie": "https://thesewaneereview.com/articles/toronto-good",
+      "donne": "https://www.poetryfoundation.org/poems/50336/the-anniversary-56d22d56d635f",
+      "shelley": "https://www.poetryfoundation.org/poems/45117/the-cloud-56d2247bf4112",
+      "kunial": "https://onbeing.org/poetry/the-word/",
+      "jewett": "https://eclass.uoa.gr/modules/document/file.php/ENL606/Sarah%20Orne%20Jewett%20%E2%80%93%20A%20White%20Heron.pdf",
+      "hawthorne": "https://en.wikisource.org/wiki/Mosses_from_an_Old_Manse/Rappaccini%27s_Daughter",
+      "rich": "https://www.poetryfoundation.org/poetrymagazine/poems/27402/a-ball-is-for-throwing",
+      "rich_scan": "https://static.poetryfoundation.org/jstor/i20586629/pages/39.png"
+    },
+    "precision": "La feuille de l’ENS cite onze titres. Quatre poèmes sont expliqués sur toute leur longueur publiée, ceux de Donne, Shelley, Kunial et Rich. Les vers disponibles du poème de Solie font l’objet d’une explication partielle. Les nouvelles de Jewett et Hawthorne sont étudiées sur leur texte publié, mais les extraits de concours restent à délimiter. Les quatre autres ouvrages sont cités sans passage identifiable."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "2 — Donne",
+      "3 — Shelley",
+      "5 — Kunial",
+      "8 — Rich"
+    ],
+    "questions_partiellement_traitees": [
+      "1 — Solie, ouverture et vers cités en entretien",
+      "7 — Jewett, préparation sur la nouvelle sans bornes du concours",
+      "9 — Hawthorne, préparation sur la nouvelle sans bornes du concours"
+    ],
+    "questions_non_traitees": [
+      "4 — Miller",
+      "6 — O’Neill",
+      "10 — Agee et Evans",
+      "11 — McCullers"
+    ],
+    "motif": "La feuille de l’ENS cite onze titres. Quatre poèmes sont expliqués sur toute leur longueur publiée, ceux de Donne, Shelley, Kunial et Rich. Les vers disponibles du poème de Solie font l’objet d’une explication partielle. Les nouvelles de Jewett et Hawthorne sont étudiées sur leur texte publié, mais les extraits de concours restent à délimiter. Les quatre autres ouvrages sont cités sans passage identifiable."
+  },
+  "figures": [
+    {
+      "fichier": "figures/adresse.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "What changes when someone answers?"
+    },
+    {
+      "fichier": "figures/regard.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "What does a second look make possible?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule du jour, du rapport et des témoins publiés, dont la page 303 du numéro d’août 1957 de Poetry. Rédaction des deux éditions, de sept explications ou préparations, de leurs relances et des figures. La feuille de l’ENS cite onze titres. Quatre poèmes sont expliqués sur toute leur longueur publiée, ceux de Donne, Shelley, Kunial et Rich. Les vers disponibles du poème de Solie font l’objet d’une explication partielle. Les nouvelles de Jewett et Hawthorne sont étudiées sur leur texte publié, mais les extraits de concours restent à délimiter. Les quatre autres ouvrages sont cités sans passage identifiable."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
