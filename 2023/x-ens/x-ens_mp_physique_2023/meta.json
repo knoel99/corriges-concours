@@ -1,0 +1,118 @@
+{
+  "slug": "x-ens_mp_physique_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2023
+  },
+  "questions": 37,
+  "intitule": "Réactions au cœur du Soleil et rendement d’une machine thermique à puissance maximale",
+  "redaction": "Les 37 questions sont traitées. Calcul du jacobien et du pic solaire de Gamow, comparaison numérique des trois coefficients imprimés, figures de potentiel, de transmission, de spectre solaire, de puissance et de rendement. Les bornes de Carnot et les deux modèles à puissance maximale sont distingués dans le cas de Sizewell B.",
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP%20SUJET%20DE%20PHYSIQUE%20%28XULSR%29_0.pdf",
+    "sujet_sha256": "6a465345a89f1b74388b7bd45fc16f7a4ce73547295058d25cabf8585a5fc9bd",
+    "rapport_jury": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20MP%20RAPPORT%20ECRIT%20PHYSIQUE%20%28XULSR%29_0.pdf",
+    "rapport_sha256": "5ebf252ccf079c0631413ee14e6db3ee8113ba3b3c7e717e1e0ad2b03d0863d4"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Confrontation des quatre pages numérotées de l’original et des trois pages du rapport, en particulier la masse réduite, le jacobien, les tracés demandés, les conventions de flux et les systèmes utilisés pour les bilans d’entropie."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions brute et guidée. Les 37 questions sont traitées. Calcul du jacobien et du pic solaire de Gamow, comparaison numérique des trois coefficients imprimés, figures de potentiel, de transmission, de spectre solaire, de puissance et de rendement. Les bornes de Carnot et les deux modèles à puissance maximale sont distingués dans le cas de Sizewell B."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "5",
+      "fichier": "figures/coulomb.svg",
+      "legende": "Répulsion coulombienne dans le modèle ponctuel. Le point de retournement sépare les deux régions à x/L = 1."
+    },
+    {
+      "numero": 2,
+      "question": "8",
+      "fichier": "figures/transmission.svg",
+      "legende": "Transmission approchée pour une barrière coulombienne. L’asymptote de l’expression tracée vaut un."
+    },
+    {
+      "numero": 3,
+      "question": "18",
+      "fichier": "figures/fenetre-gamow.svg",
+      "legende": "Fenêtre de Gamow des protons du cœur solaire, pour les paramètres du sujet."
+    },
+    {
+      "numero": 4,
+      "question": "25",
+      "fichier": "figures/puissance-et-rendement.svg",
+      "legende": "Exemple pour T₂/T₁ = 0,5. Le trait vertical repère la puissance maximale. Le rendement continue de croître après ce point."
+    },
+    {
+      "numero": 5,
+      "question": "29",
+      "fichier": "figures/comparaison-des-rendements.svg",
+      "legende": "Le premier modèle rejoint la prédiction du second au premier ordre près de l’équilibre."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37"
+    ]
+  }
+}
