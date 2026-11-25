@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2003",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2003
+  },
+  "questions": 15,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2003.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2003_rapport_jury.pdf",
+    "sha256_sujet": "806b23d98491cf293c536b28306aec0d7b5aa1e4111c2492f6b3f2200d22a58f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/croissance-des-coefficients.svg",
+      "question": "10.d",
+      "legende": "Pour λ = 1, le rapport en module croît comme n/2. Cette croissance donne un rayon nul malgré l’existence de tous les ordres asymptotiques."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction sur l’original et le rapport de correction. Continuité de l’intégrale, complétude et inverse bilatère, wronskien, restes oscillants par intégrations par parties, récurrence et paramètres de troncature. Schéma du rapport des coefficients.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
