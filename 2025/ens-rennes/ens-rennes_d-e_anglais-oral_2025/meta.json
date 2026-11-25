@@ -1,0 +1,114 @@
+{
+  "slug": "ens-rennes_d-e_anglais-oral_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 6,
+  "sujets": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-anglais-oral-lve-d-e-2025_1761034065026-pdf",
+    "sujet_sha256": "a7de3c117af8c39331cf6c0dae1a6aa7ba06c094a2e3e92b6d51ba35584475f0",
+    "apercu_sujet_sha256": "58f426f9d90a662b1f2aaebfc70a73a80b1023a6c1c424b426d3fe9589e8fe70",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-oral-d-e-2025_1768897991410-pdf",
+    "rapport_jury_sha256": "353f545b95daa0df9c7fe45a12560cb94e40dde081af76f47c517b3d067f9754",
+    "apercu_rapport_sha256": "458c3b0dcbe315f494cb7001ccf0bde63c87e19acf8ac9db51cd749a2024c830",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2025",
+    "documents": [
+      {
+        "numero": 1,
+        "page": 1,
+        "titre": "Ed Sheeran writes urgent open letter to Keir Starmer for music education funding: ‘The time to act is now’",
+        "source": "Adapted from The Independent - 23 March 2025",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-anglais-oral-lve-d-e-2025_1761034065026-pdf#page=1"
+      },
+      {
+        "numero": 2,
+        "page": 2,
+        "titre": "Voice of America to Receive Feeds From Pro-Trump Network, Administration Says",
+        "source": "Adapted from The New York Times - 7 May 2025",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-anglais-oral-lve-d-e-2025_1761034065026-pdf#page=2"
+      },
+      {
+        "numero": 4,
+        "page": 3,
+        "titre": "MEPs call for EU court to suspend Hungary’s Pride ban",
+        "source": "Adapted from The Guardian – 16 April 2025",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-anglais-oral-lve-d-e-2025_1761034065026-pdf#page=3"
+      },
+      {
+        "numero": 5,
+        "page": 4,
+        "titre": "The Handmaid’s Tale has eerie parallels to Trump 2.0",
+        "source": "Adapted from Marquette Wire.org – 5 February 2025",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-anglais-oral-lve-d-e-2025_1761034065026-pdf#page=4"
+      },
+      {
+        "numero": 6,
+        "page": 5,
+        "titre": "A Reality Show Where Immigrants Compete for U.S. Citizenship? D.H.S. Is Considering It.",
+        "source": "Adapted from The New York Times – 16 May 2025",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-anglais-oral-lve-d-e-2025_1761034065026-pdf#page=5"
+      },
+      {
+        "numero": 7,
+        "page": 6,
+        "titre": "Fact check: Macron, Merz and Starmer targeted by Russian 'cocaine' claims",
+        "source": "Adapted from Euronews – 13 May 2025",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-anglais-oral-lve-d-e-2025_1761034065026-pdf#page=6"
+      }
+    ],
+    "precision": "Le fascicule et le rapport présentent six articles. Les feuillets portent les numéros 1, 2, 4, 5, 6 et 7."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sujet 1 · Ed Sheeran writes urgent open letter to Keir Starmer for music education funding: ‘The time to act is now’",
+      "Sujet 2 · Voice of America to Receive Feeds From Pro-Trump Network, Administration Says",
+      "Sujet 4 · MEPs call for EU court to suspend Hungary’s Pride ban",
+      "Sujet 5 · The Handmaid’s Tale has eerie parallels to Trump 2.0",
+      "Sujet 6 · A Reality Show Where Immigrants Compete for U.S. Citizenship? D.H.S. Is Considering It.",
+      "Sujet 7 · Fact check: Macron, Merz and Starmer targeted by Russian 'cocaine' claims"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/news.svg",
+      "legende": "From public funding to audience trust",
+      "question": "Sujet 2"
+    },
+    {
+      "fichier": "figures/institutions.svg",
+      "legende": "Who can ask whom to act?",
+      "question": "Sujet 4"
+    },
+    {
+      "fichier": "figures/verification.svg",
+      "legende": "What can the available evidence establish?",
+      "question": "Sujet 7"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des 6 coupures et du rapport officiel. Pour chaque sujet, rédaction d’une prise de parole en anglais, deux échanges et un accompagnement pour l’entraînement. Trois schémas. Le fascicule et le rapport présentent six articles. Les feuillets portent les numéros 1, 2, 4, 5, 6 et 7."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
