@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-paris-cachan_2003",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques Paris-Cachan",
+    "annee": 2003
+  },
+  "questions": 28,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2003/sujet-2003-ecrit-mp_mathematiques_cachan_paris.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2003/rapport-2003-mp_ecrit_mathematiques_cachan_paris.pdf",
+    "sha256_sujet": "cab0b09c35b7cf5b5da5b5d711c48e6477116f7d331aa5154c9a4e3b9184c89b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/optimisation-du-poids.svg",
+      "question": "IV.4.c",
+      "legende": "Pour les puissances entropiques A = 2 et B = 1, la borne atteint son maximum en λ = 2/3, où elle vaut ln 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète des quatre parties sur les six pages de l’énoncé. Vérification de la notice du jury, des conventions aux masses nulles, du regroupement récursif, des intégrales gaussiennes et des constantes de Young. Figure de l’optimisation binaire.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
