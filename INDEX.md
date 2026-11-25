@@ -254,6 +254,7 @@
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Composition française (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2017/guide.md) |
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuve de spécialité version grecque (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/guide.md) |
 | 2021 | ENS Rennes | D-E | Allemand (oral) | [md](2021/ens-rennes/ens-rennes_d-e_allemand-oral_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_allemand-oral_2021/guide.md) |
+| 2022 | ENS Rennes | D-E | Allemand (oral) | [md](2022/ens-rennes/ens-rennes_d-e_allemand-oral_2022/brut.md) | [md](2022/ens-rennes/ens-rennes_d-e_allemand-oral_2022/guide.md) |
 | 2023 | ENS Rennes | D-E | Allemand (oral) | [md](2023/ens-rennes/ens-rennes_d-e_allemand-oral_2023/brut.md) | [md](2023/ens-rennes/ens-rennes_d-e_allemand-oral_2023/guide.md) |
 | 2020 | ENS Rennes | D-E | Allemand | [md](2020/ens-rennes/ens-rennes_d-e_allemand_2020/brut.md) | [md](2020/ens-rennes/ens-rennes_d-e_allemand_2020/guide.md) |
 | 2021 | ENS Rennes | D-E | Allemand | [md](2021/ens-rennes/ens-rennes_d-e_allemand_2021/brut.md) | [md](2021/ens-rennes/ens-rennes_d-e_allemand_2021/guide.md) |
@@ -1031,6 +1032,7 @@
 | 2024 | ENS | PC | Physique-chimie | [md](2024/ens/ens_pc_physique-chimie_2024/brut.md) | [md](2024/ens/ens_pc_physique-chimie_2024/guide.md) |
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
+| 2010 | ENS Lyon et Cachan | PC | Physique PC2 | [md](2010/ens/ens_pc_physique-pc2_2010/brut.md) | [md](2010/ens/ens_pc_physique-pc2_2010/guide.md) |
 | 1999 | ENS | Ulm-Lyon | Informatique | [md](1999/ens/ens_ulm-lyon_informatique_1999/brut.md) | [md](1999/ens/ens_ulm-lyon_informatique_1999/guide.md) |
 | 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 1) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-1_2019/guide.md) |
 | 2019 | ENS Paris-Saclay | BEL anglais | Espagnol LV2 (oral, sujet 2) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-2_2019/brut.md) | [md](2019/ens-paris-saclay/ens-paris-saclay_bel-anglais_espagnol-lv2-oral-sujet-2_2019/guide.md) |
