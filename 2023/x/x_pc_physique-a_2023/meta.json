@@ -1,0 +1,105 @@
+{
+  "slug": "x_pc_physique-a_2023",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2023
+  },
+  "questions": 32,
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/08/23_pc_sujet_PhyA.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2023/12/23_pc_rap_ePhyA.pdf",
+    "sujet_sha256": "0129ec649dc81610d132dd1f010e5035594d1eced5fa8db6c5b0904395d3f42e",
+    "rapport_sha256": "aca37982396b7ea8f30fcfe8506ddceec6244a3f08efa2aa5d7b19391cbd9bba"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 32 questions sont traitées. Six figures originales couvrent le rayonnement, les fonctions colorimétriques, la diffusion magnétique, la plaque finie et les profils de température. Deux écarts de l’énoncé sont explicités et vérifiés par dimension et intégration."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "5",
+      "fichier": "figures/spectre-corps-gris.svg",
+      "legende": "À 1 000 K, une émissivité constante conserve le pic à 2,9 µm. Le visible occupe la partie gauche du graphe."
+    },
+    {
+      "numero": 2,
+      "question": "7",
+      "fichier": "figures/visible-et-colorimetrie.svg",
+      "legende": "Courbes colorimétriques représentées par une approximation analytique et portion visible du spectre de Planck. Les normalisations de l’irradiance et des sensibilités sont indépendantes."
+    },
+    {
+      "numero": 3,
+      "question": "13",
+      "fichier": "figures/chauffage-dans-la-peau.svg",
+      "legende": "La puissance volumique est proportionnelle au module carré du courant et décroît sur la longueur δ/2."
+    },
+    {
+      "numero": 4,
+      "question": "18",
+      "fichier": "figures/maximum-de-la-fonction.svg",
+      "legende": "Le même graphe sert pour les deux conventions d’épaisseur discutées aux questions 17 et 18. Le premier maximum dépasse légèrement la limite des grandes épaisseurs."
+    },
+    {
+      "numero": 5,
+      "question": "24",
+      "fichier": "figures/temperature-en-profondeur.svg",
+      "legende": "À flux imposé, tous les profils ont la même pente en surface. La zone chaude progresse en profondeur."
+    },
+    {
+      "numero": 6,
+      "question": "29",
+      "fichier": "figures/surface-et-convection.svg",
+      "legende": "Les deux évolutions partagent le départ en racine du temps. La convection limite ensuite la hausse de température."
+    }
+  ],
+  "redaction": "Les 32 questions sont traitées. Six figures originales couvrent le rayonnement, les fonctions colorimétriques, la diffusion magnétique, la plaque finie et les profils de température. Deux écarts de l’énoncé sont explicités et vérifiés par dimension et intégration.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32"
+    ]
+  }
+}

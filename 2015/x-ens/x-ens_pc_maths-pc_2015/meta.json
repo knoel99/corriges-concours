@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_pc_maths-pc_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Maths PC",
+    "annee": 2015
+  },
+  "questions": 30,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_pc_sujet_maths_xeulc.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_pc_rap_emath.pdf",
+    "sha256_sujet": "9ca499a9de29c09d00305ccaf1596b6d0dd520039b75f797ed041f26c1543f8c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/segment-des-spectres.svg",
+      "question": "9",
+      "legende": "Avec les spectres (3, 0) et (2, 0), la trace de la somme vaut cinq. Les couples ordonnés possibles remplissent le segment entre (3, 2) et (5, 0)."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-24",
+      "modifications": true,
+      "perimetre": "Rédaction des 30 réponses sur le sujet et les observations du jury. Traitement du cas de dimension un, des bornes effectivement atteintes, de la triple intersection et du segment des spectres avec extrémités réalisables. Graphique du segment en dimension deux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
