@@ -31,6 +31,7 @@
 | 2026 | Agro-Véto | BCPST | Modélisation mathématique et informatique | [md](2026/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2026/guide.md) |
 | 2025 | Agro-Véto | BCPST | Physique | [md](2025/agro-veto/agro-veto_bcpst_physique_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_physique_2025/guide.md) |
 | 2026 | Agro-Véto | BCPST | Physique | [md](2026/agro-veto/agro-veto_bcpst_physique_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_physique_2026/guide.md) |
+| 2025 | Agro-Véto | BCPST | SVT | [md](2025/agro-veto/agro-veto_bcpst_svt_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_svt_2025/guide.md) |
 | 2026 | Agro-Véto | BCPST | SVT | [md](2026/agro-veto/agro-veto_bcpst_svt_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_svt_2026/guide.md) |
 | 2026 | Agro-Véto | TB | Algorithmique et informatique | [md](2026/agro-veto/agro-veto_tb_algorithmique-et-informatique_2026/brut.md) | [md](2026/agro-veto/agro-veto_tb_algorithmique-et-informatique_2026/guide.md) |
 | 2026 | Agro-Véto | TB | Anglais | [md](2026/agro-veto/agro-veto_tb_anglais_2026/brut.md) | [md](2026/agro-veto/agro-veto_tb_anglais_2026/guide.md) |
