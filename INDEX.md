@@ -894,6 +894,7 @@
 | 2026 | ENS | BCPST | Maths | [md](2026/ens/ens_bcpst_maths_2026/brut.md) | [md](2026/ens/ens_bcpst_maths_2026/guide.md) |
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
+| 2007 | ENS | MP-PC | Informatique | [md](2007/ens/ens_mp-pc_informatique_2007/brut.md) | [md](2007/ens/ens_mp-pc_informatique_2007/guide.md) |
 | 2008 | ENS | MP-PC | Informatique | [md](2008/ens/ens_mp-pc_informatique_2008/brut.md) | [md](2008/ens/ens_mp-pc_informatique_2008/guide.md) |
 | 2026 | ENS | MP-MPI | Informatique fondamentale | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/brut.md) | [md](2026/ens/ens_mp-mpi_informatique-fondamentale_2026/guide.md) |
 | 2023 | ENS | Cycle master mathématiques | Français et culture générale | [md](2023/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2023/brut.md) | [md](2023/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2023/guide.md) |
