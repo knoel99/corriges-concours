@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_italien_2012",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Italien",
+    "annee": 2012,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_12d1_lv_1336729294135.pdf#page=5",
+    "sha256_sujet": "4442aa3f57fe3292832682719ab65371cef4ea439857a4548b7f26c9600a688b",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "La Repubblica · 6 janvier 2012",
+    "page": 5
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en italien"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en italien."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Décrire ses propres conditions de travail pour se sentir intellectuellement efficace · 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/cohortes.svg",
+      "legende": "Comparer les chiffres rapportés dans l’article"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en italien. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
