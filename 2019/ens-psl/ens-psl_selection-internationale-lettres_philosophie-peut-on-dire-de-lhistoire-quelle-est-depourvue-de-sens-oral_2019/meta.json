@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-peut-on-dire-de-lhistoire-quelle-est-depourvue-de-sens-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Peut-on dire de l’histoire qu’elle est dépourvue de sens (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Peut-on dire de l’histoire qu’elle est dépourvue de sens (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo.pdf",
+    "sha256_sujet": "e4d2e0b125bc27ca5c2d671e569ffb36314a5aab9fc5c2b9eaf08567862179a1",
+    "reperage": "Question 4 du feuillet commun. Développer et commenter le sujet « Peut-on dire de l’histoire qu’elle est dépourvue de sens ? »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "Trois questions sur un seul événement"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    }
+  ]
+}
