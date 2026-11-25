@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2005
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2005.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2005_rapport_jury.pdf",
+    "sha256_sujet": "740e79af8bcfbc80ef41d1e908024e0f09fb212aa32a7a3e58ca092f1b1761da"
+  },
+  "figures": [
+    {
+      "fichier": "figures/reste-de-taylor.svg",
+      "question": "7.d",
+      "legende": "L’écart entre l’exponentielle et son polynôme quadratique est le reste A³B³g. Ses trois premiers jets en zéro sont nuls."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète après lecture de l’énoncé et du rapport. Normes atteintes des opérateurs, limite et continuité de la dernière dérivée, noyau intégral itéré et développement de Taylor, formes duales et multiplicités, y compris au bord. Figure du reste de Taylor.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
