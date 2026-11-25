@@ -345,6 +345,21 @@
         "titre": "El agua, nuevo filón; inversión rentable a largo plazo: expertos financieros",
         "statut": "Publicación del medio",
         "url": "https://www.jornada.com.mx/2022/06/05/economia/014n1eco"
+      },
+      {
+        "billet_presse": 39,
+        "statut": "Vidéo du journal, 26 juin 2022, même événement et même titre",
+        "url": "https://www.youtube.com/watch?v=39BnY8eXP0U"
+      },
+      {
+        "billet_presse": 43,
+        "statut": "Transcription du discours du 30 mai 2022",
+        "url": "https://www.casareal.es/ES/Actividades/Paginas/actividades_discursos_detalle.aspx?data=6417"
+      },
+      {
+        "billet_presse": 43,
+        "statut": "Vidéo de la Maison royale du même discours",
+        "url": "https://www.casareal.es/ES/ArchivoMultimedia/Paginas/archivo-multimedia_archivos-videos-detalle.aspx?data=4373"
       }
     ]
   },
@@ -380,12 +395,28 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Dix explications littéraires avec analyse des voix et des indications scéniques, cinquante-deux analyses de presse et de leurs énonciateurs, relance individuelle en espagnol, mise en regard de trois opérations de recherche ou d’identification."
+    },
+    {
+      "phase": "revision",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse du cadrage de la vidéo d’El Mundo pour le billet 39 et du discours officiel de Felipe VI pour le billet 43, avec distinction entre documents identifiés et feuillets d’examen manquants.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
     }
   ],
   "couverture": {
     "statut": "partiel",
     "perimetre": "Soixante-deux billets sont traités dans l’ordre du fascicule. Les dix passages de Storni, García Lorca et Diego de San Pedro sont repérés dans des éditions consultables. Les cinquante-deux notices de presse comprennent l’article sur le sommet des Amériques inscrit dans deux séries. Les coupes de presse ne sont pas reproduites dans les archives de cette session.",
-    "limites": "Les 52 coupes de presse ne sont pas connues. Plusieurs titres très courts ne suffisent pas à identifier une édition exacte : les compléments sont présentés comme des documents contemporains ou de contexte lorsqu’il y a lieu. Aucun découpage commun postulé pour le billet du sommet des Amériques.",
+    "limites": "Les 52 coupes de presse ne sont pas connues. Plusieurs titres très courts ne suffisent pas à identifier une édition exacte : les compléments sont présentés comme des documents contemporains ou de contexte lorsqu’il y a lieu. Aucun découpage commun postulé pour le billet du sommet des Amériques. Pour 39 et 43, la vidéo du journal et le discours de la Maison royale précisent le contexte, sans établir les limites des deux textes distribués.",
     "billets_recenses": 62
   }
 }
