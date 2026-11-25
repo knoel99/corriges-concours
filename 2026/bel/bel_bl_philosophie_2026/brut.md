@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Peut-on cesser de croire ?
 
 ## Introduction
@@ -23,6 +25,10 @@ Croire qu’un ami est ailleurs, c’est compter avec son absence. Je choisis de
 La forme de cette fin varie. Si mon ami parle devant moi, je peux passer de l’affirmation à la négation de son absence. Mais quelqu’un m’apprend qu’il aurait changé ses projets, sans avoir de nouvelles sûres. La conduite raisonnable consiste alors à retirer mon assentiment et à laisser la question ouverte. J’ai cessé de tenir son départ pour établi. Il serait aussi imprudent de l’attendre à la gare que de compter avec certitude sur sa présence ici. Je puis enfin n’avoir rencontré aucun démenti déterminé. Les raisons de me fier à une personne perdent peu à peu leur force à la suite d’engagements manqués. Un jour je constate que je ne lui confierais plus ce projet. L’instant de cette constatation arrive après le changement de mes dispositions. Il existe des ruptures sans réfutation et des fins dont le sujet lui-même ne sait fixer la date.
 
 Supposons que mon ami m’appelle de son portable. Sa voix m’apprend qu’il peut me parler. Elle laisse entière la question du lieu d’où il appelle. Si ma seule raison de le croire absent était son silence, cet appel peut cependant me faire cesser de croire à son absence sans me convaincre de sa présence. La même information retire ici sa raison à une croyance sans en donner une suffisante à la croyance contraire.
+
+Si la communication s’interrompt avant que mon ami précise son lieu de séjour, je peux cesser d’affirmer qu’il est parti tout en refusant d’affirmer qu’il est revenu. La suspension révèle ainsi une manière de cesser de croire qui ne suppose pas l’adoption immédiate de la croyance inverse.
+
+![Que devient mon assentiment ?](figures/trois-issues.svg)
 
 Ces distinctions font apparaître une limite de notre pouvoir immédiat. Je peux prononcer maintenant une phrase annonçant que je crois mon ami à Paris. Puis-je, en la prononçant, régler la question pour moi-même alors que je viens de le voir entrer ? Je saurais que mon affirmation procède de l’ordre que je me donne et cette origine lui ôterait précisément sa valeur de raison. La volonté dispose de mes paroles, le monde conserve une prise sur mon assentiment. Il reste cependant une différence entre attendre passivement d’être démenti et se mettre en situation de découvrir une erreur. C’est dans cet écart qu’un pouvoir de cesser pourrait trouver à s’exercer.
 

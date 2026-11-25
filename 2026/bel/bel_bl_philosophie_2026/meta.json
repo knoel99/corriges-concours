@@ -36,7 +36,7 @@
       "legende": "Ce qu’une mise à l’épreuve peut interrompre"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -104,6 +104,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle des deux éditions et des renvois philosophiques. Correction du contre-exemple téléphonique et distinction entre absence de preuve décisive, suspension et croyance contraire."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cesser de croire, distinction entre démenti et suspension à information incomplète."
     }
   ]
 }
