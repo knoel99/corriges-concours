@@ -1,0 +1,72 @@
+{
+  "slug": "agro-veto_bcpst_humanites_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Humanités",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Humanités",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet-a-bcpst-humanites-session-2023.pdf",
+    "sujet_sha256": "835f8b47490bc1881b21ca9f212308ce6733dc3ee001ec3235e4158d4a6ad33a",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport-a-bcpst-humanites-2023.pdf",
+    "rapport_sha256": "8fa8cfc29761041615eb7cb47f8d982e347cbac9bd0ccda032234c613ae662dc"
+  },
+  "figures": [
+    {
+      "fichier": "figures/possessif.svg",
+      "question": "Dissertation",
+      "legende": "Que veut dire « mon usine » ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport sur la double valeur du possessif, la restriction « presque », la différence entre servitude et travail et les exemples des trois œuvres."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation dans les deux éditions, de la préparation pédagogique et du schéma pour les œuvres du programme."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du point de vue énonciatif, des deux passages des Géorgiques, de la retraite imposée chez Vinaver et des témoignages de Weil. Contrôle des deux éditions."
+    }
+  ]
+}

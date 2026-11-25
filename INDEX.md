@@ -21,6 +21,8 @@
 | 2026 | Agro-Véto | BCPST | Anglais | [md](2026/agro-veto/agro-veto_bcpst_anglais_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_anglais_2026/guide.md) |
 | 2026 | Agro-Véto | BCPST | Biologie | [md](2026/agro-veto/agro-veto_bcpst_biologie_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_biologie_2026/guide.md) |
 | 2026 | Agro-Véto | BCPST | Chimie | [md](2026/agro-veto/agro-veto_bcpst_chimie_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_chimie_2026/guide.md) |
+| 2023 | Agro-Véto | BCPST | Humanités | [md](2023/agro-veto/agro-veto_bcpst_humanites_2023/brut.md) | [md](2023/agro-veto/agro-veto_bcpst_humanites_2023/guide.md) |
+| 2024 | Agro-Véto | BCPST | Humanités | [md](2024/agro-veto/agro-veto_bcpst_humanites_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_humanites_2024/guide.md) |
 | 2025 | Agro-Véto | BCPST | Humanités | [md](2025/agro-veto/agro-veto_bcpst_humanites_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_humanites_2025/guide.md) |
 | 2026 | Agro-Véto | BCPST | Humanités | [md](2026/agro-veto/agro-veto_bcpst_humanites_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_humanites_2026/guide.md) |
 | 2026 | Agro-Véto | BCPST | Maths | [md](2026/agro-veto/agro-veto_bcpst_maths_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_maths_2026/guide.md) |
