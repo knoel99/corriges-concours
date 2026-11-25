@@ -1,0 +1,117 @@
+{
+  "slug": "x-ens_mp_physique_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Physique",
+    "annee": 2011
+  },
+  "questions": 36,
+  "intitule": "Imagerie par résonance magnétique",
+  "redaction": "Les 36 questions sont traitées dans les deux éditions, avec les repères I.1 à IV.11. Bilans de champ et de puissance, calcul de la longueur de London, changements de repère et ordres de grandeur, schémas du champ, de la résonance, de l’écho et de la relaxation.",
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-250/x-ens-mp-2011-physique-epreuve.pdf",
+    "sujet_sha256": "6f2d5c4cc86080eceef6f8d899a5edb89f5de992fce70db4d32bd81d45523578",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_physique_xulc_mp2011.pdf",
+    "rapport_sha256": "eabf232014104b7d4d028a7570a5de0c71d7bd68dca95fb7f0b1434b2be87081"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Confrontation du sujet de six pages aux quatre pages du rapport. Vérification des symétries, de la loi de Curie, du sens des précessions et des chronologies de l’écho et de la relaxation."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 36 questions sont traitées dans les deux éditions, avec les repères I.1 à IV.11. Bilans de champ et de puissance, calcul de la longueur de London, changements de repère et ordres de grandeur, schémas du champ, de la résonance, de l’écho et de la relaxation."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.9",
+      "fichier": "figures/homogeneite-axiale.svg",
+      "legende": "Croquis qualitatif de deux profils pairs. Le second a une courbure nulle au centre. Les deux profils sont normalisés séparément."
+    },
+    {
+      "numero": 2,
+      "question": "II.5",
+      "fichier": "figures/penetration-champ.svg",
+      "legende": "Le champ tangentiel reste continu à la surface et décroît dans la couche de London."
+    },
+    {
+      "numero": 3,
+      "question": "IV.4",
+      "fichier": "figures/mouvement-resonant.svg",
+      "legende": "Premier quart de tour à résonance. Dans le laboratoire, la base tourne en même temps que le moment bascule. Le rapport des deux vitesses est réduit pour rendre le dessin lisible."
+    },
+    {
+      "numero": 4,
+      "question": "IV.9",
+      "fichier": "figures/echo-de-spin.svg",
+      "legende": "Projection dans le plan tournant pour deux décalages statiques opposés. Les deux longueurs de flèche permettent de voir les deux contributions superposées à l’écho."
+    },
+    {
+      "numero": 5,
+      "question": "IV.10",
+      "fichier": "figures/relaxation.svg",
+      "legende": "Après le basculement, la composante transverse décroît sur 0,1 s. La composante longitudinale retrouve sa valeur d’équilibre sur 0,9 s."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "IV.7",
+      "IV.8",
+      "IV.9",
+      "IV.10",
+      "IV.11"
+    ]
+  }
+}
