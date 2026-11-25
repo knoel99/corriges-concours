@@ -93,3 +93,7 @@ Pour Rennes, les options de droit commercial, de droit public et de mathématiqu
 Pour le cycle master, la comparaison des PDF de mathématiques et de langues de 2017 à 2022 a permis de repérer trois doublons de fichiers dans la session 2017. Le lien « épreuve de math 2017 » ouvre le même cahier de français que le lien de français. Le document annoncé comme sujet d’analyse numérique contient le rapport du jury. [Intitulés du portail et identification par les gardes](cycle-master-paris-saclay.tsv)
 
 Les six fascicules de Rennes en 2022 et 2023 réunissent les tirages d’économie, de droit et d’entretien. Un fascicule compte une fois dans le bilan. L’index de l’école fournit aussi cinq rapports associés à ces oraux. [Fascicules et rapports de Rennes](rennes-oraux-droit-economie-2022-2023.tsv)
+
+Les archives du cycle master des ENS Paris-Saclay et Rennes donnent douze écrits de mathématiques, de français et de culture générale entre 2017 et 2021. La deuxième composition de mathématiques de 2017 réunit les deux options dans un seul cahier. Chaque option a son propre rapport. [Sujets et rapports du cycle master](cycle-master-paris-saclay.tsv)
+
+En PSI, les cahiers de cinq heures CX4612 et CX4614 identifient les épreuves de modélisation et de sciences industrielles de la banque X/inter-ENS en 2014. [Deux sujets originaux et leurs empreintes](psi-sciences-industrielles-2014.tsv)
