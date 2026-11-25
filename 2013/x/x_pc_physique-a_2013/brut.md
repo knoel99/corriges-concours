@@ -54,7 +54,7 @@ $u=\varepsilon_0E_i^2/2+B_i^2/(2\mu_0)=B_i^2/\mu_0$. Les deux questions précéd
 
 ### Question I.10 — Flux électromagnétique
 
-$|\mathbf\Pi_i|=|\mathbf E_i\times\mathbf B_i|/\mu_0=c B_i^2/\mu_0=cu$. On en déduit $P=2|\mathbf\Pi_i|/c$. Un flux surfacique d’énergie divisé par une vitesse a bien l’unité d’une pression.
+$|\vec{\Pi}_i|=|\mathbf E_i\times\mathbf B_i|/\mu_0=c B_i^2/\mu_0=cu$. On en déduit $P=2|\vec{\Pi}_i|/c$. Un flux surfacique d’énergie divisé par une vitesse a bien l’unité d’une pression.
 
 ### Question I.11 — Pression au voisinage de la Terre
 
