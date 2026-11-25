@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_anglais_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Anglais",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en anglais de 245 et 243 mots. Crise politique britannique, décision sur Rimbaud et Verlaine, effets temporaires et durables de la pandémie sur l’économie américaine.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-anglais-2021_1631710099168-pdf",
+    "sujet_sha256": "e86802019a130d54d1da7e2e766076c34a4a81e0560cb5f66cb27011cae80acf",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-anglais-ecrit-d-e-2021_1634139985259-pdf",
+    "rapport_sha256": "ccf2e46e4391001cbf66a990e88806a0c65a7262d06c82b7947f88e26eda6228"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/two-economic-horizons.svg",
+      "legende": "The time horizon changes both the problem and the appropriate response."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des observations sur l’analyse grammaticale, les groupes nominaux, le vocabulaire politique britannique et la nécessité d’une traduction idiomatique dans chaque sens."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en anglais de 245 et 243 mots. Crise politique britannique, décision sur Rimbaud et Verlaine, effets temporaires et durables de la pandémie sur l’économie américaine."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. How is the COVID-19 pandemic reshaping the US economy?",
+      "III.2. To what extent should a government get involved in the economy in times of crisis?"
+    ]
+  }
+}
