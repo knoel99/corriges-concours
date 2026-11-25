@@ -31,7 +31,7 @@
     {
       "fichier": "figures/minimiseurs-penalises.svg",
       "question": "II.6",
-      "legende": "Pour f(x) = (x − 1,5)² et K = ]−∞, 0], la pénalité k max(0,x)² déplace le minimiseur 1,5/(k + 1) vers le bord."
+      "legende": "Pour f(x) = (x − 1,5)² et K égal à l’ensemble des réels négatifs ou nuls, la pénalité k max(0,x)² déplace le minimiseur 1,5/(k + 1) vers le bord."
     },
     {
       "fichier": "figures/farkas-separation.svg",
@@ -104,6 +104,18 @@
       "perimetre": "Relecture des 46 réponses et des sept schémas face au sujet et au rapport. Monotonie du minimum pénalisé et de la violation, contre-exemple à la qualification, estimation quantitative d’Uzawa et calcul du cas scalaire illustré.",
       "fournisseur": "codex",
       "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "perimetre": "Question II.6. Vérification de l’exemple de pénalisation quadratique et correction de la légende du graphique dans les deux éditions pour le rendu Markdown et PDF."
     }
   ]
 }

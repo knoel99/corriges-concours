@@ -42,7 +42,7 @@
     {
       "fichier": "figures/q44-retard-fractionnaire.svg",
       "question": "Q44",
-      "legende": "Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre X[2] et X[3]."
+      "legende": "Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre les échantillons d’indices 2 et 3."
     }
   ],
   "contributions": [
@@ -56,6 +56,17 @@
       "agent": "astra_info_si",
       "fournisseur": "codex",
       "perimetre": "Rédaction des 50 questions sur la mécanique musculaire et ventriculaire, la circulation, le filtre barométrique et la simulation du SNA. Lecture des 25 pages du PDF et du rapport, confrontation des graphes et équations aux rendus de pages, six illustrations et vérification des programmes et des valeurs numériques."
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "perimetre": "Question 44. Vérification de l’interpolation au temps retardé et correction de la légende du graphique dans les deux éditions pour le rendu Markdown et PDF."
     }
   ]
 }
