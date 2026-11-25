@@ -1,0 +1,56 @@
+{
+  "slug": "x-ens_mp-pc_chinois_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Chinois",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "intitule": "Le prix des études à l’étranger et la morale de la frugalité",
+  "questions": 3,
+  "redaction": "Version complète, avec les montants et les populations, puis deux réponses en chinois sur notre rapport à l’argent et les conditions d’une frugalité choisie.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_version_xeulc.pdf#page=5",
+    "sha256_sujet": "0e95612d3a4fe0813b6dd6751b3c5a0300f37231ada228521cc6fd91a310392c",
+    "code_garde": "XEULC",
+    "reference_du_texte": "Xinhua, 27 avril 2011, article adapté. Pascal Bruckner, L’Euphorie perpétuelle, 2000.",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2013",
+    "page": 5,
+    "sujet_expression": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_expressionecrite_xeulc.pdf",
+    "sha256_sujet_expression": "90b418bcca94b53f07c545a6c1cad740071b976e98078de58ea3509a11a3f1ca",
+    "rapport_jury": null,
+    "index_ens": "https://www.ens.psl.eu/rapports-et-sujets-pc-2013",
+    "precision_rapport": "L’index des écrits mentionne un rapport de chinois sans lien vers le document. Aucun rapport propre à cette épreuve n’a été retrouvé."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/budget-familial.svg",
+      "legende": "Ce qu’il reste du revenu annuel moyen cité à Pékin face au prix d’une année d’études."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version complète, avec les montants et les populations, puis deux réponses en chinois sur notre rapport à l’argent et les conditions d’une frugalité choisie."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "E1",
+      "E2"
+    ]
+  }
+}
