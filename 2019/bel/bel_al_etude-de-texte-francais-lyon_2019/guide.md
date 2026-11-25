@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reconstruire l’argument à partir de l’échange
 
 Le sixième des *Dialogues des Morts anciens avec des modernes* confronte une reine antique et un prince moderne. La feuille attribue cinq heures. Avant de résumer leur désaccord, relever deux notations très éloignées dans le texte : l’affliction avec laquelle Cosme prend la parole et la consolation partielle dont il remercie Bérénice. Le sujet appelle une étude de l’action exercée par les répliques, puisque celui qui ouvre et ferme l’échange a changé dans l’intervalle.
@@ -19,6 +21,8 @@ Le sixième des *Dialogues des Morts anciens avec des modernes* confronte une re
 **Interpréter une restriction.** Cosme accepte la conclusion avec le mot « un peu ». L’effacer ferait du prince un simple porte-parole d’une morale déjà écrite. Le garder permet de montrer ce que la conversation a obtenu et ce que le personnage conserve de sa première disposition.
 
 ![Comment Bérénice console-t-elle Cosme ?](figures/nom-et-gloire.svg)
+
+Relever à chaque réplique ce qui peut disparaître, une appellation astronomique, la connaissance d’un nom ou la capacité du défunt à jouir d’une renommée. Cette distribution fait apparaître l’ironie de la consolation.
 
 ## Fontenelle, Bérénice et Cosme II de Médicis
 

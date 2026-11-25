@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Nicolas Bouvier, *Le Poisson-scorpion*, le dispensaire
 
 Le voyageur qui pénètre dans un lieu qu’il ne connaît pas se prépare d’ordinaire à observer les autres. Le malade du *Poisson-scorpion* commence par ne plus savoir ce qui se passe dans sa propre bouche. Le récit de l’arrivée au dispensaire de Ceylan a bien pour repères des déplacements, des rencontres et des notations précises. L’objet principal de l’observation se dérobe pourtant à celui qui prétend la conduire. Projeté sur un drap, puis dérobé à sa propre conscience, le corps du visiteur occupe la scène. Le dernier mouvement lui apprend qu’un homme couché à côté de lui en a éprouvé douloureusement les conséquences. Comment écrire une rencontre quand le voyageur qui pourrait la raconter risque d’en accaparer toute la lumière ?
@@ -19,6 +21,10 @@ L’ouverture renverse une action élémentaire. Le narrateur croyait manger son
 Le passé composé inscrit le déplacement dans un passé très proche du moment où le voyageur fait son bilan. L’inventaire des soins à recevoir, les indications laconiques du coût, les groupes nominaux pour la villa ou les symptômes produisent l’allure rapide d’un carnet. Les constructions raccourcies enregistrent ce qui perce dans le champ d’attention du malade. Pourtant, une formule comme « soins gratuits » explique aussi matériellement son choix à quelqu’un qui peine à tirer parti de son séjour. La précision documentaire et la discontinuité sensible procèdent des mêmes phrases. Le regard posé sur les gens du dispensaire en donne une preuve. Il commence par les compter presque comme le personnel, puis il imagine leur désir de rester là où compagnie et nourriture sont assurées. Le terme qui signale qu’il s’agit d’une impression du narrateur maintient une distance entre le constat et l’intention qu’il leur prête.
 
 La séance des radiographies donne une forme publique à ce regard imparfait. L’appareil ancien projette les images sur un drap, si bien que les organes intérieurs de chacun peuvent être vus par tous. Les mots de la matière abîmée, les exclamations et les rappels au silence déplacent le vocabulaire de l’auscultation vers celui d’une séance de cinéma. Le passage de la troisième personne au « nous » est décisif. Le voyageur ne contemple plus du dehors des corps souffrants. Il appartient au groupe des spectateurs dont le corps peut, au tour suivant, faire l’objet du spectacle. La gaieté n’efface pas les radiographies inquiétantes. Elle apparaît comme une manière de pouvoir les regarder ensemble.
+
+Le patient peut regarder les autres regarder son corps. L’appareil médical et le récit produisent alors deux images différentes du même homme, l’une à examiner et l’autre occupée à décrire le regard des spectateurs. Cette mobilité de la place du témoin donne sa portée ironique à la scène.
+
+![Qui occupe la place du spectateur ?](figures/spectateur-patient.svg)
 
 ### II. Le privilège de tenir la vedette se renverse en dépendance
 
