@@ -1,0 +1,54 @@
+{
+  "slug": "ens_mp-pc_portugais-langue-etrangere-b_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Portugais (langue étrangère B)",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Le complexe du chien bâtard et la confiance nationale",
+  "questions": 2,
+  "redaction": "Version intégrale de Nelson Rodrigues et réponse en portugais du Brésil sur la notion de viralatismo, avec étude de la métaphore canine.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=9",
+    "sha256_sujet": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=9",
+        "sha256": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/confiance.svg",
+      "legende": "Du souvenir de 1950 à l’interpellation des joueurs en 1958."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale de Nelson Rodrigues et réponse en portugais du Brésil sur la notion de viralatismo, avec étude de la métaphore canine."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2"
+    ]
+  }
+}
