@@ -219,6 +219,9 @@
 | 2026 | BEL | AL | Philosophie (oral tronc commun 22 juin commission 2) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-22-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-22-juin-commission-2_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 23 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 24 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-24-juin_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun 26 juin commission 2) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-2_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun 26 juin commission 3) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-3_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-26-juin-commission-3_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun 30 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
@@ -674,6 +677,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2013 | ENS | MP | Informatique-mathématiques | [md](2013/ens/ens_mp_informatique-mathematiques_2013/brut.md) | [md](2013/ens/ens_mp_informatique-mathematiques_2013/guide.md) |
 | 2014 | ENS | MP | Informatique-mathématiques | [md](2014/ens/ens_mp_informatique-mathematiques_2014/brut.md) | [md](2014/ens/ens_mp_informatique-mathematiques_2014/guide.md) |
 | 2015 | ENS | MP | Informatique-mathématiques | [md](2015/ens/ens_mp_informatique-mathematiques_2015/brut.md) | [md](2015/ens/ens_mp_informatique-mathematiques_2015/guide.md) |
 | 2016 | ENS | MP | Informatique-mathématiques | [md](2016/ens/ens_mp_informatique-mathematiques_2016/brut.md) | [md](2016/ens/ens_mp_informatique-mathematiques_2016/guide.md) |
@@ -982,6 +986,7 @@
 | 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
+| 2015 | X-ENS | PC | Chimie A | [md](2015/x-ens/x-ens_pc_chimie-a_2015/brut.md) | [md](2015/x-ens/x-ens_pc_chimie-a_2015/guide.md) |
 | 2017 | X-ENS | PC | Chimie A | [md](2017/x-ens/x-ens_pc_chimie-a_2017/brut.md) | [md](2017/x-ens/x-ens_pc_chimie-a_2017/guide.md) |
 | 2020 | X-ENS | PC | Chimie A | [md](2020/x-ens/x-ens_pc_chimie-a_2020/brut.md) | [md](2020/x-ens/x-ens_pc_chimie-a_2020/guide.md) |
 | 2021 | X-ENS | PC | Chimie A | [md](2021/x-ens/x-ens_pc_chimie-a_2021/brut.md) | [md](2021/x-ens/x-ens_pc_chimie-a_2021/guide.md) |
