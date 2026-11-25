@@ -1,0 +1,72 @@
+{
+  "slug": "x_mp-pc_italien_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Italien",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Mario Rigoni Stern, Giovani soldati, et Étienne Klein, Science et progrès",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://web.archive.org/web/20090415070752/http://www.polytechnique.fr:80/concours/sujets/sujet05/sujet05.htm",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "5",
+    "sujet": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=5",
+    "sujet_sha256": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249",
+    "sujet_complementaire": "https://web.archive.org/web/20061125010606id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+    "sujet_complementaire_sha256": "0315993b329ac8a956c2b507bb40ddd56bd2ad4cc1c1a1abaf175d4f1588491f",
+    "precision": "La version est extraite de L’ultima partita a carte (2002). Le cahier d’expression reproduit l’extrait d’Étienne Klein et demande deux réponses dans la langue d’inscription. Les deux publications du concours ont été retrouvées dans les archives du Web. Le rapport italien de 2005 reste à retrouver."
+  },
+  "mots_expression": {
+    "1": 128,
+    "2": 184
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/engagement.svg",
+      "legende": "La dernière phrase élargit le regard du narrateur rétrospectif."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/ambivalenza.svg",
+      "legende": "Chez Klein, une même capacité d’action suscite l’espérance et l’inquiétude."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/giudizio.svg",
+      "legende": "L’exemple de la construction distingue observation, comparaison et choix collectif."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. Mario Rigoni Stern, Giovani soldati, et Étienne Klein, Science et progrès.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
