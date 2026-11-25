@@ -1,0 +1,64 @@
+{
+  "slug": "ens_mp-pc_anglais-langue-etrangere-b_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (langue étrangère B)",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Mars500 et le risque des rayonnements lors d’un voyage vers Mars",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "code_garde": "UC",
+    "etablissements_imprimes": "ENS de Paris et de Cachan",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Langue%20E-B.pdf#page=3",
+    "sujet_sha256": "5890947752edcbb46be37dc05ed0a9e872c93ca0f7859b7d07cba7b9ffd7be6b",
+    "limites": "Aucun rapport propre à cet écrit d’anglais B de 2011 n’a été identifié dans les sources consultées."
+  },
+  "redaction": "Version française intégrale de l’extrait d’Ian Sample et réponse argumentée en anglais. Repérage du lieu réel et de la portée des hypothèses sur le blindage.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/milieux.svg",
+      "legende": "Les lieux du reportage et les conditions de protection envisagées par les chercheurs."
+    },
+    {
+      "numero": 2,
+      "question": "II",
+      "fichier": "figures/decision.svg",
+      "legende": "Trois questions permettent d’évaluer l’utilité propre de la présence humaine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version française intégrale de l’extrait d’Ian Sample et réponse argumentée en anglais. Repérage du lieu réel et de la portée des hypothèses sur le blindage.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "bareme": {
+    "version": 15,
+    "question": 5
+  }
+}
