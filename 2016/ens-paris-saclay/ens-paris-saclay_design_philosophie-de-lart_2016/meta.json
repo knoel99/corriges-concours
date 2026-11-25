@@ -1,0 +1,38 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Le « mal du musée » chez Maurice Blanchot",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "8d0a344d3b63ca69cb54814af9bbf184870f30e82e82fc22838979c0724b5c72",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=281"
+  },
+  "figures": [
+    {
+      "fichier": "figures/parcours-du-regard.svg",
+      "question": "Dissertation",
+      "legende": "Un parcours continu et un arrêt avec retour changent l’expérience d’une même salle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition à partir de la citation de Blanchot, comparaison critique avec le musée imaginaire de Malraux et analyse de la scénographie. Schéma original des rythmes de visite."
+    }
+  ]
+}
