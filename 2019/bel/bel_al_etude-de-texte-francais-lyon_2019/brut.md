@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Fontenelle, Bérénice et Cosme II de Médicis
 
 On donne aux astres le nom des puissants pour que quelque chose d’eux demeure visible après leur mort. Fontenelle place justement le bénéficiaire d’un tel honneur à l’endroit d’où il en profitera le moins : parmi les morts. Cosme vient d’apprendre que les découvertes de Galilée sont rarement désignées désormais par son nom. La reine Bérénice pourrait triompher, puisque sa chevelure reste inscrite au ciel. Elle s’emploie pourtant à le consoler en lui représentant ce qu’une semblable réussite vaut pour une morte. Comment le dialogue rend-il à la fois sensible le désir de survivre et plaisante la reconnaissance de sa vanité ?
@@ -23,6 +25,10 @@ Bérénice offre alors de donner, si la chose était possible, sa chevelure cél
 ### II. Séparer le mort de son nom, puis éprouver chacun des soutiens de la survie
 
 Bérénice oppose le nom inscrit là-haut à la personne qui demeure ici-bas. L’adverbe ordinairement attaché au séjour terrestre se déplace avec les locuteurs. « Ici » appartient maintenant aux enfers de la fiction. Même si toutes les constellations recevaient son nom, la première personne qui parle depuis ce lieu n’en éprouverait aucun changement de condition. Le raisonnement se poursuit sur la disproportion entre la personne entière et les quelques syllabes que l’on prétend disputer à la mort. Les termes du litige et de la chicane donnent à cette tentative de grandeur l’allure d’une petite ruse judiciaire. La maxime générale surgit d’une difficulté éprouvée par un interlocuteur bien déterminé. Elle n’a pas été placée d’autorité au seuil du dialogue.
+
+Cosme pourrait être certain qu’un nom a duré et rester incapable d’éprouver la gloire qu’il lui attribue. Le dialogue des morts rend ce paradoxe sensible à l’oreille. Il donne momentanément voix à celui qui se plaint de perdre, parmi les vivants, les signes de sa présence.
+
+![Comment Bérénice console-t-elle Cosme ?](figures/nom-et-gloire.svg)
 
 Cosme répond par le sentiment de celui qui se noie et s’accroche au premier support venu. L’image fait comprendre son désir mieux qu’une simple proclamation de vanité. Les pierres accumulées et le tombeau sont des choses auxquelles on peut littéralement s’agripper, jusque dans l’acte paradoxal de prendre le monument de sa propre mort pour un secours contre elle. Le passage à « on » donne à sa détresse une extension commune aux vivants. Bérénice en reprend le geste lorsqu’elle demande à quoi on attachera une immortalité. La durée du support elle-même est en cause. Une ville ou un empire peuvent disparaître. Le prince déplace alors sa dernière assurance vers les astres supposés demeurer toujours.
 
