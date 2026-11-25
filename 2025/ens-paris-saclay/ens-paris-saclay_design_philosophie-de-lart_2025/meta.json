@@ -1,0 +1,76 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "intitule": "Philosophie de l’art",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Sujets/BAT-Philosophie_Art2.pdf",
+    "sujet_sha256": "0a510281eb844bc8d73a81982c33393b3964cd4011ac761330461aea31221539",
+    "references": [
+      "https://www.moma.org/collection/works/3758",
+      "https://www.cooperhewitt.org/2015/12/17/getting-a-grip-on-user-inspired-design/"
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_Philosophie_ecrit.pdf",
+    "rapport_sha256": "91fd229114fe04b8606658b2b366ef441b697175d177e13c44eaea86f725e962"
+  },
+  "figures": [
+    {
+      "fichier": "figures/agenda.svg",
+      "question": "Dissertation",
+      "legende": "Que veut dire « libre » dans un agenda partagé ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des observations sur la réciprocité entre outils et pratiques, la pluralité des manières d’être et les attentes pratiques de la dissertation."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation de quatre heures, de la méthode guidée et de la figure des deux éditions."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de la double attribution et de l’orthographe du sujet, du cas de l’éplucheur conservé au MoMA et de la portée de l’expérience fictive des deux calendriers. Contrôle des deux éditions et du schéma."
+    }
+  ]
+}
