@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Les enfants surdoués
@@ -31,6 +33,8 @@ Dans le document 6, 54,3 % des enfants du groupe enquêté jouent d’un instrum
 Le dossier permet ainsi d’expliquer comment se constitue une population reconnue comme exceptionnelle. Il faudrait une autre enquête pour mesurer toutes les aptitudes d’une cohorte. L’enquête sociologique gagne en précision en étudiant les conditions de passation, de reconnaissance et d’usage des résultats, y compris leurs bénéfices ou leurs contraintes pour l’enfant.
 
 ![Diplôme au moins égal à bac + 5 parmi les parents](figures/lecture-des-donnees.svg)
+
+Calculez aussi les différences en points : 41,3 pour les pères, 33,7 pour les mères. La comparaison des écarts absolus et celle des rapports ne donnent pas le même ordre, parce que les proportions de départ diffèrent.
 
 ## Questions du jury
 

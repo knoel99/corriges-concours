@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le dossier de huit pages comporte sept documents. L’oral comprend 15 minutes d’exposé et 15 minutes de discussion après 1 h 30 de préparation.
 
 ## Le travail de plateforme
@@ -31,6 +33,8 @@ Le schéma du Sénat (doc. 6) compare un exemple d’intérim à 17,50 euros de 
 Dans l’hébergement touristique (doc. 7), les nuitées en logements particuliers proposés par les plateformes progressent d’environ 30 % de 2015 à 2016 alors que les logements professionnels connaissent un léger recul et que l’ensemble augmente faiblement. Une progression forte dans une catégorie de poids initial réduit est compatible avec cette faible progression totale. Elle ne mesure ni la part des réservations désormais réalisées par plateforme ni le nombre d’emplois créés. On pourrait chercher qui réalise le ménage, reçoit les clients et assume les périodes sans réservation. L’intermédiation rend visibles des activités et peut en déplacer les coûts vers d’autres acteurs. Son effet sur l’autonomie dépend du pouvoir réel de quitter la plateforme, de négocier et de supporter les aléas.
 
 ![Contraintes et ressources déclarées sur les plateformes](figures/lecture-des-donnees.svg)
+
+Reconstituez les quatre groupes exclusifs. Soustrayez les 16 cas communs aux 34 cas de contrainte et aux 26 cas de ressource, puis complétez à 100. On obtient 18, 10, 16 et 56, à l’arrondi près.
 
 ## Questions du jury
 
