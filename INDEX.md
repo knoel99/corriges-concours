@@ -35,6 +35,7 @@
 | 2024 | Agro-Véto | BCPST | Maths | [md](2024/agro-veto/agro-veto_bcpst_maths_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_maths_2024/guide.md) |
 | 2025 | Agro-Véto | BCPST | Maths | [md](2025/agro-veto/agro-veto_bcpst_maths_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_maths_2025/guide.md) |
 | 2026 | Agro-Véto | BCPST | Maths | [md](2026/agro-veto/agro-veto_bcpst_maths_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_maths_2026/guide.md) |
+| 2022 | Agro-Véto | BCPST | Modélisation mathématique et informatique | [md](2022/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2022/brut.md) | [md](2022/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2022/guide.md) |
 | 2023 | Agro-Véto | BCPST | Modélisation mathématique et informatique | [md](2023/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2023/brut.md) | [md](2023/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2023/guide.md) |
 | 2024 | Agro-Véto | BCPST | Modélisation mathématique et informatique | [md](2024/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2024/guide.md) |
 | 2025 | Agro-Véto | BCPST | Modélisation mathématique et informatique | [md](2025/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_modelisation-mathematique-et-informatique_2025/guide.md) |
