@@ -44,7 +44,7 @@ On cherche le moment autour de l’axe passant par le centre et perpendiculaire 
 
 Les deux poulies supérieures sont fixes, celle du bas est liée à la charge et une extrémité du câble est directement fixée à la charge. La tension a partout le module $F$. La poulie mobile reçoit $2F$ vers le haut et l’extrémité du câble fournit encore $F$. L’équilibre exige $3F=Mg$. La force exercée sur le brin libre vaut donc $Mg/3$, verticalement vers le bas sur la figure 1a.
 
-![Figure 1 — Bilan des trois contributions de tension sur l’ensemble mobile. Le brin fixé directement à la masse compte une fois et la poulie mobile deux fois. Le schéma est dessiné en vue éclatée.](figures/brins-porteurs.svg)
+![Figure 1 — Bilan des trois contributions de tension sur l’ensemble mobile. Le brin fixé directement à la masse compte une fois et la poulie mobile deux fois. Les trois forces de tension sont verticales.](figures/brins-porteurs.svg)
 
 ### Question II.3 — Montage à un nombre impair de poulies
 
