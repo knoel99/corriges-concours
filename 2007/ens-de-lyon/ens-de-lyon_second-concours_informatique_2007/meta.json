@@ -1,0 +1,54 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2007",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2007,
+    "duree_heures": 3
+  },
+  "questions": 26,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2007/sujet-ecrit-2007-second-concours_informatique.pdf",
+    "index_banque": "https://banques-ecoles.fr/cms/filieres-universitaires-second-concours-scientifique/les-annales-et-rapports-des-jurys-2/",
+    "sujet_sha256": "3cb25d6519e2441a48eb417d63162b37d81edb127fa078100ddb5c0d8404244c",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2007/rapport-2007-second-concours_ecrit_informatique.pdf",
+    "rapport_sha256": "46d1e5218fa16f6f5f84dfbaa88fab59e637b7a71e0ecf650258191fd5c0b9e0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/horner-du-second-degre.svg",
+      "question": "II-1",
+      "legende": "Figure 1 — Dans l’arbre de Horner, le parcours depuis la feuille 3 la plus profonde traverse quatre portes."
+    },
+    {
+      "fichier": "figures/huit-puissances.svg",
+      "question": "III-1",
+      "legende": "Figure 2 — Du haut vers le bas, chaque ligne multiplie des puissances déjà disponibles. Deux opérandes identiques sont indiqués par un carré dans le libellé."
+    },
+    {
+      "fichier": "figures/dependances-du-degre-deux.svg",
+      "question": "V-1",
+      "legende": "Figure 3 — Chaque liaison descend du producteur vers le consommateur. Les deux branches indépendantes convergent dans p02."
+    },
+    {
+      "fichier": "figures/chemin-critique-du-cube.svg",
+      "question": "VI-1",
+      "legende": "Figure 4 — Les valeurs se lisent du haut vers le bas. La chaîne a3x, p23, t, p03 exige quatre lignes successives."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Six parties, 26 questions. Comptes d’opérations, profondeur optimale dans le modèle positif du sujet, compilation d’un arbre, graphes de dépendances, ordonnancements sur quatre unités et utilisation asymptotique. Lecture du rapport et des sept pages du sujet."
+    }
+  ]
+}
