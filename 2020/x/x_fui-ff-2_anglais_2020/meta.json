@@ -32,9 +32,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20ANGLAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "e1ca4c05c7f18c8add4d83561b4518c5c91066328ad0095e4dc2c76c610c895a"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -100,6 +101,17 @@
       "modifications": true,
       "perimetre": "Relecture des deux versions sur Yong ; cas LIGO, attribution historique de la découverte et rôle du site Nobel, vérification des longueurs et du raisonnement de l’essai.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Ajout de preuves propres aux trois objections de Yong, distinction entre 48 propositions de candidature et personnes récompensées, articulation aux effets de notoriété et aux exemples historiques."
     }
   ],
   "provenance": {

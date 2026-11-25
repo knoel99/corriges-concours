@@ -32,9 +32,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20Session%202%20SUJET%20D'ANGLAIS_0.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "83c1eec65c4714d4218b05e8a86669649601fed3caa07c74d7cd9417a18481fd"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -88,6 +89,17 @@
       "modifications": true,
       "perimetre": "Relecture du brut et du guidé sur Durham, Garisto et Wiesner ; étymologie, portée d’une avance quantique et dénominateur du chiffre sur les diplômés, contrôle de l’essai.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Distinction entre comparaison effective du corpus et scénario hypothétique de réappropriation. Remplacement de la conférence imaginaire par les cas documentés de Preskill, de la presse et de l’équipe chinoise."
     }
   ],
   "provenance": {

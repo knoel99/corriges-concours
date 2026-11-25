@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Olympic admission as an apparently obvious choice
@@ -16,7 +18,7 @@ Cricket officials portray Olympic admission as such an obvious opportunity that 
 
 ### 2. Why growth pressures bear on rugby and cricket
 
-In Britain both games compete against football for publicity and money. Their leaders may therefore feel obliged to pursue similar popularity, regardless of supporters’ wishes. Rugby has another source of pressure because investors expect their stakes to pay off. Cricket executives likewise have financial reasons to add events even when the existing programme exhausts those expected to play. (John, pp. 2–3).
+British rugby and cricket operate in football’s shadow, which John thinks makes their leaders unusually eager to prove commercial success. Private investment creates a further incentive in rugby, where investors now have interests ranging from the English Premiership to New Zealand. Cricket administrators defend growth by suggesting the sport might otherwise disappear. John accepts that some competitions need cross-subsidy but disputes that wider claim. (John, pp. 2–3).
 
 ### 3. How senior bonuses are defended
 
@@ -24,7 +26,7 @@ The board’s chairman says comparable employers, including other sporting organ
 
 ### 4. What expansion can cost
 
-New events compete for time in an already crowded season. Exhausted cricketers cannot recover simply because selectors employ additional teammates and switch between them. Supporters may also find their familiar competitions pushed aside for a format they never requested. Judging progress chiefly by receipts encourages organisers to overlook the pleasure that makes people willing to turn up at all. (John, pp. 2–3).
+The Hundred added fixtures despite opposition from many existing supporters. Organisers responded to tired players by selecting larger squads and rotating people rather than cutting matches. John mentions Ben Stokes’s absence at the height of the season as evidence that this response had not solved the problem. If organisers focus on finding new customers, they can damage both players’ working conditions and the recreation current spectators value. (John, pp. 2–3).
 
 ![What the Olympic bid promises officials](figures/olympics-and-market.svg)
 

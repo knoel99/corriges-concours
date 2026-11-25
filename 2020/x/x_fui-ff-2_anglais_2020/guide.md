@@ -12,6 +12,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 405 à 495 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20S2%20SUJET%20ANGLAIS.pdf)
@@ -21,9 +23,9 @@ L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de
 ### 1. A harmful story about discovery
 
 > [!INDICATION]
-> Passer de la représentation héroïque de la découverte à ses conséquences sur les carrières.
+> Confrontez la liste de signataires de LIGO, qui s’étend sur trois pages, aux trois noms du palmarès. Les lignes 74 à 82 permettent ensuite d’expliquer comment invitations et citations renforcent la visibilité des lauréats.
 
-Yong challenges the romantic image of a discovery springing from one extraordinary mind. Modern investigations often depend on people with different jobs, spread across laboratories, whose results and equipment must be brought together. Singling out a handful of leaders obscures that dependence. It also helps perpetuate professional rewards that favour already prominent figures while giving junior or technical collaborators little recognition. (Yong, lines 34–40 and 48–55).
+Yong disputes the picture of an exceptional individual creating knowledge alone. The gravitational-wave paper, for instance, needed three pages to list its authors, although only three leaders shared the award. When a collective result becomes a short list of famous people, later readers learn a misleading history. Junior staff lose recognition, while the winners attract speaking invitations and further scholarly attention. (Yong, lines 1–15, 48–55 and 74–82).
 
 ![What the names on an award can hide](figures/credit.svg)
 
@@ -41,7 +43,7 @@ The limit hardly follows literally from Nobel’s instructions: his will describ
 > [!INDICATION]
 > Distinguer trois objets de critique : le mode de travail, le récit du passé, la visibilité des personnes.
 
-Yong argues, first, that choosing a few faces gives outsiders a false picture of research as an individual pursuit. Second, the resulting history may credit the wrong person: Schatz found streptomycin while working under Waksman, yet the award went to his supervisor. Third, indispensable participants disappear from public recognition altogether. Delayed awards can exclude researchers who have died, and recurring omissions particularly affect women. (Yong, lines 12–15, 23–33 and 56–73).
+A prize for individuals first misdescribes collaborative research. It can also change the historical account: Waksman received credit for streptomycin although his student Schatz found it. Third, vital contributors may be excluded altogether. Franklin died before the DNA award, and Meitner never won despite forty-eight nominations. Yong then warns of another consequence: prestige from one discovery can lend credibility to a winner’s unrelated opinions. (Yong, lines 12–15, 23–26 and 56–84).
 
 ### 4. Why a celebration can help science
 
@@ -50,7 +52,7 @@ Yong argues, first, that choosing a few faces gives outsiders a false picture of
 
 Here Yong credits the awards with making people eager to hear scientific news. Audiences normally associate that feeling with film or television ceremonies; dismissing it when it draws them towards research would be mean-spirited. Public interest can also lead visitors to accounts on the organisers’ website that recover details normally absent from research articles. Recognising these benefits allows Yong to criticise how winners are selected without belittling the celebration. (Yong, lines 16–22).
 
-Dans la troisième réponse, séparer deux reproches. Attribuer la découverte de Schatz à son supérieur modifie le récit historique. Laisser hors de la remise du prix le personnel qui a contribué aux observations efface la diversité du travail accompli.
+Le texte énonce trois critiques dès les lignes 12 à 15. La collaboration de LIGO illustre la nature du travail, Schatz l’attribution historique, Franklin et Meitner les omissions. La notoriété qui crédibilise ensuite des déclarations sans rapport avec la découverte est une conséquence supplémentaire. Les 48 mentions de Meitner sont des propositions de candidature entre 1937 et 1965.
 
 ## Essay
 

@@ -32,9 +32,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2020%20FUI-FF%20SUJET%20D'ANGLAIS%20Session%201.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "18c017c092cab21b998b299991b400b0630fabc2a3332e81a5f3481db28d5dc2"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -100,6 +101,17 @@
       "modifications": true,
       "perimetre": "Relecture du brut et du guidé sur les lignes de Robson ; exemples de biais et mesure intergénérationnelle, bornes temporelles, contrôle des quatre réponses et de l’essai.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Précision de l’exemple d’étiquetage à composition identique, des trois mécanismes de biais et de deux résultats éducatifs que distingue Robson."
     }
   ],
   "provenance": {

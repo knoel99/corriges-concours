@@ -10,11 +10,13 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. A lasting climate policy without upheaval
 
-The emergency showed that some environmentally damaging activities can diminish very quickly. Its enormous human cost, however, is hardly a sensible model for climate policy. Governments can plan durable changes in energy use, employment and transport, while protecting people whose income is at risk. A temporary interruption caused by suffering would offer little lasting benefit if familiar patterns simply returned. (Dilworth et al., lines 9–24).
+In May 2020 the authors reported a forecast of an eight per cent emissions drop for that year. A climate strategy would need reductions of roughly 7.6 per cent repeatedly throughout the following decade. An involuntary halt that impoverishes families cannot deliver those continuing changes. Planned investment in cleaner transport and energy can reduce pollution while protecting livelihoods, provided its benefits reach people exposed to hardship. (Dilworth et al., lines 9–24 and 62–76).
 
 ### 2. Priorities for public policy
 
@@ -22,7 +24,7 @@ The writers urge governments to direct recovery spending towards activities that
 
 ### 3. The comparison with climate scepticism
 
-Both groups give immediate economic activity or personal convenience priority over preventive action whose benefits are shared. The authors compare the wish to abandon public health restrictions prematurely with resistance to climate safeguards. In each case, a familiar way of earning or travelling can seem more urgent than a risk borne partly by other people. Subsidising established polluting industries would reinforce that tendency. (Dilworth et al., lines 25–31).
+The writers compare the priorities of two constituencies. One rejects action on climate risks. The other wants to reopen economic activity quickly because restrictions affect earnings and personal freedoms. In their account, lifting safeguards or assisting fossil businesses would perpetuate a carbon-dependent economy. The comparison asks what follows when present interests come first. It does not establish that every person worried about a livelihood denies climate science. (Dilworth et al., lines 25–31).
 
 ### 4. Evidence of environmental resilience
 

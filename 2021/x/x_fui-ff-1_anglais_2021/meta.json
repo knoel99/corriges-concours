@@ -32,9 +32,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2021%20FUI-FF%20S1%20SUJET%20ECRIT%20D'ANGLAIS_1.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "67cd4a120e96beffacd081f0b6470261e73d62e63f0f410f958804faed7d349e"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": null,
@@ -88,6 +89,17 @@
       "modifications": true,
       "perimetre": "Relecture des deux versions sur Dilworth et al. ; observation et projection chiffrée distinguées, justice internationale et dette climatique explicitées, essai et comptes contrôlés.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Vérification des deux pourcentages et de leurs horizons, distinction de la prévision de mai 2020 et d’une réduction annuelle répétée, correction de la portée du parallèle sur les intérêts économiques."
     }
   ],
   "provenance": {
