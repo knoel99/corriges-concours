@@ -1,0 +1,72 @@
+{
+  "slug": "bel_bl_philosophie_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "BL",
+    "matiere": "Philosophie",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Philosophie",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/2017-ecrits-communs-ses_1506586985330_0.pdf#page=1",
+    "sujet_sha256": "03ec9addf43c6d602d5ba363bea12a3dce3e2f95ce20d99ad95df799ee5842d7",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/17_BL_philosophie_com_ecrit.pdf",
+    "rapport_sha256": "d09c0e315a02311ccbf5b7bf22353f7301c5b2879a5bf054eca72befb3dc78d0"
+  },
+  "figures": [
+    {
+      "fichier": "figures/carre.svg",
+      "question": "Composition",
+      "legende": "Du côté que l’on double à l’aire que l’on double"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des attentes sur la description de la pensée en train de se faire, la définition et le rôle des exemples philosophiques."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Composition intégralement rédigée, progression guidée et illustration originale pour les deux éditions."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des deux rapports d’aires, de l’attribution des dialogues platoniciens et de la distinction entre existence et vérité de l’acte. Vérification du rendu des deux éditions."
+    }
+  ]
+}
