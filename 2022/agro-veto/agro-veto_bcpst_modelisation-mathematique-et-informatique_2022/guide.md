@@ -4,7 +4,7 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
-**Relecture du corrigé** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
 **Lièvres et lynx.** Le sujet compare la croissance isolée des lièvres, le modèle de Lotka–Volterra et une variante à ressources limitées. La partie numérique suit les effectifs et la quantité conservée du modèle sans limitation.
 
