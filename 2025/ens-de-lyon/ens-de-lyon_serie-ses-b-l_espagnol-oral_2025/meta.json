@@ -1,0 +1,115 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_espagnol-oral_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Espagnol (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 4,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=13",
+    "sujet_sha256": "c8ddaa0530f71dbb4dfb4bb32f8373963776602248462be1d250ba5c27b674c5",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=25",
+    "rapport_jury_sha256": "376daf04dd646b0b3fa852e3fb741b66e422a77d5cbe836a9541ca8da0d35c4d",
+    "documents": [
+      {
+        "rang": 1,
+        "reference_repertoire": "“‘Ciudades convertidas en parques temáticos”: Airbnb enfrenta cada vez más problemas en España” (30/05/2025)",
+        "publication": "CNN en Español",
+        "page_repertoire": 13,
+        "temoins": [
+          {
+            "description": "Reportage de CNN en Español repris par KION",
+            "url": "https://kioncentralcoast.com/t23/noticias-cnn/cnn-spanish/2025/05/30/ciudades-convertidas-en-parques-tematicos-airbnb-enfrenta-cada-vez-mas-problemas-en-espana/"
+          }
+        ],
+        "limitation": "Le reportage en espagnol et des témoignages sont attestés dans la reprise CNN. La coupe distribuée reste inconnue."
+      },
+      {
+        "rang": 2,
+        "reference_repertoire": "“España será el país con más turistas en 2040 por delante de Francia y Estados Unidos”, Carlos Molina (13/06/2024)",
+        "publication": "El País",
+        "page_repertoire": 13,
+        "temoins": [
+          {
+            "description": "Article de Carlos Molina",
+            "url": "https://elpais.com/economia/2024-06-13/espana-sera-el-pais-con-mas-turistas-del-mundo-en-2040-por-delante-de-francia-y-estados-unidos.html"
+          }
+        ],
+        "limitation": "Le sous-titre annonce cinq millions d’écart avec les États-Unis. Le corps donne 110 millions contre 100. Les deux formulations sont signalées."
+      },
+      {
+        "rang": 3,
+        "reference_repertoire": "“Inmigración, un reto de país” (18/08/2024)",
+        "publication": "El País",
+        "page_repertoire": 13,
+        "temoins": [
+          {
+            "description": "Éditorial d’El País",
+            "url": "https://elpais.com/opinion/2024-08-18/inmigracion-un-reto-de-pais.html"
+          }
+        ],
+        "limitation": "Publication de presse identifiée et lue. La coupe de concours reste inconnue."
+      },
+      {
+        "rang": 4,
+        "reference_repertoire": "“Censura en Argentina, indignación en la FIL: la caza de brujas a cuatro libros, a debate en la gran feria”, Georgina Zerega (03/12/2024)",
+        "publication": "El País",
+        "page_repertoire": 13,
+        "temoins": [
+          {
+            "description": "Reportage de Georgina Zerega",
+            "url": "https://elpais.com/mexico/2024-12-03/la-persecucion-a-cuatro-libros-en-argentina-abre-el-debate-sobre-la-censura-en-la-fil.html"
+          }
+        ],
+        "limitation": "Publication de presse identifiée et lue. La coupe de concours reste inconnue."
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "“‘Ciudades convertidas en parques temáticos”: Airbnb enfrenta cada vez más problemas en España” (30/05/2025)",
+      "“España será el país con más turistas en 2040 por delante de Francia y Estados Unidos”, Carlos Molina (13/06/2024)",
+      "“Inmigración, un reto de país” (18/08/2024)",
+      "“Censura en Argentina, indignación en la FIL: la caza de brujas a cuatro libros, a debate en la gran feria”, Georgina Zerega (03/12/2024)"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le fascicule de Lyon identifie 4 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+  },
+  "figures": [
+    {
+      "fichier": "figures/turismo.svg",
+      "legende": "Previsión de llegadas en 2040 según el cuerpo del artículo",
+      "question": "Référence 2"
+    },
+    {
+      "fichier": "figures/migracion.svg",
+      "legende": "¿Qué mide cada indicador?",
+      "question": "Référence 3"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du répertoire et du rapport du jury, confrontation aux publications et rédaction des deux éditions avec exemples de prise de parole, relances, entraînements et schémas. Le fascicule de Lyon identifie 4 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
