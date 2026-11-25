@@ -726,6 +726,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2011 | ENS | MP | Informatique-mathématiques | [md](2011/ens/ens_mp_informatique-mathematiques_2011/brut.md) | [md](2011/ens/ens_mp_informatique-mathematiques_2011/guide.md) |
 | 2012 | ENS | MP | Informatique-mathématiques | [md](2012/ens/ens_mp_informatique-mathematiques_2012/brut.md) | [md](2012/ens/ens_mp_informatique-mathematiques_2012/guide.md) |
 | 2013 | ENS | MP | Informatique-mathématiques | [md](2013/ens/ens_mp_informatique-mathematiques_2013/brut.md) | [md](2013/ens/ens_mp_informatique-mathematiques_2013/guide.md) |
 | 2014 | ENS | MP | Informatique-mathématiques | [md](2014/ens/ens_mp_informatique-mathematiques_2014/brut.md) | [md](2014/ens/ens_mp_informatique-mathematiques_2014/guide.md) |
