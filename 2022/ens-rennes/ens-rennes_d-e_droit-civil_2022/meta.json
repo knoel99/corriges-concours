@@ -1,0 +1,55 @@
+{
+  "slug": "ens-rennes_d-e_droit-civil_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit civil",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Les preuves du contrat et de la propriété",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-2022_1657700500403-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-droit-civil-ecrit-d-e-2022_1668097839467-pdf",
+    "sujet_sha256": "0efb9df50f3d101c137b9c7a91caf7ed10ca97b3c4dadd2d4e3695726ca9d90f",
+    "rapport_sha256": "25a78c826e1cbfd6ca2b98b3b20e41cf96138b7e1670422564a29d0579892b7b",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1",
+    "apercu_sujet_sha256": "bd38e2918ef0b821c52a6fa017e6501dca852ccd6b0be8583f649c55a7d8f033",
+    "apercu_rapport_sha256": "d3f9378ff55adf5957d6fe8f84d34660eae6e1883fd9194a83eb9d04b1cf00fd"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/valeur-de-lecrit.svg",
+      "legende": "Les trois questions peuvent concerner la même vente sans appeler la même réponse."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/possession-et-revendication.svg",
+      "legende": "La possession peut servir de preuve et, si les conditions légales sont réunies, de mode d’acquisition."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Les preuves du contrat et de la propriété » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Les preuves du contrat et de la propriété » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

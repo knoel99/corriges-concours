@@ -1,0 +1,176 @@
+{
+  "slug": "ens_pc_physique-chimie_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2018
+  },
+  "questions": 74,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/18_pc_suj_phychi_lyon.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/06/18_pc_rap_ephychi_lyon.pdf",
+    "sujet_sha256": "e63d9649a1be0cf38e211e11634e5365766890009b0b7133d2356f7ab59383b4",
+    "rapport_sha256": "a07b37bf3e66446d1d68f137659e0ada24dec2c98d9dc6d20e474adf7acca2d7"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "P31",
+      "P32",
+      "P33",
+      "P34",
+      "P35",
+      "P36",
+      "P37",
+      "P38",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 38 questions de physique et les 36 questions de chimie sont traitées. Les estimations de distances entre pics et d’épaisseurs de couches tiennent compte de la résolution des figures. Les interprétations cinétiques de C22 et C23 sont des hypothèses compatibles avec les prises de masse."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "P3",
+      "fichier": "figures/flux-au-sein-du-ferrofluide.svg",
+      "legende": "Flèches de mouvement lors de la croissance de la bosse. Les flux aux deux faces latérales pointillées se compensent par périodicité."
+    },
+    {
+      "question": "P7",
+      "fichier": "figures/masse-et-elevation.svg",
+      "legende": "Les lobes vert et rouille sont de même section. Les points indiquent leurs centres de masse. La montée est de l’ordre de l’amplitude a."
+    },
+    {
+      "question": "P12",
+      "fichier": "figures/cout-et-dispersion.svg",
+      "legende": "Le coût énergétique reste positif, y compris à son minimum. À droite, la fréquence d’oscillation varie avec la longueur d’onde."
+    },
+    {
+      "question": "P25",
+      "fichier": "figures/trois-regimes-du-champ.svg",
+      "legende": "β translate la courbe verticale. Le seuil correspond à la tangence en K = 1 et seule la zone colorée est instable pour β = 3."
+    },
+    {
+      "question": "P35",
+      "fichier": "figures/croissance-et-saturation.svg",
+      "legende": "À gauche, croissance d’une bande finie. À droite, modèle non linéaire pour K = A = B = 1. Les minima à amplitude finie fournissent les états stables."
+    },
+    {
+      "question": "C3",
+      "fichier": "figures/fenetre-de-composition.svg",
+      "legende": "La verticale d’un échantillon qui présente les deux transformations doit traverser les deux segments horizontaux du diagramme Fe–N."
+    },
+    {
+      "question": "C4",
+      "fichier": "figures/maille-cfc-et-nitrure.svg",
+      "legende": "En bleu, Fe aux sommets et aux centres des faces. À gauche, un site octaédrique en losange et un site tétraédrique en triangle. À droite, une position ordonnée de N dans Fe₄N."
+    },
+    {
+      "question": "C14",
+      "fichier": "figures/profils-et-unites.svg",
+      "legende": "Profils schématiques reconstruits avec les unités distinctes des figures 4a et 4b. Les deux essais n’ont pas été réalisés dans les mêmes conditions."
+    },
+    {
+      "question": "C20",
+      "fichier": "figures/demi-temps-du-traceur.svg",
+      "legende": "Réponse d’un mélangeur idéal avec τ voisin de 200 s. L’intersection à 1/2 rend lisible le demi-temps de renouvellement."
+    },
+    {
+      "question": "C27",
+      "fichier": "figures/domaines-redox-du-fer.svg",
+      "legende": "Reconstruction des frontières du fer à partir de la figure 7. La frontière rouge a une pente positive par rapport à pN³⁻ malgré son aspect descendant."
+    },
+    {
+      "question": "C30",
+      "fichier": "figures/cellule-a-trois-electrodes.svg",
+      "legende": "Le potentiel est mesuré entre travail et référence. La branche conduisant le courant relie l’électrode de travail et la contre-électrode."
+    },
+    {
+      "question": "C34",
+      "fichier": "figures/epaisseur-par-decapage.svg",
+      "legende": "À 0,1 nm/s, mille secondes correspondent à 0,1 µm. La rupture à 30 000 s situe la fin de la couche riche vers 3 µm."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des 12 pages de l’épreuve de l’ENS de Lyon 2018 et de son rapport écrit. Bilans énergétiques du ferrofluide, analyse du seuil et de la saturation. Lecture des diagrammes Fe–N, des profils de surface, des courbes de prise de masse et de polarisation. Douze illustrations et contrôles des valeurs lues et calculées."
+    }
+  ]
+}

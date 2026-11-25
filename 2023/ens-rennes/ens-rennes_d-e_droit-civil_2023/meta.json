@@ -1,0 +1,55 @@
+{
+  "slug": "ens-rennes_d-e_droit-civil_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit civil",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "La malhonnêteté du cocontractant",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-2023_1682689329757-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-e-crit-droit-civil-d-e-2023_1694185984301-pdf",
+    "sujet_sha256": "0730b43859179a13ca6a54047d9748d6dfdf3bd687ee9e8d38edafe833a32ee6",
+    "rapport_sha256": "084e2c47d2107f5392ed2a2bb7c18fd60a4c1eb1fde527da1f34a689c1b021bf",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "apercu_sujet_sha256": "2893cbd8c9b228d6b48e84bbc9618f4f9cf46d6a605013b51c0a463f83ebf81f",
+    "apercu_rapport_sha256": "fd3967f2767c1d7325a939ab4526a1ee5ec6c8f7b9e610c4256fa7e16df0636d"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/qualification-du-silence.svg",
+      "legende": "L’estimation par un contractant de la valeur de la prestation demeure exclue du devoir général d’information."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/remedes-a-linexecution.svg",
+      "legende": "Une inexécution suffisamment grave peut permettre une suspension sans preuve d’une intention de tromper."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « La malhonnêteté du cocontractant » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « La malhonnêteté du cocontractant » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
