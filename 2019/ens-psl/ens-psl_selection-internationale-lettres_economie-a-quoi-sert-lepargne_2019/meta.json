@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-a-quoi-sert-lepargne_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — à quoi sert l’épargne",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Économie — à quoi sert l’épargne",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie-ecrit-sil2019.pdf",
+    "sujet_sha256": "ede2058188cc110bc8e56ca0b5e0713984e5dfbf438cd66c0e67c5bd6f9da8d1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lepargne.svg",
+      "question": "Explication",
+      "legende": "Qui épargne, qui finance, et à quel moment ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation économique sur le lissage de la consommation, la circulation des financements, l’investissement et le paradoxe de l’épargne."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ]
+}

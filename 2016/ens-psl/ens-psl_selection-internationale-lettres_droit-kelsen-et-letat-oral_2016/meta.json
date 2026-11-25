@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_droit-kelsen-et-letat-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Droit — Kelsen et l’État (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Droit — Kelsen et l’État (oral)",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/DROIT-Oral.pdf",
+    "sujet_sha256": "ca9031953d45fd16f93aa6e5e09219fab5f76cd5b6240cbf6831da3d822855dd",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Rapport-Hist.Philo.DROIT.pdf",
+    "rapport_sha256": "5d71d913833021497a028d9618fec049100cdc8c8d961751c17e0a671ac1a7e6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/kelsen.svg",
+      "question": "Explication",
+      "legende": "Trois jugements possibles sur une même décision"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire de la session, avec distinction entre ses indications sur l’écrit et sur l’oral."
+    },
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Commentaire de l’extrait de la Théorie générale du droit et de l’État, avec cas d’application et relances d’oral."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ]
+}
