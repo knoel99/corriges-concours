@@ -1,0 +1,157 @@
+{
+  "slug": "ens_pc_chimie-b_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2019
+  },
+  "questions": 78,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/05/19_pc_chiB_sujet.pdf",
+    "sujet_sha256": "646d578749524ecdea18e951950d5c44ad9ed1af389fd7883d247155f193117c",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/09/19_pc_rap_echib.pdf",
+    "rapport_sha256": "9731d6d6ddbbd2eabb8dfbf330cc5f1330df436bfb18bed3a59953545e0d5d96"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6",
+      "12",
+      "13",
+      "14",
+      "15",
+      "17",
+      "19",
+      "20",
+      "22",
+      "23",
+      "24",
+      "29",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78"
+    ],
+    "questions_partiellement_traitees": [
+      "7",
+      "8"
+    ],
+    "questions_non_traitees": [
+      "5",
+      "9",
+      "10",
+      "11",
+      "16",
+      "18",
+      "21",
+      "25",
+      "26",
+      "27",
+      "28",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35"
+    ],
+    "precision": "Les deux éditions traitent intégralement 59 des 78 questions, dont toute la seconde partie sur les solides hybrides poreux (Q38 à Q78). Dans la première partie, Q7 identifie la famille et la structure électronique générale de l’ylure et Q8 donne le nom et le bilan fonctionnel de l’oléfination. Les deux structures substituées demandées à ces endroits et les 17 questions hors couverture sont signalées. Les réponses s’appuient sur le fascicule officiel, ses schémas et le rapport de chimie B d’Ulm."
+  },
+  "figures": [
+    {
+      "question": "1",
+      "fichier": "figures/priorites-en-c4.svg",
+      "legende": "Le méthyle de plus faible priorité pointe vers l’observateur. Le sens lu dans la projection doit être inversé."
+    },
+    {
+      "question": "42",
+      "fichier": "figures/peuplements-octaedriques.svg",
+      "legende": "Niveaux métalliques 7 à 9 en bas et 10 à 11 en haut. Les six orbitales liantes inférieures sont doublées dans les trois cas."
+    },
+    {
+      "question": "49",
+      "fichier": "figures/geometrie-des-pores.svg",
+      "legende": "Coupe schématique perpendiculaire au canal. Le diamètre équivalent fixe le rapport des sections dans l’approximation cylindrique du calcul."
+    },
+    {
+      "question": "55",
+      "fichier": "figures/langmuir-occupation-et-capacite.svg",
+      "legende": "À affinité K identique, la fraction occupée suit la même loi pour les deux formes. Les isothermes de quantité ont des plateaux différents."
+    },
+    {
+      "question": "65",
+      "fichier": "figures/selectivite-relevee.svg",
+      "legende": "Relevé approximatif de la figure 17. Une sélectivité supérieure à un indique un enrichissement de la phase adsorbée en dioxyde de carbone."
+    },
+    {
+      "question": "70",
+      "fichier": "figures/effet-du-volume-molaire.svg",
+      "legende": "Formes réduites illustratives, chacune avec sa propre échelle verticale. Près de zéro, la première loi commence quadratiquement et la seconde linéairement."
+    },
+    {
+      "question": "75",
+      "fichier": "figures/lecture-du-diagramme-de-phases.svg",
+      "legende": "Contours schématiques relevés sur la figure 20. Les horizontales montrent une, deux et zéro traversées à 183, 230 et 298 K."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions et de leurs 61 indications sur le fascicule de banque PC et le rapport ENS Ulm. Lecture du fascicule original, des figures exploitées et des annexes, analyse stéréochimique et spectroscopique, configurations du métal, porosité, isothermes, pression et stabilité des phases. Distinction entre le volume molaire pris constant et celui du gaz parfait aux Q69–72. Sept schémas originaux. 59 réponses entières et 2 partielles sur 78."
+    }
+  ]
+}
