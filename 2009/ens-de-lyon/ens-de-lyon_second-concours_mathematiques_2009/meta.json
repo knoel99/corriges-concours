@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2009",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2009
+  },
+  "questions": 21,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2009/sujet-ecrit-2009-second-concours_mathematiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "e4d73739ab97aa69058956277b7d6923a09522c87ea530096f68409230e5cb90"
+  },
+  "figures": [
+    {
+      "fichier": "figures/sauts-disjoints.svg",
+      "question": "2.4",
+      "legende": "Chaque saut ouvre un intervalle vertical disjoint des autres. On peut choisir un rationnel différent dans chacun de ces intervalles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions après lecture des quatre pages scannées. Contrôle des facteurs et des signes de la formule matricielle, construction pour tout couple de normes, sauts dénombrables et exemple dense. Figure des intervalles de saut disjoints.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
