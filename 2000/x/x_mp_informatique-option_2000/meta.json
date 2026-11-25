@@ -1,0 +1,76 @@
+{
+  "slug": "x_mp_informatique-option_2000",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2000,
+    "modalite": "écrit"
+  },
+  "intitule": "Parcours d’un tableau d’interrupteurs et codes de Gray sous contrainte",
+  "questions": 20,
+  "redaction": "Treize questions résolues, code OCaml exécuté, énumérations et coûts vérifiés exhaustivement sur de petites tailles. Démonstration de l’optimalité par la bipartition selon la parité.",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2000.pdf",
+    "sha256_sujet": "1072b8834be0028b9cdbce0368aa57d743658ca61c8ca6b08706f74fceda428e",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2000.pdf",
+        "sha256": "1072b8834be0028b9cdbce0368aa57d743658ca61c8ca6b08706f74fceda428e"
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2000/MP_INFO_X_1_2000.enonce.pdf",
+        "sha256": "14047277a74dc4675d8c9f2e7b84e5c15e4f399d774c97452ab6866f20668079"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "6.b",
+      "fichier": "figures/cycle-gray.svg",
+      "legende": "Cycle de Gray à trois interrupteurs. Chaque arête porte l’indice commuté.",
+      "numero": 1
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arabe_mp_pc_2011_2014",
+      "agent": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Treize questions résolues, code OCaml exécuté, énumérations et coûts vérifiés exhaustivement sur de petites tailles. Démonstration de l’optimalité par la bipartition selon la parité."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5.a",
+      "5.b",
+      "6.a",
+      "6.b",
+      "7.a",
+      "7.b",
+      "7.c",
+      "8.a",
+      "8.b",
+      "9.a",
+      "9.b",
+      "10",
+      "11.a",
+      "11.b",
+      "12",
+      "13"
+    ]
+  }
+}
