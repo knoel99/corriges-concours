@@ -1,0 +1,75 @@
+{
+  "slug": "x_mp_informatique-option_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Circuits PLA et additionneurs",
+  "questions": 19,
+  "redaction": "Dix-huit questions et les deux volets de la question 13. Réduction des produits booléens, matrices PLA, construction de deux additionneurs, comptage des portes et preuve d’une largeur exponentielle en PLA.",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2005.pdf",
+    "sha256_sujet": "2c871da6ef3337a3e6370f1d42cf85b21b9c067590a24242c61b57c20c1cd919",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2005.pdf",
+        "sha256": "2c871da6ef3337a3e6370f1d42cf85b21b9c067590a24242c61b57c20c1cd919"
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2005/MP_INFO_X_1_2005.enonce.pdf",
+        "sha256": "208ebc96d4f012c799087a9a28917ba43dc042e0dfdf26496f60c2cb77901a56"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "13.a",
+      "fichier": "figures/pla-deux-sorties.svg",
+      "legende": "PLA de l’exemple à quatre colonnes. Un point indique une connexion dans le plan ET ou dans le plan OU.",
+      "numero": 1
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arabe_mp_pc_2011_2014",
+      "agent": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dix-huit questions et les deux volets de la question 13. Réduction des produits booléens, matrices PLA, construction de deux additionneurs, comptage des portes et preuve d’une largeur exponentielle en PLA."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13.a",
+      "13.b",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ]
+  }
+}
