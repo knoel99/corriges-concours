@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Famille, transmission et autonomie dans les sociétés arabes",
+  "questions": 2,
+  "redaction": "Synthèse arabe titrée confrontant les fêtes, l’entreprise familiale, les médias et la caricature de Tichrine. Discussion en arabe de la comparaison entre familles arabes et européennes proposée par Mania Abid.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MPPC_sujet_Arabe.pdf",
+    "sha256_sujet": "7dc7d00307eeb2700730dea019f827ef73b8e5c5dfc9a594f35212b6020cae3e",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2020/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MPPC_sujet_Arabe.pdf",
+        "sha256": "7dc7d00307eeb2700730dea019f827ef73b8e5c5dfc9a594f35212b6020cae3e"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/20_MP_PC_rap_eArabe.pdf",
+        "sha256": "b6d91f06e650bd9ff366d41c64b5d7555ea319fc4b54b9f4eccfd23fc0d45901"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-du-dossier.svg",
+      "legende": "Une même pratique peut servir le lien familial ou lui faire obstacle selon son usage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse arabe titrée confrontant les fêtes, l’entreprise familiale, les médias et la caricature de Tichrine. Discussion en arabe de la comparaison entre familles arabes et européennes proposée par Mania Abid."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}
