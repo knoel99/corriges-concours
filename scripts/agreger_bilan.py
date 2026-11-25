@@ -10,17 +10,23 @@ from pathlib import Path
 
 
 def signatures_editoriales(meta: dict) -> list[str]:
-    """Signatures de rédaction et de révision dans l’ordre du journal source."""
-    phases = {"redaction": "Rédaction", "revision": "Révision", "relecture_corrige": "Révision"}
+    """Auteurs, relecteurs et interventions ayant modifié le corrigé, dans l’ordre du journal."""
+    phases = {"redaction": "Rédaction", "revision": "Révision", "relecture_corrige": "Révision", "retouches": "Retouches"}
+    editions = {"autocontrole": "Autocontrôle avec modifications", "production_figures": "Production de figures"}
     noms = {
         "gpt-6.2-astra": "GPT-6.2 Astra", "gpt-6.2-sol": "GPT-6.2 Sol",
         "claude-opus-5-5": "Claude Opus 5.5", "claude-opus-4-8": "Claude Opus 4.8",
     }
     signatures = []
     for entree in meta.get("contributions", []):
-        role = phases.get(entree.get("phase"))
-        if not role:
+        phase = entree.get("phase")
+        if not isinstance(phase, str) or not phase:
             continue
+        role = phases.get(phase)
+        if role is None:
+            if entree.get("modifications") is not True:
+                continue
+            role = editions.get(phase, f"Contribution ({phase.replace('_', ' ')})")
         if entree.get("tour") is not None:
             role += f" (tour {entree['tour']})"
         modele = entree.get("modele")
