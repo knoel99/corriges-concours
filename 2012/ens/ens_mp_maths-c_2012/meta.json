@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2012",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2012
+  },
+  "questions": 33,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/mp2012_sujet_math_c_ulc%5B1%5D.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/rap_ecrit_mathC_ulc_mpi2012%5B1%5D.pdf",
+    "sha256_sujet": "f34ea3c8830c855fcb7106f98639190fea83e6d1f3ac685976e2c3fc7caffec6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/produit-aux-puissances.svg",
+      "question": "IV.4.d",
+      "legende": "Aux points πθⁿ, le produit est nul pour θ = 2. Pour le nombre d’or, le carré du produit approche une limite strictement positive."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la totalité du sujet ULC et lecture du rapport, vérification du critère de Hankel, de la signature du renversement en II.4.c, du traitement des pôles sur le bord et des deux produits infinis. Diagramme numérique comparant le cas 2 au nombre d’or.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

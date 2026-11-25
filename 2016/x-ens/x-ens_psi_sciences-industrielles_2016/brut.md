@@ -19,9 +19,7 @@ Pour six cylindres identiques qui montent ensemble, une course $dy$ nécessite $
 Le dessin oriente $\vec x_4$ de N vers M. On a $\overrightarrow{AN}=\overrightarrow{AM}-l_2\vec x_4$. Ainsi
 
 $$
-
 (b-l_2\cos\varphi)^2+(\lambda-a-l_2\sin\varphi)^2=l_1^2.
-
 $$
 
 Sur la branche où N est au-dessus de A, $\lambda-a=l_2\sin\varphi+\sqrt{l_1^2-(b-l_2\cos\varphi)^2}$. Cette loi est géométrique et non linéaire. Une pente locale définit un gain de petits déplacements lorsque la branche est inversible.
@@ -155,16 +153,12 @@ Pour des points alignés sur le longeron de référence, $\lambda_A-\lambda_B=c\
 Dans le plan vertical, posons $X_\Sigma=X_A+X_B+X_C$, $Y_\Sigma=Y_A+Y_B+Y_C$. Le poids passe par G et les points A′, B′ et C′ sont sur la route. Leurs bras horizontaux depuis G valent respectivement $l_G\cos\theta+h\sin\theta$, cette valeur moins $c$, puis moins $c+d$. Leur bras vertical commun vaut $l_G\sin\theta-h\cos\theta$. Le bilan en projection donne
 
 $$
-
 X_\Sigma=ma_x,\qquad Y_\Sigma-mg=ma_y\simeq0,
-
 $$
 
 
 $$
-
 C\ddot\theta=(h\cos\theta-l_G\sin\theta)X_\Sigma+(l_G\cos\theta+h\sin\theta)Y_\Sigma-cY_B-(c+d)Y_C.
-
 $$
 
 Ici $C$ est le moment d'inertie de tangage en G. Dans les bras ci-dessus on peut remplacer $\sin\theta$ par $\theta$ et $\cos\theta$ par 1.
@@ -174,9 +168,7 @@ Ici $C$ est le moment d'inertie de tangage en G. Dans les bras ci-dessus on peut
 La résultante verticale et l'équilibre initial imposent $\Delta Y_A+\Delta Y_B+\Delta Y_C=0$. Par les Q30 et Q31, $\Delta Y_A=\Delta Y_B+Kc\sin\theta$ et $\Delta Y_C=\Delta Y_B-Kd\sin\theta$. Il vient
 
 $$
-
 \Delta Y_B=\frac{K(d-c)}3\sin\theta\simeq\frac{K(d-c)}3\theta.
-
 $$
 
 Comme $K<0$ et $d<c$, la plongée du nez ($\theta<0$) déleste le pont.
@@ -186,9 +178,7 @@ Comme $K<0$ et $d<c$, la plongée du nez ($\theta<0$) déleste le pont.
 À l'arrêt $mgl_G=cY_{B0}+(c+d)Y_{C0}$. En remplaçant $X_\Sigma,Y_\Sigma$ et $\Delta Y_C=\Delta Y_B-Kd\sin\theta$ dans la Q32, il vient
 
 $$
-
 (2c+d)\Delta Y_B=ma_x(h\cos\theta-l_G\sin\theta)+mg[l_G(\cos\theta-1)+h\sin\theta]+K d(c+d)\sin\theta-C\ddot\theta.
-
 $$
 
 Au premier ordre pour un $a_x$ donné, le membre de droite vaut $ma_x(h-l_G\theta)+[mgh+K d(c+d)]\theta-C\ddot\theta$. Si $a_x$ et $\theta$ sont tous deux comptés comme des perturbations du premier ordre, omettre en outre leur produit.
@@ -233,9 +223,7 @@ Au passage par Auto à $t_1$, **Normal** est traversé avant l'impulsion qui sé
 On regroupe en $F_1,F_2$ les forces verticales de l'ensemble des coussins de chaque côté, de bras $+l,-l$. À $\beta=0$, leur somme vaut $mg$ et $l(F_1-F_2)=mg e_G$. Ainsi $F_{1,2}=mg(1\pm e_G/l)/2$. Le côté chargé atteint sa force limite $F_{1\max}$ pour
 
 $$
-
 e_{G,\max}^{\rm pression}=l\left(\frac{2F_{1\max}}{mg}-1\right).
-
 $$
 
 Pour un modèle à un seul essieu, prendre les forces de cet essieu et sa part du poids. Pour trois coussins identiques sur le côté, l'effort maximal dans ce modèle direct est $3SP_{\max}$, et non celui d'un seul coussin. Il faut aussi que l'autre côté pousse encore, donc $|e_G|\le l$. Le déport effectivement admissible est la plus petite de ces bornes, à condition que la pression suffise déjà pour un chargement centré.
@@ -251,9 +239,7 @@ Du côté des faibles masses, la courbe monte au-dessus de $l=37{,}5$ cm pour de
 La réflexion par le plan $(G,\vec x_1,\vec y_1)$ transforme $z_1$ en $-z_1$. Les intégrales de $x_1z_1$ et $y_1z_1$ s'annulent. Le produit de $x_1y_1$ peut subsister. Dans les notations de l'annexe,
 
 $$
-
 I_G=\begin{pmatrix}A&-F&0\\-F&B&0\\0&0&C\end{pmatrix}_{(\vec x_1,\vec y_1,\vec z_1)}.
-
 $$
 
 ### Question 42 · Équilibre du roulis en virage
@@ -263,9 +249,7 @@ Prenons $\vec z_0$ radial vers l'extérieur, $\beta>0$ pour l'inclinaison vers l
 On obtient, avec la convention d'axes explicitée,
 
 $$
-
 -k_{\rm roll}\beta+mgh'\sin\beta=\Omega^2\big[(B-C)\sin\beta\cos\beta-m h'R_V\cos\beta\big].
-
 $$
 
 Le calcul du produit vectoriel fixe le signe de l'écart d'inertie. Si $R_V$ est défini strictement comme rayon du centre de roulis et non de G, remplacer le rayon du terme centripète ci-dessus par $R_V+h'\sin\beta$ et garder $\Omega$ défini par la trajectoire de référence. L'hypothèse $B=C$ de la suite supprime le terme gyroscopique.
@@ -275,9 +259,7 @@ Le calcul du produit vectoriel fixe le signe de l'écart d'inertie. Si $R_V$ est
 Le déport géométrique du centre de masse consécutif au roulis est $e_{\rm éq}=h'\sin\beta$. Avec $B=C$, $\sin\beta\simeq\beta$, $\cos\beta\simeq1$, la Q42 donne $(k_{\rm roll}-mgh')\beta=m h' V_0^2/R_V$. Ainsi
 
 $$
-
 e_{\rm éq}\simeq\frac{m h'^2 V_0^2}{R_V(k_{\rm roll}-mgh')}.
-
 $$
 
 À $m=26\,000$ kg, $V_0=25$ m/s, $R_V=100$ m et $h'=1$ m, on trouve $\beta\simeq0{,}220$ rad, soit $e_{\rm éq}\simeq22$ cm. Cela dépasse les 12 à 13 cm lus à 26 t. La suspension pneumatique ne maintient donc pas le camion horizontal dans ce virage à pleine charge. Une autre longueur, $h'V_0^2/(gR_V)=0{,}625$ m, représente le bras de poids qui produirait le couple centrifuge à roulis nul. Elle ne mesure pas le déplacement du centre de masse calculé ici.

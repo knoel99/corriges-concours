@@ -1,0 +1,108 @@
+{
+  "slug": "ens-rennes_d-e_economie-oral_2025",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Économie (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 21,
+  "sujets": 21,
+  "intitules": {
+    "1": "La France s’éloigne-t-elle actuellement du plein emploi à la suite de la baisse du taux d’inflation ?",
+    "2": "Faut-il toujours lutter contre les externalités ?",
+    "3": "Le modèle de concurrence pure et parfaite est-il encore utile à l’analyse économique ?",
+    "4": "La politique monétaire doit-elle être conventionnelle ou non conventionnelle ?",
+    "5": "Le risque inflationniste s’éloigne-t-il avec le chômage ?",
+    "6": "La décomposition tendance/cycle permet-elle de mieux comprendre la réalisation de l’équilibre macroéconomique ?",
+    "7": "La France peut-elle faire faillite ?",
+    "8": "L’indépendance de la banque centrale est-elle nécessairement garante de la stabilité des prix ?",
+    "9": "L’arbitrage inflation/activité est-il encore d’actualité ?",
+    "10": "Peut-on se passer des monopoles ?",
+    "11": "Comment comprendre la diversité des situations de concurrence imparfaite ?",
+    "12": "Est-il préférable de lutter contre l’inflation ou contre le chômage ?",
+    "13": "À quoi sert une banque centrale ?",
+    "14": "La politique économique est-elle nécessairement contrainte par les marchés financiers ?",
+    "15": "Un système de change fixe garantit-il nécessairement la stabilité macroéconomique ?",
+    "16": "La politique macroéconomique se heurte-t-elle à des limites ?",
+    "17": "Le modèle IS/LM et le modèle classique sont-ils compatibles ?",
+    "18": "Anticipations rationnelles ou anticipations adaptatives ?",
+    "19": "Quels sont les apports de la relation de Phillips à l’analyse économique ?",
+    "20": "L’État doit-il intervenir au niveau microéconomique ?",
+    "21": "L’atteinte du plein emploi nécessite-t-elle obligatoirement l’intervention publique ?"
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-economie-d-e-2025_1760693892070-pdf",
+    "sujet_sha256": "15362ec006bc2837b5fc94cda0af15b7ed81a97fac8b64dbc059fc97fa95e4da",
+    "apercu_sujet_sha256": "5059478564b707aaaeb9b44f08d1c07a13a780ed5d4ac661b2bdcb78384b6962",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2025"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions de l’oral d’économie. Les 21 intitulés du fascicule officiel sont repris dans l’ordre, avec un développement et une relance corrigée par sujet et cinq graphiques de tableau. Les données de conjoncture sont datées de la session. Le dossier 2025 consulté ne fournit pas de rapport distinct pour cet oral."
+    }
+  ],
+  "figures": [
+    {
+      "question": "2",
+      "fichier": "figures/externalite-de-production.svg",
+      "legende": "Exemple chiffré de dommage marginal constant égal à 2. Entre la quantité sociale et la quantité privée, le coût social excède le bénéfice marginal. Le triangle représente la perte évitable."
+    },
+    {
+      "question": "5",
+      "fichier": "figures/inflation-et-activite.svg",
+      "legende": "Courbes de Phillips illustratives. Une contraction de la demande déplace le point le long de la courbe. À chômage donné, un choc de coûts relève la courbe. Les valeurs sont hypothétiques."
+    },
+    {
+      "question": "17",
+      "fichier": "figures/equilibre-is-lm.svg",
+      "legende": "Lecture à prix fixes et offre de monnaie réelle inchangée. La dépense décale IS, tandis que le mouvement sur LM fait monter le taux. Les axes décrivent un modèle."
+    },
+    {
+      "question": "7",
+      "fichier": "figures/dynamique-de-dette.svg",
+      "legende": "Scénarios théoriques avec excédent primaire nul. À partir de 113 % du PIB, le ratio est multiplié chaque année par le facteur 1 + écart indiqué, approximation au premier ordre. Ces trajectoires ne sont pas des prévisions."
+    },
+    {
+      "question": "10",
+      "fichier": "figures/monopole-et-surplus.svg",
+      "legende": "Avec P = 10 − Q et un coût marginal de 2, le monopole vend 4 unités à 6. À prix égal au coût marginal, 8 unités sont échangées. La zone colorée est la perte de surplus totale."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions de l’oral d’économie. Les 21 intitulés du fascicule officiel sont repris dans l’ordre, avec un développement et une relance corrigée par sujet et cinq graphiques de tableau. Les données de conjoncture sont datées de la session. Le dossier 2025 consulté ne fournit pas de rapport distinct pour cet oral.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+    ]
+  }
+}

@@ -67,6 +67,27 @@ def registre() -> dict[str, str]:
     return sujets
 
 
+def exemples_documentes(sujets: dict[str, str]) -> dict[str, str]:
+    """Billets vérifiables individuellement, déjà rattachés aux fascicules du décompte."""
+    exemples = {}
+    source = REGISTRE.with_name("exemples-de-billets-du-jury.tsv")
+    with source.open(encoding="utf-8") as fichier:
+        for ligne in csv.DictReader(fichier, delimiter="\t"):
+            identifiant = ligne["fiche"]
+            rattachements = ligne["fascicules_associes"].split("|")
+            if (
+                not SLUG.fullmatch(identifiant)
+                or identifiant in sujets
+                or identifiant in exemples
+                or any(sujets.get(slug) != "oral" for slug in rattachements)
+                or urlsplit(ligne["source"]).scheme != "https"
+                or not re.fullmatch(r"[0-9a-f]{64}", ligne["sha256"])
+            ):
+                raise ValueError(f"Exemple de billet ou rattachement invalide : {identifiant}")
+            exemples[identifiant] = "exemple du jury"
+    return exemples
+
+
 def entete(markdown: str) -> set[str]:
     """Lire le bloc de signatures de tête, à l’exclusion du corps et des exemples."""
     lignes = iter(l.strip() for l in markdown.splitlines() if l.strip())
@@ -319,6 +340,8 @@ def main() -> int:
     )
     args = parser.parse_args()
     perimetre = registre()
+    if args.depuis or args.slugs:
+        perimetre.update(exemples_documentes(perimetre))
     selection = set(args.slugs) if args.slugs else set(perimetre)
     if args.depuis:
         selection = {

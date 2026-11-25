@@ -323,6 +323,23 @@ def _normaliser_paragraphe(texte: str) -> str:
 
 
 _CLOTURE = re.compile(r"^\s*(?:>\s*)*(`{3,}|~{3,})")
+_DELIMITEUR_BLOC_MATH = re.compile(r"( {0,3}(?:> {0,3})*)\$\$[ \t]*")
+
+
+def _fin_bloc_math(lignes: list[str], debut: int, citation: int) -> int | None:
+    """Retrouve le délimiteur fermant avant une clôture de code ou un changement de citation."""
+    for fin in range(debut + 1, len(lignes)):
+        ligne = lignes[fin]
+        if _CLOTURE.match(ligne):
+            break
+        if "$$" in ligne:
+            delimiteur = _DELIMITEUR_BLOC_MATH.fullmatch(ligne)
+            if delimiteur and delimiteur[1].count(">") == citation:
+                return fin
+            break
+        if citation and re.match(r"^ *(?:> *)*", ligne)[0].count(">") != citation:
+            break
+    return None
 
 
 def normaliser_maths(markdown: str) -> str:
@@ -337,7 +354,10 @@ def normaliser_maths(markdown: str) -> str:
             sortie.extend(_normaliser_paragraphe("\n".join(paragraphe)).split("\n"))
             paragraphe.clear()
 
-    for ligne in lignes:
+    prochaine_ligne = 0
+    for indice, ligne in enumerate(lignes):
+        if indice < prochaine_ligne:
+            continue
         m = _CLOTURE.match(ligne)
         if cloture is not None:
             sortie.append(ligne)
@@ -354,6 +374,22 @@ def normaliser_maths(markdown: str) -> str:
             cloture = m.group(1)
             sortie.append(ligne)
             continue
+        delimiteur = _DELIMITEUR_BLOC_MATH.fullmatch(ligne)
+        # Un délimiteur isolé peut aussi fermer une formule ouverte en fin de ligne.
+        if delimiteur and sum(ligne_precedente.count("$$") for ligne_precedente in paragraphe) % 2 == 0:
+            citation = delimiteur[1].count(">")
+            fin = _fin_bloc_math(lignes, indice, citation)
+            if fin is not None:
+                # Pandoc ferme les maths au premier paragraphe vide. Garder les sauts
+                # de ligne non vides, notamment après un commentaire TeX.
+                formule = lignes[indice : fin + 1]
+                vide = re.compile(r"[ \t]*" + r">[ \t]*" * citation).fullmatch
+                contenu = formule[1:-1]
+                if any(vide(ligne_math) for ligne_math in contenu) and any(not vide(ligne_math) for ligne_math in contenu):
+                    paragraphe.extend(ligne_math for ligne_math in formule if not vide(ligne_math))
+                    vider()
+                    prochaine_ligne = fin + 1
+                    continue
         if not ligne.strip() or ligne.strip(" >") == "":
             vider()
             sortie.append(ligne)

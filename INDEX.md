@@ -181,6 +181,9 @@
 | 2026 | BEL | AL | Français (oral option 20 juin) | [md](2026/bel/bel_al_francais-oral-option-20-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-20-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral option 26 juin) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral option 30 juin) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 24 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 30 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-30-juin_2026/guide.md) |
+| 2026 | BEL | AL | Grec (oral option, exemple du jury Ploutos) | [md](2026/bel/bel_al_grec-oral-option-exemple-du-jury-ploutos_2026/brut.md) | [md](2026/bel/bel_al_grec-oral-option-exemple-du-jury-ploutos_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
@@ -586,6 +589,7 @@
 | 2026 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Italien (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Portugais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/guide.md) |
@@ -643,6 +647,7 @@
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
+| 2015 | ENS | PC | Physique-chimie | [md](2015/ens/ens_pc_physique-chimie_2015/brut.md) | [md](2015/ens/ens_pc_physique-chimie_2015/guide.md) |
 | 2017 | ENS | PC | Physique-chimie | [md](2017/ens/ens_pc_physique-chimie_2017/brut.md) | [md](2017/ens/ens_pc_physique-chimie_2017/guide.md) |
 | 2020 | ENS | PC | Physique-chimie | [md](2020/ens/ens_pc_physique-chimie_2020/brut.md) | [md](2020/ens/ens_pc_physique-chimie_2020/guide.md) |
 | 2021 | ENS | PC | Physique-chimie | [md](2021/ens/ens_pc_physique-chimie_2021/brut.md) | [md](2021/ens/ens_pc_physique-chimie_2021/guide.md) |
@@ -925,6 +930,7 @@
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2015 | X-ENS | PSI | Modélisation | [md](2015/x-ens/x-ens_psi_modelisation_2015/brut.md) | [md](2015/x-ens/x-ens_psi_modelisation_2015/guide.md) |
 | 2016 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2016/x-ens/x-ens_psi_modelisation_2016/brut.md) | [md](2016/x-ens/x-ens_psi_modelisation_2016/guide.md) |
 | 2017 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2017/x-ens/x-ens_psi_modelisation_2017/brut.md) | [md](2017/x-ens/x-ens_psi_modelisation_2017/guide.md) |
 | 2018 | X-ENS | PSI | Modélisation (corrigé partiel) | [md](2018/x-ens/x-ens_psi_modelisation_2018/brut.md) | [md](2018/x-ens/x-ens_psi_modelisation_2018/guide.md) |
