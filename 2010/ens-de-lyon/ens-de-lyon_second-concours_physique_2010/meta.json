@@ -1,0 +1,80 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2010",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2010
+  },
+  "questions": 22,
+  "redaction": "Les cinq questions sur la force centrale et quinze questions du problème de suspension sont traitées, dont la vérification de l’échelon idéal par intégration du signal. Les questions II.11 et II.14 sur la conduite avec une cargaison explosive restent hors couverture. Les résultats sur le banc d’essai portent sur la réponse linéaire du système mécanique.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2010/sujet-ecrit-2010-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "be5effb28c76a3f2a49eec1a0d45947bfb0227018044dd6f9664db0365987e1e"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.4",
+      "fichier": "figures/cercle-polaire.svg",
+      "legende": "Le cercle de centre C passe par le centre de force O. Sa corde OM est la variable radiale de Binet."
+    },
+    {
+      "numero": 2,
+      "question": "II.5",
+      "fichier": "figures/reponse-echelon.svg",
+      "legende": "Trois réponses à un échelon de position de la base. Même la courbe suramortie dépasse légèrement sa valeur finale."
+    },
+    {
+      "numero": 3,
+      "question": "II.13",
+      "fichier": "figures/banc-sinusoidal.svg",
+      "legende": "Réponses d’un banc sinusoïdal. À gauche le déplacement est rapporté à celui de la base. À droite l’accélération de la masse est exprimée dans son unité réduite."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Les cinq questions sur la force centrale et quinze questions du problème de suspension sont traitées, dont la vérification de l’échelon idéal par intégration du signal. Les questions II.11 et II.14 sur la conduite avec une cargaison explosive restent hors couverture. Les résultats sur le banc d’essai portent sur la réponse linéaire du système mécanique.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.12",
+      "II.13",
+      "II.15",
+      "II.16",
+      "II.17"
+    ],
+    "questions_non_traitees": [
+      "II.11",
+      "II.14"
+    ],
+    "limites": "Les questions II.11 et II.14 sur la conduite avec une cargaison explosive restent hors couverture. Les résultats sur le banc d’essai portent sur la réponse linéaire du système mécanique."
+  }
+}
