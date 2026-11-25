@@ -1,0 +1,67 @@
+{
+  "slug": "ens_mp-pc_allemand-le2_2007",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LE2)",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Petits arrangements avec la vérité",
+  "questions": 2,
+  "redaction": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2007/sujet-ecrit-2007-mp-pc_langue_etrangere_2.pdf#page=2",
+    "sha256_sujet": "5309bb7be121409229b9d682b83dc64317cd1725af428d833510660019c75b2c",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2007",
+    "ecoles": "ENS de Paris et de Cachan",
+    "reference_des_textes": "Focus, février 2007.",
+    "page_version": "2",
+    "code_garde": "71.10PM",
+    "pages_sujet": "2",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2007/rapport-2007-pc_ecri_langue_etrangere_2_allemand.pdf",
+    "sha256_rapport_jury": "19122a614109cb4ac127df4e0d1f4a85d2bd52bc9c2f8d6cd362531202789000",
+    "pages_rapport_jury": "1–2"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/profils-et-mesures.svg",
+      "legende": "Seuils de classement indiqués par les chercheurs dans l’article."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport commun aux MP et PC commente les difficultés de la version et la question sur le mensonge."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Q1"
+    ]
+  }
+}
