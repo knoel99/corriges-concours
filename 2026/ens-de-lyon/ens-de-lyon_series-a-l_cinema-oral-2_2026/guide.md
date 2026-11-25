@@ -22,6 +22,8 @@ Présentez ensuite la hiérarchie visuelle de l’affiche avant de lire *La Sour
 
 Dans le photogramme de départ, le dos de Mister Freedom occupe une grande partie du champ, à droite. Le costume sombre forme une masse qui obstrue ce vers quoi il avance. On distingue encore les verticales métalliques et les parois de l’ascenseur. Le plan rapproché, pris de dos, fait donc entrer le héros à l’écran par un effet assez comique de bouchon visuel. Celui qui est censé agir et se montrer empêche momentanément de voir le lieu où il va.
 
+Dans un entretien donné à la revue *Aperture*, William Klein associe l’ascenseur du Freedom Building à un univers de sociétés multinationales dont on peut parcourir les étages. Le réalisateur éclaire ainsi l’une des fonctions de ce motif dans la satire. Sur la photographie du concours, aucun nom d’entreprise n’est lisible. À cette borne, c’est la veste qui commande l’attention.
+
 Au terme indiqué, le cadre rapproché donne au contraire un visage à lire. La coiffure rousse très construite de Marie-Madeleine, la bouche ouverte sur un sourire et la main près de la joue font de ce visage un lieu de spectacle. Le jury précise le jeu de la langue, geste fugitif qu’un photogramme ne saurait suffire à restituer. Le contraste formel est net entre la masse compacte du dos et la mobilité expressive que suppose ce gros plan. On peut y voir deux façons de fabriquer la visibilité d’un personnage, l’occupation de l’espace par le héros et l’exhibition d’une expression par Delphine Seyrig. Les articulations de l’entrée dans l’ascenseur au sourire final, ainsi que l’intonation et le rythme, demandent l’extrait projeté, situé entre environ 10 min 14 s et 14 min 41 s. Ce développement commente les deux vues publiées.
 
 ## II. Du document publicitaire au scénario
@@ -47,3 +49,5 @@ L’affiche de 1934 pour Tho-Radia place au premier plan un pot blanc sous un gr
 La démonstration utilise un pot vide et des sources lumineuses ordinaires. La force persuasive de l’affiche apparaît dans un geste reproductible par les visiteurs. L’enfant déplace une chose, regarde ce qui change puis rectifie son hypothèse. Les deux dessins occupent à la fin la place qu’aurait pu prendre un long discours. Une lumière du lieu, le frottement et le bruit de l’interrupteur donnent un rythme aux essais. L’objet de la publicité garde son statut de document historique.
 
 [Fascicule officiel, p. 4–6](https://www.ens-lyon.fr/sites/default/files/2026-11/Arts%202026.pdf#page=4) · [Rapport de l’oral, p. 6–8](https://www.ens-lyon.fr/sites/default/files/2026-10/Arts%20-%20Cin%C3%A9ma%202026.pdf#page=6)
+
+[William Klein, entretien sur l’ascenseur du Freedom Building](https://aperture.org/editorial/magazine-interview-william-klein/) · [Criterion Collection, Mr. Freedom](https://www.criterion.com/films/903-mr-freedom)
