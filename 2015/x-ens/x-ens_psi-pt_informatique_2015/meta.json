@@ -1,0 +1,46 @@
+{
+  "slug": "x-ens_psi-pt_informatique_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2015,
+    "duree_heures": 2
+  },
+  "questions": 14,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2015.pdf",
+    "sujet_sha256": "d9dd8e891b94d79838ebab81d51e43cf9edba511e8dfb423bf86a9bac629c500"
+  },
+  "figures": [
+    {
+      "fichier": "figures/les-deux-plans.svg",
+      "question": "4",
+      "legende": "Les deux dessins lus dans la question 4. Le premier contient cinq routes sur le pourtour et deux routes intérieures. Le second est un arbre."
+    },
+    {
+      "fichier": "figures/fronts-de-couleur.svg",
+      "question": "12",
+      "legende": "Exemple à trois sommets internes. Deux branches atteignent la ville 4. Le front de couleur 2 ne la conserve qu’une fois. La ville 5 reste sans prolongement admissible."
+    },
+    {
+      "fichier": "figures/repetitions-independantes.svg",
+      "question": "13",
+      "legende": "Pour deux sommets intermédiaires et un seul chemin témoin, un tirage réussit avec probabilité 1/4. Après quatre tirages, la probabilité de réussite est 175/256."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 14 questions du sujet XCR, de la représentation des listes à la recherche paramétrée de chemins par coloration. Lecture du PDF natif et des deux plans imprimés, reconstruction, vérification de 37 888 cas sur les 1 024 graphes étiquetés à cinq sommets. Trois illustrations originales."
+    }
+  ]
+}
