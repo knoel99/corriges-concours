@@ -4,7 +4,7 @@
 
 **Rédaction (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Relecture du corrigé (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Les 18 questions de géologie et les neuf questions ou sous-questions des thèmes biologiques 1 et 2 sont traitées. En biologie, les thèmes 3 et 4, portant sur l’infection cellulaire et la purification d’une protéine virale (B6 à B11), sont hors couverture. Le préfixe G désigne le cahier de géologie et le préfixe B le cahier de biologie.
 
