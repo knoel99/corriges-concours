@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Analyser les verbes de l’extrait
 
 Le sujet de quatre heures demande de discuter un extrait précis en relation avec le programme, de *Vers une architecture* à *Learning from Vernacular*. Distinguer trois propositions. L’auteur décrit un changement, explique comment la régularité se vérifie, puis lui donne valeur de prescription. Cette progression fait de l’extrait un objet historique et permet de construire une discussion qui ne se contente pas de défendre ou de rejeter le béton.
@@ -13,6 +15,8 @@ Le sujet de quatre heures demande de discuter un extrait précis en relation ave
 ## Mettre chaque exemple à l’épreuve de la thèse
 
 ![Figure 1 — Trois façons d’éprouver une technique de construction](figures/matiere-chantier-maquette.svg)
+
+Repérez dans chaque cas ce qui se répète : une dimension de la travée, une règle d’assemblage ou une échelle de représentation. Le troisième cas porte sur un instrument pour connaître les bâtiments ; le premier sur un principe de projet.
 
 À Pessac, chercher ce qui est standardisé, puis ce qui change. Le carré de cinq mètres constitue un outil de composition. Les maisons qui en résultent ont plusieurs types. Aux maisons Jaoul, faire l’opération inverse. L’œil voit des briques, des joints, une voûte, du béton. La disposition repose cependant sur une mesure d’ensemble. Ces exemples pris chez le même architecte permettent de distinguer la continuité d’un problème et la transformation des réponses.
 

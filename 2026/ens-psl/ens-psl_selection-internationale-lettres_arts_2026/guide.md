@@ -8,11 +8,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Commencer par le geste d’un spectateur
 
 La question de l’épreuve écrite couvre les arts visuels en Europe au XXe siècle. Le dossier personnel du candidat n’est pas requis pour apprécier les exemples. Un corpus resserré permet d’examiner réellement ce qui arrive entre la lecture et le regard. Situer le lieu et la date de production ou de circulation. La localisation actuelle d’une œuvre dans une collection américaine ne suffit pas pour en faire un exemple américain.
 
 ![Figure 1 — Quatre opérations proposées au spectateur](figures/regarder-et-lire.svg)
+
+Recommencez la comparaison à partir d’un seul geste, ouvrir le livre. Que révèle l’ouverture du dépliant de 1913 ? Que laisse-t-elle illisible dans la reprise de Mallarmé en 1969 ? Une description matérielle précise fait apparaître deux relations entre écriture et image.
 
 Pour chaque œuvre, décrire la position matérielle des signes, puis indiquer l’opération qui en résulte. L’accordéon exige-t-il la même lecture une fois entièrement ouvert ? Le sens du montage de Heartfield se comprendrait-il de la même manière sans le jeu sur le mot *Blech* ? Le livre de Broodthaers garderait-il son sens sans le nom de Mallarmé ? Chacune de ces questions revient au même problème sans imposer la même réponse.
 

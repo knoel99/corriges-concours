@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Le matériau fixe peut-il remplacer le matériau naturel ?
 
 Dans *Vers une architecture* (1923), Le Corbusier ne se contente pas de prévoir qu’une matière en remplacera une autre. Il transforme une différence entre matières en hiérarchie entre savoirs. Ce qui varie de pièce en pièce devient « douteux ». Ce qui se soumet à l’essai du laboratoire devient une promesse de certitude. Puis le futur implicite d’une évolution industrielle se change en obligation, « le matériau fixe doit remplacer le matériau naturel ». De la cité Frugès à l’exposition *Learning from Vernacular*, que devient cette prétention à fixer, par l’industrie, la valeur d’une technique de fabrication ?
@@ -31,6 +33,10 @@ Ce déplacement invite à lire le verbe « remplacer » comme la prise de positi
 L’exposition *Learning from Vernacular*, présentée notamment au domaine de Boisbuchet en 2009, part d’un autre dispositif de connaissance. Les Archives de la construction moderne de l’EPFL conservent un ensemble de modèles d’architectures vernaculaires. Trente-deux maquettes au 1/20 sont réunies à Boisbuchet avec des schémas et des photographies de Deidi von Schaewen. La répétition d’une échelle de présentation ne vise plus à faire produire partout un même élément. Elle offre au regard des constructions différentes dans des conditions qui permettent de comparer leurs rapports au climat, aux ressources et aux usages.
 
 Cette réhabilitation est plus exigeante qu’un goût pour les silhouettes pittoresques. Un toit débordant organise l’ombre et la protection des parois. Une enveloppe entretenue à intervalles réguliers suppose des matériaux réparables, du temps et des personnes capables de refaire le geste. Copier le grand débord ou la couleur d’un mur en déplaçant tout le reste reviendrait à prendre pour un style ce qui était une réponse collective à une situation. La maquette a justement une limite instructive. Elle fixe sous le regard une construction qui, dans son milieu, peut être périodiquement transformée. Les photographies et les documents replacent le modèle dans la durée de l’entretien et dans un paysage habité.
+
+Ce que l’on compare change d’un dispositif à l’autre. À Pessac, une travée standard peut se répéter dans des distributions différentes. Aux maisons Jaoul, c’est la régularité d’un assemblage qui rend compatibles des matériaux distincts. Dans l’exposition, l’échelle commune des maquettes rend les différences de construction lisibles. La standardisation du moyen de comparaison peut donc servir à montrer la variété que le manifeste paraissait vouloir écarter.
+
+![Figure 1 — Trois façons d’éprouver une technique de construction](figures/matiere-chantier-maquette.svg)
 
 Le déplacement entre le manifeste et l’exposition concerne ainsi ce qui fait preuve. Le premier demande à la répétition de l’essai de garantir les propriétés du matériau. La seconde donne à comparer des solutions éprouvées par des groupes humains dans des lieux et des temps distincts. La critique historique du slogan de 1923 n’exige pas de renoncer à l’essai de laboratoire. Elle oblige à ajouter à la propriété mesurée de l’élément la variété des assemblages, l’organisation du chantier et les conditions sociales qui permettent à une technique d’être reprise et transmise.
 
