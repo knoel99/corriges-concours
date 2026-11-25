@@ -1,0 +1,78 @@
+{
+  "slug": "x_mp-pc_espagnol_2009",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol",
+    "annee": 2009,
+    "modalite": "écrit",
+    "duree_heures": 3
+  },
+  "intitule": "Une femme très occupée",
+  "questions": 3,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=7",
+    "sha256_sujet": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+    "etablissements_imprimes": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "page_version": "7",
+    "texte_support": "Marina Mayoral, Casi perfecto, 2007.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=7",
+        "sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+        "pages": "7",
+        "pages_document": 10,
+        "index": "https://www.alloschool.com/element/33547",
+        "url_originale": "http://gargantua.polytechnique.fr:80/siatel-web/linkto/?objectId=DOCF00090000040100000000000004D900000000",
+        "date_capture_utc": "sans capture"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2009-langues-vivantes.pdf#page=1",
+        "sha256": "9dae5bdb8cb0d190d4c6022a6d1c9b848f78d280b42eae2ba39f224688fc85cf",
+        "pages": "1–2",
+        "pages_document": 10,
+        "index": "https://www.alloschool.com/element/33547",
+        "url_originale": "http://gargantua.polytechnique.fr:80/siatel-web/linkto/?objectId=DOCF00090000040100000000000004DA00000000",
+        "date_capture_utc": "sans capture"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/les-deux-emplois-du-temps.svg",
+      "question": "1",
+      "legende": "La narratrice oppose la disponibilité du père à son propre emploi du temps, avant de reconnaître que ses conférences littéraires ressemblent à celles du mathématicien."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « Une femme très occupée », deux réponses personnelles en espagnol, indications de traduction et de rédaction, schéma sur La narratrice oppose la disponibilité du père à son propre emploi du temps, avant de reconnaître que ses conférences littéraires ressemblent à celles du mathématicien."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  }
+}
