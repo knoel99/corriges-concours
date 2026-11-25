@@ -45,6 +45,7 @@
 | 2024 | Agro-Véto | BCPST | Physique | [md](2024/agro-veto/agro-veto_bcpst_physique_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_physique_2024/guide.md) |
 | 2025 | Agro-Véto | BCPST | Physique | [md](2025/agro-veto/agro-veto_bcpst_physique_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_physique_2025/guide.md) |
 | 2026 | Agro-Véto | BCPST | Physique | [md](2026/agro-veto/agro-veto_bcpst_physique_2026/brut.md) | [md](2026/agro-veto/agro-veto_bcpst_physique_2026/guide.md) |
+| 2022 | Agro-Véto | BCPST | SVT | [md](2022/agro-veto/agro-veto_bcpst_svt_2022/brut.md) | [md](2022/agro-veto/agro-veto_bcpst_svt_2022/guide.md) |
 | 2023 | Agro-Véto | BCPST | SVT | [md](2023/agro-veto/agro-veto_bcpst_svt_2023/brut.md) | [md](2023/agro-veto/agro-veto_bcpst_svt_2023/guide.md) |
 | 2024 | Agro-Véto | BCPST | SVT | [md](2024/agro-veto/agro-veto_bcpst_svt_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_svt_2024/guide.md) |
 | 2025 | Agro-Véto | BCPST | SVT | [md](2025/agro-veto/agro-veto_bcpst_svt_2025/brut.md) | [md](2025/agro-veto/agro-veto_bcpst_svt_2025/guide.md) |
