@@ -1,0 +1,43 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2017",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2017,
+    "duree_heures": 4
+  },
+  "questions": 27,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/07/2017_MPI_sujet_InfoMath.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/12/17_MP_rap_eInfoMath.pdf",
+    "sujet_sha256": "7ab41fef3333fd28963405c5e88b9793ea62daa3f22a0a40ff67612997778de8",
+    "rapport_sha256": "bd2fde96a22b6fd3d67565a1d7b09d502532d4c8d0d95a2515f1cd781200b934"
+  },
+  "figures": [
+    {
+      "fichier": "figures/carre-a-cheval.svg",
+      "question": "14",
+      "legende": "Carré centré dans le mot de droite. Les deux moitiés sont AB. La barre de concaténation est située entre le premier A et le premier B."
+    },
+    {
+      "fichier": "figures/fenetre-de-prefixe.svg",
+      "question": "23",
+      "legende": "La fenêtre connue [3,8) est une copie du préfixe de longueur 5. Les comparaisons reprises directement au bord droit amortissent le coût de calcul de toute la table."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 27 questions après lecture du sujet et du rapport officiels. Calcul des deux tableaux d’exemple, des carrés de période sept, des trois configurations de centre et de la fenêtre des préfixes. Exécution des routines Caml et comparaison avec une énumération indépendante sur 4698 couples. Deux schémas originaux."
+    }
+  ]
+}
