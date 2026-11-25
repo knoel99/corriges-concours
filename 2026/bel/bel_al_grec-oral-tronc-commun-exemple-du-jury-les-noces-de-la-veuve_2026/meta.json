@@ -1,0 +1,59 @@
+{
+  "slug": "bel_al_grec-oral-tronc-commun-exemple-du-jury-les-noces-de-la-veuve_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Grec (oral tronc commun, exemple du jury Les noces de la veuve)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Les noces de la veuve — Plutarque, Dialogue sur l’Amour, 10",
+  "type_document": "exemple de billet du jury",
+  "date_de_passage": null,
+  "fascicules_associes": [
+    "bel_al_grec-oral-tronc-commun-22-juin_2026",
+    "bel_al_grec-oral-tronc-commun-23-juin_2026",
+    "bel_al_grec-oral-tronc-commun-25-juin_2026"
+  ],
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_grec_tronc_commun_traduction_commentaire.pdf#page=6",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_grec_tronc_commun_traduction_commentaire.pdf",
+    "rapport_sha256": "bf510a35fd5097386257de0c656baacab0f36cde83267184a306006f932935ab",
+    "page": 6
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction",
+      "Commentaire"
+    ],
+    "precision": "Traduction intégrale de Plutarque et commentaire du passage effectivement reproduit à la page 6 du rapport. Le rapport présente un exemple de billet sans indiquer un jour de passage ni attester son tirage par un candidat."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Les relais du geste d’Isménodore"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale de Plutarque et commentaire du passage effectivement reproduit à la page 6 du rapport. Rédaction des deux éditions, préparation de la reprise orale et schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
