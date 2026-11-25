@@ -1,0 +1,60 @@
+{
+  "slug": "ens_cycle-master-mathematiques_francais-et-culture-generale_2017",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Français et culture générale",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Français et culture générale",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_SE_2C_Math_FrancaisV2.pdf",
+    "sujet_sha256": "ad83fc3bcb1f88a87a06e55ce9734cfa481c7a6982ef4ac2ac61de02220afafd",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2017_RO_2C_Math_Francais.pdf",
+    "rapport_sha256": "246d6c85f886ac96940436e3abdbb9feaa1bdc8952fb76dfd015d84ce5ffb1e1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/houlou.svg",
+      "question": "1",
+      "legende": "Qui commande la mesure chez Houlou ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résumé original de 380 mots, deux commentaires construits pour les deux citations du feuillet, guide et figure du raisonnement."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation au texte et aux deux questions du sujet, double recomptage du résumé et vérification des exemples et du raisonnement. Lecture du rapport de la session classé en ligne à l’oral."
+    }
+  ]
+}
