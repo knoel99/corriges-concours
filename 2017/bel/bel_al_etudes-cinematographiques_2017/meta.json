@@ -1,0 +1,77 @@
+{
+  "slug": "bel_al_etudes-cinematographiques_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Études cinématographiques",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Études cinématographiques",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-en-arts_1506586794135_0.pdf#page=2",
+    "sujet_sha256": "8fa2ab57573904dadbdc2026c736ff58ba60169e4660c96e6591c867542cfef7",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/Etudes%20cin%C3%A9matographiques_2017.pdf#page=1",
+    "rapport_sha256": "c83def71a9de0d52d801b7224358f00c9cada72dde338be9c9b6c7321bbffe9b",
+    "references": [
+      "https://www.criterion.com/current/posts/1215-a-matter-of-time-jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
+      "https://www.criterion.com/current/posts/485-la-jet-e-unchained-melody",
+      "https://www.moma.org/collection/works/303039/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/coupe.svg",
+      "question": "Dissertation",
+      "legende": "Trois cas où la coupe change le sens"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des attentes sur la mesure, la relativité du rythme dans le montage et le jugement du spectateur."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la composition, du guide et du schéma pour le sujet de six heures."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des exemples de plans, du statut des coupes masquées et des prises continues, de la différence entre le temps du tournage et celui de la projection. Vérification des deux éditions et du schéma."
+    }
+  ]
+}

@@ -196,6 +196,7 @@
 | 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
 | 2017 | BEL | AL | Espagnol (thème Lyon) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Histoire et théorie des arts | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/brut.md) | [md](2017/bel/bel_al_histoire-et-theorie-des-arts_2017/guide.md) |
 | 2017 | BEL | AL | Italien (thème Lyon) | [md](2017/bel/bel_al_italien-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_italien-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Portugais (thème Lyon) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Russe (thème Lyon) | [md](2017/bel/bel_al_russe-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_russe-theme-lyon_2017/guide.md) |
@@ -229,7 +230,9 @@
 | 2026 | BEL | AL | Philosophie (oral tronc commun 30 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun, autres tirages du jury) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-autres-tirages-du-jury_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
+| 2017 | BEL | AL | Études cinématographiques | [md](2017/bel/bel_al_etudes-cinematographiques_2017/brut.md) | [md](2017/bel/bel_al_etudes-cinematographiques_2017/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
+| 2017 | BEL | AL | Études théâtrales | [md](2017/bel/bel_al_etudes-theatrales_2017/brut.md) | [md](2017/bel/bel_al_etudes-theatrales_2017/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
 | 2026 | BEL | AL | Explication de documents historiques (Lyon) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/brut.md) | [md](2026/bel/bel_al_explication-de-documents-historiques-lyon_2026/guide.md) |
 | 2024 | BEL | AL | Géographie | [md](2024/bel/bel_al_geographie_2024/brut.md) | [md](2024/bel/bel_al_geographie_2024/guide.md) |
