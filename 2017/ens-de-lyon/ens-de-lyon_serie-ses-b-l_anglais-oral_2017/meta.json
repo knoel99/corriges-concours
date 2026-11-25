@@ -8,14 +8,20 @@
     "modalite": "oral"
   },
   "intitule": "Explication d’un texte contemporain de langue anglaise hors programme",
-  "questions": 33,
-  "redaction": "Trente-trois analyses et relances en anglais sur les institutions, l’argumentation et les points de vue en 2016–2017 ; tableau de comparaison et aides sur la lecture, la synthèse et la prise de distance.",
+  "questions": 35,
+  "redaction": "Trente-trois analyses et relances en anglais sur les institutions, l’argumentation et les points de vue en 2016–2017 ; tableau de comparaison et aides sur la lecture, la synthèse et la prise de distance. Rétablissement des vingt-neuf coupures SES, analyses des deux billets absents de la liste, comparaison des attributions sur le billet Sewall.",
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/sujet-ses-oral-2017_1506590888219.pdf#page=10",
     "sha256_sujet": "ea173fbbf1362185f61249f8d412b99a1037d2a9b7b20bdb859f8b374c7fbfca",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/SES_2017.pdf#page=8",
     "sha256_rapport_jury": "683dcf453b3dd03378fe818b5180c3323430f82164ade00cb47b73bd8f925dda",
     "archives_complementaires": [
+      {
+        "type": "cahier officiel distribué, SES p. 103–131",
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/anglais-hors-prgramme2017_1506588702296.pdf",
+        "sha256": "035ae3346463cbfa9a589f6495272f9419a4452f5374c41c947bcd3de832f0a2",
+        "pages": 131
+      },
       {
         "billet": 1,
         "statut": "Publication or author’s copy",
@@ -141,12 +147,18 @@
         "statut": "Publication or author’s copy",
         "url": "https://www.nationalreview.com/articles/chicago-crime-police-gun-control-laws-growing-crime"
       }
-    ]
+    ],
+    "cahier_hors_programme": {
+      "type": "cahier officiel distribué, SES p. 103–131",
+      "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/anglais-hors-prgramme2017_1506588702296.pdf",
+      "sha256": "035ae3346463cbfa9a589f6495272f9419a4452f5374c41c947bcd3de832f0a2",
+      "pages": 131
+    }
   },
   "figures": [
     {
       "numero": 1,
-      "question": "Thirty-three entries in the official booklet",
+      "question": "Thirty-three notices in the SES list",
       "fichier": "figures/mandates-and-consent.svg",
       "legende": "Three claims about political power, tested against the institution that can act."
     }
@@ -175,12 +187,24 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Trente-trois analyses et relances en anglais sur les institutions, l’argumentation et les points de vue en 2016–2017 ; tableau de comparaison et aides sur la lecture, la synthèse et la prise de distance."
+    },
+    {
+      "phase": "revision",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des pages 8–10 du rapport SES, des thèmes et de la répartition exigée entre synthèse, commentaire et échange. Recoupement bibliographique de la liste officielle et distinction des documents de contexte. Concordance des pages portant l’en-tête SES (103–131) et de la feuille EW A/L sur le droit de vote. Contrôle de la signature, du titre, de la date et des organes de presse sur les coupures."
     }
   ],
   "couverture": {
     "statut": "partiel",
-    "perimetre": "Trente-trois notices sont traitées dans l’ordre des pages 10 et 11 du cahier SES, dont un intitulé identique attribué à deux périodiques. Les textes oraux ont été rédigés en anglais. Aucune coupe de 700 à 900 mots ni le passage de lecture choisi le jour de l’épreuve ne figurent dans le fascicule.",
-    "limites": "Coupes et passages de lecture des 33 notices inconnus. Attribution double du titre Common Sense About Immigration, non résolue. Plusieurs articles sont identifiés par le jury seul ; les éditions et pièces de contexte retrouvées sont étiquetées billet par billet.",
-    "billets_recenses": 33
+    "perimetre": "Trente-trois notices sont recensées dans la liste SES. Les pages 103–131 du cahier hors programme fournissent vingt-neuf coupures SES : vingt-six concordances certaines, une coupure liée aux deux notices contradictoires sur l’immigration et deux billets supplémentaires. Les trente-cinq entrées sont commentées en anglais. Cinq titres de la liste restent sans coupure SES.",
+    "limites": "Sans coupure SES : les notices 11, 14, 15, 18 et 23. Une feuille sur les restrictions électorales porte un en-tête A/L et ne garantit pas la coupe SES. La p. 123 attribue Common Sense About Immigration à Gilbert T. Sewall dans The American Spectator ; la liste donne deux autres publications, et aucun second feuillet de ce titre n’a été retrouvé.",
+    "billets_recenses": 35
   }
 }

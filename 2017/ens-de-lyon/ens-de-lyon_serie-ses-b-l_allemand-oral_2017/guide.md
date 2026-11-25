@@ -4,9 +4,13 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-Trois billets sont identifiés dans le cahier SES. Le rapport confirme les trois thèmes et demande une introduction, une courte lecture à voix haute, un commentaire en allemand (vingt minutes au plus) et un entretien d’environ dix minutes. Les limites des trois articles distribués ne sont pas publiées. Les lectures proposées s’appuient sur les intitulés, le rapport et les sources complémentaires indiquées.
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+Les trois billets SES sont reproduits aux pages 44 à 46 du cahier complémentaire commun aux séries. Le rapport demande une introduction, une brève lecture à voix haute, un commentaire en allemand (vingt minutes au plus) puis environ dix minutes d’entretien. L’ordre ci-dessous suit la liste SES.
 
 ## Die Abschiebe-Lotterie — Der Spiegel, Heft 10/2017, S. 28–31
+
+Der Ausschnitt beginnt mit dem Treffen im Kanzleramt. Thüringens Ministerpräsident lässt eine Protestnote vermerken; Schleswig-Holsteins Regierungschef trägt den Beschluss zunächst mit und kündigt anschließend einen Abschiebestopp nach Afghanistan an. Die Recherche kontrastiert diese Entscheidungen mit der bayerischen Praxis und mit einer internen Lagebewertung des Auswärtigen Amtes. Für die kurze Lesung eignen sich die zwei Fragen zur Rückführung in ein instabiles Land und zur Integration in Deutschland: Es sind zwei verschiedene Kriterien. Die Kürzungszeichen auf der Seite sind Teil des Prüfungsblattes. [Fascicule des extraits, p. 45](https://www.ens-lyon.fr/sites/default/files/2017-11/allemand-hors-programme2017_1506588599098.pdf#page=45)
 
 > [!INDICATION]
 > « 10/2017 » est un numéro d’hebdomadaire. Repérer dans le document remis un passage où une décision administrative est rapprochée d’un destin individuel. Marquer l’accent tonique de *Abschiebung*, puis donner à l’image de la loterie sa portée critique.
@@ -21,6 +25,8 @@ Das föderale Problem entsteht dort, wo Bundesrecht in unterschiedlichen Verwalt
 
 ## Das schärfste Schwert wird nicht gezückt — Handelsblatt, 17. Januar 2017
 
+Der Handelsblatt-Kommentar setzt bei der Niederlage der antragstellenden Länder an, referiert dann das Karlsruher Urteil und führt aktuelle Mandats- und Mitgliederzahlen an. Aus dem Niedergang einer Partei folgt für die Verfasserin jedoch kein Verschwinden radikaler Einstellungen. Zum Vorlesen bietet sich der Übergang von den verfassungsfeindlichen Zielen zur Frage nach dem politischen Gewicht an. Dort lässt sich hörbar zwischen dem gerichtlichen Urteil und dem anschließenden Urteil der Kommentatorin unterscheiden. [Fascicule des extraits, p. 46](https://www.ens-lyon.fr/sites/default/files/2017-11/allemand-hors-programme2017_1506588599098.pdf#page=46)
+
 „Schwert“ bezeichnet hier das Verbot einer politischen Partei durch das Bundesverfassungsgericht. In der Überschrift ist das Instrument vorhanden, bleibt aber in der Scheide. Darin steckt die juristische Frage des Tages. Karlsruhe stellt fest, dass die NPD die freiheitliche demokratische Grundordnung beseitigen will. Für ein Verbot fehlten aber konkrete Anhaltspunkte von Gewicht dafür, dass ihr Handeln zum Erfolg führen könnte. Die Entscheidung lautet also weder, die Partei sei demokratisch, noch, das Gericht habe überhaupt keine Handhabe gegen verfassungsfeindliche Parteien. Die Prüfung unterscheidet die Ziele der Partei von den tatsächlichen Möglichkeiten, sie durchzusetzen. Für den mündlichen Vortrag ist diese Unterscheidung anschaulicher als eine bloße Aufzählung rechtsextremer Gruppierungen. [Urteil vom 17. Januar 2017, 2 BvB 1/13](https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2017/01/bs20170117_2bvb000113.html)
 
 Historisch erklärt die Erfahrung mit der Zerstörung der Weimarer Demokratie, weshalb das Grundgesetz Instrumente der wehrhaften Demokratie kennt. Dass das Verbot nur unter strengen Voraussetzungen greift, schützt zugleich den offenen Wettbewerb vor der Regierung des Tages. Ein historischer Vergleich sollte seinen Gegenstand nennen: Die KPD wurde 1956 verboten. Daraus folgt keine Automatik für ein anderes Verfahren sechzig Jahre später. Politischer Widerspruch, Strafverfolgung einzelner Taten und ein Verbot der gesamten Organisation sind verschiedene Antworten mit unterschiedlichen Voraussetzungen.
@@ -28,6 +34,8 @@ Historisch erklärt die Erfahrung mit der Zerstörung der Weimarer Demokratie, w
 **Nachfrage. Warum reicht die Verfassungsfeindlichkeit nach diesem Urteil nicht aus?** Das Verbot beendet die Teilnahme einer Partei am Wettbewerb. Das Gericht verlangt deshalb neben den Zielen und einer aktiven Ausrichtung auf deren Durchsetzung konkrete Anhaltspunkte für deren möglichen Erfolg. Im Fall der NPD verneinte es diesen letzten Punkt.
 
 ## Mit Bundespräsident Gauck tritt der Mutmacher der Nation ab — Augsburger Allgemeine, 18. März 2017
+
+Martin Ferber eröffnet mit dem Zapfenstreich im Park von Schloss Bellevue. Die gewählten Musikstücke stellen Freiheit, Religion und eine biografische Verbindung zur DDR nebeneinander. Danach erläutert der Rückblick anhand von Gaucks öffentlichen Stellungnahmen, wie sich ein überparteiliches Staatsoberhaupt in Kontroversen einmischen kann. Zum Vorlesen eignet sich die Passage über die Sicherheitspolitik und Gaucks entschiedenes Auftreten gegen Rechtsradikale. Am Schluss bleibt die Zuversicht über Deutschlands Zukunft neben seiner Sorge bestehen. [Fascicule des extraits, p. 44](https://www.ens-lyon.fr/sites/default/files/2017-11/allemand-hors-programme2017_1506588599098.pdf#page=44)
 
 > [!INDICATION]
 > Préparer la lecture avec le contraste entre *Bundespräsident* et *Mutmacher*. Dans le commentaire, rattacher chaque donnée biographique à la question du pouvoir de parole. La source de comparaison en lien est un discours de Gauck postérieur de quelques jours à l’article.
