@@ -1,0 +1,36 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques-1_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques 1",
+    "annee": 2018
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2018_SE_2C_Maths_Maths1.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "3ef940527b21808c435e2de2d1c7db7d15e06e958b29c8044aa4749e5d2b73f1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/carres-du-cercle.svg",
+      "question": "II.1",
+      "legende": "Les carrés unitaires centrés aux points comptés couvrent le disque intérieur et restent dans le disque extérieur. Leur aire totale compte les points."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions, avec contrôle du cahier 2C8121. Produits et série zêta, estimation du disque, inversion de Möbius, sommation de Poisson et critère de modularité avec exemple du réseau de dimension huit. Illustration géométrique du comptage.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
