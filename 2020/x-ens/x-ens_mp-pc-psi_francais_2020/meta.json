@@ -1,0 +1,70 @@
+{
+  "slug": "x-ens_mp-pc-psi_francais_2020",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Français",
+    "annee": 2020,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Philippe Breton et la distribution démocratique de la parole",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MPPC_sujet_Fr.pdf",
+    "sha256_sujet": "ec14b9e7ab174eb273f4608827141a803fb9232ee3ae172e776f236970ff5027",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/01/20_MP_PC_rap_eFr.pdf",
+    "sha256_rapport_jury": "b8c7f4f03fb4395ef2b664dfb99a34f58a8cddd92b07aea3981726203f1934b2",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2020/",
+    "code_garde": "XEULCR",
+    "oeuvres_au_programme": [
+      "Aristophane, Les Cavaliers et L’Assemblée des femmes",
+      "Alexis de Tocqueville, De la démocratie en Amérique, deuxième tome, quatrième partie",
+      "Philip Roth, Le Complot contre l’Amérique"
+    ],
+    "portee_rapport": "La garde commune XEULCR porte les filières MP, PC et PSI et le calendrier initial du lundi 20 avril 2020. La citation et le corpus figurent p. 3. Le rapport de sept pages s’intitule MP et PC. Il souligne l’articulation entre accès concret à la parole, apprentissage de sa prise et écoute de l’autre, et discute les limites de l’interprétation progressiste de la comédie d’Aristophane.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/11/2020_MPPC_sujet_Fr.pdf",
+        "sha256": "ec14b9e7ab174eb273f4608827141a803fb9232ee3ae172e776f236970ff5027",
+        "pages": 3
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/01/20_MP_PC_rap_eFr.pdf",
+        "sha256": "b8c7f4f03fb4395ef2b664dfb99a34f58a8cddd92b07aea3981726203f1934b2",
+        "pages": 7
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/du-microphone-au-vote.svg",
+      "question": "Dissertation",
+      "legende": "La parole comporte trois seuils politiques. Chacun peut fonctionner alors que le suivant est fermé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation sur Philippe Breton, délibération publique et écoute. Analyse de l’assemblée et du concours des flatteurs chez Aristophane, de la centralisation et des libertés intermédiaires chez Tocqueville, de la radio et des débats domestiques chez Roth. Guide, comparaison de scènes et schéma."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}
