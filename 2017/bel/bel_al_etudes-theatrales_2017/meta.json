@@ -1,0 +1,77 @@
+{
+  "slug": "bel_al_etudes-theatrales_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Études théâtrales",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Études théâtrales",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-en-arts_1506586794135_0.pdf#page=3",
+    "sujet_sha256": "8fa2ab57573904dadbdc2026c736ff58ba60169e4660c96e6591c867542cfef7",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/Etudes%20th%C3%A9%C3%A2trales_2017.pdf#page=1",
+    "rapport_sha256": "04f41d5408288d23437dcc737e7ba9a8ebed09d2be1e3990924ce197dd8edb51",
+    "references": [
+      "https://journals.openedition.org/imagesrevues/125",
+      "https://cricoteka.pl/wp-content/uploads/2021/01/Kantor_Widma_katalog.pdf",
+      "https://pur-editions.fr/product/3100/l-objet-pauvre"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/chaise.svg",
+      "question": "Dissertation",
+      "legende": "Une chaise et trois moments de l’attention au plateau"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du paradoxe de l’objet présent et agissant, de la différence entre texte et plateau et de la nécessité d’une histoire matérielle de l’objet."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la composition, du guide et du schéma pour le sujet de six heures."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation de la citation abrégée et de son contexte chez Mattéoli, des conditions du Retour d’Ulysse et de la distinction entre expérience de plateau inventée et production documentée. Vérification des deux éditions et du schéma."
+    }
+  ]
+}
