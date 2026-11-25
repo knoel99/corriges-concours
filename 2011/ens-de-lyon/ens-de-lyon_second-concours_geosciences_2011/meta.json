@@ -1,0 +1,69 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2011",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2011
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2011/sujet_ecrit_2c2011_geosciences.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2011/rapports_geoscience_2clyon_2011.pdf",
+    "sujet_sha256": "a44665bb106c83ce4ebe98a7072199b69f5b1c5016ccb030e9ebf68935710370",
+    "rapport_sha256": "7b527847014f9e0ffc698a3149d59b4e43b0a81b85e630789d437f77eafbaa68"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les deux parties A et B sont traitées. Les sous-titres décomposent les deux consignes du sujet. La synthèse s’appuie sur les documents 2 à 7, avec les trois coupes interprétatives demandées. Le rapport joint contient un volet écrit et un volet oral, seul le volet écrit sert ici de référence."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "A",
+      "fichier": "figures/colonnes-isostatiques.svg",
+      "legende": "Trois colonnes de même masse par unité de surface jusqu’au niveau de compensation. Les altitudes représentées sont celles du modèle avec charge d’eau."
+    },
+    {
+      "question": "B",
+      "fichier": "figures/coupe-puy-de-dome-limagne.svg",
+      "legende": "Coupe interprétative du document 3, du puy de Dôme à la Limagne par le plateau à l’ouest de Clermont. Le rejet et la profondeur du bassin sont schématiques."
+    },
+    {
+      "question": "B",
+      "fichier": "figures/coupe-synclinal-perche.svg",
+      "legende": "Coupe interprétative du document 7, transversale à la structure de l’Alpe en direction du Grésivaudan. L’axe du synclinal reste en hauteur après l’érosion des structures adjacentes. Les couleurs distinguent des horizons successifs."
+    },
+    {
+      "question": "B",
+      "fichier": "figures/coupe-cuesta-saint-mihiel.svg",
+      "legende": "Coupe interprétative du document 6. Le revers suit le pendage vers l’ouest. Le front recoupe les couches au-dessus des terrains plus tendres de la dépression orientale."
+    },
+    {
+      "question": "B",
+      "fichier": "figures/vallees-u-et-v.svg",
+      "legende": "Sections transversales idéalisées des vallées du document 4. La largeur d’action de la glace contribue à l’auge, alors que l’incision d’un chenal se concentre dans le fond."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions des deux parties de l’écrit de géosciences 2011 sur les reliefs, à partir des sept documents et du rapport écrit. Calculs d’isostasie avec et sans charge d’eau, synthèse des processus, trois coupes originales des cartes et deux autres figures."
+    }
+  ]
+}
