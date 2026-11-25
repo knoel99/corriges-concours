@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_maths-b_2013",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Maths B",
+    "annee": 2013
+  },
+  "questions": 35,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mp_math_b_x.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/07/13_mpi_rap_emathb.pdf",
+    "sha256_sujet": "9d0d6d705ad84fd2a8dba620d7958035ae82158c58b9e11ef51b6325be4001f6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/tentes-dyadiques.svg",
+      "question": "5.b",
+      "legende": "Une tente atteint 1 au milieu de son intervalle et s’annule aux autres nœuds de la grille immédiatement plus fine."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les réponses à partir des cinq pages du sujet et des huit pages du rapport. Contrôle de la norme de l’interpolant, des exposants, des constantes et des franchissements dyadiques. Traitement explicite de l’indice hors domaine en 1 à partir de Q13. Figure des tentes aux deux premiers niveaux.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
