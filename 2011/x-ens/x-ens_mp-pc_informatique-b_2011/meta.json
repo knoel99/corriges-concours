@@ -1,0 +1,45 @@
+{
+  "slug": "x-ens_mp-pc_informatique-b_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique B",
+    "annee": 2011,
+    "duree_heures": 2
+  },
+  "questions": 15,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2011/info_b_mppc2011.pdf",
+    "sujet_sha256": "4ad814c56154a87377c5e9c5507e6449e0198cbd44b73ede364205fea1439feb",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2011/rap_ecrit_info_b_xc_pc2011.pdf",
+    "rapport_sha256": "74c71b35341e3135f28d960805de6e90a013e30303d16a81f80b715661a2ae7b",
+    "rapport_mp": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_info_b_xc_mp2011.pdf",
+    "rapport_mp_sha256": "4f679cf16cf3c663637e399858a62c255efd6034b2bb0d33b826daa79a9c2d8c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q12-cycles.svg",
+      "question": "Q12",
+      "legende": "Le cycle de gauche revient après deux pas, celui de droite après trois. Leur premier retour simultané survient après six pas."
+    },
+    {
+      "fichier": "figures/q11-rotation.svg",
+      "question": "Q11",
+      "legende": "Sur le cycle (1,2,3,4,5), élever à la puissance 7 revient à avancer de deux places. Les flèches donnent les images par cette puissance."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des quinze questions à partir du sujet original de quatre pages de la banque MP et des deux rapports de 2011. La banque PC référence par erreur comme sujet le rapport 2014. Vérification des deux éditions sur les 5 913 permutations de tailles 1 à 7, des itérées, ordres, orbites et deux propriétés de reconnaissance. Deux schémas originaux."
+    }
+  ]
+}
