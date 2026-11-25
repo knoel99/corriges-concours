@@ -619,6 +619,7 @@
 | 2026 | ENS Rennes | D-E | Espagnol | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Espagnol (oral) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_espagnol-oral_2026/guide.md) |
 | 2026 | ENS Rennes | D-E | Italien | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_italien_2026/guide.md) |
+| 1998 | ENS | Groupes C/S, M et I | Informatique | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/brut.md) | [md](1998/ens/ens_groupes-c-s-m-et-i_informatique_1998/guide.md) |
 | 2026 | ENS | BCPST | Allemand | [md](2026/ens/ens_bcpst_allemand_2026/brut.md) | [md](2026/ens/ens_bcpst_allemand_2026/guide.md) |
 | 2026 | ENS | BCPST | Anglais | [md](2026/ens/ens_bcpst_anglais_2026/brut.md) | [md](2026/ens/ens_bcpst_anglais_2026/guide.md) |
 | 2026 | ENS | BCPST | Biologie | [md](2026/ens/ens_bcpst_biologie_2026/brut.md) | [md](2026/ens/ens_bcpst_biologie_2026/guide.md) |
