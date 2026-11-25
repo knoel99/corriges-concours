@@ -1,0 +1,66 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "L’exercice du pouvoir réglementaire en France",
+  "sources": {
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapports-2007-concours-d1_1423059785836-pdf#page=4",
+    "rapport_sha256": "821ca153fcfca00d84ba26bbec1e1db0aac39d16388eaf65f68646767452c1b2",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=10",
+    "sujet_sha256": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Constitution du 4 octobre 1958 en 2007": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000571356/2007-04-01/",
+      "Conseil d’État, Jamart, 7 février 1936": "https://www.conseil-etat.fr/site/decisions-de-justice/jurisprudence/les-grandes-decisions-depuis-1873/conseil-d-etat-7-fevrier-1936-jamart",
+      "Conseil d’État, Meyet, 10 septembre 1992": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/1992-09-10/140376"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I.B",
+      "fichier": "figures/titres-de-competence.svg",
+      "legende": "Identifier la règle à édicter permet de remonter à l’auteur compétent et à la limite de son pouvoir."
+    }
+  ],
+  "redaction": "Éditions complètes de droit public sur le partage constitutionnel, les titulaires spécialisés, la mise en œuvre de la loi, la hiérarchie normative et le contrôle juridictionnel au printemps 2007.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport de droit public 2007, pages 4 et 5. Le jury attend une réponse aux questions de la titularité et des modalités d’exercice, notamment pour les autorités locales et les personnes privées."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Éditions complètes de droit public sur le partage constitutionnel, les titulaires spécialisés, la mise en œuvre de la loi, la hiérarchie normative et le contrôle juridictionnel au printemps 2007."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
