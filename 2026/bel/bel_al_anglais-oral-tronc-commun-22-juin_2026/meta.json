@@ -1,0 +1,81 @@
+{
+  "slug": "bel_al_anglais-oral-tronc-commun-22-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (oral tronc commun 22 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_anglais_tronc_commun_2_22juin_al.pdf",
+    "sujet_sha256": "4812acd11f3c553638ac39dfd537c1a9fd20cca4f534eefb2c301ee6685e8888",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_anglais_tc.pdf",
+    "rapport_sha256": "68c198f2905ae8891899e4364652b38aed0092fce531f2750e027d5a8b78adc2",
+    "documents": {
+      "auden": "https://www.stabroeknews.com/2022/03/13/sunday/arts-on-sunday/poetry-and-war/",
+      "boland": "https://www.brinkerhoffpoetry.org/poems/that-the-science-of-cartography-is-limited",
+      "mahon": "https://www.poetryfoundation.org/poems/92153/afterlives",
+      "lowell": "https://www.poetryfoundation.org/poems/47693/epilogue-56d22853c55c0",
+      "poe": "https://www.eapoe.org/works/tales/pymb10.htm",
+      "lessing": "https://mercyhighschool.ecampus.com/grass-singing-reprint-lessing-doris-may/bk/9780060953461"
+    },
+    "precision": "La feuille officielle donne douze références. Quatre poèmes nommément identifiés sont analysés dans leur texte publié. Le jury décrit aussi la scène du brick qui passe devant les naufragés chez Poe (chapitre X) et le début du roman de Doris Lessing. Les deux romans sont traités sur ces passages repérables, dont les bornes du concours restent inconnues. Les six autres extraits ne sont pas identifiés. La fiche est partielle."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "3 — Auden",
+      "8 — Boland",
+      "10 — Mahon",
+      "11 — Lowell"
+    ],
+    "questions_partiellement_traitees": [
+      "1 — Poe, chapitre X",
+      "4 — Lessing, ouverture du roman"
+    ],
+    "questions_non_traitees": [
+      "2 — Sterne",
+      "5 — Forster",
+      "6 — Emerson",
+      "7 — Wilde",
+      "9 — Webster",
+      "12 — Kerouac"
+    ],
+    "motif": "La feuille officielle donne douze références. Quatre poèmes nommément identifiés sont analysés dans leur texte publié. Le jury décrit aussi la scène du brick qui passe devant les naufragés chez Poe (chapitre X) et le début du roman de Doris Lessing. Les deux romans sont traités sur ces passages repérables, dont les bornes du concours restent inconnues. Les six autres extraits ne sont pas identifiés. La fiche est partielle."
+  },
+  "figures": [
+    {
+      "fichier": "figures/regard.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "Who gets to see what?"
+    },
+    {
+      "fichier": "figures/preuve.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "How does evidence change meaning?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions, de quatre explications de poèmes et de deux analyses des scènes de roman identifiables, avec lecture, pistes d’entretien et deux figures. Lecture de la feuille officielle et du rapport, notamment pp. 5 et 9–10. La feuille officielle donne douze références. Quatre poèmes nommément identifiés sont analysés dans leur texte publié. Le jury décrit aussi la scène du brick qui passe devant les naufragés chez Poe (chapitre X) et le début du roman de Doris Lessing. Les deux romans sont traités sur ces passages repérables, dont les bornes du concours restent inconnues. Les six autres extraits ne sont pas identifiés. La fiche est partielle."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
