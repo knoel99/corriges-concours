@@ -1,0 +1,49 @@
+{
+  "slug": "ens-rennes_d-e_mathematiques-appliquees_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2024
+  },
+  "questions": 62,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-epr-a-options-droit-com-droit-public-maths-d-e-2024_1729180742250-pdf#page=8",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-math-d-e-2024_1729180817340-pdf",
+    "sha256_sujet": "611347788e61c3692f52b8e8da7e8a79af6c4ef9300bed9777c833cf6fb2f84b",
+    "sha256_apercu_sujet": "495f4a777b2fdaa40d66684ab2f96d0a98cd519a81704dfd24d73d9321f5f7b8",
+    "sha256_rapport_jury": "b803e7a6a682bf496071d5c48a4a093b37ddb9f384dc38f189f18275b73ec896",
+    "sha256_apercu_rapport_jury": "df31b70801df911e779bf30d7de5c3f7062edc32578cb668583df4643375a54f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/histogramme-du-festival.svg",
+      "question": "1.1.b",
+      "legende": "Les classes d’âge ont la même largeur de dix ans. La troisième contient le plus grand effectif du festival."
+    },
+    {
+      "fichier": "figures/tarifs-et-ajustement.svg",
+      "question": "1.2.a",
+      "legende": "Les seize observations semestrielles sont placées aux rangs espacés de 0,5. La droite est calculée à la question 1.2.d."
+    },
+    {
+      "fichier": "figures/puissances-du-produit.svg",
+      "question": "2.II.9",
+      "legende": "Les courbes des trois premières puissances passent par les deux points communs. Leur limite en zéro est nulle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction sur les pages physiques 8 à 14 du fascicule, table normale et rapport officiel inclus. Contrôle des pourcentages de bénévoles, des seize tarifs, des deux ajustements, des minima selon la parité, des bornes des intégrales et du mélange géométrique. Histogramme, nuage avec droite et graphique des trois fonctions.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
