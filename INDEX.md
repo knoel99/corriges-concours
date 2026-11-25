@@ -731,6 +731,7 @@
 | 2015 | ENS | PC | Chimie B | [md](2015/ens/ens_pc_chimie-b_2015/brut.md) | [md](2015/ens/ens_pc_chimie-b_2015/guide.md) |
 | 2016 | ENS | PC | Chimie B | [md](2016/ens/ens_pc_chimie-b_2016/brut.md) | [md](2016/ens/ens_pc_chimie-b_2016/guide.md) |
 | 2017 | ENS | PC | Chimie B | [md](2017/ens/ens_pc_chimie-b_2017/brut.md) | [md](2017/ens/ens_pc_chimie-b_2017/guide.md) |
+| 2018 | ENS | PC | Chimie B | [md](2018/ens/ens_pc_chimie-b_2018/brut.md) | [md](2018/ens/ens_pc_chimie-b_2018/guide.md) |
 | 2019 | ENS | PC | Chimie B | [md](2019/ens/ens_pc_chimie-b_2019/brut.md) | [md](2019/ens/ens_pc_chimie-b_2019/guide.md) |
 | 2020 | ENS | PC | Chimie B | [md](2020/ens/ens_pc_chimie-b_2020/brut.md) | [md](2020/ens/ens_pc_chimie-b_2020/guide.md) |
 | 2021 | ENS | PC | Chimie B | [md](2021/ens/ens_pc_chimie-b_2021/brut.md) | [md](2021/ens/ens_pc_chimie-b_2021/guide.md) |
