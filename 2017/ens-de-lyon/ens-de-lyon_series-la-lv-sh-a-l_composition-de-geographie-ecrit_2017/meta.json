@@ -1,0 +1,54 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-de-geographie-ecrit_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition de géographie (écrit)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-composition-de-geographie-lyon_1506586291986_0.pdf",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/GEO_TC_SPE_2017.pdf#page=1",
+    "sha256_sujet": "41891a86076a04ef2c2834acfa6aa3b90f3d7b29209db58fec55e544c9a0b345",
+    "sha256_rapport_jury": "9f63f44f0c1639898ed1c5ceaac9203e41134e45d7d7b28f1bd8bbb343e83e89",
+    "pieces_complementaires": [
+      {
+        "role": "Fond Natural Earth, 1 : 110 millions",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+        "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f"
+      },
+      {
+        "role": "Fond Natural Earth, 1 : 50 millions",
+        "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+        "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/migrations-et-droits.svg",
+      "question": "Composition",
+      "legende": "Situations de migration de travail, de retraite et de protection étudiées dans la composition."
+    },
+    {
+      "fichier": "figures/accueil-regional-syrie.svg",
+      "question": "Composition",
+      "legende": "La Syrie, trois pays voisins et les sites d’accueil jordaniens de Mafraq, Amman et Zaatari."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de l’énoncé et du planisphère de l’épreuve commune L 764, du rapport de géographie (page 1 au début de la page 4) et de données disponibles à la session. Composition intégrale, version guidée rédigée, planisphère d’exemples et croquis régional à deux échelles.",
+      "fournisseur": "codex",
+      "agent": "astra_maths_suite"
+    }
+  ]
+}
