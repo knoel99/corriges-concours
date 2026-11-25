@@ -1,0 +1,214 @@
+{
+  "slug": "ens_pc_physique-chimie_2015",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2015
+  },
+  "questions": 76,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/05/15_pc_sujet_phychi_l_web.pdf",
+    "rapport": null,
+    "precision_rapport": "Aucun rapport propre à cette épreuve écrite identifié dans les catalogues officiels consultés.",
+    "sujet_sha256": "d15232eac6df3f88097c62f56a06043fb5609c40eefca03adbfb4a1d5835098f"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "P31",
+      "P32",
+      "P33",
+      "P34",
+      "P35"
+    ],
+    "questions_partiellement_traitees": [
+      "C17"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Les 35 questions de physique et 40 questions de chimie sont traitées intégralement. C17 décrit la coupure de l’alcène en diacide. Ses conditions opératoires ne sont pas détaillées."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "C4",
+      "fichier": "figures/fenchone-et-enantiomere.svg",
+      "legende": "Les centres verts sont C1 et C4, les deux têtes de pont. Les liaisons en coin distinguent les images dans le miroir."
+    },
+    {
+      "question": "C7",
+      "fichier": "figures/hydrodistillation.svg",
+      "legende": "La vapeur mixte va du ballon vers le réfrigérant et le distillat rejoint un récepteur ouvert. Les deux raccords d’eau appartiennent à la gaine du réfrigérant."
+    },
+    {
+      "question": "C8",
+      "fichier": "figures/eau-fenchone.svg",
+      "legende": "Les deux branches se rejoignent à 96 °C pour une vapeur de fraction massique en eau 0,35. Les seules valeurs quantitatives imposées sont les extrémités et le point hétéroazéotropique."
+    },
+    {
+      "question": "C9",
+      "fichier": "figures/chromatographie-polaire.svg",
+      "legende": "Les hauteurs sont rapportées à la distance du front. Seules les deux taches majoritaires dont la position est donnée sont représentées."
+    },
+    {
+      "question": "C13",
+      "fichier": "figures/aldol-et-mma.svg",
+      "legende": "L’adduit aldolique perd de l’eau, l’aldéhyde devient un acide carboxylique et son ester est le MMA."
+    },
+    {
+      "question": "C17",
+      "fichier": "figures/cycle-et-diacide.svg",
+      "legende": "Le motif alcène de 1 a disparu. Chacun de ses deux carbones se retrouve à une extrémité carboxylique du composé 2."
+    },
+    {
+      "question": "C23",
+      "fichier": "figures/regioisomeres-dieckmann.svg",
+      "legende": "Les β-cétoesters portent l’ester α sur deux sites différents du cyclopentanone. Le petit méthyle et le méthoxycarbonyle coexistent sur un même carbone du cycle."
+    },
+    {
+      "question": "C27",
+      "fichier": "figures/de-la-cetone-au-beta-hydroxyester.svg",
+      "legende": "La cétone de 9 reçoit le fragment à deux carbones. Le carbone anciennement carbonylé de 10 porte l’alcool et le nouveau substituant."
+    },
+    {
+      "question": "C28",
+      "fichier": "figures/trois-alcenes.svg",
+      "legende": "Deux doubles liaisons sont endocycliques. L’alcène exocyclique peut avoir deux géométries, que le tracé de connectivité laisse ouvertes."
+    },
+    {
+      "question": "C34",
+      "fichier": "figures/faces-du-benzaldehyde.svg",
+      "legende": "Les faces ont des ordres circulaires opposés. L’éthyle entrant par la face Si conduit ici au descripteur S, compte tenu des priorités dans le produit."
+    },
+    {
+      "question": "C35",
+      "fichier": "figures/ligand-et-alcool.svg",
+      "legende": "Le ligand porte deux centres de configuration fixée. À droite est représenté l’alcool S issu de l’attaque par la face Si du benzaldéhyde dans le modèle du sujet."
+    },
+    {
+      "question": "C38",
+      "fichier": "figures/etat-de-transition-six-centres.svg",
+      "legende": "Les deux liaisons en pointillé correspondent au transfert de l’éthyle dans le cycle à six centres. La face Si du benzaldéhyde est présentée par le chélate."
+    },
+    {
+      "question": "C39",
+      "fichier": "figures/configuration-aminoalcool-iii.svg",
+      "legende": "La chaîne aminopropyle et OH occupent le carbone anciennement carbonylé. Les centres de la cage de la (l)-fenchone conservent leur géométrie."
+    },
+    {
+      "question": "P4",
+      "fichier": "figures/pudding-et-barriere-centrifuge.svg",
+      "legende": "Le potentiel ordinaire reste fini au centre. La barrière centrifuge des trois potentiels effectifs correspond à un moment cinétique non nul."
+    },
+    {
+      "question": "P13",
+      "fichier": "figures/succession-des-arcs.svg",
+      "legende": "Exemple intégré dans les deux champs continus à la surface. Les arcs intérieurs verts sont centrés en O, les arcs extérieurs rouges ont O pour foyer, notamment après D."
+    },
+    {
+      "question": "P17",
+      "fichier": "figures/train-amorti-et-raie.svg",
+      "legende": "Un train sinusoïdal amorti produit une raie de largeur non nulle. Le nombre de périodes dessinées est réduit pour rendre visible l’enveloppe."
+    },
+    {
+      "question": "P26",
+      "fichier": "figures/niveaux-de-bohr.svg",
+      "legende": "Transitions d’absorption entre les trois premiers niveaux, espacés à l’échelle. La transition entre 2 et 3 correspond à la plus petite différence d’énergie."
+    },
+    {
+      "question": "P30",
+      "fichier": "figures/profil-de-raie-deux-trois.svg",
+      "legende": "Distribution illustrative de la transition 2–3 quand les deux perturbations radiales sont uniformes et indépendantes. La largeur totale et l’asymétrie se lisent sur l’axe horizontal."
+    },
+    {
+      "question": "P35",
+      "fichier": "figures/spectres-qualitatifs.svg",
+      "legende": "Exemples qualitatifs compatibles avec les couleurs. Les amplitudes et les bandes ne constituent pas des mesures spectroscopiques."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir des douze pages du sujet officiel. Fenchone, attribution stéréochimique, polarimétrie, diagramme eau–fenchone, modèle de Thomson et de Bohr, lecture des quatre spectres et dérivation de l’élargissement. Dix-neuf figures originales. Couverture partielle délimitée à C17. Rapport de cet écrit non identifié."
+    }
+  ]
+}
