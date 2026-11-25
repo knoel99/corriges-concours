@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I · Une mesure optique de la photosphère
 
 ### Question 1 — Raie du nickel
