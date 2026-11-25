@@ -1,0 +1,69 @@
+# X-ENS · MP-PC-PSI · Composition française 2015 — corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
+## Sujet et œuvres
+
+Dans *L’Iliade ou le poème de la force* (1940), Simone Weil écrit que « la guerre efface toute idée de but », y compris « la pensée même de mettre fin à la guerre ». Le sujet demande de confronter ce jugement aux *Perses* d’Eschyle, au *Feu* d’Henri Barbusse et à *De la guerre* de Carl von Clausewitz.
+
+## Lire les deux phrases ensemble
+
+Un soldat souhaite rentrer chez lui. A-t-il pour autant pensé comment mettre fin à la guerre ? Cet exemple oblige à distinguer trois actes. On peut désirer un répit individuel, concevoir une situation politique différente et juger la poursuite du combat au regard de cette situation. Le redoublement de la formule de Weil pousse jusqu’au troisième acte. « Même » invite à suivre la gradation jusque dans sa conséquence la plus surprenante.
+
+Écrire au brouillon deux verbes, *obtenir* et *cesser*. Puis leur donner un sujet grammatical. Xerxès cherche à obtenir quelque chose de la Grèce. Poterloo veut retrouver un pays familier. Les hommes de « L’Aube » essaient de savoir ensemble ce qui doit cesser. Cette légère transformation empêche d’attribuer indistinctement le même but à un État, à une armée et à un individu.
+
+![Figure 1 — Trois moments où se mesure l’effacement des fins. La dernière ligne montre ce qu’exige le passage du souhait de paix au jugement sur la poursuite du conflit.](figures/fins-de-la-guerre.svg)
+
+## Mettre les exemples à l’épreuve
+
+| Passage | Détail à faire lire | Question qui en résulte |
+|---|---|---|
+| *Les Perses*, récit du messager | Les paroles des Grecs sur leur terre et leurs proches arrivent aux spectateurs par une voix perse. | La défaite efface-t-elle aussi le sens que les adversaires donnaient à leur action ? |
+| *Le Feu*, retour vers Souchez | Poterloo éprouve le décalage entre la route connue et le paysage présent. | Que devient la raison de défendre un chez-soi quand le cours des événements en altère jusqu’à la reconnaissance ? |
+| *De la guerre*, livre I, premier chapitre | La valeur accordée à la fin politique règle la mesure des sacrifices consentis. | À quelle condition un résultat militaire incomplet peut-il permettre une paix raisonnable ? |
+
+Pour construire la charnière centrale, rapprocher l’appel grec et le silence des absents perses. Ces faits appartiennent au même combat. Leur coexistence oblige à préciser *pour qui* le but s’efface. Une deuxième charnière s’impose aussitôt. Comment une cité peut-elle retrouver la faculté de décider lorsque le soldat et le décideur ne voient pas la même chose ?
+
+## De la preuve à l’écriture
+
+Une première formulation, « Barbusse montre que la guerre est terrible », laisse intact le problème du sujet. Partir plutôt de l’attente de Poterloo. Pour qu’un retour ait un sens, il faut qu’un lieu soit encore reconnaissable. La route défigurée fait ainsi passer un détail sensible à une preuve sur la fragilité des fins.
+
+À la relecture, vérifier aussi le dernier paragraphe consacré à la paix. Écrire seulement que tout le monde la désire laisserait inexpliquée la seconde phrase de Weil. Chercher quel geste rend sa pensée à nouveau possible. Ici, ce sont la mise en commun des expériences dans « L’Aube », l’écoute de l’ennemi au théâtre et la distinction maintenue entre le résultat et son prix dans le traité.
+
+## Dissertation rédigée
+
+À Suse, dans *Les Perses*, on sait pourquoi la jeunesse de l’empire a quitté ses maisons. Un roi a voulu porter plus loin sa puissance. Ce que personne ne sait, au lever du rideau, c’est pourquoi l’attente des vieillards devrait porter un jour ses fruits. Entre le dessein que l’on peut raconter et l’avenir que l’on peut encore imaginer, la guerre a ouvert un vide. Simone Weil va jusqu’à dire que disparaît même la pensée d’en finir. La gradation mérite attention. Avoir un ennemi à vaincre, souhaiter rentrer chez soi, souffrir assez pour réclamer du repos semblent bien des manières de poursuivre un but. Comment ces désirs peuvent-ils subsister si la guerre abolit la faculté de viser une fin ? Il faut distinguer la persistance des intentions et la possibilité de juger, en cours de route, si l’action conduit encore à un avenir désirable. C’est sur cette dernière faculté que pèse la menace la plus grave. Ses conditions de survie éclairent aussi le travail d’Eschyle, de Clausewitz et de Barbusse.
+
+### Un moyen qui continue d’agir après que sa raison s’est tue
+
+La guerre commence par une promesse d’avenir. Il faut que des hommes tirent de ce qui n’existe pas encore une raison de quitter le présent. Le chœur perse énumère les chefs et les peuples partis derrière Xerxès. Cette longue liste atteste en elle-même la puissance de celui qui les a réunis. Pourtant sa fonction change à mesure que l’attente se prolonge. En nommant tant d’absents, les vieillards rendent sensible ce que l’Asie a déjà perdu sans connaître l’issue de l’expédition. Les mêmes noms qui mesuraient une force en viennent à mesurer une inquiétude. Le récit du messager achève cette conversion. Il répond aux questions d’Atossa sur ceux qui reviendront. L’agrandissement espéré du royaume ne fournit plus d’unité à des destins que la reine veut connaître un par un. On comprend alors la précision du verbe « efface ». Les hommes ont bien quitté leur pays pour une raison. Mais cette raison, que le spectateur peut encore énoncer, a cessé de dire aux personnages ce qu’ils doivent attendre de l’heure suivante.
+
+La différence devient plus sensible encore à hauteur de soldat. Dans *Le Feu*, Poterloo retrouve les environs de Souchez, le village auquel il voudrait rapporter ses souvenirs. Il faut déjà faire un effort pour reconnaître la route qui devrait servir de repère. Défendre son pays a pu signifier préserver la possibilité de retrouver un lieu. Or voici que l’activité censée garantir ce retour a rendu son objet presque méconnaissable. Il n’est même plus nécessaire que le soldat oublie ce qu’il aime pour que le but s’efface. Il suffit que le monde auquel ce but donnait accès cesse d’être habitable de la même manière. L’expression de la perte est ici plus forte qu’un procès d’intention intenté à ceux qui ont décidé la guerre.
+
+Le livre I de Clausewitz paraît tenir un autre langage. Il commence pourtant, lui aussi, par une difficulté interne au moyen choisi. Chacun règle son effort sur celui qu’il prête à son adversaire. La conduite que l’on attribue à l’autre finit ainsi par commander la sienne. Une action conçue pour obtenir un changement politique peut se poursuivre sous l’effet de la seule crainte de céder le premier. Le soldat de Barbusse qui attend dans la boue et le décideur qui réagit à un adversaire ne subissent certes pas la même nécessité. Tous deux éprouvent cependant un présent qui prescrit la prochaine action avant qu’ils aient pu lui comparer un futur. La répétition s’installe avec d’autant plus de facilité que l’ennemi conserve le même nom. On peut encore dire contre qui l’on se bat au moment même où l’on aurait le plus grand mal à dire pour quoi.
+
+### Le but change de sens selon celui qui parle
+
+Il serait pourtant étrange de tirer de cette expérience que tout but s’abolit également chez tous. La bataille de Salamine donne à entendre, par la voix du messager perse, l’appel des Grecs à défendre leur terre, leurs enfants, leurs sanctuaires et leurs morts. La liste est décisive. La liberté à venir prend un contenu dans des relations déjà présentes que les combattants veulent pouvoir transmettre. Le but reste extérieur à l’acte de combattre et indique à quoi l’on pourrait reconnaître son achèvement. Que ces mots soient rapportés du côté des vaincus donne à l’objection toute sa force. La même heure a rendu un projet incompréhensible aux uns et rendu une obligation plus pressante aux autres. Une théorie de l’effacement qui porterait sur la guerre en tout lieu et en tout instant manquerait cette simultanéité.
+
+Clausewitz permet de préciser la portée de l’objection. Il distingue le résultat militaire poursuivi et la fin politique à laquelle ce résultat doit servir. Cette différence se vérifie particulièrement bien lorsque le prix de l’effort augmente. Si ce que l’on peut obtenir vaut désormais moins, pour la communauté, que ce qu’il en coûterait de poursuivre, une paix sans victoire complète devient intelligible. Le calcul suppose une faculté exactement inverse de celle que Weil décrit en train de s’éteindre. Il faut pouvoir réviser le but immédiat en fonction d’une fin qui garde une valeur indépendante. Les interruptions, les hésitations, la résistance des circonstances dans la guerre réelle ménagent à cette révision une possibilité que l’enchaînement abstrait des réactions réciproques semblerait exclure.
+
+Cette possibilité n’est cependant donnée à personne une fois pour toutes. Dire au fantassin de Barbusse qu’un gouvernement conserve des buts répondrait mal à son expérience. Dire au responsable politique que le soldat souhaite la fin des épreuves ne suffirait pas davantage à lui faire choisir des conditions de paix. La double proposition de Weil fait apparaître la distance entre le désir qu’une souffrance cesse et la pensée d’une action commune pour en sortir. On peut vouloir ardemment le premier repos venu et considérer qu’à son réveil tout devra recommencer. À l’inverse, il peut exister sur le papier une fin politique que ceux qui supportent le coût du conflit n’ont aucun moyen de reconnaître. Comment rétablir entre eux la possibilité d’un jugement ?
+
+### Rendre imaginable un autre terme
+
+La fin du *Feu* offre un moment d’autant plus précieux qu’il ne prend pas la forme d’une illumination solitaire. Dans « L’Aube », les hommes tentent de comprendre ensemble ce qui leur arrive. Les prises de parole sont hésitantes, les propositions inégalement assurées. On pourrait y voir un affaiblissement du discours que le roman voulait faire entendre. C’est au contraire ce qui distingue leur échange d’un ordre nouveau qu’ils recevraient tout fait. Ils se répondent, reprennent un mot, étendent à des hommes du camp adverse une expérience que chacun croyait ne pouvoir rapporter qu’à ses camarades. Ce changement de sujet importe autant que la découverte d’une réponse. Ceux qui étaient presque exclusivement les objets d’une décision redeviennent capables d’examiner à quelle vie une décision devrait conduire. Le titre du chapitre désigne le commencement de ce travail. Le jour levé ne conclut aucun traité.
+
+Eschyle ouvre un autre lieu pour ce jugement. Le retour de Xerxès et ses lamentations avec le chœur ne défont aucun des deuils annoncés. Sur la scène athénienne pourtant, les spectateurs dont la cité a gagné doivent écouter la victoire se raconter comme une perte. À l’appel grec de Salamine succède la voix des familles perses. Les deux paroles deviennent audibles au même public. Dès lors, le critère de la victoire rencontre sa limite. Qu’elle ait été nécessaire à une cité ne dispense plus de demander ce qu’elle coûte aux hommes. La tragédie rend possible une retenue du jugement au cœur même d’une fête civique qui aurait pu se suffire de la gloire.
+
+C’est aussi dans cet intervalle que le traité théorique trouve son utilité. La distinction entre ce que l’on veut obtenir politiquement et le résultat militaire ne met personne à l’abri de l’entraînement décrit par Weil. Elle donne en revanche les mots pour désigner le moment où le moyen s’est mis à décider de la fin. Le roman éprouve cette dépossession au ras des vies particulières, la tragédie oblige des vainqueurs à la reconnaître chez l’adversaire, le traité en fournit le critère. Aucun des trois gestes ne promet que la prochaine guerre s’arrêtera d’elle-même.
+
+La guerre peut donc préserver mille objectifs précis tout en effaçant la pensée la plus nécessaire, celle du monde auquel ils devraient servir. Le propos de Weil atteint juste dès qu’il décrit cette séparation, qui laisse les hommes capables de continuer et toujours moins capables de choisir. Il cesse d’être une fatalité là où quelqu’un peut encore faire entendre une autre expérience, comparer le prix actuel à la fin première et demander devant d’autres hommes s’il faut poursuivre. Penser la fin de la guerre commence avec la possibilité de faire de cette question une véritable décision.
+
+## Sources
+
+Le cahier XEULCR porte les trois filières et les trois œuvres. Les pages 6 à 15 du rapport examinent les fins politiques et l’expérience de l’effacement. La version ENS-PSL du rapport a la même empreinte que celle de la banque. La dissertation ci-dessus propose son propre enchaînement.
+
+[Sujet](https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_francais_xeulcr.pdf) · [Rapport](https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_mp_pc_rap_efr.pdf) · [Autre publication du sujet](https://www.ens.psl.eu/IMG/file/concours/2015/PC/sujets/sujet_mppc_fr2015.pdf) · [Autre publication du rapport](https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_pc_rap_efr.pdf)

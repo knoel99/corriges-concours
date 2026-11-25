@@ -1,0 +1,82 @@
+{
+  "slug": "x-ens_mp-pc-psi_composition-francaise_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Composition française",
+    "annee": 2015,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Simone Weil et l’effacement des buts dans la guerre",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_francais_xeulcr.pdf",
+    "sha256_sujet": "a61b93c773878e2c52d83bb56cabca706244d73f9812461433b5c129cc45b1a7",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_mp_pc_rap_efr.pdf",
+    "sha256_rapport_jury": "c2ccb86c99026b6b94dd2059fc6a2510300a90fa7ec26a8987b7be51bf2fc3be",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2015/%20",
+    "code_garde": "XEULCR",
+    "oeuvres_au_programme": [
+      "Eschyle, Les Perses",
+      "Henri Barbusse, Le Feu",
+      "Carl von Clausewitz, De la guerre, livre I"
+    ],
+    "portee_rapport": "Le cahier XEULCR porte les trois filières et les trois œuvres. Les pages 6 à 15 du rapport examinent les fins politiques et l’expérience de l’effacement. La version ENS-PSL du rapport a la même empreinte que celle de la banque. La dissertation ci-dessus propose son propre enchaînement.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_francais_xeulcr.pdf",
+        "sha256": "a61b93c773878e2c52d83bb56cabca706244d73f9812461433b5c129cc45b1a7",
+        "pages": 1
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_mp_pc_rap_efr.pdf",
+        "sha256": "c2ccb86c99026b6b94dd2059fc6a2510300a90fa7ec26a8987b7be51bf2fc3be",
+        "pages": 16
+      },
+      {
+        "role": "autre publication du sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2015/PC/sujets/sujet_mppc_fr2015.pdf",
+        "sha256": "4667c5df6630932b8ba4437ccb103bec5a754cbc644fd5fdf6b0e09bb7563c90",
+        "pages": 1
+      },
+      {
+        "role": "autre publication du rapport",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_pc_rap_efr.pdf",
+        "sha256": "c2ccb86c99026b6b94dd2059fc6a2510300a90fa7ec26a8987b7be51bf2fc3be",
+        "pages": 16
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/fins-de-la-guerre.svg",
+      "question": "Dissertation",
+      "legende": "Trois moments où se mesure l’effacement des fins. La dernière ligne montre ce qu’exige le passage du souhait de paix au jugement sur la poursuite du conflit."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation intégrale sur les deux phrases de Weil, confrontation du livre I de Clausewitz, du messager et du deuil chez Eschyle, du retour à Souchez et de L’Aube chez Barbusse. Préparation guidée, schéma et vérification du sujet et du rapport."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}
