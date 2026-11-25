@@ -1,0 +1,36 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2006",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2006
+  },
+  "questions": 9,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2006-annales-d1_1423060020336-pdf#page=12",
+    "rapport_jury": null,
+    "sha256_sujet": "4b67e1f37e613e3ed5ac38bcebfbf0133e96e763f6d150b1663ac23df319af93"
+  },
+  "figures": [
+    {
+      "fichier": "figures/courbe-par-morceaux.svg",
+      "question": "1.2",
+      "legende": "Les deux points anguleux se trouvent aux abscisses −1 et 1. La branche intérieure se sépare à l’asymptote verticale x = 1/2."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale de la page 12 du fascicule de 2006, avec vérification directe des barres de valeur absolue sur la page originale. Calcul des coefficients, des quatre branches et des deux asymptotes, figure et preuves complètes des trois autres exercices.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
