@@ -1,0 +1,67 @@
+{
+  "slug": "bel_al_philosophie-oral-tronc-commun-23-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Philosophie (oral tronc commun 23 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun 23 juin)",
+  "questions": 0,
+  "tirages": 11,
+  "sujets": 22,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_23_juinal.pdf",
+    "sujet_sha256": "412d77aa1bad7a5142ee4322bccea07d1e3fec63565583a2ab3544a5788b2cb3",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+  },
+  "figures": [
+    {
+      "fichier": "figures/entendre.svg",
+      "legende": "De la phrase entendue à la réponse comprise",
+      "question": "3"
+    },
+    {
+      "fichier": "figures/imaginer.svg",
+      "legende": "De la passerelle imaginée au passage réel",
+      "question": "11"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de 22 réponses distinctes pour les 11 billets, dans les deux éditions, de deux schémas et des questions de reprise avec leur réponse."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    }
+  ]
+}

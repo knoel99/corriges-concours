@@ -217,6 +217,7 @@
 | 2026 | BEL | AL | Philosophie (oral tronc commun 20 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-20-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-20-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 22 juin commission 1) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-22-juin-commission-1_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-22-juin-commission-1_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 22 juin commission 2) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-22-juin-commission-2_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-22-juin-commission-2_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun 23 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
@@ -580,6 +581,7 @@
 | 2014 | ENS de Lyon | Second concours | Chimie | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_chimie_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Chimie | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Chimie | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/guide.md) |
+| 2017 | ENS de Lyon | Second concours | Chimie | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/guide.md) |
 | 2018 | ENS de Lyon | Second concours | Chimie | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Chimie | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/guide.md) |
 | 2020 | ENS de Lyon | Second concours | Chimie | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_chimie_2020/guide.md) |
@@ -1005,6 +1007,7 @@
 | 2010 | X | PSI-PT | Informatique | [md](2010/x/x_psi-pt_informatique_2010/brut.md) | [md](2010/x/x_psi-pt_informatique_2010/guide.md) |
 | 2005 | X | PSI-PT | Informatique | [md](2005/x/x_psi-pt_informatique_2005/brut.md) | [md](2005/x/x_psi-pt_informatique_2005/guide.md) |
 | 2006 | X | PSI-PT | Informatique | [md](2006/x/x_psi-pt_informatique_2006/brut.md) | [md](2006/x/x_psi-pt_informatique_2006/guide.md) |
+| 2007 | X | PSI-PT | Informatique | [md](2007/x/x_psi-pt_informatique_2007/brut.md) | [md](2007/x/x_psi-pt_informatique_2007/guide.md) |
 | 2008 | X | PSI-PT | Informatique | [md](2008/x/x_psi-pt_informatique_2008/brut.md) | [md](2008/x/x_psi-pt_informatique_2008/guide.md) |
 | 2003 | X | PSI-PT | Informatique facultative | [md](2003/x/x_psi-pt_informatique-facultative_2003/brut.md) | [md](2003/x/x_psi-pt_informatique-facultative_2003/guide.md) |
 | 2002 | X | PSI-PT | Informatique facultative | [md](2002/x/x_psi-pt_informatique-facultative_2002/brut.md) | [md](2002/x/x_psi-pt_informatique-facultative_2002/guide.md) |
