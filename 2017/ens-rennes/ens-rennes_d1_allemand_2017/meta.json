@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_allemand_2017",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-lv-d1-2017_1513242514196-pdf#page=2",
+    "sha256_sujet": "1195212bb4cd9e2c05a6b51b8b002523d9fe683a034faf0ea5c432ce985b9108",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "Johanna Seebacher, Politik & Unterricht, numéro 1, 2002",
+    "page": 2,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-allemand-e-crit-d1-2017_1515597621635-pdf#page=1",
+    "sha256_rapport_jury": "55503dbea9527f04b92209c400fdc7a2f390bf2b2dad885689ebd07717ddf189"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 98,
+    "regle": "Dire si le flot d’informations caractéristique des sociétés modernes est plutôt une malédiction ou une bénédiction. 100 mots, à 10 % près."
+  },
+  "figures": [
+    {
+      "fichier": "figures/kamera.svg",
+      "legende": "Du reportage au choix du spectateur"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

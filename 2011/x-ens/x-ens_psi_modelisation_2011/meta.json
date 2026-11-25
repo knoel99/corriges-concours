@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_modelisation_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2011,
+    "duree_heures": 5
+  },
+  "questions": 44,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://cortial.net/fichiers/ecrits2011/X-ENS11modelisation-psi.pdf",
+    "sujet_sha256": "cb9511b169b61fd455d9164829e5f9c7e341168ef0d9391903c92e9df3daf5e8",
+    "identification": "CX1612, banque commune École polytechnique – ENS de Cachan. Le fac-similé du fonds Cortial contient les 26 pages numérotées du sujet puis deux pages blanches."
+  },
+  "figures": [
+    {
+      "fichier": "figures/dispersion-de-la-chaine.svg",
+      "question": "6",
+      "legende": "Pulsation divisée par la racine de κ/μ. Les deux courbes ont la même tangente à l’origine. La coupure à 2 appartient à la chaîne discrète."
+    },
+    {
+      "fichier": "figures/modes-des-deux-masses.svg",
+      "question": "18",
+      "legende": "Déplacements relatifs des deux masses au même instant. Le ressort central ne travaille que dans le mouvement en opposition."
+    },
+    {
+      "fichier": "figures/bandes-a-mi-puissance.svg",
+      "question": "26",
+      "legende": "Reconstruction des deux courbes à partir des paramètres lus. La ligne à −3 dB délimite la bande de chaque résonance."
+    },
+    {
+      "fichier": "figures/decrement-sur-quatre-periodes.svg",
+      "question": "30",
+      "legende": "Amplitudes lues sur la figure 16, rapportées au premier pic de chaque fenêtre. Le rapport des deux extrémités porte sur quatre périodes."
+    },
+    {
+      "fichier": "figures/information-des-maxima.svg",
+      "question": "42",
+      "legende": "L’information des observations indépendantes s’additionne. Après de nombreux cycles, l’amplitude devient trop faible pour améliorer nettement la borne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Résolution des 44 questions sur le cahier CX1612. Lecture des images natives des figures 9, 10, 16, 19, 24 et 25. Contrôle de la distinction discret-continu et de la normalisation des deux types de gains, des taux de décroissance, des bornes de Cramér–Rao et du bilan énergétique global. Cinq figures originales."
+    }
+  ]
+}

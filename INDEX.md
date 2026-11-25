@@ -149,6 +149,10 @@
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2017 | BEL | AL | Allemand (commentaire et traduction) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/guide.md) |
+| 2017 | ENS Rennes | D1 | Allemand | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/guide.md) |
+| 2017 | ENS Rennes | D1 | Anglais | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/guide.md) |
+| 2017 | ENS Rennes | D1 | Espagnol | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/guide.md) |
+| 2017 | ENS Rennes | D1 | Italien | [md](2017/ens-rennes/ens-rennes_d1_italien_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_italien_2017/guide.md) |
 | 2017 | BEL | AL | Allemand (thème Lyon) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (commentaire et traduction) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (thème Lyon) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/guide.md) |
@@ -535,6 +539,8 @@
 | 2023 | CFG | Candidats individuels | Mathématiques | [md](2023/cfg/cfg_candidats-individuels_mathematiques_2023/brut.md) | [md](2023/cfg/cfg_candidats-individuels_mathematiques_2023/guide.md) |
 | 2025 | CNG | Directeur d’établissement sanitaire, social et médico-social externe | Économie | [md](2025/cng/cng_directeur-detablissement-sanitaire-social-et-medico-social-externe_economie_2025/brut.md) | [md](2025/cng/cng_directeur-detablissement-sanitaire-social-et-medico-social-externe_economie_2025/guide.md) |
 | 2018 | CNSMD de Lyon | CA de professeur de danse | Commentaire de texte | [md](2018/cnsmd-de-lyon/cnsmd-de-lyon_ca-de-professeur-de-danse_commentaire-de-texte_2018/brut.md) | [md](2018/cnsmd-de-lyon/cnsmd-de-lyon_ca-de-professeur-de-danse_commentaire-de-texte_2018/guide.md) |
+| 2018 | ENS Rennes | D1 | Allemand | [md](2018/ens-rennes/ens-rennes_d1_allemand_2018/brut.md) | [md](2018/ens-rennes/ens-rennes_d1_allemand_2018/guide.md) |
+| 2018 | ENS Rennes | D1 | Italien | [md](2018/ens-rennes/ens-rennes_d1_italien_2018/brut.md) | [md](2018/ens-rennes/ens-rennes_d1_italien_2018/guide.md) |
 | 2026 | CNSMD de Paris | Parcours conjoint DE/DNSPM | Commentaire de texte | [md](2026/cnsmd-de-paris/cnsmd-de-paris_parcours-conjoint-de-dnspm_commentaire-de-texte_2026/brut.md) | [md](2026/cnsmd-de-paris/cnsmd-de-paris_parcours-conjoint-de-dnspm_commentaire-de-texte_2026/guide.md) |
 | 2026 | CPE | Externe | Composition (bac+5) | [md](2026/cpe/cpe_externe_composition-bac-5_2026/brut.md) | [md](2026/cpe/cpe_externe_composition-bac-5_2026/guide.md) |
 | 2026 | CPIP | Externe | Composition | [md](2026/cpip/cpip_externe_composition_2026/brut.md) | [md](2026/cpip/cpip_externe_composition_2026/guide.md) |
@@ -608,7 +614,14 @@
 | 2014 | ENS Rennes | D1 | Allemand | [md](2014/ens-rennes/ens-rennes_d1_allemand_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_allemand_2014/guide.md) |
 | 2014 | ENS Rennes | D1 | Anglais | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/brut.md) | [md](2014/ens-rennes/ens-rennes_d1_anglais_2014/guide.md) |
 | 2015 | ENS de Lyon | Second concours | Chimie | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/brut.md) | [md](2015/ens-de-lyon/ens-de-lyon_second-concours_chimie_2015/guide.md) |
+| 2015 | ENS Rennes | D1 | Allemand | [md](2015/ens-rennes/ens-rennes_d1_allemand_2015/brut.md) | [md](2015/ens-rennes/ens-rennes_d1_allemand_2015/guide.md) |
+| 2015 | ENS Rennes | D1 | Anglais | [md](2015/ens-rennes/ens-rennes_d1_anglais_2015/brut.md) | [md](2015/ens-rennes/ens-rennes_d1_anglais_2015/guide.md) |
+| 2015 | ENS Rennes | D1 | Espagnol | [md](2015/ens-rennes/ens-rennes_d1_espagnol_2015/brut.md) | [md](2015/ens-rennes/ens-rennes_d1_espagnol_2015/guide.md) |
+| 2015 | ENS Rennes | D1 | Italien | [md](2015/ens-rennes/ens-rennes_d1_italien_2015/brut.md) | [md](2015/ens-rennes/ens-rennes_d1_italien_2015/guide.md) |
 | 2016 | ENS de Lyon | Second concours | Chimie | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/brut.md) | [md](2016/ens-de-lyon/ens-de-lyon_second-concours_chimie_2016/guide.md) |
+| 2016 | ENS Rennes | D1 | Allemand | [md](2016/ens-rennes/ens-rennes_d1_allemand_2016/brut.md) | [md](2016/ens-rennes/ens-rennes_d1_allemand_2016/guide.md) |
+| 2016 | ENS Rennes | D1 | Anglais | [md](2016/ens-rennes/ens-rennes_d1_anglais_2016/brut.md) | [md](2016/ens-rennes/ens-rennes_d1_anglais_2016/guide.md) |
+| 2016 | ENS Rennes | D1 | Espagnol | [md](2016/ens-rennes/ens-rennes_d1_espagnol_2016/brut.md) | [md](2016/ens-rennes/ens-rennes_d1_espagnol_2016/guide.md) |
 | 2017 | ENS de Lyon | Second concours | Chimie | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_chimie_2017/guide.md) |
 | 2018 | ENS de Lyon | Second concours | Chimie | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_chimie_2018/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Chimie | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_chimie_2019/guide.md) |
@@ -726,6 +739,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2011 | ENS | MP | Informatique-mathématiques | [md](2011/ens/ens_mp_informatique-mathematiques_2011/brut.md) | [md](2011/ens/ens_mp_informatique-mathematiques_2011/guide.md) |
 | 2012 | ENS | MP | Informatique-mathématiques | [md](2012/ens/ens_mp_informatique-mathematiques_2012/brut.md) | [md](2012/ens/ens_mp_informatique-mathematiques_2012/guide.md) |
 | 2013 | ENS | MP | Informatique-mathématiques | [md](2013/ens/ens_mp_informatique-mathematiques_2013/brut.md) | [md](2013/ens/ens_mp_informatique-mathematiques_2013/guide.md) |
 | 2014 | ENS | MP | Informatique-mathématiques | [md](2014/ens/ens_mp_informatique-mathematiques_2014/brut.md) | [md](2014/ens/ens_mp_informatique-mathematiques_2014/guide.md) |
@@ -763,6 +777,7 @@
 | 2016 | ENS | PC | Physique-chimie | [md](2016/ens/ens_pc_physique-chimie_2016/brut.md) | [md](2016/ens/ens_pc_physique-chimie_2016/guide.md) |
 | 2017 | ENS | PC | Physique-chimie | [md](2017/ens/ens_pc_physique-chimie_2017/brut.md) | [md](2017/ens/ens_pc_physique-chimie_2017/guide.md) |
 | 2018 | ENS | PC | Physique-chimie | [md](2018/ens/ens_pc_physique-chimie_2018/brut.md) | [md](2018/ens/ens_pc_physique-chimie_2018/guide.md) |
+| 2019 | ENS | PC | Physique-chimie | [md](2019/ens/ens_pc_physique-chimie_2019/brut.md) | [md](2019/ens/ens_pc_physique-chimie_2019/guide.md) |
 | 2020 | ENS | PC | Physique-chimie | [md](2020/ens/ens_pc_physique-chimie_2020/brut.md) | [md](2020/ens/ens_pc_physique-chimie_2020/guide.md) |
 | 2021 | ENS | PC | Physique-chimie | [md](2021/ens/ens_pc_physique-chimie_2021/brut.md) | [md](2021/ens/ens_pc_physique-chimie_2021/guide.md) |
 | 2022 | ENS | PC | Physique-chimie | [md](2022/ens/ens_pc_physique-chimie_2022/brut.md) | [md](2022/ens/ens_pc_physique-chimie_2022/guide.md) |
@@ -863,6 +878,10 @@
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 3) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-3_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-3_2026/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — le cabinet de porcelaine de Charlottenburg (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-le-cabinet-de-porcelaine-de-charlottenburg-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-le-cabinet-de-porcelaine-de-charlottenburg-oral_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — les échanges en Europe moderne | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-les-echanges-en-europe-moderne_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-les-echanges-en-europe-moderne_2022/guide.md) |
+| 2016 | ENS-PSL | Sélection internationale Lettres | Philosophie — histoire, nécessité et hasard | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_philosophie-histoire-necessite-et-hasard_2016/brut.md) | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_philosophie-histoire-necessite-et-hasard_2016/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Philosophie — la traduction | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_philosophie-la-traduction_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_philosophie-la-traduction_2018/guide.md) |
+| 2019 | ENS-PSL | Sélection internationale Lettres | Philosophie — le mépris | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_philosophie-le-mepris_2019/brut.md) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_philosophie-le-mepris_2019/guide.md) |
+| 2017 | ENS-PSL | Sélection internationale Lettres | Philosophie — liberté et fers | [md](2017/ens-psl/ens-psl_selection-internationale-lettres_philosophie-liberte-et-fers_2017/brut.md) | [md](2017/ens-psl/ens-psl_selection-internationale-lettres_philosophie-liberte-et-fers_2017/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Économie — décroissance ou croissance verte (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-decroissance-ou-croissance-verte-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-decroissance-ou-croissance-verte-oral_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Économie — la fin de la croissance | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-la-fin-de-la-croissance_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-la-fin-de-la-croissance_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Économie — les instruments de la politique climatique | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-les-instruments-de-la-politique-climatique_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-les-instruments-de-la-politique-climatique_2022/guide.md) |
@@ -1100,6 +1119,7 @@
 | 2002 | X | PSI-PT | Informatique facultative | [md](2002/x/x_psi-pt_informatique-facultative_2002/brut.md) | [md](2002/x/x_psi-pt_informatique-facultative_2002/guide.md) |
 | 2004 | X | PSI-PT | Informatique | [md](2004/x/x_psi-pt_informatique_2004/brut.md) | [md](2004/x/x_psi-pt_informatique_2004/guide.md) |
 | 2010 | X-ENS | PSI | Modélisation | [md](2010/x-ens/x-ens_psi_modelisation_2010/brut.md) | [md](2010/x-ens/x-ens_psi_modelisation_2010/guide.md) |
+| 2011 | X-ENS | PSI | Modélisation | [md](2011/x-ens/x-ens_psi_modelisation_2011/brut.md) | [md](2011/x-ens/x-ens_psi_modelisation_2011/guide.md) |
 | 2012 | X-ENS | PSI | Modélisation | [md](2012/x-ens/x-ens_psi_modelisation_2012/brut.md) | [md](2012/x-ens/x-ens_psi_modelisation_2012/guide.md) |
 | 2013 | X-ENS | PSI | Modélisation | [md](2013/x-ens/x-ens_psi_modelisation_2013/brut.md) | [md](2013/x-ens/x-ens_psi_modelisation_2013/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |

@@ -1,0 +1,62 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-histoire-necessite-et-hasard_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — histoire, nécessité et hasard",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Philosophie — histoire, nécessité et hasard",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/PHILO.pdf",
+    "sujet_sha256": "34deb243c928d85b0a742695ea9d68aae1a3bb0cb5d8400f313f049c6db2f7e2",
+    "references": [
+      "https://www.devenirenseignant.gouv.fr/media/9883/download",
+      "https://www.annales.org/archives/cofrhigeo/gohau-whewell.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/liaisons.svg",
+      "question": "Dissertation",
+      "legende": "Trois suites, trois rapports entre les états"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire philosophique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Contrôle des deux hypothèses extrêmes, de la rencontre des séries causales et des exemples d’horloge, de tirages indépendants et de partie d’échecs. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}

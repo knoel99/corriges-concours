@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_italien_2015",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Italien",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-d1-langues-vivantes-2015_1459930616550-pdf#page=5",
+    "sha256_sujet": "2a6b3ae1c1792fa4d58a3f962ea24813665cd89072415497e710acbcb11ca52e",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "Commission européenne, communiqué du 19 février 2015",
+    "page": 5,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/italien-d1-rapport-jury-2015_1448641902648-pdf#page=1",
+    "sha256_rapport_jury": "cd71fdd57bf5b6835d2ddc0b9aaeeb231fa09a28faf970729789414fe1409a75"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en italien"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en italien."
+  },
+  "longueur_expression": {
+    "mots": 98,
+    "regle": "Donner son point de vue sur la gestion des flux migratoires en Italie et plus généralement en Europe. Environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/aides.svg",
+      "legende": "Tre impegni, tre indicazioni diverse"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en italien. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

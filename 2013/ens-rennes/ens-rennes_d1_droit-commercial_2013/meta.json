@@ -1,0 +1,84 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2013",
+  "epreuve": {
+    "concours": "ENS de Cachan",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "L’affectio societatis",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-13d1-option_1421750188201-pdf#page=2",
+    "sujet_sha256": "a50ad777db8251c22f605ee8b2d1f6325443c38588caa8d54d34cac25d74f973",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/re1a_d1_13dtcom_1373363109900.pdf",
+    "rapport_sha256": "75d6e4887147fe24b34566454b33d5fd8f3c0bd806d3f407ff19f302ffc826eb",
+    "references_complementaires": {
+      "Code civil en avril 2013": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2013-04-01/",
+      "Code de commerce en avril 2013": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000005634379/2013-04-01/"
+    },
+    "articles_session": {
+      "1832": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444041/2013-04-01",
+      "1833": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444056/2013-04-01",
+      "1844": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444157/2013-04-01",
+      "1844-1": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444158/2013-04-01",
+      "1844-7": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444174/2013-04-01",
+      "1844-10": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444191/2013-04-01",
+      "1869": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444422/2013-04-01",
+      "1871": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444461/2013-04-01",
+      "1872": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444463/2013-04-01",
+      "1872-1": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444471/2013-04-01",
+      "1873": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006444477/2013-04-01"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/atelier-et-indices.svg",
+      "legende": "Les faits doivent éclairer des éléments indépendants et permettre de discuter les qualifications concurrentes."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/temps-du-conflit.svg",
+      "legende": "Le remède dépend du régime légal et des faits établis."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « L’affectio societatis » à partir des pièces distribuées ou conservées par l’ENS Rennes. Qualification de la société créée de fait, comparaison avec prêt et salariat, investisseur et EURL, dissolution ou retrait. Correction de deux renvois matériels du rapport.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport de Jean-Baptiste Lenhof demande doctrine, arrêt de 1986, intensité variable et fonctions pratiques. Les renvois à 1383 et 1884-7 sont corrigés par les textes de 2013."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « L’affectio societatis » à partir des pièces distribuées ou conservées par l’ENS Rennes. Qualification de la société créée de fait, comparaison avec prêt et salariat, investisseur et EURL, dissolution ou retrait. Correction de deux renvois matériels du rapport."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

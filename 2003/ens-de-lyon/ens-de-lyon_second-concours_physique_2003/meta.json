@@ -1,0 +1,91 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2003",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2003
+  },
+  "questions": 21,
+  "redaction": "Les 21 questions sont résolues. La droite d’extinction est calculée sur les cinq mesures du fascicule et la température à 9 km utilise l’erratum du jury. La distinction entre les profils isotherme et adiabatique est explicitée.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2003/sujet-ecrit-2003-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "eded225404ef127dc0f944755eb8f55a122b69a18632ad8b65289971f077f87c",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2003/rapport-2003-second-concours_ecrit_physique.pdf",
+    "rapport_sha256": "87ddd112c5e09200adef70422f1e4ebb095b2074b0670adf6783ce244cd242a4"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1.5",
+      "fichier": "figures/largeur-equivalente.svg",
+      "legende": "Le rectangle de hauteur unité a la même aire que le spectre entier, y compris la queue qui se prolonge à droite."
+    },
+    {
+      "numero": 2,
+      "question": "3.5",
+      "fichier": "figures/extinction-solaire.svg",
+      "legende": "Les points proviennent des cinq éclairements de l’énoncé. L’extrapolation à masse d’air nulle estime le flux incident hors atmosphère."
+    },
+    {
+      "numero": 3,
+      "question": "4.4",
+      "fichier": "figures/deux-modeles-atmospheriques.svg",
+      "legende": "À gauche, modèle isotherme à 250 K de la partie 3. À droite, adiabatique sèche partant de 288 K, avec le point à 9 km de la partie 4."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de M.-C. Artru et R. Ferreira, avec l’erratum explicite de 4-4 et les remarques concernant le photon, la thermopile et le signe de la projection du trajet.",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Les 21 questions sont résolues. La droite d’extinction est calculée sur les cinq mesures du fascicule et la température à 9 km utilise l’erratum du jury. La distinction entre les profils isotherme et adiabatique est explicitée.",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5"
+    ]
+  }
+}

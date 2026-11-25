@@ -1,0 +1,37 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2010
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-options-2010_1421752521892-pdf#page=4",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a_10d1_maths_appl_et_statx_1280151485277.pdf",
+    "sha256_sujet": "0ea50730235f894ec85702c4672fa91d041e9aa99bfe0a65c4071dca570d2432",
+    "sha256_rapport_jury": "9c6ac2e137568e7e0a3f4a8f31d838dd0586bcbb154903bfb991864b2e89fd71"
+  },
+  "figures": [
+    {
+      "fichier": "figures/nuage-et-ajustement-parabolique.svg",
+      "question": "3.1",
+      "legende": "Le nuage se creuse autour du cinquième rang. La parabole est celle calculée aux questions 5 à 7."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale du cahier D1 2010 et lecture du rapport. Vérification visuelle des formules des deux dernières pages, calcul du changement de variable parabolique, comparaison des protocoles et analyse des restrictions sur la suite. Figure du nuage et de sa parabole.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
