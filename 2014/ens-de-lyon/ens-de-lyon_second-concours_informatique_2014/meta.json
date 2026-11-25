@@ -1,0 +1,48 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2014",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2014,
+    "duree_heures": 3
+  },
+  "questions": 19,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_suj_info.pdf",
+    "sujet_sha256": "543cbd0c38db7fabca61020af1376d9aab098a9a7578965723eb7e9f2ae048cb",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_rap_einfo.pdf",
+    "rapport_sha256": "96fd3d5ad37116ea845d3907871d232c8ccb03629f463ffd6784945dff226fa1"
+  },
+  "figures": [
+    {
+      "fichier": "figures/exposant-en-blocs.svg",
+      "question": "4",
+      "legende": "Les six bits de 45 se groupent par deux en trois chiffres de base 4, lus de gauche à droite."
+    },
+    {
+      "fichier": "figures/orbite-et-premier-retour.svg",
+      "question": "15",
+      "legende": "Cette fonction envoie 1 vers 2, puis 2 vers 3. Le cycle de longueur 4 ramène à 3 après six pas depuis le point initial."
+    },
+    {
+      "fichier": "figures/temps-du-premier-retour.svg",
+      "question": "19",
+      "legende": "Queue exacte du premier retour pour une fonction uniforme sur 36 positions. La variation importante se produit aux indices de l’ordre de la racine de 36."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 19 questions du second concours sur le sujet et le rapport institutionnels. Exemples exécutables dans le groupe à 16 éléments, suites finies et bornes générales. Contrôle de 3 264 exponentiations, 6 400 états, 1 225 intersections de tableaux et du codage de 50 069 fonctions finies. Vérification du terme constant de l’espérance et de l’intégrale gaussienne signalée par le jury. Trois figures originales."
+    }
+  ]
+}

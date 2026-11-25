@@ -1,0 +1,41 @@
+{
+  "slug": "ens_mp_mathematiques-mpi-1_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques MPI 1",
+    "annee": 2010
+  },
+  "questions": 37,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-maths1.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-maths1.pdf",
+    "sha256_sujet": "7bc9c99db901e427ba4482dc2c03a437e8226d757b83999ac380b2cfc37c1b13"
+  },
+  "figures": [
+    {
+      "fichier": "figures/racines-dyadiques.svg",
+      "question": "I.2.b",
+      "legende": "Pour p égal à 2, chaque niveau conserve les anciennes racines et intercale une nouvelle racine entre deux voisines."
+    },
+    {
+      "fichier": "figures/structure-primaire.svg",
+      "question": "VI.2.b",
+      "legende": "La partie divisible se décompose en groupes de Prüfer. Le complément est fini car sa torsion d’ordre p est finie et son intersection des images de p puissance k est nulle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des six parties, contrôlée sur l’original numérisé et le rapport avec corrigé du jury. Prolongement uniformément continu, prolongement algébrique, fibre finie des préimages, compatibilité des générateurs, théorème de structure et séparabilité en caractéristique zéro. Deux illustrations.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

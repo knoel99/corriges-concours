@@ -1,0 +1,103 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2005",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2005
+  },
+  "questions": 43,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2005/sujet-ecrit-2005-second-concours_geosciences.pdf",
+    "sujet_sha256": "2500c5c029957095ce3cbdfb73fff8721eac19ec41c9160dd3d58738d8f1ea28"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7.1",
+      "3.7.2",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12",
+      "3.13",
+      "4.1",
+      "4.2.1",
+      "4.2.2",
+      "4.2.3",
+      "4.2.4",
+      "4.2.5",
+      "4.2.6",
+      "4.2.7",
+      "4.3.1",
+      "4.4.2a",
+      "4.4.1",
+      "4.4.2b",
+      "4.4.3",
+      "4.4.4",
+      "4.4.5",
+      "4.4.6",
+      "4.4.7"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 43 consignes sont traitées sur les sept pages du sujet. Les deux questions imprimées 4.4.2 portent ici les repères 4.4.2a (albédo terrestre) et 4.4.2b (puissance incidente d’une planète). Le calcul du volume de magma précise la densité supposée. L’archive 2005 ne rattache pas de rapport écrit à cette épreuve."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "1.2",
+      "fichier": "figures/bloc-des-contextes-volcaniques.svg",
+      "legende": "Bloc-diagramme en vue oblique. Les surfaces supérieures situent les édifices, la face avant montre la lithosphère et les remontées mantelliques ou magmatiques."
+    },
+    {
+      "question": "3.9",
+      "fichier": "figures/comparaison-isotopique-du-carbone.svg",
+      "legende": "Domaines représentatifs lus sur le document 4. L’intervalle du gaz de Milos recoupe les réservoirs carbonatés proches de zéro."
+    },
+    {
+      "question": "4.2.6",
+      "fichier": "figures/du-disque-a-la-sphere.svg",
+      "legende": "Le rayonnement solaire est intercepté sur une section circulaire alors que l’énergie peut être émise sur toute la sphère."
+    },
+    {
+      "question": "4.4.6",
+      "fichier": "figures/temperatures-radiatives-et-au-sol.svg",
+      "legende": "Températures radiatives calculées avec les paramètres du sujet et températures moyennes au sol du document 5. Le contraste vénusien domine la comparaison."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le volcanisme, les flux internes, Milos et les températures planétaires. Lecture des cinq documents, calculs de puissance et d’énergie, double repérage du numéro 4.4.2, construction du bloc-diagramme demandé et de trois illustrations complémentaires."
+    }
+  ]
+}
