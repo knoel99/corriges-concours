@@ -180,3 +180,69 @@ def test_exemple_du_jury_rattache_sans_ajouter_une_epreuve():
     assert couverture.exemples_documentes(sujets)[slug] == "exemple du jury"
     with pytest.raises(ValueError):
         couverture.exemples_documentes({**sujets, slug: "oral"})
+
+
+def test_une_retouche_par_un_autre_modele_demande_une_nouvelle_relecture(tmp_path):
+    redaction = {"phase": "redaction", "modele": "gpt-6.2-astra", "effort": "ultra"}
+    correction = {"phase": "autocontrole", "modele": "autre", "modifications": True}
+    signature = "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    revision = "**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    for nom in ("brut.md", "guide.md"):
+        (tmp_path / nom).write_text(f"# Épreuve\n\n{signature}\n\n{revision}\n\nRéponse")
+    fichier = tmp_path / "meta.json"
+    entrees = [redaction, correction, {**redaction, "phase": "retouches"}]
+    fichier.write_text(json.dumps({"contributions": entrees}))
+    assert not couverture.verifier_paire(tmp_path)[1]
+    entrees.append({**redaction, "phase": "revision"})
+    fichier.write_text(json.dumps({"contributions": entrees}))
+    assert couverture.verifier_paire(tmp_path)[1] == {signature, revision}
+
+
+def test_modifier_une_edition_ne_reutilise_pas_une_signature_anterieure(tmp_path, monkeypatch):
+    import subprocess
+
+    monkeypatch.setattr(couverture, "RACINE", tmp_path)
+    dossier = tmp_path / "2026/x/x_mp_maths_2026"
+    dossier.mkdir(parents=True)
+    texte = dossier / "brut.md"
+    ancien = "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    texte.write_text(f"# Épreuve\n\n{ancien}\n\nUne première réponse.")
+    meta = dossier / "meta.json"
+    redaction = {"phase": "redaction", "modele": "gpt-6.2-astra", "effort": "ultra",
+                 "session": "lettres", "perimetre": "Rédaction des deux éditions."}
+    journal = [redaction]
+    meta.write_text(json.dumps({"contributions": journal}))
+
+    def git(*args):
+        return subprocess.check_output(["git", *args], text=True, cwd=tmp_path).strip()
+
+    def commit():
+        git("add", "--all")
+        git("-c", "user.name=Test", "-c", "user.email=test@example.invalid", "commit", "-qm", "Version")
+
+    git("init", "-q")
+    commit()
+    base = git("rev-parse", "HEAD")
+    assert couverture.edition_attribuee_depuis(dossier, git("hash-object", "-t", "tree", "/dev/null"))
+    texte.write_text(texte.read_text().replace(ancien, ancien + " · 25 novembre 2026"))
+    commit()
+    assert couverture.edition_attribuee_depuis(dossier, base)
+    texte.write_text(texte.read_text().replace("première réponse", "réponse corrigée"))
+    redaction["agent"] = "lettres"
+    meta.write_text(json.dumps({"contributions": journal}))
+    commit()
+    assert not couverture.edition_attribuee_depuis(dossier, base)
+    journal.insert(0, {**redaction, "perimetre": "Rédaction antérieure nouvellement documentée."})
+    meta.write_text(json.dumps({"contributions": journal}))
+    commit()
+    assert not couverture.edition_attribuee_depuis(dossier, base)
+    journal.append({**redaction, "phase": "autocontrole", "modifications": True,
+                    "perimetre": "Rectification de la réponse."})
+    meta.write_text(json.dumps({"contributions": journal}))
+    commit()
+    assert couverture.edition_attribuee_depuis(dossier, base)
+    base = git("rev-parse", "HEAD")
+    (dossier / "figures").mkdir()
+    (dossier / "figures/schema.svg").write_text("<svg/>")
+    commit()
+    assert not couverture.edition_attribuee_depuis(dossier, base)

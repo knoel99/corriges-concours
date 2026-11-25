@@ -105,14 +105,25 @@ def entete(markdown: str) -> set[str]:
     return resultats
 
 
+def est_astra_ultra(entree: dict) -> bool:
+    return str(entree.get("modele") or "").casefold() in {
+        "gpt-6.2-astra", "gpt-6.2 astra"
+    } and str(entree.get("effort") or "").casefold() == "ultra"
+
+
+def interventions_editoriales(meta: dict) -> list[dict]:
+    return [
+        e for e in meta.get("contributions", [])
+        if e.get("phase") in PHASES or e.get("phase") == "retouches"
+        or e.get("modifications") is True
+    ]
+
+
 def signatures_qualifiantes(meta: dict) -> set[str]:
     signatures = set()
     for entree in meta.get("contributions", []):
         role = PHASES.get(entree.get("phase"))
-        modele = str(entree.get("modele") or "").casefold()
-        if not role or modele not in {"gpt-6.2-astra", "gpt-6.2 astra"}:
-            continue
-        if str(entree.get("effort") or "").casefold() != "ultra":
+        if not role or not est_astra_ultra(entree):
             continue
         if entree.get("tour") is not None:
             role += f" (tour {entree['tour']})"
@@ -151,6 +162,11 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
     signatures = signatures_qualifiantes(meta)
     if not signatures:
         return "intervention Astra Ultra à effectuer ou documenter", set()
+    for entree in reversed(interventions_editoriales(meta)):
+        if est_astra_ultra(entree) and entree.get("phase") in PHASES:
+            break
+        if not est_astra_ultra(entree) and entree.get("modifications") is not False:
+            return "édition modifiée depuis la dernière rédaction ou révision Astra Ultra", set()
     if SLUG.fullmatch(dossier.name):
         # La publication du site construit la clé des textes et PDF à partir de la matière.
         matiere = str(meta.get("epreuve", {}).get("matiere", ""))
@@ -306,6 +322,62 @@ def site_verifie(dossier: Path, fiche: str, signatures: set[str]) -> bool:
     return True
 
 
+def texte_hors_signatures(markdown: str) -> str:
+    lignes = markdown.strip().splitlines()
+    if not lignes or not lignes[0].startswith("# "):
+        return markdown
+    for i, ligne in enumerate(lignes[1:], 1):
+        if ligne.strip() and not LIGNE_SIGNATURE.fullmatch(ligne.strip()) and (
+            "Corrigé rédigé par IA" not in ligne
+        ):
+            return "\n".join([lignes[0], *lignes[i:]])
+    return lignes[0]
+
+
+def edition_attribuee_depuis(dossier: Path, base: str) -> bool:
+    """Vérifie qu’une modification du contenu possède sa propre intervention signée."""
+    chemin = dossier.relative_to(RACINE).as_posix()
+    noms = subprocess.check_output(
+        ["git", "diff", "--name-only", "--no-renames", "-z", base, "HEAD", "--",
+         f"{chemin}/brut.md", f"{chemin}/guide.md", f"{chemin}/figures"],
+        cwd=RACINE,
+    ).decode().split("\0")
+    fichiers = [nom for nom in noms if nom]
+    if not fichiers:
+        return True
+
+    def ancien(nom: str) -> str:
+        resultat = subprocess.run(
+            ["git", "show", f"{base}:{nom}"], cwd=RACINE, capture_output=True
+        )
+        return resultat.stdout.decode() if resultat.returncode == 0 else ""
+
+    journal = interventions_editoriales(json.loads((dossier / "meta.json").read_text()))
+    avant = interventions_editoriales(json.loads(ancien(f"{chemin}/meta.json") or "{}"))
+
+    def objet(entree):
+        # Une précision sur le nom du modèle ou sa vitesse ne signe pas un nouveau texte.
+        return tuple(entree.get(champ) for champ in ("phase", "date", "tour", "perimetre"))
+
+    if journal:
+        derniere = journal[-1]
+        objet_courant = objet(derniere)
+        occurrences = sum(objet(e) == objet_courant for e in journal)
+        anterieures = sum(objet(e) == objet_courant for e in avant)
+        if (
+            occurrences > anterieures
+            and est_astra_ultra(derniere)
+            and (derniere.get("agent") or derniere.get("session"))
+        ):
+            return True
+    for nom in fichiers:
+        if nom.startswith(f"{chemin}/figures/"):
+            return False
+        if texte_hors_signatures((RACINE / nom).read_text()) != texte_hors_signatures(ancien(nom)):
+            return False
+    return True
+
+
 def slugs_modifies(base: str) -> set[str]:
     diff = subprocess.check_output(
         ["git", "diff", "--name-only", "--no-renames", "-z", f"{base}...HEAD"],
@@ -344,6 +416,9 @@ def main() -> int:
         perimetre.update(exemples_documentes(perimetre))
     selection = set(args.slugs) if args.slugs else set(perimetre)
     if args.depuis:
+        base = subprocess.check_output(
+            ["git", "merge-base", args.depuis, "HEAD"], cwd=RACINE, text=True
+        ).strip()
         selection = {
             s
             for s in slugs_modifies(args.depuis)
@@ -359,6 +434,8 @@ def main() -> int:
         banque = slug.split("_", 1)[0]
         dossier = RACINE / slug[-4:] / banque / slug
         local, signatures = verifier_paire(dossier)
+        if args.depuis and signatures and not edition_attribuee_depuis(dossier, base):
+            local, signatures = "modification du corrigé sans nouvelle attribution Astra Ultra", set()
         fiche = fiche_site(slug)
         site = "non vérifié"
         if signatures and args.site:
