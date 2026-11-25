@@ -1,0 +1,74 @@
+{
+  "slug": "ens_mp-pc_allemand-lv1_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LV1)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Atomenergie bleibt doch Dreckstrom",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_lv1.pdf#page=2",
+    "sujet_sha256": "4d43a82b835716843169d99f0696b76085c2d34aae975b3aae524ac7e33fd7f2",
+    "page_pdf": 2,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+    "etablissements_imprimes": "Paris, Lyon et Cachan",
+    "texte_support": "Dorothea Hahn, « Atomenergie bleibt doch Dreckstrom », Tageszeitung, 9 janvier 2009.",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2009/PC/pc2009_ecri_allemand_lv1.pdf",
+    "rapport_sha256": "d015a387c2f74e2019bb23d93433fc24db3b1accdf4847b58b296107b9dff419",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/PC/pc2009_ecri_allemand_lv1.pdf"
+  },
+  "redaction": "Version intégrale en français, deux réponses distinctes d’environ cent mots en allemand et construction du discours rapporté dans l’article sur l’ARPP.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/controle-publicite.svg",
+      "legende": "Du lancement au retrait du slogan d’Areva, les trois interventions décrites par Dorothea Hahn."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des remarques de Lucile Raynaud sur le lexique publicitaire, le subjonctif I, les groupes participiaux et les deux questions d’expression."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français, deux réponses distinctes d’environ cent mots en allemand et construction du discours rapporté dans l’article sur l’ARPP.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II.1",
+      "II.2"
+    ]
+  }
+}
