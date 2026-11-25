@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-comment-se-passe-t-on-de-la-notion-de-race-oral_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — Comment se passe-t-on de la notion de race (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie — Comment se passe-t-on de la notion de race (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-oral-sil17-sujet1.pdf",
+    "sha256_sujet": "8afb802933cba261f4093a308d76b9d8af9c69e54e2d4d1beb26d82eca3cf2ee",
+    "reperage": "Développer la question « Comment se passe-t-on de la notion de race ? »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Exposé oral",
+      "legende": "De quoi entend-on se passer ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Exposé argumenté sur le sujet attribué, exemples et objections, préparation guidée de l’entretien et schéma des distinctions conceptuelles."
+    }
+  ]
+}
