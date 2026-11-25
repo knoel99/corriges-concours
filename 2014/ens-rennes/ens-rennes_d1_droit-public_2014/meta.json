@@ -1,0 +1,74 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2014",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "L’ordre public",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2014-d1-option-droit-commercial-et-droit-public_1421747263648-pdf#page=2",
+    "sujet_sha256": "2851630894aace44f6fb489d6c0fc153906402791456c0bca7023370421ef69a",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-droit-public_1421747306282-pdf",
+    "rapport_sha256": "69db161f49b913daba3176c46516864562495946b3509543c2a78d154241e68c",
+    "references_complementaires": {
+      "Code général des collectivités territoriales au 1er avril 2014": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070633/2014-04-01/",
+      "CE, Commune de Morsang-sur-Orge, 27 octobre 1995": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/1995-10-27/136727",
+      "CE, Benjamin, 19 mai 1933": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/1933-05-19/17413",
+      "CE, ordonnance du 9 janvier 2014": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2014-01-09/374508",
+      "Conseil constitutionnel, 25 janvier 1985": "https://www.conseil-constitutionnel.fr/decision/1985/85187DC.htm"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/composantes.svg",
+      "legende": "Les exigences factuelles varient avec le fondement juridique invoqué."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/controle-des-mesures.svg",
+      "legende": "La protection de l’ordre public doit se concilier avec l’exercice de la liberté concernée."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « L’ordre public » à partir des pièces distribuées ou conservées par l’ENS Rennes. Délimitation de l’ordre public libéral et immatériel, de la conciliation législative, de la police générale, du contrôle de proportionnalité et du référé en janvier 2014.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Les deux pages du rapport exigent une délimitation de droit public, des exemples au-delà de la police administrative et l’analyse circonscrite de l’ordonnance du 9 janvier 2014."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « L’ordre public » à partir des pièces distribuées ou conservées par l’ENS Rennes. Délimitation de l’ordre public libéral et immatériel, de la conciliation législative, de la police générale, du contrôle de proportionnalité et du référé en janvier 2014."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
