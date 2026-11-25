@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## 1. Résumé analytique comparatif
 
 Oba artykuły przedstawiają spór o bezpieczeństwo polowań w Polsce. Pierwszy opisuje skutki wypadków dla rodzin i mieszkańców oraz postuluje skuteczniejszy nadzór. Drugi pokazuje, dlaczego mimo szerokiego społecznego poparcia dla okresowych badań lekarskich i psychologicznych Sejm odrzucił dotyczący ich projekt już w pierwszym czytaniu. Francja pojawia się w pytaniu, lecz żaden z tych dwóch artykułów nie przedstawia francuskich danych pozwalających porównać skalę wypadków ani ich zmiany w czasie.
@@ -31,5 +33,11 @@ Tradycja zasługuje zatem na miejsce w rozmowie, lecz nie daje żadnej grupie pr
 Po osiągnięciu dwa lata temu najniższego poziomu w historii liczba śmiertelnych wypadków na polowaniach ponownie wzrosła w sezonie 2024–2025. „Zginęło jedenastu myśliwych, podczas gdy w każdym z dwóch poprzednich sezonów zginęło ich sześciu” (…).
 
 „Ogólna tendencja w ciągu ostatnich dwudziestu pięciu lat jest nadal bardzo korzystna”. Liczba wypadków spadła o ponad połowę, „trzeba jednak zachować czujność” – powiedział agencji AFP Olivier Thibault, dyrektor generalny Francuskiego Urzędu ds. Bioróżnorodności (OFB). „Wspólnie z myśliwymi osiągnęliśmy ogromny postęp, szkolenia przynoszą dobre wyniki, ale tendencja może się odwrócić i liczba wypadków znów może wzrosnąć” – ostrzegł. Wskazał trzy kwestie wymagające szczególnej uwagi: błędy w obchodzeniu się z bronią, nieuwzględnianie otoczenia w chwili oddawania strzału oraz coraz liczniejsze polowania zbiorowe organizowane w pośpiechu, aby chronić uprawy przed szkodami wyrządzanymi przez dziki lub jelenie.
+
+**Repère de lecture**
+
+Entre 2022–2023 et 2023–2024, le total passe de 78 à 97 accidents, tandis que le nombre de décès reste à six. Le texte 3 traite ensuite de la saison 2024–2025. L’ordre des dates permet d’accorder la hausse récente évoquée dans le thème avec la baisse observée sur une période plus longue.
+
+![Figure 1 — Trois saisons françaises, deux mesures](figures/accidents.svg)
 
 [Fascicule officiel commun, à partir de la page 20](https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=20)

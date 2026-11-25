@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ### Question 1 · Résumé analytique comparatif · 242 mots
 
 בישראל רווחת התפיסה שלפיה על בית הספר ללמד את תלמידיו להשתמש בבינה מלאכותית כחלק מן הלימודים הרגילים. הכתבה הראשונה מציגה את המהלך בראשיתו כהזדמנות לשנות את דרכי ההוראה, ואילו השנייה בוחנת כעבור שנה עד כמה ההבטחות התממשו בכיתות. בשתיהן מדובר ביוזמה ממלכתית רחבת היקף, הנשענת על שיתוף פעולה בין משרד החינוך לחברות טכנולוגיה ועל הדרכת צוותי ההוראה בידי אנשי מקצוע.
@@ -29,6 +31,12 @@
 האם אפשר להשלים עם כך שבאותה מערכת חינוך מעוררים בקרב בני הדורות הצעירים מודעות לצורך במעבר לדפוסי חיים בני־קיימה, שהוא ממטרותיו של החינוך לפיתוח בר־קיימה, ובה בעת מעודדים אותם להשתמש במשאבים שכבר הוכח כי הם תורמים לפגיעה בתנאים המאפשרים חיים בכדור הארץ, וכי תרומתם לפגיעה זו עלולה עוד לגדול?
 
 את השאלה האתית יש לבחון במישור של החברות המייצרות את האמצעים הטכנולוגיים ושל הארגונים הבוחרים להשתמש בהם, ולא במישור של האמצעים עצמם. בין השיקולים האתיים הרבים העשויים להאט את התפשטות הבינה המלאכותית, לשיקול שמעלה הפילוסוף דניאל דנט יש חשיבות מיוחדת בתחום החינוך: ״יצירת בני אדם מזויפים, שהבינה המלאכותית מאפשרת, מערערת את עקרון האמון שעליו מושתתות החברות האנושיות. יש לאסור יצירה כזאת ולהעניש עליה בחומרה שאינה פחותה מזו שבה מענישים על ייצור כסף מזויף ועל הפצתו.״
+
+**Repère de lecture**
+
+Dans l’enquête, 57 % des élèves déclarent utiliser l’IA et 36 % avoir reçu une formation. L’écart de 21 points porte sur deux réponses distinctes. Pour isoler les utilisateurs sans formation, il faudrait disposer du croisement des deux réponses individuelles.
+
+![Figure 1 — Données déclaratives du document 2. À gauche, usage et formation dans l’ensemble interrogé. À droite, part déclarant une formation dans chaque secteur.](figures/enquete-eleves.svg)
 
 ## Sources
 

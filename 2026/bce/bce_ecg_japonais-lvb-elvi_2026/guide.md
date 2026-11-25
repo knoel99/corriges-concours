@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## 1. Résumé analytique comparatif
 
 不登校の増加は、子供の意欲だけでは説明できない。読売新聞によれば、学校に行くことについて、社会の側の考え方も変化した。二〇一七年に教育機会確保法が施行され、教室の外にも学びの場があるという理解が広まった。また、コロナ禍の一斉休校は、登校が当然だという意識を変えるとともに、生活のリズムにも影響したという。記事は、支援を受けられず孤立する子供を案じる一方、校内の別室で学べる仕組みが、最近の増加幅を小さくした可能性を指摘する。
@@ -43,5 +45,7 @@ L’essai mobilise le service de la cantine par les élèves, les *free schools*
 **Décompte éditorial.** Le japonais s’écrit normalement sans espace entre les mots. Le résumé compte 253 unités et l’essai 364 avec la segmentation lexicale japonaise d’ICU, ponctuation exclue. Le sujet formule ses longueurs en mots et ne donne pas de convention japonaise de segmentation. Cette mesure éditoriale situe les textes dans les fourchettes de 225–275 et 315–385.
 
 ![Fréquentation des écoles alternatives pendant une absence](figures/frequentation.svg)
+
+Pour expliquer en japonais les deux proportions, préciser d’abord le groupe auquel appartient le pourcentage. Le graphique décrit une fréquence déclarée pendant l’absence. Le motif du choix appelle une autre source.
 
 [Fascicule officiel commun, à partir de la page 16](https://www.concours-bce.com/sites/default/files/2026-04/76%20CH%20-%20LANGUE_VIVANTE_B_ELVI_CHINOIS_HEBREU_JAPONAIS_POLONAIS.pdf#page=16) · [Rapport 2026 de japonais LVB](https://www.concours-bce.com/sites/default/files/2026-09/76%20%20-%20Japonais%20LVB%20Elvi%202026.pdf)

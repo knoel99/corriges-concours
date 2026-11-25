@@ -4,11 +4,15 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Lire le dossier
 
 Les questions sont imprimées page 8 du sujet commun. Les deux articles hébreux occupent les pages 9 à 13, l’extrait à traduire la page 14 et l’illustration la page 15.
 
 ![Données déclaratives du document 2. À gauche, usage et formation dans l’ensemble interrogé. À droite, part déclarant une formation dans chaque secteur.](figures/enquete-eleves.svg)
+
+Les trois taux de formation par secteur ont chacun leur dénominateur. Leur moyenne arithmétique donnerait à chaque secteur le même poids, alors que les effectifs interrogés peuvent différer.
 
 ### Question 1 · Résumé analytique comparatif · 242 mots
 
