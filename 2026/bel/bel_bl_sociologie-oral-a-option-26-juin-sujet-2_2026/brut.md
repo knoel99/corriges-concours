@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles.
 
 ## La dette sociale
@@ -15,6 +17,10 @@ Une personne qui reçoit une prestation dit parfois avoir « cotisé toute sa vi
 **L’héritage commun comme fondement de la solidarité.** À la fin du XIXe siècle, le solidarisme de Léon Bourgeois souligne que chacun bénéficie d’institutions, de techniques et de connaissances accumulées avant sa naissance. La dette envers la société ne résulte pas d’un contrat individuellement négocié. L’idée de quasi-contrat cherche à fonder des obligations réciproques sur l’interdépendance. Celui qui bénéficie d’un réseau d’instruction contribue, par exemple, à sa transmission. Reste à déterminer la répartition de la charge. Deux diplômés aux revenus très différents ont reçu des enseignements voisins, mais n’ont ni la même capacité contributive ni nécessairement les mêmes bénéfices professionnels.
 
 **Une institution transforme les rapports entre donneur et receveur.** Dans une assurance sociale, des règles fixent les conditions d’ouverture d’un droit. Les cotisations et les risques sont mutualisés. Le versement à une personne malade ne se calcule donc pas comme le retrait de son épargne individuelle. Dans une assistance soumise à conditions de ressources, les justificatifs demandés peuvent faire éprouver différemment la dépendance à la collectivité. Les enquêtes aux guichets permettent d’observer comment un droit devient une demande jugée plus ou moins légitime par l’agent et par le demandeur lui-même. Le non-recours modifie ensuite la distribution réelle de la dépense.
+
+Une même personne peut se dire redevable à l’école publique, ouvrir un droit à prestation et détenir par ailleurs un titre de dette. Dans le premier cas elle reconnaît un héritage collectif. Dans le deuxième, elle peut faire valoir un droit auprès d’un organisme. Dans le troisième, le titre désigne un débiteur et fixe les conditions financières du remboursement.
+
+![Figure 1 — Nommer le créancier avant de parler de dette](figures/dette.svg)
 
 **Que signifie reporter une dette dans le temps ?** En France, la CADES créée en 1996 amortit des dettes sociales qui lui ont été transférées. Une dette financière a des créanciers identifiables, des échéances et des recettes affectées. La dette morale des générations les unes envers les autres n’a pas ces mêmes propriétés. Dire que « les jeunes paieront » sans examiner les prestations reçues, les prélèvements, les patrimoines transmis et les inégalités au sein d’une génération confond ces niveaux. On peut comparer plusieurs cohortes, à la fois selon leurs contributions et selon les risques dont la couverture les a protégées. Le langage de la dette éclaire la réciprocité, mais l’enquête doit encore dire qui est reconnu comme créancier et qui peut effectivement faire valoir ses droits.
 
