@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_mp-pc_espagnol_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Rencontre nocturne et morale de la frugalité",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_version_xeulc.pdf#page=6",
+    "sujet_sha256": "0e95612d3a4fe0813b6dd6751b3c5a0300f37231ada228521cc6fd91a310392c",
+    "sujet_expression": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mppc_lv_expressionecrite_xeulc.pdf",
+    "sujet_expression_sha256": "90b418bcca94b53f07c545a6c1cad740071b976e98078de58ea3509a11a3f1ca",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mppc_rap_eesp.pdf",
+    "rapport_sha256": "7fb68c575fdc048f2d59e462d38731a6cb9d721e0fd49ce4c1afb49347e33f8f",
+    "page_pdf": 6,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2013",
+    "code_garde": "XEULC"
+  },
+  "redaction": "Traduction dialoguée avec explicitation des accidents du texte imprimé et deux réponses espagnoles sur le rapport à l’argent, d’après le sujet et le rapport de Grégoire Bergerault.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/qui-voit-quoi.svg",
+      "legende": "Trois détails déplacent le point de vue au cours de la rencontre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction dialoguée avec explicitation des accidents du texte imprimé et deux réponses espagnoles sur le rapport à l’argent, d’après le sujet et le rapport de Grégoire Bergerault.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression écrite 1",
+      "Expression écrite 2"
+    ]
+  }
+}
