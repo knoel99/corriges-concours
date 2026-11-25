@@ -1,0 +1,77 @@
+{
+  "slug": "bel_al_francais-oral-tronc-commun-30-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral tronc commun 30 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral tronc commun 30 juin)",
+  "questions": 10,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/francais_3_30_juin_2026.pdf",
+    "sujet_sha256": "40b8b20a3199277f64e6af9e464ae6bedd04209fa86a635c7daf7f381ec0041f",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_tc.pdf",
+    "rapport_sha256": "642de42061edc4e7e20e11ce7e6f0453cc81ce94ab9e584322ef3d86cf5014f2",
+    "temoins": [
+      "https://fr.wikisource.org/wiki/La_Maison_de_Claudine/15",
+      "https://fr.wikisource.org/wiki/Le_Menteur_(Corneille,_Marty-Laveaux,_1862)/Acte_I",
+      "https://fr.wikisource.org/wiki/Le_Comte_de_Monte-Cristo/Chapitre_5",
+      "https://fr.wikisource.org/wiki/Les_Liaisons_dangereuses/Lettre_81",
+      "https://fr.wikisource.org/wiki/Fables_de_La_Fontaine_(%C3%A9d._1874)/Le_Renard,_les_Mouches,_et_le_H%C3%A9risson",
+      "https://fr.wikisource.org/wiki/Po%C3%A9sies_de_Fran%C3%A7ois_Malherbe/Consolation_%C3%A0_M._du_P%C3%A9rier",
+      "https://fr.wikisource.org/wiki/Les_%C5%92uvres_de_Fran%C3%A7ois_Rabelais_(%C3%89ditions_Marty-Laveaux)/Gargantua/13",
+      "https://fr.wikisource.org/wiki/Andromaque/%C3%89dition_Mesnard,_1865/Acte_I",
+      "https://fr.wikisource.org/wiki/Le_second_livre_des_Sonnets_pour_H%C3%A9l%C3%A8ne/Je_voy_mille_beautez",
+      "https://fr.wikisource.org/wiki/Histoire_de_ma_vie_(Sand,_Calmann-Levy_1855)/1/01"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-places.svg",
+      "question": "1",
+      "legende": "Trois places dans la nuit de Maternité"
+    },
+    {
+      "fichier": "figures/le-seuil.svg",
+      "question": "3",
+      "legende": "Ce que sait la salle du repas de fiançailles"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dix explications linéaires des passages distincts, schémas et dix questions de reprise avec leur réponse."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation des dix passages à la feuille et aux œuvres, contrôle des numérotations Rabelais et Ronsard, lecture des recommandations de la commission sur l’explication linéaire."
+    }
+  ]
+}
