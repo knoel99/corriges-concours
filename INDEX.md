@@ -1203,6 +1203,7 @@
 | 2023 | X | FUI-FF 2 | Physique | [md](2023/x/x_fui-ff-2_physique_2023/brut.md) | [md](2023/x/x_fui-ff-2_physique_2023/guide.md) |
 | 2024 | X | FUI-FF 2 | Physique | [md](2024/x/x_fui-ff-2_physique_2024/brut.md) | [md](2024/x/x_fui-ff-2_physique_2024/guide.md) |
 | 2025 | X | FUI-FF 2 | Physique | [md](2025/x/x_fui-ff-2_physique_2025/brut.md) | [md](2025/x/x_fui-ff-2_physique_2025/guide.md) |
+| 2010 | X | MP | Informatique (option) | [md](2010/x/x_mp_informatique-option_2010/brut.md) | [md](2010/x/x_mp_informatique-option_2010/guide.md) |
 | 1998 | X | MP | Informatique (option) | [md](1998/x/x_mp_informatique-option_1998/brut.md) | [md](1998/x/x_mp_informatique-option_1998/guide.md) |
 | 2024 | X | MP | Maths B | [md](2024/x/x_mp_maths-b_2024/brut.md) | [md](2024/x/x_mp_maths-b_2024/guide.md) |
 | 2025 | X | MP | Maths B | [md](2025/x/x_mp_maths-b_2025/brut.md) | [md](2025/x/x_mp_maths-b_2025/guide.md) |
