@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Le travail comme (re)production des rapports sociaux
 
 ## Que faire des parenthèses ?
@@ -34,7 +36,7 @@ Que montrerait une observation que ne révèle pas la liste des catégories prof
 
 ### D’un arrêt de travail à une modification des règles
 
-Pour un même conflit, distinguer la revendication, les concessions obtenues sur le moment et les changements de droit ou de classification. Les mécaniciennes qui fournissent les housses peuvent arrêter la chaîne. Cette interdépendance ne donne pas automatiquement une place durable aux ouvrières dans l’évaluation des emplois.
+Pour un même conflit, distinguer la revendication, les concessions obtenues sur le moment et les changements de droit ou de classification. À chaque date de la frise, associez la pièce qui permettrait d’établir le changement. Une grille des taux salariaux renseigne sur l’accord de 1968, le texte de loi sur la norme votée en 1970, une grille de classification des postes sur le reclassement obtenu en 1984. Les mécaniciennes qui fournissent les housses peuvent arrêter la chaîne. Cette interdépendance ne donne pas automatiquement une place durable aux ouvrières dans l’évaluation des emplois.
 
 ![Dagenham, de la paie au reclassement](figures/dagenham-reclassement.svg)
 

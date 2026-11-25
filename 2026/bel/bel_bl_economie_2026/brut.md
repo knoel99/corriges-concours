@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Que peut-on attendre d’une banque centrale ?
 
 ## Introduction
@@ -19,6 +21,10 @@ Une banque centrale émet la monnaie dans laquelle les banques règlent leurs de
 ## I. Donner aux agents une unité de compte et des moyens de paiement auxquels ils puissent se fier
 
 Lorsqu’une entreprise verse un salaire depuis une banque et que le salarié détient son compte dans une autre, le paiement crée une dette entre les deux établissements. Le règlement en monnaie centrale permet de solder cette dette. La possibilité d’échanger à parité les dépôts en euros de deux banques ne tient donc pas seulement à l’inscription du même signe monétaire sur deux relevés. Elle suppose que les paiements aboutissent et que les avoirs destinés à les régler circulent entre banques. La banque centrale fournit l’actif de règlement ultime et des infrastructures communes. La solidité des établissements et la garantie des dépôts concourent, sous des responsabilités institutionnelles distinctes, à la confiance dans la monnaie bancaire. Une première attente concerne donc la possibilité d’être payé aujourd’hui, y compris lorsque la banque du débiteur diffère de celle du créancier.
+
+Pour un salaire de 100 euros, la banque A débite de 100 le dépôt de l’employeur et cède 100 de réserves à B. La banque B reçoit ces réserves à son actif et crédite de 100 le dépôt du salarié à son passif. Les dépôts des clients et les réserves des banques changent chacun de titulaire. Les totaux restent les mêmes après ce règlement isolé, sans frais.
+
+![Figure 1 — Règlement interbancaire d’un salaire de 100 euros](figures/reglement-virement.svg)
 
 Une seconde concerne ce qu’un paiement futur permettra d’acheter. Pour négocier un contrat sur trois ans, une entreprise et ses salariés doivent pouvoir raisonner en pouvoir d’achat. Des variations fortes et imprévisibles du niveau général des prix redistribuent entre débiteurs et créanciers et raccourcissent l’horizon des contrats. En zone euro, l’article 127 du traité sur le fonctionnement de l’Union européenne fait de la stabilité des prix l’objectif principal du Système européen de banques centrales. La BCE a défini en 2021 une cible d’inflation symétrique de 2 % à moyen terme. Une cible d’inflation porte sur le rythme d’augmentation du niveau général des prix. Après une flambée, la retrouver ne ramène donc pas automatiquement le coût du panier de la ménagère à son niveau antérieur. Le choix du moyen terme prend au sérieux le délai nécessaire pour qu’une intervention infléchisse les dépenses et les prix.
 

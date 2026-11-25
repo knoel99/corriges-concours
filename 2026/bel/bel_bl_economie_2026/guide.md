@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Que peut-on attendre d’une banque centrale ?
 
 ## Entrer dans le sujet
@@ -20,7 +22,7 @@
 
 ### 1. Commencer par une opération concrète
 
-Suivez un paiement d’un client de la banque A à un client de B. Identifiez le passif qu’est chaque dépôt pour la banque commerciale et l’actif que sont pour elle les réserves. Le virement du schéma ne modifie pas le total des réserves des deux banques. Une fois établie cette infrastructure commune, développez le passage des taux de politique monétaire à la demande de crédit puis aux prix. Un relèvement du taux directeur n’a pas pour conséquence mécanique un mouvement immédiat de même amplitude dans chaque taux facturé aux ménages.
+Suivez un paiement d’un client de la banque A à un client de B. Identifiez le passif qu’est chaque dépôt pour la banque commerciale et l’actif que sont pour elle les réserves. Reconstituez les deux bilans après le virement de 100 euros. Chez A, la baisse du dépôt dû à l’employeur correspond à une baisse égale des réserves. Chez B, réserves et dette envers le salarié augmentent ensemble. On vérifie ainsi que chaque bilan reste équilibré et que le montant total des réserves est conservé. Une fois établie cette infrastructure commune, développez le passage des taux de politique monétaire à la demande de crédit puis aux prix. Un relèvement du taux directeur n’a pas pour conséquence mécanique un mouvement immédiat de même amplitude dans chaque taux facturé aux ménages.
 
 ![Un virement entre clients de deux banques](figures/reglement-virement.svg)
 

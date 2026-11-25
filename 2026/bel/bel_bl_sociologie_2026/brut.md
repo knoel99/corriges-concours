@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Le travail comme (re)production des rapports sociaux
 
 ## Introduction
@@ -39,6 +41,10 @@ Ces observations changent la manière de lire une différence statistique entre 
 Une division du travail assigne des places, mais elle fait également dépendre les places les unes des autres. Le produit ne sort que si des opérations réalisées dans des ateliers différents peuvent s’accorder. Des salariés apparemment remplaçables pris un à un peuvent posséder ensemble un savoir et une capacité d’arrêt sans lesquels le travail des autres est suspendu. Le passage de cette puissance potentielle à une action commune ne va pas de soi. Le risque de perdre son poste, la dispersion des lieux de travail et la division entre employeurs peuvent rendre coûteuse la rencontre de personnes qui subissent pourtant une même règle. À l’inverse, des moments et des lieux pour comparer les situations permettent de découvrir que ce qu’on croyait être une difficulté personnelle est une expérience partagée.
 
 En 1968, à Dagenham, 187 mécaniciennes de couture de Ford cessent le travail. Les housses de sièges qu’elles fabriquent sont nécessaires à la poursuite de la production automobile. Leur demande de reclassement s’appuie à la fois sur une compétence, qu’elles disent sous-évaluée, et sur cette interdépendance. Elle les oblige à contester la définition industrielle de la qualification autant que la différence de rémunération entre femmes et hommes. Deux temporalités apparaissent alors. En 1968, la reprise s’effectue sur une offre qui porte le taux des mécaniciennes à 92 % du taux masculin de la catégorie B. Le choix du dénominateur importe. Obtenir davantage à l’intérieur de B laisse intacte la définition du poste qui leur ferme la catégorie C. Un même accord peut donc déplacer le rapport salarial et reconduire, pour un temps, la hiérarchie des qualifications. La loi britannique sur l’égalité de rémunération est votée en 1970 dans un contexte de mobilisations plus large. Pourtant, il faut une nouvelle grève en 1984 pour que les mécaniciennes obtiennent le classement en catégorie C qu’elles demandaient. Le vote d’une norme, la modification du salaire et la reconnaissance d’une qualification ont des effets distincts et n’obéissent pas au même calendrier.
+
+![Figure 1 — Dagenham, du relèvement de la paie en 1968 au reclassement du poste en 1984](figures/dagenham-reclassement.svg)
+
+Seize ans séparent les deux accords d’atelier. Pendant cet intervalle, le salaire de référence de la catégorie B permet de mesurer une concession obtenue par les ouvrières. La catégorie attribuée au poste permet de suivre ce que cet accord laisse en suspens.
 
 Pourquoi cet écart ? Lorsqu’une direction consent à rapprocher les rémunérations à l’intérieur d’une catégorie, elle peut conserver le pouvoir de fixer les frontières entre les catégories. Reconnaître la technicité d’un travail oblige à réexaminer ces frontières et, potentiellement, les comparaisons avec d’autres postes. Le conflit transforme donc l’enjeu lui-même. La discussion sur ce qu’une ouvrière doit toucher se prolonge en discussion sur les gestes qui comptent, les personnes autorisées à les évaluer et les procédures qui rendent leur jugement contestable. Un rapport social change lorsque ses règles s’inscrivent différemment dans des institutions, mais aussi lorsque des personnes acquièrent une capacité durable à intervenir dans la production de ces règles.
 

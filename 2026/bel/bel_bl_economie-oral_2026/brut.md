@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Onze dossiers de la banque officielle de 93 pages, dans leur ordre de publication. Pour chaque tirage : 1 h 30 de préparation, puis 30 minutes devant le jury, dont 15 minutes d’exposé et 15 minutes d’entretien. Chaque texte ci-dessous propose un exposé complet ; les réponses possibles de l’entretien dépendent des questions du jury.
 
 ## Dossier 1 — Les échanges économiques empêchent-ils la guerre ?
@@ -421,6 +423,10 @@ Le patrimoine brut est la valeur des actifs détenus ; le patrimoine net déduit
 * * *
 
 Le patrimoine privé est très inégalement réparti. Début 2024, le document 1 indique une moyenne brute de 374 900 euros et une médiane de 205 100 euros. Une moyenne sensiblement supérieure à la médiane signale le poids du haut de la distribution. Le premier décile est à 6 200 euros et le neuvième à 857 700 euros : leur rapport est d'environ 138, mais ces seuils ne sont pas les moyennes des groupes pauvres et riches.
+
+![Figure 1 — Patrimoine brut des ménages en logement ordinaire, France hors Mayotte, début 2024](figures/patrimoine-seuils.svg)
+
+Entre le premier décile et la médiane, l’écart atteint 198 900 euros. Entre la médiane et le neuvième décile, il monte à 652 600 euros. Chaque intervalle couvre pourtant quarante points de rang dans la population des ménages. Cet étirement du haut de la distribution aide à comprendre pourquoi le patrimoine moyen dépasse la médiane.
 
 Les parts de masse confirment la concentration : les 10 % les mieux dotés en patrimoine brut en détiennent environ 48 %, les 1 % environ 15 %. La moitié la mieux dotée en possède 93 %, laissant 7 % à l'autre moitié. Ces groupes sont définis par le patrimoine, pas par le revenu annuel. On ne peut pas non plus additionner les pourcentages des différentes composantes : les personnes les plus dotées en actifs professionnels ne sont pas nécessairement les plus dotées en immobilier.
 
