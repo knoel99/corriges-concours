@@ -1,0 +1,96 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2007",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2007
+  },
+  "questions": 28,
+  "redaction": "Les 28 questions du problème sont traitées, dont les deux bonus, l’analyse des sept diagrammes de la page 6 et les limites de l’analogie quantique. Le rapport de Nicolas Taberlet demande une interprétation physique en complément des calculs.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2007/sujet-ecrit-2007-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "daaf934598b58b41162e380b12c8606fcfd8d42837691b56af22ccc6fd97ef43",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2007/rapport-2007-second-concours_ecrit_physique.pdf",
+    "rapport_sha256": "3043c52da16e806a64a419a3dcea5f6a77764a59e510349b885773d774632e41"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1.8",
+      "fichier": "figures/angle-energies.svg",
+      "legende": "Sur deux périodes, l’angle alterne et l’énergie passe deux fois par cycle de la forme cinétique à la forme potentielle. Pour rester lisible, la gravité est divisée par son propre maximum."
+    },
+    {
+      "numero": 2,
+      "question": "4.7",
+      "fichier": "figures/profils-chiraux.svg",
+      "legende": "Les deux profils effectuent des rotations de sens opposés. En dessous, neuf pendules du soliton sont vus de face, chaque tige dans son propre plan transverse, de gauche à droite le long du câble."
+    },
+    {
+      "numero": 3,
+      "question": "4.9",
+      "fichier": "figures/contraction-du-soliton.svg",
+      "legende": "La largeur est maximale au repos. Les points repèrent les couples vitesse-largeur (0 ; 1), (0,6 ; 0,8) et (0,8 ; 0,6) dans les unités réduites."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport de Nicolas Taberlet sur les 26 copies. Les deux éditions confrontent les résultats à leur interprétation physique, notamment le couplage, la largeur du front et les sept diagrammes bonus.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    },
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Les 28 questions du problème sont traitées, dont les deux bonus, l’analyse des sept diagrammes de la page 6 et les limites de l’analogie quantique. Le rapport de Nicolas Taberlet demande une interprétation physique en complément des calculs.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "3.1",
+      "3.2",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10",
+      "4.11",
+      "4.12"
+    ]
+  }
+}
