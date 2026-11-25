@@ -1,0 +1,60 @@
+{
+  "slug": "x_mp-pc_arabe_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Le professeur Friedman, Tarek et le pouvoir de la littérature",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. Le professeur Friedman, Tarek et le pouvoir de la littérature.",
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=5",
+    "sha256_sujet": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329",
+    "index": "https://www.alloschool.com/element/33546",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=5",
+        "sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=1",
+        "sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Les gestes qui accompagnent la parole de Friedman"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. Le professeur Friedman, Tarek et le pouvoir de la littérature."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
