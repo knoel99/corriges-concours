@@ -160,12 +160,16 @@
 | 2018 | ENS-PSL | Sélection internationale Lettres | Histoire — Renan et la nation (oral) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-renan-et-la-nation-oral_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-renan-et-la-nation-oral_2018/guide.md) |
 | 2017 | ENS Rennes | D1 | Allemand | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Anglais | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/guide.md) |
+| 2010 | ENS Rennes | D1 | Composition d’ordre économique | [md](2010/ens-rennes/ens-rennes_d1_composition-dordre-economique_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_composition-dordre-economique_2010/guide.md) |
 | 2012 | ENS Rennes | D1 | Composition d’ordre économique | [md](2012/ens-rennes/ens-rennes_d1_composition-dordre-economique_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_composition-dordre-economique_2012/guide.md) |
 | 2013 | ENS Rennes | D1 | Composition d’ordre économique | [md](2013/ens-rennes/ens-rennes_d1_composition-dordre-economique_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_composition-dordre-economique_2013/guide.md) |
+| 2010 | ENS Rennes | D1 | Droit civil | [md](2010/ens-rennes/ens-rennes_d1_droit-civil_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_droit-civil_2010/guide.md) |
 | 2012 | ENS Rennes | D1 | Droit civil | [md](2012/ens-rennes/ens-rennes_d1_droit-civil_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_droit-civil_2012/guide.md) |
 | 2013 | ENS Rennes | D1 | Droit civil | [md](2013/ens-rennes/ens-rennes_d1_droit-civil_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_droit-civil_2013/guide.md) |
+| 2010 | ENS Rennes | D1 | Droit commercial | [md](2010/ens-rennes/ens-rennes_d1_droit-commercial_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_droit-commercial_2010/guide.md) |
 | 2012 | ENS Rennes | D1 | Droit commercial | [md](2012/ens-rennes/ens-rennes_d1_droit-commercial_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_droit-commercial_2012/guide.md) |
 | 2013 | ENS Rennes | D1 | Droit commercial | [md](2013/ens-rennes/ens-rennes_d1_droit-commercial_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_droit-commercial_2013/guide.md) |
+| 2010 | ENS Rennes | D1 | Droit public | [md](2010/ens-rennes/ens-rennes_d1_droit-public_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_droit-public_2010/guide.md) |
 | 2012 | ENS Rennes | D1 | Droit public | [md](2012/ens-rennes/ens-rennes_d1_droit-public_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_droit-public_2012/guide.md) |
 | 2013 | ENS Rennes | D1 | Droit public | [md](2013/ens-rennes/ens-rennes_d1_droit-public_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_droit-public_2013/guide.md) |
 | 2017 | ENS Rennes | D1 | Espagnol | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/guide.md) |
@@ -1164,6 +1168,7 @@
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
+| 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
 | 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
