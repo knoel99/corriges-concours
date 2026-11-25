@@ -978,6 +978,7 @@
 | 2025 | X-ENS | MPI | Informatique C | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/brut.md) | [md](2025/x-ens/x-ens_mpi_informatique-c_2025/guide.md) |
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
+| 2015 | X-ENS | PC | Chimie A | [md](2015/x-ens/x-ens_pc_chimie-a_2015/brut.md) | [md](2015/x-ens/x-ens_pc_chimie-a_2015/guide.md) |
 | 2017 | X-ENS | PC | Chimie A | [md](2017/x-ens/x-ens_pc_chimie-a_2017/brut.md) | [md](2017/x-ens/x-ens_pc_chimie-a_2017/guide.md) |
 | 2020 | X-ENS | PC | Chimie A | [md](2020/x-ens/x-ens_pc_chimie-a_2020/brut.md) | [md](2020/x-ens/x-ens_pc_chimie-a_2020/guide.md) |
 | 2021 | X-ENS | PC | Chimie A | [md](2021/x-ens/x-ens_pc_chimie-a_2021/brut.md) | [md](2021/x-ens/x-ens_pc_chimie-a_2021/guide.md) |
