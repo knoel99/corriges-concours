@@ -214,6 +214,7 @@
 | 2026 | BEL | AL | Philosophie (oral tronc commun 17 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 18 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-18-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 19 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-19-juin_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral tronc commun 20 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-20-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-20-juin_2026/guide.md) |
 | 2026 | BEL | AL | Étude de texte français (Lyon) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/brut.md) | [md](2026/bel/bel_al_etude-de-texte-francais-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Études cinématographiques | [md](2026/bel/bel_al_etudes-cinematographiques_2026/brut.md) | [md](2026/bel/bel_al_etudes-cinematographiques_2026/guide.md) |
 | 2026 | BEL | AL | Études théâtrales | [md](2026/bel/bel_al_etudes-theatrales_2026/brut.md) | [md](2026/bel/bel_al_etudes-theatrales_2026/guide.md) |
