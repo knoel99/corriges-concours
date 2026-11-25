@@ -1,0 +1,67 @@
+{
+  "slug": "ens_mp-pc_anglais-lv1_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LV1)",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Dépenses de santé aux États-Unis et évaluation de la recherche",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "80.12PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mppc_sujet_langue_vivante_1.pdf#page=3",
+    "sujet_sha256": "54d0900d478637b442e3ecac217a1f803f6b95a9197e52e427d80cf31b3e1058",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2008/rapport-2008-pc_ecrit_langue_vivante_1_anglais.pdf",
+    "rapport_jury_sha256": "a0ab631958f172980f8f6be76822e08dd5991dd6e1671b58522bca53936ce312",
+    "precision": "Version de l’éditorial de Scientific American de février 2008, avec les trois coupes du cahier. Les chiffres et les prévisions sont restitués à la date de publication. Les deux questions et le rapport annuel ont été consultés."
+  },
+  "mots_expression": {
+    "1": 133,
+    "2": 141
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/denominateurs.svg",
+      "legende": "Éviter d’appliquer un pourcentage au mauvais dénominateur."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/financement.svg",
+      "legende": "Le délai et la nature de l’indicateur dépendent du projet."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Dépenses de santé aux États-Unis et évaluation de la recherche.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
