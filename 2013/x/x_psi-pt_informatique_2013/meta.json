@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2013",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2013,
+    "duree_heures": 2
+  },
+  "questions": 12,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2013.pdf",
+    "sujet_sha256": "2b6057b5bda1eacd9dd7426977b71d2def654f830b02ef2d7989b3f47d5ee2f2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/limites-bassins.svg",
+      "question": "4",
+      "legende": "Les bords 0 et 6 et les pics stricts 1 et 4 découpent trois bassins. Les points successifs de hauteur nulle ne sont pas des pics."
+    },
+    {
+      "fichier": "figures/gloutons.svg",
+      "question": "8",
+      "legende": "Deux placements sur le même profil avec des poteaux de hauteur 2. Les pointillés représentent le sol surélevé de la garde minimale 1. La ligne pleine supérieure représente le fil."
+    },
+    {
+      "fichier": "figures/placement-optimal.svg",
+      "question": "12",
+      "legende": "Le meilleur fil passe par le point 3. Sa longueur vaut environ 5,83 unités, contre 6,24 pour le glouton au plus loin et 6,81 pour le glouton en avant."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des douze questions. Lecture du fac-similé paginé et de ses figures. Contrôle de 2 186 combinaisons paysage/marge, test des liaisons dans les deux sens et confrontation de la programmation dynamique et de la reconstruction à l’énumération des placements. Trois figures originales."
+    }
+  ]
+}
