@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_anglais-le2_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LE2)",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Puce de paiement implantée en discothèque et protection de la vie privée",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "UC 528",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_etrangere_2.pdf#page=3",
+    "sujet_sha256": "3591b865ff600e9a1da38a819b3d68405c9a905cb43f3fc1b5ef6183ff6011c6",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2005/rapport-2005-pc_ecrit_langue_etrangere_2_anglais.pdf",
+    "rapport_jury_sha256": "139dae3fc9a33bcefafe2d26d736642ae376909e60814d8126ec96a8dbd98409",
+    "precision": "L’article de The Observer du 16 janvier 2005 paraît en page 3 du cahier. Les deux coupes sont conservées. Le rapport sur l’anglais LE2 précise les difficultés de lexique et la portée de la question."
+  },
+  "mots_expression": {
+    "1": 137
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/identifiant.svg",
+      "legende": "Le numéro identifie le client. La base de données donne son sens à ce numéro."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/contexte.svg",
+      "legende": "La réponse confronte le bénéfice de sécurité et les usages ultérieurs des traces."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Puce de paiement implantée en discothèque et protection de la vie privée.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
