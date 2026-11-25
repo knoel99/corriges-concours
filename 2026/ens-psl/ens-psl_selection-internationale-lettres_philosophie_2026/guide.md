@@ -8,11 +8,15 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Les deux moments demandés
 
 Le livret demande de commencer par expliquer le passage de Hume, puis de développer une réflexion personnelle. La première partie doit donc identifier ce qui, dans le texte, explique le paradoxe. La deuxième peut se demander ce qui se passe lorsque les deux mouvements changent d’importance, ou lorsque l’appréciation favorable de l’œuvre ne se présente pas comme un plaisir.
 
 ![Figure 1 — La relation entre les deux mouvements chez Hume](figures/mouvements-esthetiques.svg)
+
+Comparer un même événement raconté de manière plate puis avec éloquence. La variation porte sur la représentation. Elle sert à tester comment l’émotion pénible peut contribuer à l’expérience esthétique décrite par Hume.
 
 Le meilleur test de lecture porte sur le mot « conversion ». Si le spectateur ne ressentait aucune peine, qu’y aurait-il à convertir ? Si le plaisir était seulement plus fort que la douleur, comment expliquer qu’augmenter l’émotion puisse renforcer la réussite esthétique ? Répondre à ces deux questions empêche de réduire le passage à la seule distance de la fiction.
 
