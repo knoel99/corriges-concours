@@ -155,6 +155,11 @@
 | 2017 | BEL | AL | Chinois (thème Lyon) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
+| 2019 | ENS Rennes | D1 | Allemand | [md](2019/ens-rennes/ens-rennes_d1_allemand_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_allemand_2019/guide.md) |
+| 2019 | ENS Rennes | D1 | Anglais | [md](2019/ens-rennes/ens-rennes_d1_anglais_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_anglais_2019/guide.md) |
+| 2019 | ENS Rennes | D1 | Espagnol | [md](2019/ens-rennes/ens-rennes_d1_espagnol_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_espagnol_2019/guide.md) |
+| 2019 | ENS Rennes | D1 | Italien | [md](2019/ens-rennes/ens-rennes_d1_italien_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_italien_2019/guide.md) |
+| 2019 | ENS Rennes | D1 | Russe | [md](2019/ens-rennes/ens-rennes_d1_russe_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_russe_2019/guide.md) |
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (commentaire et traduction) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (thème Lyon) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/guide.md) |
