@@ -1,0 +1,49 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2016
+  },
+  "questions": 44,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuve-a-options-math-d1-2016_1476109252936-pdf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-math-d1-2016_1478511613675-pdf",
+    "sha256_sujet": "27065b5adf048930126094277763604aff7033f44c0e52ee45539f788f0c5995",
+    "sha256_rapport_jury": "d7e43260ba481f04dc1665fc7c0fea9766f158f2994c264351eded835dff0f31",
+    "sha256_apercu_sujet": "7dac4ef4d4f54b91255219884f9f15d40fd49400e582f3c70ca877da6c09adad",
+    "sha256_apercu_rapport_jury": "fbf269031948a3ba8640c69f8596366331072a4f1f4378364a0629c8ab4743f4"
+  },
+  "figures": [
+    {
+      "fichier": "figures/age-regression.svg",
+      "question": "1.1.a",
+      "legende": "Les six moyennes et leur droite de régression. Un intervalle de quatre rangs a graphiquement la même longueur qu’un intervalle de deux ans en ordonnée."
+    },
+    {
+      "fichier": "figures/age-histogramme.svg",
+      "question": "1.2.b",
+      "legende": "Les aires donnent les pourcentages des classes. Le rectangle étalon de largeur deux ans et de hauteur une unité représente 2 %."
+    },
+    {
+      "fichier": "figures/courbes-tangentes.svg",
+      "question": "2.I.7",
+      "legende": "Les maxima sont à la même hauteur, en 2 pour C1 et en 1 pour C2. Les tangentes pointillées au croisement ont des pentes opposées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir des sept pages du sujet spécifique et du rapport de jury. Calcul reproductible de la régression avec décalage dans les rangs, histogramme d’aires, fonctions et tangentes, probabilités conditionnelles, coût du contrat et deux lectures de la loi log-normale. Trois figures.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
