@@ -1,0 +1,41 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques",
+    "annee": 2024
+  },
+  "questions": 41,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2024_Maths_2A%20Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "6dda3414d7468eaa25f6d82f0967e42cb29197eab0d50710425e424a34123ce2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rectangle-de-rang.svg",
+      "question": "Algèbre I.9",
+      "legende": "Dans cet exemple, les lignes 2 à 4 des trois premières colonnes forment un rectangle de rang 2. Les deux pivots du rectangle sont en positions (3,1) et (4,3)."
+    },
+    {
+      "fichier": "figures/grille-rationnelle.svg",
+      "question": "Analyse III.4.d",
+      "legende": "Un maillage rationnel fini permet de contrôler simultanément les valeurs. Les écarts entre un point x et son voisin du maillage sont bornés par le même module de continuité."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions des deux problèmes du 27 février 2024. Opérations triangulaires sur tout corps, invariants de rang et orbites de drapeaux, adjoints dans un Hilbert complexe, compacité diagonale, Volterra, extractions et adjoint. Schéma de la preuve de convergence uniforme.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
