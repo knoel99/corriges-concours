@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_allemand_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Allemand",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en allemand de 241 et 240 mots. Récit de l’écolière arrivée d’Argentine, photographie de Görlitz, intentions de retour et analyse des conditions d’installation durable.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-allemand-2021_1631710089351-pdf",
+    "sujet_sha256": "7aef70f8e1b515f62c1253c0dd69f257230780711935882c410bc66573a48d7c",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-allemand-ecrit-d-e-2021_1634310297073-pdf",
+    "rapport_sha256": "3cc038f04dcd586fe060e4084d5277af22a367f32ad51fc1aeaafea419e30417"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/rueckkehrentscheidung.svg",
+      "legende": "Interesse an einer Rückkehr und ein tatsächlicher Umzug sind unterschiedliche Schritte."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport attend pour la première réponse une reformulation ordonnée des raisons de partir et revenir. Les notes donnent le genre de la narratrice et le nom officiel du rapport allemand."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en allemand de 241 et 240 mots. Récit de l’écolière arrivée d’Argentine, photographie de Görlitz, intentions de retour et analyse des conditions d’installation durable."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Welches sind die Beweggründe, Hoffnungen und Befürchtungen der Ostdeutschen, die nach Westen abgewandert waren und jetzt in die neuen Länder zurückkehren wollen?",
+      "III.2. Meinen Sie, dass die potentiellen Rückkehrer für die neuen Länder eine Chance sind? Begründen Sie Ihre Antwort!"
+    ]
+  }
+}
