@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d-e_droit-civil_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit civil",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "L’incapable face au contrat",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-droit-civil-2021_1631710064517-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-d-e-2021_1634139957430-pdf",
+    "sujet_sha256": "7cdeac7980983fee098c645340b15dda05350aecbb978e41e998df59e8e80ccb",
+    "rapport_sha256": "c44d90142ceae15517ca1f1e5d5e3d51baff8695e6e1bf31d8846602c7458abe",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "apercu_sujet_sha256": "8dd6e032c596ae83519c5caab21979c63b9d448b3b9d1ff3ea374f848c458709",
+    "apercu_rapport_sha256": "e5e3f162f519c29fbe88aa5b9631ed3d64884d572be4e0c365e166a9852459b0",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 21 - 331"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/participation-a-lacte.svg",
+      "legende": "La nature de l’acte, le régime de protection et son éventuel aménagement guident la qualification."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/sanctions-article-465.svg",
+      "legende": "L’article 465 prévoit aussi au 4° l’acte passé seul par le tuteur ou le curateur en excès de ses pouvoirs."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « L’incapable face au contrat » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « L’incapable face au contrat » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

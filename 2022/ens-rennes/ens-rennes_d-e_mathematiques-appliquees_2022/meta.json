@@ -1,0 +1,44 @@
+{
+  "slug": "ens-rennes_d-e_mathematiques-appliquees_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2022
+  },
+  "questions": 51,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-math-d-e-2022_1657700542172-pdf",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-du-jury-mathematiques-d-e-2022_1668097871100-pdf",
+    "sha256_sujet": "e327ee950ad11c90c14a109f8ef13490d36543a64dafe24373ea3a4a04a53aef",
+    "sha256_rapport_jury": "c156c35228e2cd30adc99c13170c6b2411a5cc74f9a92d8a8b32740b7eb67f0d",
+    "sha256_apercu_sujet": "30aeffe62b390f2e9c70be44b26ec1e67c9cd87f58957d707039893d9c83fab0",
+    "sha256_apercu_rapport_jury": "2297ff8bd974dae97ae1ad6293f51b998936af83beeaef446834a7d9757b443a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/prix-et-demande.svg",
+      "question": "1.I.1",
+      "legende": "Le nuage diminue rapidement puis s’aplatit. La courbe est l’ajustement exponentiel obtenu en 1.I.4. Une unité de prix correspond graphiquement à 30 acheteurs."
+    },
+    {
+      "fichier": "figures/trois-courbes-logarithmiques.svg",
+      "question": "3.I.7",
+      "legende": "Les trois maxima sont marqués et les courbes ont une tangente commune en (1,0). Le rapport des échelles est de dix entre les longueurs correspondant à une unité verticale et horizontale."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le PDF et le rapport 2022, contrôle des statistiques aux arrondis demandés, tableaux de bénéfice et loi de Z3 par enumeration des états, récurrence de fiabilité, variations, intégrales et espérance. Deux graphiques aux rapports d’échelles imposés.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

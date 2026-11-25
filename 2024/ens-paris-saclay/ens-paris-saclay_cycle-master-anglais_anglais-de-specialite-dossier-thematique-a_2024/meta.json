@@ -1,0 +1,80 @@
+{
+  "slug": "ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Cycle master anglais",
+    "matiere": "Anglais de spécialité (dossier thématique A)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Anglais/2024_Sujet_2A%20anglais_%C3%A9preuve%20th%C3%A9matique_sujet%20A.pdf",
+    "sujet_sha256": "e99a84c51688a04bb9d7a257778d5ecf6d1c40ede24bc66ff83cef61645aa14a",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Anglais/2024_Rapport_2A%20anglais_%C3%A9preuve%20th%C3%A9matique.pdf",
+    "rapport_sha256": "fc848b4d1d3e835d0956ce29de5e683a9eec277203be69d714f9ce898f0adef5",
+    "publications": [
+      {
+        "libelle": "JoAnne Yates et Wanda J. Orlikowski, Genres of Organizational Communication (1992), notice et résumé des auteures",
+        "url": "https://doi.org/10.5465/amr.1992.4279545"
+      },
+      {
+        "libelle": "Marianne Grove Ditlevsen, Telling the Story of Danisco’s Annual Reports (2012), résumé de la publication",
+        "url": "https://doi.org/10.1177/1050651911421132"
+      },
+      {
+        "libelle": "Berna Hendriks et Margot van Mulken, Dear Worker (2012), notice du dépôt de l’université Radboud",
+        "url": "https://repository.ubn.ru.nl/handle/2066/101632"
+      },
+      {
+        "libelle": "Dear Worker, texte du chapitre rendu disponible par les auteures",
+        "url": "https://www.academia.edu/2529200/Dear_worker_A_corpus_analysis_of_internal_ceo_letters"
+      }
+    ],
+    "precision": "Le dossier public donne les consignes et les références de trois adaptations, sans leurs passages. Le rapport du jury précise la place de la diachronie, des genres et de leurs buts. La synthèse s’appuie sur les résumés des deux articles de Yates et Orlikowski et de Ditlevsen, ainsi que sur le texte du chapitre de Hendriks et van Mulken. Les phrases retenues et les coupes des trois feuillets de concours restent inconnues."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Exposé de synthèse sur les trois documents adaptés, à partir des publications identifiées et du rapport du jury"
+    ],
+    "questions_non_traitees": [
+      "Limites et texte exact des trois adaptations distribuées"
+    ],
+    "motif": "Le dossier public donne les consignes et les références de trois adaptations, sans leurs passages. Le rapport du jury précise la place de la diachronie, des genres et de leurs buts. La synthèse s’appuie sur les résumés des deux articles de Yates et Orlikowski et de Ditlevsen, ainsi que sur le texte du chapitre de Hendriks et van Mulken. Les phrases retenues et les coupes des trois feuillets de concours restent inconnues."
+  },
+  "figures": [
+    {
+      "fichier": "figures/genre.svg",
+      "legende": "Reconnaître un genre dans une situation",
+      "question": "Exposé de synthèse"
+    },
+    {
+      "fichier": "figures/portee.svg",
+      "legende": "Ce que les données de l’entreprise permettent de conclure",
+      "question": "Exposé de synthèse"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport, confrontation aux publications identifiées, rédaction des deux éditions françaises et de deux schémas. Le dossier public donne les consignes et les références de trois adaptations, sans leurs passages. Le rapport du jury précise la place de la diachronie, des genres et de leurs buts. La synthèse s’appuie sur les résumés des deux articles de Yates et Orlikowski et de Ditlevsen, ainsi que sur le texte du chapitre de Hendriks et van Mulken. Les phrases retenues et les coupes des trois feuillets de concours restent inconnues."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

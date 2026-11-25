@@ -182,6 +182,7 @@
 | 2026 | BEL | AL | Français (oral option 26 juin) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral option 30 juin) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-option-30-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 19 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-19-juin_2026/guide.md) |
+| 2026 | BEL | AL | Français (oral tronc commun 23 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-23-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 24 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-24-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 26 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-26-juin_2026/guide.md) |
 | 2026 | BEL | AL | Français (oral tronc commun 29 juin) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/brut.md) | [md](2026/bel/bel_al_francais-oral-tronc-commun-29-juin_2026/guide.md) |
@@ -569,6 +570,7 @@
 | 2025 | ENS de Lyon | Second concours | Chimie | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_chimie_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Chimie | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_chimie_2026/guide.md) |
 | 2006 | ENS de Lyon | Second concours | Géosciences | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2006/brut.md) | [md](2006/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2006/guide.md) |
+| 2007 | ENS de Lyon | Second concours | Géosciences | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/brut.md) | [md](2007/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2007/guide.md) |
 | 2008 | ENS de Lyon | Second concours | Géosciences | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Géosciences | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/guide.md) |
 | 2010 | ENS de Lyon | Second concours | Géosciences | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/guide.md) |
@@ -642,6 +644,7 @@
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2025 | ENS | MP/MPI | Maths C | [md](2025/ens/ens_mp-mpi_maths-c_2025/brut.md) | [md](2025/ens/ens_mp-mpi_maths-c_2025/guide.md) |
 | 2026 | ENS | MP-MPI | Maths C | [md](2026/ens/ens_mp-mpi_maths-c_2026/brut.md) | [md](2026/ens/ens_mp-mpi_maths-c_2026/guide.md) |
+| 2014 | ENS | MP | Informatique-mathématiques | [md](2014/ens/ens_mp_informatique-mathematiques_2014/brut.md) | [md](2014/ens/ens_mp_informatique-mathematiques_2014/guide.md) |
 | 2015 | ENS | MP | Informatique-mathématiques | [md](2015/ens/ens_mp_informatique-mathematiques_2015/brut.md) | [md](2015/ens/ens_mp_informatique-mathematiques_2015/guide.md) |
 | 2016 | ENS | MP | Informatique-mathématiques | [md](2016/ens/ens_mp_informatique-mathematiques_2016/brut.md) | [md](2016/ens/ens_mp_informatique-mathematiques_2016/guide.md) |
 | 2017 | ENS | MP | Informatique-mathématiques | [md](2017/ens/ens_mp_informatique-mathematiques_2017/brut.md) | [md](2017/ens/ens_mp_informatique-mathematiques_2017/guide.md) |
@@ -674,6 +677,8 @@
 | 2025 | ENS | PC | Physique-chimie | [md](2025/ens/ens_pc_physique-chimie_2025/brut.md) | [md](2025/ens/ens_pc_physique-chimie_2025/guide.md) |
 | 2026 | ENS | PC | Physique-chimie | [md](2026/ens/ens_pc_physique-chimie_2026/brut.md) | [md](2026/ens/ens_pc_physique-chimie_2026/guide.md) |
 | 1999 | ENS | Ulm-Lyon | Informatique | [md](1999/ens/ens_ulm-lyon_informatique_1999/brut.md) | [md](1999/ens/ens_ulm-lyon_informatique_1999/guide.md) |
+| 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique A) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/guide.md) |
+| 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique B) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Composition d’ordre économique | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/guide.md) |
 | 2026 | ENS Rennes | D-E | Composition d’ordre économique | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/brut.md) | [md](2026/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2026/guide.md) |
@@ -897,6 +902,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2014 | X-ENS | MP | Informatique A | [md](2014/x-ens/x-ens_mp_informatique-a_2014/brut.md) | [md](2014/x-ens/x-ens_mp_informatique-a_2014/guide.md) |
 | 2015 | X-ENS | MP | Informatique A | [md](2015/x-ens/x-ens_mp_informatique-a_2015/brut.md) | [md](2015/x-ens/x-ens_mp_informatique-a_2015/guide.md) |
 | 2016 | X-ENS | MP | Informatique A | [md](2016/x-ens/x-ens_mp_informatique-a_2016/brut.md) | [md](2016/x-ens/x-ens_mp_informatique-a_2016/guide.md) |
 | 2017 | X-ENS | MP | Informatique A | [md](2017/x-ens/x-ens_mp_informatique-a_2017/brut.md) | [md](2017/x-ens/x-ens_mp_informatique-a_2017/guide.md) |
