@@ -1073,8 +1073,10 @@
 | 2009 | ENS | MP-PC | Chinois (LE2) | [md](2009/ens/ens_mp-pc_chinois-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_chinois-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Chinois (LE2) | [md](2010/ens/ens_mp-pc_chinois-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_chinois-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Espagnol (langue étrangère B) | [md](2011/ens/ens_mp-pc_espagnol-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_espagnol-langue-etrangere-b_2011/guide.md) |
+| 2005 | ENS | MP-PC | Espagnol (LE2) | [md](2005/ens/ens_mp-pc_espagnol-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_espagnol-le2_2005/guide.md) |
 | 2009 | ENS | MP-PC | Espagnol (LE2) | [md](2009/ens/ens_mp-pc_espagnol-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_espagnol-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LE2) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/guide.md) |
+| 2005 | ENS | MP-PC | Espagnol (LV1) | [md](2005/ens/ens_mp-pc_espagnol-lv1_2005/brut.md) | [md](2005/ens/ens_mp-pc_espagnol-lv1_2005/guide.md) |
 | 2009 | ENS | MP-PC | Espagnol (LV1) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LV1) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/guide.md) |
 | 2005 | ENS | MP-PC | Français | [md](2005/ens/ens_mp-pc_francais_2005/brut.md) | [md](2005/ens/ens_mp-pc_francais_2005/guide.md) |
@@ -1085,7 +1087,11 @@
 | 2010 | ENS | MP-PC | Grec ancien (LE2) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Grec (langue étrangère B) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/guide.md) |
 | 2011 | ENS | MP-PC | Italien (langue étrangère B) | [md](2011/ens/ens_mp-pc_italien-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_italien-langue-etrangere-b_2011/guide.md) |
+| 2005 | ENS | MP-PC | Italien (LE2) | [md](2005/ens/ens_mp-pc_italien-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_italien-le2_2005/guide.md) |
+| 2006 | ENS | MP-PC | Italien (LE2) | [md](2006/ens/ens_mp-pc_italien-le2_2006/brut.md) | [md](2006/ens/ens_mp-pc_italien-le2_2006/guide.md) |
 | 2009 | ENS | MP-PC | Italien (LE2) | [md](2009/ens/ens_mp-pc_italien-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_italien-le2_2009/guide.md) |
+| 2005 | ENS | MP-PC | Italien (LV1) | [md](2005/ens/ens_mp-pc_italien-lv1_2005/brut.md) | [md](2005/ens/ens_mp-pc_italien-lv1_2005/guide.md) |
+| 2006 | ENS | MP-PC | Italien (LV1) | [md](2006/ens/ens_mp-pc_italien-lv1_2006/brut.md) | [md](2006/ens/ens_mp-pc_italien-lv1_2006/guide.md) |
 | 2011 | ENS | MP-PC | Japonais (langue étrangère B) | [md](2011/ens/ens_mp-pc_japonais-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_japonais-langue-etrangere-b_2011/guide.md) |
 | 2009 | ENS | MP-PC | Japonais (LE2) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_japonais-le2_2009/guide.md) |
 | 2011 | ENS | MP-PC | Latin (langue étrangère B) | [md](2011/ens/ens_mp-pc_latin-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_latin-langue-etrangere-b_2011/guide.md) |
@@ -1118,8 +1124,10 @@
 | 2009 | ENS | MP-PC | Portugais (LE2) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_portugais-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Portugais (LE2) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Russe (langue étrangère B) | [md](2011/ens/ens_mp-pc_russe-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_russe-langue-etrangere-b_2011/guide.md) |
+| 2005 | ENS | MP-PC | Russe (LE2) | [md](2005/ens/ens_mp-pc_russe-le2_2005/brut.md) | [md](2005/ens/ens_mp-pc_russe-le2_2005/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LE2) | [md](2009/ens/ens_mp-pc_russe-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LE2) | [md](2010/ens/ens_mp-pc_russe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-le2_2010/guide.md) |
+| 2005 | ENS | MP-PC | Russe (LV1) | [md](2005/ens/ens_mp-pc_russe-lv1_2005/brut.md) | [md](2005/ens/ens_mp-pc_russe-lv1_2005/guide.md) |
 | 2009 | ENS | MP-PC | Russe (LV1) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_russe-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LV1) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/guide.md) |
 | 2009 | ENS | MP | Informatique | [md](2009/ens/ens_mp_informatique_2009/brut.md) | [md](2009/ens/ens_mp_informatique_2009/guide.md) |
@@ -1621,14 +1629,23 @@
 | 2006 | X | MP-PC | Anglais | [md](2006/x/x_mp-pc_anglais_2006/brut.md) | [md](2006/x/x_mp-pc_anglais_2006/guide.md) |
 | 2007 | X | MP-PC | Anglais | [md](2007/x/x_mp-pc_anglais_2007/brut.md) | [md](2007/x/x_mp-pc_anglais_2007/guide.md) |
 | 2008 | X | MP-PC | Anglais | [md](2008/x/x_mp-pc_anglais_2008/brut.md) | [md](2008/x/x_mp-pc_anglais_2008/guide.md) |
+| 2009 | X | MP-PC | Anglais | [md](2009/x/x_mp-pc_anglais_2009/brut.md) | [md](2009/x/x_mp-pc_anglais_2009/guide.md) |
+| 2010 | X | MP-PC | Anglais | [md](2010/x/x_mp-pc_anglais_2010/brut.md) | [md](2010/x/x_mp-pc_anglais_2010/guide.md) |
 | 2005 | X | MP-PC | Arabe | [md](2005/x/x_mp-pc_arabe_2005/brut.md) | [md](2005/x/x_mp-pc_arabe_2005/guide.md) |
 | 2006 | X | MP-PC | Arabe | [md](2006/x/x_mp-pc_arabe_2006/brut.md) | [md](2006/x/x_mp-pc_arabe_2006/guide.md) |
 | 2007 | X | MP-PC | Arabe | [md](2007/x/x_mp-pc_arabe_2007/brut.md) | [md](2007/x/x_mp-pc_arabe_2007/guide.md) |
 | 2008 | X | MP-PC | Arabe | [md](2008/x/x_mp-pc_arabe_2008/brut.md) | [md](2008/x/x_mp-pc_arabe_2008/guide.md) |
+| 2009 | X | MP-PC | Arabe | [md](2009/x/x_mp-pc_arabe_2009/brut.md) | [md](2009/x/x_mp-pc_arabe_2009/guide.md) |
+| 2010 | X | MP-PC | Arabe | [md](2010/x/x_mp-pc_arabe_2010/brut.md) | [md](2010/x/x_mp-pc_arabe_2010/guide.md) |
 | 2005 | X | MP-PC | Français | [md](2005/x/x_mp-pc_francais_2005/brut.md) | [md](2005/x/x_mp-pc_francais_2005/guide.md) |
 | 2006 | X | MP-PC | Français | [md](2006/x/x_mp-pc_francais_2006/brut.md) | [md](2006/x/x_mp-pc_francais_2006/guide.md) |
 | 2007 | X | MP-PC | Français | [md](2007/x/x_mp-pc_francais_2007/brut.md) | [md](2007/x/x_mp-pc_francais_2007/guide.md) |
 | 2008 | X | MP-PC | Français | [md](2008/x/x_mp-pc_francais_2008/brut.md) | [md](2008/x/x_mp-pc_francais_2008/guide.md) |
+| 2009 | X | MP-PC | Français | [md](2009/x/x_mp-pc_francais_2009/brut.md) | [md](2009/x/x_mp-pc_francais_2009/guide.md) |
+| 2010 | X | MP-PC | Français | [md](2010/x/x_mp-pc_francais_2010/brut.md) | [md](2010/x/x_mp-pc_francais_2010/guide.md) |
+| 2005 | X | MP-PC | Italien | [md](2005/x/x_mp-pc_italien_2005/brut.md) | [md](2005/x/x_mp-pc_italien_2005/guide.md) |
+| 2006 | X | MP-PC | Italien | [md](2006/x/x_mp-pc_italien_2006/brut.md) | [md](2006/x/x_mp-pc_italien_2006/guide.md) |
+| 2005 | X | MP-PC | Russe | [md](2005/x/x_mp-pc_russe_2005/brut.md) | [md](2005/x/x_mp-pc_russe_2005/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
@@ -1644,6 +1661,9 @@
 | 2011 | X | PC | Physique A | [md](2011/x/x_pc_physique-a_2011/brut.md) | [md](2011/x/x_pc_physique-a_2011/guide.md) |
 | 2012 | X | PC | Physique A | [md](2012/x/x_pc_physique-a_2012/brut.md) | [md](2012/x/x_pc_physique-a_2012/guide.md) |
 | 2013 | X | PC | Physique A | [md](2013/x/x_pc_physique-a_2013/brut.md) | [md](2013/x/x_pc_physique-a_2013/guide.md) |
+| 2014 | X | PC | Physique A | [md](2014/x/x_pc_physique-a_2014/brut.md) | [md](2014/x/x_pc_physique-a_2014/guide.md) |
+| 2016 | X | PC | Physique A | [md](2016/x/x_pc_physique-a_2016/brut.md) | [md](2016/x/x_pc_physique-a_2016/guide.md) |
+| 2017 | X | PC | Physique A | [md](2017/x/x_pc_physique-a_2017/brut.md) | [md](2017/x/x_pc_physique-a_2017/guide.md) |
 | 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
 | 2013 | X | PSI-PT | Informatique | [md](2013/x/x_psi-pt_informatique_2013/brut.md) | [md](2013/x/x_psi-pt_informatique_2013/guide.md) |
 | 2014 | X | PSI-PT | Informatique | [md](2014/x/x_psi-pt_informatique_2014/brut.md) | [md](2014/x/x_psi-pt_informatique_2014/guide.md) |
