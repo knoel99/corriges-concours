@@ -1,0 +1,82 @@
+{
+  "slug": "x-ens_mp-pc-psi_composition-francaise_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Composition française",
+    "annee": 2016,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Oreste et le consentement au transport passionnel",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mppc_sujet_franc.pdf",
+    "sha256_sujet": "879ec2ce48a74ba8a657a070a94ac6ff3d0152fe31296cf5d12e3678f466b762",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP-PC_rap_Efra.pdf",
+    "sha256_rapport_jury": "d792a781cab51f3901c2db7cec325ae2a5fe0206b0e62d3cd1d9cc1e81ba04f2",
+    "index_sujet": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2016/",
+    "code_garde": "XEULCR",
+    "oeuvres_au_programme": [
+      "Jean Racine, Andromaque",
+      "David Hume, Dissertation sur les passions",
+      "Honoré de Balzac, La Cousine Bette"
+    ],
+    "portee_rapport": "Le sujet présente le vers avec « transport ». Le rapport de la banque et la version ENS-PSL ont chacun onze pages et des empreintes différentes. Aux pages 4–5, tous deux confrontent « transport » à « destin » et analysent la lucidité d’Oreste. La banque présente le débat tragique comme un arrière-plan possible et mentionne des copies ayant mobilisé Foucault. La version ENS-PSL renvoie explicitement, sur ces points, au dossier de l’édition au programme. La dissertation porte sur le vers effectivement donné.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_mppc_sujet_franc.pdf",
+        "sha256": "879ec2ce48a74ba8a657a070a94ac6ff3d0152fe31296cf5d12e3678f466b762",
+        "pages": 1
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP-PC_rap_Efra.pdf",
+        "sha256": "d792a781cab51f3901c2db7cec325ae2a5fe0206b0e62d3cd1d9cc1e81ba04f2",
+        "pages": 11
+      },
+      {
+        "role": "rapport complémentaire",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/16_mppc_rap_efr.pdf",
+        "sha256": "08ec12bedd2cdac5c77d02cd34b8da08d9ce8052fa80c348c4b8d75a09fd07eb",
+        "pages": 11
+      },
+      {
+        "role": "autre publication du sujet",
+        "url": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_mppc_sujet_fr.pdf",
+        "sha256": "1d22d145b0f92d7061395d8852955a2c7acef8f8713e466c5d8567ff48396d7d",
+        "pages": 1
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/lucidite-du-passionne.svg",
+      "question": "Dissertation",
+      "legende": "Oreste peut décrire son trouble, interpréter un signe et devoir répondre de son acte. La lucidité sur le premier point ne garantit pas les deux autres."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation sur le vers de la première version, analyse de ses deux verbes, lecture croisée des actes I, IV et V de Racine, de la psychologie de Hume et des trajectoires de Bette et de Hulot. Édition guidée, schéma et comparaison des deux rapports institutionnels."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}
