@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2018,
+    "duree_heures": 4
+  },
+  "questions": 22,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_INFO_sujet_InfoMath.pdf",
+    "sujet_sha256": "4489070db708caeac2840d4981c9ca9f5d809db5ac48983dec3cb0141476ab12",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_info_rap_eInfoMath.pdf",
+    "rapport_sha256": "a8aa10835364046d07be586bac74fe7cbf28be1f33b51352343985a4e48fbbc9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q15-graphe-etiquete.svg",
+      "question": "Q15",
+      "legende": "Graphe de la règle Ψ. Le chiffre porté par chaque flèche donne le bit de sortie du triple correspondant. Les boucles portent 0."
+    },
+    {
+      "fichier": "figures/q16-graphe-produit.svg",
+      "question": "Q16",
+      "legende": "Graphe H des couples de fenêtres, avec les seize sommets placés comme dans le sujet."
+    },
+    {
+      "fichier": "figures/q16-graphe-elague.svg",
+      "question": "Q16",
+      "legende": "Graphe D après suppression de J, L, N et P. Les coordonnées des douze sommets restants sont conservées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 22 questions et sous-questions, lecture du sujet et du rapport officiels, reconstruction intégrale des graphes G, H et D. Distinction entre isolement, composante singleton et élagage bi-infini. Code Caml éprouvé sur les 256 règles binaires élémentaires, avec décision indépendante par automate des parties et comparaison sur les configurations périodiques de périodes un à dix."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_francais-oral-option-20-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral option 20 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral option 20 juin)",
+  "questions": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_du_20.06.2026_-_option_lettres_modernes.pdf",
+    "sujet_sha256": "1a0b73132cd01c6a60c9301789fa8de1e1dcd9d4094dcc16f1c0ab51ee38e233",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_option.pdf",
+    "rapport_sha256": "04fcaa40ab13c6eac4d7e088720ddf7dcd67e08d6b2687ead570c7a033111b58",
+    "references": [
+      "https://fr.wikisource.org/wiki/L%E2%80%99Heptam%C3%A9ron_des_nouvelles_(1559)/Texte_entier",
+      "https://fr.wikisource.org/wiki/L%E2%80%99Heptam%C3%A9ron_des_nouvelles",
+      "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)/Texte_entier",
+      "https://www.ebooksgratuits.com/details.php?book=3306"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/couleurs.svg",
+      "question": "1",
+      "legende": "Quatre fonctions de la couleur au couchant"
+    },
+    {
+      "fichier": "figures/voir-le-corps.svg",
+      "question": "2 et 5",
+      "legende": "Qui connaît la mort, et à quel moment ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 6 comparaisons littéraires entre les deux passages imposés, choix de lectures brèves et accompagnement pour l’entretien."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des intitulés et des appariements contre le fascicule, lecture des passages des œuvres concernées et confrontation aux remarques du rapport du jury."
+    }
+  ]
+}

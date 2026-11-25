@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-c_2013",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths C",
+    "annee": 2013
+  },
+  "questions": 28,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mp_math_c_ulc.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2013/MPI/13_mpi_rap_emathc.pdf",
+    "sha256_sujet": "d20643871c2cbc792581ebc2b088de05ef76de6c3e2d100f5ed71039f3e793d7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/rotation-de-collision.svg",
+      "question": "V.4.i",
+      "legende": "La collision conserve la somme des carrés des deux vitesses. La rotation inverse échange les produits avant et après collision."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions à partir du sujet ULC et du rapport. Vérification des 28 réponses, contre-exemples aux hypothèses de III.1 et preuve sous les hypothèses effectivement construites en partie IV. Schéma des vitesses avant et après rotation.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
