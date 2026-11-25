@@ -1,0 +1,78 @@
+{
+  "slug": "ens_mp-pc_japonais-le2_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Japonais (LE2)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "intitule": "Le projet de transfert du marché aux poissons de Tsukiji",
+  "questions": 2,
+  "redaction": "Traduction de l’extrait intégral sur Tsukiji, restitution des trois comparaisons de concentrations et de la métaphore finale, synthèse sur le projet de transfert dans la langue demandée.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_le2.pdf#page=8",
+    "sha256_sujet": "f46f3fc56ede28104327530e51415ff9d26e0fde65bc9ea704a143f78112288e",
+    "page": 8,
+    "code": "91.07M-P",
+    "reference_du_texte": "Extrait adapté du journal Asahi, sans date de publication sur la page.",
+    "etablissements": "Paris et Cachan",
+    "indexes": [
+      "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+      "https://www.ens.psl.eu/en/node/829"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I",
+      "fichier": "figures/trois-comparaisons.svg",
+      "legende": "Les trois multiplicateurs du passage ne sont pas rapportés à la même valeur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction de l’extrait intégral sur Tsukiji, restitution des trois comparaisons de concentrations et de la métaphore finale, synthèse sur le projet de transfert dans la langue demandée."
+    },
+    {
+      "phase": "relecture_corrige",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Collation indépendante de la version et de la synthèse avec la p. 8. Contrôle notamment des trois multiplicateurs, de leurs bases et de la mention de l’Asahi."
+    },
+    {
+      "phase": "retouches",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Ajout de la référence à l’Asahi sous la version française."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I",
+      "II"
+    ]
+  }
+}
