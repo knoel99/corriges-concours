@@ -35,7 +35,7 @@
     "rapport_jury_sha256": "e345af15d95cc3c27d81d52f5200a9f117cb25e962858e4bb90f3500ea46e066",
     "bernardin": "https://fr.wikisource.org/wiki/Paul_et_Virginie/Texte_entier"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -101,6 +101,19 @@
       "modifications": true,
       "perimetre": "Confrontation du texte de Butor et du rapport aux Comices chez Flaubert et à l’ouverture de Paul et Virginie. Rectification de l’attribution d’un imparfait, du régime de témoignage chez Duras et du statut des ruines ; schéma de lecture.",
       "tour": 3
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 4,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Butor et les Lettres portugaises, distinction entre renvoyer les objets et adresser la rupture."
     }
   ]
 }
