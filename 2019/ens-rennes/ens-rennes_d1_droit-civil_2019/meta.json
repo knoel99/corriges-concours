@@ -1,0 +1,84 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2019",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "L’équilibre contractuel",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-droit-civil-d1-2019_1574759854165-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-civil-2019_1571846299202-pdf",
+    "sujet_sha256": "d9413c64fc25b18f470b768081aa01ae69aa70e776b89fdb8b8626fb5a0c3cea",
+    "rapport_sha256": "ba4edc3d3e8901bf27567ae780df01234faacf695b4ac05eee38a6fb8045e652",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2019",
+    "apercu_sujet_sha256": "049cdc22219b81a8d35895bbe0238de24c30707ca6ce83723af72760b36903c2",
+    "apercu_rapport_sha256": "f9a34fa750f71bdbde10584ba23abb2394cfb8b8deab9a187d1f7284d42d8377",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 19 - 82",
+    "droit_civil_session": {
+      "1103": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032040777/2019-04-01",
+      "1104": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032040772/2019-04-01",
+      "1110": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036829815/2019-04-01",
+      "1112-1": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032007138/2019-04-01",
+      "1119": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032040866/2019-04-01",
+      "1128": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032040911/2019-04-01",
+      "1130": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032040901/2019-04-01",
+      "1143": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036829824/2019-04-01",
+      "1164": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041148/2019-04-01",
+      "1165": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036829839/2019-04-01",
+      "1168": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041125/2019-04-01",
+      "1169": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041120/2019-04-01",
+      "1170": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041115/2019-04-01",
+      "1171": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036829836/2019-04-01",
+      "1178": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041243/2019-04-01",
+      "1184": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041210/2019-04-01",
+      "1186": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041200/2019-04-01",
+      "1193": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041314/2019-04-01",
+      "1195": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041302/2019-04-01",
+      "1218": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032041431/2019-04-01",
+      "1223": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036829848/2019-04-01",
+      "1231-5": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032010131/2019-04-01",
+      "1674": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006442310/2019-04-01"
+    }
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/trois-controles-du-contenu.svg",
+      "legende": "Les articles 1169, 1170 et 1171 visent des objets et des sanctions distincts."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/incidents-en-execution.svg",
+      "legende": "La difficulté économique, l’empêchement et la disparition peuvent produire des effets différents."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « L’équilibre contractuel » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « L’équilibre contractuel » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
