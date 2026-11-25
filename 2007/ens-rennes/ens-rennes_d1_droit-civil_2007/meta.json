@@ -1,0 +1,50 @@
+{
+  "slug": "ens-rennes_d1_droit-civil_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit civil",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Les prérogatives du propriétaire",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf",
+    "sujet_sha256": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code civil en avril 2007": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070721/2007-04-01/"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "I",
+      "fichier": "figures/usage-du-verger.svg",
+      "legende": "Le démembrement répartit les décisions relatives au même verger."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur les facultés d’usage, de jouissance et de disposition, l’accession, l’exclusion des tiers, la défense en justice et la répartition des pouvoirs entre usufruitier, nu-propriétaire et indivisaires.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur les facultés d’usage, de jouissance et de disposition, l’accession, l’exclusion des tiers, la défense en justice et la répartition des pouvoirs entre usufruitier, nu-propriétaire et indivisaires."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
