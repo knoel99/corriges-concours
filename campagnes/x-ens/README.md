@@ -2,6 +2,21 @@
 
 Le registre recense les sujets identifiés de Polytechnique, de l’ENS-PSL, de l’ENS de Lyon, de l’ENS Paris-Saclay et de l’ENS Rennes. Chaque ligne donne l’identifiant du corrigé, la modalité et le lien vers le sujet. Une épreuve partagée entre plusieurs écoles ou filières compte une fois. Le bilan distingue les écrits, les oraux et les projets pratiques. L’identification des archives se poursuit. [Registre des sujets](epreuves.tsv)
 
+### Écoles et banques de concours
+
+Les lignes « X », « ENS-PSL » (Ulm), « ENS de Lyon », « ENS Paris-Saclay » et « ENS Rennes » regroupent les sujets attribués à ces écoles. Les archives portent parfois le nom historique d’ENS de Cachan. Les lignes « X-ENS » et « ENS » regroupent les sujets communs selon l’intitulé de l’épreuve et la session.
+
+| Banque du registre | Épreuves retenues |
+| --- | --- |
+| BEL | Épreuves littéraires. Le tableau regroupe sous ce libellé les voies A/L et B/L, dont la banque Lettres et sciences économiques et sociales (BLSES). |
+| Banque PT | Épreuves de la voie PT retenues par l’X, Paris-Saclay ou Rennes, selon la matière. |
+| Centrale-Supélec | Épreuves retenues pour l’admissibilité TSI de l’X. |
+| CCINP | Épreuves de la voie TSI retenues par Paris-Saclay et Rennes. |
+| Agro-Véto | Épreuves de la voie BCPST retenues pour le concours BIO de l’X. |
+| BCE | Épreuves prises en compte par Paris-Saclay pour le concours Économie-gestion, option II (ECG), via les admissibilités HEC Paris, ESSEC ou ESCP. |
+
+Les rattachements des banques extérieures ci-dessus sont documentés pour la session 2026. Une épreuve commune compte une fois dans le total. [Notice de l’X 2026](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Notice%20du%20concours%202026%20publi%C3%A9e.pdf) · [Notice inter-ENS 2026](https://www.ens.psl.eu/sites/default/files/notice_interens_2026_mise_en_ligne_vf10022026_.pdf) · [Admissibilité de Paris-Saclay via la BCE](admissibilite-saclay-ecg-2026.tsv)
+
 Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir les éléments suivants.
 
 - Une session **GPT-6.2 Astra Ultra** a rédigé ou relu sur le fond le corrigé brut et le corrigé guidé en les confrontant au sujet et, s’il existe, au rapport correspondant.
