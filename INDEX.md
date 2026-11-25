@@ -149,8 +149,18 @@
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2017 | BEL | AL | Allemand (commentaire et traduction) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Histoire — Ginzburg et les preuves de l’historien (oral) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-ginzburg-et-les-preuves-de-lhistorien-oral_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-ginzburg-et-les-preuves-de-lhistorien-oral_2018/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Histoire — Renan et la nation (oral) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-renan-et-la-nation-oral_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-renan-et-la-nation-oral_2018/guide.md) |
 | 2017 | ENS Rennes | D1 | Allemand | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Anglais | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/guide.md) |
+| 2012 | ENS Rennes | D1 | Composition d’ordre économique | [md](2012/ens-rennes/ens-rennes_d1_composition-dordre-economique_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_composition-dordre-economique_2012/guide.md) |
+| 2013 | ENS Rennes | D1 | Composition d’ordre économique | [md](2013/ens-rennes/ens-rennes_d1_composition-dordre-economique_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_composition-dordre-economique_2013/guide.md) |
+| 2012 | ENS Rennes | D1 | Droit civil | [md](2012/ens-rennes/ens-rennes_d1_droit-civil_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_droit-civil_2012/guide.md) |
+| 2013 | ENS Rennes | D1 | Droit civil | [md](2013/ens-rennes/ens-rennes_d1_droit-civil_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_droit-civil_2013/guide.md) |
+| 2012 | ENS Rennes | D1 | Droit commercial | [md](2012/ens-rennes/ens-rennes_d1_droit-commercial_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_droit-commercial_2012/guide.md) |
+| 2013 | ENS Rennes | D1 | Droit commercial | [md](2013/ens-rennes/ens-rennes_d1_droit-commercial_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_droit-commercial_2013/guide.md) |
+| 2012 | ENS Rennes | D1 | Droit public | [md](2012/ens-rennes/ens-rennes_d1_droit-public_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_droit-public_2012/guide.md) |
+| 2013 | ENS Rennes | D1 | Droit public | [md](2013/ens-rennes/ens-rennes_d1_droit-public_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_droit-public_2013/guide.md) |
 | 2017 | ENS Rennes | D1 | Espagnol | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Italien | [md](2017/ens-rennes/ens-rennes_d1_italien_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_italien_2017/guide.md) |
 | 2017 | BEL | AL | Allemand (thème Lyon) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/guide.md) |
