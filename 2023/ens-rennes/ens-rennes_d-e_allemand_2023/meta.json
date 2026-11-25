@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_allemand_2023",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Allemand",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en allemand de 236 et 242 mots. Crises climatiques, relations sino-allemandes, boycott des retransmissions de la Coupe du monde et responsabilité des institutions sportives.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-allemand-d-e-2023_1682689391162-pdf",
+    "sujet_sha256": "38c84c92886723e4ce5dbf963f670cf1fb36cd7b6acdbb6014e389e68a1b5e97",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2023-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-e-crit-allemand-d-e-2023_1698423068759-pdf",
+    "rapport_sha256": "109a9ada7c401dad9519d7cea0a72dbf4fce108aa9d041141a09181cfc9073cf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/formen-des-protests.svg",
+      "legende": "Die Gruppen teilen einen Anlass, setzen aber verschiedene Mittel ein und verfolgen unterschiedlich weit reichende Ziele."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des remarques sur la concession et les relatives en thème, et sur la diversité des acteurs, des motivations et des formes d’action dans la première réponse."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en allemand de 236 et 242 mots. Crises climatiques, relations sino-allemandes, boycott des retransmissions de la Coupe du monde et responsabilité des institutions sportives."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Warum werden im Artikel die Widerstandsinitiativen gegen die Fußballweltmeisterschaft in Qatar als heterogen bezeichnet?",
+      "III.2. Halten Sie es für richtig, dass Sport sich in Politik einmischt?"
+    ]
+  }
+}
