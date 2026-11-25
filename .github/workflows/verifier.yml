@@ -8,6 +8,8 @@ permissions:
 jobs:
   forme:
     runs-on: ubuntu-latest
+    outputs:
+      publier_corriges: ${{ steps.changements.outputs.publier_corriges }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -18,6 +20,20 @@ jobs:
       - name: Vérifier la traçabilité des épreuves X et ENS modifiées
         if: github.event_name == 'pull_request'
         run: python3 scripts/couverture_astra.py --depuis "origin/$GITHUB_BASE_REF" --exiger
+
+      - name: Identifier les changements à publier sur le site
+        id: changements
+        if: github.event_name == 'push'
+        env:
+          AVANT: ${{ github.event.before }}
+        run: |
+          publier=true
+          # Le site lit directement le registre et ses bilans sur GitHub.
+          if git cat-file -e "${AVANT}^{commit}" 2>/dev/null &&
+             git diff --quiet "$AVANT" "$GITHUB_SHA" -- . ':(exclude)campagnes/x-ens/**'; then
+            publier=false
+          fi
+          echo "publier_corriges=$publier" >> "$GITHUB_OUTPUT"
 
   tests:
     runs-on: ubuntu-latest
@@ -58,7 +74,7 @@ jobs:
   # GitHub limité à knoel99/prepa, droit « Actions : écriture » ou « Contents :
   # écriture »), l'étape est sautée et la publication du site part la nuit suivante.
   publier:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && needs.forme.outputs.publier_corriges != 'false'
     needs: [forme, tests]
     runs-on: ubuntu-latest
     steps:
