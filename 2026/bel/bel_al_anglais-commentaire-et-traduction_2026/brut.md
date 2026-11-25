@@ -10,6 +10,8 @@
 
 **Retouches** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Question directrice** — How does Shelley make the limits of Victor's testimony felt in the very intensity of his account?
 
 ## Commentaire
@@ -29,6 +31,12 @@ What can Victor pass on to anyone else? The question arises most sharply in two 
 For Victor himself, the difficulty lies in escaping what he has seen. In the room his narrative breaks out of its past tense. The question of why he is “here” (l. 31) belongs to the man who has survived to tell the story. Wherever he turns, he still sees the same shape (l. 34). His companions needed him to show them something that had gone. Walton, and through him the reader, must listen to a man for whom what happened that night will never quite be past. The precision of the description makes that burden intelligible even as the account reveals how decisively Victor misread the danger while Elizabeth lived.
 
 Elizabeth dies between a question her husband leaves unanswered and a cry he understands at once. Shelley's telling makes us inhabit both moments. We can recognise the truth of Victor's grief from the way a gesture, a patch of moonlight or a glimpse of a body persists in his language. That same language preserves enough of Elizabeth's question for us to hear what went unanswered while she could still speak.
+
+**Repère de lecture**
+
+At the window, pointing works differently for Victor and for the crowd. Victor can see what the creature points at. By the time he points towards the lake, the others can see the place he indicates but have to take his word for what happened there.
+
+![Figure 1 — Le geste répété à la fenêtre](figures/deux-gestes.svg)
 
 ## Version — lignes 22 à 36
 

@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## I. Version
 
 James Dickey, *Deliverance* (1970).
@@ -57,3 +59,9 @@ Claire spoke louder.
 “Madame Ladon!”
 
 She saw the old lady's back stiffen. Slowly the old lady’s face turned towards Claire. The old lady had brown eyes and gold-rimmed glasses. She raised her eyes to Claire's face and looked thoroughly embarrassed as she took in this young woman in front of her, so tall, so long-limbed, twice her own height, who was calling her by name. Madame Ladon did not recognise Claire straight away. She was scrutinising her face when a man in a Swiss hat came up and ordered Claire to go back to her place in the queue.
+
+**Repère de lecture**
+
+Dans le thème de Quignard, *Nothing* après le premier appel maintient la perception de Claire au premier plan. Lorsque la cliente finit par se retourner, le texte décrit son embarras. La traduction doit laisser au lecteur le soin d’interpréter cette réaction.
+
+![Figure 1 — Les deux temps de la reconnaissance](figures/marche.svg)
