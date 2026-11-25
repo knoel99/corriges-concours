@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d-e_droit-public_2020",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Droit public",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Commentaire de CE, 22 novembre 2019, n° 422655 — Information du public, carence du maire et responsabilité de l’État",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuve-a-options-d-e-2020_1605522582741-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-public-d-e-2020_1604400093156-pdf",
+    "sujet_sha256": "8a01a2ebdf4196ecfdca28beaad06dce351393ab6d717ac56043cd412294a58d",
+    "rapport_sha256": "65df0c8f64401c46652f6ec9c16df6193e8e98cb78dafe528464488a4a7be944",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2020-1",
+    "apercu_sujet_sha256": "5a3eb69fc9e1ff40ab41997e3c74d645ee38ff2d1fdc487610c7d069f233fd4b",
+    "apercu_rapport_sha256": "f82e7bae01f27cb63235605c56026aa71e77f668079412d382f12ea283213f86",
+    "page_pdf": 4,
+    "fin_pdf": 6,
+    "reference_garde": "R 20 - 81"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/maire-et-substitution.svg",
+      "legende": "Au point 3, l’information est jugée appropriée. La condition préalable à la substitution invoquée manque."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/office-du-juge-de-cassation.svg",
+      "legende": "Le rejet ne fournit pas une appréciation scientifique générale des mesures discutées."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Commentaire de CE, 22 novembre 2019, n° 422655 — Information du public, carence du maire et responsabilité de l’État » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Commentaire de CE, 22 novembre 2019, n° 422655 — Information du public, carence du maire et responsabilité de l’État » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
