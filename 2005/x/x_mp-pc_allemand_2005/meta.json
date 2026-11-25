@@ -1,0 +1,64 @@
+{
+  "slug": "x_mp-pc_allemand_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "Le retour à Vienne et l’ambivalence du progrès",
+  "questions": 3,
+  "redaction": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=1",
+    "sha256_sujet": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249",
+    "index": "https://web.archive.org/web/20090415070752/http://www.polytechnique.fr:80/concours/sujets/sujet05/sujet05.htm",
+    "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "reference_des_textes": "Ingeborg Bachmann, Das dreißigste Jahr (1961). Étienne Klein, « Science et progrès », La science nous menace-t-elle ? (2003).",
+    "page_version": "1",
+    "url_historique_rapport_version": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version_AL.pdf",
+    "url_historique_rapport_expression": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit_AL.pdf",
+    "precision_garde": "Garde identifiée par les noms des écoles, la session et les filières, sans code alphanumérique imprimé.",
+    "pages_sujet": "1",
+    "capture_sujet": "2006-11-25T01:06:40Z",
+    "url_originale_sujet": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf",
+    "sujet_expression": "https://web.archive.org/web/20061125010606id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+    "sha256_sujet_expression": "0315993b329ac8a956c2b507bb40ddd56bd2ad4cc1c1a1abaf175d4f1588491f",
+    "pages_sujet_expression": "1–2",
+    "capture_sujet_expression": "2006-11-25T01:06:06Z",
+    "url_originale_sujet_expression": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+    "rapport_jury": null,
+    "precision_rapport": "L’index historique de l’École polytechnique annonçait deux rapports d’allemand, sur la version et sur l’expression écrite. Aucun des deux PDF n’a été retrouvé."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/retour-a-vienne.svg",
+      "legende": "Le voyageur reconnaît sa ville sans retrouver immédiatement ses anciens liens."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Q1",
+      "Q2"
+    ]
+  }
+}
