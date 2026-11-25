@@ -1,0 +1,60 @@
+{
+  "slug": "x-ens_mp-pc_italien_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "intitule": "Réveillon à la montagne et avenir des bibliothèques",
+  "questions": 3,
+  "redaction": "Version intégrale de Benedetta Cibrario et deux réponses rédigées en italien sur la sélection des sources et les missions des bibliothèques.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=6",
+    "sha256_sujet": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=6",
+        "sha256": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20EXPRESSION%20ECRITE_LVA1.pdf",
+        "sha256": "b4f0b94bd49cfc0bc2707f8f351d07b353230dc049539355b8080371de2781af"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/engagement.svg",
+      "legende": "Le même soir du 31 décembre envisagé par deux personnages."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale de Benedetta Cibrario et deux réponses rédigées en italien sur la sélection des sources et les missions des bibliothèques."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
