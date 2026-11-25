@@ -28,9 +28,9 @@ Ne serait-ce que pour cela, j’ai accueilli l’Amérique à bras ouverts.
 
 ## II.1. Comment Darnton conçoit-il la fonction d’une bibliothèque ?
 
-For Darnton, a research library answers a need that extends well beyond the university. People need help finding relevant information and turning it into knowledge. Mercier's imaginary librarian solves the problem of abundance by destroying almost everything after a learned committee has extracted what it considers true. Darnton reads the story as evidence that readers already felt overwhelmed in the eighteenth century. Mercier himself believed that printed books could advance society. A modern search engine offers another way of dealing with abundance. It can make millions of digitised volumes accessible while allowing each reader to pursue a different question. Google Book Search is already building something like this library. What links the old institution and its possible digital successor is the service they offer to someone trying to find a way through the material.
+For Darnton, a research library answers a need that extends well beyond the university. People need help finding relevant information and turning it into knowledge. Mercier's imaginary librarian solves the problem of abundance by destroying almost everything after a learned committee has extracted what it considers true. Darnton reads the story as evidence that readers already felt overwhelmed in the eighteenth century. Mercier himself believed that printed books could advance society. A modern search engine offers another way of dealing with abundance. It can make millions of digitised volumes accessible while allowing each reader to pursue a different question. Google Book Search is already building something like this library. Print and digital collections could thus coexist. Both could help readers find their way through the material.
 
-*134 mots.*
+*126 mots.*
 
 ![Figure 2 — L’élimination, l’indexation et l’interprétation répondent différemment à la surabondance.](figures/selection.svg)
 
@@ -46,6 +46,6 @@ I would judge a library by what people are able to find out with its help. On th
 
 ![Figure 3 — La recherche en ligne, la consultation sur place et l’aide humaine servent des étapes distinctes.](figures/archives.svg)
 
-Aucun rapport propre à cet écrit d’anglais de 2011 n’a été identifié dans les sources consultées.
+Le rapport de Kathryn English et Athéna Lavabre porte sur l’expression écrite. Le rapport distinct de version n’a pas été identifié dans les sources consultées.
 
-[Version en anglais](https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=3) · [Expression écrite commune, réponses en anglais](https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20EXPRESSION%20ECRITE_LVA1.pdf)
+[Version en anglais](https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=3) · [Expression écrite commune, réponses en anglais](https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20EXPRESSION%20ECRITE_LVA1.pdf) · [Rapport d’expression écrite](https://upls.fr/wp-content/uploads/2014/03/X-ENS_2011_rapport_anglais_expression.pdf)
