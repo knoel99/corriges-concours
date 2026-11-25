@@ -1358,6 +1358,7 @@
 | 2022 | X-ENS | PC | Physique B | [md](2022/x-ens/x-ens_pc_physique-b_2022/brut.md) | [md](2022/x-ens/x-ens_pc_physique-b_2022/guide.md) |
 | 2026 | X-ENS | PC | Physique B | [md](2026/x-ens/x-ens_pc_physique-b_2026/brut.md) | [md](2026/x-ens/x-ens_pc_physique-b_2026/guide.md) |
 | 2026 | X-ENS | PSI | Maths PSI | [md](2026/x-ens/x-ens_psi_maths-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_maths-psi_2026/guide.md) |
+| 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
 | 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
 | 2013 | X | PSI-PT | Informatique | [md](2013/x/x_psi-pt_informatique_2013/brut.md) | [md](2013/x/x_psi-pt_informatique_2013/guide.md) |
