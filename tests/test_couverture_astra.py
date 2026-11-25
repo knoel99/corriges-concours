@@ -172,3 +172,11 @@ def test_libelle_de_matiere_change_l_adresse_de_publication(tmp_path):
     meta["epreuve"]["matiere"] = "Maths PC"
     fichier.write_text(json.dumps(meta))
     assert couverture.verifier_paire(dossier) == ("signature présente", {signature})
+
+def test_exemple_du_jury_rattache_sans_ajouter_une_epreuve():
+    sujets = couverture.registre()
+    slug = "bel_al_grec-oral-option-exemple-du-jury-ploutos_2026"
+    assert slug not in sujets
+    assert couverture.exemples_documentes(sujets)[slug] == "exemple du jury"
+    with pytest.raises(ValueError):
+        couverture.exemples_documentes({**sujets, slug: "oral"})
