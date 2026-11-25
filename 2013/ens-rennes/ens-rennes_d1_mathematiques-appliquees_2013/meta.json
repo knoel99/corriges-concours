@@ -1,0 +1,52 @@
+{
+  "slug": "ens-rennes_d1_mathematiques-appliquees_2013",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Mathématiques appliquées",
+    "annee": 2013
+  },
+  "questions": 53,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-13d1-option_1421750188201-pdf#page=3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a_13d1_maths_1373363082492.pdf",
+    "sha256_sujet": "a50ad777db8251c22f605ee8b2d1f6325443c38588caa8d54d34cac25d74f973",
+    "sha256_rapport_jury": "7dd9b41359c6e53c93117921e7b69572b2ccb2515960fbfa2ad972c0b9876c12"
+  },
+  "figures": [
+    {
+      "fichier": "figures/trois-courbes-logarithmiques.svg",
+      "question": "1.II.6",
+      "legende": "Chaque courbe monte depuis son asymptote verticale, atteint le point de tangente horizontale puis redescend vers son extrémité droite."
+    },
+    {
+      "fichier": "figures/attente-par-mois.svg",
+      "question": "2.1.a",
+      "legende": "Les moyennes mensuelles augmentent de 17 à 52 minutes, avec un écart marqué au quatrième mois."
+    },
+    {
+      "fichier": "figures/heure-des-arrivees.svg",
+      "question": "2.3.b",
+      "legende": "Les aires donnent les effectifs. La plage de 16 h à 17 h a la plus forte densité."
+    },
+    {
+      "fichier": "figures/durees-attente.svg",
+      "question": "2.4.b",
+      "legende": "Chaque aire représente les personnes de la classe de durée. Le rectangle témoin à droite représente dix visites."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions, de 1.I.1 à 3.IV.4.c. Confrontation au cahier et au rapport 2013. Domaine et cas de la borne droite, graphiques des courbes, nuage et deux histogrammes, recalcul des régressions, conditionnements et lois.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
