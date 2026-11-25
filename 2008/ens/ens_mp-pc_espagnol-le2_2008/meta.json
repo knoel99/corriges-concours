@@ -1,0 +1,72 @@
+{
+  "slug": "ens_mp-pc_espagnol-le2_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LE2)",
+    "annee": 2008,
+    "modalite": "écrit",
+    "duree_heures": 2
+  },
+  "intitule": "Une Espagnole meurt au cours d’une opération de chirurgie esthétique à Buenos Aires",
+  "questions": 2,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mp-pc_sujet_langue_etrangere_2.pdf#page=6",
+    "sha256_sujet": "9b7aa31d65f4d9a11653560330e033bd5d37f5c14a60dab16297ed778620f613",
+    "etablissements_imprimes": "ENS de Paris et de Cachan",
+    "page_version": "6",
+    "texte_support": "D’après elpais.es, 7 février 2008.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mp-pc_sujet_langue_etrangere_2.pdf#page=6",
+        "sha256": "9b7aa31d65f4d9a11653560330e033bd5d37f5c14a60dab16297ed778620f613",
+        "pages": "6",
+        "pages_document": 12,
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mp-pc_sujet_langue_etrangere_2.pdf",
+        "date_capture_utc": "sans capture"
+      }
+    ],
+    "code_garde": "80.10PM"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/faits-temoignage-et-portee.svg",
+      "question": "1",
+      "legende": "Le fait rapporté, le contexte économique et l’accusation finale ne relèvent pas du même degré de certitude. La traduction doit rendre sensible cette différence."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « Une Espagnole meurt au cours d’une opération de chirurgie esthétique à Buenos Aires », réponse personnelle en espagnol, indications de traduction et de rédaction, schéma sur Le fait rapporté, le contexte économique et l’accusation finale ne relèvent pas du même degré de certitude. La traduction doit rendre sensible cette différence."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  },
+  "bareme": {
+    "version": 15,
+    "expression": 5
+  }
+}
