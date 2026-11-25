@@ -1,0 +1,72 @@
+{
+  "slug": "x_mp-pc_portugais_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Portugais",
+    "annee": 2005,
+    "modalite": "écrit"
+  },
+  "intitule": "António Lobo Antunes, A minhota e o Príncipe, et Étienne Klein, Science et progrès",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://web.archive.org/web/20090415070752/http://www.polytechnique.fr:80/concours/sujets/sujet05/sujet05.htm",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "6",
+    "sujet": "https://web.archive.org/web/20061125010640id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_Version.pdf#page=6",
+    "sujet_sha256": "3a933648d4d48401c55bec0ecbfebd57bfa094dab07e6aa6a281281588442249",
+    "sujet_complementaire": "https://web.archive.org/web/20061125010606id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/05_ExprEcrit.pdf",
+    "sujet_complementaire_sha256": "0315993b329ac8a956c2b507bb40ddd56bd2ad4cc1c1a1abaf175d4f1588491f",
+    "precision": "La version provient du Livro de Crónicas (1999). Les textes d’expression sont écrits en portugais européen, dans la continuité de l’extrait lisboète. Les deux cahiers de l’X et de l’ESPCI ont été retrouvés. Le rapport portugais de 2005 reste à retrouver."
+  },
+  "mots_expression": {
+    "1": 128,
+    "2": 194
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/aurora.svg",
+      "legende": "La mémoire revient d’un accessoire présent à une voix autrefois entendue."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/progresso.svg",
+      "legende": "Klein distingue l’extension des possibles et le jugement sur leurs effets."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/cidade.svg",
+      "legende": "Un exemple de politique de transport met à l’épreuve les limites de la mesure."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "portugais_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en portugais. António Lobo Antunes, A minhota e o Príncipe, et Étienne Klein, Science et progrès.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
