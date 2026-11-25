@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2014",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2014,
+    "duree_heures": 2
+  },
+  "questions": 13,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2014.pdf",
+    "sujet_sha256": "a10d4f098ed6bc55787f65678702515daf2b6ccc770bc3c0655f86c6eda93b0e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/tableau-du-tournoi.svg",
+      "question": "5",
+      "legende": "Tableau du sujet. Les six feuilles sont les joueurs, les nœuds 7 à 11 les rencontres. À droite de chaque rencontre figure son vainqueur selon l’oracle imprimé."
+    },
+    {
+      "fichier": "figures/deplacer-une-branche.svg",
+      "question": "8",
+      "legende": "La branche dont j sortait vainqueur est détachée en entier. Le reste du tableau conserve i pour gagnant, et les deux branches fournissent la nouvelle finale."
+    },
+    {
+      "fichier": "figures/chances-par-joueur.svg",
+      "question": "13",
+      "legende": "Chance de gagner le tournoi de la figure 1 si chaque duel est équilibré. Les positions proches de la finale demandent moins de victoires successives."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des treize questions, y compris la construction du tournoi de la question 8, le contrôle de tous les 1 024 oracles à cinq joueurs contre une énumération exhaustive des tableaux et l’énumération indépendante des 32 scénarios probabilistes des cinq matchs imprimés. Trois illustrations originales."
+    }
+  ]
+}
