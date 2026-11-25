@@ -1,0 +1,40 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Quand les choses dérangent le designer",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "5493931558bf32a203ad06aa4e498dc9b52db54b4d44991dbdedce6fb1a7ce2d",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=277",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf",
+    "sha256_rapport_jury": "c8c46d4627f12457af6c32c67c5d52413050f8015e81fd16b34260a58a134e8c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/resistance-et-retour.svg",
+      "question": "Dissertation",
+      "legende": "Une résistance peut rester muette ou devenir perceptible et ouvrir une enquête."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation consacrée à la transposition du propos de Ponge, en regard du rapport de 2018. Analyse de la répartition du dérangement et schéma original du retour perceptible."
+    }
+  ]
+}

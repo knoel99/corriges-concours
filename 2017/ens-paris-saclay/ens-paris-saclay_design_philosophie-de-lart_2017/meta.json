@@ -1,0 +1,40 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "De quoi le designer est-il responsable ?",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Philo_art.pdf",
+    "sha256_sujet": "eab75b4f4d26773d41a996d52b1155851f6a8a8d44e496c43c39b94d2192b0df",
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf",
+    "sha256_rapport_jury": "0e260994d26a4a9edfae7ff149923a46e3e0a79e20520cd5f6614946dd90b2c7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/prise-et-effort.svg",
+      "question": "Dissertation",
+      "legende": "Une variation de diamètre redistribue l’effort de préhension pour certains usagers."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_design",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "fournisseur": "codex",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse de l’affirmation de Papanek et du rapport 2017. Dissertation, guidage par cas contradictoires et figure originale sur les possibilités de prise."
+    }
+  ]
+}
