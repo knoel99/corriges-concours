@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d-e_chinois-oral_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Chinois (oral)",
+    "annee": 2021,
+    "modalite": "oral"
+  },
+  "intitule": "Épreuve orale de chinois",
+  "questions": 1,
+  "redaction": "Analyse en chinois de l’article de 阚超群, commentaire de la mesure des déchets, de l’action individuelle et des possibilités offertes par les commerçants. Trois relances traitées et schéma de la chaîne de production et de traitement.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-chinois-d-e-2021_1652428640712-pdf",
+    "sujet_sha256": "fa69d083a2694adf7139aa6f105f7b6e1572dc74323396514ff8a66d6b774f8f",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021"
+  },
+  "billets": [
+    {
+      "numero": 1,
+      "intitule": "“零废弃”生活：方法总比困难多",
+      "pages": [
+        1,
+        2
+      ],
+      "support": "fascicule distribué",
+      "url": "https://www.ens-rennes.fr/medias/fichier/annales-oraux-chinois-d-e-2021_1652428640712-pdf#page=1"
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/flux-zero.svg",
+      "legende": "Produire, consommer et trier offrent trois occasions distinctes de réduire les déchets."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse en chinois de l’article de 阚超群, commentaire de la mesure des déchets, de l’action individuelle et des possibilités offertes par les commerçants. Trois relances traitées et schéma de la chaîne de production et de traitement."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ],
+    "precision": "Le fascicule comporte un article à analyser, suivi d’une aide lexicale. Les questions d’entretien sont proposées pour l’entraînement."
+  }
+}
