@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Où est la mémoire ?
 
 Une femme retrouve dans une boîte une photographie prise pendant son enfance. Elle reconnaît la cour de l’école et peut même retrouver, sur l’image, l’endroit précis où elle se tenait. Mais elle ne se rappelle plus la scène. Son frère, à qui elle téléphone, se souvient d’un incident survenu ce jour-là. Leur conversation lui rend soudain un détail qui n’était pas visible sur la photo. Où était donc cette mémoire, avant qu’elle ne se souvienne ? Certainement pas tout entière dans le papier, que n’importe qui pouvait regarder. Et pourtant l’image et la parole d’un autre ne sont pas indifférentes à son retour.
@@ -25,6 +27,10 @@ L’ancienne métaphore du magasin de souvenirs rend compte de la recherche et d
 ### II. Ce qui se conserve ne se présente pas toujours comme une image située
 
 Dans le deuxième chapitre de *Matière et mémoire*, Bergson compare deux manières de savoir une leçon. Après des répétitions, je peux la réciter. Sa possession se vérifie dans une suite de mouvements articulés que je suis capable d’exécuter. Je peux aussi me rappeler telle lecture particulière, faite hier près d’une fenêtre. Une seule occurrence suffit à donner à cette scène sa date. Répéter la leçon perfectionne le premier savoir et ne transforme pas les lectures successives en une seule scène passée. La distinction entre mémoire-habitude et souvenir d’un événement porte donc sur ce que l’on cherche à retrouver. Dans le premier cas, le corps montre ce qu’il sait faire. Dans le second, je reconnais quelque chose comme ayant eu lieu une fois.
+
+Une leçon peut être récitée après la disparition du cahier où elle était écrite. La perte de ce support empêche un mode de consultation, tout en laissant subsister la disposition acquise par répétition. Demander où se trouve la mémoire requiert alors de préciser quelle opération de rappel on cherche à expliquer.
+
+![Trois localisations possibles](figures/trace-habitude-rappel.svg)
 
 Dans la théorie de Bergson, la conservation du passé et son actualisation en une image utile à la situation présente ne se confondent pas. Dire le souvenir « virtuel » revient ici à lui attribuer une réalité qui ne se donne pas actuellement sous la forme d’une perception. La chambre de mon enfance peut revenir avec une présence frappante. Je sais pourtant que la pièce où je me trouve aujourd’hui est ailleurs. Une carte des lieux représentés dans mes souvenirs situerait la chambre, la fenêtre et le jardin. Elle ne situerait pas mon acte de me souvenir, encore moins toutes les conditions qui en permettent la reprise. Le cerveau est bien dans la pièce où je parle et la chambre remémorée situe mon enfance. Le mot « où » renvoie ainsi à deux objets distincts.
 

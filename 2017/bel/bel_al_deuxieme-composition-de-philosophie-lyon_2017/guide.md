@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Distinguer la provenance et le fondement d’une croyance
 
 La page 2 du fascicule de 2017 accorde cinq heures. Le libellé est un groupe nominal. L’enjeu de l’introduction est de construire une question dont les deux termes sont nécessaires. Une histoire de l’apparition des rites traite la religion comme phénomène naturel. Une théologie naturelle examine ce que l’on peut soutenir au sujet de Dieu sans invoquer d’abord une révélation. Le sujet demande aussi comment des croyances ainsi justifiées pourraient être vécues comme une religion.
@@ -19,6 +21,8 @@ La page 2 du fascicule de 2017 accorde cinq heures. Le libellé est un groupe no
 **Relire le jury.** Le rapport de spécialité pointe notamment la confusion entre la naturalité de la religion et la religion naturelle. Il invite aussi à se demander ce qui distingue une foi religieuse d’une croyance quelconque, et ce qu’une raison commune peut conserver de la relation à Dieu. La transition décisive conduit ainsi d’un argument sur l’existence d’une cause à une interprétation pratique de l’obligation.
 
 ![À quelle question répond-on ?](figures/croyance-et-raison.svg)
+
+À propos d’une même croyance, poser d’abord la question de l’apprentissage puis celle de la justification. Une éducation historique n’exclut pas à elle seule la prétention à une justification rationnelle commune.
 
 ## La religion naturelle
 
