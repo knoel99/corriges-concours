@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2017",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Des compétences qui s’envolent : qui peut infléchir les départs ?",
+  "questions": 2,
+  "redaction": "Rédaction intégrale de la synthèse arabe avec titre et de la réaction personnelle à l’éditorial. Mise en relation du dialogue libyen et syrien avec les analyses de Majid et de Naama et les professionnels ailés du dessin de 2017.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/2017_MPPC_sujet_eArabe.pdf",
+    "sha256_sujet": "6a2b8da922dd00b199755149415e61f56185055d81fab35ff50d14ac8b8fca43",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2017/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/2017_MPPC_sujet_eArabe.pdf",
+        "sha256": "6a2b8da922dd00b199755149415e61f56185055d81fab35ff50d14ac8b8fca43"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/17_MP-PC_rap_eAr.pdf",
+        "sha256": "60c4d1e8b7f03baf35f90c2d04f707fbbc70a41d7732cae465d44682c695dc9e"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-du-dossier.svg",
+      "legende": "Du débat public à l’observation des trajectoires internationales."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale de la synthèse arabe avec titre et de la réaction personnelle à l’éditorial. Mise en relation du dialogue libyen et syrien avec les analyses de Majid et de Naama et les professionnels ailés du dessin de 2017."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}
