@@ -1,0 +1,71 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_philosophie-oral_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Philosophie (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie · Oral de spécialité SH · ENS de Lyon 2017",
+  "questions": 108,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/philosophie-2017_1506587957750.pdf",
+    "sha256_sujet": "0f6117344bad2c9c95f92e00828a6c1f059a4030648c9e1b18c6ab2d52f9b62b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/PHILO_TC_SP_2017.pdf",
+    "sha256_rapport_jury": "17d12a0809a391d46c37c5b0f66470e8f94eb45b624f5e3a1ec95a6aaf760e03",
+    "texte_comparaison_platon": "https://scaife.perseus.org/reader/urn:cts:greekLit:tlg0059.tlg006.perseus-eng2:142/",
+    "transcription_platon": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/master/data/tlg0059/tlg006/tlg0059.tlg006.perseus-eng2.xml",
+    "grec_platon": "https://adfonteslibrary.org/work-plato-theaetetus",
+    "texte_comparaison_hegel": "https://hegel-system.de/de/werke/12/12-01.htm",
+    "manuscrit_hegel_1830_31": "https://hegel.idealismedition.com/text.html?work=gw-18",
+    "transcription_manuscrit_hegel": "https://hegel.idealismedition.com/assets/dtabf/GW18.xml",
+    "edition_manuscrit_hegel": "G. W. F. Hegel, Gesammelte Werke, t. 18, Vorlesungsmanuskripte II (1816–1831), Hambourg, Meiner, 1995. Texte de lecture de la Digitale Hegel-Edition, Giuliano Infantino, version 0.84.",
+    "reperage": "Sujets de spécialité SH. P. 1–3, quatorze paires Hegel et treize Platon. P. 4–5, vingt-sept paires de leçons. Rapport distinct, p. 9–12. La pagination française reste celle de Bienenstock et Narcy."
+  },
+  "couverture": {
+    "statut": "complet",
+    "options_publiees": 108,
+    "explications": {
+      "occurrences": 54,
+      "expliquees": 54
+    },
+    "lecons": {
+      "enveloppes": 27,
+      "options": 54
+    },
+    "notice": "Les 108 options publiées sont étudiées. Le rapport évoque soixante extraits au stade de la préparation. Le cahier en référence cinquante-quatre. Le devenir des six autres reste inconnu."
+  },
+  "figures": [
+    {
+      "fichier": "figures/hegel.svg",
+      "question": "Comment la liberté entre-t-elle dans l’histoire ?",
+      "legende": "Comment la liberté entre-t-elle dans l’histoire ?"
+    },
+    {
+      "fichier": "figures/platon.svg",
+      "question": "Du tactile au jugement dans le Théétète",
+      "legende": "Du tactile au jugement dans le Théétète"
+    },
+    {
+      "fichier": "figures/lecon.svg",
+      "question": "Trois manières de travailler à plusieurs",
+      "legende": "Trois manières de travailler à plusieurs"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Relevé des 108 options, distinction entre préparation et distribution, lectures comparées de Platon et de Hegel, 54 leçons et un exposé développé. Concordance des vingt-huit passages de Hegel avec le manuscrit allemand de 1830–1831 (GW 18). Contribution oraux_lyon sur Hegel, l’ensemble des leçons et deux passages de Platon ; vérification des textes, préparation guidée et trois figures.",
+      "collaboration": "oraux_lyon"
+    }
+  ]
+}
