@@ -1,0 +1,67 @@
+{
+  "slug": "ens_mp-pc_grec-ancien-le2_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Grec ancien (LE2)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "intitule": "Seule l’expertise assure le renom",
+  "questions": 1,
+  "redaction": "Version française complète de Xénophon, identification de Socrate et Glaucon d’après le rapport, explication des impératifs et de la phrase conditionnelle finale, contrôle du grec polytonique.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_le2.pdf#page=11",
+    "sha256_sujet": "f46f3fc56ede28104327530e51415ff9d26e0fde65bc9ea704a143f78112288e",
+    "page": 11,
+    "code": "91.07M-P",
+    "reference_du_texte": "Xénophon, Mémorables, III, 6, 17 ; référence confirmée par le rapport MP-PC.",
+    "etablissements": "Paris et Cachan",
+    "indexes": [
+      "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+      "https://www.ens.psl.eu/en/node/829"
+    ],
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/mppc2009_le2grec.pdf",
+    "sha256_rapport_jury": "649c902430dafc81045fab560a687bbb8f416d89a5918057bd3ff03e95389214"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/trois-etapes.svg",
+      "legende": "De l’observation commune à la condition imposée à l’homme politique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Le rapport MP-PC de David-Artur Daix confirme le passage des Mémorables, le génitif initial, l’infinitif substantivé et la valeur du potentiel final à la première personne. Le rapport BCPST porte sur un autre texte."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version française complète de Xénophon, identification de Socrate et Glaucon d’après le rapport, explication des impératifs et de la phrase conditionnelle finale, contrôle du grec polytonique."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version"
+    ]
+  }
+}
