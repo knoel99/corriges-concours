@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_linguistique-erreurs-phonologiques-et-sujet-silencieux-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Linguistique — erreurs phonologiques et sujet silencieux (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "questions": 9,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/Oral_Linguistique.pdf",
+    "sujet_sha256": "602d87516bfbff1d2304836fa80f1c183c15655daf8ea28a9c48fee062e455c0",
+    "pages": 7
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exercice 1 · Erreurs phonologiques, question 1",
+      "Exercice 1 · Erreurs phonologiques, question 2",
+      "Exercice 1 · Erreurs phonologiques, question 3",
+      "Exercice 1 · Erreurs phonologiques, question 4",
+      "Exercice 1 · Erreurs phonologiques, question 5",
+      "Exercice 2 · Sujet silencieux, question 1",
+      "Exercice 2 · Sujet silencieux, question 2",
+      "Exercice 2 · Sujet silencieux, question 3",
+      "Exercice 2 · Sujet silencieux, question 4"
+    ],
+    "precision": "Pages 1–4, les cinq questions sur les erreurs de DB, y compris la discordance locale entre libellé et exemple, et pages 5–7, les quatre questions sur PRO en français, anglais et islandais."
+  },
+  "figures": [
+    {
+      "fichier": "figures/partie-a.svg",
+      "legende": "Trois effacements qui favorisent CV"
+    },
+    {
+      "fichier": "figures/partie-b.svg",
+      "legende": "Où le cas de Harald est-il déterminé ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Pages 1–4, les cinq questions sur les erreurs de DB, y compris la discordance locale entre libellé et exemple, et pages 5–7, les quatre questions sur PRO en français, anglais et islandais. Rédaction des deux éditions et de deux schémas."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
