@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 22 juin réunit 12 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici.
 
 ## Ticket 1
@@ -59,6 +61,10 @@ Enfin, le statut de héros est attribué par un public et à travers un récit. 
 Démontrer qu’il n’existe pas de plus grand nombre premier et argumenter pour installer une bibliothèque n’imposent pas la même épreuve. La démonstration vise une conclusion nécessaire à partir de prémisses et de règles. L’argumentation cherche à établir des raisons contrôlables pour un jugement sur lequel une discussion reste possible. Faut-il en conclure que l’une atteint toujours le vrai et que l’autre ne fait que persuader ?
 
 La démonstration d’Euclide suppose un nombre fini de nombres premiers dans une liste qui se voudrait exhaustive. Le produit de tous ces nombres, augmenté d’une unité, n’est divisible par aucun d’entre eux ; il possède donc un diviseur premier absent de la liste. Le raisonnement n’exige pas que le nombre construit soit lui-même premier. Sa nécessité tient à une suite d’inférences dont on peut contrôler chaque étape. Une suite de symboles peut néanmoins comporter une erreur, et les prémisses d’une démonstration appliquée au réel doivent encore convenir à la situation.
+
+Le produit de tous les nombres premiers supposés, augmenté d’une unité, peut lui-même être composé. La preuve utilise le fait qu’aucun des premiers de la liste ne le divise. Elle établit donc l’existence d’un diviseur premier absent de la liste, ce qui suffit à la contradiction.
+
+![Figure 1 — Contrôler deux formes de raisonnement](figures/raisonnement.svg)
 
 Pour la bibliothèque, statistiques de fréquentation, coûts et égalité d’accès éclairent une décision sans la rendre mathématiquement nécessaire. Une argumentation rationnelle expose ses hypothèses, répond aux objections et distingue un fait d’une priorité collective. Elle peut inclure une démonstration sur un point particulier, par exemple une borne budgétaire. L’opposition pertinente concerne le régime de justification et la force de la conclusion. L’argumentation n’est pas inférieure par principe : elle répond à des questions pratiques pour lesquelles la pluralité des raisons pertinentes ne forme pas un système déductif unique.
 

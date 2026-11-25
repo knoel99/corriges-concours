@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille du 19 juin réunit 12 tickets de deux sujets. Le candidat dispose de 1 h 30 de préparation et indique au jury son choix au moment du passage. Il présente un seul sujet pendant 20 minutes, puis répond aux questions durant 10 minutes. Les deux possibilités de chaque ticket sont traitées ici. Chaque relance met à l’épreuve une distinction précise. Pour développer oralement les propositions, reprendre l’exemple, en faire varier une condition, puis expliquer comment cette variation modifie la réponse.
 
 ## Ticket 1
@@ -34,6 +36,8 @@ La simple différence de compétence ne suffit pas. Le jugement du médecin sur 
 La domination peut aussi se répartir entre des institutions sans qu’une personne ait conçu l’ensemble. Une procédure écrite, des ressources inégalement accessibles et des sanctions difficiles à contester peuvent se renforcer mutuellement. Dénoncer toute influence comme domination empêcherait cependant de comprendre les relations d’apprentissage ou d’entraide dont chacun peut discuter les termes. Il faut montrer qui dispose de quel pouvoir, quelles possibilités de recours existent réellement et à quel prix. La domination devient visible lorsque l’on suit la distribution du pouvoir de dire non autant que les interventions observées.
 
 ![Une dépendance est-elle une domination ?](figures/domination.svg)
+
+Comparer deux lieux de travail soumis au même règlement. Si l’objection est examinée par un tiers indépendant dans un seul des deux, la différence éclaire ce que signifie pouvoir effectivement contester.
 
 > [!INDICATION]
 > Une décision prise avec le consentement de l’intéressé exclut-elle la domination ?
