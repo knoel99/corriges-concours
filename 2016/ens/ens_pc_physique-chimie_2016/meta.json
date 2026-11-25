@@ -1,0 +1,133 @@
+{
+  "slug": "ens_pc_physique-chimie_2016",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2016
+  },
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/04/16_pc_suj_phychi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/10/16_pc_rap_phychi_lyon.pdf",
+    "sujet_sha256": "768d4155de8310ad0665efabd3b5c2084dcec02f09cabbd18cc92d058c6ddea8",
+    "rapport_sha256": "0c1dfa801fb715ba4f3b67e3566202ad99d638b2cb2d9d105d9d6892659cf1bf"
+  },
+  "questions": 49,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C12",
+      "C13",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "questions_partiellement_traitees": [
+      "C10",
+      "C15",
+      "C17"
+    ],
+    "questions_non_traitees": [
+      "C5",
+      "C9",
+      "C14",
+      "C16"
+    ],
+    "precision": "Le fascicule numérote séparément la physique (P1 à P18) et la chimie (C1 à C31). Les deux éditions résolvent entièrement 42 des 49 questions principales, dont toute la physique et la cinétique du compartiment organique. Trois questions sont traitées en partie : C10 pour la dénomination de la séparation, C15 pour le calcul des fractions et C17 pour les rôles des électrodes et le bilan de décharge. C5, C9, C14 et C16, consacrées à la production ou à la purification industrielle des halogènes, restent hors couverture."
+  },
+  "figures": [
+    {
+      "question": "P3",
+      "fichier": "figures/veine-et-disque.svg",
+      "legende": "Le disque prélève du travail entre E et S. La veine de même débit s’élargit lorsque la vitesse axiale diminue."
+    },
+    {
+      "question": "P4",
+      "fichier": "figures/maximum-de-betz.svg",
+      "legende": "L’énergie retirée à chaque kilogramme augmente quand le vent est fortement ralenti mais la masse traversant la machine diminue."
+    },
+    {
+      "question": "P8",
+      "fichier": "figures/vent-relatif-et-forces.svg",
+      "legende": "La figure de gauche prend U = 4v. À droite, la portance a une composante dans le sens du mouvement, orienté vers le haut."
+    },
+    {
+      "question": "P11",
+      "fichier": "figures/coefficients-selon-incidence.svg",
+      "legende": "Les deux séries sont des relevés graphiques de la polaire de la figure 3. La bande repère les deux points de meilleure finesse à la précision du tracé."
+    },
+    {
+      "question": "P12",
+      "fichier": "figures/integration-du-couple.svg",
+      "legende": "Aire de neuf trapèzes de largeur 10 m sous les lectures de la figure 4. L’ordonnée concerne l’ensemble des pales."
+    },
+    {
+      "question": "P15",
+      "fichier": "figures/distribution-de-rayleigh.svg",
+      "legende": "Le maximum réduit est en 1/√2. Dans les unités du vent, le maximum observé près de 7 m/s indique un paramètre c proche de 10 m/s."
+    },
+    {
+      "question": "C25",
+      "fichier": "figures/bilan-du-compartiment-organique.svg",
+      "legende": "Le même débit traverse les deux volumes. La production de A est localisée dans le réacteur et la sortie porte la concentration de ce volume agité."
+    },
+    {
+      "question": "C31",
+      "fichier": "figures/cinetiques-du-couple-organique.svg",
+      "legende": "À partir du même stock, le courant constant fait croître linéairement la fraction convertie. Avec un courant proportionnel au réducteur, la conversion ralentit."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions à partir des quatorze pages de l’épreuve et du rapport officiel de l’ENS de Lyon. Lecture des 21 points de la polaire et du couple linéique sur le rotor, estimation de la loi du vent et des demi-temps des deux modèles organiques. Huit figures originales et 45 indications. Limites indiquées pour sept questions de chimie."
+    }
+  ]
+}

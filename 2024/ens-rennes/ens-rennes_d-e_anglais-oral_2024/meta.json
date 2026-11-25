@@ -1,0 +1,106 @@
+{
+  "slug": "ens-rennes_d-e_anglais-oral_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Anglais (oral)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "questions": 5,
+  "sujets": 5,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-anglais-d-e-2024_1731603717655-pdf",
+    "sujet_sha256": "c2f5291f0b0ba81c68a8720882c01b37509406678c353a938dc364d51873ed65",
+    "apercu_sujet_sha256": "6b0245bdcfa4a1fd54009b0899c60ee3a12e50606e9ba5112417eff3e83bfae5",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-anglais-oral-d-e-2024_1731604878948-pdf",
+    "rapport_jury_sha256": "797484050ac07a98713ba4daecbcd058ed7fb81ce7d31e4d4cd436ccd60109d3",
+    "apercu_rapport_sha256": "f81762c1c708ca26aa3e79c5c7ba89e1e7650fbfea902596b9f37ce9ff83c710",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2024",
+    "documents": [
+      {
+        "numero": 1,
+        "page": 1,
+        "titre": "US state abortion ban exemptions aren’t vague by accident. Uncertainty is the point",
+        "source": "The Guardian, Judith Levine, Fri 7 Jun 2024",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-anglais-d-e-2024_1731603717655-pdf#page=1"
+      },
+      {
+        "numero": 2,
+        "page": 2,
+        "titre": "Hundreds of millions head to polls on final day of European elections",
+        "source": "The Guardian, Jennifer Rankin, Sun 9 Jun 2024",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-anglais-d-e-2024_1731603717655-pdf#page=2"
+      },
+      {
+        "numero": 3,
+        "page": 3,
+        "titre": "Trump’s lead over Biden narrows after conviction, analysis shows",
+        "source": "The Guardian, Joan E Greve, Fri 7 Jun 2024",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-anglais-d-e-2024_1731603717655-pdf#page=3"
+      },
+      {
+        "numero": 4,
+        "page": 4,
+        "titre": "The law on single-sex spaces is a mess. It needs fixing, not political point-scoring",
+        "source": "The Guardian, Sonia Sodha, Sun 9 Jun 2024",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-anglais-d-e-2024_1731603717655-pdf#page=4"
+      },
+      {
+        "numero": 5,
+        "page": 5,
+        "titre": "#MeToo Founder Calls For Unity, Perseverance After Weinstein Conviction Overturned",
+        "source": "The Huffington Post, Nina Golgowski, 26/04/2024",
+        "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-anglais-d-e-2024_1731603717655-pdf#page=5"
+      }
+    ],
+    "precision": "Le fascicule comporte les cinq sujets numérotés de 1 à 5."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Sujet 1 · US state abortion ban exemptions aren’t vague by accident. Uncertainty is the point",
+      "Sujet 2 · Hundreds of millions head to polls on final day of European elections",
+      "Sujet 3 · Trump’s lead over Biden narrows after conviction, analysis shows",
+      "Sujet 4 · The law on single-sex spaces is a mess. It needs fixing, not political point-scoring",
+      "Sujet 5 · #MeToo Founder Calls For Unity, Perseverance After Weinstein Conviction Overturned"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/exceptions.svg",
+      "legende": "Who bears the risk of uncertainty?",
+      "question": "Sujet 1"
+    },
+    {
+      "fichier": "figures/polls.svg",
+      "legende": "Which population does the number describe?",
+      "question": "Sujet 3"
+    },
+    {
+      "fichier": "figures/appeal.svg",
+      "legende": "Which decision is being discussed?",
+      "question": "Sujet 5"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des 5 coupures et du rapport officiel. Pour chaque sujet, rédaction d’une prise de parole en anglais, deux échanges et un accompagnement pour l’entraînement. Trois schémas. Le fascicule comporte les cinq sujets numérotés de 1 à 5."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

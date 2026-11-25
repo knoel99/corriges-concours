@@ -1,0 +1,78 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-de-lart-collectionner_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire de l’art — collectionner",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire de l’art — collectionner",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/SIL-Histoire%20de%20l_Art%20sujet%20ecrit%202018.pdf",
+    "sujet_sha256": "b2c4b558cf06165e5309acd794e5f1b1f68985b67699d12ad4c1765f4b5751ff",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/sil_2018_rapport_ha.pdf",
+    "rapport_sha256": "3b2297ff6ae726ae1c07da4ddde059822792e37a55515ebb2556b1a84681ee40",
+    "references": [
+      "https://www.louvre.fr/decouvrir/le-palais/la-peinture-italienne-en-perspective",
+      "https://www.centrepompidou.fr/fr/ressources/oeuvre/c6rrqKM",
+      "https://www.centrepompidou.fr/fr/ressources/oeuvre/coXyynA",
+      "https://www.icaboston.org/exhibitions/mark-dion-misadventures-21st-century-naturalist/"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/gestes.svg",
+      "question": "Dissertation",
+      "legende": "Quatre décisions qui donnent un sens à un ensemble"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des quatre documents, du double objectif historique et théorique et de la demande d’une ligne directrice."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation et du guide, dessin analytique original à partir des planches regardées."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Examen comparé du meuble peint, du mur reconstitué, du tableau-piège et de la vue d’exposition. Contrôle du statut des documents, des dates de dation et d’achat et du titre de l’exposition de Boston. Contrôle du schéma et des deux éditions."
+    }
+  ]
+}

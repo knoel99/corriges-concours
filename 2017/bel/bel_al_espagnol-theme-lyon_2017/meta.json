@@ -1,0 +1,55 @@
+{
+  "slug": "bel_al_espagnol-theme-lyon_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (thème Lyon)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=11",
+    "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ESPAGNOL_2017.pdf#page=11",
+    "rapport_sha256": "388a1de7c27ae3f048b5558c7dd5f56ecfd4f486f1d6d794552b40b121b7c50c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Un espace ouvert, une intimité recherchée"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction pédagogique intégrale originale depuis le scan du fascicule, p. 11, lecture du rapport de spécialité, rédaction du guide et réalisation du schéma. La voix de la narratrice, les habitudes familiales et le passage de la lecture à la peinture."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction du passage délimité par le sujet"
+    ]
+  },
+  "droits_sources": {
+    "oeuvres": [
+      "Simone de Beauvoir, Mémoires d’une jeune fille rangée (1958)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte source appartiennent à leurs titulaires."
+  }
+}

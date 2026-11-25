@@ -152,6 +152,7 @@
 | 2017 | BEL | AL | Allemand (thème Lyon) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (commentaire et traduction) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (thème Lyon) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Chinois (thème Lyon) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
@@ -194,6 +195,10 @@
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
+| 2017 | BEL | AL | Espagnol (thème Lyon) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Italien (thème Lyon) | [md](2017/bel/bel_al_italien-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_italien-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Portugais (thème Lyon) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Russe (thème Lyon) | [md](2017/bel/bel_al_russe-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_russe-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Étude de texte français (Lyon) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/brut.md) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Espagnol (commentaire et traduction) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Espagnol (thème Lyon) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/guide.md) |
@@ -710,6 +715,7 @@
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
 | 2015 | ENS | PC | Physique-chimie | [md](2015/ens/ens_pc_physique-chimie_2015/brut.md) | [md](2015/ens/ens_pc_physique-chimie_2015/guide.md) |
+| 2016 | ENS | PC | Physique-chimie | [md](2016/ens/ens_pc_physique-chimie_2016/brut.md) | [md](2016/ens/ens_pc_physique-chimie_2016/guide.md) |
 | 2017 | ENS | PC | Physique-chimie | [md](2017/ens/ens_pc_physique-chimie_2017/brut.md) | [md](2017/ens/ens_pc_physique-chimie_2017/guide.md) |
 | 2018 | ENS | PC | Physique-chimie | [md](2018/ens/ens_pc_physique-chimie_2018/brut.md) | [md](2018/ens/ens_pc_physique-chimie_2018/guide.md) |
 | 2020 | ENS | PC | Physique-chimie | [md](2020/ens/ens_pc_physique-chimie_2020/brut.md) | [md](2020/ens/ens_pc_physique-chimie_2020/guide.md) |
@@ -732,11 +738,13 @@
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique B) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Allemand | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Anglais | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Anglais (oral) | [md](2024/ens-rennes/ens-rennes_d-e_anglais-oral_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_anglais-oral_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Espagnol | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Italien | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Allemand | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/guide.md) |
 | 2025 | ENS Rennes | D-E | Anglais | [md](2025/ens-rennes/ens-rennes_d-e_anglais_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_anglais_2025/guide.md) |
+| 2025 | ENS Rennes | D-E | Anglais (oral) | [md](2025/ens-rennes/ens-rennes_d-e_anglais-oral_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_anglais-oral_2025/guide.md) |
 | 2025 | ENS Rennes | D-E | Espagnol | [md](2025/ens-rennes/ens-rennes_d-e_espagnol_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_espagnol_2025/guide.md) |
 | 2025 | ENS Rennes | D-E | Italien | [md](2025/ens-rennes/ens-rennes_d-e_italien_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_italien_2025/guide.md) |
 | 2025 | ENS Rennes | D-E | Composition d’ordre économique | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2025/guide.md) |
@@ -784,8 +792,12 @@
 | 2023 | ENS-PSL | CNEL Lettres | Platon — Gorgias | [md](2023/ens-psl/ens-psl_cnel-lettres_platon-gorgias_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_platon-gorgias_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Stace — l’éloge de Priscilla | [md](2023/ens-psl/ens-psl_cnel-lettres_stace-leloge-de-priscilla_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_stace-leloge-de-priscilla_2023/guide.md) |
 | 2023 | ENS-PSL | CNEL Lettres | Xénophon — l’Économique | [md](2023/ens-psl/ens-psl_cnel-lettres_xenophon-leconomique_2023/brut.md) | [md](2023/ens-psl/ens-psl_cnel-lettres_xenophon-leconomique_2023/guide.md) |
+| 2022 | ENS-PSL | Sélection internationale Lettres | Cinéma — le documentaire et ses faux-semblants | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-le-documentaire-et-ses-faux-semblants_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-le-documentaire-et-ses-faux-semblants_2022/guide.md) |
+| 2022 | ENS-PSL | Sélection internationale Lettres | Cinéma — les choix esthétiques du documentaire | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-les-choix-esthetiques-du-documentaire_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_cinema-les-choix-esthetiques-du-documentaire_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Droit — histoire et philosophie du contrat | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_droit-histoire-et-philosophie-du-contrat_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_droit-histoire-et-philosophie-du-contrat_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Droit — la division du travail social selon Durkheim (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_droit-la-division-du-travail-social-selon-durkheim-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_droit-la-division-du-travail-social-selon-durkheim-oral_2022/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — collectionner | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-collectionner_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-collectionner_2018/guide.md) |
+| 2016 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — l’optique dans l’art occidental | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-loptique-dans-lart-occidental_2016/brut.md) | [md](2016/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-loptique-dans-lart-occidental_2016/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Linguistique | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_linguistique_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_linguistique_2023/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Littérature — Assia Djebar | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-assia-djebar_2023/guide.md) |
 | 2023 | ENS-PSL | Sélection internationale Lettres | Littérature — Frédérique Leichter-Flack | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-frederique-leichter-flack_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_litterature-frederique-leichter-flack_2023/guide.md) |
@@ -798,6 +810,8 @@
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 1) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-1_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-1_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 2) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-2_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-2_2026/guide.md) |
 | 2026 | ENS-PSL | Sélection internationale Lettres | Histoire (oral 3) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-3_2026/brut.md) | [md](2026/ens-psl/ens-psl_selection-internationale-lettres_histoire-oral-3_2026/guide.md) |
+| 2022 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — le cabinet de porcelaine de Charlottenburg (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-le-cabinet-de-porcelaine-de-charlottenburg-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-le-cabinet-de-porcelaine-de-charlottenburg-oral_2022/guide.md) |
+| 2022 | ENS-PSL | Sélection internationale Lettres | Histoire de l’art — les échanges en Europe moderne | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-les-echanges-en-europe-moderne_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_histoire-de-lart-les-echanges-en-europe-moderne_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Économie — décroissance ou croissance verte (oral) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-decroissance-ou-croissance-verte-oral_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-decroissance-ou-croissance-verte-oral_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Économie — la fin de la croissance | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-la-fin-de-la-croissance_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-la-fin-de-la-croissance_2022/guide.md) |
 | 2022 | ENS-PSL | Sélection internationale Lettres | Économie — les instruments de la politique climatique | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-les-instruments-de-la-politique-climatique_2022/brut.md) | [md](2022/ens-psl/ens-psl_selection-internationale-lettres_economie-les-instruments-de-la-politique-climatique_2022/guide.md) |
@@ -961,6 +975,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2012 | X-ENS | MP | Informatique A | [md](2012/x-ens/x-ens_mp_informatique-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_informatique-a_2012/guide.md) |
 | 2013 | X-ENS | MP | Informatique A | [md](2013/x-ens/x-ens_mp_informatique-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_informatique-a_2013/guide.md) |
 | 2014 | X-ENS | MP | Informatique A | [md](2014/x-ens/x-ens_mp_informatique-a_2014/brut.md) | [md](2014/x-ens/x-ens_mp_informatique-a_2014/guide.md) |
 | 2015 | X-ENS | MP | Informatique A | [md](2015/x-ens/x-ens_mp_informatique-a_2015/brut.md) | [md](2015/x-ens/x-ens_mp_informatique-a_2015/guide.md) |
@@ -1053,6 +1068,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2012 | X-ENS | PSI | Sciences industrielles | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/brut.md) | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/guide.md) |
 | 2013 | X-ENS | PSI | Sciences industrielles | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/brut.md) | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/guide.md) |
 | 2014 | X-ENS | PSI | Sciences industrielles (corrigé partiel) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/brut.md) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/guide.md) |
 | 2015 | X-ENS | PSI | Sciences industrielles | [md](2015/x-ens/x-ens_psi_sciences-industrielles_2015/brut.md) | [md](2015/x-ens/x-ens_psi_sciences-industrielles_2015/guide.md) |

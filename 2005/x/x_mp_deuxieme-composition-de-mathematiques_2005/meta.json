@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2005",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2005
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2005.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2005_rapport_jury.pdf",
+    "sha256_sujet": "95eb9f7508990b6b96abc267e08d8681df3dd960e67b702912acb48450efee29"
+  },
+  "figures": [
+    {
+      "fichier": "figures/vecteur-du-chemin.svg",
+      "question": "6",
+      "legende": "Chemin de huit sommets. Le vecteur propre de plus grande valeur propre est strictement positif entre les deux conditions fictives de bord x₀ = x₉ = 0."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des quatre parties des deux éditions d’après sujet et rapport. Borne stricte et norme exacte du chemin, fréquences du cycle avec le cas particulier N=2, calcul de Fourier et simplicité par perturbation. Figure du vecteur propre principal.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

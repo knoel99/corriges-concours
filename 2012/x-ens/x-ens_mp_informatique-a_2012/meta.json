@@ -1,0 +1,48 @@
+{
+  "slug": "x-ens_mp_informatique-a_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Informatique A",
+    "annee": 2012,
+    "duree_heures": 4
+  },
+  "questions": 22,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/mp2012_sujet_informatique_a%5B1%5D.pdf",
+    "rapport": "https://www.ens.psl.eu/IMG/file/concours/2012/MP%20I/rap_ecrit_info%204%20h%20ULCX_mpi2012.pdf",
+    "sujet_sha256": "850f6850f5cb056f9841ca5dc5649ccb18758112fba7279ecab0ac1e3e35ff9c",
+    "rapport_sha256": "7116c550f172c1b9c29c631676216bd374213d3b7ccef171d89bde4610bf2b09"
+  },
+  "figures": [
+    {
+      "fichier": "figures/sous-arbres-partages.svg",
+      "question": "9",
+      "legende": "L’exemple (1) contient six sous-arbres distincts. Les deux décisions d’étiquette 1 utilisent le même nœud d’étiquette 2."
+    },
+    {
+      "fichier": "figures/compteur-de-couvertures.svg",
+      "question": "14",
+      "legende": "Pour une ligne couvrant la case j, exclure la ligne conserve le compteur. L’inclure fait passer de zéro à un ou rejette la deuxième couverture."
+    },
+    {
+      "fichier": "figures/pavages-deux-par-deux.svg",
+      "question": "15",
+      "legende": "Sur un échiquier de côté 2, les contraintes des quatre cases laissent deux ensembles de placements."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 22 questions à partir du sujet XULC et du rapport de jury 2012. Vérification OCaml avec 256 familles, 65 536 intersections et les quatre échiquiers 2, 4, 6 et 8, jusqu’à 12 988 816 pavages. Traitement des deux majorations erronées signalées par le jury et des hypothèses de probabilités pour les recherches dans les seaux. Trois figures originales."
+    }
+  ]
+}

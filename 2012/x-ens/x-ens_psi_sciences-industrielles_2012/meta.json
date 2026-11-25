@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2012,
+    "duree_heures": 5
+  },
+  "questions": 40,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.upsti.fr/fichiers/corrige/fichiers/0f2a3041-7660-4166-9271-8631cc0d3aae/XENS-PSI-2012-ChariotElevateurABateaux-Sujet.pdf",
+    "sujet_sha256": "7e3d8741fb1f7c1ecf900ce40463cf57ac57e4125ca5bd704f1f6f820d0c5532",
+    "identification": "CX2614, garde PSI X–ENS Cachan 2012, 5 heures et 40 pages dont neuf annexes et quatre feuilles-réponses.",
+    "autre_exemplaire": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/si/sujet-polytechnique-ens-si-psi-2012.pdf",
+    "corrige_enseignant": "https://www.upsti.fr/fichiers/corrige/fichiers/a056f454-6f92-4da3-b9ce-db5baaa53abb/UPSTI-Corrige-XENS-PSI-2012-ChariotElevateurABateaux.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/dr1-circuit-hydraulique.svg",
+      "question": "I.8",
+      "legende": "DR1, lecture fonctionnelle. De gauche à droite figurent les quatre numéros à reporter. La chambre annulaire reçoit le débit et la chambre pleine se vide."
+    },
+    {
+      "fichier": "figures/mouflage-de-levage.svg",
+      "question": "I.10",
+      "legende": "Le brin fixé au bâti impose la vitesse de rotation de la poulie. La vitesse de son point de contact avec le brin portant le bateau est le double de celle du centre."
+    },
+    {
+      "fichier": "figures/dr3-vitesse-et-position.svg",
+      "question": "II.6",
+      "legende": "DR3, raccordement calculé à partir des paramètres du sujet. Le changement de rapport produit un palier de vitesse et un segment rectiligne sur la courbe de position."
+    },
+    {
+      "fichier": "figures/seuil-de-basculement.svg",
+      "question": "III.4",
+      "legende": "Au seuil de basculement frontal, seules les roues avant restent chargées. La force d’inertie est représentée dans le repère du véhicule."
+    },
+    {
+      "fichier": "figures/dr4-trajet-et-freinages.svg",
+      "question": "III.8",
+      "legende": "En haut, profil minimal compatible avec les distances de la figure 25. En bas, conservation des temps préimprimés de DR4 et exemple de raccord. Les bandes verticales repèrent les freinages ADS."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 40 questions à partir du cahier CX2614, figures, annexes et quatre feuilles-réponses vérifiées. Reconstitution des quatre phases de DR3 par les efforts de traction, contrôle des huit combinaisons de la boîte, des conditions de basculement, des signes et du bilan de puissance. Vérification indépendante des distances et des aires sous DR4, mise en évidence et résolution distincte des temps incompatibles avec la figure 25. Cinq dessins originaux et comparaison avec la proposition enseignante UPSTI."
+    }
+  ]
+}
