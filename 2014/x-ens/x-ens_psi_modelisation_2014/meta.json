@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_modelisation_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2014,
+    "duree_heures": 5
+  },
+  "questions": 46,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_modelisation_psi_2014.pdf",
+    "sujet_sha256": "cd2108e0b57a027eea342a17b23e8ba16e49ffaef8f011914c283034ee8fddc5",
+    "identification": "Fac-similé de la banque commune École polytechnique–InterENS, PSI 2014, CX4612, garde et 22 pages numérotées."
+  },
+  "figures": [
+    {
+      "fichier": "figures/profondeur-de-peau.svg",
+      "question": "11",
+      "legende": "L’enveloppe des courants induits décroît exponentiellement. À une profondeur de peau, l’amplitude atteint environ 37 % de sa valeur à la surface."
+    },
+    {
+      "fichier": "figures/profil-de-vitesse.svg",
+      "question": "19",
+      "legende": "Exemple de profil axial sur une section, nul aux parois et plus grand au centre. La forme exacte du profil de l’acier n’est pas imposée par le bilan."
+    },
+    {
+      "fichier": "figures/distance-des-centres.svg",
+      "question": "24",
+      "legende": "Dans le plan méridien, la projection horizontale de la distance entre centres est constante. Une levée P transforme la distance R au contact en R + d."
+    },
+    {
+      "fichier": "figures/phases-de-pade.svg",
+      "question": "30",
+      "legende": "Les trois approximations de Padé sont comparées au retard exact entre les phases 0 et −180°. L’ordre 3 suit la diagonale jusqu’au bord utile."
+    },
+    {
+      "fichier": "figures/bilan-debits-perturbes.svg",
+      "question": "36",
+      "legende": "L’obstruction Qb diminue le débit produit par la busette. L’extraction Sv et le gonflement Qg sont soustraits avant l’intégration du niveau moyen."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 46 questions à partir du PDF de 23 pages, avec lecture visuelle des cartes et des graphiques. Contrôle des 15 états du registre, des trois approximations de Padé, des fonctions de transfert et de l’observabilité, de 1000 géométries de busette et de 64 intégrales de prédiction. Cinq figures originales et synthèse en douze lignes."
+    }
+  ]
+}
