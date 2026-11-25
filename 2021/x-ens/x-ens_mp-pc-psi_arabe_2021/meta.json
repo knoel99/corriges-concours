@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_mp-pc-psi_arabe_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Arabe",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "La mémoire des épidémies et l’action publique dans le monde arabe",
+  "questions": 2,
+  "redaction": "Deux compositions arabes, dont une synthèse titrée croisant histoire de la médecine, historiographie marocaine, coopération régionale et caricature, et une opinion sur les incertitudes du printemps 2020.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_Arabe.pdf",
+    "sha256_sujet": "7dd5461509ed03885381acf6c5c8cbcbb9d24f6d99fbf20a5646316f901f01e7",
+    "index": "https://banques-ecoles.fr/cms/session-2021-3/",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_Arabe.pdf",
+        "sha256": "7dd5461509ed03885381acf6c5c8cbcbb9d24f6d99fbf20a5646316f901f01e7"
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/10/21_MPPC_rapport_eArabe.pdf",
+        "sha256": "d2bda7c089bad51de57c83e5e7c1b8a1503549af960690f93a80b5d9c028f880"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/lecture-du-dossier.svg",
+      "legende": "Trois questions distinctes posées par la confrontation entre les sources anciennes et la crise de 2020."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions arabes, dont une synthèse titrée croisant histoire de la médecine, historiographie marocaine, coopération régionale et caricature, et une opinion sur les incertitudes du printemps 2020."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}
