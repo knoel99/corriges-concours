@@ -1,0 +1,150 @@
+{
+  "slug": "x_mp_composition-de-physique-et-sciences-de-lingenieur_2010",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Composition de physique et sciences de l’ingénieur",
+    "annee": 2010
+  },
+  "questions": 51,
+  "intitule": "Lecteurs optiques numériques",
+  "redaction": "Résolution des 26 questions de la partie I et des 25 questions de la partie II, avec leurs notations respectives. Les deux versions développent la dynamique, les marges de stabilité, la diffraction et les constructions astigmatiques. Les contrôles numériques distinguent le diamètre du faisceau sur L1 de celui sur la lentille cylindrique.",
+  "sources": {
+    "sujet": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2010/MP_PHYSIQUE_X_2_2010.enonce.pdf",
+    "sujet_sha256": "87175d57fd1c7ab5eac703cc9ddfcb86354fcfc0ea4fd7c57d447f956c86a4ee",
+    "rapport_jury": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2010/MP_PHYSIQUE_X_2_2010.rapport.pdf",
+    "rapport_sha256": "bcd23aa4dfada18b545d63a71bbeb3ab30f759a7b01034d04236010475e84ef7"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du cahier de quinze pages et du rapport de Yannick Deshayes et Sylvestre Lacour. Les positions de référence des spots, la pente du détecteur et les cotes de la photodiode ont été lues sur les figures 12, 13 et 21. Le résultat de II.9 est exprimé en millimètres, conformément aux données du sujet."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_mp_suite",
+      "session": "physique_mp_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résolution des 26 questions de la partie I et des 25 questions de la partie II, avec leurs notations respectives. Les deux versions développent la dynamique, les marges de stabilité, la diffraction et les constructions astigmatiques. Les contrôles numériques distinguent le diamètre du faisceau sur L1 de celui sur la lentille cylindrique."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.3",
+      "fichier": "figures/vitesse-du-disque.svg",
+      "legende": "Pour conserver le défilement de la piste, le lecteur ralentit lorsque le spot s’éloigne du centre."
+    },
+    {
+      "numero": 2,
+      "question": "I.5",
+      "fichier": "figures/graphe-des-liaisons.svg",
+      "legende": "Les trois liaisons relient les mêmes solides en parallèle."
+    },
+    {
+      "numero": 3,
+      "question": "I.23",
+      "fichier": "figures/segments-circulaires.svg",
+      "legende": "Les spots centrés sont en pointillés. Après translation vers le haut, le spot inférieur mord sur la piste et y dessine un segment circulaire."
+    },
+    {
+      "numero": 4,
+      "question": "I.25",
+      "fichier": "figures/avance-de-phase.svg",
+      "legende": "Exemple pour k = 4. Au milieu géométrique des deux pulsations de cassure, la phase est maximale."
+    },
+    {
+      "numero": 5,
+      "question": "I.26",
+      "fichier": "figures/asservissement.svg",
+      "legende": "Boucle de focalisation avec retour unitaire de la position mesurée et correction de l’erreur X − Y."
+    },
+    {
+      "numero": 6,
+      "question": "II.11",
+      "fichier": "figures/lentille-cylindrique.svg",
+      "legende": "La lentille cylindrique conserve les rayons parallèles dans le premier plan et les fait converger dans le second."
+    },
+    {
+      "numero": 7,
+      "question": "II.13",
+      "fichier": "figures/traits-focaux.svg",
+      "legende": "Sections du faisceau autour des deux foyers. Le trait horizontal précède le cercle de moindre confusion, puis vient le trait vertical."
+    },
+    {
+      "numero": 8,
+      "question": "II.15",
+      "fichier": "figures/rayons-astigmates.svg",
+      "legende": "Les profils des deux plans sont superposés. À chaque foyer, la séparation des rayons de l’autre plan donne la longueur du trait résiduel."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8",
+      "I.9",
+      "I.10",
+      "I.11",
+      "I.12",
+      "I.13",
+      "I.14",
+      "I.15",
+      "I.16",
+      "I.17",
+      "I.18",
+      "I.19",
+      "I.20",
+      "I.21",
+      "I.22",
+      "I.23",
+      "I.24",
+      "I.25",
+      "I.26",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6",
+      "II.7",
+      "II.8",
+      "II.9",
+      "II.10",
+      "II.11",
+      "II.12",
+      "II.13",
+      "II.14",
+      "II.15",
+      "II.16",
+      "II.17",
+      "II.18",
+      "II.19",
+      "II.20",
+      "II.21",
+      "II.22",
+      "II.23",
+      "II.24",
+      "II.25"
+    ]
+  }
+}
