@@ -1,0 +1,86 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2019",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse économique générale",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Demandes compensées, proportions fixes et financement d’un bien collectif",
+  "gabarit": "probleme",
+  "questions": 21,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Sujets_Ecrits_D2_AEG.pdf",
+    "sujet_sha256": "a18b4d512d8373b79488f3ee8a01f2c8063cd0e34b251ecab42dd3d9cf72a273",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=263&page=1",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Ecrits_D2_AEG.pdf",
+    "rapport_sha256": "8f50935f78b75c41a61ea455961fd338a83477bc9c4cb139199878777897c0ef",
+    "precision": "Le second fichier intitulé « Sujet D2-1 AEG 2019 » ne contient que la garde. Les quatre pages de « Sujets : Écrits D2 AEG 2019 » portent les trois parties. Le rapport mentionne une II.4, mais le cahier numérote II.1 à II.3."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "I.6",
+      "I.7",
+      "I.8.1",
+      "I.8.2",
+      "I.8.3",
+      "II.1",
+      "II.2",
+      "II.3",
+      "III.1.1",
+      "III.1.2",
+      "III.1.3",
+      "III.2.1",
+      "III.2.2",
+      "III.2.3",
+      "III.3.1",
+      "III.3.2"
+    ]
+  },
+  "redaction": "Toutes les questions des trois parties sont traitées. Les deux graphiques de prix sont construits pour les préférences de l’énoncé. L’équilibre privé, les contributions volontaires et l’optimum de bien collectif sont calculés puis comparés.",
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/effets-prix.svg",
+      "question": "I.3 et I.8.1",
+      "legende": "A est l’optimum initial, H le choix compensé et B l’optimum final. La substitution vers y est exactement compensée par la baisse de revenu réel."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/coude.svg",
+      "question": "II.1 et II.3",
+      "legende": "Les coudes des courbes de Leontief déterminent les optima. L’ancien panier reste la demande compensée aux nouveaux prix."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/partage.svg",
+      "question": "III.1–III.3",
+      "legende": "Le produit total est rival dans le premier calcul. Dans les deux suivants, tous bénéficient du même niveau de bien collectif."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "saclay_economie_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Toutes les questions des trois parties sont traitées. Les deux graphiques de prix sont construits pour les préférences de l’énoncé. L’équilibre privé, les contributions volontaires et l’optimum de bien collectif sont calculés puis comparés.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
