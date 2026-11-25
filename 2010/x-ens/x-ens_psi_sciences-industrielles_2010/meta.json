@@ -1,0 +1,63 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2010",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2010,
+    "duree_heures": 5
+  },
+  "questions": 38,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://groupe-reussite.fr/ressources/wp-content/uploads/Annales/x-ens/si/sujet-polytechnique-ens-si-psi-2010.pdf",
+    "sujet_sha256": "ac782cd2cfaf650d988f8828f85c487dbb1e72dc720dcc4756d696a6d110a615",
+    "corrige_enseignant": "https://www.upsti.fr/fichiers/corrige/fichiers/0aa827c8-2364-4f47-856a-07bb50905025/UPSTI-Corrige-XENS-PSI-2010-Transmission4Motion.pdf",
+    "identification": "CX0614, banque commune École polytechnique – ENS de Cachan, 20 pages et un cahier distinct de trois feuilles-réponses après sa garde. Comparaison avec la proposition de l’UPSTI."
+  },
+  "figures": [
+    {
+      "fichier": "figures/bilan-des-forces.svg",
+      "question": "2",
+      "legende": "Repère lié à la route, axe horizontal du dessin vers la montée. Les composantes tangentielles sont dessinées dans leur sens algébrique positif. Le poids au centre de gravité est incliné dans ce repère."
+    },
+    {
+      "fichier": "figures/fast-haldex.svg",
+      "question": "14",
+      "legende": "Lecture fonctionnelle de DR1. Chaque ligne de droite associe une fonction élémentaire à son organe."
+    },
+    {
+      "fichier": "figures/graphe-pompe.svg",
+      "question": "18",
+      "legende": "Les deux arbres tournent par rapport au carter. Les trois ensembles de pistons sont guidés axialement et reçoivent les poussées par les galets et les butées."
+    },
+    {
+      "fichier": "figures/debits-rectifies.svg",
+      "question": "20",
+      "legende": "Tracés de DR2 pour des courses égales, répétés sur un tour. Le débit moyen vers la vanne vaut q*/2. La partie négative du troisième tracé est restituée par le piston de travail."
+    },
+    {
+      "fichier": "figures/perturbation-bode.svg",
+      "question": "33",
+      "legende": "Deux ordres possibles des cassures après normalisation du gain statique et de la pulsation. La pente finale et le rejet statique restent identiques."
+    },
+    {
+      "fichier": "figures/priorite-vanne.svg",
+      "question": "36",
+      "legende": "Actions principales de DR3 et inhibition de la fermeture lorsque l’ouverture devient prioritaire. Les retours sont donnés dans la solution."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 38 questions depuis le cahier CX0614 et DR1 à DR3. Comparaison indépendante avec la proposition enseignante, cinématique et énergie sur deux cycles différents, lecture des cotes de précharge du ressort, vérification de stabilité du PI et traitement des transitions concurrentes de la commande de vanne. Six figures originales."
+    }
+  ]
+}

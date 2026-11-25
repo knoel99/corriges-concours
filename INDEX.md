@@ -283,8 +283,12 @@
 | 2025 | BEL | BL | Anglais | [md](2025/bel/bel_bl_anglais_2025/brut.md) | [md](2025/bel/bel_bl_anglais_2025/guide.md) |
 | 2025 | BEL | BL | Arabe | [md](2025/bel/bel_bl_arabe_2025/brut.md) | [md](2025/bel/bel_bl_arabe_2025/guide.md) |
 | 2025 | BEL | BL | Chinois | [md](2025/bel/bel_bl_chinois_2025/brut.md) | [md](2025/bel/bel_bl_chinois_2025/guide.md) |
+| 2017 | BEL | BL | Composition française | [md](2017/bel/bel_bl_composition-francaise_2017/brut.md) | [md](2017/bel/bel_bl_composition-francaise_2017/guide.md) |
 | 2025 | BEL | BL | Composition française | [md](2025/bel/bel_bl_composition-francaise_2025/brut.md) | [md](2025/bel/bel_bl_composition-francaise_2025/guide.md) |
 | 2026 | BEL | BL | Composition française | [md](2026/bel/bel_bl_composition-francaise_2026/brut.md) | [md](2026/bel/bel_bl_composition-francaise_2026/guide.md) |
+| 2017 | BEL | BL | Géographie | [md](2017/bel/bel_bl_geographie_2017/brut.md) | [md](2017/bel/bel_bl_geographie_2017/guide.md) |
+| 2017 | BEL | BL | Histoire contemporaine | [md](2017/bel/bel_bl_histoire-contemporaine_2017/brut.md) | [md](2017/bel/bel_bl_histoire-contemporaine_2017/guide.md) |
+| 2017 | BEL | BL | Philosophie | [md](2017/bel/bel_bl_philosophie_2017/brut.md) | [md](2017/bel/bel_bl_philosophie_2017/guide.md) |
 | 2026 | BEL | BL | Économie (oral) | [md](2026/bel/bel_bl_economie-oral_2026/brut.md) | [md](2026/bel/bel_bl_economie-oral_2026/guide.md) |
 | 2026 | BEL | BL | Économie | [md](2026/bel/bel_bl_economie_2026/brut.md) | [md](2026/bel/bel_bl_economie_2026/guide.md) |
 | 2026 | BEL | BL | Espagnol | [md](2026/bel/bel_bl_espagnol_2026/brut.md) | [md](2026/bel/bel_bl_espagnol_2026/guide.md) |
@@ -613,6 +617,11 @@
 | 2008 | ENS de Lyon | Second concours | Géosciences | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Géosciences | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/guide.md) |
 | 2010 | ENS de Lyon | Second concours | Géosciences | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Allemand | [md](2010/ens-rennes/ens-rennes_d1_allemand_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_allemand_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Anglais | [md](2010/ens-rennes/ens-rennes_d1_anglais_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_anglais_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Espagnol | [md](2010/ens-rennes/ens-rennes_d1_espagnol_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_espagnol_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Italien | [md](2010/ens-rennes/ens-rennes_d1_italien_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_italien_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Russe | [md](2010/ens-rennes/ens-rennes_d1_russe_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_russe_2010/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Géosciences | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
@@ -636,6 +645,7 @@
 | 2024 | ENS de Lyon | Second concours | Physique | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Espagnol (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Italien (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/guide.md) |
 | 2025 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/guide.md) |
@@ -719,6 +729,7 @@
 | 2026 | ENS | MP | Maths D | [md](2026/ens/ens_mp_maths-d_2026/brut.md) | [md](2026/ens/ens_mp_maths-d_2026/guide.md) |
 | 2015 | ENS | PC | Chimie B | [md](2015/ens/ens_pc_chimie-b_2015/brut.md) | [md](2015/ens/ens_pc_chimie-b_2015/guide.md) |
 | 2016 | ENS | PC | Chimie B | [md](2016/ens/ens_pc_chimie-b_2016/brut.md) | [md](2016/ens/ens_pc_chimie-b_2016/guide.md) |
+| 2017 | ENS | PC | Chimie B | [md](2017/ens/ens_pc_chimie-b_2017/brut.md) | [md](2017/ens/ens_pc_chimie-b_2017/guide.md) |
 | 2018 | ENS | PC | Chimie B | [md](2018/ens/ens_pc_chimie-b_2018/brut.md) | [md](2018/ens/ens_pc_chimie-b_2018/guide.md) |
 | 2019 | ENS | PC | Chimie B | [md](2019/ens/ens_pc_chimie-b_2019/brut.md) | [md](2019/ens/ens_pc_chimie-b_2019/guide.md) |
 | 2020 | ENS | PC | Chimie B | [md](2020/ens/ens_pc_chimie-b_2020/brut.md) | [md](2020/ens/ens_pc_chimie-b_2020/guide.md) |
@@ -1088,6 +1099,7 @@
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
 | 2009 | X-ENS | PSI | Sciences industrielles | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/brut.md) | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/guide.md) |
+| 2010 | X-ENS | PSI | Sciences industrielles | [md](2010/x-ens/x-ens_psi_sciences-industrielles_2010/brut.md) | [md](2010/x-ens/x-ens_psi_sciences-industrielles_2010/guide.md) |
 | 2012 | X-ENS | PSI | Sciences industrielles | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/brut.md) | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/guide.md) |
 | 2013 | X-ENS | PSI | Sciences industrielles | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/brut.md) | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/guide.md) |
 | 2014 | X-ENS | PSI | Sciences industrielles (corrigé partiel) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/brut.md) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/guide.md) |

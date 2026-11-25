@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2001",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2001
+  },
+  "questions": 22,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2001.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "d568164753402d33a0b4a4a237d2b4d21f91fda227a4986fa9613aae0a07e78d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cercles-du-demi-plan.svg",
+      "question": "8.b",
+      "legende": "Trois orbites du demi-plan. Le point marqué sur chaque cercle est son unique intersection avec le segment imaginaire entre 0 et i."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète sur les quatre pages de l’original. Vérification de la récurrence et du wronskien complexe, de la couverture par les cercles, du jacobien orienté et des changements de variable de la moyenne angulaire. Graphique de trois orbites.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

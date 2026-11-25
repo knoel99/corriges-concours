@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2002",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2002
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2002.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "eb080f4793bfc87702ca4fbd6a056a8f5604d78ec0ba13eb18aaec21b844dc5e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-ensembles-de-medianes.svg",
+      "question": "6.b",
+      "legende": "Les deux valeurs équiprobables donnent tous les minimiseurs compris entre zéro et un. La fonction identité a pour unique médiane 1/2."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète sur l’original de trois pages, des minimums quadratiques à la stabilité des médianes. Vérification des dérivées aux atomes, du caractère fermé des demi-droites, des préimages monotones, de la continuité et de la convergence en moyenne. Graphique comparatif des deux exemples de la question 6.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

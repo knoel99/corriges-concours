@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_allemand_2010",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-10d1-langues_1421752516799-pdf#page=2",
+    "sha256_sujet": "20166d498a19f572d1ff3a2f315b24bea37fafdedb8a88749760aa88d2c4fcf2",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Tanja Dückers · Die Zeit · 16 décembre 2009",
+    "page": 2,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/reo1a_10d1_allem_1280151314053.pdf#page=1",
+    "sha256_rapport_jury": "8d7f754d841f29c71ff3211ebca64266a3674da5a1c51be77d6553c0a6c7de49"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Conséquences de la conjoncture économique sur les projets familiaux des jeunes couples · 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/revenu.svg",
+      "legende": "Trois positions dans le raisonnement de Tanja Dückers"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
