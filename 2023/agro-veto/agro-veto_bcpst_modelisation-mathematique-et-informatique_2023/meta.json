@@ -1,0 +1,54 @@
+{
+  "slug": "agro-veto_bcpst_modelisation-mathematique-et-informatique_2023",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Modélisation mathématique et informatique",
+    "annee": 2023,
+    "duree_heures": 3
+  },
+  "questions": 49,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/mmi_2023_rapport_le.pdf",
+    "rapport_sha256": "163dfc5ef1327b9d52dabf37b5f7a621aea5e268a0731d4d5447bebedbb95b1e",
+    "page_organisateur": "https://www.concours-agro-veto.fr/archives-bilans-statistiques/archives-sujets-rapports/sujets-rapports-concours-cpge-bcpst/epreuves-ecrites-concours-cpge-bcpst",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/abcpst_sp_0223_mmi-1.pdf",
+    "sujet_sha256": "4a2cb023fed4dc036b7f6445d864a375371a56dd5353fcb223dd4d1f717d508b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/uniformisation-dans-la-boite.svg",
+      "question": "I.11",
+      "legende": "À partir de la première case, les trois distributions successives se rapprochent de la droite horizontale de hauteur 1/6."
+    },
+    {
+      "fichier": "figures/prix-et-versement.svg",
+      "question": "II.15",
+      "legende": "Au-dessous du prix d’exercice, le prix payé suit le cours. Au-dessus, la banque verse le dépassement."
+    },
+    {
+      "fichier": "figures/arbre-des-exposants.svg",
+      "question": "II.1a",
+      "legende": "Les huit chemins aboutissent à quatre exposants finaux. Les diagonales qui se rejoignent expliquent la recombinaison."
+    },
+    {
+      "fichier": "figures/seuils-des-feuilles.svg",
+      "question": "III.13",
+      "legende": "Pour cinq pas, un cours initial de 1 et un prix d’exercice de 2, les feuilles d’exposants 5, 3 puis 1 deviennent actives aux trois seuils pointillés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les questions sur le sujet et le rapport officiels. Correction de l’exception en I.9b, seuil strict du call, bords de la dernière tranche pour les deux parités et cas de division par zéro du code imprimé. Vérification sur arbres et matrices et quatre figures originales."
+    }
+  ]
+}
