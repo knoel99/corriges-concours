@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_italien-lv1_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LV1)",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "L’édition automatisée de Philip M. Parker et la valeur artistique",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "5",
+    "code_garde": "80.12PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mppc_sujet_langue_vivante_1.pdf#page=5",
+    "sujet_sha256": "54d0900d478637b442e3ecac217a1f803f6b95a9197e52e427d80cf31b3e1058",
+    "precision": "Le passage de La Repubblica.it date de février 2008. Les deux réponses italiennes totalisent 200 mots, comme l’exige la page 5 du cahier. Le rapport de cette option n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 100,
+    "2": 100
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/edition.svg",
+      "legende": "L’article décrit une chaîne d’édition automatisée et l’impression à la demande."
+    },
+    {
+      "numero": 2,
+      "question": "2",
+      "fichier": "figures/valeur.svg",
+      "legende": "Deux œuvres à prix égal peuvent avoir des significations très différentes."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. L’édition automatisée de Philip M. Parker et la valeur artistique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
