@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2018",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "La société à responsabilité limitée est-elle une forme sociale obsolète ?",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-e-preuve-a-option-d1-2018_1563804946515-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-droit-commercial-d1-2018_1563806677752-pdf",
+    "sujet_sha256": "d5d2974c154a52539de38899a830e0d8f8b46051b7509510448b6708afa1bc6c",
+    "rapport_sha256": "253521ae75ef56d3bed078528479f7a60cda2dfad27672ddd49523eed5e675b6",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2018",
+    "apercu_sujet_sha256": "d7a9a68caa7c556dbfd8833a567644b3bd948f02885735037dc838b7f3d4fee6",
+    "apercu_rapport_sha256": "c45d05d25965e3fd83a6887dc7960b3945ce39b7a45f912eb8155ccb928e5a7a",
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "reference_garde": "R 18 - 83"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/comparer-sarl-et-sas.svg",
+      "legende": "Le poids d’un cadre prédéfini varie selon les associés et leur projet."
+    },
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/entreprendre-seul-en-2018.svg",
+      "legende": "Le patrimoine affecté de l’EIRL se distingue des biens d’une personne morale."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « La société à responsabilité limitée est-elle une forme sociale obsolète ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « La société à responsabilité limitée est-elle une forme sociale obsolète ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
