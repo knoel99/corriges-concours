@@ -1,0 +1,42 @@
+{
+  "slug": "agro-veto_bcpst_maths_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Maths",
+    "annee": 2025
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0425_sp.pdf",
+    "rapport_jury": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_bcpst_methodes_de_calcul_et_raisonnement_2025.pdf",
+    "sha256_sujet": "2e7b1f3426549e94f6b03b2406da7318cfa888eaa2d3ea642ed4328b89b80f63",
+    "sha256_rapport_jury": "01cf31149e7f608fbf40077c924d9572b2e00ff10ad2caf2cb6dad486b432b1d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/deux-integrandes.svg",
+      "question": "1",
+      "legende": "Les courbes se rejoignent aux extrémités. Les petits segments marquent les tangentes horizontales."
+    },
+    {
+      "fichier": "figures/compter-les-rangs.svg",
+      "question": "13.b",
+      "legende": "Compter séparément les observations au plus égales à x et celles de l’intervalle suivant."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions et contrôle des 29 réponses numérotées et sous-numérotées des quatre pages au regard des trois pages du rapport. Tracés des deux fonctions et de leurs tangentes, interprétation du passage au rang k, calcul des moments et contrôle des quatre valeurs propres.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
