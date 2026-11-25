@@ -21,7 +21,7 @@
     {
       "fichier": "figures/school-exemptions.svg",
       "question": "Synthèse",
-      "legende": "Two entries from the January 2026 NBC map"
+      "legende": "Four nonmedical exemption categories on the January 2026 map"
     },
     {
       "fichier": "figures/argument-clinic.svg",
@@ -30,9 +30,10 @@
     }
   ],
   "sources": {
-    "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=6"
+    "sujet": "https://www.ens.psl.eu/sites/default/files/261243_bcpst_lve_2026.pdf#page=6",
+    "sujet_sha256": "ce0653ccf99a04728fdd7d9ac0ca35ed6fc9d9c2dc329c4651d6dd86b0a4dc30"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -85,6 +86,17 @@
       "modifications": true,
       "perimetre": "Confrontation des deux versions aux pages imprimées 5–8. Portée du calendrier fédéral et de la carte des dispenses, comparaison sur les mêmes mois, attribution de la comparaison internationale dans la version et vérification des deux décomptes.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Vérification des quatre catégories de la carte sur l’original, ajout du Minnesota et du Texas dans les deux synthèses et reconstruction du schéma. Distinction entre volume des messages et part consacrée à la vaccination de routine, portée temporelle du dossier et syntaxe de la version."
     }
   ]
 }
