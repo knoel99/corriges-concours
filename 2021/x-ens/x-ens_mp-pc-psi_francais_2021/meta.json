@@ -1,0 +1,70 @@
+{
+  "slug": "x-ens_mp-pc-psi_francais_2021",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Français",
+    "annee": 2021,
+    "modalite": "écrit",
+    "duree_heures": 4
+  },
+  "intitule": "Hans Blumenberg et la possibilité de manquer sa propre humanité",
+  "questions": 1,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_Fr.pdf",
+    "sha256_sujet": "b702254854dc93c6a432f21233ede9916626d5d4ab0f259a7806d9408141604e",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/12/21_MPPC_rapport_eFra.pdf",
+    "sha256_rapport_jury": "2c0dfddd2887f0a840d2743293c7b616cb25c3ad4f750911fbbfcf913e7d43e8",
+    "index_sujet": "https://banques-ecoles.fr/cms/session-2021-3/",
+    "code_garde": "XEULCR",
+    "oeuvres_au_programme": [
+      "Svetlana Alexievitch, La Supplication",
+      "Victor Hugo, Les Contemplations, livres IV et V",
+      "Friedrich Nietzsche, Le Gai Savoir, préface à la seconde édition et livre IV"
+    ],
+    "portee_rapport": "Le sujet XEULCR, commun à MP, PC et PSI, donne la citation et le corpus p. 2. Le rapport de cinq pages porte les trois filières. Aux p. 2–4, il distingue risque constitutif et goût du danger, échec d’une entreprise et possibilité de manquer sa propre humanité. Il souligne l’enjeu de l’espèce dans « l’incarnation de l’improbable ».",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MPPC_sujet_Fr.pdf",
+        "sha256": "b702254854dc93c6a432f21233ede9916626d5d4ab0f259a7806d9408141604e",
+        "pages": 2
+      },
+      {
+        "role": "rapport",
+        "url": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/12/21_MPPC_rapport_eFra.pdf",
+        "sha256": "2c0dfddd2887f0a840d2743293c7b616cb25c3ad4f750911fbbfcf913e7d43e8",
+        "pages": 5
+      }
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/risque-et-humanite.svg",
+      "question": "Dissertation",
+      "legende": "Trois gestes donnent un sens précis à « malgré tout ». Ils n’effacent ni la perte, ni la maladie, ni la catastrophe dont ils partent."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Dissertation complète sur la distinction entre survivre et réaliser l’humanité. Lecture du deuil et du Mendiant chez Hugo, de la préface, des aphorismes 276, 290 et 341 du Gai Savoir et de la polyphonie de La Supplication. Édition guidée, schéma et contrôle des limites du programme."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ],
+    "limites": "Une interprétation argumentée du sujet. Les exemples des œuvres sont paraphrasés sauf indication explicite."
+  }
+}
