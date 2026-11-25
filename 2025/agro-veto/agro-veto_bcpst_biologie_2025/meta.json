@@ -1,0 +1,63 @@
+{
+  "slug": "agro-veto_bcpst_biologie_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Biologie",
+    "annee": 2025
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/rapport_cpge-bcpst_bio_epreuve_de_synthese_2025_vdef.pdf",
+    "rapport_sha256": "c6f3bba5856cca7a765813079884bc816800b3c11337eaa8ec631dd33fe3a19a",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0125_sp.pdf",
+    "sujet_sha256": "ae5e080618db13f74bf11279a67c305488a20add1a55fc76b8eb19502c571386"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Synthèse"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "La composition unique est rédigée dans les deux éditions. Elle relie le fonctionnement, le développement et l’évolution des Angiospermes aux effets en retour des peuplements sur leur environnement abiotique, en précisant les échelles spatiales et temporelles."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "I.1",
+      "fichier": "figures/continuum-hydrique.svg",
+      "legende": "Lors d’une transpiration diurne avec sol suffisamment humide, les différents segments suivent un même gradient de potentiel hydrique. Les flèches indiquent le flux d’eau."
+    },
+    {
+      "question": "I.3",
+      "fichier": "figures/thylakoide-et-cycle-de-calvin.svg",
+      "legende": "L’eau cède ses électrons au photosystème II. Le NADPH et l’ATP sont disponibles dans le stroma, où la Rubisco fixe le CO₂."
+    },
+    {
+      "question": "II.2",
+      "fichier": "figures/saisons-et-floraison.svg",
+      "legende": "FLC est un répresseur de la floraison. Sa répression après le froid facilite la réponse ultérieure à une photopériode favorable."
+    },
+    {
+      "question": "III.3",
+      "fichier": "figures/oyat-et-dynamique-dunaire.svg",
+      "legende": "L’oyat fait obstacle au vent à proximité du sol. Le piégeage de sable et la fixation du substrat contribuent à une modification durable du milieu."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale de la synthèse et de l’édition guidée à partir du sujet officiel BCPST-0125 et du rapport de synthèse de treize pages. Quatre illustrations originales et explicitation des changements d’échelle, du gradient hydrique et des limites des exemples."
+    }
+  ]
+}
