@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2004",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2004,
+    "duree_heures": 2
+  },
+  "questions": 8,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2004.pdf",
+    "sujet_sha256": "92628117b38bdfed7516d0319d3adabe08c9585690615f1ec1da119ab7a5541a"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbres-de-representants.svg",
+      "question": "5",
+      "legende": "Pour le même cercle de quatre personnes, la chaîne demande jusqu’à trois déplacements. Dans l’étoile, un seul suffit."
+    },
+    {
+      "fichier": "figures/voisins-precedents.svg",
+      "question": "7",
+      "legende": "La fenêtre de marquage de K consulte NO, N et O. NE est déjà lu à cet instant mais la diagonale nord-est/sud-ouest est exclue du problème."
+    },
+    {
+      "fichier": "figures/etiquetage-definitif.svg",
+      "question": "8",
+      "legende": "Quatre objets sur un exemple de cinq lignes. Les trois pixels de la diagonale issue du coin supérieur gauche partagent bien la couleur 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des huit questions, à partir de l’original natif de quatre pages. Vérification des directions admissibles, des numéros de couleur provisoires et de la diffusion définitive sur l’ensemble des 66 066 images binaires carrées de tailles 1 à 4 avec un parcours indépendant. Trois illustrations originales."
+    }
+  ]
+}
