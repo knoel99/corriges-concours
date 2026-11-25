@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-liberte-et-fers_2017",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — liberté et fers",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Philosophie — liberté et fers",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/philo-ecrit-sil17.pdf",
+    "sujet_sha256": "28ded7bd21867ef1a2eda6c88dd026de240605f922a15ee81afd4924bca931c6",
+    "references": [
+      "https://fr.wikisource.org/wiki/Du_contrat_social/%C3%89dition_1762/Livre_I/Chapitre_1"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/liens.svg",
+      "question": "Dissertation",
+      "legende": "Que fait obstacle et à quel titre ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire philosophique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification de l’attribution de la formule, du contexte des deux questions initiales et des distinctions entre dépendance, force, obligation et volonté générale. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_philosophie-la-traduction_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Philosophie — la traduction",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Philosophie — la traduction",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/ecrit-philo-SIL2018.pdf",
+    "sujet_sha256": "5e34eabcd4fb75e49410c05ce2c9bac311f5ba5b830e00610bd4b665fcd921ba",
+    "references": [
+      "https://www.degruyterbrill.com/document/doi/10.4159/harvard.9780674731615.c18/html"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/adresse.svg",
+      "question": "Dissertation",
+      "legende": "Quel geste de parole faut-il rendre ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire philosophique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification des variations d’adresse anglaise et française, des distinctions élaborées par Jakobson et du statut des exemples de dialogue et de poème inventés pour la dissertation. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}
