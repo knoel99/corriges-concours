@@ -1,0 +1,36 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques-2_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques 2",
+    "annee": 2018
+  },
+  "questions": 95,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2018_SE_2C_Maths_Maths2.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "444bfefef56dea46793d3f8da44849b42932845c2eceefd4a6e7d585ae7537bd"
+  },
+  "figures": [
+    {
+      "fichier": "figures/entrelacement-interpolation.svg",
+      "question": "N.13.d",
+      "legende": "Pour m égal à deux, les quatre racines simples des polynômes auxiliaires alternent. Ces points servent de départ à la déformation des nœuds."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux sujets au choix d’après le cahier 2C8122. Urnes de Friedman et Pólya, moments de Hausdorff et échangeabilité, interpolation positive, théorème de Lukács et jacobienne de la déformation des nœuds. Traitement de a nul dans Friedman, de la masse en zéro et des extrémités dans Rolle. Figure des racines entrelacées.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
