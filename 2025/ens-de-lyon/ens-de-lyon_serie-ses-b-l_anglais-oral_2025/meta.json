@@ -1,0 +1,783 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_anglais-oral_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Anglais (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 46,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=10",
+    "sujet_sha256": "c8ddaa0530f71dbb4dfb4bb32f8373963776602248462be1d250ba5c27b674c5",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=20",
+    "rapport_jury_sha256": "376daf04dd646b0b3fa852e3fb741b66e422a77d5cbe836a9541ca8da0d35c4d",
+    "documents": [
+      {
+        "rang": 1,
+        "reference_repertoire": "“Did the US election polls fail?”, Natalie Sherman (07/11/2024)",
+        "publication": "BBC News",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Article, BBC News",
+            "url": "https://www.bbc.com/news/articles/cj4ve004llxo"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 2,
+        "reference_repertoire": "“Numbers are down – but Starmer will still struggle to win on immigration”, Alan Little (22/05/2025)",
+        "publication": "BBC News",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Article, BBC News",
+            "url": "https://www.bbc.com/news/articles/cyvmmldmvq4o"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 3,
+        "reference_repertoire": "“Dry January is the least of big booze’s problems”, Andrea Felsted (20/02/2025)",
+        "publication": "Bloomberg Opinion",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Chronique de Felsted en syndication",
+            "url": "https://lasvegassun.com//news/2025/feb/22/dry-january-is-the-least-of-big-boozes-problems/"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 4,
+        "reference_repertoire": "“After ‘Severance,’ will we ever see work-life balance the same way?”, Stephen Humphries (20/02/2025)",
+        "publication": "Christian Science Monitor",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Article de Stephen Humphries",
+            "url": "https://www.csmonitor.com/Arts-Culture/TV/2025/0220/severance-workplace-adam-scott"
+          },
+          {
+            "description": "Discussion du journaliste avec sa rédaction",
+            "url": "https://www.csmonitor.com/Podcasts/Why-We-Wrote-This/wwwt_2506"
+          },
+          {
+            "description": "Exemple du jury",
+            "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=23"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis. Le jury propose un exemple de problématique sur la série et le travail."
+      },
+      {
+        "rang": 5,
+        "reference_repertoire": "“Here’s how much a ‘Made in the USA’ iPhone would cost”, Kif Leswing (11/04/2025)",
+        "publication": "CNBC",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Article de Kif Leswing, CNBC",
+            "url": "https://www.cnbc.com/2025/04/11/heres-how-much-a-made-in-the-usa-iphone-would-cost.html"
+          },
+          {
+            "description": "Référence de l’étude et du reportage",
+            "url": "https://counterpointresearch.com/en/insights/post-insight-in-the-press-heres-how-much-a-made-in-the-usa-iphone-would-cost"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 6,
+        "reference_repertoire": "“By selfishly pardoning his son Hunter, Joe Biden flat-out destroyed his legacy”, Rex Huppke (03/12/2024)",
+        "publication": "Des Moines Register",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Chronique de Huppke en syndication",
+            "url": "https://www.yahoo.com/news/selfishly-pardoning-son-hunter-joe-154520649.html"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 7,
+        "reference_repertoire": "“Cabbies fear ‘hundreds’ of taxis will be ‘forced off’ Manchester’s roads at stroke of New Year’s Eve midnight”, Ethan Davies (31/03/2025)",
+        "publication": "Manchester Evening News",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Reportage ultérieur du même journaliste, contexte",
+            "url": "https://stockport.nub.news/news/local-news/taxis-are-broken-this-is-andy-burnhams-plan-to-fix-it-259070"
+          }
+        ],
+        "limitation": "Le journaliste revient sur son information de fin mars dans un reportage de mai. Le texte original du 31 mars et sa coupe manquent."
+      },
+      {
+        "rang": 8,
+        "reference_repertoire": "“America Gets The President We Deserve”, Ryan Bernsten (30/12/2024)",
+        "publication": "Newsweek",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Tribune de Bernsten, Newsweek",
+            "url": "https://www.newsweek.com/america-gets-president-we-deserve-opinion-2006287"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 9,
+        "reference_repertoire": "“The Secret That Colleges Should Stop Keeping”, Rose Horowitch (20/02/2025)",
+        "publication": "The Atlantic",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Chronique de Rose Horowitch",
+            "url": "https://www.theatlantic.com/ideas/archive/2025/02/college-cheaper-sticker-price/681742/"
+          }
+        ],
+        "limitation": "La page de la publication correspond à la chronique de Rose Horowitch sur les prix annoncés et les aides. Son titre en ligne diffère du titre imprimé par le concours. Coupe inconnue."
+      },
+      {
+        "rang": 10,
+        "reference_repertoire": "“Trump Brings Britain’s ‘Moron premium’ to the U.S. Economy”, Paul Mason (12/04/2025)",
+        "publication": "The Atlantic",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Chronique de Mason, The Atlantic",
+            "url": "https://www.theatlantic.com/economy/archive/2025/04/trump-truss-moron-premium/682421/"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 11,
+        "reference_repertoire": "“I am a Mexican American who voted for Trump. Here’s why.”, J. Marcos Peterson (15/11/2024)",
+        "publication": "The Chicago Tribune",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Chronique du Chicago Tribune reprise par le Houston Chronicle",
+            "url": "https://www.houstonchronicle.com/opinion/outlook/article/mexican-american-vote-trump-19916623.php"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 12,
+        "reference_repertoire": "“Should Trump be giving stock tips to his followers?”, The Editorial Board (09/04/2025)",
+        "publication": "The Chicago Tribune",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Chronologie distincte, Associated Press",
+            "url": "https://apnews.com/article/fccfa6b06c8f1ec0cd7844641ca52669"
+          }
+        ],
+        "limitation": "Le titre figure au répertoire. Un reportage distinct éclaire les circonstances. Les exemples appartiennent à la préparation proposée et la coupe originale manque."
+      },
+      {
+        "rang": 13,
+        "reference_repertoire": "“’News influencers’ are racking up billions of views – and not checking their facts”, Kelly Fincham (10/12/2024)",
+        "publication": "The Conversation",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Chronique de Fincham, reprise de The Conversation",
+            "url": "https://phys.org/news/2024-12-news-racking-billions-views-facts.html"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 14,
+        "reference_repertoire": "“Why a ‘rip-off’ degree might be worth the money after all – research study”, Sean Prophy (22/05/2025)",
+        "publication": "The Conversation",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Article de Sean Brophy, repris de The Conversation",
+            "url": "https://phys.org/news/2025-05-rip-degree-worth-money.html"
+          }
+        ],
+        "limitation": "Reprise de l’article signée Sean Brophy. Le répertoire de Lyon imprime Sean Prophy. La coupe du concours manque."
+      },
+      {
+        "rang": 15,
+        "reference_repertoire": "“Reform’s threat to the mainstream parties is unique in UK political history”, Martin Farr (30/05/2025)",
+        "publication": "The Conversation",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Article de Farr, The Conversation",
+            "url": "https://theconversation.com/reforms-threat-to-the-mainstream-parties-is-unique-in-uk-political-history-257839"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 16,
+        "reference_repertoire": "“Small boat arrivals jump 25 per cent amid drop in EU migration”, Sophia Yan (07/03/2025)",
+        "publication": "The Daily Telegraph",
+        "page_repertoire": 10,
+        "temoins": [
+          {
+            "description": "Arrivées sur la Manche, reportage de contexte",
+            "url": "https://www.standard.co.uk/news/politics/migrant-crossings-small-boats-dover-kent-border-force-english-channel-b1215116.html"
+          },
+          {
+            "description": "Définition des statistiques officielles",
+            "url": "https://www.gov.uk/government/statistics/small-boat-arrivals-and-the-impact-of-crossing-conditions/small-boat-arrivals-and-the-impact-of-crossing-conditions"
+          }
+        ],
+        "limitation": "Le titre figure au répertoire. Un reportage distinct éclaire les circonstances. Les exemples appartiennent à la préparation proposée et la coupe originale manque."
+      },
+      {
+        "rang": 17,
+        "reference_repertoire": "“Nigel’s world” (26/04/2025)",
+        "publication": "The Economist",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Numéro de The Economist du 26 avril 2025",
+            "url": "https://www.economist.com/weeklyedition/2025-04-26"
+          },
+          {
+            "description": "Référence lyonnaise",
+            "url": "https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=11"
+          }
+        ],
+        "limitation": "Titre et question sur la concurrence de Reform UK identifiés dans l’édition du 26 avril. La coupe distribuée manque."
+      },
+      {
+        "rang": 18,
+        "reference_repertoire": "“The public realm. Britain’s “broken windows”” (03/05/2025)",
+        "publication": "The Economist",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Article sur l’espace public, The Economist",
+            "url": "https://www.economist.com/britain/2025/05/01/broken-windows-and-pockmarked-roads"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 19,
+        "reference_repertoire": "“Free speech in Britain” (17/05/2025)",
+        "publication": "The Economist",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Numéro de The Economist du 17 mai 2025",
+            "url": "https://www.economist.com/weeklyedition/2025-05-17"
+          },
+          {
+            "description": "Éditorial européen distinct, pour le contexte",
+            "url": "https://www.economist.com/leaders/2025/05/15/europes-free-speech-problem"
+          }
+        ],
+        "limitation": "Titre de rubrique et passages sur les règles britanniques relatives aux propos en ligne repérés dans le numéro du 17 mai. Le même numéro comporte aussi un éditorial distinct sur l’Europe. Coupe de concours inconnue."
+      },
+      {
+        "rang": 20,
+        "reference_repertoire": "“Bring back Boris”, Bagehot (24/05/2025)",
+        "publication": "The Economist",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Reprise de la chronique de Bagehot",
+            "url": "https://www.biznews.com/global-citizen/economist-return-big-dog-boris-looms-fractured-tory"
+          },
+          {
+            "description": "Exemple du jury",
+            "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=23"
+          }
+        ],
+        "limitation": "Titre et passages de la chronique de Bagehot, complétés par l’exemple consacré à Johnson dans le rapport. Coupe inconnue."
+      },
+      {
+        "rang": 21,
+        "reference_repertoire": "“From envy of the world to national embarrassment, Labour and NHS” (31/05/2025)",
+        "publication": "The Economist",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Article du 29 mai, The Economist",
+            "url": "https://www.economist.com/britain/2025/05/29/where-next-for-britains-broken-national-health-service"
+          },
+          {
+            "description": "Référence contemporaine aux titres",
+            "url": "https://nhsreality.wordpress.com/2025/06/11/decision-making-despair-hard-truths-are-not-being-said-by-politicians-the-economist-however-opines-from-envy-of-the-world-to-national-embarrassment/"
+          }
+        ],
+        "limitation": "La publication en ligne porte un titre différent. Le rapprochement avec le titre imprimé et le sujet de l’article est attesté par une reprise contemporaine. Coupe inconnue."
+      },
+      {
+        "rang": 22,
+        "reference_repertoire": "“Would immigration curbs hit the UK’s grocers?”, Bearbull (16/05/2025)",
+        "publication": "The Financial Times",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique de Bearbull, Investors’ Chronicle",
+            "url": "https://www.investorschronicle.co.uk/content/3c8eb9be-84dd-48ff-b968-f741fb53c1da"
+          }
+        ],
+        "limitation": "Le répertoire donne le 16 mai et le Financial Times. La chronique signée Bearbull est publiée le 15 mai par Investors’ Chronicle. Titre et ouverture consultables, coupe inconnue."
+      },
+      {
+        "rang": 23,
+        "reference_repertoire": "“This post-election Thanksgiving, we all have the power to soften our hardened hearts”, Andrew Fiala (23/11/2024)",
+        "publication": "The Fresno Bee",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique dans le Fresno Bee",
+            "url": "https://www.fresnobee.com/opinion/readers-opinion/article295924914.html"
+          },
+          {
+            "description": "Republication par Andrew Fiala",
+            "url": "https://andrewfiala.com/gratitude-grace-and-the-biden-trump-handshake/"
+          }
+        ],
+        "limitation": "Le répertoire indique le 23 novembre. L’auteur republie la chronique avec le titre du Fresno Bee et un renvoi daté du 24. Coupe d’examen inconnue."
+      },
+      {
+        "rang": 24,
+        "reference_repertoire": "“Anglican group launches £7m project in Barbados to atone for slavery atrocities”, Natricia Duncan (06/09/2024)",
+        "publication": "The Guardian",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Reportage, The Guardian",
+            "url": "https://www.theguardian.com/world/article/2024/sep/06/anglican-church-mission-project-barbados-atone-slavery"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 25,
+        "reference_repertoire": "“Nine in ten honey samples from UK retailers fail authenticity test”, Jon Ungoed- Thomas (09/11/2024)",
+        "publication": "The Guardian",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Enquête, The Guardian",
+            "url": "https://www.theguardian.com/food/2024/nov/09/nine-in-ten-honey-samples-from-uk-retailers-fail-authenticity-test"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 26,
+        "reference_repertoire": "“Is Keir Starmer’s plan to help workers the start of a new era – or no big deal?”, Andy Beckett (13/09/2024)",
+        "publication": "The Guardian",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique de Beckett",
+            "url": "https://www.theguardian.com/commentisfree/2024/sep/13/keir-starmer-workers-labour-tuc-conference"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 27,
+        "reference_repertoire": "“Anti-racism campaigner’s London book events cancelled amid threat of far-right violence”, Ben Quinn (23/11/2024)",
+        "publication": "The Guardian",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Reportage de Quinn",
+            "url": "https://www.theguardian.com/politics/2024/nov/23/anti-racism-talks-cancelled-amid-threat-of-far-right"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 28,
+        "reference_repertoire": "“Trump in the Circle: Wrestling and the battle for American masculinity”, Daniel Kennedy (16/04/2025)",
+        "publication": "The Guardian",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique de Kennedy",
+            "url": "https://www.theguardian.com/sport/2025/apr/16/donald-trump-wrestling-masculinity"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 29,
+        "reference_repertoire": "“Kamala, but not Harris: Why people use female politicians’ first names”, Addy Bink (21/09/2024)",
+        "publication": "The Hill",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Article d’Addy Bink",
+            "url": "http://thehill.com/homenews/nexstar_media_wire/4882539-kamala-but-not-harris-why-people-use-female-politicians-first-names"
+          },
+          {
+            "description": "Ouverture reproduite",
+            "url": "https://www.allsides.com/news/2024-09-21-0815/politics-kamala-not-harris-why-people-use-female-politicians-first-names"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 30,
+        "reference_repertoire": "“From the GI Bill to reparations: The next Congress must right a history of injustice”, Brian Williams (11/11/2024)",
+        "publication": "The Hill",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Tribune de Brian Williams",
+            "url": "https://thehill.com/opinion/4982581-gi-bill-black-veterans/"
+          },
+          {
+            "description": "Index de l’auteur",
+            "url": "https://brianwilliamsmd.com/media"
+          },
+          {
+            "description": "Historique et proposition législative, IAVA",
+            "url": "https://act.iava.org/gibillbenefits"
+          }
+        ],
+        "limitation": "L’auteur répertorie sa tribune et renvoie à The Hill. L’historique des droits des vétérans éclaire la proposition. Feuillet et corps intégral non vérifiés."
+      },
+      {
+        "rang": 31,
+        "reference_repertoire": "“Sorry, but manufacturing isn’t what it used to be. Bringing it back will never be enough.”, Matt Stewart (14/04/2025)",
+        "publication": "The Hill",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique de Matt Stewart en syndication",
+            "url": "https://www.aol.com/opinion-sorry-manufacturing-isn-t-123000028.html"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 32,
+        "reference_repertoire": "“UK is not ready for coming climate ‘disaster,’ government advisers warn”, Emily Beament (30/04/2025)",
+        "publication": "The Independent",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Reportage, The Independent",
+            "url": "https://www.independent.co.uk/climate-change/uk-climate-change-disaster-environment-floods-b2741564.html"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 33,
+        "reference_repertoire": "“The American dream of bringing the mall home”, Emily Mester (23/11/2024)",
+        "publication": "The Los Angeles Times",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique de Mester, Los Angeles Times",
+            "url": "https://www.latimes.com/opinion/story/2024-11-23/shopping-purchases-prosperity"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 34,
+        "reference_repertoire": "“California’s cycle of fiery destruction and reconstruction is older than you might think”, Robin Abcarian (15/01/2025)",
+        "publication": "The Los Angeles Times",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique de Robin Abcarian",
+            "url": "https://www.latimes.com/opinion/story/2025-01-15/californias-long-cycle-of-fiery-destruction-and-reconstruction"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 35,
+        "reference_repertoire": "“Why Hollywood is not alarmed enough about Gen Z”, Ryan Faughnder (08/04/2025)",
+        "publication": "The Los Angeles Times",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Chronique de Ryan Faughnder",
+            "url": "https://www.latimes.com/entertainment-arts/business/newsletter/2025-04-08/why-hollywood-is-not-alarmed-enough-about-gen-z-the-wide-shot"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 36,
+        "reference_repertoire": "“Big tech CEOs are too busy protecting their interests to protect their users”, Tom Muha (10/02/2025)",
+        "publication": "The Michigan Daily",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Tribune de Tom Muha",
+            "url": "https://www.michigandaily.com/opinion/big-tech-ceos-are-too-busy-protecting-their-interests-to-protect-their-users/"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 37,
+        "reference_repertoire": "“How to Turn Trump’s Economic Chaos Against Him”, James Carville (14/04/2025)",
+        "publication": "The New York Times",
+        "page_repertoire": 11,
+        "temoins": [
+          {
+            "description": "Tribune de Carville",
+            "url": "https://www.nytimes.com/2025/04/14/opinion/trump-tariffs-economy-carville.html"
+          },
+          {
+            "description": "Ouverture reproduite",
+            "url": "https://www.allsides.com/news/2025-04-14-0524/politics-james-carville-how-turn-trump-s-economic-chaos-against-him"
+          },
+          {
+            "description": "Exemple du jury",
+            "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=23"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis. Le rapport présente un exemple de plan sur le chaos économique."
+      },
+      {
+        "rang": 38,
+        "reference_repertoire": "“How your pint of milk found itself at the centre of a new conspiracy war”, Boudicca Fox-Leonard (08/12/2024)",
+        "publication": "The Telegraph",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Reprise de la chronique de Fox-Leonard",
+            "url": "https://www.yahoo.com/news/milk-fridge-found-itself-centre-090000775.html"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 39,
+        "reference_repertoire": "“Pupils should not be taught ‘greatness’ of British Empire, Bridget Phillipson told”, Poppy Wood, Rian Kennedy (08/02/2025)",
+        "publication": "The Telegraph",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Reprise de l’article de Wood et Kennedy",
+            "url": "https://www.yahoo.com/news/pupils-not-taught-greatness-british-070000922.html"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 40,
+        "reference_repertoire": "“Tories sink to lowest ever poll rating”, Dominic Penna (20/05/2025)",
+        "publication": "The Telegraph",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Article de Penna, The Telegraph",
+            "url": "https://www.telegraph.co.uk/politics/2025/05/20/tories-fourth-place-yougov-poll-six-years-reform-labour/"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 41,
+        "reference_repertoire": "“Children to be taught value of military at school”, Danielle Sheridan (29/05/2025)",
+        "publication": "The Telegraph",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Reportage distinct sur le projet, ITV",
+            "url": "https://www.itv.com/news/2025-05-30/school-children-to-be-taught-value-of-armed-forces-under-new-government-plans"
+          },
+          {
+            "description": "Exemple du jury",
+            "url": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=23"
+          }
+        ],
+        "limitation": "Le titre figure au répertoire. Un reportage distinct éclaire les circonstances. Les exemples appartiennent à la préparation proposée et la coupe originale manque. Le jury indique un exemple d’argumentation sur l’introduction des valeurs militaires à l’école."
+      },
+      {
+        "rang": 42,
+        "reference_repertoire": "“Is Britain heading for a summer of discontent?”, Aubrey Allegretti, Georgia Lambert, Nicola Woolcock, Poppy Koronka (17/04/2025)",
+        "publication": "The Times",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Reportage du Times",
+            "url": "https://www.thetimes.co.uk/article/is-britain-heading-for-a-summer-of-discontent-xvjx2ts6z"
+          }
+        ],
+        "limitation": "Des passages de la publication correspondante sont attestés. Le corps intégral et la coupe du concours ne sont pas établis."
+      },
+      {
+        "rang": 43,
+        "reference_repertoire": "“Half of Trump’s first month in office saw him visiting Trump properties”, Philip Bump (20/02/2025)",
+        "publication": "The Washington Post",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Chronique et décompte de Philip Bump",
+            "url": "https://www.washingtonpost.com/opinions/2025/02/20/trump-second-term-golfing-resorts/"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 44,
+        "reference_repertoire": "“How the Thanksgiving Holiday Can Help Heal America’s Political Rifts”, Michael Morris (27/11/2024)",
+        "publication": "Time Magazine",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Tribune de Morris, Time",
+            "url": "https://time.com/7178463/thanksgiving-tribalism-essay/"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      },
+      {
+        "rang": 45,
+        "reference_repertoire": "“Sen. McConnell: Trump tariffs are bad policy. At $1,200, Kentuckians will pay the price.”, Janessa Hilliard (15/02/2025)",
+        "publication": "USA Today",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Tribune signée et notice du sénateur",
+            "url": "https://www.yahoo.com/news/sen-mcconnell-trump-tariffs-bad-100913093.html"
+          }
+        ],
+        "limitation": "Le répertoire associe le nom de Janessa Hilliard à l’article. La chronique publiée est identifiée comme une tribune du sénateur Mitch McConnell et rattachée au Louisville Courier Journal. Coupe inconnue."
+      },
+      {
+        "rang": 46,
+        "reference_repertoire": "“Sticker shock: Are American consumers learning to live with inflation?”, Daniel de Visé (31/05/2025)",
+        "publication": "USA Today",
+        "page_repertoire": 12,
+        "temoins": [
+          {
+            "description": "Enquête de Daniel de Visé en syndication",
+            "url": "https://finance.yahoo.com/news/sticker-shock-american-consumers-learning-090347718.html"
+          }
+        ],
+        "limitation": "Publication de presse correspondante consultée. Les coupes et les numéros de lignes du concours restent inconnus."
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "“Did the US election polls fail?”, Natalie Sherman (07/11/2024)",
+      "“Numbers are down – but Starmer will still struggle to win on immigration”, Alan Little (22/05/2025)",
+      "“Dry January is the least of big booze’s problems”, Andrea Felsted (20/02/2025)",
+      "“After ‘Severance,’ will we ever see work-life balance the same way?”, Stephen Humphries (20/02/2025)",
+      "“Here’s how much a ‘Made in the USA’ iPhone would cost”, Kif Leswing (11/04/2025)",
+      "“By selfishly pardoning his son Hunter, Joe Biden flat-out destroyed his legacy”, Rex Huppke (03/12/2024)",
+      "“Cabbies fear ‘hundreds’ of taxis will be ‘forced off’ Manchester’s roads at stroke of New Year’s Eve midnight”, Ethan Davies (31/03/2025)",
+      "“America Gets The President We Deserve”, Ryan Bernsten (30/12/2024)",
+      "“The Secret That Colleges Should Stop Keeping”, Rose Horowitch (20/02/2025)",
+      "“Trump Brings Britain’s ‘Moron premium’ to the U.S. Economy”, Paul Mason (12/04/2025)",
+      "“I am a Mexican American who voted for Trump. Here’s why.”, J. Marcos Peterson (15/11/2024)",
+      "“Should Trump be giving stock tips to his followers?”, The Editorial Board (09/04/2025)",
+      "“’News influencers’ are racking up billions of views – and not checking their facts”, Kelly Fincham (10/12/2024)",
+      "“Why a ‘rip-off’ degree might be worth the money after all – research study”, Sean Prophy (22/05/2025)",
+      "“Reform’s threat to the mainstream parties is unique in UK political history”, Martin Farr (30/05/2025)",
+      "“Small boat arrivals jump 25 per cent amid drop in EU migration”, Sophia Yan (07/03/2025)",
+      "“Nigel’s world” (26/04/2025)",
+      "“The public realm. Britain’s “broken windows”” (03/05/2025)",
+      "“Free speech in Britain” (17/05/2025)",
+      "“Bring back Boris”, Bagehot (24/05/2025)",
+      "“From envy of the world to national embarrassment, Labour and NHS” (31/05/2025)",
+      "“Would immigration curbs hit the UK’s grocers?”, Bearbull (16/05/2025)",
+      "“This post-election Thanksgiving, we all have the power to soften our hardened hearts”, Andrew Fiala (23/11/2024)",
+      "“Anglican group launches £7m project in Barbados to atone for slavery atrocities”, Natricia Duncan (06/09/2024)",
+      "“Nine in ten honey samples from UK retailers fail authenticity test”, Jon Ungoed- Thomas (09/11/2024)",
+      "“Is Keir Starmer’s plan to help workers the start of a new era – or no big deal?”, Andy Beckett (13/09/2024)",
+      "“Anti-racism campaigner’s London book events cancelled amid threat of far-right violence”, Ben Quinn (23/11/2024)",
+      "“Trump in the Circle: Wrestling and the battle for American masculinity”, Daniel Kennedy (16/04/2025)",
+      "“Kamala, but not Harris: Why people use female politicians’ first names”, Addy Bink (21/09/2024)",
+      "“From the GI Bill to reparations: The next Congress must right a history of injustice”, Brian Williams (11/11/2024)",
+      "“Sorry, but manufacturing isn’t what it used to be. Bringing it back will never be enough.”, Matt Stewart (14/04/2025)",
+      "“UK is not ready for coming climate ‘disaster,’ government advisers warn”, Emily Beament (30/04/2025)",
+      "“The American dream of bringing the mall home”, Emily Mester (23/11/2024)",
+      "“California’s cycle of fiery destruction and reconstruction is older than you might think”, Robin Abcarian (15/01/2025)",
+      "“Why Hollywood is not alarmed enough about Gen Z”, Ryan Faughnder (08/04/2025)",
+      "“Big tech CEOs are too busy protecting their interests to protect their users”, Tom Muha (10/02/2025)",
+      "“How to Turn Trump’s Economic Chaos Against Him”, James Carville (14/04/2025)",
+      "“How your pint of milk found itself at the centre of a new conspiracy war”, Boudicca Fox-Leonard (08/12/2024)",
+      "“Pupils should not be taught ‘greatness’ of British Empire, Bridget Phillipson told”, Poppy Wood, Rian Kennedy (08/02/2025)",
+      "“Tories sink to lowest ever poll rating”, Dominic Penna (20/05/2025)",
+      "“Children to be taught value of military at school”, Danielle Sheridan (29/05/2025)",
+      "“Is Britain heading for a summer of discontent?”, Aubrey Allegretti, Georgia Lambert, Nicola Woolcock, Poppy Koronka (17/04/2025)",
+      "“Half of Trump’s first month in office saw him visiting Trump properties”, Philip Bump (20/02/2025)",
+      "“How the Thanksgiving Holiday Can Help Heal America’s Political Rifts”, Michael Morris (27/11/2024)",
+      "“Sen. McConnell: Trump tariffs are bad policy. At $1,200, Kentuckians will pay the price.”, Janessa Hilliard (15/02/2025)",
+      "“Sticker shock: Are American consumers learning to live with inflation?”, Daniel de Visé (31/05/2025)"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le fascicule de Lyon identifie 46 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+  },
+  "figures": [
+    {
+      "fichier": "figures/polls.svg",
+      "legende": "How close state estimates can produce a clear winner",
+      "question": "Référence 1"
+    },
+    {
+      "fichier": "figures/graduate.svg",
+      "legende": "Three questions beyond the size of a pay packet",
+      "question": "Référence 14"
+    },
+    {
+      "fichier": "figures/honey.svg",
+      "legende": "Which samples raised doubts in the reported test?",
+      "question": "Référence 25"
+    },
+    {
+      "fichier": "figures/uncertainty.svg",
+      "legende": "From a policy announcement to its political effects",
+      "question": "Référence 37"
+    },
+    {
+      "fichier": "figures/school.svg",
+      "legende": "What does a school activity aim to achieve?",
+      "question": "Référence 41"
+    },
+    {
+      "fichier": "figures/calendar.svg",
+      "legende": "One presidential calendar, three different counts",
+      "question": "Référence 43"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du répertoire et du rapport du jury, confrontation aux publications et rédaction des deux éditions avec exemples de prise de parole, relances, entraînements et schémas. Le fascicule de Lyon identifie 46 références de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
