@@ -1,0 +1,59 @@
+{
+  "slug": "ens_mp-pc_espagnol-lv1_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LV1)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Un año astronómico",
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_lv1.pdf#page=4",
+    "sujet_sha256": "4d43a82b835716843169d99f0696b76085c2d34aae975b3aae524ac7e33fd7f2",
+    "page_pdf": 4,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+    "etablissements_imprimes": "Paris, Lyon et Cachan",
+    "texte_support": "« Un año astronómico », elpais.com, 20 janvier 2009."
+  },
+  "redaction": "Version française intégrale, deux réponses en espagnol de plus de cent mots chacune sur Galilée et les lecteurs, et schéma du travail à distance des astronomes.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/des-astres-au-spectre.svg",
+      "legende": "Le spectre est un exemple de mesure qui renseigne l’astronome sur un objet inaccessible."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version française intégrale, deux réponses en espagnol de plus de cent mots chacune sur Galilée et les lecteurs, et schéma du travail à distance des astronomes.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ]
+  }
+}
