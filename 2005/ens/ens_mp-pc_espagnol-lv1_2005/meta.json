@@ -1,0 +1,73 @@
+{
+  "slug": "ens_mp-pc_espagnol-lv1_2005",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LV1)",
+    "annee": 2005,
+    "modalite": "écrit",
+    "duree_heures": 2
+  },
+  "intitule": "L’Espagne recalée en éducation",
+  "questions": 3,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_vivante_1.pdf#page=4",
+    "sha256_sujet": "a7214e3b3ce73c3c9c3bfa7b6f9b4314d76e219f9a58a8f2f510bd3dc15cd6cb",
+    "etablissements_imprimes": "ENS de Paris, de Lyon et de Cachan",
+    "page_version": "4",
+    "texte_support": "D’après Cambio 16, 20 décembre 2004.",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_vivante_1.pdf#page=4",
+        "sha256": "a7214e3b3ce73c3c9c3bfa7b6f9b4314d76e219f9a58a8f2f510bd3dc15cd6cb",
+        "pages": "4",
+        "pages_document": 6,
+        "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2005",
+        "url_originale": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2005/sujet-2005-ecrit-mp_pc_langue_vivante_1.pdf",
+        "date_capture_utc": "sans capture"
+      }
+    ],
+    "code_garde": "ULC 527"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/lire-les-chiffres-de-pisa.svg",
+      "question": "1",
+      "legende": "Trois chiffres éclairent des aspects différents des résultats espagnols en mathématiques. Deux portent sur les difficultés et le troisième sur les meilleurs scores."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "option_info_2006_2009",
+      "agent": "option_info_2006_2009",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Version personnelle intégrale de « L’Espagne recalée en éducation », deux réponses personnelles en espagnol, indications de traduction et de rédaction, schéma sur Trois chiffres éclairent des aspects différents des résultats espagnols en mathématiques. Deux portent sur les difficultés et le troisième sur les meilleurs scores."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2.1",
+      "2.2"
+    ],
+    "limites": "Le rapport écrit de cette option reste à retrouver."
+  },
+  "bareme": {
+    "version": 12,
+    "expression": 8
+  }
+}
