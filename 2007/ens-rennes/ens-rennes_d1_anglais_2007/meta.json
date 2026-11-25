@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_anglais_2007",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-2007-concours-d1_1423059780504-pdf#page=4",
+    "sha256_sujet": "0f7a7f75322511a59614c2cd4fa6968b911a11d5b0428262b09f81ae76838ff0",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Tom Mellen, « Government ‘can’t rein in the airlines’ », adapté du Morning Star, 6 janvier 2007",
+    "page": 4
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Discuter les avantages et les inconvénients du principe pollueur-payeur en anglais, en 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/aviation.svg",
+      "legende": "Qui propose quel remède ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
