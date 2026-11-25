@@ -1,0 +1,85 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-de-lart-la-mort-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire de l’art — la mort (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "La mort",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/SIL-Histoire%20de%20l_Art%20sujet%20ORAL%202018.pdf",
+    "sujet_sha256": "d6b25fc566c724738d720e924b0bcfd1c7a0c52350a6ff08379e069f440f9ff7",
+    "index_officiel": "https://www.ens.psl.eu/sujets-et-rapports-du-concours-2018-lettres",
+    "note": "Le PDF est archivé par l’ENS pour 2018 et porte un en-tête 2014. Le rapport de 2018 confirme le sujet et cite les cinq œuvres, bien qu’il annonce d’abord quatre documents. Les cinq reproductions du fascicule sont examinées.",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/sil_2018_rapport_ha.pdf",
+    "rapport_sha256": "3b2297ff6ae726ae1c07da4ddde059822792e37a55515ebb2556b1a84681ee40"
+  },
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/analyse.svg",
+      "question": "Commentaire",
+      "legende": "Positions du spectateur chez Mantegna, O’Sullivan et Fabre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Confrontation des listes de pièces, de leur datation et des attentes du jury."
+    },
+    {
+      "phase": "redaction",
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions, construction des exemples et du schéma pour « La mort ». "
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "arts_selection_six",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle du libellé, des données documentaires, des distinctions analytiques et de leur lisibilité dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Histoire de l’art — la mort (oral)"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Le PDF est archivé par l’ENS pour 2018 et porte un en-tête 2014. Le rapport de 2018 confirme le sujet et cite les cinq œuvres, bien qu’il annonce d’abord quatre documents. Les cinq reproductions du fascicule sont examinées."
+  }
+}
