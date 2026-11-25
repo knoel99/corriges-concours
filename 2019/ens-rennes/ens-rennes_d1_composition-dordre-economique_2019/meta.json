@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2019",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Équilibre et optimum",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-conomie-d1-2019_1574759844675-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-econonomie-e-crit-d1-2019_1574159523834-pdf",
+    "sujet_sha256": "2ccf3457daefa8650950e1a438ba79e238568cdaf9ff249fe2fe4056b5e6f103",
+    "rapport_sha256": "18f906e8d243ab08f0bfbf57ced628e87471dd2e5b29e34ca75befc689b6a8cf",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2019",
+    "apercu_sujet_sha256": "774d2ee5dc9064ca75a0bdfc8b62d9ba2fa0fca0bb789ab8ed174081089a6191",
+    "apercu_rapport_sha256": "3908ab90d3ed4a6d45747bf1c7e793871cc17e8355ff4e56eb0ebf9a8c2b2170",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 19 - 81"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/production-et-dommage.svg",
+      "legende": "Avec un dommage marginal de Q/2, passer de 8 à 16/3 élimine une perte de surplus correspondant au triangle coloré."
+    },
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/conditions-du-premier-theoreme.svg",
+      "legende": "Le premier théorème établit une implication sous hypothèses. Le choix entre plusieurs allocations efficaces demande un critère supplémentaire."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Équilibre et optimum » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Équilibre et optimum » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

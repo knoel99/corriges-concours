@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2018",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Le rôle de la consommation et de l’investissement dans les fluctuations de l’activité économique",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-conomie-e-crit-d1-2018_1563804896083-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-eco-e-crit-d1-2018_1563806647735-pdf",
+    "sujet_sha256": "b1048b1d01c55e9334a2705cf220a56169500eedf4e9d4b8250f2ada487d5552",
+    "rapport_sha256": "f24004672014191369afc39b60735366edb131d93d143c139914410285f053a5",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2018",
+    "apercu_sujet_sha256": "488d742d350f2a76cc49862b3815cf203850381cabd3b482bf09ee0c839f3a45",
+    "apercu_rapport_sha256": "8cec229003c022be8a1c3bf5b7174ef6895b91b8ab56d4410467a443d28f5e07",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 18 - 81"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/oscillation-production.svg",
+      "legende": "Impulsion unique de 1 en période 0. Avec consommation retardée de 0,6 et accélérateur de 0,8, les échanges successifs amortissent progressivement les écarts."
+    },
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/multiplicateur-et-importations.svg",
+      "legende": "Le multiplicateur passe de 4 sans prélèvement ni importations à 2 pour t = 0,20 et m = 0,10."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Le rôle de la consommation et de l’investissement dans les fluctuations de l’activité économique » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Le rôle de la consommation et de l’investissement dans les fluctuations de l’activité économique » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
