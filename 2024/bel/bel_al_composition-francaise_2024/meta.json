@@ -43,7 +43,7 @@
       "legende": "Qui dispose du jeu dans la dernière scène de La Dispute ?"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -76,6 +76,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle du fac-similé, notamment de l’italique final, du rapport et de la scène XX de La Dispute. Restitution du libellé, analyse du couple fidèle et d’Hermiane dans les deux copies, schéma du dénouement."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 2,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Citation de Biet et Triau, durée des stances de Rodrigue et jugement du spectateur."
     }
   ]
 }

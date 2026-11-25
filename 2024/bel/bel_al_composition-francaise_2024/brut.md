@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 « Jeu social, jeu esthétique, jeu critique, jeu figural, jeu d’interaction, le théâtre se situe en effet dans l’espace vide que lui laisse la cité : il est entre les pièces, entre les rouages de la machine, il en figure le *jeu*, et c’est en cela qu’il permet qu’elle fonctionne. »
 
 Christian Biet et Christophe Triau, *Qu’est-ce que le théâtre ?*, « Conclusion », Folio essais, 2006, p. 930.
@@ -21,6 +23,10 @@ Dans *La Dispute* de Marivaux, le prince invite Hermiane à regarder, sans être
 ## I. Le temps de jouer permet de voir agir une règle
 
 Sur la scène du *Cid*, Rodrigue pourrait se contenter d’accepter de son père l’épée et le devoir de vengeance. Un tel enchaînement montrerait ce qu’exige l’honneur familial sans faire éprouver au public comment on en vient à lui obéir. Corneille insère entre la demande du père et l’affrontement avec le comte les stances où Rodrigue se découvre à la fois fils de l’offensé et amant de la fille de l’offenseur. La variation de la longueur des vers, le retour du nom de Chimène et les reprises d’une alternative suspendent l’action sans l’abolir. Tout le plaisir du morceau vient de ce que le spectateur peut suivre, dans le rythme même de la parole, le coût d’une décision qui, vue de l’extérieur, passerait pour la simple exécution d’un code. La scène donne une durée et un corps à ce que la transmission d’une épée semblait devoir rendre immédiat. C’est là un premier sens du « jeu » entre les rouages. Une liaison qui paraît nécessaire peut être desserrée assez longtemps pour devenir perceptible.
+
+L’honneur familial arrive à Rodrigue sous la forme d’une dette déjà nommée. Les stances lui donnent pourtant le temps de mesurer ce que l’acquitter coûtera à Chimène et à lui-même. Le public découvre ainsi que la règle sociale doit passer par la voix singulière de celui qui s’apprête à l’exécuter.
+
+![Figure 1 — L’intervalle ouvert par les stances de Rodrigue. La variation du vers fait éprouver le coût d’un geste que commande le code de l’honneur.](figures/honneur-et-stances.svg)
 
 Chez Marivaux, le moyen est différent. Dans *La Double Inconstance*, Silvia veut retrouver Arlequin. Le prince, qui désire qu’elle le choisisse, dispose d’un palais et d’auxiliaires pour agir sur leurs sentiments. Flaminia fait de sa propre proximité avec Arlequin une pièce essentielle de la manœuvre. Elle lui offre une écoute que rendent plus précieuse les contrariétés qu’il subit par ailleurs. Le spectateur à qui les préparatifs ont été révélés entend donc chaque parole deux fois : comme l’ami entendrait la marque de bienveillance, puis comme le témoin d’une stratégie reconnaît le travail qu’elle accomplit. La comédie n’a pas eu besoin de faire proclamer à un personnage que la puissance peut prendre le langage de l’amitié. Elle nous en a fait entendre la possibilité dans une phrase qui continue de paraître aimable. Appeler le théâtre un « jeu figural », c’est lui reconnaître cette puissance d’intelligence indirecte.
 

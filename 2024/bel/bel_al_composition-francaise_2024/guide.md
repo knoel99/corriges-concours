@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 « Jeu social, jeu esthétique, jeu critique, jeu figural, jeu d’interaction, le théâtre se situe en effet dans l’espace vide que lui laisse la cité : il est entre les pièces, entre les rouages de la machine, il en figure le *jeu*, et c’est en cela qu’il permet qu’elle fonctionne. »
@@ -50,6 +52,8 @@ Comment le théâtre peut-il contribuer à la vie de la cité en ouvrant une dis
 Dans *Le Cid*, l’obligation filiale devient une décision que le vers fait entendre se former. Chez Marivaux, la connaissance du stratagème permet d’écouter à la fois les propos bienveillants de Flaminia et le rôle qu’ils jouent auprès d’Arlequin. Dans le roman de Gautier, les actes du baron hors du spectacle permettent de mesurer la distance entre le comédien et son emploi de fanfaron.
 
 ![Figure 1 — L’intervalle ouvert par les stances de Rodrigue. La variation du vers fait éprouver le coût d’un geste que commande le code de l’honneur.](figures/honneur-et-stances.svg)
+
+Comparer le rythme de la remise de l’épée et celui des stances. Ce que le père présente comme la suite nécessaire d’un affront devient, dans la durée de la représentation, une décision susceptible d’être jugée.
 
 ### Partie II — L’espace de jeu dépend de choix économiques et politiques
 
