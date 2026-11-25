@@ -1000,9 +1000,12 @@
 | 2024 | ENS | Cycle master mathématiques | Français et culture générale | [md](2024/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2024/brut.md) | [md](2024/ens/ens_cycle-master-mathematiques_francais-et-culture-generale_2024/guide.md) |
 | 2023 | ENS | MP/MPI | Maths C | [md](2023/ens/ens_mp-mpi_maths-c_2023/brut.md) | [md](2023/ens/ens_mp-mpi_maths-c_2023/guide.md) |
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
+| 2010 | ENS | MP-PC | Italien (LE2) | [md](2010/ens/ens_mp-pc_italien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_italien-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Italien (LV1) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/guide.md) |
 | 2010 | ENS | MP-PC | Japonais (LE2) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Latin (LE2) | [md](2010/ens/ens_mp-pc_latin-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_latin-le2_2010/guide.md) |
+| 2010 | ENS | MP-PC | Portugais (LE2) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_portugais-le2_2010/guide.md) |
+| 2010 | ENS | MP-PC | Russe (LE2) | [md](2010/ens/ens_mp-pc_russe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Russe (LV1) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_russe-lv1_2010/guide.md) |
 | 2010 | ENS | MP | Informatique | [md](2010/ens/ens_mp_informatique_2010/brut.md) | [md](2010/ens/ens_mp_informatique_2010/guide.md) |
 | 2010 | ENS | MP | Mathématiques-informatique | [md](2010/ens/ens_mp_mathematiques-informatique_2010/brut.md) | [md](2010/ens/ens_mp_mathematiques-informatique_2010/guide.md) |
