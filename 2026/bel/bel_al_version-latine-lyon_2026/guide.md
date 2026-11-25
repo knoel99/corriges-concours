@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Lire le poème en prose
 
 Dans les *Astronomiques*, Manilius présente les comètes comme des signes de calamité. Pour traduire ces vingt-huit vers en quatre heures, commencer par distinguer les maux énoncés au présent et les deux événements historiques qui les illustrent. La consigne autorise les dictionnaires latin-français. Les dix notes du sujet précisent des formes, des ellipses et le contexte historique.
@@ -19,6 +21,8 @@ La première négation donne sa portée à tout le passage. Dire que les feux c�
 *Aut* ouvre une seconde possibilité. Le sujet de *corripit* et de *rapit* arrive après l’objet *corpora*. C’est *letalis flamma*, la fièvre figurée comme un feu. L’ablatif absolu *exustis … medullis* lui permet d’atteindre jusqu’à la moelle. *Labentes* vient de *labor*, « glisser, tomber ». La deuxième note renvoie au pluriel *iusta*, les rites dus aux morts. Le passage aboutit à des funérailles collectives célébrées à travers des villes tout entières.
 
 ![Figure 1 — Du signe céleste aux deux exemples historiques](figures/presages-exemples.svg)
+
+Entre les vers 16 et 23, relever le passage de l’exemple athénien à l’énoncé général, puis le nom qui situe le dernier exemple. Les temps français doivent rendre lisibles ces changements de portée.
 
 ## Vers 9 à 16 · Athènes portée en terre
 
