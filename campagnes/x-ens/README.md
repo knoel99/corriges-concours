@@ -97,3 +97,7 @@ Les six fascicules de Rennes en 2022 et 2023 réunissent les tirages d’économ
 Les archives du cycle master des ENS Paris-Saclay et Rennes donnent douze écrits de mathématiques, de français et de culture générale entre 2017 et 2021. La deuxième composition de mathématiques de 2017 réunit les deux options dans un seul cahier. Chaque option a son propre rapport. [Sujets et rapports du cycle master](cycle-master-paris-saclay.tsv)
 
 En PSI, les cahiers de cinq heures CX4612 et CX4614 identifient les épreuves de modélisation et de sciences industrielles de la banque X/inter-ENS en 2014. [Deux sujets originaux et leurs empreintes](psi-sciences-industrielles-2014.tsv)
+
+En 2019, Saclay publie huit textes pour l’oral d’espagnol LV2 du concours BEL anglais. Six figurent à l’identique dans les annales du cycle master. Chaque fiche donne accès au texte et au rapport de première année. [Huit tirages, rapport et concordance des deux concours](oraux-espagnol-saclay-2019.tsv)
+
+Les sujets PSI de 2013 portent les codes CX3614 et CX3612. À Lyon, la notice de 2018 annonce l’écrit de géosciences du second concours le jeudi 31 mai et le rapport général confirme le choix des sciences de la Terre par des candidats. Le cahier est recherché. [Deux écrits PSI](psi-sciences-industrielles-2013.tsv) · [Cahiers à retrouver](documents-manquants.tsv)
