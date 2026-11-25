@@ -4,7 +4,7 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Relecture du corrigé** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Le sujet propose un extrait de l’article « Le mobilier contemporain orné d’après la nature », publié par Gallé en 1900. Il invite à interroger les relations entre invention, service et plaisir dans le cadre du programme 1890–1939.
 

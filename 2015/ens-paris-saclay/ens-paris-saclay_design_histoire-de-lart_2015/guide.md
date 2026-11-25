@@ -4,7 +4,7 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Relecture du corrigé** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Le sujet demande de discuter une citation de Design and Crime (2002) dans les limites du programme « Graphisme et design, de la crise moderne aux diktats du marché », 1953–2000. Le terme anglais display peut désigner aussi bien l’étalage que l’agencement d’une exposition.
 

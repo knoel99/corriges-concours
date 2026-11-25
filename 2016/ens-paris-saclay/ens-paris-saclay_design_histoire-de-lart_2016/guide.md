@@ -4,7 +4,7 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Relecture du corrigé** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 Le texte proposé est publié par Gui Bonsiepe dans la revue Ulm en 1965. Le sujet renvoie à sa traduction française dans le catalogue L’école d’Ulm : textes et manifestes (1988). Il faut discuter sa thèse sur le programme 1953–2000.
 

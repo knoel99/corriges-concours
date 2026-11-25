@@ -4,7 +4,7 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
-**Relecture du corrigé** · GPT-6.2 Astra Ultra · vitesse non renseignée
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 À propos de l’Exposition internationale des arts décoratifs et industriels modernes de Paris, Waldemar-George écrit dans L’Amour de l’art en août 1925. Le sujet demande de discuter son propos dans le programme « Design et modernité(s) (1890–1939) ».
 
