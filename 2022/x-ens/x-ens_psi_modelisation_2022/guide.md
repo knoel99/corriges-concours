@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 24 novembre 2026
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
 ## Repères de résolution
 
 En biomécanique, identifier la grandeur imposée avant de déduire le signe des variations de contrainte. En hydraulique, fixer le sens positif du débit et utiliser le rayon donné. Dans la partie numérique, le pas est exprimé en secondes, les échantillons antérieurs au début du signal sont nuls et les sorties se calculent dans l’ordre des flèches de la figure 23.
@@ -503,7 +505,7 @@ def retard_lin(n, X, Y, rt, DT):
 ```
 Le temps demandé est $(j-f)\Delta T$. Il est entre les indices $j-1$ et $j$ lorsque $f>0$. La préhistoire du sujet est nulle à tout temps strictement négatif. Le calcul utilise seulement des cases déjà connues, y compris $X[n]$ si le retard est inférieur à un pas.
 
-![Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre X[2] et X[3].](figures/q44-retard-fractionnaire.svg)
+![Pour n = 4 et un retard de 1,35 pas, l’instant voulu correspond à 2,65 pas, entre les échantillons d’indices 2 et 3.](figures/q44-retard-fractionnaire.svg)
 
 ### Question 45 · Générateur d’impulsions IPFM
 

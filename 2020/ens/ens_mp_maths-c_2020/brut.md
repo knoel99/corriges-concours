@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
+
 Épreuve commune à Ulm, Lyon, Paris-Saclay et Rennes, durée 4 h. Les contraintes sont écrites $g_i(x)\le0$ et les multiplicateurs sont positifs ou nuls.
 
 ## I. Préliminaires
@@ -106,7 +108,7 @@ En passant à la limite dans II.4, $f(\bar x)\le f(x^\star)$. Comme $\bar x\in K
 
 Par II.4, tous les $x_k$ sont dans le sous-niveau $\{f\le f(x^\star)\}$, fermé par continuité, borné par coercivité, donc compact. Si la suite ne tendait pas vers $x^\star$, une sous-suite resterait à distance au moins $\varepsilon>0$ de ce point. Elle aurait une sous-suite convergente dans le compact et sa limite contredirait II.5b.
 
-![Pour f(x) = (x − 1,5)² et K = ]−∞, 0], la pénalité k max(0,x)² déplace le minimiseur 1,5/(k + 1) vers le bord.](figures/minimiseurs-penalises.svg)
+![Pour f(x) = (x − 1,5)² et K égal à l’ensemble des réels négatifs ou nuls, la pénalité k max(0,x)² déplace le minimiseur 1,5/(k + 1) vers le bord.](figures/minimiseurs-penalises.svg)
 
 ### Question II.7
 
