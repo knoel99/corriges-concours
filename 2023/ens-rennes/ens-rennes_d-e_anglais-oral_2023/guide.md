@@ -6,7 +6,7 @@
 
 Le fascicule propose quatre articles des 23 au 30 mai 2023, imprimés sous les numéros 1, 3, 4 et 5. Les quatre analyses suivent les pages dans cet ordre. Les questions d’entretien sont proposées pour l’entraînement.
 
-## Billet 1 — Australian judge apologises after claiming that colleagues are appointed regardless of merit
+## Sujet 1 (p. 1) — Australian judge apologises after claiming that colleagues are appointed regardless of merit
 
 **Presentation.** How did a speech that had yet to be delivered become a matter of judicial confidence? In his report of 26 May, Nino Bucci follows a draft through several settings: a judge’s desk, an official Australian court website and an international conference which the judge was planning to attend in Taiwan. I will first examine what the judge alleged and then explain why the place of publication mattered.
 
@@ -23,7 +23,7 @@ The public has a legitimate interest in how judges are selected. Publishing crit
 
 **Was Wilson speaking for the courts?** The chief justice says he was going to the conference as an association member. The official website is precisely what made that distinction hard to see.
 
-## Billet 2 — Animal welfare groups lose court challenge over ‘Frankenchickens’
+## Sujet 3 (p. 2) — Animal welfare groups lose court challenge over ‘Frankenchickens’
 
 **Presentation.** A judicial defeat and an argument about suffering sit side by side in Haroon Siddique’s report of 24 May. I will explain the campaigners’ challenge and then look at the narrower question the High Court answered.
 
@@ -42,7 +42,7 @@ Notice how the story moves from the campaigners’ emotionally charged nickname 
 
 **Why use the nickname in quotation marks?** It captures the campaigners’ fear that intensive breeding has gone too far. The quotation marks also help the reporter identify the label as advocacy.
 
-## Billet 3 — CBI sought legal advice over possible insolvency after misconduct scandal
+## Sujet 4 (p. 3) — CBI sought legal advice over possible insolvency after misconduct scandal
 
 **Presentation.** How could misconduct inside a lobby group threaten its very existence? In her 30 May article Anna Isaac traces the connection between staff safety, the confidence of members and the Confederation of British Industry’s finances. The CBI claimed to be the “voice of business”. Its ability to speak depended on companies staying and politicians listening.
 
@@ -59,7 +59,7 @@ The timetable creates urgency. Members were due to vote on 6 June, after the pub
 
 **What would reassure employees after a successful vote?** A confidential route for reporting concerns, clear response deadlines and independent checks on how senior managers act would allow staff to judge progress for themselves.
 
-## Billet 4 — Trump hush money trial set for March 2024 during Republican primaries
+## Sujet 5 (p. 4) — Trump hush money trial set for March 2024 during Republican primaries
 
 **Presentation.** On 23 May 2023 Martin Pengelly and the agencies report on a hearing in Manhattan. There are two overlapping calendars: one for criminal proceedings, the other for a candidate seeking the Republican nomination. I will distinguish the judge’s scheduling decision from the political interpretation Donald Trump gave it.
 
