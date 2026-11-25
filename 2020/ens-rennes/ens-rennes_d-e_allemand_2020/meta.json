@@ -1,0 +1,63 @@
+{
+  "slug": "ens-rennes_d-e_allemand_2020",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Allemand",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Allemand",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en allemand de 236 et 235 mots. Identité et exil chez Saša Stanišić, mobilisation autour de la mine de Carmichael, égalité politique en Finlande et portée du principe d’égalité en Allemagne.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-allemand-d-e-2020_1601913599549-pdf",
+    "sujet_sha256": "8b665568937c0a4636adcdd30c9b5c61a11a61f62b2e71da732dd845602debe0",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2020-1",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lv-allemand-d-e-2020_1604400129803-pdf",
+    "rapport_sha256": "616f70ce2813489404b76b2821e5786256ed9673723c67549776d85c8ec6883c"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/wege-zur-teilhabe.svg",
+      "legende": "Damit politische Teilnahme möglich wird, müssen Rechte, Zeit und Auswahlverfahren zusammenwirken."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport sur la compréhension du texte et la distinction des deux exercices d’expression. Raisons historiques, services de garde et obstacles contemporains sont ramenés à la date de l’épreuve."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en allemand de 236 et 235 mots. Identité et exil chez Saša Stanišić, mobilisation autour de la mine de Carmichael, égalité politique en Finlande et portée du principe d’égalité en Allemagne."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. Aus welchen Gründen konnte in Finnland die Gleichstellung der Frauen in der Politik zur Wirklichkeit werden?",
+      "III.2. Meinen Sie, dass Gleichberechtigung und Gleichstellung zwischen Mann und Frau in Deutschland (Politik, Arbeitswelt, Gesellschaft) heute noch eine Illusion sind? Begründen Sie Ihre Antwort!"
+    ]
+  }
+}
