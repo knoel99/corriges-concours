@@ -149,6 +149,7 @@
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
 | 2017 | BEL | AL | Allemand (commentaire et traduction) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_allemand-commentaire-et-traduction_2017/guide.md) |
+| 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuve de spécialité version grecque (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Allemand | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Anglais | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Espagnol | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_espagnol_2017/guide.md) |
@@ -159,6 +160,7 @@
 | 2017 | BEL | AL | Chinois (thème Lyon) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
+| 2019 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuve de spécialité version grecque (écrit) | [md](2019/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2019/guide.md) |
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (commentaire et traduction) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_anglais-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Anglais (thème Lyon) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_anglais-theme-lyon_2019/guide.md) |
@@ -166,6 +168,7 @@
 | 2019 | BEL | AL | Chinois (thème Lyon) | [md](2019/bel/bel_al_chinois-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_chinois-theme-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/brut.md) | [md](2019/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2019/guide.md) |
 | 2022 | BEL | AL | Arabe (commentaire et traduction) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_arabe-commentaire-et-traduction_2022/guide.md) |
+| 2022 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuves de spécialité version grecque (écrit) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuves-de-specialite-version-grecque-ecrit_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuves-de-specialite-version-grecque-ecrit_2022/guide.md) |
 | 2022 | BEL | AL | Arabe (thème Lyon) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_arabe-theme-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Chinois (commentaire et traduction) | [md](2022/bel/bel_al_chinois-commentaire-et-traduction_2022/brut.md) | [md](2022/bel/bel_al_chinois-commentaire-et-traduction_2022/guide.md) |
 | 2022 | BEL | AL | Chinois (thème Lyon) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/brut.md) | [md](2022/bel/bel_al_chinois-theme-lyon_2022/guide.md) |
@@ -204,9 +207,11 @@
 | 2017 | BEL | AL | Italien (thème Lyon) | [md](2017/bel/bel_al_italien-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_italien-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Portugais (thème Lyon) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Russe (thème Lyon) | [md](2017/bel/bel_al_russe-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_russe-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Version latine (Lyon) | [md](2017/bel/bel_al_version-latine-lyon_2017/brut.md) | [md](2017/bel/bel_al_version-latine-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Étude de texte français (Lyon) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/brut.md) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Espagnol (commentaire et traduction) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Espagnol (thème Lyon) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/guide.md) |
+| 2019 | BEL | AL | Version latine (Lyon) | [md](2019/bel/bel_al_version-latine-lyon_2019/brut.md) | [md](2019/bel/bel_al_version-latine-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Étude de texte français (Lyon) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/brut.md) | [md](2019/bel/bel_al_etude-de-texte-francais-lyon_2019/guide.md) |
 | 2019 | BEL | AL | Grec moderne (commentaire et traduction) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_grec-moderne-commentaire-et-traduction_2019/guide.md) |
 | 2026 | BEL | AL | Histoire contemporaine (oral tronc commun 17 juin) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-contemporaine-oral-tronc-commun-17-juin_2026/guide.md) |
@@ -219,6 +224,7 @@
 | 2019 | BEL | AL | Portugais (commentaire et traduction) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_portugais-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Russe (commentaire et traduction) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Russe (thème Lyon) | [md](2019/bel/bel_al_russe-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_russe-theme-lyon_2019/guide.md) |
+| 2022 | BEL | AL | Version latine (Lyon) | [md](2022/bel/bel_al_version-latine-lyon_2022/brut.md) | [md](2022/bel/bel_al_version-latine-lyon_2022/guide.md) |
 | 2022 | BEL | AL | Étude de texte français (Lyon) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/brut.md) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 16 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 17 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |

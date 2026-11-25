@@ -1,0 +1,50 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Épreuve de spécialité version grecque (écrit)",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuve-de-specialite-version-grecque_1506586717944_0.pdf#page=2",
+    "sujet_sha256": "c13ba87565147dee7258c6b33ff8db5766dcb66c782f64b7e0c2dfd896b3afd8",
+    "source_imprimee": "Xénophon, Socrate prête un discours à Euthydème",
+    "page_physique": 2
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française intégrale"
+    ],
+    "precision": "Lecture de la page physique 2 du fascicule officiel. Traduction intégrale du passage de Xénophon, explication des constructions et du mouvement du texte, et figure."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Une prétention à l’épreuve d’une analogie"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la page physique 2 du fascicule officiel. Traduction intégrale du passage de Xénophon, explication des constructions et du mouvement du texte, et figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

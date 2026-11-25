@@ -1,0 +1,50 @@
+{
+  "slug": "bel_al_version-latine-lyon_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine (Lyon)",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=3",
+    "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "source_imprimee": "Pline l’Ancien, « Les défenses des éléphants »",
+    "page_physique": 3
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française intégrale"
+    ],
+    "precision": "Lecture de la page physique 3 du fascicule officiel. Traduction intégrale du passage de Pline l’Ancien, explication des constructions et du mouvement du texte, et figure."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Trois regards sur les défenses"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la page physique 3 du fascicule officiel. Traduction intégrale du passage de Pline l’Ancien, explication des constructions et du mouvement du texte, et figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

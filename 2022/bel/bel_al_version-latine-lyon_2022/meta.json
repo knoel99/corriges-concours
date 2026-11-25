@@ -1,0 +1,50 @@
+{
+  "slug": "bel_al_version-latine-lyon_2022",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Version latine (Lyon)",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Epreuves%20de%20sp%C3%A9cialit%C3%A9.pdf#page=3",
+    "sujet_sha256": "8dcbf847bd6ec9f6883a858ccf44d61aa36cd84ce4117563a1e2f9c605776353",
+    "source_imprimee": "Pline le Jeune, Lettres, II, 20, « Un captateur de testaments »",
+    "page_physique": 3
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française intégrale"
+    ],
+    "precision": "Lecture de la page physique 3 du fascicule officiel. Traduction intégrale du passage de Pline le Jeune, explication des constructions et du mouvement du texte, et figure."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Deux malades et un même intérêt"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la page physique 3 du fascicule officiel. Traduction intégrale du passage de Pline le Jeune, explication des constructions et du mouvement du texte, et figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

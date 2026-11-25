@@ -1,0 +1,50 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_epreuves-de-specialite-version-grecque-ecrit_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Épreuves de spécialité version grecque (écrit)",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Version%20grecque.pdf#page=2",
+    "sujet_sha256": "2d694baf340a0c27739d5d9791873402d2639ac44f9c237437a47035f4bc6256",
+    "source_imprimee": "Euripide, Hippolyte, début du prologue d’Aphrodite",
+    "page_physique": 2
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française intégrale"
+    ],
+    "precision": "Lecture de la page physique 2 du fascicule officiel. Traduction intégrale du passage de Euripide, explication des constructions et du mouvement du texte, et figure."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Trois temps dans la parole d’Aphrodite"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la page physique 2 du fascicule officiel. Traduction intégrale du passage de Euripide, explication des constructions et du mouvement du texte, et figure."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
