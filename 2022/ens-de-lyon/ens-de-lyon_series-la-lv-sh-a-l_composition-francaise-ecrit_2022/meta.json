@@ -1,0 +1,41 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_composition-francaise-ecrit_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Composition française (écrit)",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "La prose et l’éclat du proche",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Session-2022_BEL_Composition%20fran%C3%A7aise.pdf",
+    "sha256_sujet": "78814c3648075e12c84504689a34c7aaad511a40ae9bfeb6f1225c08e68e8a09",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Compo%20fr.%20%2B%20Explic.%20texte%20litt%C3%A9raire%202022.pdf",
+    "sha256_rapport_jury": "3d6700a741e78462ea50092a4828d4018069ae5e14bc4da62dbeb510f743ecfd",
+    "reperage": "Cahier BEL de tronc commun (LCU 171, J. 22 1068), une page, Paris-Saclay, Lyon et Paris. Rapport de Lyon, section de composition écrite p. 2 à 7.",
+    "programme": "https://www.ens-lyon.fr/sites/default/files/2021-10/BO_37_MESRi%20du%207%20octobre%202021%20programme%20concours%20litt%C3%A9raire%20ENS%20Lyon%202022.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "À quoi revient l’éclat de la phrase ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la composition commune BEL 2022 après lecture de la garde, de la section écrite du rapport et du programme officiel. Lecture de Lafayette, Diderot, Balzac et Ponge, schéma et guide de composition. Concordance du cahier commun BEL LCU 171, J. 22 1068, porté pour les ENS Paris-Saclay, de Lyon et de Paris ; maintien de la fiche historique ENS de Lyon, séries LA/LV/SH (A/L)."
+    }
+  ]
+}
