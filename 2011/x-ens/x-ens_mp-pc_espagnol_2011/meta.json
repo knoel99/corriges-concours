@@ -1,0 +1,55 @@
+{
+  "slug": "x-ens_mp-pc_espagnol_2011",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 3,
+  "intitule": "Souvenirs de famille et avenir des bibliothèques",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20Version_LVA2.pdf#page=5",
+    "sujet_sha256": "e3dfde1f9c7849e973df61d8bbb5f477390588df751e0d71a58df5fbe07b1ae1",
+    "sujet_expression": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2011/2011%20MP-PC%20SUJET%20EXPRESSION%20ECRITE_LVA1.pdf",
+    "sujet_expression_sha256": "b4f0b94bd49cfc0bc2707f8f351d07b353230dc049539355b8080371de2781af",
+    "page_pdf": 5,
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2011",
+    "code_garde": "XEULC"
+  },
+  "redaction": "Version littéraire intégrale du passage de Carmen Amoraga et deux réponses espagnoles sur Robert Darnton, avec analyse des voix et de la chute.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/de-la-faim-a-la-chute.svg",
+      "legende": "La mémoire du père donne leur sens aux objets du récit et au retournement final."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version littéraire intégrale du passage de Carmen Amoraga et deux réponses espagnoles sur Robert Darnton, avec analyse des voix et de la chute.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression écrite 1",
+      "Expression écrite 2"
+    ]
+  }
+}
