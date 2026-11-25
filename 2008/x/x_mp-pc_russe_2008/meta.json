@@ -1,0 +1,65 @@
+{
+  "slug": "x_mp-pc_russe_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Russe",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Andreï Makine à Paris et la connaissance littéraire selon Todorov",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français, analyse et réflexion personnelle en russe. Andreï Makine à Paris et la connaissance littéraire selon Todorov.",
+  "sources": {
+    "sujet": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=9",
+    "sha256_sujet": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329",
+    "index": "https://www.alloschool.com/element/33546",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=9",
+        "sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://www.alloschool.com/assets/documents/course-286/x-ens-mp-pc-2008-langues-vivantes.pdf#page=1",
+        "sha256": "a33182de1be447a22b945fc9dcec2142ddd43b38e1607eebf6095f5714f2d329"
+      },
+      {
+        "role": "rapport",
+        "url": "https://web.archive.org/web/20090415233115id_/http://gargantua.polytechnique.fr:80/siatel-web/linkto/?objectId=DOCF0009000003C600000000000004CA00000000",
+        "sha256": "46c393ddfa3357ac0a84ef1a33642c4a9b4b25978c0b5ba296b368dbc6205757"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "L’original russe imaginaire de Makine"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français, analyse et réflexion personnelle en russe. Andreï Makine à Paris et la connaissance littéraire selon Todorov."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
