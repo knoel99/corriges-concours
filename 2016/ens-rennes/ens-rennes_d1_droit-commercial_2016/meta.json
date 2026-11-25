@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2016",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Le droit des tiers et des associés dans la société en participation",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-preuve-a-options-droit-commercial-et-droit-public-d1-2016_1476109233660-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-droit-commercial-d1-2016_1478511479859-pdf",
+    "sujet_sha256": "f2140f6aeab31d4c31813626a4fae1df8d582dd5aa835c469eec12d0c5993c24",
+    "rapport_sha256": "8d559d2dfb0521e1cce3ca06e56f1417d66d0596329240ec3d8b8490fcb1db31",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2016",
+    "apercu_sujet_sha256": "8a498147093bb0046b0655ce40c621eda7a81b9a7f90fc56d06a1b0438596152",
+    "apercu_rapport_sha256": "bda20647a46f07652cd34dbd549f4288d8ddc15a90b7de0767d780f9ed3318f4",
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "reference_garde": "R 16 - 83"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/actifs-de-participation.svg",
+      "legende": "La société en participation ne possède aucun patrimoine qui lui serait propre."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/obligation-du-participant.svg",
+      "legende": "En matière commerciale la solidarité suppose d’abord que le participant soit tenu selon l’article 1872-1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Le droit des tiers et des associés dans la société en participation » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Le droit des tiers et des associés dans la société en participation » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

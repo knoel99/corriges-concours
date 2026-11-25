@@ -1,0 +1,59 @@
+{
+  "slug": "ens-rennes_d1_droit-commercial_2017",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit commercial",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "intitule": "Les enjeux des opérations sur fonds de commerce",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-options-d1-2017_1513242503958-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-droit-commercial-2017_1515597519479-pdf",
+    "sujet_sha256": "7f3b9a8bf8b00a1df9256dc59fcbe58bd0deb48bf5c57b9be5c5388fc0045734",
+    "rapport_sha256": "bf22abf2eb02d570a8b273bc90cf57bb89265c733f8226fa239c4d32d1b5b483",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-d1-2017",
+    "apercu_sujet_sha256": "3451275d23ae79d16ab5e5b0ce61d9d272954e2d7386f26f41af8d0dc97ef405",
+    "apercu_rapport_sha256": "176147a18f8aa31b409cc281c768f29ab8ce4eac2eefcfd673aceded961fbce4",
+    "page_pdf": 2,
+    "fin_pdf": 2,
+    "reference_garde": "R 17 - 83"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/cession-et-prix.svg",
+      "legende": "L’opposition régulière porte sur le paiement du prix et protège les créanciers du vendeur."
+    },
+    {
+      "question": "1",
+      "section": "B2",
+      "fichier": "figures/fonds-conserve.svg",
+      "legende": "La sûreté garantit une créance. La location-gérance confie l’exploitation aux risques du locataire-gérant."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Les enjeux des opérations sur fonds de commerce » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Les enjeux des opérations sur fonds de commerce » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
