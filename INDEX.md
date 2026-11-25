@@ -703,6 +703,7 @@
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
+| 2010 | ENS de Lyon | Second concours | Informatique | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_informatique_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_informatique_2010/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Informatique | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/guide.md) |
 | 2012 | ENS de Lyon | Second concours | Informatique | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/brut.md) | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/guide.md) |
 | 2013 | ENS de Lyon | Second concours | Informatique | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/guide.md) |
