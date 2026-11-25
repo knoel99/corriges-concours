@@ -1,0 +1,79 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_espagnol-oral_2019",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Espagnol (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "questions": 5,
+  "intitule": "Cinco debates de actualidad en la radio española",
+  "sources": {
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Oraux_D2_Espagnol.pdf",
+    "rapport_sha256": "fe36feb2b7177da205b6620b18e4045b7259e1f7ac4eeba692bb3eeb724dd6a3",
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2019_Rapport_Oraux_D2_Espagnol.pdf#page=1",
+    "index": "https://ens-paris-saclay.fr/node/4243",
+    "archives_et_contexte": [
+      {
+        "fonction": "contexte, lazos amarillos",
+        "url": "https://www.rtve.es/play/audios/programa/torra-recurre-ante-junta-electoral-para-tratar-evitar-retirada-lazos-amarillos/5066942/"
+      },
+      {
+        "fonction": "contexte, Grupo de Contacto",
+        "url": "https://www.rtve.es/play/audios/14-horas/montevideo-acoge-grupa-contacto-sobre-venezuela/4973237/"
+      },
+      {
+        "fonction": "contexte, couverture du procès",
+        "url": "https://www.rtve.es/play/audios/las-mananas-de-rne/mananas-rne-inigo-alfonso-comienza-juicio-del-proces-tribunal-supremo-blindado-numerosos-medios-comunicacion/4981591/"
+      },
+      {
+        "fonction": "contexte, arrivées en Espagne",
+        "url": "https://www.rtve.es/play/noticias/20180730/oleada-pateras-costas-espanolas-hay-colapso-migratorio/1771522.shtml"
+      },
+      {
+        "fonction": "contexte, déclaration bilatérale du 7 juin 2019",
+        "url": "https://2017-2021.state.gov/mexico-19-607/"
+      }
+    ]
+  },
+  "redaction": "5 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Les exemples contemporains sont datés et distincts des enregistrements non identifiés.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "3",
+      "fichier": "figures/cataluna-tres-instituciones.svg",
+      "legende": "Le sens du mot « Europe » change selon que l’on parle de diplomatie, de coopération judiciaire ou de garanties individuelles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "espagnol_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "5 supports ou thèmes numérotés accompagnés de commentaires argumentés en espagnol, d’un exercice d’entretien et d’indications propres au sujet. Les exemples contemporains sont datés et distincts des enregistrements non identifiés.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Carlos Herrera opina sobreTorra",
+      "Papel de Europa respecto a Venezuela",
+      "El procés visto por Europa",
+      "El verano: época de pateras",
+      "Relaciones EE.UU-México"
+    ],
+    "questions_non_traitees": [],
+    "precision": "Le rapport donne les titres ou mots clés et les diffuseurs pour l’ensemble de la session. Il ne publie ni fichiers d’épreuve, ni bornes, ni questions individuelles. Les commentaires et les relances répondent aux thèmes attestés. Les archives citées comme points de comparaison ont une attribution distincte de celle des extraits."
+  }
+}
