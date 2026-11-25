@@ -993,6 +993,7 @@
 | 2010 | ENS | MP-PC | Espagnol (LE2) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LV1) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/guide.md) |
 | 2010 | ENS | MP-PC | Grec ancien (LE2) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/guide.md) |
+| 2002 | ENS | MP-PC | Informatique | [md](2002/ens/ens_mp-pc_informatique_2002/brut.md) | [md](2002/ens/ens_mp-pc_informatique_2002/guide.md) |
 | 2003 | ENS | MP-PC | Informatique | [md](2003/ens/ens_mp-pc_informatique_2003/brut.md) | [md](2003/ens/ens_mp-pc_informatique_2003/guide.md) |
 | 2004 | ENS | MP-PC | Informatique | [md](2004/ens/ens_mp-pc_informatique_2004/brut.md) | [md](2004/ens/ens_mp-pc_informatique_2004/guide.md) |
 | 2005 | ENS | MP-PC | Informatique | [md](2005/ens/ens_mp-pc_informatique_2005/brut.md) | [md](2005/ens/ens_mp-pc_informatique_2005/guide.md) |

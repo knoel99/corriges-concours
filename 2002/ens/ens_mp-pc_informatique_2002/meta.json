@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp-pc_informatique_2002",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique",
+    "annee": 2002,
+    "duree_heures": 4
+  },
+  "questions": 29,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/ens_info_mp-pc_2002.pdf",
+    "index_banque": "https://www.wikiprepa.fr/concours/ecrit/ens_info_mp-pc_2002",
+    "identification": "Fac-similé du cahier ULC 214 J, quatre heures. Groupes M, MP et MPI en filière MP pour Paris, Lyon et Cachan. Groupe I en MP et PC pour Paris et Lyon. Aucun rapport associé dans l’archive de cette composition.",
+    "sujet_sha256": "9316f04af766d068f48c7133beb9eb297a8117f31e866d42e1c77da7321ce8c6"
+  },
+  "figures": [
+    {
+      "fichier": "figures/arbre-de-base.svg",
+      "question": "II.3",
+      "legende": "Figure 1 — L’arbre de b + 1 porte à gauche l’exposant 1 et, à droite, le terme unité restant."
+    },
+    {
+      "fichier": "figures/suite-goodstein.svg",
+      "question": "II.6",
+      "legende": "Figure 2 — Les trois premières valeurs viennent de la même écriture héréditaire, avec changement de base puis soustraction d’une unité."
+    },
+    {
+      "fichier": "figures/ordre-successeur.svg",
+      "question": "IV.4",
+      "legende": "Figure 3 — Le second ordre construit le successeur en greffant l’arbre précédent à droite d’une feuille O."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "algorithmique_suite",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Cinq parties du fac-similé étudiant les décompositions héréditaires, l’arithmétique sur arbres, deux ordres bien fondés, les successeurs et bornes, puis le lemme de Higman. Garde contrôlée sur le PDF. Précisions sur les cas vides et sur la relation stricte des mots."
+    }
+  ]
+}
