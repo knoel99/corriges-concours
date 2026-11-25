@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_espagnol_2019",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Espagnol",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-e-preuve-e-crite-langues-vivantes-d1-2019_1574761210232-pdf#page=4",
+    "sha256_sujet": "c1e6db357f43f7758cd0c4fb4340f3b7d3daa99c71c1be4b5ba821613ed4da25",
+    "etablissement_imprime": "École normale supérieure de Rennes",
+    "publication": "Manuel Rivas, « ¿Quién teme a Concepción Arenal? », El País Semanal, 18 novembre 2018",
+    "page": 4,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-espagnol-e-crit-d1-2019_1571846360500-pdf#page=1",
+    "sha256_rapport_jury": "b8393ce46836925de0ed374964a0f43ad3dcd740fb3c3589e1648e24fbdeafac"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en espagnol"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en espagnol."
+  },
+  "longueur_expression": {
+    "mots": 105,
+    "regle": "Expliquer la portée au XXIe siècle des thèmes de la chronique de 2018 consacrée à Concepción Arenal. Le feuillet demande 100 mots à 10 % près."
+  },
+  "figures": [
+    {
+      "fichier": "figures/arenal.svg",
+      "legende": "Deux portes institutionnelles dans la chronique"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en espagnol. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
