@@ -1,0 +1,60 @@
+{
+  "slug": "ens_cycle-master-mathematiques_francais-et-culture-generale_2023",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Français et culture générale",
+    "annee": 2023,
+    "modalite": "écrit"
+  },
+  "intitule": "Français et culture générale",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2023_sujet%202A%20Maths_Francais.pdf",
+    "sujet_sha256": "4347976f34e919c0b840cdd36e0c30656ff7ac227b1bfb67df971a31359597bf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2023_rapport_oral_Francais_2A%20Maths.pdf",
+    "rapport_sha256": "52a1a6f4ecf783f5438d82d251607c5548986a3a42571052a7860b9e1264249d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/travail.svg",
+      "question": "1",
+      "legende": "Pourquoi les deux valorisations varient en sens inverse"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résumé original de 250 mots, deux développements construits pour les choix a et b, guide de préparation et schéma du raisonnement."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Collation des questions et des deux barèmes avec le sujet institutionnel, lecture du rapport, recomptage séparé des mots et des unités typographiques, contrôle de la structure et des exemples dans les deux débats."
+    }
+  ]
+}

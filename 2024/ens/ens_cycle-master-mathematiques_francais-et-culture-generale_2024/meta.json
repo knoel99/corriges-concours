@@ -1,0 +1,60 @@
+{
+  "slug": "ens_cycle-master-mathematiques_francais-et-culture-generale_2024",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Français et culture générale",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "Français et culture générale",
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2024_Fran%C3%A7ais_2A%20Maths.pdf",
+    "sujet_sha256": "5662fb9dca384297e5ce639695747ac7ec89c9e00526c391335e876b3ef21f3c",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2024_Rapport%20fran%C3%A7ais_2A%20Maths_ECRIT.pdf",
+    "rapport_sha256": "bfc9297c2ba73eeeb957cd774ae3a880424ec464fbbf349cef93d404734bb46f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/majorite.svg",
+      "question": "1",
+      "legende": "Du vote majoritaire à la recherche du bien commun"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résumé original de 250 mots, deux développements construits pour les choix a et b, guide de préparation et schéma du raisonnement."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Collation des questions et des deux barèmes avec le sujet institutionnel, lecture du rapport, recomptage séparé des mots et des unités typographiques, contrôle de la structure et des exemples dans les deux débats."
+    }
+  ]
+}
