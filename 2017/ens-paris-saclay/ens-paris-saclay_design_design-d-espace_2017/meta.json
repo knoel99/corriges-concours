@@ -1,0 +1,66 @@
+{
+  "slug": "ens-paris-saclay_design_design-d-espace_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design d'espace",
+    "annee": 2017
+  },
+  "redaction": "Lecture du sujet de cinq pages. Livret original de huit pages A4 en quatre faces A3 imposées, texte fondateur d’une page, lecture du modèle et du territoire parisien, plan, coupe, gouvernance et projection sur vingt ans.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Espace.pdf",
+    "sujet_sha256": "0c03ef20d979e50d3b92335e4db58788eb057159893d54831c85575267107457",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "nature": "Sujet original"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-couverture-texte.svg",
+      "question": "Projet, planche 1",
+      "legende": "Feuille extérieure, recto. Le texte fondateur tient sur la page A4 de gauche."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-modele-et-gouvernance.svg",
+      "question": "Projet, planche 2",
+      "legende": "Feuille extérieure, verso. Analyse morphologique et évolution sur vingt ans."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-lieux-et-horaires.svg",
+      "question": "Projet, planche 3",
+      "legende": "Feuille intérieure, recto. Cartographie interprétative du territoire et trois situations temporelles."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-projet-multiechelle.svg",
+      "question": "Projet, planche 4",
+      "legende": "Double page centrale. Parcours de l’îlot au détail d’une assise et d’un sol planté."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet de cinq pages. Livret original de huit pages A4 en quatre faces A3 imposées, texte fondateur d’une page, lecture du modèle et du territoire parisien, plan, coupe, gouvernance et projection sur vingt ans."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "formats_A3": 4,
+    "parties": [
+      "Couverture et texte fondateur",
+      "Du type haussmannien à la décision collective",
+      "Conséquences quotidiennes et lecture du territoire",
+      "Relier des espaces sans démolir"
+    ]
+  }
+}
