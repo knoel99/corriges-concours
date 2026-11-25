@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_deuxieme-composition-de-mathematiques_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Deuxième composition de mathématiques",
+    "annee": 2007
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2007.pdf",
+    "rapport_jury": "https://www.wikiprepa.fr/concours/data/x_maths-2_mp_2007_rapport_jury.pdf",
+    "sha256_sujet": "c433b7ca422799cf871a306b9f24f55acd0ab2a33f7ceb470bcb066b3739e313"
+  },
+  "figures": [
+    {
+      "fichier": "figures/chaine-des-poids.svg",
+      "question": "7",
+      "legende": "Pour n = 4, les poids de K figurent sous les vecteurs. Les flèches de F et de E relient les poids voisins dans les deux sens."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet et du rapport du jury. Classification des espaces stables du bloc de Jordan, contre-exemple à la réciproque de Schur, calcul du commutateur avec une puissance et preuve de la classification à un signe près. Schéma de la chaîne des poids.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
