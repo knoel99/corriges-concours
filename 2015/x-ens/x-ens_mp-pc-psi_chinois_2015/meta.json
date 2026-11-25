@@ -1,0 +1,55 @@
+{
+  "slug": "x-ens_mp-pc-psi_chinois_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Chinois",
+    "annee": 2015,
+    "modalite": "écrit"
+  },
+  "intitule": "Écoles internationales en Chine et vie étudiante aux États-Unis",
+  "questions": 2,
+  "redaction": "Synthèse titrée des quatre documents sur les écoles internationales et opinion chinoise répondant à Nan Qiao sur l’intégration aux universités américaines. Lecture de la répartition des crédits de 枫叶 dans l’encadré A4.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_chinois_xeulcr.pdf",
+    "sha256_sujet": "dd92b5e0e94d87f87691dbacec09c5df2c738cc4e8dc5584cbf7dc340da49ae1",
+    "pages_sujet": 6,
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2015/%20",
+    "reference_du_texte": "A1, A2 et A4, 环球, 16 mai 2013. A3, 三联生活周刊, 29 mai 2013. B, 南桥, 融不入的熔炉, adapté de 教育观察, 11 janvier 2014.",
+    "autre_publication_sujet": "https://www.ens.psl.eu/IMG/file/concours/2015/PC/sujets/sujet_mppc_chi2015.pdf",
+    "sha256_autre_publication_sujet": "8824c16e14522e064407ea0e4e81dd94c570ad53c269f133e9e654741f44500c",
+    "rapport_jury": null,
+    "index_rapports_ens": "https://www.ens.psl.eu/rapports-et-sujets-pc-2015",
+    "precision_rapport": "Le rapport de jury propre à cet écrit de 2015 n’a pas été retrouvé. La ligne du chinois écrit dans l’index de l’ENS porte la mention « rapport » sans lien."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/credits-fengye.svg",
+      "legende": "Les 80 crédits du cursus décrit par le groupe 枫叶 dans le document A4."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse titrée des quatre documents sur les écoles internationales et opinion chinoise répondant à Nan Qiao sur l’intégration aux universités américaines. Lecture de la répartition des crédits de 枫叶 dans l’encadré A4."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}
