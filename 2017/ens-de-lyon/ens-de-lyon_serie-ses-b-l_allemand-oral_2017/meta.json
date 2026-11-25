@@ -1,0 +1,64 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_allemand-oral_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Allemand (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "intitule": "Explication de texte allemand contemporain hors programme",
+  "questions": 3,
+  "redaction": "Trois propositions de commentaire oral en allemand et trois réponses aux relances, appuyées sur le jugement de Karlsruhe, le discours de fin de mandat et l’identification bibliographique du reportage du Spiegel.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/sujet-ses-oral-2017_1506590888219.pdf#page=10",
+    "sha256_sujet": "ea173fbbf1362185f61249f8d412b99a1037d2a9b7b20bdb859f8b374c7fbfca",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/SES_2017.pdf#page=7",
+    "sha256_rapport_jury": "683dcf453b3dd03378fe818b5180c3323430f82164ade00cb47b73bd8f925dda",
+    "archives_complementaires": [
+      "https://www.boell.de/sites/default/files/endf_einwanderungsland-deutschland_v01_kommentierbar.pdf",
+      "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2017/01/bs20170117_2bvb000113.html",
+      "https://www.bundesregierung.de/resource/blob/975954/777490/a5c8882200dc445f38142f336008f72c/31-3-bpr-gauck-data.pdf?download=1"
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Die Abschiebe-Lotterie — Der Spiegel, Heft 10/2017, S. 28–31",
+      "fichier": "figures/formes-du-pouvoir.svg",
+      "legende": "Welcher Träger öffentlicher Gewalt handelt in welchem Rahmen?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Croisement du cahier SES p. 10 et du rapport p. 7–8 : trois sujets tirés, durée et modalités de la lecture à haute voix, références au rôle de la Cour constitutionnelle et à la biographie de Gauck."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Trois propositions de commentaire oral en allemand et trois réponses aux relances, appuyées sur le jugement de Karlsruhe, le discours de fin de mandat et l’identification bibliographique du reportage du Spiegel."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "perimetre": "Trois billets sont identifiés dans le cahier SES. Le rapport confirme les trois thèmes et demande une introduction, une courte lecture à voix haute, un commentaire en allemand (vingt minutes au plus) et un entretien d’environ dix minutes. Les limites des trois articles distribués ne sont pas publiées. Les lectures proposées s’appuient sur les intitulés, le rapport et les sources complémentaires indiquées.",
+    "limites": "Trois titres, publications et dates ou numéro connus. Coupures et passages à lire absents. Le sommaire officiel inclut le Spiegel, omis dans l’énumération des journaux par le rapport. Pour le Handelsblatt et l’Augsburger Allgemeine l’article intégral portant le titre du cahier n’a pas été retrouvé.",
+    "billets_recenses": 3
+  }
+}
