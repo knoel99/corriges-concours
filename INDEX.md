@@ -697,6 +697,7 @@
 | 2026 | ENS de Lyon | Séries A/L | Espagnol (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Italien (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Philosophie (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_philosophie-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_philosophie-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Portugais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
