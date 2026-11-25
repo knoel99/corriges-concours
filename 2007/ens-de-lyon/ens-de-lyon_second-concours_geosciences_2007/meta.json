@@ -1,0 +1,91 @@
+{
+  "slug": "ens-de-lyon_second-concours_geosciences_2007",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Géosciences",
+    "annee": 2007
+  },
+  "questions": 29,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2007/sujet-ecrit-2007-second-concours_geosciences.pdf",
+    "sujet_sha256": "1f80a5a65f396d6a7b7d7948663077fff65a9a696acf3992265281307cc701c3",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2007/rapport-2007-second-concours_ecrit_geosciences.pdf",
+    "rapport_sha256": "59871debfcc5454ae5b58f0c6054486fc15bba4cf23d48ac1a2a578ac72e5dca"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "4.1",
+      "4.2",
+      "4.3"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 29 questions sont traitées sur le sujet officiel et le rapport de l’écrit. Les valeurs lues dans les cartes et courbes sont données à leur précision graphique. Les tracés demandés pour l’insolation et les géothermes sont fournis. La formule de 1.8 est évaluée, de même que la demi-amplitude indiquée dans la consigne."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "1.2",
+      "fichier": "figures/geometrie-de-linsolation.svg",
+      "legende": "À gauche, des rayons obliques répartissent une même énergie sur une surface plus vaste. À droite, l’axe terrestre incliné change la durée du jour au cours de la révolution annuelle."
+    },
+    {
+      "question": "1.7",
+      "fichier": "figures/amortissement-et-phase-annuels.svg",
+      "legende": "Modèle sinusoïdal centré sur zéro pour comparer les amplitudes et les retards aux trois profondeurs. L’amplitude est réduite d’un facteur e près de 3,2 m."
+    },
+    {
+      "question": "2.10",
+      "fichier": "figures/trois-geothermes-a-flux-profond-fixe.svg",
+      "legende": "Tracé des trois états finaux si température de surface et flux profond sont maintenus. Les courbes intermédiaires sont schématiques. La pente stationnaire demeure propre à chaque forage."
+    },
+    {
+      "question": "2.9",
+      "fichier": "figures/temps-de-diffusion.svg",
+      "legende": "Temps caractéristique E²/κ pour une diffusivité de 10⁻⁶ m²/s. Une profondeur multipliée par dix requiert un temps multiplié par cent."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur la température de surface et les géothermes, avec confrontation aux sept pages du sujet et au rapport de l’écrit. Relevés des gradients des trois forages, double calcul de pénétration thermique, traitement des conventions de flux, de la chaleur cumulée et des paléotempératures. Quatre illustrations originales."
+    }
+  ]
+}
