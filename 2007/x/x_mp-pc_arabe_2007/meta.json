@@ -1,0 +1,65 @@
+{
+  "slug": "x_mp-pc_arabe_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Arabe",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Zaki bey et le retour de la morale dans la politique internationale",
+  "questions": 3,
+  "redaction": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. Zaki bey et le retour de la morale dans la politique internationale.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=3",
+    "sha256_sujet": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03",
+    "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=3",
+        "sha256": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03"
+      },
+      {
+        "role": "sujet complémentaire",
+        "url": "https://web.archive.org/web/20090424045418id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ExprEcrit.pdf",
+        "sha256": "3480b2ca508e8df2f8d98d5325aef0f68faafb32776b69e2174e40304d224573"
+      },
+      {
+        "role": "rapport",
+        "url": "https://web.archive.org/web/20090424084421id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Compos_Arabe_MP_PC_Rap2.pdf",
+        "sha256": "5c981f38873dd9e925ff44f81c04025c16dd82ebe8080164cceab57759da277a"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/lecture-de-la-version.svg",
+      "legende": "Comment une promenade devient le portrait de Zaki bey"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "arabe_mp_pc_2011_2014",
+      "session": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction intégrale en français du cahier de version, analyse et réflexion personnelle en arabe du cahier d’expression. Zaki bey et le retour de la morale dans la politique internationale."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Expression 1",
+      "Expression 2"
+    ]
+  }
+}
