@@ -187,7 +187,7 @@ Voici les couples « sommet retiré, dominateur » dans l’ordre. À chaque cou
 
 Par exemple, au premier coup, $N[A_1]=\{A_1,A_2,B_1,B_2\}$ est inclus dans $N[B_2]$. Lorsque $C_1$ est retiré, ses voisins restants sont $C_2$ et $D_1$, adjacents entre eux. À la fin, $E_3$ est seul, donc 3.6 donne $G\in C_1$.
 
-![Les 19 sommets du graphe hexagonal. Les trois sommets A de la rangée inférieure sont les premiers retraits du tableau.](figures/q37-rangées.svg)
+![Les 19 sommets du graphe hexagonal. Les trois sommets A de la rangée inférieure sont les premiers retraits du tableau.](figures/q37-rangees.svg)
 
 ### Question 3.8 · Trouver et retirer un écueil
 
