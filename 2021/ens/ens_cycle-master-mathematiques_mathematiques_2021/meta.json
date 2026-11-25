@@ -1,0 +1,41 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques_2021",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques",
+    "annee": 2021
+  },
+  "questions": 42,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2021_Sujet_2C_Maths_Maths.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "b348c54da6557610518d527d1dd81400acb8fd5f55f0a44c2a97f5b70596048b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/mot-reduit-renversement.svg",
+      "question": "A.III.6",
+      "legende": "Pour quatre lettres, les six échanges adjacents renversent l’ordre initial. Chaque paire de fils se croise exactement une fois."
+    },
+    {
+      "fichier": "figures/rectangle-des-trois-droites.svg",
+      "question": "B.II.3",
+      "legende": "Le facteur gaussien contrôle les deux côtés horizontaux à grande hauteur. Le facteur exponentiel linéaire normalise les deux bords verticaux."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions à partir du sujet officiel de huit pages. Vérification des indices de transposition, des expressions réduites, du couplage bilinéaire et des passages de densité. Preuve du théorème des trois droites pour le produit avec ses propres suprema de bord. Deux figures. Aucun rapport de jury associé à cet écrit.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
