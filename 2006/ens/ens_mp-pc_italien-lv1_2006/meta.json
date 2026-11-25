@@ -1,0 +1,63 @@
+{
+  "slug": "ens_mp-pc_italien-lv1_2006",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Italien (LV1)",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "La fin des télégrammes de Western Union et l’influence du support sur l’information",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2006",
+    "etablissements": "ENS de Paris, de Lyon et de Cachan",
+    "pages_sujet": "5",
+    "code_garde": "61.12PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2006/sujet-2006-ecrit-mp_pc_langue_vivante_1.pdf#page=5",
+    "sujet_sha256": "1f6e13b751aff5e2ffb432c64c2161b70c3757795ee2e70c40a1b891b7170c3d",
+    "precision": "Le cahier donne en page 5 l’article du 1er février 2006 sur Western Union et une question en italien. Le rapport spécifique à l’italien LV1 n’a pas été retrouvé."
+  },
+  "mots_expression": {
+    "1": 162
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/succession.svg",
+      "legende": "Les trois concurrents ont des avantages différents selon le reportage."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/message.svg",
+      "legende": "Exemple d’une ligne de chemin de fer interrompue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "italien_sciences_2005_2010",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en italien. La fin des télégrammes de Western Union et l’influence du support sur l’information.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
