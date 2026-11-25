@@ -1,0 +1,143 @@
+{
+  "slug": "ens-rennes_d-e_espagnol-oral_2024",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol (oral)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "questions": 8,
+  "sujets": 8,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-espagnol-d-e-2024_1731603738587-pdf",
+    "sujet_sha256": "b568687b37c7b0f13dfc168d33160080aefddb4ad4c2487fb9565d7db88c678f",
+    "apercu_sujet_sha256": "41a8e7c3057e90edc7353297b70b2e40e025d4247e27c4fd913efc406992b921",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-oral-d-e-2024_1742461742900-pdf",
+    "rapport_jury_sha256": "c38860b21a2bdbe86d1bf932f7087a2f4a6c2c83d3311a29908a2986dba50824",
+    "apercu_rapport_sha256": "fdb53c37bc405ce7f4eabc699d14e2f1b572559b889e6e24d83a360e1482c6f1",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2024",
+    "documents": [
+      {
+        "numero": 1,
+        "titre": "Hay que restablecer la credibilidad del Mercosur",
+        "publication": "Félix Peña · La Nación · 23 mai 2024",
+        "page": 1,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-espagnol-d-e-2024_1731603738587-pdf#page=1"
+      },
+      {
+        "numero": 2,
+        "titre": "La UE juega fuerte con una nueva carta para destrabar el acuerdo con el Mercosur",
+        "publication": "Juan Landaburu · La Nación · 30 mai 2024",
+        "page": 2,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-espagnol-d-e-2024_1731603738587-pdf#page=2"
+      },
+      {
+        "numero": 3,
+        "titre": "Venezuela retira invitación a la Unión Europea para observar elecciones presidenciales",
+        "publication": "AFP · repris par France 24 selon le jury · 29 mai 2024",
+        "page": 3,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-espagnol-d-e-2024_1731603738587-pdf#page=3"
+      },
+      {
+        "numero": 4,
+        "titre": "¿Cuáles son las nuevas medidas de EE.UU. para apoyar a los empresarios de Cuba (y la dura respuesta del gobierno de la isla)?",
+        "publication": "BBC News Mundo · 29 mai 2024",
+        "page": 4,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-espagnol-d-e-2024_1731603738587-pdf#page=4"
+      },
+      {
+        "numero": 5,
+        "titre": "¿Qué cambia realmente con la nueva propuesta del gobierno de Biden para migrantes que solicitan asilo en EE.UU.?",
+        "publication": "BBC News Mundo · 10 mai 2024",
+        "page": 5,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-espagnol-d-e-2024_1731603738587-pdf#page=5"
+      },
+      {
+        "numero": 6,
+        "titre": "La ONU vuelve a pedir a EE.UU. que facilite la libre determinación de Puerto Rico",
+        "publication": "Agencia EFE · repris par Swissinfo selon le jury · 22 juin 2023",
+        "page": 6,
+        "temoin": "Coupure officielle",
+        "reference": "https://www.ens-rennes.fr/medias/fichier/sujets-oral-espagnol-d-e-2024_1731603738587-pdf#page=6"
+      },
+      {
+        "numero": 7,
+        "titre": "La CEPAL actualizó sus proyecciones de crecimiento económico para los países de la región",
+        "publication": "CEPAL · 9 mai 2024",
+        "temoin": "Publication de la CEPAL, limites du billet inconnues",
+        "reference": "https://www.cepal.org/es/comunicados/economias-america-latina-caribe-creceran-21-2024-un-contexto-incertidumbre-nivel-global",
+        "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-oral-d-e-2024_1742461742900-pdf#page=2"
+      },
+      {
+        "numero": 0,
+        "titre": "La UE estrecha los lazos con Latinoamérica y el Caribe",
+        "publication": "Commission européenne selon le jury · 2023",
+        "temoin": "Document homonyme de contexte, secours non utilisé",
+        "reference": "https://www.inclusion.gob.es/es/web/cartaespana/w/la-ue-estrecha-los-lazos-con-latinoamerica-y-el-caribe",
+        "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-lve-espagnol-oral-d-e-2024_1742461742900-pdf#page=2"
+      }
+    ],
+    "precision": "Le fascicule reproduit les sujets 1 à 6. Le rapport désigne un septième sujet de 477 mots et un sujet de secours de 488 mots, non utilisé. Pour le n° 7, le communiqué de la CEPAL est identifié mais la coupe exacte reste inconnue. Pour le secours, le rapport attribue le texte à la Commission européenne. Le document homonyme de Carta España sert uniquement à situer le débat. Les deux feuillets manquants ne sont pas reconstitués."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Sujet 1 · Hay que restablecer la credibilidad del Mercosur",
+      "Sujet 2 · La UE juega fuerte con una nueva carta para destrabar el acuerdo con el Mercosur",
+      "Sujet 3 · Venezuela retira invitación a la Unión Europea para observar elecciones presidenciales",
+      "Sujet 4 · ¿Cuáles son las nuevas medidas de EE.UU. para apoyar a los empresarios de Cuba (y la dura respuesta del gobierno de la isla)?",
+      "Sujet 5 · ¿Qué cambia realmente con la nueva propuesta del gobierno de Biden para migrantes que solicitan asilo en EE.UU.?",
+      "Sujet 6 · La ONU vuelve a pedir a EE.UU. que facilite la libre determinación de Puerto Rico"
+    ],
+    "questions_partiellement_traitees": [
+      "Sujet 7 · La CEPAL actualizó sus proyecciones de crecimiento económico para los países de la región"
+    ],
+    "questions_non_traitees": [
+      "Sujet 0 · La UE estrecha los lazos con Latinoamérica y el Caribe"
+    ],
+    "motif": "Le fascicule reproduit les sujets 1 à 6. Le rapport désigne un septième sujet de 477 mots et un sujet de secours de 488 mots, non utilisé. Pour le n° 7, le communiqué de la CEPAL est identifié mais la coupe exacte reste inconnue. Pour le secours, le rapport attribue le texte à la Commission européenne. Le document homonyme de Carta España sert uniquement à situer le débat. Les deux feuillets manquants ne sont pas reconstitués."
+  },
+  "figures": [
+    {
+      "fichier": "figures/acuerdo.svg",
+      "legende": "¿Qué aporta cada instrumento negociador?",
+      "question": "Sujet 2"
+    },
+    {
+      "fichier": "figures/observacion.svg",
+      "legende": "Tres voces sobre una misión electoral",
+      "question": "Sujet 3"
+    },
+    {
+      "fichier": "figures/estatus.svg",
+      "legende": "Tres ámbitos del debate sobre Puerto Rico",
+      "question": "Sujet 6"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du fascicule et du rapport officiels, rédaction des analyses en langue du concours, de deux échanges par entrée, de trois schémas et des exercices du guide. Le fascicule reproduit les sujets 1 à 6. Le rapport désigne un septième sujet de 477 mots et un sujet de secours de 488 mots, non utilisé. Pour le n° 7, le communiqué de la CEPAL est identifié mais la coupe exacte reste inconnue. Pour le secours, le rapport attribue le texte à la Commission européenne. Le document homonyme de Carta España sert uniquement à situer le débat. Les deux feuillets manquants ne sont pas reconstitués."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

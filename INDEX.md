@@ -738,9 +738,11 @@
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique A) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-a_2024/guide.md) |
 | 2024 | ENS Paris-Saclay | Cycle master anglais | Anglais de spécialité (dossier thématique B) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Allemand | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_allemand_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Allemand (oral) | [md](2024/ens-rennes/ens-rennes_d-e_allemand-oral_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_allemand-oral_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Anglais | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_anglais_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Anglais (oral) | [md](2024/ens-rennes/ens-rennes_d-e_anglais-oral_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_anglais-oral_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Espagnol | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol_2024/guide.md) |
+| 2024 | ENS Rennes | D-E | Espagnol (oral) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol-oral_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_espagnol-oral_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Italien | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_italien_2024/guide.md) |
 | 2024 | ENS Rennes | D-E | Composition d’ordre économique | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/brut.md) | [md](2024/ens-rennes/ens-rennes_d-e_composition-dordre-economique_2024/guide.md) |
 | 2025 | ENS Rennes | D-E | Allemand | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/brut.md) | [md](2025/ens-rennes/ens-rennes_d-e_allemand_2025/guide.md) |
