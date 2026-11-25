@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Question directrice** — À quelles conditions le tremblement devient-il une nécessité littéraire ?
 
 ## Introduction
@@ -37,6 +39,10 @@ On comprend pourquoi l’argument de l’intelligence artificielle est à la foi
 ## III. L’écriture devient nécessaire quand sa forme oblige à réviser une façon de voir
 
 Chez Mouawad lui-même, *Incendies* donne à deux lettres la charge d’accomplir une mission apparemment limpide. À la mort de Nawal, ses jumeaux doivent retrouver leur père et leur frère et remettre une lettre à chacun. La forme de l’adresse leur indique deux destinataires. Leur enquête les conduit à découvrir qu’un seul homme occupe les deux places dans leur histoire. Ce qui semblait être une ligne droite, allant d’un expéditeur à un destinataire, se replie sur une filiation que les mots de père et de frère, énoncés isolément, ne permettaient pas de concevoir. Or la distinction des deux lettres demeure nécessaire précisément lorsque l’identité de l’homme est découverte. La mère a à s’adresser au fils qui lui a été enlevé et à celui qui l’a violentée. Un récit qui fondrait ces deux adresses en une explication unique effacerait la différence entre les relations qu’un seul corps porte. Ici la nécessité d’écrire se mesure à ce qu’une parole trop vite réconciliée ferait disparaître.
+
+L’aboutissement commun des deux recherches ne rend pas les deux lettres interchangeables. Chacune adresse la parole à une place différente dans l’histoire familiale. Le dispositif fait donc éprouver au lecteur une différence que la seule information sur l’identité pourrait effacer. L’œuvre donne une forme précise à l’ébranlement dont parle Mouawad.
+
+![Pourquoi deux lettres dans Incendies ?](figures/deux-lettres.svg)
 
 Le lecteur n’a nul besoin d’avoir éprouvé dans sa propre vie une histoire analogue pour en reconnaître le trouble. Il doit en revanche avoir suivi la multiplication des adresses et s’être lui-même trompé sur leur partage. Une expérience lui devient accessible dans le temps du déchiffrement. La sincérité peut dès lors se juger à la fidélité de la forme envers une difficulté qu’aucune déclaration d’intention ne résout. Chez Perec, cet enjeu appelait une lacune à la jointure de deux récits ; chez Hugo, il exigeait la continuité d’une marche. L’écrivain peut travailler, couper, mesurer longtemps pour trouver la forme qui interdira au lecteur de s’en remettre à une image toute faite. La vision naît aussi chez celui qui lit.
 

@@ -14,6 +14,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Texte étudié** — Claude Simon, *L’Acacia* (1989), la recherche de la tombe du père.
 
 L’enfant est le dernier personnage de la page à recevoir un vêtement et presque le dernier à paraître, alors que c’est de son histoire qu’il s’agit. Dans *L’Acacia*, publié en 1989, Claude Simon reprend le voyage accompli après la Grande Guerre par une famille à la recherche de la tombe d’un père. Le chapitre situe cette quête en 1919. L’écart d’une vie sépare l’enfant qui l’a faite du romancier qui l’écrit. De ce fait biographique, rien ne passe dans la scène sous la forme d’un « je me souviens ». L’enfant lui-même finit par apparaître tel que d’autres le voient. À qui rapporter dès lors la vision minutieuse de la rivière ou l’image immense des morts sous les collines ? Comment un récit peut-il faire partager une mémoire d’enfance en retirant au témoin la première personne et jusqu’au privilège de son regard ? La pluie permet d’abord d’embrasser dans une même phrase des réalités dont aucun œil ne saurait prendre ensemble la mesure. Sur les routes, cette manière de décrire se transforme en manière de raconter. La rencontre d’un officier finit par rendre la famille elle-même visible du dehors et rejoint, par ce détour précis, l’expérience intime de la perte.
@@ -37,6 +39,10 @@ C’est au milieu du paragraphe qu’un marqueur de récit, « Une fois », isol
 * * *
 
 La veuve, pourtant, dit un nom. Il est communiqué aux deux femmes et retenu pour le lecteur. La différence est capitale dans un récit où l’on cherche, parmi tant de morts, un homme qui possède un nom singulier. Celui qui pourrait devenir ici une grande figure reconnue de l’histoire nous apparaît comme un visage presque défait ; celui qui justifie le voyage n’apparaît sous aucun trait. Simon donne à éprouver ce défaut de prise en distribuant avec rigueur les regards. Les deux femmes regardent passer les voitures. L’indifférence de leur regard est ensuite comparée à celle des habitants qui les voient passer à leur tour. La même construction verbale déplace les voyageurs de la position de ceux qui regardent à celle des silhouettes qu’on suit un instant des yeux. Le voyage de la famille a un sens puissamment déterminé pour elle, sans que chaque inconnu rencontré soit tenu de le partager.
+
+Le nom circule donc effectivement dans la scène. Le lecteur voit la veuve le transmettre et les deux femmes le recevoir. Ce qui lui manque est le contenu de la confidence. Cette dissymétrie sépare la position du lecteur de celle des témoins, même lorsque le récit les rassemble dans un seul mouvement du regard.
+
+![Les regards à la fin du passage](figures/regards.svg)
 
 Les réponses des habitants font entendre ce que cette différence de position a de social. Les uns se montrent pleins de bonne volonté et parlent de façon décousue, les autres éprouvent l’impatience de gens interrompus dans leur travail. Le récit cherche une expression plus dure encore et s’arrête sur leur hostilité. Est-ce l’impression qu’en ont gardée les voyageuses ? Est-ce un jugement porté sur elles par ceux à qui elles demandent leur chemin ? Le passage d’un regard à l’autre nous prive d’un poste depuis lequel il serait facile de départager les parties. Les démonstratifs qui introduisent l’ennui ou l’impatience font comme si le lecteur savait de quelle expérience commune il s’agit. Il peut reconnaître la gêne de l’interrogateur aussi bien que la lassitude de celui qui a autre chose à faire.
 
