@@ -1,0 +1,39 @@
+{
+  "slug": "ens_mp-pc_francais_2010",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Français",
+    "annee": 2010,
+    "modalite": "écrit"
+  },
+  "intitule": "Gobseck, l’argent et le mouvement de la vie",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-sujet-francais.pdf",
+    "sha256_sujet": "460ac01fcdb36029e99be29e8d0d6e0c723c025966710577f7b25a640e41268c",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2010/MPI/mp-ecrit-francais.pdf",
+    "sha256_rapport_jury": "550fc955b86aab1cfeb75eb71e50bfda95efb4fc7e7a7fb61368397fd383f03e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Dissertation",
+      "legende": "Trois actes à distinguer dans la puissance de l’argent"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet commun aux ENS de Paris, Lyon et Cachan et du rapport 2010. Dissertation confrontant le discours de Gobseck à Molière, Zola et Simmel, édition guidée et schéma distinguant disponibilité, médiation et finalité."
+    }
+  ]
+}
