@@ -1,0 +1,82 @@
+{
+  "slug": "x_mp-pc_allemand_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Allemand",
+    "annee": 2007,
+    "modalite": "écrit"
+  },
+  "intitule": "Rencontre au restaurant et morale internationale",
+  "questions": 3,
+  "redaction": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage.",
+  "sources": {
+    "sujet": "https://web.archive.org/web/20090424050957id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_Version.pdf#page=1",
+    "sha256_sujet": "b999f49ba6232ccaf44de763c2cb3752fbb87ded11728669268265262b0e3a03",
+    "index": "https://web.archive.org/web/20090415204525/http://www.polytechnique.fr:80/concours/sujets/sujet07/sujet07.htm",
+    "ecoles": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "reference_des_textes": "M. Werner, Am Hang (2004). Gilles Andréani et Pierre Hassner, Justifier la guerre ? De l’humanitaire au contre-terrorisme (2005).",
+    "page_version": "1",
+    "precision_garde": "Garde identifiée par les noms des écoles, la session et les filières, sans code alphanumérique imprimé.",
+    "pages_sujet": "1",
+    "capture_sujet": "2009-04-24T05:09:57Z",
+    "url_originale_sujet": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_Version.pdf",
+    "sujet_expression": "https://web.archive.org/web/20090424045418id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_ExprEcrit.pdf",
+    "sha256_sujet_expression": "3480b2ca508e8df2f8d98d5325aef0f68faafb32776b69e2174e40304d224573",
+    "pages_sujet_expression": "1–2",
+    "capture_sujet_expression": "2009-04-24T04:54:18Z",
+    "url_originale_sujet_expression": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_ExprEcrit.pdf",
+    "rapport_jury": "https://web.archive.org/web/20090424045533id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_compos_Allemand_MP_PC_Rap.pdf",
+    "sha256_rapport_jury": "f7d0cd04fa32b5862d7f8fa0337a07f0108837022263b320a5e8c93ac9fa2669",
+    "pages_rapport_jury": "1–3",
+    "capture_rapport_jury": "2009-04-24T04:55:33Z",
+    "url_originale_rapport_jury": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_compos_Allemand_MP_PC_Rap.pdf",
+    "rapport_complementaire": "https://web.archive.org/web/20090424045539id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/07_compos_Allemand_expressionecrite_MP_PC_Rap.pdf",
+    "sha256_rapport_complementaire": "5895cca3a0daab0475924dfa7e20495f4b08fd25b9ae08c1a130eef03c4291ea",
+    "pages_rapport_complementaire": "1–2",
+    "capture_rapport_complementaire": "2009-04-24T04:55:39Z",
+    "url_originale_rapport_complementaire": "http://www.imprimerie.polytechnique.fr/EnLignes/Files/07_compos_Allemand_expressionecrite_MP_PC_Rap.pdf"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/signes-et-suppositions.svg",
+      "legende": "L’incertitude du narrateur persiste malgré les gestes observés."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "La version et l’expression écrite font l’objet de deux rapports distincts pour les filières MP et PC."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Q1",
+      "Q2"
+    ]
+  }
+}
