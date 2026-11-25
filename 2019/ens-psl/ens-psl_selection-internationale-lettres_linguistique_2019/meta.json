@@ -1,0 +1,65 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_linguistique_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Linguistique",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "questions": 13,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sil_linguistique_2019_ecrit_eng.pdf",
+    "sujet_sha256": "8803c0b1f400c5b98d467f4545e330d1252d86ea0eaa709121e2d47f1d5007bb",
+    "pages": 10
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Portée des adverbes et changement d’état · 1. Les deux implications",
+      "Portée des adverbes et changement d’état · 2. Deux représentations ou une description peu précise ?",
+      "Portée des adverbes et changement d’état · 3. Deux analyses de *again*",
+      "Portée des adverbes et changement d’état · 4. Deux lectures de *almost*",
+      "Portée des adverbes et changement d’état · 5. Que changent les données françaises et anglaises ?",
+      "Portée des adverbes et changement d’état · 6. Deux histoires pour la rivière",
+      "Portée des adverbes et changement d’état · 7. Décomposer *widen*",
+      "Article de Charles Yang · 1. L'argument en faveur de la mémorisation",
+      "Article de Charles Yang · 2. Prédictions du modèle",
+      "Article de Charles Yang · 3. Le rôle de l'échantillonnage",
+      "Article de Charles Yang · 4. Le test de Yang",
+      "Article de Charles Yang · 5. Le contraste avec Nim",
+      "Article de Charles Yang · 6. Portée pour l'évolution du langage"
+    ],
+    "precision": "Sept questions de sémantique, dont les deux demandes de la question 7, et six questions sur l’article original de Charles Yang. Les pages 9–10 de supplément sont indiquées comme facultatives par l’énoncé."
+  },
+  "figures": [
+    {
+      "fichier": "figures/partie-a.svg",
+      "legende": "Deux histoires de largeur qui dissocient les lectures"
+    },
+    {
+      "fichier": "figures/partie-b.svg",
+      "legende": "Que faut-il comparer pour tester une grammaire ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Sept questions de sémantique, dont les deux demandes de la question 7, et six questions sur l’article original de Charles Yang. Les pages 9–10 de supplément sont indiquées comme facultatives par l’énoncé. Rédaction intégrale des deux éditions et des schémas après lecture du fascicule."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
