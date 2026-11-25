@@ -1,0 +1,62 @@
+{
+  "slug": "ens-rennes_d1_allemand_2018",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-d1-allemand-e-crit-et-oral-2018_1563806798604-pdf#page=2",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-d1-allemand-e-crit-et-oral-2018_1563806798604-pdf",
+    "sha256_rapport_jury": "23b3bddf8e069cb8e898f7a1d21892f5bd35de899e6dda2eacdcedea2de0506d",
+    "temoin_presse": {
+      "titre": "Autre adaptation, universités publiques de Madrid, option B",
+      "url": "https://www.upm.es/sfs/Rectorado/Vicerrectorado%20de%20Alumnos/Acceso/BachilleratoLOMCE/Examenes/17%20Alem%C3%A1n.pdf#page=3"
+    },
+    "ressource_deutsche_welle": "https://static.dw.com/downloads/36101088/nachrichten-mit-vokabeln-20161021-schluss-mit-der-stndigen-erreichbarkeitaufgaben.pdf"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "questions_partiellement_traitees": [
+      "Version"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Les pages 1 et 2 du rapport identifient les problèmes de traduction, citent plusieurs segments et donnent la question de composition à la page 2. On peut recouper ces segments avec une autre adaptation de « Schluss mit der ständigen Erreichbarkeit », dans un examen madrilène. Les bornes du sujet rennais et le libellé de toutes ses phrases restent inconnus."
+  },
+  "longueur_expression": {
+    "mots": 98,
+    "regle": "Réponse courte."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "Que devient la fin de la journée de travail ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du rapport officiel et de la publication de presse correspondante, traduction des éléments récupérables, rédaction intégrale de la composition et du guide. Les pages 1 et 2 du rapport identifient les problèmes de traduction, citent plusieurs segments et donnent la question de composition à la page 2. On peut recouper ces segments avec une autre adaptation de « Schluss mit der ständigen Erreichbarkeit », dans un examen madrilène. Les bornes du sujet rennais et le libellé de toutes ses phrases restent inconnus."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
