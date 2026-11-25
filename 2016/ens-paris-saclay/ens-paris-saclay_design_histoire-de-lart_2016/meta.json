@@ -1,0 +1,63 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2016",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2016_Sujet_1A_Design_Histoire_art.pdf",
+    "sha256_sujet": "02f6fe8f49e1af52dcf556058e4bdae2776d9cecebf382c6cfbd726263a9097c",
+    "rapport_jury": null,
+    "notices_documentaires": [
+      {
+        "titre": "Radio-électrophone SK 4, MoMA",
+        "url": "https://www.moma.org/collection/works/2649"
+      },
+      {
+        "titre": "Fonds Otl Aicher, HfG-Archiv Ulm",
+        "url": "https://hfg-archiv.museumulm.de/en/bequests/the-bequest-of-otl-aicher/"
+      },
+      {
+        "titre": "Campagne Think Small, People’s Graphic Design Archive",
+        "url": "https://peoplesgdarchive.org/item/16761/think-small-advertising-campaign"
+      }
+    ],
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=281"
+  },
+  "figures": [
+    {
+      "fichier": "figures/analyse-du-design.svg",
+      "question": "I. La cohérence du produit permet simultanément de l’utiliser et d’identifier son fabricant",
+      "legende": "Disposition analysée de l’annonce Think Small, dont le blanc et l’échelle du produit servent la persuasion."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux compositions après lecture de la page 1 du sujet. Problématisation et datation des exemples, vérification des notices documentaires et du dessin analytique original.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Analyse de la séquence visuelle et du contre-exemple de réception de Think Small, avec manipulation guidée."
+    }
+  ]
+}
