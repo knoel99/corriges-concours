@@ -48,6 +48,16 @@ def verifier_page(contenu, lignes, date):
             raise ValueError(f"{slug} : état de publication différent.")
         if controle and controle not in ligne.xpath(".//time/@datetime"):
             raise ValueError(f"{slug} : date de vérification différente.")
+        date_fichiers = sujet.get("contrôle des fichiers UTC")
+        liens_fichiers = cellules[2].xpath('.//a[starts-with(@href, "/api/catalog/documents/")]/@href')
+        attendus = {
+            f"/api/catalog/documents/corriges/{slug}/{mode}.{extension}"
+            for mode in ("brut", "guide") for extension in ("pdf", "md")
+        } if date_fichiers else set()
+        if set(liens_fichiers) != attendus or len(liens_fichiers) != len(attendus):
+            raise ValueError(f"{slug} : les liens des fichiers diffèrent du relevé.")
+        if date_fichiers and date_fichiers not in cellules[2].xpath(".//time/@datetime"):
+            raise ValueError(f"{slug} : la date du contrôle des fichiers est absente.")
 
 
 def verifier_tableau(dossier):

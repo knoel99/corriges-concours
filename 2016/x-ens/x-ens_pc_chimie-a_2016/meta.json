@@ -1,0 +1,147 @@
+{
+  "slug": "x-ens_pc_chimie-a_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Chimie A",
+    "annee": 2016
+  },
+  "questions": 63,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_pc_sujet_chimiea.pdf",
+    "sujet_sha256": "080e885d9c38a19fb6cb665a47379d3d34750abf4924489dd77e177d2acb15a5",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/11/16_pc_rap_echia.pdf",
+    "rapport_sha256": "7a7f6dec0f341cfc61fd056f8c596485e4ede339707d9dbcefd1ce15cb1cfef2"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "10",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "50",
+      "53",
+      "54",
+      "55",
+      "56",
+      "63"
+    ],
+    "questions_partiellement_traitees": [
+      "11",
+      "18",
+      "27",
+      "46",
+      "48",
+      "52",
+      "61"
+    ],
+    "questions_non_traitees": [
+      "9",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "19",
+      "20",
+      "47",
+      "49",
+      "51",
+      "57",
+      "58",
+      "59",
+      "60",
+      "62"
+    ],
+    "precision": "Les deux éditions corrigent entièrement 39 des 63 questions et apportent des réponses partielles à sept autres. Q11 traite pression et température, Q18 le diagramme de phases, Q27 la sécurité des dendrites, Q46 l’interaction des orbitales, Q48 l’attribution IR et le rôle de la base, Q52 les deux bandes IR et Q61 la relation E/Z. Les 17 autres questions sont signalées hors couverture. Les figures des électrodes et des orbitales ont été relues dans le fascicule officiel, avec le rapport de chimie A 2016."
+  },
+  "figures": [
+    {
+      "question": "6",
+      "fichier": "figures/solubilite-des-sels.svg",
+      "legende": "Les points sont les deux températures du document 5. Les segments servent seulement à comparer leur sens de variation."
+    },
+    {
+      "question": "18",
+      "fichier": "figures/domaines-eutectiques.svg",
+      "legende": "Diagramme qualitatif. Seules les deux températures de fusion pure et les coordonnées de l’eutectique sont tirées des données."
+    },
+    {
+      "question": "24",
+      "fichier": "figures/maille-et-bilan-de-charge.svg",
+      "legende": "À gauche, une projection repère les familles de sites octaédriques. Le décompte tridimensionnel est un centre et douze milieux d’arêtes partagés par quatre mailles."
+    },
+    {
+      "question": "30",
+      "fichier": "figures/lecture-des-paliers-du-silicium.svg",
+      "legende": "Lectures de la figure 3. Un plateau correspond à la coexistence de deux phases et ses extrémités aux compositions des composés définis."
+    },
+    {
+      "question": "34",
+      "fichier": "figures/equilibrage-des-capacites.svg",
+      "legende": "La plus petite des deux charges disponibles limite la cellule. Les quatre masses sont les masses de matériaux actifs du tableau commercial."
+    },
+    {
+      "question": "36",
+      "fichier": "figures/occupation-du-fragment-methylene.svg",
+      "legende": "Deux électrons sur chacun des trois niveaux inférieurs du diagramme fourni. Les espacements verticaux sont schématiques."
+    },
+    {
+      "question": "41",
+      "fichier": "figures/huit-niveaux-occupes.svg",
+      "legende": "Chaque trait représente une orbitale doublement occupée. Les paires dégénérées de 1b sont visibles aux niveaux 4–5 et 7–8."
+    },
+    {
+      "question": "63",
+      "fichier": "figures/voisinages-en-rmn.svg",
+      "legende": "Les chiffres cerclés sont les entrées du tableau 4. Les liaisons vertes relient les couples de signaux présentant le même couplage."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour 39 réponses complètes et sept partielles. Relevé des diagrammes Li–Si et des figures orbitalaires, sommes des huit niveaux occupés, comparaison des capacités des électrodes et reconstruction du réseau de couplages RMN du bromoallène. Huit illustrations originales. Le volet industriel de préparation du métal et les étapes non couvertes sont explicitement délimités."
+    }
+  ]
+}

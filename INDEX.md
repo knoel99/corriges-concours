@@ -635,6 +635,10 @@
 | 2026 | ENS de Lyon | Second concours | Mathématiques | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_mathematiques_2026/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Physique | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_physique_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Physique | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_physique_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Espagnol (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_espagnol-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Italien (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_italien-oral_2025/guide.md) |
+| 2025 | ENS de Lyon | Série SES (B/L) | Russe (oral) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_serie-ses-b-l_russe-oral_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Physique | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_physique_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Allemand (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_allemand-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Série SES (B/L) | Anglais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_serie-ses-b-l_anglais-oral_2026/guide.md) |
@@ -644,6 +648,11 @@
 | 2026 | ENS de Lyon | Séries A/L | Anglais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_anglais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_anglais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Arabe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_arabe-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 1) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-1_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-1_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 2) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-2_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-2_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 3) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-3_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-3_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 4) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-4_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-4_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Cinéma (oral 5) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-5_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_cinema-oral-5_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Espagnol (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_espagnol-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Italien (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_italien-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
@@ -1019,6 +1028,7 @@
 | 2026 | X-ENS | MPI | Informatique C | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_informatique-c_2026/guide.md) |
 | 2026 | X-ENS | MPI | Physique MPI | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/brut.md) | [md](2026/x-ens/x-ens_mpi_physique-mpi_2026/guide.md) |
 | 2015 | X-ENS | PC | Chimie A | [md](2015/x-ens/x-ens_pc_chimie-a_2015/brut.md) | [md](2015/x-ens/x-ens_pc_chimie-a_2015/guide.md) |
+| 2016 | X-ENS | PC | Chimie A | [md](2016/x-ens/x-ens_pc_chimie-a_2016/brut.md) | [md](2016/x-ens/x-ens_pc_chimie-a_2016/guide.md) |
 | 2017 | X-ENS | PC | Chimie A | [md](2017/x-ens/x-ens_pc_chimie-a_2017/brut.md) | [md](2017/x-ens/x-ens_pc_chimie-a_2017/guide.md) |
 | 2020 | X-ENS | PC | Chimie A | [md](2020/x-ens/x-ens_pc_chimie-a_2020/brut.md) | [md](2020/x-ens/x-ens_pc_chimie-a_2020/guide.md) |
 | 2021 | X-ENS | PC | Chimie A | [md](2021/x-ens/x-ens_pc_chimie-a_2021/brut.md) | [md](2021/x-ens/x-ens_pc_chimie-a_2021/guide.md) |
@@ -1052,6 +1062,7 @@
 | 2003 | X | PSI-PT | Informatique facultative | [md](2003/x/x_psi-pt_informatique-facultative_2003/brut.md) | [md](2003/x/x_psi-pt_informatique-facultative_2003/guide.md) |
 | 2002 | X | PSI-PT | Informatique facultative | [md](2002/x/x_psi-pt_informatique-facultative_2002/brut.md) | [md](2002/x/x_psi-pt_informatique-facultative_2002/guide.md) |
 | 2004 | X | PSI-PT | Informatique | [md](2004/x/x_psi-pt_informatique_2004/brut.md) | [md](2004/x/x_psi-pt_informatique_2004/guide.md) |
+| 2010 | X-ENS | PSI | Modélisation | [md](2010/x-ens/x-ens_psi_modelisation_2010/brut.md) | [md](2010/x-ens/x-ens_psi_modelisation_2010/guide.md) |
 | 2012 | X-ENS | PSI | Modélisation | [md](2012/x-ens/x-ens_psi_modelisation_2012/brut.md) | [md](2012/x-ens/x-ens_psi_modelisation_2012/guide.md) |
 | 2013 | X-ENS | PSI | Modélisation | [md](2013/x-ens/x-ens_psi_modelisation_2013/brut.md) | [md](2013/x-ens/x-ens_psi_modelisation_2013/guide.md) |
 | 2014 | X-ENS | PSI | Modélisation | [md](2014/x-ens/x-ens_psi_modelisation_2014/brut.md) | [md](2014/x-ens/x-ens_psi_modelisation_2014/guide.md) |
@@ -1076,6 +1087,7 @@
 | 2026 | X-ENS | PSI | Modélisation | [md](2026/x-ens/x-ens_psi_modelisation_2026/brut.md) | [md](2026/x-ens/x-ens_psi_modelisation_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
+| 2009 | X-ENS | PSI | Sciences industrielles | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/brut.md) | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/guide.md) |
 | 2012 | X-ENS | PSI | Sciences industrielles | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/brut.md) | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/guide.md) |
 | 2013 | X-ENS | PSI | Sciences industrielles | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/brut.md) | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/guide.md) |
 | 2014 | X-ENS | PSI | Sciences industrielles (corrigé partiel) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/brut.md) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/guide.md) |

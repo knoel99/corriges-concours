@@ -1,0 +1,57 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2009",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2009,
+    "duree_heures": 5
+  },
+  "questions": 38,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://www.sujetsetcorriges.fr/dl/X/SciencesIndustrielles/PSI/sec-x-2009-si-PSI.pdf",
+    "sujet_sha256": "44b33d90c4b6b5b07cd50320b72e558cf6fb2877bba2ca3b5436cf78b3ebdbd3",
+    "identification": "CX9614, banque commune École polytechnique – ENS de Cachan, 24 pages, 23 figures et trois documents-réponses."
+  },
+  "figures": [
+    {
+      "fichier": "figures/grafcet-ensemble.svg",
+      "question": "4",
+      "legende": "Transcription du document-réponse 1. La convergence synchronise les six sorties. Les retours déjà imprimés portent Oa et la temporisation de 2 s de X₃."
+    },
+    {
+      "fichier": "figures/macro-bras.svg",
+      "question": "5",
+      "legende": "Transcription de DR2. La branche de droite permet d’achever la macro-étape si la position est déjà atteinte."
+    },
+    {
+      "fichier": "figures/bode-passif-dr3.svg",
+      "question": "11",
+      "legende": "Réponse à reporter sur DR3 pour ξ = 1. Le zéro de l’amortissement passif précède le pôle double."
+    },
+    {
+      "fichier": "figures/avance.svg",
+      "question": "34",
+      "legende": "Avance dimensionnée pour la plate-forme. Les trois verticales repèrent son zéro, son maximum de phase et son pôle."
+    },
+    {
+      "fichier": "figures/nichols-calcul.svg",
+      "question": "37",
+      "legende": "Comparaison au passage de phase −180°. Le cercle est calculé avec les trois coefficients des questions précédentes. Le carré provient de la lecture de l’original."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 38 questions depuis l’original CX9614. Reconstitution de DR1 à DR3, étude de rang de la Jacobienne, des deux transmissions et du placement du correcteur. Lecture directe du diagramme de Black-Nichols et comparaison avec le croisement de phase du modèle numérique, dont le verdict sur la marge diffère. Cinq figures originales."
+    }
+  ]
+}
