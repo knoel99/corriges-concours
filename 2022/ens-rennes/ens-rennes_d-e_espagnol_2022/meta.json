@@ -1,0 +1,49 @@
+{
+  "slug": "ens-rennes_d-e_espagnol_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Espagnol",
+    "annee": 2022,
+    "modalite": "écrit"
+  },
+  "intitule": "Espagnol",
+  "questions": 4,
+  "redaction": "Deux traductions intégrales et deux réponses en espagnol de 253 et 244 mots. Histoire du nucléaire civil, inflation française, analyse de l’entretien sur la liberté académique et argumentation personnelle sur les limites de l’expression.",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-espagnol-d-e-e-crit-2022_1657700618259-pdf",
+    "sujet_sha256": "137b2901ebbe0a37107a71fdfb6b6c2d2b45fefd9bc435227eeb5500da154755",
+    "page_officielle": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "III.1",
+      "fichier": "figures/idea-persona-foro.svg",
+      "legende": "En el argumento de Grayling, discrepar, elegir un foro y amenazar tienen consecuencias distintas."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux traductions intégrales et deux réponses en espagnol de 253 et 244 mots. Histoire du nucléaire civil, inflation française, analyse de l’entretien sur la liberté académique et argumentation personnelle sur les limites de l’expression."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I. Version",
+      "II. Thème",
+      "III.1. ¿Cómo está presentado el tema de la libertad de expresión en la universidad?",
+      "III.2. ¿En qué medida le parece a usted que la libertad de expresión debe tener límites?"
+    ]
+  }
+}
