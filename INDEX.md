@@ -170,6 +170,7 @@
 | 2026 | BEL | AL | Commentaire littéraire (Ulm) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-litteraire-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Commentaire philosophique (Ulm) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/brut.md) | [md](2026/bel/bel_al_commentaire-philosophique-ulm_2026/guide.md) |
 | 2024 | Agro-Véto | BCPST | Anglais | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/brut.md) | [md](2024/agro-veto/agro-veto_bcpst_anglais_2024/guide.md) |
+| 2023 | ENS-PSL | Sélection internationale Lettres | Études classiques | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2023/brut.md) | [md](2023/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques_2023/guide.md) |
 | 2024 | BEL | AL | Composition française | [md](2024/bel/bel_al_composition-francaise_2024/brut.md) | [md](2024/bel/bel_al_composition-francaise_2024/guide.md) |
 | 2025 | BEL | AL | Composition française | [md](2025/bel/bel_al_composition-francaise_2025/brut.md) | [md](2025/bel/bel_al_composition-francaise_2025/guide.md) |
 | 2026 | BEL | AL | Composition française | [md](2026/bel/bel_al_composition-francaise_2026/brut.md) | [md](2026/bel/bel_al_composition-francaise_2026/guide.md) |
@@ -242,6 +243,7 @@
 | 2017 | BEL | AL | Chinois (commentaire et traduction) | [md](2017/bel/bel_al_chinois-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_chinois-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Chinois (thème Lyon) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
+| 2018 | ENS-PSL | Sélection internationale Lettres | Études classiques — les philosophes rois | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-les-philosophes-rois_2018/brut.md) | [md](2018/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-les-philosophes-rois_2018/guide.md) |
 | 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
 | 2007 | ENS Paris-Saclay | Économie-gestion option 1 | Mathématiques et statistiques | [md](2007/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2007/brut.md) | [md](2007/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_mathematiques-et-statistiques_2007/guide.md) |
 | 2019 | ENS Rennes | D1 | Allemand | [md](2019/ens-rennes/ens-rennes_d1_allemand_2019/brut.md) | [md](2019/ens-rennes/ens-rennes_d1_allemand_2019/guide.md) |
@@ -713,6 +715,7 @@
 | 2017 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2017/guide.md) |
 | 2018 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2018/brut.md) | [md](2018/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2018/guide.md) |
 | 2019 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2019/brut.md) | [md](2019/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2019/guide.md) |
+| 2019 | ENS-PSL | Sélection internationale Lettres | Études classiques — l’héritage grec et latin | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-lheritage-grec-et-latin_2019/brut.md) | [md](2019/ens-psl/ens-psl_selection-internationale-lettres_etudes-classiques-lheritage-grec-et-latin_2019/guide.md) |
 | 2020 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2020/brut.md) | [md](2020/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2020/guide.md) |
 | 2021 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2021/brut.md) | [md](2021/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2021/guide.md) |
 | 2022 | ENS de Lyon | Second concours | Biologie-biochimie | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2022/brut.md) | [md](2022/ens-de-lyon/ens-de-lyon_second-concours_biologie-biochimie_2022/guide.md) |

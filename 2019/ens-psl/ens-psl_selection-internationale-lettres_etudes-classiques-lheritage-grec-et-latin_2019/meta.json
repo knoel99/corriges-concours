@@ -1,0 +1,41 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_etudes-classiques-lheritage-grec-et-latin_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Études classiques — l’héritage grec et latin",
+    "annee": 2019
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/lettres-classiques-archeologie-ecrit-sil2019.pdf",
+    "sujet_sha256": "b7bd3d77a88e0aa5bd5d5472fec37c23ec076f93a24ba2492ae55bf2776e604b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Exposé",
+      "legende": "Trois sens de la durée"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "al_langues_suite",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Études classiques — l’héritage grec et latin. Le sujet d’écrit part du « bien pour toujours » de Thucydide, I, 22. Il demande jusqu’où cette formule peut s’étendre aux legs grecs et latins dans les lettres, la pensée, la vie pratique et les mœurs."
+    }
+  ]
+}
