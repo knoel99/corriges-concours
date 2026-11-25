@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-du-bellay-et-le-retour-dulysse-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Du Bellay et le retour d’Ulysse (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Du Bellay et le retour d’Ulysse (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ORAUX-LITTERATURE-SIL2016.pdf",
+    "sha256_sujet": "e32d8751633d493da3ac055d29012f7ce3ffca47ad42a9c0f61075f38301460d",
+    "reperage": "Pages 3 du recueil. Commenter, dans sa langue originale, le sonnet « Heureux qui, comme Ulysse »."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "Comment le retour change-t-il de temps et d’échelle ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-olivier-rolin-et-tigre-en-papier-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Olivier Rolin et Tigre en papier (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Olivier Rolin et Tigre en papier (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/oral-SIL2018-litt.1.pdf",
+    "sha256_sujet": "b5d80fe91eddb50d2e6a0679b4e27850eb2d566eac184e59518a756718aa3158",
+    "reperage": "Commenter le passage du roman Tigre en papier."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "Quel passé le narrateur transmet-il ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    }
+  ]
+}

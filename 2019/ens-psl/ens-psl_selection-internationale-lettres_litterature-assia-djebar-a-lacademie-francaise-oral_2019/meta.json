@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-assia-djebar-a-lacademie-francaise-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Assia Djebar à l’Académie française (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Assia Djebar à l’Académie française (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/litterature-oral-sil2019-5.pdf",
+    "sha256_sujet": "4b9fad4929ae61436a64e8f00f03fd5fa9bbec7a2dae3a661cdcadc6d38fa170",
+    "reperage": "Commenter l’extrait du discours de réception d’Assia Djebar en 2006."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "À quel moment le lieu de parole se déplace-t-il ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    }
+  ]
+}

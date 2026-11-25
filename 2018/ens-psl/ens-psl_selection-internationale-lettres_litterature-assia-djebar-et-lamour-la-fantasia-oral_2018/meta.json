@@ -1,0 +1,38 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_litterature-assia-djebar-et-lamour-la-fantasia-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Littérature — Assia Djebar et L’Amour, la fantasia (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Littérature — Assia Djebar et L’Amour, la fantasia (oral)",
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/oral-SIL2018-litt.4.pdf",
+    "sha256_sujet": "e40289765a9490fbe062eaf0ce3b95eabcb87e16f0319594b3c0f80bdd83217c",
+    "reperage": "Commenter le passage du roman d’Assia Djebar."
+  },
+  "figures": [
+    {
+      "fichier": "figures/experiences.svg",
+      "question": "Commentaire",
+      "legende": "Qui franchit quel seuil ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "lettres_dissertations_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet original. Commentaire intégral, analyse de la progression et de la forme, préparation guidée de l’entretien, réponses argumentées et schéma de lecture."
+    }
+  ]
+}
