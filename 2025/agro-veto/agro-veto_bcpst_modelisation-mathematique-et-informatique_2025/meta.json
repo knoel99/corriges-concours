@@ -1,0 +1,81 @@
+{
+  "slug": "agro-veto_bcpst_modelisation-mathematique-et-informatique_2025",
+  "epreuve": {
+    "concours": "Agro-Véto",
+    "filiere": "BCPST",
+    "matiere": "Modélisation mathématique et informatique",
+    "annee": 2025,
+    "duree_heures": 3
+  },
+  "questions": 33,
+  "couverture": {
+    "statut": "partiel",
+    "perimetre": "Les questions 1, 3, 6, 8, 15, 17.1, 19 et 22 à 24 sont traitées, ainsi que les calculs de cours des questions 18, 25 et 26. Les questions 2, 4, 5, 7, 9 à 14, 16, 17.2, 20, 21 et 27 à 33 et les interprétations biologiques de 18, 25 et 26 sont hors du périmètre de cette édition."
+  },
+  "questions_traitees": [
+    "1",
+    "3.1",
+    "3.2",
+    "3.3",
+    "6.1",
+    "6.2",
+    "6.3",
+    "8",
+    "15.1",
+    "15.2",
+    "15.3",
+    "17.1",
+    "18",
+    "19",
+    "22",
+    "23.1",
+    "23.2",
+    "23.3",
+    "24",
+    "25",
+    "26"
+  ],
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "rapport": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/mmi_relu_le.pdf",
+    "rapport_sha256": "194b2c7e2b6f54d6d579f709443c6c47148ab07876585c3578926a4b6a955ad7",
+    "page_organisateur": "https://www.concours-agro-veto.fr/archives-bilans-statistiques/archives-sujets-rapports/sujets-rapports-concours-cpge-bcpst/epreuves-ecrites-concours-cpge-bcpst",
+    "sujet": "https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/bcpst_0225_sp.pdf",
+    "sujet_sha256": "aaa39e51fb2db9cc955e909acb491e8172b5d6a19db9c6074ff417e57d4a3753"
+  },
+  "figures": [
+    {
+      "fichier": "figures/asymptote-et-tangentes.svg",
+      "question": "3.3",
+      "legende": "Deux courbes exponentielles de limite 1. Les pointillés indiquent leurs tangentes à l’origine."
+    },
+    {
+      "fichier": "figures/intervalles-cumules.svg",
+      "question": "15.2",
+      "legende": "Les longueurs 0,20, 0,55 et 0,25 sont les probabilités. Le point 0,75 appartient au troisième intervalle."
+    },
+    {
+      "fichier": "figures/grille-des-sauts.svg",
+      "question": "22",
+      "legende": "Les changements de A en 1 et 4 et de B en 2 et 3 imposent quatre dates intérieures sur la grille de la moyenne."
+    },
+    {
+      "fichier": "figures/dispersion-a-centre-fixe.svg",
+      "question": "26",
+      "legende": "Les deux séries symétriques ont la même moyenne 5. Dans celle du bas les écarts au centre sont cinq fois plus grands."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction partielle, vérifiée sur le sujet et le rapport originaux. Les questions 1, 3, 6, 8, 15, 17.1, 19 et 22 à 24 sont traitées, ainsi que les calculs de cours des questions 18, 25 et 26. Les questions 2, 4, 5, 7, 9 à 14, 16, 17.2, 20, 21 et 27 à 33 et les interprétations biologiques de 18, 25 et 26 sont hors du périmètre de cette édition. Quatre figures originales. Contrôle des bornes et de la fusion de grilles de signaux."
+    }
+  ]
+}
