@@ -8,6 +8,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## L’ordonnance-testament de Philippe Auguste selon Rigord
 
 À la Saint-Jean de 1190, Philippe Auguste prend congé des moines de Saint-Denis. Il s’engage dans la troisième croisade après la perte de Jérusalem en 1187. Quitter le royaume fait courir un double risque, celui de ne pas revenir et celui de perdre, de son vivant, la maîtrise de ses affaires. Le dossier associe deux manières de répondre à cette inquiétude. Rigord, moine de Saint-Denis et contemporain des événements, fait le récit d’un départ pieux. Puis il insère, dans ses *Gesta Philippi Augusti*, des dispositions royales arrêtées à Paris avant le départ. Le lecteur dispose d’extraits traduits, avec des coupures, d’un acte transmis par un chroniqueur. Comment un texte de circonstance donne-t-il à l’autorité du roi absent des lieux, des personnes et un calendrier où elle puisse continuer à s’exercer ?
@@ -25,6 +27,10 @@ Aux lignes 20-28, l’administration commence par des hommes et des rythmes. Dan
 L’assise est une audience que le bailli doit tenir chaque mois. Le souci que les plaignants obtiennent « sans délai » leur justice va de pair avec l’obtention par le roi de ses propres droits. L’administration de la justice est aussi la préservation d’une autorité seigneuriale et de ses ressources. Tous les quatre mois, la reine mère Adèle de Champagne et Guillaume de Reims entendent à Paris les plaintes et le compte rendu des baillis. Cette convergence fait de Paris un lieu du gouvernement, même en l’absence du roi. Elle s’appuie sur une parenté déjà investie de confiance et sur des agents chargés d’un service régulier.
 
 Cette délégation a des limites écrites (l. 35-46). Le renvoi d’un bailli par les deux responsables, ou d’un prévôt par un bailli, reste conditionné par des cas graves énumérés. L’exigence de bons garants permet par ailleurs à un justiciable de poursuivre son droit devant la cour sans saisie de son corps ou de ses biens, sous réserve de ces mêmes exceptions. Taille et tolte sont des prélèvements dont la levée est ici interdite pendant le service de Dieu. Ces restrictions protègent les sujets contre certains abus possibles du fait de l’absence et protègent aussi les agents contre une révocation arbitraire. Philippe se réserve de sanctionner une fois informé. Les deux responsables doivent lui faire parvenir trois fois l’an des nouvelles du royaume. Le temps de la décision royale demeure donc ouvert au-delà de la mer.
+
+La fréquence des audiences révèle la distance entre les acteurs. Une plainte peut être entendue chaque mois par le bailli. Les trois réunions parisiennes de l’année ouvrent un autre recours, auprès de la reine mère et de l’archevêque de Reims. Le roi distribue ainsi des occasions de faire entendre un grief jusque pendant son absence.
+
+![Figure 1 — Les rythmes du gouvernement en l’absence du roi](figures/gouverner-en-absence.svg)
 
 ### Une autorité qui se compte, s’écrit et se transporte
 

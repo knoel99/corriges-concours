@@ -61,8 +61,21 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification des deux recensements américains, des données préfectorales japonaises et du programme Stadtumbau Ost. Recalcul des taux, distinction des deux territoires voisins et des territoires emboîtés. Conception du graphique comparatif."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 1,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Comparaison des recensements, territoires voisins et emboîtés, limites de l’agrégation des taux."
     }
   ],
   "gabarit": "dissertation",
-  "date_revision": "2026-11-24"
+  "date_revision": "2026-11-25"
 }
