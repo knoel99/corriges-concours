@@ -1,0 +1,119 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2005",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2005
+  },
+  "questions": 46,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2005/sujet-ecrit-2005-second-conours_chimie.pdf",
+    "sujet_sha256": "e595e8224d6596ba41ee766cc6bfbd2d4b0577806949a78bdc0bf5705c7f2541",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2005/rapport-2005-second-concours_ecrit_chimie.pdf",
+    "rapport_sha256": "926d32d5a96e05a06325dd600cfafd3121dde659cf372c2489f53cf5a5e4e01f"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.5",
+      "A.6",
+      "A.7",
+      "A.8",
+      "A.9",
+      "A.10",
+      "A.11",
+      "A.12",
+      "A.13",
+      "A.14",
+      "A.16",
+      "A.17",
+      "A.18",
+      "B.1",
+      "B.2",
+      "B.3.a",
+      "B.3.b",
+      "B.4",
+      "B.5",
+      "B.6",
+      "B.7",
+      "B.8.a",
+      "B.8.b",
+      "B.8.c",
+      "B.9",
+      "B.10",
+      "B.11",
+      "B.12",
+      "B.13.a",
+      "B.13.b",
+      "B.13.c",
+      "B.14.a",
+      "B.14.b",
+      "B.15.a",
+      "B.15.b",
+      "B.15.c",
+      "B.16",
+      "B.17",
+      "B.18"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "A.15",
+      "A.19",
+      "A.20"
+    ],
+    "precision": "Ces éditions traitent 43 des 46 questions ou sous-questions terminales. Toute la partie B est couverte, notamment les deux approches de l’énergie de réseau et les deux interprétations géométriques du rayon de site octaédrique. En A, les questions A.15, A.19 et A.20 sur la réalisation et le dimensionnement de la voie de synthèse restent hors couverture. Les configurations et le spectre IR ont été lus sur le scan. Les énergies de conformères ajoutées pour A.3 sont des estimations de modèle, explicitement distinguées des données de l’épreuve."
+  },
+  "figures": [
+    {
+      "question": "A.2",
+      "fichier": "figures/deux-unites-isopreniques.svg",
+      "legende": "Chaque point du squelette représente un carbone. Les deux liaisons en tirets séparent les fragments C₅ dans ce découpage."
+    },
+    {
+      "question": "A.3",
+      "fichier": "figures/quatre-conformations-du-menthol.svg",
+      "legende": "Projections de quatre géométries du (1R,2S,5R)-menthol optimisées par MMFF94 en phase isolée. Énergies relatives au minimum des géométries explorées. Les liaisons les plus proches sont épaissies ; iPr désigne l’isopropyle."
+    },
+    {
+      "question": "A.4",
+      "fichier": "figures/principe-du-polarimetre.svg",
+      "legende": "Le réglage de l’analyseur est comparé à celui du blanc dans les mêmes conditions."
+    },
+    {
+      "question": "A.6",
+      "fichier": "figures/enantiomeres-du-menthol.svg",
+      "legende": "Le même squelette est utilisé pour les deux molécules. Le sens relatif des trois centres est inversé."
+    },
+    {
+      "question": "B.9",
+      "fichier": "figures/coupes-de-la-halite.svg",
+      "legende": "Deux coupes distinctes reconstruisent la maille conventionnelle. Les anions seuls constituent le premier réseau CFC ; le second est celui des cations."
+    },
+    {
+      "question": "B.13.b",
+      "fichier": "figures/cycle-de-born-haber.svg",
+      "legende": "Niveaux d’enthalpie cumulés avec les données imprimées. Le dernier saut conduit des ions gazeux au cristal de NaCl."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour 43 sous-questions terminales. Vérification du scan de dix pages, du dessin du menthol, du spectre, des courbes d’aluminium et des données de NaCl, ainsi que du rapport commun Paris–Lyon. Six schémas originaux, dont quatre conformations modélisées et les énantiomères. Trois questions de réalisation ou dimensionnement sont hors couverture."
+    }
+  ]
+}
