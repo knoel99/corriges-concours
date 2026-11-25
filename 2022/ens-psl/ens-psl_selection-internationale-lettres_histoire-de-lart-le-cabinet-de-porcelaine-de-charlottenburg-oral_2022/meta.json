@@ -1,0 +1,65 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-de-lart-le-cabinet-de-porcelaine-de-charlottenburg-oral_2022",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire de l’art — le cabinet de porcelaine de Charlottenburg (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Histoire de l’art — le cabinet de porcelaine de Charlottenburg (oral)",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets-arts-sil2022._.pdf",
+    "sujet_sha256": "009d57bc8a9ee87bf0899c74f859fb2dcbe1aad98b16bf86958c4d8f49b15eb2",
+    "pages": "1–2",
+    "references": [
+      "https://www.spsg.de/presse-foto-film/pressematerial-schloesser-gaerten-stiftung/berlin/presse-material-schloss-charlottenburg/",
+      "https://www.spsg.de/fileadmin/user_upload/pdf/sans-souci/SPSG_sans-souci_2017_04_download.pdf",
+      "https://www.meissen.com/en/geschichte",
+      "https://www.metmuseum.org/art/collection/search/205883"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/paroi.svg",
+      "question": "Commentaire",
+      "legende": "Charlottenburg — lire une paroi et deux détails"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la proposition, du guide et du schéma analytique spécifique au sujet."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Examen de la vue d’ensemble et de chacun des deux détails de la planche. Confrontation des datations du cabinet et de l’appartement et du cas matériel de la Guanyin. Relecture des deux éditions et du schéma."
+    }
+  ]
+}
