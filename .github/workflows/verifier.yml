@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update -q > /dev/null && sudo apt-get install -y -q pandoc > /dev/null && pip install -q pytest
+      - run: sudo apt-get update -q > /dev/null && sudo apt-get install -y -q pandoc > /dev/null && pip install -q pytest lxml
       - run: python3 -m pytest -q tests
 
   # Compile le PDF des épreuves modifiées par la PR (ou un échantillon si seul
