@@ -1,0 +1,79 @@
+{
+  "slug": "x_mp_informatique-option_2003",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Informatique (option)",
+    "annee": 2003,
+    "modalite": "écrit"
+  },
+  "intitule": "Routage dans un réseau arborescent",
+  "questions": 18,
+  "redaction": "Dix-sept questions du cahier et rapport de la correctrice. Calcul du plus proche ancêtre commun par parents, étiquettes infixes et décomposition en chemins lourds. Vérification des tableaux, de la lecture des étiquettes et des coûts.",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2003.pdf",
+    "sha256_sujet": "ccb115ce17b117315bb5a4246e56f0d5ea7f478f2c81748716302bdfc5742664",
+    "documents": [
+      {
+        "role": "sujet",
+        "url": "https://www.wikiprepa.fr/concours/data/x_option-info_mp_2003.pdf",
+        "sha256": "ccb115ce17b117315bb5a4246e56f0d5ea7f478f2c81748716302bdfc5742664"
+      },
+      {
+        "role": "rapport",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/rapports.pdf/2003/MP_INFO_X_1_2003.rapport.pdf",
+        "sha256": "838a5856b2239746c1bf86050c4a4f8c8e784b282fd78822d31065f59520e03f"
+      },
+      {
+        "role": "autre exemplaire",
+        "url": "https://www.doc-solus.fr/prepa/sci/adc/pdf/enonces.pdf/2003/MP_INFO_X_1_2003.enonce.pdf",
+        "sha256": "da6a2902bb4d220d090ec674985d94e8ad68d00ce5b5d60600bc007363ff2c30"
+      }
+    ]
+  },
+  "figures": [
+    {
+      "question": "14",
+      "fichier": "figures/chaines-lourdes.svg",
+      "legende": "L’arbre gauche de l’exemple. Les traits épais relient un père à son fils lourd.",
+      "numero": 1
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "arabe_mp_pc_2011_2014",
+      "agent": "arabe_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dix-sept questions du cahier et rapport de la correctrice. Calcul du plus proche ancêtre commun par parents, étiquettes infixes et décomposition en chemins lourds. Vérification des tableaux, de la lecture des étiquettes et des coûts."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17.a",
+      "17.b"
+    ]
+  }
+}
