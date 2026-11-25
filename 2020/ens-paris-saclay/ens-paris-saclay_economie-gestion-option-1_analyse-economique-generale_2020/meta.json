@@ -1,0 +1,97 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-economique-generale_2020",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse économique générale",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Demande discrète, élasticité de substitution et valorisation du risque",
+  "gabarit": "probleme",
+  "questions": 34,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2020/2020_Sujet_1A_D2-1_Analyse-Eco.pdf",
+    "sujet_sha256": "ed288811ef0ccd00c313fb60cb6879df3b9ffe27d0ff5e0a08799847d1fca30a",
+    "index": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=289&field_year_target_id%5B%5D=541",
+    "precision": "Aucun rapport distinct de cet écrit n’est identifié sur la page d’annales de la session."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "1.1.4",
+      "1.1.5",
+      "1.1.6",
+      "1.1.7",
+      "1.1.8",
+      "1.1.9",
+      "1.1.10.1",
+      "1.1.10.2",
+      "1.1.10.3",
+      "1.1.10.4",
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.2.4",
+      "1.2.5",
+      "1.2.6",
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "2.2.6",
+      "2.2.7.1",
+      "2.2.7.2",
+      "2.2.7.3",
+      "2.3.1",
+      "2.3.2"
+    ]
+  },
+  "redaction": "Résolution des 34 questions terminales sur les demandes continues et discrètes, la dualité CES, l’espérance, la variance et l’utilité espérée. La différence entre information commune et croyances divergentes est isolée.",
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/entiers.svg",
+      "question": "1.1.10",
+      "legende": "Pour chaque quantité entière de y, on compare le meilleur x finançable."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/dualite.svg",
+      "question": "1.2",
+      "legende": "L’homogénéité de degré un permet de passer directement du coût unitaire à la dépense et à l’utilité indirecte."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/aleas.svg",
+      "question": "2.1–2.3",
+      "legende": "Le paiement contractuel est certain. Le gain du client et la perte associée du vendeur sont aléatoires."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "saclay_economie_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Résolution des 34 questions terminales sur les demandes continues et discrètes, la dualité CES, l’espérance, la variance et l’utilité espérée. La différence entre information commune et croyances divergentes est isolée.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
