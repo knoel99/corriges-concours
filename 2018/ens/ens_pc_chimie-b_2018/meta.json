@@ -1,0 +1,177 @@
+{
+  "slug": "ens_pc_chimie-b_2018",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2018
+  },
+  "questions": 83,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/05/2018_PC_sujet_ChiB.pdf",
+    "sujet_sha256": "e9a7b0282648345a219e2b056875194837af280c62bd59a4a619b7ab848473da",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_pc_rap_eChiB.pdf",
+    "rapport_sha256": "bfeaf1dbb11baa43c6ac1d4f89e7c8df4b414475409cc86da53ba2885f2089ca"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "21",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83"
+    ],
+    "questions_partiellement_traitees": [
+      "22",
+      "23"
+    ],
+    "questions_non_traitees": [
+      "5",
+      "19",
+      "20"
+    ],
+    "precision": "Sur les 83 questions de l’épreuve, 78 sont entièrement corrigées. Les deux éditions comprennent l’intégralité des parties sur l’électrochimie de la centrine humaine et sur la cellule photovoltaïque à colorant (Q39 à Q83). Q22 ne traite que le bilan théorique en hydrures et Q23 la demi-équation organique. Le montage de préparation de Q5 et les étapes de Q19 et Q20 relatives aux intermédiaires de la cyclisation restent hors couverture. Les résultats, spectres et figures ont été confrontés aux vingt pages de l’original et au rapport du jury de chimie Ulm 2018."
+  },
+  "figures": [
+    {
+      "question": "2",
+      "fichier": "figures/bilan-du-cycle-a-cinq-carbones.svg",
+      "legende": "Carte des atomes du cycle. Les liens a–d et c–e sont créés pendant les deux additions. Les cinq lettres sont les repères locaux de la solution, les aryles étant omis."
+    },
+    {
+      "question": "10",
+      "fichier": "figures/trois-positions-du-brome.svg",
+      "legende": "Les quatre autres positions portent chacune un para-bromophényle omis pour alléger le dessin. Tol repère le para-tolyle en C1. Br est porté par le carbone saturé."
+    },
+    {
+      "question": "39",
+      "fichier": "figures/montage-potentiostatique.svg",
+      "legende": "Trois connexions séparées. La référence permet de mesurer le potentiel sans supporter le courant d’électrolyse."
+    },
+    {
+      "question": "41",
+      "fichier": "figures/vagues-oxydation-rapide-et-lente.svg",
+      "legende": "La courbe rapide suit la loi de Nernst à la surface. Le décalage de la courbe lente est illustratif. Les plateaux sont identiques à transport de matière égal."
+    },
+    {
+      "question": "43",
+      "fichier": "figures/electrode-standard-hydrogene.svg",
+      "legende": "État de référence thermodynamique. Le platine permet le couplage entre le conducteur électronique et le couple H⁺/H₂."
+    },
+    {
+      "question": "45",
+      "fichier": "figures/diffusion-du-mediateur-seul.svg",
+      "legende": "Profil à 0,80 V dans l’approximation du plateau. Les deux espèces totalisent la concentration analytique du médiateur."
+    },
+    {
+      "question": "57",
+      "fichier": "figures/front-de-reaction-et-diffusion.svg",
+      "legende": "Profils du médiateur et de la centrine aux deux coefficients de diffusion. La ligne verticale en pointillé marque le front où les flux entrants des deux réactifs sont égaux."
+    },
+    {
+      "question": "69",
+      "fichier": "figures/intersection-et-barriere-de-marcus.svg",
+      "legende": "Exemple pour ΔrG°/λ = −0,47 et GA(0) = 0. Les flèches indiquent des différences d’énergie. La barrière est mesurée à partir du minimum A."
+    },
+    {
+      "question": "72",
+      "fichier": "figures/regions-de-marcus-et-hammond.svg",
+      "legende": "Le sommet de la parabole correspond au transfert sans barrière. Sur la partie normale, l’intersection se rapproche des réactifs quand la réaction devient plus favorable."
+    },
+    {
+      "question": "81",
+      "fichier": "figures/courants-et-puissances-des-mediateurs.svg",
+      "legende": "Valeurs pour le flux absorbé et la surface d’un centimètre carré donnés. R2 maximise le courant, R3 maximise le produit de la tension par le courant."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour 78 questions entières et deux réponses partielles. Structures du rotor moléculaire, flux de la centrine et du médiateur, modèle de Marcus et comparaison des puissances photovoltaïques. Dix graphiques originaux. Calculs et interprétations vérifiés contre le sujet et le rapport. Les questions 5, 19 et 20 sont hors couverture."
+    }
+  ]
+}

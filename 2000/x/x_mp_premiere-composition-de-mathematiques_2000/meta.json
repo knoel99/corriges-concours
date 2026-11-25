@@ -1,0 +1,36 @@
+{
+  "slug": "x_mp_premiere-composition-de-mathematiques_2000",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP",
+    "matiere": "Première composition de mathématiques",
+    "annee": 2000
+  },
+  "questions": 19,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.wikiprepa.fr/concours/data/x_maths-1_mp_2000.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "40cf1b2c1c19b1b292c1cb825b2936a2f1890ee701adebdbb8bd8fd39f5616c2"
+  },
+  "figures": [
+    {
+      "fichier": "figures/coefficients-du-produit.svg",
+      "question": "7.a",
+      "legende": "Les douze premiers coefficients normalisés suivent la récurrence quadratique et restent entre la borne géométrique et 1. L’axe vertical est logarithmique."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète de l’original de quatre pages. Contrôle des constantes du majorant convolutif, des rayons de convergence, des prolongements lisses aux exposants entiers et des solutions limites. Graphique calculé des coefficients normalisés.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

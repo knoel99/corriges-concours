@@ -1,0 +1,63 @@
+{
+  "slug": "ens-paris-saclay_design_philosophie-de-lart_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Philosophie de l’art",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "Philosophie de l’art",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_Philosophie%20de%20l%27Art_Design1A.pdf",
+    "sujet_sha256": "aaf46c4502215650303b688b0d31316f3a22ab7604578f9cf22e1b57870c7d33",
+    "references": [
+      "https://journals.sagepub.com/doi/10.1177/13675494251336604",
+      "https://plato.stanford.edu/archives/spr2022/entries/heidegger/",
+      "https://www.fairphone.com/resources/pdf/Fairphone-factsheet_EN.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/reprise.svg",
+      "question": "Dissertation",
+      "legende": "Quand une partie a cédé, qu’est-ce qui continue ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation de quatre heures, de la méthode guidée et de la figure des deux éditions."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification de la situation napolitaine, de l’écart entre révélation, réparation et changement de fin, et des possibilités effectivement offertes par le projet du Fairphone 2. Contrôle des deux éditions et du schéma."
+    }
+  ]
+}

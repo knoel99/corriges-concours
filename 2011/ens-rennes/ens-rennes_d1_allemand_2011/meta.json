@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d1_allemand_2011",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Allemand",
+    "annee": 2011,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a_11d1_lve_1304088323768.pdf#page=2",
+    "sha256_sujet": "d4f1c0d10fef77be4c496d250b7039a5414079b3ea0b9b06e14d742cb383dfb6",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Mariam Lau · Die Zeit · 4 novembre 2010",
+    "page": 2,
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/re1a-11d1-allemand_1421751236158-pdf#page=1",
+    "sha256_rapport_jury": "60ef4cf66b25afee3370f2e720fbfd9f5549d93b41deb1940856a0a3cd59b049"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en allemand"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en allemand."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Prendre position sur la participation d’un adolescent de quatorze ans à une manifestation politique · 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix.svg",
+      "legende": "Trois points de vue sur une manifestation"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en allemand. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

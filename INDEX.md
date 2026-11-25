@@ -367,6 +367,10 @@
 | 2025 | BTSA | Toutes options | Traitement de données | [md](2025/btsa/btsa_toutes-options_traitement-de-donnees_2025/brut.md) | [md](2025/btsa/btsa_toutes-options_traitement-de-donnees_2025/guide.md) |
 | 2025 | CAP | Groupement 1 | Mathématiques, physique-chimie | [md](2025/cap/cap_groupement-1_mathematiques-physique-chimie_2025/brut.md) | [md](2025/cap/cap_groupement-1_mathematiques-physique-chimie_2025/guide.md) |
 | 2012 | CAPa | Toutes options | Mathématiques appliquées | [md](2012/capa/capa_toutes-options_mathematiques-appliquees_2012/brut.md) | [md](2012/capa/capa_toutes-options_mathematiques-appliquees_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Allemand | [md](2012/ens-rennes/ens-rennes_d1_allemand_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_allemand_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Anglais | [md](2012/ens-rennes/ens-rennes_d1_anglais_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_anglais_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Espagnol | [md](2012/ens-rennes/ens-rennes_d1_espagnol_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_espagnol_2012/guide.md) |
+| 2012 | ENS Rennes | D1 | Italien | [md](2012/ens-rennes/ens-rennes_d1_italien_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_italien_2012/guide.md) |
 | 2026 | CAPEPS | Externe | Première épreuve écrite (bac+3) | [md](2026/capeps/capeps_externe_premiere-epreuve-ecrite-bac-3_2026/brut.md) | [md](2026/capeps/capeps_externe_premiere-epreuve-ecrite-bac-3_2026/guide.md) |
 | 2026 | CAPES | Maths | Épreuve d'admissibilité 1 (bac+3) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-1-bac-3_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-1-bac-3_2026/guide.md) |
 | 2026 | CAPES | Maths | Épreuve d'admissibilité 2 (bac+3) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-2-bac-3_2026/brut.md) | [md](2026/capes/capes_maths_epreuve-d-admissibilite-2-bac-3_2026/guide.md) |
@@ -383,6 +387,10 @@
 | 2026 | CAPET | Économie et gestion | Première épreuve écrite (bac+3) | [md](2026/capet/capet_economie-et-gestion_premiere-epreuve-ecrite-bac-3_2026/brut.md) | [md](2026/capet/capet_economie-et-gestion_premiere-epreuve-ecrite-bac-3_2026/guide.md) |
 | 2025 | CAPLP | Économie et gestion - Commerce et vente | Épreuve écrite disciplinaire | [md](2025/caplp/caplp_economie-et-gestion---commerce-et-vente_epreuve-ecrite-disciplinaire_2025/brut.md) | [md](2025/caplp/caplp_economie-et-gestion---commerce-et-vente_epreuve-ecrite-disciplinaire_2025/guide.md) |
 | 2011 | Castor informatique | Défi individuel | Fenêtre d’impression | [md](2011/castor-informatique/castor-informatique_defi-individuel_fenetre-dimpression_2011/brut.md) | [md](2011/castor-informatique/castor-informatique_defi-individuel_fenetre-dimpression_2011/guide.md) |
+| 2011 | ENS Rennes | D1 | Allemand | [md](2011/ens-rennes/ens-rennes_d1_allemand_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_allemand_2011/guide.md) |
+| 2011 | ENS Rennes | D1 | Anglais | [md](2011/ens-rennes/ens-rennes_d1_anglais_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_anglais_2011/guide.md) |
+| 2011 | ENS Rennes | D1 | Espagnol | [md](2011/ens-rennes/ens-rennes_d1_espagnol_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_espagnol_2011/guide.md) |
+| 2011 | ENS Rennes | D1 | Italien | [md](2011/ens-rennes/ens-rennes_d1_italien_2011/brut.md) | [md](2011/ens-rennes/ens-rennes_d1_italien_2011/guide.md) |
 | 2012 | Castor informatique | Défi individuel | Découpe | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_decoupe_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | La chute | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_la-chute_2012/guide.md) |
 | 2012 | Castor informatique | Défi individuel | Ranger ses photos | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/brut.md) | [md](2012/castor-informatique/castor-informatique_defi-individuel_ranger-ses-photos_2012/guide.md) |
@@ -617,10 +625,16 @@
 | 2008 | ENS de Lyon | Second concours | Géosciences | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/brut.md) | [md](2008/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2008/guide.md) |
 | 2009 | ENS de Lyon | Second concours | Géosciences | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/brut.md) | [md](2009/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2009/guide.md) |
 | 2010 | ENS de Lyon | Second concours | Géosciences | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/brut.md) | [md](2010/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Allemand | [md](2010/ens-rennes/ens-rennes_d1_allemand_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_allemand_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Anglais | [md](2010/ens-rennes/ens-rennes_d1_anglais_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_anglais_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Espagnol | [md](2010/ens-rennes/ens-rennes_d1_espagnol_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_espagnol_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Italien | [md](2010/ens-rennes/ens-rennes_d1_italien_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_italien_2010/guide.md) |
+| 2010 | ENS Rennes | D1 | Russe | [md](2010/ens-rennes/ens-rennes_d1_russe_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_russe_2010/guide.md) |
 | 2011 | ENS de Lyon | Second concours | Géosciences | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2011/guide.md) |
 | 2024 | ENS de Lyon | Second concours | Géosciences | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/brut.md) | [md](2024/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2024/guide.md) |
 | 2025 | ENS de Lyon | Second concours | Géosciences | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/brut.md) | [md](2025/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2025/guide.md) |
 | 2026 | ENS de Lyon | Second concours | Géosciences | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_second-concours_geosciences_2026/guide.md) |
+| 2011 | ENS de Lyon | Second concours | Informatique | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/brut.md) | [md](2011/ens-de-lyon/ens-de-lyon_second-concours_informatique_2011/guide.md) |
 | 2012 | ENS de Lyon | Second concours | Informatique | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/brut.md) | [md](2012/ens-de-lyon/ens-de-lyon_second-concours_informatique_2012/guide.md) |
 | 2013 | ENS de Lyon | Second concours | Informatique | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/brut.md) | [md](2013/ens-de-lyon/ens-de-lyon_second-concours_informatique_2013/guide.md) |
 | 2014 | ENS de Lyon | Second concours | Informatique | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/brut.md) | [md](2014/ens-de-lyon/ens-de-lyon_second-concours_informatique_2014/guide.md) |
@@ -664,8 +678,12 @@
 | 2026 | ENS de Lyon | Séries A/L | Portugais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
+| 2024 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2024/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2024/guide.md) |
+| 2025 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2025/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2025/brut.md) | [md](2025/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2025/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Design graphique | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/guide.md) |
+| 2024 | ENS Paris-Saclay | Design | Philosophie de l’art | [md](2024/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2024/brut.md) | [md](2024/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2024/guide.md) |
+| 2025 | ENS Paris-Saclay | Design | Philosophie de l’art | [md](2025/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2025/brut.md) | [md](2025/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2025/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Philosophie de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_philosophie-de-lart_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Techno-design | [md](2026/ens-paris-saclay/ens-paris-saclay_design_techno-design_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_techno-design_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Économie-gestion option 1 | Analyse macroéconomique | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-macroeconomique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_economie-gestion-option-1_analyse-macroeconomique_2026/guide.md) |
@@ -725,6 +743,7 @@
 | 2015 | ENS | PC | Chimie B | [md](2015/ens/ens_pc_chimie-b_2015/brut.md) | [md](2015/ens/ens_pc_chimie-b_2015/guide.md) |
 | 2016 | ENS | PC | Chimie B | [md](2016/ens/ens_pc_chimie-b_2016/brut.md) | [md](2016/ens/ens_pc_chimie-b_2016/guide.md) |
 | 2017 | ENS | PC | Chimie B | [md](2017/ens/ens_pc_chimie-b_2017/brut.md) | [md](2017/ens/ens_pc_chimie-b_2017/guide.md) |
+| 2018 | ENS | PC | Chimie B | [md](2018/ens/ens_pc_chimie-b_2018/brut.md) | [md](2018/ens/ens_pc_chimie-b_2018/guide.md) |
 | 2019 | ENS | PC | Chimie B | [md](2019/ens/ens_pc_chimie-b_2019/brut.md) | [md](2019/ens/ens_pc_chimie-b_2019/guide.md) |
 | 2020 | ENS | PC | Chimie B | [md](2020/ens/ens_pc_chimie-b_2020/brut.md) | [md](2020/ens/ens_pc_chimie-b_2020/guide.md) |
 | 2021 | ENS | PC | Chimie B | [md](2021/ens/ens_pc_chimie-b_2021/brut.md) | [md](2021/ens/ens_pc_chimie-b_2021/guide.md) |
@@ -997,6 +1016,7 @@
 | 2024 | X-ENS | MP-PC-PSI | Informatique B | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/brut.md) | [md](2024/x-ens/x-ens_mp-pc-psi_informatique-b_2024/guide.md) |
 | 2025 | X-ENS | MP-PC-PSI | Informatique B | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/brut.md) | [md](2025/x-ens/x-ens_mp-pc-psi_informatique-b_2025/guide.md) |
 | 2026 | X-ENS | MP-PC-PSI | Informatique B | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/brut.md) | [md](2026/x-ens/x-ens_mp-pc-psi_informatique-b_2026/guide.md) |
+| 2011 | X-ENS | MP | Informatique A | [md](2011/x-ens/x-ens_mp_informatique-a_2011/brut.md) | [md](2011/x-ens/x-ens_mp_informatique-a_2011/guide.md) |
 | 2012 | X-ENS | MP | Informatique A | [md](2012/x-ens/x-ens_mp_informatique-a_2012/brut.md) | [md](2012/x-ens/x-ens_mp_informatique-a_2012/guide.md) |
 | 2013 | X-ENS | MP | Informatique A | [md](2013/x-ens/x-ens_mp_informatique-a_2013/brut.md) | [md](2013/x-ens/x-ens_mp_informatique-a_2013/guide.md) |
 | 2014 | X-ENS | MP | Informatique A | [md](2014/x-ens/x-ens_mp_informatique-a_2014/brut.md) | [md](2014/x-ens/x-ens_mp_informatique-a_2014/guide.md) |

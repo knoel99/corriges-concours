@@ -1,0 +1,71 @@
+{
+  "slug": "ens-rennes_d1_composition-dordre-economique_2014",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "Faut-il cibler l’inflation ?",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/2014-d1-economie_1421747156190-pdf",
+    "sujet_sha256": "35036b87bfe0b05666465daf8e8e24a62b4953b1da8bd0a6d4dd2e817fdb6b9d",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-economie-ecrit_1423045973125-pdf",
+    "rapport_sha256": "63bd9e4940d41ad8bf678186715868ce1ec38ca76c6db91ca95102bbf2be48e9",
+    "references_complementaires": {
+      "Communiqué de la BCE du 8 mai 2003": "https://www.ecb.europa.eu/press/pr/date/2003/html/pr030508_2.en.html",
+      "Annonce de la Réserve fédérale du 25 janvier 2012": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20120125c.htm"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/origine-du-choc.svg",
+      "legende": "La réponse dépend du comportement simultané des prix, de la production et des anticipations."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/regle-de-taylor.svg",
+      "legende": "Exemple chiffré du devoir. Le taux réel neutre est fixé à 1 % et la cible à 2 %. Les deux droites correspondent à des écarts de production distincts."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « Faut-il cibler l’inflation ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Construction de la règle de Taylor chiffrée, de son graphique, de la comparaison des chocs et de la datation des mandats de la Fed et de la BCE.",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Les points 4 à 8 du rapport d’économie demandent une problématique centrée sur la cible, la règle, les horizons et les objectifs alternatifs. L’annonce américaine de 2012 est confrontée à la formulation du rapport."
+    },
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « Faut-il cibler l’inflation ? » à partir des pièces distribuées ou conservées par l’ENS Rennes. Construction de la règle de Taylor chiffrée, de son graphique, de la comparaison des chocs et de la datation des mandats de la Fed et de la BCE."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
