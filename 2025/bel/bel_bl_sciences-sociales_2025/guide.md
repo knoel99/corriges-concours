@@ -8,6 +8,8 @@
 
 **Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 **Sujet : « L’alimentation : à quels prix ? »** Épreuve commune ENS Ulm, Lyon, Paris-Saclay et ENSAE/INSEE/ENSAI ; durée : **6 heures**. Le dossier officiel comporte **11 pages et huit documents**, dont plusieurs occupent deux pages. Il faut rédiger une dissertation de sciences sociales qui mette les documents au service d'un raisonnement, en articulant économie et sociologie. Le rapport appelle à suivre une même question en économie et en sociologie et à préciser comment les prix se forment. Sa première présentation annonce sept documents. Le sujet imprimé et la section du rapport consacrée aux marchés financiers établissent la présence d’un huitième document.
@@ -76,6 +78,10 @@ La réflexion peut prendre principalement appui sur la France et l'Europe, très
 **Structure du budget.** Les 22,1 % et 12,2 % cités dans la note du document 1 concernent le **logement**, respectivement dans les premier et cinquième quintiles de niveau de vie. Ils ne doivent pas être réattribués à l'alimentation. La barre claire du premier quintile atteint environ 18 % pour l’alimentation hors alcool, contre environ 14 % pour la barre sombre du cinquième quintile. Ces valeurs sont lues sur l’échelle du graphique. Elles n’ont pas la précision des deux valeurs de logement données dans la note.
 
 **Rapport de cotes.** Si la probabilité d'achat est $p$, sa cote est $p/(1-p)$. Un rapport de cotes de 0,50 signifie que cette cote est divisée par deux par rapport à la référence, pour les autres variables du modèle maintenues constantes. À titre d'illustration mathématique, et non de donnée du dossier, une probabilité de référence de 0,60 correspond à une cote de 1,50 ; une cote divisée par deux vaut 0,75, soit une probabilité d'environ 0,429. Elle ne vaut donc pas 0,30. Dans le tableau, la référence de revenu est le groupe des **15 % supérieurs**, celle du diplôme est **inférieur au bac**, celle de l'âge **20–29 ans**. Les coefficients ne prouvent pas que le prix du biologique cause les écarts : aucun effet-prix propre n'est estimé par ce tableau.
+
+**Reconstituer trois profils du document 3.** Le tableau donne la constante exponentiée 1,10 pour les catégories de référence. Dans le modèle logistique présenté sans interaction, on multiplie les cotes par les rapports des modalités qui changent. Le profil à bas revenu a une cote de $1{,}10 \times 0{,}50 = 0{,}55$, soit $0{,}55/1{,}55 \simeq 35{,}5$ %. Avec en outre un diplôme supérieur à bac + 2, la cote devient $0{,}55 \times 1{,}69 = 0{,}9295$, soit environ 48,2 %. Le profil de référence atteint $1{,}10/2{,}10$, soit 52,4 %. Le passage de 52,4 % à 35,5 % représente 16,9 points. Ces prévisions conditionnelles, arrondies, ne sont pas les proportions brutes des trois groupes dans les 6 946 observations.
+
+![Document 3, p. 4. Probabilités prédites d’au moins un achat bio sur douze mois, calculées avec les coefficients arrondis du modèle Kantar 2007. Chaque dimension non modifiée reste à sa catégorie de référence.](figures/profils-achat-bio.svg)
 
 **Mortalité.** Les taux du document 4 sont standardisés par âge. Les 39,8 décès pour 100 000 habitants en France et 101,0 dans le monde ne sont ni des pourcentages ni des effectifs bruts. On ne peut en déduire directement le nombre exact de décès observés en France en multipliant le taux standardisé par la population réelle.
 
