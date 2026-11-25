@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 [Sujet officiel](https://www.ens.psl.eu/sites/default/files/261239_bcpst_francais_2026.pdf)
 
 **Question directrice** — Comment l’activité du vivant introduit-elle des préférences dans une nature indifférente, et jusqu’où ces préférences peuvent-elles justifier nos actes ?
@@ -17,6 +19,8 @@
 L’épreuve commune de quatre heures invite à lire le thème « Expériences de la nature » à partir de *Par-delà le bien et le mal* (I, § 9). L’interlocuteur du paragraphe est le stoïcien qui entend vivre conformément à la nature. Relever les caractères attribués au tout naturel, puis relever dans le verbe « vouloir » ce qui semble soustraire le vivant à cette indifférence. Le passage est interrogatif : une dissertation peut discuter la portée de cet écart à partir des œuvres.
 
 ![Qui fait l’expérience du même milieu ?](figures/trois-perspectives.svg)
+
+Conserver le lieu et l’instant, puis changer l’agent dont on décrit l’action. Dire ce que chacun poursuit évite d’attribuer à la nature le jugement porté sur le secours par un personnage ou un lecteur.
 
 ## Faire travailler les trois œuvres
 

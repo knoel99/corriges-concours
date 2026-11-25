@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique.** Si l'homme n'existe que par la nature, comment peut-elle lui demeurer « étrangère absolument » ; et si elle le demeure, que signifie « avoir partie liée » avec elle ? La frontière que François Ost maintient au cœur même de la dépendance rend-elle justice à nos expériences de la nature, ou celles-ci obligent-elles à la penser autrement que comme une limite absolue ?
 
 Dans le grand salon du *Nautilus*, deux panneaux de métal glissent et découvrent, derrière une épaisse vitre de cristal, la mer éclairée par le fanal électrique : le professeur Aronnax, naturaliste du Muséum, voit enfin vivre chez eux les poissons qu'il ne connaissait que dans les collections. Moins d'un siècle plus tard, la narratrice du *Mur invisible*, descendant avec un chien la route qui mène au village, se heurte à une paroi lisse, froide et transparente : elle voit la vallée de l'autre côté et ne l'atteindra jamais. Ces deux vitres disent la même chose de deux manières inverses : on peut se trouver au plus près de la nature, au milieu de la mer ou au cœur de la forêt, et en rester séparé par une limite que l'on ne franchit pas.
@@ -21,6 +23,10 @@ La première phrase s'ouvre sur une subordonnée de valeur concessive : « si »
 La principale déplace alors le point de vue vers l'homme et y pose une limite. La nature est « “tout autre” » : d'une autre sorte que lui, et les guillemets signalent une expression forte, qui évoque le tout autre du vocabulaire religieux. Elle est aussi « étrangère », c'est-à-dire extérieure, venue du dehors. Les deux mots ne se confondent pas : l'étranger peut me ressembler par certains traits, et l'autre n'est pas forcément du dehors. Les adverbes « tout » et « absolument » radicalisent l'un et l'autre, mais aucun de ces termes ne dit que la nature soit hostile.
 
 La façon de découvrir chacune des deux vitres précise ce que signifie ici « étrangère absolument ». Dans le salon du sous-marin, les panneaux s’ouvrent à l’initiative de l’équipage. L’obstacle transparent est aménagé pour qu’Aronnax voie des êtres auxquels il ne peut se mêler. Chez Haushofer, le jour est déjà là quand la narratrice rencontre le mur. C’est au contraire parce que la vue ne lui a rien appris de l’obstacle qu’elle doit tâter l’air devant elle. Une séparation connue autorise la première expérience ; la découverte douloureuse d’une séparation inconnue ouvre la seconde. L’altérité que les deux personnages éprouvent n’a donc ni la même origine ni le même sens.
+
+Chez Verne, l’ouverture des panneaux invite à regarder un dehors que la paroi continue de séparer de l’observateur. Chez Haushofer, la vue suggère au contraire qu’on peut encore traverser et le contact apprend qu’on ne le peut plus. Cette inversion explique comment une même qualité sensible, la transparence, peut organiser deux expériences presque opposées de la nature.
+
+![Deux surfaces transparentes, deux expériences](figures/lecture-du-sujet.svg)
 
 La seconde phrase noue le paradoxe. « Avoir partie liée », c'est être engagé solidairement avec quelqu'un dans une même affaire : on ne lie que ce qui est distinct, et la locution suppose une solidarité réciproque, que la simple subsistance ne suffit pas à définir. Une nouvelle concession, « sans pour autant », ramène pourtant l'accent sur la limite : on ne peut « ramener l'un à l'autre ». Ramener la nature à l'homme, ce serait l'anthropomorphisme, qui lui prête des traits, des intentions ou des valeurs humaines. Ramener l'homme à la nature, ce serait le naturalisme, qui prétend tirer de la nature les normes de la vie humaine et nie ce que la culture a de propre. La solidarité que suppose « partie liée » exclut de son côté le vieux dualisme qui ne voit dans la nature qu'un moyen. Ni séparés, ni confondus : telle est la thèse, et c'est sur la frontière que porte l'accent.
 

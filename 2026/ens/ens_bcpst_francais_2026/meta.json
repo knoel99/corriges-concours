@@ -33,7 +33,7 @@
     "sujet": "https://www.ens.psl.eu/sites/default/files/261239_bcpst_francais_2026.pdf",
     "sujet_sha256": "f39df0d9c8674cbab9a0e88d90ed09825f60c977e78763e118710df3980628aa"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "gabarit": "dissertation",
   "revision": {
     "date": "2026-11-24",
@@ -90,6 +90,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle du libellé Nietzsche et des trois œuvres et passages de Canguilhem autorisés, de la scène de pêche à Ceylan et de la distinction entre indifférence de la nature et normativité du vivant. Reprise de l’analyse des deux échelles du mot nature."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Nietzsche, pluralité des perspectives vitales et sens du secours au pêcheur de perles."
     }
   ]
 }
