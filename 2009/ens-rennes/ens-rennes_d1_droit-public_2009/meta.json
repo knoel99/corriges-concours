@@ -1,0 +1,60 @@
+{
+  "slug": "ens-rennes_d1_droit-public_2009",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Droit public",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "intitule": "L’administration des agglomérations urbaines en France",
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/epreuve-a-options-d1_1423059195691-pdf#page=3",
+    "sujet_sha256": "f8bfda7ba3c3b7a4d1c4cfdb9963f6e754fc10641f1a7affc8596985a2e16dab",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "references_complementaires": {
+      "Code général des collectivités territoriales en avril 2009": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006070633/2009-04-01/",
+      "CGCT, article L. 5211-6 en 2009": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006392797/2009-04-01",
+      "CGCT, article L. 5216-1 en 2009": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006393207/2009-04-01",
+      "CGCT, article L. 5216-5 en 2009": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006393223/2009-04-01"
+    }
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "section": "B1",
+      "fichier": "figures/competences-agglomeration.svg",
+      "legende": "La réponse dépend de la compétence transférée et du périmètre desservi."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/delegues-communautaires.svg",
+      "legende": "Lire les modes de désignation dans leur version applicable à la session."
+    }
+  ],
+  "redaction": "Rédaction effective des éditions brute et guidée de « L’administration des agglomérations urbaines en France » à partir des pièces distribuées ou conservées par l’ENS Rennes. Catégories et seuils de création des communautés en 2009, pouvoirs transférés, fiscalité, élection indirecte, délibérations concordantes et contrôle de légalité, exemples francilien et du réseau de transports. Aucun rapport de droit public n’est rattaché à la fiche de la session.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "session": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction effective des éditions brute et guidée de « L’administration des agglomérations urbaines en France » à partir des pièces distribuées ou conservées par l’ENS Rennes. Catégories et seuils de création des communautés en 2009, pouvoirs transférés, fiscalité, élection indirecte, délibérations concordantes et contrôle de légalité, exemples francilien et du réseau de transports. Aucun rapport de droit public n’est rattaché à la fiche de la session."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
