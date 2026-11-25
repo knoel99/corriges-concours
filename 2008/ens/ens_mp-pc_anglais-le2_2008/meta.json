@@ -1,0 +1,65 @@
+{
+  "slug": "ens_mp-pc_anglais-le2_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Anglais (LE2)",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Voitures autonomes, compétition en ville simulée et sécurité des usagers",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1"
+    ]
+  },
+  "sources": {
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+    "etablissements": "ENS de Paris et de Cachan",
+    "pages_sujet": "3",
+    "code_garde": "80.10PM",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mp-pc_sujet_langue_etrangere_2.pdf#page=3",
+    "sujet_sha256": "9b7aa31d65f4d9a11653560330e033bd5d37f5c14a60dab16297ed778620f613",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2008/rapport-2008-pc_ecrit_langue_etrangere_2_anglais.pdf",
+    "rapport_jury_sha256": "baf3f29e6830e0079acab9f06b2a07a0482835371ff4a9d065149e9bc07bfaa2",
+    "precision": "Le texte de The Guardian est daté du 3 novembre 2007. Son trajet imaginaire de 2020 reste une projection de l’auteur. Le concours, son parcours simulé et les qualifications en Californie appartiennent au récit de 2007. Le sujet et le rapport d’anglais LE2 ont été consultés."
+  },
+  "mots_expression": {
+    "1": 139
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/dates.svg",
+      "legende": "La première scène anticipe une évolution tandis que le reportage décrit un concours."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/usage.svg",
+      "legende": "L’argument distingue performance en essai et bénéfice en situation réelle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. Voitures autonomes, compétition en ville simulée et sécurité des usagers.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
