@@ -1,0 +1,58 @@
+{
+  "slug": "ens_mp-pc_espagnol-le2_2009",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Espagnol (LE2)",
+    "annee": 2009,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "intitule": "El servicio de correo electrónico de Microsoft, Yahoo y Google no es seguro",
+  "bareme": {
+    "version": 15,
+    "expression": 5
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2009/MP/2009_sujet_mp_pc_le2.pdf#page=6",
+    "sujet_sha256": "f46f3fc56ede28104327530e51415ff9d26e0fde65bc9ea704a143f78112288e",
+    "page_pdf": 6,
+    "index": "https://www.ens.psl.eu/rapports-et-sujets-2009-pc",
+    "etablissements_imprimes": "Paris et Cachan",
+    "texte_support": "« El servicio de correo electrónico de Microsoft, Yahoo y Google no es seguro », elpais.com, 21 janvier 2009."
+  },
+  "redaction": "Version intégrale de l’article de 2009, attribution des constats et des propositions à Facua ; réponse argumentée en espagnol de plus de cent mots et distinction des fonctions de protection.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1",
+      "fichier": "figures/plainte-effets-proposition.svg",
+      "legende": "L’article de 2009 sépare le fait divers, l’argument de la plainte et la protection proposée."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite/civil",
+      "session": "rennes_droit_suite/civil",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale de l’article de 2009, attribution des constats et des propositions à Facua ; réponse argumentée en espagnol de plus de cent mots et distinction des fonctions de protection.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2"
+    ]
+  }
+}
