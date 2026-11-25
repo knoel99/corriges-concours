@@ -1,0 +1,60 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_italien-oral_2022",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Italien (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "intitule": "Italien — épreuves orales A/L 2022, trois séries",
+  "questions": 14,
+  "redaction": "Quatorze explications et réponses aux relances rédigées en italien. Analyse de l’énonciation épistolaire, du poème, des genres journalistiques et de leur contexte politique et culturel, avec tableau comparatif.",
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2022-11/Italien2022_0.pdf",
+    "sha256_sujet": "e50a4779631b1f4bc20423c9daf01726336f5c40090922b9ca6743397cb423d9",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2022-11/Italien%202022_0.pdf",
+    "sha256_rapport_jury": "e63d42f7d5c983220bd5626102c5f74abbd3516056f7c18894c085a9cf075e69",
+    "archives_complementaires": []
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Lettere e arti · Stampa",
+      "fichier": "figures/prove-e-memoria.svg",
+      "legende": "Trois sources dont la lecture engage une opération de mémoire différente."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Contrôle de la liste des quatorze billets et des cinq rubriques orales du rapport 2022, p. 11–15, y compris les deux lettres du 29 mai et la vignette finale d’Altan ; comparaison avec les documents sources."
+    },
+    {
+      "phase": "redaction",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Quatorze explications et réponses aux relances rédigées en italien. Analyse de l’énonciation épistolaire, du poème, des genres journalistiques et de leur contexte politique et culturel, avec tableau comparatif."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "perimetre": "Quatorze billets sont identifiés. Le poème de Gualtieri est demandé en entier et quatre lettres de Foscolo sont réparties sur deux billets bornés. Pour les onze textes de presse, l’article et le commentaire du jury renseignent l’analyse, mais le cahier ne reproduit pas le passage distribué.",
+    "limites": "Les onze découpages de presse remis au concours demeurent inconnus. Les dates du fascicule et les notices web légèrement différentes sont distinguées. Les passages littéraires ont été recoupés dans les œuvres.",
+    "billets_recenses": 14
+  }
+}
