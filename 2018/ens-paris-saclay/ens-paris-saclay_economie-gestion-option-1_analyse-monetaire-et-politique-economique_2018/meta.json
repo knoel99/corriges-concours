@@ -1,0 +1,68 @@
+{
+  "slug": "ens-paris-saclay_economie-gestion-option-1_analyse-monetaire-et-politique-economique_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Économie-gestion option 1",
+    "matiere": "Analyse monétaire et politique économique",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "intitule": "Les politiques économiques face à la soutenabilité de la dette",
+  "gabarit": "dissertation",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2018_Rapports_Excrits_D2_AMPE.pdf#page=1",
+    "sujet_sha256": "6241476e8e7d76db233968dbd40a8da9c1c06f99634c07d57b8a4f12a36a9a10",
+    "index": "https://ens-paris-saclay.fr/node/4269",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_D2_1/2018_Rapports_Excrits_D2_AMPE.pdf",
+    "rapport_sha256": "6241476e8e7d76db233968dbd40a8da9c1c06f99634c07d57b8a4f12a36a9a10",
+    "notice": "https://ens-paris-saclay.fr/sites/default/files/2017-11/Notice_2018_Concours-entree.pdf#page=34",
+    "notice_sha256": "33ddbd33252dac29b971f4bcc198ef88541f25028a2e49cded6bd81cd551d1be",
+    "precision": "L’intitulé complet est reproduit à la page 1 du rapport. Le feuillet distribué en salle n’a pas été retrouvé."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Dissertation"
+    ]
+  },
+  "redaction": "Dissertation intégrale sur la double relation entre dette et politiques publiques. Équation exacte du ratio d’endettement, illustration chiffrée, dimension monétaire, structurelle et européenne, méthode accompagnant chaque étape.",
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/diagnostic.svg",
+      "question": "Dissertation",
+      "legende": "Le ratio, l’échéancier et les capacités fiscales répondent à trois questions distinctes."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/choc.svg",
+      "question": "Dissertation",
+      "legende": "Un choc sur le taux des nouvelles émissions met du temps à affecter le taux moyen du stock à taux fixe."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/horizons.svg",
+      "question": "Dissertation",
+      "legende": "La composition des politiques détermine à quelle échéance elles modifient la trajectoire de la dette."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "saclay_economie_archives",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Dissertation intégrale sur la double relation entre dette et politiques publiques. Équation exacte du ratio d’endettement, illustration chiffrée, dimension monétaire, structurelle et européenne, méthode accompagnant chaque étape.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
