@@ -1,27 +1,27 @@
 {
-  "date": "2026-11-25T16:40:51+01:00",
-  "revision": "1a8358f0a75eb37a76075cc384bfae884cee2d8c",
+  "date": "2026-11-25T17:09:19+01:00",
+  "revision": "bc9bd649b08a9680fc0db53d54d620ed239774e7",
   "fichier": "2026-11-25.tsv",
   "perimetres": [
     {
       "nom": "Toutes les épreuves",
-      "recenses": 1843,
-      "paires": 1623,
-      "complets": 1496,
+      "recenses": 1959,
+      "paires": 1689,
+      "complets": 1557,
       "production": 368,
-      "partiels": 127,
+      "partiels": 132,
       "partiels_production": 17,
-      "schemas": 3652
+      "schemas": 3749
     },
     {
       "nom": "Écrits, toutes sessions",
-      "recenses": 1464,
-      "paires": 1315,
-      "complets": 1242,
+      "recenses": 1580,
+      "paires": 1377,
+      "complets": 1303,
       "production": 355,
-      "partiels": 73,
+      "partiels": 74,
       "partiels_production": 16,
-      "schemas": 3092
+      "schemas": 3189
     },
     {
       "nom": "Écrits 2026",
@@ -36,10 +36,10 @@
     {
       "nom": "Oraux et fascicules",
       "recenses": 350,
-      "paires": 279,
+      "paires": 283,
       "complets": 228,
       "production": 13,
-      "partiels": 51,
+      "partiels": 55,
       "partiels_production": 1,
       "schemas": 431
     },
@@ -117,13 +117,13 @@
     },
     {
       "nom": "Français et philosophie",
-      "recenses": 127,
-      "paires": 117,
-      "complets": 117,
+      "recenses": 137,
+      "paires": 130,
+      "complets": 130,
       "production": 16,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 160
+      "schemas": 173
     },
     {
       "nom": "Français et philosophie + Arts",
@@ -187,13 +187,13 @@
     },
     {
       "nom": "Langues",
-      "recenses": 378,
-      "paires": 351,
-      "complets": 346,
+      "recenses": 484,
+      "paires": 397,
+      "complets": 391,
       "production": 71,
-      "partiels": 5,
+      "partiels": 6,
       "partiels_production": 0,
-      "schemas": 413
+      "schemas": 488
     },
     {
       "nom": "Mathématiques",
@@ -228,12 +228,12 @@
     {
       "nom": "Physique",
       "recenses": 137,
-      "paires": 106,
-      "complets": 100,
+      "paires": 109,
+      "complets": 103,
       "production": 40,
       "partiels": 6,
       "partiels_production": 1,
-      "schemas": 549
+      "schemas": 558
     },
     {
       "nom": "Physique + Biologie et géologie",
@@ -359,13 +359,13 @@
     },
     {
       "nom": "ENS",
-      "recenses": 197,
-      "paires": 187,
-      "complets": 170,
+      "recenses": 265,
+      "paires": 203,
+      "complets": 186,
       "production": 48,
       "partiels": 17,
       "partiels_production": 10,
-      "schemas": 519
+      "schemas": 543
     },
     {
       "nom": "ENS Paris-Saclay",
@@ -409,23 +409,23 @@
     },
     {
       "nom": "X",
-      "recenses": 134,
-      "paires": 124,
-      "complets": 124,
+      "recenses": 182,
+      "paires": 139,
+      "complets": 139,
       "production": 64,
       "partiels": 0,
       "partiels_production": 0,
-      "schemas": 315
+      "schemas": 344
     },
     {
       "nom": "X-ENS",
       "recenses": 271,
-      "paires": 224,
-      "complets": 213,
+      "paires": 255,
+      "complets": 243,
       "production": 134,
-      "partiels": 11,
+      "partiels": 12,
       "partiels_production": 4,
-      "schemas": 753
+      "schemas": 797
     }
   ],
   "toutes_modalites": {
@@ -492,13 +492,13 @@
       },
       {
         "nom": "Français et philosophie",
-        "recenses": 217,
-        "paires": 194,
-        "complets": 193,
+        "recenses": 227,
+        "paires": 207,
+        "complets": 206,
         "production": 16,
         "partiels": 1,
         "partiels_production": 0,
-        "schemas": 284
+        "schemas": 297
       },
       {
         "nom": "Français et philosophie + Arts",
@@ -562,13 +562,13 @@
       },
       {
         "nom": "Langues",
-        "recenses": 483,
-        "paires": 432,
-        "complets": 390,
+        "recenses": 589,
+        "paires": 482,
+        "complets": 435,
         "production": 74,
-        "partiels": 42,
+        "partiels": 47,
         "partiels_production": 0,
-        "schemas": 475
+        "schemas": 550
       },
       {
         "nom": "Mathématiques",
@@ -603,12 +603,12 @@
       {
         "nom": "Physique",
         "recenses": 137,
-        "paires": 106,
-        "complets": 100,
+        "paires": 109,
+        "complets": 103,
         "production": 40,
         "partiels": 6,
         "partiels_production": 1,
-        "schemas": 549
+        "schemas": 558
       },
       {
         "nom": "Physique + Biologie et géologie",
@@ -734,21 +734,21 @@
       },
       {
         "nom": "ENS",
-        "recenses": 197,
-        "paires": 187,
-        "complets": 170,
+        "recenses": 265,
+        "paires": 203,
+        "complets": 186,
         "production": 48,
         "partiels": 17,
         "partiels_production": 10,
-        "schemas": 519
+        "schemas": 543
       },
       {
         "nom": "ENS Paris-Saclay",
         "recenses": 130,
-        "paires": 93,
+        "paires": 97,
         "complets": 84,
         "production": 0,
-        "partiels": 9,
+        "partiels": 13,
         "partiels_production": 0,
         "schemas": 254
       },
@@ -784,27 +784,27 @@
       },
       {
         "nom": "X",
-        "recenses": 134,
-        "paires": 124,
-        "complets": 124,
+        "recenses": 182,
+        "paires": 139,
+        "complets": 139,
         "production": 64,
         "partiels": 0,
         "partiels_production": 0,
-        "schemas": 315
+        "schemas": 344
       },
       {
         "nom": "X-ENS",
         "recenses": 271,
-        "paires": 224,
-        "complets": 213,
+        "paires": 255,
+        "complets": 243,
         "production": 134,
-        "partiels": 11,
+        "partiels": 12,
         "partiels_production": 4,
-        "schemas": 753
+        "schemas": 797
       }
     ]
   },
   "fichiers_telechargeables": 549,
-  "blob_tableau": "92dd4f65ed499977cdd177471fa666f647ab2da0",
-  "sha256_classeur": "4a65658ed5fea04580de9c908f2c920a5301e50a5d91641fecd9d60bd1fb170f"
+  "blob_tableau": "b2d57a56e32750afc1d1d4377e0a22af198afd5d",
+  "sha256_classeur": "4a4d1a38f221ef7e6c59eddde450f7b7f59ae9ac774d7816ecc5626328c0c71a"
 }
