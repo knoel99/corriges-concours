@@ -1,0 +1,81 @@
+{
+  "slug": "ens-paris-saclay_cycle-master-anglais_anglais-de-specialite-dossier-thematique-b_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Cycle master anglais",
+    "matiere": "Anglais de spécialité (dossier thématique B)",
+    "annee": 2024,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Anglais/2024_Sujet_2A%20anglais_%C3%A9preuve%20th%C3%A9matique_sujet%20B.pdf",
+    "sujet_sha256": "3fb247d5d28ca5424b684592cc16cffba29562ecb86e6255a601876f01486873",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Anglais/2024_Rapport_2A%20anglais_%C3%A9preuve%20th%C3%A9matique.pdf",
+    "rapport_sha256": "fc848b4d1d3e835d0956ce29de5e683a9eec277203be69d714f9ce898f0adef5",
+    "publications": [
+      {
+        "libelle": "Catherine Resche, Termes métaphoriques et métaphores constitutives de la théorie dans le domaine de l’économie (2016), article intégral",
+        "url": "https://doi.org/10.3917/lf.189.0103"
+      },
+      {
+        "libelle": "Marie-Hélène Fries, Métaphores constitutives des théories et style spécialisé (2023), article",
+        "url": "https://doi.org/10.4000/esa.5001"
+      },
+      {
+        "libelle": "Fries, version intégrale communiquée par l’auteure",
+        "url": "https://www.researchgate.net/publication/370349225_Metaphores_constitutives_des_theories_et_style_specialise"
+      },
+      {
+        "libelle": "Elena Semino, Corpus Linguistics and Metaphor (2017), Cambridge University Press",
+        "url": "https://doi.org/10.1017/9781316339732.029"
+      }
+    ],
+    "precision": "Le dossier public donne les consignes et les références de trois adaptations, sans leurs passages. Le rapport du jury précise le rôle de la métaphore et des approches quantitatives et qualitatives. La synthèse s’appuie sur les articles de Resche et de Fries et sur l’ouverture du chapitre de Semino, p. 463. Les résultats de son étude de cas sur l’expression de la douleur et le contenu exact des trois extraits adaptés restent hors de la couverture."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Exposé de synthèse sur les trois documents adaptés, à partir des deux articles, de la page initiale du chapitre et du rapport du jury"
+    ],
+    "questions_non_traitees": [
+      "Limites et texte exact des trois adaptations distribuées",
+      "Résultats de l’étude de cas de Semino au-delà de l’ouverture consultée"
+    ],
+    "motif": "Le dossier public donne les consignes et les références de trois adaptations, sans leurs passages. Le rapport du jury précise le rôle de la métaphore et des approches quantitatives et qualitatives. La synthèse s’appuie sur les articles de Resche et de Fries et sur l’ouverture du chapitre de Semino, p. 463. Les résultats de son étude de cas sur l’expression de la douleur et le contenu exact des trois extraits adaptés restent hors de la couverture."
+  },
+  "figures": [
+    {
+      "fichier": "figures/transferts.svg",
+      "legende": "Comment une représentation voyage",
+      "question": "Exposé de synthèse"
+    },
+    {
+      "fichier": "figures/corpus.svg",
+      "legende": "Du relevé à une affirmation sur le discours",
+      "question": "Exposé de synthèse"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet et du rapport, confrontation aux publications identifiées, rédaction des deux éditions françaises et de deux schémas. Le dossier public donne les consignes et les références de trois adaptations, sans leurs passages. Le rapport du jury précise le rôle de la métaphore et des approches quantitatives et qualitatives. La synthèse s’appuie sur les articles de Resche et de Fries et sur l’ouverture du chapitre de Semino, p. 463. Les résultats de son étude de cas sur l’expression de la douleur et le contenu exact des trois extraits adaptés restent hors de la couverture."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
