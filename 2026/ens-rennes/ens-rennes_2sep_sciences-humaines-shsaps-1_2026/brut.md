@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Introduction
 
 En basket-ball scolaire, une élève fait entrer son premier tir presque par hasard. Elle lance une deuxième fois depuis le même repère et la balle n’atteint pas le cercle. Le premier essai comptait comme un panier et le second comme un échec. Il serait pourtant prématuré de dire qu’elle a appris au premier et désappris au second. La performance est le résultat observable d’une tentative. Apprendre une habileté motrice, c’est acquérir par la pratique une capacité de produire et d’adapter une action qui se maintient au-delà de la séance. Celui qui s’y essaie accepte une incertitude sur le résultat et, devant ses camarades, parfois sur le jugement que ce résultat suscitera. À quelles conditions cette incertitude l’aide-t-elle à construire un tir au lieu de le conduire à renoncer ? Suivons une classe de collège depuis les premiers tirs à l’arrêt jusqu’au choix d’un tir dans un jeu réduit.
@@ -33,6 +35,10 @@ Le risque se joue aussi devant autrui. Un concours d’élimination expose chaqu
 Un élève qui marque davantage en fin de séance avec un conseil avant chaque tir a amélioré sa performance dans ces conditions. Pour apprécier un apprentissage, l’enseignant reprend à la séance suivante une situation comparable sans rappel technique, après le même échauffement. Il note le nombre de tirs atteignant la zone visée, les paniers et la dispersion des trajectoires sur plusieurs tentatives. Il demande ensuite de tirer d’un repère voisin ou après une passe latérale. La première comparaison informe sur la rétention, la seconde sur le transfert à une condition nouvelle. L’élève qui ne marque pas encore régulièrement mais ajuste correctement une série de tirs initialement trop courts manifeste un progrès que le seul dernier score aurait masqué.
 
 Supposons qu’une élève réussisse deux lancers sur dix au départ, puis six sur dix quand son partenaire la conseille avant chaque tir. À la séance suivante, depuis la même marque et après le même échauffement, elle en réussit trois sans cette aide. Les quatre réussites supplémentaires de la première séance mesurent aussi le soutien immédiat du partenaire. Le deuxième relevé laisse envisager un progrès plus modeste. Dix essais varient assez pour qu’un lancer réussi de plus appelle une nouvelle observation. L’enseignant peut examiner en parallèle si les tirs courts deviennent moins fréquents et si l’élève sait repérer seule cet écart. C’est alors sa capacité à se corriger qui constitue un autre indice d’apprentissage.
+
+Pour dissocier les causes d’un échec, l’enseignant peut proposer d’abord la même distance sans conseil et, dans un second temps, une nouvelle distance toujours sans conseil. Si l’élève retrouve son geste dans la première situation mais perd sa précision dans la seconde, l’ajustement requis par le changement de distance devient l’objet du travail suivant.
+
+![Figure 1 — Une épreuve proche de la tâche initiale et une épreuve nouvelle répondent à deux questions différentes sur l’acquisition.](figures/retention-transfert.svg)
 
 Enfin, dans un deux contre un aménagé, le porteur doit percevoir la place du défenseur. Une passe à un partenaire libre peut être une décision pertinente même si le professeur souhaitait observer des tirs. Pour évaluer le transfert, on distingue donc le choix d’une occasion favorable et l’exécution de la tentative. Un échec en match peut provenir d’un retard de décision ou d’une trajectoire mal dosée. Les confondre ramènerait tous les élèves au même exercice et le tireur à la même énigme qu’au premier essai.
 

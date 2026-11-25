@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Problématique** — Comment des usages d’abord expérimentés par quelques-uns deviennent-ils des manières de faire partagées, et que leur diffusion transforme-t-elle ?
 
 ## Introduction
@@ -35,6 +37,10 @@ Les pouvoirs publics interviennent également dans les formes prises par les inn
 ## III. Les organisations et les marchés renouvellent le sens d’activités déjà diffusées
 
 Dans les années 2000, l’essor du trail pousse à distinguer plusieurs formes de nouveauté. Courir sur des sentiers et disputer des courses de montagne sont des pratiques anciennes. L’Ultra-Trail du Mont-Blanc, organisé dès 2003, les réunit à une autre échelle. Un parcours de longue distance, des ravitaillements, le travail de bénévoles, la promotion d’une destination et la possibilité de comparer des résultats rendent une aventure en montagne accessible sous la forme d’un événement. Un participant peut vouloir éprouver son endurance, un territoire attirer des visiteurs et un équipementier rendre sa marque visible. La même course change donc d’usage suivant l’acteur observé. La valeur accordée à une expérience de nature dépend ici d’une organisation dense. En outre, prix de l’inscription, déplacements et disponibilité pour l’entraînement contribuent à sélectionner ceux qui pourront y prendre le départ.
+
+Un sentier déjà fréquenté pour l’entraînement peut ainsi devenir un parcours balisé, chronométré et inscrit au calendrier d’une épreuve. Le coureur se mesure à un temps, l’organisateur coordonne des départs et des secours, et les acteurs locaux peuvent valoriser un itinéraire. Pour établir la diffusion de cette innovation, on chercherait à dater l’apparition de ces usages et à identifier les groupes qui les reprennent.
+
+![Figure 1 — Un parcours de trail, trois usages. Le même parcours devient une épreuve pour son participant, un événement pour son organisateur et une destination pour le territoire.](figures/trois-usages-du-trail.svg)
 
 Depuis les années 2000 et 2010, les montres GPS et les plateformes de partage transforment aussi la séance ordinaire. Un pratiquant qui choisit librement un tour de parc peut comparer un tronçon à celui d’amis qui ne courent pas au même moment. En enregistrant et en publiant leurs sorties, les utilisateurs produisent eux-mêmes les parcours et les classements qui donnent son intérêt au service. Cela peut favoriser une sociabilité à distance ou remettre la compétition au cœur d’une activité choisie pour échapper aux horaires et aux classements du club. Certains conservent leurs données pour eux ou courent sans dispositif. Une innovation diffusée n’abolit donc pas les façons antérieures de pratiquer.
 

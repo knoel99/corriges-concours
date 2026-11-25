@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve SHSAPS 1 dure deux heures. La formule « Apprendre, c’est prendre le risque d’échouer » appelle une explication à partir des théories de l’apprentissage, puis une proposition de conditions d’apprentissage moteur illustrées dans une ou plusieurs activités physiques, sportives et artistiques (APSA), en milieu scolaire ou fédéral. La copie ci-dessous suit une classe de collège en basket-ball. [Sujet officiel, session 2026](https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-1-sciences-humaines-2sep-2026_1791303304026-pdf)
@@ -57,6 +59,8 @@ Le but est de faire atteindre une zone à la balle. Celui qui n’atteint jamais
 À délai fixé, reprendre sans conseil le même tir après un échauffement comparable. Relever sur plusieurs essais les points d’arrivée et les réussites. Changer ensuite la distance ou le contexte de réception pour apprécier l’adaptation. Si l’on passe directement d’une répétition accompagnée à un match, le changement simultané du contexte, du temps disponible et du but tactique rend l’interprétation incertaine.
 
 ![Figure 3 — Une épreuve proche de la tâche initiale et une épreuve nouvelle répondent à deux questions différentes sur l’acquisition.](figures/retention-transfert.svg)
+
+Gardez constants le ballon, l’échauffement et la consigne lors du test différé. Modifiez ensuite la distance seule. Une consigne supplémentaire au moment du transfert rendrait difficile de savoir si la réussite provient d’une adaptation de l’élève ou de l’aide que vous venez de lui fournir.
 
 ## Repères théoriques
 
