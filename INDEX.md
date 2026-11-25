@@ -1380,6 +1380,10 @@
 | 2023 | X-ENS | MP-MPI-PC-PSI | Allemand | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_allemand_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Arabe | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_arabe_2023/guide.md) |
 | 2023 | X-ENS | MP-MPI-PC-PSI | Espagnol | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/brut.md) | [md](2023/x-ens/x-ens_mp-mpi-pc-psi_espagnol_2023/guide.md) |
+| 2014 | X-ENS | MP-PC | Composition française | [md](2014/x-ens/x-ens_mp-pc_composition-francaise_2014/brut.md) | [md](2014/x-ens/x-ens_mp-pc_composition-francaise_2014/guide.md) |
+| 2013 | X-ENS | MP-PC | Composition française | [md](2013/x-ens/x-ens_mp-pc_composition-francaise_2013/brut.md) | [md](2013/x-ens/x-ens_mp-pc_composition-francaise_2013/guide.md) |
+| 2012 | X-ENS | MP-PC | Composition française | [md](2012/x-ens/x-ens_mp-pc_composition-francaise_2012/brut.md) | [md](2012/x-ens/x-ens_mp-pc_composition-francaise_2012/guide.md) |
+| 2011 | X-ENS | MP-PC | Composition française | [md](2011/x-ens/x-ens_mp-pc_composition-francaise_2011/brut.md) | [md](2011/x-ens/x-ens_mp-pc_composition-francaise_2011/guide.md) |
 | 2012 | X-ENS | MP-PC | Informatique B | [md](2012/x-ens/x-ens_mp-pc_informatique-b_2012/brut.md) | [md](2012/x-ens/x-ens_mp-pc_informatique-b_2012/guide.md) |
 | 2014 | X-ENS | MP-PC | Informatique B | [md](2014/x-ens/x-ens_mp-pc_informatique-b_2014/brut.md) | [md](2014/x-ens/x-ens_mp-pc_informatique-b_2014/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Informatique B | [md](2017/x-ens/x-ens_mp-pc-psi_informatique-b_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_informatique-b_2017/guide.md) |
