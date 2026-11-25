@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le candidat choisit un seul des deux sujets après le tirage de la planche. Le jury accorde 1 h 30 de préparation, puis 15 minutes d’exposé et 15 minutes de discussion. Les deux développements correspondent aux deux choix possibles.
 
 ## « Élections, pièges à cons » ?
@@ -13,6 +15,10 @@ Le candidat choisit un seul des deux sujets après le tirage de la planche. Le j
 Ce slogan transforme un acte ordinairement célébré comme devoir civique en soupçon de dépossession. Il faut identifier ce qui ferait « piège ». Le dispositif pourrait masquer des inégalités de participation, enfermer des aspirations dans une offre que les électeurs n’ont pas choisie, ou substituer périodiquement le vote à tout autre moyen de s’exprimer. Mais prendre le slogan à la lettre ferait disparaître les situations où une élection permet précisément une sanction ou un changement de politique. Quelles conditions transforment le droit de voter en prise effective sur les décisions ?
 
 **Une invitation formellement égale peut être socialement sélective.** Dans *Le Cens caché*, Daniel Gaxie relie l’inégalité de participation aux ressources et au sentiment de compétence politique. Céline Braconnier et Jean-Yves Dormagen, dans *La Démocratie de l’abstention*, étudient aussi la mal-inscription et les mobilisations familiales et locales. Le rendez-vous électoral suppose une inscription au bon endroit, une disponibilité et parfois une incitation de l’entourage. Des votes exprimés également dans l’urne sont précédés d’inégalités de possibilité de s’y rendre. Pour les mesurer, il faut distinguer population en âge de voter, électeurs inscrits et votants.
+
+Dans un exemple fictif, 100 personnes ont le droit de voter, 80 sont inscrites et 60 déposent un bulletin. La participation atteint 75 % des inscrits. Rapporté à toutes les personnes qui ont le droit de voter, le même nombre de votants représente 60 %. Les vingt personnes non inscrites disparaissent du premier dénominateur.
+
+![Figure 1 — Identifier la population derrière un taux de participation](figures/participation.svg)
 
 **Qui fixe les termes du choix ?** Les partis recrutent des candidats, élaborent les programmes et hiérarchisent les enjeux. Une contestation portant sur un problème local peut avoir du mal à entrer dans une offre nationale. De plus, choisir le même bulletin peut signifier approuver un programme, s’opposer à un adversaire ou rester fidèle à un groupe. Le résultat agrège ces sens sans les restituer. Une enquête auprès des électeurs complétée par l’étude de la campagne permet de comprendre ce travail de traduction. La délégation libère du temps et rend possible l’action à grande échelle, mais elle donne aux représentants le pouvoir d’interpréter le mandat.
 
