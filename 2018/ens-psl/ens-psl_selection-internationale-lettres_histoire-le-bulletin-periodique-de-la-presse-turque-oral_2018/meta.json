@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-le-bulletin-periodique-de-la-presse-turque-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — le Bulletin périodique de la presse turque (oral)",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-5.pdf",
+    "sha256_sujet": "6e12a2345b3caa1f3651478fe80bd3af5d954d4f54fc7e1a0c14be1d1e7fe4f6",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Mettre en scène des conduites nouvelles",
+      "legende": "Le bulletin rassemble des scènes et des débats dont la valeur de témoignage dépend de l’énonciateur."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après lecture intégrale du bulletin et du rapport du jury. Attribution des extraits, chronologie du droit et de la visite, critique des discours sur les minorités. Schéma contrôlé.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

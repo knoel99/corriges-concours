@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-monteil-et-lhistoire-des-francais-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Monteil et l’Histoire des Français (oral)",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-1.pdf",
+    "sha256_sujet": "904f6f14cdd4cb68be46774451e9dc7178b95b7c7b7bddc037fb77ec127a1f76",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Un bienfaiteur, plusieurs pouvoirs",
+      "legende": "La voix qui célèbre la fondation décrit également ses moyens de contrainte."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions après lecture des deux pages et du rapport. Distinction des temporalités, des catégories d’admission, du travail et des contraintes. Figure vérifiée.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
