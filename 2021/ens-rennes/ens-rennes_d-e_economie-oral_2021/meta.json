@@ -1,0 +1,134 @@
+{
+  "slug": "ens-rennes_d-e_economie-oral_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Économie (oral)",
+    "annee": 2021,
+    "modalite": "oral"
+  },
+  "questions": 27,
+  "intitules": {
+    "1": "La détermination du taux d’intérêt",
+    "2": "Salaire réel et salaire nominal",
+    "3": "L’arbitrage inflation activité est-il encore d’actualité ?",
+    "4": "Est-il souhaitable que les prix soient flexibles ?",
+    "5": "Faut-il encore conserver la stabilité des prix comme objectif de politique monétaire ?",
+    "6": "Le rôle des banques commerciales dans la création et la politique monétaires",
+    "7": "La politique économique doit-elle prendre en compte les anticipations des agents ?",
+    "8": "Etre rationnel(le), est-ce ne jamais se tromper ?",
+    "9": "Dette publique et équivalence ricardienne",
+    "10": "Jusqu’où l’intervention de l’Etat peut-elle aller ?",
+    "11": "Les contraintes de la politique économique en union monétaire",
+    "12": "Les choix intertemporels de consommation",
+    "13": "Quel est le rôle des débouchés dans la détermination de l’activité économique ?",
+    "14": "Les déséquilibres macroéconomiques externes",
+    "15": "Où en est le débat entre les changes fixes et les changes flexibles ?",
+    "16": "Crise sanitaire et crise économique",
+    "17": "Les organismes financiers internationaux face aux crises",
+    "18": "Faut-il lutter contre les externalités ?",
+    "19": "Le modèle de croissance exogène",
+    "20": "Doit-on remettre en question la libéralisation des flux financiers internationaux ?",
+    "21": "La dette publique est-elle soutenable aujourd’hui dans les pays européens ?",
+    "22": "La zone euro doit-elle intégrer tous les pays de l’union économique européenne ?",
+    "23": "Comment rémunérer les facteurs de production ?",
+    "24": "A quoi sert la Courbe des contrats ?",
+    "25": "Quelles sont les grandes idées actuelles en macroéconomie ?",
+    "26": "Le modèle de la concurrence pure et parfaite a-t-il encore un intérêt ?",
+    "27": "Les facteurs à l’origine de la croissance économique"
+  },
+  "complements_rapport": [
+    "Le plein emploi est-il un concept pouvant être observé ?",
+    "Faut-il gérer les déséquilibres financiers au niveau macroéconomique ?"
+  ],
+  "sources": {
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-oral-economie-2021_1634310472130-pdf",
+    "rapport_sha256": "139a88ab3be245ac10e50c1046c2b181509c4f1f29c34b52192bc3cb61e3c0b8",
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-oral-e-conomie-d-e-2021_1652428400884-pdf",
+    "sujet_sha256": "db6a12ea1cb843c4df28eb486079b59bcaf867a53e2fe88196ce959a781b40b1",
+    "sujet_apercu_sha256": "c11509bffbcccb2d4e4a25d5a908976911366fc83985fa27b14be3e5f493831a",
+    "sujet_pages": 1,
+    "rapport_apercu_sha256": "67dd871d911fb547e50108cd22e9377f05cc524a384b7a64fbcde3deecba65e9",
+    "rapport_pages": 2
+  },
+  "redaction": "Rédaction des 27 exposés numérotés du fascicule et des deux sujets complémentaires attestés p. 2 du rapport uniquement. Deux parties par sujet, relance et réponse, indication propre au guidé, six graphiques originaux. Vérification des intitulés, des modèles et des calculs.",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_physique",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 27 exposés numérotés du fascicule et des deux sujets complémentaires attestés p. 2 du rapport uniquement. Deux parties par sujet, relance et réponse, indication propre au guidé, six graphiques originaux. Vérification des intitulés, des modèles et des calculs."
+    }
+  ],
+  "figures": [
+    {
+      "question": "3",
+      "fichier": "figures/phillips.svg",
+      "legende": "À anticipations constantes, un choc de coût relève l’inflation d’un point pour le même écart de production. Valeurs illustratives."
+    },
+    {
+      "question": "12",
+      "fichier": "figures/budget-intertemporel.svg",
+      "legende": "Un euro consommé de plus aujourd’hui coûte 1,10 euro de consommation future. Les trois points vérifient le même budget actualisé."
+    },
+    {
+      "question": "18",
+      "fichier": "figures/cout-social.svg",
+      "legende": "Dans cet exemple, le marché produit 6 unités. L’optimum en produit 4,5. Le triangle représente le dommage net des unités excédentaires."
+    },
+    {
+      "question": "19",
+      "fichier": "figures/solow.svg",
+      "legende": "Avec f(k) = racine de k et n + g + δ = 15 %, augmenter s de 20 à 30 % déplace le capital stationnaire de 1,78 à 4. Simulation illustrative."
+    },
+    {
+      "question": "21",
+      "fichier": "figures/dette-et-solde-primaire.svg",
+      "legende": "Dette initiale égale à 100 % du PIB et croissance réelle de 3 %. Une ordonnée négative représente un déficit primaire compatible avec un ratio stable."
+    },
+    {
+      "question": "24",
+      "fichier": "figures/boite-edgeworth.svg",
+      "legende": "Les deux utilités sont le produit des quantités propres. A reçoit initialement (2, 6), B reçoit (8, 4). Les accords efficaces acceptables donnent à A entre 3,46 et 4,34 unités de chaque bien."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27"
+    ]
+  }
+}
