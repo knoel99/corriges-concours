@@ -54,7 +54,8 @@
       "https://destination.cevennes-parcnational.fr/fr/trek/37916-Saint-Germain-de-Calberte",
       "https://www.comune.venezia.it/it/content/serie-storiche",
       "https://doi.org/10.18778/1231-1952.30.1.06"
-    ]
+    ],
+    "rapport_sha256": "3b5c07a558359678e92bef5e5947a6c2ee7acb1c6c5a1633e340b030a617db61"
   },
   "figures": [
     {
@@ -71,6 +72,11 @@
       "fichier": "figures/heidelberg-street.svg",
       "question": "Partie III",
       "legende": "Dans Heidelberg Street à Détroit, les terrains délaissés deviennent des lieux de création au sein d’une rue habitée."
+    },
+    {
+      "fichier": "figures/calberte-population.svg",
+      "question": "Partie II",
+      "legende": "Saint-Germain-de-Calberte, population communale de 1968 à 2022"
     }
   ],
   "contributions": [
@@ -142,9 +148,21 @@
       "source_configuration": "Lancement de la session de rédaction par Codex avec modèle et effort explicites ; aucun niveau de service exposé.",
       "modifications": false,
       "tour": 1
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du rapport et du sujet attesté à sa première page, des deux éditions et du rendu des trois croquis. Reprise des tableaux communaux POP T1 et POP T2M de l’Insee. Calcul et discussion des retournements de 1999–2006 et 2016–2022, de la contribution des soldes naturel et migratoire apparent. Ajout d’un graphique comparant les neuf recensements et d’une lecture croisée avec les terrasses des Calquières."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "gpt-6.2-astra",

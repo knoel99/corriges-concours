@@ -6,6 +6,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision des séries communales et des croquis** · GPT-6.2 Astra Ultra · session astra_lettres · vitesse non renseignée
+
 **Contribution (production figures)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
@@ -78,6 +80,12 @@ Dans le dessin, observe-t-on une seule place d’où l’on pourrait voir l’in
 **Un versant boisé peut témoigner du passé.** À Saint-Germain-de-Calberte, les anciennes vues du bourg commentées par le parc national permettent de situer la fermeture progressive des anciens milieux agricoles depuis l’exode rural. En revanche, le total communal est passé de 445 habitants en 1982 à 477 en 2022, avec des fluctuations entre ces dates. On ne pourrait donc pas déduire de la présence des bois une baisse continue de la population actuelle. Une observation rapprochée des Calquières montre par ailleurs des terrasses toujours cultivées et des dispositifs d’irrigation. Leur exposition au sud-est, leur entretien manuel et la présence de nombreux propriétaires expliquent l’intérêt d’observer le site à l’échelle des jardins. La variation entre parcelles et le décalage entre périodes constituent deux arguments différents.
 
 ![Figure 2 — Dans la vallée de Saint-Germain-de-Calberte, l’entretien inégal des parcelles rend la déprise sélectivement visible.](figures/saint-germain-de-calberte.svg)
+
+**Lire ensemble le versant et les recensements.** Sur le croquis des Calquières, suivez un muret visible au milieu des jardins puis cherchez son équivalent dans la vue boisée. À distance, le taillis peut masquer le replat alors que la maçonnerie subsiste. Sur la courbe, choisissez ensuite 1999–2006 (485 puis 444 habitants) et 2016–2022 (441 puis 477). Les signes du changement démographique sont opposés. Pour 2016–2022, le tableau POP T2M donne −0,6 point par an pour le solde naturel et +1,9 point pour les entrées et sorties, soit +1,3 % par an au total. Le solde des entrées et sorties est dit « apparent » car il se déduit de la variation d’effectif et du solde naturel. Aucune de ces séries communales ne donne la date d’abandon d’une terrasse. Cette date demanderait une source parcellaire, par exemple une comparaison de photographies aériennes datées ou un témoignage situé.
+
+![Population recensée à Saint-Germain-de-Calberte de 1968 à 2022.](figures/calberte-population.svg)
+
+[Insee, tableaux POP T1 et POP T2M de la commune](https://www.insee.fr/fr/statistiques/8581709?geo=COM-48155)
 
 > [!METHODE]
 > Pour commenter un paysage rural, partez d’une limite tangible. Si un muret se prolonge dans le bois, que faut-il savoir de l’ancienne parcelle, du dernier entretien et du temps de croissance des arbres pour interpréter cette continuité ?

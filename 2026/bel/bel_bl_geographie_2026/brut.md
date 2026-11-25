@@ -6,6 +6,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision des séries communales et des croquis** · GPT-6.2 Astra Ultra · session astra_lettres · vitesse non renseignée
+
 **Contribution (production figures)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
@@ -37,6 +39,12 @@ Le travail qui cesse peut aussi se faire remarquer par ce qui pousse. À Saint-G
 Un paysage peut garder longtemps une trace quand le mouvement qui l’a produite s’est ralenti ou inversé. À Saint-Germain-de-Calberte, les recensements donnent 445 habitants en 1982 et 477 en 2022. Le couvert boisé des versants conserve la marque d’une déprise plus ancienne pendant cette période de légère hausse entre les deux dates. Depuis un point de vue éloigné, les cimes paraissent former un ensemble continu. Sur le sentier, le promeneur distingue le bord d’un mur sous le taillis. À proximité, aux Calquières, les alignements soignés des jardins toujours cultivés tranchent sur les secteurs boisés. Pour l’un des propriétaires qui travaille cette terre, la façon dont l’eau s’écoule entre les pierres et l’effort nécessaire pour remonter un bloc importent autant que le dessin des terrasses. Pour le parc national, ces jardins sont aussi un patrimoine à faire découvrir. Une même pente livre ainsi des renseignements différents au randonneur qui contemple son profil et à celui qui connaît les gestes de sa mise en valeur.
 
 ![Figure 2 — Dans la vallée de Saint-Germain-de-Calberte, l’entretien inégal des parcelles rend la déprise sélectivement visible.](figures/saint-germain-de-calberte.svg)
+
+En reprenant les recensements intermédiaires, on distingue plusieurs retournements sous le faible gain de longue durée. La commune passe de 485 habitants en 1999 à 444 en 2006, puis de 441 en 2016 à 477 en 2022. Sur ce dernier intervalle, l’Insee décompose la variation annuelle moyenne de +1,3 % en une contribution du solde naturel de −0,6 point et une contribution du solde apparent des entrées et sorties de +1,9 point. Ces arrivées nettes à l’échelle communale peuvent coexister avec le boisement ancien d’une parcelle. Un arbre ne date ni le départ d’un cultivateur ni l’installation d’un nouveau résident. Une même ligne de terrasses peut devenir plus difficile à discerner sur la durée de plusieurs de ces retournements.
+
+![Population recensée à Saint-Germain-de-Calberte de 1968 à 2022.](figures/calberte-population.svg)
+
+[Insee, tableaux POP T1 et POP T2M de la commune](https://www.insee.fr/fr/statistiques/8581709?geo=COM-48155)
 
 Le renouvellement des usagers peut même dissimuler une décroissance résidentielle derrière les signes d’une grande intensité d’occupation. Le centre historique de Venise comptait près de 175 000 résidents en 1951, contre environ 48 500 à la fin de 2024. Cette série concerne la ville historique, distincte de Mestre sur la terre ferme et des autres îles. Aux abords du Rialto, les vitrines ouvertes, la file des passants sur le pont et le bruit continu des conversations pendant les heures de visite suggèrent l’affluence. Le registre municipal compte ceux qui résident sur place. Le passant, lui, rencontre aussi ceux qui travaillent dans le centre, y passent quelques heures ou y louent une chambre pour la nuit. La divergence apparaît mieux quand on considère la nature des commerces et des logements. Un appartement loué à la semaine peut demeurer éclairé longtemps après le départ du dernier ménage qui y vivait à l’année. Pour un voisin, le changement prend la forme d’interlocuteurs sans cesse renouvelés sur le palier ou de courses quotidiennes qu’il faut faire plus loin. Et la concentration de boutiques de souvenirs près du Rialto contraste avec certaines rues de Castello, à l’écart de ces itinéraires. Une image de la foule dit donc quelque chose de la demande touristique locale. Pour y lire la dépopulation, il faut aussi connaître les rythmes d’occupation du bâti et les limites du territoire où l’on compte les résidents.
 
