@@ -231,6 +231,8 @@
 | 2017 | ENS de Lyon | Séries LA/LV/SH (A/L) | Épreuve de spécialité version grecque (écrit) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/brut.md) | [md](2017/ens-de-lyon/ens-de-lyon_series-la-lv-sh-a-l_epreuve-de-specialite-version-grecque-ecrit_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Allemand | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_allemand_2017/guide.md) |
 | 2017 | ENS Rennes | D1 | Anglais | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/brut.md) | [md](2017/ens-rennes/ens-rennes_d1_anglais_2017/guide.md) |
+| 2005 | ENS Rennes | D1 | Composition d’ordre économique | [md](2005/ens-rennes/ens-rennes_d1_composition-dordre-economique_2005/brut.md) | [md](2005/ens-rennes/ens-rennes_d1_composition-dordre-economique_2005/guide.md) |
+| 2006 | ENS Rennes | D1 | Composition d’ordre économique | [md](2006/ens-rennes/ens-rennes_d1_composition-dordre-economique_2006/brut.md) | [md](2006/ens-rennes/ens-rennes_d1_composition-dordre-economique_2006/guide.md) |
 | 2007 | ENS Rennes | D1 | Composition d’ordre économique | [md](2007/ens-rennes/ens-rennes_d1_composition-dordre-economique_2007/brut.md) | [md](2007/ens-rennes/ens-rennes_d1_composition-dordre-economique_2007/guide.md) |
 | 2008 | ENS Rennes | D1 | Composition d’ordre économique | [md](2008/ens-rennes/ens-rennes_d1_composition-dordre-economique_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_composition-dordre-economique_2008/guide.md) |
 | 2009 | ENS Rennes | D1 | Composition d’ordre économique | [md](2009/ens-rennes/ens-rennes_d1_composition-dordre-economique_2009/brut.md) | [md](2009/ens-rennes/ens-rennes_d1_composition-dordre-economique_2009/guide.md) |
@@ -253,6 +255,8 @@
 | 2010 | ENS Rennes | D1 | Droit commercial | [md](2010/ens-rennes/ens-rennes_d1_droit-commercial_2010/brut.md) | [md](2010/ens-rennes/ens-rennes_d1_droit-commercial_2010/guide.md) |
 | 2012 | ENS Rennes | D1 | Droit commercial | [md](2012/ens-rennes/ens-rennes_d1_droit-commercial_2012/brut.md) | [md](2012/ens-rennes/ens-rennes_d1_droit-commercial_2012/guide.md) |
 | 2013 | ENS Rennes | D1 | Droit commercial | [md](2013/ens-rennes/ens-rennes_d1_droit-commercial_2013/brut.md) | [md](2013/ens-rennes/ens-rennes_d1_droit-commercial_2013/guide.md) |
+| 2005 | ENS Rennes | D1 | Droit public | [md](2005/ens-rennes/ens-rennes_d1_droit-public_2005/brut.md) | [md](2005/ens-rennes/ens-rennes_d1_droit-public_2005/guide.md) |
+| 2006 | ENS Rennes | D1 | Droit public | [md](2006/ens-rennes/ens-rennes_d1_droit-public_2006/brut.md) | [md](2006/ens-rennes/ens-rennes_d1_droit-public_2006/guide.md) |
 | 2007 | ENS Rennes | D1 | Droit public | [md](2007/ens-rennes/ens-rennes_d1_droit-public_2007/brut.md) | [md](2007/ens-rennes/ens-rennes_d1_droit-public_2007/guide.md) |
 | 2008 | ENS Rennes | D1 | Droit public | [md](2008/ens-rennes/ens-rennes_d1_droit-public_2008/brut.md) | [md](2008/ens-rennes/ens-rennes_d1_droit-public_2008/guide.md) |
 | 2009 | ENS Rennes | D1 | Droit public | [md](2009/ens-rennes/ens-rennes_d1_droit-public_2009/brut.md) | [md](2009/ens-rennes/ens-rennes_d1_droit-public_2009/guide.md) |
@@ -1274,6 +1278,7 @@
 | 2024 | X-ENS | MP | Mathématiques A | [md](2024/x-ens/x-ens_mp_maths-a_2024/brut.md) | [md](2024/x-ens/x-ens_mp_maths-a_2024/guide.md) |
 | 2025 | X-ENS | MP | Maths A | [md](2025/x-ens/x-ens_mp_maths-a_2025/brut.md) | [md](2025/x-ens/x-ens_mp_maths-a_2025/guide.md) |
 | 2026 | X-ENS | MP | Maths A | [md](2026/x-ens/x-ens_mp_maths-a_2026/brut.md) | [md](2026/x-ens/x-ens_mp_maths-a_2026/guide.md) |
+| 2020 | X-ENS | MP | Physique | [md](2020/x-ens/x-ens_mp_physique_2020/brut.md) | [md](2020/x-ens/x-ens_mp_physique_2020/guide.md) |
 | 2021 | X-ENS | MP | Physique | [md](2021/x-ens/x-ens_mp_physique_2021/brut.md) | [md](2021/x-ens/x-ens_mp_physique_2021/guide.md) |
 | 2022 | X-ENS | MP | Physique | [md](2022/x-ens/x-ens_mp_physique_2022/brut.md) | [md](2022/x-ens/x-ens_mp_physique_2022/guide.md) |
 | 2023 | X-ENS | MP | Physique | [md](2023/x-ens/x-ens_mp_physique_2023/brut.md) | [md](2023/x-ens/x-ens_mp_physique_2023/guide.md) |
