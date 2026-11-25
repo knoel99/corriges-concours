@@ -1,0 +1,117 @@
+{
+  "slug": "ens-rennes_d-e_economie-oral_2022",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Économie (oral)",
+    "annee": 2022,
+    "modalite": "oral"
+  },
+  "questions": 24,
+  "sujets": 24,
+  "intitules": {
+    "1": "Faut-il défendre la concurrence à tout prix ?",
+    "2": "A quoi sert l’égalité épargne investissement ?",
+    "3": "Optimum de Pareto et bien être",
+    "4": "Quelles sont les conséquences de l’information asymétrique",
+    "5": "L’explication du chômage involontaire",
+    "6": "Choix économiques et arbitrage intertemporel",
+    "7": "Le retour de l’inflation ?",
+    "8": "Les déterminants de la croissance",
+    "9": "Anticipations et politiques économiques",
+    "10": "Contrainte externe et conduite de la politique économique",
+    "11": "Le pouvoir de marché",
+    "12": "Le « pacte de stabilité » a-t-il encore un intérêt aujourd’hui ?",
+    "13": "Le niveau d’activité naturel",
+    "14": "Le rôle du marché interbancaire pour la création du monétaire",
+    "15": "Le modèle classique est-il toujours d’actualité ?",
+    "16": "« Je suppose que tout le monde est keynésien dans les tranchées » (robert Lucas, 2008)",
+    "17": "« La monnaie est une chose trop sérieuse pour la confier aux banques centrales. » M. Friedman",
+    "18": "Les déterminants de la fonction de consommation",
+    "19": "L’équilibre concurrentiel à long terme",
+    "20": "Comment faire partie de l’Union Economique et Monétaire ?",
+    "21": "Ressources communes et biens publics",
+    "22": "Le dilemme du prisonnier",
+    "23": "Structures de marché et efficacité",
+    "24": "Les multiplicateurs de politique économique"
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/annales-e-preuve-orale-d-e-conomie-d-e-2022_1683016679967-pdf",
+    "sujet_sha256": "2ea6514a064083321c93cd20ea06519578689acb25c55ace760c44e5d2fb4280",
+    "sujet_apercu_sha256": "c7ba5d9ebb1e3630e9a0ffeb624795e855683bdbd3088a7ab944d038d3822479",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-economie-oral-d-e-2022_1668097918939-pdf",
+    "rapport_sha256": "7a827d25f0420ac7d2441f8c5369cd5ec1f5e190d4ca4e33d74ad127c08d1807",
+    "rapport_apercu_sha256": "6e59e3d6c03a3b7f8ed40c5e7e0c96d7d4aa7cea2232d51714668ea206275ee6",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2022-1"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 24 exposés du fascicule officiel, dans l’ordre et avec les intitulés imprimés. Deux développements argumentés et une relance corrigée par sujet, une indication spécifique par guidé et cinq graphiques créés pour la session. Lecture du rapport et situation macroéconomique resituée en 2022."
+    }
+  ],
+  "figures": [
+    {
+      "question": "1",
+      "fichier": "figures/concurrence-et-perte.svg",
+      "legende": "Le triangle entre quantités 4 et 8 représente une perte sèche de 8 dans le modèle du premier exposé."
+    },
+    {
+      "question": "6",
+      "fichier": "figures/budget-intertemporel.svg",
+      "legende": "Les droites pivotent autour de la dotation. Une unité présente finance 1,25 unité future au taux réel de 25 %, choisi pour rendre la différence visible."
+    },
+    {
+      "question": "19",
+      "fichier": "figures/entree-libre-et-couts.svg",
+      "legende": "La firme produit 4 au minimum du coût moyen de 4. L’intersection avec le coût marginal donne ici l’équilibre de long terme avec libre entrée."
+    },
+    {
+      "question": "22",
+      "fichier": "figures/jeu-et-meilleures-reponses.svg",
+      "legende": "Le premier gain revient à A. Pour chaque choix adverse, dévier procure un gain privé plus élevé. L’équilibre (1, 1) est dominé par la coopération (3, 3)."
+    },
+    {
+      "question": "24",
+      "fichier": "figures/multiplicateur-et-fuites.svg",
+      "legende": "Avec c = 0,8, t = 0,25 et m = 0,1, le multiplicateur de la dépense publique vaut 2, sous les hypothèses indiquées dans l’exposé."
+    }
+  ],
+  "redaction": "Rédaction des 24 exposés du fascicule officiel, dans l’ordre et avec les intitulés imprimés. Deux développements argumentés et une relance corrigée par sujet, une indication spécifique par guidé et cinq graphiques créés pour la session. Lecture du rapport et situation macroéconomique resituée en 2022.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
+    ]
+  }
+}
