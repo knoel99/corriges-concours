@@ -1,0 +1,61 @@
+{
+  "slug": "ens-rennes_d1_anglais_2014",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2014,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-anglais-ecrit_1421747229906-pdf#page=3",
+    "rapport_jury": "https://www.ens-rennes.fr/medias/fichier/rapport-d1-2014-anglais-ecrit_1421747229906-pdf",
+    "sha256_rapport_jury": "8a27aa1f2aa670c71a3f1f3c75420ce82072297889ced8a1afee1cfaf50d6c33",
+    "temoin_presse": {
+      "titre": "Ben Crair, « The Period Is Pissed », The New Republic, 25 novembre 2013",
+      "url": "https://newrepublic.com/article/115726/period-our-simplest-punctuation-mark-has-become-sign-anger"
+    }
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "Composition"
+    ],
+    "questions_partiellement_traitees": [
+      "Version"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le rapport décrit une adaptation de 199 mots hors titre et en cite des fragments. Les traductions ci-dessous portent sur des passages repérés en croisant ces indices avec l’article de Ben Crair. Les intertitres sont rédactionnels. Le feuillet adapté et la délimitation complète de ses sept unités manquent. La question de rédaction figure à la page 3."
+  },
+  "longueur_expression": {
+    "mots": 95,
+    "regle": "100 mots maximum."
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "legende": "What can a final stop suggest?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du rapport officiel et de la publication de presse correspondante, traduction des éléments récupérables, rédaction intégrale de la composition et du guide. Le rapport décrit une adaptation de 199 mots hors titre et en cite des fragments. Les traductions ci-dessous portent sur des passages repérés en croisant ces indices avec l’article de Ben Crair. Les intertitres sont rédactionnels. Le feuillet adapté et la délimitation complète de ses sept unités manquent. La question de rédaction figure à la page 3."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
