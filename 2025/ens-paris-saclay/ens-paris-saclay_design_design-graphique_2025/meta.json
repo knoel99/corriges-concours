@@ -1,0 +1,81 @@
+{
+  "slug": "ens-paris-saclay_design_design-graphique_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Design graphique",
+    "annee": 2025
+  },
+  "redaction": "Cinq planches A3 originales avec analyse, recherches, logo, deux affiches abribus à l’échelle 1/10 et carrousel numérique. Le jury confirme une scène nationale du Jura, l’identité existante, deux spectacles, deux affiches abribus et un support social. Les visuels, le nom indiqué dans le dossier et les deux notices de spectacle manquent. Les titres, dates, lieux et disciplines des maquettes sont fictifs.",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Rapport_Design_Projet_oral.pdf#page=4",
+    "sujet_sha256": "972d4407edb5067b90692ff762bac7616404240fddcfaf3dd9cbdbd32072d50f",
+    "index_officiel": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=602",
+    "nature": "Présentation de l’épreuve dans le rapport du jury",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Rapport_Design_Projet_oral.pdf",
+    "rapport_sha256": "972d4407edb5067b90692ff762bac7616404240fddcfaf3dd9cbdbd32072d50f"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "fichier": "figures/01-lire-et-rechercher.svg",
+      "question": "Projet, planche 1",
+      "legende": "Trois recherches sur les rapports entre relief, signal et vibration."
+    },
+    {
+      "numero": 2,
+      "fichier": "figures/02-le-signe.svg",
+      "question": "Projet, planche 2",
+      "legende": "Signe, version inversée, tests de réduction et quatre teintes pour une identité de démonstration."
+    },
+    {
+      "numero": 3,
+      "fichier": "figures/03-abribus-danse.svg",
+      "question": "Projet, planche 3",
+      "legende": "Affiche A · duo chorégraphique fictif. Le titre se décale avec la danse."
+    },
+    {
+      "numero": 4,
+      "fichier": "figures/04-abribus-voix.svg",
+      "question": "Projet, planche 4",
+      "legende": "Affiche B · chœur parlé fictif. Un large silence au centre précède la seconde moitié du titre."
+    },
+    {
+      "numero": 5,
+      "fichier": "figures/05-carrousel.svg",
+      "question": "Projet, planche 5",
+      "legende": "Carrousel de trois visuels et texte de remplacement, avec une hiérarchie adaptée au téléphone."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "fournisseur": "codex",
+      "agent": "astra_physique",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Cinq planches A3 originales avec analyse, recherches, logo, deux affiches abribus à l’échelle 1/10 et carrousel numérique. Le jury confirme une scène nationale du Jura, l’identité existante, deux spectacles, deux affiches abribus et un support social. Les visuels, le nom indiqué dans le dossier et les deux notices de spectacle manquent. Les titres, dates, lieux et disciplines des maquettes sont fictifs."
+    }
+  ],
+  "couverture": {
+    "statut": "partiel",
+    "formats_A3": 5,
+    "parties": [
+      "Faire vibrer une scène jurassienne",
+      "Dessiner un signe qui tient à 14 mm",
+      "Le contretemps",
+      "La dernière voyelle",
+      "Passer du trottoir au fil social"
+    ],
+    "precision": "Le jury confirme une scène nationale du Jura, l’identité existante, deux spectacles, deux affiches abribus et un support social. Les visuels, le nom indiqué dans le dossier et les deux notices de spectacle manquent. Les titres, dates, lieux et disciplines des maquettes sont fictifs.",
+    "origine": "Description du sujet par le jury. Dossier distribué et annexes indisponibles.",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "Projet"
+    ]
+  }
+}
