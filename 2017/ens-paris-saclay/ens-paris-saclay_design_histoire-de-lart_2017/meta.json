@@ -1,0 +1,56 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2017",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2017,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2017_Sujet_1A_Design_Histoire_art.pdf",
+    "sha256_sujet": "94116bea96c8c58306837deb31ce8673dc27c672e37df18fcba4e64739c3ae46",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_Design.pdf",
+    "notices_documentaires": [
+      {
+        "titre": "Pavillon de l’Esprit Nouveau, Fondation Le Corbusier",
+        "url": "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/"
+      }
+    ],
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=279",
+    "sha256_rapport_jury": "0e260994d26a4a9edfae7ff149923a46e3e0a79e20520cd5f6614946dd90b2c7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/analyse-du-design.svg",
+      "question": "I. L’exposition peut privilégier la nouveauté sensible et maintenir les hiérarchies de la commande",
+      "legende": "Deux dispositifs de l’exposition de 1925, le salon d’un collectionneur et la cellule proposée pour un habitat reproductible."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux compositions après lecture de la page 1 du sujet. Problématisation et datation des exemples, vérification des notices documentaires et du dessin analytique original.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Précision sur les voix dans la citation de Waldemar-George et sur le rôle du visiteur face aux pavillons de 1925. Consultation du rapport écrit."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2018",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2018,
+    "modalite": "écrit"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_Sujet_1A_Design_Histoire_art.pdf",
+    "sha256_sujet": "dd242ce108963dd47f02f71534dc46ff07e2b0a5997d9a5071110de1fef27a7e",
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2018_RE_1A_Design.pdf",
+    "notices_documentaires": [
+      {
+        "titre": "Lit Aube et Crépuscule, musée de l’École de Nancy",
+        "url": "https://musee-ecole-de-nancy.nancy.fr/fileadmin/MBA/Scolaires/2019/LIT_AUBE_ET_CREPUSCULE.pdf"
+      },
+      {
+        "titre": "Chaise longue, Fondation Le Corbusier",
+        "url": "https://www.fondationlecorbusier.fr/oeuvre-mobilier/chaise-longue-le-corbusier-pierre-jeanneret-charlotte-perriand-1928/"
+      }
+    ],
+    "index_annales": "https://ens-paris-saclay.fr/admission/concours/concours-pre-master/annales-concours-pre-master?field_orientation_1c_target_id%5B%5D=293&field_year_target_id%5B%5D=277",
+    "sha256_rapport_jury": "c8c46d4627f12457af6c32c67c5d52413050f8015e81fd16b34260a58a134e8c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/analyse-du-design.svg",
+      "question": "I. L’ornement peut faire comprendre la fonction intime du meuble",
+      "legende": "Deux rapports au corps. Le lit de Gallé fait sentir les rythmes du sommeil, tandis que la chaise longue permet de régler une posture."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux compositions après lecture de la page 1 du sujet. Problématisation et datation des exemples, vérification des notices documentaires et du dessin analytique original.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    },
+    {
+      "phase": "relecture_corrige",
+      "session": "lettres_design",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture des fonctions affectives du meuble et de la prescription des usages en regard du rapport écrit, avec exercice guidé."
+    }
+  ]
+}
