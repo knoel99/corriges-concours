@@ -1,0 +1,91 @@
+{
+  "slug": "x_pc_physique-a_2018",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2018
+  },
+  "questions": 20,
+  "intitule": "Réflexion sur le cuivre et détection des ondes gravitationnelles",
+  "redaction": "Exercice de réflexion électromagnétique et 19 questions résolues dans les deux éditions. Lectures indépendantes des figures 1 et 2 pour la loi de montée, les échelles de masse, le délai géométrique et la quasi-périodicité.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_PC_sujet_ePhyA.pdf",
+    "sujet_sha256": "d4a43d2fe5d275ca8d76b5824e6a4fe4e7a27bea939be27aa889e2352469213a",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/10/18_PC_rap_ePhyA.pdf",
+    "rapport_sha256": "d95430a56e638a46e18ff29a7375af2d54456afeb5c4d83c7245a3dc4f69b087"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Rapport du jury sur l’exercice ouvert, la réflexion à indice complexe, l’exploitation quantitative de deux spectrogrammes et la localisation par plusieurs détecteurs."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Exercice de réflexion électromagnétique et 19 questions résolues dans les deux éditions. Lectures indépendantes des figures 1 et 2 pour la loi de montée, les échelles de masse, le délai géométrique et la quasi-périodicité."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "4",
+      "fichier": "figures/michelson.svg",
+      "legende": "La séparatrice partage l’onde entre deux allers-retours orthogonaux. La recombinaison envoie une partie du signal vers la photodiode."
+    },
+    {
+      "numero": 2,
+      "question": "6 et 8",
+      "fichier": "figures/montee.svg",
+      "legende": "Fréquence en fonction du temps avant la fusion. Quatre points lus sur la figure 1 du sujet sont comparés à une loi en puissance −3/8 normalisée au point à −4 s."
+    },
+    {
+      "numero": 3,
+      "question": "13",
+      "fichier": "figures/localisation.svg",
+      "legende": "Chaque front d’onde est perpendiculaire à la propagation. La différence de temps d’arrivée mesure la projection de la base L1–H1."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Exercice",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19"
+    ]
+  }
+}
