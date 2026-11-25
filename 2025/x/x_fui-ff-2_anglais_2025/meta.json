@@ -26,9 +26,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/FUI-FF%202%202025%20Anglais.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "30ff3b8fea4fc36a7402bc96566935890527251e3a906a55f1e53f5ee27f90e0"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -65,6 +66,17 @@
       "modifications": true,
       "perimetre": "Relecture des deux versions sur Hurst ; hausse de salaire du témoin et référence locale, périmètre de l’enquête et différence entre intentions et départs, essai et comptes contrôlés.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Correction de deux extrapolations sur le début de carrière et attribution des observations à Forslev, distincte d’Edwards-Dashti. Vérification de l’échantillon et de la métrique de la comparaison internationale."
     }
   ]
 }

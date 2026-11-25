@@ -31,9 +31,10 @@
   ],
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20ANGLAIS.pdf",
-    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports"
+    "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
+    "sujet_sha256": "1a724a3fe92c321d272d183c703679603fbcff30cdd46b0f5f43ed8eb61e862c"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -86,6 +87,17 @@
       "modifications": true,
       "perimetre": "Relecture du brut et du guidé sur Graham-Harrison et McCurry ; calendrier comparé des réformes, destination des transferts patrimoniaux et nom du dispositif Prathyasa, recommandations de Harper et longueurs.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Réponse sur les migrations complétée par le cas britannique, les droits des travailleurs et l’argument écologique. Comparaison datée des régimes de retraite et de la réserve explicite de Crimmins."
     }
   ]
 }

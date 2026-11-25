@@ -32,9 +32,10 @@
   "sources": {
     "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20D'ANGLAIS.pdf",
     "index_banque": "https://www.polytechnique.edu/admission-cycle-ingenieur/sujets-et-rapports",
-    "vocabulaire": "https://now.tufts.edu/2022/06/15/how-slavery-ended-slowly-and-emancipation-laws-often-kept-enslaved-bondage-and-rewarded"
+    "vocabulaire": "https://now.tufts.edu/2022/06/15/how-slavery-ended-slowly-and-emancipation-laws-often-kept-enslaved-bondage-and-rewarded",
+    "sujet_sha256": "d5aafe58c0e82febace637b75fef81df719190ff0725be2dae8b4b49c89b9796"
   },
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -87,6 +88,17 @@
       "modifications": true,
       "perimetre": "Relecture du brut et du guidé sur Morton ; terme extérieur à l’article et analogie distingués, financement supplémentaire et chiffres publics contrôlés, statut hypothétique du rôle écologique, vérification de l’essai.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "vitesse": null,
+      "effort": "ultra",
+      "date": "2026-11-25",
+      "modifications": true,
+      "fournisseur": "codex",
+      "session": "astra_langues",
+      "perimetre": "Définition historique de ghostlining vérifiée sur l’entretien personnel de Manjapra et illustrée par les bénéficiaires des indemnisations, traitement explicite de la prémisse inversée sur les financements et de la conclusion de Morton."
     }
   ]
 }

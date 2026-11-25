@@ -6,15 +6,17 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Financial pressures on millennials
 
-Hurst links several setbacks across a generation’s working life. Many graduates sought their first position just as banks failed and recruitment slowed. Later, the pandemic disrupted careers that had barely recovered. Tuition debt continued to absorb earnings while buying a home became prohibitively expensive. Against that background, someone who doubts that extra effort will bring financial security may reasonably place greater value on free time. (Hurst, lines 32–39.)
+People of Hurst’s generation finished their education as the financial crash unfolded. Roughly a decade afterwards Covid delivered another shock. Loan repayments weigh on earnings, and property costs have moved beyond what many can afford. Buying an occasional coffee or paying for an outing is still possible, while obtaining a mortgage looks remote. That gap helps explain why workers might seek more control over their time. (Hurst, lines 32–39.)
 
 ### 2. Why repeated departures concern employers
 
-From a supervisor’s perspective, frequent departures can look like broken commitments. A colleague who leaves takes experience and relationships away. Someone else must cover unfinished assignments, recruit a successor and teach that person how the organisation works. Those who stay may lose confidence in their team. Hurst acknowledges these practical costs through the testimony of a hiring specialist, while questioning whether loyalty can be demanded regardless of working conditions. (Hurst, lines 18–26.)
+A French manager whom Hurst knows reads younger employees’ readiness to leave as evidence of weak commitment. Vanessa Forslev, who advises firms on personnel matters and belongs to that generation herself, explains what happens to a team. Work is disrupted, a successor needs costly instruction, and colleagues lose heart. Hurst takes these complaints seriously while defending a worker’s decision to leave an unsuitable position. (Hurst, lines 1–7 and 18–26.)
 
 ### 3. The author’s criticism of business practices
 

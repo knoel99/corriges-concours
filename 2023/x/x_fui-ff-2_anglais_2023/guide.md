@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 360 à 440 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20Session%20Printemps%20SUJET%20ANGLAIS.pdf)
@@ -17,18 +19,18 @@ L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de
 ### 1. Benefits and costs of migration
 
 > [!INDICATION]
-> Comparer les effets du recrutement dans le pays d’arrivée et dans le pays où le travailleur a été formé.
+> Suivez les effets d’un recrutement de personnel soignant sur les deux systèmes de santé. La liste britannique citée impose une prudence à l’égard de certains pays. Le dernier paragraphe ajoute l’avantage écologique que les auteurs voient à la mobilité face à une croissance démographique sans limite.
 
-Receiving countries can fill vacant jobs and support services when their workforce is shrinking. Migrants may send earnings home or return with useful skills, especially when employers respect their rights and provide training. Yet recruiting nurses abroad can leave communities that paid for their education without adequate medical care. Benefits accruing to the destination cannot by themselves justify the damage elsewhere. (Graham-Harrison and McCurry, lines 72–79).
+Migration lets a destination with too few workers sustain essential services. If newcomers enjoy decent conditions and opportunities to learn, money and professional knowledge may also reach their places of origin. Britain nevertheless avoids recruiting medical staff from certain countries because losing trained people can undermine treatment there. The authors favour well-managed mobility over continually increasing human numbers on a planet already under environmental strain. (Graham-Harrison and McCurry, lines 72–79).
 
 ![Following a healthcare worker across borders](figures/migration-and-care.svg)
 
 ### 2. Retirement reforms in France and the United States
 
 > [!INDICATION]
-> Préciser quand le changement a été annoncé dans chaque pays par rapport au départ des personnes concernées.
+> Situez l’article en janvier 2023, quand le passage de 62 à 64 ans était en France un projet contesté. Le comparatif de Crimmins porte sur le moment où les intéressés ressentent l’effet de l’annonce. Elle refuse explicitement de présenter les États-Unis comme un exemple de bonne politique.
 
-French workers protested when ministers proposed moving the threshold to sixty-four, two years later than before. Many protesters had already made plans for the near future. Across the Atlantic, legislators raised the threshold for the postwar generation around 1985, well before those workers expected to retire. According to Crimmins, that timing limited opposition but left some Americans discovering their new entitlement surprisingly late. (Graham-Harrison and McCurry, lines 29–40).
+In January 2023 French ministers wanted to move pension eligibility from sixty-two to sixty-four. People close to retiring protested because the proposal upset immediate plans. American lawmakers had acted decades earlier, during the mid-eighties, for workers then far from retirement. Crimmins observes that delayed consequences drew little attention at first and surprised some people later. She expressly declines to endorse the American policy. (Graham-Harrison and McCurry, lines 29–40).
 
 ### 3. Two policy responses in Kerala
 
@@ -69,4 +71,4 @@ For me, successful adaptation concerns the quality of relationships between peop
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 61, 63, 70 et 65 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 65, 63, 70 et 65 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
