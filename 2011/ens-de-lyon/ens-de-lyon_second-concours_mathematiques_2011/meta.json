@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2011",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2011
+  },
+  "questions": 24,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2011/sujet_ecrit_2c2011_mathematiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "85c07e6d330759bd094b18716765f6fb6d1103c0d1b8d76c05ecbfb32baae29f"
+  },
+  "figures": [
+    {
+      "fichier": "figures/ellipse-et-foyers.svg",
+      "question": "9.c",
+      "legende": "Pour a = 4 et b = 1, les foyers de l’image numérique sont −2 et 2. La somme des deux distances en orange vaut 5 sur le bord."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des trois parties sur les six pages natives de l’énoncé. Contrôle des foyers aux deux échelles de Q9.c, du symbole T de Q10.a et de la condition de trace nulle de Q13.b. Ellipse focale calculée, puis démonstration de la généralisation à diagonale constante. Rapport écrit non rattaché dans le sommaire institutionnel.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
