@@ -1,0 +1,128 @@
+{
+  "slug": "ens-de-lyon_second-concours_chimie_2008",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Chimie",
+    "annee": 2008
+  },
+  "questions": 55,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2008/sujet-ecrit-2008-second-concours_chimie.pdf",
+    "sujet_sha256": "d50b14c76255fd3223bcdf96a6058cac33513a41b2e3dc8da99046770516287a",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours-de-lens-lyon/session-2008/rapport-2008-second-concours_ecrit_chimie.pdf",
+    "rapport_sha256": "ced1b2b85d44c846cf51099480e1b2ef28c542801537042f21e4db129acbaa4f"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "A.1",
+      "A.2",
+      "A.3",
+      "A.4",
+      "A.7",
+      "A.8",
+      "A.9",
+      "A.10",
+      "A.11",
+      "A.12",
+      "A.13",
+      "A.14",
+      "A.15",
+      "A.16",
+      "A.17",
+      "A.18",
+      "A.19",
+      "A.20",
+      "A.22",
+      "A.23",
+      "A.24",
+      "A.25",
+      "B.1",
+      "B.2",
+      "B.3",
+      "B.4",
+      "B.5",
+      "C.3",
+      "C.4",
+      "C.5",
+      "C.6",
+      "C.7",
+      "C.8.a",
+      "C.8.b",
+      "C.8.c",
+      "C.8.d",
+      "C.8.e",
+      "C.8.f",
+      "D.1",
+      "D.2",
+      "D.3",
+      "D.4",
+      "D.5",
+      "D.6",
+      "D.7",
+      "D.8",
+      "D.9"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [
+      "A.5",
+      "A.6",
+      "A.21",
+      "B.6",
+      "B.8",
+      "B.9",
+      "C.1",
+      "C.2"
+    ],
+    "precision": "Ces éditions traitent 47 des 55 questions ou sous-questions terminales imprimées. La partie D d’osmométrie est entière. En A et B, les passages sur l’activation de l’amorceur, la reproduction du cycle catalytique ou la préparation d’une mousse (A.5, A.6, A.21, B.6, B.8, B.9) sont hors couverture, ainsi que C.1 et C.2 sur la réalisation matérielle de l’hydrolyse. Le scan saute de B.6 à B.8 et ne contient aucune B.7. Le rapport de jury et les onze pages du sujet ont été consultés."
+  },
+  "figures": [
+    {
+      "question": "A.1",
+      "fichier": "figures/methacrylate-de-methyle.svg",
+      "legende": "Formule topologique du méthacrylate de méthyle. Le carbone carbonylé de l’ester est directement lié à l’alcène."
+    },
+    {
+      "question": "A.25",
+      "fichier": "figures/tacticites-du-polypropylene.svg",
+      "legende": "Quatre centres successifs dans chaque portion de chaîne. Les coins pleins sont dirigés vers le lecteur et les coins hachurés vers l’arrière."
+    },
+    {
+      "question": "C.4",
+      "fichier": "figures/quatre-motifs-du-copolymere.svg",
+      "legende": "Exemple de séquence de quatre motifs. Dans OAc, la coupure lors de la saponification concerne la liaison entre O et le carbone carbonylé."
+    },
+    {
+      "question": "C.7",
+      "fichier": "figures/deux-equivalences-de-dosage.svg",
+      "legende": "Seuls les volumes d’équivalence et les plages de virage sont fournis. La ligne montre qualitativement les deux chutes successives de pH."
+    },
+    {
+      "question": "D.1",
+      "fichier": "figures/equilibre-osmotique.svg",
+      "legende": "Deux compartiments à l’équilibre. La dénivellation h entre les surfaces traduit l’excès de pression du côté solution à la hauteur de référence."
+    },
+    {
+      "question": "D.9",
+      "fichier": "figures/extrapolation-osmometrie.svg",
+      "legende": "Les hauteurs du tableau sont divisées par les concentrations correspondantes. L’interception de la droite à c = 0 détermine la masse molaire en nombre."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions pour 47 des 55 questions et sous-questions terminales réellement imprimées. Vérification de la numérotation, des constantes de terminaison, des volumes d’équivalence et de la régression des cinq valeurs osmotiques. Six figures originales. Les huit questions hors couverture sont indiquées individuellement."
+    }
+  ]
+}
