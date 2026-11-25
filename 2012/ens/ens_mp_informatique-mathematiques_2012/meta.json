@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2012",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2012,
+    "duree_heures": 4
+  },
+  "questions": 34,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-i/session-2012/mp2012_sujet_infomath_ulc.pdf",
+    "sujet_sha256": "c11bf9d47ee4d56f304a51b379cede2f72cb19a16d3af9f42d2e328f2ef172a3",
+    "page_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-2012-info",
+    "identification": "Garde ULC, MP concours INFO, durée 4 h. Huit pages de sujet numérotées 2 à 9 après la garde. L’index ENS rattache à cette épreuve son sujet sans lien vers un rapport."
+  },
+  "figures": [
+    {
+      "fichier": "figures/stabilisation-des-coefficients.svg",
+      "question": "1.6",
+      "legende": "Exemple de troncatures. En descendant dans une colonne, son coefficient prend sa valeur définitive dès que le degré de troncature atteint le rang indiqué."
+    },
+    {
+      "fichier": "figures/premier-retour-de-dyck.svg",
+      "question": "3.6",
+      "legende": "Le mot aababbab revient à zéro pour la première fois après six lettres. Il se factorise en a, abab, b, puis ab."
+    },
+    {
+      "fichier": "figures/iteration-et-union.svg",
+      "question": "3.8",
+      "legende": "Le test global de présence de tous les mots sur a échoue à chaque étape finie. Il réussit pour la réunion et active la nouvelle lettre b."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 34 questions et de leurs subdivisions sur le sujet original. Lecture visuelle des formules, correction de la distance en valuation zéro, distinction coefficients réels et entiers, contre-exemple à la continuité croissante implicite de 3.8 et cas du préfixe vide en 3.12. Vérification des récurrences formelles et des comptages de mots, trois figures originales."
+    }
+  ]
+}
