@@ -45,9 +45,7 @@ Le type unit possède deux valeurs sémantiques, le bas et la réussite. Cela re
 **a.** Écrivons $f(e)=\sup_i f_i(e)$. Si $e\le e'$, chaque $f_i(e)\le f_i(e')\le f(e')$, d'où $f(e)\le f(e')$. Pour une suite croissante $(e_j)$, posons $a_{ij}=f_i(e_j)$. Ce tableau croît en chacun de ses indices. La diagonale $a_{kk}$ en majore toute case à partir de $k=\max(i,j)$. Par la propriété de plus petit majorant, les deux bornes itérées $\sup_i\sup_j a_{ij}$ et $\sup_j\sup_i a_{ij}$ sont donc toutes deux égales à $\sup_k a_{kk}$. Par continuité de chaque $f_i$, on obtient
 
 $$
-
 f(\sup_j e_j)=\sup_i\sup_j f_i(e_j)=\sup_j f(e_j).
-
 $$
 
 Ainsi $f$ est continue. Cet argument n'exige que des bornes de suites croissantes, celles fournies dans le sujet.
@@ -236,9 +234,7 @@ Notons $s{<}k$ le préfixe de longueur $k$. Les éléments $f_{s{<}k}$ sont stri
 Fixons un environnement où la variable $y$ vaut $f_{s{<}k}$. Le programme $b::y$ envoie $\bot$ sur $\bot$ par stricte évaluation de l'égalité à 0. Il envoie 0 sur $b$, et $n+1$ sur $f_{s{<}k}(n)$, soit $s_n$ si $n<k$ et $\bot$ sinon. C'est exactement $f_{(b::s){<}(1+k)}$. Par les clauses de l'abstraction et de l'application, on obtient l'égalité demandée
 
 $$
-
 \llbracket p/b\rrbracket(f_{s{<}k})=\llbracket p\rrbracket(f_{(b::s){<}(k+1)}).
-
 $$
 
 Cette identité de valeurs vaut aussi pour les suites totales en passant à la borne supérieure.
