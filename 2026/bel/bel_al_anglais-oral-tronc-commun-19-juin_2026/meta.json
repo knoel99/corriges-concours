@@ -1,0 +1,78 @@
+{
+  "slug": "bel_al_anglais-oral-tronc-commun-19-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (oral tronc commun 19 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 11,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_anglais_tronc_commun19_juin1.pdf",
+    "sujet_sha256": "f6c81b424096c1ce823c3f82ba1753e1bdcf8447173000ab416a16b15f31b504",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_anglais_tc.pdf",
+    "rapport_sha256": "68c198f2905ae8891899e4364652b38aed0092fce531f2750e027d5a8b78adc2",
+    "documents": {
+      "bradstreet": "https://www.poetryfoundation.org/poems/43707/verses-upon-the-burning-of-our-house-july-10th-1666",
+      "donne": "https://www.poetryfoundation.org/poems/44132/a-valediction-of-weeping",
+      "browning": "https://www.poetryfoundation.org/poems/43730/my-heart-and-i",
+      "muldoon": "https://etheses.durham.ac.uk/id/eprint/15453/1/RCThe_Work_of_Elegy_-_Corrected.pdf#page=145"
+    },
+    "precision": "La liste officielle comporte onze références. Trois poèmes sont expliqués en entier, ceux de Bradstreet, Donne et Barrett Browning. Pour Muldoon, les passages reproduits dans une thèse permettent une analyse partielle. Pour les sept œuvres de prose, les références indiquées par l’ENS ne délimitent pas les extraits du jour."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1 — Bradstreet",
+      "4 — Donne",
+      "7 — Barrett Browning"
+    ],
+    "questions_partiellement_traitees": [
+      "9 — Muldoon, passages cités par Clarkson, pp. 138–144"
+    ],
+    "questions_non_traitees": [
+      "2 — Smith",
+      "3 — Twain",
+      "5 — Powers",
+      "6 — Rhys",
+      "8 — Defoe",
+      "10 — McCarthy",
+      "11 — Wright"
+    ],
+    "motif": "La liste officielle comporte onze références. Trois poèmes sont expliqués en entier, ceux de Bradstreet, Donne et Barrett Browning. Pour Muldoon, les passages reproduits dans une thèse permettent une analyse partielle. Pour les sept œuvres de prose, les références indiquées par l’ENS ne délimitent pas les extraits du jour."
+  },
+  "figures": [
+    {
+      "fichier": "figures/voix.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "Whom can the speaker address?"
+    },
+    {
+      "fichier": "figures/sol.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "Reading a place of burial"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la feuille officielle du 19 juin et du rapport. Rédaction des commentaires en anglais, des exercices, relances et figures des deux éditions. La liste officielle comporte onze références. Trois poèmes sont expliqués en entier, ceux de Bradstreet, Donne et Barrett Browning. Pour Muldoon, les passages reproduits dans une thèse permettent une analyse partielle. Pour les sept œuvres de prose, les références indiquées par l’ENS ne délimitent pas les extraits du jour."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
