@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d-e_composition-dordre-economique_2020",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2020,
+    "modalite": "écrit"
+  },
+  "intitule": "Quels investissements pour la croissance ?",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-conomie-d-e-2020_1601913252050-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-economie-d-e-2020_1604400061022-pdf",
+    "sujet_sha256": "a45f461afe6693ed6e4f08b11a82363eb0e7cac68448ed0815c86dc8a4fc0532",
+    "rapport_sha256": "1f478554605e422935eecfaeb717a6ae86e99285019030dcc1360be55017c1ef",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2020-1",
+    "apercu_sujet_sha256": "7525b3e0633ce5cbc12706330e373ea874ee5a5ffc180751dbd34438d45da1c4",
+    "apercu_rapport_sha256": "d78547078858f945e7f552e63aea659163e455a86528d95b470b160ea7a101f6",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 20 - 330"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/solow-effet-de-niveau.svg",
+      "legende": "Économie stylisée. Une part investie passant de 0,22 à 0,32 déplace l’état stationnaire du capital par travailleur efficace de 4,84 à 10,24. Le taux de progrès technique reste donné."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/complementarites-productives.svg",
+      "legende": "Une rupture dans les complémentarités peut limiter la productivité d’un investissement même bien financé."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Quels investissements pour la croissance ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Quels investissements pour la croissance ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}

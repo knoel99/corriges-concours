@@ -1,0 +1,58 @@
+{
+  "slug": "ens-rennes_d-e_composition-dordre-economique_2021",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D-E",
+    "matiere": "Composition d’ordre économique",
+    "annee": 2021,
+    "modalite": "écrit"
+  },
+  "intitule": "Assiste-t-on actuellement à un retour de la politique budgétaire ?",
+  "questions": 1,
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/sujet-e-crit-e-conomie-2021_1631710046581-pdf",
+    "rapport": "https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-economie-ecrit-d-e-2021_1645007204835-pdf",
+    "sujet_sha256": "cd4563f93049e91e6ede8987e5108fd69595b7c77384c9f1ac8d0043c03c3070",
+    "rapport_sha256": "8100c2484ddeeb0205a90ae0ec95da92ec15456f133bb738cdf75bd3030e010f",
+    "index": "https://www.ens-rennes.fr/admission/concours1a/d-e/concours-droit-economie-2021",
+    "apercu_sujet_sha256": "fde9ffb96429baabeec4b7bc0e789641ecdff4f8bf062701211a9dc620bebd8c",
+    "apercu_rapport_sha256": "4c4d015a12130e02853ed7f7df7687dfc0d10a19006d4c11665b4813a36525af",
+    "page_pdf": 1,
+    "fin_pdf": 1,
+    "reference_garde": "R 21 - 330"
+  },
+  "figures": [
+    {
+      "question": "1",
+      "section": "A1",
+      "fichier": "figures/rounds-du-multiplicateur.svg",
+      "legende": "Chaque tour de dépenses conserve ici 60 % du précédent. Une impulsion initiale de 100 engendre 250 au total dans ce modèle à prix fixes, en sommant tous les tours."
+    },
+    {
+      "question": "1",
+      "section": "A2",
+      "fichier": "figures/stabilisation-et-investissement.svg",
+      "legende": "La même dépense peut contribuer à plusieurs objectifs dont les effets ne s’observent pas au même moment."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet exact « Assiste-t-on actuellement à un retour de la politique budgétaire ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet."
+    }
+  ],
+  "redaction": "Rédaction des deux éditions sur le sujet exact « Assiste-t-on actuellement à un retour de la politique budgétaire ? » à partir des fac-similés du sujet et du rapport de jury. Les 2 schémas et les indications du guidé ont été élaborés pour ce sujet.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1"
+    ]
+  }
+}
