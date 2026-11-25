@@ -1088,6 +1088,7 @@
 | 2026 | X-ENS | PSI | Physique PSI | [md](2026/x-ens/x-ens_psi_physique-psi_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-psi_2026/guide.md) |
 | 2026 | X-ENS | PSI | Physique U | [md](2026/x-ens/x-ens_psi_physique-u_2026/brut.md) | [md](2026/x-ens/x-ens_psi_physique-u_2026/guide.md) |
 | 2009 | X-ENS | PSI | Sciences industrielles | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/brut.md) | [md](2009/x-ens/x-ens_psi_sciences-industrielles_2009/guide.md) |
+| 2010 | X-ENS | PSI | Sciences industrielles | [md](2010/x-ens/x-ens_psi_sciences-industrielles_2010/brut.md) | [md](2010/x-ens/x-ens_psi_sciences-industrielles_2010/guide.md) |
 | 2012 | X-ENS | PSI | Sciences industrielles | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/brut.md) | [md](2012/x-ens/x-ens_psi_sciences-industrielles_2012/guide.md) |
 | 2013 | X-ENS | PSI | Sciences industrielles | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/brut.md) | [md](2013/x-ens/x-ens_psi_sciences-industrielles_2013/guide.md) |
 | 2014 | X-ENS | PSI | Sciences industrielles (corrigé partiel) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/brut.md) | [md](2014/x-ens/x-ens_psi_sciences-industrielles_2014/guide.md) |
