@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2006,
+    "duree_heures": 2
+  },
+  "questions": 11,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2006.pdf",
+    "sujet_sha256": "e3cc917e2dd192f76dbad70adcc894d964ba3c9d4668e87d5eb57e39e4a72e39"
+  },
+  "figures": [
+    {
+      "fichier": "figures/alliances-et-cardinaux.svg",
+      "question": "4",
+      "legende": "Avec les chiffres d’affaires 2, 2, 3 et 5 et un objectif de 7, les trois alliances tracées sont stables. Les deux dernières comptent seulement deux entreprises."
+    },
+    {
+      "fichier": "figures/compteur-binaire.svg",
+      "question": "5",
+      "legende": "Les bits sont dessinés du poids fort au poids faible. Le masque 26 choisit les indices 1, 3 et 4. Son successeur 27 ajoute l’indice zéro."
+    },
+    {
+      "fichier": "figures/saut-de-masque.svg",
+      "question": "11",
+      "legende": "Pour les montants triés 1, 2, 3, 4 et l’objectif 6, le masque 7 est stable. Le prélude libère ses trois premiers bits. Le masque 8 doit être complété par l’indice 1, donnant 10."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des onze questions, avec invariant du solde, traitement des paramètres modifiables, preuve des sauts de masques et des complexités. Vérification exhaustive des sorties pour les tableaux triés de taille 1 à 7 à valeurs entre 1 et 5, et l’ensemble de leurs objectifs atteignables. Trois illustrations originales."
+    }
+  ]
+}
