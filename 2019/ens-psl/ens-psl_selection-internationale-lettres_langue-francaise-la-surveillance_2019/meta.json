@@ -1,0 +1,55 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_langue-francaise-la-surveillance_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Langue française — la surveillance",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "questions": 6,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sil_2019_-_sujet_langue_francaise.pdf",
+    "sujet_sha256": "020bbbdd26c64644615819b549db2e3a5803d09472952852ab02c204eeae94a4",
+    "source_imprimee": "Alain Damasio, « 701 000 heures de garde à vue », janvier 2014."
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Compréhension · quatre expressions",
+      "Résumé",
+      "Rédaction"
+    ]
+  },
+  "longueurs": {
+    "resume": 200,
+    "redaction": 351,
+    "methode": "groupes séparés par un espace"
+  },
+  "figures": [
+    {
+      "fichier": "figures/raisonnement.svg",
+      "legende": "Comment le désir de contrôle circule-t-il ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du sujet officiel et du texte entier. Quatre réponses de compréhension contextualisées, résumé sous contrainte, rédaction argumentée, explication et schéma dans les deux éditions."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
