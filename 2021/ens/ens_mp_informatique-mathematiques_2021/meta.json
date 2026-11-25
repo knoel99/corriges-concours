@@ -1,0 +1,56 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2021",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2021
+  },
+  "questions": 54,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/07/2021_MP_sujet_InfoMath.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2021/08/21_MP_rap_eInfoMath.pdf",
+    "sha256_sujet": "1454ab3424e22bd23189909af85727af57996631cb0535dff8292a6d91684f27"
+  },
+  "figures": [
+    {
+      "fichier": "figures/partage-sous-arbre.svg",
+      "question": "II.2.c",
+      "legende": "Les deux décisions identiques sur x1 sont fusionnées. Les arêtes pointillées codent 0 et les arêtes pleines 1."
+    },
+    {
+      "fichier": "figures/trois-zeros.svg",
+      "question": "II.3",
+      "legende": "Décision du seuil de trois zéros sur cinq bits. Chaque trajet se termine dès que le résultat est déterminé."
+    },
+    {
+      "fichier": "figures/arbre-parite.svg",
+      "question": "II.5.a",
+      "legende": "L’arbre lit les trois variables et finit en 1 pour un poids pair. Les seuls sommets partagés sont les terminaux."
+    },
+    {
+      "fichier": "figures/langage-six-bits.svg",
+      "question": "III.1.b",
+      "legende": "Diagramme des mots de six bits commençant par 0 et finissant par 1 avec deux occurrences au moins de chaque bit."
+    },
+    {
+      "fichier": "figures/coupe-grille.svg",
+      "question": "VI.8.a",
+      "legende": "Sur une grille de six par six, les arêtes épaisses forment un appariement entre les deux moitiés verticales."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale, 54 réponses dans chacune des deux éditions à partir du sujet et du rapport. Lecture des deux figures originales, construction et contrôle exhaustif des quatre diagrammes, preuves des constructions, des bornes et des exceptions. Contre-exemples aux formulations non valables et preuve indépendante de la borne exponentielle de la grille non triviale.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
