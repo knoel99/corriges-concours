@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2004",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2004
+  },
+  "questions": 23,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2004/sujet-ecrit-2004-second-concours_mathematiques.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "6312bf77c1729934b7fab16577326aa46718ff7b38b1279c51b049dc35e23522"
+  },
+  "figures": [
+    {
+      "fichier": "figures/nombre-moyen-jusqua-quatre.svg",
+      "question": "II.1",
+      "legende": "Le nombre moyen saute à droite de 1, garde un plateau jusqu’à 2, puis croît suivant les deux expressions obtenues par intégration."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction sur l’original commun Ulm–Lyon. Suivi des deux demi-sauts aux bornes en I.5, contre-exemple à la minoration en II.2 sur la première unité, transformée et limite contrôlées, modèle probabiliste précisé. Graphique exact du nombre moyen sur [0,4].",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
