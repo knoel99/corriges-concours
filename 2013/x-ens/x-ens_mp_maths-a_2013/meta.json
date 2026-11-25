@@ -1,0 +1,36 @@
+{
+  "slug": "x-ens_mp_maths-a_2013",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP",
+    "matiere": "Maths A",
+    "annee": 2013
+  },
+  "questions": 43,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/13_mp_math_a_-xlc.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/07/13_mpi_rap_ematha.pdf",
+    "sha256_sujet": "5bdb9c3f6ef99c964fdec689c10256c64f9dabfe10786735772930d5e7c19a79"
+  },
+  "figures": [
+    {
+      "fichier": "figures/decalages-modulaires.svg",
+      "question": "23",
+      "legende": "Pour ℓ = 3, les deux décalages tournent en sens opposés. La puissance cubique de l’image de F multiplie chaque vecteur par le produit des trois poids."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de toutes les questions et sous-questions du sujet XLC, confrontées au rapport des correcteurs. Vérification des relations sur les indices négatifs, de la période minimale, des vecteurs propres, de la descente au quotient et de la condition de nilpotence. Schéma des deux décalages cycliques et de leurs poids.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

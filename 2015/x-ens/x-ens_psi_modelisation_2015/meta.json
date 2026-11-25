@@ -1,0 +1,48 @@
+{
+  "slug": "x-ens_psi_modelisation_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2015,
+    "duree_heures": 5
+  },
+  "questions": 48,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://prepahelp.com/docs/annales/x-ens/psi/prepahelp-x-ens-2015-psi-modelisation-sujet.pdf",
+    "sujet_sha256": "343bae2a538679cce614c7a30dfba8385d66725eba56388db9719e8ce29ba96a",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2017_RE_1A_PSI_modelisation.pdf",
+    "rapport_sha256": "0124534b974eba35ae68c4fc89c3b975a39499286f3628d7319d02681a4eecd8"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q06-debit-seuil.svg",
+      "question": "Q6",
+      "legende": "À géométrie identique, le débit simplifié du fluide de Bingham reste nul jusqu’au seuil puis croît avec la même pente que le débit newtonien."
+    },
+    {
+      "fichier": "figures/q14-flux-et-courant.svg",
+      "question": "Q14",
+      "legende": "Coupe méridienne orientée comme la figure 9. Les flèches suivent le flux, les traits pointillés figurent les chaînes et le point cerclé indique le courant sortant."
+    },
+    {
+      "fichier": "figures/q34-trains-planetaires.svg",
+      "question": "Q34",
+      "legende": "Vue de face de chaque étage aux rayons primitifs proportionnels aux nombres de dents. Les segments verts sont les porte-satellites ; les cercles extérieurs sont solidaires du bâti."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 48 questions avec le sujet du concours reproduit en fac-similé et le rapport du jury de 2015. Contrôle des tracés, de la convention de volume non entièrement cotée, de la coquille de la loi d’Ampère signalée par le jury, des deux algorithmes et du calcul complexe des marges. Trois schémas originaux."
+    }
+  ]
+}

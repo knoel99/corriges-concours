@@ -1,0 +1,71 @@
+{
+  "slug": "bel_al_francais-oral-option-16-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Français (oral option 16 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Français (oral option 16 juin)",
+  "questions": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_du_16.06.2026_-_option_lettres_modernes1.pdf",
+    "sujet_sha256": "2db62c17285d49fc518df31c9c2963cc974ddd9afb4adfbe0db88e7a23f0e074",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_francais_option.pdf",
+    "rapport_sha256": "04fcaa40ab13c6eac4d7e088720ddf7dcd67e08d6b2687ead570c7a033111b58",
+    "references": [
+      "https://fr.wikisource.org/wiki/L%E2%80%99Heptam%C3%A9ron_des_nouvelles_(1559)/Texte_entier",
+      "https://fr.wikisource.org/wiki/L%E2%80%99Heptam%C3%A9ron_des_nouvelles",
+      "https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1861)/Texte_entier",
+      "https://www.ebooksgratuits.com/details.php?book=3306"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/entrer-dans-le-jeu.svg",
+      "question": "1",
+      "legende": "Deux spectateurs changent de place"
+    },
+    {
+      "fichier": "figures/regards-animaux.svg",
+      "question": "5",
+      "legende": "Du geste animal à la parole du groupe"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des 12 comparaisons littéraires entre les deux passages imposés, choix de lectures brèves et accompagnement pour l’entretien."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des intitulés et des appariements contre le fascicule, lecture des passages des œuvres concernées et confrontation aux remarques du rapport du jury."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "ens-de-lyon_second-concours_informatique_2015",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Informatique",
+    "annee": 2015,
+    "duree_heures": 3
+  },
+  "questions": 18,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/06/15_2clyon_sujet_info.pdf",
+    "sujet_sha256": "f4ed726e83d9475883df12c8b2747b69052c494957b01d5c0b14ea1d2b7689b4",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/10/15_2clyon_rap_einfo.pdf",
+    "rapport_sha256": "b9df624a42b3661acea1b2d9506ca2a3145726e5182e454fd4d261b9c45c1299"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q03-colonnes-compactes.svg",
+      "question": "Q3",
+      "legende": "Le tableau de pointeurs 0, 3, 5, 7, 9 découpe les deux tableaux parallèles. À chaque couleur correspond une colonne de la matrice."
+    },
+    {
+      "fichier": "figures/q14-remplissage.svg",
+      "question": "Q14",
+      "legende": "Structure de L pour les deux ordres. Les coefficients d’origine sont en vert et les coefficients de remplissage en ocre."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 18 questions avec lecture du sujet et du rapport officiels, deux figures et validations numériques et combinatoires. Mise en évidence de la limite de complexité de la question 4 en présence de colonnes vides, du rôle des répartitions en question 6 et des conditions d’ascendance stricte. Vérification des arbres symboliques sur toutes les structures symétriques de taille un à six."
+    }
+  ]
+}
