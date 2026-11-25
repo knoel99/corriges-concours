@@ -1,0 +1,144 @@
+{
+  "slug": "x-ens_psi_physique-psi_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Physique PSI",
+    "annee": 2023
+  },
+  "questions": 59,
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_PHYSIQUE_PSI_001.pdf",
+    "rapport": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2023_PSI_rapport_ecrit_Physique.pdf",
+    "sujet_sha256": "4d16e2a2da93f214406b3387f5a17980cce9ebc5fa14044e07d76e6b0c557884",
+    "rapport_sha256": "01395fadf8de7478d132c9c718228e655efccddc3992ff96baf14efc9d262145"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 59 questions sont résolues dans les deux éditions à partir des quatorze pages du sujet et du rapport de jury. Huit figures originales explicitent le diagramme de Raveau, les cycles, le déclenchement du mouvement, les températures de contact et la mesure de la position. La convention de signe du cycle moteur suit la précision du jury."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "2",
+      "fichier": "figures/raveau-et-carnot.svg",
+      "legende": "À gauche, domaine permis sous la droite réversible, pour un rapport de températures de 1,5 choisi afin de séparer les droites. À droite, le travail du cycle moteur réversible est l’aire du rectangle parcouru dans le sens horaire."
+    },
+    {
+      "numero": 2,
+      "question": "7",
+      "fichier": "figures/cycle-du-gaz.svg",
+      "legende": "Les branches 2–3 et 4–1 sont isothermes. Les deux autres, adiabatiques réversibles, sont plus raides au même point."
+    },
+    {
+      "numero": 3,
+      "question": "20",
+      "fichier": "figures/rendement-et-puissance.svg",
+      "legende": "A et C donnent trois quarts de la puissance maximale. Les trois hauteurs du cycle intérieur comparent le saut adiabatique à l’écart des sources dans la limite des faibles écarts."
+    },
+    {
+      "numero": 4,
+      "question": "26",
+      "fichier": "figures/contacts-et-transferts.svg",
+      "legende": "Trait vert, solide mobile. La flèche noire donne l’effort moteur hors réaction de contact. Les flèches colorées indiquent les seuls échanges thermiques du modèle rapide."
+    },
+    {
+      "numero": 5,
+      "question": "37",
+      "fichier": "figures/cycle-force-position.svg",
+      "legende": "Reconstruction schématique des branches de la figure 6 autour des seuils A et B. Les quatre flèches suivent successivement refroidissement, montée, réchauffement et descente."
+    },
+    {
+      "numero": 6,
+      "question": "45",
+      "fichier": "figures/profil-de-temperature.svg",
+      "legende": "Exemple stationnaire à 0,15 W et ambiance à 10 °C. Le radiateur ajoute 3 K entre l’ambiance et l’origine. La majeure partie de la chute interne de température se trouve dans l’air."
+    },
+    {
+      "numero": 7,
+      "question": "50",
+      "fichier": "figures/capteur-a-trois-electrodes.svg",
+      "legende": "Les deux flèches orangées indiquent le sens des sondes de courant. Les flèches vertes indiquent les différences de potentiel et pointent vers la borne positive des sondes différentielles."
+    },
+    {
+      "numero": 8,
+      "question": "59",
+      "fichier": "figures/demodulation-synchrone.svg",
+      "legende": "Deux multiplicateurs, deux références en quadrature et deux filtres extraient les composantes utiles de la même mesure de courant."
+    }
+  ],
+  "redaction": "Les 59 questions sont résolues dans les deux éditions à partir des quatorze pages du sujet et du rapport de jury. Huit figures originales explicitent le diagramme de Raveau, les cycles, le déclenchement du mouvement, les températures de contact et la mesure de la position. La convention de signe du cycle moteur suit la précision du jury.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59"
+    ]
+  }
+}
