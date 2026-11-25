@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2008",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2008,
+    "duree_heures": 2
+  },
+  "questions": 8,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2008.pdf",
+    "sujet_sha256": "e4b2f211d893c61f32c08e87ae0efd7708e1326777a1d54cea772d9a60860278"
+  },
+  "figures": [
+    {
+      "fichier": "figures/quatre-echantillons.svg",
+      "question": "3",
+      "legende": "La droite passe par un échantillon et un seul sur les quatre appartient à la région supérieure. L’intensité de suréchantillonnage est ici 1/4."
+    },
+    {
+      "fichier": "figures/deux-pixels.svg",
+      "question": "5",
+      "legende": "La surface verte est la somme des deux aires noires. À gauche, le premier pixel n’en contient qu’un triangle. À droite, le second est entièrement dans le demi-plan."
+    },
+    {
+      "fichier": "figures/comparaison-lissages.svg",
+      "question": "8",
+      "legende": "Un même demi-plan sur une grille de neuf colonnes. Le calcul des surfaces produit des gris intermédiaires plus fins que le comptage de quatre points."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des huit questions sur le tramage par remplissage, suréchantillonnage et aire, à partir des quatre pages natives. Vérification de 10 780 aires sur 308 droites en arithmétique rationnelle indépendante, traitement de la pente nulle, des égalités et des bords. Trois illustrations originales."
+    }
+  ]
+}
