@@ -20,7 +20,7 @@
       "legende": "Au chapitre XVIII de Léry, trois voix interviennent dans la formation du nom par lequel le voyageur se fait reconnaître."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-22",
     "modele": "Codex (GPT-6)",
@@ -114,6 +114,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Vérification des deux éditions sur Viegnes et les œuvres, distinction du terme matériel et du but intérieur du voyage par une relecture du passage de l’Opéra."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 5,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Viegnes, médiation du truchement et transformation du nom de Léry dans la rencontre."
     }
   ]
 }

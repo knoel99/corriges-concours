@@ -36,7 +36,7 @@
       "legende": "Saint-Domingue et Haïti : des actes de portées différentes"
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "revision": {
     "date": "2026-11-24",
     "modele": "Codex (GPT-6)",
@@ -104,6 +104,19 @@
       "date": "2026-11-24",
       "modifications": true,
       "perimetre": "Contrôle des exemples de Marx, Bloch et Trouillot dans les deux éditions. Précision sur les étapes territoriales de l’abolition à Saint-Domingue et sur la valeur probante du décret. Description des trois schémas."
+    },
+    {
+      "phase": "relecture_corrige",
+      "tour": 3,
+      "session": "illustrations_double_edition",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Matière de l’histoire, usages successifs du registre et limite de l’inférence à partir du classement."
     }
   ]
 }

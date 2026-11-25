@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — La matière de l’histoire
 
 ## Introduction
@@ -29,6 +31,10 @@ Le modèle de l’artisan rencontre pourtant ici sa limite. Si une personne mise
 ## II. Le passé fournit des traces déjà formées qui peuvent démentir leur interprétation
 
 Une décision d’affranchissement et un registre de vente peuvent être deux pièces du même fonds. Considérés comme objets, ils sont faits d’encre, de papier, de ratures parfois. Comme matériaux d’une enquête, ils ne sont pas interchangeables. Une signature sur l’affranchissement est susceptible d’avoir contribué à changer une condition juridique. Sur le registre, elle peut servir à certifier un paiement. Avant de tirer d’une inscription une proposition sur le monde, il faut retrouver ce qu’elle permettait de faire à ceux qui l’ont établie, puis ce qui en a assuré la conservation. C’est donc en reconstituant des formes anciennes d’activité que l’on découvre en quel sens quelque chose peut devenir matériau.
+
+Le registre règle pour ses premiers usagers des opérations dont ils veulent assurer la trace. L’historien qui recherche des liens familiaux y prélève d’autres indices. Que deux noms figurent sur des lignes voisines établit une proximité dans le classement de l’acte. Pour en tirer une parenté, il faut confronter cet ordre à d’autres documents.
+
+![Trois histoires d’un registre](figures/registre-usages.svg)
 
 Marc Bloch, dans l’*Apologie pour l’histoire*, souligne l’importance des témoignages que leurs auteurs ne destinaient nullement aux questions que nous leur posons. Le registre tenu pour connaître la valeur d’un bien enregistre une distinction d’âge, un changement de lieu, parfois une parenté. Aucune de ces indications n’a besoin d’avoir été transcrite pour instruire un historien des liens familiaux. C’est une question nouvelle qui en fait des indices. Cela ne permet pourtant pas de leur faire dire ce que l’on veut. Deux noms voisins sur une page ne prouvent pas une parenté. Une récurrence sur des années ne suffit pas à distinguer une personne d’un homonyme. Un acte daté auquel on peut rapporter des lieux, des signatures et des noms rend une hypothèse plus précise ; il peut aussi la réfuter. La résistance de ces matériaux n’est donc pas un silence inerte. Elle se manifeste dans les différences que des hypothèses rivales devraient permettre de constater.
 
