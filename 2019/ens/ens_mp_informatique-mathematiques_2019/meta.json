@@ -1,0 +1,48 @@
+{
+  "slug": "ens_mp_informatique-mathematiques_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Informatique-mathématiques",
+    "annee": 2019,
+    "duree_heures": 4
+  },
+  "questions": 33,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MP_sujet_InfoMath.pdf",
+    "sujet_sha256": "a2a7336cb4cfe3971ea58c683afc16aa7ebeb4e8e6ea20068ea877f121c77970",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/12/19_MP_rap_eInfoMath.pdf",
+    "rapport_sha256": "3efbe234ac80201ab0672af24e5998fa67fadf0601070101cbd9790744680f6d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q37-rangees.svg",
+      "question": "Q3.7",
+      "legende": "Les 19 sommets du graphe hexagonal. Les trois sommets A de la rangée inférieure sont les premiers retraits du tableau."
+    },
+    {
+      "fichier": "figures/q47-balayage.svg",
+      "question": "Q4.7",
+      "legende": "Le point rouge est le voleur. Les deux choix de déplacement réduisent son intervalle et agrandissent la région gardée."
+    },
+    {
+      "fichier": "figures/q57-couplages.svg",
+      "question": "Q5.7",
+      "legende": "Pour chaque classe de couleur initiale, l’appariement indique les paires de copies entre lesquelles relier des positions homologues."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 33 questions à partir du sujet et du rapport officiels, contrôle visuel des graphes du sujet et trois figures originales. Exécution des quatre fonctions OCaml avec un oracle indépendant de jeu rétrograde sur tous les graphes étiquetés non vides de taille au plus cinq. Contrôle exhaustif du balayage pour les polygones de trois à neuf sommets. Vérification des graphes construits aux degrés deux à six."
+    }
+  ]
+}
