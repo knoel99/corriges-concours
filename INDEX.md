@@ -1080,6 +1080,7 @@
 | 2005 | ENS | MP-PC | Français | [md](2005/ens/ens_mp-pc_francais_2005/brut.md) | [md](2005/ens/ens_mp-pc_francais_2005/guide.md) |
 | 2006 | ENS | MP-PC | Français | [md](2006/ens/ens_mp-pc_francais_2006/brut.md) | [md](2006/ens/ens_mp-pc_francais_2006/guide.md) |
 | 2007 | ENS | MP-PC | Français | [md](2007/ens/ens_mp-pc_francais_2007/brut.md) | [md](2007/ens/ens_mp-pc_francais_2007/guide.md) |
+| 2008 | ENS | MP-PC | Français | [md](2008/ens/ens_mp-pc_francais_2008/brut.md) | [md](2008/ens/ens_mp-pc_francais_2008/guide.md) |
 | 2009 | ENS | MP-PC | Grec ancien (LE2) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_grec-ancien-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Grec ancien (LE2) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/guide.md) |
 | 2011 | ENS | MP-PC | Grec (langue étrangère B) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/brut.md) | [md](2011/ens/ens_mp-pc_grec-langue-etrangere-b_2011/guide.md) |
@@ -1455,6 +1456,8 @@
 | 2017 | X-ENS | MP-PC-PSI | Allemand | [md](2017/x-ens/x-ens_mp-pc-psi_allemand_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_allemand_2017/guide.md) |
 | 2018 | X-ENS | MP-PC-PSI | Allemand | [md](2018/x-ens/x-ens_mp-pc-psi_allemand_2018/brut.md) | [md](2018/x-ens/x-ens_mp-pc-psi_allemand_2018/guide.md) |
 | 2019 | X-ENS | MP-PC-PSI | Allemand | [md](2019/x-ens/x-ens_mp-pc-psi_allemand_2019/brut.md) | [md](2019/x-ens/x-ens_mp-pc-psi_allemand_2019/guide.md) |
+| 2020 | X-ENS | MP-PC-PSI | Allemand | [md](2020/x-ens/x-ens_mp-pc-psi_allemand_2020/brut.md) | [md](2020/x-ens/x-ens_mp-pc-psi_allemand_2020/guide.md) |
+| 2021 | X-ENS | MP-PC-PSI | Allemand | [md](2021/x-ens/x-ens_mp-pc-psi_allemand_2021/brut.md) | [md](2021/x-ens/x-ens_mp-pc-psi_allemand_2021/guide.md) |
 | 2015 | X-ENS | MP-PC-PSI | Anglais | [md](2015/x-ens/x-ens_mp-pc-psi_anglais_2015/brut.md) | [md](2015/x-ens/x-ens_mp-pc-psi_anglais_2015/guide.md) |
 | 2016 | X-ENS | MP-PC-PSI | Anglais | [md](2016/x-ens/x-ens_mp-pc-psi_anglais_2016/brut.md) | [md](2016/x-ens/x-ens_mp-pc-psi_anglais_2016/guide.md) |
 | 2017 | X-ENS | MP-PC-PSI | Anglais | [md](2017/x-ens/x-ens_mp-pc-psi_anglais_2017/brut.md) | [md](2017/x-ens/x-ens_mp-pc-psi_anglais_2017/guide.md) |
@@ -1625,6 +1628,7 @@
 | 2005 | X | MP-PC | Français | [md](2005/x/x_mp-pc_francais_2005/brut.md) | [md](2005/x/x_mp-pc_francais_2005/guide.md) |
 | 2006 | X | MP-PC | Français | [md](2006/x/x_mp-pc_francais_2006/brut.md) | [md](2006/x/x_mp-pc_francais_2006/guide.md) |
 | 2007 | X | MP-PC | Français | [md](2007/x/x_mp-pc_francais_2007/brut.md) | [md](2007/x/x_mp-pc_francais_2007/guide.md) |
+| 2008 | X | MP-PC | Français | [md](2008/x/x_mp-pc_francais_2008/brut.md) | [md](2008/x/x_mp-pc_francais_2008/guide.md) |
 | 2010 | X | MP | Composition de physique et sciences de l’ingénieur | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique-et-sciences-de-lingenieur_2010/guide.md) |
 | 2010 | X | MP | Composition de physique | [md](2010/x/x_mp_composition-de-physique_2010/brut.md) | [md](2010/x/x_mp_composition-de-physique_2010/guide.md) |
 | 2000 | X | MP | Informatique (option) | [md](2000/x/x_mp_informatique-option_2000/brut.md) | [md](2000/x/x_mp_informatique-option_2000/guide.md) |
@@ -1638,6 +1642,8 @@
 | 2008 | X | MP | Informatique (option) | [md](2008/x/x_mp_informatique-option_2008/brut.md) | [md](2008/x/x_mp_informatique-option_2008/guide.md) |
 | 2009 | X | MP | Informatique (option) | [md](2009/x/x_mp_informatique-option_2009/brut.md) | [md](2009/x/x_mp_informatique-option_2009/guide.md) |
 | 2011 | X | PC | Physique A | [md](2011/x/x_pc_physique-a_2011/brut.md) | [md](2011/x/x_pc_physique-a_2011/guide.md) |
+| 2012 | X | PC | Physique A | [md](2012/x/x_pc_physique-a_2012/brut.md) | [md](2012/x/x_pc_physique-a_2012/guide.md) |
+| 2013 | X | PC | Physique A | [md](2013/x/x_pc_physique-a_2013/brut.md) | [md](2013/x/x_pc_physique-a_2013/guide.md) |
 | 2022 | X | PC | Physique A | [md](2022/x/x_pc_physique-a_2022/brut.md) | [md](2022/x/x_pc_physique-a_2022/guide.md) |
 | 2013 | X | PSI-PT | Informatique | [md](2013/x/x_psi-pt_informatique_2013/brut.md) | [md](2013/x/x_psi-pt_informatique_2013/guide.md) |
 | 2014 | X | PSI-PT | Informatique | [md](2014/x/x_psi-pt_informatique_2014/brut.md) | [md](2014/x/x_psi-pt_informatique_2014/guide.md) |
