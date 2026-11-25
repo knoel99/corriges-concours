@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 360 à 440 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%201%20SUJET%20D'ANGLAIS.pdf)
@@ -33,20 +35,20 @@ Metacognition involves examining how one reaches a judgement, including the habi
 ### 3. How testing can narrow learning
 
 > [!INDICATION]
-> Repérer un effet sur la curiosité puis un effet sur la capacité à relier des disciplines.
+> L’auteur recueille des témoignages de parents au sujet des épreuves anglaises de fin de primaire. Il élargit ensuite sa critique aux frontières scolaires entre disciplines. L’expérience rapportée et la conclusion sur les examens n’ont donc pas tout à fait la même portée.
 
-High-stakes assessments reward children for mastering narrow routines at an age when experimentation could strengthen their curiosity. They also encourage schools to divide knowledge into subjects with rigid borders. That training makes it harder to recognise connections across fields or respond confidently when circumstances change. Monbiot argues that enjoyment can sustain the willingness to learn something unfamiliar. (Monbiot, lines 19–35).
+England’s assessments for the final primary year, as parents describe them to Monbiot, can turn an eager learner into someone anxious to complete a prescribed routine. Later examinations reinforce disciplinary divisions. A pupil trained to look for one approved method within each subject gets little practice in following a problem across several subjects. Pleasure in discovering unfamiliar material could instead make change easier to face. (Monbiot, lines 19–35).
 
 ### 4. Why complex systems belong at school
 
 > [!INDICATION]
 > Expliquer pourquoi des interactions peuvent produire une évolution qui surprend. Relier réponse éducative et risques évoqués.
 
-Many urgent problems involve interacting parts whose combined behaviour cannot be predicted by studying each separately. A car engine may contain many components whose functions can be traced separately. Food supply networks and ecosystems can instead cross a threshold and change abruptly. Monbiot believes pupils need tools for recognising such risks across disciplines, especially when familiar institutions may themselves be weakened by environmental pressures that pupils will face as adults. (Monbiot, lines 48–59).
+A machine can be intricate yet intelligible once each component and its task are understood. A food network behaves differently because relationships between its parts can amplify a disturbance until the whole pattern changes. Monbiot identifies food insecurity on a global scale and environmental collapse as urgent examples. Teaching pupils how interactions produce thresholds would help them recognise dangers that cannot be grasped within one school subject. (Monbiot, lines 48–59).
 
 ![Reasoning across school subjects](figures/systems.svg)
 
-Pour la quatrième réponse, l’exemple du moteur sert de comparaison. Le danger que Monbiot veut faire comprendre vient d’un seuil qui peut transformer le fonctionnement d’un système entier. Pour l’essai, l’exemple personnel doit ensuite éprouver la place à accorder à l’examen de ses propres raisonnements.
+Dans le moteur, on peut isoler la fonction d’une pièce. Dans un réseau alimentaire, les interactions peuvent faire franchir un seuil au système entier. Les deux designers du début illustrent un bouleversement parmi d’autres. À la fin, Monbiot rappelle que les adultes actuels doivent déjà affronter ces crises. L’essai peut donc défendre la réflexion sur ses propres pensées tout en demandant quelles connaissances et quelles institutions permettraient d’agir.
 
 ## Essay
 
@@ -69,4 +71,4 @@ This is where I hesitate to give self-awareness first place among school subject
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 59, 77, 57 et 70 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 59, 77, 65 et 67 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

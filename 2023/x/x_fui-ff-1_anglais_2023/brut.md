@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Two difficulties in bringing the thylacine back
@@ -16,11 +18,11 @@ Morton raises two difficulties. First comes identity: even an animal resembling 
 
 ### 2. What “ghostlining” means
 
-Morton never uses this word, so its meaning cannot be established from his article alone. Historian Kris Manjapra uses it to describe a society keeping the people harmed by exploitation outside its public account of history, while disregarding their demands for repair. My analogy with Tasmania concerns public memory: the state displays the animal on its heraldic shield, although colonial hunters once received payments for killing it. (Manjapra, 2022. Morton, lines 30–35).
+The term occurs in the exam question alone. In a separate interview historian Kris Manjapra describes how racial hierarchies determine whose experiences disappear from collective memory. His example concerns emancipation. Former owners received compensation while the people they had enslaved went unpaid for their labour and suffering. Morton discusses a marsupial and its public image in Tasmania. His article supplies no historical definition of this term. (Manjapra, 2022. Morton, lines 30–35).
 
 ### 3. How conservation and research are funded
 
-The question attributes a stronger claim to Morton than he makes. Other researchers worry that a spectacular experiment attracts attention while vulnerable wildlife receives little protection. Morton agrees with Ritchie that these private donations add resources. Ritchie contrasts ten million dollars allocated to a hundred threatened species with subsidies worth billions for fossil energy. His concern is political: governments celebrate research while permitting habitat destruction and supporting industries whose activities threaten many animals already alive. (Morton, lines 62–77).
+Morton explicitly rejects the suggested financial trade-off. Some scientists feel neglected when an extinct animal attracts wealthy backers, but Ritchie regards that private money as additional. He draws a different comparison within public policy. An earlier Australian administration offered ten million dollars for a hundred endangered species while subsidising fossil energy by billions and allowing forests to disappear. Morton wants political leaders to protect wildlife before extinction occurs. (Morton, lines 62–77).
 
 ### 4. A possible ecological role
 

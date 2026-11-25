@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 360 à 440 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20FUI-FF%20S1%20SUJET%20D'ANGLAIS.pdf)
@@ -26,9 +28,9 @@ Morton raises two difficulties. First comes identity: even an animal resembling 
 ### 2. What “ghostlining” means
 
 > [!INDICATION]
-> Le terme figure seulement dans la question. Annoncer le recours à un éclairage historique extérieur, puis signaler toute analogie personnelle.
+> Le mot apparaît dans la deuxième question et manque de l’article remis. Manjapra le rattache à l’effacement de l’expérience de personnes subordonnées dans une hiérarchie raciale. Son exemple historique des indemnisations après l’émancipation permet une définition précisément attribuée.
 
-Morton never uses this word, so its meaning cannot be established from his article alone. Historian Kris Manjapra uses it to describe a society keeping the people harmed by exploitation outside its public account of history, while disregarding their demands for repair. My analogy with Tasmania concerns public memory: the state displays the animal on its heraldic shield, although colonial hunters once received payments for killing it. (Manjapra, 2022. Morton, lines 30–35).
+The term occurs in the exam question alone. In a separate interview historian Kris Manjapra describes how racial hierarchies determine whose experiences disappear from collective memory. His example concerns emancipation. Former owners received compensation while the people they had enslaved went unpaid for their labour and suffering. Morton discusses a marsupial and its public image in Tasmania. His article supplies no historical definition of this term. (Manjapra, 2022. Morton, lines 30–35).
 
 L’historien Kris Manjapra explique le terme dans un entretien consacré aux suites de l’émancipation. [Entretien de Tufts Now, 15 juin 2022](https://now.tufts.edu/2022/06/15/how-slavery-ended-slowly-and-emancipation-laws-often-kept-enslaved-bondage-and-rewarded)
 
@@ -37,7 +39,7 @@ L’historien Kris Manjapra explique le terme dans un entretien consacré aux su
 > [!INDICATION]
 > Séparer la réaction de certains scientifiques, les observations de Ritchie et la position propre de Morton.
 
-The question attributes a stronger claim to Morton than he makes. Other researchers worry that a spectacular experiment attracts attention while vulnerable wildlife receives little protection. Morton agrees with Ritchie that these private donations add resources. Ritchie contrasts ten million dollars allocated to a hundred threatened species with subsidies worth billions for fossil energy. His concern is political: governments celebrate research while permitting habitat destruction and supporting industries whose activities threaten many animals already alive. (Morton, lines 62–77).
+Morton explicitly rejects the suggested financial trade-off. Some scientists feel neglected when an extinct animal attracts wealthy backers, but Ritchie regards that private money as additional. He draws a different comparison within public policy. An earlier Australian administration offered ten million dollars for a hundred endangered species while subsidising fossil energy by billions and allowing forests to disappear. Morton wants political leaders to protect wildlife before extinction occurs. (Morton, lines 62–77).
 
 ![Two decisions that Morton distinguishes](figures/two-budget-questions.svg)
 
@@ -48,7 +50,7 @@ The question attributes a stronger claim to Morton than he makes. Other research
 
 The proposed return might restore an ecological role left vacant after the animal disappeared. Australia once had this marsupial as a top predator. Its former ecological position has remained largely vacant, although Morton mentions introduced cats as a qualification. Perhaps a successor could again affect prey populations in a similar way. Morton presents that outcome as a possibility. Without observing how such animals behave, nobody can confidently predict their influence upon the landscape. (Morton, lines 36–40 and 46–55).
 
-La question 2 emploie un mot absent de l’article. La source extérieure explique son sens historique ; le blason et les primes de chasse fournissent seulement une analogie. À la question 3, distinguer un don privé supplémentaire de la comparaison effectuée par Ritchie entre deux choix budgétaires publics.
+Le blason de Tasmanie et les primes versées aux chasseurs appartiennent au récit de Morton. L’exemple des anciens esclavagistes indemnisés et du travail demeuré sans réparation appartient à l’entretien de Manjapra. À la troisième question, relevez le désaccord explicite de Morton avec la prémisse du sujet. Ritchie compare ensuite deux grandeurs publiques et distingue ce choix de l’argent privé ajouté au projet.
 
 ## Essay
 
@@ -71,4 +73,4 @@ A future child should be able to hear birds outside the classroom as well as lea
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 57, 67, 75 et 73 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 57, 66, 68 et 73 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

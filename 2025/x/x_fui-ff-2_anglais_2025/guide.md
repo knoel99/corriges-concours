@@ -6,6 +6,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le sujet propose une tribune d’Alexander Hurst, adaptée de *The Guardian* du 6 janvier 2025. L’épreuve dure deux heures. Chaque réponse de compréhension demande au moins 50 mots. Pour l’essai, la plage admise va de 360 à 440 mots. Les barres marquent chaque groupe de cinquante mots.
 
 ## Reading comprehension
@@ -13,14 +15,14 @@ Le sujet propose une tribune d’Alexander Hurst, adaptée de *The Guardian* du 
 ### 1. Financial pressures on millennials
 
 > [!INDICATION]
-> Situez le premier choc au début de la vie active. Reliez ensuite la dette et le logement au choix de consacrer du temps à autre chose qu’au travail.
+> Lignes 32 à 36, Hurst juxtapose la sortie des études au moment de la crise financière et le choc de la pandémie dix ans plus tard. Le détail du café permet de distinguer le coût d’un achat ponctuel de celui d’un emprunt immobilier.
 
 > [!PIEGE]
 > Une difficulté d’accès au logement a des conséquences même chez une personne qui possède déjà un emploi.
 
 #### Sample answer
 
-Hurst links several setbacks across a generation’s working life. Many graduates sought their first position just as banks failed and recruitment slowed. Later, the pandemic disrupted careers that had barely recovered. Tuition debt continued to absorb earnings while buying a home became prohibitively expensive. Against that background, someone who doubts that extra effort will bring financial security may reasonably place greater value on free time. (Hurst, lines 32–39.)
+People of Hurst’s generation finished their education as the financial crash unfolded. Roughly a decade afterwards Covid delivered another shock. Loan repayments weigh on earnings, and property costs have moved beyond what many can afford. Buying an occasional coffee or paying for an outing is still possible, while obtaining a mortgage looks remote. That gap helps explain why workers might seek more control over their time. (Hurst, lines 32–39.)
 
 ### 2. Why repeated departures concern employers
 
@@ -32,7 +34,7 @@ Hurst links several setbacks across a generation’s working life. Many graduate
 
 #### Sample answer
 
-From a supervisor’s perspective, frequent departures can look like broken commitments. A colleague who leaves takes experience and relationships away. Someone else must cover unfinished assignments, recruit a successor and teach that person how the organisation works. Those who stay may lose confidence in their team. Hurst acknowledges these practical costs through the testimony of a hiring specialist, while questioning whether loyalty can be demanded regardless of working conditions. (Hurst, lines 18–26.)
+A French manager whom Hurst knows reads younger employees’ readiness to leave as evidence of weak commitment. Vanessa Forslev, who advises firms on personnel matters and belongs to that generation herself, explains what happens to a team. Work is disrupted, a successor needs costly instruction, and colleagues lose heart. Hurst takes these complaints seriously while defending a worker’s decision to leave an unsuitable position. (Hurst, lines 1–7 and 18–26.)
 
 ### 3. The author’s criticism of business practices
 
@@ -52,7 +54,7 @@ Hurst objects to managers who judge success mainly by the next set of financial 
 > Situez la première vague aux États-Unis. En Europe, la seconde est une hypothèse de l’auteur. Un sondage sur les intentions laisse ouverte la possibilité matérielle de partir.
 
 > [!PIEGE]
-> Le passage de 40 % à 46 % correspond à six points de pourcentage. Le questionnaire portait sur les projets des personnes interrogées.
+> Les 31 000 personnes interrogées dans 31 pays forment un échantillon de salariés. Le texte ne dit pas que tous sont millennials. Les intentions passent de 40 % à 46 %, soit six points. Forslev parle du coût des départs, tandis que la chasseuse de têtes Edwards-Dashti évoque les possibilités de mobilité interne.
 
 #### Sample answer
 
@@ -88,4 +90,4 @@ I would therefore use the / consumer comparison at the moment of recruitment and
 
 ## Relecture
 
-Les quatre réponses comptent respectivement 65, 69, 71 et 82 mots hors références. Les renvois de lignes identifient les idées reprises dans la tribune. L’essai construit son propre exemple. Dans la copie, vérifiez le sujet et le verbe de chaque phrase et distinguez les constats (*reports*, *found*) des hypothèses (*might*, *could*).
+Les quatre réponses comptent respectivement 66, 64, 71 et 82 mots hors références. Les renvois de lignes identifient les idées reprises dans la tribune. L’essai construit son propre exemple. Dans la copie, vérifiez le sujet et le verbe de chaque phrase et distinguez les constats (*reports*, *found*) des hypothèses (*might*, *could*).

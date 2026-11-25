@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Shared curriculum, shared constraints
@@ -20,11 +22,11 @@ Metacognition involves examining how one reaches a judgement, including the habi
 
 ### 3. How testing can narrow learning
 
-High-stakes assessments reward children for mastering narrow routines at an age when experimentation could strengthen their curiosity. They also encourage schools to divide knowledge into subjects with rigid borders. That training makes it harder to recognise connections across fields or respond confidently when circumstances change. Monbiot argues that enjoyment can sustain the willingness to learn something unfamiliar. (Monbiot, lines 19–35).
+England’s assessments for the final primary year, as parents describe them to Monbiot, can turn an eager learner into someone anxious to complete a prescribed routine. Later examinations reinforce disciplinary divisions. A pupil trained to look for one approved method within each subject gets little practice in following a problem across several subjects. Pleasure in discovering unfamiliar material could instead make change easier to face. (Monbiot, lines 19–35).
 
 ### 4. Why complex systems belong at school
 
-Many urgent problems involve interacting parts whose combined behaviour cannot be predicted by studying each separately. A car engine may contain many components whose functions can be traced separately. Food supply networks and ecosystems can instead cross a threshold and change abruptly. Monbiot believes pupils need tools for recognising such risks across disciplines, especially when familiar institutions may themselves be weakened by environmental pressures that pupils will face as adults. (Monbiot, lines 48–59).
+A machine can be intricate yet intelligible once each component and its task are understood. A food network behaves differently because relationships between its parts can amplify a disturbance until the whole pattern changes. Monbiot identifies food insecurity on a global scale and environmental collapse as urgent examples. Teaching pupils how interactions produce thresholds would help them recognise dangers that cannot be grasped within one school subject. (Monbiot, lines 48–59).
 
 ![What a common curriculum makes possible](figures/curriculum-choices.svg)
 

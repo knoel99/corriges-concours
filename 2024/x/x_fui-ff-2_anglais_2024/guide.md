@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 L’épreuve dure deux heures. Le sujet demande au moins 50 mots par réponse de compréhension et un essai de 360 à 440 mots, avec une barre tous les 50 mots. Les renvois aux lignes identifient les idées reprises de l’article.
 
 [Sujet officiel](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2024%20FUI-FF%20Session%202%20ANGLAIS.pdf)
@@ -24,9 +26,9 @@ Two people celebrating their thirtieth birthdays together may face sharply diffe
 ### 2. Transferring money during one’s lifetime
 
 > [!INDICATION]
-> Expliquer quand l’argent est transféré et ce que cette avance change pour le bénéficiaire.
+> La première étude rapproche 11 milliards de livres de transferts privés annuels et 99 milliards passant par testament. L’Institute for Fiscal Studies évalue séparément à 17 milliards les dons et prêts des parents aux enfants adultes. Les catégories peuvent se recouper. Évitez de sommer ces trois nombres.
 
-The expression describes moving assets to relatives during the giver’s lifetime instead of leaving everything to be distributed after death. Parents might provide money towards a flat while their child needs it, for instance. Some prosperous households also hope to reduce future tax liabilities. These private arrangements can change the recipient’s opportunities long before a will is administered. (Hunt, lines 30–39).
+Here relatives pass on some wealth before they die. A parent might help a child purchase a home immediately, and richer families may also reduce future tax. Hunt reports one study distinguishing eleven billion pounds transferred privately each year from ninety-nine billion passed on by will. A separate estimate covers parental gifts and lending together, so it cannot simply be added to those totals. (Hunt, lines 30–39).
 
 ![When family assets reach another generation](figures/estate-transfers.svg)
 
@@ -40,9 +42,9 @@ Older residents accounted for much of the unusually high mortality during the pa
 ### 4. Why home ownership became harder
 
 > [!INDICATION]
-> Identifier le dénominateur des chiffres cités : ménages d’un âge donné ou propriétaires tous âges confondus.
+> Pour les 35 %, partez des personnes âgées de 25 à 34 ans et demandez qui possède son logement. Pour les 10 %, partez des propriétaires de tout âge en Angleterre et demandez qui a moins de 35 ans. La première série compare 1997 et 2017, la seconde décrit 2022.
 
-Scarce housing and high prices have kept many younger adults in rented accommodation for longer than earlier cohorts. For adults between twenty-five and thirty-four, ownership fell from fifty-five per cent in 1997 to thirty-five per cent by 2017. Many urban tenants therefore approach middle age without expecting that purchase will soon become possible, although their individual circumstances vary. (Hunt, lines 1–15).
+Rising prices and limited supply have forced younger households to rent longer. Within the group aged twenty-five to thirty-four, the share owning property dropped by twenty percentage points between 1997 and 2017, ending at thirty-five per cent. A different comparison starts with England’s owners of every age. In 2022 only one tenth of them were younger than thirty-five. Each statistic supports Hunt’s account from a different angle. (Hunt, lines 1–11).
 
 ![Two different denominators in Hunt’s article](figures/tenure-data.svg)
 
@@ -69,4 +71,4 @@ Names for age groups are convenient when a comparison identifies the dates, the 
 
 ## Vérification des longueurs
 
-Les quatre réponses de compréhension comptent respectivement 58, 58, 69 et 58 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.
+Les quatre réponses de compréhension comptent respectivement 58, 64, 69 et 67 mots hors références. Dans l’essai, un groupe relié par un trait d’union compte pour un seul mot.

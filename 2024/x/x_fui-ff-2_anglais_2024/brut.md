@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Reading comprehension
 
 ### 1. Age, assets and class
@@ -16,7 +18,7 @@ Two people celebrating their thirtieth birthdays together may face sharply diffe
 
 ### 2. Transferring money during one’s lifetime
 
-The expression describes moving assets to relatives during the giver’s lifetime instead of leaving everything to be distributed after death. Parents might provide money towards a flat while their child needs it, for instance. Some prosperous households also hope to reduce future tax liabilities. These private arrangements can change the recipient’s opportunities long before a will is administered. (Hunt, lines 30–39).
+Here relatives pass on some wealth before they die. A parent might help a child purchase a home immediately, and richer families may also reduce future tax. Hunt reports one study distinguishing eleven billion pounds transferred privately each year from ninety-nine billion passed on by will. A separate estimate covers parental gifts and lending together, so it cannot simply be added to those totals. (Hunt, lines 30–39).
 
 ### 3. Financial effects of the pandemic
 
@@ -24,7 +26,7 @@ Older residents accounted for much of the unusually high mortality during the pa
 
 ### 4. Why home ownership became harder
 
-Scarce housing and high prices have kept many younger adults in rented accommodation for longer than earlier cohorts. For adults between twenty-five and thirty-four, ownership fell from fifty-five per cent in 1997 to thirty-five per cent by 2017. Many urban tenants therefore approach middle age without expecting that purchase will soon become possible, although their individual circumstances vary. (Hunt, lines 1–15).
+Rising prices and limited supply have forced younger households to rent longer. Within the group aged twenty-five to thirty-four, the share owning property dropped by twenty percentage points between 1997 and 2017, ending at thirty-five per cent. A different comparison starts with England’s owners of every age. In 2022 only one tenth of them were younger than thirty-five. Each statistic supports Hunt’s account from a different angle. (Hunt, lines 1–11).
 
 ![When family assets reach another generation](figures/estate-transfers.svg)
 
