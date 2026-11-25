@@ -29,6 +29,19 @@ def test_releve_identique():
     verifier_page(PAGE, [SUJET], DATE)
 
 
+def test_quatre_fichiers_du_bon_sujet_et_du_bon_releve():
+    date = "2026-11-25T04:48:00Z"
+    donnees = {**SUJET, "contrôle des fichiers UTC": date}
+    liens = "".join(f'<a href="/api/catalog/documents/corriges/exemple/{mode}.{ext}">{ext}</a>'
+                    for mode in ("brut", "guide") for ext in ("pdf", "md"))
+    page = PAGE.replace("Édition vérifiée <time", f'Édition vérifiée <time datetime="{date}"></time>{liens}<time')
+    verifier_page(page, [donnees], DATE)
+    with pytest.raises(ValueError, match="liens des fichiers"):
+        verifier_page(page.replace("exemple/guide.pdf", "autre/guide.pdf"), [donnees], DATE)
+    with pytest.raises(ValueError, match="date du contrôle des fichiers"):
+        verifier_page(page.replace(date, DATE), [donnees], DATE)
+
+
 @pytest.mark.parametrize("ancien,nouveau", [
     (DATE, "2026-11-24"),
     ("vitesse non renseignée", "vitesse standard"),

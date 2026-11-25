@@ -1,0 +1,68 @@
+{
+  "slug": "ens-de-lyon_serie-ses-b-l_russe-oral_2025",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Série SES (B/L)",
+    "matiere": "Russe (oral)",
+    "annee": 2025,
+    "modalite": "oral"
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2025-10/Fascicule%20SES%202025%20OK.pdf#page=15",
+    "sujet_sha256": "c8ddaa0530f71dbb4dfb4bb32f8373963776602248462be1d250ba5c27b674c5",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2025-11/Fascicule%20SES%202025%20relu%20EB%2B%20SLG.pdf#page=27",
+    "rapport_jury_sha256": "376daf04dd646b0b3fa852e3fb741b66e422a77d5cbe836a9541ca8da0d35c4d",
+    "documents": [
+      {
+        "rang": 1,
+        "reference_repertoire": "« Пять лет с начала пандемии Covid-19: каковы позитивные аспекты «крупнейшего психологического эксперимента в истории»? », Изабель Каро (11/03/2025)",
+        "publication": "Би-би-си на русском",
+        "page_repertoire": 15,
+        "temoins": [
+          {
+            "description": "Article russe de la BBC",
+            "url": "https://www.bbc.com/russian/articles/cvge7j1vz82o"
+          }
+        ],
+        "limitation": "Publication de presse identifiée et lue. La coupe de concours reste inconnue."
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [],
+    "questions_partiellement_traitees": [
+      "« Пять лет с начала пандемии Covid-19: каковы позитивные аспекты «крупнейшего психологического эксперимента в истории»? », Изабель Каро (11/03/2025)"
+    ],
+    "questions_non_traitees": [],
+    "motif": "Le fascicule de Lyon identifie 1 référence de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+  },
+  "figures": [
+    {
+      "fichier": "figures/svidetelstva.svg",
+      "legende": "Какие выводы позволяет сделать источник?",
+      "question": "Référence 1"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du répertoire et du rapport du jury, confrontation aux publications et rédaction des deux éditions avec exemples de prise de parole, relances, entraînements et schémas. Le fascicule de Lyon identifie 1 référence de presse. Il donne les titres et les dates. Les feuillets remis aux candidats et leurs coupes ne sont pas reproduits. Les prises de parole s’appuient sur les témoins indiqués pour chaque entrée."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

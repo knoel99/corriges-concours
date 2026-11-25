@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2003",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2003
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours/session-2003/sujet-ecrit-2003-second-concours_mathematiques.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/rapports-des-jurys-du-second-concours/session-2003/rapport-2003-second-concours_ecrit_mathematiques.pdf",
+    "sha256_sujet": "723720e456db04dd50fdf20ecb5a21057b10abb0844f2dc911bc3d3d9df02f09"
+  },
+  "figures": [
+    {
+      "fichier": "figures/seuil-et-somme-partielle.svg",
+      "question": "III.4",
+      "legende": "Pour N = 8, les puissances sont au-dessus du seuil 1/2, ou sur ce seuil, exactement jusqu’au rang 8. L’indicatrice sélectionne la somme partielle voulue."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète sur l’original et le rapport. Système polynomial et matrice triangulaire, deux exemples de Cesàro, encadrement pondéré du saut, contrôle des coefficients de signes mixtes et choix explicite de la coupure. Figure des puissances et du seuil.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}

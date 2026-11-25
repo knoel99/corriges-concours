@@ -1,0 +1,92 @@
+{
+  "slug": "ens-de-lyon_second-concours_physique_2009",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Physique",
+    "annee": 2009
+  },
+  "questions": 37,
+  "redaction": "Les trois rubriques du questionnaire (dont ses huit sous-questions) et les trente-quatre questions de Thomson, Rayleigh, Bohr et spectroscopie sont traitées. Les cinq longueurs d’onde imprimées sont utilisées pour mesurer la constante de Rydberg.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filieres-universitaires/annales-du-second-concours-de-lens-lyon/session-2009/sujet-ecrit-2009-second-concours_physique.pdf",
+    "nature": "Fascicule du second concours de l’ENS de Lyon.",
+    "sujet_sha256": "67918627838ef4914c5e1c72355a7fab6f25f3abc401b2216f7cee83a4d7b3df"
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "I.D.4",
+      "fichier": "figures/rayonnement-dipolaire.svg",
+      "legende": "Coupe du diagramme de puissance normalisé du dipôle. La distance au centre est proportionnelle à sin² θ, angle compté depuis l’axe vertical."
+    },
+    {
+      "numero": 2,
+      "question": "II.C.2",
+      "fichier": "figures/spectrophotometre.svg",
+      "legende": "Montage de principe en transmission. Le collimateur éclaire normalement le réseau et la voie de réception vise une direction diffractée."
+    },
+    {
+      "numero": 3,
+      "question": "II.C.3",
+      "fichier": "figures/balmer-rydberg.svg",
+      "legende": "Droite de Balmer établie à partir des cinq mesures du fascicule. L’ajustement utilise l’origine prédite par le modèle."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des éditions brute et guidée après lecture du fascicule officiel. Les trois rubriques du questionnaire (dont ses huit sous-questions) et les trente-quatre questions de Thomson, Rayleigh, Bohr et spectroscopie sont traitées. Les cinq longueurs d’onde imprimées sont utilisées pour mesurer la constante de Rydberg.",
+      "agent": "astra_physique",
+      "fournisseur": "codex"
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Q.1",
+      "Q.2",
+      "Q.3",
+      "I.A.1",
+      "I.A.2",
+      "I.B.1",
+      "I.B.2",
+      "I.B.3",
+      "I.C.1",
+      "I.C.2",
+      "I.C.3",
+      "I.C.4",
+      "I.C.5",
+      "I.D.1",
+      "I.D.2",
+      "I.D.3",
+      "I.D.4",
+      "I.D.5",
+      "I.D.6",
+      "I.D.7",
+      "I.D.8",
+      "II.A.1",
+      "II.A.2",
+      "II.A.3",
+      "II.A.4",
+      "II.A.5",
+      "II.A.6",
+      "II.A.7",
+      "II.B.1",
+      "II.B.2",
+      "II.B.3",
+      "II.C.1",
+      "II.C.2",
+      "II.C.3",
+      "II.C.4",
+      "II.C.5",
+      "II.C.6"
+    ]
+  }
+}

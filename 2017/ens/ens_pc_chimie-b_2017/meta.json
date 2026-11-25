@@ -1,0 +1,174 @@
+{
+  "slug": "ens_pc_chimie-b_2017",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Chimie B",
+    "annee": 2017
+  },
+  "questions": 85,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/05/17_pc_sujet_chiB.pdf",
+    "sujet_sha256": "f929d6cf597a976c4ed9ca4f609cf9b7ef3c9a064dadd226fe5f66f32c1eb3b6",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/11/2017_PC_rap_echiB.pdf",
+    "rapport_sha256": "d3c22ab91cbea3f14716d82bcc8c5dfd1424f679df37f4ec68716a838df5f6cd"
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "5",
+      "6",
+      "10",
+      "13",
+      "24",
+      "25",
+      "27",
+      "28",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "61",
+      "62",
+      "63",
+      "64",
+      "65",
+      "66",
+      "67",
+      "68",
+      "69",
+      "70",
+      "71",
+      "72",
+      "73",
+      "74",
+      "75",
+      "76",
+      "77",
+      "78",
+      "79",
+      "80",
+      "81",
+      "82",
+      "83",
+      "84",
+      "85"
+    ],
+    "questions_partiellement_traitees": [
+      "11",
+      "39"
+    ],
+    "questions_non_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "7",
+      "8",
+      "9",
+      "12",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "26",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "40"
+    ],
+    "precision": "Sur les 85 questions de l’épreuve, 53 sont entièrement corrigées, dont les 45 questions de la seconde partie, du dihydrogène à la thermodynamique des protéines. Q11 traite la mesure de pureté énantiomérique et Q39 la structure et l’acidité de Lewis. Les 30 autres questions, relatives à la préparation de la gelsemine et à ses intermédiaires ou à l’attribution du spectre du produit, sont repérées hors couverture. Les figures et mesures ont été vérifiées sur les 23 pages de l’original, avec le rapport du jury de chimie Ulm 2017."
+  },
+  "figures": [
+    {
+      "question": "41",
+      "fichier": "figures/orbitales-de-hd.svg",
+      "legende": "Diagramme qualitatif à géométrie fixée et phases des orbitales sur les deux noyaux. Les flèches indiquent les deux électrons du fondamental."
+    },
+    {
+      "question": "55",
+      "fichier": "figures/deux-eclatements-zeeman.svg",
+      "legende": "Les pentes sont proportionnelles à −m. Chaque graphe emploie le rapport gyromagnétique de son propre noyau."
+    },
+    {
+      "question": "56",
+      "fichier": "figures/raies-de-couplage.svg",
+      "legende": "Raies de premier ordre, à fréquence croissante. L’écart entre raies voisines est J. Les entiers indiquent les intensités relatives."
+    },
+    {
+      "question": "59",
+      "fichier": "figures/correlations-orbitalaires-ethane.svg",
+      "legende": "Les pointillés relient chaque niveau à ses orbitales de fragment. Les deux niveaux de chaque paire π sont dégénérés. Ordonnée énergétique schématique."
+    },
+    {
+      "question": "61",
+      "fichier": "figures/torsion-et-projections-de-newman.svg",
+      "legende": "À droite, vue suivant C–C. Les trois liaisons du carbone avant sont en bleu, celles du carbone arrière en ocre. Le dessin éclipsé laisse visibles leurs extrémités."
+    },
+    {
+      "question": "63",
+      "fichier": "figures/phases-des-fragments-tournes.svg",
+      "legende": "Une coupe montre la paire alignée avec xA. La seconde paire transverse s’obtient avec yA et xB à 90°, puis yA et −yB à 180°. Couleur et signe représentent la phase."
+    },
+    {
+      "question": "73",
+      "fichier": "figures/karplus-et-populations.svg",
+      "legende": "Les déphasages des deux courbes de Karplus rendent les mesures complémentaires. Les populations sont celles du modèle à trois rotamères."
+    },
+    {
+      "question": "74",
+      "fichier": "figures/bassins-des-deux-valines.svg",
+      "legende": "Comparaison qualitative sur les mêmes axes. Les hauteurs des barrières et les profondeurs des états peu peuplés sont illustratives. Seuls les rapports de populations contraignent les écarts entre bassins occupés."
+    },
+    {
+      "question": "84",
+      "fichier": "figures/paires-de-rotameres.svg",
+      "legende": "Cases occupées à partir des plateaux des figures 15 et 16 de l’original. Les durées totales sont respectivement 3 ns et 250 ps. Un tiret marque l’absence de plateau résolu."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction originale des deux éditions pour 53 réponses entières et deux volets indépendants. Calculs de couplage de HD, diagramme des huit orbitales de l’éthane, analyse de Karplus, populations et thermodynamique de Val26 et Val70, lecture des trajectoires de TNfn3. Neuf graphiques originaux. Les 30 autres questions sont délimitées."
+    }
+  ]
+}

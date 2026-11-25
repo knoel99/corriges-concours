@@ -1,0 +1,59 @@
+{
+  "slug": "x-ens_psi_modelisation_2010",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Modélisation",
+    "annee": 2010,
+    "duree_heures": 5
+  },
+  "questions": 48,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://cortial.net/fichiers/ecrits2010/X-ENS10psi-modelisation.pdf",
+    "sujet_sha256": "021ca4a5385a191e907a2095328f34a0ac3f6aaa3a1131cdbfd67500a85eec90",
+    "cahier_figures": "https://cortial.net/fichiers/ecrits2010/X-ENS10psi-modelisation-fig.pdf",
+    "cahier_figures_sha256": "4d846be4ea1a827649ec24216e2b83b4048a5e8c19d74541973dbc5ab1b9ccde",
+    "identification": "CX0612, banque commune École polytechnique – ENS de Cachan, 34 pages de sujet et 9 pages de figures, dont la figure 27 de Bode."
+  },
+  "figures": [
+    {
+      "fichier": "figures/commutation.svg",
+      "question": "8",
+      "legende": "Exemple d’inductance périodique. La zone teintée indique les intervalles alimentés. Le couple disparaît quand le courant est coupé."
+    },
+    {
+      "fichier": "figures/deplacement.svg",
+      "question": "16",
+      "legende": "Déplacement du point A, amplifié pour la lecture. Au premier ordre, les projections valent δR et R δθ."
+    },
+    {
+      "fichier": "figures/couronne-deformee.svg",
+      "question": "24",
+      "legende": "Cercle initial en pointillés, déformée radiale en vert et nœuds angulaires en points. Les déplacements sont amplifiés."
+    },
+    {
+      "fichier": "figures/interface-lame.svg",
+      "question": "34",
+      "legende": "Profils schématiques pour une tension positive. Le collage assure la continuité de la déformation à y/h = 0,5. La contrainte longitudinale peut y sauter."
+    },
+    {
+      "fichier": "figures/poles-ppf.svg",
+      "question": "46",
+      "legende": "Pôles du modèle de réglage, normalisés par la pulsation du mode. Les deux paires convergent lorsque le rapport de leurs fréquences revient à 1."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 48 questions depuis les deux cahiers CX0612. Calcul du couple et du saut de traction magnétique, projection des modes de couronne, conditions initiales des vibrations libres, dimensionnement des lames, distinction des deux identifications en fréquence, quartique et application du retour positif. Cinq figures originales. Aucun second relecteur déclaré."
+    }
+  ]
+}

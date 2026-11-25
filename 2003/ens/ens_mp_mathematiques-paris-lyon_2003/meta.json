@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_mathematiques-paris-lyon_2003",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Mathématiques Paris-Lyon",
+    "annee": 2003
+  },
+  "questions": 61,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2003/sujet-2003-ecrit-mp_mathematiques_lyon_paris.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2003/rapport-2003-mp_ecrit_mathematiques_lyon_paris.pdf",
+    "sha256_sujet": "f7608173fba2590aaf6bcb904423fa9e2b17f91a112d41135a421dd2fa129c0b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/corde-et-somme.svg",
+      "question": "III.1.a",
+      "legende": "Pour D = 1, la droite y = 3(x − 1) rencontre la branche en trois points. La somme des deux premiers est le reflet du troisième. Le détail agrandit les deux intersections proches."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction complète des quatre parties, dont les treize questions de la dernière page scannée. Contrôle sur le cahier et le rapport du jury : tangences, dérivées des racines, signe des ordonnées, duplication rationnelle, valuations, diviseurs communs et bornes de hauteur. Figure de la corde et agrandissement des deux premières intersections.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
