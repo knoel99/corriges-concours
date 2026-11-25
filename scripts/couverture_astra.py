@@ -180,7 +180,7 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
             return "identité de matière à corriger pour publier sur la fiche", set()
         if filiere := epreuve.get("filiere"):
             adresse = f"{banque}_{segment_adresse(filiere)}_{matiere}_{annee}"
-            if fiche_site(adresse) != fiche_site(dossier.name):
+            if not set(fiches_site(dossier.name)) <= set(fiches_site(adresse)):
                 return "identité de filière à corriger pour publier sur la fiche", set()
     for md in fichiers[1:]:
         if not signatures <= entete(md.read_text(encoding="utf-8")):
@@ -191,7 +191,8 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
     return "signature présente", signatures
 
 
-def fiche_site(slug: str) -> str:
+def fiches_site(slug: str) -> tuple[str, ...]:
+    """Adresses publiques de chacune des voies d’une épreuve commune."""
     banque, voie, epreuve = slug.split("_", 2)
     filieres = voie.split("-")
     if len(filieres) > 1 and set(filieres) <= {
@@ -208,8 +209,12 @@ def fiche_site(slug: str) -> str:
         "ect",
         "ecg",
     }:
-        voie = filieres[0]
-    return f"{banque}_{voie}_{epreuve}"
+        return tuple(f"{banque}_{filiere}_{epreuve}" for filiere in dict.fromkeys(filieres))
+    return (slug,)
+
+
+def fiche_site(slug: str) -> str:
+    return fiches_site(slug)[0]
 
 
 class SourceHTML(HTMLParser):
@@ -412,7 +417,7 @@ def main() -> int:
     parser.add_argument(
         "--site",
         action="store_true",
-        help="vérifier les deux HTML et PDF en production",
+        help="vérifier les deux lecteurs et PDF en production pour chaque filière",
     )
     parser.add_argument("--tsv", type=Path, help="écrire le rapport par épreuve")
     parser.add_argument(
@@ -448,11 +453,17 @@ def main() -> int:
         site = "non vérifié"
         if signatures and args.site:
             try:
-                site = (
-                    "vérifié"
-                    if site_verifie(dossier, fiche, signatures)
-                    else "trace à vérifier"
-                )
+                meta = json.loads((dossier / "meta.json").read_text(encoding="utf-8"))
+                voie = meta.get("epreuve", {}).get("filiere")
+                adresse = slug
+                if voie:
+                    concours, _, epreuve, annee = slug.split("_")
+                    adresse = f"{concours}_{segment_adresse(voie)}_{epreuve}_{annee}"
+                lacunes = [
+                    cible for cible in fiches_site(adresse)
+                    if not site_verifie(dossier, cible, signatures)
+                ]
+                site = "trace à vérifier (" + ", ".join(lacunes) + ")" if lacunes else "vérifié"
             except (OSError, IncompleteRead, ValueError, subprocess.SubprocessError) as exc:
                 site = f"contrôle impossible ({exc})"
         return (
