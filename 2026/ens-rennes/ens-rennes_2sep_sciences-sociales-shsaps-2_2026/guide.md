@@ -10,6 +10,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Présentation du sujet
 
 L’épreuve écrite de sciences sociales appliquées aux activités physiques et sportives dure deux heures. Il faut caractériser et expliquer les innovations intervenues depuis les années 1970. Le rapport du jury invite à étudier ensemble les modalités de pratique, les usages de ces activités et les groupes qui les transforment. [Sujet officiel](https://www.ens-rennes.fr/medias/fichier/sujet-shsaps-2-sciences-sociales-2sep-2026_1791303280103-pdf) · [Rapport de jury](https://www.ens-rennes.fr/medias/fichier/rapport-de-jury-2sep-shsaps-2-ss-2026_1791304672348-pdf)
@@ -68,6 +70,8 @@ Du temps, un lieu, des pairs disponibles pour transmettre, ou la possibilité d�
 L’événement associe des acteurs qui ne poursuivent pas la même fin. Il transforme une activité en expérience organisée et une montagne en destination sportive. Les outils de suivi numérique montrent comment une sortie en solitaire change de portée après son enregistrement. La coexistence de la rue et des compétitions olympiques de skateboard fournit une objection à l’idée d’une succession obligatoire où les pratiques les plus récentes feraient disparaître les anciennes.
 
 ![Figure 3 — Un parcours de trail, trois usages. Le même parcours devient une épreuve pour son participant, un événement pour son organisateur et une destination pour le territoire.](figures/trois-usages-du-trail.svg)
+
+Pour expliquer le changement, associez un matériau à chacun des trois points de vue : un récit de pratiquant, un règlement de course, puis des documents locaux sur l’organisation et la fréquentation du parcours. Le rapprochement aide à distinguer la date d’un événement de celle de son appropriation par d’autres acteurs.
 
 ## Références et exemples
 

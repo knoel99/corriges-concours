@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille officielle demande de choisir un seul sujet, de l’indiquer et de rédiger une réponse structurée avec une introduction. Le plan est libre. Le rapport distingue deux formes de travail, le retour sur un projet de recherche et la réflexion sur une actualité juridique. La feuille numérote trois sujets puisqu’elle propose deux questions d’actualité. Les trois propositions ci-dessous peuvent se lire séparément.
 
 ## Sujet 1 · Critiquer le droit et reprendre un projet de recherche
@@ -105,6 +107,8 @@ Deux objections méritent d’être entendues. D’un côté, un traitement trop
 La possibilité de discuter la compétence, d’examiner les preuves, de faire appel et de faire sanctionner un acte irrégulier vaut pour la personne la plus puissante comme pour celle dont le procès n’attire aucune caméra. Une relaxe motivée ou l’annulation d’une mesure illégale pourraient, dans d’autres circonstances, manifester la même exigence que l’ouverture d’une enquête justifiée. Je conclus donc positivement quant à la possibilité effective du contrôle illustrée par ces événements, sans faire du sens d’un jugement particulier le certificat de bonne santé d’un régime. Le progrès durable serait que le même degré d’indépendance et de protection soit accessible dans les affaires ordinaires.
 
 ![À qui et à quels actes la protection s’attache-t-elle ?](figures/protections.svg)
+
+Soumettez le raisonnement à deux variations. Un ancien président peut encore se prévaloir de l’irresponsabilité attachée aux actes accomplis en sa qualité, sous les réserves constitutionnelles. Un collaborateur mis en cause pendant le mandat ne bénéficie pas personnellement de l’inviolabilité présidentielle. Il reste à vérifier la régularité de la mesure qui le vise.
 
 ### Délimiter exactement chaque contrôle
 

@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille officielle demande de choisir un seul sujet, de l’indiquer et de rédiger une réponse structurée avec une introduction. Le plan est libre. Le rapport distingue deux formes de travail, le retour sur un projet de recherche et la réflexion sur une actualité juridique. La feuille numérote trois sujets puisqu’elle propose deux questions d’actualité. Les trois propositions ci-dessous peuvent se lire séparément.
 
 ## Sujet 1 · Critiquer le droit et reprendre un projet de recherche
@@ -73,6 +75,10 @@ Dans l’affaire donnée, le tribunal correctionnel de Paris a condamné Nicolas
 La perquisition du 21 mai 2026 intervient, selon le fascicule, après un refus d’accès en avril. Dans un État de droit, la question n’est pas de savoir qui, du palais ou du tribunal, peut imposer sa volonté. Elle est de savoir quels faits peuvent être instruits, à l’égard de quelles personnes et sous quel contrôle. Un marché conclu pour organiser une cérémonie engage des fonds et des règles que l’administration ne peut rendre inapplicables simplement en travaillant pour la présidence. À l’inverse, un magistrat qui vise un tiers ne peut se servir du lieu pour contourner les garanties que la Constitution attache à la personne du président en exercice.
 
 Dans l’affaire des sondages de l’Élysée, la chambre criminelle, le 19 décembre 2012 (n° 12-81.043), a refusé de faire bénéficier les membres du cabinet d’une immunité pénale qu’aucun texte ne leur accordait. Elle a cassé sans renvoi la décision de ne pas informer. Le juge d’instruction devait enquêter sur les faits relevant de sa saisine. Elle n’a ni déclaré les collaborateurs coupables, ni édicté une autorisation générale de perquisitionner tout espace présidentiel. Le rapprochement avec 2026 porte sur une limite de l’immunité personnelle. Les actes requis pour rechercher les preuves chez des tiers doivent encore respecter les règles de compétence, de procédure et les protections applicables à certaines informations. L’ouverture d’une enquête donne à l’instruction la possibilité d’établir les faits à charge comme à décharge. Elle ne permet pas d’affirmer que le marché était illégal ou qu’un président a commis une infraction.
+
+Dans le premier cas, il faut dater les faits et déterminer s’ils se rattachent à l’exercice de la présidence. Dans le second, il faut identifier la personne que vise chaque acte de procédure. Une pièce utile à l’enquête sur un marché peut se trouver dans des locaux présidentiels sans que sa recherche constitue, de ce seul fait, une poursuite contre le président. Ce sont donc les personnes, les actes et les garanties applicables qu’il faut comparer.
+
+![Figure 1 — À qui et à quels actes la protection s’attache-t-elle ?](figures/protections.svg)
 
 ### Le critère du renforcement doit valoir aussi pour une relaxe ou une nullité
 

@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 Le libellé de l’écrit est attesté par le rapport du jury, p. 4. Le jury présente l’épreuve comme une dissertation courte de deux heures et indique en p. 5 plusieurs angles de discussion. La proposition ci-dessous développe un raisonnement possible.
 
 ## Quelle place donner à l’historicisation de son objet dans une recherche en sciences sociales ?
@@ -49,6 +51,8 @@ Imaginons que l’on dispose d’un registre de secours local et de témoignages
 Prenons deux enquêtes fictives comportant chacune 400 personnes. Dans le groupe A, 10 % présentent la propriété mesurée ; dans B, 30 %, aux deux dates. Si la première enquête compte 300 personnes de A et 100 de B, on dénombre 30 + 30 personnes concernées, soit 15 %. Avec 100 de A et 300 de B à la seconde date, on en dénombre 10 + 90, soit 25 %. L’écart total de dix points vient ici de la composition. Un changement du questionnaire pourrait, indépendamment, modifier la mesure à composition constante. Examiner les poids des groupes et l’histoire de l’instrument répond donc à deux objections différentes. Ce calcul scolaire ne représente aucune enquête réelle sur le chômage. [Refonte effective de l’enquête Emploi en 2021, Insee](https://www.insee.fr/fr/statistiques/5402123)
 
 ![Un effet de composition sur un exemple fictif](figures/composition.svg)
+
+Refaites le calcul de la seconde enquête en conservant les poids de la première. Avec trois quarts du groupe A et un quart du groupe B, on retrouverait 15 %. Cette standardisation isole la part du changement imputable, dans l’exemple, à la composition de la population.
 
 ### Traiter une objection à sa propre explication
 
