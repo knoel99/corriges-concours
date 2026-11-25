@@ -1,0 +1,59 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-les-defis-du-vieillissement-oral_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — les défis du vieillissement (oral)",
+    "annee": 2019,
+    "modalite": "oral"
+  },
+  "intitule": "Économie — les défis du vieillissement (oral)",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/economie-oral-sil2019.pdf",
+    "sujet_sha256": "ab858a3b9df7dea20425eb04cd86799d83273c1da4e6ed3a2ecc27a01d42a576"
+  },
+  "figures": [
+    {
+      "fichier": "figures/vieillissement.svg",
+      "question": "Explication",
+      "legende": "Lire les indicateurs du vieillissement avec le bon dénominateur"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Exposé et préparation orale couvrant les cinq documents du dossier bilingue, les projections, les retraites et les soins de longue durée."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ]
+}

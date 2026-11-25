@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-immigration-et-marche-du-travail-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — immigration et marché du travail (oral)",
+    "annee": 2018,
+    "modalite": "oral"
+  },
+  "intitule": "Économie — immigration et marché du travail (oral)",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet%20Oral%20SIL%202018.pdf",
+    "sujet_sha256": "95cc0c45ecf7748414e47d19618fcff51ecfc3a0aadfb863b73ed0ee4b869197",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_sil_economie_2018.pdf",
+    "rapport_sha256": "56807e478b9d05a59f320801e5b4c23176c290641ea4f5a69d64a6a689b990ee"
+  },
+  "figures": [
+    {
+      "fichier": "figures/immigration.svg",
+      "question": "Explication",
+      "legende": "Des flux migratoires au marché du travail"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire de la session, avec distinction entre ses indications sur l’écrit et sur l’oral."
+    },
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Exposé et préparation orale sur les cinq documents OCDE et suédois, les effets hétérogènes et l’identification causale."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ]
+}

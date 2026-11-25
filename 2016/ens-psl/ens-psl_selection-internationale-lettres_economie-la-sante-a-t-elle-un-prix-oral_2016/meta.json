@@ -1,0 +1,73 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_economie-la-sante-a-t-elle-un-prix-oral_2016",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Économie — la santé a-t-elle un prix (oral)",
+    "annee": 2016,
+    "modalite": "oral"
+  },
+  "intitule": "Économie — la santé a-t-elle un prix (oral)",
+  "gabarit": "dissertation",
+  "questions": 0,
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/ECO-oral.pdf",
+    "sujet_sha256": "8550c64793d2aef28a0ff5953d390ada1dbb11e98c6128bcf85d212dca577375",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/admission/SI_2016/rapport%20SIL%20Economie%202016.pdf",
+    "rapport_sha256": "936e17e2272a45aab860ecca2d3df4078bf8a37f0c96e873c6c6663a8ccef843"
+  },
+  "figures": [
+    {
+      "fichier": "figures/la-sante.svg",
+      "question": "Explication",
+      "legende": "Trois mesures différentes dans le dossier sur la santé"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture du rapport disciplinaire de la session, avec distinction entre ses indications sur l’écrit et sur l’oral."
+    },
+    {
+      "phase": "redaction",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Exposé et préparation orale sur prix, coût, capital santé, assurance et calcul de la valeur statistique de la vie des trois documents."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "sil_economie",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification des consignes, des raisonnements et des légendes dans les deux éditions."
+    }
+  ]
+}
