@@ -1,0 +1,171 @@
+{
+  "slug": "ens_pc_physique-chimie_2020",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "PC",
+    "matiere": "Physique-chimie",
+    "annee": 2020
+  },
+  "questions": 64,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/07/20_pc_ephychi.pdf",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2020/09/20_pc_rap_ephychi.pdf",
+    "sujet_sha256": "cf12b6b1f1a5b5804bd9ba998e206c145b2ebb09ec01d0d2bda9f3207624154d",
+    "rapport_sha256": "cf3298c8ca6c120cbeb569838fd9e99da424170bcd1a8ba037115b74657cdb1c"
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9",
+      "P10",
+      "P11",
+      "P12",
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P19",
+      "P20",
+      "P21",
+      "P22",
+      "P23",
+      "P24",
+      "P25",
+      "P26",
+      "P27",
+      "P28",
+      "P29",
+      "P30",
+      "P31",
+      "P32",
+      "P33",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "Les 33 questions de physique et les 31 questions de chimie sont traitées. Les analyses graphiques distinguent mesures, extrapolations et solutions approchées."
+  },
+  "date_revision": "2026-11-25",
+  "figures": [
+    {
+      "question": "P3",
+      "fichier": "figures/equilibre-chainette.svg",
+      "legende": "Bilan global de la corde symétrique. Les composantes horizontales des réactions se compensent et chacune porte la moitié du poids."
+    },
+    {
+      "question": "P17",
+      "fichier": "figures/solutions-du-film.svg",
+      "legende": "Pour les mêmes anneaux deux profils stationnaires existent. À gauche la droite tangente marque le seuil où les deux solutions fusionnent."
+    },
+    {
+      "question": "P29",
+      "fichier": "figures/trajectoires-z-et-racine.svg",
+      "legende": "Même modèle de trajectoire représenté dans les deux coordonnées, avec une pente en Z de 1,45 par seconde et réflexion au sommet. Les lignes illustrent le modèle."
+    },
+    {
+      "question": "P31",
+      "fichier": "figures/demi-tour-de-corde.svg",
+      "legende": "Sur le volume de contrôle du demi-tour, les deux tensions sont vers le haut. Le flux de quantité de mouvement change de signe entre entrée et sortie."
+    },
+    {
+      "question": "P32",
+      "fichier": "figures/deux-vitesses-et-reperes.svg",
+      "legende": "À gauche, vitesses relatives à la corde. À droite, modules au laboratoire. Au sommet, les valeurs sont environ 2,05 et 0,05 dans ce dernier repère."
+    },
+    {
+      "question": "C2",
+      "fichier": "figures/bilan-de-heck.svg",
+      "legende": "Réactifs organiques en haut et produit E en bas à gauche. La triéthylamine capte l’acide iodhydrique libéré."
+    },
+    {
+      "question": "C3",
+      "fichier": "figures/attributions-cinnamate.svg",
+      "legende": "Du méthoxy au phényle, les centres portant le signal à 3,80 ppm (vert), 6,44 ppm (bleu) et 7,69 ppm (rose). Les cinq autres protons sont aromatiques."
+    },
+    {
+      "question": "C6",
+      "fichier": "figures/reacteur-parfaitement-agite.svg",
+      "legende": "La concentration de sortie est celle du liquide dans la cuve agitée. Le débit volumique est le même en amont et en aval."
+    },
+    {
+      "question": "C10",
+      "fichier": "figures/courbe-conversion.svg",
+      "legende": "La loi du réacteur agité relie le seuil de 90 % à 411 minutes. Les points marquent les deux débits de la figure 15."
+    },
+    {
+      "question": "C20",
+      "fichier": "figures/profil-disque-membrane.svg",
+      "legende": "Profil de principe au palier. Le saut de partage est représenté pour α supérieur à un et la pente dans la membrane est constante."
+    },
+    {
+      "question": "C24",
+      "fichier": "figures/droite-de-koutecky-levich.svg",
+      "legende": "L’extrapolation des lectures de la figure 20 à vitesse de rotation infinie permet de prendre l’inverse de l’ordonnée pour déterminer le courant de membrane."
+    },
+    {
+      "question": "C27",
+      "fichier": "figures/dopamine-quinone-indoline.svg",
+      "legende": "L’oxydation des deux OH produit une ortho-quinone. L’azote de la chaîne latérale forme ensuite la nouvelle liaison du cycle à cinq."
+    },
+    {
+      "question": "C28",
+      "fichier": "figures/ascorbate-oxydation.svg",
+      "legende": "Les carbones colorés de l’énediol deviennent deux carbonyles. La chaîne portant les deux alcools conserve sa configuration."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "tour": 1,
+      "fournisseur": "codex",
+      "session": "astra_physiologie_chimie",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions sur le sujet original et le rapport de l’ENS de Lyon 2020. Calcul des branches du caténoïde, lecture des fronts de corde, distinction des repères, bilans cinétiques et de réacteur, dosages par exclusion et électrochimie. Treize figures originales."
+    }
+  ]
+}

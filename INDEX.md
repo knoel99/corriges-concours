@@ -627,6 +627,7 @@
 | 2025 | ENS | PC | Chimie B | [md](2025/ens/ens_pc_chimie-b_2025/brut.md) | [md](2025/ens/ens_pc_chimie-b_2025/guide.md) |
 | 2026 | ENS | PC | Chimie B | [md](2026/ens/ens_pc_chimie-b_2026/brut.md) | [md](2026/ens/ens_pc_chimie-b_2026/guide.md) |
 | 2026 | ENS | PC | Physique C | [md](2026/ens/ens_pc_physique-c_2026/brut.md) | [md](2026/ens/ens_pc_physique-c_2026/guide.md) |
+| 2020 | ENS | PC | Physique-chimie | [md](2020/ens/ens_pc_physique-chimie_2020/brut.md) | [md](2020/ens/ens_pc_physique-chimie_2020/guide.md) |
 | 2021 | ENS | PC | Physique-chimie | [md](2021/ens/ens_pc_physique-chimie_2021/brut.md) | [md](2021/ens/ens_pc_physique-chimie_2021/guide.md) |
 | 2022 | ENS | PC | Physique-chimie | [md](2022/ens/ens_pc_physique-chimie_2022/brut.md) | [md](2022/ens/ens_pc_physique-chimie_2022/guide.md) |
 | 2023 | ENS | PC | Physique-chimie | [md](2023/ens/ens_pc_physique-chimie_2023/brut.md) | [md](2023/ens/ens_pc_physique-chimie_2023/guide.md) |
