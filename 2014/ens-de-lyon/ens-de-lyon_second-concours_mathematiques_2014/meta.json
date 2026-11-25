@@ -1,0 +1,36 @@
+{
+  "slug": "ens-de-lyon_second-concours_mathematiques_2014",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Second concours",
+    "matiere": "Mathématiques",
+    "annee": 2014
+  },
+  "questions": 20,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_suj_math.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_2clyon_rap_emath.pdf",
+    "sha256_sujet": "00151c09c942523f642032303eee48bfdfb0c81c63315203337bb8a610bfa39e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cesaro-et-abel.svg",
+      "question": "14",
+      "legende": "Les deux sous-suites de moyennes restent distinctes, tandis que la fonction génératrice atteint sa limite −1/4."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des 18 questions et des trois sous-questions de Q13, soit 20 réponses par édition, à partir du sujet et du rapport. Toutes les formules de décalage, de convolution, les limites pondérées et la majoration taubérienne ont été contrôlées. Figure originale comparant les limites de Q14.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
