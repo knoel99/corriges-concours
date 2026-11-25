@@ -1,0 +1,121 @@
+{
+  "slug": "bel_al_espagnol-oral-tronc-commun_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Espagnol (oral tronc commun)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 27,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/2025_al_rapport_espagnol_oral_tronc_commun.pdf#page=1",
+    "sujet_sha256": "d537397481b6f1e96fcafcd245d6c520d722e924ee17e46280c1bfba42cc467d",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2025_al_rapport_espagnol_oral_tronc_commun.pdf",
+    "rapport_sha256": "d537397481b6f1e96fcafcd245d6c520d722e924ee17e46280c1bfba42cc467d",
+    "documents": {
+      "hernandez": "https://ciudadseva.com/texto/vida-solar/",
+      "champourcin": "https://www.cervantesvirtual.com/descargaPdf/antologia-poetica-1219584/#page=29",
+      "biedma": "https://d2eb79appvasri.cloudfront.net/erp-colex/openaccess/libros/7808.pdf#page=473",
+      "jodra": "https://musipoemas2.blogspot.com/2021/03/amor-y-psique.html",
+      "cernuda": "https://archivo.editanet.org/17/01d5379ab9028a92a/01d5379ab9145b263/index.html",
+      "zambrano": "https://rodin.uca.es/bitstream/handle/10498/21625/TFG-Noelia%20Avecilla-RODIN.pdf?sequence=1#page=66",
+      "reyes": "https://www.marpoetica.es/autor/miriam-reyes",
+      "ucles": "https://cdn.vivlio.com/product/v1/746f4f48-39a3-4c8d-ab63-1e9fcf7c7b3c/sample?format=.epub",
+      "aramburu": "https://cdn.vivlio.com/product/v1/5b85dad5-fb77-4edd-91f0-7eb1757366ca/sample?format=.epub",
+      "benet": "https://publications.hse.ru/pubs/share/direct/383190354.pdf#page=9",
+      "mesa": "https://studylib.es/doc/4599560/-m%C3%A1rmol---del-libro-mala-letra",
+      "lorca": "https://es.wikisource.org/wiki/Yerma/Tercer_Acto",
+      "storni": "https://es.wikisource.org/wiki/P%C3%A1gina:La_inquietud_del_rosal_(1916).pdf/93",
+      "storni2": "https://es.wikisource.org/wiki/P%C3%A1gina:La_inquietud_del_rosal_(1916).pdf/94",
+      "storni3": "https://es.wikisource.org/wiki/P%C3%A1gina:La_inquietud_del_rosal_(1916).pdf/95",
+      "neruda": "https://www.neruda.uchile.cl/obra/obraresidencia3d.html",
+      "girondo": "https://www.gutenberg.org/files/58103/58103-h/58103-h.htm",
+      "varela": "https://www.academiaecuatorianadelalengua.org/me-sobreviviran-blanca-varela/",
+      "dario": "https://www.cervantesvirtual.com/obra-visor/cantos-de-vida-y-esperanza/html/",
+      "dario_canto_errante": "https://www.gutenberg.org/files/51711/51711-h/51711-h.htm",
+      "borges": "https://ciudadseva.com/texto/el-punal/",
+      "sainz": "https://vomiteunconejito.wordpress.com/2022/08/18/diccionario-sentimental-p-de-pais-karina-sainz-borgo/",
+      "ribeyro": "https://sites.google.com/view/maldito-julio-ramon-ribeyro/textos/cuentos-olvidados-1949-1956/la-careta",
+      "aira": "https://emad-caba.infd.edu.ar/sitio/textos-para-instancia-final-ingreso-2023/",
+      "veronese_notice": "https://www.teatrocervantes.gob.ar/obra/el-liquido-tactil/",
+      "antigonas_notice": "https://museodememoria.gov.co/arte-y-cultura/antigonas-tribunal-de-mujeres/"
+    },
+    "precision": "Le rapport recense 27 textes. Douze poèmes identifiables sont expliqués sur toute leur étendue publiée. Neuf entrées donnent lieu à une préparation partielle, dont les trois identifications possibles du « Nocturno » de Darío. Pour six œuvres, le passage distribué reste à identifier. Le rapport fournit les références, sans reproduire les feuillets."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "1 — Hernández",
+      "2 — Champourcín",
+      "3 — Gil de Biedma",
+      "4 — Jodra Davó",
+      "5 — Cernuda",
+      "6 — Zambrano",
+      "7 — Reyes",
+      "17 — Storni",
+      "18 — Neruda",
+      "19 — Girondo",
+      "20 — Varela",
+      "22 — Borges"
+    ],
+    "questions_partiellement_traitees": [
+      "8 — Uclés, prologue et premier chapitre",
+      "9 — Aramburu, chapitre 3, bornes de l’oral inconnues",
+      "11 — Benet, clausule documentée",
+      "13 — Mesa, nouvelle publiée, bornes inconnues",
+      "16 — García Lorca, acte III, scène non délimitée",
+      "21 — Darío, trois poèmes homonymes",
+      "23 — Sainz Borgo, chronique publiée, bornes inconnues",
+      "24 — Ribeyro, nouvelle publiée, bornes inconnues",
+      "25 — Aira, premiers paragraphes"
+    ],
+    "questions_non_traitees": [
+      "10 — Unamuno",
+      "12 — Clarín",
+      "14 — Martínez de Pisón",
+      "15 — Vicent",
+      "26 — Veronese",
+      "27 — Tramaluna Teatro"
+    ],
+    "motif": "Le rapport recense 27 textes. Douze poèmes identifiables sont expliqués sur toute leur étendue publiée. Neuf entrées donnent lieu à une préparation partielle, dont les trois identifications possibles du « Nocturno » de Darío. Pour six œuvres, le passage distribué reste à identifier. Le rapport fournit les références, sans reproduire les feuillets."
+  },
+  "figures": [
+    {
+      "fichier": "figures/voz.svg",
+      "question": "Explication linéaire et entretien",
+      "legende": "¿Quién puede hablar al final?"
+    },
+    {
+      "fichier": "figures/memoria.svg",
+      "question": "Explication linéaire et entretien",
+      "legende": "¿Qué puede hacer presente una ausencia?"
+    },
+    {
+      "fichier": "figures/miradas.svg",
+      "question": "Explication linéaire et entretien",
+      "legende": "¿Qué cambia de manos en el relato?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du rapport et contrôle des témoins littéraires référencés. Rédaction des deux éditions, des explications et des relances en espagnol, des exercices de préparation orale et des trois figures. Le rapport recense 27 textes. Douze poèmes identifiables sont expliqués sur toute leur étendue publiée. Neuf entrées donnent lieu à une préparation partielle, dont les trois identifications possibles du « Nocturno » de Darío. Pour six œuvres, le passage distribué reste à identifier. Le rapport fournit les références, sans reproduire les feuillets."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
