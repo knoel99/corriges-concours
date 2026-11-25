@@ -1,0 +1,71 @@
+{
+  "slug": "ens_mp-pc_allemand-lv1_2008",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP-PC",
+    "matiere": "Allemand (LV1)",
+    "annee": 2008,
+    "modalite": "écrit"
+  },
+  "intitule": "Des briques Lego aux meubles en kit",
+  "questions": 3,
+  "redaction": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2008/sujet-ecrit-2008_mppc_sujet_langue_vivante_1.pdf#page=2",
+    "sha256_sujet": "54d0900d478637b442e3ecac217a1f803f6b95a9197e52e427d80cf31b3e1058",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2008",
+    "ecoles": "ENS de Paris, de Lyon et de Cachan",
+    "reference_des_textes": "Süddeutsche Zeitung, 28 janvier 2008.",
+    "page_version": "2",
+    "code_garde": "80.12PM",
+    "pages_sujet": "2",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/rapports-des-jurys-de-la-banque-pc/session-2008/rapport-2008-pc_ecrit_langue_vivante_1_allemand.pdf",
+    "sha256_rapport_jury": "6726150ef8be3e8c924301be741c61fc4e41717d4f60790458f602719ce928dc",
+    "pages_rapport_jury": "1–2",
+    "rapport_complementaire": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/rapport-de-jury-session-2008/rapport-2008-mp_ecrit_langue_vivante_1_allemand.pdf",
+    "sha256_rapport_complementaire": "4fb164b87ac3fdf49026417c650f057e6f8b02d4e51ceb99aae1ecf79cfe720e",
+    "pages_rapport_complementaire": "1–2"
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "Version",
+      "fichier": "figures/du-jeu-au-meuble.svg",
+      "legende": "Le rapprochement final de l’article repose sur un geste commun."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lucile Reynaud traite les 44 copies de PC. É. Chevrel commente séparément les 53 copies de MP."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et traitement de toutes les questions en allemand, avec lecture guidée du passage."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version",
+      "Q1",
+      "Q2"
+    ]
+  }
+}
