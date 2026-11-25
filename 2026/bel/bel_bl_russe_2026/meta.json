@@ -15,7 +15,8 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=37",
-    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl"
+    "index_organisateur": "https://www.ens.psl.eu/rapports-et-sujets-du-concours-2026-section-des-lettres-groupe-bl",
+    "sujet_sha256": "c50027658a30036283b26bd8756ad7af106e5aa71e645272d0eca566c449a276"
   },
   "figures": [
     {
@@ -34,7 +35,7 @@
       "legende": "Государственная цель, реальные возможности семьи и индивидуальное решение."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -71,6 +72,17 @@
       "modifications": true,
       "perimetre": "Lecture des articles et discours (p. 37–40) et des deux corrigés. Délimitation des territoires des séries de Rosstat, suppression du logement non cité dans l’extrait et étude du registre familier de la remarque adressée à Golikova.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le fascicule officiel. Vérifier les dates et le dénominateur. L’estimation de Rakcha pour novembre 2022 concerne environ cinq mille naissances de moins au total. Moscou est le lieu où le creux est particulièrement visible. Plus loin, les 2,9 millions sont des réfugiés ukrainiens présents en Russie début octobre selon l’ONU. Les quelque 300 000 sont des Ukrainiens ayant acquis la nationalité russe pendant toute l’année, selon RBC à partir des données du ministère. Pour calculer un taux de naturalisation, il faudrait suivre les mêmes personnes sur une période définie."
     }
   ]
 }

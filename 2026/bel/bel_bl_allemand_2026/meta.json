@@ -15,7 +15,9 @@
   },
   "sources": {
     "sujet": "https://www.ens.psl.eu/sites/default/files/livret_lve_allege.pdf#page=2",
-    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_option_allemand.pdf"
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_bl_rapport_ecrit_option_allemand.pdf",
+    "sujet_sha256": "c50027658a30036283b26bd8756ad7af106e5aa71e645272d0eca566c449a276",
+    "rapport_jury_sha256": "233406b9c309ac064b9b3f3083eb2ee98da474e2b0e87ee0491d7ee6daed0f6f"
   },
   "figures": [
     {
@@ -34,7 +36,7 @@
       "legende": "Die drei Fragen führen von der öffentlichen Reichweite eines Betriebs zum Handlungsspielraum der Beschäftigten."
     }
   ],
-  "date_revision": "2026-11-24",
+  "date_revision": "2026-11-25",
   "provenance": {
     "redaction": {
       "provider": "codex",
@@ -71,6 +73,17 @@
       "modifications": true,
       "perimetre": "Comparaison des deux commentaires aux cinq documents et au rapport. Relecture de la photographie, étude du renversement syntaxique chez Tucholsky et distinction des revendications et des projets chiffrés dans le reportage du 2 décembre 2024.",
       "fournisseur": "codex"
+    },
+    {
+      "phase": "relecture_corrige",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Relecture des deux éditions sur le fascicule officiel. Comparer deux sites pendant la grève. Sur la photographie p. 4, partez du geste du travailleur au bord inférieur droit puis suivez la ligne des postes vers le fond à gauche. La légende donne le lieu, Linden près de Hanovre, et l’année 1928. Le reportage de 2024 permet une autre observation à hauteur de salarié. À Osnabrück, la conclusion préalable d’un accord explique l’absence de grève. On ne peut en déduire que le personnel soutient les économies annoncées."
     }
   ]
 }
