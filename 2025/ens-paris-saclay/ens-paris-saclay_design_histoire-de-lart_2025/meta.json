@@ -1,0 +1,79 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2025",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2025,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire de l’art",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Sujets/BAT_HistoiredelArt.pdf",
+    "sujet_sha256": "586aa1674e33f564824dba6bf732947ee5e8157a45107df1b2121cb7ed003661",
+    "references": [
+      "https://www.moma.org/collection/works/126451",
+      "https://whc.unesco.org/en/activities/637",
+      "https://www.moma.org/documents/moma_catalogue_305_300062280.pdf",
+      "https://www.kerearchitecture.com/work/building/gando-primary-school-3",
+      "https://www.epfl.ch/about/overview/wp-content/uploads/2022/07/EPFL-rapport-annuel-2010.pdf"
+    ],
+    "rapport_jury": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2025/Rapports/2025_Design_Rapport_histoire_de_l%27art_ecrit.pdf",
+    "rapport_sha256": "308a23bafd00ced9493cfa4056743fd88ed02ceb397b810ec1ae813f02ac89f9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/transmission.svg",
+      "question": "Dissertation",
+      "legende": "Qui reprend la règle et à quelle fin ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture des deux objections précises à Rapoport et des bornes du programme."
+    },
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation de quatre heures, de la méthode guidée et de la figure des deux éditions."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation des bornes du programme, des contraintes fonctionnelles et sociales de la cuisine de Francfort, de la commande de Gourna et de la ventilation de l’école de Gando. Contrôle des deux éditions et du schéma."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "ens-paris-saclay_design_histoire-de-lart_2024",
+  "epreuve": {
+    "concours": "ENS Paris-Saclay",
+    "filiere": "Design",
+    "matiere": "Histoire de l’art",
+    "annee": 2024,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire de l’art",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_Design/2024_Histoire%20de%20l%27Art_Design1A.pdf",
+    "sujet_sha256": "6cee4a4d44d26235b3a6e4cd052eb69c441883686b2970d2ba927c5670729086",
+    "references": [
+      "https://www.ugolapietra.com/anni-80/la-casa-telematica/",
+      "https://www.moma.org/collection/works/2190",
+      "https://www.moma.org/collection/works/126451",
+      "https://www.centrepompidou.fr/fr/ressources/oeuvre/t4l0b27"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/reseaux.svg",
+      "question": "Dissertation",
+      "legende": "Où se distribue la fonction ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de la dissertation de quatre heures, de la méthode guidée et de la figure des deux éditions."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Vérification du statut expérimental de la Casa telematica à Milan, des désignations des pièces et de la table-terminal, ainsi que du dispositif sonore original des Immatériaux. Contrôle des deux éditions et du schéma."
+    }
+  ]
+}
