@@ -1,0 +1,36 @@
+{
+  "slug": "ens_cycle-master-mathematiques_mathematiques-2_2019",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Cycle master mathématiques",
+    "matiere": "Mathématiques 2",
+    "annee": 2019
+  },
+  "questions": 81,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_2C/2C_Math/2019_SE2C_MATHS_Maths2.pdf",
+    "rapport_jury": "",
+    "sha256_sujet": "de0606f53c31e3bce21482f9c5b10f77b1524c1ba0b5c661458e30e807620449"
+  },
+  "figures": [
+    {
+      "fichier": "figures/cycle-marche.svg",
+      "question": "P.III.2",
+      "legende": "Cycle de sept pas pour trois déplacements à l’aller. Le refus maintient la position pendant un pas avant le retour."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des deux éditions des deux sujets au choix, vérifiée sur le fascicule 2C9122. Simulation, stationnarité, cycles et limite, consistance, stabilité, estimation de viscosité et schémas. Correction du décalage en P.IV.7 et précision des hypothèses de N.II.5. Schéma des excursions.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
