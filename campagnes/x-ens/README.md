@@ -15,7 +15,7 @@ Les lignes « X », « ENS-PSL » (Ulm), « ENS de Lyon », « ENS Paris-Saclay 
 | Agro-Véto | Épreuves de la voie BCPST retenues pour le concours BIO de l’X. |
 | BCE | Épreuves prises en compte par Paris-Saclay pour le concours Économie-gestion, option II (ECG), via les admissibilités HEC Paris, ESSEC ou ESCP. |
 
-Les rattachements des banques extérieures ci-dessus sont documentés pour la session 2026. Une épreuve commune compte une fois dans le total. [Notice de l’X 2026](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Notice%20du%20concours%202026%20publi%C3%A9e.pdf) · [Notice inter-ENS 2026](https://www.ens.psl.eu/sites/default/files/notice_interens_2026_mise_en_ligne_vf10022026_.pdf) · [Admissibilité de Paris-Saclay via la BCE](admissibilite-saclay-ecg-2026.tsv)
+Les notices de 2026 documentent ces rattachements. La voie BCPST de l’X est également vérifiée pour 2025. Une épreuve commune compte une fois dans le total. [Notice de l’X 2026](https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/Notice%20du%20concours%202026%20publi%C3%A9e.pdf) · [Notice inter-ENS 2026](https://www.ens.psl.eu/sites/default/files/notice_interens_2026_mise_en_ligne_vf10022026_.pdf) · [Admissibilité de Paris-Saclay via la BCE](admissibilite-saclay-ecg-2026.tsv)
 
 Pour entrer dans le total des corrigés vérifiés, une épreuve doit réunir les éléments suivants.
 
@@ -140,3 +140,5 @@ Les archives D1 de 2010 à 2014 réunissent 42 épreuves écrites dont le sujet 
 À Rennes, les sujets écrits de langues du concours D1 donnent quatre options en 2015, trois en 2016, quatre en 2017 et cinq en 2019, dont le russe. En 2018, les rapports d’allemand et d’italien citent la question de rédaction. Les quatre feuillets de langues attestés cette année-là restent à retrouver. [Pages des sujets et rapports de langues du concours D1](rennes-d1-langues-2015-2019.tsv)
 
 De 2005 à 2009, les archives de Rennes attestent 49 écrits D1 de l’ENS de Cachan. En 2008, le jury cite aussi sept sujets d’oral d’économie. Le recueil de 2007 contient en outre les cahiers C1792 et C1793 du concours économie et gestion, option I, après les épreuves D1. La pagination et l’article 12 de l’arrêté du 28 novembre 2006 permettent de retrouver ces trois écrits. [Sujets, rapports et empreintes](cachan-d1-et-economie-gestion-2005-2009.tsv)
+
+En 2025, la notice de l’X retient sept écrits de la banque Agro-Véto pour la filière BCPST (pages 18 et 19). Les méthodes de calcul et raisonnement ont un coefficient de 8, et chacun des six autres écrits un coefficient de 4. Le registre relie chaque épreuve au sujet et au rapport du jury. Pour les SVT, le sujet réunit les deux cahiers de dix pages et le service des concours publie deux annexes A3, une en géologie et une en biologie. [Sujets, rapports, annexes et empreintes](agro-veto-bcpst-2025.tsv)
