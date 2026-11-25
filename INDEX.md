@@ -985,12 +985,17 @@
 | 2026 | ENS | BCPST | Physique | [md](2026/ens/ens_bcpst_physique_2026/brut.md) | [md](2026/ens/ens_bcpst_physique_2026/guide.md) |
 | 2026 | ENS | BCPST | Sciences de la Terre | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/brut.md) | [md](2026/ens/ens_bcpst_sciences-de-la-terre_2026/guide.md) |
 | 2010 | ENS | MP-PC | Allemand (LE2) | [md](2010/ens/ens_mp-pc_allemand-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_allemand-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Allemand (LV1) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_allemand-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Allemand (LV1) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_allemand-lv1_2010/guide.md) |
+| 2009 | ENS | MP-PC | Anglais (LE2) | [md](2009/ens/ens_mp-pc_anglais-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_anglais-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Anglais (LE2) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Anglais (LV1) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_anglais-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Anglais (LV1) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_anglais-lv1_2010/guide.md) |
 | 2010 | ENS | MP-PC | Arabe (LE2) | [md](2010/ens/ens_mp-pc_arabe-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_arabe-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Chinois (LE2) | [md](2009/ens/ens_mp-pc_chinois-le2_2009/brut.md) | [md](2009/ens/ens_mp-pc_chinois-le2_2009/guide.md) |
 | 2010 | ENS | MP-PC | Chinois (LE2) | [md](2010/ens/ens_mp-pc_chinois-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_chinois-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LE2) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Espagnol (LV1) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_espagnol-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Espagnol (LV1) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_espagnol-lv1_2010/guide.md) |
 | 2010 | ENS | MP-PC | Grec ancien (LE2) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_grec-ancien-le2_2010/guide.md) |
 | 2002 | ENS | MP-PC | Informatique | [md](2002/ens/ens_mp-pc_informatique_2002/brut.md) | [md](2002/ens/ens_mp-pc_informatique_2002/guide.md) |
@@ -1006,6 +1011,7 @@
 | 2023 | ENS | MP/MPI | Maths C | [md](2023/ens/ens_mp-mpi_maths-c_2023/brut.md) | [md](2023/ens/ens_mp-mpi_maths-c_2023/guide.md) |
 | 2024 | ENS | MP/MPI | Maths C | [md](2024/ens/ens_mp-mpi_maths-c_2024/brut.md) | [md](2024/ens/ens_mp-mpi_maths-c_2024/guide.md) |
 | 2010 | ENS | MP-PC | Italien (LE2) | [md](2010/ens/ens_mp-pc_italien-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_italien-le2_2010/guide.md) |
+| 2009 | ENS | MP-PC | Italien (LV1) | [md](2009/ens/ens_mp-pc_italien-lv1_2009/brut.md) | [md](2009/ens/ens_mp-pc_italien-lv1_2009/guide.md) |
 | 2010 | ENS | MP-PC | Italien (LV1) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/brut.md) | [md](2010/ens/ens_mp-pc_italien-lv1_2010/guide.md) |
 | 2010 | ENS | MP-PC | Japonais (LE2) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_japonais-le2_2010/guide.md) |
 | 2010 | ENS | MP-PC | Latin (LE2) | [md](2010/ens/ens_mp-pc_latin-le2_2010/brut.md) | [md](2010/ens/ens_mp-pc_latin-le2_2010/guide.md) |
