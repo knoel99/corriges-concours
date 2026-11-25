@@ -1,0 +1,76 @@
+{
+  "slug": "x_mp-pc_anglais_2006",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "MP-PC",
+    "matiere": "Anglais",
+    "annee": 2006,
+    "modalite": "écrit"
+  },
+  "intitule": "George Hagen, The Second Holiday, et Thérèse Delpech, La maîtrise du développement technologique",
+  "questions": 3,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "V",
+      "1",
+      "2"
+    ]
+  },
+  "sources": {
+    "index": "https://web.archive.org/web/20090501013104/http://www.polytechnique.fr:80/concours/sujets/sujet06/sujet06.htm",
+    "etablissements": "École polytechnique et École supérieure de physique et de chimie industrielles",
+    "pages_sujet": "2",
+    "sujet": "https://web.archive.org/web/20090320042100id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version.pdf#page=2",
+    "sujet_sha256": "3c0241e84f54feccff75ccc446adc3977fde1b0af7c98b6bd9a5f0aa93a6ae7d",
+    "sujet_complementaire": "https://web.archive.org/web/20090320034643id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_ExprEcrit.pdf",
+    "sujet_complementaire_sha256": "ad80c0da654053218712dac3cf40e8b5a0dc914d0adc391ff04bf02b5cdad42d",
+    "rapport_jury": "https://web.archive.org/web/20090320042919id_/http://www.imprimerie.polytechnique.fr:80/EnLignes/Files/06_Version_AN.pdf",
+    "rapport_jury_sha256": "80198f429d311dc6db346f1ec4a2cfb80088bd306d2ee58cc262adabd724648a",
+    "rapport_complementaire": "https://web.archive.org/web/20061208144725id_/http://www.imprimerie.polytechnique.fr/EnLignes/Files/06_ExprEcrit_AN.pdf",
+    "rapport_complementaire_sha256": "5ba2fd9f7cd3eb7310e83f081f9256d2cf36ed499ec69ed4a8b75a5b13b2d8b7",
+    "precision": "La version est extraite de The Laments (2004), l’expression de L’Ensauvagement (2005). Les deux cahiers ainsi que les rapports distincts sur la version et l’expression ont été consultés."
+  },
+  "mots_expression": {
+    "1": 130,
+    "2": 192
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "V",
+      "fichier": "figures/aveu.svg",
+      "legende": "L’orage accompagne le trajet tandis que le récit fait entendre deux points de vue."
+    },
+    {
+      "numero": 2,
+      "question": "1",
+      "fichier": "figures/institutions.svg",
+      "legende": "L’écart entre expertise disponible et maîtrise des effets crée une responsabilité partagée."
+    },
+    {
+      "numero": 3,
+      "question": "2",
+      "fichier": "figures/peur.svg",
+      "legende": "Une crainte analysée peut encourager des protections sans paralyser la décision."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_sciences_2005_2008",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Version intégrale en français et réponses intégrales en anglais. George Hagen, The Second Holiday, et Thérèse Delpech, La maîtrise du développement technologique.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
