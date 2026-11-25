@@ -233,6 +233,8 @@
 | 2019 | BEL | AL | Russe (commentaire et traduction) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_russe-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Russe (thème Lyon) | [md](2019/bel/bel_al_russe-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_russe-theme-lyon_2019/guide.md) |
 | 2022 | BEL | AL | Étude de texte français (Lyon) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/brut.md) | [md](2022/bel/bel_al_etude-de-texte-francais-lyon_2022/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral option 16 juin) | [md](2026/bel/bel_al_philosophie-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-option-16-juin_2026/guide.md) |
+| 2026 | BEL | AL | Philosophie (oral option 19 et 20 juin) | [md](2026/bel/bel_al_philosophie-oral-option-19-et-20-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-option-19-et-20-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 16 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-16-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 17 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Philosophie (oral tronc commun 18 juin) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-18-juin_2026/brut.md) | [md](2026/bel/bel_al_philosophie-oral-tronc-commun-18-juin_2026/guide.md) |
