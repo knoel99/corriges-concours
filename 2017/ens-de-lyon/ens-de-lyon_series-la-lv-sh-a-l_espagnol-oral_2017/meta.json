@@ -9,13 +9,19 @@
   },
   "intitule": "Espagnol — épreuves orales A/L 2017, trois séries",
   "questions": 64,
-  "redaction": "Explication et dialogue en espagnol pour 13 passages de Rojas, Machado et Vargas Llosa et 51 notices de presse. Figure sur la mémoire publique des dictatures. Apparats différenciés sur le point de vue, la chronologie et les mouvements de texte.",
+  "redaction": "Explication et dialogue en espagnol pour 13 passages de Rojas, Machado et Vargas Llosa et 51 notices de presse. Figure sur la mémoire publique des dictatures. Apparats différenciés sur le point de vue, la chronologie et les mouvements de texte. Ajout de 41 analyses sur le texte effectivement remis et de renvois paginés, signalement individuel des 10 coupes absentes.",
   "sources": {
     "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-2017_1506588202509.pdf",
     "sha256_sujet": "046666a1d6b0f6491a605858889d7af72cf2a3ed38afebd5104bc0fe26a32f1d",
     "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ESPAGNOL_2017.pdf",
     "sha256_rapport_jury": "388a1de7c27ae3f048b5558c7dd5f56ecfd4f486f1d6d794552b40b121b7c50c",
     "archives_complementaires": [
+      {
+        "type": "cahier officiel des textes hors programme distribués",
+        "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf",
+        "sha256": "edaff2b3ee0e8fe85024c6b15f64274a42ef1f5bcecf0e25b8df956aa28cb3d8",
+        "pages": 49
+      },
       {
         "statut": "Edición de La Celestina",
         "url": "https://pruebatcdn.aprende.org/libros/pdf/La-celestina.pdf"
@@ -333,7 +339,13 @@
         "titre": "¿Tiene sentido el olvido histórico? “Las víctimas de ETA no pueden ser los únicos árbitros",
         "statut": "Notice du fascicule officiel ; découpage non conservé."
       }
-    ]
+    ],
+    "cahier_hors_programme": {
+      "type": "cahier officiel des textes hors programme distribués",
+      "url": "https://www.ens-lyon.fr/sites/default/files/2017-11/espagnol-hors-programme2017_1506588879766.pdf",
+      "sha256": "edaff2b3ee0e8fe85024c6b15f64274a42ef1f5bcecf0e25b8df956aa28cb3d8",
+      "pages": 49
+    }
   },
   "figures": [
     {
@@ -367,12 +379,24 @@
       "date": "2026-11-25",
       "modifications": true,
       "perimetre": "Explication et dialogue en espagnol pour 13 passages de Rojas, Machado et Vargas Llosa et 51 notices de presse. Figure sur la mémoire publique des dictatures. Apparats différenciés sur le point de vue, la chronologie et les mouvements de texte."
+    },
+    {
+      "phase": "revision",
+      "agent": "rennes_droit_suite",
+      "session": "rennes_droit_suite",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Contrôle des cinq rubriques orales du rapport espagnol, des bornes dans les éditions des trois auteurs et des pièges signalés par le jury, notamment le boléro de Farrés et la narration collective. Recoupement individuel des attributions et rectifications signalées sur les articles. Rapprochement individuel de la liste avec les 49 pages du cahier complémentaire, contrôle des 41 coupures présentes et identification des 10 absences."
     }
   ],
   "couverture": {
     "statut": "partiel",
-    "perimetre": "Les soixante-quatre billets sont traités dans l’ordre du cahier. Treize passages littéraires sont identifiés dans les œuvres, avec leurs bornes ou leurs titres. Pour les cinquante et un billets de presse, l’analyse s’appuie sur les notices, les articles identifiables et le rapport. Les coupes remises en salle ne sont pas reproduites.",
-    "limites": "Les bornes des 51 extraits de presse restent inconnues. Certaines sources ne sont attestées que par le fascicule ; les liens qui donnent une reprise ou un article de contexte sont légendés. Divergences utiles pour retrouver les textes : «Pablo» / Pedro Almodóvar, «Carmona» / Carmena, mobilisation argentine, date de la notice sur la RAE.",
+    "perimetre": "Soixante-quatre billets figurent dans le corrigé. Treize extraits littéraires sont bornés. Le cahier complémentaire officiel de 49 pages reproduit 41 des 51 textes de presse : 7 en lettres et arts, 13 en LV1, 12 en LV2, 9 en sciences humaines. Pour les dix autres notices de LV2, le découpage exact demeure inconnu.",
+    "limites": "Dix coupes LV2 absentes du cahier complémentaire malgré leur présence dans la liste du concours : 23, 25, 26, 31, 34, 35, 38, 39, 41, 42, suivant la numérotation continue des articles dans les corrigés. Les autres supports ont été confrontés aux feuillets ; dates et titres divergents sont expliqués.",
     "billets_recenses": 64
   }
 }
