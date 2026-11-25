@@ -1,0 +1,56 @@
+{
+  "slug": "ens-rennes_d1_anglais_2013",
+  "epreuve": {
+    "concours": "ENS Rennes",
+    "filiere": "D1",
+    "matiere": "Anglais",
+    "annee": 2013,
+    "modalite": "écrit"
+  },
+  "questions": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-rennes.fr/medias/fichier/se1a-13d1-lv_1421750182683-pdf#page=3",
+    "sha256_sujet": "92d5a4b46574d7219da366a971ff9dae16bf73660d2dcb402a36eafc0188c75b",
+    "etablissement_imprime": "École normale supérieure de Cachan",
+    "publication": "Adapté du New York Times · 15 octobre 2012",
+    "page": 3
+  },
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Version française",
+      "Expression en anglais"
+    ],
+    "precision": "Traduction française de l’intégralité du passage délimité et réponse en anglais."
+  },
+  "longueur_expression": {
+    "mots": 100,
+    "regle": "Expliquer ce que l’exemple du BlackBerry révèle des attitudes des consommateurs · environ 100 mots."
+  },
+  "figures": [
+    {
+      "fichier": "figures/telephone.svg",
+      "legende": "Why would someone hide a working phone?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "astra_langues",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture du feuillet original et, lorsqu’il est référencé, du rapport écrit. Traduction française de l’intégralité du passage délimité et réponse en anglais. Rédaction des deux éditions, du guide de traduction et du schéma."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
