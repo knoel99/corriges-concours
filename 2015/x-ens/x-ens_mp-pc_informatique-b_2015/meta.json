@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc_informatique-b_2015",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique B",
+    "annee": 2015,
+    "duree_heures": 2
+  },
+  "questions": 13,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/09/15_mp-pc_sujet_infoB_xelcr.pdf",
+    "sujet_sha256": "ac22a5dc78114258784c46baed80d5d4213610ab0b86f67ee5f66dadc785cd85",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/01/15_pc_rap_einfob.pdf",
+    "rapport_sha256": "3c29ee6a9522c60372da7cf3b2561aabb1207df71723b67e87074b207e341f1d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q06-enveloppe.svg",
+      "question": "Q6",
+      "legende": "Les étiquettes sont les indices du tableau. L’arête rouge est celle découverte en cherchant le successeur de 10."
+    },
+    {
+      "fichier": "figures/q10-balayage.svg",
+      "question": "Q10",
+      "legende": "À la visite de 9, le sommet 8 doit sortir de la chaîne supérieure. Les indices sont ceux du sujet."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des treize questions à partir du sujet MP-PC et du rapport de jury PC. Vérification des algorithmes de Jarvis et Graham–Andrew par test indépendant des demi-plans sur 2 418 entrées en position générale, y compris égalités d’abscisses et d’ordonnées. Vérification des deux listes d’indices et de la trace demandée. Deux schémas originaux."
+    }
+  ]
+}
