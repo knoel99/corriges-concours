@@ -1,0 +1,69 @@
+{
+  "slug": "x-ens_mp-pc-psi_chinois_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Chinois",
+    "annee": 2016,
+    "modalite": "écrit"
+  },
+  "intitule": "Jeunes diplômés chinois entre métropole et retour au pays natal",
+  "questions": 2,
+  "redaction": "Synthèse titrée des quatre pièces sur les choix géographiques des diplômés et réponse à l’éditorial sur les 北漂. Lecture des secteurs, des pyramides et de la caricature de la page 5.",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/06/2016_mp_pc_sujet_-chinoisXEULCR.pdf",
+    "sha256_sujet": "26850983fab8b047d87999b2e3e8c8129fdc0ac747b09e14c09ec3abe47ac7dd",
+    "pages_sujet": 7,
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/filiere-pc/annales-de-la-banque-pc/session-2016/",
+    "reference_du_texte": "A1, 新华网, 16 décembre 2009. A2, 中国新闻周刊, 14 septembre 2012. A3, 人民网-人民日报 et 新华网, juillet et décembre 2010. A4, 人民网, 华声在线 et 河南商报. B, 中国青年网, 14 mars 2014.",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2017/03/16_MP-PC_rap_Echin.pdf",
+    "sha256_rapport_jury": "bafc2d479f9d8a20cea8c53ed615df4ec3ad2e4e41299b3f9609dd2decf4fabd",
+    "autre_publication_sujet": "https://www.ens.psl.eu/IMG/file/concours/2016/sujets/MPI/16_mppc_sujet_lve_chi.pdf",
+    "sha256_autre_publication_sujet": "13a61075cc210fbe1b5001945408355c95ff4e3882be2c5cbdd9b77a781f789e",
+    "autre_publication_rapport": "https://www.ens.psl.eu/IMG/file/concours/2016/rapports/16_mppc_rap_echi.pdf",
+    "sha256_autre_publication_rapport": "5e0899f2153ddb7002ef0a1203ea3a2ec9b4811329bfbc36b7b95551eaed79ad",
+    "precision_rapport": "La garde de l’épreuve vise MP, PC et PSI. L’en-tête du rapport et les résultats qu’il présente sont limités à MP et PC."
+  },
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/emploi-diplomes.svg",
+      "legende": "Lieux du premier emploi et lieux de travail trois ans après le diplôme, d’après le document A4."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Deux pages du rapport sur la synthèse, le texte d’opinion et les difficultés de langue, avec vérification des limites de filière."
+    },
+    {
+      "phase": "redaction",
+      "agent": "chinois_mp_pc_2011_2014",
+      "session": "chinois_mp_pc_2011_2014",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Synthèse titrée des quatre pièces sur les choix géographiques des diplômés et réponse à l’éditorial sur les 北漂. Lecture des secteurs, des pyramides et de la caricature de la page 5."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  }
+}
