@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## Préparation aux quatre questions
 
 **Repérer la charnière du texte.** Avant la définition positive, soulignez les trois points de départ écartés. Puis associez à chaque étape de l’analyse un verbe du passage. Des rapports s’exercent, se transforment, se renforcent ou se contrarient, puis se cristallisent. Cet ordre explique pourquoi la souveraineté est dite « terminale ».

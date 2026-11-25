@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## 1. Foucault et son œuvre
 
 Michel Foucault (1926–1984), philosophe français et professeur au Collège de France à la chaire d’Histoire des systèmes de pensée, examine la formation historique des objets de connaissance et des manières dont les êtres humains sont constitués, puis se constituent eux-mêmes, comme sujets. Une question de méthode traverse des enquêtes aussi différentes que l’*Histoire de la folie*, *Naissance de la clinique* et *Surveiller et punir*. À quelles conditions certaines façons de parler, de voir et d’intervenir ont-elles pu acquérir, dans un domaine donné, valeur de vérité ? Une personne est conduite à se reconnaître, par exemple, dans les catégories avec lesquelles une institution la décrit.
