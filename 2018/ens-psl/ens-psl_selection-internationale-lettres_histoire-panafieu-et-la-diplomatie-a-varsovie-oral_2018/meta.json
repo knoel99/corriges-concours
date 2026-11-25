@@ -1,0 +1,37 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-panafieu-et-la-diplomatie-a-varsovie-oral_2018",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — Panafieu et la diplomatie à Varsovie (oral)",
+    "annee": 2018
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/Sujet%20oral%20SIL2018-3.pdf",
+    "sha256_sujet": "82f792cb51c0fd2bd0b3ed71ddb55578dae1a85a0a2326c98e3da03db45816f0",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/rapport_2018_histoire.pdf",
+    "sha256_rapport_jury": "19972089324eb727a8d7cf01ec3532c7bab36bde9919bcb68ea8da6ab0949696"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture-du-document.svg",
+      "question": "Deux chaînes d’autorité et des interlocuteurs polonais",
+      "legende": "La demande d’août 1921 répond à une difficulté de compétence et d’information."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux pages de la dépêche de Panafieu lues sur les images, y compris les notes de l’édition. Rédaction des deux versions, lecture du rapport et schéma des compétences.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
