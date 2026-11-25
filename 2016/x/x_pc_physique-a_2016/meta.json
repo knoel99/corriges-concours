@@ -1,0 +1,112 @@
+{
+  "slug": "x_pc_physique-a_2016",
+  "epreuve": {
+    "concours": "X",
+    "ecoles_historiques": "École polytechnique et ESPCI",
+    "filiere": "PC",
+    "matiere": "Physique A",
+    "annee": 2016
+  },
+  "questions": 35,
+  "intitule": "Miroir à atomes",
+  "redaction": "Les 35 questions sont traitées. Le potentiel optique, son couplage à la surface et les paramètres de diffraction sont calculés et mis en regard des mesures. Quatre illustrations originales regroupent les sept tracés ou constructions.",
+  "sources": {
+    "garde": "XE · École polytechnique et ESPCI · 4 heures",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2016/05/16_pc_sujet_phys_a.pdf",
+    "sujet_sha256": "ecc020e0d4c486822d464129cf665446c9470c4a69c590b7d625e95e77efd43d",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2018/02/16_PC_rapport_EphyA.pdf",
+    "rapport_sha256": "2e1357841b2c00f956acad26fc4a3d6c72ca05180d01f76a9018fccd04cb33f8"
+  },
+  "contributions": [
+    {
+      "phase": "lecture_rapport_jury",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": false,
+      "perimetre": "Lecture de l’article reproduit dans le sujet et du rapport du jury : raccord de phase, potentiel moyen de l’appendice, barrière près de son maximum, contraste et impulsions transverses."
+    },
+    {
+      "phase": "redaction",
+      "agent": "physique_a_pc_x",
+      "session": "physique_a_pc_x",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Les 35 questions sont traitées. Le potentiel optique, son couplage à la surface et les paramètres de diffraction sont calculés et mis en regard des mesures. Quatre illustrations originales regroupent les sept tracés ou constructions."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "1 et 5",
+      "fichier": "figures/reflexion.svg",
+      "legende": "À gauche, l’émergence devient rasante à l’angle critique. À droite, la profondeur de pénétration décroît au-delà de cet angle pour n = 2."
+    },
+    {
+      "numero": 2,
+      "question": "17",
+      "fichier": "figures/dipole.svg",
+      "legende": "Coupe méridienne du champ dipolaire. Le dipôle est dirigé vers le haut et le champ équatorial pointe vers le bas."
+    },
+    {
+      "numero": 3,
+      "question": "23 et 26",
+      "fichier": "figures/barriere.svg",
+      "legende": "À gauche, potentiels réduits dans deux régimes. À droite, la largeur du rectangle est la distance entre les deux points tournants autour du sommet."
+    },
+    {
+      "numero": 4,
+      "question": "30",
+      "fichier": "figures/reseau.svg",
+      "legende": "Équipotentielles pour une modulation faible. L’axe des altitudes est dilaté pour rendre visible la profondeur crête-à-creux."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35"
+    ]
+  }
+}
