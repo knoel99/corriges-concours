@@ -6,6 +6,8 @@
 
 **Autocontrôle** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 La feuille associe douze tirages à deux sujets. Avant la préparation de 1 h 30, le candidat choisit entre le sujet sur la France et celui sur le monde. Le rapport prévoit 20 minutes d’exposé et 10 minutes d’entretien. Cette proposition traite les deux possibilités de chaque tirage.
 
 ## Tirage 1
@@ -221,6 +223,10 @@ Après la Seconde Guerre mondiale, le salariat féminin progresse et l’activit
 Un conteneur passe du navire au train sans déchargement du contenu. Ce simple changement d’unité de transport modifie les lieux de manutention, les emplois portuaires et la géographie possible d’une entreprise. Le lien entre transport et mondialisation ne tient donc pas à une invention unique : il suppose des infrastructures, des normes, des choix politiques et une demande solvable.
 
 Au début du siècle, les réseaux ferrés et la navigation à vapeur ont déjà organisé des circuits de matières premières, de produits manufacturés et de migrants. Ils s’inscrivent fréquemment dans les empires et distribuent très inégalement les bénéfices. Le canal de Panama en 1914 modifie la relation entre Atlantique et Pacifique. Les deux guerres mondiales, la crise des années 1930 et les protections nationales montrent cependant que les flux peuvent reculer malgré les progrès matériels. Une infrastructure de connexion peut aussi devenir, pour les États, un point de souveraineté et de conflit, comme Suez en 1956.
+
+Entre un navire et un train, la rupture de charge demeure. Son coût change parce qu’une grue peut déplacer la boîte fermée en une opération, là où la marchandise devait être reprise en plusieurs colis. Ce gain suppose un quai équipé et un raccordement terrestre qui accepte le même conteneur.
+
+![Figure 1 — Le conteneur transforme toute la chaîne de transport](figures/transports.svg)
 
 Après 1945, le camionnage, les navires spécialisés et le transport aérien se combinent. La conteneurisation commerciale engagée dans les années 1950 et la normalisation des dimensions simplifient les ruptures de charge. Elles requièrent des terminaux coûteux et déplacent l’activité de certains quais traditionnels vers des façades mieux équipées. L’avion gagne une place centrale pour les voyageurs internationaux qui peuvent payer et pour certaines marchandises urgentes ou de grande valeur, tandis que la mer domine le transport lourd en volume. Les métropoles connectées bénéficient de liaisons rapides, et certaines régions enclavées supportent des coûts élevés jusqu’au dernier kilomètre. Le raccourcissement de la distance-temps résulte ainsi d’une organisation de l’espace qui en révèle, autant qu’elle les réduit, les inégalités.
 
