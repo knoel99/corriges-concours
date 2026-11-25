@@ -1,0 +1,67 @@
+{
+  "slug": "bel_al_philosophie-oral-tronc-commun-26-juin-commission-2_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Philosophie (oral tronc commun 26 juin commission 2)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "intitule": "Philosophie (oral tronc commun 26 juin commission 2)",
+  "questions": 0,
+  "tirages": 12,
+  "sujets": 24,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujet_oraux_philosophie_2_al.pdf",
+    "sujet_sha256": "e7fdea51b30ed54213bc9e818ca987eaa59613bb48e426a54d8bb496d0d4cf97",
+    "rapport": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_philosophie_tc.pdf",
+    "rapport_sha256": "b7ae24985758ee21c7601a903f81ce57bdcef0cb108f8852ecd308eba32c7dca"
+  },
+  "figures": [
+    {
+      "fichier": "figures/imputer.svg",
+      "legende": "À qui imputer le relevé erroné ?",
+      "question": "2"
+    },
+    {
+      "fichier": "figures/memoire.svg",
+      "legende": "Qui a vécu la journée racontée par le carnet ?",
+      "question": "11"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction de 24 réponses distinctes pour les 12 billets, dans les deux éditions, de deux schémas et des questions de reprise avec leur réponse."
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Confrontation de l’ordre, des choix et de chaque énoncé au feuillet et aux caractères gras de l’annexe du rapport. Vérification de la durée, des références conceptuelles, du lien entre cas concrets et thèses et de l’entraînement propre au guide."
+    }
+  ]
+}
