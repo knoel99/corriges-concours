@@ -1,0 +1,41 @@
+{
+  "slug": "ens_mp_maths-d_2011",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2011
+  },
+  "questions": 39,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/annales-de-la-banque-mp/session-2011/sujet_math_d_mp2011.pdf",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/data/filiere-mp/rapports-des-jurys-de-la-banque-mp/session-2011/rap_ecrit_math_d_u_mp2011.pdf",
+    "sha256_sujet": "d16f69e3e7c321c75ba8cce7e88b7e567be303253dfced5b9c27db1d283cb3ad"
+  },
+  "figures": [
+    {
+      "fichier": "figures/coupe-du-cone-nilpotent.svg",
+      "question": "I.9",
+      "legende": "La coupe par u = 0 montre les régions intérieure supérieure et inférieure. Les deux secteurs extérieurs visibles se rejoignent en tournant autour de l’axe v."
+    },
+    {
+      "fichier": "figures/degenerescence-de-deux-chaines.svg",
+      "question": "E.5",
+      "legende": "Pour a = 5 et b = 3, la flèche de poids t donne des blocs de tailles 6 et 2 si t est non nul. En l’annulant on retrouve les tailles 5 et 3."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des deux éditions confrontées au sujet complet et au corrigé commenté du jury. Géométrie tangentielle, supplémentaire stable, commutant, perturbations régulières, ordre sur les partitions et dégénérescence entre deux blocs de tailles arbitraires. Figures de la coupe du cône et de la flèche de perturbation.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
