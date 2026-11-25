@@ -1,0 +1,71 @@
+{
+  "slug": "x-ens_mp-pc-psi_anglais_2019",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC-PSI",
+    "matiere": "Anglais",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Augmentation des capacités humaines, opinion américaine et promesse d’une perception élargie",
+  "questions": 2,
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "A",
+      "B"
+    ]
+  },
+  "mots_hors_titre": {
+    "A": 613,
+    "B": 518
+  },
+  "sources": {
+    "code_garde": "XEULCR",
+    "index": "https://banques-ecoles.fr/cms/session-2019-pc/",
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/10/2019_MPPC_sujet_Angl.pdf",
+    "sujet_sha256": "451e8e46ce6042acf7c36bfba5c83113ba4539908931e36218043deabefffb55",
+    "rapport_jury": "https://banques-ecoles.fr/cms/wp-content/uploads/2019/11/19_MPPC_rapport_eAng.pdf",
+    "rapport_jury_sha256": "c136b945a7ca4517b2dd661d5baa2a31d31f725f95b13a864bd42f745ec379b4",
+    "precision": "Dans le cahier de huit pages, l’éditorial de John Nosta est identifié comme premier document de la partie B. Il correspond à la pièce d’opinion annoncée sur la garde. Sujet et rapport annuels consultés."
+  },
+  "redaction": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Augmentation des capacités humaines, opinion américaine et promesse d’une perception élargie.",
+  "figures": [
+    {
+      "numero": 1,
+      "question": "A",
+      "fichier": "figures/applications.svg",
+      "legende": "Les deux usages mentionnés par Kolata sont à des stades différents."
+    },
+    {
+      "numero": 2,
+      "question": "A",
+      "fichier": "figures/pew.svg",
+      "legende": "Part des adultes américains anticipant cette conséquence dans l’enquête Pew de mars 2016."
+    },
+    {
+      "numero": 3,
+      "question": "B",
+      "fichier": "figures/choix.svg",
+      "legende": "La liberté d’usage se juge aussi après l’acquisition."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "anglais_mp_pc_2011_2014",
+      "session": "anglais_mp_pc_psi_2015_2021",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Deux compositions intégrales en anglais, lecture croisée des quatre pièces du dossier de synthèse et réponse argumentée au document d’opinion. Augmentation des capacités humaines, opinion américaine et promesse d’une perception élargie.",
+      "editions": [
+        "brut",
+        "guide"
+      ]
+    }
+  ]
+}
