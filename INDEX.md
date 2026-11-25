@@ -586,6 +586,7 @@
 | 2026 | ENS de Lyon | Séries A/L | Chinois (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_chinois-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Japonais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_japonais-oral_2026/guide.md) |
 | 2026 | ENS de Lyon | Séries A/L | Portugais (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_portugais-oral_2026/guide.md) |
+| 2026 | ENS de Lyon | Séries A/L | Russe (oral) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/brut.md) | [md](2026/ens-de-lyon/ens-de-lyon_series-a-l_russe-oral_2026/guide.md) |
 | 2026 | ENS Louis-Lumière | Master Photographie | Sciences | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/brut.md) | [md](2026/ens-louis-lumiere/ens-louis-lumiere_master-photographie_sciences_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Histoire de l’art | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_histoire-de-lart_2026/guide.md) |
 | 2026 | ENS Paris-Saclay | Design | Design graphique | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/brut.md) | [md](2026/ens-paris-saclay/ens-paris-saclay_design_design-graphique_2026/guide.md) |
