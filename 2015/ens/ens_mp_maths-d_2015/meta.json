@@ -1,0 +1,36 @@
+{
+  "slug": "ens_mp_maths-d_2015",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "MP",
+    "matiere": "Maths D",
+    "annee": 2015
+  },
+  "questions": 43,
+  "redaction": "Proposition non officielle rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/sujets/sujet_mpi_mathd2015.pdf",
+    "rapport_jury": "https://www.ens.psl.eu/IMG/file/concours/2015/MPI/rapports/15_mp_rap_emathd.pdf",
+    "sha256_sujet": "119166c7f1b445fad0be63ef99c20869ee6726be2122b9fa239b8695ec70d15c"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lignes-et-colonnes-de-maier.svg",
+      "question": "IV.3",
+      "legende": "Chaque colonne contient un intervalle court. Chaque ligne garde une classe modulo q et les lignes admissibles portent tous les nombres premiers."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction des quatre parties des deux éditions à partir des huit pages du sujet et du rapport. Contraction uniforme de III.7c, oscillation de Buchstab, rectificatif du jury en III.5, normalisation de IV.3 comparée à la page imprimée et au théorème de Maier. Schéma des lignes et colonnes.",
+      "fournisseur": "codex",
+      "agent": "astra_maths"
+    }
+  ]
+}
