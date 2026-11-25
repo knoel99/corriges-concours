@@ -207,6 +207,30 @@ def test_filtre_alertes_numerotees_et_reinitialisees():
 
 
 @pandoc
+def test_lignes_vides_dans_une_equation_hors_texte():
+    formule = "$$\n\nE=\\frac{a}{b}% fin du commentaire\n\n+c\n\n$$"
+    tex = _pandoc(f"Début.\n\n{formule}\n\nFin.")
+    assert tex.count(r"\equationajustee{") == 1
+    assert r"\frac{a}{b}" in tex and "+c" in tex
+    assert r"\textbackslash" not in tex
+    assert "\n+c\n" in normaliser_maths(formule)
+
+
+def test_blocs_math_distincts_citations_et_code_litteral():
+    propre = "$$\na=b\n$$"
+    source = propre + "\n\nUn paragraphe.\n\n$$\n\nc=d\n\n$$"
+    assert normaliser_maths(source) == propre + "\n\nUn paragraphe.\n\n$$\nc=d\n$$"
+    assert normaliser_maths("$$\n\nx\n>\ny\n\n$$") == "$$\nx\n>\ny\n$$"
+    assert normaliser_maths("Déjà $$a$$.\n$$\n\nb\n\n$$") == "Déjà $$a$$.\n$$\nb\n$$"
+    cite = "> $$\n>\n> a=b\n>\n> $$"
+    assert normaliser_maths(cite) == "> $$\n> a=b\n> $$"
+    code = "```markdown\n$$\n\nx\n\n$$\n```"
+    assert normaliser_maths(code) == code
+    for texte in ["$$\n\nx", "    $$\n\n    x\n\n    $$", "> $$\n\nAutre paragraphe.\n\n$$"]:
+        assert normaliser_maths(texte) == texte
+
+
+@pandoc
 def test_filtre_figures_et_maths():
     md = (
         "Texte.\n\n![Figure 1 — Circuit RLC](figures/s/q1-rlc.svg)\n\n"
