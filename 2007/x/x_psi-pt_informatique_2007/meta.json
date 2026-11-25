@@ -1,0 +1,46 @@
+{
+  "slug": "x_psi-pt_informatique_2007",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "PSI-PT",
+    "matiere": "Informatique",
+    "annee": 2007,
+    "duree_heures": 2
+  },
+  "questions": 9,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://fichiers.wikiprepa.fr/data/x-ens_info-commune_psi-pt_2007.pdf",
+    "sujet_sha256": "39a25cac97ba820e09b2b93a2572ac9fa7d0e6bac0fbcf0d8f28ba07a093768e"
+  },
+  "figures": [
+    {
+      "fichier": "figures/decoupes-longueur-18.svg",
+      "question": "1",
+      "legende": "Pour 18 unités et les prix 3 et 5, la découpe avec deux unités de chute rapporte 10. Celle qui utilise les 18 unités rapporte 9."
+    },
+    {
+      "fichier": "figures/recette-optimale.svg",
+      "question": "5",
+      "legende": "La recette maximale de la première grille de prix reste constante entre certaines longueurs. Les quatre points correspondent aux capacités demandées à la question 1."
+    },
+    {
+      "fichier": "figures/deux-origines.svg",
+      "question": "7",
+      "legende": "Le dernier produit autorisé est j = i − 1. Les deux possibilités partent de la ligne précédente et arrivent dans la nouvelle ligne."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des neuf questions sur la découpe de tissu avec et sans répétition. Vérification des deux exemples chiffrés, de 1 716 instances par énumération exhaustive et des listes de découpes optimales. Trois illustrations originales."
+    }
+  ]
+}
