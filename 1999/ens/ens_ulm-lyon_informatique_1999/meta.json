@@ -1,0 +1,53 @@
+{
+  "slug": "ens_ulm-lyon_informatique_1999",
+  "epreuve": {
+    "concours": "ENS",
+    "filiere": "Ulm-Lyon",
+    "matiere": "Informatique",
+    "annee": 1999,
+    "duree_heures": 4
+  },
+  "questions": 27,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://stephane.gonnord.org/Info/ul99.pdf",
+    "sujet_sha256": "30883432553fbcee3cab6ee119ce0e5b7b641bb0d7ec9c287cf93a92ae63c6ef",
+    "etude_kari": "https://doi.org/10.1016/j.tcs.2004.11.021",
+    "cours_kari": "https://users.utu.fi/jkari/wp-content/uploads/sites/1251/2025/12/fullnotes.pdf"
+  },
+  "figures": [
+    {
+      "fichier": "figures/de-bruijn-xor.svg",
+      "question": "3.1",
+      "legende": "Graphe de de Bruijn du XOR. Les étiquettes indiquent la valeur produite à chaque pas."
+    },
+    {
+      "fichier": "figures/produit-xor.svg",
+      "question": "3.5",
+      "legende": "Les huit arcs du produit. Un chemin reste dans la diagonale ou dans la composante des bits opposés."
+    },
+    {
+      "fichier": "figures/decision-dimension-un.svg",
+      "question": "3.9",
+      "legende": "Tests dans le graphe produit après élimination des sommets sans passé ou sans avenir infini."
+    },
+    {
+      "fichier": "figures/xor-avec-separateurs.svg",
+      "question": "5.1",
+      "legende": "Un îlot de trois bits est lu entre deux séparateurs. La dernière lettre inchangée permet de reconstruire tout l’îlot de droite à gauche."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction originale des 27 questions et de leurs subdivisions sur le fac-similé complet LUC 321. Relecture des deux diagrammes dans le PDF original. Contrôle de l’algorithme par deux méthodes indépendantes sur les 256 règles binaires de voisinage trois, et des îlots finis sur 3 280 mots. Vérification du statut des trois implications de 5.3 dans les publications. Quatre schémas originaux."
+    }
+  ]
+}
