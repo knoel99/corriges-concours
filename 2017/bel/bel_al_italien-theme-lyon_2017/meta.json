@@ -1,0 +1,55 @@
+{
+  "slug": "bel_al_italien-theme-lyon_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Italien (thème Lyon)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=12",
+    "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/ITALIEN_2017.pdf#page=3",
+    "rapport_sha256": "2dde147ce9f00bf9023be782ea64b8a348deb9136cba82dae888e27f697ebca7"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "À quel moment le narrateur sait-il ?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction pédagogique intégrale originale depuis le scan du fascicule, p. 12, lecture du rapport de spécialité, rédaction du guide et réalisation du schéma. Le bureau de M. Renaud, les événements de la nuit et l’incertitude de leur explication."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction du passage délimité par le sujet"
+    ]
+  },
+  "droits_sources": {
+    "oeuvres": [
+      "Louis Guilloux, Labyrinthe (1952)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte source appartiennent à leurs titulaires."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "bel_al_russe-theme-lyon_2017",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Russe (thème Lyon)",
+    "annee": 2017
+  },
+  "questions": 1,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/17-bel-epreuves-de-specailite-lyon_1506586608686_0.pdf#page=14",
+    "sujet_sha256": "1a30a10cec55934dcd4ad525695c8636e3a256cd27d5ad2162bade0120aca88f",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/RUSSE_2017.pdf#page=4",
+    "rapport_sha256": "2a0bbef3a22b69030b545371733ee822d61e34a774fbe040b1a2fd005a813bc9"
+  },
+  "figures": [
+    {
+      "fichier": "figures/lecture.svg",
+      "question": "Proposition de thème",
+      "legende": "Trois degrés de réalité pour le berger"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Traduction pédagogique intégrale originale depuis le scan du fascicule, p. 14, lecture du rapport de spécialité, rédaction du guide et réalisation du schéma. Le dialogue asymétrique, la visite de Stéphanette et la perception du berger."
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "Traduction du passage délimité par le sujet"
+    ]
+  },
+  "droits_sources": {
+    "oeuvres": [
+      "Alphonse Daudet, Lettres de mon moulin, « Les étoiles » (1879, selon le sujet)."
+    ],
+    "note": "Traduction pédagogique originale. Les droits sur le texte source appartiennent à leurs titulaires."
+  }
+}

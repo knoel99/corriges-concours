@@ -152,6 +152,7 @@
 | 2017 | BEL | AL | Allemand (thème Lyon) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_allemand-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (commentaire et traduction) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/brut.md) | [md](2017/bel/bel_al_anglais-commentaire-et-traduction_2017/guide.md) |
 | 2017 | BEL | AL | Anglais (thème Lyon) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_anglais-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Chinois (thème Lyon) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_chinois-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Deuxième composition de philosophie (Lyon) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/brut.md) | [md](2017/bel/bel_al_deuxieme-composition-de-philosophie-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Allemand (commentaire et traduction) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_allemand-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Allemand (thème Lyon) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_allemand-theme-lyon_2019/guide.md) |
@@ -194,6 +195,10 @@
 | 2026 | BEL | AL | Histoire ancienne (oral option 16 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-16-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 17 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-17-juin_2026/guide.md) |
 | 2026 | BEL | AL | Histoire ancienne (oral option 19 juin) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/brut.md) | [md](2026/bel/bel_al_histoire-ancienne-oral-option-19-juin_2026/guide.md) |
+| 2017 | BEL | AL | Espagnol (thème Lyon) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_espagnol-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Italien (thème Lyon) | [md](2017/bel/bel_al_italien-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_italien-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Portugais (thème Lyon) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_portugais-theme-lyon_2017/guide.md) |
+| 2017 | BEL | AL | Russe (thème Lyon) | [md](2017/bel/bel_al_russe-theme-lyon_2017/brut.md) | [md](2017/bel/bel_al_russe-theme-lyon_2017/guide.md) |
 | 2017 | BEL | AL | Étude de texte français (Lyon) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/brut.md) | [md](2017/bel/bel_al_etude-de-texte-francais-lyon_2017/guide.md) |
 | 2019 | BEL | AL | Espagnol (commentaire et traduction) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/brut.md) | [md](2019/bel/bel_al_espagnol-commentaire-et-traduction_2019/guide.md) |
 | 2019 | BEL | AL | Espagnol (thème Lyon) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/brut.md) | [md](2019/bel/bel_al_espagnol-theme-lyon_2019/guide.md) |
