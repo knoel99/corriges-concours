@@ -8,6 +8,8 @@
 
 **Révision** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 3)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 **Sujet** — Épictète, Entretiens, II, 5
 
 ## Introduction
@@ -21,6 +23,10 @@ La première phrase oppose deux appréciations qui portent sur les mêmes choses
 Si cette première distinction était seulement verbale, elle laisserait intact un dilemme. D’un côté, ma fermeté paraît devoir grandir à mesure que je tiens l’issue pour insignifiante. Mais si elle n’importe absolument pas, à quoi bon s’appliquer ? De l’autre côté, si une action doit être soignée, c’est apparemment parce que quelque chose d’important se gagnera ou se perdra avec elle. Mon inquiétude semble alors le prix de mon attention. D’où la question initiale. Les deux vertus doivent être sauvegardées « simultanément ». Une période de zèle suivie de résignation quand les efforts échouent ne résoudrait rien. Il faut trouver un même principe qui rende l’attention requise et la fermeté possible dans l’action elle-même.
 
 Le joueur en fournit un premier modèle. Il ne peut savoir quel coup tombera. Le coup n’est pourtant pas un simple bruit du hasard, puisque, une fois tombé, il définit ce qu’un joueur habile peut tenter. On ne ferait pas preuve de talent en demandant un autre tirage ou en répondant à tous les coups par le même mouvement. L’habileté consiste à discerner les différences entre des situations que le joueur n’a pas choisies. Paradoxalement, tenir le dé pour indifférent n’autorise pas à jouer indifféremment. La matière échappe au pouvoir de fixer le résultat, mais un bon usage exige d’en considérer attentivement les propriétés. L’image permet de séparer la valeur de la manière de jouer et celle du résultat obtenu. Elle ne suppose pas que la vie entière ressemble à un divertissement où l’on pourrait toujours recommencer.
+
+Un même coup peut être joué avec attention ou avec négligence. Si sa valeur numérique suffisait à évaluer la conduite, cette différence disparaîtrait. L’exemple du jeu donne ainsi à Épictète une épreuve de sa distinction entre la matière reçue et l’usage qu’on en fait.
+
+![Ce qui tombe et la manière de jouer](figures/de-matiere-usage.svg)
 
 De là le passage du jeu à la tâche prioritaire dans la vie. Avant de déterminer quoi faire, il faut distinguer à quelle sorte de chose on a affaire. Épictète met cette distinction dans la bouche de celui qui l’apprend. À la question de savoir où il cherchera le bien et le mal, il doit répondre en première personne. « En moi » n’est pas une simple indication de lieu. Mon corps est le mien, mais je peux être emporté avec un navire sans que ma décision suffise à le retenir. La précision qui précède donne son sens à cette intériorité. Ce qui dépend de moi est ma faculté de choix, c’est-à-dire ma façon de juger ce qui se présente et de m’y déterminer. La répétition à la première personne est déjà un exercice : devant un embarras, je dois cesser de demander seulement ce qui m’arrivera pour examiner le jugement par lequel je m’apprête à l’accueillir.
 
