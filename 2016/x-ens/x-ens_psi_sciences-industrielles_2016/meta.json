@@ -1,0 +1,58 @@
+{
+  "slug": "x-ens_psi_sciences-industrielles_2016",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PSI",
+    "matiere": "Sciences industrielles",
+    "annee": 2016,
+    "duree_heures": 5
+  },
+  "questions": 44,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://ens-paris-saclay.fr/sites/default/files/CONCOURS/ANNALES_1C/1C_PSI/2016_Sujet_1C_PSI_Science-indurstrielle.pdf",
+    "sujet_sha256": "8b4720b8a1e4bbe78c44da2e8e2df62d1510bf73dfedf2d48579e1b7d3854608",
+    "document_reponse_renseigne_upsti": "https://www.upsti.fr/fichiers/corrige/fichiers/47617fe4-6b67-4966-b64e-9163e78a92a4/UPSTI-Corrige-XENS-PSI-2016-SuspensionPneumatiqueCamion.pdf",
+    "document_reponse_renseigne_upsti_sha256": "ff6bb4ee789583fa07519c4a2e20d22b323a2f3e4bd258f4c3388e127b35c54d"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q07-distributeurs.svg",
+      "question": "Q7",
+      "legende": "Sens des écoulements dans les trois distributeurs. Les deux sorties 22 et 23 communiquent avec la même galerie."
+    },
+    {
+      "fichier": "figures/q09-saturation.svg",
+      "question": "Q9",
+      "legende": "Avec limitation de débit, le premier passage à 285 mm précède de 42 ms environ la sortie de saturation."
+    },
+    {
+      "fichier": "figures/q14-bode-boucle.svg",
+      "question": "Q14",
+      "legende": "Boucle sans filtre. Les verticales repèrent la coupure asymptotique à 0,4 rad/s et la pulsation propre de 5 rad/s."
+    },
+    {
+      "fichier": "figures/q16-filtres.svg",
+      "question": "Q16",
+      "legende": "Le premier ordre perd près de 39° de phase à 0,4 rad/s. Le second ordre, avec une cassure plus élevée, y perd environ 16°. Les tirets sont les asymptotes du gain."
+    },
+    {
+      "fichier": "figures/q38-chronogrammes.svg",
+      "question": "Q38",
+      "legende": "Une ligne haute indique un état actif. Le trait vertical rouge à t₁ marque le passage fugitif par Normal, au basculement de la position haute vers Auto."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des 44 questions à partir du livret institutionnel et de ses quatre annexes. Contrôle de la fiche du potentiomètre, de la saturation, des filtres, des équilibres et du roulis. Q38 confrontée au fac-similé renseigné de l’UPSTI p.16, les six chronogrammes sont redessinés. Cinq figures originales."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "x-ens_mp-pc_informatique-b_2012",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique B",
+    "annee": 2012,
+    "duree_heures": 2
+  },
+  "questions": 10,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/data/filiere-pc/annales-de-la-banque-pc/session-2012/pc2012_sujet_informatique_b.pdf",
+    "sujet_sha256": "6e1c37c91a6d7d5b4ce6927c196ff79b9bd2647cdde71635c6b4d76c0e473713",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2013/04/12_pc_rap_ecrit_info_2h_xec.pdf",
+    "rapport_sha256": "2ea249b36140657a6a54affea388ed3357f8877df01390d0f3caa20e71c356fd"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q06-paquets.svg",
+      "question": "Q6",
+      "legende": "Sous-tableau des indices 2 à 9. Le dernier paquet ne contient que trois valeurs. Les médians disponibles pour le prochain étage sont 5 et 9."
+    },
+    {
+      "fichier": "figures/q09-demi-plans.svg",
+      "question": "Q9",
+      "legende": "Deux rayons de directions opposées portent la seconde droite. Les points de la coupe horizontale sont exclus des comparaisons d’angles."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des dix questions à partir du sujet et du rapport du jury. Vérification des rangs avec doublons et de la coupe de nuages en quatre parties par énumération indépendante. Précision sur le pivot par regroupements successifs, les angles opposés et la terminaison de la recherche géométrique. Deux figures originales."
+    }
+  ]
+}

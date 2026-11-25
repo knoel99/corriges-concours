@@ -1,0 +1,45 @@
+{
+  "slug": "x-ens_mp-pc_informatique-b_2014",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "MP-PC",
+    "matiere": "Informatique B",
+    "annee": 2014,
+    "duree_heures": 2
+  },
+  "questions": 12,
+  "redaction": "GPT-6.2 Astra · effort Ultra",
+  "sources": {
+    "sujet": "https://banques-ecoles.fr/cms/wp-content/uploads/2014/10/14_mppc_suj_info_b.pdf",
+    "sujet_sha256": "a14e1c82cc267e8c9e715b7f6d297cc62bc4a8e59274e2eb370e245f54c21281",
+    "rapport": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_pc_rap_ecrit_info_b.pdf",
+    "rapport_sha256": "6cb443e9a9565a5efe65e85da2e80a39ddb8417a7278290ebcded8f1ab69523e",
+    "rapport_mp": "https://banques-ecoles.fr/cms/wp-content/uploads/2015/01/14_mp_rap_ecrit_info_b.pdf",
+    "rapport_mp_sha256": "fc5b7c1dd3680c267002086cbbf2dca2b4ae81409cffee1341e3a0d9f886671b"
+  },
+  "figures": [
+    {
+      "fichier": "figures/q03-rectangle.svg",
+      "question": "Q3",
+      "legende": "Le point rouge est en ligne 4, colonne 3. Les dix cases encadrées composent le plus grand rectangle de zéros ayant ce coin inférieur gauche."
+    },
+    {
+      "fichier": "figures/q08-histogramme.svg",
+      "question": "Q8",
+      "legende": "Les colonnes 3 à 6 acceptent une hauteur commune de 2, soit huit unités d’aire. Les plateaux de hauteur égale appartiennent à la même plage."
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "agent": "astra_info_si",
+      "fournisseur": "codex",
+      "modifications": true,
+      "perimetre": "Rédaction des douze questions à partir du sujet et des rapports de jury PC et MP. Vérification des résultats par énumération de tous les rectangles sur les 66 066 matrices binaires carrées de taille 1 à 4, et par examen des 5 460 histogrammes de longueurs 1 à 6 sur quatre hauteurs. Traitement du cas de hauteur nulle. Deux figures originales."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "bel_al_anglais-oral-tronc-commun-17-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (oral tronc commun 17 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/anglais_tc_1_sujets_tires_17_juin_2026.pdf",
+    "sujet_sha256": "91e92e19f0cf60adcf2ada23fc1998b6ef2cced84c953a2d234739d820124926",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_anglais_tc.pdf",
+    "rapport_sha256": "68c198f2905ae8891899e4364652b38aed0092fce531f2750e027d5a8b78adc2",
+    "documents": {
+      "whitman": "https://poets.org/poem/come-fields-father",
+      "cheever": "https://www.newyorker.com/magazine/1964/07/18/the-swimmer"
+    },
+    "precision": "La feuille officielle cite douze œuvres. Le poème de Whitman est expliqué dans son intégralité. La nouvelle de Cheever est étudiée sur la publication du New Yorker, sans identification des bornes du feuillet de concours. Les dix autres extraits restent à délimiter."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "7 — Whitman"
+    ],
+    "questions_partiellement_traitees": [
+      "3 — Cheever, préparation sur la nouvelle, extrait exact non délimité"
+    ],
+    "questions_non_traitees": [
+      "1 — Galgut",
+      "2 — Gurnah",
+      "4 — Gaskell",
+      "5 — Urquhart",
+      "6 — Atwood",
+      "8 — DeLillo",
+      "9 — Ravenhill",
+      "10 — Swift",
+      "11 — Coetzee",
+      "12 — Defoe"
+    ],
+    "motif": "La feuille officielle cite douze œuvres. Le poème de Whitman est expliqué dans son intégralité. La nouvelle de Cheever est étudiée sur la publication du New Yorker, sans identification des bornes du feuillet de concours. Les dix autres extraits restent à délimiter."
+  },
+  "figures": [
+    {
+      "fichier": "figures/nage.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "Where does the map fail?"
+    },
+    {
+      "fichier": "figures/lettre.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "When is what the letter says true?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la feuille et du rapport de l’ENS, du poème et de la nouvelle publiés. Rédaction des deux éditions, guides de lecture, exercices et figures. La feuille officielle cite douze œuvres. Le poème de Whitman est expliqué dans son intégralité. La nouvelle de Cheever est étudiée sur la publication du New Yorker, sans identification des bornes du feuillet de concours. Les dix autres extraits restent à délimiter."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

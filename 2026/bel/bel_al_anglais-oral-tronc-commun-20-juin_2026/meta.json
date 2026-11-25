@@ -1,0 +1,78 @@
+{
+  "slug": "bel_al_anglais-oral-tronc-commun-20-juin_2026",
+  "epreuve": {
+    "concours": "BEL",
+    "filiere": "AL",
+    "matiere": "Anglais (oral tronc commun 20 juin)",
+    "annee": 2026,
+    "modalite": "oral"
+  },
+  "questions": 0,
+  "sujets": 12,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/sujets_anglais_tc_20_juin_.pdf",
+    "sujet_sha256": "d1a58f20957370366e07adc43dda64fd7b24ec112353b5913011943985771d97",
+    "rapport_jury": "https://www.ens.psl.eu/sites/default/files/2026_al_rapport_oral_anglais_tc.pdf",
+    "rapport_sha256": "68c198f2905ae8891899e4364652b38aed0092fce531f2750e027d5a8b78adc2",
+    "documents": {
+      "larkin": "https://www.poetryfoundation.org/poems/48416/dockery-and-son",
+      "eliot": "https://www.poetryfoundation.org/poetrymagazine/poems/44212/the-love-song-of-j-alfred-prufrock",
+      "poe": "https://www.eapoe.org/works/tales/ligeiaa.htm"
+    },
+    "precision": "La feuille officielle indique douze titres. Les deux poèmes d’Eliot et de Larkin sont expliqués sur toute leur longueur publiée. La nouvelle de Poe est disponible dans l’édition de 1838. Le commentaire de préparation mobilise plusieurs passages de la nouvelle, mais la sélection exacte du jury est inconnue. Pour les neuf autres œuvres, l’ENS donne le titre sans délimiter l’extrait."
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_entierement_traitees": [
+      "8 — Eliot",
+      "12 — Larkin"
+    ],
+    "questions_partiellement_traitees": [
+      "6 — Poe, préparation sur la nouvelle, périmètre du passage de concours inconnu"
+    ],
+    "questions_non_traitees": [
+      "1 — Williams",
+      "2 — Nabokov",
+      "3 — Morrison",
+      "4 — Austen",
+      "5 — Fielding",
+      "7 — James",
+      "9 — Desai",
+      "10 — McEwan",
+      "11 — Wright"
+    ],
+    "motif": "La feuille officielle indique douze titres. Les deux poèmes d’Eliot et de Larkin sont expliqués sur toute leur longueur publiée. La nouvelle de Poe est disponible dans l’édition de 1838. Le commentaire de préparation mobilise plusieurs passages de la nouvelle, mais la sélection exacte du jury est inconnue. Pour les neuf autres œuvres, l’ENS donne le titre sans délimiter l’extrait."
+  },
+  "figures": [
+    {
+      "fichier": "figures/temoin.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "What is the witness able to prove?"
+    },
+    {
+      "fichier": "figures/temps.svg",
+      "question": "Repérage des mouvements du texte",
+      "legende": "How does an ordinary object measure a life?"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_langues",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Lecture de la feuille et du rapport de l’ENS, des deux poèmes et de la première édition de la nouvelle de Poe. Rédaction des explications, des exercices oraux et des deux figures. La feuille officielle indique douze titres. Les deux poèmes d’Eliot et de Larkin sont expliqués sur toute leur longueur publiée. La nouvelle de Poe est disponible dans l’édition de 1838. Le commentaire de préparation mobilise plusieurs passages de la nouvelle, mais la sélection exacte du jury est inconnue. Pour les neuf autres œuvres, l’ENS donne le titre sans délimiter l’extrait."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}

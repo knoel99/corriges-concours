@@ -1,0 +1,89 @@
+{
+  "slug": "x-ens_pc_physique-b_2023",
+  "epreuve": {
+    "concours": "X-ENS",
+    "filiere": "PC",
+    "matiere": "Physique B",
+    "annee": 2023
+  },
+  "questions": 22,
+  "sources": {
+    "sujet": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20SUJET%20DE%20PHYSIQUE%20B%20(XEULS).pdf",
+    "rapport": "https://www.polytechnique.edu/admission-cycle-ingenieur/sites/admission/files/content/2023%20PC%20RAPPORT%20ECRIT%20PHYSIQUE%20B%20(XEULS).pdf",
+    "sujet_sha256": "0f38f659b4b4b9ec82091b3953999e30abbbca46385dd9f9a4da2654c333e558",
+    "rapport_sha256": "36d64a64ccd9ac1bd9d3b2c693b0d18a9f33c58e90c747233b24fa5585e8b54a"
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "agent": "astra_physique",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "Rédaction intégrale des éditions brute et guidée à partir des deux originaux, sujet et rapport du jury. Les 22 questions numérotées, avec toutes leurs sous-questions, sont traitées. Cinq figures originales reconstruisent les trajets Raman, les franges, les termes de pesanteur, la phase de Gouy et la coupe à 52 cm. Le sens de la phase laser et les limites des constantes arrondies sont explicités."
+    }
+  ],
+  "figures": [
+    {
+      "numero": 1,
+      "question": "10",
+      "fichier": "figures/deux-chemins-raman.svg",
+      "legende": "Trajets recombinés à D sans pesanteur. La phase de Bloch accélère les deux branches au même instant central."
+    },
+    {
+      "numero": 2,
+      "question": "11",
+      "fichier": "figures/interfrange-atomique.svg",
+      "legende": "Reconstruction sinusoïdale d’après les espacements de la figure 5. Une interfrange de 50 Hz donne une durée de 20 ms."
+    },
+    {
+      "numero": 3,
+      "question": "14",
+      "fichier": "figures/gravite-dans-action.svg",
+      "legende": "La différence d’altitude fixe l’intégrale d’énergie potentielle. Dans l’action libre ses termes gravitationnels se compensent. Les lasers interrogent à des vitesses différentes dans le laboratoire."
+    },
+    {
+      "numero": 4,
+      "question": "18",
+      "fichier": "figures/correction-au-foyer.svg",
+      "legende": "Au foyer la correction est presque uniforme et négative pour le nuage central, dont le rayon vaut environ un dixième de la largeur du faisceau."
+    },
+    {
+      "numero": 5,
+      "question": "20",
+      "fichier": "figures/coupe-intensite-52-centimetres.svg",
+      "legende": "Coupe approximative relevée sur l’échelle colorée à z = 52 cm de la figure 6 du sujet, lissée sur quelques pixels pour écarter les traits de contour."
+    }
+  ],
+  "redaction": "Les 22 questions numérotées, avec toutes leurs sous-questions, sont traitées. Cinq figures originales reconstruisent les trajets Raman, les franges, les termes de pesanteur, la phase de Gouy et la coupe à 52 cm. Le sens de la phase laser et les limites des constantes arrondies sont explicités.",
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22"
+    ]
+  }
+}
