@@ -1,0 +1,64 @@
+{
+  "slug": "ens-psl_selection-internationale-lettres_histoire-les-figures-de-lhistorien_2019",
+  "epreuve": {
+    "concours": "ENS-PSL",
+    "filiere": "Sélection internationale Lettres",
+    "matiere": "Histoire — les figures de l’historien",
+    "annee": 2019,
+    "modalite": "écrit"
+  },
+  "intitule": "Histoire — les figures de l’historien",
+  "questions": 0,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "famille_modele": "GPT-6",
+    "effort": "ultra",
+    "vitesse": null
+  },
+  "sources": {
+    "sujet": "https://www.ens.psl.eu/sites/default/files/histoire-ecrit-sil2019.pdf",
+    "sujet_sha256": "69ed8942c2031f669db6d31bc2d7008ba2faa1715b02ad322f0d538cf652ceef",
+    "references": [
+      "https://fr.wikisource.org/wiki/Histoire_de_France_%28Jules_Michelet%29/Tome_1/Pr%C3%A9face",
+      "https://catalogue.bnf.fr/ark:/12148/cb31866731s",
+      "https://press.jhu.edu/books/title/53948/cheese-and-worms",
+      "https://warwick.ac.uk/fac/arts/history/students/modules/archive/sexuality_and_the_body/bibliography/joan_scott_gender_1986.pdf"
+    ]
+  },
+  "figures": [
+    {
+      "fichier": "figures/figures.svg",
+      "question": "Dissertation",
+      "legende": "Que cherche le lecteur dans ces quatre enquêtes ?"
+    }
+  ],
+  "date_revision": "2026-11-25",
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Rédaction du commentaire historiographique argumenté, de son accompagnement et de sa figure dans les deux éditions.",
+      "modifications": true
+    },
+    {
+      "phase": "autocontrole",
+      "session": "astra_lettres",
+      "fournisseur": "codex",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-25",
+      "perimetre": "Vérification de la liste des auteurs nommés par Revel, des trois temporalités de Braudel et des deux figures proposées, enquête sur les traces et critique des catégories. Contrôle des deux éditions.",
+      "modifications": true
+    }
+  ]
+}
