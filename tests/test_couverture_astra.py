@@ -173,6 +173,34 @@ def test_libelle_de_matiere_change_l_adresse_de_publication(tmp_path):
     fichier.write_text(json.dumps(meta))
     assert couverture.verifier_paire(dossier) == ("signature présente", {signature})
 
+
+@pytest.mark.parametrize(
+    ("slug", "filiere", "reconnue"),
+    [
+        ("bel_bl_allemand_2017", "B/L", False),
+        ("bel_bl_allemand_2017", "BL", True),
+        ("x-ens_mp_allemand_2017", "MP-MPI", True),
+    ],
+)
+def test_filiere_de_publication_du_corrige(tmp_path, slug, filiere, reconnue):
+    dossier = tmp_path / slug
+    dossier.mkdir()
+    signature = "**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée"
+    for edition in ("brut", "guide"):
+        (dossier / f"{edition}.md").write_text(f"# Allemand\n\n{signature}\n")
+    meta = {
+        "epreuve": {"matiere": "Allemand", "filiere": filiere},
+        "contributions": [{"phase": "redaction", "modele": "gpt-6.2-astra", "effort": "ultra"}],
+    }
+    (dossier / "meta.json").write_text(json.dumps(meta))
+    etat, signatures = couverture.verifier_paire(dossier)
+    if reconnue:
+        assert signatures == {signature}
+    else:
+        assert etat == "identité de filière à corriger pour publier sur la fiche"
+        assert not signatures
+
+
 def test_exemple_du_jury_rattache_sans_ajouter_une_epreuve():
     sujets = couverture.registre()
     slug = "bel_al_grec-oral-option-exemple-du-jury-ploutos_2026"

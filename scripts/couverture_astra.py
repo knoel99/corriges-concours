@@ -148,6 +148,11 @@ def editions_retirees() -> dict[str, list[tuple[str, str]]]:
     return editions
 
 
+def segment_adresse(libelle: str) -> str:
+    ascii_libelle = unicodedata.normalize("NFKD", libelle).encode("ascii", "ignore").decode()
+    return re.sub(r"[^\w.-]+", "-", ascii_libelle.lower()).strip("-")
+
+
 def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
     fichiers = [dossier / f for f in ("meta.json", "brut.md", "guide.md")]
     if not all(f.is_file() for f in fichiers):
@@ -168,14 +173,15 @@ def verifier_paire(dossier: Path) -> tuple[str, set[str]]:
         if not est_astra_ultra(entree) and entree.get("modifications") is not False:
             return "édition modifiée depuis la dernière rédaction ou révision Astra Ultra", set()
     if SLUG.fullmatch(dossier.name):
-        # La publication du site construit la clé des textes et PDF à partir de la matière.
-        matiere = str(meta.get("epreuve", {}).get("matiere", ""))
-        ascii_matiere = (
-            unicodedata.normalize("NFKD", matiere).encode("ascii", "ignore").decode()
-        )
-        segment = re.sub(r"[^\w.-]+", "-", ascii_matiere.lower()).strip("-")
-        if segment != dossier.name.split("_")[2]:
+        # Les deux lecteurs retrouvent les textes et leur journal par cette adresse.
+        banque, _, matiere, annee = dossier.name.split("_")
+        epreuve = meta.get("epreuve", {})
+        if segment_adresse(str(epreuve.get("matiere", ""))) != matiere:
             return "identité de matière à corriger pour publier sur la fiche", set()
+        if filiere := epreuve.get("filiere"):
+            adresse = f"{banque}_{segment_adresse(filiere)}_{matiere}_{annee}"
+            if fiche_site(adresse) != fiche_site(dossier.name):
+                return "identité de filière à corriger pour publier sur la fiche", set()
     for md in fichiers[1:]:
         if not signatures <= entete(md.read_text(encoding="utf-8")):
             return "signature à vérifier dans les deux éditions", set()
