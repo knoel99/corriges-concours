@@ -1,0 +1,262 @@
+{
+  "slug": "ens-de-lyon_series-la-lv-sh-a-l_latin-oral_2017",
+  "epreuve": {
+    "concours": "ENS de Lyon",
+    "filiere": "Séries LA/LV/SH (A/L)",
+    "matiere": "Latin (oral)",
+    "annee": 2017,
+    "modalite": "oral"
+  },
+  "questions": 54,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "modele": {
+    "provider": "codex",
+    "model": "gpt-6.2-astra",
+    "effort": "ultra",
+    "service_tier": null
+  },
+  "sources": {
+    "sujet": "https://www.ens-lyon.fr/sites/default/files/2017-11/latin-2017_1506588436937.pdf",
+    "sujet_sha256": "033554866b8edd09bede781565b0825ba01b74cd0e454559fd99b68169bdc27b",
+    "rapport_jury": "https://www.ens-lyon.fr/sites/default/files/2018-03/LATIN_2017.pdf",
+    "rapport_jury_sha256": "a4b56108a98df7992dca96d69ffab9573bcae964b280b9097a683748f8670838",
+    "documents": [
+      {
+        "billet": "LA 01",
+        "reference": "Sénèque, Les Troyennes, 1137–1152",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1017/phi002/phi1017.phi002.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 02",
+        "reference": "Stace, Achilléide, I, 567–582",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1020/phi003/phi1020.phi003.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 03",
+        "reference": "Horace, Odes, II, 20, 1–20",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0893/phi001/phi0893.phi001.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 04",
+        "reference": "Salluste, La Conjuration de Catilina, I",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0631/phi001/phi0631.phi001.perseus-lat3.xml"
+      },
+      {
+        "billet": "LA 05",
+        "reference": "Cicéron, Les Verrines, seconde action, livre V (Les Supplices), 161–162",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0474/phi005/phi0474.phi005.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 06",
+        "reference": "Virgile, Énéide, VI, 724–738",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0690/phi003/phi0690.phi003.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 07",
+        "reference": "Pline le Jeune, Lettres, VII, 1",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1318/phi001/phi1318.phi001.perseus-lat1.xml"
+      },
+      {
+        "billet": "LA 08",
+        "reference": "Sénèque, De la colère, II, 3, 1–4",
+        "page_repertoire": 1,
+        "texte_latin": "https://ryanfb.xyz/loebolus-data/L214.pdf"
+      },
+      {
+        "billet": "LA 09",
+        "reference": "Ovide, Métamorphoses, XI, 50–65",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi006/phi0959.phi006.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 10",
+        "reference": "Tite-Live, Histoire romaine, I, 58, 6–12",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0914/phi001/phi0914.phi001.perseus-lat3.xml"
+      },
+      {
+        "billet": "LA 11",
+        "reference": "Ovide, Tristes, III, 3, 37–52",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi008/phi0959.phi008.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 12",
+        "reference": "Properce, Élégies, I, 2, 1–16",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0620/phi001/phi0620.phi001.perseus-lat3.xml"
+      },
+      {
+        "billet": "LA 13",
+        "reference": "Cicéron, Des devoirs, I, 128–129",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0474/phi055/phi0474.phi055.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 14",
+        "reference": "Ovide, Remèdes à l’amour, 325–339",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi005/phi0959.phi005.perseus-lat2.xml"
+      },
+      {
+        "billet": "LA 15",
+        "reference": "Tite-Live, Histoire romaine, II, 32, 8–12",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0914/phi001/phi0914.phi001.perseus-lat3.xml"
+      },
+      {
+        "billet": "LC 01",
+        "reference": "Ovide, L’Art d’aimer, III, 7–43",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 02",
+        "reference": "Ovide, L’Art d’aimer, III, 43–80",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 03",
+        "reference": "Ovide, L’Art d’aimer, III, 99–136",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 04",
+        "reference": "Ovide, L’Art d’aimer, III, 209–244",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 05",
+        "reference": "Ovide, L’Art d’aimer, III, 311–348",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 06",
+        "reference": "Ovide, L’Art d’aimer, III, 381–418",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 07",
+        "reference": "Ovide, L’Art d’aimer, III, 525–562",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 08",
+        "reference": "Ovide, L’Art d’aimer, III, 685–722",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0959/phi004/phi0959.phi004.perseus-lat2.xml"
+      },
+      {
+        "billet": "LC 09",
+        "reference": "Apulée, Les Métamorphoses, IV, 32, 1 – 33, 5",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml"
+      },
+      {
+        "billet": "LC 10",
+        "reference": "Apulée, Les Métamorphoses, V, 17, 1 – 19, 2",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml"
+      },
+      {
+        "billet": "LC 11",
+        "reference": "Apulée, Les Métamorphoses, V, 24, 3 – 25",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml"
+      },
+      {
+        "billet": "LC 12",
+        "reference": "Apulée, Les Métamorphoses, V, 29, 1 – 30, 5",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml"
+      },
+      {
+        "billet": "LC 13",
+        "reference": "Apulée, Les Métamorphoses, VI, 3–4",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml"
+      },
+      {
+        "billet": "LC 14",
+        "reference": "Apulée, Les Métamorphoses, VI, 22, 2 – 23",
+        "page_repertoire": 1,
+        "texte_latin": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi1212/phi002/phi1212.phi002.perseus-lat1.xml"
+      }
+    ]
+  },
+  "couverture": {
+    "statut": "partiel",
+    "questions_traitees": [
+      "LA 01",
+      "LA 02",
+      "LA 03",
+      "LA 04",
+      "LA 05",
+      "LA 06",
+      "LA 07",
+      "LA 08",
+      "LA 09",
+      "LA 10",
+      "LA 11",
+      "LA 12",
+      "LA 13",
+      "LA 14",
+      "LA 15",
+      "LC 01",
+      "LC 02",
+      "LC 03",
+      "LC 04",
+      "LC 05",
+      "LC 06",
+      "LC 07",
+      "LC 08",
+      "LC 09",
+      "LC 10",
+      "LC 11",
+      "LC 12",
+      "LC 13",
+      "LC 14"
+    ],
+    "precision": "29 des 54 billets ont une traduction, un commentaire et une reprise guidée. Le relevé ne reproduit pas les feuillets individuels. La coupe de Pline VII, 1 demeure inconnue."
+  },
+  "figures": [
+    {
+      "fichier": "figures/corps-et-cite.svg",
+      "legende": "Chez Tite-Live, des membres du corps aux acteurs de la cité"
+    },
+    {
+      "fichier": "figures/aura-et-procris.svg",
+      "legende": "Chez Ovide, du souffle entendu au nom de rivale"
+    },
+    {
+      "fichier": "figures/junon-et-psyche.svg",
+      "legende": "Chez Apulée, deux qualifications concurrentes de Psyché"
+    }
+  ],
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "session": "bornes",
+      "date": "2026-11-25",
+      "modifications": true,
+      "perimetre": "29 des 54 billets ont une traduction, un commentaire et une reprise guidée. Le relevé ne reproduit pas les feuillets individuels. La coupe de Pline VII, 1 demeure inconnue."
+    }
+  ],
+  "date_revision": "2026-11-25"
+}
