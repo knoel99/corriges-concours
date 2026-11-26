@@ -45,6 +45,52 @@
       "fournisseur": "codex",
       "modifications": true,
       "perimetre": "Quatre parties, comparaison, motifs et facteurs communs, fonction Z, construction implicite et linéaire par liens suffixes, répétitions maximales et arbres généralisés. Lecture de la garde, du texte et du rapport du jury."
+    },
+    {
+      "phase": "relecture",
+      "fournisseur": "codex",
+      "agent": "reprise_physique_ulm",
+      "session": "reprise_physique_ulm",
+      "modele": "gpt-6.2-astra",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "modifications": true,
+      "perimetre": "Ajout du tableau de fenêtres et des résultats de comparaison, de complexité et de parcours dans le guide. Contrôle et attestation de la couverture."
     }
-  ]
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "I.5",
+      "II.1",
+      "II.2",
+      "II.3.a",
+      "II.3.b",
+      "II.3.c",
+      "II.4",
+      "II.5",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "III.7",
+      "III.8",
+      "III.9",
+      "III.10",
+      "III.11",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5"
+    ],
+    "verification": "Recoupement du fac-similé conservé à l’empreinte des sources avec les énoncés, subdivisions, figures et résultats des deux éditions. Ajout du tableau de fenêtres et des résultats de comparaison, de complexité et de parcours dans le guide."
+  }
 }

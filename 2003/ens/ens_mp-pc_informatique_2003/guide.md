@@ -12,13 +12,19 @@ Le sujet passe d’une comparaison naïve au tableau des préfixes communs, puis
 
 Ici $k$ est un dernier décalage, donc le facteur a $k+1$ lettres. Rejeter d’abord les bornes invalides. Ensuite avancer un curseur tant que les deux lettres coïncident, en testant la borne avant toute lecture. Une différence donne faux ; dépasser le dernier décalage prouve l’égalité.
 
+Le test coûte $O(k+1)$, puisqu’il compare au plus $k+1$ positions, sans mémoriser les sous-chaînes.
+
 ### Question I.2 · Langages rationnels
 
 Être une occurrence signifie qu’on peut couper le texte en un préfixe quelconque, exactement le mot $c$, puis un suffixe quelconque. Cette description est directement une expression rationnelle. Éviter le motif est la négation de cette propriété ; la classe des langages rationnels est fermée pour cette opération.
 
+Les deux langages sont $A^*cA^*$ et $A^*\setminus(A^*cA^*)$. Pour $c=\varepsilon$, ils deviennent $A^*$ et $\varnothing$.
+
 ### Question I.3 · Trouver toutes les occurrences
 
 Faire glisser la première lettre du motif en incluant le dernier départ où sa dernière lettre tient encore dans le texte. Appeler la première fonction avec $m-1$, puisqu’elle compte ses deux bornes. Les départs sont testés indépendamment, y compris ceux des occurrences qui se chevauchent.
+
+Pour $m>0$, tester exactement $i=1,\ldots,n-m+1$, avec la sortie vide si $m>n$. Cela fait $O(nm)$ comparaisons. Un motif vide occupe les $n+1$ frontières.
 
 ### Question I.4 · Plus long facteur commun
 
@@ -28,15 +34,25 @@ Fixer deux points de départ avant de comparer. Le premier désaccord ou la fin 
 
 Une répétition maximale dépend de deux occurrences précises. Elles doivent avoir deux contextes gauches distincts, en comptant le début du texte comme un contexte spécial. À cette paire de débuts, il n’y a ensuite qu’un candidat, le plus long accord possible vers la droite. Le retenir s’il est non vide. Les deux occurrences peuvent se chevaucher. Des paires différentes peuvent donner le même mot : un arbre de préfixes des résultats en fournit une représentation unique.
 
+Les $O(n^2)$ paires coûtent chacune $O(n)$ examens de lettres, soit $O(n^3)$ au total, dédoublonnage compris si l’on inscrit les facteurs dans un arbre de préfixes.
+
 ## Partie II. Préfixes communs et recherche linéaire
 
 ### Question II.1 · Tableau des fenêtres
 
 Les préfixes communs non vides commencent en $2,5,6,9,10,11$ et ont respectivement les longueurs $1,3,1,2,4,1$. Les fenêtres qui battent le record de fin sont $(2,2)$, $(5,7)$, $(9,10)$ et $(10,13)$. Conserver la dernière fenêtre record à tous les indices suivants, jusqu’au record suivant, donne chaque couple $(g_i,d_i)$.
 
+| $i$ | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| $L(i)$ | 1 | 0 | 0 | 3 | 1 | 0 | 0 | 2 | 4 | 1 | 0 | 0 |
+| $g_i$ | 2 | 2 | 2 | 5 | 5 | 5 | 5 | 9 | 10 | 10 | 10 | 10 |
+| $d_i$ | 2 | 2 | 2 | 7 | 7 | 7 | 7 | 10 | 13 | 13 | 13 | 13 |
+
 ### Question II.2 · En dehors de la fenêtre
 
 La fenêtre précédente ne couvre aucune lettre à tester. Repartir donc du début du mot et avancer jusqu’au premier désaccord ou au bord droit. Un accord non vide qui commence déjà après l’ancien record en produit nécessairement un nouveau.
+
+Si le premier désaccord est $s[k+i-1]\ne s[i]$, on obtient $L(k)=i-1$. Pour $L(k)>0$, la nouvelle fenêtre est $(k,k+i-2)$ ; sinon, garder la précédente. Si le texte se termine sans désaccord, la longueur est $n-k+1$.
 
 ### Question II.3.a · Correspondance intérieure
 
@@ -44,13 +60,19 @@ Les deux copies ont le même contenu et leurs débuts sont séparés de $g-1$ po
 
 ![Figure 1 — Un facteur démarrant en k dans la fenêtre déjà copiée correspond à la position k − g + 1 dans le préfixe du mot.](figures/fenetre-prefixe.svg)
 
+Plus précisément $s[k..d]=s[k-g+1..L(g)]$.
+
 ### Question II.3.b · Désaccord dans la fenêtre
 
 Si l’accord connu au point miroir s’arrête avant le bord droit, même son caractère de désaccord se trouve dans la fenêtre. Il est inutile de relire la moindre lettre : la longueur déjà calculée est exacte.
 
+Avec $p=k-g+1$ et $b=d-k+1$, la condition $L(p)<b$ donne $L(k)=L(p)$ et préserve $(g_k,d_k)=(g,d)$.
+
 ### Question II.3.c · Prolonger après le bord
 
 Démarrer à la première lettre encore inconnue et comparer à la position correspondante dans le préfixe commençant en 1. L’offset est $k-1$, indépendamment de l’ancienne fin $d$. Un échec immédiat égale l’ancien record et ne change pas son début ; une lecture réussie le déplace. La borne fictive $n+1$ couvre le cas où le mot finit sans désaccord.
+
+Pour $L(p)\ge b$, le premier $j>d$ tel que $s[j]\ne s[j-k+1]$ (ou $n+1$) donne $L(k)=j-k$. Changer les bornes en $(k,j-1)$ seulement si $j-1>d$.
 
 ### Question II.4 · Calcul de tout le tableau
 
@@ -59,6 +81,8 @@ Conserver un couple de bornes à fin maximale et le tableau $L$ déjà rempli. S
 ### Question II.5 · Motif séparé du texte
 
 Mettre le motif au début transforme chaque recherche en calcul de préfixe commun. Le caractère neuf entre motif et texte empêche la fenêtre de continuer au-delà d’une occurrence entière. Un décalage de $m+1$ ramène chaque position du tableau global à sa position dans le texte.
+
+Dans le texte combiné, le départ $i$ du texte initial correspond à $m+1+i$. Il y a occurrence si et seulement si $L(m+1+i)=m$. L’ensemble se calcule en $O(n+m)$ pour $m>0$.
 
 ## Partie III. Arbre des suffixes
 
@@ -116,9 +140,13 @@ Sans signe de fin, comme pour le dernier $\mathtt i$ de l’exemple, un suffixe 
 
 Dans un arbre de préfixes, tous les mots descendant d’une même branche restent groupés. Visiter d’abord la branche de plus petite lettre donne donc l’ordre du dictionnaire, même quand les arêtes regroupent plusieurs lettres. Le signe de fin doit passer en premier pour que le plus court arrive avant ses prolongements.
 
+Avec des arêtes représentées par couples d’indices et un alphabet fixé, la visite des nœuds et l’émission des indices de départ prennent $O(n)$. Écrire les suffixes intégralement demanderait la taille quadratique de cette autre sortie.
+
 ### Question IV.2 · Occurrences après indexation
 
 Toutes les occurrences d’un motif sont des débuts de suffixes ayant le même préfixe. Une fois le point du motif atteint, les feuilles en dessous sont donc exactement la sortie attendue. Sur plusieurs motifs, l’arbre réutilise le travail effectué sur le texte ; la méthode du séparateur parcourt de nouveau le texte à chaque appel.
+
+Un motif de longueur $m$ requiert $O(m+r)$ après construction de l’index, où $r$ désigne le nombre d’occurrences émises. Le coût de l’index est $O(n)$.
 
 ### Question IV.3 · Bifurcations et répétitions maximales
 
@@ -133,3 +161,5 @@ Colorer une feuille de la lettre qui précède le suffixe. Pour comparer deux oc
 ### Question IV.5 · Plus long facteur commun
 
 Réunir les deux textes tout en empêchant une coïncidence artificielle à leurs frontières. Une couleur par provenance dit de quel texte arrive une occurrence. Un facteur appartient aux deux exactement lorsque des feuilles des deux couleurs passent par son point. S’il finit au milieu d’une arête, on peut avancer jusqu’à son extrémité en conservant ces mêmes feuilles. Le plus long se trouve donc parmi les nœuds explicites portant les deux couleurs.
+
+Employer deux terminateurs distincts, puis choisir le nœud bicolore de plus grande profondeur comptée en lettres. Le parcours coûte $O(n+m)$, comme la construction.
