@@ -1,0 +1,57 @@
+# Agrippa d’Aubigné et Les Tragiques · Oral de littérature ENS-PSL 2017 · Corrigé guidé
+
+*Corrigé rédigé par IA, non officiel. Signalez toute erreur.*
+
+**Lecture du rapport du jury** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+**Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
+## Préparer les vingt minutes
+
+Repérez deux ordres donnés au début puis au vers 11 du feuillet. Préparez la différence entre appeler des destinataires à la joie et obliger le regard à se déplacer. Choisissez un couple de rimes et un enjambement dont la lecture aidera à comprendre la résurrection.
+
+> [!INDICATION]
+> Au vers 7 du feuillet, soulignez séparément celui qui cherche et celui qui est cherché, avant et après la virgule. Refaites ce petit exercice avec le sujet du verbe qui signifie « sentir » aux vers 21 et 24.
+
+> [!METHODE]
+> Situez chaque exemple dans les deux numérotations. Le vers 15 du feuillet est le vers 665 du livre. Pour l’exposé, il suffit d’annoncer que vous suivrez les numéros imprimés en marge.
+
+> [!JURY]
+> Le rapport 2017, page 2, demande de situer l’œuvre, de lire à haute voix les premières lignes et d’appuyer le commentaire sur le détail de l’extrait. À l’ouverture, détachez les deux groupes pris à partie et faites entendre la rime qui rapproche les âmes de leurs restes.
+
+## Commentaire de la résurrection des corps
+
+Au livre VII des *Tragiques*, « Jugement », le poète protestant Agrippa d’Aubigné envisage ce que devient le corps que les persécuteurs ont cru pouvoir anéantir. Les trente-quatre alexandrins du feuillet, vers 651 à 684 du livre, donnent à voir le moment de la résurrection. Le premier impératif s’adresse à des êtres célestes. Le dernier participe fait sourire jusqu’au ciel. Que s’est-il passé entre ces deux façons d’exprimer la joie ? Le poème transforme l’assurance d’une promesse en expérience sensible, jusque dans les éléments du monde que l’on aurait crus incapables de rien éprouver.
+
+### Vers 1 à 10 du feuillet. Retrouver un partenaire
+
+Le premier vers appelle les âmes, le troisième appelle les corps. Le parallélisme des deux injonctions les met à égalité comme destinataires du poème. « Restes » rime avec « célestes ». La déchéance matérielle entre ainsi dans le couple sonore où s’énonce la dignité des âmes. Les corps, livrés jusqu’alors au mépris, peuvent reprendre leurs esprits. La répétition, au comparatif, de l’adjectif qui les dit heureux donne le sentiment d’un bonheur qui s’accroît en passant des uns aux autres.
+
+L’échange se déploie dans le temps. Une fois, les esprits ont voulu descendre du ciel vers les corps. Au vers 7, le poète oppose le passé simple au futur autour de l’adverbe ancien « ore », maintenant. Les pronoms échangent leurs fonctions de sujet et de complément. Celui qui était recherché devient celui qui recherche. Cette réciprocité fait comprendre la métaphore nuptiale des vers 9 et 10. La note du sujet identifie les corps aux « femelles » des âmes. La mortalité assumée lors de leur première union est appelée à devenir, dans les retrouvailles, une immortalité partagée. De même que les rimes vont par deux, chacun semble exiger son répondant pour être pleinement lui-même.
+
+### Vers 11 à 24. Un monde qui sent des corps revenir
+
+Le poète interrompt son propre chant. La brusquerie de « Mais quoi ! » donne à entendre un témoin qui risque, à force de célébrer, de manquer l’événement. Après les yeux éblouis sur le chemin céleste, le vers 15 tourne le regard vers le sol. La déclaration très brève « C’est fait » avait déjà substitué le fait accompli à la promesse. Le présent des verbes fait maintenant assister à ce que la prophétie avait annoncé. Il faut à la fois recevoir une parole et apprendre à regarder autrement.
+
+La terre ouvre son sein et les tombeaux ont un ventre. Au passage du vers 15 au vers 16, le verbe de naissance surgit en tête du second vers. Ceux que désigne encore le mot « enterrés » offrent déjà des visages. Le rythme énumère des lieux ordinaires puis les démonstratifs de lieu précisent des points successifs d’apparition. Une construction humaine se laisse percer par ceux qui remontent. Dans l’arbre, les bras de la racine donnent l’espace nécessaire à une tête et à une poitrine. L’arbre lui-même est sujet du verbe de sensation. L’eau éprouve à son tour un éveil en elle. Le lecteur doit donc déplacer son attention de ce qui émerge vers le milieu qui sent arriver la vie. Même le bouillonnement ou le grouillement, que l’on pourrait associer à la corruption, deviennent des mouvements de naissance.
+
+![Figure 1 — Qui accomplit ou perçoit la résurrection ?](figures/resurrection.svg)
+
+### Vers 25 à 34. Rendre à chacun son corps
+
+Le nageur qui remonte à la surface offre une mesure familière à une scène hors de toute expérience. Le jeu de rime entre la plongée, que le feuillet nomme « plonge », et le songe rapproche le retour à l’air du réveil. Le pluriel « Tous » étend à tous les ressuscités le savoir du souffle retrouvé que suggère cette comparaison individuelle. Mais l’image paisible du dormeur rencontre tout de suite la mention des tyrans. Certains corps ont été dispersés par une action humaine. L’enjeu historique des *Tragiques*, les violences des guerres de Religion, revient ainsi dans l’accomplissement d’une espérance chrétienne.
+
+Le trajet d’un seul bras, entre l’Afrique brûlante et la froide Thulé, oppose l’immensité des distances au bref moment nécessaire au rassemblement. Le membre isolé et les restes réduits à l’état de cendres constituent deux difficultés croissantes pour l’imagination. Le vers 32 renverse pourtant l’ordre attendu de la dispersion et de la réunion. Les plus petits fragments paraissent unis plus vite encore qu’ils ne furent dispersés. L’extrême fragilité de la matière mesure la puissance de ce qui la réunit.
+
+Le dernier vers fait correspondre le rire des ressuscités au rire du ciel. La proximité sonore des deux formes du même verbe traduit leur accord, et l’adjectif attaché à l’audace en fait l’expression heureuse d’une assurance retrouvée. Les corps naguère exposés au mépris peuvent se tenir face au ciel. La joie recommandée par le poète au premier vers est devenue, au dernier, un geste que chacun peut voir.
+
+## Après l’exposé
+
+**Pourquoi s’arrêter sur les rimes ?** Dans la première paire, la dignité céleste se trouve rapprochée de la pauvre matière des restes. Plus loin, « plonge » et « songe » réunissent deux expériences de retour à la vie consciente. La forme versifiée fait percevoir les rapports que l’imagination doit construire.
+
+**Que fait ici le discours sur les persécuteurs ?** Le texte nomme expressément les tyrans après la comparaison avec le réveil. La restauration des corps redonne une intégrité aux victimes et retire aux violences subies le pouvoir de décider de leur sort ultime.
+
+> [!PIEGE]
+> Thulé désigne dans la note une île nordique. L’écart avec l’Afrique sert à rendre sensible la portée du rassemblement. Le passage ne décrit aucun itinéraire que le commentaire devrait localiser exactement.
+
+**Bilan.** Reprenez à l’oral le naître, le sentir et le rire du passage. Ils permettent d’expliquer comment le regard prophétique passe d’une affirmation de foi à un monde animé tout entier.
