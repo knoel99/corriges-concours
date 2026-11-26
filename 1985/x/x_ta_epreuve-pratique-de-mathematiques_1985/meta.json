@@ -1,0 +1,122 @@
+{
+  "slug": "x_ta_epreuve-pratique-de-mathematiques_1985",
+  "epreuve": {
+    "concours": "X",
+    "filiere": "TA",
+    "annee": 1985,
+    "matiere": "Épreuve pratique de mathématiques",
+    "modalite": "pratique"
+  },
+  "intitule": "Épreuve pratique de mathématiques · concours commun Mines-Ponts · X option T.A.",
+  "questions": 6,
+  "duree_heures": 2,
+  "redaction": "Proposition non officielle rédigée par IA.",
+  "sources": {
+    "sujet": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-5b038de050975f8b9bee",
+    "sujet_sha256": "b02791c7ebd4736345dd8fe3a9141c41fd3f61046f010f94ff6d5e1178d23f25",
+    "notice_ups": "m85mip",
+    "notice_officielle": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000697778",
+    "precisions": "Le bandeau des écoles donne « École polytechnique (option T.A.) ». L’épreuve est commune aux options M, P′ et T.A. du concours commun. Pour l’X, seul le recrutement T.A. est mentionné dans la liste des écoles."
+  },
+  "pieces_verifiees": {
+    "sujet": {
+      "url": "https://prepas.org/index.php?module=Sujets&voir=get&file=doc-5b038de050975f8b9bee",
+      "sha256": "b02791c7ebd4736345dd8fe3a9141c41fd3f61046f010f94ff6d5e1178d23f25",
+      "pages": 1,
+      "rendu_page_sha256": [
+        "5ab27c0713112dda668ce43ccf6303bca226945874df2caf46f5bd51302cfa99"
+      ]
+    }
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Deux éditions complètes, 6 questions et sous-questions, indications et deux figures."
+    },
+    {
+      "phase": "revision",
+      "session": "x_ta_pratiques_1985_1988",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "fournisseur": "codex",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "modifications": true,
+      "perimetre": "Vérification des quotients, des fractions et des bornes avec contrôle des arrondis à six décimales."
+    }
+  ],
+  "figures": [
+    {
+      "question": "4",
+      "numero": 1,
+      "fichier": "figures/poids-integral.svg",
+      "legende": "Figure 1 — Les trois fonctions encadrent le poids divisé par un plus x carré. Le facteur de normalisation commun rend les courbes lisibles."
+    },
+    {
+      "question": "6",
+      "numero": 2,
+      "fichier": "figures/erreurs-rationnelles.svg",
+      "legende": "Figure 2 — Du premier au troisième quotient, l’erreur absolue passe de l’ordre du millième à moins d’un milliardième."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "repere_par_question": [
+      {
+        "question": "1",
+        "page_pdf": 1,
+        "page_imprimee": 66
+      },
+      {
+        "question": "2",
+        "page_pdf": 1,
+        "page_imprimee": 66
+      },
+      {
+        "question": "3",
+        "page_pdf": 1,
+        "page_imprimee": 66
+      },
+      {
+        "question": "4",
+        "page_pdf": 1,
+        "page_imprimee": 66
+      },
+      {
+        "question": "5",
+        "page_pdf": 1,
+        "page_imprimee": 66
+      },
+      {
+        "question": "6",
+        "page_pdf": 1,
+        "page_imprimee": 66
+      }
+    ]
+  }
+}
