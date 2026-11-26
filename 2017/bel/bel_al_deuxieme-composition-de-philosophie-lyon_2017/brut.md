@@ -10,6 +10,8 @@
 
 **Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée
 
+**Révision (tour 2)** · GPT-6.2 Astra Ultra · vitesse non renseignée
+
 ## La religion naturelle
 
 Deux voyageurs se disent croyants. Chacun a reçu de sa famille un récit de la révélation divine, et chacun découvre que l’autre aurait pu être à sa place s’ils étaient nés dans le même village. De cette dépendance du témoignage à l’égard du lieu de naissance, ils peuvent conclure que chacun doit garder sa confession. Ils peuvent aussi chercher un moyen de juger qui soit accessible à l’un comme à l’autre. C’est à cette seconde exigence que correspond le projet d’une religion naturelle. Mais que restera-t-il de religieux dans ce que chacun pourra admettre par ses seules facultés humaines ?
@@ -39,6 +41,8 @@ L’échec d’une preuve ambitieuse n’oblige pourtant pas à choisir entre un
 ### III. Une religion de la raison qui accepte d’être une foi
 
 Dans la quatrième partie de *La Religion dans les limites de la simple raison*, Kant donne au contraste une portée pratique. Dans la religion naturelle, je dois pouvoir reconnaître qu’un acte est un devoir avant de le tenir pour commandé par Dieu. Dans la religion qui exige une révélation comme condition déterminante, l’ordre de reconnaissance s’inverse. Supposons qu’une prescription cultuelle m’enjoigne de mentir pour sauver le prestige d’un sanctuaire. Si le seul titre de l’obligation est l’autorité prétendue de celui qui commande, aucune critique interne du mensonge ne reste possible. Si je dois reconnaître le devoir par ma raison, la prétention religieuse d’une règle ne soustrait pas sa maxime à l’examen moral. L’adjectif « naturel » désigne alors une autonomie de jugement compatible avec l’interprétation religieuse du devoir.
+
+Supposons qu’une tradition enseigne aux enfants un devoir de secours en racontant un épisode sacré. Une personne qui ignore ce récit peut reconnaître, dans la détresse d’autrui et dans sa propre capacité de lui répondre, une raison de l’aider. Cette rencontre valide une exigence commune. Elle ne démontre encore ni que le récit ait eu lieu ni que ce devoir soit un commandement divin. L’écart est décisif. La religion naturelle ne se confond avec la morale qu’au prix de perdre ce qu’elle devait expliquer, la manière de rapporter une obligation à Dieu. Elle peut maintenir ce rapport comme interprétation pratique de l’obligation, à condition de reconnaître ce que l’accord moral, à lui seul, laisse indéterminé. Deux personnes pourront alors secourir le même inconnu sans que leur accord dans l’action décide entre la foi de l’une et la réserve de l’autre.
 
 Pourquoi conserver le mot « religion » ? Celui qui accomplit son devoir peut y reconnaître une exigence morale suffisante sans croire en Dieu. Celui qui le reconnaît en outre comme commandement divin rapporte ses engagements à une totalité de sens et à une espérance. Il ne possède pas une nouvelle preuve physique qu’un être divin surveille ses gestes. Ce qu’il fait différemment, c’est comprendre sa vie entière, ses devoirs et ses relations avec autrui dans cet horizon. La prière qui exprime cette disposition et la communauté qui l’entretient peuvent être des médiations historiques. Elles cessent de prétendre constituer la seule source de l’obligation. Une religion transmise par une tradition peut donc contenir des convictions qu’une personne est en droit d’examiner par elle-même : histoire de leur apprentissage et fondement de leur validité ne coïncident pas nécessairement.
 
