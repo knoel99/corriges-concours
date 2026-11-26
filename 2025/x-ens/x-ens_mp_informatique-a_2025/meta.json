@@ -14,6 +14,11 @@
       "fichier": "figures/q08-arbre-petales.svg",
       "question": "Q8",
       "legende": "Arbre optimal avec test des pétales à la racine et probabilités conditionnelles."
+    },
+    {
+      "fichier": "figures/q15-trois-arbres.svg",
+      "question": "Q15",
+      "legende": "Trois arbres de décision pour les espèces a, b et c. Chaque branche indique une réponse et sa probabilité conditionnelle."
     }
   ],
   "sources": {
@@ -62,13 +67,13 @@
       "modifications": true,
       "agent": "archives_2016_2022",
       "fournisseur": "codex",
-      "perimetre": "Relecture des 26 questions, des deux éditions et du rapport. Détail des probabilités de Q1, vérification des trois arbres autorisés en Q8 et Q15, des cas d’égalité et de l’admissibilité des sous-problèmes en Q20, du recouvrement des clauses en Q26. Correction de l’étiquette de la branche bleue. Exécution des dix blocs OCaml de chaque édition sur 729 états et 4 374 seuils, puis comparaison exacte des probabilités calculées avec et sans variables absentes."
+      "perimetre": "Relecture des 26 questions, des deux éditions et du rapport. Détail des probabilités de Q1, vérification des trois arbres autorisés en Q8 et Q15, des cas d’égalité et de l’admissibilité des sous-problèmes en Q20, du recouvrement des clauses en Q26. Correction de l’étiquette de la branche bleue et dessin vectoriel des trois arbres de Q15 après inspection du PDF. Exécution des dix blocs OCaml de chaque édition sur 729 états et 4 374 seuils, puis comparaison exacte des probabilités calculées avec et sans variables absentes."
     }
   ],
   "revision": {
     "date": "2026-11-26",
     "modele": "GPT-6.2 Astra (effort Ultra)",
-    "verification": "Relecture des 26 questions, des deux éditions et du rapport. Détail des probabilités de Q1, vérification des trois arbres autorisés en Q8 et Q15, des cas d’égalité et de l’admissibilité des sous-problèmes en Q20, du recouvrement des clauses en Q26. Correction de l’étiquette de la branche bleue. Exécution des dix blocs OCaml de chaque édition sur 729 états et 4 374 seuils, puis comparaison exacte des probabilités calculées avec et sans variables absentes."
+    "verification": "Relecture des 26 questions, des deux éditions et du rapport. Détail des probabilités de Q1, vérification des trois arbres autorisés en Q8 et Q15, des cas d’égalité et de l’admissibilité des sous-problèmes en Q20, du recouvrement des clauses en Q26. Correction de l’étiquette de la branche bleue et dessin vectoriel des trois arbres de Q15 après inspection du PDF. Exécution des dix blocs OCaml de chaque édition sur 729 états et 4 374 seuils, puis comparaison exacte des probabilités calculées avec et sans variables absentes."
   },
   "date_revision": "2026-11-26",
   "couverture": {
@@ -123,7 +128,7 @@
       "phase": "relecture_corrige",
       "tour": 3,
       "date": "2026-11-26",
-      "perimetre": "Relecture des 26 questions, des deux éditions et du rapport. Détail des probabilités de Q1, vérification des trois arbres autorisés en Q8 et Q15, des cas d’égalité et de l’admissibilité des sous-problèmes en Q20, du recouvrement des clauses en Q26. Correction de l’étiquette de la branche bleue. Exécution des dix blocs OCaml de chaque édition sur 729 états et 4 374 seuils, puis comparaison exacte des probabilités calculées avec et sans variables absentes.",
+      "perimetre": "Relecture des 26 questions, des deux éditions et du rapport. Détail des probabilités de Q1, vérification des trois arbres autorisés en Q8 et Q15, des cas d’égalité et de l’admissibilité des sous-problèmes en Q20, du recouvrement des clauses en Q26. Correction de l’étiquette de la branche bleue et dessin vectoriel des trois arbres de Q15 après inspection du PDF. Exécution des dix blocs OCaml de chaque édition sur 729 états et 4 374 seuils, puis comparaison exacte des probabilités calculées avec et sans variables absentes.",
       "commit_relecture_anterieure": "58a8f08f209f2c099eb56e07c962bdf93bdde367"
     }
   }

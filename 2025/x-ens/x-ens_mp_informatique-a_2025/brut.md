@@ -266,37 +266,13 @@ let glouton sigma0 =
 
 ### Question 15
 
-Voici les deux arbres qui s’arrêtent dès qu’une espèce est certaine. Les probabilités indiquées sur chaque branche sont conditionnelles au nœud de départ. Les lettres désignent les Dirac correspondants.
+Les arbres A et B s’arrêtent dès qu’une espèce est certaine. Les probabilités indiquées sur chaque branche sont conditionnelles au nœud de départ. Les lettres désignent les Dirac correspondants.
 
-```text
-caractère 0
-├─ oui (1/5) → a
-└─ non (4/5) → caractère 1
-   ├─ oui (1/2) → b
-   └─ non (1/2) → c
+![Arbres A, B et C de la question 15. Les probabilités sont conditionnelles au nœud de départ.](figures/q15-trois-arbres.svg)
 
-caractère 1
-├─ oui (1/2) → caractère 0
-│  ├─ oui (1/5) → a
-│  └─ non (4/5) → b
-└─ non (1/2) → caractère 0
-   ├─ oui (1/5) → a
-   └─ non (4/5) → c
-```
+Les hauteurs moyennes de A et B valent $1+4/5=9/5$ et $1+1=2$. Au sens littéral de la définition, il existe aussi un troisième arbre, C. À partir de A, la branche oui peut tester le caractère 1 avant de rendre $a$ dans ses deux enfants, avec deux probabilités $1/2$.
 
-Leurs hauteurs moyennes valent $9/5$ et $2$. Au sens littéral de la définition, il existe aussi un troisième arbre. Dans le premier, la branche oui peut tester le caractère 1 avant de rendre $a$ dans ses deux enfants, avec deux probabilités $1/2$.
-
-```text
-caractère 0
-├─ oui (1/5) → caractère 1
-│  ├─ oui (1/2) → a
-│  └─ non (1/2) → a
-└─ non (4/5) → caractère 1
-   ├─ oui (1/2) → b
-   └─ non (1/2) → c
-```
-
-Ce troisième arbre a également une hauteur moyenne de 2. **Le premier arbre, de hauteur $9/5$, est optimal.**
+Ce troisième arbre a également une hauteur moyenne de 2. **L’arbre A, de hauteur $9/5$, est optimal.**
 
 ### Question 16
 
