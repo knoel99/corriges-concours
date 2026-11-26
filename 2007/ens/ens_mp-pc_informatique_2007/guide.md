@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 Comment calculer un chemin optimal, puis choisir un coup qui réussit quelle que soit la réponse adverse ? La première partie traite des chemins finis. La seconde s’intéresse aux parties infinies et donne des stratégies qui dépendent uniquement du sommet occupé.
 
 ## Partie 1. Chemins optimaux
@@ -42,6 +44,15 @@ Une case de $W$ traite au plus un arc. Dans $W*W$, le minimum choisit le milieu 
 ### Question 1.6 · Doublement
 
 On peut dépasser la longueur seuil sans modifier l’optimum. Conserver la matrice de portée initiale 1, la remplacer par son produit avec elle-même et doubler la portée, tant qu’elle est inférieure à $n-1$. Le nombre de multiplications est au plus $\lceil\log_2(\max(1,n-1))\rceil$, chacune cubique. Pour un seul sommet, renvoyer directement $W$.
+
+```text
+DistancesParDoublement(W,n)
+M ← W ; r ← 1
+tant que r < n-1 :
+    M ← produit_min_plus(M,M)
+    r ← 2r
+renvoyer M
+```
 
 ### Question 1.7 · Autoriser un nouveau sommet
 
@@ -124,7 +135,7 @@ Pour 0, un bon coup suffit. Pour 1, attendre le dernier arc non traité de sa li
 
 ### Question 2.8.1 · Jouer vers la bande centrale
 
-Pour situer la frontière, résoudre $r-1/r=1$ lorsque $r\ge1$. La solution positive est le nombre d’or. Un coup portant sur la plus grande coordonnée retranche un entier au rapport $r$ avant de réordonner les coordonnées. La zone $]1/\varphi,\varphi[$ a largeur exactement 1 ; au départ à droite, une unique soustraction entière positive y conduit. Les deux seuils sont irrationnels, donc le coup ne tombe pas sur une borne. Chaque position inégale possède une soustraction licite et chaque position égale une boucle ; les listes de propriétaires couvrent bien l’arène.
+Poser $r=x/y$ et $\varphi=(1+\sqrt5)/2$. Le plancher $\gamma=\lfloor |r-1/r|\rfloor$ s’annule lorsque $|r-1/r|<1$. Pour $r\ge1$, cela donne $r^2-r-1<0$, donc $r<\varphi$. Pour $r\le1$, appliquer le même calcul à $1/r$, d’où $r>1/\varphi$. Un coup portant sur la plus grande coordonnée retranche un entier au rapport $r$ avant de réordonner les coordonnées. La zone $]1/\varphi,\varphi[$ a largeur exactement 1 ; au départ à droite, une unique soustraction entière positive y conduit. Les deux seuils sont irrationnels, donc le coup ne tombe pas sur une borne. Chaque position inégale possède une soustraction licite et chaque position égale une boucle ; les listes de propriétaires couvrent bien l’arène.
 
 ![Figure 2 — La bande des rapports perdants est comprise entre les deux seuils du nombre d’or. Les extrémités irrationnelles ne sont jamais atteintes.](figures/fenetre-euclide.svg)
 

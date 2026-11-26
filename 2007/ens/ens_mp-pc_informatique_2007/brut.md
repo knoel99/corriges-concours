@@ -4,6 +4,8 @@
 
 **Rédaction** · GPT-6.2 Astra Ultra · vitesse non renseignée · 25 novembre 2026
 
+**Révision (tour 1)** · GPT-6.2 Astra Ultra · vitesse non renseignée · 26 novembre 2026
+
 On note n le nombre de sommets, m le nombre d’arcs et l’on utilise la convention du sujet pour l’infini. Dans un jeu, chaque sommet possède au moins un successeur. Une stratégie choisit un seul successeur à chacun des sommets du joueur.
 
 ## Partie 1. Chemins optimaux
@@ -135,7 +137,7 @@ Construire les prédécesseurs comme en 2.5 et poser $c[s]=|\mathrm{Succ}[s]|$. 
 
 ### Question 2.8.1 · Jouer vers la bande centrale
 
-Échanger $x,y$ si besoin et poser $r=x/y\ge1$, $\varphi=(1+\sqrt5)/2$. Alors $\gamma=0$ équivaut à $1/\varphi<r<\varphi$ (formule valable aussi sans l’échange). L’égalité aux seuils est impossible pour un rapport rationnel. Si $r>\varphi$, il existe exactement un entier $k$ tel que $1/\varphi<r-k<\varphi$ : l’intervalle des $k$ a pour longueur $\varphi-1/\varphi=1$ et des bornes irrationnelles. Il est positif et $x-ky>0$. Le coup est légal et atteint $\gamma=0$. Pour $x\ne y$ soustraire une fois le plus petit du plus grand est toujours légal ; sur la diagonale la boucle assure la totalité. Les deux coordonnées restent dans leurs bornes.
+Échanger $x,y$ si besoin et poser $r=x/y\ge1$, $\varphi=(1+\sqrt5)/2$. L’énoncé pose $\gamma(x,y)=\lfloor |r-1/r|\rfloor$. Pour $r\ge1$, ce plancher est nul exactement lorsque $r^2-r-1<0$, soit $r<\varphi$. Échanger les coordonnées remplace $r$ par $1/r$ et donne, pour tout $r>0$, la condition $1/\varphi<r<\varphi$. L’égalité aux seuils est impossible pour un rapport rationnel. Si $r>\varphi$, il existe exactement un entier $k$ tel que $1/\varphi<r-k<\varphi$ : l’intervalle des $k$ a pour longueur $\varphi-1/\varphi=1$ et des bornes irrationnelles. Il est positif et $x-ky>0$. Le coup est légal et atteint $\gamma=0$. Pour $x\ne y$ soustraire une fois le plus petit du plus grand est toujours légal ; sur la diagonale la boucle assure la totalité. Les deux coordonnées restent dans leurs bornes.
 
 ![Figure 2 — La bande des rapports perdants est comprise entre les deux seuils du nombre d’or. Les extrémités irrationnelles ne sont jamais atteintes.](figures/fenetre-euclide.svg)
 
