@@ -106,9 +106,9 @@ $$\boxed{\min_{u\in F}\|v-u\|_2=1.}$$
 > [!METHODE]
 > Le théorème de meilleure approximation identifie le minimiseur. La distance cherchée se calcule ensuite comme la norme du résidu.
 
-### II — Séries de Fourier
-
 ![Figure 1 — projection orthogonale sur F : p_F(v) est le point de F le plus proche de v, le résidu v − p_F(v) est orthogonal à F et sa norme est la distance de v à F (schéma, F hyperplan de ℳ₄,₁(ℝ))](figures/q3-projection-orthogonale.svg)
+
+### II — Séries de Fourier
 
 ### Question 4
 
