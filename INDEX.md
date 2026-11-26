@@ -763,6 +763,9 @@
 | 2026 | BEL | AL | Histoire de la musique | [md](2026/bel/bel_al_histoire-de-la-musique_2026/brut.md) | [md](2026/bel/bel_al_histoire-de-la-musique_2026/guide.md) |
 | 2026 | BEL | AL | Histoire et théorie des arts | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/brut.md) | [md](2026/bel/bel_al_histoire-et-theorie-des-arts_2026/guide.md) |
 | 2026 | BEL | AL | Italien (commentaire et traduction) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_italien-commentaire-et-traduction_2026/guide.md) |
+| 2023 | BEL | AL | Italien (thème Lyon) | [md](2023/bel/bel_al_italien-theme-lyon_2023/brut.md) | [md](2023/bel/bel_al_italien-theme-lyon_2023/guide.md) |
+| 2024 | BEL | AL | Italien (thème Lyon) | [md](2024/bel/bel_al_italien-theme-lyon_2024/brut.md) | [md](2024/bel/bel_al_italien-theme-lyon_2024/guide.md) |
+| 2025 | BEL | AL | Italien (thème Lyon) | [md](2025/bel/bel_al_italien-theme-lyon_2025/brut.md) | [md](2025/bel/bel_al_italien-theme-lyon_2025/guide.md) |
 | 2026 | BEL | AL | Italien (thème Lyon) | [md](2026/bel/bel_al_italien-theme-lyon_2026/brut.md) | [md](2026/bel/bel_al_italien-theme-lyon_2026/guide.md) |
 | 2026 | BEL | AL | Italien (version et thème Ulm) | [md](2026/bel/bel_al_italien-version-et-theme-ulm_2026/brut.md) | [md](2026/bel/bel_al_italien-version-et-theme-ulm_2026/guide.md) |
 | 2026 | BEL | AL | Japonais (commentaire et traduction) | [md](2026/bel/bel_al_japonais-commentaire-et-traduction_2026/brut.md) | [md](2026/bel/bel_al_japonais-commentaire-et-traduction_2026/guide.md) |
