@@ -1,0 +1,240 @@
+{
+  "slug": "banque-pt_pt_maths-a_2019",
+  "epreuve": {
+    "concours": "Banque PT",
+    "filiere": "PT",
+    "matiere": "Maths A",
+    "intitule": "Épreuve de Mathématiques A",
+    "annee": 2019,
+    "duree": "4 h"
+  },
+  "questions": 37,
+  "redaction": "Proposition pédagogique non officielle, rédigée par IA (OpenAI Codex).",
+  "sources": {
+    "sujet": "https://www.banquept.fr/documents/2019/math_a_2019_pt.pdf",
+    "rapport_jury": "https://www.banquept.fr/documents/ecrit/rapport/2019/rapport_math_a_ecrit_2019.pdf",
+    "sujet_sha256": "45bb17f8511cfc295050795621d9b5a05f63dfaa982b2ccb1d21ce51ec0c039e",
+    "rapport_jury_sha256": "dff573408f4a76a4c5e0aa5cccfa9a57e6e784accd0bef9c315502f7ae8877b6",
+    "observation_rapport": "Le rapport 2019, p. 1–2, distingue les invariants de similitude d’une preuve de similitude et rappelle la nécessité de vérifier qu’une famille est libre. Sa première rubrique nommée « Partie III » décrit en fait la partie II de l’énoncé. À la p. 3, il relève que deux événements décrivant le minimum peuvent se recouvrir. L’exception de la rotation identité en II.6.b provient de notre lecture du sujet."
+  },
+  "figures": [
+    {
+      "question": "P.8",
+      "fichier": "figures/minimum.svg",
+      "legende": "Les couples de même différence se trouvent sur les diagonales du quadrillage. Leur distance à l’axe le plus proche donne le minimum des deux coordonnées."
+    }
+  ],
+  "couverture": {
+    "statut": "complet",
+    "questions_entierement_traitees": [
+      "I.1",
+      "I.2",
+      "I.3",
+      "I.4",
+      "II.1",
+      "II.2",
+      "II.3",
+      "II.4",
+      "II.5",
+      "II.6.a",
+      "II.6.b",
+      "II.6.c",
+      "II.6.d.i",
+      "II.6.d.ii",
+      "II.6.d.iii",
+      "II.6.e",
+      "III.1",
+      "III.2",
+      "III.3",
+      "III.4",
+      "III.5",
+      "III.6",
+      "IV.1",
+      "IV.2",
+      "IV.3",
+      "IV.4",
+      "IV.5",
+      "IV.6",
+      "P.1",
+      "P.2",
+      "P.3",
+      "P.4",
+      "P.5",
+      "P.6",
+      "P.7",
+      "P.8",
+      "P.9"
+    ],
+    "repere_par_question": [
+      {
+        "question": "I.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "I.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.1",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.2",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.3",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.4",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.5",
+        "page_pdf": 2
+      },
+      {
+        "question": "II.6.a",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.b",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.c",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.d.i",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.d.ii",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.d.iii",
+        "page_pdf": 3
+      },
+      {
+        "question": "II.6.e",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.1",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.2",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.3",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.4",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.5",
+        "page_pdf": 3
+      },
+      {
+        "question": "III.6",
+        "page_pdf": 3
+      },
+      {
+        "question": "IV.1",
+        "page_pdf": 4
+      },
+      {
+        "question": "IV.2",
+        "page_pdf": 4
+      },
+      {
+        "question": "IV.3",
+        "page_pdf": 4
+      },
+      {
+        "question": "IV.4",
+        "page_pdf": 4
+      },
+      {
+        "question": "IV.5",
+        "page_pdf": 4
+      },
+      {
+        "question": "IV.6",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.1",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.2",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.3",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.4",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.5",
+        "page_pdf": 4
+      },
+      {
+        "question": "P.6",
+        "page_pdf": 5
+      },
+      {
+        "question": "P.7",
+        "page_pdf": 5
+      },
+      {
+        "question": "P.8",
+        "page_pdf": 5
+      },
+      {
+        "question": "P.9",
+        "page_pdf": 5
+      }
+    ],
+    "questions_partiellement_traitees": [],
+    "questions_non_traitees": [],
+    "precision": "37 consignes ou sous-consignes numérotées traitées dans chaque édition. En II.6.b–d, le cas de l’identité est distingué car l’orientation par w exige w non nul. Les trois demandes i–iii de II.6.d sont repérées séparément."
+  },
+  "contributions": [
+    {
+      "phase": "redaction",
+      "modele": "gpt-6.2-astra",
+      "famille_modele": "GPT-6",
+      "effort": "ultra",
+      "vitesse": null,
+      "date": "2026-11-26",
+      "fournisseur": "codex",
+      "agent": "fui_physique_un",
+      "modifications": true,
+      "editions": [
+        "brut",
+        "guide"
+      ],
+      "perimetre": "Lecture du sujet et du rapport annuels, rédaction et vérification des deux éditions illustrées et du décompte par page. En II.6.b–d, le cas de l’identité est distingué car l’orientation par w exige w non nul. Les trois demandes i–iii de II.6.d sont repérées séparément."
+    }
+  ]
+}
