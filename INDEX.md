@@ -778,6 +778,7 @@
 | 2025 | BEL | BL | Histoire contemporaine (oral tronc commun) — 16 juin | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-16-juin_2025/guide.md) |
 | 2025 | BEL | BL | Russe (oral, tronc commun, 26 juin) | [md](2025/bel/bel_bl_russe-oral-tronc-commun-26-juin_2025/brut.md) | [md](2025/bel/bel_bl_russe-oral-tronc-commun-26-juin_2025/guide.md) |
 | 2025 | BEL | BL | Histoire contemporaine (oral tronc commun) — 17 juin | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-17-juin_2025/guide.md) |
+| 2025 | BEL | BL | Histoire contemporaine (oral tronc commun) — 19 juin | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-19-juin_2025/brut.md) | [md](2025/bel/bel_bl_histoire-contemporaine-oral-tronc-commun-19-juin_2025/guide.md) |
 | 2025 | BEL | BL | Version grecque | [md](2025/bel/bel_bl_version-grecque_2025/brut.md) | [md](2025/bel/bel_bl_version-grecque_2025/guide.md) |
 | 2025 | BEL | BL | Version latine | [md](2025/bel/bel_bl_version-latine_2025/brut.md) | [md](2025/bel/bel_bl_version-latine_2025/guide.md) |
 | 2026 | BEL | BL | Sciences sociales | [md](2026/bel/bel_bl_sciences-sociales_2026/brut.md) | [md](2026/bel/bel_bl_sciences-sociales_2026/guide.md) |
