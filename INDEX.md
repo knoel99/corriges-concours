@@ -1266,7 +1266,10 @@
 | 2020 | ENS | MP | Informatique-mathématiques | [md](2020/ens/ens_mp_informatique-mathematiques_2020/brut.md) | [md](2020/ens/ens_mp_informatique-mathematiques_2020/guide.md) |
 | 2020 | ENS | MP | Maths C | [md](2020/ens/ens_mp_maths-c_2020/brut.md) | [md](2020/ens/ens_mp_maths-c_2020/guide.md) |
 | 2021 | ENS | MP | Maths C | [md](2021/ens/ens_mp_maths-c_2021/brut.md) | [md](2021/ens/ens_mp_maths-c_2021/guide.md) |
+| 2022 | ENS | MP | Maths C | [md](2022/ens/ens_mp_maths-c_2022/brut.md) | [md](2022/ens/ens_mp_maths-c_2022/guide.md) |
+| 2018 | ENS | MP | Maths D | [md](2018/ens/ens_mp_maths-d_2018/brut.md) | [md](2018/ens/ens_mp_maths-d_2018/guide.md) |
 | 2021 | ENS | MP | Maths D | [md](2021/ens/ens_mp_maths-d_2021/brut.md) | [md](2021/ens/ens_mp_maths-d_2021/guide.md) |
+| 2022 | ENS | MP | Maths D | [md](2022/ens/ens_mp_maths-d_2022/brut.md) | [md](2022/ens/ens_mp_maths-d_2022/guide.md) |
 | 2023 | ENS | MP | Maths D | [md](2023/ens/ens_mp_maths-d_2023/brut.md) | [md](2023/ens/ens_mp_maths-d_2023/guide.md) |
 | 2024 | ENS | MP | Maths D | [md](2024/ens/ens_mp_maths-d_2024/brut.md) | [md](2024/ens/ens_mp_maths-d_2024/guide.md) |
 | 2025 | ENS | MP | Maths D | [md](2025/ens/ens_mp_maths-d_2025/brut.md) | [md](2025/ens/ens_mp_maths-d_2025/guide.md) |
@@ -1731,6 +1734,7 @@
 | 2025 | X-ENS | MP-MPI-PC-PSI | Français | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/brut.md) | [md](2025/x-ens/x-ens_mp-mpi-pc-psi_francais_2025/guide.md) |
 | 2025 | X-ENS | PC | Chimie A | [md](2025/x-ens/x-ens_pc_chimie-a_2025/brut.md) | [md](2025/x-ens/x-ens_pc_chimie-a_2025/guide.md) |
 | 2026 | X-ENS | PC | Chimie A | [md](2026/x-ens/x-ens_pc_chimie-a_2026/brut.md) | [md](2026/x-ens/x-ens_pc_chimie-a_2026/guide.md) |
+| 2021 | X-ENS | PC | Maths PC | [md](2021/x-ens/x-ens_pc_maths-pc_2021/brut.md) | [md](2021/x-ens/x-ens_pc_maths-pc_2021/guide.md) |
 | 2025 | X-ENS | PC | Maths PC | [md](2025/x-ens/x-ens_pc_maths-pc_2025/brut.md) | [md](2025/x-ens/x-ens_pc_maths-pc_2025/guide.md) |
 | 2026 | X-ENS | PC | Maths PC | [md](2026/x-ens/x-ens_pc_maths-pc_2026/brut.md) | [md](2026/x-ens/x-ens_pc_maths-pc_2026/guide.md) |
 | 2011 | X-ENS | PC | Physique B | [md](2011/x-ens/x-ens_pc_physique-b_2011/brut.md) | [md](2011/x-ens/x-ens_pc_physique-b_2011/guide.md) |
